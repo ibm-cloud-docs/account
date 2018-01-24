@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-01-16"
+lastupdated: "2018-01-23"
 
 ---
 
@@ -34,7 +34,7 @@ Complete the following steps to rename your organization:
 
 ### Deleting an org
 
-You can use the [`bx iam org-delete`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_org_delete) command to delete organizations. When you delete an organization, all the spaces, applications, and services within the organization are deleted. Be sure to note that deleting operations cannot be reversed. 
+When you delete an organization, all the spaces, applications, and services within the organization are deleted. Be sure to note that deleting operations cannot be reversed. 
 
 ### Deleting a space
 
