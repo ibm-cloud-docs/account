@@ -5,7 +5,7 @@
 copyright:
 
   years: 2016, 2018
-lastupdated: "2018-01-11"
+lastupdated: "2018-01-24"
 
 
 ---
@@ -17,7 +17,7 @@ lastupdated: "2018-01-11"
 {:new_window: target="_blank"}
 
 # Switching to IBMid
-Authentication in SoftLayer now uses an IBMid to provide a single login for all of {{site.data.keyword.Bluemix}}. Existing SoftLayer accounts are enabled to switch to IBMid authentication. A migration wizard guides you through this switch.
+Authentication in SoftLayer now uses an IBMid to provide a single login for all of {{site.data.keyword.Bluemix}}. An IBMid is a single ID that you use to log into your {{site.data.keyword.Bluemix}} account to access and purchase infrastructure, services, and application features. IBMid authentication is enabled for all new accounts in SoftLayer, and existing SoftLayer accounts are enabled to switch to IBMid authentication. A migration wizard guides you through this switch.
 {:shortdesc}
 
 When you begin the process to switch to an IBMid, you can always cancel the switch before you complete the process. However, each time that you log in, the prompt to switch to an IBMid is displayed. Each SoftLayer account that you plan to link to a {{site.data.keyword.Bluemix_notm}} account must be owned by a unique IBMid with a unique email address.
@@ -65,6 +65,7 @@ After your user accounts switch to IBMid authentication, resellers and distribut
   * The master user of the account that's being linked must have an IBMid.
   * Each user account that you link to an {{site.data.keyword.Bluemix_notm}} account must be owned by a unique IBMid with a unique email address. Even though a single IBMid can own multiple SoftLayer accounts, you must change the master user to be a unique IBMid for each account. Contact [IBM SoftLayer support ![External link icon](../icons/launch-glyph.svg)](https://knowledgelayer.softlayer.com/topic/support){: new_window} to change the master user of a SoftLayer account.
   * When you add new users to a linked account, you must add them to both the SoftLayer account and the {{site.data.keyword.Bluemix_notm}} account so that they can access all the capabilities of the unified console.
+  * If you are a brand account user that uses the Brand Agent Portal (BAP) and you need support when linking your account, contact the [SoftLayer Revenue Services team](softlayer_revenue_services_team@wwpdl.vnet.ibm.com).
 
 Complete the following steps to link each account to an {{site.data.keyword.Bluemix_notm}} account:
 1. To link to an existing {{site.data.keyword.Bluemix_notm}} account or to create a new one, log in to the customer portal as the master user and click the {{site.data.keyword.Bluemix_notm}} link.
