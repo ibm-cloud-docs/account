@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-11-07"
+lastupdated: "2018-01-29"
 
 
 ---
@@ -17,7 +17,7 @@ lastupdated: "2017-11-07"
 
 # Signing up for {{site.data.keyword.Bluemix_notm}}
 
-You can sign up for an {{site.data.keyword.Bluemix}} account by using an existing IBMid, by creating a new IBMid, or by using a federated ID. A federated ID is an ID within a company's domain that has been registered with IBM so that the domain and user credentials can be used to access IBM web applications.
+You can sign up for an {{site.data.keyword.Bluemix}} account by using an existing IBMid, by creating a new IBMid, or by using a federated ID. A federated ID is an ID within a company's domain that has been registered with IBM so that the domain and user credentials can be used to access IBM web applications. Click **Sign Up** to get started.
 {:shortdesc}
 
 
