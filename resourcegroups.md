@@ -33,7 +33,7 @@ If you have a Pay-As-You-Go or Subscription account, you can create multiple res
 
 If you have a Lite or Promo account, you can't create additional resource groups, but you can rename your default resource group. 
 
-Each resource group is free, however connections between a resource group and a Cloud Foundry org or space count toward your account quota. For more information, see [What is an alias?](/docs/manageapps/connecting_apps.html#what_is_alias).
+Each resource group is free, however connections between a resource group and a Cloud Foundry org or space count toward your account quota. For more information, see [What is an alias?](/docs/cfapps/connecting_apps.html#what_is_alias).
 {: tip}
 
 1. Go to **Manage** &gt; **Account** &gt; **Resource Groups**.
