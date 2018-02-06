@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-01-30"
+lastupdated: "2018-02-07"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-01-30"
 # Account types
 {: #accounts}
 
-You can start building on {{site.data.keyword.Bluemix}} for free. When you are ready to grow, upgrade and pay only for what you use beyond free allowances. We have four different account types that you can choose from: Lite, Pay-As-You-Go, Subscription, and trial. You can use any of the account types to get started in {{site.data.keyword.Bluemix_notm}} - simply choose the one that best suits your needs.
+You can start building on {{site.data.keyword.Bluemix}} for free. We have four different account types that you can choose from: Lite, Pay-As-You-Go, Subscription, and trial. You can use any of the account types to get started in {{site.data.keyword.Bluemix_notm}} - simply choose the one that best suits your needs.
 {:shortdesc}
 
 ## Account comparison
@@ -62,10 +62,12 @@ You might be wondering what's offered in a Lite account. Check out the following
    * After 10 days of no development activity, your apps go to sleep. You can start working on new apps without having to worry about hitting memory quota limits.
    * After 30 days of no development activity, your service instances with Lite plans are deleted. This way, you don't have to manage deleting inactive instances before you create new ones.
 
+When you are ready to grow, upgrade to a Pay-As-You-Go account and pay for only what you use beyond the free allowances. Go to **Manage** > **Billing and Usage** > **Billing** in the console, and click **Add Credit Card**. 
+
 ## Billable accounts
 {: #billableacts}
 
-When you sign up for a {{site.data.keyword.Bluemix_notm}} billable plan or request an upgrade to your account, you can select from four different {{site.data.keyword.Bluemix_notm}} accounts. The following table lists the different account types and their charging methods.
+The following table lists the different account types and their charging methods.
 
 |Account type |	How am I charged? |
 |------------------|-----------------------|
@@ -80,17 +82,14 @@ If you link your {{site.data.keyword.Bluemix_notm}} billable account with a Soft
 
 ### Pay-As-You-Go account
 
-With a Pay-As-You-Go account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources.
+With a Pay-As-You-Go account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. You're eligible for free runtime and service allowances. If you use more than the free allowance, you'll receive a monthly {{site.data.keyword.Bluemix_notm}} invoice. The invoice will be in United States dollars (USD) and will detail your resource charges.
 
-You're eligible for free runtime and service allowances. If you use more than the free allowance, you'll receive a monthly {{site.data.keyword.Bluemix_notm}} invoice. The invoice will be in United States dollars (USD) and will detail your resource charges.
+In many countries and regions, you can sign up for a Pay-As-You-Go account from the {{site.data.keyword.Bluemix_notm}} console. After you provide your billing and credit card information, accept the terms and conditions, and submit your account request. Then, your credit card will be validated. You'll also receive a confirmation email regarding the account information. A few minutes after you receive the confirmation email, you can return to the console to continue building your apps. 
 
-In many countries and regions, you can sign up for a Pay-As-You-Go account from the {{site.data.keyword.Bluemix_notm}} console. After you provide your billing and credit card information, accept the terms and conditions, and submit your account request. Then, your credit card will be validated. A confirmation email of the account information is also sent. A few minutes after you receive the confirmation email, you can return to the console to continue building your apps.
+If your online request can't be processed for your country or region, contact [{{site.data.keyword.Bluemix_notm}} Support](https://ibm.biz/bluemixsupport){: new_window} ![External link icon](../icons/launch-glyph.svg). After you log in to the {{site.data.keyword.Bluemix_notm}} Service Portal, click **contact support** and select the **Billing, Account or Login** option.
 
-If your online request can't be processed for your country or region, contact {{site.data.keyword.Bluemix_notm}} Sales by using the link listed on the
-[{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} page.
-
-You can convert your Pay-As-You-Go account to a Subscription account at any time. Contact {{site.data.keyword.Bluemix_notm}} Sales by using the link listed on the
-[{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} page.
+You can convert your Pay-As-You-Go account to a Subscription account at any time. Contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg) for more details.
+{: tip}
 
 ### Subscription account
 
@@ -98,7 +97,7 @@ With a Subscription account, you can create multiple resource groups to easily m
 
 You commit to a minimum spending amount each month and receive a subscription discount that is applied to that minimum charge. You also pay for any usage that exceeds the minimum spending amount.
 
-To sign up for a Subscription account, and for more information about subscription rates and discounts, you must contact {{site.data.keyword.Bluemix_notm}} Sales by using the link listed on the [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} page.
+To sign up for a Subscription account, and for more information about subscription rates and discounts, you must contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg)
 
 ### {{site.data.keyword.Bluemix_dedicated_notm}} account
 
@@ -110,9 +109,9 @@ With {{site.data.keyword.Bluemix_dedicated_notm}}, you must sign up for a one ye
    * All dedicated services that you have selected and all public {{site.data.keyword.Bluemix_notm}} services
    * Standard {{site.data.keyword.Bluemix_notm}} support
 
-You can also order optional items such as SoftLayer DirectLink or premium support options. Contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} for more information.
+You can also order optional items such as SoftLayer DirectLink or premium support options. Contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg) for more information.
 
-What you pay each month during that term is based on the dedicated services that you want, plus a Subscription account that gives you access to all public services. Usage charges of the services in {{site.data.keyword.Bluemix_notm}} Public are calculated based on your Subscription account agreement. You receive an invoice for any services that you use beyond that subscription agreement. Contact your IBM designated account representative or contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} to get started on your agreement.
+What you pay each month during that term is based on the dedicated services that you want, plus a Subscription account that gives you access to all public services. Usage charges of the services in {{site.data.keyword.Bluemix_notm}} Public are calculated based on your Subscription account agreement. You receive an invoice for any services that you use beyond that subscription agreement. Contact your IBM designated account representative or [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg) to get started on your agreement.
 
 ### {{site.data.keyword.Bluemix_local_notm}} account
 
@@ -123,7 +122,7 @@ With {{site.data.keyword.Bluemix_local_notm}}, you must sign up for a one year m
    * All local services that you have selected and access to all public {{site.data.keyword.Bluemix_notm}} services
    * Standard {{site.data.keyword.Bluemix_notm}} support
 
-What you pay each month during that term is based on the local services that you want, plus a Subscription account that gives you access to all public services. Usage charges of the services in {{site.data.keyword.Bluemix_notm}} Public are calculated based on your Subscription account agreement. You receive an invoice for any services that you use beyond that subscription agreement. Contact your IBM designated account representative or contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} to get started on your agreement.
+What you pay each month during that term is based on the local services that you want, plus a Subscription account that gives you access to all public services. Usage charges of the services in {{site.data.keyword.Bluemix_notm}} Public are calculated based on your Subscription account agreement. You receive an invoice for any services that you use beyond that subscription agreement. Contact your IBM designated account representative or [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg) to get started on your agreement.
 
 ## Trial account
 {: #trial}
@@ -147,6 +146,9 @@ Each resource group is free. When you create a connection between a service mana
 When your free trial expires 30 days after you sign up, the apps in your account are stopped. You can't sign up for another {{site.data.keyword.Bluemix_notm}} account, but you can still access your account and any accounts that you are invited to.
 
 To restart your apps, convert your account to a billable account by either providing your credit card information for a Pay-As-You-Go account or creating a Subscription account. You can then continue to use free compute and service allowances. You pay only for the usage of services, containers, and runtimes that's not included in your free monthly allowance.
+
+  * To upgrade to a Pay-As-You-Go account, go to **Manage** > **Billing and Usage** > **Billing** in the console, and click **Add Credit Card**.
+  * To sign up for a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg).
 
 If you don't convert your account after your free trial expires, your apps and services are removed after 30 days. However, your account is not deleted and you can log in and upgrade to a billable account at any time. Also, you receive email notifications to remind you to create a billable account and avoid losing your app settings and service configurations. If you prefer not to receive notifications from {{site.data.keyword.Bluemix_notm}}, you can unsubscribe at any time.
 
