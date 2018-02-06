@@ -16,7 +16,7 @@ lastupdated: "2018-02-07"
 # Account types
 {: #accounts}
 
-You can start building on {{site.data.keyword.Bluemix}} for free. We have four different account types that you can choose from: Lite, Pay-As-You-Go, and Subscription. You can use any of the account types to get started in {{site.data.keyword.Bluemix_notm}} - simply choose the one that best suits your needs.
+You can start building on {{site.data.keyword.Bluemix}} for free. We have three different account types that you can choose from: Lite, Pay-As-You-Go, and Subscription. You can use any of the account types to get started in {{site.data.keyword.Bluemix_notm}} - simply choose the one that best suits your needs.
 {:shortdesc}
 
 ## Account comparison
