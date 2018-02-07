@@ -29,7 +29,7 @@ A Lite plan is a free quota-based service plan. You can use a service Lite plan 
 {: #changeacct}
 
 * To convert your 30-day trial to a Lite account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg).
-* To upgrade to a Pay-As-You-Go account, go to **Manage > Billing and Usage > Billing** and click **Add Credit Card**.
+* To upgrade from a Lite to a Pay-As-You-Go account, go to **Manage > Billing and Usage > Billing** and click **Add Credit Card**.
 * To convert your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg).
 
 ## How do I update my credit card?
