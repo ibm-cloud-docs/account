@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-01-30"
+lastupdated: "2018-02-08"
 
 ---
 
@@ -15,42 +15,21 @@ lastupdated: "2018-01-30"
 {:tip: .tip}
 {:new_window: target="_blank"}
 
-# Linking your {{site.data.keyword.Bluemix_notm}} and SoftLayer accounts
-{: #unifyingaccounts}
-
-You can link your {{site.data.keyword.Bluemix}} and SoftLayer accounts to make use of the combined resources. 
-{: shortdesc}
+# Linking your {{site.data.keyword.Bluemix_notm}} and SoftLayer accounts to consolidate billing
+{: #unifybillaccounts}
 
 When you link your {{site.data.keyword.Bluemix_notm}} and Softlayer accounts, you will receive a single {{site.data.keyword.Bluemix_notm}} invoice. If you have an existing {{site.data.keyword.Bluemix_notm}} account, the billing through {{site.data.keyword.Bluemix_notm}} for infrastructure resources takes effect for the new billing cycle that starts after the accounts are linked.
+{: shortdesc}
 
 All linked accounts in {{site.data.keyword.Bluemix_notm}} must be Pay-As-You-Go accounts. You can create a new Pay-As-You-Go account, link an existing Pay-As-You-Go account, or link an existing trial account, which is then upgraded to a Pay-As-You-Go account. You cannot link Subscription accounts.
 {: tip}
-
-You must be a master user in the SoftLayer account to link accounts.
-
-When your accounts are linked:
-
-* You must use your IBMid credentials to access both your SoftLayer and your {{site.data.keyword.Bluemix_notm}} accounts.
-* Any existing SoftLayer discounts are applied across {{site.data.keyword.Bluemix_notm}} charges.
-* You will receive one invoice in United States dollars (USD).
-* You can monitor the usage of your infrastructure resources in the {{site.data.keyword.Bluemix_notm}} console.
-
-After you link your accounts, they cannot be unlinked.  
-
-As a master user, complete the following steps to link your {{site.data.keyword.Bluemix_notm}} and SoftLayer accounts:
-
- 1. From the {{site.data.keyword.Bluemix_notm}} Customer Portal, click **Link a {{site.data.keyword.Bluemix_notm}} Account**.
- 2. Read and accept the terms for linking SoftLayer and {{site.data.keyword.Bluemix_notm}} accounts.
- 3. When requested, provide the email address that is associated with your {{site.data.keyword.Bluemix_notm}} account. If you don't have a {{site.data.keyword.Bluemix_notm}} account, provide the email address that you want to use, follow the instructions to be invited to {{site.data.keyword.Bluemix_notm}} and create an account.
-
-After you link your accounts, **Go to {{site.data.keyword.Bluemix_notm}}** is available in the SoftLayer console menu bar. Clicking this link takes you to the {{site.data.keyword.Bluemix_notm}} login page.
 
 ## Billing for {{site.data.keyword.Bluemix_notm}} usage when accounts are linked
 {: #linkedbilling}
 
 After you've linked your {{site.data.keyword.Bluemix_notm}} and SoftLayer billing accounts, the next billing cycle will be charged in a single {{site.data.keyword.Bluemix_notm}} bill.
 
-Your {{site.data.keyword.Bluemix_notm}} usage cycle is on a calendar month basis, so your account is billed each month on the billing day that was established for your charge agreement. With SoftLayer, your usage cycle begins from when you started with SoftLayer, so you are billed each month on the same day of the month as when you signed up for your SoftLayer account. 
+Your {{site.data.keyword.Bluemix_notm}} usage cycle is on a calendar month basis, so your account is billed each month on the billing day that was established for your charge agreement. With SoftLayer, your usage cycle begins from when you started with SoftLayer, so you are billed each month on the same day of the month as when you signed up for your SoftLayer account.
 
 When your accounts are linked, your {{site.data.keyword.Bluemix_notm}} usage continues to be measured for the current month's cycle, and you are billed for that usage on a {{site.data.keyword.Bluemix_notm}} invoice. Starting on the first of the next month, your {{site.data.keyword.Bluemix_notm}} and SoftLayer charges are combined on your {{site.data.keyword.Bluemix_notm}} invoice.
 
@@ -89,4 +68,3 @@ The following list contains the services that you can set up to run with your ap
 * {{site.data.keyword.toneanalyzershort}}
 * {{site.data.keyword.visualrecognitionshort}}
 * {{site.data.keyword.workloadscheduler}}
-
