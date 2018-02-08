@@ -47,7 +47,7 @@ In {{site.data.keyword.Bluemix_notm}}, you can use organizations to enable colla
 
 When you create an organization, the name must be unique in {{site.data.keyword.Bluemix_notm}}. If the organization name is already in use by another {{site.data.keyword.Bluemix_notm}} Public, Dedicated, or Local user, you must specify a new name. After you create the organization, you're automatically assigned the *Organization Manager* permission, which enables you to edit the organization name, add users, and create or delete spaces in the organization.
 
-You can use the [`bx iam org-delete`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_org_delete) command to delete organizations. When you delete an organization, all the spaces, applications, and services within the organization are deleted.
+You can contact support to delete an organization. When you delete an organization, all the spaces, applications, and services within the organization are deleted.
 
 The following [user roles](/docs/iam/users_roles.html#userrolesinfo) can be assigned to users in an organization. All users invited to the account are assigned the auditor role by default.
 
