@@ -1,0 +1,37 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="account" audience="platform" href="/docs/account/adminpublic.html"}
+管理帐户
+
+    {: .navgroup id="howto"}
+    {: .topicgroup}
+    帐户设置
+        adminpublic.md
+        index.md
+        profile.md
+
+    change-plan.md
+    softlayerlink.md
+    linking_accounts.md
+    resourcegroups.md
+    
+    {: .topicgroup}
+    管理组织
+        orgs_spaces.md
+        manageorg.md
+
+    {: .topicgroup}
+    管理目录可视性
+        access.md
+        include.md
+        exclude.md
+        owners.md
+    {: .navgroup-end}
+
+    {: .navgroup id="help"}
+    notifications.md
+    ../troubleshoot/ts_accessing.md
+    ../troubleshoot/ts_accounts.md
+    account_faq.md
+    {: .navgroup-end}
