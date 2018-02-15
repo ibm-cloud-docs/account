@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-07"
+lastupdated: "2018-02-15"
 
 ---
 
@@ -61,6 +61,8 @@ You might be wondering what's offered in a Lite account. Check out the following
    * You can provision one instance of any service in the [{{site.data.keyword.Bluemix_notm}} catalog ![External link icon](../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} that has a Lite plan.
    * After 10 days of no development activity, your apps go to sleep. You can start working on new apps without having to worry about hitting memory quota limits.
    * After 30 days of no development activity, your service instances with Lite plans are deleted. This way, you don't have to manage deleting inactive instances before you create new ones.
+
+### Upgrading your account
 
 When you are ready to grow, upgrade to a Pay-As-You-Go account and pay for only what you use beyond the free allowances. Go to **Manage** > **Billing and Usage** > **Billing** in the console, and click **Add Credit Card**. 
 
