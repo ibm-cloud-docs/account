@@ -32,6 +32,11 @@ A Lite plan is a free quota-based service plan. You can use a service Lite plan 
 * To upgrade from a Lite to a Pay-As-You-Go account, go to **Manage > Billing and Usage > Billing** and click **Add Credit Card**.
 * To convert your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg).
 
+## If I upgrade my Lite account, can I continue using my existing instances? 
+{: #nochange}
+
+Yes, you can upgrade to a billable account and continue to use the instances you created with your Lite account.
+
 ## How do I update my credit card?
 {: #updatepayment}
 
