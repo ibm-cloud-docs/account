@@ -64,7 +64,7 @@ You might be wondering what's offered in a Lite account. Check out the following
 
 ### Upgrading your account
 
-When you are ready to grow, upgrade to a Pay-As-You-Go account and pay for only what you use beyond the free allowances. Also, you can continue using any instances you created with your Lite account. Go to **Manage** > **Billing and Usage** > **Billing** in the console, and click **Add Credit Card**. 
+When you are ready to grow, upgrade to a Pay-As-You-Go account and pay for only what you use beyond the free allowances. After you upgrade, you can continue using any instances you created with your Lite account. Go to **Manage** > **Billing and Usage** > **Billing** in the console, and click **Add Credit Card**. 
 
 ## Billable accounts
 {: #billableacts}
