@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-08"
+lastupdated: "2018-02-19"
 
 ---
 
@@ -21,7 +21,7 @@ lastupdated: "2018-02-08"
 When you link your {{site.data.keyword.Bluemix_notm}} and Softlayer accounts, you will receive a single {{site.data.keyword.Bluemix_notm}} invoice. If you have an existing {{site.data.keyword.Bluemix_notm}} account, the billing through {{site.data.keyword.Bluemix_notm}} for infrastructure resources takes effect for the new billing cycle that starts after the accounts are linked.
 {: shortdesc}
 
-All linked accounts in {{site.data.keyword.Bluemix_notm}} must be Pay-As-You-Go accounts. You can create a new Pay-As-You-Go account, link an existing Pay-As-You-Go account, or link an existing trial account, which is then upgraded to a Pay-As-You-Go account. You cannot link Subscription accounts.
+All linked accounts in {{site.data.keyword.Bluemix_notm}} must be Pay-As-You-Go or Subscription accounts.
 {: tip}
 
 ## Billing for {{site.data.keyword.Bluemix_notm}} usage when accounts are linked
