@@ -15,7 +15,7 @@ lastupdated: "2018-02-19"
 {:tip: .tip}
 {:new_window: target="_blank"}
 
-# Linking your {{site.data.keyword.Bluemix_notm}} and SoftLayer accounts to consolidate billing
+# Consolidating billing for linked accounts
 {: #unifybillaccounts}
 
 When you link your {{site.data.keyword.Bluemix_notm}} and Softlayer accounts, you will receive a single {{site.data.keyword.Bluemix_notm}} invoice. If you have an existing {{site.data.keyword.Bluemix_notm}} account, the billing through {{site.data.keyword.Bluemix_notm}} for infrastructure resources takes effect for the new billing cycle that starts after the accounts are linked.
