@@ -53,3 +53,55 @@ In the console, go to the **Manage > Billing and Usage > Billing** page and clic
 For help with getting up and running in {{site.data.keyword.Bluemix_notm}} or navigating {{site.data.keyword.Bluemix_notm}}, start a conversation with us by using the chat icon in the console. 
 
 You can also check out a number of helpful resources that are available in the [Support Center ![External link icon](../icons/launch-glyph.svg)](https://console.bluemix.net/unifiedsupport/supportcenter){: new_window}. From there, you can access Stack Overflow to post a question to our developer community. You can also submit a support ticket. 
+
+## After I link my account, how do I log in?
+{: #al_login}
+
+After you link your account, you log in using your IBMid to the
+[{{site.data.keyword.Bluemix}} console ![External link icon](../icons/launch-glyph.svg)](https://console.bluemix.net){: new_window}.
+
+## After I link my account, what's the impact on my support?
+{: #al_support}
+
+After you link your account, you keep the same level of support when you add {{site.data.keyword.Bluemix_notm}} platform to your account.
+
+## Are there other ways to get help with linking my account? 	
+{: #al_morehelp}
+
+  1. See the [5 Steps to Link your IaaS and PaaS Accounts blog](https://admin.blogs.prd.ibm.event.ibm.com/blogs/bluemix/) for helpful information.
+  2. From the {{site.data.keyword.BluSoftlayer_full}} infrastructure customer portal, open a **Sales Live Chat** to ask account questions.
+  3. Open a ticket from the {{site.data.keyword.BluSoftlayer_full}} infrastructure customer portal. Select **Support** > **Add Ticket** and then, in the **Subject** field, select **Accounting Request** to route your account question to the correct support team.
+
+If you are the account master, see [Working with users](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) for more information about managing users.
+
+## How do I link my account if I have multiple accounts?
+{: #al_multacct}
+
+If you have multiple SoftLayer accounts, you must link the accounts that have a matching {{site.data.keyword.Bluemix_notm}} platform account, and an accompanying IBMid.
+
+If you do not have a matching {{site.data.keyword.Bluemix_notm}} platform account, and an accompanying IBMid account, a NEW SoftLayer account can be created to link the accounts.
+
+## What if I don't want to link my account? 	
+{: #al_bene}
+
+To help you experience more of {{site.data.keyword.Bluemix_notm}} all new functionality is being developed into a single {{site.data.keyword.Bluemix_notm}} console. When you merge your account, you'll get access to a more robust catalog, simplified account management, and a single login.
+
+If linking is not a viable option for you, contact your sales support for other options.
+
+## Are there incentives for linking my accounts now? 	
+{: #al_incent}
+
+Yes! If you link your accounts now, you can use a $200 credit to try PaaS services.
+
+## What does adding {{site.data.keyword.Bluemix_notm}} platform services to my SoftLayer account mean? 	
+{: #al_owaffslacct}
+
+It means your account has access to all {{site.data.keyword.Bluemix_notm}} platform offerings.  After you add the {{site.data.keyword.Bluemix_notm}} platform offering to your account, your account master will need to enable end user to have access to the offering.
+
+If you are the account master, see [Working with users](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) for more information.
+
+## How does account linking impact my SoftLayer Master Account ID? 	
+{: #al_howaffslmastacct}
+
+You can still use the ID for your SoftLayer account to sign into the {{site.data.keyword.BluSoftlayer_full}} infrastructure customer portal because the {{site.data.keyword.Bluemix_notm}} console is accessible using IBMids.
+
