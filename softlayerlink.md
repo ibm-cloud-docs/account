@@ -32,7 +32,7 @@ To switch your existing SoftLayer account to an IBMid, you create an IBMid and t
 
 1. Log in to your SoftLayer account, and click **OK** when the prompt to switch to an IBMid is displayed.
 
-   If you are a master user and a prompt to switch to an IBMid is not displayed in the {{site.data.keyword.slportal}}, contact [IBM support](/docs/get-support/howtogetsupport.html#getting-customer-support) for help.
+   If you are a master user and a prompt to switch to an IBMid is not displayed in the {{site.data.keyword.slportal}}, contact IBM support for help. See [IBM support](/docs/get-support/howtogetsupport.html#getting-customer-support) for mmore information about contacting support.
 
    If you previously logged in and you clicked **Later** in the prompt, but you want to switch to IBMid authentication in the current session, go to the Edit User Profile page and click **Switch to IBMid**.
 
@@ -56,7 +56,7 @@ If you are a new customer, you're asked for your existing IBMid or to create a n
 
   * To create a new IBMid, enter an email address that is not currently in use by any IBMid. This email address is the user name for the IBMid, and it's where your registration code is sent after the IBMid is created. You can update the email address that's associated with the IBMid later on, but you can't change the user name.
 
-To resolve any problems with logging in with your IBMid, see [Troubleshooting for accessing {{site.data.keyword.Bluemix_notm}}](/docs/get-support/ts_accessing.html#accessing).
+To resolve any problems with logging in with your IBMid, see [Troubleshooting for accessing {{site.data.keyword.Bluemix_notm}}](/docs/troubleshoot/ts_accessing.html#accessing).
 
 
 ## Linking IBMid user accounts
