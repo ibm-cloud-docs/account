@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2018
 
-lastupdated: "2018-02-08"
+lastupdated: "2018-02-21"
 
 ---
 
@@ -32,7 +32,7 @@ To switch your existing SoftLayer account to an IBMid, you create an IBMid and t
 
 1. Log in to your SoftLayer account, and click **OK** when the prompt to switch to an IBMid is displayed.
 
-   If you are a master user and a prompt to switch to an IBMid is not displayed in the {{site.data.keyword.slportal}}, contact IBM support for help. See [IBM support](/docs/get-support/howtogetsupport.html#getting-customer-support) for mmore information about contacting support.
+   If you are a master user and a prompt to switch to an IBMid is not displayed in the {{site.data.keyword.slportal}}, contact IBM support for help. See [IBM support](/docs/get-support/howtogetsupport.html#getting-customer-support) for more information about contacting support.
 
    If you previously logged in and you clicked **Later** in the prompt, but you want to switch to IBMid authentication in the current session, go to the Edit User Profile page and click **Switch to IBMid**.
 
