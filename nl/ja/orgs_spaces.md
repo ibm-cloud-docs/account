@@ -51,7 +51,7 @@ and roles)](/docs/iam/users_roles.html#userrolesinfo)』を参照してくださ
 
 組織を作成する際は、名前は {{site.data.keyword.Bluemix_notm}} で固有にする必要があります。 組織名が別の {{site.data.keyword.Bluemix_notm}} Public、Dedicated、または Local のユーザーによって既に使用されている場合は、新規名を指定する必要があります。 組織を作成したユーザーには、自動的に*組織管理者*許可が割り当てられ、組織名の編集、ユーザーの追加、および組織内のスペースの作成または削除が可能になります。
 
-[`bx iam org-delete`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_org_delete) コマンドを使用して、組織を削除できます。 組織を削除すると、組織内のすべてのスペース、アプリケーション、およびサービスが削除されます。
+組織を削除するには、サポートに連絡することができます。組織を削除すると、組織内のすべてのスペース、アプリケーション、およびサービスが削除されます。
 
 以下の[ユーザー役割](/docs/iam/users_roles.html#userrolesinfo)を組織内のユーザーに割り当てることができます。 アカウントに招待されたすべてのユーザーに、監査員の役割がデフォルトで割り当てられます。
 

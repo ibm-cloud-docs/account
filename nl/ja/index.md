@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-02-15"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-01-10"
 # アカウント・タイプ
 {: #accounts}
 
-{{site.data.keyword.Bluemix}} での構築は無料で開始できます。 規模を拡大する段階になったら、アップグレードし、無料枠を超える使用分のみを支払います。 ライト・アカウント、従量課金 (PAYG) アカウント、サブスクリプション・アカウント、およびトライアル・アカウントという 4 つのアカウント・タイプから選択できます。 どのアカウント・タイプを使用しても {{site.data.keyword.Bluemix_notm}} での作業を開始できます。ニーズに最も合致するものを選択してください。
+{{site.data.keyword.Bluemix}} での構築は無料で開始できます。 ライト・アカウント、従量課金 (PAYG) アカウント、およびサブスクリプション・アカウントという 3 つのアカウント・タイプから選択できます。 どのアカウント・タイプを使用しても {{site.data.keyword.Bluemix_notm}} での作業を開始できます。ニーズに最も合致するものを選択してください。
 {:shortdesc}
 
 ## アカウントの比較
@@ -27,7 +27,7 @@ lastupdated: "2018-01-10"
 |  | ライト  | 従量課金 (PAYG) | サブスクリプション |
 |--------------------|--------------------|--------------------|--------------------|
 | **無料 Cloud Foundry メモリーへのアクセス** | 256 MB | 512 MB | 512 MB |
-| **[ライト・サービス・プラン ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} へのアクセス** | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
+| **[ライト・サービス・プラン ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://console.bluemix.net/catalog/?search=label:lite){: new_window} へのアクセス** | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
 | **すべての無料プランへのアクセス** |  | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
 | **フルカタログへのアクセス** |  | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
 | **時間制限なし** | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
@@ -54,7 +54,7 @@ lastupdated: "2018-01-10"
    * アカウントは無料です。クレジット・カードは必要ありません。
    * アカウントには有効期限がありません。
    * 1 つの {{site.data.keyword.Bluemix_notm}} 地域で 1 つの組織を使用できます。
-   * 基本的な {{site.data.keyword.Bluemix_notm}} のサポートを無料で受けられます。基本サポートは、従来の重大度が使用されず、特定の応答時間が要求されない非実稼働環境またはワークロードに対して提供されます。
+   * 基本的な {{site.data.keyword.Bluemix_notm}} のサポートを無料で受けられます。 基本サポートは、従来の重大度が使用されず、特定の応答時間が要求されない非実稼働環境またはワークロードに対して提供されます。
    * アカウント状況および割り当て量限度に関する E メール通知を受け取ります。
    * Cloud Foundry アプリは 256 MB までの瞬間的ランタイム・メモリーに無料でアクセスできます。
    * 2 CPU と 4 GB の RAM で Kubernetes クラスターでの作業ができます。
@@ -62,10 +62,14 @@ lastupdated: "2018-01-10"
    * 開発アクティビティーが行われない状態が 10 日間続くと、アプリはスリープ状態になります。 メモリー割り当て量限度に達することを心配することなく、新規アプリの作業を開始できます。
    * 開発アクティビティーが行われない状態が 30 日間続くと、ライト・プランでのサービス・インスタンスは削除されます。 したがって、新しくインスタンスを作成する前に、非アクティブなインスタンスの削除を管理する必要はありません。
 
+### アカウントのアップグレード
+
+規模を拡大する段階になったら、従量制課金アカウントにアップグレードし、無料枠を超える使用分のみを支払います。コンソールで**「管理」** > **「請求および使用量」** > **「請求処理」**に移動し、**「クレジット・カードの追加」**をクリックします。 
+
 ## 有料アカウント
 {: #billableacts}
 
-{{site.data.keyword.Bluemix_notm}} の有料プランに登録したり、アカウントのアップグレードを要求したりする際は、4 つの異なる {{site.data.keyword.Bluemix_notm}} アカウントから選択できます。 以下の表に、各種アカウント・タイプとそれらの課金方法を示します。
+以下の表に、各種アカウント・タイプとそれらの課金方法を示します。
 
 |アカウント・タイプ |	課金方法 |
 |------------------|-----------------------|
@@ -80,15 +84,14 @@ lastupdated: "2018-01-10"
 
 ### 「従量課金 (PAYG)」アカウント
 
-従量課金 (PAYG) アカウントを使用すると、複数のリソース・グループを作成して、リソースの集合での割り当て量の管理および有料使用量の表示を簡単に行うことができます。
+従量課金 (PAYG) アカウントを使用すると、複数のリソース・グループを作成して、リソースの集合での割り当て量の管理および有料使用量の表示を簡単に行うことができます。 ランタイムおよびサービスの無料枠が適用されます。 使用量が無料枠を超えると、月次の {{site.data.keyword.Bluemix_notm}} 請求書を受け取ることになります。 請求書は米国ドル (USD) 単位であり、リソースの課金について詳しく示されます。
 
-ランタイムおよびサービスの無料枠が適用されます。 使用量が無料枠を超えると、月次の {{site.data.keyword.Bluemix_notm}} 請求書を受け取ることになります。 請求書は米国ドル (USD) 単位であり、リソースの課金について詳しく示されます。
+多くの国および地域では、{{site.data.keyword.Bluemix_notm}} コンソールから従量課金 (PAYG) アカウントに申し込むことができます。 請求情報およびクレジット・カード情報を入力した後、契約条件を受け入れてアカウント要求を送信します。 その後、クレジット・カードが検証されます。 さらに、アカウント情報に関する確認 E メールを受信します。確認 E メールを受信してから数分たつと、コンソールに戻ってアプリケーションの作成を継続することができます。 
 
-多くの国および地域では、{{site.data.keyword.Bluemix_notm}} コンソールから従量課金 (PAYG) アカウントに申し込むことができます。 請求情報およびクレジット・カード情報を入力した後、契約条件を受け入れてアカウント要求を送信します。 その後、クレジット・カードが検証されます。 また、アカウント情報の確認の E メールが送信されます。 確認 E メールを受信してから数分たつと、コンソールに戻ってアプリケーションの作成を継続することができます。
+お客様の国または地域でオンライン要求を処理できない場合は、[{{site.data.keyword.Bluemix_notm}} サポート](https://ibm.biz/bluemixsupport){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg) にお問い合わせください。{{site.data.keyword.Bluemix_notm}} サービス・ポータルにログインしたら、**「サポートにお問い合わせください」**をクリックし、**「請求処理、アカウント、またはログイン (Billing, Account or Login)」**オプションを選択してください。
 
-お客様の国または地域でオンライン要求を処理できない場合は、[{{site.data.keyword.Bluemix_notm}} サポート ![外部リンク・アイコン](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}のページにリストされているリンクを使用して、{{site.data.keyword.Bluemix_notm}} 営業担当にお問い合わせください。
-
-いつでも、「従量課金 (PAYG)」アカウントを「サブスクリプション」アカウントに切り替えることができます。 [{{site.data.keyword.Bluemix_notm}} サポート![外部リンク・アイコン](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}ページにリストされているリンクを使用して、{{site.data.keyword.Bluemix_notm}} 営業担当にお問い合わせください。
+いつでも、「従量課金 (PAYG)」アカウントを「サブスクリプション」アカウントに切り替えることができます。 詳しくは、[{{site.data.keyword.Bluemix_notm}} 営業担当](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg)にお問い合わせください。
+{: tip}
 
 ### 「サブスクリプション」アカウント
 
@@ -96,7 +99,7 @@ lastupdated: "2018-01-10"
 
 毎月最小の使用容量に対してコミットし、最小の課金に適用されるサブスクリプションの割引を受けます。 また、最小の使用容量を超過した使用量に対しても料金を支払います。
 
-「サブスクリプション」アカウントの登録、およびサブスクリプション・レートや割引についての詳細は、[{{site.data.keyword.Bluemix_notm}} サポート![外部リンク・アイコン](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}ページにリストされているリンクを使用して、{{site.data.keyword.Bluemix_notm}} 営業担当にお問い合わせください。
+「サブスクリプション」アカウントの登録、およびサブスクリプションの料金や割引の詳細については、[{{site.data.keyword.Bluemix_notm}} 営業担当員 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg) にお問い合わせください。
 
 ### {{site.data.keyword.Bluemix_dedicated_notm}} アカウント
 
@@ -108,9 +111,9 @@ lastupdated: "2018-01-10"
    * 選択したすべての専用サービスとすべての Public {{site.data.keyword.Bluemix_notm}} サービス
    * 標準 {{site.data.keyword.Bluemix_notm}} サポート
 
-SoftLayer DirectLink やプレミアム・サポートのオプションなど、オプション項目をオーダーすることもできます。 詳しくは、[{{site.data.keyword.Bluemix_notm}} 営業担当![外部リンク・アイコン](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}にお問い合わせください。
+SoftLayer DirectLink やプレミアム・サポートのオプションなど、オプション項目をオーダーすることもできます。 詳しくは、[{{site.data.keyword.Bluemix_notm}} 営業担当](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg) にお問い合わせください。
 
-その期間中の月々の支払額は、希望する専用サービスと、すべてのパブリック・サービスへのアクセス権限を付与するサブスクリプション・アカウントに基づきます。 {{site.data.keyword.Bluemix_notm}} Public のサービスの使用料は、サブスクリプション・アカウントの契約に基づいて計算されます。 サブスクリプション契約の対象ではないサービスを使用した場合には、請求書が送付されます。 契約を開始する場合は、IBM 指定アカウント担当者または [{{site.data.keyword.Bluemix_notm}} 営業担当![外部リンク・アイコン](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}に連絡してください。
+その期間中の月々の支払額は、希望する専用サービスと、すべてのパブリック・サービスへのアクセス権限を付与するサブスクリプション・アカウントに基づきます。 {{site.data.keyword.Bluemix_notm}} Public のサービスの使用料は、サブスクリプション・アカウントの契約に基づいて計算されます。 サブスクリプション契約の対象ではないサービスを使用した場合には、請求書が送付されます。 契約を開始する場合は、IBM 指定アカウント担当者または [{{site.data.keyword.Bluemix_notm}} 営業担当](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg) に連絡してください。
 
 ### {{site.data.keyword.Bluemix_local_notm}} アカウント
 
@@ -121,7 +124,7 @@ SoftLayer DirectLink やプレミアム・サポートのオプションなど�
    * 選択したすべてのローカル・サービスおよびすべての Public {{site.data.keyword.Bluemix_notm}} サービスへのアクセス
    * 標準 {{site.data.keyword.Bluemix_notm}} サポート
 
-その期間中の月々の支払額は、希望するローカル・サービスと、すべてのパブリック・サービスへのアクセス権限を付与するサブスクリプション・アカウントに基づきます。 {{site.data.keyword.Bluemix_notm}} Public のサービスの使用料は、サブスクリプション・アカウントの契約に基づいて計算されます。 サブスクリプション契約の対象ではないサービスを使用した場合には、請求書が送付されます。 契約を開始する場合は、IBM 指定アカウント担当者または [{{site.data.keyword.Bluemix_notm}} 営業担当![外部リンク・アイコン](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}に連絡してください。
+その期間中の月々の支払額は、希望するローカル・サービスと、すべてのパブリック・サービスへのアクセス権限を付与するサブスクリプション・アカウントに基づきます。 {{site.data.keyword.Bluemix_notm}} Public のサービスの使用料は、サブスクリプション・アカウントの契約に基づいて計算されます。 サブスクリプション契約の対象ではないサービスを使用した場合には、請求書が送付されます。 契約を開始する場合は、IBM 指定アカウント担当者または [{{site.data.keyword.Bluemix_notm}} 営業担当](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg) に連絡してください。
 
 ## トライアル・アカウント
 {: #trial}
@@ -145,6 +148,9 @@ SoftLayer DirectLink やプレミアム・サポートのオプションなど�
 無料トライアルは、登録後 30 日間で満了し、アカウント内のアプリは停止されます。 {{site.data.keyword.Bluemix_notm}} アカウントにもう一度登録することはできませんが、ご使用のアカウントおよび招待されたアカウントには引き続きアクセスできます。
 
 アプリを再開するには、アカウントを有料アカウントに切り替えるため、従量課金 (PAYG) アカウントのクレジット・カード情報を指定するか、または、サブスクリプション・アカウントを作成します。 それにより、計算とサービスの無料枠を引き続きご使用いただけます。 毎月の無料枠に含まれないサービス、コンテナー、およびランタイムの使用量についてのみお支払いただきます。
+
+  * 「従量制課金」アカウントにアップグレードするには、コンソールで**「管理」** > **「請求および使用量」** > **「請求処理」**に移動し、**「クレジット・カードの追加」**をクリックします。
+  * 「サブスクリプション」アカウントに登録するには、[{{site.data.keyword.Bluemix_notm}} 営業担当員 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg) にお問い合わせください。
 
 無料トライアルの満了後にアカウントの切り替えが行われない場合は、30 日後にアプリとサービスは削除されます。 ただし、アカウントは削除されず、ユーザーはいつでもログインして、有料アカウントにアップグレードすることができます。 また、有料アカウントを作成して、アプリの設定およびサービス構成を失わないよう注意をうながす E メール通知を受け取ります。 {{site.data.keyword.Bluemix_notm}} から通知を受け取りたくない場合は、いつでもアンサブスクライブできます。
 

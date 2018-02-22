@@ -87,7 +87,8 @@ IBM ID を使用してログインすると、以下のメッセージが表示�
 
  * IBM ID には必ず完全修飾 E メール・アドレスを入力してください。
  {: tsResolve}
- * {{site.data.keyword.BluSoftlayer_full}} ID を持つ {{site.data.keyword.BluSoftlayer_full}} ユーザーの場合、IBM ID 認証を使用してログインするには、あらかじめアクセス権限を持つアカウントごとに {{site.data.keyword.BluSoftlayer_notm}} インフラストラクチャーのカスタマー・ポータルで IBM ID 認証に切り替えておく必要があります。詳しくは、[IBM ID への切り替え](/docs/account/softlayerlink.html#switching-to-ibmid)を参照してください。
+ * {{site.data.keyword.BluSoftlayer_full}} ID を持つ {{site.data.keyword.BluSoftlayer_full}} ユーザーの場合、IBM ID 認証を使用してログインするには、あらかじめアクセス権限を持つアカウントごとに {{site.data.keyword.BluSoftlayer_notm}} インフラストラクチャーのカスタマー・ポータルで IBM ID 認証に切り替えておく必要があります。
+ 詳しくは、[IBM ID への切り替え](/docs/account/softlayerlink.html#switching-to-ibmid)を参照してください。
 
 
 ## IBM ID がどの IBM Cloud アカウントにも関連付けられていない
@@ -105,7 +106,7 @@ IBM ID を使用してログインすると、以下のメッセージが表示�
 {: tsResolve}
  * マスター・ユーザーまたはアカウント管理者に連絡して、IBM ID 認証への切り替えが有効になっているかどうかを確認します。
  * 「IBM ID への切り替え」ステップが完了していることを確認します。 [IBM ID への切り替え](/docs/account/softlayerlink.html#switching-to-ibmid)を参照してください。
- * **「ユーザー ID と IBM ID の関連付け」** E メールのアクションに従っていることを確認します。 受信ボックスとジャンク・メール・フォルダーを調べて E メールを見つけてください。 この E メールを再度取得するには (例えば、有効期限が切れた場合)、{{site.data.keyword.BluSoftlayer_notm}} インフラストラクチャーのカスタマー・ポータルの「ユーザー・プロファイルの編集」ページに移動し、**「E メールの再送」**をクリックします。あるいは、[{{site.data.keyword.Bluemix_notm}} サポート![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://ibm.biz/bluemixsupport.com){: new_window}に連絡してください。
+ * **「ユーザー ID と IBM ID の関連付け」** E メールのアクションに従っていることを確認します。 受信ボックスとジャンク・メール・フォルダーを調べて E メールを見つけてください。 この E メールを再度取得するには (例えば、有効期限が切れた場合)、{{site.data.keyword.BluSoftlayer_notm}} インフラストラクチャーのカスタマー・ポータルの「ユーザー・プロファイルの編集」ページに移動し、**「E メールの再送」**をクリックします。 あるいは、[{{site.data.keyword.Bluemix_notm}} サポート![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://ibm.biz/bluemixsupport.com){: new_window}に連絡してください。
 
 **注:** IBM ID を使用して直接 IBM ID を作成した場合、処理する必要がある 2 つの E メールを受け取ります。1 つは IBM ID 登録からのもので、もう 1 つは {site.data.keyword.Blu_full}} からのものです。 両方の E メールのアクションに従っていることを確認してください。
 
@@ -166,12 +167,12 @@ IBM ID 認証サービスに問題がある可能性があります。
 {{site.data.keyword.Bluemix_notm}} トライアル・アカウントに登録した後、{{site.data.keyword.Bluemix_notm}} にログインできない場合があります。 次のメッセージが表示されます。
 {: tsSymptoms}
 
-<code>アカウントが保留になっています。E メールの確認を最大 24 時間待って、スパム・フォルダーも確認してください。それでも確認の E メールが届かない場合は、<a href="http://ibm.biz/bluemixsupport.com" target="_blank">{{site.data.keyword.Bluemix_notm}} サポート</a>までお問い合わせください。</code>
+<code>アカウントが保留になっています。 E メールの確認を最大 24 時間待って、スパム・フォルダーも確認してください。 それでも確認の E メールが届かない場合は、<a href="http://ibm.biz/bluemixsupport.com" target="_blank">{{site.data.keyword.Bluemix_notm}} サポート</a>までお問い合わせください。</code>
 
 {{site.data.keyword.Bluemix_notm}} トライアル・アカウントに登録した後、確認の E メールが届きます。 その確認 E メールに記載されたリンクをクリックして、登録プロセスを完了する必要があります。
 {: tsCauses}
 
-確認の E メールは、ユーザーが入力した E メール・アドレス宛に送信されます。受信ボックスとスパム・フォルダーを確認してください。 確認の E メールが届かない場合は、[{{site.data.keyword.Bluemix_notm}} サポート![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](http://ibm.biz/{{site.data.keyword.Bluemix_notm}}support.com){: new_window}にお問い合わせください。  
+確認の E メールは、ユーザーが入力した E メール・アドレス宛に送信されます。 受信ボックスとスパム・フォルダーを確認してください。 確認の E メールが届かない場合は、[{{site.data.keyword.Bluemix_notm}} サポート![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](http://ibm.biz/{{site.data.keyword.Bluemix_notm}}support.com){: new_window}にお問い合わせください。  
 {: tsResolve}
 
 
@@ -218,5 +219,5 @@ IBM 従業員が自分の IBM イントラネット ID を使用して {{site.da
   * {{site.data.keyword.Bluemix_notm}} をいったんログアウトしてから、再度ログインします。
   * ブラウザーのプライベート表示モードを使用します。
   * ブラウザーの Cookie およびキャッシュをクリアします。
-  * 異なるブラウザーを使用します。{{site.data.keyword.Bluemix_notm}} によりサポートされているブラウザーのバージョンについて詳しくは、[{{site.data.keyword.Bluemix_notm}} の前提条件](/docs/overview/whatisbluemix.html#prereqs)を参照してください。
+  * 異なるブラウザーを使用します。 {{site.data.keyword.Bluemix_notm}} によりサポートされているブラウザーのバージョンについて詳しくは、[{{site.data.keyword.Bluemix_notm}} の前提条件](/docs/overview/whatisbluemix.html#prereqs)を参照してください。
   * cf コマンド・ライン・インターフェースがインストール済みであれば、`cf apps` コマンドを入力してアプリが実行中であるかどうか確認します。

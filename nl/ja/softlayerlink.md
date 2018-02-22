@@ -1,12 +1,10 @@
 ---
 
-
-
 copyright:
 
   years: 2016, 2018
-lastupdated: "2018-01-11"
 
+lastupdated: "2018-02-08"
 
 ---
 
@@ -16,13 +14,22 @@ lastupdated: "2018-01-11"
 {:tip: .tip}
 {:new_window: target="_blank"}
 
-# IBM ID への切り替え
-SoftLayer での認証は、IBM ID を使用して {{site.data.keyword.Bluemix}} のすべてに対して単一のログインを提供するようになりました。 既存の SoftLayer アカウントは IBM ID 認証への切り替えが有効になっています。 マイグレーション・ウィザードを使用して、この切り替えの処理を行います。
+# IBM ID への切り替えとアカウントのリンク
+{: #unifyingaccounts}
+
+SoftLayer での認証は、IBM ID を使用して {{site.data.keyword.Bluemix}} のすべてに対して単一のログインを提供するようになりました。 IBM ID は、{{site.data.keyword.Bluemix}} アカウントにログインして、インフラストラクチャー、サービス、およびアプリケーション機能のアクセスおよび購入に使用できる単一 ID です。SoftLayer のすべての新規アカウントでは IBM ID 認証が有効になっており、既存の SoftLayer アカウントは、IBM ID 認証に切り替えることができます。
 {:shortdesc}
+
+## IBM ID への切り替え
+{: #switchtoIBMid}
 
 IBM ID への切り替えを開始しても、処理が完了する前であればいつでも切り替えを取り消すことができます。 ただし、ログインするたびに、IBM ID への切り替えを促すプロンプトが表示されます。 {{site.data.keyword.Bluemix_notm}} アカウントにリンクする予定の各 SoftLayer アカウントは、固有の E メール・アドレスを持つ固有の IBM ID によって所有される必要があります。
 
-既存の SoftLayer アカウントを IBM ID に切り替えるには、以下の手順を実行します。
+既存の SoftLayer アカウントを IBM ID に切り替えるには、IBM ID を作成し、次に登録コードを使用してその ID を確認します。
+
+### IBM ID および登録コードの要求
+{: #reqIBMidandregcode}
+
 1. SoftLayer アカウントにログインし、IBM ID への切り替えを促すプロンプトが表示されたら、**「OK」**をクリックします。
 
    マスター・ユーザーであるのに {{site.data.keyword.slportal}} に IBM ID への切り替えを促すプロンプトが表示されない場合、[IBM サポート](/docs/get-support/howtogetsupport.html#getting-customer-support)に連絡して、支援を依頼してください。
@@ -33,11 +40,14 @@ IBM ID への切り替えを開始しても、処理が完了する前であれ�
 
    どの IBM ID でも現在使用されていない E メール・アドレスを入力します。 この E メール・アドレスは、新規 IBM ID のユーザー名として使用され、IBM ID の作成後に登録コードが送信される宛先となります。 IBM ID に関連付けられている E メール・アドレスは後で更新できますが、ユーザー名は変更できません。
 
-3. 登録コードを受信したら、E メールのリンクをクリックするか、URL をブラウザーにコピーして、登録コードを入力します。
+### 登録コードを使用した IBM ID の確認
+{: #confIBMiduseregcode}
+
+1. 登録コードを受信したら、E メールのリンクをクリックするか、URL をブラウザーにコピーして、登録コードを入力します。
 
    コードは 7 日間有効で、1 回のみ使用できます。
 
-4. 登録コードを送信した後、IBM ID を使用してカスタマー・ポータルにログインします。
+2. 登録コードを送信した後、IBM ID を使用してカスタマー・ポータルにログインします。
 
    「アカウントのログイン」プロンプトで、**「IBM ID アカウントでのログイン」**セクションに移動し、**「IBM ID でログイン」**をクリックします。 以前に SoftLayer ID で使用していた**「ユーザー名」**と**「パスワード」**のフィールドは使用しないでください。
 
@@ -48,14 +58,6 @@ IBM ID への切り替えを開始しても、処理が完了する前であれ�
 
 IBM ID でのログインに関する問題を解決するには、『[{{site.data.keyword.Bluemix_notm}} へのアクセスに関するトラブルシューティング](/docs/get-support/ts_accessing.html#accessing)』を参照してください。
 
-## IBM ID の認証用のユーザー・アカウントの有効化
-{: #link_accounts_resellers}
-
-場合によっては、アカウントでの IBM ID 認証の使用を販売店または流通業者が前もって有効にしておかないと、ユーザーが IBM ID に切り替えることができないことがあります。
-
-  * IBM ID 認証は、{{site.data.keyword.Bluemix_notm}} アカウントにリンクする既存のユーザー・アカウントごとに有効にする必要があります。 その後、各ユーザーは、前のセクションで説明されているように、マイグレーション・ウィザードを使用して IBM ID に切り替えるプロセスを完了する必要があります。 既存の SoftLayer アカウントが IBM ID 認証を使用できるようにするには、[IBM サポート](/docs/get-support/howtogetsupport.html#getting-customer-support)に連絡してください。
-
-  * 新規ユーザー・アカウントが確実に IBM ID を使用して作成されるようにするには、即時マスター・ユーザー・アカウントに `CREATE_NEW_ACCOUNT_WITH_IBMid_AUTHENTICATION` 属性が設定される必要があります。 [IBM サポート](/docs/get-support/howtogetsupport.html#getting-customer-support)またはベンダーに連絡して、アカウントに属性を設定するように依頼してください。  
 
 ## IBM ID ユーザー・アカウントのリンク
 {: #link_user_accounts}
@@ -63,29 +65,35 @@ IBM ID でのログインに関する問題を解決するには、『[{{site.da
 ユーザー・アカウントを IBM ID 認証に切り替えた後、販売店および流通業者は SoftLayer アカウントと {{site.data.keyword.Bluemix_notm}} アカウントをリンクして、結合されたインフラストラクチャーおよびプラットフォームのリソースを利用できます。 必ず、以下の重要な注意事項を確認してください。
 
   * リンクされるアカウントのマスター・ユーザーは、IBM ID を持っていなければなりません。
-  * {{site.data.keyword.Bluemix_notm}} アカウントにリンクする各ユーザー・アカウントは、固有の E メール・アドレスを持つ固有の IBM ID によって所有される必要があります。 単一の IBM ID が複数の SoftLayer アカウントを所有することは可能ですが、マスター・ユーザーを、アカウントごとに固有の IBM ID となるように変更する必要があります。 SoftLayer アカウントのマスター・ユーザーを変更するには、[IBM SoftLayer サポート![「外部リンク」アイコン](../icons/launch-glyph.svg)](https://knowledgelayer.softlayer.com/topic/support){: new_window}に連絡してください。
+  * {{site.data.keyword.Bluemix_notm}} アカウントにリンクする各ユーザー・アカウントは、固有の E メール・アドレスを持つ固有の IBM ID によって所有される必要があります。 単一の IBM ID が複数の SoftLayer アカウントを所有することは可能ですが、マスター・ユーザーを、アカウントごとに固有の IBM ID となるように変更する必要があります。 SoftLayer アカウントのマスター・ユーザーを変更するには、サポートに連絡してください。詳しくは、『[{{site.data.keyword.Bluemix_notm}} インフラストラクチャーのサポートの利用](/docs/customer-portal/cpsupport.html)』を参照してください。
   * リンクされたアカウントに新規ユーザーを追加する場合、ユーザーを SoftLayer アカウントと {{site.data.keyword.Bluemix_notm}} アカウントの両方に追加して、統合されたコンソールのすべての機能にアクセスできるようにする必要があります。
+  * お客様が Brand Agent Portal (BAP) を使用するブランド・アカウント・ユーザーであり、アカウントにリンクするときにサポートが必要な場合は、softlayer_revenue_services_team@wwpdl.vnet.ibm.com に E メールを送信して、SoftLayer Revenue Services チームに連絡してください。
+  * {{site.data.keyword.Bluemix_notm}} でリンクされるアカウントはすべて、従量課金 (PAYG) アカウントでなければなりません。 新しい従量課金 (PAYG) アカウントを作成するか、既存の従量課金 (PAYG) アカウントをリンクするか、または既存のトライアル・アカウントをリンクできます (既存のトライアル・アカウントは、従量課金 (PAYG) アカウントにアップグレードされます)。 サブスクリプション・アカウントはリンクできません。
 
-各アカウントを {{site.data.keyword.Bluemix_notm}} アカウントにリンクするには、以下のステップを実行します。
-1. 既存の {{site.data.keyword.Bluemix_notm}} アカウントにリンクするか、新規に作成するには、マスター・ユーザーとしてカスタマー・ポータルにログインし、{{site.data.keyword.Bluemix_notm}} リンクをクリックします。
+アカウントをリンクするには、マスター・ユーザーでなければなりません。アカウントのマスター・ユーザーである IBM ID は、リンクする先の {{site.data.keyword.Bluemix_notm}} アカウントの所有者でなければなりません。 各 SoftLayer アカウントを既存の {{site.data.keyword.Bluemix_notm}} アカウントにリンクしたり、新規のアカウントを作成したりするには、以下の手順を実行します。
 
-   アカウントのマスター・ユーザーである IBM ID は、リンクする先の {{site.data.keyword.Bluemix_notm}} アカウントの所有者でなければなりません。
-
-2. SoftLayer アカウントのユーザーを {{site.data.keyword.Bluemix_notm}} アカウントに追加する操作も含めて、ウィザードのプロンプトに従います。
-3. アカウントをリンクした後、各アカウントのエンド・ユーザーに通知して、前のセクションに説明されている手順に従って IBM ID にマイグレーションするように指示します。
+   1. マスター・ユーザー・アカウントでカスタマー・ポータルにログインします。
+   2. {{site.data.keyword.Bluemix_notm}} カスタマー・ポータルから、**「{{site.data.keyword.Bluemix_notm}} アカウントのリンク (Link a Bluemix Account)」**をクリックします。
+   3. SoftLayer アカウントと {{site.data.keyword.Bluemix_notm}} アカウントをリンクする場合のご利用条件を読み、同意します。
+   4. SoftLayer アカウントのユーザーを {{site.data.keyword.Bluemix_notm}} アカウントに追加する操作も含めて、ウィザードのプロンプトに従います。
+   5. 要求されたら、{{site.data.keyword.Bluemix_notm}} アカウントに関連付けられている E メール・アドレスを指定します。 {{site.data.keyword.Bluemix_notm}} アカウントを持っていない場合は、使用する E メール・アドレスを指定し、{{site.data.keyword.Bluemix_notm}} への招待の手順に従ってアカウントを作成します。
+   6. アカウントをリンクした後、各アカウントのエンド・ユーザーに通知して、前のセクションに説明されている手順に従って IBM ID にマイグレーションするように指示します。
 
 エンド・ユーザー・アカウントのみを IBM ID にマイグレーションしてください。 ブランド・アカウント (エンド・ユーザー・アカウントの親アカウントであり、リソースを含んでいない) はマイグレーションしないでください。 ブランド・アカウント・ユーザーは、IBM ID にマイグレーションすると、Brand Agent Portal (BAP) にログインできなくなります。
-{: tip}  
+{: tip}
+
+アカウントがリンクされると、以下のようになります。
+
+  * SoftLayer と {{site.data.keyword.Bluemix_notm}} アカウントの両方にアクセスするために、IBM ID 資格情報を使用する必要があります。
+  * 既存の SoftLayer 割引は、{{site.data.keyword.Bluemix_notm}} の料金全体に適用されます。
+  * 米国ドル (USD) 単位の 1 つの請求書を受け取ります。 既存の {{site.data.keyword.Bluemix_notm}} アカウントがある場合、インフラストラクチャー・リソースに対する {{site.data.keyword.Bluemix_notm}} からの請求は、両方のアカウントをリンクした後に開始される新しい請求処理サイクルで有効になります。
+  * インフラストラクチャー・リソースの使用量は、{{site.data.keyword.Bluemix_notm}} コンソールでモニターできます。
+
+アカウントをリンクした後は、リンク解除することはできません。
 
 ## リンクされたアカウントでの多要素認証の使用法
 {: #2fa}
 
-リンクされたアカウントを持っている場合、ID およびアクセスの**「設定」**ページを使用して、ご使用のアカウントで多要素認証認証 (/docs/iam/mfa.html) を有効にすることができます。これは、一般的に 2 要素認証 (2FA) とも呼ばれ、標準的な必須の IBM ID とパスワード以外の認証要素を使用してアカウントにアクセスするためのセキュリティー層を追加します。ご使用のアカウントの多要素認証は、リンクされている {{site.data.keyword.Bluemix_notm}} アカウント内のすべてのリソースに適用されます。ご使用のアカウントで多要素認証が有効になっている場合は、そのアカウントに追加されているすべてのユーザーにも適用されます。ご使用のアカウントで[多要素認証を有効にする](/docs/iam/mfa.html)際に検討すべき考慮事項について確認してください。
+リンクされたアカウントを持っている場合、ID およびアクセスの**「設定」**ページを使用して、ご使用のアカウントで多要素認証認証 (/docs/iam/mfa.html) を有効にすることができます。 これは、一般的に 2 要素認証 (2FA) とも呼ばれ、標準的な必須の IBM ID とパスワード以外の認証要素を使用してアカウントにアクセスするためのセキュリティー層を追加します。 ご使用のアカウントの多要素認証は、リンクされている {{site.data.keyword.Bluemix_notm}} アカウント内のすべてのリソースに適用されます。 ご使用のアカウントで多要素認証が有効になっている場合は、そのアカウントに追加されているすべてのユーザーにも適用されます。 ご使用のアカウントで[多要素認証を有効にする](/docs/iam/mfa.html)際に検討すべき考慮事項について確認してください。
 
-多要素認証は、IBM ID ごとには行われません。従来どおり、アカウント単位です。 IBM ID が複数のアカウントに関連付けられていて、アカウント間で切り替えを行う場合、2 要素認証を必要とする別のアカウントに切り替えるたびに ID を確認する必要があります。 これは、前のアカウントと新しいアカウントが両方とも同じ 2 要素認証メカニズムを使用して構成されている場合でも同じです。
-
-<!-- Above section is for MFA release 1/2018. Commented out section here has old content.
-If you enabled two-factor authentication for your existing SoftLayer account, you are still required to enter your security code when logging in to the {{site.data.keyword.Bluemix_notm}} console. However, the two-factor authentication applies only to the resources in your Infrastructure account. You might be able to do various actions to the resources in your {{site.data.keyword.Bluemix_notm}} account without doing two-factor authentication.
-Two-factor authentication is not per IBMid. It is still per account. When an IBMid is associated with multiple accounts, and you switch between accounts, you must confirm your identity every time you switch to a different account that requires two-factor authentication. This is true even if the prior account and the new account are both configured with the same two-factor authentication mechanism.
--->
-
+多要素認証は、IBM ID ごとには行われません。 従来どおり、アカウント単位です。 IBM ID が複数のアカウントに関連付けられていて、アカウント間で切り替えを行う場合、2 要素認証を必要とする別のアカウントに切り替えるたびに ID を確認する必要があります。 これは、前のアカウントと新しいアカウントが両方とも同じ 2 要素認証メカニズムを使用して構成されている場合でも同じです。

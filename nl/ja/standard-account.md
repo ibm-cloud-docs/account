@@ -18,7 +18,7 @@ lastupdated: "2017-10-13"
 # {{site.data.keyword.Bluemix_notm}} 標準アカウント (Limited Release)
 {: #betaintro}
 
-{{site.data.keyword.Bluemix}} 標準アカウント (Limited Release) は、{{site.data.keyword.Bluemix_notm}} Public での新しい作業方法を提供する新しい無料アカウントを導入します。標準アカウントには、30 日間の {{site.data.keyword.Bluemix_notm}} トライアルと違い、有効期限はありません。 時間的な制約を気にすることなく、{{site.data.keyword.Bluemix_notm}} アプリケーションに関する作業を続けることができます。 
+{{site.data.keyword.Bluemix}} 標準アカウント (Limited Release) は、{{site.data.keyword.Bluemix_notm}} Public での新しい作業方法を提供する新しい無料アカウントを導入します。 標準アカウントには、30 日間の {{site.data.keyword.Bluemix_notm}} トライアルと違い、有効期限はありません。 時間的な制約を気にすることなく、{{site.data.keyword.Bluemix_notm}} アプリケーションに関する作業を続けることができます。 
 {:shortdesc}
 
 標準アカウントを利用できるのは、英国地域および米国南部地域のユーザーのみになります。 これらのいずれの地域にも属していない場合でも、友人に招待してもらうか、sales@bluemix.net で弊社の販売チームに連絡することにより、標準アカウントを作成できます。 標準アカウントの所有者は、友人および同僚を招待して参加させることができます。  
@@ -46,7 +46,6 @@ lastupdated: "2017-10-13"
 {:caption="表 2. 変わらない点" caption-side="top"}
 
 **注**: トライアル・アカウントが変換されない場合、その理由を説明するメッセージが表示されます。 既存のトライアル・アカウントに複数の組織があるか、移行できないアプリケーションがある可能性があります。 適切な処置を行った後、アカウントの変換を再試行してください。
-
 
 標準アカウントを所有している場合は、ユーザーの組織およびスペース内で共同作業するためにチーム・メンバーを招待し、使用量を表示し、スペースを作成し、アカウント・プロファイルを更新し、組織を管理することができます。
 
