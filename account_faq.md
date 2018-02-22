@@ -68,7 +68,7 @@ After you link your account, you keep the same level of support when you add {{s
 ## Are there other ways to get help with linking my account? 	
 {: #al_morehelp}
 
-  1. See the [5 Steps to Link your IaaS and PaaS Accounts blog](https://admin.blogs.prd.ibm.event.ibm.com/blogs/bluemix/) for helpful information.
+  1. See the [Steps to Link your IaaS and PaaS Accounts blog](https://www.ibm.com/blogs/bluemix/2018/02/5-steps-link-iaas-paas-accounts/) for helpful information.
   2. From the {{site.data.keyword.BluSoftlayer_full}} infrastructure customer portal, open a **Sales Live Chat** to ask account questions.
   3. Open a ticket from the {{site.data.keyword.BluSoftlayer_full}} infrastructure customer portal. Select **Support** > **Add Ticket** and then, in the **Subject** field, select **Accounting Request** to route your account question to the correct support team.
 
