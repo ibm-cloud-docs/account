@@ -47,7 +47,7 @@ lastupdated: "2018-01-10"
 
 조직을 작성하는 경우, 이름은 {{site.data.keyword.Bluemix_notm}}에서 고유해야 합니다. 다른 {{site.data.keyword.Bluemix_notm}} 퍼블릭, 데디케이티드 또는 로컬 사용자가 조직 이름을 이미 사용 중인 경우에는 새 이름을 지정해야 합니다. 조직을 작성한 후에는 *조직 관리자* 권한이 자동으로 지정되며, 이를 사용하면 조직 이름 편집, 사용자 추가, 조직에서 영역 작성 또는 삭제가 가능합니다.
 
-[`bx iam org-delete`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_org_delete) 명령을 사용하여 조직을 삭제할 수 있습니다. 조직을 삭제하면 조직 내 모든 영역, 애플리케이션 및 서비스가 삭제됩니다.
+지원 센터에 문의하여 조직을 삭제할 수 있습니다. 조직을 삭제하면 조직 내 모든 영역, 애플리케이션 및 서비스가 삭제됩니다.
 
 다음 [사용자 역할](/docs/iam/users_roles.html#userrolesinfo)을 조직에 있는 사용자에게 지정할 수 있습니다. 계정에 초대된 모든 사용자에게는 기본적으로 감사자 역할이 지정됩니다.
 

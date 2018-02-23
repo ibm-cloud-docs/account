@@ -15,7 +15,7 @@ lastupdated: "2017-12-06"
 # 계정의 사용자에게 공용 리소스 숨기기
 {: #exclude}
 
-계정 관리자는 `bx` [명령 인터페이스](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_catalog_entry_visibility_set)를 통해 제외 목록에 공용 리소스를 추가하여 계정의 모든 사용자에게 이 공용 리소스를 숨기도록 선택할 수 있습니다.
+계정 관리자는 `bx` [명령행 인터페이스](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_catalog_entry_visibility_set)를 통해 제외 목록에 공용 리소스를 추가하여 계정의 모든 사용자에게 이 공용 리소스를 숨기도록 선택할 수 있습니다.
 {:shortdesc: .shortdesc}
 
 **참고:** 카탈로그에서 항목을 숨기면 Cloud Foundry CLI 또는 글로벌 탐색을 통해 사용 가능한 서비스 프로비저닝 목록(예: 금융, 모바일, Watson 및 웹 앱)에서 항목이 제거되지 않습니다.
@@ -87,6 +87,6 @@ Children           Name                                          Kind         ID
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-오브젝트의 ID를 찾아 `bx catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>`를 사용하여 계정을 제외하십시오.
+오브젝트에 대한 ID를 찾고 다음 명령으로 계정을 제외시키십시오. `bx catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>`.
 
 가시성 작동 방식에 대한 자세한 정보는 [API 문서](https://console.bluemix.net/apidocs/682)를 참조하십시오.

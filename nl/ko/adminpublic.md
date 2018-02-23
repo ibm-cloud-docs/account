@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-11-07"
+lastupdated: "2018-01-29"
 
 
 ---
@@ -17,7 +17,7 @@ lastupdated: "2017-11-07"
 
 # {{site.data.keyword.Bluemix_notm}} 등록
 
-기존 IBM ID를 사용하거나, 새 IBM ID를 작성하거나, 연합 ID를 사용하여 {{site.data.keyword.Bluemix}} 계정에 등록할 수 있습니다. 연합 ID는 도메인과 사용자 신임 정보를 사용하여 IBM 웹 애플리케이션에 액세스할 수 있도록 IBM에 등록된 회사의 도메인 내에서 사용되는 ID입니다.
+기존 IBM ID를 사용하거나, 새 IBM ID를 작성하거나, 연합 ID를 사용하여 {{site.data.keyword.Bluemix}} 계정에 등록할 수 있습니다. 연합 ID는 도메인과 사용자 신임 정보를 사용하여 IBM 웹 애플리케이션에 액세스할 수 있도록 IBM에 등록된 회사의 도메인 내에서 사용되는 ID입니다. 시작하려면 **등록**을 클릭하십시오.
 {:shortdesc}
 
 

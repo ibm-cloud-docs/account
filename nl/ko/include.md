@@ -15,7 +15,7 @@ lastupdated: "2017-12-06"
 # 개인용 리소스에 계정 추가
 {: #include}
 
-작성한 개인용 리소스는 기본적으로 제한됩니다. 계정 관리자는 `bx` [명령 인터페이스](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_catalog_entry_visibility_set)를 통해 포함 목록에 리소스를 추가하여 이 리소스를 볼 수 있는 사용자를 선택할 수 있습니다.
+작성한 개인용 리소스는 기본적으로 제한됩니다. 계정 관리자는 `bx` [명령행 인터페이스](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_catalog_entry_visibility_set)를 통해 포함 목록에 리소스를 추가하여 이 리소스를 볼 수 있는 사용자를 선택할 수 있습니다.
 {:shortdesc: .shortdesc}
 
 ## 액세스 권한이 있는지 여부를 확인하는 방법

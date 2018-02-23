@@ -28,7 +28,7 @@ lastupdated: "2018-01-10"
 
 알림을 등록하거나, 문제점을 해결하기 위한 지원 옵션을 알아보거나, IBM에 피드백을 제공할 수도 있습니다.
 
-현재 {{site.data.keyword.Bluemix_notm}} 로컬 또는 {{site.data.keyword.Bluemix_notm}} 데디케이티드의 관리자인 경우, [{{site.data.keyword.Bluemix_notm}} 로컬 또는 {{site.data.keyword.Bluemix_notm}} 데디케이티드 관리](/docs/hybrid/index.html#mng)를 참조하여 관리 페이지를 통해 계정을 관리하는 방법을 확인할 수 있습니다. 
+현재 {{site.data.keyword.Bluemix_notm}} 로컬 또는 {{site.data.keyword.Bluemix_notm}} 데디케이티드의 관리자인 경우, [{{site.data.keyword.Bluemix_notm}} 로컬 또는 {{site.data.keyword.Bluemix_notm}} 데디케이티드 관리](/docs/hybrid/index.html#mng)를 참조하여 관리 페이지를 통해 계정을 관리하는 방법을 확인할 수 있습니다.
 
 ## 프로파일 사진 변경
 {: #photo notoc}

@@ -166,7 +166,7 @@ lastupdated: "2017-11-07"
 {: tsResolve}
 
   * 콘솔 메뉴 표시줄에서 **관리 > 계정 > 조직**을 클릭하십시오. 그런 다음, 영역을 작성하려는 조직을 선택하고 **영역 작성**을 클릭하십시오.
-  * cf 명령 인터페이스에서 `cf create-space <space_name> -o <organization_name>`를 입력하십시오.
+  * cf 명령행 인터페이스에서 다음을 입력하십시오. `cf create-space <space_name> -o <organization_name>`.
 
 
 ## 앱이 동일한 도메인 이름을 공유함
