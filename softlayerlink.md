@@ -95,7 +95,7 @@ Linked accounts log in to the [{{site.data.keyword.Bluemix}} console ![External 
 After you link your accounts, they cannot be unlinked.
 {: tip}
 
-After your accounts are linked:
+Also, note the following changes after your accounts are linked:
   * You must use your IBMid credentials to access both your SoftLayer and your {{site.data.keyword.Bluemix_notm}} accounts.
   * Any existing SoftLayer discounts are applied across {{site.data.keyword.Bluemix_notm}} charges.
   * You will receive one invoice in United States dollars (USD). If you have an existing {{site.data.keyword.Bluemix_notm}} account, the billing through {{site.data.keyword.Bluemix_notm}} for infrastructure resources takes effect for the new billing cycle that starts after the accounts are linked.
