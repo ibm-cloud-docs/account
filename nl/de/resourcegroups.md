@@ -5,7 +5,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-11-13"
+lastupdated: "2018-02-08"
 
 
 ---
@@ -31,9 +31,9 @@ Um die Ressourcen, die in einer Ressourcengruppe enthalten sind, auf einfache We
 
 Wenn Sie über ein nutzungsabhängiges Konto oder ein Abonnementkonto verfügen, dann können Sie mehrere Ressourcengruppen erstellen, um auf einfache Weise Kontingente zu verwalten und die Informationen zu Abrechnung und Nutzung für ein Ressourcenset anzuzeigen. Durch die Gruppierung von Ressourcen wird außerdem die gleichzeitige Zuweisung von Zugriffsberechtigungen für mehrere Instanzen an die Benutzer erleichtert.
 
-Wenn Sie über ein Lite-Konto oder ein Werbeaktionskonto verfügen, können Sie keine zusätzlichen Ressourcengruppen erstellen, die Standardressourcengruppen jedoch umbenennen.  
+Wenn Sie über ein Lite-Konto oder ein 30-Tage-Testkonto verfügen, können Sie zwar keine zusätzlichen Ressourcengruppen erstellen, jedoch die Standardressourcengruppe umbenennen. 
 
-Die einzelnen Ressourcengruppen sind kostenlos, die Verbindungen zwischen einer Ressourcengruppe und einer Cloud Foundry-Organisation oder einem Cloud Foundry-Bereich werden jedoch bei Ihren Kontokontingent angerechnet. Weitere Informationen finden Sie in [Was ist ein Alias?](/docs/manageapps/connecting_apps.html#what_is_alias).
+Die einzelnen Ressourcengruppen sind kostenlos, die Verbindungen zwischen einer Ressourcengruppe und einer Cloud Foundry-Organisation oder einem Cloud Foundry-Bereich werden jedoch bei Ihren Kontokontingent angerechnet. Weitere Informationen finden Sie in [Was ist ein Alias?](/docs/cfapps/connecting_apps.html#what_is_alias).
 {: tip}
 
 1. Rufen Sie **Verwalten** &gt; **Konto** &gt; **Ressourcengruppen** auf.

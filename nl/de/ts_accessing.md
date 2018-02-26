@@ -66,7 +66,6 @@ Wenn Sie sich mit Ihrer IBMid anmelden, wird die folgende Nachricht angezeigt:
 
 * Sie haben versucht, sich über das [Kundenportal der {{site.data.keyword.BluSoftlayer_notm}}-Infrastruktur ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://control.softlayer.com){: new_window} anzumelden, aber Ihre IBMid und das zugehörige Kennwort in den Feldern für den Benutzernamen und das Kennwort eingegeben.
 
-
 Klicken Sie in der Nachricht auf den Link **hier** oder wechseln Sie zum Abschnitt für die Kontoanmeldung mit IBMid und klicken Sie auf **Mit IBMid anmelden**.
 {: tsResolve}
 

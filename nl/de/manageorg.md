@@ -43,7 +43,7 @@ Führen Sie die folgenden Schritte aus, um einen Bereich zu löschen:
 1. Klicken Sie auf **Verwalten** > **Konto** > **Cloud Foundry-Organisationen**.
 2. Wählen Sie die Organisation aus, die bearbeitet werden soll, und klicken Sie auf **Details anzeigen**.
 3. Ermitteln Sie den Bereich, den Sie löschen möchten, und klicken Sie auf **Bereich bearbeiten**.
-4. Klicken Sie auf **Cloud Foundry-Bereich löschen**. 
+4. Klicken Sie auf **Cloud Foundry-Bereich löschen**.
 
 ## Benutzerrollen bearbeiten
 {: #listmembers}

@@ -18,7 +18,7 @@ lastupdated: "2018-01-10"
 # Auf Infrastrukturressource zugreifen
 {: #accessinfrastructure}
 
-Beim Erstellen Ihrer Apps in der {{site.data.keyword.Bluemix_notm}} Public-Umgebung können Sie Infrastrukturressourcen verwenden.
+Beim Erstellen Ihrer Apps in der {{site.data.keyword.Bluemix_notm}} Public-Umgebung können Sie Infrastrukturressourcen verwenden. 
 {: shortdesc}
 
 Infrastrukturressourcen können zum Erstellen virtueller Umgebungen verwendet werden, zur Bereitstellung von Speicherplatz, zum Aufbauen eines Netzwerks und Sichern der Umgebung. Weitere Informationen enthält der Abschnitt [Übersicht über die Plattform](/docs/overview/ibm-cloud.html). 

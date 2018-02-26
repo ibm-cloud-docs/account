@@ -121,7 +121,7 @@ Wenn Sie die Apps erneut aktivieren möchten, beginnen Sie in der Cloud Foundry-
 
 Weitere Informationen zur Verwendung der Befehle finden Sie unter [Cloud Foundry-Befehle](/docs/cli/reference/cfcommands/index.html).
 
- **Hinweis**: Wenn die App bereits für SSH aktiviert ist, kann sie mit den Befehlen `cf enable-ssh` und `cf disable-sh` nicht aktiviert werden.  
+ **Hinweis**: Wenn die App bereits für SSH aktiviert ist, kann sie mit den Befehlen `cf enable-ssh` und `cf disable-sh` nicht aktiviert werden. 
 
 ### Garbage-Collection
 
