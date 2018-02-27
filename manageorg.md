@@ -34,7 +34,7 @@ Complete the following steps to rename your organization:
 
 ### Deleting an org
 
-When you delete an organization, all the spaces, applications, and services within the organization are deleted. Be sure to note that deleting operations cannot be reversed. 
+When you delete an organization, all the spaces, applications, and services within the organization are deleted. Be sure to note that deleting operations cannot be reversed. You must contact support to delete an organization.
 
 ### Deleting a space
 
