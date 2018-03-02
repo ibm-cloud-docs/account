@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-22"
+lastupdated: "2018-03-02"
 
 ---
 
@@ -24,6 +24,11 @@ In a Lite account, you can work in only one region. In a Pay-As-You-Go or Subscr
 {: #whatisliteplan}
 
 A Lite plan is a free quota-based service plan. You can use a service Lite plan to build an app without incurring any charges. A Lite plan might be offered on a monthly cycle (renewed each month) or on a one-off usage basis. You can have one instance per Lite plan service. Lite pricing plans are offered in all accounts.
+
+## What happens when my Lite plan instance reaches the monthly quota?
+{: #monthlyquota}
+
+Reaching any quota limit for Lite plan instances suspends the service for that month. Quota limits are per org, not per instance. New instances created in the same org reflect any usage from previous instances. The quota limits reset on the 1st of every month.
 
 ## How do I upgrade or change my account type?
 {: #changeacct}
