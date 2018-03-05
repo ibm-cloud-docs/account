@@ -18,7 +18,7 @@ lastupdated: "2018-01-10"
 # Accès aux ressources d'infrastructure
 {: #accessinfrastructure}
 
-Vous pouvez utiliser des ressources d'infrastructure lorsque vous générez vos applications dans l'environnement public {{site.data.keyword.Bluemix_notm}}.
+Vous pouvez utiliser des ressources d'infrastructure lorsque vous générez vos applications dans l'environnement public {{site.data.keyword.Bluemix_notm}}. 
 {: shortdesc}
 
 Utilisez des ressources d'infrastructure pour générer des environnements virtuels, fournir du stockage, établir un réseau et sécuriser votre environnement. Pour plus d'informations, voir [Présentation de la plateforme](/docs/overview/ibm-cloud.html). 

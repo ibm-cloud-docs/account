@@ -30,7 +30,7 @@ Les utilisateurs aux Royaume-Uni et dans les régions Sud des Etats-Unis sont é
 {: #standardaccount}
 
 Vous vous demandez sans doute en quoi le compte Standard diffère du
-compte d'essai. Les tableaux suivants récapitulent les détails clés d'un compte {{site.data.keyword.Bluemix_notm}} Standard.  
+compte d'essai. Les tableaux suivants récapitulent les détails clés d'un compte {{site.data.keyword.Bluemix_notm}} Standard. 
 
 |Quelles sont les nouveautés du compte standard ? |    
 |-----------------|
@@ -141,7 +141,7 @@ Pour activer vos applications, commencez à les réutiliser sur la ligne de comm
 
 Pour plus d'informations sur l'utilisation de commandes, voir [Commandes Cloud Foundry](/docs/cli/reference/cfcommands/index.html).
 
- **Remarque** : Si votre application est déjà activée pour SSH, vous ne pouvez pas utiliser les commandes `cf enable-ssh` et `cf disable-sh` pour ranimer votre application.  
+ **Remarque** : Si votre application est déjà activée pour SSH, vous ne pouvez pas utiliser les commandes `cf enable-ssh` et `cf disable-sh` pour ranimer votre application. 
 
 ### Récupération de place
 

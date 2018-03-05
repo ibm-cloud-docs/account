@@ -5,11 +5,12 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-11-06"
+lastupdated: "2018-02-07"
 
 ---
 
 {:shortdesc: .shortdesc}
+{:tip: .tip}
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
@@ -18,6 +19,10 @@ lastupdated: "2017-11-06"
 {: #changing}
 
 Vous pouvez changer de plan de service dans {{site.data.keyword.Bluemix}} dans l'instance du service, si le changement de plan est possible pour ce service.
+{: shortdesc}
+
+Si vous recherchez plus de détails sur la mise à niveau de votre type de compte, voir [Comment mettre à niveau ou modifier mon type de compte ?](/docs/account/account_faq.html#changeacct).
+{: tip}
 
 Certains services seulement vous permettent de changer de plan de service. Si le changement de plan est possible pour le service, le tableau de bord de l'instance du service affiche l'option **Plan** dans la navigation. Chaque service propose un
 ensemble différent d'étapes à suivre si vous changez de plan.
@@ -31,7 +36,7 @@ exécuter.
 |Service |	Information|
 |--------|-------------|
 |Presence Insights 	|Si vous avez choisi un plan léger et que vous dépassez les franchises, un message 403 s'affiche ou est consigné afin d'indiquer que vous ne disposez plus des autorisations, et votre instance de service est désactivée. De plus, les appels API REST POST sont rejetés avec une réponse 403.<br/><br/>Si votre service est désactivé car vous avez dépassé les franchises, vous pouvez procéder à la mise à niveau du plan léger vers un plan payant. Votre service est réactivé dans un délai de 2 heures.<br/><br/>Si vous disposez d'un plan payant, vous pouvez passer à un plan inférieur, c'est-à-dire au plan léger, tant que votre utilisation ne dépasse pas la franchise du plan léger pour les événements et l'espace de stockage total.<br/><br/>Lorsque vous mettez à niveau ou réduisez votre plan, vous n'avez pas à reconstituer ou à redémarrer applications.|
-{:caption="Tableau 9. Etapes suivantes de changement de plan" caption-side="top"}
+{:caption="Tableau 1. Etapes suivantes de changement de plan" caption-side="top"}
 
 ## Changement de plan via l'interface de ligne de commande
 {: #changing_command_line}

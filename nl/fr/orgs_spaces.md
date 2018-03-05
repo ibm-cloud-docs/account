@@ -47,7 +47,7 @@ Dans {{site.data.keyword.Bluemix_notm}}, vous pouvez utiliser des organisations 
 
 Lorsque vous créez une organisation, son nom doit être unique dans {{site.data.keyword.Bluemix_notm}}. Si le nom d'organisation est déjà utilisé par un autre utilisateur d'environnement {{site.data.keyword.Bluemix_notm}} public, dédié ou local, vous devez spécifier un autre nom. Une fois que vous avez créé l'organisation, le droit *Responsable de l'organisation*, qui vous permet d'éditer le nom de l'organisation, d'ajouter des utilisateurs et de créer ou de supprimer des espaces dans l'organisation, vous est attribué automatiquement.
 
-Vous pouvez utiliser la commande [`bx iam org-delete`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_org_delete) pour supprimer des organisations. Lorsque vous supprimez une organisation, tous les espaces, toutes les applications et tous les services au sein de l'organisation sont supprimés.
+Vous pouvez contacter le support pour supprimer une organisation. Lorsque vous supprimez une organisation, tous les espaces, toutes les applications et tous les services au sein de l'organisation sont supprimés.
 
 Les [rôles utilisateur](/docs/iam/users_roles.html#userrolesinfo) suivants peuvent être affectés aux utilisateurs dans une organisation. Le rôle d'auditeur est attribué par défaut à tous les utilisateurs invités dans le compte.
 
