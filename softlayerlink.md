@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2018
 
-lastupdated: "2018-02-26"
+lastupdated: "2018-03-05"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-02-26"
 # Switching to IBMid and linking accounts
 {: #unifyingaccounts}
 
-Authentication in SoftLayer now uses an IBMid to provide a single login for all of {{site.data.keyword.Bluemix}}. An IBMid is a single ID that you use to log into your {{site.data.keyword.Bluemix}} account to access and purchase infrastructure, services, and application features. All new accounts automatically receive an IBMid and existing SoftLayer accounts, except SAML federated accounts, are enabled to switch to IBMid authentication.
+Authentication in SoftLayer now uses an IBMid to provide a single login for all of {{site.data.keyword.Bluemix}}. An IBMid is a single ID that you use to log into your {{site.data.keyword.Bluemix_notm}} account to access and purchase infrastructure, services, and application features. All new accounts automatically receive an IBMid and existing SoftLayer accounts, except SAML federated accounts, are enabled to switch to IBMid authentication.
 {:shortdesc}
 
 ## Switching to IBMid
@@ -53,7 +53,6 @@ To switch your existing SoftLayer account to an IBMid, you create an IBMid and t
 
 If you are a new customer, you're asked for your existing IBMid or to create a new IBMid when you check out your order.
   * To use an existing IBMid, enter the user name or the email address of the IBMid if it is unique (that is, it's not shared across multiple IBMids).
-
   * To create a new IBMid, enter an email address that is not currently in use by any IBMid. This email address is the user name for the IBMid, and it's where your registration code is sent after the IBMid is created. You can update the email address that's associated with the IBMid later on, but you can't change the user name.
 
 To resolve any problems with logging in with your IBMid, see [Troubleshooting for accessing {{site.data.keyword.Bluemix_notm}}](/docs/troubleshoot/ts_accessing.html#accessing).
@@ -85,8 +84,9 @@ Complete the following steps to link each SoftLayer account to an existing {{sit
 Migrate only end user accounts to IBMid. Do not migrate brand accounts, which are parent accounts for end user accounts and do not contain any resources. Brand account users that migrate to IBMid lose the ability to log in to the Brand Agent Portal (BAP).
 {: tip}
 
-Linked accounts log in to the [{{site.data.keyword.Bluemix}} console ![External link icon](../icons/launch-glyph.svg)](https://console.bluemix.net){: new_window}. Review the other following information about your accounts after you link them:
+Linked accounts log in to the [{{site.data.keyword.Bluemix}} console ![External link icon](../icons/launch-glyph.svg)](https://console.bluemix.net){: new_window}.
 
+Also, note the following changes after your accounts are linked:
   * You must use your IBMid credentials to access both your SoftLayer and your {{site.data.keyword.Bluemix_notm}} accounts.
   * Any existing SoftLayer discounts are applied across {{site.data.keyword.Bluemix_notm}} charges.
   * You will receive one invoice in United States dollars (USD). If you have an existing {{site.data.keyword.Bluemix_notm}} account, the billing through {{site.data.keyword.Bluemix_notm}} for infrastructure resources takes effect for the new billing cycle that starts after the accounts are linked.
@@ -94,12 +94,6 @@ Linked accounts log in to the [{{site.data.keyword.Bluemix}} console ![External 
 
 After you link your accounts, they cannot be unlinked.
 {: tip}
-
-Also, note the following changes after your accounts are linked:
-  * You must use your IBMid credentials to access both your SoftLayer and your {{site.data.keyword.Bluemix_notm}} accounts.
-  * Any existing SoftLayer discounts are applied across {{site.data.keyword.Bluemix_notm}} charges.
-  * You will receive one invoice in United States dollars (USD). If you have an existing {{site.data.keyword.Bluemix_notm}} account, the billing through {{site.data.keyword.Bluemix_notm}} for infrastructure resources takes effect for the new billing cycle that starts after the accounts are linked.
-  * You can monitor the usage of your infrastructure resources in the {{site.data.keyword.Bluemix_notm}} console.
 
 ## Multi-factor authentication usage in linked accounts
 {: #2fa}
