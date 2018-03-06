@@ -47,7 +47,7 @@ lastupdated: "2018-01-10"
 
 建立組織時，名稱在 {{site.data.keyword.Bluemix_notm}} 中必須是唯一的。如果另一位 {{site.data.keyword.Bluemix_notm}}「公用」、「專用」或「本端」使用者已使用此組織名稱，則您必須指定新的名稱。建立組織之後，您會自動獲指派*組織管理員* 許可權，這可讓您編輯組織名稱、新增使用者，以及在組織中建立或刪除空間。
 
-您可以使用 [`bx iam org-delete`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_org_delete) 指令來刪除組織。當您刪除組織時，會刪除組織內的所有空間、應用程式及服務。
+您可以與支援中心聯絡，以刪除組織。當您刪除組織時，會刪除組織內的所有空間、應用程式及服務。
 
 下列[使用者角色](/docs/iam/users_roles.html#userrolesinfo)可以指派給組織中的使用者。依預設，受邀加入帳戶的所有使用者都會獲指派審核員角色。
 

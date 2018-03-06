@@ -55,7 +55,7 @@ Quando você possui uma conta Padrão, é possível convidar membros da equipe p
 ## Planos Lite
 {: #liteplans}
    
-Os planos Lite, que também estão disponíveis em uma conta de Pagamento por uso, são estruturados como uma cota grátis. É possível trabalhar em seus projetos sem preocupações, sem o risco de gerar
+Os planos Lite, que também estão disponíveis em uma conta pré-paga, são estruturados como uma cota grátis. É possível trabalhar em seus projetos sem preocupações, sem o risco de gerar
 uma conta acidental. A cota pode operar por um período de tempo específico, por exemplo, por um mês
 ou em uma base de uso único. Aqui estão alguns exemplos de cotas do plano Lite:
 
@@ -100,9 +100,8 @@ reconfigurado no primeiro dia de cada mês, quando você poderá voltar a trabal
 
 É possível fornecer uma instância por Plano Lite. 
 
-**Nota**: essas limitações se aplicam apenas a uma conta Padrão. A qualquer momento, é possível fazer upgrade para uma conta de Pagamento por uso ou de Assinatura. Você paga
-somente pelo que usar, além dos abonos grátis. Para obter mais informações sobre as contas Pagamento por uso e
-Assinatura, veja [Tipos de conta](/docs/accounts/account-types.html).
+**Nota**: essas limitações se aplicam apenas a uma conta Padrão. A qualquer momento, é possível fazer upgrade para uma conta pré-paga ou de assinatura. Você paga
+somente pelo que usar, além dos abonos grátis. Para obter mais informações sobre as contas pré-pagas e de assinatura, veja [Tipos de conta](/docs/accounts/account-types.html).
 
 ## Recursos de eficiência
 {: #devactivity}

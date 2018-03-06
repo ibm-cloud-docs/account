@@ -26,7 +26,7 @@ Você pode desejar conceder outras permissões aos usuários em sua conta usando
 
 | Função de gerenciamento de plataforma | Descrição das ações |
 |:-----------------|:-----------------|
-| Viewer | É possível ver os serviços privados, mesmo se a conta não tiver sido incluída, mas não é possível fazer mudanças. |
+| Visualizador | É possível ver os serviços privados, mesmo se a conta não tiver sido incluída, mas não é possível fazer mudanças. |
 | Aplicativos | É possível fazer mudanças nos metadados do objeto, mas não é possível mudar a visibilidade. |
 | Administrador | É possível mudar os metadados do objeto ou a visibilidade.  |
 {: caption="Tabela 1. Exemplo de funções e ações de gerenciamento de plataforma para o serviço de catálogo" caption-side="top"}

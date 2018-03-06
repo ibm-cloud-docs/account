@@ -5,11 +5,12 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-11-06"
+lastupdated: "2018-02-07"
 
 ---
 
 {:shortdesc: .shortdesc}
+{:tip: .tip}
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
@@ -18,6 +19,10 @@ lastupdated: "2017-11-06"
 {: #changing}
 
 您可以在服務實例儀表板的 {{site.data.keyword.Bluemix}} 中變更服務方案（如果已啟用該服務的方案變更）。
+{: shortdesc}
+
+如果您在尋找關於升級帳戶類型的詳細資料，請參閱[如何升級或變更我的帳戶類型？](/docs/account/account_faq.html#changeacct)。
+{: tip}
 
 只有特定服務才可讓您變更服務方案。如果已啟用服務的方案變更，則服務實例儀表板會在導覽中顯示**方案**選項。如果您變更方案，則每一個服務都會有要遵循的不同後續步驟集。
 
@@ -27,7 +32,7 @@ lastupdated: "2017-11-06"
 |服務|	資訊|
 |--------|-------------|
 |Presence Insights 	|如果您有 Lite 方案，並超出免費額度，則會顯示 403 訊息，或記載此訊息以指出您不再獲得授權，並且停用服務實例。此外，還會以 403 回應來拒絕 POST REST API 呼叫。<br/><br/>如果因超出免費額度而停用您的服務，您可以從「精簡」方案升級為「付費」方案。您的服務會在 2 個小時內重新予以啟用。<br/><br/>如果您有付費方案，則只要事件及總儲存空間的用量落在精簡方案額度內，就可以將方案降低為精簡方案。<br/><br/>當您升級或降低方案時，並不需要重新編譯打包或重新啟動應用程式。|
-{:caption="表 9. 變更方案的後續步驟" caption-side="top"}
+{:caption="表 1. 變更方案的後續步驟" caption-side="top"}
 
 ## 透過指令行介面變更方案
 {: #changing_command_line}

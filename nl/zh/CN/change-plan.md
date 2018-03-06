@@ -5,11 +5,12 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-11-06"
+lastupdated: "2018-02-07"
 
 ---
 
 {:shortdesc: .shortdesc}
+{:tip: .tip}
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
@@ -18,6 +19,10 @@ lastupdated: "2017-11-06"
 {: #changing}
 
 您可以在 {{site.data.keyword.Bluemix}} 的服务实例仪表板中更改服务套餐，前提是该服务支持套餐更改。
+{: shortdesc}
+
+如果您在查找有关升级帐户类型的详细信息，请参阅[如何升级或更改帐户类型？](/docs/account/account_faq.html#changeacct)。
+{: tip}
 
 只有特定服务才提供更改服务套餐的功能。如果服务支持套餐更改，那么服务实例仪表板的导航中会显示**套餐**选项。每个服务在套餐更改后都有一组不同的后续步骤要执行。
 
@@ -27,7 +32,7 @@ lastupdated: "2017-11-06"
 |服务|	信息|
 |--------|-------------|
 |Presence Insights|如果您拥有轻量套餐，但已超过免费限额，那么会显示或记录 403 消息，指示您不再有权使用，且您的服务实例已禁用。此外，还会拒绝 POST REST API 调用，并返回 403 响应。<br/><br/>如果由于超过免费限额而禁用了服务，那么可以从轻量套餐升级到付费套餐。服务将在 2 小时内重新启用。<br/><br/>如果您拥有付费套餐，那么可以将套餐降级到轻量套餐，只要您的使用量未超出事件和总存储量的轻量套餐限额即可。<br/><br/>升级或降级套餐后，都无需重新编译打包或重新启动应用程序。|
-{:caption="表 9. 更改套餐的后续步骤" caption-side="top"}
+{:caption="表 1. 更改套餐的后续步骤" caption-side="top"}
 
 ## 通过命令行界面更改套餐
 {: #changing_command_line}

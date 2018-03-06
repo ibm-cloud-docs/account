@@ -79,7 +79,7 @@ Children           Name                                          Kind         ID
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-您可以取得子部署的資源 ID，然後使用下列指令來包括帳戶：`bx catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`。
+您可以取得子部署的資源 ID，然後使用下列指令來包括帳戶：`bx catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`.
 
 物件的子項可以透過複雜的方式來繼承可見性。如果子物件為專用，則會有自己的可見性配置。不過，如果子物件設為公用，則會繼承其母項的可見性。設定專用子物件的可見性時，其可見性限制可能會高於母項。
 

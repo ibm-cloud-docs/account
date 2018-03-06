@@ -5,11 +5,12 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-11-06"
+lastupdated: "2018-02-07"
 
 ---
 
 {:shortdesc: .shortdesc}
+{:tip: .tip}
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
@@ -18,6 +19,10 @@ lastupdated: "2017-11-06"
 {: #changing}
 
 Será possível mudar seu plano de serviço no {{site.data.keyword.Bluemix}} no painel de instância de serviço se as mudanças de plano estiverem ativadas para esse serviço.
+{: shortdesc}
+
+Se você está procurando detalhes sobre como fazer o upgrade de seu tipo de conta, consulte [Como fazer upgrade ou mudar meu tipo de conta?](/docs/account/account_faq.html#changeacct).
+{: tip}
 
 Apenas determinados serviços oferecem a possibilidade de mudança de plano de serviço. Se mudanças de plano estiverem ativadas para o serviço, o painel da instância de serviço exibirá uma opção **Plano** na navegação. Cada serviço terá um conjunto diferente de etapas subsequentes se você mudar o seu plano.
 
@@ -30,7 +35,7 @@ plano, talvez seja necessário remontar o app e tomar ações adicionais.<br/><b
 |--------|-------------|
 |Presence Insights 	|Se você tiver um plano Lite e exceder os abonos grátis, uma mensagem 403 será exibida ou registrada para indicar que você não está mais autorizado e que a sua instância de serviço está desativada. Ademais, as chamadas API REST do POST serão
 rejeitadas com a resposta 403.<br/><br/>Se o serviço estiver desativado porque o abono grátis foi excedido, será necessário fazer upgrade de um plano Lite para um plano Pago. O seu serviço será reativado em 2 horas.<br/><br/>Se você tiver um plano Pago, será possível reduzi-lo para o plano Lite, desde que seu uso permaneça dentro do abono do plano Lite para eventos e armazenamento total.<br/><br/>Ao fazer upgrade ou reduzir seu plano, você não precisará remontar ou reiniciar seus apps.|
-{:caption="Tabela 9. Etapas seguintes para mudar seu plano" caption-side="top"}
+{:caption="Tabela 1. Próximas etapas para mudar seu plano" caption-side="top"}
 
 ## Mudando seu plano por meio da interface da linha de comandos
 {: #changing_command_line}

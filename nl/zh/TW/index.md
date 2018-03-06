@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-02-15"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-01-10"
 # 帳戶類型
 {: #accounts}
 
-您可以在 {{site.data.keyword.Bluemix}} 上免費開始建置。當您準備好要擴大時，只需要對超出免費額度的部分進行升級及付費。我們有四種不同的帳戶類型可供選擇：「精簡」、「隨收隨付制」、「訂閱」及「試用」。您可以使用任何帳戶類型在 {{site.data.keyword.Bluemix_notm}} 中開始使用 - 只需要選擇最符合您需求的帳戶類型。
+您可以在 {{site.data.keyword.Bluemix}} 上免費開始建置。我們有三種不同的帳戶類型可供選擇：「精簡」、「隨收隨付制」及「訂閱」。您可以使用任何帳戶類型在 {{site.data.keyword.Bluemix_notm}} 中開始使用 - 只需要選擇最符合您需求的帳戶類型。
 {:shortdesc}
 
 ## 帳戶比較
@@ -27,7 +27,7 @@ lastupdated: "2018-01-10"
 |  | 精簡| 隨收隨付制| 訂閱|
 |--------------------|--------------------|--------------------|--------------------|
 | **存取免費 Cloud Foundry 記憶體** | 256 MB | 512 MB | 512 MB |
-| **存取[精簡服務方案 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window}** | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
+| **存取[精簡服務方案 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://console.bluemix.net/catalog/?search=label:lite){: new_window}** | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
 | **存取所有免費方案**|  | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
 | **存取完整型錄**|  | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
 | **沒有時間限制**| ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
@@ -62,10 +62,15 @@ lastupdated: "2018-01-10"
    * 在 10 天沒有開發活動之後，您的應用程式就會進入休眠。您可以開始處理新的應用程式，而不需要擔心達到記憶體配額限制。
    * 在 30 天沒有開發活動之後，就會刪除具有精簡方案的服務實例。如此一來，在建立新的實例之前，您不需要管理刪除非作用中實例。
 
+### 升級帳戶
+
+當您準備好要擴大時，升級為「隨收隨付制」，即可僅需要針對超出免費額度的部分付費。請移至主控台中的**管理** > **計費及用量** > **計費**，然後按一下**新增信用卡**。
+ 
+
 ## 計費帳戶
 {: #billableacts}
 
-註冊 {{site.data.keyword.Bluemix_notm}} 計費方案或要求升級帳戶時，可以選取四個不同的 {{site.data.keyword.Bluemix_notm}} 帳戶。下表列出不同的帳戶類型及其付費方法。
+下表列出不同的帳戶類型及其付費方法。
 
 |帳戶類型|	收費方式？|
 |------------------|-----------------------|
@@ -80,15 +85,14 @@ lastupdated: "2018-01-10"
 
 ### 隨收隨付制帳戶
 
-使用「隨收隨付制」帳戶，您可以建立多個資源群組來輕鬆管理配額，以及檢視一組資源的計費使用情形。
+使用「隨收隨付制」帳戶，您可以建立多個資源群組來輕鬆管理配額，以及檢視一組資源的計費使用情形。您有資格使用免費運行環境及服務額度。如果您的用量超過免費額度，則會收到 {{site.data.keyword.Bluemix_notm}} 的月份發票。發票的計價單位為美元 (USD)，並且會詳細列出資源費用。
 
-您有資格使用免費運行環境及服務額度。如果您的用量超過免費額度，則會收到 {{site.data.keyword.Bluemix_notm}} 的月份發票。發票的計價單位為美元 (USD)，並且會詳細列出資源費用。
+在許多國家及地區中，您可以從 {{site.data.keyword.Bluemix_notm}} 主控台註冊「隨收隨付制」帳戶。提供計費及信用卡資訊、接受條款，並提交帳戶要求之後，然後會驗證您的信用卡。您也會收到有關帳戶資訊的確認電子郵件。等收到確認電子郵件過後幾分鐘，您就可以回到主控台繼續建置應用程式。 
 
-在許多國家及地區中，您可以從 {{site.data.keyword.Bluemix_notm}} 主控台註冊「隨收隨付制」帳戶。提供計費及信用卡資訊、接受條款，並提交帳戶要求之後，然後會驗證您的信用卡。此外也會傳送帳戶資訊的確認電子郵件。等收到確認電子郵件過後幾分鐘，您就可以回到主控台繼續建置應用程式。
+如果無法處理您所在國家或地區的線上申請，請與 [{{site.data.keyword.Bluemix_notm}} 支援中心 ](https://ibm.biz/bluemixsupport){: new_window}![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡。在您登入至「{{site.data.keyword.Bluemix_notm}} 服務入口網站」之後，請按一下**與支援中心聯絡**，然後選取**計費、帳戶或登入**選項。
 
-如果無法處理您所在國家或地區的線上申請，請使用 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} 頁面上列出的鏈結，來聯絡 {{site.data.keyword.Bluemix_notm}} 銷售人員。
-
-您隨時都可以將「隨收隨付制」帳戶轉換為「訂閱」帳戶。使用 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} 頁面上列出的鏈結，來聯絡 {{site.data.keyword.Bluemix_notm}} 銷售人員。
+您隨時都可以將「隨收隨付制」帳戶轉換為「訂閱」帳戶。如需其他詳細資料，請與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡。
+{: tip}
 
 ### 訂閱帳戶
 
@@ -97,7 +101,7 @@ lastupdated: "2018-01-10"
 您承諾每個月的最低消費金額，並獲得套用至該最低收費的訂閱折扣。您也會針對任何超出最低消費金額的用量付款。
 
 
-若要註冊「訂閱」帳戶，以及取得訂閱費率及折扣的相關資訊，您必須使用 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} 頁面上列出的鏈結，來聯絡 {{site.data.keyword.Bluemix_notm}} 銷售人員。
+若要註冊「訂閱」帳戶，以及取得訂閱費率及折扣的相關資訊，您必須與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡。
 
 ### {{site.data.keyword.Bluemix_dedicated_notm}} 帳戶
 
@@ -109,9 +113,9 @@ lastupdated: "2018-01-10"
    * 您選取的所有專用服務及所有公用 {{site.data.keyword.Bluemix_notm}} 服務
    * 標準 {{site.data.keyword.Bluemix_notm}} 支援
 
-您也可以訂購選購項目（例如 SoftLayer DirectLink 或超值支援選項）。如需相關資訊，請與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ![外部鏈結圖示](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} 聯絡。
+您也可以訂購選購項目（例如 SoftLayer DirectLink 或超值支援選項）。如需相關資訊，請與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡。
 
-您在該期間每個月所支付的金額是根據您想要的專用服務，加上讓您存取所有公用服務的「訂閱」帳戶。「{{site.data.keyword.Bluemix_notm}} 公用」中的服務使用費用是根據您的「訂閱」帳戶合約來計算。您會收到關於任何超出訂閱合約之使用服務的發票。請與 IBM 指定的客戶業務代表聯絡，或與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ![外部鏈結圖示](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} 聯絡，以開始您的合約。
+您在該期間每個月所支付的金額是根據您想要的專用服務，加上讓您存取所有公用服務的「訂閱」帳戶。「{{site.data.keyword.Bluemix_notm}} 公用」中的服務使用費用是根據您的「訂閱」帳戶合約來計算。您會收到關於任何超出訂閱合約之使用服務的發票。請與 IBM 指定的客戶業務代表聯絡，或與 [{{site.data.keyword.Bluemix_notm}} 銷售人員](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡，以開始您的合約。
 
 ### {{site.data.keyword.Bluemix_local_notm}} 帳戶
 
@@ -122,7 +126,7 @@ lastupdated: "2018-01-10"
    * 您選取的所有本端服務，及所有公用 {{site.data.keyword.Bluemix_notm}} 服務的存取
    * 標準 {{site.data.keyword.Bluemix_notm}} 支援
 
-您在該期間每個月所支付的金額是根據您想要的本端服務，加上讓您存取所有公用服務的「訂閱」帳戶。「{{site.data.keyword.Bluemix_notm}} 公用」中的服務使用費用是根據您的「訂閱」帳戶合約來計算。您會收到關於任何超出訂閱合約之使用服務的發票。請與 IBM 指定的客戶業務代表聯絡，或與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ![外部鏈結圖示](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} 聯絡，以開始您的合約。
+您在該期間每個月所支付的金額是根據您想要的本端服務，加上讓您存取所有公用服務的「訂閱」帳戶。「{{site.data.keyword.Bluemix_notm}} 公用」中的服務使用費用是根據您的「訂閱」帳戶合約來計算。您會收到關於任何超出訂閱合約之使用服務的發票。請與 IBM 指定的客戶業務代表聯絡，或與 [{{site.data.keyword.Bluemix_notm}} 銷售人員](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡，以開始您的合約。
 
 ## 試用帳戶
 {: #trial}
@@ -148,6 +152,10 @@ lastupdated: "2018-01-10"
 您的免費試用在註冊 30 天之後到期時，即會停止您帳戶中的應用程式。您無法註冊另一個 {{site.data.keyword.Bluemix_notm}} 帳戶，但您還是可以存取您的帳戶，以及您受邀使用的任何帳戶。
 
 若要重新啟動應用程式，請將您的帳戶轉換成計費帳戶，方法是針對「隨收隨付制」帳戶提供信用卡資訊，或建立「訂閱」帳戶。然後，您就可以繼續使用免費的運算及服務額度。您只需要針對未包含在每月免費額度中的服務、容器及運行環境的用量進行付款。
+
+  * 若要升級為「隨收隨付制」帳戶，請移至主控台中的**管理** > **計費及用量** > **計費**，然後按一下**新增信用卡**。
+
+  * 若要註冊「訂閱」帳戶，請與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡。
 
 如果您未在免費試用到期之後轉換帳戶，則會在 30 天之後移除您的應用程式及服務。不過，不會刪除您的帳戶，而且您隨時都可以登入及升級至計費帳戶。此外，您會收到電子郵件通知，提醒您建立計費帳戶並避免遺失應用程式設定及服務配置。如果您不想要收到來自 {{site.data.keyword.Bluemix_notm}} 的通知，則可以隨時取消訂閱。
 

@@ -44,7 +44,7 @@ maneira, quando o
 receber uma solicitação para o domínio customizado, ele poderá roteá-lo corretamente
 para o aplicativo.</p></dd>
 <dt>Cota</dt>
-<dd>Representa os recursos que estão disponíveis para uma organização, incluindo o número de serviços e a quantia de memória que pode ser alocada para uso pela organização. As cotas são designadas quando as organizações são criadas. Qualquer aplicativo ou serviço em um espaço dentro de uma organização contribui para o uso da cota. Com as contas de Pagamento por uso ou Assinatura, é possível ajustar sua cota para aplicativos e contêineres do Cloud Foundry conforme as necessidades de sua organização mudam. Consulte [Gerenciando cota](/docs/account/manageorg.html#managequota).</dd>
+<dd>Representa os recursos que estão disponíveis para uma organização, incluindo o número de serviços e a quantia de memória que pode ser alocada para uso pela organização. As cotas são designadas quando as organizações são criadas. Qualquer aplicativo ou serviço em um espaço dentro de uma organização contribui para o uso da cota. Com as contas pré-pagas ou de assinatura, é possível ajustar sua cota para aplicativos e contêineres do Cloud Foundry conforme as necessidades de sua organização mudam. Consulte [Gerenciando cota](/docs/account/manageorg.html#managequota).</dd>
 </dl>
 
 Em uma conta de Assinatura, a cota é um limite definido pelo usuário que aciona notificações de gastos.
@@ -57,7 +57,7 @@ No {{site.data.keyword.Bluemix_notm}}, é possível usar organizações para per
 
 Ao criar uma organização, o nome deve ser exclusivo no {{site.data.keyword.Bluemix_notm}}. Se o nome da organização já está em uso por outro usuário do {{site.data.keyword.Bluemix_notm}} Public, Dedicated ou Local, deve-se especificar um novo nome. Depois de criar a organização, você é designado automaticamente à permissão *Gerenciador de organização*, que permite editar o nome da organização, incluir usuários e criar ou excluir espaços na organização.
 
-É possível usar o comando [`bx iam org-delete`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_org_delete) para excluir organizações. Ao excluir uma organização, todos os espaços, aplicativos e serviços
+É possível contatar o suporte para excluir uma organização. Ao excluir uma organização, todos os espaços, aplicativos e serviços
 dentro da organização são excluídos.
 
 As [funções de usuário](/docs/iam/users_roles.html#userrolesinfo) a seguir podem ser designadas a usuários em uma organização. Todos os usuários convidados para a conta são designados à função de auditor por padrão.

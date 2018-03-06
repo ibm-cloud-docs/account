@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-11-07"
+lastupdated: "2018-01-29"
 
 
 ---
@@ -17,7 +17,7 @@ lastupdated: "2017-11-07"
 
 # Inscrevendo-se para o {{site.data.keyword.Bluemix_notm}}
 
-É possível se inscrever para uma conta do {{site.data.keyword.Bluemix}} usando um IBMid existente, criando um novo IBMid ou usando um ID federado. Um ID federado é um ID dentro do domínio de uma empresa que foi registrado na IBM para que as credenciais do domínio e do usuário possam ser usadas para acessar aplicativos da web IBM.
+É possível se inscrever para uma conta do {{site.data.keyword.Bluemix}} usando um IBMid existente, criando um novo IBMid ou usando um ID federado. Um ID federado é um ID dentro do domínio de uma empresa que foi registrado na IBM para que as credenciais do domínio e do usuário possam ser usadas para acessar aplicativos da web IBM. Clique em **Inscrever-se** para começar.
 {:shortdesc}
 
 

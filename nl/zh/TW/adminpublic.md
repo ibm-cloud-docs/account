@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-11-07"
+lastupdated: "2018-01-29"
 
 
 ---
@@ -17,7 +17,8 @@ lastupdated: "2017-11-07"
 
 # 註冊 {{site.data.keyword.Bluemix_notm}}
 
-您可以使用現有 IBM ID、建立新的 IBM ID 或使用聯合 ID 來註冊 {{site.data.keyword.Bluemix}} 帳戶。聯合 ID 是已向 IBM 登錄之公司網域內的 ID，因此您可以使用網域及使用者認證來存取 IBM Web 應用程式。{:shortdesc}
+您可以使用現有 IBM ID、建立新的 IBM ID 或使用聯合 ID 來註冊 {{site.data.keyword.Bluemix}} 帳戶。聯合 ID 是已向 IBM 登錄之公司網域內的 ID，因此您可以使用網域及使用者認證來存取 IBM Web 應用程式。按一下**註冊**以開始使用。
+{:shortdesc}
 
 
 只有在公司已與 IBM 合作登錄時，才能使用聯合 ID 來註冊 {{site.data.keyword.Bluemix_notm}}。向 IBM 登錄公司網域，可讓使用者使用其現有公司使用者認證來登入 IBM 產品和服務。然後，透過公司的身分提供者來處理鑑別。當您使用聯合 ID 登入 {{site.data.keyword.Bluemix_notm}} 時，系統會提示您透過公司的登入頁面進行登入。如需要求向 IBM 登錄公司或組織網域的相關資訊，或處理程序的相關資訊，請參閱 [IBMid Enterprise Federation Adoption Guide ![外部鏈結圖示](../icons/launch-glyph.svg)](https://ibm.box.com/v/IBMid-Federation-Guide){: new_window}。當您要求登錄聯合 ID 時，需要有 IBM 贊助者（例如供應項目代言人或用戶端代言人）。
