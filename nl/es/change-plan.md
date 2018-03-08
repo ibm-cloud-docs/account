@@ -5,11 +5,12 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-11-06"
+lastupdated: "2018-02-07"
 
 ---
 
 {:shortdesc: .shortdesc}
+{:tip: .tip}
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
@@ -17,7 +18,10 @@ lastupdated: "2017-11-06"
 # Como cambiar su plan
 {: #changing}
 
-Puede cambiar su plan de servicios en {{site.data.keyword.Bluemix}} en el panel de control de la instancia de servicio si los cambios de plan están habilitados para dicho servicio.
+Puede cambiar su plan de servicios en {{site.data.keyword.Bluemix}} en el panel de control de la instancia de servicio si los cambios de plan están habilitados para dicho servicio.{: shortdesc}
+
+Si busca información para actualizar su tipo de cuenta, consulte [¿Cómo puedo actualizar o cambiar mi tipo de cuenta?](/docs/account/account_faq.html#changeacct).
+{: tip}
 
 Sólo determinados servicios le proporcionan la capacidad de cambiar el plan de servicios. Si los cambios de plan están habilitados para el servicio, el panel de control de la instancia de servicio muestra una opción **Plan** en la navegación. Cada servicio tiene un conjunto distinto de pasos siguientes a seguir
 si cambia su plan.
@@ -32,7 +36,7 @@ app. O, si ha actualizado su plan, es posible que deba volver a transferir su ap
 |Presence Insights 	|Si tiene un plan Lite y supera el permitido gratis, se mostrará un mensaje 403 o se registra para indicar que ya no tiene autorización, y su instancia de servicio se inhabilita. Además, las llamadas POST
 REST API se rechazan con la respuesta 403.<br/><br/>Si su servicio está inhabilitado porque ha excedido el periodo de permiso gratuito, puede actualizar de un plan Lite a un plan de pago. Su servicio se vuelve a habilitar en 2 horas.<br/><br/>Si tiene un plan de pago, puede reducirlo al plan Lite, siempre que su uso permanezca dentro de lo permitido en el
 plan Lite para sucesos y almacenamiento total.<br/><br/>Cuando actualiza o reduce su plan, no necesita volver a transferir o reiniciar sus apps.|
-{:caption="Tabla 9. Pasos siguientes para cambiar su plan" caption-side="top"}
+{:caption="Tabla 1. Pasos siguientes para cambiar su plan" caption-side="top"}
 
 ## Cambiar su plan por medio de la interfaz de línea de mandatos
 {: #changing_command_line}

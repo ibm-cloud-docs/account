@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-02-15"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-01-10"
 # Tipos de cuentas
 {: #accounts}
 
-Puede empezar a crear en {{site.data.keyword.Bluemix}} gratis. Cuando esté preparado para crecer, actualice y pague solo por uso más allá de las concesiones gratuitas. Tenemos cuatro tipos de cuenta diferentes de los que puede elegir: Lite, Pago según uso, Suscripción y prueba. Puede utilizar cualquier tipo de cuenta para empezar en {{site.data.keyword.Bluemix_notm}}, elija aquel que se adapte mejor a sus necesidades. 
+Puede empezar a crear en {{site.data.keyword.Bluemix}} gratis. Tenemos tres tipos de cuenta diferentes entre los que puede elegir: Lite, Pago según uso y Suscripción. Puede utilizar cualquier tipo de cuenta para empezar en {{site.data.keyword.Bluemix_notm}}, elija aquel que se adapte mejor a sus necesidades. 
 {:shortdesc}
 
 ## Comparación de cuentas
@@ -27,7 +27,7 @@ La siguiente tabla proporciona una comparación de las cuentas Lite, Pago según
 |  | Lite  | Pago según uso | Suscripción |
 |--------------------|--------------------|--------------------|--------------------|
 | **Acceso a memoria de Cloud Foundry gratuita** | 256 MB | 512 MB | 512 MB |
-| **Acceso a [planes de servicio Lite ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window}** | ![Característica disponible](../icons/icon_enabled.svg) | ![Característica disponible](../icons/icon_enabled.svg) | ![Característica disponible](../icons/icon_enabled.svg) |
+| **Acceso a [planes de servicio Lite ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://console.bluemix.net/catalog/?search=label:lite){: new_window}** | ![Característica disponible](../icons/icon_enabled.svg) | ![Característica disponible](../icons/icon_enabled.svg) | ![Característica disponible](../icons/icon_enabled.svg) |
 | **Acceso a todos los planes gratuitos** |  | ![Característica disponible](../icons/icon_enabled.svg) | ![Característica disponible](../icons/icon_enabled.svg) |
 | **Acceso al catálogo completo** |  | ![Característica disponible](../icons/icon_enabled.svg) | ![Característica disponible](../icons/icon_enabled.svg) |
 | **Sin restricciones de tiempo** | ![Característica disponible](../icons/icon_enabled.svg) | ![Característica disponible](../icons/icon_enabled.svg) | ![Característica disponible](../icons/icon_enabled.svg) |
@@ -62,10 +62,14 @@ Se estará preguntando qué se ofrece en una cuenta Lite. Consulte la siguiente 
    * Después de 10 días de inactividad de desarrollo, sus apps entrarán en suspensión. Puede empezar a trabajar en apps nuevas sin tener que preocuparse por llegar a los límites de cuota de memoria.
    * Después de 30 días de inactividad de desarrollo, se suprimirán las instancias de servicio con planes Lite. De esta forma, no tiene que preocuparse de la supresión de instancias inactivas antes de crear nuevas.
 
+### Actualización de la cuenta
+
+Cuando esté preparado para crecer, actualice a una cuenta de pago según uso y pague sólo por lo que utilice más allá de las concesiones gratuitas. Vaya a **Gestionar** > **Facturación y utilización ** > **Facturación** en la consola y pulse **Añadir tarjeta de crédito**. 
+
 ## Cuentas facturables
 {: #billableacts}
 
-Cuando se registra en un plan facturable de {{site.data.keyword.Bluemix_notm}} o solicita una actualización de su cuenta, puede seleccionar cuatro cuentas distintas de {{site.data.keyword.Bluemix_notm}}. En la tabla siguiente se muestran los distintos tipos de cuentas y los métodos de cargos.
+En la tabla siguiente se muestran los distintos tipos de cuentas y los métodos de cargos.
 
 |Tipo de cuenta |	¿Cómo se me facturará? |
 |------------------|-----------------------|
@@ -80,15 +84,14 @@ Si enlaza su cuenta facturable de {{site.data.keyword.Bluemix_notm}} con una cue
 
 ### Cuenta de Pago según uso
 
-Con una cuenta de Pago según uso, puede crear varios grupos de recursos para gestionar fácilmente la cuota y ver el uso de facturación de un conjunto de recursos.
+Con una cuenta de Pago según uso, puede crear varios grupos de recursos para gestionar fácilmente la cuota y ver el uso de facturación de un conjunto de recursos.Puede optar a concesiones de tiempo de ejecución y de servicio gratuitas. Si utiliza más que la concesión gratuita, recibirá una factura mensual de {{site.data.keyword.Bluemix_notm}}. La factura estará en dólares de Estados Unidos (USD) y detallará los cargos de recursos.
 
-Puede optar a concesiones de tiempo de ejecución y de servicio gratuitas. Si utiliza más que la concesión gratuita, recibirá una factura mensual de {{site.data.keyword.Bluemix_notm}}. La factura estará en dólares de Estados Unidos (USD) y detallará los cargos de recursos.
+En muchos países y regiones, puede registrarse para una cuenta Pago según uso desde la consola de {{site.data.keyword.Bluemix_notm}}. Tras proporcionar la información de la tarjeta de crédito y la facturación, aceptar los términos y condiciones y enviar una solicitud de cuenta. A continuación, se validará su tarjeta de crédito. También recibirá un correo electrónico de confirmación sobre la información de la cuenta. Transcurridos algunos minutos tras la recepción del correo electrónico de confirmación, puede volver a la consola para continuar creando sus apps. 
 
-En muchos países y regiones, puede registrarse para una cuenta Pago según uso desde la consola de {{site.data.keyword.Bluemix_notm}}. Tras proporcionar la información de la tarjeta de crédito y la facturación, aceptar los términos y condiciones y enviar una solicitud de cuenta. A continuación, se validará su tarjeta de crédito. También se envía un correo electrónico de confirmación de la información de la cuenta. Transcurridos algunos minutos tras la recepción del correo electrónico de confirmación, puede volver a la consola para continuar creando sus apps.
+Si no se puede procesar su solicitud en línea para su país o región, póngase en contacto con el equipo de [{{site.data.keyword.Bluemix_notm}} Soporte](https://ibm.biz/bluemixsupport){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg). Después de iniciar sesión en el portal de servicio de {{site.data.keyword.Bluemix_notm}}, pulse **Póngase en contacto con soporte** y seleccione la opción **Facturación, Cuenta o Iniciar sesión**.
 
-Si no se puede procesar su solicitud en línea para su país o región, póngase en contacto con el equipo de ventas de {{site.data.keyword.Bluemix_notm}} utilizando el enlace que aparece en la página [Soporte de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
-
-Puede convertir la cuenta Pago según uso en una cuenta Suscripción en cualquier momento. Póngase en contacto con el equipo de ventas de {{site.data.keyword.Bluemix_notm}} utilizando el enlace que aparece en la página [Soporte de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
+Puede convertir la cuenta Pago según uso en una cuenta Suscripción en cualquier momento. Póngase en contacto con el [equipo de ventas de {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg) para obtener más detalles.
+{: tip}
 
 ### Cuenta de Suscripción
 
@@ -96,7 +99,7 @@ Con una cuenta de Suscripción, puede crear varios grupos de recursos para gesti
 
 Se compromete a una cantidad de gasto mínimo al mes y recibirá un descuento de suscripción que se aplicará a dicho cargo mínimo. También puede pagar cualquier uso que exceda la cantidad de gasto mínimo.
 
-Para registrarse con una cuenta de Suscripción, y para obtener más información sobre las tarifas y descuentos de la suscripción, póngase en contacto con el equipo de ventas de {{site.data.keyword.Bluemix_notm}} utilizando el enlace que aparece en la página [Soporte de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
+Para registrarse con una cuenta de Suscripción, y para obtener más información sobre las tarifas y descuentos de la suscripción, póngase en contacto con [el equipo de ventas de {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg).
 
 ### Cuenta de {{site.data.keyword.Bluemix_dedicated_notm}}
 
@@ -109,9 +112,9 @@ Con {{site.data.keyword.Bluemix_dedicated_notm}}, debe registrarse para un plazo
    * Soporte de {{site.data.keyword.Bluemix_notm}} estándar
 
 También puede pedir elementos opcionales como
-SoftLayer DirectLink u opciones de soporte premium. Póngase en contacto con el [equipo de ventas de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} para obtener más información.
+SoftLayer DirectLink u opciones de soporte premium. Póngase en contacto con el [equipo de ventas de {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg) para obtener más información.
 
-Lo que deberá abonar cada mes durante dicho plazo dependerá de los servicios dedicados que desee, más una cuenta de suscripción que le ofrece acceso a todos los servicios públicos. Los cargos por uso de los servicios de {{site.data.keyword.Bluemix_notm}} público se calculan en función del acuerdo de la cuenta de suscripción. Recibirá una factura correspondiente a los servicios que utilice por encima del acuerdo de suscripción. Póngase en contacto con su representante de cuenta designado de IBM o póngase en contacto con el [equipo de ventas de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} para empezar a trabajar en su acuerdo.
+Lo que deberá abonar cada mes durante dicho plazo dependerá de los servicios dedicados que desee, más una cuenta de suscripción que le ofrece acceso a todos los servicios públicos. Los cargos por uso de los servicios de {{site.data.keyword.Bluemix_notm}} público se calculan en función del acuerdo de la cuenta de suscripción. Recibirá una factura correspondiente a los servicios que utilice por encima del acuerdo de suscripción. Póngase en contacto con su representante de cuenta designado de IBM o con el [equipo de ventas de {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg) para empezar a trabajar en su acuerdo.
 
 ### Cuenta de {{site.data.keyword.Bluemix_local_notm}}
 
@@ -122,7 +125,7 @@ Con {{site.data.keyword.Bluemix_local_notm}}, debe registrarse para un plazo mí
    * Todos los servicios locales que ha seleccionado y acceso a todos los servicios públicos de {{site.data.keyword.Bluemix_notm}}
    * Soporte de {{site.data.keyword.Bluemix_notm}} estándar
 
-Lo que deberá abonar cada mes durante dicho plazo dependerá de los servicios locales que desee, más una cuenta de suscripción que le ofrece acceso a todos los servicios públicos. Los cargos por uso de los servicios de {{site.data.keyword.Bluemix_notm}} público se calculan en función del acuerdo de la cuenta de suscripción. Recibirá una factura correspondiente a los servicios que utilice por encima del acuerdo de suscripción. Póngase en contacto con su representante de cuenta designado de IBM o póngase en contacto con el [equipo de ventas de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} para empezar a trabajar en su acuerdo.
+Lo que deberá abonar cada mes durante dicho plazo dependerá de los servicios locales que desee, más una cuenta de suscripción que le ofrece acceso a todos los servicios públicos. Los cargos por uso de los servicios de {{site.data.keyword.Bluemix_notm}} público se calculan en función del acuerdo de la cuenta de suscripción. Recibirá una factura correspondiente a los servicios que utilice por encima del acuerdo de suscripción. Póngase en contacto con su representante de cuenta designado de IBM o con el [equipo de ventas de {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg) para empezar a trabajar en su acuerdo.
 
 ## Cuenta de prueba
 {: #trial}
@@ -146,6 +149,9 @@ Cada grupo de recursos es gratuito. Cuando crea una conexión entre un servicio 
 Cuando el período de prueba gratuito vence 30 días después de registrarse, las apps de su cuenta se detienen. No podrá registrarse para otra cuenta de {{site.data.keyword.Bluemix_notm}}, pero podrá seguir accediendo a su cuenta y a las cuentas en las que ha sido invitado.
 
 Para reiniciar sus apps, convierta su cuenta en una cuenta facturable proporcionando la información de su tarjeta de crédito para una cuenta de pago según uso o creando una cuenta de Suscripción. Puede continuar utilizando concesiones y servicio gratuitos. Sólo pagará por el uso de servicios, contenedores y tiempos de ejecución que no están incluidos en la concesión mensual gratuita.
+
+  * Para actualizar a una cuenta de Pago según uso, vaya a **Gestionar** > **Facturación y utilización ** > **Facturación** en la consola y pulse **Añadir tarjeta de crédito**.
+  * Para registrarse con una cuenta de Suscripción, póngase en contacto con [el equipo de ventas de {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg).
 
 Si no convierte su cuenta una vez haya vencido el período de prueba gratuita, sus apps y servicios se eliminarán después de 30 días. Sin embargo, la cuenta no se suprime y puede iniciar sesión y actualizar a una cuenta facturable en cualquier momento. También, recibirá notificaciones de correo electrónico para recordarle que debe crear una cuenta facturable y evitar perder los valores de su app y la configuración de los servicios. Si prefiere no recibir notificaciones de {{site.data.keyword.Bluemix_notm}}, puede anular la suscripción en cualquier momento.
 

@@ -50,7 +50,7 @@ puede utilizar organizaciones para habilitar la colaboración entre usuarios y p
 
 Cuando se crea una organización, el nombre debe ser exclusivo en {{site.data.keyword.Bluemix_notm}}. Si el nombre de la organización ya lo utiliza otro usuario local, dedicado o público de {{site.data.keyword.Bluemix_notm}}, debe especificar un nuevo nombre. Después de crear la organización, se le asigna automáticamente el permiso *Gestor de organización*, lo que le permite editar el nombre de la organización, añadir usuarios y crear o suprimir espacios en la organización.
 
-Utilice el mandato [`bx iam org-delete`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_org_delete) para suprimir organizaciones. Cuando se suprime una organización, todos los espacios, apps y servicios dentro de la organización se suprimen.
+Puede ponerse en contacto con el equipo de soporte para suprimir una organización. Cuando se suprime una organización, todos los espacios, apps y servicios dentro de la organización se suprimen.
 
 Los siguientes [roles de usuario](/docs/iam/users_roles.html#userrolesinfo) pueden asignarse a usuarios en una organización. A todos los usuarios invitados a la cuenta se les asigna el rol de Auditor de forma predeterminada.
 
