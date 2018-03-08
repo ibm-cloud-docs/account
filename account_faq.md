@@ -3,7 +3,8 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-03-02"
+
+lastupdated: "2018-03-08"
 
 ---
 
@@ -13,12 +14,12 @@ lastupdated: "2018-03-02"
 {:new_window: target="_blank"}
 
 # FAQs
-{: #accountfaqs} 
+{: #accountfaqs}
 
 ## Which {{site.data.keyword.Bluemix_notm}} regions can I use?
 {: #whichregions}
 
-In a Lite account, you can work in only one region. In a Pay-As-You-Go or Subscription account, you can access all regions. 
+In a Lite account, you can work in only one region. In a Pay-As-You-Go or Subscription account, you can access all regions.
 
 ## What's a Lite pricing plan for services?
 {: #whatisliteplan}
@@ -37,7 +38,7 @@ Reaching any quota limit for Lite plan instances suspends the service for that m
 * To upgrade from a Lite to a Pay-As-You-Go account, go to **Manage > Billing and Usage > Billing** and click **Add Credit Card**.
 * To convert your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg).
 
-## If I upgrade my Lite account, can I continue using my existing instances? 
+## If I upgrade my Lite account, can I continue using my existing instances?
 {: #nochange}
 
 Yes, you can upgrade to a billable account and continue to use the instances you created with your Lite account.
@@ -45,7 +46,7 @@ Yes, you can upgrade to a billable account and continue to use the instances you
 ## How do I update my credit card?
 {: #updatepayment}
 
-You can easily update the payment method that's associated with your billable account. In the console, go to **Manage > Billing and Usage > Modify Payment Method**. 
+You can easily update the payment method that's associated with your billable account. In the console, go to **Manage > Billing and Usage > Modify Payment Method**.
 
 ## How do I cancel my account?
 {: #cancelaccount}
@@ -55,9 +56,9 @@ In the console, go to the **Manage > Billing and Usage > Billing** page and clic
 ## How do I get support?
 {: #contactsupport}
 
-For help with getting up and running in {{site.data.keyword.Bluemix_notm}} or navigating {{site.data.keyword.Bluemix_notm}}, start a conversation with us by using the chat icon in the console. 
+For help with getting up and running in {{site.data.keyword.Bluemix_notm}} or navigating {{site.data.keyword.Bluemix_notm}}, start a conversation with us by using the chat icon in the console.
 
-You can also check out a number of helpful resources that are available in the [Support Center ![External link icon](../icons/launch-glyph.svg)](https://console.bluemix.net/unifiedsupport/supportcenter){: new_window}. From there, you can access Stack Overflow to post a question to our developer community. You can also submit a support ticket. 
+You can also check out a number of helpful resources that are available in the [Support Center ![External link icon](../icons/launch-glyph.svg)](https://console.bluemix.net/unifiedsupport/supportcenter){: new_window}. From there, you can access Stack Overflow to post a question to our developer community. You can also submit a support ticket.
 
 ## After I link my account, how do I log in?
 {: #al_login}
@@ -75,7 +76,7 @@ After you link your account, you keep the same level of support when you add {{s
 
   1. See the [Steps to Link your IaaS and PaaS Accounts blog](https://www.ibm.com/blogs/bluemix/2018/02/5-steps-link-iaas-paas-accounts/) for helpful information.
   2. From the {{site.data.keyword.BluSoftlayer_full}} infrastructure customer portal, open a **Sales Live Chat** to ask account questions.
-  3. Open a ticket from the {{site.data.keyword.BluSoftlayer_full}} infrastructure customer portal. Select **Support** > **Add Ticket** and then, in the **Subject** field, select **Accounting Request** to route your account question to the correct support team.
+  3. Open a ticket from the {{site.data.keyword.BluSoftlayer_full}} infrastructure customer portal.  Select **Support** > **Add Ticket** and then, in the **Subject** field, select **Accounting Request** to route your account question to the correct support team.
 
 If you are the account master, see [Working with users](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) for more information about managing users.
 
@@ -96,7 +97,7 @@ If linking is not a viable option for you, contact your sales support for other 
 ## Are there incentives for linking my accounts now? 	
 {: #al_incent}
 
-Yes! If you link your accounts now, you can use a $200 credit to try PaaS services.
+Yes!  If you link your accounts now, you can use a $200 credit to try PaaS services.
 
 ## What does adding {{site.data.keyword.Bluemix_notm}} platform services to my SoftLayer account mean? 	
 {: #al_owaffslacct}
@@ -110,3 +111,6 @@ If you are the account master, see [Working with users](https://console.bluemix.
 
 You can still use the ID for your SoftLayer account to sign into the {{site.data.keyword.BluSoftlayer_full}} infrastructure customer portal because the {{site.data.keyword.Bluemix_notm}} console is accessible using IBMids.
 
+## Is there a limit on the number of resource groups, orgs, or spaces that I can create?
+
+If you have a billable account, there is not a limit on the number of resource groups, orgs, or spaces that you can create within your account. However, if you have a Lite account, you are limited to one org and one resource group.
