@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-03-08"
 
 ---
 
@@ -45,9 +45,9 @@ In {{site.data.keyword.Bluemix_notm}}, you can use organizations to enable colla
    * You can group a set of spaces, apps, services, domains, routes, and users together in organizations. 
    * You can manage the access to the spaces and organizations on a per-user basis. 
 
-When you create an organization, the name must be unique in {{site.data.keyword.Bluemix_notm}}. If the organization name is already in use by another {{site.data.keyword.Bluemix_notm}} Public, Dedicated, or Local user, you must specify a new name. After you create the organization, you're automatically assigned the *Organization Manager* permission, which enables you to edit the organization name, add users, and create or delete spaces in the organization.
+When you create an organization, the name must be unique in {{site.data.keyword.Bluemix_notm}}. If the organization name is already in use by another {{site.data.keyword.Bluemix_notm}} Public, Dedicated, or Local user, you must specify a new name. After you create the organization, you're automatically assigned the *Organization Manager* permission, which enables you to edit the organization name, add users, and create or delete spaces in the organization. If you have a billable account, you can create as many organizations as you need. However, for a Lite account, you can only have one organization. 
 
-You can contact support to delete an organization. When you delete an organization, all the spaces, applications, and services within the organization are deleted.
+You can contact support, if you need to delete an organization. When you delete an organization, all the spaces, applications, and services within the organization are deleted.
 
 The following [user roles](/docs/iam/users_roles.html#userrolesinfo) can be assigned to users in an organization. All users invited to the account are assigned the auditor role by default.
 
@@ -62,7 +62,6 @@ You can create an organization by completing the following steps:
 3. Enter the org name.
 4. Click **Add**.
 
-<!-- Add info on Manage infrastructure option under a space -->
 
 ## Creating spaces
 {: #spaceinfo}
