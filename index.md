@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-16"
+lastupdated: "2018-03-12"
 
 ---
 
@@ -57,7 +57,6 @@ You might be wondering what's offered in a Lite account. Check out the following
    * Basic {{site.data.keyword.Bluemix_notm}} support for free. Basic support is provided for non-production environments or workloads where traditional severities are not used and specific response times are not stipulated.
    * You receive email notifications about your account status and quota limits.
    * Your Cloud Foundry apps can access up to 256 MB of free, instantaneous runtime memory.
-   * You can work with a Kubernetes cluster with 2 CPU and 4 GB RAM.
    * You can provision one instance of any service in the [{{site.data.keyword.Bluemix_notm}} catalog ![External link icon](../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} that has a Lite plan.
    * After 10 days of no development activity, your apps go to sleep. You can start working on new apps without having to worry about hitting memory quota limits.
    * After 30 days of no development activity, your service instances with Lite plans are deleted. This way, you don't have to manage deleting inactive instances before you create new ones.
