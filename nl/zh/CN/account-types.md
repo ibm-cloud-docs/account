@@ -108,7 +108,7 @@ lastupdated: "2017-11-29"
    * 所有您选择的专用服务以及所有公共 {{site.data.keyword.Bluemix_notm}} 服务
    * 标准 {{site.data.keyword.Bluemix_notm}} 支持
 
-您还可订购可选项（例如，SoftLayer DirectLink）或高级支持选项。有关更多信息，请联系 [{{site.data.keyword.Bluemix_notm}} 销售人员 ![外部链接图标](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}。
+您还可订购可选项（例如，SoftLayer DirectLink）或高端支持选项。有关更多信息，请联系 [{{site.data.keyword.Bluemix_notm}} 销售人员 ![外部链接图标](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}。
 
 在该期限内，您每月所支付的费用取决于所需的专用服务以及预订帐户（通过该帐户，您可以访问所有公共服务）。{{site.data.keyword.Bluemix_notm}} Public 中服务的使用量费用按照您的预订帐户协议进行计算。如果使用了超过该预订协议的服务，那么您会收到相应发票。请联系 IBM 指定的客户代表或联系 [{{site.data.keyword.Bluemix_notm}} 销售人员 ![外部链接图标](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} 来着手处理您的协议。
 
