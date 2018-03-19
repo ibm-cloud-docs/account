@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-01-23"
+lastupdated: "2018-03-19"
 
 ---
 
@@ -13,96 +13,91 @@ lastupdated: "2018-01-23"
 {:screen: .screen}
 {:new_window: target="_blank"}
 
-# Working with organizations
-As an account owner or an organization manager, you can perform org management tasks, including renaming your org, deleting an org or space, updating org or space roles, and managing quota and domains.
+# Updating orgs and spaces
+{: #orgupdates}
+
+As an account owner or organization manager, you can perform management tasks at the organization level and the space level. These tasks include renaming an organization or space, assigning or updating Cloud Foundry users roles, managing domains, and viewing organization quota details. 
 {:shortdesc}
 
-To manage your orgs from the {{site.data.keyword.Bluemix}} console, click **Manage > Account > Cloud Foundry Orgs**. You can view resources of only one organization at a time. If you are a member of multiple organizations, you can switch organizations from the user account preferences link in the console menu bar.
+To manage your orgs from the {{site.data.keyword.Bluemix}} console, click **Manage > Account > Cloud Foundry Orgs**. You can view resources of only one org at a time. If you are a member of multiple orgs, you can switch orgs from the user account preferences link in the console menu bar.
 
 ## Renaming orgs
 {: #orgrename}
 
-Complete the following steps to rename your organization:
+Complete the following steps to rename your org. Note any changes you make apply to all users in the org.
+
 1. Click **Manage** > **Account** > **Cloud Foundry Orgs**.
-2. Determine which org you want to rename, and click **View Details**.
-3. Click **Edit Cloud Foundry Org**.
-4. Click **Edit** next to the name of the org.
-5. Type the new org name, and click **Save**.
+2. Click the Actions icon for the org you want to rename, and select **Rename**.  
+3. Enter the new name, and click **Save**.
 
 ## Deleting orgs and spaces
 {: #deleteorgs}
 
 ### Deleting an org
 
-When you delete an organization, all the spaces, applications, and services within the organization are deleted. Be sure to note that deleting operations cannot be reversed. You must contact support to delete an organization.
+To delete an org, contact [Support](/docs/get-support/howtogetsupport.html). When an org is deleted, all the spaces and resources within the org are also deleted. Be sure to note that delete operations cannot be reversed. 
 
 ### Deleting a space
 
-Complete the following steps to delete a space:
+When you delete a space, all included resources and users are also deleted. Complete the following steps to delete a space:
 
 1. Click **Manage** > **Account** > **Cloud Foundry Orgs**.
-2. Select the org that you want to edit, and click **View Details**.
-3. Determine which space to delete, and click **Edit Space**.
-4. Click **Delete Cloud Foundry Space**.
+2. Click the org in which the space is assigned.
+3. Click the Actions icon, and select **Delete**.
+4. Confirm you want to delete the space by typing the space name in the field, and click **Delete**.
 
 ## Editing user roles
 {: #listmembers}
 
-### Editing user roles for a specific org 
+The roles you can assign at the organization level are Manager, Billing manager, and Auditor. The roles you can assign at the space level are Manager, Developer, and Auditor. For the detailed role descriptions, see [Cloud Foundry roles](/docs/iam/cfaccess.html#cfroles).
 
-Complete the following steps to edit the users roles for a specific org:
+### Editing user roles at the organization level
+
+Complete the following steps to edit the user roles for a specific org:
 
 1. Click **Manage** > **Account** > **Cloud Foundry Orgs**.
-2. Determine which organization you want to edit, and click **View Details** then **Edit Org**.
-4. You can see the members of your organization and their roles in the **USERS** tab.
+2. Click the Actions icon, and select **Users**.
+3. Depending on how you want to modify the user permissions, select or clear the check box for a specific role.
+4. Confirm your changes by clicking **Save**. 
 
-### Editing user roles for a specific space
+### Editing user roles at the space level
 
 Complete the following steps to edit the user roles for a specific space:
 
 1. Click **Manage** > **Account** > **Cloud Foundry Orgs**.
-2. Select the organization that you want to view the members for, and click **View Details**.
-3. Determine which space you want to edit, and click **Edit Space**.
-4. You can see the members of your space and their roles in the **USERS** tab.
-
-## Managing quota
-{: #managequota}
-
-As an {{site.data.keyword.Bluemix_notm}} account owner or organization manager, you can view the used and allocated quota for an organization. The quota represents the resource limits for the organization, which is assigned when the organization is created. The resources that are available to an organization vary depending on whether you have a free account or a billable account. Any application or service in a space within the organization contributes to the usage of the allocated quota.
-
-To view the used and allocated quota for an org, complete the following steps:
-
-1. Click **Manage** &gt; **Account** &gt; **Cloud Foundry Orgs**.
-2. Identify the organization that you want to view the quota for, and click **View Details**.
-3. Click **Edit Org**.
-4. If you have spaces defined in more than one region, select the specific region that you want to view.
-5. Click **QUOTA**. 
-6. By default, the **Cloud Foundry** quota page opens. You can view the quota details for the following resources:
- * MEMORY
- * SERVICES
- * PLAN
- * PRICE
-7. Click **Containers** to view the used and available container quota allocation. The container allocation varies depending on your pricing plan. You can view the quota details for the following resources:
- * MEMORY
- * PUBLIC IP
- * FILE SHARES
-8. Click **Virtual Servers** to view the virtual machines.
-
-Containers are not available in the {{site.data.keyword.Bluemix_notm}} Sydney region. 
-{: tip}
-
-For more information about containers, see [Quota](/docs/containers/container_planning.html#container_planning_quota) in the Containers documentation.
-To change the quota that is allocated to an organization, you must open a support ticket. For more information about opening a support ticket, see [Getting customer support](/docs/get-support/howtogetsupport.html#getting-customer-support). 
+2. Click the org in which the space is assigned.
+3. Click the name of the space.
+4. Depending on how you want to modify the user permissions, select or clear the check box for a specific role.
+5. Confirm your changes by clicking **Save**.
 
 ## Managing domains
 {: #managedomains}
 
-As an {{site.data.keyword.Bluemix_notm}} account owner or organization manager, you can view the system domain and add custom domains for applications that are built within an organization and its spaces. As a space manager, the **Domains** tab for a space is a read-only list of the domains that are assigned to the space.
+As an account owner or organization manager, you can view the system domain and add custom domains for applications that are built within an org and its spaces. As a space manager, the **Domains** tab is a read-only list of the domains that are assigned to the space.
 
 1. Click **Manage** &gt; **Account** &gt; **Cloud Foundry Orgs**.
-2. Identify the organization that you want to view or edits domains for.
-3. Select **View Details** for that org.
-4. Click **Edit Org**.
-5. Click **DOMAINS**.
+2. Click the Actions icon for the org, and select **Domains**.
 
-If you add a custom domain, you must configure your DNS server to resolve your custom domain to point to the {{site.data.keyword.Bluemix_notm}} system domain. In this way, when {{site.data.keyword.Bluemix_notm}} receives a request for your custom domain, it can properly route it to your app. The system domain is always available to a space, and custom domains might also be allocated to a space. Apps created in a space might use any of domains listed for that space. For more information about creating and using custom domains, see [Using a custom domain](/docs/apps/updapps.html#domain).
+If you add a custom domain, you must configure your DNS server to resolve your custom domain to point to the {{site.data.keyword.Bluemix_notm}} system domain. In this way, when {{site.data.keyword.Bluemix_notm}} receives a request for your custom domain, it's properly routed to your app. The system domain is always available to a space, and custom domains might also be allocated to a space. Apps created in a space might use any of the domains listed for that space. For more information about creating and using custom domains, see [Using a custom domain](/docs/apps/updapps.html#domain).
+
+## Managing quota
+{: #managequota}
+
+You can view the used and allocated quota for an org. The quota represents the resource limits for the org, which is assigned when the organization is created. The resources that are available to an org vary depending on whether you have a free account or a billable account. Any application or service included in a space within the org contributes to the usage of the allocated quota.
+
+To view the used and allocated quota for an org, complete the following steps:
+
+1. Click **Manage** &gt; **Account** &gt; **Cloud Foundry Orgs**.
+2. Click the Actions icon for the specific org, and select **Quotas**.
+
+   By default, the **Cloud Foundry** quota page is displayed. From here, you can view the quota details for the following resources:
+ 
+   * The number of apps
+   * The amount of memory 
+   * The number of services 
+   * Plan details 
+
+3. Expand the region details to view the quota at the space level. 
+
+To change the quota that is allocated to an org, you must open a support ticket. For more information, see [Getting customer support](/docs/get-support/howtogetsupport.html#getting-customer-support). 
+

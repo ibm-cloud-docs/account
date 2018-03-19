@@ -15,9 +15,9 @@ Managing your account
     softlayerlink.md
     linking_accounts.md
     resourcegroups.md
-    
+
     {: .topicgroup}
-    Managing Orgs
+    Managing orgs and spaces
         orgs_spaces.md
         manageorg.md
 
