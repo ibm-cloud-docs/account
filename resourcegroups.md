@@ -5,7 +5,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-02-08"
+lastupdated: "2018-03-22"
 
 
 ---
@@ -23,9 +23,6 @@ A resource group is a way for you to organize your account resources in customiz
 
 To start managing your resource groups, go to **Manage** &gt; **Account** &gt; **Resource Groups** in the {{site.data.keyword.Bluemix}} console. From there you can view your resource groups, rename them, and create new resource groups.
 
-## Viewing resources within resource groups
-
-To easily view the resources contained within a resource group, filter by resource group from your dashboard.
 
 ## Creating a resource group
 
@@ -40,6 +37,14 @@ Each resource group is free, however connections between a resource group and a 
 2. Click **Create a resource group**.
 3. Enter a name for your resource group.
 4. Click **Add**.
+
+## Adding resources to a resource group
+
+Services that are managed using IAM belong to a resource group instead of Cloud Foundry org or space. When you create a service instance for one of these services from the catalog, you are prompted to assign the instance to a resource group. Your resource group selection at the time of creating the instance is final and can't be changed.
+
+## Viewing resources within resource groups
+
+To easily view the resources contained within a resource group, filter by resource group from your dashboard.
 
 ## Renaming a resource group
 
