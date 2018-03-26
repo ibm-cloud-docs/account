@@ -23,12 +23,12 @@ Toute ressource privée que vous créez est restreinte par défaut. Si vous ête
 
 Vous pouvez utiliser l'interface de ligne de commande ou l'interface utilisateur Identity and Access pour déterminer si vous avez le droit d'autoriser des utilisateurs spécifiques à afficher une ressource privée qui a été ajoutée au compte. Si vous êtes propriétaire d'un compte, vous pouvez donner l'accès à votre compte à un utilisateur via l'interface utilisateur Identity and Access Management en affectant une règle d'accès. Pour plus d'informations, voir [Gestion de l'accès au catalogue](access.html).
 
-## Etape 1 : trouvez votre ressource
+## Etape 1 : Trouver votre ressource
 {: #find-resource}
 
 Entrez `bx catalog service <service-id or service-name>`. Remplacez service-id ou service-name par votre ID ou nom de ressource. Les informations retournées vous permettent de voir la hiérarchie, qui affiche les ressources enfant des éléments de votre ressource.
 
-## Etape 2 : définissez la visibilité en incluant un compte
+## Etape 2 : Définir la visibilité en incluant un compte
 {: #vis-inc}
 
 Entrez la commande suivante pour autoriser un compte à afficher votre ressource privée.

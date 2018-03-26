@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-03-08"
 
 ---
 
@@ -45,9 +45,9 @@ Dans {{site.data.keyword.Bluemix_notm}}, vous pouvez utiliser des organisations 
    * Vous pouvez regrouper un ensemble d'espaces, d'applications, de services, de domaines, de routes et d'utilisateurs dans des organisations. 
    * Vous pouvez gérer l'accès aux espaces et aux organisations pour chaque utilisateur. 
 
-Lorsque vous créez une organisation, son nom doit être unique dans {{site.data.keyword.Bluemix_notm}}. Si le nom d'organisation est déjà utilisé par un autre utilisateur d'environnement {{site.data.keyword.Bluemix_notm}} public, dédié ou local, vous devez spécifier un autre nom. Une fois que vous avez créé l'organisation, le droit *Responsable de l'organisation*, qui vous permet d'éditer le nom de l'organisation, d'ajouter des utilisateurs et de créer ou de supprimer des espaces dans l'organisation, vous est attribué automatiquement.
+Lorsque vous créez une organisation, son nom doit être unique dans {{site.data.keyword.Bluemix_notm}}. Si le nom d'organisation est déjà utilisé par un autre utilisateur d'environnement {{site.data.keyword.Bluemix_notm}} public, dédié ou local, vous devez spécifier un autre nom. Une fois que vous avez créé l'organisation, le droit *Responsable de l'organisation*, qui vous permet d'éditer le nom de l'organisation, d'ajouter des utilisateurs et de créer ou de supprimer des espaces dans l'organisation, vous est attribué automatiquement. Si vous possédez un compte facturable, vous pouvez créer autant d'organisations que vous le souhaitez. En revanche, avec un compte Lite, vous ne pouvez posséder qu'une seule organisation.  
 
-Vous pouvez contacter le support pour supprimer une organisation. Lorsque vous supprimez une organisation, tous les espaces, toutes les applications et tous les services au sein de l'organisation sont supprimés.
+Vous pouvez contacter le support si vous avez besoin de supprimer une organisation. Lorsque vous supprimez une organisation, tous les espaces, toutes les applications et tous les services au sein de l'organisation sont supprimés.
 
 Les [rôles utilisateur](/docs/iam/users_roles.html#userrolesinfo) suivants peuvent être affectés aux utilisateurs dans une organisation. Le rôle d'auditeur est attribué par défaut à tous les utilisateurs invités dans le compte.
 
@@ -62,7 +62,6 @@ Vous pouvez créer une organisation comme suit :
 3. Entrez le nom de l'organisation.
 4. Cliquez sur **Ajouter**.
 
-<!-- Add info on Manage infrastructure option under a space -->
 
 ## Création d'espaces
 {: #spaceinfo}

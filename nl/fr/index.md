@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-15"
+lastupdated: "2018-03-12"
 
 ---
 
@@ -57,14 +57,13 @@ Vous vous demandez sûrement ce que comporte l'offre de compte Lite. La liste su
    * Support de base {{site.data.keyword.Bluemix_notm}} gratuit. Le support de base est assuré pour les environnements non destinés à la production ou les charges de travail pour lesquels les niveaux de gravité traditionnels ne sont pas utilisés et des temps de réponse spécifiques ne sont pas stipulés.
    * Des notifications vous sont envoyées par courrier électronique quant au statut de votre compte et à vos limites de quota.
    * Vos applications Cloud Foundry ont accès à 256 Mo de mémoire d'exécution gratuite et instantanée.
-   * Vous pouvez exploiter un cluster Kubernetes avec 2 UC et 4 Go de mémoire RAM.
    * Vous pouvez mettre à disposition une instance de n'importe quel service du catalogue [{{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} doté d'un plan Lite.
    * Après 10 jours sans activité de développement, vos applications passent en veille. Vous pouvez commencer à travailler sur de nouvelles applications sans vous soucier d'atteindre les limites de quota de mémoire.
    * Après 30 jours sans activité de développement, vos instances de service non associées à des plans Lite sont supprimées. Ainsi, vous n'avez pas à gérer la suppression des instances inactives avant d'en créer de nouvelles.
 
 ### Mise à niveau de votre compte
 
-Lorsque vous êtes prêt à aller plus loin, effectuez une mise à niveau vers un compte Paiement à la carte et ne payez que ce que vous utilisez au-delà des franchises. Dans la console, accédez à **Gérer** > **Facturation et utilisation** > **Facturation** et cliquez sur **Ajouter une carte de crédit**. 
+Lorsque vous êtes prêt à aller plus loin, effectuez une mise à niveau vers un compte Paiement à la carte et ne payez que ce que vous utilisez au-delà des franchises. Après la mise à niveau, vous pouvez continuer à utiliser les instances que vous avez créées avec votre compte Lite. Dans la console, accédez à **Gérer** > **Facturation et utilisation** > **Facturation** et cliquez sur **Ajouter une carte de crédit**. 
 
 ## Comptes facturables
 {: #billableacts}
@@ -88,7 +87,7 @@ Avec un compte Paiement à la carte, vous pouvez créer plusieurs groupes de res
 
 Dans de nombreux pays et régions, vous pouvez créer un compte Paiement à la carte depuis la console {{site.data.keyword.Bluemix_notm}}. Après avoir fourni vos informations de facturation et de carte de crédit, acceptez les dispositions du contrat et soumettez votre demande de compte. Votre carte de crédit sera alors validée. Vous recevrez également un courrier électronique de confirmation concernant les informations relatives au compte. Quelques minutes après la réception du courrier électronique de confirmation, vous pouvez revenir dans la console pour continuer à construire vos applications. 
 
-Si votre demande en ligne ne peut pas être traitée pour votre pays ou votre région, contactez le [support {{site.data.keyword.Bluemix_notm}}](https://ibm.biz/bluemixsupport){: new_window} ![External link icon](../icons/launch-glyph.svg). Une fois que vous êtes connecté au portail des services {{site.data.keyword.Bluemix_notm}}, cliquez sur **Contacter le support** et sélectionner l'option **Facturation, Compte ou Connexion**. 
+Si votre demande en ligne ne peut pas être traitée pour votre pays ou votre région, contactez le [support {{site.data.keyword.Bluemix_notm}}](https://ibm.biz/bluemixsupport){: new_window} ![External link icon](../icons/launch-glyph.svg). Une fois que vous êtes connecté au portail des services {{site.data.keyword.Bluemix_notm}}, cliquez sur **Contacter le support** et sélectionner l'option **Facturation, Compte ou Connexion**.
 
 Vous pouvez convertir votre compte Paiement à la carte en compte d'abonnement à tout moment. Contactez le [Service commercial {{site.data.keyword.Bluemix_notm}} ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg) pour plus de détails.
 {: tip}

@@ -34,7 +34,7 @@ Procédez comme suit pour renommer votre organisation :
 
 ### Suppression d'une organisation
 
-Lorsque vous supprimez une organisation, tous les espaces, toutes les applications et tous les services au sein de l'organisation sont supprimés. N'oubliez pas qu'une opération de suppression est irréversible. 
+Lorsque vous supprimez une organisation, tous les espaces, toutes les applications et tous les services au sein de l'organisation sont supprimés. N'oubliez pas qu'une opération de suppression est irréversible. Vous devez contacter le support pour supprimer une organisation. 
 
 ### Suppression d'un espace
 

@@ -25,16 +25,16 @@ Si vous êtes administrateur d'un compte, vous pouvez choisir de masquer une res
 
 Vous pouvez utiliser l'interface de ligne de commande ou l'interface utilisateur Identity and Access pour déterminer si vous avez le droit d'autoriser des utilisateurs spécifiques à afficher une ressource privée qui a été ajoutée au compte. Si vous êtes propriétaire d'un compte, vous pouvez donner l'accès à votre compte à un utilisateur via l'interface utilisateur Identity and Access Management en affectant une règle d'accès. Pour plus d'informations, voir [Gestion de l'accès au catalogue](access.html).
 
-## Etape 1 : trouvez une ressource
+## Etape 1 : Trouver une ressource
 {: #find-resource}
 
 Entrez `bx catalog search <service-id or service-name>` pour rechercher une ressource. Remplacez service-id ou service-name par un ID ou un nom de ressource. Trouvez l'ID ou le nom du service que vous voulez masquer dans les informations qui sont retournées.
 
-## Etape 2 : obtenez les détails du service
+## Etape 2 : Obtenir les détails du service
 
 Entrez `bx catalog service <service-id or service-name>`. En utilisant ce que vous avez trouvé dans la commande précédente, servez-vous de cette commande pour examiner la ressource plus en détail. Les informations retournées vous permettent de voir la hiérarchie, qui affiche les ressources enfant des éléments de votre ressource.
 
-## Etape 3 : masquez la resource
+## Etape 3 : Masquer la ressource
 {: #vis-exc}
 
 Entrez la commande suivante pour empêcher votre compte de voir une ressource publique.

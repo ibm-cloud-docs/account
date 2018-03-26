@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-08"
+lastupdated: "2018-02-19"
 
 ---
 
@@ -15,13 +15,13 @@ lastupdated: "2018-02-08"
 {:tip: .tip}
 {:new_window: target="_blank"}
 
-# Liaison de vos comptes {{site.data.keyword.Bluemix_notm}} et SoftLayer en vue de la consolidation de la facturation
+# Facturation en bloc pour des comptes liés
 {: #unifybillaccounts}
 
 Si vous liez vos comptes {{site.data.keyword.Bluemix_notm}} et SoftLayer, vous ne recevrez qu'une seule facture {{site.data.keyword.Bluemix_notm}}. Si vous disposez d'un compte {{site.data.keyword.Bluemix_notm}}, la facturation via {{site.data.keyword.Bluemix_notm}} pour les ressources d'infrastructure entre en vigueur au prochain cycle de facturation après que les comptes ont été liés.
 {: shortdesc}
 
-Tous les comptes liés dans {{site.data.keyword.Bluemix_notm}} doivent être de type Paiement à la carte. Vous pouvez créer un nouveau compte Paiement à la carte, lier un compte Paiement à la carte existant, ou lier un compte d'essai existant, qui est ensuite mis à niveau vers un compte Paiement à la carte. Vous ne pouvez pas lier des comptes de type Abonnement.
+Tous les comptes liés dans {{site.data.keyword.Bluemix_notm}} doivent être de type Paiement à la carte ou Abonnement.
 {: tip}
 
 ## Facturation pour l'utilisation de {{site.data.keyword.Bluemix_notm}} lorsque les comptes sont liés
