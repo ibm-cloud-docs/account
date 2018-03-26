@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-08"
+lastupdated: "2018-02-19"
 
 ---
 
@@ -15,13 +15,13 @@ lastupdated: "2018-02-08"
 {:tip: .tip}
 {:new_window: target="_blank"}
 
-# 통합 청구를 위한 {{site.data.keyword.Bluemix_notm}} 및 SoftLayer 계정 연결
+# 연결된 계정에 대한 청구 통합
 {: #unifybillaccounts}
 
 {{site.data.keyword.Bluemix_notm}}와 Softlayer 계정을 연결한 경우 단일 {{site.data.keyword.Bluemix_notm}} 송장을 받게 됩니다. 기존 {{site.data.keyword.Bluemix_notm}} 계정을 보유하고 있는 경우, {{site.data.keyword.Bluemix_notm}}를 통한 인프라 리소스의 청구는 계정이 연결된 이후 시작되는 새 청구 주기에 적용됩니다.
 {: shortdesc}
 
-{{site.data.keyword.Bluemix_notm}}의 연결된 모든 계정은 종량과금제 계정이어야 합니다. 새 종량과금제 계정을 작성하거나, 기존 종량과금제 계정을 연결하거나, 기존 평가판 계정을 연결할 수 있으며, 그런 다음 종량과금제 계정으로 업그레이드됩니다. 구독 계정은 연결할 수 없습니다.
+{{site.data.keyword.Bluemix_notm}}의 모든 연결된 계정은 종량과금제 또는 구독 계정이어야 합니다.
 {: tip}
 
 ## 계정 연결 시 {{site.data.keyword.Bluemix_notm}} 사용에 대한 청구

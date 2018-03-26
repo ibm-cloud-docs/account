@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-15"
+lastupdated: "2018-03-12"
 
 ---
 
@@ -57,14 +57,13 @@ lastupdated: "2018-02-15"
    * 기본 {{site.data.keyword.Bluemix_notm}} 지원은 무료입니다. 기본 지원은 기존의 심각도가 사용되지 않고 특정 응답 시간이 규정되지 않은 프로덕션 이외의 환경 또는 워크로드에 제공됩니다.
    * 계정 상태 및 할달량 한계에 대한 이메일 알림을 받습니다.
    * Cloud Foundry 앱이 최대 256MB의 바로 사용 가능한 무료 런타임 메모리에 액세스할 수 있습니다.
-   * 2개의 CPU 및 4GB RAM으로 Kubernetes 클러스터 관련 작업을 수행할 수 있습니다.
    * 라이트 플랜을 보유하는 [{{site.data.keyword.Bluemix_notm}} 카탈로그 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window}에서 서비스의 1개 인스턴스를 프로비저닝할 수 있습니다.
    * 개발 활동이 없는 상태로 10일 후에는 앱이 휴면 상태가 됩니다.  메모리 할당량 한계 도달에 대해 걱정할 필요 없이 새 앱에 대한 작업을 시작할 수 있습니다.
    * 개발 활동이 없는 상태로 30일 후에는 라이트 플랜의 서비스 인스턴스가 삭제됩니다.  이러한 방법으로 새로 작성하기 전에 비활성 인스턴스 삭제를 관리할 필요가 없습니다.
 
 ### 계정 업그레이드
 
-확장이 준비되면 종량과금제 계정으로 업그레이드한 후에 무료 사용량을 초과하는 사용량에 대해서만 비용을 지불하십시오. 콘솔에서 **관리** > **청구 및 사용량** > **청구**로 이동하여 **신용카드 추가**를 클릭하십시오.  
+확장이 준비되면 종량과금제 계정으로 업그레이드한 후에 무료 사용량을 초과하는 사용량에 대해서만 비용을 지불하십시오. 업그레이드 후에도 라이트 계정으로 작성한 인스턴스는 계속 사용할 수 있습니다. 콘솔에서 **관리** > **청구 및 사용량** > **청구**로 이동하여 **신용카드 추가**를 클릭하십시오. 
 
 ## 청구 가능 계정
 {: #billableacts}
@@ -90,7 +89,7 @@ lastupdated: "2018-02-15"
 
 많은 국가와 지역에서는 {{site.data.keyword.Bluemix_notm}} 콘솔에서 종량과금제 계정을 등록할 수 있습니다. 청구 및 신용카드 정보를 입력한 후에 이용 약관에 동의하고 계정 요청을 제출하십시오. 그러면 신용카드의 유효성이 검증됩니다. 또한 계정 정보와 관련된 확인 이메일도 받습니다. 확인 이메일을 받은 이후 몇 분이 지나면 콘솔로 돌아가서 앱 빌드를 계속 진행할 수 있습니다. 
 
-해당 국가나 지역에 대해 온라인 요청을 처리할 수 없는 경우에는 [{{site.data.keyword.Bluemix_notm}} 지원 부서](https://ibm.biz/bluemixsupport){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg)에 문의하십시오. {{site.data.keyword.Bluemix_notm}} 서비스 포털에 로그인한 후에 **지원 센터에 문의**를 클릭하고 **청구, 계정 또는 로그인** 옵션을 선택하십시오. 
+해당 국가나 지역에 대해 온라인 요청을 처리할 수 없는 경우에는 [{{site.data.keyword.Bluemix_notm}} 지원 부서](https://ibm.biz/bluemixsupport){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg)에 문의하십시오. {{site.data.keyword.Bluemix_notm}} 서비스 포털에 로그인한 후에 **지원 센터에 문의**를 클릭하고 **청구, 계정 또는 로그인** 옵션을 선택하십시오.
 
 종량과금제 계정은 언제든지 구독 계정으로 변환할 수 있습니다. 추가 세부사항은 [{{site.data.keyword.Bluemix_notm}} 영업 팀](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg)에 문의하십시오.
 {: tip}
@@ -101,7 +100,7 @@ lastupdated: "2018-02-15"
 
 매월 최소 지출 금액을 지불하며 해당 최소 비용에 적용되는 구독 할인을 받습니다. 최소 지출 금액을 초과하는 사용량에 대해서는 비용이 청구됩니다.
 
-구독 계정에 등록하고 구독료 및 할인에 대한 자세한 정보를 보려면 [{{site.data.keyword.Bluemix_notm}} 영업 팀](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg)에 문의해야 합니다. 
+구독 계정에 등록하고 구독료 및 할인에 대한 자세한 정보를 보려면 [{{site.data.keyword.Bluemix_notm}} 영업 팀](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg)에 문의해야 합니다.
 
 ### {{site.data.keyword.Bluemix_dedicated_notm}} 계정
 
@@ -115,7 +114,7 @@ lastupdated: "2018-02-15"
 
 SoftLayer DirectLink 또는 프리미엄 지원 옵션과 같은 선택적 항목을 주문할 수도 있습니다. 자세한 정보는 [{{site.data.keyword.Bluemix_notm}} 영업 팀 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg)에 문의하십시오.
 
-해당 기간 동안 매월 지불하는 항목은 원하는 데디케이티드 서비스 및 모든 퍼블릭 서비스에 대한 액세스를 제공하는 구독 계정을 기반으로 합니다. {{site.data.keyword.Bluemix_notm}} 퍼블릭에서 서비스의 사용 비용은 구독 계정 계약을 기반으로 계산됩니다. 해당 구독 계약 외에 추가로 사용하는 모든 서비스에 대해 송장이 발급됩니다. 계약에 착수하려면 IBM이 지정한 계정 담당자 또는 [{{site.data.keyword.Bluemix_notm}} 영업 팀](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg)에 문의하십시오. 
+해당 기간 동안 매월 지불하는 항목은 원하는 데디케이티드 서비스 및 모든 퍼블릭 서비스에 대한 액세스를 제공하는 구독 계정을 기반으로 합니다. {{site.data.keyword.Bluemix_notm}} 퍼블릭에서 서비스의 사용 비용은 구독 계정 계약을 기반으로 계산됩니다. 해당 구독 계약 외에 추가로 사용하는 모든 서비스에 대해 송장이 발급됩니다. 계약에 착수하려면 IBM이 지정한 계정 담당자 또는 [{{site.data.keyword.Bluemix_notm}} 영업 팀](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg)에 문의하십시오.
 
 ### {{site.data.keyword.Bluemix_local_notm}} 계정
 
@@ -126,7 +125,7 @@ SoftLayer DirectLink 또는 프리미엄 지원 옵션과 같은 선택적 항�
    * 선택한 모든 로컬 서비스 및 모든 퍼블릭 {{site.data.keyword.Bluemix_notm}} 서비스에 대한 액세스
    * 표준 {{site.data.keyword.Bluemix_notm}} 지원
 
-해당 기간 동안 매월 지불하는 항목은 원하는 로컬 서비스 및 모든 퍼블릭 서비스에 대한 액세스를 제공하는 구독 계정을 기반으로 합니다. {{site.data.keyword.Bluemix_notm}} 퍼블릭에서 서비스의 사용 비용은 구독 계정 계약을 기반으로 계산됩니다. 해당 구독 계약 외에 추가로 사용하는 모든 서비스에 대해 송장이 발급됩니다. 계약에 착수하려면 IBM이 지정한 계정 담당자 또는 [{{site.data.keyword.Bluemix_notm}} 영업 팀](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg)에 문의하십시오. 
+해당 기간 동안 매월 지불하는 항목은 원하는 로컬 서비스 및 모든 퍼블릭 서비스에 대한 액세스를 제공하는 구독 계정을 기반으로 합니다. {{site.data.keyword.Bluemix_notm}} 퍼블릭에서 서비스의 사용 비용은 구독 계정 계약을 기반으로 계산됩니다. 해당 구독 계약 외에 추가로 사용하는 모든 서비스에 대해 송장이 발급됩니다. 계약에 착수하려면 IBM이 지정한 계정 담당자 또는 [{{site.data.keyword.Bluemix_notm}} 영업 팀](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg)에 문의하십시오.
 
 ## 평가판 계정
 {: #trial}
@@ -151,8 +150,8 @@ SoftLayer DirectLink 또는 프리미엄 지원 옵션과 같은 선택적 항�
 
 앱을 다시 시작하려면 종량과금제 계정에 대한 신용카드 정보를 제공하거나 구독 계정을 작성하여 계정을 청구 가능 계정으로 변환하십시오. 그러면 무료 컴퓨팅 및 서비스 허용량을 계속 사용할 수 있습니다. 매월 무료 사용량에 포함되지 않은 서비스, 컨테이너 및 런타임 사용량에 대해서만 지불합니다.
 
-  * 종량과금제 계정으로 업그레이드하려면 콘솔에서 **관리** > **청구 및 사용량** > **청구**로 이동하여 **신용카드 추가**를 클릭하십시오. 
-  * 구독 계정에 등록하려면 [{{site.data.keyword.Bluemix_notm}} 영업 팀](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg)에 문의하십시오. 
+  * 종량과금제 계정으로 업그레이드하려면 콘솔에서 **관리** > **청구 및 사용량** > **청구**로 이동하여 **신용카드 추가**를 클릭하십시오.
+  * 구독 계정에 등록하려면 [{{site.data.keyword.Bluemix_notm}} 영업 팀](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg)에 문의하십시오.
 
 무료 평가판이 만료된 후에 계정을 변환하지 않으면 앱과 서비스가 30일 이후 제거됩니다. 그러나 사용자의 계정은 삭제되지 않고 언제든지 로그인해서 청구 가능 계정으로 업그레이드할 수 있습니다.  또한 청구 가능 계정을 작성하고 앱 설정과 서비스 구성의 유실을 피하도록 상기시키는 이메일 알림을 받습니다. {{site.data.keyword.Bluemix_notm}}에서 알림을 수신하기를 원하지 않는 경우, 언제든지 등록을 해지할 수 있습니다.
 
