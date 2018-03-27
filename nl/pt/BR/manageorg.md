@@ -36,7 +36,7 @@ Conclua as etapas a seguir para renomear sua organização:
 ### Excluindo uma organização
 
 Ao excluir uma organização, todos os espaços, aplicativos e serviços
-dentro da organização são excluídos. Observe que as operações de exclusão não podem ser revertidas. 
+dentro da organização são excluídos. Observe que as operações de exclusão não podem ser revertidas. Entre em contato com o suporte para excluir uma organização.
 
 ### Excluindo um espaço
 

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-03-08"
 
 ---
 
@@ -55,9 +55,9 @@ No {{site.data.keyword.Bluemix_notm}}, é possível usar organizações para per
    * É possível agrupar um conjunto de espaços, apps, serviços, domínios, rotas e usuários em organizações. 
    * É possível gerenciar o acesso aos espaços e organizações por usuário. 
 
-Ao criar uma organização, o nome deve ser exclusivo no {{site.data.keyword.Bluemix_notm}}. Se o nome da organização já está em uso por outro usuário do {{site.data.keyword.Bluemix_notm}} Public, Dedicated ou Local, deve-se especificar um novo nome. Depois de criar a organização, você é designado automaticamente à permissão *Gerenciador de organização*, que permite editar o nome da organização, incluir usuários e criar ou excluir espaços na organização.
+Ao criar uma organização, o nome deve ser exclusivo no {{site.data.keyword.Bluemix_notm}}. Se o nome da organização já está em uso por outro usuário do {{site.data.keyword.Bluemix_notm}} Public, Dedicated ou Local, deve-se especificar um novo nome. Depois de criar a organização, você é designado automaticamente à permissão *Gerenciador de organização*, que permite editar o nome da organização, incluir usuários e criar ou excluir espaços na organização. Se você tiver uma conta faturável, será possível criar quantas organizações forem necessárias. No entanto, para uma conta Lite, é possível ter somente uma organização. 
 
-É possível contatar o suporte para excluir uma organização. Ao excluir uma organização, todos os espaços, aplicativos e serviços
+Entre em contato com o suporte se você precisar excluir uma organização. Ao excluir uma organização, todos os espaços, aplicativos e serviços
 dentro da organização são excluídos.
 
 As [funções de usuário](/docs/iam/users_roles.html#userrolesinfo) a seguir podem ser designadas a usuários em uma organização. Todos os usuários convidados para a conta são designados à função de auditor por padrão.
@@ -73,7 +73,6 @@ As [funções de usuário](/docs/iam/users_roles.html#userrolesinfo) a seguir po
 3. Insira o nome da organização.
 4. Clique em ** Adicionar**.
 
-<!-- Add info on Manage infrastructure option under a space -->
 
 ## Criando Espaços
 {: #spaceinfo}

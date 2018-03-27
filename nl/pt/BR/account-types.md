@@ -59,8 +59,8 @@ Você pode estar querendo saber o que é oferecido em uma conta Lite. Confira a 
    * Seus apps Cloud Foundry podem acessar até 256 MB de memória instantânea de tempo execução grátis. 
    * É possível trabalhar com um cluster do Kubernetes com 2 CPUs e 4 GB de RAM.
    * É possível provisionar uma instância de qualquer serviço no catálogo do [{{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} que tenha um plano Lite.
-   * Depois de 10 dias sem atividades de desenvolvimento, seus apps serão suspensos. É possível começar a trabalhar em novos apps sem ter que se preocupar com atingir os limites de cota de memória.
-   * Depois de 30 dias sem atividades de desenvolvimento, suas instâncias de serviço com planos Lite serão excluídas. Dessa forma, você não precisa gerenciar a exclusão de instâncias inativas antes de criar novas.
+   * Depois de 10 dias sem atividade de desenvolvimento, seus apps serão suspensos. É possível começar a trabalhar em novos apps sem ter que se preocupar com atingir os limites de cota de memória.
+   * Depois de 30 dias sem atividade de desenvolvimento, suas instâncias de serviço com planos Lite serão excluídas. Dessa forma, você não precisa gerenciar a exclusão de instâncias inativas antes de criar novas.
 
 ## Contas faturáveis
 {: #billableacts}
@@ -104,7 +104,7 @@ as Vendas do {{site.data.keyword.Bluemix_notm}} usando o link listado na página
 
 ### Conta do {{site.data.keyword.Bluemix_dedicated_notm}}
 
-Com o {{site.data.keyword.Bluemix_dedicated_notm}}, deve-se inscrever para um prazo mínimo de um ano que inclui:
+Com o {{site.data.keyword.Bluemix_dedicated_notm}}, é necessário inscrever-se para um prazo mínimo de um ano que inclui:
 
    * Conectividade VPN de volta para a sua infraestrutura
    * Ambiente completamente redundante em um data center do {{site.data.keyword.BluSoftLayer_notm}}
@@ -146,7 +146,7 @@ Cada grupo de recursos é livre. Ao criar uma conexão entre um serviço gerenci
 
 Quando sua conta promocional expira, os aplicativos em sua conta são interrompidos. Não é possível se inscrever para outra conta do {{site.data.keyword.Bluemix_notm}}, mas ainda é possível acessar sua conta e quaisquer contas para as quais você é convidado.
 
-Para reiniciar seus apps, converta sua conta para uma conta faturável fornecendo informações de cartão de crédito para uma conta pré-paga ou criando uma conta Assinatura. Será possível então continuar usando os abonos de cálculo e serviço grátis. Você pagará apenas pelo uso de serviços, contêineres e tempos de execução não incluídos no abono mensal grátis.
+Para reiniciar seus apps, converta sua conta para uma conta faturável fornecendo informações de cartão de crédito para uma conta pré-paga ou criando uma conta de assinatura. Será possível então continuar usando os abonos de cálculo e serviço grátis. Você pagará apenas pelo uso de serviços, contêineres e tempos de execução não incluídos no abono mensal grátis.
 
 Se você não converter sua conta após a expiração da conta promocional, seus aplicativos e serviços serão removidos após 30 dias. No entanto, sua conta não será excluída e será possível efetuar login e fazer upgrade para uma conta faturável a qualquer momento. Além disso, você recebe notificações por e-mail para lembrá-lo de criar uma conta faturável e evitar perder suas configurações de app e configurações de serviço. Se preferir não receber notificações do {{site.data.keyword.Bluemix_notm}}, será possível cancelar a assinatura a qualquer momento.
 

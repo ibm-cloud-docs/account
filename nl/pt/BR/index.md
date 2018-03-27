@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-15"
+lastupdated: "2018-03-12"
 
 ---
 
@@ -27,7 +27,7 @@ A tabela a seguir fornece uma comparação das contas Lite, Pré-paga e de Assin
 |  | Lite  | Pré-paga | Inscrição |
 |--------------------|--------------------|--------------------|--------------------|
 | **Acesso à memória do Cloud Foundry grátis** | 256 MB | 512 MB | 512 MB |
-| **Acesso aos [Planos de serviços Lite ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://console.bluemix.net/catalog/?search=label:lite){: new_window}** | ![Feature available](../icons/icon_enabled.svg) | ![Recurso disponível](../icons/icon_enabled.svg) | ![Recurso disponível](../icons/icon_enabled.svg) |
+| **Acesso aos [Planos de serviços Lite ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://console.bluemix.net/catalog/?search=label:lite){: new_window}** | ![Recurso disponível](../icons/icon_enabled.svg) | ![Recurso disponível](../icons/icon_enabled.svg) | ![Recurso disponível](../icons/icon_enabled.svg) |
 | **Acesso a todos os planos grátis** |  | ![Recurso disponível](../icons/icon_enabled.svg) | ![Recurso disponível](../icons/icon_enabled.svg) |
 | **Acesso ao catálogo integral** |  | ![Recurso disponível](../icons/icon_enabled.svg) | ![Recurso disponível](../icons/icon_enabled.svg) |
 | **Sem restrições de tempo** | ![Recurso disponível](../icons/icon_enabled.svg) | ![Recurso disponível](../icons/icon_enabled.svg) | ![Recurso disponível](../icons/icon_enabled.svg) |
@@ -40,7 +40,7 @@ A tabela a seguir fornece uma comparação das contas Lite, Pré-paga e de Assin
 ## Conta Lite
 {: #liteaccount}
 
-Inscreva-se para uma conta Lite grátis para construir apps e explorar serviços com planos grátis selecionados que são denominados Lite e exibidos com uma tag Lite ![Lite tag](../icons/Lite.svg) no console do {{site.data.keyword.Bluemix_notm}}. Sua conta Lite não expira e seu cartão de crédito não é necessário.
+Inscreva-se para uma conta Lite grátis para construir apps e explorar serviços com planos grátis selecionados que são denominados Lite e exibidos com uma tag Lite ![tag Lite](../icons/Lite.svg) no console do {{site.data.keyword.Bluemix_notm}}. Sua conta Lite não expira e seu cartão de crédito não é necessário.
 
 Você tem acesso a um único grupo de recursos que é criado e denominado `Default`. Todas as suas instâncias de serviços que são gerenciadas pelo {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) são incluídas automaticamente nesse grupo de recursos. É possível atualizar o nome desse grupo de recursos a qualquer momento. Consulte [Renomeando um grupo de recursos](/docs/account/resourcegroups.html#renaming-a-resource-group) para obter as etapas detalhadas.
 
@@ -57,14 +57,13 @@ Você pode estar querendo saber o que é oferecido em uma conta Lite. Confira a 
    * Suporte básico do {{site.data.keyword.Bluemix_notm}} de graça. O suporte básico é fornecido para ambientes de não produção ou cargas de trabalho em que severidades tradicionais não são usadas e tempos de resposta específicos não são estipulados.
    * Você recebe notificações por e-mail sobre o status da conta e limites de cota.
    * Seus apps Cloud Foundry podem acessar até 256 MB de memória instantânea de tempo execução grátis.
-   * É possível trabalhar com um cluster do Kubernetes com 2 CPUs e 4 GB de RAM.
    * É possível provisionar uma instância de qualquer serviço no catálogo do [{{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} que tenha um plano Lite.
-   * Depois de 10 dias sem atividade de desenvolvimento, seus apps são suspensos. É possível começar a trabalhar em novos apps sem ter que se preocupar com atingir os limites de cota de memória.
-   * Depois de 30 dias sem atividade de desenvolvimento, suas instâncias de serviço com planos Lite são excluídas. Dessa forma, você não precisa gerenciar a exclusão de instâncias inativas antes de criar novas.
+   * Depois de 10 dias sem atividade de desenvolvimento, seus apps serão suspensos. É possível começar a trabalhar em novos apps sem ter que se preocupar com atingir os limites de cota de memória.
+   * Depois de 30 dias sem atividade de desenvolvimento, suas instâncias de serviço com planos Lite serão excluídas. Dessa forma, você não precisa gerenciar a exclusão de instâncias inativas antes de criar novas.
 
 ### Fazendo upgrade de sua conta
 
-Quando você estiver pronto para crescer, faça upgrade para uma conta pré-paga e pague somente o que você usar além dos abonos grátis. Acesse **Gerenciar** > **Faturamento e uso** > **Faturamento** no console e clique em **Incluir cartão de crédito**. 
+Quando você estiver pronto para crescer, faça upgrade para uma conta pré-paga e pague somente o que você usar além dos abonos grátis. Após o upgrade, é possível continuar usando qualquer instância criada com sua conta Lite. Acesse **Gerenciar** > **Faturamento e uso** > **Faturamento** no console e clique em **Incluir cartão de crédito**. 
 
 ## Contas faturáveis
 {: #billableacts}
@@ -104,7 +103,7 @@ Para se inscrever para uma conta de Assinatura e para obter mais informações s
 
 ### Conta do {{site.data.keyword.Bluemix_dedicated_notm}}
 
-Com o {{site.data.keyword.Bluemix_dedicated_notm}}, deve-se inscrever-se para um prazo mínimo de um ano que inclui:
+Com o {{site.data.keyword.Bluemix_dedicated_notm}}, é necessário inscrever-se para um prazo mínimo de um ano que inclui:
 
    * Conectividade VPN de volta para a sua infraestrutura
    * Ambiente completamente redundante em um data center do {{site.data.keyword.BluSoftLayer_notm}}
@@ -115,9 +114,7 @@ Com o {{site.data.keyword.Bluemix_dedicated_notm}}, deve-se inscrever-se para um
 Também é possível pedir itens opcionais, tais como
 o SoftLayer DirectLink ou opções de suporte premium. Entre em contato com [Vendas do {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg) para obter informações adicionais.
 
-O que é pago todos os meses durante esse prazo baseia-se nos serviços dedicados que você deseja, além de uma conta Assinatura que fornece acesso a todos os serviços públicos. Os encargos de uso dos serviços no {{site.data.keyword.Bluemix_notm}} Público são calculados com base no contrato da conta da assinatura. Você recebe
-uma fatura para os serviços usados, além desse contrato de
-assinatura. Entre em contato com o representante de conta designado da IBM ou com [Vendas do {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg) para iniciar seu contrato.
+O que é pago todos os meses durante esse prazo baseia-se nos serviços dedicados que você deseja, além de uma conta Assinatura que fornece acesso a todos os serviços públicos. Os encargos de uso dos serviços no {{site.data.keyword.Bluemix_notm}} Público são calculados com base no contrato da conta da assinatura. Você recebe uma fatura para os serviços usados, além desse contrato de assinatura. Entre em contato com o representante de conta designado da IBM ou com [Vendas do {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg) para iniciar seu contrato.
 
 ### Conta do {{site.data.keyword.Bluemix_local_notm}}
 

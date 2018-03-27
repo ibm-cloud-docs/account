@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-08"
+lastupdated: "2018-02-19"
 
 ---
 
@@ -15,13 +15,13 @@ lastupdated: "2018-02-08"
 {:tip: .tip}
 {:new_window: target="_blank"}
 
-# Vinculando as contas do {{site.data.keyword.Bluemix_notm}} e do SoftLayer para consolidar o faturamento
+# Consolidando o faturamento para contas vinculadas
 {: #unifybillaccounts}
 
 Ao vincular suas contas do {{site.data.keyword.Bluemix_notm}} e do Softlayer, você receberá uma única fatura do {{site.data.keyword.Bluemix_notm}}. Se você tiver uma conta do {{site.data.keyword.Bluemix_notm}} existente, o faturamento por meio do {{site.data.keyword.Bluemix_notm}} para recursos de infraestrutura entrará em vigor para o novo ciclo de faturamento que se inicia após as contas serem vinculadas.
 {: shortdesc}
 
-Todas as contas vinculadas no {{site.data.keyword.Bluemix_notm}} devem ser contas pré-paga. É possível criar uma nova conta pré-paga, vincular uma conta pré-paga existente ou vincular uma conta para teste existente, que é, então, atualizada para uma conta pré-paga. Não é possível vincular contas de Assinatura.
+Todas as contas vinculadas no {{site.data.keyword.Bluemix_notm}} devem ser contas pré-pagas ou de assinatura.
 {: tip}
 
 ## Faturamento para uso do {{site.data.keyword.Bluemix_notm}} quando as contas estão vinculadas
