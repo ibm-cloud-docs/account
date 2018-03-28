@@ -47,7 +47,6 @@ Puede que se pregunte sobre qué diferencia hay entre una cuenta Estándar y una
 
 **Nota**: Si la cuenta de prueba no se convierte, verá un mensaje que le dirá el motivo. Puede que tenga más de una organización en la cuenta de prueba existente o apps que no se puedan transferir. Puede realizar la acción apropiada y volver a intentar convertir la cuenta.
 
-
 Cuando sea propietario de una cuenta Estándar, podrá invitar a los miembros del equipo a colaborar en su organización y espacios, a ver su uso, a crear espacios, a actualizar su perfil de cuenta y a gestionar su organización.
 
 ## Planes de Lite
@@ -90,7 +89,7 @@ Permanezca atento a las novedades que iremos añadiendo a esta lista de servicio
 
 Cuando se alcancen los límites de la cuota, se detendrá la aplicación o se inhabilitará el servicio. Si el plan de Lite especifica que la cuota se proporciona de forma mensual, el uso de los recursos se restablecerá el día 1 de cada mes cuando vuelva a trabajar con el servicio. Cuando esté llegando al límite de una cuota, o cuando esté en el límite de la misma, recibirá un correo electrónico de notificación. 
 
-Puede suministrar 1 instancia por plan de Lite.  
+Puede suministrar 1 instancia por plan de Lite. 
 
 **Nota**: Estas limitaciones se aplican únicamente a la cuenta Estándar. Puede actualizar a una cuenta de pago según uso o de suscripción en cualquier momento. Pague sólo lo que utilice más allá de las concesiones gratuitas. Para obtener más información sobre las cuentas Pago según uso y Suscripción, consulte [Tipos de cuentas](/docs/accounts/account-types.html).
 

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-15"
+lastupdated: "2018-03-12"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-02-15"
 # Tipos de cuentas
 {: #accounts}
 
-Puede empezar a crear en {{site.data.keyword.Bluemix}} gratis. Tenemos tres tipos de cuenta diferentes entre los que puede elegir: Lite, Pago según uso y Suscripción. Puede utilizar cualquier tipo de cuenta para empezar en {{site.data.keyword.Bluemix_notm}}, elija aquel que se adapte mejor a sus necesidades. 
+Puede empezar a crear en {{site.data.keyword.Bluemix}} gratis. Tenemos tres tipos de cuenta diferentes entre los que puede elegir: Lite, Pago según uso y Suscripción. Puede utilizar cualquier tipo de cuenta para empezar en {{site.data.keyword.Bluemix_notm}}, elija aquel que se adapte mejor a sus necesidades.
 {:shortdesc}
 
 ## Comparación de cuentas
@@ -57,14 +57,13 @@ Se estará preguntando qué se ofrece en una cuenta Lite. Consulte la siguiente 
    * Soporte básico de {{site.data.keyword.Bluemix_notm}} de forma gratuita. El soporte básico se proporciona para entornos de no producción o cargas de trabajo donde las gravedades tradicionales no se utilizan y los tiempos de respuesta específicos no están estipulados.
    * Recibirá notificaciones de correo electrónico sobre el estado de la cuenta y los límites de la cuota.
    * Sus apps de Cloud Foundry pueden acceder hasta un máximo de 256 MB de memoria de tiempo de ejecución gratuita e instantánea.
-   * Puede trabajar con un clúster de Kubernetes con 2 CPU y 4 GB de RAM.
    * Puede suministrar una instancia de cualquier servicio en el [catálogo de {{site.data.keyword.Bluemix_notm}}![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} que tenga un plan Lite.
    * Después de 10 días de inactividad de desarrollo, sus apps entrarán en suspensión. Puede empezar a trabajar en apps nuevas sin tener que preocuparse por llegar a los límites de cuota de memoria.
    * Después de 30 días de inactividad de desarrollo, se suprimirán las instancias de servicio con planes Lite. De esta forma, no tiene que preocuparse de la supresión de instancias inactivas antes de crear nuevas.
 
 ### Actualización de la cuenta
 
-Cuando esté preparado para crecer, actualice a una cuenta de pago según uso y pague sólo por lo que utilice más allá de las concesiones gratuitas. Vaya a **Gestionar** > **Facturación y utilización ** > **Facturación** en la consola y pulse **Añadir tarjeta de crédito**. 
+Cuando esté preparado para crecer, actualice a una cuenta de pago según uso y pague sólo por lo que utilice más allá de las concesiones gratuitas. Después de la actualización, puede continuar utilizando las instancias que ha creado con su cuenta Lite. Vaya a **Gestionar** > **Facturación y utilización ** > **Facturación** en la consola y pulse **Añadir tarjeta de crédito**. 
 
 ## Cuentas facturables
 {: #billableacts}
@@ -84,7 +83,7 @@ Si enlaza su cuenta facturable de {{site.data.keyword.Bluemix_notm}} con una cue
 
 ### Cuenta de Pago según uso
 
-Con una cuenta de Pago según uso, puede crear varios grupos de recursos para gestionar fácilmente la cuota y ver el uso de facturación de un conjunto de recursos.Puede optar a concesiones de tiempo de ejecución y de servicio gratuitas. Si utiliza más que la concesión gratuita, recibirá una factura mensual de {{site.data.keyword.Bluemix_notm}}. La factura estará en dólares de Estados Unidos (USD) y detallará los cargos de recursos.
+Con una cuenta de Pago según uso, puede crear varios grupos de recursos para gestionar fácilmente la cuota y ver el uso de facturación de un conjunto de recursos. Puede optar a concesiones de tiempo de ejecución y de servicio gratuitas. Si utiliza más que la concesión gratuita, recibirá una factura mensual de {{site.data.keyword.Bluemix_notm}}. La factura estará en dólares de Estados Unidos (USD) y detallará los cargos de recursos.
 
 En muchos países y regiones, puede registrarse para una cuenta Pago según uso desde la consola de {{site.data.keyword.Bluemix_notm}}. Tras proporcionar la información de la tarjeta de crédito y la facturación, aceptar los términos y condiciones y enviar una solicitud de cuenta. A continuación, se validará su tarjeta de crédito. También recibirá un correo electrónico de confirmación sobre la información de la cuenta. Transcurridos algunos minutos tras la recepción del correo electrónico de confirmación, puede volver a la consola para continuar creando sus apps. 
 

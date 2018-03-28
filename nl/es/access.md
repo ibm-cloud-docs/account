@@ -28,7 +28,7 @@ Puede que desee otorgar permisos a otros usuarios de la cuenta mediante los role
 |:-----------------|:-----------------|
 | Visor | Puede ver los servicios privados, aunque la cuenta no se haya incluido, pero no puede realizar cambios. |
 | Editor | Puede hacer cambios en los metadatos de objeto pero no puede cambiar la visibilidad. |
-| Administrador | Puede cambiar la visibilidad y los metadatos de objeto. |
+| Administrador | Puede cambiar la visibilidad y los metadatos de objeto.  |
 {: caption="Tabla 1. Roles y acciones de gestión de plataforma de ejemplo para el servicio de catálogo" caption-side="top"}
 
 Para obtener instrucciones detalladas sobre la asignación de acceso a los usuarios en su cuenta, vaya a la documentación de [Acceso a recursos](/docs/iam/mngiam.html#iammanidaccser#resourceaccess).

@@ -34,7 +34,7 @@ Siga los pasos siguientes para cambiar el nombre de la organización:
 
 ### Supresión de una organización
 
-Cuando se suprime una organización, todos los espacios, apps y servicios dentro de la organización se suprimen. Asegúrese de tener en cuenta que las operaciones de supresión no se pueden revertir. 
+Cuando se suprime una organización, todos los espacios, apps y servicios dentro de la organización se suprimen. Asegúrese de tener en cuenta que las operaciones de supresión no se pueden revertir. Debe ponerse en contacto con el equipo de soporte para suprimir una organización.
 
 ### Supresión de un espacio
 
@@ -88,7 +88,7 @@ Para ver la cuota utilizada y asignada a una organización, realice los pasos si
  * COMPARTICIONES DE ARCHIVOS
 8. Pulse **Servidores virtuales** para ver las máquinas virtuales.
 
-Los contenedores no están disponibles en la región Sídney de {{site.data.keyword.Bluemix_notm}}.
+Los contenedores no están disponibles en la región Sídney de {{site.data.keyword.Bluemix_notm}}. 
 {: tip}
 
 Para obtener más información sobre los contenedores, consulte [Cuota](/docs/containers/container_planning.html#container_planning_quota) en la documentación de Contenedores.

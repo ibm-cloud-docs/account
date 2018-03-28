@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-03-08"
 
 ---
 
@@ -48,9 +48,9 @@ puede utilizar organizaciones para habilitar la colaboración entre usuarios y p
    * Puede agrupar un conjunto de espacios, apps, servicios, dominios, rutas y usuarios conjuntamente en organizaciones. 
    * Puede gestionar el acceso a los espacios y a las organizaciones usuario a usuario. 
 
-Cuando se crea una organización, el nombre debe ser exclusivo en {{site.data.keyword.Bluemix_notm}}. Si el nombre de la organización ya lo utiliza otro usuario local, dedicado o público de {{site.data.keyword.Bluemix_notm}}, debe especificar un nuevo nombre. Después de crear la organización, se le asigna automáticamente el permiso *Gestor de organización*, lo que le permite editar el nombre de la organización, añadir usuarios y crear o suprimir espacios en la organización.
+Cuando se crea una organización, el nombre debe ser exclusivo en {{site.data.keyword.Bluemix_notm}}. Si el nombre de la organización ya lo utiliza otro usuario local, dedicado o público de {{site.data.keyword.Bluemix_notm}}, debe especificar un nuevo nombre. Después de crear la organización, se le asigna automáticamente el permiso *Gestor de organización*, lo que le permite editar el nombre de la organización, añadir usuarios y crear o suprimir espacios en la organización. Si tiene una cuenta facturable, puede crear tantas organizaciones como necesite. Sin embargo, para una cuenta Lite, sólo puede tener una organización. 
 
-Puede ponerse en contacto con el equipo de soporte para suprimir una organización. Cuando se suprime una organización, todos los espacios, apps y servicios dentro de la organización se suprimen.
+Puede contactar con el soporte si necesita suprimir una organización. Cuando se suprime una organización, todos los espacios, apps y servicios dentro de la organización se suprimen.
 
 Los siguientes [roles de usuario](/docs/iam/users_roles.html#userrolesinfo) pueden asignarse a usuarios en una organización. A todos los usuarios invitados a la cuenta se les asigna el rol de Auditor de forma predeterminada.
 
@@ -65,7 +65,6 @@ Puede crear una organización completando los siguientes pasos:
 3. Escriba el nombre de la organización.
 4. Pulse **Añadir**.
 
-<!-- Add info on Manage infrastructure option under a space -->
 
 ## Creación de espacios
 {: #spaceinfo}

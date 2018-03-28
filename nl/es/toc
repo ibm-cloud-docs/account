@@ -26,7 +26,8 @@ Gestión de la cuenta
         access.md
         include.md
         exclude.md
-        owners.md{: .navgroup-end}
+        owners.md
+    {: .navgroup-end}
 
     {: .navgroup id="help"}
     notifications.md

@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-08"
+lastupdated: "2018-02-19"
 
 ---
 
@@ -15,12 +15,13 @@ lastupdated: "2018-02-08"
 {:tip: .tip}
 {:new_window: target="_blank"}
 
-# Cómo enlazar las cuentas de {{site.data.keyword.Bluemix_notm}} y SoftLayer para consolidar la facturación
+# Consolidación de la facturación para cuentas enlazadas
 {: #unifybillaccounts}
 
-Cuando enlace las cuentas de {{site.data.keyword.Bluemix_notm}} y Softlayer, recibirá una factura única de {{site.data.keyword.Bluemix_notm}}. Si tiene una cuenta de {{site.data.keyword.Bluemix_notm}}, la facturación a través de {{site.data.keyword.Bluemix_notm}} para los recursos de infraestructura será efectiva para el nuevo ciclo de facturación que empieza una vez que se hayan enlazado las cuentas.{: shortdesc}
+Cuando enlace las cuentas de {{site.data.keyword.Bluemix_notm}} y Softlayer, recibirá una factura única de {{site.data.keyword.Bluemix_notm}}. Si tiene una cuenta de {{site.data.keyword.Bluemix_notm}}, la facturación a través de {{site.data.keyword.Bluemix_notm}} para los recursos de infraestructura será efectiva para el nuevo ciclo de facturación que empieza una vez que se hayan enlazado las cuentas.
+{: shortdesc}
 
-Todas las cuentas vinculadas en {{site.data.keyword.Bluemix_notm}} deben ser cuentas de Pago según uso. Puede crear una nueva cuenta de Pago según uso, enlazar a una cuenta de Pago según uso existente o enlazar con una cuenta de prueba existente, que se actualizará a una cuenta de Pago según uso. No puede enlazar las cuentas de Suscripción.
+Todas las cuentas enlazadas en {{site.data.keyword.Bluemix_notm}} deben ser cuentas de pagos según uso o de suscripción.
 {: tip}
 
 ## Facturación para el uso de {{site.data.keyword.Bluemix_notm}} cuando las cuentas están enlazadas
