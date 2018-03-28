@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-03-09"
+lastupdated: "2018-03-28"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-03-09"
 # FAQs
 {: #accountfaqs}
 
-## Which {{site.data.keyword.Bluemix_notm}} regions can I use?
+## Which Cloud Foundry regions can I use?
 {: #whichregions}
 
 In a Lite account, you can work in only one region. In a Pay-As-You-Go or Subscription account, you can access all regions.
