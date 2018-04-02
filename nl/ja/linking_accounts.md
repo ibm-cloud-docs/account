@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-08"
+lastupdated: "2018-02-19"
 
 ---
 
@@ -15,14 +15,13 @@ lastupdated: "2018-02-08"
 {:tip: .tip}
 {:new_window: target="_blank"}
 
-# 請求処理を統合するための {{site.data.keyword.Bluemix_notm}} アカウントと SoftLayer アカウントのリンク
+# リンクされたアカウントの請求の統合
 {: #unifybillaccounts}
 
 {{site.data.keyword.Bluemix_notm}} アカウントと Softlayer アカウントをリンクすると、単一の {{site.data.keyword.Bluemix_notm}} 請求書を受け取ることになります。 既存の {{site.data.keyword.Bluemix_notm}} アカウントがある場合、インフラストラクチャー・リソースに対する {{site.data.keyword.Bluemix_notm}} からの請求は、両方のアカウントをリンクした後に開始される新しい請求処理サイクルで有効になります。
 {: shortdesc}
 
-{{site.data.keyword.Bluemix_notm}} でリンクされるアカウントはすべて、従量課金 (PAYG) アカウントでなければなりません。 新しい従量課金 (PAYG) アカウントを作成するか、既存の従量課金 (PAYG) アカウントをリンクするか、または既存のトライアル・アカウントをリンクできます (既存のトライアル・アカウントは、従量課金 (PAYG) アカウントにアップグレードされます)。 サブスクリプション・アカウントはリンクできません。
-{: tip}
+{{site.data.keyword.Bluemix_notm}} でリンクされるアカウントはすべて、従量課金 (PAYG) アカウントまたはサブスクリプション・アカウントでなければなりません。{: tip}
 
 ## アカウントがリンクされている場合の {{site.data.keyword.Bluemix_notm}} 使用量に対する請求処理
 {: #linkedbilling}
