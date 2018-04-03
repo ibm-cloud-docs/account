@@ -37,7 +37,7 @@ Immetti il seguente comando per consentire a un account di visualizzare la tua r
 
 Dopo l'indicatore includes-add, puoi aggiungere un elenco separato da virgole di e-mail o ID associati agli account.
 
-Una volta eseguito il comando, il processo per includere la risorsa richiede 30 minuti.  Dopo 30 minuti, scollegati e torna al tuo account per vedere la risorsa inclusa.
+Una volta eseguito il comando, il processo per includere la risorsa richiede 30 minuti. Dopo 30 minuti, scollegati e torna al tuo account per vedere la risorsa inclusa.
 
 ## Rimuovi un account dall'elenco di inclusione
 {: #remove-exclude}

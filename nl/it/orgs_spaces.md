@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-03-08"
 
 ---
 
@@ -49,9 +49,9 @@ In {{site.data.keyword.Bluemix_notm}}, puoi utilizzare le organizzazioni per abi
    * Puoi raggruppare un insieme di spazi, applicazioni, servizi, domini, rotte e utenti nelle organizzazioni. 
    * Puoi gestire l'accesso agli spazi e alle organizzazioni in base ai singoli utenti. 
 
-Quando crei un'organizzazione, il nome deve essere univoco in {{site.data.keyword.Bluemix_notm}}. Se il nome dell'organizzazione è già utilizzato da un altro utente di {{site.data.keyword.Bluemix_notm}} pubblico, dedicato o locale, devi specificare un nuovo nome. Dopo aver creato l'organizzazione, ti viene assegnata automaticamente l'autorizzazione di *Gestore organizzazione*, che ti consente di modificare il nome dell'organizzazione, aggiungere utenti e creare o eliminare spazi nell'organizzazione.
+Quando crei un'organizzazione, il nome deve essere univoco in {{site.data.keyword.Bluemix_notm}}. Se il nome dell'organizzazione è già utilizzato da un altro utente di {{site.data.keyword.Bluemix_notm}} pubblico, dedicato o locale, devi specificare un nuovo nome. Dopo aver creato l'organizzazione, ti viene assegnata automaticamente l'autorizzazione di *Gestore organizzazione*, che ti consente di modificare il nome dell'organizzazione, aggiungere utenti e creare o eliminare spazi nell'organizzazione. Se hai un account fatturabile, puoi creare quante organizzazioni vuoi. Tuttavia, per un account Lite, puoi avere una sola organizzazione.  
 
-Per eliminare un'organizzazione, puoi contattare il supporto. Quando elimini un'organizzazione, tutti gli
+Puoi contattare il supporto, se devi eliminare un'organizzazione. Quando elimini un'organizzazione, tutti gli
 spazi e i servizi e tutte le applicazioni al suo interno vengono eliminati.
 
 In un'organizzazione, è possibile assegnare i seguenti [ruoli utente](/docs/iam/users_roles.html#userrolesinfo). A tutti gli utenti invitati all'account viene assegnato il ruolo di revisore per impostazione predefinita.
@@ -67,7 +67,6 @@ Puoi creare un'organizzazione completando la seguente procedura:
 3. Immetti il nome dell'organizzazione.
 4. Fai clic su **Aggiungi**.
 
-<!-- Add info on Manage infrastructure option under a space -->
 
 ## Creazione di spazi
 {: #spaceinfo}

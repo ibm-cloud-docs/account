@@ -28,7 +28,7 @@ Puoi utilizzare la CLI o l'interfaccia utente di Identità e accesso per determi
 ## Passo 1: trova una risorsa
 {: #find-resource}
 
-Immetti `bx catalog search <service-id or service-name>` per cercare una risorsa. Sostituisci service-id o service-name con un nome o un ID risorsa. Trova l'ID o il nome del servizio che desideri nascondere nelle informazioni che vengono restituite. 
+Immetti `bx catalog search <service-id or service-name>` per cercare una risorsa. Sostituisci service-id o service-name con un nome o un ID risorsa. Trova l'ID o il nome del servizio che desideri nascondere nelle informazioni che vengono restituite.
 
 ## Passo 2: ottieni i dettagli di quel servizio
 

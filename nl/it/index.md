@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-15"
+lastupdated: "2018-03-12"
 
 ---
 
@@ -57,14 +57,13 @@ Potresti chiederti cosa offra un account Lite. Controlla il seguente elenco di f
    * Supporto {{site.data.keyword.Bluemix_notm}} di base gratuito. Il supporto di base viene fornito per ambienti non di produzione o carichi di lavoro in cui non vengono utilizzate le severità tradizionali e non sono previsti specifici tempi di risposta.
    * Ricevi notifiche e-mail relative allo stato del tuo account e ai limiti di quota.
    * Le tue applicazioni Cloud Foundry possono accedere fino a 256 MB di memoria di runtime istantanea gratuita.
-   * Puoi lavorare con un cluster Kubernetes con 2 CPU e 4 GB di RAM.
    * Puoi eseguire il provisioning di un'istanza di qualsiasi servizio nel [catalogo {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} che dispone di un piano Lite.
    * Dopo 10 giorni senza attività di sviluppo, le tue applicazioni vengono sospese. Puoi iniziare a lavorare su nuove applicazioni senza doverti preoccupare di superare i limiti di quota della memoria.
    * Dopo 30 giorni senza attività di sviluppo, le tue istanze del servizio con i piani Lite vengono eliminate. In questo modo, non devi gestire l'eliminazione di istanze inattive prima di crearne di nuove.
 
 ### Aggiornamento del tuo account
 
-Quando sei pronto a passare alla fase successiva, esegui l'aggiornamento a un account Pagamento a consumo e paga solo per ciò che usi oltre le franchigie. Nella console, vai a **Gestisci** > **Fatturazione e utilizzo** > **Fatturazione** e fai clic su **Aggiugni carta di credito**. 
+Quando sei pronto a passare alla fase successiva, esegui l'aggiornamento a un account Pagamento a consumo e paga solo per ciò che usi oltre le franchigie. Dopo aver eseguito l'upgrade, puoi continuare a utilizzare tutte le istanze che hai creato con il tuo account Lite. Nella console, vai a **Gestisci** > **Fatturazione e utilizzo** > **Fatturazione** e fai clic su **Aggiungi carta di credito**. 
 
 ## Account fatturabili
 {: #billableacts}
@@ -88,7 +87,7 @@ Con un account Pagamento a consumo, puoi creare più gruppi di risorse per gesti
 
 In molti paesi e regioni, puoi registrarti per un account Pagamento a consumo dalla console {{site.data.keyword.Bluemix_notm}}. Una volta che hai fornito le informazioni per la fatturazione e quelle relative alla tua carta di credito, accetta i termini e le condizioni e inoltra la richiesta di account. La tua carta di credito verrà quindi convalidata. Riceverai anche un'e-mail di conferma relativa alle informazioni dell'account. Qualche minuto dopo aver ricevuto l'e-mail di conferma, puoi tornare alla console per continuare a creare le tue applicazioni. 
 
-Se non è possibile elaborare la tua richiesta online per il tuo paese o la tua regione, contatta il [Supporto {{site.data.keyword.Bluemix_notm}} ](https://ibm.biz/bluemixsupport){: new_window} ![Icona link esterno](../icons/launch-glyph.svg). Dopo aver eseguito l'accesso al Portla del servizio {{site.data.keyword.Bluemix_notm}}, fai clic su **Contatta il supporto** e seleziona l'opzione **Fatturazione, Account o Accesso**.
+Se non è possibile elaborare la tua richiesta online per il tuo paese o la tua regione, contatta il [Supporto {{site.data.keyword.Bluemix_notm}} ](https://ibm.biz/bluemixsupport){: new_window} ![Icona link esterno](../icons/launch-glyph.svg). Dopo aver eseguito l'accesso al portale del servizio {{site.data.keyword.Bluemix_notm}}, fai clic su **Contatta il supporto** e seleziona l'opzione **Fatturazione, Account o Accesso**.
 
 Puoi convertire il tuo account Pagamento a consumo in un account Sottoscrizione in qualsiasi momento. Per ulteriori dettagli, contatta il settore [Vendite di {{site.data.keyword.Bluemix_notm}} ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icona link esterno](../icons/launch-glyph.svg).
 {: tip}
@@ -153,7 +152,7 @@ Quando la prova gratuita scade 30 giorni dopo la tua registrazione, le applicazi
 
 Per riavviare le tue applicazioni, converti il tuo account in un account fatturabile fornendo le informazioni della tua carta di credito per un account Pagamento a consumo o creando un account Sottoscrizione. Dopo, puoi continuare a utilizzare le franchigie relative a elaborazione e servizi. Paghi solo per l'utilizzo di servizi, contenitori e runtime non incluso nella tua franchigia mensile.
 
-  * Per eseguire l'aggiornamento a un account Pagamento a consumo, nella console vai a **Gestisci** > **Fatturazione e utilizzo** > **Fatturazione** e fai clic su **Aggiugni carta di credito**.
+  * Per eseguire l'aggiornamento a un account Pagamento a consumo, nella console vai a **Gestisci** > **Fatturazione e utilizzo** > **Fatturazione** e fai clic su **Aggiungi carta di credito**.
   * Per registrare un account Sottoscrizione, contatta il settore [Vendite di {{site.data.keyword.Bluemix_notm}} ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icona link esterno](../icons/launch-glyph.svg).
 
 Se non converti il tuo account dopo la scadenza della versione di prova gratuita, le tue applicazioni e i tuoi servizi verranno rimossi dopo 30 giorni. Tuttavia, il tuo account non viene eliminato e puoi effettuare l'accesso e l'aggiornamento a un account fatturabile in qualsiasi momento. Inoltre, riceverai delle notifiche e-mail per ricordarti di creare un account fatturabile ed evitare di perdere le tue impostazioni dell'applicazione e configurazioni del servizio. Se preferisci non ricevere le notifiche da {{site.data.keyword.Bluemix_notm}}, puoi annullare la sottoscrizione in qualsiasi momento.

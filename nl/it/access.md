@@ -38,7 +38,7 @@ Per istruzioni dettagliate sull'assegnazione dell'accesso agli utenti nel tuo ac
 
 Quando vieni aggiunto all'account di un'altra persona, ti potrebbero delegare determinati livelli di accesso in modo da poter visualizzare le risorse private che sono state aggiunte all'account. Il proprietario dell'account ti potrebbe anche delegare la possibilità di gestire chi vede le risorse pubbliche nel catalogo dell'account. Non hai questo accesso per impostazione predefinita. Il proprietario dell'account deve concederti un ruolo IAM che ti consenta di avere accesso per completare queste attività di gestione delle risorse dell'account.
 
-Puoi utilizzare la CLI o l'interfaccia utente di Identità e accesso per determinare se disponi dell'accesso per consentire a utenti specifici di visualizzare una risorsa privata che è stata aggiunta all'account. 
+Puoi utilizzare la CLI o l'interfaccia utente di Identità e accesso per determinare se disponi dell'accesso per consentire a utenti specifici di visualizzare una risorsa privata che è stata aggiunta all'account.
 
 Per utilizzare l'interfaccia utente di Identità e accesso, completa la seguente procedura:
 

@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-08"
+lastupdated: "2018-02-19"
 
 ---
 
@@ -15,13 +15,13 @@ lastupdated: "2018-02-08"
 {:tip: .tip}
 {:new_window: target="_blank"}
 
-# Collegamento dei tuoi account {{site.data.keyword.Bluemix_notm}} e SoftLayer per consolidare la fatturazione
+# Consolidamento della fatturazione per gli account collegati 
 {: #unifybillaccounts}
 
 Quando colleghi gli account {{site.data.keyword.Bluemix_notm}} e Softlayer, riceverai un'unica fattura {{site.data.keyword.Bluemix_notm}}. Se hai un account {{site.data.keyword.Bluemix_notm}} esistente, la fatturazione tramite {{site.data.keyword.Bluemix_notm}} per le risorse dell'infrastruttura parte dal nuovo ciclo di fatturazione che inizia dopo il collegamento degli account.
 {: shortdesc}
 
-Tutti gli accoint collegati in {{site.data.keyword.Bluemix_notm}} devono essere del tipo Pagamento a consumo. Puoi creare un nuovo account Pagamento a consumo, collegare un account Pagamento a consumo esistente oppure collegare un account di prova esistente, che viene quindi aggiornato a un account Pagamento a consumo. Non puoi collegare gli account Sottoscrizione.
+Tutti gli account collegati in {{site.data.keyword.Bluemix_notm}} devono essere del tipo Pagamento a consumo o Sottoscrizione.
 {: tip}
 
 ## Fatturazione per l'utilizzo di {{site.data.keyword.Bluemix_notm}} con gli account collegati

@@ -35,7 +35,7 @@ Per rinominare la tua organizzazione, completa la seguente procedura:
 ### Eliminazione di un'organizzazione
 
 Quando elimini un'organizzazione, tutti gli
-spazi e i servizi e tutte le applicazioni al suo interno vengono eliminati. Ricorda che le operazioni di eliminazione non possono essere annullate. 
+spazi e i servizi e tutte le applicazioni al suo interno vengono eliminati. Ricorda che le operazioni di eliminazione non possono essere annullate. Per eliminare un'organizzazione, devi contattare il supporto. 
 
 ### Eliminazione di uno spazio
 

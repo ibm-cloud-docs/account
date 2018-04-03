@@ -18,7 +18,7 @@ lastupdated: "2018-01-10"
 # Accesso alle risorse dell'infrastruttura
 {: #accessinfrastructure}
 
-Puoi utilizzare le risorse dell'infrastruttura quando crei le tue applicazioni nell'ambiente pubblico {{site.data.keyword.Bluemix_notm}}.
+Puoi utilizzare le risorse dell'infrastruttura quando crei le tue applicazioni nell'ambiente pubblico {{site.data.keyword.Bluemix_notm}}. 
 {: shortdesc}
 
 Utilizza le risorse dell'infrastruttura per creare ambienti virtuali, fornire archiviazione, stabilire una rete e proteggere il tuo ambiente. Per ulteriori informazioni, vedi [Panoramica della piattaforma](/docs/overview/ibm-cloud.html). 
@@ -36,4 +36,4 @@ Per accedere alle risorse dell'infrastruttura, devi avere un account Pagamento a
 Quando richiedi di aggiornare il tuo account, le informazioni da te immesse vengono controllate e devono essere approvate prima di poter accedere alle risorse dell'infrastruttura. Accertati che le informazioni di contatto siano corrette perché il team di supporto {{site.data.keyword.Bluemix_notm}} potrebbe contattarti per confermare alcuni dettagli.
 {: tip}
 
-Se hai domande o riscontri dei problemi a cui non riesci a trovare una risposta, il team di supporto {{site.data.keyword.Bluemix_notm}} sarà lieto di aiutarti. Dopo aver effettuato l'accesso al tuo account, fai clic su **Supporto** > **Aggiugni ticket** e completa i dettagli pertinenti. Puoi ottenere assistenza anche utilizzando il link elencato nella pagina [Supporto {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
+Se hai domande o riscontri dei problemi a cui non riesci a trovare una risposta, il team di supporto {{site.data.keyword.Bluemix_notm}} sarà lieto di aiutarti. Dopo aver effettuato l'accesso al tuo account, fai clic su **Supporto** > **Aggiungi ticket** e completa i dettagli pertinenti. Puoi ottenere assistenza anche utilizzando il link elencato nella pagina [Supporto {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
