@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-03-08"
 
 ---
 
@@ -45,9 +45,9 @@ In {{site.data.keyword.Bluemix_notm}} können Sie Organisationen verwenden, um d
    * Sie können eine Reihe von Bereichen, Apps, Services, Domänen, Routen und Benutzern in Organisationen zusammen gruppieren. 
    * Sie können den Zugriff auf die Bereiche und Organisationen auf Benutzerbasis verwalten. 
 
-Wenn Sie eine Organisation erstellen, muss ihr Name in {{site.data.keyword.Bluemix_notm}} eindeutig sein. Falls der Organisationsname bereits von einem anderen Benutzer von {{site.data.keyword.Bluemix_notm}} Public, Dedicated oder Local verwendet wird, müssen Sie einen neuen Namen angeben. Nachdem Sie die Organisation erstellt haben, wird Ihnen automatisch die Berechtigung *Organisationsmanager* zugeordnet, die es Ihnen ermöglicht, den Organisationsnamen zu bearbeiten, Benutzer hinzuzufügen und Bereiche in der Organisation zu erstellen oder zu löschen.
+Wenn Sie eine Organisation erstellen, muss ihr Name in {{site.data.keyword.Bluemix_notm}} eindeutig sein. Falls der Organisationsname bereits von einem anderen Benutzer von {{site.data.keyword.Bluemix_notm}} Public, Dedicated oder Local verwendet wird, müssen Sie einen neuen Namen angeben. Nachdem Sie die Organisation erstellt haben, wird Ihnen automatisch die Berechtigung *Organisationsmanager* zugeordnet, die es Ihnen ermöglicht, den Organisationsnamen zu bearbeiten, Benutzer hinzuzufügen und Bereiche in der Organisation zu erstellen oder zu löschen. Wenn Sie über ein gebührenpflichtiges Konto verfügen, können Sie so viele Organisationen erstellen, wie Sie brauchen. Ein Lite-Konto lässt jedoch nur eine Organisation zu.  
 
-Sie können Unterstützung anfordern, um eine Organisation zu löschen. Wenn Sie eine Organisation löschen, werden alle Bereiche, Anwendungen und Services innerhalb der Organisation gelöscht.
+Sie können Unterstützung anfordern, wenn Sie eine Organisation löschen müssen. Wenn Sie eine Organisation löschen, werden alle Bereiche, Anwendungen und Services innerhalb der Organisation gelöscht.
 
 Die folgenden [Benutzerrollen](/docs/iam/users_roles.html#userrolesinfo) können Benutzern in einer Organisation zugeordnet werden. Allen Benutzern, die zu dem Konto eingeladen werden, wird standardmäßig die Rolle "Auditor" zugewiesen.
 
@@ -62,7 +62,6 @@ Sie können eine Organisation erstellen, indem Sie die folgenden Schritte ausfü
 3. Geben Sie den Namen der Organisation ein.
 4. Klicken Sie auf **Hinzufügen**.
 
-<!-- Add info on Manage infrastructure option under a space -->
 
 ## Bereiche erstellen
 {: #spaceinfo}

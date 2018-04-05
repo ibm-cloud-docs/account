@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-08"
+lastupdated: "2018-02-19"
 
 ---
 
@@ -15,13 +15,13 @@ lastupdated: "2018-02-08"
 {:tip: .tip}
 {:new_window: target="_blank"}
 
-# Ihre {{site.data.keyword.Bluemix_notm}}- und SoftLayer-Konten zur Konsolidierung der Rechnungsstellung verknüpfen
+# Rechnungsstellung für verknüpfte Konten konsolidieren
 {: #unifybillaccounts}
 
 Wenn Sie Ihr {{site.data.keyword.Bluemix_notm}}- und Ihr Softlayer-Konto miteinander verknüpfen, erhalten Sie nur eine {{site.data.keyword.Bluemix_notm}}-Abrechnung. Wenn Sie über ein bestehendes {{site.data.keyword.Bluemix_notm}}-Konto verfügen, erfolgt die Rechnungsstellung für Infrastrukturressourcen über {{site.data.keyword.Bluemix_notm}} ab dem neuen Abrechnungszyklus, der nach dem Verknüpfen der Konten beginnt.
 {: shortdesc}
 
-Alle verknüpften Konten in {{site.data.keyword.Bluemix_notm}} müssen nutzungsabhängige Konten sein. Sie können ein nutzungsabhängiges Konto erstellen, ein bestehendes nutzungsabhängiges Konto oder ein bestehendes Testkonto verwenden, das dann auf ein nutzungsabhängiges Konto aktualisiert wird. Abonnementkonten können nicht verknüpft werden.
+Alle verknüpften Konten in {{site.data.keyword.Bluemix_notm}} müssen nutzungsabhängige oder Abonnementkonten sein.
 {: tip}
 
 ## Rechnungsstellung für {{site.data.keyword.Bluemix_notm}}-Nutzung bei verknüpften Konten

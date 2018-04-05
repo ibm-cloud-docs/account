@@ -34,7 +34,7 @@ Führen Sie die folgenden Schritte aus, um Ihre Organisation umzubenennen:
 
 ### Organisation löschen
 
-Wenn Sie eine Organisation löschen, werden alle Bereiche, Anwendungen und Services innerhalb der Organisation gelöscht. Beachten Sie hierbei unbedingt, dass das Löschen von Operationen nicht rückgängig gemacht werden kann. 
+Wenn Sie eine Organisation löschen, werden alle Bereiche, Anwendungen und Services innerhalb der Organisation gelöscht. Beachten Sie hierbei unbedingt, dass das Löschen von Operationen nicht rückgängig gemacht werden kann. Sie müssen Unterstützung anfordern, um eine Organisation zu löschen. 
 
 ### Bereich löschen
 

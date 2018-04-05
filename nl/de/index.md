@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-15"
+lastupdated: "2018-03-12"
 
 ---
 
@@ -57,14 +57,13 @@ Ein Lite-Konto umfasst das nachfolgend beschriebene Angebot. Die folgende Liste 
    * {{site.data.keyword.Bluemix_notm}} Basic Support ist kostenlos. Basic Support wird für Nicht-Produktionsumgebungen oder -Workloads bereitgestellt, bei denen keine konventionellen Prioritäten verwendet und spezielle Reaktionszeiten vereinbart werden.
    * Sie erhalten E-Mail-Benachrichtigungen über Ihren Kontostatus und Ihre Kontingentbeschränkungen.
    * Ihre Cloud Foundry-Apps können auf bis zu 256 MB an freiem, sofort verfügbarem Laufzeitspeicher zugreifen.
-   * Sie haben die Möglichkeit, mit einem Kubernetes-Cluster mit 2 CPUs und 4 GB RAM zu arbeiten.
    * Sie können eine Instanz jedes Service im [{{site.data.keyword.Bluemix_notm}}-Katalog einrichten![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window}, für den ein Lite-Plan besteht.
    * Nach 10 Tagen ohne Entwicklungstätigkeit werden Ihre Apps inaktiviert. Sie können mit der Arbeit an neuen Apps beginnen, ohne sich Gedanken über begrenzten Speicher machen zu müssen.
    * Nach 30 Tagen ohne Entwicklungstätigkeit werden Ihre Serviceinstanzen mit den Lite-Plänen gelöscht. Das heißt, Sie müssen sich nicht um das Löschen inaktiver Instanzen kümmern, bevor Sie neue Instanzen erstellen.
 
 ### Upgrade für Konto durchführen
 
-Wenn Sie Ihre Umgebung später ausbauen möchten, führen Sie ein Upgrade auf ein nutzungsabhängiges Konto durch und zahlen Sie nur das, was Sie über die Gratisleistungen hinaus nutzen. Rufen Sie in der Konsole die Seite **Verwalten** > **Abrechnung und Nutzung** > **Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**. 
+Wenn Sie Ihre Umgebung später ausbauen möchten, führen Sie ein Upgrade auf ein nutzungsabhängiges Konto durch und zahlen Sie nur das, was Sie über die Gratisleistungen hinaus nutzen. Nach dem Upgrade können Sie die mit Ihrem Lite-Konto erstellten Instanzen weiterhin verwenden. Rufen Sie in der Konsole die Seite **Verwalten** > **Abrechnung und Nutzung** > **Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**. 
 
 ## Gebührenpflichtige Konten
 {: #billableacts}
