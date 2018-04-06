@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-04-06"
 
 
 ---
@@ -20,17 +20,17 @@ lastupdated: "2018-01-10"
 Sign up to get notified about your {{site.data.keyword.Bluemix}} account spending limits and  maintenance updates to the Public regions of the {{site.data.keyword.Bluemix_notm}} platform. Spending notifications are available only for Pay-As-You-Go and Subscription account owners.
 {:shortdesc}
 
-You can set email notifications for {{site.data.keyword.Bluemix_notm}} incidents and planned maintenance, and you can set spending notifications that alert you when your account is close to the spending threshold that you specified. Go to **Manage > Account > Platform Notifications** to set different notification types for your account.
+You can set email notifications for {{site.data.keyword.Bluemix_notm}} incidents and planned maintenance. You can also set spending notifications that alert you when your account is close to the spending threshold that you specified. Go to **Manage > Account > Platform Notifications** to set different notification types for your account.
 
 ## Setting platform notifications
 {: #platform}
 
-From the console menu bar, click **Manage > Account > Platform Notifications** to set email notifications for {{site.data.keyword.Bluemix_notm}} incidents and planned maintenance. You can select or clear each option to enable or disable the email notifications.
+Click **Manage > Account > Platform Notifications** to set email notifications for {{site.data.keyword.Bluemix_notm}} incidents and planned maintenance. You can select or clear each option to enable or disable the email notifications.
 
 ## Setting spending notifications
 {: #spending}
 
-If you are a Pay-As-You-Go or Subscription account owner, you can set up email spending notifications. Set notifications for total account, runtime, container, and service spending, as well as spending for individual services, excluding third-party services. You receive notifications when you reach 80%, 90%, and 100% of the spending thresholds that you specify. You can edit each spending notification at any time as your needs change.
+If you are a Pay-As-You-Go or Subscription account owner, you can set up email spending notifications. Set notifications for total account, runtime, container, and service spending, or spending for individual services, excluding third-party services. You receive notifications when you reach 80%, 90%, and 100% of the spending thresholds that you specify. You can edit each spending notification at any time as your needs change.
 
   1. From the console menu bar, click **Manage > Account > Platform Notifications > Spending**.
   2. Enter a numeric value to set the threshold for triggering a specific type of spending notification:
