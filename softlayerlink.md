@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2018
 
-lastupdated: "2018-03-05"
+lastupdated: "2018-04-09"
 
 ---
 
@@ -57,12 +57,29 @@ If you are a new customer, you're asked for your existing IBMid or to create a n
 
 To resolve any problems with logging in with your IBMid, see [Troubleshooting for accessing {{site.data.keyword.Bluemix_notm}}](/docs/troubleshoot/ts_accessing.html#accessing).
 
-## Linking IBMid user accounts
-{: #link_user_accounts}
 
-After your user accounts switch to IBMid authentication, resellers and distributors can link SoftLayer accounts and {{site.data.keyword.Bluemix_notm}} accounts to make use of combined infrastructure as a service (IaaS) and platform as a service (PaaS) resources. You can then access IaaS resources from the {{site.data.keyword.BluSoftlayer_full}} infrastructure customer portal and PaaS resources from the  {{site.data.keyword.Bluemix_notm}} console all from a single log in. Linking your accounts also provides you with a single bill for all of the PaaS and IaaS resources that you use.
+## Linking IBMid accounts
+{: #link_accounts}
 
-To link accounts, you must be a SoftLayer master user. The IBMid that is the master user of the account must be the owner of the {{site.data.keyword.Bluemix_notm}} platform account that you're linking to. Be sure to review the following important notes to link accounts:
+After accounts are switched to IBMid accounts, you can link SoftLayer accounts and {{site.data.keyword.Bluemix_notm}} accounts to use combined infrastructure as a service (IaaS) and platform as a service (PaaS) resources. Then, you can access IaaS resources and PaaS resources from a single log in. Linking your accounts also provides you with a single bill for all of the PaaS and IaaS resources that you use. You can link your own account or, if you are a master user, you can link your user accounts.
+
+### Linking your IBMid account
+{: #link_user_account}
+
+If you are an {{site.data.keyword.BluSoftlayer_full}} infrastructure customer, and you also have PaaS accounts in {{site.data.keyword.Bluemix_notm}} or create them, you can link IaaS and PaaS for a single view of your accounts. To link your accounts, use the following steps:
+1. Log in to your SoftLayer account.
+2. From the Account Summary page click **New! Link a Bluemix Account**.
+3. Review the terms of use and click to acknowledge your acceptance.
+4. Complete one of the following final steps, depending on how your account is set up:
+  * If your IBMid has an associated {{site.data.keyword.Bluemix_notm}} account you’ll be directed to an authorization page, then back to the final confirmation step.
+  * If you don’t have an associated {{site.data.keyword.Bluemix_notm}} account, you are prompted to create a new one.
+
+To see common questions and answers about linking your account, check out the  [FAQs](/docs/account/account_faq.html#al_login).
+
+### Linking IBMid user accounts
+{: #link_customer_accounts}
+
+After your user accounts switch to IBMid authentication, resellers and distributors can link their users accounts. To link customer accounts, you must be a SoftLayer master user. The IBMid that is the master user of the account must be the owner of the {{site.data.keyword.Bluemix_notm}} platform account that you're linking to. Be sure to review the following important notes to link accounts:
 
   * The master user of the SoftLayer account that's being linked must have an IBMid.
   * Each user account that you link to an {{site.data.keyword.Bluemix_notm}} account must be owned by a unique IBMid with a unique email address. Even though a single IBMid can own multiple SoftLayer accounts, you must change the master user to be a unique IBMid for each account. Contact support to change the master user of a SoftLayer account. See [Getting support for {{site.data.keyword.Bluemix_notm}} infrastructure](/docs/customer-portal/cpsupport.html) for more information.
