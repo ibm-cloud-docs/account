@@ -17,7 +17,6 @@ Managing your account
 
     change-plan.md
     softlayerlink.md
-    linking_accounts.md
     resourcegroups.md
 
     {: .topicgroup}

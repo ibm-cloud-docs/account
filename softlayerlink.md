@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2018
 
-lastupdated: "2018-04-09"
+lastupdated: "2018-04-12"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-04-09"
 # Switching to IBMid and linking accounts
 {: #unifyingaccounts}
 
-Authentication in SoftLayer now uses an IBMid to provide a single login for all of {{site.data.keyword.Bluemix}}. An IBMid is a single ID that you use to log into your {{site.data.keyword.Bluemix_notm}} account to access and purchase infrastructure, services, and application features. All new accounts automatically receive an IBMid and existing SoftLayer accounts, except SAML federated accounts, are enabled to switch to IBMid authentication.
+Authentication in SoftLayer now uses an IBMid to provide a single login for all of {{site.data.keyword.Bluemix}}. An IBMid is a single ID that you use to log in to your {{site.data.keyword.Bluemix_notm}} account to access and purchase infrastructure, services, and application features. All new accounts automatically receive an IBMid and existing SoftLayer accounts, except SAML federated accounts, are enabled to switch to IBMid authentication.
 {:shortdesc}
 
 ## Switching to IBMid
@@ -61,7 +61,7 @@ To resolve any problems with logging in with your IBMid, see [Troubleshooting fo
 ## Linking IBMid accounts
 {: #link_accounts}
 
-After accounts are switched to IBMid accounts, you can link SoftLayer accounts and {{site.data.keyword.Bluemix_notm}} accounts to use combined infrastructure as a service (IaaS) and platform as a service (PaaS) resources. Then, you can access IaaS resources and PaaS resources from a single log in. Linking your accounts also provides you with a single bill for all of the PaaS and IaaS resources that you use. You can link your own account or, if you are a master user, you can link your user accounts.
+After accounts are switched to IBMid accounts, you can link SoftLayer accounts and {{site.data.keyword.Bluemix_notm}} accounts to use combined infrastructure as a service (IaaS) and platform as a service (PaaS) resources. Then, you can access IaaS resources and PaaS resources from a single login. Linking your accounts also provides you with a single bill for all of the PaaS and IaaS resources that you use. You can link your own account or, if you are a master user, you can link your user accounts.
 
 ### Linking your IBMid account
 {: #link_user_account}
@@ -106,7 +106,7 @@ Linked accounts log in to the [{{site.data.keyword.Bluemix}} console ![External 
 Also, note the following changes after your accounts are linked:
   * You must use your IBMid credentials to access both your SoftLayer and your {{site.data.keyword.Bluemix_notm}} accounts.
   * Any existing SoftLayer discounts are applied across {{site.data.keyword.Bluemix_notm}} charges.
-  * You will receive one invoice in United States dollars (USD). If you have an existing {{site.data.keyword.Bluemix_notm}} account, the billing through {{site.data.keyword.Bluemix_notm}} for infrastructure resources takes effect for the new billing cycle that starts after the accounts are linked.
+  * You receive one invoice in United States dollars (USD). If you have an existing {{site.data.keyword.Bluemix_notm}} account, the billing through {{site.data.keyword.Bluemix_notm}} for infrastructure resources takes effect for the new billing cycle that starts after the accounts are linked. For more information, see [Consolidated billing for linked accounts](/docs/account/linking_accounts.html).
   * You can monitor the usage of your infrastructure resources in the {{site.data.keyword.Bluemix_notm}} console.
 
 After you link your accounts, they cannot be unlinked.
