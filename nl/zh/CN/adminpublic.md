@@ -24,7 +24,7 @@ lastupdated: "2018-01-29"
 
 仅当您的公司已经和 IBM 合作进行注册时，联合标识才可用于注册 {{site.data.keyword.Bluemix_notm}}。通过向 IBM 注册公司域，用户可以使用现有公司用户凭证，登录到 IBM 产品和服务。公司的身份提供者随后会处理认证。当您使用联合标识登录到 {{site.data.keyword.Bluemix_notm}} 时，系统会提示您通过您公司的登录页面进行登录。有关向 IBM 请求注册公司或组织域的信息，或者有关该过程的更多信息，请参阅 [IBMid Enterprise Federation Adoption Guide ![外部链接图标](../icons/launch-glyph.svg)](https://ibm.box.com/v/IBMid-Federation-Guide){: new_window}。当您请求注册联合标识时，需要 IBM 产品负责人（如产品支持者或客户支持者）。
 
-IBM 利用安全性断言标记语言 2.0 (SAML 2.0) 来进行此身份联合。SAML 2.0 是用于在安全域之间交换认证数据的标准版本。它是基于 XML 的协议，使用包含断言的安全性令牌在组织“身份提供者”和“IBM 依赖方 (RP)”（也称为“服务提供者”）之间传递信息。
+IBM 利用 Security Assertion Markup Language 2.0 (SAML 2.0) 来进行此身份联合。SAML 2.0 是用于在安全域之间交换认证数据的标准版本。它是基于 XML 的协议，使用包含断言的安全性令牌在组织“身份提供者”和“IBM 依赖方 (RP)”（也称为“服务提供者”）之间传递信息。
 
 | 注册方法| 详细信息|    
 |-----------------|---------|

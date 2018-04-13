@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-03-08"
 
 ---
 
@@ -45,9 +45,9 @@ lastupdated: "2018-01-10"
    * 您可以通过组织将一组空间、应用程序、服务、域、路径和用户分组到一起。 
    * 您可以逐个用户管理对空间和组织的访问权。 
 
-创建组织时，组织名称在 {{site.data.keyword.Bluemix_notm}} 中必须是唯一的。如果组织名称已经由其他 {{site.data.keyword.Bluemix_notm}} Public、Dedicated 或 Local 用户使用，那么必须指定新名称。创建组织之后，系统会自动为您分配*组织管理员*许可权，该许可权允许您编辑组织名称、添加用户以及在组织中创建或删除空间。
+创建组织时，组织名称在 {{site.data.keyword.Bluemix_notm}} 中必须是唯一的。如果组织名称已经由其他 {{site.data.keyword.Bluemix_notm}} Public、Dedicated 或 Local 用户使用，那么必须指定新名称。创建组织之后，系统会自动为您分配*组织管理员*许可权，该许可权允许您编辑组织名称、添加用户以及在组织中创建或删除空间。如果您具有计费帐户，那么可以根据需要创建任意数量的组织。但是，对于轻量帐户，您只能具有一个组织。 
 
-要删除组织，可以与支持人员联系。删除组织时，会删除该组织内的所有空间、应用程序和服务。
+如果需要删除组织，可以联系支持人员。删除组织时，会删除该组织内的所有空间、应用程序和服务。
 
 以下[用户角色](/docs/iam/users_roles.html#userrolesinfo)可以分配给组织中的用户。缺省情况下，会为所有受邀请加入帐户的用户分配审计员角色。
 
@@ -62,7 +62,6 @@ lastupdated: "2018-01-10"
 3. 输入组织名称。
 4. 单击**添加**。
 
-<!-- Add info on Manage infrastructure option under a space -->
 
 ## 创建空间
 {: #spaceinfo}

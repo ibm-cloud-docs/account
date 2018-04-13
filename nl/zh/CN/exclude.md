@@ -87,6 +87,6 @@ Children           Name                                          Kind         ID
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-查找对象的标识并使用 `bx catalog entry-visibility-set <resource-id> --excludes-add<account-id or account-email>` 来排除帐户。
+查找对象的标识并使用 `bx catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>`.
 
 有关可视性工作方式的更多信息，请参阅 [API 文档](https://console.bluemix.net/apidocs/682)。

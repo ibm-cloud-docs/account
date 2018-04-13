@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-08"
+lastupdated: "2018-02-19"
 
 ---
 
@@ -15,13 +15,13 @@ lastupdated: "2018-02-08"
 {:tip: .tip}
 {:new_window: target="_blank"}
 
-# 鏈結 {{site.data.keyword.Bluemix_notm}} 與 SoftLayer 帳戶以合併計費
+# 合併已鏈結帳戶的計費
 {: #unifybillaccounts}
 
 當您鏈結 {{site.data.keyword.Bluemix_notm}} 與 Softlayer 帳戶時，會收到一張 {{site.data.keyword.Bluemix_notm}} 發票。如果您有現有的 {{site.data.keyword.Bluemix_notm}} 帳戶，則會在鏈結帳戶之後開始的新計費週期，透過 {{site.data.keyword.Bluemix_notm}} 收取基礎架構資源的費用。
 {: shortdesc}
 
-{{site.data.keyword.Bluemix_notm}} 中的所有已鏈結帳戶都必須是「隨收隨付制」帳戶。您可以建立新的「隨收隨付制」帳戶、鏈結現有「隨收隨付制」帳戶，或鏈結現有試用帳戶，而試用帳戶接著會升級至「隨收隨付制」帳戶。您無法鏈結「訂閱」帳戶。
+{{site.data.keyword.Bluemix_notm}} 中的所有已鏈結帳戶都必須是「隨收隨付制」或訂閱帳戶。
 {: tip}
 
 ## 帳戶鏈結後的 {{site.data.keyword.Bluemix_notm}} 用量計費

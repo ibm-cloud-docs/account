@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-08"
+lastupdated: "2018-02-19"
 
 ---
 
@@ -15,13 +15,13 @@ lastupdated: "2018-02-08"
 {:tip: .tip}
 {:new_window: target="_blank"}
 
-# 链接 {{site.data.keyword.Bluemix_notm}} 和 SoftLayer 帐户以整合记帐
+# 合并链接帐户的帐单
 {: #unifybillaccounts}
 
 链接 {{site.data.keyword.Bluemix_notm}} 和 Softlayer 帐户后，您将收到单个 {{site.data.keyword.Bluemix_notm}} 发票。如果您有现有的 {{site.data.keyword.Bluemix_notm}} 帐户，那么通过 {{site.data.keyword.Bluemix_notm}} 对基础架构资源进行记帐会在链接帐户之后启动的新记帐周期生效。
 {: shortdesc}
 
-{{site.data.keyword.Bluemix_notm}} 中的所有链接帐户都必须是现买现付帐户。您可以创建新的现买现付帐户，链接现有的现买现付帐户，或者链接现有试用帐户（此帐户随后将升级为现买现付帐户）。但不能链接预订帐户。
+{{site.data.keyword.Bluemix_notm}} 中的所有链接帐户都必须是现买现付帐户或预订帐户。
 {: tip}
 
 ## 链接帐户时 {{site.data.keyword.Bluemix_notm}} 使用情况的帐单
