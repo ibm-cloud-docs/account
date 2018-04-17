@@ -15,7 +15,7 @@ lastupdated: "2018-04-17"
 {:tip: .tip}
 
 # Migrating Cloud Foundry service instances to a resource group
-{: #accessmodels}
+{: #migrate}
 
 As services move from using Cloud Foundry orgs, spaces, and roles to using Cloud Identity and Access Management (IAM) and resource groups, you will be notified on your dashboard. When a service moves off Cloud Foundry, you are prompted to migrate your existing service instances that belong to an org and space into a [resource group](/docs/account/resourcegroups.html#rgs). 
 
