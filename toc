@@ -18,7 +18,6 @@ Managing your account
     change-plan.md
     softlayerlink.md
     resourcegroups.md
-    instance_migration.md
 
     {: .topicgroup}
     Managing orgs and spaces
