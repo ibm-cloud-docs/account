@@ -35,7 +35,7 @@ Managing your account
 
     {: .navgroup id="help"}
     notifications.md
-    ../troubleshoot/ts_accessing.md
-    ../troubleshoot/ts_accounts.md
+    [Troubleshooting for accessing IBM Cloud](../troubleshoot/ts_accessing.html)
+    [Troubleshooting for managing accounts](../troubleshoot/ts_accounts.html)
     account_faq.md
     {: .navgroup-end}
