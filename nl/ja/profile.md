@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-04-06"
 
 ---
 
@@ -17,18 +17,18 @@ lastupdated: "2018-01-10"
 # プロファイルのセットアップ
 {: #usersettings}
 
-最初に {{site.data.keyword.Bluemix}} の使用を開始したときに、アカウント・プロファイルをセットアップできます。 **{{site.data.keyword.avatar}}** アイコン![アバター・アイコン](../icons/i-avatar-icon.svg) &gt; **「プロファイルの表示」**に移動して、プロファイル設定を指定または更新します。
+最初に {{site.data.keyword.Bluemix}} の使用を開始したときに、アカウント・プロファイルをセットアップします。 **{{site.data.keyword.avatar}}** アイコン![アバター・アイコン](../icons/i-avatar-icon.svg) &gt; **「プロファイルの表示」**に移動して、プロファイル設定を指定または更新します。
 {:shortdesc}
 
 以下の情報を設定または更新できます。
 
  * 他の {{site.data.keyword.Bluemix_notm}} ユーザーに表示されるプロファイルの写真
- * 名前、E メール、電話番号、パスワード、会社名、役割などの IBM ID 情報
+ * IBM ID 情報。これには、名前、E メール、電話番号、パスワード、会社名、役割が含まれます。
  * 分析トラッキング設定
 
-さらに、通知を登録したり、サポート・オプションを確認して、問題が発生した場合にアクセスする場所および実行する内容を把握したり、あるいは IBM にフィードバックを提供したりすることもできます。
+さらに、通知を登録したり、サポート・オプションを確認して、問題が発生した場合にアクセスする場所および実行する内容を把握したりすることもできます。
 
-{{site.data.keyword.Bluemix_notm}} Local または {{site.data.keyword.Bluemix_notm}} Dedicated の管理者の場合、「管理」ページを使用したアカウントの管理に関する詳細について、『[{{site.data.keyword.Bluemix_notm}} Local または {{site.data.keyword.Bluemix_notm}} Dedicated の管理](/docs/hybrid/index.html#mng)』を参照してください。
+{{site.data.keyword.Bluemix_local_notm}} または {{site.data.keyword.Bluemix_notm}} Dedicated の管理者の場合、「管理」ページを使用したアカウントの管理の詳細について、『[{{site.data.keyword.Bluemix_local_notm}} または {{site.data.keyword.Bluemix_notm}} Dedicated の管理](/docs/hybrid/index.html#mng)』を参照してください。
 
 ## プロファイルの写真の変更
 {: #photo notoc}
@@ -62,10 +62,3 @@ IBM ID を変更することはできませんが、関連付けられている�
 
 1. **「{{site.data.keyword.avatar}}」**アイコン ![「アバター」アイコン](../icons/i-avatar-icon.svg) &gt; **「プロファイルの表示」**に移動します。
 2. 分析トラッキングを**「オフ」**に設定します。
-
-## フィードバックの提供
-{: #feedback}
-
-{{site.data.keyword.Bluemix_notm}} およびサービスの改善に関するアイデアを送信するには、[IBM Cloud Ideas ![「外部リンク」アイコン](../icons/launch-glyph.svg)](https://ibmcloud.ideas.aha.io){: new_window} にアクセスしてください。 アイデアに関するこのポータルの使用方法について詳しくは、[Think, write, submit: New ideas portal for IBM Cloud ![「外部リンク」アイコン](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/10/05/think-write-submit/){: new_window}を参照してください。
-
-資料に関するフィードバックを提供するには、各ページ上の**「フィードバック (Feedback)」**リンクをクリックするか、タイトルの後にある**「GitHub での編集 (Edit in GitHub)」**リンクをクリックして IBM とコラボレーションしてください。 資料に関するフィードバックの提供について詳しくは、[When it comes to docs, everyone can contribute in {{site.data.keyword.Bluemix_notm}} ![「外部リンク」アイコン](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/01/13/bluemix-docs-now-open-source-on-github/){: new_window}を参照してください。

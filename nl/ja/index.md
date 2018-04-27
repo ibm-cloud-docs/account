@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-03-12"
+lastupdated: "2018-03-28"
 
 ---
 
@@ -30,6 +30,7 @@ lastupdated: "2018-03-12"
 | **[ライト・サービス・プラン ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://console.bluemix.net/catalog/?search=label:lite){: new_window} へのアクセス** | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
 | **すべての無料プランへのアクセス** |  | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
 | **フルカタログへのアクセス** |  | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
+| **複数の Cloud Foundry 地域へのアクセス** |  | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
 | **時間制限なし** | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
 | **保証されたゼロ・コスト** | ![フィーチャー使用可能](../icons/icon_enabled.svg) |  |  |
 | **価格交渉** |  |  | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
@@ -63,7 +64,7 @@ lastupdated: "2018-03-12"
 
 ### アカウントのアップグレード
 
-規模を拡大する段階になったら、従量制課金アカウントにアップグレードし、無料枠を超える使用分のみを支払います。 アップグレード後は、ライト・アカウントで作成したインスタンスを引き続き使用できます。コンソールで**「管理」** > **「請求および使用量」** > **「請求処理」**に移動し、**「クレジット・カードの追加」**をクリックします。 
+規模を拡大する段階になったら、従量制課金アカウントにアップグレードし、無料枠を超える使用分のみを支払います。 アップグレード後は、ライト・アカウントで作成したインスタンスを引き続き使用できます。 コンソールで**「管理」** > **「請求および使用量」** > **「請求処理」**に移動し、**「クレジット・カードの追加」**をクリックします。 
 
 ## 有料アカウント
 {: #billableacts}

@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2018
 
-lastupdated: "2018-03-05"
+lastupdated: "2018-04-12"
 
 ---
 
@@ -32,7 +32,7 @@ IBM ID への切り替えを開始しても、処理が完了する前であれ�
 
 1. SoftLayer アカウントにログインし、IBM ID への切り替えを促すプロンプトが表示されたら、**「OK」**をクリックします。
 
-   マスター・ユーザーであって、{{site.data.keyword.BluSoftlayer_full}} インフラストラクチャーのカスタマー・ポータルに IBM ID への切り替えを求めるプロンプトが表示されない場合は、IBM サポートにお問い合わせください。サポートへの問い合わせについて詳しくは、[IBM サポート](/docs/get-support/howtogetsupport.html#getting-customer-support)を参照してください。
+   マスター・ユーザーであって、{{site.data.keyword.BluSoftlayer_full}} インフラストラクチャーのカスタマー・ポータルに IBM ID への切り替えを求めるプロンプトが表示されない場合は、IBM サポートにお問い合わせください。 サポートへの問い合わせについて詳しくは、[IBM サポート](/docs/get-support/howtogetsupport.html#getting-customer-support)を参照してください。
 
    既にログインしており、プロンプトに対して**「後で」**をクリックしたものの、IBM ID 認証への切り替えを現行セッションで行うことにした場合は、「ユーザー・プロファイルの編集」ページに移動し、**「IBM ID への切り替え」**をクリックします。
 
@@ -57,12 +57,29 @@ IBM ID への切り替えを開始しても、処理が完了する前であれ�
 
 IBM ID でのログインに関する問題を解決するには、『[{{site.data.keyword.Bluemix_notm}} へのアクセスに関するトラブルシューティング](/docs/troubleshoot/ts_accessing.html#accessing)』を参照してください。
 
-## IBM ID ユーザー・アカウントのリンク
-{: #link_user_accounts}
 
-ユーザー・アカウントを IBM ID 認証に切り替えた後、販売店および流通業者は SoftLayer アカウントと {{site.data.keyword.Bluemix_notm}} アカウントをリンクして、Infrastructure as a Service (IaaS) リソースと Platform as a Service (PaaS) リソースを組み合わせて使用できるようになります。その後、1 回のログインで、{{site.data.keyword.BluSoftlayer_full}} インフラストラクチャーのカスタマー・ポータルから IaaS リソースに、また、{{site.data.keyword.Bluemix_notm}} コンソールから PaaS リソースにアクセスできます。アカウントをリンクすると、使用するすべての PaaS リソースおよび IaaS リソースに対する単一の請求書も提供されます。
+## IBM ID アカウントのリンク
+{: #link_accounts}
 
-アカウントをリンクするには、SoftLayer マスター・ユーザーでなければなりません。 アカウントのマスター・ユーザーである IBM ID は、リンクする先の {{site.data.keyword.Bluemix_notm}} プラットフォーム・アカウントの所有者でなければなりません。 アカウントをリンクするには、必ず、以下の重要な注意事項を確認してください。
+アカウントを IBM ID アカウントに切り替えた後、Infrastructure as a Service (IaaS) リソースと Platform as a Service (PaaS) リソースを組み合わせて使用するために、SoftLayer アカウントと {{site.data.keyword.Bluemix_notm}} アカウントをリンクできます。その後、単一のログインから IaaS リソースと PaaS リソースにアクセスできます。アカウントをリンクすると、使用するすべての PaaS リソースおよび IaaS リソースに対する単一の請求書も提供されます。自分自身のアカウントをリンクするか、マスター・ユーザーの場合は、複数のユーザー・アカウントをリンクできます。
+
+### IBM ID アカウントのリンク
+{: #link_user_account}
+
+{{site.data.keyword.BluSoftlayer_full}} インフラストラクチャーのカスタマーであり、{{site.data.keyword.Bluemix_notm}} 内に PaaS アカウントも持っているか作成した場合は、複数のアカウントからなる単一のビュー用に IaaS と PaaS をリンクできます。複数のアカウントをリンクするには、以下の手順を使用します。
+1. SoftLayer アカウントにログインします。
+2. 「アカウント要約」ページで、**「新規! Bluemix アカウントのリンク」**をクリックします。
+3. ご利用条件を検討し、クリックして受け入れることを確認します。
+4. アカウントのセットアップ方法に応じて、以下のいずれかの最終ステップを実行します。
+  * IBM ID に {{site.data.keyword.Bluemix_notm}} アカウントが関連付けられている場合は、許可ページに誘導されてから、再び最終確認ステップに誘導されます。
+  * {{site.data.keyword.Bluemix_notm}} アカウントに関連付けられていない場合は、新しいアカウントを作成するよう求めるプロンプトが出されます。
+
+アカウントのリンクに関する一般的な質問と回答を表示するには、[FAQ](/docs/account/account_faq.html#al_login) を確認します。
+
+### IBM ID ユーザー・アカウントのリンク
+{: #link_customer_accounts}
+
+お客様のユーザー・アカウントが IBM ID 認証に切り替えられた後、販売店および流通業者は、自分たちのユーザー・アカウントをリンクすることができます。カスタマー・アカウントをリンクするには、SoftLayer マスター・ユーザーでなければなりません。アカウントのマスター・ユーザーである IBM ID は、リンクする先の {{site.data.keyword.Bluemix_notm}} プラットフォーム・アカウントの所有者でなければなりません。 アカウントをリンクするには、必ず、以下の重要な注意事項を確認してください。
 
   * リンクされる SoftLayer アカウントのマスター・ユーザーは、IBM ID を持っていなければなりません。
   * {{site.data.keyword.Bluemix_notm}} アカウントにリンクする各ユーザー・アカウントは、固有の E メール・アドレスを持つ固有の IBM ID によって所有される必要があります。 単一の IBM ID が複数の SoftLayer アカウントを所有することは可能ですが、マスター・ユーザーを、アカウントごとに固有の IBM ID となるように変更する必要があります。 SoftLayer アカウントのマスター・ユーザーを変更するには、サポートに連絡してください。 詳しくは、『[{{site.data.keyword.Bluemix_notm}} インフラストラクチャーのサポートの利用](/docs/customer-portal/cpsupport.html)』を参照してください。
@@ -89,7 +106,7 @@ IBM ID でのログインに関する問題を解決するには、『[{{site.da
 また、アカウントがリンクされると、次のように変わることに注意してください。
   * SoftLayer と {{site.data.keyword.Bluemix_notm}} アカウントの両方にアクセスするために、IBM ID 資格情報を使用する必要があります。
   * 既存の SoftLayer 割引は、{{site.data.keyword.Bluemix_notm}} の料金全体に適用されます。
-  * 米国ドル (USD) 単位の 1 つの請求書を受け取ります。 既存の {{site.data.keyword.Bluemix_notm}} アカウントがある場合、インフラストラクチャー・リソースに対する {{site.data.keyword.Bluemix_notm}} からの請求は、両方のアカウントをリンクした後に開始される新しい請求処理サイクルで有効になります。
+  * 米国ドル (USD) 単位の 1 つの請求書を受け取ります。 既存の {{site.data.keyword.Bluemix_notm}} アカウントがある場合、インフラストラクチャー・リソースに対する {{site.data.keyword.Bluemix_notm}} からの請求は、両方のアカウントをリンクした後に開始される新しい請求処理サイクルで有効になります。 詳しくは『[リンクされたアカウントの統合請求](/docs/account/linking_accounts.html)』を参照してください。
   * インフラストラクチャー・リソースの使用量は、{{site.data.keyword.Bluemix_notm}} コンソールでモニターできます。
 
 アカウントをリンクした後は、リンクを解除することはできません。

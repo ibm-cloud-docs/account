@@ -4,6 +4,10 @@
 {: .toc subcollection="account" audience="platform" href="/docs/account/adminpublic.html"}
 アカウントの管理
 
+    {: .navgroup id="learn"}
+    [組織のユーザー、チーム、アプリケーションのベスト・プラクティス](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
+    {: .navgroup-end}
+
     {: .navgroup id="howto"}
     {: .topicgroup}
     アカウントのセットアップ
@@ -13,9 +17,8 @@
 
     change-plan.md
     softlayerlink.md
-    linking_accounts.md
     resourcegroups.md
-    
+
     {: .topicgroup}
     組織の管理
         orgs_spaces.md
@@ -31,7 +34,7 @@
 
     {: .navgroup id="help"}
     notifications.md
-    ../troubleshoot/ts_accessing.md
-    ../troubleshoot/ts_accounts.md
+    [IBM Cloud へのアクセスに関するトラブルシューティング](../troubleshoot/ts_accessing.html)
+    [アカウントの管理に関するトラブルシューティング](../troubleshoot/ts_accounts.html)
     account_faq.md
     {: .navgroup-end}
