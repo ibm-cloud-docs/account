@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2018
 
-lastupdated: "2018-04-12"
+lastupdated: "2018-05-01"
 
 ---
 
@@ -61,7 +61,7 @@ To resolve any problems with logging in with your IBMid, see [Troubleshooting fo
 ## Linking IBMid accounts
 {: #link_accounts}
 
-After accounts are switched to IBMid accounts, you can link SoftLayer accounts and {{site.data.keyword.Bluemix_notm}} accounts to use combined infrastructure as a service (IaaS) and platform as a service (PaaS) resources. Then, you can access IaaS resources and PaaS resources from a single login. Linking your accounts also provides you with a single bill for all of the PaaS and IaaS resources that you use. You can link your own account or, if you are a master user, you can link your user accounts.
+After accounts are switched to IBMid accounts, you can link SoftLayer accounts and {{site.data.keyword.Bluemix_notm}} accounts to use combined infrastructure as a service (IaaS) and platform as a service (PaaS) resources. Then, you can access IaaS resources and PaaS resources from a single log in. Linking your accounts also provides you with a single bill for all of the PaaS and IaaS resources that you use. You can link your own account or, if you are a master user, you can link your user accounts.
 
 ### Linking your IBMid account
 {: #link_user_account}
@@ -115,6 +115,8 @@ After you link your accounts, they cannot be unlinked.
 ## Multi-factor authentication usage in linked accounts
 {: #2fa}
 
-If you have a linked account, you can use the Identity and Access **Settings** page to enable multi-factor authentication for your account. This is also commonly known as two-factor authentication (2FA), and it adds a layer of security for accessing your account beyond the standard required IBMid and password. Multi-factor authentication for your account applies to all resources in your linked {{site.data.keyword.Bluemix_notm}} account. When it is enabled for your account, it also applies to all users who have been added to your account.
+If you have a linked account, you can use the Identity and Access **Settings** page to enable multi-factor authentication (MFA) for your account. This is also commonly known as two-factor authentication (2FA), and it adds a layer of security for accessing your account beyond the standard required IBMid and password. MFA for your account applies to all resources in your linked {{site.data.keyword.Bluemix_notm}} account. When it is enabled for your account, it also applies to all users who have been added to your account.
 
-Multi-factor authentication is not per IBMid. It is still per account. When an IBMid is associated with multiple accounts, and you switch between accounts, you must confirm your identity every time you switch to a different account that requires two-factor authentication. This is true even if the prior account and the new account are both configured with the same two-factor authentication mechanism.
+Multi-factor authentication is not per IBMid. It is per account. When an IBMid is associated with multiple accounts, and you switch between accounts, you must confirm your identity every time you switch to a different account that requires two-factor authentication. This is true even if the prior account and the new account are both configured with the same two-factor authentication mechanism.
+
+If you previously enabled [2FA in the control portal](/docs/customer-portal/cpenable2fa.html#customerportal_2fa) for your infrastructure resources, and then you enable the {{site.data.keyword.Bluemix_notm}} account MFA setting, the MFA account setting overrides the 2FA that you set up in the control portal. This means you can disable the 2FA that you purchased in the control portal in favor of the account MFA setting. However, if you are a federated user, MFA does not apply, so you might want to retain your 2FA control portal set up to ensure the security of your infrastructure resources.
