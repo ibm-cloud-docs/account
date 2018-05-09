@@ -27,9 +27,9 @@ Algunos de los problemas generales de acceso a {{site.data.keyword.Bluemix}} inc
 ## Contraseña incorrecta
 {: #ts_logintobm}
 
-Debe tener una contraseña válida que esté asociada a su ID de IBM para poder iniciar sesión en la consola de {{site.data.keyword.Bluemix_notm}}.
+Debe tener una contraseña válida que esté asociada a su IBMid para poder iniciar sesión en la consola de {{site.data.keyword.Bluemix_notm}}.
 
-Debe tener una contraseña válida que esté asociada con su ID de IBM o ID de cuenta enlazada para iniciar sesión a través del [portal del cliente de infraestructura de {{site.data.keyword.BluSoftlayer_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com){: new_window}.
+Debe tener una contraseña válida que esté asociada con su IBMid o ID de cuenta enlazada para iniciar sesión a través del [portal del cliente de infraestructura de {{site.data.keyword.BluSoftlayer_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com){: new_window}.
 
 Cuando intenta iniciar una sesión en {{site.data.keyword.Bluemix_notm}}, aparece el siguiente mensaje de error:
 {: tsSymptoms}
@@ -41,14 +41,14 @@ La contraseña que ha utilizado para iniciar sesión en {{site.data.keyword.Blue
 
 Utilice una de las soluciones siguientes:
 {: tsResolve}
- * Escriba la contraseña correcta. Para comprobar si su ID de IBM y contraseña son válidos, puede ir a la página Mi perfil de IBM, pulsar **Iniciar sesión** y especificar el ID de IBM y la contraseña en la página Iniciar sesión.
+ * Escriba la contraseña correcta. Para comprobar si su IBMid y contraseña son válidos, puede ir a la página Mi perfil de IBM, pulsar **Iniciar sesión** y especificar el IBMid y la contraseña en la página Iniciar sesión.
  * Si ha olvidado su contraseña, pulse **¿Ha olvidado su contraseña?** para restablecer la contraseña. A continuación, vuelva a la [consola de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://console.{DomainName}){: new_window} o al [portal del cliente de infraestructura de {{site.data.keyword.BluSoftlayer_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com){: new_window} e inicie sesión de nuevo.
- * Si ha olvidado el ID de IBM o sigue teniendo problemas con su contraseña, póngase en contacto con el centro de atención al cliente de registro de IBM a nivel mundial para obtener ayuda.
- * Para obtener un ID de IBM y una contraseña válidos, vaya a la página Mi perfil de IBM y pulse **Registro**.
+ * Si ha olvidado el IBMid o sigue teniendo problemas con su contraseña, póngase en contacto con el centro de atención al cliente de registro de IBM a nivel mundial para obtener ayuda.
+ * Para obtener un IBMid y una contraseña válidos, vaya a la página Mi perfil de IBM y pulse **Registro**.
 
 Notas:
 <!-- begin STAGING ONLY -->
- * Para los empleados de IBM, el ID de IBM puede ser distinto a su ID de intranet.
+ * Para los empleados de IBM, el IBMid puede ser distinto a su ID de intranet.
  <!-- end STAGING ONLY -->
  * Si está en la página de inicio de sesión en IBM y el proceso de inicio de sesión se interrumpe por cualquier motivo (por ejemplo, al restablecer su contraseña), vuelva a la [consola de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://console.{DomainName}){: new_window} o al [portal de cliente de infraestructura de {{site.data.keyword.BluSoftlayer_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com){: new_window} e inicie el proceso de inicio de sesión de nuevo.
 
@@ -56,74 +56,74 @@ Notas:
 ## Credenciales de inicio de sesión no válidas
 {: #ts_login_invalid_credentials}
 
-Cuando inicia sesión con su ID de IBM, aparece el siguiente mensaje:
+Cuando inicia sesión con su IBMid, aparece el siguiente mensaje:
 {: tsSymptoms}
 
-`Se han proporcionado credenciales de inicio de sesión no válidas. Si tiene un ID de IBM asociado a su cuenta, inicie la sesión aquí`
+`Se han proporcionado credenciales de inicio de sesión no válidas. Si tiene un IBMid asociado a su cuenta, inicie la sesión aquí`
 
-* Ha cambiado a un ID de IBM, pero ha intentado iniciar sesión a través del [portal del cliente de infraestructura de {{site.data.keyword.BluSoftlayer_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com){: new_window} utilizando su nombre de usuario y contraseña anteriores.
+* Ha cambiado a un IBMid, pero ha intentado iniciar sesión a través del [portal del cliente de infraestructura de {{site.data.keyword.BluSoftlayer_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com){: new_window} utilizando su nombre de usuario y contraseña anteriores.
 {: tsCauses}
 
 * Ha intentado iniciar sesión a través del [portal del cliente de infraestructura de {{site.data.keyword.BluSoftlayer_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com){: new_window}, pero ha especificado el ID y la contraseña de IBM en los campos Nombre de usuario y Contraseña.
 
-Pulse **iniciar la sesión aquí** en el mensaje o vaya a la sección de inicio de sesión con cuenta de ID de IBM y pulse **Iniciar la sesión con ID de IBM**.
+Pulse **iniciar la sesión aquí** en el mensaje o vaya a la sección de inicio de sesión con cuenta de IBMid y pulse **Iniciar la sesión con IBMid**.
 {: tsResolve}
 
 No utilice los campos **Nombre de usuario** y **Contraseña** que ha utilizado con el ID anterior.
 
 
-## ID de IBM o correo electrónico no reconocido
+## IBMid o correo electrónico no reconocido
 {: #ts_old_username}
 
 Cuando inicia sesión en la consola de {{site.data.keyword.Bluemix_notm}} aparece el siguiente mensaje:
 {: tsSymptoms}
 
-`No hemos reconocido este ID de IBM o correo electrónico.`
+`No hemos reconocido este IBMid o correo electrónico.`
 
-Ha intentado iniciar la sesión en la consola {{site.data.keyword.Bluemix_notm}}, pero no ha utilizado un ID de IBM válido. Por ejemplo, no ha especificado una dirección de correo electrónico completa para el ID de IBM o ha intentado utilizar un nombre de usuario y contraseña anteriores.
+Ha intentado iniciar la sesión en la consola {{site.data.keyword.Bluemix_notm}}, pero no ha utilizado un IBMid válido. Por ejemplo, no ha especificado una dirección de correo electrónico completa para el IBMid o ha intentado utilizar un nombre de usuario y contraseña anteriores.
 {: tsCauses}
 
-Debe tener un ID de IBM y contraseña válidos para poder iniciar una sesión en {{site.data.keyword.Bluemix_notm}}.
+Debe tener un IBMid y contraseña válidos para poder iniciar una sesión en {{site.data.keyword.Bluemix_notm}}.
 
- * Asegúrese de especificar una dirección de correo electrónico completa para el ID de IBM.
+ * Asegúrese de especificar una dirección de correo electrónico completa para el IBMid.
  {: tsResolve}
- * Si es un usuario de {{site.data.keyword.BluSoftlayer_full}} con un ID de {{site.data.keyword.BluSoftlayer_full}}, debe cambiar a la autenticación del ID de IBM en el portal de cliente de infraestructura de {{site.data.keyword.BluSoftlayer_notm}} en cada cuenta a la que tenga acceso antes de poder iniciar una sesión utilizando la autenticación del ID de IBM.
- Para obtener más información, consulte [Cambio a un ID de IBM](/docs/account/softlayerlink.html#switching-to-ibmid).
+ * Si es un usuario de {{site.data.keyword.BluSoftlayer_full}} con un ID de {{site.data.keyword.BluSoftlayer_full}}, debe cambiar a la autenticación del IBMid en el portal de cliente de infraestructura de {{site.data.keyword.BluSoftlayer_notm}} en cada cuenta a la que tenga acceso antes de poder iniciar una sesión utilizando la autenticación del IBMid.
+ Para obtener más información, consulte [Cambio a un IBMid](/docs/account/softlayerlink.html#switching-to-ibmid).
 
 
-## El ID de IBM no está asociada a ninguna cuenta de IBM Cloud
+## El IBMid no está asociada a ninguna cuenta de IBM Cloud
 {: #ts_login_noswitch}
 
-Cuando inicia sesión con su ID de IBM, aparece el siguiente mensaje:
+Cuando inicia sesión con su IBMid, aparece el siguiente mensaje:
 {: tsSymptoms}
 
-`Ha llegado a esta página porque la autenticación ha sido satisfactoria; sin embargo, este ID de IBM no está asociado con ninguna cuenta de IBM Cloud. Si cree que esto es un error, póngase en contacto con el Propietario de la cuenta o el Usuario maestro.`
+`Ha llegado a esta página porque la autenticación ha sido satisfactoria; sin embargo, este IBMid no está asociado con ninguna cuenta de IBM Cloud. Si cree que esto es un error, póngase en contacto con el Propietario de la cuenta o el Usuario maestro.`
 
-Ha iniciado sesión en el [portal de cliente de la infraestructura de {{site.data.keyword.BluSoftlayer_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com){: new_window} con un ID de IBM válido, pero no ha cambiado a la autenticación del ID de IBM desde el portal del cliente de infraestructura de {{site.data.keyword.BluSoftlayer_notm}}.
+Ha iniciado sesión en el [portal de cliente de la infraestructura de {{site.data.keyword.BluSoftlayer_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com){: new_window} con un IBMid válido, pero no ha cambiado a la autenticación del IBMid desde el portal del cliente de infraestructura de {{site.data.keyword.BluSoftlayer_notm}}.
 {: tsCauses}
 
 Siga los pasos siguientes según proceda:
 {: tsResolve}
- * Póngase en contacto con el usuario maestro o con el administrador para comprobar que puede cambiar a la autenticación con ID de IBM.
- * Asegúrese de haber llevado a cabo el paso de cambio a ID de IBM. Consulte [Cambio a un ID de IBM](/docs/account/softlayerlink.html#switching-to-ibmid).
- * Asegúrese de seguir las acciones del correo electrónico **Asociar su ID de usuario con un ID de IBM**. Consulte la bandeja de entrada y la carpeta de correo basura para buscar el correo electrónico. Para recuperar el correo electrónico, por ejemplo si ha caducado, vaya a la página Editar perfil de usuario del portal del cliente de infraestructura de {{site.data.keyword.BluSoftlayer_notm}} y pulse **Reenviar correo electrónico**. Como alternativa, póngase en contacto con el [equipo de soporte de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](http://ibm.biz/bluemixsupport.com){: new_window}.
+ * Póngase en contacto con el usuario maestro o con el administrador para comprobar que puede cambiar a la autenticación con IBMid.
+ * Asegúrese de haber llevado a cabo el paso de cambio a IBMid. Consulte [Cambio a un IBMid](/docs/account/softlayerlink.html#switching-to-ibmid).
+ * Asegúrese de seguir las acciones del correo electrónico **Asociar su ID de usuario con un IBMid**. Consulte la bandeja de entrada y la carpeta de correo basura para buscar el correo electrónico. Para recuperar el correo electrónico, por ejemplo si ha caducado, vaya a la página Editar perfil de usuario del portal del cliente de infraestructura de {{site.data.keyword.BluSoftlayer_notm}} y pulse **Reenviar correo electrónico**. Como alternativa, póngase en contacto con el [equipo de soporte de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](http://ibm.biz/bluemixsupport.com){: new_window}.
 
 **Nota:** si ha creado su IBMid directamente con IBMid, habrá recibido dos correos electrónicos; uno del registro de IBMid y otro de {{site.data.keyword.Blu_full}}. Asegúrese de seguir las indicaciones de ambos correos electrónicos.
 
 En función de cómo se haya configurado su cuenta, se podrán aplicar algunas de estas opciones de inicio de sesión:
  * Los usuarios de {{site.data.keyword.BluSoftlayer_notm}} con los ID de {{site.data.keyword.BluSoftlayer_full}} deben iniciar sesión a través del [portal del cliente de infraestructura de {{site.data.keyword.BluSoftlayer_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com){: new_window}.
- * Los usuarios de {{site.data.keyword.BluSoftlayer_notm}} con un ID de IBM y con o sin una cuenta de {{site.data.keyword.Bluemix_notm}} enlazada pueden iniciar sesión a través del [portal del cliente de infraestructura de {{site.data.keyword.BluSoftlayer_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com){: new_window} para abrir el portal del cliente de infraestructura de {{site.data.keyword.BluSoftlayer_notm}} o a través de la [consola de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://console.{DomainName}){: new_window} para abrir el panel de control de infraestructura.
+ * Los usuarios de {{site.data.keyword.BluSoftlayer_notm}} con un IBMid y con o sin una cuenta de {{site.data.keyword.Bluemix_notm}} enlazada pueden iniciar sesión a través del [portal del cliente de infraestructura de {{site.data.keyword.BluSoftlayer_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com){: new_window} para abrir el portal del cliente de infraestructura de {{site.data.keyword.BluSoftlayer_notm}} o a través de la [consola de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://console.{DomainName}){: new_window} para abrir el panel de control de infraestructura.
 
 
-## El ID de IBM no está asociada a ninguna cuenta de {{site.data.keyword.Bluemix_notm}}
+## El IBMid no está asociada a ninguna cuenta de {{site.data.keyword.Bluemix_notm}}
 {: #ts_unabletologin}
 
 Cuando inicia sesión en {{site.data.keyword.Bluemix_notm}}, aparece el siguiente mensaje:
 {: tsSymptoms}
 
-`Ha llegado a esta página porque la autenticación ha sido satisfactoria; sin embargo, este ID de IBM no está asociado a ninguna cuenta de {{site.data.keyword.Bluemix_notm}}.`
+`Ha llegado a esta página porque la autenticación ha sido satisfactoria; sin embargo, este IBMid no está asociado a ninguna cuenta de {{site.data.keyword.Bluemix_notm}}.`
 
-Ha iniciado sesión en la [consola de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://console.{DomainName}){: new_window} con un ID de IBM válido, pero aún no tiene una cuenta de {{site.data.keyword.Bluemix_notm}} creada.
+Ha iniciado sesión en la [consola de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://console.{DomainName}){: new_window} con un IBMid válido, pero aún no tiene una cuenta de {{site.data.keyword.Bluemix_notm}} creada.
 {: tsCauses}
 
 Para crear una cuenta de {{site.data.keyword.Bluemix_notm}}, siga el proceso de registro.
@@ -137,25 +137,25 @@ En función de cómo se haya configurado su cuenta, se podrán aplicar algunas d
 ## La consola no se abre
 {: #ts_login_stalls}
 
-Cuando inicie sesión utilizando su ID de IBM, se mostrará un mensaje de inicio de sesión correcto, pero no vuelve a la [consola de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://console.{DomainName}){: new_window} ni al [portal del cliente de infraestructura de {{site.data.keyword.BluSoftlayer_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com){: new_window}
+Cuando inicie sesión utilizando su IBMid, se mostrará un mensaje de inicio de sesión correcto, pero no vuelve a la [consola de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://console.{DomainName}){: new_window} ni al [portal del cliente de infraestructura de {{site.data.keyword.BluSoftlayer_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com){: new_window}
 {: tsSymptoms}
 
 Utilice una de las soluciones siguientes:
 {: tsResolve}
  * Cierre el navegador, borre la memoria caché y las cookies y luego intente de nuevo iniciar la sesión.
- * Asegúrese de iniciar la sesión desde la [consola de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://console.{DomainName}){: new_window} o el [portal del cliente de infraestructura de {{site.data.keyword.BluSoftlayer_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com){: new_window}, en lugar de directamente desde el servicio de autenticación del ID de IBM.
+ * Asegúrese de iniciar la sesión desde la [consola de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://console.{DomainName}){: new_window} o el [portal del cliente de infraestructura de {{site.data.keyword.BluSoftlayer_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com){: new_window}, en lugar de directamente desde el servicio de autenticación del IBMid.
 
 
-## El inicio de sesión con ID de IBM no se completa
+## El inicio de sesión con IBMid no se completa
 {: #ts_login_ibmid}
 
-Cuando inicia una sesión en {{site.data.keyword.Bluemix_notm}}, la autenticación con ID de IBM no se completa.
+Cuando inicia una sesión en {{site.data.keyword.Bluemix_notm}}, la autenticación con IBMid no se completa.
 {: tsSymptoms}
 
-Es posible que haya un problema con el servicio de autenticación de ID de IBM.
+Es posible que haya un problema con el servicio de autenticación de IBMid.
 {: tsCauses}
 
-Compruebe el estado del servicio en [ID de IBM ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e){: new_window} y vuélvalo a intentar.
+Compruebe el estado del servicio en [IBMid ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e){: new_window} y vuélvalo a intentar.
 {: tsResolve}
 
 

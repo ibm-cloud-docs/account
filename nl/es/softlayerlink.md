@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2018
 
-lastupdated: "2018-03-05"
+lastupdated: "2018-04-12"
 
 ---
 
@@ -57,12 +57,29 @@ Si es un nuevo cliente, se le solicitará su IBMid existente o que cree un nuevo
 
 Para resolver cualquier problema de inicio de sesión con su IBMid, consulte [Resolución de problemas para acceder a {{site.data.keyword.Bluemix_notm}}](/docs/troubleshoot/ts_accessing.html#accessing).
 
-## Cómo enlazar cuentas de usuario de IBMid
-{: #link_user_accounts}
 
-Después de que sus cuentas de usuario se hayan cambiado a la autenticación de IBMid, los concesionarios y distribuidores pueden enlazar cuentas de SoftLayer y cuentas de {{site.data.keyword.Bluemix_notm}} para un uso combinado de los recursos de la infraestructura como un servicio (IaaS) y de la plataforma como un servicio (PaaS). Puede acceder a recursos de IaaS desde el portal de cliente de infraestructura de {{site.data.keyword.BluSoftlayer_full}} y a los recursos de PaaS desde la consola de {{site.data.keyword.Bluemix_notm}}, todo ello a partir de un único inicio de sesión. Enlazar sus cuentas también supondrá una única factura para todos los recursos IaaS y PaaS que utilice.
+## Enlace de cuentas de IBMid
+{: #link_accounts}
 
-Para enlazar cuentas, debe ser un usuario maestro de SoftLayer. El IBMid que es el usuario maestro de la cuenta debe ser el propietario de la cuenta de la plataforma {{site.data.keyword.Bluemix_notm}} a la que se va a enlazar. Asegúrese de revisar las siguientes notas importantes para enlazar cuentas:
+Cuando las cuentas se hayan cambiado a cuentas de IBMid, podrá enlazar cuentas de SoftLayer y {{site.data.keyword.Bluemix_notm}} para un uso combinado de los recursos de la infraestructura como servicio (IaaS) y de la plataforma como servicio (PaaS). A continuación, podrá acceder a recursos IaaS y PaaS desde un inicio de sesión único. Enlazar sus cuentas también supondrá una única factura para todos los recursos IaaS y PaaS que utilice. Puede enlazar su propia cuenta o, si es un usuario maestro, puede enlazar sus cuentas de usuario.
+
+### Enlace de su cuenta de IBMid
+{: #link_user_account}
+
+Si es un cliente de la infraestructura de {{site.data.keyword.BluSoftlayer_full}} y también dispone de cuentas PaaS en {{site.data.keyword.Bluemix_notm}} o las crea, puede enlazar IaaS y PaaS para obtener una vista única de sus cuentas. Para enlazar las cuentas, siga estos pasos:
+1. Inicie sesión en su cuenta de SoftLayer.
+2. Desde la página Resumen de la cuenta, haga clic en **Nuevo. Enlazar una cuenta de Bluemix**.
+3. Revise las condiciones de uso y pulse para aceptarlas.
+4. Complete uno de los pasos finales siguientes, en función de cómo está configurada su cuenta:
+  * Si tiene una cuenta de {{site.data.keyword.Bluemix_notm}} asociada a su IBMid, se le direccionará a una página de autorización, y luego al paso de confirmación final.
+  * Si no tiene una cuenta de {{site.data.keyword.Bluemix_notm}} asociada, se le solicitará que cree una nueva.
+
+Para ver preguntas y respuestas comunes acerca de su cuenta, consulte [Preguntas frecuentes](/docs/account/account_faq.html#al_login).
+
+### Cómo enlazar cuentas de usuario de IBMid
+{: #link_customer_accounts}
+
+Cuando sus cuentas de usuario se hayan cambiado a la autenticación de IBMid, los concesionarios y distribuidores podrán enlazar sus cuentas de usuario. Para enlazar cuentas de usuario debe ser un usuario maestro de SoftLayer. El IBMid que es el usuario maestro de la cuenta debe ser el propietario de la cuenta de la plataforma {{site.data.keyword.Bluemix_notm}} a la que se va a enlazar. Asegúrese de revisar las siguientes notas importantes para enlazar cuentas:
 
   * El usuario maestro de la cuenta de SoftLayer a la que se está enlazando debe tener un IBMid.
   * Cada cuenta de usuario que enlace con una cuenta de {{site.data.keyword.Bluemix_notm}} debe ser propiedad de un IBMid exclusivo con una dirección de correo electrónico exclusiva. A pesar de que un único IBMid puede poseer varias cuentas de SoftLayer, debe cambiar el usuario maestro para que sea un IBMid exclusivo para cada cuenta. Póngase en contacto con el equipo de soporte para cambiar el usuario maestro de una cuenta de SoftLayer. Consulte [Obtención de soporte para la infraestructura de {{site.data.keyword.Bluemix_notm}}](/docs/customer-portal/cpsupport.html) para obtener más información.
@@ -87,9 +104,9 @@ Migre únicamente cuentas de usuario final a IBMid. No migre cuentas derivadas, 
 Las cuentas enlazadas inician una sesión en la consola de [{{site.data.keyword.Bluemix}} ![Icono de enlace externo](../icons/launch-glyph.svg)](https://console.bluemix.net){: new_window}.
 
 Además, tenga en cuenta los siguientes cambios después de que se hayan enlazado sus cuentas:
-  * Debe utilizar las credenciales de ID de IBM para acceder a sus cuentas tanto de SoftLayer como de {{site.data.keyword.Bluemix_notm}}.
+  * Debe utilizar las credenciales de IBMid para acceder a sus cuentas tanto de SoftLayer como de {{site.data.keyword.Bluemix_notm}}.
   * Cualquier descuento existente de SoftLayer se aplicará en cargos de {{site.data.keyword.Bluemix_notm}}.
-  * Recibirá una factura en dólares de Estados Unidos (USD). Si tiene una cuenta de {{site.data.keyword.Bluemix_notm}}, la facturación a través de {{site.data.keyword.Bluemix_notm}} para los recursos de infraestructura será efectiva para el nuevo ciclo de facturación que empieza una vez que se hayan enlazado las cuentas.
+  * Recibirá una factura en dólares de Estados Unidos (USD). Si tiene una cuenta de {{site.data.keyword.Bluemix_notm}}, la facturación a través de {{site.data.keyword.Bluemix_notm}} para los recursos de infraestructura será efectiva para el nuevo ciclo de facturación que empieza una vez que se hayan enlazado las cuentas. Para obtener más información, consulte [Facturación consolidada para cuentas enlazadas](/docs/account/linking_accounts.html).
   * Puede supervisar el uso de los recursos de infraestructura en la consola de {{site.data.keyword.Bluemix_notm}}.
 
 Después de enlazar sus cuentas, no podrá desenlazarlas.

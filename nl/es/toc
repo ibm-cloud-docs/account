@@ -4,6 +4,10 @@
 {: .toc subcollection="account" audience="platform" href="/docs/account/adminpublic.html"}
 Gestión de la cuenta
 
+    {: .navgroup id="learn"}
+    [Prácticas recomendadas para la organización de usuarios, equipos y aplicaciones](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
+    {: .navgroup-end}
+
     {: .navgroup id="howto"}
     {: .topicgroup}
     Configuración de la cuenta
@@ -13,11 +17,10 @@ Gestión de la cuenta
 
     change-plan.md
     softlayerlink.md
-    linking_accounts.md
     resourcegroups.md
-    
+
     {: .topicgroup}
-    Gestión de organizaciones
+    Managing orgs and spaces
         orgs_spaces.md
         manageorg.md
 
@@ -31,7 +34,7 @@ Gestión de la cuenta
 
     {: .navgroup id="help"}
     notifications.md
-    ../troubleshoot/ts_accessing.md
-    ../troubleshoot/ts_accounts.md
+    [Resolución de problemas para acceder a IBM Cloud](../troubleshoot/ts_accessing.html)
+    [Resolución de problemas de gestión de cuentas](../troubleshoot/ts_accounts.html)
     account_faq.md
     {: .navgroup-end}

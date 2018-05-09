@@ -5,7 +5,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-02-08"
+lastupdated: "2018-03-22"
 
 
 ---
@@ -23,9 +23,6 @@ Un grupo de recursos es una manera de organizar sus recursos de cuenta en agrupa
 
 Para empezar a gestionar sus grupos de recursos, vaya a **Gestionar** &gt; **Cuenta** &gt; **Grupos de recursos** en la consola de {{site.data.keyword.Bluemix}}. Desde ahí puede ver sus grupos de recursos, renombrarlos y crear nuevos grupos de recursos.
 
-## Visualización de recursos dentro de grupos de recursos
-
-Para ver fácilmente los recursos que contiene un grupo de recursos, filtre por grupo de recursos desde su panel de control.
 
 ## Creación de un grupo de recursos
 
@@ -40,6 +37,14 @@ Cada grupo de recursos es gratuito, sin embargo, las conexiones entre un grupo d
 2. Pulse **Crear un grupo de recursos**.
 3. Especifique un nombre para su grupo de recursos.
 4. Pulse **Añadir**.
+
+## Adición de recursos a un grupo de recursos
+
+Los servicios gestionados mediante IAM pertenecen a un grupo de recursos en lugar de a una organización o espacio de Cloud Foundry. Cuando cree una instancia de servicio para uno de los servicios del catálogo, se le solicitará que asigne la instancia a un grupo de recursos. La selección del grupo de recursos en el momento de crear la instancia es definitiva y no se puede cambiar.
+
+## Visualización de recursos dentro de grupos de recursos
+
+Para ver fácilmente los recursos que contiene un grupo de recursos, filtre por grupo de recursos desde su panel de control.
 
 ## Cómo renombrar un grupo de recursos
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-03-09"
+lastupdated: "2018-03-28"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-03-09"
 # Preguntas más frecuentes
 {: #accountfaqs}
 
-## ¿Qué regiones de {{site.data.keyword.Bluemix_notm}} puedo utilizar?
+## ¿Qué regiones de Cloud Foundry puedo utilizar?
 {: #whichregions}
 
 En una cuenta Lite solo puede trabajar en una región. En una cuenta de Pago según uso o Suscripción, puede acceder a todas las regiones.
@@ -29,7 +29,7 @@ Un plan Lite corresponde a una cuota gratuita basada en un plan de servicio. Pue
 ## ¿Qué sucede cuando mi instancia del plan Lite alcanza la cuota mensual?
 {: #monthlyquota}
 
-Llegar a cualquier límite de cuota para instancias del plan Lite, se suspende el servicio para ese mes. Los límites de cuota son por organización, no por instancia. Nuevas instancias creadas en la misma organización reflejarán el uso de instancias anteriores. Los límites de cuota se restablecen el primero de cada mes.
+Si se alcanza cualquier límite de cuota para instancias del plan Lite, se suspende el servicio para ese mes. Los límites de cuota son por organización, no por instancia. Nuevas instancias creadas en la misma organización reflejarán el uso de instancias anteriores. Los límites de cuota se restablecen el primero de cada mes.
 
 ## ¿Cómo puedo actualizar o cambiar mi tipo de cuenta?
 {: #changeacct}
