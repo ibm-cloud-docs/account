@@ -4,6 +4,10 @@
 {: .toc subcollection="account" audience="platform" href="/docs/account/adminpublic.html"}
 管理帳戶
 
+    {: .navgroup id="learn"}
+    [組織使用者、團隊、應用程式的最佳作法](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
+    {: .navgroup-end}
+
     {: .navgroup id="howto"}
     {: .topicgroup}
     帳戶設定
@@ -13,11 +17,10 @@
 
     change-plan.md
     softlayerlink.md
-    linking_accounts.md
     resourcegroups.md
-    
+
     {: .topicgroup}
-    管理組織
+    管理組織及空間
         orgs_spaces.md
         manageorg.md
 
@@ -31,7 +34,7 @@
 
     {: .navgroup id="help"}
     notifications.md
-    ../troubleshoot/ts_accessing.md
-    ../troubleshoot/ts_accounts.md
+    [IBM Cloud 存取的疑難排解](../troubleshoot/ts_accessing.html)
+    [管理帳戶的疑難排解](../troubleshoot/ts_accounts.html)
     account_faq.md
     {: .navgroup-end}

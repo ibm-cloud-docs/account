@@ -42,7 +42,7 @@ lastupdated: "2017-11-29"
 
 請註冊免費「精簡」帳戶，以在 {{site.data.keyword.Bluemix_notm}} 主控台中選取名為「精簡」並使用「精簡」標籤 ![「精簡」標籤](../icons/Lite.svg) 所顯示的免費方案，來建置應用程式以及探索服務。「精簡」帳戶不會到期，因此不需要信用卡。 
 
-您可以存取為您所建立並命名為 `Default` 的單一資源群組。「{{site.data.keyword.Bluemix_notm}} 身分及存取管理 (IAM)」所管理的所有服務實例都會自動新增至此資源群組。您隨時可以更新此資源群組的名稱。如需詳細步驟，請參閱[重新命名資源群組](/docs/admin/resourcegroups.html#renaming-a-resource-group)。 
+您可以存取為您所建立並命名為 `Default` 的單一資源群組。{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 所管理的所有服務實例都會自動新增至此資源群組。您隨時可以更新此資源群組的名稱。如需詳細步驟，請參閱[重新命名資源群組](/docs/admin/resourcegroups.html#renaming-a-resource-group)。 
 
 每一個資源群組都是免費的。當您在 IAM 所管理的服務與 Cloud Foundry 應用程式之間建立連線時，請建立計入您配額的別名（即服務實例）。請參閱[何謂別名？](/docs/manageapps/connecting_apps.html#what_is_alias)。
 {: tip}

@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-03-09"
+lastupdated: "2018-03-28"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-03-09"
 # 常見問題 (FAQ)
 {: #accountfaqs}
 
-## 可以使用哪些 {{site.data.keyword.Bluemix_notm}} 地區？
+## 可以使用哪些 Cloud Foundry 地區？
 {: #whichregions}
 
 在「精簡」帳戶中，您只能在一個地區中工作。在「隨收隨付制」或「訂閱」帳戶中，您可以存取所有地區。
@@ -91,7 +91,7 @@ lastupdated: "2018-03-09"
 ## 如果我不想鏈結帳戶要怎麼辦？ 	
 {: #al_bene}
 
-為了協助您更深入體驗 {{site.data.keyword.Bluemix_notm}}，所有新功能會開發成單一的 {{site.data.keyword.Bluemix_notm}} 主控台。當您合併帳戶時，將可以存取更健全的型錄、簡化的帳戶管理，以及單一登入。
+為了協助您更深入體驗 {{site.data.keyword.Bluemix_notm}}，所有新功能會開發成單一的 {{site.data.keyword.Bluemix_notm}} 主控台。當您合併帳戶時，將可以存取更強健的型錄、簡化的帳戶管理，以及單一登入。
 
 如果鏈結對您而言不是可行的選項，請與您的業務支援人員聯絡，以取得其他選項。
 

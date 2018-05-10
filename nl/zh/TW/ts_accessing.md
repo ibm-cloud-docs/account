@@ -18,7 +18,7 @@ lastupdated: "2017-11-10"
 {:new_window: target="_blank"}
 
 
-# {{site.data.keyword.Bluemix_notm}} 存取疑難排解
+# {{site.data.keyword.Bluemix_notm}} 存取的疑難排解
 {: #accessing}
 
 在存取 {{site.data.keyword.Bluemix}} 時發生的一般問題，可能包括無法登入 {{site.data.keyword.Bluemix_notm}}，或是帳戶處於擱置狀態。在許多情況下，您可以遵照一些簡單的步驟，從這些問題回復。
@@ -99,7 +99,7 @@ lastupdated: "2017-11-10"
 
 `You have reached this page because your authentication was successful, however, this IBMid is not associated with any IBM Cloud accounts. If you believe this to be in error, contact your Account Owner or Master User.`
 
-您已從 [{{site.data.keyword.BluSoftlayer_notm}} 基礎架構客戶入口網站 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://control.softlayer.com){: new_window} 使用有效的 IBM ID 登入，但未從 {{site.data.keyword.BluSoftlayer_notm}} 基礎架構客戶入口網站中切換至 IBM ID 鑑別。
+您已從 [{{site.data.keyword.BluSoftlayer_notm}} 基礎架構客戶入口網站 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://control.softlayer.com){: new_window} 使用有效的 IBM ID 進行登入，但未從 {{site.data.keyword.BluSoftlayer_notm}} 基礎架構客戶入口網站中切換至 IBM ID 鑑別。
 {: tsCauses}
 
 請視情況完成下列檢查：
@@ -123,7 +123,7 @@ lastupdated: "2017-11-10"
 
 `You have reached this page because your authentication was successful, however, this IBMid is not associated with any  {{site.data.keyword.Bluemix_notm}} accounts.`
 
-您已從 [{{site.data.keyword.Bluemix_notm}} 主控台 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://console.{DomainName}){: new_window} 使用有效的 IBM ID 登入，但尚未建立 {{site.data.keyword.Bluemix_notm}} 帳戶。
+您已從 [{{site.data.keyword.Bluemix_notm}} 主控台 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://console.{DomainName}){: new_window} 使用有效的 IBM ID 進行登入，但尚未建立 {{site.data.keyword.Bluemix_notm}} 帳戶。
 {: tsCauses}
 
 若要建立 {{site.data.keyword.Bluemix_notm}} 帳戶，請遵循註冊處理程序。
@@ -183,7 +183,7 @@ IBM ID 鑑別服務可能有問題。
 
 若要使用 IBM 內部網路 ID 來登入 {{site.data.keyword.Bluemix_notm}}，您必須鏈結內部網路 ID 與 IBM ID。
 
-從「{{site.data.keyword.Bluemix_notm}} 登入」頁面選取**使用內部網路 ID 登入**之後，可能會顯示下列訊息：
+從「{{site.data.keyword.Bluemix_notm}} 登入」頁面選取**使用內部網路 ID 進行登入**之後，可能會顯示下列訊息：
 {: tsSymptoms}
 
 `存取外部網站時發生問題`

@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2018
 
-lastupdated: "2018-03-05"
+lastupdated: "2018-04-12"
 
 ---
 
@@ -55,18 +55,35 @@ SoftLayer 中的鑑別現在使用 IBM ID 來提供所有 {{site.data.keyword.Bl
   * 若要使用現有的 IBM ID，請輸入使用者名稱，或唯一的 IBM ID 電子郵件位址（亦即，不是多個 IBM ID 所共用的）。
   * 若要建立新的 IBM ID，請輸入目前未被任何 IBM ID 使用的電子郵件位址。此電子郵件位址是 IBM ID 的使用者名稱，而且是在建立 IBM ID 之後傳送登錄碼的位置。您之後可以更新與 IBM ID 相關聯的電子郵件位址，但是無法變更使用者名稱。
 
-若要解決使用 IBM ID 登入的所有問題，請參閱 [{{site.data.keyword.Bluemix_notm}} 存取疑難排解](/docs/troubleshoot/ts_accessing.html#accessing)。
+若要解決使用 IBM ID 進行登入的所有問題，請參閱 [{{site.data.keyword.Bluemix_notm}} 存取的疑難排解](/docs/troubleshoot/ts_accessing.html#accessing)。
 
-## 鏈結 IBM ID 使用者帳戶
-{: #link_user_accounts}
 
-在您的使用者帳戶切換至 IBM ID 鑑別之後，轉銷商及經銷商就可以鏈結 SoftLayer 帳戶及 {{site.data.keyword.Bluemix_notm}} 帳戶，以利用合併的基礎架構即服務 (Iaas) 及平台即服務 (PaaS) 資源。然後，您可以從 {{site.data.keyword.BluSoftlayer_full}} 基礎架構客戶入口網站存取 IaaS 資源，以及從 {{site.data.keyword.Bluemix_notm}} 主控台存取 PaaS 資源－全都是使用單一登入。鏈結您的帳戶也會讓您針對您使用的所有 PaaS 及 IaaS 資源收到單一張帳單。
+## 鏈結 IBM ID 帳戶
+{: #link_accounts}
 
-您必須是 SoftLayer 主要使用者，才能鏈結帳戶。作為帳戶之主要使用者的 IBM ID 必須是您所要鏈結的 {{site.data.keyword.Bluemix_notm}} 平台帳戶的擁有者。請務必檢閱鏈結帳戶的下列重要注意事項：
+帳戶切換至 IBM ID 帳戶之後，您可以鏈結 SoftLayer 帳戶及 {{site.data.keyword.Bluemix_notm}} 帳戶，以利用合併的基礎架構即服務 (Iaas) 及平台即服務 (PaaS) 資源。然後，您就可以從單一登入存取 IaaS 資源和 PaaS 資源。鏈結您的帳戶也會讓您針對您使用的所有 PaaS 及 IaaS 資源收到單一張帳單。您可以鏈結自己的帳戶，或者，如果您是主要使用者，則可以鏈結您的使用者帳戶。
+
+### 鏈結 IBM ID 帳戶
+{: #link_user_account}
+
+如果您是 {{site.data.keyword.BluSoftlayer_full}} 基礎架構客戶，且您的 {{site.data.keyword.Bluemix_notm}} 中也有 PaaS 帳戶，或建立它們，則可以鏈結 IaaS 和 PaaS 以便得到帳戶的單一視圖。若要鏈結帳戶，請使用下列步驟：
+1. 登入您的 SoftLayer 帳戶。
+2. 從「帳戶摘要」頁面，按一下**新增功能！鏈結 Bluemix 帳戶**。
+3. 檢閱使用條款，並按一下以確認接受。
+4. 根據帳戶的設定方式，完成下列其中一個最終步驟：
+  * 如果您的 IBM ID 有相關聯的 {{site.data.keyword.Bluemix_notm}} 帳戶，會導向至授權頁面，然後回到最終確認步驟。
+  * 如果您沒有相關聯的 {{site.data.keyword.Bluemix_notm}} 帳戶，則系統會提示您建立新帳戶。
+
+若要查看有關鏈結帳戶的一般問與答，請參閱[常見問題](/docs/account/account_faq.html#al_login)。
+
+### 鏈結 IBM ID 使用者帳戶
+{: #link_customer_accounts}
+
+在您的使用者帳戶切換至 IBM ID 鑑別之後，轉銷商及經銷商就可以鏈結他們的使用者帳戶。您必須是 SoftLayer 主要使用者，才能鏈結客戶帳戶。作為帳戶之主要使用者的 IBM ID 必須是您所要鏈結的 {{site.data.keyword.Bluemix_notm}} 平台帳戶的擁有者。請務必檢閱鏈結帳戶的下列重要注意事項：
 
   * 所鏈結 SoftLayer 帳戶的主要使用者必須具有 IBM ID。
   * 您鏈結至 {{site.data.keyword.Bluemix_notm}} 帳戶的每一個使用者帳戶，都必須為具有唯一電子郵件位址的唯一 IBM ID 所擁有。即使單一 IBM ID 可以擁有多個 SoftLayer 帳戶，您還是必須為每一個帳戶將主要使用者變更為唯一 IBM ID。請與支援中心聯絡，以變更 SoftLayer 帳戶的主要使用者。如需相關資訊，請參閱[取得 {{site.data.keyword.Bluemix_notm}} 基礎架構的支援](/docs/customer-portal/cpsupport.html)。
-  * 將新使用者新增至鏈結的帳戶時，您必須將他們同時新增至 SoftLayer 帳戶及 {{site.data.keyword.Bluemix_notm}} 帳戶，他們才能存取統一主控台的所有功能。
+  * 將新使用者新增至已鏈結帳戶時，您必須將他們同時新增至 SoftLayer 帳戶及 {{site.data.keyword.Bluemix_notm}} 帳戶，他們才能存取統一主控台的所有功能。
   * 如果您有品牌帳戶、使用 Brand Agent Portal (BAP)，而且在鏈結帳戶時需要支援，則請傳送電子郵件到下列位址以與 Revenue Services 團隊聯絡：softlayer_revenue_services_team@wwpdl.vnet.ibm.com。
   * {{site.data.keyword.Bluemix_notm}} 中的所有已鏈結帳戶都必須是「隨收隨付制」帳戶。您可以建立新的「隨收隨付制」帳戶、鏈結現有「隨收隨付制」帳戶，或鏈結現有試用帳戶，而試用帳戶接著會升級至「隨收隨付制」帳戶。您無法鏈結至 {{site.data.keyword.Bluemix_notm}} 訂閱帳戶。
 
@@ -89,7 +106,7 @@ SoftLayer 中的鑑別現在使用 IBM ID 來提供所有 {{site.data.keyword.Bl
 此外，請注意鏈結帳戶之後的下列變更：
   * 您必須使用 IBM ID 認證來存取 SoftLayer 及 {{site.data.keyword.Bluemix_notm}} 帳戶。
   * 任何現有 SoftLayer 折扣都會套用至 {{site.data.keyword.Bluemix_notm}} 費用。
-  * 您將收到一張計價單位為美元 (USD) 的發票。如果您有現有的 {{site.data.keyword.Bluemix_notm}} 帳戶，則會在鏈結帳戶之後開始的新計費週期，透過 {{site.data.keyword.Bluemix_notm}} 收取基礎架構資源的費用。
+  * 您收到一張計價單位為美元 (USD) 的發票。如果您有現有的 {{site.data.keyword.Bluemix_notm}} 帳戶，則會在鏈結帳戶之後開始的新計費週期，透過 {{site.data.keyword.Bluemix_notm}} 收取基礎架構資源的費用。如需相關資訊，請參閱[已鏈結帳戶的合併計費](/docs/account/linking_accounts.html)。
   * 您可以在 {{site.data.keyword.Bluemix_notm}} 主控台中監視基礎架構資源的用量。
 
 帳戶在鏈結之後，即無法解除鏈結。
