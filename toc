@@ -18,6 +18,7 @@ Managing your account
     change-plan.md
     softlayerlink.md
     resourcegroups.md
+    instance_migration.md
 
     {: .topicgroup}
     Managing orgs and spaces
@@ -36,5 +37,6 @@ Managing your account
     notifications.md
     [Troubleshooting for accessing IBM Cloud](../troubleshoot/ts_accessing.html)
     [Troubleshooting for managing accounts](../troubleshoot/ts_accounts.html)
+    [Troubleshooting migrating service instances](../troubleshoot/ts_migration.html)
     account_faq.md
     {: .navgroup-end}
