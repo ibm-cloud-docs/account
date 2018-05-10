@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-03-12"
+lastupdated: "2018-03-28"
 
 ---
 
@@ -30,6 +30,7 @@ La seguente tabella fornisce un confronto degli account Lite, Pagamento a consum
 | **Accesso ai [piani di servizio Lite ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://console.bluemix.net/catalog/?search=label:lite){: new_window}** | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) |
 | **Accesso a tutti i piani gratuiti** |  | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) |
 | **Accesso al catalogo completo** |  | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) |
+| **Accesso a più regioni Cloud Foundry** |  | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) |
 | **Nessun limite di tempo** | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) |
 | **Costo zero garantito** | ![Funzione disponibile](../icons/icon_enabled.svg) |  |  |
 | **Prezzo negoziato** |  |  | ![Funzione disponibile](../icons/icon_enabled.svg) |

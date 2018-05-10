@@ -5,7 +5,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-02-08"
+lastupdated: "2018-03-22"
 
 
 ---
@@ -23,9 +23,6 @@ Un gruppo di risorse è un modo per organizzare le risorse dell'account in raggr
 
 Per iniziare a gestire i tuoi gruppi di risorse, vai a **Gestisci** &gt; **Account** &gt; **Gruppi di risorse** nella console {{site.data.keyword.Bluemix}}. Da lì puoi visualizzare i tuoi gruppi di risorse, rinominarli e creare nuovi gruppi di risorse.
 
-## Visualizzazione delle risorse nei gruppi di risorse
-
-Per visualizzare facilmente le risorse contenute in un gruppo, filtra per gruppo di risorse dal tuo dashboard.
 
 ## Creazione di un gruppo di risorse
 
@@ -40,6 +37,14 @@ Ogni gruppo di risorse è gratuito, tuttavia le connessioni tra un gruppo di ris
 2. Fai clic su **Crea un gruppo di risorse**.
 3. Immetti un nome per il tuo gruppo di risorse.
 4. Fai clic su **Aggiungi**.
+
+## Aggiunta di risorse a un gruppo di risorse 
+
+I servizi che sono gestiti utilizzando IAM appartengono a un gruppo di risorse invece che a un'organizzazione o uno spazio Cloud Foundry. Quando crei un'istanza del servizio per uno di questi servizi dal catalogo, ti viene richiesto di assegnare l'istanza a un gruppo di risorse. La tua selezione del gruppo di risorse al momento della creazione dell'istanza è finale e non può essere modificata.
+
+## Visualizzazione delle risorse nei gruppi di risorse
+
+Per visualizzare facilmente le risorse contenute in un gruppo, filtra per gruppo di risorse dal tuo dashboard.
 
 ## Ridenominazione di un gruppo di risorse
 
