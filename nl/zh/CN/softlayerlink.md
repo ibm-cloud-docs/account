@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2018
 
-lastupdated: "2018-03-05"
+lastupdated: "2018-04-12"
 
 ---
 
@@ -57,12 +57,29 @@ lastupdated: "2018-03-05"
 
 要解决使用 IBM 标识登录的任何问题，请参阅[有关访问 {{site.data.keyword.Bluemix_notm}} 的故障诊断](/docs/troubleshoot/ts_accessing.html#accessing)。
 
-## 链接 IBM 标识用户帐户
-{: #link_user_accounts}
 
-用户帐户切换到 IBM 标识认证后，经销商和分销商可以链接 SoftLayer 帐户和 {{site.data.keyword.Bluemix_notm}} 帐户，以利用组合的基础架构即服务 (IaaS) 和平台即服务 (PaaS) 资源。然后，可以在 {{site.data.keyword.BluSoftlayer_full}} 基础架构客户门户网站中访问 IaaS 资源，在 {{site.data.keyword.Bluemix_notm}} 控制台中访问 PaaS 资源，全都通过单次登录进行访问。链接帐户还为您提供了针对您使用的所有 PaaS 和 IaaS 资源的单个帐单。
+## 链接 IBM 标识帐户
+{: #link_accounts}
 
-要链接帐户，您必须是 SoftLayer 主用户。作为帐户主用户的 IBM 标识必须是要链接到的 {{site.data.keyword.Bluemix_notm}} 平台帐户的所有者。请务必查看有关链接帐户的以下重要说明：
+帐户切换到 IBM 标识帐户后，您可以链接 SoftLayer 帐户和 {{site.data.keyword.Bluemix_notm}} 帐户，以使用组合的基础架构即服务 (IaaS) 和平台即服务 (PaaS) 资源。然后，您可以通过单个登录名来访问 IaaS 资源和 PaaS 资源。链接帐户还为您提供了针对您使用的所有 PaaS 和 IaaS 资源的单个帐单。您可以链接自己的帐户，或者如果您是主用户，那么可以链接您的用户帐户。
+
+### 链接 IBM 标识帐户
+{: #link_user_account}
+
+如果您是 {{site.data.keyword.BluSoftlayer_full}} 基础架构客户，并且在 {{site.data.keyword.Bluemix_notm}} 中还具有 PaaS 帐户或者创建了这些帐户，那么可以链接 IaaS 和 PaaS 以获取帐户的单个视图。要链接帐户，请使用以下步骤：
+1. 登录到 SoftLayer 帐户。
+2. 在“帐户汇总”页面中，单击**新功能！链接 Bluemix 帐户**。
+3. 复查使用条款，然后单击以确认接受这些条款。
+4. 根据帐户的设置方式，完成以下其中一个最终步骤：
+  * 如果 IBM 标识具有关联的 {{site.data.keyword.Bluemix_notm}} 帐户，那么会将您定向到授权页面，然后返回到最终确认步骤。
+  * 如果没有关联的 {{site.data.keyword.Bluemix_notm}} 帐户，那么系统会提示您创建新帐户。
+
+要查看有关链接帐户的常见问题及解答，请查看[常见问题](/docs/account/account_faq.html#al_login)。
+
+### 链接 IBM 标识用户帐户
+{: #link_customer_accounts}
+
+您的用户帐户切换为 IBM 标识认证后，经销商和分销商可以链接他们的用户帐户。要链接客户帐户，您必须是 SoftLayer 主用户。作为帐户主用户的 IBM 标识必须是要链接到的 {{site.data.keyword.Bluemix_notm}} 平台帐户的所有者。请务必查看有关链接帐户的以下重要说明：
 
   * 要链接的 SoftLayer 帐户的主用户必须具有 IBM 标识。
   * 链接到 {{site.data.keyword.Bluemix_notm}} 帐户的每个用户帐户都必须由具有唯一电子邮件地址的唯一 IBM 标识所拥有。尽管一个 IBM 标识可以拥有多个 SoftLayer 帐户，但您仍必须将主用户更改为对于每个帐户都唯一的 IBM 标识。请联系支持人员，以更改 SoftLayer 帐户的主用户。有关更多信息，请参阅[获取对 {{site.data.keyword.Bluemix_notm}} 基础架构的支持](/docs/customer-portal/cpsupport.html)。
@@ -90,6 +107,7 @@ lastupdated: "2018-03-05"
   * 必须使用 IBM 标识凭证来访问 SoftLayer 和 {{site.data.keyword.Bluemix_notm}} 帐户。
   * 将对全体 {{site.data.keyword.Bluemix_notm}} 费用应用所有现有的 SoftLayer 折扣。
   * 您将收到一张以美元 (USD) 计费的发票。如果您有现有的 {{site.data.keyword.Bluemix_notm}} 帐户，那么通过 {{site.data.keyword.Bluemix_notm}} 对基础架构资源进行记帐会在链接帐户之后启动的新记帐周期生效。
+有关更多信息，请参阅[链接帐户的合并帐单](/docs/account/linking_accounts.html)。
   * 您可以在 {{site.data.keyword.Bluemix_notm}} 控制台中监视基础架构资源的使用情况。
 
 帐户链接之后即无法对其取消链接。

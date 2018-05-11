@@ -4,6 +4,10 @@
 {: .toc subcollection="account" audience="platform" href="/docs/account/adminpublic.html"}
 管理帐户
 
+    {: .navgroup id="learn"}
+    [用于组织用户、团队和应用程序的最佳实践](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
+    {: .navgroup-end}
+
     {: .navgroup id="howto"}
     {: .topicgroup}
     帐户设置
@@ -13,11 +17,10 @@
 
     change-plan.md
     softlayerlink.md
-    linking_accounts.md
     resourcegroups.md
-    
+
     {: .topicgroup}
-    管理组织
+    管理组织和空间
         orgs_spaces.md
         manageorg.md
 
@@ -31,7 +34,7 @@
 
     {: .navgroup id="help"}
     notifications.md
-    ../troubleshoot/ts_accessing.md
-    ../troubleshoot/ts_accounts.md
+    [有关访问 IBM Cloud 的故障诊断](../troubleshoot/ts_accessing.html)
+    [有关管理帐户的故障诊断](../troubleshoot/ts_accounts.html)
     account_faq.md
     {: .navgroup-end}

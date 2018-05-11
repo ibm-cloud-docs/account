@@ -4,6 +4,10 @@
 {: .toc subcollection="account" audience="platform" href="/docs/account/adminpublic.html"}
 Eigenes Konto verwalten
 
+    {: .navgroup id="learn"}
+    [Bewährte Verfahren für die Verwaltung von Benutzern, Teams und Anwendungen](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
+    {: .navgroup-end}
+
     {: .navgroup id="howto"}
     {: .topicgroup}
     Kontoeinrichtung
@@ -13,11 +17,10 @@ Eigenes Konto verwalten
 
     change-plan.md
     softlayerlink.md
-    linking_accounts.md
     resourcegroups.md
-    
+
     {: .topicgroup}
-    Organisationen verwalten
+    Organisationen und Bereiche verwalten
         orgs_spaces.md
         manageorg.md
 
@@ -31,7 +34,7 @@ Eigenes Konto verwalten
 
     {: .navgroup id="help"}
     notifications.md
-    ../troubleshoot/ts_accessing.md
-    ../troubleshoot/ts_accounts.md
+    [Fehlerbehebung für den Zugriff auf IBM Cloud](../troubleshoot/ts_accessing.html)
+    [Fehlerbehebung für die Verwaltung von Konten](../troubleshoot/ts_accounts.html)
     account_faq.md
     {: .navgroup-end}

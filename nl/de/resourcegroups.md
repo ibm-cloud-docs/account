@@ -5,7 +5,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-02-08"
+lastupdated: "2018-03-22"
 
 
 ---
@@ -23,9 +23,6 @@ Ressourcengruppen bieten Ihnen die Möglichkeit, Ihre Kontoressourcen in anpassb
 
 Um mit dem Verwalten Ihrer Ressourcengruppen zu beginnen, rufen Sie an der {{site.data.keyword.Bluemix}}-Konsole die Optionen **Verwalten** &gt; **Konto** &gt; **Ressourcengruppen** auf. Dort können Sie Ihre Ressourcengruppen anzeigen, umbenennen und neue Ressourcengruppen erstellen.
 
-## Ressourcen in Ressourcengruppen anzeigen
-
-Um die Ressourcen, die in einer Ressourcengruppe enthalten sind, auf einfache Weise anzeigen zu können, müssen Sie die Informationen über das Dashboard nach Ressourcengruppen filtern.
 
 ## Ressourcengruppe erstellen
 
@@ -40,6 +37,14 @@ Die einzelnen Ressourcengruppen sind kostenlos, die Verbindungen zwischen einer 
 2. Klicken Sie auf **Ressourcengruppe erstellen**.
 3. Geben Sie einen Namen für Ihre Ressourcengruppe ein.
 4. Klicken Sie auf **Hinzufügen**.
+
+## Ressourcen zu einer Ressourcengruppe hinzufügen
+
+Services, die mithilfe von IAM verwaltet werden, gehören nicht zu einer Organisation oder einem Bereich von Cloud Foundry, sondern zu einer Ressourcengruppe. Wenn Sie eine Serviceinstanz für einen dieser Services aus dem Katalog erstellen, werden Sie aufgefordert, die Instanz einer Ressourcengruppe zuzuweisen. Ihre Ressourcengruppenauswahl bei der Erstellung der Instanz ist endgültig und kann nicht geändert werden.
+
+## Ressourcen in Ressourcengruppen anzeigen
+
+Um die Ressourcen, die in einer Ressourcengruppe enthalten sind, auf einfache Weise anzeigen zu können, müssen Sie die Informationen über das Dashboard nach Ressourcengruppen filtern.
 
 ## Ressourcengruppe umbenennen
 

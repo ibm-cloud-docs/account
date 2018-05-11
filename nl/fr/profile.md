@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-04-06"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-01-10"
 # Configuration de votre profil
 {: #usersettings}
 
-Lorsque vous commencez à utiliser {{site.data.keyword.Bluemix}}, vous pouvez décider de configurer votre profil de compte. Sélectionnez l'icône **{{site.data.keyword.avatar}}** ![Icône d'avatar](../icons/i-avatar-icon.svg) &gt; **Afficher le profil** pour définir ou mettre à jour vos paramètres de profil.
+Lorsque vous commencez à utiliser {{site.data.keyword.Bluemix}}, configurez votre profil de compte. Sélectionnez l'icône **{{site.data.keyword.avatar}}** ![Icône d'avatar](../icons/i-avatar-icon.svg) &gt; **Afficher le profil** pour définir ou mettre à jour vos paramètres de profil.
 {:shortdesc}
 
 Vous pouvez définir ou mettre à jour les informations suivantes :
@@ -26,9 +26,9 @@ Vous pouvez définir ou mettre à jour les informations suivantes :
  * Informations IBMid, telles que votre nom, votre adresse électronique, votre numéro de téléphone, votre mot de passe, votre société et votre rôle
  * Paramètre Suivi pour analyse
 
-Vous pouvez également décider de vous abonner à des notifications et prendre connaissance de vos options de support pour savoir où et comment obtenir de l'aide en cas de problème, ou pour faire part de vos commentaires à IBM.
+Vous pouvez également décider de vous abonner à des notifications ou prendre connaissance de vos options de support pour savoir où et comment obtenir de l'aide en cas de problème. 
 
-Si vous êtes l'administrateur d'un environnement {{site.data.keyword.Bluemix_notm}} local ou {{site.data.keyword.Bluemix_notm}} dédié, voir [Gestion de l'environnement {{site.data.keyword.Bluemix_notm}} local et de l'environnement {{site.data.keyword.Bluemix_notm}} dédié](/docs/hybrid/index.html#mng) pour des détails sur la gestion de votre compte depuis la page Administration.
+Si vous êtes l'administrateur d'un environnement {{site.data.keyword.Bluemix_local_notm}} ou {{site.data.keyword.Bluemix_notm}} dédié, voir [Gestion de l'environnement {{site.data.keyword.Bluemix_local_notm}} et de l'environnement {{site.data.keyword.Bluemix_notm}} dédié](/docs/hybrid/index.html#mng) pour plus de détails sur la gestion de votre compte depuis la page Administration.
 
 ## Modification de la photo de votre profil
 {: #photo notoc}
@@ -55,8 +55,8 @@ Vous ne pouvez pas changer votre IBMid, mais vous pouvez éditer vos information
 ## Paramètre Suivi pour analyse
 {: #tracking}
 
-Le suivi des actions dans la console {{site.data.keyword.Bluemix_notm}} est effectué par défaut. Il permet à notre équipe
-{{site.data.keyword.Bluemix_notm}} de vous proposer une meilleure expérience et d'assurer un meilleur support. Les données qui sont collectées ne sont pas utilisées ni partagées à d'autres fins.
+Le suivi des actions dans la console {{site.data.keyword.Bluemix_notm}} est effectué par défaut. Il permet à l'équipe
+{{site.data.keyword.Bluemix_notm}} de vous proposer une meilleure expérience et d'assurer un meilleur support. Les données collectées ne sont pas utilisées ni partagées à d'autres fins.
 
 Si vous choisissez de désactiver le suivi, il se peut que vous ne puissiez pas utiliser certaines fonctions, telles que la communication par messagerie instantanée.
 
@@ -64,10 +64,3 @@ Afin de désactiver le suivi pour analyse, procédez comme suit :
 
 1. Cliquez sur l'icône **{{site.data.keyword.avatar}}** ![icône Avatar](../icons/i-avatar-icon.svg) &gt; **Afficher le profil**.
 2. Désactivez le suivi pour analyse en spécifiant **off**.
-
-## Envoi de commentaires
-{: #feedback}
-
-Pour soumettre des idées qui pourraient améliorer {{site.data.keyword.Bluemix_notm}}  et les services, accédez à [IBM Cloud Ideas ![Icône de lien externe](../icons/launch-glyph.svg)](https://ibmcloud.ideas.aha.io){: new_window}. Pour plus d'informations sur l'utilisation du portail d'idées, voir [Think, write, submit: New ideas portal for IBM Cloud ![Icône de lien externe](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/10/05/think-write-submit/){: new_window}.
-
-Pour nous faire part de vos commentaires sur la documentation, cliquez sur le lien **Feedback** sur chaque page, ou collaborez avec nous en cliquant sur le lien d'**édition dans GitHub** après le titre. Pour plus d'informations sur la contribution à la documentation, voir [When it comes to docs, everyone can contribute in {{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/01/13/bluemix-docs-now-open-source-on-github/){: new_window}.

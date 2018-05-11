@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-04-06"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-01-10"
 # 设置个人档案
 {: #usersettings}
 
-首次开始使用 {{site.data.keyword.Bluemix}} 时，您会希望设置帐户个人档案。转至 **{{site.data.keyword.avatar}}** 图标 ![“头像”图标](../icons/i-avatar-icon.svg) &gt; **查看个人档案**，以设置或更新个人档案设置。
+首次开始使用 {{site.data.keyword.Bluemix}} 时，请设置帐户个人档案。转至 **{{site.data.keyword.avatar}}** 图标 ![“头像”图标](../icons/i-avatar-icon.svg) &gt; **查看个人档案**，以设置或更新个人档案设置。
 {:shortdesc}
 
 可以设置或更新以下信息：
@@ -26,9 +26,9 @@ lastupdated: "2018-01-10"
  * IBM 标识信息，包括您的姓名、电子邮件、电话号码、密码、公司和角色
  * 分析跟踪设置
 
-您可能还希望注册通知，检查支持选项，以便了解遇到任何问题时在哪里可获取帮助以及可采取什么措施，或者如何向 IBM 提供反馈。
+您可能还希望注册通知或检查支持选项，以便了解遇到任何问题时在哪里可获取帮助以及可采取什么措施。
 
-如果您是 {{site.data.keyword.Bluemix_notm}} Local 或 {{site.data.keyword.Bluemix_notm}} Dedicated 的管理员，请参阅[管理 {{site.data.keyword.Bluemix_notm}} Local 或 {{site.data.keyword.Bluemix_notm}} Dedicated](/docs/hybrid/index.html#mng)，以获取有关使用“管理”页面来管理帐户的详细信息。
+如果您是 {{site.data.keyword.Bluemix_local_notm}} 或 {{site.data.keyword.Bluemix_notm}} Dedicated 的管理员，请参阅[管理 {{site.data.keyword.Bluemix_local_notm}} 或 {{site.data.keyword.Bluemix_notm}} Dedicated](/docs/hybrid/index.html#mng)，以获取有关使用“管理”页面来管理帐户的详细信息。
 
 ## 更改个人档案照片
 {: #photo notoc}
@@ -62,10 +62,3 @@ IBM 标识是您用于登录到 {{site.data.keyword.Bluemix_notm}} 帐户以获�
 
 1. 转至 **{{site.data.keyword.avatar}}** 图标 ![“头像”图标](../icons/i-avatar-icon.svg) &gt; **查看个人档案**。
 2. 将分析跟踪设置为**关闭**。
-
-## 提供反馈
-{: #feedback}
-
-要提交针对 {{site.data.keyword.Bluemix_notm}} 和服务改进的想法，请转至 [IBM Cloud Ideas ![外部链接图标](../icons/launch-glyph.svg)](https://ibmcloud.ideas.aha.io){: new_window}。有关如何使用构想门户网站的更多信息，请参阅 [Think, write, submit: New ideas portal for IBM Cloud ![外部链接图标](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/10/05/think-write-submit/){: new_window}。
-
-要提供有关文档的反馈，请单击每个页面上的**反馈**链接，或者通过单击标题后的**在 GitHub 中编辑**链接来与我们协作。有关如何帮助改进文档的更多信息，请参阅 [When it comes to docs, everyone can contribute in {{site.data.keyword.Bluemix_notm}} ![外部链接图标](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/01/13/bluemix-docs-now-open-source-on-github/){: new_window}。

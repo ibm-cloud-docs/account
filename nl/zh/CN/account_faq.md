@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-03-09"
+lastupdated: "2018-03-28"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-03-09"
 # 常见问题
 {: #accountfaqs}
 
-## 我可以使用哪些 {{site.data.keyword.Bluemix_notm}} 区域？
+## 我可以使用哪些 Cloud Foundry 区域？
 {: #whichregions}
 
 在轻量帐户中，您仅可以在一个区域中工作。在现买现付或预订帐户中，您可以访问所有区域。

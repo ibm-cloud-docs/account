@@ -5,7 +5,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-02-08"
+lastupdated: "2018-03-22"
 
 
 ---
@@ -23,9 +23,6 @@ Un groupe de ressources permet d'organiser vos ressources de compte en regroupem
 
 Pour démarrer la gestion de vos groupes de ressources, accédez à **Gérer** &gt; **Compte** &gt; **Groupes de ressources** dans la console {{site.data.keyword.Bluemix}}. Vous pouvez alors afficher vos groupes de ressources, les renommer et créer de nouveaux groupes de ressources.
 
-## Affichage des ressources des groupes de ressources
-
-Pour afficher facilement les ressources que contient un groupe de ressources, filtrez par groupe de ressources à partir du tableau de bord.
 
 ## Création d'un groupe de ressources
 
@@ -40,6 +37,14 @@ Tous les groupes de ressources sont gratuits, en revanche, les connexions entre 
 2. Cliquez sur **Créer un groupe de ressources**.
 3. Entrez un nom pour le groupe de ressources.
 4. Cliquez sur **Ajouter**.
+
+## Ajout de ressources à un groupe de ressources
+
+Les services qui sont gérés à l'aide d'IAM appartiennent à un groupe de ressources et non à une organisation ou un espace Cloud Foundry. Lorsque vous créez une instance de service pour l'un de ces services à partir du catalogue, vous êtes invité à affecter l'instance à un groupe de ressources. Votre sélection de groupe de ressource au moment de la création de l'instance est définitive et ne peut pas être modifiée. 
+
+## Affichage des ressources des groupes de ressources
+
+Pour afficher facilement les ressources que contient un groupe de ressources, filtrez par groupe de ressources à partir du tableau de bord.
 
 ## Modification du nom d'un groupe de ressources
 

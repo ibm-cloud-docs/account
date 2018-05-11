@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2018
 
-lastupdated: "2018-03-05"
+lastupdated: "2018-04-12"
 
 ---
 
@@ -32,7 +32,7 @@ Pour faire basculer votre compte SoftLayer existant vers un IBMid, vous devez cr
 
 1. Connectez-vous à votre compte SoftLayer et cliquez sur **OK** lorsque vous êtes invité à passer à un IBMid.
 
-   Si vous êtes un utilisateur principal et qu'aucun message vous invitant à passer à un IBMid ne s'affiche dans le portail client de l'infrastructure {{site.data.keyword.BluSoftlayer_full}}, prenez contact avec le support IBM pour obtenir de l'aide. Pour plus d'informations sur la prise de contact avec le support, voir [Support IBM](/docs/get-support/howtogetsupport.html#getting-customer-support). 
+   Si vous êtes un utilisateur principal et qu'aucun message vous invitant à passer à un IBMid ne s'affiche dans le portail client de l'infrastructure {{site.data.keyword.BluSoftlayer_full}}, prenez contact avec le support IBM pour obtenir de l'aide. Pour plus d'informations sur la prise de contact avec le support, voir [Support IBM](/docs/get-support/howtogetsupport.html#getting-customer-support).
 
    Si vous vous êtes déjà connecté et avez cliqué sur **Plus tard** dans l'invite, mais voulez passer à l'authentification par IBMid dans la session en cours, accédez à la page d'édition du profil utilisateur et cliquez sur **Passer à l'IBMid**.
 
@@ -57,12 +57,29 @@ Si vous êtes un nouveau client, vous êtes invité à entrer votre IBMid ou à 
 
 Afin de résoudre les problèmes liés à la connexion avec votre IBMid, voir [Traitement des incidents liés à l'accès à {{site.data.keyword.Bluemix_notm}}](/docs/troubleshoot/ts_accessing.html#accessing).
 
-## Liaison de comptes utilisateur IBMid
-{: #link_user_accounts}
 
-Une fois que vos comptes utilisateur sont passés à l'authentification par IBMid, les revendeurs et les distributeurs peuvent lier les comptes SoftLayer et {{site.data.keyword.Bluemix_notm}} pour combiner des ressources IaaS (infrastructure sous forme de services) et PaaS (plateforme sous forme de services). Vous pouvez ensuite accéder à des ressources IaaS à partir du portail client de l'infrastructure {{site.data.keyword.BluSoftlayer_full}} et à des ressources PaaS à partir de la console {{site.data.keyword.Bluemix_notm}}, à partir d'une seule connexion. Le fait de lier vos comptes vous permet également d'obtenir une seule facture pour toutes les ressources PaaS et  IaaS que vous utilisez. 
+## Liaison de comptes IBMid
+{: #link_accounts}
 
-Pour lier des comptes, vous devez être un utilisateur principal SoftLayer. L'IBMid correspondant à l'utilisateur principal du compte doit être le propriétaire du compte de plateforme {{site.data.keyword.Bluemix_notm}} auquel vous établissez la liaison. Prenez soin de passer en revue les remarques importantes suivantes avant de lier vos comptes :
+Une fois que les comptes sont devenus des comptes IBMid, vous pouvez lier les comptes SoftLayer et {{site.data.keyword.Bluemix_notm}} pour utiliser des ressources IaaS (infrastructure sous forme de services) et PaaS (plateforme sous forme de services) combinées. Vous pouvez ensuite accéder aux ressources IaaS et PaaS à partir d'une seule connexion. Le fait de lier vos comptes vous permet également d'obtenir une seule facture pour toutes les ressources PaaS et IaaS que vous utilisez. Vous pouvez lier votre propre compte ou, si vous êtes un utilisateur maître, vous pouvez lier vos comptes utilisateur. 
+
+### Liaison de votre compte IBMid
+{: #link_user_account}
+
+Si vous êtes un client d'infrastructure {{site.data.keyword.BluSoftlayer_full}} et que vous possédez également des comptes PaaS dans {{site.data.keyword.Bluemix_notm}} ou que vous les créez, vous pouvez lier IaaS et PaaS pour une vue unique de vos comptes. Pour lier vos comptes, procédez comme suit :
+1. Connectez-vous à votre compte SoftLayer. 
+2. Depuis la page Récapitulatif du compte, cliquez sur **Nouveau ! Liez un compte Bluemix**.
+3. Lisez les conditions d'utilisation et cliquez pour confirmer que vous les acceptez. 
+4. Effectuez l'une des étapes finales suivantes, en fonction de la configuration de votre compte :
+  * Si un compte {{site.data.keyword.Bluemix_notm}} est associé à votre IBMid, vous êtes redirigé vers une page d'autorisation, puis ramené à l'étape de confirmation finale. 
+  * Si vous ne possédez aucun compte {{site.data.keyword.Bluemix_notm}}, vous êtes invité à en créer un. 
+
+Pour afficher les questions et réponses courantes concernant la liaison de votre compte, consultez les [foires aux questions](/docs/account/account_faq.html#al_login).
+
+### Liaison de comptes utilisateur IBMid
+{: #link_customer_accounts}
+
+Une fois que vos comptes utilisateur sont passés à l'authentification par IBMid, les revendeurs et les distributeurs peuvent lier leurs comptes utilisateur. Pour lier des comptes client, vous devez être un utilisateur maître SoftLayer. L'IBMid correspondant à l'utilisateur principal du compte doit être le propriétaire du compte de plateforme {{site.data.keyword.Bluemix_notm}} auquel vous établissez la liaison. Prenez soin de passer en revue les remarques importantes suivantes avant de lier vos comptes :
 
   * L'utilisateur principal du compte SoftLayer qui est lié doit posséder un IBMid.
   * Chaque compte utilisateur que vous liez à un compte {{site.data.keyword.Bluemix_notm}} doit être détenu par un IBMid unique associé à une adresse électronique unique. Même si un IBMid unique peut être associé à plusieurs comptes SoftLayer, vous devez changer l'utilisateur principal afin qu'il corresponde à un IBMid unique pour chaque compte. Prenez contact avec le support pour changer l'utilisateur principal d'un compte SoftLayer. Pour plus d'informations, voir [Support pour l'infrastructure {{site.data.keyword.Bluemix_notm}}](/docs/customer-portal/cpsupport.html).
@@ -72,14 +89,14 @@ Pour lier des comptes, vous devez être un utilisateur principal SoftLayer. L'IB
 
 Pour lier chaque compte SoftLayer à un compte de plateforme {{site.data.keyword.Bluemix_notm}} existant ou pour en créer un nouveau, procédez comme suit :
 
-   1. Connectez-vous au portail client de l'infrastructure {{site.data.keyword.BluSoftlayer_full}} avec votre IBMid de compte d'utilisateur principal. 
+   1. Connectez-vous au portail client de l'infrastructure {{site.data.keyword.BluSoftlayer_full}} avec votre IBMid de compte d'utilisateur principal.
    2. A partir du portail client de l'infrastructure {{site.data.keyword.Bluemix_notm}}, cliquez sur **Lier un compte Bluemix**.
    3. Lisez et acceptez les dispositions pour la liaison de comptes SoftLayer et {{site.data.keyword.Bluemix_notm}}.
    4. Suivez les invites de l'assistant en ajoutant les utilisateurs du compte SoftLayer au compte {{site.data.keyword.Bluemix_notm}}.
    5. Lorsque vous y êtes invité, effectuez l'une des actions suivantes :
-     * Si vous possédez déjà un compte {{site.data.keyword.Bluemix_notm}}, indiquez l'adresse électronique qui est associée à ce compte afin de lier les comptes. 
+     * Si vous possédez déjà un compte {{site.data.keyword.Bluemix_notm}}, indiquez l'adresse électronique qui est associée à ce compte afin de lier les comptes.
      * Si vous ne possédez pas de compte {{site.data.keyword.Bluemix_notm}}, indiquez l'adresse électronique que vous voulez utiliser, suivez les instructions pour être invité dans {{site.data.keyword.Bluemix_notm}} et créez un compte.
-   6. Après avoir lié le compte, indiquez à l'utilisateur final de chaque compte qu'il doit migrer vers l'IBMid en suivant la procédure décrite dans la section précédente intitulée [Passage à l'IBMid](/docs/account/softlayerlink.html#switchtoIBMid). 
+   6. Après avoir lié le compte, indiquez à l'utilisateur final de chaque compte qu'il doit migrer vers l'IBMid en suivant la procédure décrite dans la section précédente intitulée [Passage à l'IBMid](/docs/account/softlayerlink.html#switchtoIBMid).
 
 Migrez uniquement les comptes d'utilisateur final vers l'IBMid. Ne migrez pas les comptes de marque, qui sont les comptes parent des comptes utilisateur final et qui ne contiennent aucune ressource. Les utilisateurs des comptes de marque qui migrent vers l'IBMid perdent la possibilité de se connecter à Brand Agent Portal (BAP).
 {: tip}
@@ -90,7 +107,7 @@ De plus, tenez compte des changements suivants après la liaison de vos comptes 
   * Vous devez utiliser vos données d'identification IBMid pour accéder à votre compte SoftLayer et à votre compte
 {{site.data.keyword.Bluemix_notm}}.
   * Les remises SoftLayer existantes sont appliquées à tous les prix {{site.data.keyword.Bluemix_notm}}.
-  * Vous recevez une facture en dollars américains (USD). Si vous disposez d'un compte {{site.data.keyword.Bluemix_notm}}, la facturation via {{site.data.keyword.Bluemix_notm}} pour les ressources d'infrastructure entre en vigueur au prochain cycle de facturation après que les comptes ont été liés.
+  * Vous recevez une facture en dollars américains (USD). Si vous disposez d'un compte {{site.data.keyword.Bluemix_notm}}, la facturation via {{site.data.keyword.Bluemix_notm}} pour les ressources d'infrastructure entre en vigueur au prochain cycle de facturation après que les comptes ont été liés. Pour plus d'informations, voir [Facturation en bloc pour des comptes liés](/docs/account/linking_accounts.html).
   * Vous pouvez surveiller l'utilisation de vos ressources d'infrastructure dans la console {{site.data.keyword.Bluemix_notm}}.
 
 Une fois vos comptes liés, cette opération est irréversible.
