@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-04-06"
 
 
 ---
@@ -20,18 +20,23 @@ lastupdated: "2018-01-10"
 Inscreva-se para ser notificado sobre seus limites de gasto da conta do {{site.data.keyword.Bluemix}} e atualizações de manutenção para as regiões Públicas da plataforma {{site.data.keyword.Bluemix_notm}}. As notificações de gastos estão disponíveis apenas para proprietários da conta pré-paga e de assinatura.
 {:shortdesc}
 
-É possível configurar notificações por e-mail para incidentes e manutenção planejada do {{site.data.keyword.Bluemix_notm}} e é possível configurar notificações de gastos que o alertam quando sua conta está perto do limite de gastos que você especificou. Acesse **Gerenciar > Conta > Notificações de plataforma** para configurar tipos de notificação diferentes para a sua conta.
+É possível configurar notificações por e-mail para incidentes e manutenção planejada do
+{{site.data.keyword.Bluemix_notm}}.
+Também é possível configurar notificações de gastos que o alertam quando sua conta está perto do limite de
+gastos que você especificou. Acesse **Gerenciar > Conta > Notificações de plataforma** para configurar tipos de notificação diferentes para a sua conta.
 
 ## Configurando notificações de plataforma
 {: #platform}
 
-Na barra de menus do console, clique em **Gerenciar > Conta > Notificações de plataforma** para configurar notificações por e-mail para incidentes e manutenção planejada do {{site.data.keyword.Bluemix_notm}}. É possível selecionar ou limpar cada opção para ativar ou desativar as notificações por e-mail.
+Clique em **Gerenciar > Conta > Notificações da plataforma** para configurar
+notificações por e-mail para incidentes e manutenção planejada do {{site.data.keyword.Bluemix_notm}}. É possível selecionar ou limpar cada opção para ativar ou desativar as notificações por e-mail.
 
 ## Configurando notificações de gastos
 {: #spending}
 
-Se você for um proprietário da conta pré-paga ou de assinatura, será possível configurar notificações de gastos por e-mail. Configure as notificações para a conta
-total, o tempo de execução, o contêiner e gastos de serviço, bem como os gastos para serviços individuais, excluindo serviços de terceiro. Você recebe notificações ao atingir 80%, 90% e 100% dos limites de
+Se você for um proprietário da conta pré-paga ou de assinatura, será possível configurar notificações de gastos por e-mail. 
+Configure as notificações para a conta total, tempo de execução, contêiner e gastos de serviço ou os gastos
+para serviços individuais, exceto serviços de terceiros. Você recebe notificações ao atingir 80%, 90% e 100% dos limites de
 gastos especificados. É possível editar cada notificação de gastos a qualquer momento, conforme as suas necessidades mudarem.
 
   1. Na barra de menus do console, clique em **Gerenciar > Conta > Notificações da plataforma > Gastos**.

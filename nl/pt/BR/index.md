@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-03-12"
+lastupdated: "2018-03-28"
 
 ---
 
@@ -30,6 +30,7 @@ A tabela a seguir fornece uma comparação das contas Lite, Pré-paga e de Assin
 | **Acesso aos [Planos de serviços Lite ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://console.bluemix.net/catalog/?search=label:lite){: new_window}** | ![Recurso disponível](../icons/icon_enabled.svg) | ![Recurso disponível](../icons/icon_enabled.svg) | ![Recurso disponível](../icons/icon_enabled.svg) |
 | **Acesso a todos os planos grátis** |  | ![Recurso disponível](../icons/icon_enabled.svg) | ![Recurso disponível](../icons/icon_enabled.svg) |
 | **Acesso ao catálogo integral** |  | ![Recurso disponível](../icons/icon_enabled.svg) | ![Recurso disponível](../icons/icon_enabled.svg) |
+| **Acesso a múltiplas regiões do Cloud Foundry** |  | ![Recurso disponível](../icons/icon_enabled.svg) | ![Recurso disponível](../icons/icon_enabled.svg) |
 | **Sem restrições de tempo** | ![Recurso disponível](../icons/icon_enabled.svg) | ![Recurso disponível](../icons/icon_enabled.svg) | ![Recurso disponível](../icons/icon_enabled.svg) |
 | **Custo zero garantido** | ![Recurso disponível](../icons/icon_enabled.svg) |  |  |
 | **Precificação negociada** |  |  | ![Recurso disponível](../icons/icon_enabled.svg) |
@@ -114,7 +115,9 @@ Com o {{site.data.keyword.Bluemix_dedicated_notm}}, é necessário inscrever-se 
 Também é possível pedir itens opcionais, tais como
 o SoftLayer DirectLink ou opções de suporte premium. Entre em contato com [Vendas do {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg) para obter informações adicionais.
 
-O que é pago todos os meses durante esse prazo baseia-se nos serviços dedicados que você deseja, além de uma conta Assinatura que fornece acesso a todos os serviços públicos. Os encargos de uso dos serviços no {{site.data.keyword.Bluemix_notm}} Público são calculados com base no contrato da conta da assinatura. Você recebe uma fatura para os serviços usados, além desse contrato de assinatura. Entre em contato com o representante de conta designado da IBM ou com [Vendas do {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg) para iniciar seu contrato.
+O que é pago todos os meses durante esse prazo baseia-se nos serviços dedicados que você deseja, além de uma conta Assinatura que fornece acesso a todos os serviços públicos. Os encargos de uso dos serviços no {{site.data.keyword.Bluemix_notm}} Público são calculados com base no contrato da conta da assinatura. Você recebe
+uma fatura para os serviços usados, além desse contrato de
+assinatura. Entre em contato com o representante de conta designado da IBM ou com [Vendas do {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg) para iniciar seu contrato.
 
 ### Conta do {{site.data.keyword.Bluemix_local_notm}}
 

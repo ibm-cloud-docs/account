@@ -5,7 +5,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-02-08"
+lastupdated: "2018-03-22"
 
 
 ---
@@ -27,9 +27,6 @@ grupo de recursos em sua conta. Os serviços do Cloud Foundry permanecem designa
 
 Para começar a gerenciar seus grupos de recursos, acesse **Gerenciar** &gt; **Conta** &gt; **Grupos de recursos** no console do {{site.data.keyword.Bluemix}}. A partir daí, é possível visualizar os grupos de recursos, renomeá-los e criar novos grupos de recursos.
 
-## Visualizando recursos em grupos de recursos
-
-Para visualizar facilmente os recursos contidos em um grupo de recursos, filtre por grupo de recursos de seu painel.
 
 ## Criando um grupo de recursos
 
@@ -44,6 +41,17 @@ Cada grupo de recursos é grátis, no entanto, as conexões entre um grupo de re
 2. Clique em **Criar um grupo de recursos**.
 3. Insira um nome para seu grupo de recursos.
 4. Clique em ** Adicionar**.
+
+## Incluindo recursos em um grupo de recursos
+
+Os serviços que são gerenciados usando o IAM pertencem a um grupo de recursos, não a uma
+organização ou espaço do Cloud Foundry. Ao criar uma instância de serviço para um desses serviços do catálogo,
+é solicitado que você designe a instância a um grupo de recursos. A seleção de grupo de recursos no momento da
+criação da instância é definitiva e não pode ser mudada.
+
+## Visualizando recursos em grupos de recursos
+
+Para visualizar facilmente os recursos contidos em um grupo de recursos, filtre por grupo de recursos de seu painel.
 
 ## Renomeando um grupo de recursos
 

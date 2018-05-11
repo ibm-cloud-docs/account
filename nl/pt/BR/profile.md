@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-04-06"
 
 ---
 
@@ -17,18 +17,25 @@ lastupdated: "2018-01-10"
 # Configurando seu Perfil
 {: #usersettings}
 
-Quando você estiver iniciando o {{site.data.keyword.Bluemix}} pela primeira vez, desejará configurar o perfil de sua conta. Acesse o ícone **{{site.data.keyword.avatar}}** ![ícone Avatar](../icons/i-avatar-icon.svg) &gt; **Visualizar Perfil** para configurar ou atualizar suas configurações de perfil.
+Ao iniciar o {{site.data.keyword.Bluemix}} pela primeira vez, configure seu perfil de
+conta. Acesse o ícone **{{site.data.keyword.avatar}}** ![ícone Avatar](../icons/i-avatar-icon.svg) &gt; **Visualizar Perfil** para configurar ou atualizar suas configurações de perfil.
 {:shortdesc}
 
 É possível configurar ou atualizar as informações a seguir:
 
  * Uma foto do perfil que é visível para outros usuários do {{site.data.keyword.Bluemix_notm}}
- * Informações do ID IBM incluindo seu nome, e-mail, número do telefone, senha, empresa e função
+ * Informações do IBMid, que incluem seu nome, e-mail, número do telefone, senha, empresa e
+função
  * Configuração de rastreamento de analítica
 
-É possível que você também queira se inscrever para notificações, efetuar check-out de suas opções de suporte para que saiba onde ir e o que fazer se encontrar problemas ou fornecer feedback para a IBM.
+Talvez você também queira se inscrever para receber notificações ou consultar suas opções de suporte para
+que saiba para onde ir e o que fazer caso encontre qualquer problema.
 
-Se você for um administrador para o {{site.data.keyword.Bluemix_notm}} Local ou o {{site.data.keyword.Bluemix_notm}} Dedicated, veja [Gerenciando o {{site.data.keyword.Bluemix_notm}} Local ou o {{site.data.keyword.Bluemix_notm}} Dedicated](/docs/hybrid/index.html#mng), para obter detalhes sobre como gerenciar sua conta usando a página Administração.
+Se você for um administrador para o {{site.data.keyword.Bluemix_local_notm}} ou
+o {{site.data.keyword.Bluemix_notm}} Dedicated, consulte
+[Gerenciando o {{site.data.keyword.Bluemix_local_notm}} ou
+o {{site.data.keyword.Bluemix_notm}} Dedicated](/docs/hybrid/index.html#mng) para obter detalhes sobre como gerenciar sua
+conta usando a página Administração.
 
 ## Mudando a sua foto do perfil
 {: #photo notoc}
@@ -42,9 +49,12 @@ Acesse o ícone **{{site.data.keyword.avatar}}** ![Ícone de avatar](../icons/i-
 ## Editando suas informações do ID IBM
 {: #ibmid}
 
-Um IBMid é um ID único usado para efetuar login na conta do {{site.data.keyword.Bluemix_notm}} para infraestrutura, serviços e variáveis de aplicativo. O seu IBMid é o mesmo ID que é possível usar para acessar outros aplicativos IBM.
+Um IBMid é um ID único que você usa para efetuar login na sua conta do
+{{site.data.keyword.Bluemix_notm}}
+para infraestrutura, serviços e recursos de aplicativos. O seu IBMid é o mesmo ID que é possível usar para acessar outros aplicativos IBM.
 
-Não é possível mudar seu IBMid, mas é possível editar suas informações de perfil associadas a ele, como seu nome, e-mail, número do telefone, senha ou nome da empresa.
+Não é possível mudar seu IBMid, mas é possível editar suas informações de perfil que estejam associadas a
+ele, como seu nome, e-mail, número do telefone, senha ou nome da empresa.
 
 1. Acesse o ícone **{{site.data.keyword.avatar}}** ![Ícone de avatar](../icons/i-avatar-icon.svg) &gt; **Visualizar perfil**.
 2. Clique em **Editar seu IBMid**.
@@ -54,7 +64,9 @@ Não é possível mudar seu IBMid, mas é possível editar suas informações de
 ## Configuração de rastreamento de analítica
 {: #tracking}
 
-As ações no console do {{site.data.keyword.Bluemix_notm}} são rastreadas por padrão. O rastreamento permite que nossa equipe do {{site.data.keyword.Bluemix_notm}} construa uma experiência melhor para você e forneça melhor suporte. Os dados coletados não são usados ou compartilhados para outros propósitos.
+As ações no console do {{site.data.keyword.Bluemix_notm}} são rastreadas por padrão. O rastreamento permite que a equipe do {{site.data.keyword.Bluemix_notm}} construa uma
+experiência melhor para você e forneça melhor suporte. Os dados coletados não são usados ou compartilhados
+para outros propósitos.
 
 Se você optar por desativar o rastreamento, talvez não seja possível usar alguns recursos, como comunicações de bate-papo.
 
@@ -62,10 +74,3 @@ Para desativar o rastreamento de analítica, conclua as etapas a seguir:
 
 1. Acesse o ícone **{{site.data.keyword.avatar}}** ![Ícone de avatar](../icons/i-avatar-icon.svg) &gt; **Visualizar perfil**.
 2. Configure o rastreamento de analítica como **desligado**.
-
-## Fornecendo feedback
-{: #feedback}
-
-Para enviar ideias para melhorias do {{site.data.keyword.Bluemix_notm}} e de serviços, acesse [Ideias do IBM Cloud ![Ícone de link externo](../icons/launch-glyph.svg)](https://ibmcloud.ideas.aha.io){: new_window}. Para obter mais informações sobre como usar o portal de ideia, veja [Think, write, submit: New ideas portal for IBM Cloud ![Ícone de link externo](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/10/05/think-write-submit/){: new_window}.
-
-Para fornecer feedback sobre a documentação, clique no link **Feedback** em cada página ou colabore conosco, clicando no link **Editar no GitHub** após o título. Para obter mais informações sobre como contribuir com os docs, consulte'[Quando se trata de docs, todos podem contribuir no {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/01/13/bluemix-docs-now-open-source-on-github/){: new_window}.

@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-03-09"
+lastupdated: "2018-03-28"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-03-09"
 # FAQ
 {: #accountfaqs}
 
-## Quais regiões do {{site.data.keyword.Bluemix_notm}} posso usar?
+## Quais regiões do Cloud Foundry posso usar?
 {: #whichregions}
 
 Em uma conta Lite, é possível trabalhar em somente uma região. Em uma conta pré-paga ou de assinatura, é possível acessar todas as regiões.
@@ -76,7 +76,7 @@ Depois de vincular sua conta, você mantém o mesmo nível de suporte de quando 
 
   1. Veja o blog [Etapas para vincular suas contas do IaaS e PaaS](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/) para obter informações úteis. 
   2. No portal do cliente da infraestrutura do {{site.data.keyword.BluSoftlayer_full}}, abra um **Bate-papo de vendas em tempo real** para fazer perguntas sobre a conta.
-  3. Abra um chamado no portal do cliente da infraestrutura do {{site.data.keyword.BluSoftlayer_full}}. Selecione **Suporte** > **Incluir chamado** e, em seguida, no campo **Assunto**, selecione **Solicitação de contabilidade** para rotear sua pergunta da conta à equipe de suporte correta.
+  3. Abra um chamado no portal do cliente da infraestrutura do {{site.data.keyword.BluSoftlayer_full}}.  Selecione **Suporte** > **Incluir chamado** e, em seguida, no campo **Assunto**, selecione **Solicitação de contabilidade** para rotear sua pergunta da conta à equipe de suporte correta.
 
 Se você é a conta mestre, veja [Trabalhando com usuários](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) para obter mais informações sobre como gerenciar usuários.
 
@@ -102,7 +102,7 @@ Sim!  Se você vincular suas contas agora, será possível usar um crédito de U
 ## O que a inclusão dos serviços de plataforma do {{site.data.keyword.Bluemix_notm}} em minha conta do SoftLayer significa? 	
 {: #al_owaffslacct}
 
-Significa que sua conta tem acesso a todas as ofertas de plataforma do {{site.data.keyword.Bluemix_notm}}. Depois de incluir a oferta de plataforma do {{site.data.keyword.Bluemix_notm}} em sua conta, sua conta mestre precisará permitir que o usuário final tenha acesso à oferta.
+Significa que sua conta tem acesso a todas as ofertas de plataforma do {{site.data.keyword.Bluemix_notm}}.  Depois de incluir a oferta de plataforma do {{site.data.keyword.Bluemix_notm}} em sua conta, sua conta mestre precisará permitir que o usuário final tenha acesso à oferta.
 
 Se você é a conta mestre, veja [Trabalhando com usuários](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) para obter mais informações.
 
