@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-04-06"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-01-10"
 # 프로파일 설정
 {: #usersettings}
 
-{{site.data.keyword.Bluemix}}를 처음 시작하는 경우 계정 프로파일을 설정할 수 있습니다. **{{site.data.keyword.avatar}}** 아이콘 ![아바타 아이콘](../icons/i-avatar-icon.svg) &gt; **보기 프로파일**로 이동하여 프로파일을 설정하거나 업데이트할 수 있습니다.
+{{site.data.keyword.Bluemix}}를 처음 시작하는 경우 계정 프로파일을 설정하십시오. **{{site.data.keyword.avatar}}** 아이콘 ![아바타 아이콘](../icons/i-avatar-icon.svg) &gt; **보기 프로파일**로 이동하여 프로파일을 설정하거나 업데이트할 수 있습니다.
 {:shortdesc}
 
 다음 정보를 설정하거나 업데이트할 수 있습니다.
@@ -26,9 +26,9 @@ lastupdated: "2018-01-10"
  * 이름, 이메일, 전화번호, 비밀번호, 회사, 역할을 포함한 IBM ID 정보
  * 분석 추적 설정
 
-알림을 등록하거나, 문제점을 해결하기 위한 지원 옵션을 알아보거나, IBM에 피드백을 제공할 수도 있습니다.
+알림을 등록하거나 문제점을 해결하기 위한 지원 옵션을 알아볼 수도 있습니다.
 
-현재 {{site.data.keyword.Bluemix_notm}} 로컬 또는 {{site.data.keyword.Bluemix_notm}} 데디케이티드의 관리자인 경우, [{{site.data.keyword.Bluemix_notm}} 로컬 또는 {{site.data.keyword.Bluemix_notm}} 데디케이티드 관리](/docs/hybrid/index.html#mng)를 참조하여 관리 페이지를 통해 계정을 관리하는 방법을 확인할 수 있습니다.
+{{site.data.keyword.Bluemix_local_notm}} 또는 {{site.data.keyword.Bluemix_notm}} 데디케이티드의 관리자인 경우, 관리 페이지를 통해 계정을 관리하는 데 대한 세부사항은 [{{site.data.keyword.Bluemix_local_notm}} 또는 {{site.data.keyword.Bluemix_notm}} 데디케이티드 관리](/docs/hybrid/index.html#mng)를 참조하십시오.
 
 ## 프로파일 사진 변경
 {: #photo notoc}
@@ -42,7 +42,7 @@ lastupdated: "2018-01-10"
 ## IBM ID 정보 편집
 {: #ibmid}
 
-IBM ID는 인프라, 서비스 및 애플리케이션 기능에 대해 {{site.data.keyword.Bluemix_notm}} 계정에 로그인할 수 있는 단일 ID입니다. IBM ID는 다른 IBM 애플리케이션에 액세스하는 데 사용할 수 있는 동일한 ID입니다.
+IBM ID는 인프라, 서비스 및 애플리케이션 기능에 대해 {{site.data.keyword.Bluemix_notm}} 계정에 로그인하는 데 사용하는 단일 ID입니다. IBM ID는 다른 IBM 애플리케이션에 액세스하는 데 사용할 수 있는 동일한 ID입니다.
 
 IBM ID는 변경할 수 없지만, 이와 연관된 프로파일 정보(예: 이름, 이메일, 전화번호, 비밀번호 또는 회사 이름)는 편집이 가능합니다.
 
@@ -62,10 +62,3 @@ IBM ID는 변경할 수 없지만, 이와 연관된 프로파일 정보(예: 이
 
 1. **{{site.data.keyword.avatar}}** 아이콘 ![아바타 아이콘](../icons/i-avatar-icon.svg) &gt; **프로파일 보기**로 이동하십시오.
 2. 분석 추적을 **해제**로 설정하십시오.
-
-## 피드백 제공
-{: #feedback}
-
-{{site.data.keyword.Bluemix_notm}} 및 서비스 개선에 대한 의견을 제출하려면 [IBM Cloud Ideas ![외부 링크 아이콘](../icons/launch-glyph.svg)](https://ibmcloud.ideas.aha.io){: new_window}로 이동하십시오. 아이디어 포털의 사용 방법에 대한 자세한 정보는 [생각, 쓰기 및 제출: IBM Cloud의 새 아이디어 포털 ![외부 링크 아이콘](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/10/05/think-write-submit/){: new_window}을 참조하십시오.
-
-문서에 대한 피드백을 제공하려면 각 페이지의 **피드백** 링크를 클릭하거나 제목 다음에 **GitHub에서 편집** 링크를 클릭하여 IBM과 협업할 수 있습니다. 문서에 대한 컨트리뷰션 관련 세부 정보는 [문서에 관한 한 누구나 {{site.data.keyword.Bluemix_notm}}에서 컨트리뷰션할 수 있음 ![외부 링크 아이콘](../icons/launch-glyph.svg)](https://developer.ibm.com/bluemix/2016/01/13/bluemix-docs-now-open-source-on-github/){: new_window}을 참조하십시오.

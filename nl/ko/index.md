@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-03-12"
+lastupdated: "2018-03-28"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-03-12"
 # 계정 유형
 {: #accounts}
 
-{{site.data.keyword.Bluemix}}에서 무료로 빌드를 시작할 수 있습니다. 라이트, 종량과금제 및 구독 등 3개의 서로 다른 계정 유형에서 선택할 수 있습니다. 임의의 계정 유형을 사용하여 {{site.data.keyword.Bluemix_notm}}에서 시작할 수 있습니다. 단순히 요구사항에 최적인 유형을 선택하십시오.
+{{site.data.keyword.Bluemix}}에서 무료로 빌드를 시작할 수 있습니다. 라이트, 종량과금제 및 구독 등 3개의 서로 다른 계정 유형에서 선택할 수 있습니다. 임의의 계정 유형을 사용하여 {{site.data.keyword.Bluemix_notm}}에서 시작할 수 있습니다. 요구사항에 최적인 유형을 선택하기만 하면 됩니다.
 {:shortdesc}
 
 ## 계정 비교
@@ -30,6 +30,7 @@ lastupdated: "2018-03-12"
 | **[라이트 서비스 플랜 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.bluemix.net/catalog/?search=label:lite){: new_window}에 액세스** | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |
 | **모든 무료 사용제에 액세스** |  | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |
 | **전체 카탈로그에 액세스** |  | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |
+| **다중 Cloud Foundry 지역에 액세스** |  | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |
 | **시간 제한사항 없음** | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |
 | **보증된 제로 코스트** | ![기능 사용 가능](../icons/icon_enabled.svg) |  |  |
 | **협의된 가격 책정** |  |  | ![기능 사용 가능](../icons/icon_enabled.svg) |
@@ -49,7 +50,7 @@ lastupdated: "2018-03-12"
 
 ### 사용 가능한 기능
 
-라인트 계정에서 제공되는 내용이 궁금할 수 있습니다. 다음 주요 기능 목록을 확인하십시오.
+라이트 계정에서 제공되는 내용이 궁금할 수 있습니다. 다음 주요 기능 목록을 확인하십시오.
 
    * 계정이 무료로 제공됨 - 신용카드가 필요하지 않습니다.
    * 계정이 만료되지 않습니다.

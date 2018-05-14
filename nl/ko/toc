@@ -4,6 +4,10 @@
 {: .toc subcollection="account" audience="platform" href="/docs/account/adminpublic.html"}
 계정 관리
 
+    {: .navgroup id="learn"}
+    [사용자, 팀, 애플리케이션 구성에 대한 우수 사례](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
+    {: .navgroup-end}
+
     {: .navgroup id="howto"}
     {: .topicgroup}
     계정 설정
@@ -13,11 +17,10 @@
 
     change-plan.md
     softlayerlink.md
-    linking_accounts.md
     resourcegroups.md
-    
+
     {: .topicgroup}
-    조직 관리
+    조직 및 영역 관리
         orgs_spaces.md
         manageorg.md
 
@@ -31,7 +34,7 @@
 
     {: .navgroup id="help"}
     notifications.md
-    ../troubleshoot/ts_accessing.md
-    ../troubleshoot/ts_accounts.md
+    [IBM Cloud 액세스에 대한 문제점 해결](../troubleshoot/ts_accessing.html)
+    [계정 관리에 대한 문제점 해결](../troubleshoot/ts_accounts.html)
     account_faq.md
     {: .navgroup-end}
