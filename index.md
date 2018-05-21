@@ -84,6 +84,9 @@ You can upgrade your Pay-As-You-Go account to a Subscription account at any time
 
 With a Subscription account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. You commit to a minimum spending amount each month and receive a subscription discount that is applied to that minimum charge. You also pay for any usage that exceeds the minimum spending amount.
 
+If you link your Subscription account with a SoftLayer account, starting on the first of the next month, your combined charges are included on your {{site.data.keyword.Bluemix_notm}} invoice. For more information, see [Viewing credits](/docs/billing-usage/viewing_usage.html#credits).
+{: tip}
+
 To sign up for a Subscription account, and for more information about subscription rates and discounts, you must contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg)
 
 ### {{site.data.keyword.Bluemix_dedicated_notm}} account
