@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-03-28"
+lastupdated: "2018-05-21"
 
 ---
 
@@ -60,6 +60,16 @@ For help with getting up and running in {{site.data.keyword.Bluemix_notm}} or na
 
 You can also check out a number of helpful resources that are available in the [Support Center ![External link icon](../icons/launch-glyph.svg)](https://console.bluemix.net/unifiedsupport/supportcenter){: new_window}. From there, you can access Stack Overflow to post a question to our developer community. You can also submit a support ticket.
 
+## How many resource groups, orgs, or spaces can I create?
+{: #resourcelimit}
+
+If you have a billable account, there is not a limit on the number of resource groups, orgs, or spaces that you can create within your account. However, if you have a Lite account, you are limited to one org and one resource group.
+
+## Can I sign up for a free trial?
+{: #freetrial}
+
+{{site.data.keyword.Bluemix_notm}} trial accounts are available for faculty and students at accredited academic institutions. To qualify for a trial account, go to [onthehub.com/ibm ![External link icon](../icons/launch-glyph.svg)](http://onthehub.com/ibm){: new_window} and validate your institution credentials.
+
 ## After I link my account, how do I log in?
 {: #al_login}
 
@@ -87,30 +97,27 @@ If you have multiple SoftLayer accounts, you must link the accounts that have a 
 
 If you do not have a matching {{site.data.keyword.Bluemix_notm}} platform account, and an accompanying IBMid account, a NEW SoftLayer account can be created to link the accounts.
 
-## What if I don't want to link my account? 	
+## What if I don't want to link my account? 
 {: #al_bene}
 
 To help you experience more of {{site.data.keyword.Bluemix_notm}} all new functionality is being developed into a single {{site.data.keyword.Bluemix_notm}} console. When you merge your account, you'll get access to a more robust catalog, simplified account management, and a single login.
 
 If linking is not a viable option for you, contact your sales support for other options.
 
-## Are there incentives for linking my accounts now? 	
+## Are there incentives for linking my accounts now? 
 {: #al_incent}
 
 Yes!  If you link your accounts now, you can use a $200 credit to try PaaS services.
 
-## What does adding {{site.data.keyword.Bluemix_notm}} platform services to my SoftLayer account mean? 	
+## What does adding {{site.data.keyword.Bluemix_notm}} platform services to my SoftLayer account mean? 
 {: #al_owaffslacct}
 
 It means your account has access to all {{site.data.keyword.Bluemix_notm}} platform offerings.  After you add the {{site.data.keyword.Bluemix_notm}} platform offering to your account, your account master will need to enable end user to have access to the offering.
 
 If you are the account master, see [Working with users](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) for more information.
 
-## How does account linking impact my SoftLayer Master Account ID? 	
+## How does account linking impact my SoftLayer Master Account ID? 
 {: #al_howaffslmastacct}
 
 You can still use the ID for your SoftLayer account to sign into the {{site.data.keyword.BluSoftlayer_full}} infrastructure customer portal because the {{site.data.keyword.Bluemix_notm}} console is accessible using IBMids.
 
-## Is there a limit on the number of resource groups, orgs, or spaces that I can create?
-
-If you have a billable account, there is not a limit on the number of resource groups, orgs, or spaces that you can create within your account. However, if you have a Lite account, you are limited to one org and one resource group.
