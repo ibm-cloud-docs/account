@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-03-19"
+lastupdated: "2018-05-21"
 
 ---
 
@@ -97,7 +97,7 @@ To view the used and allocated quota for an org, complete the following steps:
    * The number of services 
    * Plan details 
 
-3. Expand the region details to view the quota at the space level. 
+3. Expand the row to view the quota at the space level for each region.  
 
 To change the quota that is allocated to an org, you must open a support ticket. For more information, see [Getting customer support](/docs/get-support/howtogetsupport.html#getting-customer-support). 
 
