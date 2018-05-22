@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -19,6 +19,6 @@ You can change account ownership with the command line interface. After you've c
 
 ## How to change the owner of a catalog resource
 
-To change the owner of a resource, with the [CLI](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_settings) use the following command:
+To change the owner of a resource, with the [CLI](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_commands_settings) use the following command:
 
-`bx catalog entry-visibility-set <service-id> --owner <account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <service-id> --owner <account-id or account-email>`
