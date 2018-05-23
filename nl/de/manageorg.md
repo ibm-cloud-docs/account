@@ -16,7 +16,7 @@ lastupdated: "2018-03-19"
 # Organisationen und Bereiche aktualisieren
 {: #orgupdates}
 
-Als Kontoeigner oder Organisationsmanager können Sie Management-Tasks auf der Organisationsebene und der Bereichsebene ausführen. Zu diesen Tasks gehören die Umbenennung einer Organisation oder eines Bereichs, die Zuweisung oder Aktualisierung von Cloud Foundry-Benutzerrollen, die Verwaltung von Domänen und die Anzeige von Details zum Organisationskontingent.
+Als Kontoeigner oder Organisationsmanager können Sie Management-Tasks auf der Organisationsebene und der Bereichsebene ausführen. Zu diesen Tasks gehören die Umbenennung einer Organisation oder eines Bereichs, die Zuweisung oder Aktualisierung von Cloud Foundry-Benutzerrollen, die Verwaltung von Domänen und die Anzeige von Details zum Organisationskontingent. 
 {:shortdesc}
 
 Klicken Sie zum Verwalten Ihrer Organisationen in der {{site.data.keyword.Bluemix}}-Konsole auf **Verwalten > Konto > Cloud Foundry-Organisationen**. Sie können immer nur die Ressourcen einer Organisation anzeigen. Wenn Sie ein Mitglied mehrerer Organisationen sind, können Sie in der Menüleiste der Konsole über den Link mit den Benutzerkontovorgaben zwischen den Organisationen umschalten.
@@ -58,7 +58,7 @@ Führen Sie die folgenden Schritte aus, um die Benutzerrollen für eine bestimmt
 1. Klicken Sie auf **Verwalten** > **Konto** > **Cloud Foundry-Organisationen**.
 2. Klicken Sie auf das Symbol 'Aktionen' und wählen Sie **Benutzer** aus.
 3. Je nachdem, wie Sie die Benutzerberechtigungen ändern wollen, aktivieren oder inaktivieren Sie das Kontrollkästchen einer bestimmten Rolle.
-4. Bestätigen Sie Ihre Änderungen, indem Sie auf **Speichern** klicken.  
+4. Bestätigen Sie Ihre Änderungen, indem Sie auf **Speichern** klicken. 
 
 ### Benutzerrollen auf Bereichsebene bearbeiten
 
@@ -68,7 +68,7 @@ Führen Sie die folgenden Schritte aus, um die Benutzerrollen für einen bestimm
 2. Klicken Sie auf die Organisation, in der der Bereich zugewiesen wird.
 3. Klicken Sie auf den Namen des Bereichs.
 4. Je nachdem, wie Sie die Benutzerberechtigungen ändern wollen, aktivieren oder inaktivieren Sie das Kontrollkästchen einer bestimmten Rolle.
-5. Bestätigen Sie Ihre Änderungen, indem Sie auf **Speichern** klicken. 
+5. Bestätigen Sie Ihre Änderungen, indem Sie auf **Speichern** klicken.
 
 ## Domänen verwalten
 {: #managedomains}

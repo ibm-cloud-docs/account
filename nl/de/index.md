@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-03-28"
+lastupdated: "2018-05-08"
 
 ---
 
@@ -33,7 +33,7 @@ Die folgende Tabelle enthält einen Vergleich von Lite-Konto, nutzungsabhängige
 | **Zugriff auf mehrere Cloud Foundry-Regionen** |  | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |
 | **Keine zeitlichen Begrenzungen** | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |
 | **Kostenfreiheitsgarantie** | ![Funktion verfügbar](../icons/icon_enabled.svg) |  |  |
-| **Preisgestaltung auf Verhandlungsbasis** |  |  | ![Funktion verfügbar](../icons/icon_enabled.svg) |
+| **Preise mit Nachlass** |  |  | ![Funktion verfügbar](../icons/icon_enabled.svg) |
 | **Eignung für Schulung oder Erstellung von POCs** | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |  |
 | **Eignung für den Produktionseinsatz** |  | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |
 {: caption="Tabelle 1. Vergleich von {{site.data.keyword.Bluemix_notm}}-Konten" caption-side="top"}

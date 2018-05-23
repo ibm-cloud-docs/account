@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2018
 
-lastupdated: "2018-04-12"
+lastupdated: "2018-05-01"
 
 ---
 
@@ -115,6 +115,8 @@ Das Verknüpfen der Konten kann nicht rückgängig gemacht werden.
 ## Nutzung von Mehrfaktorauthentifizierung in verknüpften Konten
 {: #2fa}
 
-Wenn Sie über ein verknüpftes Konto verfügen, können Sie auf der Seite mit den **Einstellungen** für das Identity and Access Management die Mehrfaktorauthentifizierung für Ihr Konto aktivieren. Diese Authentifizierung wird auch als 'Zwei-Faktor-Authentifizierung' bezeichnet und stellt eine Sicherheitsstufe für den Zugriff auf Ihr Konto bereit, die über das Standardverfahren mit erforderlicher IBMid und zugehörigem Kennwort hinausgeht. Die Mehrfaktorauthentifizierung für Ihr Konto wird auf alle Ressourcen in Ihrem verknüpften {{site.data.keyword.Bluemix_notm}}-Konto angewendet. Wenn sie für Ihr Konto aktiviert ist, gilt sich auch für alle Benutzer, die zu Ihrem Konto hinzugefügt wurden.
+Wenn Sie über ein verknüpftes Konto verfügen, können Sie auf der Seite mit den **Einstellungen** für das Identity and Access Management die Mehrfaktorauthentifizierung (MFA) für Ihr Konto aktivieren. Diese Authentifizierung wird auch als 'Zwei-Faktor-Authentifizierung' bezeichnet und stellt eine Sicherheitsstufe für den Zugriff auf Ihr Konto bereit, die über das Standardverfahren mit erforderlicher IBMid und zugehörigem Kennwort hinausgeht. Die Mehrfaktorauthentifizierung für Ihr Konto wird auf alle Ressourcen in Ihrem verknüpften {{site.data.keyword.Bluemix_notm}}-Konto angewendet. Wenn sie für Ihr Konto aktiviert ist, gilt sich auch für alle Benutzer, die zu Ihrem Konto hinzugefügt wurden.
 
-Die Mehrfaktorauthentifizierung erfolgt nicht pro IBMid. Sie erfolgt weiterhin pro Konto. Wenn eine IBMid mehreren Konten zugeordnet ist und Sie zwischen den Konten wechseln, müssen Sie Ihre Identität bei jedem Wechsel zu einem anderen Konto bestätigen, für das eine Zwei-Faktor-Authentifizierung erforderlich ist. Dies gilt auch, wenn das vorherige Konto und das neue Konto beide mit demselben Mechanismus für die Zwei-Faktor-Authentifizierung konfiguriert sind.
+Die Mehrfaktorauthentifizierung erfolgt nicht pro IBMid. Sie erfolgt pro Konto. Wenn eine IBMid mehreren Konten zugeordnet ist und Sie zwischen den Konten wechseln, müssen Sie Ihre Identität bei jedem Wechsel zu einem anderen Konto bestätigen, für das eine Zwei-Faktor-Authentifizierung erforderlich ist. Dies gilt auch, wenn das vorherige Konto und das neue Konto beide mit demselben Mechanismus für die Zwei-Faktor-Authentifizierung konfiguriert sind.
+
+Wenn Sie zuvor die [Zwei-Faktor-Authentifizierung (2FA) im Steuerungsportal](/docs/customer-portal/cpenable2fa.html#customerportal_2fa) für Ihre Infrastrukturressourcen aktiviert haben und dann die MFA-Einstellung für das {{site.data.keyword.Bluemix_notm}}-Konto aktivieren, überschreibt letztere die 2FA im Steuerungsportal. Das bedeutet, dass Sie die 2FA, die Sie im Steuerungsportal erworben haben, zugunsten der MFA-Einstellung inaktivieren können. Wenn Sie jedoch ein föderierter Benutzer sind, ist die MFA nicht anwendbar, deshalb empfehlen wir, die 2FA im Steuerungsportal aktiviert zu lassen, um die Sicherheit Ihrer Infrastrukturressourcen zu gewährleisten. 

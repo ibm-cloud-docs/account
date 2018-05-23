@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="667px" height="315px" viewBox="0 0 667 315" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>2-Migration</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="161" y="27" width="444" height="141.044776"></rect>
+        <rect id="path-2" x="185" y="64.6119403" width="196" height="80.3880597"></rect>
+        <rect id="path-3" x="0" y="26" width="146" height="141.044776"></rect>
+        <rect id="path-4" x="331" y="98" width="27" height="27.2014925" rx="13.5"></rect>
+        <path d="M222,99 L246.627027,99 L246.627027,124.166007 L222,124.166007 L222,99 Z" id="path-5"></path>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="24.627027" height="25.1660067" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <rect id="path-7" x="391" y="64.6119403" width="196" height="80.3880597"></rect>
+        <path d="M428,99 L452.627027,99 L452.627027,124.166007 L428,124.166007 L428,99 Z" id="path-8"></path>
+        <mask id="mask-9" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="24.627027" height="25.1660067" fill="white">
+            <use xlink:href="#path-8"></use>
+        </mask>
+        <rect id="path-10" x="9" y="0" width="24.7272727" height="24.8339552"></rect>
+        <ellipse id="path-11" cx="9.5" cy="25.8022388" rx="9.5" ry="9.57089552"></ellipse>
+        <rect id="path-12" x="537" y="98" width="27" height="27.2014925" rx="13.5"></rect>
+    </defs>
+    <g id="2-Migration" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-5" fill="#F9FAFB" x="0" y="0" width="667" height="315"></rect>
+        <g id="Group-3" transform="translate(31.000000, 73.000000)">
+            <g id="Group-4">
+                <g id="Rectangle-6">
+                    <use fill="#EDF0F3" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#DFE3E6" stroke-width="1.6" x="161.8" y="27.8" width="442.4" height="139.444776"></rect>
+                </g>
+                <text id="Cloud-Foundry-(CF)-O" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" fill="#3D70B2">
+                    <tspan x="161" y="14">Cloud Foundry-Organisation (CF)</tspan>
+                </text>
+                <g id="Rectangle-6">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <rect stroke="#3D70B2" stroke-width="1.6" x="185.8" y="65.4119403" width="194.4" height="78.7880597"></rect>
+                </g>
+                <text id="Space-1" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" fill="#3D70B2">
+                    <tspan x="185" y="51">Bereich 1</tspan>
+                </text>
+                <text id="App-1" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" fill="#3D70B2">
+                    <tspan x="328.428" y="88">App 1</tspan>
+                </text>
+                <g id="Rectangle-6">
+                    <use fill="#EDF0F3" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <rect stroke="#DFE3E6" stroke-width="1.6" x="0.8" y="26.8" width="144.4" height="139.444776"></rect>
+                </g>
+                <text id="Resource-Group" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" fill="#3D70B2">
+                    <tspan x="1" y="14">Ressourcengruppe</tspan>
+                </text>
+                <path d="M231.471785,111.014925 L344.5,111.014925" id="Line-2" stroke="#3D70B2" stroke-width="1.6" stroke-linecap="square"></path>
+                <g id="Rectangle-3">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    <rect stroke="#3D70B2" stroke-width="1.6" x="331.8" y="98.8" width="25.4" height="25.6014925" rx="12.7"></rect>
+                </g>
+                <path d="M89.5,109.75 L209.5,109.75" id="Line" stroke="#3D70B2" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel"></path>
+                <text id="Service-Alias" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" line-spacing="14" fill="#3D70B2">
+                    <tspan x="200" y="87">Servicealias</tspan>
+                </text>
+                <text id="bind" font-family="IBMPlexSans-Italic, IBM Plex Sans" font-size="9" font-style="italic" font-weight="normal" line-spacing="14" fill="#3D70B2">
+                    <tspan x="279.572" y="125">binden</tspan>
+                </text>
+                <use id="Rectangle-3-Copy-2" stroke="#3D70B2" mask="url(#mask-6)" stroke-width="3.2" fill="#FFFFFF" stroke-linecap="square" stroke-dasharray="1.5,5.5" xlink:href="#path-5"></use>
+                <g id="Rectangle-6">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
+                    <rect stroke="#3D70B2" stroke-width="1.6" x="391.8" y="65.4119403" width="194.4" height="78.7880597"></rect>
+                </g>
+                <text id="App-2" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" fill="#3D70B2">
+                    <tspan x="534.428" y="88">App 2</tspan>
+                </text>
+                <path d="M437.471785,111.014925 L546.269231,111.014925" id="Line-2" stroke="#3D70B2" stroke-width="1.6" stroke-linecap="square"></path>
+                <text id="Service-Alias" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" line-spacing="14" fill="#3D70B2">
+                    <tspan x="406" y="87">Servicealias</tspan>
+                </text>
+                <use id="Rectangle-3-Copy-2" stroke="#3D70B2" mask="url(#mask-9)" stroke-width="3.2" fill="#FFFFFF" stroke-linecap="square" stroke-dasharray="1.5,5.5" xlink:href="#path-8"></use>
+                <text id="Space-2" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" fill="#3D70B2">
+                    <tspan x="392" y="51">Bereich 2</tspan>
+                </text>
+                <g id="Group-13" transform="translate(34.000000, 74.768657)">
+                    <g id="Group-7" transform="translate(18.000000, 22.000000)">
+                        <g id="Rectangle-3">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-10"></use>
+                            <rect stroke="#DFE3E6" stroke-width="1.6" x="9.8" y="0.8" width="23.1272727" height="23.2339552"></rect>
+                        </g>
+                        <g id="Oval-4">
+                            <use fill="#3D70B2" fill-rule="evenodd" xlink:href="#path-11"></use>
+                            <ellipse stroke="#3D70B2" stroke-width="1.6" cx="9.5" cy="25.8022388" rx="8.7" ry="8.77089552"></ellipse>
+                        </g>
+                        <path d="M9.65707692,29.8468312 L8.91169231,29.8468312 L8.91169231,29.0870494 C8.026,29.016372 7.43846154,28.6188117 7,28.0887313 L7.64015385,27.5056429 C7.99969231,27.9473766 8.42061538,28.2300861 8.97307692,28.3007635 L8.97307692,26.3217968 C7.71907692,26.0479219 7.18415385,25.5178416 7.18415385,24.6255396 C7.18415385,23.6890643 7.85061538,23.1148106 8.91169231,22.9999598 L8.91169231,22.2313433 L9.65707692,22.2313433 L9.65707692,22.9999598 C10.4024615,23.0706372 10.9549231,23.3886854 11.3583077,23.9099311 L10.7093846,24.4488462 C10.4550769,24.1131286 10.1043077,23.8657577 9.60446154,23.7862457 L9.60446154,25.5973536 C10.876,25.8800631 11.4284615,26.3748048 11.4284615,27.2936108 C11.4284615,28.2389208 10.7883077,28.9280253 9.65707692,29.06938 L9.65707692,29.8468312 Z M10.5076923,27.3554535 C10.5076923,26.9137199 10.2884615,26.6310103 9.60446154,26.4543169 L9.60446154,28.2919288 C10.1744615,28.1947474 10.5076923,27.8413605 10.5076923,27.3554535 Z M8.09615385,24.5813662 C8.09615385,25.0672732 8.37676923,25.2881401 8.97307692,25.4559989 L8.97307692,23.777411 C8.42061538,23.8569231 8.09615385,24.1396326 8.09615385,24.5813662 Z" id="$" fill="#FFFFFF"></path>
+                    </g>
+                    <text id="Service" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="15" fill="#3D70B2">
+                        <tspan x="12.295" y="11.334">Service</tspan>
+                    </text>
+                </g>
+                <g id="Group-5" transform="translate(76.000000, 120.000000)">
+                    <path d="M1.5,35 L365.505494,35 L366.255494,35 L366.255494,36.5 L365.505494,36.5 L1.5,36.5 L0.75,36.5 L0.75,36.25 L0,36.25 L0,35.5 L0,1.5 L0,0.75 L1.5,0.75 L1.5,1.5 L1.5,35 Z" id="Combined-Shape" fill="#3D70B2"></path>
+                    <path d="M365.75,35.5 L365.75,12.5" id="Line-6" stroke="#3D70B2" stroke-width="1.5" stroke-linecap="square"></path>
+                </g>
+            </g>
+            <polygon id="Rectangle-2" fill="#3D70B2" transform="translate(441.656854, 132.656854) rotate(-135.000000) translate(-441.656854, -132.656854) " points="445.656854 128.656854 445.656854 136.656854 437.656854 136.656854"></polygon>
+            <polygon id="Rectangle-2" fill="#3D70B2" transform="translate(209.656854, 109.656854) rotate(-45.000000) translate(-209.656854, -109.656854) " points="213.656854 105.656854 213.656854 113.656854 205.656854 113.656854"></polygon>
+            <g id="Rectangle-3-Copy-3">
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-12"></use>
+                <rect stroke="#3D70B2" stroke-width="1.6" x="537.8" y="98.8" width="25.4" height="25.6014925" rx="12.7"></rect>
+            </g>
+            <text id="bind" font-family="IBMPlexSans-Italic, IBM Plex Sans" font-size="9" font-style="italic" font-weight="normal" line-spacing="14" fill="#3D70B2">
+                <tspan x="487.572" y="125">binden</tspan>
+                </text>
+        </g>
+    </g>
+</svg>

@@ -16,7 +16,8 @@ lastupdated: "2018-03-19"
 # Organisationen und Bereiche hinzufügen
 {: #orgsspacesusers}
 
-Als Kontoeigner können Sie Organisationen und Bereiche über die Seite 'Cloud Foundry-Organisationen' in der {{site.data.keyword.Bluemix}}-Konsole hinzufügen. Wenn Sie ein Organisationsmanager sind, können Sie über die Seite 'Cloud Foundry-Organisationen' auch Ihre Organisationen verwalten.{:shortdesc}
+Als Kontoeigner können Sie Organisationen und Bereiche über die Seite 'Cloud Foundry-Organisationen' in der {{site.data.keyword.Bluemix}}-Konsole hinzufügen. Wenn Sie ein Organisationsmanager sind, können Sie über die Seite 'Cloud Foundry-Organisationen' auch Ihre Organisationen verwalten.
+{:shortdesc}
 
 Sie können Organisationen verwenden, um die Onlinezusammenarbeit zwischen den Benutzern zu ermöglichen und die logische Gruppierung von Projektressourcen auf folgende Weise zu erleichtern:
 
@@ -43,7 +44,7 @@ In einem Abonnementkonto ist das Kontingent eine benutzerdefinierte Begrenzung, 
 
 Wenn Sie eine Organisation hinzufügen, muss ihr Name in {{site.data.keyword.Bluemix_notm}} eindeutig sein. Falls der Organisationsname bereits von einem anderen Benutzer von {{site.data.keyword.Bluemix_notm}} Public, Dedicated oder Local verwendet wird, müssen Sie einen neuen Namen angeben. Nachdem Sie die Organisation hinzugefügt haben, wird Ihnen automatisch die Berechtigung 'Organisationsmanager' zugeordnet, die es Ihnen ermöglicht, den Organisationsnamen zu bearbeiten, Benutzer hinzuzufügen und Bereiche in der Organisation zu erstellen oder zu löschen. Wenn Sie über ein gebührenpflichtiges Konto verfügen, können Sie so viele Organisationen hinzufügen, wie Sie benötigen. Ein Lite-Konto lässt jedoch nur eine einzige Organisation zu. 
 
-Die folgenden [Benutzerrollen](/docs/iam/users_roles.html#userrolesinfo) können Benutzern in einer Organisation zugeordnet werden. Allen Benutzern, die zu dem Konto eingeladen werden, wird standardmäßig die Rolle 'Auditor' zugewiesen. 
+Die folgenden [Benutzerrollen](/docs/iam/users_roles.html#userrolesinfo) können Benutzern in einer Organisation zugeordnet werden. Allen Benutzern, die zu dem Konto eingeladen werden, wird standardmäßig die Rolle 'Auditor' zugewiesen.
 
    * Organisationsmanager
    * Abrechnungsmanager der Organisation
