@@ -38,7 +38,7 @@ Ogni gruppo di risorse è gratuito, tuttavia le connessioni tra un gruppo di ris
 3. Immetti un nome per il tuo gruppo di risorse.
 4. Fai clic su **Aggiungi**.
 
-## Aggiunta di risorse a un gruppo di risorse 
+## Aggiunta di risorse a un gruppo di risorse
 
 I servizi che sono gestiti utilizzando IAM appartengono a un gruppo di risorse invece che a un'organizzazione o uno spazio Cloud Foundry. Quando crei un'istanza del servizio per uno di questi servizi dal catalogo, ti viene richiesto di assegnare l'istanza a un gruppo di risorse. La tua selezione del gruppo di risorse al momento della creazione dell'istanza è finale e non può essere modificata.
 
@@ -60,6 +60,6 @@ La CLI {{site.data.keyword.Bluemix_notm}} ha diversi comandi che supportano la g
 
 ## Gestione dell'accesso ai tuoi gruppi di risorse
 
-Cloud IAM ti offre la possibilità di fornire all'utente l'accesso specifico alle risorse nel tuo account. Puoi utilizzare Cloud IAM per assegnare politiche agli utenti, che forniscono all'utente l'accesso a tutte le risorse in un gruppo di risorse, a un singolo tipo di servizio all'interno di un gruppo di risorse o a una singola istanza del servizio nell'account. Fornire agli utenti l'accesso alle risorse all'interno di un gruppo di risorse non dà loro l'accesso per gestire il gruppo di risorse stesso. Puoi impostare l'accesso per la possibilità di visualizzare, modificare e gestire separatamente il gruppo di risorse effettivo.
+Cloud IAM ti offre la possibilità di fornire all'utente l'accesso dettagliato alle risorse nel tuo account. Puoi utilizzare Cloud IAM per assegnare politiche agli utenti, che forniscono all'utente l'accesso a tutte le risorse in un gruppo di risorse, a un singolo tipo di servizio all'interno di un gruppo di risorse o a una singola istanza del servizio nell'account. Fornire agli utenti l'accesso alle risorse all'interno di un gruppo di risorse non dà loro l'accesso per gestire il gruppo di risorse stesso. Puoi impostare l'accesso per la possibilità di visualizzare, modificare e gestire separatamente il gruppo di risorse effettivo.
 
 Per ulteriori informazioni sulla gestione dell'accesso ai gruppi di risorse, vedi [Gestione dell'accesso IAM](/docs/iam/mngiam.html#iammanidaccser).

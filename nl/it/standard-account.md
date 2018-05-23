@@ -21,7 +21,7 @@ lastupdated: "2017-10-13"
 La release limitata dell'account Standard {{site.data.keyword.Bluemix}} introduce un nuovo account gratuito, che offre un nuovo modo di lavorare in {{site.data.keyword.Bluemix_notm}} pubblico. A differenza di una versione di prova di 30 giorni {{site.data.keyword.Bluemix_notm}}, un account standard non ha una scadenza. Puoi continuare a lavorare sulle tue applicazioni {{site.data.keyword.Bluemix_notm}} senza preoccuparti dei limiti di tempo. 
 {:shortdesc}
 
-Gli utenti nelle regioni Regno Unito e Stati Uniti Sud sono eleggibili per un account Standard. Se non ti trovi in queste regioni, puoi comunque creare un account Standard chiedendo un invito a un amico o contattando il nostro team di vendite all'indirizzo sales@bluemix.net. Come proprietario di un account Standard, potrai invitare amici e colleghi a partecipare.  
+Gli utenti nelle regioni Regno Unito e Stati Uniti Sud sono idonei per un account Standard. Se non ti trovi in queste regioni, puoi comunque creare un account Standard chiedendo un invito a un amico o contattando il nostro team di vendite all'indirizzo sales@bluemix.net. Come proprietario di un account Standard, potrai invitare amici e colleghi a partecipare.  
 
 ## Presentazione dell'Account standard {{site.data.keyword.Bluemix_notm}}
 {: #standardaccount}
@@ -106,7 +106,7 @@ Le applicazioni verranno sospese dopo 10 giorni di inattività dello sviluppo. C
 Per riattivare le tue applicazioni, inizia di nuovo a utilizzarle nella riga di comando Cloud Foundry o nella console {{site.data.keyword.Bluemix_notm}}. 
  
  Ecco un elenco di tutti i comandi che riattiveranno la tua applicazione:
-  * push cf
+  * cf push
   * cf restate
   * cf restart
   * cf ssh

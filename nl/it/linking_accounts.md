@@ -15,7 +15,7 @@ lastupdated: "2018-04-12"
 {:tip: .tip}
 {:new_window: target="_blank"}
 
-# Fatturazione consolidata per gli account collegati 
+# Fatturazione consolidata per gli account collegati
 {: #unifybillaccounts}
 
 Quando colleghi gli account {{site.data.keyword.Bluemix_notm}} e Softlayer, ricevi un'unica fattura {{site.data.keyword.Bluemix_notm}}. Se hai un account {{site.data.keyword.Bluemix_notm}} esistente, la fatturazione tramite {{site.data.keyword.Bluemix_notm}} per le risorse dell'infrastruttura parte dal nuovo ciclo di fatturazione che inizia dopo il collegamento degli account.
@@ -27,7 +27,7 @@ Tutti gli account collegati in {{site.data.keyword.Bluemix_notm}} devono essere 
 ## Fatturazione per l'utilizzo di {{site.data.keyword.Bluemix_notm}} con gli account collegati
 {: #linkedbilling}
 
-Una volta collegati i tuoi account di fatturazione {{site.data.keyword.Bluemix_notm}} e SoftLayer, il successivo ciclo di fatturazione viene addebitato in un'unica fattura {{site.data.keyword.Bluemix_notm}}. 
+Una volta collegati i tuoi account di fatturazione {{site.data.keyword.Bluemix_notm}} e SoftLayer, il successivo ciclo di fatturazione viene addebitato in un'unica fattura {{site.data.keyword.Bluemix_notm}}.
 
 Il tuo ciclo di utilizzo di {{site.data.keyword.Bluemix_notm}} si basa sul mese di calendario, perciò l'addebito per il tuo account viene effettuato con cadenza mensile il giorno di fatturazione stabilito nel tuo accordo di addebito. Con SoftLayer, il ciclo di utilizzo inizia nel momento in cui viene avviato e viene pertanto addebitato con cadenza mensile lo stesso giorno del mese in cui hai sottoscritto l'account SoftLayer.
 

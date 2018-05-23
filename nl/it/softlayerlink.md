@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2018
 
-lastupdated: "2018-04-12"
+lastupdated: "2018-05-01"
 
 ---
 
@@ -32,7 +32,7 @@ Per passare il tuo account SoftLayer esistente a un ID IBM, crea un ID IBM e qui
 
 1. Accedi al tuo account SoftLayer e fai clic su **OK** quando viene visualizzato il prompt per passare a un ID IBM.
 
-   Se sei un utente master e non visualizzi un prompt per passare a un ID IBM nel portale del cliente dell'infrastruttura {{site.data.keyword.BluSoftlayer_full}}, contatta il supporto IBM per assistenza. Consulta [Supporto IBM](/docs/get-support/howtogetsupport.html#getting-customer-support) per ulteriori informazioni su come contattare il supporto.
+   Se sei un utente master e non visualizzi un prompt per passare a un ID IBM nel portale clienti dell'infrastruttura {{site.data.keyword.BluSoftlayer_full}}, contatta il supporto IBM per assistenza. Consulta [Supporto IBM](/docs/get-support/howtogetsupport.html#getting-customer-support) per ulteriori informazioni su come contattare il supporto.
 
    Se hai già eseguito l'accesso e hai fatto clic su **Dopo** nel prompt, ma vuoi passare all'autenticazione con l'ID IBM nella sessione corrente, vai alla pagina Modifica profilo utente e fai clic su **Passa a ID IBM**.
 
@@ -47,7 +47,7 @@ Per passare il tuo account SoftLayer esistente a un ID IBM, crea un ID IBM e qui
 
    Il codice di registrazione è valido per sette giorni e puoi utilizzarlo solo una volta.
 
-2. Una volta inoltrato il codice di registrazione, utilizza il tuo ID IBM per accedere al portale del cliente.
+2. Una volta inoltrato il codice di registrazione, utilizza il tuo ID IBM per accedere al portale clienti.
 
    Al prompt di accesso dell'account, vai alla sezione **Accesso account ID IBM** e fai clic su **Accedi con ID IBM**. Non utilizzare i campi **Nome utente** e **Password** che utilizzavi in precedenza con il tuo ID SoftLayer.
 
@@ -58,19 +58,19 @@ Se sei un nuovo cliente, quando controlli il tuo ordine ti verrà chiesto il tuo
 Per risolvere eventuali problemi con l'accesso con il tuo ID IBM, vedi [Risoluzione dei problemi di accesso a {{site.data.keyword.Bluemix_notm}}](/docs/troubleshoot/ts_accessing.html#accessing).
 
 
-## Collegamento degli account ID IBM 
+## Collegamento degli account ID IBM
 {: #link_accounts}
 
-Dopo che gli account sono diventati account ID IBM, puoi collegare gli account SoftLayer e {{site.data.keyword.Bluemix_notm}} per utilizzare insieme le risorse IaaS (Infrastructure as a service) e PaaS (Platform as a Service). Quindi, puoi accedere alle risorse IaaS e PaaS da un singolo accesso. Il collegamento dei tuoi account ti fornisce inoltre una sola fattura per tutte le risorse PaaS e IaaS che utilizzi. Puoi collegare il tuo account o, se sei un utente master, puoi collegare i tuoi account utente. 
+Dopo che gli account sono diventati account ID IBM, puoi collegare gli account SoftLayer e {{site.data.keyword.Bluemix_notm}} per utilizzare insieme le risorse IaaS (Infrastructure as a service) e PaaS (Platform as a Service). Quindi, puoi accedere alle risorse IaaS e PaaS da un singolo accesso. Il collegamento dei tuoi account ti fornisce inoltre una sola fattura per tutte le risorse PaaS e IaaS che utilizzi. Puoi collegare il tuo account o, se sei un utente master, puoi collegare i tuoi account utente.
 
-### Collegamento del tuo account ID IBM 
+### Collegamento del tuo account ID IBM
 {: #link_user_account}
 
 Se sei un cliente dell'infrastruttura {{site.data.keyword.BluSoftlayer_full}} e inoltre hai account PaaS in {{site.data.keyword.Bluemix_notm}} o li crei, puoi collegare IaaS e PaaS per una sola visualizzazione dei tuoi account. Per collegare i tuoi account, utilizza la seguente procedura:
 1. Accedi al tuo account SoftLayer.
 2. Dalla pagina di riepilogo dell'account fai clic su **Nuovo! Collega un account Bluemix**.
-3. Rivedi i termini di utilizzo e fai clic per confermare. 
-4. Completa uno dei seguenti passi finali, a seconda di come è configurato il tuo account: 
+3. Rivedi i termini di utilizzo e fai clic per confermare.
+4. Completa uno dei seguenti passi finali, a seconda di come è configurato il tuo account:
   * Se il tuo ID IBM ha un account {{site.data.keyword.Bluemix_notm}} associato, sarai reindirizzato a una pagina di autorizzazione, quindi tornerai al passo di conferma finale.
   * Se non hai un account {{site.data.keyword.Bluemix_notm}} associato, ti viene richiesto di crearne uno.
 
@@ -89,8 +89,8 @@ Dopo che i tuoi account utente sono passati all'autenticazione tramite ID IBM, i
 
 Completa la seguente procedura per collegare ciascun account SoftLayer a un account della piattaforma {{site.data.keyword.Bluemix_notm}} esistente o per crearne uno nuovo:
 
-   1. Accedi al portale del cliente dell'infrastruttura {{site.data.keyword.BluSoftlayer_full}} con il tuo ID IBM dell'account utente master.
-   2. Dal portale del cliente dell'infrastruttura {{site.data.keyword.Bluemix_notm}}, fai clic su **Collega un account Bluemix**.
+   1. Accedi al portale clienti dell'infrastruttura {{site.data.keyword.BluSoftlayer_full}} con il tuo ID IBM dell'account utente master.
+   2. Dal portale clienti dell'infrastruttura {{site.data.keyword.Bluemix_notm}}, fai clic su **Collega un account Bluemix**.
    3. Leggi e accetta le condizioni di collegamento degli account SoftLayer e {{site.data.keyword.Bluemix_notm}}.
    4. Segui le istruzioni nella procedura guidata, inclusa l'aggiunta di utenti nell'account SoftLayer all'account {{site.data.keyword.Bluemix_notm}}.
    5. Quando ti viene richiesto, scegli una delle seguenti azioni:
@@ -115,6 +115,8 @@ Dopo aver collegato i tuoi account, non possono essere scollegati.
 ## Utilizzo dell'autenticazione a più fattori negli account collegati
 {: #2fa}
 
-Se hai un account collegato, puoi utilizzare la pagina **Impostazioni** di Identità e accesso per abilitare l'autenticazione a più fattori per il tuo account. Questa è anche comunemente nota come autenticazione a due fattori (2FA) e aggiunge un livello di sicurezza per accedere al tuo account oltre all'ID IBM e alla password standard richiesti. L'autenticazione a più fattori per il tuo account si applica a tutte le risorse nel tuo account {{site.data.keyword.Bluemix_notm}} collegato. Se è abilitata per il tuo account, si applica anche a tutti gli utenti che sono stati aggiunti al tuo account.
+Se hai un account collegato, puoi utilizzare la pagina **Impostazioni** di Identità e accesso per abilitare l'autenticazione a più fattori (MFA) per il tuo account. Questa è anche comunemente nota come autenticazione a due fattori (2FA) e aggiunge un livello di sicurezza per accedere al tuo account oltre all'ID IBM e alla password standard richiesti. La MFA per il tuo account si applica a tutte le risorse nel tuo account {{site.data.keyword.Bluemix_notm}} collegato. Se è abilitata per il tuo account, si applica anche a tutti gli utenti che sono stati aggiunti al tuo account.
 
-L'autenticazione a più fattori non è per ogni ID IBM, ma è tuttora per ogni account. Quando un ID IBM è associato a più account e tu passi da un account all'altro, devi confermare la tua identità ogni volta che passi a un account diverso che richiede l'autenticazione a due fattori. Ciò è vero anche se l'account precedente e il nuovo account sono entrambi configurati con lo stesso meccanismo di autenticazione a due fattori.
+L'autenticazione a più fattori non è per ogni ID IBM bensì per ogni account. Quando un ID IBM è associato a più account e tu passi da un account all'altro, devi confermare la tua identità ogni volta che passi a un account diverso che richiede l'autenticazione a due fattori. Ciò è vero anche se l'account precedente e il nuovo account sono entrambi configurati con lo stesso meccanismo di autenticazione a due fattori.
+
+Se hai precedentemente abilitato [2FA nel portale di controllo](/docs/customer-portal/cpenable2fa.html#customerportal_2fa) per le tue risorse dell'infrastruttura e abiliti quindi l'impostazione MFA dell'account {{site.data.keyword.Bluemix_notm}}, l'impostazione MFA dell'account sovrascrive la 2FA da te configurata nel portale di controllo. Questo significa che puoi disabilitare la 2FA da te acquistata nel portale di controllo a favore dell'impostazione MFA dell'account. Tuttavia, se sei un utente federato, la MFA non si applica; sarebbe quindi il caso che conservassi la tua configurazione 2FA del portale di controllo per garantire la sicurezza delle tue risorse dell'infrastruttura.

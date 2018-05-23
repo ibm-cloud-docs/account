@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-03-28"
+lastupdated: "2018-05-08"
 
 ---
 
@@ -33,8 +33,8 @@ La seguente tabella fornisce un confronto degli account Lite, Pagamento a consum
 | **Accesso a più regioni Cloud Foundry** |  | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) |
 | **Nessun limite di tempo** | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) |
 | **Costo zero garantito** | ![Funzione disponibile](../icons/icon_enabled.svg) |  |  |
-| **Prezzo negoziato** |  |  | ![Funzione disponibile](../icons/icon_enabled.svg) |
-| **Ideale per l'apprendimento o la creazione di POC** | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) |  |
+| **Prezzo scontato** |  |  | ![Funzione disponibile](../icons/icon_enabled.svg) |
+| **Ideale per l'apprendimento o la creazione di POC (Proof of Concept)** | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) |  |
 | **Adatto per i casi di utilizzo di produzione** |  | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) |
 {: caption="Tabella 1. Confronto degli account {{site.data.keyword.Bluemix_notm}}" caption-side="top"}
 

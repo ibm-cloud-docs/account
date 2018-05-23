@@ -24,7 +24,7 @@ In un account Lite, puoi lavorare in una sola regione. In un account Pagamento a
 ## Cos'è un piano prezzi Lite per i servizi?
 {: #whatisliteplan}
 
-Un piano Lite è un piano di servizi gratuito basato sulle quote. Puoi utilizzare un piano Lite di servizio per sviluppare un'applicazione senza incorrere in alcun addebito. Un piano Lite può essere offerto a un ciclo mensile (rinnovato ogni mese) oppure su una base di utilizzo una tantum. Puoi avere una sola istanza per ogni servizio con piano Lite. I piani di prezzo Lite sono offerti in tutti gli account.
+Un piano Lite è un piano di servizi gratuito basato sulle quote. Puoi utilizzare un piano Lite di servizio per sviluppare un'applicazione senza incorrere in alcun addebito. Un piano Lite può essere offerto a un ciclo mensile (rinnovato ogni mese) oppure su una base di utilizzo una tantum. Puoi avere una sola istanza per ogni servizio con piano Lite. I piani prezzi Lite sono offerti in tutti gli account.
 
 ## Cosa succede quando la mia istanza del piano Lite raggiunge la quota mensile?
 {: #monthlyquota}
@@ -75,8 +75,8 @@ Dopo esserti collegato al tuo account, conservi lo stesso livello di supporto di
 {: #al_morehelp}
 
   1. Consulta [Steps to Link your IaaS and PaaS Accounts blog](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/) per informazioni utili. 
-  2. Dal portale del cliente dell'infrastruttura {{site.data.keyword.BluSoftlayer_full}}, apri una **Chat live col settore vendite** per porre le tue domande sull'account.
-  3. Apri un ticket dal portale del cliente dell'infrastruttura {{site.data.keyword.BluSoftlayer_full}}.  Seleziona **Supporto** > **Aggiungi ticket** e poi, nel campo **Oggetto**, seleziona **Richiesta di account** per indirizzare la tua domanda sull'account al team di supporto corretto.
+  2. Dal portale clienti dell'infrastruttura {{site.data.keyword.BluSoftlayer_full}}, apri una **Chat live col settore vendite** per porre le tue domande sull'account.
+  3. Apri un ticket dal portale clienti dell'infrastruttura {{site.data.keyword.BluSoftlayer_full}}.  Seleziona **Supporto** > **Aggiungi ticket** e poi, nel campo **Oggetto**, seleziona **Richiesta di account** per indirizzare la tua domanda sull'account al team di supporto corretto.
 
 Se sei il master dell'account, consulta [Gestione degli utenti](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) per ulteriori informazioni sulla gestione degli utenti.
 
@@ -109,7 +109,7 @@ Se sei il master dell'account, consulta [Gestione degli utenti](https://console.
 ## Come il collegamento dell'account influenza il mio ID account master SoftLayer? 	
 {: #al_howaffslmastacct}
 
-Puoi ancora utilizzare l'ID del tuo account SoftLayer per accedere al portale del cliente dell'infrastruttura {{site.data.keyword.BluSoftlayer_full}} perché è possibile accedere alla console {{site.data.keyword.Bluemix_notm}} utilizzando gli ID IBM.
+Puoi ancora utilizzare l'ID del tuo account SoftLayer per accedere al portale clienti dell'infrastruttura {{site.data.keyword.BluSoftlayer_full}} perché è possibile accedere alla console {{site.data.keyword.Bluemix_notm}} utilizzando gli ID IBM.
 
 ## Esiste un limite al numero di gruppi di risorse, organizzazioni o spazi che posso creare?
 

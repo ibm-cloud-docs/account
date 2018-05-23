@@ -23,10 +23,10 @@ La prima volta che utilizzi {{site.data.keyword.Bluemix}}, configura il tuo prof
 Puoi impostare o aggiornare le seguenti informazioni:
 
  * Una foto del profilo visibile agli altri utenti {{site.data.keyword.Bluemix_notm}}
- * Informazioni dell'ID IBM, tra cui nome, e-mail, numero di telefono, password, azienda e ruolo. 
+ * Informazioni dell'ID IBM, tra cui nome, e-mail, numero di telefono, password, azienda e ruolo.
  * Impostazione della traccia di analisi
 
-Potresti anche voler registrarti per ricevere le notifiche o controllare le opzioni di supporto per scoprire dove andare e cosa fare se riscontri qualche problema 
+Potresti anche voler registrarti per ricevere le notifiche o controllare le opzioni di supporto per scoprire dove andare e cosa fare se riscontri qualche problema
 
 Se sei un amministratore di {{site.data.keyword.Bluemix_local_notm}} o {{site.data.keyword.Bluemix_notm}} Dedicato, consulta [Gestione di {{site.data.keyword.Bluemix_local_notm}} o {{site.data.keyword.Bluemix_notm}} Dedicato](/docs/hybrid/index.html#mng) per i dettagli sulla gestione del tuo account utilizzando la pagina Amministrazione.
 
@@ -44,7 +44,7 @@ Vai all'icona **{{site.data.keyword.avatar}}** ![Icona Avatar](../icons/i-avatar
 
 Un ID IBM è un singolo ID che utilizzi per accedere al tuo account {{site.data.keyword.Bluemix_notm}} per le funzioni di infrastruttura, servizi e applicazione. Il tuo ID IBM è lo stesso ID che puoi utilizzare per accedere alle altre applicazioni IBM.
 
-Non puoi modificare il tuo ID IBM, ma puoi modificare le tue informazioni di profilo ad esso associate, come nome, e-mail, numero di telefono, password o nome dell'azienda. 
+Non puoi modificare il tuo ID IBM, ma puoi modificare le tue informazioni di profilo ad esso associate, come nome, e-mail, numero di telefono, password o nome dell'azienda.
 
 1. Vai all'icona **{{site.data.keyword.avatar}}** ![Icona Avatar](../icons/i-avatar-icon.svg) &gt; **Visualizza profilo**.
 2. Fai clic su **modifica il tuo ID IBM**.
@@ -54,7 +54,7 @@ Non puoi modificare il tuo ID IBM, ma puoi modificare le tue informazioni di pro
 ## Impostazione della traccia di analisi
 {: #tracking}
 
-Le azioni nella console {{site.data.keyword.Bluemix_notm}} vengono tracciate per impostazione predefinita. La traccia consente al team di {{site.data.keyword.Bluemix_notm}} di mettere a punto una migliore esperienza per te e di fornire un migliore supporto. I dati raccolti non vengono utilizzati o condivisi per altri scopi. 
+Le azioni nella console {{site.data.keyword.Bluemix_notm}} vengono tracciate per impostazione predefinita. La traccia consente al team di {{site.data.keyword.Bluemix_notm}} di mettere a punto una migliore esperienza per te e di fornire un migliore supporto. I dati raccolti non vengono utilizzati o condivisi per altri scopi.
 
 Se scegli di disabilitare la traccia, potresti non essere in grado di utilizzare alcune funzioni, come ad esempio le comunicazioni via chat.
 
