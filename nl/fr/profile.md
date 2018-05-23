@@ -26,7 +26,7 @@ Vous pouvez définir ou mettre à jour les informations suivantes :
  * Informations IBMid, telles que votre nom, votre adresse électronique, votre numéro de téléphone, votre mot de passe, votre société et votre rôle
  * Paramètre Suivi pour analyse
 
-Vous pouvez également décider de vous abonner à des notifications ou prendre connaissance de vos options de support pour savoir où et comment obtenir de l'aide en cas de problème. 
+Vous pouvez également décider de vous abonner à des notifications ou prendre connaissance de vos options de support pour savoir où et comment obtenir de l'aide en cas de problème.
 
 Si vous êtes l'administrateur d'un environnement {{site.data.keyword.Bluemix_local_notm}} ou {{site.data.keyword.Bluemix_notm}} dédié, voir [Gestion de l'environnement {{site.data.keyword.Bluemix_local_notm}} et de l'environnement {{site.data.keyword.Bluemix_notm}} dédié](/docs/hybrid/index.html#mng) pour plus de détails sur la gestion de votre compte depuis la page Administration.
 

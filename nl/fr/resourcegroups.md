@@ -40,7 +40,7 @@ Tous les groupes de ressources sont gratuits, en revanche, les connexions entre 
 
 ## Ajout de ressources à un groupe de ressources
 
-Les services qui sont gérés à l'aide d'IAM appartiennent à un groupe de ressources et non à une organisation ou un espace Cloud Foundry. Lorsque vous créez une instance de service pour l'un de ces services à partir du catalogue, vous êtes invité à affecter l'instance à un groupe de ressources. Votre sélection de groupe de ressource au moment de la création de l'instance est définitive et ne peut pas être modifiée. 
+Les services qui sont gérés à l'aide d'IAM appartiennent à un groupe de ressources et non à une organisation ou un espace Cloud Foundry. Lorsque vous créez une instance de service pour l'un de ces services à partir du catalogue, vous êtes invité à affecter l'instance à un groupe de ressources. Votre sélection de groupe de ressource au moment de la création de l'instance est définitive et ne peut pas être modifiée.
 
 ## Affichage des ressources des groupes de ressources
 

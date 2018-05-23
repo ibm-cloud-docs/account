@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-03-28"
+lastupdated: "2018-05-08"
 
 ---
 
@@ -33,8 +33,8 @@ Le tableau suivant compare les types de compte Lite, Paiement à la carte et Abo
 | **Accès à plusieurs régions Cloud Foundry** |  | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |
 | **Sans restrictions de temps** | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |
 | **Gratuité garantie** | ![Fonction disponible](../icons/icon_enabled.svg) |  |  |
-| **Tarification négociée** |  |  | ![Fonction disponible](../icons/icon_enabled.svg) |
-| **Idéal pour l'apprentissage ou la génération de POC** | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |  |
+| **Remise sur la tarification** |  |  | ![Fonction disponible](../icons/icon_enabled.svg) |
+| **Idéal pour l'apprentissage ou la génération de validation de concept** | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |  |
 | **Adapté aux scénarios de production** |  | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |
 {: caption="Tableau 1. Comparaison des comptes {{site.data.keyword.Bluemix_notm}}" caption-side="top"}
 

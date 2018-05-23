@@ -31,7 +31,7 @@ Les organisations peuvent couvrir plusieurs régions et elles sont définies par
 
 <dl>
 <dt>Utilisateurs</dt>
-<dd>Rôle disposant du droit d'accès de base dans les organisations et les espaces. Vous devez être affecté à une organisation pour pouvoir obtenir d'autres droits d'accès aux espaces de l'organisation. Pour plus d'informations, voir [Utilisateurs et rôles](/docs/iam/users_roles.html#userrolesinfo). </dd>
+<dd>Rôle disposant du droit d'accès de base dans les organisations et les espaces. Vous devez être affecté à une organisation pour pouvoir obtenir d'autres droits d'accès aux espaces de l'organisation. Pour plus d'informations, voir [Utilisateurs et rôles](/docs/iam/users_roles.html#userrolesinfo).</dd>
 <dt>Domaines</dt>
 <dd>Indiquez la route Internet allouée à l'organisation. Une route comporte un sous-domaine et un domaine. En général, le sous-domaine est le nom de l'application. Un domaine peut être un domaine de système ou un domaine personnalisé que vous avez enregistré pour votre application. Voir [Gestion des domaines personnalisés](/docs/account/manageorg.html#managedomains).<br/>
 <p>**Remarque :** si vous ajoutez un domaine personnalisé, vous devez configurer votre serveur DNS afin de résoudre votre domaine personnalisé de sorte qu'il désigne le domaine de système {{site.data.keyword.Bluemix_notm}}. Ainsi, lorsque {{site.data.keyword.Bluemix_notm}} reçoit une demande pour votre domaine personnalisé, il peut l'acheminer correctement vers votre application.</p></dd>
@@ -42,7 +42,7 @@ Les organisations peuvent couvrir plusieurs régions et elles sont définies par
 Dans un compte d'abonnement, le quota est une limite définie par l'utilisateur qui déclenche l'envoi des notifications relatives aux dépenses.
 {: tip}
 
-Lorsque vous ajoutez une organisation, son nom doit être unique dans {{site.data.keyword.Bluemix_notm}}. Si le nom d'organisation est déjà utilisé par un autre utilisateur d'environnement {{site.data.keyword.Bluemix_notm}} public, dédié ou local, vous devez spécifier un autre nom. Une fois que vous avez ajouté l'organisation, le droit d'accès  Responsable de l'organisation, qui vous permet d'éditer le nom de l'organisation, d'ajouter des utilisateurs et de créer ou de supprimer des espaces dans l'organisation, vous est affecté automatiquement. Si vous possédez un compte facturable, vous pouvez ajouter autant d'organisations que nécessaire. En revanche, dans un compte Lite, vous ne pouvez posséder qu'une seule organisation.  
+Lorsque vous ajoutez une organisation, son nom doit être unique dans {{site.data.keyword.Bluemix_notm}}. Si le nom d'organisation est déjà utilisé par un autre utilisateur d'environnement {{site.data.keyword.Bluemix_notm}} public, dédié ou local, vous devez spécifier un autre nom. Une fois que vous avez ajouté l'organisation, le droit d'accès  Responsable de l'organisation, qui vous permet d'éditer le nom de l'organisation, d'ajouter des utilisateurs et de créer ou de supprimer des espaces dans l'organisation, vous est affecté automatiquement. Si vous possédez un compte facturable, vous pouvez ajouter autant d'organisations que nécessaire. En revanche, dans un compte Lite, vous ne pouvez posséder qu'une seule organisation. 
 
 Les [rôles utilisateur](/docs/iam/users_roles.html#userrolesinfo) suivants peuvent être affectés aux utilisateurs dans une organisation. Le rôle d'auditeur est affecté par défaut à tous les utilisateurs invités dans le compte.
 
@@ -76,7 +76,7 @@ Un utilisateur doit disposer d'au moins l'un des droits dans l'espace.
 Procédez comme suit pour ajouter un espace :
 
 1. Cliquez sur **Gérer** &gt; **Compte** &gt; **Organisations Cloud Foundry**.
-2. Cliquez sur le nom de l'organisation à laquelle vous souhaitez ajouter un espace. 
+2. Cliquez sur le nom de l'organisation à laquelle vous souhaitez ajouter un espace.
 4. Cliquez sur **Ajouter un espace**.
-5. Sélectionnez une région et entrez un nom. 
+5. Sélectionnez une région et entrez un nom.
 6. Cliquez sur **Sauvegarder**.
