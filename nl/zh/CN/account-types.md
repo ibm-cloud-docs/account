@@ -58,7 +58,7 @@ lastupdated: "2017-11-29"
    * 您会收到有关帐户状态和配额限制的电子邮件通知。
    * Cloud Foundry 应用程序可以访问高达 256 MB 的免费即时运行时内存。 
    * 可以使用具有 2 个 CPU 和 4 GB RAM 的 Kubernetes 集群。
-   * 可以供应 [{{site.data.keyword.Bluemix_notm}} 目录 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} 中具有轻量套餐的任何服务的一个实例。
+   * 可以供应 [{{site.data.keyword.Bluemix_notm}}“目录”![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} 中具有轻量套餐的任何服务的一个实例。
    * 超过 10 天没有开发活动，应用程序将进入休眠。您可以开始处理新的应用程序，而不必担心达到内存配额限制。
    * 超过 30 天没有开发活动，将删除轻量套餐的服务实例。这样，就不必在创建新实例之前管理删除不活动的实例。
 

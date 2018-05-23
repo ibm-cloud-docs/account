@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-03-28"
+lastupdated: "2018-05-08"
 
 ---
 
@@ -33,8 +33,8 @@ lastupdated: "2018-03-28"
 | **複数の Cloud Foundry 地域へのアクセス** |  | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
 | **時間制限なし** | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
 | **保証されたゼロ・コスト** | ![フィーチャー使用可能](../icons/icon_enabled.svg) |  |  |
-| **価格交渉** |  |  | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
-| **POC の学習または構築に最適** | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |  |
+| **割引価格** |  |  | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
+| **PoC (概念検証) の学習または構築に最適** | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |  |
 | **実動ユース・ケース向き** |  | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
 {: caption="表 1. {{site.data.keyword.Bluemix_notm}} アカウントの比較" caption-side="top"}
 

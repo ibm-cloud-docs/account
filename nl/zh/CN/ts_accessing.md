@@ -185,7 +185,7 @@ IBM 标识认证服务可能发生问题。
 在“{{site.data.keyword.Bluemix_notm}} 登录”页面中选择**使用内部网标识登录**后，可能会显示以下消息：
 {: tsSymptoms}
 
-`访问外部 Web 站点发生问题`
+`访问外部 Web 站点时发生问题`
 
 使用未链接到 IBM 标识的 IBM 内部网标识登录到 {{site.data.keyword.Bluemix_notm}} 时，会发生此问题。IBM 标识是您用于登录到 www.ibm.com 的标识。
 {: tsCauses}

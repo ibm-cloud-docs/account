@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-03-28"
+lastupdated: "2018-05-08"
 
 ---
 
@@ -33,8 +33,8 @@ lastupdated: "2018-03-28"
 | **访问多个 Cloud Foundry 区域**|  | ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |
 | **无时间限制**| ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |
 | **保证零成本**| ![功能可用](../icons/icon_enabled.svg) |  |  |
-| **协商定价**|  |  | ![功能可用](../icons/icon_enabled.svg) |
-| **学习或构建 POC 的最佳选择**| ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |  |
+| **折扣定价**|  |  | ![功能可用](../icons/icon_enabled.svg) |
+| **学习或构建概念验证的最佳选择**| ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |  |
 | **适合生产用例**|  | ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |
 {: caption="表 1. {{site.data.keyword.Bluemix_notm}} 帐户比较" caption-side="top"}
 
@@ -58,7 +58,7 @@ lastupdated: "2018-03-28"
    * 基本 {{site.data.keyword.Bluemix_notm}} 支持是免费的。对于非生产环境或未使用传统严重性和未规定特定响应时间的工作负载，提供了基本支持。
    * 您会收到有关帐户状态和配额限制的电子邮件通知。
    * Cloud Foundry 应用程序可以访问高达 256 MB 的免费即时运行时内存。
-   * 可以供应 [{{site.data.keyword.Bluemix_notm}} 目录 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} 中具有轻量套餐的任何服务的一个实例。
+   * 可以供应 [{{site.data.keyword.Bluemix_notm}}“目录”![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} 中具有轻量套餐的任何服务的一个实例。
    * 超过 10 天没有开发活动，应用程序将进入休眠。您可以开始处理新的应用程序，而不必担心达到内存配额限制。
    * 超过 30 天没有开发活动，将删除轻量套餐的服务实例。这样，就不必在创建新实例之前管理删除不活动的实例。
 

@@ -18,6 +18,7 @@
     change-plan.md
     softlayerlink.md
     resourcegroups.md
+    instance_migration.md
 
     {: .topicgroup}
     組織の管理
@@ -36,5 +37,6 @@
     notifications.md
     [IBM Cloud へのアクセスに関するトラブルシューティング](../troubleshoot/ts_accessing.html)
     [アカウントの管理に関するトラブルシューティング](../troubleshoot/ts_accounts.html)
+    [サービス・インスタンスのマイグレーションに関するトラブルシューティング](../troubleshoot/ts_migration.html)
     account_faq.md
     {: .navgroup-end}

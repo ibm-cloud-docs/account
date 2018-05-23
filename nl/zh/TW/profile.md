@@ -28,7 +28,7 @@ lastupdated: "2018-04-06"
 
 也建議您註冊通知或查看支援選項，以得知發生任何問題時要前往的位置及要執行的作業。
 
-如果您是 {{site.data.keyword.Bluemix_local_notm}} 或「{{site.data.keyword.Bluemix_notm}} 專用」的管理者，請參閱[管理 {{site.data.keyword.Bluemix_local_notm}} 本端或 {{site.data.keyword.Bluemix_notm}} 專用](/docs/hybrid/index.html#mng)，以取得有關使用「管理」頁面來管理帳戶的詳細資料。
+如果您是 {{site.data.keyword.Bluemix_local_notm}} 或 {{site.data.keyword.Bluemix_notm}} Dedicated 的管理者，請參閱[管理 {{site.data.keyword.Bluemix_local_notm}} Local 或 {{site.data.keyword.Bluemix_notm}} Dedicated](/docs/hybrid/index.html#mng)，以取得有關使用「管理」頁面來管理帳戶的詳細資料。
 
 ## 變更您的設定檔照片
 {: #photo notoc}

@@ -155,7 +155,7 @@ IBM ID を使用してログインすると、ログイン成功のメッセー�
 IBM ID 認証サービスに問題がある可能性があります。
 {: tsCauses}
 
-[IBM IBMid ![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e){: new_window} で、サービスの状況を確認し、再試行してください。
+[IBM IBMid ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e){: new_window} で、サービスの状況を確認し、再試行してください。
 {: tsResolve}
 
 

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-03-28"
+lastupdated: "2018-05-08"
 
 ---
 
@@ -33,8 +33,8 @@ lastupdated: "2018-03-28"
 | **다중 Cloud Foundry 지역에 액세스** |  | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |
 | **시간 제한사항 없음** | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |
 | **보증된 제로 코스트** | ![기능 사용 가능](../icons/icon_enabled.svg) |  |  |
-| **협의된 가격 책정** |  |  | ![기능 사용 가능](../icons/icon_enabled.svg) |
-| **POC 학습 또는 빌드에 최적임** | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |  |
+| **중단된 가격 책정** |  |  | ![기능 사용 가능](../icons/icon_enabled.svg) |
+| **개념 증명 학습 또는 빌드에 최적임** | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |  |
 | **프로덕션 유스 케이스에 최적임** |  | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |
 {: caption="표 1. {{site.data.keyword.Bluemix_notm}} 계정의 비교" caption-side="top"}
 
