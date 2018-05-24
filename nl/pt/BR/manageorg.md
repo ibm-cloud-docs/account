@@ -19,11 +19,10 @@ lastupdated: "2018-03-19"
 Como proprietário da conta ou gerenciador de organização, é possível executar tarefas de
 gerenciamento no nível de organização e no nível de espaço. Essas tarefas incluem renomeação de uma organização
 ou espaço, designação ou atualização de funções de usuários do Cloud Foundry, gerenciamento de domínios e
-visualização dos detalhes da cota da organização.
+visualização dos detalhes da cota da organização. 
 {:shortdesc}
 
-Para gerenciar suas organizações no console do {{site.data.keyword.Bluemix}}, clique em **Gerenciar > Conta > Organizações do Cloud Foundry**. 
-É possível visualizar recursos somente de uma organização por vez. Se você for membro de diversas
+Para gerenciar suas organizações no console do {{site.data.keyword.Bluemix}}, clique em **Gerenciar > Conta > Organizações do Cloud Foundry**. É possível visualizar recursos somente de uma organização por vez. Se você for membro de diversas
 organizações, será possível alternar as organizações por meio do link de preferências de conta do usuário na
 barra de menus do console.
 
@@ -89,8 +88,7 @@ Conclua as etapas a seguir para editar as funções de usuário de um espaço es
 {: #managedomains}
 
 Como proprietário da conta ou gerenciador de organização, é possível visualizar o domínio do sistema
-e incluir domínios customizados para aplicativos que são construídos dentro de uma organização e seus espaços. 
-Como gerenciador de espaço, a guia **Domínios** é uma lista somente leitura dos
+e incluir domínios customizados para aplicativos que são construídos dentro de uma organização e seus espaços. Como gerenciador de espaço, a guia **Domínios** é uma lista somente leitura dos
 domínios que são designados ao espaço.
 
 1. Clique em **Gerenciar** &gt; **Conta** &gt; **Organizações do Cloud Foundry**.
@@ -100,8 +98,7 @@ Se você incluir um domínio customizado, deverá
 configurar seu servidor DNS para resolver seu domínio customizado para apontar para o
 domínio do sistema {{site.data.keyword.Bluemix_notm}}. Dessa maneira, quando o
 {{site.data.keyword.Bluemix_notm}} recebe uma solicitação para seu domínio customizado, ela é roteada
-corretamente para seu app. O domínio do sistema está sempre disponível para um espaço e domínios customizados também podem ser alocados para um espaço. 
-Os apps criados em um espaço podem usar qualquer um dos domínios listados para esse espaço. Para obter mais informações sobre como criar e usar domínios customizados, consulte [Usando um domínio customizado](/docs/apps/updapps.html#domain).
+corretamente para seu app. O domínio do sistema está sempre disponível para um espaço e domínios customizados também podem ser alocados para um espaço. Os apps criados em um espaço podem usar qualquer um dos domínios listados para esse espaço. Para obter mais informações sobre como criar e usar domínios customizados, consulte [Usando um domínio customizado](/docs/apps/updapps.html#domain).
 
 ## Gerenciando cota
 {: #managequota}

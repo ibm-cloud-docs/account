@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-03-28"
+lastupdated: "2018-05-08"
 
 ---
 
@@ -33,8 +33,8 @@ A tabela a seguir fornece uma comparação das contas Lite, Pré-paga e de Assin
 | **Acesso a múltiplas regiões do Cloud Foundry** |  | ![Recurso disponível](../icons/icon_enabled.svg) | ![Recurso disponível](../icons/icon_enabled.svg) |
 | **Sem restrições de tempo** | ![Recurso disponível](../icons/icon_enabled.svg) | ![Recurso disponível](../icons/icon_enabled.svg) | ![Recurso disponível](../icons/icon_enabled.svg) |
 | **Custo zero garantido** | ![Recurso disponível](../icons/icon_enabled.svg) |  |  |
-| **Precificação negociada** |  |  | ![Recurso disponível](../icons/icon_enabled.svg) |
-| **Melhor para aprendizado ou construção de POCs** | ![Recurso disponível](../icons/icon_enabled.svg) | ![Recurso disponível](../icons/icon_enabled.svg) |  |
+| **Precificação com desconto** |  |  | ![Recurso disponível](../icons/icon_enabled.svg) |
+| **Melhor para provas de conceito de aprendizado ou construção** | ![Recurso disponível](../icons/icon_enabled.svg) | ![Recurso disponível](../icons/icon_enabled.svg) |  |
 | **Adequado para casos de uso de produção** |  | ![Recurso disponível](../icons/icon_enabled.svg) | ![Recurso disponível](../icons/icon_enabled.svg) |
 {: caption="Tabela 1. Comparação de contas do {{site.data.keyword.Bluemix_notm}}" caption-side="top"}
 

@@ -32,8 +32,7 @@ sua empresa. Quando você efetuar log-in no {{site.data.keyword.Bluemix_notm}} c
 um ID federado, será solicitado a efetuar log-in por meio da página de log-in de sua
 empresa. Para obter informações, consulte o [IBMid Enterprise Federation Adoption Guide ![Ícone de link externo](../icons/launch-glyph.svg)](https://ibm.box.com/v/IBMid-Federation-Guide){: new_window}. Um patrocinador IBM, como um defensor da oferta ou do cliente, é necessário quando você solicita o registro de IDs federados.
 
-A IBM usa o Security Assertion Markup Language 2.0 (SAML 2.0) para essa federação de identidade. O SAML 2.0 é uma versão padrão para trocar dados de autenticação entre os domínios de segurança. 
-Trata-se de um protocolo baseado em XML que usa um token de segurança que contém asserções para transmitir
+A IBM usa o Security Assertion Markup Language 2.0 (SAML 2.0) para essa federação de identidade. O SAML 2.0 é uma versão padrão para trocar dados de autenticação entre os domínios de segurança. Trata-se de um protocolo baseado em XML que usa um token de segurança que contém asserções para transmitir
 informações entre as organizações "Identity Provider" e o "IBM Rely Party (RP)", também conhecido como o
 Service Provider.
 

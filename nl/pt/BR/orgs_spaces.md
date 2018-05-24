@@ -39,8 +39,7 @@ As organizações, que podem abranger múltiplas regiões, são definidas pelos 
 organização para poder receber outras permissões para os espaços dentro da organização. Para obter mais
 detalhes, consulte [Usuários e funções](/docs/iam/users_roles.html#userrolesinfo).</dd>
 <dt>Domínios</dt>
-<dd>Forneça a rota na Internet que é alocada para a organização. Uma rota tem um subdomínio e um domínio. Um subdomínio normalmente é o nome do aplicativo. 
-Um domínio pode ser um domínio do sistema ou um domínio customizado que você registrou para seu aplicativo. Consulte [Gerenciando domínios customizados](/docs/account/manageorg.html#managedomains).<br/>
+<dd>Forneça a rota na Internet que é alocada para a organização. Uma rota tem um subdomínio e um domínio. Um subdomínio normalmente é o nome do aplicativo. Um domínio pode ser um domínio do sistema ou um domínio customizado que você registrou para seu aplicativo. Consulte [Gerenciando domínios customizados](/docs/account/manageorg.html#managedomains).<br/>
 <p>**Nota:** se um domínio customizado é incluído, deve-se configurar seu servidor DNS para resolver seu domínio customizado para apontar para o domínio de sistema {{site.data.keyword.Bluemix_notm}}. Dessa
 maneira, quando o
 {{site.data.keyword.Bluemix_notm}}
@@ -62,8 +61,7 @@ Ao incluir uma organização, o nome deve ser exclusivo no
 usuário do {{site.data.keyword.Bluemix_notm}} Public, Dedicated ou Local, um novo nome deverá
 ser especificado. Após incluir a organização, você recebe automaticamente a permissão de Gerenciador
 de organização, que permite editar o nome da organização, incluir usuários e criar ou excluir espaços na
-organização. Se você tiver uma conta faturável, será possível incluir quantas organizações forem necessárias. 
-No entanto, em uma conta Lite, é possível ter apenas uma organização. 
+organização. Se você tiver uma conta faturável, será possível incluir quantas organizações forem necessárias. No entanto, em uma conta Lite, é possível ter apenas uma organização. 
 
 As [funções do usuário](/docs/iam/users_roles.html#userrolesinfo) a seguir podem ser
 designadas a usuários em uma organização. Todos os usuários convidados para a conta são designados à função de
@@ -92,8 +90,7 @@ vida de entrega. Por exemplo, é possível criar um espaço `dev` como um ambien
 desenvolvimento, um espaço `test` como um ambiente de teste e um
 espaço `production` como um ambiente de produção. Em seguida, é possível associar os apps aos espaços.
 
-Depois de incluir usuários em uma organização, é possível conceder a eles permissões para os espaços. 
-Semelhante às organizações, os espaços também têm um conjunto de
+Depois de incluir usuários em uma organização, é possível conceder a eles permissões para os espaços. Semelhante às organizações, os espaços também têm um conjunto de
 [funções do usuário](/docs/iam/users_roles.html#userrolesinfo) com permissões específicas que
 são designadas aos membros da equipe:
 

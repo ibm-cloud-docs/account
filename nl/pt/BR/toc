@@ -19,6 +19,7 @@ para organização de usuários, equipes, aplicativos](https://console.bluemix.n
     change-plan.md
     softlayerlink.md
     resourcegroups.md
+    instance_migration.md
 
     {: .topicgroup}
     Gerenciando organizações e espaços
@@ -34,8 +35,9 @@ para organização de usuários, equipes, aplicativos](https://console.bluemix.n
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    notifications.md [Resolução de problemas para acesso ao IBM
-Cloud](../troubleshoot/ts_accessing.html) [Resolução de problemas para gerenciamento de
-contas](../troubleshoot/ts_accounts.html)
-account_faq.md
+    notifications.md
+    [Resolução de problemas para acessar o IBM Cloud](../troubleshoot/ts_accessing.html)
+    [Resolução de problemas para gerenciar contas](../troubleshoot/ts_accounts.html)
+    [Resolução de problemas de migração de instâncias de serviço](../troubleshoot/ts_migration.html)
+    account_faq.md
     {: .navgroup-end}

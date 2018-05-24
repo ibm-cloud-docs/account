@@ -49,8 +49,7 @@ Após a vinculação de suas contas, sua fatura do {{site.data.keyword.Bluemix_n
 ## Serviços do {{site.data.keyword.Bluemix_notm}} baseados em API
 {: #api-based-services}
 
-A lista a seguir contém os serviços que podem ser configurados para execução com seu código do aplicativo. Nem todos os planos para esses serviços estão disponíveis para uso com as contas vinculadas. 
-Somente os planos ativados para Pay-As-You-Go e contas de assinatura estão disponíveis para uso com contas
+A lista a seguir contém os serviços que podem ser configurados para execução com seu código do aplicativo. Nem todos os planos para esses serviços estão disponíveis para uso com as contas vinculadas. Somente os planos ativados para Pay-As-You-Go e contas de assinatura estão disponíveis para uso com contas
 vinculadas. No entanto, se você tiver uma conta do {{site.data.keyword.Bluemix_notm}} separada que seja faturada separadamente, será possível usar qualquer plano para qualquer um desses serviços.
 
 * {{site.data.keyword.alertnotificationshort}}

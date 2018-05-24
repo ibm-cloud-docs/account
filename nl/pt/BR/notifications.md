@@ -21,8 +21,7 @@ Inscreva-se para ser notificado sobre seus limites de gasto da conta do {{site.d
 {:shortdesc}
 
 É possível configurar notificações por e-mail para incidentes e manutenção planejada do
-{{site.data.keyword.Bluemix_notm}}.
-Também é possível configurar notificações de gastos que o alertam quando sua conta está perto do limite de
+{{site.data.keyword.Bluemix_notm}}. Também é possível configurar notificações de gastos que o alertam quando sua conta está perto do limite de
 gastos que você especificou. Acesse **Gerenciar > Conta > Notificações de plataforma** para configurar tipos de notificação diferentes para a sua conta.
 
 ## Configurando notificações de plataforma
@@ -34,8 +33,7 @@ notificações por e-mail para incidentes e manutenção planejada do {{site.dat
 ## Configurando notificações de gastos
 {: #spending}
 
-Se você for um proprietário da conta pré-paga ou de assinatura, será possível configurar notificações de gastos por e-mail. 
-Configure as notificações para a conta total, tempo de execução, contêiner e gastos de serviço ou os gastos
+Se você for um proprietário da conta pré-paga ou de assinatura, será possível configurar notificações de gastos por e-mail. Configure as notificações para a conta total, tempo de execução, contêiner e gastos de serviço ou os gastos
 para serviços individuais, exceto serviços de terceiros. Você recebe notificações ao atingir 80%, 90% e 100% dos limites de
 gastos especificados. É possível editar cada notificação de gastos a qualquer momento, conforme as suas necessidades mudarem.
 

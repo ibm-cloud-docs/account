@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2018
 
-lastupdated: "2018-04-12"
+lastupdated: "2018-05-01"
 
 ---
 
@@ -17,8 +17,7 @@ lastupdated: "2018-04-12"
 # Alternando para o IBMid e vinculando contas
 {: #unifyingaccounts}
 
-A autenticação no SoftLayer agora usa o IBMid para fornecer um único login para todos os {{site.data.keyword.Bluemix}}. 
-Um IBMid é um ID único que você usa para efetuar login na sua conta do {{site.data.keyword.Bluemix_notm}}
+A autenticação no SoftLayer agora usa o IBMid para fornecer um único login para todos os {{site.data.keyword.Bluemix}}. Um IBMid é um ID único que você usa para efetuar login na sua conta do {{site.data.keyword.Bluemix_notm}}
 para acessar e comprar infraestrutura, serviços e recursos de aplicativos. Todas as novas contas recebem automaticamente um IBMid e as contas existentes do SoftLayer, exceto contas federadas SAML, são ativadas para alternar para a autenticação do IBMid.
 {:shortdesc}
 
@@ -65,9 +64,7 @@ Para resolver quaisquer problemas ao efetuar login com seu IBMid, veja [Resoluç
 
 Depois que as contas são alternadas para as contas do IBMid, é possível vincular contas do SoftLayer e
 contas do {{site.data.keyword.Bluemix_notm}} para usar uma combinação de recursos de infraestrutura como
-serviço (IaaS) e de plataforma como serviço (PaaS). Em seguida, é possível acessar recursos de IaaS e
-de PaaS por meio de um login único. A vinculação de suas contas também fornecerá uma única nota para todos os recursos PaaS e IaaS que você usar. 
-É possível vincular sua própria conta ou, caso você seja um usuário principal, vincular sua conta
+serviço (IaaS) e de plataforma como serviço (PaaS). Em seguida, é possível acessar recursos de IaaS e recursos de PaaS de um único login. A vinculação de suas contas também fornecerá uma única nota para todos os recursos PaaS e IaaS que você usar. É possível vincular sua própria conta ou, caso você seja um usuário principal, vincular sua conta
 do usuário.
 
 ### Vinculando suas contas do IBMid
@@ -129,6 +126,8 @@ Depois de vincular suas contas, elas não podem ser desvinculadas.
 ## Uso da autenticação de diversos fatores em contas vinculadas
 {: #2fa}
 
-Se você tiver uma conta vinculada, será possível usar a página **Configurações** de Identidade e Acesso para ativar a autenticação de diversos fatores para a sua conta. Isso também é conhecido como autenticação de dois fatores (2FA) e inclui uma camada de segurança para acessar sua conta além do IBMid e senha padrão necessários. A autenticação de diversos fatores para sua conta se aplica a todos os recursos em sua conta vinculada do {{site.data.keyword.Bluemix_notm}}. Quando ela está ativada para sua conta, ela também se aplica a todos os usuários que foram incluídos em sua conta.
+Se você tiver uma conta vinculada, será possível usar a página **Configurações** do Identity and Access para ativar a autenticação de diversos fatores (MFA) para sua conta. Isso também é conhecido como autenticação de dois fatores (2FA) e inclui uma camada de segurança para acessar sua conta além do IBMid e senha padrão necessários. A MFA para sua conta se aplica a todos os recursos em sua conta vinculada do {{site.data.keyword.Bluemix_notm}}. Quando ela está ativada para sua conta, ela também se aplica a todos os usuários que foram incluídos em sua conta.
 
-A autenticação de diversos fatores não é por IBMid. Ela ainda é por conta. Quando um IBMid está associado a várias contas e você alterna entre elas, é necessário confirmar sua identidade toda vez que você muda para uma conta diferente que requer autenticação de dois fatores. Isso é verdadeiro mesmo se a conta anterior e a nova estão ambas configuradas com o mesmo mecanismo de autenticação de dois fatores.
+A autenticação de diversos fatores não é por IBMid. Ela é por conta. Quando um IBMid está associado a várias contas e você alterna entre elas, é necessário confirmar sua identidade toda vez que você muda para uma conta diferente que requer autenticação de dois fatores. Isso é verdadeiro mesmo se a conta anterior e a nova estão ambas configuradas com o mesmo mecanismo de autenticação de dois fatores.
+
+Se você ativou anteriormente a [2FA no portal de controle](/docs/customer-portal/cpenable2fa.html#customerportal_2fa) para seus recursos de infraestrutura e, em seguida, ativou a configuração da MFA da conta do {{site.data.keyword.Bluemix_notm}}, a configuração da conta da MFA substituirá a 2FA que você configurou no portal de controle. Isso significa que é possível desativar a 2FA que você comprou no portal de controle em favor da configuração da MFA da conta. No entanto, se você é um usuário federado, a MFA não se aplica, então talvez deseje reter o seu portal de controle da 2FA configurado para assegurar a segurança de seus recursos de infraestrutura.
