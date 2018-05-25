@@ -64,12 +64,12 @@ You might be wondering what's offered in a Lite account. Check out the following
 
 ### Upgrading your account
 
-When you are ready to grow, upgrade to a Pay-As-You-Go account and pay for only what you use beyond the free allowances. After you upgrade, you can continue using any instances you created with your Lite account. Go to **Manage** > **Billing and Usage** > **Billing** in the console, and click **Add Credit Card**. 
+When you are ready to grow, upgrade to a Pay-As-You-Go account and pay for only what you use beyond the free allowances. After you upgrade, you can continue using any instances you created with your Lite account. Go to **Manage** > **Billing and Usage** > **Billing** in the console, and click **Add Credit Card**.
 
 ## Pay-As-You-Go account
 {: #paygo}
 
-With a Pay-As-You-Go account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. Your charges are based on your use of {{site.data.keyword.Bluemix_notm}} compute and services. You're eligible for free runtime and service allowances. If you use more than the free allowance, you receive a monthly {{site.data.keyword.Bluemix_notm}} invoice. The invoice is in United States dollars (USD) and provides details about your resource charges. 
+With a Pay-As-You-Go account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. Your charges are based on your use of {{site.data.keyword.Bluemix_notm}} compute and services. You're eligible for free runtime and service allowances. If you use more than the free allowance, you receive a monthly {{site.data.keyword.Bluemix_notm}} invoice. The invoice is in United States dollars (USD) and provides details about your resource charges.
 
 If you link your Pay-As-You-Go account with a SoftLayer account, starting on the first of the next month, your combined charges are included on your {{site.data.keyword.Bluemix_notm}} invoice.
 {: tip}
