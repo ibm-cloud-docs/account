@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2018
 
-lastupdated: "2018-04-12"
+lastupdated: "2018-05-01"
 
 ---
 
@@ -115,6 +115,8 @@ Después de enlazar sus cuentas, no podrá desenlazarlas.
 ## Uso de la autenticación de multifactores en cuentas enlazadas
 {: #2fa}
 
-Si tiene una cuenta enlazada, puede utilizar la página **Valores** de Identidad y Acceso para habilitar la autenticación de multifactores para su cuenta. Se trata de la autenticación de dos factores (2FA) donde se añade una capa de seguridad para acceder a su cuenta más allá del IBMid y de la contraseña necesarios estándares. La autenticación de multifactores para su cuenta se aplica a todos los recursos de la cuenta de {{site.data.keyword.Bluemix_notm}} enlazada. Cuando se habilita para su cuenta, también se aplicará a todos los usuarios que se hayan añadido a su cuenta.
+Si tiene una cuenta enlazada, puede utilizar la página **Valores** de Identidad y Acceso para habilitar la autenticación de multifactores (MFA) para su cuenta. Se trata de la autenticación de dos factores (2FA) donde se añade una capa de seguridad para acceder a su cuenta más allá del IBMid y de la contraseña necesarios estándares. La autenticación de multifactores (MFA) para su cuenta se aplica a todos los recursos de la cuenta de {{site.data.keyword.Bluemix_notm}} enlazada. Cuando se habilita para su cuenta, también se aplicará a todos los usuarios que se hayan añadido a su cuenta.
 
-La autenticación de multifactores no es por IBMid. Sigue siendo por cuenta. Cuando un IBMid está asociado con varias cuentas, y cambia entre ellas, debe confirmar su identidad cada vez que cambie a una cuenta distinta que requiera la autenticación de dos factores. Esto es cierto incluso si la cuenta anterior y la cuenta nueva están configuradas con el mismo mecanismo de autenticación de dos factores.
+La autenticación de multifactores no es por IBMid. Es por cuenta. Cuando un IBMid está asociado con varias cuentas, y cambia entre ellas, debe confirmar su identidad cada vez que cambie a una cuenta distinta que requiera la autenticación de dos factores. Esto es cierto incluso si la cuenta anterior y la cuenta nueva están configuradas con el mismo mecanismo de autenticación de dos factores.
+
+Si anteriormente ha habilitado la [2FA en el portal de control](/docs/customer-portal/cpenable2fa.html#customerportal_2fa) para sus recursos de infraestructura y habilita el valor MFA de la cuenta de {{site.data.keyword.Bluemix_notm}}, el valor de la cuenta de MFA sustituye la 2FA que ha configurado en el portal de control. Esto significa que puede inhabilitar la 2FA que ha adquirido en el portal de control en favor del valor MFA de la cuenta. Sin embargo, si es un usuario federado, no se aplica la MFA, por lo que es posible que desee conservar la configuración del portal de control 2FA para garantizar la seguridad de sus recursos de infraestructura.

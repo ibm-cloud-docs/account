@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-03-28"
+lastupdated: "2018-05-08"
 
 ---
 
@@ -33,8 +33,8 @@ La siguiente tabla proporciona una comparación de las cuentas Lite, Pago según
 | **Acceso a varias regiones de Cloud Foundry** |  | ![Característica disponible](../icons/icon_enabled.svg) | ![Característica disponible](../icons/icon_enabled.svg) |
 | **Sin restricciones de tiempo** | ![Característica disponible](../icons/icon_enabled.svg) | ![Característica disponible](../icons/icon_enabled.svg) | ![Característica disponible](../icons/icon_enabled.svg) |
 | **Coste cero garantizado** | ![Característica disponible](../icons/icon_enabled.svg) |  |  |
-| **Precios negociados** |  |  | ![Característica disponible](../icons/icon_enabled.svg) |
-| **Lo mejor para el aprendizaje o la creación de pruebas de concepto** | ![Característica disponible](../icons/icon_enabled.svg) | ![Característica disponible](../icons/icon_enabled.svg) |  |
+| **Descuentos en los precios** |  |  | ![Característica disponible](../icons/icon_enabled.svg) |
+| **Adecuado para aprender o crear pruebas de conceptos** | ![Característica disponible](../icons/icon_enabled.svg) | ![Característica disponible](../icons/icon_enabled.svg) |  |
 | **Ajuste para casos de uso de producción** |  | ![Característica disponible](../icons/icon_enabled.svg) | ![Característica disponible](../icons/icon_enabled.svg) |
 {: caption="Tabla 1. Comparación de cuentas de {{site.data.keyword.Bluemix_notm}}" caption-side="top"}
 
