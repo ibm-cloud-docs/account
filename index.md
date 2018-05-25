@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-21"
+lastupdated: "2018-05-25"
 
 ---
 
@@ -69,12 +69,14 @@ When you are ready to grow, upgrade to a Pay-As-You-Go account and pay for only 
 ## Pay-As-You-Go account
 {: #paygo}
 
-With a Pay-As-You-Go account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. Your charges are based on your use of {{site.data.keyword.Bluemix_notm}} compute and services. You're eligible for free runtime and service allowances. If you use more than the free allowance, you'll receive a monthly {{site.data.keyword.Bluemix_notm}} invoice. The invoice will be in United States dollars (USD) and will detail your resource charges.
+With a Pay-As-You-Go account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. Your charges are based on your use of {{site.data.keyword.Bluemix_notm}} compute and services. You're eligible for free runtime and service allowances. If you use more than the free allowance, you receive a monthly {{site.data.keyword.Bluemix_notm}} invoice. The invoice is in United States dollars (USD) and provides details about your resource charges. 
 
-If you link your Pay-As-You-Go account with a SoftLayer account, starting on the first of the next month, your combined charges are included on your {{site.data.keyword.Bluemix_notm}} invoice. For more information, see [Viewing credits](/docs/billing-usage/viewing_usage.html#credits).
+If you link your Pay-As-You-Go account with a SoftLayer account, starting on the first of the next month, your combined charges are included on your {{site.data.keyword.Bluemix_notm}} invoice.
 {: tip}
 
-In many countries and regions, you can sign up for a Pay-As-You-Go account from the {{site.data.keyword.Bluemix_notm}} console. After you provide your billing and credit card information, accept the terms and conditions and submit your account request. Then, your credit card is validated. You also receive a confirmation email regarding the account information. A few minutes after you receive the confirmation email, you can return to the console to continue building your apps. If your online request can't be processed for your country or region, contact [{{site.data.keyword.Bluemix_notm}} Support](/docs/get-support/howtogetsupport.html).
+You can upgrade to a Pay-As-You-Go account from the {{site.data.keyword.Bluemix_notm}} console. After you provide your billing and credit card information, accept the terms and conditions and submit your account request. Then, your credit card is validated. You also receive a confirmation email regarding the account information. A few minutes after you receive the confirmation email, you can return to the console to continue building your apps. If your online request can't be processed for your country or region, contact [{{site.data.keyword.Bluemix_notm}} Support](/docs/get-support/howtogetsupport.html).
+
+You get a promotional credit of $200 after you upgrade to a Pay-As-You-Go account, and there's no action required for you to start using it. Your $200 credit is valid for 30 days and it is automatically applied to your invoice. The credit cannot be used with infrastructure or third-party offerings.
 
 ### Upgrading your account
 
@@ -84,7 +86,7 @@ You can upgrade your Pay-As-You-Go account to a Subscription account at any time
 
 With a Subscription account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. You commit to a minimum spending amount each month and receive a subscription discount that is applied to that minimum charge. You also pay for any usage that exceeds the minimum spending amount.
 
-If you link your Subscription account with a SoftLayer account, starting on the first of the next month, your combined charges are included on your {{site.data.keyword.Bluemix_notm}} invoice. For more information, see [Viewing credits](/docs/billing-usage/viewing_usage.html#credits).
+If you link your Subscription account with a SoftLayer account, starting on the first of the next month, your combined charges are included on your {{site.data.keyword.Bluemix_notm}} invoice.
 {: tip}
 
 To sign up for a Subscription account, and for more information about subscription rates and discounts, you must contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg)
