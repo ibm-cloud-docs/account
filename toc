@@ -36,7 +36,7 @@ Managing your account
 
     {: .navgroup id="help"}
     account_faq.md
-    [Troubleshooting for accessing IBM Cloud](../troubleshoot/ts_accessing.html)
+    ts_accessing.md
     ts_accounts.md
     [Troubleshooting migrating service instances](../troubleshoot/ts_migration.html)
     {: .navgroup-end}
