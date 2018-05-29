@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2017-11-07"
+lastupdated: "2017-11-09"
 
 ---
 
@@ -16,6 +16,7 @@ lastupdated: "2017-11-07"
 {:screen: .screen}
 {:tip: .tip}
 {:new_window: target="_blank"}
+
 
 # Troubleshooting for managing accounts
 {: #managingaccounts}
@@ -47,10 +48,10 @@ This is likely because you are using a Lite account, which supports development 
 If you have a Lite account, you can upgrade to a billable account to access additional organizations. Go to the **Manage > Billing and Usage > Billing** page in the console, and click **Add Credit Card**. On the **Billing** page, you can also check if you have a Lite account.
 {: tsResolve}
 
-## Unable to create new Lite plan instance
+## Unable to create Lite plan instance
 {: #nosecondlite}
 
-You receive the following error message when you try to create a new Lite plan instance:
+You receive the following error message when you try to create a Lite plan instance:
 {: tsSymptoms}
 
 `Unable to provision new Lite instance`
@@ -99,7 +100,7 @@ To reactivate your account, contact [{{site.data.keyword.Bluemix_notm}} Support 
 ## Can't add users to an org
 {: #ts_adduser}
 
-You can invite more than one user to work under the same organization. You can invite users to your organization only if you are the account owner, or if you are both a manager and a member of the organization.
+You can invite more than one user to work under the same organization. You can invite users to your organization only if you are the account owner, or if you are a manager of the organization.
 
 You can't see the **Invite a New User** link in your **Manage Organizations** section.
 {: tsSymptoms}
@@ -107,30 +108,15 @@ You can't see the **Invite a New User** link in your **Manage Organizations** se
 Only the following {{site.data.keyword.Bluemix_notm}} users can invite users to an organization:
 {: tsCauses}
   * The account owner of the organization
-  * Organization managers who are also members, not collaborators, of the organization
+  * Managers of the organization
 
-In {{site.data.keyword.Bluemix_notm}}, you can be either a member or a collaborator of an organization:
+**Note:** All organization managers can add, modify, and remove users that are already in the organization.
 
-<dl><dt>Collaborator</dt>
-<dd>You are a collaborator of an organization if you already have an {{site.data.keyword.Bluemix_notm}} account, and someone else invites you to the organization.</dd>
-<dt>Member</dt>
-<dd>You are a member of an organization if you don't have an {{site.data.keyword.Bluemix_notm}} account, but then someone invites you to the organization and you sign up for {{site.data.keyword.Bluemix_notm}} from the invitation.</dd>
-</dl>
-
-You can't invite users to your organization if you are a collaborator of the organization, even if you have been assigned as an organization manager.
-
-**Note:** All organization managers, including those who are collaborators of an organization, can add, modify, and remove users that are already in the organization.
-
-If you can't invite users to your organization and need a different role to do so, contact your organization manager to change your role. To identify your organization manager, complete the following steps:
+If you can't invite users to your organization, contact your organization manager. To identify your organization manager, complete the following steps:
 {: tsResolve}
 
   1. From the console menu bar, click **Manage > Account > Organizations**.
   2. Go to your organization, and view the information of organization manager on the **USERS** tab.  
-
-If you can't invite users because you are a collaborator and not a member, you must delete your previous {{site.data.keyword.Bluemix_notm}} account and then be invited to join the account as a member of the organization. To delete your previous account and join the account as a member, complete the following steps:
-
-  1. Contact [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/bluemixsupport){: new_window} to open a support ticket and request that your account be deleted. If you have data that is associated with your old account that you want to save and move to the new account, include this information in your email.
-  2. After your account is deleted, have a user with the organization manager role invite you to the organization as an organization manager. Then, sign up for {{site.data.keyword.Bluemix_notm}} from the invitation.
 
 ## Batch registration of users isn't supported
 {: #ts_batchregistration}
