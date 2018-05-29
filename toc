@@ -38,5 +38,5 @@ Managing your account
     account_faq.md
     ts_accessing.md
     ts_accounts.md
-    [Troubleshooting migrating service instances](../troubleshoot/ts_migration.html)
+    ts_migration.md
     {: .navgroup-end}
