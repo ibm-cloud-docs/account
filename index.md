@@ -16,10 +16,10 @@ lastupdated: "2018-05-31"
 # Account types
 {: #accounts}
 
-You can choose from three {{site.data.keyword.Bluemix}} account types: Lite, Pay-As-You-Go, and Subscription. You can use any of the account types to get started in {{site.data.keyword.Bluemix_notm}} - simply choose the one that best suits your needs.
+You can choose from three {{site.data.keyword.Bluemix}} account types: Lite, Pay-As-You-Go, and Subscription. You can use any of the account types to get started in {{site.data.keyword.Bluemix_notm}} - choose the one that best suits your needs.
 {:shortdesc}
 
-## Account comparison
+## Comparing accounts
 {: #compare}
 
 The following table provides a comparison of Lite, Pay-As-You-Go, and Subscription accounts. For more details about each account, see the sections that follow.
@@ -50,7 +50,7 @@ Each resource group is free. When you create a connection between a service mana
 
 ### What's available?
 
-You might be wondering what's offered in a Lite account. Check out the following list of key features:
+Check out the following list of key features that are available in a Lite account:
 
    * The account is free - no credit card required.
    * The account never expires.
@@ -63,8 +63,13 @@ You might be wondering what's offered in a Lite account. Check out the following
    * After 30 days of no development activity, your service instances with Lite plans are deleted. This way, you don't have to manage deleting inactive instances before you create new ones.
 
 ### Upgrading your account
+{: #upgrade-to-paygo}
 
-When you are ready to grow, upgrade to a Pay-As-You-Go account and pay for only what you use beyond the free allowances. After you upgrade, you can continue using any instances you created with your Lite account. Go to **Manage** > **Billing and Usage** > **Billing** in the console, and click **Add Credit Card**.
+When you are ready to grow, you can upgrade your Lite account to a Pay-As-You-Go or Subscription account. 
+
+  * To upgrade to a Pay-As-You-Go account, go to **Manage** > **Billing and Usage** > **Billing** in the console, and click **Add Credit Card**.
+  * To upgrade to a Subscription account, go to **Manage** > **Billing and Usage** > **Billing** in the console, and click **Learn more**.
+
 
 ## Pay-As-You-Go account
 {: #paygo}
@@ -79,6 +84,7 @@ You can upgrade to a Pay-As-You-Go account from the {{site.data.keyword.Bluemix_
 You get a promotional credit of $200 after you upgrade to a Pay-As-You-Go account, and there's no action required for you to start using it. Your $200 credit is valid for 30 days and it is automatically applied to your invoice. The credit cannot be used with infrastructure or third-party offerings.
 
 ### Upgrading your account
+{: #upgrade-to-subscription}
 
 You can upgrade your Pay-As-You-Go account to a Subscription account at any time. Contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg) for more details.
 
@@ -88,8 +94,6 @@ With a Subscription account, you can create multiple resource groups to easily m
 
 If you link your Subscription account with a SoftLayer account, starting on the first of the next month, your combined charges are included on your {{site.data.keyword.Bluemix_notm}} invoice.
 {: tip}
-
-To sign up for a Subscription account, and for more information about subscription rates and discounts, you must contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg)
 
 ### {{site.data.keyword.Bluemix_dedicated_notm}} account
 
