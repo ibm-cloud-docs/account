@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-12-06"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2017-12-06"
 # プライベート・リソースへのアカウントの追加
 {: #include}
 
-作成したプライベート・リソースは、デフォルトで制限されています。 アカウントの管理者である場合には、`bx` [コマンド・ライン・インターフェース](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_catalog_entry_visibility_set)を使用して組み込みリストに追加することによって、リソースを表示できる人を選択することができます。
+作成したプライベート・リソースは、デフォルトで制限されています。 アカウントの管理者である場合には、`ibmcloud` [コマンド・ライン・インターフェース](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_catalog_entry_visibility_set)を使用して組み込みリストに追加することによって、リソースを表示できる人を選択することができます。
 {:shortdesc: .shortdesc}
 
 ## アクセス権限の有無を確認する方法
@@ -26,14 +26,14 @@ lastupdated: "2017-12-06"
 ## ステップ 1: リソースの検索
 {: #find-resource}
 
-`bx catalog service <service-id or service-name>`を入力します。 service-id または service-name をリソース名または ID に置換します。 返ってきた情報に、リソースの項目の子リソースを示した階層が表示されます。
+`ibmcloud catalog service <service-id or service-name>`を入力します。 service-id または service-name をリソース名または ID に置換します。 返ってきた情報に、リソースの項目の子リソースを示した階層が表示されます。
 
 ## ステップ 2: アカウントの組み込みによる可視性の設定
 {: #vis-inc}
 
 アカウントがプライベート・リソースを表示できるよう許可するには、以下のコマンドを入力します。
 
-`bx catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>`
 
 includes-add フラグの後に、アカウントに関連付けられた E メールまたは ID のコンマ区切りリストを追加できます。
 
@@ -44,7 +44,7 @@ includes-add フラグの後に、アカウントに関連付けられた E メ�
 
 組み込みリストからアカウントを削除するには、以下のコマンドを入力します。
 
-`bx catalog entry-visibility-set <service-id> --includes-remove <account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <service-id> --includes-remove <account-id or account-email>`
 
 ## 子オブジェクトの可視性の管理
 {: #child-vis}
@@ -53,7 +53,7 @@ includes-add フラグの後に、アカウントに関連付けられた E メ�
 
 組み込みリストが空であることは、アカウント管理者のみが表示できるということを意味します。 アカウントのすべてのメンバーが表示できるようにするためには、自分のアカウントが組み込みリストに載っている必要があります。
 
-例えば、`bx catalog service <your_service>` を入力すると、リソースの子を表示できます。
+例えば、`ibmcloud catalog service <your_service>` を入力すると、リソースの子を表示できます。
 
 ```
 ID                 cloudant
@@ -79,7 +79,7 @@ Children           Name                                          Kind         ID
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-子デプロイメントのリソース ID を取得して、以下のコマンドを使用してアカウントを組み込むことができます。 `bx catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`.
+子デプロイメントのリソース ID を取得して、以下のコマンドを使用してアカウントを組み込むことができます。 `ibmcloud catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`.
 
 オブジェクトの子は複雑な方法で可視性を継承できます。 子オブジェクトがプライベートである場合、独自の可視性構成があります。 しかし、子オブジェクトがパブリックに設定されている場合、その親の可視性を継承します。 プライベート子オブジェクトに可視性を設定すると、親よりも可視性が制限されることがあります。
 

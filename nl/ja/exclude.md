@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-12-06"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2017-12-06"
 # パブリック・リソースをアカウントのユーザーに非表示にする
 {: #exclude}
 
-アカウントの管理者である場合には、`bx` [コマンド・ライン・インターフェース](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_catalog_entry_visibility_set)を使用して除外リストに追加することによって、パブリック・リソースをアカウントの全員に非表示にすることを選択できます。
+アカウントの管理者である場合には、`ibmcloud` [コマンド・ライン・インターフェース](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_catalog_entry_visibility_set)を使用して除外リストに追加することによって、パブリック・リソースをアカウントの全員に非表示にすることを選択できます。
 {:shortdesc: .shortdesc}
 
 **注:** カタログ内の項目を非表示にすることは、Cloud Foundry CLI から、またはグローバル・ナビゲーションで使用可能なサービス・プロビジョニング・リスト (財務、モバイル、Watson、Web アプリなど) から項目を削除することにはなりません。
@@ -28,31 +28,31 @@ lastupdated: "2017-12-06"
 ## ステップ 1: リソースの検出
 {: #find-resource}
 
-`bx catalog search <service-id or service-name>` を入力してリソースを検索します。 service-id または service-name をリソース名または ID に置換します。 返ってきた情報で、非表示にするサービスの ID または名前を見つけます。
+`ibmcloud catalog search <service-id or service-name>` を入力してリソースを検索します。 service-id または service-name をリソース名または ID に置換します。 返ってきた情報で、非表示にするサービスの ID または名前を見つけます。
 
 ## ステップ 2: そのサービスの詳細の取得
 
-`bx catalog service <service-id or service-name>`を入力します。 前のコマンドで見つかった情報を使用して、このコマンドを使用してリソースの詳細を調べます。 返ってきた情報に、リソースの項目の子リソースを示した階層が表示されます。
+`ibmcloud catalog service <service-id or service-name>`を入力します。 前のコマンドで見つかった情報を使用して、このコマンドを使用してリソースの詳細を調べます。 返ってきた情報に、リソースの項目の子リソースを示した階層が表示されます。
 
 ## ステップ 3: リソースを非表示にする
 {: #vis-exc}
 
 パブリック・リソースがアカウントで見られないようにするには、以下のコマンドを入力します。
 
-`bx catalog entry-visibility-set <resource-id> —-excludes-add <account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <resource-id> —-excludes-add <account-id or account-email>`
 
 excludes フラグの後に、アカウントに関連付けられた E メールまたはアカウント ID のコンマ区切りリストを追加できます。
 
 コマンドを実行した後、リソースを非表示にするプロセスに 30 分かかります。 30 分後に、ログアウトしてアカウントに戻り、非表示にされたリソースを確認します。
 
-**注:** 非表示にした項目は UI および bx CLI から使用できません。 非表示にされた項目は Cloud Foundry マーケットプレイスで引き続き表示されますが、非表示のプランは Cloud Foundry からプロビジョンできません。 除外されたアカウントの管理者は、引き続きリソースを表示できます。
+**注:** 非表示にした項目は UI および ibmcloud CLI から使用できません。 非表示にされた項目は Cloud Foundry マーケットプレイスで引き続き表示されますが、非表示のプランは Cloud Foundry からプロビジョンできません。 除外されたアカウントの管理者は、引き続きリソースを表示できます。
 
 ## 除外リストからのアカウントの削除
 {: #remove-exclude}
 
 除外リストからアカウント ID または E メールを削除するには、以下のコマンドを入力します。
 
-`bx catalog entry-visibility-set <service-id> —-excludes-remove <account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <service-id> —-excludes-remove <account-id or account-email>`
 
 ## 子オブジェクトの可視性の管理の例
 {: #child}
@@ -61,7 +61,7 @@ excludes フラグの後に、アカウントに関連付けられた E メー�
 
 この例では、パブリック Cloudant サービスからアカウントを除外できます。
 
-`bx catalog service cloudant` を入力すると、リソースの子を表示できます。
+`ibmcloud catalog service cloudant` を入力すると、リソースの子を表示できます。
 
 ```
 ID                 cloudant
@@ -87,6 +87,6 @@ Children           Name                                          Kind         ID
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-オブジェクトの ID を見つけて、`bx catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>` を使用してアカウントを除外します。
+オブジェクトの ID を見つけて、`ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>` を使用してアカウントを除外します。
 
 可視性の仕組みについての詳細は、[API の資料](https://console.bluemix.net/apidocs/682)を参照してください。

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-11-21"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -46,7 +46,7 @@ ID およびアクセスの UI を使用するには、以下のステップを�
 2. 「ユーザー」のリストから自分の名前をクリックします。
 3. **「アクセス・ポリシー」**のセクションで、割り当てられたアクセス・ポリシーを表示できます。 カタログ内のプライベート・リソースを表示するためにアカウントを組み込むリストを更新するには、アカウント内のカタログ・リソースの Cloud IAM 管理者役割を持っていることが必要です。
 
-[bx CLI](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam) を使用するには、以下のステップを実行します。
+[ibmcloud CLI](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_commands_iam) を使用するには、以下のステップを実行します。
 
-CLI で選択したアカウントの管理者であるかどうかを調べるには、`bx iam user-policies <your-username>` のコマンドに自分のユーザー名を入力して実行します。 アカウントの管理者でない場合は、これらのコマンドは、許可されていないというエラーを返します。
+CLI で選択したアカウントの管理者であるかどうかを調べるには、`ibmcloud iam user-policies <your-username>` のコマンドに自分のユーザー名を入力して実行します。 アカウントの管理者でない場合は、これらのコマンドは、許可されていないというエラーを返します。
 {: tip}
