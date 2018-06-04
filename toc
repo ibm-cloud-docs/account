@@ -18,8 +18,6 @@ Managing your account
     change-plan.md
     softlayerlink.md
     notifications.md
-    resourcegroups.md
-    instance_migration.md
 
     {: .topicgroup}
     Managing orgs and spaces
@@ -38,5 +36,4 @@ Managing your account
     account_faq.md
     ts_accessing.md
     ts_accounts.md
-    ts_migration.md
     {: .navgroup-end}
