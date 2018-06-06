@@ -17,6 +17,7 @@ Gestione del tuo account
 
     change-plan.md
     softlayerlink.md
+    notifications.md
     resourcegroups.md
     instance_migration.md
 
@@ -34,9 +35,8 @@ Gestione del tuo account
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    notifications.md
+    account_faq.md
     [Risoluzione dei problemi relativi all'accesso a IBM Cloud](../troubleshoot/ts_accessing.html)
     [Risoluzione dei problemi relativi alla gestione degli account](../troubleshoot/ts_accounts.html)
     [Risoluzione dei problemi relativi alla migrazione delle istanze del servizio](../troubleshoot/ts_migration.html)
-    account_faq.md
     {: .navgroup-end}

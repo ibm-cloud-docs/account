@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-12-06"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2017-12-06"
 # Come nascondere una risorsa pubblica agli utenti nel tuo account
 {: #exclude}
 
-Se sei un amministratore dell'account, puoi scegliere di nascondere una risorsa pubblica per tutti gli utenti nel tuo account aggiungendoli a un elenco di esclusione con l'[interfaccia riga di comando](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_catalog_entry_visibility_set) `bx`.
+Se sei un amministratore dell'account, puoi scegliere di nascondere una risorsa pubblica per tutti gli utenti nel tuo account aggiungendoli a un elenco di esclusione attraverso l'[interfaccia riga di comando](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_catalog_entry_visibility_set) `ibmcloud`.
 {:shortdesc: .shortdesc}
 
 **Nota:** se si nasconde un elemento nel catalogo questo non verrà rimosso dalla CLI di Cloud Foundry o dagli elenchi di provisioning del servizio disponibili tramite la navigazione globale, ad esempio Elemento finanziario, Mobile, Watson e Applicazioni Web.
@@ -28,31 +28,31 @@ Puoi utilizzare la CLI o l'interfaccia utente di Identità e accesso per determi
 ## Passo 1: trova una risorsa
 {: #find-resource}
 
-Immetti `bx catalog search <service-id or service-name>` per cercare una risorsa. Sostituisci service-id o service-name con un nome o un ID risorsa. Trova l'ID o il nome del servizio che desideri nascondere nelle informazioni che vengono restituite.
+Immetti `ibmcloud catalog search <service-id or service-name>` per cercare una risorsa. Sostituisci service-id o service-name con un nome o un ID risorsa. Trova l'ID o il nome del servizio che desideri nascondere nelle informazioni che vengono restituite.
 
 ## Passo 2: ottieni i dettagli di quel servizio
 
-Immetti `bx catalog service <service-id or service-name>`. Utilizzando ciò che hai trovato nel comando precedente, usa questo comando per esaminare maggiori dettagli della risorsa. Con le informazioni restituite, puoi visualizzare la gerarchia, che mostra le risorse secondarie degli elementi nella risorsa.
+Immetti `ibmcloud catalog service <service-id or service-name>`. Utilizzando ciò che hai trovato nel comando precedente, usa questo comando per esaminare maggiori dettagli della risorsa. Con le informazioni restituite, puoi visualizzare la gerarchia, che mostra le risorse secondarie degli elementi nella risorsa.
 
 ## Passo 3: nascondi la risorsa
 {: #vis-exc}
 
 Immetti il seguente comando per impedire al tuo account di visualizzare una risorsa pubblica.
 
-`bx catalog entry-visibility-set <resource-id> —-excludes-add <account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <resource-id> —-excludes-add <account-id or account-email>`
 
 Dopo l'indicatore excludes, puoi aggiungere un elenco separato da virgole di e-mail o ID account associati agli account.
 
 Una volta eseguito il comando, il processo per nascondere la risorsa richiede 30 minuti. Dopo 30 minuti, scollegati e torna al tuo account per vedere la risorsa nascosta.
 
-**Nota:** le voci che nascondi non sono disponibili dall'interfaccia utente e dalla CLi bx. Le voci nascoste sono ancora visibili nel marketplace di Cloud Foundry, ma un piano nascosto non può essere fornito da Cloud Foundry. Gli amministratori dell'account escluso possono ancora vedere la risorsa.
+**Nota:** le voci che nascondi non sono disponibili dall'interfaccia utente e dalla CLI ibmcloud. Le voci nascoste sono ancora visibili nel marketplace di Cloud Foundry, ma un piano nascosto non può essere fornito da Cloud Foundry. Gli amministratori dell'account escluso possono ancora vedere la risorsa.
 
 ## Rimuovi un account dall'elenco di esclusione
 {: #remove-exclude}
 
 Immetti il seguente comando per rimuovere un ID account o e-mail dall'elenco di esclusione.
 
-`bx catalog entry-visibility-set <service-id> —-excludes-remove <account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <service-id> —-excludes-remove <account-id or account-email>`
 
 ## Gestione della visibilità di oggetti secondari di esempio
 {: #child}
@@ -61,7 +61,7 @@ Puoi gestire la visibilità di tutte le tue risorse. Ogni risorsa secondaria ha 
 
 In questo esempio, puoi escludere un account dal servizio pubblico di Cloudant.
 
-Se immetti `bx catalog service cloudant`, puoi vedere gli elementi secondari della risorsa.
+Se immetti `ibmcloud catalog service cloudant`, puoi vedere gli elementi secondari della risorsa.
 
 ```
 ID                 cloudant
@@ -87,6 +87,6 @@ Elemento secondario Nome                                          Tipo         I
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-Trova l'ID per un oggetto ed escludi un account con `bx catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>`.
+Trova l'ID per un oggetto ed escludi un account con `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>`.
 
 Per ulteriori informazioni su come funziona la visibilità, consulta le [documentazioni API](https://console.bluemix.net/apidocs/682).

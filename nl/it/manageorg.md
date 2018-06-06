@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-03-19"
+lastupdated: "2018-05-21"
 
 ---
 
@@ -97,7 +97,7 @@ Per visualizzare la quota utilizzata e assegnata per un'organizzazione, completa
    * Il numero di servizi 
    * I dettagli del piano 
 
-3. Espandi i dettagli della regione per visualizzare la quota al livello dello spazio. 
+3. Espandi le righe per visualizzare i dettagli delle quote a livello di spazio per ogni regione.  
 
 Per modificare la quota assegnata a un'organizzazione, devi aprire un ticket di supporto. Per ulteriori informazioni, vedi [Richiesta di assistenza clienti](/docs/get-support/howtogetsupport.html#getting-customer-support). 
 

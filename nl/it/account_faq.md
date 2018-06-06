@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-03-28"
+lastupdated: "2018-05-21"
 
 ---
 
@@ -60,6 +60,16 @@ Per assistenza su come iniziare a lavorare in {{site.data.keyword.Bluemix_notm}}
 
 Puoi anche controllare una serie di risorse utili disponibili nel [Centro di supporto ![Icona link esterno](../icons/launch-glyph.svg)](https://console.bluemix.net/unifiedsupport/supportcenter){: new_window}. Da lì, puoi accedere a Stack Overflow per inviare una domanda alla nostra community di sviluppatori. Puoi anche inoltrare un ticket di supporto.
 
+## Quanti gruppi di risorse, organizzazioni o spazi posso creare?
+{: #resourcelimit}
+
+Se hai un account fatturabile, non c'è un limite al numero di gruppi di risorse, organizzazioni o spazi che puoi creare nel tuo account. Tuttavia, se hai un account Lite, sei limitato a una organizzazione e a un gruppo di risorse.
+
+## Posso registrarmi per una versione di prova?
+{: #freetrial}
+
+Gli account di prova {{site.data.keyword.Bluemix_notm}} sono disponibili per docenti e studenti presso istituti accademici accreditati. Per poter beneficiare di un account di prova, vai su [onthehub.com/ibm ![Icona link esterno](../icons/launch-glyph.svg)](http://onthehub.com/ibm){: new_window} e convalida le credenziali del tuo istituto.
+
 ## Dopo essermi collegato al mio account, come posso accedere?
 {: #al_login}
 
@@ -87,30 +97,27 @@ Se hai più account SoftLayer, devi collegare gli account che hanno un account d
 
 Se non hai un account della piattaforma {{site.data.keyword.Bluemix_notm}} corrispondente e un ID IBM di accompagnamento, è possibile creare un NUOVO account SoftLayer per collegare gli account.
 
-## E se non voglio collegare il mio account? 	
+## E se non voglio collegare il mio account? 
 {: #al_bene}
 
 Per aiutarti a sperimentare ulteriormente tutte le nuove funzionalità di {{site.data.keyword.Bluemix_notm}} si sta sviluppando tutto in una sola console {{site.data.keyword.Bluemix_notm}}. Quando unisci il tuo account, avrai accesso a un catalogo più consistente, alla gestione dell'account semplificata e a un solo accesso.
 
 Se il collegamento non è un'opzione valida per te, contatta il supporto delle vendite per le altre opzioni.
 
-## Ci sono incentivi per collegare i miei account in questo momento? 	
+## Ci sono incentivi per collegare i miei account in questo momento? 
 {: #al_incent}
 
 Sì.  Se colleghi i tuoi account adesso, puoi utilizzare un credito di $200 per provare i servizi PaaS.
 
-## Cosa significa aggiungere i servizi della piattaforma {{site.data.keyword.Bluemix_notm}} al mio account SoftLayer? 	
+## Cosa significa aggiungere i servizi della piattaforma {{site.data.keyword.Bluemix_notm}} al mio account SoftLayer? 
 {: #al_owaffslacct}
 
 Significa che il tuo account ha accesso a tutte le offerte della piattaforma {{site.data.keyword.Bluemix_notm}}.  Dopo che aggiungi l'offerta della piattaforma {{site.data.keyword.Bluemix_notm}} al tuo account, il tuo master dell'account dovrà abilitare l'utente finale ad avere accesso all'offerta.
 
 Se sei il master dell'account, consulta [Gestione degli utenti](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) per ulteriori informazioni.
 
-## Come il collegamento dell'account influenza il mio ID account master SoftLayer? 	
+## Come il collegamento dell'account influenza il mio ID account master SoftLayer? 
 {: #al_howaffslmastacct}
 
 Puoi ancora utilizzare l'ID del tuo account SoftLayer per accedere al portale clienti dell'infrastruttura {{site.data.keyword.BluSoftlayer_full}} perché è possibile accedere alla console {{site.data.keyword.Bluemix_notm}} utilizzando gli ID IBM.
 
-## Esiste un limite al numero di gruppi di risorse, organizzazioni o spazi che posso creare?
-
-Se hai un account fatturabile, non c'è un limite al numero di gruppi di risorse, organizzazioni o spazi che puoi creare nel tuo account. Tuttavia, se hai un account Lite, sei limitato a una organizzazione e a un gruppo di risorse.

@@ -23,7 +23,7 @@ Man mano che i servizi passano dall'utilizzare organizzazioni, spazi e ruoli Clo
 Quando un servizio esegue il passaggio da Cloud Foundry, un messaggio nel tuo dashboard ti chiede di migrare le tue istanze del servizio esistenti. Puoi identificare i servizi che sono pronti alla migrazione in base all'icona ![Migra questa istanza del servizio a un gruppo di risorse](images/migrate.svg "Migra questa istanza del servizio a un gruppo di risorse").
 {:shortdesc}
 
-Quando migri le istanze del servizio Cloud Foundry esistenti a un gruppo di risorse, il gruppo che scegli non può essere modificato dopo il completamento della migrazione. Assicurati pertanto di pianificare il modo in cui desideri organizzare le risorse nell'account prima di eseguire la migrazione. Questo potrebbe voler dire che devi creare uno o più gruppi di risorse, se hai un account fatturabile, prima della migrazione.  Puoi provare a organizzare le tue risorse in gruppo di risorse nello stesso modo in cui hai organizzato le risorse negli spazi Cloud Foundry.
+Quando migri le istanze del servizio Cloud Foundry esistenti a un gruppo di risorse, il gruppo che scegli non può essere modificato dopo il completamento della migrazione. Assicurati pertanto di pianificare il modo in cui desideri organizzare le risorse nell'account prima di eseguire la migrazione. Questo potrebbe voler dire che devi creare uno o più gruppi di risorse, se hai un account fatturabile, prima della migrazione. Puoi provare a organizzare le tue risorse in gruppo di risorse nello stesso modo in cui hai organizzato le risorse negli spazi Cloud Foundry.
 {: tip}
 
 ## Perché migrare le istanze del servizio?

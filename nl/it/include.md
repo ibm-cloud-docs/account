@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-12-06"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2017-12-06"
 # Aggiunta di account alla tua risorsa privata
 {: #include}
 
-Qualsiasi risorsa privata che crei è riservata per impostazione predefinita. Se sei un amministratore dell'account, puoi scegliere chi può vedere la tua risorsa aggiungendo gli utenti in un elenco di inclusione con l'[interfaccia riga di comando](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_catalog_entry_visibility_set) `bx`.
+Qualsiasi risorsa privata che crei è riservata per impostazione predefinita. Se sei un amministratore dell'account, puoi scegliere chi può vedere la tua risorsa aggiungendo gli utenti in un elenco di inclusione attraverso l'[interfaccia riga di comando](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_catalog_entry_visibility_set) `ibmcloud`.
 {:shortdesc: .shortdesc}
 
 ## Come faccio a sapere se dispongo dell'accesso?
@@ -26,14 +26,14 @@ Puoi utilizzare la CLI o l'interfaccia utente di Identità e accesso per determi
 ## Passo 1: trova la tua risorsa
 {: #find-resource}
 
-Immetti `bx catalog service <service-id or service-name>`. Sostituisci service-id o service-name con il nome o l'ID della tua risorsa. Con le informazioni restituite, puoi visualizzare la gerarchia, che mostra le risorse secondarie degli elementi nella risorsa.
+Immetti `ibmcloud catalog service <service-id or service-name>`. Sostituisci service-id o service-name con il nome o l'ID della tua risorsa. Con le informazioni restituite, puoi visualizzare la gerarchia, che mostra le risorse secondarie degli elementi nella risorsa.
 
 ## Passo 2: imposta la visibilità includendo un account
 {: #vis-inc}
 
 Immetti il seguente comando per consentire a un account di visualizzare la tua risorsa privata.
 
-`bx catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>`
 
 Dopo l'indicatore includes-add, puoi aggiungere un elenco separato da virgole di e-mail o ID associati agli account.
 
@@ -44,7 +44,7 @@ Una volta eseguito il comando, il processo per includere la risorsa richiede 30 
 
 Immetti il seguente comando per rimuovere un account dall'elenco di inclusione.
 
-`bx catalog entry-visibility-set <service-id> --includes-remove <account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <service-id> --includes-remove <account-id or account-email>`
 
 ## Gestione della visibilità di oggetti secondari
 {: #child-vis}
@@ -53,7 +53,7 @@ Puoi gestire la visibilità della tua risorsa o dei suoi elementi secondari.
 
 Un elenco di inclusione vuoto significa che solo gli amministratori del tuo account possono vederla. Perché possa essere vista da tutti i membri dell'account, il tuo account deve essere nell'elenco di inclusione.
 
-Ad esempio, se immetti `bx catalog service <your_service>`, puoi vedere gli elementi secondari della risorsa.
+Ad esempio, se immetti `ibmcloud catalog service <your_service>`, puoi vedere gli elementi secondari della risorsa.
 
 ```
 ID                 cloudant
@@ -79,7 +79,7 @@ Elemento secondario Nome                                          Tipo         I
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-Puoi ottenere l'ID risorsa per la distribuzione secondaria e quindi includere un account utilizzando il seguente comando. `bx catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`.
+Puoi ottenere l'ID risorsa per la distribuzione secondaria e quindi includere un account utilizzando il seguente comando. `ibmcloud catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`.
 
 Gli elementi secondari di un oggetto possono ereditare la visibilità in modi complessi. Se l'oggetto secondario è privato, ha la propria configurazione di visibilità. Tuttavia, se l'oggetto secondario è impostato su pubblico, eredita la visibilità del suo elemento principale. L'impostazione della visibilità su un oggetto secondario privato può limitare la sua visibilità più dell'elemento principale.
 
