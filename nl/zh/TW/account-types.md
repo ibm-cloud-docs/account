@@ -24,17 +24,17 @@ lastupdated: "2017-11-29"
 
 下表提供「精簡」、「隨收隨付制」及「訂閱」帳戶的比較。如需有關每一個帳戶的詳細資料，請參閱下列各節。
 
-|  | 精簡| 隨收隨付制| 訂閱| 
+|  |精簡|隨收隨付制|訂閱| 
 |--------------------|--------------------|--------------------|--------------------|
-| **存取免費 Cloud Foundry 記憶體** | 256 MB | 512 MB | 512 MB | 
-| **存取[精簡服務方案 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window}** | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
-| **存取所有免費方案**|  | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
-| **存取完整型錄**|  | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
-| **沒有時間限制**| ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
-| **保證零成本**| ![可用特性](../icons/icon_enabled.svg) |  |  |
-| **協議的定價**|  |  | ![可用特性](../icons/icon_enabled.svg) | 
-| **最適合學習或建置 POC**| ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |  | 
-| **適合正式作業使用案例**|  | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) | 
+|**存取免費 Cloud Foundry 記憶體** |256 MB |512 MB |512 MB | 
+|**存取[精簡服務方案 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window}** | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
+|**存取所有免費方案**|  | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
+|**存取完整型錄**|  | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
+|**沒有時間限制**| ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
+|**保證零成本**| ![可用特性](../icons/icon_enabled.svg) |  |  |
+|**協議的定價**|  |  | ![可用特性](../icons/icon_enabled.svg) | 
+|**最適合學習或建置 POC**| ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |  | 
+|**適合正式作業使用案例**|  | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) | 
 {: caption="表 1. {{site.data.keyword.Bluemix_notm}} 帳戶的比較" caption-side="top"}
 
 ## 精簡帳戶
@@ -70,8 +70,8 @@ lastupdated: "2017-11-29"
 |帳戶類型|	收費方式？|
 |------------------|-----------------------|
 |隨收隨付制|	費用是根據 {{site.data.keyword.Bluemix_notm}} 運算及服務的使用|
-|訂閱| 您可以根據最低的每月消費承諾來取得每月折扣|
-| {{site.data.keyword.Bluemix_dedicated_notm}} | 年度合約|
+|訂閱|您可以根據最低的每月消費承諾來取得每月折扣|
+| {{site.data.keyword.Bluemix_dedicated_notm}} |年度合約|
 |{{site.data.keyword.Bluemix_local_notm}} |	年度合約|
 {:caption="表 2. {{site.data.keyword.Bluemix_notm}} 計費帳戶及費用" caption-side="top"}
 

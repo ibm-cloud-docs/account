@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-03-28"
+lastupdated: "2018-05-21"
 
 ---
 
@@ -61,6 +61,16 @@ lastupdated: "2018-03-28"
 
 您也可以查看[支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg)](https://console.bluemix.net/unifiedsupport/supportcenter){: new_window} 中提供的若干有用資源。從這裡，您可以存取 Stack Overflow，將問題張貼至我們的開發人員社群。您也可以提交支援問題單。
 
+## 我可以建立多少資源群組、組織或空間？
+{: #resourcelimit}
+
+如果您有計費帳戶，您可以在帳戶內建立的資源群組、組織或空間數量沒有限制。不過，如果您有精簡帳戶，則限制為一個組織及一個資源群組。
+
+## 我可以註冊免費試用嗎？
+{: #freetrial}
+
+{{site.data.keyword.Bluemix_notm}} 試用帳戶可在認證合格的學術機構中提供給教職師及學生。若要符合試用帳戶的資格，請移至 [onthehub.com/ibm ![外部鏈結圖示](../icons/launch-glyph.svg)](http://onthehub.com/ibm){: new_window}，並驗證機構認證。
+
 ## 鏈結我的帳戶之後，要如何登入？
 {: #al_login}
 
@@ -88,30 +98,27 @@ lastupdated: "2018-03-28"
 
 如果您沒有相符的 {{site.data.keyword.Bluemix_notm}} 平台帳戶，以及隨附的 IBM ID 帳戶，則可以建立新的 SoftLayer 帳戶來鏈結帳戶。
 
-## 如果我不想鏈結帳戶要怎麼辦？ 	
+## 如果我不想鏈結帳戶要怎麼辦？ 
 {: #al_bene}
 
 為了協助您更深入體驗 {{site.data.keyword.Bluemix_notm}}，所有新功能會開發成單一的 {{site.data.keyword.Bluemix_notm}} 主控台。當您合併帳戶時，將可以存取更強健的型錄、簡化的帳戶管理，以及單一登入。
 
 如果鏈結對您而言不是可行的選項，請與您的業務支援人員聯絡，以取得其他選項。
 
-## 立即鏈結帳戶有獎勵嗎？ 	
+## 立即鏈結帳戶有獎勵嗎？ 
 {: #al_incent}
 
 是的！現在鏈結帳戶，您就可以使用 200 美元的額度來試用 PaaS 服務。
 
-## 將 {{site.data.keyword.Bluemix_notm}} 平台服務新增至我的 SoftLayer 帳戶有什麼涵義？ 	
+## 將 {{site.data.keyword.Bluemix_notm}} 平台服務新增至我的 SoftLayer 帳戶有什麼涵義？ 
 {: #al_owaffslacct}
 
 這表示您的帳戶可以存取所有 {{site.data.keyword.Bluemix_notm}} 平台供應項目。將 {{site.data.keyword.Bluemix_notm}} 平台供應項目新增至帳戶之後，您的帳戶管理員將需要讓一般使用者能夠存取供應項目。
 
 如果您是帳戶管理員，請參閱[處理使用者](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage)，以取得相關資訊。
 
-## 帳戶鏈結對我的 SoftLayer 主要帳戶 ID 有什麼影響？ 	
+## 帳戶鏈結對我的 SoftLayer 主要帳戶 ID 有什麼影響？ 
 {: #al_howaffslmastacct}
 
 您仍可以使用 SoftLayer 帳戶的 ID ，來登入 {{site.data.keyword.BluSoftlayer_full}} 基礎架構客戶入口網站，因為可以使用 IBM ID 來存取 {{site.data.keyword.Bluemix_notm}} 主控台。
 
-## 我可以建立的資源群組、組織或空間數量是否有限制？
-
-如果您有計費帳戶，您可以在帳戶內建立的資源群組、組織或空間數量沒有限制。不過，如果您有精簡帳戶，則限制為一個組織及一個資源群組。

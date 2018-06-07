@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -19,6 +19,6 @@ lastupdated: "2018-01-10"
 
 ## 如何變更型錄資源的擁有者
 
-若要變更資源的擁有者，請在 [CLI](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_settings) 中使用下列指令：
+若要變更資源的擁有者，請在 [CLI](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_commands_settings) 中使用下列指令：
 
-`bx catalog entry-visibility-set <service-id> --owner<account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <service-id> --owner<account-id or account-email>`

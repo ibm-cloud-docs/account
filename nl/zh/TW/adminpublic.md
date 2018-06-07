@@ -25,9 +25,9 @@ lastupdated: "2018-04-06"
 
 IBM 使用 Security Assertion Markup Language 2.0 (SAML 2.0) 來進行這個識別身分同盟。SAML 2.0 是適用於在安全網域之間交換鑑別資料的標準版本。它是 XML 型通訊協定，使用包含主張的安全記號在組織「身分提供者」與 "IBM Rely Party (RP)"（另稱為「服務提供者」）之間傳遞資訊。
 
-| 註冊方法| 詳細資料|    
+|註冊方法|詳細資料|    
 |-----------------|---------|
-|現有 IBM ID| 如果您已經有 IBM ID，請使用用於其他 IBM 產品及服務的現有認證來註冊 {{site.data.keyword.Bluemix_notm}}。在您註冊時，必須輸入一個電話號碼。|
-|新的 IBM ID| 如果您還沒有 IBM ID，則可以選擇建立 IBM ID。使用 IBM ID，您可以將一個登入使用者名稱用於所有使用的 IBM 產品及服務（包括 {{site.data.keyword.Bluemix_notm}}）。您必須輸入個人資訊，包括名字和姓氏、電話號碼以及新認證的密碼。您可以使用此 IBM ID 登入其他 IBM 產品及服務。|
-|聯合 ID| 如果您的公司已要求向 IBM 登錄公司網域中的使用者認證，您可以使用已用於公司登入的認證來註冊 {{site.data.keyword.Bluemix_notm}}。在您註冊時，必須輸入一個電話號碼。|
+|現有 IBM ID|如果您已經有 IBM ID，請使用用於其他 IBM 產品及服務的現有認證來註冊 {{site.data.keyword.Bluemix_notm}}。在您註冊時，必須輸入一個電話號碼。|
+|新的 IBM ID|如果您還沒有 IBM ID，則可以選擇建立 IBM ID。使用 IBM ID，您可以將一個登入使用者名稱用於所有使用的 IBM 產品及服務（包括 {{site.data.keyword.Bluemix_notm}}）。您必須輸入個人資訊，包括名字和姓氏、電話號碼以及新認證的密碼。您可以使用此 IBM ID 登入其他 IBM 產品及服務。|
+|聯合 ID|如果您的公司已要求向 IBM 登錄公司網域中的使用者認證，您可以使用已用於公司登入的認證來註冊 {{site.data.keyword.Bluemix_notm}}。在您註冊時，必須輸入一個電話號碼。|
 {:caption="表 1. 註冊方法" caption-side="top"}

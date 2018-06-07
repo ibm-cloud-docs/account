@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-03-19"
+lastupdated: "2018-05-21"
 
 ---
 
@@ -97,7 +97,7 @@ lastupdated: "2018-03-19"
    * 服務數 
    * 方案詳細資料 
 
-3. 展開地區詳細資料，以檢視空間層次的配額。 
+3. 展開列，以檢視每一個地區的空間層次配額詳細資料。  
 
 若要變更配置給組織的配額，您必須開立支援問題單。如需相關資訊，請參閱[取得客戶支援](/docs/get-support/howtogetsupport.html#getting-customer-support)。 
 

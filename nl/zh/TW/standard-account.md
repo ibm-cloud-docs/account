@@ -30,11 +30,11 @@ lastupdated: "2017-10-13"
 
 |標準帳戶的新增功能|    
 |-----------------|
-| 帳戶永不到期。|
-| Cloud Foundry 應用程式可以同時存取最多 256 MB 的免費運行環境記憶體。|
-| 您可以存取依需求 Watson 服務的免費精簡方案，例如 Conversation、Internet of Things Platform、Cloudant NoSQLDB。如需相關資訊，請參閱[可用功能](/docs/pricing/standard_account.html#whatsavailable)。|
-| 如果長達 10 天沒有開發活動，您的應用程式將會休眠。|
-| 您的服務實例會在 30 天無活動之後刪除。|
+|帳戶永不到期。|
+|Cloud Foundry 應用程式可以同時存取最多 256 MB 的免費運行環境記憶體。|
+|您可以存取依需求 Watson 服務的免費精簡方案，例如 Conversation、Internet of Things Platform、Cloudant NoSQLDB。如需相關資訊，請參閱[可用功能](/docs/pricing/standard_account.html#whatsavailable)。|
+|如果長達 10 天沒有開發活動，您的應用程式將會休眠。|
+|您的服務實例會在 30 天無活動之後刪除。|
 {:caption="表 1. 標準帳戶的新增功能" caption-side="top"}
 
 |試用帳戶轉換時有哪些事情維持不變？| 

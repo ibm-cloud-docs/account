@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-11-21"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -24,11 +24,11 @@ lastupdated: "2017-11-21"
 
 您可能想要使用 `viewer` 及 `editor` Identity and Access Management (IAM) 角色，將其他許可權授與您帳戶中的使用者。請檢閱下表，以進一步瞭解每一個 IAM 角色容許使用者在處理帳戶型錄的環境定義內執行的作業。
 
-| 平台管理角色| 動作的說明|
+|平台管理角色|動作的說明|
 |:-----------------|:-----------------|
-| 檢視者| 即使尚未包含帳戶，還是可以看到專用服務，但無法進行變更。|
-| 編輯者| 可以變更物件 meta 資料，但無法變更可見性。|
-| 管理者| 可以變更物件 meta 資料或可見性。|
+|檢視者|即使尚未包含帳戶，還是可以看到專用服務，但無法進行變更。|
+|編輯者|可以變更物件 meta 資料，但無法變更可見性。|
+|管理者|可以變更物件 meta 資料或可見性。|
 {: caption="表 1. 型錄服務的平台管理角色及動作範例" caption-side="top"}
 
 如需指派您帳戶中使用者存取權的逐步指示，請移至[資源存取權](/docs/iam/mngiam.html#iammanidaccser#resourceaccess)文件。
@@ -46,7 +46,7 @@ lastupdated: "2017-11-21"
 2. 從「使用者」清單中，按一下您的姓名。
 3. 在**存取原則**區段中，您可以檢視已指派的存取原則。您必須具有您帳戶中型錄資源的 Cloud IAM 管理者角色，才能更新包含帳戶的清單，以查看型錄中的專用資源。
 
-若要使用 [bx CLI](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)，請完成下列步驟：
+若要使用 [ibmcloud CLI](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_commands_iam)，請完成下列步驟：
 
-輸入下列含有您使用者名稱的指令：`bx iam user-policies <your-username>`，以瞭解您是否為 CLI 中所選取帳戶的管理者。如果您不是帳戶的管理者，這些指令會傳回錯誤，指出您未獲授權。
+輸入下列含有您使用者名稱的指令：`ibmcloud iam user-policies <your-username>`，以瞭解您是否為 CLI 中所選取帳戶的管理者。如果您不是帳戶的管理者，這些指令會傳回錯誤，指出您未獲授權。
 {: tip}

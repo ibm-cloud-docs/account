@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-08"
+lastupdated: "2018-05-25"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-05-08"
 # 帳戶類型
 {: #accounts}
 
-您可以在 {{site.data.keyword.Bluemix}} 上免費開始建置。我們有三種不同的帳戶類型可供選擇：「精簡」、「隨收隨付制」及「訂閱」。您可以使用任何帳戶類型在 {{site.data.keyword.Bluemix_notm}} 中開始使用 - 只需要選擇最符合您需求的帳戶類型。
+您可以選擇三種 {{site.data.keyword.Bluemix}} 帳戶類型：「精簡」、「隨收隨付制」及「訂閱」。您可以使用任何帳戶類型在 {{site.data.keyword.Bluemix_notm}} 中開始使用 - 只需要選擇最符合您需求的帳戶類型。
 {:shortdesc}
 
 ## 帳戶比較
@@ -24,24 +24,24 @@ lastupdated: "2018-05-08"
 
 下表提供「精簡」、「隨收隨付制」及「訂閱」帳戶的比較。如需有關每一個帳戶的詳細資料，請參閱下列各節。
 
-|  | 精簡| 隨收隨付制| 訂閱|
+|  |精簡|隨收隨付制|訂閱|
 |--------------------|--------------------|--------------------|--------------------|
-| **存取免費 Cloud Foundry 記憶體** | 256 MB | 512 MB | 512 MB |
-| **存取[精簡服務方案 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://console.bluemix.net/catalog/?search=label:lite){: new_window}** | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
-| **存取所有免費方案**|  | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
-| **存取完整型錄**|  | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
-| **存取多個 Cloud Foundry 地區** |  | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
-| **沒有時間限制**| ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
-| **保證零成本**| ![可用特性](../icons/icon_enabled.svg) |  |  |
-| **定價折扣** |  |  | ![可用特性](../icons/icon_enabled.svg) |
-| **最適合學習或建置概念證明**| ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |  |
-| **適合正式作業使用案例**|  | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
+|**存取免費 Cloud Foundry 記憶體** |256 MB |512 MB |512 MB |
+|**存取[精簡服務方案 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://console.bluemix.net/catalog/?search=label:lite){: new_window}** | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
+|**存取所有免費方案**|  | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
+|**存取完整 {{site.data.keyword.Bluemix_notm}} 型錄**|  | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
+|**存取多個 Cloud Foundry 地區** |  | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
+|**沒有時間限制**| ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
+|**保證零成本**| ![可用特性](../icons/icon_enabled.svg) |  |  |
+|**定價折扣** |  |  | ![可用特性](../icons/icon_enabled.svg) |
+|**最適合學習或建置概念證明**| ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |  |
+|**適合正式作業使用案例**|  | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
 {: caption="表 1. {{site.data.keyword.Bluemix_notm}} 帳戶的比較" caption-side="top"}
 
 ## 精簡帳戶
 {: #liteaccount}
 
-請註冊免費「精簡」帳戶，以在 {{site.data.keyword.Bluemix_notm}} 主控台中選取名為「精簡」並使用「精簡」標籤 ![「精簡」標籤](../icons/Lite.svg) 所顯示的免費方案，來建置應用程式以及探索服務。「精簡」帳戶不會到期，因此不需要信用卡。
+請註冊「精簡」帳戶，以使用精選的免費「精簡」方案開始建置應用程式與探索服務，這些服務在 {{site.data.keyword.Bluemix_notm}} 主控台中顯示時會有「精簡」標籤 ![「精簡」標籤](../icons/Lite.svg)。「精簡」帳戶不會到期，因此不需要信用卡。
 
 您可以存取為您所建立並命名為 `Default` 的單一資源群組。{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 所管理的所有服務實例都會自動新增至此資源群組。您隨時可以更新此資源群組的名稱。如需詳細步驟，請參閱[重新命名資源群組](/docs/account/resourcegroups.html#renaming-a-resource-group)。
 
@@ -65,41 +65,32 @@ lastupdated: "2018-05-08"
 ### 升級帳戶
 
 當您準備好要擴大時，升級為「隨收隨付制」，即可僅需要針對超出免費額度的部分付費。在升級之後，您可以繼續使用以精簡帳戶建立的任何實例。請移至主控台中的**管理** > **計費及用量** > **計費**，然後按一下**新增信用卡**。
- 
 
-## 計費帳戶
-{: #billableacts}
 
-下表列出不同的帳戶類型及其付費方法。
+## 隨收隨付制帳戶
+{: #paygo}
 
-|帳戶類型|	收費方式？|
-|------------------|-----------------------|
-|隨收隨付制|	費用是根據 {{site.data.keyword.Bluemix_notm}} 運算及服務的使用|
-|訂閱| 您可以根據最低的每月消費承諾來取得每月折扣|
-| {{site.data.keyword.Bluemix_dedicated_notm}} | 年度合約|
-|{{site.data.keyword.Bluemix_local_notm}} |	年度合約|
-{:caption="表 2. {{site.data.keyword.Bluemix_notm}} 計費帳戶及費用" caption-side="top"}
+使用「隨收隨付制」帳戶，您可以建立多個資源群組來輕鬆管理配額，以及檢視一組資源的計費使用情形。您的費用是根據 {{site.data.keyword.Bluemix_notm}} 運算及服務的使用。您有資格使用免費運行環境及服務額度。如果您的用量超過免費額度，則會收到 {{site.data.keyword.Bluemix_notm}} 的月份發票。發票的計價單位為美元 (USD)，並且會提供資源費用的詳細資料。
 
-如果您鏈結 {{site.data.keyword.Bluemix_notm}} 計費帳戶與 SoftLayer 帳戶，從下個月 1 日開始，結合的費用即會併入 {{site.data.keyword.Bluemix_notm}} 發票。如需相關資訊，請參閱[檢視額度](/docs/billing-usage/viewing_usage.html#credits)。
+如果您鏈結「隨收隨付制」帳戶與 SoftLayer 帳戶，從下個月 1 日開始，結合的費用即會併入 {{site.data.keyword.Bluemix_notm}} 發票。
 {: tip}
 
-### 隨收隨付制帳戶
+您可以從 {{site.data.keyword.Bluemix_notm}} 主控台升級至「隨收隨付制」帳戶。提供計費及信用卡資訊、接受條款，並提交帳戶要求之後，便會驗證您的信用卡。您也會收到有關帳戶資訊的確認電子郵件。等收到確認電子郵件過後幾分鐘，您就可以回到主控台繼續建置應用程式。如果無法處理您所在國家或地區的線上申請，請與 [{{site.data.keyword.Bluemix_notm}} 支援中心](/docs/get-support/howtogetsupport.html)聯絡。
 
-使用「隨收隨付制」帳戶，您可以建立多個資源群組來輕鬆管理配額，以及檢視一組資源的計費使用情形。您有資格使用免費運行環境及服務額度。如果您的用量超過免費額度，則會收到 {{site.data.keyword.Bluemix_notm}} 的月份發票。發票的計價單位為美元 (USD)，並且會詳細列出資源費用。
+在您升級至「隨收隨付制」帳戶之後，您會得到促銷扣抵 200 美元，不需要任何動作即可開始使用它。您的 $200 額度有效期限為 30 天，且會自動套用至您的發票。此額度無法用於基礎架構或協力廠商供應項目。
 
-在許多國家及地區中，您可以從 {{site.data.keyword.Bluemix_notm}} 主控台註冊「隨收隨付制」帳戶。提供計費及信用卡資訊、接受條款，並提交帳戶要求之後，然後會驗證您的信用卡。您也會收到有關帳戶資訊的確認電子郵件。等收到確認電子郵件過後幾分鐘，您就可以回到主控台繼續建置應用程式。 
+### 升級帳戶
 
-如果無法處理您所在國家或地區的線上申請，請與 [{{site.data.keyword.Bluemix_notm}} 支援中心 ](https://ibm.biz/bluemixsupport){: new_window}![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡。在您登入至「{{site.data.keyword.Bluemix_notm}} 服務入口網站」之後，請按一下**與支援中心聯絡**，然後選取**計費、帳戶或登入**選項。
+您隨時都可以將「隨收隨付制」帳戶升級為「訂閱」帳戶。如需其他詳細資料，請與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡。
 
-您隨時都可以將「隨收隨付制」帳戶轉換為「訂閱」帳戶。如需其他詳細資料，請與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡。
+
+## 訂閱帳戶
+
+使用「訂閱」帳戶，您可以建立多個資源群組來輕鬆管理配額，以及檢視一組資源的計費使用情形。您承諾每個月的最低消費金額，並獲得套用至該最低收費的訂閱折扣。您也會針對任何超出最低消費金額的用量付款。
+
+
+如果您鏈結「訂閱」帳戶與 SoftLayer 帳戶，從下個月 1 日開始，結合的費用即會併入 {{site.data.keyword.Bluemix_notm}} 發票。
 {: tip}
-
-### 訂閱帳戶
-
-使用「訂閱」帳戶，您可以建立多個資源群組來輕鬆管理配額，以及檢視一組資源的計費使用情形。
-
-您承諾每個月的最低消費金額，並獲得套用至該最低收費的訂閱折扣。您也會針對任何超出最低消費金額的用量付款。
-
 
 若要註冊「訂閱」帳戶，以及取得訂閱費率及折扣的相關資訊，您必須與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡。
 
@@ -127,37 +118,4 @@ lastupdated: "2018-05-08"
    * 標準 {{site.data.keyword.Bluemix_notm}} 支援
 
 您在該期間每個月所支付的金額是根據您想要的本端服務，加上讓您存取所有公用服務的「訂閱」帳戶。{{site.data.keyword.Bluemix_notm}} Public 中的服務使用費用是根據您的「訂閱」帳戶合約來計算。您會收到關於任何超出訂閱合約之使用服務的發票。請與 IBM 指定的客戶業務代表聯絡，或與 [{{site.data.keyword.Bluemix_notm}} 銷售人員](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡，以開始您的合約。
-
-## 試用帳戶
-{: #trial}
-
-所有地區都提供試用帳戶。
-有了免費的 30 天試用，您就可以在 {{site.data.keyword.Bluemix_notm}} 中開始建置應用程式以及探索服務。
-
-
-當您使用 {{site.data.keyword.Bluemix_notm}} ID 註冊免費試用時，您的帳戶免費具有下列資源：
-
-  * 2 GB 記憶體上限
-  * 10 個服務
-  * 1 個 SSL 憑證
-
-您也可以存取為您所建立並命名為 `Default` 的單一資源群組。所有 IAM 受管理服務實例都會自動新增至此資源群組。您隨時可以更新此資源群組的名稱。如需詳細步驟，請參閱[重新命名資源群組](/docs/account/resourcegroups.html#renaming-a-resource-group)。
-
-每一個資源群組都是免費的。當您在 IAM 所管理的服務與 Cloud Foundry 應用程式之間建立連線時，請建立計入您配額的別名（即服務實例）。請參閱[何謂別名？](/docs/cfapps/connecting_apps.html#what_is_alias)。
-{: tip}
-
-### 我的免費試用結束時會發生什麼情況？
-{: #trialend}
-
-您的免費試用在註冊 30 天之後到期時，即會停止您帳戶中的應用程式。您無法註冊另一個 {{site.data.keyword.Bluemix_notm}} 帳戶，但您還是可以存取您的帳戶，以及您受邀使用的任何帳戶。
-
-若要重新啟動應用程式，請將您的帳戶轉換成計費帳戶，方法是針對「隨收隨付制」帳戶提供信用卡資訊，或建立「訂閱」帳戶。然後，您就可以繼續使用免費的運算及服務額度。您只需要針對未包含在每月免費額度中的服務、容器及運行環境的用量進行付款。
-
-  * 若要升級為「隨收隨付制」帳戶，請移至主控台中的**管理** > **計費及用量** > **計費**，然後按一下**新增信用卡**。
-
-  * 若要註冊「訂閱」帳戶，請與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡。
-
-如果您未在免費試用到期之後轉換帳戶，則會在 30 天之後移除您的應用程式及服務。不過，不會刪除您的帳戶，而且您隨時都可以登入及升級至計費帳戶。此外，您會收到電子郵件通知，提醒您建立計費帳戶並避免遺失應用程式設定及服務配置。如果您不想要收到來自 {{site.data.keyword.Bluemix_notm}} 的通知，則可以隨時取消訂閱。
-
-如果您轉換帳戶，則會將免費額度限制為一般由每一個服務所提供的額度。額度不再是許多 IBM 服務在免費試用期間所提供的無限制使用額度。
 
