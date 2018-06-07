@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-03-28"
+lastupdated: "2018-05-21"
 
 ---
 
@@ -60,6 +60,16 @@ Para obtener ayuda con la preparación y la ejecución en {{site.data.keyword.Bl
 
 También puede echar un vistazo a los varios recursos útiles disponibles en el [Centro de soporte ![Icono de enlace externo](../icons/launch-glyph.svg)](https://console.bluemix.net/unifiedsupport/supportcenter){: new_window}. Desde ahí, puede acceder a Stack Overflow para publicar una pregunta en nuestra comunidad de desarrolladores. También puede abrir una incidencia de soporte.
 
+## ¿Cuántos grupos de recursos, organizaciones o espacios puedo crear?
+{: #resourcelimit}
+
+Si tiene una cuenta facturable, no hay un límite en el número de grupos de recursos, organizaciones o espacios que pueda crear con su cuenta. Sin embargo, si tiene una cuenta Lite, estará limitado a una organización y a un grupo de recursos.
+
+## ¿Puedo registrarme para una prueba gratuita?
+{: #freetrial}
+
+Las cuentas de prueba de {{site.data.keyword.Bluemix_notm}} están disponibles para profesores y estudiantes de instituciones académicas acreditadas. Para cumplir los requisitos para una cuenta de prueba, vaya a [onthehub.com/ibm ![icono de enlace externo](../icons/launch-glyph.svg)](http://onthehub.com/ibm){: new_window} y valide las credenciales de la institución.
+
 ## Después de enlazar mi cuenta, ¿cómo inicio una sesión?
 {: #al_login}
 
@@ -86,30 +96,27 @@ Si tiene varias cuentas de SoftLayer, primero debe enlazar las cuentas que tenga
 
 Si no tiene una cuenta de plataforma de {{site.data.keyword.Bluemix_notm}} coincidente, y la correspondiente cuenta IBMid, se puede crear una NUEVA cuenta de SoftLayer para enlazar las cuentas.
 
-## ¿Qué pasa si no deseo enlazar mi cuenta? 	
+## ¿Qué pasa si no deseo enlazar mi cuenta? 
 {: #al_bene}
 
 Para obtener una mejor experiencia de {{site.data.keyword.Bluemix_notm}} toda la nueva funcionalidad se está desarrollando en una única consola de {{site.data.keyword.Bluemix_notm}}. Cuando se fusionan las cuentas, se obtiene un catálogo más robusto, una gestión simplificada de la cuenta y un único inicio de sesión.
 
 Si el enlace no es una opción viable en su caso, póngase en contacto con el soporte de ventas para estudiar otras opciones.
 
-## ¿Hay incentivos para enlazar mis cuentas ahora? 	
+## ¿Hay incentivos para enlazar mis cuentas ahora? 
 {: #al_incent}
 
 Sí.  Si se enlaza sus cuentas ahora, puede utilizar un crédito de 200 $ para probar los servicios PaaS.
 
-## ¿Qué significa añadir los servicios de la plataforma {{site.data.keyword.Bluemix_notm}} a mi cuenta de SoftLayer? 	
+## ¿Qué significa añadir los servicios de la plataforma {{site.data.keyword.Bluemix_notm}} a mi cuenta de SoftLayer? 
 {: #al_owaffslacct}
 
 Esto significa que la cuenta tendrá acceso a todas las ofertas de la plataforma {{site.data.keyword.Bluemix_notm}}.  Después de añadir la oferta de la plataforma {{site.data.keyword.Bluemix_notm}} a su cuenta, su maestro de cuentas necesitará habilitar el usuario final para que tenga acceso a la oferta.
 
 Si usted es el maestro de cuentas, consulte [Trabajar con usuarios](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) para obtener más información.
 
-## El enlace de las cuentas, ¿cómo afecta al ID de cuenta maestra de SoftLayer? 	
+## El enlace de las cuentas, ¿cómo afecta al ID de cuenta maestra de SoftLayer? 
 {: #al_howaffslmastacct}
 
 Todavía podrá utilizar el ID de cuenta de SoftLayer para iniciar una sesión en el portal de cliente de infraestructura de {{site.data.keyword.BluSoftlayer_full}} porque es posible acceder a la consola de {{site.data.keyword.Bluemix_notm}} mediante los IBMid.
 
-## ¿Existe un límite en el número de grupos de recursos, organizaciones o espacios que puedo crear?
-
-Si tiene una cuenta facturable, no hay un límite en el número de grupos de recursos, organizaciones o espacios que pueda crear con su cuenta. Sin embargo, si tiene una cuenta Lite, estará limitado a una organización y a un grupo de recursos.

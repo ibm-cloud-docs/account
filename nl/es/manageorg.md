@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-03-19"
+lastupdated: "2018-05-21"
 
 ---
 
@@ -97,7 +97,7 @@ Para ver la cuota utilizada y asignada a una organización, realice los pasos si
    * El número de servicios 
    * Detalles del plan 
 
-3. Expanda los detalles de región para ver la cuota a nivel de espacio. 
+3. Expanda las filas para ver los detalles de la cuota a nivel de espacio para cada región.  
 
 Para cambiar la cuota asignada para una organización debe abrir una incidencia de soporte. Para obtener más información, consulte [Obtención de soporte al cliente](/docs/get-support/howtogetsupport.html#getting-customer-support). 
 

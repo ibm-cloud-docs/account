@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-11-21"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -46,7 +46,7 @@ Para utilizar la interfaz de usuario de identidad y acceso, siga estos pasos:
 2. Pulse su nombre de la lista Usuarios.
 3. En la sección **Políticas de acceso**, puede ver sus políticas de acceso asignadas. Debe tener el rol de administrador de Cloud IAM para el recurso de catálogo en su cuenta para actualizar la lista que incluye cuentas para ver recursos privados en el catálogo.
 
-Para utilizar la [CLI de bx](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam), siga estos pasos:
+Para utilizar la [CLI de ibmcloud](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_commands_iam), siga estos pasos:
 
-Especifique el siguiente mandato con el nombre de usuario `bx iam user-policies <your-username>` para saber si es un administrador de cuentas que ha seleccionado en la CLI. Si no es un administrador de su cuenta, estos mandatos devuelven un error que dice que no está autorizado.
+Especifique el siguiente mandato con el nombre de usuario `ibmcloud iam user-policies <your-username>` para saber si es un administrador de cuentas que ha seleccionado en la CLI. Si no es un administrador de su cuenta, estos mandatos devuelven un error que dice que no está autorizado.
 {: tip}

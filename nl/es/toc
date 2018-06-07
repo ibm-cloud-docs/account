@@ -17,11 +17,12 @@ Gestión de la cuenta
 
     change-plan.md
     softlayerlink.md
+    notifications.md
     resourcegroups.md
     instance_migration.md
 
     {: .topicgroup}
-    Managing orgs and spaces
+    Gestión de organizaciones y espacios
         orgs_spaces.md
         manageorg.md
 
@@ -34,8 +35,8 @@ Gestión de la cuenta
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    notifications.md
+    account_faq.md
     [Resolución de problemas para acceder a IBM Cloud](../troubleshoot/ts_accessing.html)
-    [Resolución de problemas de gestión de cuentas](../troubleshoot/ts_accounts.html)
-    [Resolución de problemas de migración de instancias de servicio](../troubleshoot/ts_migration.html) account_faq.md
+    [Resolución de problemas para gestionar cuentas](../troubleshoot/ts_accounts.html)
+    [Resolución de problemas al migrar a instancias de servicio](../troubleshoot/ts_migration.html)
     {: .navgroup-end}
