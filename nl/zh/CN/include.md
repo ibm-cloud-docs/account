@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-12-06"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2017-12-06"
 # 向专用资源添加帐户
 {: #include}
 
-缺省情况下，您创建的任何专用资源都会受到限制。如果您是帐户的管理员，那么可以选择通过使用 `bx` [命令行界面](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_catalog_entry_visibility_set)将用户添加到包含列表，从而使其可以查看您的资源。
+缺省情况下，您创建的任何专用资源都会受到限制。如果您是帐户的管理员，那么可以选择通过使用 `ibmcloud` [命令行界面](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_catalog_entry_visibility_set)将用户添加到包含列表，从而使其可以查看您的资源。
 {:shortdesc: .shortdesc}
 
 ## 如何知道自己是否具有访问权？
@@ -26,14 +26,14 @@ lastupdated: "2017-12-06"
 ## 步骤 1：查找资源
 {: #find-resource}
 
-输入 `bx catalog service <service-id or service-name>`. 将 service-id 或 service-name 替换为资源名称或标识。借助返回的信息，可以查看层次结构，其中会显示资源中各项的子资源。
+输入 `ibmcloud catalog service <service-id or service-name>`. 将 service-id 或 service-name 替换为资源名称或标识。借助返回的信息，可以查看层次结构，其中会显示资源中各项的子资源。
 
 ## 步骤 2：通过包含帐户来设置可视性
 {: #vis-inc}
 
 输入以下命令以允许帐户查看您的专用资源。
 
-`bx catalog entry-visibility-set <service-id> --includes-add<account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <service-id> --includes-add<account-id or account-email>`
 
 在 includes-add 标志后，可以添加与帐户关联的电子邮件或标识的逗号分隔列表。
 
@@ -44,7 +44,7 @@ lastupdated: "2017-12-06"
 
 输入以下命令以从包含列表中除去帐户。
 
-`bx catalog entry-visibility-set <service-id> --includes-remove<account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <service-id> --includes-remove<account-id or account-email>`
 
 ## 管理子对象的可视性
 {: #child-vis}
@@ -53,7 +53,7 @@ lastupdated: "2017-12-06"
 
 包含列表为空意味着仅帐户管理员可以查看该列表。您的帐户必须位于包含列表中，该帐户的所有成员才可查看该列表。
 
-例如，如果输入 `bx catalog service <your_service>`，那么可以查看资源的子代。
+例如，如果输入 `ibmcloud catalog service <your_service>`，那么可以查看资源的子代。
 
 ```
 ID                 cloudant
@@ -79,7 +79,7 @@ Children           Name                                          Kind         ID
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-您可以获取资源标识用于子代部署，然后使用以下命令来包含帐户。`bx catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`.
+您可以获取资源标识用于子代部署，然后使用以下命令来包含帐户。`ibmcloud catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`.
 
 对象的子代可以通过复杂方式来继承可视性。如果子对象是私有对象，那么它会具有自己的可视性配置。但是，如果将该子对象设置为公共，那么它会继承其父代的可视性。在专用子对象上设置可视性可能会使其可视性比父代更受限制。
 

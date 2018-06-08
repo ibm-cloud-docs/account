@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-03-28"
+lastupdated: "2018-05-21"
 
 ---
 
@@ -60,6 +60,16 @@ lastupdated: "2018-03-28"
 
 [지원 센터 ![외부 링크 아이콘](../icons/launch-glyph.svg)](https://console.bluemix.net/unifiedsupport/supportcenter){: new_window}에서 사용 가능한 다수의 유용한 리소스를 확인할 수도 있습니다. 여기에서 Stack Overflow에 액세스하여 당사 개발자 커뮤니티에 질문을 게시할 수 있습니다. 지원 티켓을 제출할 수도 있습니다.
 
+## 얼마나 많은 리소스 그룹, 조직 또는 영역을 작성할 수 있습니까?
+{: #resourcelimit}
+
+청구 가능 계정을 보유한 경우에는 계정 내에서 작성할 수 있는 리소스 그룹, 조직 또는 영역의 수에 한계가 없습니다. 그러나 라이트 계정을 보유한 경우에는 하나의 조직과 하나의 리소스 그룹으로 제한됩니다.
+
+## 무료 평가판을 위해 등록할 수 있습니까?
+{: #freetrial}
+
+공인 교육 기관의 교직원 및 학생은 {{site.data.keyword.Bluemix_notm}} 평가판 계정을 사용할 수 있습니다. 평가판 계정 사용 자격을 얻으려면 [onthehub.com/ibm ![외부 링크 아이콘](../icons/launch-glyph.svg)](http://onthehub.com/ibm){: new_window}으로 이동한 후 자신의 기관 신임 정보를 유효성 검증하십시오. 
+
 ## 계정을 연결한 후에는 어떻게 로그인합니까?
 {: #al_login}
 
@@ -86,30 +96,27 @@ lastupdated: "2018-03-28"
 
 일치하는 {{site.data.keyword.Bluemix_notm}} 플랫폼 계정 및 해당 IBM ID가 없는 경우에는 계정을 연결하기 위해 새 SoftLayer 계정을 작성할 수 있습니다.
 
-## 계정을 연결하지 않으려는 경우에는 어떻게 해야 합니까? 	
+## 계정을 연결하지 않으려는 경우에는 어떻게 해야 합니까? 
 {: #al_bene}
 
 사용자가 더욱 많은 {{site.data.keyword.Bluemix_notm}} 서비스를 사용해보는 데 도움을 주기 위해 모든 새 기능은 하나의 {{site.data.keyword.Bluemix_notm}} 콘솔로 통합되도록 개발되고 있습니다. 계정을 병합하면 더 안정적인 카탈로그, 단순화된 계정 관리 및 단일 로그인 기능에 액세스할 수 있습니다.
 
 계정 연결을 이용할 수 없는 경우에는 판매 담당자에게 다른 선택사항을 문의하십시오.
 
-## 지금 계정을 연결하면 얻을 수 있는 혜택이 있습니까? 	
+## 지금 계정을 연결하면 얻을 수 있는 혜택이 있습니까? 
 {: #al_incent}
 
 예!  지금 계정을 연결하면 PaaS 서비스를 이용해 보는 데 사용할 수 있는 $200의 크레딧이 제공됩니다.
 
-## {{site.data.keyword.Bluemix_notm}} 플랫폼 서비스를 SoftLayer 계정에 추가한다는 것은 무슨 의미입니까? 	
+## {{site.data.keyword.Bluemix_notm}} 플랫폼 서비스를 SoftLayer 계정에 추가한다는 것은 무슨 의미입니까? 
 {: #al_owaffslacct}
 
 이는 계정이 모든 {{site.data.keyword.Bluemix_notm}} 플랫폼 오퍼링에 액세스할 수 있음을 의미합니다.  {{site.data.keyword.Bluemix_notm}} 플랫폼 오퍼링을 계정에 추가하고 나면 계정 마스터는 일반 사용자가 오퍼링에 액세스할 수 있도록 설정해야 합니다.
 
 사용자가 계정 마스터인 경우에는 [사용자 관련 작업](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage)에서 자세한 정보를 참조하십시오.
 
-## 계정을 연결하면 SoftLayer 마스터 계정 ID에 어떤 영향이 있습니까? 	
+## 계정을 연결하면 SoftLayer 마스터 계정 ID에 어떤 영향이 있습니까? 
 {: #al_howaffslmastacct}
 
 {{site.data.keyword.Bluemix_notm}} 콘솔은 IBM ID를 통해 액세스 가능하므로 여전히 SoftLayer 계정의 ID를 사용하여 {{site.data.keyword.BluSoftlayer_full}} 인프라 고객 포털에 로그인할 수 있습니다.
 
-## 작성할 수 있는 리소스 그룹, 조직 또는 영역의 수에 한계가 있습니까?
-
-청구 가능 계정을 보유한 경우에는 계정 내에서 작성할 수 있는 리소스 그룹, 조직 또는 영역의 수에 한계가 없습니다. 그러나 라이트 계정을 보유한 경우에는 하나의 조직과 하나의 리소스 그룹으로 제한됩니다.

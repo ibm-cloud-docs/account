@@ -24,17 +24,17 @@ lastupdated: "2017-11-29"
 
 下表提供了轻量、现买现付和预订帐户的比较。有关每种帐户的更多详细信息，请参阅后面的各部分。
 
-|  | 轻量| 现买现付| 预订| 
+|  |轻量|现买现付|预订| 
 |--------------------|--------------------|--------------------|--------------------|
-| **访问免费的 Cloud Foundry 内存**| 256 MB| 512 MB| 512 MB| 
-| **访问[轻量服务套餐 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window}**| ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |
-| **访问所有免费套餐**|  | ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |
-| **访问完整目录**|  | ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |
-| **无时间限制**| ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |
-| **保证零成本**| ![功能可用](../icons/icon_enabled.svg) |  |  |
-| **协商定价**|  |  | ![功能可用](../icons/icon_enabled.svg) | 
-| **学习或构建 POC 的最佳选择**| ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |  | 
-| **适合生产用例**|  | ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) | 
+|**访问免费的 Cloud Foundry 内存**|256 MB|512 MB|512 MB| 
+|**访问[轻量服务套餐 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window}**| ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |
+|**访问所有免费套餐**|  | ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |
+|**访问完整目录**|  | ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |
+|**无时间限制**| ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |
+|**保证零成本**| ![功能可用](../icons/icon_enabled.svg) |  |  |
+|**协商定价**|  |  | ![功能可用](../icons/icon_enabled.svg) | 
+|**学习或构建 POC 的最佳选择**| ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |  | 
+|**适合生产用例**|  | ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) | 
 {: caption="表 1. {{site.data.keyword.Bluemix_notm}} 帐户比较" caption-side="top"}
 
 ## 轻量帐户
@@ -70,8 +70,8 @@ lastupdated: "2017-11-29"
 |帐户类型|	收费方式|
 |------------------|-----------------------|
 |现买现付|	将根据您所使用的 {{site.data.keyword.Bluemix_notm}} 计算和服务收费|
-|预订| 可享受基于每月最低花费承诺的每月折扣|
-| {{site.data.keyword.Bluemix_dedicated_notm}} | 按一年期合同收费|
+|预订|可享受基于每月最低花费承诺的每月折扣|
+| {{site.data.keyword.Bluemix_dedicated_notm}} |按一年期合同收费|
 |{{site.data.keyword.Bluemix_local_notm}} |	按一年期合同收费|
 {:caption="表 2. {{site.data.keyword.Bluemix_notm}} 计费帐户和收费方式" caption-side="top"}
 

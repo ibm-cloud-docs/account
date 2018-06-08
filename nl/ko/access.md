@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-11-21"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -46,7 +46,7 @@ ID 및 액세스 UI 를 사용하려면 다음 단계를 완료하십시오.
 2. 사용자 목록에서 이름을 클릭하십시오.
 3. **액세스 정책** 섹션에서 지정된 액세스 정책을 볼 수 있습니다. 카탈로그에서 개인용 리소스를 보기 위한 계정이 포함된 목록을 업데이트하려면 계정의 카탈로그 리소스에 대한 Cloud IAM 관리자 역할이 있어야 합니다.
 
-[bx CLI](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)를 사용하려면 다음 단계를 완료하십시오.
+[ibmcloud CLI](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_commands_iam)를 사용하려면 다음 단계를 완료하십시오. 
 
-CLI에서 선택한 계정의 관리자인지 여부를 확인하려면 사용자 이름 `bx iam user-policies <your-username>`과 함께 다음 명령을 입력하십시오. 계정의 관리자가 아닌 경우 이러한 명령은 권한이 부여되지 않았다는 오류를 리턴합니다.
+사용자 이름과 함께 명령 `ibmcloud iam user-policies <your-username>`을 입력하여 자신이 CLI에서 선택한 계정의 관리자인지 확인하십시오. 계정의 관리자가 아닌 경우 이러한 명령은 권한이 부여되지 않았다는 오류를 리턴합니다.
 {: tip}

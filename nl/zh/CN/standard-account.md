@@ -30,11 +30,11 @@ lastupdated: "2017-10-13"
 
 |标准帐户中的新增功能？|    
 |-----------------|
-| 帐户永不过期。|
-| Cloud Foundry 应用程序可以访问高达 256 MB 的可用即时运行时内存。|
-| 可以访问免费轻量套餐以使用 Conversation、Internet of Things Platform、Cloudant NoSQLDB 等按需供应的 Watson 服务。有关更多信息，请参阅[可用功能](/docs/pricing/standard_account.html#whatsavailable)。|
-| 如果超过 10 天没有任何开发活动，那么您的应用程序将休眠。|
-| 您的服务实例将在处于不活动状态 30 天后删除。|
+|帐户永不过期。|
+|Cloud Foundry 应用程序可以访问高达 256 MB 的可用即时运行时内存。|
+|可以访问免费轻量套餐以使用 Conversation、Internet of Things Platform、Cloudant NoSQLDB 等按需供应的 Watson 服务。有关更多信息，请参阅[可用功能](/docs/pricing/standard_account.html#whatsavailable)。|
+|如果超过 10 天没有任何开发活动，那么您的应用程序将休眠。|
+|您的服务实例将在处于不活动状态 30 天后删除。|
 {:caption="表 1. 标准帐户中的新增功能" caption-side="top"}
 
 |转换试用帐户时哪些内容不会更改？| 

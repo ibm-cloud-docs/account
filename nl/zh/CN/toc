@@ -17,6 +17,7 @@
 
     change-plan.md
     softlayerlink.md
+    notifications.md
     resourcegroups.md
     instance_migration.md
 
@@ -34,9 +35,8 @@
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    notifications.md
+    account_faq.md
     [有关访问 IBM Cloud 的故障诊断](../troubleshoot/ts_accessing.html)
     [有关管理帐户的故障诊断](../troubleshoot/ts_accounts.html)
     [有关迁移服务实例的故障诊断](../troubleshoot/ts_migration.html)
-    account_faq.md
     {: .navgroup-end}

@@ -17,6 +17,7 @@
 
     change-plan.md
     softlayerlink.md
+    notifications.md
     resourcegroups.md
     instance_migration.md
 
@@ -34,9 +35,8 @@
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    notifications.md
+    account_faq.md
     [IBM Cloud 액세스에 대한 문제점 해결](../troubleshoot/ts_accessing.html)
     [계정 관리에 대한 문제점 해결](../troubleshoot/ts_accounts.html)
-    [서비스 인스턴스 마이그레이션 문제점 해결](../troubleshoot/ts_migration.html)
-    account_faq.md
+    [서비스 인스턴스 마이그레이션에 대한 문제점 해결](../troubleshoot/ts_migration.html)
     {: .navgroup-end}

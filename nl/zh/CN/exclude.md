@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-12-06"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2017-12-06"
 # 对帐户中的用户隐藏公共资源
 {: #exclude}
 
-如果您是帐户的管理员，那么可以选择通过使用 `bx` [命令行界面](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_catalog_entry_visibility_set)将帐户中的每个人添加到排除列表，从而对此人隐藏公共资源。
+如果您是帐户的管理员，那么可以选择通过使用 `ibmcloud` [命令行界面](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_catalog_entry_visibility_set)将帐户中的每个人添加到排除列表，从而对此人隐藏公共资源。
 {:shortdesc: .shortdesc}
 
 **注：**在目录中隐藏项并不会从 Cloud Foundry CLI 或通过全局导航（例如，财务、移动、Watson 和 Web 应用程序）提供的服务供应列表中除去该项。
@@ -28,31 +28,31 @@ lastupdated: "2017-12-06"
 ## 步骤 1：查找资源
 {: #find-resource}
 
-输入 `bx catalog search <service-id or service-name>` 以搜索资源。将 service-id 或 service-name 替换为资源名称或标识。查找要在返回的信息中隐藏的服务的标识或名称。
+输入 `ibmcloud catalog search <service-id or service-name>` 以搜索资源。将 service-id 或 service-name 替换为资源名称或标识。查找要在返回的信息中隐藏的服务的标识或名称。
 
 ## 步骤 2：获取该服务的详细信息
 
-输入 `bx catalog service <service-id or service-name>`. 使用此命令并利用在上一个命令中找到的内容来检查资源的更多详细信息。借助返回的信息，可以查看层次结构，其中会显示资源中各项的子资源。
+输入 `ibmcloud catalog service <service-id or service-name>`。使用此命令并利用在上一个命令中找到的内容来检查资源的更多详细信息。借助返回的信息，可以查看层次结构，其中会显示资源中各项的子资源。
 
 ## 步骤 3：隐藏资源
 {: #vis-exc}
 
 输入以下命令以阻止帐户查看公共资源。
 
-`bx catalog entry-visibility-set <resource-id> —-excludes-add <account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <resource-id> —-excludes-add <account-id or account-email>`
 
 在 excludes 标志后，可以添加与帐户关联的电子邮件或帐户标识的逗号分隔列表。
 
 运行此命令后，隐藏资源的过程需要 30 分钟。30 分钟后，请注销并重新登录到帐户以查看隐藏的资源。
 
-**注：**隐藏的条目在 UI 和 bx CLI 中不可用。隐藏的条目仍然会在 Cloud Foundry 市场中显示，但无法通过 Cloud Foundry 供应隐藏的套餐。已排除帐户的管理员仍可以查看该资源。
+**注：**隐藏的条目在 UI 和 ibmcloud CLI 中不可用。隐藏的条目仍然会在 Cloud Foundry 市场中显示，但无法通过 Cloud Foundry 供应隐藏的套餐。已排除帐户的管理员仍可以查看该资源。
 
 ## 从排除列表中除去帐户
 {: #remove-exclude}
 
 输入以下命令以从排除列表中除去帐户标识或电子邮件。
 
-`bx catalog entry-visibility-set <service-id> —-excludes-remove <account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <service-id> —-excludes-remove <account-id or account-email>`
 
 ## 管理子对象可视性的示例
 {: #child}
@@ -61,7 +61,7 @@ lastupdated: "2017-12-06"
 
 在此示例中，可以从公共 Cloudant 服务中排除帐户。
 
-如果输入 `bx catalog service cloudant`，那么可以查看资源的子代。
+如果输入 `ibmcloud catalog service cloudant`，那么可以查看资源的子代。
 
 ```
 ID                 cloudant
@@ -87,6 +87,6 @@ Children           Name                                          Kind         ID
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-查找对象的标识并使用 `bx catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>`.
+查找对象的标识并使用 `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>` 来排除帐户。
 
 有关可视性工作方式的更多信息，请参阅 [API 文档](https://console.bluemix.net/apidocs/682)。

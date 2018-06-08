@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-03-19"
+lastupdated: "2018-05-21"
 
 ---
 
@@ -97,7 +97,7 @@ lastupdated: "2018-03-19"
    * 서비스 수 
    * 플랜 세부사항 
 
-3. 지역 세부사항을 펼쳐 영역 레벨의 할당량을 보십시오. 
+3. 행을 펼쳐 각 지역의 영역 레벨에서 할당량 세부사항을 보십시오.   
 
 조직에 할당된 할당량을 변경하려면 지원 티켓을 열어야 합니다. 자세한 정보는 [고객 지원 받기](/docs/get-support/howtogetsupport.html#getting-customer-support)를 참조하십시오. 
 

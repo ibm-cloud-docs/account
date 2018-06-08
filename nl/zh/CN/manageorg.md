@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-03-19"
+lastupdated: "2018-05-21"
 
 ---
 
@@ -97,7 +97,7 @@ lastupdated: "2018-03-19"
    * 服务数 
    * 套餐详细信息 
 
-3. 展开区域详细信息以在空间级别查看配额。 
+3. 展开行以查看每个区域的空间级别上的配额详细信息。  
 
 要更改为组织所分配的配额，必须开具支持凭单。有关更多信息，请参阅[获取客户支持](/docs/get-support/howtogetsupport.html#getting-customer-support)。 
 

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -19,6 +19,6 @@ lastupdated: "2018-01-10"
 
 ## 如何更改目录资源的所有者
 
-要更改资源的所有者，请通过 [CLI](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_settings) 使用以下命令：
+要更改资源的所有者，请通过 [CLI](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_commands_settings) 使用以下命令：
 
-`bx catalog entry-visibility-set <service-id> --owner<account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <service-id> --owner<account-id or account-email>`

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-11-21"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -24,11 +24,11 @@ lastupdated: "2017-11-21"
 
 您可能希望使用 Identity and Access Management (IAM) 的`查看者`和`编辑者`角色来向帐户中的用户授予其他许可权。请查看下表以了解有关每个 IAM 角色允许用户在使用帐户目录的上下文中执行的操作的更多信息。
 
-| 平台管理角色 | 操作描述|
+|平台管理角色 |操作描述|
 |:-----------------|:-----------------|
-| 查看者| 可以查看私有服务（即便尚未包含帐户），但无法进行更改。|
-| 编辑者| 可以更改对象元数据，但无法更改可视性。|
-| 管理员| 可以更改对象元数据或可视性。|
+|查看者|可以查看私有服务（即便尚未包含帐户），但无法进行更改。|
+|编辑者|可以更改对象元数据，但无法更改可视性。|
+|管理员|可以更改对象元数据或可视性。|
 {: caption="表 1. 目录服务的平台管理角色和操作的示例" caption-side="top"}
 
 有关为帐户中的用户分配访问权的逐步指示信息，请转至[对资源的访问权](/docs/iam/mngiam.html#iammanidaccser#resourceaccess)文档。
@@ -46,7 +46,7 @@ lastupdated: "2017-11-21"
 2. 在“用户”列表中单击您的姓名。
 3. 在**访问策略**部分中，可以查看为您分配的访问策略。您必须具有帐户中目录资源的 Cloud IAM 管理员角色，才能更新包含可查看目录中专用资源的帐户的列表。
 
-要使用 [bx CLI](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)，请完成以下步骤：
+要使用 [ibmcloud CLI](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_commands_iam)，请完成以下步骤：
 
-使用您的用户名输入命令 `bx iam user-policies <your-username>`，以了解您是否为 CLI 中所选帐户的管理员。如果您不是帐户管理员，那么这些命令会返回错误，指明您未经授权。
+使用您的用户名输入命令 `ibmcloud iam user-policies <your-username>`，以了解您是否为 CLI 中所选帐户的管理员。如果您不是帐户管理员，那么这些命令会返回错误，指明您未经授权。
 {: tip}

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -19,6 +19,6 @@ lastupdated: "2018-01-10"
 
 ## 카탈로그 리소스의 소유자를 변경하는 방법
 
-[CLI](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_settings)를 사용하여 리소스의 소유자를 변경하려면 다음 명령을 사용하십시오.
+[CLI](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_commands_settings)를 사용하여 리소스의 소유자를 변경하려면 다음 명령을 사용하십시오.
 
-`bx catalog entry-visibility-set <service-id> --owner <account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <service-id> --owner <account-id or account-email>`

@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-03-28"
+lastupdated: "2018-05-21"
 
 ---
 
@@ -60,6 +60,16 @@ lastupdated: "2018-03-28"
 
 您还可以查看[支持中心 ![外部链接图标](../icons/launch-glyph.svg)](https://console.bluemix.net/unifiedsupport/supportcenter){: new_window} 中提供的一些有用资源。在此，可以访问 Stack Overflow，以便向我们的开发者社区发布问题。您还可以提交支持凭单。
 
+## 我可以创建多少个资源组、组织或空间？
+{: #resourcelimit}
+
+如果您拥有的是计费帐户，那么在您的帐户中可以创建的资源组、组织或空间的数量没有限制。但是，如果您拥有的是轻量帐户，那么只能使用一个组织和一个资源组。
+
+## 我能注册以进行免费试用吗？
+{: #freetrial}
+
+{{site.data.keyword.Bluemix_notm}} 试用帐户适用于经认可的学术机构的教师和学生。要获得使用试用帐户的资格，请转至 [onthehub.com/ibm ![外部链接图标](../icons/launch-glyph.svg)](http://onthehub.com/ibm){: new_window}，并验证您的机构凭证。
+
 ## 链接帐户后，如何登录？
 {: #al_login}
 
@@ -86,30 +96,27 @@ lastupdated: "2018-03-28"
 
 如果您没有匹配的 {{site.data.keyword.Bluemix_notm}} 平台帐户，也没有附带的 IBM 标识帐户，那么可以创建新的 SoftLayer 帐户来链接这些帐户。
 
-## 如果不想链接帐户会怎样？ 	
+## 如果不想链接帐户会怎样？ 
 {: #al_bene}
 
 为了帮助您体验 {{site.data.keyword.Bluemix_notm}} 的更多功能，所有新功能都会开发到单个 {{site.data.keyword.Bluemix_notm}} 控制台中。合并帐户后，您将有权使用更稳健的目录、简化的帐户管理和单点登录。
 
 如果链接不是可行的选项，请联系销售支持以获取其他选项。
 
-## 立即链接帐户有奖励吗？ 	
+## 立即链接帐户有奖励吗？ 
 {: #al_incent}
 
 有！如果您立即链接帐户，可以使用 200 美元信用值来试用 PaaS 服务。
 
-## 向 SoftLayer 帐户添加 {{site.data.keyword.Bluemix_notm}} 平台服务意味着什么？ 	
+## 向 SoftLayer 帐户添加 {{site.data.keyword.Bluemix_notm}} 平台服务意味着什么？ 
 {: #al_owaffslacct}
 
 这意味着帐户有权访问所有 {{site.data.keyword.Bluemix_notm}} 平台产品。将 {{site.data.keyword.Bluemix_notm}} 平台产品添加到帐户后，帐户主用户需要使最终用户有权访问该产品。
 
 如果您是帐户主用户，请参阅[使用用户](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage)以获取更多信息。
 
-## 帐户链接对 SoftLayer 主帐户标识有怎样的影响？ 	
+## 帐户链接对 SoftLayer 主帐户标识有怎样的影响？ 
 {: #al_howaffslmastacct}
 
 您仍然可以使用 SoftLayer 帐户的标识来登录到 {{site.data.keyword.BluSoftlayer_full}} 基础架构客户门户网站，因为 {{site.data.keyword.Bluemix_notm}} 控制台可使用 IBM 标识进行访问。
 
-## 对可以创建的资源组、组织或空间的数量有限制吗？
-
-如果您拥有的是计费帐户，那么在您的帐户中可以创建的资源组、组织或空间的数量没有限制。但是，如果您拥有的是轻量帐户，那么只能使用一个组织和一个资源组。

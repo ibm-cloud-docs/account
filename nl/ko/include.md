@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-12-06"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2017-12-06"
 # 개인용 리소스에 계정 추가
 {: #include}
 
-작성한 개인용 리소스는 기본적으로 제한됩니다. 계정 관리자는 `bx` [명령행 인터페이스](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_catalog_entry_visibility_set)를 통해 포함 목록에 리소스를 추가하여 이 리소스를 볼 수 있는 사용자를 선택할 수 있습니다.
+작성한 개인용 리소스는 기본적으로 제한됩니다. 계정 관리자는 `ibmcloud` [명령행 인터페이스](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_catalog_entry_visibility_set)를 통해 포함 목록에 계정을 추가하여 리소스를 볼 수 있는 사용자를 선택할 수 있습니다.
 {:shortdesc: .shortdesc}
 
 ## 액세스 권한이 있는지 여부를 확인하는 방법
@@ -26,14 +26,14 @@ CLI 또는 ID 및 액세스 UI를 사용하여 사용자가 계정에 추가된 
 ## 1단계: 리소스 찾기
 {: #find-resource}
 
-`bx catalog service <service-id or service-name>`을 입력하십시오. service-id 또는 service-name을 리소스 이름 또는 ID로 바꾸십시오. 리턴되는 정보를 사용하면 리소스에 있는 항목의 하위 리소스를 표시하는 계층 구조를 볼 수 있습니다.
+`ibmcloud catalog service <service-id or service-name>`을 입력하십시오. service-id 또는 service-name을 리소스 이름 또는 ID로 바꾸십시오. 리턴되는 정보를 사용하면 리소스에 있는 항목의 하위 리소스를 표시하는 계층 구조를 볼 수 있습니다.
 
 ## 2단계: 계정을 포함하여 가시성 설정
 {: #vis-inc}
 
 계정이 개인용 리소스를 볼 수 있도록 하려면 다음 명령을 입력하십시오.
 
-`bx catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>`
 
 포함-추가 플래그 다음에 계정과 연관된 ID 또는 이메일의 쉼표로 구분된 목록을 추가할 수 있습니다.
 
@@ -44,7 +44,7 @@ CLI 또는 ID 및 액세스 UI를 사용하여 사용자가 계정에 추가된 
 
 포함 목록에서 계정을 제거하려면 다음 명령을 입력하십시오.
 
-`bx catalog entry-visibility-set <service-id> --includes-remove <account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <service-id> --includes-remove <account-id or account-email>`
 
 ## 하위 오브젝트의 가시성 관리
 {: #child-vis}
@@ -53,7 +53,7 @@ CLI 또는 ID 및 액세스 UI를 사용하여 사용자가 계정에 추가된 
 
 비어 있는 포함 목록은 계정 관리자만 볼 수 있음을 의미합니다. 이를 보려면 계정이 계정의 모든 구성원에 대한 포함 목록에 있어야 합니다.
 
-예를 들어, `bx catalog service <your_service>`를 입력하면 리소스의 하위를 볼 수 있습니다.
+예를 들어, `ibmcloud catalog service <your_service>`를 입력하면 리소스의 하위를 볼 수 있습니다. 
 
 ```
 ID                 cloudant
@@ -79,7 +79,7 @@ Children           Name                                          Kind         ID
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-하위 배치에 대한 리소스 ID를 가져온 다음 다음 명령을 사용하여 계정을 포함할 수 있습니다. `bx catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`.
+하위 배치에 대한 리소스 ID를 가져온 다음 다음 명령을 사용하여 계정을 포함할 수 있습니다. `ibmcloud catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`.
 
 오브젝트의 하위는 복잡한 방식으로 가시성을 상속할 수 있습니다. 하위 오브젝트가 개인용이면 고유 가시성 구성이 있습니다. 하지만 하위 오브젝트가 공용으로 설정된 경우에는 해당 상위 가시성을 상속합니다. 개인용 하위 오브젝트에서 가시성을 설정하면 상위보다 많이 가시성을 제한할 수 있습니다.
 
