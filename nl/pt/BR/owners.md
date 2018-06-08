@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -19,6 +19,6 @@ lastupdated: "2018-01-10"
 
 ## Como mudar o proprietário de um recurso de catálogo
 
-Para mudar o proprietário de um recurso com a [CLI](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_settings), use o comando a seguir:
+Para mudar o proprietário de um recurso com a [CLI](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_commands_settings), use o comando a seguir:
 
-`bx catalog entry-visibility-set <service-id> --owner <account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <service-id> --owner <account-id or account-email>`

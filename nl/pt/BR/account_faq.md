@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-03-28"
+lastupdated: "2018-05-21"
 
 ---
 
@@ -60,6 +60,16 @@ Para obter ajuda sobre como deixar o {{site.data.keyword.Bluemix_notm}} funciona
 
 Também é possível conferir vários recursos úteis que estão disponíveis no [Centro de suporte ![Ícone de link externo](../icons/launch-glyph.svg)](https://console.bluemix.net/unifiedsupport/supportcenter){: new_window}. Desse ponto, é possível acessar o Stack Overflow para postar uma pergunta em nossa comunidade do desenvolvedor. Também é possível enviar um chamado de suporte.
 
+## Quantos grupos de recursos, organizações ou espaços posso criar?
+{: #resourcelimit}
+
+Em uma conta faturável, não há um limite no número de grupos de recursos, organizações ou espaços que podem ser criados nela. No entanto, se você tem uma conta Lite, então tem uma limitação de uma organização e um grupo de recursos.
+
+## Posso inscrever-me para uma avaliação grátis?
+{: #freetrial}
+
+As contas para teste do {{site.data.keyword.Bluemix_notm}} estão disponíveis para professores e estudantes de instituições acadêmicas credenciadas. Para obter uma conta para teste, acesse [onthehub.com/ibm ![Ícone de link externo](../icons/launch-glyph.svg)](http://onthehub.com/ibm){: new_window} e valide suas credenciais da instituição.
+
 ## Depois de vincular minha conta, como efetuar login?
 {: #al_login}
 
@@ -87,30 +97,27 @@ Se você tem múltiplas contas do SoftLayer, vincule as que têm uma conta de pl
 
 Se você não tem uma conta de plataforma do {{site.data.keyword.Bluemix_notm}} correspondente e uma conta do IBMid associada, uma NOVA conta do SoftLayer pode ser criada para vincular as contas.
 
-## E se eu não desejar vincular minha conta? 	
+## E se eu não desejar vincular minha conta? 
 {: #al_bene}
 
 Para ajudá-lo a experimentar mais o {{site.data.keyword.Bluemix_notm}}, toda a nova funcionalidade está sendo desenvolvida em um único console do {{site.data.keyword.Bluemix_notm}}. Ao mesclar a sua conta, você obterá acesso a um catálogo mais robusto, um gerenciamento de conta simplificado e um login único.
 
 Se o link não for uma opção viável para você, entre em contato com o suporte de vendas para outras opções.
 
-## Há incentivos para vincular as minhas contas agora? 	
+## Há incentivos para vincular as minhas contas agora? 
 {: #al_incent}
 
 Sim!  Se você vincular suas contas agora, será possível usar um crédito de U$ 200 para tentar serviços PaaS.
 
-## O que a inclusão dos serviços de plataforma do {{site.data.keyword.Bluemix_notm}} em minha conta do SoftLayer significa? 	
+## O que a inclusão dos serviços de plataforma do {{site.data.keyword.Bluemix_notm}} em minha conta do SoftLayer significa? 
 {: #al_owaffslacct}
 
 Significa que sua conta tem acesso a todas as ofertas de plataforma do {{site.data.keyword.Bluemix_notm}}.  Depois de incluir a oferta de plataforma do {{site.data.keyword.Bluemix_notm}} em sua conta, sua conta mestre precisará permitir que o usuário final tenha acesso à oferta.
 
 Se você é a conta mestre, veja [Trabalhando com usuários](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) para obter mais informações.
 
-## Como a vinculação da conta afeta meu ID da conta principal do SoftLayer? 	
+## Como a vinculação da conta afeta meu ID da conta principal do SoftLayer? 
 {: #al_howaffslmastacct}
 
 Ainda é possível usar o ID para sua conta do SoftLayer para conectar-se ao portal do cliente da infraestrutura do {{site.data.keyword.BluSoftlayer_full}} porque o console do {{site.data.keyword.Bluemix_notm}} é acessível usando IBMids.
 
-## Há um limite no número de grupos de recursos, organizações ou espaços que posso criar?
-
-Em uma conta faturável, não há um limite no número de grupos de recursos, organizações ou espaços que podem ser criados nela. No entanto, se você tem uma conta Lite, então tem uma limitação de uma organização e um grupo de recursos.

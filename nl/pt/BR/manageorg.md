@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-03-19"
+lastupdated: "2018-05-21"
 
 ---
 
@@ -121,7 +121,7 @@ possível visualizar os detalhes da cota para os recursos a seguir:
    * O número de serviços 
    * Detalhes do plano 
 
-3. Expanda os detalhes da região para visualizar a cota no nível de espaço. 
+3. Expanda as linhas para visualizar os detalhes da cota no nível de espaço para cada região.  
 
 Para mudar a cota que é alocada para uma organização, deve-se abrir um chamado de suporte. Para obter
 mais informações, consulte

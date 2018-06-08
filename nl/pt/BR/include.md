@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-12-06"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2017-12-06"
 # Incluindo contas em seu recurso privado
 {: #include}
 
-Qualquer recurso privado que você cria é restrito por padrão. Se você é um administrador para a conta, é possível escolher quem pode ver seu recurso, incluindo-os em uma lista de inclusões com a [interface da linha de comandos](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_catalog_entry_visibility_set) do `bx`.
+Qualquer recurso privado que você cria é restrito por padrão. Se você for um administrador da conta, será possível escolher quem pode ver o recurso, incluindo-o em uma lista de inclusões com a [interface da linha de comandos](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_catalog_entry_visibility_set) `ibmcloud`.
 {:shortdesc: .shortdesc}
 
 ## Como saber se tenho acesso?
@@ -26,14 +26,14 @@ Qualquer recurso privado que você cria é restrito por padrão. Se você é um 
 ## Etapa 1: Localizar o recurso
 {: #find-resource}
 
-Insira `bx catalog service <service-id or service-name>`. Substitua service-id ou service-name pelo nome ou ID do recurso. Com as informações retornadas, é possível ver a hierarquia, que mostra os recursos-filho dos itens no seu recurso.
+Insira `ibmcloud catalog service <service-id or service-name>`. Substitua service-id ou service-name pelo nome ou ID do recurso. Com as informações retornadas, é possível ver a hierarquia, que mostra os recursos-filho dos itens no seu recurso.
 
 ## Etapa 2: Configurar a visibilidade incluindo uma conta
 {: #vis-inc}
 
 Insira o comando a seguir para permitir que uma conta veja seu recurso privado.
 
-`bx catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>`
 
 Após a sinalização includes-add, é possível incluir uma lista separada por vírgula de e-mails ou IDs associados com contas.
 
@@ -44,7 +44,7 @@ Depois de executar o comando, o processo para incluir o recurso leva 30 minutos.
 
 Insira o comando a seguir para remover uma conta da lista de inclusões.
 
-`bx catalog entry-visibility-set <service-id> --includes-remove <account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <service-id> --includes-remove <account-id or account-email>`
 
 ## Gerenciando a visibilidade de objetos-filhos
 {: #child-vis}
@@ -53,7 +53,7 @@ Insira o comando a seguir para remover uma conta da lista de inclusões.
 
 Uma lista de inclusões vazia significa que somente seus administradores de conta podem vê-la. Sua conta deve estar na lista de inclusões para todos os membros da conta para vê-la.
 
-Por exemplo, se você inserir `bx catalog service <your_service>`, será possível ver os filhos do recurso.
+Por exemplo, se você inserir `ibmcloud catalog service <your_service>`, será possível ver os filhos do recurso.
 
 ```
 ID cloudant Name cloudantnosqldb Kind service Provider IBM Tags data_management, ibm_created, ibm_dedicated_public, lite Active true Description Cloudant NoSQL DB é uma camada de dados totalmente gerenciada para aplicativos móveis e da web modernos que alavancam um esquema JSON flexível. O Cloudant é criado e compatível com o Apache CouchDB e é acessível por meio de uma API de HTTPS segura, que aumenta conforme seu aplicativo cresce. O Cloudant é certificado para ISO27001 e SOC2 Tipo 1 e todos os dados são armazenados em triplicata em diferentes nós físicos em um cluster de HA/DR em um data center.
@@ -73,7 +73,7 @@ Children           Name                                          Kind         ID
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-É possível obter o ID do recurso para a implementação filha e, então, incluir uma conta usando o comando a seguir. `bx catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`.
+É possível obter o ID do recurso para a implementação filha e, então, incluir uma conta usando o comando a seguir. `ibmcloud catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`.
 
 Os filhos de um objeto podem herdar visibilidade de formas complexas. Se o objeto-filho for privado, ele terá sua própria configuração de visibilidade. No entanto, se o objeto-filho for configurado como público, ele herdará a visibilidade de seu pai. Configurar a visibilidade em um objeto-filho privado pode restringir sua visibilidade mais do que o pai.
 
