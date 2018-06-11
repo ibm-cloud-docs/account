@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-03-19"
+lastupdated: "2018-05-21"
 
 ---
 
@@ -97,7 +97,7 @@ Führen Sie die folgenden Schritte aus, um das verwendete und zugeordnete Kontin
    * Die Anzahl der Services. 
    * Plandetails. 
 
-3. Erweitern Sie die Details der Region, um das Kontingent auf Bereichsebene anzuzeigen. 
+3. Erweitern Sie die Zeilen, um für jede Region die Kontingentdetails auf Bereichsebene anzuzeigen.  
 
 Um das Kontingent zu ändern, das einer Organisation zugeordnet ist, müssen Sie ein Support-Ticket öffnen. Weitere Informationen finden Sie unter [Kundenunterstützung abrufen](/docs/get-support/howtogetsupport.html#getting-customer-support). 
 

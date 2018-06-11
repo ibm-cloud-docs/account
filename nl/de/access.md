@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-11-21"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -46,7 +46,7 @@ Führen Sie die folgenden Schritte aus, um mit der IAM-Benutzerschnittstelle zu 
 2. Klicken Sie in der Benutzerliste auf Ihren Namen.
 3. Im Bereich **Zugriffsrichtlinie** können Sie Ihre zugeordneten Zugriffsrichtlinien anzeigen. Sie müssen über die Cloud IAM-Administratorrolle für die Katalogressource in Ihrem Konto verfügen, um die Einschlussliste mit den Konten, die private Ressourcen im Katalog anzeigen können, aktualisieren zu können.
 
-Verwenden Sie den Befehl [bx CLI](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam) wie folgt:
+Führen Sie die folgenden Schritte aus, um mit der [Benutzerschnittstelle für IBM Cloud (ibmcloud)](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_commands_iam) zu arbeiten: 
 
-Geben Sie den Befehl `bx iam user-policies <your-username>` mit Ihrem Benutzernamen ein, um herauszufinden, ob Sie als Administrator von Konten eingesetzt wurden, die Sie in der Befehlszeilenschnittstelle ausgewählt haben. Wenn Sie nicht über die Administratorrolle für Ihr Konto verfügen, wird von diesen Befehlen ein Fehler zu fehlenden Berechtigungen zurückgegeben.
+Geben Sie den Befehl `ibmcloud iam user-policies <your-username>` mit Ihrem Benutzernamen ein, um herauszufinden, ob Sie als Administrator von Konten eingesetzt wurden, die Sie in der Befehlszeilenschnittstelle ausgewählt haben. Wenn Sie nicht über die Administratorrolle für Ihr Konto verfügen, wird von diesen Befehlen ein Fehler zu fehlenden Berechtigungen zurückgegeben.
 {: tip}

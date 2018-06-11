@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-08"
+lastupdated: "2018-05-25"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-05-08"
 # Kontotypen
 {: #accounts}
 
-Wenn Sie sich für {{site.data.keyword.Bluemix}} entscheiden, entstehen Ihnen zunächst keine Kosten. Sie können unter drei unterschiedlichen Kontotypen wählen: Lite-Konto, nutzungsabhängiges Konto und Abonnementkonto. Sie können jeden der Kontotypen verwenden, um Ihre Arbeit mit {{site.data.keyword.Bluemix_notm}} zu beginnen - wählen Sie einfach den für Ihre Anforderungen am besten geeigneten Kontotyp aus.
+Sie können zwischen den drei folgenden {{site.data.keyword.Bluemix}}-Kontotypen wählen: dem Lite-Konto, dem nutzungsabhängigen Konto und dem Abonnementkonto. Sie können jeden der Kontotypen verwenden, um Ihre Arbeit mit {{site.data.keyword.Bluemix_notm}} zu beginnen - wählen Sie einfach den für Ihre Anforderungen am besten geeigneten Kontotyp aus.
 {:shortdesc}
 
 ## Kontovergleich
@@ -29,7 +29,7 @@ Die folgende Tabelle enthält einen Vergleich von Lite-Konto, nutzungsabhängige
 | **Zugriff auf kostenlosen Cloud Foundry-Speicher** | 256 MB | 512 MB | 512 MB |
 | **Zugriff auf [Lite-Servicepläne ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://console.bluemix.net/catalog/?search=label:lite){: new_window}** | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |
 | **Zugriff auf alle kostenlosen Pläne** |  | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |
-| **Zugriff auf den gesamten Katalog** |  | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |
+| **Zugriff auf den gesamten {{site.data.keyword.Bluemix_notm}}-Katalog** |  | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |
 | **Zugriff auf mehrere Cloud Foundry-Regionen** |  | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |
 | **Keine zeitlichen Begrenzungen** | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |
 | **Kostenfreiheitsgarantie** | ![Funktion verfügbar](../icons/icon_enabled.svg) |  |  |
@@ -41,7 +41,7 @@ Die folgende Tabelle enthält einen Vergleich von Lite-Konto, nutzungsabhängige
 ## Lite-Konto
 {: #liteaccount}
 
-Registrieren Sie sich für ein kostenloses Lite-Konto, um mit ausgewählten gebührenfreien Plänen Apps zu entwickeln und Services zu nutzen. Diese Lite-Pläne werden mit einem Lite-Tag ![Lite-Tag](../icons/Lite.svg) in der {{site.data.keyword.Bluemix_notm}}-Konsole angezeigt. Ihr Lite-Konto gilt unbefristet und Ihre Kreditkarte wird nicht benötigt.
+Registrieren Sie sich für ein Lite-Konto, um unter Nutzung ausgewählten gebührenfreien Pläne mit der Entwicklung von Apps und Erkundung von Services zu beginnen. Diese Lite-Pläne werden mit einem Lite-Tag ![Lite-Tag](../icons/Lite.svg) in der {{site.data.keyword.Bluemix_notm}}-Konsole angezeigt. Ihr Lite-Konto gilt unbefristet und Ihre Kreditkarte wird nicht benötigt.
 
 Sie haben Zugriff auf eine einzelne Ressourcengruppe, die für Sie erstellt wurde und den Namen `Default` (Standard) trägt. Alle Serviceinstanzen, die von {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) verwaltet werden, werden dieser Ressourcengruppe automatisch hinzugefügt. Sie können den Namen dieser Ressourcengruppe jederzeit ändern. Detaillierte Schritte finden Sie unter [Ressourcengruppe umbenennen](/docs/account/resourcegroups.html#renaming-a-resource-group).
 
@@ -64,42 +64,32 @@ Ein Lite-Konto umfasst das nachfolgend beschriebene Angebot. Die folgende Liste 
 
 ### Upgrade für Konto durchführen
 
-Wenn Sie Ihre Umgebung später ausbauen möchten, führen Sie ein Upgrade auf ein nutzungsabhängiges Konto durch und zahlen Sie nur das, was Sie über die Gratisleistungen hinaus nutzen. Nach dem Upgrade können Sie die mit Ihrem Lite-Konto erstellten Instanzen weiterhin verwenden. Rufen Sie in der Konsole die Seite **Verwalten** > **Abrechnung und Nutzung** > **Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**. 
+Wenn Sie Ihre Umgebung später ausbauen möchten, führen Sie ein Upgrade auf ein nutzungsabhängiges Konto durch und zahlen Sie nur das, was Sie über die Gratisleistungen hinaus nutzen. Nach dem Upgrade können Sie die mit Ihrem Lite-Konto erstellten Instanzen weiterhin verwenden. Rufen Sie in der Konsole die Seite **Verwalten** > **Abrechnung und Nutzung** > **Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**.
 
-## Gebührenpflichtige Konten
-{: #billableacts}
+## Nutzungsabhängiges Konto
+{: #paygo}
 
-In der folgenden Tabelle werden die verschiedenen Kontotypen und ihre Gebührenmodelle aufgelistet.
+Mit einem nutzungsabhängigen Konto können Sie mehrere Ressourcengruppen erstellen, um Kontingente ohne großen Aufwand zu verwalten und um Informationen zu Abrechnung und Nutzung für eine Gruppe von Ressourcen anzuzeigen. Die für Sie anfallenden Gebühren richten Sie nach Ihrer Nutzung von {{site.data.keyword.Bluemix_notm}}-Berechnungen und -Services. Ihnen stehen zusätzliche kostenlose Laufzeit- und Serviceleistungen zur Verfügung. If you use more than the free allowance, you receive a monthly {{site.data.keyword.Bluemix_notm}} invoice. Die Rechnung ist in USD ausgestellt und enthält Detailangaben zu Ihren Ressourcengebühren.
 
-|Kontotyp |	Art der Gebührenabrechnung |
-|------------------|-----------------------|
-|Nutzungsabhängig |	Kosten werden auf der Grundlage Ihrer Nutzung der {{site.data.keyword.Bluemix_notm}}-Berechnungen und -Services in Rechnung gestellt. |
-|Abonnement | Sie können einen monatlichen Rabatt auf der Basis einer verbindlichen Mindestausgabeverpflichtung erhalten. |
-| {{site.data.keyword.Bluemix_dedicated_notm}} | Jahresvertrag |
-|{{site.data.keyword.Bluemix_local_notm}} |	Jahresvertrag |
-{:caption="Tabelle 2. Gebührenpflichtige {{site.data.keyword.Bluemix_notm}}-Konten und Gebühren" caption-side="top"}
-
-Wenn Sie Ihr gebührenpflichtiges {{site.data.keyword.Bluemix_notm}}-Konto mit einem SoftLayer-Konto verknüpfen, werden Ihre kombinierten Gebühren ab dem Ersten des folgenden Monats über die {{site.data.keyword.Bluemix_notm}}-Rechnung abgerechnet. Weitere Informationen finden Sie unter [Guthaben anzeigen](/docs/billing-usage/viewing_usage.html#credits).
+Wenn Sie Ihr Konto mit nutzungsabhängiger Zahlung mit einem SoftLayer-Konto verknüpfen, werden Ihre kombinierten Gebühren ab dem Ersten des Folgemonats über die {{site.data.keyword.Bluemix_notm}}-Rechnung abgerechnet.
 {: tip}
 
-### Nutzungsabhängiges Konto
+Über die {{site.data.keyword.Bluemix_notm}}-Konsole können Sie ein Upgrade auf ein Konto mit nutzungsabhängiger Zahlung durchführen. Geben Sie zunächst Ihre Abrechnungs- und Kreditkarteninformationen an, akzeptieren Sie dann die Vertragsbedingungen und übergeben Sie anschließend die Anforderung. Es wird eine Überprüfung Ihrer Kreditkarte durchgeführt. Außerdem erhalten Sie eine Bestätigungs-E-Mail zu den Kontoinformationen. Einige Minuten nach Empfang der Bestätigungs-E-Mail können Sie zur Konsole zurückkehren, um mit der Erstellung Ihrer Apps fortzufahren. Wenn Ihre Onlineanforderung für Ihr Land oder Ihre Region nicht verarbeitet werden kann, wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}}-Support](/docs/get-support/howtogetsupport.html).
 
-Mit einem nutzungsabhängigen Konto können Sie mehrere Ressourcengruppen erstellen, um Kontingente ohne großen Aufwand zu verwalten und um Informationen zu Abrechnung und Nutzung für eine Gruppe von Ressourcen anzuzeigen. Ihnen stehen zusätzliche kostenlose Laufzeit- und Serviceleistungen zur Verfügung. Wenn Sie in Ihrer Nutzung über die gebührenfreien Leistungen hinausgehen, erhalten Sie eine {{site.data.keyword.Bluemix_notm}}-Rechnung für den Monat. Die Rechnung wird in USD ausgestellt und enthält die Details zu Ihren Ressourcengebühren.
+Nach dem Upgrade auf ein Konto mit nutzungsabhängiger Zahlung erhalten Sie eine Werbegutschrift in Höhe von 200 US-Dollar, die Sie nutzen können, ohne dass hierfür weitere Aktionen ausgeführt werden müssen. Die Gutschrift von 200 US-Dollar hat eine Gültigkeit von 30 Tagen und wird automatisch mit Ihrer Rechnung verrechnet. Die Gutschrift kann nicht mit Infrastrukturangeboten oder Angeboten anderer Anbieter verwendet werden.
 
-In vielen Ländern und Regionen können Sie sich für ein nutzungsabhängiges Konto über die {{site.data.keyword.Bluemix_notm}}-Konsole anmelden. Akzeptieren Sie nach der Angabe Ihrer Abrechnungs- und Kreditkarteninformationen die Vertragsbedingungen und übergeben Sie Ihre Anforderung. Anschließend wird Ihre Kreditkarte geprüft. Sie erhalten außerdem eine Bestätigungs-E-Mail zu den Kontoinformationen. Einige Minuten nach Empfang der Bestätigungs-E-Mail können Sie zur Konsole zurückkehren, um mit der Erstellung Ihrer Apps fortzufahren. 
+### Upgrade für Konto durchführen
 
-Wenn Ihre Onlineanforderung für Ihr Land oder Ihre Region nicht verarbeitet werden kann, wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}}-Support](https://ibm.biz/bluemixsupport){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg). Klicken Sie nach der Anmeldung beim {{site.data.keyword.Bluemix_notm}}-Serviceportal auf **Unterstützung anfordern** und wählen Sie die Option für Abrechnung, Konto oder Anmeldung**** aus.
+Für Ihr Konto mit nutzungsabhängiger Zahlung können Sie jederzeit ein Upgrade auf ein Abonnementkonto durchführen. Weitere Informationen erhalten Sie über den [{{site.data.keyword.Bluemix_notm}}-Vertrieb](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg).
 
-Sie können Ihr Konto für nutzungsabhängige Zahlung jederzeit in ein Abonnementkonto konvertieren. Weitere Informationen erhalten Sie über den [{{site.data.keyword.Bluemix_notm}}-Vertrieb](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg).
+## Abonnementkonto
+
+Mit einem Abonnementkonto können Sie mehrere Ressourcengruppen erstellen, um Kontingente ohne großen Aufwand zu verwalten und um Informationen zu Abrechnung und Nutzung für eine Gruppe von Ressourcen anzuzeigen. Sie verpflichten sich zu einem Mindestausgabebetrag pro Monat und erhalten einen Abonnementrabatt, der auf diese Mindestgebühr angewendet wird. Außerdem müssen Sie jede Nutzung bezahlen, die über den Mindestausgabebetrag hinausgeht.
+
+Wenn Sie Ihr Abonnementkonto mit einem SoftLayer-Konto verknüpfen, werden Ihre kombinierten Gebühren ab dem Ersten des Folgemonats über die {{site.data.keyword.Bluemix_notm}}-Rechnung abgerechnet.
 {: tip}
 
-### Abonnementkonto
-
-Mit einem Abonnementkonto können Sie mehrere Ressourcengruppen erstellen, um Kontingente ohne großen Aufwand zu verwalten und um Informationen zu Abrechnung und Nutzung für eine Gruppe von Ressourcen anzuzeigen.
-
-Sie verpflichten sich zu einem Mindestausgabebetrag pro Monat und erhalten einen Abonnementrabatt, der auf diese Mindestgebühr angewendet wird. Außerdem müssen Sie jede Nutzung bezahlen, die über den Mindestausgabebetrag hinausgeht.
-
-Wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}}-Vertrieb](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg), um sich für ein Abonnementkonto anzumelden oder um weitere Informationen zu Abonnementgebühren und -nachlässen zu erhalten.
+Wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}}-Vertrieb ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg), um sich für ein Abonnementkonto anzumelden oder um weitere Informationen zu Abonnementgebühren und -nachlässen zu erhalten.
 
 ### {{site.data.keyword.Bluemix_dedicated_notm}}-Konto
 
@@ -125,34 +115,4 @@ Bei {{site.data.keyword.Bluemix_local_notm}} müssen Sie sich für eine Mindestl
    * Standard-{{site.data.keyword.Bluemix_notm}}-Unterstützung
 
 Die monatlichen Kosten während dieser Laufzeit sind von den von Ihnen gewünschten lokalen Services plus einem Abonnementkonto abhängig, mit dem Sie auf alle öffentlichen Services zugreifen können. Die Nutzungsgebühren der Services in {{site.data.keyword.Bluemix_notm}} Public werden auf der Grundlage Ihrer Abonnementkontovereinbarung berechnet. Sie erhalten für sämtliche Services, die Sie über die Abonnementvereinbarung hinaus nutzen, eine Rechnung. Für Informationen zu Ihrer Vereinbarung wenden Sie sich an Ihren zugewiesenen IBM Kundenbeauftragten oder an den [{{site.data.keyword.Bluemix_notm}}-Vertrieb](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg).
-
-## Testkonto
-{: #trial}
-
-Testkonten sind in allen Regionen verfügbar. Der 30-Tage-Testzeitraum bietet Ihnen die Möglichkeit zum Schnelleinstieg für das Entwickeln von Apps und das Nutzen der Services in {{site.data.keyword.Bluemix_notm}}.
-
-Wenn Sie sich für einen kostenfreien Test mit Ihrer {{site.data.keyword.Bluemix_notm}}-ID registrieren, wird Ihr Konto gebührenfrei mit den folgenden Ressourcen ausgestattet:
-
-  * Maximal 2 GB Speicher
-  * 10 Services
-  * 1 SSL-Zertifikat
-
-Sie haben außerdem Zugriff auf eine einzelne Ressourcengruppe, die für Sie erstellt wurde und den Namen `Default` (Standard) trägt. Alle von IAM verwalteten Serviceinstanzen werden automatisch zu dieser Ressourcengruppe hinzugefügt. Sie können den Namen dieser Ressourcengruppe jederzeit ändern. Detaillierte Schritte finden Sie unter [Ressourcengruppe umbenennen](/docs/account/resourcegroups.html#renaming-a-resource-group).
-
-Jede Ressourcengruppe ist kostenfrei. Wenn Sie eine Verbindung zwischen einem von IAM verwalteten Service und einer Cloud Foundry-App erstellen, erstellen Sie einen Aliasnamen, der eine Serviceinstanz ist, die zu Ihrem Kontingent zählt. Weitere Informationen finden Sie unter [Was ist ein Aliasname?](/docs/cfapps/connecting_apps.html#what_is_alias).
-{: tip}
-
-### Möglichkeiten am Ende des kostenlosen Testzeitraums
-{: #trialend}
-
-Ihr kostenloser Testzeitraum läuft 30 Tage nach Ihrer Registrierung ab; dann werden die Apps in Ihrem Konto gestoppt. Sie können sich zwar nicht für ein weiteres {{site.data.keyword.Bluemix_notm}}-Konto registrieren, aber Sie können weiterhin auf Ihr Konto und die Konten zugreifen, für die Sie eingeladen wurden.
-
-Zum erneuten Starten Ihrer Anwendungen müssen Sie Ihr Konto in ein gebührenpflichtiges Konto umwandeln - also entweder Ihre Kreditkarteninformationen für ein nutzungsabhängiges Konto angeben oder ein Konto vom Typ 'Abonnement' erstellen. Anschließend können Sie mit der Verwendung der kostenlosen Rechen- und Serviceressourcen fortfahren. Sie zahlen nur für die Nutzung von Services, Containern und Laufzeiten, die nicht durch die kostenlosen Monatsleistungen abgedeckt sind.
-
-  * Um ein Upgrade auf ein nutzungsabhängiges Konto durchzuführen, rufen Sie in der Konsole die Seite **Verwalten** > **Abrechnung und Nutzung** > **Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**.
-  * Informationen zum Anmelden eines Abonnementkontos erhalten Sie vom [{{site.data.keyword.Bluemix_notm}}-Vertrieb](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg).
-
-Wenn Sie Ihr Konto nach Ablauf des kostenlosen Testzeitraums nicht umwandeln, werden Ihre Apps und Services nach 30 Tagen entfernt. Ihr Konto wird jedoch nicht gelöscht und Sie können sich jederzeit anmelden und Ihr Konto in ein gebührenpflichtiges Konto umwandeln. Außerdem erhalten Sie E-Mail-Benachrichtigungen, die Sie daran erinnern, ein gebührenpflichtiges Konto einzurichten, damit Ihre App-Einstellungen und Servicekonfigurationen nicht verloren gehen. Wenn Sie diese Benachrichtigungen von {{site.data.keyword.Bluemix_notm}} nicht empfangen möchten, können Sie das Abonnement jederzeit beenden.
-
-Wenn Sie Ihr Konto umwandeln, werden Ihre kostenlosen Leistungen auf diejenigen begrenzt, die normalerweise von jedem Service bereitgestellt werden. Die kostenlosen Leistungen sind keine Leistungen mit unbegrenzter Nutzung mehr, die von vielen IBM Services während der kostenlosen Testperiode angeboten werden.
 

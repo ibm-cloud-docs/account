@@ -17,6 +17,7 @@ Eigenes Konto verwalten
 
     change-plan.md
     softlayerlink.md
+    notifications.md
     resourcegroups.md
     instance_migration.md
 
@@ -34,9 +35,8 @@ Eigenes Konto verwalten
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    notifications.md
+    account_faq.md
     [Fehlerbehebung für den Zugriff auf IBM Cloud](../troubleshoot/ts_accessing.html)
     [Fehlerbehebung für die Verwaltung von Konten](../troubleshoot/ts_accounts.html)
     [Fehlerbehebung für die Migration von Serviceinstanzen](../troubleshoot/ts_migration.html)
-    account_faq.md
     {: .navgroup-end}

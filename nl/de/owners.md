@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -19,6 +19,6 @@ Sie können das Eigentumsrecht für Konten über die Befehlszeilenschnittstelle 
 
 ## Katalogressourceneigner ändern
 
-Ändern Sie den Eigner einer Ressource über die [Befehlszeilenschnittstelle (CLI)](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_settings) mit dem folgenden Befehl:
+Ändern Sie den Eigner einer Ressource über die [Befehlszeilenschnittstelle (CLI)](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_commands_settings) mit dem folgenden Befehl:
 
-`bx catalog entry-visibility-set <service-id> --owner <account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <service-id> --owner <account-id or account-email>`

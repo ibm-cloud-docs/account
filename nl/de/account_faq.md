@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-03-28"
+lastupdated: "2018-05-21"
 
 ---
 
@@ -60,6 +60,16 @@ Hilfe für den Einstieg in {{site.data.keyword.Bluemix_notm}} oder für das Navi
 
 Sie können sich auch über eine Reihe hilfreicher Ressourcen informieren, die im [Support Center![Symbol für externen Link](../icons/launch-glyph.svg) ](https://console.bluemix.net/unifiedsupport/supportcenter){: new_window} verfügbar sind. Von dort aus können Sie auf Stack Overflow zugreifen, um eine Frage an unsere Entwicklercommunity zu senden. Sie haben auch die Möglichkeit, ein Support-Ticket einzureichen.
 
+## Wie viele Ressourcengruppen, Organisationen oder Bereiche kann ich erstellen?
+{: #resourcelimit}
+
+Wenn Sie über ein gebührenpflichtiges Konto verfügen, gibt es keinen Grenzwert für die Anzahl von Ressourcengruppen, Organisationen oder Bereichen, die Sie in Ihrem Konto erstellen können. Bei einem Lite-Konto sind Sie jedoch auf eine Organisation und eine Ressourcengruppe beschränkt.
+
+## Kann ich mich für eine kostenlose Testversion anmelden?
+{: #freetrial}
+
+Für Fakultätsmitglieder und Studierende akkreditierter akademischer Einrichtungen sind {{site.data.keyword.Bluemix_notm}}-Testkonten erhältlich. Um sich für ein solches Testkonto zu qualifizieren, rufen Sie die Seite [onthehub.com/ibm ![Symbol für externen Link](../icons/launch-glyph.svg)](http://onthehub.com/ibm){: new_window} auf und validieren Sie die Berechtigungsnachweise für Ihre Einrichtung.
+
 ## Wie melde ich mich an, nachdem ich mein Konto verknüpft habe?
 {: #al_login}
 
@@ -87,30 +97,27 @@ Wenn Sie mehrere SoftLayer-Konten haben, müssen Sie die Konten verknüpfen, fü
 
 Wenn es kein übereinstimmendes {{site.data.keyword.Bluemix_notm}}-Plattformkonto und kein zugehöriges IBMid-Konto gibt, kann ein NEUES SoftLayer-Konto erstellt werden, um die Konten zu verknüpfen.
 
-## Was, wenn ich mein Konto nicht verknüpfen möchte? 	
+## Was, wenn ich mein Konto nicht verknüpfen möchte? 
 {: #al_bene}
 
 Damit Sie {{site.data.keyword.Bluemix_notm}} optimaler nutzen können, werden neue Funktionen für eine zentrale {{site.data.keyword.Bluemix_notm}}-Konsole entwickelt. Wenn Sie Ihr Konto zusammenführen, erhalten Sie Zugriff auf einen leistungsfähigeren Katalog, einfacheres Kontomanagement und eine einmalige Anmeldung.
 
 Falls ein Verknüpfen für Sie nicht in Frage kommt, wenden Sie sich an Ihre Vertriebsunterstützung und informieren Sie sich über andere Möglichkeiten.
 
-## Gibt es momentan Incentives für das Verknüpfen meiner Konten? 	
+## Gibt es momentan Incentives für das Verknüpfen meiner Konten? 
 {: #al_incent}
 
 Ja!  Wenn Sie Ihren Konten jetzt verknüpfen, erhalten Sie eine Gutschrift über 200 US-Dollar, um PaaS-Services auszuprobieren.
 
-## Was bedeutet es, {{site.data.keyword.Bluemix_notm}}-Plattformservices zu meinem SoftLayer-Konto hinzuzufügen? 	
+## Was bedeutet es, {{site.data.keyword.Bluemix_notm}}-Plattformservices zu meinem SoftLayer-Konto hinzuzufügen? 
 {: #al_owaffslacct}
 
 Es bedeutet, dass Ihr Konto Zugriff auf alle {{site.data.keyword.Bluemix_notm}}-Plattformangebote hat.  Nachdem Sie das {{site.data.keyword.Bluemix_notm}}-Plattformangebot zu Ihrem Konto hinzugefügt haben, muss der Kontoeigner Endbenutzern Zugriff auf das Angebot gewähren.
 
 Wenn Sie der Eigner des Kontos sind, finden Sie weitere Informationen unter [Mit Benutzern arbeiten](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage).
 
-## Wie wirkt sich das Verknüpfen von Konten auf meine SoftLayer-Stammkonto-ID aus? 	
+## Wie wirkt sich das Verknüpfen von Konten auf meine SoftLayer-Stammkonto-ID aus? 
 {: #al_howaffslmastacct}
 
 Sie können die ID weiterhin für Ihr SoftLayer-Konto verwenden, um sich beim Kundenportal der {{site.data.keyword.BluSoftlayer_full}}-Infrastruktur anzumelden, weil die {{site.data.keyword.Bluemix_notm}}-Konsole über die IBMids zugänglich ist.
 
-## Gibt es einen Grenzwert für die Anzahl von Ressourcengruppen, Organisationen oder Bereichen, die ich erstellen kann?
-
-Wenn Sie über ein gebührenpflichtiges Konto verfügen, gibt es keinen Grenzwert für die Anzahl von Ressourcengruppen, Organisationen oder Bereichen, die Sie in Ihrem Konto erstellen können. Bei einem Lite-Konto sind Sie jedoch auf eine Organisation und eine Ressourcengruppe beschränkt.
