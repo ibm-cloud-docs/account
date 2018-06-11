@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-03-19"
+lastupdated: "2018-05-21"
 
 ---
 
@@ -98,7 +98,7 @@ Procédez comme suit afin d'afficher le quota utilisé et le quota alloué pour 
    * Le nombre de services 
    * Les détails du plan 
 
-3. Développez la région des détails pour consulter les quotas au niveau de l'espace. 
+3. Développez les lignes pour examiner les informations de quota au niveau de l'espace pour chaque région.  
 
 Pour modifier le quota alloué à une organisation, vous devez ouvrir un ticket de demande de service. Pour plus d'informations, voir [Support client](/docs/get-support/howtogetsupport.html#getting-customer-support). 
 

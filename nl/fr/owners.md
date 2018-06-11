@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -19,6 +19,6 @@ Vous pouvez modifier la propriété d'un compte avec l'interface de ligne de com
 
 ## Comment modifier le propriétaire d'une ressource de catalogue ?
 
-Pour changer le propriétaire d'une ressource, avec l'[interface de ligne de commande](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_settings), utilisez la commande suivante :
+Pour changer le propriétaire d'une ressource, avec l'[interface de ligne de commande](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_commands_settings), utilisez la commande suivante :
 
-`bx catalog entry-visibility-set <service-id> --owner <account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <service-id> --owner <account-id or account-email>`

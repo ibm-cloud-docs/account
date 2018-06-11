@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-03-28"
+lastupdated: "2018-05-21"
 
 ---
 
@@ -60,6 +60,16 @@ Pour obtenir de l'aide concernant la mise en route et le fonctionnement dans {{s
 
 Vous pouvez également extraire un certain nombre de ressources utiles disponibles dans le [centre de support ![Icône de lien externe](../icons/launch-glyph.svg)](https://console.bluemix.net/unifiedsupport/supportcenter){: new_window}. Depuis ce centre, vous pouvez accéder à Stack Overflow pour envoyer une question à notre communauté de développeurs. Vous pouvez également soumettre un ticket de demande de service.
 
+## Combien de groupes de ressources, d'organisations ou d'espaces puis-je créer ?
+{: #resourcelimit}
+
+Si vous avez un compte facturable, le nombre de groupes de ressources, d'organisations ou d'espaces que vous pouvez créer dans votre compte est illimité. En revanche, si vous utilisez un compte Lite, vous êtes limité à une organisation et à un groupe de ressources.
+
+## Puis-je souscrire à un essai gratuit ?
+{: #freetrial}
+
+Des comptes d'essai {{site.data.keyword.Bluemix_notm}} sont disponibles pour les enseignants et les étudiants d'institutions académiques accréditées. Pour être éligible pour un compte d'essai, accédez au site [onthehub.com/ibm ![External link icon](../icons/launch-glyph.svg)](http://onthehub.com/ibm){: new_window} et validez l'accréditation de votre institution.
+
 ## Après avoir lié mon compte, comment puis-je me connecter ?
 {: #al_login}
 
@@ -87,30 +97,27 @@ Si vous possédez plusieurs comptes SoftLayer, vous devez lier les comptes auxqu
 
 Si vous ne possédez pas de compte de plateforme {{site.data.keyword.Bluemix_notm}} correspondant ni un compte IBMid associé, un nouveau compte SoftLayer peut être créé pour lier les comptes.
 
-## Que se passe-t-il si je ne veux pas lier mon compte ? 	
+## Que se passe-t-il si je ne veux pas lier mon compte ? 
 {: #al_bene}
 
 Afin de vous permettre de profiter davantage de {{site.data.keyword.Bluemix_notm}}, toutes les nouvelles fonctionnalités sont développées dans une seule console {{site.data.keyword.Bluemix_notm}}. Lorsque vous fusionnez votre compte, vous obtenez un accès à un catalogue plus robuste, à une gestion des comptes simplifiée et vous bénéficiez d'une seule connexion.
 
 Si la liaison n'est pas une option envisageable pour vous, renseignez-vous auprès de votre équipe commerciale afin de connaître les autres options possibles.
 
-## Des primes s'appliquent-elles si je lie mes comptes maintenant ? 	
+## Des primes s'appliquent-elles si je lie mes comptes maintenant ? 
 {: #al_incent}
 
 Oui !  Si vous liez vos comptes maintenant, vous pouvez utiliser un crédit de 200 $ afin d'essayer des services PaaS.
 
-## Que se passe-t-il si j'ajoute des services de plateforme {{site.data.keyword.Bluemix_notm}} à mon compte SoftLayer ? 	
+## Que se passe-t-il si j'ajoute des services de plateforme {{site.data.keyword.Bluemix_notm}} à mon compte SoftLayer ? 
 {: #al_owaffslacct}
 
 Avec cet ajout, votre compte a accès à toutes les offres de plateforme {{site.data.keyword.Bluemix_notm}}.  Une fois que vous avez ajouté l'offre de plateforme {{site.data.keyword.Bluemix_notm}} à votre compte, votre responsable de compte doit activer l'accès à l'offre pour l'utilisateur final.
 
 Si vous êtes responsable de compte, consultez la rubrique [Gestion des utilisateurs](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) pour en savoir plus.
 
-## De quelle manière la liaison de compte impacte-t-elle mon ID de compte principal SoftLayer ? 	
+## De quelle manière la liaison de compte impacte-t-elle mon ID de compte principal SoftLayer ? 
 {: #al_howaffslmastacct}
 
 Vous pouvez toujours utiliser l'ID de votre compte SoftLayer pour vous connecter au portail client de l'infrastructure {{site.data.keyword.BluSoftlayer_full}} car la console {{site.data.keyword.Bluemix_notm}} console est accessible à l'aide d'IBMid.
 
-## Le nombre de groupes de ressources, d'organisations ou d'espaces que je peux créer est-il limité ?
-
-Si vous avez un compte facturable, le nombre de groupes de ressources, d'organisations ou d'espaces que vous pouvez créer dans votre compte est illimité. En revanche, si vous utilisez un compte Lite, vous êtes limité à une organisation et à un groupe de ressources.

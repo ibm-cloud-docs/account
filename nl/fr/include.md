@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-12-06"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2017-12-06"
 # Ajout de comptes à votre ressource privée
 {: #include}
 
-Toute ressource privée que vous créez est restreinte par défaut. Si vous êtes administrateur d'un compte, vous pouvez choisir les personnes qui peuvent voir votre ressource en ajoutant ces dernières à une liste d'inclusions avec l'[interface de ligne de commande](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_catalog_entry_visibility_set) `bx`.
+Toute ressource privée que vous créez est restreinte par défaut. Si vous êtes administrateur du compte, vous pouvez désigner les personnes qui peuvent voir votre ressource en les ajoutant à une liste d'inclusion depuis l'[interface  de ligne de commande](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_catalog_entry_visibility_set) `ibmcloud`.
 {:shortdesc: .shortdesc}
 
 ## Comment savoir si j'ai accès ?
@@ -26,14 +26,14 @@ Vous pouvez utiliser l'interface de ligne de commande ou l'interface utilisateur
 ## Etape 1 : Trouver votre ressource
 {: #find-resource}
 
-Entrez `bx catalog service <service-id or service-name>`. Remplacez service-id ou service-name par votre ID ou nom de ressource. Les informations retournées vous permettent de voir la hiérarchie, qui affiche les ressources enfant des éléments de votre ressource.
+Entrez `ibmcloud catalog service <service-id or service-name>`. Remplacez service-id ou service-name par votre ID ou nom de ressource. Les informations retournées vous permettent de voir la hiérarchie, qui affiche les ressources enfant des éléments de votre ressource.
 
 ## Etape 2 : Définir la visibilité en incluant un compte
 {: #vis-inc}
 
 Entrez la commande suivante pour autoriser un compte à afficher votre ressource privée.
 
-`bx catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>`
 
 Après l'indicateur includes-add, vous pouvez ajouter, en séparant les différents éléments par des virgules, une liste d'adresses e-mail ou d'ID, associés à vos comptes.
 
@@ -44,7 +44,7 @@ Une fois la commande exécutée, le processus d'inclusion de la ressource prend 
 
 Entrez la commande suivante pour retirer un compte de la liste d'inclusions.
 
-`bx catalog entry-visibility-set <service-id> --includes-remove <account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <service-id> --includes-remove <account-id or account-email>`
 
 ## Gestion de la visibilité des objets enfant
 {: #child-vis}
@@ -53,7 +53,7 @@ Vous pouvez gérer la visibilité de votre ressource ou de ses enfants.
 
 Une liste d'inclusions vide signifie que seuls les administrateurs de votre compte peuvent voir ce dernier. Votre compte doit figurer sur la liste d'inclusions pour tous les membres du compte pour qu'il soit visible.
 
-Ainsi, si vous entrez `bx catalog service <your_service>`, vous pouvez voir les enfants de la ressource.
+Par exemple, si vous entrez `ibmcloud catalog service <your_service>`, vous pouvez voir les enfants de la ressource.
 
 ```
 ID                 cloudant
@@ -79,7 +79,7 @@ Children           Name                                          Kind         ID
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-Vous pouvez obtenir l'ID de ressource pour le déploiement enfant puis inclure un compte en utilisant la commande suivante : `bx catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`.
+Vous pouvez obtenir l'ID de ressource pour le déploiement enfant puis inclure un compte en utilisant la commande suivante : `ibmcloud catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`.
 
 Les enfants d'un objet peuvent hériter de la visibilité d'une façon complexe. Si l'objet enfant est privé, il dispose de sa propre configuration de visibilité. Toutefois, si l'objet enfant est défini sur public, il hérite de la visibilité de son parent. La définition d'une visibilité sur un objet enfant privé risque de restreindre sa visibilité plus que le parent.
 

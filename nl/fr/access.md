@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-11-21"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -46,7 +46,7 @@ Pour vous servir de l'interface utilisateur Identity and Access, procédez comme
 2. Cliquez sur votre nom dans la liste Utilisateurs.
 3. Dans la section **Règles d'accès**, vous pouvez visualiser les règles d'accès qui vous sont affectées. Vous devez disposer du rôle Administrateur IAM Cloud pour le catalogue de ressources de votre compte pour mettre à jour la liste incluant les comptes afin de voir les ressources privées du catalogue.
 
-Pour utiliser [bx CLI](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam), procédez comme suit :
+Pour utiliser l'[interface de ligne de commande d'ibmcloud](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_commands_iam), procédez comme suit :
 
-Entrez la commande suivante, accompagnée de votre nom d'utilisateur `bx iam user-policies <your-username>` pour voir si vous êtes administrateur des comptes sélectionnés dans l'interface de ligne de commande. Si vous n'êtes pas administrateur de l'un ou plusieurs des comptes, ces commandes renvoient une erreur indiquant que vous n'êtes pas autorisé.
+Entrez la commande suivante, accompagnée de votre nom d'utilisateur `ibmcloud iam user-policies <your-username>` pour voir si vous êtes administrateur des comptes sélectionnés dans l'interface de ligne de commande. Si vous n'êtes pas administrateur de l'un ou plusieurs des comptes, ces commandes renvoient une erreur indiquant que vous n'êtes pas autorisé.
 {: tip}
