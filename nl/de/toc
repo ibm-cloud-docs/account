@@ -18,8 +18,6 @@ Eigenes Konto verwalten
     change-plan.md
     softlayerlink.md
     notifications.md
-    resourcegroups.md
-    instance_migration.md
 
     {: .topicgroup}
     Organisationen und Bereiche verwalten
@@ -38,5 +36,4 @@ Eigenes Konto verwalten
     account_faq.md
     [Fehlerbehebung für den Zugriff auf IBM Cloud](../troubleshoot/ts_accessing.html)
     [Fehlerbehebung für die Verwaltung von Konten](../troubleshoot/ts_accounts.html)
-    [Fehlerbehebung für die Migration von Serviceinstanzen](../troubleshoot/ts_migration.html)
     {: .navgroup-end}

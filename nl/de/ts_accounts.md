@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2017-11-07"
+lastupdated: "2017-11-09"
 
 ---
 
@@ -16,6 +16,7 @@ lastupdated: "2017-11-07"
 {:screen: .screen}
 {:tip: .tip}
 {:new_window: target="_blank"}
+
 
 # Fehlerbehebung für die Verwaltung von Konten
 {: #managingaccounts}
@@ -47,10 +48,10 @@ Dies liegt wahrscheinlich daran, dass Sie ein Lite-Konto verwenden, das die Entw
 Wenn Sie ein Lite-Konto haben, können Sie ein Upgrade auf ein gebührenpflichtiges Konto durchführen, um auf zusätzliche Organisationen zugreifen zu können. Rufen Sie in der Konsole die Seite **Verwalten > Abrechnung und Nutzung > Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**. Auf der Seite **Abrechnung** können Sie auch überprüfen, ob Sie ein Lite-Konto haben.
 {: tsResolve}
 
-## Fehler beim Erstellen einer neuen Lite-Planinstanz
+## Fehler beim Erstellen einer Lite-Planinstanz
 {: #nosecondlite}
 
-Sie erhalten die folgende Fehlernachricht, wenn Sie versuchen, eine neue Lite-Planinstanz zu erstellen.
+Sie erhalten die folgende Fehlernachricht, wenn Sie versuchen, eine Lite-Planinstanz zu erstellen.
 {: tsSymptoms}
 
 `Fehler beim Erstellen einer neuen Lite-Instanz`
@@ -99,7 +100,7 @@ Setzen Sie sich zur Reaktivierung Ihres Kontos mit dem [{{site.data.keyword.Blue
 ## Hinzufügen von Benutzern zu Organisation nicht möglich
 {: #ts_adduser}
 
-Zur Arbeit für eine Organisation können mehrere Benutzer eingeladen werden. Sie können nur Benutzer in Ihre Organisation einladen, wenn Sie der Kontoeigner sind oder wenn Sie sowohl Manager als auch Mitglied der Organisation sind.
+Zur Arbeit für eine Organisation können mehrere Benutzer eingeladen werden. Sie können nur Benutzer in Ihre Organisation einladen, wenn Sie der Kontoeigner sind oder wenn Sie Manager der Organisation sind.
 
 Sie können den Link **Neuen Benutzer einladen** im Abschnitt **Organisation verwalten** nicht anzeigen.
 {: tsSymptoms}
@@ -107,30 +108,15 @@ Sie können den Link **Neuen Benutzer einladen** im Abschnitt **Organisation ver
 Nur die folgenden {{site.data.keyword.Bluemix_notm}}-Benutzer können Benutzer zu einer Organisation einladen:
 {: tsCauses}
   * Der Kontoeigner der Organisation
-  * Organisationsmanager, die auch Mitglieder, aber nicht Collaborator der Organisation sind
+  * Manager der Organisation
 
-In {{site.data.keyword.Bluemix_notm}} können Sie entweder ein Mitglied oder ein Collaborator einer Organisation sein:
+**Hinweis:** Alle Organisationsmanager können Benutzer hinzufügen, ändern und entfernen, die bereits in der Organisation sind.
 
-<dl><dt>Collaborator</dt>
-<dd>Sie sind Collaborator einer Organisation, wenn Sie bereits über ein {{site.data.keyword.Bluemix_notm}}-Konto verfügen und Sie von einer anderen Person zur Organisation eingeladen werden.</dd>
-<dt>Mitglied</dt>
-<dd>Sie sind ein Mitglied einer Organisation, wenn Sie nicht über ein {{site.data.keyword.Bluemix_notm}}-Konto verfügen, Sie aber von einer Person zur Organisation eingeladen werden und Sie sich im Rahmen der Einladung bei {{site.data.keyword.Bluemix_notm}} registrieren.</dd>
-</dl>
-
-Sie können nicht Benutzer zu Ihrer Organisation einladen, wenn Sie ein Collaborator der Organisation sind; dies ist auch dann nicht möglich, wenn Sie ein Organisationsmanager sind.
-
-**Hinweis:** Alle Organisationsmanager, einschließlich der Manager, die auch Collaborator einer Organisation sind, können Benutzer hinzufügen, ändern und entfernen, die bereits in der Organisation sind.
-
-Wenn Sie Benutzer nicht zu Ihrer Organisation einladen können und zum Einladen eine andere Rolle benötigen, kontaktieren Sie Ihren Organisationsmanager, damit er Ihre Rolle ändert. Führen Sie die folgenden Schritte aus, um festzustellen, wer Ihr Organisationsmanager ist:
+Wenn Sie Benutzer nicht zu Ihrer Organisation einladen können, kontaktieren Sie Ihren Organisationsmanager. Führen Sie die folgenden Schritte aus, um festzustellen, wer Ihr Organisationsmanager ist:
 {: tsResolve}
 
   1. Klicken Sie in der Menüleiste der Konsole auf **Verwalten > Konto > Organisationen**.
   2. Wechseln Sie zu Ihrer Organisation und zeigen Sie die Informationen zum Organisationsmanager in der Registerkarte **Benutzer** an.  
-
-Wenn Sie nicht in der Lage sind, Benutzer einzuladen, weil Sie ein Mitarbeiter und kein Mitglied sind, müssen Sie Ihr vorheriges {{site.data.keyword.Bluemix_notm}}-Konto löschen und anschließend eingeladen werden, als Mitglied der Organisation am Konto teilzunehmen. Um Ihr vorheriges Konto zu löschen und dem Konto als Mitglied beizutreten, führen Sie die folgenden Schritte durch:
-
-  1. Wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}}-Support ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://ibm.biz/bluemixsupport){: new_window}, um ein Support-Ticket zu öffnen und die Löschung Ihres Kontos anzufordern. Wenn Sie Daten besitzen, die zu Ihrem alten Konto gehören, und die Sie speichern und in das neue Konto verschieben möchten, beziehen Sie diese Informationen in Ihre E-Mail ein.
-  2. Nachdem Ihr Konto gelöscht ist, lassen Sie sich von dem Benutzer mit der Organisationsmanager-Rolle als Organisationsmanager in die Organisation einladen. Anschließend melden Sie sich über die Einladung bei {{site.data.keyword.Bluemix_notm}} an.
 
 ## Registrierung von Benutzern im Stapelbetrieb wird nicht unterstützt
 {: #ts_batchregistration}

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-25"
+lastupdated: "2018-05-31"
 
 ---
 
@@ -16,10 +16,10 @@ lastupdated: "2018-05-25"
 # Kontotypen
 {: #accounts}
 
-Sie können zwischen den drei folgenden {{site.data.keyword.Bluemix}}-Kontotypen wählen: dem Lite-Konto, dem nutzungsabhängigen Konto und dem Abonnementkonto. Sie können jeden der Kontotypen verwenden, um Ihre Arbeit mit {{site.data.keyword.Bluemix_notm}} zu beginnen - wählen Sie einfach den für Ihre Anforderungen am besten geeigneten Kontotyp aus.
+Sie können zwischen den drei folgenden {{site.data.keyword.Bluemix}}-Kontotypen wählen: dem Lite-Konto, dem nutzungsabhängigen Konto und dem Abonnementkonto. Sie können jeden der Kontotypen verwenden, um Ihre Arbeit mit {{site.data.keyword.Bluemix_notm}} zu beginnen - wählen Sie den für Ihre Anforderungen am besten geeigneten Kontotyp aus.
 {:shortdesc}
 
-## Kontovergleich
+## Konten im Vergleich
 {: #compare}
 
 Die folgende Tabelle enthält einen Vergleich von Lite-Konto, nutzungsabhängigem Konto und Abonnementkonto. Weitere Informationen zu den einzelnen Konten finden Sie in den folgenden Abschnitten.
@@ -43,14 +43,14 @@ Die folgende Tabelle enthält einen Vergleich von Lite-Konto, nutzungsabhängige
 
 Registrieren Sie sich für ein Lite-Konto, um unter Nutzung ausgewählten gebührenfreien Pläne mit der Entwicklung von Apps und Erkundung von Services zu beginnen. Diese Lite-Pläne werden mit einem Lite-Tag ![Lite-Tag](../icons/Lite.svg) in der {{site.data.keyword.Bluemix_notm}}-Konsole angezeigt. Ihr Lite-Konto gilt unbefristet und Ihre Kreditkarte wird nicht benötigt.
 
-Sie haben Zugriff auf eine einzelne Ressourcengruppe, die für Sie erstellt wurde und den Namen `Default` (Standard) trägt. Alle Serviceinstanzen, die von {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) verwaltet werden, werden dieser Ressourcengruppe automatisch hinzugefügt. Sie können den Namen dieser Ressourcengruppe jederzeit ändern. Detaillierte Schritte finden Sie unter [Ressourcengruppe umbenennen](/docs/account/resourcegroups.html#renaming-a-resource-group).
+Sie haben Zugriff auf eine einzelne Ressourcengruppe, die für Sie erstellt wurde und den Namen `Default` (Standard) trägt. Alle Serviceinstanzen, die von {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) verwaltet werden, werden dieser Ressourcengruppe automatisch hinzugefügt. Sie können den Namen dieser Ressourcengruppe jederzeit ändern. Detaillierte Schritte finden Sie unter [Ressourcengruppe umbenennen](/docs/resources/resourcegroups.html#renaming-a-resource-group).
 
-Jede Ressourcengruppe ist kostenfrei. Wenn Sie eine Verbindung zwischen einem von IAM verwalteten Service und einer Cloud Foundry-App erstellen, erstellen Sie einen Aliasnamen, der eine Serviceinstanz ist, die zu Ihrem Kontingent zählt. Weitere Informationen finden Sie unter [Was ist ein Aliasname?](/docs/cfapps/connecting_apps.html#what_is_alias).
+Jede Ressourcengruppe ist kostenfrei. Wenn Sie eine Verbindung zwischen einem von IAM verwalteten Service und einer Cloud Foundry-App erstellen, erstellen Sie einen Aliasnamen, der eine Serviceinstanz ist, die zu Ihrem Kontingent zählt. Weitere Informationen finden Sie unter [Was ist ein Aliasname?](/docs/resources/connecting_apps.html#what_is_alias).
 {: tip}
 
 ### Merkmale und Leistungen
 
-Ein Lite-Konto umfasst das nachfolgend beschriebene Angebot. Die folgende Liste enthält die wichtigsten Merkmale:
+Die folgende Liste enthält zentrale Features, die mit einem Lite-Konto zur Verfügung stehen:
 
    * Das Konto ist kostenfrei - Sie benötigen keine Kreditkarte.
    * Für das Konto existiert kein Ablaufdatum.
@@ -63,13 +63,18 @@ Ein Lite-Konto umfasst das nachfolgend beschriebene Angebot. Die folgende Liste 
    * Nach 30 Tagen ohne Entwicklungstätigkeit werden Ihre Serviceinstanzen mit den Lite-Plänen gelöscht. Das heißt, Sie müssen sich nicht um das Löschen inaktiver Instanzen kümmern, bevor Sie neue Instanzen erstellen.
 
 ### Upgrade für Konto durchführen
+{: #upgrade-to-paygo}
 
-Wenn Sie Ihre Umgebung später ausbauen möchten, führen Sie ein Upgrade auf ein nutzungsabhängiges Konto durch und zahlen Sie nur das, was Sie über die Gratisleistungen hinaus nutzen. Nach dem Upgrade können Sie die mit Ihrem Lite-Konto erstellten Instanzen weiterhin verwenden. Rufen Sie in der Konsole die Seite **Verwalten** > **Abrechnung und Nutzung** > **Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**.
+Wenn Sie Ihre Umgebung ausbauen möchten, können Sie für Ihr Lite-Konto ein Upgrade auf ein nutzungsabhängiges Konto oder ein Abonnementkonto durchführen. 
+
+  * Rufen Sie für ein Upgrade auf ein nutzungsabhängiges Konto **Verwalten** > **Abrechnung und Nutzung** > **Abrechnung** in der Konsole auf und klicken Sie auf **Kreditkarte hinzufügen**.
+  * Rufen Sie für ein Upgrade auf ein Abonnementkonto **Verwalten** > **Abrechnung und Nutzung** > **Abrechnung** in der Konsole auf und klicken Sie auf **Weitere Informationen**.
+
 
 ## Nutzungsabhängiges Konto
 {: #paygo}
 
-Mit einem nutzungsabhängigen Konto können Sie mehrere Ressourcengruppen erstellen, um Kontingente ohne großen Aufwand zu verwalten und um Informationen zu Abrechnung und Nutzung für eine Gruppe von Ressourcen anzuzeigen. Die für Sie anfallenden Gebühren richten Sie nach Ihrer Nutzung von {{site.data.keyword.Bluemix_notm}}-Berechnungen und -Services. Ihnen stehen zusätzliche kostenlose Laufzeit- und Serviceleistungen zur Verfügung. If you use more than the free allowance, you receive a monthly {{site.data.keyword.Bluemix_notm}} invoice. Die Rechnung ist in USD ausgestellt und enthält Detailangaben zu Ihren Ressourcengebühren.
+Mit einem nutzungsabhängigen Konto können Sie mehrere Ressourcengruppen erstellen, um Kontingente ohne großen Aufwand zu verwalten und um Informationen zu Abrechnung und Nutzung für eine Gruppe von Ressourcen anzuzeigen. Die für Sie anfallenden Gebühren richten Sie nach Ihrer Nutzung von {{site.data.keyword.Bluemix_notm}}-Berechnungen und -Services. Ihnen stehen zusätzliche kostenlose Laufzeit- und Serviceleistungen zur Verfügung. Wenn Sie in Ihrer Nutzung über die gebührenfreien Leistungen hinausgehen, erhalten Sie eine {{site.data.keyword.Bluemix_notm}}-Rechnung für den Monat. Die Rechnung ist in USD ausgestellt und enthält Detailangaben zu Ihren Ressourcengebühren.
 
 Wenn Sie Ihr Konto mit nutzungsabhängiger Zahlung mit einem SoftLayer-Konto verknüpfen, werden Ihre kombinierten Gebühren ab dem Ersten des Folgemonats über die {{site.data.keyword.Bluemix_notm}}-Rechnung abgerechnet.
 {: tip}
@@ -79,6 +84,7 @@ Wenn Sie Ihr Konto mit nutzungsabhängiger Zahlung mit einem SoftLayer-Konto ver
 Nach dem Upgrade auf ein Konto mit nutzungsabhängiger Zahlung erhalten Sie eine Werbegutschrift in Höhe von 200 US-Dollar, die Sie nutzen können, ohne dass hierfür weitere Aktionen ausgeführt werden müssen. Die Gutschrift von 200 US-Dollar hat eine Gültigkeit von 30 Tagen und wird automatisch mit Ihrer Rechnung verrechnet. Die Gutschrift kann nicht mit Infrastrukturangeboten oder Angeboten anderer Anbieter verwendet werden.
 
 ### Upgrade für Konto durchführen
+{: #upgrade-to-subscription}
 
 Für Ihr Konto mit nutzungsabhängiger Zahlung können Sie jederzeit ein Upgrade auf ein Abonnementkonto durchführen. Weitere Informationen erhalten Sie über den [{{site.data.keyword.Bluemix_notm}}-Vertrieb](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg).
 
@@ -88,8 +94,6 @@ Mit einem Abonnementkonto können Sie mehrere Ressourcengruppen erstellen, um Ko
 
 Wenn Sie Ihr Abonnementkonto mit einem SoftLayer-Konto verknüpfen, werden Ihre kombinierten Gebühren ab dem Ersten des Folgemonats über die {{site.data.keyword.Bluemix_notm}}-Rechnung abgerechnet.
 {: tip}
-
-Wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}}-Vertrieb ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg), um sich für ein Abonnementkonto anzumelden oder um weitere Informationen zu Abonnementgebühren und -nachlässen zu erhalten.
 
 ### {{site.data.keyword.Bluemix_dedicated_notm}}-Konto
 
