@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2017-11-07"
+lastupdated: "2017-11-09"
 
 ---
 
@@ -16,6 +16,7 @@ lastupdated: "2017-11-07"
 {:screen: .screen}
 {:tip: .tip}
 {:new_window: target="_blank"}
+
 
 # Resolución de problemas de gestión de cuentas
 {: #managingaccounts}
@@ -49,10 +50,10 @@ Es probable que esto ocurra por estar utilizando una cuenta Lite, que únicament
 Si tiene una cuenta Lite, puede actualizarla a una cuenta facturable para acceder a más organizaciones. Vaya a la página **Gestionar > Facturación y utilización > Facturación** en la consola y, a continuación, pulse **Añadir tarjeta de crédito**. En la página **Facturación**, también puede comprobar si tiene una cuenta Lite.
 {: tsResolve}
 
-## No es posible crear una nueva instancia de plan Lite
+## No es posible crear la instancia de plan Lite
 {: #nosecondlite}
 
-Puede recibir el siguiente mensaje de error al intentar crear una nueva instancia de plan Lite:
+Puede recibir el siguiente mensaje de error al intentar crear una instancia de plan Lite:
 {: tsSymptoms}
 
 `No es posible aprovisionar una nueva instancia de Lite`
@@ -101,7 +102,7 @@ Para volver a activar la cuenta, póngase en contacto con el [equipo de soporte 
 ## No se pueden añadir usuarios a una organización
 {: #ts_adduser}
 
-Puede invitar a más de un usuario a trabajar en la misma organización. Solo puede invitar a los usuarios a su organización si es el propietario de la cuenta o si es gestor y miembro de la organización.
+Puede invitar a más de un usuario a trabajar en la misma organización. Solo puede invitar usuarios a su organización si es el propietario de la cuenta o si es gestor de la organización.
 
 No ve el enlace **Invitar a un nuevo usuario** en la sección **Gestionar organizaciones**.
 {: tsSymptoms}
@@ -110,37 +111,15 @@ No ve el enlace **Invitar a un nuevo usuario** en la sección **Gestionar organi
 pueden invitar a usuarios a una organización:
 {: tsCauses}
   * El propietario de la cuenta de la organización
-  * Gestores de la organización que también son miembros, no colaboradores,
-de la organización
+  * Gestores de la organización
 
-En {{site.data.keyword.Bluemix_notm}}
-puede ser miembro o colaborador de una organización:
+**Nota:** Todos los gestores de la organización pueden añadir, modificar y eliminar los usuarios que ya están en la organización.
 
-<dl><dt>Colaborador</dt>
-<dd>Es colaborador de una organización si ya dispone de una cuenta de {{site.data.keyword.Bluemix_notm}} y alguien le ha invitado a la organización.</dd>
-<dt>Miembro</dt>
-<dd>Es miembro de una organización si no dispone de una cuenta de {{site.data.keyword.Bluemix_notm}}, pero alguien le invita a la organización y se registra en {{site.data.keyword.Bluemix_notm}} desde la invitación.</dd>
-</dl>
-
-No puede invitar a usuarios a su organización si es
-colaborador, incluso si se le ha asignado
-como gestor de la organización.
-
-**Nota:** Todos los gestores de la organización, incluidos los que
-son colaboradores, pueden añadir, modificar y
-eliminar los usuarios que ya están en la organización.
-
-Si no puede invitar usuarios a su organización y necesita otro rol para hacerlo, póngase en contacto con el gestor de la organización
-para cambiar el rol. Para identificar el gestor de la organización, siga estos pasos:
+Si no puede invitar usuarios a su organización, póngase en contacto con el gestor de la organización. Para identificar el gestor de la organización, siga estos pasos:
 {: tsResolve}
 
   1. Desde la barra de menús, pulse **Gestionar > Cuenta > Organizaciones**.
   2. Vaya a la organización y consulte la información sobre el gestor de la organización en el separador **USUARIOS**.  
-
-Si no puede invitar usuarios porque es colaborador y no un miembro, debe suprimir la cuenta anterior de {{site.data.keyword.Bluemix_notm}} y luego se le debe invitar como un miembro de la organización. Para suprimir la cuenta anterior y unirse como miembro, complete los siguientes pasos:
-
-  1. Póngase en contacto con el [equipo de soporte de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](http://ibm.biz/bluemixsupport){: new_window} para abrir una incidencia de soporte y solicitar que se suprima la cuenta. Si tiene datos asociados con su antigua cuenta que desea guardar y moverlos a la nueva cuenta, incluya es información en el correo.
-  2. Cuando se suprima la cuenta, tendrá un usuario con el rol de gestor de la organización y le invitará a unirse como gestor. Luego, inicie sesión en {{site.data.keyword.Bluemix_notm}} desde la invitación.
 
 ## No se da soporte al registro por lotes de usuarios
 {: #ts_batchregistration}

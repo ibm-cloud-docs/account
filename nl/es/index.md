@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-25"
+lastupdated: "2018-05-31"
 
 ---
 
@@ -43,14 +43,14 @@ La siguiente tabla proporciona una comparación de las cuentas Lite, Pago según
 
 Regístrese para una cuenta Lite para empezar a crear sus apps y explorar servicios con planes Lite gratuitos seleccionados, que se muestran con una etiqueta Lite ![etiqueta Lite](../icons/Lite.svg) en la consola de {{site.data.keyword.Bluemix_notm}}. Su cuenta Lite no caduca y la tarjeta de crédito no es necesaria.
 
-Tiene acceso a un único grupo de recursos creado para usted y llamado `Default`. Todas sus instancias de servicio gestionadas por la Gestión de identidad y acceso de {{site.data.keyword.Bluemix_notm}} (IAM) se añaden automáticamente a este grupo de recursos. Puede actualizar en nombre de este grupo de recursos en cualquier momento. Consulte [Cómo renombrar un grupo de recursos](/docs/account/resourcegroups.html#renaming-a-resource-group) para obtener los pasos detallados.
+Tiene acceso a un único grupo de recursos creado para usted y llamado `Default`. Todas sus instancias de servicio gestionadas por la Gestión de identidad y acceso de {{site.data.keyword.Bluemix_notm}} (IAM) se añaden automáticamente a este grupo de recursos. Puede actualizar en nombre de este grupo de recursos en cualquier momento. Consulte [Cómo renombrar un grupo de recursos](/docs/resources/resourcegroups.html#renaming-a-resource-group) para obtener los pasos detallados.
 
-Cada grupo de recursos es gratuito. Cuando crea una conexión entre un servicio gestionado por IAM y una app de Cloud Foundry, crea un alias, que es una instancia de servicio que cuenta en el cálculo de su cuota. Consulte [¿Qué es un alias?](/docs/cfapps/connecting_apps.html#what_is_alias)
+Cada grupo de recursos es gratuito. Cuando crea una conexión entre un servicio gestionado por IAM y una app de Cloud Foundry, crea un alias, que es una instancia de servicio que cuenta en el cálculo de su cuota. Consulte [¿Qué es un alias?](/docs/resources/connecting_apps.html#what_is_alias)
 {: tip}
 
 ### ¿Qué hay disponible?
 
-Se estará preguntando qué se ofrece en una cuenta Lite. Consulte la siguiente lista con las características principales:
+Consulte la siguiente lista con las características principales que están disponibles en una cuenta Lite:
 
    * La cuenta es gratuita. No necesita tarjeta de crédito.
    * La cuenta no caduca nunca.
@@ -63,8 +63,13 @@ Se estará preguntando qué se ofrece en una cuenta Lite. Consulte la siguiente 
    * Después de 30 días de inactividad de desarrollo, se suprimirán las instancias de servicio con planes Lite. De esta forma, no tiene que preocuparse de la supresión de instancias inactivas antes de crear nuevas.
 
 ### Actualización de la cuenta
+{: #upgrade-to-paygo}
 
-Cuando esté preparado para crecer, actualice a una cuenta de pago según uso y pague sólo por lo que utilice más allá de las concesiones gratuitas. Después de la actualización, puede continuar utilizando las instancias que ha creado con su cuenta Lite. Vaya a **Gestionar** > **Facturación y utilización ** > **Facturación** en la consola y pulse **Añadir tarjeta de crédito**.
+Cuando esté preparado para crecer, puede actualizar su cuenta Lite a una cuenta de pago según uso o a una cuenta de suscripción. 
+
+  * Para actualizar a una cuenta de Pago según uso, vaya a **Gestionar** > **Facturación y utilización ** > **Facturación** en la consola y pulse **Añadir tarjeta de crédito**.
+  * Para actualizar a una cuenta de suscripción, vaya a **Gestionar** > **Facturación y utilización** > **Facturación** en la consola y pulse **Más información**.
+
 
 ## Cuenta de Pago según uso
 {: #paygo}
@@ -79,6 +84,7 @@ Puede actualizar a una cuenta de Pago según uso desde la consola de {{site.data
 Obtendrá un crédito promocional de 200 dólares después de actualizar a una cuenta de Pago según uso, y no hay medidas necesarias para que empiece a utilizarlo. Su crédito de 200 dólares es válido durante 30 días y se aplica automáticamente a su factura. El crédito no puede utilizarse con ofertas de infraestructura ni de terceros.
 
 ### Actualización de la cuenta
+{: #upgrade-to-subscription}
 
 Puede actualizar su cuenta de Pago según uso a una cuenta de Suscripción en cualquier momento. Póngase en contacto con el [equipo de ventas de {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg) para obtener más detalles.
 
@@ -88,8 +94,6 @@ Con una cuenta de Suscripción, puede crear varios grupos de recursos para gesti
 
 Si enlaza su cuenta de Suscripción con una cuenta de SoftLayer, a partir del día 1 del próximo mes, los cargos combinados están incluidos en su factura de {{site.data.keyword.Bluemix_notm}}.
 {: tip}
-
-Para registrarse con una cuenta de Suscripción, y para obtener más información sobre las tarifas y descuentos de la suscripción, póngase en contacto con [el equipo de ventas de {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg).
 
 ### Cuenta de {{site.data.keyword.Bluemix_dedicated_notm}}
 
