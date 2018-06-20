@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-25"
+lastupdated: "2018-05-31"
 
 ---
 
@@ -16,10 +16,11 @@ lastupdated: "2018-05-25"
 # Tipos de Conta
 {: #accounts}
 
-É possível escolher entre três tipos de contas do {{site.data.keyword.Bluemix}}: Lite, Pay As You Go e de Assinatura. É possível usar qualquer um dos tipos de contas para começar a usar o {{site.data.keyword.Bluemix_notm}} - basta escolher aquele que se ajuste melhor às suas necessidades.
+É possível escolher entre três tipos de contas do {{site.data.keyword.Bluemix}}: Lite, Pay As You Go e de Assinatura. É possível usar qualquer um dos tipos de contas para começar a usar o {{site.data.keyword.Bluemix_notm}} - escolha aquele que
+melhor se adequar às suas necessidades.
 {:shortdesc}
 
-## Comparação de conta
+## Comparando contas
 {: #compare}
 
 A tabela a seguir fornece uma comparação das contas Lite, Pré-paga e de Assinatura. Para obter mais detalhes sobre cada conta, veja as seções a seguir.
@@ -43,14 +44,14 @@ A tabela a seguir fornece uma comparação das contas Lite, Pré-paga e de Assin
 
 Inscreva-se para uma conta Lite para começar a construir seus apps e explorar serviços com planos Lite grátis selecionados, que são exibidos com uma tag Lite ![Tag Lite](../icons/Lite.svg) no console do {{site.data.keyword.Bluemix_notm}}. Sua conta Lite não expira e seu cartão de crédito não é necessário.
 
-Você tem acesso a um único grupo de recursos que é criado e denominado `Default`. Todas as suas instâncias de serviços que são gerenciadas pelo {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) são incluídas automaticamente nesse grupo de recursos. É possível atualizar o nome desse grupo de recursos a qualquer momento. Consulte [Renomeando um grupo de recursos](/docs/account/resourcegroups.html#renaming-a-resource-group) para obter as etapas detalhadas.
+Você tem acesso a um único grupo de recursos que é criado e denominado `Default`. Todas as suas instâncias de serviços que são gerenciadas pelo {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) são incluídas automaticamente nesse grupo de recursos. É possível atualizar o nome desse grupo de recursos a qualquer momento. Consulte [Renomeando um grupo de recursos](/docs/resources/resourcegroups.html#renaming-a-resource-group) para obter as etapas detalhadas.
 
-Cada grupo de recursos é livre. Ao criar uma conexão entre um serviço gerenciado pelo IAM e um aplicativo Cloud Foundry, crie um alias, que é uma instância de serviço, que conta para sua cota. Consulte [O que é um alias?](/docs/cfapps/connecting_apps.html#what_is_alias).
+Cada grupo de recursos é livre. Ao criar uma conexão entre um serviço gerenciado pelo IAM e um aplicativo Cloud Foundry, crie um alias, que é uma instância de serviço, que conta para sua cota. Consulte [O que é um alias?](/docs/resources/connecting_apps.html#what_is_alias).
 {: tip}
 
 ### O que está disponível?
 
-Você pode estar querendo saber o que é oferecido em uma conta Lite. Confira a lista a seguir de recursos-chave:
+Confira a lista a seguir de recursos-chave que estão disponíveis em uma conta Lite:
 
    * A conta é grátis, nenhum cartão de crédito é necessário.
    * A conta nunca expira.
@@ -63,8 +64,15 @@ Você pode estar querendo saber o que é oferecido em uma conta Lite. Confira a 
    * Depois de 30 dias sem atividade de desenvolvimento, suas instâncias de serviço com planos Lite serão excluídas. Dessa forma, você não precisa gerenciar a exclusão de instâncias inativas antes de criar novas.
 
 ### Fazendo upgrade de sua conta
+{: #upgrade-to-paygo}
 
-Quando você estiver pronto para crescer, faça upgrade para uma conta pré-paga e pague somente o que você usar além dos abonos grátis. Após o upgrade, é possível continuar usando qualquer instância criada com sua conta Lite. Acesse **Gerenciar** > **Faturamento e uso** > **Faturamento** no console e clique em **Incluir cartão de crédito**.
+Quando estiver pronto para crescer, será possível fazer upgrade da sua conta Lite para uma conta pré-paga ou da
+assinatura. 
+
+  * Para fazer upgrade para uma conta pré-paga, acesse **Gerenciar** > **Faturamento e uso** > **Faturamento** no console e clique em **Incluir cartão de crédito**.
+  * Para fazer upgrade para uma conta da assinatura, acesse **Gerenciar** > **Faturamento e
+uso** > **Faturamento** no console e clique em **Saiba mais**.
+
 
 ## Conta de Pagamento por uso
 {: #paygo}
@@ -79,6 +87,7 @@ Se você vincular sua conta Pay As You Go a uma conta do SoftLayer, começando n
 Você obterá um crédito promocional de US$ 200 depois de fazer upgrade para uma conta Pay As You Go e não será necessária nenhuma ação para começar a utilizá-lo. Seu crédito de US$ 200 é válido por 30 dias e é aplicado automaticamente à sua fatura. O crédito não pode ser usado com infraestrutura ou ofertas de terceiros.
 
 ### Fazendo upgrade de sua conta
+{: #upgrade-to-subscription}
 
 Será possível fazer upgrade de sua conta Pay As You Go para uma conta de Assinatura a qualquer momento. Entre em contato com [Vendas do {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg) para obter mais detalhes.
 
@@ -89,8 +98,6 @@ também paga por qualquer uso que exceda a quantia mínima de gasto.
 
 Se você vincular sua conta de Assinatura a uma conta do SoftLayer, começando no primeiro dia do próximo mês, seus encargos combinados serão incluídos na fatura do {{site.data.keyword.Bluemix_notm}}.
 {: tip}
-
-Para se inscrever para uma conta de Assinatura e para obter mais informações sobre taxas e descontos de assinatura, deve-se entrar em contato com [Vendas do {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg)
 
 ### Conta do {{site.data.keyword.Bluemix_dedicated_notm}}
 

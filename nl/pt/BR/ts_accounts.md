@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2017-11-07"
+lastupdated: "2017-11-09"
 
 ---
 
@@ -16,6 +16,7 @@ lastupdated: "2017-11-07"
 {:screen: .screen}
 {:tip: .tip}
 {:new_window: target="_blank"}
+
 
 # Resolução de problemas para gerenciamento de contas
 {: #managingaccounts}
@@ -47,10 +48,10 @@ Isso é provavelmente porque você está usando uma conta Lite, que suporta dese
 Se você tiver uma conta Lite, será possível fazer upgrade para uma conta faturável para acessar organizações adicionais. Acesse a página **Gerenciar > Faturamento e uso > Faturamento** no console e clique em **Incluir cartão de crédito**. Na página **Faturamento**, é possível também verificar se você tem uma conta Lite.
 {: tsResolve}
 
-## Não é possível criar uma nova instância do plano Lite
+## Não é possível criar instância do plano Lite
 {: #nosecondlite}
 
-Você recebe a mensagem de erro a seguir quando tenta criar uma nova instância do plano Lite:
+Você recebe a mensagem de erro a seguir quando tenta criar uma instância do plano Lite:
 {: tsSymptoms}
 
 `Não é possível provisionar uma nova instância Lite`
@@ -100,9 +101,7 @@ Para reativar sua conta, entre em contato com o [Suporte do {{site.data.keyword.
 ## Não é possível incluir usuários em uma organização
 {: #ts_adduser}
 
-É possível convidar mais de um usuário para trabalhar sob a mesma organização. É possível convidar os usuários para a sua organização
-somente se você for o proprietário da conta ou se for ambos, um gerente
-e um membro da organização.
+É possível convidar mais de um usuário para trabalhar sob a mesma organização. É possível convidar os usuários para a sua organização somente se você é o proprietário da conta ou se você é um gerente da organização.
 
 Não é possível ver o link **Convidar um novo usuário** na seção **Gerenciar organizações**.
 {: tsSymptoms}
@@ -111,33 +110,16 @@ Somente os usuários {{site.data.keyword.Bluemix_notm}} a seguir
 podem convidar usuários para uma organização:
 {: tsCauses}
   * O proprietário da conta da organização
-  * Os gerenciadores de organização que também são membros, não colaboradores, da organização
+  * Gerenciadores da organização
 
-No
-{{site.data.keyword.Bluemix_notm}}, é possível ser um membro ou um colaborador de uma organização:
+**Nota:** todos os gerenciadores de organização podem incluir, modificar e remover usuários que já estão na organização.
 
-<dl><dt>Colaborador</dt>
-<dd>Você será um colaborador de uma organização se já tiver uma conta do {{site.data.keyword.Bluemix_notm}} e alguém convidá-lo para a organização.</dd>
-<dt>Membro</dt>
-<dd>Você será um membro de uma organização se não tiver uma conta do {{site.data.keyword.Bluemix_notm}}, mas alguém convidá-lo para a organização e você se inscrever para o {{site.data.keyword.Bluemix_notm}} por meio do convite.</dd>
-</dl>
-
-Não será possível convidar usuários para a sua organização, se você for um colaborador da organização, mesmo se tiver sido designado como um gerenciador da organização.
-
-**Nota:** Todos os gerenciadores de organização, incluindo aqueles que são colaboradores de uma organização, podem incluir, modificar e remover os usuários que já estão na organização.
-
-Se não for possível convidar usuários para sua organização e você precisar de uma função diferente para fazer isso, entre em contato com o gerenciador de organização para mudar sua função. Para identificar o gerente da organização, conclua as
+Se não for possível convidar usuários para sua organização, entre em contato com o gerenciador de organização. Para identificar o gerente da organização, conclua as
 etapas a seguir:
 {: tsResolve}
 
   1. Na barra de menus do console, clique em **Gerenciar > Conta > Organizações**.
   2. Acesse sua organização e visualize as informações sobre o gerente da organização na guia **USUÁRIOS**.  
-
-Se não puder convidar usuários porque é um colaborador e não um membro, sua conta anterior do {{site.data.keyword.Bluemix_notm}} deverá ser excluída e você convidado para se associar à conta, em seguida, como um membro da organização. Para excluir sua conta anterior e se associar à conta como um membro,
-conclua as etapas a seguir:
-
-  1. Entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixsupport){: new_window} para abrir um chamado de suporte e solicitar que sua conta seja excluída. Se houver dados associados à sua conta antiga que você deseja salvar e mover para a nova conta, inclua essas informações em seu e-mail.
-  2. Após sua conta ser excluída, peça a um usuário com a função de gerenciador de organização para convidá-lo para a organização como um gerenciador de organização. Em seguida, inscreva-se no {{site.data.keyword.Bluemix_notm}} a partir do convite.
 
 ## O registro em lote de usuários não é suportado
 {: #ts_batchregistration}
