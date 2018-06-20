@@ -151,7 +151,7 @@ When you log in to {{site.data.keyword.Bluemix_notm}}, authenticating with IBMid
 There might be a problem with the IBMid authentication service.
 {: tsCauses}
 
-Contact the [Help Desk ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}.
+Check if you can login to the [IBM homepage ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/us-en/){: new_window}. If you can, then it is an application problem and you can try again later. If you can't login to that page, then contact the [Help Desk ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}.
 {: tsResolve}
 
 
