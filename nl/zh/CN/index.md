@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-25"
+lastupdated: "2018-05-31"
 
 ---
 
@@ -16,10 +16,10 @@ lastupdated: "2018-05-25"
 # 帐户类型
 {: #accounts}
 
-您有三种不同的 {{site.data.keyword.Bluemix}} 帐户类型可供选择：轻量、现买现付和预订。在 {{site.data.keyword.Bluemix_notm}} 中一开始可使用任一帐户类型 - 只需选择最适合您需求的帐户类型即可。
+您有三种不同的 {{site.data.keyword.Bluemix}} 帐户类型可供选择：轻量、现买现付和预订。在 {{site.data.keyword.Bluemix_notm}} 中一开始可使用任一帐户类型 - 选择最适合您需求的帐户类型即可。
 {:shortdesc}
 
-## 帐户比较
+## 对比帐户
 {: #compare}
 
 下表提供了轻量、现买现付和预订帐户的比较。有关每种帐户的更多详细信息，请参阅后面的各部分。
@@ -43,14 +43,14 @@ lastupdated: "2018-05-25"
 
 注册轻量帐户可在 {{site.data.keyword.Bluemix_notm}} 控制台中使用所选的显示有轻量标记 ![轻量标记](../icons/Lite.svg) 的免费轻量套餐来构建应用程序和探索服务。轻量帐户不会到期，也无需信用卡。
 
-您有权访问为您创建的名为 `Default` 的单个资源组。由 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 管理的所有服务实例都会自动添加到此资源组。可以随时更新此资源组的名称。有关详细步骤，请参阅[重命名资源组](/docs/account/resourcegroups.html#renaming-a-resource-group)。
+您有权访问为您创建的名为 `Default` 的单个资源组。由 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 管理的所有服务实例都会自动添加到此资源组。可以随时更新此资源组的名称。有关详细步骤，请参阅[重命名资源组](/docs/resources/resourcegroups.html#renaming-a-resource-group)。
 
-每个资源组都是免费的。在创建 IAM 管理的服务与 Cloud Foundry 应用程序之间的连接时，将创建别名（即服务实例），此别名会计入配额。请参阅[什么是别名？](/docs/cfapps/connecting_apps.html#what_is_alias)。
+每个资源组都是免费的。在创建 IAM 管理的服务与 Cloud Foundry 应用程序之间的连接时，将创建别名（即服务实例），此别名会计入配额。请参阅[什么是别名？](/docs/resources/connecting_apps.html#what_is_alias)。
 {: tip}
 
 ### 可用功能
 
-您可能想知道轻量帐户提供了哪些功能。请查看以下关键功能列表：
+请查看轻量帐户中提供的关键功能的以下列表：
 
    * 帐户是免费的 - 不需要信用卡。
    * 帐户永不过期。
@@ -63,8 +63,13 @@ lastupdated: "2018-05-25"
    * 超过 30 天没有开发活动，将删除轻量套餐的服务实例。这样，就不必在创建新实例之前管理删除不活动的实例。
 
 ### 升级帐户
+{: #upgrade-to-paygo}
 
-在准备好扩展时，请升级到现买现付帐户，并仅为超出免费限额的使用内容付费。升级后，您可以继续使用通过轻量帐户创建的任何实例。请转至控制台中的**管理** > **计费和使用情况** > **计费**，然后单击**添加信用卡**。
+在准备好扩展时，可以将轻量帐户升级到现买现付或预订帐户。 
+
+  * 要升级到现买现付帐户，请转至控制台中的**管理** > **计费和使用情况** > **计费**，然后单击**添加信用卡**。
+  * 要升级到预订帐户，请转至控制台中的**管理** > **计费和使用情况** > **计费**，然后单击**了解更多**。
+
 
 ## 现买现付帐户
 {: #paygo}
@@ -79,6 +84,7 @@ lastupdated: "2018-05-25"
 升级到现买现付帐户后，您将获得 200 美元的促销信用值，您无需执行任何操作就可开始使用。200 美元信用值有效期为 30 天，并会自动应用于您的发票。该信用值不能用于基础架构或第三方产品。
 
 ### 升级帐户
+{: #upgrade-to-subscription}
 
 您可以随时将现买现付帐户升级为预订帐户。有关更多详细信息，请联系 [{{site.data.keyword.Bluemix_notm}} 销售人员](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部链接图标](../icons/launch-glyph.svg)。
 
@@ -89,8 +95,6 @@ lastupdated: "2018-05-25"
 
 如果您将预订帐户与 SoftLayer 帐户相链接，那么从下个月的第一天开始，这两个帐户的合并费用将会列在 {{site.data.keyword.Bluemix_notm}} 发票上。
 {: tip}
-
-要注册预订帐户以及了解有关预订费率和折扣的更多信息，必须联系 [{{site.data.keyword.Bluemix_notm}} 销售人员](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部链接图标](../icons/launch-glyph.svg)
 
 ### {{site.data.keyword.Bluemix_dedicated_notm}} 帐户
 

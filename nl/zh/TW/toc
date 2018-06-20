@@ -18,8 +18,6 @@
     change-plan.md
     softlayerlink.md
     notifications.md
-    resourcegroups.md
-    instance_migration.md
 
     {: .topicgroup}
     管理組織及空間
@@ -38,5 +36,4 @@
     account_faq.md
     [IBM Cloud 存取的疑難排解](../troubleshoot/ts_accessing.html)
     [管理帳戶的疑難排解](../troubleshoot/ts_accounts.html)
-    [移轉服務實例的疑難排解](../troubleshoot/ts_migration.html)
     {: .navgroup-end}

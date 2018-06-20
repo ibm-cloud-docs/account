@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-25"
+lastupdated: "2018-05-31"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-05-25"
 # Tipi di account
 {: #accounts}
 
-Puoi scegliere tra tre tipi di account {{site.data.keyword.Bluemix}}: Lite, Pagamento a consumo e Sottoscrizione. Puoi utilizzare qualsiasi tipo di account per iniziare a utilizzare {{site.data.keyword.Bluemix_notm}} - scegli semplicemente quello più adatto alle tue esigenze.
+Puoi scegliere tra tre tipi di account {{site.data.keyword.Bluemix}}: Lite, Pagamento a consumo e Sottoscrizione. Puoi utilizzare qualsiasi tipo di account per iniziare a utilizzare {{site.data.keyword.Bluemix_notm}} - scegli quello più adatto alle tue esigenze.
 {:shortdesc}
 
 ## Confronto degli account
@@ -43,14 +43,14 @@ La seguente tabella fornisce un confronto degli account Lite, Pagamento a consum
 
 Registrati per un account Lite per iniziare a creare le tue applicazioni ed esplorare i servizi con esclusivi piani Lite gratuiti, che vengono visualizzati con una tag Lite ![Tag Lite](../icons/Lite.svg) nella console {{site.data.keyword.Bluemix_notm}}. Il tuo account Lite non scade e non è richiesta la tua carta di credito.
 
-Hai accesso a un singolo gruppo di risorse creato per te e denominato `Default`. Tutte le tue istanze dei servizi gestite da {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) vengono aggiunte automaticamente a questo gruppo di risorse. Puoi aggiornare il nome di questo gruppo di risorse in qualsiasi momento. Per la procedura dettagliata, vedi [Ridenominazione di un gruppo di risorse](/docs/account/resourcegroups.html#renaming-a-resource-group).
+Hai accesso a un singolo gruppo di risorse creato per te e denominato `Default`. Tutte le tue istanze dei servizi gestite da {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) vengono aggiunte automaticamente a questo gruppo di risorse. Puoi aggiornare il nome di questo gruppo di risorse in qualsiasi momento. Per la procedura dettagliata, vedi [Ridenominazione di un gruppo di risorse](/docs/resources/resourcegroups.html#renaming-a-resource-group).
 
-Ogni gruppo di risorse è gratuito. Quando crei una connessione tra un servizio gestito da IAM e un'applicazione Cloud Foundry, crei un alias, che è un'istanza del servizio, che viene conteggiato nella tua quota. Vedi [Cos'è un alias?](/docs/cfapps/connecting_apps.html#what_is_alias).
+Ogni gruppo di risorse è gratuito. Quando crei una connessione tra un servizio gestito da IAM e un'applicazione Cloud Foundry, crei un alias, che è un'istanza del servizio, che viene conteggiato nella tua quota. Vedi [Cos'è un alias?](/docs/resources/connecting_apps.html#what_is_alias).
 {: tip}
 
 ### Disponibilità
 
-Potresti chiederti cosa offra un account Lite. Controlla il seguente elenco di funzioni principali:
+Controlla il seguente elenco di funzioni chiave disponibili in un account Lite:
 
    * L'account è gratuito - non è richiesta una carta di credito.
    * L'account non scade mai.
@@ -63,8 +63,13 @@ Potresti chiederti cosa offra un account Lite. Controlla il seguente elenco di f
    * Dopo 30 giorni senza attività di sviluppo, le tue istanze del servizio con i piani Lite vengono eliminate. In questo modo, non devi gestire l'eliminazione di istanze inattive prima di crearne di nuove.
 
 ### Aggiornamento del tuo account
+{: #upgrade-to-paygo}
 
-Quando sei pronto a passare alla fase successiva, esegui l'aggiornamento a un account Pagamento a consumo e paga solo per ciò che usi oltre le franchigie. Dopo aver eseguito l'upgrade, puoi continuare a utilizzare tutte le istanze che hai creato con il tuo account Lite. Nella console, vai a **Gestisci** > **Fatturazione e utilizzo** > **Fatturazione** e fai clic su **Aggiungi carta di credito**.
+Quando sei pronto a crescere, puoi eseguire l'upgrade del tuo account Lite a un account Pagamento a consumo o Sottoscrizione. 
+
+  * Per eseguire l'aggiornamento a un account Pagamento a consumo, nella console vai a **Gestisci** > **Fatturazione e utilizzo** > **Fatturazione** e fai clic su **Aggiungi carta di credito**.
+  * Per eseguire l'upgrade a un account Sottoscrizione, vai a **Gestisci** > **Fatturazione e utilizzo** > **Fatturazione** nella console e fai clic su **Ulteriori informazioni**.
+
 
 ## Account Pagamento a consumo
 {: #paygo}
@@ -79,6 +84,7 @@ Puoi eseguire l'aggiornamento a un account Pagamento a consumo dalla console {{s
 Dopo aver eseguito l'aggiornamento a un account Pagamento a consumo ottieni un credito promozionale di $200 e non dovrai eseguire alcuna operazione per iniziare a utilizzarlo. Il tuo credito di $200 è valido per 30 giorni e viene applicato automaticamente alla tua fattura. Il credito non può essere utilizzato con le offerte dell'infrastruttura o di terze parti.
 
 ### Aggiornamento del tuo account
+{: #upgrade-to-subscription}
 
 Puoi aggiornare il tuo account Pagamento a consumo a un account Sottoscrizione in qualsiasi momento. Per ulteriori dettagli, contatta il settore [Vendite di {{site.data.keyword.Bluemix_notm}} ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icona link esterno](../icons/launch-glyph.svg).
 
@@ -89,8 +95,6 @@ utilizzo che ecceda l'importo di spesa minimo.
 
 Se colleghi il tuo account Sottoscrizione a un account SoftLayer, a partire dal primo giorno del mese successivo, gli addebiti combinati vengono inclusi nella tua fattura {{site.data.keyword.Bluemix_notm}}.
 {: tip}
-
-Per registrare un account Sottoscrizione e per ulteriori informazioni sulle tariffe di sottoscrizione e sugli sconti, devi contattare il settore [Vendite di {{site.data.keyword.Bluemix_notm}} ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icona link esterno](../icons/launch-glyph.svg)
 
 ### Account {{site.data.keyword.Bluemix_dedicated_notm}}
 

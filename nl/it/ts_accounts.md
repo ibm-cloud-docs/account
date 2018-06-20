@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2017-11-07"
+lastupdated: "2017-11-09"
 
 ---
 
@@ -16,6 +16,7 @@ lastupdated: "2017-11-07"
 {:screen: .screen}
 {:tip: .tip}
 {:new_window: target="_blank"}
+
 
 # Risoluzione dei problemi relativi alla gestione degli account
 {: #managingaccounts}
@@ -47,10 +48,10 @@ Ciò è probabilmente dovuto al fatto che stai utilizzando un account Lite, che 
 Se hai un account Lite, puoi eseguire l'aggiornamento a un account fatturabile per accedere a ulteriori organizzazioni. Vai alla pagina **Gestisci > Fatturazione e utilizzo > Fatturazione** nella console e fai clic su **Aggiungi carta di credito**. Nella pagina **Fatturazione**, puoi anche controllare se hai un account Lite.
 {: tsResolve}
 
-## Impossibile creare la nuova istanza del piano Lite
+## Impossibile creare l'istanza del piano Lite
 {: #nosecondlite}
 
-Ricevi il seguente messaggio di errore quando provi a creare una nuova istanza del piano Lite:
+Quando provi a creare un'istanza del piano Lite ricevi il seguente messaggio di errore:
 {: tsSymptoms}
 
 `Unable to provision new Lite instance`
@@ -99,8 +100,7 @@ Per riattivare il tuo account, contatta il [Supporto {{site.data.keyword.Bluemix
 ## Impossibile aggiungere utenti a un'organizzazione
 {: #ts_adduser}
 
-Puoi invitare più di un utente a lavorare nella stessa organizzazione. Puoi invitare utenti nella tua organizzazione solo
-se sei il proprietario dell'account o se sei allo stesso tempo un gestore e un membro dell'organizzazione.
+Puoi invitare più di un utente a lavorare nella stessa organizzazione. Puoi invitare utenti nella tua organizzazione solo se sei il proprietario dell'account o se sei un gestore dell'organizzazione.
 
 Non riesci a visualizzare il link **Invita un nuovo utente** nella sezione **Gestisci organizzazioni**.
 {: tsSymptoms}
@@ -109,39 +109,17 @@ Solo i seguenti utenti {{site.data.keyword.Bluemix_notm}}
 possono invitare gli utenti in un'organizzazione:
 {: tsCauses}
   * Il proprietario dell'account dell'organizzazione
-  * I gestori dell'organizzazione che sono anche membri, e non collaboratori,
-dell'organizzazione
+  * I gestori dell'organizzazione
 
-In {{site.data.keyword.Bluemix_notm}},
-puoi essere un membro o un collaboratore di un'organizzazione.
+**Nota:** tutti i gestori dell'organizzazione possono aggiungere, modificare e rimuovere gli utenti già presenti nell'organizzazione.
 
-<dl><dt>Collaboratore</dt>
-<dd>Sei un collaboratore di un'organizzazione se disponi già di un account {{site.data.keyword.Bluemix_notm}} e qualcun altro ti invita nell'organizzazione.</dd>
-<dt>Membro</dt>
-<dd>Sei membro di un'organizzazione se non disponi di un account {{site.data.keyword.Bluemix_notm}}, ma poi qualcuno ti invita nell'organizzazione e ti registri a {{site.data.keyword.Bluemix_notm}} tramite l'invito.</dd>
-</dl>
-
-Non puoi invitare utenti nella tua organizzazione se sei un collaboratore, anche se ti è stato assegnato il ruolo di gestore organizzazione.
-
-**Nota:** tutti i gestori organizzazione, compresi quelli che sono collaboratori di un'organizzazione, possono aggiungere, modificare e rimuovere gli utenti già presenti nell'organizzazione.
-
-Se non riesci a inviare utenti nella tua organizzazione e per farlo hai bisogno di un ruolo differente, contatta il gestore della tua organizzazione per modificare il tuo ruolo. Per identificare il gestore della tua organizzazione, completa
+Se non puoi invitare utenti nella tua organizzazione, contatta il gestore della tua organizzazione. Per identificare il gestore della tua organizzazione, completa
 la seguente procedura:
 {: tsResolve}
 
   1. Dalla barra dei menu della console, fai clic su **Gestisci > Account > Organizzazioni**.
   2. Vai alla tua organizzazione e visualizza le informazioni del gestore organizzazione
 sulla scheda **UTENTI**.  
-
-Se non puoi invitare utenti perché sei un collaboratore e non un membro, devi eliminare il tuo account {{site.data.keyword.Bluemix_notm}} precedente ed essere inviato a entrare a far parte dell'account come membro dell'organizzazione. Per eliminare il tuo account precedente ed entrare a far parte dell'account come membro,
-completa la seguente procedura:
-
-  1. Contatta il [Supporto {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](http://ibm.biz/bluemixsupport){: new_window} per aprire un ticket di supporto e richiedere l'eliminazione del tuo account. Se hai dei dati associati al tuo
-account precedente che vuoi salvare e passare al nuovo account,
-includi queste informazioni nell'e-mail.
-  2. Una volta eliminato il tuo account, fa sì che un utente con il ruolo di gestore
-organizzazione ti inviti nell'organizzazione come gestore. Utilizza quindi l'invito per registrarti in
-{{site.data.keyword.Bluemix_notm}}.
 
 ## La registrazione batch degli utenti non è supportata
 {: #ts_batchregistration}
