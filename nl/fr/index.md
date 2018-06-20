@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-25"
+lastupdated: "2018-05-31"
 
 ---
 
@@ -16,10 +16,10 @@ lastupdated: "2018-05-25"
 # Types de compte
 {: #accounts}
 
-Vous avez le choix entre trois types de compte {{site.data.keyword.Bluemix}} : Lite, Paiement à la carte et Abonnement. Vous pouvez utiliser l'un de ces types de compte pour vous initier à {{site.data.keyword.Bluemix_notm}} - choisissez simplement le plus adapté à vos besoins.
+Vous avez le choix entre trois types de compte {{site.data.keyword.Bluemix}} : Lite, Paiement à la carte et Abonnement. Vous pouvez utiliser l'un de ces types de compte lorsque vous commencez à utiliser {{site.data.keyword.Bluemix_notm}}. Choisissez simplement le plus adapté à vos besoins.
 {:shortdesc}
 
-## Comparaison des types de compte
+## Comparaison des comptes
 {: #compare}
 
 Le tableau suivant compare les types de compte Lite, Paiement à la carte et Abonnement. Pour plus de détails sur chaque compte, voir les sections qui suivent.
@@ -27,7 +27,7 @@ Le tableau suivant compare les types de compte Lite, Paiement à la carte et Abo
 |  | Lite  | Paiement à la carte | Abonnement |
 |--------------------|--------------------|--------------------|--------------------|
 | **Accès à la mémoire Cloud Foundry gratuite** | 256 Mo | 512 Mo | 512 Mo |
-| **Accès aux [plans de service Lite ![External link icon](../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/?search=label:lite){: new_window}** | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |
+| **Accès aux [plans de service Lite ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://console.bluemix.net/catalog/?search=label:lite){: new_window}** | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |
 | **Accès à tous les plans gratuits** |  | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |
 | **Accès à l'intégralité du catalogue {{site.data.keyword.Bluemix_notm}}** |  | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |
 | **Accès à plusieurs régions Cloud Foundry** |  | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |
@@ -43,14 +43,14 @@ Le tableau suivant compare les types de compte Lite, Paiement à la carte et Abo
 
 Inscrivez-vous pour un compte Lite gratuit afin de construire des applications et d'explorer des services associés à des plans Lite gratuits signalés par l'indicateur Lite ![Balise Lite](../icons/Lite.svg) dans la console {{site.data.keyword.Bluemix_notm}}. Votre compte Lite n'expire pas et votre carte de crédit n'est pas nécessaire.
 
-Vous avez accès à un seul groupe de ressources, créé pour vous et nommé `Default`. Toutes vos instances de service gérées par {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) sont automatiquement ajoutées à ce groupe de ressources. Vous pouvez mettre à jour ce groupe de ressources à tout moment. Pour la procédure détaillée, voir [Changement de nom d'un groupe de ressources](/docs/account/resourcegroups.html#renaming-a-resource-group).
+Vous avez accès à un seul groupe de ressources, créé pour vous et nommé `Default`. Toutes vos instances de service gérées par {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) sont automatiquement ajoutées à ce groupe de ressources. Vous pouvez mettre à jour ce groupe de ressources à tout moment. Pour la procédure détaillée, voir [Changement de nom d'un groupe de ressources](/docs/resources/resourcegroups.html#renaming-a-resource-group).
 
-Chaque groupe de ressources est gratuit. Lorsque vous créez une connexion entre un service géré par IAM et une application Cloud Foundry, vous créez un alias, qui est une instance de service comptabilisée dans votre quota. Voir [Qu'est-ce qu'un alias ?](/docs/cfapps/connecting_apps.html#what_is_alias).
+Chaque groupe de ressources est gratuit. Lorsque vous créez une connexion entre un service géré par IAM et une application Cloud Foundry, vous créez un alias, qui est une instance de service comptabilisée dans votre quota. Voir [Qu'est-ce qu'un alias ?](/docs/resources/connecting_apps.html#what_is_alias).
 {: tip}
 
 ### Quelles sont les disponibilités ?
 
-Vous vous demandez sûrement ce que comporte l'offre de compte Lite. La liste suivante en répertorie les principales fonctions :
+La liste suivante répertorie les principales fonctions disponibles dans un compte Lite :
 
    * Le compte est gratuit - Pas besoin de carte de crédit.
    * Le compte n'expire jamais.
@@ -63,8 +63,13 @@ Vous vous demandez sûrement ce que comporte l'offre de compte Lite. La liste su
    * Après 30 jours sans activité de développement, vos instances de service non associées à des plans Lite sont supprimées. Ainsi, vous n'avez pas à gérer la suppression des instances inactives avant d'en créer de nouvelles.
 
 ### Mise à niveau de votre compte
+{: #upgrade-to-paygo}
 
-Lorsque vous êtes prêt à aller plus loin, effectuez une mise à niveau vers un compte Paiement à la carte et ne payez que ce que vous utilisez au-delà des franchises. Après la mise à niveau, vous pouvez continuer à utiliser les instances que vous avez créées avec votre compte Lite. Dans la console, accédez à **Gérer** > **Facturation et utilisation** > **Facturation** et cliquez sur **Ajouter une carte de crédit**.
+Lorsque vous êtes prêt à aller plus loin, vous pouvez effectuer une mise à niveau de votre compte vers un compte Paiement à la carte ou un compte Abonnement. 
+
+  * Pour effectuer une mise à niveau vers un compte Paiement à la carte, accédez à **Gérer** > **Facturation et utilisation** > **Facturation** dans la console puis cliquez sur **Ajouter une carte de crédit**.
+  * Pour effectuer une mise à niveau vers un compte Abonnement, accédez à **Gérer** > **Facturation et utilisation** > **Facturation** dans la console puis cliquez sur **En savoir plus**.
+
 
 ## Compte Paiement à la carte
 {: #paygo}
@@ -79,8 +84,9 @@ Vous pouvez effectuer une mise à niveau vers un compte Paiement à la carte dep
 Vous bénéficiez d'un crédit promotionnel de $ 200 après la mise à niveau vers un compte Paiement à la carte et aucune intervention n'est requise pour pouvoir l'utiliser. Votre crédit de $ 200 est valide pendant 30 jours et automatiquement pris en compte dans votre facture. Ce crédit ne peut pas être utilisé sur des offres d'infrastructure ou de tiers.
 
 ### Mise à niveau de votre compte
+{: #upgrade-to-subscription}
 
-Vous pouvez mettre à niveau votre compte Paiement à la carte vers un compte Abonnement à tout moment. Contactez le [Service commercial {{site.data.keyword.Bluemix_notm}} ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg) pour plus de détails.
+Vous pouvez mettre à niveau votre compte Paiement à la carte vers un compte Abonnement à tout moment. Contactez le [Service commercial {{site.data.keyword.Bluemix_notm}} ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg) pour plus de détails.
 
 ## Compte d'abonnement
 
@@ -88,8 +94,6 @@ Avec un compte d'abonnement, vous pouvez créer plusieurs groupes de ressources 
 
 Si vous liez votre compte Abonnement à un compte SoftLayer, à compter du premier jour du mois suivant, les deux redevances seront regroupées sur votre facture {{site.data.keyword.Bluemix_notm}}.
 {: tip}
-
-Pour souscrire à un compte Abonnement et obtenir plus d'informations sur les tarifs et les remises associés à ces comptes, vous devez contacter le [service commercial {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg).
 
 ### Compte {{site.data.keyword.Bluemix_dedicated_notm}}
 
@@ -103,10 +107,10 @@ publics
    * Le support {{site.data.keyword.Bluemix_notm}} standard
 
 Vous pouvez aussi
-commander des éléments facultatifs tels que SoftLayer DirectLink ou des options de support premium. Contactez le [service commercial {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External  link icon](../icons/launch-glyph.svg) pour plus d'informations.
+commander des éléments facultatifs tels que SoftLayer DirectLink ou des options de support premium. Contactez le [service commercial {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg) pour plus d'informations.
 
 Le prix que vous payez chaque mois au cours de cet engagement dépend des services dédiés que vous choisissez et inclut un compte d'abonnement qui vous permet d'accéder à tous les services publics. Le prix de l'utilisation des services dans l'environnement {{site.data.keyword.Bluemix_notm}} public est calculé selon votre contrat de compte d'abonnement. Vous recevez une facture pour tous les services que vous utilisez au-delà de la franchise
-définie dans le contrat d'abonnement. Contactez votre représentant de compte IBM ou le [service commercial {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg) pour mettre en oeuvre votre contrat.
+définie dans le contrat d'abonnement. Contactez votre représentant de compte IBM ou le [service commercial {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg) pour mettre en oeuvre votre contrat.
 
 ### Compte {{site.data.keyword.Bluemix_local_notm}}
 
@@ -120,5 +124,5 @@ les services {{site.data.keyword.Bluemix_notm}} publics
    * Le support {{site.data.keyword.Bluemix_notm}} standard
 
 Le prix que vous payez chaque mois au cours de cet engagement dépend des services locaux que vous choisissez et inclut un compte d'abonnement qui vous permet d'accéder à tous les services publics. Le prix de l'utilisation des services dans l'environnement {{site.data.keyword.Bluemix_notm}} public est calculé selon votre contrat de compte d'abonnement. Vous recevez une facture pour tous les services que vous utilisez au-delà de la franchise
-définie dans le contrat d'abonnement. Contactez votre représentant de compte IBM ou le [service commercial {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg) pour mettre en oeuvre votre contrat.
+définie dans le contrat d'abonnement. Contactez votre représentant de compte IBM ou le [service commercial {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg) pour mettre en oeuvre votre contrat.
 
