@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="829px" height="547px" viewBox="0 0 829 547" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>3-user_groups</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,0 L800,0 L800,523 L0,523 L0,0 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="800" height="523" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="3-user_groups" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="-user_groups" transform="translate(15.000000, 12.000000)">
+            <use id="dotted-box" stroke="#DFE3E6" mask="url(#mask-2)" stroke-width="6" stroke-dasharray="10" xlink:href="#path-1"></use>
+            <text id="Single-Organization" font-family="IBMPlexSans, IBM Plex Sans" font-size="24" font-weight="normal" fill="#5A6872">
+                <tspan x="35" y="53">Single Organization</tspan>
+            </text>
+            <g id="project-a" transform="translate(35.000000, 78.000000)">
+                <rect id="Rectangle-2-Copy-2" stroke="#8C9BA5" stroke-width="2" x="1" y="1" width="351" height="415"></rect>
+                <g id="middle-content" transform="translate(53.000000, 26.000000)">
+                    <text id="Project-X" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="20" font-weight="bold" fill="#5A6872">
+                        <tspan x="0" y="21"> Project X</tspan>
+                    </text>
+                    <text id="Prod_AppX_V1" font-family="IBMPlexSans, IBM Plex Sans" font-size="20" font-weight="normal" fill="#5A6872">
+                        <tspan x="100" y="94">Prod_AppX_V1</tspan>
+                    </text>
+                    <text id="Stage_AppX_V1" font-family="IBMPlexSans, IBM Plex Sans" font-size="20" font-weight="normal" fill="#5A6872">
+                        <tspan x="100" y="174">Stage_AppX_V1</tspan>
+                    </text>
+                    <text id="Test_AppX_V1" font-family="IBMPlexSans, IBM Plex Sans" font-size="20" font-weight="normal" fill="#5A6872">
+                        <tspan x="100" y="254">Test_AppX_V1</tspan>
+                    </text>
+                    <text id="Dev_AppX_V1" font-family="IBMPlexSans, IBM Plex Sans" font-size="20" font-weight="normal" fill="#5A6872">
+                        <tspan x="100" y="334">Dev_AppX_V1</tspan>
+                    </text>
+                    <g id="Hexy" transform="translate(0.000000, 46.000000)">
+                        <polygon id="polygon13" fill="#79C6FF" fill-rule="nonzero" points="37 0 0 20 0 60 37 80 74 60 74 20"></polygon>
+                        <polygon id="polygon15" fill="#56A8FD" fill-rule="nonzero" points="37 80 0 100 0 140 37 160 74 140 74 100"></polygon>
+                        <polygon id="polygon17" fill="#5294E9" fill-rule="nonzero" points="37 160 0 180 0 220 37 240 74 220 74 180"></polygon>
+                        <polygon id="polygon19" fill="#3A6EB4" fill-rule="nonzero" points="37 240 0 260 0 300 37 320 74 300 74 260"></polygon>
+                        <path d="M37.5,45.5 L37.5,274.5" id="Line-Copy-2" stroke="#0F212E" stroke-width="3" stroke-linecap="square"></path>
+                        <circle id="Oval-Copy-2" stroke="#0F212E" stroke-width="3" fill="#FFFFFF" cx="37.5" cy="40.5" r="6.5"></circle>
+                        <circle id="Oval-Copy-2" stroke="#0F212E" stroke-width="3" fill="#FFFFFF" cx="37.5" cy="120.5" r="6.5"></circle>
+                        <circle id="Oval-Copy-2" stroke="#0F212E" stroke-width="3" fill="#FFFFFF" cx="37.5" cy="200.5" r="6.5"></circle>
+                        <circle id="Oval-Copy-3" stroke="#0F212E" stroke-width="3" fill="#FFFFFF" cx="37.5" cy="280.5" r="6.5"></circle>
+                    </g>
+                </g>
+            </g>
+            <g id="project-b" transform="translate(412.000000, 78.000000)">
+                <rect id="Rectangle-2-Copy-2" stroke="#8C9BA5" stroke-width="2" x="1" y="1" width="351" height="415"></rect>
+                <g id="middle-content" transform="translate(53.000000, 26.000000)">
+                    <text id="Project-Y" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="20" font-weight="bold" fill="#5A6872">
+                        <tspan x="0" y="21">Project Y</tspan>
+                    </text>
+                    <text id="Prod_AppY_V1" font-family="IBMPlexSans, IBM Plex Sans" font-size="20" font-weight="normal" fill="#5A6872">
+                        <tspan x="100" y="94">Prod_AppY_V1</tspan>
+                    </text>
+                    <text id="Stage_AppY_V1" font-family="IBMPlexSans, IBM Plex Sans" font-size="20" font-weight="normal" fill="#5A6872">
+                        <tspan x="100" y="174">Stage_AppY_V1</tspan>
+                    </text>
+                    <text id="Test_AppY_V1" font-family="IBMPlexSans, IBM Plex Sans" font-size="20" font-weight="normal" fill="#5A6872">
+                        <tspan x="100" y="254">Test_AppY_V1</tspan>
+                    </text>
+                    <text id="Dev_AppY_V1" font-family="IBMPlexSans, IBM Plex Sans" font-size="20" font-weight="normal" fill="#5A6872">
+                        <tspan x="100" y="334">Dev_AppY_V1</tspan>
+                    </text>
+                    <g id="Hexy" transform="translate(0.000000, 46.000000)">
+                        <polygon id="polygon13" fill="#DFE3E6" fill-rule="nonzero" points="37 0 0 20 0 60 37 80 74 60 74 20"></polygon>
+                        <polygon id="polygon15" fill="#8C9BA6" fill-rule="nonzero" points="37 80 0 100 0 140 37 160 74 140 74 100"></polygon>
+                        <polygon id="polygon17" fill="#5A6873" fill-rule="nonzero" points="37 160 0 180 0 220 37 240 74 220 74 180"></polygon>
+                        <polygon id="polygon19" fill="#2C3F4A" fill-rule="nonzero" points="37 240 0 260 0 300 37 320 74 300 74 260"></polygon>
+                        <path d="M37.5,45.5 L37.5,274.5" id="Line-Copy-2" stroke="#0F212E" stroke-width="3" stroke-linecap="square"></path>
+                        <circle id="Oval-Copy-2" stroke="#0F212E" stroke-width="3" fill="#FFFFFF" cx="37.5" cy="40.5" r="6.5"></circle>
+                        <circle id="Oval-Copy-2" stroke="#0F212E" stroke-width="3" fill="#FFFFFF" cx="37.5" cy="120.5" r="6.5"></circle>
+                        <circle id="Oval-Copy-2" stroke="#0F212E" stroke-width="3" fill="#FFFFFF" cx="37.5" cy="200.5" r="6.5"></circle>
+                        <circle id="Oval-Copy-3" stroke="#0F212E" stroke-width="3" fill="#FFFFFF" cx="37.5" cy="280.5" r="6.5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
