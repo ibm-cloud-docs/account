@@ -34,6 +34,6 @@ Gestión de la cuenta
 
     {: .navgroup id="help"}
     account_faq.md
-    [Resolución de problemas para acceder a IBM Cloud](../troubleshoot/ts_accessing.html)
-    [Resolución de problemas para gestionar cuentas](../troubleshoot/ts_accounts.html)
+    ts_accessing.md
+    ts_accounts.md
     {: .navgroup-end}

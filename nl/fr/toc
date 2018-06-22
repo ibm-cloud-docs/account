@@ -34,6 +34,6 @@ Gestion de votre compte
 
     {: .navgroup id="help"}
     account_faq.md
-    [Traitement des incidents liés à l'accès à IBM Cloud](../troubleshoot/ts_accessing.html)
-    [Traitement des incidents liés à la gestion des comptes](../troubleshoot/ts_accounts.html)
+    ts_accessing.md
+    ts_accounts.md
     {: .navgroup-end}

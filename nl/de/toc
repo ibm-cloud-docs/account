@@ -34,6 +34,6 @@ Eigenes Konto verwalten
 
     {: .navgroup id="help"}
     account_faq.md
-    [Fehlerbehebung für den Zugriff auf IBM Cloud](../troubleshoot/ts_accessing.html)
-    [Fehlerbehebung für die Verwaltung von Konten](../troubleshoot/ts_accounts.html)
+    ts_accessing.md
+    ts_accounts.md
     {: .navgroup-end}
