@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-11-29"
+lastupdated: "2018-06-20"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2017-11-29"
 # アカウント・タイプ
 {: #accounts}
 
-{{site.data.keyword.Bluemix}} での構築は無料で開始できます。 規模を拡大する段階になったら、アップグレードし、無料枠を超える使用分のみを支払います。 ライト・アカウント、従量課金 (PAYG) アカウント、サブスクリプション・アカウント、およびプロモーション・アカウントという 4 つのアカウント・タイプから選択できます。 どのアカウント・タイプを使用しても {{site.data.keyword.Bluemix_notm}} での作業を開始できます。ニーズに最も合致するものを選択してください。 
+{{site.data.keyword.Bluemix}} での構築は無料で開始できます。 規模を拡大する段階になったら、アップグレードし、無料枠を超える使用分のみを支払います。 {{site.data.keyword.Bluemix}} には、ライト・アカウント、従量課金 (PAYG) アカウント、サブスクリプション・アカウント、およびプロモーション・アカウントという 4 つのアカウント・タイプがあり、これらから選択できます。どのアカウント・タイプを使用しても {{site.data.keyword.Bluemix_notm}} での作業を開始できます。ニーズに最も合致するものを選択してください。 
 {:shortdesc}
 
 ## アカウントの比較
@@ -86,9 +86,9 @@ lastupdated: "2017-11-29"
 
 多くの国および地域では、{{site.data.keyword.Bluemix_notm}} コンソールから従量課金 (PAYG) アカウントに申し込むことができます。 請求情報およびクレジット・カード情報を入力した後、契約条件を受け入れてアカウント要求を送信します。 その後、クレジット・カードが検証されます。 また、アカウント情報の確認の E メールが送信されます。 確認 E メールを受信してから数分たつと、コンソールに戻ってアプリケーションの作成を継続することができます。
 
-お客様の国または地域でオンライン要求を処理できない場合は、[{{site.data.keyword.Bluemix_notm}} サポート ![外部リンク・アイコン](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}のページにリストされているリンクを使用して、{{site.data.keyword.Bluemix_notm}} 営業担当にお問い合わせください。
+お客様の国または地域でオンライン要求を処理できない場合は、[{{site.data.keyword.Bluemix_notm}} サポート ![外部リンク・アイコン](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} のページにリストされているリンクを使用して、{{site.data.keyword.Bluemix_notm}} 営業担当にお問い合わせください。
 
-いつでも、「従量課金 (PAYG)」アカウントを「サブスクリプション」アカウントに切り替えることができます。 [{{site.data.keyword.Bluemix_notm}} サポート![外部リンク・アイコン](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}ページにリストされているリンクを使用して、{{site.data.keyword.Bluemix_notm}} 営業担当にお問い合わせください。
+いつでも、「従量課金 (PAYG)」アカウントを「サブスクリプション」アカウントに切り替えることができます。 [{{site.data.keyword.Bluemix_notm}} サポート ![外部リンク・アイコン](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} ページにリストされているリンクを使用して、{{site.data.keyword.Bluemix_notm}} 営業担当にお問い合わせください。
 
 ### 「サブスクリプション」アカウント
 
@@ -105,12 +105,12 @@ lastupdated: "2017-11-29"
    * ご使用のインフラストラクチャーへの VPN 接続
    * {{site.data.keyword.BluSoftLayer_notm}} データ・センター内の完全に冗長な環境
    * サポートされているすべてのランタイム (IBM Java Liberty、Node.js、および標準装備であるオープン・ソースの各ランタイム)
-   * 選択したすべての専用サービスとすべての Public {{site.data.keyword.Bluemix_notm}} サービス
+   * 選択したすべての専用サービスおよびすべてのパブリック {{site.data.keyword.Bluemix_notm}} サービス
    * 標準 {{site.data.keyword.Bluemix_notm}} サポート
 
 SoftLayer DirectLink やプレミアム・サポートのオプションなど、オプション項目をオーダーすることもできます。 詳しくは、[{{site.data.keyword.Bluemix_notm}} 営業担当![外部リンク・アイコン](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}にお問い合わせください。
 
-その期間中の月々の支払額は、希望する専用サービスと、すべてのパブリック・サービスへのアクセス権限を付与するサブスクリプション・アカウントに基づきます。 {{site.data.keyword.Bluemix_notm}} Public のサービスの使用料は、サブスクリプション・アカウントの契約に基づいて計算されます。 サブスクリプション契約の対象ではないサービスを使用した場合には、請求書が送付されます。 契約を開始する場合は、IBM 指定アカウント担当者または [{{site.data.keyword.Bluemix_notm}} 営業担当![外部リンク・アイコン](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}に連絡してください。
+その期間中の月々の支払額は、希望する専用サービスと、すべてのパブリック・サービスへのアクセス権限を付与するサブスクリプション・アカウントに基づきます。{{site.data.keyword.Bluemix_notm}} Public のサービスの使用料は、サブスクリプション・アカウントの契約に基づいて計算されます。 サブスクリプション契約の対象ではないサービスを使用した場合には、請求書が送付されます。 契約を開始する場合は、IBM 指定アカウント担当者または [{{site.data.keyword.Bluemix_notm}} 営業担当![外部リンク・アイコン](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}に連絡してください。
 
 ### {{site.data.keyword.Bluemix_local_notm}} アカウント
 
@@ -121,12 +121,12 @@ SoftLayer DirectLink やプレミアム・サポートのオプションなど�
    * 選択したすべてのローカル・サービスおよびすべての Public {{site.data.keyword.Bluemix_notm}} サービスへのアクセス
    * 標準 {{site.data.keyword.Bluemix_notm}} サポート
 
-その期間中の月々の支払額は、希望するローカル・サービスと、すべてのパブリック・サービスへのアクセス権限を付与するサブスクリプション・アカウントに基づきます。 {{site.data.keyword.Bluemix_notm}} Public のサービスの使用料は、サブスクリプション・アカウントの契約に基づいて計算されます。 サブスクリプション契約の対象ではないサービスを使用した場合には、請求書が送付されます。 契約を開始する場合は、IBM 指定アカウント担当者または [{{site.data.keyword.Bluemix_notm}} 営業担当![外部リンク・アイコン](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}に連絡してください。
+その期間中の月々の支払額は、希望するローカル・サービスと、すべてのパブリック・サービスへのアクセス権限を付与するサブスクリプション・アカウントに基づきます。{{site.data.keyword.Bluemix_notm}} Public のサービスの使用料は、サブスクリプション・アカウントの契約に基づいて計算されます。 サブスクリプション契約の対象ではないサービスを使用した場合には、請求書が送付されます。 契約を開始する場合は、IBM 指定アカウント担当者または [{{site.data.keyword.Bluemix_notm}} 営業担当![外部リンク・アイコン](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}に連絡してください。
 
 ## プロモーション・アカウント
 {: #promo}
 
-特別なプロモーションの一部として時々提供されるプロモーション・アカウントは、{{site.data.keyword.Bluemix_notm}} カタログのほとんどにアクセスできる、期限を設けた無料のトライアル・アカウントです。 このアカウント・タイプは、プロモーション・コードの使用を通じてのみ使用可能です。 このアカウントの有効期間は、プロモーションによって異なります。 
+特別なプロモーションの一部として時々提供されるプロモーション・アカウントは、{{site.data.keyword.Bluemix_notm}} カタログのほとんどにアクセスできる、期限を設けた無料のトライアル・アカウントです。 このアカウント・タイプは、プロモーション・コードの使用を通じてのみ使用可能です。このアカウントの有効期間は、プロモーションによって異なります。 
    
 プロモーション・アカウントでは、ユーザーのために作成され、`Default` と命名された単一リソース・グループにアクセスできます。 IAM によって管理されるすべてのサービス・インスタンスがこのリソース・グループに自動的に追加されます。 いつでもこのリソース・グループの名前を更新できます。 詳しい手順については、[リソース・グループの名前変更](/docs/admin/resource-groups.html#renaming-a-resource-group)を参照してください。 
 

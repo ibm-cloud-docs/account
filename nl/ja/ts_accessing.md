@@ -151,7 +151,7 @@ IBM ID を使用してログインすると、ログインに成功したとい�
 IBM ID 認証サービスに問題がある可能性があります。
 {: tsCauses}
 
-[IBM IBMid ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://status.ibm.com/wind){: new_window} で、サービスの状況を確認し、再試行してください。
+[IBM ホーム・ページ ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/us-en/){: new_window} にログインできるかどうか確認してください。ログインできる場合、これはアプリケーション問題であり、後で再試行できます。ログインできない場合、[ヘルプ・デスク ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window} にお問い合わせください。
 {: tsResolve}
 
 
