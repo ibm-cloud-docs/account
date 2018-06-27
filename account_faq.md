@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-21"
+lastupdated: "2018-06-26"
 
 ---
 
@@ -107,7 +107,7 @@ If linking is not a viable option for you, contact your sales support for other 
 ## Are there incentives for linking my accounts now? 
 {: #al_incent}
 
-Yes!  If you link your accounts now, you can use a $200 credit to try PaaS services.
+If you link your accounts now, you can use a promotional credit to try platform services.
 
 ## What does adding {{site.data.keyword.Bluemix_notm}} platform services to my SoftLayer account mean? 
 {: #al_owaffslacct}
