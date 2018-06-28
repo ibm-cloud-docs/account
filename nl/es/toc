@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="account" audience="platform" href="/docs/account/adminpublic.html"}
+{: .toc subcollection="account" audience="platform" arm="3397214" href="/docs/account/adminpublic.html"}
 Gestión de la cuenta
 
     {: .navgroup id="learn"}
@@ -34,6 +34,6 @@ Gestión de la cuenta
 
     {: .navgroup id="help"}
     account_faq.md
-    ts_accessing.md
-    ts_accounts.md
+    [Resolución de problemas para acceder a IBM Cloud](../troubleshoot/ts_accessing.html)
+    [Resolución de problemas para gestionar cuentas](../troubleshoot/ts_accounts.html)
     {: .navgroup-end}

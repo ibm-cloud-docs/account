@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-11-29"
+lastupdated: "2018-06-20"
 
 ---
 
@@ -16,13 +16,13 @@ lastupdated: "2017-11-29"
 # Tipos de cuentas
 {: #accounts}
 
-Puede empezar a crear en {{site.data.keyword.Bluemix}} gratis. Cuando esté preparado para crecer, actualice y pague solo por uso más allá de las concesiones gratuitas. Tenemos cuatro tipos de cuenta diferentes de los que puede elegir: Lite, Pago según uso, Suscripción y Promocional. Puede utilizar cualquier tipo de cuenta para empezar en {{site.data.keyword.Bluemix_notm}}, elija aquel que se adapte mejor a sus necesidades. 
+Puede empezar a crear en {{site.data.keyword.Bluemix}} gratis. Cuando esté preparado para crecer, actualice y pague solo por uso más allá de las concesiones gratuitas. {{site.data.keyword.Bluemix}} tiene cuatro tipos de cuenta diferentes de los que puede elegir: Lite, Pago según uso, Suscripción y Promocional. Puede utilizar cualquier tipo de cuenta para empezar en {{site.data.keyword.Bluemix_notm}}, elija aquel que se adapte mejor a sus necesidades. 
 {:shortdesc}
 
 ## Comparación de cuentas
 {: #compare}
 
-La siguiente tabla proporciona una comparación de las cuentas Lite, Pago según uso y Suscripción. Para obtener más detalles acerca de cada cuenta, consulte las siguientes secciones.
+La siguiente tabla proporciona una comparación de las cuentas Lite, Pago según uso y Suscripción. Para obtener más información sobre cada cuenta, consulte las siguientes secciones.
 
 |  | Lite  | Pago según uso | Suscripción | 
 |--------------------|--------------------|--------------------|--------------------|
@@ -105,13 +105,13 @@ Con {{site.data.keyword.Bluemix_dedicated_notm}}, debe registrarse para un plazo
    * Conectividad VPN para volver a su infraestructura
    * Entorno completo y redundante en un centro de datos de {{site.data.keyword.BluSoftLayer_notm}}
    * Todos los tiempos de ejecución soportados (IBM Java Liberty, Node.js y ejecuciones de código abierto)
-   * Todos los servicios dedicados que ha seleccionado y todos los servicios públicos de {{site.data.keyword.Bluemix_notm}}
+   * Todos los servicios dedicados que seleccione y todos los servicios públicos de {{site.data.keyword.Bluemix_notm}}
    * Soporte de {{site.data.keyword.Bluemix_notm}} estándar
 
 También puede pedir elementos opcionales como
 SoftLayer DirectLink u opciones de soporte premium. Póngase en contacto con el [equipo de ventas de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} para obtener más información.
 
-Lo que deberá abonar cada mes durante dicho plazo dependerá de los servicios dedicados que desee, más una cuenta de suscripción que le ofrece acceso a todos los servicios públicos. Los cargos por uso de los servicios de {{site.data.keyword.Bluemix_notm}} público se calculan en función del acuerdo de la cuenta de suscripción. Recibirá una factura correspondiente a los servicios que utilice por encima del acuerdo de suscripción. Póngase en contacto con su representante de cuenta designado de IBM o póngase en contacto con el [equipo de ventas de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} para empezar a trabajar en su acuerdo.
+Durante dicho plazo, cada mes que pague dependerá de los servicios dedicados que desee, más una cuenta de Suscripción que le ofrece acceso a todos los servicios públicos. Los cargos por uso de los servicios de {{site.data.keyword.Bluemix_notm}} público se calculan en función del acuerdo de la cuenta de suscripción. Recibirá una factura correspondiente a los servicios que utilice por encima del acuerdo de suscripción. Póngase en contacto con su representante de cuenta designado de IBM o póngase en contacto con el [equipo de ventas de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} para empezar a trabajar en su acuerdo.
 
 ### Cuenta de {{site.data.keyword.Bluemix_local_notm}}
 
@@ -122,12 +122,12 @@ Con {{site.data.keyword.Bluemix_local_notm}}, debe registrarse para un plazo mí
    * Todos los servicios locales que ha seleccionado y acceso a todos los servicios públicos de {{site.data.keyword.Bluemix_notm}}
    * Soporte de {{site.data.keyword.Bluemix_notm}} estándar
 
-Lo que deberá abonar cada mes durante dicho plazo dependerá de los servicios locales que desee, más una cuenta de suscripción que le ofrece acceso a todos los servicios públicos. Los cargos por uso de los servicios de {{site.data.keyword.Bluemix_notm}} público se calculan en función del acuerdo de la cuenta de suscripción. Recibirá una factura correspondiente a los servicios que utilice por encima del acuerdo de suscripción. Póngase en contacto con su representante de cuenta designado de IBM o póngase en contacto con el [equipo de ventas de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} para empezar a trabajar en su acuerdo.
+Durante dicho plazo, cada mes que pague dependerá de los servicios locales que desee, más una cuenta de Suscripción que le ofrece acceso a todos los servicios públicos. Los cargos por uso de los servicios de {{site.data.keyword.Bluemix_notm}} público se calculan en función del acuerdo de la cuenta de suscripción. Recibirá una factura correspondiente a los servicios que utilice por encima del acuerdo de suscripción. Póngase en contacto con su representante de cuenta designado de IBM o póngase en contacto con el [equipo de ventas de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} para empezar a trabajar en su acuerdo.
 
 ## Cuenta Promocional
 {: #promo}
 
-Las cuentas de promoción, ocasionalmente ofrecidas como parte de promociones especiales, son pruebas de timeboxing gratuitas con acceso a la mayoría del catálogo de {{site.data.keyword.Bluemix_notm}}. Este tipo de cuenta está disponible únicamente a través del uso de un código promocional. El periodo de tiempo de validez para la cuenta varía por promoción. 
+Las cuentas de promoción, ocasionalmente ofrecidas como parte de promociones especiales, son pruebas de timeboxing gratuitas con acceso a la mayoría del catálogo de {{site.data.keyword.Bluemix_notm}}. Este tipo de cuenta está disponible únicamente utilizando un código promocional. El periodo de tiempo de validez para la cuenta varía por promoción. 
    
 Con una cuenta Promocional, tiene acceso a un único grupo de recursos creados para usted y llamados `Default`. Todas sus instancias de servicio gestionadas por IAM se añaden automáticamente a este grupo de recursos. Puede actualizar en nombre de este grupo de recursos en cualquier momento. Consulte [Cómo renombrar un grupo de recursos](/docs/admin/resource-groups.html#renaming-a-resource-group) para obtener los pasos detallados. 
 

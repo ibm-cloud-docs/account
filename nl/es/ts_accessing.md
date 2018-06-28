@@ -151,7 +151,7 @@ Cuando inicia una sesión en {{site.data.keyword.Bluemix_notm}}, la autenticaci�
 Es posible que haya un problema con el servicio de autenticación de IBMid.
 {: tsCauses}
 
-Compruebe el estado del servicio en [IBMid ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](https://status.ibm.com/wind){: new_window} y vuélvalo a intentar.
+Compruebe si puede iniciar sesión en la [página de inicio de IBM ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/us-en/){: new_window}. Si puede, entonces es un problema de aplicación y puede intentarlo más tarde. Si no puede iniciar sesión en esa página, póngase en contacto con el [centro de atención al cliente ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}.
 {: tsResolve}
 
 
