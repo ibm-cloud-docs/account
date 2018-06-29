@@ -150,7 +150,7 @@ lastupdated: "2018-05-02"
 IBM 标识认证服务可能发生问题。
 {: tsCauses}
 
-在 [IBM IBMid![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://status.ibm.com/wind){: new_window} 上检查该服务的状态，然后重试。
+检查是否可以登录到 [IBM 主页 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/us-en/){: new_window}。如果可以，说明这是应用程序问题，您可以稍后重试。如果不能登录到该页面，请联系[帮助台 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}。
 {: tsResolve}
 
 

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-11-29"
+lastupdated: "2018-06-20"
 
 ---
 
@@ -16,13 +16,13 @@ lastupdated: "2017-11-29"
 # 帐户类型
 {: #accounts}
 
-您可以在 {{site.data.keyword.Bluemix}} 上免费开始构建。在准备好扩展时，即可升级，并仅为超出免费限额的使用内容付费。我们有四种不同的帐户类型可供选择：Lite、现买现付、预订和促销。在 {{site.data.keyword.Bluemix_notm}} 中一开始可使用任一帐户类型 - 只需选择最适合您需求的帐户类型即可。
+您可以在 {{site.data.keyword.Bluemix}} 上免费开始构建。在准备好扩展时，即可升级，并仅为超出免费限额的使用内容付费。{{site.data.keyword.Bluemix}} 有四种不同的帐户类型可供选择：轻量、现买现付、预订和促销。在 {{site.data.keyword.Bluemix_notm}} 中一开始可使用任一帐户类型 - 只需选择最适合您需求的帐户类型即可。
 {:shortdesc}
 
 ## 帐户比较
 {: #compare}
 
-下表提供了轻量、现买现付和预订帐户的比较。有关每种帐户的更多详细信息，请参阅后面的各部分。
+下表提供了轻量、现买现付和预订帐户的比较。有关每种帐户的更多信息，请参阅后面的各部分。
 
 |  |轻量|现买现付|预订| 
 |--------------------|--------------------|--------------------|--------------------|
@@ -44,7 +44,7 @@ lastupdated: "2017-11-29"
 
 您有权访问为您创建的名为 `Default` 的单个资源组。由 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 管理的所有服务实例都会自动添加到此资源组。可以随时更新此资源组的名称。有关详细步骤，请参阅[重命名资源组](/docs/admin/resourcegroups.html#renaming-a-resource-group)。 
 
-每个资源组都是免费的。在创建 IAM 管理的服务与 Cloud Foundry 应用程序之间的连接时，将创建别名（即服务实例），此别名会计入配额。请参阅[什么是别名？](/docs/manageapps/connecting_apps.html#what_is_alias)。
+每个资源组都是免费的。在创建 IAM 管理的服务与 Cloud Foundry 应用程序之间的连接时，将创建别名（即服务实例），此别名会计入配额。请参阅[什么是别名？](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}
 
 ### 可用功能
@@ -130,7 +130,7 @@ lastupdated: "2017-11-29"
    
 使用促销帐户时，您有权访问为您创建的名为 `Default` 的单个资源组。IAM 管理的所有服务实例都会自动添加到此资源组。可以随时更新此资源组的名称。有关详细步骤，请参阅[重命名资源组](/docs/admin/resource-groups.html#renaming-a-resource-group)。 
 
-每个资源组都是免费的。在创建 IAM 管理的服务与 Cloud Foundry 应用程序之间的连接时，将创建别名（即服务实例），此别名会计入配额。请参阅[什么是别名？](/docs/manageapps/connecting_apps.html#what_is_alias)。
+每个资源组都是免费的。在创建 IAM 管理的服务与 Cloud Foundry 应用程序之间的连接时，将创建别名（即服务实例），此别名会计入配额。请参阅[什么是别名？](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}
 
 ### 促销帐户到期后会怎样？
