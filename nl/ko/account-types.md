@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-11-29"
+lastupdated: "2018-06-20"
 
 ---
 
@@ -16,25 +16,25 @@ lastupdated: "2017-11-29"
 # 계정 유형
 {: #accounts}
 
-{{site.data.keyword.Bluemix}}에서 무료로 빌드를 시작할 수 있습니다. 확장할 준비가 되면 업그레이드한 후에 무료 사용량을 초과하는 사용 내역에 대해서만 비용을 지불하십시오. 라이트, 종량과금제, 구독 및 프로모션 등 네 개의 서로 다른 계정 유형에서 선택할 수 있습니다. 임의의 계정 유형을 사용하여 {{site.data.keyword.Bluemix_notm}}에서 시작할 수 있습니다. 요구사항에 최적인 유형을 선택하기만 하면 됩니다. 
+{{site.data.keyword.Bluemix}}에서 무료로 빌드를 시작할 수 있습니다. 확장할 준비가 되면 업그레이드한 후에 무료 사용량을 초과하는 사용 내역에 대해서만 비용을 지불하십시오. {{site.data.keyword.Bluemix}}에는 선택할 수 있는 네 개의 서로 다른 계정 유형(라이트, 종량과금제, 구독 및 프로모션)이 있습니다. 어느 계정 유형을 사용해도 {{site.data.keyword.Bluemix_notm}}에서 시작할 수 있습니다. 필요에 따라 선택하기만 하면 됩니다. 
 {:shortdesc}
 
 ## 계정 비교
 {: #compare}
 
-다음 표에는 라이트, 종량과금제 및 구독 계정이 비교되어 있습니다. 각각의 계정에 대한 추가 세부사항은 후속 절을 참조하십시오.
+다음 표에는 라이트, 종량과금제 및 구독 계정이 비교되어 있습니다. 각각의 계정에 대한 자세한 정보는 후속 절을 참조하십시오.
 
-|  | 라이트  | 종량과금제 | 구독 | 
+|  |라이트  |종량과금제 |구독 | 
 |--------------------|--------------------|--------------------|--------------------|
-| **무료 Cloud Foundry 메모리에 액세스** | 256MB | 512MB | 512MB | 
-| **[라이트 서비스 플랜 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window}**에 액세스 | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |
-| **모든 무료 사용제에 액세스** |  | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |
-| **전체 카탈로그에 액세스** |  | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |
-| **시간 제한사항 없음** | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |
-| **보증된 제로 코스트** | ![기능 사용 가능](../icons/icon_enabled.svg) |  |  |
-| **협의된 가격 책정** |  |  | ![기능 사용 가능](../icons/icon_enabled.svg) | 
-| **POC 학습 또는 빌드에 최적임** | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |  | 
-| **프로덕션 유스 케이스에 최적임** |  | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) | 
+|**무료 Cloud Foundry 메모리에 액세스** |256MB |512MB |512MB | 
+|**[라이트 서비스 플랜 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window}**에 액세스 | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |
+|**모든 무료 사용제에 액세스** |  | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |
+|**전체 카탈로그에 액세스** |  | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |
+|**시간 제한사항 없음** | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |
+|**보증된 제로 코스트** | ![기능 사용 가능](../icons/icon_enabled.svg) |  |  |
+|**협의된 가격 책정** |  |  | ![기능 사용 가능](../icons/icon_enabled.svg) | 
+|**POC 학습 또는 빌드에 최적임** | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |  | 
+|**프로덕션 유스 케이스에 최적임** |  | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) | 
 {: caption="표 1. {{site.data.keyword.Bluemix_notm}} 계정의 비교" caption-side="top"}
 
 ## 라이트 계정
@@ -44,7 +44,7 @@ lastupdated: "2017-11-29"
 
 본인용으로 작성된 `Default`로 이름 지정된 단일 리소스 그룹에 대한 액세스를 보유합니다. {{site.data.keyword.Bluemix_notm}} Identity and Access Management(IAM)에서 관리하는 모든 서비스 인스턴스는 자동으로 이 리소스 그룹에 추가됩니다. 언제든지 이 리소스 그룹의 이름을 업데이트할 수 있습니다. 세부 단계는 [리소스 그룹 이름 바꾸기](/docs/admin/resourcegroups.html#renaming-a-resource-group)를 참조하십시오. 
 
-각각의 리소스 그룹은 무료입니다. Cloud Foundry 앱 및 IAM에서 관리하는 서비스 간에 연결을 작성할 때는 할당량으로 계수되는 별명(서비스 인스턴스임)을 작성하십시오. [별명의 개념](/docs/manageapps/connecting_apps.html#what_is_alias)을 참조하십시오.
+각각의 리소스 그룹은 무료입니다. Cloud Foundry 앱 및 IAM에서 관리되는 서비스 간의 연결을 작성할 때 할당량으로 계수되는 별명(서비스 인스턴스임)을 작성합니다. [별명의 개념](/docs/manageapps/connecting_apps.html#what_is_alias)을 참조하십시오.
 {: tip}
 
 ### 사용 가능한 기능
@@ -70,8 +70,8 @@ lastupdated: "2017-11-29"
 |계정 유형 |	비용 청구 방법 |
 |------------------|-----------------------|
 |종량과금제 |	{{site.data.keyword.Bluemix_notm}} 컴퓨팅 및 서비스의 사용을 기준으로 비용이 청구됩니다. |
-|구독 | 매월 최소 지출 약정에 따라 월별 할인을 받을 수 있습니다. |
-| {{site.data.keyword.Bluemix_dedicated_notm}} | 연간 계약 |
+|구독 |매월 최소 지출 약정에 따라 월별 할인을 받을 수 있습니다. |
+| {{site.data.keyword.Bluemix_dedicated_notm}} |연간 계약 |
 |{{site.data.keyword.Bluemix_local_notm}} |	연간 계약 |
 {:caption="표 2. {{site.data.keyword.Bluemix_notm}} 청구 가능 계정 및 비용" caption-side="top"}
 
@@ -84,11 +84,11 @@ lastupdated: "2017-11-29"
 
 종량과금제 계정이 있으면 여러 개의 리소스 그룹을 작성하여 할당량을 손쉽게 관리하고 리소스 세트에 대한 청구 사용량을 볼 수 있습니다.
 
-무료 런타임 및 서비스 허용량을 제공받을 수 있습니다. 무료 사용량을 초과하여 사용하면 매월 {{site.data.keyword.Bluemix_notm}} 송장을 받습니다. 송장은 미국 달러(USD)로 청구되며 리소스 비용에 대한 세부사항이 기재되어 있습니다. 
+무료 런타임 및 서비스 허용량을 제공받을 수 있습니다. 무료 사용량을 초과하여 사용하면 월별 {{site.data.keyword.Bluemix_notm}} 청구서를 받습니다. 송장은 미국 달러(USD)로 청구되며 리소스 비용에 대한 세부사항이 기재되어 있습니다. 
 
 많은 국가와 지역에서는 {{site.data.keyword.Bluemix_notm}} 콘솔에서 종량과금제 계정을 등록할 수 있습니다. 청구 및 신용카드 정보를 입력한 후에 이용 약관에 동의하고 계정 요청을 제출하십시오. 그러면 신용카드의 유효성이 검증됩니다. 계정 정보 확인 이메일도 전송됩니다. 확인 이메일을 받은 이후 몇 분이 지나면 콘솔로 돌아가서 앱 빌드를 계속 진행할 수 있습니다.
 
-해당 국가 또는 지역에 대해 온라인 요청을 처리할 수 없는 경우에는 [{{site.data.keyword.Bluemix_notm}} 지원 ![외부 링크 아이콘](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} 페이지에 나열된 링크를 사용하여 {{site.data.keyword.Bluemix_notm}} 영업 팀에 문의하십시오.
+해당 국가 또는 지역에 대한 온라인 요청을 처리할 수 없는 경우에는 [{{site.data.keyword.Bluemix_notm}} 지원 ![외부 링크 아이콘](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} 페이지에 나열된 링크를 사용하여 {{site.data.keyword.Bluemix_notm}} 영업 팀에 문의하십시오.
 
 종량과금제 계정은 언제든지 구독 계정으로 변환할 수 있습니다. [{{site.data.keyword.Bluemix_notm}} 지원 ![외부 링크 아이콘](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} 페이지에 나열된 링크를 사용하여 {{site.data.keyword.Bluemix_notm}} 영업 팀에 문의하십시오.
 
@@ -104,7 +104,7 @@ lastupdated: "2017-11-29"
 
 {{site.data.keyword.Bluemix_dedicated_notm}}에서는 다음을 포함하여 최소 기간인 1년 동안은 등록해야 합니다.
 
-   * 인프라에 대한 VPN 연결
+   * VPN 연결을 인프라에 다시 연결
    * {{site.data.keyword.BluSoftLayer_notm}} 데이터 센터의 완전한 중복 환경
    * 지원되는 모든 런타임(IBM Java Liberty, Node.js 및 기본 제공 오픈 소스 런타임)
    * 선택한 모든 데디케이티드 서비스 및 모든 퍼블릭 {{site.data.keyword.Bluemix_notm}} 서비스
@@ -112,7 +112,7 @@ lastupdated: "2017-11-29"
 
 SoftLayer DirectLink 또는 프리미엄 지원 옵션과 같은 선택적 항목을 주문할 수도 있습니다. 자세한 정보는 [{{site.data.keyword.Bluemix_notm}} 영업 팀 ![외부 링크 아이콘](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}에 문의하십시오.
 
-해당 기간 동안 매월 지불하는 항목은 원하는 데디케이티드 서비스 및 모든 퍼블릭 서비스에 대한 액세스를 제공하는 구독 계정을 기반으로 합니다. {{site.data.keyword.Bluemix_notm}} 퍼블릭에서 서비스의 사용 비용은 구독 계정 계약을 기반으로 계산됩니다. 해당 구독 계약 외에 추가로 사용하는 모든 서비스에 대해 송장이 발급됩니다. 계약을 체결하려면 IBM 지정 계정 담당자에게 문의하거나 [{{site.data.keyword.Bluemix_notm}} 영업 팀 ![외부 링크 아이콘](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}에 문의하십시오.
+해당 기간 동안 매월 원하는 데디케이티드 서비스 및 모든 공용 서비스에 액세스할 수 있는 구독 계정을 기반으로 지불합니다. {{site.data.keyword.Bluemix_notm}} 퍼블릭에서 서비스의 사용 비용은 구독 계정 계약을 기반으로 계산됩니다. 해당 구독 계약 외에 추가로 사용하는 모든 서비스에 대해 송장이 발급됩니다. 계약을 체결하려면 IBM 지정 계정 담당자에게 문의하거나 [{{site.data.keyword.Bluemix_notm}} 영업 팀 ![외부 링크 아이콘](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}에 문의하십시오.
 
 ### {{site.data.keyword.Bluemix_local_notm}} 계정
 
@@ -123,7 +123,7 @@ SoftLayer DirectLink 또는 프리미엄 지원 옵션과 같은 선택적 항�
    * 선택한 모든 로컬 서비스 및 모든 퍼블릭 {{site.data.keyword.Bluemix_notm}} 서비스에 대한 액세스
    * 표준 {{site.data.keyword.Bluemix_notm}} 지원
 
-해당 기간 동안 매월 지불하는 항목은 원하는 로컬 서비스 및 모든 퍼블릭 서비스에 대한 액세스를 제공하는 구독 계정을 기반으로 합니다. {{site.data.keyword.Bluemix_notm}} 퍼블릭에서 서비스의 사용 비용은 구독 계정 계약을 기반으로 계산됩니다. 해당 구독 계약 외에 추가로 사용하는 모든 서비스에 대해 송장이 발급됩니다. 계약을 체결하려면 IBM 지정 계정 담당자에게 문의하거나 [{{site.data.keyword.Bluemix_notm}} 영업 팀 ![외부 링크 아이콘](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}에 문의하십시오.
+해당 기간 동안 매월 원하는 로컬 서비스 및 모든 공용 서비스에 액세스할 수 있는 구독 계정을 기반으로 지불합니다. {{site.data.keyword.Bluemix_notm}} 퍼블릭에서 서비스의 사용 비용은 구독 계정 계약을 기반으로 계산됩니다. 해당 구독 계약 외에 추가로 사용하는 모든 서비스에 대해 송장이 발급됩니다. 계약을 체결하려면 IBM 지정 계정 담당자에게 문의하거나 [{{site.data.keyword.Bluemix_notm}} 영업 팀 ![외부 링크 아이콘](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}에 문의하십시오.
 
 ## 프로모션 계정
 {: #promo}

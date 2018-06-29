@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="account" audience="platform" href="/docs/account/adminpublic.html"}
+{: .toc subcollection="account" audience="platform" arm="3397214" href="/docs/account/adminpublic.html"}
 계정 관리
 
     {: .navgroup id="learn"}
@@ -34,6 +34,6 @@
 
     {: .navgroup id="help"}
     account_faq.md
-    ts_accessing.md
-    ts_accounts.md
+    [IBM Cloud 액세스에 대한 문제점 해결](../troubleshoot/ts_accessing.html)
+    [계정 관리에 대한 문제점 해결](../troubleshoot/ts_accounts.html)
     {: .navgroup-end}

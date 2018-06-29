@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="account" audience="platform" href="/docs/account/adminpublic.html"}
+{: .toc subcollection="account" audience="platform" arm="3397214" href="/docs/account/adminpublic.html"}
 Eigenes Konto verwalten
 
     {: .navgroup id="learn"}
@@ -34,6 +34,6 @@ Eigenes Konto verwalten
 
     {: .navgroup id="help"}
     account_faq.md
-    ts_accessing.md
-    ts_accounts.md
+    [Fehlerbehebung für den Zugriff auf IBM Cloud](../troubleshoot/ts_accessing.html)
+    [Fehlerbehebung für die Verwaltung von Konten](../troubleshoot/ts_accounts.html)
     {: .navgroup-end}

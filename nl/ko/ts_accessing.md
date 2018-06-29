@@ -55,7 +55,7 @@ lastupdated: "2018-05-02"
 IBM ID를 사용하여 로그인할 때 다음 메시지가 표시됩니다.
 {: tsSymptoms}
 
-올바르지 않은 로그인 신임 정보가 제공되었습니다. IBM ID가 계정과 연관되어 있는 경우 여기에 로그인하십시오.`
+`Invalid login credentials provided. If you have an IBMid associated with your account, please log in here`
 
 * IBM ID로 전환되었지만 이전 사용자 이름과 비밀번호를 사용하여 [{{site.data.keyword.slportal}}](https://control.softlayer.com)을 통해 로그인을 시도했습니다.
 {: tsCauses}
@@ -151,7 +151,7 @@ IBM ID를 사용하여 로그인하면 로그인 성공 메시지가 표시되�
 IBM 인증 서비스에 문제점이 있을 수 있습니다.
 {: tsCauses}
 
-[IBM IBM ID ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://status.ibm.com/wind){: new_window}에서 서비스의 상태를 확인한 후에 다시 시도하십시오.
+[IBM 홈 페이지 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/us-en/){: new_window}에 로그인할 수 있는지 확인하십시오. 로그인할 수 있는 경우에는 애플리케이션 문제점이며 나중에 다시 시도할 수 있습니다. 해당 페이지에 로그인할 수 없는 경우 [헬프 데스크 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}에 문의하십시오.
 {: tsResolve}
 
 

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-11-29"
+lastupdated: "2018-06-20"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2017-11-29"
 # Kontotypen
 {: #accounts}
 
-Wenn Sie sich für {{site.data.keyword.Bluemix}} entscheiden, entstehen Ihnen zunächst keine Kosten. Wenn Sie Ihre Umgebung später ausbauen wollen, zahlen Sie bei einem Upgrade nur das, was Sie über die Gratisleistungen hinaus nutzen. Sie können unter vier Kontentypen wählen: Lite-Konto, nutzungsabhängiges Konto, Abonnementkonto und Werbeaktionskonto. Sie können jeden der Kontotypen verwenden, um Ihre Arbeit mit {{site.data.keyword.Bluemix_notm}} zu beginnen - wählen Sie einfach den für Ihre Anforderungen am besten geeigneten Kontotyp aus. 
+Wenn Sie sich für {{site.data.keyword.Bluemix}} entscheiden, entstehen Ihnen zunächst keine Kosten. Wenn Sie Ihre Umgebung später ausbauen wollen, zahlen Sie bei einem Upgrade nur das, was Sie über die Gratisleistungen hinaus nutzen. {{site.data.keyword.Bluemix}} hat vier Kontentypen: Lite-Konto, nutzungsabhängiges Konto, Abonnementkonto und Werbeaktionskonto. Sie können jeden der Kontotypen verwenden, um Ihre Arbeit mit {{site.data.keyword.Bluemix_notm}} zu beginnen - wählen Sie einfach den für Ihre Anforderungen am besten geeigneten Kontotyp aus. 
 {:shortdesc}
 
 ## Kontovergleich
@@ -44,7 +44,7 @@ Registrieren Sie sich für ein kostenloses Lite-Konto, um mit ausgewählten geb�
 
 Sie haben Zugriff auf eine einzelne Ressourcengruppe, die für Sie erstellt wurde und den Namen `Default` (Standard) trägt. Alle Serviceinstanzen, die von {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) verwaltet werden, werden dieser Ressourcengruppe automatisch hinzugefügt. Sie können den Namen dieser Ressourcengruppe jederzeit ändern. Detaillierte Schritte finden Sie unter [Ressourcengruppe umbenennen](/docs/admin/resourcegroups.html#renaming-a-resource-group). 
 
-Jede Ressourcengruppe ist kostenfrei. Wenn Sie eine Verbindung zwischen einem von IAM verwalteten Service und einer Cloud Foundry-App erstellen, erstellen Sie einen Aliasnamen, der eine Serviceinstanz ist, die zu Ihrem Kontingent zählt. Weitere Informationen finden Sie unter [Was ist ein Aliasname?](/docs/manageapps/connecting_apps.html#what_is_alias).
+Jede Ressourcengruppe ist kostenfrei. Wenn Sie eine Verbindung zwischen einem von IAM verwalteten Service und einer Cloud Foundry-App erstellen, erstellen Sie einen Aliasnamen, der eine Serviceinstanz ist, die zu Ihrem Kontingent zählt. Weitere Informationen finden Sie unter [Was ist ein Aliasname?](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}
 
 ### Merkmale und Leistungen
@@ -86,9 +86,10 @@ Ihnen stehen zusätzliche kostenlose Laufzeit- und Serviceleistungen zur Verfüg
 
 In vielen Ländern und Regionen können Sie sich für ein nutzungsabhängiges Konto über die {{site.data.keyword.Bluemix_notm}}-Konsole anmelden. Akzeptieren Sie nach der Angabe Ihrer Abrechnungs- und Kreditkarteninformationen die Vertragsbedingungen und übergeben Sie Ihre Anforderung. Anschließend wird Ihre Kreditkarte geprüft. Es wird auch eine Bestätigungs-E-Mail für die Kontoinformationen gesendet. Einige Minuten nach Empfang der Bestätigungs-E-Mail können Sie zur Konsole zurückkehren, um mit der Erstellung Ihrer Apps fortzufahren.
 
-Wenn Ihre Onlineanforderung für Ihr Land oder Ihre Region nicht verarbeitet werden kann, wenden Sie sich an den {{site.data.keyword.Bluemix_notm}}-Vertrieb. Verwenden Sie dazu den Link auf der [{{site.data.keyword.Bluemix_notm}}-Support-Seite ![Symbol für externen Link](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
+Wenn Ihre Onlineanforderung für Ihr Land oder Ihre Region nicht verarbeitet werden kann, wenden Sie sich an den {{site.data.keyword.Bluemix_notm}}-Vertrieb. Verwenden Sie dazu den Link auf der
+[{{site.data.keyword.Bluemix_notm}}-Support-Seite ![Symbol für externen Link](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}. 
 
-Sie können Ihr Konto für nutzungsabhängige Zahlung jederzeit in ein Abonnementkonto konvertieren. Wenden Sie sich dazu an den {{site.data.keyword.Bluemix_notm}}-Vertrieb, indem Sie den auf der Seite für den [{{site.data.keyword.Bluemix_notm}}-Support ![Symbol für externen Link](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} aufgeführten Link verwenden.
+Sie können Ihr Konto für nutzungsabhängige Zahlung jederzeit in ein Abonnementkonto konvertieren. Wenden Sie sich dazu an den {{site.data.keyword.Bluemix_notm}}-Vertrieb, indem Sie den auf der [{{site.data.keyword.Bluemix_notm}}-Support-Seite ![Symbol für externen Link](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} aufgeführten Link verwenden. 
 
 ### Abonnementkonto
 
@@ -105,7 +106,7 @@ Bei {{site.data.keyword.Bluemix_dedicated_notm}} müssen Sie sich für eine Mind
    * VPN-Anbindung zurück zu Ihrer Infrastruktur
    * Vollständige redundante Umgebung in einem {{site.data.keyword.BluSoftLayer_notm}}-Rechenzentrum
    * Alle unterstützten Laufzeiten (IBM Java Liberty, Node.js sowie integrierte Open-Source-Laufzeiten)
-   * Alle dedizierten Services, die Sie ausgewählt haben, und alle öffentlichen {{site.data.keyword.Bluemix_notm}}-Services
+   * Alle dedizierten Services, die Sie auswählen, und alle öffentlichen {{site.data.keyword.Bluemix_notm}}-Services
    * Standard-{{site.data.keyword.Bluemix_notm}}-Unterstützung
 
 Es können auch optionale Elemente wie z. B. SoftLayer DirectLink oder Premium-Support-Optionen bestellt werden. Weitere Informationen erhalten Sie vom [{{site.data.keyword.Bluemix_notm}}-Vertrieb ![Symbol für externen Link](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
@@ -130,7 +131,7 @@ Werbeaktionskonten werden gelegentlich im Rahmen besonderer Werbemaßnahmen ange
    
 Mit einem Werbeaktionskonto haben Sie Zugriff auf eine einzelne Ressourcengruppe, die für Sie erstellt wurde und den Namen `Default` (Standard) trägt. Alle von IAM verwalteten Serviceinstanzen werden automatisch zu dieser Ressourcengruppe hinzugefügt. Sie können den Namen dieser Ressourcengruppe jederzeit ändern. Detaillierte Schritte finden Sie unter [Ressourcengruppe umbenennen](/docs/admin/resource-groups.html#renaming-a-resource-group). 
 
-Jede Ressourcengruppe ist kostenfrei. Wenn Sie eine Verbindung zwischen einem von IAM verwalteten Service und einer Cloud Foundry-App erstellen, erstellen Sie einen Aliasnamen, der eine Serviceinstanz ist, die zu Ihrem Kontingent zählt. Weitere Informationen finden Sie unter [Was ist ein Aliasname?](/docs/manageapps/connecting_apps.html#what_is_alias).
+Jede Ressourcengruppe ist kostenfrei. Wenn Sie eine Verbindung zwischen einem von IAM verwalteten Service und einer Cloud Foundry-App erstellen, erstellen Sie einen Aliasnamen, der eine Serviceinstanz ist, die zu Ihrem Kontingent zählt. Weitere Informationen finden Sie unter [Was ist ein Aliasname?](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}
 
 ### Möglichkeiten beim Ablauf des Werbeaktionskontos

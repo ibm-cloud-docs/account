@@ -150,7 +150,7 @@ lastupdated: "2018-05-02"
 IBM ID 鑑別服務可能有問題。
 {: tsCauses}
 
-在 [IBM IBMid ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://status.ibm.com/wind){: new_window} 檢查服務狀態，然後重試。
+檢查您是否能夠登入 [IBM 首頁 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/us-en/){: new_window}。如果可以，則是應用程式問題，您可以稍後重試。如果無法登入該頁面，則請洽詢[服務台 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}。
 {: tsResolve}
 
 

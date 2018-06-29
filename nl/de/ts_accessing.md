@@ -151,7 +151,7 @@ Wenn Sie sich bei {{site.data.keyword.Bluemix_notm}} anmelden, wird die Authenti
 Möglicherweise besteht ein Problem beim Service für die IBMid-Authentifizierung.
 {: tsCauses}
 
-Überprüfen Sie den Status des Service auf der Seite [IBM IBMid ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://status.ibm.com/wind){: new_window} und wiederholen Sie anschließend den Versuch.
+Prüfen Sie, ob Sie sich bei der [IBM Homepage ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/us-en/){: new_window} anmelden können. Falls das klappt, handelt es sich hier um ein Anwendungsproblem, und Sie können es zu einem späteren Zeitpunkt erneut versuchen. Wenn Sie sich nicht bei dieser Seite anmelden können, wenden Sie sich an den [Help-Desk ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}.
 {: tsResolve}
 
 

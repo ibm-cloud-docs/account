@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-11-29"
+lastupdated: "2018-06-20"
 
 ---
 
@@ -16,13 +16,13 @@ lastupdated: "2017-11-29"
 # 帳戶類型
 {: #accounts}
 
-您可以在 {{site.data.keyword.Bluemix}} 上免費開始建置。當您準備好要擴大時，只需要對超出免費額度的部分進行升級及付費。我們有四種不同的帳戶類型可供選擇：「精簡」、「隨收隨付制」、「訂閱」及「促銷」。您可以使用任何帳戶類型在 {{site.data.keyword.Bluemix_notm}} 中開始使用 - 只需要選擇最符合您需求的帳戶類型。
+您可以在 {{site.data.keyword.Bluemix}} 上免費開始建置。當您準備好要擴大時，只需要對超出免費額度的部分進行升級及付費。{{site.data.keyword.Bluemix}} 有四種不同的帳戶類型可供選擇：「精簡」、「隨收隨付制」、「訂閱」及「促銷」。您可以使用任何帳戶類型在 {{site.data.keyword.Bluemix_notm}} 中開始使用 - 只需要選擇最符合您需求的帳戶類型。
 {:shortdesc}
 
 ## 帳戶比較
 {: #compare}
 
-下表提供「精簡」、「隨收隨付制」及「訂閱」帳戶的比較。如需有關每一個帳戶的詳細資料，請參閱下列各節。
+下表提供「精簡」、「隨收隨付制」及「訂閱」帳戶的比較。如需有關每一個帳戶的詳細資訊，請參閱下列各節。
 
 |  |精簡|隨收隨付制|訂閱| 
 |--------------------|--------------------|--------------------|--------------------|
@@ -44,7 +44,7 @@ lastupdated: "2017-11-29"
 
 您可以存取為您所建立並命名為 `Default` 的單一資源群組。{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 所管理的所有服務實例都會自動新增至此資源群組。您隨時可以更新此資源群組的名稱。如需詳細步驟，請參閱[重新命名資源群組](/docs/admin/resourcegroups.html#renaming-a-resource-group)。 
 
-每一個資源群組都是免費的。當您在 IAM 所管理的服務與 Cloud Foundry 應用程式之間建立連線時，請建立計入您配額的別名（即服務實例）。請參閱[何謂別名？](/docs/manageapps/connecting_apps.html#what_is_alias)。
+每一個資源群組都是免費的。當您在 IAM 所管理的服務與 Cloud Foundry 應用程式之間建立連線時，請建立計入您配額的別名（即服務實例）。請參閱[何謂別名？](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}
 
 ### 可用功能
@@ -111,7 +111,7 @@ lastupdated: "2017-11-29"
 
 您也可以訂購選購項目（例如 SoftLayer DirectLink 或超值支援選項）。如需相關資訊，請與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ![外部鏈結圖示](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} 聯絡。
 
-您在該期間每個月所支付的金額是根據您想要的專用服務，加上讓您存取所有公用服務的「訂閱」帳戶。{{site.data.keyword.Bluemix_notm}} Public 中的服務使用費用是根據您的「訂閱」帳戶合約來計算。您會收到關於任何超出訂閱合約之使用服務的發票。請與 IBM 指定的客戶業務代表聯絡，或與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ![外部鏈結圖示](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} 聯絡，以開始您的合約。
+在該期間，您每個月會根據想要的專用服務支付金額，再加上讓您存取所有公用服務的「訂閱」帳戶。{{site.data.keyword.Bluemix_notm}} Public 中的服務使用費用是根據您的「訂閱」帳戶合約來計算。您會收到關於任何超出訂閱合約之使用服務的發票。請與 IBM 指定的客戶業務代表聯絡，或與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ![外部鏈結圖示](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} 聯絡，以開始您的合約。
 
 ### {{site.data.keyword.Bluemix_local_notm}} 帳戶
 
@@ -122,7 +122,7 @@ lastupdated: "2017-11-29"
    * 您選取的所有本端服務，及所有公用 {{site.data.keyword.Bluemix_notm}} 服務的存取
    * 標準 {{site.data.keyword.Bluemix_notm}} 支援
 
-您在該期間每個月所支付的金額是根據您想要的本端服務，加上讓您存取所有公用服務的「訂閱」帳戶。{{site.data.keyword.Bluemix_notm}} Public 中的服務使用費用是根據您的「訂閱」帳戶合約來計算。您會收到關於任何超出訂閱合約之使用服務的發票。請與 IBM 指定的客戶業務代表聯絡，或與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ![外部鏈結圖示](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} 聯絡，以開始您的合約。
+在該期間，您每個月會根據想要的本端服務支付金額，再加上讓您存取所有公用服務的「訂閱」帳戶。{{site.data.keyword.Bluemix_notm}} Public 中的服務使用費用是根據您的「訂閱」帳戶合約來計算。您會收到關於任何超出訂閱合約之使用服務的發票。請與 IBM 指定的客戶業務代表聯絡，或與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ![外部鏈結圖示](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} 聯絡，以開始您的合約。
 
 ## 促銷帳戶
 {: #promo}
@@ -131,7 +131,7 @@ lastupdated: "2017-11-29"
    
 使用促銷帳戶，您可以存取為您所建立並命名為 `Default` 的單一資源群組。所有 IAM 受管理服務實例都會自動新增至此資源群組。您隨時可以更新此資源群組的名稱。如需詳細步驟，請參閱[重新命名資源群組](/docs/admin/resource-groups.html#renaming-a-resource-group)。 
 
-每一個資源群組都是免費的。當您在 IAM 所管理的服務與 Cloud Foundry 應用程式之間建立連線時，請建立計入您配額的別名（即服務實例）。請參閱[何謂別名？](/docs/manageapps/connecting_apps.html#what_is_alias)。
+每一個資源群組都是免費的。當您在 IAM 所管理的服務與 Cloud Foundry 應用程式之間建立連線時，請建立計入您配額的別名（即服務實例）。請參閱[何謂別名？](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}
 
 ### 我的促銷帳戶到期後會發生什麼情況？
