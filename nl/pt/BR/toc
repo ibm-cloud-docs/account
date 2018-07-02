@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="account" audience="platform" href="/docs/account/adminpublic.html"}
+{: .toc subcollection="account" audience="platform" arm="3397214" href="/docs/account/adminpublic.html"}
 Gerenciando sua conta
 
     {: .navgroup id="learn"}
@@ -35,6 +35,6 @@ para organização de usuários, equipes, aplicativos](https://console.bluemix.n
 
     {: .navgroup id="help"}
     account_faq.md
-    ts_accessing.md
-    ts_accounts.md
+    [Resolução de problemas para acessar o IBM Cloud](../troubleshoot/ts_accessing.html)
+    [Resolução de problemas para gerenciar contas](../troubleshoot/ts_accounts.html)
     {: .navgroup-end}

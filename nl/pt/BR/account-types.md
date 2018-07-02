@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-11-29"
+lastupdated: "2018-06-20"
 
 ---
 
@@ -16,13 +16,13 @@ lastupdated: "2017-11-29"
 # Tipos de Conta
 {: #accounts}
 
-É possível começar a construir no {{site.data.keyword.Bluemix}} de graça. Quando estiver pronto para crescer, faça upgrade e pague somente pelo que você usar além dos abonos grátis. Temos quatro tipos de contas diferentes que você pode escolher: Lite, Pré-paga, Assinatura e Promocional. É possível usar qualquer um dos tipos de contas para começar a usar o {{site.data.keyword.Bluemix_notm}} - basta escolher aquele que se ajuste melhor às suas necessidades. 
+É possível começar a construir no {{site.data.keyword.Bluemix}} de graça. Quando estiver pronto para crescer, faça upgrade e pague somente pelo que você usar além dos abonos grátis. O {{site.data.keyword.Bluemix}} tem quatro tipos de contas diferentes para sua escolha: Lite, Pré-paga, Assinatura e Promocional. É possível usar qualquer um dos tipos de contas para começar a usar o {{site.data.keyword.Bluemix_notm}} - basta escolher aquele que se ajuste melhor às suas necessidades. 
 {:shortdesc}
 
 ## Comparação de conta
 {: #compare}
 
-A tabela a seguir fornece uma comparação das contas Lite, Pré-paga e de Assinatura. Para obter mais detalhes sobre cada conta, veja as seções a seguir.
+A tabela a seguir fornece uma comparação das contas Lite, Pré-paga e de Assinatura. Para obter mais informações sobre cada conta, consulte as seções a seguir.
 
 |  | Lite  | Pré-paga | Inscrição | 
 |--------------------|--------------------|--------------------|--------------------|
@@ -44,7 +44,7 @@ Inscreva-se para uma conta Lite grátis para construir apps e explorar serviços
 
 Você tem acesso a um único grupo de recursos que é criado e denominado `Default`. Todas as suas instâncias de serviços que são gerenciadas pelo {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) são incluídas automaticamente nesse grupo de recursos. É possível atualizar o nome desse grupo de recursos a qualquer momento. Consulte [Renomeando um grupo de recursos](/docs/admin/resourcegroups.html#renaming-a-resource-group) para obter as etapas detalhadas. 
 
-Cada grupo de recursos é livre. Ao criar uma conexão entre um serviço gerenciado pelo IAM e um aplicativo Cloud Foundry, crie um alias, que é uma instância de serviço, que conta para sua cota. Consulte [O que é um alias?](/docs/manageapps/connecting_apps.html#what_is_alias).
+Cada grupo de recursos é livre. Ao criar uma conexão entre um serviço gerenciado pelo IAM e um app Cloud Foundry, você cria um alias, que é uma instância de serviço, que conta para sua cota. Consulte [O que é um alias?](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}
 
 ### O que está disponível?
@@ -65,7 +65,7 @@ Você pode estar querendo saber o que é oferecido em uma conta Lite. Confira a 
 ## Contas faturáveis
 {: #billableacts}
 
-Ao inscrever-se para um plano faturável do {{site.data.keyword.Bluemix_notm}} ou solicitar um upgrade para sua conta, é possível selecionar dentre quatro contas diferentes do {{site.data.keyword.Bluemix_notm}}. A tabela a seguir lista os diferentes tipos de contas e seus métodos de cobrança.
+Ao se inscrever em um plano faturável do {{site.data.keyword.Bluemix_notm}} ou solicitar um upgrade em sua conta, é possível selecionar quatro contas diferentes do {{site.data.keyword.Bluemix_notm}}. A tabela a seguir lista os diferentes tipos de contas e seus métodos de cobrança.
 
 |Tipo de conta |	Como sou cobrado? |
 |------------------|-----------------------|
@@ -82,16 +82,13 @@ Se você vincular sua conta faturável do {{site.data.keyword.Bluemix_notm}} a u
 
 Com uma conta pré-paga, é possível criar múltiplos grupos de recursos para gerenciar facilmente a cota e visualizar o uso de faturamento para um conjunto de recursos.
 
-Você é elegível para abonos grátis de tempo de execução e serviço. Se usar mais do que o abono grátis, você receberá uma fatura mensal do {{site.data.keyword.Bluemix_notm}}. A fatura será em dólares dos Estados Unidos (USD) e detalhará os encargos do recurso. 
+Você é elegível para abonos grátis de tempo de execução e serviço. Se você usar além do abono grátis, receberá uma fatura mensal do {{site.data.keyword.Bluemix_notm}}. A fatura será em dólares dos Estados Unidos (USD) e detalhará suas cobranças de recursos. 
 
 Em muitos países e regiões, é possível inscrever-se para uma conta pré-paga no console do {{site.data.keyword.Bluemix_notm}}. Depois de fornecer suas informações de faturamento e de cartão de crédito, aceite os termos e condições e envie sua solicitação de conta. Em seguida, seu cartão de crédito será validado. Um e-mail de confirmação dos dados da conta também será enviado. Alguns minutos após o recebimento do e-mail de confirmação, é possível retornar ao console para continuar a construção de seus apps.
 
-Se a sua solicitação on-line não puder ser processada para seu país ou região, entre em contato com o {{site.data.keyword.Bluemix_notm}} Sales usando o link listado na
-página [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
+Se sua solicitação on-line não puder ser processada para seu país ou sua região, entre em contato com a equipe de Vendas do {{site.data.keyword.Bluemix_notm}} usando o link listado na página [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
 
-É possível converter a sua conta pré-paga em uma conta de assinatura a qualquer momento. Entre em contato
-com as Vendas do {{site.data.keyword.Bluemix_notm}} usando o link listado na página
-[Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
+É possível converter a sua conta pré-paga em uma conta de assinatura a qualquer momento. Entre em contato com a equipe de Vendas do {{site.data.keyword.Bluemix_notm}} usando o link listado na página [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
 
 ### Conta Assinatura
 
@@ -109,14 +106,14 @@ Com o {{site.data.keyword.Bluemix_dedicated_notm}}, é necessário inscrever-se 
    * Conectividade VPN de volta para a sua infraestrutura
    * Ambiente completamente redundante em um data center do {{site.data.keyword.BluSoftLayer_notm}}
    * Todos os tempos de execução suportados (IBM Java Liberty, Node.js e tempos de execução de software livre integrados)
-   * Todos os serviços dedicados selecionados e todos os serviços públicos do {{site.data.keyword.Bluemix_notm}}
+   * Todos os serviços dedicados que selecionar e todos os serviços públicos do {{site.data.keyword.Bluemix_notm}}
    * Suporte {{site.data.keyword.Bluemix_notm}} padrão
 
 Também é possível pedir itens opcionais, tais como o SoftLayer DirectLink ou opções de suporte premium. Entre em contato com
 [Vendas do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}
 para obter mais informações.
 
-O que é pago todos os meses durante esse prazo baseia-se nos serviços dedicados que você deseja, além de uma conta Assinatura que fornece acesso a todos os serviços públicos. Os encargos de uso dos serviços no {{site.data.keyword.Bluemix_notm}} Público são calculados com base no contrato da conta da assinatura. Você recebe uma fatura para os serviços usados, além desse contrato de assinatura. Entre em contato com o representante de conta designado da IBM ou com as [Vendas do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}
+Durante esse prazo, cada mês você pagará com base nos serviços dedicados que desejar, mais uma conta de Assinatura que dará acesso a todos os serviços públicos. Os encargos de uso dos serviços no {{site.data.keyword.Bluemix_notm}} Público são calculados com base no contrato da conta da assinatura. Você recebe uma fatura para os serviços usados, além desse contrato de assinatura. Entre em contato com o representante de conta designado da IBM ou com as [Vendas do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}
 para iniciar a utilização de seu contrato.
 
 ### Conta do {{site.data.keyword.Bluemix_local_notm}}
@@ -128,17 +125,17 @@ Com o {{site.data.keyword.Bluemix_local_notm}}, deve-se inscrever por um prazo m
    * Todos os serviços locais que você selecionou e acesso a todos os serviços públicos do {{site.data.keyword.Bluemix_notm}}
    * Suporte {{site.data.keyword.Bluemix_notm}} padrão
 
-O que é pago todos os meses durante esse prazo é baseado nos serviços locais que você deseja, além de uma conta Assinatura que fornece acesso a todos os serviços públicos. Os encargos de uso dos serviços no {{site.data.keyword.Bluemix_notm}} Público são calculados com base no contrato da conta da assinatura. Você recebe uma fatura para os serviços usados, além desse contrato de assinatura. Entre em contato com o representante de conta designado da IBM ou com as [Vendas do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}
+Durante esse prazo, cada mês você pagará com base nos serviços locais que desejar, mais uma conta de Assinatura que dará acesso a todos os serviços públicos. Os encargos de uso dos serviços no {{site.data.keyword.Bluemix_notm}} Público são calculados com base no contrato da conta da assinatura. Você recebe uma fatura para os serviços usados, além desse contrato de assinatura. Entre em contato com o representante de conta designado da IBM ou com as [Vendas do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}
 para iniciar a utilização de seu contrato.
 
 ## Conta Promocional
 {: #promo}
 
-As contas promocionais, oferecidas ocasionalmente como parte de promoções especiais, são avaliações grátis de prazo fechado com acesso à maioria do catálogo do {{site.data.keyword.Bluemix_notm}}. Esse tipo de conta está disponível apenas por meio do uso de um código promocional. O período de tempo de validade para a conta varia por promoção. 
+As contas Promocionais, oferecidas ocasionalmente como parte de promoções especiais, são avaliações grátis de prazo fechado com acesso à maior parte do catálogo do {{site.data.keyword.Bluemix_notm}}. Esse tipo de conta está disponível somente usando um código promocional. O período de tempo de validade para a conta varia por promoção. 
    
 Com uma conta promocional, você tem acesso a um único grupo de recursos que é criado para você e denominado `Padrão`. Todas as suas instâncias de serviço gerenciado pelo IAM são automaticamente incluídas nesse grupo de recursos. É possível atualizar o nome desse grupo de recursos a qualquer momento. Consulte [Renomeando um grupo de recursos](/docs/admin/resource-groups.html#renaming-a-resource-group) para obter as etapas detalhadas. 
 
-Cada grupo de recursos é livre. Ao criar uma conexão entre um serviço gerenciado pelo IAM e um aplicativo Cloud Foundry, crie um alias, que é uma instância de serviço, que conta para sua cota. Consulte [O que é um alias?](/docs/manageapps/connecting_apps.html#what_is_alias).
+Cada grupo de recursos é livre. Ao criar uma conexão entre um serviço gerenciado pelo IAM e um aplicativo Cloud Foundry, crie um alias, que é uma instância de serviço, que conta para sua cota. Consulte [O que é um alias?](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}
 
 ### O que acontece quando minha conta promocional expira?
