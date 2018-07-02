@@ -107,7 +107,7 @@ If linking is not a viable option for you, contact your sales support for other 
 ## Are there incentives for linking my accounts now? 
 {: #al_incent}
 
-If you link your accounts now, you can use a promotional credit to try platform services.
+If you link your accounts now, you can use a promotional credit to try {{site.data.keyword.Bluemix_notm}} services.
 
 ## What does adding {{site.data.keyword.Bluemix_notm}} platform services to my SoftLayer account mean? 
 {: #al_owaffslacct}
