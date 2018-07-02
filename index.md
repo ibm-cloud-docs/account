@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-31"
+lastupdated: "2018-06-26"
 
 ---
 
@@ -81,7 +81,7 @@ If you link your Pay-As-You-Go account with a SoftLayer account, starting on the
 
 You can upgrade to a Pay-As-You-Go account from the {{site.data.keyword.Bluemix_notm}} console. After you provide your billing and credit card information, accept the terms and conditions and submit your account request. Then, your credit card is validated. You also receive a confirmation email regarding the account information. A few minutes after you receive the confirmation email, you can return to the console to continue building your apps. If your online request can't be processed for your country or region, contact [{{site.data.keyword.Bluemix_notm}} Support](/docs/get-support/howtogetsupport.html).
 
-You get a promotional credit of $200 after you upgrade to a Pay-As-You-Go account, and there's no action required for you to start using it. Your $200 credit is valid for 30 days and it is automatically applied to your invoice. The credit cannot be used with infrastructure or third-party offerings.
+You get a promotional credit of $200 after you upgrade to a Pay-As-You-Go account, and there's no action required for you to start using it. Your $200 credit is valid for 30 days and it is automatically applied to your invoice. The credit cannot be used with third-party offerings.
 
 ### Upgrading your account
 {: #upgrade-to-subscription}
