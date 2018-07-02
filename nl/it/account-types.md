@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-11-29"
+lastupdated: "2018-06-20"
 
 ---
 
@@ -16,13 +16,13 @@ lastupdated: "2017-11-29"
 # Tipi di account
 {: #accounts}
 
-Puoi iniziare a creare su {{site.data.keyword.Bluemix}} gratuitamente. Quando sei pronto a passare alla fase successiva, esegui l'aggiornamento e paga solo per ciò che usi oltre le franchigie. Abbiamo quattro diversi tipi di account tra cui puoi scegliere: Lite, Pagamento a consumo, Sottoscrizione e Promozionale. Puoi utilizzare qualsiasi tipo di account per iniziare a utilizzare {{site.data.keyword.Bluemix_notm}} - scegli semplicemente quello più adatto alle tue esigenze. 
+Puoi iniziare a creare su {{site.data.keyword.Bluemix}} gratuitamente. Quando sei pronto a passare alla fase successiva, esegui l'aggiornamento e paga solo per ciò che usi oltre le franchigie. {{site.data.keyword.Bluemix}} ha quattro diversi tipi di account tra cui puoi scegliere: Lite, Pagamento a consumo, Sottoscrizione e Promozionale. Puoi utilizzare qualsiasi tipo di account per iniziare a utilizzare {{site.data.keyword.Bluemix_notm}} - scegli semplicemente quello più adatto alle tue esigenze. 
 {:shortdesc}
 
 ## Confronto degli account
 {: #compare}
 
-La seguente tabella fornisce un confronto degli account Lite, Pagamento a consumo e Sottoscrizione. Per ulteriori dettagli su ciascun account, vedi le sezioni che seguono.
+La seguente tabella fornisce un confronto degli account Lite, Pagamento a consumo e Sottoscrizione. Per ulteriori informazioni su ciascun account, vedi le sezioni che seguono.
 
 |  | Lite  | Pagamento a consumo | Sottoscrizione | 
 |--------------------|--------------------|--------------------|--------------------|
@@ -44,7 +44,7 @@ Registrati per un account Lite gratuito per creare applicazioni ed esplorare ser
 
 Hai accesso a un singolo gruppo di risorse creato per te e denominato `Default`. Tutte le tue istanze dei servizi gestite da {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) vengono aggiunte automaticamente a questo gruppo di risorse. Puoi aggiornare il nome di questo gruppo di risorse in qualsiasi momento. Per la procedura dettagliata, vedi [Ridenominazione di un gruppo di risorse](/docs/admin/resourcegroups.html#renaming-a-resource-group). 
 
-Ogni gruppo di risorse è gratuito. Quando crei una connessione tra un servizio gestito da IAM e un'applicazione Cloud Foundry, crei un alias, che è un'istanza del servizio, che viene conteggiato nella tua quota. Vedi [Cos'è un alias?](/docs/manageapps/connecting_apps.html#what_is_alias).
+Ogni gruppo di risorse è gratuito. Quando crei una connessione tra un servizio gestito da IAM e un'applicazione Cloud Foundry, crei un alias, che è un'istanza del servizio, che viene conteggiato nella tua quota. Vedi [Cos'è un alias?](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}
 
 ### Disponibilità
@@ -82,17 +82,15 @@ Se colleghi il tuo account fatturabile {{site.data.keyword.Bluemix_notm}} con un
 
 Con un account Pagamento a consumo, puoi creare più gruppi di risorse per gestire facilmente la quota e visualizzare l'utilizzo della fatturazione per un insieme di risorse.
 
-Hai diritto a franchigie per i runtime e i servizi. Se superi la franchigia consentita, riceverai una fattura mensile da parte di {{site.data.keyword.Bluemix_notm}}. La fattura sarà in dollari americani (USD) e verranno descritti gli addebiti delle risorse. 
+Hai diritto a franchigie per i runtime e i servizi. Se superi la franchigia prevista, ricevi una fattura mensile da parte di {{site.data.keyword.Bluemix_notm}}. La fattura sarà in dollari americani (USD) e indicherà i costi delle risorse. 
 
 In molti paesi e regioni, puoi registrarti per un account Pagamento a consumo dalla console {{site.data.keyword.Bluemix_notm}}. Una volta che hai fornito le informazioni per la fatturazione e quelle relative alla tua carta di credito, accetta i termini e le condizioni e inoltra la richiesta di account. La tua carta di credito verrà quindi convalidata. Viene inviata anche una e-mail di conferma delle informazioni sull'account. Qualche minuto dopo aver ricevuto l'e-mail di conferma, puoi tornare alla console per continuare a creare le tue applicazioni.
 
-Se non è possibile elaborare la tua richiesta online per il tuo paese o la tua regione, contatta il settore Vendite di {{site.data.keyword.Bluemix_notm}} utilizzando il link elencato nella pagina
-[Supporto {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
+Se non è possibile elaborare la tua richiesta online per il tuo paese o la tua regione, contatta il settore Vendite di {{site.data.keyword.Bluemix_notm}} utilizzando il link elencato nella
+pagina [Supporto {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
 
-Puoi convertire il tuo account Pagamento a consumo in un account Sottoscrizione in qualsiasi momento. Contatta
-il settore Vendite di {{site.data.keyword.Bluemix_notm}} utilizzando il link elencato nella pagina
-[Supporto {{site.data.keyword.Bluemix_notm}}
-![Icona link esterno](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
+Puoi convertire il tuo account Pagamento a consumo in un account Sottoscrizione in qualsiasi momento. Contatta il settore Vendite di {{site.data.keyword.Bluemix_notm}} utilizzando il link elencato nella pagina
+[Supporto {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
 
 ### Account Sottoscrizione
 
@@ -111,14 +109,14 @@ Con {{site.data.keyword.Bluemix_dedicated_notm}}, devi registrarti per un period
    * Connettività VPN alla tua infrastruttura
    * Ambiente totalmente ridondante in un data center {{site.data.keyword.BluSoftLayer_notm}}
    * Tutti i runtime supportati (IBM Java Liberty, Node.js e runtime open source integrati)
-   * Tutti i servizi dedicati da te selezionati e tutti i servizi {{site.data.keyword.Bluemix_notm}} pubblici
+   * Tutti i servizi dedicati che selezioni e tutti i servizi {{site.data.keyword.Bluemix_notm}}
    * Supporto {{site.data.keyword.Bluemix_notm}} standard
 
 Puoi anche ordinare elementi facoltativi quali SoftLayer DirectLink oppure opzioni di supporto premium. Contatta il
 settore [Vendite di {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}
 per ulteriori informazioni.
 
-Quello che paghi ogni mese durante questo periodo si basa sui servizi dedicati che desideri, oltre a un account Sottoscrizione che ti dà accesso a tutti i servizi pubblici. Gli addebiti di utilizzo dei servizi in {{site.data.keyword.Bluemix_notm}} pubblico sono calcolati in base all'accordo del tuo account di sottoscrizione. Ricevi una fattura per tutti i servizi che utilizzi
+Durante questo periodo, ogni mese pagherai in base ai servizi dedicati che vuoi, oltre a un account Sottoscrizione che ti dà accesso a tutti i servizi pubblici. Gli addebiti di utilizzo dei servizi in {{site.data.keyword.Bluemix_notm}} pubblico sono calcolati in base all'accordo del tuo account di sottoscrizione. Ricevi una fattura per tutti i servizi che utilizzi
 oltre i limiti previsti da tale accordo di sottoscrizione. Contatta il tuo rappresentante dell'account designato IBM oppure il settore [Vendite di {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}
 per un'introduzione al tuo accordo.
 
@@ -132,18 +130,18 @@ di fornire automaticamente e costantemente gli aggiornamenti
    * Tutti i servizi locali da te selezionati e l'accesso a tutti i servizi {{site.data.keyword.Bluemix_notm}} pubblici
    * Supporto {{site.data.keyword.Bluemix_notm}} standard
 
-Quello che paghi ogni mese durante questo periodo si basa sui servizi locali che desideri, oltre a un account Sottoscrizione che ti dà accesso a tutti i servizi pubblici. Gli addebiti di utilizzo dei servizi in {{site.data.keyword.Bluemix_notm}} pubblico sono calcolati in base all'accordo del tuo account di sottoscrizione. Ricevi una fattura per tutti i servizi che utilizzi
+Durante questo periodo, ogni mese pagherai in base ai servizi locali che vuoi, oltre a un account Sottoscrizione che ti dà accesso a tutti i servizi pubblici. Gli addebiti di utilizzo dei servizi in {{site.data.keyword.Bluemix_notm}} pubblico sono calcolati in base all'accordo del tuo account di sottoscrizione. Ricevi una fattura per tutti i servizi che utilizzi
 oltre i limiti previsti da tale accordo di sottoscrizione. Contatta il tuo rappresentante dell'account designato IBM oppure il settore [Vendite di {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}
 per un'introduzione al tuo accordo.
 
 ## Account promozionale
 {: #promo}
 
-Gli account promozionali, occasionalmente offerti come parte di promozioni speciali, sono versioni di prova gratuita a tempo limitato con accesso alla maggior parte del catalogo {{site.data.keyword.Bluemix_notm}}. Questo tipo di account è disponibile solo tramite l'uso di un codice promozionale. Il periodo di validità per l'account varia in base alla promozione. 
+Gli account promozionali, occasionalmente offerti come parte di promozioni speciali, sono versioni di prova gratuita a tempo limitato con accesso alla maggior parte del catalogo {{site.data.keyword.Bluemix_notm}}. Questo tipo di account è disponibile solo utilizzando un codice promozionale. Il periodo di validità per l'account varia in base alla promozione. 
    
 Con un account Promozionale, hai accesso a un singolo gruppo di risorse creato per te e denominato `Default`. Tutte le tue istanze del servizio gestito da IAM vengono aggiunte automaticamente a questo gruppo di risorse. Puoi aggiornare il nome di questo gruppo di risorse in qualsiasi momento. Per la procedura dettagliata, vedi [Ridenominazione di un gruppo di risorse](/docs/admin/resource-groups.html#renaming-a-resource-group). 
 
-Ogni gruppo di risorse è gratuito. Quando crei una connessione tra un servizio gestito da IAM e un'applicazione Cloud Foundry, crei un alias, che è un'istanza del servizio, che viene conteggiato nella tua quota. Vedi [Cos'è un alias?](/docs/manageapps/connecting_apps.html#what_is_alias).
+Ogni gruppo di risorse è gratuito. Quando crei una connessione tra un servizio gestito da IAM e un'applicazione Cloud Foundry, crei un alias, che è un'istanza del servizio, che viene conteggiato nella tua quota. Vedi [Cos'è un alias?](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}
 
 ### Cosa succede allo scadere del mio account Promozionale?

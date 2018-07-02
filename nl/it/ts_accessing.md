@@ -151,7 +151,7 @@ Quando accedi a {{site.data.keyword.Bluemix_notm}}, l'autenticazione tramite l'I
 Potrebbe esserci un problema con il servizio di autenticazione ID IBM.
 {: tsCauses}
 
-Controlla lo stato del servizio in [IBM IBMid ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://status.ibm.com/wind){: new_window} e riprova.
+Verifica se puoi accedere alla [home page IBM ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/us-en/){: new_window}. Se puoi, si tratta di un problema dell'applicazione e puoi riprovare più tardi. Se non riesci ad accedere a tale pagina, contatta l'[Help Desk ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}.
 {: tsResolve}
 
 
@@ -163,11 +163,11 @@ Se il tuo account è in sospeso, non puoi accedere a {{site.data.keyword.Bluemix
 Dopo aver eseguito la registrazione per un account di prova {{site.data.keyword.Bluemix_notm}}, potresti non riuscire ad accedere a {{site.data.keyword.Bluemix_notm}}. Viene visualizzato il seguente messaggio:
 {: tsSymptoms}
 
-<code>Your account is pending. Please wait up to 24 hours for e-mail confirmation and also check your
+<code>Your account is pending. Please wait up to 24 hours for email confirmation and also check your
 spam folder. If you still have not received your e-mail confirmation, contact <a href="http://ibm.biz/bluemixsupport.com" target="_blank">{{site.data.keyword.Bluemix_notm}} Support</a>.</code>
 
 Dopo aver eseguito la registrazione per un account di prova {{site.data.keyword.Bluemix_notm}}, riceverai un'e-mail di conferma. Dovrai fare clic sul link
-che si trova nella e-mail di conferma per completare il processo di registrazione.
+che si trova nella email di conferma per completare il processo di registrazione.
 {: tsCauses}
 
 L'e-mail di conferma viene inviata all'indirizzo di posta

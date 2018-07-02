@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="829px"
+   height="547px"
+   viewBox="0 0 829 547"
+   version="1.1"
+   id="svg88"
+   sodipodi:docname="user_groups_example.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <metadata
+     id="metadata92">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     id="namedview90"
+     showgrid="false"
+     inkscape:zoom="0.86288848"
+     inkscape:cx="493.44082"
+     inkscape:cy="258.19794"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg88" />
+  <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title2">3-user_groups</title>
+  <desc
+     id="desc4">Created with Sketch.</desc>
+  <defs
+     id="defs10">
+    <path
+       d="M0,0 L800,0 L800,523 L0,523 L0,0 Z"
+       id="path-1" />
+    <mask
+       id="mask-2"
+       maskContentUnits="userSpaceOnUse"
+       maskUnits="objectBoundingBox"
+       x="0"
+       y="0"
+       width="800"
+       height="523"
+       fill="white">
+      <use
+         xlink:href="#path-1"
+         id="use7" />
+    </mask>
+  </defs>
+  <g
+     id="3-user_groups"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd">
+    <g
+       id="-user_groups"
+       transform="translate(15.000000, 12.000000)">
+      <use
+         id="dotted-box"
+         stroke="#DFE3E6"
+         mask="url(#mask-2)"
+         stroke-width="6"
+         stroke-dasharray="10"
+         xlink:href="#path-1" />
+      <text
+         id="Single-Organization"
+         font-size="24"
+         font-weight="normal"
+         style="font-weight:normal;font-size:24px;font-family:IBMPlexSans, 'IBM Plex Sans';fill:#5a6872">
+        <tspan
+           x="35"
+           y="53"
+           id="tspan13">Singola organizzazione</tspan>
+      </text>
+      <g
+         id="project-a"
+         transform="translate(35.000000, 78.000000)">
+        <rect
+           id="Rectangle-2-Copy-2"
+           stroke="#8C9BA5"
+           stroke-width="2"
+           x="1"
+           y="1"
+           width="351"
+           height="415" />
+        <g
+           id="middle-content"
+           transform="translate(53.000000, 26.000000)">
+          <text
+             id="Project-X"
+             font-size="20"
+             font-weight="bold"
+             style="font-weight:bold;font-size:20px;font-family:IBMPlexSans-Bold, 'IBM Plex Sans';fill:#5a6872">
+            <tspan
+               x="0"
+               y="21"
+               id="tspan17">Progetto X</tspan>
+          </text>
+          <text
+             id="Prod_AppX_V1"
+             font-family="IBMPlexSans, IBM Plex Sans"
+             font-size="20"
+             font-weight="normal"
+             fill="#5A6872">
+            <tspan
+               x="100"
+               y="94"
+               id="tspan20">Prod_AppX_V1</tspan>
+          </text>
+          <text
+             id="Stage_AppX_V1"
+             font-family="IBMPlexSans, IBM Plex Sans"
+             font-size="20"
+             font-weight="normal"
+             fill="#5A6872">
+            <tspan
+               x="100"
+               y="174"
+               id="tspan23">Stage_AppX_V1</tspan>
+          </text>
+          <text
+             id="Test_AppX_V1"
+             font-family="IBMPlexSans, IBM Plex Sans"
+             font-size="20"
+             font-weight="normal"
+             fill="#5A6872">
+            <tspan
+               x="100"
+               y="254"
+               id="tspan26">Test_AppX_V1</tspan>
+          </text>
+          <text
+             id="Dev_AppX_V1"
+             font-family="IBMPlexSans, IBM Plex Sans"
+             font-size="20"
+             font-weight="normal"
+             fill="#5A6872">
+            <tspan
+               x="100"
+               y="334"
+               id="tspan29">Dev_AppX_V1</tspan>
+          </text>
+          <g
+             id="Hexy"
+             transform="translate(0.000000, 46.000000)">
+            <polygon
+               id="polygon13"
+               fill="#79C6FF"
+               fill-rule="nonzero"
+               points="37 0 0 20 0 60 37 80 74 60 74 20" />
+            <polygon
+               id="polygon15"
+               fill="#56A8FD"
+               fill-rule="nonzero"
+               points="37 80 0 100 0 140 37 160 74 140 74 100" />
+            <polygon
+               id="polygon17"
+               fill="#5294E9"
+               fill-rule="nonzero"
+               points="37 160 0 180 0 220 37 240 74 220 74 180" />
+            <polygon
+               id="polygon19"
+               fill="#3A6EB4"
+               fill-rule="nonzero"
+               points="37 240 0 260 0 300 37 320 74 300 74 260" />
+            <path
+               d="M37.5,45.5 L37.5,274.5"
+               id="Line-Copy-2"
+               stroke="#0F212E"
+               stroke-width="3"
+               stroke-linecap="square" />
+            <circle
+               id="Oval-Copy-2"
+               stroke="#0F212E"
+               stroke-width="3"
+               fill="#FFFFFF"
+               cx="37.5"
+               cy="40.5"
+               r="6.5" />
+            <circle
+               id="circle38"
+               stroke="#0F212E"
+               stroke-width="3"
+               fill="#FFFFFF"
+               cx="37.5"
+               cy="120.5"
+               r="6.5" />
+            <circle
+               id="circle40"
+               stroke="#0F212E"
+               stroke-width="3"
+               fill="#FFFFFF"
+               cx="37.5"
+               cy="200.5"
+               r="6.5" />
+            <circle
+               id="Oval-Copy-3"
+               stroke="#0F212E"
+               stroke-width="3"
+               fill="#FFFFFF"
+               cx="37.5"
+               cy="280.5"
+               r="6.5" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="project-b"
+         transform="translate(412.000000, 78.000000)">
+        <rect
+           id="rect46"
+           stroke="#8C9BA5"
+           stroke-width="2"
+           x="1"
+           y="1"
+           width="351"
+           height="415" />
+        <g
+           id="g83"
+           transform="translate(53.000000, 26.000000)">
+          <text
+             id="Project-Y"
+             font-size="20"
+             font-weight="bold"
+             style="font-weight:bold;font-size:20px;font-family:IBMPlexSans-Bold, 'IBM Plex Sans';fill:#5a6872">
+            <tspan
+               x="0"
+               y="21"
+               id="tspan48">Progetto Y</tspan>
+          </text>
+          <text
+             id="Prod_AppY_V1"
+             font-family="IBMPlexSans, IBM Plex Sans"
+             font-size="20"
+             font-weight="normal"
+             fill="#5A6872">
+            <tspan
+               x="100"
+               y="94"
+               id="tspan51">Prod_AppY_V1</tspan>
+          </text>
+          <text
+             id="Stage_AppY_V1"
+             font-family="IBMPlexSans, IBM Plex Sans"
+             font-size="20"
+             font-weight="normal"
+             fill="#5A6872">
+            <tspan
+               x="100"
+               y="174"
+               id="tspan54">Stage_AppY_V1</tspan>
+          </text>
+          <text
+             id="Test_AppY_V1"
+             font-family="IBMPlexSans, IBM Plex Sans"
+             font-size="20"
+             font-weight="normal"
+             fill="#5A6872">
+            <tspan
+               x="100"
+               y="254"
+               id="tspan57">Test_AppY_V1</tspan>
+          </text>
+          <text
+             id="Dev_AppY_V1"
+             font-family="IBMPlexSans, IBM Plex Sans"
+             font-size="20"
+             font-weight="normal"
+             fill="#5A6872">
+            <tspan
+               x="100"
+               y="334"
+               id="tspan60">Dev_AppY_V1</tspan>
+          </text>
+          <g
+             id="g81"
+             transform="translate(0.000000, 46.000000)">
+            <polygon
+               id="polygon63"
+               fill="#DFE3E6"
+               fill-rule="nonzero"
+               points="37 0 0 20 0 60 37 80 74 60 74 20" />
+            <polygon
+               id="polygon65"
+               fill="#8C9BA6"
+               fill-rule="nonzero"
+               points="37 80 0 100 0 140 37 160 74 140 74 100" />
+            <polygon
+               id="polygon67"
+               fill="#5A6873"
+               fill-rule="nonzero"
+               points="37 160 0 180 0 220 37 240 74 220 74 180" />
+            <polygon
+               id="polygon69"
+               fill="#2C3F4A"
+               fill-rule="nonzero"
+               points="37 240 0 260 0 300 37 320 74 300 74 260" />
+            <path
+               d="M37.5,45.5 L37.5,274.5"
+               id="path71"
+               stroke="#0F212E"
+               stroke-width="3"
+               stroke-linecap="square" />
+            <circle
+               id="circle73"
+               stroke="#0F212E"
+               stroke-width="3"
+               fill="#FFFFFF"
+               cx="37.5"
+               cy="40.5"
+               r="6.5" />
+            <circle
+               id="circle75"
+               stroke="#0F212E"
+               stroke-width="3"
+               fill="#FFFFFF"
+               cx="37.5"
+               cy="120.5"
+               r="6.5" />
+            <circle
+               id="circle77"
+               stroke="#0F212E"
+               stroke-width="3"
+               fill="#FFFFFF"
+               cx="37.5"
+               cy="200.5"
+               r="6.5" />
+            <circle
+               id="circle79"
+               stroke="#0F212E"
+               stroke-width="3"
+               fill="#FFFFFF"
+               cx="37.5"
+               cy="280.5"
+               r="6.5" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
