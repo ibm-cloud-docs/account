@@ -93,8 +93,7 @@ Vous devez disposer d'un IBMid et d'un mot de passe valides pour vous connecter 
 Lorsque vous vous connectez à l'aide de votre IBMid, le message suivant s'affiche :
 {: tsSymptoms}
 
-`Vous accédez à cette page car votre authentification a abouti. Toutefois, cet IBMid n'est associé à aucun compte Bluemix. Si vous pensez
-que ce message ne s'affiche pas à bon escient, prenez contact avec votre propriétaire de compte ou votre utilisateur principal.`
+`Vous accédez à cette page car votre authentification a abouti. Toutefois, cet IBMid n'est associé à aucun compte Bluemix. Si vous pensez que ce message ne s'affiche pas à bon escient, prenez contact avec votre propriétaire de compte ou votre utilisateur principal.`
 
 Vous vous êtes connecté à partir du portail [{{site.data.keyword.slportal}}](https://control.softlayer.com) à l'aide d'un IBMid valide, mais vous n'êtes pas passé à l'authentification via IBMid dans le portail {{site.data.keyword.slportal}}.
 {: tsCauses}
@@ -152,7 +151,7 @@ Lorsque vous vous connectez à {{site.data.keyword.Bluemix_notm}}, l'authentific
 Il s'agit peut-être d'un problème lié au service d'authentification via IBMid.
 {: tsCauses}
 
-Vérifiez le statut du service sur le site [IBM IBMid ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://status.ibm.com/wind){: new_window}, puis essayez à nouveau l'opération.
+Assurez-vous que vous pouvez vous connecter à la [page d'accueil IBM ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/us-en/){: new_window}. Dans ce cas, le problème est lié à l'application et vous pouvez faire une nouvelle tentative ultérieurement. Si vous ne pouvez pas vous connecter à cette page, contactez le [centre d'assistance ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}.
 {: tsResolve}
 
 
@@ -193,4 +192,4 @@ Effectuez une ou plusieurs des actions suivantes :
   * Utilisez le mode de navigation privée de votre navigateur.
   * Effacez les cookies et le cache du navigateur.
   * Utilisez un navigateur différent. Pour plus d'informations sur les versions des navigateurs qui sont prises en charge par {{site.data.keyword.Bluemix_notm}}, voir [Prérequis {{site.data.keyword.Bluemix_notm}}](/docs/overview/prereqs.html#prereqs).
-  * Si vous avez installé l'interface de ligne de commande cf, entrez la commande `cf apps` pour déterminer si votre app est en cours d'exécution.
+  * Si vous avez installé l'interface de ligne de commande cf, entrez la commande `cf apps` pour déterminer si votre application est en cours d'exécution.

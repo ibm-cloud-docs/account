@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-11-29"
+lastupdated: "2018-06-20"
 
 ---
 
@@ -16,13 +16,13 @@ lastupdated: "2017-11-29"
 # Types de compte
 {: #accounts}
 
-Vous pouvez commencer à construire des applications dans {{site.data.keyword.Bluemix}} gratuitement. Lorsque vous êtes prêt à aller plus loin, effectuez une mise à niveau en ne payant que pour ce que vous utilisez au-delà des franchises. Vous avez le choix entre quatre types de compte : Lite, Paiement à la carte, Abonnement et Promo. Vous pouvez utiliser l'un de ces types de compte pour vous initier à {{site.data.keyword.Bluemix_notm}} - choisissez simplement le plus adapté à vos besoins. 
+Vous pouvez commencer à construire des applications dans {{site.data.keyword.Bluemix}} gratuitement. Lorsque vous êtes prêt à aller plus loin, effectuez une mise à niveau en ne payant que pour ce que vous utilisez au-delà des franchises. {{site.data.keyword.Bluemix}} inclut quatre types de compte : Lite, Paiement à la carte, Abonnement et Promo. Vous pouvez utiliser l'un de ces types de compte pour vous initier à {{site.data.keyword.Bluemix_notm}} - choisissez simplement le plus adapté à vos besoins. 
 {:shortdesc}
 
 ## Comparaison des types de compte
 {: #compare}
 
-Le tableau suivant compare les types de compte Lite, Paiement à la carte et Abonnement. Pour plus de détails sur chaque compte, voir les sections qui suivent.
+Le tableau suivant compare les types de compte Lite, Paiement à la carte et Abonnement. Pour plus d'informations sur chaque compte, voir les sections suivantes.
 
 |  | Lite  | Paiement à la carte | Abonnement | 
 |--------------------|--------------------|--------------------|--------------------|
@@ -44,7 +44,7 @@ Inscrivez-vous pour un compte Lite gratuit afin de construire des applications e
 
 Vous avez accès à un seul groupe de ressources, créé pour vous et nommé `Default`. Toutes vos instances de service gérées par {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) sont automatiquement ajoutées à ce groupe de ressources. Vous pouvez mettre à jour ce groupe de ressources à tout moment. Pour la procédure détaillée, voir [Changement de nom d'un groupe de ressources](/docs/admin/resourcegroups.html#renaming-a-resource-group). 
 
-Chaque groupe de ressources est gratuit. Lorsque vous créez une connexion entre un service géré par IAM et une application Cloud Foundry, vous créez un alias, qui est une instance de service comptabilisée dans votre quota. Voir [Qu'est-ce qu'un alias ?](/docs/manageapps/connecting_apps.html#what_is_alias).
+Chaque groupe de ressources est gratuit. Lorsque vous créez une connexion entre un service géré par IAM et une application Cloud Foundry, vous créez un alias, qui est une instance de service comptabilisée dans votre quota. Voir [Qu'est-ce qu'un alias ?](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}
 
 ### Quelles sont les disponibilités ?
@@ -82,17 +82,13 @@ Si vous liez votre compte {{site.data.keyword.Bluemix_notm}} facturable à un co
 
 Avec un compte Paiement à la carte, vous pouvez créer plusieurs groupes de ressources de manière à faciliter la gestion du quota et l'affichage de la facturation d'utilisation d'un ensemble de ressources.
 
-Vous êtes éligible pour des environnements d'exécution gratuits et des franchises de services. Si vous utilisez plus que la franchise, vous recevrez une facture {{site.data.keyword.Bluemix_notm}} mensuelle. Celle-ci est en dollars américains (USD) et détaille le prix des ressources. 
+Vous êtes éligible pour des environnements d'exécution gratuits et des franchises de services. Si vous dépassez la franchise, vous recevrez une facture {{site.data.keyword.Bluemix_notm}} mensuelle. Cette dernière est émise en dollars américains (USD) et détaille le prix des ressources. 
 
-Dans de nombreux pays et régions, vous pouvez créer un compte Paiement à la carte depuis la console {{site.data.keyword.Bluemix_notm}}. Après avoir fourni vos informations de facturation et de carte de crédit, acceptez les dispositions du contrat et soumettez votre demande de compte. Votre carte de crédit sera alors validée. Un courrier électronique de confirmation des
-informations de compte est également envoyé. Quelques minutes après la réception du courrier électronique de confirmation, vous pouvez revenir dans la console pour continuer à construire vos applications.
+Dans de nombreux pays et régions, vous pouvez créer un compte Paiement à la carte depuis la console {{site.data.keyword.Bluemix_notm}}. Après avoir fourni vos informations de facturation et de carte de crédit, acceptez les dispositions du contrat et soumettez votre demande de compte. Votre carte de crédit sera alors validée. Un courrier électronique de confirmation des informations de compte est également envoyé. Quelques minutes après la réception du courrier électronique de confirmation, vous pouvez revenir dans la console pour continuer à construire vos applications.
 
-Si votre demande en ligne ne peut pas être traitée pour votre pays ou votre région, contactez l'équipe {{site.data.keyword.Bluemix_notm}} Sales via le lien listé sur la page
-[Support {{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
+Si votre demande en ligne ne peut pas être traitée pour votre pays ou votre région, contactez le service commercial {{site.data.keyword.Bluemix_notm}} via le lien affiché sur la page [ Support {{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
 
-Vous pouvez convertir votre compte Paiement à la carte en compte d'abonnement à tout moment. Contactez l'équipe
-{{site.data.keyword.Bluemix_notm}} Sales à l'aide du lien listé sur la page
-[Support {{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
+Vous pouvez convertir votre compte Paiement à la carte en compte d'abonnement à tout moment. Contactez le service commercial {{site.data.keyword.Bluemix_notm}} en utilisant le lien affiché sur la page [Support {{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
 
 ### Compte d'abonnement
 
@@ -100,7 +96,7 @@ Avec un compte d'abonnement, vous pouvez créer plusieurs groupes de ressources 
 
 Vous vous engagez à dépenser une somme minimale par mois et recevez une remise sur abonnement qui est appliquée à ce montant minimal. Vous payez également toute utilisation dépassant le montant minimal.
 
-Pour souscrire à un compte Subscription (Abonnement) et pour plus d'informations sur les tarifs et les remises associés à ces comptes, vous devez contacter l'équipe {{site.data.keyword.Bluemix_notm}} Sales via le lien listé sur la page [Support {{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
+Pour souscrire à un compte Abonnement et pour plus d'informations sur les tarifs et les remises associés à ces comptes, vous devez contacter l'équipe {{site.data.keyword.Bluemix_notm}} Sales via le lien listé sur la page [Support {{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
 
 ### Compte {{site.data.keyword.Bluemix_dedicated_notm}}
 
@@ -109,31 +105,23 @@ Pour souscrire à un compte Subscription (Abonnement) et pour plus d'information
    * Une connectivité du réseau privé virtuel vers votre infrastructure
    * Un environnement entièrement redondant dans un centre de données {{site.data.keyword.BluSoftLayer_notm}}
    * Tous les contextes d'exécution pris en charge (IBM Java Liberty, Node.js et des contextes d'exécution open source intégrés)
-   * Tous les services dédiés que vous avez sélectionnés et tous les services {{site.data.keyword.Bluemix_notm}}
-publics
+   * Tous les services dédiés sélectionnés et tous les services {{site.data.keyword.Bluemix_notm}} publics
    * Le support {{site.data.keyword.Bluemix_notm}} standard
 
-Vous pouvez aussi
-commander des éléments facultatifs tels que SoftLayer DirectLink ou des options de support premium. Contactez l'équipe
-[{{site.data.keyword.Bluemix_notm}} Sales ![Icône de lien externe](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}
-pour plus d'informations.
+Vous pouvez aussi commander des éléments facultatifs tels que SoftLayer DirectLink ou des options de support premium. Contactez l'équipe [{{site.data.keyword.Bluemix_notm}} Sales ![Icône de lien externe](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} pour plus d'informations.
 
-Le prix que vous payez chaque mois au cours de cet engagement dépend des services dédiés que vous choisissez et inclut un compte d'abonnement qui vous permet d'accéder à tous les services publics. Le prix de l'utilisation des services dans l'environnement {{site.data.keyword.Bluemix_notm}} public est calculé selon votre contrat de compte d'abonnement. Vous recevez une facture pour tous les services que vous utilisez au-delà de la franchise
-définie dans le contrat d'abonnement. Contactez votre représentant de compte désigné par IBM ou [{{site.data.keyword.Bluemix_notm}} Sales ![Icône de lien externe](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} pour mettre en oeuvre votre contrat.
+Le prix que vous payez chaque mois au cours de cet engagement dépend des services dédiés que vous choisissez et inclut un compte d'abonnement qui vous permet d'accéder à tous les services publics. Le prix de l'utilisation des services dans l'environnement {{site.data.keyword.Bluemix_notm}} public est calculé selon votre contrat de compte d'abonnement. Vous recevez une facture pour tous les services que vous utilisez au-delà de la franchise définie dans le contrat d'abonnement. Contactez votre représentant de compte désigné par IBM ou [{{site.data.keyword.Bluemix_notm}} Sales ![Icône de lien externe](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} pour mettre en oeuvre votre contrat.
 
 ### Compte {{site.data.keyword.Bluemix_local_notm}}
 
 {{site.data.keyword.Bluemix_local_notm}} exige un engagement minimal d'un an qui inclut :
 
-   * Une fonction de distribution appelée relais qui permet à IBM de se connecter à votre déploiement local et de distribuer des mises à jour
-automatiquement et de manière cohérente
+   * Une fonction de distribution appelée relais qui permet à IBM de se connecter à votre déploiement local et de distribuer des mises à jour automatiquement et de manière cohérente
    * Tous les contextes d'exécution pris en charge (IBM Java Liberty, Node.js et des contextes d'exécution open source intégrés)
-   * Tous les services locaux que vous avez sélectionnés, ainsi que l'accès à tous
-les services {{site.data.keyword.Bluemix_notm}} publics
+   * Tous les services locaux que vous avez sélectionnés, ainsi que l'accès à tous les services {{site.data.keyword.Bluemix_notm}} publics
    * Le support {{site.data.keyword.Bluemix_notm}} standard
 
-Le prix que vous payez chaque mois au cours de cet engagement dépend des services locaux que vous choisissez et inclut un compte d'abonnement qui vous permet d'accéder à tous les services publics. Le prix de l'utilisation des services dans l'environnement {{site.data.keyword.Bluemix_notm}} public est calculé selon votre contrat de compte d'abonnement. Vous recevez une facture pour tous les services que vous utilisez au-delà de la franchise
-définie dans le contrat d'abonnement. Contactez votre représentant de compte désigné par IBM ou [{{site.data.keyword.Bluemix_notm}} Sales ![Icône de lien externe](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} pour mettre en oeuvre votre contrat.
+Le prix que vous payez chaque mois au cours de cet engagement dépend des services locaux que vous choisissez et inclut un compte d'abonnement qui vous permet d'accéder à tous les services publics. Le prix de l'utilisation des services dans l'environnement {{site.data.keyword.Bluemix_notm}} public est calculé selon votre contrat de compte d'abonnement. Vous recevez une facture pour tous les services que vous utilisez au-delà de la franchise définie dans le contrat d'abonnement. Contactez votre représentant de compte désigné par IBM ou [{{site.data.keyword.Bluemix_notm}} Sales ![Icône de lien externe](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} pour mettre en oeuvre votre contrat.
 
 ## Compte promotionnel
 {: #promo}
@@ -142,7 +130,7 @@ Les comptes de type Promo, proposés à l'occasion de promotions spéciales, son
    
 Un compte de type Promo vous donne accès à un groupe de ressources unique, créé pour vous et nommé `Default`. Toutes vos instances de service gérées par IAM sont automatiquement ajoutées à ce groupe de ressources. Vous pouvez mettre à jour ce groupe de ressources à tout moment. Pour la procédure détaillée, voir [Changement de nom d'un groupe de ressources](/docs/admin/resource-groups.html#renaming-a-resource-group). 
 
-Chaque groupe de ressources est gratuit. Lorsque vous créez une connexion entre un service géré par IAM et une application Cloud Foundry, vous créez un alias, qui est une instance de service comptabilisée dans votre quota. Voir [Qu'est-ce qu'un alias ?](/docs/manageapps/connecting_apps.html#what_is_alias).
+Chaque groupe de ressources est gratuit. Lorsque vous créez une connexion entre un service géré par IAM et une application Cloud Foundry, vous créez un alias, qui est une instance de service comptabilisée dans votre quota. Voir [Qu'est-ce qu'un alias ?](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}
 
 ### Que se passe-t-il lorsque mon compte promotionnel arrive à expiration ?
@@ -154,5 +142,4 @@ Pour redémarrer vos applications, convertissez votre compte en compte payant, s
 
 Si vous ne convertissez pas votre compte une fois celui-ci arrivé à expiration, vos applications et services sont supprimées au bout de 30 jours. Toutefois, votre compte ne sera pas supprimé et vous pourrez vous connecter et effectuer une mise à niveau vers un compte facturable n'importe quand. Vous recevrez également des notifications par courrier électronique pour vous rappeler qu'il vous faut créer un compte facturable pour ne pas perdre vos paramètres d'applications et vos configurations de services. Si vous préférez ne pas recevoir de notifications de {{site.data.keyword.Bluemix_notm}}, vous pouvez vous désabonner à tout moment.
 
-Si vous convertissez votre compte, les franchises sont celles normalement proposées par chaque service. Elles
-ne sont plus illimitées comme celles proposées par de nombreux services IBM au cours de l'essai gratuit.
+Si vous convertissez votre compte, les franchises sont celles normalement proposées par chaque service. Elles ne sont plus illimitées comme celles proposées par de nombreux services IBM au cours de l'essai gratuit.
