@@ -34,6 +34,6 @@
 
     {: .navgroup id="help"}
     account_faq.md
-    [IBM Cloud へのアクセスに関するトラブルシューティング](../troubleshoot/ts_accessing.html)
-    [アカウントの管理に関するトラブルシューティング](../troubleshoot/ts_accounts.html)
+    ts_accessing.md
+    ts_accounts.md
     {: .navgroup-end}
