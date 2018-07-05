@@ -35,6 +35,6 @@ para organização de usuários, equipes, aplicativos](https://console.bluemix.n
 
     {: .navgroup id="help"}
     account_faq.md
-    [Resolução de problemas para acessar o IBM Cloud](../troubleshoot/ts_accessing.html)
-    [Resolução de problemas para gerenciar contas](../troubleshoot/ts_accounts.html)
+    ts_accessing.md
+    ts_accounts.md
     {: .navgroup-end}
