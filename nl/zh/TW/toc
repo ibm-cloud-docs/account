@@ -34,6 +34,6 @@
 
     {: .navgroup id="help"}
     account_faq.md
-    [IBM Cloud 存取的疑難排解](../troubleshoot/ts_accessing.html)
-    [管理帳戶的疑難排解](../troubleshoot/ts_accounts.html)
+    ts_accessing.md
+    ts_accounts.md
     {: .navgroup-end}
