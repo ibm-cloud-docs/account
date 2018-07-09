@@ -31,13 +31,19 @@ A Lite plan is a free quota-based service plan. You can use a service Lite plan 
 
 Reaching any quota limit for Lite plan instances suspends the service for that month. Quota limits are per org, not per instance. New instances created in the same org reflect any usage from previous instances. The quota limits reset on the 1st of every month.
 
+## How many resource groups, orgs, or spaces can I create?
+{: #resourcelimit}
+
+If you have a billable account, there is not a limit on the number of resource groups, orgs, or spaces that you can create within your account. However, if you have a Lite account, you are limited to one org and one resource group.
+
 ## How do I upgrade or change my account type?
 {: #changeacct}
 
 * To convert your 30-day trial to a Lite account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg). After confirming eligibility, the Sales team shares a unique link that you can use to try to convert your account. Successful conversion is not guaranteed as Lite accounts are not entirely compatible with 30-day trials.  
-* To upgrade from a Lite to a Pay-As-You-Go account, go to **Manage > Billing and Usage > Billing** and click **Add Credit Card**.
+* To upgrade from a Lite to a Pay-As-You-Go aßccount, go to **Manage > Billing and Usage > Billing** and click **Add Credit Card**.
+* To upgrade from a Lite to a Subscription account, go to **Manage > Billing and Usage > Billing** and click **Learn more**.
 * To convert your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg).
-
+* 
 ## If I upgrade my Lite account, can I continue using my existing instances?
 {: #nochange}
 
@@ -64,11 +70,6 @@ You must contact IBM Cloud Support to open a support ticket and request that you
 For help with getting up and running in {{site.data.keyword.Bluemix_notm}} or navigating {{site.data.keyword.Bluemix_notm}}, start a conversation with us by using the chat icon in the console.
 
 You can also check out a number of helpful resources that are available in the [Support Center ![External link icon](../icons/launch-glyph.svg)](https://console.bluemix.net/unifiedsupport/supportcenter){: new_window}. From there, you can access Stack Overflow to post a question to our developer community. You can also submit a support ticket.
-
-## How many resource groups, orgs, or spaces can I create?
-{: #resourcelimit}
-
-If you have a billable account, there is not a limit on the number of resource groups, orgs, or spaces that you can create within your account. However, if you have a Lite account, you are limited to one org and one resource group.
 
 ## Can I sign up for a free trial?
 {: #freetrial}
