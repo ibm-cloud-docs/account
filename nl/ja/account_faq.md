@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-21"
+lastupdated: "2018-06-26"
 
 ---
 
@@ -68,7 +68,7 @@ lastupdated: "2018-05-21"
 ## 無料トライアルに登録できますか?
 {: #freetrial}
 
-認定された学術機関の教師および生徒は {{site.data.keyword.Bluemix_notm}} トライアル・アカウントを使用できます。トライアル・アカウントの資格を得るには、[onthehub.com/ibm ![外部リンク・アイコン](../icons/launch-glyph.svg)](http://onthehub.com/ibm){: new_window} にアクセスし、機関の資格情報を検証します。
+認定された学術機関の教師および生徒は {{site.data.keyword.Bluemix_notm}} トライアル・アカウントを使用できます。 トライアル・アカウントの資格を得るには、[onthehub.com/ibm ![外部リンク・アイコン](../icons/launch-glyph.svg)](http://onthehub.com/ibm){: new_window} にアクセスし、機関の資格情報を検証します。
 
 ## アカウントをリンクした後、ログインするにはどうすればよいですか?
 {: #al_login}
@@ -107,7 +107,7 @@ lastupdated: "2018-05-21"
 ## 今アカウントをリンクすると何かインセンティブはありますか? 
 {: #al_incent}
 
-はい。  アカウントを今すぐリンクすると、$ 200 クレジットを使用して PaaS サービスを試すことができます。
+アカウントを今すぐリンクすると、プロモーション・クレジットを使用して {{site.data.keyword.Bluemix_notm}} サービスを試すことができます。
 
 ## {{site.data.keyword.Bluemix_notm}} プラットフォーム・サービスを SoftLayer アカウントに追加するとはどういう意味ですか? 
 {: #al_owaffslacct}
