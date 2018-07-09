@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-02"
+lastupdated: "2018-07-09"
 
 ---
 
@@ -29,7 +29,7 @@ General problems with accessing {{site.data.keyword.Bluemix}} might include diff
 
 You must have a valid password that's associated with your IBMid to log in to the {{site.data.keyword.Bluemix_notm}} console.
 
-You must have a valid password that's associated with your IBMid or linked account ID to log in through the [{{site.data.keyword.slportal}}](https://control.softlayer.com).
+You must also have a valid password that's associated with your IBMid or linked account ID to log in through the [{{site.data.keyword.slportal}}](https://control.softlayer.com).
 
 When you try to log in to {{site.data.keyword.Bluemix_notm}}, the following error message is displayed:
 {: tsSymptoms}
