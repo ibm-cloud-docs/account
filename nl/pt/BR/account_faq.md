@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-21"
+lastupdated: "2018-06-26"
 
 ---
 
@@ -107,7 +107,7 @@ Se o link não for uma opção viável para você, entre em contato com o suport
 ## Há incentivos para vincular as minhas contas agora? 
 {: #al_incent}
 
-Sim!  Se você vincular suas contas agora, será possível usar um crédito de U$ 200 para tentar serviços PaaS.
+Se você vincular suas contas agora, será possível usar um crédito promocional para experimentar serviços do {{site.data.keyword.Bluemix_notm}}.
 
 ## O que a inclusão dos serviços de plataforma do {{site.data.keyword.Bluemix_notm}} em minha conta do SoftLayer significa? 
 {: #al_owaffslacct}

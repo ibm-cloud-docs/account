@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-31"
+lastupdated: "2018-06-26"
 
 ---
 
@@ -84,7 +84,7 @@ Se você vincular sua conta Pay As You Go a uma conta do SoftLayer, começando n
 
 É possível fazer upgrade para uma conta Pay As You Go por meio do console do {{site.data.keyword.Bluemix_notm}}. Depois de fornecer suas informações de faturamento e cartão de crédito, aceite os termos e condições e envie sua solicitação de conta. Em seguida, seu cartão de crédito será validado. Você também receberá um e-mail de confirmação sobre as informações da conta. Alguns minutos após o recebimento do e-mail de confirmação será possível retornar ao console para continuar a construção de seus apps. Se a sua solicitação on-line não puder ser processada para seu país ou região, entre em contato com o [Suporte ao {{site.data.keyword.Bluemix_notm}}](/docs/get-support/howtogetsupport.html).
 
-Você obterá um crédito promocional de US$ 200 depois de fazer upgrade para uma conta Pay As You Go e não será necessária nenhuma ação para começar a utilizá-lo. Seu crédito de US$ 200 é válido por 30 dias e é aplicado automaticamente à sua fatura. O crédito não pode ser usado com infraestrutura ou ofertas de terceiros.
+Você obterá um crédito promocional de US$ 200 depois de fazer upgrade para uma conta Pay As You Go e não será necessária nenhuma ação para começar a utilizá-lo. Seu crédito de US$ 200 é válido por 30 dias e é aplicado automaticamente à sua fatura. O crédito não pode ser usado com ofertas de terceiros.
 
 ### Fazendo upgrade de sua conta
 {: #upgrade-to-subscription}
