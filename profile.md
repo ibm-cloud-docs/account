@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-04-06"
+lastupdated: "2018-07-10"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-04-06"
 # Setting up your profile
 {: #usersettings}
 
-When you are first getting started with {{site.data.keyword.Bluemix}}, set up your account profile. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **View Profile** to set or update your profile settings.
+When you are first getting started with {{site.data.keyword.Bluemix}}, set up your account profile. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Profile & account** to set or update your profile settings.
 {:shortdesc}
 
 You can set or update the following information:
@@ -33,7 +33,7 @@ If you're an administrator for {{site.data.keyword.Bluemix_local_notm}} or {{sit
 ## Changing your profile photo
 {: #photo notoc}
 
-Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **View Profile**.
+Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Profile & account**.
 
   * To add a photo, click **UPLOAD A PHOTO**.
   * To replace your current photo with a new one, click **CHANGE PHOTO**.
@@ -46,7 +46,7 @@ An IBMid is a single ID that you use to log in to your {{site.data.keyword.Bluem
 
 You can't change your IBMid, but you can edit your profile information that is associated with it, such as your name, email, phone number, password, or company name.
 
-1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **View Profile**.
+1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Profile & account**.
 2. Click **edit your IBMid**.
 3. Edit your user information.
 4. Click **Save**.
@@ -60,5 +60,5 @@ If you choose to disable tracking, you might not be able to use some features, s
 
 To disable analytics tracking, complete the following steps:
 
-1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **View Profile**.
+1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Profile & account**.
 2. Set analytics tracking to **off**.
