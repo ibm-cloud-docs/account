@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-21"
+lastupdated: "2018-06-26"
 
 ---
 
@@ -106,7 +106,7 @@ lastupdated: "2018-05-21"
 ## 立即链接帐户有奖励吗？ 
 {: #al_incent}
 
-有！如果您立即链接帐户，可以使用 200 美元信用值来试用 PaaS 服务。
+如果您立即链接帐户，那么可以使用促销信用值来试用 {{site.data.keyword.Bluemix_notm}} 服务。
 
 ## 向 SoftLayer 帐户添加 {{site.data.keyword.Bluemix_notm}} 平台服务意味着什么？ 
 {: #al_owaffslacct}

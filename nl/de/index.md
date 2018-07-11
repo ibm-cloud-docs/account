@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-31"
+lastupdated: "2018-06-26"
 
 ---
 
@@ -81,7 +81,7 @@ Wenn Sie Ihr Konto mit nutzungsabhängiger Zahlung mit einem SoftLayer-Konto ver
 
 Über die {{site.data.keyword.Bluemix_notm}}-Konsole können Sie ein Upgrade auf ein Konto mit nutzungsabhängiger Zahlung durchführen. Geben Sie zunächst Ihre Abrechnungs- und Kreditkarteninformationen an, akzeptieren Sie dann die Vertragsbedingungen und übergeben Sie anschließend die Anforderung. Es wird eine Überprüfung Ihrer Kreditkarte durchgeführt. Außerdem erhalten Sie eine Bestätigungs-E-Mail zu den Kontoinformationen. Einige Minuten nach Empfang der Bestätigungs-E-Mail können Sie zur Konsole zurückkehren, um mit der Erstellung Ihrer Apps fortzufahren. Wenn Ihre Onlineanforderung für Ihr Land oder Ihre Region nicht verarbeitet werden kann, wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}}-Support](/docs/get-support/howtogetsupport.html).
 
-Nach dem Upgrade auf ein Konto mit nutzungsabhängiger Zahlung erhalten Sie eine Werbegutschrift in Höhe von 200 US-Dollar, die Sie nutzen können, ohne dass hierfür weitere Aktionen ausgeführt werden müssen. Die Gutschrift von 200 US-Dollar hat eine Gültigkeit von 30 Tagen und wird automatisch mit Ihrer Rechnung verrechnet. Die Gutschrift kann nicht mit Infrastrukturangeboten oder Angeboten anderer Anbieter verwendet werden.
+Nach dem Upgrade auf ein Konto mit nutzungsabhängiger Zahlung erhalten Sie eine Werbegutschrift in Höhe von 200 US-Dollar, die Sie nutzen können, ohne dass hierfür weitere Aktionen ausgeführt werden müssen. Die Gutschrift von 200 US-Dollar hat eine Gültigkeit von 30 Tagen und wird automatisch mit Ihrer Rechnung verrechnet. Die Gutschrift kann nicht mit Angeboten anderer Anbieter verwendet werden. 
 
 ### Upgrade für Konto durchführen
 {: #upgrade-to-subscription}

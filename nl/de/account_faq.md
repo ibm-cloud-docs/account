@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-21"
+lastupdated: "2018-06-26"
 
 ---
 
@@ -107,7 +107,7 @@ Falls ein Verknüpfen für Sie nicht in Frage kommt, wenden Sie sich an Ihre Ver
 ## Gibt es momentan Incentives für das Verknüpfen meiner Konten? 
 {: #al_incent}
 
-Ja!  Wenn Sie Ihren Konten jetzt verknüpfen, erhalten Sie eine Gutschrift über 200 US-Dollar, um PaaS-Services auszuprobieren.
+Wenn Sie Ihre Konten jetzt verknüpfen, erhalten Sie im Rahmen einer Werbeaktion eine Gutschrift zum Ausprobieren der {{site.data.keyword.Bluemix_notm}}-Services. 
 
 ## Was bedeutet es, {{site.data.keyword.Bluemix_notm}}-Plattformservices zu meinem SoftLayer-Konto hinzuzufügen? 
 {: #al_owaffslacct}
