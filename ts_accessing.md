@@ -191,4 +191,4 @@ Complete one or more of the following actions, as necessary:
   * Use the private browsing mode of your browser.
   * Clear the cookies and the cache of the browser.
   * Use a different browser. For information about the versions of the browsers that are supported by {{site.data.keyword.Bluemix_notm}}, see [{{site.data.keyword.Bluemix_notm}} prerequisites](/docs/overview/prereqs.html#prereqs).
-  * If you installed the cf command line interface, enter the `cf apps` command to see whether your app is running.
+  * If you installed the Cloud Foundry command line interface, enter the `cf apps` command to see whether your app is running.

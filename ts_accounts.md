@@ -152,7 +152,7 @@ To create a space, use one of the following methods:
 {: tsResolve}
 
   * From the console menu bar, click **Manage > Account > Organizations**. Then, select the organization in which you want to create the space, and click **Create a Space**.
-  * In the cf command line interface, type `cf create-space <space_name> -o <organization_name>`.
+  * In the Cloud Foundry command line interface, type `cf create-space <space_name> -o <organization_name>`.
 
 
 ## Apps share the same domain name
@@ -180,7 +180,7 @@ As an administrator, you can't see all the organizations by using the {{site.dat
 This is a limitation of the {{site.data.keyword.Bluemix_notm}} user interface.
 {: tsCauses}
 
-You can use commands such as `cf orgs`, `cf create-org`, and `cf delete-org` from the cf command line interface to manage all the organizations. For a full list of cf commands, enter `cf help`.
+You can use commands such as `cf orgs`, `cf create-org`, and `cf delete-org` from the Cloud Foundry command line interface to manage all the organizations. For a full list of cf commands, enter `cf help`.
 {: tsResolve}
 
 ## Credit card can't be added
