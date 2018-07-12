@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-31"
+lastupdated: "2018-06-26"
 
 ---
 
@@ -81,7 +81,7 @@ Si vous liez votre compte Paiement à la carte à un compte SoftLayer, à compte
 
 Vous pouvez effectuer une mise à niveau vers un compte Paiement à la carte depuis la console {{site.data.keyword.Bluemix_notm}}. Après avoir fourni vos informations de facturation et de carte de crédit, acceptez les dispositions du contrat et soumettez votre demande de compte. Votre carte de crédit sera alors validée. Vous recevrez également un courrier électronique de confirmation concernant les informations relatives au compte. Quelques minutes après la réception du courrier électronique de confirmation, vous pouvez revenir dans la console pour continuer à construire vos applications. Si votre demande en ligne ne peut pas être traitée pour votre pays ou votre région, contactez le [Support {{site.data.keyword.Bluemix_notm}}](/docs/get-support/howtogetsupport.html).
 
-Vous bénéficiez d'un crédit promotionnel de $ 200 après la mise à niveau vers un compte Paiement à la carte et aucune intervention n'est requise pour pouvoir l'utiliser. Votre crédit de $ 200 est valide pendant 30 jours et automatiquement pris en compte dans votre facture. Ce crédit ne peut pas être utilisé sur des offres d'infrastructure ou de tiers.
+Vous bénéficiez d'un crédit promotionnel de $ 200 après la mise à niveau vers un compte Paiement à la carte et aucune intervention n'est requise pour pouvoir l'utiliser. Votre crédit de $ 200 est valide pendant 30 jours et automatiquement pris en compte dans votre facture. Ce crédit ne peut pas être utilisé sur des offres de tiers.
 
 ### Mise à niveau de votre compte
 {: #upgrade-to-subscription}

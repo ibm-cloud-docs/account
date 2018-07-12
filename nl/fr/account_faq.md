@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-21"
+lastupdated: "2018-06-26"
 
 ---
 
@@ -34,9 +34,9 @@ Lorsque la limite de quota relative aux instances de plan Lite est atteinte, le 
 ## Comment mettre à niveau ou modifier mon type de compte ?
 {: #changeacct}
 
-* Pour convertir votre essai de 30 jours en compte Lite, prenez contact avec le [service commercial {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg). Après avoir confirmé l'éligibilité, l'équipe commerciale partage un lien unique que vous pouvez utiliser pour essayer de convertir votre compte. La conversion n'est pas garantie car les comptes Lite ne sont pas totalement compatibles avec les essais de 30 jours.  
+* Pour convertir votre essai de 30 jours en compte Lite, prenez contact avec le [service commercial {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg). Après avoir confirmé l'éligibilité, l'équipe commerciale partage un lien unique que vous pouvez utiliser pour essayer de convertir votre compte. La conversion n'est pas garantie car les comptes Lite ne sont pas totalement compatibles avec les essais de 30 jours.  
 * Pour effectuer une mise à niveau d'un compte Lite vers un compte Paiement à la carte, accédez à **Gérer > Facturation et utilisation > Facturation** et cliquez sur **Ajouter une carte de crédit**.
-* Pour convertir votre compte Paiement à la carte en compte Abonnement, prenez contact avec le [service commercial {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg).
+* Pour convertir votre compte Paiement à la carte en compte Abonnement, prenez contact avec le [service commercial {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg).
 
 ## Si je mets à niveau mon compte Lite, puis-je continuer d'utiliser mes instances existantes ?
 {: #nochange}
@@ -68,7 +68,7 @@ Si vous avez un compte facturable, le nombre de groupes de ressources, d'organis
 ## Puis-je souscrire à un essai gratuit ?
 {: #freetrial}
 
-Des comptes d'essai {{site.data.keyword.Bluemix_notm}} sont disponibles pour les enseignants et les étudiants d'institutions académiques accréditées. Pour être éligible pour un compte d'essai, accédez au site [onthehub.com/ibm ![External link icon](../icons/launch-glyph.svg)](http://onthehub.com/ibm){: new_window} et validez l'accréditation de votre institution.
+Des comptes d'essai {{site.data.keyword.Bluemix_notm}} sont disponibles pour les enseignants et les étudiants d'institutions académiques accréditées. Pour être éligible pour un compte d'essai, accédez au site [onthehub.com/ibm ![Icône de lien externe](../icons/launch-glyph.svg)](http://onthehub.com/ibm){: new_window} et validez l'accréditation de votre institution.
 
 ## Après avoir lié mon compte, comment puis-je me connecter ?
 {: #al_login}
@@ -107,12 +107,12 @@ Si la liaison n'est pas une option envisageable pour vous, renseignez-vous aupr�
 ## Des primes s'appliquent-elles si je lie mes comptes maintenant ? 
 {: #al_incent}
 
-Oui !  Si vous liez vos comptes maintenant, vous pouvez utiliser un crédit de 200 $ afin d'essayer des services PaaS.
+Si vous liez vos comptes maintenant, vous pouvez utiliser un crédit promotionnel afin d'essayer des services {{site.data.keyword.Bluemix_notm}}.
 
 ## Que se passe-t-il si j'ajoute des services de plateforme {{site.data.keyword.Bluemix_notm}} à mon compte SoftLayer ? 
 {: #al_owaffslacct}
 
-Avec cet ajout, votre compte a accès à toutes les offres de plateforme {{site.data.keyword.Bluemix_notm}}.  Une fois que vous avez ajouté l'offre de plateforme {{site.data.keyword.Bluemix_notm}} à votre compte, votre responsable de compte doit activer l'accès à l'offre pour l'utilisateur final.
+Avec cet ajout, votre compte a accès à toutes les offres de la plateforme {{site.data.keyword.Bluemix_notm}}. Une fois que vous avez ajouté l'offre de plateforme {{site.data.keyword.Bluemix_notm}} à votre compte, votre responsable de compte doit activer l'accès à l'offre pour l'utilisateur final.
 
 Si vous êtes responsable de compte, consultez la rubrique [Gestion des utilisateurs](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) pour en savoir plus.
 
