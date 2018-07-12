@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-21"
+lastupdated: "2018-06-26"
 
 ---
 
@@ -108,7 +108,7 @@ lastupdated: "2018-05-21"
 ## 立即鏈結帳戶有獎勵嗎？ 
 {: #al_incent}
 
-是的！現在鏈結帳戶，您就可以使用 200 美元的額度來試用 PaaS 服務。
+現在鏈結帳戶，您就可以使用促銷額度來試用 {{site.data.keyword.Bluemix_notm}} 服務。
 
 ## 將 {{site.data.keyword.Bluemix_notm}} 平台服務新增至我的 SoftLayer 帳戶有什麼涵義？ 
 {: #al_owaffslacct}

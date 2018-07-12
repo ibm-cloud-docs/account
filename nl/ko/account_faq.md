@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-21"
+lastupdated: "2018-06-26"
 
 ---
 
@@ -68,7 +68,7 @@ lastupdated: "2018-05-21"
 ## 무료 평가판을 위해 등록할 수 있습니까?
 {: #freetrial}
 
-공인 교육 기관의 교직원 및 학생은 {{site.data.keyword.Bluemix_notm}} 평가판 계정을 사용할 수 있습니다. 평가판 계정 사용 자격을 얻으려면 [onthehub.com/ibm ![외부 링크 아이콘](../icons/launch-glyph.svg)](http://onthehub.com/ibm){: new_window}으로 이동한 후 자신의 기관 신임 정보를 유효성 검증하십시오. 
+공인 교육 기관의 교직원 및 학생은 {{site.data.keyword.Bluemix_notm}} 평가판 계정을 사용할 수 있습니다. 평가판 계정 사용 자격을 얻으려면 [onthehub.com/ibm ![외부 링크 아이콘](../icons/launch-glyph.svg)](http://onthehub.com/ibm){: new_window}으로 이동한 후 자신의 기관 신임 정보를 유효성 검증하십시오.
 
 ## 계정을 연결한 후에는 어떻게 로그인합니까?
 {: #al_login}
@@ -106,7 +106,7 @@ lastupdated: "2018-05-21"
 ## 지금 계정을 연결하면 얻을 수 있는 혜택이 있습니까? 
 {: #al_incent}
 
-예!  지금 계정을 연결하면 PaaS 서비스를 이용해 보는 데 사용할 수 있는 $200의 크레딧이 제공됩니다.
+지금 계정을 연결하면 프로모션 크레딧을 사용하여 {{site.data.keyword.Bluemix_notm}} 서비스를 사용해 볼 수 있습니다.
 
 ## {{site.data.keyword.Bluemix_notm}} 플랫폼 서비스를 SoftLayer 계정에 추가한다는 것은 무슨 의미입니까? 
 {: #al_owaffslacct}

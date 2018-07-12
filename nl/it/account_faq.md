@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-21"
+lastupdated: "2018-06-26"
 
 ---
 
@@ -107,7 +107,7 @@ Se il collegamento non è un'opzione valida per te, contatta il supporto delle v
 ## Ci sono incentivi per collegare i miei account in questo momento? 
 {: #al_incent}
 
-Sì.  Se colleghi i tuoi account adesso, puoi utilizzare un credito di $200 per provare i servizi PaaS.
+Se colleghi i tuoi account adesso, puoi utilizzare un credito promozionale per provare i servizi {{site.data.keyword.Bluemix_notm}} .
 
 ## Cosa significa aggiungere i servizi della piattaforma {{site.data.keyword.Bluemix_notm}} al mio account SoftLayer? 
 {: #al_owaffslacct}

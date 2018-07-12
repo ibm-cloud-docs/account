@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-31"
+lastupdated: "2018-06-26"
 
 ---
 
@@ -81,7 +81,7 @@ Se colleghi il tuo account Pagamento a consumo a un account SoftLayer, a partire
 
 Puoi eseguire l'aggiornamento a un account Pagamento a consumo dalla console {{site.data.keyword.Bluemix_notm}}. Dopo aver fornito le informazioni di fatturazione e carta di credito, accetta i termini e le condizioni e invia la richiesta di account. La tua carta di credito viene quindi convalidata. Ricevi anche un'e-mail di conferma in merito alle informazioni sull'account. Qualche minuto dopo aver ricevuto l'e-mail di conferma, puoi tornare alla console per continuare a creare le tue applicazioni. Se non è possibile elaborare la tua richiesta online per il tuo paese o la tua regione, contatta il [Supporto {{site.data.keyword.Bluemix_notm}}](/docs/get-support/howtogetsupport.html).
 
-Dopo aver eseguito l'aggiornamento a un account Pagamento a consumo ottieni un credito promozionale di $200 e non dovrai eseguire alcuna operazione per iniziare a utilizzarlo. Il tuo credito di $200 è valido per 30 giorni e viene applicato automaticamente alla tua fattura. Il credito non può essere utilizzato con le offerte dell'infrastruttura o di terze parti.
+Dopo aver eseguito l'aggiornamento a un account Pagamento a consumo ottieni un credito promozionale di $200 e non dovrai eseguire alcuna operazione per iniziare a utilizzarlo. Il tuo credito di $200 è valido per 30 giorni e viene applicato automaticamente alla tua fattura. Il credito non può essere utilizzato con le offerte di terze parti.
 
 ### Aggiornamento del tuo account
 {: #upgrade-to-subscription}
