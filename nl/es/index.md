@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-31"
+lastupdated: "2018-06-26"
 
 ---
 
@@ -81,7 +81,7 @@ Si enlaza su cuenta de Pago según uso con una cuenta de SoftLayer, a partir del
 
 Puede actualizar a una cuenta de Pago según uso desde la consola de {{site.data.keyword.Bluemix_notm}}. Tras proporcionar la información de la tarjeta de crédito y la facturación, acepte los términos y condiciones y envíe una solicitud de cuenta. A continuación, la tarjeta de crédito se valida. También recibirá un correo electrónico de confirmación sobre la información de cuenta. Transcurridos algunos minutos tras la recepción del correo electrónico de confirmación, puede volver a la consola para continuar creando sus apps. Si no se puede procesar su solicitud en línea para su país o región, póngase en contacto con el [Soporte de {{site.data.keyword.Bluemix_notm}}](/docs/get-support/howtogetsupport.html).
 
-Obtendrá un crédito promocional de 200 dólares después de actualizar a una cuenta de Pago según uso, y no hay medidas necesarias para que empiece a utilizarlo. Su crédito de 200 dólares es válido durante 30 días y se aplica automáticamente a su factura. El crédito no puede utilizarse con ofertas de infraestructura ni de terceros.
+Obtendrá un crédito promocional de 200 dólares después de actualizar a una cuenta de Pago según uso, y no hay medidas necesarias para que empiece a utilizarlo. Su crédito de 200 dólares es válido durante 30 días y se aplica automáticamente a su factura. El crédito no puede utilizarse con ofertas de terceros.
 
 ### Actualización de la cuenta
 {: #upgrade-to-subscription}

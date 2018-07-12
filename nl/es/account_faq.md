@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-21"
+lastupdated: "2018-06-26"
 
 ---
 
@@ -106,7 +106,7 @@ Si el enlace no es una opción viable en su caso, póngase en contacto con el so
 ## ¿Hay incentivos para enlazar mis cuentas ahora? 
 {: #al_incent}
 
-Sí.  Si se enlaza sus cuentas ahora, puede utilizar un crédito de 200 $ para probar los servicios PaaS.
+Si se enlaza sus cuentas ahora, puede utilizar un crédito promocional para probar los servicios de {{site.data.keyword.Bluemix_notm}}.
 
 ## ¿Qué significa añadir los servicios de la plataforma {{site.data.keyword.Bluemix_notm}} a mi cuenta de SoftLayer? 
 {: #al_owaffslacct}
