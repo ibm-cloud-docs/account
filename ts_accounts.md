@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2017-11-09"
+lastupdated: "2018-07-16"
 
 ---
 
@@ -186,7 +186,7 @@ You can use commands such as `cf orgs`, `cf create-org`, and `cf delete-org` fro
 ## Credit card can't be added
 {: #ts_addcc}
 
-You can't submit your credit card information to convert your trial account to a Pay As You Go account.
+You can't submit your credit card information to convert your Lite account to a billable account.
 
 The **Submit** button on the Add credit card page is disabled.
 {: tsSymptoms}
