@@ -27,7 +27,7 @@ General problems with managing your account might include different apps share t
 ## Unable to access a different {{site.data.keyword.Bluemix_notm}} region
 {: #nosecondreg}
 
-You recieve error message when you try to create a new {{site.data.keyword.Bluemix_notm}} region.
+You receive an error message when you try to create a new {{site.data.keyword.Bluemix_notm}} region.
 {: tsSymptoms}
 
 This is likely because you are using a Lite account, which supports development in one public region only. You select the {{site.data.keyword.Bluemix_notm}} public region in which you want to work when the account is first set up.
@@ -39,7 +39,7 @@ If you have a Lite account, you can upgrade to a billable account to access addi
 ## Unable to create new organization
 {: #nosecondorg}
 
-You recieve an error message when you try to create a new organization.
+You receive an error message when you try to create a new organization.
 {: tsSymptoms}
 
 This is likely because you are using a Lite account, which supports development in one organization only. You create the organization when your account is first set up.
