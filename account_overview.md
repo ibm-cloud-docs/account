@@ -18,9 +18,9 @@ lastupdated: "2018-07-19"
 
 Your {{site.data.keyword.Bluemix}} account includes many interacting components and systems. The following diagram and explanation for each component are intended to help you understand how certain components are interrelated, or connected, and how access works across the account. 
 
-![{{site.data.keyword.Bluemix_notm}} account diagram](images/account_diagram.svg "{{site.data.keyword.Bluemix_notm}} account diagram")
-
-For a larger view of the diagram, [click here](https://console.stage1.bluemix.net/docs/api/content/account/images/account_diagram.svg).
+<a href="https://console.stage1.bluemix.net/docs/api/content/account/images/account_diagram.svg">
+  <img src="images/account_diagram.svg" alt="account diagram">
+</a>
 
 Within the diagram, there are two main concepts for the components in the account hierarchy that are important to understand. The use of the solid lines and the dotted lines help illustrate that some components are contained within others, for example, users are added to access groups or Cloud Foundry orgs. However, some components interact with others for the purpose of providing access instead of membership. For example, users are given access to resource groups but are not members of a resource group the same way they are for access groups. These concepts are also explained in the following sections.
 
