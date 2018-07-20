@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-02"
+lastupdated: "2018-07-09"
 
 ---
 
@@ -29,7 +29,7 @@ lastupdated: "2018-05-02"
 
 您必須要有與 IBM ID 相關聯的有效密碼，才能登入 {{site.data.keyword.Bluemix_notm}} 主控台。
 
-您必須要有與 IBM ID 或已鏈結帳戶 ID 相關聯的有效密碼，才能透過 [{{site.data.keyword.slportal}}](https://control.softlayer.com) 登入。
+您也必須要有與 IBM ID 或已鏈結帳戶 ID 相關聯的有效密碼，才能透過 [{{site.data.keyword.slportal}}](https://control.softlayer.com) 登入。
 
 當您嘗試登入 {{site.data.keyword.Bluemix_notm}} 時，顯示下列錯誤訊息：
 {: tsSymptoms}
@@ -101,7 +101,7 @@ lastupdated: "2018-05-02"
 {: tsResolve}
  * 與主要使用者或帳戶管理者聯絡，確定您可以切換至 IBM ID 鑑別。
  * 確定您完成「切換至 IBM ID」步驟。請參閱[切換至 IBM ID](/docs/account/softlayerlink.html)。
- * 確定您遵循**建立使用者 ID 與 IBM ID 的關聯**電子郵件中的動作。檢查您的收件匣及垃圾郵件資料夾，以尋找此電子郵件。若要重新取得電子郵件（例如，如果它已到期），請移至 {{site.data.keyword.slportal}} 中的「編輯使用者設定檔」頁面，然後按一下**重新傳送電子郵件**。或者，請聯絡 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/bluemixsupport.com){: new_window}。
+ * 確定您遵循**建立使用者 ID 與 IBM ID 的關聯**電子郵件中的動作。檢查您的收件匣及垃圾郵件資料夾，以尋找此電子郵件。若要重新取得電子郵件（例如，如果它已到期），請移至 {{site.data.keyword.slportal}} 中的「編輯使用者設定檔」頁面，然後按一下**重新傳送電子郵件**。或者，請與 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/bluemixsupport.com){: new_window} 聯絡。
 
 **附註：**如果您是直接以 IBM ID 來建立您的 IBM ID，則會收到兩封要處理的電子郵件；一封來自 IBM ID 登錄，另一封來自 {{site.data.keyword.Blu_full}}。請務必遵循這兩封電子郵件中的動作。
 

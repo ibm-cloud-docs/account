@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-06-26"
+lastupdated: "2018-07-09"
 
 ---
 
@@ -31,13 +31,19 @@ Un piano Lite è un piano di servizi gratuito basato sulle quote. Puoi utilizzar
 
 Il raggiungimento di qualsiasi limite di quota per le istanze del piano Lite sospende il servizio per quel mese. I limiti di quota sono per organizzazione, non per istanza. Le nuove istanze create nella stessa organizzazione riflettono qualsiasi utilizzo dalle istanze precedenti. I limiti di quota sono reimpostati il primo di ogni mese.
 
+## Quanti gruppi di risorse, organizzazioni o spazi posso creare?
+{: #resourcelimit}
+
+Se hai un account fatturabile, non c'è un limite al numero di gruppi di risorse, organizzazioni o spazi che puoi creare nel tuo account. Tuttavia, se hai un account Lite, sei limitato a una organizzazione e a un gruppo di risorse.
+
 ## Come posso aggiornare o modificare il mio tipo di account?
 {: #changeacct}
 
 * Per convertire la tua versione di prova di 30 giorni in un account Lite, contatta il settore [Vendite {{site.data.keyword.Bluemix_notm}} ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icona link esterno](../icons/launch-glyph.svg). Dopo aver confermato l'idoneità, il team del settore vendite condivide un link univoco che puoi utilizzare per provare a convertire il tuo account. L'esito positivo della conversione non è garantito poiché gli account Lite non sono interamente compatibili con le versioni di prova di 30 giorni.  
 * Per aggiornare un account Lite in un account Pagamento a consumo, vai a **Gestisci > Fatturazione e utilizzo > Fatturazione** e fai clic su **Aggiungi carta di credito**.
+* Per aggiornare un account Lite in un account Sottoscrizione, vai a **Gestisci > Fatturazione e utilizzo > Fatturazione** e fai clic su **Ulteriori informazioni**.
 * Per convertire il tuo account Pagamento a consumo in un account Sottoscrizione, contatta il settore [Vendite {{site.data.keyword.Bluemix_notm}} ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icona link esterno](../icons/launch-glyph.svg).
-
+* 
 ## Se eseguo l'upgrade del mio account Lite, posso continuare a utilizzare le mie istanze esistenti?
 {: #nochange}
 
@@ -53,17 +59,17 @@ Puoi facilmente aggiornare il metodo di pagamento associato al tuo account fattu
 
 Nella console, vai alla pagina **Gestisci > Fatturazione e utilizzo > Fatturazione** e fai clic su **Disattiva account**.
 
+## Come posso eliminare il mio account?
+{: #deleteaccount}
+
+Devi contattare il supporto IBM Cloud per aprire un ticket di supporto e richiedere l'eliminazione del tuo account. Se hai dei dati associati al tuo account precedente che vuoi salvare e passare a un nuovo account, includi queste informazioni nell'e-mail.
+
 ## Come ottengo supporto?
 {: #contactsupport}
 
 Per assistenza su come iniziare a lavorare in {{site.data.keyword.Bluemix_notm}} o esplorare {{site.data.keyword.Bluemix_notm}}, puoi iniziare una conversazione con noi utilizzando l'icona della chat nella console.
 
 Puoi anche controllare una serie di risorse utili disponibili nel [Centro di supporto ![Icona link esterno](../icons/launch-glyph.svg)](https://console.bluemix.net/unifiedsupport/supportcenter){: new_window}. Da lì, puoi accedere a Stack Overflow per inviare una domanda alla nostra community di sviluppatori. Puoi anche inoltrare un ticket di supporto.
-
-## Quanti gruppi di risorse, organizzazioni o spazi posso creare?
-{: #resourcelimit}
-
-Se hai un account fatturabile, non c'è un limite al numero di gruppi di risorse, organizzazioni o spazi che puoi creare nel tuo account. Tuttavia, se hai un account Lite, sei limitato a una organizzazione e a un gruppo di risorse.
 
 ## Posso registrarmi per una versione di prova?
 {: #freetrial}

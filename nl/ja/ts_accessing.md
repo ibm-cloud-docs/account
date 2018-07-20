@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-02"
+lastupdated: "2018-07-09"
 
 ---
 
@@ -29,7 +29,7 @@ lastupdated: "2018-05-02"
 
 {{site.data.keyword.Bluemix_notm}} コンソールにログインするには、IBM ID に関連付けられている有効なパスワードが必要です。
 
-[{{site.data.keyword.slportal}}](https://control.softlayer.com)を介してログインするには、IBM ID またはリンクされたアカウント ID に関連付けられている有効なパスワードが必要です。
+また、[{{site.data.keyword.slportal}}](https://control.softlayer.com)からログインするにも、IBM ID またはリンクされたアカウント ID に関連付けられている有効なパスワードが必要です。
 
 {{site.data.keyword.Bluemix_notm}} にログインしようとすると、以下のエラー・メッセージが表示されます。
 {: tsSymptoms}
@@ -151,7 +151,7 @@ IBM ID を使用してログインすると、ログインに成功したとい�
 IBM ID 認証サービスに問題がある可能性があります。
 {: tsCauses}
 
-[IBM ホーム・ページ ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/us-en/){: new_window} にログインできるかどうか確認してください。ログインできる場合、これはアプリケーション問題であり、後で再試行できます。ログインできない場合、[ヘルプ・デスク ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window} にお問い合わせください。
+[IBM ホーム・ページ ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/us-en/){: new_window} にログインできるかどうか確認してください。 ログインできる場合、これはアプリケーション問題であり、後で再試行できます。 ログインできない場合、[ヘルプ・デスク ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window} にお問い合わせください。
 {: tsResolve}
 
 

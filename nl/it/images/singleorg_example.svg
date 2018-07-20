@@ -40,8 +40,8 @@
      id="namedview85"
      showgrid="false"
      inkscape:zoom="0.98743905"
-     inkscape:cx="170.81922"
-     inkscape:cy="359.92212"
+     inkscape:cx="420.19771"
+     inkscape:cy="372.57469"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -122,14 +122,14 @@
            stroke-dasharray="10"
            xlink:href="#path-1" />
         <text
-           id="IBM-Cloud-Local"
+           id="IBM-Bluemix-Local"
            font-size="20"
            font-weight="bold"
            style="font-weight:bold;font-size:20px;font-family:IBMPlexSans-Bold, 'IBM Plex Sans';fill:#5a6872">
           <tspan
              x="63"
              y="49"
-             id="tspan21">IBM Cloud Locale</tspan>
+             id="tspan21">IBM Bluemix locale</tspan>
         </text>
         <text
            id="Organization-Copy"
@@ -173,7 +173,7 @@
           <tspan
              x="40"
              y="49"
-             id="tspan33">IBM Cloud Dedicato</tspan>
+             id="tspan33">IBM Cloud dedicato</tspan>
         </text>
         <text
            id="Organization"
@@ -217,7 +217,7 @@
           <tspan
              x="31"
              y="64"
-             id="tspan46">IBM Cloud Pubblico</tspan>
+             id="tspan46">IBM Cloud pubblico</tspan>
         </text>
         <g
            id="region"

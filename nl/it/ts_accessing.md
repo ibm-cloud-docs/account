@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-02"
+lastupdated: "2018-07-09"
 
 ---
 
@@ -29,7 +29,7 @@ I problemi generali con l'accesso a {{site.data.keyword.Bluemix}} potrebbero inc
 
 Per accedere alla console {{site.data.keyword.Bluemix_notm}}, devi disporre di una password valida associata al tuo ID IBM.
 
-Per eseguire l'accesso tramite il [{{site.data.keyword.slportal}}](https://control.softlayer.com), devi disporre di una password valida associata al tuo ID IBM o ID dell'account collegato.
+Per eseguire l'accesso tramite il [{{site.data.keyword.slportal}}](https://control.softlayer.com), devi disporre anche di una password valida associata al tuo ID IBM o ID dell'account collegato.
 
 Quando tenti di accedere a {{site.data.keyword.Bluemix_notm}}, viene visualizzato il seguente messaggio di errore:
 {: tsSymptoms}
@@ -117,7 +117,7 @@ A seconda di come è configurato il tuo account, potrebbero essere applicabili a
 Quando accedi a {{site.data.keyword.Bluemix_notm}}, viene visualizzato il seguente messaggio:
 {: tsSymptoms}
 
-`Hai raggiunto questa pagina perché l'autenticazione ha avuto esito positivo, tuttavia questo ID IBM non è associato ad alcun account  {{site.data.keyword.Bluemix_notm}}.`
+`Hai raggiunto questa pagina perché l'autenticazione ha avuto esito positivo, tuttavia questo ID IBM non è associato ad alcun account {{site.data.keyword.Bluemix_notm}}.`
 
 Hai effettuato l'accesso dalla [console {{site.data.keyword.Bluemix_notm}}](https://console.{DomainName}) con un ID IBM valido, ma non hai ancora creato un account {{site.data.keyword.Bluemix_notm}}.
 {: tsCauses}

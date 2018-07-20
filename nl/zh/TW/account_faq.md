@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-06-26"
+lastupdated: "2018-07-09"
 
 ---
 
@@ -31,14 +31,19 @@ lastupdated: "2018-06-26"
 
 達到精簡方案若為任何配額限制會導致該月份暫停使用該服務。配額限制是根據組織，而不是根據實例。在相同組織中建立的新實例會反映先前實例的任何用量。每個月的第一天會重設配額限制。
 
+## 我可以建立多少資源群組、組織或空間？
+{: #resourcelimit}
+
+如果您有計費帳戶，您可以在帳戶內建立的資源群組、組織或空間數量沒有限制。不過，如果您有精簡帳戶，則限制為一個組織及一個資源群組。
+
 ## 如何升級或變更我的帳戶類型？
 {: #changeacct}
 
 * 若要將 30 天試用轉換為精簡帳戶，請與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡。確認資格之後，銷售團隊會分享一個唯一鏈結，您可以用來嘗試轉換帳戶。轉換不一定會成功，因為精簡帳戶未完全與 30 天試用相容。  
-* 若要從「精簡」升級至「隨收隨付制」帳戶，請移至主控台中的**管理 > 計費及用量 > 計費**，然後按一下**新增信用卡**。
-
+* 若要從「精簡」升級至「隨收隨付制」帳戶，請移至**管理 > 計費及用量 > 計費**，然後按一下**新增信用卡**。
+* 若要從「精簡」升級至「訂閱」帳戶，請移至**管理 > 計費及用量 > 計費**，然後按一下**進一步瞭解**。
 * 若要將「隨收隨付制」轉換為「訂閱」帳戶，請與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡。
-
+* 
 ## 如果我將精簡帳戶升級，還能繼續使用我的現有實例嗎？
 {: #nochange}
 
@@ -54,17 +59,17 @@ lastupdated: "2018-06-26"
 
 在主控台中，移至**管理 > 計費及用量 > 計費**頁面，然後按一下**取消啟動帳戶**。
 
+## 如何刪除帳戶？
+{: #deleteaccount}
+
+您必須與「IBM Cloud 支援中心」聯絡以開立支援問題單，並要求刪除您的帳戶。如果您的資料與要儲存並移至新帳戶的舊帳戶相關聯，請在電子郵件中包含此資訊。
+
 ## 如何取得支援？
 {: #contactsupport}
 
 如需在 {{site.data.keyword.Bluemix_notm}} 中開始進行或導覽 {{site.data.keyword.Bluemix_notm}} 的協助，請使用主控台中的會談圖示，開始與我們交談。
 
 您也可以查看[支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg)](https://console.bluemix.net/unifiedsupport/supportcenter){: new_window} 中提供的若干有用資源。從這裡，您可以存取 Stack Overflow，將問題張貼至我們的開發人員社群。您也可以提交支援問題單。
-
-## 我可以建立多少資源群組、組織或空間？
-{: #resourcelimit}
-
-如果您有計費帳戶，您可以在帳戶內建立的資源群組、組織或空間數量沒有限制。不過，如果您有精簡帳戶，則限制為一個組織及一個資源群組。
 
 ## 我可以註冊免費試用嗎？
 {: #freetrial}
