@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-02"
+lastupdated: "2018-07-09"
 
 ---
 
@@ -29,7 +29,7 @@ Allgemeine Probleme beim Zugriff auf {{site.data.keyword.Bluemix}} können sein,
 
 Sie müssen über ein gültiges Kennwort verfügen, das Ihrer IBMid zugeordnet ist, um sich bei der {{site.data.keyword.Bluemix_notm}}-Konsole anzumelden.
 
-Sie müssen über ein gültiges Kennwort verfügen, das Ihrer IBMid oder ID eines verknüpften Kontos zugeordnet ist, um sich über das [{{site.data.keyword.slportal}}](https://control.softlayer.com) anzumelden.
+Sie müssen außerdem über ein gültiges Kennwort verfügen, das Ihrer IBMid oder ID eines verknüpften Kontos zugeordnet ist, um sich über das [{{site.data.keyword.slportal}}](https://control.softlayer.com) anzumelden.
 
 Wenn Sie versuchen, sich bei {{site.data.keyword.Bluemix_notm}} anzumelden, wird die folgende Fehlernachricht angezeigt:
 {: tsSymptoms}

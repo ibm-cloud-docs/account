@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-06-26"
+lastupdated: "2018-07-09"
 
 ---
 
@@ -24,20 +24,26 @@ Bei einem Lite-Konto können Sie nur in einer Region arbeiten. In einem nutzungs
 ## Was ist ein Lite-Preisstrukturplan für Services?
 {: #whatisliteplan}
 
-Ein Lite-Plan ist ein Serviceplan mit kostenlosem Kontingent. Sie können einen Lite-Planservice verwenden, um eine App ohne Gebühren zu erstellen. Ein Lite-Plan kann in monatlichen Zyklen (die jeden Monat erneuert werden) oder für eine einmalige Gebühr angeboten werden. Pro Lite-Planservice können Sie über eine Instanz verfügen. Lite-Preispläne werden in allen Konten angeboten.
+Ein Lite-Plan ist ein Serviceplan mit kostenlosem Kontingent. Sie können einen Lite-Planservice verwenden, um eine App ohne Gebühren zu erstellen. Ein Lite-Plan kann in monatlichen Zyklen (die jeden Monat erneuert werden) oder für eine einmalige Gebühr angeboten werden. Pro Lite-Planservice können Sie über eine Instanz verfügen. Lite-Preisstrukturpläne werden in allen Konten angeboten.
 
 ## Was passiert, wenn meine Lite-Planinstanz das monatliche Kontingent erreicht?
 {: #monthlyquota}
 
 Wenn ein Grenzwert für das Kontingent für die Lite-Planinstanzen erreicht wird, wird der Service für diesen Monat ausgesetzt. Grenzwerte für Kontingente gelten für die gesamte Organisation, nicht nur für die Instanz. Neu erstellte Instanzen in derselben Organisation spiegeln die Nutzung bereits vorhandener Instanzen wider. Die Grenzwerte für Kontingente werden am ersten Tag jedes Monats zurückgesetzt.
 
+## Wie viele Ressourcengruppen, Organisationen oder Bereiche kann ich erstellen?
+{: #resourcelimit}
+
+Wenn Sie über ein gebührenpflichtiges Konto verfügen, gibt es keinen Grenzwert für die Anzahl von Ressourcengruppen, Organisationen oder Bereichen, die Sie in Ihrem Konto erstellen können. Bei einem Lite-Konto sind Sie jedoch auf eine Organisation und eine Ressourcengruppe beschränkt.
+
 ## Wie führe ich ein Upgrade meines Kontotyps durch oder wie ändere ich meinen Kontotyp?
 {: #changeacct}
 
 * Informationen zum Konvertieren Ihres 30-Tage-Testkontos in ein Lite-Konto erhalten Sie beim [{{site.data.keyword.Bluemix_notm}}-Vertrieb](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg). Nach der Prüfung der Teilnahmevoraussetzungen sendet Ihnen das Vertriebsteam einen Link zu, über den Sie versuchen können, Ihr Konto zu konvertieren. Ein Erfolg der Konvertierung kann nicht garantiert werden, da Lite-Konten nicht vollständig mit 30-Tage-Testkonten kompatibel sind.  
 * Um ein Upgrade von einem Lite-Konto in ein nutzungsabhängiges Konto durchzuführen, rufen Sie die Seite **Verwalten > Abrechnung und Nutzung > Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**.
+* Um ein Upgrade von einem Lite-Konto in ein Abonnementkonto durchzuführen, rufen Sie die Seite **Verwalten > Abrechnung und Nutzung > Abrechnung** auf und klicken Sie auf **Weitere Informationen**.
 * Informationen zum Konvertieren eines nutzungsabhängigen Kontos in ein Abonnementkonto erhalten Sie beim [{{site.data.keyword.Bluemix_notm}}-Vertrieb](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg).
-
+* 
 ## Kann ich meine vorhandenen Instanzen weiter verwenden, wenn ich ein Upgrade meines Lite-Kontos durchführe?
 {: #nochange}
 
@@ -53,17 +59,17 @@ Sie können die Zahlungsmethode, die Ihrem gebührenpflichtigen Konto zugeordnet
 
 Rufen Sie in der Konsole die Seite **Verwalten > Abrechnung und Nutzung > Abrechnung** auf und klicken Sie auf **Konto inaktivieren**.
 
+## Wie kann ich mein Konto löschen?
+{: #deleteaccount}
+
+Sie müssen sich mit dem IBM Cloud-Support in Verbindung setzen, um ein Support-Ticket zu öffnen und die Löschung Ihres Kontos anzufordern. Wenn Sie über Daten verfügen, die Ihrem alten Konto zugeordnet sind, die jedoch gesichert und in ein neues Konto übernommen werden sollen, dann geben Sie die entsprechenden Informationen in Ihrer E-Mail an.
+
 ## Wie erhalte ich Unterstützung?
 {: #contactsupport}
 
 Hilfe für den Einstieg in {{site.data.keyword.Bluemix_notm}} oder für das Navigieren in {{site.data.keyword.Bluemix_notm}} können Sie über das Chatsymbol in der Konsole abrufen.
 
 Sie können sich auch über eine Reihe hilfreicher Ressourcen informieren, die im [Support Center![Symbol für externen Link](../icons/launch-glyph.svg) ](https://console.bluemix.net/unifiedsupport/supportcenter){: new_window} verfügbar sind. Von dort aus können Sie auf Stack Overflow zugreifen, um eine Frage an unsere Entwicklercommunity zu senden. Sie haben auch die Möglichkeit, ein Support-Ticket einzureichen.
-
-## Wie viele Ressourcengruppen, Organisationen oder Bereiche kann ich erstellen?
-{: #resourcelimit}
-
-Wenn Sie über ein gebührenpflichtiges Konto verfügen, gibt es keinen Grenzwert für die Anzahl von Ressourcengruppen, Organisationen oder Bereichen, die Sie in Ihrem Konto erstellen können. Bei einem Lite-Konto sind Sie jedoch auf eine Organisation und eine Ressourcengruppe beschränkt.
 
 ## Kann ich mich für eine kostenlose Testversion anmelden?
 {: #freetrial}
@@ -107,7 +113,7 @@ Falls ein Verknüpfen für Sie nicht in Frage kommt, wenden Sie sich an Ihre Ver
 ## Gibt es momentan Incentives für das Verknüpfen meiner Konten? 
 {: #al_incent}
 
-Wenn Sie Ihre Konten jetzt verknüpfen, erhalten Sie im Rahmen einer Werbeaktion eine Gutschrift zum Ausprobieren der {{site.data.keyword.Bluemix_notm}}-Services. 
+Wenn Sie Ihre Konten jetzt verknüpfen, erhalten Sie im Rahmen einer Werbeaktion eine Gutschrift zum Ausprobieren der {{site.data.keyword.Bluemix_notm}}-Services.
 
 ## Was bedeutet es, {{site.data.keyword.Bluemix_notm}}-Plattformservices zu meinem SoftLayer-Konto hinzuzufügen? 
 {: #al_owaffslacct}
