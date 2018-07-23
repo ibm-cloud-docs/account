@@ -29,7 +29,7 @@ General problems with accessing {{site.data.keyword.Bluemix}} might include diff
 
 You must have a valid password that's associated with your IBMid to log in to the {{site.data.keyword.Bluemix_notm}} console.
 
-You must also have a valid password that's associated with your IBMid or linked account ID to log in through the [{{site.data.keyword.slportal}}](https://control.softlayer.com).
+You must also have a valid password that's associated with your IBMid or linked account ID to log in through the [customer portal](https://control.softlayer.com).
 
 When you try to log in to {{site.data.keyword.Bluemix_notm}}, the following error message is displayed:
 {: tsSymptoms}
@@ -42,11 +42,11 @@ The password that you used to log in to {{site.data.keyword.Bluemix_notm}} is no
 Use one of the following solutions:
 {: tsResolve}
  * Enter the correct password. To check whether your IBMid and password are valid, you can go to the My IBM profile page, click **Log in** and enter your IBMid and password on the Log in page.
- * If you forgot your password, click **Forgot your password** to reset your password. Then return to the [{{site.data.keyword.Bluemix_notm}} console](https://console.{DomainName}) or the [{{site.data.keyword.slportal}}](https://control.softlayer.com) and log in again.
+ * If you forgot your password, click **Forgot your password** to reset your password. Then return to the [{{site.data.keyword.Bluemix_notm}} console](https://console.{DomainName}) or the [customer portal](https://control.softlayer.com) and log in again.
  * If you forgot your IBMid or continue to have problems with your password, contact the Worldwide IBM Registration Help Desk for help.
  * To obtain a valid IBMid and password, go to the My IBM profile page, then click **Register**.
 
-**Note:**  If you are on the Sign in to IBM page and the login process is disrupted for any reason (for example, resetting your password), return to the [{{site.data.keyword.Bluemix_notm}} console](https://console.{DomainName}) or the [{{site.data.keyword.slportal}}](https://control.softlayer.com) and start the log in process again.
+**Note:**  If you are on the Sign in to IBM page and the login process is disrupted for any reason (for example, resetting your password), return to the [{{site.data.keyword.Bluemix_notm}} console](https://console.{DomainName}) or the [customer portal](https://control.softlayer.com) and start the log in process again.
 
 
 ## Invalid login credentials
@@ -57,10 +57,10 @@ When you log in using your IBMid, the following message is displayed:
 
 `Invalid login credentials provided. If you have an IBMid associated with your account, please log in here`
 
-* You switched to an IBMid, but you tried to log in through the [{{site.data.keyword.slportal}}](https://control.softlayer.com) using your previous username and password.
+* You switched to an IBMid, but you tried to log in through the [customer portal](https://control.softlayer.com) using your previous username and password.
 {: tsCauses}
 
-* You tried to log in through the [{{site.data.keyword.slportal}}](https://control.softlayer.com), but you entered your IBMid and password in the Username and Password fields.
+* You tried to log in through the [customer portal](https://control.softlayer.com), but you entered your IBMid and password in the Username and Password fields.
 
 Click **log in here** in the message, or go to the IBMid Account Login section and click **Log in with IBMid**.
 {: tsResolve}
@@ -83,7 +83,7 @@ You must have a valid IBMid and password to log in to {{site.data.keyword.Bluemi
 
  * Ensure that you enter a fully qualified email address for the IBMid.
  {: tsResolve}
- * If you are an {{site.data.keyword.BluSoftlayer_full}} user with an {{site.data.keyword.BluSoftlayer_full}} ID, you must switch to IBMid authentication in the {{site.data.keyword.slportal}} in each account that you have access to before you can log in by using IBMid authentication.
+ * If you are a SoftLayer user with a SoftLayer ID, you must switch to IBMid authentication in the customer portal in each account that you have access to before you can log in by using IBMid authentication.
  For more information, see [Switching to IBMid](/docs/account/softlayerlink.html).
 
 
@@ -95,20 +95,18 @@ When you log in using your IBMid, the following message is displayed:
 
 `You have reached this page because your authentication was successful, however, this IBMid is not associated with any IBM Cloud accounts. If you believe this to be in error, contact your Account Owner or Master User.`
 
-You logged in from the [{{site.data.keyword.slportal}}](https://control.softlayer.com) with a valid IBMid, but you aren't switched to IBMid authentication from the {{site.data.keyword.slportal}}.
+You logged in from the [customer portal](https://control.softlayer.com) with a valid IBMid, but you aren't switched to IBMid authentication from the customer portal.
 {: tsCauses}
 
 Complete the following checks, as appropriate:
 {: tsResolve}
  * Contact your master user or account administrator to check that you are enabled to switch to IBMid authentication.
  * Ensure that you complete the Switch to IBMid step. See [Switching to IBMid](/docs/account/softlayerlink.html).
- * Ensure that you follow the actions in the **Associate your user ID with an IBMid** email. Check your inbox and your junk mail folder for the email. To get the email again, for example, if it has expired, go to the Edit User Profile page in the {{site.data.keyword.slportal}} and click **Resend Email**. Alternatively, contact [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/bluemixsupport.com){: new_window}.
-
-**Note:** If you created your IBMid directly with IBMid, you receive two emails to process; one from IBMid registration, and one from {{site.data.keyword.Blu_full}}. Ensure that you follow the actions in both emails.
+ * Ensure that you follow the actions in the **Associate your user ID with an IBMid** email. Check your inbox and your junk mail folder for the email. To get the email again, for example, if it has expired, go to the Edit User Profile page in the customer portal and click **Resend Email**. Alternatively, contact [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/bluemixsupport.com){: new_window}.
 
 Depending on how your account is set up, some of these log in options might apply to you:
- * {{site.data.keyword.BluSoftlayer_notm}} users with {{site.data.keyword.BluSoftlayer_full}} IDs must log in through the [{{site.data.keyword.slportal}}](https://control.softlayer.com).
- * {{site.data.keyword.BluSoftlayer_notm}} users with an IBMid and with or without a linked {{site.data.keyword.Bluemix_notm}} account can log in through the [{{site.data.keyword.slportal}}](https://control.softlayer.com) to open the {{site.data.keyword.slportal}} or through the [{{site.data.keyword.Bluemix_notm}} console](https://console.{DomainName}) to open the Infrastructure dashboard.
+ * SoftLayer users with SoftLayer IDs must log in through the [customer portal](https://control.softlayer.com).
+ * SoftLayer users with an IBMid and with or without a linked {{site.data.keyword.Bluemix_notm}} account can log in through the [customer portal](https://control.softlayer.com) to open the customer portal or through the [{{site.data.keyword.Bluemix_notm}} console](https://console.{DomainName}) to open the Infrastructure dashboard.
 
 
 ## IBMid is not associated with any {{site.data.keyword.Bluemix_notm}} accounts
@@ -127,19 +125,19 @@ To create an {{site.data.keyword.Bluemix_notm}} account, follow the sign up proc
 
 Depending on how your account is set up, some of these log in options might apply to you:
  * {{site.data.keyword.Bluemix_notm}} users without a linked account must log in through the {{site.data.keyword.Bluemix_notm}} console.
- * {{site.data.keyword.Bluemix_notm}} users with a linked account can log in through the [{{site.data.keyword.Bluemix_notm}} console](https://console.{DomainName}) or the [{{site.data.keyword.slportal}}](https://control.softlayer.com).
+ * {{site.data.keyword.Bluemix_notm}} users with a linked account can log in through the [{{site.data.keyword.Bluemix_notm}} console](https://console.{DomainName}) or the [customer portal](https://control.softlayer.com).
 
 
 ## Console doesn't open
 {: #ts_login_stalls}
 
-When you log in using your IBMid, a login success message is displayed, but you don't return to the [{{site.data.keyword.Bluemix_notm}} console](https://console.{DomainName}) or the [{{site.data.keyword.slportal}}](https://control.softlayer.com)
+When you log in using your IBMid, a login success message is displayed, but you don't return to the [{{site.data.keyword.Bluemix_notm}} console](https://console.{DomainName}) or the [customer portal](https://control.softlayer.com)
 {: tsSymptoms}
 
 Use one of the following solutions:
 {: tsResolve}
  * Close your browser, clear the cache and cookies, then try to log in again.
- * Ensure that you log in from the [{{site.data.keyword.Bluemix_notm}} console](https://console.{DomainName}) or the [{{site.data.keyword.slportal}}](https://control.softlayer.com), rather than directly from the IBMid authentication service.
+ * Ensure that you log in from the [{{site.data.keyword.Bluemix_notm}} console](https://console.{DomainName}) or the [customer portal](https://control.softlayer.com), rather than directly from the IBMid authentication service.
 
 
 ## IBMid login doesn't complete
