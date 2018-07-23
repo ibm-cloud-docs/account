@@ -83,7 +83,7 @@ You must have a valid IBMid and password to log in to {{site.data.keyword.Bluemi
 
  * Ensure that you enter a fully qualified email address for the IBMid.
  {: tsResolve}
- * If you are an {{site.data.keyword.BluSoftlayer_full}} user with an {{site.data.keyword.BluSoftlayer_full}}  ID, you must switch to IBMid authentication in the {{site.data.keyword.slportal}} in each account that you have access to before you can log in by using IBMid authentication.
+ * If you are an {{site.data.keyword.Bluemix_notm}} infrastructure (SoftLayer) user with an {{site.data.keyword.Bluemix_notm}} infrastructure (SoftLayer) ID, you must switch to IBMid authentication in the {{site.data.keyword.slportal}} in each account that you have access to before you can log in by using IBMid authentication.
  For more information, see [Switching to IBMid](/docs/account/softlayerlink.html).
 
 
