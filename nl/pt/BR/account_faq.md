@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-06-26"
+lastupdated: "2018-07-09"
 
 ---
 
@@ -31,13 +31,19 @@ Um plano Lite é um plano de serviço baseado em cota grátis. É possível usar
 
 Atingir qualquer limite de cota para instâncias do plano Lite suspende o serviço para esse mês. Limites de cota são por organização, não por instância. Novas instâncias criadas na mesma organização refletem qualquer uso de instâncias anteriores. Os limites de cota reconfigurados no primeiro dia de cada mês.
 
+## Quantos grupos de recursos, organizações ou espaços posso criar?
+{: #resourcelimit}
+
+Em uma conta faturável, não há um limite no número de grupos de recursos, organizações ou espaços que podem ser criados nela. No entanto, se você tem uma conta Lite, então tem uma limitação de uma organização e um grupo de recursos.
+
 ## Como fazer upgrade ou mudar meu tipo de conta?
 {: #changeacct}
 
 * Para converter sua avaliação de 30 dias em uma conta Lite, entre em contato com [Vendas do {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg). Depois de confirmar a elegibilidade, a equipe de Vendas compartilha um link exclusivo que pode ser usado para tentar converter sua conta. A conversão bem-sucedida não é garantida, pois as contas Lite não são totalmente compatíveis com avaliações de 30 dias.  
-* Para fazer upgrade de uma conta Lite para uma conta pré-paga, acesse **Gerenciar > Faturamento e uso > Faturamento** e clique em **Incluir cartão de crédito**.
+* Para fazer upgrade de uma conta Lite para uma Pré-paga, acesse **Gerenciar > Faturamento e uso > Faturamento** e clique em **Incluir cartão de crédito**.
+* Para fazer upgrade de uma conta Lite para uma da Assinatura, acesse **Gerenciar > Faturamento e uso > Faturamento** e clique em **Saiba mais**.
 * Para converter sua conta pré-paga para uma conta de assinatura, entre em contato com [Vendas do {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg).
-
+* 
 ## Se eu faço upgrade de minha conta Lite, posso continuar usando minhas instâncias existentes?
 {: #nochange}
 
@@ -53,17 +59,17 @@ Sim, é possível fazer upgrade para uma conta faturável e continuar a usar as 
 
 No console, acesse a página **Gerenciar > Faturamento e uso > Faturamento** e clique em **Desativar conta**.
 
+## Como excluir minha conta?
+{: #deleteaccount}
+
+Deve-se entrar em contato com o Suporte do IBM Cloud para abrir um chamado de suporte e solicitar que sua conta seja excluída. Se você tiver dados que estão associados à sua conta antiga que você deseja salvar e mover para uma nova conta, inclua essas informações em seu e-mail.
+
 ## Como obter suporte?
 {: #contactsupport}
 
 Para obter ajuda sobre como deixar o {{site.data.keyword.Bluemix_notm}} funcionando ou navegar no {{site.data.keyword.Bluemix_notm}}, inicie uma conversa conosco usando o ícone de bate-papo no console.
 
 Também é possível conferir vários recursos úteis que estão disponíveis no [Centro de suporte ![Ícone de link externo](../icons/launch-glyph.svg)](https://console.bluemix.net/unifiedsupport/supportcenter){: new_window}. Desse ponto, é possível acessar o Stack Overflow para postar uma pergunta em nossa comunidade do desenvolvedor. Também é possível enviar um chamado de suporte.
-
-## Quantos grupos de recursos, organizações ou espaços posso criar?
-{: #resourcelimit}
-
-Em uma conta faturável, não há um limite no número de grupos de recursos, organizações ou espaços que podem ser criados nela. No entanto, se você tem uma conta Lite, então tem uma limitação de uma organização e um grupo de recursos.
 
 ## Posso inscrever-me para uma avaliação grátis?
 {: #freetrial}

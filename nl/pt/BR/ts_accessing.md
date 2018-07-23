@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-02"
+lastupdated: "2018-07-09"
 
 ---
 
@@ -29,7 +29,7 @@ Problemas gerais ao acessar o {{site.data.keyword.Bluemix}} podem incluir dificu
 
 Deve-se ter uma senha válida que esteja associada a seu IBMid para efetuar login no console do {{site.data.keyword.Bluemix_notm}}.
 
-Deve-se ter uma senha válida que esteja associada a seu IBMid ou ID da conta vinculada ao efetuar login por meio do [{{site.data.keyword.slportal}}](https://control.softlayer.com).
+Deve-se também ter uma senha válida que esteja associada ao seu IBMid ou ao ID da conta vinculada para efetuar login por meio do [{{site.data.keyword.slportal}}](https://control.softlayer.com).
 
 Ao tentar efetuar login no {{site.data.keyword.Bluemix_notm}}, a mensagem de erro a seguir será exibida:
 {: tsSymptoms}

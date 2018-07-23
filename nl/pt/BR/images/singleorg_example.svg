@@ -21,8 +21,8 @@
         <g id="singleorg" transform="translate(4.000000, 5.000000)">
             <g id="local" transform="translate(1.000000, 0.000000)">
                 <use id="dotted-box" stroke="#DFE3E6" mask="url(#mask-2)" stroke-width="6" stroke-dasharray="10" xlink:href="#path-1"></use>
-                <text id="IBM-Cloud-Local" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="20" font-weight="bold" fill="#5A6872">
-                    <tspan x="63" y="49">IBM Cloud Local</tspan>
+                <text id="IBM-Bluemix-Local" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="20" font-weight="bold" fill="#5A6872">
+                    <tspan x="63" y="49">IBM Bluemix Local</tspan>
                 </text>
                 <text id="Organization-Copy" font-family="IBMPlexSans, IBM Plex Sans" font-size="20" font-weight="normal" fill="#5A6872">
                     <tspan x="82" y="180">Organização</tspan>
