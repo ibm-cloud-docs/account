@@ -12,11 +12,11 @@
    height="676px"
    viewBox="0 0 589 676"
    version="1.1"
-   id="svg3151"
+   id="svg2"
    inkscape:version="0.47 r22583"
    sodipodi:docname="singleorg_example.svg">
   <metadata
-     id="metadata3236">
+     id="metadata87">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -37,29 +37,29 @@
      inkscape:pageshadow="2"
      inkscape:window-width="1600"
      inkscape:window-height="838"
-     id="namedview3234"
+     id="namedview85"
      showgrid="false"
      inkscape:zoom="0.69822485"
-     inkscape:cx="133.01229"
-     inkscape:cy="329.68619"
+     inkscape:cx="151.93481"
+     inkscape:cy="348.65162"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="1-singleorg" />
+     inkscape:current-layer="public" />
   <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
   <title
-     id="title3153">1-singleorg</title>
+     id="title4">1-singleorg</title>
   <desc
-     id="desc3155">Created with Sketch.</desc>
+     id="desc6">Created with Sketch.</desc>
   <defs
-     id="defs3157">
+     id="defs8">
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
        inkscape:vp_x="0 : 338 : 1"
        inkscape:vp_y="0 : 1000 : 0"
        inkscape:vp_z="589 : 338 : 1"
        inkscape:persp3d-origin="294.5 : 225.33333 : 1"
-       id="perspective3238" />
+       id="perspective89" />
     <path
        d="M0,0 L278,0 L278,214 L0,214 L0,0 Z"
        id="path-1" />
@@ -74,7 +74,7 @@
        fill="white">
       <use
          xlink:href="#path-1"
-         id="use3161" />
+         id="use12" />
     </mask>
     <path
        d="M0,0 L278,0 L278,214 L0,214 L0,0 Z"
@@ -90,7 +90,7 @@
        fill="white">
       <use
          xlink:href="#path-3"
-         id="use3165" />
+         id="use16" />
     </mask>
     <path
        d="M0,0 L581,0 L581,429 L0,429 L0,0 Z"
@@ -106,7 +106,7 @@
        fill="white">
       <use
          xlink:href="#path-5"
-         id="use3169" />
+         id="use20" />
     </mask>
   </defs>
   <g
@@ -129,26 +129,27 @@
            stroke-dasharray="10"
            xlink:href="#path-1" />
         <text
-           id="IBM-Cloud-Local"
-           font-family="IBMPlexSans-Bold, IBM Plex Sans"
+           id="IBM-Bluemix-Local"
            font-size="20"
            font-weight="bold"
-           fill="#5A6872">
+           style="font-size:20px;font-weight:bold;fill:#5a6872;font-family:'IBMPlexSans-Bold, IBM Plex Sans'"
+           x="-4">
           <tspan
-             x="63"
+             x="59"
              y="49"
-             id="tspan3176">IBM Cloud Local</tspan>
+             id="tspan27">IBM Bluemix Local</tspan>
         </text>
         <text
            id="Organization-Copy"
            font-size="20"
            font-weight="normal"
-           style="font-size:20px;font-weight:normal;fill:#5a6872;font-family:'IBMPlexSans, IBM Plex Sans'">
+           style="font-size:20px;font-weight:normal;fill:#5a6872;font-family:'IBMPlexSans, IBM Plex Sans'"
+           x="38">
           <tspan
-             x="118"
+             x="120"
              y="180"
-             id="tspan3179"
-             style="font-family:SimHei;-inkscape-font-specification:SimHei"> 组织</tspan>
+             id="tspan30"
+             style="font-family:SimHei;-inkscape-font-specification:SimHei">组织</tspan>
         </text>
         <g
            id="Hex"
@@ -168,7 +169,7 @@
          id="dedicated"
          transform="translate(303.000000, 0.000000)">
         <use
-           id="use3185"
+           id="use36"
            stroke="#DFE3E6"
            mask="url(#mask-4)"
            stroke-width="6"
@@ -176,28 +177,28 @@
            xlink:href="#path-3" />
         <text
            id="IBM-Cloud-Dedicated"
-           font-family="IBMPlexSans-Bold, IBM Plex Sans"
            font-size="20"
            font-weight="bold"
-           fill="#5A6872">
+           style="font-size:20px;font-weight:bold;fill:#5a6872;font-family:'IBMPlexSans-Bold, IBM Plex Sans'">
           <tspan
              x="40"
              y="49"
-             id="tspan3188">IBM Cloud Dedicated</tspan>
+             id="tspan39">IBM Cloud Dedicated</tspan>
         </text>
         <text
            id="Organization"
            font-size="20"
            font-weight="normal"
-           style="font-size:20px;font-weight:normal;fill:#5a6872;font-family:'IBMPlexSans, IBM Plex Sans'">
+           style="font-size:20px;font-weight:normal;fill:#5a6872;font-family:'IBMPlexSans, IBM Plex Sans'"
+           x="38">
           <tspan
-             x="118"
+             x="120"
              y="180"
-             id="tspan3191"
-             style="font-size:20;-inkscape-font-specification:SimHei;font-family:SimHei">组织</tspan>
+             id="tspan42"
+             style="font-family:SimHei;-inkscape-font-specification:SimHei">组织</tspan>
         </text>
         <g
-           id="g3193"
+           id="g44"
            transform="translate(102.000000, 67.000000)"
            fill-rule="nonzero">
           <polygon
@@ -214,7 +215,7 @@
          id="public"
          transform="translate(0.000000, 238.000000)">
         <use
-           id="use3198"
+           id="use49"
            stroke="#DFE3E6"
            mask="url(#mask-6)"
            stroke-width="6"
@@ -222,14 +223,13 @@
            xlink:href="#path-5" />
         <text
            id="IBM-Cloud-Public"
-           font-family="IBMPlexSans-Bold, IBM Plex Sans"
            font-size="20"
            font-weight="bold"
-           fill="#5A6872">
+           style="font-size:20px;font-weight:bold;fill:#5a6872;font-family:'IBMPlexSans-Bold, IBM Plex Sans'">
           <tspan
              x="31"
              y="64"
-             id="tspan3201">IBM Cloud Public</tspan>
+             id="tspan52">IBM Cloud Public</tspan>
         </text>
         <g
            id="region"
@@ -238,12 +238,13 @@
              id="Region"
              font-size="20"
              font-weight="normal"
-             style="font-size:20px;font-weight:normal;fill:#5a6872;font-family:'IBMPlexSans, IBM Plex Sans'">
+             style="font-size:20px;font-weight:normal;fill:#5a6872;font-family:'IBMPlexSans, IBM Plex Sans'"
+             x="12">
             <tspan
                x="60"
                y="39"
-               id="tspan3205"
-               style="-inkscape-font-specification:SimHei;font-family:SimHei">区域</tspan>
+               id="tspan56"
+               style="font-family:SimHei;-inkscape-font-specification:SimHei">区域</tspan>
           </text>
           <rect
              id="Rectangle-2"
@@ -255,18 +256,19 @@
              height="61" />
         </g>
         <g
-           id="g3208"
+           id="g59"
            transform="translate(212.000000, 94.000000)">
           <text
              id="Region-Copy"
              font-size="20"
              font-weight="normal"
-             style="font-size:20px;font-weight:normal;fill:#5a6872;font-family:'IBMPlexSans, IBM Plex Sans'">
+             style="font-size:20px;font-weight:normal;fill:#5a6872;font-family:'IBMPlexSans, IBM Plex Sans'"
+             x="10">
             <tspan
-               x="60"
+               x="58"
                y="39"
-               id="tspan3211"
-               style="-inkscape-font-specification:SimHei;font-family:SimHei">区域</tspan>
+               id="tspan62"
+               style="font-family:SimHei;-inkscape-font-specification:SimHei">区域</tspan>
           </text>
           <rect
              id="Rectangle-2-Copy"
@@ -278,18 +280,19 @@
              height="61" />
         </g>
         <g
-           id="g3214"
+           id="g65"
            transform="translate(392.000000, 94.000000)">
           <text
              id="Region-Copy-2"
              font-size="20"
              font-weight="normal"
-             style="font-size:20px;font-weight:normal;fill:#5a6872;font-family:'IBMPlexSans, IBM Plex Sans'">
+             style="font-size:20px;font-weight:normal;fill:#5a6872;font-family:'IBMPlexSans, IBM Plex Sans'"
+             x="10">
             <tspan
-               x="60"
+               x="58"
                y="39"
-               id="tspan3217"
-               style="-inkscape-font-specification:SimHei;font-family:SimHei">区域</tspan>
+               id="tspan68"
+               style="font-family:SimHei;-inkscape-font-specification:SimHei">区域</tspan>
           </text>
           <rect
              id="Rectangle-2-Copy-2"
@@ -343,15 +346,16 @@
            id="Organization-Copy-2"
            font-size="20"
            font-weight="normal"
-           style="font-size:20px;font-weight:normal;fill:#5a6872;font-family:'IBMPlexSans, IBM Plex Sans'">
+           style="font-size:20px;font-weight:normal;fill:#5a6872;font-family:'IBMPlexSans, IBM Plex Sans'"
+           x="38">
           <tspan
-             x="270"
+             x="272"
              y="380"
-             id="tspan3228"
-             style="-inkscape-font-specification:SimHei;font-family:SimHei">组织</tspan>
+             id="tspan79"
+             style="font-family:SimHei;-inkscape-font-specification:SimHei">组织</tspan>
         </text>
         <g
-           id="g3230"
+           id="g81"
            transform="translate(254.000000, 267.000000)"
            fill-rule="nonzero">
           <polygon

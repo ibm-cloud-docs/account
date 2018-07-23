@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-02"
+lastupdated: "2018-07-09"
 
 ---
 
@@ -29,7 +29,7 @@ lastupdated: "2018-05-02"
 
 您必须具有与 IBM 标识关联的有效密码才能登录到 {{site.data.keyword.Bluemix_notm}} 控制台。
 
-您必须具有与 IBM 标识或链接帐户标识关联的有效密码才能通过 [{{site.data.keyword.slportal}}](https://control.softlayer.com)登录。
+您还必须具有与 IBM 标识或链接帐户标识关联的有效密码才能通过 [{{site.data.keyword.slportal}}](https://control.softlayer.com)登录。
 
 尝试登录到 {{site.data.keyword.Bluemix_notm}} 时，显示了以下错误消息：
 {: tsSymptoms}

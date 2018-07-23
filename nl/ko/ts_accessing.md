@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-02"
+lastupdated: "2018-07-09"
 
 ---
 
@@ -29,7 +29,7 @@ lastupdated: "2018-05-02"
 
 {{site.data.keyword.Bluemix_notm}} 콘솔에 로그인하려면 IBM ID와 연관된 올바른 비밀번호가 있어야 합니다.
 
-[{{site.data.keyword.slportal}}](https://control.softlayer.com)을 통해 로그인하려면 IBM ID 또는 연결된 계정 ID와 연관된 올바른 비밀번호가 있어야 합니다.
+[{{site.data.keyword.slportal}}](https://control.softlayer.com)을 통해 로그인하려면 IBM ID 또는 연결된 계정 ID와 연관된 올바른 비밀번호도 있어야 합니다.
 
 {{site.data.keyword.Bluemix_notm}}에 로그인하려고 할 때 다음 오류 메시지가 표시됩니다.
 {: tsSymptoms}

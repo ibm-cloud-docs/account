@@ -14,7 +14,10 @@
    version="1.1"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="singleorg_example.svg">
+   sodipodi:docname="singleorg_example.svg"
+   inkscape:export-filename="T:\PUB\ABD042\ART\WORK\ship12\account\images\singleorg_example.png"
+   inkscape:export-xdpi="90.179398"
+   inkscape:export-ydpi="90.179398">
   <metadata
      id="metadata87">
     <rdf:RDF>
@@ -113,23 +116,19 @@
      id="dotted-box"
      transform="translate(5,5)" />
   <text
-     sodipodi:linespacing="125%"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#5a6872;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+     style="font-weight:bold;font-size:20px;font-family:IBMPlexSans-Bold, 'IBM Plex Sans';fill:#5a6872;fill-rule:evenodd;stroke:none;stroke-width:1"
      font-weight="bold"
      font-size="20"
-     id="IBM-Cloud-Local"
-     x="64.430557"
-     y="53.29398">
+     id="IBM-Bluemix-Local"
+     x="-13"
+     y="5">
     <tspan
-       y="53.29398"
-       x="64.430557"
-       style="stroke:none"
-       id="tspan4442"
-       sodipodi:role="line">
-      <tspan
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;line-height:125%;font-family:IBMPlexSans-Bold, 'IBM Plex Sans';-inkscape-font-specification:'IBMPlexSans-Bold, IBM Plex Sans, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;stroke:none"
-         id="tspan4454">IBM Cloud</tspan>
-    </tspan>
+       id="tspan27"
+       y="54"
+       x="50">IBM Bluemix <tspan
+   id="tspan4215"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;stroke:#5a6872;stroke-opacity:1">로컬</tspan>
+</tspan>
   </text>
   <text
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#5a6872;fill-rule:evenodd;stroke:none;stroke-width:1"
@@ -166,19 +165,18 @@
      id="use36"
      transform="translate(307,5)" />
   <text
+     style="font-weight:bold;font-size:20px;line-height:125%;font-family:IBMPlexSans-Bold, 'IBM Plex Sans';fill:#5a6872;fill-rule:evenodd;stroke:none;stroke-width:1"
      sodipodi:linespacing="125%"
-     style="font-weight:bold;font-size:20px;line-height:125%;font-family:IBMPlexSans-Bold, 'IBM Plex Sans';fill:#5a6872;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
      font-weight="bold"
      font-size="20"
      id="IBM-Cloud-Dedicated"
-     x="283"
+     x="285"
      y="5">
     <tspan
-       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
        id="tspan39"
        y="54"
-       x="323">IBM Cloud <tspan
-   id="tspan4225"
+       x="325">IBM Cloud <tspan
+   id="tspan4217"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;stroke:#5a6872;stroke-opacity:1">데디케이티드</tspan>
 </tspan>
   </text>
@@ -217,19 +215,19 @@
      id="use49"
      transform="translate(4,243)" />
   <text
-     style="font-weight:bold;font-size:20px;line-height:125%;font-family:IBMPlexSans-Bold, 'IBM Plex Sans';fill:#5a6872;fill-rule:evenodd;stroke:none;stroke-width:1"
-     sodipodi:linespacing="125%"
+     style="font-weight:bold;font-size:20px;font-family:IBMPlexSans-Bold, 'IBM Plex Sans';fill:#5a6872;fill-rule:evenodd;stroke:none;stroke-width:1"
      font-weight="bold"
      font-size="20"
      id="IBM-Cloud-Public"
      x="4"
-     y="243">
+     y="243"
+     sodipodi:linespacing="125%">
     <tspan
        id="tspan52"
        y="307"
        x="35">IBM Cloud <tspan
-   id="tspan4227"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;stroke:#5a6872;stroke-opacity:1">퍼블릭</tspan>
+   style="stroke:#5a6872;stroke-opacity:1;-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:20px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%"
+   id="tspan4390">퍼블릭</tspan>
 </tspan>
   </text>
   <text
@@ -352,16 +350,4 @@
      points="37,0 37,80 74,60 74,20 "
      style="fill:#5aaafa;fill-rule:nonzero;stroke:none;stroke-width:1"
      transform="translate(258,510)" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="187.17592"
-     y="53.630787"
-     id="text4464"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       id="tspan4466"
-       x="187.17592"
-       y="53.630787"
-       style="stroke:#5a6872;stroke-opacity:1">로컬</tspan></text>
 </svg>
