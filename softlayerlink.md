@@ -23,7 +23,7 @@ Authentication in SoftLayer now uses an IBMid to provide a single login for all 
 ## Switching to IBMid
 {: #switchtoIBMid}
 
-When you begin the process to switch to an IBMid, you can always cancel the switch before you complete the process. However, each time that you log in, the prompt to switch to an IBMid is displayed. Each SoftLayer account that you plan to link to a {{site.data.keyword.Bluemix_notm}} account must be owned by a unique IBMid with a unique email address.
+When you begin the process to switch to an IBMid, you can always cancel the switch before you complete the process. However, each time that you log in, the prompt to switch to an IBMid is displayed. Each SoftLayer account that you plan to link to an {{site.data.keyword.Bluemix_notm}} account must be owned by a unique IBMid with a unique email address.
 
 To switch your existing SoftLayer account to an IBMid, you create an IBMid and then use your registration code to confirm it.
 
