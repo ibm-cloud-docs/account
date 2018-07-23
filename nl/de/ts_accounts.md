@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2017-11-09"
+lastupdated: "2018-07-16"
 
 ---
 
@@ -152,7 +152,7 @@ Verwenden Sie eine der folgenden Methoden, um einen Bereich zu erstellen:
 {: tsResolve}
 
   * Klicken Sie in der Menüleiste der Konsole auf **Verwalten > Konto > Organisationen**. Wählen Sie anschließend die Organisation aus, in der Sie den Bereich erstellen möchten und klicken Sie auf **Bereich erstellen**.
-  * Geben Sie in der Befehlszeilenschnittstelle 'cf' Folgendes ein: `cf create-space <space_name> -o <organization_name>`.
+  * Geben Sie in der Cloud Foundry-Befehlszeilenschnittstelle Folgendes ein: `cf create-space <space_name> -o <organization_name>`.
 
 
 ## Apps verwenden denselben Domänennamen gemeinsam
@@ -180,13 +180,13 @@ Als Administrator können Sie nicht alle Organisationen über die {{site.data.ke
 Dies ist eine Einschränkung der {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle.
 {: tsCauses}
 
-Sie können über die Befehlszeilenschnittstelle 'cf' Befehle wie `cf orgs`, `cf create-org` oder `cf delete-org` verwenden, um alle Organisationen zu verwalten. Für eine vollständige Liste der cf-Befehle geben Sie `cf help` ein.
+Sie können über die Cloud Foundry-Befehlszeilenschnittstelle Befehle wie `cf orgs`, `cf create-org` oder `cf delete-org` verwenden, um alle Organisationen zu verwalten. Für eine vollständige Liste der cf-Befehle geben Sie `cf help` ein.
 {: tsResolve}
 
 ## Kreditkarte kann nicht hinzugefügt werden
 {: #ts_addcc}
 
-Sie können Ihre Kreditkarteninformationen nicht übergeben, um Ihr Testkonto in ein Konto für nutzungsabhängige Zahlung umzuwandeln.
+Sie können Ihre Kreditkarteninformationen nicht übergeben, um Ihr Lite-Konto in ein gebührenpflichtiges Konto umzuwandeln.
 
 Die Schaltfläche **Übergeben** auf der Seite 'Kreditkarte' hinzufügen ist inaktiviert.
 {: tsSymptoms}

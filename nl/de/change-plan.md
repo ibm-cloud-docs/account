@@ -5,7 +5,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-02-07"
+lastupdated: "2018-07-17"
 
 ---
 
@@ -21,7 +21,7 @@ lastupdated: "2018-02-07"
 Sie können Ihren Serviceplan im Serviceinstanzdashboard von {{site.data.keyword.Bluemix}} ändern, falls diese Funktion für den betreffenden Service aktiviert ist.
 {: shortdesc}
 
-Detaillierte Informationen zur Durchführung eines Upgrades oder Ändern Ihres Kontotyps finden Sie im Abschnitt [Wie führe ich ein Upgrade meines Kontotyps durch oder wie ändere ich meinen Kontotyp?](/docs/account/account_faq.html#changeacct).
+Im Abschnitt [Wie führe ich ein Upgrade meines Kontotyps durch oder wie ändere ich meinen Kontotyp?](/docs/account/account_faq.html#changeacct) finden Sie detaillierte Informationen zur Durchführung eines Upgrades für Ihren Kontotyp.
 {: tip}
 
 Nur bestimmte Services ermöglichen Ihnen das Ändern des Serviceplans. Wenn Planänderungen für den Service aktiviert sind, wird im Serviceinstanzdashboard die Option **Plan** im Navigationsbereich angezeigt. Für jeden Service müssen unterschiedliche weitere Schritte ausgeführt werden, wenn Sie Ihren Plan ändern.

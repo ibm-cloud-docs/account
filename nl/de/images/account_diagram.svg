@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1676 927" style="enable-background:new 0 0 1676 927;" xml:space="preserve">
+<style type="text/css">
+	.st0{stroke:#000000;stroke-linecap:square;stroke-dasharray:1,5,1,1;}
+	.st1{stroke:#000000;stroke-linecap:square;}
+	.st2{fill:#8C9BA5;}
+	.st3{font-family:'IBMPlexSans-Text';}
+	.st4{font-size:18px;}
+	.st5{letter-spacing:1;}
+	.st6{fill:#F0F3F6;}
+	.st7{fill:#3D70B2;fill-opacity:0.5;}
+	.st8{font-family:'IBMPlexSans-Medium';}
+	.st9{font-size:14px;}
+	.st10{fill:#5596E6;}
+	.st11{font-family:'IBMPlexSans';}
+	.st12{fill:#5AAAFA;}
+	.st13{fill:#3D70B2;fill-opacity:0.75;}
+	.st14{font-size:16px;}
+	.st15{letter-spacing:2;}
+	.st16{fill:none;stroke:#979797;stroke-linecap:square;}
+	.st17{fill:none;stroke:#000000;stroke-linecap:square;}
+	.st18{fill:none;stroke:#000000;stroke-linecap:square;stroke-dasharray:1,5,1,1;}
+	.st19{enable-background:new    ;}
+	.st20{fill:#46535E;}
+	.st21{font-size:12px;}
+	.st22{fill:#5A6872;}
+	.st23{fill:none;stroke:#DFE3E6;stroke-width:2;stroke-linecap:square;}
+	.st24{font-family:'IBMPlexSans-Bold';}
+</style>
+<title>CF-IAM-IMS_Diagram</title>
+<desc>Created with Sketch.</desc>
+<g id="CF-IAM-IMS_Diagram">
+	<g transform="translate(22.000000, 23.000000)">
+		<g id="diagram">
+			<g id="Group">
+				<g id="arrows" transform="translate(371.000000, 262.000000)">
+					<path id="Line-13" class="st0" d="M200.5,1.5H8.5"/>
+					<path id="Line-23" class="st1" d="M7.5,1H0"/>
+					<path id="Line-23-decoration-1" class="st1" d="M0,1l10.8,3v-6L0,1z"/>
+				</g>
+				<g id="Group-27" transform="translate(735.000000, 286.000000)">
+					<path id="Line-10" class="st0" d="M1.5,0.5v98"/>
+					<path id="Line-9" class="st1" d="M1.5,102.6v-1"/>
+					<path id="Line-9-decoration-1" class="st1" d="M1.5,102.6l-3-10.8h6L1.5,102.6z"/>
+				</g>
+				<rect id="Rectangle-1" x="808" class="st2" width="193" height="56"/>
+				<text transform="matrix(1 0 0 1 875.041 35)" class="st3 st4 st5">Konto</text>
+				<rect id="Rectangle-1_1_" x="572" y="230" class="st2" width="193" height="56"/>
+				<text transform="matrix(1 0 0 1 596.0603 265)" class="st3 st4 st5">Zugriffsgruppen</text>
+				<rect id="Rectangle-1_2_" x="174" y="235" class="st2" width="193" height="56"/>
+				<text transform="matrix(1 0 0 1 227.3707 270)" class="st3 st4 st5">Services</text>
+				<rect id="Rectangle-1_3_" x="71" y="402" class="st6" width="397" height="271"/>
+				<rect id="Rectangle-1_4_" x="708" y="393" class="st6" width="397" height="271"/>
+				<rect id="Rectangle-1_5_" x="1156" y="392" class="st6" width="397" height="271"/>
+				<rect id="Rectangle-1_6_" x="185" y="440" class="st7" width="159" height="56"/>
+				<text transform="matrix(1 0 0 1 215.323 473)" class="st8 st9 st5">Organisation</text>
+				<g id="Group-5" transform="translate(105.000000, 556.000000)">
+					<rect id="Rectangle-1_7_" class="st10" width="128" height="41"/>
+					<text transform="matrix(1 0 0 1 41.063 26)" class="st11 st9 st5">Bereich</text>
+				</g>
+				<g id="Group-4" transform="translate(297.000000, 556.000000)">
+					<rect id="Rectangle-1_8_" class="st10" width="128" height="41"/>
+					<text transform="matrix(1 0 0 1 41.063 26)" class="st11 st9 st5">Bereich</text>
+				</g>
+				<g id="Group-2" transform="translate(81.000000, 628.000000)">
+					<rect id="Rectangle-1_9_" class="st12" width="82" height="32"/>
+					<text transform="matrix(1 0 0 1 1.4067 21)" class="st11 st9 st5">Ressource</text>
+				</g>
+				<g id="Group-6" transform="translate(279.000000, 628.000000)">
+					<rect id="Rectangle-1_10_" class="st12" width="82" height="32"/>
+					<text transform="matrix(1 0 0 1 0.4067 21)" class="st11 st9 st5">Ressource</text>
+				</g>
+				<g id="Group-7" transform="translate(373.000000, 628.000000)">
+					<rect id="Rectangle-1_11_" class="st12" width="82" height="32"/>
+					<text transform="matrix(1 0 0 1 0.4067 21)" class="st11 st9 st5">Ressource</text>
+				</g>
+				<g id="Group-9" transform="translate(745.000000, 495.000000)">
+					<rect id="Rectangle-1_12_" class="st12" width="82" height="32"/>
+					<text transform="matrix(1 0 0 1 0.4067 21)" class="st11 st9 st5">Ressource</text>
+				</g>
+				<g id="Group-10" transform="translate(745.000000, 546.000000)">
+					<rect id="Rectangle-1_13_" class="st12" width="82" height="32"/>
+					<text transform="matrix(1 0 0 1 1.4067 21)" class="st11 st9 st5">Ressource</text>
+				</g>
+				<g id="Group-11" transform="translate(745.000000, 596.000000)">
+					<rect id="Rectangle-1_14_" class="st12" width="82" height="32"/>
+					<text transform="matrix(1 0 0 1 1.4067 21)" class="st11 st9 st5">Ressource</text>
+				</g>
+				<g id="Group-14" transform="translate(864.000000, 495.000000)">
+					<rect id="Rectangle-1_15_" class="st12" width="82" height="32"/>
+					<text transform="matrix(1 0 0 1 1.4067 21)" class="st11 st9 st5">Ressource</text>
+				</g>
+				<g id="Group-13" transform="translate(864.000000, 546.000000)">
+					<rect id="Rectangle-1_16_" class="st12" width="82" height="32"/>
+					<text transform="matrix(1 0 0 1 1.4067 21)" class="st11 st9 st5">Ressource</text>
+				</g>
+				<g id="Group-12" transform="translate(864.000000, 596.000000)">
+					<rect id="Rectangle-1_17_" class="st12" width="82" height="32"/>
+					<text transform="matrix(1 0 0 1 1.4067 21)" class="st11 st9 st5">Ressource</text>
+				</g>
+				<g id="Group-8" transform="translate(745.000000, 445.000000)">
+					<rect id="Rectangle-1_18_" class="st12" width="82" height="32"/>
+					<text transform="matrix(1 0 0 1 0.4067 21)" class="st11 st9 st5">Ressource</text>
+				</g>
+				<g id="Group-15" transform="translate(864.000000, 445.000000)">
+					<rect id="Rectangle-1_19_" class="st12" width="82" height="32"/>
+					<text transform="matrix(1 0 0 1 1.4067 21)" class="st11 st9 st5">Ressource</text>
+				</g>
+				<g id="Group-16" transform="translate(982.000000, 445.000000)">
+					<rect id="Rectangle-1_20_" class="st12" width="82" height="32"/>
+					<text transform="matrix(1 0 0 1 0.9067 21)" class="st11 st9 st5">Ressource</text>
+				</g>
+				<g id="Group-17" transform="translate(982.000000, 495.000000)">
+					<rect id="Rectangle-1_21_" class="st12" width="82" height="32"/>
+					<text transform="matrix(1 0 0 1 1.4067 21)" class="st11 st9 st5">Ressource</text>
+				</g>
+				<g id="Group-18" transform="translate(982.000000, 546.000000)">
+					<rect id="Rectangle-1_22_" class="st12" width="82" height="32"/>
+					<text transform="matrix(1 0 0 1 1.4067 21)" class="st11 st9 st5">Ressource</text>
+				</g>
+				<g id="Group-19" transform="translate(982.000000, 596.000000)">
+					<rect id="Rectangle-1_23_" class="st12" width="82" height="32"/>
+					<text transform="matrix(1 0 0 1 1.4067 21)" class="st11 st9 st5">Ressource</text>
+				</g>
+				<g id="Group-3" transform="translate(175.000000, 628.000000)">
+					<rect id="Rectangle-1_24_" class="st12" width="82" height="32"/>
+					<text transform="matrix(1 0 0 1 1.4067 21)" class="st11 st9 st5">Ressource</text>
+				</g>
+				<rect id="Rectangle-1_25_" x="1183" y="436" class="st13" width="163" height="56"/>
+				<rect id="Rectangle-1_26_" x="1183" y="509" class="st13" width="163" height="56"/>
+				<rect id="Rectangle-1_27_" x="1183" y="582" class="st13" width="163" height="56"/>
+				<rect id="Rectangle-1_28_" x="1368" y="582" class="st13" width="163" height="56"/>
+				<rect id="Rectangle-1_29_" x="1368" y="509" class="st13" width="163" height="56"/>
+				<rect id="Rectangle-1_30_" x="1368" y="436" class="st13" width="163" height="56"/>
+				<text transform="matrix(1 0 0 1 1214.2776 460)" class="st11 st9 st5">Kauf / Bereit- </text>
+				<text transform="matrix(1 0 0 1 1194.3711 478)" class="st11 st9 st5">stellung von IaaS</text>
+				<text transform="matrix(1 0 0 1 1389.1941 460)" class="st11 st9 st5">Überwachung </text>
+				<text transform="matrix(1 0 0 1 1409.2998 478)" class="st11 st9 st5">von IaaS</text>
+				<text transform="matrix(1 0 0 1 1211.1906 533)" class="st11 st9 st5">Konfiguration</text>
+				<text transform="matrix(1 0 0 1 1320.6672 533)" class="st11 st9 st5"> </text>
+				<text transform="matrix(1 0 0 1 1236.109 551)" class="st11 st9 st5">von IaaS</text>
+				<text transform="matrix(1 0 0 1 1217.2767 615)" class="st11 st9 st5">Rechnungen</text>
+				<text transform="matrix(1 0 0 1 1395.113 542)" class="st11 st9 st5">Unterstützung</text>
+				<text transform="matrix(1 0 0 1 1408.234 615)" class="st11 st9 st5">Abrechnung</text>
+				<path id="Line" class="st1" d="M904.5,56.5v81"/>
+				<path id="Line-decoration-1" class="st1" d="M904.5,137.5l3-10.8h-6L904.5,137.5z"/>
+				<path id="Line_1_" class="st1" d="M1352,123.5V196"/>
+				<path id="Line-decoration-1_1_" class="st1" d="M1352,196l3-10.8h-6L1352,196z"/>
+				<text transform="matrix(1 0 0 1 1159.0525 418)" class="st8 st14 st15">Zugriff auf das Infrastrukturkundenportal</text>
+				<text transform="matrix(1 0 0 1 830.4554 418)" class="st8 st14 st15">Ressourcengruppe</text>
+				<text transform="matrix(1 0 0 1 202.4335 425)" class="st8 st14 st15">Cloud Foundry</text>
+				<path id="Line-4" class="st1" d="M159.5,603.5l-37,20"/>
+				<path id="Line-4-decoration-1" class="st1" d="M122.5,623.5l10.9-2.5l-2.9-5.3L122.5,623.5z"/>
+				<path id="Line-4_1_" class="st1" d="M351.5,603.5l-37,20"/>
+				<path id="Line-4-decoration-1_1_" class="st1" d="M314.5,623.5l10.9-2.5l-2.9-5.3L314.5,623.5z"/>
+				<path id="Line-5" class="st1" d="M180.5,603.5l32,20"/>
+				<path id="Line-5-decoration-1" class="st1" d="M212.5,623.5l-7.6-8.3l-3.2,5.1L212.5,623.5z"/>
+				<path id="Line-5_1_" class="st1" d="M372.5,603.5l32,20"/>
+				<path id="Line-5-decoration-1_1_" class="st1" d="M404.5,623.5l-7.6-8.3l-3.2,5.1L404.5,623.5z"/>
+				<path id="Line-4_2_" class="st1" d="M256.4,500L199,551.3"/>
+				<path id="Line-4-decoration-1_2_" class="st1" d="M199,551.3l10.1-5l-4-4.5L199,551.3z"/>
+				<path id="Line-5_2_" class="st1" d="M273,500l56.5,50.5"/>
+				<path id="Line-5-decoration-1_2_" class="st1" d="M329.5,550.5l-6.1-9.4l-4,4.5L329.5,550.5z"/>
+				<path id="Line-7" class="st1" d="M836.5,264.5h-66"/>
+				<path id="Line-7-decoration-1" class="st1" d="M770.5,264.5l10.8,3v-6L770.5,264.5z"/>
+				<g id="Group-25" transform="translate(906.000000, 199.000000)">
+					<path id="Line-8" class="st0" d="M1.5,0.5v181"/>
+					<path id="Line-9_1_" class="st1" d="M1.5,189.6v-1"/>
+					<path id="Line-9-decoration-1_1_" class="st1" d="M1.5,189.6l-3-10.8h6L1.5,189.6z"/>
+				</g>
+				<path id="Line-12" class="st1" d="M269.5,291.5v103"/>
+				<path id="Line-12-decoration-1" class="st1" d="M269.5,394.5l3-10.8h-6L269.5,394.5z"/>
+				<path id="Line-17" class="st16" d="M1631.5,725.5l1.5,1.5"/>
+				<g id="arrows_1_" transform="translate(625.000000, 96.000000)">
+					<path id="Line-15" class="st17" d="M824.5,1.5h182"/>
+					<path id="Line-16" class="st17" d="M1006.5,1.5v627"/>
+					<path id="Line-18" class="st17" d="M1006.5,628.5H1.5"/>
+					<path id="Line-19" class="st1" d="M1.5,628.5v-433"/>
+					<path id="Line-19-decoration-1" class="st1" d="M1.5,195.5l-3,10.8h6L1.5,195.5z"/>
+				</g>
+				<g id="Group-20" transform="translate(932.000000, 671.000000)">
+					<path id="Line-19_1_" class="st0" d="M1,54V0"/>
+					<path id="Line-19_2_" class="st1" d="M1,1V0"/>
+					<path id="Line-19-decoration-1_1_" class="st1" d="M1,0l-3,10.8h6L1,0z"/>
+				</g>
+				<g id="Group-21" transform="translate(1028.000000, 631.000000)">
+					<path id="Line-20" class="st0" d="M1.5,93.5v-90"/>
+					<path id="Line-20_1_" class="st1" d="M1.5,2.3v-1"/>
+					<path id="Line-20-decoration-1" class="st1" d="M1.5,1.3l-3,10.8h6L1.5,1.3z"/>
+				</g>
+				<g id="arrows_2_" transform="translate(266.000000, 184.000000)">
+					<path id="Line-6" class="st0" d="M1.5,1.5v36"/>
+					<path id="Line-6_1_" class="st1" d="M1.5,46.5v1"/>
+					<path id="Line-6-decoration-1" class="st1" d="M1.5,47.5l3-10.8h-6L1.5,47.5z"/>
+					<path id="Line-21" class="st18" d="M541.5,1.5H1.5"/>
+				</g>
+				<g id="arrows_3_" transform="translate(15.000000, 166.000000)">
+					<path id="Line-21_1_" class="st17" d="M792.5,1.5H1.5"/>
+					<path id="Line-22" class="st17" d="M1.5,1.5v287"/>
+					<path id="Line-23_1_" class="st1" d="M2.5,288.5h162"/>
+					<path id="Line-23-decoration-1_1_" class="st1" d="M164.5,288.5l-10.8-3v6L164.5,288.5z"/>
+				</g>
+				<g id="arrows_4_" transform="translate(0.000000, 149.000000)">
+					<path id="Line-21_2_" class="st18" d="M808.5,1.5H1.5"/>
+					<path id="Line-22_1_" class="st18" d="M1.5,2.5v423"/>
+					<g id="Group-23" transform="translate(2.000000, 319.000000)">
+						<path id="Line-23_2_" class="st0" d="M0.5,1.5h175"/>
+						<path id="Line-23_3_" class="st1" d="M176.5,1.5h1"/>
+						<path id="Line-23-decoration-1_2_" class="st1" d="M177.5,1.5l-10.8-3v6L177.5,1.5z"/>
+					</g>
+					<g id="Group-22" transform="translate(1.000000, 424.000000)">
+						<path id="Line-23_4_" class="st1" d="M99.5,1.5h1"/>
+						<path id="Line-23-decoration-1_3_" class="st1" d="M100.5,1.5l-10.8-3v6L100.5,1.5z"/>
+						<path id="Line-23_5_" class="st0" d="M0.5,1.5h91"/>
+					</g>
+				</g>
+				<path id="Line-24" class="st1" d="M172.5,259.5h-49"/>
+				<path id="Line-24-decoration-1" class="st1" d="M123.5,259.5l10.8,3v-6L123.5,259.5z"/>
+				<g id="arrows_5_" transform="translate(1001.000000, 24.000000)">
+					<path id="Line-2" class="st1" d="M346.5,1.5v36"/>
+					<path id="Line-2-decoration-1" class="st1" d="M346.5,37.5l3-10.8h-6L346.5,37.5z"/>
+					<path id="Line-25" class="st17" d="M0.5,1.5h345"/>
+				</g>
+				<g id="arrows_6_" transform="translate(965.000000, 199.000000)">
+					<g id="Group-24" transform="translate(59.000000, 135.000000)">
+						<path id="Line-9_2_" class="st0" d="M1.5,0.5v96"/>
+						<path id="Line-9_3_" class="st1" d="M1.5,107.6v-1"/>
+						<path id="Line-9-decoration-1_2_" class="st1" d="M1.5,107.6l-3-10.8h6L1.5,107.6z"/>
+					</g>
+					<path id="Line-26" class="st18" d="M60.5,135.5h-59"/>
+					<path id="Line-27" class="st0" d="M1.5,0.5v135"/>
+				</g>
+				<g id="arrows_7_" transform="translate(666.000000, 286.000000)">
+					<g id="Group-28" transform="translate(1.000000, 172.000000)">
+						<path id="Line-11" class="st0" d="M0.5,1.5h65"/>
+						<path id="Line-23_6_" class="st1" d="M71,1h1"/>
+						<path id="Line-23-decoration-1_4_" class="st1" d="M72,1L61.2-2v6L72,1z"/>
+					</g>
+					<path id="Line-27_1_" class="st0" d="M1.5,0.5v173"/>
+				</g>
+				<path id="Line-27_2_" class="st1" d="M836.5,200.5v64"/>
+				<g id="arrows_8_" transform="translate(1000.000000, 165.000000)">
+					<path id="Line-3" class="st1" d="M181.5,66.5h69"/>
+					<path id="Line-3-decoration-1" class="st1" d="M250.5,66.5l-10.8-3v6L250.5,66.5z"/>
+					<path id="Line-26_1_" class="st17" d="M181.5,1.5H0.5"/>
+					<path id="Line-27_3_" class="st17" d="M181.5,2.5v63"/>
+				</g>
+				<g id="arrows_9_" transform="translate(1000.000000, 183.000000)">
+					<g id="Group-26" transform="translate(254.000000, 139.000000)">
+						<path id="Line-9_4_" class="st1" d="M1.5,63.6v-1"/>
+						<path id="Line-9-decoration-1_3_" class="st1" d="M1.5,63.6l-3-10.8h6L1.5,63.6z"/>
+						<path id="Line-14" class="st0" d="M1.5,0.5v52"/>
+					</g>
+					<path id="Line-26_2_" class="st0" d="M127.5,1.5H0.5"/>
+					<path id="Line-26_3_" class="st18" d="M255.5,138.5h-127"/>
+					<path id="Line-27_4_" class="st0" d="M128.5,1.5v137"/>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 21 103)" class="st20 st11 st21">Benutzer sind Mitglieder einer Organisation und können </text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 21 118)" class="st20 st11 st21">einem Bereich innerhalb einer Organisation ohne </text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 21 133)" class="st20 st11 st21">Organisationsrolle zugewiesen werden.</text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 31 241)" class="st20 st11 st21">Services können </text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 31 256)" class="st20 st11 st21">Cloud Foundry- </text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 31 271)" class="st20 st11 st21">oder ressourcen-</text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 31 286)" class="st20 st11 st21">gruppenbasiert sein.</text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 121 335)" class="st20 st11 st21">Zugriff für Serviceinstanzen </text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 121 350)" class="st20 st11 st21">kann nur über Bereichs-</text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 121 365)" class="st20 st11 st21">rollen erteilt werden.</text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 81 498)" class="st20 st11 st21">Für den Zugriff auf </text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 81 513)" class="st20 st11 st21">Bereichsressourcen ist </text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 81 528)" class="st20 st11 st21">eine Bereichsrolle </text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 81 543)" class="st20 st11 st21">erforderlich.</text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 754 315)" class="st20 st11 st21">Benutzern und Service-IDs </text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 754 330)" class="st20 st11 st21">kann Zugriff auf einzelne </text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 754 345)" class="st20 st11 st21">Ressourcen oder alle </text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 754 360)" class="st20 st11 st21">Ressourcen  in einer </text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 754 375)"><tspan x="0" y="0" class="st20 st11 st21">Ressourcengruppe erteilt </tspan><tspan x="0" y="14.4" class="st20 st11 st21">werden.</tspan></text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 1273 335)" class="st20 st11 st21">Differenzierter Kundenportalzugriff kann </text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 1273 350)" class="st20 st11 st21">auf die darin enthaltenen Features erteilt werden, </text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 1273 365)" class="st20 st11 st21">nicht jedoch auf die Geräte selbst. Der Gerätezugriff </text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 1273 380)" class="st20 st11 st21">wird auf dem jeweiligen Gerät gesteuert.</text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 1464 118)" class="st20 st11 st21">Bei ressourcengruppen- </text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 1464 133)" class="st20 st11 st21">basierten Services kann </text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 1464 148)" class="st20 st11 st21">Service-IDs derselbe Zugriff </text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 1464 163)" class="st20 st11 st21">erteilt werden </text>
+				</g>
+				<g class="st19">
+					<text transform="matrix(1 0 0 1 1464 178)" class="st20 st11 st21">wie Benutzern.</text>
+				</g>
+			</g>
+			<rect id="Rectangle-1_31_" x="808" y="144" class="st2" width="193" height="56"/>
+			<text transform="matrix(1 0 0 1 855.4276 179)" class="st3 st4 st5">Benutzer</text>
+			<rect id="Rectangle-1_32_" x="1258" y="200" class="st2" width="193" height="56"/>
+			<text transform="matrix(1 0 0 1 1285.0928 235)" class="st3 st4 st5">API-Schlüssel</text>
+			<rect id="Rectangle-1_33_" x="1256" y="68" class="st2" width="193" height="56"/>
+			<text transform="matrix(1 0 0 1 1294.3458 103)" class="st3 st4 st5">Service-IDs</text>
+		</g>
+		<g id="key" transform="translate(0.000000, 759.000000)">
+			<text transform="matrix(1 0 0 1 77 80)" class="st22 st11 st9">Zugriff</text>
+			<text transform="matrix(1 0 0 1 77 50)" class="st22 st11 st9">Zugehörigkeit</text>
+			<path id="Line_2_" class="st23" d="M1,1.3v120.4"/>
+			<text transform="matrix(1 0 0 1 26 16)" class="st22 st24 st14">Schlüssel</text>
+			<path id="Line-14_1_" class="st1" d="M26,49h24"/>
+			<path id="Line-14-Copy" class="st0" d="M26,79h24"/>
+		</g>
+	</g>
+</g>
+</svg>
