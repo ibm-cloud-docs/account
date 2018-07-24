@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-07-09"
+lastupdated: "2018-07-24"
 
 ---
 
@@ -110,10 +110,10 @@ To help you experience more of {{site.data.keyword.Bluemix_notm}} all new functi
 
 If linking is not a viable option for you, contact your sales support for other options.
 
-## Are there incentives for linking my accounts now? 
+## Are there incentives for linking my accounts? 
 {: #al_incent}
 
-If you link your accounts now, you can use a promotional credit to try {{site.data.keyword.Bluemix_notm}} services.
+When you link your accounts, you can use a $200 promotional credit to try {{site.data.keyword.Bluemix_notm}} services. 
 
 ## What does adding {{site.data.keyword.Bluemix_notm}} platform services to my SoftLayer account mean? 
 {: #al_owaffslacct}
