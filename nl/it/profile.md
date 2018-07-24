@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-04-06"
+lastupdated: "2018-07-10"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-04-06"
 # Configurazione del tuo profilo
 {: #usersettings}
 
-La prima volta che utilizzi {{site.data.keyword.Bluemix}}, configura il tuo profilo account. Vai all'icona **{{site.data.keyword.avatar}}** ![Icona Avatar](../icons/i-avatar-icon.svg) &gt; **Visualizza profilo** per impostare o aggiornare le impostazioni del tuo profilo.
+La prima volta che utilizzi {{site.data.keyword.Bluemix}}, configura il tuo profilo account. Vai all'icona **{{site.data.keyword.avatar}}** ![Icona Avatar](../icons/i-avatar-icon.svg) &gt; **Profilo e account** per impostare o aggiornare le impostazioni del tuo profilo.
 {:shortdesc}
 
 Puoi impostare o aggiornare le seguenti informazioni:
@@ -33,7 +33,7 @@ Se sei un amministratore di {{site.data.keyword.Bluemix_local_notm}} o {{site.da
 ## Modifica della tua foto del profilo
 {: #photo notoc}
 
-Vai all'icona **{{site.data.keyword.avatar}}** ![Icona Avatar](../icons/i-avatar-icon.svg) &gt; **Visualizza profilo**.
+Vai all'icona **{{site.data.keyword.avatar}}** ![Icona Avatar](../icons/i-avatar-icon.svg) &gt; **Profilo e account**.
 
   * Per aggiungere una foto, fai clic su **CARICA UNA FOTO**.
   * Per sostituire la tua foto corrente con una nuova, fai clic su **MODIFICA FOTO**.
@@ -46,7 +46,7 @@ Un ID IBM è un singolo ID che utilizzi per accedere al tuo account {{site.data.
 
 Non puoi modificare il tuo ID IBM, ma puoi modificare le tue informazioni di profilo ad esso associate, come nome, e-mail, numero di telefono, password o nome dell'azienda.
 
-1. Vai all'icona **{{site.data.keyword.avatar}}** ![Icona Avatar](../icons/i-avatar-icon.svg) &gt; **Visualizza profilo**.
+1. Vai all'icona **{{site.data.keyword.avatar}}** ![Icona Avatar](../icons/i-avatar-icon.svg) &gt; **Profilo e account**.
 2. Fai clic su **modifica il tuo ID IBM**.
 3. Modifica le tue informazioni utente.
 4. Fai clic su **Salva**.
@@ -60,5 +60,5 @@ Se scegli di disabilitare la traccia, potresti non essere in grado di utilizzare
 
 Per disabilitare la traccia di analisi, completa la seguente procedura:
 
-1. Vai all'icona **{{site.data.keyword.avatar}}** ![Icona Avatar](../icons/i-avatar-icon.svg) &gt; **Visualizza profilo**.
+1. Vai all'icona **{{site.data.keyword.avatar}}** ![Icona Avatar](../icons/i-avatar-icon.svg) &gt; **Profilo e account**.
 2. Imposta la traccia di analisi su **disattivo**.

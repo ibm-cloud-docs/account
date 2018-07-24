@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2017-11-09"
+lastupdated: "2018-07-16"
 
 ---
 
@@ -160,7 +160,7 @@ Per creare uno spazio, utilizza uno dei seguenti metodi:
 {: tsResolve}
 
   * Dalla barra dei menu della console, fai clic su **Gestisci > Account > Organizzazioni**. Quindi, seleziona l'organizzazione in cui vuoi creare lo spazio e fai clic su **Crea uno spazio**.
-  * Nell'interfaccia riga di comando cf, immetti `cf create-space <space_name> -o <organization_name>`.
+  * Nell'interfaccia riga di comando Cloud Foundry, immetti `cf create-space <space_name> -o <organization_name>`.
 
 
 ## Le applicazioni condividono lo stesso nome di dominio
@@ -188,13 +188,13 @@ In qualità di amministratore, non puoi visualizzare tutte le organizzazioni uti
 Questa è una limitazione dell'interfaccia utente {{site.data.keyword.Bluemix_notm}}.
 {: tsCauses}
 
-Puoi utilizzare i comandi come `cf orgs`, `cf create-org` e `cf delete-org` dall'interfaccia riga di comando cf per gestire tutte le organizzazioni. Per un elenco completo dei comandi cf, immetti `cf help`.
+Puoi utilizzare i comandi come `cf orgs`, `cf create-org` e `cf delete-org` dall'interfaccia riga di comando Cloud Foundry per gestire tutte le organizzazioni. Per un elenco completo dei comandi cf, immetti `cf help`.
 {: tsResolve}
 
 ## Impossibile aggiungere la carta di credito
 {: #ts_addcc}
 
-Non puoi inoltrare le informazioni della tua carta di credito per convertire il tuo account di prova in un account con pagamento a consumo.
+Non puoi inoltrare le informazioni della tua carta di credito per convertire il tuo account Lite in un account fatturabile.
 
 Il pulsante **Inoltra** nella pagina Aggiungi carta di credito è disabilitato.
 {: tsSymptoms}

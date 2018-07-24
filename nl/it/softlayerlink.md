@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2018
 
-lastupdated: "2018-05-01"
+lastupdated: "2018-07-11"
 
 ---
 
@@ -55,7 +55,7 @@ Se sei un nuovo cliente, quando controlli il tuo ordine ti verrà chiesto il tuo
   * Per utilizzare un ID IBM esistente, immetti il nome utente o l'indirizzo e-mail dell'ID IBM che sia univoco (vale a dire, che non sia condiviso tra più ID IBM).
   * Per creare un nuovo ID IBM, immetti un indirizzo e-mail che non sia attualmente utilizzato da nessun ID IBM. Questo indirizzo e-mail è il nome utente per l'ID IBM ed è l'indirizzo a cui viene inviato il tuo codice di registrazione una volta che l'ID IBM è stato creato. Puoi aggiornare l'indirizzo e-mail associato all'ID IBM in un secondo momento, ma non puoi modificare il nome utente.
 
-Per risolvere eventuali problemi con l'accesso con il tuo ID IBM, vedi [Risoluzione dei problemi di accesso a {{site.data.keyword.Bluemix_notm}}](/docs/troubleshoot/ts_accessing.html#accessing).
+Per risolvere eventuali problemi con l'accesso con il tuo ID IBM, vedi [Risoluzione dei problemi di accesso a {{site.data.keyword.Bluemix_notm}}](/docs/account/ts_accessing.html#accessing).
 
 
 ## Collegamento degli account ID IBM
@@ -106,7 +106,7 @@ Gli account collegati accedono alla console [{{site.data.keyword.Bluemix}} ![Ico
 Inoltre, tieni presente le seguenti modifiche dopo che gli account sono stati collegati:
   * Devi utilizzare le credenziali dell'ID IBM per accedere a entrambi gli account SoftLayer e {{site.data.keyword.Bluemix_notm}}.
   * Eventuali sconti SoftLayer esistenti vengono applicati agli addebiti {{site.data.keyword.Bluemix_notm}}.
-  * Ricevi un'unica fattura in dollari americani (USD). Se hai un account {{site.data.keyword.Bluemix_notm}} esistente, la fatturazione tramite {{site.data.keyword.Bluemix_notm}} per le risorse dell'infrastruttura parte dal nuovo ciclo di fatturazione che inizia dopo il collegamento degli account. Per ulteriori informazioni, vedi [Fatturazione consolidata per gli account collegati](/docs/account/linking_accounts.html).
+  * Ricevi un'unica fattura in dollari americani (USD). Se hai un account {{site.data.keyword.Bluemix_notm}} esistente, la fatturazione tramite {{site.data.keyword.Bluemix_notm}} per le risorse dell'infrastruttura parte dal nuovo ciclo di fatturazione che inizia dopo il collegamento degli account. Per ulteriori informazioni, vedi [Fatturazione consolidata per gli account collegati](/docs/billing-usage/linking_accounts.html).
   * Puoi monitorare l'utilizzo delle tue risorse dell'infrastruttura nella console {{site.data.keyword.Bluemix_notm}}.
 
 Dopo aver collegato i tuoi account, non possono essere scollegati.
