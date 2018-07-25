@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-06-26"
+lastupdated: "2018-07-09"
 
 ---
 
@@ -31,13 +31,19 @@ Un plan Lite corresponde a una cuota gratuita basada en un plan de servicio. Pue
 
 Si se alcanza cualquier límite de cuota para instancias del plan Lite, se suspende el servicio para ese mes. Los límites de cuota son por organización, no por instancia. Nuevas instancias creadas en la misma organización reflejarán el uso de instancias anteriores. Los límites de cuota se restablecen el primero de cada mes.
 
+## ¿Cuántos grupos de recursos, organizaciones o espacios puedo crear?
+{: #resourcelimit}
+
+Si tiene una cuenta facturable, no hay un límite en el número de grupos de recursos, organizaciones o espacios que pueda crear con su cuenta. Sin embargo, si tiene una cuenta Lite, estará limitado a una organización y a un grupo de recursos.
+
 ## ¿Cómo puedo actualizar o cambiar mi tipo de cuenta?
 {: #changeacct}
 
 * Para convertir la prueba de 30 días en una cuenta Lite, póngase en contacto con [Ventas de {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg). Una vez confirmada la elegibilidad, el equipo de ventas comparte un enlace exclusivo que puede utilizar para intentar convertir la cuenta. La conversión satisfactoria no está garantizada, ya que las cuentas Lite no son completamente compatibles con las pruebas de 30 días.  
 * Para actualizar de una cuenta Lite a una cuenta de Pago según uso, vaya a **Gestionar > Facturación y utilización > Facturación** y pulse **Añadir tarjeta de crédito**.
+* Para actualizar de una cuenta Lite a una cuenta de Suscripción, vaya a **Gestionar > Facturación y utilización > Facturación** y pulse **Más información**.
 * Para convertir la cuenta de Pago según uso en una cuenta de Suscripción, póngase en contacto con [Ventas de {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg).
-
+* 
 ## Si actualizo mi cuenta Lite, ¿puedo continuar utilizando mis instancias existentes?
 {: #nochange}
 
@@ -53,17 +59,17 @@ Actualizar el método de pago asociado a su cuenta facturable es un proceso senc
 
 En la consola, vaya a la página **Gestión > Facturación y uso > Facturación** y pulse **Desactivar cuenta**.
 
+## ¿Cómo puedo suprimir mi cuenta?
+{: #deleteaccount}
+
+Debe ponerse en contacto con el equipo de soporte de IBM Cloud para abrir una incidencia de soporte y solicitar que se suprima su cuenta. Si tiene datos asociados con su antigua cuenta que desea guardar y moverlos a una nueva cuenta, incluya es información en el correo.
+
 ## ¿Cómo obtengo soporte?
 {: #contactsupport}
 
 Para obtener ayuda con la preparación y la ejecución en {{site.data.keyword.Bluemix_notm}} o navegando por {{site.data.keyword.Bluemix_notm}}, empiece una conversación con nosotros utilizando el icono de chat en la consola.
 
 También puede echar un vistazo a los varios recursos útiles disponibles en el [Centro de soporte ![Icono de enlace externo](../icons/launch-glyph.svg)](https://console.bluemix.net/unifiedsupport/supportcenter){: new_window}. Desde ahí, puede acceder a Stack Overflow para publicar una pregunta en nuestra comunidad de desarrolladores. También puede abrir una incidencia de soporte.
-
-## ¿Cuántos grupos de recursos, organizaciones o espacios puedo crear?
-{: #resourcelimit}
-
-Si tiene una cuenta facturable, no hay un límite en el número de grupos de recursos, organizaciones o espacios que pueda crear con su cuenta. Sin embargo, si tiene una cuenta Lite, estará limitado a una organización y a un grupo de recursos.
 
 ## ¿Puedo registrarme para una prueba gratuita?
 {: #freetrial}
@@ -84,8 +90,8 @@ Después de enlazar su cuenta, mantendrá el mismo nivel de soporte que el que t
 {: #al_morehelp}
 
   1. Consulte el blog de [Pasos para enlazar sus cuentas IaaS y PaaS](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/) donde obtendrá información de utilidad. 
-  2. Desde el portal de cliente de infraestructura de {{site.data.keyword.BluSoftlayer_full}}, abra un **Chat en directo para ventas** para realizar preguntas sobre la cuenta.
-  3. Abra un ticket desde el portal de cliente de infraestructura de {{site.data.keyword.BluSoftlayer_full}}.  Seleccione **Soporte** > **Añadir ticket** y, a continuación, en el campo **Asunto**, seleccione ** Solicitud de cuenta** para dirigir su pregunta relacionada con la cuenta al equipo de soporte adecuado.
+  2. Desde el portal de clientes de infraestructura de {{site.data.keyword.BluSoftlayer_full}}, abra un **Chat en directo para ventas** para realizar preguntas sobre la cuenta.
+  3. Abra un ticket desde el portal de clientes de infraestructura de {{site.data.keyword.BluSoftlayer_full}}.  Seleccione **Soporte** > **Añadir ticket** y, a continuación, en el campo **Asunto**, seleccione ** Solicitud de cuenta** para dirigir su pregunta relacionada con la cuenta al equipo de soporte adecuado.
 
 Si usted es el maestro de cuentas, consulte [Trabajar con usuarios](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) para obtener más información sobre la gestión de usuarios.
 
@@ -118,5 +124,5 @@ Si usted es el maestro de cuentas, consulte [Trabajar con usuarios](https://cons
 ## El enlace de las cuentas, ¿cómo afecta al ID de cuenta maestra de SoftLayer? 
 {: #al_howaffslmastacct}
 
-Todavía podrá utilizar el ID de cuenta de SoftLayer para iniciar una sesión en el portal de cliente de infraestructura de {{site.data.keyword.BluSoftlayer_full}} porque es posible acceder a la consola de {{site.data.keyword.Bluemix_notm}} mediante los IBMid.
+Todavía podrá utilizar el ID de cuenta de SoftLayer para iniciar una sesión en el portal de clientes de infraestructura de {{site.data.keyword.BluSoftlayer_full}} porque es posible acceder a la consola de {{site.data.keyword.Bluemix_notm}} mediante los IBMid.
 

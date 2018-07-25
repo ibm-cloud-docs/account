@@ -122,7 +122,7 @@
            stroke-dasharray="10"
            xlink:href="#path-1" />
         <text
-           id="IBM-Cloud-Local"
+           id="IBM-Bluemix-Local"
            font-family="IBMPlexSans-Bold, IBM Plex Sans"
            font-size="20"
            font-weight="bold"
@@ -130,7 +130,7 @@
           <tspan
              x="63"
              y="49"
-             id="tspan21">IBM Cloud Local</tspan>
+             id="tspan21">IBM Bluemix Local</tspan>
         </text>
         <text
            id="Organization-Copy"

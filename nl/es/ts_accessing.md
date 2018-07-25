@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-02"
+lastupdated: "2018-07-09"
 
 ---
 
@@ -29,7 +29,7 @@ Algunos de los problemas generales de acceso a {{site.data.keyword.Bluemix}} inc
 
 Debe tener una contraseña válida que esté asociada a su IBMid para poder iniciar sesión en la consola de {{site.data.keyword.Bluemix_notm}}.
 
-Debe tener una contraseña válida que esté asociada con su IBMid o ID de cuenta enlazada para iniciar sesión a través del [{{site.data.keyword.slportal}}](https://control.softlayer.com).
+También debe tener una contraseña válida que esté asociada con su IBMid o ID de cuenta enlazada para iniciar sesión a través del [{{site.data.keyword.slportal}}](https://control.softlayer.com).
 
 Cuando intenta iniciar una sesión en {{site.data.keyword.Bluemix_notm}}, aparece el siguiente mensaje de error:
 {: tsSymptoms}

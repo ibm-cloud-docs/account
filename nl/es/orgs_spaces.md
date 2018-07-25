@@ -33,10 +33,10 @@ Las organizaciones pueden abarcar varias regiones y se definen por los siguiente
 <dt>Usuarios</dt>
 <dd>El rol con permiso básico en las organizaciones y los espacios. Debe estar asignado a una organización para que se le puedan otorgar otros permisos a los espacios en la organización. Para obtener más detalles, consulte [Usuarios y roles](/docs/iam/users_roles.html#userrolesinfo).</dd>
 <dt>Dominios</dt>
-<dd>Proporciona la ruta en Internet que se asigna a la organización. Una ruta tiene un subdominio y un dominio. Un subdominio suele ser el nombre de la app. Un dominio puede ser un dominio del sistema o un dominio personalizado que ha registrado para la aplicación. Consulte [Gestión de dominios personalizados](/docs/account/manageorg.html#managedomains).<br/>
-<p>**Nota:** Si añade un dominio personalizado, debe configurar el servidor DNS para resolver el dominio personalizado para que apunte al dominio del sistema de {{site.data.keyword.Bluemix_notm}}. De este modo, cuando {{site.data.keyword.Bluemix_notm}} recibe una solicitud para el dominio personalizado, puede direccionarlo correctamente a la app.</p></dd>
+<dd>Proporciona la ruta en Internet que se asigna a la organización. Una ruta tiene un subdominio y un dominio. Un subdominio suele ser el nombre de la aplicación. Un dominio puede ser un dominio del sistema o un dominio personalizado que ha registrado para la aplicación. Consulte [Gestión de dominios personalizados](/docs/account/manageorg.html#managedomains).<br/>
+<p>**Nota:** Si añade un dominio personalizado, debe configurar el servidor DNS para resolver el dominio personalizado para que apunte al dominio del sistema de {{site.data.keyword.Bluemix_notm}}. De este modo, cuando {{site.data.keyword.Bluemix_notm}} recibe una solicitud para el dominio personalizado, puede direccionarlo correctamente a la aplicación.</p></dd>
 <dt>Cuota</dt>
-<dd>Representa recursos disponibles para una organización, incluido el número de servicios y la cantidad de memoria que se puede asignar para que la utilice la organización. Cualquier aplicación o servicio en un espacio de una organización contribuye al uso de la cuota asignada. Con las cuentas de Pago según uso o Suscripción, puede ajustar su cuota para los contenedores y apps de Cloud Foundry a medida que cambien las necesidades de su organización. Consulte [Gestión de cuota](/docs/account/manageorg.html#managequota).</dd>
+<dd>Representa recursos disponibles para una organización, incluido el número de servicios y la cantidad de memoria que se puede asignar para que la utilice la organización. Cualquier aplicación o servicio en un espacio de una organización contribuye al uso de la cuota asignada. Con las cuentas de Pago según uso o Suscripción, puede ajustar su cuota para los contenedores y aplicaciones de Cloud Foundry a medida que cambien las necesidades de su organización. Consulte [Gestión de cuota](/docs/account/manageorg.html#managequota).</dd>
 </dl>
 
 En la cuenta de Suscripción, la cuota es un límite definido por el usuario que desencadena notificaciones de gastos.
@@ -62,7 +62,7 @@ Complete los pasos siguientes para añadir una organización:
 ## Adición de espacios
 {: #spaceinfo}
 
-En el seno de una organización, podrá utilizar espacios para agrupar un conjunto de apps, servicios y usuarios. Los espacios están vinculados a una región específica en {{site.data.keyword.Bluemix_notm}}. Puede crear espacios en una organización en función del ciclo de vida de entrega. Por ejemplo, puede crear un espacio `dev` como entorno de desarrollo, un espacio `test` como entorno de prueba y un espacio `production` como entorno de producción. Luego puede asociar sus apps a los espacios.
+En el seno de una organización, podrá utilizar espacios para agrupar un conjunto de aplicaciones, servicios y usuarios. Los espacios están vinculados a una región específica en {{site.data.keyword.Bluemix_notm}}. Puede crear espacios en una organización en función del ciclo de vida de entrega. Por ejemplo, puede crear un espacio `dev` como entorno de desarrollo, un espacio `test` como entorno de prueba y un espacio `production` como entorno de producción. Luego puede asociar sus apps a los espacios.
 
 Tras añadir usuarios a una organización, puede otorgarles permisos a los espacios. Similar a las organizaciones, los espacios también tienen un conjunto de [roles de usuario](/docs/iam/users_roles.html#userrolesinfo) que se pueden asignar a los miembros del equipo:
 

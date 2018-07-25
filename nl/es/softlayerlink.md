@@ -32,7 +32,7 @@ Para cambiar desde su cuenta de SoftLayer existente a un IBMid, cree un IBMid y 
 
 1. Inicie una sesión en su cuenta de SoftLayer y pulse **Aceptar** cuando se visualice una solicitud para cambiar a un IBMid.
 
-   Si es un usuario maestro y no ve un indicador para cambiar a un IBMid en el portal de cliente de infraestructura de {{site.data.keyword.BluSoftlayer_full}} póngase en contacto con el equipo de soporte de IBM para obtener ayuda. Consulte [Soporte de IBM](/docs/get-support/howtogetsupport.html#getting-customer-support) para obtener información de contacto.
+   Si es un usuario maestro y no ve un indicador para cambiar a un IBMid en el portal de clientes de infraestructura de {{site.data.keyword.BluSoftlayer_full}} póngase en contacto con el equipo de soporte de IBM para obtener ayuda. Consulte [Soporte de IBM](/docs/get-support/howtogetsupport.html#getting-customer-support) para obtener información de contacto.
 
    Si con anterioridad inició una sesión y pulso **Más tarde** en la solicitud, y desea cambiar a la autenticación de IBMid en la sesión actual, vaya a la página Editar perfil de usuario y pulse **Cambiar a IBMid**.
 
@@ -47,7 +47,7 @@ Para cambiar desde su cuenta de SoftLayer existente a un IBMid, cree un IBMid y 
 
    El código de registro es válido durante 7 días y solo se puede utilizar una vez.
 
-2. Después de enviar su código de registro, utilice el IBMid para iniciar una sesión en el portal de cliente.
+2. Después de enviar su código de registro, utilice el IBMid para iniciar una sesión en el portal de clientes.
 
    En el indicador de inicio de sesión de la cuenta, vaya a la sección **Inicio de sesión de cuenta de IBMid** y pulse **Iniciar sesión con IBMid**. No utilice los campos el **Nombre de usuario** y **Contraseña** que ha utilizado previamente con su ID de SoftLayer.
 
@@ -89,8 +89,8 @@ Cuando sus cuentas de usuario se hayan cambiado a la autenticación de IBMid, lo
 
 Siga estos pasos para enlazar cada cuenta de SoftLayer con una cuenta de plataforma de {{site.data.keyword.Bluemix_notm}} existente o para crear una nueva:
 
-   1. Inicie sesión en el portal de cliente de infraestructura de {{site.data.keyword.BluSoftlayer_full}} con su IBMid de cuenta de usuario maestro.
-   2. Desde el portal de cliente de infraestructura de {{site.data.keyword.Bluemix_notm}}, pulse **Enlazar a una cuenta de Bluemix**.
+   1. Inicie sesión en el portal de clientes de infraestructura de {{site.data.keyword.BluSoftlayer_full}} con su IBMid de cuenta de usuario maestro.
+   2. Desde el portal de clientes de infraestructura de {{site.data.keyword.Bluemix_notm}}, pulse **Enlazar a una cuenta de Bluemix**.
    3. Lea y acepte las condiciones para enlazar cuentas de SoftLayer y {{site.data.keyword.Bluemix_notm}}.
    4. Siga las indicaciones del asistente, incluida la adición de los usuarios de la cuenta de SoftLayer a la cuenta de {{site.data.keyword.Bluemix_notm}}.
    5. Cuando se le solicite, realice una de las siguientes acciones:
