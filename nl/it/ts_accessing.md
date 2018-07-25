@@ -196,4 +196,4 @@ riesegui l'accesso.
   * Utilizza la modalità di navigazione privata del tuo browser.
   * Cancella i cookie e la cache del browser.
   * Utilizza un browser differente. Per informazioni sulle versioni dei browser supportati da {{site.data.keyword.Bluemix_notm}}, vedi [Prerequisiti di {{site.data.keyword.Bluemix_notm}}](/docs/overview/prereqs.html#prereqs).
-  * Se hai installato l'interfaccia riga di comando cf, immetti il comando `cf apps` per vedere se la tua applicazione è in esecuzione.
+  * Se hai installato l'interfaccia riga di comando Cloud Foundry, immetti il comando `cf apps` per vedere se la tua applicazione è in esecuzione.

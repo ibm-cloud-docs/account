@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2018
 
-lastupdated: "2018-05-01"
+lastupdated: "2018-07-11"
 
 ---
 
@@ -55,7 +55,7 @@ Si es un nuevo cliente, se le solicitará su IBMid existente o que cree un nuevo
   * Para utilizar un IBMid existente, escriba el nombre de usuario o la dirección de correo electrónico del IBMid si es exclusivo (es decir, no compartido con varios IBMid).
   * Para crear un nuevo IBMid, escriba una dirección de correo electrónico que no utilice actualmente ningún otro IBMid. Esta dirección de correo electrónico es el nombre de usuario para el IBMid, y es adónde se enviará su código de registro después de que se cree su IBMid. Más tarde podrá actualizar la dirección de correo electrónico asociada al IBMid, pero no podrá cambiar el nombre de usuario.
 
-Para resolver cualquier problema de inicio de sesión con su IBMid, consulte [Resolución de problemas para acceder a {{site.data.keyword.Bluemix_notm}}](/docs/troubleshoot/ts_accessing.html#accessing).
+Para resolver cualquier problema de inicio de sesión con su IBMid, consulte [Resolución de problemas para acceder a {{site.data.keyword.Bluemix_notm}}](/docs/account/ts_accessing.html#accessing).
 
 
 ## Enlace de cuentas de IBMid
@@ -106,7 +106,7 @@ Las cuentas enlazadas inician una sesión en la consola de [{{site.data.keyword.
 Además, tenga en cuenta los siguientes cambios después de que se hayan enlazado sus cuentas:
   * Debe utilizar las credenciales de IBMid para acceder a sus cuentas tanto de SoftLayer como de {{site.data.keyword.Bluemix_notm}}.
   * Cualquier descuento existente de SoftLayer se aplicará en cargos de {{site.data.keyword.Bluemix_notm}}.
-  * Recibirá una factura en dólares de Estados Unidos (USD). Si tiene una cuenta de {{site.data.keyword.Bluemix_notm}}, la facturación a través de {{site.data.keyword.Bluemix_notm}} para los recursos de infraestructura será efectiva para el nuevo ciclo de facturación que empieza una vez que se hayan enlazado las cuentas. Para obtener más información, consulte [Facturación consolidada para cuentas enlazadas](/docs/account/linking_accounts.html).
+  * Recibirá una factura en dólares de Estados Unidos (USD). Si tiene una cuenta de {{site.data.keyword.Bluemix_notm}}, la facturación a través de {{site.data.keyword.Bluemix_notm}} para los recursos de infraestructura será efectiva para el nuevo ciclo de facturación que empieza una vez que se hayan enlazado las cuentas. Para obtener más información, consulte [Facturación consolidada para cuentas enlazadas](/docs/billing-usage/linking_accounts.html).
   * Puede supervisar el uso de los recursos de infraestructura en la consola de {{site.data.keyword.Bluemix_notm}}.
 
 Después de enlazar sus cuentas, no podrá desenlazarlas.

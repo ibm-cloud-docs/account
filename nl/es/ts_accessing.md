@@ -191,4 +191,4 @@ Lleve a cabo una o varias de estas acciones si es necesario:
   * Utilice la modalidad de navegación privada del navegador.
   * Borre las cookies y la memoria caché del navegador.
   * Utilice otro navegador. Para obtener información sobre las versiones de los navegadores a las que da soporte {{site.data.keyword.Bluemix_notm}}, consulte [Requisitos previos de {{site.data.keyword.Bluemix_notm}}](/docs/overview/prereqs.html#prereqs).
-  * Si ha instalado la interfaz de línea de mandatos cf, escriba el mandato `cf apps` para ver si la app se está ejecutando.
+  * Si ha instalado la interfaz de línea de mandatos Cloud Foundry, escriba el mandato `cf apps` para ver si la app se está ejecutando.
