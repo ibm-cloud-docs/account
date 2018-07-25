@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-06-26"
+lastupdated: "2018-07-09"
 
 ---
 
@@ -31,13 +31,19 @@ Un plan Lite désigne un plan de service basé sur un quota gratuit. Vous pouvez
 
 Lorsque la limite de quota relative aux instances de plan Lite est atteinte, le service est suspendu pour le mois concerné. Les limites de quota sont définies au niveau des organisations et non au niveau des instances. Les nouvelles instances créées dans la même organisation reflètent les utilisations depuis les instances précédentes. Les limites de quota sont réinitialisées le premier jour de chaque mois.
 
+## Combien de groupes de ressources, d'organisations ou d'espaces puis-je créer ?
+{: #resourcelimit}
+
+Si vous avez un compte facturable, le nombre de groupes de ressources, d'organisations ou d'espaces que vous pouvez créer dans votre compte est illimité. En revanche, si vous utilisez un compte Lite, vous êtes limité à une organisation et à un groupe de ressources.
+
 ## Comment mettre à niveau ou modifier mon type de compte ?
 {: #changeacct}
 
 * Pour convertir votre essai de 30 jours en compte Lite, prenez contact avec le [service commercial {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg). Après avoir confirmé l'éligibilité, l'équipe commerciale partage un lien unique que vous pouvez utiliser pour essayer de convertir votre compte. La conversion n'est pas garantie car les comptes Lite ne sont pas totalement compatibles avec les essais de 30 jours.  
-* Pour effectuer une mise à niveau d'un compte Lite vers un compte Paiement à la carte, accédez à **Gérer > Facturation et utilisation > Facturation** et cliquez sur **Ajouter une carte de crédit**.
+* Pour effectuer une mise à niveau d'un compte Lite vers un compte Paiement à la carte, sélectionnez **Gérer > Facturation et utilisation > Facturation** puis cliquez sur **Ajouter une carte de crédit**.
+* Pour effectuer une mise à niveau d'un compte Lite vers un compte Abonnement, sélectionnez **Gérer > Facturation et utilisation > Facturation** puis cliquez sur **En savoir plus**.
 * Pour convertir votre compte Paiement à la carte en compte Abonnement, prenez contact avec le [service commercial {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg).
-
+* 
 ## Si je mets à niveau mon compte Lite, puis-je continuer d'utiliser mes instances existantes ?
 {: #nochange}
 
@@ -53,17 +59,17 @@ Vous pouvez facilement mettre à jour le mode de paiement associé à votre comp
 
 Dans la console, accédez à **Gérer > Facturation et utilisation > Facturation**, puis cliquez sur **Désactiver le compte**.
 
+## Comment supprimer mon compte ?
+{: #deleteaccount}
+
+Vous devez contacter le service de support IBM Cloud pour ouvrir un ticket de demande de service et demander la suppression de votre compte. Si des données sont associées à votre ancien compte et que vous souhaitez les sauvegarder et utiliser un nouveau compte, incluez ces informations dans votre message électronique.
+
 ## A quelles formes de support peut-on accéder ?
 {: #contactsupport}
 
 Pour obtenir de l'aide concernant la mise en route et le fonctionnement dans {{site.data.keyword.Bluemix_notm}} ou la navigation dans {{site.data.keyword.Bluemix_notm}}, démarrez une discussion avec nous à l'aide de l'icône de discussion de la console.
 
 Vous pouvez également extraire un certain nombre de ressources utiles disponibles dans le [centre de support ![Icône de lien externe](../icons/launch-glyph.svg)](https://console.bluemix.net/unifiedsupport/supportcenter){: new_window}. Depuis ce centre, vous pouvez accéder à Stack Overflow pour envoyer une question à notre communauté de développeurs. Vous pouvez également soumettre un ticket de demande de service.
-
-## Combien de groupes de ressources, d'organisations ou d'espaces puis-je créer ?
-{: #resourcelimit}
-
-Si vous avez un compte facturable, le nombre de groupes de ressources, d'organisations ou d'espaces que vous pouvez créer dans votre compte est illimité. En revanche, si vous utilisez un compte Lite, vous êtes limité à une organisation et à un groupe de ressources.
 
 ## Puis-je souscrire à un essai gratuit ?
 {: #freetrial}
@@ -112,7 +118,7 @@ Si vous liez vos comptes maintenant, vous pouvez utiliser un crédit promotionne
 ## Que se passe-t-il si j'ajoute des services de plateforme {{site.data.keyword.Bluemix_notm}} à mon compte SoftLayer ? 
 {: #al_owaffslacct}
 
-Avec cet ajout, votre compte a accès à toutes les offres de la plateforme {{site.data.keyword.Bluemix_notm}}. Une fois que vous avez ajouté l'offre de plateforme {{site.data.keyword.Bluemix_notm}} à votre compte, votre responsable de compte doit activer l'accès à l'offre pour l'utilisateur final.
+Avec cet ajout, votre compte a accès à toutes les offres de la plateforme {{site.data.keyword.Bluemix_notm}}.  Une fois que vous avez ajouté l'offre de plateforme {{site.data.keyword.Bluemix_notm}} à votre compte, votre responsable de compte doit activer l'accès à l'offre pour l'utilisateur final.
 
 Si vous êtes responsable de compte, consultez la rubrique [Gestion des utilisateurs](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) pour en savoir plus.
 

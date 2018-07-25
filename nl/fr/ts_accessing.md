@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-02"
+lastupdated: "2018-07-09"
 
 ---
 
@@ -29,7 +29,7 @@ Des problèmes d'ordre général relatifs à l'accès à {{site.data.keyword.Blu
 
 Vous devez disposer d'un mot de passe valide associé à votre IBMid pour pouvoir vous connecter à la console {{site.data.keyword.Bluemix_notm}}.
 
-Vous devez disposer d'un mot de passe valide associé à votre IBMid ou à votre ID de compte lié pour vous connecter au portail [{{site.data.keyword.slportal}}](https://control.softlayer.com).
+Vous devez également disposer d'un mot de passe valide associé à votre IBMid ou à votre ID de compte lié pour vous connecter au portail [{{site.data.keyword.slportal}}](https://control.softlayer.com).
 
 Lorsque vous tentez de vous connecter à {{site.data.keyword.Bluemix_notm}}, le message d'erreur suivant s'affiche :
 {: tsSymptoms}
