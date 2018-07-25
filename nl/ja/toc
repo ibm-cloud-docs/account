@@ -5,7 +5,8 @@
 アカウントの管理
 
     {: .navgroup id="learn"}
-    [組織のユーザー、チーム、アプリケーションのベスト・プラクティス](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
+    [ユーザー、チーム、アプリケーションを編成するためのベスト・プラクティス](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
+    account_overview.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}

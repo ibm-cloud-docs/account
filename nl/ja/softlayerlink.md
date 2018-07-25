@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2018
 
-lastupdated: "2018-05-01"
+lastupdated: "2018-07-11"
 
 ---
 
@@ -55,7 +55,7 @@ IBM ID への切り替えを開始しても、処理が完了する前であれ�
   * 既存の IBM ID を使用するには、ユーザー名を入力するか、または IBM ID の E メール・アドレスが固有の場合 (つまり、複数の IBM ID 間で共有されていない場合) は E メール・アドレスを入力します。
   * 新規 IBM ID を作成するには、どの IBM ID でも現在使われていない E メール・アドレスを入力します。 この E メール・アドレスは、IBM ID のユーザー名であり、IBM ID の作成後に登録コードが送信される宛先となります。 IBM ID に関連付けられている E メール・アドレスは後で更新できますが、ユーザー名を変更することはできません。
 
-IBM ID でのログインに関する問題を解決するには、『[{{site.data.keyword.Bluemix_notm}} へのアクセスに関するトラブルシューティング](/docs/troubleshoot/ts_accessing.html#accessing)』を参照してください。
+IBM ID でのログインに関する問題を解決するには、『[{{site.data.keyword.Bluemix_notm}} へのアクセスに関するトラブルシューティング](/docs/account/ts_accessing.html#accessing)』を参照してください。
 
 
 ## IBM ID アカウントのリンク
@@ -106,7 +106,7 @@ IBM ID でのログインに関する問題を解決するには、『[{{site.da
 また、アカウントがリンクされると、次のように変わることに注意してください。
   * SoftLayer と {{site.data.keyword.Bluemix_notm}} アカウントの両方にアクセスするために、IBM ID 資格情報を使用する必要があります。
   * 既存の SoftLayer 割引は、{{site.data.keyword.Bluemix_notm}} の料金全体に適用されます。
-  * 米国ドル (USD) 単位の 1 つの請求書を受け取ります。 既存の {{site.data.keyword.Bluemix_notm}} アカウントがある場合、インフラストラクチャー・リソースに対する {{site.data.keyword.Bluemix_notm}} からの請求は、両方のアカウントをリンクした後に開始される新しい請求処理サイクルで有効になります。 詳しくは『[リンクされたアカウントの統合請求](/docs/account/linking_accounts.html)』を参照してください。
+  * 米国ドル (USD) 単位の 1 つの請求書を受け取ります。 既存の {{site.data.keyword.Bluemix_notm}} アカウントがある場合、インフラストラクチャー・リソースに対する {{site.data.keyword.Bluemix_notm}} からの請求は、両方のアカウントをリンクした後に開始される新しい請求処理サイクルで有効になります。 詳しくは『[リンクされたアカウントの統合請求](/docs/billing-usage/linking_accounts.html)』を参照してください。
   * インフラストラクチャー・リソースの使用量は、{{site.data.keyword.Bluemix_notm}} コンソールでモニターできます。
 
 アカウントをリンクした後は、リンクを解除することはできません。

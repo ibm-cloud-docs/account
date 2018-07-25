@@ -1,0 +1,1599 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1676px"
+   height="927px"
+   viewBox="0 0 1676 927"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.48.5 r"
+   sodipodi:docname="account_diagram.svg">
+  <metadata
+     id="metadata456">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1680"
+     inkscape:window-height="987"
+     id="namedview454"
+     showgrid="false"
+     inkscape:zoom="0.72007422"
+     inkscape:cx="1008.7869"
+     inkscape:cy="378.78611"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title4">CF-IAM-IMS_Diagram</title>
+  <desc
+     id="desc6">Created with Sketch.</desc>
+  <defs
+     id="defs8" />
+  <g
+     id="CF-IAM-IMS_Diagram"
+     stroke-width="1"
+     stroke="none"
+     fill-rule="evenodd"
+     fill="none">
+    <g
+       transform="translate(22.000000, 23.000000)"
+       id="g11">
+      <g
+         id="diagram">
+        <g
+           id="Group">
+          <g
+             id="arrows"
+             transform="translate(371.000000, 262.000000)"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000">
+            <path
+               d="M200.5,1.5 L8.5,1.5"
+               id="Line-13"
+               stroke-dasharray="1,5,1,1" />
+            <path
+               d="M7.51664819,1 L0,1"
+               id="Line-23" />
+            <path
+               id="Line-23-decoration-1"
+               d="M0,1 L10.8,4 L10.8,-2 L0,1 Z" />
+          </g>
+          <g
+             id="Group-27"
+             transform="translate(735.000000, 286.000000)"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000">
+            <path
+               d="M1.5,0.5 L1.5,98.5"
+               id="Line-10"
+               stroke-dasharray="1,5,1,1" />
+            <path
+               d="M1.5,102.582763 L1.5,101.582763"
+               id="Line-9" />
+            <path
+               id="Line-9-decoration-1"
+               d="M1.5,102.582763 L-1.5,91.7827625 L4.5,91.7827625 L1.5,102.582763 Z" />
+          </g>
+          <rect
+             id="Rectangle-1"
+             x="808"
+             y="0"
+             width="193"
+             height="56"
+             fill="#8C9BA5" />
+          <text
+             id="Account"
+             font-size="18"
+             font-weight="500"
+             letter-spacing="1.92857099"
+             x="2"
+             style="font-size:18px;font-weight:500;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans-SemiBold, IBM Plex Sans'">
+            <tspan
+               x="866.04102"
+               y="35"
+               id="tspan25"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">アカウント</tspan>
+          </text>
+          <rect
+             id="rect27"
+             x="572"
+             y="230"
+             width="193"
+             height="56"
+             fill="#8C9BA5" />
+          <text
+             id="Access-groups"
+             font-size="18"
+             font-weight="500"
+             letter-spacing="1.92857099"
+             x="6"
+             style="font-size:18px;font-weight:500;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans-SemiBold, IBM Plex Sans'">
+            <tspan
+               x="602.0603"
+               y="265"
+               id="tspan30"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">アクセス・グループ</tspan>
+          </text>
+          <rect
+             id="rect32"
+             x="174"
+             y="235"
+             width="193"
+             height="56"
+             fill="#8C9BA5" />
+          <text
+             id="Services"
+             font-size="18"
+             font-weight="500"
+             letter-spacing="1.92857099"
+             x="10"
+             style="font-size:18px;font-weight:500;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans-SemiBold, IBM Plex Sans'">
+            <tspan
+               x="237.37071"
+               y="270"
+               id="tspan35"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">サービス</tspan>
+          </text>
+          <rect
+             id="rect37"
+             x="71"
+             y="402"
+             width="397"
+             height="271"
+             fill="#F0F3F6" />
+          <rect
+             id="rect39"
+             x="708"
+             y="393"
+             width="397"
+             height="271"
+             fill="#F0F3F6" />
+          <rect
+             id="rect41"
+             x="1156"
+             y="392"
+             width="397"
+             height="271"
+             fill="#F0F3F6" />
+          <rect
+             id="rect43"
+             x="185"
+             y="440"
+             width="159"
+             height="56"
+             fill-opacity="0.5"
+             fill="#3D70B2" />
+          <text
+             id="Organization"
+             font-size="14"
+             font-weight="400"
+             letter-spacing="1.5"
+             x="34"
+             style="font-size:14px;font-weight:400;letter-spacing:1.5;fill:#000000;font-family:'IBMPlexSans-Medium, IBM Plex Sans'">
+            <tspan
+               x="249.323"
+               y="473"
+               id="tspan46"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">組織</tspan>
+          </text>
+          <g
+             id="Group-5"
+             transform="translate(105.000000, 556.000000)">
+            <rect
+               id="rect49"
+               x="0"
+               y="0"
+               width="128"
+               height="41"
+               fill="#5596E6" />
+            <text
+               id="Space"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.5"
+               x="-2"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.5;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="39.063"
+                 y="26"
+                 id="tspan52"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">スペース</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-4"
+             transform="translate(297.000000, 556.000000)">
+            <rect
+               id="rect55"
+               x="0"
+               y="0"
+               width="128"
+               height="41"
+               fill="#5596E6" />
+            <text
+               id="text57"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.5"
+               x="-2"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.5;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="39.063"
+                 y="26"
+                 id="tspan59"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">スペース</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-2"
+             transform="translate(81.000000, 628.000000)">
+            <rect
+               id="rect62"
+               x="0"
+               y="0"
+               width="82"
+               height="32"
+               fill="#5AAAFA" />
+            <text
+               id="Resource"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="14"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="19.406715"
+                 y="21"
+                 id="tspan65"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">リソース</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-6"
+             transform="translate(279.000000, 628.000000)">
+            <rect
+               id="rect68"
+               x="0"
+               y="0"
+               width="82"
+               height="32"
+               fill="#5AAAFA" />
+            <text
+               id="text70"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="12"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="16.406715"
+                 y="21"
+                 id="tspan72"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">リソース</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-7"
+             transform="translate(373.000000, 628.000000)">
+            <rect
+               id="rect75"
+               x="0"
+               y="0"
+               width="82"
+               height="32"
+               fill="#5AAAFA" />
+            <text
+               id="text77"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="12"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="16.406715"
+                 y="21"
+                 id="tspan79"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">リソース</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-9"
+             transform="translate(745.000000, 495.000000)">
+            <rect
+               id="rect82"
+               x="0"
+               y="0"
+               width="82"
+               height="32"
+               fill="#5AAAFA" />
+            <text
+               id="text84"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="14"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="18.406715"
+                 y="21"
+                 id="tspan86"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">リソース</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-10"
+             transform="translate(745.000000, 546.000000)">
+            <rect
+               id="rect89"
+               x="0"
+               y="0"
+               width="82"
+               height="32"
+               fill="#5AAAFA" />
+            <text
+               id="text91"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="14"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="18.406715"
+                 y="21"
+                 id="tspan93"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">リソース</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-11"
+             transform="translate(745.000000, 596.000000)">
+            <rect
+               id="rect96"
+               x="0"
+               y="0"
+               width="82"
+               height="32"
+               fill="#5AAAFA" />
+            <text
+               id="text98"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="14"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="18.406715"
+                 y="21"
+                 id="tspan100"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">リソース</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-14"
+             transform="translate(864.000000, 495.000000)">
+            <rect
+               id="rect103"
+               x="0"
+               y="0"
+               width="82"
+               height="32"
+               fill="#5AAAFA" />
+            <text
+               id="text105"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="14"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="18.406715"
+                 y="21"
+                 id="tspan107"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">リソース</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-13"
+             transform="translate(864.000000, 546.000000)">
+            <rect
+               id="rect110"
+               x="0"
+               y="0"
+               width="82"
+               height="32"
+               fill="#5AAAFA" />
+            <text
+               id="text112"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="14"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="18.406715"
+                 y="21"
+                 id="tspan114"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">リソース</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-12"
+             transform="translate(864.000000, 596.000000)">
+            <rect
+               id="rect117"
+               x="0"
+               y="0"
+               width="82"
+               height="32"
+               fill="#5AAAFA" />
+            <text
+               id="text119"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="14"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="18.406715"
+                 y="21"
+                 id="tspan121"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">リソース</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-8"
+             transform="translate(745.000000, 445.000000)">
+            <rect
+               id="rect124"
+               x="0"
+               y="0"
+               width="82"
+               height="32"
+               fill="#5AAAFA" />
+            <text
+               id="text126"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="12"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="16.406715"
+                 y="21"
+                 id="tspan128"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">リソース</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-15"
+             transform="translate(864.000000, 445.000000)">
+            <rect
+               id="rect131"
+               x="0"
+               y="0"
+               width="82"
+               height="32"
+               fill="#5AAAFA" />
+            <text
+               id="text133"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="14"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="18.406715"
+                 y="21"
+                 id="tspan135"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">リソース</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-16"
+             transform="translate(982.000000, 445.000000)">
+            <rect
+               id="rect138"
+               x="0"
+               y="0"
+               width="82"
+               height="32"
+               fill="#5AAAFA" />
+            <text
+               id="text140"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="12"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="15.906716"
+                 y="21"
+                 id="tspan142"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">リソース</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-17"
+             transform="translate(982.000000, 495.000000)">
+            <rect
+               id="rect145"
+               x="0"
+               y="0"
+               width="82"
+               height="32"
+               fill="#5AAAFA" />
+            <text
+               id="text147"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="12"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="16.406715"
+                 y="21"
+                 id="tspan149"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">リソース</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-18"
+             transform="translate(982.000000, 546.000000)">
+            <rect
+               id="rect152"
+               x="0"
+               y="0"
+               width="82"
+               height="32"
+               fill="#5AAAFA" />
+            <text
+               id="text154"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="12"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="16.406715"
+                 y="21"
+                 id="tspan156"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">リソース</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-19"
+             transform="translate(982.000000, 596.000000)">
+            <rect
+               id="rect159"
+               x="0"
+               y="0"
+               width="82"
+               height="32"
+               fill="#5AAAFA" />
+            <text
+               id="text161"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="14"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="18.406715"
+                 y="21"
+                 id="tspan163"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">リソース</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-3"
+             transform="translate(175.000000, 628.000000)">
+            <rect
+               id="rect166"
+               x="0"
+               y="0"
+               width="82"
+               height="32"
+               fill="#5AAAFA" />
+            <text
+               id="text168"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="14"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="18.406715"
+                 y="21"
+                 id="tspan170"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">リソース</tspan>
+            </text>
+          </g>
+          <rect
+             id="rect172"
+             x="1183"
+             y="436"
+             width="163"
+             height="56"
+             fill-opacity="0.75"
+             fill="#3D70B2" />
+          <rect
+             id="rect174"
+             x="1183"
+             y="509"
+             width="163"
+             height="56"
+             fill-opacity="0.75"
+             fill="#3D70B2" />
+          <rect
+             id="rect176"
+             x="1183"
+             y="582"
+             width="163"
+             height="56"
+             fill-opacity="0.75"
+             fill="#3D70B2" />
+          <rect
+             id="rect178"
+             x="1368"
+             y="582"
+             width="163"
+             height="56"
+             fill-opacity="0.75"
+             fill="#3D70B2" />
+          <rect
+             id="rect180"
+             x="1368"
+             y="509"
+             width="163"
+             height="56"
+             fill-opacity="0.75"
+             fill="#3D70B2" />
+          <rect
+             id="rect182"
+             x="1368"
+             y="436"
+             width="163"
+             height="56"
+             fill-opacity="0.75"
+             fill="#3D70B2" />
+          <text
+             id="Purchasing-/-Provisi"
+             font-size="14"
+             font-weight="normal"
+             letter-spacing="1.92857099"
+             x="1223.7468"
+             style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic"
+             y="463.68008"
+             sodipodi:linespacing="100%">
+            <tspan
+               sodipodi:role="line"
+               id="tspan5899"
+               x="1223.7468"
+               y="463.68008">IaaS の購入/</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5901"
+               x="1223.7468"
+               y="477.68008">プロビジョン</tspan>
+          </text>
+          <text
+             id="Monitoring-IaaS"
+             font-size="14"
+             font-weight="normal"
+             letter-spacing="1.92857099"
+             y="10"
+             style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'"
+             x="-8">
+            <tspan
+               x="1398.1941"
+               y="470"
+               id="tspan190"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial"
+   id="tspan5903">IaaS</tspan>
+のモニター</tspan>
+          </text>
+          <text
+             id="Configuration-of-Iaa"
+             font-size="14"
+             font-weight="normal"
+             letter-spacing="1.92857099"
+             y="10"
+             style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'"
+             x="14">
+            <tspan
+               x="1225.1906"
+               y="543"
+               id="tspan195"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial"
+   id="tspan5905">IaaS</tspan>
+の構成</tspan>
+          </text>
+          <text
+             id="Invoices"
+             font-size="14"
+             font-weight="normal"
+             letter-spacing="1.92857099"
+             x="14"
+             style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+            <tspan
+               x="1244.2767"
+               y="615"
+               id="tspan200"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">送り状</tspan>
+          </text>
+          <text
+             id="Support"
+             font-size="14"
+             font-weight="normal"
+             letter-spacing="1.92857099"
+             x="4"
+             style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+            <tspan
+               x="1422.113"
+               y="542"
+               id="tspan203"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">サポート</tspan>
+          </text>
+          <text
+             id="Billing"
+             font-size="14"
+             font-weight="normal"
+             letter-spacing="1.92857099"
+             x="-6"
+             style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+            <tspan
+               x="1417.234"
+               y="615"
+               id="tspan206"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">請求処理</tspan>
+          </text>
+          <path
+             d="M904.5,56.5 L904.5,137.5"
+             id="Line"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000" />
+          <path
+             id="Line-decoration-1"
+             d="M904.5,137.5 L907.5,126.7 L901.5,126.7 L904.5,137.5 Z"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000" />
+          <path
+             d="M1352,123.5 L1352,196"
+             id="path210"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000" />
+          <path
+             id="path212"
+             d="M1352,196 L1355,185.2 L1349,185.2 L1352,196 Z"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000" />
+          <text
+             id="Infrastructure-Custo"
+             font-size="16"
+             font-weight="400"
+             letter-spacing="2.20408106"
+             style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:2.20408106;writing-mode:lr-tb;text-anchor:middle;fill:#000000;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic"
+             sodipodi:linespacing="100%"
+             x="1354.7765"
+             y="411.45444">
+            <tspan
+               sodipodi:role="line"
+               id="tspan5891"
+               x="1355.8785"
+               y="411.45444">インフラストラクチャーの</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5893"
+               x="1355.8785"
+               y="427.45444">カスタマー・ポータルのアクセス権限</tspan>
+          </text>
+          <text
+             id="Resource-Group"
+             font-size="16"
+             font-weight="400"
+             letter-spacing="2.20408106"
+             font-family="IBMPlexSans-Medium, IBM Plex Sans"
+             fill="#000000">
+            <tspan
+               x="830.455433"
+               y="418"
+               id="tspan218"
+               style="-inkscape-font-specification:MS UI Gothic;font-family:MS UI Gothic;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">リソース・グループ</tspan>
+          </text>
+          <text
+             id="Cloud-Foundry"
+             font-size="16"
+             font-weight="400"
+             letter-spacing="2.20408106"
+             font-family="IBMPlexSans-Medium, IBM Plex Sans"
+             fill="#000000">
+            <tspan
+               x="202.433473"
+               y="425"
+               id="tspan221"
+               style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Cloud Foundry</tspan>
+          </text>
+          <path
+             d="M159.5,603.5 L122.5,623.5"
+             id="Line-4"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000" />
+          <path
+             id="Line-4-decoration-1"
+             d="M122.5,623.5 L133.427381,621.003536 L130.574279,615.725296 L122.5,623.5 Z"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000" />
+          <path
+             d="M351.5,603.5 L314.5,623.5"
+             id="path225"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000" />
+          <path
+             id="path227"
+             d="M314.5,623.5 L325.427381,621.003536 L322.574279,615.725296 L314.5,623.5 Z"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000" />
+          <path
+             d="M180.5,603.5 L212.5,623.5"
+             id="Line-5"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000" />
+          <path
+             id="Line-5-decoration-1"
+             d="M212.5,623.5 L204.931615,615.232017 L201.751621,620.320006 L212.5,623.5 Z"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000" />
+          <path
+             d="M372.5,603.5 L404.5,623.5"
+             id="path231"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000" />
+          <path
+             id="path233"
+             d="M404.5,623.5 L396.931615,615.232017 L393.751621,620.320006 L404.5,623.5 Z"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000" />
+          <path
+             d="M256.432492,500 L199,551.288487"
+             id="path235"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000" />
+          <path
+             id="path237"
+             d="M199,551.288487 L209.053719,546.332406 L205.057214,541.857147 L199,551.288487 Z"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000" />
+          <path
+             d="M273,500 L329.5,550.5"
+             id="path239"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000" />
+          <path
+             id="path241"
+             d="M329.5,550.5 L323.446895,541.066023 L319.44844,545.539541 L329.5,550.5 Z"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000" />
+          <path
+             d="M836.5,264.5 L770.5,264.5"
+             id="Line-7"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000" />
+          <path
+             id="Line-7-decoration-1"
+             d="M770.5,264.5 L781.3,267.5 L781.3,261.5 L770.5,264.5 Z"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000" />
+          <g
+             id="Group-25"
+             transform="translate(906.000000, 199.000000)"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000">
+            <path
+               d="M1.5,0.5 L1.5,181.5"
+               id="Line-8"
+               stroke-dasharray="1,5,1,1" />
+            <path
+               d="M1.5,189.582763 L1.5,188.582763"
+               id="path247" />
+            <path
+               id="path249"
+               d="M1.5,189.582763 L-1.5,178.782763 L4.5,178.782763 L1.5,189.582763 Z" />
+          </g>
+          <path
+             d="M269.5,291.5 L269.5,394.5"
+             id="Line-12"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000" />
+          <path
+             id="Line-12-decoration-1"
+             d="M269.5,394.5 L272.5,383.7 L266.5,383.7 L269.5,394.5 Z"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000" />
+          <path
+             d="M1631.5,725.5 L1633,727"
+             id="Line-17"
+             stroke-linecap="square"
+             stroke="#979797" />
+          <g
+             id="g254"
+             transform="translate(625.000000, 96.000000)"
+             stroke-linecap="square"
+             stroke="#000000">
+            <path
+               d="M824.5,1.5 L1006.5,1.5"
+               id="Line-15" />
+            <path
+               d="M1006.5,1.5 L1006.5,628.5"
+               id="Line-16" />
+            <path
+               d="M1006.4975,628.5 L1.50048751,628.5"
+               id="Line-18" />
+            <path
+               d="M1.5,628.5 L1.5,195.5"
+               id="Line-19"
+               fill="#000000" />
+            <path
+               id="Line-19-decoration-1"
+               d="M1.5,195.5 L-1.5,206.3 L4.5,206.3 L1.5,195.5 Z"
+               fill="#000000" />
+          </g>
+          <g
+             id="Group-20"
+             transform="translate(932.000000, 671.000000)"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000">
+            <path
+               d="M1,54 L1,0"
+               id="path262"
+               stroke-dasharray="1,5,1,1" />
+            <path
+               d="M1,1 L1,0"
+               id="path264" />
+            <path
+               id="path266"
+               d="M1,0 L-2,10.8 L4,10.8 L1,0 Z" />
+          </g>
+          <g
+             id="Group-21"
+             transform="translate(1028.000000, 631.000000)"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000">
+            <path
+               d="M1.5,93.5 L1.5,3.5"
+               id="Line-20"
+               stroke-dasharray="1,5,1,1" />
+            <path
+               d="M1.5,2.27032961 L1.5,1.27032961"
+               id="path270" />
+            <path
+               id="Line-20-decoration-1"
+               d="M1.5,1.27032961 L-1.5,12.0703296 L4.5,12.0703296 L1.5,1.27032961 Z" />
+          </g>
+          <g
+             id="g273"
+             transform="translate(266.000000, 184.000000)"
+             stroke-linecap="square"
+             stroke="#000000">
+            <path
+               d="M1.5,1.5 L1.5,37.5"
+               id="Line-6"
+               stroke-dasharray="1,5,1,1"
+               fill="#000000" />
+            <path
+               d="M1.5,46.5 L1.5,47.5"
+               id="path276"
+               fill="#000000" />
+            <path
+               id="Line-6-decoration-1"
+               d="M1.5,47.5 L4.5,36.7 L-1.5,36.7 L1.5,47.5 Z"
+               fill="#000000" />
+            <path
+               d="M541.5,1.5 L1.5,1.5"
+               id="Line-21"
+               stroke-dasharray="1,5,1,1" />
+          </g>
+          <g
+             id="g280"
+             transform="translate(15.000000, 166.000000)"
+             stroke-linecap="square"
+             stroke="#000000">
+            <path
+               d="M792.5,1.5 L1.5,1.5"
+               id="path282" />
+            <path
+               d="M1.5,1.5 L1.5,288.5"
+               id="Line-22" />
+            <path
+               d="M2.5,288.5 L164.5,288.5"
+               id="path285"
+               fill="#000000" />
+            <path
+               id="path287"
+               d="M164.5,288.5 L153.7,285.5 L153.7,291.5 L164.5,288.5 Z"
+               fill="#000000" />
+          </g>
+          <g
+             id="g289"
+             transform="translate(0.000000, 149.000000)"
+             stroke-linecap="square"
+             stroke="#000000">
+            <path
+               d="M808.5,1.5 L1.5,1.5"
+               id="path291"
+               stroke-dasharray="1,5,1,1" />
+            <path
+               d="M1.5,2.5 L1.5,425.5"
+               id="path293"
+               stroke-dasharray="1,5,1,1" />
+            <g
+               id="Group-23"
+               transform="translate(2.000000, 319.000000)"
+               fill="#000000">
+              <path
+                 d="M0.5,1.5 L175.5,1.5"
+                 id="path296"
+                 stroke-dasharray="1,5,1,1" />
+              <path
+                 d="M176.5,1.5 L177.5,1.5"
+                 id="path298" />
+              <path
+                 id="path300"
+                 d="M177.5,1.5 L166.7,-1.5 L166.7,4.5 L177.5,1.5 Z" />
+            </g>
+            <g
+               id="Group-22"
+               transform="translate(1.000000, 424.000000)"
+               fill="#000000">
+              <path
+                 d="M99.5,1.5 L100.5,1.5"
+                 id="path303" />
+              <path
+                 id="path305"
+                 d="M100.5,1.5 L89.7,-1.5 L89.7,4.5 L100.5,1.5 Z" />
+              <path
+                 d="M0.5,1.5 L91.5,1.5"
+                 id="path307"
+                 stroke-dasharray="1,5,1,1" />
+            </g>
+          </g>
+          <path
+             d="M172.5,259.5 L123.5,259.5"
+             id="Line-24"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000" />
+          <path
+             id="Line-24-decoration-1"
+             d="M123.5,259.5 L134.3,262.5 L134.3,256.5 L123.5,259.5 Z"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000" />
+          <g
+             id="g311"
+             transform="translate(1001.000000, 24.000000)"
+             stroke-linecap="square"
+             stroke="#000000">
+            <path
+               d="M346.5,1.5 L346.5,37.5"
+               id="Line-2"
+               fill="#000000" />
+            <path
+               id="Line-2-decoration-1"
+               d="M346.5,37.5 L349.5,26.7 L343.5,26.7 L346.5,37.5 Z"
+               fill="#000000" />
+            <path
+               d="M0.5,1.5 L345.5,1.5"
+               id="Line-25" />
+          </g>
+          <g
+             id="g316"
+             transform="translate(965.000000, 199.000000)"
+             stroke-linecap="square"
+             stroke="#000000">
+            <g
+               id="Group-24"
+               transform="translate(59.000000, 135.000000)"
+               fill="#000000">
+              <path
+                 d="M1.5,0.5 L1.5,96.5"
+                 id="path319"
+                 stroke-dasharray="1,5,1,1" />
+              <path
+                 d="M1.5,107.582763 L1.5,106.582763"
+                 id="path321" />
+              <path
+                 id="path323"
+                 d="M1.5,107.582763 L-1.5,96.7827625 L4.5,96.7827625 L1.5,107.582763 Z" />
+            </g>
+            <path
+               d="M60.5,135.5 L1.5,135.5"
+               id="Line-26"
+               stroke-dasharray="1,5,1,1" />
+            <path
+               d="M1.5,0.5 L1.5,135.5"
+               id="Line-27"
+               stroke-dasharray="1,5,1,1"
+               fill="#000000" />
+          </g>
+          <g
+             id="g327"
+             transform="translate(666.000000, 286.000000)"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000">
+            <g
+               id="Group-28"
+               transform="translate(1.000000, 172.000000)">
+              <path
+                 d="M0.5,1.5 L65.5,1.5"
+                 id="Line-11"
+                 stroke-dasharray="1,5,1,1" />
+              <path
+                 d="M71,1 L72,1"
+                 id="path331" />
+              <path
+                 id="path333"
+                 d="M72,1 L61.2,-2 L61.2,4 L72,1 Z" />
+            </g>
+            <path
+               d="M1.5,0.5 L1.5,173.5"
+               id="path335"
+               stroke-dasharray="1,5,1,1" />
+          </g>
+          <path
+             d="M836.5,200.5 L836.5,264.5"
+             id="path337"
+             stroke-linecap="square"
+             stroke="#000000"
+             fill="#000000" />
+          <g
+             id="g339"
+             transform="translate(1000.000000, 165.000000)"
+             stroke-linecap="square"
+             stroke="#000000">
+            <path
+               d="M181.5,66.5 L250.5,66.5"
+               id="Line-3"
+               fill="#000000" />
+            <path
+               id="Line-3-decoration-1"
+               d="M250.5,66.5 L239.7,63.5 L239.7,69.5 L250.5,66.5 Z"
+               fill="#000000" />
+            <path
+               d="M181.5,1.5 L0.5,1.5"
+               id="path343" />
+            <path
+               d="M181.5,2.5 L181.5,65.5"
+               id="path345" />
+          </g>
+          <g
+             id="g347"
+             transform="translate(1000.000000, 183.000000)"
+             stroke-linecap="square"
+             stroke="#000000">
+            <g
+               id="Group-26"
+               transform="translate(254.000000, 139.000000)"
+               fill="#000000">
+              <path
+                 d="M1.5,63.5827625 L1.5,62.5827625"
+                 id="path350" />
+              <path
+                 id="path352"
+                 d="M1.5,63.5827625 L-1.5,52.7827625 L4.5,52.7827625 L1.5,63.5827625 Z" />
+              <path
+                 d="M1.5,0.5 L1.5,52.5"
+                 id="Line-14"
+                 stroke-dasharray="1,5,1,1" />
+            </g>
+            <path
+               d="M127.5,1.5 L0.5,1.5"
+               id="path355"
+               stroke-dasharray="1,5,1,1"
+               fill="#000000" />
+            <path
+               d="M255.5,138.5 L128.5,138.5"
+               id="path357"
+               stroke-dasharray="1,5,1,1" />
+            <path
+               d="M128.5,1.5 L128.5,138.5"
+               id="path359"
+               stroke-dasharray="1,5,1,1"
+               fill="#000000" />
+          </g>
+          <text
+             id="Users-are-a-member-o"
+             font-size="12"
+             font-weight="normal"
+             sodipodi:linespacing="100%"
+             y="108"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#46535e;fill-opacity:0.87955729;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic"
+             x="18">
+            <tspan
+               sodipodi:role="line"
+               id="tspan5789"
+               x="18"
+               y="108">ユーザーは組織のメンバーであり、</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5791"
+               x="18"
+               y="120">組織の役割を持たせることなく、</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5793"
+               x="18"
+               y="132">組織内のスペースに割り当てることができます。</tspan>
+          </text>
+          <text
+             id="Services-can-be-Clou"
+             font-size="12"
+             font-weight="normal"
+             sodipodi:linespacing="100%"
+             y="240"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#46535e;fill-opacity:0.87955729;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic"
+             x="22">
+            <tspan
+               sodipodi:role="line"
+               id="tspan5801"
+               x="22"
+               y="240">サービスは、</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5803"
+               x="22"
+               y="252">Cloud Foundry ベースに</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5805"
+               x="22"
+               y="264">することもリソース・</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5807"
+               x="22"
+               y="276">グループ・ベースに</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5809"
+               x="22"
+               y="288">することもできます。</tspan>
+          </text>
+          <text
+             id="Access-can-be-grante"
+             font-size="12"
+             font-weight="normal"
+             sodipodi:linespacing="100%"
+             x="121.875"
+             y="327.07523"
+             style="font-size:12px;font-weight:normal;line-height:100%;fill:#46535e;fill-opacity:0.87955729;font-family:'IBMPlexSans, IBM Plex Sans'">
+            <tspan
+               sodipodi:role="line"
+               id="tspan5811"
+               x="121.875"
+               y="327.07523">アクセス権限は、</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5813"
+               x="121.875"
+               y="339.07523">スペースの役割からのみ</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5815"
+               x="121.875"
+               y="351.07523">サービス・インスタンスに</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5817"
+               x="121.875"
+               y="363.07523">付与することができます。</tspan>
+          </text>
+          <text
+             id="You-must-have-space"
+             font-size="12"
+             font-weight="normal"
+             sodipodi:linespacing="100%"
+             x="86.441742"
+             y="492.95975"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#46535e;fill-opacity:0.92654551;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">
+            <tspan
+               sodipodi:role="line"
+               id="tspan5841"
+               x="86.441742"
+               y="492.95975">スペース・リソースに</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5843"
+               x="86.441742"
+               y="504.95975">アクセスするには、</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5845"
+               x="86.441742"
+               y="516.95972">スペースの役割を</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5847"
+               x="86.441742"
+               y="528.95972">持っている</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5849"
+               x="86.441742"
+               y="540.95972">必要があります。</tspan>
+          </text>
+          <text
+             id="Users-and-service-ID"
+             font-size="12"
+             font-weight="normal"
+             x="740.68335"
+             y="310.55188"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#46535e;fill-opacity:0.87955729;font-family:Sans;-inkscape-font-specification:Sans"
+             sodipodi:linespacing="100%">
+            <tspan
+               sodipodi:role="line"
+               id="tspan5907"
+               x="740.68335"
+               y="310.55188">ユーザーとサービス ID には、</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5909"
+               x="740.68335"
+               y="322.67075">個別リソースまたは</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5911"
+               x="740.68335"
+               y="334.67075">リソース・グループ内の</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5913"
+               x="740.68335"
+               y="346.67075">すべてのリソースへの</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5915"
+               x="740.68335"
+               y="358.67075">アクセス権限を付与できます。</tspan>
+          </text>
+          <text
+             id="You-can-grant-granul"
+             font-size="12"
+             font-weight="normal"
+             x="1267.7511"
+             y="331.47137"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#46535e;fill-opacity:0.87955729;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic"
+             sodipodi:linespacing="100%">
+            <tspan
+               sodipodi:role="line"
+               id="tspan5917"
+               x="1267.7511"
+               y="331.47137">カスタマー・ポータル内のフィーチャーへの</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5919"
+               x="1267.7511"
+               y="343.47137">きめ細かいカスタマー・ポータル・アクセス権限を</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5921"
+               x="1267.7511"
+               y="355.47137">付与できますが、デバイス自体へのアクセス権限を</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5923"
+               x="1267.7511"
+               y="367.47137">付与することはできません。</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5925"
+               x="1267.7511"
+               y="379.47137">デバイス・アクセス権限の制御は、デバイス自体で処理されます。</tspan>
+          </text>
+          <text
+             id="Service-IDs-can-be-g"
+             font-size="12"
+             font-weight="normal"
+             sodipodi:linespacing="100%"
+             x="1456.356"
+             style="font-size:12px;font-weight:normal;line-height:100%;fill:#46535e;fill-opacity:0.87955729;font-family:'IBMPlexSans, IBM Plex Sans'"
+             y="113.91101">
+            <tspan
+               sodipodi:role="line"
+               id="tspan5863"
+               x="1456.356"
+               y="113.91101">サービス ID には、</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5865"
+               x="1456.356"
+               y="126.02988">リソース・グループ・ベースの</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5867"
+               x="1456.356"
+               y="138.02989">サービスのユーザーと同じ</tspan>
+            <tspan
+               sodipodi:role="line"
+               id="tspan5869"
+               x="1456.356"
+               y="150.02989">アクセス権限を付与できます。</tspan>
+          </text>
+        </g>
+        <rect
+           id="rect424"
+           x="808"
+           y="144"
+           width="193"
+           height="56"
+           fill="#8C9BA5" />
+        <text
+           id="Users"
+           font-size="18"
+           font-weight="500"
+           letter-spacing="1.92857099"
+           x="-6"
+           style="font-size:18px;font-weight:500;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans-SemiBold, IBM Plex Sans'">
+          <tspan
+             x="870.42755"
+             y="179"
+             id="tspan427"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">ユーザー</tspan>
+        </text>
+        <rect
+           id="rect429"
+           x="1258"
+           y="200"
+           width="193"
+           height="56"
+           fill="#8C9BA5" />
+        <text
+           id="API-keys"
+           font-size="18"
+           font-weight="500"
+           letter-spacing="1.92857099"
+           x="6"
+           style="font-size:18px;font-weight:500;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans-SemiBold, IBM Plex Sans'">
+          <tspan
+             x="1316.0928"
+             y="235"
+             id="tspan432"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial">API <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic"
+   id="tspan5871">キー</tspan>
+</tspan>
+        </text>
+        <rect
+           id="rect434"
+           x="1256"
+           y="68"
+           width="193"
+           height="56"
+           fill="#8C9BA5" />
+      </g>
+      <g
+         id="key"
+         transform="translate(0.000000, 759.000000)">
+        <text
+           id="access"
+           font-size="14"
+           font-weight="normal"
+           font-family="IBMPlexSans, IBM Plex Sans"
+           fill="#5A6872">
+          <tspan
+             x="77"
+             y="80"
+             id="tspan441"
+             style="-inkscape-font-specification:MS UI Gothic;font-family:MS UI Gothic;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">アクセス権限</tspan>
+        </text>
+        <text
+           id="membership"
+           font-size="14"
+           font-weight="normal"
+           font-family="IBMPlexSans, IBM Plex Sans"
+           fill="#5A6872">
+          <tspan
+             x="77"
+             y="50"
+             id="tspan444"
+             style="-inkscape-font-specification:MS UI Gothic;font-family:MS UI Gothic;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">メンバーシップ</tspan>
+        </text>
+        <path
+           d="M1,1.26247621 L1,121.675566"
+           id="path446"
+           stroke-linecap="square"
+           stroke-width="2"
+           stroke="#DFE3E6" />
+        <text
+           id="Key"
+           font-size="16"
+           font-weight="bold"
+           font-family="IBMPlexSans-Bold, IBM Plex Sans"
+           fill="#5A6872">
+          <tspan
+             x="26"
+             y="16"
+             id="tspan449"
+             style="-inkscape-font-specification:MS UI Gothic;font-family:MS UI Gothic;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">キー</tspan>
+        </text>
+        <path
+           d="M26,49 L50,49"
+           id="path451"
+           stroke-linecap="square"
+           stroke="#000000"
+           fill="#000000" />
+        <path
+           d="M26,79 L50,79"
+           id="Line-14-Copy"
+           stroke-dasharray="1,5,1,1"
+           stroke-linecap="square"
+           stroke="#000000"
+           fill="#000000" />
+      </g>
+    </g>
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic"
+     x="1372.8962"
+     y="125.69492"
+     id="text5857"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan5859"
+       x="1372.8962"
+       y="125.69492"
+       style="font-size:18px">サービス  <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial"
+   id="tspan5861">ID</tspan></tspan></text>
+</svg>

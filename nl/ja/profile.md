@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-04-06"
+lastupdated: "2018-07-10"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-04-06"
 # プロファイルのセットアップ
 {: #usersettings}
 
-最初に {{site.data.keyword.Bluemix}} の使用を開始したときに、アカウント・プロファイルをセットアップします。 **{{site.data.keyword.avatar}}** アイコン![アバター・アイコン](../icons/i-avatar-icon.svg) &gt; **「プロファイルの表示」**に移動して、プロファイル設定を指定または更新します。
+最初に {{site.data.keyword.Bluemix}} の使用を開始したときに、アカウント・プロファイルをセットアップします。 「**{{site.data.keyword.avatar}}**」アイコン ![「アバター」アイコン](../icons/i-avatar-icon.svg) &gt;**「プロファイルおよびアカウント (Profile & account)」**に移動して、プロファイル設定を指定するか更新します。
 {:shortdesc}
 
 以下の情報を設定または更新できます。
@@ -33,7 +33,7 @@ lastupdated: "2018-04-06"
 ## プロファイルの写真の変更
 {: #photo notoc}
 
-**「{{site.data.keyword.avatar}}」**アイコン ![「アバター」アイコン](../icons/i-avatar-icon.svg) &gt; **「プロファイルの表示」**に移動します。
+「**{{site.data.keyword.avatar}}**」アイコン ![「アバター」アイコン](../icons/i-avatar-icon.svg) &gt;**「プロファイルおよびアカウント (Profile & account)」**に移動します。
 
   * 写真を追加するには、**「写真のアップロード」**をクリックします。
   * 現在の写真を新しい写真に取り替えるには、**「写真の変更」**をクリックします。
@@ -46,7 +46,7 @@ IBM ID は、インフラストラクチャー、サービス、およびアプ�
 
 IBM ID を変更することはできませんが、関連付けられているプロファイル情報 (名前、E メール、電話番号、パスワード、会社名など) は編集できます。
 
-1. **「{{site.data.keyword.avatar}}」**アイコン ![「アバター」アイコン](../icons/i-avatar-icon.svg) &gt; **「プロファイルの表示」**に移動します。
+1. 「**{{site.data.keyword.avatar}}**」アイコン ![「アバター」アイコン](../icons/i-avatar-icon.svg) &gt;**「プロファイルおよびアカウント (Profile & account)」**に移動します。
 2. **「IBM ID の編集 (Edit your IBM ID)」**をクリックします。
 3. ユーザー情報を編集します。
 4. **「保存」**をクリックします。
@@ -60,5 +60,5 @@ IBM ID を変更することはできませんが、関連付けられている�
 
 分析トラッキングを無効にするには、以下のステップを実行します。
 
-1. **「{{site.data.keyword.avatar}}」**アイコン ![「アバター」アイコン](../icons/i-avatar-icon.svg) &gt; **「プロファイルの表示」**に移動します。
+1. 「**{{site.data.keyword.avatar}}**」アイコン ![「アバター」アイコン](../icons/i-avatar-icon.svg) &gt;**「プロファイルおよびアカウント (Profile & account)」**に移動します。
 2. 分析トラッキングを**「オフ」**に設定します。

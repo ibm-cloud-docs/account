@@ -191,4 +191,4 @@ Führen Sie nach Bedarf eine oder mehrere der folgenden Aktionen aus:
   * Verwenden Sie den persönlichen Browsing-Modus des Browsers.
   * Löschen Sie Cookies und den Inhalt des Browser-Cache.
   * Verwenden Sie einen anderen Browser. Informationen zu den Versionen der Browser, die von {{site.data.keyword.Bluemix_notm}} unterstützt werden, finden Sie in den [{{site.data.keyword.Bluemix_notm}}-Voraussetzungen](/docs/overview/prereqs.html#prereqs).
-  * Wenn Sie die cf-Befehlszeilenschnittstelle installiert haben, geben Sie den Befehl `cf apps` ein, um anzuzeigen, ob die App aktiv ist.
+  * Wenn Sie die Cloud Foundry-Befehlszeilenschnittstelle installiert haben, geben Sie den Befehl `cf apps` ein, um anzuzeigen, ob die App aktiv ist.

@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2017-11-09"
+lastupdated: "2018-07-16"
 
 ---
 
@@ -152,7 +152,7 @@ lastupdated: "2017-11-09"
 {: tsResolve}
 
   * コンソールのメニュー・バーで、**「管理」>「アカウント」>「組織」**をクリックします。 スペースを作成する組織を選択し、**「スペースの作成」**をクリックします。
-  * cf コマンド・ライン・インターフェースに `cf create-space <space_name> -o <organization_name>` と入力します。
+  * Cloud Foundry コマンド・ライン・インターフェースに `cf create-space <space_name> -o <organization_name>` と入力します。
 
 
 ## 複数のアプリが同じドメイン・ネームを共有している
@@ -180,13 +180,13 @@ lastupdated: "2017-11-09"
 これは、{{site.data.keyword.Bluemix_notm}} ユーザー・インターフェースの制限です。
 {: tsCauses}
 
-すべての組織を管理するには、cf コマンド・ライン・インターフェースから `cf orgs`、`cf create-org`、`cf delete-org` などのコマンドを使用できます。 cf コマンドの全リストを表示するには、`cf help` と入力してください。
+すべての組織を管理するには、Cloud Foundry コマンド・ライン・インターフェースから `cf orgs`、`cf create-org`、`cf delete-org` などのコマンドを使用できます。cf コマンドの全リストを表示するには、`cf help` と入力してください。
 {: tsResolve}
 
 ## クレジット・カードを追加できない
 {: #ts_addcc}
 
-トライアル・アカウントを従量課金 (PAYG) アカウントに変換するためにクレジット・カード情報を送信することができません。
+ライト・アカウントを有料アカウントに変換するためにクレジット・カード情報を送信することができません。
 
 「クレジット・カードの追加」の**「送信」**ボタンが使用不可になっています。
 {: tsSymptoms}
