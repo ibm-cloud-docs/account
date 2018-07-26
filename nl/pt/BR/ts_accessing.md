@@ -194,4 +194,4 @@ efetuar login novamente.
   * Usar o modo de navegação privada do seu navegador.
   * Limpar os cookies e o cache do navegador.
   * Usar um navegador diferente. Para obter informações sobre as versões dos navegadores que são suportados pelo {{site.data.keyword.Bluemix_notm}}, veja [Pré-requisitos do {{site.data.keyword.Bluemix_notm}}](/docs/overview/prereqs.html#prereqs).
-  * Se você tiver instalado a interface de linha de comandos cf, insira o comando `cf apps` para ver se seu app está em execução.
+  * Se você instalou a interface da linha de comandos do Cloud Foundry, insira o comando `cf apps` para ver se seu app está em execução.

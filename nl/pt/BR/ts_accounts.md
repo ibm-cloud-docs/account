@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2017-11-09"
+lastupdated: "2018-07-16"
 
 ---
 
@@ -27,7 +27,7 @@ Os problemas gerais ao gerenciar sua conta podem incluir apps diferentes que com
 ## Impossível acessar um {{site.data.keyword.Bluemix_notm}} de região diferente
 {: #nosecondreg}
 
-Você recebe uma mensagem de erro quando tenta criar uma nova região do {{site.data.keyword.Bluemix_notm}}.
+Você receberá uma mensagem de erro ao tentar criar uma nova região do {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
 
 Isso é provavelmente porque você está usando uma conta Lite, que suporta desenvolvimento somente em uma região pública. Você seleciona a região pública do {{site.data.keyword.Bluemix_notm}} na qual deseja trabalhar quando a conta é configurada pela primeira vez.
@@ -39,7 +39,7 @@ Se você tiver uma conta Lite, será possível fazer upgrade para uma conta fatu
 ## Impossível criar nova organização
 {: #nosecondorg}
 
-Você receberá uma mensagem de erro quando tentar criar uma nova organização.
+Você receberá uma mensagem de erro ao tentar criar uma nova organização.
 {: tsSymptoms}
 
 Isso é provavelmente porque você está usando uma conta Lite, que suporta desenvolvimento em somente uma organização. Você cria a organização quando sua conta é configurada pela primeira vez.
@@ -124,15 +124,12 @@ etapas a seguir:
 ## O registro em lote de usuários não é suportado
 {: #ts_batchregistration}
 
-Ao
-registrar usuários para {{site.data.keyword.Bluemix_notm}},
-deve-se registrar cada usuário individualmente.
+Ao registrar usuários para {{site.data.keyword.Bluemix_notm}}, deve-se registrar cada usuário individualmente.
 
 O {{site.data.keyword.Bluemix_notm}} não fornece a capacidade para registrar múltiplos usuários ao mesmo tempo.
 {: tsSymptoms}
 
-O {{site.data.keyword.Bluemix_notm}} não suporta registro de lote de usuários. Para registrar usuários para o {{site.data.keyword.Bluemix_notm}},
-deve-se registrar cada usuário individualmente.
+O {{site.data.keyword.Bluemix_notm}} não suporta registro de lote de usuários. Para registrar usuários para o {{site.data.keyword.Bluemix_notm}}, deve-se registrar cada usuário individualmente.
 {: tsCauses}
 
 Para registrar múltiplos usuários para o {{site.data.keyword.Bluemix_notm}}, conclua as etapas a seguir para cada usuário:
@@ -158,7 +155,7 @@ Para criar um espaço, use um dos métodos a seguir:
 {: tsResolve}
 
   * Na barra de menus do console, clique em **Gerenciar > Conta > Organizações**. Em seguida, selecione a organização na qual você deseja criar o espaço e clique em **Criar um espaço**.
-  * Na interface da linha de comandos cf, digite `cf create-space <space_name> -o <organization_name>`.
+  * Na interface da linha de comandos do Cloud Foundry, digite `cf create-space <space_name> -o <organization_name>`.
 
 
 ## Os apps compartilham o mesmo nome de domínio
@@ -178,9 +175,7 @@ Esse é o comportamento suportado do {{site.data.keyword.Bluemix_notm}} e é pos
 ## Os administradores não podem visualizar todas as organizações usando a interface com o usuário do {{site.data.keyword.Bluemix_notm}}
 {: #ts_ui_org}
 
-Como administrador, quando você utiliza a interface com o usuário do
-{{site.data.keyword.Bluemix_notm}}, não é possível exibir cada organização para
-administrá-las. Você pode exibir e administrar apenas as organizações às quais pertence.
+Como administrador, quando você utiliza a interface com o usuário do {{site.data.keyword.Bluemix_notm}}, não é possível exibir cada organização para administrá-las. Você pode exibir e administrar apenas as organizações às quais pertence.
 
 Como administrador, não é possível ver todas as organizações usando a interface com o usuário do {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
@@ -188,14 +183,13 @@ Como administrador, não é possível ver todas as organizações usando a inter
 Essa é uma limitação da interface com o usuário do {{site.data.keyword.Bluemix_notm}}.
 {: tsCauses}
 
-É possível usar comandos, como `cf orgs`, `cf create-org` e `cf delete-org` da interface da linha de comandos cf para gerenciar todas as organizações. Para obter uma lista completa de
-comandos cf, insira `cf help`.
+É possível usar comandos como `cf orgs`, `cf create-org` e `cf delete-org` na interface da linha de comandos do Cloud Foundry para gerenciar todas as organizações. Para obter uma lista completa de comandos cf, insira `cf help`.
 {: tsResolve}
 
 ## O cartão de crédito não pode ser incluído
 {: #ts_addcc}
 
-Não é possível enviar suas informações de cartão de crédito para converter sua conta para teste em uma conta Pré-pago.
+Não é possível enviar suas informações de cartão de crédito para converter sua conta Lite em uma conta faturável.
 
 O botão **Enviar** na página Incluir cartão de crédito está desativado.
 {: tsSymptoms}
@@ -209,6 +203,5 @@ as etapas a seguir:
 {: tsResolve}
 
   1. Na página Incluir cartão de crédito, preencha todos os campos obrigatórios nas seções de informações de contato, endereço de contato e endereço para cobrança.
-  2. Selecione **Eu li e concordo com os Termos e Condições da IBM**,
-em seguida, clique em **Enviar**. A seção **Selecionar um método de pagamento** é exibida.
+  2. Selecione **Eu li e concordo com os Termos e Condições da IBM**, em seguida, clique em **Enviar**. A seção **Selecionar um método de pagamento** é exibida.
   3. Insira seu número do cartão de crédito, a data de validade de seu cartão e o código de segurança no cartão. Em seguida, clique em **Enviar**.

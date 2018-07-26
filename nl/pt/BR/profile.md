@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-04-06"
+lastupdated: "2018-07-10"
 
 ---
 
@@ -18,7 +18,7 @@ lastupdated: "2018-04-06"
 {: #usersettings}
 
 Ao iniciar o {{site.data.keyword.Bluemix}} pela primeira vez, configure seu perfil de
-conta. Acesse o ícone **{{site.data.keyword.avatar}}** ![ícone Avatar](../icons/i-avatar-icon.svg) &gt; **Visualizar Perfil** para configurar ou atualizar suas configurações de perfil.
+conta. Acesse o ícone ** {{site.data.keyword.avatar}}** ![Ícone de avatar](../icons/i-avatar-icon.svg) &gt; **Perfil e conta** para configurar ou atualizar suas configurações de perfil.
 {:shortdesc}
 
 É possível configurar ou atualizar as informações a seguir:
@@ -40,7 +40,7 @@ conta usando a página Administração.
 ## Mudando a sua foto do perfil
 {: #photo notoc}
 
-Acesse o ícone **{{site.data.keyword.avatar}}** ![Ícone de avatar](../icons/i-avatar-icon.svg) &gt; **Visualizar perfil**.
+Acesse o ícone **{{site.data.keyword.avatar}}** ![Ícone de avatar](../icons/i-avatar-icon.svg) &gt; **Perfil e conta**.
 
   * Para incluir uma foto, clique em **FAZER UPLOAD DE UMA FOTO**.
   * Para substituir sua foto atual por uma nova, clique em **MUDAR FOTO**.
@@ -56,7 +56,7 @@ para infraestrutura, serviços e recursos de aplicativos. O seu IBMid é o mesmo
 Não é possível mudar seu IBMid, mas é possível editar suas informações de perfil que estejam associadas a
 ele, como seu nome, e-mail, número do telefone, senha ou nome da empresa.
 
-1. Acesse o ícone **{{site.data.keyword.avatar}}** ![Ícone de avatar](../icons/i-avatar-icon.svg) &gt; **Visualizar perfil**.
+1. Acesse o ícone **{{site.data.keyword.avatar}}** ![Ícone de avatar](../icons/i-avatar-icon.svg) &gt; **Perfil e conta**.
 2. Clique em **Editar seu IBMid**.
 3. Edite as informações sobre o usuário.
 4. Clique em **Salvar**.
@@ -72,5 +72,5 @@ Se você optar por desativar o rastreamento, talvez não seja possível usar alg
 
 Para desativar o rastreamento de analítica, conclua as etapas a seguir:
 
-1. Acesse o ícone **{{site.data.keyword.avatar}}** ![Ícone de avatar](../icons/i-avatar-icon.svg) &gt; **Visualizar perfil**.
+1. Acesse o ícone **{{site.data.keyword.avatar}}** ![Ícone de avatar](../icons/i-avatar-icon.svg) &gt; **Perfil e conta**.
 2. Configure o rastreamento de analítica como **desligado**.

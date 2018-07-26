@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2018
 
-lastupdated: "2018-05-01"
+lastupdated: "2018-07-11"
 
 ---
 
@@ -56,7 +56,7 @@ Se você for um novo cliente, será solicitado seu IBMid existente ou para criar
   * Para usar um IBMid existente, insira o nome do usuário ou o endereço de e-mail do IBMid se ele for exclusivo (isto é, ele não é compartilhado com múltiplos IBMids).
   * Para criar um novo IBMid, insira um endereço de e-mail que não esteja atualmente em uso por nenhum IBMid. Esse endereço de e-mail é o nome de usuário do IBMid e é onde seu código de registro é enviado após a criação do IBMid. Será possível atualizar o endereço de e-mail que está associado ao IBMid posteriormente, mas não será possível mudar o nome de usuário.
 
-Para resolver quaisquer problemas ao efetuar login com seu IBMid, veja [Resolução de problemas para acessar o {{site.data.keyword.Bluemix_notm}}](/docs/troubleshoot/ts_accessing.html#accessing).
+Para resolver quaisquer problemas ao efetuar login com seu IBMid, veja [Resolução de problemas para acessar o {{site.data.keyword.Bluemix_notm}}](/docs/account/ts_accessing.html#accessing).
 
 
 ## Vinculando contas do IBMid
@@ -117,7 +117,7 @@ As contas vinculadas efetuam login no console do [{{site.data.keyword.Bluemix}} 
 Além disso, observe as mudanças a seguir após suas contas serem vinculadas:
   * Deve-se usar as credenciais IBMid para acessar as contas do SoftLayer e do {{site.data.keyword.Bluemix_notm}}.
   * Quaisquer descontos existentes do SoftLayer são aplicados em encargos do {{site.data.keyword.Bluemix_notm}}.
-  * Você recebe uma fatura em dólares americanos (USD). Se você tiver uma conta do {{site.data.keyword.Bluemix_notm}} existente, o faturamento por meio do {{site.data.keyword.Bluemix_notm}} para recursos de infraestrutura entrará em vigor para o novo ciclo de faturamento que se inicia após as contas serem vinculadas. Para obter mais informações, consulte [Faturamento consolidado para contas vinculadas](/docs/account/linking_accounts.html).
+  * Você recebe uma fatura em dólares americanos (USD). Se você tiver uma conta do {{site.data.keyword.Bluemix_notm}} existente, o faturamento por meio do {{site.data.keyword.Bluemix_notm}} para recursos de infraestrutura entrará em vigor para o novo ciclo de faturamento que se inicia após as contas serem vinculadas. Para obter mais informações, consulte [Faturamento consolidado para contas vinculadas](/docs/billing-usage/linking_accounts.html).
   * É possível monitorar o uso de seus recursos de infraestrutura no console do {{site.data.keyword.Bluemix_notm}}.
 
 Depois de vincular suas contas, elas não podem ser desvinculadas.
