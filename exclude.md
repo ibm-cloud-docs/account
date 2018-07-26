@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-07-26"
 
 ---
 
@@ -15,15 +15,15 @@ lastupdated: "2018-05-22"
 # Hiding a public resource from users in your account
 {: #exclude}
 
-If you're an administrator for the account, you can choose to hide a public resource for everyone in your account by adding them to an excludes list with the `ibmcloud` [command line interface](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_catalog_entry_visibility_set).
+If you're an administrator for your account, you can hide a public resource for everyone in your account. Add the resource to an exclusion list with the `ibmcloud` [command line interface](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_catalog_entry_visibility_set).
 {:shortdesc: .shortdesc}
 
-**Note:** Hiding an item in the catalog will not remove the item from the Cloud Foundry CLI or from the service provisioning lists available through the global navigation, such as Finance, Mobile, Watson, and Web Apps.
+**Note:** Hiding a resource in the catalog does not remove it from the Cloud Foundry CLI or from the service provisioning lists available through the global navigation, such as Finance, Mobile, Watson, and Web Apps.
 
-## How do I know if I have access?
+## How do I know whether I have access?
 {: #find-access}
 
-You can use the CLI or the Identity and Access UI to determine whether you have access to allow users to view a private resource that has been added to the account. If you're an account owner, you can give access to a user in your account through the Identity and Access Management UI by assigning an access policy. For more information see [Managing access to your account](access.html).
+You can use the CLI or the Identity and Access UI to determine whether you have access to allow users to view a private resource that was added to the account. If you're an account owner, you can give access to a user in your account through the Identity and Access Management UI by assigning an access policy. For more information, see [Managing access to your account](access.html).
 
 ## Step 1: Find a resource
 {: #find-resource}
@@ -41,16 +41,16 @@ Enter the following command to prevent your account from seeing a public resourc
 
 `ibmcloud catalog entry-visibility-set <resource-id> —-excludes-add <account-id or account-email>`
 
-After the excludes flag, you can add a comma separated list of emails or account ID associated with accounts.
+After the `excludes` flag, you can add a comma-separated list of emails or account ID associated with accounts.
 
 After you run the command, the process to hide the resource takes 30 minutes. After 30 minutes, log out and back in to your account to see the hidden resource.
 
-**Note:** Entries that you hide are not available from the UI and ibmcloud CLI. The hidden entries are still visible in the Cloud Foundry marketplace, but a hidden plan cannot be provisioned from Cloud Foundry. Admins of the excluded account can still see the resource.
+**Note:** Entries that you hide are not available from the UI and {{site.data.keyword.Bluemix}} CLI. The hidden entries are still visible in the Cloud Foundry marketplace, but a hidden plan cannot be provisioned from Cloud Foundry. Admins of the excluded account can still see the resource.
 
-## Remove an account from the excludes list
+## Remove an account from the exclusion list
 {: #remove-exclude}
 
-Enter the following command to remove an account ID or email from the excludes list.
+Enter the following command to remove an account ID or email from the exclusion list.
 
 `ibmcloud catalog entry-visibility-set <service-id> —-excludes-remove <account-id or account-email>`
 
@@ -89,4 +89,4 @@ Children           Name                                          Kind         ID
 
 Find the ID for an object and exclude an account with the `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>`.
 
-For more information about how visibility works, see the the [API docs](https://console.bluemix.net/apidocs/682).
+For more information about how visibility works, see the [API docs](https://console.bluemix.net/apidocs/682).
