@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2017-11-09"
+lastupdated: "2018-07-16"
 
 ---
 
@@ -152,7 +152,7 @@ lastupdated: "2017-11-09"
 {: tsResolve}
 
   * 콘솔 메뉴 표시줄에서 **관리 > 계정 > 조직**을 클릭하십시오. 그런 다음, 영역을 작성하려는 조직을 선택하고 **영역 작성**을 클릭하십시오.
-  * cf 명령행 인터페이스에서 다음을 입력하십시오. `cf create-space <space_name> -o <organization_name>`.
+  * Cloud Foundry 명령행 인터페이스에서 다음을 입력하십시오. `cf create-space <space_name> -o <organization_name>`.
 
 
 ## 앱이 동일한 도메인 이름을 공유함
@@ -180,13 +180,13 @@ lastupdated: "2017-11-09"
 이는 {{site.data.keyword.Bluemix_notm}} 사용자 인터페이스의 제한사항입니다.
 {: tsCauses}
 
-cf 명령행 인터페이스에서 `cf orgs`, `cf create-org` 및 `cf delete-org`와 같은 명령을 사용하여 모든 조직을 관리할 수 있습니다. cf 명령의 전체 목록을 보려면 `cf help`를 입력하십시오.
+Cloud Foundry 명령행 인터페이스에서 `cf orgs`, `cf create-org` 및 `cf delete-org`와 같은 명령을 사용하여 모든 조직을 관리할 수 있습니다. cf 명령의 전체 목록을 보려면 `cf help`를 입력하십시오.
 {: tsResolve}
 
 ## 신용카드를 추가할 수 없음
 {: #ts_addcc}
 
-평가판 계정을 종량과금제 계정으로 변환하기 위해 신용카드 정보를 제출할 수 없습니다.
+라이트 계정을 청구 가능 계정으로 변환하기 위해 신용카드 정보를 제출할 수 없습니다.
 
 신용카드 추가 페이지의 **제출** 단추가 비활성화되어 있습니다.
 {: tsSymptoms}

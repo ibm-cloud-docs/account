@@ -5,7 +5,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-02-07"
+lastupdated: "2018-07-17"
 
 ---
 
@@ -21,7 +21,7 @@ lastupdated: "2018-02-07"
 您可以在服務實例儀表板的 {{site.data.keyword.Bluemix}} 中變更服務方案（如果已啟用該服務的方案變更）。
 {: shortdesc}
 
-如果您在尋找關於升級帳戶類型的詳細資料，請參閱[如何升級或變更我的帳戶類型？](/docs/account/account_faq.html#changeacct)。
+如果您在尋找升級帳戶類型的詳細資料，請參閱[如何升級或變更我的帳戶類型？](/docs/account/account_faq.html#changeacct)。
 {: tip}
 
 只有特定服務才可讓您變更服務方案。如果已啟用服務的方案變更，則服務實例儀表板會在導覽中顯示**方案**選項。如果您變更方案，則每一個服務都會有要遵循的不同後續步驟集。

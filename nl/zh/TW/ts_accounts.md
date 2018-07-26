@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2017-11-09"
+lastupdated: "2018-07-16"
 
 ---
 
@@ -152,7 +152,7 @@ lastupdated: "2017-11-09"
 {: tsResolve}
 
   * 從主控台功能表列中，按一下**管理 > 帳戶 > 組織**。然後，選取您要在其中建立空間的組織，並且按一下**建立空間**。
-  * 在 cf 指令行介面中，鍵入 `cf create-space <space_name> -o <organization_name>`。
+  * 在 Cloud Foundry 指令行介面中，鍵入 `cf create-space <space_name> -o <organization_name>`。
 
 
 ## 應用程式共用相同的網域名稱
@@ -180,13 +180,13 @@ lastupdated: "2017-11-09"
 這是 {{site.data.keyword.Bluemix_notm}} 使用者介面的限制。
 {: tsCauses}
 
-您可以從 cf 指令行介面使用 `cf orgs`、`cf create-org` 及 `cf delete-org` 之類的指令來管理所有組織。如需完整的 cf 指令清單，請輸入 `cf help`。
+您可以從 Cloud Foundry 指令行介面使用 `cf orgs`、`cf create-org` 及 `cf delete-org` 之類的指令來管理所有組織。如需完整的 cf 指令清單，請輸入 `cf help`。
 {: tsResolve}
 
 ## 無法新增信用卡
 {: #ts_addcc}
 
-您無法提交信用卡資訊，以將試用帳戶轉換為「隨收隨付制」帳戶。
+您無法提交信用卡資訊，以將精簡帳戶轉換為計費帳戶。
 
 「新增信用卡」頁面上的**提交**按鈕已停用。
 {: tsSymptoms}

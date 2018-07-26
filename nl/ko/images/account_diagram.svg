@@ -1,0 +1,1503 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1676px"
+   height="927px"
+   viewBox="0 0 1676 927"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="account_diagram.svg"
+   inkscape:export-filename="S:\PUB\ABD042\ART\WORK\ship13\account\images\account_diagram.png"
+   inkscape:export-xdpi="61.993401"
+   inkscape:export-ydpi="61.993401">
+  <metadata
+     id="metadata456">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1015"
+     id="namedview454"
+     showgrid="false"
+     inkscape:zoom="0.80859047"
+     inkscape:cx="838.85355"
+     inkscape:cy="463.16222"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title4">CF-IAM-IMS_Diagram</title>
+  <desc
+     id="desc6">Created with Sketch.</desc>
+  <defs
+     id="defs8" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-dasharray:1, 5, 1, 1"
+     inkscape:connector-curvature="0"
+     id="Line-13"
+     d="m 593.5,286.5 -192,0" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     id="Line-23"
+     d="M 400.51665,286 393,286" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     d="m 393,286 10.8,3 0,-6 -10.8,3 z"
+     id="Line-23-decoration-1" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-dasharray:1, 5, 1, 1"
+     inkscape:connector-curvature="0"
+     id="Line-10"
+     d="m 758.5,309.5 0,98" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     id="Line-9"
+     d="m 758.5,411.58276 0,-1" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     d="m 758.5,411.58276 -3,-10.8 6,0 -3,10.8 z"
+     id="Line-9-decoration-1" />
+  <rect
+     id="Rectangle-1"
+     x="830"
+     y="23"
+     width="193"
+     height="56"
+     style="fill:#8c9ba5;fill-rule:evenodd;stroke:none;stroke-width:1" />
+  <text
+     id="Account"
+     font-size="18"
+     font-weight="500"
+     letter-spacing="1.92857099"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     x="44"
+     y="23"
+     sodipodi:linespacing="125%">
+    <tspan
+       x="908.04102"
+       y="58"
+       id="tspan25"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">계정</tspan>
+  </text>
+  <rect
+     id="rect27"
+     x="594"
+     y="253"
+     width="193"
+     height="56"
+     style="fill:#8c9ba5;fill-rule:evenodd;stroke:none;stroke-width:1" />
+  <text
+     id="Access-groups"
+     font-size="18"
+     font-weight="500"
+     letter-spacing="1.92857099"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     x="42"
+     y="23"
+     sodipodi:linespacing="125%">
+    <tspan
+       x="638.0603"
+       y="288"
+       id="tspan30"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">액세스 그룹</tspan>
+  </text>
+  <rect
+     id="rect32"
+     x="196"
+     y="258"
+     width="193"
+     height="56"
+     style="fill:#8c9ba5;fill-rule:evenodd;stroke:none;stroke-width:1" />
+  <text
+     id="Services"
+     font-size="18"
+     font-weight="500"
+     letter-spacing="1.92857099"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     x="34"
+     y="23"
+     sodipodi:linespacing="125%">
+    <tspan
+       x="261.37073"
+       y="293"
+       id="tspan35"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">서비스</tspan>
+  </text>
+  <rect
+     id="rect37"
+     x="93"
+     y="425"
+     width="397"
+     height="271"
+     style="fill:#f0f3f6;fill-rule:evenodd;stroke:none;stroke-width:1" />
+  <rect
+     id="rect39"
+     x="730"
+     y="416"
+     width="397"
+     height="271"
+     style="fill:#f0f3f6;fill-rule:evenodd;stroke:none;stroke-width:1" />
+  <rect
+     id="rect41"
+     x="1178"
+     y="415"
+     width="397"
+     height="271"
+     style="fill:#f0f3f6;fill-rule:evenodd;stroke:none;stroke-width:1" />
+  <rect
+     id="rect43"
+     x="207"
+     y="463"
+     width="159"
+     height="56"
+     style="fill:#3d70b2;fill-opacity:0.5;fill-rule:evenodd;stroke:none;stroke-width:1" />
+  <text
+     id="Organization"
+     font-size="14"
+     font-weight="400"
+     letter-spacing="1.5"
+     style="font-weight:400;font-size:14px;font-family:IBMPlexSans-Medium, 'IBM Plex Sans';letter-spacing:1.5;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     x="58"
+     y="23">
+    <tspan
+       x="273.323"
+       y="496"
+       id="tspan46">조직</tspan>
+  </text>
+  <rect
+     style="fill:#5596e6;fill-rule:evenodd;stroke:none;stroke-width:1"
+     height="41"
+     width="128"
+     y="579"
+     x="127"
+     id="rect49" />
+  <text
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:1.5;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     letter-spacing="1.5"
+     font-weight="normal"
+     font-size="14"
+     id="Space"
+     x="135"
+     y="579"
+     sodipodi:linespacing="125%">
+    <tspan
+       id="tspan52"
+       y="605"
+       x="176.063"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">영역</tspan>
+  </text>
+  <rect
+     style="fill:#5596e6;fill-rule:evenodd;stroke:none;stroke-width:1"
+     height="41"
+     width="128"
+     y="579"
+     x="319"
+     id="rect55" />
+  <text
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:1.5;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     letter-spacing="1.5"
+     font-weight="normal"
+     font-size="14"
+     id="text57"
+     x="327"
+     y="579"
+     sodipodi:linespacing="125%">
+    <tspan
+       id="tspan59"
+       y="605"
+       x="368.06299"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">영역</tspan>
+  </text>
+  <rect
+     style="fill:#5aaafa;fill-rule:evenodd;stroke:none;stroke-width:1"
+     height="32"
+     width="82"
+     y="651"
+     x="103"
+     id="rect62" />
+  <text
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     letter-spacing="1.92857099"
+     font-weight="normal"
+     font-size="14"
+     id="Resource"
+     x="117"
+     y="651"
+     sodipodi:linespacing="125%">
+    <tspan
+       id="tspan65"
+       y="672"
+       x="122.40672"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">리소스</tspan>
+  </text>
+  <rect
+     style="fill:#5aaafa;fill-rule:evenodd;stroke:none;stroke-width:1"
+     height="32"
+     width="82"
+     y="651"
+     x="301"
+     id="rect68" />
+  <text
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     letter-spacing="1.92857099"
+     font-weight="normal"
+     font-size="14"
+     id="text70"
+     x="315"
+     y="651"
+     sodipodi:linespacing="125%">
+    <tspan
+       id="tspan72"
+       y="672"
+       x="319.40671"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">리소스</tspan>
+  </text>
+  <rect
+     style="fill:#5aaafa;fill-rule:evenodd;stroke:none;stroke-width:1"
+     height="32"
+     width="82"
+     y="651"
+     x="395"
+     id="rect75" />
+  <text
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     letter-spacing="1.92857099"
+     font-weight="normal"
+     font-size="14"
+     id="text77"
+     x="409"
+     y="651"
+     sodipodi:linespacing="125%">
+    <tspan
+       id="tspan79"
+       y="672"
+       x="413.40671"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">리소스</tspan>
+  </text>
+  <rect
+     style="fill:#5aaafa;fill-rule:evenodd;stroke:none;stroke-width:1"
+     height="32"
+     width="82"
+     y="518"
+     x="767"
+     id="rect82" />
+  <text
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     letter-spacing="1.92857099"
+     font-weight="normal"
+     font-size="14"
+     id="text84"
+     x="781"
+     y="518"
+     sodipodi:linespacing="125%">
+    <tspan
+       id="tspan86"
+       y="539"
+       x="785.40674"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">리소스</tspan>
+  </text>
+  <rect
+     style="fill:#5aaafa;fill-rule:evenodd;stroke:none;stroke-width:1"
+     height="32"
+     width="82"
+     y="569"
+     x="767"
+     id="rect89" />
+  <text
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     letter-spacing="1.92857099"
+     font-weight="normal"
+     font-size="14"
+     id="text91"
+     x="781"
+     y="569"
+     sodipodi:linespacing="125%">
+    <tspan
+       id="tspan93"
+       y="590"
+       x="785.40674"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">리소스</tspan>
+  </text>
+  <rect
+     style="fill:#5aaafa;fill-rule:evenodd;stroke:none;stroke-width:1"
+     height="32"
+     width="82"
+     y="619"
+     x="767"
+     id="rect96" />
+  <text
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     letter-spacing="1.92857099"
+     font-weight="normal"
+     font-size="14"
+     id="text98"
+     x="781"
+     y="619"
+     sodipodi:linespacing="125%">
+    <tspan
+       id="tspan100"
+       y="640"
+       x="785.40674"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">리소스</tspan>
+  </text>
+  <rect
+     style="fill:#5aaafa;fill-rule:evenodd;stroke:none;stroke-width:1"
+     height="32"
+     width="82"
+     y="518"
+     x="886"
+     id="rect103" />
+  <text
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     letter-spacing="1.92857099"
+     font-weight="normal"
+     font-size="14"
+     id="text105"
+     x="900"
+     y="518"
+     sodipodi:linespacing="125%">
+    <tspan
+       id="tspan107"
+       y="539"
+       x="904.40674"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">리소스</tspan>
+  </text>
+  <rect
+     style="fill:#5aaafa;fill-rule:evenodd;stroke:none;stroke-width:1"
+     height="32"
+     width="82"
+     y="569"
+     x="886"
+     id="rect110" />
+  <text
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     letter-spacing="1.92857099"
+     font-weight="normal"
+     font-size="14"
+     id="text112"
+     x="900"
+     y="569"
+     sodipodi:linespacing="125%">
+    <tspan
+       id="tspan114"
+       y="590"
+       x="904.40674"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">리소스</tspan>
+  </text>
+  <rect
+     style="fill:#5aaafa;fill-rule:evenodd;stroke:none;stroke-width:1"
+     height="32"
+     width="82"
+     y="619"
+     x="886"
+     id="rect117" />
+  <text
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     letter-spacing="1.92857099"
+     font-weight="normal"
+     font-size="14"
+     id="text119"
+     x="900"
+     y="619"
+     sodipodi:linespacing="125%">
+    <tspan
+       id="tspan121"
+       y="640"
+       x="904.40674"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">리소스</tspan>
+  </text>
+  <rect
+     style="fill:#5aaafa;fill-rule:evenodd;stroke:none;stroke-width:1"
+     height="32"
+     width="82"
+     y="468"
+     x="767"
+     id="rect124" />
+  <text
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     letter-spacing="1.92857099"
+     font-weight="normal"
+     font-size="14"
+     id="text126"
+     x="781"
+     y="468"
+     sodipodi:linespacing="125%">
+    <tspan
+       id="tspan128"
+       y="489"
+       x="785.40674"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">리소스</tspan>
+  </text>
+  <rect
+     style="fill:#5aaafa;fill-rule:evenodd;stroke:none;stroke-width:1"
+     height="32"
+     width="82"
+     y="468"
+     x="886"
+     id="rect131" />
+  <text
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     letter-spacing="1.92857099"
+     font-weight="normal"
+     font-size="14"
+     id="text133"
+     x="900"
+     y="468"
+     sodipodi:linespacing="125%">
+    <tspan
+       id="tspan135"
+       y="489"
+       x="904.40674"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">리소스</tspan>
+  </text>
+  <rect
+     style="fill:#5aaafa;fill-rule:evenodd;stroke:none;stroke-width:1"
+     height="32"
+     width="82"
+     y="468"
+     x="1004"
+     id="rect138" />
+  <text
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     letter-spacing="1.92857099"
+     font-weight="normal"
+     font-size="14"
+     id="text140"
+     x="1018"
+     y="468"
+     sodipodi:linespacing="125%">
+    <tspan
+       id="tspan142"
+       y="489"
+       x="1021.9067"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">리소스</tspan>
+  </text>
+  <rect
+     style="fill:#5aaafa;fill-rule:evenodd;stroke:none;stroke-width:1"
+     height="32"
+     width="82"
+     y="518"
+     x="1004"
+     id="rect145" />
+  <text
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     letter-spacing="1.92857099"
+     font-weight="normal"
+     font-size="14"
+     id="text147"
+     x="1018"
+     y="518"
+     sodipodi:linespacing="125%">
+    <tspan
+       id="tspan149"
+       y="539"
+       x="1022.4067"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">리소스</tspan>
+  </text>
+  <rect
+     style="fill:#5aaafa;fill-rule:evenodd;stroke:none;stroke-width:1"
+     height="32"
+     width="82"
+     y="569"
+     x="1004"
+     id="rect152" />
+  <text
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     letter-spacing="1.92857099"
+     font-weight="normal"
+     font-size="14"
+     id="text154"
+     x="1018"
+     y="569"
+     sodipodi:linespacing="125%">
+    <tspan
+       id="tspan156"
+       y="590"
+       x="1022.4067"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">리소스</tspan>
+  </text>
+  <rect
+     style="fill:#5aaafa;fill-rule:evenodd;stroke:none;stroke-width:1"
+     height="32"
+     width="82"
+     y="619"
+     x="1004"
+     id="rect159" />
+  <text
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     letter-spacing="1.92857099"
+     font-weight="normal"
+     font-size="14"
+     id="text161"
+     x="1018"
+     y="619"
+     sodipodi:linespacing="125%">
+    <tspan
+       id="tspan163"
+       y="640"
+       x="1022.4067"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">리소스</tspan>
+  </text>
+  <rect
+     style="fill:#5aaafa;fill-rule:evenodd;stroke:none;stroke-width:1"
+     height="32"
+     width="82"
+     y="651"
+     x="197"
+     id="rect166" />
+  <text
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     letter-spacing="1.92857099"
+     font-weight="normal"
+     font-size="14"
+     id="text168"
+     x="211"
+     y="651"
+     sodipodi:linespacing="125%">
+    <tspan
+       id="tspan170"
+       y="672"
+       x="215.40672"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">리소스</tspan>
+  </text>
+  <rect
+     id="rect172"
+     x="1205"
+     y="459"
+     width="163"
+     height="56"
+     style="fill:#3d70b2;fill-opacity:0.75;fill-rule:evenodd;stroke:none;stroke-width:1" />
+  <rect
+     id="rect174"
+     x="1205"
+     y="532"
+     width="163"
+     height="56"
+     style="fill:#3d70b2;fill-opacity:0.75;fill-rule:evenodd;stroke:none;stroke-width:1" />
+  <rect
+     id="rect176"
+     x="1205"
+     y="605"
+     width="163"
+     height="56"
+     style="fill:#3d70b2;fill-opacity:0.75;fill-rule:evenodd;stroke:none;stroke-width:1" />
+  <rect
+     id="rect178"
+     x="1390"
+     y="605"
+     width="163"
+     height="56"
+     style="fill:#3d70b2;fill-opacity:0.75;fill-rule:evenodd;stroke:none;stroke-width:1" />
+  <rect
+     id="rect180"
+     x="1390"
+     y="532"
+     width="163"
+     height="56"
+     style="fill:#3d70b2;fill-opacity:0.75;fill-rule:evenodd;stroke:none;stroke-width:1" />
+  <rect
+     id="rect182"
+     x="1390"
+     y="459"
+     width="163"
+     height="56"
+     style="fill:#3d70b2;fill-opacity:0.75;fill-rule:evenodd;stroke:none;stroke-width:1" />
+  <text
+     id="Purchasing-/-Provisi"
+     font-size="14"
+     font-weight="normal"
+     letter-spacing="1.92857099"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:center;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     x="1285.9279"
+     y="483.05984"
+     sodipodi:linespacing="125%">
+    <tspan
+       sodipodi:role="line"
+       id="tspan5773"
+       x="1286.8921"
+       y="483.05984"
+       style="-inkscape-font-specification:'IBMPlexSans, IBM Plex Sans, Normal';font-family:IBMPlexSans, 'IBM Plex Sans';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13.99999976px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%">IaaS</tspan>
+    <tspan
+       sodipodi:role="line"
+       id="tspan5775"
+       x="1286.8921"
+       y="500.55984">구매/프로비저닝</tspan>
+  </text>
+  <text
+     id="Monitoring-IaaS"
+     font-size="14"
+     font-weight="normal"
+     letter-spacing="1.92857099"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:IBMPlexSans, 'IBM Plex Sans';-inkscape-font-specification:'IBMPlexSans, IBM Plex Sans, Normal';text-align:start;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     x="1417.0201"
+     y="491.71689"
+     sodipodi:linespacing="125%">
+    <tspan
+       sodipodi:role="line"
+       id="tspan5779"
+       x="1417.0201"
+       y="491.71689">IaaS <tspan
+   style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13.99999976px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%"
+   id="tspan5781">모니터링</tspan>
+</tspan>
+  </text>
+  <text
+     id="Configuration-of-Iaa"
+     font-size="14"
+     font-weight="normal"
+     letter-spacing="1.92857099"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:IBMPlexSans, 'IBM Plex Sans';-inkscape-font-specification:'IBMPlexSans, IBM Plex Sans, Normal';text-align:start;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     x="1245.1161"
+     y="563.44666"
+     sodipodi:linespacing="125%">
+    <tspan
+       sodipodi:role="line"
+       id="tspan5769"
+       x="1245.1161"
+       y="563.44666">IaaS <tspan
+   style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13.99999976px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%"
+   id="tspan5771">구성</tspan>
+</tspan>
+  </text>
+  <text
+     id="Invoices"
+     font-size="14"
+     font-weight="normal"
+     letter-spacing="1.92857099"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     x="36"
+     y="23"
+     sodipodi:linespacing="125%">
+    <tspan
+       x="1266.2767"
+       y="638"
+       id="tspan200"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">송장</tspan>
+  </text>
+  <text
+     id="Support"
+     font-size="14"
+     font-weight="normal"
+     letter-spacing="1.92857099"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     x="42"
+     y="23"
+     sodipodi:linespacing="125%">
+    <tspan
+       x="1460.113"
+       y="565"
+       id="tspan203"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">지원</tspan>
+  </text>
+  <text
+     id="Billing"
+     font-size="14"
+     font-weight="normal"
+     letter-spacing="1.92857099"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;letter-spacing:1.92857099;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     x="12"
+     y="23"
+     sodipodi:linespacing="125%">
+    <tspan
+       x="1435.234"
+       y="638"
+       id="tspan206"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">비용 청구</tspan>
+  </text>
+  <path
+     d="m 926.5,79.5 0,81"
+     id="Line"
+     inkscape:connector-curvature="0"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square" />
+  <path
+     id="Line-decoration-1"
+     d="m 926.5,160.5 3,-10.8 -6,0 3,10.8 z"
+     inkscape:connector-curvature="0"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square" />
+  <path
+     d="m 1374,146.5 0,72.5"
+     id="path210"
+     inkscape:connector-curvature="0"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square" />
+  <path
+     id="path212"
+     d="m 1374,219 3,-10.8 -6,0 3,10.8 z"
+     inkscape:connector-curvature="0"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square" />
+  <text
+     id="Infrastructure-Custo"
+     font-size="16"
+     font-weight="400"
+     letter-spacing="2.20408106"
+     style="font-weight:normal;font-size:16.00000024px;font-family:Gulim;letter-spacing:2.20408106;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1;-inkscape-font-specification:'Gulim, Normal';font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;"
+     x="102"
+     y="23"
+     sodipodi:linespacing="125%">
+    <tspan
+       x="1275.0525"
+       y="441"
+       id="tspan215"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:16.00000024px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">인프라 고객 포털 액세스</tspan>
+  </text>
+  <text
+     id="Resource-Group"
+     font-size="16"
+     font-weight="400"
+     letter-spacing="2.20408106"
+     style="font-weight:normal;font-size:16.00000024px;font-family:Gulim;letter-spacing:2.20408106;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1;-inkscape-font-specification:'Gulim, Normal';font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;"
+     x="44"
+     y="23"
+     sodipodi:linespacing="125%">
+    <tspan
+       x="874.45544"
+       y="441"
+       id="tspan218"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:16.00000024px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">리소스 그룹</tspan>
+  </text>
+  <text
+     id="Cloud-Foundry"
+     font-size="16"
+     font-weight="400"
+     letter-spacing="2.20408106"
+     style="font-weight:400;font-size:16px;font-family:IBMPlexSans-Medium, 'IBM Plex Sans';letter-spacing:2.20408106;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     x="22"
+     y="23">
+    <tspan
+       x="224.43347"
+       y="448"
+       id="tspan221">Cloud Foundry</tspan>
+  </text>
+  <path
+     d="m 181.5,626.5 -37,20"
+     id="Line-4"
+     inkscape:connector-curvature="0"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square" />
+  <path
+     id="Line-4-decoration-1"
+     d="m 144.5,646.5 10.92738,-2.49646 -2.8531,-5.27824 L 144.5,646.5 Z"
+     inkscape:connector-curvature="0"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square" />
+  <path
+     d="m 373.5,626.5 -37,20"
+     id="path225"
+     inkscape:connector-curvature="0"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square" />
+  <path
+     id="path227"
+     d="m 336.5,646.5 10.92738,-2.49646 -2.8531,-5.27824 L 336.5,646.5 Z"
+     inkscape:connector-curvature="0"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square" />
+  <path
+     d="m 202.5,626.5 32,20"
+     id="Line-5"
+     inkscape:connector-curvature="0"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square" />
+  <path
+     id="Line-5-decoration-1"
+     d="m 234.5,646.5 -7.56839,-8.26798 -3.17999,5.08799 L 234.5,646.5 Z"
+     inkscape:connector-curvature="0"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square" />
+  <path
+     d="m 394.5,626.5 32,20"
+     id="path231"
+     inkscape:connector-curvature="0"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square" />
+  <path
+     id="path233"
+     d="m 426.5,646.5 -7.56838,-8.26798 -3.18,5.08799 L 426.5,646.5 Z"
+     inkscape:connector-curvature="0"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square" />
+  <path
+     d="M 278.43249,523 221,574.28849"
+     id="path235"
+     inkscape:connector-curvature="0"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square" />
+  <path
+     id="path237"
+     d="m 221,574.28849 10.05372,-4.95608 -3.99651,-4.47526 L 221,574.28849 Z"
+     inkscape:connector-curvature="0"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square" />
+  <path
+     d="m 295,523 56.5,50.5"
+     id="path239"
+     inkscape:connector-curvature="0"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square" />
+  <path
+     id="path241"
+     d="m 351.5,573.5 -6.05311,-9.43398 -3.99845,4.47352 L 351.5,573.5 Z"
+     inkscape:connector-curvature="0"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square" />
+  <path
+     d="m 858.5,287.5 -66,0"
+     id="Line-7"
+     inkscape:connector-curvature="0"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square" />
+  <path
+     id="Line-7-decoration-1"
+     d="m 792.5,287.5 10.8,3 0,-6 -10.8,3 z"
+     inkscape:connector-curvature="0"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-dasharray:1, 5, 1, 1"
+     inkscape:connector-curvature="0"
+     id="Line-8"
+     d="m 929.5,222.5 0,181" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     id="path247"
+     d="m 929.5,411.58276 0,-1" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     d="m 929.5,411.58276 -3,-10.8 6,0 -3,10.8 z"
+     id="path249" />
+  <path
+     d="m 291.5,314.5 0,103"
+     id="Line-12"
+     inkscape:connector-curvature="0"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square" />
+  <path
+     id="Line-12-decoration-1"
+     d="m 291.5,417.5 3,-10.8 -6,0 3,10.8 z"
+     inkscape:connector-curvature="0"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square" />
+  <path
+     d="m 1653.5,748.5 1.5,1.5"
+     id="Line-17"
+     inkscape:connector-curvature="0"
+     style="fill:none;fill-rule:evenodd;stroke:#979797;stroke-width:1;stroke-linecap:square" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     id="Line-15"
+     d="m 1471.5,120.5 182,0" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     id="Line-16"
+     d="m 1653.5,120.5 0,627" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     id="Line-18"
+     d="m 1653.4975,747.5 -1004.99701,0" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     id="Line-19"
+     d="m 648.5,747.5 0,-433" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     d="m 648.5,314.5 -3,10.8 6,0 -3,-10.8 z"
+     id="Line-19-decoration-1" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-dasharray:1, 5, 1, 1"
+     inkscape:connector-curvature="0"
+     id="path262"
+     d="m 955,748 0,-54" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     id="path264"
+     d="m 955,695 0,-1" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     d="m 955,694 -3,10.8 6,0 -3,-10.8 z"
+     id="path266" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-dasharray:1, 5, 1, 1"
+     inkscape:connector-curvature="0"
+     id="Line-20"
+     d="m 1051.5,747.5 0,-90" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     id="path270"
+     d="m 1065.5,656.27033 0,-1" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     d="m 1051.5,655.27033 -3,10.8 6,0 -3,-10.8 z"
+     id="Line-20-decoration-1" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-dasharray:1, 5, 1, 1"
+     inkscape:connector-curvature="0"
+     id="Line-6"
+     d="m 289.5,208.5 0,36" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     id="path276"
+     d="m 289.5,253.5 0,1" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     d="m 289.5,254.5 3,-10.8 -6,0 3,10.8 z"
+     id="Line-6-decoration-1" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-dasharray:1, 5, 1, 1"
+     inkscape:connector-curvature="0"
+     id="Line-21"
+     d="m 829.5,208.5 -540,0" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     id="path282"
+     d="m 829.5,190.5 -791,0" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     id="Line-22"
+     d="m 38.5,190.5 0,287" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     id="path285"
+     d="m 39.5,477.5 162,0" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     d="m 201.5,477.5 -10.8,-3 0,6 10.8,-3 z"
+     id="path287" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-dasharray:1, 5, 1, 1"
+     inkscape:connector-curvature="0"
+     id="path291"
+     d="m 830.5,173.5 -807,0" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-dasharray:1, 5, 1, 1"
+     inkscape:connector-curvature="0"
+     id="path293"
+     d="m 23.5,174.5 0,423" />
+  <g
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     transform="translate(24,491)"
+     id="Group-23">
+    <path
+       style="stroke-dasharray:1, 5, 1, 1"
+       inkscape:connector-curvature="0"
+       id="path296"
+       d="m 0.5,1.5 175,0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path298"
+       d="m 176.5,1.5 1,0" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m 177.5,1.5 -10.8,-3 0,6 10.8,-3 z"
+       id="path300" />
+  </g>
+  <g
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     transform="translate(23,596)"
+     id="Group-22">
+    <path
+       inkscape:connector-curvature="0"
+       id="path303"
+       d="m 99.5,1.5 1,0" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m 100.5,1.5 -10.8,-3 0,6 10.8,-3 z"
+       id="path305" />
+    <path
+       style="stroke-dasharray:1, 5, 1, 1"
+       inkscape:connector-curvature="0"
+       id="path307"
+       d="m 0.5,1.5 91,0" />
+  </g>
+  <path
+     d="m 194.5,282.5 -49,0"
+     id="Line-24"
+     inkscape:connector-curvature="0"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square" />
+  <path
+     id="Line-24-decoration-1"
+     d="m 145.5,282.5 10.8,3 0,-6 -10.8,3 z"
+     inkscape:connector-curvature="0"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     id="Line-2"
+     d="m 1369.5,48.5 0,36" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     d="m 1369.5,84.5 3,-10.8 -6,0 3,10.8 z"
+     id="Line-2-decoration-1" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     id="Line-25"
+     d="m 1023.5,48.5 345,0" />
+  <g
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     transform="translate(1046,357)"
+     id="Group-24">
+    <path
+       style="stroke-dasharray:1, 5, 1, 1"
+       inkscape:connector-curvature="0"
+       id="path319"
+       d="m 1.5,0.5 0,96" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path321"
+       d="m 1.5,107.58276 0,-1" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m 1.5,107.58276 -3,-10.799997 6,0 -3,10.799997 z"
+       id="path323" />
+  </g>
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-dasharray:1, 5, 1, 1"
+     inkscape:connector-curvature="0"
+     id="Line-26"
+     d="m 1047.5,357.5 -59,0" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-dasharray:1, 5, 1, 1"
+     inkscape:connector-curvature="0"
+     id="Line-27"
+     d="m 988.5,222.5 0,135" />
+  <g
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     transform="translate(689,481)"
+     id="Group-28">
+    <path
+       style="stroke-dasharray:1, 5, 1, 1"
+       inkscape:connector-curvature="0"
+       id="Line-11"
+       d="m 0.5,1.5 65,0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path331"
+       d="m 71,1 1,0" />
+    <path
+       inkscape:connector-curvature="0"
+       d="M 72,1 61.2,-2 61.2,4 72,1 Z"
+       id="path333" />
+  </g>
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-dasharray:1, 5, 1, 1"
+     inkscape:connector-curvature="0"
+     id="path335"
+     d="m 689.5,309.5 0,173" />
+  <path
+     d="m 858.5,223.5 0,64"
+     id="path337"
+     inkscape:connector-curvature="0"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     id="Line-3"
+     d="m 1203.5,254.5 69,0" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     d="m 1272.5,254.5 -10.8,-3 0,6 10.8,-3 z"
+     id="Line-3-decoration-1" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     id="path343"
+     d="m 1203.5,189.5 -181,0" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     id="path345"
+     d="m 1203.5,190.5 0,63" />
+  <g
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     transform="translate(1276,345)"
+     id="Group-26">
+    <path
+       inkscape:connector-curvature="0"
+       id="path350"
+       d="m 1.5,63.582762 0,-1" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m 1.5,63.582762 -3,-10.8 6,0 -3,10.8 z"
+       id="path352" />
+    <path
+       style="stroke-dasharray:1, 5, 1, 1"
+       inkscape:connector-curvature="0"
+       id="Line-14"
+       d="m 1.5,0.5 0,52" />
+  </g>
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-dasharray:1, 5, 1, 1"
+     inkscape:connector-curvature="0"
+     id="path355"
+     d="m 1149.5,207.5 -127,0" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-dasharray:1, 5, 1, 1"
+     inkscape:connector-curvature="0"
+     id="path357"
+     d="m 1277.5,344.5 -127,0" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-dasharray:1, 5, 1, 1"
+     inkscape:connector-curvature="0"
+     id="path359"
+     d="m 1150.5,207.5 0,137" />
+  <text
+     id="Users-are-a-member-o"
+     font-size="12"
+     font-weight="normal"
+     style="font-weight:normal;font-size:12.00000048px;font-family:Gulim;fill:#46535e;fill-opacity:0.87955729;fill-rule:evenodd;stroke:none;stroke-width:1;-inkscape-font-specification:'Gulim, Normal';font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;"
+     x="22"
+     y="23"
+     sodipodi:linespacing="125%">
+    <tspan
+       x="43"
+       y="126"
+       id="tspan362"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00000048px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">사용자가 조직의 구성원이며</tspan>
+    <tspan
+       x="43"
+       y="141"
+       id="tspan364"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00000048px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">조직 역할 없이 조직 내의 영역에</tspan>
+    <tspan
+       x="43"
+       y="156"
+       id="tspan366"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00000048px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">지정될 수 있습니다.</tspan>
+  </text>
+  <text
+     id="Services-can-be-Clou"
+     font-size="12"
+     font-weight="normal"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.00000095px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#46535e;fill-opacity:0.87955729;fill-rule:evenodd;stroke:none;stroke-width:1"
+     x="22"
+     y="29"
+     sodipodi:linespacing="125%">
+    <tspan
+       x="53"
+       y="270"
+       id="tspan369"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.00000095px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">서비스는</tspan>
+    <tspan
+       x="53"
+       y="285"
+       id="tspan371"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.00000095px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Cloud Foundry</tspan>
+    <tspan
+       x="53"
+       y="300"
+       id="tspan373"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.00000095px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">또는 리소스 그룹을</tspan>
+    <tspan
+       x="53"
+       y="315"
+       id="tspan375"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.00000095px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">기반으로 할 수 있습니다.</tspan>
+  </text>
+  <text
+     id="Access-can-be-grante"
+     font-size="12"
+     font-weight="normal"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.00000095px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#46535e;fill-opacity:0.87955729;fill-rule:evenodd;stroke:none;stroke-width:1"
+     x="6"
+     y="23"
+     sodipodi:linespacing="125%">
+    <tspan
+       x="127"
+       y="358"
+       id="tspan378"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.00000095px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">영역 역할을 통해서만</tspan>
+    <tspan
+       x="127"
+       y="373"
+       id="tspan380"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.00000095px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">서비스 인스턴스에 대한</tspan>
+    <tspan
+       x="127"
+       y="388"
+       id="tspan382"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.00000095px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">액세스를 부여할 수 있습니다.</tspan>
+  </text>
+  <text
+     id="You-must-have-space"
+     font-size="12"
+     font-weight="normal"
+     style="font-weight:normal;font-size:12.00000048px;font-family:Gulim;fill:#46535e;fill-opacity:0.92654551;fill-rule:evenodd;stroke:none;stroke-width:1;-inkscape-font-specification:'Gulim, Normal';font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;"
+     x="22"
+     y="23"
+     sodipodi:linespacing="125%">
+    <tspan
+       x="113"
+       y="521"
+       id="tspan385"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00000048px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">영역 리소스에</tspan>
+    <tspan
+       x="113"
+       y="536"
+       id="tspan387"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00000048px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">액세스하려면</tspan>
+    <tspan
+       x="113"
+       y="551"
+       id="tspan389"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00000048px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">영역 역할이</tspan>
+    <tspan
+       x="113"
+       y="566"
+       id="tspan391"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00000048px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">있어야 합니다.</tspan>
+  </text>
+  <text
+     id="Users-and-service-ID"
+     font-size="12"
+     font-weight="normal"
+     style="font-weight:normal;font-size:12.00000048px;font-family:Gulim;fill:#46535e;fill-opacity:0.87955729;fill-rule:evenodd;stroke:none;stroke-width:1;-inkscape-font-specification:'Gulim, Normal';font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;"
+     x="22"
+     y="23"
+     sodipodi:linespacing="125%">
+    <tspan
+       x="776"
+       y="338"
+       id="tspan394"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00000048px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">사용자 및 서비스 ID에</tspan>
+    <tspan
+       x="776"
+       y="353"
+       id="tspan396"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00000048px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">개별 리소스 또는</tspan>
+    <tspan
+       x="776"
+       y="368"
+       id="tspan398"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00000048px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">리소스 그룹 내의 모든</tspan>
+    <tspan
+       x="776"
+       y="383"
+       id="tspan400"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00000048px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">리소스에 대한 액세스를</tspan>
+    <tspan
+       x="776"
+       y="398"
+       id="tspan402"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00000048px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">부여할 수 있습니다.</tspan>
+  </text>
+  <text
+     id="You-can-grant-granul"
+     font-size="12"
+     font-weight="normal"
+     style="font-weight:normal;font-size:12.00000048px;font-family:Gulim;fill:#46535e;fill-opacity:0.87955729;fill-rule:evenodd;stroke:none;stroke-width:1;-inkscape-font-specification:'Gulim, Normal';font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;"
+     x="22"
+     y="23"
+     sodipodi:linespacing="125%">
+    <tspan
+       x="1295"
+       y="358"
+       id="tspan405"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00000048px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">디바이스 자체가 아니라 고객 포털 내의</tspan>
+    <tspan
+       x="1295"
+       y="373"
+       id="tspan407"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00000048px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">기능에 대한 세부 단위의 고객 포털</tspan>
+    <tspan
+       x="1295"
+       y="388"
+       id="tspan409"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00000048px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">액세스를 부여할 수 있습니다. 디바이스 액세스</tspan>
+    <tspan
+       x="1295"
+       y="403"
+       id="tspan411"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00000048px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">제어는 디바이스 자체에서 처리됩니다.</tspan>
+  </text>
+  <text
+     id="Service-IDs-can-be-g"
+     font-size="12"
+     font-weight="normal"
+     style="font-weight:normal;font-size:12.00000048px;font-family:Gulim;fill:#46535e;fill-opacity:0.87955729;fill-rule:evenodd;stroke:none;stroke-width:1;-inkscape-font-specification:'Gulim, Normal';font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;"
+     x="22"
+     y="23"
+     sodipodi:linespacing="125%">
+    <tspan
+       x="1486"
+       y="141"
+       id="tspan414"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00000048px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">서비스 ID에</tspan>
+    <tspan
+       x="1486"
+       y="156"
+       id="tspan416"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00000048px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">리소스 그룹 기반</tspan>
+    <tspan
+       x="1486"
+       y="171"
+       id="tspan418"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00000048px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">서비스 사용자와</tspan>
+    <tspan
+       x="1486"
+       y="186"
+       id="tspan420"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00000048px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">동일한 액세스를</tspan>
+    <tspan
+       x="1486"
+       y="201"
+       id="tspan422"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12.00000048px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">부여할 수 있습니다.</tspan>
+  </text>
+  <rect
+     style="fill:#8c9ba5;fill-rule:evenodd;stroke:none;stroke-width:1"
+     height="56"
+     width="193"
+     y="167"
+     x="830"
+     id="rect424" />
+  <text
+     style="font-weight:normal;font-size:17.5px;font-family:Gulim;letter-spacing:1.92857099;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1;-inkscape-font-specification:'Gulim, Normal';font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;"
+     letter-spacing="1.92857099"
+     font-weight="500"
+     font-size="18"
+     id="Users"
+     x="22"
+     y="23"
+     sodipodi:linespacing="125%">
+    <tspan
+       id="tspan427"
+       y="202"
+       x="898.42755"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:17.5px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">사용자</tspan>
+  </text>
+  <rect
+     style="fill:#8c9ba5;fill-rule:evenodd;stroke:none;stroke-width:1"
+     height="56"
+     width="193"
+     y="223"
+     x="1280"
+     id="rect429" />
+  <text
+     style="font-weight:500;font-size:18px;line-height:125%;font-family:IBMPlexSans-SemiBold, 'IBM Plex Sans';letter-spacing:1.92857099;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     letter-spacing="1.92857099"
+     font-weight="500"
+     font-size="18"
+     id="API-keys"
+     x="36"
+     y="23"
+     sodipodi:linespacing="125%">
+    <tspan
+       id="tspan432"
+       y="258"
+       x="1346.0928">API <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:Gulim;-inkscape-font-specification:'Gulim, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+   id="tspan5765">키</tspan>
+</tspan>
+  </text>
+  <rect
+     style="fill:#8c9ba5;fill-rule:evenodd;stroke:none;stroke-width:1"
+     height="56"
+     width="193"
+     y="91"
+     x="1278"
+     id="rect434" />
+  <text
+     style="font-weight:500;font-size:18px;font-family:IBMPlexSans-SemiBold, 'IBM Plex Sans';letter-spacing:1.92857099;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     letter-spacing="1.92857099"
+     font-weight="500"
+     font-size="18"
+     id="Service-IDs"
+     x="28"
+     y="23"
+     sodipodi:linespacing="125%">
+    <tspan
+       id="tspan437"
+       y="126"
+       x="1322.3458"><tspan
+   style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:17.5px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%"
+   id="tspan5767">서비스</tspan>
+ ID</tspan>
+  </text>
+  <text
+     style="font-weight:normal;font-size:13.99999976px;font-family:Gulim;fill:#5a6872;fill-rule:evenodd;stroke:none;stroke-width:1;-inkscape-font-specification:'Gulim, Normal';font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;"
+     font-weight="normal"
+     font-size="14"
+     id="access"
+     x="22"
+     y="782"
+     sodipodi:linespacing="125%">
+    <tspan
+       id="tspan441"
+       y="862"
+       x="99"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13.99999976px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">액세스</tspan>
+  </text>
+  <text
+     style="font-weight:normal;font-size:13.99999976px;font-family:Gulim;fill:#5a6872;fill-rule:evenodd;stroke:none;stroke-width:1;-inkscape-font-specification:'Gulim, Normal';font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;"
+     font-weight="normal"
+     font-size="14"
+     id="membership"
+     x="22"
+     y="782"
+     sodipodi:linespacing="125%">
+    <tspan
+       id="tspan444"
+       y="832"
+       x="99"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13.99999976px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">멤버십</tspan>
+  </text>
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#dfe3e6;stroke-width:2;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     id="path446"
+     d="m 23,783.26248 0,120.41309" />
+  <text
+     style="font-weight:normal;font-size:16.00000024px;font-family:Gulim;fill:#5a6872;fill-rule:evenodd;stroke:#000000;stroke-width:0.5;-inkscape-font-specification:'Gulim, Normal';font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     font-weight="bold"
+     font-size="16"
+     id="Key"
+     x="22"
+     y="782"
+     sodipodi:linespacing="125%">
+    <tspan
+       id="tspan449"
+       y="798"
+       x="48"
+       style="-inkscape-font-specification:'Gulim, Normal';font-family:Gulim;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:16.00000024px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;stroke:#000000;stroke-opacity:1;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none">키</tspan>
+  </text>
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square"
+     inkscape:connector-curvature="0"
+     id="path451"
+     d="m 48,831 24,0" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-dasharray:1, 5, 1, 1"
+     inkscape:connector-curvature="0"
+     id="Line-14-Copy"
+     d="m 48,861 24,0" />
+</svg>

@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2018
 
-lastupdated: "2018-05-01"
+lastupdated: "2018-07-11"
 
 ---
 
@@ -55,7 +55,7 @@ SoftLayer 中的鑑別現在使用 IBM ID 來提供所有 {{site.data.keyword.Bl
   * 若要使用現有的 IBM ID，請輸入使用者名稱，或唯一的 IBM ID 電子郵件位址（亦即，不是多個 IBM ID 所共用的）。
   * 若要建立新的 IBM ID，請輸入目前未被任何 IBM ID 使用的電子郵件位址。此電子郵件位址是 IBM ID 的使用者名稱，而且是在建立 IBM ID 之後傳送登錄碼的位置。您之後可以更新與 IBM ID 相關聯的電子郵件位址，但是無法變更使用者名稱。
 
-若要解決使用 IBM ID 進行登入的所有問題，請參閱 [{{site.data.keyword.Bluemix_notm}} 存取的疑難排解](/docs/troubleshoot/ts_accessing.html#accessing)。
+若要解決使用 IBM ID 進行登入的所有問題，請參閱 [{{site.data.keyword.Bluemix_notm}} 存取的疑難排解](/docs/account/ts_accessing.html#accessing)。
 
 
 ## 鏈結 IBM ID 帳戶
@@ -106,7 +106,7 @@ SoftLayer 中的鑑別現在使用 IBM ID 來提供所有 {{site.data.keyword.Bl
 此外，請注意鏈結帳戶之後的下列變更：
   * 您必須使用 IBM ID 認證來存取 SoftLayer 及 {{site.data.keyword.Bluemix_notm}} 帳戶。
   * 任何現有 SoftLayer 折扣都會套用至 {{site.data.keyword.Bluemix_notm}} 費用。
-  * 您收到一張計價單位為美元 (USD) 的發票。如果您有現有的 {{site.data.keyword.Bluemix_notm}} 帳戶，則會在鏈結帳戶之後開始的新計費週期，透過 {{site.data.keyword.Bluemix_notm}} 收取基礎架構資源的費用。如需相關資訊，請參閱[已鏈結帳戶的合併計費](/docs/account/linking_accounts.html)。
+  * 您收到一張計價單位為美元 (USD) 的發票。如果您有現有的 {{site.data.keyword.Bluemix_notm}} 帳戶，則會在鏈結帳戶之後開始的新計費週期，透過 {{site.data.keyword.Bluemix_notm}} 收取基礎架構資源的費用。如需相關資訊，請參閱[已鏈結帳戶的合併計費](/docs/billing-usage/linking_accounts.html)。
   * 您可以在 {{site.data.keyword.Bluemix_notm}} 主控台中監視基礎架構資源的用量。
 
 帳戶在鏈結之後，即無法解除鏈結。

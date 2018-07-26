@@ -190,4 +190,4 @@ IBM ID 鑑別服務可能有問題。
   * 使用瀏覽器的專用瀏覽模式。
   * 清除瀏覽器的 Cookie 及快取。
   * 使用不同的瀏覽器。如需 {{site.data.keyword.Bluemix_notm}} 所支援瀏覽器版本的相關資訊，請參閱 [{{site.data.keyword.Bluemix_notm}} 必要條件](/docs/overview/prereqs.html#prereqs)。
-  * 如果您已安裝 cf 指令行介面，請輸入 `cf apps` 指令，以查看您的應用程式是否正在執行中。
+  * 如果您已安裝 Cloud Foundry 指令行介面，請輸入 `cf apps` 指令，以查看您的應用程式是否正在執行中。

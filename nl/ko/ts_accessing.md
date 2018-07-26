@@ -191,4 +191,4 @@ IBM 인증 서비스에 문제점이 있을 수 있습니다.
   * 브라우저의 개인용 브라우징 모드를 사용하십시오.
   * 브라우저의 쿠키와 캐시를 지우십시오.
   * 다른 브라우저를 사용하십시오. {{site.data.keyword.Bluemix_notm}}에서 지원하는 브라우저 버전에 대한 정보는 [{{site.data.keyword.Bluemix_notm}} 필수 소프트웨어](/docs/overview/prereqs.html#prereqs)를 참조하십시오.
-  * cf 명령행 인터페이스를 설치한 경우 `cf apps` 명령을 입력하여 앱이 실행 중인지 확인하십시오.
+  * Cloud Foundry 명령행 인터페이스를 설치한 경우 `cf apps` 명령을 입력하여 앱이 실행 중인지 확인하십시오.
