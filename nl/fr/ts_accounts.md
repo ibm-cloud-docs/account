@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2017-11-09"
+lastupdated: "2018-07-16"
 
 ---
 
@@ -27,7 +27,7 @@ Vous pouvez rencontrer des problèmes d'ordre général lorsque vous gérez votr
 ## Impossible d'accéder à une région {{site.data.keyword.Bluemix_notm}} différente
 {: #nosecondreg}
 
-Vous recevez un message d'erreur lorsque vous tentez de créer une nouvelle région {{site.data.keyword.Bluemix_notm}}.
+Vous recevez un message d'erreur lorsque vous tentez de créer une région {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
 
 Il est probable que vous utilisez un compte Lite, lequel ne permet un développement que dans une seule région publique. La région {{site.data.keyword.Bluemix_notm}} publique dans laquelle vous désirez travailler est sélectionnée lors de la configuration initiale du compte.
@@ -39,7 +39,7 @@ Si vous utilisez un compte Lite, vous pouvez effectuer une mise à niveau vers u
 ## Impossible de créer une nouvelle organisation
 {: #nosecondorg}
 
-Vous recevez un message d'erreur lorsque vous tentez de créer une nouvelle organisation.
+Vous recevez un message d'erreur lorsque vous tentez de créer une organisation.
 {: tsSymptoms}
 
 Il est probable que vous utilisez un compte Lite, lequel ne permet un développement que dans une seule organisation. Votre organisation est créée lors de la configuration initiale de votre compte.
@@ -152,7 +152,7 @@ Pour créer un espace, appliquez l'une des méthodes suivantes :
 {: tsResolve}
 
   * Dans la barre de menus de la console, sélectionnez **Gérer > Compte > Organisations**. Ensuite, sélectionnez l'organisation dans laquelle vous voulez créer l'espace, puis cliquez sur **Créer un espace**.
-  * Dans l'interface de ligne de commande cf, entrez `cf create-space <space_name> -o <organization_name>`.
+  * Dans l'interface de ligne de commande Cloud Foundry, entrez `cf create-space <space_name> -o <organization_name>`.
 
 
 ## Les applications partagent le même nom de domaine
@@ -180,13 +180,13 @@ En tant qu'administrateur, vous ne pouvez pas afficher toutes les organisations 
 Il s'agit d'une limitation de l'interface utilisateur {{site.data.keyword.Bluemix_notm}}.
 {: tsCauses}
 
-Vous pouvez utiliser des commandes telles que `cf orgs`, `cf create-org` et `cf delete-org` à partir de l'interface de ligne de commande cf pour gérer toutes les organisations. Pour obtenir une liste complète des commandes cf, entrez `cf help`.
+Vous pouvez utiliser des commandes telles que `cf orgs`, `cf create-org` et `cf delete-org` à partir de l'interface de ligne de commande Cloud Foundry pour gérer toutes les organisations. Pour obtenir une liste complète des commandes cf, entrez `cf help`.
 {: tsResolve}
 
 ## La carte de crédit ne peut pas être ajoutée
 {: #ts_addcc}
 
-Vous ne pouvez pas soumettre vos informations de carte de crédit pour convertir votre compte d'essai en compte Paiement à la carte.
+Vous ne pouvez pas soumettre vos informations de carte de crédit pour convertir votre compte Lite en compte facturable.
 
 Le bouton **Soumettre** sur la page Ajout d'une carte de crédit est désactivé.
 {: tsSymptoms}

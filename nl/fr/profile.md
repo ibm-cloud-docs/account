@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-04-06"
+lastupdated: "2018-07-10"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-04-06"
 # Configuration de votre profil
 {: #usersettings}
 
-Lorsque vous commencez à utiliser {{site.data.keyword.Bluemix}}, configurez votre profil de compte. Sélectionnez l'icône **{{site.data.keyword.avatar}}** ![Icône d'avatar](../icons/i-avatar-icon.svg) &gt; **Afficher le profil** pour définir ou mettre à jour vos paramètres de profil.
+Lorsque vous commencez à utiliser {{site.data.keyword.Bluemix}}, configurez votre profil de compte. Sélectionnez l'icône **{{site.data.keyword.avatar}}** ![Icône Avatar](../icons/i-avatar-icon.svg) &gt; **Profil et compte** pour définir ou mettre à jour vos paramètres de profil.
 {:shortdesc}
 
 Vous pouvez définir ou mettre à jour les informations suivantes :
@@ -33,7 +33,7 @@ Si vous êtes l'administrateur d'un environnement {{site.data.keyword.Bluemix_lo
 ## Modification de la photo de votre profil
 {: #photo notoc}
 
-Cliquez sur l'icône **{{site.data.keyword.avatar}}** ![icône Avatar](../icons/i-avatar-icon.svg) &gt; **Afficher le profil**.
+Sélectionnez l'icône **{{site.data.keyword.avatar}}** ![Icône Avatar](../icons/i-avatar-icon.svg) &gt; **Profil et compte**.
 
   * Pour ajouter une photo, cliquez sur **Télécharger une photo**.
   * Pour remplacer votre photo actuelle par une autre, cliquez sur **Changer de photo**.
@@ -47,7 +47,7 @@ fonctions d'infrastructure, de services et d'application. Il est identique à l'
 
 Vous ne pouvez pas changer votre IBMid, mais vous pouvez éditer vos informations de profil qui lui sont associées, comme votre nom, votre adresse électronique, votre numéro de téléphone, votre mot de passe ou le nom de votre société.
 
-1. Cliquez sur l'icône **{{site.data.keyword.avatar}}** ![icône Avatar](../icons/i-avatar-icon.svg) &gt; **Afficher le profil**.
+1. Sélectionnez l'icône **{{site.data.keyword.avatar}}** ![Icône Avatar](../icons/i-avatar-icon.svg) &gt; **Profil et compte**.
 2. Cliquez sur l'option permettant d'**éditer votre IBMid**.
 3. Editez vos informations utilisateur.
 4. Cliquez sur **Sauvegarder**.
@@ -62,5 +62,5 @@ Si vous choisissez de désactiver le suivi, il se peut que vous ne puissiez pas 
 
 Afin de désactiver le suivi pour analyse, procédez comme suit :
 
-1. Cliquez sur l'icône **{{site.data.keyword.avatar}}** ![icône Avatar](../icons/i-avatar-icon.svg) &gt; **Afficher le profil**.
+1. Sélectionnez l'icône **{{site.data.keyword.avatar}}** ![Icône Avatar](../icons/i-avatar-icon.svg) &gt; **Profil et compte**.
 2. Désactivez le suivi pour analyse en spécifiant **off**.

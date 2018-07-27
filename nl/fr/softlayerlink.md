@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2018
 
-lastupdated: "2018-05-01"
+lastupdated: "2018-07-11"
 
 ---
 
@@ -55,7 +55,7 @@ Si vous êtes un nouveau client, vous êtes invité à entrer votre IBMid ou à 
   * Pour utiliser un IBMid existant, entrez le nom d'utilisateur ou l'adresse électronique de l'IBMid, si ces informations sont uniques (c'est-à-dire si elles ne sont pas partagées par plusieurs IBMid).
   * Pour créer un IBMid, entrez une adresse électronique qui n'est utilisée par aucun IBMid. Elle servira de nom d'utilisateur pour l'IBMid et votre code d'enregistrement sera envoyé à cette adresse une fois l'IBMid créé. Vous pouvez mettre l'adresse électronique à jour ultérieurement mais vous ne pouvez pas changer le nom d'utilisateur.
 
-Afin de résoudre les problèmes liés à la connexion avec votre IBMid, voir [Traitement des incidents liés à l'accès à {{site.data.keyword.Bluemix_notm}}](/docs/troubleshoot/ts_accessing.html#accessing).
+Afin de résoudre les problèmes liés à la connexion avec votre IBMid, voir [Traitement des incidents liés à l'accès à {{site.data.keyword.Bluemix_notm}}](/docs/account/ts_accessing.html#accessing).
 
 
 ## Liaison de comptes IBMid
@@ -107,7 +107,7 @@ De plus, tenez compte des changements suivants après la liaison de vos comptes 
   * Vous devez utiliser vos données d'identification IBMid pour accéder à votre compte SoftLayer et à votre compte
 {{site.data.keyword.Bluemix_notm}}.
   * Les remises SoftLayer existantes sont appliquées à tous les prix {{site.data.keyword.Bluemix_notm}}.
-  * Vous recevez une facture en dollars américains (USD). Si vous disposez d'un compte {{site.data.keyword.Bluemix_notm}}, la facturation via {{site.data.keyword.Bluemix_notm}} pour les ressources d'infrastructure entre en vigueur au prochain cycle de facturation après que les comptes ont été liés. Pour plus d'informations, voir [Facturation en bloc pour des comptes liés](/docs/account/linking_accounts.html).
+  * Vous recevez une facture en dollars américains (USD). Si vous disposez d'un compte {{site.data.keyword.Bluemix_notm}}, la facturation via {{site.data.keyword.Bluemix_notm}} pour les ressources d'infrastructure entre en vigueur au prochain cycle de facturation après que les comptes ont été liés. Pour plus d'informations, voir [Facturation en bloc pour des comptes liés](/docs/billing-usage/linking_accounts.html).
   * Vous pouvez surveiller l'utilisation de vos ressources d'infrastructure dans la console {{site.data.keyword.Bluemix_notm}}.
 
 Une fois vos comptes liés, cette opération est irréversible.

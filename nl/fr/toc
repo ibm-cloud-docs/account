@@ -6,6 +6,7 @@ Gestion de votre compte
 
     {: .navgroup id="learn"}
     [Meilleures pratiques pour organiser des utilisateurs, des équipes et des applications](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
+    account_overview.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}

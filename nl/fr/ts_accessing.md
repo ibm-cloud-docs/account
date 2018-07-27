@@ -192,4 +192,4 @@ Effectuez une ou plusieurs des actions suivantes :
   * Utilisez le mode de navigation privée de votre navigateur.
   * Effacez les cookies et le cache du navigateur.
   * Utilisez un navigateur différent. Pour plus d'informations sur les versions des navigateurs qui sont prises en charge par {{site.data.keyword.Bluemix_notm}}, voir [Prérequis {{site.data.keyword.Bluemix_notm}}](/docs/overview/prereqs.html#prereqs).
-  * Si vous avez installé l'interface de ligne de commande cf, entrez la commande `cf apps` pour déterminer si votre application est en cours d'exécution.
+  * Si vous avez installé l'interface de ligne de commande Cloud Foundry, entrez la commande `cf apps` pour déterminer si votre application est en cours d'exécution.
