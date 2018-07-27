@@ -190,4 +190,4 @@ IBM 标识认证服务可能发生问题。
   * 使用浏览器的隐私浏览模式。
   * 清除浏览器的 cookie 和高速缓存。
   * 使用其他浏览器。有关 {{site.data.keyword.Bluemix_notm}} 支持的浏览器版本的信息，请参阅 [{{site.data.keyword.Bluemix_notm}} 先决条件](/docs/overview/prereqs.html#prereqs)。
-  * 如果安装了 cf 命令行界面，请输入 `cf apps` 命令以查看应用程序是否正在运行。
+  * 如果安装了 Cloud Foundry 命令行界面，请输入 `cf apps` 命令以查看应用程序是否正在运行。

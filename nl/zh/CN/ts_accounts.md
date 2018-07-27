@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2017-11-09"
+lastupdated: "2018-07-16"
 
 ---
 
@@ -152,7 +152,7 @@ lastupdated: "2017-11-09"
 {: tsResolve}
 
   * 在控制台菜单栏中，单击**管理 > 帐户 > 组织**。然后，选择要在其中创建空间的组织，并单击**创建空间**。
-  * 在 cf 命令行界面中，输入 `cf create-space <space_name> -o <organization_name>`.
+  * 在 Cloud Foundry 命令行界面中，输入 `cf create-space <space_name> -o <organization_name>`.
 
 
 ## 应用程序共享相同的域名
@@ -180,13 +180,13 @@ lastupdated: "2017-11-09"
 这是 {{site.data.keyword.Bluemix_notm}} 用户界面的限制。
 {: tsCauses}
 
-您可以通过 cf 命令行界面，使用命令（如 `cf orgs`、`cf create-org` 和 `cf delete-org`）来管理所有组织。要想获取 cf 命令的完整清单，请输入 `cf help`。
+您可以通过 Cloud Foundry 命令行界面，使用命令（如 `cf orgs`、`cf create-org` 和 `cf delete-org`）来管理所有组织。要想获取 cf 命令的完整清单，请输入 `cf help`。
 {: tsResolve}
 
 ## 无法添加信用卡
 {: #ts_addcc}
 
-无法提交信用卡信息以将试用帐户转换为“现买现付”帐户。
+无法提交信用卡信息以将轻量帐户转换为计费帐户。
 
 “添加信用卡”页面上的**提交**按钮已禁用。
 {: tsSymptoms}

@@ -1,0 +1,1626 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1676px"
+   height="927px"
+   viewBox="0 0 1676 927"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="account_diagram.svg">
+  <metadata
+     id="metadata456">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>CF-IAM-IMS_Diagram</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="838"
+     id="namedview454"
+     showgrid="false"
+     inkscape:zoom="1.0183387"
+     inkscape:cx="474.82561"
+     inkscape:cy="277.86034"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g11"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title4">CF-IAM-IMS_Diagram</title>
+  <desc
+     id="desc6">Created with Sketch.</desc>
+  <defs
+     id="defs8">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 463.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1676 : 463.5 : 1"
+       inkscape:persp3d-origin="838 : 309 : 1"
+       id="perspective458" />
+  </defs>
+  <g
+     id="CF-IAM-IMS_Diagram"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd">
+    <g
+       transform="translate(22.000000, 23.000000)"
+       id="g11">
+      <g
+         id="diagram">
+        <g
+           id="Group">
+          <g
+             id="arrows"
+             transform="translate(371.000000, 262.000000)"
+             fill="#000000"
+             stroke="#000000"
+             stroke-linecap="square">
+            <path
+               d="M200.5,1.5 L8.5,1.5"
+               id="Line-13"
+               stroke-dasharray="1,5,1,1" />
+            <path
+               d="M7.51664819,1 L0,1"
+               id="Line-23" />
+            <path
+               id="Line-23-decoration-1"
+               d="M0,1 L10.8,4 L10.8,-2 L0,1 Z" />
+          </g>
+          <g
+             id="Group-27"
+             transform="translate(735.000000, 286.000000)"
+             fill="#000000"
+             stroke="#000000"
+             stroke-linecap="square">
+            <path
+               d="M1.5,0.5 L1.5,98.5"
+               id="Line-10"
+               stroke-dasharray="1,5,1,1" />
+            <path
+               d="M1.5,102.582763 L1.5,101.582763"
+               id="Line-9" />
+            <path
+               id="Line-9-decoration-1"
+               d="M1.5,102.582763 L-1.5,91.7827625 L4.5,91.7827625 L1.5,102.582763 Z" />
+          </g>
+          <rect
+             id="Rectangle-1"
+             fill="#8C9BA5"
+             x="808"
+             y="0"
+             width="193"
+             height="56" />
+          <text
+             id="Account"
+             font-size="18"
+             font-weight="500"
+             letter-spacing="1.92857099"
+             x="24"
+             style="font-size:18px;font-weight:500;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans-SemiBold, IBM Plex Sans'">
+            <tspan
+               x="888.04102"
+               y="35"
+               id="tspan25"
+               style="font-family:SimHei;-inkscape-font-specification:SimHei">帐户</tspan>
+          </text>
+          <rect
+             id="rect27"
+             fill="#8C9BA5"
+             x="572"
+             y="230"
+             width="193"
+             height="56" />
+          <text
+             id="Access-groups"
+             font-size="18"
+             font-weight="500"
+             letter-spacing="1.92857099"
+             x="40"
+             style="font-size:18px;font-weight:500;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans-SemiBold, IBM Plex Sans'">
+            <tspan
+               x="636.0603"
+               y="265"
+               id="tspan30"
+               style="font-family:SimHei;-inkscape-font-specification:SimHei">访问组</tspan>
+          </text>
+          <rect
+             id="rect32"
+             fill="#8C9BA5"
+             x="174"
+             y="235"
+             width="193"
+             height="56" />
+          <text
+             id="Services"
+             font-size="18"
+             font-weight="500"
+             letter-spacing="1.92857099"
+             x="22"
+             style="font-size:18px;font-weight:500;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans-SemiBold, IBM Plex Sans'">
+            <tspan
+               x="249.37071"
+               y="270"
+               id="tspan35"
+               style="font-family:SimHei;-inkscape-font-specification:SimHei">服务</tspan>
+          </text>
+          <rect
+             id="rect37"
+             fill="#F0F3F6"
+             x="71"
+             y="402"
+             width="397"
+             height="271" />
+          <rect
+             id="rect39"
+             fill="#F0F3F6"
+             x="708"
+             y="393"
+             width="397"
+             height="271" />
+          <rect
+             id="rect41"
+             fill="#F0F3F6"
+             x="1156"
+             y="392"
+             width="397"
+             height="271" />
+          <rect
+             id="rect43"
+             fill-opacity="0.5"
+             fill="#3D70B2"
+             x="185"
+             y="440"
+             width="159"
+             height="56" />
+          <text
+             id="Organization"
+             font-size="14"
+             font-weight="400"
+             letter-spacing="1.5"
+             x="36"
+             style="font-size:14px;font-weight:400;letter-spacing:1.5;fill:#000000;font-family:'IBMPlexSans-Medium, IBM Plex Sans'">
+            <tspan
+               x="251.323"
+               y="473"
+               id="tspan46"
+               style="font-family:SimHei;-inkscape-font-specification:SimHei">组织</tspan>
+          </text>
+          <g
+             id="Group-5"
+             transform="translate(105.000000, 556.000000)">
+            <rect
+               id="rect49"
+               fill="#5596E6"
+               x="0"
+               y="0"
+               width="128"
+               height="41" />
+            <text
+               id="Space"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.5"
+               x="10"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.5;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="51.063"
+                 y="26"
+                 id="tspan52"
+                 style="font-family:SimHei;-inkscape-font-specification:SimHei">空间</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-4"
+             transform="translate(297.000000, 556.000000)">
+            <rect
+               id="rect55"
+               fill="#5596E6"
+               x="0"
+               y="0"
+               width="128"
+               height="41" />
+            <text
+               id="text57"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.5"
+               x="8"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.5;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="49.063"
+                 y="26"
+                 id="tspan59"
+                 style="font-family:SimHei;-inkscape-font-specification:SimHei">空间</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-2"
+             transform="translate(81.000000, 628.000000)">
+            <rect
+               id="rect62"
+               fill="#5AAAFA"
+               x="0"
+               y="0"
+               width="82"
+               height="32" />
+            <text
+               id="Resource"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="20"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="25.406715"
+                 y="21"
+                 id="tspan65"
+                 style="font-family:SimHei;-inkscape-font-specification:SimHei">资源</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-6"
+             transform="translate(279.000000, 628.000000)">
+            <rect
+               id="rect68"
+               fill="#5AAAFA"
+               x="0"
+               y="0"
+               width="82"
+               height="32" />
+            <text
+               id="text70"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="20"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="24.406715"
+                 y="21"
+                 id="tspan72"
+                 style="font-family:SimHei;-inkscape-font-specification:SimHei">资源</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-7"
+             transform="translate(373.000000, 628.000000)">
+            <rect
+               id="rect75"
+               fill="#5AAAFA"
+               x="0"
+               y="0"
+               width="82"
+               height="32" />
+            <text
+               id="text77"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="20"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="24.406715"
+                 y="21"
+                 id="tspan79"
+                 style="font-family:SimHei;-inkscape-font-specification:SimHei">资源</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-9"
+             transform="translate(745.000000, 495.000000)">
+            <rect
+               id="rect82"
+               fill="#5AAAFA"
+               x="0"
+               y="0"
+               width="82"
+               height="32" />
+            <text
+               id="text84"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="20"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="24.406715"
+                 y="21"
+                 id="tspan86"
+                 style="font-family:SimHei;-inkscape-font-specification:SimHei">资源</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-10"
+             transform="translate(745.000000, 546.000000)">
+            <rect
+               id="rect89"
+               fill="#5AAAFA"
+               x="0"
+               y="0"
+               width="82"
+               height="32" />
+            <text
+               id="text91"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="20"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="24.406715"
+                 y="21"
+                 id="tspan93"
+                 style="font-family:SimHei;-inkscape-font-specification:SimHei">资源</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-11"
+             transform="translate(745.000000, 596.000000)">
+            <rect
+               id="rect96"
+               fill="#5AAAFA"
+               x="0"
+               y="0"
+               width="82"
+               height="32" />
+            <text
+               id="text98"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="20"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="24.406715"
+                 y="21"
+                 id="tspan100"
+                 style="font-family:SimHei;-inkscape-font-specification:SimHei">资源</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-14"
+             transform="translate(864.000000, 495.000000)">
+            <rect
+               id="rect103"
+               fill="#5AAAFA"
+               x="0"
+               y="0"
+               width="82"
+               height="32" />
+            <text
+               id="text105"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="20"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="24.406715"
+                 y="21"
+                 id="tspan107"
+                 style="font-family:SimHei;-inkscape-font-specification:SimHei">资源</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-13"
+             transform="translate(864.000000, 546.000000)">
+            <rect
+               id="rect110"
+               fill="#5AAAFA"
+               x="0"
+               y="0"
+               width="82"
+               height="32" />
+            <text
+               id="text112"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="20"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="24.406715"
+                 y="21"
+                 id="tspan114"
+                 style="font-family:SimHei;-inkscape-font-specification:SimHei">资源</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-12"
+             transform="translate(864.000000, 596.000000)">
+            <rect
+               id="rect117"
+               fill="#5AAAFA"
+               x="0"
+               y="0"
+               width="82"
+               height="32" />
+            <text
+               id="text119"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="20"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="24.406715"
+                 y="21"
+                 id="tspan121"
+                 style="font-family:SimHei;-inkscape-font-specification:SimHei">资源</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-8"
+             transform="translate(745.000000, 445.000000)">
+            <rect
+               id="rect124"
+               fill="#5AAAFA"
+               x="0"
+               y="0"
+               width="82"
+               height="32" />
+            <text
+               id="text126"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="20"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="24.406715"
+                 y="21"
+                 id="tspan128"
+                 style="font-family:SimHei;-inkscape-font-specification:SimHei">资源</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-15"
+             transform="translate(864.000000, 445.000000)">
+            <rect
+               id="rect131"
+               fill="#5AAAFA"
+               x="0"
+               y="0"
+               width="82"
+               height="32" />
+            <text
+               id="text133"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="20"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="24.406715"
+                 y="21"
+                 id="tspan135"
+                 style="font-family:SimHei;-inkscape-font-specification:SimHei">资源</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-16"
+             transform="translate(982.000000, 445.000000)">
+            <rect
+               id="rect138"
+               fill="#5AAAFA"
+               x="0"
+               y="0"
+               width="82"
+               height="32" />
+            <text
+               id="text140"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="20"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="23.906715"
+                 y="21"
+                 id="tspan142"
+                 style="font-family:SimHei;-inkscape-font-specification:SimHei">资源</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-17"
+             transform="translate(982.000000, 495.000000)">
+            <rect
+               id="rect145"
+               fill="#5AAAFA"
+               x="0"
+               y="0"
+               width="82"
+               height="32" />
+            <text
+               id="text147"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="20"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="24.406715"
+                 y="21"
+                 id="tspan149"
+                 style="font-family:SimHei;-inkscape-font-specification:SimHei">资源</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-18"
+             transform="translate(982.000000, 546.000000)">
+            <rect
+               id="rect152"
+               fill="#5AAAFA"
+               x="0"
+               y="0"
+               width="82"
+               height="32" />
+            <text
+               id="text154"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="20"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="24.406715"
+                 y="21"
+                 id="tspan156"
+                 style="font-family:SimHei;-inkscape-font-specification:SimHei">资源</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-19"
+             transform="translate(982.000000, 596.000000)">
+            <rect
+               id="rect159"
+               fill="#5AAAFA"
+               x="0"
+               y="0"
+               width="82"
+               height="32" />
+            <text
+               id="text161"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="20"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="24.406715"
+                 y="21"
+                 id="tspan163"
+                 style="font-family:SimHei;-inkscape-font-specification:SimHei">资源</tspan>
+            </text>
+          </g>
+          <g
+             id="Group-3"
+             transform="translate(175.000000, 628.000000)">
+            <rect
+               id="rect166"
+               fill="#5AAAFA"
+               x="0"
+               y="0"
+               width="82"
+               height="32" />
+            <text
+               id="text168"
+               font-size="14"
+               font-weight="normal"
+               letter-spacing="1.92857099"
+               x="20"
+               style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+              <tspan
+                 x="24.406715"
+                 y="21"
+                 id="tspan170"
+                 style="font-family:SimHei;-inkscape-font-specification:SimHei">资源</tspan>
+            </text>
+          </g>
+          <rect
+             id="rect172"
+             fill-opacity="0.75"
+             fill="#3D70B2"
+             x="1183"
+             y="436"
+             width="163"
+             height="56" />
+          <rect
+             id="rect174"
+             fill-opacity="0.75"
+             fill="#3D70B2"
+             x="1183"
+             y="509"
+             width="163"
+             height="56" />
+          <rect
+             id="rect176"
+             fill-opacity="0.75"
+             fill="#3D70B2"
+             x="1183"
+             y="582"
+             width="163"
+             height="56" />
+          <rect
+             id="rect178"
+             fill-opacity="0.75"
+             fill="#3D70B2"
+             x="1368"
+             y="582"
+             width="163"
+             height="56" />
+          <rect
+             id="rect180"
+             fill-opacity="0.75"
+             fill="#3D70B2"
+             x="1368"
+             y="509"
+             width="163"
+             height="56" />
+          <rect
+             id="rect182"
+             fill-opacity="0.75"
+             fill="#3D70B2"
+             x="1368"
+             y="436"
+             width="163"
+             height="56" />
+          <text
+             id="Purchasing-/-Provisi"
+             font-size="14"
+             font-weight="normal"
+             letter-spacing="1.92857099"
+             x="30"
+             style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+            <tspan
+               x="1244.2776"
+               y="460"
+               id="tspan185"><tspan
+   style="font-family:SimHei;-inkscape-font-specification:SimHei"
+   id="tspan3276">购买</tspan>
+/</tspan>
+            <tspan
+               x="1224.3711"
+               y="478"
+               id="tspan187"><tspan
+   style="font-family:SimHei;-inkscape-font-specification:SimHei"
+   id="tspan3278">供应</tspan>
+ IaaS</tspan>
+          </text>
+          <text
+             id="Monitoring-IaaS"
+             font-size="14"
+             font-weight="normal"
+             letter-spacing="1.92857099"
+             x="8"
+             style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'"
+             y="10">
+            <tspan
+               x="1414.1941"
+               y="470"
+               id="tspan190"><tspan
+   style="font-family:SimHei;-inkscape-font-specification:SimHei"
+   id="tspan3282">监视</tspan>
+IaaS</tspan>
+          </text>
+          <text
+             id="Configuration-of-Iaa"
+             font-size="14"
+             font-weight="normal"
+             letter-spacing="1.92857099"
+             x="16"
+             style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'"
+             y="10">
+            <tspan
+               x="1227.1906"
+               y="543"
+               id="tspan195"><tspan
+   style="font-family:SimHei;-inkscape-font-specification:SimHei"
+   id="tspan3284">配置</tspan>
+IaaS</tspan>
+          </text>
+          <text
+             id="Invoices"
+             font-size="14"
+             font-weight="normal"
+             letter-spacing="1.92857099"
+             x="16"
+             style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+            <tspan
+               x="1246.2767"
+               y="615"
+               id="tspan200"
+               style="font-family:SimHei;-inkscape-font-specification:SimHei">发票</tspan>
+          </text>
+          <text
+             id="Support"
+             font-size="14"
+             font-weight="normal"
+             letter-spacing="1.92857099"
+             x="14"
+             style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+            <tspan
+               x="1432.113"
+               y="542"
+               id="tspan203"
+               style="font-family:SimHei;-inkscape-font-specification:SimHei">支持</tspan>
+          </text>
+          <text
+             id="Billing"
+             font-size="14"
+             font-weight="normal"
+             letter-spacing="1.92857099"
+             x="8"
+             style="font-size:14px;font-weight:normal;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans, IBM Plex Sans'">
+            <tspan
+               x="1431.234"
+               y="615"
+               id="tspan206"
+               style="font-family:SimHei;-inkscape-font-specification:SimHei">计费</tspan>
+          </text>
+          <path
+             d="M904.5,56.5 L904.5,137.5"
+             id="Line"
+             stroke="#000000"
+             fill="#000000"
+             stroke-linecap="square" />
+          <path
+             id="Line-decoration-1"
+             d="M904.5,137.5 L907.5,126.7 L901.5,126.7 L904.5,137.5 Z"
+             stroke="#000000"
+             fill="#000000"
+             stroke-linecap="square" />
+          <path
+             d="M1352,123.5 L1352,196"
+             id="path210"
+             stroke="#000000"
+             fill="#000000"
+             stroke-linecap="square" />
+          <path
+             id="path212"
+             d="M1352,196 L1355,185.2 L1349,185.2 L1352,196 Z"
+             stroke="#000000"
+             fill="#000000"
+             stroke-linecap="square" />
+          <text
+             id="Infrastructure-Custo"
+             font-size="16"
+             font-weight="400"
+             letter-spacing="2.20408106"
+             x="76"
+             style="font-size:16px;font-weight:400;letter-spacing:2.20408106;fill:#000000;font-family:'IBMPlexSans-Medium, IBM Plex Sans'">
+            <tspan
+               x="1249.0525"
+               y="418"
+               id="tspan215"
+               style="font-family:SimHei;-inkscape-font-specification:SimHei">基础架构客户门户网站访问</tspan>
+          </text>
+          <text
+             id="Resource-Group"
+             font-size="16"
+             font-weight="400"
+             letter-spacing="2.20408106"
+             x="50"
+             style="font-size:16px;font-weight:400;letter-spacing:2.20408106;fill:#000000;font-family:'IBMPlexSans-Medium, IBM Plex Sans'">
+            <tspan
+               x="880.45544"
+               y="418"
+               id="tspan218"
+               style="font-family:SimHei;-inkscape-font-specification:SimHei">资源组</tspan>
+          </text>
+          <text
+             id="Cloud-Foundry"
+             font-family="IBMPlexSans-Medium, IBM Plex Sans"
+             font-size="16"
+             font-weight="400"
+             letter-spacing="2.20408106"
+             fill="#000000">
+            <tspan
+               x="202.433473"
+               y="425"
+               id="tspan221">Cloud Foundry</tspan>
+          </text>
+          <path
+             d="M159.5,603.5 L122.5,623.5"
+             id="Line-4"
+             stroke="#000000"
+             fill="#000000"
+             stroke-linecap="square" />
+          <path
+             id="Line-4-decoration-1"
+             d="M122.5,623.5 L133.427381,621.003536 L130.574279,615.725296 L122.5,623.5 Z"
+             stroke="#000000"
+             fill="#000000"
+             stroke-linecap="square" />
+          <path
+             d="M351.5,603.5 L314.5,623.5"
+             id="path225"
+             stroke="#000000"
+             fill="#000000"
+             stroke-linecap="square" />
+          <path
+             id="path227"
+             d="M314.5,623.5 L325.427381,621.003536 L322.574279,615.725296 L314.5,623.5 Z"
+             stroke="#000000"
+             fill="#000000"
+             stroke-linecap="square" />
+          <path
+             d="M180.5,603.5 L212.5,623.5"
+             id="Line-5"
+             stroke="#000000"
+             fill="#000000"
+             stroke-linecap="square" />
+          <path
+             id="Line-5-decoration-1"
+             d="M212.5,623.5 L204.931615,615.232017 L201.751621,620.320006 L212.5,623.5 Z"
+             stroke="#000000"
+             fill="#000000"
+             stroke-linecap="square" />
+          <path
+             d="M372.5,603.5 L404.5,623.5"
+             id="path231"
+             stroke="#000000"
+             fill="#000000"
+             stroke-linecap="square" />
+          <path
+             id="path233"
+             d="M404.5,623.5 L396.931615,615.232017 L393.751621,620.320006 L404.5,623.5 Z"
+             stroke="#000000"
+             fill="#000000"
+             stroke-linecap="square" />
+          <path
+             d="M256.432492,500 L199,551.288487"
+             id="path235"
+             stroke="#000000"
+             fill="#000000"
+             stroke-linecap="square" />
+          <path
+             id="path237"
+             d="M199,551.288487 L209.053719,546.332406 L205.057214,541.857147 L199,551.288487 Z"
+             stroke="#000000"
+             fill="#000000"
+             stroke-linecap="square" />
+          <path
+             d="M273,500 L329.5,550.5"
+             id="path239"
+             stroke="#000000"
+             fill="#000000"
+             stroke-linecap="square" />
+          <path
+             id="path241"
+             d="M329.5,550.5 L323.446895,541.066023 L319.44844,545.539541 L329.5,550.5 Z"
+             stroke="#000000"
+             fill="#000000"
+             stroke-linecap="square" />
+          <path
+             d="M836.5,264.5 L770.5,264.5"
+             id="Line-7"
+             stroke="#000000"
+             fill="#000000"
+             stroke-linecap="square" />
+          <path
+             id="Line-7-decoration-1"
+             d="M770.5,264.5 L781.3,267.5 L781.3,261.5 L770.5,264.5 Z"
+             stroke="#000000"
+             fill="#000000"
+             stroke-linecap="square" />
+          <g
+             id="Group-25"
+             transform="translate(906.000000, 199.000000)"
+             fill="#000000"
+             stroke="#000000"
+             stroke-linecap="square">
+            <path
+               d="M1.5,0.5 L1.5,181.5"
+               id="Line-8"
+               stroke-dasharray="1,5,1,1" />
+            <path
+               d="M1.5,189.582763 L1.5,188.582763"
+               id="path247" />
+            <path
+               id="path249"
+               d="M1.5,189.582763 L-1.5,178.782763 L4.5,178.782763 L1.5,189.582763 Z" />
+          </g>
+          <path
+             d="M269.5,291.5 L269.5,394.5"
+             id="Line-12"
+             stroke="#000000"
+             fill="#000000"
+             stroke-linecap="square" />
+          <path
+             id="Line-12-decoration-1"
+             d="M269.5,394.5 L272.5,383.7 L266.5,383.7 L269.5,394.5 Z"
+             stroke="#000000"
+             fill="#000000"
+             stroke-linecap="square" />
+          <path
+             d="M1631.5,725.5 L1633,727"
+             id="Line-17"
+             stroke="#979797"
+             stroke-linecap="square" />
+          <g
+             id="g254"
+             transform="translate(625.000000, 96.000000)"
+             stroke="#000000"
+             stroke-linecap="square">
+            <path
+               d="M824.5,1.5 L1006.5,1.5"
+               id="Line-15" />
+            <path
+               d="M1006.5,1.5 L1006.5,628.5"
+               id="Line-16" />
+            <path
+               d="M1006.4975,628.5 L1.50048751,628.5"
+               id="Line-18" />
+            <path
+               d="M1.5,628.5 L1.5,195.5"
+               id="Line-19"
+               fill="#000000" />
+            <path
+               id="Line-19-decoration-1"
+               d="M1.5,195.5 L-1.5,206.3 L4.5,206.3 L1.5,195.5 Z"
+               fill="#000000" />
+          </g>
+          <g
+             id="Group-20"
+             transform="translate(932.000000, 671.000000)"
+             fill="#000000"
+             stroke="#000000"
+             stroke-linecap="square">
+            <path
+               d="M1,54 L1,0"
+               id="path262"
+               stroke-dasharray="1,5,1,1" />
+            <path
+               d="M1,1 L1,0"
+               id="path264" />
+            <path
+               id="path266"
+               d="M1,0 L-2,10.8 L4,10.8 L1,0 Z" />
+          </g>
+          <g
+             id="Group-21"
+             transform="translate(1028.000000, 631.000000)"
+             fill="#000000"
+             stroke="#000000"
+             stroke-linecap="square">
+            <path
+               d="M1.5,93.5 L1.5,3.5"
+               id="Line-20"
+               stroke-dasharray="1,5,1,1" />
+            <path
+               d="M1.5,2.27032961 L1.5,1.27032961"
+               id="path270" />
+            <path
+               id="Line-20-decoration-1"
+               d="M1.5,1.27032961 L-1.5,12.0703296 L4.5,12.0703296 L1.5,1.27032961 Z" />
+          </g>
+          <g
+             id="g273"
+             transform="translate(266.000000, 184.000000)"
+             stroke="#000000"
+             stroke-linecap="square">
+            <path
+               d="M1.5,1.5 L1.5,37.5"
+               id="Line-6"
+               fill="#000000"
+               stroke-dasharray="1,5,1,1" />
+            <path
+               d="M1.5,46.5 L1.5,47.5"
+               id="path276"
+               fill="#000000" />
+            <path
+               id="Line-6-decoration-1"
+               d="M1.5,47.5 L4.5,36.7 L-1.5,36.7 L1.5,47.5 Z"
+               fill="#000000" />
+            <path
+               d="M541.5,1.5 L1.5,1.5"
+               id="Line-21"
+               stroke-dasharray="1,5,1,1" />
+          </g>
+          <g
+             id="g280"
+             transform="translate(15.000000, 166.000000)"
+             stroke="#000000"
+             stroke-linecap="square">
+            <path
+               d="M792.5,1.5 L1.5,1.5"
+               id="path282" />
+            <path
+               d="M1.5,1.5 L1.5,288.5"
+               id="Line-22" />
+            <path
+               d="M2.5,288.5 L164.5,288.5"
+               id="path285"
+               fill="#000000" />
+            <path
+               id="path287"
+               d="M164.5,288.5 L153.7,285.5 L153.7,291.5 L164.5,288.5 Z"
+               fill="#000000" />
+          </g>
+          <g
+             id="g289"
+             transform="translate(0.000000, 149.000000)"
+             stroke="#000000"
+             stroke-linecap="square">
+            <path
+               d="M808.5,1.5 L1.5,1.5"
+               id="path291"
+               stroke-dasharray="1,5,1,1" />
+            <path
+               d="M1.5,2.5 L1.5,425.5"
+               id="path293"
+               stroke-dasharray="1,5,1,1" />
+            <g
+               id="Group-23"
+               transform="translate(2.000000, 319.000000)"
+               fill="#000000">
+              <path
+                 d="M0.5,1.5 L175.5,1.5"
+                 id="path296"
+                 stroke-dasharray="1,5,1,1" />
+              <path
+                 d="M176.5,1.5 L177.5,1.5"
+                 id="path298" />
+              <path
+                 id="path300"
+                 d="M177.5,1.5 L166.7,-1.5 L166.7,4.5 L177.5,1.5 Z" />
+            </g>
+            <g
+               id="Group-22"
+               transform="translate(1.000000, 424.000000)"
+               fill="#000000">
+              <path
+                 d="M99.5,1.5 L100.5,1.5"
+                 id="path303" />
+              <path
+                 id="path305"
+                 d="M100.5,1.5 L89.7,-1.5 L89.7,4.5 L100.5,1.5 Z" />
+              <path
+                 d="M0.5,1.5 L91.5,1.5"
+                 id="path307"
+                 stroke-dasharray="1,5,1,1" />
+            </g>
+          </g>
+          <path
+             d="M172.5,259.5 L123.5,259.5"
+             id="Line-24"
+             stroke="#000000"
+             fill="#000000"
+             stroke-linecap="square" />
+          <path
+             id="Line-24-decoration-1"
+             d="M123.5,259.5 L134.3,262.5 L134.3,256.5 L123.5,259.5 Z"
+             stroke="#000000"
+             fill="#000000"
+             stroke-linecap="square" />
+          <g
+             id="g311"
+             transform="translate(1001.000000, 24.000000)"
+             stroke="#000000"
+             stroke-linecap="square">
+            <path
+               d="M346.5,1.5 L346.5,37.5"
+               id="Line-2"
+               fill="#000000" />
+            <path
+               id="Line-2-decoration-1"
+               d="M346.5,37.5 L349.5,26.7 L343.5,26.7 L346.5,37.5 Z"
+               fill="#000000" />
+            <path
+               d="M0.5,1.5 L345.5,1.5"
+               id="Line-25" />
+          </g>
+          <g
+             id="g316"
+             transform="translate(965.000000, 199.000000)"
+             stroke="#000000"
+             stroke-linecap="square">
+            <g
+               id="Group-24"
+               transform="translate(59.000000, 135.000000)"
+               fill="#000000">
+              <path
+                 d="M1.5,0.5 L1.5,96.5"
+                 id="path319"
+                 stroke-dasharray="1,5,1,1" />
+              <path
+                 d="M1.5,107.582763 L1.5,106.582763"
+                 id="path321" />
+              <path
+                 id="path323"
+                 d="M1.5,107.582763 L-1.5,96.7827625 L4.5,96.7827625 L1.5,107.582763 Z" />
+            </g>
+            <path
+               d="M60.5,135.5 L1.5,135.5"
+               id="Line-26"
+               stroke-dasharray="1,5,1,1" />
+            <path
+               d="M1.5,0.5 L1.5,135.5"
+               id="Line-27"
+               fill="#000000"
+               stroke-dasharray="1,5,1,1" />
+          </g>
+          <g
+             id="g327"
+             transform="translate(666.000000, 286.000000)"
+             fill="#000000"
+             stroke="#000000"
+             stroke-linecap="square">
+            <g
+               id="Group-28"
+               transform="translate(1.000000, 172.000000)">
+              <path
+                 d="M0.5,1.5 L65.5,1.5"
+                 id="Line-11"
+                 stroke-dasharray="1,5,1,1" />
+              <path
+                 d="M71,1 L72,1"
+                 id="path331" />
+              <path
+                 id="path333"
+                 d="M72,1 L61.2,-2 L61.2,4 L72,1 Z" />
+            </g>
+            <path
+               d="M1.5,0.5 L1.5,173.5"
+               id="path335"
+               stroke-dasharray="1,5,1,1" />
+          </g>
+          <path
+             d="M836.5,200.5 L836.5,264.5"
+             id="path337"
+             stroke="#000000"
+             fill="#000000"
+             stroke-linecap="square" />
+          <g
+             id="g339"
+             transform="translate(1000.000000, 165.000000)"
+             stroke="#000000"
+             stroke-linecap="square">
+            <path
+               d="M181.5,66.5 L250.5,66.5"
+               id="Line-3"
+               fill="#000000" />
+            <path
+               id="Line-3-decoration-1"
+               d="M250.5,66.5 L239.7,63.5 L239.7,69.5 L250.5,66.5 Z"
+               fill="#000000" />
+            <path
+               d="M181.5,1.5 L0.5,1.5"
+               id="path343" />
+            <path
+               d="M181.5,2.5 L181.5,65.5"
+               id="path345" />
+          </g>
+          <g
+             id="g347"
+             transform="translate(1000.000000, 183.000000)"
+             stroke="#000000"
+             stroke-linecap="square">
+            <g
+               id="Group-26"
+               transform="translate(254.000000, 139.000000)"
+               fill="#000000">
+              <path
+                 d="M1.5,63.5827625 L1.5,62.5827625"
+                 id="path350" />
+              <path
+                 id="path352"
+                 d="M1.5,63.5827625 L-1.5,52.7827625 L4.5,52.7827625 L1.5,63.5827625 Z" />
+              <path
+                 d="M1.5,0.5 L1.5,52.5"
+                 id="Line-14"
+                 stroke-dasharray="1,5,1,1" />
+            </g>
+            <path
+               d="M127.5,1.5 L0.5,1.5"
+               id="path355"
+               fill="#000000"
+               stroke-dasharray="1,5,1,1" />
+            <path
+               d="M255.5,138.5 L128.5,138.5"
+               id="path357"
+               stroke-dasharray="1,5,1,1" />
+            <path
+               d="M128.5,1.5 L128.5,138.5"
+               id="path359"
+               fill="#000000"
+               stroke-dasharray="1,5,1,1" />
+          </g>
+          <text
+             id="Users-are-a-member-o"
+             font-size="12"
+             font-weight="normal"
+             style="font-size:12px;font-weight:normal;fill:#46535e;fill-opacity:0.87955729;font-family:'IBMPlexSans, IBM Plex Sans'">
+            <tspan
+               x="21"
+               y="103"
+               id="tspan362"
+               style="font-family:SimHei;-inkscape-font-specification:SimHei">用户是组织的成员，</tspan>
+          </text>
+          <text
+             font-size="12"
+             font-weight="normal"
+             id="text3288"
+             style="font-size:12px;font-weight:normal;fill:#46535e;fill-opacity:0.87955729;font-family:'IBMPlexSans, IBM Plex Sans'">
+            <tspan
+               x="21"
+               y="118"
+               style="font-family:SimHei;-inkscape-font-specification:SimHei"
+               id="tspan3290">可以分配到组织内的空间，</tspan>
+          </text>
+          <text
+             font-family="IBMPlexSans, IBM Plex Sans"
+             font-size="12"
+             font-weight="normal"
+             fill="#46535E"
+             fill-opacity="0.879557292"
+             id="text3292">
+            <tspan
+               x="21"
+               y="132"
+               style="-inkscape-font-specification:SimHei;font-family:SimHei"
+               id="tspan3294">而不必具有组织角色。</tspan>
+          </text>
+          <text
+             id="Services-can-be-Clou"
+             font-size="12"
+             font-weight="normal"
+             style="font-size:12px;font-weight:normal;fill:#46535e;fill-opacity:0.87955729;font-family:'IBMPlexSans, IBM Plex Sans'"
+             y="6">
+            <tspan
+               x="31"
+               y="247"
+               id="tspan369"
+               style="font-family:SimHei;-inkscape-font-specification:SimHei">服务可以是基于</tspan>
+            <tspan
+               x="31"
+               y="260"
+               id="tspan371">Cloud Foundry<tspan
+   style="font-family:SimHei;-inkscape-font-specification:SimHei"
+   id="tspan3268">或</tspan>
+</tspan>
+          </text>
+          <text
+             font-size="12"
+             font-weight="normal"
+             id="text3296"
+             y="6"
+             style="font-size:12px;font-weight:normal;fill:#46535e;fill-opacity:0.87955729;font-family:'IBMPlexSans, IBM Plex Sans'">
+            <tspan
+               x="31"
+               y="274"
+               id="tspan3298"><tspan
+   style="font-family:SimHei;-inkscape-font-specification:SimHei"
+   id="tspan3300">基于资源组的服务</tspan>
+。</tspan>
+          </text>
+          <text
+             id="Access-can-be-grante"
+             font-size="12"
+             font-weight="normal"
+             style="font-size:12px;font-weight:normal;fill:#46535e;fill-opacity:0.87955729;font-family:'IBMPlexSans, IBM Plex Sans'">
+            <tspan
+               x="121"
+               y="335"
+               id="tspan378"
+               style="font-family:SimHei;-inkscape-font-specification:SimHei">只能通过空间角色授予对</tspan>
+          </text>
+          <text
+             font-family="IBMPlexSans, IBM Plex Sans"
+             font-size="12"
+             font-weight="normal"
+             fill="#46535E"
+             fill-opacity="0.879557292"
+             id="text3302">
+            <tspan
+               x="121"
+               y="350"
+               style="-inkscape-font-specification:SimHei;font-family:SimHei"
+               id="tspan3304">服务实例的</tspan>
+            <tspan
+               x="181"
+               y="350"
+               id="tspan382"><tspan
+   style="-inkscape-font-specification:SimHei;font-family:SimHei"
+   id="tspan3270">访问权</tspan>
+
+
+。</tspan>
+          </text>
+          <text
+             id="You-must-have-space"
+             font-size="12"
+             font-weight="normal"
+             style="font-size:12px;font-weight:normal;fill:#46535e;fill-opacity:0.92654551;font-family:'IBMPlexSans, IBM Plex Sans'"
+             y="16">
+            <tspan
+               x="91"
+               y="514"
+               id="tspan385"
+               style="font-family:SimHei;-inkscape-font-specification:SimHei">您必须具有空间角色</tspan>
+          </text>
+          <text
+             font-size="12"
+             font-weight="normal"
+             id="text3308"
+             y="16"
+             style="font-size:12px;font-weight:normal;fill:#46535e;fill-opacity:0.92654551;font-family:'IBMPlexSans, IBM Plex Sans'">
+            <tspan
+               x="91"
+               y="528"
+               style="font-family:SimHei;-inkscape-font-specification:SimHei"
+               id="tspan3310">才能访问</tspan>
+            <tspan
+               x="140"
+               y="528"
+               id="tspan391"><tspan
+   style="font-family:SimHei;-inkscape-font-specification:SimHei"
+   id="tspan3274">空间资源</tspan>
+。</tspan>
+          </text>
+          <text
+             id="Users-and-service-ID"
+             font-size="12"
+             font-weight="normal"
+             style="font-size:12px;font-weight:normal;fill:#46535e;fill-opacity:0.87955729;font-family:'IBMPlexSans, IBM Plex Sans'">
+            <tspan
+               x="754"
+               y="315"
+               id="tspan394"
+               style="font-family:SimHei;-inkscape-font-specification:SimHei">可以授予用户和服务标识对</tspan>
+          </text>
+          <text
+             font-family="IBMPlexSans, IBM Plex Sans"
+             font-size="12"
+             font-weight="normal"
+             fill="#46535E"
+             fill-opacity="0.879557292"
+             id="text3314">
+            <tspan
+               x="754"
+               y="330"
+               style="-inkscape-font-specification:SimHei;font-family:SimHei"
+               id="tspan3316">资源组中的单个资源或</tspan>
+            <tspan
+               x="754"
+               y="345"
+               id="tspan400"><tspan
+   style="-inkscape-font-specification:SimHei;font-family:SimHei"
+   id="tspan3272">所有资源的访问权</tspan>
+
+
+。</tspan>
+          </text>
+          <text
+             id="You-can-grant-granul"
+             font-size="12"
+             font-weight="normal"
+             style="font-size:12px;font-weight:normal;fill:#46535e;fill-opacity:0.87955729;font-family:'IBMPlexSans, IBM Plex Sans'">
+            <tspan
+               x="1273"
+               y="335"
+               id="tspan405"
+               style="font-family:SimHei;-inkscape-font-specification:SimHei">您可以授予对客户门户网站中功能的</tspan>
+          </text>
+          <text
+             font-size="12"
+             font-weight="normal"
+             id="text3326"
+             style="font-size:12px;font-weight:normal;fill:#46535e;fill-opacity:0.87955729;font-family:'IBMPlexSans, IBM Plex Sans'">
+            <tspan
+               x="1273"
+               y="350"
+               style="font-family:SimHei;-inkscape-font-specification:SimHei"
+               id="tspan3328">细颗粒度客户门户网站访问权，</tspan>
+          </text>
+          <text
+             font-size="12"
+             font-weight="normal"
+             style="font-size:12px;font-weight:normal;fill:#46535e;fill-opacity:0.87955729;font-family:'IBMPlexSans, IBM Plex Sans'"
+             id="text3097">
+            <tspan
+               x="1273"
+               y="364"
+               style="font-family:SimHei;-inkscape-font-specification:SimHei"
+               id="tspan3099">而不授予对设备本身的访问权。</tspan>
+          </text>
+          <text
+             font-family="IBMPlexSans, IBM Plex Sans"
+             font-size="12"
+             font-weight="normal"
+             fill="#46535E"
+             fill-opacity="0.879557292"
+             id="text3330">
+            <tspan
+               x="1273"
+               y="378"
+               style="-inkscape-font-specification:SimHei;font-family:SimHei"
+               id="tspan3332">设备访问控制在设备本身上进行处理。</tspan>
+          </text>
+          <text
+             id="Service-IDs-can-be-g"
+             font-size="12"
+             font-weight="normal"
+             style="font-size:12px;font-weight:normal;fill:#46535e;fill-opacity:0.87955729;font-family:'IBMPlexSans, IBM Plex Sans'">
+            <tspan
+               x="1464"
+               y="118"
+               id="tspan414"
+               style="font-family:SimHei;-inkscape-font-specification:SimHei">可以授予服务标识与基于</tspan>
+          </text>
+          <text
+             font-family="IBMPlexSans, IBM Plex Sans"
+             font-size="12"
+             font-weight="normal"
+             fill="#46535E"
+             fill-opacity="0.879557292"
+             id="text3320">
+            <tspan
+               x="1464"
+               y="133"
+               style="-inkscape-font-specification:SimHei;font-family:SimHei"
+               id="tspan3322">资源组的服务的用户相同的</tspan>
+            <tspan
+               x="1464"
+               y="148"
+               id="tspan422"><tspan
+   style="-inkscape-font-specification:SimHei;font-family:SimHei"
+   id="tspan3266">访问权</tspan>
+
+
+。</tspan>
+          </text>
+        </g>
+        <rect
+           id="rect424"
+           fill="#8C9BA5"
+           x="808"
+           y="144"
+           width="193"
+           height="56" />
+        <text
+           id="Users"
+           font-size="18"
+           font-weight="500"
+           letter-spacing="1.92857099"
+           x="8"
+           style="font-size:18px;font-weight:500;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans-SemiBold, IBM Plex Sans'">
+          <tspan
+             x="884.42755"
+             y="179"
+             id="tspan427"
+             style="font-family:SimHei;-inkscape-font-specification:SimHei">用户</tspan>
+        </text>
+        <rect
+           id="rect429"
+           fill="#8C9BA5"
+           x="1258"
+           y="200"
+           width="193"
+           height="56" />
+        <text
+           id="API-keys"
+           font-size="18"
+           font-weight="500"
+           letter-spacing="1.92857099"
+           x="4"
+           style="font-size:18px;font-weight:500;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans-SemiBold, IBM Plex Sans'">
+          <tspan
+             x="1314.0928"
+             y="235"
+             id="tspan432">API <tspan
+   style="font-family:SimHei;-inkscape-font-specification:SimHei"
+   id="tspan3264">密钥</tspan>
+</tspan>
+        </text>
+        <rect
+           id="rect434"
+           fill="#8C9BA5"
+           x="1256"
+           y="68"
+           width="193"
+           height="56" />
+        <text
+           id="Service-IDs"
+           font-size="18"
+           font-weight="500"
+           letter-spacing="1.92857099"
+           x="18"
+           style="font-size:18px;font-weight:500;letter-spacing:1.92857099;fill:#000000;font-family:'IBMPlexSans-SemiBold, IBM Plex Sans'">
+          <tspan
+             x="1312.3458"
+             y="103"
+             id="tspan437"
+             style="font-family:SimHei;-inkscape-font-specification:SimHei">服务标识</tspan>
+        </text>
+      </g>
+      <g
+         id="key"
+         transform="translate(0.000000, 759.000000)">
+        <text
+           id="access"
+           font-family="IBMPlexSans, IBM Plex Sans"
+           font-size="14"
+           font-weight="normal"
+           fill="#5A6872">
+          <tspan
+             x="77"
+             y="80"
+             id="tspan441"
+             style="-inkscape-font-specification:SimHei;font-family:SimHei">访问权</tspan>
+        </text>
+        <text
+           id="membership"
+           font-family="IBMPlexSans, IBM Plex Sans"
+           font-size="14"
+           font-weight="normal"
+           fill="#5A6872">
+          <tspan
+             x="77"
+             y="50"
+             id="tspan444"
+             style="-inkscape-font-specification:SimHei;font-family:SimHei">成员资格</tspan>
+        </text>
+        <path
+           d="M1,1.26247621 L1,121.675566"
+           id="path446"
+           stroke="#DFE3E6"
+           stroke-width="2"
+           stroke-linecap="square" />
+        <text
+           id="Key"
+           font-family="IBMPlexSans-Bold, IBM Plex Sans"
+           font-size="16"
+           font-weight="bold"
+           fill="#5A6872">
+          <tspan
+             x="26"
+             y="16"
+             id="tspan449"
+             style="-inkscape-font-specification:SimHei;font-family:SimHei">密钥</tspan>
+        </text>
+        <path
+           d="M26,49 L50,49"
+           id="path451"
+           stroke="#000000"
+           fill="#000000"
+           stroke-linecap="square" />
+        <path
+           d="M26,79 L50,79"
+           id="Line-14-Copy"
+           stroke="#000000"
+           fill="#000000"
+           stroke-linecap="square"
+           stroke-dasharray="1,5,1,1" />
+      </g>
+    </g>
+  </g>
+</svg>

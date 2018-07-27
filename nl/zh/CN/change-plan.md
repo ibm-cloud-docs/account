@@ -5,7 +5,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-02-07"
+lastupdated: "2018-07-17"
 
 ---
 
@@ -21,7 +21,7 @@ lastupdated: "2018-02-07"
 您可以在 {{site.data.keyword.Bluemix}} 的服务实例仪表板中更改服务套餐，前提是该服务支持套餐更改。
 {: shortdesc}
 
-如果您在查找有关升级帐户类型的详细信息，请参阅[如何升级或更改帐户类型？](/docs/account/account_faq.html#changeacct)。
+如果要查找有关升级帐户类型的详细信息，请参阅[如何升级或更改帐户类型？](/docs/account/account_faq.html#changeacct)。
 {: tip}
 
 只有特定服务才提供更改服务套餐的功能。如果服务支持套餐更改，那么服务实例仪表板的导航中会显示**套餐**选项。每个服务在套餐更改后都有一组不同的后续步骤要执行。
