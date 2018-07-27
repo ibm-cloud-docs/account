@@ -23,7 +23,7 @@ Ahora la autenticación en SoftLayer utiliza el IBMid para proporcionar un inici
 ## Cambio a IBMid
 {: #switchtoIBMid}
 
-Cuando empiece el proceso de cambiar a un IBMid, siempre podrá cancelar el proceso de cambio antes de finalizarlo. Sin embargo, cada vez que inicie una sesión, se mostrará el indicador para cambiar a un IBMid. Cada cuenta de SoftLayer que piense enlazar a la cuenta de {{site.data.keyword.Bluemix_notm}} debe ser propiedad de un IBMid exclusivo con una dirección de correo electrónico exclusiva.
+Cuando empiece el proceso de cambiar a un IBMid, siempre podrá cancelar el proceso de cambio antes de finalizarlo. Sin embargo, cada vez que inicie una sesión, se mostrará el indicador para cambiar a un IBMid. Cada cuenta de SoftLayer que tenga previsto enlazar a una cuenta de {{site.data.keyword.Bluemix_notm}} debe ser propiedad de un IBMid único con una dirección de correo electrónico exclusiva.
 
 Para cambiar desde su cuenta de SoftLayer existente a un IBMid, cree un IBMid y utilice el código de registro para confirmarlo.
 

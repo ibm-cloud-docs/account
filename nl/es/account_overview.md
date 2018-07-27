@@ -18,9 +18,9 @@ lastupdated: "2018-07-19"
 
 Su cuenta de {{site.data.keyword.Bluemix}} incluye varios componentes y sistemas que interactúan. El siguiente diagrama y la explicación de cada componente están pensados para ayudarle a comprender la interrelación o conexión entre ciertos componentes y cómo funciona el acceso en la cuenta. 
 
-![Diagrama de cuentas de {{site.data.keyword.Bluemix_notm}}](images/account_diagram.svg "Diagrama de cuentas de {{site.data.keyword.Bluemix_notm}}")
-
-Para ampliar el diagrama, [pulse aquí](https://console.stage1.bluemix.net/docs/api/content/account/images/account_diagram.svg).
+<a href="https://console.stage1.bluemix.net/docs/api/content/account/images/account_diagram.svg">
+  <img src="images/account_diagram.svg" alt="diagrama de cuenta">
+</a>
 
 Dentro del diagrama, hay dos conceptos principales correspondiente a la jerarquía de cuentas que debe comprender. El uso de líneas continuas y de líneas de puntos ayuda a mostrar que algunos componentes están contenidos dentro de otros; por ejemplo, los usuarios se añaden a grupos de usuarios o a organizaciones de Cloud Foundry. Sin embargo, algunos componentes interactúan con otros a fin de ofrecer acceso en lugar de pertenencia a grupo. Por ejemplo, se otorga a los usuarios acceso a grupos de recursos, pero no son miembros de un grupo de recursos del mismo modo que lo son de los grupos de acceso. Estos conceptos se explican en las secciones siguientes.
 
@@ -47,4 +47,4 @@ Otro aspecto importante del diagrama es la representación de los tres tipos de 
 
 * Los [roles de acceso](/docs/iam/users_roles.html#iamusermanrol) de IAM se utilizan para otorgar a los usuarios acceso a todos los recursos pertenecientes a un grupo de recursos. Estos roles de acceso también se utilizan para otorgar a los usuarios acceso para gestionar grupos de recursos y para crear nuevas instancias de servicio que se asignan a un recurso.
 * Los [roles de organización y de espacio](/docs/iam/cfaccess.html#cfroles) de Cloud Foundry se utilizan para otorgar a los usuarios acceso a cualquier instancia de servicio que resida en un espacio de Cloud Foundry.
-* También dispone de permisos del [portal del cliente](/docs/customer-portal/cpwhatis.html#customerportal_whatisCP) de la infraestructura para otorgar a los usuarios [permisos](/docs/iam/infrastructureaccess.html#infrapermission) granulares sobre el acceso al portal del cliente y a las características que contiene, como facturas, datos de facturación, configuración de IaaS, supervisión de IaaS, adquisición de IaaS y soporte. El acceso a dispositivos se gestiona por separado desde el propio dispositivo.
+* También dispone de permisos del [portal de clientes](/docs/customer-portal/cpwhatis.html#customerportal_whatisCP) de la infraestructura para otorgar a los usuarios [permisos](/docs/iam/infrastructureaccess.html#infrapermission) granulares sobre el acceso al portal de clientes y a las características que contiene, como facturas, datos de facturación, configuración de IaaS, supervisión de IaaS, adquisición de IaaS y soporte. El acceso a dispositivos se gestiona por separado desde el propio dispositivo.
