@@ -18,9 +18,9 @@ lastupdated: "2018-07-19"
 
 您的 {{site.data.keyword.Bluemix}} 帳戶包含許多互動元件及系統。每個元件的下列圖表及說明，旨在幫助您瞭解特定元件如何相互關聯，或連接，以及帳戶之間的存取如何運作。 
 
-![{{site.data.keyword.Bluemix_notm}} 帳戶圖表](images/account_diagram.svg "{{site.data.keyword.Bluemix_notm}} 帳戶圖表")
-
-如需較大的圖表視圖，[請按一下這裡](https://console.stage1.bluemix.net/docs/api/content/account/images/account_diagram.svg)。
+<a href="https://console.stage1.bluemix.net/docs/api/content/account/images/account_diagram.svg">
+  <img src="images/account_diagram.svg" alt="帳戶圖表">
+</a>
 
 在圖表內，有兩個關於帳戶階層中之元件的主要概念，務必要瞭解。實線與虛線的使用有助於說明部分元件包含在其他元件之內，例如，使用者新增至存取群組或 Cloud Foundry 組織內。不過，部分元件會與其他元件互動，以便提供存取而非成員資格。例如，使用者被授與資源群組的存取權，但不像存取群組那樣隸屬於資源群組。這些概念也在下列各節解釋。
 
