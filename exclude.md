@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-07-26"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2018-07-26"
 # Hiding a public resource from users in your account
 {: #exclude}
 
-If you're an administrator for your account, you can hide a public resource for everyone in your account. Add the resource to an exclusion list with the `ibmcloud` [command line interface](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_catalog_entry_visibility_set).
+If you're an administrator for your account, you can hide a public resource for everyone in your account. Add the resource to an exclusion list with the `ibmcloud` [command line interface](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set).
 {:shortdesc: .shortdesc}
 
 **Note:** Hiding a resource in the catalog does not remove it from the Cloud Foundry CLI or from the service provisioning lists available through the global navigation, such as Finance, Mobile, Watson, and Web Apps.
