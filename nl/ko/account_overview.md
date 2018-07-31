@@ -18,9 +18,9 @@ lastupdated: "2018-07-19"
 
 {{site.data.keyword.Bluemix}} 계정에는 상호작용하는 여러 컴포넌트와 시스템이 포함되어 있습니다. 다음 다이어그램과 각 컴포넌트에 대한 설명은 특정 컴포넌트가 어떻게 상호 관련되거나 연결되는지와 계정에서 액세스가 작동하는 방식을 이해하는 데 도움을 주기 위한 것입니다. 
 
-![{{site.data.keyword.Bluemix_notm}} 계정 다이어그램](images/account_diagram.svg "{{site.data.keyword.Bluemix_notm}} 계정 다이어그램")
-
-다이어그램을 더 크게 보려면 [여기를 클릭](https://console.stage1.bluemix.net/docs/api/content/account/images/account_diagram.svg)하십시오.
+<a href="https://console.stage1.bluemix.net/docs/api/content/account/images/account_diagram.svg">
+  <img src="images/account_diagram.svg" alt="계정 다이어그램">
+</a>
 
 다이어그램 내에는 이해해야 할 계정 계층 구조의 컴포넌트에 대한 두 가지 기본 개념이 있습니다. 실선과 점선을 사용하여 일부 컴포넌트가 다른 컴포넌트 내에 포함되어 있음(예: 사용자가 액세스 그룹 또는 Cloud Foundry 조직에 추가됨)을 나타내는 데 도움을 줍니다. 그러나 일부 컴포넌트는 멤버십 대신 액세스를 제공하기 위해 다른 컴포넌트와 상호작용합니다. 예를 들어, 사용자는 리소스 그룹에 대한 액세스를 부여받지만 액세스 그룹에 대한 것과 동일한 방식으로 리소스 그룹의 구성원은 아닙니다. 이러한 개념은 다음 섹션에도 설명되어 있습니다.
 
