@@ -83,4 +83,4 @@ You can get the resource ID for the child deployment and then include an account
 
 The children of an object can inherit visibility in complex ways. If the child object is private, it has its own visibility configuration. However, if the child object is set to public, it inherits the visibility of its parent. Setting visibility on a private child object might restrict its visibility more than the parent.
 
-For more information about how visibility works, see the [API docs](https://console.bluemix.net/apidocs/682).
+For more information about how visibility works, see the [API docs](https://console.bluemix.net/apidocs/globalcatalog).

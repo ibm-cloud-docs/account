@@ -89,4 +89,4 @@ Children           Name                                          Kind         ID
 
 Find the ID for an object and exclude an account with the `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>`.
 
-For more information about how visibility works, see the [API docs](https://console.bluemix.net/apidocs/682).
+For more information about how visibility works, see the [API docs](https://console.bluemix.net/apidocs/globalcatalog).
