@@ -18,9 +18,9 @@ lastupdated: "2018-07-19"
 
 Votre compte {{site.data.keyword.Bluemix}} inclut plusieurs composants et systèmes interagissant les uns avec les autres. Le diagramme et les explications ci-dessous présentent chaque composant et ont pour but de vous aider à comprendre comment certains composants sont liés, ou connectés, et comment l'accès fonctionne au sein du compte. 
 
-![{{site.data.keyword.Bluemix_notm}} Diagramme du compte](images/account_diagram.svg "{{site.data.keyword.Bluemix_notm}} Diagramme du compte")
-
-Pour avoir une vue de plus grande taille du diagramme, [cliquez ici](https://console.stage1.bluemix.net/docs/api/content/account/images/account_diagram.svg).
+<a href="https://console.stage1.bluemix.net/docs/api/content/account/images/account_diagram.svg">
+  <img src="images/account_diagram.svg" alt="diagramme de compte">
+</a>
 
 Le diagramme présente deux principaux concepts s'appliquant aux composants de la hiérarchie de compte qu'il est important de bien connaître. L'utilisation de lignes continues et de lignes pointillées indique que certains composants sont inclus dans d'autres. Par exemple, les utilisateurs sont ajoutés à des groupes d'accès ou à des organisations Cloud Foundry. Toutefois, certains composants interagissent avec d'autres afin de fournir l'accès à un élément et non une adhésion à ce dernier. Par exemple, les utilisateurs se voient accorder l'accès à des groupes de ressources mais ne sont pas membres d'un groupe de ressources comme ils le sont d'un groupe d'accès. Ces concepts sont également présentés dans les sections suivantes.
 
