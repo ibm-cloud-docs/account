@@ -23,7 +23,7 @@ lastupdated: "2018-07-11"
 ## 切换到 IBM 标识
 {: #switchtoIBMid}
 
-开始切换到 IBM 标识的过程后，只要尚未完成切换过程，随时都可以将其取消。然而，您每次登录时，都会显示切换到 IBM 标识的提示。计划链接到 {{site.data.keyword.Bluemix_notm}} 帐户的每个 SoftLayer 帐户都必须由具有唯一电子邮件地址的唯一 IBM 标识所拥有。
+开始切换到 IBM 标识的过程后，只要尚未完成切换过程，随时都可以将其取消。然而，您每次登录时，都会显示切换到 IBM 标识的提示。计划链接到 {{site.data.keyword.Bluemix_notm}} 帐户的每个 SoftLayer 帐户都必须由具有唯一电子邮件地址的唯一 IBM 标识拥有。
 
 要从现有 SoftLayer 帐户切换到 IBM 标识，请创建 IBM 标识，然后使用注册代码进行确认。
 

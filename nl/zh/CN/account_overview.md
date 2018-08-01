@@ -18,9 +18,9 @@ lastupdated: "2018-07-19"
 
 {{site.data.keyword.Bluemix}} 帐户包含许多交互组件和系统。下图及对每个组件的说明旨在帮助您了解特定组件是如何相互关联或连接的，以及访问在整个帐户中是如何工作的。 
 
-![{{site.data.keyword.Bluemix_notm}} 帐户图](images/account_diagram.svg "{{site.data.keyword.Bluemix_notm}} 帐户图")
-
-要获得该图的更大视图，请[单击此处](https://console.stage1.bluemix.net/docs/api/content/account/images/account_diagram.svg)。
+<a href="https://console.stage1.bluemix.net/docs/api/content/account/images/account_diagram.svg">
+  <img src="images/account_diagram.svg" alt="帐户图">
+</a>
 
 在该图中，帐户层次结构中的组件有两个主要概念务必要理解。实线和虚线用于帮助说明某些组件包含在其他组件中，例如将用户添加到访问组或 Cloud Foundry 组织。但是，某些组件与其他组件进行交互的目的是为了提供访问权，而不是提供成员资格。例如，授予了用户对资源组的访问权，但这些用户并不会像针对访问组那样，成为资源组的成员。以下各部分还将对这些概念进行说明。
 
