@@ -24,7 +24,7 @@ para acessar e comprar infraestrutura, serviços e recursos de aplicativos. Toda
 ## Alternando para o IBMid
 {: #switchtoIBMid}
 
-Ao iniciar o processo para alternar para um IBMid, sempre será possível cancelar antes de concluir o processo. No entanto, sempre que você efetuar login, o prompt para alternar para um IBMid será exibido. Cada conta do SoftLayer que você planejar vincular a uma conta do {{site.data.keyword.Bluemix_notm}} deverá pertencer a um IBMid exclusivo com um endereço de e-mail exclusivo.
+Ao iniciar o processo para alternar para um IBMid, sempre será possível cancelar antes de concluir o processo. No entanto, sempre que você efetuar login, o prompt para alternar para um IBMid será exibido. Cada conta do SoftLayer que você planeja vincular a uma conta do {{site.data.keyword.Bluemix_notm}} deve ser de propriedade de um IBMid exclusivo com um endereço de e-mail exclusivo.
 
 Para alternar sua conta existente do SoftLayer para um IBMid, crie um IBMid e, em seguida, use seu código de registro para confirmá-lo.
 
@@ -33,7 +33,7 @@ Para alternar sua conta existente do SoftLayer para um IBMid, crie um IBMid e, e
 
 1. Efetue login na conta do SoftLayer e clique em **OK** quando o prompt para alternar para um IBMid for exibido.
 
-   Se você for um usuário principal e um prompt para alternar para um IBMid não for exibido no portal do cliente da infraestrutura do {{site.data.keyword.BluSoftlayer_full}}, entre em contato com o suporte IBM para obter ajuda. Veja [Suporte IBM](/docs/get-support/howtogetsupport.html#getting-customer-support) para obter mais informações sobre como entrar em contato com o suporte.
+   Se você for um usuário principal e um prompt para alternar para um IBMid não for exibido no portal do cliente da infraestrutura do {{site.data.keyword.BluSoftlayer_full}}, entre em contato com o suporte IBM para obter ajuda. Consulte [Suporte IBM](/docs/get-support/howtogetsupport.html#getting-customer-support) para obter mais informações sobre como entrar em contato com o suporte.
 
    Se anteriormente você tiver efetuado login e tiver clicado em **Posteriormente** no prompt, mas desejar alternar para a autenticação do IBMid na sessão atual, acesse a página Editar perfil do usuário e clique em **Alternar para IBMid**.
 
@@ -56,7 +56,7 @@ Se você for um novo cliente, será solicitado seu IBMid existente ou para criar
   * Para usar um IBMid existente, insira o nome do usuário ou o endereço de e-mail do IBMid se ele for exclusivo (isto é, ele não é compartilhado com múltiplos IBMids).
   * Para criar um novo IBMid, insira um endereço de e-mail que não esteja atualmente em uso por nenhum IBMid. Esse endereço de e-mail é o nome de usuário do IBMid e é onde seu código de registro é enviado após a criação do IBMid. Será possível atualizar o endereço de e-mail que está associado ao IBMid posteriormente, mas não será possível mudar o nome de usuário.
 
-Para resolver quaisquer problemas ao efetuar login com seu IBMid, veja [Resolução de problemas para acessar o {{site.data.keyword.Bluemix_notm}}](/docs/account/ts_accessing.html#accessing).
+Para resolver quaisquer problemas ao efetuar login com seu IBMid, consulte [Resolução de problemas para acessar o {{site.data.keyword.Bluemix_notm}}](/docs/account/ts_accessing.html#accessing).
 
 
 ## Vinculando contas do IBMid
