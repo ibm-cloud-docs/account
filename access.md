@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -33,7 +33,6 @@ You might want to grant other permissions to users in your account by using the 
 
 For step-by-step instructions on assigning access to users in your account, go to the [Access to resources](/docs/iam/mngiam.html#iammanidaccser#resourceaccess) documentation.
 
-
 ## How do I check if I have access?
 
 When you are added to another person's account, they might delegate certain levels of access to you so that you can view private resources that have been added to the account. The account owner might also delegate the ability for you manage who sees public resources in the account catalog. You do not have this access by default. The account owner must grant you an IAM role that enables you to have access to complete these account resource management tasks.
@@ -46,7 +45,7 @@ To use the Identity and Access UI, complete the following steps:
 2. Click your name from the Users list.
 3. In the **Access Policies** section, you can view your assigned access policies. You must have the Cloud IAM administrator role for the catalog resource in your account to update the list that includes accounts to see private resources in the catalog.
 
-To use the [ibmcloud CLI](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_commands_iam), complete the following steps:
+To use the [ibmcloud CLI](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_commands_iam), complete the following steps:
 
 Enter the following command with your user name `ibmcloud iam user-policies <your-username>` to find whether you're an administrator of accounts you selected in the CLI. If you aren't an administrator for your account, these commands return an error that says you're not authorized.
 {: tip}

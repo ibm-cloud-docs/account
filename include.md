@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-07-26"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2018-07-26"
 # Adding accounts to your private resource
 {: #include}
 
-Any private resource that you create is restricted by default. If you're an administrator for the account, you can choose who can see your resource by adding them to an inclusion list with the {{site.data.keyword.Bluemix}} [command line interface](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_catalog_entry_visibility_set).
+Any private resource that you create is restricted by default. If you're an administrator for the account, you can choose who can see your resource by adding them to an inclusion list with the {{site.data.keyword.Bluemix}} [command line interface](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set).
 {:shortdesc: .shortdesc}
 
 ## How do I know whether I have access?
