@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2018-05-22"
 # 將帳戶新增至專用資源
 {: #include}
 
-依預設，會限制您建立的任何專用資源。如果您是帳戶的管理者，則可以選擇誰可以看到您的資源，方法是使用 `ibmcloud` [指令行介面](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_catalog_entry_visibility_set)將他們新增至 includes 清單。
+依預設，會限制您建立的任何專用資源。如果您是帳戶的管理者，則可以選擇誰可以看到您的資源，方法是使用 {{site.data.keyword.Bluemix}} [指令行介面](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set)將他們新增至併入清單。
 {:shortdesc: .shortdesc}
 
 ## 如何知道我是否有存取權？
@@ -39,10 +39,10 @@ lastupdated: "2018-05-22"
 
 執行指令之後，包含資源的處理程序需要 30 分鐘。在 30 分鐘之後，請登出並重新登入帳戶，以查看包含的資源。
 
-## 從 includes 清單中移除帳戶
+## 從併入清單移除帳戶
 {: #remove-exclude}
 
-輸入下列指令，以從 includes 清單中移除帳戶。
+輸入下列指令，以從 `includes` 清單中移除帳戶。
 
 `ibmcloud catalog entry-visibility-set <service-id> --includes-remove<account-id or account-email>`
 
@@ -51,7 +51,7 @@ lastupdated: "2018-05-22"
 
 您可以管理資源或其子項的可見性。
 
-空的 includes 清單表示只有您的帳戶管理者才能看到它。您的帳戶必須在 includes 清單中，帳戶的所有成員才能看到它。
+空的 includes 清單表示只有您的帳戶管理者才能看到它。您的帳戶必須在併入清單中，帳戶的所有成員才能看到它。
 
 例如，如果您輸入 `ibmcloud catalog service <your_service>`，則可以看到資源的子項。
 
@@ -83,4 +83,4 @@ Children           Name                                          Kind         ID
 
 物件的子項可以透過複雜的方式來繼承可見性。如果子物件為專用，則會有自己的可見性配置。不過，如果子物件設為公用，則會繼承其母項的可見性。設定專用子物件的可見性時，其可見性限制可能會高於母項。
 
-如需可見性運作方式的相關資訊，請參閱 [API 文件](https://console.bluemix.net/apidocs/682)。
+如需可見性運作方式的相關資訊，請參閱 [API 文件](https://console.bluemix.net/apidocs/globalcatalog)。

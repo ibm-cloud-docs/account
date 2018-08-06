@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-07-09"
+lastupdated: "2018-07-24"
 
 ---
 
@@ -24,7 +24,7 @@ Bei einem Lite-Konto können Sie nur in einer Region arbeiten. In einem nutzungs
 ## Was ist ein Lite-Preisstrukturplan für Services?
 {: #whatisliteplan}
 
-Ein Lite-Plan ist ein Serviceplan mit kostenlosem Kontingent. Sie können einen Lite-Planservice verwenden, um eine App ohne Gebühren zu erstellen. Ein Lite-Plan kann in monatlichen Zyklen (die jeden Monat erneuert werden) oder für eine einmalige Gebühr angeboten werden. Pro Lite-Planservice können Sie über eine Instanz verfügen. Lite-Preisstrukturpläne werden in allen Konten angeboten.
+Ein Lite-Plan ist ein Serviceplan mit kostenfreiem Kontingent. Sie können einen Lite-Planservice verwenden, um eine App ohne Gebühren zu erstellen. Ein Lite-Plan kann in monatlichen Zyklen (die jeden Monat erneuert werden) oder für eine einmalige Gebühr angeboten werden. Pro Lite-Planservice können Sie über eine Instanz verfügen. Lite-Preisstrukturpläne werden in allen Konten angeboten.
 
 ## Was passiert, wenn meine Lite-Planinstanz das monatliche Kontingent erreicht?
 {: #monthlyquota}
@@ -71,7 +71,7 @@ Hilfe für den Einstieg in {{site.data.keyword.Bluemix_notm}} oder für das Navi
 
 Sie können sich auch über eine Reihe hilfreicher Ressourcen informieren, die im [Support Center![Symbol für externen Link](../icons/launch-glyph.svg) ](https://console.bluemix.net/unifiedsupport/supportcenter){: new_window} verfügbar sind. Von dort aus können Sie auf Stack Overflow zugreifen, um eine Frage an unsere Entwicklercommunity zu senden. Sie haben auch die Möglichkeit, ein Support-Ticket einzureichen.
 
-## Kann ich mich für eine kostenlose Testversion anmelden?
+## Kann ich mich für eine kostenfreie Testversion anmelden?
 {: #freetrial}
 
 Für Fakultätsmitglieder und Studierende akkreditierter akademischer Einrichtungen sind {{site.data.keyword.Bluemix_notm}}-Testkonten erhältlich. Um sich für ein solches Testkonto zu qualifizieren, rufen Sie die Seite [onthehub.com/ibm ![Symbol für externen Link](../icons/launch-glyph.svg)](http://onthehub.com/ibm){: new_window} auf und validieren Sie die Berechtigungsnachweise für Ihre Einrichtung.
@@ -110,10 +110,10 @@ Damit Sie {{site.data.keyword.Bluemix_notm}} optimaler nutzen können, werden ne
 
 Falls ein Verknüpfen für Sie nicht in Frage kommt, wenden Sie sich an Ihre Vertriebsunterstützung und informieren Sie sich über andere Möglichkeiten.
 
-## Gibt es momentan Incentives für das Verknüpfen meiner Konten? 
+## Gibt es Kaufanreize für das Verknüpfen meiner Konten? 
 {: #al_incent}
 
-Wenn Sie Ihre Konten jetzt verknüpfen, erhalten Sie im Rahmen einer Werbeaktion eine Gutschrift zum Ausprobieren der {{site.data.keyword.Bluemix_notm}}-Services.
+Wenn Sie Ihre Konten verknüpfen, erhalten Sie im Rahmen einer Werbeaktion eine Gutschrift von $ 200 zum Ausprobieren der {{site.data.keyword.Bluemix_notm}}-Services. 
 
 ## Was bedeutet es, {{site.data.keyword.Bluemix_notm}}-Plattformservices zu meinem SoftLayer-Konto hinzuzufügen? 
 {: #al_owaffslacct}

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -15,14 +15,15 @@ lastupdated: "2018-05-22"
 # Öffentliche Ressource für Benutzer im Konto ausblenden
 {: #exclude}
 
-Als Administrator des Kontos können Sie festlegen, dass eine öffentliche Ressource den Benutzern in Ihrem Konto nicht angezeigt wird, indem Sie die Benutzer über die `ibmcloud`-[Benutzerschnittstelle](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_catalog_entry_visibility_set) zu einer Ausschlussliste hinzufügen.{:shortdesc: .shortdesc}
+Als Administrator des Kontos können Sie festlegen, dass eine öffentliche Ressource den Benutzern in Ihrem Konto nicht angezeigt wird. Fügen Sie die Ressource über die [Befehzlszeilenschnittstelle](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) `ibmcloud` zu einer Ausschlussliste hinzu.
+{:shortdesc: .shortdesc}
 
-**Hinweis:** Das Ausblenden eines Elements im Katalog bewirkt nicht, dass das Element in der Cloud Foundry-Befehlszeilenschnittstelle oder den Servicebereitstellungslisten entfernt wird, die über die globale Navigation verfügbar sind (z. B. Finanzen, Mobile, Watson und Web-Apps).
+**Hinweis:** Das Ausblenden einer Ressource im Katalog bewirkt nicht, dass die Ressource aus der Cloud Foundry-Befehlszeilenschnittstelle oder den Servicebereitstellungslisten entfernt wird, die über die globale Navigation verfügbar sind (z. B. Finanzen, Mobile, Watson und Web-Apps).
 
 ## Wie kann ich feststellen, ob ich über Zugriff verfüge?
 {: #find-access}
 
-Sie können über die Befehlszeilenschnittstelle oder die IAM-Benutzerschnittstelle ermitteln, ob Sie über den erforderlichen Zugriff verfügen, um dafür zu sorgen, dass Benutzern eine private Ressource angezeigt wird, die dem Konto hinzugefügt wurde. Als Kontoeigner können Sie einem Benutzer in Ihrem Konto über die IAM-Benutzerschnittstelle Zugriff erteilen, indem Sie eine Zugriffsrichtlinie zuordnen. Weitere Informationen finden Sie unter [Zugriff auf Konto verwalten](access.html).
+Sie können über die Befehlszeilenschnittstelle oder die IAM-Benutzerschnittstelle ermitteln, ob Sie über den erforderlichen Zugriff verfügen, um dafür zu sorgen, dass Benutzern eine private Ressource angezeigt wird, die dem Konto hinzugefügt wurde. Als Kontoeigner können Sie einem Benutzer in Ihrem Konto über die IAM-Benutzerschnittstelle Zugriff erteilen, indem Sie eine Zugriffsrichtlinie zuordnen. Weitere Informationen finden Sie in [Zugriff auf Konto verwalten](access.html).
 
 ## Schritt 1: Ressource suchen
 {: #find-resource}
@@ -40,11 +41,11 @@ Geben Sie den folgenden Befehl ein, um zu verhindern, dass Ihrem Konto eine öff
 
 `ibmcloud catalog entry-visibility-set <resource-id> —-excludes-add <account-id or account-email>`
 
-Geben Sie im Anschluss an das Flag 'excludes' eine durch Kommas unterteilte Aufzählung von E-Mail-Adressen oder IDs an, die Konten zugeordnet sind.
+Nach dem Flag `excludes` können Sie eine durch Kommas getrennte Liste mit E-Mail-Adressen oder IDs angeben, die Konten zugeordnet sind.
 
 Der Prozess für das Ausblenden der Ressource nimmt nach der Befehlseingabe etwa 30 Minuten in Anspruch. Melden Sie sich nach 30 Minuten ab und erneut mit Ihrem Konto an, um die ausgeblendete Ressource anzuzeigen.
 
-**Hinweis:** Einträge, die von Ihnen ausgeblendet wurden, stehen nicht über die Benutzerschnittstelle oder die ibmcloud-Befehlszeilenschnittstelle zur Verfügung. Die ausgeblendeten Einträge werden weiterhin im Cloud Foundry-Marktplatz angezeigt, ein ausgeblendeter Plan kann jedoch nicht über Cloud Foundry bereitgestellt werden. Administratoren des ausgeschlossenen Kontos wird die Ressource weiterhin angezeigt.
+**Hinweis:** Einträge, die von Ihnen ausgeblendet wurden, stehen nicht über die Benutzerschnittstelle oder die {{site.data.keyword.Bluemix}}-Befehlszeilenschnittstelle zur Verfügung. Die ausgeblendeten Einträge werden weiterhin im Cloud Foundry-Marktplatz angezeigt, ein ausgeblendeter Plan kann jedoch nicht über Cloud Foundry bereitgestellt werden. Administratoren des ausgeschlossenen Kontos wird die Ressource weiterhin angezeigt.
 
 ## Konto aus Ausschlussliste entfernen
 {: #remove-exclude}
@@ -86,6 +87,6 @@ Children           Name                                          Kind         ID
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-Suchen Sie die ID für ein Objekt und schließen Sie das Konto mit dem Befehl `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>` aus.
+Suchen Sie die ID für ein Objekt und schließen Sie das Konto mit dem Befehl `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>`.
 
-Weitere Informationen zur Sichtbarkeit finden Sie in der [API-Dokumentation](https://console.bluemix.net/apidocs/682).
+Weitere Informationen zur Sichtbarkeit finden Sie in der [API-Dokumentation](https://console.bluemix.net/apidocs/globalcatalog).

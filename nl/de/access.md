@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -33,7 +33,6 @@ Bei Bedarf können Sie Benutzern in Ihrem Konto über die IAM-Rollen `Anzeigeber
 
 Schrittweise Anweisungen für das Zuordnen von Zugriff für Benutzer in Ihrem Konto finden Sie unter [Zugriff auf Ressourcen](/docs/iam/mngiam.html#iammanidaccser#resourceaccess).
 
-
 ## Wie kann ich feststellen, ob ich über Zugriff verfüge?
 
 Wenn Sie zum Konto eines anderen hinzugefügt wurden, wurden möglicherweise bestimmte Zugriffsebenen an Sie delegiert, sodass Ihnen private Ressourcen angezeigt werden, die dem Konto hinzugefügt wurden. Der Kontoeigner kann auch die Möglichkeit zum Verwalten der Benutzer an Sie delegieren, denen öffentliche Ressourcen im Kontokatalog angezeigt werden. Dieser Zugriff ist Ihnen nicht standardmäßig zugeordnet. Der Kontoeigner müssen Ihnen eine IAM-Rolle zuordnen, die Ihnen den Zugriff zum Ausführen dieser Aufgaben des Kontoressourcenmanagements ermöglicht.
@@ -46,7 +45,7 @@ Führen Sie die folgenden Schritte aus, um mit der IAM-Benutzerschnittstelle zu 
 2. Klicken Sie in der Benutzerliste auf Ihren Namen.
 3. Im Bereich **Zugriffsrichtlinie** können Sie Ihre zugeordneten Zugriffsrichtlinien anzeigen. Sie müssen über die Cloud IAM-Administratorrolle für die Katalogressource in Ihrem Konto verfügen, um die Einschlussliste mit den Konten, die private Ressourcen im Katalog anzeigen können, aktualisieren zu können.
 
-Führen Sie die folgenden Schritte aus, um mit der [Benutzerschnittstelle für IBM Cloud (ibmcloud)](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_commands_iam) zu arbeiten: 
+Führen Sie die folgenden Schritte aus, um mit der [Benutzerschnittstelle für IBM Cloud (ibmcloud)](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_commands_iam) zu arbeiten:
 
 Geben Sie den Befehl `ibmcloud iam user-policies <your-username>` mit Ihrem Benutzernamen ein, um herauszufinden, ob Sie als Administrator von Konten eingesetzt wurden, die Sie in der Befehlszeilenschnittstelle ausgewählt haben. Wenn Sie nicht über die Administratorrolle für Ihr Konto verfügen, wird von diesen Befehlen ein Fehler zu fehlenden Berechtigungen zurückgegeben.
 {: tip}

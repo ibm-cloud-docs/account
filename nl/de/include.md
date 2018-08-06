@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -15,13 +15,13 @@ lastupdated: "2018-05-22"
 # Konten zur privaten Ressource hinzufügen
 {: #include}
 
-Der Zugriff auf private Ressourcen, die Sie erstellen, ist standardmäßig eingeschränkt. Als Administrator des Kontos können Sie auswählen, wem Ihre Ressource angezeigt wird, indem Sie diese Benutzer über die `ibmcloud`-[Befehlszeilenschnittstelle](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_catalog_entry_visibility_set) zu einer Einschlussliste hinzufügen.
+Der Zugriff auf private Ressourcen, die Sie erstellen, ist standardmäßig eingeschränkt. Als Administrator des Kontos können Sie die Benutzer auswählen, denen Ihre Ressource angezeigt wird, indem Sie diese Benutzer über die {{site.data.keyword.Bluemix}}-[Befehlszeilenschnittstelle](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) zu einer Einschlussliste hinzufügen.
 {:shortdesc: .shortdesc}
 
 ## Wie kann ich feststellen, ob ich über Zugriff verfüge?
 {: #find-access}
 
-Sie können über die Befehlszeilenschnittstelle oder die IAM-Benutzerschnittstelle ermitteln, ob Sie über den erforderlichen Zugriff verfügen, um dafür zu sorgen, dass Benutzern eine private Ressource angezeigt wird, die dem Konto hinzugefügt wurde. Als Kontoeigner können Sie einem Benutzer in Ihrem Konto über die IAM-Benutzerschnittstelle Zugriff erteilen, indem Sie eine Zugriffsrichtlinie zuordnen. Weitere Informationen finden Sie unter [Zugriff auf Konto verwalten](access.html).
+Sie können über die Befehlszeilenschnittstelle oder die IAM-Benutzerschnittstelle ermitteln, ob Sie über den erforderlichen Zugriff verfügen, um dafür zu sorgen, dass Benutzern eine private Ressource angezeigt wird, die dem Konto hinzugefügt wurde. Als Kontoeigner können Sie einem Benutzer in Ihrem Konto über die IAM-Benutzerschnittstelle Zugriff erteilen, indem Sie eine Zugriffsrichtlinie zuordnen. Weitere Informationen finden Sie in [Zugriff auf Konto verwalten](access.html).
 
 ## Schritt 1: Eigene Ressource suchen
 {: #find-resource}
@@ -42,7 +42,7 @@ Der Prozess für das Aufnehmen der Ressource nimmt nach der Befehlseingabe etwa 
 ## Konto aus Einschlussliste entfernen
 {: #remove-exclude}
 
-Geben Sie den folgenden Befehl ein, um ein Konto aus der Einschlussliste zu entfernen.
+Geben Sie den folgenden Befehl ein, um ein Konto aus der `Einschlussliste` zu entfernen.
 
 `ibmcloud catalog entry-visibility-set <service-id> --includes-remove <account-id or account-email>`
 
@@ -53,7 +53,7 @@ Sie können die Sichtbarkeit Ihrer Ressource und der untergeordneten Elemente ve
 
 Ist die Einschlussliste leer, bedeutet das, dass sie nur den Administratoren Ihres Kontos angezeigt wird. Ihr Konto muss in der Einschlussliste für alle Mitglieder des Kontos enthalten sein, damit sie angezeigt wird.
 
-Die Eingabe von `ibmcloud catalog service <your_service>` bewirkt zum Beispiel, dass die untergeordneten Elemente der Ressource angezeigt werden.
+Wenn Sie beispielsweise den Befehl `ibmcloud catalog service <your_service>` eingeben, werden Ihnen die untergeordneten Elemente der Ressource angezeigt.
 
 ```
 ID                 cloudant
@@ -83,4 +83,4 @@ Sie können die Ressourcen-ID für die untergeordnete Bereitstellung abrufen und
 
 Die untergeordneten Elemente eines Objekts können die Sichtbarkeit übernehmen. Diese Vererbung ist jedoch relativ komplex. Ist das untergeordnete Objekt privat, wird die zugehörigen eigene Sichtbarkeitskonfiguration angewendet. Ist das untergeordnete Objekt jedoch als öffentlich konfiguriert, wird die Sichtbarkeit des übergeordneten Elements übernommen. Durch das Festlegen der Sichtbarkeit eines privaten untergeordneten Objekts wird die Sichtbarkeit möglicherweise stärker eingeschränkt als die des übergeordneten Objekts.
 
-Weitere Informationen zur Sichtbarkeit finden Sie in der [API-Dokumentation](https://console.bluemix.net/apidocs/682).
+Weitere Informationen zur Sichtbarkeit finden Sie in der [API-Dokumentation](https://console.bluemix.net/apidocs/globalcatalog).

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -15,10 +15,10 @@ lastupdated: "2018-05-22"
 # 向帳戶中的使用者隱藏公用資源
 {: #exclude}
 
-如果您是帳戶的管理者，則可以選擇向帳戶中的每個人隱藏公用資源，方法是使用 `ibmcloud` [指令行介面](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_catalog_entry_visibility_set)將他們新增至 excludes 清單。
+如果您是帳戶的管理者，則可以向帳戶中的每個人隱藏公用資源。請使用 `ibmcloud` [指令行介面](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set)將資源新增至排除清單。
 {:shortdesc: .shortdesc}
 
-**附註：**隱藏型錄中的項目，並不會從 Cloud Foundry CLI 或是透過廣域導覽取得的服務佈建清單（例如金融、行動、Watson 及 Web 應用程式）中移除項目。
+**附註：**隱藏型錄中的資源，並不會從 Cloud Foundry CLI 或是透過廣域導覽取得的服務佈建清單（例如金融、行動、Watson 及 Web 應用程式）中移除它。
 
 ## 如何知道我是否有存取權？
 {: #find-access}
@@ -41,16 +41,16 @@ lastupdated: "2018-05-22"
 
 `ibmcloud catalog entry-visibility-set <resource-id> —-excludes-add <account-id or account-email>`
 
-在 excludes 旗標後面，您可以新增與帳戶相關聯的電子郵件或帳戶 ID 清單（以逗點區隔）。
+在 `excludes` 旗標後面，您可以新增與帳戶相關聯的電子郵件或帳戶 ID 清單（以逗點區隔）。
 
 執行指令之後，隱藏資源的處理程序需要 30 分鐘。在 30 分鐘之後，請登出並重新登入帳戶，以查看隱藏的資源。
 
-**附註：**無法從使用者介面及 ibmcloud CLI 取得您的隱藏項目。隱藏項目在 Cloud Foundry Marketplace 中仍然可見，但無法從 Cloud Foundry 佈建隱藏方案。遭排除帳戶的管理者仍然可以看到該資源。
+**附註：**無法從使用者介面及 {{site.data.keyword.Bluemix}} CLI 取得您的隱藏項目。隱藏項目在 Cloud Foundry Marketplace 中仍然可見，但無法從 Cloud Foundry 佈建隱藏方案。遭排除帳戶的管理者仍然可以看到該資源。
 
-## 從 excludes 清單中移除帳戶
+## 從排除清單移除帳戶
 {: #remove-exclude}
 
-輸入下列指令，以從 excludes 清單中移除帳戶 ID 或電子郵件。
+輸入下列指令，以從排除清單移除帳戶 ID 或電子郵件。
 
 `ibmcloud catalog entry-visibility-set <service-id> —-excludes-remove <account-id or account-email>`
 
@@ -89,4 +89,4 @@ Children           Name                                          Kind         ID
 
 尋找物件的 ID，並使用 `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>` 來排除帳戶。
 
-如需可見性運作方式的相關資訊，請參閱 [API 文件](https://console.bluemix.net/apidocs/682)。
+如需可見性運作方式的相關資訊，請參閱 [API 文件](https://console.bluemix.net/apidocs/globalcatalog)。

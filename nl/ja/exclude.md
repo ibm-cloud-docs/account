@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -15,15 +15,15 @@ lastupdated: "2018-05-22"
 # パブリック・リソースをアカウントのユーザーに非表示にする
 {: #exclude}
 
-アカウントの管理者である場合には、`ibmcloud` [コマンド・ライン・インターフェース](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_catalog_entry_visibility_set)を使用して除外リストに追加することによって、パブリック・リソースをアカウントの全員に非表示にすることを選択できます。
+アカウントの管理者である場合、アカウント内の全員に対してパブリック・リソースを非表示にすることができます。`ibmcloud` [コマンド・ライン・インターフェース](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set)を使用して、除外リストにリソースを追加します。
 {:shortdesc: .shortdesc}
 
-**注:** カタログ内の項目を非表示にすることは、Cloud Foundry CLI から、またはグローバル・ナビゲーションで使用可能なサービス・プロビジョニング・リスト (財務、モバイル、Watson、Web アプリなど) から項目を削除することにはなりません。
+**注:** カタログ内のリソースを非表示にしても、Cloud Foundry CLI から、またはグローバル・ナビゲーションで使用可能なサービス・プロビジョニング・リスト (金融、モバイル、Watson、Web アプリなど) からリソースを削除することにはなりません。
 
 ## アクセス権限の有無を確認する方法
 {: #find-access}
 
-アカウントに追加されたプライベート・リソースをユーザーが表示できるようにするためのアクセス権限があるかどうかを判断するために、CLI または ID およびアクセスの UI を使用することができます。 アカウント所有者の場合は、ID およびアクセス管理の UI でアクセス・ポリシーを割り当てることにより、アカウント内のユーザーにアクセス権限を付与できます。 詳しくは、『[アカウントへのアクセスの管理](access.html)』を参照してください。
+アカウントに追加されたプライベート・リソースをユーザーが表示できるようにするためのアクセス権限があるかどうかを判断するために、CLI または ID およびアクセス UI を使用することができます。アカウント所有者の場合は、ID およびアクセス管理の UI でアクセス・ポリシーを割り当てることにより、アカウント内のユーザーにアクセス権限を付与できます。 詳しくは、[アカウントへのアクセスの管理](access.html)を参照してください。
 
 ## ステップ 1: リソースの検出
 {: #find-resource}
@@ -41,11 +41,11 @@ lastupdated: "2018-05-22"
 
 `ibmcloud catalog entry-visibility-set <resource-id> —-excludes-add <account-id or account-email>`
 
-excludes フラグの後に、アカウントに関連付けられた E メールまたはアカウント ID のコンマ区切りリストを追加できます。
+`excludes` フラグの後に、アカウントに関連付けられた E メールまたはアカウント ID のコンマ区切りリストを追加できます。
 
 コマンドを実行した後、リソースを非表示にするプロセスに 30 分かかります。 30 分後に、ログアウトしてアカウントに戻り、非表示にされたリソースを確認します。
 
-**注:** 非表示にした項目は UI および ibmcloud CLI から使用できません。 非表示にされた項目は Cloud Foundry マーケットプレイスで引き続き表示されますが、非表示のプランは Cloud Foundry からプロビジョンできません。 除外されたアカウントの管理者は、引き続きリソースを表示できます。
+**注:** 非表示にした項目は UI および {{site.data.keyword.Bluemix}} CLI から使用できません。非表示にされた項目は Cloud Foundry マーケットプレイスで引き続き表示されますが、非表示のプランは Cloud Foundry からプロビジョンできません。 除外されたアカウントの管理者は、引き続きリソースを表示できます。
 
 ## 除外リストからのアカウントの削除
 {: #remove-exclude}
@@ -89,4 +89,4 @@ Children           Name                                          Kind         ID
 
 オブジェクトの ID を見つけて、`ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>` を使用してアカウントを除外します。
 
-可視性の仕組みについての詳細は、[API の資料](https://console.bluemix.net/apidocs/682)を参照してください。
+可視性の仕組みについての詳細は、[API の資料](https://console.bluemix.net/apidocs/globalcatalog)を参照してください。
