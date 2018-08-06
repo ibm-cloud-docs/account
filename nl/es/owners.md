@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -19,6 +19,6 @@ Puede cambiar la propiedad de la cuenta con la interfaz de línea de mandatos. U
 
 ## Cómo cambiar el propietario de un recurso de catálogo
 
-Para cambiar el propietario de un recurso, utilice el mandato siguiente con la [CLI](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_commands_settings):
+Para cambiar el propietario de un recurso, utilice el mandato siguiente con la [CLI](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_commands_settings):
 
 `ibmcloud catalog entry-visibility-set <service-id> --owner <account-id or account-email>`

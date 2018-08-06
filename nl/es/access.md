@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -33,7 +33,6 @@ Puede que desee otorgar permisos a otros usuarios de la cuenta mediante los role
 
 Para obtener instrucciones detalladas sobre la asignación de acceso a los usuarios en su cuenta, vaya a la documentación de [Acceso a recursos](/docs/iam/mngiam.html#iammanidaccser#resourceaccess).
 
-
 ## ¿Cómo puedo comprobar si tengo acceso?
 
 Cuando se le añade a la cuenta de otra persona, pueden delegarle ciertos niveles de acceso, de forma que pueda ver recursos privados que se han añadido a la cuenta. El propietario de la cuenta también puede delegarle la capacidad de gestionar quién ve los recursos públicos en el catálogo de la cuenta. De forma predeterminada, no tiene este acceso. El propietario de la cuenta debe otorgarle un rol de IAM que le permita tener acceso para realizar estas tareas de gestión de recursos de la cuenta.
@@ -46,7 +45,7 @@ Para utilizar la interfaz de usuario de identidad y acceso, siga estos pasos:
 2. Pulse su nombre de la lista Usuarios.
 3. En la sección **Políticas de acceso**, puede ver sus políticas de acceso asignadas. Debe tener el rol de administrador de Cloud IAM para el recurso de catálogo en su cuenta para actualizar la lista que incluye cuentas para ver recursos privados en el catálogo.
 
-Para utilizar la [CLI de ibmcloud](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_commands_iam), siga estos pasos:
+Para utilizar la [CLI de ibmcloud](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_commands_iam), siga estos pasos:
 
 Especifique el siguiente mandato con el nombre de usuario `ibmcloud iam user-policies <your-username>` para saber si es un administrador de cuentas que ha seleccionado en la CLI. Si no es un administrador de su cuenta, estos mandatos devuelven un error que dice que no está autorizado.
 {: tip}

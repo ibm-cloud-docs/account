@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-07-09"
+lastupdated: "2018-07-24"
 
 ---
 
@@ -109,10 +109,10 @@ Para obtener una mejor experiencia de {{site.data.keyword.Bluemix_notm}} toda la
 
 Si el enlace no es una opción viable en su caso, póngase en contacto con el soporte de ventas para estudiar otras opciones.
 
-## ¿Hay incentivos para enlazar mis cuentas ahora? 
+## ¿Hay incentivos para enlazar mis cuentas? 
 {: #al_incent}
 
-Si se enlaza sus cuentas ahora, puede utilizar un crédito promocional para probar los servicios de {{site.data.keyword.Bluemix_notm}}.
+Cuando enlace las cuentas, puede utilizar un crédito promocional de 200 dólares para probar los servicios de {{site.data.keyword.Bluemix_notm}}. 
 
 ## ¿Qué significa añadir los servicios de la plataforma {{site.data.keyword.Bluemix_notm}} a mi cuenta de SoftLayer? 
 {: #al_owaffslacct}
