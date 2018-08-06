@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -33,7 +33,6 @@ Potresti voler concedere altre autorizzazioni agli utenti nel tuo account utiliz
 
 Per istruzioni dettagliate sull'assegnazione dell'accesso agli utenti nel tuo account, vai alla documentazione [Accesso alle risorse](/docs/iam/mngiam.html#iammanidaccser#resourceaccess).
 
-
 ## Come verifico se dispongo dell'accesso?
 
 Quando vieni aggiunto all'account di un'altra persona, ti potrebbero delegare determinati livelli di accesso in modo da poter visualizzare le risorse private che sono state aggiunte all'account. Il proprietario dell'account ti potrebbe anche delegare la possibilità di gestire chi vede le risorse pubbliche nel catalogo dell'account. Non hai questo accesso per impostazione predefinita. Il proprietario dell'account deve concederti un ruolo IAM che ti consenta di avere accesso per completare queste attività di gestione delle risorse dell'account.
@@ -46,7 +45,7 @@ Per utilizzare l'interfaccia utente di Identità e accesso, completa la seguente
 2. Fai clic sul tuo nome dall'elenco Utenti.
 3. Nella sezione **Politiche di accesso**, puoi visualizzare le tue politiche di accesso assegnate. Devi disporre del ruolo di amministratore Cloud IAM per la risorsa del catalogo nel tuo account per aggiornare l'elenco che include gli account e per visualizzare le risorse private nel catalogo.
 
-Per utilizzare la [CLI ibmcloud](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_commands_iam), completa la seguente procedura:
+Per utilizzare la [CLI ibmcloud](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_commands_iam), completa la seguente procedura:
 
 Immetti il seguente comando con il tuo nome utente `ibmcloud iam user-policies <your-username>` per scoprire se sei un amministratore degli account selezionati nella CLI. Se non sei un amministratore per il tuo account, questi comandi restituiscono un errore che indica che non sei autorizzato.
 {: tip}

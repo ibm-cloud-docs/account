@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-07-09"
+lastupdated: "2018-07-24"
 
 ---
 
@@ -110,10 +110,10 @@ Per aiutarti a sperimentare ulteriormente tutte le nuove funzionalità di {{site
 
 Se il collegamento non è un'opzione valida per te, contatta il supporto delle vendite per le altre opzioni.
 
-## Ci sono incentivi per collegare i miei account in questo momento? 
+## Ci sono incentivi per collegare i miei account?  
 {: #al_incent}
 
-Se colleghi i tuoi account adesso, puoi utilizzare un credito promozionale per provare i servizi {{site.data.keyword.Bluemix_notm}} .
+Quando colleghi i tuoi account, puoi utilizzare un credito promozionale di $200 per provare i servizi {{site.data.keyword.Bluemix_notm}}. 
 
 ## Cosa significa aggiungere i servizi della piattaforma {{site.data.keyword.Bluemix_notm}} al mio account SoftLayer? 
 {: #al_owaffslacct}

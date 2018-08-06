@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2018-05-22"
 # Aggiunta di account alla tua risorsa privata
 {: #include}
 
-Qualsiasi risorsa privata che crei è riservata per impostazione predefinita. Se sei un amministratore dell'account, puoi scegliere chi può vedere la tua risorsa aggiungendo gli utenti in un elenco di inclusione attraverso l'[interfaccia riga di comando](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_catalog_entry_visibility_set) `ibmcloud`.
+Qualsiasi risorsa privata che crei è riservata per impostazione predefinita. Se sei un amministratore dell'account, puoi scegliere chi può vedere la tua risorsa aggiungendo gli utenti in un elenco di inclusione attraverso l'[interfaccia riga di comando](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) {{site.data.keyword.Bluemix}}.
 {:shortdesc: .shortdesc}
 
 ## Come faccio a sapere se dispongo dell'accesso?
@@ -42,7 +42,7 @@ Una volta eseguito il comando, il processo per includere la risorsa richiede 30 
 ## Rimuovi un account dall'elenco di inclusione
 {: #remove-exclude}
 
-Immetti il seguente comando per rimuovere un account dall'elenco di inclusione.
+Immetti il seguente comando per rimuovere un account dall'elenco `includes`.
 
 `ibmcloud catalog entry-visibility-set <service-id> --includes-remove <account-id or account-email>`
 
@@ -83,4 +83,4 @@ Puoi ottenere l'ID risorsa per la distribuzione secondaria e quindi includere un
 
 Gli elementi secondari di un oggetto possono ereditare la visibilità in modi complessi. Se l'oggetto secondario è privato, ha la propria configurazione di visibilità. Tuttavia, se l'oggetto secondario è impostato su pubblico, eredita la visibilità del suo elemento principale. L'impostazione della visibilità su un oggetto secondario privato può limitare la sua visibilità più dell'elemento principale.
 
-Per ulteriori informazioni su come funziona la visibilità, consulta le [documentazioni API](https://console.bluemix.net/apidocs/682).
+Per ulteriori informazioni su come funziona la visibilità, consulta le [documentazioni API](https://console.bluemix.net/apidocs/globalcatalog).

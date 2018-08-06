@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -19,6 +19,6 @@ Puoi modificare la proprietà dell'account tramite l'interfaccia della riga di c
 
 ## Come cambiare il proprietario di una risorsa del catalogo
 
-Per cambiare il proprietario di una risorsa, mediante la [CLI](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_commands_settings) utilizza il seguente comando:
+Per cambiare il proprietario di una risorsa, mediante la [CLI](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_commands_settings) utilizza il seguente comando:
 
 `ibmcloud catalog entry-visibility-set <service-id> --owner <account-id or account-email>`

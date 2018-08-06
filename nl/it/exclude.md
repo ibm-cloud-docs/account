@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -15,10 +15,10 @@ lastupdated: "2018-05-22"
 # Come nascondere una risorsa pubblica agli utenti nel tuo account
 {: #exclude}
 
-Se sei un amministratore dell'account, puoi scegliere di nascondere una risorsa pubblica per tutti gli utenti nel tuo account aggiungendoli a un elenco di esclusione attraverso l'[interfaccia riga di comando](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_catalog_entry_visibility_set) `ibmcloud`.
+Se sei un amministratore del tuo account, puoi nascondere una risorsa pubblica per tutti gli utenti nel tuo account. Aggiungi la risorsa a un elenco di esclusione con l'[interfaccia riga di comando](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) `ibmcloud`.
 {:shortdesc: .shortdesc}
 
-**Nota:** se si nasconde un elemento nel catalogo questo non verrà rimosso dalla CLI di Cloud Foundry o dagli elenchi di provisioning del servizio disponibili tramite la navigazione globale, ad esempio Elemento finanziario, Mobile, Watson e Applicazioni Web.
+**Nota:** nascondendo una risorsa nel catalogo non la si rimuove dalla CLI di Cloud Foundry o dagli elenchi di provisioning del servizio disponibili tramite la navigazione globale, ad esempio Elemento finanziario, Mobile, Watson e Applicazioni Web.
 
 ## Come faccio a sapere se dispongo dell'accesso?
 {: #find-access}
@@ -41,11 +41,11 @@ Immetti il seguente comando per impedire al tuo account di visualizzare una riso
 
 `ibmcloud catalog entry-visibility-set <resource-id> —-excludes-add <account-id or account-email>`
 
-Dopo l'indicatore excludes, puoi aggiungere un elenco separato da virgole di e-mail o ID account associati agli account.
+Dopo l'indicatore `excludes`, puoi aggiungere un elenco separato da virgole di e-mail o ID account associati agli account.
 
 Una volta eseguito il comando, il processo per nascondere la risorsa richiede 30 minuti. Dopo 30 minuti, scollegati e torna al tuo account per vedere la risorsa nascosta.
 
-**Nota:** le voci che nascondi non sono disponibili dall'interfaccia utente e dalla CLI ibmcloud. Le voci nascoste sono ancora visibili nel marketplace di Cloud Foundry, ma un piano nascosto non può essere fornito da Cloud Foundry. Gli amministratori dell'account escluso possono ancora vedere la risorsa.
+**Nota:** le voci che nascondi non sono disponibili dall'interfaccia utente e dalla CLI {{site.data.keyword.Bluemix}}. Le voci nascoste sono ancora visibili nel marketplace di Cloud Foundry, ma un piano nascosto non può essere fornito da Cloud Foundry. Gli amministratori dell'account escluso possono ancora vedere la risorsa.
 
 ## Rimuovi un account dall'elenco di esclusione
 {: #remove-exclude}
@@ -89,4 +89,4 @@ Elemento secondario Nome                                          Tipo         I
 
 Trova l'ID per un oggetto ed escludi un account con `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>`.
 
-Per ulteriori informazioni su come funziona la visibilità, consulta le [documentazioni API](https://console.bluemix.net/apidocs/682).
+Per ulteriori informazioni su come funziona la visibilità, consulta le [documentazioni API](https://console.bluemix.net/apidocs/globalcatalog).
