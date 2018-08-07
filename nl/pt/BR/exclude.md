@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -15,15 +15,15 @@ lastupdated: "2018-05-22"
 # Ocultando um recurso público de usuários em sua conta
 {: #exclude}
 
-Se você for um administrador da conta, será possível escolher ocultar um recurso público para todos em sua conta, incluindo-os em uma lista de exclusões com a [interface da linha de comandos](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_catalog_entry_visibility_set) `ibmcloud`.
+É possível ocultar um recurso público de todos em sua conta se você é o administrador dela. Inclua o recurso em uma lista de exclusão com a [interface da linha de comandos](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) do `ibmcloud`.
 {:shortdesc: .shortdesc}
 
-**Nota:** ocultar um item no catálogo não removerá o item da CLI do Cloud Foundry ou das listas de fornecimento de serviço disponíveis por meio da navegação global, como Finanças, Dispositivo móvel, Watson e apps da web.
+**Nota:** ocultar um recurso no catálogo não o remove da CLI do Cloud Foundry ou das listas de fornecimento de serviço disponíveis por meio da navegação global, como Finanças, Dispositivo móvel, Watson e Apps da web.
 
-## Como saber se tenho acesso?
+## Como eu sei se tenho acesso?
 {: #find-access}
 
-É possível usar a CLI ou a UI Identity and Access para determinar se você tem acesso para permitir que os usuários vejam um recurso privado que foi incluído à conta. Se você for um proprietário da conta, será possível fornecer acesso a um usuário na sua conta por meio da UI Identity and Access Management atribuindo uma política de acesso. Para obter mais informações, consulte [Gerenciando acesso à sua conta](access.html).
+É possível usar a CLI ou a IU de identidade e acesso para determinar se você tem acesso para permitir que os usuários visualizem um recurso privado que foi incluído na conta. Se você for um proprietário da conta, será possível fornecer acesso a um usuário na sua conta por meio da UI Identity and Access Management atribuindo uma política de acesso. Para obter mais informações, consulte [Gerenciando o acesso à sua conta](access.html).
 
 ## Etapa 1: Localizar um recurso
 {: #find-resource}
@@ -41,16 +41,16 @@ Insira o comando a seguir para evitar que sua conta veja um recurso público.
 
 `ibmcloud catalog entry-visibility-set <resource-id> —-excludes-add <account-id or account-email>`
 
-Após a sinalização de exclusões, é possível incluir uma lista separada por vírgula de e-mails ou ID da conta associado às contas.
+Após a sinalização `excludes`, é possível incluir uma lista separada por vírgula de e-mails ou um ID de conta associado a contas.
 
 Depois de executar o comando, o processo para ocultar o recurso leva 30 minutos. Após 30 minutos, efetue logout e login novamente em sua conta para ver o recurso oculto.
 
-**Nota:** as entradas ocultas não estão disponíveis na UI e na CLI do ibmcloud. As entradas ocultas ainda estão visíveis no mercado de trabalho do Cloud Foundry, mas um plano oculto não pode ser provisionado no Cloud Foundry. Os administradores da conta excluída ainda podem ver o recurso.
+**Nota:** as entradas que forem ocultadas não ficarão disponíveis na IU e na CLI do {{site.data.keyword.Bluemix}}. As entradas ocultas ainda estão visíveis no mercado de trabalho do Cloud Foundry, mas um plano oculto não pode ser provisionado no Cloud Foundry. Os administradores da conta excluída ainda podem ver o recurso.
 
-## Remover uma conta da lista de exclusões
+## Remover uma conta da lista de exclusão
 {: #remove-exclude}
 
-Insira o comando a seguir para remover um ID da conta ou e-mail da lista de exclusões.
+Insira o comando a seguir para remover um ID de conta ou um e-mail da lista de exclusão.
 
 `ibmcloud catalog entry-visibility-set <service-id> —-excludes-remove <account-id or account-email>`
 
@@ -83,4 +83,4 @@ Children           Name                                          Kind         ID
 
 Localize o ID de um objeto e exclua uma conta com o `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>`.
 
-Para obter mais informações sobre como a visibilidade funciona, veja os [Docs da API](https://console.bluemix.net/apidocs/682).
+Para obter mais informações sobre como a visibilidade funciona, veja os [Docs da API](https://console.bluemix.net/apidocs/globalcatalog).

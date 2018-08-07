@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -15,13 +15,13 @@ lastupdated: "2018-05-22"
 # Incluindo contas em seu recurso privado
 {: #include}
 
-Qualquer recurso privado que você cria é restrito por padrão. Se você for um administrador da conta, será possível escolher quem pode ver o recurso, incluindo-o em uma lista de inclusões com a [interface da linha de comandos](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_catalog_entry_visibility_set) `ibmcloud`.
+Qualquer recurso privado criado é restrito por padrão. Se você é um administrador da conta, é possível escolher quem pode ver seu recurso incluindo-o em uma lista de inclusão com a [interface da linha de comandos](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) do {{site.data.keyword.Bluemix}}.
 {:shortdesc: .shortdesc}
 
-## Como saber se tenho acesso?
+## Como eu sei se tenho acesso?
 {: #find-access}
 
-É possível usar a CLI ou a UI Identity and Access para determinar se você tem acesso para permitir que os usuários vejam um recurso privado que foi incluído à conta. Se você for um proprietário da conta, será possível fornecer acesso a um usuário na sua conta por meio da UI Identity and Access Management atribuindo uma política de acesso. Para obter mais informações, consulte [Gerenciando acesso à sua conta](access.html).
+É possível usar a CLI ou a IU de identidade e acesso para determinar se você tem acesso para permitir que os usuários visualizem um recurso privado que foi incluído na conta. Se você for um proprietário da conta, será possível fornecer acesso a um usuário na sua conta por meio da UI Identity and Access Management atribuindo uma política de acesso. Para obter mais informações, consulte [Gerenciando o acesso à sua conta](access.html).
 
 ## Etapa 1: Localizar o recurso
 {: #find-resource}
@@ -35,14 +35,14 @@ Insira o comando a seguir para permitir que uma conta veja seu recurso privado.
 
 `ibmcloud catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>`
 
-Após a sinalização includes-add, é possível incluir uma lista separada por vírgula de e-mails ou IDs associados com contas.
+Após a sinalização includes-add, é possível incluir uma lista separada por vírgula de e-mails ou IDs associados a contas.
 
 Depois de executar o comando, o processo para incluir o recurso leva 30 minutos. Após 30 minutos, efetue logout e login novamente em sua conta para ver o recurso incluído.
 
-## Remover uma conta da lista de inclusões
+## Remover uma conta da lista de inclusão
 {: #remove-exclude}
 
-Insira o comando a seguir para remover uma conta da lista de inclusões.
+Insira o comando a seguir para remover uma conta da lista `includes`.
 
 `ibmcloud catalog entry-visibility-set <service-id> --includes-remove <account-id or account-email>`
 
@@ -51,7 +51,7 @@ Insira o comando a seguir para remover uma conta da lista de inclusões.
 
 É possível gerenciar a visibilidade de seu recurso ou seus filhos.
 
-Uma lista de inclusões vazia significa que somente seus administradores de conta podem vê-la. Sua conta deve estar na lista de inclusões para todos os membros da conta para vê-la.
+Uma lista de inclusões vazia significa que somente os administradores de conta podem vê-la. Sua conta deverá estar na lista de inclusão para que todos os membros dela possam vê-la.
 
 Por exemplo, se você inserir `ibmcloud catalog service <your_service>`, será possível ver os filhos do recurso.
 
@@ -75,6 +75,6 @@ Children           Name                                          Kind         ID
 
 É possível obter o ID do recurso para a implementação filha e, então, incluir uma conta usando o comando a seguir. `ibmcloud catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`.
 
-Os filhos de um objeto podem herdar visibilidade de formas complexas. Se o objeto-filho for privado, ele terá sua própria configuração de visibilidade. No entanto, se o objeto-filho for configurado como público, ele herdará a visibilidade de seu pai. Configurar a visibilidade em um objeto-filho privado pode restringir sua visibilidade mais do que o pai.
+Os filhos de um objeto podem herdar visibilidade de formas complexas. Se o objeto-filho for privado, ele terá sua própria configuração de visibilidade. No entanto, se o objeto-filho for configurado como público, ele herdará a visibilidade de seu pai. Configurar a visibilidade em um objeto-filho privado pode fazer com que a visibilidade dele fique ainda mais restrita que a do pai.
 
-Para obter mais informações sobre como a visibilidade funciona, veja os [Docs da API](https://console.bluemix.net/apidocs/682).
+Para obter mais informações sobre como a visibilidade funciona, veja os [Docs da API](https://console.bluemix.net/apidocs/globalcatalog).

@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-07-09"
+lastupdated: "2018-07-24"
 
 ---
 
@@ -39,10 +39,10 @@ Em uma conta faturável, não há um limite no número de grupos de recursos, or
 ## Como fazer upgrade ou mudar meu tipo de conta?
 {: #changeacct}
 
-* Para converter sua avaliação de 30 dias em uma conta Lite, entre em contato com [Vendas do {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg). Depois de confirmar a elegibilidade, a equipe de Vendas compartilha um link exclusivo que pode ser usado para tentar converter sua conta. A conversão bem-sucedida não é garantida, pois as contas Lite não são totalmente compatíveis com avaliações de 30 dias.  
+* Para converter sua avaliação de 30 dias em uma conta Lite, entre em contato com [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg). Depois de confirmar a elegibilidade, a equipe de Vendas compartilha um link exclusivo que pode ser usado para tentar converter sua conta. A conversão bem-sucedida não é garantida, pois as contas Lite não são totalmente compatíveis com avaliações de 30 dias.  
 * Para fazer upgrade de uma conta Lite para uma Pré-paga, acesse **Gerenciar > Faturamento e uso > Faturamento** e clique em **Incluir cartão de crédito**.
 * Para fazer upgrade de uma conta Lite para uma da Assinatura, acesse **Gerenciar > Faturamento e uso > Faturamento** e clique em **Saiba mais**.
-* Para converter sua conta pré-paga para uma conta de assinatura, entre em contato com [Vendas do {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg).
+* Para converter sua conta pré-paga para uma conta de assinatura, entre em contato com [{{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} Sales![Ícone de link externo](../icons/launch-glyph.svg).
 * 
 ## Se eu faço upgrade de minha conta Lite, posso continuar usando minhas instâncias existentes?
 {: #nochange}
@@ -110,10 +110,10 @@ Para ajudá-lo a experimentar mais o {{site.data.keyword.Bluemix_notm}}, toda a 
 
 Se o link não for uma opção viável para você, entre em contato com o suporte de vendas para outras opções.
 
-## Há incentivos para vincular as minhas contas agora? 
+## Há incentivos para vincular minhas contas? 
 {: #al_incent}
 
-Se você vincular suas contas agora, será possível usar um crédito promocional para experimentar serviços do {{site.data.keyword.Bluemix_notm}}.
+Ao vincular suas contas, é possível usar um crédito promocional de US$ 200 para experimentar os serviços {{site.data.keyword.Bluemix_notm}}. 
 
 ## O que a inclusão dos serviços de plataforma do {{site.data.keyword.Bluemix_notm}} em minha conta do SoftLayer significa? 
 {: #al_owaffslacct}
