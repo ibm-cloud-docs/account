@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -15,13 +15,13 @@ lastupdated: "2018-05-22"
 # Ajout de comptes à votre ressource privée
 {: #include}
 
-Toute ressource privée que vous créez est restreinte par défaut. Si vous êtes administrateur du compte, vous pouvez désigner les personnes qui peuvent voir votre ressource en les ajoutant à une liste d'inclusion depuis l'[interface  de ligne de commande](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_catalog_entry_visibility_set) `ibmcloud`.
+Toute ressource privée que vous créez est restreinte par défaut. Si vous êtes administrateur du compte, vous pouvez désigner les personnes qui peuvent voir votre ressource en les ajoutant à une liste d'inclusion depuis l'[interface de ligne de commande](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) {{site.data.keyword.Bluemix}}.
 {:shortdesc: .shortdesc}
 
-## Comment savoir si j'ai accès ?
+## Comment savoir si je dispose de l'accès ?
 {: #find-access}
 
-Vous pouvez utiliser l'interface de ligne de commande ou l'interface utilisateur Identity and Access pour déterminer si vous avez le droit d'autoriser des utilisateurs spécifiques à afficher une ressource privée qui a été ajoutée au compte. Si vous êtes propriétaire d'un compte, vous pouvez donner l'accès à votre compte à un utilisateur via l'interface utilisateur Identity and Access Management en affectant une règle d'accès. Pour plus d'informations, voir [Gestion de l'accès au catalogue](access.html).
+Vous pouvez utiliser l'interface de ligne de commande ou l'interface utilisateur Identity and Access pour déterminer si vous avez le droit d'autoriser des utilisateurs spécifiques à afficher une ressource privée ajoutée au compte. Si vous êtes propriétaire d'un compte, vous pouvez donner l'accès à votre compte à un utilisateur via l'interface utilisateur Identity and Access Management en affectant une règle d'accès. Pour plus d'informations, voir [Gestion de l'accès à votre compte](access.html).
 
 ## Etape 1 : Trouver votre ressource
 {: #find-resource}
@@ -39,10 +39,10 @@ Après l'indicateur includes-add, vous pouvez ajouter, en séparant les différe
 
 Une fois la commande exécutée, le processus d'inclusion de la ressource prend environ 30 minutes. Une fois cette durée écoulée, déconnectez-vous de votre compte puis reconnectez-vous pour voir la ressource incluse.
 
-## Retrait d'un compte de la liste d'inclusions
+## Retrait d'un compte de la liste d'inclusion
 {: #remove-exclude}
 
-Entrez la commande suivante pour retirer un compte de la liste d'inclusions.
+Entrez la commande suivante pour retirer un compte de la liste `includes`.
 
 `ibmcloud catalog entry-visibility-set <service-id> --includes-remove <account-id or account-email>`
 
@@ -51,7 +51,7 @@ Entrez la commande suivante pour retirer un compte de la liste d'inclusions.
 
 Vous pouvez gérer la visibilité de votre ressource ou de ses enfants.
 
-Une liste d'inclusions vide signifie que seuls les administrateurs de votre compte peuvent voir ce dernier. Votre compte doit figurer sur la liste d'inclusions pour tous les membres du compte pour qu'il soit visible.
+Une liste d'inclusion vide signifie que seuls les administrateurs de votre compte peuvent voir ce dernier. Votre compte doit figurer dans la liste d'inclusion pour que tous les membres du compte puissent le voir.
 
 Par exemple, si vous entrez `ibmcloud catalog service <your_service>`, vous pouvez voir les enfants de la ressource.
 
@@ -83,4 +83,4 @@ Vous pouvez obtenir l'ID de ressource pour le déploiement enfant puis inclure u
 
 Les enfants d'un objet peuvent hériter de la visibilité d'une façon complexe. Si l'objet enfant est privé, il dispose de sa propre configuration de visibilité. Toutefois, si l'objet enfant est défini sur public, il hérite de la visibilité de son parent. La définition d'une visibilité sur un objet enfant privé risque de restreindre sa visibilité plus que le parent.
 
-Pour plus d'informations sur le fonctionnement de la visibilité, voir [Catalog API](https://console.bluemix.net/apidocs/682).
+Pour plus d'informations sur le fonctionnement de la visibilité, voir [Catalog API](https://console.bluemix.net/apidocs/globalcatalog).

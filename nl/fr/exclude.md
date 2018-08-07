@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -15,15 +15,15 @@ lastupdated: "2018-05-22"
 # Masquage d'une ressource publique de votre compte pour les utilisateurs
 {: #exclude}
 
-Si vous êtes administrateur du compte, vous pouvez choisir de masquer une ressource publique à tous les utilisateurs de votre compte en les ajoutant à une liste d'exclusion depuis l'[interface de ligne de commande](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_catalog_entry_visibility_set) `ibmcloud`.
+Si vous êtes administrateur de votre compte, vous pouvez masquer une ressource publique à tous les utilisateurs de votre compte. Ajoutez la ressource à une liste d'exclusion à l'aide de l'[interface de ligne de commande](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) `ibmcloud`.
 {:shortdesc: .shortdesc}
 
-**Remarque :** le masquage d'un élément dans le catalogue ne retire pas ce dernier de l'interface de ligne de commande Cloud Foundry ou des listes de mise à disposition des services disponibles via la navigation globale (Finances, Mobile, Watson ou Applications Web, par exemple).
+**Remarque :** le masquage d'une ressource dans le catalogue ne retire pas cet élément de l'interface CLI Cloud Foundry ou des listes de mise à disposition des services disponibles via la navigation globale (Finances, Mobile, Watson ou Applications Web, par exemple).
 
-## Comment savoir si j'ai accès ?
+## Comment savoir si je dispose de l'accès ?
 {: #find-access}
 
-Vous pouvez utiliser l'interface de ligne de commande ou l'interface utilisateur Identity and Access pour déterminer si vous avez le droit d'autoriser des utilisateurs spécifiques à afficher une ressource privée qui a été ajoutée au compte. Si vous êtes propriétaire d'un compte, vous pouvez donner l'accès à votre compte à un utilisateur via l'interface utilisateur Identity and Access Management en affectant une règle d'accès. Pour plus d'informations, voir [Gestion de l'accès au catalogue](access.html).
+Vous pouvez utiliser l'interface de ligne de commande ou l'interface utilisateur Identity and Access pour déterminer si vous avez le droit d'autoriser des utilisateurs spécifiques à afficher une ressource privée ajoutée au compte. Si vous êtes propriétaire d'un compte, vous pouvez donner l'accès à votre compte à un utilisateur via l'interface utilisateur Identity and Access Management en affectant une règle d'accès. Pour plus d'informations, voir [Gestion de l'accès à votre compte](access.html).
 
 ## Etape 1 : Trouver une ressource
 {: #find-resource}
@@ -41,16 +41,16 @@ Entrez la commande suivante pour empêcher votre compte de voir une ressource pu
 
 `ibmcloud catalog entry-visibility-set <resource-id> —-excludes-add <account-id or account-email>`
 
-Après l'indicateur excludes, vous pouvez ajouter, en séparant les différents éléments par des virgules, une liste d'adresses e-mail ou d'ID de compte, associés à vos comptes.
+Après l'indicateur `excludes`, vous pouvez ajouter, en séparant les différents éléments par des virgules, une liste d'adresses e-mail ou d'ID de compte, associés à vos comptes.
 
 Une fois la commande exécutée, le processus de masquage de la ressource prend environ 30 minutes. Une fois cette durée écoulée, déconnectez-vous de votre compte puis reconnectez-vous pour voir la ressource masquée.
 
-**Remarque :** les entrées que vous masquez ne sont pas disponibles depuis l'interface utilisateur et l'interface de ligne de commande ibmcloud. Les entrées masquées sont toujours visibles sur Cloud Foundry Marketplace, mais un plan masqué ne peut pas être provisionné depuis Cloud Foundry. Les administrateurs des comptes exclus peuvent toujours voir la ressource.
+**Remarque :** les entrées que vous masquez ne sont pas disponibles depuis l'interface utilisateur et l'interface de ligne de commande {{site.data.keyword.Bluemix}}. Les entrées masquées sont toujours visibles sur Cloud Foundry Marketplace, mais un plan masqué ne peut pas être provisionné depuis Cloud Foundry. Les administrateurs des comptes exclus peuvent toujours voir la ressource.
 
-## Retrait d'un compte de la liste d'exclusions
+## Retrait d'un compte de la liste d'exclusion
 {: #remove-exclude}
 
-Entrez la commande suivante pour retirer un ID de compte ou une adresse e-mail de la liste d'exclusions.
+Entrez la commande suivante pour retirer un ID de compte ou une adresse e-mail de la liste d'exclusion.
 
 `ibmcloud catalog entry-visibility-set <service-id> —-excludes-remove <account-id or account-email>`
 
@@ -89,4 +89,4 @@ Children           Name                                          Kind         ID
 
 Identifiez l'ID d'un objet et excluez un compte avec la commande `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>`.
 
-Pour plus d'informations sur le fonctionnement de la visibilité, voir [Catalog API](https://console.bluemix.net/apidocs/682).
+Pour plus d'informations sur le fonctionnement de la visibilité, voir [Catalog API](https://console.bluemix.net/apidocs/globalcatalog).

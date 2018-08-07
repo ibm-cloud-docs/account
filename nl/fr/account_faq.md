@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-07-09"
+lastupdated: "2018-07-24"
 
 ---
 
@@ -110,15 +110,15 @@ Afin de vous permettre de profiter davantage de {{site.data.keyword.Bluemix_notm
 
 Si la liaison n'est pas une option envisageable pour vous, renseignez-vous auprès de votre équipe commerciale afin de connaître les autres options possibles.
 
-## Des primes s'appliquent-elles si je lie mes comptes maintenant ? 
+## Des primes s'appliquent-elles pour la liaison de mes comptes ? 
 {: #al_incent}
 
-Si vous liez vos comptes maintenant, vous pouvez utiliser un crédit promotionnel afin d'essayer des services {{site.data.keyword.Bluemix_notm}}.
+Lorsque vous liez vos comptes, vous pouvez utiliser un crédit promotionnel de 200 $ afin d'essayer des services {{site.data.keyword.Bluemix_notm}}. 
 
 ## Que se passe-t-il si j'ajoute des services de plateforme {{site.data.keyword.Bluemix_notm}} à mon compte SoftLayer ? 
 {: #al_owaffslacct}
 
-Avec cet ajout, votre compte a accès à toutes les offres de la plateforme {{site.data.keyword.Bluemix_notm}}.  Une fois que vous avez ajouté l'offre de plateforme {{site.data.keyword.Bluemix_notm}} à votre compte, votre responsable de compte doit activer l'accès à l'offre pour l'utilisateur final.
+Avec cet ajout, votre compte a accès à toutes les offres de la plateforme {{site.data.keyword.Bluemix_notm}}. Une fois que vous avez ajouté l'offre de plateforme {{site.data.keyword.Bluemix_notm}} à votre compte, votre responsable de compte doit activer l'accès à l'offre pour l'utilisateur final.
 
 Si vous êtes responsable de compte, consultez la rubrique [Gestion des utilisateurs](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) pour en savoir plus.
 

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -33,7 +33,6 @@ Vous pouvez vouloir accorder d'autres droits aux utilisateurs de votre compte en
 
 Pour des instructions pas à pas sur l'affectation d'un accès à votre compte aux utilisateurs, voir la documentation [Accès aux ressources](/docs/iam/mngiam.html#iammanidaccser#resourceaccess).
 
-
 ## Comment vérifier si j'ai accès ?
 
 Quand vous êtes ajouté au compte d'une autre personne, cette dernière peut vous déléguer certains niveaux d'accès afin de vous permettre d'afficher les ressources privées qui ont été ajoutées au compte. Le propriétaire du compte peut aussi vous autoriser par délégation à gérer qui voit les ressources publiques dans le catalogue de compte. Vous n'avez pas cet accès par défaut. Le propriétaire du compte doit vous accorder un rôle IAM qui vous autorise à effectuer ces tâches de gestion de ressource de compte.
@@ -46,7 +45,7 @@ Pour vous servir de l'interface utilisateur Identity and Access, procédez comme
 2. Cliquez sur votre nom dans la liste Utilisateurs.
 3. Dans la section **Règles d'accès**, vous pouvez visualiser les règles d'accès qui vous sont affectées. Vous devez disposer du rôle Administrateur IAM Cloud pour le catalogue de ressources de votre compte pour mettre à jour la liste incluant les comptes afin de voir les ressources privées du catalogue.
 
-Pour utiliser l'[interface de ligne de commande d'ibmcloud](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_commands_iam), procédez comme suit :
+Pour utiliser l'[interface de ligne de commande d'ibmcloud](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_commands_iam), procédez comme suit :
 
 Entrez la commande suivante, accompagnée de votre nom d'utilisateur `ibmcloud iam user-policies <your-username>` pour voir si vous êtes administrateur des comptes sélectionnés dans l'interface de ligne de commande. Si vous n'êtes pas administrateur de l'un ou plusieurs des comptes, ces commandes renvoient une erreur indiquant que vous n'êtes pas autorisé.
 {: tip}
