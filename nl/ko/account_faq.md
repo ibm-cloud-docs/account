@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-07-09"
+lastupdated: "2018-07-24"
 
 ---
 
@@ -109,10 +109,10 @@ IBM Cloud 지원 센터에 문의하여 지원 티켓을 열고 계정 삭제를
 
 계정 연결을 이용할 수 없는 경우에는 판매 담당자에게 다른 선택사항을 문의하십시오.
 
-## 지금 계정을 연결하면 얻을 수 있는 혜택이 있습니까? 
+## 내 계정을 연결하면 혜택이 있습니까? 
 {: #al_incent}
 
-지금 계정을 연결하면 프로모션 크레딧을 사용하여 {{site.data.keyword.Bluemix_notm}} 서비스를 사용해 볼 수 있습니다.
+계정을 연결하면 $200 프로모션 크레딧을 사용하여 {{site.data.keyword.Bluemix_notm}} 서비스를 사용해 볼 수 있습니다.  
 
 ## {{site.data.keyword.Bluemix_notm}} 플랫폼 서비스를 SoftLayer 계정에 추가한다는 것은 무슨 의미입니까? 
 {: #al_owaffslacct}

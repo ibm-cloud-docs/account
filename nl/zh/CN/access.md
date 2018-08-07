@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -33,7 +33,6 @@ lastupdated: "2018-05-22"
 
 有关为帐户中的用户分配访问权的逐步指示信息，请转至[对资源的访问权](/docs/iam/mngiam.html#iammanidaccser#resourceaccess)文档。
 
-
 ## 如何检查自己是否具有访问权？
 
 将您添加到其他人的帐户时，对方可能会授予您特定级别的访问权，以便您可以查看已添加到其帐户的专用资源。帐户所有者还可能授权您管理谁可以查看帐户目录中的公共资源。缺省情况下，您没有此访问权。帐户所有者必须向您授予 IAM 角色，您才具有完成这些帐户资源管理任务的访问权。
@@ -46,7 +45,7 @@ lastupdated: "2018-05-22"
 2. 在“用户”列表中单击您的姓名。
 3. 在**访问策略**部分中，可以查看为您分配的访问策略。您必须具有帐户中目录资源的 Cloud IAM 管理员角色，才能更新包含可查看目录中专用资源的帐户的列表。
 
-要使用 [ibmcloud CLI](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_commands_iam)，请完成以下步骤：
+要使用 [ibmcloud CLI](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_commands_iam)，请完成以下步骤：
 
 使用您的用户名输入命令 `ibmcloud iam user-policies <your-username>`，以了解您是否为 CLI 中所选帐户的管理员。如果您不是帐户管理员，那么这些命令会返回错误，指明您未经授权。
 {: tip}

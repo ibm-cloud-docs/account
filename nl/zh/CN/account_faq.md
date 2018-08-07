@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-07-09"
+lastupdated: "2018-07-24"
 
 ---
 
@@ -109,10 +109,10 @@ lastupdated: "2018-07-09"
 
 如果链接不是可行的选项，请联系销售支持以获取其他选项。
 
-## 立即链接帐户有奖励吗？ 
+## 链接帐户有奖励吗？ 
 {: #al_incent}
 
-如果您立即链接帐户，那么可以使用促销信用值来试用 {{site.data.keyword.Bluemix_notm}} 服务。
+如果您链接帐户，那么可以使用 200 美元促销信用值来试用 {{site.data.keyword.Bluemix_notm}} 服务。 
 
 ## 向 SoftLayer 帐户添加 {{site.data.keyword.Bluemix_notm}} 平台服务意味着什么？ 
 {: #al_owaffslacct}

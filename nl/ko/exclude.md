@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -15,15 +15,15 @@ lastupdated: "2018-05-22"
 # 계정의 사용자에게 공용 리소스 숨기기
 {: #exclude}
 
-계정 관리자는 `ibmcloud` [명령행 인터페이스](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_catalog_entry_visibility_set)를 통해 제외 목록에 계정을 추가하여 계정의 모든 사용자로부터 이 공용 리소스를 숨기도록 선택할 수 있습니다.
+계정 관리자인 경우에는 계정의 모든 사용자에 대해 공용 리소스를 숨길 수 있습니다. `ibmcloud` [명령행 인터페이스](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set)를 사용하여 제외 목록에 리소스를 추가하십시오.
 {:shortdesc: .shortdesc}
 
-**참고:** 카탈로그에서 항목을 숨기면 Cloud Foundry CLI 또는 글로벌 탐색을 통해 사용 가능한 서비스 프로비저닝 목록(예: 금융, 모바일, Watson 및 웹 앱)에서 항목이 제거되지 않습니다.
+**참고:** 카탈로그에서 리소스를 숨기는 경우, Cloud Foundry CLI에서 또는 글로벌 탐색을 통해 사용 가능한 서비스 프로비저닝 목록(예: 금융, 모바일, Watson 및 웹 앱)에서 리소스가 제거되지는 않습니다. 
 
 ## 액세스 권한이 있는지 여부를 확인하는 방법
 {: #find-access}
 
-CLI 또는 ID 및 액세스 UI를 사용하여 사용자가 계정에 추가된 개인용 리소스를 볼 수 있도록 하는 액세스 권한이 있는지 여부를 판별할 수 있습니다. 계정 소유자는 액세스 정책을 지정하여 Identity and Access Management UI를 통해 계정의 사용자에게 액세스를 제공할 수 있습니다. 자세한 정보는 [계정에 대한 액세스 관리](access.html)를 참조하십시오.
+CLI 또는 ID 및 액세스 UI를 사용하여 계정에 추가된 개인용 리소스를 사용자가 볼 수 있도록 허용하는 액세스 권한이 있는지 여부를 판별할 수 있습니다. 계정 소유자는 액세스 정책을 지정하여 Identity and Access Management UI를 통해 계정의 사용자에게 액세스를 제공할 수 있습니다. 자세한 정보는 [계정에 대한 액세스 관리](access.html)를 참조하십시오. 
 
 ## 1단계: 리소스 찾기
 {: #find-resource}
@@ -32,7 +32,7 @@ CLI 또는 ID 및 액세스 UI를 사용하여 사용자가 계정에 추가된 
 
 ## 2단계: 서비스 세부사항 가져오기
 
-`ibmcloud catalog service <service-id or service-name>`을 입력하십시오. 이전 명령에서 찾은 내용을 사용할 때 리소스의 세부사항을 검토하려면 이 명령을 사용하십시오. 리턴되는 정보를 사용하면 리소스에 있는 항목의 하위 리소스를 표시하는 계층 구조를 볼 수 있습니다.
+`ibmcloud catalog service <service-id or service-name>`. 이전 명령에서 찾은 내용을 사용할 때 리소스의 세부사항을 검토하려면 이 명령을 사용하십시오. 리턴되는 정보를 사용하면 리소스에 있는 항목의 하위 리소스를 표시하는 계층 구조를 볼 수 있습니다.
 
 ## 3단계: 리소스 숨기기
 {: #vis-exc}
@@ -41,16 +41,16 @@ CLI 또는 ID 및 액세스 UI를 사용하여 사용자가 계정에 추가된 
 
 `ibmcloud catalog entry-visibility-set <resource-id> —-excludes-add <account-id or account-email>`
 
-제외 플래그 다음에 계정과 연관된 계정 ID 또는 이메일의 쉼표로 구분된 목록을 추가할 수 있습니다.
+`excludes` 플래그 뒤에 계정과 연관된 계정 ID 또는 쉼표로 구분된 이메일 목록을 추가할 수 있습니다. 
 
 명령을 실행한 후 리소스를 숨기는 프로세스는 30분 정도 걸립니다. 30분 후 계정에서 로그아웃한 다음 로그인하여 숨겨진 리소스를 확인하십시오.
 
-**참고:** 숨겨진 항목은 UI 및 ibmcloud CLI에서 사용할 수 없습니다. 숨겨진 항목은 Cloud Foundry 마켓플레이스에 여전히 표시되지만, 숨겨진 플랜은 Cloud Foundry에서 프로비저닝되지 않습니다. 제외된 계정의 관리자는 여전히 리소스를 볼 수 있습니다.
+**참고:** 숨겨진 항목을 UI 및 {{site.data.keyword.Bluemix}} CLI에서 사용할 수는 없습니다. 숨겨진 항목은 Cloud Foundry 마켓플레이스에 여전히 표시되지만, 숨겨진 플랜은 Cloud Foundry에서 프로비저닝되지 않습니다. 제외된 계정의 관리자는 여전히 리소스를 볼 수 있습니다.
 
 ## 제외 목록에서 계정 제거
 {: #remove-exclude}
 
-제외 목록에서 계정 ID 또는 이메일을 제거하려면 다음 명령을 입력하십시오.
+제외 목록에서 계정 ID 또는 이메일을 제거하려면 다음 명령을 입력하십시오. 
 
 `ibmcloud catalog entry-visibility-set <service-id> —-excludes-remove <account-id or account-email>`
 
@@ -61,7 +61,7 @@ CLI 또는 ID 및 액세스 UI를 사용하여 사용자가 계정에 추가된 
 
 이 예에서 공용 Cloudant 서비스로부터 계정을 제외할 수 있습니다.
 
-`ibmcloud catalog service cloudant`를 입력하면 리소스의 하위를 볼 수 있습니다. 
+`ibmcloud catalog service cloudant`를 입력하면 리소스의 하위를 볼 수 있습니다.
 
 ```
 ID                 cloudant
@@ -87,6 +87,6 @@ Children           Name                                          Kind         ID
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-오브젝트의 ID를 찾고 `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>`로 계정을 제외시키십시오. 
+오브젝트의 ID를 찾고 `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>`.
 
-가시성 작동 방식에 대한 자세한 정보는 [API 문서](https://console.bluemix.net/apidocs/682)를 참조하십시오.
+가시성 작동 방식에 대한 자세한 정보는 [API 문서](https://console.bluemix.net/apidocs/globalcatalog)를 참조하십시오.

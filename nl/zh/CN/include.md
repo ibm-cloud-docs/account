@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2018-05-22"
 # 向专用资源添加帐户
 {: #include}
 
-缺省情况下，您创建的任何专用资源都会受到限制。如果您是帐户的管理员，那么可以选择通过使用 `ibmcloud` [命令行界面](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_catalog_entry_visibility_set)将用户添加到包含列表，从而使其可以查看您的资源。
+缺省情况下，您创建的任何专用资源都会受到限制。如果您是帐户的管理员，那么可以选择通过使用 {{site.data.keyword.Bluemix}} [命令行界面](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set)将用户添加到包含列表，从而使其可以查看您的资源。
 {:shortdesc: .shortdesc}
 
 ## 如何知道自己是否具有访问权？
@@ -42,7 +42,7 @@ lastupdated: "2018-05-22"
 ## 从包含列表中除去帐户
 {: #remove-exclude}
 
-输入以下命令以从包含列表中除去帐户。
+输入以下命令以从 `includes` 列表中除去帐户。
 
 `ibmcloud catalog entry-visibility-set <service-id> --includes-remove<account-id or account-email>`
 
@@ -83,4 +83,4 @@ Children           Name                                          Kind         ID
 
 对象的子代可以通过复杂方式来继承可视性。如果子对象是私有对象，那么它会具有自己的可视性配置。但是，如果将该子对象设置为公共，那么它会继承其父代的可视性。在专用子对象上设置可视性可能会使其可视性比父代更受限制。
 
-有关可视性工作方式的更多信息，请参阅 [API 文档](https://console.bluemix.net/apidocs/682)。
+有关可视性工作方式的更多信息，请参阅 [API 文档](https://console.bluemix.net/apidocs/globalcatalog)。

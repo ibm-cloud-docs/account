@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -15,10 +15,10 @@ lastupdated: "2018-05-22"
 # 对帐户中的用户隐藏公共资源
 {: #exclude}
 
-如果您是帐户的管理员，那么可以选择通过使用 `ibmcloud` [命令行界面](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_catalog_entry_visibility_set)将帐户中的每个人添加到排除列表，从而对此人隐藏公共资源。
+如果您是帐户的管理员，那么可以选择对帐户中的所有人隐藏公共资源。使用 `ibmcloud` [命令行界面](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set)向排除列表添加资源。
 {:shortdesc: .shortdesc}
 
-**注：**在目录中隐藏项并不会从 Cloud Foundry CLI 或通过全局导航（例如，财务、移动、Watson 和 Web 应用程序）提供的服务供应列表中除去该项。
+**注：**在目录中隐藏资源并不会从 Cloud Foundry CLI 或通过全局导航（例如，财务、移动、Watson 和 Web 应用程序）提供的服务供应列表中除去该资源。
 
 ## 如何知道自己是否具有访问权？
 {: #find-access}
@@ -32,7 +32,7 @@ lastupdated: "2018-05-22"
 
 ## 步骤 2：获取该服务的详细信息
 
-输入 `ibmcloud catalog service <service-id or service-name>`。使用此命令并利用在上一个命令中找到的内容来检查资源的更多详细信息。借助返回的信息，可以查看层次结构，其中会显示资源中各项的子资源。
+输入 `ibmcloud catalog service <service-id or service-name>`. 使用此命令并利用在上一个命令中找到的内容来检查资源的更多详细信息。借助返回的信息，可以查看层次结构，其中会显示资源中各项的子资源。
 
 ## 步骤 3：隐藏资源
 {: #vis-exc}
@@ -41,11 +41,11 @@ lastupdated: "2018-05-22"
 
 `ibmcloud catalog entry-visibility-set <resource-id> —-excludes-add <account-id or account-email>`
 
-在 excludes 标志后，可以添加与帐户关联的电子邮件或帐户标识的逗号分隔列表。
+在 `excludes` 标志后，可以添加与帐户关联的电子邮件或帐户标识的逗号分隔列表。
 
 运行此命令后，隐藏资源的过程需要 30 分钟。30 分钟后，请注销并重新登录到帐户以查看隐藏的资源。
 
-**注：**隐藏的条目在 UI 和 ibmcloud CLI 中不可用。隐藏的条目仍然会在 Cloud Foundry 市场中显示，但无法通过 Cloud Foundry 供应隐藏的套餐。已排除帐户的管理员仍可以查看该资源。
+**注：**隐藏的条目在 UI 和 {{site.data.keyword.Bluemix}} CLI 中不可用。隐藏的条目仍然会在 Cloud Foundry 市场中显示，但无法通过 Cloud Foundry 供应隐藏的套餐。已排除帐户的管理员仍可以查看该资源。
 
 ## 从排除列表中除去帐户
 {: #remove-exclude}
@@ -87,6 +87,6 @@ Children           Name                                          Kind         ID
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-查找对象的标识并使用 `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>` 来排除帐户。
+查找对象的标识并使用 `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>`.
 
-有关可视性工作方式的更多信息，请参阅 [API 文档](https://console.bluemix.net/apidocs/682)。
+有关可视性工作方式的更多信息，请参阅 [API 文档](https://console.bluemix.net/apidocs/globalcatalog)。
