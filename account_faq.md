@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-07-24"
+lastupdated: "2018-08-14"
 
 ---
 
@@ -40,10 +40,11 @@ If you have a billable account, there is not a limit on the number of resource g
 {: #changeacct}
 
 * To convert your 30-day trial to a Lite account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg). After confirming eligibility, the Sales team shares a unique link that you can use to try to convert your account. Successful conversion is not guaranteed as Lite accounts are not entirely compatible with 30-day trials.  
-* To upgrade from a Lite to a Pay-As-You-Go aßccount, go to **Manage > Billing and Usage > Billing** and click **Add Credit Card**.
+* To upgrade from a Lite to a Pay-As-You-Go account, go to **Manage > Billing and Usage > Billing** and click **Add Credit Card**.
 * To upgrade from a Lite to a Subscription account, go to **Manage > Billing and Usage > Billing** and click **Learn more**.
 * To convert your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg).
 * 
+
 ## If I upgrade my Lite account, can I continue using my existing instances?
 {: #nochange}
 
