@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-06-20"
+lastupdated: "2018-08-14"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-06-20"
 # Account types
 {: #accounts}
 
-You can start building on {{site.data.keyword.Bluemix}} for free. When you are ready to grow, upgrade and pay only for what you use beyond free allowances. {{site.data.keyword.Bluemix}} has four different account types that you can choose from: Lite, Pay-As-You-Go, Subscription, and Promo. You can use any of the account types to get started in {{site.data.keyword.Bluemix_notm}} - simply choose the one that best suits your needs. 
+You can start building on {{site.data.keyword.Bluemix}} for free. When you are ready to grow, upgrade and pay only for what you use beyond free allowances. {{site.data.keyword.Bluemix}} has four different account types that you can choose from: Lite, Pay-As-You-Go, Subscription, and Promo. You can use any of the account types to get started in {{site.data.keyword.Bluemix_notm}} - simply choose the one that best suits your needs.
 {:shortdesc}
 
 ## Account comparison
@@ -24,25 +24,25 @@ You can start building on {{site.data.keyword.Bluemix}} for free. When you are r
 
 The following table provides a comparison of Lite, Pay-As-You-Go, and Subscription accounts. For more information about each account, see the sections that follow.
 
-|  | Lite  | Pay-As-You-Go | Subscription | 
+|  | Lite  | Pay-As-You-Go | Subscription |
 |--------------------|--------------------|--------------------|--------------------|
-| **Access to free Cloud Foundry memory** | 256 MB | 512 MB | 512 MB | 
+| **Access to free Cloud Foundry memory** | 256 MB | 512 MB | 512 MB |
 | **Access to [Lite service plans ![External link icon](../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window}** | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | **Access to all free plans** |  | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | **Access to the full catalog** |  | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | **No time restrictions** | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | **Guaranteed zero cost** | ![Feature available](../icons/icon_enabled.svg) |  |  |
-| **Negotiated pricing** |  |  | ![Feature available](../icons/icon_enabled.svg) | 
-| **Best for learning or building POCs** | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |  | 
-| **Fit for production use cases** |  | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) | 
+| **Negotiated pricing** |  |  | ![Feature available](../icons/icon_enabled.svg) |
+| **Best for learning or building POCs** | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |  |
+| **Fit for production use cases** |  | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 {: caption="Table 1. Comparison of {{site.data.keyword.Bluemix_notm}} accounts" caption-side="top"}
 
 ## Lite account
 {: #liteaccount}
 
-Sign up for a free Lite account to build apps and explore services with select free plans that are named Lite and displayed with a Lite tag ![Lite tag](../icons/Lite.svg) in the {{site.data.keyword.Bluemix_notm}} console. Your Lite account doesn't expire and your credit card isn't required. 
+Sign up for a free Lite account to build apps and explore services with select free plans that are named Lite and displayed with a Lite tag ![Lite tag](../icons/Lite.svg) in the {{site.data.keyword.Bluemix_notm}} console. Your Lite account doesn't expire and your credit card isn't required.
 
-You have access to a single resource group that's created for you and named `Default`. All of your services instances that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) are automatically added to this resource group. You can update the name of this resource group at any time. See [Renaming a resource group](/docs/admin/resourcegroups.html#renaming-a-resource-group) for the detailed steps. 
+You have access to a single resource group that's created for you and named `Default`. All of your services instances that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) are automatically added to this resource group. You can update the name of this resource group at any time. See [Renaming a resource group](/docs/admin/resourcegroups.html#renaming-a-resource-group) for the detailed steps.
 
 Each resource group is free. When you create a connection between a service that is managed by IAM and a Cloud Foundry app, you create an alias, which is a service instance, that counts toward your quota. See [What is an alias?](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}
@@ -56,7 +56,7 @@ You might be wondering what's offered in a Lite account. Check out the following
    * You can use one org in one {{site.data.keyword.Bluemix_notm}} region.
    * Free {{site.data.keyword.Bluemix_notm}} support.
    * You receive email notifications about your account status and quota limits.
-   * Your Cloud Foundry apps can access up to 256 MB of free, instantaneous runtime memory. 
+   * Your Cloud Foundry apps can access up to 256 MB of free, instantaneous runtime memory.
    * You can work with a Kubernetes cluster with 2 CPU and 4 GB RAM.
    * You can provision one instance of any service in the [{{site.data.keyword.Bluemix_notm}} catalog ![External link icon](../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} that has a Lite plan.
    * After 10 days of no development activity, your apps go to sleep. You can start working on new apps without having to worry about hitting memory quota limits.
@@ -82,7 +82,7 @@ If you link your {{site.data.keyword.Bluemix_notm}} billable account with a Soft
 
 With a Pay-As-You-Go account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources.
 
-You're eligible for free runtime and service allowances. If you use more than the free allowance, you receive a monthly {{site.data.keyword.Bluemix_notm}} invoice. The invoice will be in United States dollars (USD) and details your resource charges. 
+You're eligible for free runtime and service allowances. If you use more than the free allowance, you receive a monthly {{site.data.keyword.Bluemix_notm}} invoice. The invoice will be in United States dollars (USD) and details your resource charges.
 
 In many countries and regions, you can sign up for a Pay-As-You-Go account from the {{site.data.keyword.Bluemix_notm}} console. After you provide your billing and credit card information, accept the terms and conditions, and submit your account request. Then, your credit card will be validated. A confirmation email of the account information is also sent. A few minutes after you receive the confirmation email, you can return to the console to continue building your apps.
 
@@ -105,7 +105,7 @@ To sign up for a Subscription account, and for more information about subscripti
 With {{site.data.keyword.Bluemix_dedicated_notm}}, you must sign up for a one year minimum term that includes:
 
    * VPN connectivity back to your infrastructure
-   * Fully redundant environment in a {{site.data.keyword.BluSoftLayer_notm}} data center
+   * Fully redundant environment in a {{site.data.keyword.BluSoftlayer_notm}} data center
    * All supported runtimes (IBM Java Liberty, Node.js, and built-in open source runtimes)
    * All dedicated services that you select and all public {{site.data.keyword.Bluemix_notm}} services
    * Standard {{site.data.keyword.Bluemix_notm}} support
@@ -128,9 +128,9 @@ During that term, each month you pay based on the local services that you want, 
 ## Promo account
 {: #promo}
 
-Promo accounts, occasionally offered as part of special promotions, are free time boxed trials with access to most of the {{site.data.keyword.Bluemix_notm}} catalog. This account type is available by using a promo code only. The time period of validity for the account varies by promotion. 
-   
-With a Promo account, you have access to a single resource group that's created for you and named `Default`. All of your IAM-managed service instances are automatically added to this resource group. You can update the name of this resource group at any time. See [Renaming a resource group](/docs/admin/resource-groups.html#renaming-a-resource-group) for the detailed steps. 
+Promo accounts, occasionally offered as part of special promotions, are free time boxed trials with access to most of the {{site.data.keyword.Bluemix_notm}} catalog. This account type is available by using a promo code only. The time period of validity for the account varies by promotion.
+
+With a Promo account, you have access to a single resource group that's created for you and named `Default`. All of your IAM-managed service instances are automatically added to this resource group. You can update the name of this resource group at any time. See [Renaming a resource group](/docs/admin/resource-groups.html#renaming-a-resource-group) for the detailed steps.
 
 Each resource group is free. When you create a connection between a service managed by IAM and a Cloud Foundry app, you create an alias, which is a service instance, that counts toward your quota. See [What is an alias?](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-06-26"
+lastupdated: "2018-08-14"
 
 ---
 
@@ -70,7 +70,6 @@ When you are ready to grow, you can upgrade your Lite account to a Pay-As-You-Go
   * To upgrade to a Pay-As-You-Go account, go to **Manage** > **Billing and Usage** > **Billing** in the console, and click **Add Credit Card**.
   * To upgrade to a Subscription account, go to **Manage** > **Billing and Usage** > **Billing** in the console, and click **Learn more**.
 
-
 ## Pay-As-You-Go account
 {: #paygo}
 
@@ -100,7 +99,7 @@ If you link your Subscription account with a SoftLayer account, starting on the 
 With {{site.data.keyword.Bluemix_dedicated_notm}}, you must sign up for a one year minimum term that includes:
 
    * VPN connectivity back to your infrastructure
-   * Fully redundant environment in a {{site.data.keyword.BluSoftLayer_notm}} data center
+   * Fully redundant environment in a {{site.data.keyword.BluSoftlayer_notm}} data center
    * All supported runtimes (IBM Java Liberty, Node.js, and built-in open source runtimes)
    * All dedicated services that you have selected and all public {{site.data.keyword.Bluemix_notm}} services
    * Standard {{site.data.keyword.Bluemix_notm}} support
@@ -119,4 +118,6 @@ With {{site.data.keyword.Bluemix_local_notm}}, you must sign up for a one year m
    * Standard {{site.data.keyword.Bluemix_notm}} support
 
 What you pay each month during that term is based on the local services that you want, plus a Subscription account that gives you access to all public services. Usage charges of the services in {{site.data.keyword.Bluemix_notm}} Public are calculated based on your Subscription account agreement. You receive an invoice for any services that you use beyond that subscription agreement. Contact your IBM designated account representative or [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg) to get started on your agreement.
+
+
 
