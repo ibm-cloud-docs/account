@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-08-14"
+lastupdated: "2018-08-16"
 
 ---
 
@@ -43,7 +43,6 @@ If you have a billable account, there is not a limit on the number of resource g
 * To upgrade from a Lite to a Pay-As-You-Go account, go to **Manage > Billing and Usage > Billing** and click **Add Credit Card**.
 * To upgrade from a Lite to a Subscription account, go to **Manage > Billing and Usage > Billing** and click **Learn more**.
 * To convert your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg).
-* 
 
 ## If I upgrade my Lite account, can I continue using my existing instances?
 {: #nochange}
