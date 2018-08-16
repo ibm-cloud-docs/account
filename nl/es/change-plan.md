@@ -15,7 +15,7 @@ lastupdated: "2018-07-17"
 {:screen: .screen}
 {:new_window: target="_blank"}
 
-# Como cambiar su plan
+# Cómo cambiar su plan
 {: #changing}
 
 Puede cambiar su plan de servicios en {{site.data.keyword.Bluemix}} en el panel de control de la instancia de servicio si los cambios de plan están habilitados para dicho servicio.
