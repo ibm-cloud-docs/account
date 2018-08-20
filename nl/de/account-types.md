@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-06-20"
+lastupdated: "2018-08-14"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-06-20"
 # Kontotypen
 {: #accounts}
 
-Wenn Sie sich für {{site.data.keyword.Bluemix}} entscheiden, entstehen Ihnen zunächst keine Kosten. Wenn Sie Ihre Umgebung später ausbauen wollen, zahlen Sie bei einem Upgrade nur das, was Sie über die Gratisleistungen hinaus nutzen. {{site.data.keyword.Bluemix}} hat vier Kontentypen: Lite-Konto, nutzungsabhängiges Konto, Abonnementkonto und Werbeaktionskonto. Sie können jeden der Kontotypen verwenden, um Ihre Arbeit mit {{site.data.keyword.Bluemix_notm}} zu beginnen - wählen Sie einfach den für Ihre Anforderungen am besten geeigneten Kontotyp aus. 
+Wenn Sie sich für {{site.data.keyword.Bluemix}} entscheiden, entstehen Ihnen zunächst keine Kosten. Wenn Sie Ihre Umgebung später ausbauen wollen, zahlen Sie bei einem Upgrade nur das, was Sie über die Gratisleistungen hinaus nutzen. {{site.data.keyword.Bluemix}} hat vier Kontentypen: Lite-Konto, nutzungsabhängiges Konto, Abonnementkonto und Werbeaktionskonto. Sie können jeden der Kontotypen verwenden, um Ihre Arbeit mit {{site.data.keyword.Bluemix_notm}} zu beginnen - wählen Sie einfach den für Ihre Anforderungen am besten geeigneten Kontotyp aus.
 {:shortdesc}
 
 ## Kontovergleich
@@ -24,25 +24,25 @@ Wenn Sie sich für {{site.data.keyword.Bluemix}} entscheiden, entstehen Ihnen zu
 
 Die folgende Tabelle enthält einen Vergleich von Lite-Konto, nutzungsabhängigem Konto und Abonnementkonto. Weitere Informationen zu den einzelnen Konten finden Sie in den folgenden Abschnitten.
 
-|  | Lite  | Nutzungsabhängig | Abonnement | 
+|  | Lite  | Nutzungsabhängig | Abonnement |
 |--------------------|--------------------|--------------------|--------------------|
-| **Zugriff auf kostenlosen Cloud Foundry-Speicher** | 256 MB | 512 MB | 512 MB | 
+| **Zugriff auf kostenfreien Cloud Foundry-Speicher** | 256 MB | 512 MB | 512 MB |
 | **Zugriff auf [Lite-Servicepläne ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window}** | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |
-| **Zugriff auf alle kostenlosen Pläne** |  | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |
+| **Zugriff auf alle kostenfreien Pläne** |  | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |
 | **Zugriff auf den gesamten Katalog** |  | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |
 | **Keine zeitlichen Begrenzungen** | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |
 | **Kostenfreiheitsgarantie** | ![Funktion verfügbar](../icons/icon_enabled.svg) |  |  |
-| **Preisgestaltung auf Verhandlungsbasis** |  |  | ![Funktion verfügbar](../icons/icon_enabled.svg) | 
-| **Eignung für Schulung oder Erstellung von POCs** | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |  | 
-| **Eignung für den Produktionseinsatz** |  | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) | 
+| **Preisgestaltung auf Verhandlungsbasis** |  |  | ![Funktion verfügbar](../icons/icon_enabled.svg) |
+| **Eignung für Schulung oder Erstellung von POCs** | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |  |
+| **Eignung für den Produktionseinsatz** |  | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |
 {: caption="Tabelle 1. Vergleich von {{site.data.keyword.Bluemix_notm}}-Konten" caption-side="top"}
 
 ## Lite-Konto
 {: #liteaccount}
 
-Registrieren Sie sich für ein kostenloses Lite-Konto, um mit ausgewählten gebührenfreien Plänen Apps zu entwickeln und Services zu nutzen. Diese Lite-Pläne werden mit einem Lite-Tag ![Lite-Tag](../icons/Lite.svg) in der {{site.data.keyword.Bluemix_notm}}-Konsole angezeigt. Ihr Lite-Konto gilt unbefristet und Ihre Kreditkarte wird nicht benötigt. 
+Registrieren Sie sich für ein kostenfreies Lite-Konto, um mit ausgewählten gebührenfreien Plänen Apps zu entwickeln und Services zu nutzen. Diese Lite-Pläne werden mit einem Lite-Tag ![Lite-Tag](../icons/Lite.svg) in der {{site.data.keyword.Bluemix_notm}}-Konsole angezeigt. Ihr Lite-Konto gilt unbefristet und Ihre Kreditkarte wird nicht benötigt.
 
-Sie haben Zugriff auf eine einzelne Ressourcengruppe, die für Sie erstellt wurde und den Namen `Default` (Standard) trägt. Alle Serviceinstanzen, die von {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) verwaltet werden, werden dieser Ressourcengruppe automatisch hinzugefügt. Sie können den Namen dieser Ressourcengruppe jederzeit ändern. Detaillierte Schritte finden Sie unter [Ressourcengruppe umbenennen](/docs/admin/resourcegroups.html#renaming-a-resource-group). 
+Sie haben Zugriff auf eine einzelne Ressourcengruppe, die für Sie erstellt wurde und den Namen `Default` (Standard) trägt. Alle Serviceinstanzen, die von {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) verwaltet werden, werden dieser Ressourcengruppe automatisch hinzugefügt. Sie können den Namen dieser Ressourcengruppe jederzeit ändern. Detaillierte Schritte finden Sie unter [Ressourcengruppe umbenennen](/docs/admin/resourcegroups.html#renaming-a-resource-group).
 
 Jede Ressourcengruppe ist kostenfrei. Wenn Sie eine Verbindung zwischen einem von IAM verwalteten Service und einer Cloud Foundry-App erstellen, erstellen Sie einen Aliasnamen, der eine Serviceinstanz ist, die zu Ihrem Kontingent zählt. Weitere Informationen finden Sie unter [Was ist ein Aliasname?](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}
@@ -54,9 +54,9 @@ Ein Lite-Konto umfasst das nachfolgend beschriebene Angebot. Die folgende Liste 
    * Das Konto ist kostenfrei - Sie benötigen keine Kreditkarte.
    * Für das Konto existiert kein Ablaufdatum.
    * Sie können eine Organisation in einer {{site.data.keyword.Bluemix_notm}}-Region verwenden.
-   * Kostenloser {{site.data.keyword.Bluemix_notm}}-Support.
+   * Kostenfreier {{site.data.keyword.Bluemix_notm}}-Support.
    * Sie erhalten E-Mail-Benachrichtigungen über Ihren Kontostatus und Ihre Kontingentbeschränkungen.
-   * Ihre Cloud Foundry-Apps können auf bis zu 256 MB an freiem, sofort verfügbarem Laufzeitspeicher zugreifen. 
+   * Ihre Cloud Foundry-Apps können auf bis zu 256 MB an freiem, sofort verfügbarem Laufzeitspeicher zugreifen.
    * Sie haben die Möglichkeit, mit einem Kubernetes-Cluster mit 2 CPUs und 4 GB RAM zu arbeiten.
    * Sie können eine Instanz jedes Service im [{{site.data.keyword.Bluemix_notm}}-Katalog einrichten![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window}, für den ein Lite-Plan besteht.
    * Nach 10 Tagen ohne Entwicklungstätigkeit werden Ihre Apps inaktiviert. Sie können mit der Arbeit an neuen Apps beginnen, ohne sich Gedanken über begrenzten Speicher machen zu müssen.
@@ -82,14 +82,14 @@ Wenn Sie Ihr gebührenpflichtiges {{site.data.keyword.Bluemix_notm}}-Konto mit e
 
 Mit einem nutzungsabhängigen Konto können Sie mehrere Ressourcengruppen erstellen, um Kontingente ohne großen Aufwand zu verwalten und um Informationen zu Abrechnung und Nutzung für eine Gruppe von Ressourcen anzuzeigen.
 
-Ihnen stehen zusätzliche kostenlose Laufzeit- und Serviceleistungen zur Verfügung. Wenn Sie in Ihrer Nutzung über die gebührenfreien Leistungen hinausgehen, erhalten Sie eine {{site.data.keyword.Bluemix_notm}}-Rechnung für den Monat. Die Rechnung wird in USD ausgestellt und enthält die Details zu Ihren Ressourcengebühren. 
+Ihnen stehen zusätzliche kostenfreie Laufzeit- und Serviceleistungen zur Verfügung. Wenn Sie in Ihrer Nutzung über die gebührenfreien Leistungen hinausgehen, erhalten Sie eine {{site.data.keyword.Bluemix_notm}}-Rechnung für den Monat. Die Rechnung wird in USD ausgestellt und enthält die Details zu Ihren Ressourcengebühren.
 
 In vielen Ländern und Regionen können Sie sich für ein nutzungsabhängiges Konto über die {{site.data.keyword.Bluemix_notm}}-Konsole anmelden. Akzeptieren Sie nach der Angabe Ihrer Abrechnungs- und Kreditkarteninformationen die Vertragsbedingungen und übergeben Sie Ihre Anforderung. Anschließend wird Ihre Kreditkarte geprüft. Es wird auch eine Bestätigungs-E-Mail für die Kontoinformationen gesendet. Einige Minuten nach Empfang der Bestätigungs-E-Mail können Sie zur Konsole zurückkehren, um mit der Erstellung Ihrer Apps fortzufahren.
 
 Wenn Ihre Onlineanforderung für Ihr Land oder Ihre Region nicht verarbeitet werden kann, wenden Sie sich an den {{site.data.keyword.Bluemix_notm}}-Vertrieb. Verwenden Sie dazu den Link auf der
-[{{site.data.keyword.Bluemix_notm}}-Support-Seite ![Symbol für externen Link](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}. 
+[{{site.data.keyword.Bluemix_notm}}-Support-Seite ![Symbol für externen Link](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
 
-Sie können Ihr Konto für nutzungsabhängige Zahlung jederzeit in ein Abonnementkonto konvertieren. Wenden Sie sich dazu an den {{site.data.keyword.Bluemix_notm}}-Vertrieb, indem Sie den auf der [{{site.data.keyword.Bluemix_notm}}-Support-Seite ![Symbol für externen Link](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} aufgeführten Link verwenden. 
+Sie können Ihr Konto für nutzungsabhängige Zahlung jederzeit in ein Abonnementkonto konvertieren. Wenden Sie sich dazu an den {{site.data.keyword.Bluemix_notm}}-Vertrieb, indem Sie den auf der [{{site.data.keyword.Bluemix_notm}}-Support-Seite ![Symbol für externen Link](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} aufgeführten Link verwenden.
 
 ### Abonnementkonto
 
@@ -104,7 +104,7 @@ Um sich für ein Abonnementkonto anzumelden oder um weitere Informationen zu Abo
 Bei {{site.data.keyword.Bluemix_dedicated_notm}} müssen Sie sich für eine Mindestlaufzeit von einem Jahr anmelden.
 
    * VPN-Anbindung zurück zu Ihrer Infrastruktur
-   * Vollständige redundante Umgebung in einem {{site.data.keyword.BluSoftLayer_notm}}-Rechenzentrum
+   * Vollständige redundante Umgebung in einem {{site.data.keyword.BluSoftlayer_notm}}-Rechenzentrum
    * Alle unterstützten Laufzeiten (IBM Java Liberty, Node.js sowie integrierte Open-Source-Laufzeiten)
    * Alle dedizierten Services, die Sie auswählen, und alle öffentlichen {{site.data.keyword.Bluemix_notm}}-Services
    * Standard-{{site.data.keyword.Bluemix_notm}}-Unterstützung
@@ -127,9 +127,9 @@ Die monatlichen Kosten während dieser Laufzeit sind von den von Ihnen gewünsch
 ## Werbeaktionskonto
 {: #promo}
 
-Werbeaktionskonten werden gelegentlich im Rahmen besonderer Werbemaßnahmen angeboten und sind kostenlose Testkonten, bei denen Sie innerhalb eines bestimmten Zeitfensters auf den Großteil des {{site.data.keyword.Bluemix_notm}}-Katalogs zugreifen können. Dieser Kontotyp ist nur mittels eines Werbeaktionscodes verfügbar. Der Gültigkeitszeitraum des Kontos variiert je nach Werbeaktion. 
-   
-Mit einem Werbeaktionskonto haben Sie Zugriff auf eine einzelne Ressourcengruppe, die für Sie erstellt wurde und den Namen `Default` (Standard) trägt. Alle von IAM verwalteten Serviceinstanzen werden automatisch zu dieser Ressourcengruppe hinzugefügt. Sie können den Namen dieser Ressourcengruppe jederzeit ändern. Detaillierte Schritte finden Sie unter [Ressourcengruppe umbenennen](/docs/admin/resource-groups.html#renaming-a-resource-group). 
+Werbeaktionskonten werden gelegentlich im Rahmen besonderer Werbemaßnahmen angeboten und sind kostenfreie Testkonten, bei denen Sie innerhalb eines bestimmten Zeitfensters auf den Großteil des {{site.data.keyword.Bluemix_notm}}-Katalogs zugreifen können. Dieser Kontotyp ist nur mittels eines Werbeaktionscodes verfügbar. Der Gültigkeitszeitraum des Kontos variiert je nach Werbeaktion.
+
+Mit einem Werbeaktionskonto haben Sie Zugriff auf eine einzelne Ressourcengruppe, die für Sie erstellt wurde und den Namen `Default` (Standard) trägt. Alle von IAM verwalteten Serviceinstanzen werden automatisch zu dieser Ressourcengruppe hinzugefügt. Sie können den Namen dieser Ressourcengruppe jederzeit ändern. Detaillierte Schritte finden Sie unter [Ressourcengruppe umbenennen](/docs/admin/resource-groups.html#renaming-a-resource-group).
 
 Jede Ressourcengruppe ist kostenfrei. Wenn Sie eine Verbindung zwischen einem von IAM verwalteten Service und einer Cloud Foundry-App erstellen, erstellen Sie einen Aliasnamen, der eine Serviceinstanz ist, die zu Ihrem Kontingent zählt. Weitere Informationen finden Sie unter [Was ist ein Aliasname?](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}
@@ -139,8 +139,8 @@ Jede Ressourcengruppe ist kostenfrei. Wenn Sie eine Verbindung zwischen einem vo
 
 Sobald Ihr Werbeaktionskonto abläuft, werden die Apps in Ihrem Konto gestoppt. Sie können sich zwar nicht für ein weiteres {{site.data.keyword.Bluemix_notm}}-Konto registrieren, aber Sie können weiterhin auf Ihr Konto und die Konten zugreifen, für die Sie eingeladen wurden.
 
-Zum erneuten Starten Ihrer Anwendungen müssen Sie Ihr Konto in ein gebührenpflichtiges Konto umwandeln - also entweder Ihre Kreditkarteninformationen für ein nutzungsabhängiges Konto angeben oder ein Konto vom Typ 'Abonnement' erstellen. Anschließend können Sie mit der Verwendung der kostenlosen Rechen- und Serviceressourcen fortfahren. Sie zahlen nur für die Nutzung von Services, Containern und Laufzeiten, die nicht durch die kostenlosen Monatsleistungen abgedeckt sind.
+Zum erneuten Starten Ihrer Anwendungen müssen Sie Ihr Konto in ein gebührenpflichtiges Konto umwandeln - also entweder Ihre Kreditkarteninformationen für ein nutzungsabhängiges Konto angeben oder ein Konto vom Typ 'Abonnement' erstellen. Anschließend können Sie mit der Verwendung der kostenfreien Rechen- und Serviceressourcen fortfahren. Sie zahlen nur für die Nutzung von Services, Containern und Laufzeiten, die nicht durch die kostenfreien Monatsleistungen abgedeckt sind.
 
 Wenn Sie Ihr Konto nach Ablauf des Werbeaktionskontos nicht umwandeln, werden Ihre Apps und Services nach 30 Tagen entfernt. Ihr Konto wird jedoch nicht gelöscht und Sie können sich jederzeit anmelden und Ihr Konto in ein gebührenpflichtiges Konto umwandeln. Außerdem erhalten Sie E-Mail-Benachrichtigungen, die Sie daran erinnern, ein gebührenpflichtiges Konto einzurichten, damit Ihre App-Einstellungen und Servicekonfigurationen nicht verloren gehen. Wenn Sie diese Benachrichtigungen von {{site.data.keyword.Bluemix_notm}} nicht empfangen möchten, können Sie das Abonnement jederzeit beenden.
 
-Wenn Sie Ihr Konto umwandeln, werden Ihre kostenlosen Leistungen auf diejenigen begrenzt, die normalerweise von jedem Service bereitgestellt werden. Die kostenlosen Leistungen sind keine Leistungen mit unbegrenzter Nutzung mehr, die von vielen IBM Services während der kostenlosen Testperiode angeboten werden.
+Wenn Sie Ihr Konto umwandeln, werden Ihre kostenfreien Leistungen auf diejenigen begrenzt, die normalerweise von jedem Service bereitgestellt werden. Die kostenfreien Leistungen sind keine Leistungen mit unbegrenzter Nutzung mehr, die von vielen IBM Services während der kostenfreien Testperiode angeboten werden.

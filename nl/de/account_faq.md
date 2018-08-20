@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-07-24"
+lastupdated: "2018-08-16"
 
 ---
 
@@ -43,7 +43,7 @@ Wenn Sie über ein gebührenpflichtiges Konto verfügen, gibt es keinen Grenzwer
 * Um ein Upgrade von einem Lite-Konto in ein nutzungsabhängiges Konto durchzuführen, rufen Sie die Seite **Verwalten > Abrechnung und Nutzung > Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**.
 * Um ein Upgrade von einem Lite-Konto in ein Abonnementkonto durchzuführen, rufen Sie die Seite **Verwalten > Abrechnung und Nutzung > Abrechnung** auf und klicken Sie auf **Weitere Informationen**.
 * Informationen zum Konvertieren eines nutzungsabhängigen Kontos in ein Abonnementkonto erhalten Sie beim [{{site.data.keyword.Bluemix_notm}}-Vertrieb](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg).
-* 
+
 ## Kann ich meine vorhandenen Instanzen weiter verwenden, wenn ich ein Upgrade meines Lite-Kontos durchführe?
 {: #nochange}
 
