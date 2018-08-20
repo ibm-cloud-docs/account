@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-06-26"
+lastupdated: "2018-08-14"
 
 ---
 
@@ -71,7 +71,6 @@ lastupdated: "2018-06-26"
 
   * 若要升級至「訂閱」帳戶，請移至主控台中的**管理** > **計費及用量** > **計費**，然後按一下**進一步瞭解**。
 
-
 ## 隨收隨付制帳戶
 {: #paygo}
 
@@ -103,7 +102,7 @@ lastupdated: "2018-06-26"
 使用 {{site.data.keyword.Bluemix_dedicated_notm}}，您必須註冊至少一年期限，包括：
 
    * 回到您基礎架構的 VPN 連線功能
-   * {{site.data.keyword.BluSoftLayer_notm}} 資料中心內的完整備用環境
+   * {{site.data.keyword.BluSoftlayer_notm}} 資料中心內的完整備用環境
    * 所有支援的運行環境（IBM Java Liberty、Node.js 及內建開放程式碼運行環境）
    * 您選取的所有專用服務及所有公用 {{site.data.keyword.Bluemix_notm}} 服務
    * 標準 {{site.data.keyword.Bluemix_notm}} 支援
@@ -122,4 +121,6 @@ lastupdated: "2018-06-26"
    * 標準 {{site.data.keyword.Bluemix_notm}} 支援
 
 您在該期間每個月所支付的金額是根據您想要的本端服務，加上讓您存取所有公用服務的「訂閱」帳戶。{{site.data.keyword.Bluemix_notm}} Public 中的服務使用費用是根據您的「訂閱」帳戶合約來計算。您會收到關於任何超出訂閱合約之使用服務的發票。請與 IBM 指定的客戶業務代表聯絡，或與 [{{site.data.keyword.Bluemix_notm}} 銷售人員](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡，以開始您的合約。
+
+
 

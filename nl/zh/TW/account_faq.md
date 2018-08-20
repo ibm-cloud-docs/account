@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-07-24"
+lastupdated: "2018-08-16"
 
 ---
 
@@ -40,10 +40,11 @@ lastupdated: "2018-07-24"
 {: #changeacct}
 
 * 若要將 30 天試用轉換為精簡帳戶，請與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡。確認資格之後，銷售團隊會分享一個唯一鏈結，您可以用來嘗試轉換帳戶。轉換不一定會成功，因為精簡帳戶未完全與 30 天試用相容。  
-* 若要從「精簡」升級至「隨收隨付制」帳戶，請移至**管理 > 計費及用量 > 計費**，然後按一下**新增信用卡**。
+* 若要從「精簡」升級至「隨收隨付制」帳戶，請移至主控台中的**管理 > 計費及用量 > 計費**，然後按一下**新增信用卡**。
+
 * 若要從「精簡」升級至「訂閱」帳戶，請移至**管理 > 計費及用量 > 計費**，然後按一下**進一步瞭解**。
 * 若要將「隨收隨付制」轉換為「訂閱」帳戶，請與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡。
-* 
+
 ## 如果我將精簡帳戶升級，還能繼續使用我的現有實例嗎？
 {: #nochange}
 

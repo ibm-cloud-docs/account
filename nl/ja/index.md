@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-06-26"
+lastupdated: "2018-08-14"
 
 ---
 
@@ -70,7 +70,6 @@ lastupdated: "2018-06-26"
   * 従量課金 (PAYG) アカウントにアップグレードするには、コンソールで**「管理」** > **「請求および使用量」** > **「請求処理」**と進み、**「クレジット・カードの追加」**をクリックします。
   * サブスクリプション・アカウントにアップグレードするには、コンソールで**「管理」** > **「請求および使用量」** > **「請求処理」**と進み、**「詳細はこちら」**をクリックします。
 
-
 ## 「従量課金 (PAYG)」アカウント
 {: #paygo}
 
@@ -100,7 +99,7 @@ lastupdated: "2018-06-26"
 {{site.data.keyword.Bluemix_dedicated_notm}} を使用するには、以下が含まれている最低 1 年間の契約が必要になります。
 
    * ご使用のインフラストラクチャーへの VPN 接続
-   * {{site.data.keyword.BluSoftLayer_notm}} データ・センター内の完全に冗長な環境
+   * {{site.data.keyword.BluSoftlayer_notm}} データ・センター内の完全に冗長な環境
    * サポートされているすべてのランタイム (IBM Java Liberty、Node.js、および標準装備であるオープン・ソースの各ランタイム)
    * 選択したすべての専用サービスとすべての Public {{site.data.keyword.Bluemix_notm}} サービス
    * 標準 {{site.data.keyword.Bluemix_notm}} サポート
@@ -119,4 +118,6 @@ SoftLayer DirectLink やプレミアム・サポートのオプションなど�
    * 標準 {{site.data.keyword.Bluemix_notm}} サポート
 
 その期間中の月々の支払額は、希望するローカル・サービスと、すべてのパブリック・サービスへのアクセス権限を付与するサブスクリプション・アカウントに基づきます。 {{site.data.keyword.Bluemix_notm}} Public のサービスの使用料は、サブスクリプション・アカウントの契約に基づいて計算されます。 サブスクリプション契約の対象ではないサービスを使用した場合には、請求書が送付されます。 契約を開始する場合は、IBM 指定アカウント担当者または [{{site.data.keyword.Bluemix_notm}} 営業担当](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg) に連絡してください。
+
+
 

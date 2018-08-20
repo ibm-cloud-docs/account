@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-07-24"
+lastupdated: "2018-08-16"
 
 ---
 
@@ -43,7 +43,7 @@ lastupdated: "2018-07-24"
 * 要从轻量帐户升级到现买现付帐户，请转至**管理 > 计费和使用情况 > 计费**，然后单击**添加信用卡**。
 * 要从轻量帐户升级到预订帐户，请转至**管理 > 计费和使用情况 > 计费**，然后单击**了解更多**。
 * 要将现买现付帐户转换为预订帐户，请联系 [{{site.data.keyword.Bluemix_notm}} 销售人员](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部链接图标](../icons/launch-glyph.svg)。
-* 
+
 ## 如果升级轻量帐户，可以继续使用现有实例吗？
 {: #nochange}
 

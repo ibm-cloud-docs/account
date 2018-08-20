@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-06-26"
+lastupdated: "2018-08-14"
 
 ---
 
@@ -70,7 +70,6 @@ lastupdated: "2018-06-26"
   * 要升级到现买现付帐户，请转至控制台中的**管理** > **计费和使用情况** > **计费**，然后单击**添加信用卡**。
   * 要升级到预订帐户，请转至控制台中的**管理** > **计费和使用情况** > **计费**，然后单击**了解更多**。
 
-
 ## 现买现付帐户
 {: #paygo}
 
@@ -101,7 +100,7 @@ lastupdated: "2018-06-26"
 使用 {{site.data.keyword.Bluemix_dedicated_notm}} 时，对于以下项，必须至少注册为期一年的使用期限：
 
    * 连回基础架构的 VPN 连接
-   * {{site.data.keyword.BluSoftLayer_notm}} 数据中心内完全冗余的环境
+   * {{site.data.keyword.BluSoftlayer_notm}} 数据中心内完全冗余的环境
    * 所有受支持的运行时（IBM Java Liberty、Node.js 和内置开放式源代码运行时）
    * 所有您选择的专用服务以及所有公共 {{site.data.keyword.Bluemix_notm}} 服务
    * 标准 {{site.data.keyword.Bluemix_notm}} 支持
@@ -120,4 +119,6 @@ lastupdated: "2018-06-26"
    * 标准 {{site.data.keyword.Bluemix_notm}} 支持
 
 在该期限内，您每月所支付的费用取决于所需的本地服务以及预订帐户（通过该帐户，您可以访问所有公共服务）。{{site.data.keyword.Bluemix_notm}} Public 中服务的使用量费用按照您的预订帐户协议进行计算。如果使用了超过该预订协议的服务，那么您会收到相应发票。请联系 IBM 指定的客户代表或联系 [{{site.data.keyword.Bluemix_notm}} 销售人员](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部链接图标](../icons/launch-glyph.svg) 来着手处理您的协议。
+
+
 

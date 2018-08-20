@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-06-20"
+lastupdated: "2018-08-14"
 
 ---
 
@@ -24,25 +24,25 @@ lastupdated: "2018-06-20"
 
 下表提供「精簡」、「隨收隨付制」及「訂閱」帳戶的比較。如需有關每一個帳戶的詳細資訊，請參閱下列各節。
 
-|  |精簡|隨收隨付制|訂閱| 
+|  |精簡|隨收隨付制|訂閱|
 |--------------------|--------------------|--------------------|--------------------|
-|**存取免費 Cloud Foundry 記憶體** |256 MB |512 MB |512 MB | 
+|**存取免費 Cloud Foundry 記憶體** |256 MB |512 MB |512 MB |
 |**存取[精簡服務方案 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window}** | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
 |**存取所有免費方案**|  | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
 |**存取完整型錄**|  | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
 |**沒有時間限制**| ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
 |**保證零成本**| ![可用特性](../icons/icon_enabled.svg) |  |  |
-|**協議的定價**|  |  | ![可用特性](../icons/icon_enabled.svg) | 
-|**最適合學習或建置 POC**| ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |  | 
-|**適合正式作業使用案例**|  | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) | 
+|**協議的定價**|  |  | ![可用特性](../icons/icon_enabled.svg) |
+|**最適合學習或建置 POC**| ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |  |
+|**適合正式作業使用案例**|  | ![可用特性](../icons/icon_enabled.svg) | ![可用特性](../icons/icon_enabled.svg) |
 {: caption="表 1. {{site.data.keyword.Bluemix_notm}} 帳戶的比較" caption-side="top"}
 
 ## 精簡帳戶
 {: #liteaccount}
 
-請註冊免費「精簡」帳戶，以在 {{site.data.keyword.Bluemix_notm}} 主控台中選取名為「精簡」並使用「精簡」標籤 ![「精簡」標籤](../icons/Lite.svg) 所顯示的免費方案，來建置應用程式以及探索服務。「精簡」帳戶不會到期，因此不需要信用卡。 
+請註冊免費「精簡」帳戶，以在 {{site.data.keyword.Bluemix_notm}} 主控台中選取名為「精簡」並使用「精簡」標籤 ![「精簡」標籤](../icons/Lite.svg) 所顯示的免費方案，來建置應用程式以及探索服務。「精簡」帳戶不會到期，因此不需要信用卡。
 
-您可以存取為您所建立並命名為 `Default` 的單一資源群組。{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 所管理的所有服務實例都會自動新增至此資源群組。您隨時可以更新此資源群組的名稱。如需詳細步驟，請參閱[重新命名資源群組](/docs/admin/resourcegroups.html#renaming-a-resource-group)。 
+您可以存取為您所建立並命名為 `Default` 的單一資源群組。{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 所管理的所有服務實例都會自動新增至此資源群組。您隨時可以更新此資源群組的名稱。如需詳細步驟，請參閱[重新命名資源群組](/docs/admin/resourcegroups.html#renaming-a-resource-group)。
 
 每一個資源群組都是免費的。當您在 IAM 所管理的服務與 Cloud Foundry 應用程式之間建立連線時，請建立計入您配額的別名（即服務實例）。請參閱[何謂別名？](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}
@@ -56,7 +56,7 @@ lastupdated: "2018-06-20"
    * 一個 {{site.data.keyword.Bluemix_notm}} 地區可以使用一個組織。
    * 免費 {{site.data.keyword.Bluemix_notm}} 支援。
    * 您會收到帳戶狀態及配額限制的電子郵件通知。
-   * Cloud Foundry 應用程式可以同時存取最多 256 MB 的免費運行環境記憶體。 
+   * Cloud Foundry 應用程式可以同時存取最多 256 MB 的免費運行環境記憶體。
    * 您可以使用具有 2 個 CPU 及 4 GB RAM 的 Kubernetes 叢集。
    * 您可以佈建 [{{site.data.keyword.Bluemix_notm}} 型錄 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} 中有「精簡」方案之任何服務的一個實例。
    * 在 10 天沒有開發活動之後，您的應用程式就會進入休眠。您可以開始處理新的應用程式，而不需要擔心達到記憶體配額限制。
@@ -82,7 +82,7 @@ lastupdated: "2018-06-20"
 
 使用「隨收隨付制」帳戶，您可以建立多個資源群組來輕鬆管理配額，以及檢視一組資源的計費使用情形。
 
-您有資格使用免費運行環境及服務額度。如果您的用量超過免費額度，則會收到 {{site.data.keyword.Bluemix_notm}} 的月份發票。發票的計價單位為美元 (USD)，並且會詳細列出資源費用。 
+您有資格使用免費運行環境及服務額度。如果您的用量超過免費額度，則會收到 {{site.data.keyword.Bluemix_notm}} 的月份發票。發票的計價單位為美元 (USD)，並且會詳細列出資源費用。
 
 在許多國家及地區中，您可以從 {{site.data.keyword.Bluemix_notm}} 主控台註冊「隨收隨付制」帳戶。提供計費及信用卡資訊、接受條款，並提交帳戶要求之後，然後會驗證您的信用卡。此外也會傳送帳戶資訊的確認電子郵件。等收到確認電子郵件過後幾分鐘，您就可以回到主控台繼續建置應用程式。
 
@@ -104,7 +104,7 @@ lastupdated: "2018-06-20"
 使用 {{site.data.keyword.Bluemix_dedicated_notm}}，您必須註冊至少一年期限，包括：
 
    * 回到您基礎架構的 VPN 連線功能
-   * {{site.data.keyword.BluSoftLayer_notm}} 資料中心內的完整備用環境
+   * {{site.data.keyword.BluSoftlayer_notm}} 資料中心內的完整備用環境
    * 所有支援的運行環境（IBM Java Liberty、Node.js 及內建開放程式碼運行環境）
    * 您選取的所有專用服務及所有公用 {{site.data.keyword.Bluemix_notm}} 服務
    * 標準 {{site.data.keyword.Bluemix_notm}} 支援
@@ -127,9 +127,9 @@ lastupdated: "2018-06-20"
 ## 促銷帳戶
 {: #promo}
 
-促銷帳戶（偶而提供為特殊促銷的一部分）是無時間限制的試用，具有大部分 {{site.data.keyword.Bluemix_notm}} 型錄的存取權。此帳戶類型只能透過使用促銷代碼取得。帳戶有效性的時段會依促銷而不同。 
-   
-使用促銷帳戶，您可以存取為您所建立並命名為 `Default` 的單一資源群組。所有 IAM 受管理服務實例都會自動新增至此資源群組。您隨時可以更新此資源群組的名稱。如需詳細步驟，請參閱[重新命名資源群組](/docs/admin/resource-groups.html#renaming-a-resource-group)。 
+促銷帳戶（偶而提供為特殊促銷的一部分）是無時間限制的試用，具有大部分 {{site.data.keyword.Bluemix_notm}} 型錄的存取權。此帳戶類型只能透過使用促銷代碼取得。帳戶有效性的時段會依促銷而不同。
+
+使用促銷帳戶，您可以存取為您所建立並命名為 `Default` 的單一資源群組。所有 IAM 受管理服務實例都會自動新增至此資源群組。您隨時可以更新此資源群組的名稱。如需詳細步驟，請參閱[重新命名資源群組](/docs/admin/resource-groups.html#renaming-a-resource-group)。
 
 每一個資源群組都是免費的。當您在 IAM 所管理的服務與 Cloud Foundry 應用程式之間建立連線時，請建立計入您配額的別名（即服務實例）。請參閱[何謂別名？](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}

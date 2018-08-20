@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-06-20"
+lastupdated: "2018-08-14"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-06-20"
 # アカウント・タイプ
 {: #accounts}
 
-{{site.data.keyword.Bluemix}} での構築は無料で開始できます。 規模を拡大する段階になったら、アップグレードし、無料枠を超える使用分のみを支払います。 {{site.data.keyword.Bluemix}} には、ライト・アカウント、従量課金 (PAYG) アカウント、サブスクリプション・アカウント、およびプロモーション・アカウントという 4 つのアカウント・タイプがあり、これらから選択できます。どのアカウント・タイプを使用しても {{site.data.keyword.Bluemix_notm}} での作業を開始できます。ニーズに最も合致するものを選択してください。 
+{{site.data.keyword.Bluemix}} での構築は無料で開始できます。 規模を拡大する段階になったら、アップグレードし、無料枠を超える使用分のみを支払います。 {{site.data.keyword.Bluemix}} には、ライト・アカウント、従量課金 (PAYG) アカウント、サブスクリプション・アカウント、およびプロモーション・アカウントという 4 つのアカウント・タイプがあり、これらから選択できます。 どのアカウント・タイプを使用しても {{site.data.keyword.Bluemix_notm}} での作業を開始できます。単に、ニーズに最も合致するものを選択してください。
 {:shortdesc}
 
 ## アカウントの比較
@@ -24,25 +24,25 @@ lastupdated: "2018-06-20"
 
 次の表は、ライト・アカウント、従量課金 (PAYG) アカウント、およびサブスクリプション・アカウントを比較しています。 各アカウントについて詳しくは、以降のセクションを参照してください。
 
-|  | ライト  | 従量課金 (PAYG) | 　サブスクリプション | 
+|  | ライト  | 従量課金 (PAYG) | 　サブスクリプション |
 |--------------------|--------------------|--------------------|--------------------|
-| **無料 Cloud Foundry メモリーへのアクセス** | 256 MB | 512 MB | 512 MB | 
+| **無料 Cloud Foundry メモリーへのアクセス** | 256 MB | 512 MB | 512 MB |
 | **[ライト・サービス・プラン ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} へのアクセス** | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
 | **すべての無料プランへのアクセス** |  | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
 | **フルカタログへのアクセス** |  | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
 | **時間制限なし** | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
 | **保証されたゼロ・コスト** | ![フィーチャー使用可能](../icons/icon_enabled.svg) |  |  |
-| **価格交渉** |  |  | ![フィーチャー使用可能](../icons/icon_enabled.svg) | 
-| **POC の学習または構築に最適** | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |  | 
-| **実動ユース・ケース向き** |  | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) | 
+| **価格交渉** |  |  | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
+| **POC の学習または構築に最適** | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |  |
+| **実動ユース・ケース向き** |  | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
 {: caption="表 1. {{site.data.keyword.Bluemix_notm}} アカウントの比較" caption-side="top"}
 
 ## ライト・アカウント
 {: #liteaccount}
 
-無料のライト・アカウントに登録すると、![「ライト」タグ](../icons/Lite.svg) 付きで {{site.data.keyword.Bluemix_notm}} コンソールに表示される、「ライト」という名前の無料プランを選択できるサービスの探索、およびアプリの作成を行うことができます。 ライト・アカウントには有効期限はなく、クレジット・カードは必要ありません。 
+無料のライト・アカウントに登録すると、![「ライト」タグ](../icons/Lite.svg) 付きで {{site.data.keyword.Bluemix_notm}} コンソールに表示される、「ライト」という名前の無料プランを選択できるサービスの探索、およびアプリの作成を行うことができます。 ライト・アカウントには有効期限はなく、クレジット・カードは必要ありません。
 
-`Default` という名前の単一リソース・グループが作成され、それにアクセスできるようになります。 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) によって管理されるすべてのサービス・インスタンスがこのリソース・グループに自動的に追加されます。 いつでもこのリソース・グループの名前を更新できます。 詳しい手順については、[リソース・グループの名前変更](/docs/admin/resourcegroups.html#renaming-a-resource-group)を参照してください。 
+`Default` という名前の単一リソース・グループが作成され、それにアクセスできるようになります。 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) によって管理されるすべてのサービス・インスタンスがこのリソース・グループに自動的に追加されます。 いつでもこのリソース・グループの名前を更新できます。 詳しい手順については、[リソース・グループの名前変更](/docs/admin/resourcegroups.html#renaming-a-resource-group)を参照してください。
 
 各リソース・グループは無料です。 IAM によって管理されるサービスと Cloud Foundry アプリとの間に接続を作成すると、別名が作成されます。これはサービス・インスタンスであり、割り当て量に計上されます。 [別名とは?](/docs/manageapps/connecting_apps.html#what_is_alias) を参照してください。
 {: tip}
@@ -56,7 +56,7 @@ lastupdated: "2018-06-20"
    * 1 つの {{site.data.keyword.Bluemix_notm}} 地域で 1 つの組織を使用できます。
    * 無料の {{site.data.keyword.Bluemix_notm}} サポート。
    * アカウント状況および割り当て量限度に関する E メール通知を受け取ります。
-   * Cloud Foundry アプリは 256 MB までの瞬間的ランタイム・メモリーに無料でアクセスできます。 
+   * Cloud Foundry アプリは 256 MB までの瞬間的ランタイム・メモリーに無料でアクセスできます。
    * 2 CPU と 4 GB の RAM で Kubernetes クラスターでの作業ができます。
    * [{{site.data.keyword.Bluemix_notm}} カタログ ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} 内のライト・プランがあるどのサービスについても、1 つのインスタンスをプロビジョンできます。
    * 開発アクティビティーが行われない状態が 10 日間続くと、アプリはスリープ状態になります。 メモリー割り当て量限度に達することを心配することなく、新規アプリの作業を開始できます。
@@ -82,7 +82,7 @@ lastupdated: "2018-06-20"
 
 従量課金 (PAYG) アカウントを使用すると、複数のリソース・グループを作成して、リソースの集合での割り当て量の管理および有料使用量の表示を簡単に行うことができます。
 
-ランタイムおよびサービスの無料枠が適用されます。 使用量が無料枠を超えると、月次の {{site.data.keyword.Bluemix_notm}} 請求書を受け取ることになります。 請求書は米国ドル (USD) 単位であり、リソースの課金について詳しく示されます。 
+ランタイムおよびサービスの無料枠が適用されます。 使用量が無料枠を超えると、月次の {{site.data.keyword.Bluemix_notm}} 請求書を受け取ることになります。 請求書は米国ドル (USD) 単位であり、リソースの課金について詳しく示されます。
 
 多くの国および地域では、{{site.data.keyword.Bluemix_notm}} コンソールから従量課金 (PAYG) アカウントに申し込むことができます。 請求情報およびクレジット・カード情報を入力した後、契約条件を受け入れてアカウント要求を送信します。 その後、クレジット・カードが検証されます。 また、アカウント情報の確認の E メールが送信されます。 確認 E メールを受信してから数分たつと、コンソールに戻ってアプリケーションの作成を継続することができます。
 
@@ -103,14 +103,14 @@ lastupdated: "2018-06-20"
 {{site.data.keyword.Bluemix_dedicated_notm}} を使用するには、以下が含まれている最低 1 年間の契約が必要になります。
 
    * ご使用のインフラストラクチャーへの VPN 接続
-   * {{site.data.keyword.BluSoftLayer_notm}} データ・センター内の完全に冗長な環境
+   * {{site.data.keyword.BluSoftlayer_notm}} データ・センター内の完全に冗長な環境
    * サポートされているすべてのランタイム (IBM Java Liberty、Node.js、および標準装備であるオープン・ソースの各ランタイム)
    * 選択したすべての専用サービスおよびすべてのパブリック {{site.data.keyword.Bluemix_notm}} サービス
    * 標準 {{site.data.keyword.Bluemix_notm}} サポート
 
 SoftLayer DirectLink やプレミアム・サポートのオプションなど、オプション項目をオーダーすることもできます。 詳しくは、[{{site.data.keyword.Bluemix_notm}} 営業担当![外部リンク・アイコン](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}にお問い合わせください。
 
-その期間中の月々の支払額は、希望する専用サービスと、すべてのパブリック・サービスへのアクセス権限を付与するサブスクリプション・アカウントに基づきます。{{site.data.keyword.Bluemix_notm}} Public のサービスの使用料は、サブスクリプション・アカウントの契約に基づいて計算されます。 サブスクリプション契約の対象ではないサービスを使用した場合には、請求書が送付されます。 契約を開始する場合は、IBM 指定アカウント担当者または [{{site.data.keyword.Bluemix_notm}} 営業担当![外部リンク・アイコン](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}に連絡してください。
+その期間中の月々の支払額は、希望する専用サービスと、すべてのパブリック・サービスへのアクセス権限を付与するサブスクリプション・アカウントに基づきます。 {{site.data.keyword.Bluemix_notm}} Public のサービスの使用料は、サブスクリプション・アカウントの契約に基づいて計算されます。 サブスクリプション契約の対象ではないサービスを使用した場合には、請求書が送付されます。 契約を開始する場合は、IBM 指定アカウント担当者または [{{site.data.keyword.Bluemix_notm}} 営業担当![外部リンク・アイコン](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}に連絡してください。
 
 ### {{site.data.keyword.Bluemix_local_notm}} アカウント
 
@@ -121,14 +121,14 @@ SoftLayer DirectLink やプレミアム・サポートのオプションなど�
    * 選択したすべてのローカル・サービスおよびすべての Public {{site.data.keyword.Bluemix_notm}} サービスへのアクセス
    * 標準 {{site.data.keyword.Bluemix_notm}} サポート
 
-その期間中の月々の支払額は、希望するローカル・サービスと、すべてのパブリック・サービスへのアクセス権限を付与するサブスクリプション・アカウントに基づきます。{{site.data.keyword.Bluemix_notm}} Public のサービスの使用料は、サブスクリプション・アカウントの契約に基づいて計算されます。 サブスクリプション契約の対象ではないサービスを使用した場合には、請求書が送付されます。 契約を開始する場合は、IBM 指定アカウント担当者または [{{site.data.keyword.Bluemix_notm}} 営業担当![外部リンク・アイコン](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}に連絡してください。
+その期間中の月々の支払額は、希望するローカル・サービスと、すべてのパブリック・サービスへのアクセス権限を付与するサブスクリプション・アカウントに基づきます。 {{site.data.keyword.Bluemix_notm}} Public のサービスの使用料は、サブスクリプション・アカウントの契約に基づいて計算されます。 サブスクリプション契約の対象ではないサービスを使用した場合には、請求書が送付されます。 契約を開始する場合は、IBM 指定アカウント担当者または [{{site.data.keyword.Bluemix_notm}} 営業担当![外部リンク・アイコン](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}に連絡してください。
 
 ## プロモーション・アカウント
 {: #promo}
 
-特別なプロモーションの一部として時々提供されるプロモーション・アカウントは、{{site.data.keyword.Bluemix_notm}} カタログのほとんどにアクセスできる、期限を設けた無料のトライアル・アカウントです。 このアカウント・タイプは、プロモーション・コードの使用を通じてのみ使用可能です。このアカウントの有効期間は、プロモーションによって異なります。 
-   
-プロモーション・アカウントでは、ユーザーのために作成され、`Default` と命名された単一リソース・グループにアクセスできます。 IAM によって管理されるすべてのサービス・インスタンスがこのリソース・グループに自動的に追加されます。 いつでもこのリソース・グループの名前を更新できます。 詳しい手順については、[リソース・グループの名前変更](/docs/admin/resource-groups.html#renaming-a-resource-group)を参照してください。 
+特別なプロモーションの一部として時々提供されるプロモーション・アカウントは、{{site.data.keyword.Bluemix_notm}} カタログのほとんどにアクセスできる、期限を設けた無料のトライアル・アカウントです。 このアカウント・タイプは、プロモーション・コードの使用を通じてのみ使用可能です。 このアカウントの有効期間は、プロモーションによって異なります。
+
+プロモーション・アカウントでは、ユーザーのために作成され、`Default` と命名された単一リソース・グループにアクセスできます。 IAM によって管理されるすべてのサービス・インスタンスがこのリソース・グループに自動的に追加されます。 いつでもこのリソース・グループの名前を更新できます。 詳しい手順については、[リソース・グループの名前変更](/docs/admin/resource-groups.html#renaming-a-resource-group)を参照してください。
 
 各リソース・グループは無料です。 IAM によって管理されるサービスと Cloud Foundry アプリとの間に接続を作成すると、別名が作成されます。これはサービス・インスタンスであり、割り当て量に計上されます。 [別名とは?](/docs/manageapps/connecting_apps.html#what_is_alias) を参照してください。
 {: tip}
