@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-08-16"
+lastupdated: "2018-08-20"
 
 ---
 
@@ -15,6 +15,11 @@ lastupdated: "2018-08-16"
 
 # FAQs
 {: #accountfaqs}
+
+## How do I create an account?
+{: #create-account}
+
+Go to https://console.bluemix.net, and click **Create a free account**. The type of account that's created is a Lite account, which never expires. See [Lite account](/docs/account/index.html#liteaccount) for more details about the features that are included.
 
 ## Which Cloud Foundry regions can I use?
 {: #whichregions}
