@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-06-26"
+lastupdated: "2018-08-14"
 
 ---
 
@@ -70,7 +70,6 @@ Lorsque vous êtes prêt à aller plus loin, vous pouvez effectuer une mise à n
   * Pour effectuer une mise à niveau vers un compte Paiement à la carte, accédez à **Gérer** > **Facturation et utilisation** > **Facturation** dans la console puis cliquez sur **Ajouter une carte de crédit**.
   * Pour effectuer une mise à niveau vers un compte Abonnement, accédez à **Gérer** > **Facturation et utilisation** > **Facturation** dans la console puis cliquez sur **En savoir plus**.
 
-
 ## Compte Paiement à la carte
 {: #paygo}
 
@@ -100,7 +99,7 @@ Si vous liez votre compte Abonnement à un compte SoftLayer, à compter du premi
 {{site.data.keyword.Bluemix_dedicated_notm}} exige un engagement minimal d'un an qui inclut :
 
    * Une connectivité du réseau privé virtuel vers votre infrastructure
-   * Un environnement entièrement redondant dans un centre de données {{site.data.keyword.BluSoftLayer_notm}}
+   * Un environnement entièrement redondant dans un centre de données {{site.data.keyword.BluSoftlayer_notm}}
    * Tous les contextes d'exécution pris en charge (IBM Java Liberty, Node.js et des contextes d'exécution open source intégrés)
    * Tous les services dédiés que vous avez sélectionnés et tous les services {{site.data.keyword.Bluemix_notm}}
 publics
@@ -125,4 +124,6 @@ les services {{site.data.keyword.Bluemix_notm}} publics
 
 Le prix que vous payez chaque mois au cours de cet engagement dépend des services locaux que vous choisissez et inclut un compte d'abonnement qui vous permet d'accéder à tous les services publics. Le prix de l'utilisation des services dans l'environnement {{site.data.keyword.Bluemix_notm}} public est calculé selon votre contrat de compte d'abonnement. Vous recevez une facture pour tous les services que vous utilisez au-delà de la franchise
 définie dans le contrat d'abonnement. Contactez votre représentant de compte IBM ou le [service commercial {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg) pour mettre en oeuvre votre contrat.
+
+
 

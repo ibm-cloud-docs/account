@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-07-24"
+lastupdated: "2018-08-16"
 
 ---
 
@@ -40,10 +40,10 @@ Em uma conta faturável, não há um limite no número de grupos de recursos, or
 {: #changeacct}
 
 * Para converter sua avaliação de 30 dias em uma conta Lite, entre em contato com [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg). Depois de confirmar a elegibilidade, a equipe de Vendas compartilha um link exclusivo que pode ser usado para tentar converter sua conta. A conversão bem-sucedida não é garantida, pois as contas Lite não são totalmente compatíveis com avaliações de 30 dias.  
-* Para fazer upgrade de uma conta Lite para uma Pré-paga, acesse **Gerenciar > Faturamento e uso > Faturamento** e clique em **Incluir cartão de crédito**.
+* Para fazer upgrade de uma conta Lite para uma conta pré-paga, acesse **Gerenciar > Faturamento e uso > Faturamento** e clique em **Incluir cartão de crédito**.
 * Para fazer upgrade de uma conta Lite para uma da Assinatura, acesse **Gerenciar > Faturamento e uso > Faturamento** e clique em **Saiba mais**.
 * Para converter sua conta pré-paga para uma conta de assinatura, entre em contato com [{{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} Sales![Ícone de link externo](../icons/launch-glyph.svg).
-* 
+
 ## Se eu faço upgrade de minha conta Lite, posso continuar usando minhas instâncias existentes?
 {: #nochange}
 

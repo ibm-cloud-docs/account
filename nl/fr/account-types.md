@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-06-20"
+lastupdated: "2018-08-14"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-06-20"
 # Types de compte
 {: #accounts}
 
-Vous pouvez commencer à construire des applications dans {{site.data.keyword.Bluemix}} gratuitement. Lorsque vous êtes prêt à aller plus loin, effectuez une mise à niveau en ne payant que pour ce que vous utilisez au-delà des franchises. {{site.data.keyword.Bluemix}} inclut quatre types de compte : Lite, Paiement à la carte, Abonnement et Promo. Vous pouvez utiliser l'un de ces types de compte pour vous initier à {{site.data.keyword.Bluemix_notm}} - choisissez simplement le plus adapté à vos besoins. 
+Vous pouvez commencer à construire des applications dans {{site.data.keyword.Bluemix}} gratuitement. Lorsque vous êtes prêt à aller plus loin, effectuez une mise à niveau en ne payant que pour ce que vous utilisez au-delà des franchises. {{site.data.keyword.Bluemix}} inclut quatre types de compte : Lite, Paiement à la carte, Abonnement et Promo. Vous pouvez utiliser l'un de ces types de compte pour vous initier à {{site.data.keyword.Bluemix_notm}} - choisissez simplement le plus adapté à vos besoins.
 {:shortdesc}
 
 ## Comparaison des types de compte
@@ -24,25 +24,25 @@ Vous pouvez commencer à construire des applications dans {{site.data.keyword.Bl
 
 Le tableau suivant compare les types de compte Lite, Paiement à la carte et Abonnement. Pour plus d'informations sur chaque compte, voir les sections suivantes.
 
-|  | Lite  | Paiement à la carte | Abonnement | 
+|  | Lite  | Paiement à la carte | Abonnement |
 |--------------------|--------------------|--------------------|--------------------|
-| **Accès à la mémoire Cloud Foundry gratuite** | 256 Mo | 512 Mo | 512 Mo | 
+| **Accès à la mémoire Cloud Foundry gratuite** | 256 Mo | 512 Mo | 512 Mo |
 | **Accès aux [plans de service Lite![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window}** | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |
 | **Accès à tous les plans gratuits** |  | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |
 | **Accès à l'intégralité du catalogue** |  | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |
 | **Sans restrictions de temps** | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |
 | **Gratuité garantie** | ![Fonction disponible](../icons/icon_enabled.svg) |  |  |
-| **Tarification négociée** |  |  | ![Fonction disponible](../icons/icon_enabled.svg) | 
-| **Idéal pour l'apprentissage ou la génération de POC** | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |  | 
-| **Adapté aux scénarios de production** |  | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) | 
+| **Tarification négociée** |  |  | ![Fonction disponible](../icons/icon_enabled.svg) |
+| **Idéal pour l'apprentissage ou la génération de POC** | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |  |
+| **Adapté aux scénarios de production** |  | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |
 {: caption="Tableau 1. Comparaison des comptes {{site.data.keyword.Bluemix_notm}}" caption-side="top"}
 
 ## Compte Lite
 {: #liteaccount}
 
-Inscrivez-vous pour un compte Lite gratuit afin de construire des applications et d'explorer des services associés à des plans Lite gratuits affichés avec un indicateur Lite ![Indicateur Lite](../icons/Lite.svg) dans la console {{site.data.keyword.Bluemix_notm}}. Votre compte Lite n'expire pas et votre carte de crédit n'est pas nécessaire. 
+Inscrivez-vous pour un compte Lite gratuit afin de construire des applications et d'explorer des services associés à des plans Lite gratuits affichés avec un indicateur Lite ![Indicateur Lite](../icons/Lite.svg) dans la console {{site.data.keyword.Bluemix_notm}}. Votre compte Lite n'expire pas et votre carte de crédit n'est pas nécessaire.
 
-Vous avez accès à un seul groupe de ressources, créé pour vous et nommé `Default`. Toutes vos instances de service gérées par {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) sont automatiquement ajoutées à ce groupe de ressources. Vous pouvez mettre à jour ce groupe de ressources à tout moment. Pour la procédure détaillée, voir [Changement de nom d'un groupe de ressources](/docs/admin/resourcegroups.html#renaming-a-resource-group). 
+Vous avez accès à un seul groupe de ressources, créé pour vous et nommé `Default`. Toutes vos instances de service gérées par {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) sont automatiquement ajoutées à ce groupe de ressources. Vous pouvez mettre à jour ce groupe de ressources à tout moment. Pour la procédure détaillée, voir [Changement de nom d'un groupe de ressources](/docs/admin/resourcegroups.html#renaming-a-resource-group).
 
 Chaque groupe de ressources est gratuit. Lorsque vous créez une connexion entre un service géré par IAM et une application Cloud Foundry, vous créez un alias, qui est une instance de service comptabilisée dans votre quota. Voir [Qu'est-ce qu'un alias ?](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}
@@ -56,7 +56,7 @@ Vous vous demandez sûrement ce que comporte l'offre de compte Lite. La liste su
    * Vous pouvez utiliser une organisation dans une seule région {{site.data.keyword.Bluemix_notm}}.
    * Support {{site.data.keyword.Bluemix_notm}} gratuit.
    * Des notifications vous sont envoyées par courrier électronique quant au statut de votre compte et à vos limites de quota.
-   * Vos applications Cloud Foundry ont accès à 256 Mo de mémoire d'exécution gratuite et instantanée. 
+   * Vos applications Cloud Foundry ont accès à 256 Mo de mémoire d'exécution gratuite et instantanée.
    * Vous pouvez exploiter un cluster Kubernetes avec 2 UC et 4 Go de mémoire RAM.
    * Vous pouvez mettre à disposition une instance de n'importe quel service du catalogue [{{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} doté d'un plan Lite.
    * Après 10 jours sans activité de développement, vos applications passent en veille. Vous pouvez commencer à travailler sur de nouvelles applications sans vous soucier d'atteindre les limites de quota de mémoire.
@@ -82,7 +82,7 @@ Si vous liez votre compte {{site.data.keyword.Bluemix_notm}} facturable à un co
 
 Avec un compte Paiement à la carte, vous pouvez créer plusieurs groupes de ressources de manière à faciliter la gestion du quota et l'affichage de la facturation d'utilisation d'un ensemble de ressources.
 
-Vous êtes éligible pour des environnements d'exécution gratuits et des franchises de services. Si vous dépassez la franchise, vous recevrez une facture {{site.data.keyword.Bluemix_notm}} mensuelle. Cette dernière est émise en dollars américains (USD) et détaille le prix des ressources. 
+Vous êtes éligible pour des environnements d'exécution gratuits et des franchises de services. Si vous dépassez la franchise, vous recevrez une facture {{site.data.keyword.Bluemix_notm}} mensuelle. Cette dernière est émise en dollars américains (USD) et détaille le prix des ressources.
 
 Dans de nombreux pays et régions, vous pouvez créer un compte Paiement à la carte depuis la console {{site.data.keyword.Bluemix_notm}}. Après avoir fourni vos informations de facturation et de carte de crédit, acceptez les dispositions du contrat et soumettez votre demande de compte. Votre carte de crédit sera alors validée. Un courrier électronique de confirmation des informations de compte est également envoyé. Quelques minutes après la réception du courrier électronique de confirmation, vous pouvez revenir dans la console pour continuer à construire vos applications.
 
@@ -103,7 +103,7 @@ Pour souscrire à un compte Abonnement et pour plus d'informations sur les tarif
 {{site.data.keyword.Bluemix_dedicated_notm}} exige un engagement minimal d'un an qui inclut :
 
    * Une connectivité du réseau privé virtuel vers votre infrastructure
-   * Un environnement entièrement redondant dans un centre de données {{site.data.keyword.BluSoftLayer_notm}}
+   * Un environnement entièrement redondant dans un centre de données {{site.data.keyword.BluSoftlayer_notm}}
    * Tous les contextes d'exécution pris en charge (IBM Java Liberty, Node.js et des contextes d'exécution open source intégrés)
    * Tous les services dédiés sélectionnés et tous les services {{site.data.keyword.Bluemix_notm}} publics
    * Le support {{site.data.keyword.Bluemix_notm}} standard
@@ -126,9 +126,9 @@ Le prix que vous payez chaque mois au cours de cet engagement dépend des servic
 ## Compte promotionnel
 {: #promo}
 
-Les comptes de type Promo, proposés à l'occasion de promotions spéciales, sont des offres d'essai limitées dans le temps qui offrent un accès à la majorité du catalogue {{site.data.keyword.Bluemix_notm}}. Ce type de compte est disponible uniquement via l'utilisation d'un code promotionnel. La période de validité du compte varie en fonction de la promotion. 
-   
-Un compte de type Promo vous donne accès à un groupe de ressources unique, créé pour vous et nommé `Default`. Toutes vos instances de service gérées par IAM sont automatiquement ajoutées à ce groupe de ressources. Vous pouvez mettre à jour ce groupe de ressources à tout moment. Pour la procédure détaillée, voir [Changement de nom d'un groupe de ressources](/docs/admin/resource-groups.html#renaming-a-resource-group). 
+Les comptes de type Promo, proposés à l'occasion de promotions spéciales, sont des offres d'essai limitées dans le temps qui offrent un accès à la majorité du catalogue {{site.data.keyword.Bluemix_notm}}. Ce type de compte est disponible uniquement via l'utilisation d'un code promotionnel. La période de validité du compte varie en fonction de la promotion.
+
+Un compte de type Promo vous donne accès à un groupe de ressources unique, créé pour vous et nommé `Default`. Toutes vos instances de service gérées par IAM sont automatiquement ajoutées à ce groupe de ressources. Vous pouvez mettre à jour ce groupe de ressources à tout moment. Pour la procédure détaillée, voir [Changement de nom d'un groupe de ressources](/docs/admin/resource-groups.html#renaming-a-resource-group).
 
 Chaque groupe de ressources est gratuit. Lorsque vous créez une connexion entre un service géré par IAM et une application Cloud Foundry, vous créez un alias, qui est une instance de service comptabilisée dans votre quota. Voir [Qu'est-ce qu'un alias ?](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}

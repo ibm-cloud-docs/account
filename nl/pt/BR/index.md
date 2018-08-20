@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-06-26"
+lastupdated: "2018-08-14"
 
 ---
 
@@ -16,14 +16,14 @@ lastupdated: "2018-06-26"
 # Tipos de Conta
 {: #accounts}
 
-É possível escolher entre três tipos de contas do {{site.data.keyword.Bluemix}}: Lite, Pay As You Go e de Assinatura. É possível usar qualquer um dos tipos de contas para começar a usar o {{site.data.keyword.Bluemix_notm}} - escolha aquele que
+É possível escolher entre três tipos de contas do {{site.data.keyword.Bluemix}}: Lite, Pré-paga e de Assinatura. É possível usar qualquer um dos tipos de contas para começar a usar o {{site.data.keyword.Bluemix_notm}} - escolha aquele que
 melhor se adequar às suas necessidades.
 {:shortdesc}
 
 ## Comparando contas
 {: #compare}
 
-A tabela a seguir fornece uma comparação das contas Lite, Pré-paga e de Assinatura. Para obter mais detalhes sobre cada conta, veja as seções a seguir.
+A tabela a seguir fornece uma comparação das contas Lite, Pré-paga e de Assinatura. Para obter mais detalhes sobre cada conta, consulte as seções a seguir.
 
 |  | Lite  | Pré-paga | Inscrição |
 |--------------------|--------------------|--------------------|--------------------|
@@ -73,23 +73,22 @@ assinatura.
   * Para fazer upgrade para uma conta da assinatura, acesse **Gerenciar** > **Faturamento e
 uso** > **Faturamento** no console e clique em **Saiba mais**.
 
-
-## Conta de Pagamento por uso
+## Conta pré-paga
 {: #paygo}
 
 Com uma conta pré-paga, é possível criar múltiplos grupos de recursos para gerenciar facilmente a cota e visualizar o uso de faturamento para um conjunto de recursos. Seus encargos se baseiam em seu uso de cálculos e serviços do {{site.data.keyword.Bluemix_notm}}. Você é elegível para abonos grátis de tempo de execução e serviço. Se você usar além do abono grátis, receberá uma fatura mensal do {{site.data.keyword.Bluemix_notm}}. A fatura será em dólares dos Estados Unidos (US$) e fornecerá detalhes sobre os encargos do recurso.
 
-Se você vincular sua conta Pay As You Go a uma conta do SoftLayer, começando no primeiro dia do próximo mês, seus encargos combinados serão incluídos na fatura do {{site.data.keyword.Bluemix_notm}}.
+Se você vincular sua conta pré-paga a uma conta do SoftLayer, começando no primeiro dia do próximo mês, seus encargos combinados serão incluídos na fatura do {{site.data.keyword.Bluemix_notm}}.
 {: tip}
 
-É possível fazer upgrade para uma conta Pay As You Go por meio do console do {{site.data.keyword.Bluemix_notm}}. Depois de fornecer suas informações de faturamento e cartão de crédito, aceite os termos e condições e envie sua solicitação de conta. Em seguida, seu cartão de crédito será validado. Você também receberá um e-mail de confirmação sobre as informações da conta. Alguns minutos após o recebimento do e-mail de confirmação será possível retornar ao console para continuar a construção de seus apps. Se a sua solicitação on-line não puder ser processada para seu país ou região, entre em contato com o [Suporte ao {{site.data.keyword.Bluemix_notm}}](/docs/get-support/howtogetsupport.html).
+É possível fazer upgrade para uma conta pré-paga por meio do console do {{site.data.keyword.Bluemix_notm}}. Depois de fornecer suas informações de faturamento e cartão de crédito, aceite os termos e condições e envie sua solicitação de conta. Em seguida, seu cartão de crédito será validado. Você também receberá um e-mail de confirmação sobre as informações da conta. Alguns minutos após o recebimento do e-mail de confirmação, é possível retornar ao console para continuar a construção de seus apps. Se a sua solicitação on-line não puder ser processada para seu país ou região, entre em contato com o [Suporte ao {{site.data.keyword.Bluemix_notm}}](/docs/get-support/howtogetsupport.html).
 
-Você obterá um crédito promocional de US$ 200 depois de fazer upgrade para uma conta Pay As You Go e não será necessária nenhuma ação para começar a utilizá-lo. Seu crédito de US$ 200 é válido por 30 dias e é aplicado automaticamente à sua fatura. O crédito não pode ser usado com ofertas de terceiros.
+Você obterá um crédito promocional de US$ 200 depois de fazer upgrade para uma conta pré-paga e não será necessária nenhuma ação para começar a utilizá-lo. Seu crédito de US$ 200 é válido por 30 dias e é aplicado automaticamente à sua fatura. O crédito não pode ser usado com ofertas de terceiros.
 
 ### Fazendo upgrade de sua conta
 {: #upgrade-to-subscription}
 
-Será possível fazer upgrade de sua conta Pay As You Go para uma conta de Assinatura a qualquer momento. Entre em contato com [Vendas do {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg) para obter mais detalhes.
+Será possível fazer upgrade de sua conta pré-paga para uma conta de Assinatura a qualquer momento. Entre em contato com [Vendas do {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg) para obter mais detalhes.
 
 ## Conta Assinatura
 
@@ -104,7 +103,7 @@ Se você vincular sua conta de Assinatura a uma conta do SoftLayer, começando n
 Com o {{site.data.keyword.Bluemix_dedicated_notm}}, é necessário inscrever-se para um prazo mínimo de um ano que inclui:
 
    * Conectividade VPN de volta para a sua infraestrutura
-   * Ambiente completamente redundante em um data center do {{site.data.keyword.BluSoftLayer_notm}}
+   * Ambiente completamente redundante em um data center do {{site.data.keyword.BluSoftlayer_notm}}
    * Todos os tempos de execução suportados (IBM Java Liberty, Node.js e tempos de execução de software livre integrados)
    * Todos os serviços dedicados selecionados e todos os serviços públicos do {{site.data.keyword.Bluemix_notm}}
    * Suporte {{site.data.keyword.Bluemix_notm}} padrão
@@ -129,4 +128,6 @@ entregue atualizações de forma automática e consistente.
 O que é pago todos os meses durante esse prazo é baseado nos serviços locais que você deseja, além de uma conta Assinatura que fornece acesso a todos os serviços públicos. Os encargos de uso dos serviços no {{site.data.keyword.Bluemix_notm}} Público são calculados com base no contrato da conta da assinatura. Você recebe
 uma fatura para os serviços usados, além desse contrato de
 assinatura. Entre em contato com o representante de conta designado da IBM ou com [Vendas do {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg) para iniciar seu contrato.
+
+
 
