@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-06-26"
+lastupdated: "2018-08-14"
 
 ---
 
@@ -70,7 +70,6 @@ lastupdated: "2018-06-26"
   * 종량과금제 계정으로 업그레이드하려면 콘솔의 **관리** > **청구 및 사용량** > **청구**로 이동하여 **신용카드 추가**를 클릭하십시오.
   * 구독 계정으로 업그레이드하려면 콘솔의 **관리** > **청구 및 사용량** > **청구**로 이동하여 **자세히 보기**를 클릭하십시오.
 
-
 ## 종량과금제 계정
 {: #paygo}
 
@@ -100,7 +99,7 @@ lastupdated: "2018-06-26"
 {{site.data.keyword.Bluemix_dedicated_notm}}에서는 다음을 포함하여 최소 기간인 1년 동안은 등록해야 합니다.
 
    * VPN 연결을 인프라에 다시 연결
-   * {{site.data.keyword.BluSoftLayer_notm}} 데이터 센터의 완전한 중복 환경
+   * {{site.data.keyword.BluSoftlayer_notm}} 데이터 센터의 완전한 중복 환경
    * 지원되는 모든 런타임(IBM Java Liberty, Node.js 및 기본 제공 오픈 소스 런타임)
    * 선택한 모든 데디케이티드 서비스 및 모든 퍼블릭 {{site.data.keyword.Bluemix_notm}} 서비스
    * 표준 {{site.data.keyword.Bluemix_notm}} 지원
@@ -119,4 +118,6 @@ SoftLayer DirectLink 또는 프리미엄 지원 옵션과 같은 선택적 항�
    * 표준 {{site.data.keyword.Bluemix_notm}} 지원
 
 해당 기간 동안 매월 지불하는 항목은 원하는 로컬 서비스 및 모든 퍼블릭 서비스에 대한 액세스를 제공하는 구독 계정을 기반으로 합니다. {{site.data.keyword.Bluemix_notm}} 퍼블릭에서 서비스의 사용 비용은 구독 계정 계약을 기반으로 계산됩니다. 해당 구독 계약 외에 추가로 사용하는 모든 서비스에 대해 송장이 발급됩니다. 계약에 착수하려면 IBM이 지정한 계정 담당자 또는 [{{site.data.keyword.Bluemix_notm}} 영업 팀](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg)에 문의하십시오.
+
+
 

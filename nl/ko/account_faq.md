@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-07-24"
+lastupdated: "2018-08-16"
 
 ---
 
@@ -43,7 +43,7 @@ lastupdated: "2018-07-24"
 * 라이트에서 종량과금제 계정으로 업그레이드하려면 **관리 > 청구 및 사용량 > 청구**로 이동하여 **신용카드 추가**를 클릭하십시오.
 * 라이트에서 구독 계정으로 업그레이드하려면 **관리 > 청구 및 사용량 > 청구**로 이동하여 **자세히 보기**를 클릭하십시오.
 * 종량과금제 계정을 구독 계정으로 변환하려면 [{{site.data.keyword.Bluemix_notm}} 영업 팀](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg)에 문의하십시오.
-* 
+
 ## 라이트 계정을 업그레이드해도 기존 인스턴스를 계속 사용할 수 있습니까?
 {: #nochange}
 
@@ -64,7 +64,7 @@ lastupdated: "2018-07-24"
 
 IBM Cloud 지원 센터에 문의하여 지원 티켓을 열고 계정 삭제를 요청해야 합니다. 이전 계정과 연관된 데이터가 있어 이 데이터를 저장한 다음 새 계정으로 이동하려면 이메일에 이 정보를 포함시키십시오.
 
-## 지원은 어떻게 받습니까?
+## 도움이 필요하십니까?
 {: #contactsupport}
 
 {{site.data.keyword.Bluemix_notm}} 구동과 실행 또는 {{site.data.keyword.Bluemix_notm}} 탐색에서 도움을 받으려면 콘솔에서 대화 아이콘을 사용하여 당사와 대화를 시작하십시오.
@@ -112,7 +112,7 @@ IBM Cloud 지원 센터에 문의하여 지원 티켓을 열고 계정 삭제를
 ## 내 계정을 연결하면 혜택이 있습니까? 
 {: #al_incent}
 
-계정을 연결하면 $200 프로모션 크레딧을 사용하여 {{site.data.keyword.Bluemix_notm}} 서비스를 사용해 볼 수 있습니다.  
+계정을 연결하면 $200 프로모션 크레딧을 사용하여 {{site.data.keyword.Bluemix_notm}} 서비스를 사용해 볼 수 있습니다. 
 
 ## {{site.data.keyword.Bluemix_notm}} 플랫폼 서비스를 SoftLayer 계정에 추가한다는 것은 무슨 의미입니까? 
 {: #al_owaffslacct}
