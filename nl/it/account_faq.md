@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-07-24"
+lastupdated: "2018-08-16"
 
 ---
 
@@ -43,7 +43,7 @@ Se hai un account fatturabile, non c'è un limite al numero di gruppi di risorse
 * Per aggiornare un account Lite in un account Pagamento a consumo, vai a **Gestisci > Fatturazione e utilizzo > Fatturazione** e fai clic su **Aggiungi carta di credito**.
 * Per aggiornare un account Lite in un account Sottoscrizione, vai a **Gestisci > Fatturazione e utilizzo > Fatturazione** e fai clic su **Ulteriori informazioni**.
 * Per convertire il tuo account Pagamento a consumo in un account Sottoscrizione, contatta il settore [Vendite {{site.data.keyword.Bluemix_notm}} ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icona link esterno](../icons/launch-glyph.svg).
-* 
+
 ## Se eseguo l'upgrade del mio account Lite, posso continuare a utilizzare le mie istanze esistenti?
 {: #nochange}
 
@@ -110,7 +110,7 @@ Per aiutarti a sperimentare ulteriormente tutte le nuove funzionalità di {{site
 
 Se il collegamento non è un'opzione valida per te, contatta il supporto delle vendite per le altre opzioni.
 
-## Ci sono incentivi per collegare i miei account?  
+## Ci sono incentivi per collegare i miei account? 
 {: #al_incent}
 
 Quando colleghi i tuoi account, puoi utilizzare un credito promozionale di $200 per provare i servizi {{site.data.keyword.Bluemix_notm}}. 

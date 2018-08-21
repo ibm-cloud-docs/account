@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-06-26"
+lastupdated: "2018-08-14"
 
 ---
 
@@ -70,7 +70,6 @@ Quando sei pronto a crescere, puoi eseguire l'upgrade del tuo account Lite a un 
   * Per eseguire l'aggiornamento a un account Pagamento a consumo, nella console vai a **Gestisci** > **Fatturazione e utilizzo** > **Fatturazione** e fai clic su **Aggiungi carta di credito**.
   * Per eseguire l'upgrade a un account Sottoscrizione, vai a **Gestisci** > **Fatturazione e utilizzo** > **Fatturazione** nella console e fai clic su **Ulteriori informazioni**.
 
-
 ## Account Pagamento a consumo
 {: #paygo}
 
@@ -101,7 +100,7 @@ Se colleghi il tuo account Sottoscrizione a un account SoftLayer, a partire dal 
 Con {{site.data.keyword.Bluemix_dedicated_notm}}, devi registrarti per un periodo minimo di un anno che include:
 
    * Connettività VPN alla tua infrastruttura
-   * Ambiente totalmente ridondante in un data center {{site.data.keyword.BluSoftLayer_notm}}
+   * Ambiente totalmente ridondante in un data center {{site.data.keyword.BluSoftlayer_notm}}
    * Tutti i runtime supportati (IBM Java Liberty, Node.js e runtime open source integrati)
    * Tutti i servizi dedicati da te selezionati e tutti i servizi {{site.data.keyword.Bluemix_notm}} pubblici
    * Supporto {{site.data.keyword.Bluemix_notm}} standard
@@ -123,4 +122,6 @@ di fornire automaticamente e costantemente gli aggiornamenti
 
 Quello che paghi ogni mese durante questo periodo si basa sui servizi locali che desideri, oltre a un account Sottoscrizione che ti dà accesso a tutti i servizi pubblici. Gli addebiti di utilizzo dei servizi in {{site.data.keyword.Bluemix_notm}} pubblico sono calcolati in base all'accordo del tuo account di sottoscrizione. Ricevi una fattura per tutti i servizi che utilizzi
 oltre i limiti previsti da tale accordo di sottoscrizione. Contatta il tuo rappresentante dell'account designato IBM oppure il settore [Vendite di {{site.data.keyword.Bluemix_notm}} ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icona link esterno](../icons/launch-glyph.svg) per un'introduzione al tuo accordo.
+
+
 
