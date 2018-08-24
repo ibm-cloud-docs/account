@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-06-20"
+lastupdated: "2018-08-14"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-06-20"
 # Tipos de cuentas
 {: #accounts}
 
-Puede empezar a crear en {{site.data.keyword.Bluemix}} gratis. Cuando esté preparado para crecer, actualice y pague solo por uso más allá de las concesiones gratuitas. {{site.data.keyword.Bluemix}} tiene cuatro tipos de cuenta diferentes de los que puede elegir: Lite, Pago según uso, Suscripción y Promocional. Puede utilizar cualquier tipo de cuenta para empezar en {{site.data.keyword.Bluemix_notm}}, elija aquel que se adapte mejor a sus necesidades. 
+Puede empezar a crear en {{site.data.keyword.Bluemix}} gratis. Cuando esté preparado para crecer, actualice y pague solo por uso más allá de las concesiones gratuitas. {{site.data.keyword.Bluemix}} tiene cuatro tipos de cuenta diferentes de los que puede elegir: Lite, Pago según uso, Suscripción y Promocional. Puede utilizar cualquier tipo de cuenta para empezar en {{site.data.keyword.Bluemix_notm}}, elija aquel que se adapte mejor a sus necesidades.
 {:shortdesc}
 
 ## Comparación de cuentas
@@ -24,25 +24,25 @@ Puede empezar a crear en {{site.data.keyword.Bluemix}} gratis. Cuando esté prep
 
 La siguiente tabla proporciona una comparación de las cuentas Lite, Pago según uso y Suscripción. Para obtener más información sobre cada cuenta, consulte las siguientes secciones.
 
-|  | Lite  | Pago según uso | Suscripción | 
+|  | Lite  | Pago según uso | Suscripción |
 |--------------------|--------------------|--------------------|--------------------|
-| **Acceso a memoria de Cloud Foundry gratuita** | 256 MB | 512 MB | 512 MB | 
+| **Acceso a memoria de Cloud Foundry gratuita** | 256 MB | 512 MB | 512 MB |
 | **Acceso a [planes de servicio Lite ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window}** | ![Característica disponible](../icons/icon_enabled.svg) | ![Característica disponible](../icons/icon_enabled.svg) | ![Característica disponible](../icons/icon_enabled.svg) |
 | **Acceso a todos los planes gratuitos** |  | ![Característica disponible](../icons/icon_enabled.svg) | ![Característica disponible](../icons/icon_enabled.svg) |
 | **Acceso al catálogo completo** |  | ![Característica disponible](../icons/icon_enabled.svg) | ![Característica disponible](../icons/icon_enabled.svg) |
 | **Sin restricciones de tiempo** | ![Característica disponible](../icons/icon_enabled.svg) | ![Característica disponible](../icons/icon_enabled.svg) | ![Característica disponible](../icons/icon_enabled.svg) |
 | **Coste cero garantizado** | ![Característica disponible](../icons/icon_enabled.svg) |  |  |
-| **Precios negociados** |  |  | ![Característica disponible](../icons/icon_enabled.svg) | 
-| **Lo mejor para el aprendizaje o la creación de pruebas de concepto** | ![Característica disponible](../icons/icon_enabled.svg) | ![Característica disponible](../icons/icon_enabled.svg) |  | 
-| **Ajuste para casos de uso de producción** |  | ![Característica disponible](../icons/icon_enabled.svg) | ![Característica disponible](../icons/icon_enabled.svg) | 
+| **Precios negociados** |  |  | ![Característica disponible](../icons/icon_enabled.svg) |
+| **Lo mejor para el aprendizaje o la creación de pruebas de concepto** | ![Característica disponible](../icons/icon_enabled.svg) | ![Característica disponible](../icons/icon_enabled.svg) |  |
+| **Ajuste para casos de uso de producción** |  | ![Característica disponible](../icons/icon_enabled.svg) | ![Característica disponible](../icons/icon_enabled.svg) |
 {: caption="Tabla 1. Comparación de cuentas de {{site.data.keyword.Bluemix_notm}}" caption-side="top"}
 
 ## Cuenta Lite
 {: #liteaccount}
 
-Registrarse para una cuenta Lite gratuita para crear apps y explorar servicios con planes gratuitos seleccionados llamados Lite y que se muestran con la etiqueta Lite ![Etiqueta Lite](../icons/Lite.svg) en la consola de {{site.data.keyword.Bluemix_notm}}. Su cuenta Lite no caduca y la tarjeta de crédito no es necesaria. 
+Registrarse para una cuenta Lite gratuita para crear apps y explorar servicios con planes gratuitos seleccionados llamados Lite y que se muestran con la etiqueta Lite ![Etiqueta Lite](../icons/Lite.svg) en la consola de {{site.data.keyword.Bluemix_notm}}. Su cuenta Lite no caduca y la tarjeta de crédito no es necesaria.
 
-Tiene acceso a un único grupo de recursos creado para usted y llamado `Default`. Todas sus instancias de servicio gestionadas por la Gestión de identidad y acceso de {{site.data.keyword.Bluemix_notm}} (IAM) se añaden automáticamente a este grupo de recursos. Puede actualizar en nombre de este grupo de recursos en cualquier momento. Consulte [Cómo renombrar un grupo de recursos](/docs/admin/resourcegroups.html#renaming-a-resource-group) para obtener los pasos detallados. 
+Tiene acceso a un único grupo de recursos creado para usted y llamado `Default`. Todas sus instancias de servicio gestionadas por la Gestión de identidad y acceso de {{site.data.keyword.Bluemix_notm}} (IAM) se añaden automáticamente a este grupo de recursos. Puede actualizar en nombre de este grupo de recursos en cualquier momento. Consulte [Cómo renombrar un grupo de recursos](/docs/admin/resourcegroups.html#renaming-a-resource-group) para obtener los pasos detallados.
 
 Cada grupo de recursos es gratuito. Cuando crea una conexión entre un servicio gestionado por IAM y una app de Cloud Foundry, crea un alias, que es una instancia de servicio que cuenta en el cálculo de su cuota. Consulte [¿Qué es un alias?](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}
@@ -56,7 +56,7 @@ Se estará preguntando qué se ofrece en una cuenta Lite. Consulte la siguiente 
    * Puede utilizar una organización en una región de {{site.data.keyword.Bluemix_notm}}.
    * Soporte de {{site.data.keyword.Bluemix_notm}} gratuito.
    * Recibirá notificaciones de correo electrónico sobre el estado de la cuenta y los límites de la cuota.
-   * Sus apps de Cloud Foundry pueden acceder hasta un máximo de 256 MB de memoria de tiempo de ejecución gratuita e instantánea. 
+   * Sus apps de Cloud Foundry pueden acceder hasta un máximo de 256 MB de memoria de tiempo de ejecución gratuita e instantánea.
    * Puede trabajar con un clúster de Kubernetes con 2 CPU y 4 GB de RAM.
    * Puede suministrar una instancia de cualquier servicio en el [catálogo de {{site.data.keyword.Bluemix_notm}}![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} que tenga un plan Lite.
    * Después de 10 días de inactividad de desarrollo, sus apps entrarán en suspensión. Puede empezar a trabajar en apps nuevas sin tener que preocuparse por llegar a los límites de cuota de memoria.
@@ -82,7 +82,7 @@ Si enlaza su cuenta facturable de {{site.data.keyword.Bluemix_notm}} con una cue
 
 Con una cuenta de Pago según uso, puede crear varios grupos de recursos para gestionar fácilmente la cuota y ver el uso de facturación de un conjunto de recursos.
 
-Puede optar a concesiones de tiempo de ejecución y de servicio gratuitas. Si utiliza más que la concesión gratuita, recibirá una factura mensual de {{site.data.keyword.Bluemix_notm}}. La factura estará en dólares de Estados Unidos (USD) y detallará los cargos de recursos. 
+Puede optar a concesiones de tiempo de ejecución y de servicio gratuitas. Si utiliza más que la concesión gratuita, recibirá una factura mensual de {{site.data.keyword.Bluemix_notm}}. La factura estará en dólares de Estados Unidos (USD) y detallará los cargos de recursos.
 
 En muchos países y regiones, puede registrarse para una cuenta Pago según uso desde la consola de {{site.data.keyword.Bluemix_notm}}. Tras proporcionar la información de la tarjeta de crédito y la facturación, aceptar los términos y condiciones y enviar una solicitud de cuenta. A continuación, se validará su tarjeta de crédito. También se envía un correo electrónico de confirmación de la información de la cuenta. Transcurridos algunos minutos tras la recepción del correo electrónico de confirmación, puede volver a la consola para continuar creando sus apps.
 
@@ -103,7 +103,7 @@ Para registrarse con una cuenta de Suscripción, y para obtener más informació
 Con {{site.data.keyword.Bluemix_dedicated_notm}}, debe registrarse para un plazo mínimo de un año que incluye:
 
    * Conectividad VPN para volver a su infraestructura
-   * Entorno completo y redundante en un centro de datos de {{site.data.keyword.BluSoftLayer_notm}}
+   * Entorno completo y redundante en un centro de datos de {{site.data.keyword.BluSoftlayer_notm}}
    * Todos los tiempos de ejecución soportados (IBM Java Liberty, Node.js y ejecuciones de código abierto)
    * Todos los servicios dedicados que seleccione y todos los servicios públicos de {{site.data.keyword.Bluemix_notm}}
    * Soporte de {{site.data.keyword.Bluemix_notm}} estándar
@@ -127,9 +127,9 @@ Durante dicho plazo, cada mes que pague dependerá de los servicios locales que 
 ## Cuenta Promocional
 {: #promo}
 
-Las cuentas de promoción, ocasionalmente ofrecidas como parte de promociones especiales, son pruebas de timeboxing gratuitas con acceso a la mayoría del catálogo de {{site.data.keyword.Bluemix_notm}}. Este tipo de cuenta está disponible únicamente utilizando un código promocional. El periodo de tiempo de validez para la cuenta varía por promoción. 
-   
-Con una cuenta Promocional, tiene acceso a un único grupo de recursos creados para usted y llamados `Default`. Todas sus instancias de servicio gestionadas por IAM se añaden automáticamente a este grupo de recursos. Puede actualizar en nombre de este grupo de recursos en cualquier momento. Consulte [Cómo renombrar un grupo de recursos](/docs/admin/resource-groups.html#renaming-a-resource-group) para obtener los pasos detallados. 
+Las cuentas de promoción, ocasionalmente ofrecidas como parte de promociones especiales, son pruebas de timeboxing gratuitas con acceso a la mayoría del catálogo de {{site.data.keyword.Bluemix_notm}}. Este tipo de cuenta está disponible únicamente utilizando un código promocional. El periodo de tiempo de validez para la cuenta varía por promoción.
+
+Con una cuenta Promocional, tiene acceso a un único grupo de recursos creados para usted y llamados `Default`. Todas sus instancias de servicio gestionadas por IAM se añaden automáticamente a este grupo de recursos. Puede actualizar en nombre de este grupo de recursos en cualquier momento. Consulte [Cómo renombrar un grupo de recursos](/docs/admin/resource-groups.html#renaming-a-resource-group) para obtener los pasos detallados.
 
 Cada grupo de recursos es gratuito. Cuando crea una conexión entre un servicio gestionado por IAM y una app de Cloud Foundry, crea un alias, que es una instancia de servicio que cuenta en el cálculo de su cuota. Consulte [¿Qué es un alias?](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}

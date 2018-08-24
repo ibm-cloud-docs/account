@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-06-26"
+lastupdated: "2018-08-14"
 
 ---
 
@@ -70,7 +70,6 @@ Cuando esté preparado para crecer, puede actualizar su cuenta Lite a una cuenta
   * Para actualizar a una cuenta de Pago según uso, vaya a **Gestionar** > **Facturación y utilización ** > **Facturación** en la consola y pulse **Añadir tarjeta de crédito**.
   * Para actualizar a una cuenta de suscripción, vaya a **Gestionar** > **Facturación y utilización** > **Facturación** en la consola y pulse **Más información**.
 
-
 ## Cuenta de Pago según uso
 {: #paygo}
 
@@ -100,7 +99,7 @@ Si enlaza su cuenta de Suscripción con una cuenta de SoftLayer, a partir del d�
 Con {{site.data.keyword.Bluemix_dedicated_notm}}, debe registrarse para un plazo mínimo de un año que incluye:
 
    * Conectividad VPN para volver a su infraestructura
-   * Entorno completo y redundante en un centro de datos de {{site.data.keyword.BluSoftLayer_notm}}
+   * Entorno completo y redundante en un centro de datos de {{site.data.keyword.BluSoftlayer_notm}}
    * Todos los tiempos de ejecución soportados (IBM Java Liberty, Node.js y ejecuciones de código abierto)
    * Todos los servicios dedicados que ha seleccionado y todos los servicios públicos de {{site.data.keyword.Bluemix_notm}}
    * Soporte de {{site.data.keyword.Bluemix_notm}} estándar
@@ -120,4 +119,6 @@ Con {{site.data.keyword.Bluemix_local_notm}}, debe registrarse para un plazo mí
    * Soporte de {{site.data.keyword.Bluemix_notm}} estándar
 
 Lo que deberá abonar cada mes durante dicho plazo dependerá de los servicios locales que desee, más una cuenta de suscripción que le ofrece acceso a todos los servicios públicos. Los cargos por uso de los servicios de {{site.data.keyword.Bluemix_notm}} público se calculan en función del acuerdo de la cuenta de suscripción. Recibirá una factura correspondiente a los servicios que utilice por encima del acuerdo de suscripción. Póngase en contacto con su representante de cuenta designado de IBM o con el [equipo de ventas de {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg) para empezar a trabajar en su acuerdo.
+
+
 

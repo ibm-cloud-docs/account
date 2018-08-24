@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-07-24"
+lastupdated: "2018-08-16"
 
 ---
 
@@ -43,7 +43,7 @@ Si tiene una cuenta facturable, no hay un límite en el número de grupos de rec
 * Para actualizar de una cuenta Lite a una cuenta de Pago según uso, vaya a **Gestionar > Facturación y utilización > Facturación** y pulse **Añadir tarjeta de crédito**.
 * Para actualizar de una cuenta Lite a una cuenta de Suscripción, vaya a **Gestionar > Facturación y utilización > Facturación** y pulse **Más información**.
 * Para convertir la cuenta de Pago según uso en una cuenta de Suscripción, póngase en contacto con [Ventas de {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg).
-* 
+
 ## Si actualizo mi cuenta Lite, ¿puedo continuar utilizando mis instancias existentes?
 {: #nochange}
 
@@ -91,7 +91,7 @@ Después de enlazar su cuenta, mantendrá el mismo nivel de soporte que el que t
 
   1. Consulte el blog de [Pasos para enlazar sus cuentas IaaS y PaaS](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/) donde obtendrá información de utilidad. 
   2. Desde el portal de clientes de infraestructura de {{site.data.keyword.BluSoftlayer_full}}, abra un **Chat en directo para ventas** para realizar preguntas sobre la cuenta.
-  3. Abra un ticket desde el portal de clientes de infraestructura de {{site.data.keyword.BluSoftlayer_full}}.  Seleccione **Soporte** > **Añadir ticket** y, a continuación, en el campo **Asunto**, seleccione ** Solicitud de cuenta** para dirigir su pregunta relacionada con la cuenta al equipo de soporte adecuado.
+  3. Abra un tíquet desde el portal de clientes de infraestructura de {{site.data.keyword.BluSoftlayer_full}}.  Seleccione **Soporte** > **Añadir tíquet** y, a continuación, en el campo **Asunto**, seleccione ** Solicitud de cuenta** para dirigir su pregunta relacionada con la cuenta al equipo de soporte adecuado.
 
 Si usted es el maestro de cuentas, consulte [Trabajar con usuarios](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) para obtener más información sobre la gestión de usuarios.
 
