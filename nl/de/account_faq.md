@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-08-16"
+lastupdated: "2018-08-20"
 
 ---
 
@@ -15,6 +15,11 @@ lastupdated: "2018-08-16"
 
 # Häufig gestellte Fragen (FAQs)
 {: #accountfaqs}
+
+## Wie erstelle ich ein Konto?
+{: #create-account}
+
+Rufen Sie https://console.bluemix.net auf und klicken Sie auf **Kostenfreies Konto erstellen**. Bei dem erstellten Konto handelt es sich um ein Lite-Konto, das nicht abläuft. [Lite-Konto](/docs/account/index.html#liteaccount) enthält weitere Details zu den enthaltenen Features.
 
 ## Welche Cloud Foundry-Regionen kann ich verwenden?
 {: #whichregions}

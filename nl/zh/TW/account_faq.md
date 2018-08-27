@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-08-16"
+lastupdated: "2018-08-20"
 
 ---
 
@@ -15,6 +15,11 @@ lastupdated: "2018-08-16"
 
 # 常見問題 (FAQ)
 {: #accountfaqs}
+
+## 如何建立帳戶？
+{: #create-account}
+
+請移至 https://console.bluemix.net 然後按一下**建立免費帳戶**。建立的帳戶類型是精簡帳戶，它永不到期。如需包含特性的相關詳細資料，請參閱[精簡帳戶](/docs/account/index.html#liteaccount)。
 
 ## 可以使用哪些 Cloud Foundry 地區？
 {: #whichregions}
