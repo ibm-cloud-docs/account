@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-08-16"
+lastupdated: "2018-08-20"
 
 ---
 
@@ -15,6 +15,11 @@ lastupdated: "2018-08-16"
 
 # FAQ
 {: #accountfaqs}
+
+## アカウントを作成するには、どのようにすればよいですか?
+{: #create-account}
+
+https://console.bluemix.net に移動し、**「フリー・アカウントの作成」**をクリックします。作成されたアカウントのタイプは、有効期限が切れることのないライト・アカウントです。含まれるフィーチャーについて詳しくは、[ライト・アカウント](/docs/account/index.html#liteaccount)を参照してください。
 
 ## どの Cloud Foundry 地域を使用できますか?
 {: #whichregions}

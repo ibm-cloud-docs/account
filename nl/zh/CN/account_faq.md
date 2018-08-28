@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-08-16"
+lastupdated: "2018-08-20"
 
 ---
 
@@ -15,6 +15,11 @@ lastupdated: "2018-08-16"
 
 # 常见问题
 {: #accountfaqs}
+
+## 如何创建帐户？
+{: #create-account}
+
+转至 https://console.bluemix.net，然后单击**创建免费帐户**。创建的帐户类型是轻量帐户，没有到期时间。请参阅[轻量帐户](/docs/account/index.html#liteaccount)以获取有关包含的功能的更多详细信息。
 
 ## 我可以使用哪些 Cloud Foundry 区域？
 {: #whichregions}
