@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-08-16"
+lastupdated: "2018-08-20"
 
 ---
 
@@ -15,6 +15,11 @@ lastupdated: "2018-08-16"
 
 # FAQ
 {: #accountfaqs}
+
+## 내 계정은 어떻게 작성합니까?
+{: #create-account}
+
+https://console.bluemix.net 사이트로 이동하여 **무료 계정 작성**을 클릭하십시오. 작성된 계정 유형은 만료되지 않는 라이트 계정입니다. 포함된 기능에 관한 자세한 정보는 [라이트 계정](/docs/account/index.html#liteaccount)을 참조하십시오.
 
 ## 어떤 Cloud Foundry 지역을 사용할 수 있습니까?
 {: #whichregions}
@@ -74,7 +79,7 @@ IBM Cloud 지원 센터에 문의하여 지원 티켓을 열고 계정 삭제를
 ## 무료 평가판을 위해 등록할 수 있습니까?
 {: #freetrial}
 
-공인 교육 기관의 교직원 및 학생은 {{site.data.keyword.Bluemix_notm}} 평가판 계정을 사용할 수 있습니다. 평가판 계정 사용 자격을 얻으려면 [onthehub.com/ibm ![외부 링크 아이콘](../icons/launch-glyph.svg)](http://onthehub.com/ibm){: new_window}으로 이동한 후 자신의 기관 신임 정보를 유효성 검증하십시오.
+공인 교육 기관의 교직원 및 학생은 {{site.data.keyword.Bluemix_notm}} 평가판 계정을 사용할 수 있습니다. 평가판 계정 사용 자격을 얻으려면 [onthehub.com/ibm ![외부 링크 아이콘](../icons/launch-glyph.svg)](http://onthehub.com/ibm){: new_window}으로 이동한 후 자신의 기관 신임 정보의 유효성을 검증하십시오.
 
 ## 계정을 연결한 후에는 어떻게 로그인합니까?
 {: #al_login}
