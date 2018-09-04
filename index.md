@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-08-14"
+lastupdated: "2018-09-04"
 
 ---
 
@@ -45,7 +45,7 @@ Sign up for a Lite account to start building your apps and exploring services wi
 
 You have access to a single resource group that's created for you and named `Default`. All of your services instances that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) are automatically added to this resource group. You can update the name of this resource group at any time. See [Renaming a resource group](/docs/resources/resourcegroups.html#renaming-a-resource-group) for the detailed steps.
 
-Each resource group is free. When you create a connection between a service managed by IAM and a Cloud Foundry app, you create an alias, which is a service instance, that counts toward your quota. See [What is an alias?](/docs/resources/connecting_apps.html#what_is_alias).
+Each resource group is free. When you create a connection between a service that is managed by IAM and a Cloud Foundry app, you create an alias, which is a service instance, that counts toward your quota. See [What is an alias?](/docs/resources/connecting_apps.html#what_is_alias).
 {: tip}
 
 ### What's available?
@@ -80,7 +80,7 @@ If you link your Pay-As-You-Go account with a SoftLayer account, starting on the
 
 You can upgrade to a Pay-As-You-Go account from the {{site.data.keyword.Bluemix_notm}} console. After you provide your billing and credit card information, accept the terms and conditions and submit your account request. Then, your credit card is validated. You also receive a confirmation email regarding the account information. A few minutes after you receive the confirmation email, you can return to the console to continue building your apps. If your online request can't be processed for your country or region, contact [{{site.data.keyword.Bluemix_notm}} Support](/docs/get-support/howtogetsupport.html).
 
-You get a promotional credit of $200 after you upgrade to a Pay-As-You-Go account, and there's no action required for you to start using it. Your $200 credit is valid for 30 days and it is automatically applied to your invoice. The credit cannot be used with third-party offerings.
+You get a promotional credit of $200 after you upgrade to a Pay-As-You-Go account, and the credit is automatically applied to your account. Your $200 credit is valid for 30 days and is automatically applied to your invoice. The credit cannot be used with third-party offerings.
 
 ### Upgrading your account
 {: #upgrade-to-subscription}
@@ -89,7 +89,9 @@ You can upgrade your Pay-As-You-Go account to a Subscription account at any time
 
 ## Subscription account
 
-With a Subscription account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. You commit to a minimum spending amount each month and receive a subscription discount that is applied to that minimum charge. You also pay for any usage that exceeds the minimum spending amount.
+With a Subscription account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. You commit to a combined a minimum spending amount each month and receive a subscription discount that is applied to that minimum charge. You're charged the non-discounted rate for any usage that exceeds your total subscription amount.
+
+If you have a subscription account, you can create most of the services that are available from the [IBM Cloud catalog](https://console.bluemix.net/catalog/), however there might be certain services that use a specific pricing plan that requires you to purchase it separately.
 
 If you link your Subscription account with a SoftLayer account, starting on the first of the next month, your combined charges are included on your {{site.data.keyword.Bluemix_notm}} invoice.
 {: tip}
@@ -101,7 +103,7 @@ With {{site.data.keyword.Bluemix_dedicated_notm}}, you must sign up for a one ye
    * VPN connectivity back to your infrastructure
    * Fully redundant environment in a {{site.data.keyword.BluSoftlayer_notm}} data center
    * All supported runtimes (IBM Java Liberty, Node.js, and built-in open source runtimes)
-   * All dedicated services that you have selected and all public {{site.data.keyword.Bluemix_notm}} services
+   * All dedicated services that you selected and all public {{site.data.keyword.Bluemix_notm}} services
    * Standard {{site.data.keyword.Bluemix_notm}} support
 
 You can also order optional items such as SoftLayer DirectLink or premium support options. Contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg) for more information.
@@ -114,7 +116,7 @@ With {{site.data.keyword.Bluemix_local_notm}}, you must sign up for a one year m
 
    * A delivery capability called relay that enables IBM to connect to your local deployment and automatically and consistently deliver updates
    * All supported runtimes (IBM Java Liberty, Node.js, and built-in open source runtimes)
-   * All local services that you have selected and access to all public {{site.data.keyword.Bluemix_notm}} services
+   * All local services that you selected and access to all public {{site.data.keyword.Bluemix_notm}} services
    * Standard {{site.data.keyword.Bluemix_notm}} support
 
 What you pay each month during that term is based on the local services that you want, plus a Subscription account that gives you access to all public services. Usage charges of the services in {{site.data.keyword.Bluemix_notm}} Public are calculated based on your Subscription account agreement. You receive an invoice for any services that you use beyond that subscription agreement. Contact your IBM designated account representative or [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg) to get started on your agreement.
