@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-08-20"
+lastupdated: "2018-09-13"
 
 ---
 
@@ -19,7 +19,21 @@ lastupdated: "2018-08-20"
 ## How do I create an account?
 {: #create-account}
 
-Go to https://console.bluemix.net, and click **Create a free account**. The type of account that's created is a Lite account, which never expires. See [Lite account](/docs/account/index.html#liteaccount) for more details about the features that are included.
+Go to https://console.bluemix.net, and click **Create a free account** to create a Lite account that never expires. 
+
+See [Lite account](/docs/account/index.html#liteaccount) for more details about the features that are included.
+
+## What is Cloud Foundry?
+{: #cloud-foundry}
+
+Cloud Foundry is an open source platform as a service (PaaS) option available through {{site.data.keyword.Bluemix_notm}} Public for building and deploying applications on the cloud. Cloud Foundry organizations and spaces are used within an {{site.data.keyword.Bluemix_notm}} account to organize and work with resources and apps available within specific regions. 
+
+For more information about managing orgs and spaces, see [Adding orgs and spaces](/docs/account/orgs_spaces.html#orgsspacesusers). And, if you’re interested in learning more about how to provide access to resources in a Cloud Foundry space, see [Cloud Foundry access](/docs/iam/cfaccess.html#cfaccess).
+
+## Can I move an org to another account?
+{: #move-org-diff-account}
+
+At this time you can't migrate an org to a different account. 
 
 ## Which Cloud Foundry regions can I use?
 {: #whichregions}
@@ -69,6 +83,13 @@ In the console, go to the **Manage > Billing and Usage > Billing** page and clic
 
 You must contact IBM Cloud Support to open a support ticket and request that your account be deleted. If you have data that is associated with your old account that you want to save and move to a new account, include this information in your email.
 
+## Why is my account deactivated?
+{: #account-deactivated}
+
+Your account is most likely deactivated because an authorized user cancelled it or the account is suspended.  
+
+At the discretion of IBM, users who violate the acceptable usage behaviors of the {{site.data.keyword.Bluemix_notm}} services can be disabled without notice. Some services can be restored if users correct their usage behaviors after they're notified of the offensive action. Otherwise, accounts can be suspended or terminated.
+
 ## How do I get support?
 {: #contactsupport}
 
@@ -84,18 +105,17 @@ You can also check out a number of helpful resources that are available in the [
 ## After I link my account, how do I log in?
 {: #al_login}
 
-After you link your account, you log in using your IBMid to the
-[{{site.data.keyword.Bluemix}} console ![External link icon](../icons/launch-glyph.svg)](https://console.bluemix.net){: new_window}.
+After you link your account, use your your IBMid to log in to the {{site.data.keyword.Bluemix}} console.
 
 ## After I link my account, what's the impact on my support?
 {: #al_support}
 
 After you link your account, you keep the same level of support when you add {{site.data.keyword.Bluemix_notm}} platform to your account.
 
-## Are there other ways to get help with linking my account? 	
+## Are there other ways to get help with linking my account? 
 {: #al_morehelp}
 
-  1. See the [Steps to Link your IaaS and PaaS Accounts blog](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/) for helpful information. 
+  1. See the [Steps to Link your IaaS and PaaS Accounts blog](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/) for helpful information.
   2. From the {{site.data.keyword.BluSoftlayer_full}} infrastructure customer portal, open a **Sales Live Chat** to ask account questions.
   3. Open a ticket from the {{site.data.keyword.BluSoftlayer_full}} infrastructure customer portal.  Select **Support** > **Add Ticket** and then, in the **Subject** field, select **Accounting Request** to route your account question to the correct support team.
 
@@ -108,27 +128,40 @@ If you have multiple SoftLayer accounts, you must link the accounts that have a 
 
 If you do not have a matching {{site.data.keyword.Bluemix_notm}} platform account, and an accompanying IBMid account, a NEW SoftLayer account can be created to link the accounts.
 
-## What if I don't want to link my account? 
+## What if I don't want to link my account? 	
 {: #al_bene}
 
 To help you experience more of {{site.data.keyword.Bluemix_notm}} all new functionality is being developed into a single {{site.data.keyword.Bluemix_notm}} console. When you merge your account, you'll get access to a more robust catalog, simplified account management, and a single login.
 
 If linking is not a viable option for you, contact your sales support for other options.
 
-## Are there incentives for linking my accounts? 
+## Are there incentives for linking my accounts? 	
 {: #al_incent}
 
 When you link your accounts, you can use a $200 promotional credit to try {{site.data.keyword.Bluemix_notm}} services. 
 
-## What does adding {{site.data.keyword.Bluemix_notm}} platform services to my SoftLayer account mean? 
+To learn more about the $200 promotional credit, see [Pay-As-You-Go account](/docs/account/index.html#paygo). 
+
+## How do I switch between multiple accounts?
+{: #switch-between-accounts}
+
+To switch between accounts, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg), click the **Account** menu, and select another account. 
+
+## Can I switch account owners? 
+{: #switch-account-owners}
+
+You can't switch the owner of an account, but you can change resource owners. To learn more about switching ownership, see [Changing private resource ownership](/docs/account/owners.html#how-to-change-the-owner-of-a-catalog-resource).
+
+## What does adding {{site.data.keyword.Bluemix_notm}} platform services to my SoftLayer account mean? 	
 {: #al_owaffslacct}
 
 It means your account has access to all {{site.data.keyword.Bluemix_notm}} platform offerings.  After you add the {{site.data.keyword.Bluemix_notm}} platform offering to your account, your account master will need to enable end user to have access to the offering.
 
 If you are the account master, see [Working with users](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) for more information.
 
-## How does account linking impact my SoftLayer Master Account ID? 
+## How does account linking impact my SoftLayer Master Account ID? 	
 {: #al_howaffslmastacct}
 
 You can still use the ID for your SoftLayer account to sign into the {{site.data.keyword.BluSoftlayer_full}} infrastructure customer portal because the {{site.data.keyword.Bluemix_notm}} console is accessible using IBMids.
+
 
