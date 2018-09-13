@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-08-20"
+lastupdated: "2018-09-13"
 
 ---
 
@@ -20,6 +20,15 @@ lastupdated: "2018-08-20"
 {: #create-account}
 
 Go to https://console.bluemix.net, and click **Create a free account**. The type of account that's created is a Lite account, which never expires. See [Lite account](/docs/account/index.html#liteaccount) for more details about the features that are included.
+
+## What can I do if I get an error when creating my account?
+{: #account-error}
+
+You can open a support ticket if you encounter an error when you try to create your account.
+
+* To open a support ticket from the Support Center, click **Open a case** from the Get help section.
+* To open a support ticket from the IBM Cloud console menu bar, click **Support** &gt; **Add ticket**.
+* Once the support ticket is opened, you will receive an email notification momentarily for the ticket. Follow the instructions in the email for further communication on the issue.
 
 ## Which Cloud Foundry regions can I use?
 {: #whichregions}
@@ -58,6 +67,15 @@ Yes, you can upgrade to a billable account and continue to use the instances you
 {: #updatepayment}
 
 You can easily update the payment method that's associated with your billable account. In the console, go to **Manage > Billing and Usage > Modify Payment Method**.
+
+## How do I reset my password? 
+{: #reset-password}
+
+Depending on which password you are looking to reset, review the following options: 
+
+* If you have a SoftLayer account ID and password, see [Managing Passwords](/docs/customer-portal/cpmanacctmanpw.html#cp_reset-your-password). 
+* To reset your VPN password, see [Update a User's VPN Password](/docs/infrastructure/iaas-vpn/update-password.html#update-a-user-s-vpn-password).
+* To reset your IBMid password, see [Forgot Password](https://www.ibm.com/account/us-en/forgot/forgot-password-start.html).
 
 ## How do I cancel my account?
 {: #cancelaccount}
