@@ -40,7 +40,7 @@ At this time you can't migrate an org to a different account.
 
 You can open a support ticket if you encounter an error when you try to create your account.
 
-* To open a support ticket from the Support Center, click **Open a case** from the Get help section.
+* To open a support ticket from the Support Center, click **Open a ticket** from the Get help section.
 * To open a support ticket from the IBM Cloud console menu bar, click **Support** &gt; **Add ticket**.
 * Once the support ticket is opened, you will receive an email notification momentarily for the ticket. Follow the instructions in the email for further communication on the issue.
 
