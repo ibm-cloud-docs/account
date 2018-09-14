@@ -144,14 +144,7 @@ If you are the account master, see [Working with users](https://console.bluemix.
 
 If you have multiple SoftLayer accounts, you must link the accounts that have a matching {{site.data.keyword.Bluemix_notm}} platform account, and an accompanying IBMid.
 
-If you do not have a matching {{site.data.keyword.Bluemix_notm}} platform account, and an accompanying IBMid account, a NEW SoftLayer account can be created to link the accounts.
-
-## What if I don't want to link my account? 	
-{: #al_bene}
-
-To help you experience more of {{site.data.keyword.Bluemix_notm}} all new functionality is being developed into a single {{site.data.keyword.Bluemix_notm}} console. When you merge your account, you'll get access to a more robust catalog, simplified account management, and a single login.
-
-If linking is not a viable option for you, contact your sales support for other options.
+If you do not have a matching {{site.data.keyword.Bluemix_notm}} platform account, and an accompanying IBMid account, a new SoftLayer account can be created to link the accounts.
 
 ## Are there incentives for linking my accounts? 	
 {: #al_incent}
