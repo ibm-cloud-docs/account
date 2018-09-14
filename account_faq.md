@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-09-13"
+lastupdated: "2018-09-14"
 
 ---
 
@@ -42,7 +42,7 @@ You can open a support ticket if you encounter an error when you try to create y
 
 * To open a support ticket from the Support Center, click **Open a ticket** from the Get help section.
 * To open a support ticket from the IBM Cloud console menu bar, click **Support** &gt; **Add ticket**.
-* Once the support ticket is opened, you will receive an email notification momentarily for the ticket. Follow the instructions in the email for further communication on the issue.
+* After the support ticket is opened, you will receive an email notification momentarily for the ticket. Follow the instructions in the email for further communication on the issue.
 
 ## Which Cloud Foundry regions can I use?
 {: #whichregions}
