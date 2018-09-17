@@ -21,7 +21,7 @@ lastupdated: "2017-10-13"
 La cuenta Estándar de disponibilidad limitada de {{site.data.keyword.Bluemix}} presenta una nueva cuenta gratuita, que ofrece una nueva forma de trabajo en {{site.data.keyword.Bluemix_notm}} Público. Una cuenta Estándar no caduca nunca, lo que la diferencia de una cuenta de prueba {{site.data.keyword.Bluemix_notm}} de 30 días. Puede seguir trabajando en sus aplicaciones de {{site.data.keyword.Bluemix_notm}} sin ninguna preocupación sobre las restricciones de tiempo. 
 {:shortdesc}
 
-Los usuarios en las regiones del Reino Unido y EE.UU. Sur serán aptos para una cuenta Estándar. Si no está en una de estas regiones, puede seguir creando una cuenta Estándar y pedir una invitación a un amigo o ponerse en contacto con nuestro equipo de ventas en sales@bluemix.net. Como propietario de una cuenta Estándar, puede invitar a sus amigos y colegas para que participen.  
+Los usuarios en las regiones del Reino Unido y EE.UU. sur serán aptos para una cuenta Estándar. Si no está en una de estas regiones, puede seguir creando una cuenta Estándar y pedir una invitación a un amigo o ponerse en contacto con nuestro equipo de ventas en sales@bluemix.net. Como propietario de una cuenta Estándar, puede invitar a sus amigos y colegas para que participen.  
 
 ## Presentación de la cuenta Estándar de {{site.data.keyword.Bluemix_notm}}
 {: #standardaccount}
