@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-08-20"
+lastupdated: "2018-09-13"
 
 ---
 
@@ -19,7 +19,21 @@ lastupdated: "2018-08-20"
 ## 如何创建帐户？
 {: #create-account}
 
-转至 https://console.bluemix.net，然后单击**创建免费帐户**。创建的帐户类型是轻量帐户，没有到期时间。请参阅[轻量帐户](/docs/account/index.html#liteaccount)以获取有关包含的功能的更多详细信息。
+转至 https://console.bluemix.net，然后单击**创建免费帐户**，以创建永不过期的轻量帐户。 
+
+请参阅[轻量帐户](/docs/account/index.html#liteaccount)以获取有关包含的功能的更多详细信息。
+
+## 什么是 Cloud Foundry？
+{: #cloud-foundry}
+
+Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可通过 {{site.data.keyword.Bluemix_notm}} Public 来访问，用于在云上构建和部署应用程序。Cloud Foundry 组织和空间在 {{site.data.keyword.Bluemix_notm}} 帐户内使用，用于组织和使用特定区域内提供的资源和应用程序。 
+
+有关管理组织和空间的更多信息，请参阅[添加组织和空间](/docs/account/orgs_spaces.html#orgsspacesusers)。此外，如果您有兴趣了解如何在 Cloud Foundry 空间中提供对资源的访问权，请参阅 [Cloud Foundry 访问权](/docs/iam/cfaccess.html#cfaccess)。
+
+## 我可以将组织移动到另一个帐户中吗？
+{: #move-org-diff-account}
+
+目前，您还不能将组织迁移到其他帐户中。 
 
 ## 我可以使用哪些 Cloud Foundry 区域？
 {: #whichregions}
@@ -69,6 +83,13 @@ lastupdated: "2018-08-20"
 
 您必须联系 IBM Cloud 支持，以开具一个支持凭单，请求删除您的帐户。如果存在与旧帐户相关联的数据并且想要将其保存并移动到新帐户，请在您的电子邮件中包含此信息。
 
+## 为什么我的帐户已停用？
+{: #account-deactivated}
+
+您的帐户已停用的原因很可能是授权用户取消了帐户或帐户已暂挂。  
+
+对于违反 {{site.data.keyword.Bluemix_notm}} 服务的可接受使用行为的用户，IBM 将酌情直接禁用其帐户而不另行通知。如果用户在收到攻击行为的通知后更正了其使用行为，IBM 将酌情复原一些服务。否则，可能会暂挂或终止帐户。
+
 ## 如何获得支持？
 {: #contactsupport}
 
@@ -84,17 +105,17 @@ lastupdated: "2018-08-20"
 ## 链接帐户后，如何登录？
 {: #al_login}
 
-链接帐户后，请使用 IBM 标识登录到 [{{site.data.keyword.Bluemix}} 控制台 ![外部链接图标](../icons/launch-glyph.svg)](https://console.bluemix.net){: new_window}。
+链接了您的帐户后，使用您的 IBM 标识登录到 {{site.data.keyword.Bluemix}} 控制台。
 
 ## 链接帐户后，对我的支持有什么影响？
 {: #al_support}
 
 链接帐户之后，向帐户添加 {{site.data.keyword.Bluemix_notm}} 平台时，支持级别保持不变。
 
-## 还有其他方法可获取链接帐户的帮助吗？ 	
+## 还有其他方法可获取链接帐户的帮助吗？ 
 {: #al_morehelp}
 
-  1. 有关有用的信息，请参阅[“链接 IaaS 和 PaaS 帐户的步骤”博客](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/)。 
+  1. 有关有用的信息，请参阅[“链接 IaaS 和 PaaS 帐户的步骤”博客](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/)。
   2. 在 {{site.data.keyword.BluSoftlayer_full}} 基础架构客户门户网站中，打开**销售实时交谈**以询问帐户问题。
   3. 在 {{site.data.keyword.BluSoftlayer_full}} 基础架构客户门户网站中开具凭单。选择**支持** > **添加凭单**，然后在**主题**字段中，选择**帐户请求**以将帐户问题传递给正确的支持团队。
 
@@ -107,27 +128,40 @@ lastupdated: "2018-08-20"
 
 如果您没有匹配的 {{site.data.keyword.Bluemix_notm}} 平台帐户，也没有附带的 IBM 标识帐户，那么可以创建新的 SoftLayer 帐户来链接这些帐户。
 
-## 如果不想链接帐户会怎样？ 
+## 如果不想链接帐户会怎样？ 	
 {: #al_bene}
 
 为了帮助您体验 {{site.data.keyword.Bluemix_notm}} 的更多功能，所有新功能都会开发到单个 {{site.data.keyword.Bluemix_notm}} 控制台中。合并帐户后，您将有权使用更稳健的目录、简化的帐户管理和单点登录。
 
 如果链接不是可行的选项，请联系销售支持以获取其他选项。
 
-## 链接帐户有奖励吗？ 
+## 链接帐户有奖励吗？ 	
 {: #al_incent}
 
 如果您链接帐户，那么可以使用 200 美元促销信用值来试用 {{site.data.keyword.Bluemix_notm}} 服务。 
 
-## 向 SoftLayer 帐户添加 {{site.data.keyword.Bluemix_notm}} 平台服务意味着什么？ 
+要了解有关 200 美元促销信用值的更多信息，请参阅[现买现付帐户](/docs/account/index.html#paygo)。 
+
+## 如何在多个帐户之间切换？
+{: #switch-between-accounts}
+
+要在帐户之间进行切换，请转至 **{{site.data.keyword.avatar}}** 图标 ![Avatar 图标](../icons/i-avatar-icon.svg)，单击**帐户**菜单，然后选择另一个帐户。 
+
+## 我可以切换帐户所有者吗？ 
+{: #switch-account-owners}
+
+您不能切换帐户所有者，但可以更改资源所有者。要了解有关切换所有权的更多信息，请参阅[更改专用资源所有权](/docs/account/owners.html#how-to-change-the-owner-of-a-catalog-resource)。
+
+## 向 SoftLayer 帐户添加 {{site.data.keyword.Bluemix_notm}} 平台服务意味着什么？ 	
 {: #al_owaffslacct}
 
 这意味着帐户有权访问所有 {{site.data.keyword.Bluemix_notm}} 平台产品。将 {{site.data.keyword.Bluemix_notm}} 平台产品添加到帐户后，帐户主用户需要使最终用户有权访问该产品。
 
 如果您是帐户主用户，请参阅[使用用户](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage)以获取更多信息。
 
-## 帐户链接对 SoftLayer 主帐户标识有怎样的影响？ 
+## 帐户链接对 SoftLayer 主帐户标识有怎样的影响？ 	
 {: #al_howaffslmastacct}
 
 您仍然可以使用 SoftLayer 帐户的标识来登录到 {{site.data.keyword.BluSoftlayer_full}} 基础架构客户门户网站，因为 {{site.data.keyword.Bluemix_notm}} 控制台可使用 IBM 标识进行访问。
+
 

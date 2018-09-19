@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-08-20"
+lastupdated: "2018-09-13"
 
 ---
 
@@ -19,7 +19,21 @@ lastupdated: "2018-08-20"
 ## アカウントを作成するには、どのようにすればよいですか?
 {: #create-account}
 
-https://console.bluemix.net に移動し、**「フリー・アカウントの作成」**をクリックします。作成されたアカウントのタイプは、有効期限が切れることのないライト・アカウントです。含まれるフィーチャーについて詳しくは、[ライト・アカウント](/docs/account/index.html#liteaccount)を参照してください。
+https://console.bluemix.net に移動し、**「フリー・アカウントの作成」**をクリックして、有効期限が切れることのないライト・アカウントを作成します。 
+
+含まれるフィーチャーについて詳しくは、[ライト・アカウント](/docs/account/index.html#liteaccount)を参照してください。
+
+## Cloud Foundry とは?
+{: #cloud-foundry}
+
+Cloud Foundry は、クラウド上でアプリケーションを作成およびデプロイするために、{{site.data.keyword.Bluemix_notm}} Public を通して利用可能な、オープン・ソース Platform as a Service (PaaS) オプションです。Cloud Foundry の組織とスペースは、{{site.data.keyword.Bluemix_notm}} アカウント内で使用され、特定の地域内で使用可能なリソースやアプリを整理し、操作します。 
+
+組織とスペースの管理について詳しくは、[組織およびスペースの追加](/docs/account/orgs_spaces.html#orgsspacesusers)を参照してください。また、Cloud Foundry スペースでリソースに対するアクセス権限を提供する方法について詳しく知りたい場合は、[Cloud Foundry アクセス権限](/docs/iam/cfaccess.html#cfaccess)を参照してください。
+
+## 組織を別のアカウントに移動できますか?
+{: #move-org-diff-account}
+
+現時点では、組織を別のアカウントに移行することはできません。 
 
 ## どの Cloud Foundry 地域を使用できますか?
 {: #whichregions}
@@ -69,6 +83,13 @@ https://console.bluemix.net に移動し、**「フリー・アカウントの�
 
 IBM Cloud サポートに連絡してサポート・チケットをオープンし、アカウントの削除を依頼する必要があります。 古いアカウントに関連付けられているデータで、保存して新規アカウントに移行したいものがあれば、その情報を E メールに記載してください。
 
+## アカウントが非アクティブになったのはなぜですか?
+{: #account-deactivated}
+
+許可ユーザーがキャンセルしたか、アカウントが中断されているため、アカウントが非アクティブになっている可能性があります。  
+
+IBM の裁量により、{{site.data.keyword.Bluemix_notm}} サービスの容認できる使用行動に違反したユーザーは、予告なしに使用不可にされることがあります。ユーザーが攻撃的なアクションを通知された後に使用行動を修正した場合、一部のサービスが復元されることがあります。修正しない場合は、アカウントを中断または終了されることがあります。
+
 ## サポートを依頼するには、どのようにすればよいですか
 {: #contactsupport}
 
@@ -84,17 +105,17 @@ IBM Cloud サポートに連絡してサポート・チケットをオープン�
 ## アカウントをリンクした後、ログインするにはどうすればよいですか?
 {: #al_login}
 
-アカウントをリンクした後、IBM ID を使用して [{{site.data.keyword.Bluemix}} コンソール ![外部リンク・アイコン](../icons/launch-glyph.svg)](https://console.bluemix.net){: new_window} にログインします。
+アカウントをリンクした後、IBM ID を使用して、{{site.data.keyword.Bluemix}} コンソールにログインします。
 
 ## アカウントをリンクすると、サポートについてどのような影響がありますか?
 {: #al_support}
 
 アカウントをリンクした後、{{site.data.keyword.Bluemix_notm}} プラットフォームをアカウントに追加すると、同じレベルのサポートが維持されます。
 
-## アカウントのリンクについて支援を得る他の方法はありますか? 	
+## アカウントのリンクについて支援を得る他の方法はありますか? 
 {: #al_morehelp}
 
-  1. 参考情報は、[IaaS アカウントと PaaS アカウントをリンクする手順のブログ](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/)を参照してください。 
+  1. 参考情報は、[IaaS アカウントと PaaS アカウントをリンクする手順のブログ](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/)を参照してください。
   2. {{site.data.keyword.BluSoftlayer_full}} インフラストラクチャーのカスタマー・ポータルで、**「販売ライブ・チャット (Sales Live Chat)」**を開き、アカウントに関する質問をしてください。
   3. {{site.data.keyword.BluSoftlayer_full}} インフラストラクチャーのカスタマー・ポータルからチケットをオープンします。  **「サポート」** > **「チケットの追加
 」**を選択し、次に、**「サブジェクト」**フィールドで**「アカウンティング要求 (Accounting Request)」**を選択して、アカウントの質問を適格なサポート・チームに送付します。
@@ -108,27 +129,40 @@ IBM Cloud サポートに連絡してサポート・チケットをオープン�
 
 一致する {{site.data.keyword.Bluemix_notm}} プラットフォーム・アカウントと、付随する IBM ID アカウントがない場合は、新しい SoftLayer アカウントを作成してアカウントをリンクすることができます。
 
-## アカウントをリンクしたくない場合はどうなりますか? 
+## アカウントをリンクしたくない場合はどうなりますか? 	
 {: #al_bene}
 
 {{site.data.keyword.Bluemix_notm}} をさらに体験できるように、開発されたすべての新しい機能が単一の {{site.data.keyword.Bluemix_notm}} コンソールに納められています。 アカウントをマージすると、より堅牢なカタログへのアクセス、簡素化されたアカウント管理、単一ログインを行うことができるようになります。
 
 リンクが実行可能なオプションでない場合は、販売サポートに他のオプションについてお問い合わせください。
 
-## アカウントをリンクすると何かインセンティブはありますか? 
+## アカウントをリンクすると何かインセンティブはありますか? 	
 {: #al_incent}
 
 アカウントをリンクすると、200 ドルのプロモーション・クレジットを使用して {{site.data.keyword.Bluemix_notm}} サービスを試すことができます。 
 
-## {{site.data.keyword.Bluemix_notm}} プラットフォーム・サービスを SoftLayer アカウントに追加するとはどういう意味ですか? 
+200 ドルのプロモーション・クレジットについて詳しくは、[従量課金 (PAYG) アカウント](/docs/account/index.html#paygo)を参照してください。 
+
+## 複数のアカウントを切り替えるには、どのようにすればよいですか?
+{: #switch-between-accounts}
+
+アカウントを切り替えるには、**{{site.data.keyword.avatar}}** アイコン ![「アバター」アイコン](../icons/i-avatar-icon.svg) に移動し、**「アカウント」**メニューをクリックして、別のアカウントを選択します。 
+
+## アカウント所有者を切り替えることはできますか? 
+{: #switch-account-owners}
+
+アカウント所有者を切り替えることはできませんが、リソース所有者を変更することはできます。所有権の切り替えについて詳しくは、[プライベート・リソースの所有権の変更](/docs/account/owners.html#how-to-change-the-owner-of-a-catalog-resource)を参照してください。
+
+## {{site.data.keyword.Bluemix_notm}} プラットフォーム・サービスを SoftLayer アカウントに追加するとはどういう意味ですか? 	
 {: #al_owaffslacct}
 
 それは、アカウントがすべての {{site.data.keyword.Bluemix_notm}} プラットフォームのオファリングにアクセスできることを意味します。  {{site.data.keyword.Bluemix_notm}} プラットフォームのオファリングをアカウントに追加した後、アカウント・マスターはエンド・ユーザーがオファリングにアクセスできるようにする必要があります。
 
 アカウント・マスターである場合、詳細は[ユーザーの操作](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage)を参照してください。
 
-## アカウントをリンクすると、SoftLayer マスター・アカウント ID にどのような影響がありますか? 
+## アカウントをリンクすると、SoftLayer マスター・アカウント ID にどのような影響がありますか? 	
 {: #al_howaffslmastacct}
 
 {{site.data.keyword.Bluemix_notm}} コンソールには IBM ID を使用してアクセスできるため、{{site.data.keyword.BluSoftlayer_full}} インフラストラクチャーのカスタマー・ポータルへのサインインにも SoftLayer アカウントの ID を使用できます。
+
 
