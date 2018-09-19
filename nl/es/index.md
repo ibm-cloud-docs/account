@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-08-14"
+lastupdated: "2018-09-04"
 
 ---
 
@@ -80,7 +80,7 @@ Si enlaza su cuenta de Pago según uso con una cuenta de SoftLayer, a partir del
 
 Puede actualizar a una cuenta de Pago según uso desde la consola de {{site.data.keyword.Bluemix_notm}}. Tras proporcionar la información de la tarjeta de crédito y la facturación, acepte los términos y condiciones y envíe una solicitud de cuenta. A continuación, la tarjeta de crédito se valida. También recibirá un correo electrónico de confirmación sobre la información de cuenta. Transcurridos algunos minutos tras la recepción del correo electrónico de confirmación, puede volver a la consola para continuar creando sus apps. Si no se puede procesar su solicitud en línea para su país o región, póngase en contacto con el [Soporte de {{site.data.keyword.Bluemix_notm}}](/docs/get-support/howtogetsupport.html).
 
-Obtendrá un crédito promocional de 200 dólares después de actualizar a una cuenta de Pago según uso, y no hay medidas necesarias para que empiece a utilizarlo. Su crédito de 200 dólares es válido durante 30 días y se aplica automáticamente a su factura. El crédito no puede utilizarse con ofertas de terceros.
+Obtendrá un crédito promocional de 200 dólares después de actualizar una cuenta de Pago según uso y el crédito se aplica automáticamente a su cuenta. Su crédito de 200 dólares es válido durante 30 días y se aplica automáticamente a su factura. El crédito no puede utilizarse con ofertas de terceros.
 
 ### Actualización de la cuenta
 {: #upgrade-to-subscription}
@@ -89,7 +89,9 @@ Puede actualizar su cuenta de Pago según uso a una cuenta de Suscripción en cu
 
 ## Cuenta de Suscripción
 
-Con una cuenta de Suscripción, puede crear varios grupos de recursos para gestionar fácilmente la cuota y ver el uso de facturación de un conjunto de recursos. Se compromete a una cantidad de gasto mínimo al mes y recibirá un descuento de suscripción que se aplicará a dicho cargo mínimo. También puede pagar cualquier uso que exceda la cantidad de gasto mínimo.
+Con una cuenta de Suscripción, puede crear varios grupos de recursos para gestionar fácilmente la cuota y ver el uso de facturación de un conjunto de recursos. Se compromete a una cantidad de gasto mínimo combinada al mes y recibirá un descuento de suscripción que se aplicará a dicho cargo mínimo. Se le cobrará la tarifa sin descuento para cualquier uso que supere la cantidad total de Suscripción.
+
+Si dispone de una cuenta de suscripción, puede crear la mayoría de los servicios disponibles del [Catálogo de IBM Cloud](https://console.bluemix.net/catalog/); sin embargo, ciertos servicios que utilizan un plan de precios específico pueden requerir que lo adquiera por separado.
 
 Si enlaza su cuenta de Suscripción con una cuenta de SoftLayer, a partir del día 1 del próximo mes, los cargos combinados están incluidos en su factura de {{site.data.keyword.Bluemix_notm}}.
 {: tip}

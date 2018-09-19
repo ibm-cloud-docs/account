@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-08-14"
+lastupdated: "2018-09-04"
 
 ---
 
@@ -80,7 +80,7 @@ Si vous liez votre compte Paiement à la carte à un compte SoftLayer, à compte
 
 Vous pouvez effectuer une mise à niveau vers un compte Paiement à la carte depuis la console {{site.data.keyword.Bluemix_notm}}. Après avoir fourni vos informations de facturation et de carte de crédit, acceptez les dispositions du contrat et soumettez votre demande de compte. Votre carte de crédit sera alors validée. Vous recevrez également un courrier électronique de confirmation concernant les informations relatives au compte. Quelques minutes après la réception du courrier électronique de confirmation, vous pouvez revenir dans la console pour continuer à construire vos applications. Si votre demande en ligne ne peut pas être traitée pour votre pays ou votre région, contactez le [Support {{site.data.keyword.Bluemix_notm}}](/docs/get-support/howtogetsupport.html).
 
-Vous bénéficiez d'un crédit promotionnel de $ 200 après la mise à niveau vers un compte Paiement à la carte et aucune intervention n'est requise pour pouvoir l'utiliser. Votre crédit de $ 200 est valide pendant 30 jours et automatiquement pris en compte dans votre facture. Ce crédit ne peut pas être utilisé sur des offres de tiers.
+Vous bénéficiez d'un crédit promotionnel de 200 $ après la mise à niveau vers un compte Paiement à la carte. Ce crédit est automatiquement appliqué à votre compte. Votre crédit de 200 $ est valide pendant 30 jours et est automatiquement pris en compte dans votre facture. Ce crédit ne peut pas être utilisé sur des offres de tiers.
 
 ### Mise à niveau de votre compte
 {: #upgrade-to-subscription}
@@ -89,7 +89,9 @@ Vous pouvez mettre à niveau votre compte Paiement à la carte vers un compte Ab
 
 ## Compte d'abonnement
 
-Avec un compte d'abonnement, vous pouvez créer plusieurs groupes de ressources de manière à faciliter la gestion du quota et l'affichage de la facturation d'utilisation d'un ensemble de ressources. Vous vous engagez à dépenser une somme minimale par mois et recevez une remise sur abonnement qui est appliquée à ce montant minimal. Vous payez également toute utilisation dépassant le montant minimal.
+Avec un compte d'abonnement, vous pouvez créer plusieurs groupes de ressources de manière à faciliter la gestion du quota et l'affichage de la facturation d'utilisation d'un ensemble de ressources. Vous vous engagez à dépenser une somme minimale combinée par mois et recevez une remise sur abonnement qui est appliquée à ce montant minimal. Vous êtes facturé au tarif plein pour toute utilisation au-delà du montant total de votre abonnement.
+
+Si vous avez un compte d'abonnement, vous pouvez créer la plupart des services disponibles dans le [catalogue IBM Cloud](https://console.bluemix.net/catalog/). Toutefois, il peut être nécessaire d'acheter séparément certains services utilisant un plan de tarification spécifique.
 
 Si vous liez votre compte Abonnement à un compte SoftLayer, à compter du premier jour du mois suivant, les deux redevances seront regroupées sur votre facture {{site.data.keyword.Bluemix_notm}}.
 {: tip}
@@ -101,8 +103,7 @@ Si vous liez votre compte Abonnement à un compte SoftLayer, à compter du premi
    * Une connectivité du réseau privé virtuel vers votre infrastructure
    * Un environnement entièrement redondant dans un centre de données {{site.data.keyword.BluSoftlayer_notm}}
    * Tous les contextes d'exécution pris en charge (IBM Java Liberty, Node.js et des contextes d'exécution open source intégrés)
-   * Tous les services dédiés que vous avez sélectionnés et tous les services {{site.data.keyword.Bluemix_notm}}
-publics
+   * Tous les services dédiés que vous avez sélectionnés et tous les services {{site.data.keyword.Bluemix_notm}} publics
    * Le support {{site.data.keyword.Bluemix_notm}} standard
 
 Vous pouvez aussi
@@ -115,11 +116,9 @@ définie dans le contrat d'abonnement. Contactez votre représentant de compte I
 
 {{site.data.keyword.Bluemix_local_notm}} exige un engagement minimal d'un an qui inclut :
 
-   * Une fonction de distribution appelée relais qui permet à IBM de se connecter à votre déploiement local et de distribuer des mises à jour
-automatiquement et de manière cohérente
+   * Une fonction de distribution appelée relais qui permet à IBM de se connecter à votre déploiement local et de distribuer des mises à jour automatiquement et de manière cohérente
    * Tous les contextes d'exécution pris en charge (IBM Java Liberty, Node.js et des contextes d'exécution open source intégrés)
-   * Tous les services locaux que vous avez sélectionnés, ainsi que l'accès à tous
-les services {{site.data.keyword.Bluemix_notm}} publics
+   * Tous les services locaux que vous avez sélectionnés, ainsi que l'accès à tous les services {{site.data.keyword.Bluemix_notm}} publics
    * Le support {{site.data.keyword.Bluemix_notm}} standard
 
 Le prix que vous payez chaque mois au cours de cet engagement dépend des services locaux que vous choisissez et inclut un compte d'abonnement qui vous permet d'accéder à tous les services publics. Le prix de l'utilisation des services dans l'environnement {{site.data.keyword.Bluemix_notm}} public est calculé selon votre contrat de compte d'abonnement. Vous recevez une facture pour tous les services que vous utilisez au-delà de la franchise
