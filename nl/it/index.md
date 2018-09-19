@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-08-14"
+lastupdated: "2018-09-04"
 
 ---
 
@@ -80,7 +80,7 @@ Se colleghi il tuo account Pagamento a consumo a un account SoftLayer, a partire
 
 Puoi eseguire l'aggiornamento a un account Pagamento a consumo dalla console {{site.data.keyword.Bluemix_notm}}. Dopo aver fornito le informazioni di fatturazione e carta di credito, accetta i termini e le condizioni e invia la richiesta di account. La tua carta di credito viene quindi convalidata. Ricevi anche un'e-mail di conferma in merito alle informazioni sull'account. Qualche minuto dopo aver ricevuto l'e-mail di conferma, puoi tornare alla console per continuare a creare le tue applicazioni. Se non è possibile elaborare la tua richiesta online per il tuo paese o la tua regione, contatta il [Supporto {{site.data.keyword.Bluemix_notm}}](/docs/get-support/howtogetsupport.html).
 
-Dopo aver eseguito l'aggiornamento a un account Pagamento a consumo ottieni un credito promozionale di $200 e non dovrai eseguire alcuna operazione per iniziare a utilizzarlo. Il tuo credito di $200 è valido per 30 giorni e viene applicato automaticamente alla tua fattura. Il credito non può essere utilizzato con le offerte di terze parti.
+Dopo aver eseguito l'aggiornamento a un account Pagamento a consumo ottieni un credito promozionale di $200 che viene automaticamente applicato al tuo account. Il tuo credito di $200 è valido per 30 giorni e viene applicato automaticamente alla tua fattura. Il credito non può essere utilizzato con le offerte di terze parti.
 
 ### Aggiornamento del tuo account
 {: #upgrade-to-subscription}
@@ -89,8 +89,9 @@ Puoi aggiornare il tuo account Pagamento a consumo a un account Sottoscrizione i
 
 ## Account Sottoscrizione
 
-Con un account Sottoscrizione, puoi creare più gruppi di risorse per gestire facilmente la quota e visualizzare l'utilizzo della fatturazione per un insieme di risorse. Ti impegni a un importo di spesa minimo ogni mese e ricevi uno sconto sulla sottoscrizione che viene applicato a tale addebito minimo. Puoi anche pagare per qualsiasi
-utilizzo che ecceda l'importo di spesa minimo.
+Con un account Sottoscrizione, puoi creare più gruppi di risorse per gestire facilmente la quota e visualizzare l'utilizzo della fatturazione per un insieme di risorse. Ti impegni a un importo di spesa minimo combinato ogni mese e ricevi uno sconto sulla sottoscrizione che viene applicato a tale addebito minimo. Ti viene addebitata la tariffa non scontata per l'utilizzo che supera la quantità totale della tua Sottoscrizione.
+
+Se hai un account Sottoscrizione, puoi creare più servizi di quelli disponibili dal [Catalogo IBM Cloud](https://console.bluemix.net/catalog/), tuttavia potrebbe essere che alcuni servizi utilizzino un piano dei prezzi specifico che ti richiede di acquistarlo separatamente.
 
 Se colleghi il tuo account Sottoscrizione a un account SoftLayer, a partire dal primo giorno del mese successivo, gli addebiti combinati vengono inclusi nella tua fattura {{site.data.keyword.Bluemix_notm}}.
 {: tip}
