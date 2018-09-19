@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-08-14"
+lastupdated: "2018-09-04"
 
 ---
 
@@ -80,7 +80,7 @@ Wenn Sie Ihr Konto mit nutzungsabhängiger Zahlung mit einem SoftLayer-Konto ver
 
 Über die {{site.data.keyword.Bluemix_notm}}-Konsole können Sie ein Upgrade auf ein Konto mit nutzungsabhängiger Zahlung durchführen. Geben Sie zunächst Ihre Abrechnungs- und Kreditkarteninformationen an, akzeptieren Sie dann die Vertragsbedingungen und übergeben Sie anschließend die Anforderung. Es wird eine Überprüfung Ihrer Kreditkarte durchgeführt. Außerdem erhalten Sie eine Bestätigungs-E-Mail zu den Kontoinformationen. Einige Minuten nach Empfang der Bestätigungs-E-Mail können Sie zur Konsole zurückkehren, um mit der Erstellung Ihrer Apps fortzufahren. Wenn Ihre Onlineanforderung für Ihr Land oder Ihre Region nicht verarbeitet werden kann, wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}}-Support](/docs/get-support/howtogetsupport.html).
 
-Nach dem Upgrade auf ein Konto mit nutzungsabhängiger Zahlung erhalten Sie eine Werbegutschrift in Höhe von 200 US-Dollar, die Sie nutzen können, ohne dass hierfür weitere Aktionen ausgeführt werden müssen. Die Gutschrift von 200 US-Dollar hat eine Gültigkeit von 30 Tagen und wird automatisch mit Ihrer Rechnung verrechnet. Die Gutschrift kann nicht mit Angeboten anderer Anbieter verwendet werden.
+Nach dem Upgrade auf ein Konto mit nutzungsabhängiger Zahlung erhalten Sie eine Werbegutschrift in Höhe von 200 US-Dollar. Dieses Guthaben wird Ihrem Konto automatisch gutgeschrieben. Die Gutschrift von 200 US-Dollar hat eine Gültigkeit von 30 Tagen und wird automatisch mit Ihrer Rechnung verrechnet. Die Gutschrift kann nicht mit Angeboten anderer Anbieter verwendet werden.
 
 ### Upgrade für Konto durchführen
 {: #upgrade-to-subscription}
@@ -89,7 +89,9 @@ Für Ihr Konto mit nutzungsabhängiger Zahlung können Sie jederzeit ein Upgrade
 
 ## Abonnementkonto
 
-Mit einem Abonnementkonto können Sie mehrere Ressourcengruppen erstellen, um Kontingente ohne großen Aufwand zu verwalten und um Informationen zu Abrechnung und Nutzung für eine Gruppe von Ressourcen anzuzeigen. Sie verpflichten sich zu einem Mindestausgabebetrag pro Monat und erhalten einen Abonnementrabatt, der auf diese Mindestgebühr angewendet wird. Außerdem müssen Sie jede Nutzung bezahlen, die über den Mindestausgabebetrag hinausgeht.
+Mit einem Abonnementkonto können Sie mehrere Ressourcengruppen erstellen, um Kontingente ohne großen Aufwand zu verwalten und um Informationen zu Abrechnung und Nutzung für eine Gruppe von Ressourcen anzuzeigen. Sie verpflichten sich zu einem kombinierten Mindestausgabebetrag pro Monat und erhalten einen Abonnementrabatt, der auf diese Mindestgebühr angewendet wird. Für eine Nutzung, die über die Gesamtsumme des Abonnements hinaus geht, fallen die normalen Gebühren ohne Rabatt an.
+
+Wenn Sie über ein Abonnementkonto verfügen, können Sie die meisten Services erstellen, die im [IBM Cloud-Katalog](https://console.bluemix.net/catalog/) verfügbar sind; es kann jedoch einige Services geben, für die ein bestimmter Preisstrukturplan gilt, gemäß dem diese Services separat erworben werden müssen.
 
 Wenn Sie Ihr Abonnementkonto mit einem SoftLayer-Konto verknüpfen, werden Ihre kombinierten Gebühren ab dem Ersten des Folgemonats über die {{site.data.keyword.Bluemix_notm}}-Rechnung abgerechnet.
 {: tip}
