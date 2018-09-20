@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-08-14"
+lastupdated: "2018-09-04"
 
 ---
 
@@ -46,7 +46,7 @@ Inscreva-se para uma conta Lite para começar a construir seus apps e explorar s
 
 Você tem acesso a um único grupo de recursos que é criado e denominado `Default`. Todas as suas instâncias de serviços que são gerenciadas pelo {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) são incluídas automaticamente nesse grupo de recursos. É possível atualizar o nome desse grupo de recursos a qualquer momento. Consulte [Renomeando um grupo de recursos](/docs/resources/resourcegroups.html#renaming-a-resource-group) para obter as etapas detalhadas.
 
-Cada grupo de recursos é livre. Ao criar uma conexão entre um serviço gerenciado pelo IAM e um aplicativo Cloud Foundry, crie um alias, que é uma instância de serviço, que conta para sua cota. Consulte [O que é um alias?](/docs/resources/connecting_apps.html#what_is_alias).
+Cada grupo de recursos é livre. Ao criar uma conexão entre um serviço gerenciado pelo IAM e um app Cloud Foundry, você cria um alias, que é uma instância de serviço, que conta para sua cota. Consulte [O que é um alias?](/docs/resources/connecting_apps.html#what_is_alias).
 {: tip}
 
 ### O que está disponível?
@@ -83,7 +83,7 @@ Se você vincular sua conta pré-paga a uma conta do SoftLayer, começando no pr
 
 É possível fazer upgrade para uma conta pré-paga por meio do console do {{site.data.keyword.Bluemix_notm}}. Depois de fornecer suas informações de faturamento e cartão de crédito, aceite os termos e condições e envie sua solicitação de conta. Em seguida, seu cartão de crédito será validado. Você também receberá um e-mail de confirmação sobre as informações da conta. Alguns minutos após o recebimento do e-mail de confirmação, é possível retornar ao console para continuar a construção de seus apps. Se a sua solicitação on-line não puder ser processada para seu país ou região, entre em contato com o [Suporte ao {{site.data.keyword.Bluemix_notm}}](/docs/get-support/howtogetsupport.html).
 
-Você obterá um crédito promocional de US$ 200 depois de fazer upgrade para uma conta pré-paga e não será necessária nenhuma ação para começar a utilizá-lo. Seu crédito de US$ 200 é válido por 30 dias e é aplicado automaticamente à sua fatura. O crédito não pode ser usado com ofertas de terceiros.
+Você obterá um crédito promocional de US$ 200 após fazer upgrade para uma conta Pré-paga e o crédito será automaticamente aplicado à sua conta. Seu crédito de US$ 200 é válido por 30 dias e é automaticamente aplicado à sua fatura. O crédito não pode ser usado com ofertas de terceiros.
 
 ### Fazendo upgrade de sua conta
 {: #upgrade-to-subscription}
@@ -92,8 +92,10 @@ Será possível fazer upgrade de sua conta pré-paga para uma conta de Assinatur
 
 ## Conta Assinatura
 
-Com uma conta Assinatura, é possível criar múltiplos grupos de recursos para gerenciar facilmente a cota e visualizar o uso de faturamento para um conjunto de recursos. Você confirma uma quantia de gasto mínimo cada mês e recebe um desconto na assinatura que será aplicado a esse encargo mínimo. Você
-também paga por qualquer uso que exceda a quantia mínima de gasto.
+Com uma conta Assinatura, é possível criar múltiplos grupos de recursos para gerenciar facilmente a cota e visualizar o uso de faturamento para um conjunto de recursos. Você se compromete com um valor de gasto mínimo a cada mês e recebe um desconto de assinatura que é aplicado a esse encargo mínimo. Será cobrada uma taxa sem desconto por qualquer uso que exceda o seu valor total de assinatura.
+
+Se você tiver uma conta de assinatura, será possível criar a maioria dos serviços que estão disponíveis no [Catálogo
+do IBM Cloud](https://console.bluemix.net/catalog/), no entanto, poderá haver determinados serviços que usam um plano de precificação específico que requer que você o compre separadamente.
 
 Se você vincular sua conta de Assinatura a uma conta do SoftLayer, começando no primeiro dia do próximo mês, seus encargos combinados serão incluídos na fatura do {{site.data.keyword.Bluemix_notm}}.
 {: tip}
@@ -105,7 +107,7 @@ Com o {{site.data.keyword.Bluemix_dedicated_notm}}, é necessário inscrever-se 
    * Conectividade VPN de volta para a sua infraestrutura
    * Ambiente completamente redundante em um data center do {{site.data.keyword.BluSoftlayer_notm}}
    * Todos os tempos de execução suportados (IBM Java Liberty, Node.js e tempos de execução de software livre integrados)
-   * Todos os serviços dedicados selecionados e todos os serviços públicos do {{site.data.keyword.Bluemix_notm}}
+   * Todos os serviços dedicados que você selecionou e todos os serviços públicos do {{site.data.keyword.Bluemix_notm}}
    * Suporte {{site.data.keyword.Bluemix_notm}} padrão
 
 Também é possível pedir itens opcionais, tais como
@@ -122,7 +124,7 @@ Com o {{site.data.keyword.Bluemix_local_notm}}, deve-se inscrever por um prazo m
    * Uma capacidade de entrega denominada retransmissão que permite que a IBM se conecte à implementação local e
 entregue atualizações de forma automática e consistente.
    * Todos os tempos de execução suportados (IBM Java Liberty, Node.js e tempos de execução de software livre integrados)
-   * Todos os serviços locais que você selecionou e acesso a todos os serviços públicos do {{site.data.keyword.Bluemix_notm}}
+   * Todos os serviços locais selecionados e acesso a todos os serviços públicos do {{site.data.keyword.Bluemix_notm}}
    * Suporte {{site.data.keyword.Bluemix_notm}} padrão
 
 O que é pago todos os meses durante esse prazo é baseado nos serviços locais que você deseja, além de uma conta Assinatura que fornece acesso a todos os serviços públicos. Os encargos de uso dos serviços no {{site.data.keyword.Bluemix_notm}} Público são calculados com base no contrato da conta da assinatura. Você recebe
