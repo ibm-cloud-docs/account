@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-08-20"
+lastupdated: "2018-09-13"
 
 ---
 
@@ -19,7 +19,21 @@ lastupdated: "2018-08-20"
 ## Come creo un account?
 {: #create-account}
 
-Vai all'indirizzo https://console.bluemix.net e fai clic su **Crea un account gratuito**. Il tipo di account creato è un account Lite, che non scade mai. Vedi [Account Lite](/docs/account/index.html#liteaccount) per ulteriori dettagli sulle funzioni incluse.
+Vai all'indirizzo https://console.bluemix.net e fai clic su **Crea un account gratuito** per creare un account Lite che non scade mai. 
+
+Vedi [Account Lite](/docs/account/index.html#liteaccount) per ulteriori dettagli sulle funzioni incluse.
+
+## Cos'è Cloud Foundry?
+{: #cloud-foundry}
+
+Cloud Foundry è un'opzione PaaS (platform as a service) open source disponibile mediante {{site.data.keyword.Bluemix_notm}} pubblico per creare e distribuire applicazioni sul cloud. Le organizzazioni e gli spazi Cloud Foundry sono utilizzati all'interno di un account {{site.data.keyword.Bluemix_notm}} per organizzare e gestire le risorse e le applicazioni disponibili in specifiche regioni. 
+
+Per ulteriori informazioni sulla gestione di organizzazioni e spazi, vedi [Aggiunta di organizzazioni e spazi](/docs/account/orgs_spaces.html#orgsspacesusers).Inoltre, se sei interessato a saperne di più su come fornire accesso alle risorse in uno spazio Cloud Foundry, vedi [Accesso Cloud Foundry](/docs/iam/cfaccess.html#cfaccess).
+
+## Come sposto un'organizzazione a un altro account?
+{: #move-org-diff-account}
+
+Attualmente, non puoi migrare un'organizzazione a un account differente. 
 
 ## Quale regione Cloud Foundry posso utilizzare?
 {: #whichregions}
@@ -59,7 +73,7 @@ Sì, puoi eseguire l'upgrade a un account fatturabile e continuare ad utilizzare
 
 Puoi facilmente aggiornare il metodo di pagamento associato al tuo account fatturabile. Nella console, vai a **Gestisci > Fatturazione e utilizzo > Modifica metodo di pagamento**.
 
-## Come posso eliminare il mio account?
+## Come posso annullare il mio account?
 {: #cancelaccount}
 
 Nella console, vai alla pagina **Gestisci > Fatturazione e utilizzo > Fatturazione** e fai clic su **Disattiva account**.
@@ -68,6 +82,13 @@ Nella console, vai alla pagina **Gestisci > Fatturazione e utilizzo > Fatturazio
 {: #deleteaccount}
 
 Devi contattare il supporto IBM Cloud per aprire un ticket di supporto e richiedere l'eliminazione del tuo account. Se hai dei dati associati al tuo account precedente che vuoi salvare e passare a un nuovo account, includi queste informazioni nell'e-mail.
+
+## Perché il mio account è disattivato?
+{: #account-deactivated}
+
+Il tuo account è molto probabilmente disattivato perché un utente autorizzato lo ha annullato oppure l'account è sospeso.  
+
+A discrezione di IBM, gli utenti che violano il comportamento di utilizzo accettabile dei servizi {{site.data.keyword.Bluemix_notm}} possono essere disabilitati senza preavviso. Alcuni servizi possono essere ripristinati se gli utenti correggono il loro comportamento di utilizzo dopo essere stati informati dell'azione offensiva. Altrimenti, gli account possono essere sospesi o terminati.
 
 ## Come ottengo supporto?
 {: #contactsupport}
@@ -84,18 +105,17 @@ Gli account di prova {{site.data.keyword.Bluemix_notm}} sono disponibili per doc
 ## Dopo essermi collegato al mio account, come posso accedere?
 {: #al_login}
 
-Dopo esserti collegato al tuo account, accedi utilizzando il tuo ID IBM
-[Console {{site.data.keyword.Bluemix}} ![Icona link esterno](../icons/launch-glyph.svg)](https://console.bluemix.net){: new_window}.
+Dopo aver collegato il tuo account, utilizza il tuo IBMid per accedere alla console {{site.data.keyword.Bluemix}}.
 
 ## Dopo essermi collegato al mio account, qual è l'impatto sul mio supporto?
 {: #al_support}
 
 Dopo esserti collegato al tuo account, conservi lo stesso livello di supporto di quando aggiungi la piattaforma {{site.data.keyword.Bluemix_notm}} al tuo account.
 
-## Ci sono altri modi per ottenere supporto per collegarmi al mio account? 	
+## Ci sono altri modi per ottenere supporto per collegarmi al mio account? 
 {: #al_morehelp}
 
-  1. Consulta [Steps to Link your IaaS and PaaS Accounts blog](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/) per informazioni utili. 
+  1. Consulta [Steps to Link your IaaS and PaaS Accounts blog](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/) per informazioni utili.
   2. Dal portale clienti dell'infrastruttura {{site.data.keyword.BluSoftlayer_full}}, apri una **Chat live col settore vendite** per porre le tue domande sull'account.
   3. Apri un ticket dal portale clienti dell'infrastruttura {{site.data.keyword.BluSoftlayer_full}}.  Seleziona **Supporto** > **Aggiungi ticket** e poi, nel campo **Oggetto**, seleziona **Richiesta di account** per indirizzare la tua domanda sull'account al team di supporto corretto.
 
@@ -108,27 +128,40 @@ Se hai più account SoftLayer, devi collegare gli account che hanno un account d
 
 Se non hai un account della piattaforma {{site.data.keyword.Bluemix_notm}} corrispondente e un ID IBM di accompagnamento, è possibile creare un NUOVO account SoftLayer per collegare gli account.
 
-## E se non voglio collegare il mio account? 
+## E se non voglio collegare il mio account? 	
 {: #al_bene}
 
 Per aiutarti a sperimentare ulteriormente tutte le nuove funzionalità di {{site.data.keyword.Bluemix_notm}} si sta sviluppando tutto in una sola console {{site.data.keyword.Bluemix_notm}}. Quando unisci il tuo account, avrai accesso a un catalogo più consistente, alla gestione dell'account semplificata e a un solo accesso.
 
 Se il collegamento non è un'opzione valida per te, contatta il supporto delle vendite per le altre opzioni.
 
-## Ci sono incentivi per collegare i miei account? 
+## Ci sono incentivi per collegare i miei account? 	
 {: #al_incent}
 
 Quando colleghi i tuoi account, puoi utilizzare un credito promozionale di $200 per provare i servizi {{site.data.keyword.Bluemix_notm}}. 
 
-## Cosa significa aggiungere i servizi della piattaforma {{site.data.keyword.Bluemix_notm}} al mio account SoftLayer? 
+Per ulteriori informazioni sul credito promozionale di $200, vedi [Account Pagamento a consumo](/docs/account/index.html#paygo). 
+
+## Come passo da un account a un altro?
+{: #switch-between-accounts}
+
+Per passare da un account a un altro, vai all'icona **{{site.data.keyword.avatar}}** ![icona Avatar](../icons/i-avatar-icon.svg), fai clic sul menu **Account** e seleziona un altro account. 
+
+## Come passo da un proprietario di account a un altro? 
+{: #switch-account-owners}
+
+Non puoi passare dal proprietario di un account a un altro ma puoi modificare i proprietari delle risorse. Per ulteriori informazioni sul passaggio della proprietà, vedi [Modifica della proprietà delle risorse private](/docs/account/owners.html#how-to-change-the-owner-of-a-catalog-resource).
+
+## Cosa significa aggiungere i servizi della piattaforma {{site.data.keyword.Bluemix_notm}} al mio account SoftLayer? 	
 {: #al_owaffslacct}
 
 Significa che il tuo account ha accesso a tutte le offerte della piattaforma {{site.data.keyword.Bluemix_notm}}.  Dopo che aggiungi l'offerta della piattaforma {{site.data.keyword.Bluemix_notm}} al tuo account, il tuo master dell'account dovrà abilitare l'utente finale ad avere accesso all'offerta.
 
 Se sei il master dell'account, consulta [Gestione degli utenti](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) per ulteriori informazioni.
 
-## Come il collegamento dell'account influenza il mio ID account master SoftLayer? 
+## Come il collegamento dell'account influenza il mio ID account master SoftLayer? 	
 {: #al_howaffslmastacct}
 
 Puoi ancora utilizzare l'ID del tuo account SoftLayer per accedere al portale clienti dell'infrastruttura {{site.data.keyword.BluSoftlayer_full}} perché è possibile accedere alla console {{site.data.keyword.Bluemix_notm}} utilizzando gli ID IBM.
+
 
