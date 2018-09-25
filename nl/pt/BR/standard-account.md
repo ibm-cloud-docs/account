@@ -21,7 +21,7 @@ lastupdated: "2017-10-13"
 O {{site.data.keyword.Bluemix}} Standard Account Limited Release introduz uma nova conta grátis, que oferece uma nova maneira de trabalhar no {{site.data.keyword.Bluemix_notm}} Público. Uma conta Padrão nunca expira, ao contrário de uma avaliação de 30 dias do {{site.data.keyword.Bluemix_notm}}. É possível continuar a trabalhar em seus aplicativos {{site.data.keyword.Bluemix_notm}} sem quaisquer preocupações sobre restrições de tempo. 
 {:shortdesc}
 
-Os usuários nas regiões do Reino Unido e do sul dos EUA são elegíveis para uma conta Padrão. Se você não estiver em nenhuma dessas regiões, ainda será possível criar uma conta Padrão pedindo um convite a um amigo ou entrando em contato com nossa equipe de vendas em sales@bluemix.net. Como um proprietário da conta Padrão, é possível convidar amigos e colegas para participar.  
+Os usuários nas regiões do Reino Unido e do sul dos EUA são elegíveis para uma conta Padrão. Se você não estiver em nenhuma dessas regiões, ainda será possível criar uma conta Padrão pedindo um convite a um amigo ou entrando em contato com nossa equipe de vendas em CloudDigitalSales@us.ibm.com. Como um proprietário da conta Padrão, é possível convidar amigos e colegas para participar.  
 
 ## Introdução à conta {{site.data.keyword.Bluemix_notm}} Standard
 {: #standardaccount}
@@ -143,6 +143,6 @@ Os serviços de seu plano Lite serão excluídos se não houver nenhuma atividad
 ## Participando do Standard Account Limited Release
 {: #lgainvitation}
 
-É possível pedir um convite a um amigo com uma conta Padrão ou entrar em contato com nossa equipe de vendas em sales@bluemix.net. Adoraríamos que você experimentasse!
+É possível pedir um convite a um amigo com uma conta Padrão ou entrar em contato com nossa equipe de vendas em CloudDigitalSales@us.ibm.com. Adoraríamos que você experimentasse!
 
 Se você receber um convite de um amigo ou de um vendedor do {{site.data.keyword.Bluemix_notm}}, seu convite exclusivo será enviado para o endereço de e-mail fornecido. Ao receber o convite, preencha as instruções no e-mail para se registrar para uma conta Padrão. 
