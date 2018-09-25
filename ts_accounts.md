@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-07-16"
+lastupdated: "2018-09-25"
 
 ---
 
@@ -191,7 +191,7 @@ You can't submit your credit card information to convert your Lite account to a 
 The **Submit** button on the Add credit card page is disabled.
 {: tsSymptoms}
 
-This problem happens when your information isn't filled in correctly in the Add credit card page.
+This problem happens when your information isn't filled in correctly on the Add credit card page.
 {: tsCauses}
 
 
@@ -200,4 +200,4 @@ Complete the following steps:
 
   1. On the Add credit card page, fill in all the required fields in the contact information, contact address, and billing address sections.
   2. Select **I have read and agree to IBM's Terms and Conditions**, then click **Submit**. The **Select a payment method** section is displayed.
-  3. Enter your credit card number, the expiry date of your card, and the security code on your card. Then click **Submit**.
+  3. Enter your credit card number, the expiration date, and the security code. Then click **Submit**.
