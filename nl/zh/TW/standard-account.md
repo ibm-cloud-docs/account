@@ -21,7 +21,7 @@ lastupdated: "2017-10-13"
 「{{site.data.keyword.Bluemix}} 標準帳戶受限版本」引進新的免費帳戶，提供新的方式在「公用 {{site.data.keyword.Bluemix_notm}}」中運作。標準帳戶永不到期，不像 30 天的 {{site.data.keyword.Bluemix_notm}} 試用。您可以繼續使用 {{site.data.keyword.Bluemix_notm}} 應用程式，而不必擔心時間限制。
 {:shortdesc}
 
-英國及美國南部地區的使用者有資格使用「標準帳戶」。如果您不在任一地區，則要求朋友發出邀請，或在 sales@bluemix.net 連繫銷售團隊，仍可建立「標準帳戶」。身為「標準帳戶」擁有者，您可以邀請朋友及同事來參與。  
+英國及美國南部地區的使用者有資格使用「標準帳戶」。如果您不在任一地區，則要求朋友發出邀請，或在 CloudDigitalSales@us.ibm.com 連繫銷售團隊，仍可建立「標準帳戶」。身為「標準帳戶」擁有者，您可以邀請朋友及同事來參與。  
 
 ## {{site.data.keyword.Bluemix_notm}} 標準帳戶簡介
 {: #standardaccount}
@@ -131,6 +131,6 @@ lastupdated: "2017-10-13"
 ## 參與標準帳戶受限版本
 {: #lgainvitation}
 
-您可以要求具有「標準帳戶」的朋友發出邀請，或在 sales@bluemix.net 連繫銷售團隊。我們很開心您的試用！
+您可以要求具有「標準帳戶」的朋友發出邀請，或在 CloudDigitalSales@us.ibm.com 連繫銷售團隊。我們很開心您的試用！
 
 如果您收到朋友或 {{site.data.keyword.Bluemix_notm}} 賣方的邀請，則會將您的專屬邀請傳送至您提供的電子郵件位址。收到邀請之後，請完成電子郵件中的指示，來註冊標準帳戶。 
