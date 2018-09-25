@@ -21,7 +21,7 @@ lastupdated: "2017-10-13"
 {{site.data.keyword.Bluemix}} 표준 계정 제한 릴리스에서는 새로운 무료 계정을 선보입니다. 이를 통해 새로운 방식으로 퍼블릭 {{site.data.keyword.Bluemix_notm}}에서 작업할 수 있습니다. 표준 계정은 30일 {{site.data.keyword.Bluemix_notm}} 평가판과 달리 만료되지 않습니다. 시간 제한에 대해 신경쓰지 않고 {{site.data.keyword.Bluemix_notm}} 애플리케이션 작업을 계속할 수 있습니다. 
 {:shortdesc}
 
-영국과 미국 남부 지역의 사용자는 표준 계정을 사용할 수 있습니다. 해당 지역이 아닌 경우에도 친구에게 초대를 요청하거나 sales@bluemix.net으로 영업 팀에 연락하여 표준 계정을 작성할 수 있습니다. 표준 계정 소유자로서 친구와 동료들이 참여하도록 초대할 수 있습니다.  
+영국과 미국 남부 지역의 사용자는 표준 계정을 사용할 수 있습니다. 해당 지역이 아닌 경우에도 친구에게 초대를 요청하거나 CloudDigitalSales@us.ibm.com으로 영업 팀에 연락하여 표준 계정을 작성할 수 있습니다. 표준 계정 소유자로서 친구와 동료들이 참여하도록 초대할 수 있습니다.  
 
 ## {{site.data.keyword.Bluemix_notm}} 표준 계정 소개
 {: #standardaccount}
