@@ -24,7 +24,7 @@ utiliser vos applications {{site.data.keyword.Bluemix_notm}}
 sans vous soucier des restrictions de temps. 
 {:shortdesc}
 
-Les utilisateurs aux Royaume-Uni et dans les régions Sud des Etats-Unis sont éligibles pour un compte Standard. Si vous n'êtes pas situé dans l'une de ces régions, vous pouvez néanmoins créer un compte Standard en demandant à un ami de vous inviter ou en contactant notre équipe commerciale à l'adresse sales@bluemix.net. En tant que propriétaire d'un compte Standard, vous pouvez inviter des amis et des collègues à participer.  
+Les utilisateurs aux Royaume-Uni et dans les régions Sud des Etats-Unis sont éligibles pour un compte Standard. Si vous n'êtes pas situé dans l'une de ces régions, vous pouvez néanmoins créer un compte Standard en demandant à un ami de vous inviter ou en contactant notre équipe commerciale à l'adresse CloudDigitalSales@us.ibm.com. En tant que propriétaire d'un compte Standard, vous pouvez inviter des amis et des collègues à participer.  
 
 ## Présentation du compte {{site.data.keyword.Bluemix_notm}} standard
 {: #standardaccount}
@@ -150,6 +150,6 @@ Vos services de plan Lite sont supprimés en l'absence d'activité pendant 30 jo
 ## Participation au compte Standard Account Limited Release
 {: #lgainvitation}
 
-Vous pouvez demander à un ami disposant d'un compte Standard de vous inviter ou contacter notre équipe commerciale à l'adresse sales@bluemix.net. Vous êtes le bienvenu si vous désirez l'essayer !
+Vous pouvez demander à un ami disposant d'un compte Standard de vous inviter ou contacter notre équipe commerciale à l'adresse CloudDigitalSales@us.ibm.com. Vous êtes le bienvenu si vous désirez l'essayer !
 
 Si vous recevez une invitation d'un ami ou d'un vendeur {{site.data.keyword.Bluemix_notm}}, votre invitation exclusive est envoyée à l'adresse électronique que vous avez fournie. Lorsque vous recevez l'invitation, suivez les instructions du courrier électronique pour vous inscrire pour un compte Standard. 
