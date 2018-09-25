@@ -21,7 +21,7 @@ lastupdated: "2017-10-13"
 Mit dem {{site.data.keyword.Bluemix}}-Standardkonto (begrenztes Release) wird ein neues kostenfreies Konto eingeführt, das die Möglichkeit bietet, in {{site.data.keyword.Bluemix_notm}} Public zu arbeiten. Für ein Standardkonto gilt kein Ablaufdatum, im Gegensatz zum {{site.data.keyword.Bluemix_notm}}-Testkonto mit einer Gültigkeit von 30 Tagen. Sie können die Arbeit mit den {{site.data.keyword.Bluemix_notm}}-Anwendungen fortsetzen, ohne sich um Zeitbegrenzungen zu kümmern. 
 {:shortdesc}
 
-Für Benutzer in den Regionen 'Vereintes Königreich' und 'USA (Süden)' steht ein Standardkonto zur Verfügung. Wenn Sie sich nicht in einer dieser Regionen befinden, können Sie dennoch ein Standardkonto erstellen, indem Sie einen Freund um eine Einladung bitten oder indem Sie sich unter sales@bluemix.net an das Vertriebsteam wenden. Wenn Sie über ein Standardkonto verfügen, können Sie Freunde und Kollegen einladen, sodass auch sie teilnehmen können.  
+Für Benutzer in den Regionen 'Vereintes Königreich' und 'USA (Süden)' steht ein Standardkonto zur Verfügung. Wenn Sie sich nicht in einer dieser Regionen befinden, können Sie dennoch ein Standardkonto erstellen, indem Sie einen Freund um eine Einladung bitten oder indem Sie sich unter CloudDigitalSales@us.ibm.com an das Vertriebsteam wenden. Wenn Sie über ein Standardkonto verfügen, können Sie Freunde und Kollegen einladen, sodass auch sie teilnehmen können.  
 
 ## {{site.data.keyword.Bluemix_notm}}-Standardkonto - Einführung
 {: #standardaccount}
@@ -130,6 +130,6 @@ Ihre Lite-Plan-Services werden gelöscht, wenn über einen Zeitraum von 30 Tagen
 ## Teilnahme am begrenzten Release des Standardkontos
 {: #lgainvitation}
 
-Sie können einen Freund, der bereits ein Standardkonto besitzt, bitten, Sie einzuladen, oder Sie können sich unter sales@bluemix.net an das Vertriebsteam wenden. Nutzen Sie die Gelegenheit, das Produkt zu testen!
+Sie können einen Freund, der bereits ein Standardkonto besitzt, bitten, Sie einzuladen, oder Sie können sich unter CloudDigitalSales@us.ibm.com an das Vertriebsteam wenden. Nutzen Sie die Gelegenheit, das Produkt zu testen!
 
 Wenn Sie eine Einladung von einem Freund oder einem {{site.data.keyword.Bluemix_notm}}-Verkäufer erhalten, wird die exklusive Einladung an die von Ihnen angegebene E-Mail-Adresse gesendet. Nachdem Sie die Einladung erhalten haben, führen Sie die Anweisungen in der E-Mail aus, um eine Registrierung für ein Standardkonto durchzuführen. 
