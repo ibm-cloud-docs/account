@@ -21,7 +21,7 @@ lastupdated: "2017-10-13"
 {{site.data.keyword.Bluemix}} 标准帐户受限发行版引入了新的免费帐户，通过该帐户，可在公共 {{site.data.keyword.Bluemix_notm}} 中以全新的方式工作。与 30 天 {{site.data.keyword.Bluemix_notm}} 试用帐户不同，标准帐户永不过期。您可以持续使用 {{site.data.keyword.Bluemix_notm}} 应用程序，而无需考虑任何时间限制。
 {:shortdesc}
 
-英国和美国南部区域中的用户有资格使用标准帐户。如果您不在这两个区域中，也仍然可以通过要求朋友邀请您，或者通过 sales@bluemix.net 与我们的销售团队取得联系来创建标准帐户。作为标准帐户所有者，您可以邀请朋友和同事参与。  
+英国和美国南部区域中的用户有资格使用标准帐户。如果您不在这两个区域中，也仍然可以通过要求朋友邀请您，或者通过 CloudDigitalSales@us.ibm.com 与我们的销售团队取得联系来创建标准帐户。作为标准帐户所有者，您可以邀请朋友和同事参与。  
 
 ## {{site.data.keyword.Bluemix_notm}} 标准帐户简介
 {: #standardaccount}
@@ -131,6 +131,6 @@ lastupdated: "2017-10-13"
 ## 参与标准帐户受限发行版
 {: #lgainvitation}
 
-您可以要求已经拥有标准帐户的朋友邀请您，或者通过 sales@bluemix.net 与我们的销售团队取得联系。我们期待您的试用！
+您可以要求已经拥有标准帐户的朋友邀请您，或者通过 CloudDigitalSales@us.ibm.com 与我们的销售团队取得联系。我们期待您的试用！
 
 如果收到朋友或 {{site.data.keyword.Bluemix_notm}} 销售商发来的邀请，那么对您的专属邀请会发送到您提供的电子邮件地址。当您收到邀请时，请完成电子邮件中的指示信息，以注册标准帐户。 
