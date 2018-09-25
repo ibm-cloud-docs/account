@@ -21,7 +21,7 @@ lastupdated: "2017-10-13"
 La release limitata dell'account Standard {{site.data.keyword.Bluemix}} introduce un nuovo account gratuito, che offre un nuovo modo di lavorare in {{site.data.keyword.Bluemix_notm}} pubblico. A differenza di una versione di prova di 30 giorni {{site.data.keyword.Bluemix_notm}}, un account standard non ha una scadenza. Puoi continuare a lavorare sulle tue applicazioni {{site.data.keyword.Bluemix_notm}} senza preoccuparti dei limiti di tempo. 
 {:shortdesc}
 
-Gli utenti nelle regioni Regno Unito e Stati Uniti Sud sono idonei per un account Standard. Se non ti trovi in queste regioni, puoi comunque creare un account Standard chiedendo un invito a un amico o contattando il nostro team di vendite all'indirizzo sales@bluemix.net. Come proprietario di un account Standard, potrai invitare amici e colleghi a partecipare.  
+Gli utenti nelle regioni Regno Unito e Stati Uniti Sud sono idonei per un account Standard. Se non ti trovi in queste regioni, puoi comunque creare un account Standard chiedendo un invito a un amico o contattando il nostro team di vendite all'indirizzo CloudDigitalSales@us.ibm.com. Come proprietario di un account Standard, potrai invitare amici e colleghi a partecipare.  
 
 ## Presentazione dell'Account standard {{site.data.keyword.Bluemix_notm}}
 {: #standardaccount}
@@ -131,6 +131,6 @@ I tuoi servizi con piano Lite vengono eliminati in assenza di attività per 30 g
 ## Partecipazione alla Release limitata dall'account Standard
 {: #lgainvitation}
 
-Puoi chiedere un invito a un amico che ha un account Standard o contattare il nostro team di vendite all'indirizzo sales@bluemix.net. Ci piacerebbe che lo provassi.
+Puoi chiedere un invito a un amico che ha un account Standard o contattare il nostro team di vendite all'indirizzo CloudDigitalSales@us.ibm.com. Ci piacerebbe che lo provassi.
 
 Se ricevi un invito da un amico o un da venditore {{site.data.keyword.Bluemix_notm}}, il tuo invito esclusivo viene inviato all'indirizzo e-mail che hai fornito. Una volta ricevuto l'invito, completa le istruzioni riportate nell'e-mail per registrare un account standard. 
