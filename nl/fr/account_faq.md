@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-08-20"
+lastupdated: "2018-09-13"
 
 ---
 
@@ -19,7 +19,21 @@ lastupdated: "2018-08-20"
 ## Comment créer un compte ?
 {: #create-account}
 
-Accédez à la page https://console.bluemix.net et cliquez sur **Créer un compte gratuit**. Le type de compte créé est un compte Lite, qui n'expire jamais. Pour plus de détails sur les fonctions incluses, voir [Compte Lite](/docs/account/index.html#liteaccount).
+Accédez à la page https://console.bluemix.net et cliquez sur **Créer un compte gratuit** pour créer un compte Lite n'arrivant jamais à expiration. 
+
+Pour plus de détails sur les fonctions incluses, voir [Compte Lite](/docs/account/index.html#liteaccount).
+
+## Qu'est-ce que Cloud Foundry ?
+{: #cloud-foundry}
+
+Cloud Foundry est une plateforme sous forme de services (PaaS) à source ouverte disponible via {{site.data.keyword.Bluemix_notm}} Public pour la génération et le déploiement d'applications sur le cloud. Les organisations et les espaces Cloud Foundry sont utilisés dans un compte {{site.data.keyword.Bluemix_notm}} pour organiser et utiliser les ressources disponibles dans des régions spécifiques. 
+
+Pour plus d'informations sur la gestion des organisations et des espaces, voir [Ajout d'organisations et d'espaces](/docs/account/orgs_spaces.html#orgsspacesusers). Pour plus d'informations sur l'accès aux ressources d'un espace Cloud Foundry, voir [Accès Cloud Foundry](/docs/iam/cfaccess.html#cfaccess).
+
+## Puis-je déplacer une organisation dans un autre compte ?
+{: #move-org-diff-account}
+
+Vous ne pouvez pas actuellement migrer une organisation dans un autre compte. 
 
 ## Quelles régions Cloud Foundry puis-je utiliser ?
 {: #whichregions}
@@ -69,6 +83,13 @@ Dans la console, accédez à **Gérer > Facturation et utilisation > Facturation
 
 Vous devez contacter le service de support IBM Cloud pour ouvrir un ticket de demande de service et demander la suppression de votre compte. Si des données sont associées à votre ancien compte et que vous souhaitez les sauvegarder et utiliser un nouveau compte, incluez ces informations dans votre message électronique.
 
+## Pourquoi mon compte est-il désactivé ?
+{: #account-deactivated}
+
+Il est fort possible que votre compte soit désactivé car un utilisateur autorisé l'a annulé ou car le compte est suspendu.  
+
+IBM peut, à sa seule discrétion, désactiver sans aucun préavis les utilisateurs ne respectant pas les comportements d'utilisation acceptables des services {{site.data.keyword.Bluemix_notm}}. Certains services peuvent être restaurés si les utilisateurs modifient leur comportement après avoir reçu une notification signalant l'action fautive. Sinon, les comptes peuvent être suspendus ou clôturés.
+
 ## A quelles formes de support peut-on accéder ?
 {: #contactsupport}
 
@@ -84,18 +105,17 @@ Des comptes d'essai {{site.data.keyword.Bluemix_notm}} sont disponibles pour les
 ## Après avoir lié mon compte, comment puis-je me connecter ?
 {: #al_login}
 
-Une fois que vous avez lié votre compte, vous vous connectez à l'aide de votre IBMid à la
-[console {{site.data.keyword.Bluemix}} ![Icône de lien externe](../icons/launch-glyph.svg)](https://console.bluemix.net){: new_window}.
+Une fois que avez lié votre compte, utilisez votre IBMid pour établir une connexion à la console {{site.data.keyword.Bluemix}}.
 
 ## Une fois que j'ai lié mon compte, quel est l'impact sur mon support ?
 {: #al_support}
 
 Une fois que vous avez lié votre compte, vous conservez le même niveau de support lorsque vous ajoutez la plateforme {{site.data.keyword.Bluemix_notm}} à votre compte.
 
-## Existe-t-il d'autres moyens pour obtenir de l'aide relative à la liaison de mon compte ? 	
+## Existe-t-il d'autres moyens pour obtenir de l'aide relative à la liaison de mon compte ? 
 {: #al_morehelp}
 
-  1. Consultez le site [Steps to Link your IaaS and PaaS Accounts blog](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/) pour obtenir des informations utiles. 
+  1. Consultez le site [Steps to Link your IaaS and PaaS Accounts blog](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/) pour obtenir des informations utiles.
   2. A partir du portail client de l'infrastructure {{site.data.keyword.BluSoftlayer_full}}, ouvrez une session de **discussion en ligne avec le service commercial** pour poser des questions relatives à votre compte.
   3. Ouvrez un ticket à partir du portail client de l'infrastructure {{site.data.keyword.BluSoftlayer_full}}.  Sélectionnez **Support** > **Ajouter un ticket**, puis, dans la zone **Objet**, sélectionnez **Demande pour comptabilisation** pour acheminer votre question sur votre compte à l'équipe de support appropriée.
 
@@ -108,27 +128,40 @@ Si vous possédez plusieurs comptes SoftLayer, vous devez lier les comptes auxqu
 
 Si vous ne possédez pas de compte de plateforme {{site.data.keyword.Bluemix_notm}} correspondant ni un compte IBMid associé, un nouveau compte SoftLayer peut être créé pour lier les comptes.
 
-## Que se passe-t-il si je ne veux pas lier mon compte ? 
+## Que se passe-t-il si je ne veux pas lier mon compte ? 	
 {: #al_bene}
 
 Afin de vous permettre de profiter davantage de {{site.data.keyword.Bluemix_notm}}, toutes les nouvelles fonctionnalités sont développées dans une seule console {{site.data.keyword.Bluemix_notm}}. Lorsque vous fusionnez votre compte, vous obtenez un accès à un catalogue plus robuste, à une gestion des comptes simplifiée et vous bénéficiez d'une seule connexion.
 
 Si la liaison n'est pas une option envisageable pour vous, renseignez-vous auprès de votre équipe commerciale afin de connaître les autres options possibles.
 
-## Des primes s'appliquent-elles pour la liaison de mes comptes ? 
+## Des primes s'appliquent-elles pour la liaison de mes comptes ? 	
 {: #al_incent}
 
 Lorsque vous liez vos comptes, vous pouvez utiliser un crédit promotionnel de 200 $ afin d'essayer des services {{site.data.keyword.Bluemix_notm}}. 
 
-## Que se passe-t-il si j'ajoute des services de plateforme {{site.data.keyword.Bluemix_notm}} à mon compte SoftLayer ? 
+Pour en savoir plus sur le crédit promotionnel de 200 $, voir la rubrique présentant le [compte Paiement à la carte](/docs/account/index.html#paygo). 
+
+## Comment puis-je passer d'un compte à un autre ?
+{: #switch-between-accounts}
+
+Pour utiliser un autre compte, accédez à l'icône **{{site.data.keyword.avatar}}** ![Icône Avatar](../icons/i-avatar-icon.svg), cliquez sur le menu **Compte** puis sélectionnez un autre compte. 
+
+## Puis-je changer le propriétaire d'un compte ? 
+{: #switch-account-owners}
+
+Non, mais vous pouvez changer les propriétaires des ressources. Pour en savoir plus, voir [Changement de la propriété de ressources privées](/docs/account/owners.html#how-to-change-the-owner-of-a-catalog-resource).
+
+## Que se passe-t-il si j'ajoute des services de plateforme {{site.data.keyword.Bluemix_notm}} à mon compte SoftLayer ? 	
 {: #al_owaffslacct}
 
 Avec cet ajout, votre compte a accès à toutes les offres de la plateforme {{site.data.keyword.Bluemix_notm}}.  Une fois que vous avez ajouté l'offre de plateforme {{site.data.keyword.Bluemix_notm}} à votre compte, votre responsable de compte doit activer l'accès à l'offre pour l'utilisateur final.
 
 Si vous êtes responsable de compte, consultez la rubrique [Gestion des utilisateurs](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) pour en savoir plus.
 
-## De quelle manière la liaison de compte impacte-t-elle mon ID de compte principal SoftLayer ? 
+## De quelle manière la liaison de compte impacte-t-elle mon ID de compte principal SoftLayer ? 	
 {: #al_howaffslmastacct}
 
-Vous pouvez toujours utiliser l'ID de votre compte SoftLayer pour vous connecter au portail client de l'infrastructure {{site.data.keyword.BluSoftlayer_full}} car la console {{site.data.keyword.Bluemix_notm}} console est accessible à l'aide d'IBMid.
+Vous pouvez toujours utiliser l'ID de votre compte SoftLayer pour vous connecter au portail client de l'infrastructure {{site.data.keyword.BluSoftlayer_full}} car la console {{site.data.keyword.Bluemix_notm}} est accessible à l'aide d'ID IBMid.
+
 
