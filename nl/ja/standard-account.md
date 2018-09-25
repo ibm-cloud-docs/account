@@ -21,7 +21,7 @@ lastupdated: "2017-10-13"
 {{site.data.keyword.Bluemix}} 標準アカウント (Limited Release) は、{{site.data.keyword.Bluemix_notm}} Public での新しい作業方法を提供する新しい無料アカウントを導入します。 標準アカウントには、30 日間の {{site.data.keyword.Bluemix_notm}} トライアルと違い、有効期限はありません。 時間的な制約を気にすることなく、{{site.data.keyword.Bluemix_notm}} アプリケーションに関する作業を続けることができます。 
 {:shortdesc}
 
-標準アカウントを利用できるのは、英国地域および米国南部地域のユーザーのみになります。 これらのいずれの地域にも属していない場合でも、友人に招待してもらうか、sales@bluemix.net で弊社の販売チームに連絡することにより、標準アカウントを作成できます。 標準アカウントの所有者は、友人および同僚を招待して参加させることができます。  
+標準アカウントを利用できるのは、英国地域および米国南部地域のユーザーのみになります。 これらのいずれの地域にも属していない場合でも、友人に招待してもらうか、CloudDigitalSales@us.ibm.com で弊社の販売チームに連絡することにより、標準アカウントを作成できます。 標準アカウントの所有者は、友人および同僚を招待して参加させることができます。  
 
 ## {{site.data.keyword.Bluemix_notm}} 標準アカウントの概要
 {: #standardaccount}
