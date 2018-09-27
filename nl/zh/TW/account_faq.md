@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-08-20"
+lastupdated: "2018-09-13"
 
 ---
 
@@ -19,7 +19,21 @@ lastupdated: "2018-08-20"
 ## 如何建立帳戶？
 {: #create-account}
 
-請移至 https://console.bluemix.net 然後按一下**建立免費帳戶**。建立的帳戶類型是精簡帳戶，它永不到期。如需包含特性的相關詳細資料，請參閱[精簡帳戶](/docs/account/index.html#liteaccount)。
+前往 https://console.bluemix.net，按一下**建立免費帳戶**以建立「精簡」帳戶，此帳戶永不到期。 
+
+如需包含特性的相關詳細資料，請參閱[精簡帳戶](/docs/account/index.html#liteaccount)。
+
+## 何謂 Cloud Foundry？
+{: #cloud-foundry}
+
+Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的開放程式碼平台即服務 (PaaS) 選項，可用來在雲端上建置及部署應用程式。在 {{site.data.keyword.Bluemix_notm}} 帳戶中，可使用 Cloud Foundry 組織和空間來整理及使用特定地區內可用的資源和應用程式。 
+
+如需管理組織和空間的相關資訊，請參閱[新增組織及空間](/docs/account/orgs_spaces.html#orgsspacesusers)。此外，如果您有興趣進一步瞭解如何提供對 Cloud Foundry 空間內資源的存取權，請參閱 [Cloud Foundry 存取](/docs/iam/cfaccess.html#cfaccess)。
+
+## 我可以將組織移到另一個帳戶嗎？
+{: #move-org-diff-account}
+
+目前您無法將組織移轉至其他帳戶。 
 
 ## 可以使用哪些 Cloud Foundry 地區？
 {: #whichregions}
@@ -70,6 +84,13 @@ lastupdated: "2018-08-20"
 
 您必須與「IBM Cloud 支援中心」聯絡以開立支援問題單，並要求刪除您的帳戶。如果您的資料與要儲存並移至新帳戶的舊帳戶相關聯，請在電子郵件中包含此資訊。
 
+## 為什麼我的帳戶被停用了？
+{: #account-deactivated}
+
+如果您的帳戶被停用，很可能是因為經授權的使用者已將其取消，或是帳戶已暫停。  
+
+如果使用者違反 {{site.data.keyword.Bluemix_notm}} 服務可接受的使用行為，IBM 將逕行停權，而不另行通知。如果使用者在收到違規動作通知之後，更正其使用行為，可還原部分服務。否則，帳戶可能會暫停或終止。
+
 ## 如何取得支援？
 {: #contactsupport}
 
@@ -85,18 +106,17 @@ lastupdated: "2018-08-20"
 ## 鏈結我的帳戶之後，要如何登入？
 {: #al_login}
 
-鏈結您的帳戶之後，請使用您的 IBM ID 登入
-[{{site.data.keyword.Bluemix}} 主控台 ![外部鏈結圖示](../icons/launch-glyph.svg)](https://console.bluemix.net){: new_window}。
+鏈結您的帳戶之後，請使用您的 IBM ID 登入 {{site.data.keyword.Bluemix}} 主控台。
 
 ## 鏈結我的帳戶之後，對我的支援有什麼影響？
 {: #al_support}
 
 鏈結您的帳戶之後，您會維持與將 {{site.data.keyword.Bluemix_notm}} 平台新增至帳戶時相同的支援層次。
 
-## 是否有其他方法可以取得鏈結帳戶的協助？ 	
+## 是否有其他方法可以取得鏈結帳戶的協助？ 
 {: #al_morehelp}
 
-  1. 請參閱 [Steps to Link your IaaS and PaaS Accounts blog](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/) 以取得有用的資訊。 
+  1. 請參閱 [Steps to Link your IaaS and PaaS Accounts blog](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/) 以取得有用的資訊。
   2. 從 {{site.data.keyword.BluSoftlayer_full}} 基礎架構客戶入口網站，開啟 **Sales Live Chat** 來詢問帳戶問題。
   3. 從 {{site.data.keyword.BluSoftlayer_full}} 基礎架構客戶入口網站開立問題單。選取**支援** > **新增問題單**，然後在**主旨**欄位中，選取**帳戶要求**，將您的帳戶問題遞送給正確的支援團隊。
 
@@ -109,27 +129,40 @@ lastupdated: "2018-08-20"
 
 如果您沒有相符的 {{site.data.keyword.Bluemix_notm}} 平台帳戶，以及隨附的 IBM ID 帳戶，則可以建立新的 SoftLayer 帳戶來鏈結帳戶。
 
-## 如果我不想鏈結帳戶要怎麼辦？ 
+## 如果我不想鏈結帳戶要怎麼辦？ 	
 {: #al_bene}
 
 為了協助您更深入體驗 {{site.data.keyword.Bluemix_notm}}，所有新功能會開發成單一的 {{site.data.keyword.Bluemix_notm}} 主控台。當您合併帳戶時，將可以存取更強健的型錄、簡化的帳戶管理，以及單一登入。
 
 如果鏈結對您而言不是可行的選項，請與您的業務支援人員聯絡，以取得其他選項。
 
-## 鏈結帳戶有獎勵嗎？ 
+## 鏈結帳戶有獎勵嗎？ 	
 {: #al_incent}
 
 當您鏈結帳戶時，可以使用 200 美元的促銷額度來試用 {{site.data.keyword.Bluemix_notm}} 服務。 
 
-## 將 {{site.data.keyword.Bluemix_notm}} 平台服務新增至我的 SoftLayer 帳戶有什麼涵義？ 
+若要進一步瞭解 200 美元的促銷額度，請參閱[隨收隨付制帳戶](/docs/account/index.html#paygo)。 
+
+## 如何在多個帳戶之間切換？
+{: #switch-between-accounts}
+
+若要在帳戶之間切換，請移至 **{{site.data.keyword.avatar}}** 圖示 ![虛擬人像圖示](../icons/i-avatar-icon.svg)，按一下**帳戶**功能表，再選取另一個帳戶。 
+
+## 我可以切換帳戶擁有者嗎？ 
+{: #switch-account-owners}
+
+您不能切換帳戶擁有者，但可以變更資源擁有者。若要進一步瞭解如何切換所有權，請參閱[變更專用資源所有權](/docs/account/owners.html#how-to-change-the-owner-of-a-catalog-resource)。
+
+## 將 {{site.data.keyword.Bluemix_notm}} 平台服務新增至我的 SoftLayer 帳戶有什麼涵義？ 	
 {: #al_owaffslacct}
 
 這表示您的帳戶可以存取所有 {{site.data.keyword.Bluemix_notm}} 平台供應項目。將 {{site.data.keyword.Bluemix_notm}} 平台供應項目新增至帳戶之後，您的帳戶管理員將需要讓一般使用者能夠存取供應項目。
 
 如果您是帳戶管理員，請參閱[處理使用者](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage)，以取得相關資訊。
 
-## 帳戶鏈結對我的 SoftLayer 主要帳戶 ID 有什麼影響？ 
+## 帳戶鏈結對我的 SoftLayer 主要帳戶 ID 有什麼影響？ 	
 {: #al_howaffslmastacct}
 
 您仍可以使用 SoftLayer 帳戶的 ID ，來登入 {{site.data.keyword.BluSoftlayer_full}} 基礎架構客戶入口網站，因為可以使用 IBM ID 來存取 {{site.data.keyword.Bluemix_notm}} 主控台。
+
 
