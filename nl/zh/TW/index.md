@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-08-14"
+lastupdated: "2018-09-04"
 
 ---
 
@@ -81,7 +81,7 @@ lastupdated: "2018-08-14"
 
 您可以從 {{site.data.keyword.Bluemix_notm}} 主控台升級至「隨收隨付制」帳戶。提供計費及信用卡資訊、接受條款，並提交帳戶要求之後，便會驗證您的信用卡。您也會收到有關帳戶資訊的確認電子郵件。等收到確認電子郵件過後幾分鐘，您就可以回到主控台繼續建置應用程式。如果無法處理您所在國家或地區的線上申請，請與 [{{site.data.keyword.Bluemix_notm}} 支援中心](/docs/get-support/howtogetsupport.html)聯絡。
 
-在您升級至「隨收隨付制」帳戶之後，您會得到促銷扣抵 200 美元，不需要任何動作即可開始使用它。您的 $200 額度有效期限為 30 天，且會自動套用至您的發票。此額度無法用於協力廠商供應項目。
+在您升級至「隨收隨付制」帳戶之後，您會得到 200 美元的促銷額度，此額度會自動套用至您的帳戶。您的 200 美元額度有效期限為 30 天，且會自動套用至您的發票。此額度無法用於協力廠商供應項目。
 
 ### 升級帳戶
 {: #upgrade-to-subscription}
@@ -91,10 +91,11 @@ lastupdated: "2018-08-14"
 
 ## 訂閱帳戶
 
-使用「訂閱」帳戶，您可以建立多個資源群組來輕鬆管理配額，以及檢視一組資源的計費使用情形。您承諾每個月的最低消費金額，並獲得套用至該最低收費的訂閱折扣。您也會針對任何超出最低消費金額的用量付款。
+使用「訂閱」帳戶，您可以建立多個資源群組來輕鬆管理配額，以及檢視一組資源的計費使用情形。您承諾每個月的最低消費金額，並獲得套用至該最低收費的訂閱折扣。對於超出訂閱總金額的任何用量，我們會向您收取未經折扣的費率。
 
+如果您有訂閱帳戶，您可以建立 [IBM Cloud 型錄](https://console.bluemix.net/catalog/)中可用的大部分服務，不過，其中可能有些服務是使用特定的定價方案，需另外購買。
 
-如果您鏈結「訂閱」帳戶與 SoftLayer 帳戶，從下個月 1 日開始，結合的費用即會含在 {{site.data.keyword.Bluemix_notm}} 發票中。
+如果您將「訂閱」帳戶與 SoftLayer 帳戶鏈結，則從下個月 1 日開始，合併的費用會包含在您的 {{site.data.keyword.Bluemix_notm}} 發票中。
 {: tip}
 
 ### {{site.data.keyword.Bluemix_dedicated_notm}} 帳戶
@@ -117,7 +118,7 @@ lastupdated: "2018-08-14"
 
    * 稱為轉遞的交付功能，讓 IBM 能連接您的本端部署，並自動且一致地交付更新
    * 所有支援的運行環境（IBM Java Liberty、Node.js 及內建開放程式碼運行環境）
-   * 您選取的所有本端服務，及所有公用 {{site.data.keyword.Bluemix_notm}} 服務的存取
+   * 您選取的所有本端服務，以及所有公用 {{site.data.keyword.Bluemix_notm}} 服務的存取權
    * 標準 {{site.data.keyword.Bluemix_notm}} 支援
 
 您在該期間每個月所支付的金額是根據您想要的本端服務，加上讓您存取所有公用服務的「訂閱」帳戶。{{site.data.keyword.Bluemix_notm}} Public 中的服務使用費用是根據您的「訂閱」帳戶合約來計算。您會收到關於任何超出訂閱合約之使用服務的發票。請與 IBM 指定的客戶業務代表聯絡，或與 [{{site.data.keyword.Bluemix_notm}} 銷售人員](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡，以開始您的合約。
