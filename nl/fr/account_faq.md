@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-09-13"
+lastupdated: "2018-09-14"
 
 ---
 
@@ -34,6 +34,16 @@ Pour plus d'informations sur la gestion des organisations et des espaces, voir [
 {: #move-org-diff-account}
 
 Vous ne pouvez pas actuellement migrer une organisation dans un autre compte. 
+
+## Que puis-je faire si une erreur survient lors de la création de mon compte ?
+{: #account-error}
+
+Vous pouvez ouvrir un ticket de demande de service.
+
+* Pour ouvrir un ticket de demande de service depuis le centre de support, cliquez sur **Ouvrir un ticket** dans la section Obtenir de l'aide.
+* Pour ouvrir un ticket de demande de service à partir de la barre de menus de la console IBM Cloud, cliquez sur **Support** &gt; **Ajouter un ticket**.
+
+Une fois que vous avez ouvert un ticket de demande de service, vous recevez une notification par courrier électronique. Suivez les instructions figurant dans le courrier électronique pour toute communication supplémentaire relative au problème.
 
 ## Quelles régions Cloud Foundry puis-je utiliser ?
 {: #whichregions}
@@ -72,6 +82,15 @@ Oui, vous pouvez effectuer une mise à niveau vers un compte facturable et conti
 {: #updatepayment}
 
 Vous pouvez facilement mettre à jour le mode de paiement associé à votre compte facturable. Dans la console, accédez à **Gérer > Facturation et utilisation > Modifier la méthode de paiement**.
+
+## Comment réinitialiser mon mot de passe ? 
+{: #reset-password}
+
+En fonction du mot de passe que vous souhaitez réinitialiser, les procédures sont différentes.  
+
+* Si vous avez ID de compte et un mot de passe SoftLayer, voir [Gestion des mots de passe](/docs/customer-portal/cpmanacctmanpw.html#cp_reset-your-password). 
+* Pour réinitialiser votre mot de passe VPN, voir [Mise à jour du mot de passe VPN d'un utilisateur](/docs/infrastructure/iaas-vpn/update-password.html#update-a-user-s-vpn-password).
+* Pour réinitialiser votre mot de passe IBMid, voir la page [Mot de passe oublié](https://www.ibm.com/account/us-en/forgot/forgot-password-start.html).
 
 ## Comment résilier mon compte ?
 {: #cancelaccount}
@@ -126,14 +145,7 @@ Si vous êtes responsable de compte, consultez la rubrique [Gestion des utilisat
 
 Si vous possédez plusieurs comptes SoftLayer, vous devez lier les comptes auxquels un compte de plateforme {{site.data.keyword.Bluemix_notm}} correspond et un compte IBMid est associé.
 
-Si vous ne possédez pas de compte de plateforme {{site.data.keyword.Bluemix_notm}} correspondant ni un compte IBMid associé, un nouveau compte SoftLayer peut être créé pour lier les comptes.
-
-## Que se passe-t-il si je ne veux pas lier mon compte ? 	
-{: #al_bene}
-
-Afin de vous permettre de profiter davantage de {{site.data.keyword.Bluemix_notm}}, toutes les nouvelles fonctionnalités sont développées dans une seule console {{site.data.keyword.Bluemix_notm}}. Lorsque vous fusionnez votre compte, vous obtenez un accès à un catalogue plus robuste, à une gestion des comptes simplifiée et vous bénéficiez d'une seule connexion.
-
-Si la liaison n'est pas une option envisageable pour vous, renseignez-vous auprès de votre équipe commerciale afin de connaître les autres options possibles.
+Si vous n'avez pas de compte de plateforme {{site.data.keyword.Bluemix_notm}} correspondant et de compte IBMid associé, un nouveau compte SoftLayer peut être créé pour lier les comptes.
 
 ## Des primes s'appliquent-elles pour la liaison de mes comptes ? 	
 {: #al_incent}
