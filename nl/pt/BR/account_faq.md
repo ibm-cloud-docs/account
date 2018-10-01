@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-09-13"
+lastupdated: "2018-09-14"
 
 ---
 
@@ -34,6 +34,16 @@ Para obter mais informações sobre o gerenciamento de organizações e espaços
 {: #move-org-diff-account}
 
 Nesse momento, não é possível migrar uma organização para uma conta diferente. 
+
+## O que poderei fazer se eu receber um erro ao criar minha conta?
+{: #account-error}
+
+Se você encontrar um erro ao tentar criar sua conta, será possível abrir um chamado de suporte.
+
+* Para abrir um chamado de suporte por meio do centro de suporte, clique em **Abrir um chamado** na seção Obter ajuda.
+* Para abrir um chamado de suporte por meio da barra de menus do console do IBM Cloud, clique em **Suporte** &gt; **Incluir chamado**.
+
+Depois de abrir o chamado de suporte, você receberá uma notificação por e-mail em alguns minutos referente ao chamado. Siga as instruções no e-mail para comunicação adicional sobre o problema.
 
 ## Quais regiões do Cloud Foundry posso usar?
 {: #whichregions}
@@ -72,6 +82,15 @@ Sim, é possível fazer upgrade para uma conta faturável e continuar a usar as 
 {: #updatepayment}
 
 É possível atualizar facilmente o método de pagamento que está associado à sua conta faturável. No console, acesse **Gerenciar > Faturamento e uso > Modificar método de pagamento**.
+
+## Como a reconfiguro? 
+{: #reset-password}
+
+Dependendo de qual senha você deseja reconfigurar, revise as opções a seguir: 
+
+* Se você tem um ID e uma senha da conta SoftLayer, veja [Gerenciando senhas](/docs/customer-portal/cpmanacctmanpw.html#cp_reset-your-password). 
+* Para reconfigurar sua senha de VPN, veja [Atualizar a senha de VPN de um usuário](/docs/infrastructure/iaas-vpn/update-password.html#update-a-user-s-vpn-password).
+* Para reconfigurar sua senha do IBMid, veja [Esqueci a senha](https://www.ibm.com/account/us-en/forgot/forgot-password-start.html).
 
 ## Como cancelar minha conta?
 {: #cancelaccount}
@@ -126,14 +145,7 @@ Se você é a conta mestre, veja [Trabalhando com usuários](https://console.blu
 
 Se você tem múltiplas contas do SoftLayer, vincule as que têm uma conta de plataforma {{site.data.keyword.Bluemix_notm}} correspondente e um IBMid associado.
 
-Se você não tem uma conta de plataforma do {{site.data.keyword.Bluemix_notm}} correspondente e uma conta do IBMid associada, uma NOVA conta do SoftLayer pode ser criada para vincular as contas.
-
-## E se eu não desejar vincular minha conta? 	
-{: #al_bene}
-
-Para ajudá-lo a experimentar mais o {{site.data.keyword.Bluemix_notm}}, toda a nova funcionalidade está sendo desenvolvida em um único console do {{site.data.keyword.Bluemix_notm}}. Ao mesclar a sua conta, você obterá acesso a um catálogo mais robusto, um gerenciamento de conta simplificado e um login único.
-
-Se o link não for uma opção viável para você, entre em contato com o suporte de vendas para outras opções.
+Se você não tem uma conta de plataforma {{site.data.keyword.Bluemix_notm}} correspondente nem uma conta que acompanha do IBMid, é possível criar uma nova conta do SoftLayer para vincular as contas.
 
 ## Há incentivos para vincular minhas contas? 	
 {: #al_incent}
