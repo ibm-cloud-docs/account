@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-09-14"
+lastupdated: "2018-09-13"
 
 ---
 
@@ -34,16 +34,6 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 {: #move-org-diff-account}
 
 目前，您还不能将组织迁移到其他帐户中。 
-
-## 如果在创建帐户时遇到错误该怎么办？
-{: #account-error}
-
-如果在尝试创建帐户时遇到错误，可以开具支持凭单。
-
-* 要在支持中心开具支持凭单，请单击“获取帮助”部分中的**开具凭单**。
-* 要通过 IBM Cloud 控制台菜单栏开具支持凭单，请单击**支持** &gt; **添加凭单**。
-
-开具支持凭单后，您会立即收到有关该凭单的电子邮件通知。按照电子邮件中的指示信息进行操作，以就该问题作进一步的沟通。
 
 ## 我可以使用哪些 Cloud Foundry 区域？
 {: #whichregions}
@@ -82,15 +72,6 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 {: #updatepayment}
 
 您可以轻松更新与计费帐户关联的付款方式。在控制台中，转至**管理 > 计费和使用情况 > 修改付款方式**。
-
-## 如何重置密码？ 
-{: #reset-password}
-
-根据您要重置的密码，查看以下选项： 
-
-* 如果您有 SoftLayer 帐户标识和密码，请参阅[管理密码](/docs/customer-portal/cpmanacctmanpw.html#cp_reset-your-password)。 
-* 要重置 VPN 密码，请参阅[更新用户的 VPN 密码](/docs/infrastructure/iaas-vpn/update-password.html#update-a-user-s-vpn-password)。
-* 要重置 IBM 标识的密码，请参阅[忘记密码](https://www.ibm.com/account/us-en/forgot/forgot-password-start.html)。
 
 ## 如何取消帐户？
 {: #cancelaccount}
@@ -146,6 +127,13 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 如果您有多个 SoftLayer 帐户，那么必须链接具有匹配 {{site.data.keyword.Bluemix_notm}} 平台帐户和附带 IBM 标识的帐户。
 
 如果您没有匹配的 {{site.data.keyword.Bluemix_notm}} 平台帐户，也没有附带的 IBM 标识帐户，那么可以创建新的 SoftLayer 帐户来链接这些帐户。
+
+## 如果不想链接帐户会怎样？ 	
+{: #al_bene}
+
+为了帮助您体验 {{site.data.keyword.Bluemix_notm}} 的更多功能，所有新功能都会开发到单个 {{site.data.keyword.Bluemix_notm}} 控制台中。合并帐户后，您将有权使用更稳健的目录、简化的帐户管理和单点登录。
+
+如果链接不是可行的选项，请联系销售支持以获取其他选项。
 
 ## 链接帐户有奖励吗？ 	
 {: #al_incent}

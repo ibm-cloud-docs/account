@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-09-14"
+lastupdated: "2018-09-13"
 
 ---
 
@@ -26,24 +26,14 @@ https://console.bluemix.net に移動し、**「フリー・アカウントの�
 ## Cloud Foundry とは?
 {: #cloud-foundry}
 
-Cloud Foundry は、クラウド上でアプリケーションを作成およびデプロイするために、{{site.data.keyword.Bluemix_notm}} Public を通して利用可能な、オープン・ソース Platform as a Service (PaaS) オプションです。 Cloud Foundry の組織とスペースは、{{site.data.keyword.Bluemix_notm}} アカウント内で使用され、特定の地域内で使用可能なリソースやアプリを整理し、操作します。 
+Cloud Foundry は、クラウド上でアプリケーションを作成およびデプロイするために、{{site.data.keyword.Bluemix_notm}} Public を通して利用可能な、オープン・ソース Platform as a Service (PaaS) オプションです。Cloud Foundry の組織とスペースは、{{site.data.keyword.Bluemix_notm}} アカウント内で使用され、特定の地域内で使用可能なリソースやアプリを整理し、操作します。 
 
-組織とスペースの管理について詳しくは、[組織およびスペースの追加](/docs/account/orgs_spaces.html#orgsspacesusers)を参照してください。 また、Cloud Foundry スペースでリソースに対するアクセス権限を提供する方法について詳しく知りたい場合は、[Cloud Foundry アクセス権限](/docs/iam/cfaccess.html#cfaccess)を参照してください。
+組織とスペースの管理について詳しくは、[組織およびスペースの追加](/docs/account/orgs_spaces.html#orgsspacesusers)を参照してください。また、Cloud Foundry スペースでリソースに対するアクセス権限を提供する方法について詳しく知りたい場合は、[Cloud Foundry アクセス権限](/docs/iam/cfaccess.html#cfaccess)を参照してください。
 
 ## 組織を別のアカウントに移動できますか?
 {: #move-org-diff-account}
 
 現時点では、組織を別のアカウントに移行することはできません。 
-
-## アカウントを作成するときにエラーが発生した場合、どうすればよいですか?
-{: #account-error}
-
-アカウントを作成しようしてエラーが発生した場合は、サポート・チケットを開くことができます。
-
-* サポート・センターからサポート・チケットをオープンするには、「ヘルプの利用」セクションから、**「チケットのオープン」**をクリックします。
-* IBM Cloud コンソールのメニュー・バーからサポート・チケットをオープンするには、**「サポート」** &gt; **「チケットの追加」**をクリックします。
-
-サポート・チケットをオープンすると、すぐにチケットについて E メールによる通知を受け取ります。問題に関するさらなるやり取りについては、E メール内の指示に従います。
 
 ## どの Cloud Foundry 地域を使用できますか?
 {: #whichregions}
@@ -83,15 +73,6 @@ Cloud Foundry は、クラウド上でアプリケーションを作成および
 
 請求可能アカウントに関連付けられている支払い方法は簡単に更新できます。 コンソールで、**「管理」>「請求および使用量」>「支払方法の変更」**に移動します。
 
-## パスワードをリセットするには、どのようにすればよいですか? 
-{: #reset-password}
-
-リセットするパスワードに応じて、以下のオプションを検討します。 
-
-* SoftLayer のアカウント ID とパスワードを持っている場合は、[パスワードの管理](/docs/customer-portal/cpmanacctmanpw.html#cp_reset-your-password)を参照してください。 
-* VPN パスワードをリセットするには、[ユーザーの VPN パスワードの更新](/docs/infrastructure/iaas-vpn/update-password.html#update-a-user-s-vpn-password)を参照してください。
-* IBM ID パスワードをリセットするには、[パスワードを忘れた場合](https://www.ibm.com/account/us-en/forgot/forgot-password-start.html)を参照してください。
-
 ## アカウントを取り消すには、どのようにすればよいですか?
 {: #cancelaccount}
 
@@ -107,7 +88,7 @@ IBM Cloud サポートに連絡してサポート・チケットをオープン�
 
 許可ユーザーがキャンセルしたか、アカウントが中断されているため、アカウントが非アクティブになっている可能性があります。  
 
-IBM の裁量により、{{site.data.keyword.Bluemix_notm}} サービスの容認できる使用行動に違反したユーザーは、予告なしに使用不可にされることがあります。 ユーザーが攻撃的なアクションを通知された後に使用行動を修正した場合、一部のサービスが復元されることがあります。 修正しない場合は、アカウントを中断または終了されることがあります。
+IBM の裁量により、{{site.data.keyword.Bluemix_notm}} サービスの容認できる使用行動に違反したユーザーは、予告なしに使用不可にされることがあります。ユーザーが攻撃的なアクションを通知された後に使用行動を修正した場合、一部のサービスが復元されることがあります。修正しない場合は、アカウントを中断または終了されることがあります。
 
 ## サポートを依頼するには、どのようにすればよいですか
 {: #contactsupport}
@@ -148,6 +129,13 @@ IBM の裁量により、{{site.data.keyword.Bluemix_notm}} サービスの容�
 
 一致する {{site.data.keyword.Bluemix_notm}} プラットフォーム・アカウントと、付随する IBM ID アカウントがない場合は、新しい SoftLayer アカウントを作成してアカウントをリンクすることができます。
 
+## アカウントをリンクしたくない場合はどうなりますか? 	
+{: #al_bene}
+
+{{site.data.keyword.Bluemix_notm}} をさらに体験できるように、開発されたすべての新しい機能が単一の {{site.data.keyword.Bluemix_notm}} コンソールに納められています。 アカウントをマージすると、より堅牢なカタログへのアクセス、簡素化されたアカウント管理、単一ログインを行うことができるようになります。
+
+リンクが実行可能なオプションでない場合は、販売サポートに他のオプションについてお問い合わせください。
+
 ## アカウントをリンクすると何かインセンティブはありますか? 	
 {: #al_incent}
 
@@ -163,7 +151,7 @@ IBM の裁量により、{{site.data.keyword.Bluemix_notm}} サービスの容�
 ## アカウント所有者を切り替えることはできますか? 
 {: #switch-account-owners}
 
-アカウント所有者を切り替えることはできませんが、リソース所有者を変更することはできます。 所有権の切り替えについて詳しくは、[プライベート・リソースの所有権の変更](/docs/account/owners.html#how-to-change-the-owner-of-a-catalog-resource)を参照してください。
+アカウント所有者を切り替えることはできませんが、リソース所有者を変更することはできます。所有権の切り替えについて詳しくは、[プライベート・リソースの所有権の変更](/docs/account/owners.html#how-to-change-the-owner-of-a-catalog-resource)を参照してください。
 
 ## {{site.data.keyword.Bluemix_notm}} プラットフォーム・サービスを SoftLayer アカウントに追加するとはどういう意味ですか? 	
 {: #al_owaffslacct}
