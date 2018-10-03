@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-07-16"
+lastupdated: "2018-09-25"
 
 ---
 
@@ -91,7 +91,7 @@ lastupdated: "2018-07-16"
 {{site.data.keyword.Bluemix_notm}} アカウントの状況は、アカウントが取り消されるか、または中断されると非アクティブになります。
 {: tsCauses}
 
-アカウントを再アクティブ化する場合は、[{{site.data.keyword.Bluemix_notm}} サポート![「外部リンク」アイコン](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/bluemixsupport.com){: new_window}に連絡してください。 E メールに、以下の情報を含めてください。
+アカウントを再アクティブ化する場合は、[{{site.data.keyword.Bluemix_notm}} サポート![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://ibm.biz/bluemixsupport.com){: new_window}に連絡してください。 E メールに、以下の情報を含めてください。
 {: tsResolve}
 
   * {{site.data.keyword.Bluemix_notm}} へのログインに使用している IBM ID。
@@ -180,7 +180,7 @@ lastupdated: "2018-07-16"
 これは、{{site.data.keyword.Bluemix_notm}} ユーザー・インターフェースの制限です。
 {: tsCauses}
 
-すべての組織を管理するには、Cloud Foundry コマンド・ライン・インターフェースから `cf orgs`、`cf create-org`、`cf delete-org` などのコマンドを使用できます。cf コマンドの全リストを表示するには、`cf help` と入力してください。
+すべての組織を管理するには、Cloud Foundry コマンド・ライン・インターフェースから `cf orgs`、`cf create-org`、`cf delete-org` などのコマンドを使用できます。 cf コマンドの全リストを表示するには、`cf help` と入力してください。
 {: tsResolve}
 
 ## クレジット・カードを追加できない
@@ -200,4 +200,4 @@ lastupdated: "2018-07-16"
 
   1. 「クレジット・カードの追加」ページで、連絡先情報、連絡先住所、および請求先住所の各セクションに含まれているすべての必須フィールドに記入します。
   2. **「IBM の使用条件を読み、これに同意します (I have read and agree to IBM's Terms and Conditions)」**を選択して**「送信 (Submit)」**をクリックします。 **「お支払い方法の選択 (Select a payment method)」**セクションが表示されます。
-  3. クレジット・カード番号、カードの有効期限日付、およびカードに記載されたセキュリティー・コードを入力します。 次に**「送信 (Submit)」**をクリックします。
+  3. クレジット・カード番号、有効期限日付、およびセキュリティー・コードを入力します。次に**「送信 (Submit)」**をクリックします。
