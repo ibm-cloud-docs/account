@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-07-16"
+lastupdated: "2018-09-25"
 
 ---
 
@@ -204,4 +204,4 @@ as etapas a seguir:
 
   1. Na página Incluir cartão de crédito, preencha todos os campos obrigatórios nas seções de informações de contato, endereço de contato e endereço para cobrança.
   2. Selecione **Eu li e concordo com os Termos e Condições da IBM**, em seguida, clique em **Enviar**. A seção **Selecionar um método de pagamento** é exibida.
-  3. Insira seu número do cartão de crédito, a data de validade de seu cartão e o código de segurança no cartão. Em seguida, clique em **Enviar**.
+  3. Insira o número, a data de validade e o código de segurança do seu cartão de crédito. Em seguida, clique em **Enviar**.
