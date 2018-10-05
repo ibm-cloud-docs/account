@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-09-14"
+lastupdated: "2018-09-13"
 
 ---
 
@@ -34,16 +34,6 @@ Para obtener más información sobre la gestión de organizaciones y espacios, c
 {: #move-org-diff-account}
 
 En este momento, no puede migrar una organización a una cuenta distinta. 
-
-## ¿Qué puedo hacer si recibo un error al crear la cuenta?
-{: #account-error}
-
-Puede abrir una incidencia de soporte si se encuentra con algún problema al intentar crear la cuenta.
-
-* Para abrir una incidencia de soporte desde el Centro de soporte, pulse **Abrir una incidencia** en la sección Obtener ayuda.
-* Para abrir una incidencia de soporte desde la barra de menús de la consola de IBM Cloud, pulse **Soporte** &gt; **Añadir incidencia**.
-
-Después de abrir la incidencia de soporte, recibirá una notificación de correo electrónico en pocos minutos para la incidencia. Siga las instrucciones del correo electrónico para obtener más comunicaciones sobre el problema.
 
 ## ¿Qué regiones de Cloud Foundry puedo utilizar?
 {: #whichregions}
@@ -82,15 +72,6 @@ Sí, puede actualizarla a una cuenta facturable y seguir utilizando las instanci
 {: #updatepayment}
 
 Actualizar el método de pago asociado a su cuenta facturable es un proceso sencillo. En la consola, vaya a **Gestionar > Facturación y uso > Modificar método de pago**.
-
-## ¿Cómo puedo restablecer mi contraseña? 
-{: #reset-password}
-
-Según la contraseña que desea restablecer, realice las siguientes opciones: 
-
-* Si tiene un ID y contraseña de SoftLayer, consulte [Gestión de contraseñas](/docs/customer-portal/cpmanacctmanpw.html#cp_reset-your-password). 
-* Para restablecer la contraseña de VPN, consulte [Actualizar la contraseña de VPN de un usuario](/docs/infrastructure/iaas-vpn/update-password.html#update-a-user-s-vpn-password).
-* Para restablecer la contraseña de su IBMid, consulte [Contraseña olvidada](https://www.ibm.com/account/us-en/forgot/forgot-password-start.html).
 
 ## ¿Cómo puedo cancelar mi cuenta?
 {: #cancelaccount}
@@ -145,7 +126,14 @@ Si usted es el maestro de cuentas, consulte [Trabajar con usuarios](https://cons
 
 Si tiene varias cuentas de SoftLayer, primero debe enlazar las cuentas que tengan una cuenta de plataforma de {{site.data.keyword.Bluemix_notm}} coincidente, y el correspondiente IBMid.
 
-Si no tiene una cuenta de plataforma de {{site.data.keyword.Bluemix_notm}} coincidente, y la correspondiente cuenta IBMid, se puede crear una nueva cuenta de SoftLayer para enlazar las cuentas.
+Si no tiene una cuenta de plataforma de {{site.data.keyword.Bluemix_notm}} coincidente, y la correspondiente cuenta IBMid, se puede crear una NUEVA cuenta de SoftLayer para enlazar las cuentas.
+
+## ¿Qué pasa si no deseo enlazar mi cuenta? 	
+{: #al_bene}
+
+Para obtener una mejor experiencia de {{site.data.keyword.Bluemix_notm}} toda la nueva funcionalidad se está desarrollando en una única consola de {{site.data.keyword.Bluemix_notm}}. Cuando se fusionan las cuentas, se obtiene un catálogo más robusto, una gestión simplificada de la cuenta y un único inicio de sesión.
+
+Si el enlace no es una opción viable en su caso, póngase en contacto con el soporte de ventas para estudiar otras opciones.
 
 ## ¿Hay incentivos para enlazar mis cuentas? 	
 {: #al_incent}

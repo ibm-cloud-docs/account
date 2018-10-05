@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-09-14"
+lastupdated: "2018-09-13"
 
 ---
 
@@ -19,31 +19,21 @@ lastupdated: "2018-09-14"
 ## Wie erstelle ich ein Konto?
 {: #create-account}
 
-Rufen Sie https://console.bluemix.net auf und klicken Sie auf **Kostenfreies Konto erstellen**, um ein Lite-Konto zu erstellen, das nicht abläuft. 
+Rufen Sie https://console.bluemix.net auf und klicken Sie auf **Kostenfreies Konto erstellen**, um ein Lite-Konto zu erstellen, das nicht abläuft.  
 
 Der Abschnitt [Lite-Konto](/docs/account/index.html#liteaccount) enthält weitere Details zu den enthaltenen Features.
 
 ## Was ist Cloud Foundry?
 {: #cloud-foundry}
 
-Cloud Foundry ist eine über {{site.data.keyword.Bluemix_notm}} Public verfügbare quelloffene PaaS-Option (PaaS - Plattform as a Service), mit der Anwendungen in der Cloud erstellt und bereitgestellt werden können. Cloud Foundry-Organisationen und -Bereiche werden innerhalb eines {{site.data.keyword.Bluemix_notm}}-Kontos verwendet, um Ressourcen und Apps, die in bestimmten Regionen verfügbar sind, zu organisieren und mit ihnen zu arbeiten. 
+Cloud Foundry ist eine über {{site.data.keyword.Bluemix_notm}} Public verfügbare quelloffene PaaS-Option (PaaS - Plattform as a Service), mit der Anwendungen in der Cloud erstellt und bereitgestellt werden können. Cloud Foundry-Organisationen und -Bereiche werden innerhalb eines {{site.data.keyword.Bluemix_notm}}-Kontos verwendet, um Ressourcen und Apps, die in bestimmten Regionen verfügbar sind, zu organisieren und mit ihnen zu arbeiten.  
 
-Weitere Informationen zum Verwalten von Organisationen und Bereichen finden Sie unter [Organisationen und Bereiche hinzufügen](/docs/account/orgs_spaces.html#orgsspacesusers). Wenn Sie Zugriff auf Ressourcen in einem Cloud Foundry-Bereich erteilen wollen, finden Sie weitere Informationen unter [Cloud Foundry-Zugriff](/docs/iam/cfaccess.html#cfaccess).
+Weitere Informationen zum Verwalten von Organisationen und Bereichen finden Sie unter [Organisationen und Bereiche hinzufügen](/docs/account/orgs_spaces.html#orgsspacesusers). Wenn Sie Zugriff auf Ressourcen in einem Cloud Foundry-Bereich erteilen wollen, finden Sie weitere Informationen unter [Cloud Foundry-Zugriff](/docs/iam/cfaccess.html#cfaccess). 
 
 ## Kann ich eine Organisation in ein anderes Konto versetzen?
 {: #move-org-diff-account}
 
-Gegenwärtig können Sie eine Organisation nicht in ein anderen Konto migrieren. 
-
-## Was kann ich tun, wenn beim Erstellen meines Kontos ein Fehler auftritt? 
-{: #account-error}
-
-Wenn beim Erstellen Ihres Kontos ein Fehler auftritt, können Sie ein Support-Ticket öffnen. 
-
-* Zum Öffnen eines Support-Tickets im Support Center klicken Sie im Abschnitt 'Hilfe anfordern' auf **Ticket öffnen**. 
-* Zum Öffnen eines Support-Tickets über die Menüleiste der IBM Cloud-Konsole klicken Sie auf **Support** &gt; **Ticket hinzufügen**. 
-
-Nachdem das Support-Ticket geöffnet wurde, erhalten Sie innerhalb kurzer Zeit eine E-Mail-Benachrichtigung über das Ticket. Befolgen Sie die Anweisungen in der E-Mail, um weitere Informationen zum Problem anzugeben und zu erhalten.
+Gegenwärtig können Sie eine Organisation nicht in ein anderen Konto migrieren.  
 
 ## Welche Cloud Foundry-Regionen kann ich verwenden?
 {: #whichregions}
@@ -83,15 +73,6 @@ Ja, Sie können ein Upgrade auf ein gebührenpflichtiges Konto durchführen und 
 
 Sie können die Zahlungsmethode, die Ihrem gebührenpflichtigen Konto zugeordnet ist, auf einfache Weise aktualisieren. Rufen Sie in der Konsole die Seite **Verwalten > Abrechnung und Nutzung > Zahlungsmethode ändern** auf.
 
-## Wie kann ich mein Kennwort zurücksetzen?  
-{: #reset-password}
-
-Abhängig davon, welches Kennwort Sie zurücksetzen wollen, haben Sie die folgenden Möglichkeiten:  
-
-* Wenn Sie eine SoftLayer-Konto-ID und das zugehörige Kennwort verwenden, finden Sie weitere Informationen unter [Kennwörter verwalten](/docs/customer-portal/cpmanacctmanpw.html#cp_reset-your-password).  
-* Wenn Sie Ihr VPN-Kennwort zurücksetzen wollen, finden Sie weitere Informationen unter [Aktualisieren des VPN-Kennworts eines Benutzers](/docs/infrastructure/iaas-vpn/update-password.html#update-a-user-s-vpn-password). 
-* Wenn Sie das Kennwort für Ihre IBMid zurücksetzen wollen, finden Sie weitere Informationen unter [Kennwort vergessen](https://www.ibm.com/account/us-en/forgot/forgot-password-start.html). 
-
 ## Wie kann ich mein Konto kündigen?
 {: #cancelaccount}
 
@@ -102,12 +83,12 @@ Rufen Sie in der Konsole die Seite **Verwalten > Abrechnung und Nutzung > Abrech
 
 Sie müssen sich mit dem IBM Cloud-Support in Verbindung setzen, um ein Support-Ticket zu öffnen und die Löschung Ihres Kontos anzufordern. Wenn Sie über Daten verfügen, die Ihrem alten Konto zugeordnet sind, die jedoch gesichert und in ein neues Konto übernommen werden sollen, dann geben Sie die entsprechenden Informationen in Ihrer E-Mail an.
 
-## Warum ist mein Konto inaktiviert?
+## Warum ist mein Konto inaktiviert? 
 {: #account-deactivated}
 
-Ihr Konto wurde wahrscheinlich inaktiviert, weil ein berechtigter Benutzer es gekündigt hat oder weil das Konto ausgesetzt wurde.  
+Ihr Konto wurde wahrscheinlich inaktiviert, weil ein berechtigter Benutzer es gekündigt hat oder weil das Konto ausgesetzt wurde.   
 
-IBM kann das Konto von Benutzern, die gegen die allgemeinen Nutzungsrichtlinien für die {{site.data.keyword.Bluemix_notm}}-Services verstoßen, ohne Vorankündigung inaktivieren. Bestimmte Services können wiederhergestellt werden, wenn die Benutzer ihr Nutzungsverhalten ändern, nachdem sie über ihren Verstoß informiert wurden. Andernfalls können Konten ausgesetzt oder gekündigt werden.
+IBM kann das Konto von Benutzern, die gegen die allgemeinen Nutzungsrichtlinien für die {{site.data.keyword.Bluemix_notm}}-Services verstoßen, ohne Vorankündigung inaktivieren. Bestimmte Services können wiederhergestellt werden, wenn die Benutzer ihr Nutzungsverhalten ändern, nachdem sie über ihren Verstoß informiert wurden. Andernfalls können Konten ausgesetzt oder gekündigt werden. 
 
 ## Wie erhalte ich Unterstützung?
 {: #contactsupport}
@@ -124,7 +105,7 @@ Für Fakultätsmitglieder und Studierende akkreditierter akademischer Einrichtun
 ## Wie melde ich mich an, nachdem ich mein Konto verknüpft habe?
 {: #al_login}
 
-Nach dem Verknüpfen Ihres Kontos melden Sie sich mit Ihrer IBMid bei der {{site.data.keyword.Bluemix}}-Konsole an.
+Nach dem Verknüpfen Ihres Kontos melden Sie sich mit Ihrer IBMid bei der {{site.data.keyword.Bluemix}}-Konsole an. 
 
 ## Wie wirkt sich das Verknüpfen meines Kontos auf meinen Support aus?
 {: #al_support}
@@ -145,24 +126,31 @@ Wenn Sie der Eigner des Kontos sind, finden Sie weitere Informationen zum Verwal
 
 Wenn Sie mehrere SoftLayer-Konten haben, müssen Sie die Konten verknüpfen, für die es ein übereinstimmendes {{site.data.keyword.Bluemix_notm}}-Plattformkonto und eine zugehörige IBMid gibt.
 
-Wenn es kein übereinstimmendes {{site.data.keyword.Bluemix_notm}}-Plattformkonto und kein zugehöriges IBMid-Konto gibt, kann ein neues SoftLayer-Konto erstellt werden, um die Konten zu verknüpfen. 
+Wenn es kein übereinstimmendes {{site.data.keyword.Bluemix_notm}}-Plattformkonto und kein zugehöriges IBMid-Konto gibt, kann ein NEUES SoftLayer-Konto erstellt werden, um die Konten zu verknüpfen.
+
+## Was, wenn ich mein Konto nicht verknüpfen möchte? 	
+{: #al_bene}
+
+Damit Sie {{site.data.keyword.Bluemix_notm}} optimaler nutzen können, werden neue Funktionen für eine zentrale {{site.data.keyword.Bluemix_notm}}-Konsole entwickelt. Wenn Sie Ihr Konto zusammenführen, erhalten Sie Zugriff auf einen leistungsfähigeren Katalog, einfacheres Kontomanagement und eine einmalige Anmeldung.
+
+Falls ein Verknüpfen für Sie nicht in Frage kommt, wenden Sie sich an Ihre Vertriebsunterstützung und informieren Sie sich über andere Möglichkeiten.
 
 ## Gibt es Kaufanreize für das Verknüpfen meiner Konten? 	
 {: #al_incent}
 
 Wenn Sie Ihre Konten verknüpfen, erhalten Sie im Rahmen einer Werbeaktion eine Gutschrift von $ 200 zum Ausprobieren der {{site.data.keyword.Bluemix_notm}}-Services. 
 
-Weitere Informationen zu der Werbeaktion mit einer Gutschrift von $ 200 finden Sie unter [Nutzungsabhängiges Konto](/docs/account/index.html#paygo). 
+Weitere Informationen zu der Werbeaktion mit einer Gutschrift von $ 200 finden Sie unter [Nutzungsabhängiges Konto](/docs/account/index.html#paygo).  
 
 ## Wie kann ich zwischen mehreren Konten wechseln?
 {: #switch-between-accounts}
 
-Um zwischen verschiedenen Konten zu wechseln, können Sie das **{{site.data.keyword.avatar}}**-Symbol ![Avatar-Symbol](../icons/i-avatar-icon.svg) öffnen, auf das Menü **Konto** klicken und ein anderes Konto auswählen. 
+Um zwischen verschiedenen Konten zu wechseln, können Sie das **{{site.data.keyword.avatar}}**-Symbol ![Avatar-Symbol](../icons/i-avatar-icon.svg) öffnen, auf das Menü **Konto** klicken und ein anderes Konto auswählen.  
 
 ## Kann ich den Kontoeigner wechseln? 
 {: #switch-account-owners}
 
-Der Eigner eines Kontos kann nicht geändert werden; Sie können jedoch die Ressourceneigner ändern. Weitere Informationen zum Ändern des Eigentumsrechts finden Sie unter [Eigentumsrecht für private Ressourcen ändern](/docs/account/owners.html#how-to-change-the-owner-of-a-catalog-resource).
+Der Eigner eines Kontos kann nicht geändert werden; Sie können jedoch die Ressourceneigner ändern. Weitere Informationen zum Ändern des Eigentumsrechts finden Sie unter [Eigentumsrecht für private Ressourcen ändern](/docs/account/owners.html#how-to-change-the-owner-of-a-catalog-resource). 
 
 ## Was bedeutet es, {{site.data.keyword.Bluemix_notm}}-Plattformservices zu meinem SoftLayer-Konto hinzuzufügen? 	
 {: #al_owaffslacct}

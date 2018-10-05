@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-09-14"
+lastupdated: "2018-09-13"
 
 ---
 
@@ -28,22 +28,12 @@ Vedi [Account Lite](/docs/account/index.html#liteaccount) per ulteriori dettagli
 
 Cloud Foundry è un'opzione PaaS (platform as a service) open source disponibile mediante {{site.data.keyword.Bluemix_notm}} pubblico per creare e distribuire applicazioni sul cloud. Le organizzazioni e gli spazi Cloud Foundry sono utilizzati all'interno di un account {{site.data.keyword.Bluemix_notm}} per organizzare e gestire le risorse e le applicazioni disponibili in specifiche regioni. 
 
-Per ulteriori informazioni sulla gestione di organizzazioni e spazi, vedi [Aggiunta di organizzazioni e spazi](/docs/account/orgs_spaces.html#orgsspacesusers). Inoltre, se sei interessato a saperne di più su come fornire accesso alle risorse in uno spazio Cloud Foundry, vedi [Accesso Cloud Foundry](/docs/iam/cfaccess.html#cfaccess).
+Per ulteriori informazioni sulla gestione di organizzazioni e spazi, vedi [Aggiunta di organizzazioni e spazi](/docs/account/orgs_spaces.html#orgsspacesusers).Inoltre, se sei interessato a saperne di più su come fornire accesso alle risorse in uno spazio Cloud Foundry, vedi [Accesso Cloud Foundry](/docs/iam/cfaccess.html#cfaccess).
 
 ## Come sposto un'organizzazione a un altro account?
 {: #move-org-diff-account}
 
 Attualmente, non puoi migrare un'organizzazione a un account differente. 
-
-## Cosa posso fare se ricevo un errore quando creo il mio account? 
-{: #account-error}
-
-Puoi aprire un ticket di supporto se riscontri un errore quando tenti di creare il tuo account.
-
-* Per aprire un ticket di supporto dal centro di supporto, fai clic su **Apri un ticket** dalla sezione Richiedi assistenza.
-* Per aprire un ticket di supporto dalla barra dei menu della console IBM Cloud, fai clic su **Supporto** &gt; **Aggiungi ticket**.
-
-Dopo aver aperto un ticket di supporto, riceverai momentaneamente una notifica email per il ticket. Segui le istruzioni nell'e-mail per ulteriori comunicazioni sul problema.
 
 ## Quale regione Cloud Foundry posso utilizzare?
 {: #whichregions}
@@ -82,15 +72,6 @@ Sì, puoi eseguire l'upgrade a un account fatturabile e continuare ad utilizzare
 {: #updatepayment}
 
 Puoi facilmente aggiornare il metodo di pagamento associato al tuo account fatturabile. Nella console, vai a **Gestisci > Fatturazione e utilizzo > Modifica metodo di pagamento**.
-
-## Come posso reimpostare la mia password? 
-{: #reset-password}
-
-A seconda di quale password stai cercando di ripristinare, controlla le seguenti opzioni: 
-
-* Se hai un ID account e una password SoftLayer, consulta [Gestione delle password](/docs/customer-portal/cpmanacctmanpw.html#cp_reset-your-password). 
-* Per reimpostare la tua password VPN, consulta [Aggiorna una password VPN dell'utente](/docs/infrastructure/iaas-vpn/update-password.html#update-a-user-s-vpn-password).
-* Per reimpostare la tua password ID IBM, consulta [Password dimenticata](https://www.ibm.com/account/us-en/forgot/forgot-password-start.html).
 
 ## Come posso annullare il mio account?
 {: #cancelaccount}
@@ -145,7 +126,14 @@ Se sei il master dell'account, consulta [Gestione degli utenti](https://console.
 
 Se hai più account SoftLayer, devi collegare gli account che hanno un account della piattaforma {{site.data.keyword.Bluemix_notm}} corrispondente e un ID IBM di accompagnamento.
 
-Se non hai un account della piattaforma {{site.data.keyword.Bluemix_notm}} corrispondente e un ID IBM di accompagnamento, è possibile creare un nuovo account SoftLayer per collegare gli account.
+Se non hai un account della piattaforma {{site.data.keyword.Bluemix_notm}} corrispondente e un ID IBM di accompagnamento, è possibile creare un NUOVO account SoftLayer per collegare gli account.
+
+## E se non voglio collegare il mio account? 	
+{: #al_bene}
+
+Per aiutarti a sperimentare ulteriormente tutte le nuove funzionalità di {{site.data.keyword.Bluemix_notm}} si sta sviluppando tutto in una sola console {{site.data.keyword.Bluemix_notm}}. Quando unisci il tuo account, avrai accesso a un catalogo più consistente, alla gestione dell'account semplificata e a un solo accesso.
+
+Se il collegamento non è un'opzione valida per te, contatta il supporto delle vendite per le altre opzioni.
 
 ## Ci sono incentivi per collegare i miei account? 	
 {: #al_incent}
