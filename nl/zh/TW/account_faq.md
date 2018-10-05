@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-09-13"
+lastupdated: "2018-09-14"
 
 ---
 
@@ -34,6 +34,16 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 {: #move-org-diff-account}
 
 目前您無法將組織移轉至其他帳戶。 
+
+## 建立帳戶時發生錯誤怎麼辦？
+{: #account-error}
+
+如果在您嘗試建立帳戶時遇到錯誤，您可以開立支援問題單。
+
+* 若要從「支援中心」開立支援問題單，請從「取得協助」區段按一下**開立問題單**。
+* 若要從 IBM Cloud 主控台功能表列開立支援問題單，請按一下**支援** &gt; **新增問題單**。
+
+開立支援問題單之後，您很快會收到有關問題單的電子郵件通知。請遵循電子郵件中的指示，針對該問題進行進一步的溝通。
 
 ## 可以使用哪些 Cloud Foundry 地區？
 {: #whichregions}
@@ -73,6 +83,15 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 {: #updatepayment}
 
 您可以輕鬆地更新與您的計費帳戶相關聯的付款方法。在主控台中，移至**管理 > 計費及用量 > 修改付款方法**。
+
+## 如何重設密碼？ 
+{: #reset-password}
+
+視您要重設哪個密碼而定，請檢閱下列選項： 
+
+* 如果您有 SoftLayer 帳戶 ID 及密碼，請參閱[管理密碼](/docs/customer-portal/cpmanacctmanpw.html#cp_reset-your-password)。 
+* 若要重設 VPN 密碼，請參閱[更新使用者的 VPN 密碼](/docs/infrastructure/iaas-vpn/update-password.html#update-a-user-s-vpn-password)。
+* 若要重設您的 IBM ID 密碼，請參閱 [Forgot Password](https://www.ibm.com/account/us-en/forgot/forgot-password-start.html)。
 
 ## 如何取消我的帳戶？
 {: #cancelaccount}
@@ -128,13 +147,6 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 如果您有多個 SoftLayer 帳戶，則必須鏈結具有相符 {{site.data.keyword.Bluemix_notm}} 平台帳戶的帳戶，以及隨附的 IBM ID。
 
 如果您沒有相符的 {{site.data.keyword.Bluemix_notm}} 平台帳戶，以及隨附的 IBM ID 帳戶，則可以建立新的 SoftLayer 帳戶來鏈結帳戶。
-
-## 如果我不想鏈結帳戶要怎麼辦？ 	
-{: #al_bene}
-
-為了協助您更深入體驗 {{site.data.keyword.Bluemix_notm}}，所有新功能會開發成單一的 {{site.data.keyword.Bluemix_notm}} 主控台。當您合併帳戶時，將可以存取更強健的型錄、簡化的帳戶管理，以及單一登入。
-
-如果鏈結對您而言不是可行的選項，請與您的業務支援人員聯絡，以取得其他選項。
 
 ## 鏈結帳戶有獎勵嗎？ 	
 {: #al_incent}
