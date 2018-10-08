@@ -112,7 +112,7 @@ A discreción de IBM, los usuarios que no tengan un comportamiento de uso acepta
 ## ¿Cómo obtengo soporte?
 {: #contactsupport}
 
-Para obtener ayuda con la preparación y la ejecución en {{site.data.keyword.Bluemix_notm}} o navegando por {{site.data.keyword.Bluemix_notm}}, empiece una conversación con nosotros utilizando el icono de chat en la consola.
+Para obtener ayuda para empezar a trabajar con {{site.data.keyword.Bluemix_notm}} o para navegar por {{site.data.keyword.Bluemix_notm}}, empiece una conversación con nosotros utilizando el icono de chat en la consola.
 
 También puede echar un vistazo a los varios recursos útiles disponibles en el [Centro de soporte ![Icono de enlace externo](../icons/launch-glyph.svg)](https://console.bluemix.net/unifiedsupport/supportcenter){: new_window}. Desde ahí, puede acceder a Stack Overflow para publicar una pregunta en nuestra comunidad de desarrolladores. También puede abrir una incidencia de soporte.
 

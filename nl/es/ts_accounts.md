@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-07-16"
+lastupdated: "2018-09-25"
 
 ---
 
@@ -196,7 +196,7 @@ No puede enviar información de su tarjeta de crédito para convertir la cuenta 
 El botón **Enviar** de la página Añadir tarjeta de crédito está inhabilitado.
 {: tsSymptoms}
 
-El problema se produce cuando no se ha rellenado la página Añadir tarjeta de crédito con información correcta.
+Este problema sucede cuando no se ha rellenado la información correcta en la página Añadir tarjeta de crédito.
 {: tsCauses}
 
 
@@ -205,4 +205,4 @@ Siga estos pasos:
 
   1. En la página Añadir tarjeta de crédito, rellene los campos necesarios de las secciones: información de contacto, dirección de contacto y dirección de facturación.
   2. Seleccione **He leído y acepto los términos y condiciones de IBM**, luego pulse **Enviar**. Se muestra la sección **Seleccionar un método de pago**.
-  3. Escriba el número de tarjeta de crédito, la fecha de caducidad y el código de seguridad de su tarjeta. Luego pulse **Enviar**.
+  3. Escriba su número de tarjeta de crédito, la fecha de caducidad y el código de seguridad. Luego pulse **Enviar**.
