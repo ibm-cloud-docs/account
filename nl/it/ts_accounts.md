@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-07-16"
+lastupdated: "2018-09-25"
 
 ---
 
@@ -211,4 +211,4 @@ la seguente procedura:
   2. Seleziona **Ho letto e accetto i termini e le condizioni IBM**
 e fai clic su **Inoltra**. Viene visualizzata la sezione **Seleziona un
 metodo di pagamento**.
-  3. Immetti il numero della tua carta di credito, la data di scadenza e il codice di sicurezza indicato sulla carta. Fai quindi clic su **Inoltra**.
+  3. Immetti il numero della tua carta di credito, la data di scadenza e il codice di sicurezza. Fai quindi clic su **Inoltra**.
