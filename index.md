@@ -109,17 +109,3 @@ With {{site.data.keyword.Bluemix_dedicated_notm}}, you must sign up for a one ye
 You can also order optional items such as SoftLayer DirectLink or premium support options. Contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg) for more information.
 
 What you pay each month during that term is based on the dedicated services that you want, plus a Subscription account that gives you access to all public services. Usage charges of the services in {{site.data.keyword.Bluemix_notm}} Public are calculated based on your Subscription account agreement. You receive an invoice for any services that you use beyond that subscription agreement. Contact your IBM designated account representative or [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg) to get started on your agreement.
-
-### {{site.data.keyword.Bluemix_local_notm}} account
-
-With {{site.data.keyword.Bluemix_local_notm}}, you must sign up for a one year minimum term that includes:
-
-   * A delivery capability called relay that enables IBM to connect to your local deployment and automatically and consistently deliver updates
-   * All supported runtimes (IBM Java Liberty, Node.js, and built-in open source runtimes)
-   * All local services that you selected and access to all public {{site.data.keyword.Bluemix_notm}} services
-   * Standard {{site.data.keyword.Bluemix_notm}} support
-
-What you pay each month during that term is based on the local services that you want, plus a Subscription account that gives you access to all public services. Usage charges of the services in {{site.data.keyword.Bluemix_notm}} Public are calculated based on your Subscription account agreement. You receive an invoice for any services that you use beyond that subscription agreement. Contact your IBM designated account representative or [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg) to get started on your agreement.
-
-
-
