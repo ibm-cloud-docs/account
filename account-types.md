@@ -16,13 +16,13 @@ lastupdated: "2018-08-14"
 # Account types
 {: #accounts}
 
-You can start building on {{site.data.keyword.Bluemix}} for free. When you are ready to grow, upgrade and pay only for what you use beyond free allowances. {{site.data.keyword.Bluemix}} has four different account types that you can choose from: Lite, Pay-As-You-Go, Subscription, and Promo. You can use any of the account types to get started in {{site.data.keyword.Bluemix_notm}} - simply choose the one that best suits your needs.
+You can start building on {{site.data.keyword.Bluemix}} for free. When you're ready to grow, upgrade and pay only for what you use beyond free allowances. {{site.data.keyword.Bluemix}} has four different account types: Lite, Pay-As-You-Go, Subscription, and Promo. Choose the one that best suits your needs.
 {:shortdesc}
 
 ## Account comparison
 {: #compare}
 
-The following table provides a comparison of Lite, Pay-As-You-Go, and Subscription accounts. For more information about each account, see the sections that follow.
+The following table provides a comparison of Lite, Pay-As-You-Go, and Subscription accounts. 
 
 |  | Lite  | Pay-As-You-Go | Subscription |
 |--------------------|--------------------|--------------------|--------------------|
@@ -40,16 +40,16 @@ The following table provides a comparison of Lite, Pay-As-You-Go, and Subscripti
 ## Lite account
 {: #liteaccount}
 
-Sign up for a free Lite account to build apps and explore services with select free plans that are named Lite and displayed with a Lite tag ![Lite tag](../icons/Lite.svg) in the {{site.data.keyword.Bluemix_notm}} console. Your Lite account doesn't expire and your credit card isn't required.
+Sign up for a free Lite account to build apps and explore services with select free plans that are displayed with a Lite tag ![Lite tag](../icons/Lite.svg) in the {{site.data.keyword.Bluemix_notm}} console. Your Lite account doesn't expire and your credit card isn't required.
 
-You have access to a single resource group that's created for you and named `Default`. All of your services instances that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) are automatically added to this resource group. You can update the name of this resource group at any time. See [Renaming a resource group](/docs/admin/resourcegroups.html#renaming-a-resource-group) for the detailed steps.
+You have access to a single resource group created for you and named `Default`. All of your services instances that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) are automatically added to this resource group. You can update the name of this resource group at any time. See [Renaming a resource group](/docs/admin/resourcegroups.html#renaming-a-resource-group) for the detailed steps.
 
 Each resource group is free. When you create a connection between a service that is managed by IAM and a Cloud Foundry app, you create an alias, which is a service instance, that counts toward your quota. See [What is an alias?](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}
 
 ### What's available?
 
-You might be wondering what's offered in a Lite account. Check out the following list of key features:
+You might be wondering what a Lite account offers. Check out the following list of key features:
 
    * The account is free - no credit card required.
    * The account never expires.
@@ -58,9 +58,9 @@ You might be wondering what's offered in a Lite account. Check out the following
    * You receive email notifications about your account status and quota limits.
    * Your Cloud Foundry apps can access up to 256 MB of free, instantaneous runtime memory.
    * You can work with a Kubernetes cluster with 2 CPU and 4 GB RAM.
-   * You can provision one instance of any service in the [{{site.data.keyword.Bluemix_notm}} catalog ![External link icon](../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} that has a Lite plan.
-   * After 10 days of no development activity, your apps go to sleep. You can start working on new apps without having to worry about hitting memory quota limits.
-   * After 30 days of no development activity, your service instances with Lite plans are deleted. This way, you don't have to manage deleting inactive instances before you create new ones.
+   * You can have one instance of any service in the [{{site.data.keyword.Bluemix_notm}} catalog ![External link icon](../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} that has a Lite plan.
+   * After 10 days of no development activity, your apps go to sleep. You can start working on new apps without having to worry about reaching memory quota limits.
+   * After 30 days of no development activity, your service instances with Lite plans are deleted. This way, you don't need to manage deleting inactive instances before you create new ones.
 
 ## Billable accounts
 {: #billableacts}
@@ -80,11 +80,11 @@ If you link your {{site.data.keyword.Bluemix_notm}} billable account with a Soft
 
 ### Pay-As-You-Go account
 
-With a Pay-As-You-Go account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources.
+With a Pay-As-You-Go account, you can create several resource groups to easily manage quota and view billing usage for a set of resources.
 
 You're eligible for free runtime and service allowances. If you use more than the free allowance, you receive a monthly {{site.data.keyword.Bluemix_notm}} invoice. The invoice will be in United States dollars (USD) and details your resource charges.
 
-In many countries and regions, you can sign up for a Pay-As-You-Go account from the {{site.data.keyword.Bluemix_notm}} console. After you provide your billing and credit card information, accept the terms and conditions, and submit your account request. Then, your credit card will be validated. A confirmation email of the account information is also sent. A few minutes after you receive the confirmation email, you can return to the console to continue building your apps.
+In many countries and regions, you can sign up for a Pay-As-You-Go account from the {{site.data.keyword.Bluemix_notm}} console. After you provide your billing and credit card information, accept the terms and conditions, and submit your account request. Then, your credit card is validated. A confirmation email of the account information is also sent. A few minutes after you receive the confirmation email, you can return to the console to continue building your apps.
 
 If your online request can't be processed for your country or region, contact {{site.data.keyword.Bluemix_notm}} Sales by using the link that is listed on the
 [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} page.
@@ -94,7 +94,7 @@ You can convert your Pay-As-You-Go account to a Subscription account at any time
 
 ### Subscription account
 
-With a Subscription account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources.
+With a Subscription account, you can create several resource groups to easily manage quota and view billing usage for a set of resources.
 
 You commit to a minimum spending amount each month and receive a subscription discount that is applied to that minimum charge. You also pay for any usage that exceeds the minimum spending amount.
 
