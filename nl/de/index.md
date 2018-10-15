@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-09-04"
+lastupdated: "2018-10-08"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-09-04"
 # Kontotypen
 {: #accounts}
 
-Sie können zwischen den drei folgenden {{site.data.keyword.Bluemix}}-Kontotypen wählen: dem Lite-Konto, dem nutzungsabhängigen Konto und dem Abonnementkonto. Sie können jeden der Kontotypen verwenden, um Ihre Arbeit mit {{site.data.keyword.Bluemix_notm}} zu beginnen - wählen Sie den für Ihre Anforderungen am besten geeigneten Kontotyp aus.
+Sie können zwischen den drei folgenden {{site.data.keyword.Bluemix}}-Kontotypen wählen: dem Lite-Konto, dem nutzungsabhängigen Konto und dem Abonnementkonto. Für den Einstieg in {{site.data.keyword.Bluemix_notm}} kann jeder dieser Kontotypen verwendet werden. Den Kontotyp auswählen, der den jeweiligen Bedürfnissen am besten entspricht.
 {:shortdesc}
 
 ## Konten im Vergleich
@@ -43,7 +43,7 @@ Die folgende Tabelle enthält einen Vergleich von Lite-Konto, nutzungsabhängige
 
 Registrieren Sie sich für ein Lite-Konto, um unter Nutzung ausgewählten gebührenfreien Pläne mit der Entwicklung von Apps und Erkundung von Services zu beginnen. Diese Lite-Pläne werden mit einem Lite-Tag ![Lite-Tag](../icons/Lite.svg) in der {{site.data.keyword.Bluemix_notm}}-Konsole angezeigt. Ihr Lite-Konto gilt unbefristet und Ihre Kreditkarte wird nicht benötigt.
 
-Sie haben Zugriff auf eine einzelne Ressourcengruppe, die für Sie erstellt wurde und den Namen `Default` (Standard) trägt. Alle Serviceinstanzen, die von {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) verwaltet werden, werden dieser Ressourcengruppe automatisch hinzugefügt. Sie können den Namen dieser Ressourcengruppe jederzeit ändern. Detaillierte Schritte finden Sie unter [Ressourcengruppe umbenennen](/docs/resources/resourcegroups.html#renaming-a-resource-group).
+Sie haben Zugriff auf eine einzelne Ressourcengruppe, die für Sie erstellt wurde und den Namen `Default` (Standard) trägt. Alle Instanzen des Service, die von {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) verwaltet werden, werden dieser Ressourcengruppe automatisch hinzugefügt. Sie können den Namen dieser Ressourcengruppe jederzeit ändern. Detaillierte Schritte finden Sie unter [Ressourcengruppe umbenennen](/docs/resources/resourcegroups.html#renaming-a-resource-group).
 
 Jede Ressourcengruppe ist kostenfrei. Wenn Sie eine Verbindung zwischen einem von IAM verwalteten Service und einer Cloud Foundry-App erstellen, erstellen Sie einen Aliasnamen, der eine Serviceinstanz ist, die zu Ihrem Kontingent zählt. Weitere Informationen finden Sie unter [Was ist ein Aliasname?](/docs/resources/connecting_apps.html#what_is_alias).
 {: tip}
@@ -109,17 +109,3 @@ Bei {{site.data.keyword.Bluemix_dedicated_notm}} müssen Sie sich für eine Mind
 Es können auch optionale Elemente wie z. B. SoftLayer DirectLink oder Premium-Support-Optionen bestellt werden. Weitere Informationen erhalten Sie vom [{{site.data.keyword.Bluemix_notm}}-Vertrieb ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg).
 
 Die monatlichen Kosten während dieser Laufzeit sind von den von Ihnen gewünschten dedizierten Services plus einem Abonnementkonto abhängig, mit dem Sie auf alle öffentlichen Services zugreifen können. Die Nutzungsgebühren der Services in {{site.data.keyword.Bluemix_notm}} Public werden auf der Grundlage Ihrer Abonnementkontovereinbarung berechnet. Sie erhalten für sämtliche Services, die Sie über die Abonnementvereinbarung hinaus nutzen, eine Rechnung. Für Informationen zu Ihrer Vereinbarung wenden Sie sich an Ihren zugewiesenen IBM Kundenbeauftragten oder an den [{{site.data.keyword.Bluemix_notm}}-Vertrieb](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg).
-
-### {{site.data.keyword.Bluemix_local_notm}}-Konto
-
-Bei {{site.data.keyword.Bluemix_local_notm}} müssen Sie sich für eine Mindestlaufzeit von einem Jahr anmelden.
-
-   * Eine Zustellungsfunktion, die als Relay bezeichnet wird, mit deren Hilfe IBM eine Verbindung zu Ihrer lokalen Bereitstellung herstellen und Aktualisierungen automatisch und unterbrechungsfrei übermitteln kann
-   * Alle unterstützten Laufzeiten (IBM Java Liberty, Node.js sowie integrierte Open-Source-Laufzeiten)
-   * Alle lokalen Services, die Sie ausgewählt haben, und Zugriff auf alle öffentlichen {{site.data.keyword.Bluemix_notm}}-Services
-   * Standard-{{site.data.keyword.Bluemix_notm}}-Unterstützung
-
-Die monatlichen Kosten während dieser Laufzeit sind von den von Ihnen gewünschten lokalen Services plus einem Abonnementkonto abhängig, mit dem Sie auf alle öffentlichen Services zugreifen können. Die Nutzungsgebühren der Services in {{site.data.keyword.Bluemix_notm}} Public werden auf der Grundlage Ihrer Abonnementkontovereinbarung berechnet. Sie erhalten für sämtliche Services, die Sie über die Abonnementvereinbarung hinaus nutzen, eine Rechnung. Für Informationen zu Ihrer Vereinbarung wenden Sie sich an Ihren zugewiesenen IBM Kundenbeauftragten oder an den [{{site.data.keyword.Bluemix_notm}}-Vertrieb](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg).
-
-
-

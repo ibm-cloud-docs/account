@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-09-04"
+lastupdated: "2018-10-08"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-09-04"
 # 帐户类型
 {: #accounts}
 
-您有三种不同的 {{site.data.keyword.Bluemix}} 帐户类型可供选择：轻量、现买现付和预订。在 {{site.data.keyword.Bluemix_notm}} 中一开始可使用任一帐户类型 - 选择最适合您需求的帐户类型即可。
+您有三种不同的 {{site.data.keyword.Bluemix}} 帐户类型可供选择：轻量、现买现付和预订。在 {{site.data.keyword.Bluemix_notm}} 中，一开始可以使用任何帐户类型。请选择最适合您需要的帐户类型。
 {:shortdesc}
 
 ## 对比帐户
@@ -110,17 +110,3 @@ lastupdated: "2018-09-04"
 您还可订购可选项（例如，SoftLayer DirectLink）或高端支持选项。有关更多信息，请联系 [{{site.data.keyword.Bluemix_notm}} 销售人员 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部链接图标](../icons/launch-glyph.svg)。
 
 在该期限内，您每月所支付的费用取决于所需的专用服务以及预订帐户（通过该帐户，您可以访问所有公共服务）。{{site.data.keyword.Bluemix_notm}} Public 中服务的使用量费用按照您的预订帐户协议进行计算。如果使用了超过该预订协议的服务，那么您会收到相应发票。请联系 IBM 指定的客户代表或联系 [{{site.data.keyword.Bluemix_notm}} 销售人员](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部链接图标](../icons/launch-glyph.svg) 来着手处理您的协议。
-
-### {{site.data.keyword.Bluemix_local_notm}} 帐户
-
-使用 {{site.data.keyword.Bluemix_local_notm}} 时，对于以下项，必须至少注册为期一年的使用期限：
-
-   * 一项称为“中继”的交付功能，它能够使 IBM 连接到您的本地部署，并以一致的方式自动交付更新
-   * 所有受支持的运行时（IBM Java Liberty、Node.js 和内置开放式源代码运行时）
-   * 所有您选择的本地服务以及所有公共 {{site.data.keyword.Bluemix_notm}} 服务的访问权
-   * 标准 {{site.data.keyword.Bluemix_notm}} 支持
-
-在该期限内，您每月所支付的费用取决于所需的本地服务以及预订帐户（通过该帐户，您可以访问所有公共服务）。{{site.data.keyword.Bluemix_notm}} Public 中服务的使用量费用按照您的预订帐户协议进行计算。如果使用了超过该预订协议的服务，那么您会收到相应发票。请联系 IBM 指定的客户代表或联系 [{{site.data.keyword.Bluemix_notm}} 销售人员](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部链接图标](../icons/launch-glyph.svg) 来着手处理您的协议。
-
-
-

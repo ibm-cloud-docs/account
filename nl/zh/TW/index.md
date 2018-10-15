@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-09-04"
+lastupdated: "2018-10-08"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-09-04"
 # 帳戶類型
 {: #accounts}
 
-您可以選擇三種 {{site.data.keyword.Bluemix}} 帳戶類型：「精簡」、「隨收隨付制」及「訂閱」。您可以使用任何帳戶類型在 {{site.data.keyword.Bluemix_notm}} 中開始使用 - 請選擇最符合您需求的帳戶類型。
+您可以選擇三種 {{site.data.keyword.Bluemix}} 帳戶類型：「精簡」、「隨收隨付制」及「訂閱」。任何帳戶類型都可以用來在 {{site.data.keyword.Bluemix_notm}} 中開始使用。請選擇最符合您需要的一種。
 {:shortdesc}
 
 ## 比較帳戶
@@ -111,17 +111,3 @@ lastupdated: "2018-09-04"
 您也可以訂購選購項目（例如 SoftLayer DirectLink 或超值支援選項）。如需相關資訊，請與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡。
 
 您在該期間每個月所支付的金額是根據您想要的專用服務，加上讓您存取所有公用服務的「訂閱」帳戶。{{site.data.keyword.Bluemix_notm}} Public 中的服務使用費用是根據您的「訂閱」帳戶合約來計算。您會收到關於任何超出訂閱合約之使用服務的發票。請與 IBM 指定的客戶業務代表聯絡，或與 [{{site.data.keyword.Bluemix_notm}} 銷售人員](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡，以開始您的合約。
-
-### {{site.data.keyword.Bluemix_local_notm}} 帳戶
-
-使用 {{site.data.keyword.Bluemix_local_notm}}，您必須註冊至少一年期限，包括：
-
-   * 稱為轉遞的交付功能，讓 IBM 能連接您的本端部署，並自動且一致地交付更新
-   * 所有支援的運行環境（IBM Java Liberty、Node.js 及內建開放程式碼運行環境）
-   * 您選取的所有本端服務，以及所有公用 {{site.data.keyword.Bluemix_notm}} 服務的存取權
-   * 標準 {{site.data.keyword.Bluemix_notm}} 支援
-
-您在該期間每個月所支付的金額是根據您想要的本端服務，加上讓您存取所有公用服務的「訂閱」帳戶。{{site.data.keyword.Bluemix_notm}} Public 中的服務使用費用是根據您的「訂閱」帳戶合約來計算。您會收到關於任何超出訂閱合約之使用服務的發票。請與 IBM 指定的客戶業務代表聯絡，或與 [{{site.data.keyword.Bluemix_notm}} 銷售人員](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡，以開始您的合約。
-
-
-
