@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-09-04"
+lastupdated: "2018-10-08"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-09-04"
 # Tipi di account
 {: #accounts}
 
-Puoi scegliere tra tre tipi di account {{site.data.keyword.Bluemix}}: Lite, Pagamento a consumo e Sottoscrizione. Puoi utilizzare qualsiasi tipo di account per iniziare a utilizzare {{site.data.keyword.Bluemix_notm}} - scegli quello più adatto alle tue esigenze.
+Puoi scegliere tra tre tipi di account {{site.data.keyword.Bluemix}}: Lite, Pagamento a consumo e Sottoscrizione. Puoi utilizzare tutti i tipi di account per iniziare ad utilizzare {{site.data.keyword.Bluemix_notm}}. Scegli quello che meglio si adatta alle tue esigenze.
 {:shortdesc}
 
 ## Confronto degli account
@@ -43,7 +43,7 @@ La seguente tabella fornisce un confronto degli account Lite, Pagamento a consum
 
 Registrati per un account Lite per iniziare a creare le tue applicazioni ed esplorare i servizi con esclusivi piani Lite gratuiti, che vengono visualizzati con una tag Lite ![Tag Lite](../icons/Lite.svg) nella console {{site.data.keyword.Bluemix_notm}}. Il tuo account Lite non scade e non è richiesta la tua carta di credito.
 
-Hai accesso a un singolo gruppo di risorse creato per te e denominato `Default`. Tutte le tue istanze dei servizi gestite da {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) vengono aggiunte automaticamente a questo gruppo di risorse. Puoi aggiornare il nome di questo gruppo di risorse in qualsiasi momento. Per la procedura dettagliata, vedi [Ridenominazione di un gruppo di risorse](/docs/resources/resourcegroups.html#renaming-a-resource-group).
+Hai accesso a un singolo gruppo di risorse creato per te e denominato `Default`. Tutte le tue istanze del servizio gestite da {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) vengono aggiunte automaticamente a questo gruppo di risorse. Puoi aggiornare il nome di questo gruppo di risorse in qualsiasi momento. Per la procedura dettagliata, vedi [Ridenominazione di un gruppo di risorse](/docs/resources/resourcegroups.html#renaming-a-resource-group).
 
 Ogni gruppo di risorse è gratuito. Quando crei una connessione tra un servizio gestito da IAM e un'applicazione Cloud Foundry, crei un alias, che è un'istanza del servizio, che viene conteggiato nella tua quota. Vedi [Cos'è un alias?](/docs/resources/connecting_apps.html#what_is_alias).
 {: tip}
@@ -110,19 +110,3 @@ Puoi anche ordinare elementi facoltativi quali SoftLayer DirectLink oppure opzio
 
 Quello che paghi ogni mese durante questo periodo si basa sui servizi dedicati che desideri, oltre a un account Sottoscrizione che ti dà accesso a tutti i servizi pubblici. Gli addebiti di utilizzo dei servizi in {{site.data.keyword.Bluemix_notm}} pubblico sono calcolati in base all'accordo del tuo account di sottoscrizione. Ricevi una fattura per tutti i servizi che utilizzi
 oltre i limiti previsti da tale accordo di sottoscrizione. Contatta il tuo rappresentante dell'account designato IBM oppure il settore [Vendite di {{site.data.keyword.Bluemix_notm}} ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icona link esterno](../icons/launch-glyph.svg) per un'introduzione al tuo accordo.
-
-### Account {{site.data.keyword.Bluemix_local_notm}}
-
-Con {{site.data.keyword.Bluemix_local_notm}}, devi registrarti per un periodo minimo di un anno che include:
-
-   * Una capacità di consegna denominata Relay che consente a IBM di connettersi alla tua distribuzione locale e
-di fornire automaticamente e costantemente gli aggiornamenti
-   * Tutti i runtime supportati (IBM Java Liberty, Node.js e runtime open source integrati)
-   * Tutti i servizi locali da te selezionati e l'accesso a tutti i servizi {{site.data.keyword.Bluemix_notm}} pubblici
-   * Supporto {{site.data.keyword.Bluemix_notm}} standard
-
-Quello che paghi ogni mese durante questo periodo si basa sui servizi locali che desideri, oltre a un account Sottoscrizione che ti dà accesso a tutti i servizi pubblici. Gli addebiti di utilizzo dei servizi in {{site.data.keyword.Bluemix_notm}} pubblico sono calcolati in base all'accordo del tuo account di sottoscrizione. Ricevi una fattura per tutti i servizi che utilizzi
-oltre i limiti previsti da tale accordo di sottoscrizione. Contatta il tuo rappresentante dell'account designato IBM oppure il settore [Vendite di {{site.data.keyword.Bluemix_notm}} ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icona link esterno](../icons/launch-glyph.svg) per un'introduzione al tuo accordo.
-
-
-

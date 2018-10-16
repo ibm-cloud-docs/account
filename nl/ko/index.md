@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-09-04"
+lastupdated: "2018-10-08"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-09-04"
 # 계정 유형
 {: #accounts}
 
-사용자는 세 가지 {{site.data.keyword.Bluemix}} 계정 유형(Lite, 종량과금제, 구독) 중 하나를 선택할 수 있습니다. 어느 계정 유형을 사용해도 {{site.data.keyword.Bluemix_notm}}에서 시작할 수 있습니다. 필요에 따라 유형을 선택하십시오.
+사용자는 세 가지 {{site.data.keyword.Bluemix}} 계정 유형(Lite, 종량과금제, 구독) 중 하나를 선택할 수 있습니다. 임의의 계정 유형을 사용하여 {{site.data.keyword.Bluemix_notm}}에서 시작할 수 있습니다. 사용자의 요구사항에 가장 적합한 계정 유형을 선택합니다.
 {:shortdesc}
 
 ## 계정 비교
@@ -109,17 +109,3 @@ Lite 계정에 사용 가능한 다음 주요 기능 목록을 확인하십시�
 SoftLayer DirectLink 또는 프리미엄 지원 옵션과 같은 선택적 항목을 주문할 수도 있습니다. 자세한 정보는 [{{site.data.keyword.Bluemix_notm}} 영업 팀 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg)에 문의하십시오.
 
 해당 기간 동안 매월 지불하는 항목은 원하는 데디케이티드 서비스 및 모든 퍼블릭 서비스에 대한 액세스를 제공하는 구독 계정을 기반으로 합니다. {{site.data.keyword.Bluemix_notm}} 퍼블릭에서 서비스의 사용 비용은 구독 계정 계약을 기반으로 계산됩니다. 해당 구독 계약 외에 추가로 사용하는 모든 서비스에 대해 송장이 발급됩니다. 계약에 착수하려면 IBM이 지정한 계정 담당자 또는 [{{site.data.keyword.Bluemix_notm}} 영업 팀](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg)에 문의하십시오.
-
-### {{site.data.keyword.Bluemix_local_notm}} 계정
-
-{{site.data.keyword.Bluemix_local_notm}}에서는 다음을 포함하여 최소 기간인 1년 동안은 등록해야 합니다.
-
-   * 릴레이라고도 하며 IBM이 사용자의 로컬 배치에 연결하고 업데이트를 자동으로 일괄적으로 전달할 수 있도록 하는 전달 기능
-   * 지원되는 모든 런타임(IBM Java Liberty, Node.js 및 기본 제공 오픈 소스 런타임)
-   * 선택한 모든 로컬 서비스 및 모든 퍼블릭 {{site.data.keyword.Bluemix_notm}} 서비스에 대한 액세스
-   * 표준 {{site.data.keyword.Bluemix_notm}} 지원
-
-해당 기간 동안 매월 지불하는 항목은 원하는 로컬 서비스 및 모든 퍼블릭 서비스에 대한 액세스를 제공하는 구독 계정을 기반으로 합니다. {{site.data.keyword.Bluemix_notm}} 퍼블릭에서 서비스의 사용 비용은 구독 계정 계약을 기반으로 계산됩니다. 해당 구독 계약 외에 추가로 사용하는 모든 서비스에 대해 송장이 발급됩니다. 계약에 착수하려면 IBM이 지정한 계정 담당자 또는 [{{site.data.keyword.Bluemix_notm}} 영업 팀](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg)에 문의하십시오.
-
-
-

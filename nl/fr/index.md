@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-09-04"
+lastupdated: "2018-10-08"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-09-04"
 # Types de compte
 {: #accounts}
 
-Vous avez le choix entre trois types de compte {{site.data.keyword.Bluemix}} : Lite, Paiement à la carte et Abonnement. Vous pouvez utiliser l'un de ces types de compte lorsque vous commencez à utiliser {{site.data.keyword.Bluemix_notm}}. Choisissez simplement le plus adapté à vos besoins.
+Vous avez le choix entre trois types de compte {{site.data.keyword.Bluemix}} : Lite, Paiement à la carte et Abonnement. Tous les types de compte peuvent être utilisés pour commencer à utiliser {{site.data.keyword.Bluemix_notm}}. Choisissez celui qui correspond le mieux à vos besoins.
 {:shortdesc}
 
 ## Comparaison des comptes
@@ -111,18 +111,3 @@ commander des éléments facultatifs tels que SoftLayer DirectLink ou des option
 
 Le prix que vous payez chaque mois au cours de cet engagement dépend des services dédiés que vous choisissez et inclut un compte d'abonnement qui vous permet d'accéder à tous les services publics. Le prix de l'utilisation des services dans l'environnement {{site.data.keyword.Bluemix_notm}} public est calculé selon votre contrat de compte d'abonnement. Vous recevez une facture pour tous les services que vous utilisez au-delà de la franchise
 définie dans le contrat d'abonnement. Contactez votre représentant de compte IBM ou le [service commercial {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg) pour mettre en oeuvre votre contrat.
-
-### Compte {{site.data.keyword.Bluemix_local_notm}}
-
-{{site.data.keyword.Bluemix_local_notm}} exige un engagement minimal d'un an qui inclut :
-
-   * Une fonction de distribution appelée relais qui permet à IBM de se connecter à votre déploiement local et de distribuer des mises à jour automatiquement et de manière cohérente
-   * Tous les contextes d'exécution pris en charge (IBM Java Liberty, Node.js et des contextes d'exécution open source intégrés)
-   * Tous les services locaux que vous avez sélectionnés, ainsi que l'accès à tous les services {{site.data.keyword.Bluemix_notm}} publics
-   * Le support {{site.data.keyword.Bluemix_notm}} standard
-
-Le prix que vous payez chaque mois au cours de cet engagement dépend des services locaux que vous choisissez et inclut un compte d'abonnement qui vous permet d'accéder à tous les services publics. Le prix de l'utilisation des services dans l'environnement {{site.data.keyword.Bluemix_notm}} public est calculé selon votre contrat de compte d'abonnement. Vous recevez une facture pour tous les services que vous utilisez au-delà de la franchise
-définie dans le contrat d'abonnement. Contactez votre représentant de compte IBM ou le [service commercial {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg) pour mettre en oeuvre votre contrat.
-
-
-
