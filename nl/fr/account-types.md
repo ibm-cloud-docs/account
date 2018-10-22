@@ -16,13 +16,13 @@ lastupdated: "2018-08-14"
 # Types de compte
 {: #accounts}
 
-Vous pouvez commencer à construire des applications dans {{site.data.keyword.Bluemix}} gratuitement. Lorsque vous êtes prêt à aller plus loin, effectuez une mise à niveau en ne payant que pour ce que vous utilisez au-delà des franchises. {{site.data.keyword.Bluemix}} inclut quatre types de compte : Lite, Paiement à la carte, Abonnement et Promo. Vous pouvez utiliser l'un de ces types de compte pour vous initier à {{site.data.keyword.Bluemix_notm}} - choisissez simplement le plus adapté à vos besoins.
+Vous pouvez commencer à construire des applications dans {{site.data.keyword.Bluemix}} gratuitement. Lorsque vous êtes prêt à aller plus loin, effectuez une mise à niveau en ne payant que pour ce que vous utilisez au-delà des franchises. {{site.data.keyword.Bluemix}} inclut quatre types de compte : Lite, Paiement à la carte, Abonnement et Promo. Choisissez celui qui correspond le mieux à vos besoins.
 {:shortdesc}
 
 ## Comparaison des types de compte
 {: #compare}
 
-Le tableau suivant compare les types de compte Lite, Paiement à la carte et Abonnement. Pour plus d'informations sur chaque compte, voir les sections suivantes.
+Le tableau suivant compare les types de compte Lite, Paiement à la carte et Abonnement. 
 
 |  | Lite  | Paiement à la carte | Abonnement |
 |--------------------|--------------------|--------------------|--------------------|
@@ -40,7 +40,7 @@ Le tableau suivant compare les types de compte Lite, Paiement à la carte et Abo
 ## Compte Lite
 {: #liteaccount}
 
-Inscrivez-vous pour un compte Lite gratuit afin de construire des applications et d'explorer des services associés à des plans Lite gratuits affichés avec un indicateur Lite ![Indicateur Lite](../icons/Lite.svg) dans la console {{site.data.keyword.Bluemix_notm}}. Votre compte Lite n'expire pas et votre carte de crédit n'est pas nécessaire.
+Inscrivez-vous pour un compte Lite gratuit afin de construire des applications et d'explorer des services associés à des plans gratuits affichés avec un indicateur Lite ![Indicateur Lite](../icons/Lite.svg) dans la console {{site.data.keyword.Bluemix_notm}}. Votre compte Lite n'expire pas et votre carte de crédit n'est pas nécessaire.
 
 Vous avez accès à un seul groupe de ressources, créé pour vous et nommé `Default`. Toutes vos instances de service gérées par {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) sont automatiquement ajoutées à ce groupe de ressources. Vous pouvez mettre à jour ce groupe de ressources à tout moment. Pour la procédure détaillée, voir [Changement de nom d'un groupe de ressources](/docs/admin/resourcegroups.html#renaming-a-resource-group).
 
@@ -58,7 +58,7 @@ Vous vous demandez sûrement ce que comporte l'offre de compte Lite. La liste su
    * Des notifications vous sont envoyées par courrier électronique quant au statut de votre compte et à vos limites de quota.
    * Vos applications Cloud Foundry ont accès à 256 Mo de mémoire d'exécution gratuite et instantanée.
    * Vous pouvez exploiter un cluster Kubernetes avec 2 UC et 4 Go de mémoire RAM.
-   * Vous pouvez mettre à disposition une instance de n'importe quel service du catalogue [{{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} doté d'un plan Lite.
+   * Vous pouvez avoir une instance de n'importe quel service dans le catalogue [{{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} doté d'un plan Lite.
    * Après 10 jours sans activité de développement, vos applications passent en veille. Vous pouvez commencer à travailler sur de nouvelles applications sans vous soucier d'atteindre les limites de quota de mémoire.
    * Après 30 jours sans activité de développement, vos instances de service non associées à des plans Lite sont supprimées. Ainsi, vous n'avez pas à gérer la suppression des instances inactives avant d'en créer de nouvelles.
 
@@ -80,7 +80,7 @@ Si vous liez votre compte {{site.data.keyword.Bluemix_notm}} facturable à un co
 
 ### Compte Paiement à la carte
 
-Avec un compte Paiement à la carte, vous pouvez créer plusieurs groupes de ressources de manière à faciliter la gestion du quota et l'affichage de la facturation d'utilisation d'un ensemble de ressources.
+Avec un compte Paiement à la carte, vous pouvez créer plusieurs groupes de ressources de manière à faciliter la gestion du quota et l'affichage de la facturation d'utilisation d'un ensemble de ressources. 
 
 Vous êtes éligible pour des environnements d'exécution gratuits et des franchises de services. Si vous dépassez la franchise, vous recevrez une facture {{site.data.keyword.Bluemix_notm}} mensuelle. Cette dernière est émise en dollars américains (USD) et détaille le prix des ressources.
 
@@ -92,7 +92,7 @@ Vous pouvez convertir votre compte Paiement à la carte en compte d'abonnement �
 
 ### Compte d'abonnement
 
-Avec un compte d'abonnement, vous pouvez créer plusieurs groupes de ressources de manière à faciliter la gestion du quota et l'affichage de la facturation d'utilisation d'un ensemble de ressources.
+Avec un compte d'abonnement, vous pouvez créer plusieurs groupes de ressources de manière à faciliter la gestion du quota et l'affichage de la facturation d'utilisation d'un ensemble de ressources. 
 
 Vous vous engagez à dépenser une somme minimale par mois et recevez une remise sur abonnement qui est appliquée à ce montant minimal. Vous payez également toute utilisation dépassant le montant minimal.
 
