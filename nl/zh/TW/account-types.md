@@ -16,13 +16,13 @@ lastupdated: "2018-08-14"
 # 帳戶類型
 {: #accounts}
 
-您可以在 {{site.data.keyword.Bluemix}} 上免費開始建置。當您準備好要擴大時，只需要對超出免費額度的部分進行升級及付費。{{site.data.keyword.Bluemix}} 有四種不同的帳戶類型可供選擇：「精簡」、「隨收隨付制」、「訂閱」及「促銷」。您可以使用任何帳戶類型在 {{site.data.keyword.Bluemix_notm}} 中開始使用 - 只需要選擇最符合您需求的帳戶類型。
+您可以在 {{site.data.keyword.Bluemix}} 上免費開始建置。當您準備好要擴大時，只需要對超出免費額度的部分進行升級及付費。{{site.data.keyword.Bluemix}} 有四種不同的帳戶類型：「精簡」、「隨收隨付制」、「訂閱」及「促銷」。請選擇最符合您需要的一種。
 {:shortdesc}
 
 ## 帳戶比較
 {: #compare}
 
-下表提供「精簡」、「隨收隨付制」及「訂閱」帳戶的比較。如需有關每一個帳戶的詳細資訊，請參閱下列各節。
+下表提供「精簡」、「隨收隨付制」及「訂閱」帳戶的比較。 
 
 |  |精簡|隨收隨付制|訂閱|
 |--------------------|--------------------|--------------------|--------------------|
@@ -40,7 +40,7 @@ lastupdated: "2018-08-14"
 ## 精簡帳戶
 {: #liteaccount}
 
-請註冊免費「精簡」帳戶，以在 {{site.data.keyword.Bluemix_notm}} 主控台中選取名為「精簡」並使用「精簡」標籤 ![「精簡」標籤](../icons/Lite.svg) 所顯示的免費方案，來建置應用程式以及探索服務。「精簡」帳戶不會到期，因此不需要信用卡。
+請註冊免費「精簡」帳戶，以在 {{site.data.keyword.Bluemix_notm}} 主控台中選取使用「精簡」標籤 ![「精簡」標籤](../icons/Lite.svg) 所顯示的免費方案，來建置應用程式以及探索服務。「精簡」帳戶不會到期，因此不需要信用卡。
 
 您可以存取為您所建立並命名為 `Default` 的單一資源群組。{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 所管理的所有服務實例都會自動新增至此資源群組。您隨時可以更新此資源群組的名稱。如需詳細步驟，請參閱[重新命名資源群組](/docs/admin/resourcegroups.html#renaming-a-resource-group)。
 
@@ -58,7 +58,7 @@ lastupdated: "2018-08-14"
    * 您會收到帳戶狀態及配額限制的電子郵件通知。
    * Cloud Foundry 應用程式可以同時存取最多 256 MB 的免費運行環境記憶體。
    * 您可以使用具有 2 個 CPU 及 4 GB RAM 的 Kubernetes 叢集。
-   * 您可以佈建 [{{site.data.keyword.Bluemix_notm}} 型錄 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} 中有「精簡」方案之任何服務的一個實例。
+   * 您可以擁有 [{{site.data.keyword.Bluemix_notm}} 型錄 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} 中有「精簡」方案之任何服務的一個實例。
    * 在 10 天沒有開發活動之後，您的應用程式就會進入休眠。您可以開始處理新的應用程式，而不需要擔心達到記憶體配額限制。
    * 在 30 天沒有開發活動之後，就會刪除具有精簡方案的服務實例。如此一來，在建立新的實例之前，您不需要管理刪除非作用中實例。
 
@@ -80,11 +80,11 @@ lastupdated: "2018-08-14"
 
 ### 隨收隨付制帳戶
 
-使用「隨收隨付制」帳戶，您可以建立多個資源群組來輕鬆管理配額，以及檢視一組資源的計費使用情形。
+使用「隨收隨付制」帳戶，您可以建立數個資源群組來輕鬆管理配額，以及檢視一組資源的計費使用情形。
 
 您有資格使用免費運行環境及服務額度。如果您的用量超過免費額度，則會收到 {{site.data.keyword.Bluemix_notm}} 的月份發票。發票的計價單位為美元 (USD)，並且會詳細列出資源費用。
 
-在許多國家及地區中，您可以從 {{site.data.keyword.Bluemix_notm}} 主控台註冊「隨收隨付制」帳戶。提供計費及信用卡資訊、接受條款，並提交帳戶要求之後，然後會驗證您的信用卡。此外也會傳送帳戶資訊的確認電子郵件。等收到確認電子郵件過後幾分鐘，您就可以回到主控台繼續建置應用程式。
+在許多國家及地區中，您可以從 {{site.data.keyword.Bluemix_notm}} 主控台註冊「隨收隨付制」帳戶。提供計費及信用卡資訊、接受條款，並提交帳戶要求之後，便會驗證您的信用卡。此外也會傳送帳戶資訊的確認電子郵件。等收到確認電子郵件過後幾分鐘，您就可以回到主控台繼續建置應用程式。
 
 如果無法處理您所在國家或地區的線上申請，請使用 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} 頁面上列出的鏈結，來聯絡 {{site.data.keyword.Bluemix_notm}} 銷售人員。
 
@@ -92,7 +92,7 @@ lastupdated: "2018-08-14"
 
 ### 訂閱帳戶
 
-使用「訂閱」帳戶，您可以建立多個資源群組來輕鬆管理配額，以及檢視一組資源的計費使用情形。
+使用「訂閱」帳戶，您可以建立數個資源群組來輕鬆管理配額，以及檢視一組資源的計費使用情形。
 
 您承諾每個月的最低消費金額，並獲得套用至該最低收費的訂閱折扣。您也會針對任何超出最低消費金額的用量付款。
 
@@ -129,7 +129,7 @@ lastupdated: "2018-08-14"
 
 促銷帳戶（偶而提供為特殊促銷的一部分）是無時間限制的試用，具有大部分 {{site.data.keyword.Bluemix_notm}} 型錄的存取權。此帳戶類型只能透過使用促銷代碼取得。帳戶有效性的時段會依促銷而不同。
 
-使用促銷帳戶，您可以存取為您所建立並命名為 `Default` 的單一資源群組。所有 IAM 受管理服務實例都會自動新增至此資源群組。您隨時可以更新此資源群組的名稱。如需詳細步驟，請參閱[重新命名資源群組](/docs/admin/resource-groups.html#renaming-a-resource-group)。
+使用促銷帳戶，您可以存取為您所建立並命名為 `Default` 的單一資源群組。所有 IAM 管理的服務實例都會自動新增至此資源群組。您隨時可以更新此資源群組的名稱。如需詳細步驟，請參閱[重新命名資源群組](/docs/admin/resource-groups.html#renaming-a-resource-group)。
 
 每一個資源群組都是免費的。當您在 IAM 所管理的服務與 Cloud Foundry 應用程式之間建立連線時，請建立計入您配額的別名（即服務實例）。請參閱[何謂別名？](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}

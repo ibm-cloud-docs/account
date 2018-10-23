@@ -16,13 +16,13 @@ lastupdated: "2018-08-14"
 # Tipi di account
 {: #accounts}
 
-Puoi iniziare a creare su {{site.data.keyword.Bluemix}} gratuitamente. Quando sei pronto a passare alla fase successiva, esegui l'aggiornamento e paga solo per ciò che usi oltre le franchigie. {{site.data.keyword.Bluemix}} ha quattro diversi tipi di account tra cui puoi scegliere: Lite, Pagamento a consumo, Sottoscrizione e Promozionale. Puoi utilizzare qualsiasi tipo di account per iniziare a utilizzare {{site.data.keyword.Bluemix_notm}} - scegli semplicemente quello più adatto alle tue esigenze.
+Puoi iniziare a creare su {{site.data.keyword.Bluemix}} gratuitamente. Quando sei pronto a crescere, esegui un upgrade e paga solo per ciò che usi oltre le franchigie. {{site.data.keyword.Bluemix}} ha quattro tipi differenti di account: Lite, Pagamento a consumo, Sottoscrizione e Promozionale. Scegli quello che meglio si adatta alle tue esigenze.
 {:shortdesc}
 
 ## Confronto degli account
 {: #compare}
 
-La seguente tabella fornisce un confronto degli account Lite, Pagamento a consumo e Sottoscrizione. Per ulteriori informazioni su ciascun account, vedi le sezioni che seguono.
+La seguente tabella fornisce un confronto degli account Lite, Pagamento a consumo e Sottoscrizione. 
 
 |  | Lite  | Pagamento a consumo | Sottoscrizione |
 |--------------------|--------------------|--------------------|--------------------|
@@ -40,7 +40,7 @@ La seguente tabella fornisce un confronto degli account Lite, Pagamento a consum
 ## Account Lite
 {: #liteaccount}
 
-Registrati per un account Lite gratuito per creare applicazioni ed esplorare servizi con piani gratuiti selezionati che sono denominati Lite e visualizzati con una tag Lite ![Tag Lite](../icons/Lite.svg) nella console {{site.data.keyword.Bluemix_notm}}. Il tuo account Lite non scade e non è richiesta la tua carta di credito.
+Registrati per un account Lite gratuito per creare applicazioni ed esplorare servizi con piani gratuiti selezionati che sono visualizzati con una tag Lite ![Tag Lite](../icons/Lite.svg) nella console {{site.data.keyword.Bluemix_notm}}. Il tuo account Lite non scade e non è richiesta la tua carta di credito.
 
 Hai accesso a un singolo gruppo di risorse creato per te e denominato `Default`. Tutte le tue istanze dei servizi gestite da {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) vengono aggiunte automaticamente a questo gruppo di risorse. Puoi aggiornare il nome di questo gruppo di risorse in qualsiasi momento. Per la procedura dettagliata, vedi [Ridenominazione di un gruppo di risorse](/docs/admin/resourcegroups.html#renaming-a-resource-group).
 
@@ -49,7 +49,7 @@ Ogni gruppo di risorse è gratuito. Quando crei una connessione tra un servizio 
 
 ### Disponibilità
 
-Potresti chiederti cosa offra un account Lite. Controlla il seguente elenco di funzioni principali:
+Potresti chiederti che cosa offre un account Lite. Controlla il seguente elenco di funzioni principali:
 
    * L'account è gratuito - non è richiesta una carta di credito.
    * L'account non scade mai.
@@ -58,9 +58,9 @@ Potresti chiederti cosa offra un account Lite. Controlla il seguente elenco di f
    * Ricevi notifiche e-mail relative allo stato del tuo account e ai limiti di quota.
    * Le tue applicazioni Cloud Foundry possono accedere fino a 256 MB di memoria di runtime istantanea gratuita.
    * Puoi lavorare con un cluster Kubernetes con 2 CPU e 4 GB di RAM.
-   * Puoi eseguire il provisioning di un'istanza di qualsiasi servizio nel [catalogo {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} che dispone di un piano Lite.
-   * Dopo 10 giorni senza attività di sviluppo, le tue applicazioni vengono sospese. Puoi iniziare a lavorare su nuove applicazioni senza doverti preoccupare di superare i limiti di quota della memoria.
-   * Dopo 30 giorni senza attività di sviluppo, le tue istanze del servizio con i piani Lite vengono eliminate. In questo modo, non devi gestire l'eliminazione di istanze inattive prima di crearne di nuove.
+   * Puoi disporre di una istanza di qualsiasi servizio nel [catalogo {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} che dispone di un piano Lite.
+   * Dopo 10 giorni senza attività di sviluppo, le tue applicazioni vengono sospese. Puoi iniziare a lavorare su nuove applicazioni senza doverti preoccupare di raggiungere i limiti di quota della memoria.
+   * Dopo 30 giorni senza attività di sviluppo, le tue istanze del servizio con i piani Lite vengono eliminate. In questo modo, non hai bisogno di gestire l'eliminazione di istanze inattive prima di crearne di nuove.
 
 ## Account fatturabili
 {: #billableacts}
@@ -80,11 +80,11 @@ Se colleghi il tuo account fatturabile {{site.data.keyword.Bluemix_notm}} con un
 
 ### Account Pagamento a consumo
 
-Con un account Pagamento a consumo, puoi creare più gruppi di risorse per gestire facilmente la quota e visualizzare l'utilizzo della fatturazione per un insieme di risorse.
+Con un account Pagamento a consumo, puoi creare diversi gruppi di risorse per gestire facilmente la quota e visualizzare l'utilizzo della fatturazione per un insieme di risorse.
 
 Hai diritto a franchigie per i runtime e i servizi. Se superi la franchigia prevista, ricevi una fattura mensile da parte di {{site.data.keyword.Bluemix_notm}}. La fattura sarà in dollari americani (USD) e indicherà i costi delle risorse.
 
-In molti paesi e regioni, puoi registrarti per un account Pagamento a consumo dalla console {{site.data.keyword.Bluemix_notm}}. Una volta che hai fornito le informazioni per la fatturazione e quelle relative alla tua carta di credito, accetta i termini e le condizioni e inoltra la richiesta di account. La tua carta di credito verrà quindi convalidata. Viene inviata anche una e-mail di conferma delle informazioni sull'account. Qualche minuto dopo aver ricevuto l'e-mail di conferma, puoi tornare alla console per continuare a creare le tue applicazioni.
+In molti paesi e regioni, puoi registrarti per un account Pagamento a consumo dalla console {{site.data.keyword.Bluemix_notm}}. Una volta che hai fornito le informazioni per la fatturazione e quelle relative alla tua carta di credito, accetta i termini e le condizioni e inoltra la richiesta di account. La tua carta di credito viene quindi convalidata. Viene inviata anche una e-mail di conferma delle informazioni sull'account. Qualche minuto dopo aver ricevuto l'e-mail di conferma, puoi tornare alla console per continuare a creare le tue applicazioni.
 
 Se non è possibile elaborare la tua richiesta online per il tuo paese o la tua regione, contatta il settore Vendite di {{site.data.keyword.Bluemix_notm}} utilizzando il link elencato nella
 pagina [Supporto {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
@@ -94,7 +94,7 @@ Puoi convertire il tuo account Pagamento a consumo in un account Sottoscrizione 
 
 ### Account Sottoscrizione
 
-Con un account Sottoscrizione, puoi creare più gruppi di risorse per gestire facilmente la quota e visualizzare l'utilizzo della fatturazione per un insieme di risorse.
+Con un account Sottoscrizione, puoi creare diversi gruppi di risorse per gestire facilmente la quota e visualizzare l'utilizzo della fatturazione per un insieme di risorse.
 
 Ti impegni a un importo di spesa minimo ogni mese e ricevi uno sconto sulla sottoscrizione che viene applicato a tale addebito minimo. Puoi anche pagare per qualsiasi
 utilizzo che ecceda l'importo di spesa minimo.

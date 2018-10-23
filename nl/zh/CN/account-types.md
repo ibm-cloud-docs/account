@@ -16,13 +16,13 @@ lastupdated: "2018-08-14"
 # 帐户类型
 {: #accounts}
 
-您可以在 {{site.data.keyword.Bluemix}} 上免费开始构建。在准备好扩展时，即可升级，并仅为超出免费限额的使用内容付费。{{site.data.keyword.Bluemix}} 有四种不同的帐户类型可供选择：轻量、现买现付、预订和促销。在 {{site.data.keyword.Bluemix_notm}} 中一开始可使用任一帐户类型 - 只需选择最适合您需求的帐户类型即可。
+您可以在 {{site.data.keyword.Bluemix}} 上免费开始构建。在准备好扩展时，即可升级，并仅为超出免费限额的使用内容付费。{{site.data.keyword.Bluemix}} 有四种不同的帐户类型：轻量、现买现付、预订和促销。请选择最适合您需要的帐户类型。
 {:shortdesc}
 
 ## 帐户比较
 {: #compare}
 
-下表提供了轻量、现买现付和预订帐户的比较。有关每种帐户的更多信息，请参阅后面的各部分。
+下表提供了轻量、现买现付和预订帐户的比较。 
 
 |  |轻量|现买现付|预订|
 |--------------------|--------------------|--------------------|--------------------|
@@ -40,7 +40,7 @@ lastupdated: "2018-08-14"
 ## 轻量帐户
 {: #liteaccount}
 
-注册免费轻量帐户可在 {{site.data.keyword.Bluemix_notm}} 控制台中使用所选的名为轻量且显示有轻量标记 ![轻量标记](../icons/Lite.svg) 的免费套餐来构建应用程序和探索服务。轻量帐户不会到期，也无需信用卡。
+注册免费轻量帐户可在 {{site.data.keyword.Bluemix_notm}} 控制台中使用显示有轻量标记 ![轻量标记](../icons/Lite.svg) 的精选免费套餐来构建应用程序和探索服务。轻量帐户不会到期，也无需信用卡。
 
 您有权访问为您创建的名为 `Default` 的单个资源组。由 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 管理的所有服务实例都会自动添加到此资源组。可以随时更新此资源组的名称。有关详细步骤，请参阅[重命名资源组](/docs/admin/resourcegroups.html#renaming-a-resource-group)。
 
@@ -58,7 +58,7 @@ lastupdated: "2018-08-14"
    * 您会收到有关帐户状态和配额限制的电子邮件通知。
    * Cloud Foundry 应用程序可以访问高达 256 MB 的免费即时运行时内存。
    * 可以使用具有 2 个 CPU 和 4 GB RAM 的 Kubernetes 集群。
-   * 可以供应 [{{site.data.keyword.Bluemix_notm}}“目录”![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} 中具有轻量套餐的任何服务的一个实例。
+   * 可以拥有在 [{{site.data.keyword.Bluemix_notm}}“目录”![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} 中具有轻量套餐的任何服务的一个实例。
    * 超过 10 天没有开发活动，应用程序将进入休眠。您可以开始处理新的应用程序，而不必担心达到内存配额限制。
    * 超过 30 天没有开发活动，将删除轻量套餐的服务实例。这样，就不必在创建新实例之前管理删除不活动的实例。
 
@@ -80,7 +80,7 @@ lastupdated: "2018-08-14"
 
 ### 现买现付帐户
 
-使用现买现付帐户，可以创建多个资源组，以便轻松管理配额并查看一组资源的记帐使用情况。
+使用现买现付帐户，可以创建多个资源组，以便轻松管理配额并查看一组资源的计费使用情况。
 
 您有资格获取免费运行时和服务限额。如果使用量超过免费限额，那么您将收到按月开具的 {{site.data.keyword.Bluemix_notm}} 发票。发票将采用美元 (USD) 计费，并将详细描述您的资源费用。
 
@@ -92,7 +92,7 @@ lastupdated: "2018-08-14"
 
 ### 预订帐户
 
-使用预订帐户，可以创建多个资源组，以便轻松管理配额并查看一组资源的记帐使用情况。
+使用预订帐户，可以创建多个资源组，以便轻松管理配额并查看一组资源的计费使用情况。
 
 您需要承诺每月最低花费金额，并可享受适用于该最低费用的预订折扣。此外，您需要为超出最小花费金额的任何使用量付费。
 

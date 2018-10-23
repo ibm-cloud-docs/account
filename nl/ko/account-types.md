@@ -16,40 +16,40 @@ lastupdated: "2018-08-14"
 # 계정 유형
 {: #accounts}
 
-{{site.data.keyword.Bluemix}}에서 무료로 빌드를 시작할 수 있습니다. 확장할 준비가 되면 업그레이드한 후에 무료 사용량을 초과하는 사용 내역에 대해서만 비용을 지불하십시오. {{site.data.keyword.Bluemix}}에는 선택할 수 있는 네 개의 서로 다른 계정 유형(라이트, 종량과금제, 구독 및 프로모션)이 있습니다. 어느 계정 유형을 사용해도 {{site.data.keyword.Bluemix_notm}}에서 시작할 수 있습니다. 필요에 따라 선택하기만 하면 됩니다.
+{{site.data.keyword.Bluemix}}에서 무료로 빌드를 시작할 수 있습니다. 확장할 준비가 되면 업그레이드한 후에 무료 사용량을 초과하는 사용 내역에 대해서만 비용을 지불하십시오. {{site.data.keyword.Bluemix}}에는 네 개의 서로 다른 계정 유형(Lite, 종량과금제, 구독 및 프로모션)이 있습니다. 사용자의 요구사항에 가장 적합한 계정 유형을 선택합니다.
 {:shortdesc}
 
 ## 계정 비교
 {: #compare}
 
-다음 표에는 라이트, 종량과금제 및 구독 계정이 비교되어 있습니다. 각각의 계정에 대한 자세한 정보는 후속 절을 참조하십시오.
+다음 표에는 Lite, 종량과금제 및 구독 계정이 비교되어 있습니다. 
 
-|  |라이트  |종량과금제 |구독 |
+|  |Lite  |종량과금제 |구독 |
 |--------------------|--------------------|--------------------|--------------------|
 |**무료 Cloud Foundry 메모리에 액세스** |256MB |512MB |512MB |
-|**[라이트 서비스 플랜 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window}**에 액세스 | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |
-|**모든 무료 사용제에 액세스** |  | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |
+|**[Lite 서비스 플랜 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window}**에 액세스 | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |
+|**모든 무료 플랜에 액세스** |  | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |
 |**전체 카탈로그에 액세스** |  | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |
 |**시간 제한사항 없음** | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |
 |**보증된 제로 코스트** | ![기능 사용 가능](../icons/icon_enabled.svg) |  |  |
-|**협의된 가격 책정** |  |  | ![기능 사용 가능](../icons/icon_enabled.svg) |
+|**협의된 가격** |  |  | ![기능 사용 가능](../icons/icon_enabled.svg) |
 |**POC 학습 또는 빌드에 최적임** | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |  |
 |**프로덕션 유스 케이스에 최적임** |  | ![기능 사용 가능](../icons/icon_enabled.svg) | ![기능 사용 가능](../icons/icon_enabled.svg) |
 {: caption="표 1. {{site.data.keyword.Bluemix_notm}} 계정의 비교" caption-side="top"}
 
-## 라이트 계정
+## Lite 계정
 {: #liteaccount}
 
-{{site.data.keyword.Bluemix_notm}} 콘솔에서 라이트 태그 ![라이트 태그](../icons/Lite.svg)로 표시되며 이름이 라이트인 선택 무료 사용제로 서비스를 탐색하고 앱을 빌드하려면 무료 라이트 계정에 등록하십시오. 라이트 계정은 만료되지 않으며 신용카드가 필요하지 않습니다.
+무료 Lite 계정에 등록하여 앱을 빌드하고, {{site.data.keyword.Bluemix_notm}} 콘솔에서 Lite 태그 ![Lite 태그](../icons/Lite.svg)로 표시되는 엄선된 무료 플랜으로 서비스를 탐색하십시오. Lite 계정은 만료되지 않으며 신용카드가 필요하지 않습니다.
 
-본인용으로 작성된 `Default`로 이름 지정된 단일 리소스 그룹에 대한 액세스를 보유합니다. {{site.data.keyword.Bluemix_notm}} Identity and Access Management(IAM)에서 관리하는 모든 서비스 인스턴스는 자동으로 이 리소스 그룹에 추가됩니다. 언제든지 이 리소스 그룹의 이름을 업데이트할 수 있습니다. 세부 단계는 [리소스 그룹 이름 바꾸기](/docs/admin/resourcegroups.html#renaming-a-resource-group)를 참조하십시오.
+사용자를 위해 작성된 `Default`라는 이름의 단일 리소스 그룹에 액세스할 수 있습니다. {{site.data.keyword.Bluemix_notm}} Identity and Access Management(IAM)에서 관리하는 모든 서비스 인스턴스는 자동으로 이 리소스 그룹에 추가됩니다. 언제든지 이 리소스 그룹의 이름을 업데이트할 수 있습니다. 세부 단계는 [리소스 그룹 이름 바꾸기](/docs/admin/resourcegroups.html#renaming-a-resource-group)를 참조하십시오.
 
 각각의 리소스 그룹은 무료입니다. Cloud Foundry 앱 및 IAM에서 관리되는 서비스 간의 연결을 작성할 때 할당량으로 계수되는 별명(서비스 인스턴스임)을 작성합니다. [별명의 개념](/docs/manageapps/connecting_apps.html#what_is_alias)을 참조하십시오.
 {: tip}
 
 ### 사용 가능한 기능
 
-라이트 계정에서 제공되는 내용이 궁금할 수 있습니다. 다음 주요 기능 목록을 확인하십시오.
+Lite 계정에서 제공하는 내용이 궁금할 수 있습니다. 다음 주요 기능 목록을 확인하십시오.
 
    * 계정이 무료로 제공됨 - 신용카드가 필요하지 않습니다.
    * 계정이 만료되지 않습니다.
@@ -58,9 +58,9 @@ lastupdated: "2018-08-14"
    * 계정 상태 및 할달량 한계에 대한 이메일 알림을 받습니다.
    * Cloud Foundry 앱이 최대 256MB의 바로 사용 가능한 무료 런타임 메모리에 액세스할 수 있습니다.
    * 2개의 CPU 및 4GB RAM으로 Kubernetes 클러스터 관련 작업을 수행할 수 있습니다.
-   * 라이트 플랜을 보유하는 [{{site.data.keyword.Bluemix_notm}} 카탈로그 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window}에서 서비스의 1개 인스턴스를 프로비저닝할 수 있습니다.
-   * 개발 활동이 없는 상태로 10일 후에는 앱이 휴면 상태가 됩니다.  메모리 할당량 한계 도달에 대해 걱정할 필요 없이 새 앱에 대한 작업을 시작할 수 있습니다.
-   * 개발 활동이 없는 상태로 30일 후에는 라이트 플랜의 서비스 인스턴스가 삭제됩니다.  이러한 방법으로 새로 작성하기 전에 비활성 인스턴스 삭제를 관리할 필요가 없습니다.
+   * Lite 플랜을 보유하는 [{{site.data.keyword.Bluemix_notm}} 카탈로그 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window}에서 서비스의 1개 인스턴스를 포함할 수 있습니다.
+   * 개발 활동이 없는 상태로 10일 후에는 앱이 휴면 상태가 됩니다. 메모리 할당량 한계 도달에 대해 걱정할 필요 없이 새 앱에 대한 작업을 시작할 수 있습니다.
+   * 개발 활동이 없는 상태로 30일 후에는 Lite 플랜의 서비스 인스턴스가 삭제됩니다. 따라서 새 인스턴스를 작성하기 전에 비활성 인스턴스 삭제를 관리할 필요가 없습니다.
 
 ## 청구 가능 계정
 {: #billableacts}
@@ -82,11 +82,11 @@ lastupdated: "2018-08-14"
 
 ### 종량과금제 계정
 
-종량과금제 계정이 있으면 여러 개의 리소스 그룹을 작성하여 할당량을 손쉽게 관리하고 리소스 세트에 대한 청구 사용량을 볼 수 있습니다.
+종량과금제 계정이 있으면 일부 리소스 그룹을 작성하여 할당량을 손쉽게 관리하고 리소스 세트에 대한 청구 사용량을 볼 수 있습니다. 
 
 무료 런타임 및 서비스 허용량을 제공받을 수 있습니다. 무료 사용량을 초과하여 사용하면 월별 {{site.data.keyword.Bluemix_notm}} 청구서를 받습니다. 송장은 미국 달러(USD)로 청구되며 리소스 비용에 대한 세부사항이 기재되어 있습니다.
 
-많은 국가와 지역에서는 {{site.data.keyword.Bluemix_notm}} 콘솔에서 종량과금제 계정을 등록할 수 있습니다. 청구 및 신용카드 정보를 입력한 후에 이용 약관에 동의하고 계정 요청을 제출하십시오. 그러면 신용카드의 유효성이 검증됩니다. 계정 정보 확인 이메일도 전송됩니다. 확인 이메일을 받은 이후 몇 분이 지나면 콘솔로 돌아가서 앱 빌드를 계속 진행할 수 있습니다.
+많은 국가와 지역에서는 {{site.data.keyword.Bluemix_notm}} 콘솔에서 종량과금제 계정을 등록할 수 있습니다. 청구 및 신용카드 정보를 입력한 후에 이용 약관에 동의하고 계정 요청을 제출하십시오. 그 후에는 신용카드의 유효성이 검증됩니다. 계정 정보 확인 이메일도 전송됩니다. 확인 이메일을 받은 이후 몇 분이 지나면 콘솔로 돌아가서 앱 빌드를 계속 진행할 수 있습니다.
 
 해당 국가 또는 지역에 대한 온라인 요청을 처리할 수 없는 경우에는 [{{site.data.keyword.Bluemix_notm}} 지원 ![외부 링크 아이콘](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window} 페이지에 나열된 링크를 사용하여 {{site.data.keyword.Bluemix_notm}} 영업 팀에 문의하십시오.
 
@@ -94,7 +94,7 @@ lastupdated: "2018-08-14"
 
 ### 구독 계정
 
-구독 계정이 있으면 여러 개의 리소스 그룹을 작성하여 할당량을 손쉽게 관리하고 리소스 세트에 대한 청구 사용량을 볼 수 있습니다.
+구독 계정이 있으면 일부 리소스 그룹을 작성하여 할당량을 손쉽게 관리하고 리소스 세트에 대한 청구 사용량을 볼 수 있습니다. 
 
 매월 최소 지출 금액을 지불하며 해당 최소 비용에 적용되는 구독 할인을 받습니다. 최소 지출 금액을 초과하는 사용량에 대해서는 비용이 청구됩니다.
 
