@@ -16,13 +16,13 @@ lastupdated: "2018-08-14"
 # Tipos de cuentas
 {: #accounts}
 
-Puede empezar a crear en {{site.data.keyword.Bluemix}} gratis. Cuando esté preparado para crecer, actualice y pague solo por uso más allá de las concesiones gratuitas. {{site.data.keyword.Bluemix}} tiene cuatro tipos de cuenta diferentes de los que puede elegir: Lite, Pago según uso, Suscripción y Promocional. Puede utilizar cualquier tipo de cuenta para empezar en {{site.data.keyword.Bluemix_notm}}, elija aquel que se adapte mejor a sus necesidades.
+Puede empezar a crear en {{site.data.keyword.Bluemix}} gratis. Cuando esté preparado para crecer, actualice y pague solo por uso más allá de las concesiones gratuitas. {{site.data.keyword.Bluemix}} tiene cuatro tipos de cuenta diferentes: Lite, Pago según uso, Suscripción y Promo. Elija el tipo que se adapte mejor a sus necesidades.
 {:shortdesc}
 
 ## Comparación de cuentas
 {: #compare}
 
-La siguiente tabla proporciona una comparación de las cuentas Lite, Pago según uso y Suscripción. Para obtener más información sobre cada cuenta, consulte las siguientes secciones.
+La siguiente tabla proporciona una comparación de las cuentas Lite, Pago según uso y Suscripción. 
 
 |  | Lite  | Pago según uso | Suscripción |
 |--------------------|--------------------|--------------------|--------------------|
@@ -40,7 +40,7 @@ La siguiente tabla proporciona una comparación de las cuentas Lite, Pago según
 ## Cuenta Lite
 {: #liteaccount}
 
-Registrarse para una cuenta Lite gratuita para crear apps y explorar servicios con planes gratuitos seleccionados llamados Lite y que se muestran con la etiqueta Lite ![Etiqueta Lite](../icons/Lite.svg) en la consola de {{site.data.keyword.Bluemix_notm}}. Su cuenta Lite no caduca y la tarjeta de crédito no es necesaria.
+Regístrese para obtener una cuenta Lite gratuita para crear apps y explorar servicios con planes gratuitos seleccionados que se muestran con una etiqueta Lite ![Etiqueta Lite](../icons/Lite.svg) en la consola de {{site.data.keyword.Bluemix_notm}}. Su cuenta Lite no caduca y la tarjeta de crédito no es necesaria.
 
 Tiene acceso a un único grupo de recursos creado para usted y llamado `Default`. Todas sus instancias de servicio gestionadas por la Gestión de identidad y acceso de {{site.data.keyword.Bluemix_notm}} (IAM) se añaden automáticamente a este grupo de recursos. Puede actualizar en nombre de este grupo de recursos en cualquier momento. Consulte [Cómo renombrar un grupo de recursos](/docs/admin/resourcegroups.html#renaming-a-resource-group) para obtener los pasos detallados.
 
@@ -49,7 +49,7 @@ Cada grupo de recursos es gratuito. Cuando crea una conexión entre un servicio 
 
 ### ¿Qué hay disponible?
 
-Se estará preguntando qué se ofrece en una cuenta Lite. Consulte la siguiente lista con las características principales:
+Es posible que se pregunte qué ofrece una cuenta de Lite. Consulte la siguiente lista con las características principales:
 
    * La cuenta es gratuita. No necesita tarjeta de crédito.
    * La cuenta no caduca nunca.
@@ -58,8 +58,8 @@ Se estará preguntando qué se ofrece en una cuenta Lite. Consulte la siguiente 
    * Recibirá notificaciones de correo electrónico sobre el estado de la cuenta y los límites de la cuota.
    * Sus apps de Cloud Foundry pueden acceder hasta un máximo de 256 MB de memoria de tiempo de ejecución gratuita e instantánea.
    * Puede trabajar con un clúster de Kubernetes con 2 CPU y 4 GB de RAM.
-   * Puede suministrar una instancia de cualquier servicio en el [catálogo de {{site.data.keyword.Bluemix_notm}}![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} que tenga un plan Lite.
-   * Después de 10 días de inactividad de desarrollo, sus apps entrarán en suspensión. Puede empezar a trabajar en apps nuevas sin tener que preocuparse por llegar a los límites de cuota de memoria.
+   * Puede disponer de una instancia de cualquier servicio en el catálogo de [{{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} que tenga un plan Lite.
+   * Después de 10 días de inactividad de desarrollo, sus apps entrarán en suspensión. Puede empezar a trabajar en nuevas apps sin tener que preocuparse de alcanzar los límites de cuota de memoria.
    * Después de 30 días de inactividad de desarrollo, se suprimirán las instancias de servicio con planes Lite. De esta forma, no tiene que preocuparse de la supresión de instancias inactivas antes de crear nuevas.
 
 ## Cuentas facturables
@@ -84,7 +84,7 @@ Con una cuenta de Pago según uso, puede crear varios grupos de recursos para ge
 
 Puede optar a concesiones de tiempo de ejecución y de servicio gratuitas. Si utiliza más que la concesión gratuita, recibirá una factura mensual de {{site.data.keyword.Bluemix_notm}}. La factura estará en dólares de Estados Unidos (USD) y detallará los cargos de recursos.
 
-En muchos países y regiones, puede registrarse para una cuenta Pago según uso desde la consola de {{site.data.keyword.Bluemix_notm}}. Tras proporcionar la información de la tarjeta de crédito y la facturación, aceptar los términos y condiciones y enviar una solicitud de cuenta. A continuación, se validará su tarjeta de crédito. También se envía un correo electrónico de confirmación de la información de la cuenta. Transcurridos algunos minutos tras la recepción del correo electrónico de confirmación, puede volver a la consola para continuar creando sus apps.
+En muchos países y regiones, puede registrarse para una cuenta Pago según uso desde la consola de {{site.data.keyword.Bluemix_notm}}. Tras proporcionar la información de la tarjeta de crédito y la facturación, aceptar los términos y condiciones y enviar una solicitud de cuenta. A continuación, la tarjeta de crédito se valida. También se envía un correo electrónico de confirmación de la información de la cuenta. Transcurridos algunos minutos tras la recepción del correo electrónico de confirmación, puede volver a la consola para continuar creando sus apps.
 
 Si no se puede procesar su solicitud en línea para su país o región, póngase en contacto con el equipo de ventas de {{site.data.keyword.Bluemix_notm}} utilizando el enlace que aparece en la página [Soporte de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
 

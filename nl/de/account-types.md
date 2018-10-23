@@ -16,13 +16,13 @@ lastupdated: "2018-08-14"
 # Kontotypen
 {: #accounts}
 
-Wenn Sie sich für {{site.data.keyword.Bluemix}} entscheiden, entstehen Ihnen zunächst keine Kosten. Wenn Sie Ihre Umgebung später ausbauen wollen, zahlen Sie bei einem Upgrade nur das, was Sie über die Gratisleistungen hinaus nutzen. {{site.data.keyword.Bluemix}} hat vier Kontentypen: Lite-Konto, nutzungsabhängiges Konto, Abonnementkonto und Werbeaktionskonto. Sie können jeden der Kontotypen verwenden, um Ihre Arbeit mit {{site.data.keyword.Bluemix_notm}} zu beginnen - wählen Sie einfach den für Ihre Anforderungen am besten geeigneten Kontotyp aus.
+Wenn Sie sich für {{site.data.keyword.Bluemix}} entscheiden, entstehen Ihnen zunächst keine Kosten. Wenn Sie Ihre Umgebung später ausbauen möchten, zahlen Sie bei einem Upgrade nur das, was Sie über die Gratisleistungen hinaus nutzen. {{site.data.keyword.Bluemix}} weist vier Kontentypen auf: Lite-Konto, nutzungsabhängiges Konto, Abonnementkonto und Werbeaktionskonto. Den Kontotyp auswählen, der den jeweiligen Bedürfnissen am besten entspricht.
 {:shortdesc}
 
 ## Kontovergleich
 {: #compare}
 
-Die folgende Tabelle enthält einen Vergleich von Lite-Konto, nutzungsabhängigem Konto und Abonnementkonto. Weitere Informationen zu den einzelnen Konten finden Sie in den folgenden Abschnitten.
+Die folgende Tabelle enthält einen Vergleich von Lite-Konto, nutzungsabhängigem Konto und Abonnementkonto. 
 
 |  | Lite  | Nutzungsabhängig | Abonnement |
 |--------------------|--------------------|--------------------|--------------------|
@@ -40,9 +40,9 @@ Die folgende Tabelle enthält einen Vergleich von Lite-Konto, nutzungsabhängige
 ## Lite-Konto
 {: #liteaccount}
 
-Registrieren Sie sich für ein kostenfreies Lite-Konto, um mit ausgewählten gebührenfreien Plänen Apps zu entwickeln und Services zu nutzen. Diese Lite-Pläne werden mit einem Lite-Tag ![Lite-Tag](../icons/Lite.svg) in der {{site.data.keyword.Bluemix_notm}}-Konsole angezeigt. Ihr Lite-Konto gilt unbefristet und Ihre Kreditkarte wird nicht benötigt.
+Registrieren Sie sich für ein kostenfreies Lite-Konto, um mit ausgewählten gebührenfreien Plänen Apps zu entwickeln und Services zu nutzen. Diese werden mit einem Lite-Tag ![Lite-Tag](../icons/Lite.svg) in der {{site.data.keyword.Bluemix_notm}}-Konsole angezeigt. Ihr Lite-Konto gilt unbefristet und Ihre Kreditkarte wird nicht benötigt.
 
-Sie haben Zugriff auf eine einzelne Ressourcengruppe, die für Sie erstellt wurde und den Namen `Default` (Standard) trägt. Alle Serviceinstanzen, die von {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) verwaltet werden, werden dieser Ressourcengruppe automatisch hinzugefügt. Sie können den Namen dieser Ressourcengruppe jederzeit ändern. Detaillierte Schritte finden Sie unter [Ressourcengruppe umbenennen](/docs/admin/resourcegroups.html#renaming-a-resource-group).
+Sie verfügen über Zugriff auf eine einzelne Ressourcengruppe, die für Sie erstellt wurde und den Namen `Default` (Standard) trägt. Alle Serviceinstanzen, die von {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) verwaltet werden, werden dieser Ressourcengruppe automatisch hinzugefügt. Sie können den Namen dieser Ressourcengruppe jederzeit ändern. Detaillierte Schritte finden Sie unter [Ressourcengruppe umbenennen](/docs/admin/resourcegroups.html#renaming-a-resource-group).
 
 Jede Ressourcengruppe ist kostenfrei. Wenn Sie eine Verbindung zwischen einem von IAM verwalteten Service und einer Cloud Foundry-App erstellen, erstellen Sie einen Aliasnamen, der eine Serviceinstanz ist, die zu Ihrem Kontingent zählt. Weitere Informationen finden Sie unter [Was ist ein Aliasname?](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}
@@ -58,7 +58,7 @@ Ein Lite-Konto umfasst das nachfolgend beschriebene Angebot. Die folgende Liste 
    * Sie erhalten E-Mail-Benachrichtigungen über Ihren Kontostatus und Ihre Kontingentbeschränkungen.
    * Ihre Cloud Foundry-Apps können auf bis zu 256 MB an freiem, sofort verfügbarem Laufzeitspeicher zugreifen.
    * Sie haben die Möglichkeit, mit einem Kubernetes-Cluster mit 2 CPUs und 4 GB RAM zu arbeiten.
-   * Sie können eine Instanz jedes Service im [{{site.data.keyword.Bluemix_notm}}-Katalog einrichten![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window}, für den ein Lite-Plan besteht.
+   * Für jeden Service im [{{site.data.keyword.Bluemix_notm}}-Katalog kann eine Instanz eingerichtet werden![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window}, für den ein Lite-Plan besteht.
    * Nach 10 Tagen ohne Entwicklungstätigkeit werden Ihre Apps inaktiviert. Sie können mit der Arbeit an neuen Apps beginnen, ohne sich Gedanken über begrenzten Speicher machen zu müssen.
    * Nach 30 Tagen ohne Entwicklungstätigkeit werden Ihre Serviceinstanzen mit den Lite-Plänen gelöscht. Das heißt, Sie müssen sich nicht um das Löschen inaktiver Instanzen kümmern, bevor Sie neue Instanzen erstellen.
 
@@ -80,11 +80,11 @@ Wenn Sie Ihr gebührenpflichtiges {{site.data.keyword.Bluemix_notm}}-Konto mit e
 
 ### Nutzungsabhängiges Konto
 
-Mit einem nutzungsabhängigen Konto können Sie mehrere Ressourcengruppen erstellen, um Kontingente ohne großen Aufwand zu verwalten und um Informationen zu Abrechnung und Nutzung für eine Gruppe von Ressourcen anzuzeigen.
+Mit einem nutzungsabhängigen Konto können Sie mehrere Ressourcengruppen erstellen, um Kontingente ohne großen Aufwand zu verwalten und um Informationen zu Abrechnung und Nutzung für eine Gruppe von Ressourcen anzuzeigen. 
 
 Ihnen stehen zusätzliche kostenfreie Laufzeit- und Serviceleistungen zur Verfügung. Wenn Sie in Ihrer Nutzung über die gebührenfreien Leistungen hinausgehen, erhalten Sie eine {{site.data.keyword.Bluemix_notm}}-Rechnung für den Monat. Die Rechnung wird in USD ausgestellt und enthält die Details zu Ihren Ressourcengebühren.
 
-In vielen Ländern und Regionen können Sie sich für ein nutzungsabhängiges Konto über die {{site.data.keyword.Bluemix_notm}}-Konsole anmelden. Akzeptieren Sie nach der Angabe Ihrer Abrechnungs- und Kreditkarteninformationen die Vertragsbedingungen und übergeben Sie Ihre Anforderung. Anschließend wird Ihre Kreditkarte geprüft. Es wird auch eine Bestätigungs-E-Mail für die Kontoinformationen gesendet. Einige Minuten nach Empfang der Bestätigungs-E-Mail können Sie zur Konsole zurückkehren, um mit der Erstellung Ihrer Apps fortzufahren.
+In vielen Ländern und Regionen können Sie sich für ein nutzungsabhängiges Konto über die {{site.data.keyword.Bluemix_notm}}-Konsole anmelden. Akzeptieren Sie nach der Angabe Ihrer Abrechnungs- und Kreditkarteninformationen die Vertragsbedingungen und übergeben Sie Ihre Anforderung. Es wird eine Überprüfung Ihrer Kreditkarte durchgeführt. Es wird auch eine Bestätigungs-E-Mail für die Kontoinformationen gesendet. Einige Minuten nach Empfang der Bestätigungs-E-Mail können Sie zur Konsole zurückkehren, um mit der Erstellung Ihrer Apps fortzufahren.
 
 Wenn Ihre Onlineanforderung für Ihr Land oder Ihre Region nicht verarbeitet werden kann, wenden Sie sich an den {{site.data.keyword.Bluemix_notm}}-Vertrieb. Verwenden Sie dazu den Link auf der
 [{{site.data.keyword.Bluemix_notm}}-Support-Seite ![Symbol für externen Link](../icons/launch-glyph.svg)](http://ibm.biz/bluemixsupport){: new_window}.
@@ -93,7 +93,7 @@ Sie können Ihr Konto für nutzungsabhängige Zahlung jederzeit in ein Abonnemen
 
 ### Abonnementkonto
 
-Mit einem Abonnementkonto können Sie mehrere Ressourcengruppen erstellen, um Kontingente ohne großen Aufwand zu verwalten und um Informationen zu Abrechnung und Nutzung für eine Gruppe von Ressourcen anzuzeigen.
+Mit einem Abonnementkonto können Sie mehrere Ressourcengruppen erstellen, um Kontingente ohne großen Aufwand zu verwalten und um Informationen zu Abrechnung und Nutzung für eine Gruppe von Ressourcen anzuzeigen. 
 
 Sie verpflichten sich zu einem Mindestausgabebetrag pro Monat und erhalten einen Abonnementrabatt, der auf diese Mindestgebühr angewendet wird. Außerdem müssen Sie jede Nutzung bezahlen, die über den Mindestausgabebetrag hinausgeht.
 
