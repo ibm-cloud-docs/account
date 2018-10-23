@@ -16,13 +16,14 @@ lastupdated: "2018-08-14"
 # Tipos de Conta
 {: #accounts}
 
-É possível começar a construir no {{site.data.keyword.Bluemix}} de graça. Quando estiver pronto para crescer, faça upgrade e pague somente pelo que você usar além dos abonos grátis. O {{site.data.keyword.Bluemix}} tem quatro tipos de contas diferentes para sua escolha: Lite, Pré-paga, Assinatura e Promocional. É possível usar qualquer um dos tipos de contas para começar a usar o {{site.data.keyword.Bluemix_notm}} - basta escolher aquele que se ajuste melhor às suas necessidades.
+É possível começar a construir no {{site.data.keyword.Bluemix}} de graça. Quando você estiver pronto para crescer, faça upgrade e pague somente pelo uso que ultrapassa os abonos grátis. O {{site.data.keyword.Bluemix}}
+tem quatro tipos de contas diferentes: Lite, Pré-pago, Assinatura e Promo. Escolha aquele que melhor atender às suas necessidades.
 {:shortdesc}
 
 ## Comparação de conta
 {: #compare}
 
-A tabela a seguir fornece uma comparação das contas Lite, Pré-paga e de Assinatura. Para obter mais informações sobre cada conta, consulte as seções a seguir.
+A tabela a seguir fornece uma comparação das contas Lite, Pré-paga e Assinatura. 
 
 |  | Lite  | Pré-paga | Inscrição |
 |--------------------|--------------------|--------------------|--------------------|
@@ -40,16 +41,17 @@ A tabela a seguir fornece uma comparação das contas Lite, Pré-paga e de Assin
 ## Conta Lite
 {: #liteaccount}
 
-Inscreva-se para uma conta Lite grátis para construir apps e explorar serviços com planos grátis selecionados que são denominados Lite e exibidos com uma tag Lite ![tag Lite](../icons/Lite.svg) no console do {{site.data.keyword.Bluemix_notm}}. Sua conta Lite não expira e seu cartão de crédito não é necessário.
+Inscreva-se para uma conta Lite grátis para construir os apps e explorar os serviços com os planos grátis
+selecionados exibidos com uma tag Lite ![tag Lite](../icons/Lite.svg) no console do {{site.data.keyword.Bluemix_notm}}. Sua conta Lite não expira e seu cartão de crédito não é necessário.
 
-Você tem acesso a um único grupo de recursos que é criado e denominado `Default`. Todas as suas instâncias de serviços que são gerenciadas pelo {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) são incluídas automaticamente nesse grupo de recursos. É possível atualizar o nome desse grupo de recursos a qualquer momento. Consulte [Renomeando um grupo de recursos](/docs/admin/resourcegroups.html#renaming-a-resource-group) para obter as etapas detalhadas.
+Você tem acesso a um único grupo de recursos criado para você e denominado `Default`. Todas as suas instâncias de serviços que são gerenciadas pelo {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) são incluídas automaticamente nesse grupo de recursos. É possível atualizar o nome desse grupo de recursos a qualquer momento. Consulte [Renomeando um grupo de recursos](/docs/admin/resourcegroups.html#renaming-a-resource-group) para obter as etapas detalhadas.
 
 Cada grupo de recursos é livre. Ao criar uma conexão entre um serviço gerenciado pelo IAM e um app Cloud Foundry, você cria um alias, que é uma instância de serviço, que conta para sua cota. Consulte [O que é um alias?](/docs/manageapps/connecting_apps.html#what_is_alias)
 {: tip}
 
 ### O que está disponível?
 
-Você pode estar querendo saber o que é oferecido em uma conta Lite. Confira a lista a seguir de recursos-chave:
+Você pode estar se perguntando o que uma conta Lite oferece. Confira a lista a seguir de recursos-chave:
 
    * A conta é grátis, nenhum cartão de crédito é necessário.
    * A conta nunca expira.
@@ -58,9 +60,9 @@ Você pode estar querendo saber o que é oferecido em uma conta Lite. Confira a 
    * Você recebe notificações por e-mail sobre o status da conta e limites de cota.
    * Seus apps Cloud Foundry podem acessar até 256 MB de memória instantânea de tempo execução grátis.
    * É possível trabalhar com um cluster do Kubernetes com 2 CPUs e 4 GB de RAM.
-   * É possível provisionar uma instância de qualquer serviço no catálogo do [{{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} que tenha um plano Lite.
-   * Depois de 10 dias sem atividade de desenvolvimento, seus apps serão suspensos. É possível começar a trabalhar em novos apps sem ter que se preocupar com atingir os limites de cota de memória.
-   * Depois de 30 dias sem atividade de desenvolvimento, suas instâncias de serviço com planos Lite serão excluídas. Dessa forma, você não precisa gerenciar a exclusão de instâncias inativas antes de criar novas.
+   * É possível ter uma instância de qualquer serviço no catálogo do [{{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://console.bluemix.net/catalog/?search=label:lite%20lite){: new_window} que tenha um plano Lite.
+   * Depois de 10 dias sem atividade de desenvolvimento, seus apps serão suspensos. É possível começar a trabalhar em novos apps sem ter que se preocupar com a obtenção de limites de cota de memória.
+   * Depois de 30 dias sem atividade de desenvolvimento, suas instâncias de serviço com planos Lite serão excluídas. Dessa forma, não é necessário gerenciar a exclusão de instâncias inativas antes da criação de novas.
 
 ## Contas faturáveis
 {: #billableacts}
@@ -80,7 +82,8 @@ Se você vincular sua conta faturável do {{site.data.keyword.Bluemix_notm}} a u
 
 ### Conta pré-paga
 
-Com uma conta pré-paga, é possível criar múltiplos grupos de recursos para gerenciar facilmente a cota e visualizar o uso de faturamento para um conjunto de recursos.
+Com uma conta Pré-paga, é possível criar vários grupos de recursos para gerenciar facilmente a cota e
+visualizar o uso do faturamento para um conjunto de recursos.
 
 Você é elegível para abonos grátis de tempo de execução e serviço. Se você usar além do abono grátis, receberá uma fatura mensal do {{site.data.keyword.Bluemix_notm}}. A fatura será em dólares dos Estados Unidos (USD) e detalhará suas cobranças de recursos.
 
@@ -92,7 +95,8 @@ Se sua solicitação on-line não puder ser processada para seu país ou sua reg
 
 ### Conta Assinatura
 
-Com uma conta Assinatura, é possível criar múltiplos grupos de recursos para gerenciar facilmente a cota e visualizar o uso de faturamento para um conjunto de recursos.
+Com uma conta Assinatura, é possível criar vários grupos de recursos para gerenciar facilmente a cota e
+visualizar o uso do faturamento para um conjunto de recursos.
 
 Você confirma uma quantia de gasto mínimo cada mês e recebe um desconto na assinatura que será aplicado a esse encargo mínimo. Você também paga por qualquer uso que exceda a quantia mínima de gasto.
 
