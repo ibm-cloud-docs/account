@@ -15,6 +15,7 @@ Managing your account
         adminpublic.md
         index.md
         profile.md
+        account_settings.md
 
     change-plan.md
     softlayerlink.md
