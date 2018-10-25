@@ -18,7 +18,7 @@ lastupdated: "2018-10-23"
 If you are an account owner, determine the account settings that you want to enable as you are setting up your {{site.data.keyword.Bluemix}} account. 
 {:shortdesc}
 
-## Setting the EU Supported setting
+## Enabling the EU Supported setting
 {: #bill_eusupported}
 
 You can choose to limit support of any {{site.data.keyword.Bluemix_notm}} resources that are used in Europe to support teams that reside in Europe. You might choose to enable the EU Supported setting, for example, if you use resources to process personal data for European citizens. The EU Supported option is available with all paid plans.
@@ -38,7 +38,7 @@ If you're using {{site.data.keyword.BluSoftlayer_full}} infrastructure and you d
 
 After you enable the EU Supported setting, you can use the **EU Supported** tag to search the catalog for offerings that have EU-supported plans.  
 
-## Enabling the HIPPA Supported option
+## Enabling the HIPPA Supported setting
 
 You can choose to enable your account to run sensitive workloads that are regulated under the U.S. Health Insurance Portability and Accountability Act (HIPPA). 
 
