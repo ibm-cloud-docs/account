@@ -21,15 +21,7 @@ Best practices provide the basic building blocks for success before you start cr
 The following best practices focus on using IAM-enabled services. Currently, not all services in {{site.data.keyword.cloud}} are IAM-enabled. If a service instance in your account belongs to a Cloud Foundry org and space, IAM policies, resource groups, and access groups don't apply to it. You can still use both Cloud Foundry orgs and spaces and resource groups in your account, but you must assign users access to those resources separately. For information about working with Cloud Foundry orgs and spaces, see [Adding orgs and spaces](/docs/account/orgs_spaces.html#orgsspacesusers).
 {: tip}
 
-## Setting up your resource groups
-{: #setting-up-rgs}
-
-Resource groups are a logical container for organizing your IAM-enabled resources. All services that are managed by using IAM access control belong to a resource group. You assign a resource to its resource group when you create it from the catalog. You can't change the resource group assignment after you set it, which is why it's important to set up some of your resource groups now.
-
-If you have a trial or Lite account, you use the default resource group and can't create any additional ones.
-{: tip}
-
-### Defining a resource group strategy
+## Defining a resource group strategy
 {: #resource-group-strategy}
 
 Since a resource group is a logical container for resources, using one resource group per project environment is a good starting point. This strategy enables administrators to control and see resource usage at the project environment level. For example, a typical project has development, test and production environments. Therefore, a project that is named `CustApp` would have the following resource groups:
@@ -46,6 +38,14 @@ If you have a Pay-As-You-Go or Subscription account, you can create additional r
 2. Click **Create a resource group**.
 3. Enter the name of your resource group.
 4. Click **Add**.
+
+## Setting up your resource groups
+{: #setting-up-rgs}
+
+Resource groups are a logical container for organizing your IAM-enabled resources. All services that are managed by using IAM access control belong to a resource group. You assign a resource to its resource group when you create it from the catalog. You can't change the resource group assignment after you set it, which is why it's important to set up some of your resource groups now.
+
+If you have a trial or Lite account, you use the default resource group and can't create any additional ones.
+{: tip}
 
 ## Adding resources to a resource group
 {: #adding-resources}
