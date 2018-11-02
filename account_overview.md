@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-07-19"
+lastupdated: "2018-10-08"
 
 ---
 
@@ -16,9 +16,9 @@ lastupdated: "2018-07-19"
 # Account hierarchy
 {: #overview}
 
-Your {{site.data.keyword.Bluemix}} account includes many interacting components and systems. The following diagram and explanation for each component are intended to help you understand how certain components are interrelated, or connected, and how access works across the account. 
+Your {{site.data.keyword.Bluemix}} account includes many interacting components and systems. The following diagram and explanation for each component are intended to help you understand how certain components are connected and how access works across the account. 
 
-<a href="https://console.stage1.bluemix.net/docs/api/content/account/images/account_diagram.svg">
+<a href="https://console.bluemix.net/docs/api/content/account/images/account_diagram.svg">
   <img src="images/account_diagram.svg" alt="account diagram">
 </a>
 
@@ -26,7 +26,7 @@ Within the diagram, there are two main concepts for the components in the accoun
 
 <dl>
 <dt>Users</dt>
-<dd>Users are invited to the account and given access to the different resources within the account.</dd>
+<dd>Users are invited to the account and given access to the resources in the account.</dd>
 <dt>Service IDs</dt>
 <dd>A service ID identifies a service or application similar to how a user ID identifies a user. You can use a service ID that you create to enable an application outside of {{site.data.keyword.Bluemix_notm}} access to your {{site.data.keyword.Bluemix_notm}} services. You can assign specific access policies to the service ID that restrict permissions for using specific services, or even combine permissions for accessing different services. Since service IDs are not tied to a specific user, if a user happens to leave an organization and is deleted from the account, the service ID remains ensuring that your application or service stays up and running. FOr more information, see [Creating and working with service IDs](/docs/iam/serviceid.html#serviceids).</dd>
 <dt>Service instances or resources</dt>
