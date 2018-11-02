@@ -21,7 +21,7 @@ Best practices provide the basic building blocks for success before you start cr
 The following best practices focus on using IAM-enabled services. Currently, not all services in {{site.data.keyword.cloud}} are IAM-enabled. If a service instance in your account belongs to a Cloud Foundry org and space, IAM policies, resource groups, and access groups don't apply to it. You can still use both Cloud Foundry orgs and spaces and resource groups in your account, but you must assign users access to those resources separately. For information about working with Cloud Foundry orgs and spaces, see [Adding orgs and spaces](/docs/account/orgs_spaces.html#orgsspacesusers).
 {: tip}
 
-## Defining a resource group strategy
+## What is a good resource group strategy?
 {: #resource-group-strategy}
 
 Since a resource group is a logical container for resources, using one resource group per project environment is a good starting point. This strategy enables administrators to control and see resource usage at the project environment level. For example, a typical project has development, test and production environments. Therefore, a project that is named `CustApp` would have the following resource groups:
