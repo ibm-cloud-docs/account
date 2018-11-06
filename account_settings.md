@@ -4,7 +4,7 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-10-23" 
+lastupdated: "2018-11-06" 
 
 ---
 
@@ -38,9 +38,9 @@ If you're using {{site.data.keyword.BluSoftlayer_full}} infrastructure and you d
 
 After you enable the EU Supported setting, you can use the **EU Supported** tag to search the catalog for offerings that have EU-supported plans.  
 
-## Enabling the HIPPA Supported setting
+## Enabling the HIPAA Supported setting
 
-You can choose to enable your account to run sensitive workloads that are regulated under the U.S. Health Insurance Portability and Accountability Act (HIPPA). 
+You can choose to enable your account to run sensitive workloads that are regulated under the U.S. Health Insurance Portability and Accountability Act (HIPAA). 
 
 1. Go to **Manage** > **Billing and usage** > **Billing** in the console.
 2. Click **On**. 
