@@ -5,7 +5,7 @@
 계정 관리
 
     {: .navgroup id="learn"}
-    [사용자, 팀, 애플리케이션 구성에 대한 우수 사례](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
+    [사용자, 팀, 애플리케이션 구성 우수 사례](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
     account_overview.md
     {: .navgroup-end}
 
@@ -15,6 +15,7 @@
         adminpublic.md
         index.md
         profile.md
+        account_settings.md
 
     change-plan.md
     softlayerlink.md
