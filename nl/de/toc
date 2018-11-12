@@ -11,10 +11,11 @@ Eigenes Konto verwalten
 
     {: .navgroup id="howto"}
     {: .topicgroup}
-    Kontoeinrichtung
+    Account setup
         adminpublic.md
         index.md
         profile.md
+        account_settings.md
 
     change-plan.md
     softlayerlink.md
