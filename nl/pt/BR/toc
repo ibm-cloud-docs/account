@@ -11,10 +11,11 @@ Gerenciando sua conta
 
     {: .navgroup id="howto"}
     {: .topicgroup}
-    Configuração de conta
+    Configuração da conta
         adminpublic.md
         index.md
         profile.md
+        account_settings.md
 
     change-plan.md
     softlayerlink.md
