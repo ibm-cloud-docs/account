@@ -21,7 +21,7 @@ lastupdated: "2018-09-25"
 # Troubleshooting for managing accounts
 {: #managingaccounts}
 
-General problems with managing your account might include different apps share the same domain name, or administrators can't view all organizations. In many cases, you can recover from these problems by following a few easy steps.
+General problems with managing your account might include different apps share a domain name, or administrators can't view all organizations. In many cases, you can recover from these problems by following a few easy steps.
 {:shortdesc}
 
 ## Unable to access a different {{site.data.keyword.Bluemix_notm}} region
@@ -33,7 +33,7 @@ You receive an error message when you try to create a new {{site.data.keyword.Bl
 This is likely because you are using a Lite account, which supports development in one public region only. You select the {{site.data.keyword.Bluemix_notm}} public region in which you want to work when the account is first set up.
 {: tsCauses}
 
-If you have a Lite account, you can upgrade to a billable account to access additional regions. Go to the **Manage > Billing and Usage > Billing** page in the console, and click **Add Credit Card**. On the **Billing** page, you can also check if you have a Lite account.
+If you have a Lite account, you can upgrade to a billable account to access more regions. Go to the **Manage > Billing and Usage > Billing** page in the console, and click **Add Credit Card**. On the **Billing** page, you can also check whether you have a Lite account.
 {: tsResolve}
 
 ## Unable to create new organization
@@ -45,7 +45,7 @@ You receive an error message when you try to create a new organization.
 This is likely because you are using a Lite account, which supports development in one organization only. You create the organization when your account is first set up.
 {: tsCauses}
 
-If you have a Lite account, you can upgrade to a billable account to access additional organizations. Go to the **Manage > Billing and Usage > Billing** page in the console, and click **Add Credit Card**. On the **Billing** page, you can also check if you have a Lite account.
+If you have a Lite account, you can upgrade to a billable account to access more organizations. Go to the **Manage > Billing and Usage > Billing** page in the console, and click **Add Credit Card**. On the **Billing** page, you can also check whether you have a Lite account.
 {: tsResolve}
 
 ## Unable to create Lite plan instance
@@ -59,7 +59,7 @@ You receive the following error message when you try to create a Lite plan insta
 There is a limit of one instance per Lite plan instance to allow us to keep these plans free.
 {: tsCauses}
 
-You can create additional instances of the service by selecting one of the billable service plans, which are available in the billable accounts. To upgrade to a billable account from the console, go to the **Manage > Billing and Usage > Billing** page, and click **Add Credit Card**.
+You can create more instances of the service by selecting one of the billable service plans, which are available in the billable accounts. To upgrade to a billable account from the console, go to the **Manage > Billing and Usage > Billing** page, and click **Add Credit Card**.
 {: tsResolve}
 
 If you do not want to upgrade from a Lite account and are no longer using your existing Lite service instance, you can delete the existing Lite plan instance from the dashboard and then create a new instance.
@@ -70,10 +70,10 @@ If you do not want to upgrade from a Lite account and are no longer using your e
 You are unable to deploy apps and get an error stating that you have exceeded your organization's memory limit.
 {: tsSymptoms}
 
-In a Lite account your Cloud Foundry apps can use up to 256 MB of instantaneous runtime memory. In billable accounts, there is a 2GB memory limit.
+In a Lite account, your Cloud Foundry apps can use up to 256 MB of instantaneous runtime memory. In billable accounts, there is a 2 GB memory limit.
 {: tsCauses}
 
-If you are using a Lite account, you can get additional memory by upgrading to a billable account. Go to the **Manage > Billing and Usage > Billing** page in the console, and click **Add Credit Card**.
+If you are using a Lite account, you can get more memory by upgrading to a billable account. Go to the **Manage > Billing and Usage > Billing** page in the console, and click **Add Credit Card**.
 {: tsResolve}
 
 If you do not want to upgrade from a Lite account but have some idle apps, you can delete the idle apps to free up some runtime memory.
@@ -155,10 +155,10 @@ To create a space, use one of the following methods:
   * In the Cloud Foundry command line interface, type `cf create-space <space_name> -o <organization_name>`.
 
 
-## Apps share the same domain name
+## Apps share a domain name
 {: #ts_domain_diff}
 
-You might notice that several apps share the same URL in {{site.data.keyword.Bluemix_notm}}.
+You might notice that several apps share a URL in {{site.data.keyword.Bluemix_notm}}.
 
 This problem might happen when you assign the same URL route for different apps in a space.
 {: tsCauses}
@@ -180,7 +180,7 @@ As an administrator, you can't see all the organizations by using the {{site.dat
 This is a limitation of the {{site.data.keyword.Bluemix_notm}} user interface.
 {: tsCauses}
 
-You can use commands such as `cf orgs`, `cf create-org`, and `cf delete-org` from the Cloud Foundry command line interface to manage all the organizations. For a full list of cf commands, enter `cf help`.
+You can use commands such as `cf orgs`, `cf create-org`, and `cf delete-org` from the Cloud Foundry command line interface to manage all the organizations. For a full list of Cloud Foundry commands, enter `cf help`.
 {: tsResolve}
 
 ## Credit card can't be added
@@ -191,13 +191,13 @@ You can't submit your credit card information to convert your Lite account to a 
 The **Submit** button on the Add credit card page is disabled.
 {: tsSymptoms}
 
-This problem happens when your information isn't filled in correctly on the Add credit card page.
+This problem happens when your information isn't completed correctly on the Add credit card page.
 {: tsCauses}
 
 
 Complete the following steps:
 {: tsResolve}
 
-  1. On the Add credit card page, fill in all the required fields in the contact information, contact address, and billing address sections.
+  1. On the Add credit card page, complete all the required fields in the contact information, contact address, and billing address sections.
   2. Select **I have read and agree to IBM's Terms and Conditions**, then click **Submit**. The **Select a payment method** section is displayed.
-  3. Enter your credit card number, the expiration date, and the security code. Then click **Submit**.
+  3. Enter your credit card number, the expiration date, and the security code. Then, click **Submit**.

@@ -41,12 +41,12 @@ The password that you used to log in to {{site.data.keyword.Bluemix_notm}} is no
 
 Use one of the following solutions:
 {: tsResolve}
- * Enter the correct password. To check whether your IBMid and password are valid, you can go to the My IBM profile page, click **Log in** and enter your IBMid and password on the Log in page.
- * If you forgot your password, click **Forgot your password** to reset your password. Then return to the [{{site.data.keyword.Bluemix_notm}} console](https://console.{DomainName}) or the [customer portal](https://control.softlayer.com) and log in again.
- * If you forgot your IBMid or continue to have problems with your password, contact the Worldwide IBM Registration Help Desk for help.
- * To obtain a valid IBMid and password, go to the My IBM profile page, then click **Register**.
+ * Enter the correct password. To check whether your IBMid and password are valid, you can go to the My IBM profile page, click Log in, and enter your IBMid and password on the Log in page.
+ * If you forgot your password, click **Forgot your password** to reset your password. Then, return to the [{{site.data.keyword.Bluemix_notm}} console](https://console.{DomainName}) or the [customer portal](https://control.softlayer.com) and log in again.
+ * If you forgot your IBMid or continue to have problems with your password, contact the worldwide IBM Registration Help Desk for help.
+ * To get a valid IBMid and password, go to the My IBM profile page, then click **Register**.
 
-**Note:**  If you are on the Sign in to IBM page and the login process is disrupted for any reason (for example, resetting your password), return to the [{{site.data.keyword.Bluemix_notm}} console](https://console.{DomainName}) or the [customer portal](https://control.softlayer.com) and start the log in process again.
+**Note:**  If you are on the sign-in page and the login process is disrupted for any reason (for example, resetting your password), return to the [{{site.data.keyword.Bluemix_notm}} console](https://console.{DomainName}) or the [customer portal](https://control.softlayer.com) and start the log in process again.
 
 
 ## Invalid login credentials
@@ -57,15 +57,15 @@ When you log in using your IBMid, the following message is displayed:
 
 `Invalid login credentials provided. If you have an IBMid associated with your account, please log in here`
 
-* You switched to an IBMid, but you tried to log in through the [customer portal](https://control.softlayer.com) using your previous username and password.
+* You switched to an IBMid, but you tried to log in through the [customer portal](https://control.softlayer.com) by using your previous user name and password.
 {: tsCauses}
 
-* You tried to log in through the [customer portal](https://control.softlayer.com), but you entered your IBMid and password in the Username and Password fields.
+* You tried to log in through the [customer portal](https://control.softlayer.com), but you entered your IBMid and password in the user name and password fields.
 
 Click **log in here** in the message, or go to the IBMid Account Login section and click **Log in with IBMid**.
 {: tsResolve}
 
-Don't use the **Username** and **Password** fields that you used with your previous ID.
+Don't use the **user name** and **Password** fields that you used with your previous ID.
 
 
 ## Unrecognized IBMid or email
@@ -76,7 +76,7 @@ When you log in to the {{site.data.keyword.Bluemix_notm}} console, the following
 
 `We didn't recognize this IBMid or email.`
 
-You tried to log in to the {{site.data.keyword.Bluemix_notm}} console, but did not use a valid IBMid. For example, you did not enter a fully qualified email address for the IBMid, or you tried to use a previous username and password.
+You tried to log in to the {{site.data.keyword.Bluemix_notm}} console, but did not use a valid IBMid. For example, you did not enter a fully qualified email address for the IBMid, or you tried to use a previous user name and password.
 {: tsCauses}
 
 You must have a valid IBMid and password to log in to {{site.data.keyword.Bluemix_notm}}.
@@ -98,13 +98,13 @@ When you log in using your IBMid, the following message is displayed:
 You logged in from the [customer portal](https://control.softlayer.com) with a valid IBMid, but you aren't switched to IBMid authentication from the customer portal.
 {: tsCauses}
 
-Complete the following checks, as appropriate:
+Complete the following checks:
 {: tsResolve}
  * Contact your master user or account administrator to check that you are enabled to switch to IBMid authentication.
  * Ensure that you complete the Switch to IBMid step. See [Switching to IBMid](/docs/account/softlayerlink.html).
  * Ensure that you follow the actions in the **Associate your user ID with an IBMid** email. Check your inbox and your junk mail folder for the email. To get the email again, for example, if it has expired, go to the Edit User Profile page in the customer portal and click **Resend Email**. Alternatively, contact [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/bluemixsupport.com){: new_window}.
 
-Depending on how your account is set up, some of these log in options might apply to you:
+Depending on how your account is set up, some log in options might apply to you:
  * SoftLayer users with SoftLayer IDs must log in through the [customer portal](https://control.softlayer.com).
  * SoftLayer users with an IBMid and with or without a linked {{site.data.keyword.Bluemix_notm}} account can log in through the [customer portal](https://control.softlayer.com) to open the customer portal or through the [{{site.data.keyword.Bluemix_notm}} console](https://console.{DomainName}) to open the Infrastructure dashboard.
 
@@ -117,13 +117,13 @@ When you log in to {{site.data.keyword.Bluemix_notm}}, the following message is 
 
 `You have reached this page because your authentication was successful, however, this IBMid is not associated with any {{site.data.keyword.Bluemix_notm}} accounts.`
 
-You logged in from the [{{site.data.keyword.Bluemix_notm}} console](https://console.{DomainName}) with a valid IBMid, but you don't have an {{site.data.keyword.Bluemix_notm}} account created yet.
+You logged in from the [{{site.data.keyword.Bluemix_notm}} console](https://console.{DomainName}) with a valid IBMid, but you don't have an {{site.data.keyword.Bluemix_notm}} account that is created yet.
 {: tsCauses}
 
-To create an {{site.data.keyword.Bluemix_notm}} account, follow the sign up process.
+To create an {{site.data.keyword.Bluemix_notm}} account, follow the sign-up process.
 {: tsResolve}
 
-Depending on how your account is set up, some of these log in options might apply to you:
+Depending on how your account is set up, some log in options might apply to you:
  * {{site.data.keyword.Bluemix_notm}} users without a linked account must log in through the {{site.data.keyword.Bluemix_notm}} console.
  * {{site.data.keyword.Bluemix_notm}} users with a linked account can log in through the [{{site.data.keyword.Bluemix_notm}} console](https://console.{DomainName}) or the [customer portal](https://control.softlayer.com).
 
@@ -149,7 +149,7 @@ When you log in to {{site.data.keyword.Bluemix_notm}}, authenticating with IBMid
 There might be a problem with the IBMid authentication service.
 {: tsCauses}
 
-Check if you can login to the [IBM homepage ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/us-en/){: new_window}. If you can, then it is an application problem and you can try again later. If you can't login to that page, then contact the [Help Desk ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}.
+Check whether you can log in to the [IBM home page ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/us-en/){: new_window}. If you can, then it is an application problem and you can try again later. If you can't log in to that page, then contact the [Help Desk ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}.
 {: tsResolve}
 
 
@@ -166,7 +166,7 @@ After you register for an {{site.data.keyword.Bluemix_notm}} Lite account, you m
 After you register for an {{site.data.keyword.Bluemix_notm}} Lite account, you receive a confirmation email. You must click the link that is in the confirmation email to complete the registration process.
 {: tsCauses}
 
-The confirmation email is sent to the email address that you provided. Check your inbox and your spam folder. If you haven't received the confirmation email, contact [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/bluemixsupport.com){: new_window}.  
+The confirmation email is sent to the email address that you provided. Check your inbox and your spam folder. If you didn't receive the confirmation email, contact [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/bluemixsupport.com){: new_window}.  
 {: tsResolve}
 
 ## {{site.data.keyword.Bluemix_notm}} page can't be loaded
