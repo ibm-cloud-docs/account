@@ -33,9 +33,9 @@ For more information about managing orgs and spaces, see [Adding orgs and spaces
 ## Can I move an org to another account?
 {: #move-org-diff-account}
 
-At this time you can't migrate an org to a different account. 
+You can't migrate an org to a different account. 
 
-## What can I do if I get an error when creating my account?
+## What can I do if I get an error when I'm creating my account?
 {: #account-error}
 
 You can open a support ticket if you encounter an error when you try to create your account.
@@ -43,7 +43,7 @@ You can open a support ticket if you encounter an error when you try to create y
 * To open a support ticket from the Support Center, click **Open a ticket** from the Get help section.
 * To open a support ticket from the IBM Cloud console menu bar, click **Support** &gt; **Add ticket**.
 
-After the support ticket is opened, you will receive an email notification momentarily for the ticket. Follow the instructions in the email for further communication on the issue.
+After the support ticket is opened, you'll receive an email notification momentarily for the ticket. Follow the instructions in the email for further communication on the issue.
 
 ## Which Cloud Foundry regions can I use?
 {: #whichregions}
@@ -58,22 +58,22 @@ A Lite plan is a free quota-based service plan. You can use a service Lite plan 
 ## What happens when my Lite plan instance reaches the monthly quota?
 {: #monthlyquota}
 
-Reaching any quota limit for Lite plan instances suspends the service for that month. Quota limits are per org, not per instance. New instances created in the same org reflect any usage from previous instances. The quota limits reset on the 1st of every month.
+Reaching any quota limit for Lite plan instances suspends the service for that month. Quota limits are per org, not per instance. New instances that are created in the same org reflect any usage from previous instances. The quota limits reset on the first of every month.
 
 ## How many resource groups, orgs, or spaces can I create?
 {: #resourcelimit}
 
-If you have a billable account, there is not a limit on the number of resource groups, orgs, or spaces that you can create within your account. However, if you have a Lite account, you are limited to one org and one resource group.
+If you have a billable account, there isn't a limit on the number of resource groups, orgs, or spaces that you can create within your account. However, if you have a Lite account, you're limited to one org and one resource group.
 
 ## How do I upgrade or change my account type?
 {: #changeacct}
 
-* To convert your 30-day trial to a Lite account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg). After confirming eligibility, the Sales team shares a unique link that you can use to try to convert your account. Successful conversion is not guaranteed as Lite accounts are not entirely compatible with 30-day trials.  
+* To convert your 30-day trial to a Lite account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg). After confirming eligibility, the Sales team shares a unique link that you can use to try to convert your account. Successful conversion isn't guaranteed as Lite accounts aren't entirely compatible with 30-day trials.  
 * To upgrade from a Lite to a Pay-As-You-Go account, go to **Manage > Billing and Usage > Billing** and click **Add Credit Card**.
 * To upgrade from a Lite to a Subscription account, go to **Manage > Billing and Usage > Billing** and click **Learn more**.
 * To convert your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg).
 
-## If I upgrade my Lite account, can I continue using my existing instances?
+## If I upgrade my Lite account, can I continue by using my existing instances?
 {: #nochange}
 
 Yes, you can upgrade to a billable account and continue to use the instances you created with your Lite account.
@@ -86,7 +86,7 @@ You can easily update the payment method that's associated with your billable ac
 ## How do I reset my password? 
 {: #reset-password}
 
-Depending on which password you are looking to reset, review the following options: 
+Depending on which password you're looking to reset, review the following options: 
 
 * If you have a SoftLayer account ID and password, see [Managing Passwords](/docs/customer-portal/cpmanacctmanpw.html#cp_reset-your-password). 
 * To reset your VPN password, see [Update a User's VPN Password](/docs/infrastructure/iaas-vpn/update-password.html#update-a-user-s-vpn-password).
@@ -100,7 +100,7 @@ In the console, go to the **Manage > Billing and Usage > Billing** page and clic
 ## How do I delete my account?
 {: #deleteaccount}
 
-You must contact IBM Cloud Support to open a support ticket and request that your account be deleted. If you have data that is associated with your old account that you want to save and move to a new account, include this information in your email.
+You must contact IBM Cloud Support to open a support ticket and request to delete your account. If you have data that is associated with your old account that you want to save and move to a new account, include this information in your email.
 
 ## Why is my account deactivated?
 {: #account-deactivated}
@@ -124,7 +124,7 @@ You can also check out a number of helpful resources that are available in the [
 ## After I link my account, how do I log in?
 {: #al_login}
 
-After you link your account, use your your IBMid to log in to the {{site.data.keyword.Bluemix}} console.
+After you link your account, use your IBMid to log in to the {{site.data.keyword.Bluemix}} console.
 
 ## After I link my account, what's the impact on my support?
 {: #al_support}
@@ -134,18 +134,18 @@ After you link your account, you keep the same level of support when you add {{s
 ## Are there other ways to get help with linking my account? 
 {: #al_morehelp}
 
-  1. See the [Steps to Link your IaaS and PaaS Accounts blog](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/) for helpful information.
+  1. For more information, see [Steps to Link your IaaS and PaaS Accounts blog](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/).
   2. From the {{site.data.keyword.BluSoftlayer_full}} infrastructure customer portal, open a **Sales Live Chat** to ask account questions.
-  3. Open a ticket from the {{site.data.keyword.BluSoftlayer_full}} infrastructure customer portal.  Select **Support** > **Add Ticket** and then, in the **Subject** field, select **Accounting Request** to route your account question to the correct support team.
+  3. Open a ticket from the {{site.data.keyword.BluSoftlayer_full}} infrastructure customer portal. Select **Support** > **Add Ticket** and then, in the **Subject** field, select **Accounting Request** to route your account question to the correct support team.
 
-If you are the account master, see [Working with users](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) for more information about managing users.
+If you're the account master, for more information about managing users, see [Working with users](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage).
 
-## How do I link my account if I have multiple accounts?
+## How do I link my account if I have several accounts?
 {: #al_multacct}
 
-If you have multiple SoftLayer accounts, you must link the accounts that have a matching {{site.data.keyword.Bluemix_notm}} platform account, and an accompanying IBMid.
+If you have several SoftLayer accounts, you must link the accounts that have a matching {{site.data.keyword.Bluemix_notm}} platform account, and an accompanying IBMid.
 
-If you do not have a matching {{site.data.keyword.Bluemix_notm}} platform account, and an accompanying IBMid account, a new SoftLayer account can be created to link the accounts.
+If you don't have a matching {{site.data.keyword.Bluemix_notm}} platform account, and an accompanying IBMid account, a new SoftLayer account can be created to link the accounts.
 
 ## Are there incentives for linking my accounts? 	
 {: #al_incent}
@@ -154,7 +154,7 @@ When you link your accounts, you can use a $200 promotional credit to try {{site
 
 To learn more about the $200 promotional credit, see [Pay-As-You-Go account](/docs/account/index.html#paygo). 
 
-## How do I switch between multiple accounts?
+## How do I switch between several accounts?
 {: #switch-between-accounts}
 
 To switch between accounts, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg), click the **Account** menu, and select another account. 
@@ -167,13 +167,13 @@ You can't switch the owner of an account, but you can change resource owners. To
 ## What does adding {{site.data.keyword.Bluemix_notm}} platform services to my SoftLayer account mean? 	
 {: #al_owaffslacct}
 
-It means your account has access to all {{site.data.keyword.Bluemix_notm}} platform offerings.  After you add the {{site.data.keyword.Bluemix_notm}} platform offering to your account, your account master will need to enable end user to have access to the offering.
+It means that your account has access to all {{site.data.keyword.Bluemix_notm}} platform offerings.  After you add the {{site.data.keyword.Bluemix_notm}} platform offering to your account, your account master will need to enable user to have access to the offering.
 
-If you are the account master, see [Working with users](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) for more information.
+If you are the account master, for more information, see [Working with users](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage).
 
 ## How does account linking impact my SoftLayer Master Account ID? 	
 {: #al_howaffslmastacct}
 
-You can still use the ID for your SoftLayer account to sign into the {{site.data.keyword.BluSoftlayer_full}} infrastructure customer portal because the {{site.data.keyword.Bluemix_notm}} console is accessible using IBMids.
+You can still use the ID for your SoftLayer account to sign in to the {{site.data.keyword.BluSoftlayer_full}} infrastructure customer portal because the {{site.data.keyword.Bluemix_notm}} console is accessible by using IBMids.
 
 
