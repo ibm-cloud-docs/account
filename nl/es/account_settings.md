@@ -15,7 +15,8 @@ lastupdated: "2018-10-23"
 # Modificación de su configuración de cuenta
 {: #account_settings}
 
-Si es propietario de una cuenta, determine los valores de la cuenta que desea habilitar a medida que configura la cuenta de {{site.data.keyword.Bluemix}}. {:shortdesc}
+Si es propietario de una cuenta, determine los valores de la cuenta que desea habilitar a medida que configura la cuenta de {{site.data.keyword.Bluemix}}.
+{:shortdesc}
 
 ## Habilitación del valor Soporte en la UE
 {: #bill_eusupported}
@@ -26,7 +27,7 @@ Al habilitar el valor Soporte en la UE, se limita el soporte de Nivel 1 y Nivel 
 
 Al habilitar este valor, se permite que los servicios con Soporte en la UE con controles de acceso se aseguraren de que los datos que se almacenan y procesan están restringidos y controlados por el equipo de soporte de IBM en la región de la UE. Si algún experto de {{site.data.keyword.Bluemix_notm}} de fuera de la región europea necesita acceder a estos datos para dar soporte o trabajar en la nube, un miembro del equipo de soporte de la UE revisa la solicitud de acceso. El miembro del equipo de soporte de la UE proporciona el acceso necesario al experto de nube global solo al sistema solicitado, y solo durante un periodo de tiempo específico, tras el que se revoca el acceso. Durante este proceso, los datos siempre están protegidos.
 
-  1. En la consola de {{site.data.keyword.Bluemix_notm}}, vaya a **Gestionar** > **Facturación y utilización** > **Facturación**.   
+  1. En la consola de {{site.data.keyword.Bluemix_notm}}, vaya a **Gestionar** > **Facturación y uso** > **Facturación**.   
   2. Pulse **Activado**.
   3. Después de leer la información sobre la habilitación de este valor, seleccione **Comprendo y acepto estos términos**.
   4. Pulse **Activado**.

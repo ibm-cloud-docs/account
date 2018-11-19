@@ -69,8 +69,8 @@ Si tiene una cuenta facturable, no hay un límite en el número de grupos de rec
 {: #changeacct}
 
 * Para convertir la prueba de 30 días en una cuenta Lite, póngase en contacto con [Ventas de {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg). Una vez confirmada la elegibilidad, el equipo de ventas comparte un enlace exclusivo que puede utilizar para intentar convertir la cuenta. La conversión satisfactoria no está garantizada, ya que las cuentas Lite no son completamente compatibles con las pruebas de 30 días.  
-* Para actualizar de una cuenta Lite a una cuenta de Pago según uso, vaya a **Gestionar > Facturación y utilización > Facturación** y pulse **Añadir tarjeta de crédito**.
-* Para actualizar de una cuenta Lite a una cuenta de Suscripción, vaya a **Gestionar > Facturación y utilización > Facturación** y pulse **Más información**.
+* Para actualizar de una cuenta Lite a una cuenta de Pago según uso, vaya a **Gestionar > Facturación y uso > Facturación** y pulse **Añadir tarjeta de crédito**.
+* Para actualizar de una cuenta Lite a una cuenta de Suscripción, vaya a **Gestionar > Facturación y uso > Facturación** y pulse **Más información**.
 * Para convertir la cuenta de Pago según uso en una cuenta de Suscripción, póngase en contacto con [Ventas de {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg).
 
 ## Si actualizo mi cuenta Lite, ¿puedo continuar utilizando mis instancias existentes?

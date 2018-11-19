@@ -67,8 +67,8 @@ Consulte la siguiente lista con las características principales que están disp
 
 Cuando esté preparado para crecer, puede actualizar su cuenta Lite a una cuenta de pago según uso o a una cuenta de suscripción. 
 
-  * Para actualizar a una cuenta de Pago según uso, vaya a **Gestionar** > **Facturación y utilización ** > **Facturación** en la consola y pulse **Añadir tarjeta de crédito**.
-  * Para actualizar a una cuenta de suscripción, vaya a **Gestionar** > **Facturación y utilización** > **Facturación** en la consola y pulse **Más información**.
+  * Para actualizar a una cuenta de Pago según uso, vaya a **Gestionar** > **Facturación y uso ** > **Facturación** en la consola y pulse **Añadir tarjeta de crédito**.
+  * Para actualizar a una cuenta de suscripción, vaya a **Gestionar** > **Facturación y uso** > **Facturación** en la consola y pulse **Más información**.
 
 ## Cuenta de Pago según uso
 {: #paygo}

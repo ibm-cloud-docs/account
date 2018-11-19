@@ -35,7 +35,7 @@ Puede recibir un mensaje de error al intentar crear una nueva región de {{site.
 Es probable que esto ocurra por estar utilizando una cuenta Lite, que únicamente soporta el desarrollo en una región pública. La región pública de {{site.data.keyword.Bluemix_notm}} en la que desea trabajar se elige cuando se configura la cuenta por primera vez.
 {: tsCauses}
 
-Si tiene una cuenta Lite, puede actualizarla a una cuenta facturable para acceder a más regiones. Vaya a la página **Gestionar > Facturación y utilización > Facturación** en la consola y, a continuación, pulse **Añadir tarjeta de crédito**. En la página **Facturación**, también puede comprobar si tiene una cuenta Lite.
+Si tiene una cuenta Lite, puede actualizarla a una cuenta facturable para acceder a más regiones. Vaya a la página **Gestionar > Facturación y uso > Facturación** en la consola y, a continuación, pulse **Añadir tarjeta de crédito**. En la página **Facturación**, también puede comprobar si tiene una cuenta Lite.
 {: tsResolve}
 
 ## No es posible crear una nueva organización
@@ -47,7 +47,7 @@ Puede recibir un mensaje de error al intentar crear una nueva organización.
 Es probable que esto ocurra por estar utilizando una cuenta Lite, que únicamente da soporte al desarrollo en una organización. La organización la crea cuando configura la cuenta por primera vez.
 {: tsCauses}
 
-Si tiene una cuenta Lite, puede actualizarla a una cuenta facturable para acceder a más organizaciones. Vaya a la página **Gestionar > Facturación y utilización > Facturación** en la consola y, a continuación, pulse **Añadir tarjeta de crédito**. En la página **Facturación**, también puede comprobar si tiene una cuenta Lite.
+Si tiene una cuenta Lite, puede actualizarla a una cuenta facturable para acceder a más organizaciones. Vaya a la página **Gestionar > Facturación y uso > Facturación** en la consola y, a continuación, pulse **Añadir tarjeta de crédito**. En la página **Facturación**, también puede comprobar si tiene una cuenta Lite.
 {: tsResolve}
 
 ## No es posible crear la instancia de plan Lite
@@ -61,7 +61,7 @@ Puede recibir el siguiente mensaje de error al intentar crear una instancia de p
 Hay un límite de una instancia de plan Lite para mantener estos planes gratuitos.
 {: tsCauses}
 
-Es posible crear instancias adicionales del servicio seleccionando uno de los planes de servicios facturables, que también están disponibles en las cuentas facturables. Para actualizar a una cuenta facturable desde la consola, vaya a la página **Gestionar > Facturación y utilización > Facturación ** y, a continuación, pulse **Añadir tarjeta de crédito**.
+Es posible crear instancias adicionales del servicio seleccionando uno de los planes de servicios facturables, que también están disponibles en las cuentas facturables. Para actualizar a una cuenta facturable desde la consola, vaya a la página **Gestionar > Facturación y uso > Facturación ** y, a continuación, pulse **Añadir tarjeta de crédito**.
 {: tsResolve}
 
 Si no desea actualizar la cuenta Lite y ya no está utilizando la instancia de servicio Lite existente, puede suprimir dicha instancia de plan Lite desde el panel de control y, a continuación, crear una nueva instancia.
@@ -75,7 +75,7 @@ No puede desplegar apps y aparece un error que indica que ha superado el límite
 En una cuenta Lite, sus apps de Cloud Foundry pueden utilizar hasta 256 MB de memoria de tiempo de ejecución instantánea. En las cuentas facturables, hay un límite de 2 GB de memoria.
 {: tsCauses}
 
-Si está utilizando una cuenta Lite, puede obtener memoria adicional actualizando a una cuenta facturable. Vaya a la página **Gestionar > Facturación y utilización > Facturación** en la consola y, a continuación, pulse **Añadir tarjeta de crédito**.
+Si está utilizando una cuenta Lite, puede obtener memoria adicional actualizando a una cuenta facturable. Vaya a la página **Gestionar > Facturación y uso > Facturación** en la consola y, a continuación, pulse **Añadir tarjeta de crédito**.
 {: tsResolve}
 
 Si no desea actualizar la cuenta Lite y tiene apps desocupadas, puede suprimirlas para liberar memoria de tiempo de ejecución.
