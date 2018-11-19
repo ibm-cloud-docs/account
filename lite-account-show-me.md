@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-11-14"
+lastupdated: "2018-11-19"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-11-14"
 {:screen: .screen}
 {:download: .download}
 
-# Video: {{site.data.keyword.cloud_notm}} Lite account
+# Video - {{site.data.keyword.cloud_notm}} Lite account
 {: #show_me_video}
 
 The Lite account is our free account that never expires. What do we offer in a Lite account? Find out about the available services with free Lite plans and other account features in this video.
