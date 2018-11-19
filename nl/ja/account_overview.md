@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-07-19"
+lastupdated: "2018-10-08"
 
 ---
 
@@ -16,9 +16,9 @@ lastupdated: "2018-07-19"
 # アカウント階層
 {: #overview}
 
-{{site.data.keyword.Bluemix}} アカウントには、相互に作用する多くの要素とシステムが含まれています。 以下の図と各要素の説明は、特定の要素がどのように相関している (結びついている) か、およびアカウントでアクセス権限がどのように機能するかを理解できるようにすることを目的としています。 
+{{site.data.keyword.Bluemix}} アカウントには、相互に作用する多くの要素とシステムが含まれています。 以下の図と各要素の説明は、特定の要素がどのように結びついているか、およびアカウントでアクセス権限がどのように機能するかを理解できるようにすることを目的としています。 
 
-<a href="https://console.stage1.bluemix.net/docs/api/content/account/images/account_diagram.svg">
+<a href="https://console.bluemix.net/docs/api/content/account/images/account_diagram.svg">
   <img src="images/account_diagram.svg" alt="アカウントの図">
 </a>
 
@@ -26,7 +26,7 @@ lastupdated: "2018-07-19"
 
 <dl>
 <dt>ユーザー</dt>
-<dd>ユーザーはアカウントに招待され、アカウント内のさまざまなリソースへのアクセス権限を付与されます。</dd>
+<dd>ユーザーはアカウントに招待され、アカウント内のリソースへのアクセス権限を付与されます。</dd>
 <dt>サービス ID</dt>
 <dd>ユーザー ID がユーザーを識別するのと同様の方法で、サービス ID はサービスまたはアプリケーションを識別します。 作成するサービス ID を使用して、{{site.data.keyword.Bluemix_notm}} の外部にあるアプリケーションが {{site.data.keyword.Bluemix_notm}} サービスにアクセスできるようにすることができます。 このサービス ID には、特定のサービスを使用するための許可を制限したり、さまざまなサービスにアクセスするための許可を結合したりする特定のアクセス・ポリシーを割り当てることができます。 サービス ID は特定のユーザーに結合されているわけではないため、ユーザーが組織を辞めてアカウントから削除されるようなことがあっても、サービス ID はそのまま残り、アプリケーションまたはサービスが確実に稼働し続けるようにします。 詳しくは、『[サービス ID の作成と処理](/docs/iam/serviceid.html#serviceids)』を参照してください。</dd>
 <dt>サービス・インスタンスまたはリソース</dt>

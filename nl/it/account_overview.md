@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-07-19"
+lastupdated: "2018-10-08"
 
 ---
 
@@ -16,9 +16,9 @@ lastupdated: "2018-07-19"
 # Gerarchia degli account
 {: #overview}
 
-Il tuo account {{site.data.keyword.Bluemix}} include molti componenti e sistemi che interagiscono. Il seguente diagramma e la spiegazione per ciascun componente mirano ad aiutarti a comprendere in che modo alcuni componenti sono intercorrelati, o connessi, e come funziona l'accesso nell'ambito dell'account. 
+Il tuo account {{site.data.keyword.Bluemix}} include molti componenti e sistemi che interagiscono. Il seguente diagramma e la spiegazione per ciascun componente mirano ad aiutarti a comprendere in che modo alcuni componenti sono connessi e come funziona l'accesso nell'ambito dell'account. 
 
-<a href="https://console.stage1.bluemix.net/docs/api/content/account/images/account_diagram.svg">
+<a href="https://console.bluemix.net/docs/api/content/account/images/account_diagram.svg">
   <img src="images/account_diagram.svg" alt="diagramma account">
 </a>
 
@@ -26,7 +26,7 @@ All'interno del diagramma, sono presenti due concetti principali per i component
 
 <dl>
 <dt>Utenti</dt>
-<dd>Gli utenti sono invitati all'account e viene loro concesso l'accesso alle diverse risorse all'interno dell'account.</dd>
+<dd>Gli utenti sono invitati all'account e viene loro concesso l'accesso alle risorse nell'account.</dd>
 <dt>ID servizio</dt>
 <dd>Un ID servizio identifica un servizio o un'applicazione analogamente a come un ID utente identifica un utente. Puoi utilizzare un ID servizio da te creato per abilitare un'applicazione esterna a {{site.data.keyword.Bluemix_notm}} ad accedere ai tuoi servizi {{site.data.keyword.Bluemix_notm}}. Puoi assegnare delle specifiche politiche di accesso all'ID servizio che limitano le autorizzazioni per l'utilizzo di specifici servizi o anche combinare le autorizzazioni per l'accesso a servizi differenti. Poiché gli ID servizio non sono collegati a uno specifico utente, se capita che un utente lasci un'organizzazione e venga eliminato dall'account, l'ID servizio rimane, garantendo che la tua applicazione o il tuo servizio continuino a essere attivi e in esecuzione. Per ulteriori informazioni, vedi [Creazione e gestione degli ID servizio](/docs/iam/serviceid.html#serviceids).</dd>
 <dt>Risorse o istanze del servizio</dt>

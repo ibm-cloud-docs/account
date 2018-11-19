@@ -4,7 +4,7 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-10-23" 
+lastupdated: "2018-11-06" 
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2018-10-23"
 # Modifica delle impostazioni dell'account
 {: #account_settings}
 
-Se sei un proprietario di account, determina le impostazioni dell'account che vuoi abilitare mentre stai configurando il tuo account {{site.data.keyword.Bluemix}}.
+Se sei un proprietario di account, determina le impostazioni dell'account che vuoi abilitare mentre stai configurando il tuo account {{site.data.keyword.Bluemix}}. 
 {:shortdesc}
 
 ## Abilitazione dell'impostazione Supportato UE
