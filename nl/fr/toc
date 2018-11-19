@@ -5,7 +5,8 @@
 Gestion de votre compte
 
     {: .navgroup id="learn"}
-    [Meilleures pratiques pour organiser des utilisateurs, des équipes et des applications](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
+    [Meilleures pratiques pour l'organisation des utilisateurs, des équipes et des applications](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
+    bp_account.md
     account_overview.md
     {: .navgroup-end}
 

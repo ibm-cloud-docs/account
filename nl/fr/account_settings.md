@@ -4,7 +4,7 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-10-23" 
+lastupdated: "2018-11-06" 
 
 ---
 
@@ -15,7 +15,8 @@ lastupdated: "2018-10-23"
 # Modification de vos paramètres de compte
 {: #account_settings}
 
-Si vous êtes le propriétaire d'un compte, déterminez les paramètres du compte que vous désirez activer tandis que vous configurez votre compte {{site.data.keyword.Bluemix}} . {:shortdesc}
+Si vous êtes le propriétaire d'un compte, déterminez les paramètres du compte que vous désirez activer tandis que vous configurez votre compte {{site.data.keyword.Bluemix}} . 
+{:shortdesc}
 
 ## Activation du paramètre Support dans l'Union européenne
 {: #bill_eusupported}
@@ -37,9 +38,9 @@ Si vous utilisez l'infrastructure {{site.data.keyword.BluSoftlayer_full}} et ne 
 
 Après avoir activé le paramètre Support dans l'Union européenne, vous pouvez utiliser la balise **Support dans l'Union européenne** pour rechercher dans le catalogue des offres avec des plans couvrant l'Union européenne.  
 
-## Activation du paramètre de prise en charge HIPPA
+## Activation du paramètre de prise en charge HIPAA
 
-Vous pouvez opter d'activer votre compte pour exécution de charges de travail sensibles régies par la loi U.S. Health Insurance Portability and Accountability Act (HIPPA). 
+Vous pouvez choisir d'activer votre compte pour l'exécution de charges de travail sensibles qui sont régies par la loi U.S. Health Insurance Portability and Accountability Act (HIPAA). 
 
 1. Accédez à **Gérer** > **Facturation et utilisation** > **Facturation** dans la console.
 2. Cliquez sur **Activer**. 

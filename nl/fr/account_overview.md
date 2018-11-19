@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-07-19"
+lastupdated: "2018-10-08"
 
 ---
 
@@ -16,9 +16,9 @@ lastupdated: "2018-07-19"
 # Hiérarchie de compte
 {: #overview}
 
-Votre compte {{site.data.keyword.Bluemix}} inclut plusieurs composants et systèmes interagissant les uns avec les autres. Le diagramme et les explications ci-dessous présentent chaque composant et ont pour but de vous aider à comprendre comment certains composants sont liés, ou connectés, et comment l'accès fonctionne au sein du compte. 
+Votre compte {{site.data.keyword.Bluemix}} inclut plusieurs composants et systèmes interagissant les uns avec les autres. Le diagramme et les explications ci-dessous présentent chaque composant et ont pour but de vous aider à comprendre comment certains composants sont connectés, et comment l'accès fonctionne au sein du compte. 
 
-<a href="https://console.stage1.bluemix.net/docs/api/content/account/images/account_diagram.svg">
+<a href="https://console.bluemix.net/docs/api/content/account/images/account_diagram.svg">
   <img src="images/account_diagram.svg" alt="diagramme de compte">
 </a>
 
@@ -26,7 +26,7 @@ Le diagramme présente deux principaux concepts s'appliquant aux composants de l
 
 <dl>
 <dt>Utilisateurs</dt>
-<dd>Les utilisateurs sont invités dans le compte et se voient accorder l'accès à différentes ressources du compte.</dd>
+<dd>Les utilisateurs sont invités dans le compte et se voient accorder l'accès aux ressources du compte.</dd>
 <dt>ID de service</dt>
 <dd>Un ID de service identifie un service ou une application de la même façon qu'un ID utilisateur identifie un utilisateur. Vous pouvez utiliser un ID de service que vous créez pour permettre à une application située hors d'{{site.data.keyword.Bluemix_notm}} d'accéder à vos services {{site.data.keyword.Bluemix_notm}}. Vous pouvez affecter des règles d'accès spécifiques à l'ID de service qui limitent les droits d'utilisation à des services spécifiques ou bien combiner des droits d'accès à différents services. Les ID de service n'étant pas liés à un utilisateur spécifique, si un utilisateur quitte une organisation et est supprimé du compte, l'ID de service est conservé de sorte que votre application ou service reste fonctionnel. Pour plus d'informations, voir [Création et utilisation des ID de service](/docs/iam/serviceid.html#serviceids).</dd>
 <dt>Ressources ou instances de service</dt>
@@ -36,7 +36,7 @@ Le diagramme présente deux principaux concepts s'appliquant aux composants de l
 <dt>Groupes d'accès</dt>
 <dd>Vous pouvez créer un groupe d'accès pour organiser un ensemble d'utilisateurs et d'ID de service dans une seule entité et faciliter l'affectation de droits d'accès. Vous pouvez affecter une seule règle au groupe au lieu d'affecter individuellement le même accès plusieurs fois pour chaque utilisateur ou ID de service. Pour plus d'informations, voir [Configuration de groupes d'accès](/docs/iam/groups.html#groups).</dd>
 <dt>Groupes de ressources</dt>
-<dd>Un groupe de ressources permet d'organiser vos ressources de compte en regroupements personnalisables de manière à pouvoir affecter rapidement des accès utilisateur à plusieurs ressources à la fois. Chaque ressource de compte gérée à l'aide du contrôle d'accès IAM appartient à un groupe de ressources de votre compte. Les utilisateurs ne sont pas ajoutés aux groupes de ressources mais ils peuvent accéder aux ressources qui s'y trouvent ou peuvent gérer le groupe de ressources. Les utilisateurs disposant de l'accès permettant de gérer le groupe de ressources peuvent créer des instances dans le groupe, gérer les autorisations permettant à d'autres utilisateurs d'utiliser le groupe ou modifier le nom du groupe en fonction du rôle IAM affecté. Pour plus d'informations, voir [Gestion des groupes de ressources](/docs/resources/resourcegroups.html#rgs) et [Meilleures pratiques en matière d'organisation des ressources dans un groupe de ressources](/docs/resources/bestpractice_rgs.html#bp_resourcegroups).</dd>
+<dd>Un groupe de ressources permet d'organiser vos ressources de compte en regroupements personnalisables de manière à pouvoir affecter rapidement des accès utilisateur à plusieurs ressources à la fois. Chaque ressource de compte gérée à l'aide du contrôle d'accès IAM appartient à un groupe de ressources de votre compte. Les utilisateurs ne sont pas ajoutés aux groupes de ressources mais ils peuvent accéder aux ressources qui s'y trouvent ou peuvent gérer le groupe de ressources. Les utilisateurs disposant de l'accès permettant de gérer le groupe de ressources peuvent créer des instances dans le groupe, gérer les autorisations permettant à d'autres utilisateurs d'utiliser le groupe ou modifier le nom du groupe en fonction du rôle IAM affecté. Pour plus d'informations, voir [Gestion des groupes de ressources](/docs/resources/resourcegroups.html#rgs) et [Meilleures pratiques pour l'organisation des ressources dans un groupe de ressources](/docs/resources/bestpractice_rgs.html#bp_resourcegroups).</dd>
 <dt>Organisations Cloud Foundry</dt>
 <dd>En tant que propriétaire de compte ou responsable de l'organisation, vous pouvez ajouter des organisations et des espaces depuis la page Organisations Cloud Foundry dans la console. Les services prenant en charge l'utilisation des espaces et des organisations Cloud Foundry sont ajoutés à un espace et une organisation lorsque vous les créez à partir du catalogue. Les organisations contiennent des utilisateurs, des domaines et des quotas. Dans chaque organisation, des espaces contenant des instances de service sont ajoutés. Pour plus d'informations, voir [Ajout d'organisations et d'espaces](/docs/account/orgs_spaces.html#orgsspacesusers).</dd>
 <dt>Espaces Cloud Foundry</dt>
