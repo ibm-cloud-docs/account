@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-07-19"
+lastupdated: "2018-10-08"
 
 ---
 
@@ -16,17 +16,17 @@ lastupdated: "2018-07-19"
 # 帐户层次结构
 {: #overview}
 
-{{site.data.keyword.Bluemix}} 帐户包含许多交互组件和系统。下图及对每个组件的说明旨在帮助您了解特定组件是如何相互关联或连接的，以及访问在整个帐户中是如何工作的。 
+{{site.data.keyword.Bluemix}} 帐户包含许多交互组件和系统。下图及对每个组件的说明旨在帮助您了解特定组件是如何相互连接的，以及访问权在整个帐户中是如何工作的。 
 
-<a href="https://console.stage1.bluemix.net/docs/api/content/account/images/account_diagram.svg">
+<a href="https://console.bluemix.net/docs/api/content/account/images/account_diagram.svg">
   <img src="images/account_diagram.svg" alt="帐户图">
 </a>
 
 在该图中，帐户层次结构中的组件有两个主要概念务必要理解。实线和虚线用于帮助说明某些组件包含在其他组件中，例如将用户添加到访问组或 Cloud Foundry 组织。但是，某些组件与其他组件进行交互的目的是为了提供访问权，而不是提供成员资格。例如，授予了用户对资源组的访问权，但这些用户并不会像针对访问组那样，成为资源组的成员。以下各部分还将对这些概念进行说明。
 
 <dl>
-<dt>Users</dt>
-<dd>邀请用户加入帐户并向其授予对帐户内其他资源的访问权。</dd>
+<dt>用户</dt>
+<dd>可以邀请用户加入帐户并向其授予对帐户中资源的访问权。</dd>
 <dt>服务标识</dt>
 <dd>服务标识用于标识服务或应用程序，类似于用户标识对用户进行标识的方式。可以使用创建的服务标识来支持 {{site.data.keyword.Bluemix_notm}} 外部的应用程序访问 {{site.data.keyword.Bluemix_notm}} 服务。您可以向服务标识分配特定访问策略，以限制使用特定服务的许可权，甚至可以将访问不同服务的许可权组合在一起。由于服务标识并不与特定用户绑定，因此即使用户离开组织并将其从帐户中删除，该服务标识仍会保留，以确保您的应用程序或服务保持正常运行。有关更多信息，请参阅[创建和使用服务标识](/docs/iam/serviceid.html#serviceids)。</dd>
 <dt>服务实例或资源</dt>

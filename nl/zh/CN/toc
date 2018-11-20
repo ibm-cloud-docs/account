@@ -5,7 +5,8 @@
 管理帐户
 
     {: .navgroup id="learn"}
-    [用于组织用户、团队和应用程序的最佳实践](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
+    [组织用户、团队、应用程序的最佳实践](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
+    bp_account.md
     account_overview.md
     {: .navgroup-end}
 
