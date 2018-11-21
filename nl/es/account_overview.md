@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-07-19"
+lastupdated: "2018-10-08"
 
 ---
 
@@ -16,9 +16,9 @@ lastupdated: "2018-07-19"
 # Jerarquía de cuentas
 {: #overview}
 
-Su cuenta de {{site.data.keyword.Bluemix}} incluye varios componentes y sistemas que interactúan. El siguiente diagrama y la explicación de cada componente están pensados para ayudarle a comprender la interrelación o conexión entre ciertos componentes y cómo funciona el acceso en la cuenta. 
+Su cuenta de {{site.data.keyword.Bluemix}} incluye varios componentes y sistemas que interactúan. El siguiente diagrama y la explicación de cada componente están pensados para ayudarle a comprender la conexión entre ciertos componentes y cómo funciona el acceso en la cuenta. 
 
-<a href="https://console.stage1.bluemix.net/docs/api/content/account/images/account_diagram.svg">
+<a href="https://console.bluemix.net/docs/api/content/account/images/account_diagram.svg">
   <img src="images/account_diagram.svg" alt="diagrama de cuenta">
 </a>
 
@@ -26,7 +26,7 @@ Dentro del diagrama, hay dos conceptos principales correspondiente a la jerarqu�
 
 <dl>
 <dt>Usuarios</dt>
-<dd>Se invita a los usuarios a la cuenta y se les otorga acceso a distintos recursos de la cuenta.</dd>
+<dd>Se invita a los usuarios a la cuenta y se les otorga acceso a los recursos de la cuenta.</dd>
 <dt>ID de servicio</dt>
 <dd>Un ID de servicio identifica un servicio o una aplicación de forma similar a cómo un ID de usuario identifica un usuario. Puede utilizar un ID de servicio que cree para habilitar una aplicación fuera del acceso de {{site.data.keyword.Bluemix_notm}} a sus servicios de {{site.data.keyword.Bluemix_notm}}. Puede asignar políticas de acceso específicas al ID de servicio que restrinjan permisos para utilizar servicios específicos, o incluso combinar permisos para acceder a servicios distintos. Puesto que los ID de servicio no están vinculados a un usuario específico, si un usuario abandona una organización y se suprime de la cuenta, el ID de servicio seguirá garantizando que su aplicación o servicio permanece activo y en ejecución. Para obtener más información, consulte [Cómo crear y trabajar con ID de servicio](/docs/iam/serviceid.html#serviceids).</dd>
 <dt>Instancias de servicio o recursos</dt>
