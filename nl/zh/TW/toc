@@ -6,6 +6,7 @@
 
     {: .navgroup id="learn"}
     [組織使用者、團隊、應用程式的最佳作法](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
+    bp_account.md
     account_overview.md
     {: .navgroup-end}
 

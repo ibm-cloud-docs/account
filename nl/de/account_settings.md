@@ -4,7 +4,7 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-10-23" 
+lastupdated: "2018-11-06" 
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2018-10-23"
 # Kontoeinstellungen ändern
 {: #account_settings}
 
-Wenn Sie der Kontoeigner sind, legen Sie die gewünschten Kontoeinstellungen bei der Konfiguration Ihres {{site.data.keyword.Bluemix}}-Kontos fest.
+Wenn Sie der Kontoeigner sind, legen Sie die gewünschten Kontoeinstellungen bei der Konfiguration Ihres {{site.data.keyword.Bluemix}}-Kontos fest. 
 {:shortdesc}
 
 ## Einstellung 'Unterstützung in der EU' aktivieren
@@ -36,18 +36,18 @@ Wenn Sie die {{site.data.keyword.BluSoftlayer_full}}-Infrastruktur verwenden und
 
 ### In der EU unterstützte Angebote
 
-Nachdem Sie die Einstellung 'Unterstützung in der EU' aktiviert haben, können Sie den Tag **Unterstützung in der EU** verwenden, um den Katalog nach Angeboten zu durchsuchen, die in der EU unterstützte Planungen aufweisen.   
+Nachdem Sie die Einstellung 'Unterstützung in der EU' aktiviert haben, können Sie den Tag **Unterstützung in der EU** verwenden, um den Katalog nach Angeboten zu durchsuchen, die in der EU unterstützte Planungen aufweisen.  
 
-## Einstellung 'HIPPA-fähig' aktivieren
+## Einstellung 'HIPAA-Unterstützung' aktivieren
 
-Sie können auswählen, dass Ihr Konto für die Ausführung sensitiver Workloads aktiviert wird, die unter HIPPA (U.S. Health Insurance Portability and Accountability Act) fallen.  
+Sie können bewusst entscheiden, dass Ihr Konto für die Ausführung sensibler Workloads aktiviert wird, der Regulierung den US-amerikanischen HIPAA-Standards (HIPAA = Health Insurance Portability and Accountability Act) unterliegt. 
 
 1. Wechseln Sie in der Konsole zu **Verwalten** > **Abrechnung und Nutzung** > **Abrechnung**.
 2. Klicken Sie auf **Ein**. 
-3. Lesen Sie die Informationen zur Aktivierung dieser Einstellung. Sie können diese Einstellung nicht inaktivieren, wenn sie einmal aktiviert wurde.  
+3. Lesen Sie die Informationen zur Aktivierung dieser Einstellung. Sie können diese Einstellung nicht inaktivieren, wenn sie einmal aktiviert wurde. 
 4. Wählen Sie **Zustimmen** aus. 
 5. Klicken Sie auf **Ein**.
 
 ### HIPAA-fähige Angebote
 
-Nachdem Sie die Einstellung 'HIPAA-fähig' aktiviert haben, können Sie den Tag **HIPAA-fähig** verwenden, um den Katalog nach Angeboten zu durchsuchen, die HIPAA-fähig sind.  
+Nachdem Sie die Einstellung 'HIPAA-fähig' aktiviert haben, können Sie den Tag **HIPAA-fähig** verwenden, um den Katalog nach Angeboten zu durchsuchen, die HIPAA-fähig sind. 

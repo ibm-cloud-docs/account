@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-07-19"
+lastupdated: "2018-10-08"
 
 ---
 
@@ -16,9 +16,9 @@ lastupdated: "2018-07-19"
 # 帳戶階層
 {: #overview}
 
-您的 {{site.data.keyword.Bluemix}} 帳戶包含許多互動元件及系統。每個元件的下列圖表及說明，旨在幫助您瞭解特定元件如何相互關聯，或連接，以及帳戶之間的存取如何運作。 
+您的 {{site.data.keyword.Bluemix}} 帳戶包含許多互動元件及系統。每個元件的下列圖表及說明，旨在幫助您瞭解特定元件如何連接，以及帳戶之間的存取如何運作。 
 
-<a href="https://console.stage1.bluemix.net/docs/api/content/account/images/account_diagram.svg">
+<a href="https://console.bluemix.net/docs/api/content/account/images/account_diagram.svg">
   <img src="images/account_diagram.svg" alt="帳戶圖表">
 </a>
 
@@ -26,7 +26,7 @@ lastupdated: "2018-07-19"
 
 <dl>
 <dt>使用者</dt>
-<dd>使用者受邀加入帳戶，並取得帳戶內不同資源的存取權。</dd>
+<dd>使用者受邀加入帳戶，並取得帳戶中資源的存取權。</dd>
 <dt>服務 ID</dt>
 <dd>服務 ID 會識別與使用者 ID 如何識別使用者類似的服務或應用程式。您可以使用您建立的服務 ID，讓 {{site.data.keyword.Bluemix_notm}} 以外的應用程式能存取您的 {{site.data.keyword.Bluemix_notm}} 服務。您可以將特定存取原則指派給服務 ID，而服務 ID 限制用於使用特定服務的許可權，或甚至結合用於存取不同服務的許可權。因為服務 ID 未關聯至特定使用者，所以如果使用者離開組織，並已從帳戶中予以刪除，則服務 ID 仍可確保您的應用程式或服務保持啟動並執行。如需相關資訊，請參閱[建立及使用服務 ID](/docs/iam/serviceid.html#serviceids)。</dd>
 <dt>服務實例或資源</dt>

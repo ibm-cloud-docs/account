@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-07-19"
+lastupdated: "2018-10-08"
 
 ---
 
@@ -16,9 +16,9 @@ lastupdated: "2018-07-19"
 # Kontohierarchie
 {: #overview}
 
-Das {{site.data.keyword.Bluemix}}-Konto umfasst zahlreiche Komponenten und Systeme, die interagieren. Das folgende Diagramm und die Erläuterungen zu den einzelnen Komponenten sollen veranschaulichen, wie bestimmte Komponenten in Wechselbeziehung zueinander stehen oder verbunden sind und wie der Zugriff innerhalb des Kontos gesteuert wird. 
+Das {{site.data.keyword.Bluemix}}-Konto umfasst zahlreiche Komponenten und Systeme, die interagieren. Das folgende Diagramm und die Erläuterungen zu den einzelnen Komponenten sollen veranschaulichen, wie bestimmte Komponenten verbunden sind und wie der Zugriff innerhalb des Kontos gesteuert wird. 
 
-<a href="https://console.stage1.bluemix.net/docs/api/content/account/images/account_diagram.svg">
+<a href="https://console.bluemix.net/docs/api/content/account/images/account_diagram.svg">
   <img src="images/account_diagram.svg" alt="Kontodiagramm">
 </a>
 
@@ -26,7 +26,7 @@ Das Diagramm enthält zwei Hauptkonzepte für die Komponenten in der Kontohierar
 
 <dl>
 <dt>Benutzer</dt>
-<dd>Benutzer werden zum Konto eingeladen und erhalten Zugriff auf die verschiedenen Ressourcen innerhalb des Kontos.</dd>
+<dd>Benutzer werden zum Konto eingeladen und erhalten Zugriff auf die Ressourcen im Konto.</dd>
 <dt>Service-IDs</dt>
 <dd>Eine Service-ID dient (ähnlich wie eine Benutzer-ID, die einen Benutzer identifiziert) zur Identifikation eines Service oder einer Anwendung. Sie können eine von Ihnen erstellte Service-ID dazu verwenden, einer Anwendung außerhalb von {{site.data.keyword.Bluemix_notm}} den Zugriff auf Ihre {{site.data.keyword.Bluemix_notm}}-Services zu erteilen. Sie können der Service-ID spezielle Zugriffsrichtlinien zuweisen, die die Berechtigungen zur Verwendung bestimmter Services einschränken, oder auch die Berechtigungen für den Zugriff auf unterschiedliche Services kombinieren. Da Service-IDs nicht an bestimmte Benutzer gebunden sind, bleibt die Service-ID bestehen, wenn der zugehörige Benutzer Ihre Organisation verlässt und sein Konto deshalb gelöscht wird. Auf diese Weise wird sichergestellt, dass Ihre Anwendung oder Ihr Service weiterhin funktionsbereit bleibt. Weitere Informationen finden Sie in [Service-IDs erstellen und verwenden](/docs/iam/serviceid.html#serviceids).</dd>
 <dt>Serviceinstanzen oder Ressourcen</dt>

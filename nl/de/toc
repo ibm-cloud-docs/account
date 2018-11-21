@@ -6,12 +6,13 @@ Eigenes Konto verwalten
 
     {: .navgroup id="learn"}
     [Bewährte Verfahren für die Verwaltung von Benutzern, Teams und Anwendungen](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
+    bp_account.md
     account_overview.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
     {: .topicgroup}
-    Account setup
+    Kontoeinrichtung
         adminpublic.md
         index.md
         profile.md
