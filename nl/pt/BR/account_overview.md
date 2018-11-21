@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-07-19"
+lastupdated: "2018-10-08"
 
 ---
 
@@ -16,16 +16,17 @@ lastupdated: "2018-07-19"
 # Hierarquia da conta
 {: #overview}
 
-Sua conta do {{site.data.keyword.Bluemix}} inclui muitos componentes e sistemas interativos. O diagrama e a explicação a seguir para cada componente são destinados a ajudá-lo a entender como determinados componentes estão inter-relacionados ou conectados e como funciona o acesso na conta. 
+Sua conta do {{site.data.keyword.Bluemix}} inclui muitos componentes e sistemas interativos. O diagrama e a explicação para cada componente a seguir são destinados a ajudar você a entender como determinados componentes estão conectados e como o acesso funciona na conta. 
 
-<a href="https://console.stage1.bluemix.net/docs/api/content/account/images/account_diagram.svg">
-  <img src="images/account_diagram.svg" alt="account diagram">  </a>
+<a href="https://console.bluemix.net/docs/api/content/account/images/account_diagram.svg">
+  <img src="images/account_diagram.svg" alt="diagrama da conta">
+</a>
 
 Dentro do diagrama, há dois conceitos principais para os componentes na hierarquia da conta cujo entendimento é importante. O uso das linhas contínuas e das linhas pontilhadas ajudam a ilustrar que alguns componentes estão contidos em outros, por exemplo, os usuários estão incluídos em grupos de acesso ou em organizações do Cloud Foundry. No entanto, alguns componentes interagem com outros com o propósito de fornecer acesso em vez de associação. Por exemplo, os usuários recebem acesso a grupos de recursos, mas não são membros de um grupo de recursos da mesma maneira que eles são para grupos de acesso. Esses conceitos também são explicados nas seções a seguir.
 
 <dl>
 <dt>Usuários</dt>
-<dd>Os usuários são convidados para a conta e recebem acesso aos diferentes recursos na conta.</dd>
+<dd>Os usuários são convidados para a conta e recebem acesso aos recursos na conta.</dd>
 <dt>IDs de Serviço</dt>
 <dd>Um ID de serviço identifica um serviço ou um aplicativo semelhante a como um ID de usuário identifica um usuário. É possível usar um ID de serviço que você cria para permitir que um aplicativo fora do {{site.data.keyword.Bluemix_notm}} acesse seus serviços do {{site.data.keyword.Bluemix_notm}}. É possível designar políticas de acesso específicas ao ID de serviço que restringem permissões para usar serviços específicos ou até mesmo combinar permissões para acessar serviços diferentes. Como os IDs de serviço não são ligados a um usuário específico, se acontecer de um usuário deixar uma organização e for excluído da conta, o ID de serviço continuará assegurando que seu aplicativo ou serviço permaneça funcionando. Para obter mais informações, consulte [Criando e trabalhando com IDs de serviço](/docs/iam/serviceid.html#serviceids).</dd>
 <dt>Instâncias de serviço ou recursos</dt>

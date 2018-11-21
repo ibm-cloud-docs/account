@@ -4,7 +4,7 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-10-23" 
+lastupdated: "2018-11-06" 
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-10-23"
 {: #account_settings}
 
 Se você é um proprietário de conta, determine as configurações da conta que deseja ativar à medida que configurar a
-conta do {{site.data.keyword.Bluemix}}.
+conta do {{site.data.keyword.Bluemix}}. 
 {:shortdesc}
 
 ## Ativando a configuração Suportado pela UE
@@ -48,10 +48,9 @@ portal do cliente. Para obter mais informações, veja [Configurando a opção S
 Depois de ativar a configuração Suportado pela UE, é possível usar a tag **Suportado pela UE**
 para procurar no catálogo as ofertas que têm planos Suportados pela UE.  
 
-## Ativando a configuração Suportado pelo HIPPA
+## Ativando a configuração suportada pelo HIPAA
 
-É possível optar pela ativação da conta para executar cargas de trabalho sensíveis que são regulamentadas
-de acordo com o U.S. Health Insurance Portability and Accountability Act (HIPPA). 
+É possível optar por ativar sua conta para executar cargas de trabalho sensíveis que são reguladas pelo Health Insurance Portability and Accountability Act (HIPAA) dos EUA. 
 
 1. Acesse **Gerenciar** > **Faturamento e uso** > **Faturamento** no console.
 2. Clique em **Ativado**. 
