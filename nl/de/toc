@@ -5,9 +5,8 @@
 Eigenes Konto verwalten
 
     {: .navgroup id="learn"}
-    [Bewährte Verfahren für die Verwaltung von Benutzern, Teams und Anwendungen](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
-    bp_account.md
-    account_overview.md
+    [Bewährte Verfahren für die Organisierung von Benutzern, Teams und Anwendungen](https://console.bluemix.net/docs/tutorials/users-teams-applications.html) bp_account.md account_overview.md
+    lite-account-show-me.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
