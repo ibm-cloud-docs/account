@@ -8,6 +8,7 @@
     [사용자, 팀, 애플리케이션 구성 우수 사례](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
     bp_account.md
     account_overview.md
+    lite-account-show-me.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}

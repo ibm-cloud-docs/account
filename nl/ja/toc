@@ -8,6 +8,7 @@
     [ユーザー、チーム、アプリケーションを編成するためのベスト・プラクティス](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
     bp_account.md
     account_overview.md
+    lite-account-show-me.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}

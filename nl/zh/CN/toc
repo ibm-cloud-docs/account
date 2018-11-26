@@ -5,9 +5,10 @@
 管理帐户
 
     {: .navgroup id="learn"}
-    [组织用户、团队、应用程序的最佳实践](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
+    [用于组织用户、团队和应用程序的最佳实践](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
     bp_account.md
     account_overview.md
+    lite-account-show-me.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
