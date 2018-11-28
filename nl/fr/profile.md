@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-07-10"
+lastupdated: "2018-11-14"
 
 ---
 
@@ -17,27 +17,27 @@ lastupdated: "2018-07-10"
 # Configuration de votre profil
 {: #usersettings}
 
-Lorsque vous commencez à utiliser {{site.data.keyword.Bluemix}}, configurez votre profil de compte. Sélectionnez l'icône **{{site.data.keyword.avatar}}** ![Icône Avatar](../icons/i-avatar-icon.svg) &gt; **Profil et compte** pour définir ou mettre à jour vos paramètres de profil.
+Lorsque vous commencez à utiliser {{site.data.keyword.Bluemix}}, configurez votre profil de compte. Accédez à l'icône **{{site.data.keyword.avatar}}** ![icône Avatar](../icons/i-avatar-icon.svg) &gt; **Profil** pour définir ou mettre à jour vos paramètres de profil.
 {:shortdesc}
 
 Vous pouvez définir ou mettre à jour les informations suivantes :
 
  * Photo de profil visible par les autres utilisateurs {{site.data.keyword.Bluemix_notm}}
- * Informations IBMid, telles que votre nom, votre adresse électronique, votre numéro de téléphone, votre mot de passe, votre société et votre rôle
+ * Informations IBMid, incluant votre nom, votre adresse électronique, votre numéro de téléphone, votre mot de passe, votre société et votre rôle
  * Paramètre Suivi pour analyse
 
 Vous pouvez également décider de vous abonner à des notifications ou prendre connaissance de vos options de support pour savoir où et comment obtenir de l'aide en cas de problème.
 
-Si vous êtes l'administrateur d'un environnement {{site.data.keyword.Bluemix_local_notm}} ou {{site.data.keyword.Bluemix_notm}} dédié, voir [Gestion de l'environnement {{site.data.keyword.Bluemix_local_notm}} et de l'environnement {{site.data.keyword.Bluemix_notm}} dédié](/docs/hybrid/index.html#mng) pour plus de détails sur la gestion de votre compte depuis la page Administration.
+Si vous êtes l'administrateur d'un environnement {{site.data.keyword.Bluemix_local_notm}} ou {{site.data.keyword.Bluemix_notm}} dédié, consultez la rubrique [Gestion de l'environnement {{site.data.keyword.Bluemix_local_notm}} et de l'environnement {{site.data.keyword.Bluemix_notm}} dédié](/docs/hybrid/index.html#mng) pour obtenir plus de détails sur la gestion de votre compte depuis la page Administration.
 
-## Modification de la photo de votre profil
+## Modification de votre photo de profil
 {: #photo notoc}
 
-Sélectionnez l'icône **{{site.data.keyword.avatar}}** ![Icône Avatar](../icons/i-avatar-icon.svg) &gt; **Profil et compte**.
+Accédez à l'icône **{{site.data.keyword.avatar}}** ![icône Avatar](../icons/i-avatar-icon.svg) &gt; **Profil**.
 
   * Pour ajouter une photo, cliquez sur **Télécharger une photo**.
   * Pour remplacer votre photo actuelle par une autre, cliquez sur **Changer de photo**.
-  * Pour retirer votre photo, cliquez sur **Supprimer la photo**.
+  * Pour supprimer votre photo, cliquez sur **Supprimer la photo**.
 
 ## Edition de vos informations IBMid
 {: #ibmid}
@@ -47,7 +47,7 @@ fonctions d'infrastructure, de services et d'application. Il est identique à l'
 
 Vous ne pouvez pas changer votre IBMid, mais vous pouvez éditer vos informations de profil qui lui sont associées, comme votre nom, votre adresse électronique, votre numéro de téléphone, votre mot de passe ou le nom de votre société.
 
-1. Sélectionnez l'icône **{{site.data.keyword.avatar}}** ![Icône Avatar](../icons/i-avatar-icon.svg) &gt; **Profil et compte**.
+1. Accédez à l'icône **{{site.data.keyword.avatar}}** ![icône Avatar](../icons/i-avatar-icon.svg) &gt; **Profil**.
 2. Cliquez sur l'option permettant d'**éditer votre IBMid**.
 3. Editez vos informations utilisateur.
 4. Cliquez sur **Sauvegarder**.
@@ -62,5 +62,5 @@ Si vous choisissez de désactiver le suivi, il se peut que vous ne puissiez pas 
 
 Afin de désactiver le suivi pour analyse, procédez comme suit :
 
-1. Sélectionnez l'icône **{{site.data.keyword.avatar}}** ![Icône Avatar](../icons/i-avatar-icon.svg) &gt; **Profil et compte**.
+1. Accédez à l'icône **{{site.data.keyword.avatar}}** ![icône Avatar](../icons/i-avatar-icon.svg) &gt; **Profil**.
 2. Désactivez le suivi pour analyse en spécifiant **off**.

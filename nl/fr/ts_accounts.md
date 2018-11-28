@@ -21,7 +21,7 @@ lastupdated: "2018-09-25"
 # Traitement des incidents liés à la gestion des comptes
 {: #managingaccounts}
 
-Vous pouvez rencontrer des problèmes d'ordre général lorsque vous gérez votre compte, par exemple, différentes applications partagent le même nom de domaine ou les administrateurs ne peuvent pas afficher toutes les organisations. Dans de nombreux cas, ces problèmes peuvent être résolus en quelques opérations simples.
+Vous pouvez rencontrer des problèmes d'ordre général lorsque vous gérez votre compte. Par exemple, il est possible que différentes applications partagent un même nom de domaine ou que les administrateurs ne puissent pas afficher toutes les organisations. Dans de nombreux cas, ces problèmes peuvent être résolus en quelques opérations simples.
 {:shortdesc}
 
 ## Impossible d'accéder à une région {{site.data.keyword.Bluemix_notm}} différente
@@ -59,7 +59,7 @@ Vous recevez le message d'erreur suivant lorsque vous tentez de créer une insta
 Pour pouvoir maintenir la gratuité de ces plans, une seule instance est permise par plan Lite.
 {: tsCauses}
 
-Vous pouvez créer des instances supplémentaires du service en sélectionnant l'un des plans de service facturables, lesquels sont disponibles dans les comptes facturables. Pour effectuer une mise à niveau vers un compte facturable depuis la console, accédez à **Gérer > Facturation et utilisation > Facturation**, puis cliquez sur **Ajouter une carte de crédit**.
+Vous pouvez créer d'autres instances du service en sélectionnant l'un des plans de service facturables, disponibles dans les comptes facturables. Pour effectuer une mise à niveau vers un compte facturable depuis la console, accédez à **Gérer > Facturation et utilisation > Facturation**, puis cliquez sur **Ajouter une carte de crédit**.
 {: tsResolve}
 
 Si vous ne souhaitez pas effectuer une mise à niveau depuis un compte Lite et n'utilisez plus votre instance de service Lite existante, vous pouvez supprimer cette instance de plan de service depuis le tableau de bord Services, puis en créer une nouvelle.
@@ -70,10 +70,10 @@ Si vous ne souhaitez pas effectuer une mise à niveau depuis un compte Lite et n
 Vous ne parvenez pas à déployer des applications et un message d'erreur vous avise que vous avez dépassé la limite de mémoire allouée à votre organisation.
 {: tsSymptoms}
 
-Dans un compte Lite, vos applications Cloud Foundry peuvent utiliser jusqu'à 256 Mo de mémoire d'exécution simultanée. Dans les comptes facturables, cette limite est portée à 2 Go.
+Dans un compte Lite, vos applications Cloud Foundry peuvent utiliser jusqu'à 256 Mo de mémoire d'exécution simultanée. Dans les comptes facturables, cette limite est de 2 Go.
 {: tsCauses}
 
-Si vous utilisez un compte Lite, vous pouvez bénéficier d'une mémoire supplémentaire en effectuant une mise à niveau vers un compte facturable. Accédez à **Gérer > Facturation et utilisation > Facturation** dans la console, puis cliquez sur **Ajouter une carte de crédit**.
+Si vous utilisez un compte Lite, vous pouvez obtenir plus de mémoire en effectuant une mise à niveau vers un compte facturable. Accédez à **Gérer > Facturation et utilisation > Facturation** dans la console, puis cliquez sur **Ajouter une carte de crédit**.
 {: tsResolve}
 
 Si vous ne souhaitez pas effectuer une mise à niveau depuis un compte Lite, mais disposez de diverses applications inactives, vous pouvez les supprimer pour libérer de la mémoire d'exécution.
@@ -155,10 +155,10 @@ Pour créer un espace, appliquez l'une des méthodes suivantes :
   * Dans l'interface de ligne de commande Cloud Foundry, entrez `cf create-space <space_name> -o <organization_name>`.
 
 
-## Les applications partagent le même nom de domaine
+## Les applications partagent un nom de domaine
 {: #ts_domain_diff}
 
-Il se peut que plusieurs applications partagent la même adresse URL dans {{site.data.keyword.Bluemix_notm}}.
+Il se peut que plusieurs applications partagent une adresse URL dans {{site.data.keyword.Bluemix_notm}}.
 
 Ce problème peut se produire lorsque vous affectez la même route d'adresse URL à plusieurs applications dans un espace.
 {: tsCauses}
@@ -180,7 +180,7 @@ En tant qu'administrateur, vous ne pouvez pas afficher toutes les organisations 
 Il s'agit d'une limitation de l'interface utilisateur {{site.data.keyword.Bluemix_notm}}.
 {: tsCauses}
 
-Vous pouvez utiliser des commandes telles que `cf orgs`, `cf create-org` et `cf delete-org` à partir de l'interface de ligne de commande Cloud Foundry pour gérer toutes les organisations. Pour obtenir une liste complète des commandes cf, entrez `cf help`.
+Vous pouvez utiliser des commandes telles que `cf orgs`, `cf create-org` et `cf delete-org` à partir de l'interface de ligne de commande Cloud Foundry pour gérer toutes les organisations. Pour obtenir une liste complète des commandes Cloud Foundry, entrez `cf help`.
 {: tsResolve}
 
 ## La carte de crédit ne peut pas être ajoutée
@@ -191,13 +191,13 @@ Vous ne pouvez pas soumettre vos informations de carte de crédit pour convertir
 Le bouton **Soumettre** sur la page Ajout d'une carte de crédit est désactivé.
 {: tsSymptoms}
 
-Ce problème survient lorsque vos informations ne sont pas remplies correctement sur la page Ajout d'une carte de crédit.
+Ce problème survient lorsque vos informations ne sont pas entrées correctement sur la page Ajout d'une carte de crédit.
 {: tsCauses}
 
 
 Procédez comme suit :
 {: tsResolve}
 
-  1. Sur la page Ajout d'une carte de crédit, remplissez toutes les zones requises qui se trouvent dans les sections relatives aux coordonnées, à l'adresse de contact et à l'adresse de facturation.
+  1. Sur la page Ajout d'une carte de crédit, renseignez toutes les zones requises dans les sections relatives aux coordonnées, à l'adresse de contact et à l'adresse de facturation.
   2. Sélectionnez **I have read and agree to IBM's Terms and Conditions**, puis cliquez sur **Soumettre**. La section **Select a payment method** s'affiche.
   3. Entrez votre numéro de carte de crédit, la date d'expiration ainsi que le code de sécurité. Cliquez sur **Soumettre**.

@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-11-12"
+lastupdated: "2018-11-19"
 
 ---
 
@@ -16,10 +16,10 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:download: .download}
 
-# Vidéo : Compte {{site.data.keyword.cloud_notm}} Lite
+# Vidéo - Compte {{site.data.keyword.cloud_notm}} Lite 
 {: #show_me_video}
 
-Le compte Lite est un compte gratuit qui n'expire jamais. Quels sont les services offerts avec un compte Lite ? Découvrez les services disponibles avec des plans Lite gratuits et d'autres fonctions de compte dans cette vidéo.
+Le compte Lite est un compte gratuit qui n'expire jamais. Quels sont les services offerts dans un compte Lite ? Découvrez les services disponibles avec des plans Lite gratuits et d'autres fonctions de compte dans cette vidéo.
 {: shortdesc}
 
 <p>

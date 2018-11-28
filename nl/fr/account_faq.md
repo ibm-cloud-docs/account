@@ -33,9 +33,9 @@ Pour plus d'informations sur la gestion des organisations et des espaces, voir [
 ## Puis-je déplacer une organisation dans un autre compte ?
 {: #move-org-diff-account}
 
-Vous ne pouvez pas actuellement migrer une organisation dans un autre compte. 
+Vous ne pouvez pas faire migrer une organisation vers un compte différent. 
 
-## Que puis-je faire si une erreur survient lors de la création de mon compte ?
+## Que puis-je faire si j'obtiens une erreur lors de la création de mon compte ?
 {: #account-error}
 
 Vous pouvez ouvrir un ticket de demande de service.
@@ -43,7 +43,7 @@ Vous pouvez ouvrir un ticket de demande de service.
 * Pour ouvrir un ticket de demande de service depuis le centre de support, cliquez sur **Ouvrir un ticket** dans la section Obtenir de l'aide.
 * Pour ouvrir un ticket de demande de service à partir de la barre de menus de la console IBM Cloud, cliquez sur **Support** &gt; **Ajouter un ticket**.
 
-Une fois que vous avez ouvert un ticket de demande de service, vous recevez une notification par courrier électronique. Suivez les instructions figurant dans le courrier électronique pour toute communication supplémentaire relative au problème.
+Après avoir ouvert un ticket de demande de service, vous recevez une notification par courrier électronique. Suivez les instructions figurant dans le courrier électronique pour toute communication supplémentaire relative au problème.
 
 ## Quelles régions Cloud Foundry puis-je utiliser ?
 {: #whichregions}
@@ -134,16 +134,16 @@ Une fois que vous avez lié votre compte, vous conservez le même niveau de supp
 ## Existe-t-il d'autres moyens pour obtenir de l'aide relative à la liaison de mon compte ? 
 {: #al_morehelp}
 
-  1. Consultez le site [Steps to Link your IaaS and PaaS Accounts blog](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/) pour obtenir des informations utiles.
+  1. Pour plus d'informations, voir [Steps to Link your IaaS and PaaS Accounts blog](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/).
   2. A partir du portail client de l'infrastructure {{site.data.keyword.BluSoftlayer_full}}, ouvrez une session de **discussion en ligne avec le service commercial** pour poser des questions relatives à votre compte.
-  3. Ouvrez un ticket à partir du portail client de l'infrastructure {{site.data.keyword.BluSoftlayer_full}}.  Sélectionnez **Support** > **Ajouter un ticket**, puis, dans la zone **Objet**, sélectionnez **Demande pour comptabilisation** pour acheminer votre question sur votre compte à l'équipe de support appropriée.
+  3. Ouvrez un ticket à partir du portail client de l'infrastructure {{site.data.keyword.BluSoftlayer_full}}. Sélectionnez **Support** > **Ajouter un ticket**, puis, dans la zone **Objet**, sélectionnez **Demande pour comptabilisation** pour acheminer votre question sur votre compte à l'équipe de support appropriée.
 
-Si vous êtes responsable de compte, consultez la rubrique [Gestion des utilisateurs](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) pour en savoir plus sur la gestion des utilisateurs.
+Si vous êtes le responsable du compte, consultez [Gestion des utilisateurs](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) pour en savoir plus sur la gestion des utilisateurs.
 
-## Comment puis-je lier mon compte si j'en possède plusieurs ?
+## Comment puis-je lier mon compte si je possède plusieurs comptes ?
 {: #al_multacct}
 
-Si vous possédez plusieurs comptes SoftLayer, vous devez lier les comptes auxquels un compte de plateforme {{site.data.keyword.Bluemix_notm}} correspond et un compte IBMid est associé.
+Si vous possédez plusieurs comptes SoftLayer, vous devez lier les comptes ayant un compte de plateforme {{site.data.keyword.Bluemix_notm}} correspondant et un IBMid associé.
 
 Si vous n'avez pas de compte de plateforme {{site.data.keyword.Bluemix_notm}} correspondant et de compte IBMid associé, un nouveau compte SoftLayer peut être créé pour lier les comptes.
 
@@ -167,13 +167,13 @@ Non, mais vous pouvez changer les propriétaires des ressources. Pour en savoir 
 ## Que se passe-t-il si j'ajoute des services de plateforme {{site.data.keyword.Bluemix_notm}} à mon compte SoftLayer ? 	
 {: #al_owaffslacct}
 
-Avec cet ajout, votre compte a accès à toutes les offres de la plateforme {{site.data.keyword.Bluemix_notm}}.  Une fois que vous avez ajouté l'offre de plateforme {{site.data.keyword.Bluemix_notm}} à votre compte, votre responsable de compte doit activer l'accès à l'offre pour l'utilisateur final.
+Avec cet ajout, votre compte a accès à toutes les offres de la plateforme {{site.data.keyword.Bluemix_notm}}. Une fois que vous avez ajouté l'offre de plateforme {{site.data.keyword.Bluemix_notm}} à votre compte, votre responsable de compte doit activer l'accès à l'offre pour l'utilisateur.
 
-Si vous êtes responsable de compte, consultez la rubrique [Gestion des utilisateurs](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) pour en savoir plus.
+Si vous êtes le responsable du compte, consultez [Gestion des utilisateurs](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) pour obtenir des informations additionnelles.
 
 ## De quelle manière la liaison de compte impacte-t-elle mon ID de compte principal SoftLayer ? 	
 {: #al_howaffslmastacct}
 
-Vous pouvez toujours utiliser l'ID de votre compte SoftLayer pour vous connecter au portail client de l'infrastructure {{site.data.keyword.BluSoftlayer_full}} car la console {{site.data.keyword.Bluemix_notm}} est accessible à l'aide d'ID IBMid.
+Vous pouvez toujours utiliser l'ID de votre compte SoftLayer pour vous connecter au portail client de l'infrastructure {{site.data.keyword.BluSoftlayer_full}} car la console {{site.data.keyword.Bluemix_notm}} est accessible à l'aide des IBMid.
 
 

@@ -41,12 +41,12 @@ Le mot de passe que vous avez utilisé pour vous connecter à {{site.data.keywor
 
 Utilisez l'une des solutions suivantes :
 {: tsResolve}
- * Entrez le mot de passe correct. Pour vérifier si l'IBMid et le mot de passe sont valides, accédez à la page My IBM profile, cliquez sur **Log in** et entrez votre IBMid et votre mot de passe sur la page Log in.
- * Si vous avez oublié votre mot de passe, cliquez sur **Forgot your password** pour le réinitialiser. Accédez ensuite à la [console {{site.data.keyword.Bluemix_notm}}](https://console.{DomainName}) ou au [portail client](https://control.softlayer.com) et connectez-vous à nouveau.
- * Si vous avez oublié votre IBMid ou que les problèmes avec votre mot de passe persistent, prenez contact avec le service Worldwide IBM Registration Helpdesk pour obtenir de l'aide.
- * Pour obtenir un IBMid et un mot de passe valides, accédez à la page My IBM profile, puis cliquez sur **Register**.
+ * Entrez le mot de passe correct. Pour vérifier si votre IBMid et votre mot de passe sont valides, accédez à la page My IBM profile, cliquez sur Log in et entrez votre IBMid et votre mot de passe sur la page de connexion.
+ * Si vous avez oublié votre mot de passe, cliquez sur **Mot de passe oublié ?** pour le réinitialiser. Retournez ensuite à la console [{{site.data.keyword.Bluemix_notm}}](https://console.{DomainName}) ou au [portail client](https://control.softlayer.com) puis reconnectez-vous.
+ * Si vous avez oublié votre IBMid ou que les problèmes avec votre mot de passe persistent, contactez le centre d'assistance international d'IBM pour obtenir de l'aide.
+ * Pour obtenir un IBMid et un mot de passe valides, accédez à la page My IBM profile, puis cliquez sur **Enregistrement**.
 
-**Remarque :** si vous vous trouvez sur la page Sign in to IBM et que le processus de connexion est interrompu, quelle qu'en soit la raison (réinitialisation de votre mot de passe, par exemple), accédez à nouveau à la [{{site.data.keyword.Bluemix_notm}} console](https://console.{DomainName}) ou au [portail client](https://control.softlayer.com) et relancez le processus de connexion.
+**Remarque :** si vous vous trouvez sur la page d'inscription et que le processus de connexion est interrompu, quelle qu'en soit la raison (réinitialisation de votre mot de passe, par exemple), accédez à nouveau à la [console {{site.data.keyword.Bluemix_notm}}](https://console.{DomainName}) ou au [portail client](https://control.softlayer.com) et relancez le processus de connexion.
 
 
 ## Données d'identification incorrectes
@@ -57,15 +57,15 @@ Lorsque vous vous connectez à l'aide de votre IBMid, le message suivant s'affic
 
 `Données d'identification incorrectes. Si vous possédez un IBMid associé à votre compte, connectez-vous ici`
 
-* Vous utilisez désormais un IBMid, mais vous avez tenté de vous connecter via le [portail client](https://control.softlayer.com) à l'aide de votre nom d'utilisateur et de votre mot mot de passe précédents.
+* Vous utilisez désormais un IBMid, mais vous avez tenté de vous connecter via le [portail client](https://control.softlayer.com) à l'aide de votre nom d'utilisateur et de votre mot de passe précédent.
 {: tsCauses}
 
-* Vous avez tenté de vous connecter via le [portail client](https://control.softlayer.com) mais avez entré votre IBMid et le mot de passe dans les zones Username et Password.
+* Vous avez tenté de vous connecter via le [portail client](https://control.softlayer.com) mais avez entré votre IBMid et le mot de passe dans les zones de nom d'utilisateur et de mot de passe.
 
-Cliquez sur **log in here** dans le message ou accédez à la section IBMid Account Login et cliquez sur **Log in with IBMid**.
+Cliquez sur **vous connecter ici** dans le message ou accédez à la section IBMid Account Login et cliquez sur **Connexion par ID IBM**.
 {: tsResolve}
 
-N'utilisez pas les zones **Username** et **Password** que vous utilisiez avec votre ID précédent.
+N'utilisez pas les zones **Nom d'utilisateur** et **Mot de passe** utilisées avec votre ID précédent.
 
 
 ## IBMid ou adresse électronique non reconnu
@@ -76,12 +76,12 @@ Lorsque vous vous connectez à la console {{site.data.keyword.Bluemix_notm}}, le
 
 `Nous ne reconnaissons pas cet IBMid ou cette adresse électronique. `
 
-Vous avez tenté de vous connecter à la console {{site.data.keyword.Bluemix_notm}} avec un IBMid qui n'est pas valide. Par exemple, vous n'avez pas entré une adresse électronique qualifiée complète pour l'IBMid ou vous avez tenté d'utiliser vos nom d'utilisateur et mot de passe précédents.
+Vous avez tenté de vous connecter à la console {{site.data.keyword.Bluemix_notm}} avec un IBMid qui n'est pas valide. Par exemple, vous n'avez pas entré une adresse électronique complète pour l'IBMid ou vous avez tenté d'utiliser un nom d'utilisateur et un mot de passe antérieurs.
 {: tsCauses}
 
 Vous devez disposer d'un IBMid et d'un mot de passe valides pour vous connecter à {{site.data.keyword.Bluemix_notm}}.
 
- * Prenez soin d'entrer une adresse électronique qualifiée complète pour l'IBMid.
+ * Prenez soin d'entrer une adresse électronique complète pour l'IBMid.
  {: tsResolve}
  * Si vous êtes utilisateur SoftLayer disposant d'un ID SoftLayer, vous devez utiliser l'authentification IBMid dans le portail client de chaque compte auquel vous avez accès pour pouvoir vous connecter via l'authentification IBMid.
  Pour plus d'informations, voir [Passage à l'IBMid](/docs/account/softlayerlink.html).
@@ -98,13 +98,13 @@ Lorsque vous vous connectez à l'aide de votre IBMid, le message suivant s'affic
 Vous vous êtes connecté à partir du [portail client](https://control.softlayer.com) à l'aide d'un IBMid valide, mais vous utilisez désormais l'authentification via IBMid à partir du portail client.
 {: tsCauses}
 
-Effectuez les vérifications suivantes :
+Procédez aux vérifications suivantes :
 {: tsResolve}
  * Prenez contact avec votre utilisateur principal ou votre administrateur de compte pour vérifier que vous pouvez passer à l'authentification via IBMid.
  * Prenez soin d'exécuter l'étape de passage à l'IBMid. Voir [Passage à l'IBMid](/docs/account/softlayerlink.html).
  * Prenez soin d'exécuter les actions décrites dans le courrier électronique **Associate your user ID with an IBMid**. Recherchez le courrier électronique dans votre boîte de réception et dans votre dossier de courrier indésirable. Pour que le courrier électronique vous soit de nouveau envoyé s'il a expiré, accédez à la page Modifier profil utilisateur dans le portail client puis cliquez sur **Renvoyer le courrier électronique**. Vous pouvez également contacter le Support [{{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](http://ibm.biz/bluemixsupport.com){: new_window}.
 
-Selon la configuration de votre compte, certaines des options de connexion suivantes peuvent s'appliquer à votre cas :
+Suivant la manière dont votre compte est configuré, certaines options de connexion peuvent s'appliquer à votre cas :
  * Les utilisateurs SoftLayer associés à des ID SoftLayer doivent se connecter via le [portail client](https://control.softlayer.com).
  * Les utilisateurs SoftLayer disposant d'un IBMid et possédant ou non un compte {{site.data.keyword.Bluemix_notm}} lié peuvent se connecter via le [portail client](https://control.softlayer.com) pour ouvrir ce dernier ou via la [{{site.data.keyword.Bluemix_notm}} console](https://console.{DomainName}) pour ouvrir le tableau de bord Infrastructure.
 
@@ -123,7 +123,7 @@ Vous vous êtes connecté à partir de la console [{{site.data.keyword.Bluemix_n
 Pour créer un compte {{site.data.keyword.Bluemix_notm}}, suivez le processus d'inscription.
 {: tsResolve}
 
-Selon la configuration de votre compte, certaines des options de connexion suivantes peuvent s'appliquer à votre cas :
+Suivant la manière dont votre compte est configuré, certaines options de connexion peuvent s'appliquer à votre cas :
  * Les utilisateurs {{site.data.keyword.Bluemix_notm}} ne possédant pas de compte lié doivent se connecter via la console {{site.data.keyword.Bluemix_notm}}.
  * Les utilisateurs {{site.data.keyword.Bluemix_notm}} possédant un compte lié peuvent se connecter via la [{{site.data.keyword.Bluemix_notm}} console](https://console.{DomainName}) ou le [portail client](https://control.softlayer.com).
 
@@ -166,7 +166,7 @@ Après avoir procédé à votre enregistrement pour un compte Lite {{site.data.k
 Après avoir procédé à votre enregistrement pour un compte Lite {{site.data.keyword.Bluemix_notm}}, vous recevez une confirmation par courrier électronique. Cliquez sur le lien que contient ce courrier électronique pour compléter le processus d'enregistrement.
 {: tsCauses}
 
-La confirmation par courrier électronique est envoyée à l'adresse de courrier électronique que vous avez indiquée. Vérifiez votre boîte de réception et votre dossier de courrier indésirable. Si vous ne recevez pas de confirmation par courrier électronique, contactez le [support {{site.data.keyword.Bluemix_notm}}  ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](http://ibm.biz/bluemixsupport.com){: new_window}.  
+La confirmation par courrier électronique est envoyée à l'adresse de courrier électronique que vous avez indiquée. Vérifiez votre boîte de réception et votre dossier de courrier indésirable. Si vous ne recevez pas de confirmation par courrier électronique, contactez le [support {{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](http://ibm.biz/bluemixsupport.com){: new_window}.  
 {: tsResolve}
 
 ## La page {{site.data.keyword.Bluemix_notm}} ne peut pas être chargée
