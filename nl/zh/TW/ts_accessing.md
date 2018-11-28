@@ -41,12 +41,12 @@ lastupdated: "2018-07-09"
 
 使用下列其中一個解決方案：
 {: tsResolve}
- * 輸入正確的密碼。若要檢查您的 IBM ID 和密碼是否有效，您可以移至「我的 IBM 設定檔」頁面，按一下**登入**，然後在「登入」頁面上輸入您的 IBM ID 和密碼。
+ * 輸入正確的密碼。若要檢查您的 IBM ID 和密碼是否有效，您可以移至「我的 IBM 設定檔」頁面，按一下「登入」，然後在「登入」頁面上輸入您的 IBM ID 和密碼。
  * 如果您忘記密碼，請按一下**忘記密碼**來重設密碼。然後，回到 [{{site.data.keyword.Bluemix_notm}} 主控台](https://console.{DomainName})或[客戶入口網站](https://control.softlayer.com)，再重新登入。
- * 如果您忘記 IBM ID 或是持續發生密碼問題，請與 Worldwide IBM Registration Help Desk 聯絡以取得協助。
+ * 如果您忘記 IBM ID 或是持續發生密碼問題，請與全球的 IBM Registration Help Desk 聯絡以取得協助。
  * 若要取得有效的 IBM ID 和密碼，請移至「我的 IBM 設定檔」頁面，然後按一下**登錄**。
 
-**附註：**如果您在「登入 IBM」頁面上，而登入處理程序因任何原因（例如，正在重設密碼）而中斷，請回到 [{{site.data.keyword.Bluemix_notm}} 主控台](https://console.{DomainName})或[客戶入口網站](https://control.softlayer.com)，然後再重新開始登入處理程序。
+**附註：**如果您在登入頁面上，而登入處理程序因任何原因（例如，正在重設密碼）而中斷，請回到 [{{site.data.keyword.Bluemix_notm}} 主控台](https://console.{DomainName})或[客戶入口網站](https://control.softlayer.com)，然後再重新開始登入處理程序。
 
 
 ## 登入認證無效
@@ -60,7 +60,7 @@ lastupdated: "2018-07-09"
 * 您已切換至 IBM ID，但嘗試使用先前的使用者名稱及密碼，透過[客戶入口網站](https://control.softlayer.com)登入。
 {: tsCauses}
 
-* 您嘗試透過[客戶入口網站](https://control.softlayer.com)登入，卻在「使用者名稱」及「密碼」欄位中輸入您的 IBM ID 和密碼。
+* 您嘗試透過[客戶入口網站](https://control.softlayer.com)登入，卻在使用者名稱及密碼欄位中輸入您的 IBM ID 和密碼。
 
 按一下訊息中的**在這裡登入**，或移至「IBM ID 帳戶登入」區段，然後按一下**使用 IBM ID 登入**。
 {: tsResolve}
@@ -97,13 +97,13 @@ lastupdated: "2018-07-09"
 您已從[客戶入口網站](https://control.softlayer.com)使用有效的 IBM ID 進行登入，但未從客戶入口網站切換至 IBM ID 鑑別。
 {: tsCauses}
 
-請視情況完成下列檢查：
+請完成下列檢查：
 {: tsResolve}
  * 與主要使用者或帳戶管理者聯絡，確定您可以切換至 IBM ID 鑑別。
  * 確定您完成「切換至 IBM ID」步驟。請參閱[切換至 IBM ID](/docs/account/softlayerlink.html)。
  * 確定您遵循**建立使用者 ID 與 IBM ID 的關聯**電子郵件中的動作。檢查您的收件匣及垃圾郵件資料夾，以尋找此電子郵件。若要重新取得電子郵件（例如，如果它已到期），請移至客戶入口網站中的「編輯使用者設定檔」頁面，然後按一下**重新傳送電子郵件**。或者，請與 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/bluemixsupport.com){: new_window} 聯絡。
 
-視帳戶的設定方式而定，您可能可以使用其中一些登入選項：
+視帳戶的設定方式而定，您可能可以使用一些登入選項：
  * 具有 SoftLayer ID 的 SoftLayer 使用者必須透過[客戶入口網站](https://control.softlayer.com)登入。
  * 具有 IBM ID 並且具有（或沒有）已鏈結 {{site.data.keyword.Bluemix_notm}} 帳戶的 SoftLayer 使用者，可以透過[客戶入口網站](https://control.softlayer.com)登入來開啟客戶入口網站，或透過 [{{site.data.keyword.Bluemix_notm}} 主控台](https://console.{DomainName})來開啟「基礎架構」儀表板。
 
@@ -122,7 +122,7 @@ lastupdated: "2018-07-09"
 若要建立 {{site.data.keyword.Bluemix_notm}} 帳戶，請遵循註冊處理程序。
 {: tsResolve}
 
-視帳戶的設定方式而定，您可能可以使用其中一些登入選項：
+視帳戶的設定方式而定，您可能可以使用一些登入選項：
  * 沒有已鏈結帳戶的 {{site.data.keyword.Bluemix_notm}} 使用者必須透過 {{site.data.keyword.Bluemix_notm}} 主控台登入。
  * 具有已鏈結帳戶的 {{site.data.keyword.Bluemix_notm}} 使用者可以透過 [{{site.data.keyword.Bluemix_notm}} 主控台](https://console.{DomainName})或[客戶入口網站](https://control.softlayer.com)登入。
 
@@ -165,7 +165,7 @@ IBM ID 鑑別服務可能有問題。
 在登錄取得 {{site.data.keyword.Bluemix_notm}} 精簡帳戶之後，您會收到一封確認電子郵件。您必須按一下此封確認電子郵件中的鏈結，才能完成登錄程序。
 {: tsCauses}
 
-確認電子郵件會寄送到您提供的電子郵件位址。檢查您的收件匣和垃圾郵件資料夾。如果您尚未收到確認電子郵件，請與 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/bluemixsupport.com){: new_window} 聯絡。  
+確認電子郵件會寄送到您提供的電子郵件位址。檢查您的收件匣和垃圾郵件資料夾。如果您未收到確認電子郵件，請與 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/bluemixsupport.com){: new_window} 聯絡。  
 {: tsResolve}
 
 ## 無法載入 {{site.data.keyword.Bluemix_notm}} 頁面

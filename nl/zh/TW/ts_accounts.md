@@ -21,7 +21,7 @@ lastupdated: "2018-09-25"
 # 管理帳戶的疑難排解
 {: #managingaccounts}
 
-管理帳戶的一般問題，可能包括不同應用程式共用相同的網域名稱，或是管理者無法檢視所有組織。在許多情況下，您可以遵照一些簡單的步驟，從這些問題回復。
+管理帳戶的一般問題，可能包括不同應用程式共用網域名稱，或是管理者無法檢視所有組織。在許多情況下，您可以遵照一些簡單的步驟，從這些問題回復。
 {:shortdesc}
 
 ## 無法存取不同 {{site.data.keyword.Bluemix_notm}} 地區
@@ -70,7 +70,7 @@ lastupdated: "2018-09-25"
 您無法部署應用程式，並收到錯誤，指出您已超出組織的記憶體限制。
 {: tsSymptoms}
 
-在「精簡」帳戶中，Cloud Foundry 應用程式可以同時使用最多 256 MB 的運行環境記憶體。在計費帳戶中，則是 2GB 的記憶體限制。
+在「精簡」帳戶中，Cloud Foundry 應用程式可以同時使用最多 256 MB 的運行環境記憶體。在計費帳戶中，則是 2 GB 的記憶體限制。
 {: tsCauses}
 
 如果您使用的是「精簡」帳戶，則可以升級至計費帳戶來取得其他記憶體。請移至主控台中的**管理 > 計費及用量 > 計費**頁面，然後按一下**新增信用卡**。
@@ -155,10 +155,10 @@ lastupdated: "2018-09-25"
   * 在 Cloud Foundry 指令行介面中，鍵入 `cf create-space <space_name> -o <organization_name>`。
 
 
-## 應用程式共用相同的網域名稱
+## 應用程式共用網域名稱
 {: #ts_domain_diff}
 
-您可能注意到 {{site.data.keyword.Bluemix_notm}} 中有數個應用程式共用相同的 URL。
+您可能注意到 {{site.data.keyword.Bluemix_notm}} 中有數個應用程式共用 URL。
 
 當您將相同的 URL 路徑指派給空間中的不同應用程式時，可能就會發生此問題。
 {: tsCauses}
@@ -180,7 +180,7 @@ lastupdated: "2018-09-25"
 這是 {{site.data.keyword.Bluemix_notm}} 使用者介面的限制。
 {: tsCauses}
 
-您可以從 Cloud Foundry 指令行介面使用 `cf orgs`、`cf create-org` 及 `cf delete-org` 之類的指令來管理所有組織。如需完整的 cf 指令清單，請輸入 `cf help`。
+您可以從 Cloud Foundry 指令行介面使用 `cf orgs`、`cf create-org` 及 `cf delete-org` 之類的指令來管理所有組織。如需完整的 Cloud Foundry 指令清單，請輸入 `cf help`。
 {: tsResolve}
 
 ## 無法新增信用卡

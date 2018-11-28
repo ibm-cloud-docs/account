@@ -19,7 +19,7 @@ lastupdated: "2018-09-14"
 ## 如何建立帳戶？
 {: #create-account}
 
-前往 https://console.bluemix.net，按一下**建立免費帳戶**以建立「精簡」帳戶，此帳戶永不到期。 
+前往 https://console.bluemix.net 並按一下**建立免費帳戶**，以建立永不到期的「精簡」帳戶。 
 
 如需包含特性的相關詳細資料，請參閱[精簡帳戶](/docs/account/index.html#liteaccount)。
 
@@ -33,7 +33,7 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 ## 我可以將組織移到另一個帳戶嗎？
 {: #move-org-diff-account}
 
-目前您無法將組織移轉至其他帳戶。 
+您無法將組織移轉至其他帳戶。 
 
 ## 建立帳戶時發生錯誤怎麼辦？
 {: #account-error}
@@ -135,18 +135,18 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 ## 是否有其他方法可以取得鏈結帳戶的協助？ 
 {: #al_morehelp}
 
-  1. 請參閱 [Steps to Link your IaaS and PaaS Accounts blog](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/) 以取得有用的資訊。
+  1. 如需相關資訊，請參閱 [Steps to Link your IaaS and PaaS Accounts](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/) 部落格。
   2. 從 {{site.data.keyword.BluSoftlayer_full}} 基礎架構客戶入口網站，開啟 **Sales Live Chat** 來詢問帳戶問題。
   3. 從 {{site.data.keyword.BluSoftlayer_full}} 基礎架構客戶入口網站開立問題單。選取**支援** > **新增問題單**，然後在**主旨**欄位中，選取**帳戶要求**，將您的帳戶問題遞送給正確的支援團隊。
 
-如果您是帳戶管理員，請參閱[處理使用者](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage)，以取得管理使用者的相關資訊。
+如果您是帳戶管理員，請參閱[處理使用者](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage)，以取得相關資訊。
 
-## 如果我有多個帳戶，要怎麼鏈結我的帳戶？
+## 如果我有數個帳戶，要怎麼鏈結我的帳戶？
 {: #al_multacct}
 
-如果您有多個 SoftLayer 帳戶，則必須鏈結具有相符 {{site.data.keyword.Bluemix_notm}} 平台帳戶的帳戶，以及隨附的 IBM ID。
+如果您有數個 SoftLayer 帳戶，則必須鏈結具有相符 {{site.data.keyword.Bluemix_notm}} 平台帳戶的帳戶，以及相應的 IBM ID。
 
-如果您沒有相符的 {{site.data.keyword.Bluemix_notm}} 平台帳戶，以及隨附的 IBM ID 帳戶，則可以建立新的 SoftLayer 帳戶來鏈結帳戶。
+如果您沒有相符的 {{site.data.keyword.Bluemix_notm}} 平台帳戶，以及相應的 IBM ID 帳戶，則可以建立新的 SoftLayer 帳戶來鏈結帳戶。
 
 ## 鏈結帳戶有獎勵嗎？ 	
 {: #al_incent}
@@ -155,7 +155,7 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 
 若要進一步瞭解 200 美元的促銷額度，請參閱[隨收隨付制帳戶](/docs/account/index.html#paygo)。 
 
-## 如何在多個帳戶之間切換？
+## 如何在數個帳戶之間切換？
 {: #switch-between-accounts}
 
 若要在帳戶之間切換，請移至 **{{site.data.keyword.avatar}}** 圖示 ![虛擬人像圖示](../icons/i-avatar-icon.svg)，按一下**帳戶**功能表，再選取另一個帳戶。 
@@ -168,7 +168,7 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 ## 將 {{site.data.keyword.Bluemix_notm}} 平台服務新增至我的 SoftLayer 帳戶有什麼涵義？ 	
 {: #al_owaffslacct}
 
-這表示您的帳戶可以存取所有 {{site.data.keyword.Bluemix_notm}} 平台供應項目。將 {{site.data.keyword.Bluemix_notm}} 平台供應項目新增至帳戶之後，您的帳戶管理員將需要讓一般使用者能夠存取供應項目。
+這表示您的帳戶可以存取所有 {{site.data.keyword.Bluemix_notm}} 平台供應項目。將 {{site.data.keyword.Bluemix_notm}} 平台供應項目新增至帳戶之後，您的帳戶管理員將需要讓使用者能夠存取供應項目。
 
 如果您是帳戶管理員，請參閱[處理使用者](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage)，以取得相關資訊。
 

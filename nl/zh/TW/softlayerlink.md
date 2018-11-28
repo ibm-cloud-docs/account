@@ -52,7 +52,7 @@ SoftLayer 中的鑑別現在使用 IBM ID 來提供所有 {{site.data.keyword.Bl
    在「帳戶登入」提示中，移至 **IBM ID 帳戶登入**區段，然後按一下**使用 IBM ID 登入**。請不要使用您之前用於 Softlayer ID 的**使用者名稱**和**密碼**欄位。
 
 如果您是新客戶，當您查看訂單時，系統會要求您提供現有的 IBM ID 或建立新的 IBM ID。
-  * 若要使用現有的 IBM ID，請輸入使用者名稱，或唯一的 IBM ID 電子郵件位址（亦即，不是多個 IBM ID 所共用的）。
+  * 若要使用現有的 IBM ID，請輸入使用者名稱，或 IBM ID 的電子郵件位址（如果它未在多個 IBM ID 之間共用的話）。
   * 若要建立新的 IBM ID，請輸入目前未被任何 IBM ID 使用的電子郵件位址。此電子郵件位址是 IBM ID 的使用者名稱，而且是在建立 IBM ID 之後傳送登錄碼的位置。您之後可以更新與 IBM ID 相關聯的電子郵件位址，但是無法變更使用者名稱。
 
 若要解決使用 IBM ID 進行登入的所有問題，請參閱 [{{site.data.keyword.Bluemix_notm}} 存取的疑難排解](/docs/account/ts_accessing.html#accessing)。
@@ -71,7 +71,7 @@ SoftLayer 中的鑑別現在使用 IBM ID 來提供所有 {{site.data.keyword.Bl
 2. 從「帳戶摘要」頁面，按一下**新增功能！鏈結 Bluemix 帳戶**。
 3. 檢閱使用條款，並按一下以確認接受。
 4. 根據帳戶的設定方式，完成下列其中一個最終步驟：
-  * 如果您的 IBM ID 有相關聯的 {{site.data.keyword.Bluemix_notm}} 帳戶，會導向至授權頁面，然後回到最終確認步驟。
+  * 如果您的 IBM ID 有相關聯的 {{site.data.keyword.Bluemix_notm}} 帳戶，您會被導向授權頁面，然後回到最終確認步驟。
   * 如果您沒有相關聯的 {{site.data.keyword.Bluemix_notm}} 帳戶，則系統會提示您建立新帳戶。
 
 若要查看有關鏈結帳戶的一般問與答，請參閱[常見問題](/docs/account/account_faq.html#al_login)。
@@ -82,7 +82,7 @@ SoftLayer 中的鑑別現在使用 IBM ID 來提供所有 {{site.data.keyword.Bl
 在您的使用者帳戶切換至 IBM ID 鑑別之後，轉銷商及經銷商就可以鏈結他們的使用者帳戶。您必須是 SoftLayer 主要使用者，才能鏈結客戶帳戶。作為帳戶之主要使用者的 IBM ID 必須是您所要鏈結的 {{site.data.keyword.Bluemix_notm}} 平台帳戶的擁有者。請務必檢閱鏈結帳戶的下列重要注意事項：
 
   * 所鏈結 SoftLayer 帳戶的主要使用者必須具有 IBM ID。
-  * 您鏈結至 {{site.data.keyword.Bluemix_notm}} 帳戶的每一個使用者帳戶，都必須為具有唯一電子郵件位址的唯一 IBM ID 所擁有。即使單一 IBM ID 可以擁有多個 SoftLayer 帳戶，您還是必須為每一個帳戶將主要使用者變更為唯一 IBM ID。請與支援中心聯絡，以變更 SoftLayer 帳戶的主要使用者。如需相關資訊，請參閱[取得 {{site.data.keyword.Bluemix_notm}} 基礎架構的支援](/docs/customer-portal/cpsupport.html)。
+  * 您鏈結至 {{site.data.keyword.Bluemix_notm}} 帳戶的每一個使用者帳戶，都必須為具有唯一電子郵件位址的唯一 IBM ID 所擁有。即使單一 IBM ID 可以擁有數個 SoftLayer 帳戶，您還是必須為每一個帳戶將主要使用者變更為唯一 IBM ID。請與支援中心聯絡，以變更 SoftLayer 帳戶的主要使用者。如需相關資訊，請參閱[取得 {{site.data.keyword.Bluemix_notm}} 基礎架構的支援](/docs/customer-portal/cpsupport.html)。
   * 將新使用者新增至已鏈結帳戶時，您必須將他們同時新增至 SoftLayer 帳戶及 {{site.data.keyword.Bluemix_notm}} 帳戶，他們才能存取統一主控台的所有功能。
   * 如果您有品牌帳戶、使用 Brand Agent Portal (BAP)，而且在鏈結帳戶時需要支援，則請傳送電子郵件到下列位址以與 Revenue Services 團隊聯絡：softlayer_revenue_services_team@wwpdl.vnet.ibm.com。
   * {{site.data.keyword.Bluemix_notm}} 中的所有已鏈結帳戶都必須是「隨收隨付制」帳戶。您可以建立新的「隨收隨付制」帳戶、鏈結現有「隨收隨付制」帳戶，或鏈結現有試用帳戶，而試用帳戶接著會升級至「隨收隨付制」帳戶。您無法鏈結至 {{site.data.keyword.Bluemix_notm}} 訂閱帳戶。
@@ -96,14 +96,15 @@ SoftLayer 中的鑑別現在使用 IBM ID 來提供所有 {{site.data.keyword.Bl
    5. 看到提示時，請執行下列其中一個動作：
      * 如果您已有 {{site.data.keyword.Bluemix_notm}} 帳戶，請提供與該帳戶相關聯的電子郵件位址來鏈結帳戶。
      * 如果您沒有 {{site.data.keyword.Bluemix_notm}} 帳戶，請提供您要使用的電子郵件位址，並遵循指示以受邀加入 {{site.data.keyword.Bluemix_notm}}，然後建立帳戶。
-   6. 在您鏈結帳戶之後，請遵循前面[切換至 IBM ID](/docs/account/softlayerlink.html#switchtoIBMid) 一節中所述的程序，通知每一個帳戶的一般使用者以移轉至 IBM ID。
+   6. 在您鏈結帳戶之後，請遵循前面[切換至 IBM ID](/docs/account/softlayerlink.html#switchtoIBMid) 一節中所述的程序，通知每一個帳戶的使用者移轉至 IBM ID。
 
-僅將一般使用者帳戶移轉至 IBM ID。請不要移轉品牌帳戶，這是一般使用者帳戶的母帳戶，未包含任何資源。移轉至 IBM ID 的品牌帳戶使用者將無法登入 Brand Agent Portal (BAP)。
+請您只將使用者帳戶移轉至 IBM ID。請不要移轉品牌帳戶，這是使用者帳戶的母帳戶，未包含任何資源。移轉至 IBM ID 的品牌帳戶使用者將無法登入 Brand Agent Portal (BAP)。
 {: tip}
 
 已鏈結帳戶會登入 [{{site.data.keyword.Bluemix}} 主控台 ![外部鏈結圖示](../icons/launch-glyph.svg)](https://console.bluemix.net){: new_window}。
 
-此外，請注意鏈結帳戶之後的下列變更：
+鏈結帳戶之後，請驗證下列變更：
+
   * 您必須使用 IBM ID 認證來存取 SoftLayer 及 {{site.data.keyword.Bluemix_notm}} 帳戶。
   * 任何現有 SoftLayer 折扣都會套用至 {{site.data.keyword.Bluemix_notm}} 費用。
   * 您收到一張計價單位為美元 (USD) 的發票。如果您有現有的 {{site.data.keyword.Bluemix_notm}} 帳戶，則會在鏈結帳戶之後開始的新計費週期，透過 {{site.data.keyword.Bluemix_notm}} 收取基礎架構資源的費用。如需相關資訊，請參閱[已鏈結帳戶的合併計費](/docs/billing-usage/linking_accounts.html)。
@@ -117,6 +118,6 @@ SoftLayer 中的鑑別現在使用 IBM ID 來提供所有 {{site.data.keyword.Bl
 
 如果您具有已鏈結帳戶，則可以使用「身分及存取」的**設定**頁面來啟用帳戶的多因子鑑別 (MFA)。這通常也稱為雙因子鑑別 (2FA)，而且它會新增安全層來存取標準必要 IBM ID 及密碼以外的帳戶。您帳戶的 MFA 會套用至已鏈結 {{site.data.keyword.Bluemix_notm}} 帳戶中的所有資源。針對您的帳戶啟用它時，它也會套用至已新增至您帳戶的所有使用者。
 
-多因子鑑別不是根據 IBM ID。它是根據帳戶。當 IBM ID 與多個帳戶相關聯，且您在帳戶之間切換時，每次切換到需要雙因子鑑別的不同帳戶時都必須確認身分。即使前一個帳戶和新的帳戶都已配置相同的雙因子鑑別機制時也是如此。
+多因子鑑別不是根據 IBM ID。它是根據帳戶。當 IBM ID 與數個帳戶相關聯，且您在帳戶之間切換時，每次切換到需要雙因子鑑別的不同帳戶時都必須確認身分。即使前一個帳戶和新的帳戶都已配置相同的雙因子鑑別機制時也是如此。
 
-如果您先前在[控制入口網站啟用了基礎架構資源的 2FA](/docs/customer-portal/cpenable2fa.html#customerportal_2fa)，然後啟用了 {{site.data.keyword.Bluemix_notm}} 帳戶 MFA 設定，則 MFA 帳戶設定會置換您在控制入口網站設定的 2FA。這表示您可以停用在控制入口網站中購買的 2FA，而支持帳戶 MFA 設定。不過，如果您是聯合使用者，MFA 並不適用，因此建議您保留 2FA 控制入口網站設定，以確定基礎架構資源的安全。
+如果您先前在[控制入口網站啟用了基礎架構資源的 2FA](/docs/customer-portal/cpenable2fa.html#customerportal_2fa)，然後啟用了 {{site.data.keyword.Bluemix_notm}} 帳戶 MFA 設定，則 MFA 帳戶設定會置換您在控制入口網站設定的 2FA。您可以停用在控制入口網站中購買的 2FA，而支持帳戶 MFA 設定。不過，如果您是聯合使用者，MFA 並不適用，因此建議您保留 2FA 控制入口網站設定，以確定基礎架構資源的安全。
