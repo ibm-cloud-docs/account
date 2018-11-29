@@ -41,12 +41,12 @@ lastupdated: "2018-07-09"
 
 以下のいずれかの解決策を使用してください。
 {: tsResolve}
- * 正しいパスワードを入力します。 自分の IBM ID とパスワードが有効であるかどうかを確認するには、「My IBM 」の「プロファイル」ページに移動して、**「ログイン」**をクリックし、「ログイン」ページで IBM ID とパスワードを入力します。
+ * 正しいパスワードを入力します。 自分の IBM ID とパスワードが有効であるかどうかを確認するには、「My IBM」の「プロファイル」ページに移動して、「ログイン」をクリックし、「ログイン」ページで IBM ID とパスワードを入力します。
  * パスワードを忘れた場合は、**「パスワードを忘れた場合 (Forgot your password)」**をクリックして、パスワードをリセットします。 次に、[{{site.data.keyword.Bluemix_notm}} コンソール](https://console.{DomainName})または[カスタマー・ポータル](https://control.softlayer.com)に戻り、再度ログインします。
- * IBM ID を忘れた場合、あるいはパスワードに関する問題が続く場合は、Worldwide IBM Registration Help Desk にご相談ください。
+ * IBM ID を忘れた場合、あるいはパスワードに関する問題が続く場合は、IBMid ワールドワイド・ヘルプ・デスクにご相談ください。
  * 有効な IBM ID とパスワードを取得するには、「My IBM」の「プロファイル」ページに移動して、**「登録」**をクリックします。
 
-**注:**「Sign in to IBM」ページで、ログイン・プロセスが何らかの理由 (例えば、パスワードのリセット) で中断された場合、[{{site.data.keyword.Bluemix_notm}} コンソール](https://console.{DomainName})または[カスタマー・ポータル](https://control.softlayer.com)に戻り、ログイン・プロセスを最初からやり直してください。
+**注:** サインイン・ページで、ログイン・プロセスが何らかの理由 (例えば、パスワードのリセット) で中断された場合、[{{site.data.keyword.Bluemix_notm}} コンソール](https://console.{DomainName})または[カスタマー・ポータル](https://control.softlayer.com)に戻り、ログイン・プロセスを最初からやり直してください。
 
 
 ## 無効なログイン資格情報
@@ -98,11 +98,11 @@ IBM ID を使用してログインすると、以下のメッセージが表示�
 有効な IBM ID を使用して[カスタマー・ポータル](https://control.softlayer.com)からログインしましたが、IBM ID 認証への切り替えがカスタマー・ポータルから行われていません。
 {: tsCauses}
 
-必要に応じて、以下の確認を行ってください。
+以下の項目を確認してください。
 {: tsResolve}
  * マスター・ユーザーまたはアカウント管理者に連絡して、IBM ID 認証への切り替えが有効になっているかどうかを確認します。
  * 「IBM ID への切り替え」ステップが完了していることを確認します。 [IBM ID への切り替え](/docs/account/softlayerlink.html)を参照してください。
- * **「ユーザー ID と IBM ID の関連付け」** E メールのアクションに従っていることを確認します。 受信ボックスとジャンク・メール・フォルダーを調べて E メールを見つけてください。 この E メールを再度取得するには (例えば、有効期限が切れた場合)、カスタマー・ポータルの「ユーザー・プロファイルの編集」ページに移動し、**「E メールの再送」**をクリックします。あるいは、[{{site.data.keyword.Bluemix_notm}} サポート![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://ibm.biz/bluemixsupport.com){: new_window}に連絡してください。
+ * **「ユーザー ID と IBM ID の関連付け」** E メールのアクションに従っていることを確認します。 受信ボックスとジャンク・メール・フォルダーを調べて E メールを見つけてください。 この E メールを再度取得するには (例えば、有効期限が切れた場合)、カスタマー・ポータルの「ユーザー・プロファイルの編集」ページに移動し、**「E メールの再送」**をクリックします。 あるいは、[{{site.data.keyword.Bluemix_notm}} サポート![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://ibm.biz/bluemixsupport.com){: new_window}に連絡してください。
 
 アカウントのセットアップに応じて、以下の一部のログイン・オプションが適用されることがあります。
  * SoftLayer ID を使用する SoftLayer ユーザーは、[カスタマー・ポータル](https://control.softlayer.com)を介してログインする必要があります。
@@ -149,7 +149,7 @@ IBM ID を使用してログインすると、ログインに成功したとい�
 IBM ID 認証サービスに問題がある可能性があります。
 {: tsCauses}
 
-[IBM ホーム・ページ ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/us-en/){: new_window} にログインできるかどうか確認してください。 ログインできる場合、これはアプリケーション問題であり、後で再試行できます。 ログインできない場合、[ヘルプ・デスク ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window} にお問い合わせください。
+[IBM ホーム・ページ ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/us-en/){: new_window} にログインできるかどうか確認してください。ログインできる場合、これはアプリケーション問題であり、後で再試行できます。 ログインできない場合、[ヘルプ・デスク ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window} にお問い合わせください。
 {: tsResolve}
 
 
@@ -158,15 +158,15 @@ IBM ID 認証サービスに問題がある可能性があります。
 
 アカウントが保留になっている場合は、{{site.data.keyword.Bluemix_notm}} にログインできません。
 
-{{site.data.keyword.Bluemix_notm}} ライト・アカウントに登録した後、{{site.data.keyword.Bluemix_notm}} にログインできない場合があります。次のメッセージが表示されます。
+{{site.data.keyword.Bluemix_notm}} ライト・アカウントに登録した後、{{site.data.keyword.Bluemix_notm}} にログインできない場合があります。 次のメッセージが表示されます。
 {: tsSymptoms}
 
 <code>アカウントが保留になっています。 E メールの確認を最大 24 時間待って、スパム・フォルダーも確認してください。 それでも確認の E メールが届かない場合は、<a href="http://ibm.biz/bluemixsupport.com" target="_blank">{{site.data.keyword.Bluemix_notm}} サポート</a>までお問い合わせください。</code>
 
-{{site.data.keyword.Bluemix_notm}} ライト・アカウントに登録した後、確認の E メールが届きます。その確認 E メールに記載されたリンクをクリックして、登録プロセスを完了する必要があります。
+{{site.data.keyword.Bluemix_notm}} ライト・アカウントに登録した後、確認の E メールが届きます。 その確認 E メールに記載されたリンクをクリックして、登録プロセスを完了する必要があります。
 {: tsCauses}
 
-確認の E メールは、ユーザーが入力した E メール・アドレス宛に送信されます。 受信ボックスとスパム・フォルダーを確認してください。 確認の E メールが届かない場合は、[{{site.data.keyword.Bluemix_notm}} サポート![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://ibm.biz/bluemixsupport.com){: new_window}にお問い合わせください。  
+確認の E メールは、ユーザーが入力した E メール・アドレス宛に送信されます。 受信ボックスとスパム・フォルダーを確認してください。 確認の E メールが届かなかった場合は、[{{site.data.keyword.Bluemix_notm}} サポート![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://ibm.biz/bluemixsupport.com){: new_window}にお問い合わせください。  
 {: tsResolve}
 
 ## {{site.data.keyword.Bluemix_notm}} ページをロードできない

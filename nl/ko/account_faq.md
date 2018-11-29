@@ -33,15 +33,15 @@ Cloud Foundry는 클라우드에서 애플리케이션을 빌드하고 배치하
 ## 조직을 다른 계정으로 이동할 수 있습니까?
 {: #move-org-diff-account}
 
-현재는 조직을 다른 계정으로 마이그레이션할 수 없습니다. 
+조직을 다른 계정으로 마이그레이션할 수 없습니다.  
 
 ## 계정을 작성하는 중에 오류가 발생하면 어떻게 해야 합니까?
 {: #account-error}
 
-계정을 작성하는 중에 오류가 발생하는 경우에는 지원 티켓을 열 수 있습니다. 
+계정을 작성하는 중에 오류가 발생하는 경우에는 지원 티켓을 열 수 있습니다.
 
-* 지원 센터에서 지원 티켓을 열려면 도움 받기 섹션에서 **티켓 열기**를 클릭하십시오. 
-* IBM Cloud 콘솔 메뉴 표시줄에서 지원 티켓을 열려면 **지원** > **티켓 추가**를 클릭하십시오. 
+* 지원 센터에서 지원 티켓을 열려면 도움 받기 섹션에서 **티켓 열기**를 클릭하십시오.
+* IBM Cloud 콘솔 메뉴 표시줄에서 지원 티켓을 열려면 **지원** > **티켓 추가**를 클릭하십시오.
 
 지원 티켓을 열면 잠시 후 해당 티켓에 대한 이메일 알림을 받게 됩니다. 문제와 관련된 추가 통신은 이메일의 지시사항을 따르십시오.
 
@@ -58,7 +58,7 @@ Lite 플랜은 무료로 제공되는 할당량 기반 서비스 플랜입니다
 ## Lite 플랜 인스턴스가 월별 할당량에 도달하면 어떻게 됩니까?
 {: #monthlyquota}
 
-Lite 플랜 인스턴스의 어느 할당량에든 도달하면 해당 월에 대해 서비스가 일시중단됩니다. 할당량 한계는 인스턴스별이 아니라 조직별로 적용됩니다. 동일한 조직에서 작성된 새 인스턴스는 이전 인스턴스의 사용량을 반영합니다. 할당량 한계는 매월 1일에 재설정됩니다.
+Lite 플랜 인스턴스의 어느 할당량에든 도달하면 해당 월에 대해 서비스가 일시중단됩니다. 할당량 한계는 인스턴스별이 아니라 조직별로 적용됩니다. 동일 조직에서 작성된 새 인스턴스는 이전 인스턴스의 사용량을 반영합니다. 할당량 한계는 매월 1일에 재설정됩니다.
 
 ## 얼마나 많은 리소스 그룹, 조직 또는 영역을 작성할 수 있습니까?
 {: #resourcelimit}
@@ -73,7 +73,7 @@ Lite 플랜 인스턴스의 어느 할당량에든 도달하면 해당 월에 �
 * Lite에서 구독 계정으로 업그레이드하려면 **관리 > 청구 및 사용량 > 청구**로 이동하여 **자세히 보기**를 클릭하십시오.
 * 종량과금제 계정을 구독 계정으로 변환하려면 [{{site.data.keyword.Bluemix_notm}} 영업 팀](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg)에 문의하십시오.
 
-## Lite 계정을 업그레이드해도 기존 인스턴스를 계속 사용할 수 있습니까?
+## Lite 계정을 업그레이드해도 기존 인스턴스를 사용하여 계속할 수 있습니까?
 {: #nochange}
 
 예, 청구 가능 계정으로 업그레이드한 후에도 Lite 계정에서 작성한 인스턴스를 계속 사용할 수 있습니다.
@@ -88,9 +88,9 @@ Lite 플랜 인스턴스의 어느 할당량에든 도달하면 해당 월에 �
 
 재설정할 비밀번호에 따라 다음 선택사항을 검토하십시오.  
 
-* SoftLayer 계정 ID 및 비밀번호가 있는 경우에는 [비밀번호 관리](/docs/customer-portal/cpmanacctmanpw.html#cp_reset-your-password)를 참조하십시오.  
-* VPN 비밀번호를 재설정하려는 경우에는 [사용자의 VPN 비밀번호 업데이트](/docs/infrastructure/iaas-vpn/update-password.html#update-a-user-s-vpn-password)를 참조하십시오. 
-* IBM ID 비밀번호를 재설정하려는 경우에는 [비밀번호 찾기](https://www.ibm.com/account/us-en/forgot/forgot-password-start.html)를 참조하십시오. 
+* SoftLayer 계정 ID 및 비밀번호가 있는 경우에는 [비밀번호 관리](/docs/customer-portal/cpmanacctmanpw.html#cp_reset-your-password)를 참조하십시오. 
+* VPN 비밀번호를 재설정하려는 경우에는 [사용자의 VPN 비밀번호 업데이트](/docs/infrastructure/iaas-vpn/update-password.html#update-a-user-s-vpn-password)를 참조하십시오.
+* IBM ID 비밀번호를 재설정하려는 경우에는 [비밀번호 찾기](https://www.ibm.com/account/us-en/forgot/forgot-password-start.html)를 참조하십시오.
 
 ## 내 계정은 어떻게 취소합니까?
 {: #cancelaccount}
@@ -100,7 +100,7 @@ Lite 플랜 인스턴스의 어느 할당량에든 도달하면 해당 월에 �
 ## 내 계정은 어떻게 삭제합니까?
 {: #deleteaccount}
 
-IBM Cloud 지원 센터에 문의하여 지원 티켓을 열고 계정 삭제를 요청해야 합니다. 이전 계정과 연관된 데이터가 있어 이 데이터를 저장한 다음 새 계정으로 이동하려면 이메일에 이 정보를 포함시키십시오.
+IBM Cloud 지원 팀에 문의하여 지원 티켓을 열고 계정 삭제를 요청해야 합니다. 이전 계정과 연관된 데이터가 있어 이 데이터를 저장한 다음 새 계정으로 이동하려면 이메일에 이 정보를 포함시키십시오.
 
 ## 왜 내 계정이 비활성화되었습니까?
 {: #account-deactivated}
@@ -134,11 +134,11 @@ IBM의 재량에 따라, {{site.data.keyword.Bluemix_notm}} 서비스의 허용�
 ## 계정 연결에 대해 도움을 받는 다른 방법이 있습니까? 
 {: #al_morehelp}
 
-  1. [IaaS 및 PaaS 계정 연결을 위한 단계 블로그](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/)에서 유용한 정보를 참조하십시오.
+  1. 자세한 정보는 [IaaS 및 PaaS 계정 연결을 위한 단계 블로그](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/)를 참조하십시오.
   2. {{site.data.keyword.BluSoftlayer_full}} 인프라 포털에서 **영업 담당자와 실시간 대화**를 열어 계정 관련 질문을 하십시오.
-  3. {{site.data.keyword.BluSoftlayer_full}} 인프라 고객 포털에서 티켓을 작성하십시오.  **지원** > **티켓 추가**를 선택한 후 **주제** 필드에서 **계정 관련 요청**을 선택하여 올바른 지원 팀에 계정 질문이 전달되도록 하십시오.
+  3. {{site.data.keyword.BluSoftlayer_full}} 인프라 고객 포털에서 티켓을 작성하십시오. **지원** > **티켓 추가**를 선택한 후 **주제** 필드에서 **계정 관련 요청**을 선택하여 올바른 지원 팀에 계정 질문이 전달되도록 하십시오.
 
-본인이 계정 마스터인 경우에는 [사용자 관련 작업](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage)에서 사용자 관리에 대한 자세한 정보를 참조하십시오.
+계정 마스터인 경우 사용자 관리에 대한 자세한 정보는 [사용자 관련 작업](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage)을 참조하십시오.
 
 ## 여러 계정이 있는 경우에는 어떻게 계정을 연결합니까?
 {: #al_multacct}
@@ -167,9 +167,9 @@ $200 프로모션 크레딧에 대해 자세히 알아보려면 [종량과금제
 ## {{site.data.keyword.Bluemix_notm}} 플랫폼 서비스를 SoftLayer 계정에 추가한다는 것은 무슨 의미입니까? 	
 {: #al_owaffslacct}
 
-이는 계정이 모든 {{site.data.keyword.Bluemix_notm}} 플랫폼 오퍼링에 액세스할 수 있음을 의미합니다.  {{site.data.keyword.Bluemix_notm}} 플랫폼 오퍼링을 계정에 추가하고 나면 계정 마스터는 일반 사용자가 오퍼링에 액세스할 수 있도록 설정해야 합니다.
+이는 계정이 모든 {{site.data.keyword.Bluemix_notm}} 플랫폼 오퍼링에 액세스할 수 있음을 의미합니다. {{site.data.keyword.Bluemix_notm}} 플랫폼 오퍼링을 계정에 추가하고 나면 계정 마스터는 사용자가 오퍼링에 액세스할 수 있도록 설정해야 합니다.
 
-사용자가 계정 마스터인 경우에는 [사용자 관련 작업](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage)에서 자세한 정보를 참조하십시오.
+계정 마스터인 경우 자세한 정보는 [사용자 관련 작업](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage)을 참조하십시오.
 
 ## 계정을 연결하면 SoftLayer 마스터 계정 ID에 어떤 영향이 있습니까? 	
 {: #al_howaffslmastacct}

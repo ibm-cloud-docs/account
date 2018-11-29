@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-07-10"
+lastupdated: "2018-11-14"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-07-10"
 # Profil einrichten
 {: #usersettings}
 
-Wenn Sie zum ersten Mal mit {{site.data.keyword.Bluemix}} arbeiten, müssen Sie Ihr Kontoprofil einrichten. Rufen Sie **{{site.data.keyword.avatar}}** ![Avatarsymbol](../icons/i-avatar-icon.svg) &gt; **Profil & Konto** auf, um die Profileinstellungen festzulegen oder zu aktualisieren.{:shortdesc}
+Wenn Sie zum ersten Mal mit {{site.data.keyword.Bluemix}} arbeiten, müssen Sie Ihr Kontoprofil einrichten. Rufen Sie **{{site.data.keyword.avatar}}** ![Avatarsymbol](../icons/i-avatar-icon.svg) &gt; **Profil** auf, um die Profileinstellungen festzulegen oder zu aktualisieren.{:shortdesc}
 
 Sie können die folgenden Informationen festlegen oder aktualisieren:
 
@@ -32,9 +32,9 @@ Wenn Sie Administrator für {{site.data.keyword.Bluemix_local_notm}} oder {{site
 ## Profilfoto ändern
 {: #photo notoc}
 
-Rufen Sie **{{site.data.keyword.avatar}}** ![Avatarsymbol](../icons/i-avatar-icon.svg) &gt; **Profil & Konto** auf.
+Rufen Sie **{{site.data.keyword.avatar}}** ![Avatarsymbol](../icons/i-avatar-icon.svg) &gt; **Profil** auf.
 
-  * Um ein Foto hinzuzufügen, klicken Sie auf **Foto hochzuladen**.
+  * Um ein Foto hinzuzufügen, klicken Sie auf **Foto hochladen**.
   * Um das aktuelle Foto durch ein neues zu ersetzen, klicken Sie auf **Foto ändern**.
   * Um das Foto zu entfernen, klicken Sie auf **Foto entfernen**.
 
@@ -45,7 +45,7 @@ Eine IBMid ist eine einzelne ID, die Sie für die Anmeldung an Ihrem {{site.data
 
 Sie können Ihre IBMid nicht ändern, aber Sie können Ihre Profilinformationen bearbeiten, die der ID zugeordnet sind, beispielsweise Ihren Namen, Ihre E-Mail-Adresse, Ihre Telefonnummer, Ihr Kennwort oder Ihren Firmennamen.
 
-1. Rufen Sie **{{site.data.keyword.avatar}}** ![Avatarsymbol](../icons/i-avatar-icon.svg) &gt; **Profil & Konto** auf.
+1. Rufen Sie **{{site.data.keyword.avatar}}** ![Avatarsymbol](../icons/i-avatar-icon.svg) &gt; **Profil** auf.
 2. Klicken Sie auf **Eigene IBMid bearbeiten**.
 3. Bearbeiten Sie Ihre Benutzerdaten.
 4. Klicken Sie auf **Speichern**.
@@ -59,5 +59,5 @@ Wenn Sie die Aufzeichnung inaktivieren, können Sie möglicherweise einige Funkt
 
 Um die Analyseaufzeichnung zu inaktivieren, führen Sie die folgenden Schritte aus:
 
-1. Rufen Sie **{{site.data.keyword.avatar}}** ![Avatarsymbol](../icons/i-avatar-icon.svg) &gt; **Profil & Konto** auf.
+1. Rufen Sie **{{site.data.keyword.avatar}}** ![Avatarsymbol](../icons/i-avatar-icon.svg) &gt; **Profil** auf.
 2. Legen Sie für die Analyseaufzeichnung **Aus** fest.

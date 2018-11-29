@@ -41,15 +41,15 @@ lastupdated: "2018-07-09"
 
 다음 솔루션 중 하나를 사용하십시오.
 {: tsResolve}
- * 올바른 비밀번호를 입력하십시오. IBM ID와 비밀번호가 올바른지 확인하기 위해 내 IBM 프로파일 페이지로 이동하여 **로그인**을 클릭하고 로그인 페이지에 IBM ID와 비밀번호를 입력할 수 있습니다.
+ * 올바른 비밀번호를 입력하십시오. IBM ID와 비밀번호가 올바른지 확인하기 위해 내 IBM 프로파일 페이지로 이동하여 로그인을 클릭하고 로그인 페이지에 IBM ID와 비밀번호를 입력할 수 있습니다.
  * 비밀번호를 잊어버린 경우에는 **비밀번호를 잊으셨습니까?**를 클릭하여 비밀번호를 재설정하십시오. 그리고 [{{site.data.keyword.Bluemix_notm}} 콘솔](https://console.{DomainName}) 또는 [고객 포털](https://control.softlayer.com)로 돌아가서 다시 로그인하십시오.
  * IBM ID를 잊어버렸거나 비밀번호와 관련된 문제점이 지속되는 경우 전세계 IBM Registration 헬프 데스크에 지원을 요청하십시오.
- * 올바른 IBM ID 및 비밀번호를 얻으려면 내 IBM 프로파일 페이지로 이동한 다음 **등록**을 클릭하십시오.
+ * 올바른 IBM ID 및 비밀번호를 가져오려면 내 IBM 프로파일 페이지로 이동한 다음 **등록**을 클릭하십시오.
 
-**참고:** IBM 로그인 페이지에서 어떤 이유(예: 비밀번호 재설정)로 인해 로그인 프로세스가 중단된 경우에는 [{{site.data.keyword.Bluemix_notm}} 콘솔](https://console.{DomainName}) 또는 [고객 포털](https://control.softlayer.com)로 돌아가서 로그인 프로세스를 다시 시작하십시오.
+**참고:** 로그인 페이지에서 어떤 이유(예: 비밀번호 재설정)로 인해 로그인 프로세스가 중단된 경우에는 [{{site.data.keyword.Bluemix_notm}} 콘솔](https://console.{DomainName}) 또는 [고객 포털](https://control.softlayer.com)로 돌아가서 로그인 프로세스를 다시 시작하십시오.
 
 
-## 올바르지 않은 로그인 신임 정보
+## 올바르지 않은 로그인 인증 정보
 {: #ts_login_invalid_credentials}
 
 IBM ID를 사용하여 로그인할 때 다음 메시지가 표시됩니다.
@@ -98,13 +98,13 @@ IBM ID를 사용하여 로그인할 때 다음 메시지가 표시됩니다.
 올바른 IBM ID로 [고객 포털](https://control.softlayer.com)에서 로그인했지만 고객 포털에서 IBM ID 인증으로 전환되지 않았습니다.
 {: tsCauses}
 
-다음 검사를 완료하십시오.
+다음 확인을 완료하십시오.
 {: tsResolve}
  * IBM ID 인증으로 전환할 수 있는지 확인하려면 마스터 사용자 또는 계정 관리자에게 문의하십시오.
  * IBM ID로 전환 단계를 완료했는지 확인하십시오. [IBM ID로 전환](/docs/account/softlayerlink.html)을 참조하십시오.
  * **사용자 ID를 IBM ID와 연관** 이메일에 있는 조치대로 수행하고 있는지 확인하십시오. 받은 편지함 및 정크 메일 폴더에서 이메일을 확인하십시오. 이메일을 다시 받으려면(예: 만료된 경우) 고객 포털에서 사용자 프로파일 편집 페이지로 이동하여 **이메일 재발송**을 클릭하십시오. 또는 [{{site.data.keyword.Bluemix_notm}} 지원 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://ibm.biz/bluemixsupport.com){: new_window}에 문의하십시오.
 
-계정 설정의 방법에 따라 로그인 옵션 중 일부가 적용될 수 있습니다.
+계정 설정의 방법에 따라 일부 로그인 옵션이 적용될 수 있습니다.
  * SoftLayer ID를 보유한 SoftLayer 사용자는 [고객 포털](https://control.softlayer.com)을 통해 로그인해야 합니다.
  * IBM ID를 보유한 SoftLayer 사용자는 연결된 {{site.data.keyword.Bluemix_notm}} 계정을 보유하고 있는지와 상관없이 [고객 포털](https://control.softlayer.com)을 통해 로그인하여 고객 포털을 열거나 [{{site.data.keyword.Bluemix_notm}} 콘솔](https://console.{DomainName})을 통해 로그인하여 인프라 대시보드를 열 수 있습니다.
 
@@ -123,7 +123,7 @@ IBM ID를 사용하여 로그인할 때 다음 메시지가 표시됩니다.
 {{site.data.keyword.Bluemix_notm}} 계정을 작성하려면 등록 프로세스를 따르십시오.
 {: tsResolve}
 
-계정 설정의 방법에 따라 로그인 옵션 중 일부가 적용될 수 있습니다.
+계정 설정의 방법에 따라 일부 로그인 옵션이 적용될 수 있습니다.
  * 연결된 계정이 없는 {{site.data.keyword.Bluemix_notm}} 사용자는 {{site.data.keyword.Bluemix_notm}} 콘솔을 통해 로그인해야 합니다.
  * 연결된 계정이 있는 {{site.data.keyword.Bluemix_notm}} 사용자는 [{{site.data.keyword.Bluemix_notm}} 콘솔](https://console.{DomainName}) 또는 [고객 포털](https://control.softlayer.com)을 통해 로그인할 수 있습니다.
 
@@ -158,12 +158,12 @@ IBM 인증 서비스에 문제점이 있을 수 있습니다.
 
 계정이 보류 중인 경우 {{site.data.keyword.Bluemix_notm}}에 로그인할 수 없습니다.
 
-{{site.data.keyword.Bluemix_notm}} 라이트 계정에 등록한 후에는 {{site.data.keyword.Bluemix_notm}}에 로그인할 수 없습니다. 다음 메시지가 표시됩니다.
+{{site.data.keyword.Bluemix_notm}} Lite 계정에 등록한 후에는 {{site.data.keyword.Bluemix_notm}}에 로그인할 수 없습니다. 다음 메시지가 표시됩니다.
 {: tsSymptoms}
 
 <code>Your account is pending. Please wait up to 24 hours for email confirmation and also check your spam folder. If you still have not received your email confirmation, contact <a href="http://ibm.biz/bluemixsupport.com" target="_blank">{{site.data.keyword.Bluemix_notm}} Support</a>.</code>
 
-{{site.data.keyword.Bluemix_notm}} 라이트 계정에 등록하면 확인 이메일을 받게 됩니다. 확인 이메일에 있는 링크를 클릭하여 등록 프로세스를 완료해야 합니다.
+{{site.data.keyword.Bluemix_notm}} Lite 계정에 등록하면 확인 이메일을 받게 됩니다. 확인 이메일에 있는 링크를 클릭하여 등록 프로세스를 완료해야 합니다.
 {: tsCauses}
 
 확인 이메일이 사용자가 제공한 이메일 주소로 전송됩니다. 받은 편지함과 스팸 폴더를 확인하십시오. 확인 이메일을 수신하지 못한 경우 [{{site.data.keyword.Bluemix_notm}} 지원 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://ibm.biz/bluemixsupport.com){: new_window}에 문의하십시오.  

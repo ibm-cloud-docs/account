@@ -26,22 +26,22 @@ Der Abschnitt [Lite-Konto](/docs/account/index.html#liteaccount) enthält weiter
 ## Was ist Cloud Foundry?
 {: #cloud-foundry}
 
-Cloud Foundry ist eine über {{site.data.keyword.Bluemix_notm}} Public verfügbare quelloffene PaaS-Option (PaaS - Plattform as a Service), mit der Anwendungen in der Cloud erstellt und bereitgestellt werden können. Cloud Foundry-Organisationen und -Bereiche werden innerhalb eines {{site.data.keyword.Bluemix_notm}}-Kontos verwendet, um Ressourcen und Apps, die in bestimmten Regionen verfügbar sind, zu organisieren und mit ihnen zu arbeiten. 
+Cloud Foundry ist eine über {{site.data.keyword.Bluemix_notm}} Public verfügbare quelloffene PaaS-Option (PaaS - Platform as a Service), mit der Anwendungen in der Cloud erstellt und bereitgestellt werden können. Cloud Foundry-Organisationen und -Bereiche werden innerhalb eines {{site.data.keyword.Bluemix_notm}}-Kontos verwendet, um Ressourcen und Apps, die in bestimmten Regionen verfügbar sind, zu organisieren und mit ihnen zu arbeiten. 
 
 Weitere Informationen zum Verwalten von Organisationen und Bereichen finden Sie unter [Organisationen und Bereiche hinzufügen](/docs/account/orgs_spaces.html#orgsspacesusers). Wenn Sie Zugriff auf Ressourcen in einem Cloud Foundry-Bereich erteilen wollen, finden Sie weitere Informationen unter [Cloud Foundry-Zugriff](/docs/iam/cfaccess.html#cfaccess).
 
 ## Kann ich eine Organisation in ein anderes Konto versetzen?
 {: #move-org-diff-account}
 
-Gegenwärtig können Sie eine Organisation nicht in ein anderen Konto migrieren. 
+Sie können eine Organisation nicht in ein anderes Konto migrieren. 
 
 ## Was kann ich tun, wenn beim Erstellen meines Kontos ein Fehler auftritt? 
 {: #account-error}
 
-Wenn beim Erstellen Ihres Kontos ein Fehler auftritt, können Sie ein Support-Ticket öffnen. 
+Wenn beim Erstellen Ihres Kontos ein Fehler auftritt, können Sie ein Support-Ticket öffnen.
 
-* Zum Öffnen eines Support-Tickets im Support Center klicken Sie im Abschnitt 'Hilfe anfordern' auf **Ticket öffnen**. 
-* Zum Öffnen eines Support-Tickets über die Menüleiste der IBM Cloud-Konsole klicken Sie auf **Support** &gt; **Ticket hinzufügen**. 
+* Zum Öffnen eines Support-Tickets im Support Center klicken Sie im Abschnitt 'Hilfe anfordern' auf **Ticket öffnen**.
+* Zum Öffnen eines Support-Tickets über die Menüleiste der IBM Cloud-Konsole klicken Sie auf **Support** &gt; **Ticket hinzufügen**.
 
 Nachdem das Support-Ticket geöffnet wurde, erhalten Sie innerhalb kurzer Zeit eine E-Mail-Benachrichtigung über das Ticket. Befolgen Sie die Anweisungen in der E-Mail, um weitere Informationen zum Problem anzugeben und zu erhalten.
 
@@ -58,7 +58,7 @@ Ein Lite-Plan ist ein Serviceplan mit kostenfreiem Kontingent. Sie können einen
 ## Was passiert, wenn meine Lite-Planinstanz das monatliche Kontingent erreicht?
 {: #monthlyquota}
 
-Wenn ein Grenzwert für das Kontingent für die Lite-Planinstanzen erreicht wird, wird der Service für diesen Monat ausgesetzt. Grenzwerte für Kontingente gelten für die gesamte Organisation, nicht nur für die Instanz. Neu erstellte Instanzen in derselben Organisation spiegeln die Nutzung bereits vorhandener Instanzen wider. Die Grenzwerte für Kontingente werden am ersten Tag jedes Monats zurückgesetzt.
+Wenn ein Grenzwert für das Kontingent für die Lite-Planinstanzen erreicht wird, wird der Service für diesen Monat ausgesetzt. Grenzwerte für Kontingente gelten für die gesamte Organisation, nicht nur für die Instanz. Neue Instanzen, die in derselben Organisation erstellt werden, spiegeln die Nutzung bereits vorhandener Instanzen wider. Die Grenzwerte für Kontingente werden am ersten Tag jedes Monats zurückgesetzt.
 
 ## Wie viele Ressourcengruppen, Organisationen oder Bereiche kann ich erstellen?
 {: #resourcelimit}
@@ -83,14 +83,14 @@ Ja, Sie können ein Upgrade auf ein gebührenpflichtiges Konto durchführen und 
 
 Sie können die Zahlungsmethode, die Ihrem gebührenpflichtigen Konto zugeordnet ist, auf einfache Weise aktualisieren. Rufen Sie in der Konsole die Seite **Verwalten > Abrechnung und Nutzung > Zahlungsmethode ändern** auf.
 
-## Wie kann ich mein Kennwort zurücksetzen?  
+## Wie kann ich mein Kennwort zurücksetzen? 
 {: #reset-password}
 
 Abhängig davon, welches Kennwort Sie zurücksetzen wollen, haben Sie die folgenden Möglichkeiten:  
 
-* Wenn Sie eine SoftLayer-Konto-ID und das zugehörige Kennwort verwenden, finden Sie weitere Informationen unter [Kennwörter verwalten](/docs/customer-portal/cpmanacctmanpw.html#cp_reset-your-password).  
-* Wenn Sie Ihr VPN-Kennwort zurücksetzen wollen, finden Sie weitere Informationen unter [Aktualisieren des VPN-Kennworts eines Benutzers](/docs/infrastructure/iaas-vpn/update-password.html#update-a-user-s-vpn-password). 
-* Wenn Sie das Kennwort für Ihre IBMid zurücksetzen wollen, finden Sie weitere Informationen unter [Kennwort vergessen](https://www.ibm.com/account/us-en/forgot/forgot-password-start.html). 
+* Wenn Sie eine SoftLayer-Konto-ID und das zugehörige Kennwort verwenden, finden Sie weitere Informationen unter [Kennwörter verwalten](/docs/customer-portal/cpmanacctmanpw.html#cp_reset-your-password). 
+* Wenn Sie Ihr VPN-Kennwort zurücksetzen wollen, finden Sie weitere Informationen unter [Aktualisieren des VPN-Kennworts eines Benutzers](/docs/infrastructure/iaas-vpn/update-password.html#update-a-user-s-vpn-password).
+* Wenn Sie das Kennwort für Ihre IBMid zurücksetzen wollen, finden Sie weitere Informationen unter [Kennwort vergessen](https://www.ibm.com/account/us-en/forgot/forgot-password-start.html).
 
 ## Wie kann ich mein Konto kündigen?
 {: #cancelaccount}
@@ -100,7 +100,7 @@ Rufen Sie in der Konsole die Seite **Verwalten > Abrechnung und Nutzung > Abrech
 ## Wie kann ich mein Konto löschen?
 {: #deleteaccount}
 
-Sie müssen sich mit dem IBM Cloud-Support in Verbindung setzen, um ein Support-Ticket zu öffnen und die Löschung Ihres Kontos anzufordern. Wenn Sie über Daten verfügen, die Ihrem alten Konto zugeordnet sind, die jedoch gesichert und in ein neues Konto übernommen werden sollen, dann geben Sie die entsprechenden Informationen in Ihrer E-Mail an.
+Sie müssen sich mit dem IBM Cloud-Support in Verbindung setzen, um ein Support-Ticket zu öffnen und das Löschen des Kontos anzufordern. Wenn Sie über Daten verfügen, die Ihrem alten Konto zugeordnet sind, die jedoch gesichert und in ein neues Konto übernommen werden sollen, dann geben Sie die entsprechenden Informationen in Ihrer E-Mail an.
 
 ## Warum ist mein Konto inaktiviert?
 {: #account-deactivated}
@@ -134,18 +134,18 @@ Nach dem Verknüpfen Ihres Kontos ändert sich an Ihrem Support-Level nichts, we
 ## Gibt es andere Möglichkeiten, Hilfe beim Verknüpfen meines Kontos zu erhalten? 
 {: #al_morehelp}
 
-  1. Hilfreiche Informationen finden Sie im Blogartikel [Steps to Link your IaaS and PaaS Accounts](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/).
+  1. Weitere Informationen finden Sie im Blogartikel [Steps to Link your IaaS and PaaS Accounts](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/).
   2. Starten Sie im Kundenportal der {{site.data.keyword.BluSoftlayer_full}}-Infrastruktur einen **Sales-Live-Chat**, um Fragen zum Konto zu stellen.
-  3. Öffnen Sie im Kundenportal der {{site.data.keyword.BluSoftlayer_full}}-Infrastruktur ein Ticket.  Wählen Sie **Support** > **Ticket hinzufügen** aus und wählen Sie dann im Feld **Betreff** die Option **Kontoanfrage** aus, um Ihre Frage zum Konto an das richtige Support-Team zu adressieren.
+  3. Öffnen Sie im Kundenportal der {{site.data.keyword.BluSoftlayer_full}}-Infrastruktur ein Ticket. Wählen Sie **Support** > **Ticket hinzufügen** aus und wählen Sie dann im Feld **Betreff** die Option **Kontoanfrage** aus, um Ihre Frage zum Konto an das richtige Support-Team zu adressieren.
 
-Wenn Sie der Eigner des Kontos sind, finden Sie weitere Informationen zum Verwalten von Benutzern unter [Mit Benutzern arbeiten](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage).
+Wenn Sie der Eigner des Kontos sind, finden Sie weitere Informationen zum Verwalten von Benutzern in [Mit Benutzern arbeiten](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage).
 
 ## Wie verknüpfe ich mein Konto, wenn ich mehrere Konten haben?
 {: #al_multacct}
 
 Wenn Sie mehrere SoftLayer-Konten haben, müssen Sie die Konten verknüpfen, für die es ein übereinstimmendes {{site.data.keyword.Bluemix_notm}}-Plattformkonto und eine zugehörige IBMid gibt.
 
-Wenn es kein übereinstimmendes {{site.data.keyword.Bluemix_notm}}-Plattformkonto und kein zugehöriges IBMid-Konto gibt, kann ein neues SoftLayer-Konto erstellt werden, um die Konten zu verknüpfen. 
+Wenn es kein übereinstimmendes {{site.data.keyword.Bluemix_notm}}-Plattformkonto und kein zugehöriges IBMid-Konto gibt, kann ein neues SoftLayer-Konto erstellt werden, um die Konten zu verknüpfen.
 
 ## Gibt es Kaufanreize für das Verknüpfen meiner Konten? 	
 {: #al_incent}
@@ -167,13 +167,13 @@ Der Eigner eines Kontos kann nicht geändert werden; Sie können jedoch die Ress
 ## Was bedeutet es, {{site.data.keyword.Bluemix_notm}}-Plattformservices zu meinem SoftLayer-Konto hinzuzufügen? 	
 {: #al_owaffslacct}
 
-Es bedeutet, dass Ihr Konto Zugriff auf alle {{site.data.keyword.Bluemix_notm}}-Plattformangebote hat.  Nachdem Sie das {{site.data.keyword.Bluemix_notm}}-Plattformangebot zu Ihrem Konto hinzugefügt haben, muss der Kontoeigner Endbenutzern Zugriff auf das Angebot gewähren.
+Es bedeutet, dass Ihr Konto Zugriff auf alle {{site.data.keyword.Bluemix_notm}} Platform-Angebote hat. Nachdem Sie das {{site.data.keyword.Bluemix_notm}}-Platform-Angebot zu Ihrem Konto hinzugefügt haben, muss der Kontoeigner Benutzern Zugriff auf das Angebot  gewähren.
 
 Wenn Sie der Eigner des Kontos sind, finden Sie weitere Informationen unter [Mit Benutzern arbeiten](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage).
 
 ## Wie wirkt sich das Verknüpfen von Konten auf meine SoftLayer-Stammkonto-ID aus? 	
 {: #al_howaffslmastacct}
 
-Sie können die ID weiterhin für Ihr SoftLayer-Konto verwenden, um sich beim Kundenportal der {{site.data.keyword.BluSoftlayer_full}}-Infrastruktur anzumelden, weil die {{site.data.keyword.Bluemix_notm}}-Konsole über die IBMids zugänglich ist.
+Sie können die ID weiterhin für Ihr SoftLayer-Konto verwenden, um sich beim Kundenportal der {{site.data.keyword.BluSoftlayer_full}}-Infrastruktur anzumelden, weil die {{site.data.keyword.Bluemix_notm}}-Konsole über die IBMids zugänglich ist
 
 

@@ -33,9 +33,9 @@ Cloud Foundry は、クラウド上でアプリケーションを作成および
 ## 組織を別のアカウントに移動できますか?
 {: #move-org-diff-account}
 
-現時点では、組織を別のアカウントに移行することはできません。 
+組織を別のアカウントに移行することはできません。 
 
-## アカウントを作成するときにエラーが発生した場合、どうすればよいですか?
+## アカウントを作成しているときにエラーが発生した場合、どうすればよいですか?
 {: #account-error}
 
 アカウントを作成しようしてエラーが発生した場合は、サポート・チケットを開くことができます。
@@ -68,7 +68,7 @@ Cloud Foundry は、クラウド上でアプリケーションを作成および
 ## アカウント・タイプをアップグレードまたは変更するには、どのようにすればよいですか?
 {: #changeacct}
 
-* 30 日間のトライアル・アカウントをライト・アカウントに移行するには、[{{site.data.keyword.Bluemix_notm}} 営業担当員 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg) にお問い合わせください。 加入基準を確認した後、営業担当チームは、アカウントの移行を試行するために使用できる固有のリンクをお客様と共有します。 ライト・アカウントは、30 日間のトライアル・アカウントと完全に互換ではないため、移行変換の成功は保証されていません。  
+* 30 日間のトライアル・アカウントをライト・アカウントに移行するには、[{{site.data.keyword.Bluemix_notm}} 営業担当員 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg) にお問い合わせください。 加入基準を確認した後、営業担当チームは、アカウントの移行を試行するために使用できる固有のリンクをお客様と共有します。 ライト・アカウントは、30 日間のトライアル・アカウントと完全に互換ではないため、移行が成功する保証はありません。  
 * ライト・アカウントから従量制課金アカウントにアップグレードするには、**「管理」>「請求および使用量」>「請求処理」**に移動し、**「クレジット・カードの追加」**をクリックします。
 * ライト・アカウントからサブスクリプション・アカウントにアップグレードするには、**「管理」>「請求および使用量」>「請求処理」**に移動し、**「詳細はこちら」**をクリックします。
 * 従量制課金アカウントをサブスクリプション・アカウントに移行するには、[{{site.data.keyword.Bluemix_notm}} 営業担当員 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg) にお問い合わせください。
@@ -86,7 +86,7 @@ Cloud Foundry は、クラウド上でアプリケーションを作成および
 ## パスワードをリセットするには、どのようにすればよいですか? 
 {: #reset-password}
 
-リセットするパスワードに応じて、以下のオプションを検討します。 
+リセットするパスワードに応じて、以下のオプションを確認してください。 
 
 * SoftLayer のアカウント ID とパスワードを持っている場合は、[パスワードの管理](/docs/customer-portal/cpmanacctmanpw.html#cp_reset-your-password)を参照してください。 
 * VPN パスワードをリセットするには、[ユーザーの VPN パスワードの更新](/docs/infrastructure/iaas-vpn/update-password.html#update-a-user-s-vpn-password)を参照してください。
@@ -134,12 +134,12 @@ IBM の裁量により、{{site.data.keyword.Bluemix_notm}} サービスの容�
 ## アカウントのリンクについて支援を得る他の方法はありますか? 
 {: #al_morehelp}
 
-  1. 参考情報は、[IaaS アカウントと PaaS アカウントをリンクする手順のブログ](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/)を参照してください。
+  1. 詳しくは、[IaaS アカウントと PaaS アカウントをリンクする手順のブログ](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/)を参照してください。
   2. {{site.data.keyword.BluSoftlayer_full}} インフラストラクチャーのカスタマー・ポータルで、**「販売ライブ・チャット (Sales Live Chat)」**を開き、アカウントに関する質問をしてください。
-  3. {{site.data.keyword.BluSoftlayer_full}} インフラストラクチャーのカスタマー・ポータルからチケットをオープンします。  **「サポート」** > **「チケットの追加
+  3. {{site.data.keyword.BluSoftlayer_full}} インフラストラクチャーのカスタマー・ポータルからチケットをオープンします。 **「サポート」** > **「チケットの追加
 」**を選択し、次に、**「サブジェクト」**フィールドで**「アカウンティング要求 (Accounting Request)」**を選択して、アカウントの質問を適格なサポート・チームに送付します。
 
-アカウント・マスターである場合、ユーザー管理の詳細は、[ユーザーの操作](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage)を参照してください。
+アカウント・マスターである場合、ユーザーの管理について詳しくは、[ユーザーの操作](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage)を参照してください。
 
 ## 複数のアカウントを持っている場合、アカウントをリンクするにはどうすればよいですか?
 {: #al_multacct}
@@ -168,9 +168,9 @@ IBM の裁量により、{{site.data.keyword.Bluemix_notm}} サービスの容�
 ## {{site.data.keyword.Bluemix_notm}} プラットフォーム・サービスを SoftLayer アカウントに追加するとはどういう意味ですか? 	
 {: #al_owaffslacct}
 
-それは、アカウントがすべての {{site.data.keyword.Bluemix_notm}} プラットフォームのオファリングにアクセスできることを意味します。  {{site.data.keyword.Bluemix_notm}} プラットフォームのオファリングをアカウントに追加した後、アカウント・マスターはエンド・ユーザーがオファリングにアクセスできるようにする必要があります。
+それは、アカウントがすべての {{site.data.keyword.Bluemix_notm}} プラットフォームのオファリングにアクセスできることを意味します。 {{site.data.keyword.Bluemix_notm}} プラットフォームのオファリングをアカウントに追加した後、アカウント・マスターはユーザーがオファリングにアクセスできるようにする必要があります。
 
-アカウント・マスターである場合、詳細は[ユーザーの操作](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage)を参照してください。
+アカウント・マスターである場合、詳しくは、[ユーザーの操作](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage)を参照してください。
 
 ## アカウントをリンクすると、SoftLayer マスター・アカウント ID にどのような影響がありますか? 	
 {: #al_howaffslmastacct}

@@ -33,7 +33,7 @@ Sie erhalten eine Fehlernachricht, wenn Sie versuchen, eine neue {{site.data.key
 Dies liegt wahrscheinlich daran, dass Sie ein Lite-Konto verwenden, das die Entwicklung in nur einer öffentlichen Region unterstützt. Sie wählen die öffentliche {{site.data.keyword.Bluemix_notm}}-Region, in der Sie arbeiten möchten, bei der Ersteinrichtung des Kontos aus.
 {: tsCauses}
 
-Wenn Sie ein Lite-Konto haben, können Sie ein Upgrade auf ein gebührenpflichtiges Konto durchführen, um auf zusätzliche Regionen zugreifen zu können. Rufen Sie in der Konsole die Seite **Verwalten > Abrechnung und Nutzung > Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**. Auf der Seite **Abrechnung** können Sie auch überprüfen, ob Sie ein Lite-Konto haben.
+Wenn Sie ein Lite-Konto haben, können Sie ein Upgrade auf ein gebührenpflichtiges Konto durchführen, um auf weitere Regionen zugreifen zu können. Rufen Sie in der Konsole die Seite **Verwalten > Abrechnung und Nutzung > Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**. Auf der Seite **Abrechnung** können Sie auch überprüfen, ob Sie ein Lite-Konto haben.
 {: tsResolve}
 
 ## Fehler beim Erstellen einer neuen Organisation
@@ -45,7 +45,7 @@ Sie erhalten eine Fehlernachricht, wenn Sie versuchen, eine neue Organisation zu
 Dies liegt wahrscheinlich daran, dass Sie ein Lite-Konto verwenden, das die Entwicklung in nur einer Organisation unterstützt. Die Organisation wird bei der Ersteinrichtung des Kontos erstellt.
 {: tsCauses}
 
-Wenn Sie ein Lite-Konto haben, können Sie ein Upgrade auf ein gebührenpflichtiges Konto durchführen, um auf zusätzliche Organisationen zugreifen zu können. Rufen Sie in der Konsole die Seite **Verwalten > Abrechnung und Nutzung > Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**. Auf der Seite **Abrechnung** können Sie auch überprüfen, ob Sie ein Lite-Konto haben.
+Wenn Sie ein Lite-Konto haben, können Sie ein Upgrade auf ein gebührenpflichtiges Konto durchführen, um auf weitere Organisationen zugreifen zu können. Rufen Sie in der Konsole die Seite **Verwalten > Abrechnung und Nutzung > Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**. Auf der Seite **Abrechnung** können Sie auch überprüfen, ob Sie ein Lite-Konto haben.
 {: tsResolve}
 
 ## Fehler beim Erstellen einer Lite-Planinstanz
@@ -59,7 +59,7 @@ Sie erhalten die folgende Fehlernachricht, wenn Sie versuchen, eine Lite-Planins
 Es gibt eine Begrenzung auf ein Instanz pro Lite-Planinstanz, damit wir diese Pläne kostenfrei anbieten können.
 {: tsCauses}
 
-Sie können zusätzliche Instanzen des Service erstellen, indem Sie einen der abrechenbaren Servicepläne auswählen, die unter den gebührenpflichtigen Konten verfügbar sind. Um über die Konsole ein Upgrade auf ein gebührenpflichtiges Konto durchzuführen, rufen Sie die Seite **Verwalten > Abrechnung und Nutzung > Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**.
+Sie können weitere Instanzen des Service erstellen, indem Sie einen der abrechenbaren Servicepläne auswählen, die unter den gebührenpflichtigen Konten verfügbar sind. Um über die Konsole ein Upgrade auf ein gebührenpflichtiges Konto durchzuführen, rufen Sie die Seite **Verwalten > Abrechnung und Nutzung > Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**.
 {: tsResolve}
 
 Wenn Sie kein Upgrade von einem Lite-Konto durchführen möchten und Ihre vorhandene Lite-Serviceinstanz nicht mehr verwenden, können Sie die vorhandene Lite-Planinstanz über das Dashboard löschen und dann eine neue Instanz erstellen.
@@ -73,7 +73,7 @@ Sie können keine Apps bereitstellen und erhalten eine Fehlermeldung, dass Sie d
 Bei einem Lite-Konto können Ihre Cloud Foundry-Apps bis zu 256 MB des sofort verfügbaren Laufzeitspeichers verwenden. Bei gebührenpflichtigen Konten gibt es eine Speicherbegrenzung von 2 GB.
 {: tsCauses}
 
-Wenn Sie mit einem Lite-Konto arbeiten, können Sie zusätzlichen Speicher durch ein Upgrade auf ein gebührenpflichtiges Konto erhalten. Rufen Sie in der Konsole die Seite **Verwalten > Abrechnung und Nutzung > Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**.
+Wenn Sie mit einem Lite-Konto arbeiten, können Sie weiteren Speicher durch ein Upgrade auf ein gebührenpflichtiges Konto erhalten. Rufen Sie in der Konsole die Seite **Verwalten > Abrechnung und Nutzung > Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**.
 {: tsResolve}
 
 Wenn Sie kein Upgrade von einem Lite-Konto durchführen möchten, aber über inaktive Apps verfügen, können Sie die vorhandenen inaktiven Apps löschen, um etwas Laufzeitspeicher freizugeben.
@@ -155,10 +155,10 @@ Verwenden Sie eine der folgenden Methoden, um einen Bereich zu erstellen:
   * Geben Sie in der Cloud Foundry-Befehlszeilenschnittstelle Folgendes ein: `cf create-space <space_name> -o <organization_name>`.
 
 
-## Apps verwenden denselben Domänennamen gemeinsam
+## Apps verwenden einen Domänennamen gemeinsam
 {: #ts_domain_diff}
 
-Es kann vorkommen, dass in {{site.data.keyword.Bluemix_notm}} von mehreren Apps dieselbe URL gemeinsam genutzt wird.
+Es kann vorkommen, dass in {{site.data.keyword.Bluemix_notm}} eine URL von mehreren Apps gemeinsam genutzt wird.
 
 Dieses Problem kann auftreten, wenn Sie unterschiedlichen Apps in einem Bereich dieselbe URL-Route zuweisen.
 {: tsCauses}
@@ -180,7 +180,7 @@ Als Administrator können Sie nicht alle Organisationen über die {{site.data.ke
 Dies ist eine Einschränkung der {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle.
 {: tsCauses}
 
-Sie können über die Cloud Foundry-Befehlszeilenschnittstelle Befehle wie `cf orgs`, `cf create-org` oder `cf delete-org` verwenden, um alle Organisationen zu verwalten. Für eine vollständige Liste der cf-Befehle geben Sie `cf help` ein.
+Sie können über die Cloud Foundry-Befehlszeilenschnittstelle Befehle wie `cf orgs`, `cf create-org` oder `cf delete-org` verwenden, um alle Organisationen zu verwalten. Für eine vollständige Liste der Cloud Foundry-Befehle geben Sie `cf help` ein.
 {: tsResolve}
 
 ## Kreditkarte kann nicht hinzugefügt werden
@@ -188,10 +188,10 @@ Sie können über die Cloud Foundry-Befehlszeilenschnittstelle Befehle wie `cf o
 
 Sie können Ihre Kreditkarteninformationen nicht übergeben, um Ihr Lite-Konto in ein gebührenpflichtiges Konto umzuwandeln.
 
-Die Schaltfläche **Übergeben** auf der Seite 'Kreditkarte' hinzufügen ist inaktiviert.
+Die Schaltfläche **Senden** auf der Seite 'Kreditkarte hinzufügen' ist inaktiviert.
 {: tsSymptoms}
 
-Dieses Problem tritt auf, wenn Sie auf der Seite 'Kreditkarte hinzufügen' nicht die korrekten Informationen eingegeben haben.
+Dieses Problem tritt auf, wenn Sie auf der Seite 'Kreditkarte hinzufügen' die Informationen nicht korrekt eingegeben haben.
 {: tsCauses}
 
 
@@ -199,5 +199,5 @@ Führen Sie die folgenden Schritte aus:
 {: tsResolve}
 
   1. Füllen Sie auf der Seite 'Kreditkarte hinzufügen' alle erforderlichen Felder in den Abschnitten für die Kontaktinformationen, die Kontaktadresse und die Rechnungsadresse aus.
-  2. Wählen Sie das Kontrollkästchen unter **Ich habe die allgemeinen Geschäftsbedingungen von IBM gelesen und stimme ihnen zu** aus und klicken Sie auf **Übergeben**. Der Abschnitt **Wählen Sie eine Zahlungsmethode aus** wird angezeigt.
-  3. Geben Sie Ihre Kreditkartennummer, das Ablaufdatum und den Sicherheitscode ein. Anschließend klicken Sie auf **Übergeben**.
+  2. Wählen Sie das Kontrollkästchen unter **Ich habe die allgemeinen Geschäftsbedingungen von IBM gelesen und stimme ihnen zu** aus und klicken Sie auf **Senden**. Der Abschnitt **Wählen Sie eine Zahlungsmethode aus** wird angezeigt.
+  3. Geben Sie Ihre Kreditkartennummer, das Ablaufdatum und den Sicherheitscode ein. Anschließend klicken Sie auf **Senden**.
