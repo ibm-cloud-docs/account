@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-11-12"
+lastupdated: "2018-11-19"
 
 ---
 
@@ -19,7 +19,7 @@ lastupdated: "2018-11-12"
 # Vídeo: conta Lite do {{site.data.keyword.cloud_notm}}
 {: #show_me_video}
 
-A conta Lite é grátis e nunca expira. O que é oferecido em uma conta Lite? Descubra os serviços disponíveis com os planos Lite grátis e outros recursos da conta neste vídeo.
+A conta Lite é grátis e nunca expira. O que oferecemos em uma conta Lite? Descubra os serviços disponíveis com os planos Lite grátis e outros recursos da conta neste vídeo.
 {: shortdesc}
 
 <p>

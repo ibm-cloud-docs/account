@@ -21,7 +21,7 @@ lastupdated: "2018-09-25"
 # Resolução de problemas para gerenciamento de contas
 {: #managingaccounts}
 
-Os problemas gerais ao gerenciar sua conta podem incluir apps diferentes que compartilham o mesmo nome de domínio ou administradores que não podem visualizar todas as organizações. Em muitos casos, é possível recuperar-se desses problemas seguindo algumas etapas simples.
+Os problemas gerais com o gerenciamento da conta podem incluir diferentes aplicativos que compartilham um nome de domínio ou administradores que não podem visualizar todas as organizações. Em muitos casos, é possível recuperar-se desses problemas seguindo algumas etapas simples.
 {:shortdesc}
 
 ## Impossível acessar um {{site.data.keyword.Bluemix_notm}} de região diferente
@@ -33,7 +33,7 @@ Você receberá uma mensagem de erro ao tentar criar uma nova região do {{site.
 Isso é provavelmente porque você está usando uma conta Lite, que suporta desenvolvimento somente em uma região pública. Você seleciona a região pública do {{site.data.keyword.Bluemix_notm}} na qual deseja trabalhar quando a conta é configurada pela primeira vez.
 {: tsCauses}
 
-Se você tiver uma conta Lite, será possível fazer upgrade para uma conta faturável para acessar regiões adicionais. Acesse a página **Gerenciar > Faturamento e uso > Faturamento** no console e clique em **Incluir cartão de crédito**. Na página **Faturamento**, é possível também verificar se você tem uma conta Lite.
+Se você tiver uma conta Lite, será possível fazer upgrade para uma conta faturável para acessar mais regiões. Acesse a página **Gerenciar > Faturamento e uso > Faturamento** no console e clique em **Incluir cartão de crédito**. Na página **Faturamento**, também é possível verificar se você tem uma conta Lite.
 {: tsResolve}
 
 ## Impossível criar nova organização
@@ -45,7 +45,7 @@ Você receberá uma mensagem de erro ao tentar criar uma nova organização.
 Isso é provavelmente porque você está usando uma conta Lite, que suporta desenvolvimento em somente uma organização. Você cria a organização quando sua conta é configurada pela primeira vez.
 {: tsCauses}
 
-Se você tiver uma conta Lite, será possível fazer upgrade para uma conta faturável para acessar organizações adicionais. Acesse a página **Gerenciar > Faturamento e uso > Faturamento** no console e clique em **Incluir cartão de crédito**. Na página **Faturamento**, é possível também verificar se você tem uma conta Lite.
+Se você tiver uma conta Lite, será possível fazer upgrade para uma conta faturável para acessar mais organizações. Acesse a página **Gerenciar > Faturamento e uso > Faturamento** no console e clique em **Incluir cartão de crédito**. Na página **Faturamento**, também é possível verificar se você tem uma conta Lite.
 {: tsResolve}
 
 ## Não é possível criar instância do plano Lite
@@ -59,7 +59,7 @@ Você recebe a mensagem de erro a seguir quando tenta criar uma instância do pl
 Há um limite de uma instância por instância do plano Lite para nos permitir manter esses planos grátis.
 {: tsCauses}
 
-É possível criar instâncias adicionais do serviço selecionando um dos planos de serviço faturáveis, que estão disponíveis nas contas faturáveis. Para fazer upgrade para uma conta faturável do console, acesse a página **Gerenciar > Faturamento e uso > Faturamento** e clique em **Incluir cartão de crédito**.
+É possível criar mais instâncias do serviço selecionando um dos planos de serviços faturáveis que estão disponíveis nas contas faturáveis. Para fazer upgrade para uma conta faturável do console, acesse a página **Gerenciar > Faturamento e uso > Faturamento** e clique em **Incluir cartão de crédito**.
 {: tsResolve}
 
 Se você não desejar fazer upgrade de uma conta Lite e não estiver mais usando sua instância de serviço Lite existente, será possível excluir a instância do plano Lite existente do painel e, em seguida, criar uma nova instância.
@@ -70,10 +70,10 @@ Se você não desejar fazer upgrade de uma conta Lite e não estiver mais usando
 Você não consegue implementar apps e obtém um erro informando que excedeu o limite de memória de sua organização.
 {: tsSymptoms}
 
-Em uma conta Lite, seus apps Cloud Foundry podem usar até 256 MB de memória instantânea de tempo de execução. Em contas faturáveis, há um limite de memória de 2 GB.
+Em uma conta Lite, os aplicativos do Cloud Foundry podem usar até 256 MB de memória de tempo de execução instantânea. Em contas faturáveis, há um limite de 2 GB de memória.
 {: tsCauses}
 
-Se você estiver usando uma conta Lite, será possível obter memória adicional fazendo upgrade para uma conta faturável. Acesse a página **Gerenciar > Faturamento e uso > Faturamento** no console e clique em **Incluir cartão de crédito**.
+Se você estiver usando uma conta Lite, será possível obter mais memória fazendo upgrade para uma conta faturável. Acesse a página **Gerenciar > Faturamento e uso > Faturamento** no console e clique em **Incluir cartão de crédito**.
 {: tsResolve}
 
 Se você não desejar fazer upgrade de uma conta Lite, mas tiver alguns apps inativos, será possível excluir os apps inativos para liberar memória de tempo de execução.
@@ -158,10 +158,10 @@ Para criar um espaço, use um dos métodos a seguir:
   * Na interface da linha de comandos do Cloud Foundry, digite `cf create-space <space_name> -o <organization_name>`.
 
 
-## Os apps compartilham o mesmo nome de domínio
+## Aplicativos compartilham um nome de domínio
 {: #ts_domain_diff}
 
-É possível observar que vários apps compartilham a mesma URL no {{site.data.keyword.Bluemix_notm}}.
+Você pode observar que vários aplicativos compartilham uma URL no {{site.data.keyword.Bluemix_notm}}.
 
 Esse problema pode ocorrer quando você designa a mesma rota de URL a diferentes apps em um espaço.
 {: tsCauses}
@@ -183,7 +183,7 @@ Como administrador, não é possível ver todas as organizações usando a inter
 Essa é uma limitação da interface com o usuário do {{site.data.keyword.Bluemix_notm}}.
 {: tsCauses}
 
-É possível usar comandos como `cf orgs`, `cf create-org` e `cf delete-org` na interface da linha de comandos do Cloud Foundry para gerenciar todas as organizações. Para obter uma lista completa de comandos cf, insira `cf help`.
+É possível usar comandos como `cf orgs`, `cf create-org` e `cf delete-org` na interface da linha de comandos do Cloud Foundry para gerenciar todas as organizações. Para obter uma lista completa de comandos do Cloud Foundry, insira `cf help`.
 {: tsResolve}
 
 ## O cartão de crédito não pode ser incluído
@@ -194,7 +194,7 @@ Não é possível enviar suas informações de cartão de crédito para converte
 O botão **Enviar** na página Incluir cartão de crédito está desativado.
 {: tsSymptoms}
 
-Esse problema acontece quando suas informações não são preenchidas corretamente na página Incluir cartão de crédito.
+Esse problema ocorre quando as suas informações não são preenchidas corretamente na página Incluir cartão de crédito.
 {: tsCauses}
 
 
@@ -202,6 +202,7 @@ Conclua
 as etapas a seguir:
 {: tsResolve}
 
-  1. Na página Incluir cartão de crédito, preencha todos os campos obrigatórios nas seções de informações de contato, endereço de contato e endereço para cobrança.
+  1. Na página Incluir cartão de crédito, preencha todos os campos necessários nas seções de informações de contato, endereço de contato e endereço de faturamento.
   2. Selecione **Eu li e concordo com os Termos e Condições da IBM**, em seguida, clique em **Enviar**. A seção **Selecionar um método de pagamento** é exibida.
-  3. Insira o número, a data de validade e o código de segurança do seu cartão de crédito. Em seguida, clique em **Enviar**.
+  3. Insira o número, a data de validade e o código de segurança do seu cartão de crédito. Em seguida,
+clique em **Enviar**.

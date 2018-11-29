@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-07-10"
+lastupdated: "2018-11-14"
 
 ---
 
@@ -17,15 +17,13 @@ lastupdated: "2018-07-10"
 # Configurando seu Perfil
 {: #usersettings}
 
-Ao iniciar o {{site.data.keyword.Bluemix}} pela primeira vez, configure seu perfil de
-conta. Acesse o ícone ** {{site.data.keyword.avatar}}** ![Ícone de avatar](../icons/i-avatar-icon.svg) &gt; **Perfil e conta** para configurar ou atualizar suas configurações de perfil.
+Ao usar o {{site.data.keyword.Bluemix}} pela primeira vez, configure o perfil da conta. Acesse o ícone do **{{site.data.keyword.avatar}}** ![Ícone do avatar](../icons/i-avatar-icon.svg) &gt; **Perfil** para configurar ou atualizar as suas configurações de perfil.
 {:shortdesc}
 
 É possível configurar ou atualizar as informações a seguir:
 
  * Uma foto do perfil que é visível para outros usuários do {{site.data.keyword.Bluemix_notm}}
- * Informações do IBMid, que incluem seu nome, e-mail, número do telefone, senha, empresa e
-função
+ * Informações do IBMid, que incluem seu nome, e-mail, número do telefone, senha, empresa e função
  * Configuração de rastreamento de analítica
 
 Talvez você também queira se inscrever para receber notificações ou consultar suas opções de suporte para
@@ -40,7 +38,7 @@ conta usando a página Administração.
 ## Mudando a sua foto do perfil
 {: #photo notoc}
 
-Acesse o ícone **{{site.data.keyword.avatar}}** ![Ícone de avatar](../icons/i-avatar-icon.svg) &gt; **Perfil e conta**.
+Acesse o ícone do **{{site.data.keyword.avatar}}** ![Ícone do avatar](../icons/i-avatar-icon.svg) &gt; **Perfil**.
 
   * Para incluir uma foto, clique em **FAZER UPLOAD DE UMA FOTO**.
   * Para substituir sua foto atual por uma nova, clique em **MUDAR FOTO**.
@@ -56,7 +54,7 @@ para infraestrutura, serviços e recursos de aplicativos. O seu IBMid é o mesmo
 Não é possível mudar seu IBMid, mas é possível editar suas informações de perfil que estejam associadas a
 ele, como seu nome, e-mail, número do telefone, senha ou nome da empresa.
 
-1. Acesse o ícone **{{site.data.keyword.avatar}}** ![Ícone de avatar](../icons/i-avatar-icon.svg) &gt; **Perfil e conta**.
+1. Acesse o ícone do **{{site.data.keyword.avatar}}** ![Ícone do avatar](../icons/i-avatar-icon.svg) &gt; **Perfil**.
 2. Clique em **Editar seu IBMid**.
 3. Edite as informações sobre o usuário.
 4. Clique em **Salvar**.
@@ -65,12 +63,11 @@ ele, como seu nome, e-mail, número do telefone, senha ou nome da empresa.
 {: #tracking}
 
 As ações no console do {{site.data.keyword.Bluemix_notm}} são rastreadas por padrão. O rastreamento permite que a equipe do {{site.data.keyword.Bluemix_notm}} construa uma
-experiência melhor para você e forneça melhor suporte. Os dados coletados não são usados ou compartilhados
-para outros propósitos.
+experiência melhor para você e forneça melhor suporte. Os dados coletados não são usados nem compartilhados para outros propósitos.
 
 Se você optar por desativar o rastreamento, talvez não seja possível usar alguns recursos, como comunicações de bate-papo.
 
 Para desativar o rastreamento de analítica, conclua as etapas a seguir:
 
-1. Acesse o ícone **{{site.data.keyword.avatar}}** ![Ícone de avatar](../icons/i-avatar-icon.svg) &gt; **Perfil e conta**.
+1. Acesse o ícone do **{{site.data.keyword.avatar}}** ![Ícone do avatar](../icons/i-avatar-icon.svg) &gt; **Perfil**.
 2. Configure o rastreamento de analítica como **desligado**.

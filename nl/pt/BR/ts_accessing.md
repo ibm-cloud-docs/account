@@ -41,12 +41,12 @@ A senha que você usou para efetuar login no {{site.data.keyword.Bluemix_notm}} 
 
 Use uma das soluções a seguir:
 {: tsResolve}
- * Digite a senha correta. Para verificar se seu IBMid e senha são válidos, é possível acessar a página Meu perfil IBM, clicar em **Efetuar login** e inserir seu IBMid e senha na página Efetuar login.
- * Caso tenha esquecido sua senha, clique em **Esqueceu sua senha** para reconfigurar sua senha. Em seguida, retorne para o [console do {{site.data.keyword.Bluemix_notm}}](https://console.{DomainName}) ou para o [portal do cliente](https://control.softlayer.com) e efetue login novamente.
- * Caso tenha esquecido seu IBMid ou continue tendo problemas com a senha, entre em contato com o Help desk de registro IBM mundial para obter ajuda.
+ * Digite a senha correta. Para verificar se o seu IBMid e senha são válidos, é possível acessar a página Meu perfil IBM, clicar em Efetuar login e inserir seu IBMid e senha na página Efetuar Login.
+ * Caso tenha esquecido sua senha, clique em **Esqueceu sua senha** para reconfigurar sua senha. Em seguida, retorne ao [console do {{site.data.keyword.Bluemix_notm}}](https://console.{DomainName}) ou ao portal do cliente do [](https://control.softlayer.com) e efetue login novamente.
+ * Se tiver esquecido o seu IBMid ou continuar tendo problemas com a senha, entre em contato com o IBM Registration Help Desk no mundo todo para obter ajuda.
  * Para obter um IBMid e uma senha válidos, acesse a página Meu perfil IBM e, em seguida, clique em **Registrar**.
 
-**Nota:** se você estiver na página Conectar-se à IBM e o processo de login for interrompido por qualquer motivo (por exemplo, reconfiguração da senha), retorne para o [console do {{site.data.keyword.Bluemix_notm}}](https://console.{DomainName}) ou para o [portal do cliente](https://control.softlayer.com) e inicie o processo de login novamente.
+**Nota:** se você estiver na página de conexão e o processo de login for interrompido por qualquer razão (por exemplo, a reconfiguração da senha), retorne ao [console do {{site.data.keyword.Bluemix_notm}}](https://console.{DomainName}) ou ao portal do cliente do [](https://control.softlayer.com) e inicie o processo de login novamente.
 
 
 ## Credenciais de login inválidas
@@ -57,15 +57,15 @@ Ao efetuar login usando seu IBMid, a mensagem a seguir é exibida:
 
 `Credenciais de login inválidas fornecidas. Se você tiver um IBMid associado à sua conta, efetue login aqui`
 
-* Você alternou para um IBMid, mas tentou efetuar login por meio do [portal do cliente](https://control.softlayer.com) usando seu nome de usuário e senha anteriores.
+* Você alternou para um IBMid, mas tentou efetuar login por meio do portal do cliente do [](https://control.softlayer.com) usando seu nome de usuário e senha anteriores.
 {: tsCauses}
 
-* Você tentou efetuar login por meio do [portal do cliente](https://control.softlayer.com), mas inseriu seu IBMid e senha nos campos Nome do usuário e Senha.
+* Você tentou efetuar login por meio do portal do cliente do [](https://control.softlayer.com), mas inseriu seu IBMid e senha nos campos de nome de usuário e senha.
 
 Clique em **efetuar login aqui** na mensagem ou acesse a seção Login da conta IBMid e clique em **Efetuar login com o IBMid**.
 {: tsResolve}
 
-Não use os campos **Nome do usuário** e **Senha** que você usou com seu ID anterior.
+Não use os campos **Nome de usuário** e **Senha** que você usou com o seu ID anterior.
 
 
 ## IBMid ou e-mail não reconhecido
@@ -76,7 +76,7 @@ Ao efetuar login no console do {{site.data.keyword.Bluemix_notm}}, a mensagem a 
 
 `Nós não reconhecemos este IBMid ou e-mail. `
 
-Você tentou efetuar login no console do {{site.data.keyword.Bluemix_notm}}, mas não usou um IBMid válido. Por exemplo, você não inseriu um endereço de e-mail completo para o IBMid ou tentou usar um nome do usuário e senha anteriores.
+Você tentou efetuar login no console do {{site.data.keyword.Bluemix_notm}}, mas não usou um IBMid válido. Por exemplo, você não inseriu um endereço de e-mail completo para o IBMid ou tentou usar um nome de usuário e senha anteriores.
 {: tsCauses}
 
 Deve-se ter um ID IBM e uma senha válidos para efetuar login no
@@ -99,13 +99,13 @@ Ao efetuar login usando seu IBMid, a mensagem a seguir é exibida:
 Você efetuou login por meio do [portal do cliente](https://control.softlayer.com) com um IBMid válido, mas não foi alternado para a autenticação do IBMid por meio do portal do cliente.
 {: tsCauses}
 
-Conclua as verificações a seguir, conforme apropriado:
+Conclua as verificações a seguir:
 {: tsResolve}
  * Entre em contato com o usuário principal ou com o administrador da conta para verificar se você está ativado para alternar para a autenticação do IBMid.
  * Assegure-se de que você conclua a etapa Alternar para o IBMid. Consulte [Alternando para o IBMid](/docs/account/softlayerlink.html).
  * Assegure-se de que você siga as ações no e-mail **Associar seu ID do usuário a um IBMid**. Verifique sua caixa de entrada e sua pasta de lixo eletrônico para o e-mail. Para obter o e-mail novamente, por exemplo, se ele tiver expirado, acesse a página Editar perfil do usuário no portal do cliente e clique em **Reenviar e-mail**. Como alternativa, entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixsupport.com){: new_window}.
 
-Dependendo de como sua conta foi configurada, algumas dessas opções de login podem se aplicar a você:
+Dependendo de como a sua conta é configurada, algumas opções de login podem se aplicar:
  * Os usuários do SoftLayer com IDs do SoftLayer devem efetuar login por meio do [portal do cliente](https://control.softlayer.com).
  * Os usuários do SoftLayer com um IBMid, com ou sem uma conta vinculada do {{site.data.keyword.Bluemix_notm}}, podem efetuar login por meio do [portal do cliente](https://control.softlayer.com) para abrir o portal do cliente ou por meio do [console do {{site.data.keyword.Bluemix_notm}}](https://console.{DomainName}) para abrir o painel Infraestrutura.
 
@@ -118,13 +118,13 @@ Ao efetuar login no {{site.data.keyword.Bluemix_notm}}, a mensagem a seguir é e
 
 `You have reached this page because your authentication was successful, however, this IBMid is not associated with any  {{site.data.keyword.Bluemix_notm}} accounts.`
 
-Você efetuou login por meio do [Console do {{site.data.keyword.Bluemix_notm}}](https://console.{DomainName}) com um IBMid válido, mas não tem uma conta do {{site.data.keyword.Bluemix_notm}} criada ainda.
+Você efetuou login por meio do [console do {{site.data.keyword.Bluemix_notm}}](https://console.{DomainName}) com um IBMid válido, mas ainda não tem uma conta do {{site.data.keyword.Bluemix_notm}} criada.
 {: tsCauses}
 
 Para criar uma conta do {{site.data.keyword.Bluemix_notm}}, siga o processo de inscrição.
 {: tsResolve}
 
-Dependendo de como sua conta foi configurada, algumas dessas opções de login podem se aplicar a você:
+Dependendo de como a sua conta é configurada, algumas opções de login podem se aplicar:
  * Os usuários do {{site.data.keyword.Bluemix_notm}} sem uma conta vinculada devem efetuar login por meio do console do {{site.data.keyword.Bluemix_notm}}.
  * Os usuários do {{site.data.keyword.Bluemix_notm}} com uma conta vinculada podem efetuar login por meio do [console do {{site.data.keyword.Bluemix_notm}}](https://console.{DomainName}) ou do [portal do cliente](https://control.softlayer.com).
 
@@ -150,7 +150,7 @@ Ao efetuar login no {{site.data.keyword.Bluemix_notm}}, a autenticação com o I
 Pode haver um problema com o serviço de autenticação do IBMid.
 {: tsCauses}
 
-Verifique se é possível efetuar login na [página inicial da IBM ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/us-en/){: new_window}. Se você puder, será um problema de aplicativo e será possível tentar novamente depois. Se não puder efetuar login nessa página, entre em contato com o [Help Desk ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}.
+Verifique se é possível efetuar login na [página inicial da IBM ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/us-en/){: new_window}. Se você puder, será um problema de aplicativo e será possível tentar novamente depois. Se não for possível efetuar login nessa página, entre em contato com o [Help Desk ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}.
 {: tsResolve}
 
 
@@ -168,7 +168,7 @@ Depois de se registrar para uma conta {{site.data.keyword.Bluemix_notm}} Lite, v
 que está no email de confirmação para concluir o processo de registro.
 {: tsCauses}
 
-O email de confirmação é enviado ao endereço de email fornecido. Verifique sua caixa de entrada e sua pasta de spam. Se você não tiver recebido o e-mail de confirmação, entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixsupport.com){: new_window}.  
+O email de confirmação é enviado ao endereço de email fornecido. Verifique sua caixa de entrada e sua pasta de spam. Se você não recebeu o e-mail de confirmação, entre em contato com o suporte do [{{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixsupport.com){: new_window}.  
 {: tsResolve}
 
 ## A página do {{site.data.keyword.Bluemix_notm}} não pode ser carregada
