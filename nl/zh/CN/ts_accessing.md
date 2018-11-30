@@ -41,12 +41,12 @@ lastupdated: "2018-07-09"
 
 使用以下其中一种解决方案：
 {: tsResolve}
- * 输入正确的密码。要检查 IBM 标识和密码是否有效，可以转至“我的 IBM 个人档案”页面，单击**登录**，并在“登录”页面中输入 IBM 标识和密码。
+ * 输入正确的密码。要检查 IBM 标识和密码是否有效，可以转至“我的 IBM 个人档案”页面，单击“登录”，然后在“登录”页面中输入 IBM 标识和密码。
  * 如果忘记密码，请单击**忘记密码**以重置密码。然后，返回到 [{{site.data.keyword.Bluemix_notm}} 控制台](https://console.{DomainName})或[客户门户网站](https://control.softlayer.com)并重新登录。
  * 如果忘记 IBM 标识或密码问题仍未解决，请联系全球 IBM 注册帮助台来获取帮助。
  * 要获取有效的 IBM 标识和密码，请转至“我的 IBM 个人档案”页面，然后单击**注册**。
 
-**注：**如果您位于“登录到 IBM”页面上，并且登录过程出于任何原因（例如，重置密码）而中断，请返回到 [{{site.data.keyword.Bluemix_notm}} 控制台](https://console.{DomainName})或[客户门户网站](https://control.softlayer.com)，然后重新启动登录过程。
+**注：**如果您位于登录页面上，并且登录过程由于某种原因（例如密码重置）而中断，请返回到 [{{site.data.keyword.Bluemix_notm}} 控制台](https://console.{DomainName})或[客户门户网站](https://control.softlayer.com)，然后重新开始登录过程。
 
 
 ## 登录凭证无效
@@ -57,10 +57,10 @@ lastupdated: "2018-07-09"
 
 `提供的登录凭证无效。如果您有与帐户关联的 IBM 标识，请在此登录`
 
-* 您已切换到 IBM 标识，但却尝试使用先前的用户名和密码通过[客户门户网站](https://control.softlayer.com)登录。
+* 您已切换到 IBM 标识，但却尝试使用先前的用户名和密码通过[客户门户网站](https://control.softlayer.com)进行登录。
 {: tsCauses}
 
-* 您尝试了通过[客户门户网站](https://control.softlayer.com)登录，但在“用户名”和“密码”字段中输入的是 IBM 标识和密码。
+* 您尝试通过[客户门户网站](https://control.softlayer.com)进行登录，但在“用户名”和“密码”字段中输入的是 IBM 标识和密码。
 
 单击消息中的**在此登录**，或转至“IBM 标识帐户登录”部分并单击**使用 IBM 标识登录**。
 {: tsResolve}
@@ -76,7 +76,7 @@ lastupdated: "2018-07-09"
 
 `无法识别此 IBM 标识或电子邮件。`
 
-您尝试了登录到 {{site.data.keyword.Bluemix_notm}} 控制台，但未使用有效的 IBM 标识。例如，未输入 IBM 标识的标准电子邮件地址，或者尝试使用的是先前的用户名和密码。
+您尝试登录到 {{site.data.keyword.Bluemix_notm}} 控制台，但未使用有效的 IBM 标识。例如，所输入的 IBM 标识不是标准电子邮件地址，或者尝试使用的是先前的用户名和密码。
 {: tsCauses}
 
 您必须具有有效的 IBM 标识和密码才能登录到 {{site.data.keyword.Bluemix_notm}}。
@@ -97,13 +97,13 @@ lastupdated: "2018-07-09"
 您已使用有效的 IBM 标识通过[客户门户网站](https://control.softlayer.com)登录，但未在客户门户网站中切换到 IBM 标识认证。
 {: tsCauses}
 
-根据需要，完成以下检查：
+完成以下检查：
 {: tsResolve}
  * 联系主用户或帐户管理员来检查是否支持您切换到 IBM 标识认证。
  * 确保完成“切换到 IBM 标识”步骤。请参阅[切换到 IBM 标识](/docs/account/softlayerlink.html)。
  * 确保执行**将用户标识与 IBM 标识相关联**电子邮件中的操作。检查收件箱和垃圾邮件文件夹中是否有该电子邮件。要再次获取此电子邮件（例如，如果电子邮件已到期），请转至客户门户网站中的“编辑用户个人档案”页面，然后单击**重新发送电子邮件**。或者，请联系 [{{site.data.keyword.Bluemix_notm}} 支持 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://ibm.biz/bluemixsupport.com){: new_window}。
 
-根据帐户的设置方式，下面的一些登录选项可能适用：
+根据您的帐户设置方式，选择适合您的登录选项：
  * 使用 SoftLayer 标识的 SoftLayer 用户必须通过[客户门户网站](https://control.softlayer.com)登录。
  * 使用 IBM 标识且具有或不具有链接 {{site.data.keyword.Bluemix_notm}} 帐户的 SoftLayer 用户可以通过[客户门户网站](https://control.softlayer.com)登录来打开客户门户网站，也可以通过 [{{site.data.keyword.Bluemix_notm}} 控制台](https://console.{DomainName})登录来打开“基础架构”仪表板。
 
@@ -116,13 +116,13 @@ lastupdated: "2018-07-09"
 
 `由于认证成功，您已位于此页面中，但是此 IBM 标识未与任何 {{site.data.keyword.Bluemix_notm}} 帐户关联。`
 
-您已使用有效的 IBM 标识通过 [{{site.data.keyword.Bluemix_notm}} 控制台](https://console.{DomainName})登录，但还没有创建 {{site.data.keyword.Bluemix_notm}} 帐户。
+您已使用有效的 IBM 标识通过 [{{site.data.keyword.Bluemix_notm}} 控制台](https://console.{DomainName})进行登录，但尚未创建 {{site.data.keyword.Bluemix_notm}} 帐户。
 {: tsCauses}
 
 要创建 {{site.data.keyword.Bluemix_notm}} 帐户，请执行注册过程。
 {: tsResolve}
 
-根据帐户的设置方式，下面的一些登录选项可能适用：
+根据您的帐户设置方式，选择适合您的登录选项：
  * 没有链接帐户的 {{site.data.keyword.Bluemix_notm}} 用户必须通过 {{site.data.keyword.Bluemix_notm}} 控制台登录。
  * 具有链接帐户的 {{site.data.keyword.Bluemix_notm}} 用户可以通过 [{{site.data.keyword.Bluemix_notm}} 控制台](https://console.{DomainName})或[客户门户网站](https://control.softlayer.com)登录。
 
@@ -148,7 +148,7 @@ lastupdated: "2018-07-09"
 IBM 标识认证服务可能发生问题。
 {: tsCauses}
 
-检查是否可以登录到 [IBM 主页 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/us-en/){: new_window}。如果可以，说明这是应用程序问题，您可以稍后重试。如果不能登录到该页面，请联系[帮助台 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}。
+检查是否可以登录到 [IBM 主页 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/us-en/){: new_window}。如果可以，说明这是应用程序问题，您可以稍后重试。如果无法登录到该页面，请联系[帮助台 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}。
 {: tsResolve}
 
 
