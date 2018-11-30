@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-11-28"
 
 ---
 
@@ -11,57 +11,57 @@ lastupdated: "2018-08-02"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
 
-# Hiding a public resource from users in your account
+
+# Hiding a public resource from users
 {: #exclude}
 
-If you're an administrator for your account, you can hide a public resource for everyone in your account. Add the resource to an exclusion list with the `ibmcloud` [command line interface](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set).
-{:shortdesc: .shortdesc}
+As an administrator for your {{site.data.keyword.Bluemix}} account, you can hide a public resource from users who have access to the account. You might hide resources to keep sensitive information hidden from non-authorized users, or some information might only need to be accessed by a finite number of people.
+{:shortdesc}
 
-**Note:** Hiding a resource in the catalog does not remove it from the Cloud Foundry CLI or from the service provisioning lists available through the global navigation, such as Finance, Mobile, Watson, and Web Apps.
+Hiding a resource in the catalog does not remove it from the Cloud Foundry command-line interface (CLI) or from the offering category list that's available from the {{site.data.keyword.Bluemix_notm}} console navigation, such as Finance, Mobile, Watson, and Web Apps.
+{: note}
 
-## How do I know whether I have access?
-{: #find-access}
+You can use the {{site.data.keyword.Bluemix}} [command-line interface (CLI)](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) or console to determine whether you have access to allow users to view a private resource that was added to the account. If you're an account owner, you can give access to a user in your account from the console by assigning an access policy. For more information, see [Managing access to your account](access.html).
 
-You can use the CLI or the Identity and Access UI to determine whether you have access to allow users to view a private resource that was added to the account. If you're an account owner, you can give access to a user in your account through the Identity and Access Management UI by assigning an access policy. For more information, see [Managing access to your account](access.html).
-
-## Step 1: Find a resource
+## Finding a resource
 {: #find-resource}
 
-Enter `ibmcloud catalog search <service-id or service-name>` to search for a resource. Replace service-id or service-name with a resource name or ID. Find the ID or name of the service you want to hide in the information that returns.
+Run the `ibmcloud catalog search <service-id or service-name>` command to search for a resource. Replace the service-id or service-name variables with a resource name or ID. Use the information that's returned to find the ID or name of the service that you want to hide.
 
-## Step 2: Get the details of that service
+## Getting the details of the resource
 
-Enter `ibmcloud catalog service <service-id or service-name>`. Using what you found in the previous command, use this command to examine more details of the resource. With the information that returns, you can see the hierarchy, which shows the child resources of the items in your resource.
+Run the `ibmcloud catalog service <service-id or service-name>` command. Using the information that's returned from running the previous command, use this command to examine more details about the resource. With the information that is returned, you can view the hierarchy, which shows the child resources of the items in your resource.
 
-## Step 3: Hide the resource
+## Hiding the resource
 {: #vis-exc}
 
-Enter the following command to prevent your account from seeing a public resource.
+Run the following command to prevent users in your account from viewing a public resource.
 
 `ibmcloud catalog entry-visibility-set <resource-id> —-excludes-add <account-id or account-email>`
 
-After the `excludes` flag, you can add a comma-separated list of emails or account ID associated with accounts.
+You can add a comma-separated list of emails or account ID associated with accounts after the excludes flag.
 
-After you run the command, the process to hide the resource takes 30 minutes. After 30 minutes, log out and back in to your account to see the hidden resource.
+After you run the command, the process to hide the resource takes approximately 30 minutes. After 30 minutes, log out and log back in to your account to see the hidden resource.
 
-**Note:** Entries that you hide are not available from the UI and {{site.data.keyword.Bluemix}} CLI. The hidden entries are still visible in the Cloud Foundry marketplace, but a hidden plan cannot be provisioned from Cloud Foundry. Admins of the excluded account can still see the resource.
+Entries that you hide aren't available from the console or the CLI. Admins of the excluded account can still view the resource.
+{: note}
 
-## Remove an account from the exclusion list
+## Removing an account from the exclusion list
 {: #remove-exclude}
 
-Enter the following command to remove an account ID or email from the exclusion list.
+Run the following command to remove an account ID or email from the exclusion list.
 
 `ibmcloud catalog entry-visibility-set <service-id> —-excludes-remove <account-id or account-email>`
 
-## Managing visibility of child objects example
+
+## Example: Managing the visibility of child objects
 {: #child}
 
-You can manage the visibility of all your resources. Each child resource has its individual visibility characteristics.
+You can manage the visibility of all your resources. Each child resource has its individual visibility characteristics. This example shows how you can exclude an account from the Cloudant service.
 
-In this example, you can exclude an account from the public Cloudant service.
-
-If you enter `ibmcloud catalog service cloudant`, you can see the resource's children.
+Run the `ibmcloud catalog service cloudant` command to view all the children of the resource.
 
 ```
 ID                 cloudant
@@ -87,6 +87,6 @@ Children           Name                                          Kind         ID
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-Find the ID for an object and exclude an account with the `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>`.
+Find the ID for an object and exclude an account by running the `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>` command.
 
-For more information about how visibility works, see the [API docs](https://console.bluemix.net/apidocs/globalcatalog).
+For more information about how visibility works, see the [catalog API docs](https://{DomainName}/apidocs/globalcatalog).

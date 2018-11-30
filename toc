@@ -1,11 +1,10 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="account" audience="platform" arm="3397214" href="/docs/account/adminpublic.html"}
+{: .toc subcollection="account" audience="platform" arm="3397214" href="/docs/account/adminpublic.html" path="account"}
 Managing your account
 
     {: .navgroup id="learn"}
-    [Best practices for organizing users, teams, applications](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
     bp_account.md
     account_overview.md
     lite-account-show-me.md
@@ -17,11 +16,19 @@ Managing your account
         adminpublic.md
         index.md
         profile.md
+        login_settings.md
+
+    contact_info.md
+
+    {: .topicgroup}
+    Account settings
         account_settings.md
+        feature_codes.md
+        eu_hipaa_supported.md
 
     change-plan.md
+    email.md
     softlayerlink.md
-    notifications.md
 
     {: .topicgroup}
     Managing orgs and spaces
@@ -33,12 +40,16 @@ Managing your account
         access.md
         include.md
         exclude.md
-        owners.md
+
+    audit_log.md
+    {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    monitoring.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
     account_faq.md
     ts_accessing.md
     ts_accounts.md
-    monitoring.md
     {: .navgroup-end}

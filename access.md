@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-10-10"
+lastupdated: "2018-11-18"
 
 ---
 
@@ -12,40 +12,45 @@ lastupdated: "2018-10-10"
 {:screen: .screen}
 {:tip: .tip}
 
-# Managing access to the catalog
+# Managing user access to the catalog
 {: #find-access}
 
-As an account owner, you can assign access by using an IAM policy. This allows users the ability to control the visibility of private services that are added to the account catalog or public services that are created in the account. By default, only the account owner can complete these tasks.
+As an {{site.data.keyword.Bluemix}} account owner, you can assign users access to the catalog by using an {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) policy. You can control the visibility of private services that are added to the account catalog or public services that are created in the account. By default, only the account owner can complete these tasks.
 
-## How do I delegate access as an account owner?
+## Delegating access
 {: #get-access}
 
-As an account owner, you can give account access by assigning an access policy to a user through the Identity and Access UI. To ensure the necessary access for the user, select the **Global catalog** resource and the **Administrator** role for the access policy.
+You can delegate access on your account to control what users can see and to control how much authority those users have. For example, some information might only be appropriate for one users to read and analyze, whereas another another might be given the authority to edit that information. To delegate account access to another user in the account, complete the following steps.
 
-To grant other permissions, use the `viewer` and `editor` Identity and Access Management (IAM) roles. Review the following table to learn more about what each IAM role allows a user to do within the context of working with the catalog for your account.
+1. Click **Manage** > **Access (IAM)**. 
+2. Click **Access starts with the user** on the landing page. 
+3. Select a user on your account. 
+4. Click **Access policies**. 
+5. Click **Assign access**. Then, click **Assign account management services**.
+6. Select the **Global Resource Catalog** from the Services list and the **Administrator** role from the Select roles list.
 
-| Platform management role | Description of actions |
+To grant other permissions, use the Viewer and Editor roles. Review the following table to learn more about what each IAM role allows a user to do within the context of working with the catalog for your account.
+
+| Platform Management Role | Actions |
 |:-----------------|:-----------------|
-| Viewer | Can see private services, but can't make changes. |
-| Editor | Can make changes to object metadata but can't change visibility. |
-| Administrator | Can change object metadata or visibility.  |
-{: caption="Table 1. Example platform management roles and actions for the catalog service" caption-side="top"}
+| Viewer | Can view private services, but can't change them |
+| Editor | Can change object metadata, but can't change visibility for private services |
+| Administrator | Can change object metadata or visibility for private services, and restrict visibility of a public service  |
+{: caption="Table 1. Example platform management roles and actions for the catalog" caption-side="top"}
 
-For step-by-step instructions on assigning access to users in your account, go to the [Access to resources](/docs/iam/mngiam.html#iammanidaccser#resourceaccess) documentation.
+For more information about assigning access to users, see [Access to account management services](/docs/iam/mngiam.html#acctmgmt).
 
-## How do I check if I have access?
+## Confirming your access
 
-When you're added to another person's account, they might delegate levels of access to you so that you can view private resources that are added to the account. The account owner might also delegate for who sees public resources in the account catalog. You don't have this access by default. The account owner must grant you an IAM role that enables you to have access to complete these account resource management tasks.
+When you're added to another person's account, account administrators might delegate levels of access to you so that you can view private resources that are added to the account. The account owner might also delegate for who can view public resources in the account catalog. You don't have this access by default. The account owner must grant you an IAM role that so you can have access to complete these account resource management tasks.
 
-You can use the CLI or the Identity and Access UI to determine whether you have access to enable specific users to view a private resource that is added to the account.
+You can use the {{site.data.keyword.Bluemix_notm}} console or the command-line interface (CLI) to determine whether you have access to enable specific users to view a private resource in the account.
 
-To use the Identity and Access UI, complete the following steps:
+To use the console, complete the following steps:
 
-1. Go to **Manage** > **Access (IAM)**, and then click **Users**.
-2. Click your name from the Users list.
-3. Click the **Access Policies** tab, where you can view your assigned access policies. You must have the Cloud IAM administrator role for the catalog resource in your account to update the list that includes accounts to see private resources in the catalog.
+  1. Go to **Manage > Access (IAM)**.
+  2. Click your name from the Users list.
+  3. Click the **Access Policies** tab, where you can view your assigned access policies. You must have the Cloud IAM administrator role for the catalog resource in your account to update the list that includes accounts to see private resources in the catalog.
 
-To use the [{{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_commands_iam), complete the following steps:
 
-Enter the following command with your user name `ibmcloud iam user-policies <your-username>` to find whether you're an administrator of accounts you selected in the CLI. If you aren't an administrator for your account, these commands return an error that says you're not authorized.
-{: tip}
+To use the [CLI](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_commands_iam), run the `ibmcloud iam user-policies <your-user-name>` command. The command returns an error if you aren't an administrator for the account. 

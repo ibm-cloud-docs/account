@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-11-18"
 
 ---
 
@@ -15,45 +15,40 @@ lastupdated: "2018-08-02"
 # Adding accounts to your private resource
 {: #include}
 
-Any private resource that you create is restricted by default. If you're an administrator for the account, you can choose who can see your resource by adding them to an inclusion list with the {{site.data.keyword.Bluemix}} [command line interface](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set).
+Any {{site.data.keyword.Bluemix}} private resource that you create is restricted by default. If you're an administrator for the account, you can choose who can view your resource by adding the user to an inclusion list.
 {:shortdesc: .shortdesc}
 
-## How do I know whether I have access?
-{: #find-access}
+You can use the {{site.data.keyword.Bluemix}} [command-line interface (CLI)](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) or console to determine whether you have access to allow users to view a private resource that was added to the account. If you're an account owner, you can give access to a user in your account from the console by assigning an access policy. For more information, see [Managing access to your account](access.html).
 
-You can use the CLI or the Identity and Access UI to determine whether you have access to allow users to view a private resource that was added to the account. If you're an account owner, you can give access to a user in your account through the Identity and Access Management UI by assigning an access policy. For more information, see [Managing access to your account](access.html).
-
-## Step 1: Find your resource
+## Finding your resource
 {: #find-resource}
 
-Enter `ibmcloud catalog service <service-id or service-name>`. Replace service-id or service-name with your resource name or ID. With the information that returns, you can see the hierarchy, which shows the child resources of the items in your resource.
+Run the `ibmcloud catalog service <service-id or service-name>` command. Replace the service-id or service-name variables with your resource name or ID. Use the information that is returned to view the hierarchy, which shows the child resources of the items in your resource.
 
-## Step 2: Set the visibility by including an account
+## Setting the visibility by including an account
 {: #vis-inc}
 
-Enter the following command to allow an account to see your private resource.
+Run the following command to allow an account to see your private resource.
 
 `ibmcloud catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>`
 
 After the includes-add flag, you can add a comma-separated list of emails or IDs associated with accounts.
 
-After you run the command, the process to include the resource takes 30 minutes. After 30 minutes, log out and back in to your account to see the included resource.
+After you run the command, the process to include the resource takes approximately 30 minutes. After 30 minutes, log out and back in to your account to see the included resource.
 
-## Remove an account from the inclusion list
+## Removing an account from the inclusion list
 {: #remove-exclude}
 
-Enter the following command to remove an account from the `includes` list.
+Run the following command to remove an account from the includes list.
 
 `ibmcloud catalog entry-visibility-set <service-id> --includes-remove <account-id or account-email>`
 
-## Managing visibility of child objects
+## Example: Managing the visibility of child objects
 {: #child-vis}
 
-You can manage the visibility of your resource or its children.
+You can manage the visibility of your resource or its children. An empty includes list means that only the account administrators can view it. Your account must be included in the inclusion list for all members of the account to view it.
 
-An empty includes list means that only your account administrators can see it. Your account must be on the inclusion list for all members of the account to see it.
-
-For example, if you enter `ibmcloud catalog service <your_service>`, you can see the resource's children.
+The following example shows how you can run the the `ibmcloud catalog service cloudant` command to view the children of a Cloudant service instance.
 
 ```
 ID                 cloudant
@@ -79,8 +74,21 @@ Children           Name                                          Kind         ID
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-You can get the resource ID for the child deployment and then include an account by using the following command. `ibmcloud catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`.
+You can get the resource ID for the child deployment, and then include an account by running the following command:
 
-The children of an object can inherit visibility in complex ways. If the child object is private, it has its own visibility configuration. However, if the child object is set to public, it inherits the visibility of its parent. Setting visibility on a private child object might restrict its visibility more than the parent.
+`ibmcloud catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`
 
-For more information about how visibility works, see the [API docs](https://console.bluemix.net/apidocs/globalcatalog).
+The children of an object can inherit visibility in complex ways. If the child object is private, it has its own visibility configuration. However, if the child object is set to public, it inherits the visibility of its parent. Setting visibility on a private child object might restrict its visibility to more than the parent. For more information about how visibility works, see the [Catalog API docs](https://{DomainName}/apidocs/globalcatalog).
+
+## Transferring ownership of a private resource
+{: #owners}
+
+If you leave your project or organization, you might want to transfer ownership of your account to someone else.
+{:shortdesc}
+
+After you transfer ownership, you can no longer view the resource from your account. Make sure you want to transfer ownership, because this action can't be undone.
+{: important}
+
+You can use the [{{site.data.keyword.Bluemix}} command-line interface (CLI)](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_commands_settings) to transfer ownership of a private resource. Run the following command:
+
+`ibmcloud catalog entry-visibility-set <service-id> --owner <account-id or account-email>`

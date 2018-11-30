@@ -4,50 +4,45 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-11-06" 
+lastupdated: "2018-11-15" 
 
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 {:tip: .tip}
+{:important: .important}
+
 
 # Modifying your account settings
 {: #account_settings}
 
-If you are an account owner, determine the account settings that you want to enable as you are setting up your {{site.data.keyword.Bluemix}} account. 
+As an account owner, you can change the account name, view your account type, and upgrade your account. If you have an IAM Operator role or higher on all account management services, you can view and update the account name.  
 {:shortdesc}
 
-## Enabling the EU Supported setting
-{: #bill_eusupported}
 
-You can choose to limit support of any {{site.data.keyword.Bluemix_notm}} resources that are used in Europe to support teams that reside in Europe. You might choose to enable the EU Supported setting, for example, if you use resources to process personal data for European citizens. The EU Supported option is available with all paid plans.
+## Changing the account name
+{: #change-acct-name}
 
-Enabling the EU supported setting limits Level 1 and Level 2 support provided by support team members in the EU region. However, {{site.data.keyword.Bluemix_notm}} processing activities might be performed by teams located outside the EU region. Global teams can be contacted when issues are not resolved by the Level 1 or Level 2 support teams in the EU. The global teams are always contacted at the instruction of the EU support team and only when there's no impact to the security or privacy of your data.
+To edit your account name, go to **Manage > Account**, and select **Account settings**. In the Account section, click the Edit icon ![Edit icon](../icons/edit-tagging.svg), type your new account name, and click **Submit**. 
 
-By enabling this setting, EU supported services are enabled with strict access controls to ensure the data you store and process is restricted and controlled by the IBM support team in the EU region. If {{site.data.keyword.Bluemix_notm}} experts located outside the European region require access to this data to support or operate the cloud, an EU support team member reviews the access request. The EU support team member provides necessary access to the global cloud expert only to the requested system, and only for a specific time frame after which access is revoked. Throughout this process, your data is always protected.
 
-  1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Billing and usage** > **Billing**.  
-  2. Click **On**.
-  3. After you read the information about enabling the setting, select **I understand and agree to these terms**.
-  4. Click **On**.
+## Viewing your account type
+{: #view-acct-type}
 
-If you're using {{site.data.keyword.BluSoftlayer_full}} infrastructure and you do not have a linked SoftLayer account, you set the EU Supported option on the **Account Profile** page in the customer portal. For more information, see [Setting the EU Supported option](/docs/customer-portal/cpmanuserprof.html#cp_seteusupported).
+To view your account type, go to **Manage > Account**, and select **Account settings**. Details about your account type are listed in the Account Type section. For more information about the different accounts, see [Account types](/docs/account/index.html#accounts). 
 
-### EU supported offerings
 
-After you enable the EU Supported setting, you can use the **EU Supported** tag to search the catalog for offerings that have EU-supported plans.  
+## Upgrading your account
+{: #upgrading-account}
 
-## Enabling the HIPAA Supported setting
+To upgrade your Lite account to either a Pay-As-You-Go or Subscription account, you must have an `Editor` role or higher on all account management services. 
 
-You can choose to enable your account to run sensitive workloads that are regulated under the U.S. Health Insurance Portability and Accountability Act (HIPAA). 
+* For a pay-as-you-go account, go to **Manage > Account**, and select **Account settings**. Then click **Add Credit Card**. Your charges are based on your usage. If you use more than the free runtime and service allowances, you receive a monthly invoice.
+* For a subscription, go to **Manage > Account**, and select **Account settings**. Then click **Learn more**. You can you commit to a combined a minimum spending amount each month and receive a subscription discount that is applied to that minimum charge. You're charged the non-discounted rate for any usage that exceeds your total subscription amount.
 
-1. Go to **Manage** > **Billing and usage** > **Billing** in the console.
-2. Click **On**. 
-3. Read the information about enabling this setting. You cannot disable it after it's enabled. 
-4. Select **Accept**. 
-5. Click **On**.
+For more information about what's included in each account, see [Account types](/docs/account/index.html#accounts). 
 
-### HIPAA enabled offerings
 
-After you enable the HIPAA Supported setting, you can use the **HIPAA Enabled** tag to search the catalog for offerings that are HIPAA enabled. 
+To upgrade your Pay-As-You-Go account to a Subscription account, contact [IBM Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
+{: important}

@@ -19,7 +19,7 @@ lastupdated: "2018-11-19"
 # Video - {{site.data.keyword.cloud_notm}} Lite account
 {: #show_me_video}
 
-The Lite account is our free account that never expires. What do we offer in a Lite account? Find out about the available services with free Lite plans and other account features in this video.
+The Lite account is our free account that never expires. What’s offered in a Lite account? Find out about the available services with free Lite plans and other account features in this video.
 {: shortdesc}
 
 <p>
