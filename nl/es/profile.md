@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-07-10"
+lastupdated: "2018-11-14"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-07-10"
 # Configuración del perfil
 {: #usersettings}
 
-Cuando inicie por primera vez {{site.data.keyword.Bluemix}}, configure el perfil de su cuenta. Vaya al icono **{{site.data.keyword.avatar}}** ![Icono de avatar](../icons/i-avatar-icon.svg) &gt; **Perfil y cuenta** para establecer o actualizar los valores de perfil.
+Cuando inicie por primera vez {{site.data.keyword.Bluemix}}, configure el perfil de su cuenta. Vaya al icono **{{site.data.keyword.avatar}}** ![Icono Avatar](../icons/i-avatar-icon.svg) &gt; **Perfil** para configurar o actualizar su configuración de perfil.
 {:shortdesc}
 
 Configure o actualice la siguiente información:
@@ -33,7 +33,7 @@ Si es un administrador de {{site.data.keyword.Bluemix_local_notm}} o {{site.data
 ## Cambio de la foto de perfil
 {: #photo notoc}
 
-Vaya al icono **{{site.data.keyword.avatar}}** ![Icono de avatar](../icons/i-avatar-icon.svg) &gt; **Perfil y cuenta**.
+Vaya al icono **{{site.data.keyword.avatar}}** ![Icono Avatar](../icons/i-avatar-icon.svg) &gt; **Perfil**.
 
   * Pulse **CARGAR UNA FOTO** para cargar una foto.
   * Para sustituir la foto actual con una nueva, pulse **CAMBIAR FOTO**.
@@ -46,7 +46,7 @@ Un IBMid es un ID único que utiliza para iniciar sesión en la cuenta de {{site
 
 No es posible cambiar su IBMid, sin embargo, puede editar la información de perfil asociada al mismo como, por ejemplo, su nombre, correo electrónico, número de teléfono, contraseña o nombre de la empresa.
 
-1. Vaya al icono **{{site.data.keyword.avatar}}** ![Icono de avatar](../icons/i-avatar-icon.svg) &gt; **Perfil y cuenta**.
+1. Vaya al icono **{{site.data.keyword.avatar}}** ![Icono Avatar](../icons/i-avatar-icon.svg) &gt; **Perfil**.
 2. Pulse **Editar el IBMid**.
 3. Edite la información de usuario.
 4. Pulse **Guardar**.
@@ -54,11 +54,11 @@ No es posible cambiar su IBMid, sin embargo, puede editar la información de per
 ## Valor de seguimiento de herramientas de análisis
 {: #tracking}
 
-De forma predeterminada se realiza un seguimiento de las acciones en la consola de {{site.data.keyword.Bluemix_notm}}. El seguimiento permite al equipo de {{site.data.keyword.Bluemix_notm}} crear una mejor experiencia y proporcionar un mejor soporte. Los datos recopilados no se utilizan ni comparten para otros fines.
+De forma predeterminada se realiza un seguimiento de las acciones en la consola de {{site.data.keyword.Bluemix_notm}}. El seguimiento permite al equipo de {{site.data.keyword.Bluemix_notm}} crear una mejor experiencia y proporcionar un mejor soporte. Los datos que se recopilan no se utilizan ni se comparten para otros fines.
 
 Si elige inhabilitar el seguimiento, es posible que no pueda utilizar algunas características como, por ejemplo, las comunicaciones mediante conversaciones.
 
 Para inhabilitar el seguimiento de las herramientas de análisis, realice los siguientes pasos:
 
-1. Vaya al icono **{{site.data.keyword.avatar}}** ![Icono de avatar](../icons/i-avatar-icon.svg) &gt; **Perfil y cuenta**.
+1. Vaya al icono **{{site.data.keyword.avatar}}** ![Icono Avatar](../icons/i-avatar-icon.svg) &gt; **Perfil**.
 2. Establezca el seguimiento de las herramientas de análisis en **Desactivado**.

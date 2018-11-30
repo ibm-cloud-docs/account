@@ -33,9 +33,9 @@ Para obtener más información sobre la gestión de organizaciones y espacios, c
 ## ¿Puedo mover una organización a otra cuenta?
 {: #move-org-diff-account}
 
-En este momento, no puede migrar una organización a una cuenta distinta. 
+No puede migrar una organización a una cuenta distinta. 
 
-## ¿Qué puedo hacer si recibo un error al crear la cuenta?
+## ¿Qué puedo hacer si recibo un error cuando creo la cuenta?
 {: #account-error}
 
 Puede abrir una incidencia de soporte si se encuentra con algún problema al intentar crear la cuenta.
@@ -58,7 +58,7 @@ Un plan Lite corresponde a una cuota gratuita basada en un plan de servicio. Pue
 ## ¿Qué sucede cuando mi instancia del plan Lite alcanza la cuota mensual?
 {: #monthlyquota}
 
-Si se alcanza cualquier límite de cuota para instancias del plan Lite, se suspende el servicio para ese mes. Los límites de cuota son por organización, no por instancia. Nuevas instancias creadas en la misma organización reflejarán el uso de instancias anteriores. Los límites de cuota se restablecen el primero de cada mes.
+Si se alcanza cualquier límite de cuota para instancias del plan Lite, se suspende el servicio para ese mes. Los límites de cuota son por organización, no por instancia. Las nuevas instancias creadas en la misma organización reflejan el uso de instancias anteriores. Los límites de cuota se restablecen el primer día del mes.
 
 ## ¿Cuántos grupos de recursos, organizaciones o espacios puedo crear?
 {: #resourcelimit}
@@ -73,7 +73,7 @@ Si tiene una cuenta facturable, no hay un límite en el número de grupos de rec
 * Para actualizar de una cuenta Lite a una cuenta de Suscripción, vaya a **Gestionar > Facturación y uso > Facturación** y pulse **Más información**.
 * Para convertir la cuenta de Pago según uso en una cuenta de Suscripción, póngase en contacto con [Ventas de {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg).
 
-## Si actualizo mi cuenta Lite, ¿puedo continuar utilizando mis instancias existentes?
+## Si actualizo mi cuenta Lite, ¿puedo seguir utilizando mis instancias existentes?
 {: #nochange}
 
 Sí, puede actualizarla a una cuenta facturable y seguir utilizando las instancias que creó con su cuenta Lite.
@@ -86,7 +86,7 @@ Actualizar el método de pago asociado a su cuenta facturable es un proceso senc
 ## ¿Cómo puedo restablecer mi contraseña? 
 {: #reset-password}
 
-Según la contraseña que desea restablecer, realice las siguientes opciones: 
+Según la contraseña que desea restablecer, tiene las siguientes opciones: 
 
 * Si tiene un ID y contraseña de SoftLayer, consulte [Gestión de contraseñas](/docs/customer-portal/cpmanacctmanpw.html#cp_reset-your-password). 
 * Para restablecer la contraseña de VPN, consulte [Actualizar la contraseña de VPN de un usuario](/docs/infrastructure/iaas-vpn/update-password.html#update-a-user-s-vpn-password).
@@ -124,7 +124,7 @@ Las cuentas de prueba de {{site.data.keyword.Bluemix_notm}} están disponibles p
 ## Después de enlazar mi cuenta, ¿cómo inicio una sesión?
 {: #al_login}
 
-Después de enlazar su cuenta, utilice su IBMid para iniciar sesión en la consola de {{site.data.keyword.Bluemix}}.
+Después de enlazar su cuenta, utilice su IBMid para iniciar una sesión en la consola de {{site.data.keyword.Bluemix}}.
 
 ## Después de enlazar mi cuenta, ¿cómo afecta a mi soporte?
 {: #al_support}
@@ -134,18 +134,18 @@ Después de enlazar su cuenta, mantendrá el mismo nivel de soporte que el que t
 ## ¿Hay otras formas de obtener ayuda con relación al enlace de cuentas? 
 {: #al_morehelp}
 
-  1. Consulte el blog de [Pasos para enlazar sus cuentas IaaS y PaaS](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/) donde obtendrá información de utilidad.
+  1. Consulte el blog de [Pasos para enlazar sus cuentas IaaS y PaaS](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/) para obtener más información.
   2. Desde el portal de clientes de infraestructura de {{site.data.keyword.BluSoftlayer_full}}, abra un **Chat en directo para ventas** para realizar preguntas sobre la cuenta.
-  3. Abra un tíquet desde el portal de clientes de infraestructura de {{site.data.keyword.BluSoftlayer_full}}.  Seleccione **Soporte** > **Añadir tíquet** y, a continuación, en el campo **Asunto**, seleccione ** Solicitud de cuenta** para dirigir su pregunta relacionada con la cuenta al equipo de soporte adecuado.
+  3. Abra un tíquet desde el portal de clientes de infraestructura de {{site.data.keyword.BluSoftlayer_full}}. Seleccione **Soporte** > **Añadir tíquet** y, a continuación, en el campo **Asunto**, seleccione ** Solicitud de cuenta** para dirigir su pregunta relacionada con la cuenta al equipo de soporte adecuado.
 
-Si usted es el maestro de cuentas, consulte [Trabajar con usuarios](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) para obtener más información sobre la gestión de usuarios.
+Si usted es el maestro de la cuenta, consulte [Trabajar con usuarios](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) para obtener más información sobre cómo gestionar usuarios.
 
 ## ¿Cómo enlazar mi cuenta si tengo varias cuentas?
 {: #al_multacct}
 
 Si tiene varias cuentas de SoftLayer, primero debe enlazar las cuentas que tengan una cuenta de plataforma de {{site.data.keyword.Bluemix_notm}} coincidente, y el correspondiente IBMid.
 
-Si no tiene una cuenta de plataforma de {{site.data.keyword.Bluemix_notm}} coincidente, y la correspondiente cuenta IBMid, se puede crear una nueva cuenta de SoftLayer para enlazar las cuentas.
+Si no tiene una cuenta de la plataforma {{site.data.keyword.Bluemix_notm}} coincidente, y la correspondiente cuenta IBMid, se puede crear una nueva cuenta de SoftLayer para enlazar las cuentas.
 
 ## ¿Hay incentivos para enlazar mis cuentas? 	
 {: #al_incent}
@@ -167,9 +167,9 @@ No puede conmutar el propietario de una cuenta, pero puedo cambiar propietarios 
 ## ¿Qué significa añadir los servicios de la plataforma {{site.data.keyword.Bluemix_notm}} a mi cuenta de SoftLayer? 	
 {: #al_owaffslacct}
 
-Esto significa que la cuenta tendrá acceso a todas las ofertas de la plataforma {{site.data.keyword.Bluemix_notm}}.  Después de añadir la oferta de la plataforma {{site.data.keyword.Bluemix_notm}} a su cuenta, su maestro de cuentas necesitará habilitar el usuario final para que tenga acceso a la oferta.
+Esto significa que la cuenta tendrá acceso a todas las ofertas de la plataforma {{site.data.keyword.Bluemix_notm}}.  Después de añadir la oferta de la plataforma {{site.data.keyword.Bluemix_notm}} a su cuenta, su maestro de cuentas necesitará habilitar el usuario para que tenga acceso a la oferta.
 
-Si usted es el maestro de cuentas, consulte [Trabajar con usuarios](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) para obtener más información.
+Si es el maestro de la cuenta, consulte [Trabajar con usuarios](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) para obtener más información.
 
 ## El enlace de las cuentas, ¿cómo afecta al ID de cuenta maestra de SoftLayer? 	
 {: #al_howaffslmastacct}

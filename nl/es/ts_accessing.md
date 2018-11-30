@@ -41,12 +41,12 @@ La contraseña que ha utilizado para iniciar sesión en {{site.data.keyword.Blue
 
 Utilice una de las soluciones siguientes:
 {: tsResolve}
- * Escriba la contraseña correcta. Para comprobar si su IBMid y contraseña son válidos, puede ir a la página Mi perfil de IBM, pulsar **Iniciar sesión** y especificar el IBMid y la contraseña en la página Iniciar sesión.
+ * Escriba la contraseña correcta. Para comprobar si su IBMid y contraseña son válidos, puede ir a la página Mi perfil de IBM, pulsar Iniciar sesión y especificar el IBMid y la contraseña en la página Iniciar sesión.
  * Si ha olvidado su contraseña, pulse **¿Ha olvidado su contraseña?** para restablecer la contraseña. A continuación, vuelva a la [consola de {{site.data.keyword.Bluemix_notm}}](https://console.{DomainName}) o al [portal de clientes](https://control.softlayer.com) e inicie sesión de nuevo.
  * Si ha olvidado el IBMid o sigue teniendo problemas con su contraseña, póngase en contacto con el centro de atención al cliente de registro de IBM a nivel mundial para obtener ayuda.
  * Para obtener un IBMid y una contraseña válidos, vaya a la página Mi perfil de IBM y pulse **Registro**.
 
-**Nota:** Si está en la página de inicio de sesión en IBM y el proceso de inicio de sesión se interrumpe por cualquier motivo (por ejemplo, al restablecer su contraseña), vuelva a la [consola de {{site.data.keyword.Bluemix_notm}}](https://console.{DomainName}) o al [portal de clientes](https://control.softlayer.com) e inicie el proceso de inicio de sesión de nuevo.
+**Nota:** si está en la página de inicio de sesión y el proceso de inicio de sesión se interrumpe por cualquier motivo (por ejemplo, al restablecer su contraseña), vuelva a la [consola de {{site.data.keyword.Bluemix_notm}}](https://console.{DomainName}) o al [portal de clientes](https://control.softlayer.com) e inicie el proceso de inicio de sesión de nuevo.
 
 
 ## Credenciales de inicio de sesión no válidas
@@ -60,7 +60,7 @@ Cuando inicia sesión con su IBMid, aparece el siguiente mensaje:
 * Ha cambiado a un IBMid, pero ha intentado iniciar sesión a través del [portal de clientes](https://control.softlayer.com) utilizando su nombre de usuario y contraseña anteriores.
 {: tsCauses}
 
-* Ha intentado iniciar la sesión a través del [portal de clientes](https://control.softlayer.com), pero ha especificado su IBMid y su contraseña en los campos Nombre de usuario y Contraseña.
+* Ha intentado iniciar la sesión a través del [portal de clientes](https://control.softlayer.com), pero ha especificado su IBMid y su contraseña en los campos de nombre de usuario y contraseña.
 
 Pulse **iniciar la sesión aquí** en el mensaje o vaya a la sección de inicio de sesión con cuenta de IBMid y pulse **Iniciar la sesión con IBMid**.
 {: tsResolve}
@@ -98,13 +98,13 @@ Cuando inicia sesión con su IBMid, aparece el siguiente mensaje:
 Ha iniciado una sesión desde el [portal de clientes](https://control.softlayer.com) con un IBMid válido, pero no ha cambiado a la autenticación de IBMid desde el portal de cliente.
 {: tsCauses}
 
-Siga los pasos siguientes según proceda:
+Efectúe las comprobaciones siguientes:
 {: tsResolve}
  * Póngase en contacto con el usuario maestro o con el administrador para comprobar que puede cambiar a la autenticación con IBMid.
  * Asegúrese de haber llevado a cabo el paso de cambio a IBMid. Consulte [Cambio a un IBMid](/docs/account/softlayerlink.html).
  * Asegúrese de seguir las acciones del correo electrónico **Asociar su ID de usuario con un IBMid**. Consulte la bandeja de entrada y la carpeta de correo basura para buscar el correo electrónico. Para recuperar el correo electrónico, por ejemplo si ha caducado, vaya a la página Editar perfil de usuario del portal de clientes y pulse **Reenviar correo electrónico**. Como alternativa, póngase en contacto con el [equipo de soporte de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](http://ibm.biz/bluemixsupport.com){: new_window}.
 
-En función de cómo se haya configurado su cuenta, se podrán aplicar algunas de estas opciones de inicio de sesión:
+En función de cómo se haya configurado su cuenta, se podrán aplicar algunas opciones de inicio de sesión:
  * Los usuarios de SoftLayer con ID de SoftLayer deben iniciar sesión a través del [portal de clientes](https://control.softlayer.com).
  * Los usuarios de SoftLayer con un IBMid y con o sin una cuenta de {{site.data.keyword.Bluemix_notm}} enlazada pueden iniciar sesión a través del [portal de clientes](https://control.softlayer.com) para abrir el portal de clientes o a través de la [consola de {{site.data.keyword.Bluemix_notm}}](https://console.{DomainName}) para abrir el panel de control de Infraestructura.
 
@@ -117,13 +117,13 @@ Cuando inicia sesión en {{site.data.keyword.Bluemix_notm}}, aparece el siguient
 
 `Ha llegado a esta página porque la autenticación ha sido satisfactoria; sin embargo, este IBMid no está asociado a ninguna cuenta de {{site.data.keyword.Bluemix_notm}}.`
 
-Ha iniciado sesión en la [consola de {{site.data.keyword.Bluemix_notm}}](https://console.{DomainName}) con un IBMid válido pero aún no ha creado una cuenta de {{site.data.keyword.Bluemix_notm}}.
+Ha iniciado sesión en la [consola de {{site.data.keyword.Bluemix_notm}}](https://console.{DomainName}) con un IBMid válido, pero aún no ha creado una cuenta de {{site.data.keyword.Bluemix_notm}}.
 {: tsCauses}
 
 Para crear una cuenta de {{site.data.keyword.Bluemix_notm}}, siga el proceso de registro.
 {: tsResolve}
 
-En función de cómo se haya configurado su cuenta, se podrán aplicar algunas de estas opciones de inicio de sesión:
+En función de cómo se haya configurado su cuenta, se podrán aplicar algunas opciones de inicio de sesión:
  * Los usuarios de {{site.data.keyword.Bluemix_notm}} sin una cuenta enlazada deben iniciar sesión a través de la consola de {{site.data.keyword.Bluemix_notm}}.
  * Los usuarios de {{site.data.keyword.Bluemix_notm}} con una cuenta enlazada pueden iniciar la sesión a través de la [consola de {{site.data.keyword.Bluemix_notm}}](https://console.{DomainName}) o el [portal de clientes](https://control.softlayer.com).
 
@@ -149,7 +149,7 @@ Cuando inicia una sesión en {{site.data.keyword.Bluemix_notm}}, la autenticaci�
 Es posible que haya un problema con el servicio de autenticación de IBMid.
 {: tsCauses}
 
-Compruebe si puede iniciar sesión en la [página de inicio de IBM ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/us-en/){: new_window}. Si puede, entonces es un problema de aplicación y puede intentarlo más tarde. Si no puede iniciar sesión en esa página, póngase en contacto con el [centro de atención al cliente ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}.
+Compruebe si puede iniciar una sesión en la [página de inicio de IBM ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/us-en/){: new_window}. Si puede, entonces es un problema de aplicación y puede intentarlo más tarde. Si no puede iniciar una sesión en esa página, póngase en contacto con el [centro de atención al cliente ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}.
 {: tsResolve}
 
 

@@ -22,7 +22,7 @@ lastupdated: "2018-09-25"
 {: #managingaccounts}
 
 Los problemas generales con la gestión de la cuenta pueden incluir que distintas
-apps compartan el mismo nombre de dominio o que los administradores no puedan ver
+apps compartan un nombre de dominio o que los administradores no puedan ver
 todas las organizaciones. En muchos de los casos, puede solucionar estos problemas siguiendo unos sencillos pasos.
 {:shortdesc}
 
@@ -61,7 +61,7 @@ Puede recibir el siguiente mensaje de error al intentar crear una instancia de p
 Hay un límite de una instancia de plan Lite para mantener estos planes gratuitos.
 {: tsCauses}
 
-Es posible crear instancias adicionales del servicio seleccionando uno de los planes de servicios facturables, que también están disponibles en las cuentas facturables. Para actualizar a una cuenta facturable desde la consola, vaya a la página **Gestionar > Facturación y uso > Facturación ** y, a continuación, pulse **Añadir tarjeta de crédito**.
+Se pueden crear más instancias del servicio seleccionando uno de los planes de servicios facturables, que también están disponibles en las cuentas facturables. Para actualizar a una cuenta facturable desde la consola, vaya a la página **Gestionar > Facturación y uso > Facturación ** y, a continuación, pulse **Añadir tarjeta de crédito**.
 {: tsResolve}
 
 Si no desea actualizar la cuenta Lite y ya no está utilizando la instancia de servicio Lite existente, puede suprimir dicha instancia de plan Lite desde el panel de control y, a continuación, crear una nueva instancia.
@@ -75,7 +75,7 @@ No puede desplegar apps y aparece un error que indica que ha superado el límite
 En una cuenta Lite, sus apps de Cloud Foundry pueden utilizar hasta 256 MB de memoria de tiempo de ejecución instantánea. En las cuentas facturables, hay un límite de 2 GB de memoria.
 {: tsCauses}
 
-Si está utilizando una cuenta Lite, puede obtener memoria adicional actualizando a una cuenta facturable. Vaya a la página **Gestionar > Facturación y uso > Facturación** en la consola y, a continuación, pulse **Añadir tarjeta de crédito**.
+Si está utilizando una cuenta Lite, puede obtener más memoria actualizando a una cuenta facturable. Vaya a la página **Gestionar > Facturación y uso > Facturación** en la consola y, a continuación, pulse **Añadir tarjeta de crédito**.
 {: tsResolve}
 
 Si no desea actualizar la cuenta Lite y tiene apps desocupadas, puede suprimirlas para liberar memoria de tiempo de ejecución.
@@ -160,10 +160,10 @@ Para crear un espacio, utilice uno de estos métodos:
   * En la interfaz de línea de mandatos Cloud Foundry, escriba `cf create-space <space_name> -o <organization_name>`.
 
 
-## Las apps comparten el mismo nombre de dominio
+## Las apps comparten un nombre de dominio
 {: #ts_domain_diff}
 
-Puede que observe que varias apps comparten el mismo URL en {{site.data.keyword.Bluemix_notm}}.
+Puede que observe que varias apps comparten un URL en {{site.data.keyword.Bluemix_notm}}.
 
 Este problema puede producirse cuando se asigna la misma ruta de URL a distintas apps de un espacio.
 {: tsCauses}
@@ -185,7 +185,7 @@ Como administrador, no puede ver todas las organizaciones utilizando la interfaz
 Se trata de una limitación de la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}.
 {: tsCauses}
 
-Puede utilizar mandatos como `cf orgs`, `cf create-org` y `cf delete-org` desde la interfaz de línea de mandatos de Cloud Foundry para gestionar todas las organizaciones. Para ver una lista completa de mandatos de cf, especifique `cf help`.
+Puede utilizar mandatos como `cf orgs`, `cf create-org` y `cf delete-org` desde la interfaz de línea de mandatos de Cloud Foundry para gestionar todas las organizaciones. Para ver una lista completa de mandatos de Cloud Foundry, especifique `cf help`.
 {: tsResolve}
 
 ## La tarjeta de crédito no se puede agregar
@@ -196,13 +196,13 @@ No puede enviar información de su tarjeta de crédito para convertir la cuenta 
 El botón **Enviar** de la página Añadir tarjeta de crédito está inhabilitado.
 {: tsSymptoms}
 
-Este problema sucede cuando no se ha rellenado la información correcta en la página Añadir tarjeta de crédito.
+Este problema sucede cuando no se ha especificado la información correcta en la página Añadir tarjeta de crédito.
 {: tsCauses}
 
 
 Siga estos pasos:
 {: tsResolve}
 
-  1. En la página Añadir tarjeta de crédito, rellene los campos necesarios de las secciones: información de contacto, dirección de contacto y dirección de facturación.
+  1. En la página Añadir tarjeta de crédito, complete los campos necesarios de las secciones: información de contacto, dirección de contacto y dirección de facturación.
   2. Seleccione **He leído y acepto los términos y condiciones de IBM**, luego pulse **Enviar**. Se muestra la sección **Seleccionar un método de pago**.
-  3. Escriba su número de tarjeta de crédito, la fecha de caducidad y el código de seguridad. Luego pulse **Enviar**.
+  3. Escriba su número de tarjeta de crédito, la fecha de caducidad y el código de seguridad. Luego, pulse **Enviar**.
