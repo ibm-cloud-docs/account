@@ -33,7 +33,7 @@ By enabling this setting, EU supported services have strict access controls to e
   3. Read the information about enabling the setting, and select **I understand and agree to these terms**.
   4. Click **On**.
 
-  After you enable the EU Supported setting, you can use the `EU Supported` tag to search the catalog for offerings that have EU-supported plans. 
+  After you enable the EU Supported setting, you can use the EU Supported tag to search the catalog for offerings that have EU-supported plans. 
   {: tip}
 
 
