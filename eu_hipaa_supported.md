@@ -4,7 +4,7 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-11-15" 
+lastupdated: "2018-12-02" 
 
 ---
 
@@ -46,10 +46,10 @@ You can choose to enable the HIPAA Supported setting to run sensitive workloads 
 2. For the HIPAA Supported option, click **On**. 
 3. Read the information about enabling this setting. 
 
-  You can't disable it after you enable it.
+  You can't disable the setting after you enable it.
   {: important}
    
 4. Select **Accept**, and click **Submit**. 
 
-  After you enable the HIPAA Supported setting, you can use the `HIPAA Enabled` tag to search the catalog for offerings that are HIPAA enabled. Also, {{site.data.keyword.Bluemix_notm}} warns you if you select to create an offering that isn't HIPAA enabled.
+  After you enable the HIPAA Supported setting, you can use the HIPAA Enabled tag to search the catalog for offerings that are HIPAA enabled.
   {: tip}
