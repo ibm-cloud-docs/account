@@ -4,7 +4,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-11-29"
+lastupdated: "2018-12-04"
 
 
 ---
@@ -63,10 +63,10 @@ TOTP MFA adds an extra layer of security to your account by requiring a TOTP pas
 You might also be prompted for a time-based one-time passcode if the user TOTP setting isn't set up and enabled. This is because an account owner might turn on IBMid MFA for an account that you have access to. This type of MFA applies to every user in the account when this setting is turned on, and you're required to use it. For more information, see [Types of multifactor authentication](/docs/iam/mfatypes.html#types).
 
 
-## Setting up external authentication options
+## Setting up external authentication 
 {: #third-party-MFA}
 
-You or your account administrator can order Symantec or phone-based authentication for you for a monthly cost. For you to order external authentication, you have to have the add services infrastructure permissions. To find out if external authentication is enabled, go to **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Profile and settings**, and select **Login settings**. If Phone-based MFA is disabled, click **Go to User details**. This link will take you to the same page as the steps for setting up your symantec authentication and setting up your phone-based authentication.  
+You or your account administrator can order Symantec or phone-based authentication for you for a monthly cost. For you to order external authentication, you have to have the add services infrastructure permissions. To find out if external authentication is enabled, go to **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Profile and settings**, and select **Login settings**. 
 
 ### Setting up Symantec authentication
 
@@ -80,15 +80,14 @@ After your administrator orders and enables the option, you can use the app for 
 
 ### Setting up phone-based authentication
 
-If your account administrator chooses to order phone-based identity protection, you must set it up after your administrator orders it. Then, your administrator can enable it for you to use. After your administrator orders phone-based authentication, complete the following steps to set it up:
+You can set up and use phone-based identity protection after your account administrator orders and enables it.
 
-1. Go to **Manage** > **Access (IAM)**.
-2. Click **Users**, and select your name from the list.
-3. From the **User details** page in the **Manage user's login** section, click the **Edit** icon ![Edit icon](../icons/icon_write.svg) for the **Phone-based authentication** row.
-4. Follow the prompts to set up your phone-based authentication.
-
-After you have set up your phone-based authentication, the account administrator can enable the option for you to be prompted for this MFA type at login.
-
+1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Profile and settings**, and select **Login settings**.
+2. If Phone-based MFA is disabled, click **Go to User details**.
+3. In the Manage user's login section, turn on phone-based authentication. 
+4. To provide contact information for the authentication, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg).
+5. Complete all the fields. You can specify whether to receive a phone call or a text message as the authentication method. If you want to require a PIN, select the option from the **Pin type** list, and provide the PIN you want to use.  
+6. Click **Apply**. 
 
  
 
