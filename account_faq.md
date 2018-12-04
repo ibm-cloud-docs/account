@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-11-18"
+lastupdated: "2018-12-04"
 
 ---
 
@@ -113,11 +113,11 @@ To reset your VPN password, complete the following steps:
 {: #cancelaccount}
 {: faq}
 
-If you have an eligible account type, go to **Manage** > **Account** > **Account settings**, and click **Deactivate Account**. 
+If you have an eligible account type, go to **Manage** > **Account** > **Account settings**, and click **Deactivate account**. 
 
 ![Account settings screen capture.](images/cancel-faq3.svg "Account settings screen capture")
 
-If you go to the **Account settings** page and the **Deactivate Account** is not displayed, you can get in touch by calling 1-866-325-0045 and selecting the third option, or open a [support case](https://{DomainName}/unifiedsupport/supportcenter){: new_window} ![External link icon](../icons/launch-glyph.svg).
+If you go to the **Account settings** page and the **Deactivate account** button is not displayed, you can get in touch by calling 1-866-325-0045 and selecting the third option, or open a support case.
 
 ## How do I delete my account?
 {: #deleteaccount}
