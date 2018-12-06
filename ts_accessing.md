@@ -107,7 +107,7 @@ Use one of the following options:
 {: #ts_login_ibmid}
 {: troubleshoot}
 
-If you log in to F{site.data.keyword.Bluemix_notm}} and the authentication of your IBMid doesn't complete, then there might be a problem with the service. 
+If you log in to {{site.data.keyword.Bluemix_notm}} and the authentication of your IBMid doesn't complete, then there might be a problem with the service. 
 
 When you log in to {{site.data.keyword.Bluemix_notm}}, authenticating with IBMid doesn't complete.
 {: tsSymptoms}
