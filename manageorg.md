@@ -63,4 +63,4 @@ You can view the resources of only one org at a time. If you are a member of mul
     
     To change the quota that is allocated to an org, you must create a support case. For more information, see [Working with support cases](/docs/get-support/opencase.html#open-case).
     
-    To view the quota details at the space level for each location, click the Actions icon ![Action icon](../icons/action-menu-icon.svg) for the respective org, and select **Quotas**. Then, expand the each row accordingly. 
+    To view the quota details at the space level for each location, click the Actions icon ![Action icon](../icons/action-menu-icon.svg) for the respective org, and select **Quotas**. Then, expand each row accordingly. 
