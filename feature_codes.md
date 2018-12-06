@@ -24,7 +24,7 @@ Depending on your account type, you can use feature codes to take advantage of {
 ## Applying feature codes for Lite accounts
 {: #feature-code-lite}
 
-If you have a Lite account, you can use a feature code to unlock extra resources or capabilities. You must have an Editor role or higher on all account management services, you can apply a feature code.  
+If you have a Lite account, you can use a feature code to unlock extra resources or capabilities. You must have an Editor role or higher on all account management services to apply a feature code.  
 
 1. From the {{site.data.keyword.Bluemix_notm}} console, go to **Manage > Account**, and select **Account settings**. 
 2. Click **Apply code**. 
