@@ -5,7 +5,6 @@
 Gestion de votre compte
 
     {: .navgroup id="learn"}
-    [Meilleures pratiques pour l'organisation des utilisateurs, des équipes et des applications](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
     bp_account.md
     account_overview.md
     lite-account-show-me.md
@@ -13,15 +12,23 @@ Gestion de votre compte
 
     {: .navgroup id="howto"}
     {: .topicgroup}
-    Configuration du compte
+    Configuration de compte
         adminpublic.md
         index.md
         profile.md
+        login_settings.md
+
+    contact_info.md
+
+    {: .topicgroup}
+    Paramètres de compte
         account_settings.md
+        feature_codes.md
+        eu_hipaa_supported.md
 
     change-plan.md
+    email.md
     softlayerlink.md
-    notifications.md
 
     {: .topicgroup}
     Gestion d'organisations et d'espaces
@@ -33,12 +40,16 @@ Gestion de votre compte
         access.md
         include.md
         exclude.md
-        owners.md
+
+    audit_log.md
+    {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    monitoring.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
     account_faq.md
     ts_accessing.md
     ts_accounts.md
-    monitoring.md
     {: .navgroup-end}

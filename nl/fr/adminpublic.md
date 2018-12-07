@@ -1,11 +1,10 @@
 ---
 
 
-
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-04-06"
+lastupdated: "2018-11-19"
 
 
 ---
@@ -15,13 +14,13 @@ lastupdated: "2018-04-06"
 {:screen: .screen}
 {:new_window: target="_blank"}
 
+
 # Inscription à {{site.data.keyword.Bluemix_notm}}
 
-Vous pouvez vous inscrire à un compte {{site.data.keyword.Bluemix}} en utilisant un IBMid existant, en créant un nouvel IBMid ou en utilisant un ID fédéré. Un ID fédéré est un ID présent dans le domaine d'une société qui est enregistré auprès d'IBM de sorte que le domaine et les données d'identification de l'utilisateur puissent être utilisés pour accéder aux applications Web IBM. Cliquez sur **Inscription** pour commencer.
+Vous pouvez vous inscrire à un [compte{{site.data.keyword.Bluemix}} ](https://cloud.ibm.com){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe") en utilisant un IBMid existant, en créant un nouvel IBMid ou en utilisant un ID fédéré. Un ID fédéré est un ID présent dans le domaine d'une société qui est enregistré auprès d'IBM de sorte que le domaine et les données d'identification de l'utilisateur puissent être utilisés pour accéder aux applications Web IBM. Cliquez sur **Créer un compte {{site.data.keyword.Bluemix_notm}}** pour commencer.
 {:shortdesc}
 
-
-Un ID fédéré peut être utilisé pour s'inscrire à {{site.data.keyword.Bluemix_notm}} uniquement si votre société est déjà enregistrée auprès d'IBM. L'enregistrement du domaine d'une société auprès d'IBM permet aux utilisateurs de se connecter pour recevoir des produits et des services IBM en utilisant leurs données d'identification d'utilisateur de société existantes. L'authentification est alors gérée par le fournisseur d'identité de votre société. Lorsque vous vous connectez à {{site.data.keyword.Bluemix_notm}} avec un ID fédéré, vous êtes invité à le faire via la page de connexion de votre société. Pour toute information, voir [IBMid Enterprise Federation Adoption Guide ![Icône de lien externe](../icons/launch-glyph.svg)](https://ibm.box.com/v/IBMid-Federation-Guide){: new_window}. Un sponsor IBM, tel qu'un représentant du client ou un service de conseil, est requis lorsque vous demandez à enregistrer des ID fédérés.
+Un ID fédéré peut être utilisé pour s'inscrire à {{site.data.keyword.Bluemix_notm}} uniquement si votre société est déjà enregistrée auprès d'IBM. L'enregistrement du domaine d'une société auprès d'IBM permet aux utilisateurs de se connecter pour recevoir des produits et des services IBM en utilisant leurs données d'identification d'utilisateur de société existantes. L'authentification est alors gérée par le fournisseur d'identité de votre société. Lorsque vous vous connectez à {{site.data.keyword.Bluemix_notm}} avec un ID fédéré, vous êtes invité à le faire via la page de connexion de votre société. Pour plus d'informations, voir [IBMid Enterprise Federation Adoption Guide ![Icône de lien externe](../icons/launch-glyph.svg)](https://ibm.box.com/v/IBMid-Federation-Guide){: new_window}. Un sponsor IBM, tel qu'un représentant du client ou un service de conseil, est requis lorsque vous demandez à enregistrer des ID fédérés.
 
 IBM utilise le langage Security Assertion Markup Language 2.0 (SAML 2.0) pour cette fédération d'identité. SAML 2.0 est une version standard pour l'échange de données d'authentification entre des domaines de sécurité. Il s'agit d'un protocole de type XML qui utilise un jeton de sécurité contenant des assertions pour transmettre des informations entre les organisations, "fournisseur d'identité", et la "partie utilisatrice IBM" connue sous l'appellation "fournisseur de services".
 
