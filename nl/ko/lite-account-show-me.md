@@ -19,7 +19,7 @@ lastupdated: "2018-11-19"
 # 동영상 - {{site.data.keyword.cloud_notm}} Lite 계정
 {: #show_me_video}
 
-Lite 계정은 영구 무료 계정입니다. Lite 계정에서 제공하는 사항이 궁금하십니까? 이 동영상에서 무료 Lite 플랜 및 다른 계정 기능을 가진 사용 가능한 서비스에 대해 알아보십시오.
+Lite 계정은 영구 무료 계정입니다. Lite 계정에서는 무엇이 제공됩니까? 이 동영상에서 무료 Lite 플랜 및 다른 계정 기능을 가진 사용 가능한 서비스에 대해 알아보십시오.
 {: shortdesc}
 
 <p>

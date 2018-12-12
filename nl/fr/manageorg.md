@@ -3,102 +3,64 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-21"
+lastupdated: "2018-11-19"
 
 ---
 
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:tip: .tip}
+{:note: .note}
 {:screen: .screen}
 {:new_window: target="_blank"}
+
 
 # Mise à jour d'organisations et d'espaces
 {: #orgupdates}
 
-En tant que propriétaire de compte ou responsable de l'organisation, vous pouvez effectuer des tâches de gestion au niveau de l'organisation et au niveau de l'espace. Ces tâches incluent notamment le changement de nom d'une organisation ou d'un espace, l'affectation ou la mise à jour des rôles des utilisateurs Cloud Foundry, la gestion de domaines et l'affichage des détails de quota d'organisation. 
+En tant que propriétaire de compte {{site.data.keyword.Bluemix}} ou responsable de l'organisation, vous pouvez effectuer des tâches de gestion au niveau de l'organisation et au niveau de l'espace. Ces tâches incluent notamment le changement de nom d'une organisation ou d'un espace, l'affectation ou la mise à jour des rôles des utilisateurs Cloud Foundry, la gestion de domaines et l'affichage des détails de quota d'organisation. 
 {:shortdesc}
 
-Pour gérer vos organisations depuis la console {{site.data.keyword.Bluemix}}, cliquez sur **Gérer > Compte > Organisations Cloud Foundry**. Vous ne pouvez afficher les ressources que d'une seule organisation à la fois. Si vous êtes membre de plusieurs organisations, vous pouvez passer d'une organisation à une autre depuis le lien des préférences du compte utilisateur dans la barre de menus de la console.
+Accédez à **Gérer > Compte** puis sélectionnez **Organisations Cloud Foundry**.
 
-## Modification du nom d'une organisation
-{: #orgrename}
+Vous ne pouvez afficher les ressources que d'une seule organisation à la fois. Si vous êtes membre de plusieurs organisations, vous pouvez passer d'une organisation à une autre depuis le lien des préférences du compte utilisateur dans la barre de menus de la console.
+{: tip}
 
-Procédez comme indiqué ci-après pour renommer votre organisation. Attention, les modifications que vous effectuez s'appliquent à tous les utilisateurs de l'organisation.
+  * Pour renommer une organisation, cliquez sur l'icône Actions ![Icône Action](../icons/action-menu-icon.svg) pour l'organisation à renommer puis sélectionnez **Renommer**.
+    {: #orgrename}
 
-1. Cliquez sur **Gérer** > **Compte** > **Organisations Cloud Foundry**.
-2. Cliquez sur l'icône Actions pour l'organisation que vous souhaitez renommer et sélectionnez **Renommer**.  
-3. Entrez le nouveau nom et cliquez sur **Sauvegarder**.
+    Toutes les modifications effectuées s'appliquent à tous les utilisateurs de l'organisation.
+    
+  * Pour supprimer une organisation, prenez contact avec le [support](/docs/get-support/howtogetsupport.html).
+    {: #deleteorgs}
+  
+    Lorsqu'une organisation est supprimée, tous les espaces et toutes les ressources qu'elle comporte sont également supprimés. Cette action ne peut pas être annulée. 
+    
+  * Pour supprimer un espace, sélectionnez l'organisation dans laquelle l'espace est affecté. Cliquez ensuite sur l'icône Actions ![Icône Action](../icons/action-menu-icon.svg) et sélectionnez **Supprimer**.
 
-## Suppression d'organisations et d'espaces
-{: #deleteorgs}
+    Lorsque vous supprimez un espace, toutes les ressources et tous les utilisateurs qu'il comporte sont également supprimés. 
+    
+  * Pour éditer des rôles utilisateur au niveau de l'organisation, cliquez sur l'icône Actions ![Icône Action](../icons/action-menu-icon.svg) et sélectionnez **Utilisateurs**.
+    {: #listmembers}
+  
+    Selon la manière dont vous souhaitez modifier les droits d'accès des utilisateurs, sélectionnez ou désélectionnez la case à cocher correspondant à un rôle spécifique. Les rôles que vous pouvez affecter au niveau de l'organisation sont les suivants : Responsable, Responsable de la facturation et Auditeur. Pour plus d'informations, voir [Rôles Cloud Foundry](/docs/iam/cfaccess.html#cfroles).
+    
+  * Pour éditer des rôles utilisateur pour un espace spécifique, cliquez sur l'organisation dans laquelle l'espace est affecté. Cliquez ensuite sur le nom de l'espace. 
 
-### Suppression d'une organisation
+    Selon la manière dont vous souhaitez modifier les droits d'accès des utilisateurs, sélectionnez ou désélectionnez la case à cocher correspondant à un rôle spécifique. Les rôles que vous pouvez affecter au niveau de l'espace sont les suivants : Responsable, Développeur et Auditeur. Pour plus d'informations, voir [Rôles Cloud Foundry](/docs/iam/cfaccess.html#cfroles).
 
-Pour supprimer une organisation, prenez contact avec le [support](/docs/get-support/howtogetsupport.html). Lorsqu'une organisation est supprimée, tous les espaces et toutes les ressources qu'elle comporte sont également supprimés. N'oubliez pas qu'une opération de suppression est irréversible. 
-
-### Suppression d'un espace
-
-Lorsque vous supprimez un espace, toutes les ressources et tous les utilisateurs qu'il comporte sont également supprimés. Pour supprimer un espace, procédez comme suit :
-
-1. Cliquez sur **Gérer** > **Compte** > **Organisations Cloud Foundry**.
-2. Cliquez sur l'organisation dans laquelle l'espace est affecté.
-3. Cliquez sur l'icône Actions, puis sélectionnez **Supprimer**.
-4. Confirmez que vous voulez supprimer l'espace en entrant son nom dans la zone, puis cliquez sur **Supprimer**.
-
-## Edition des rôles utilisateur
-{: #listmembers}
-
-Les rôles que vous pouvez affecter au niveau de l'organisation sont les suivants : Responsable, Responsable de la facturation et Auditeur. Les rôles que vous pouvez affecter au niveau de l'espace sont les suivants : Responsable, Développeur et Auditeur. Pour obtenir des descriptions de rôle détaillés, voir [Rôles Cloud Foundry](/docs/iam/cfaccess.html#cfroles).
-
-### Edition des rôles utilisateur au niveau de l'organisation
-
-Procédez comme suit afin d'éditer les rôles utilisateur pour une organisation spécifique :
-
-1. Cliquez sur **Gérer** > **Compte** > **Organisations Cloud Foundry**.
-2. Cliquez sur l'icône Actions, puis sélectionnez **Utilisateurs**.
-3. Selon la manière dont vous souhaitez modifier les droits d'accès des utilisateurs, sélectionnez ou désélectionnez la case à cocher correspondant à un rôle spécifique.
-4. Confirmez vos modifications en cliquant sur **Sauvegarder**. 
-
-### Edition des rôles utilisateur au niveau de l'espace
-
-Procédez comme suit afin d'éditer les rôles utilisateur pour un espace spécifique :
-
-1. Cliquez sur **Gérer** > **Compte** > **Organisations Cloud Foundry**.
-2. Cliquez sur l'organisation dans laquelle l'espace est affecté.
-3. Cliquez sur le nom de l'espace.
-4. Selon la manière dont vous souhaitez modifier les droits d'accès des utilisateurs, sélectionnez ou désélectionnez la case à cocher correspondant à un rôle spécifique.
-5. Confirmez vos modifications en cliquant sur **Sauvegarder**.
-
-## Gestion des domaines
+  * Pour gérer vos domaines, cliquez sur l'icône Actions ![Icône Action](../icons/action-menu-icon.svg) pour l'organisation concernée puis sélectionnez **Domaines**.
 {: #managedomains}
 
-En tant que propriétaire de compte ou responsable de l'organisation, vous pouvez afficher le domaine de système et ajouter des
-données personnalisés pour les applications construites dans une organisation et ses espaces. Si vous êtes responsable de l'espace, l'onglet **Domaines** est une liste en lecture seule des domaines affectés à l'espace.
+    En tant que propriétaire de compte ou responsable de l'organisation, vous pouvez afficher le domaine de système et ajouter des données personnalisés pour les applications construites dans une organisation et ses espaces. Si vous êtes responsable de l'espace, cette page affiche une liste en lecture seule des domaines affectés à l'espace.
+    
+    Si vous ajoutez un domaine personnalisé, vous devez configurer votre serveur DNS pour qu'il résolve votre domaine personnalisé, de telle sorte qu'il désigne le domaine de système {{site.data.keyword.Bluemix_notm}}. Ainsi, lorsque {{site.data.keyword.Bluemix_notm}} reçoit une demande pour votre domaine personnalisé, celle-ci est correctement acheminée vers votre application. Le domaine de système est toujours disponible dans un espace, et des domaines personnalisés peuvent également être alloués à un espace. Les applications créées dans un espace peuvent utiliser tout domaine répertorié pour cet espace. Pour plus d'informations sur la création et l'utilisation de domaines personnalisés, voir [Création et utilisation d'un domaine personnalisé](/docs/apps/updapps.html#domain).
 
-1. Cliquez sur **Gérer** &gt; **Compte** &gt; **Organisations Cloud Foundry**.
-2. Cliquez sur l'icône Actions pour l'organisation, puis sélectionnez **Domaines**.
-
-Si vous ajoutez un domaine personnalisé, vous devez configurer votre serveur DNS pour qu'il résolve votre domaine personnalisé, de telle sorte qu'il désigne le domaine de système {{site.data.keyword.Bluemix_notm}}. Ainsi, lorsque {{site.data.keyword.Bluemix_notm}} reçoit une demande pour votre domaine personnalisé, celle-ci est correctement acheminée vers votre application. Le domaine de système est toujours disponible dans un espace, et des domaines personnalisés peuvent également être alloués à un espace. Les applications créées dans un espace peuvent utiliser tout domaine répertorié pour cet espace. Pour plus d'informations sur la création et l'utilisation de domaines personnalisés, voir [Création et utilisation d'un domaine personnalisé](/docs/apps/updapps.html#domain).
-
-## Gestion du quota
-{: #managequota}
-
-Vous pouvez afficher le quota utilisé et le quota attribué pour une organisation. Le quota représente les limites de ressources pour l'organisation et est affecté lors de la création de l'organisation. Les ressources disponibles pour une organisation varient selon que vous disposez d'un compte gratuit ou facturable. Toute application ou tout service dans un espace de l'organisation contribue à l'utilisation du quota attribué.
-
-Procédez comme suit afin d'afficher le quota utilisé et le quota alloué pour une organisation :
-
-1. Cliquez sur **Gérer** &gt; **Compte** &gt; **Organisations Cloud Foundry**.
-2. Cliquez sur l'icône Actions pour l'organisation spécifique, puis sélectionnez **Quotas**.
-
-   Par défaut, la page de quota **Cloud Foundry** s'ouvre. A partir de là, vous pouvez afficher les détails de quota des ressources suivantes :
- 
-   * Le nombre d'applications
-   * La quantité de mémoire 
-   * Le nombre de services 
-   * Les détails du plan 
-
-3. Développez les lignes pour examiner les informations de quota au niveau de l'espace pour chaque région.  
-
-Pour modifier le quota alloué à une organisation, vous devez ouvrir un ticket de demande de service. Pour plus d'informations, voir [Support client](/docs/get-support/howtogetsupport.html#getting-customer-support). 
-
+  * Pour gérer le quota alloué pour une organisation, cliquez sur l'icône Actions ![Icône Action](../icons/action-menu-icon.svg) pour l'organisation concernée puis sélectionnez **Quotas**.
+    {: #managequota}
+  
+    Vous alors pouvez afficher les détails de quota pour le nombre d'applications, la quantité de mémoire, le nombre de services et les détails de plan. Le quota représente les limites de ressources pour l'organisation et est affecté lors de la création de l'organisation. Les ressources disponibles pour une organisation varient selon que vous disposez d'un compte gratuit ou facturable. Toute application ou tout service dans un espace de l'organisation contribue à l'utilisation du quota attribué.
+    
+    Pour changer le quota alloué à une organisation, vous devez créer un cas de support. Pour plus d'informations, voir [Utilisation de cas de support](/docs/get-support/opencase.html#open-case).
+    
+    Pour afficher les détails de quota au niveau des espaces pour chaque emplacement, cliquez sur l'icône Actions ![Icône Action](../icons/action-menu-icon.svg) pour l'organisation concernée puis sélectionnez **Quotas**. Développez ensuite chaque ligne en fonction de vos besoins. 

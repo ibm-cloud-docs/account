@@ -1,11 +1,10 @@
 ---
 
 
-
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-04-06"
+lastupdated: "2018-11-19"
 
 
 ---
@@ -15,15 +14,15 @@ lastupdated: "2018-04-06"
 {:screen: .screen}
 {:new_window: target="_blank"}
 
+
 # 註冊 {{site.data.keyword.Bluemix_notm}}
 
-您可以使用現有 IBM ID、建立新的 IBM ID 或使用聯合 ID 來註冊 {{site.data.keyword.Bluemix}} 帳戶。聯合 ID 是已向 IBM 登錄之公司網域內的 ID，因此您可以使用網域及使用者認證來存取 IBM Web 應用程式。按一下**註冊**以開始使用。
+您可以使用現有 IBM ID、建立新的 IBM ID 或使用聯合 ID 來註冊 [{{site.data.keyword.Bluemix}} 帳戶](https://cloud.ibm.com){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")。聯合 ID 是已向 IBM 登錄之公司網域內的 ID，因此您可以使用網域及使用者認證來存取 IBM Web 應用程式。按一下**建立 {{site.data.keyword.Bluemix_notm}} 帳戶**，以便開始使用。
 {:shortdesc}
-
 
 只有在貴公司已向 IBM 登錄時，才能使用聯合 ID 來註冊 {{site.data.keyword.Bluemix_notm}}。向 IBM 登錄公司網域，可讓使用者使用其現有公司使用者認證來登入 IBM 產品和服務。然後，透過公司的身分提供者來處理鑑別。當您使用聯合 ID 登入 {{site.data.keyword.Bluemix_notm}} 時，系統會提示您透過公司的登入頁面進行登入。如需相關資訊，請參閱 [IBMid Enterprise Federation Adoption Guide ![外部鏈結圖示](../icons/launch-glyph.svg)](https://ibm.box.com/v/IBMid-Federation-Guide){: new_window}。當您要求登錄聯合 ID 時，需要有 IBM 贊助者（例如供應項目代言人或用戶端代言人）。
 
-IBM 使用 Security Assertion Markup Language 2.0 (SAML 2.0) 來進行這個識別身分同盟。SAML 2.0 是適用於在安全網域之間交換鑑別資料的標準版本。它是 XML 型通訊協定，使用包含主張的安全記號在組織「身分提供者」與 "IBM Rely Party (RP)"（另稱為「服務提供者」）之間傳遞資訊。
+IBM 使用 Security Assertion Markup Language 2.0 (SAML 2.0) 來進行這個識別身分同盟。SAML 2.0 是適用於在安全網域之間交換鑑別資料的標準版本。它是一種 XML 型通訊協定，使用包含主張的安全記號在組織「身分提供者」與 "IBM Rely Party (RP)"（另稱為「服務提供者」）之間傳遞資訊。
 
 |註冊方法|詳細資料|    
 |-----------------|---------|

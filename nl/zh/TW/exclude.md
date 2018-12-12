@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-11-28"
 
 ---
 
@@ -11,57 +11,57 @@ lastupdated: "2018-08-02"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
 
-# 向帳戶中的使用者隱藏公用資源
+
+# 向使用者隱藏公用資源
 {: #exclude}
 
-如果您是帳戶的管理者，則可以向帳戶中的每個人隱藏公用資源。請使用 `ibmcloud` [指令行介面](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set)將資源新增至排除清單。
-{:shortdesc: .shortdesc}
+身為 {{site.data.keyword.Bluemix}} 帳戶的管理者，您可以向具有帳戶存取權的使用者隱藏公用資源。您可能會隱藏資源，以向非授權使用者隱藏機密性資訊，或是部分資訊可能需要只由有限數量的人員存取。
+{:shortdesc}
 
-**附註：**隱藏型錄中的資源，並不會從 Cloud Foundry CLI 或是透過廣域導覽取得的服務佈建清單（例如金融、行動、Watson 及 Web 應用程式）中移除它。
+隱藏型錄中的資源，並不會將它從 Cloud Foundry 指令行介面 (CLI) 或從可由 {{site.data.keyword.Bluemix_notm}} 主控台導覽的供應項目種類清單（例如金融、行動、Watson 及 Web 應用程式）中移除。
+{: note}
 
-## 如何知道我是否有存取權？
-{: #find-access}
+您可以使用 {{site.data.keyword.Bluemix}} [指令行介面 (CLI)](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) 或主控台，來判定您是否有權可容許使用者檢視已新增至帳戶的專用資源。如果您是帳戶擁有者，則可以透過主控台來指派存取原則，將存取權授與給您帳戶中的使用者。如需相關資訊，請參閱[管理帳戶存取權](access.html)。
 
-您可以使用 CLI 或「身分及存取」使用者介面，以判定您是否具有存取權可讓使用者檢視已新增至帳戶的專用資源。如果您是帳戶擁有者，則可以指派存取原則，以透過 Identity and Access Management 使用者介面將存取權授與您帳戶中的使用者。如需相關資訊，請參閱[管理帳戶存取權](access.html)。
-
-## 步驟 1：尋找資源
+## 尋找資源
 {: #find-resource}
 
-輸入 `ibmcloud catalog search <service-id or service-name>` 以搜尋資源。將 service-id 或 service-name 取代為資源名稱或 ID。在傳回的資訊中，尋找您要隱藏之服務的 ID 或名稱。
+執行 `ibmcloud catalog search <service-id or service-name>` 指令，以搜尋資源。將 service-id 或 service-name 變數取代為資源名稱或 ID。使用所傳回的資訊，來尋找您要隱藏之服務的 ID 或名稱。
 
-## 步驟 2：取得該服務的詳細資料
+## 取得資源的詳細資料
 
-輸入 `ibmcloud catalog service <service-id or service-name>`。利用前一個指令中找到的項目，使用此指令來檢查資源的更多詳細資料。您可以使用傳回的資訊來查看階層，而此階層會顯示資源中項目的子項資源。
+執行 `ibmcloud catalog service <service-id or service-name>` 指令。利用執行前一個指令所傳回的資訊，使用此指令來檢查資源的其他詳細資料。您可以使用所傳回的資訊來檢視階層，而此階層會顯示資源中各項目的子項資源。
 
-## 步驟 3：隱藏資源
+## 隱藏資源
 {: #vis-exc}
 
-輸入下列指令，以防止您的帳戶看到公用資源。
+執行下列指令，以防止您帳戶中的使用者檢視公用資源。
 
 `ibmcloud catalog entry-visibility-set <resource-id> —-excludes-add <account-id or account-email>`
 
-在 `excludes` 旗標後面，您可以新增與帳戶相關聯的電子郵件或帳戶 ID 清單（以逗點區隔）。
+您可以在 excludes 旗標之後，新增與帳戶相關聯的電子郵件或帳戶 ID 清單（以逗點區隔）。
 
-執行指令之後，隱藏資源的處理程序需要 30 分鐘。在 30 分鐘之後，請登出並重新登入帳戶，以查看隱藏的資源。
+執行指令之後，隱藏資源的處理程序大約需要 30 分鐘。30 分鐘之後，請登出並重新登入帳戶，以查看隱藏的資源。
 
-**附註：**無法從使用者介面及 {{site.data.keyword.Bluemix}} CLI 取得您的隱藏項目。隱藏項目在 Cloud Foundry Marketplace 中仍然可見，但無法從 Cloud Foundry 佈建隱藏方案。遭排除帳戶的管理者仍然可以看到該資源。
+您隱藏的項目無法從主控台或 CLI 中取得。遭排除帳戶的管理者仍然可以檢視該資源。
+{: note}
 
 ## 從排除清單移除帳戶
 {: #remove-exclude}
 
-輸入下列指令，以從排除清單移除帳戶 ID 或電子郵件。
+執行下列指令，以從排除清單移除帳戶 ID 或電子郵件。
 
 `ibmcloud catalog entry-visibility-set <service-id> —-excludes-remove <account-id or account-email>`
 
-## 管理子物件可見性範例
+
+## 範例：管理子物件的可見性
 {: #child}
 
-您可以管理所有資源的可見性。每一個子項資源都有其個別可見性特徵。
+您可以管理所有資源的可見性。每一個子項資源都有其個別可見性特徵。此範例顯示如何從 Cloudant 服務排除帳戶。
 
-在此範例中，您可以從公用 Cloudant 服務中排除帳戶。
-
-如果您輸入 `ibmcloud catalog service cloudant`，則可以看到資源的子項。
+執行 `ibmcloud catalog service cloudant` 指令，來檢視資源的所有子項。
 
 ```
 ID                 cloudant
@@ -87,6 +87,6 @@ Children           Name                                          Kind         ID
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-尋找物件的 ID，並使用 `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>` 來排除帳戶。
+尋找物件的 ID，並藉由執行 `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add<account-id or account-email>` 指令來排除帳戶。
 
-如需可見性運作方式的相關資訊，請參閱 [API 文件](https://console.bluemix.net/apidocs/globalcatalog)。
+如需可見性運作方式的相關資訊，請參閱[型錄 API 文件](https://{DomainName}/apidocs/globalcatalog)。

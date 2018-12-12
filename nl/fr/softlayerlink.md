@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2018
 
-lastupdated: "2018-07-11"
+lastupdated: "2018-11-17"
 
 ---
 
@@ -12,12 +12,14 @@ lastupdated: "2018-07-11"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:new_window: target="_blank"}
 
 # Passage à l'IBMid et liaison des comptes
 {: #unifyingaccounts}
 
-Désormais, l'authentification dans SoftLayer utilise un IBMid afin de fournir une connexion unique pour {{site.data.keyword.Bluemix}} dans son intégralité. Un IBMid est un ID unique que vous utilisez pour vous connecter à votre compte {{site.data.keyword.Bluemix_notm}} afin d'accéder à des fonctions d'infrastructure, de services et d'application et de les acheter. Tous les nouveaux comptes reçoivent automatiquement un IBMid et les comptes SoftLayer existants, à l'exception des comptes fédérés SAML, sont activés pour passer à l'authentification par IBMid.
+Un IBMid est un ID unique que vous utilisez pour vous connecter à votre compte {{site.data.keyword.Bluemix}} afin d'accéder à des fonctions d'infrastructure, de services et d'application et de les acheter. Tous les nouveaux comptes reçoivent automatiquement un IBMid et les comptes SoftLayer existants, à l'exception des comptes fédérés SAML, sont activés pour passer à l'authentification par IBMid.
 {:shortdesc}
 
 ## Passage à l'IBMid
@@ -32,20 +34,18 @@ Pour faire basculer votre compte SoftLayer existant vers un IBMid, vous devez cr
 
 1. Connectez-vous à votre compte SoftLayer et cliquez sur **OK** lorsque vous êtes invité à passer à un IBMid.
 
-   Si vous êtes un utilisateur principal et qu'aucun message ne vous invite à passer à un IBMid dans le portail client de l'infrastructure {{site.data.keyword.BluSoftlayer_full}}, prenez contact avec le support IBM pour obtenir de l'aide. Pour en savoir plus sur la manière dont vous pouvez contacter le support, voir [Support IBM](/docs/get-support/howtogetsupport.html#getting-customer-support).
+   Si vous êtes un utilisateur principal et qu'aucun message vous invitant à passer à un IBMid ne s'affiche dans le portail client, prenez contact avec l'équipe de support IBM pour obtenir de l'aide. Pour plus d'informations sur le mode de contact de l'équipe de support, voir [Support](/docs/get-support/howtogetsupport.html#getting-customer-support).
 
    Si vous vous êtes déjà connecté et avez cliqué sur **Plus tard** dans l'invite, mais voulez passer à l'authentification par IBMid dans la session en cours, accédez à la page d'édition du profil utilisateur et cliquez sur **Passer à IBMid**.
 
 2. Suivez les invites de l'assistant pour créer votre IBMid.
 
-   Entrez une adresse e-mail qui ne soit pas actuellement utilisée par un IBMid. Elle servira de nom d'utilisateur pour le nouvel IBMid et le code d'enregistrement sera envoyé à cette adresse une fois l'IBMid créé. Vous pouvez actualiser l'adresse électronique ultérieurement mais vous ne pouvez pas changer le nom d'utilisateur.
+   Entrez une adresse e-mail qui n'est pas actuellement utilisée par un IBMid. Elle servira de nom d'utilisateur pour le nouvel IBMid et le code d'enregistrement sera envoyé à cette adresse une fois l'IBMid créé. Vous pouvez actualiser l'adresse électronique ultérieurement mais vous ne pouvez pas changer le nom d'utilisateur.
 
 ### Confirmation de votre IBMid avec le code d'enregistrement
 {: #confIBMiduseregcode}
 
-1. Une fois que vous avez reçu votre code d'enregistrement, cliquez sur le lien fourni dans le courrier électronique ou copiez l'adresse URL dans un navigateur et entrez votre code d'enregistrement.
-
-   Le code d'enregistrement est valable pendant sept jours et vous ne pouvez l'utiliser qu'une fois.
+1. Une fois que vous avez reçu votre code d'enregistrement, cliquez sur le lien fourni dans le courrier électronique ou copiez l'adresse URL dans un navigateur et entrez votre code d'enregistrement. Le code d'enregistrement est valable pendant sept jours et vous ne pouvez l'utiliser qu'une fois.
 
 2. Après avoir soumis votre code d'enregistrement, utilisez votre IBMid pour vous connecter au portail client.
 
@@ -53,7 +53,7 @@ Pour faire basculer votre compte SoftLayer existant vers un IBMid, vous devez cr
 
 Si vous êtes un nouveau client, vous êtes invité à entrer votre IBMid ou à créer un nouvel IBMid lorsque vous êtes sur le point de payer votre commande.
   * Pour utiliser un IBMid existant, entrez le nom d'utilisateur ou l'adresse électronique de l'IBMid, si ces données ne sont pas partagées par plusieurs IBMid.
-  * Pour créer un nouvel IBMid, entrez une adresse électronique qui ne soit pas déjà utilisée par un IBMid existant. Elle servira de nom d'utilisateur pour l'IBMid et votre code d'enregistrement sera envoyé à cette adresse une fois l'IBMid créé. Vous pouvez actualiser l'adresse électronique ultérieurement mais vous ne pouvez pas changer le nom d'utilisateur.
+  * Pour créer un nouvel IBMid, entrez une adresse électronique qui n'est pas déjà utilisée par un IBMid existant. Elle servira de nom d'utilisateur pour l'IBMid et votre code d'enregistrement sera envoyé à cette adresse une fois l'IBMid créé. Vous pouvez actualiser l'adresse électronique ultérieurement mais vous ne pouvez pas changer le nom d'utilisateur.
 
 Afin de résoudre les problèmes liés à la connexion avec votre IBMid, voir [Traitement des incidents liés à l'accès à {{site.data.keyword.Bluemix_notm}}](/docs/account/ts_accessing.html#accessing).
 
@@ -66,7 +66,7 @@ Une fois que les comptes sont devenus des comptes IBMid, vous pouvez lier les co
 ### Liaison de votre compte IBMid
 {: #link_user_account}
 
-Si vous êtes un client d'infrastructure {{site.data.keyword.BluSoftlayer_full}} et que vous possédez également des comptes PaaS dans {{site.data.keyword.Bluemix_notm}} ou que vous les créez, vous pouvez lier IaaS et PaaS afin d'obtenir une vue unique de vos comptes. Pour lier vos comptes, procédez comme suit :
+Si vous êtes un client d'infrastructure classique et que vous possédez également des comptes PaaS dans {{site.data.keyword.Bluemix_notm}} ou que vous les créez, vous pouvez lier IaaS et PaaS afin d'obtenir une vue unique de vos comptes. Pour lier vos comptes, procédez comme suit :
 1. Connectez-vous à votre compte SoftLayer.
 2. Sur la page Récapitulatif du compte, cliquez sur **Nouveauté ! Liez un compte Bluemix**.
 3. Lisez les conditions d'utilisation et cliquez pour confirmer que vous les acceptez.
@@ -79,45 +79,45 @@ Pour afficher les questions et réponses courantes concernant la liaison de votr
 ### Liaison de comptes utilisateur IBMid
 {: #link_customer_accounts}
 
-Une fois que vos comptes utilisateur sont passés à l'authentification par IBMid, les revendeurs et les distributeurs peuvent lier leurs comptes utilisateur. Pour lier des comptes client, vous devez être un utilisateur principal de SoftLayer. L'IBMid correspondant à l'utilisateur principal du compte doit être le propriétaire du compte de plateforme {{site.data.keyword.Bluemix_notm}} auquel vous établissez la liaison. Tenez compte des remarques suivantes avant de lier vos comptes :
+Une fois que vos comptes utilisateur sont passés à l'authentification par IBMid, les revendeurs et les distributeurs peuvent lier leurs comptes utilisateur. Pour lier des comptes client, vous devez être un utilisateur principal de SoftLayer. L'IBMid correspondant à l'utilisateur principal du compte doit être le propriétaire du compte de plateforme {{site.data.keyword.Bluemix_notm}} auquel vous établissez la liaison. 
+
+Une fois que vos comptes sont liés, il n'est pas possible de revenir en arrière.
+{: note}
+
+Tenez compte des remarques suivantes concernant la liaison de vos comptes :
 
   * L'utilisateur principal du compte SoftLayer qui est lié doit posséder un IBMid.
-  * Chaque compte utilisateur que vous liez à un compte {{site.data.keyword.Bluemix_notm}} doit être détenu par un IBMid unique associé à une adresse électronique unique. Même si un IBMid unique peut être associé à plusieurs comptes SoftLayer, vous devez changer l'utilisateur principal afin qu'il corresponde à un IBMid unique pour chaque compte. Prenez contact avec le support pour changer l'utilisateur principal d'un compte SoftLayer. Pour plus d'informations, voir [Getting support for {{site.data.keyword.Bluemix_notm}} infrastructure](/docs/customer-portal/cpsupport.html).
+  * Chaque compte utilisateur que vous liez à un compte {{site.data.keyword.Bluemix_notm}} doit être détenu par un IBMid unique associé à une adresse électronique unique. Même si un IBMid unique peut être associé à plusieurs comptes SoftLayer, vous devez changer d'utilisateur principal afin qu'il corresponde à un IBMid unique pour chaque compte. Prenez contact avec le support pour changer l'utilisateur principal d'un compte SoftLayer. Pour plus d'informations, voir [Support pour l'infrastructure {{site.data.keyword.Bluemix_notm}}](/docs/customer-portal/cpsupport.html).
   * Lorsque vous ajoutez de nouveaux utilisateurs à un compte lié, vous devez les ajouter au compte SoftLayer et au compte {{site.data.keyword.Bluemix_notm}} pour qu'ils aient accès à toutes les fonctions de la console unifiée.
-  * Si vous possédez un compte de marque, vous utilisez Brand Agent Portal (BAP) et vous avez besoin d'aide lors de la liaison de votre compte, prenez contact avec l'équipe Revenue Services en leur envoyant un courrier électronique à l'adresse softlayer_revenue_services_team@wwpdl.vnet.ibm.com.
-  * Tous les comptes liés dans {{site.data.keyword.Bluemix_notm}} doivent être de type Paiement à la carte. Vous pouvez créer un nouveau compte Paiement à la carte, lier un compte Paiement à la carte existant, ou lier un compte d'essai existant, qui est ensuite mis à niveau vers un compte Paiement à la carte. Vous ne pouvez pas effectuer une liaison à des comptes d'abonnement {{site.data.keyword.Bluemix_notm}}.
+  * Si vous possédez un compte de marque, que vous utilisez Brand Agent Portal (BAP) et que vous avez besoin d'aide lors de la liaison de votre compte, prenez contact avec l'équipe Revenue Services en leur envoyant un courrier électronique à l'adresse softlayer_revenue_services_team@wwpdl.vnet.ibm.com.
 
 Pour lier chaque compte SoftLayer à un compte de plateforme {{site.data.keyword.Bluemix_notm}} existant ou pour en créer un nouveau, procédez comme suit :
 
-   1. Connectez-vous au portail client de l'infrastructure {{site.data.keyword.BluSoftlayer_full}} avec votre IBMid de compte d'utilisateur principal.
-   2. A partir du portail client de l'infrastructure {{site.data.keyword.Bluemix_notm}}, cliquez sur **Lier un compte Bluemix**.
+   1. Connectez-vous au portail client avec votre IBMid de compte d'utilisateur principal.
+   2. Dans le portail client, cliquez sur **Liez un compte Bluemix**.
    3. Lisez et acceptez les dispositions pour la liaison de comptes SoftLayer et {{site.data.keyword.Bluemix_notm}}.
    4. Suivez les invites de l'assistant en ajoutant les utilisateurs du compte SoftLayer au compte {{site.data.keyword.Bluemix_notm}}.
    5. Lorsque vous y êtes invité, effectuez l'une des actions suivantes :
      * Si vous possédez déjà un compte {{site.data.keyword.Bluemix_notm}}, indiquez l'adresse électronique qui est associée à ce compte afin de lier les comptes.
      * Si vous ne possédez pas de compte {{site.data.keyword.Bluemix_notm}}, indiquez l'adresse électronique que vous voulez utiliser, suivez les instructions pour être invité dans {{site.data.keyword.Bluemix_notm}} et créez un compte.
-   6. Après avoir lié le compte, indiquez à l'utilisateur de chaque compte qu'il doit migrer vers l'IBMid en suivant la procédure décrite dans la section [Passage à l'IBMid](/docs/account/softlayerlink.html#switchtoIBMid) ci-dessus.
+   6. Après avoir lié le compte, indiquez à l'utilisateur final de chaque compte qu'il doit migrer vers l'IBMid en suivant la procédure décrite dans la section [Passage à l'IBMid](/docs/account/softlayerlink.html#switchtoIBMid) ci-dessus.
 
-Migrez uniquement les comptes utilisateurs à IBMid. Ne migrez pas les comptes de marque, qui sont les comptes parent des comptes utilisateur et qui ne contiennent aucune ressource. Les utilisateurs des comptes de marque qui migrent vers l'IBMid perdent la possibilité de se connecter à Brand Agent Portal (BAP).
-{: tip}
+      Migrez uniquement les comptes d'utilisateur final vers l'IBMid. Ne migrez pas les comptes de marque, qui sont les comptes parent des comptes utilisateur final et qui ne contiennent aucune ressource. Les utilisateurs des comptes de marque qui migrent vers l'IBMid perdent la possibilité de se connecter à Brand Agent Portal (BAP).
+      {: important}
 
-Les comptes liés se connectent à la console [{{site.data.keyword.Bluemix}} ![Icône de lien externe](../icons/launch-glyph.svg)](https://console.bluemix.net){: new_window}.
-
-Une fois que vos comptes sont liés, vérifiez les modifications suivantes :
-
+Prenez en compte les modifications suivantes une fois que vos comptes sont liés :
+  
+  * Vous vous connectez maintenant à la [console {{site.data.keyword.Bluemix}} ![Icône de lien externe](../icons/launch-glyph.svg)](https://cloud.ibm.com){: new_window}.
   * Vous devez utiliser vos données d'identification IBMid pour accéder à votre compte SoftLayer et à votre compte {{site.data.keyword.Bluemix_notm}}.
   * Les remises SoftLayer existantes s'appliquent à tous les tarifs {{site.data.keyword.Bluemix_notm}}.
-  * Vous recevez une facture en dollars américains (USD). Si vous disposez d'un compte {{site.data.keyword.Bluemix_notm}}, la facturation via {{site.data.keyword.Bluemix_notm}} pour les ressources d'infrastructure entre en vigueur au prochain cycle de facturation après que les comptes ont été liés. Pour plus d'informations, voir [Facturation en bloc pour des comptes liés](/docs/billing-usage/linking_accounts.html).
-  * Vous pouvez surveiller l'utilisation de vos ressources d'infrastructure dans la console {{site.data.keyword.Bluemix_notm}}.
-
-Une fois que vos comptes sont liés, il n'est pas possible de revenir en arrière.
-{: tip}
+  * Vous recevez une facture en dollars américains (USD). Si vous disposez d'un compte {{site.data.keyword.Bluemix_notm}}, la facturation via {{site.data.keyword.Bluemix_notm}} pour les ressources d'infrastructure entre en vigueur au prochain cycle de facturation après que les comptes ont été liés. Pour plus d'informations, voir [Facturation en bloc pour des comptes liés](/docs/customer-portal/linking_accounts.html).
+  * Vous pouvez surveiller l'utilisation de vos ressources d'infrastructure classique dans la console {{site.data.keyword.Bluemix_notm}}.
 
 ## Utilisation de l'authentification multi-facteur dans les comptes liés
 {: #2fa}
 
-Si vous disposez d'un compte lié, vous pouvez utiliser la page **Paramètres** d'Identity and Access afin d'activer l'authentification multi-facteur pour votre compte. Ce type d'authentification, également communément appelé authentification à deux facteurs (2FA), ajoute une couche de sécurité pour l'accès à votre compte en plus de des habituels IBMid et mot de passe requis. L'authentification multi-facteur pour votre compte s'applique à l'ensemble des ressources de votre compte {{site.data.keyword.Bluemix_notm}} lié. Si elle est activée à votre compte, elle s'applique également à tous les utilisateurs qui ont été ajouté au compte.
+Si vous avez un compte lié, vous pouvez utiliser la page des paramètres d'{{site.data.keyword.Bluemix_notm}} IAM**** afin d'activer l'authentification multi-facteur pour votre compte. Ce type d'authentification, également communément appelé authentification à deux facteurs (2FA), ajoute une couche de sécurité pour l'accès à votre compte en plus de des habituels IBMid et mot de passe requis. L'authentification multi-facteur pour votre compte s'applique à l'ensemble des ressources de votre compte {{site.data.keyword.Bluemix_notm}} lié. Si elle est activée à votre compte, elle s'applique également à tous les utilisateurs qui ont été ajouté au compte.
 
-L'authentification multi-facteur ne s'effectue pas par IBMid, mais par compte. Quand un IBMid est associé à plusieurs comptes et que vous passez d'un compte à l'autre, vous devez confirmer votre identité chaque fois que vous utilisez un compte différent qui nécessite une authentification à deux facteurs. Cette règle s'applique même si le compte précédent et le nouveau compte sont tous les deux configurés avec le même mécanisme d'authentification à deux facteurs.
+Les autres méthodes d'authentification multi-facteur ne s'effectuent pas par IBMid mais par compte. Quand un IBMid est associé à plusieurs comptes et que vous passez d'un compte à l'autre, vous devez confirmer votre identité chaque fois que vous utilisez un compte différent qui nécessite une authentification à deux facteurs. Cette règle s'applique même si le compte précédent et le nouveau compte sont tous les deux configurés avec le même mécanisme d'authentification à deux facteurs.
 
-Si vous avez déjà activé [l'authentification à deux facteurs dans le portail de contrôle](/docs/customer-portal/cpenable2fa.html#customerportal_2fa) pour les ressources de votre infrastructure et que vous activez le paramètre d'authentification multi-facteur de compte {{site.data.keyword.Bluemix_notm}}, celui-ci écrase l'authentification à deux facteurs que vous avez configurée dans le portail de contrôle. Vous pouvez désactiver l'authentification à deux facteurs que vous avez acquise dans le portail de contrôle au profit du paramètre Authentification multi-facteur du compte. Toutefois, si vous êtes un utilisateur fédéré, l'authentification multi-facteur ne s'applique pas. Par conséquent, vous souhaiterez peut-être conserver votre configuration du portail de contrôle avec l'authentification à deux facteurs afin de garantir la sécurité des ressources de votre infrastructure.
+Si vous avez déjà activé [l'authentification à deux facteurs dans le portail client](/docs/customer-portal/cpenable2fa.html#customerportal_2fa) pour les ressources de votre infrastructure classique et que vous activez le paramètre d'authentification multi-facteur de compte {{site.data.keyword.Bluemix_notm}}, ce dernier écrase l'authentification à deux facteurs que vous avez configurée dans le portail utilisateur. Autrement dit, vous pouvez désactiver l'authentification à deux facteurs que vous avez acquise dans le portail utilisateur au profit du paramètre d'authentification multi-facteur du compte. 

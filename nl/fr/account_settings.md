@@ -4,50 +4,45 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-11-06" 
+lastupdated: "2018-11-15" 
 
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 {:tip: .tip}
+{:important: .important}
+
 
 # Modification de vos paramètres de compte
 {: #account_settings}
 
-Si vous êtes le propriétaire d'un compte, déterminez les paramètres du compte que vous désirez activer tandis que vous configurez votre compte {{site.data.keyword.Bluemix}} . 
+En tant que propriétaire de compte, vous pouvez changer le nom du compte, afficher le type du compte et mettre à niveau ce dernier. Si vous disposez d'un rôle Opérateur IAM ou d'un rôle supérieur sur tous les services de gestion de compte, vous pouvez afficher et mettre à jour le nom du compte.  
 {:shortdesc}
 
-## Activation du paramètre Support dans l'Union européenne
-{: #bill_eusupported}
 
-Vous pouvez limiter la prise en charge de ressources {{site.data.keyword.Bluemix_notm}} utilisées en Europe aux seules équipes basées en Europe. Vous pouvez décider, par exemple, d'activer le paramètre Support dans l'Union européenne si vous utilisez des ressources pour le traitement de données personnelles de citoyens européens. L'option Support dans l'Union européenne est proposée dans tous les plans payants.
+## Changement du nom de compte
+{: #change-acct-name}
 
-L'activation du paramètre Support dans l'Union européenne limite le support de niveau 1 et de niveau 2 fourni par les membres de l'équipe dans la région Union européenne. Toutefois, les activités de traitement d'{{site.data.keyword.Bluemix_notm}} peuvent être réalisées par des équipes situées hors de la région Union européenne. Des équipes globales peuvent être contactées lorsque des problèmes ne sont pas résolus par les équipes de support de niveau 1 ou de niveau 2 basées dans l'Union européenne. Ces équipes globales sont toujours contactées à la demande de l'équipe de support de l'Union européenne et uniquement quand cette intervention n'a aucun impact sur la sécurité ou la confidentialité de vos données.
+Pour éditer votre nom de compte, accédez à **Gérer > Compte** et sélectionnez **Paramètres de compte**. Dans la section Compte, cliquez sur l'icône Editer ![Icône Editer](../icons/edit-tagging.svg), entrez le nouveau nom de compte puis cliquez sur **Soumettre**. 
 
-En activant ce paramètre, les services pris en charge pour l'Union européenne sont activés avec des contrôles d'accès stricts pour garantir que les données que vous stockez et traitez soient restreintes et contrôlées par l'équipe de support IBM dans la région Union européenne. Si des experts {{site.data.keyword.Bluemix_notm}} résidant en dehors de l'Union européenne demandent l'accès à ces données pour y réaliser des opérations dans le cloud (de type support ou autres), un membre de l'équipe de support IBM de la région UE analyse cette demande d'accès. Cette personne accorde à l'expert du cloud global l'accès nécessaire - uniquement au système requis et seulement pour une durée spécifique et limitée - après quoi, cet accès est révoqué. Durant tout ce processus, vos données sont toujours protégées.
 
-  1. Dans la console {{site.data.keyword.Bluemix_notm}}, accédez à **Gérer** > **Facturation et utilisation** > **Facturation**.  
-  2. Cliquez sur **Activer**.
-  3. Après avoir lu les informations sur l'activation du paramètre, sélectionnez **je comprends et accepte ces conditions**.
-  4. Cliquez sur **Activer**.
+## Affichage de votre type de compte
+{: #view-acct-type}
 
-Si vous utilisez l'infrastructure {{site.data.keyword.BluSoftlayer_full}} et ne disposez pas d'un compte SoftLayer lié, vous pouvez configurer l'option Support dans l'Union européenne sur la page **Profil du compte** dans le portail client. Pour plus d'informations, voir la rubrique relative à la [définition de l'option Support dans l'Union européenne](/docs/customer-portal/cpmanuserprof.html#cp_seteusupported).
+Pour afficher votre type de compte, accédez à **Gérer > Compte** puis sélectionnez **Paramètres de compte**. Des informations détaillées sur votre type de compte sont disponibles dans la section Type de compte. Pour plus d'informations sur les différents comptes, voir [Types de compte](/docs/account/index.html#accounts). 
 
-### Offres prises en charge pour l'Union européenne
 
-Après avoir activé le paramètre Support dans l'Union européenne, vous pouvez utiliser la balise **Support dans l'Union européenne** pour rechercher dans le catalogue des offres avec des plans couvrant l'Union européenne.  
+## Mise à niveau de votre compte
+{: #upgrading-account}
 
-## Activation du paramètre de prise en charge HIPAA
+Pour mettre à niveau votre compte Lite vers un compte Paiement à la carte ou Abonnement, vous devez disposer d'un rôle `Editeur` ou d'un rôle supérieur pour tous les services de gestion de compte. 
 
-Vous pouvez choisir d'activer votre compte pour l'exécution de charges de travail sensibles qui sont régies par la loi U.S. Health Insurance Portability and Accountability Act (HIPAA). 
+* Pour un compte Paiement à la carte, accédez à **Gérer > Compte** et sélectionnez **Paramètres de compte**. Cliquez ensuite sur **Ajouter une carte de crédit**. Les frais dépendent de votre utilisation. Si votre utilisation dépasse les franchises pour les services et les contextes d'exécution, vous recevez une facture mensuelle.
+* Pour un abonnement, accédez à **Gérer > Compte** puis sélectionnez **Paramètres de compte**. Cliquez ensuite sur **En savoir plus**. Vous vous engagez à dépenser une somme minimale combinée par mois et recevez une remise sur abonnement qui est appliquée à ce montant minimal. Vous êtes facturé au tarif plein pour toute utilisation au-delà du montant total de votre abonnement.
 
-1. Accédez à **Gérer** > **Facturation et utilisation** > **Facturation** dans la console.
-2. Cliquez sur **Activer**. 
-3. Lises les informations associées avant d'activer ce paramètre. Une fois activé, vous ne pouvez plus le désactiver. 
-4. Sélectionnez **Accepter**. 
-5. Cliquez sur **Activer**.
+Pour plus d'informations sur les différents comptes, voir [Types de compte](/docs/account/index.html#accounts). 
 
-### Offres activées pour HIPAA
 
-Après avoir activé le paramètre de prise en charge HIPAA, vous pouvez utiliser la balise **Activé pour HIPAA** pour rechercher dans le catalogue des offres activées pour HIPAA. 
+Pour passer d'un compte Paiement à la carte à un compte Abonnement, prenez contact avec le [service commercial IBM](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe").
+{: important}

@@ -5,7 +5,6 @@
 管理帳戶
 
     {: .navgroup id="learn"}
-    [組織使用者、團隊、應用程式的最佳作法](https://console.bluemix.net/docs/tutorials/users-teams-applications.html)
     bp_account.md
     account_overview.md
     lite-account-show-me.md
@@ -17,11 +16,19 @@
         adminpublic.md
         index.md
         profile.md
+        login_settings.md
+
+    contact_info.md
+
+    {: .topicgroup}
+    帳戶設定
         account_settings.md
+        feature_codes.md
+        eu_hipaa_supported.md
 
     change-plan.md
+    email.md
     softlayerlink.md
-    notifications.md
 
     {: .topicgroup}
     管理組織及空間
@@ -33,12 +40,16 @@
         access.md
         include.md
         exclude.md
-        owners.md
+
+    audit_log.md
+    {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    monitoring.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
     account_faq.md
     ts_accessing.md
     ts_accounts.md
-    monitoring.md
     {: .navgroup-end}
