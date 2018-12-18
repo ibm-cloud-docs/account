@@ -90,7 +90,7 @@ To upgrade your Pay-As-You-Go account to a Subscription account, contact [IBM Sa
 
 With a Subscription account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. You commit to a combined a minimum spending amount each month and receive a subscription discount that is applied to that minimum charge. You're charged the non-discounted rate for any usage that exceeds your total subscription amount. To view your subscription, go to **Manage > Billing and usage**, and select **Subscriptions**. 
 
-If you have a subscription account, you can create most of the services that are available from the [IBM Cloud catalog](https://cloud.ibm.com/catalog/){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon"). However, some services use a specific pricing plan that requires you to purchase it separately.
+If you have a subscription account, you can create most of the services that are available from the [IBM Cloud catalog](https://cloud.ibm.com/catalog){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon"). However, some services use a specific pricing plan that requires you to purchase it separately.
 
 ### {{site.data.keyword.Bluemix_dedicated_notm}} account
 With {{site.data.keyword.Bluemix_dedicated_notm}}, you must sign up for a one year minimum term that includes:
