@@ -85,7 +85,7 @@ If you have a billable account, there's no limit to the number of resource group
 Yes, you can upgrade to a billable account and continue to use the instances you created with your Lite account.
 
 ## How do I upgrade my Pay-As-You-Go account?
-{: #nochange}
+{: #upgrade}
 {: faq}
 
 To upgrade your Pay-As-You-Go account to a Subscription account, contact [IBM Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
@@ -117,7 +117,7 @@ If you have an eligible account type, go to **Manage** > **Account** > **Account
 
 ![Account settings screen capture.](images/cancel-faq3.svg "Account settings screen capture")
 
-If you go to the **Account settings** page and the **Deactivate account** button is not displayed, you can get in touch by calling 1-866-325-0045 and selecting the third option, or open a support case.
+If you go to the **Account settings** page and the **Deactivate account** button is not displayed, you can get in touch by calling 1-866-325-0045 and selecting the third option, or by opening a support case.
 
 ## How do I delete my account?
 {: #deleteaccount}
