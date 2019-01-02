@@ -5,8 +5,7 @@
 Gerenciando sua conta
 
     {: .navgroup id="learn"}
-    [Melhores práticas para
-organizar usuários, equipes e aplicativos](https://console.bluemix.net/docs/tutorials/users-teams-applications.html) bp_account.md
+    bp_account.md
     account_overview.md
     lite-account-show-me.md
     {: .navgroup-end}
@@ -17,11 +16,19 @@ organizar usuários, equipes e aplicativos](https://console.bluemix.net/docs/tut
         adminpublic.md
         index.md
         profile.md
+        login_settings.md
+
+    contact_info.md
+
+    {: .topicgroup}
+    Configurações da conta
         account_settings.md
+        feature_codes.md
+        eu_hipaa_supported.md
 
     change-plan.md
+    email.md
     softlayerlink.md
-    notifications.md
 
     {: .topicgroup}
     Gerenciando organizações e espaços
@@ -33,12 +40,16 @@ organizar usuários, equipes e aplicativos](https://console.bluemix.net/docs/tut
         access.md
         include.md
         exclude.md
-        owners.md
+
+    audit_log.md
+    {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    monitoring.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
     account_faq.md
     ts_accessing.md
     ts_accounts.md
-    monitoring.md
     {: .navgroup-end}

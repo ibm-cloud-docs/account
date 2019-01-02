@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-11-12"
+lastupdated: "2018-11-19"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:download: .download}
 
-# Video: Account {{site.data.keyword.cloud_notm}} Lite
+# Video - Account Lite {{site.data.keyword.cloud_notm}}
 {: #show_me_video}
 
 L'account Lite è il nostro account gratuito che non scade mai. Cosa viene offerto in un account Lite? Scopri i servizi disponibili con i piani Lite gratuiti e altre funzioni di account in questo video.

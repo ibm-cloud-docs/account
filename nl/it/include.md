@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-11-18"
 
 ---
 
@@ -15,45 +15,40 @@ lastupdated: "2018-08-02"
 # Aggiunta di account alla tua risorsa privata
 {: #include}
 
-Qualsiasi risorsa privata che crei è riservata per impostazione predefinita. Se sei un amministratore dell'account, puoi scegliere chi può vedere la tua risorsa aggiungendo gli utenti in un elenco di inclusione attraverso l'[interfaccia riga di comando](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) {{site.data.keyword.Bluemix}}.
+Qualsiasi risorsa privata {{site.data.keyword.Bluemix}} che crei è limitata per impostazione predefinita. Se sei un amministratore per l'account, puoi scegliere chi può visualizzare la tua risorsa aggiungendo l'utente a un elenco di inclusione.
 {:shortdesc: .shortdesc}
 
-## Come faccio a sapere se dispongo dell'accesso?
-{: #find-access}
+Puoi utilizzare l'{{site.data.keyword.Bluemix}} [interfaccia riga di comando (CLI, command-line interface)](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) o la console per determinare se disponi dell'accesso per consentire agli utenti di visualizzare una risorsa privata che era stata aggiunta all'account. Se sei un proprietario di account, puoi concedere l'accesso a un utente nel tuo account dalla console assegnando una politica di accesso. Per ulteriori informazioni, vedi [Gestione dell'accesso al tuo account](access.html).
 
-Puoi utilizzare la CLI o l'interfaccia utente di Identità e accesso per determinare se disponi dell'accesso per consentire agli utenti di visualizzare una risorsa privata che è stata aggiunta all'account. Se sei un proprietario di account, puoi concedere l'accesso a un utente nel tuo account tramite l'interfaccia utente di Identity and Access Management assegnando una politica di accesso. Per ulteriori informazioni, vedi [Gestione dell'accesso al tuo account](access.html).
-
-## Passo 1: trova la tua risorsa
+## Individuazione della tua risorsa
 {: #find-resource}
 
-Immetti `ibmcloud catalog service <service-id or service-name>`. Sostituisci service-id o service-name con il nome o l'ID della tua risorsa. Con le informazioni restituite, puoi visualizzare la gerarchia, che mostra le risorse secondarie degli elementi nella risorsa.
+Esegui il comando `ibmcloud catalog service<service-id or service-name>`.Sostituisci le variabili service-id o service-name con il nome o l'ID della tua risorsa. Utilizza le informazioni restituite per visualizzare la gerarchia, che mostra le risorse secondarie degli elementi nella tua risorsa.
 
-## Passo 2: imposta la visibilità includendo un account
+## Impostazione della visibilità includendo un account
 {: #vis-inc}
 
-Immetti il seguente comando per consentire a un account di visualizzare la tua risorsa privata.
+Esegui il seguente comando per consentire a un account di visualizzare la tua risorsa privata.
 
 `ibmcloud catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>`
 
 Dopo l'indicatore includes-add, puoi aggiungere un elenco separato da virgole di e-mail o ID associati agli account.
 
-Una volta eseguito il comando, il processo per includere la risorsa richiede 30 minuti. Dopo 30 minuti, scollegati e torna al tuo account per vedere la risorsa inclusa.
+Dopo che hai eseguito il comando, il processo per includere la risorsa richiede circa 30 minuti. Dopo 30 minuti, scollegati e torna al tuo account per vedere la risorsa inclusa.
 
-## Rimuovi un account dall'elenco di inclusione
+## Rimozione di un account dall'elenco di inclusione
 {: #remove-exclude}
 
-Immetti il seguente comando per rimuovere un account dall'elenco `includes`.
+Esegui il seguente comando per rimuovere un account dall'elenco di inclusione.
 
 `ibmcloud catalog entry-visibility-set <service-id> --includes-remove <account-id or account-email>`
 
-## Gestione della visibilità di oggetti secondari
+## Esempio: gestione della visibilità degli oggetti secondari
 {: #child-vis}
 
-Puoi gestire la visibilità della tua risorsa o dei suoi elementi secondari.
+Puoi gestire la visibilità della tua risorsa o dei suoi elementi secondari. Un elenco di inclusione vuoto significa che solo gli amministratori dell'account possono visualizzarlo. Perché possa essere visualizzato da tutti i membri dell'account, il tuo account deve essere inserito nell'elenco di inclusione.
 
-Un elenco di inclusione vuoto significa che solo gli amministratori del tuo account possono vederla. Perché possa essere vista da tutti i membri dell'account, il tuo account deve essere nell'elenco di inclusione.
-
-Ad esempio, se immetti `ibmcloud catalog service <your_service>`, puoi vedere gli elementi secondari della risorsa.
+Il seguente esempio mostra come puoi eseguire il comando `ibmcloud catalog service cloudant` per visualizzare gli elementi secondari di un'istanza del servizio Cloudant.
 
 ```
 ID                 cloudant
@@ -79,8 +74,21 @@ Elemento secondario Nome                                          Tipo         I
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-Puoi ottenere l'ID risorsa per la distribuzione secondaria e quindi includere un account utilizzando il seguente comando. `ibmcloud catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`.
+Puoi ottenere l'ID risorsa per la distribuzione secondaria e quindi includere un account eseguendo il seguente comando:
 
-Gli elementi secondari di un oggetto possono ereditare la visibilità in modi complessi. Se l'oggetto secondario è privato, ha la propria configurazione di visibilità. Tuttavia, se l'oggetto secondario è impostato su pubblico, eredita la visibilità del suo elemento principale. L'impostazione della visibilità su un oggetto secondario privato può limitare la sua visibilità più dell'elemento principale.
+`ibmcloud catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`
 
-Per ulteriori informazioni su come funziona la visibilità, consulta le [documentazioni API](https://console.bluemix.net/apidocs/globalcatalog).
+Gli elementi secondari di un oggetto possono ereditare la visibilità in modi complessi. Se l'oggetto secondario è privato, ha la propria configurazione di visibilità. Tuttavia, se l'oggetto secondario è impostato su pubblico, eredita la visibilità del suo elemento principale. L'impostazione della visibilità su un oggetto secondario privato potrebbe limitare la sua visibilità a più dell'elemento principale. Per ulteriori informazioni su come funziona la visibilità, consulta la [documentazione sulle API del catalogo](https://{DomainName}/apidocs/globalcatalog).
+
+## Trasferimento della proprietà di una risorsa privata
+{: #owners}
+
+Se lasci il tuo progetto o la tua organizzazioni, potresti voler trasferire la proprietà del tuo account a qualcun altro.
+{:shortdesc}
+
+Dopo che hai trasferito la proprietà, non puoi più visualizzare la risorsa dal tuo account. Assicurati che vuoi trasferire la proprietà poiché i risultati prodotti da questa azione non possono essere annullati.
+{: important}
+
+Puoi utilizzare l'[{{site.data.keyword.Bluemix}}interfaccia riga di comandi (CLI, command-line interface)](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_commands_settings) per trasferire la proprietà di una risorsa privata. Immetti il seguente comando:
+
+`ibmcloud catalog entry-visibility-set <service-id> --owner <account-id or account-email>`

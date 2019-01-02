@@ -4,50 +4,45 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-11-06" 
+lastupdated: "2018-11-15" 
 
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 {:tip: .tip}
+{:important: .important}
+
 
 # Modifica delle impostazioni dell'account
 {: #account_settings}
 
-Se sei un proprietario di account, determina le impostazioni dell'account che vuoi abilitare mentre stai configurando il tuo account {{site.data.keyword.Bluemix}}. 
+In qualità di proprietario di un account, puoi modificare il nome dell'account, visualizzare il tipo del tuo account ed eseguire l'upgrade del tuo account. Se hai un ruolo di Operatore IAM o superiore su tutti i servizi di gestione account, puoi visualizzare e aggiornare il nome dell'account.  
 {:shortdesc}
 
-## Abilitazione dell'impostazione Supportato UE
-{: #bill_eusupported}
 
-Puoi scegliere di limitare il supporto di qualsiasi risorsa {{site.data.keyword.Bluemix_notm}} utilizzata in Europa per supportare i team residenti in Europa. Potresti scegliere di abilitare l'impostazione Abilitato UE, ad esempio, se utilizzi le risorse per elaborare i dati personali per i cittadini europei. L'opzione Supportato UE è disponibile con tutti i piani di pagamento.
+## Modifica del nome dell'account
+{: #change-acct-name}
 
-L'abilitazione dell'impostazione Supportato UE limita il supporto di Livello 1 e Livello 2 fornito dai membri del team di supporto nella regione UE. Tuttavia, le attività di elaborazione {{site.data.keyword.Bluemix_notm}} potrebbero essere eseguite da team situati al di fuori della regione dell'UE. I team globali possono essere contattati se i problemi non vengono risolti dal team di supporto di Livello 1 o Livello 2 nell'UE. I team globali sono sempre contattati dietro istruzione del team di supporto dell'UE e solo quando non vi è alcun impatto sulla sicurezza o sulla privacy dei dati.
+Per modificare il nome del tuo account, vai a **Gestisci > Account** e seleziona **Impostazioni account**. Nella sezione Account, fai clic sull'icona Modifica ![Icona Modifica](../icons/edit-tagging.svg), immetti il nuovo nome del tuo account e fai clic su **Invia**. 
 
-Abilitando questa impostazione, i servizi supportati dall'UE vengono abilitati con rigorosi controlli di accesso per garantire che i dati che archivi ed elabori siano limitati al, e controllati dal, team di supporto IBM nella regione UE. Se gli esperti {{site.data.keyword.Bluemix_notm}} che si trovano al di fuori della regione europea richiedono l'accesso a questi dati per supportare o gestire il cloud, un membro del team di supporto dell'UE riesamina la richiesta di accesso. Il team di supporto dell'UE fornisce l'accesso necessario all'esperto cloud globale solo al sistema richiesto e solo per un periodo di tempo specifico dopo il quale l'accesso verrà revocato. Durante questo processo, i tuoi dati sono sempre protetti.
 
-  1. Nella console {{site.data.keyword.Bluemix_notm}}, vai a **Gestisci** > **Fatturazione e utilizzo** > **Fatturazione**.  
-  2. Fai clic su **Attivo**.
-  3. Dopo che hai letto le informazioni sull'abilitazione dell'impostazione, seleziona **Comprendo e accetto questi termini**.
-  4. Fai clic su **Attivo**.
+## Visualizzazione del tipo del tuo account
+{: #view-acct-type}
 
-Se stai utilizzando l'infrastruttura {{site.data.keyword.BluSoftlayer_full}} e non hai un account SoftLayer collegato, imposti l'opzione Supportato UE nella pagina **Profilo account** nel portale del cliente. Per ulteriori informazioni, vedi [Impostazione dell'opzione Supportato UE](/docs/customer-portal/cpmanuserprof.html#cp_seteusupported).
+Per visualizzare il tipo del tuo account, vai a **Gestisci > Account** e seleziona **Impostazioni account**. I dettagli relativi al tipo del tuo account sono elencati nella sezione Tipo di account. Per ulteriori informazioni sui diversi account, vedi [Tipi di account](/docs/account/index.html#accounts). 
 
-### Offerte supportate UE
 
-Dopo aver abilitato l'impostazione Supportato UE, puoi utilizzare la tag **Supportato UE** per ricercare nel catalogo le offerte che dispongono di piani supportati dall'UE.  
+## Upgrade del tuo account
+{: #upgrading-account}
 
-## Abilitazione dell'impostazione Supportato HIPAA
+Per eseguire un upgrade del tuo account Lite a un account Pagamento a consumo o Sottoscrizione, devi avere un ruolo di `Editor` o superiore su tutti i servizi di gestione account. 
 
-Puoi scegliere di abilitare il tuo account all'esecuzione di carichi di lavoro sensibili regolamentati in base all'HIPAA (Health Insurance Portability and Accountability Act) degli Stati Uniti. 
+* Per un account Pagamento a consumo, vai a **Gestisci > Account** e seleziona **Impostazioni account**. Fai quindi clic su **Aggiungi carta di credito**. Gli addebiti a tuo carico si basano sul tuo utilizzo. Se superi le franchigie consentite per runtime e servizi, ricevi una fattura mensile.
+* Per una sottoscrizione, vai a **Gestisci > Account** e seleziona **Impostazioni account**. Fai quindi clic su **Ulteriori informazioni**. Ti puoi impegnare a un importo di spesa minimo combinato ogni mese e ricevi uno sconto sulla sottoscrizione che viene applicato a tale addebito minimo. Ti viene addebitata la tariffa non scontata per l'utilizzo che supera la quantità totale della tua Sottoscrizione.
 
-1. Nella console, vai a **Gestisci** > **Fatturazione e utilizzo** > **Fatturazione**.
-2. Fai clic su **Attivo**. 
-3. Leggere le informazioni relative all'abilitazione di questa impostazione. Non puoi disabilitarla dopo che è stata abilitata. 
-4. Seleziona **Accetta**. 
-5. Fai clic su **Attivo**.
+Per ulteriori informazioni su cosa è incluso in ciascun account, vedi [Tipi di account](/docs/account/index.html#accounts). 
 
-### Offerte abilitate HIPAA
 
-Dopo che hai abilitato l'impostazione Supportato HIPAA, puoi utilizzare la tag **Abilitato HIPAA** per ricercare nel catalogo le offerte abilitate a HIPAA. 
+Per eseguire l'upgrade del tuo account Pagamento a consumo a un account Sottoscrizione, contatta il settore [Vendite di IBM](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno").
+{: important}

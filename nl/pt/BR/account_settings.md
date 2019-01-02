@@ -4,61 +4,45 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-11-06" 
+lastupdated: "2018-11-15" 
 
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 {:tip: .tip}
+{:important: .important}
+
 
 # Modificando as configurações da conta
 {: #account_settings}
 
-Se você é um proprietário de conta, determine as configurações da conta que deseja ativar à medida que configurar a
-conta do {{site.data.keyword.Bluemix}}. 
+Como proprietário da conta, é possível mudar o nome da conta, visualizar seu tipo de conta e fazer upgrade de sua conta. Se você tiver uma função de Operador do IAM ou superior em todos os serviços de gerenciamento de conta, será possível visualizar e atualizar o nome da conta.  
 {:shortdesc}
 
-## Ativando a configuração Suportado pela UE
-{: #bill_eusupported}
 
-É possível optar por limitar o suporte de qualquer recurso do {{site.data.keyword.Bluemix_notm}} usado
-na Europa às equipes de suporte que residem na Europa. É possível optar por ativar a configuração
-Suportado pela UE, por exemplo, se você usar recursos para processar dados pessoais para os cidadãos europeus. A opção Suportado pela UE está disponível com todos os planos pagos.
+## Mudando o nome da conta
+{: #change-acct-name}
 
-A ativação da configuração Suportado pela UE limita os suportes de Nível 1 e Nível 2 fornecidos pelos membros da
-equipe de suporte na região da UE. No entanto, as atividades de processamento do {{site.data.keyword.Bluemix_notm}} podem ser executadas por equipes localizadas fora da região da UE. As equipes globais podem ser contatadas quando os problemas não são resolvidos pelas equipes de suporte de Nível 1 ou
-Nível 2 na UE. As equipes globais são sempre contatadas a pedido da equipe de suporte da UE e somente quando não há impacto na segurança ou na privacidade de seus dados.
+Para editar seu nome da conta, acesse **Gerenciar > Conta** e selecione **Configurações da conta**. Na seção Conta, clique no ícone Editar ![Ícone Editar](../icons/edit-tagging.svg), digite seu novo nome da conta e clique em **Enviar**. 
 
-Ao ativar essa configuração, os serviços suportados da UE são ativados com controles de acesso estritos para
-assegurar que os dados armazenados e processados sejam restritos e controlados pela equipe de suporte IBM na região
-da UE. Se os especialistas do {{site.data.keyword.Bluemix_notm}} localizados fora da região europeia requererem acesso a esses dados para suportar ou operar a nuvem, um membro da equipe de suporte da UE revisará a solicitação de acesso. O membro da equipe de suporte da UE fornece o acesso necessário ao especialista de nuvem global somente para o sistema solicitado e somente por um prazo específico após o qual o acesso é revogado. Durante esse processo, seus dados são sempre protegidos.
 
-  1. No console do {{site.data.keyword.Bluemix_notm}}, acesse **Gerenciar** > **Faturamento e uso** > **Faturamento**.  
-  2. Clique em **Ativado**.
-  3. Depois de ler as informações sobre como ativar a configuração, selecione **Eu entendo e concordo com esses termos**.
-  4. Clique em **Ativado**.
+## Visualizando seu tipo de conta
+{: #view-acct-type}
 
-Se você estiver usando a infraestrutura do {{site.data.keyword.BluSoftlayer_full}} e não tiver uma conta
-do SoftLayer vinculada, configure a opção Suportado pela UE na página **Perfil da conta** no
-portal do cliente. Para obter mais informações, veja [Configurando a opção Suportado pela UE](/docs/customer-portal/cpmanuserprof.html#cp_seteusupported).
+Para visualizar seu tipo de conta, acesse **Gerenciar > Conta** e selecione **Configurações da conta**. Os detalhes sobre seu tipo de conta são listados na seção Tipo de conta. Para obter mais informações sobre as diferentes contas, veja [Tipos de conta](/docs/account/index.html#accounts). 
 
-### Ofertas suportadas pela UE
 
-Depois de ativar a configuração Suportado pela UE, é possível usar a tag **Suportado pela UE**
-para procurar no catálogo as ofertas que têm planos Suportados pela UE.  
+## Fazendo upgrade de sua conta
+{: #upgrading-account}
 
-## Ativando a configuração suportada pelo HIPAA
+Para fazer upgrade da sua conta Lite para uma conta Pré-paga ou de Assinatura, deve-se ter uma função de `Editor` ou superior em todos os serviços de gerenciamento de conta. 
 
-É possível optar por ativar sua conta para executar cargas de trabalho sensíveis que são reguladas pelo Health Insurance Portability and Accountability Act (HIPAA) dos EUA. 
+* Para uma conta pré-paga, acesse **Gerenciar > Conta** e selecione **Configurações da conta**. Em seguida, clique em **Incluir cartão de crédito**. Seus encargos são baseados em seu uso. Se usar mais do que os abonos de serviço e de tempo de execução grátis, você receberá uma fatura mensal.
+* Para uma assinatura, acesse **Gerenciar > Conta** e selecione **Configurações da conta**. Em seguida, clique em **Aprenda mais**. É possível confirmar para uma quantia combinada de gasto mínimo a cada mês e receber um desconto na assinatura que é aplicado a esse encargo mínimo. Será cobrada uma taxa sem desconto por qualquer uso que exceda o seu valor total de assinatura.
 
-1. Acesse **Gerenciar** > **Faturamento e uso** > **Faturamento** no console.
-2. Clique em **Ativado**. 
-3. Leia as informações sobre como ativar essa configuração. Não é possível desativá-la após sua ativação. 
-4. Selecione **Aceitar**. 
-5. Clique em **Ativado**.
+Para obter mais informações sobre o que está incluído em cada conta, veja [Tipos de conta](/docs/account/index.html#accounts). 
 
-### Ofertas ativadas para HIPAA
 
-Depois de ativar a configuração Suportado pelo HIPAA, é possível usar a tag **Ativado para
-HIPAA** para procurar o catálogo de ofertas que são ativadas para HIPAA. 
+Para fazer upgrade da conta Pré-paga para uma conta de Assinatura, entre em contato com [Vendas IBM](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo").
+{: important}

@@ -1,11 +1,10 @@
 ---
 
 
-
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-04-06"
+lastupdated: "2018-11-19"
 
 
 ---
@@ -15,11 +14,11 @@ lastupdated: "2018-04-06"
 {:screen: .screen}
 {:new_window: target="_blank"}
 
+
 # {{site.data.keyword.Bluemix_notm}} への登録
 
-{{site.data.keyword.Bluemix}} アカウントの登録には、既存の IBM ID を使用するか、新規 IBM ID を作成するか、フェデレーテッド ID を使用することができます。 フェデレーテッド ID は、IBM に登録済みの会社ドメイン内の ID で、これにより、ドメインとユーザーの資格情報を使用して IBM Web アプリケーションにアクセスできます。 開始するには、**「登録」**をクリックします。
+[{{site.data.keyword.Bluemix}} アカウント](https://cloud.ibm.com){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") の登録には、既存の IBM ID を使用するか、新規 IBM ID を作成するか、フェデレーテッド ID を使用することができます。フェデレーテッド ID は、IBM に登録済みの会社ドメイン内の ID で、これにより、ドメインとユーザーの資格情報を使用して IBM Web アプリケーションにアクセスできます。 開始するには、**「{{site.data.keyword.Bluemix_notm}} アカウントの作成」**をクリックします。
 {:shortdesc}
-
 
 お客様の会社が既に IBM への登録を済ませている場合にのみ、フェデレーテッド ID で {{site.data.keyword.Bluemix_notm}} にアカウント登録できます。 会社のドメインを IBM に登録すると、会社の既存のユーザー資格情報で IBM の製品やサービスにログインできるようになります。 認証は、お客様の会社の ID プロバイダーによって処理されます。 フェデレーテッド ID で {{site.data.keyword.Bluemix_notm}} にログインすると、お客様の会社のログイン・ページを通じたログインを求められます。 詳しくは、『[IBMid Enterprise Federation Adoption Guide ![外部リンク・アイコン](../icons/launch-glyph.svg)](https://ibm.box.com/v/IBMid-Federation-Guide){: new_window}』を参照してください。 フェデレーテッド ID の登録を申請する際には、IBM のサポート役 (オファリング担当者やお客様担当者など) が必要です。
 

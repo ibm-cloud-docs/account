@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-10-31"
+lastupdated: "2018-11-28"
 
 ---
 
@@ -11,60 +11,67 @@ lastupdated: "2018-10-31"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 
-# Melhores práticas para configurar sua conta
+
+# Melhores práticas para configurar a conta
 {: #account_setup}
 
-Melhores práticas fornecem os blocos de construção básicos para o sucesso antes de iniciar a criação de recursos. Se você estiver pronto para obter apps para produção e configurar um ambiente para seus desenvolvedores, revise as seções a seguir para configurar sua conta.
+Essas melhores práticas fornecem os blocos de construção básicos para obter sucesso antes de iniciar a criação de recursos. Se você estiver pronto para obter apps para produção e configurar um ambiente para seus desenvolvedores, revise as seções a seguir para configurar sua conta.
 {:shortdesc}
 
-As melhores práticas a seguir focam na utilização de serviços ativados pelo IAM. Atualmente, nem todos os serviços no {{site.data.keyword.cloud}} estão ativados para IAM. Se uma instância de serviço em sua conta pertencer a uma organização ou espaço do Cloud Foundry, políticas, grupos de recursos e grupos de acesso do IAM não se aplicarão a ela. Ainda é possível usar organizações e espaços do Cloud Foundry e grupos de recursos em sua conta, mas é necessário designar aos usuários acesso a esses recursos separadamente. Para obter informações sobre como trabalhar com organizações e espaços do Cloud Foundry, consulte [Incluindo organizações e espaços](/docs/account/orgs_spaces.html#orgsspacesusers).
-{: tip}
+As melhores práticas a seguir focam na utilização de serviços ativados pelo IAM. Atualmente, nem todos os serviços no {{site.data.keyword.cloud}} estão ativados para IAM. As políticas, os grupos de recursos e os grupos de acesso do IAM não se aplicam a instâncias de serviço que pertencem a uma organização e um espaço do Cloud Foundry. Ainda é possível usar as organizações e os espaços do Cloud Foundry e os grupos de recursos em sua conta, mas deve-se designar aos usuários acesso a esses recursos separadamente. Para obter informações sobre organizações e espaços do Cloud Foundry, veja [Incluindo organizações e espaços](/docs/account/orgs_spaces.html#orgsspacesusers).
+{: note}
 
-## O que é uma boa estratégia de grupo de recursos?
+## O que faz uma boa estratégia de grupo de recursos?
 {: #resource-group-strategy}
 
-Como um grupo de recursos é um contêiner lógico para recursos, usar um grupo de recursos por ambiente de projeto é um bom ponto de início. Essa estratégia permite que os administradores controlem e vejam o uso do recurso no nível do ambiente do projeto. Por exemplo, um projeto típico tem ambientes de desenvolvimento, teste e produção. Portanto, um projeto chamado `CustApp` teria os grupos de recursos a seguir:
+Os administradores poderão ter melhor controle do uso de recursos no nível de ambiente do projeto se um grupo de recursos por ambiente do projeto for usado. Por exemplo, um projeto típico tem ambientes de desenvolvimento, teste e produção. Um projeto denominado `CustApp` teria os grupos de recursos a seguir:
 
-* CustApp-Dev
-* CustApp-Test
-* CustApp-Prod
+* `CustApp-Dev`
+* `CustApp-Test`
+* `CustApp-Prod`
 
-O acesso pode, então, ser concedido aos usuários. Por exemplo, um desenvolvedor geralmente tem direitos de acesso bastante amplos para o grupo de recursos de desenvolvimento e muito mais rígidos ou nenhum acesso ao grupo de recursos de produção.
+É possível conceder acesso a usuários. Por exemplo, um desenvolvedor geralmente tem permissões de acesso bastante abrangentes para o grupo de recursos de desenvolvimento e muito mais rígidas ou nenhum acesso ao grupo de recursos de produção.
 
-Se você tiver uma conta pré-paga ou de assinatura, poderá criar grupos de recursos adicionais: 
+Se você tiver uma conta Pré-paga ou de Assinatura, será possível criar mais grupos de recursos: 
 
-1. Acesse **Gerenciar** &gt; **Conta** &gt; **Grupos de recursos**.
-2. Clique em **Criar um grupo de recursos**.
-3. Insira o nome de seu grupo de recursos.
-4. Clique em **Incluir**.
+1. Acesse **Gerenciar** > **Conta** e selecione **Grupos de recursos** no menu **Recursos de conta**. 
+3. Clique em **Criar**.
+4. Insira o nome de seu grupo de recursos.
+5. Clique em **Incluir**.
+
+Para obter mais informações sobre qual tipo de conta funcionará melhor para você, veja [Tipos de conta](/docs/account/index.html#accounts). 
+
 
 ## Configurando seu grupos de recursos
 {: #setting-up-rgs}
 
-Os grupos de recursos são um contêiner lógico para organizar seus recursos ativados para IAM. Todos os serviços que são gerenciados usando o controle de acesso do IAM pertencem a um grupo de recursos. Você designa um recurso para seu grupo de recursos ao criá-lo por meio do catálogo. Não é possível mudar a designação do grupo de recursos depois de configurá-la, esse é o motivo pelo qual é importante configurar alguns de seus grupos de recursos agora.
+Os grupos de recursos são um contêiner lógico para organizar seus recursos ativados para IAM. Todos os serviços que são gerenciados usando o controle de acesso do {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) pertencem a um grupo de recursos. Você designa um recurso para seu grupo de recursos ao criá-lo por meio do catálogo. Não é possível mudar a designação do grupo de recursos depois de configurá-la, esse é o motivo pelo qual é importante configurar alguns de seus grupos de recursos agora.
 
-Se você tiver uma conta de avaliação ou Lite, usará o grupo de recursos padrão e não poderá criar nenhum adicional.
-{: tip}
+Se você tiver uma conta Lite, terá acesso a um único grupo de recursos que é criado para você. Não é possível editar grupos de recursos extras. Considere [fazer upgrade de sua conta](/docs/account/account_settings.html#upgrading-account) para criar e trabalhar com múltiplos grupos de recursos.
+{: note}
+
 
 ## Incluindo recursos em um grupo de recursos
 {: #adding-resources}
 
-Ao criar um recurso ativado para IAM por meio do catálogo, o grupo de recursos para o qual você deseja designá-lo deve ser selecionado. Depois que um recurso é criado, não é possível mudar o grupo de recursos para o qual ele é designado. Se um erro for cometido nesse estágio, será necessário excluir o recurso e criar um novo recurso.
+É possível incluir um recurso em um grupo de recursos ao criar um recurso ativado pelo IAM por meio do catálogo. Ao selecionar o recurso, certifique-se de que o grupo de recursos de destino esteja selecionado. Depois que um recurso é criado, não é possível mudar seu grupo de recursos designado. Se você designar acidentalmente um recurso ao grupo de recursos incorreto, exclua o recurso e crie um novo.
 
 ### Acesso necessário para incluir um recurso em um grupo de recursos
 {: #rg_access}
 
-O proprietário da conta do {{site.data.keyword.cloud_notm}} pode incluir recursos em qualquer grupo de recursos. No entanto, outros usuários devem ter acesso concedido usando uma política de acesso do IAM. Há duas funções mínimas de gerenciamento de plataforma que devem ser designadas aos usuários para incluir recursos em um grupo de recursos:
+Como proprietário da conta, é possível incluir recursos em qualquer grupo de recursos. Outros usuários devem ter acesso concedido usando uma política de acesso do IAM para incluir recursos em grupos de recursos. Há duas funções mínimas de gerenciamento de plataforma que devem ser designadas aos usuários para incluir recursos em um grupo de recursos:
 
-* Função de visualizador ou superior no próprio grupo de recursos
+* Função de visualizador ou superior no grupo de recursos
 * Função de editor ou superior no recurso ou serviço
 
 Para incluir um recurso em um grupo de recursos, conclua as etapas a seguir:
 
-1. Acesse **Gerenciar** &gt; **Conta** &gt; **Grupos de recursos**.
-2. Clique no menu do ícone Mais ações ![ícone Mais ações](../icons/overflow-menu.svg) para o grupo de recursos no qual você deseja incluir recursos e selecione **Incluir recursos**.
-3. Quando você for redirecionado para o catálogo, selecione o recurso que gostaria de incluir.
+1. Acesse **Gerenciar > Conta** e selecione **Grupos de recursos**.
+2. Clique no ícone Ações ![Ícone Ações](../icons/action-menu-icon.svg) para o grupo de recursos no qual você deseja incluir recursos e selecione **Incluir recursos**.
+3. Depois de ser redirecionado para o catálogo, selecione o recurso que você gostaria de incluir.
 4. Selecione o grupo de recursos para o qual você deseja designá-lo.
 5. Clique em **Criar**.
 
@@ -73,8 +80,23 @@ Para incluir um recurso em um grupo de recursos, conclua as etapas a seguir:
 
 Para obter mais informações, consulte [Melhores práticas para organizar recursos em um grupo de recursos](/docs/resources/bestpractice_rgs.html#bp_resourcegroups).
 
-## Próximas etapas
+
+## Usando tags para organizar recursos
+{: #tags}
+
+Use tags para organizar seus recursos e controlar os custos de uso. É possível identificar recursos relacionados e visualizá-los em toda a sua conta filtrando por tags em seu painel. As tags de par chave:valor podem ajudar você a organizar seus ambientes de desenvolvimento, projetos, conformidade e otimização. 
+
+Para incluir uma tag em um recurso, conclua as etapas a seguir:
+
+1. Clique no ícone Menu ![Ícone Menu](../icons/icon_hamburger.svg) > **Lista de recursos** para visualizar sua lista de recursos. Localize o recurso que você deseja identificar.
+2. Se o recurso já tiver uma tag, passe o mouse sobre a tag existente e clique no ícone Editar ![Ícone Editar](../icons/edit-tagging.svg). Se o recurso não tiver uma tag, passe o mouse sobre **--** na coluna `Tags` e clique em **Incluir tags**. 
+3. Digite um nome para a tag e pressione Enter após cada tag, se você estiver incluindo mais de uma.
+4. Para remover uma tag do recurso, clique no ícone Remover ![Ícone Remover](../icons/close-tagging.svg) próximo à tag. 
+5. Salve suas mudanças. 
+
+Para obter mais informações sobre quais recursos podem ser identificados e como designar acesso para delegar funcionalidade de identificação aos usuários em sua conta, veja [Trabalhando com tags](/docs/resources/tagging_resources.html#tag).
+
+
+## Próximas Etapas
 
 Configure grupos de acesso para os usuários e IDs de serviço que requerem o mesmo acesso a recursos e grupos de recursos em sua conta. É possível designar um número mínimo de políticas de acesso, o que economiza tempo. Para obter mais informações, consulte [Melhores práticas para designar acesso](/docs/iam/bp_access.html).
-
-Consulte [Melhores práticas para organizar usuários, equipes e aplicativos](/docs/tutorials/users-teams-applications.html#best-practices-for-organizing-users-teams-applications), para obter mais informações sobre a configuração de usuários e equipes em sua conta.

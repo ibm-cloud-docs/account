@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-10-31"
+lastupdated: "2018-11-28"
 
 ---
 
@@ -11,60 +11,67 @@ lastupdated: "2018-10-31"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
+
 
 # Procedure consigliate per la configurazione del tuo account
 {: #account_setup}
 
-Le procedure consigliate forniscono gli elementi fondamentali per la riuscita prima di iniziare a creare le risorse. Se sei pronto a ricevere le applicazioni per la produzione e a configurare un ambiente per i tuoi sviluppatori, consulta le seguenti sezioni per configurare il tuo account.
+Le procedure consigliate sono un primo passo necessario per avere successo quando inizi a creare le risorse. Se sei pronto a ricevere le applicazioni per la produzione e a configurare un ambiente per i tuoi sviluppatori, consulta le seguenti sezioni per configurare il tuo account.
 {:shortdesc}
 
-Le seguenti procedure consigliate si focalizzano sull'utilizzo dei servizi abilitati IAM. Al momento, non tutti i servizi in {{site.data.keyword.cloud}} sono abilitati IAM. Se un'istanza del servizio nel tuo account appartiene a un'organizzazione o spazio Cloud Foundry, le politiche IAM, i gruppi di risorse e i gruppi di accesso non si applicano ad essa. Puoi ancora utilizzare sia gli organizzazioni che gli spazi Cloud Foundry e i gruppi di risorse nel tuo account, ma devi assegnare agli utenti l'accesso a tali risorse separatamente. Per ulteriori informazioni sull'utilizzo di organizzazioni e spazi Cloud Foundry, vedi [Aggiunta di organizzazioni e spazi](/docs/account/orgs_spaces.html#orgsspacesusers).
-{: tip}
+Le seguenti procedure consigliate si focalizzano sull'utilizzo dei servizi abilitati IAM. Al momento, non tutti i servizi in {{site.data.keyword.cloud}} sono abilitati IAM. Le politiche IAM, i gruppi di risorse e i gruppi di accesso non si applicano alle istanze del servizio che appartengono a un'organizzazione e a uno spazio Cloud Foundry. Puoi ancora utilizzare sia le organizzazioni che gli spazi Cloud Foundry e i gruppi di risorse nel tuo account, ma devi assegnare agli utenti l'accesso a tali risorse separatamente. Per informazioni sulle organizzazioni e gli spazi Cloud Foundry, vedi [Aggiunta di organizzazioni e spazi](/docs/account/orgs_spaces.html#orgsspacesusers).
+{: note}
 
-## Che cosa è una buona strategia del gruppo di risorse?
+## Cosa rende buona una strategia del gruppo di risorse?
 {: #resource-group-strategy}
 
-Dato che un gruppo di risorse è un contenitore logico per le risorse, utilizzare un gruppo di risorse per l'ambiente del progetto è un buon punto di partenza. Questa strategia consente agli amministratori di controllare e visualizzare l'utilizzo delle risorse a livello dell'ambiente del progetto. Ad esempio, un progetto tipico ha ambienti di sviluppo, test e produzione. Di conseguenza, un progetto denominato `CustApp` avrebbe i seguenti gruppi di risorse:
+Gli amministratori possono avere un migliore controllo dell'utilizzo delle risorse a livello dell'ambiente del progetto se viene utilizzato un singolo gruppo di risorse per ogni ambiente di progetto. Ad esempio, un tipico progetto ha ambienti di sviluppo, test e produzione. Un progetto denominato `CustApp` avrà i seguenti gruppi di risorse:
 
-* CustApp-Dev
-* CustApp-Test
-* CustApp-Prod
+* `CustApp-Dev`
+* `CustApp-Test`
+* `CustApp-Prod`
 
-L'accesso può quindi essere concesso agli utenti. Ad esempio, uno sviluppatore di solito ha diritti di accesso di ampia portata al gruppo di risorse di sviluppo ed è molto più limitato o non ha accesso al gruppo di risorse di produzione.
+Puoi concedere l'accesso agli utenti. Ad esempio, uno sviluppatore di solito dispone di autorizzazioni di accesso di portata adeguatamente ampia al gruppo di risorse di sviluppo e un accesso molto più limitato, o per niente consentito, al gruppo di risorse di produzione.
 
-Se hai un account di sottoscrizione o di pagamento a consumo, puoi creare ulteriori gruppi di risorse: 
+Se disponi di un account Pagamento a consumo o Sottoscrizione, puoi creare ulteriori gruppi di risorse: 
 
-1. Vai a **Gestisci** &gt; **Account** &gt; **Gruppi di risorse**.
-2. Fai clic su **Crea un gruppo di risorse**.
-3. Immetti il nome del tuo gruppo di risorse.
-4. Fai clic su **Aggiungi**.
+1. Vai a **Gestisci** > **Account** e seleziona **Gruppi di risorse** dal menu **Risorse account**. 
+3. Fai clic su **Crea**.
+4. Immetti il nome del tuo gruppo di risorse.
+5. Fai clic su **Aggiungi**.
+
+Per ulteriori informazioni su quale tipo di account funziona meglio per te, vedi [Tipi di account](/docs/account/index.html#accounts). 
+
 
 ## Configurazione dei tuoi gruppi di risorse
 {: #setting-up-rgs}
 
-I gruppi di risorse sono un contenitore logico per l'organizzazione delle risorse abilitate IAM. Tutti i servizi gestiti utilizzando il controllo dell'accesso IAM appartengono a un gruppo di risorse. Assegni una risorsa al suo gruppo di risorse quando la crei dal catalogo. Non puoi modificare l'assegnazione al gruppo di risorse dopo che l'hai configurata, ed è per questo che è importante configurare ora alcuni dei tuoi gruppi di risorse.
+I gruppi di risorse sono un contenitore logico per l'organizzazione delle risorse abilitate IAM. Tutti i servizi gestiti utilizzando il controllo dell'accesso {{site.data.keyword.cloud_notm}} IAM (Identity and Access Management) appartengono a un gruppo di risorse. Assegni una risorsa al suo gruppo di risorse quando la crei dal catalogo. Non puoi modificare l'assegnazione al gruppo di risorse dopo che l'hai configurata, ed è per questo che è importante configurare ora alcuni dei tuoi gruppi di risorse.
 
-Se hai un account di prova o Lite, utilizza il gruppo di risorse predefinito e non puoi crearne di ulteriori.
-{: tip}
+Se disponi di un account Lite, hai accesso a un singolo gruppo di risorse creato per tuo conto. Non puoi creare dei gruppi di risorse supplementari. Considera [un upgrade del tuo account](/docs/account/account_settings.html#upgrading-account) per creare e gestire più gruppi di risorse.
+{: note}
+
 
 ## Aggiunta di risorse a un gruppo di risorse
 {: #adding-resources}
 
-Quando crei una risorsa abilitata IAM dal catalogo, devi selezionare il gruppo di risorse che vuoi assegnarle. Dopo aver creato una risorsa, non puoi modificare il gruppo di risorse a cui è assegnata. Se si commette un errore in questa fase, ti viene richiesto di eliminare la risorsa e crearne una nuova.
+Puoi aggiungere una risorsa a un gruppo di risorse quando crei una risorsa abilitata a IAM dal catalogo. Quando selezioni la risorsa, assicurati che il gruppo di risorse di destinazione sia selezionato. Dopo che una risorsa è stata creata, non puoi modificare il gruppo di risorse a cui è stata assegnata. Se assegni accidentalmente una risorsa a un gruppo di risorse errato, elimina la risorsa e creane una nuova.
 
 ### Accesso richiesto per l'aggiunta di una risorsa a un gruppo di risorse
 {: #rg_access}
 
-Il proprietario dell'account {{site.data.keyword.cloud_notm}} può aggiungere le risorse a qualsiasi gruppo di risorse. Tuttavia, agli altri utenti deve essere concesso l'accesso utilizzando una politica di accesso IAM. Ci sono minimo due ruoli di gestione della piattaforma che devono essere assegnati agli utenti per aggiungere le risorse a un gruppo di risorse: 
+In qualità di proprietario dell'account, puoi aggiungere risorse a qualsiasi gruppo di risorse. Agli altri utenti deve essere concesso l'accesso utilizzando una politica di accesso IAM per aggiungere le risorse ai gruppi di risorse. Ci sono minimo due ruoli di gestione della piattaforma che devono essere assegnati agli utenti per aggiungere le risorse a un gruppo di risorse:
 
-* Ruolo visualizzatore o superiore sul gruppo di risorse stesso
-* Ruolo editor o superiore sulla risorsa o sul servizio 
+* Ruolo Visualizzatore o superiore sul gruppo di risorse
+* Ruolo Editor o superiore sulla risorsa o sul servizio
 
 Per aggiungere una risorsa a un gruppo di risorse, completa la seguente procedura:
 
-1. Vai a **Gestisci** &gt; **Account** &gt; **Gruppi di risorse**.
-2. Fai clic sul menu ![icona Ulteriori azioni](../icons/overflow-menu.svg) dell'icona Ulteriori azioni di un gruppo di risorse a cui vuoi aggiungere le risorse e seleziona **Aggiungi risorse**.
-3. Quando vieni reindirizzato al catalogo, seleziona la risorsa che vuoi aggiungere.
+1. Vai a **Gestisci > Account** e seleziona **Gruppi di risorse**.
+2. Fai clic sull'icona Azioni ![Icona Azioni](../icons/action-menu-icon.svg) per il gruppo di risorse a cui vuoi aggiungere le risorse e seleziona **Aggiungi risorse**.
+3. Dopo che sei stato reindirizzato al catalogo, seleziona la risorsa che vuoi aggiungere.
 4. Seleziona il gruppo di risorse a cui vuoi assegnarla.
 5. Fai clic su **Crea**.
 
@@ -73,8 +80,23 @@ Puoi sempre andare direttamente al catalogo per creare le risorse e assegnarle a
 
 Per ulteriori informazioni, consulta [Procedure ottimali per organizzare le risorse in un gruppo di risorse](/docs/resources/bestpractice_rgs.html#bp_resourcegroups).
 
+
+## Utilizzo di tag per organizzare le risorse
+{: #tags}
+
+Utilizza le tag per organizzare le tue risorse e tracciare i costi d'utilizzo. Puoi aggiungere tag alle risorse correlate e visualizzarle in tutto il tuo account filtrando in base alle tag dal tuo dashboard. Le tag di coppia chiave-valore possono aiutarti a organizzare i tuoi ambienti di sviluppo, i tuoi progetti, la conformità e l'ottimizzazione. 
+
+Per aggiungere una tag a una risorsa, completa la seguente procedura:
+
+1. Fai clic sull'icona Menu ![Icona Menu](../icons/icon_hamburger.svg) > **Elenco risorse** per visualizzare il tuo elenco di risorse. Trova la risorsa a cui vuoi aggiungere delle tag.
+2. Se la risorsa già presenta una tag, passa il puntatore del mouse sulla tag esistente e fai clic sull'icona Modifica ![Icona Modifica](../icons/edit-tagging.svg). Se la risorsa non presenta una tag, passa il puntatore del mouse su **--** nella colonna `Tag` e fai clic su **Aggiungi tag**. 
+3. Immetti un nome per la tag e premi Invio dopo ciascuna tag, se ne stai aggiungendo più di una.
+4. Per rimuovere una tag dalla risorsa, fai clic sull'icona Rimuovi ![Icona Rimuovi](../icons/close-tagging.svg) accanto alla tag. 
+5. Salva le tue modifiche. 
+
+Per ulteriori informazioni su quali sono le risorse a cui possono essere aggiunte delle tag e su come assegnare l'accesso per delegare la funzionalità di aggiunta di tag agli utenti nel tuo account, vedi [Gestione delle tag](/docs/resources/tagging_resources.html#tag).
+
+
 ## Passi successivi
 
 Configura i gruppi di accesso per gli utenti e gli ID servizio che richiedono lo stesso accesso alle risorse e ai gruppi di risorse nel tuo account. Puoi assegnare un numero minimo di politiche di accesso, per risparmiare tempo. Per ulteriori informazioni, consulta [Procedure consigliate per l'assegnazione dell'accesso](/docs/iam/bp_access.html).
-
-Consulta [Procedure consigliate per organizzare utenti, team e applicazioni](/docs/tutorials/users-teams-applications.html#best-practices-for-organizing-users-teams-applications), per ulteriori informazioni sulla configurazione degli utenti e dei team nel tuo account:
