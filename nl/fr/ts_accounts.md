@@ -4,7 +4,8 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-10-24"
+lastupdated: "2018-09-25"
+
 ---
 
 {:tsSymptoms: .tsSymptoms}
@@ -14,56 +15,43 @@ lastupdated: "2018-10-24"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
-{:note: .note}
 {:new_window: target="_blank"}
-{:troubleshoot: data-hd-content-type='troubleshoot'}
+
 
 # Traitement des incidents liés à la gestion des comptes
 {: #managingaccounts}
 
-Vous pouvez rencontrer des problèmes d'ordre général lorsque vous gérez votre compte, par exemple, différentes applications ont le même nom de domaine ou les administrateurs ne peuvent pas afficher toutes les organisations. Dans de nombreux cas, ces problèmes peuvent être résolus en quelques opérations simples.
+Vous pouvez rencontrer des problèmes d'ordre général lorsque vous gérez votre compte. Par exemple, il est possible que différentes applications partagent un même nom de domaine ou que les administrateurs ne puissent pas afficher toutes les organisations. Dans de nombreux cas, ces problèmes peuvent être résolus en quelques opérations simples.
 {:shortdesc}
 
-
-## Pourquoi ne puis-je pas accéder à un autre emplacement {{site.data.keyword.Bluemix_notm}} ?
+## Impossible d'accéder à une région {{site.data.keyword.Bluemix_notm}} différente
 {: #nosecondreg}
-{: troubleshoot}
 
-Vous ne pouvez pas créer de nouvel emplacement car votre type de compte ne permet pas cette action.
-
-Vous recevez un message d'erreur lorsque vous tentez de créer un emplacement {{site.data.keyword.Bluemix_notm}}.
+Vous recevez un message d'erreur lorsque vous tentez de créer une région {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
 
-Il est probable que vous utilisiez un compte Lite, lequel ne permet un développement que dans un seul emplacement public.
+Il est probable que vous utilisez un compte Lite, lequel ne permet un développement que dans une seule région publique. La région {{site.data.keyword.Bluemix_notm}} publique dans laquelle vous désirez travailler est sélectionnée lors de la configuration initiale du compte.
 {: tsCauses}
 
-Pour pouvoir accéder à des emplacements supplémentaires, vous devez utiliser un compte facturable. Accédez à **Gérer > Facturation et utilisation** et sélectionnez **Paiements**.
+Si vous utilisez un compte Lite, vous pouvez effectuer une mise à niveau vers un compte facturable pour pouvoir accéder à d'autres régions. Accédez à **Gérer > Facturation et utilisation > Facturation** dans la console, puis cliquez sur **Ajouter une carte de crédit**. Sur la page **Facturation**, vous pouvez également vérifier si votre compte est un compte Lite.
 {: tsResolve}
 
-
-## Pourquoi ne puis-je pas créer de nouvelle organisation ?
+## Impossible de créer une nouvelle organisation
 {: #nosecondorg}
-{: troubleshoot}
-
-Vous tentez de créer plusieurs organisations et vous avez un compte Lite.  
 
 Vous recevez un message d'erreur lorsque vous tentez de créer une organisation.
 {: tsSymptoms}
 
-Il est probable que vous utilisiez un compte Lite, lequel ne permet un développement que dans une seule organisation.
+Il est probable que vous utilisez un compte Lite, lequel ne permet un développement que dans une seule organisation. Votre organisation est créée lors de la configuration initiale de votre compte.
 {: tsCauses}
 
-Pour créer une organisation, une mise à niveau vers un compte facturable est requise. Accédez à **Gérer > Facturation et utilisation** et sélectionnez **Mises à niveau**.
+Si vous utilisez un compte Lite, vous pouvez effectuer une mise à niveau vers un compte facturable pour pouvoir accéder à d'autres organisations. Accédez à **Gérer > Facturation et utilisation > Facturation** dans la console, puis cliquez sur **Ajouter une carte de crédit**. Sur la page **Facturation**, vous pouvez également vérifier si votre compte est un compte Lite.
 {: tsResolve}
 
-
-## Pourquoi ne puis-je pas créer de nouvelle instance de plan Lite ?
+## Impossible de créer une instance de plan Lite
 {: #nosecondlite}
-{: troubleshoot}
 
-Vous tentez de créer une instance supplémentaire mais vous avez un compte Lite.
-
-Vous recevez le message d'erreur suivant lorsque vous tentez de créer une nouvelle instance de plan Lite :
+Vous recevez le message d'erreur suivant lorsque vous tentez de créer une instance de plan Lite :
 {: tsSymptoms}
 
 `Impossible de mettre à disposition une nouvelle instance Lite`
@@ -71,33 +59,27 @@ Vous recevez le message d'erreur suivant lorsque vous tentez de créer une nouve
 Pour pouvoir maintenir la gratuité de ces plans, une seule instance est permise par plan Lite.
 {: tsCauses}
 
-Vous pouvez créer d'autres instances du service en sélectionnant l'un des plans de service facturables, disponibles dans les comptes facturables. Pour effectuer une mise à niveau vers un compte facturable depuis la console, accédez à **Gérer > Facturation et utilisation** et sélectionnez **Mises à niveau**.
+Vous pouvez créer d'autres instances du service en sélectionnant l'un des plans de service facturables, disponibles dans les comptes facturables. Pour effectuer une mise à niveau vers un compte facturable depuis la console, accédez à **Gérer > Facturation et utilisation > Facturation**, puis cliquez sur **Ajouter une carte de crédit**.
 {: tsResolve}
 
-Si vous ne souhaitez pas effectuer de mise à niveau depuis un compte Lite et que vous n'utilisez plus votre instance de service Lite existante, vous pouvez supprimer cette instance de plan de service à partir du tableau de bord Services, puis en créer une nouvelle.
+Si vous ne souhaitez pas effectuer une mise à niveau depuis un compte Lite et n'utilisez plus votre instance de service Lite existante, vous pouvez supprimer cette instance de plan de service depuis le tableau de bord Services, puis en créer une nouvelle.
 
-
-## Comment ai-je dépassé la franchise de mémoire d'exécution ?
+## Allocation de mémoire d'exécution dépassée
 {: #noruntimemem}
-{: troubleshoot}
 
-Vous avez dépassé la mémoire autorisée pour votre compte.
-
-Vous ne parvenez pas à déployer des applications et un message s'affiche indiquant que vous avez dépassé la limite de mémoire allouée à votre organisation.
+Vous ne parvenez pas à déployer des applications et un message d'erreur vous avise que vous avez dépassé la limite de mémoire allouée à votre organisation.
 {: tsSymptoms}
 
-Dans un compte Lite, vos applications Cloud Foundry peuvent utiliser jusqu'à 256 Mo de mémoire d'exécution simultanée. Dans les comptes facturables, il existe une limite de mémoire de 2 Go.
+Dans un compte Lite, vos applications Cloud Foundry peuvent utiliser jusqu'à 256 Mo de mémoire d'exécution simultanée. Dans les comptes facturables, cette limite est de 2 Go.
 {: tsCauses}
 
-Si vous utilisez un compte Lite, vous pouvez obtenir plus de mémoire en effectuant une mise à niveau vers un compte facturable. Accédez à **Gérer > Facturation et utilisation** et sélectionnez **Mises à niveau**.
+Si vous utilisez un compte Lite, vous pouvez obtenir plus de mémoire en effectuant une mise à niveau vers un compte facturable. Accédez à **Gérer > Facturation et utilisation > Facturation** dans la console, puis cliquez sur **Ajouter une carte de crédit**.
 {: tsResolve}
 
-Si vous ne souhaitez pas effectuer de mise à niveau depuis un compte Lite, mais disposez de diverses applications inactives, vous pouvez les supprimer pour libérer de la mémoire d'exécution.
+Si vous ne souhaitez pas effectuer une mise à niveau depuis un compte Lite, mais disposez de diverses applications inactives, vous pouvez les supprimer pour libérer de la mémoire d'exécution.
 
-
-## Pourquoi mon compte est-il inactif ?
+## Le compte est inactif
 {: #ts_accnt_inactive}
-{: troubleshoot}
 
 Vous ne pouvez pas créer d'application dans {{site.data.keyword.Bluemix_notm}} si votre compte est inactif. Vous devez prendre contact avec l'équipe de support pour résoudre ce problème.
 
@@ -109,18 +91,16 @@ Lorsque vous tentez de créer une application dans {{site.data.keyword.Bluemix_n
 Le statut de votre compte {{site.data.keyword.Bluemix_notm}} devient inactif lorsque le compte est annulé ou suspendu.
 {: tsCauses}
 
-Pour réactiver votre compte, ouvrez un cas dans le [centre de support](https://cloud.ibm.com/unifiedsupport/supportcenter){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe"). Indiquez les informations suivantes dans votre cas :
+Pour réactiver votre compte, contactez le Support [{{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](http://ibm.biz/bluemixsupport.com){: new_window}. Indiquez les informations suivantes dans votre courrier électronique :
 {: tsResolve}
 
   * L'IBMid que vous utilisez pour vous connecter à {{site.data.keyword.Bluemix_notm}}.
   * Le nom de l'organisation dans laquelle votre application est créée. Ces informations peuvent être utiles à l'équipe de support pour déterminer si l'appartenance ou les rôles appropriés vous ont été affectés dans votre organisation.
 
-
-## Pourquoi ne puis-je pas ajouter d'utilisateurs à une organisation ?
+## Impossible d'ajouter des utilisateurs à une organisation
 {: #ts_adduser}
-{: troubleshoot}
 
-Vous pouvez inviter des utilisateurs dans votre organisation uniquement si vous êtes le propriétaire du compte ou si vous êtes à la fois responsable et membre de l'organisation.
+Vous pouvez inviter plusieurs utilisateurs dans la même organisation. Vous pouvez inviter des utilisateurs dans votre organisation uniquement si vous êtes propriétaire de compte ou un responsable l'organisation.
 
 Le lien **Inviter un nouvel utilisateur** n'apparaît pas dans votre section **Gérer les organisations**.
 {: tsSymptoms}
@@ -128,87 +108,83 @@ Le lien **Inviter un nouvel utilisateur** n'apparaît pas dans votre section **G
 Seuls les utilisateurs {{site.data.keyword.Bluemix_notm}} suivants peuvent inviter des utilisateurs dans une organisation :
 {: tsCauses}
   * Le propriétaire de compte de l'organisation
-  * Les responsables d'organisation qui sont également membres et non collaborateurs de l'organisation
+  * Les responsables de l'organisation
 
-Dans {{site.data.keyword.Bluemix_notm}}, vous pouvez être, soit un membre, soit un collaborateur d'une organisation :
+**Remarque :** Tous les responsables de l'organisation peuvent ajouter, modifier ou retirer des utilisateurs qui se trouvent déjà dans l'organisation.
 
-<dl><dt>Collaborateur</dt>
-<dd>Vous êtes collaborateur d'une organisation si vous disposez déjà d'un compte {{site.data.keyword.Bluemix_notm}} et que vous avez été invité dans l'organisation.</dd>
-<dt>Membre</dt>
-<dd>Vous êtes membre d'une organisation si vous n'avez pas de compte {{site.data.keyword.Bluemix_notm}} mais que vous avez été invité à l'organisation et que vous vous êtes inscrit à {{site.data.keyword.Bluemix_notm}} à partir de l'invitation.</dd>
-</dl>
-
-Vous ne pouvez pas inviter d'utilisateurs dans votre organisation si vous êtes un collaborateur de l'organisation même si vous avez été désigné comme responsable de l'organisation.
-
-Tous les responsables de l'organisation, y compris ceux qui sont des collaborateurs d'une organisation peuvent ajouter, modifier et retirer des utilisateurs se trouvant déjà dans l'organisation.
-{: note}
-
-Si vous ne pouvez pas inviter d'utilisateurs dans votre organisation et que vous avez besoin d'un autre rôle pour ce faire, prenez contact avec le responsable de l'organisation afin qu'il change votre rôle. Pour identifier le responsable de votre organisation, procédez comme suit :
+Si vous ne pouvez pas inviter d'utilisateurs dans votre organisation, prenez contact avec le responsable de l'organisation. Pour identifier le responsable de votre organisation, procédez comme suit :
 {: tsResolve}
 
-  1. Dans la barre de menus de la console, cliquez sur **Gérer > Compte** et sélectionnez **Contacts de la société**.
+  1. Dans la barre de menus de la console, sélectionnez **Gérer > Compte > Organisations**.
   2. Sélectionnez votre organisation et affichez les informations relatives au responsable dans l'onglet **Utilisateurs**.  
 
-Si vous ne parvenez pas à inviter des utilisateurs car vous êtes collaborateur et non membre, vous devez supprimer votre compte {{site.data.keyword.Bluemix_notm}} précédent, puis être invité à rejoindre le compte en tant que membre de l'organisation. Pour supprimer votre compte précédent et rejoindre le compte en tant que membre, procédez comme suit :
+## L'enregistrement d'utilisateurs par lots n'est pas pris en charge
+{: #ts_batchregistration}
 
-  1. Contactez le [support {{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com/unifiedsupport/supportcenter){: new_window} pour ouvrir un cas de support et demander la suppression de votre compte. Si des données sont associées à votre ancien compte et que vous souhaitez les sauvegarder et utiliser le nouveau compte, incluez ces informations dans votre message électronique.
-  2. Une fois que votre compte est supprimé, faites en sorte qu'un utilisateur ayant le rôle Responsable d'organisation vous invite dans l'organisation en tant que responsable d'organisation. Ensuite, inscrivez-vous à {{site.data.keyword.Bluemix_notm}} à partir de l'invitation.
+Lorsque vous enregistrez des utilisateurs pour {{site.data.keyword.Bluemix_notm}}, vous devez enregistrer chaque utilisateur individuellement.
 
+{{site.data.keyword.Bluemix_notm}} ne permet pas d'enregistrer plusieurs utilisateurs simultanément.
+{: tsSymptoms}
 
-## Pourquoi aucun espace n'est-il associé à mon organisation en cours ?
+{{site.data.keyword.Bluemix_notm}} ne prend pas en charge l'enregistrement d'utilisateurs par lots. Pour enregistrer des utilisateurs pour {{site.data.keyword.Bluemix_notm}}, vous devez enregistrer chaque utilisateur individuellement.
+{: tsCauses}
+
+Pour enregistrer plusieurs utilisateurs pour {{site.data.keyword.Bluemix_notm}}, vous devez effectuer les opérations suivantes pour chaque utilisateur :
+{: tsResolve}
+
+  1. Cliquez sur **Inscription** dans la console {{site.data.keyword.Bluemix_notm}}.
+  2. Suivez les étapes de l'assistant.
+
+## Aucun espace n'est associé à votre organisation en cours
 {: #ts_no_space}
-{: troubleshoot}
 
 Vous ne pouvez pas créer d'application si aucun espace n'est associé à votre organisation en cours.
 
-Lorsque vous tentez de créer une application, le message d'erreur suivant s'affiche :
+Lorsque vous tentez de créer une application dans {{site.data.keyword.Bluemix_notm}}, le message d'erreur suivant s'affiche :
 {: tsSymptoms}
 
 `BXNUI0097E: Pour qu'une application puisse être ajoutée, un espace au moins doit être associé à votre organisation et à votre région. Dans le tableau de bord, cliquez sur Créer un espace. Une fois l'espace créé, essayez à nouveau.`
 
-Les applications doivent être créées dans un espace sous votre organisation.
+Les applications dans {{site.data.keyword.Bluemix_notm}} doivent être créées dans un espace sous votre organisation.
 {: tsCauses}
 
 Pour créer un espace, appliquez l'une des méthodes suivantes :
 {: tsResolve}
 
-  * Dans la barre de menus de la console, cliquez sur **Gérer > Compte** et sélectionnez **Organisations**. Ensuite, sélectionnez l'organisation dans laquelle vous voulez créer l'espace, puis cliquez sur **Créer un espace**.
+  * Dans la barre de menus de la console, sélectionnez **Gérer > Compte > Organisations**. Ensuite, sélectionnez l'organisation dans laquelle vous voulez créer l'espace, puis cliquez sur **Créer un espace**.
   * Dans l'interface de ligne de commande Cloud Foundry, entrez `cf create-space <space_name> -o <organization_name>`.
 
 
-## Pourquoi certaines applications partagent-elles un nom de domaine ?
+## Les applications partagent un nom de domaine
 {: #ts_domain_diff}
-{: troubleshoot}
 
 Il se peut que plusieurs applications partagent une adresse URL dans {{site.data.keyword.Bluemix_notm}}.
 
 Ce problème peut se produire lorsque vous affectez la même route d'adresse URL à plusieurs applications dans un espace.
 {: tsCauses}
 
-Par exemple, vous envoyez par commande push l'application myApp1 dans {{site.data.keyword.Bluemix_notm}} et définissez le nom de domaine `mynewapp.stage1.mybluemix.net`. Puis, vous envoyez par commande push une autre application myApp2 dans le même espace et affectez `mynewapp.stage1.mybluemix.net` à l'une de ses routes d'URL. La route est désormais mappée aux deux applications.
+Par exemple, vous envoyez par commande push l'application myApp1 dans {{site.data.keyword.Bluemix_notm}} et définissez le nom de domaine "mynewapp.stage1.mybluemix.net". Puis, vous envoyez par commande push une autre application myApp2 dans le même espace et affectez "mynewapp.mybluemix.net" à l'une de ses routes d'URL. La route est désormais mappée aux deux applications.
 
-Il s'agit du comportement pris en charge ; il permet d'obtenir un temps d'indisponibilité nul pour la mise à niveau de votre application. Pour plus d'informations, voir [Comment garantir un temps d'indisponibilité nul](/docs/overview/zero_downtime.html#zero-downtime).
+Il s'agit du comportement de {{site.data.keyword.Bluemix_notm}} pris en charge ; il permet d'obtenir un temps d'indisponibilité nul pour la mise à niveau de votre application. Pour plus d'informations, voir [Using Blue-Green Deployment to Reduce Downtime and Risk ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html){: new_window}.
 {: tsResolve}
 
 
-## Pourquoi les administrateurs ne peuvent-ils pas utiliser la console pour afficher toutes les organisations ?
+## Les administrateurs ne peuvent pas visualiser toutes les organisations à l'aide de l'interface utilisateur {{site.data.keyword.Bluemix_notm}}
 {: #ts_ui_org}
-{: troubleshoot}
 
-En tant qu'administrateur, vous ne pouvez pas afficher chaque organisation pour les gérer lorsque vous utilisez la console {{site.data.keyword.Bluemix_notm}}. Vous pouvez afficher et administrer uniquement les organisations auxquelles vous appartenez.
+En tant qu'administrateur, lorsque vous utilisez l'interface utilisateur {{site.data.keyword.Bluemix_notm}}, vous ne pouvez pas afficher chaque organisation à des fins d'administration. Vous pouvez afficher et administrer uniquement les organisations auxquelles vous appartenez.
 
-En tant qu'administrateur, vous ne pouvez pas afficher toutes les organisations à partir de la console.
+En tant qu'administrateur, vous ne pouvez pas afficher toutes les organisations à l'aide de l'interface utilisateur {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
 
-Il s'agit d'une limitation de la console.
+Il s'agit d'une limitation de l'interface utilisateur {{site.data.keyword.Bluemix_notm}}.
 {: tsCauses}
 
 Vous pouvez utiliser des commandes telles que `cf orgs`, `cf create-org` et `cf delete-org` à partir de l'interface de ligne de commande Cloud Foundry pour gérer toutes les organisations. Pour obtenir une liste complète des commandes Cloud Foundry, entrez `cf help`.
 {: tsResolve}
 
-## Pourquoi ne puis-je pas ajouter mes informations de carte de crédit ?
+## La carte de crédit ne peut pas être ajoutée
 {: #ts_addcc}
-{: troubleshoot}
 
 Vous ne pouvez pas soumettre vos informations de carte de crédit pour convertir votre compte Lite en compte facturable.
 
@@ -218,9 +194,10 @@ Le bouton **Soumettre** sur la page Ajout d'une carte de crédit est désactivé
 Ce problème survient lorsque vos informations ne sont pas entrées correctement sur la page Ajout d'une carte de crédit.
 {: tsCauses}
 
+
 Procédez comme suit :
 {: tsResolve}
 
-  1. Sur la page Ajouter une carte de crédit, renseignez toutes les zones requises. 
-  2. Sélectionnez l'option indiquant que vous avez lu et accepté les dispositions d'IBM****, puis cliquez sur **Soumettre**. 
-  
+  1. Sur la page Ajout d'une carte de crédit, renseignez toutes les zones requises dans les sections relatives aux coordonnées, à l'adresse de contact et à l'adresse de facturation.
+  2. Sélectionnez **I have read and agree to IBM's Terms and Conditions**, puis cliquez sur **Soumettre**. La section **Select a payment method** s'affiche.
+  3. Entrez votre numéro de carte de crédit, la date d'expiration ainsi que le code de sécurité. Cliquez sur **Soumettre**.

@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-11-28"
+lastupdated: "2018-07-09"
 
 ---
 
@@ -15,9 +15,7 @@ lastupdated: "2018-11-28"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
-{:note: .note}
 {:new_window: target="_blank"}
-{:troubleshoot: data-hd-content-type='troubleshoot'}
 
 
 # {{site.data.keyword.Bluemix_notm}} 存取的疑難排解
@@ -26,12 +24,12 @@ lastupdated: "2018-11-28"
 在存取 {{site.data.keyword.Bluemix}} 時發生的一般問題，可能包括無法登入 {{site.data.keyword.Bluemix_notm}}，或是帳戶處於擱置狀態。在許多情況下，您可以遵照一些簡單的步驟，從這些問題回復。
 {:shortdesc}
 
-
-## 為什麼我的密碼不正確？
+## 密碼不正確
 {: #ts_logintobm}
-{: troubleshoot}
 
-您必須要有與 IBM ID 或 SoftLayer ID 相關聯的有效密碼，才能登入 {{site.data.keyword.Bluemix_notm}} 主控台。
+您必須要有與 IBM ID 相關聯的有效密碼，才能登入 {{site.data.keyword.Bluemix_notm}} 主控台。
+
+您也必須要有與 IBM ID 或已鏈結帳戶 ID 相關聯的有效密碼，才能透過[客戶入口網站](https://control.softlayer.com)登入。
 
 當您嘗試登入 {{site.data.keyword.Bluemix_notm}} 時，顯示下列錯誤訊息：
 {: tsSymptoms}
@@ -41,73 +39,108 @@ lastupdated: "2018-11-28"
 您用來登入 {{site.data.keyword.Bluemix_notm}} 的密碼無效。
 {: tsCauses}
 
-請使用下列其中一個選項：
+使用下列其中一個解決方案：
 {: tsResolve}
- * 移至[我的 IBM 設定檔頁面 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://myibm.ibm.com/dashboard/){: new_window}，以確認您使用的是有效的密碼。
- * 如果您忘記密碼，請按一下**忘記密碼**來重設密碼。 
- * 如果您忘記 IBM ID 或是持續發生密碼問題，請與 Worldwide IBM Registration Help Desk 聯絡以取得協助。
+ * 輸入正確的密碼。若要檢查您的 IBM ID 和密碼是否有效，您可以移至「我的 IBM 設定檔」頁面，按一下「登入」，然後在「登入」頁面上輸入您的 IBM ID 和密碼。
+ * 如果您忘記密碼，請按一下**忘記密碼**來重設密碼。然後，回到 [{{site.data.keyword.Bluemix_notm}} 主控台](https://console.{DomainName})或[客戶入口網站](https://control.softlayer.com)，再重新登入。
+ * 如果您忘記 IBM ID 或是持續發生密碼問題，請與全球的 IBM Registration Help Desk 聯絡以取得協助。
+ * 若要取得有效的 IBM ID 和密碼，請移至「我的 IBM 設定檔」頁面，然後按一下**登錄**。
 
-如果您登入 {{site.data.keyword.Bluemix_notm}}，而登入處理程序因任何原因（例如重設密碼）而中斷，請回到主控台，然後再重新開始登入處理程序
-{: tip}
+**附註：**如果您在登入頁面上，而登入處理程序因任何原因（例如，正在重設密碼）而中斷，請回到 [{{site.data.keyword.Bluemix_notm}} 主控台](https://console.{DomainName})或[客戶入口網站](https://control.softlayer.com)，然後再重新開始登入處理程序。
 
 
-## 為什麼我的 IBM ID 或電子郵件無法辨識？
+## 登入認證無效
+{: #ts_login_invalid_credentials}
+
+當您使用 IBM ID 登入時，顯示下列訊息：
+{: tsSymptoms}
+
+`提供的登入認證無效。如果您有與帳戶相關聯的 IBM ID，請在這裡登入`
+
+* 您已切換至 IBM ID，但嘗試使用先前的使用者名稱及密碼，透過[客戶入口網站](https://control.softlayer.com)登入。
+{: tsCauses}
+
+* 您嘗試透過[客戶入口網站](https://control.softlayer.com)登入，卻在使用者名稱及密碼欄位中輸入您的 IBM ID 和密碼。
+
+按一下訊息中的**在這裡登入**，或移至「IBM ID 帳戶登入」區段，然後按一下**使用 IBM ID 登入**。
+{: tsResolve}
+
+請不要使用用於前一個 ID 的**使用者名稱**及**密碼**欄位。
+
+
+## 無法辨識的 IBM ID 或電子郵件
 {: #ts_old_username}
-{: troubleshoot}
-
-若要順利登入您的電子郵件，您必須確定每個帳戶都有 IBM ID 鑑別。
 
 當您登入 {{site.data.keyword.Bluemix_notm}} 主控台時，顯示下列訊息：
 {: tsSymptoms}
 
 `We didn't recognize this IBMid or email.`
 
-您嘗試登入主控台，但未使用有效的 IBM ID。例如，您未輸入 IBM ID 的完整電子郵件位址，或是嘗試使用先前的使用者名稱和密碼。
+您嘗試登入 {{site.data.keyword.Bluemix_notm}} 主控台，但未使用有效的 IBM ID。例如，您未輸入 IBM ID 的完整電子郵件位址，或是嘗試使用先前的使用者名稱和密碼。
 {: tsCauses}
 
 您必須具有有效的 IBM ID 及密碼才能登入 {{site.data.keyword.Bluemix_notm}}。
 
- * 輸入 IBM ID 的完整電子郵件位址。
+ * 確定您輸入的是 IBM ID 的完整電子郵件位址。
  {: tsResolve}
- * 如果您是具有 SoftLayer ID 的 SoftLayer 使用者，則必須先在您具有存取權的每個帳戶中切換至 IBM ID 鑑別，然後才能登入。如需相關資訊，請參閱[切換至 IBM ID](/docs/account/softlayerlink.html)。
+ * 如果您是具有 SoftLayer ID 的 SoftLayer 使用者，則必須先在客戶入口網站中，於您可存取的每一個帳戶中切換至 IBM ID 鑑別，才能使用 IBM ID 鑑別登入。如需相關資訊，請參閱[切換至 IBM ID](/docs/account/softlayerlink.html)。
 
 
-## 為什麼我的 IBM ID 未與任何 {{site.data.keyword.Bluemix_notm}} 帳戶相關聯？
+## IBM ID 未與任何 IBM Cloud 帳戶相關聯
+{: #ts_login_noswitch}
+
+當您使用 IBM ID 登入時，顯示下列訊息：
+{: tsSymptoms}
+
+`You have reached this page because your authentication was successful, however, this IBMid is not associated with any IBM Cloud accounts. If you believe this to be in error, contact your Account Owner or Master User.`
+
+您已從[客戶入口網站](https://control.softlayer.com)使用有效的 IBM ID 進行登入，但未從客戶入口網站切換至 IBM ID 鑑別。
+{: tsCauses}
+
+請完成下列檢查：
+{: tsResolve}
+ * 與主要使用者或帳戶管理者聯絡，確定您可以切換至 IBM ID 鑑別。
+ * 確定您完成「切換至 IBM ID」步驟。請參閱[切換至 IBM ID](/docs/account/softlayerlink.html)。
+ * 確定您遵循**建立使用者 ID 與 IBM ID 的關聯**電子郵件中的動作。檢查您的收件匣及垃圾郵件資料夾，以尋找此電子郵件。若要重新取得電子郵件（例如，如果它已到期），請移至客戶入口網站中的「編輯使用者設定檔」頁面，然後按一下**重新傳送電子郵件**。或者，請與 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/bluemixsupport.com){: new_window} 聯絡。
+
+視帳戶的設定方式而定，您可能可以使用一些登入選項：
+ * 具有 SoftLayer ID 的 SoftLayer 使用者必須透過[客戶入口網站](https://control.softlayer.com)登入。
+ * 具有 IBM ID 並且具有（或沒有）已鏈結 {{site.data.keyword.Bluemix_notm}} 帳戶的 SoftLayer 使用者，可以透過[客戶入口網站](https://control.softlayer.com)登入來開啟客戶入口網站，或透過 [{{site.data.keyword.Bluemix_notm}} 主控台](https://console.{DomainName})來開啟「基礎架構」儀表板。
+
+
+## IBM ID 未與任何 {{site.data.keyword.Bluemix_notm}} 帳戶相關聯
 {: #ts_unabletologin}
-{: troubleshoot}
 
 當您登入 {{site.data.keyword.Bluemix_notm}} 時，顯示下列訊息：
 {: tsSymptoms}
 
 `You have reached this page because your authentication was successful, however, this IBMid is not associated with any  {{site.data.keyword.Bluemix_notm}} accounts.`
 
-您已從 [{{site.data.keyword.Bluemix_notm}} 主控台 ](https://{DomainName}){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示") 使用有效的 IBM ID 進行登入，但並未建立 {{site.data.keyword.Bluemix_notm}} 帳戶。
+您已從 [{{site.data.keyword.Bluemix_notm}} 主控台](https://console.{DomainName})使用有效的 IBM ID 進行登入，但尚未建立 {{site.data.keyword.Bluemix_notm}} 帳戶。
 {: tsCauses}
 
 若要建立 {{site.data.keyword.Bluemix_notm}} 帳戶，請遵循註冊處理程序。
 {: tsResolve}
 
+視帳戶的設定方式而定，您可能可以使用一些登入選項：
+ * 沒有已鏈結帳戶的 {{site.data.keyword.Bluemix_notm}} 使用者必須透過 {{site.data.keyword.Bluemix_notm}} 主控台登入。
+ * 具有已鏈結帳戶的 {{site.data.keyword.Bluemix_notm}} 使用者可以透過 [{{site.data.keyword.Bluemix_notm}} 主控台](https://console.{DomainName})或[客戶入口網站](https://control.softlayer.com)登入。
 
-## 當我使用 IBM ID 登入時，為什麼主控台未開啟？
+
+## 主控台未開啟
 {: #ts_login_stalls}
-{: troubleshoot}
 
-當您收到登入成功訊息，但未回到主控台時。
-
-當您使用 IBM ID 登入時，會顯示登入成功訊息，但您未回到 [{{site.data.keyword.Bluemix_notm}} 主控台](https://{DomainName}){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")。
+當您使用 IBM ID 登入時，會顯示登入成功訊息，但您未回到 [{{site.data.keyword.Bluemix_notm}} 主控台](https://console.{DomainName})或[客戶入口網站](https://control.softlayer.com)
 {: tsSymptoms}
 
-請使用下列其中一個選項：
+使用下列其中一個解決方案：
 {: tsResolve}
  * 關閉您的瀏覽器，清除快取和 Cookie，然後嘗試重新登入。
- * 從 [{{site.data.keyword.Bluemix_notm}} 主控台](https://{DomainName}){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示") 登入。
+ * 確定您是從 [{{site.data.keyword.Bluemix_notm}} 主控台](https://console.{DomainName})或[客戶入口網站](https://control.softlayer.com)登入，而不是直接從 IBM ID 鑑別服務登入。
 
 
-## 為什麼我的 IBM ID 登入未完成？
+## IBM ID 登入未完成
 {: #ts_login_ibmid}
-{: troubleshoot}
-
-如果您登入 F{site.data.keyword.Bluemix_notm}}，且 IBM ID 鑑別未完成，則表示服務可能有問題。 
 
 當您登入 {{site.data.keyword.Bluemix_notm}} 時，未完成以 IBM ID 進行鑑別。
 {: tsSymptoms}
@@ -115,13 +148,12 @@ lastupdated: "2018-11-28"
 IBM ID 鑑別服務可能有問題。
 {: tsCauses}
 
-請確定您可以登入 [IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")。如果可以，便是應用程式的問題，您可以稍後再嘗試登入主控台。如果無法登入該頁面，請洽詢 [IBM ID 服務台 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}。  
+檢查您是否能夠登入 [IBM 首頁 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/us-en/){: new_window}。如果可以，則是應用程式問題，您可以稍後重試。如果無法登入該頁面，則請洽詢[服務台 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}。
 {: tsResolve}
 
 
-## 在登錄帳戶之後，為什麼我無法立即登入？
+## 帳戶擱置
 {: #ts_accntpding}
-{: troubleshoot}
 
 如果您的帳戶處於擱置狀態，即無法登入 {{site.data.keyword.Bluemix_notm}}。
 
@@ -130,20 +162,18 @@ IBM ID 鑑別服務可能有問題。
 
 <code>您的帳戶處於擱置狀態。請稍候，最晚 24 小時即會收到電子郵件確認信，同時也請檢查垃圾郵件資料夾。如果您仍未收到確認電子郵件，請與 <a href="http://ibm.biz/bluemixsupport.com" target="_blank">{{site.data.keyword.Bluemix_notm}} 支援中心</a>聯絡。</code>
 
-當您登錄 {{site.data.keyword.Bluemix_notm}}「精簡」帳戶時，會收到一封電子郵件，其中包含一個鏈結，您必須按一下以確認登錄。  
+在登錄取得 {{site.data.keyword.Bluemix_notm}} 精簡帳戶之後，您會收到一封確認電子郵件。您必須按一下此封確認電子郵件中的鏈結，才能完成登錄程序。
 {: tsCauses}
 
-確認電子郵件會傳送至與您 IBM ID 相關聯的電子郵件位址。檢查您的收件匣和垃圾郵件資料夾。如果未收到確認電子郵件，請與 [{{site.data.keyword.Bluemix_notm}} 支援中心](/docs/get-support/howtogetsupport.html)聯絡。  
+確認電子郵件會寄送到您提供的電子郵件位址。檢查您的收件匣和垃圾郵件資料夾。如果您未收到確認電子郵件，請與 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/bluemixsupport.com){: new_window} 聯絡。  
 {: tsResolve}
 
-
-## 為什麼我會遇到無法載入的主控台頁面？
+## 無法載入 {{site.data.keyword.Bluemix_notm}} 頁面
 {: #ts_err}
-{: troubleshoot}
 
 當您使用 {{site.data.keyword.Bluemix_notm}} 主控台時，可能無法載入主控台頁面。反之，可能會看到錯誤訊息 BXNUI0001E 或 BXNUI0016E。
 
-您可能會看到下列其中一則錯誤訊息：
+當您使用 {{site.data.keyword.Bluemix_notm}} 主控台時，可能會看到下列其中一則錯誤訊息：
 {: tsSymptoms}
 
 `BXNUI0001E: The page wasn't loaded because {{site.data.keyword.Bluemix_notm}} didn't detect whether a session exists.`
@@ -158,4 +188,4 @@ IBM ID 鑑別服務可能有問題。
   * 使用瀏覽器的專用瀏覽模式。
   * 清除瀏覽器的 Cookie 及快取。
   * 使用不同的瀏覽器。如需 {{site.data.keyword.Bluemix_notm}} 所支援瀏覽器版本的相關資訊，請參閱 [{{site.data.keyword.Bluemix_notm}} 必要條件](/docs/overview/prereqs.html#prereqs)。
-  * 如果您已安裝 Cloud Foundry 指令行介面，請輸入 `ibmcloud cf apps` 指令，以查看您的應用程式是否在執行中。
+  * 如果您已安裝 Cloud Foundry 指令行介面，請輸入 `cf apps` 指令，以查看您的應用程式是否正在執行中。

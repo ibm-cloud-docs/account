@@ -19,7 +19,7 @@ lastupdated: "2018-11-19"
 # Video - Account Lite {{site.data.keyword.cloud_notm}}
 {: #show_me_video}
 
-L'account Lite è il nostro account gratuito che non scade mai. Cosa viene offerto in un account Lite? Scopri i servizi disponibili con i piani Lite gratuiti e altre funzioni di account in questo video.
+L'account Lite è il nostro account gratuito che non scade mai. Cosa offriamo in un account Lite? Scopri i servizi disponibili con i piani Lite gratuiti e altre funzioni di account in questo video.
 {: shortdesc}
 
 <p>

@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-11-18"
+lastupdated: "2018-09-14"
 
 ---
 
@@ -12,238 +12,169 @@ lastupdated: "2018-11-18"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
-{:faq: data-hd-content-type='faq'}
 
 # FAQ
 {: #accountfaqs}
 
 ## Como criar uma conta?
 {: #create-account}
-{: faq}
 
-Acesse [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo") e clique em **Criar uma conta do {{site.data.keyword.Bluemix_notm}}** para criar uma conta Lite que nunca expira. Veja [Conta Lite](/docs/account/index.html#liteaccount) para obter mais detalhes sobre os recursos incluídos.
+Acesse https://console.bluemix.net e clique em **Criar uma conta grátis** para criar uma conta Lite que nunca expira. 
 
-
-## Como resolver erros que ocorrem ao criar minha conta?
-{: #account-error}
-{: faq}
-
-Será possível criar um caso de suporte se você obtiver um erro ao tentar criar sua conta. Clique em **Suporte** na barra de menus do console do {{site.data.keyword.Bluemix}}. Em seguida, clique em **Criar novo caso** na seção Precisa de mais ajuda. Após o caso ser aberto, você recebe uma notificação por e-mail. Siga as instruções para comunicação adicional sobre o problema.
-
+Consulte [Conta Lite](/docs/account/index.html#liteaccount) para obter mais detalhes sobre os recursos incluídos.
 
 ## O que é Cloud Foundry?
 {: #cloud-foundry}
-{: faq}
 
-O Cloud Foundry é uma opção de plataforma como serviço (PaaS) de software livre disponível por meio do {{site.data.keyword.Bluemix_notm}} Public para construir e implementar aplicativos na nuvem. As organizações e os espaços do Cloud Foundry são usados para organizar recursos e apps disponíveis em regiões específicas. 
+O Cloud Foundry é uma opção de plataforma como serviço (PaaS) de software livre disponível por meio do {{site.data.keyword.Bluemix_notm}} Public para construir e implementar aplicativos na nuvem. As organizações e os espaços do Cloud Foundry são usados dentro de uma conta do {{site.data.keyword.Bluemix_notm}} para organizar e trabalhar com recursos e apps disponíveis em regiões específicas. 
 
 Para obter mais informações sobre o gerenciamento de organizações e espaços, consulte [Incluindo organizações e espaços](/docs/account/orgs_spaces.html#orgsspacesusers). Se você estiver interessado em aprender mais sobre como fornecer acesso a recursos em um espaço do Cloud Foundry, consulte [Acesso ao Cloud Foundry](/docs/iam/cfaccess.html#cfaccess).
 
 ## Posso mover uma organização para outra conta?
 {: #move-org-diff-account}
-{: faq}
 
-Atualmente, não é possível migrar uma organização para uma conta diferente. 
+Não é possível migrar uma organização para uma conta diferente. 
+
+## O que poderei fazer se receber um erro durante a criação da minha conta?
+{: #account-error}
+
+Se você encontrar um erro ao tentar criar sua conta, será possível abrir um chamado de suporte.
+
+* Para abrir um chamado de suporte por meio do centro de suporte, clique em **Abrir um chamado** na seção Obter ajuda.
+* Para abrir um chamado de suporte por meio da barra de menus do console do IBM Cloud, clique em **Suporte** &gt; **Incluir chamado**.
+
+Depois que o chamado de suporte for aberto, você receberá uma notificação por e-mail para o chamado momentaneamente. Siga as instruções no e-mail para comunicação adicional sobre o problema.
 
 ## Quais regiões do Cloud Foundry posso usar?
 {: #whichregions}
-{: faq}
 
-Em uma conta Lite, é possível trabalhar em somente uma região. Em uma conta Pré-paga ou de Assinatura, é possível acessar todas as regiões disponíveis.
+Em uma conta Lite, é possível trabalhar em somente uma região. Em uma conta pré-paga ou de assinatura, é possível acessar todas as regiões.
 
 ## O que é um plano de precificação Lite para serviços?
 {: #whatisliteplan}
-{: faq}
 
-Um plano Lite é um plano de serviço baseado em cota grátis. É possível usar um plano Lite de serviço para construir um app sem incorrer em quaisquer encargos. Um plano Lite pode ser oferecido em um ciclo mensal que é renovado a cada mês ou em uma base de uso único. É possível ter uma instância por serviço de plano Lite. Os planos de precificação Lite são oferecidos em todas as contas. Para obter mais informações sobre contas Lite, veja [Tipos de conta](/docs/account/index.html#accounts).
+Um plano Lite é um plano de serviço baseado em cota grátis. É possível usar um plano Lite de serviço para construir um app sem incorrer em quaisquer encargos. O plano Lite pode ser oferecido em um ciclo mensal (renovado a cada mês) ou em uma base de uso único. É possível ter uma instância por serviço de plano Lite. Os planos de precificação Lite são oferecidos em todas as contas.
 
 ## O que acontece quando a instância do plano Lite atinge a minha cota mensal?
 {: #monthlyquota}
-{: faq}
 
 Atingir qualquer limite de cota para instâncias do plano Lite suspende o serviço para esse mês. Limites de cota são por organização, não por instância. Novas instâncias que são criadas na mesma organização refletem qualquer uso de instâncias anteriores. Os
 limites de cota são reconfigurados no primeiro dia de cada mês.
 
 ## Quantos grupos de recursos, organizações ou espaços posso criar?
 {: #resourcelimit}
-{: faq}
 
-Se você tiver uma conta faturável, não haverá limite para o número de grupos de recursos, organizações ou espaços que podem ser criados dentro de sua conta. No entanto, se você tiver uma conta Lite, estará limitado a uma organização e um grupo de recursos.
+Se você tiver uma conta faturável, não haverá limite no número de grupos de recursos, organizações ou espaços que podem ser criados em sua conta. No entanto, se você tiver uma conta Lite, estará limitado a uma organização e um grupo de recursos.
 
 ## Como fazer upgrade ou mudar meu tipo de conta?
 {: #changeacct}
-{: faq}
 
-* Para converter sua avaliação de 30 dias em uma conta Lite, entre em contato com [Vendas do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}. Depois de confirmar a elegibilidade, a equipe de Vendas compartilha um link exclusivo que pode ser usado para tentar converter sua conta. A conversão bem-sucedida não é garantida, pois as contas Lite não são totalmente compatíveis com as avaliações de 30 dias.  
-* Para fazer upgrade de uma conta Lite para uma Pré-paga, acesse **Gerenciar > Conta** e selecione **Configurações da conta**.
-* Para fazer upgrade de uma conta Lite para uma de Assinatura, acesse **Gerenciar > Conta** e selecione **Configurações da conta**.
-* Para converter a conta Pré-paga em uma conta de Assinatura, entre em contato com [Vendas do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
+* Para converter sua avaliação de 30 dias em uma conta Lite, entre em contato com [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg). Depois de confirmar a elegibilidade, a equipe de Vendas compartilha um link exclusivo que pode ser usado para tentar converter sua conta. A conversão bem-sucedida não é garantida, pois as contas Lite não são totalmente compatíveis com as avaliações de 30 dias.  
+* Para fazer upgrade de uma conta Lite para uma conta pré-paga, acesse **Gerenciar > Faturamento e uso > Faturamento** e clique em **Incluir cartão de crédito**.
+* Para fazer upgrade de uma conta Lite para uma da Assinatura, acesse **Gerenciar > Faturamento e uso > Faturamento** e clique em **Saiba mais**.
+* Para converter sua conta pré-paga para uma conta de assinatura, entre em contato com [{{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} Sales![Ícone de link externo](../icons/launch-glyph.svg).
 
-## Se eu fizer upgrade da minha conta Lite, será possível continuar a usar minhas instâncias existentes?
+## Se eu fizer upgrade da minha conta Lite, poderei continuar usando as instâncias existentes?
 {: #nochange}
-{: faq}
 
 Sim, é possível fazer upgrade para uma conta faturável e continuar a usar as instâncias que você criou com sua conta Lite.
 
-## Como fazer upgrade da minha conta Pré-paga?
-{: #nochange}
-{: faq}
-
-Para fazer upgrade da conta Pré-paga para uma conta de Assinatura, entre em contato com [Vendas IBM](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo").
-
 ## Como atualizar meu cartão de crédito?
 {: #updatepayment}
-{: faq}
 
-É possível atualizar facilmente o método de pagamento que está associado à sua conta faturável. No console, acesse **Gerenciar > Faturamento e uso > Pagamentos > Método de pagamento**. 
+É possível atualizar facilmente o método de pagamento que está associado à sua conta faturável. No console, acesse **Gerenciar > Faturamento e uso > Modificar método de pagamento**.
 
 ## Como reconfiguro a minha senha? 
 {: #reset-password}
-{: faq}
 
-Para reconfigurar sua senha da conta, acesse o ícone Avatar ![Ícone Avatar](../icons/i-avatar-icon.svg) > **Perfil e configurações** e selecione **Configurações de login**. Em seguida, clique em **Mudar ou reconfigurar** no tile de informações sobre o usuário da conta. 
+Dependendo de qual senha você está procurando reconfigurar, revise as opções a seguir: 
 
-Para reconfigurar sua senha da VPN, conclua as etapas a seguir:
-
-  1. Acesse **Gerenciar > Acesso (IAM)** e selecione **Usuários**. 
-  2. Selecione o usuário. 
-  3. Na seção de sub-redes VPN, clique no ícone Editar ![Ícone Editar](../icons/icon_write.svg) para inserir uma nova senha da VPN. 
-  5. Clique em **Aplicar**. 
+* Se você tem um ID e uma senha da conta SoftLayer, veja [Gerenciando senhas](/docs/customer-portal/cpmanacctmanpw.html#cp_reset-your-password). 
+* Para reconfigurar sua senha de VPN, veja [Atualizar a senha de VPN de um usuário](/docs/infrastructure/iaas-vpn/update-password.html#update-a-user-s-vpn-password).
+* Para reconfigurar sua senha do IBMid, veja [Esqueci a senha](https://www.ibm.com/account/us-en/forgot/forgot-password-start.html).
 
 ## Como cancelar minha conta?
 {: #cancelaccount}
-{: faq}
 
-Se você tiver um tipo de conta elegível, acesse **Gerenciar** > **Conta** > **Configurações da conta** e clique em **Desativar conta**. 
-
-![Captura de tela de configurações da conta.](images/cancel-faq3.svg "Captura de tela de configurações da conta")
-
-Se você acessar a página **Configurações da conta** e a opção **Desativar conta** não for exibida, será possível entrar em contato ligando para 1-866-325-0045 e selecionando a terceira opção ou abrir um [caso de suporte](https://{DomainName}/unifiedsupport/supportcenter){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg).
+No console, acesse a página **Gerenciar > Faturamento e uso > Faturamento** e clique em **Desativar conta**.
 
 ## Como excluir minha conta?
 {: #deleteaccount}
-{: faq}
 
-Entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} para abrir um caso de suporte e solicitar para excluir sua conta. Se você tem dados que estão associados à sua conta antiga e deseja salvá-los e movê-los para uma nova conta, inclua essas informações em seu e-mail.
+Deve-se entrar em contato com o suporte do IBM Cloud para abrir um chamado de suporte e solicitar a exclusão da sua conta. Se você tiver dados que estão associados à sua conta antiga que você deseja salvar e mover para uma nova conta, inclua essas informações em seu e-mail.
 
 ## Por que minha conta está desativada?
 {: #account-deactivated}
-{: faq}
 
-Sua conta provavelmente está desativada porque ela foi cancelada por um usuário autorizado ou a conta foi suspensa.  
+Sua conta provavelmente está desativada porque um usuário autorizado a cancelou ou a conta foi suspensa.  
 
-A critério da IBM, as contas que violam os comportamentos de uso aceitáveis dos serviços do {{site.data.keyword.Bluemix_notm}} podem ser desativadas sem aviso. Alguns serviços poderão ser restaurados se os usuários corrigirem seus comportamentos de uso depois de serem notificados sobre a ação ofensiva. 
+A critério da IBM, os usuários que violam os comportamentos de uso aceitáveis dos serviços do {{site.data.keyword.Bluemix_notm}} podem ser desativados sem aviso prévio. Alguns serviços poderão ser restaurados se os usuários corrigirem seus comportamentos de uso depois de serem notificados sobre a ação ofensiva. Caso contrário, as contas poderão ser suspensas ou finalizadas.
 
 ## Como obter suporte?
 {: #contactsupport}
-{: faq}
 
-Clique em **Suporte** na barra de menus do console para acessar o Centro de Suporte.
+Para obter ajuda sobre como deixar o {{site.data.keyword.Bluemix_notm}} funcionando ou navegar no {{site.data.keyword.Bluemix_notm}}, inicie uma conversa conosco usando o ícone de bate-papo no console.
+
+Também é possível conferir vários recursos úteis que estão disponíveis no [Centro de suporte ![Ícone de link externo](../icons/launch-glyph.svg)](https://console.bluemix.net/unifiedsupport/supportcenter){: new_window}. Desse ponto, é possível acessar o Stack Overflow para postar uma pergunta em nossa comunidade do desenvolvedor. Também é possível enviar um chamado de suporte.
 
 ## Posso inscrever-me para uma avaliação grátis?
 {: #freetrial}
-{: faq}
 
-As contas para teste do {{site.data.keyword.Bluemix_notm}} estão disponíveis para professores e estudantes de instituições acadêmicas credenciadas. Para se qualificar para uma conta para teste, acesse [Aproveitar o poder da IBM![Ícone de link externo](../icons/launch-glyph.svg)](https://onthehub.com/ibm/){: new_window} e valide suas credenciais da instituição.
+As contas para teste do {{site.data.keyword.Bluemix_notm}} estão disponíveis para professores e estudantes de instituições acadêmicas credenciadas. Para obter uma conta para teste, acesse [onthehub.com/ibm ![Ícone de link externo](../icons/launch-glyph.svg)](http://onthehub.com/ibm){: new_window} e valide suas credenciais da instituição.
 
 ## Depois de vincular minha conta, como efetuar login?
 {: #al_login}
-{: faq}
 
 Depois de vincular a conta, use o seu IBMid para efetuar login no console do {{site.data.keyword.Bluemix}}.
 
 ## Depois de vincular minha conta, qual é o impacto no meu suporte?
 {: #al_support}
-{: faq}
 
 Depois de vincular sua conta, você mantém o mesmo nível de suporte de quando inclui a plataforma {{site.data.keyword.Bluemix_notm}} em sua conta.
 
 ## Há outras maneiras para obter ajuda com a vinculação de minha conta? 
 {: #al_morehelp}
-{: faq}
 
-  1. Veja o blog [Etapas para vincular suas contas IaaS e PaaS](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo") para obter informações úteis.
-  2. No portal do cliente do {{site.data.keyword.BluSoftlayer_full}}, abra um **bate-papo em tempo real de vendas** para fazer perguntas de conta.
-  3. Abra um chamado por meio do portal do cliente. Selecione **Suporte** > **Incluir chamado** e, em seguida, no campo **Assunto**, selecione **Solicitação de contabilidade** para rotear sua pergunta de conta para a equipe de suporte correta.
+  1. Para obter mais informações, consulte o [blog Etapas para vincular as contas IaaS e PaaS](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/).
+  2. No portal do cliente da infraestrutura do {{site.data.keyword.BluSoftlayer_full}}, abra um **Bate-papo de vendas em tempo real** para fazer perguntas sobre a conta.
+  3. Abra um chamado no portal do cliente da infraestrutura do {{site.data.keyword.BluSoftlayer_full}}. Selecione **Suporte** > **Incluir chamado** e, em seguida, no campo **Assunto**, selecione **Solicitação de contabilidade** para rotear sua pergunta da conta à equipe de suporte correta.
+
+Se você for a conta mestre, para obter mais informações sobre como gerenciar os usuários, consulte [Trabalhando com usuários](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage).
 
 ## Como vincular minha conta se eu tiver várias contas?
 {: #al_multacct}
-{: faq}
 
-Se você tem múltiplas contas do SoftLayer, vincule as que têm uma conta de plataforma {{site.data.keyword.Bluemix_notm}} correspondente e um IBMid associado.
+Se você tem várias contas do SoftLayer, deve-se vincular as contas que têm uma conta da plataforma {{site.data.keyword.Bluemix_notm}} correspondente e um IBMid associado.
 
 Se você não tem uma conta da plataforma {{site.data.keyword.Bluemix_notm}} correspondente e uma conta IBMid associada, uma nova conta do SoftLayer pode ser criada para vinculá-las.
 
-## Há incentivos para vincular minhas contas? 
+## Há incentivos para vincular minhas contas? 	
 {: #al_incent}
-{: faq}
 
 Ao vincular suas contas, é possível usar um crédito promocional de US$ 200 para experimentar os serviços {{site.data.keyword.Bluemix_notm}}. 
 
 Para saber mais sobre o crédito promocional de U$ 200, consulte [Conta pré-paga](/docs/account/index.html#paygo). 
 
-## O que a inclusão dos serviços de plataforma do {{site.data.keyword.Bluemix_notm}} em minha conta do SoftLayer significa? 
-{: #al_owaffslacct}
-{: faq}
-
-Isso significa que a conta tem acesso a todas as ofertas da plataforma {{site.data.keyword.Bluemix_notm}}. Depois de incluir a oferta da plataforma {{site.data.keyword.Bluemix_notm}} em sua conta, a sua conta mestre deve permitir que o usuário tenha acesso à oferta.
-
-Para obter mais informações sobre como ser uma conta mestre, veja [Trabalhando com usuários](/docs/iam/iamusermanage.html#iamusermanage) para obter mais informações.
-
-## Como a vinculação de contas afeta meu ID da conta principal do SoftLayer? 
-{: #al_howaffslmastacct}
-{: faq}
-
-Ainda é possível usar o ID para sua conta do SoftLayer para conectar-se ao portal do cliente porque o console do {{site.data.keyword.Bluemix_notm}} é acessível com IBMids.
-
-## Como alterno entre múltiplas contas?
+## Como alternar entre várias contas?
 {: #switch-between-accounts}
-{: faq}
 
-Se você tiver mais de uma conta, será possível clicar no nome da conta para selecionar outra conta para a qual tenha acesso.  
-
-![Captura de tela do alternador de conta.](images/account-faq.svg "Captura de tela do alternador de conta")
+Para alternar entre as contas, acesse o ícone do **{{site.data.keyword.avatar}}** ![ícone de Avatar](../icons/i-avatar-icon.svg), clique no menu **Conta** e selecione outra conta. 
 
 ## Posso alternar proprietários de conta? 
 {: #switch-account-owners}
-{: faq}
 
-Não é possível alternar o proprietário de uma conta, mas é possível mudar proprietários de recursos. Para saber mais sobre como alternar a propriedade, veja [Transferindo a propriedade de um recurso privado](/docs/account/owners.html#how-to-change-the-owner-of-a-catalog-resource).
+Não é possível alternar o proprietário de uma conta, mas é possível mudar proprietários de recursos. Para saber mais sobre alternância de propriedade, consulte [Mudando a propriedade do recurso privado](/docs/account/owners.html#how-to-change-the-owner-of-a-catalog-resource).
 
-## O {{site.data.keyword.Bluemix_notm}} suporta o registro em lote de usuários?
-{: #batch-registration}
-{:faq}
+## O que a inclusão dos serviços de plataforma do {{site.data.keyword.Bluemix_notm}} em minha conta do SoftLayer significa? 	
+{: #al_owaffslacct}
 
-Ao registrar usuários para {{site.data.keyword.Bluemix_notm}}, deve-se registrar cada usuário individualmente. O {{site.data.keyword.Bluemix_notm}} não suporta registro de lote de usuários. 
+Isso significa que a conta tem acesso a todas as ofertas da plataforma {{site.data.keyword.Bluemix_notm}}. Depois de incluir na sua conta a oferta da plataforma {{site.data.keyword.Bluemix_notm}}, a conta mestre precisará permitir que o usuário tenha acesso à oferta.
 
-Acesse [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com) e clique em **Criar uma conta do {{site.data.keyword.Bluemix_notm}}**. Em seguida, conclua o formulário de registro da conta para cada usuário individual.	
+Se você for a conta mestre, para obter mais informações, consulte [Trabalhando com usuários](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage).
 
-## O que são tags?
-{: #know-about-tags}
-{: faq}
+## Como a vinculação da conta afeta meu ID da conta principal do SoftLayer? 	
+{: #al_howaffslmastacct}
 
-É possível usar tags para organizar e visualizar recursos em sua conta, filtrando tags de sua lista de recursos. Para obter mais informações, veja [Recursos de identificação](/docs/resources/tagging_resources.html#tagging).
+Ainda é possível usar o ID para a sua conta do SoftLayer para se conectar ao portal do cliente da infraestrutura do {{site.data.keyword.BluSoftlayer_full}} porque o console do {{site.data.keyword.Bluemix_notm}} é acessível por meio dos IBMids.
 
-## Quem pode visualizar as tags em uma conta? 
-{: #tags-visibility-account}
-{: faq}
 
-As tags são visíveis em toda a sua conta. Se você tiver permissão para ver um recurso, será possível visualizar todas as tags que estiverem anexadas. Para obter mais informações, veja [Concedendo aos usuários acesso a recursos de tag](/docs/resources/grant-tag-access.html#access). 
-
-## Quais permissões eu preciso para incluir ou remover tags?
-{: #permissions-add-remove-tags}
-{: faq}
-
-Deve-se ter pelo menos o Editor para recursos ativados pelo IAM ou a função de desenvolvedor em um espaço do Cloud Foundry em um recurso para incluir ou remover tags nesse recurso. Para obter mais informações, veja [Concedendo aos usuários acesso a recursos de tag](/docs/resources/grant-tag-access.html#access).
-
-## Posso excluir minha tag?
-{: # delete-tag}
-{: faq}
-
-Antes que seja possível excluir uma tag, deve-se removê-la de todos os recursos. Se ainda assim não for possível excluí-la, a tag poderá ser anexada a um recurso para o qual você não tenha permissão para visualizar. A mesma tag pode ser anexada a vários recursos por diferentes usuários na mesma conta de cobrança. Os usuários não têm a mesma visibilidade em todos os recursos na conta.
-
-## Posso renomear uma tag?
-{: #rename-tag}
-{: faq}
-
-Não é possível editar o nome de uma tag. Para renomear uma tag, remova-a e redesigne o recurso a uma nova tag.  
