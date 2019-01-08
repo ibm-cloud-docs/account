@@ -185,7 +185,7 @@ You might notice that several apps share a URL in {{site.data.keyword.Bluemix_no
 This problem might happen when you assign the same URL route for different apps in a space.
 {: tsCauses}
 
-For example, you push the myApp1 app to {{site.data.keyword.Bluemix_notm}} and set the domain to `mynewapp.stage1.mybluemix.net`. Then, you push another myApp2 app to the same space and set one of its URL routes to `mynewapp.stage1.mybluemix.net`. The route is now mapped to both apps.
+For example, you push the myApp1 app to {{site.data.keyword.Bluemix_notm}} and set the domain to `mynewapp.mybluemix.net`. Then, you push another myApp2 app to the same space and set one of its URL routes to `mynewapp.mybluemix.net`. The route is now mapped to both apps.
 
 This is supported behavior, and you can use this practice to achieve zero downtime for your app upgrade. For more information, see [How to ensure zero downtime](/docs/overview/zero_downtime.html#zero-downtime). 
 {: tsResolve}
