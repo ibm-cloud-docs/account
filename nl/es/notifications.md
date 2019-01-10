@@ -25,7 +25,7 @@ Puede establecer notificaciones de correo electrónico para el mantenimiento pla
 ## Establecimiento de notificaciones de plataforma
 {: #platform}
 
-Pulse **Gestionar > Cuenta > Notificaciones de plataforma ** para establecer notificaciones de correo electrónico para el mantenimiento planificado y los incidentes de {{site.data.keyword.Bluemix_notm}}. Puede seleccionar o deseleccionar cada opción para habilitar o inhabilitar las notificaciones por correo electrónico.
+Pulse **Gestionar > Cuenta > Notificaciones de plataforma** para establecer notificaciones de correo electrónico para el mantenimiento planificado y los incidentes de {{site.data.keyword.Bluemix_notm}}. Puede seleccionar o deseleccionar cada opción para habilitar o inhabilitar las notificaciones por correo electrónico.
 
 ## Establecimiento de notificaciones de gastos
 {: #spending}

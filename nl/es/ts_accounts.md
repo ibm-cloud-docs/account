@@ -56,12 +56,12 @@ Si tiene una cuenta Lite, puede actualizarla a una cuenta facturable para accede
 Puede recibir el siguiente mensaje de error al intentar crear una instancia de plan Lite:
 {: tsSymptoms}
 
-`No es posible aprovisionar una nueva instancia de Lite`
+`No es posible suministrar una nueva instancia de Lite`
 
 Hay un límite de una instancia de plan Lite para mantener estos planes gratuitos.
 {: tsCauses}
 
-Se pueden crear más instancias del servicio seleccionando uno de los planes de servicios facturables, que también están disponibles en las cuentas facturables. Para actualizar a una cuenta facturable desde la consola, vaya a la página **Gestionar > Facturación y uso > Facturación ** y, a continuación, pulse **Añadir tarjeta de crédito**.
+Se pueden crear más instancias del servicio seleccionando uno de los planes de servicios facturables, que también están disponibles en las cuentas facturables. Para actualizar a una cuenta facturable desde la consola, vaya a la página **Gestionar > Facturación y uso > Facturación** y, a continuación, pulse **Añadir tarjeta de crédito**.
 {: tsResolve}
 
 Si no desea actualizar la cuenta Lite y ya no está utilizando la instancia de servicio Lite existente, puede suprimir dicha instancia de plan Lite desde el panel de control y, a continuación, crear una nueva instancia.

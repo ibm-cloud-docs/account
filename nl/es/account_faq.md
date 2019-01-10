@@ -136,7 +136,7 @@ Después de enlazar su cuenta, mantendrá el mismo nivel de soporte que el que t
 
   1. Consulte el blog de [Pasos para enlazar sus cuentas IaaS y PaaS](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/) para obtener más información.
   2. Desde el portal de clientes de infraestructura de {{site.data.keyword.BluSoftlayer_full}}, abra un **Chat en directo para ventas** para realizar preguntas sobre la cuenta.
-  3. Abra un tíquet desde el portal de clientes de infraestructura de {{site.data.keyword.BluSoftlayer_full}}. Seleccione **Soporte** > **Añadir tíquet** y, a continuación, en el campo **Asunto**, seleccione ** Solicitud de cuenta** para dirigir su pregunta relacionada con la cuenta al equipo de soporte adecuado.
+  3. Abra un tíquet desde el portal de clientes de infraestructura de {{site.data.keyword.BluSoftlayer_full}}. Seleccione **Soporte** > **Añadir tíquet** y, a continuación, en el campo **Asunto**, seleccione **Solicitud de cuenta** para dirigir su pregunta relacionada con la cuenta al equipo de soporte adecuado.
 
 Si usted es el maestro de la cuenta, consulte [Trabajar con usuarios](https://console.bluemix.net/docs/iam/iamusermanage.html#iamusermanage) para obtener más información sobre cómo gestionar usuarios.
 
