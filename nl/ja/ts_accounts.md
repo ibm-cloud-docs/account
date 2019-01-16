@@ -109,7 +109,7 @@ lastupdated: "2018-10-24"
 {{site.data.keyword.Bluemix_notm}} アカウントがキャンセルされたか中断状態の場合、そのアカウントの状況は非アクティブになります。
 {: tsCauses}
 
-アカウントを再アクティブ化するには、[サポート・センター](https://cloud.ibm.com/unifiedsupport/supportcenter){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") から Case をオープンします。Case には以下の情報を含めてください。
+アカウントを再アクティブ化するには、[サポート・センター](https://cloud.ibm.com/unifiedsupport/supportcenter){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") からケースをオープンします。ケースには以下の情報を含めてください。
 {: tsResolve}
 
   * {{site.data.keyword.Bluemix_notm}} へのログインに使用している IBM ID。
@@ -151,7 +151,7 @@ lastupdated: "2018-10-24"
 
 自分がコラボレーターでありメンバーではないためにユーザーを招待できない場合、古い {{site.data.keyword.Bluemix_notm}} アカウントを削除してから、招待を受けて組織のメンバーとしてアカウントに参加する必要があります。 古いアカウントを削除してメンバーとしてアカウントに参加するには、以下のステップを実行してください。
 
-  1. [{{site.data.keyword.Bluemix_notm}} サポート ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/unifiedsupport/supportcenter){: new_window} に連絡してサポート Case をオープンし、アカウントの削除を依頼します。古いアカウントに関連付けられているデータで、保存して新規アカウントに移行したいものがあれば、その情報を E メールに記載してください。
+  1. [{{site.data.keyword.Bluemix_notm}} サポート ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/unifiedsupport/supportcenter){: new_window} に連絡してサポート・ケースをオープンし、アカウントの削除を依頼します。古いアカウントに関連付けられているデータで、保存して新規アカウントに移行したいものがあれば、その情報を E メールに記載してください。
   2. 自分のアカウントが削除された後、組織管理者の役割を持つユーザーに、自分を組織管理者として組織に招待してもらいます。その後、招待から {{site.data.keyword.Bluemix_notm}} に登録します。
 
 
