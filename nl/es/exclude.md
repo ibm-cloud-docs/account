@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-11-28"
 
 ---
 
@@ -11,57 +11,57 @@ lastupdated: "2018-08-02"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
 
-# Cómo ocultar un recurso público a usuarios de su cuenta
+
+# Cómo ocultar un recurso público a usuarios
 {: #exclude}
 
-Si es un administrador de la cuenta, puede ocultar un recurso público a todos los usuarios de la cuenta. Añada el recurso a una lista de exclusión con la [interfaz de línea de mandatos](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) de `ibmcloud`.
-{:shortdesc: .shortdesc}
+Como administrador de su cuenta de {{site.data.keyword.Bluemix}}, puede ocultar un recurso público a los usuarios que tengan acceso a la cuenta. Puede ocultar los recursos para mantener la información confidencial oculta de los usuarios no autorizados o es posible que solo un número determinado de personas necesite acceder a parte de la información.
+{:shortdesc}
 
-**Nota:** Ocultar un recurso en el catálogo no lo eliminará de la CLI de Cloud Foundry ni de las listas de suministro de servicio disponibles a través de la navegación global, como Finanzas, Móvil, Watson y Apps web.
+Ocultar un recurso en el catálogo no lo eliminará de la interfaz de línea de mandatos (CLI) de Cloud Foundry o de la lista de suministro de servicios disponible en la navegación de la consola de {{site.data.keyword.Bluemix_notm}}, como Finanzas, Móvil, Watson y Apps web.
+{: note}
 
-## ¿Cómo sé si tengo acceso?
-{: #find-access}
+Puede utilizar la [interfaz de línea de mandatos (CLI)](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) o consola de {{site.data.keyword.Bluemix}} para determinar si tiene acceso para permitir a los usuarios ver un recurso privado que se añadió a la cuenta. Si es propietario de la cuenta, puede dar acceso a un usuario a su cuenta desde la consola asignando una política de acceso. Para obtener más información, consulte [Gestión del acceso a su cuenta](access.html).
 
-Puede utilizar la CLI o la interfaz de usuario de identidad y acceso para determinar si tiene acceso para permitir a los usuarios ver un recurso privado que se añadió a la cuenta. Si es propietario de la cuenta, puede dar acceso a un usuario a su cuenta a través de la interfaz de usuario de Identity and Access Management asignando una política de acceso. Para obtener más información, consulte [Gestión del acceso a su cuenta](access.html).
-
-## Paso 1: Buscar un recurso
+## Búsqueda de recursos
 {: #find-resource}
 
-Indique `ibmcloud catalog search <service-id or service-name>` para buscar un recurso. Sustituya service-id o service-name con un ID o nombre de recurso. Busque el ID o el nombre del servicio que desea ocultar en la información que se devuelve.
+Ejecute el mandato `ibmcloud catalog search <service-id or service-name>` para buscar un recurso. Sustituya las variables service-id o service-name con el nombre de recurso o ID. Utilice la información que se devuelve para buscar el ID o nombre del servicio que desea ocultar.
 
-## Paso 2: Obtener los detalles de ese servicio
+## Obtención de los detalles del recurso
 
-Indique `ibmcloud catalog service <service-id or service-name>`. Con lo que ha encontrado en el mandato anterior, utilice este mandato para examinar más detalles del recurso. Con la información que devuelve, puede ver la jerarquía, que muestra los recursos hijo de los elementos del recurso.
+Ejecute el mandato `ibmcloud catalog service <service-id or service-name>`. Con la información que se devuelve de la ejecución del mandato anterior, utilice el mandato para obtener más detalles del recurso. Con la información que se devuelve, puede visualizar la jerarquía, que muestra los recursos hijo de los elementos del recurso.
 
-## Paso 3: Ocultar el recurso
+## Cómo ocultar el recurso
 {: #vis-exc}
 
-Especifique el mandato siguiente para evitar que su cuenta vea un recurso público.
+Ejecute el mandato siguiente para evitar que los usuarios de su cuenta visualicen un recurso público.
 
 `ibmcloud catalog entry-visibility-set <resource-id> —-excludes-add <account-id or account-email>`
 
-Detrás del distintivo `excludes`, puede añadir una lista separada por comas de correos electrónicos o ID de cuenta asociados con cuentas.
+Puede añadir una lista separada por comas de correos electrónicos o un ID de cuenta asociado con las cuentas después del indicador de exclusión.
 
-Después de ejecutar el mandato, el proceso para ocultar el recurso tarda 30 minutos. Después de 30 minutos, cierre la sesión y vuelva a su cuenta para ver el recurso oculto.
+Después de ejecutar el mandato, el proceso para ocultar el recurso tarda aproximadamente 30 minutos. Después de 30 minutos, cierre la sesión y vuelva a iniciarla en su cuenta para ver el recurso oculto.
 
-**Nota:** Las entradas que oculta no están disponibles desde la interfaz de usuario ni la CLI de {{site.data.keyword.Bluemix}}. Las entradas ocultas todavía son visibles en el mercado de Cloud Foundry, pero no se puede suministrar un plan oculto desde Cloud Foundry. Los administradores de la cuenta excluida aún pueden ver el recurso.
+Las entradas que oculta no están disponibles en la consola o CLI. Los administradores de la cuenta excluida aún pueden ver el recurso.
+{: note}
 
-## Eliminar una cuenta de la lista de exclusión
+## Cómo eliminar una cuenta de una lista de exclusión
 {: #remove-exclude}
 
-Especifique el mandato siguiente para eliminar un ID de cuenta o un correo electrónico de la lista de exclusión.
+Ejecute el mandato siguiente para eliminar un ID de cuenta o un correo electrónico de la lista de exclusión.
 
 `ibmcloud catalog entry-visibility-set <service-id> —-excludes-remove <account-id or account-email>`
 
-## Ejemplo de gestión de visibilidad de objetos hijo
+
+## Ejemplo: Gestión de la visibilidad de objetos hijo
 {: #child}
 
-Puede gestionar la visibilidad de todos los recursos. Cada recurso hijo tiene sus características visibilidad individuales.
+Puede gestionar la visibilidad de todos los recursos. Cada recurso hijo tiene sus características visibilidad individuales. En este ejemplo se muestra cómo puede excluir una cuenta del servicio Cloudant público.
 
-En este ejemplo, puede excluir una cuenta del servicio Cloudant público.
-
-Si indica `ibmcloud catalog service cloudant`, puede ver los hijos del recurso.
+Ejecute el mandato `ibmcloud catalog service cloudant` para ver todos los hijos del recurso.
 
 ```
 ID                 cloudant
@@ -87,6 +87,6 @@ Children           Name                                          Kind         ID
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-Busque el ID de un objeto y excluya una cuenta con `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>`.
+Busque el ID de un objeto y excluya una cuenta ejecutando el mandato `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>`.
 
-Para obtener más información sobre cómo funciona la visibilidad, consulte los [Documentos de API](https://console.bluemix.net/apidocs/globalcatalog).
+Para obtener más información sobre cómo funciona la visibilidad, consulte los [documentos de API de catálogo](https://{DomainName}/apidocs/globalcatalog).

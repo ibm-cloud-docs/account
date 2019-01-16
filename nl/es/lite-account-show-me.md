@@ -19,7 +19,7 @@ lastupdated: "2018-11-19"
 # Vídeo - Cuenta Lite de {{site.data.keyword.cloud_notm}}
 {: #show_me_video}
 
-La cuenta Lite es nuestra cuenta gratuita que nunca caduca. ¿Qué se ofrece en una cuenta Lite? Obtenga información sobre los servicios disponibles con los planes Lite gratuitos y otras características de la cuenta en este vídeo.
+La cuenta Lite es nuestra cuenta gratuita que nunca caduca. ¿Qué ofrece una cuenta Lite? Obtenga información sobre los servicios disponibles con los planes Lite gratuitos y otras características de la cuenta en este vídeo.
 {: shortdesc}
 
 <p>
