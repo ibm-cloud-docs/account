@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-12-04"
+lastupdated: "2018-11-18"
 
 ---
 
@@ -86,7 +86,7 @@ Se você tiver uma conta faturável, não haverá limite para o número de grupo
 Sim, é possível fazer upgrade para uma conta faturável e continuar a usar as instâncias que você criou com sua conta Lite.
 
 ## Como fazer upgrade da minha conta Pré-paga?
-{: #upgrade}
+{: #nochange}
 {: faq}
 
 Para fazer upgrade da conta Pré-paga para uma conta de Assinatura, entre em contato com [Vendas IBM](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo").
@@ -118,13 +118,13 @@ Se você tiver um tipo de conta elegível, acesse **Gerenciar** > **Conta** > **
 
 ![Captura de tela de configurações da conta.](images/cancel-faq3.svg "Captura de tela de configurações da conta")
 
-Se você acessar a página **Configurações da conta** e o botão **Desativar conta** não for exibido, será possível entrar em contato ligando para 1-866-325-0045 e selecionando a terceira opção ou abrindo um caso de suporte.
+Se você acessar a página **Configurações da conta** e a opção **Desativar conta** não for exibida, será possível entrar em contato ligando para 1-866-325-0045 e selecionando a terceira opção ou abrir um [caso de suporte](https://{DomainName}/unifiedsupport/supportcenter){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg).
 
 ## Como excluir minha conta?
 {: #deleteaccount}
 {: faq}
 
-Entre em contato com o Suporte do [{{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} para abrir um caso de suporte e solicitar para excluir sua conta. Se você tem dados que estão associados à sua conta antiga e deseja salvá-los e movê-los para uma nova conta, inclua essas informações em seu e-mail.
+Entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} para abrir um caso de suporte e solicitar para excluir sua conta. Se você tem dados que estão associados à sua conta antiga e deseja salvá-los e movê-los para uma nova conta, inclua essas informações em seu e-mail.
 
 ## Por que minha conta está desativada?
 {: #account-deactivated}

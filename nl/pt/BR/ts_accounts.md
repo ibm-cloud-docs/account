@@ -34,10 +34,10 @@ Não é possível criar um novo local porque seu tipo de conta não permite isso
 Você recebe uma mensagem de erro ao tentar criar um novo local do {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
 
-Isso é provavelmente porque você está usando uma conta Lite, que suporta o desenvolvimento em somente um local público. 
+Isso é provavelmente porque você está usando uma conta Lite, que suporta o desenvolvimento em somente um local público.
 {: tsCauses}
 
-Para acessar mais locais, faça upgrade para uma conta faturável. Acesse **Gerenciar > Faturamento e uso** e selecione **Pagamentos**. 
+Para acessar mais locais, faça upgrade para uma conta faturável. Acesse **Gerenciar > Faturamento e uso** e selecione **Pagamentos**.
 {: tsResolve}
 
 
@@ -50,10 +50,10 @@ Você tenta criar mais de uma organização e tem uma conta Lite.
 Você receberá uma mensagem de erro ao tentar criar uma nova organização.
 {: tsSymptoms}
 
-Isso é provavelmente porque você está usando uma conta Lite, que suporta o desenvolvimento em somente uma organização. 
+Isso é provavelmente porque você está usando uma conta Lite, que suporta o desenvolvimento em somente uma organização.
 {: tsCauses}
 
-Para criar uma nova organização, faça upgrade para uma conta faturável. Acesse **Gerenciar > Faturamento e uso** e selecione **Upgrades**. 
+Para criar uma nova organização, faça upgrade para uma conta faturável. Acesse **Gerenciar > Faturamento e uso** e selecione **Upgrades**.
 {: tsResolve}
 
 
@@ -191,9 +191,9 @@ Você pode observar que vários aplicativos compartilham uma URL no {{site.data.
 Esse problema pode ocorrer quando você designa a mesma rota de URL a diferentes apps em um espaço.
 {: tsCauses}
 
-Por exemplo, você envia por push o app myApp1 para o {{site.data.keyword.Bluemix_notm}} e configura o domínio como `mynewapp.mybluemix.net`. Em seguida, envia por push outro app myApp2 para o mesmo espaço e configura uma de suas rotas de URL como `mynewapp.mybluemix.net`. A rota agora é mapeada para ambos os apps.
+Por exemplo, você envia por push o app myApp1 para o {{site.data.keyword.Bluemix_notm}} e configura o domínio para `mynewapp.stage1.mybluemix.net`. Em seguida, envia por push outro app myApp2 para o mesmo espaço e configura uma de suas rotas de URL para `mynewapp.stage1.mybluemix.net`. A rota agora é mapeada para ambos os apps.
 
-Esse é um comportamento suportado e é possível usar essa prática para atingir o tempo de inatividade zero para o upgrade do app. Para obter mais informações, veja [Como assegurar tempo de inatividade zero](/docs/overview/zero_downtime.html#zero-downtime). 
+Esse é um comportamento suportado e é possível usar essa prática para atingir o tempo de inatividade zero para o upgrade do app. Para obter mais informações, veja [Como assegurar tempo de inatividade zero](/docs/overview/zero_downtime.html#zero-downtime).
 {: tsResolve}
 
 
@@ -203,10 +203,10 @@ Esse é um comportamento suportado e é possível usar essa prática para atingi
 
 Como um administrador, não é possível exibir cada organização para administrá-las quando você usa o console do {{site.data.keyword.Bluemix_notm}}. Você pode exibir e administrar apenas as organizações às quais pertence.
 
-Como um administrador, não é possível visualizar todas as organizações por meio do console. 
+Como um administrador, não é possível visualizar todas as organizações por meio do console.
 {: tsSymptoms}
 
-Essa é uma limitação do console. 
+Essa é uma limitação do console.
 {: tsCauses}
 
 É possível usar comandos como `cf orgs`, `cf create-org` e `cf delete-org` na interface da linha de comandos do Cloud Foundry para gerenciar todas as organizações. Para obter uma lista completa de comandos do Cloud Foundry, insira `cf help`.
