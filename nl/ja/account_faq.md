@@ -28,7 +28,7 @@ lastupdated: "2018-11-18"
 {: #account-error}
 {: faq}
 
-アカウントを作成しようとしてエラーが発生した場合は、サポート・ケースを作成できます。{{site.data.keyword.Bluemix}} コンソールのメニュー・バーで**「サポート」**をクリックします。次に、「さらに支援が必要 (Need more help)」セクションで**「新規ケースの作成 (Create new case)」**をクリックします。ケースがオープンされると、E メール通知が届きます。指示に従って、問題に関してさらにやり取りしてください。
+アカウントを作成しようとしてエラーが発生した場合は、サポート Case を作成できます。{{site.data.keyword.Bluemix}} コンソールのメニュー・バーで**「サポート」**をクリックします。次に、「さらに支援が必要 (Need more help)」セクションで**「新規 Case の作成 (Create new case)」**をクリックします。Case がオープンされると、E メール通知が届きます。指示に従って、問題に関してさらにやり取りしてください。
 
 
 ## Cloud Foundry とは?
@@ -117,13 +117,13 @@ VPN パスワードをリセットするには、以下のステップを実行�
 
 ![「アカウント設定」画面キャプチャー](images/cancel-faq3.svg "「アカウント設定」画面キャプチャー")
 
-**「アカウント設定」**ページに移動しても**「アカウントの非アクティブ化」**が表示されない場合、1-866-325-0045 に電話して 3 番目のオプションを選択するか、または、[サポート・ケース](https://{DomainName}/unifiedsupport/supportcenter){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg) をオープンすることができます。
+**「アカウント設定」**ページに移動しても**「アカウントの非アクティブ化」**が表示されない場合、1-866-325-0045 に電話して 3 番目のオプションを選択するか、または、[サポート Case](https://{DomainName}/unifiedsupport/supportcenter){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg) をオープンすることができます。
 
 ## アカウントを削除するには、どのようにすればよいですか?
 {: #deleteaccount}
 {: faq}
 
-[{{site.data.keyword.Bluemix_notm}} サポート ![外部リンク・アイコン](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} に連絡して、サポート・ケースをオープンし、アカウントの削除を依頼してください。古いアカウントに関連付けられているデータで、新規アカウントに移行したいものがあれば、その情報を E メールに記載してください。
+[{{site.data.keyword.Bluemix_notm}} サポート ![外部リンク・アイコン](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} に連絡して、サポート Case をオープンし、アカウントの削除を依頼してください。古いアカウントに関連付けられているデータで、新規アカウントに移行したいものがあれば、その情報を E メールに記載してください。
 
 ## アカウントが非アクティブになったのはなぜですか?
 {: #account-deactivated}
