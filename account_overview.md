@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018
-lastupdated: "2018-11-15"
+  years: 2019
+lastupdated: "2019-01-21"
 
 ---
 
@@ -34,7 +34,7 @@ Within the diagram, there are two main concepts for the components in the accoun
 <dt>Service instances or resources</dt>
 <dd>Services in {{site.data.keyword.Bluemix_notm}} are either resource group- or Cloud Foundry-based. Service instances that can be added to a resource group and managed by using {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) are called resources. Service instances that are added to Cloud Foundry orgs and spaces have a separate access management system by using Cloud Foundry roles. For more information, see [What is a resource?](/docs/resources/acct_resources.html#resource)</dd>
 <dt>API keys</dt>
-<dd>An API key is a unique code that is passed in to an API to identify the calling application or user. You can use platform API keys, whic are associated with user identities, and you can create other API keys for service IDs. For more information, see [Understanding API keys](/docs/iam/apikeys.html#manapikey).</dd>
+<dd>An API key is a unique code that is passed in to an API to identify the calling application or user. You can use platform API keys, which are associated with user identities, and you can create other API keys for service IDs. For more information, see [Understanding API keys](/docs/iam/apikeys.html#manapikey).</dd>
 <dt>Access groups</dt>
 <dd>You can create an access group to organize a set of users and service IDs into a single entity and easily assign permissions. You can assign a single policy to the group instead of assigning the same access multiple times per individual user or service ID. For more information, see [Setting up access groups](/docs/iam/groups.html#groups).</dd>
 <dt>Resource groups</dt>
