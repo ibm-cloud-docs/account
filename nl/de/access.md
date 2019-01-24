@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-10-10"
+lastupdated: "2018-11-18"
 
 ---
 
@@ -12,40 +12,45 @@ lastupdated: "2018-10-10"
 {:screen: .screen}
 {:tip: .tip}
 
-# Zugriff auf den Katalog verwalten
+# Benutzerzugriff auf den Katalog verwalten
 {: #find-access}
 
-Als Kontoeigner können Sie Zugriffsberechtigungen mithilfe einer IAM-Richtlinie zuweisen. Dies ermöglicht es Benutzern, die Sichtbarkeit privater Services, die zum Kontokatalog hinzugefügt werden, oder öffentlicher Services, die im Konto erstellt werden, zu steuern. Standardmäßig kann nur der Kontoeigner diese Aufgaben ausführen.
+Als {{site.data.keyword.Bluemix}}-Kontoeigner können Sie Benutzern den Zugriff auf den Katalog zuweisen, indem Sie eine IAM-Richtlinie (Identity and Access Management) in {{site.data.keyword.Bluemix_notm}} verwenden. Auf diese Weise können Sie die Anzeige privater Services, die zum Kontokatalog hinzugefügt werden, oder öffentlicher Services, die im Konto erstellt werden, steuern. Standardmäßig kann nur der Kontoeigner diese Aufgaben ausführen.
 
-## Wie kann ich als Kontoeigner Zugriff delegieren?
+## Zugriff delegieren
 {: #get-access}
 
-Als Kontoeigner können Sie Zugriff auf das Konto gewähren, indem Sie über die Identity and Access-Benutzerschnittstelle einem Benutzer eine Zugriffsrichtlinie zuweisen. Stellen Sie den erforderlichen Zugriff für den Benutzer sicher, indem Sie die Ressource **Globaler Katalog** und die Rolle **Administrator** für die Zugriffsrichtlinie auswählen.
+Sie können den Zugriff auf Ihr Konto delegieren, um zu steuern, was für Benutzer sichtbar ist und welche Berechtigungen diese Benutzer erhalten sollen. So sollten z. B. einige Benutzer bestimmte Informationen nur lesen und analysieren können, andere Benutzer könnten dagegen die Berechtigung zum Bearbeiten dieser Informationen erhalten. Führen Sie die folgenden Schritte aus, um den Kontozugriff an einen anderen Benutzer im Konto zu delegieren. 
 
-Mithilfe der IAM-Rollen (Identity and Access Management) `Anzeigeberechtigter` und `Bearbeitungsberechtigter` können Sie weitere Berechtigungen erteilen. In der folgenden Tabelle finden Sie weitere Informationen zu den Möglichkeiten, die die einzelnen IAM-Rollen Benutzern bei der Arbeit mit dem Katalog für Ihr Konto eröffnen.
+1. Klicken Sie auf **Verwalten** > **Zugriff (IAM)**.  
+2. Klicken Sie auf **Zugriffsverwaltung beginnt beim Benutzer** auf der Landing-Page.  
+3. Wählen Sie eine Benutzer in Ihrem Konto aus.  
+4. Klicken Sie auf **Zugriffsrichtlinien**. 
+5. Klicken Sie auf **Zugriff zuweisen**. Klicken Sie dann auf **Zugriff auf Kontoverwaltungsservices zuweisen**. 
+6. Wählen Sie den **Katalog mit globalen Ressourcen** in der Serviceliste und die Rolle **Administrator** in der Rollenauswahlliste aus. 
 
-| Plattformmanagementrolle | Beschreibung von Aktionen |
+Verwenden Sie die Rollen eines Anzeigeberechtigten und eines Bearbeiters, um weitere Berechtigungen zu erteilen. In der folgenden Tabelle finden Sie weitere Informationen zu den Möglichkeiten, die die einzelnen IAM-Rollen Benutzern bei der Arbeit mit dem Katalog für Ihr Konto eröffnen.
+
+| Plattformmanagementrolle | Aktionen |
 |:-----------------|:-----------------|
-| Viewer (Anzeigeberechtigter) | Private Services anzeigen, jedoch keine Änderungen vornehmen. |
-| Editor (Bearbeiter) | Objektmetadaten ändern. Änderungen an der Sichtbarkeit sind nicht möglich. |
-| Administrator | Objektmetadaten oder Sichtbarkeit ändern.  |
-{: caption="Tabelle 1. Beispielrollen und Aktionen des Plattformmanagements für den Katalogservice" caption-side="top"}
+| Anzeigeberechtigter | Private Services anzeigen, nicht jedoch ändern  |
+| Bearbeiter | Objektmetadaten ändern, nicht jedoch die Sichtbarkeit privater Services |
+| Administrator | Objektmetadaten oder Sichtbarkeit privater Services ändern, Sichtbarkeit eines öffentlichen Service einschränken |
+{: caption="Tabelle 1. Beispiele für Plattformmanagementrollen und -aktionen für den Katalog" caption-side="top"}
 
-Schrittweise Anweisungen für das Zuordnen von Zugriff für Benutzer in Ihrem Konto finden Sie unter [Zugriff auf Ressourcen](/docs/iam/mngiam.html#iammanidaccser#resourceaccess).
+Weitere Informationen zum Zuweisen von Zugriffsberechtigungen für Benutzer finden Sie in [Zugriff auf Kontoverwaltungsservices](/docs/iam/mngiam.html#acctmgmt). 
 
-## Wie kann ich feststellen, ob ich über Zugriff verfüge?
+## Zugriff bestätigen
 
-Wenn Sie zum Konto einer anderen Person hinzugefügt werden, werden möglicherweise bestimmte Zugriffsebenen an Sie delegiert, sodass Sie private Ressourcen anzeigen können, die zum Konto hinzugefügt werden. Der Kontoeigner kann auch die Möglichkeit zum Anzeigen öffentlicher Ressourcen im Kontokatalog delegieren. Standardmäßig verfügen Sie nicht über diese Zugriffsberechtigung. Der Kontoeigner muss Ihnen eine IAM-Rolle zuweisen, die Ihnen den Zugriff zum Ausführen dieser Aufgaben des Kontoressourcenmanagements ermöglicht.
+Wenn Sie zum Konto einer anderen Person hinzugefügt werden, können Kontoadministratoren Zugriffsebenen an Sie delegieren, sodass Sie private Ressourcen anzeigen können, die zum Konto hinzugefügt werden. Der Kontoeigner kann auch die Möglichkeit zum Anzeigen öffentlicher Ressourcen im Kontokatalog delegieren. Standardmäßig verfügen Sie nicht über diese Zugriffsberechtigung. Der Kontoeigner muss Ihnen eine IAM-Rolle zuweisen, die Ihnen den Zugriff zum Ausführen dieser Aufgaben des Kontoressourcenmanagements ermöglicht. 
 
-Über die Befehlszeilenschnittstelle oder die IAM-Benutzerschnittstelle können Sie ermitteln, ob Sie über den erforderlichen Zugriff verfügen, um dafür zu sorgen, dass bestimmten Benutzern eine private Ressource angezeigt wird, die dem Konto hinzugefügt wird.
+Über die {{site.data.keyword.Bluemix_notm}}-Konsole oder die Befehlszeilenschnittstelle (CLI) können Sie ermitteln, ob Sie über die erforderliche Zugriffsberechtigung verfügen, um bestimmten Benutzern das Anzeigen einer privaten Ressource im Konto zu ermöglichen. 
 
-Führen Sie die folgenden Schritte aus, um mit der IAM-Benutzerschnittstelle zu arbeiten:
+Führen Sie die folgenden Schritte aus, um die Konsole zu verwenden: 
 
-1. Rufen Sie **Verwalten** > **Zugriff (IAM)** auf und klicken Sie dann auf **Benutzer**.
-2. Klicken Sie in der Benutzerliste auf Ihren Namen.
-3. Klicken Sie auf die Registerkarte **Zugriffsrichtlinien**, auf der Sie die zugewiesenen Zugriffsrichtlinien anzeigen können. Sie müssen über die Cloud IAM-Administratorrolle für die Katalogressource in Ihrem Konto verfügen, um die Einschlussliste mit den Konten, die private Ressourcen im Katalog anzeigen können, aktualisieren zu können.
+  1. Rufen Sie **Verwalten > Zugriff (IAM)** auf. 
+  2. Klicken Sie in der Benutzerliste auf Ihren Namen.
+  3. Klicken Sie auf die Registerkarte **Zugriffsrichtlinien**, auf der Sie die zugewiesenen Zugriffsrichtlinien anzeigen können. Sie müssen über die Cloud IAM-Administratorrolle für die Katalogressource in Ihrem Konto verfügen, um die Einschlussliste mit den Konten, die private Ressourcen im Katalog anzeigen können, aktualisieren zu können.
 
-Führen Sie die folgenden Schritte aus, um die [{{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_commands_iam) zu verwenden:
 
-Geben Sie den Befehl `ibmcloud iam user-policies <your-username>` mit Ihrem Benutzernamen ein, um herauszufinden, ob Sie als Administrator von Konten eingesetzt wurden, die Sie in der Befehlszeilenschnittstelle ausgewählt haben. Wenn Sie nicht über die Administratorrolle für Ihr Konto verfügen, wird von diesen Befehlen ein Fehler zu fehlenden Berechtigungen zurückgegeben.
-{: tip}
+Wenn Sie die [Befehlszeilenschnittstelle](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_commands_iam) verwenden möchten, führen Sie den Befehl `ibmcloud iam user-policies <Ihr Benutzername>` aus. Der Befehl gibt einen Fehler zurück, wenn Sie kein Administrator für das Konto sind.  

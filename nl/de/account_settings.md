@@ -4,50 +4,44 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-11-06" 
+lastupdated: "2018-11-15" 
 
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 {:tip: .tip}
+{:important: .important}
+
 
 # Kontoeinstellungen ändern
 {: #account_settings}
 
-Wenn Sie der Kontoeigner sind, legen Sie die gewünschten Kontoeinstellungen bei der Konfiguration Ihres {{site.data.keyword.Bluemix}}-Kontos fest. 
+Als Kontoeigner können Sie den Kontonamen ändern, den Kontotyp anzeigen und ein Upgrade für Ihr Konto durchführen. Wenn Sie über die IAM-Rolle eines Bedieners oder eine Rolle mit umfassenderen Berechtigungen für alle Kontoverwaltungsservices verfügen, können Sie den Kontonamen anzeigen und aktualisieren.   
 {:shortdesc}
 
-## Einstellung 'Unterstützung in der EU' aktivieren
-{: #bill_eusupported}
 
-Sie können die Unterstützung beliebiger {{site.data.keyword.Bluemix_notm}}-Ressourcen, die in Europa verwendet werden, beschränken, um Teams zu unterstützen, die in Europa ansässig sind. Eine Aktivierung der Einstellung 'Unterstützung in der EU' kann z. B. sinnvoll sein, wenn Sie Ihre Ressourcen für die Verarbeitung von personenbezogenen Daten von EU-Bürgern verwenden. Die Option 'Unterstützung in der EU' ist bei allen gebührenpflichtigen Plänen verfügbar.
+## Kontonamen ändern
+{: #change-acct-name}
 
-Mit der aktivierten Option 'Unterstützung in der EU' wird die Unterstützung der Ebene 1 und 2 auf in der Region 'EU' ansässige Mitarbeiter der Support-Teams begrenzt. Es können jedoch {{site.data.keyword.Bluemix_notm}}-Verarbeitungsaktivitäten von Teams außerhalb der EU ausgeführt werden, globale Teams können kontaktiert werden, wenn Probleme von europäischen Support-Teams der Ebene 1 oder 2 nicht behoben werden können. Die globalen Teams werden immer auf Anweisung des europäischen Support-Teams und nur dann kontaktiert, wenn Auswirkungen auf die Sicherheit oder den Datenschutz für Ihre Daten ausgeschlossen sind.
+Zum Bearbeiten des Kontonamens rufen Sie **Verwalten > Konto** auf und wählen Sie **Kontoeinstellungen** aus. Klicken Sie im Abschnitt 'Konto' auf das Bearbeitungssymbol ![Bearbeitungssymbol](../icons/edit-tagging.svg), geben Sie den neuen Kontonamen ein und klicken Sie auf **Senden**.  
 
-Durch die Aktivierung dieser Einstellung werden die Services mit Unterstützung in der EU mit einer stringenten Zugriffssteuerung aktiviert, um sicherzustellen, dass die von Ihnen gespeicherten und verarbeiteten Daten nur von IBM Support Teams innerhalb der EU bearbeitet und gesteuert werden. Benötigen {{site.data.keyword.Bluemix_notm}}-Fachleute außerhalb der europäischen Region für die Unterstützung oder den Betrieb der Cloud Zugriff auf diese Daten, wird die Zugriffsanforderung von einem Mitarbeiter des europäischen Support-Teams überprüft. Dem Cloud-Experten des globalen Teams wird von einem Mitarbeiter des europäischen Support-Teams nur der erforderliche Zugriff auf das angeforderte System ermöglicht. Dieser Zugriff ist nur in einem bestimmten Zeitrahmen gestattet und ist nach Ablauf dieser Zeit nicht mehr möglich. Während dieses Prozesses sind Ihre Daten immer geschützt.
 
-  1. Wechseln Sie in der {{site.data.keyword.Bluemix_notm}}-Konsole auf **Verwalten** > **Abrechnung und Nutzung** > **Abrechnung**.  
-  2. Klicken Sie auf **Ein**.
-  3. Nachdem Sie die Informationen zum Aktivieren der Einstellung gelesen haben, wählen Sie **Ich habe die Bedingungen zur Kenntnis genommen und stimme zu.** aus.
-  4. Klicken Sie auf **Ein**.
+## Kontotyp anzeigen
+{: #view-acct-type}
 
-Wenn Sie die {{site.data.keyword.BluSoftlayer_full}}-Infrastruktur verwenden und über kein verlinktes SoftLayer-Konto verfügen, können Sie die Option 'Unterstützung in der EU' auf der Seite **Kontoprofil** im Kundenportal festlegen. Weitere Informationen finden Sie unter [Option für EU-Unterstützung festlegen](/docs/customer-portal/cpmanuserprof.html#cp_seteusupported).
+Zum Anzeigen des Kontotyps rufen Sie **Verwalten > Konto** auf und wählen Sie **Kontoeinstellungen** aus. Details zum jeweiligen Kontotyp sind im Abschnitt 'Kontotyp' aufgeführt. Weitere Informationen zu den verschiedenen Konten finden Sie in [Kontotypen](/docs/account/index.html#accounts).  
 
-### In der EU unterstützte Angebote
 
-Nachdem Sie die Einstellung 'Unterstützung in der EU' aktiviert haben, können Sie den Tag **Unterstützung in der EU** verwenden, um den Katalog nach Angeboten zu durchsuchen, die in der EU unterstützte Planungen aufweisen.  
+## Upgrade für Konto durchführen
+{: #upgrading-account}
 
-## Einstellung 'HIPAA-Unterstützung' aktivieren
+Wenn Sie für Ihr Lite-Konto ein Upgrade auf ein nutzungsabhängiges Konto oder ein Abonnementkonto durchführen möchten, benötigen Sie die Rolle eines `Bearbeiters` oder eine Rolle mit umfassenderen Berechtigungen für alle Kontoverwaltungsservices.  
 
-Sie können bewusst entscheiden, dass Ihr Konto für die Ausführung sensibler Workloads aktiviert wird, der Regulierung den US-amerikanischen HIPAA-Standards (HIPAA = Health Insurance Portability and Accountability Act) unterliegt. 
+* Für ein nutzungsabhängiges Konto rufen Sie in der Konsole **Verwalten > Konto** auf und wählen Sie **Kontoeinstellungen** aus. Klicken Sie anschließend auf **Kreditkarte hinzufügen**. Die für Sie anfallenden Gebühren richten sich nach der Nutzung. Wenn die Nutzung das kostenfreie Laufzeit- und Servicekontingent überschreitet, erhalten Sie eine monatliche Rechnung. 
+* Für ein Abonnementkonto rufen Sie in der Konsole **Verwalten > Konto** auf und wählen Sie **Kontoeinstellungen** aus. Klicken Sie dann auf **Weitere Informationen**. Sie können sich zu einem kombinierten Mindestausgabebetrag pro Monat verpflichten und erhalten einen Abonnementrabatt, der auf diese Mindestgebühr angewendet wird. Für eine Nutzung, die über die Gesamtsumme des Abonnements hinaus geht, fallen die normalen Gebühren ohne Rabatt an.
 
-1. Wechseln Sie in der Konsole zu **Verwalten** > **Abrechnung und Nutzung** > **Abrechnung**.
-2. Klicken Sie auf **Ein**. 
-3. Lesen Sie die Informationen zur Aktivierung dieser Einstellung. Sie können diese Einstellung nicht inaktivieren, wenn sie einmal aktiviert wurde. 
-4. Wählen Sie **Zustimmen** aus. 
-5. Klicken Sie auf **Ein**.
+Weitere Informationen zum Inhalt der verschiedenen Kontotypen finden Sie in [Kontotypen](/docs/account/index.html#accounts).  
 
-### HIPAA-fähige Angebote
 
-Nachdem Sie die Einstellung 'HIPAA-fähig' aktiviert haben, können Sie den Tag **HIPAA-fähig** verwenden, um den Katalog nach Angeboten zu durchsuchen, die HIPAA-fähig sind. 
+Wenn Sie für ein nutzungsabhängiges Konto ein Upgrade auf ein Abonnementkonto durchführen möchten, wenden Sie sich an den [IBM Vertrieb](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link"). {: important}

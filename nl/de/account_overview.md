@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-10-08"
+lastupdated: "2018-11-15"
 
 ---
 
@@ -13,10 +13,11 @@ lastupdated: "2018-10-08"
 {:tip: .tip}
 {:new_window: target="_blank"}
 
+
 # Kontohierarchie
 {: #overview}
 
-Das {{site.data.keyword.Bluemix}}-Konto umfasst zahlreiche Komponenten und Systeme, die interagieren. Das folgende Diagramm und die Erläuterungen zu den einzelnen Komponenten sollen veranschaulichen, wie bestimmte Komponenten verbunden sind und wie der Zugriff innerhalb des Kontos gesteuert wird. 
+Das {{site.data.keyword.Bluemix}}-Konto umfasst zahlreiche Komponenten und Systeme, die interagieren. Hier erfahren Sie, wie bestimmte Komponenten miteinander verbunden sind und wie der Zugriff innerhalb Ihres Kontos funktioniert. {:shortdesc}
 
 <a href="https://console.bluemix.net/docs/api/content/account/images/account_diagram.svg">
   <img src="images/account_diagram.svg" alt="Kontodiagramm">
@@ -28,11 +29,11 @@ Das Diagramm enthält zwei Hauptkonzepte für die Komponenten in der Kontohierar
 <dt>Benutzer</dt>
 <dd>Benutzer werden zum Konto eingeladen und erhalten Zugriff auf die Ressourcen im Konto.</dd>
 <dt>Service-IDs</dt>
-<dd>Eine Service-ID dient (ähnlich wie eine Benutzer-ID, die einen Benutzer identifiziert) zur Identifikation eines Service oder einer Anwendung. Sie können eine von Ihnen erstellte Service-ID dazu verwenden, einer Anwendung außerhalb von {{site.data.keyword.Bluemix_notm}} den Zugriff auf Ihre {{site.data.keyword.Bluemix_notm}}-Services zu erteilen. Sie können der Service-ID spezielle Zugriffsrichtlinien zuweisen, die die Berechtigungen zur Verwendung bestimmter Services einschränken, oder auch die Berechtigungen für den Zugriff auf unterschiedliche Services kombinieren. Da Service-IDs nicht an bestimmte Benutzer gebunden sind, bleibt die Service-ID bestehen, wenn der zugehörige Benutzer Ihre Organisation verlässt und sein Konto deshalb gelöscht wird. Auf diese Weise wird sichergestellt, dass Ihre Anwendung oder Ihr Service weiterhin funktionsbereit bleibt. Weitere Informationen finden Sie in [Service-IDs erstellen und verwenden](/docs/iam/serviceid.html#serviceids).</dd>
+<dd>Eine Service-ID dient (ähnlich wie eine Benutzer-ID, die einen Benutzer identifiziert) zur Identifikation eines Service oder einer Anwendung. Sie können eine von Ihnen erstellte Service-ID dazu verwenden, einer Anwendung außerhalb von {{site.data.keyword.Bluemix_notm}} den Zugriff auf Ihre Services zu erteilen. Sie können der Service-ID spezielle Zugriffsrichtlinien zuweisen, die die Berechtigungen zur Verwendung bestimmter Services einschränken, oder auch die Berechtigungen für den Zugriff auf unterschiedliche Services kombinieren. Da Service-IDs nicht an bestimmte Benutzer gebunden sind, bleibt die Service-ID bestehen, wenn der zugehörige Benutzer Ihre Organisation verlässt und sein Konto deshalb gelöscht wird. Auf diese Weise wird sichergestellt, dass Ihre Anwendung oder Ihr Service weiterhin funktionsbereit bleibt. Weitere Informationen finden Sie in [Service-IDs erstellen und verwenden](/docs/iam/serviceid.html#serviceids).</dd>
 <dt>Serviceinstanzen oder Ressourcen</dt>
-<dd>Services in {{site.data.keyword.Bluemix_notm}} sind ressourcengruppen- oder Cloud Foundry-basiert. Serviceinstanzen, die zu einer Ressourcengruppe hinzugefügt und mithilfe von {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) verwaltet werden können, werden als Ressourcen bezeichnet. Serviceinstanzen, die zu Cloud Foundry-Organisationen und -Bereichen hinzugefügt werden, werden mithilfe eines anderen Zugriffsmanagementsystems über Cloud Foundry-Rollen verwaltet. Weitere Informationen finden Sie in [Was ist eine Ressource?](/docs/resources/acct_resources.html#resource)</dd>
+<dd>Services in {{site.data.keyword.Bluemix_notm}} sind entweder ressourcengruppenbasiert oder Cloud Foundry-basiert. Serviceinstanzen, die zu einer Ressourcengruppe hinzugefügt und mithilfe von {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) verwaltet werden können, werden als Ressourcen bezeichnet. Serviceinstanzen, die zu Cloud Foundry-Organisationen und -Bereichen hinzugefügt werden, werden mithilfe eines anderen Zugriffsmanagementsystems über Cloud Foundry-Rollen verwaltet. Weitere Informationen finden Sie in [Was ist eine Ressource?](/docs/resources/acct_resources.html#resource)</dd>
 <dt>API-Schlüssel</dt>
-<dd>Bei einem Schlüssel einer Anwendungsprogrammierschnittstelle (API-Schlüssel) handelt es sich um einen eindeutigen Code, der an eine Anwendungsprogrammierschnittstelle (API) übergeben wird, um die aufrufende Anwendung oder den aufrufenden Benutzer zu identifizieren. Es gibt Plattform-API-Schlüssel, die Benutzeridentitäten  zugeordnet werden, und es gibt API-Schlüssel, die für Service-IDs erstellt werden können. Weitere Informationen finden Sie in [Mit API-Schlüsseln arbeiten](/docs/iam/apikeys.html#manapikey).</dd>
+<dd>Bei einem API-Schlüssel handelt es sich um einen eindeutigen Code, der in eine API eingegeben wird, um die aufrufende Anwendung oder den aufrufenden Benutzer zu identifizieren. Sie können Plattform-API-Schlüssel verwenden, die mit Benutzeridentitäten verknüpft sind, und Sie können andere API-Schlüssel für Service-IDs erstellen. Weitere Informationen finden Sie in [Informationen zu API-Schlüsseln](/docs/iam/apikeys.html#manapikey). </dd>
 <dt>Zugriffsgruppen</dt>
 <dd>Sie können eine Zugriffsgruppe erstellen, um eine Reihe von Benutzern und Service-IDs in einer einzelnen Entität zusammenzufassen und das Zuweisen von Berechtigungen zu vereinfachen. Sie können der Gruppe eine einzige Richtlinie zuweisen, anstatt denselben Zugriff mehrmals für den einzelnen Benutzer oder die einzelne Service-ID zuzuweisen. Weitere Informationen finden Sie in [Zugriffsgruppen einrichten](/docs/iam/groups.html#groups).</dd>
 <dt>Ressourcengruppen</dt>
@@ -43,8 +44,8 @@ Das Diagramm enthält zwei Hauptkonzepte für die Komponenten in der Kontohierar
 <dd>Innerhalb einer Organisation können Sie Bereiche verwenden, um eine Reihe von Anwendungen, Services und Benutzern zu gruppieren. Bereiche sind an eine bestimmte Region in {{site.data.keyword.Bluemix_notm}} gebunden. Sie können auf der Basis des Bereitstellungslebenszyklus Bereiche in einer Organisation erstellen. Sie können z. B. einen Bereich 'dev' als Entwicklungsumgebung, einen Bereich 'test' als Testumgebung und einen Bereich 'production' als Produktionsumgebung erstellen. Anschließend können Sie Ihre Apps den Bereichen zuordnen. Weitere Informationen finden Sie in [Organisationen und Bereiche hinzufügen](/docs/account/orgs_spaces.html#orgsspacesusers).</dd>
 </dl>
 
-Ein weiterer wichtiger Aspekt des Diagramms ist die Darstellung der drei Zugriffsverwaltungssystemtypen, die verwendet werden können, um Kontobenutzern Zugriff auf Ressourcen innerhalb des Kontos zu ermöglichen. 
+Ein weiterer wichtiger Aspekt des vorherigen Diagramms ist die Darstellung der drei Zugriffsverwaltungssystemtypen, die verwendet werden können, um Kontobenutzern Zugriff auf Ressourcen innerhalb des Kontos zu ermöglichen. 
 
-* [IAM-Zugriffsrollen](/docs/iam/users_roles.html#iamusermanrol) werden dazu verwendet, Benutzern Zugriff auf alle Ressourcen zu ermöglichen, die zu einer Ressourcengruppe gehören. Diese Zugriffsrollen werden auch dazu verwendet, Benutzern Zugriffsberechtigungen zu erteilen, mit denen sie Ressourcengruppen verwalten und neue Serviceinstanzen erstellen können, die einer Ressourcengruppe zugewiesen werden.
-* [Cloud Foundry-Organisations- und -Bereichsrollen](/docs/iam/cfaccess.html#cfroles) werden dazu verwendet, Benutzern Zugriff auf Serviceinstanzen zu ermöglichen, die sich in einem Cloud Foundry-Bereich befinden.
-* Die Infrastrukturberechtigungen des [Kundenportals](/docs/customer-portal/cpwhatis.html#customerportal_whatisCP) sind verfügbar, um Benutzern differenzierte [Berechtigungen](/docs/iam/infrastructureaccess.html#infrapermission) für den Zugriff auf das Kundenportal und die darin enthaltenen Features zu ermöglichen. Hierzu gehören z. B. Rechnungen, die Abrechnung, die IaaS-Konfiguration, die IaaS-Überwachung, der IaaS-Kauf und die Unterstützung. Der Gerätezugriff wird separat hiervon vom jeweiligen Gerät aus gesteuert.
+  * [IAM-Zugriffsrollen](/docs/iam/users_roles.html#iamusermanrol) können dazu verwendet werden, Benutzern Zugriff auf alle Ressourcen zu ermöglichen, die zu einer Ressourcengruppe gehören. Diese Zugriffsrollen werden auch dazu verwendet, Benutzern Zugriffsberechtigungen zu erteilen, mit denen sie Ressourcengruppen verwalten und neue Serviceinstanzen erstellen können, die einer Ressourcengruppe zugewiesen werden.
+  * [Cloud Foundry-Organisations- und -Bereichsrollen](/docs/iam/cfaccess.html#cfroles) können dazu verwendet werden, Benutzern Zugriff auf Serviceinstanzen zu ermöglichen, die sich in einem Cloud Foundry-Bereich befinden.
+  * Berechtigungen der klassischen Infrastruktur können dazu verwendet werden, Benutzern differenziertere [Berechtigungen](/docs/iam/infrastructureaccess.html#infrapermission) für die klassische Infrastruktur zu erteilen. Gerätezugriff und VPN-Teilnetzzugriff werden separat zugewiesen. 

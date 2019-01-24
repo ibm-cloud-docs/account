@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-11-28"
 
 ---
 
@@ -11,57 +11,56 @@ lastupdated: "2018-08-02"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
 
-# Öffentliche Ressource für Benutzer im Konto ausblenden
+
+# Öffentliche Ressource für Benutzer ausblenden
 {: #exclude}
 
-Als Administrator des Kontos können Sie festlegen, dass eine öffentliche Ressource den Benutzern in Ihrem Konto nicht angezeigt wird. Fügen Sie die Ressource über die [Befehzlszeilenschnittstelle](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) `ibmcloud` zu einer Ausschlussliste hinzu.
-{:shortdesc: .shortdesc}
+Als Administrator für Ihr {{site.data.keyword.Bluemix}}-Konto können Sie eine öffentliche Ressource für Benutzer ausblenden, die über Zugriff auf das Konto verfügen. Das Ausblenden von Ressourcen kann erfolgen, um zu verhindern, dass nicht berechtigte Benutzer sensible Informationen anzeigen können. Ein anderer Grund kann sein, dass auf bestimmte Informationen nur eine begrenzte Zahl von Personen zugreifen muss.
+{:shortdesc}
 
-**Hinweis:** Das Ausblenden einer Ressource im Katalog bewirkt nicht, dass die Ressource aus der Cloud Foundry-Befehlszeilenschnittstelle oder den Servicebereitstellungslisten entfernt wird, die über die globale Navigation verfügbar sind (z. B. Finanzen, Mobile, Watson und Web-Apps).
+Durch das Ausblenden einer Ressource im Katalog wird diese Ressource nicht aus der Cloud Foundry-Befehlszeilenschnittstelle (CLI) oder aus den Angebotskategorielisten entfernt, die über die {{site.data.keyword.Bluemix_notm}}-Konsolennavigation verfügbar sind (z. B. Finanzen, Mobile, Watson und Web-Apps).
+{: note}
 
-## Wie kann ich feststellen, ob ich über Zugriff verfüge?
-{: #find-access}
+Über die [Befehlszeilenschnittstelle (CLI)](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) oder die Konsole von {{site.data.keyword.Bluemix}} können Sie ermitteln, ob Sie über die erforderliche Zugriffsberechtigung verfügen, um Benutzern das Anzeigen einer privaten Ressource zu ermöglichen, die zum Konto hinzugefügt wurde. Als Kontoeigner können Sie einem Benutzer in Ihrem Konto die Zugriffsberechtigung über die Konsole erteilen, indem Sie eine Zugriffsrichtlinie zuweisen. Weitere Informationen finden Sie in [Zugriff auf Konto verwalten](access.html).
 
-Sie können über die Befehlszeilenschnittstelle oder die IAM-Benutzerschnittstelle ermitteln, ob Sie über den erforderlichen Zugriff verfügen, um dafür zu sorgen, dass Benutzern eine private Ressource angezeigt wird, die dem Konto hinzugefügt wurde. Als Kontoeigner können Sie einem Benutzer in Ihrem Konto über die IAM-Benutzerschnittstelle Zugriff erteilen, indem Sie eine Zugriffsrichtlinie zuordnen. Weitere Informationen finden Sie in [Zugriff auf Konto verwalten](access.html).
-
-## Schritt 1: Ressource suchen
+## Ressource suchen
 {: #find-resource}
 
-Geben Sie `ibmcloud catalog search <service-id or service-name>` ein, um eine Ressource zu suchen. Ersetzen Sie 'service-id or service-name' durch den Namen oder die ID einer Ressource. Suchen Sie den Namen bzw. die ID des Service, der ausgeblendet werden soll, in den zurückgegebenen Informationen.
+Führen Sie den Befehl `ibmcloud catalog search <service-id or service-name>` aus, um nach einer Ressource zu suchen. Ersetzen Sie die Variable 'service-id or service-name' durch den Namen oder die ID einer Ressource. Mithilfe der zurückgegebenen Informationen können Sie nach der ID oder dem Namen des Service suchen, der ausgeblendet werden soll. 
 
-## Schritt 2: Details zum Service abrufen
+## Details der Ressource abrufen
 
-Geben Sie den Befehl `ibmcloud catalog service <service-id or service-name>` ein. Verwenden Sie diesen Befehl, um mithilfe der mit dem vorherigen Befehl ermittelten Informationen weitere Details zu der Ressource zu untersuchen. In den zurückgegebenen Informationen wird die Hierarchie angezeigt, die Aufschluss über die untergeordneten Ressourcen der Elemente in Ihrer Ressource gibt.
+Führen Sie den Befehl `ibmcloud catalog service <service-id or service-name>` aus. Verwenden Sie diesen Befehl, um mithilfe der mit dem vorherigen Befehl ermittelten Informationen weitere Details zu der Ressource abzurufen. Mit den zurückgegebenen Informationen können Sie die Hierarchie anzeigen, die Aufschluss über die untergeordneten Ressourcen der Elemente in Ihrer Ressource gibt. 
 
-## Schritt 3: Ressource ausblenden
+## Ressource ausblenden
 {: #vis-exc}
 
-Geben Sie den folgenden Befehl ein, um zu verhindern, dass Ihrem Konto eine öffentliche Ressource angezeigt wird.
+Führen Sie den folgenden Befehl aus, um zu verhindern, dass Benutzer in Ihrem Konto eine öffentliche Ressource anzeigen. 
 
 `ibmcloud catalog entry-visibility-set <resource-id> —-excludes-add <account-id or account-email>`
 
-Nach dem Flag `excludes` können Sie eine durch Kommas getrennte Liste mit E-Mail-Adressen oder IDs angeben, die Konten zugeordnet sind.
+Nach dem Flag 'exclude' können Sie eine durch Kommas getrennte Liste mit E-Mail-Adressen oder Konto-IDs hinzufügen, die Konten zugeordnet sind. 
 
-Der Prozess für das Ausblenden der Ressource nimmt nach der Befehlseingabe etwa 30 Minuten in Anspruch. Melden Sie sich nach 30 Minuten ab und erneut mit Ihrem Konto an, um die ausgeblendete Ressource anzuzeigen.
+Der Prozess für das Ausblenden der Ressource nimmt nach der Befehlseingabe etwa 30 Minuten in Anspruch. Melden Sie sich nach 30 Minuten ab und erneut an Ihrem Konto an, um die ausgeblendete Ressource anzuzeigen. 
 
-**Hinweis:** Einträge, die von Ihnen ausgeblendet wurden, stehen nicht über die Benutzerschnittstelle oder die {{site.data.keyword.Bluemix}}-Befehlszeilenschnittstelle zur Verfügung. Die ausgeblendeten Einträge werden weiterhin im Cloud Foundry-Marktplatz angezeigt, ein ausgeblendeter Plan kann jedoch nicht über Cloud Foundry bereitgestellt werden. Administratoren des ausgeschlossenen Kontos wird die Ressource weiterhin angezeigt.
+Einträge, die Sie ausblenden, sind in der Konsole oder in der Befehlszeilenschnittstelle nicht verfügbar. Administratoren des ausgeschlossenen Kontos können die Ressource weiterhin anzeigen. {: note}
 
-## Konto aus Ausschlussliste entfernen
+## Konto aus der Ausschlussliste entfernen
 {: #remove-exclude}
 
-Geben Sie den folgenden Befehl ein, um eine Konto-ID oder E-Mail-Adresse aus der Ausschlussliste zu entfernen.
+Führen Sie den folgenden Befehl aus, um eine Konto-ID oder E-Mail-Adresse aus der Ausschlussliste zu entfernen. 
 
 `ibmcloud catalog entry-visibility-set <service-id> —-excludes-remove <account-id or account-email>`
 
-## Beispiel zum Verwalten der Sichtbarkeit untergeordneter Objekte
+
+## Beispiel: Sichtbarkeit untergeordneter Objekte verwalten
 {: #child}
 
-Sie können die Sichtbarkeit Ihrer gesamten Ressourcen verwalten. Die einzelnen untergeordneten Ressourcen verfügen über eigene Sichtbarkeitsmerkmale.
+Sie können die Sichtbarkeit Ihrer gesamten Ressourcen verwalten. Die einzelnen untergeordneten Ressourcen verfügen über eigene Sichtbarkeitsmerkmale. Dieses Beispiel zeigt, wie Sie ein Konto vom Cloudant-Service ausschließen können. 
 
-Bei dem folgenden Beispiel schließen Sie ein Konto vom öffentlichen Cloudant-Service aus.
-
-Die Eingabe von `ibmcloud catalog service cloudant` bewirkt, dass die untergeordneten Elemente der Ressource angezeigt werden.
+Führen Sie den Befehl `ibmcloud catalog service cloudant` aus, um alle untergeordneten Elemente der Ressource anzuzeigen. 
 
 ```
 ID                 cloudant
@@ -87,6 +86,6 @@ Children           Name                                          Kind         ID
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-Suchen Sie die ID für ein Objekt und schließen Sie das Konto mit dem Befehl `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>`.
+Suchen Sie die ID für ein Objekt und schließen Sie ein Konto aus, indem Sie den Befehl `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>` ausführen. 
 
-Weitere Informationen zur Sichtbarkeit finden Sie in der [API-Dokumentation](https://console.bluemix.net/apidocs/globalcatalog).
+Weitere Informationen zur Funktionsweise der Sichtbarkeit finden Sie in den [Katalog-API-Dokumenten](https://{DomainName}/apidocs/globalcatalog). 
