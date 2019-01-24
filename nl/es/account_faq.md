@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-11-18"
+lastupdated: "2018-12-04"
 
 ---
 
@@ -85,7 +85,7 @@ Si tiene una cuenta facturable, no hay un límite en el número de grupos de rec
 Sí, puede actualizarla a una cuenta facturable y seguir utilizando las instancias que creó con su cuenta Lite.
 
 ## ¿Cómo actualizo mi cuenta de Pago según uso?
-{: #nochange}
+{: #upgrade}
 {: faq}
 
 Para actualizar su cuenta de Pago según uso a una cuenta de Suscripción, póngase en contacto con [IBM Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo").
@@ -117,7 +117,7 @@ Si tiene un tipo de cuenta apto, vaya a **Gestionar** > **Cuenta** > **Valores d
 
 ![Captura de pantalla de valores de cuenta](images/cancel-faq3.svg "Captura de pantalla de valores de cuenta")
 
-Si va a la página **Valores de cuenta** y no se muestra la opción **Desactivar cuenta**, puede llamar al teléfono 1-866-325-0045 y seleccionar la tercera opción o bien puede abrir un [caso de soporte](https://{DomainName}/unifiedsupport/supportcenter){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg).
+Si va a la página **Valores de cuenta** y no se muestra el botón **Desactivar cuenta**, puede llamar al teléfono 1-866-325-0045 y seleccionar la tercera opción o bien puede abrir un caso de soporte. 
 
 ## ¿Cómo puedo suprimir mi cuenta?
 {: #deleteaccount}

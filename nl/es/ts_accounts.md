@@ -122,7 +122,7 @@ Para volver a activar la cuenta, abra un caso en el [centro de soporte](https://
 {: #ts_adduser}
 {: troubleshoot}
 
-Puede invitar usuarios a la organización solo si es el propietario de la cuenta o si es gestor y miembro de la organización.
+Puede invitar a usuarios a la organización solo si es el propietario de la cuenta o si es gestor y miembro de la organización.
 
 No ve el enlace **Invitar a un nuevo usuario** en la sección **Gestionar organizaciones**.
 {: tsSymptoms}
@@ -146,14 +146,14 @@ No puede invitar a usuarios a su organización si es colaborador, incluso si se 
 Todos los gestores de la organización, incluidos los que son colaboradores, pueden añadir, modificar y eliminar los usuarios que ya están en la organización.
 {: note}
 
-Si no puede invitar usuarios a su organización y necesita otro rol para hacerlo, póngase en contacto con el gestor de la organización
+Si no puede invitar a usuarios a su organización y necesita otro rol para hacerlo, póngase en contacto con el gestor de la organización
 para cambiar el rol. Para identificar el gestor de la organización, siga estos pasos:
 {: tsResolve}
 
   1. En la barra de menús, pulse **Gestionar > Cuenta** y pulse **Contactos de la empresa**.
   2. Vaya a la organización y consulte la información sobre el gestor de la organización en el separador **USUARIOS**.  
 
-Si no puede invitar usuarios porque es colaborador y no un miembro, debe suprimir la cuenta anterior de {{site.data.keyword.Bluemix_notm}} y luego se le debe invitar como un miembro de la organización. Para suprimir la cuenta anterior y unirse a la cuenta como miembro, siga estos pasos:
+Si no puede invitar a usuarios porque es colaborador y no un miembro, debe suprimir la cuenta anterior de {{site.data.keyword.Bluemix_notm}} y luego se le debe invitar como un miembro de la organización. Para suprimir la cuenta anterior y unirse a la cuenta como miembro, siga estos pasos:
 
   1. Póngase en contacto con el [equipo de soporte de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com/unifiedsupport/supportcenter){: new_window} para abrir una incidencia de soporte y solicitar que se suprima la cuenta. Si tiene datos asociados con su antigua cuenta que desea guardar y moverlos the una nueva cuenta, incluya es información en el correo.
   2. Una vez haya suprimido la cuenta, pida a un usuario con el rol de gestor de la organización que le invite a la misma como gestor de la organización. Luego, inicie sesión en {{site.data.keyword.Bluemix_notm}} desde la invitación.
@@ -189,7 +189,7 @@ Puede que observe que varias apps comparten un URL en {{site.data.keyword.Bluemi
 Este problema puede producirse cuando se asigna la misma ruta de URL a distintas apps de un espacio.
 {: tsCauses}
 
-Por ejemplo, supongamos que envía la app myApp1 a {{site.data.keyword.Bluemix_notm}} y establece el dominio en `mynewapp.stage1.mybluemix.net`. Luego envía otra app myApp2 al mismo espacio y establece una de sus rutas de URL en `mynewapp.stage1.mybluemix.net`. Ahora la ruta está correlacionada a ambas apps.
+Por ejemplo, supongamos que envía la app myApp1 a {{site.data.keyword.Bluemix_notm}} y establece el dominio en `mynewapp.mybluemix.net`. Luego envía otra app myApp2 al mismo espacio y establece una de sus rutas de URL en `mynewapp.mybluemix.net`. Ahora la ruta está correlacionada a ambas apps.
 
 Este es el comportamiento soportado y puede utilizar este procedimiento para conseguir un tiempo de inactividad cero para la actualización de la app. Para obtener más información, consulte [Cómo garantizar un tiempo de inactividad zero](/docs/overview/zero_downtime.html#zero-downtime). 
 {: tsResolve}

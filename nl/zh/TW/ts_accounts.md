@@ -164,7 +164,7 @@ lastupdated: "2018-10-24"
 當您嘗試建立應用程式時，會顯示下列錯誤訊息：
 {: tsSymptoms}
 
-`BXNUI0097E: 在新增應用程式之前，必須至少有一個空間與您的組織和地區相關聯。在「儀表板」上，按一下「建立空間」。建立空間後，請重試。`
+`BXNUI0097E: 必須至少有一個空間與您的組織和地區相關聯，您才能新增應用程式。在「儀表板」上，按一下「建立空間」。建立空間後，請重試。`
 
 應用程式必須在組織下的空間中建立。
 {: tsCauses}
@@ -185,9 +185,9 @@ lastupdated: "2018-10-24"
 當您將相同的 URL 路徑指派給空間中的不同應用程式時，可能就會發生此問題。
 {: tsCauses}
 
-例如，您將 myApp1 應用程式推送至 {{site.data.keyword.Bluemix_notm}}，並將網域設為 `mynewapp.stage1.mybluemix.net`。然後，將另一個 myApp2 應用程式推送至相同的空間，並將其中一個 URL 路徑設為 `mynewapp.stage1.mybluemix.net`。路徑現在同時對映至這兩個應用程式。
+例如，您將 myApp1 應用程式推送至 {{site.data.keyword.Bluemix_notm}}，並將網域設為 `mynewapp.mybluemix.net`。然後，將另一個 myApp2 應用程式推送至相同的空間，並將其中一個 URL 路徑設為 `mynewapp.mybluemix.net`。路徑現在同時對映至這兩個應用程式。
 
-這是受支援的行為，而且您可以使用此作法，讓應用程式升級達到零中斷時間。如需相關資訊，請參閱[如何確保關閉時間為零](/docs/overview/zero_downtime.html#zero-downtime)。
+這是受支援的行為，而且您可以使用此作法，讓應用程式升級達到零中斷時間。如需相關資訊，請參閱[如何確保運作零中斷](/docs/overview/zero_downtime.html#zero-downtime)。
 {: tsResolve}
 
 

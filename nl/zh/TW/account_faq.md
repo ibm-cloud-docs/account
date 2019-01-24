@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-11-18"
+lastupdated: "2018-12-04"
 
 ---
 
@@ -28,7 +28,7 @@ lastupdated: "2018-11-18"
 {: #account-error}
 {: faq}
 
-如果在您嘗試建立帳戶時遇到錯誤，您可以建立一個支援案例。從 {{site.data.keyword.Bluemix}} 主控台功能表列中，按一下**支援**。然後，按一下「需要更多協助」區段中的**建立新的案例**。在案例立案後，您會收到一則電子郵件通知。請遵循指示，針對該問題進行進一步的溝通。
+如果在您嘗試建立帳戶時遇到錯誤，您可以建立一個支援案例。從 {{site.data.keyword.Bluemix}} 主控台功能表列中，按一下**支援**。然後，按一下「需要更多協助」區段中的**建立新的案例**。開立案例之後，您會收到一則電子郵件通知。請遵循指示，針對該問題進行進一步的溝通。
 
 
 ## 何謂 Cloud Foundry？
@@ -85,7 +85,7 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 是的，您可以升級成計費帳戶，並繼續使用您以精簡帳戶建立的實例。
 
 ## 如何升級我的「隨收隨付制」帳戶？
-{: #nochange}
+{: #upgrade}
 {: faq}
 
 若要將「隨收隨付制」帳戶升級為「訂閱」帳戶，請與 [IBM 銷售人員 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示") 聯絡。
@@ -117,13 +117,13 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 
 ![帳戶設定畫面擷取。](images/cancel-faq3.svg "帳戶設定畫面擷取")
 
-如果您移至**帳戶設定**頁面，但**停用帳戶**並未顯示，您可以撥打 1-866-325-0045 與我們聯繫，並選取第三個選項，或者開立[支援案例](https://{DomainName}/unifiedsupport/supportcenter){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg)。
+如果您移至**帳戶設定**頁面，但**停用帳戶**按鈕並未顯示，您可以撥打 1-866-325-0045 與我們聯繫，並選取第三個選項，或者開立支援案例。
 
 ## 如何刪除帳戶？
 {: #deleteaccount}
 {: faq}
 
-請與 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} 聯絡以開立支援案例，並要求刪除您的帳戶。如果您的資料與要移至新帳戶的舊帳戶相關聯，請在電子郵件中包含此資訊。
+請與 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} 聯絡以開立支援案例，並要求刪除您的帳戶。如果您的資料與舊帳戶相關聯並且要移至新帳戶，請在電子郵件中包含此資訊。
 
 ## 為什麼我的帳戶被停用了？
 {: #account-deactivated}
@@ -207,7 +207,7 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 {: #switch-account-owners}
 {: faq}
 
-您不能切換帳戶擁有者，但可以變更資源擁有者。若要進一步瞭解如何切換所有權，請參閱[傳送專用資源所有權](/docs/account/owners.html#how-to-change-the-owner-of-a-catalog-resource)。
+您不能切換帳戶擁有者，但可以變更資源擁有者。若要進一步瞭解如何切換所有權，請參閱[移轉專用資源的所有權](/docs/account/owners.html#how-to-change-the-owner-of-a-catalog-resource)。
 
 ## {{site.data.keyword.Bluemix_notm}} 是否支援批次登錄使用者？
 {: #batch-registration}
