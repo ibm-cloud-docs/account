@@ -117,7 +117,7 @@ If you have an eligible account type, go to **Manage** > **Account** > **Account
 
 ![Account settings screen capture.](images/cancel-faq3.svg "Account settings screen capture")
 
-If you go to the **Account settings** page and the **Deactivate account** button is not displayed, you can get in touch by calling 1-866-325-0045 and selecting the third option, or by opening a support case.
+If you go to the **Account settings** page and the **Deactivate account** button is not displayed, ... please reach out to us on Chat (give direct link to "Live Chat" here on the https://cloud.ibm.com/unifiedsupport/supportcenter page. See this github issue: https://github.ibm.com/ibmcloud/account/issues/584 please touch base with Tiffany Cross. 
 
 ## How do I delete my account?
 {: #deleteaccount}
