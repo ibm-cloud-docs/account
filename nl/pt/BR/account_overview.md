@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018
-lastupdated: "2018-11-15"
+  years: 2019
+lastupdated: "2019-01-21"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-11-15"
 # Hierarquia da conta
 {: #overview}
 
-Sua conta do {{site.data.keyword.Bluemix}} inclui muitos componentes e sistemas interativos. Obtenha um entendimento de como determinados componentes estão conectados e como acessar trabalhos em sua conta.
+Sua conta do {{site.data.keyword.Bluemix}} inclui muitos componentes e sistemas interativos. Obtenha um entendimento de como determinados componentes estão conectados e como acessar trabalhos em sua conta. 
 {:shortdesc}
 
 <a href="https://console.bluemix.net/docs/api/content/account/images/account_diagram.svg">
@@ -30,11 +30,13 @@ Dentro do diagrama, há dois conceitos principais para os componentes na hierarq
 <dt>Usuários</dt>
 <dd>Os usuários são convidados para a conta e recebem acesso aos recursos na conta.</dd>
 <dt>IDs de Serviço</dt>
-<dd>Um ID de serviço identifica um serviço ou um aplicativo semelhante a como um ID de usuário identifica um usuário. É possível usar um ID de serviço criado para permitir que um aplicativo fora do {{site.data.keyword.Bluemix_notm}} acesse seus serviços. É possível designar políticas de acesso específicas ao ID de serviço que restringem permissões para usar serviços específicos ou até mesmo combinar permissões para acessar serviços diferentes. Como os IDs de serviço não são vinculados a um usuário específico, se um usuário deixar uma organização e for excluído da conta, o ID do serviço permanecerá, assegurando que seu aplicativo ou serviço continue funcionando. Para obter mais informações, veja [Criando e trabalhando com IDs de serviço](/docs/iam/serviceid.html#serviceids).</dd>
+<dd>Um ID de serviço identifica um serviço ou um aplicativo semelhante a como um ID de usuário identifica um usuário. É possível usar um ID de serviço criado para permitir que um aplicativo fora do {{site.data.keyword.Bluemix_notm}} acesse seus serviços. É possível designar políticas de acesso específicas ao ID de serviço que restringem permissões para usar serviços específicos ou até mesmo combinar permissões para acessar serviços diferentes. Como os IDs de serviço não são vinculados a um usuário específico, se um usuário deixar uma organização e for excluído da conta, o ID do serviço permanecerá, assegurando que seu aplicativo ou serviço continue funcionando. Para obter mais informações, consulte [Criando e trabalhando com IDs de serviço](/docs/iam/serviceid.html#serviceids).</dd>
 <dt>Instâncias de serviço ou recursos</dt>
 <dd>Os serviços no {{site.data.keyword.Bluemix_notm}} são baseados no grupo de recursos ou no Cloud Foundry. As instâncias de serviço que podem ser incluídas em um grupo de recursos e gerenciadas usando o {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) são chamadas de recursos. As instâncias de serviço que são incluídas nas organizações e nos espaços do Cloud Foundry têm um sistema de gerenciamento de acesso separado usando as funções do Cloud Foundry. Para obter mais informações, consulte [O que é um recurso?](/docs/resources/acct_resources.html#resource)</dd>
 <dt>Chaves API (interface de programação de aplicativos)</dt>
-<dd>Uma chave de API é um código exclusivo que é passado para uma API para identificar o aplicativo de chamada ou usuário. É possível usar as chaves de API da plataforma, que estão associadas a identidades do usuário, e é possível criar outras chaves de API para IDs de serviço. Para obter mais informações, veja [Entendendo chaves de API](/docs/iam/apikeys.html#manapikey).</dd>
+<dd>Uma chave de API é um código exclusivo que é passado para uma API para identificar o aplicativo de chamada ou usuário. É
+possível usar as chaves de API da plataforma associadas a identidades do usuário e criar outras chaves de API para os IDs de
+serviço. Para obter mais informações, veja [Entendendo chaves de API](/docs/iam/apikeys.html#manapikey).</dd>
 <dt>Grupos de acesso</dt>
 <dd>É possível criar um grupo de acesso para organizar um conjunto de usuários e IDs de serviço em uma única entidade e facilmente atribuir permissões. É possível designar uma política única ao grupo em vez
 de designar o mesmo acesso múltiplas vezes por usuário ou ID de serviço individual. Para obter mais informações, consulte [Configurando grupos de acesso](/docs/iam/groups.html#groups).</dd>

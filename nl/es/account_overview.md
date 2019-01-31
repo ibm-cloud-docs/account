@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018
-lastupdated: "2018-11-15"
+  years: 2019
+lastupdated: "2019-01-21"
 
 ---
 
@@ -34,7 +34,7 @@ Dentro del diagrama, hay dos conceptos principales correspondiente a la jerarqu�
 <dt>Instancias de servicio o recursos</dt>
 <dd>Los servicios de {{site.data.keyword.Bluemix_notm}} se pueden basar en grupo de recursos o en Cloud Foundry. Las instancias de servicio que se pueden añadir a un grupo de recursos y gestionar mediante {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) se denominan recursos. Las instancias de servicio que se añaden a organizaciones y espacios de Cloud Foundry tienen otro sistema de gestión de acceso mediante el uso de roles de Cloud Foundry. Para obtener más información, consulte [¿Qué es un recurso?](/docs/resources/acct_resources.html#resource)</dd>
 <dt>Claves de API</dt>
-<dd>Una clave de API es un código exclusivo que se pasa a una API para identificar al usuario o la aplicación que la llama. Puede utilizar las claves de API de la plataforma, que están asociadas con las identidades de usuario y crear otras claves de API para los ID de servicio. Para obtener más información, consulte [Comprensión de claves de API](/docs/iam/apikeys.html#manapikey).</dd>
+<dd>Una clave de API es un código exclusivo que se pasa a una API para identificar al usuario o la aplicación que la llama. Puede utilizar las claves de API de la plataforma, que están asociadas con las identidades de usuario, y crear otras claves de API para los ID de servicio. Para obtener más información, consulte [Comprensión de claves de API](/docs/iam/apikeys.html#manapikey).</dd>
 <dt>Grupos de acceso</dt>
 <dd>Puede crear un grupo de acceso para organizar un conjunto de usuarios e ID de servicio en una sola entidad, lo que le facilita la asignación de permisos. Puede asignar una única política al grupo en lugar de asignar el mismo acceso varias veces por usuario individual o ID de servicio. Para obtener más información, consulte el apartado [Configuración de grupos de acceso](/docs/iam/groups.html#groups).</dd>
 <dt>Grupos de recursos</dt>
