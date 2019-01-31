@@ -34,10 +34,10 @@ Non puoi creare una nuova ubicazione perché il tuo tipo di account non lo conse
 Ricevi un messaggio di errore quando provi a creare una nuova ubicazione {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
 
-Ciò è probabilmente dovuto al fatto che stai utilizzando un account Lite, che supporta lo sviluppo in una sola ubicazione pubblica.
+Ciò è probabilmente dovuto al fatto che stai utilizzando un account Lite, che supporta lo sviluppo in una sola ubicazione pubblica. 
 {: tsCauses}
 
-Per accedere a più ubicazioni, esegui l'upgrade a un account fatturabile. Vai a **Gestisci > Fatturazione e utilizzo** e seleziona **Pagamenti**.
+Per accedere a più ubicazioni, esegui l'upgrade a un account fatturabile. Vai a **Gestisci > Fatturazione e utilizzo** e seleziona **Pagamenti**. 
 {: tsResolve}
 
 
@@ -50,10 +50,10 @@ Provi a creare più di una singola organizzazione e disponi di un account Lite.
 Ricevi un messaggio di errore quando provi a creare una nuova organizzazione.
 {: tsSymptoms}
 
-Ciò è probabilmente dovuto al fatto che stai utilizzando un account Lite, che supporta lo sviluppo solo in una singola organizzazione.
+Ciò è probabilmente dovuto al fatto che stai utilizzando un account Lite, che supporta lo sviluppo solo in una singola organizzazione. 
 {: tsCauses}
 
-Per creare una nuova organizzazione, esegui l'upgrade a un account fatturabile. Vai a **Gestisci > Fatturazione e utilizzo** e seleziona **Upgrade**.
+Per creare una nuova organizzazione, esegui l'upgrade a un account fatturabile. Vai a **Gestisci > Fatturazione e utilizzo** e seleziona **Upgrade**. 
 {: tsResolve}
 
 
@@ -196,9 +196,9 @@ Potresti notare che diverse applicazioni condividono un URL in {{site.data.keywo
 Questo problema potrebbe verificarsi se assegni la stessa rotta URL per le diverse applicazioni in uno spazio.
 {: tsCauses}
 
-Ad esempio, esegui il push dell'applicazione myApp1 a {{site.data.keyword.Bluemix_notm}} e imposti il dominio su `mynewapp.stage1.mybluemix.net`. Esegui quindi il push di un'altra applicazione myApp2 allo stesso spazio e imposta una delle sue rotte URL su `mynewapp.stage1.mybluemix.net`. La rotta è ora associata a entrambe le applicazioni.
+Ad esempio, esegui il push dell'applicazione myApp1 a {{site.data.keyword.Bluemix_notm}} e imposti il dominio su `mynewapp.mybluemix.net`. Esegui quindi il push di un'altra applicazione myApp2 allo stesso spazio e imposti una delle sue rotte URL su `mynewapp.mybluemix.net`. La rotta è ora associata a entrambe le applicazioni.
 
-Questo è il funzionamento supportato e puoi utilizzare questa procedura affinché non si verifichino tempi di inattività per l'upgrade della tua applicazione. Per ulteriori informazioni, vedi il documento relativo a [come garantire nessun tempo di inattività](/docs/overview/zero_downtime.html#zero-downtime).
+Questo è il funzionamento supportato e puoi utilizzare questa procedura affinché non si verifichino tempi di inattività per l'upgrade della tua applicazione. Per ulteriori informazioni, vedi il documento relativo a [come garantire nessun tempo di inattività](/docs/overview/zero_downtime.html#zero-downtime). 
 {: tsResolve}
 
 
@@ -208,10 +208,10 @@ Questo è il funzionamento supportato e puoi utilizzare questa procedura affinch
 
 In qualità di amministratore, non puoi visualizzare tutte le organizzazioni per gestirle quando utilizzi la console {{site.data.keyword.Bluemix_notm}}. Puoi visualizzare e gestire solo le organizzazioni alle quali appartieni.
 
-In qualità di amministratore, non puoi visualizzare tutte le organizzazioni dalla console.
+In qualità di amministratore, non puoi visualizzare tutte le organizzazioni dalla console. 
 {: tsSymptoms}
 
-Si tratta di una limitazione della console.
+Si tratta di una limitazione della console. 
 {: tsCauses}
 
 Puoi utilizzare i comandi come `cf orgs`, `cf create-org` e `cf delete-org` dall'interfaccia riga di comando Cloud Foundry per gestire tutte le organizzazioni. Per un elenco completo dei comandi Cloud Foundry, immetti `cf help`.

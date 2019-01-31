@@ -34,10 +34,10 @@ Vous ne pouvez pas créer de nouvel emplacement car votre type de compte ne perm
 Vous recevez un message d'erreur lorsque vous tentez de créer un emplacement {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
 
-Il est probable que vous utilisiez un compte Lite, lequel ne permet un développement que dans un seul emplacement public.
+Il est probable que vous utilisiez un compte Lite, lequel ne permet un développement que dans un seul emplacement public. 
 {: tsCauses}
 
-Pour pouvoir accéder à des emplacements supplémentaires, vous devez utiliser un compte facturable. Accédez à **Gérer > Facturation et utilisation** et sélectionnez **Paiements**.
+Pour pouvoir accéder à des emplacements supplémentaires, vous devez utiliser un compte facturable. Accédez à **Gérer > Facturation et utilisation** et sélectionnez **Paiements**. 
 {: tsResolve}
 
 
@@ -50,10 +50,10 @@ Vous tentez de créer plusieurs organisations et vous avez un compte Lite.
 Vous recevez un message d'erreur lorsque vous tentez de créer une organisation.
 {: tsSymptoms}
 
-Il est probable que vous utilisiez un compte Lite, lequel ne permet un développement que dans une seule organisation.
+Il est probable que vous utilisiez un compte Lite, lequel ne permet un développement que dans une seule organisation. 
 {: tsCauses}
 
-Pour créer une organisation, une mise à niveau vers un compte facturable est requise. Accédez à **Gérer > Facturation et utilisation** et sélectionnez **Mises à niveau**.
+Pour créer une organisation, une mise à niveau vers un compte facturable est requise. Accédez à **Gérer > Facturation et utilisation** et sélectionnez **Mises à niveau**. 
 {: tsResolve}
 
 
@@ -185,9 +185,9 @@ Il se peut que plusieurs applications partagent une adresse URL dans {{site.data
 Ce problème peut se produire lorsque vous affectez la même route d'adresse URL à plusieurs applications dans un espace.
 {: tsCauses}
 
-Par exemple, vous envoyez par commande push l'application myApp1 dans {{site.data.keyword.Bluemix_notm}} et définissez le nom de domaine `mynewapp.stage1.mybluemix.net`. Puis, vous envoyez par commande push une autre application myApp2 dans le même espace et affectez `mynewapp.stage1.mybluemix.net` à l'une de ses routes d'URL. La route est désormais mappée aux deux applications.
+Par exemple, vous envoyez par commande push l'application myApp1 dans {{site.data.keyword.Bluemix_notm}} et définissez le nom de domaine `mynewapp.mybluemix.net`. Puis, vous envoyez par commande push une autre application myApp2 dans le même espace et affectez `mynewapp.mybluemix.net` à l'une de ses routes d'URL. La route est désormais mappée aux deux applications.
 
-Il s'agit du comportement pris en charge ; il permet d'obtenir un temps d'indisponibilité nul pour la mise à niveau de votre application. Pour plus d'informations, voir [Comment garantir un temps d'indisponibilité nul](/docs/overview/zero_downtime.html#zero-downtime).
+Il s'agit du comportement pris en charge ; il permet d'obtenir un temps d'indisponibilité nul pour la mise à niveau de votre application. Pour plus d'informations, voir [Comment garantir un temps d'indisponibilité nul](/docs/overview/zero_downtime.html#zero-downtime). 
 {: tsResolve}
 
 
@@ -197,10 +197,10 @@ Il s'agit du comportement pris en charge ; il permet d'obtenir un temps d'indisp
 
 En tant qu'administrateur, vous ne pouvez pas afficher chaque organisation pour les gérer lorsque vous utilisez la console {{site.data.keyword.Bluemix_notm}}. Vous pouvez afficher et administrer uniquement les organisations auxquelles vous appartenez.
 
-En tant qu'administrateur, vous ne pouvez pas afficher toutes les organisations à partir de la console.
+En tant qu'administrateur, vous ne pouvez pas afficher toutes les organisations à partir de la console. 
 {: tsSymptoms}
 
-Il s'agit d'une limitation de la console.
+Il s'agit d'une limitation de la console. 
 {: tsCauses}
 
 Vous pouvez utiliser des commandes telles que `cf orgs`, `cf create-org` et `cf delete-org` à partir de l'interface de ligne de commande Cloud Foundry pour gérer toutes les organisations. Pour obtenir une liste complète des commandes Cloud Foundry, entrez `cf help`.

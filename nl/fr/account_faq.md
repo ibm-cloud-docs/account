@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-11-18"
+lastupdated: "2018-12-04"
 
 ---
 
@@ -85,7 +85,7 @@ Si vous avez un compte facturable, le nombre de groupes de ressources, d'organis
 Oui, vous pouvez effectuer une mise à niveau vers un compte facturable et continuer d'utiliser les instances que vous avez créées avec votre compte Lite.
 
 ## Comment mettre à niveau mon compte Paiement à la carte ?
-{: #nochange}
+{: #upgrade}
 {: faq}
 
 Pour mettre à niveau votre compte Paiement à la carte en compte Abonnement, prenez contact avec le [service commercial IBM](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe").
@@ -117,7 +117,7 @@ Si vous avez un type de compte éligible, sélectionnez **Gérer** > **Compte** 
 
 ![Capture d'écran Paramètres de compte.](images/cancel-faq3.svg "Capture d'écran Paramètres de compte")
 
-Si vous accédez à la page **Paramètres de compte** et que l'option **Désactiver le compte** ne s'affiche pas, vous pouvez appeler le numéro 1-866-325-0045 et sélectionner la troisième option ou ouvrir un [cas de support](https://{DomainName}/unifiedsupport/supportcenter){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg).
+Si vous accédez à la page **Paramètres de compte** et que le bouton **Désactiver le compte** ne s'affiche pas, vous pouvez appeler le numéro 1-866-325-0045 et sélectionner la troisième option ou ouvrir un cas de support.
 
 ## Comment supprimer mon compte ?
 {: #deleteaccount}
@@ -227,13 +227,13 @@ Vous pouvez utiliser des étiquettes pour organiser et afficher des ressources d
 {: #tags-visibility-account}
 {: faq}
 
-Les étiquettes sont visibles dans votre compte. Si vous êtes autorisé à voir une ressource, vous pouvez également voir toutes les étiquettes qui lui sont associées. Pour plus d'informations, voir [Octroi aux utilisateurs de l'accès aux ressources d'étiquette](/docs/resources/grant-tag-access.html#access). 
+Les étiquettes sont visibles dans votre compte. Si vous êtes autorisé à voir une ressource, vous pouvez également voir toutes les étiquettes qui lui sont associées. Pour plus d'informations, voir [Octroi aux utilisateurs de l'accès leur permettant d'étiqueter des ressources](/docs/resources/grant-tag-access.html#access). 
 
 ## De quels droits dois-je disposer pour ajouter ou retirer des étiquettes ?
 {: #permissions-add-remove-tags}
 {: faq}
 
-Vous devez disposer au moins du rôle Editeur pour les ressources activées par IAM ou du rôle Développeur dans un espace Cloud Foundry sur une ressource pour ajouter ou retirer des étiquettes sur cette dernière. Pour plus d'informations, voir [Octroi aux utilisateurs de l'accès aux ressources d'étiquette](/docs/resources/grant-tag-access.html#access).
+Vous devez disposer au moins du rôle Editeur pour les ressources activées par IAM ou du rôle Développeur dans un espace Cloud Foundry sur une ressource pour ajouter ou retirer des étiquettes sur cette dernière. Pour plus d'informations, voir [Octroi aux utilisateurs de l'accès leur permettant d'étiqueter des ressources](/docs/resources/grant-tag-access.html#access).
 
 ## Puis-je supprimer mon étiquette ?
 {: # delete-tag}

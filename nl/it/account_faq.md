@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-11-18"
+lastupdated: "2018-12-04"
 
 ---
 
@@ -85,7 +85,7 @@ Se disponi di un account fatturabile, non esiste alcun limite al numero di grupp
 Sì, puoi eseguire l'upgrade a un account fatturabile e continuare a utilizzare le istanze create con il tuo account Lite.
 
 ## Come eseguo l'upgrade del mio account Pagamento a consumo?
-{: #nochange}
+{: #upgrade}
 {: faq}
 
 Per eseguire l'upgrade del tuo account Pagamento a consumo a un account Sottoscrizione, contatta il settore [Vendite di IBM](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno").
@@ -113,11 +113,11 @@ Per reimpostare la tua password VPN, completa la seguente procedura:
 {: #cancelaccount}
 {: faq}
 
-Se hai un tipo di account idoneo, vai a **Gestisci** > **Account** > **Impostazioni account** e **Disattiva account**. 
+Se hai un tipo di account idoneo, vai a **Gestisci** > **Account** > **Impostazioni account** e fai clic su **Disattiva account**. 
 
 ![Acquisizione della schermata Impostazioni account](images/cancel-faq3.svg "Acquisizione della schermata Impostazioni account")
 
-Se vai alla pagina **Impostazioni account** e **Disattiva account** non è visualizzata, puoi contattarci chiamando all'1-866-325-0045 e selezionando la terza opzione oppure puoi aprire un [caso di supporto](https://{DomainName}/unifiedsupport/supportcenter){: new_window} ![Icona link esterno](../icons/launch-glyph.svg).
+Se vai alla pagina **Impostazioni account** e il pulsante **Disattiva account** non viene visualizzato, puoi contattarci chiamando il numero 1-866-325-0045 e selezionando la terza opzione oppure aprendo un caso di supporto.
 
 ## Come posso eliminare il mio account?
 {: #deleteaccount}
@@ -195,7 +195,7 @@ Per ulteriori informazioni sull'essere un master dell'account, vedi [Gestione de
 
 Puoi ancora utilizzare l'ID per il tuo account SoftLayer per accedere al portale del cliente perché la console {{site.data.keyword.Bluemix_notm}} è accessibile con gli ID IBM.
 
-## Come passo da un account a un altro?
+## Come posso passare da un account a un altro?
 {: #switch-between-accounts}
 {: faq}
 
