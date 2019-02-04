@@ -117,7 +117,7 @@ If you have an eligible account type, go to **Manage** > **Account** > **Account
 
 ![Account settings screen capture.](images/cancel-faq3.svg "Account settings screen capture")
 
-If you go to the **Account settings** page and the **Deactivate account** button is not displayed, the quickest way to deactive your account is to get in touch through [live chat](https://{DomainName}/unifiedsupport/supportcenter) or by calling 1-866-325-0045 and selecting the third option. Alternatively, you can open a support case.
+If you go to the **Account settings** page and the **Deactivate account** button is not displayed, the quickest way to cancel your account is to get in touch through [live chat](https://{DomainName}/unifiedsupport/supportcenter) or by calling 1-866-325-0045 and selecting the third option. Alternatively, you can open a support case.
 
 ## How do I delete my account?
 {: #deleteaccount}
