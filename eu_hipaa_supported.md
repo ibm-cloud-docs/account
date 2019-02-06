@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
 lastupdated: "2018-12-02" 
 
@@ -15,7 +15,7 @@ lastupdated: "2018-12-02"
 
 
 # Enabling EU and HIPAA supported settings
-{: #eu-hipaa-supoorted}
+{: #eu-hipaa-supported}
 
 If you're the account owner, you can enable your account to be EU supported and HIPAA supported. You might choose to enable the EU Supported setting, for example, if you use resources to process personal data for European citizens. And you might choose to enable the HIPAA Supported setting if you plan to include Protected Health Information (PHI) in HIPAA-enabled services. 
 {:shortdesc}
