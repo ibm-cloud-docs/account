@@ -25,7 +25,7 @@ If you have a classic infrastructure account, you can monitor storage replicatio
 ## Viewing your audit log
 {: #view-audit-log}
 
-To view your audit log, go to **Account > Manage**, and select **Audit log**. The audit log initially displays the last 25 interactions that were taken by users on the account. You can view up to 200 interactions at any time. Expand the items per page menu to see more results. 
+To view your audit log, go to **Manage> Account**, and select **Audit log**. The audit log initially displays the last 25 interactions that were taken by users on the account. You can view up to 200 interactions at any time. Expand the items per page menu to see more results. 
 
 ### Viewing a user's access logs
 {: #view-access-logs}
