@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-02-04"
+lastupdated: "2019-02-06"
 
 ---
 
@@ -35,7 +35,7 @@ You can create a support case if you get an error when you try to create your ac
 {: #cloud-foundry}
 {: faq}
 
-Cloud Foundry is an open source platform as a service (PaaS) option available through {{site.data.keyword.Bluemix_notm}} Public for building and deploying applications on the cloud. Cloud Foundry organizations and spaces are used to organize resources and apps available within specific regions. 
+Cloud Foundry is an open source platform as a service (PaaS) option available through {{site.data.keyword.Bluemix_notm}} Public for building and deploying applications on the cloud. Cloud Foundry organizations and spaces are used to organize resources and apps available within specific regions.
 
 For more information about managing orgs and spaces, see [Adding orgs and spaces](/docs/account/orgs_spaces.html#orgsspacesusers). And, if you’re interested in learning more about how to provide access to resources in a Cloud Foundry space, see [Cloud Foundry access](/docs/iam/cfaccess.html#cfaccess).
 
@@ -43,7 +43,7 @@ For more information about managing orgs and spaces, see [Adding orgs and spaces
 {: #move-org-diff-account}
 {: faq}
 
-Currently, you can't migrate an org to a different account. 
+Currently, you can't migrate an org to a different account.
 
 ## Which Cloud Foundry regions can I use?
 {: #whichregions}
@@ -94,30 +94,28 @@ To upgrade your Pay-As-You-Go account to a Subscription account, contact [IBM Sa
 {: #updatepayment}
 {: faq}
 
-You can easily update the payment method that's associated with your billable account. In the console, go to **Manage > Billing and Usage > Payments > Payment method**. 
+You can easily update the payment method that's associated with your billable account. In the console, go to **Manage > Billing and Usage > Payments > Payment method**.
 
-## How do I reset my password? 
+## How do I reset my password?
 {: #reset-password}
 {: faq}
 
-To reset your account password, go to the Avatar icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Profile and settings**, and select **Login settings**. Then, click **Change or reset** from the Account user information tile. 
+To reset your account password, go to the Avatar icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Profile and settings**, and select **Login settings**. Then, click **Change or reset** from the Account user information tile.
 
 To reset your VPN password, complete the following steps:
 
-  1. Go to **Manage > Access (IAM)**, and select **Users**. 
-  2. Select the user. 
-  3. From the VPN subnets section, click the Edit icon ![Edit icon](../icons/icon_write.svg) to enter a new VPN password. 
-  5. Click **Apply**. 
+  1. Go to **Manage > Access (IAM)**, and select **Users**.
+  2. Select the user.
+  3. From the VPN subnets section, click the Edit icon ![Edit icon](../icons/icon_write.svg) to enter a new VPN password.
+  5. Click **Apply**.
 
 ## How do I cancel my account?
 {: #cancelaccount}
 {: faq}
 
-If you have an eligible account type, go to **Manage** > **Account** > **Account settings**, and click **Deactivate account**. 
+For Pay-As-You-Go or Subscription accounts, the quickest way to cancel your account is to contact us through [live chat](https://{DomainName}/unifiedsupport/supportcenter) or by calling 1-866-325-0045 and selecting the third option. Alternatively, you can open a support case.
 
-![Account settings screen capture.](images/cancel-faq3.svg "Account settings screen capture")
-
-If you go to the **Account settings** page and the **Deactivate account** button is not displayed, the quickest way to cancel your account is to get in touch through [live chat](https://{DomainName}/unifiedsupport/supportcenter) or by calling 1-866-325-0045 and selecting the third option. Alternatively, you can open a support case.
+To cancel a Lite account, go to [Account settings](https://cloud.ibm.com/account/settings) and click **Deactivate account**.
 
 ## How do I delete my account?
 {: #deleteaccount}
@@ -131,7 +129,7 @@ Contact [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../ico
 
 Your account is most likely deactivated because an authorized user has canceled it or the account is suspended.  
 
-At the discretion of IBM, accounts that violate the acceptable usage behaviors of the {{site.data.keyword.Bluemix_notm}} services can be disabled without notice. Some services can be restored if users correct their usage behaviors after they're notified of the offensive action. 
+At the discretion of IBM, accounts that violate the acceptable usage behaviors of the {{site.data.keyword.Bluemix_notm}} services can be disabled without notice. Some services can be restored if users correct their usage behaviors after they're notified of the offensive action.
 
 ## How do I get support?
 {: #contactsupport}
@@ -157,7 +155,7 @@ After you link your account, use your IBMid to log in to the {{site.data.keyword
 
 After you link your account, you keep the same level of support when you add {{site.data.keyword.Bluemix_notm}} platform to your account.
 
-## Are there other ways to get help with linking my account? 
+## Are there other ways to get help with linking my account?
 {: #al_morehelp}
 {: faq}
 
@@ -173,15 +171,15 @@ If you have multiple SoftLayer accounts, you must link the accounts that have a 
 
 If you don't have a matching {{site.data.keyword.Bluemix_notm}} platform account, and an accompanying IBMid account, a new SoftLayer account can be created to link the accounts.
 
-## Are there incentives for linking my accounts? 
+## Are there incentives for linking my accounts?
 {: #al_incent}
 {: faq}
 
-When you link your accounts, you can use a $200 promotional credit to try {{site.data.keyword.Bluemix_notm}} services. 
+When you link your accounts, you can use a $200 promotional credit to try {{site.data.keyword.Bluemix_notm}} services.
 
-To learn more about the $200 promotional credit, see [Pay-As-You-Go account](/docs/account/index.html#paygo). 
+To learn more about the $200 promotional credit, see [Pay-As-You-Go account](/docs/account/index.html#paygo).
 
-## What does adding {{site.data.keyword.Bluemix_notm}} platform services to my SoftLayer account mean? 
+## What does adding {{site.data.keyword.Bluemix_notm}} platform services to my SoftLayer account mean?
 {: #al_owaffslacct}
 {: faq}
 
@@ -189,7 +187,7 @@ It means that your account has access to all {{site.data.keyword.Bluemix_notm}} 
 
 For more information about being an account master, see [Working with users](/docs/iam/iamusermanage.html#iamusermanage) for more information.
 
-## How does linking accounts impact my SoftLayer Master Account ID? 
+## How does linking accounts impact my SoftLayer Master Account ID?
 {: #al_howaffslmastacct}
 {: faq}
 
@@ -203,7 +201,7 @@ If you have more than one account, you can click your account name to select ano
 
 ![Account switcher screen capture.](images/account-faq.svg "Account switcher screen capture")
 
-## Can I switch account owners? 
+## Can I switch account owners?
 {: #switch-account-owners}
 {: faq}
 
@@ -213,9 +211,9 @@ You can't switch the owner of an account, but you can change resource owners. To
 {: #batch-registration}
 {:faq}
 
-When you register users for {{site.data.keyword.Bluemix_notm}}, you must register each user individually. {{site.data.keyword.Bluemix_notm}} doesn't support batch registration of users. 
+When you register users for {{site.data.keyword.Bluemix_notm}}, you must register each user individually. {{site.data.keyword.Bluemix_notm}} doesn't support batch registration of users.
 
-Go to [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com), and click **Create an {{site.data.keyword.Bluemix_notm}} account**. Then, complete the account registration form for each invidual user.	
+Go to [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com), and click **Create an {{site.data.keyword.Bluemix_notm}} account**. Then, complete the account registration form for each invidual user.
 
 ## What are tags?
 {: #know-about-tags}
@@ -223,11 +221,11 @@ Go to [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com), and click **Create
 
 You can use tags to organize and view resources across your account by filtering tags from your resource list. For more information, see [Tagging resources](/docs/resources/tagging_resources.html#tagging).
 
-## Who can view the tags in an account? 
+## Who can view the tags in an account?
 {: #tags-visibility-account}
 {: faq}
 
-Tags are visible throughout your account. If you have permission to see a resource, you can view all tags that are attached. For more information, see [Granting users access to tag resources](/docs/resources/grant-tag-access.html#access). 
+Tags are visible throughout your account. If you have permission to see a resource, you can view all tags that are attached. For more information, see [Granting users access to tag resources](/docs/resources/grant-tag-access.html#access).
 
 ## What permissions do I need to add or remove tags?
 {: #permissions-add-remove-tags}
