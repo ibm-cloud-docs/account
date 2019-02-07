@@ -69,14 +69,15 @@ Reaching any quota limit for Lite plan instances suspends the service for that m
 
 If you have a billable account, there's no limit to the number of resource groups, orgs, or spaces that you can create within your account. However, if you have a Lite account, you're limited to one org and one resource group.
 
-## How do I upgrade or change my account type?
+## How do I upgrade or convert my account type?
 {: #changeacct}
 {: faq}
 
 * To convert your 30-day trial to a Lite account, contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}. After confirming eligibility, the Sales team shares a unique link that you can use to try to convert your account. Successful conversion isn't guaranteed as Lite accounts aren't entirely compatible with 30-day trials.  
-* To upgrade from a Lite to a Pay-As-You-Go account, go to **Manage > Account**, and select **Account settings**.
-* To upgrade from a Lite to a Subscription account, go to **Manage > Account**, and select **Account settings**.
-* To convert your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
+* To upgrade from a Lite to a Pay-As-You-Go account or a Subscription account, go to [Account settings](https://{DomainName}/account/settings).
+  * To upgrade to a Pay-As-You-Go account, click **Add credit card**.
+  * To upgrade to a Subscription account, click **Upgrade**.
+* To convert between Pay-As-You-Go and Subscription account types, contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
 ## If I upgrade my Lite account, can I continue to use my existing instances?
 {: #nochange}
@@ -94,13 +95,16 @@ To upgrade your Pay-As-You-Go account to a Subscription account, contact [IBM Sa
 {: #updatepayment}
 {: faq}
 
-You can easily update the payment method that's associated with your billable account. In the console, go to **Manage > Billing and Usage > Payments > Payment method**.
+You can update the payment method that's associated with your account by going to [Payments](https://{DomainName}/billing/payments) in the console. Under Add Payment Method, enter in the billing information for your new card, then click **Add credit card**.
+
+To switch to a different payment method, select **Pay with Other** and then click **Submit change request**. A support case to change your payment method will be created for you.
+
 
 ## How do I reset my password?
 {: #reset-password}
 {: faq}
 
-To reset your account password, go to the Avatar icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Profile and settings**, and select **Login settings**. Then, click **Change or reset** from the Account user information tile.
+To reset your account password, go to the Avatar icon ![Avatar icon](../icons/i-avatar-icon.svg) **> Profile and settings**. Then, click **Change or reset** from the Account user information tile.
 
 To reset your VPN password, complete the following steps:
 
@@ -127,9 +131,11 @@ Contact [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../ico
 {: #account-deactivated}
 {: faq}
 
-Your account is most likely deactivated because an authorized user has canceled it or the account is suspended.  
+Your account might be deactivated for the following reasons:
 
-At the discretion of IBM, accounts that violate the acceptable usage behaviors of the {{site.data.keyword.Bluemix_notm}} services can be disabled without notice. Some services can be restored if users correct their usage behaviors after they're notified of the offensive action.
+- For trial accounts, the trial period ended. To reactivate your account, log in to your account and upgrade it to a Pay-As-You-Go account.
+- An authorized user canceled the account.
+- The account is suspended. At the discretion of IBM, accounts that violate the acceptable usage behaviors of the {{site.data.keyword.Bluemix_notm}} services can be disabled without notice. Some services can be restored if users correct their usage behaviors after they're notified of the offensive action.
 
 ## How do I get support?
 {: #contactsupport}
