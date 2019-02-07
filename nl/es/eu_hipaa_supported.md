@@ -4,7 +4,7 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-11-15" 
+lastupdated: "2018-12-02" 
 
 ---
 
@@ -33,8 +33,8 @@ Al habilitar este valor, se permite que los servicios con Soporte en la UE con c
   3. Lea la información sobre cómo habilitar este valor y seleccione **Comprendo y acepto estos términos**.
   4. Pulse **Activado**.
 
-  Después de habilitar el valor Soporte en la UE, puede utilizar la etiqueta `Soporte en la UE` para buscar en el catálogo las ofertas que tienen planes con soporte en la UE. 
-  {: tip}
+   Después de habilitar el valor Soporte en la UE, puede utilizar la etiqueta Soporte en la UE para buscar en el catálogo las ofertas que tienen planes con soporte en la UE. 
+   {: tip}
 
 
 ## Habilitación del valor Soporte en HIPAA
@@ -46,10 +46,10 @@ Puede permitir el valor Soportado en HIPAA para que ejecute cargas de trabajo co
 2. Para la opción Soportado en HIPAA, pulse en **Activado**. 
 3. Lea la información sobre la habilitación de este valor. 
 
-  No podrá inhabilitarlo después de haberlo habilitado.
+  No podrá inhabilitar el valor después de haberlo habilitado.
   {: important}
    
 4. Seleccione **Aceptar** y pulse **Enviar**. 
 
-  Después de habilitar el valor Soporte en HIPAA, puede utilizar la etiqueta `Soporte en HIPAA` para buscar en el catálogo las ofertas con soporte en HIPAA. Además, {{site.data.keyword.Bluemix_notm}} le avisa si ha optado por crear una oferta que no esté habilitada para HIPAA.
+  Después de habilitar el valor Soporte en HIPAA, puede utilizar la etiqueta Soporte en HIPAA para buscar en el catálogo las ofertas con soporte en HIPAA.
   {: tip}
