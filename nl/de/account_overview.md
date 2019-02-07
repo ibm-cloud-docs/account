@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018
-lastupdated: "2018-11-15"
+  years: 2019
+lastupdated: "2019-01-21"
 
 ---
 
@@ -17,7 +17,8 @@ lastupdated: "2018-11-15"
 # Kontohierarchie
 {: #overview}
 
-Das {{site.data.keyword.Bluemix}}-Konto umfasst zahlreiche Komponenten und Systeme, die interagieren. Hier erfahren Sie, wie bestimmte Komponenten miteinander verbunden sind und wie der Zugriff innerhalb Ihres Kontos funktioniert. {:shortdesc}
+Das {{site.data.keyword.Bluemix}}-Konto umfasst zahlreiche Komponenten und Systeme, die interagieren. Hier erfahren Sie, wie bestimmte Komponenten miteinander verbunden sind und wie der Zugriff innerhalb Ihres Kontos funktioniert. 
+{:shortdesc}
 
 <a href="https://console.bluemix.net/docs/api/content/account/images/account_diagram.svg">
   <img src="images/account_diagram.svg" alt="Kontodiagramm">
@@ -33,7 +34,7 @@ Das Diagramm enthält zwei Hauptkonzepte für die Komponenten in der Kontohierar
 <dt>Serviceinstanzen oder Ressourcen</dt>
 <dd>Services in {{site.data.keyword.Bluemix_notm}} sind entweder ressourcengruppenbasiert oder Cloud Foundry-basiert. Serviceinstanzen, die zu einer Ressourcengruppe hinzugefügt und mithilfe von {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) verwaltet werden können, werden als Ressourcen bezeichnet. Serviceinstanzen, die zu Cloud Foundry-Organisationen und -Bereichen hinzugefügt werden, werden mithilfe eines anderen Zugriffsmanagementsystems über Cloud Foundry-Rollen verwaltet. Weitere Informationen finden Sie in [Was ist eine Ressource?](/docs/resources/acct_resources.html#resource)</dd>
 <dt>API-Schlüssel</dt>
-<dd>Bei einem API-Schlüssel handelt es sich um einen eindeutigen Code, der in eine API eingegeben wird, um die aufrufende Anwendung oder den aufrufenden Benutzer zu identifizieren. Sie können Plattform-API-Schlüssel verwenden, die mit Benutzeridentitäten verknüpft sind, und Sie können andere API-Schlüssel für Service-IDs erstellen. Weitere Informationen finden Sie in [Informationen zu API-Schlüsseln](/docs/iam/apikeys.html#manapikey). </dd>
+<dd>Bei einem API-Schlüssel handelt es sich um einen eindeutigen Code, der in eine API eingegeben wird, um die aufrufende Anwendung oder den aufrufenden Benutzer zu identifizieren. Sie können Plattform-API-Schlüssel verwenden, die mit Benutzeridentitäten verknüpft sind, und Sie können andere API-Schlüssel für Service-IDs erstellen. Weitere Informationen finden Sie in [Informationen zu API-Schlüsseln](/docs/iam/apikeys.html#manapikey).</dd>
 <dt>Zugriffsgruppen</dt>
 <dd>Sie können eine Zugriffsgruppe erstellen, um eine Reihe von Benutzern und Service-IDs in einer einzelnen Entität zusammenzufassen und das Zuweisen von Berechtigungen zu vereinfachen. Sie können der Gruppe eine einzige Richtlinie zuweisen, anstatt denselben Zugriff mehrmals für den einzelnen Benutzer oder die einzelne Service-ID zuzuweisen. Weitere Informationen finden Sie in [Zugriffsgruppen einrichten](/docs/iam/groups.html#groups).</dd>
 <dt>Ressourcengruppen</dt>
@@ -48,4 +49,4 @@ Ein weiterer wichtiger Aspekt des vorherigen Diagramms ist die Darstellung der d
 
   * [IAM-Zugriffsrollen](/docs/iam/users_roles.html#iamusermanrol) können dazu verwendet werden, Benutzern Zugriff auf alle Ressourcen zu ermöglichen, die zu einer Ressourcengruppe gehören. Diese Zugriffsrollen werden auch dazu verwendet, Benutzern Zugriffsberechtigungen zu erteilen, mit denen sie Ressourcengruppen verwalten und neue Serviceinstanzen erstellen können, die einer Ressourcengruppe zugewiesen werden.
   * [Cloud Foundry-Organisations- und -Bereichsrollen](/docs/iam/cfaccess.html#cfroles) können dazu verwendet werden, Benutzern Zugriff auf Serviceinstanzen zu ermöglichen, die sich in einem Cloud Foundry-Bereich befinden.
-  * Berechtigungen der klassischen Infrastruktur können dazu verwendet werden, Benutzern differenziertere [Berechtigungen](/docs/iam/infrastructureaccess.html#infrapermission) für die klassische Infrastruktur zu erteilen. Gerätezugriff und VPN-Teilnetzzugriff werden separat zugewiesen. 
+  * Berechtigungen der klassischen Infrastruktur können dazu verwendet werden, Benutzern differenziertere [Berechtigungen](/docs/iam/infrastructureaccess.html#infrapermission) für die klassische Infrastruktur zu erteilen. Gerätezugriff und VPN-Teilnetzzugriff werden separat zugewiesen.
