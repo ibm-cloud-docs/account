@@ -4,7 +4,7 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-11-15" 
+lastupdated: "2018-12-02" 
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-11-15"
 # Einstellungen für 'Unterstützung in der EU' und 'HIPAA-Unterstützung' aktivieren
 {: #eu-hipaa-supoorted}
 
-Als Kontoeigner können Sie für Ihr Konto die Einstellungen 'Unterstützung in der EU' und 'HIPAA-Unterstützung' aktivieren. Eine Aktivierung der Einstellung 'Unterstützung in der EU' kann z. B. sinnvoll sein, wenn Sie Ihre Ressourcen für die Verarbeitung von personenbezogenen Daten von EU-Bürgern verwenden. Darüber hinaus können Sie die Einstellung 'HIPAA-Unterstützung' aktivieren, wenn Sie planen, PHI-Daten (Protected Health Information, geschützte Gesundheitsdaten) in Services zu verwenden, die mit HIPAA-Unterstützung arbeiten.
+Als Kontoeigner können Sie für Ihr Konto die Einstellungen 'Unterstützung in der EU' und 'HIPAA-Unterstützung' aktivieren. Eine Aktivierung der Einstellung 'Unterstützung in der EU' kann z. B. sinnvoll sein, wenn Sie Ihre Ressourcen für die Verarbeitung von personenbezogenen Daten von EU-Bürgern verwenden. Darüber hinaus können Sie die Einstellung 'HIPAA-Unterstützung' aktivieren, wenn Sie planen, PHI-Daten (Protected Health Information, geschützte Gesundheitsdaten) in Services zu verwenden, die mit HIPAA-Unterstützung arbeiten. 
 {:shortdesc}
 
 
@@ -28,28 +28,28 @@ Mit der aktivierten Option 'Unterstützung in der EU' wird die Unterstützung de
 
 Durch die Aktivierung dieser Einstellung verfügen die Services mit Unterstützung in der EU über eine stringenten Zugriffssteuerung, um sicherzustellen, dass die von Ihnen gespeicherten und verarbeiteten Daten nur von IBM Support Teams innerhalb der EU bearbeitet und gesteuert werden. Wenn {{site.data.keyword.Bluemix_notm}}-Experten außerhalb der EU-Region Zugriff auf diese Daten benötigen, wird die Zugriffsanforderung von einem Mitglied des Support-Teams in der EU überprüft. Dem Cloud-Experten des globalen Teams wird von einem Mitarbeiter des europäischen Support-Teams nur der erforderliche Zugriff auf das angeforderte System ermöglicht. Dieser Zugriff ist nur in einem bestimmten Zeitrahmen gestattet und ist nach Ablauf dieser Zeit nicht mehr möglich. Während dieses Prozesses sind Ihre Daten immer geschützt.
 
-  1. Rufen Sie in der {{site.data.keyword.Bluemix_notm}}-Konsole **Verwalten > Konto** auf und wählen Sie **Kontoeinstellungen** aus. 
+  1. Rufen Sie in der {{site.data.keyword.Bluemix_notm}}-Konsole **Verwalten > Konto** auf und wählen Sie **Kontoeinstellungen** aus.
   2. Klicken Sie auf **Ein**.
-  3. Lesen Sie die Informationen zum Aktivieren der Einstellung und wählen Sie **Ich habe die Bedingungen zur Kenntnis genommen und stimme zu.** aus. 
+  3. Lesen Sie die Informationen zum Aktivieren der Einstellung und wählen Sie **Ich habe die Bedingungen zur Kenntnis genommen und stimme zu.** aus.
   4. Klicken Sie auf **Ein**.
 
-  Nachdem Sie die Einstellung 'Unterstützung in der EU' aktiviert haben, können Sie den Tag `Unterstützung in der EU` verwenden, um den Katalog nach Angeboten zu durchsuchen, die in der EU unterstützte Planungen aufweisen. 
-  {: tip}
+   Nachdem Sie die Einstellung 'Unterstützung in der EU' aktiviert haben, können Sie den Tag 'Unterstützung in der EU' verwenden, um den Katalog nach Angeboten zu durchsuchen, die in der EU unterstützte Planungen aufweisen.
+   {: tip}
 
 
 ## Einstellung 'HIPAA-Unterstützung' aktivieren
 {: #enabling-hipaa}
 
-Sie können die Einstellung 'HIPAA-Unterstützung' aktivieren, um sensible Workloads auszuführen, die der Regulierung der US-amerikanischen HIPAA-Standards (HIPAA = Health Insurance Portability and Accountability Act) unterliegen. Wenn Sie diese Einstellung aktivieren, geben Sie an, dass in Ihrem Konto PHI-Daten verarbeitet werden, die möglicherweise den HIPAA-Vorgaben unterliegen.  
+Sie können die Einstellung 'HIPAA-Unterstützung' aktivieren, um sensible Workloads auszuführen, die der Regulierung der US-amerikanischen HIPAA-Standards (HIPAA = Health Insurance Portability and Accountability Act) unterliegen. Wenn Sie diese Einstellung aktivieren, geben Sie an, dass in Ihrem Konto PHI-Daten verarbeitet werden, die möglicherweise den HIPAA-Vorgaben unterliegen. 
 
-1. Rufen Sie **Verwalten > Konto** auf und wählen Sie **Kontoeinstellung** in der Konsole aus. 
-2. Klicken Sie für die Option 'HIPAA-Unterstützung' auf **Ein**.  
+1. Rufen Sie **Verwalten > Konto** auf und wählen Sie **Kontoeinstellung** in der Konsole aus.
+2. Klicken Sie für die Option 'HIPAA-Unterstützung' auf **Ein**. 
 3. Lesen Sie die Informationen zur Aktivierung dieser Einstellung. 
 
   Nachdem Sie diese Einstellung aktiviert haben, können Sie sie nicht mehr inaktivieren.
   {: important}
    
-4. Wählen Sie **Zustimmen** aus und klicken Sie auf **Senden**.  
+4. Wählen Sie **Zustimmen** aus und klicken Sie auf **Senden**. 
 
-  Nachdem Sie die Einstellung 'HIPAA-fähig' aktiviert haben, können Sie den Tag `HIPAA-fähig` verwenden, um den Katalog nach Angeboten zu durchsuchen, die HIPAA-fähig sind. Darüber hinaus erhalten Sie von {{site.data.keyword.Bluemix_notm}} eine Warnung, falls Sie ein Angebot erstellen möchten, das nicht über HIPAA-Unterstützung verfügt.
-{: tip}
+  Nachdem Sie die Einstellung 'HIPAA-fähig' aktiviert haben, können Sie den Tag 'HIPAA-fähig' verwenden, um den Katalog nach Angeboten zu durchsuchen, die HIPAA-fähig sind.
+  {: tip}
