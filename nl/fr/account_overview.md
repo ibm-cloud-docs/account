@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018
-lastupdated: "2018-11-15"
+  years: 2019
+lastupdated: "2019-01-21"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-11-15"
 # Hiérarchie de compte
 {: #overview}
 
-Votre compte {{site.data.keyword.Bluemix}} inclut plusieurs composants et systèmes interagissant les uns avec les autres. Découvrez comment certains composants sont connectés et comment l'accès fonctionne dans votre compte.
+Votre compte {{site.data.keyword.Bluemix}} inclut plusieurs composants et systèmes interagissant les uns avec les autres. Découvrez comment certains composants sont connectés et comment l'accès fonctionne dans votre compte. 
 {:shortdesc}
 
 <a href="https://console.bluemix.net/docs/api/content/account/images/account_diagram.svg">
