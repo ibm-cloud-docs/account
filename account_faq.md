@@ -137,6 +137,8 @@ Your account might be deactivated for the following reasons:
 - An authorized user canceled the account.
 - The account is suspended. At the discretion of IBM, accounts that violate the acceptable usage behaviors of the {{site.data.keyword.Bluemix_notm}} services can be disabled without notice. Some services can be restored if users correct their usage behaviors after they're notified of the offensive action.
 
+If you believe your account was deactivated in error, contact support by calling 1-866-325-0045 and selecting the third option.
+
 ## How do I get support?
 {: #contactsupport}
 {: faq}
