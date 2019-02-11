@@ -4,7 +4,7 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-11-15" 
+lastupdated: "2018-12-02" 
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-11-15"
 # Activation des paramètres pris en charge dans l'Union Européenne et pour la loi HIPAA
 {: #eu-hipaa-supoorted}
 
-Si vous êtes propriétaire du compte, vous pouvez faire en sorte que votre compte soit pris en charge pour l'Union Européenne ainsi que pour la loi HIPAA. Vous pouvez décider, par exemple, d'activer le paramètre Support dans l'Union européenne si vous utilisez des ressources pour le traitement de données personnelles de citoyens européens. Vous pouvez également choisir d'activer le paramètre Loi HIPAA prise en charge si vous planifiez d'inclure des renseignements médicaux personnels (PHI, Protected Health Information) dans les services activés par HIPAA.
+Si vous êtes propriétaire du compte, vous pouvez faire en sorte que votre compte soit pris en charge pour l'Union Européenne ainsi que pour la loi HIPAA. Vous pouvez décider, par exemple, d'activer le paramètre Support dans l'Union européenne si vous utilisez des ressources pour le traitement de données personnelles de citoyens européens. Vous pouvez également choisir d'activer le paramètre Loi HIPAA prise en charge si vous planifiez d'inclure des renseignements médicaux personnels (PHI, Protected Health Information) dans les services activés par HIPAA. 
 {:shortdesc}
 
 
@@ -33,8 +33,8 @@ En activant ce paramètre, les services pris en charge pour l'Union européenne 
   3. Lisez les informations sur l'activation de ce paramètre et sélectionnez **Je comprends et j'accepte ces conditions**.
   4. Cliquez sur **Activer**.
 
-  Après avoir activé le paramètre Support dans l'Union européenne, vous pouvez utiliser la balise `Support dans l'Union européenne` pour rechercher dans le catalogue des offres avec des plans couvrant l'Union européenne. 
-  {: tip}
+   Après avoir activé le paramètre Support dans l'Union européenne, vous pouvez utiliser la balise correspondante pour rechercher dans le catalogue des offres avec des plans couvrant l'Union européenne.
+   {: tip}
 
 
 ## Activation du paramètre de prise en charge HIPAA
@@ -51,5 +51,5 @@ Vous pouvez choisir d'activer le paramètre Loi HIPAA prise en charge pour l'ex�
    
 4. Sélectionnez **Accepter** puis cliquez sur **Soumettre**. 
 
-  Après avoir activé le paramètre de prise en charge HIPAA, vous pouvez utiliser la balise `Activé pour HIPAA` pour rechercher dans le catalogue des offres activées pour HIPAA. De plus, {{site.data.keyword.Bluemix_notm}} vous avertit si vous choisissez de créer une offre qui n'est pas activée pour HIPAA.
+  Après avoir activé le paramètre Loi HIPAA prise en charge, vous pouvez utiliser la balise HIPAA activé pour rechercher dans le catalogue des offres activées pour HIPAA.
   {: tip}
