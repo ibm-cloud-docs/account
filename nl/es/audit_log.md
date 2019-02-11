@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-12"
+lastupdated: "2019-02-05"
 
 ---
 
@@ -23,10 +23,13 @@ Si tiene una cuenta de infraestructura clásica, puede gestionar sucesos de rép
 
 
 ## Visualización del registro de auditoría
+{: #view-audit-log}
 
-Para ver el registro de auditoría, vaya a **Cuenta > Gestionar** y seleccione **Registro de auditoría**. El registro de auditoría muestra inicialmente las últimas 25 interacciones realizadas por los usuarios en la cuenta. Puede ver hasta 200 interacciones en cualquier momento. Expanda los artículos por menú de página para ver más resultados. 
+Para ver el registro de auditoría, vaya a **Gestionar > Cuenta** y seleccione **Registro de auditoría**. El registro de auditoría muestra inicialmente las últimas 25 interacciones realizadas por los usuarios en la cuenta. Puede ver hasta 200 interacciones en cualquier momento. Expanda los artículos por menú de página para ver más resultados. 
 
 ### Visualización de registros de acceso de un usuario
+{: #view-access-logs}
+
 Desde la página del registro de auditoría también puede ver los datos de cada intento de acceso que realiza un usuario específico. Los registros muestran una indicación de fecha y hora y la dirección IP por cada intento de acceso. Utilice los pasos siguientes para ver los Registros de acceso de un usuario.
 
 1. Vaya a **Gestionar > Cuenta** y seleccione **Registro de auditoría**. 

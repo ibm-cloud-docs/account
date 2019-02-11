@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
 lastupdated: "2018-12-02" 
 
@@ -15,7 +15,7 @@ lastupdated: "2018-12-02"
 
 
 # Habilitación de valores soportados UE e HIPAA
-{: #eu-hipaa-supoorted}
+{: #eu-hipaa-supported}
 
 Si es el propietario de la cuenta, puede habilitar la cuenta para que tenga soporte en UE e HIPAA. Puede optar por habilitar el valor Soporte en la UE, por ejemplo si utiliza recursos para procesar datos personales de ciudadanos europeos. Puede elegir habilitar el valor Soporte en HIPAA si tiene pensado incluir la información sanitaria protegida (PHI) en los servicios habilitados para HIPAA. 
 {:shortdesc}
