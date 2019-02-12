@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2015, 2018
+  years: 2015, 2019
 
-lastupdated: "2018-12-04"
+lastupdated: "2019-02-06"
 
 ---
 
@@ -35,7 +35,7 @@ Será possível criar um caso de suporte se você obtiver um erro ao tentar cria
 {: #cloud-foundry}
 {: faq}
 
-O Cloud Foundry é uma opção de plataforma como serviço (PaaS) de software livre disponível por meio do {{site.data.keyword.Bluemix_notm}} Public para construir e implementar aplicativos na nuvem. As organizações e os espaços do Cloud Foundry são usados para organizar recursos e apps disponíveis em regiões específicas. 
+O Cloud Foundry é uma opção de plataforma como serviço (PaaS) de software livre disponível por meio do {{site.data.keyword.Bluemix_notm}} Public para construir e implementar aplicativos na nuvem. As organizações e os espaços do Cloud Foundry são usados para organizar recursos e apps disponíveis em regiões específicas.
 
 Para obter mais informações sobre o gerenciamento de organizações e espaços, consulte [Incluindo organizações e espaços](/docs/account/orgs_spaces.html#orgsspacesusers). Se você estiver interessado em aprender mais sobre como fornecer acesso a recursos em um espaço do Cloud Foundry, consulte [Acesso ao Cloud Foundry](/docs/iam/cfaccess.html#cfaccess).
 
@@ -43,7 +43,7 @@ Para obter mais informações sobre o gerenciamento de organizações e espaços
 {: #move-org-diff-account}
 {: faq}
 
-Atualmente, não é possível migrar uma organização para uma conta diferente. 
+Atualmente, não é possível migrar uma organização para uma conta diferente.
 
 ## Quais regiões do Cloud Foundry posso usar?
 {: #whichregions}
@@ -95,30 +95,28 @@ Para fazer upgrade da conta Pré-paga para uma conta de Assinatura, entre em con
 {: #updatepayment}
 {: faq}
 
-É possível atualizar facilmente o método de pagamento que está associado à sua conta faturável. No console, acesse **Gerenciar > Faturamento e uso > Pagamentos > Método de pagamento**. 
+É possível atualizar facilmente o método de pagamento que está associado à sua conta faturável. No console, acesse **Gerenciar > Faturamento e uso > Pagamentos > Método de pagamento**.
 
-## Como reconfiguro a minha senha? 
+## Como reconfiguro a minha senha?
 {: #reset-password}
 {: faq}
 
-Para reconfigurar sua senha da conta, acesse o ícone Avatar ![Ícone Avatar](../icons/i-avatar-icon.svg) > **Perfil e configurações** e selecione **Configurações de login**. Em seguida, clique em **Mudar ou reconfigurar** no tile de informações sobre o usuário da conta. 
+Para reconfigurar sua senha da conta, acesse o ícone Avatar ![Ícone Avatar](../icons/i-avatar-icon.svg) > **Perfil e configurações** e selecione **Configurações de login**. Em seguida, clique em **Mudar ou reconfigurar** no tile de informações sobre o usuário da conta.
 
 Para reconfigurar sua senha da VPN, conclua as etapas a seguir:
 
-  1. Acesse **Gerenciar > Acesso (IAM)** e selecione **Usuários**. 
-  2. Selecione o usuário. 
-  3. Na seção de sub-redes VPN, clique no ícone Editar ![Ícone Editar](../icons/icon_write.svg) para inserir uma nova senha da VPN. 
-  5. Clique em **Aplicar**. 
+  1. Acesse **Gerenciar > Acesso (IAM)** e selecione **Usuários**.
+  2. Selecione o usuário.
+  3. Na seção de sub-redes VPN, clique no ícone Editar ![Ícone Editar](../icons/icon_write.svg) para inserir uma nova senha da VPN.
+  5. Clique em **Aplicar**.
 
 ## Como cancelar minha conta?
 {: #cancelaccount}
 {: faq}
 
-Se você tiver um tipo de conta elegível, acesse **Gerenciar** > **Conta** > **Configurações da conta** e clique em **Desativar conta**. 
+Para contas Pré-pagas ou de Assinatura, a maneira mais rápida de cancelar sua conta é entrar em contato conosco por meio do [bate-papo em tempo real](https://{DomainName}/unifiedsupport/supportcenter) ou ligando para 1-866-325-0045 e selecionando a terceira opção. Como alternativa, é possível abrir um caso de suporte.
 
-![Captura de tela de configurações da conta.](images/cancel-faq3.svg "Captura de tela de configurações da conta")
-
-Se você acessar a página **Configurações da conta** e o botão **Desativar conta** não for exibido, será possível entrar em contato ligando para 1-866-325-0045 e selecionando a terceira opção ou abrindo um caso de suporte.
+Para cancelar uma conta Lite, acesse [Configurações da conta](https://cloud.ibm.com/account/settings) e clique em **Desativar conta**.
 
 ## Como excluir minha conta?
 {: #deleteaccount}
@@ -132,7 +130,7 @@ Entre em contato com o Suporte do [{{site.data.keyword.Bluemix_notm}} ![Ícone d
 
 Sua conta provavelmente está desativada porque ela foi cancelada por um usuário autorizado ou a conta foi suspensa.  
 
-A critério da IBM, as contas que violam os comportamentos de uso aceitáveis dos serviços do {{site.data.keyword.Bluemix_notm}} podem ser desativadas sem aviso. Alguns serviços poderão ser restaurados se os usuários corrigirem seus comportamentos de uso depois de serem notificados sobre a ação ofensiva. 
+A critério da IBM, as contas que violam os comportamentos de uso aceitáveis dos serviços do {{site.data.keyword.Bluemix_notm}} podem ser desativadas sem aviso. Alguns serviços poderão ser restaurados se os usuários corrigirem seus comportamentos de uso depois de serem notificados sobre a ação ofensiva.
 
 ## Como obter suporte?
 {: #contactsupport}
@@ -158,7 +156,7 @@ Depois de vincular a conta, use o seu IBMid para efetuar login no console do {{s
 
 Depois de vincular sua conta, você mantém o mesmo nível de suporte de quando inclui a plataforma {{site.data.keyword.Bluemix_notm}} em sua conta.
 
-## Há outras maneiras para obter ajuda com a vinculação de minha conta? 
+## Há outras maneiras para obter ajuda com a vinculação de minha conta?
 {: #al_morehelp}
 {: faq}
 
@@ -174,15 +172,15 @@ Se você tem múltiplas contas do SoftLayer, vincule as que têm uma conta de pl
 
 Se você não tem uma conta da plataforma {{site.data.keyword.Bluemix_notm}} correspondente e uma conta IBMid associada, uma nova conta do SoftLayer pode ser criada para vinculá-las.
 
-## Há incentivos para vincular minhas contas? 
+## Há incentivos para vincular minhas contas?
 {: #al_incent}
 {: faq}
 
-Ao vincular suas contas, é possível usar um crédito promocional de US$ 200 para experimentar os serviços {{site.data.keyword.Bluemix_notm}}. 
+Ao vincular suas contas, é possível usar um crédito promocional de US$ 200 para experimentar os serviços {{site.data.keyword.Bluemix_notm}}.
 
-Para saber mais sobre o crédito promocional de U$ 200, consulte [Conta pré-paga](/docs/account/index.html#paygo). 
+Para saber mais sobre o crédito promocional de U$ 200, consulte [Conta pré-paga](/docs/account/index.html#paygo).
 
-## O que a inclusão dos serviços de plataforma do {{site.data.keyword.Bluemix_notm}} em minha conta do SoftLayer significa? 
+## O que a inclusão dos serviços de plataforma do {{site.data.keyword.Bluemix_notm}} em minha conta do SoftLayer significa?
 {: #al_owaffslacct}
 {: faq}
 
@@ -190,7 +188,7 @@ Isso significa que a conta tem acesso a todas as ofertas da plataforma {{site.da
 
 Para obter mais informações sobre como ser uma conta mestre, veja [Trabalhando com usuários](/docs/iam/iamusermanage.html#iamusermanage) para obter mais informações.
 
-## Como a vinculação de contas afeta meu ID da conta principal do SoftLayer? 
+## Como a vinculação de contas afeta meu ID da conta principal do SoftLayer?
 {: #al_howaffslmastacct}
 {: faq}
 
@@ -204,7 +202,7 @@ Se você tiver mais de uma conta, será possível clicar no nome da conta para s
 
 ![Captura de tela do alternador de conta.](images/account-faq.svg "Captura de tela do alternador de conta")
 
-## Posso alternar proprietários de conta? 
+## Posso alternar proprietários de conta?
 {: #switch-account-owners}
 {: faq}
 
@@ -214,9 +212,9 @@ Não é possível alternar o proprietário de uma conta, mas é possível mudar 
 {: #batch-registration}
 {:faq}
 
-Ao registrar usuários para {{site.data.keyword.Bluemix_notm}}, deve-se registrar cada usuário individualmente. O {{site.data.keyword.Bluemix_notm}} não suporta registro de lote de usuários. 
+Ao registrar usuários para {{site.data.keyword.Bluemix_notm}}, deve-se registrar cada usuário individualmente. O {{site.data.keyword.Bluemix_notm}} não suporta registro de lote de usuários.
 
-Acesse [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com) e clique em **Criar uma conta do {{site.data.keyword.Bluemix_notm}}**. Em seguida, conclua o formulário de registro da conta para cada usuário individual.	
+Acesse [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com) e clique em **Criar uma conta do {{site.data.keyword.Bluemix_notm}}**. Em seguida, conclua o formulário de registro da conta para cada usuário individual.
 
 ## O que são tags?
 {: #know-about-tags}
@@ -224,11 +222,11 @@ Acesse [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com) e clique em **Cria
 
 É possível usar tags para organizar e visualizar recursos em sua conta, filtrando tags de sua lista de recursos. Para obter mais informações, veja [Recursos de identificação](/docs/resources/tagging_resources.html#tagging).
 
-## Quem pode visualizar as tags em uma conta? 
+## Quem pode visualizar as tags em uma conta?
 {: #tags-visibility-account}
 {: faq}
 
-As tags são visíveis em toda a sua conta. Se você tiver permissão para ver um recurso, será possível visualizar todas as tags que estiverem anexadas. Para obter mais informações, veja [Concedendo aos usuários acesso a recursos de tag](/docs/resources/grant-tag-access.html#access). 
+As tags são visíveis em toda a sua conta. Se você tiver permissão para ver um recurso, será possível visualizar todas as tags que estiverem anexadas. Para obter mais informações, veja [Concedendo aos usuários acesso a recursos de tag](/docs/resources/grant-tag-access.html#access).
 
 ## Quais permissões eu preciso para incluir ou remover tags?
 {: #permissions-add-remove-tags}

@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
 lastupdated: "2018-12-02" 
 
@@ -15,7 +15,7 @@ lastupdated: "2018-12-02"
 
 
 # Ativando as configurações suportadas da UE e HIPAA
-{: #eu-hipaa-supoorted}
+{: #eu-hipaa-supported}
 
 Se você for o proprietário da conta, será possível ativar sua conta para que seja suportada pela UE e HIPAA. É possível optar por ativar a configuração
 Suportado pela UE, por exemplo, se você usar recursos para processar dados pessoais para os cidadãos europeus. E você pode escolher ativar a configuração Suportado pelo HIPAA se planejar incluir Informação Protegida de Saúde (PHI) nos serviços ativados pelo HIPAA. 
@@ -34,7 +34,7 @@ Ativando essa configuração, os serviços suportados pela UE têm controles de 
   3. Leia as informações sobre a ativação dessa configuração e selecione **Eu entendo e concordo com estes termos**.
   4. Clique em **Ativado**.
 
-   Depois de ativar a configuração Suportado pela UE, é possível usar a tag Suportado pela UE para procurar no catálogo as ofertas que tenham planos suportados pela UE.
+   Depois de ativar a configuração Suportado pela UE, é possível usar a tag Suportado pela UE para procurar no catálogo as ofertas que tenham planos suportados pela UE. 
    {: tip}
 
 

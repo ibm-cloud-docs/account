@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-12"
+lastupdated: "2019-02-05"
 
 ---
 
@@ -23,10 +23,13 @@ Se você tiver uma conta de infraestrutura clássica, será possível monitorar 
 
 
 ## Visualizando seu log de auditoria
+{: #view-audit-log}
 
-Para visualizar seu log de auditoria, acesse **Conta > Gerenciar** e selecione **Log de auditoria**. O log de auditoria exibe inicialmente as últimas 25 interações que foram tomadas pelos usuários na conta. É possível visualizar até 200 interações a qualquer momento. Expanda o menu itens por página para ver mais resultados. 
+Para visualizar seu log de auditoria, acesse **Gerenciar > Conta** e selecione **Log de auditoria**. O log de auditoria exibe inicialmente as últimas 25 interações que foram tomadas pelos usuários na conta. É possível visualizar até 200 interações a qualquer momento. Expanda o menu itens por página para ver mais resultados. 
 
 ### Visualizando logs de acesso de um usuário
+{: #view-access-logs}
+
 Na página de log de auditoria, também é possível ver dados para cada tentativa de acesso que é feita por um usuário específico. Os logs exibem um registro de data e hora e o endereço IP para cada tentativa de acesso. Use as etapas a seguir para visualizar Logs de acesso de um usuário.
 
 1. Acesse **Gerenciar > Conta** e selecione **Log de auditoria**. 
