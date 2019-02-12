@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2018, 2019
+  years: 2018
 
 lastupdated: "2018-12-02" 
 
@@ -15,7 +15,7 @@ lastupdated: "2018-12-02"
 
 
 # Einstellungen für 'Unterstützung in der EU' und 'HIPAA-Unterstützung' aktivieren
-{: #eu-hipaa-supported}
+{: #eu-hipaa-supoorted}
 
 Als Kontoeigner können Sie für Ihr Konto die Einstellungen 'Unterstützung in der EU' und 'HIPAA-Unterstützung' aktivieren. Eine Aktivierung der Einstellung 'Unterstützung in der EU' kann z. B. sinnvoll sein, wenn Sie Ihre Ressourcen für die Verarbeitung von personenbezogenen Daten von EU-Bürgern verwenden. Darüber hinaus können Sie die Einstellung 'HIPAA-Unterstützung' aktivieren, wenn Sie planen, PHI-Daten (Protected Health Information, geschützte Gesundheitsdaten) in Services zu verwenden, die mit HIPAA-Unterstützung arbeiten. 
 {:shortdesc}
@@ -33,7 +33,7 @@ Durch die Aktivierung dieser Einstellung verfügen die Services mit Unterstützu
   3. Lesen Sie die Informationen zum Aktivieren der Einstellung und wählen Sie **Ich habe die Bedingungen zur Kenntnis genommen und stimme zu.** aus.
   4. Klicken Sie auf **Ein**.
 
-   Nachdem Sie die Einstellung 'Unterstützung in der EU' aktiviert haben, können Sie den Tag 'Unterstützung in der EU' verwenden, um den Katalog nach Angeboten zu durchsuchen, die in der EU unterstützte Planungen aufweisen. 
+   Nachdem Sie die Einstellung 'Unterstützung in der EU' aktiviert haben, können Sie den Tag 'Unterstützung in der EU' verwenden, um den Katalog nach Angeboten zu durchsuchen, die in der EU unterstützte Planungen aufweisen.
    {: tip}
 
 
