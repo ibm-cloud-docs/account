@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2018
-lastupdated: "2018-11-19"
+  years: 2015, 2019
+lastupdated: "2019-02-13"
 
 ---
 
@@ -62,8 +62,8 @@ Check out the following list of key features that are available in a Lite accoun
    * You receive email notifications about your account status and quota limits.
    * Your Cloud Foundry apps can access up to 256 MB of free, instantaneous runtime memory.
    * You can provision one instance of any service in the [{{site.data.keyword.Bluemix_notm}} catalog ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/catalog/?search=label:lite%20lite){: new_window} that has a Lite plan.
-   * After 10 days of no development activity, your apps go to sleep. You can start working on new apps without having to worry about exceeding memory quota limits.
-   * After 30 days of no development activity, your service instances with Lite plans are deleted. This way, you don't have to manage deleting inactive instances before you create new ones.
+   * After 10 days of no development activity, your apps go to sleep. You can wake up your apps by continuing to work on them.
+   * After 30 days of no development activity, your service instances with Lite plans are deleted.
 
 ### Upgrading your Lite account
 {: #upgrade-lite-account}
@@ -88,7 +88,7 @@ To upgrade your Pay-As-You-Go account to a Subscription account, contact [IBM Sa
 ## Subscription account
 {: #subscription-account}
 
-With a Subscription account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. You commit to a combined a minimum spending amount each month and receive a subscription discount that is applied to that minimum charge. You're charged the non-discounted rate for any usage that exceeds your total subscription amount. To view your subscription, go to **Manage > Billing and usage**, and select **Subscriptions**. 
+With a Subscription account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. You commit to a combined a minimum spending amount each month and receive a subscription discount that is applied to that minimum charge. You're charged the non-discounted rate for any usage that exceeds your total subscription amount. To view your subscription, go to **Manage > Billing and usage**, and select **Subscriptions**.
 
 If you have a subscription account, you can create most of the services that are available from the [IBM Cloud catalog](https://cloud.ibm.com/catalog){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon"). However, some services use a specific pricing plan that requires you to purchase it separately.
 
