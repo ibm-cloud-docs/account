@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-12"
+lastupdated: "2019-02-05"
 
 ---
 
@@ -23,10 +23,13 @@ Si vous avez un compte d'infrastructure classique, vous pouvez surveiller les é
 
 
 ## Affichage de votre journal d'audit
+{: #view-audit-log}
 
-Pour afficher votre journal d'audit, accédez à **Compte > Gérer** et sélectionnez **Journal d'audit**. Le journal d'audit affiche à l'origine les 25 dernières interactions effectuées sur le compte par des utilisateurs. Vous pouvez afficher jusqu'à 200 interactions à tout moment. Développez le menu Eléments par page pour afficher plus de résultats. 
+Pour afficher votre journal d'audit, accédez à **Gérer > Compte** puis sélectionnez **Journal d'audit**. Le journal d'audit affiche à l'origine les 25 dernières interactions effectuées sur le compte par des utilisateurs. Vous pouvez afficher jusqu'à 200 interactions à tout moment. Développez le menu Eléments par page pour afficher plus de résultats. 
 
 ### Affichage des journaux d'accès d'un utilisateur
+{: #view-access-logs}
+
 Sur la page Journal d'audit, vous pouvez également voir les données correspondant à chaque tentative d'accès effectuée par un utilisateur spécifique. Les journaux affichent une date et un horodatage, ainsi que l'adresse IP pour chaque tentative d'accès. Procédez comme suit pour afficher les journaux d'accès d'un utilisateur :
 
 1. Accédez à **Gérer > Compte** puis sélectionnez **Journal d'audit**. 

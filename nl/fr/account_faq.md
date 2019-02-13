@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2015, 2018
+  years: 2015, 2019
 
-lastupdated: "2018-12-04"
+lastupdated: "2019-02-06"
 
 ---
 
@@ -35,7 +35,7 @@ Vous pouvez créer un cas de support si une erreur est générée lorsque vous t
 {: #cloud-foundry}
 {: faq}
 
-Cloud Foundry est une plateforme sous forme de services (PaaS) à source ouverte disponible via {{site.data.keyword.Bluemix_notm}} Public pour la génération et le déploiement d'applications sur le cloud. Les organisations et les espaces Cloud Foundry sont utilisés pour organiser les ressources et les applications disponibles dans des régions spécifiques. 
+Cloud Foundry est une plateforme sous forme de services (PaaS) à source ouverte disponible via {{site.data.keyword.Bluemix_notm}} Public pour la génération et le déploiement d'applications sur le cloud. Les organisations et les espaces Cloud Foundry sont utilisés pour organiser les ressources et les applications disponibles dans des régions spécifiques.
 
 Pour plus d'informations sur la gestion des organisations et des espaces, voir [Ajout d'organisations et d'espaces](/docs/account/orgs_spaces.html#orgsspacesusers). Pour plus d'informations sur l'accès aux ressources d'un espace Cloud Foundry, voir [Accès Cloud Foundry](/docs/iam/cfaccess.html#cfaccess).
 
@@ -43,7 +43,7 @@ Pour plus d'informations sur la gestion des organisations et des espaces, voir [
 {: #move-org-diff-account}
 {: faq}
 
-Actuellement, vous ne pouvez pas faire migrer d'organisation vers un compte différent. 
+Actuellement, vous ne pouvez pas faire migrer d'organisation vers un compte différent.
 
 ## Quelles régions Cloud Foundry puis-je utiliser ?
 {: #whichregions}
@@ -94,30 +94,28 @@ Pour mettre à niveau votre compte Paiement à la carte en compte Abonnement, pr
 {: #updatepayment}
 {: faq}
 
-Vous pouvez facilement mettre à jour le mode de paiement associé à votre compte facturable. Dans la console, accédez à **Gérer > Facturation et utilisation > Paiements > Mode de règlement**. 
+Vous pouvez facilement mettre à jour le mode de paiement associé à votre compte facturable. Dans la console, accédez à **Gérer > Facturation et utilisation > Paiements > Mode de règlement**.
 
-## Comment réinitialiser mon mot de passe ? 
+## Comment réinitialiser mon mot de passe ?
 {: #reset-password}
 {: faq}
 
-Pour réinitialiser votre mot de passe de compte, accédez à l'icône Avatar ![Icône Avatar](../icons/i-avatar-icon.svg) > **Profil et paramètres** puis sélectionnez **Paramètres de connexion**. Cliquez ensuite sur **Modifier ou Réinitialiser** dans la section d'informations Utilisateurs du compte. 
+Pour réinitialiser votre mot de passe de compte, accédez à l'icône Avatar ![Icône Avatar](../icons/i-avatar-icon.svg) > **Profil et paramètres** puis sélectionnez **Paramètres de connexion**. Cliquez ensuite sur **Modifier ou Réinitialiser** dans la section d'informations Utilisateurs du compte.
 
 Pour réinitialiser votre mot de passe VPN, procédez comme suit :
 
-  1. Accédez à **Gérer > Accès (IAM)** puis sélectionnez **Utilisateurs**. 
-  2. Sélectionnez l'utilisateur. 
-  3. Dans la section Sous-réseaux VPN, cliquez sur l'icône Editer ![Icône Editer](../icons/icon_write.svg) pour entrer un nouveau mot de passe VPN. 
-  5. Cliquez sur **Appliquer**. 
+  1. Accédez à **Gérer > Accès (IAM)** puis sélectionnez **Utilisateurs**.
+  2. Sélectionnez l'utilisateur.
+  3. Dans la section Sous-réseaux VPN, cliquez sur l'icône Editer ![Icône Editer](../icons/icon_write.svg) pour entrer un nouveau mot de passe VPN.
+  5. Cliquez sur **Appliquer**.
 
 ## Comment résilier mon compte ?
 {: #cancelaccount}
 {: faq}
 
-Si vous avez un type de compte éligible, sélectionnez **Gérer** > **Compte** > **Paramètres de compte** puis cliquez sur **Désactiver le compte**. 
+Pour les comptes Paiement à la carte ou Abonnement, la manière la plus rapide d'annuler votre compte consiste à nous contacter via la [discussion en ligne](https://{DomainName}/unifiedsupport/supportcenter) ou en nous appelant au numéro 1-866-325-0045 et en sélectionnant la troisième option. Vous pouvez également ouvrir un cas de support.
 
-![Capture d'écran Paramètres de compte.](images/cancel-faq3.svg "Capture d'écran Paramètres de compte")
-
-Si vous accédez à la page **Paramètres de compte** et que le bouton **Désactiver le compte** ne s'affiche pas, vous pouvez appeler le numéro 1-866-325-0045 et sélectionner la troisième option ou ouvrir un cas de support.
+Pour annuler un compte Lite, accédez à [Paramètres de compte](https://cloud.ibm.com/account/settings) et cliquez sur **Désactiver le compte**.
 
 ## Comment supprimer mon compte ?
 {: #deleteaccount}
@@ -131,7 +129,7 @@ Contactez le [service de support {{site.data.keyword.Bluemix_notm}}![Icône de l
 
 Il est fort possible que votre compte soit désactivé car un utilisateur autorisé l'a annulé ou car le compte est suspendu.  
 
-IBM peut, à sa seule discrétion, désactiver sans aucun préavis les comptes ne respectant pas les comportements d'utilisation acceptables des services {{site.data.keyword.Bluemix_notm}}. Certains services peuvent être restaurés si les utilisateurs modifient leur comportement après avoir reçu une notification signalant l'action fautive. 
+IBM peut, à sa seule discrétion, désactiver sans aucun préavis les comptes ne respectant pas les comportements d'utilisation acceptables des services {{site.data.keyword.Bluemix_notm}}. Certains services peuvent être restaurés si les utilisateurs modifient leur comportement après avoir reçu une notification signalant l'action fautive.
 
 ## A quelles formes de support peut-on accéder ?
 {: #contactsupport}
@@ -157,7 +155,7 @@ Une fois que avez lié votre compte, utilisez votre IBMid pour établir une conn
 
 Une fois que vous avez lié votre compte, vous conservez le même niveau de support lorsque vous ajoutez la plateforme {{site.data.keyword.Bluemix_notm}} à votre compte.
 
-## Existe-t-il d'autres moyens pour obtenir de l'aide relative à la liaison de mon compte ? 
+## Existe-t-il d'autres moyens pour obtenir de l'aide relative à la liaison de mon compte ?
 {: #al_morehelp}
 {: faq}
 
@@ -173,15 +171,15 @@ Si vous possédez plusieurs comptes SoftLayer, vous devez lier les comptes ayant
 
 Si vous n'avez pas de compte de plateforme {{site.data.keyword.Bluemix_notm}} correspondant et de compte IBMid associé, un nouveau compte SoftLayer peut être créé pour lier les comptes.
 
-## Des primes s'appliquent-elles pour la liaison de mes comptes ? 
+## Des primes s'appliquent-elles pour la liaison de mes comptes ?
 {: #al_incent}
 {: faq}
 
-Lorsque vous liez vos comptes, vous pouvez utiliser un crédit promotionnel de 200 $ afin d'essayer des services {{site.data.keyword.Bluemix_notm}}. 
+Lorsque vous liez vos comptes, vous pouvez utiliser un crédit promotionnel de 200 $ afin d'essayer des services {{site.data.keyword.Bluemix_notm}}.
 
-Pour en savoir plus sur le crédit promotionnel de 200 $, voir la rubrique présentant le [compte Paiement à la carte](/docs/account/index.html#paygo). 
+Pour en savoir plus sur le crédit promotionnel de 200 $, voir la rubrique présentant le [compte Paiement à la carte](/docs/account/index.html#paygo).
 
-## Que se passe-t-il si j'ajoute des services de plateforme {{site.data.keyword.Bluemix_notm}} à mon compte SoftLayer ? 
+## Que se passe-t-il si j'ajoute des services de plateforme {{site.data.keyword.Bluemix_notm}} à mon compte SoftLayer ?
 {: #al_owaffslacct}
 {: faq}
 
@@ -189,7 +187,7 @@ Avec cet ajout, votre compte a accès à toutes les offres de la plateforme {{si
 
 Pour plus d'informations sur la fonction de responsable de compte, voir [Gestion des utilisateurs](/docs/iam/iamusermanage.html#iamusermanage).
 
-## De quelle manière la liaison de compte impacte-t-elle mon ID de compte principal SoftLayer ? 
+## De quelle manière la liaison de compte impacte-t-elle mon ID de compte principal SoftLayer ?
 {: #al_howaffslmastacct}
 {: faq}
 
@@ -203,7 +201,7 @@ Si vous avez plusieurs comptes, vous pouvez cliquer sur votre nom de compte pour
 
 ![Capture d'écran de commutateur de compte.](images/account-faq.svg "Capture d'écran de commutateur de compte")
 
-## Puis-je changer le propriétaire d'un compte ? 
+## Puis-je changer le propriétaire d'un compte ?
 {: #switch-account-owners}
 {: faq}
 
@@ -213,9 +211,9 @@ Non, mais vous pouvez changer les propriétaires des ressources. Pour en savoir 
 {: #batch-registration}
 {:faq}
 
-Lorsque vous enregistrez des utilisateurs pour {{site.data.keyword.Bluemix_notm}}, vous devez enregistrer chaque utilisateur individuellement. {{site.data.keyword.Bluemix_notm}} ne prend pas en charge l'enregistrement d'utilisateurs par lots. 
+Lorsque vous enregistrez des utilisateurs pour {{site.data.keyword.Bluemix_notm}}, vous devez enregistrer chaque utilisateur individuellement. {{site.data.keyword.Bluemix_notm}} ne prend pas en charge l'enregistrement d'utilisateurs par lots.
 
-Accédez à [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com) puis cliquez sur **Créer un compte {{site.data.keyword.Bluemix_notm}}**. Remplissez ensuite le formulaire d'enregistrement de compte pour chaque utilisateur individuel.	
+Accédez à [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com) puis cliquez sur **Créer un compte {{site.data.keyword.Bluemix_notm}}**. Remplissez ensuite le formulaire d'enregistrement de compte pour chaque utilisateur individuel.
 
 ## Qu'est-ce qu'une étiquette ?
 {: #know-about-tags}
@@ -223,11 +221,11 @@ Accédez à [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com) puis cliquez 
 
 Vous pouvez utiliser des étiquettes pour organiser et afficher des ressources de votre compte en filtrant des étiquettes dans votre liste de ressources. Pour plus d'informations, voir [Etiquetage de ressources](/docs/resources/tagging_resources.html#tagging).
 
-## Qui peut voir les étiquettes d'un compte ? 
+## Qui peut voir les étiquettes d'un compte ?
 {: #tags-visibility-account}
 {: faq}
 
-Les étiquettes sont visibles dans votre compte. Si vous êtes autorisé à voir une ressource, vous pouvez également voir toutes les étiquettes qui lui sont associées. Pour plus d'informations, voir [Octroi aux utilisateurs de l'accès leur permettant d'étiqueter des ressources](/docs/resources/grant-tag-access.html#access). 
+Les étiquettes sont visibles dans votre compte. Si vous êtes autorisé à voir une ressource, vous pouvez également voir toutes les étiquettes qui lui sont associées. Pour plus d'informations, voir [Octroi aux utilisateurs de l'accès leur permettant d'étiqueter des ressources](/docs/resources/grant-tag-access.html#access).
 
 ## De quels droits dois-je disposer pour ajouter ou retirer des étiquettes ?
 {: #permissions-add-remove-tags}
