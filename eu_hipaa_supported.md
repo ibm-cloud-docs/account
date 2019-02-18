@@ -4,20 +4,19 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2018-12-02" 
+lastupdated: "2019-01-28" 
 
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:tip: .tip}
 {:important: .important}
-
+{:tip: .tip}
 
 # Enabling EU and HIPAA supported settings
 {: #eu-hipaa-supported}
 
-If you're the account owner, you can enable your account to be EU supported and HIPAA supported. You might choose to enable the EU Supported setting, for example, if you use resources to process personal data for European citizens. And you might choose to enable the HIPAA Supported setting if you plan to include Protected Health Information (PHI) in HIPAA-enabled services. 
+If you're the account owner, you can enable your account to be EU supported and HIPAA supported. You might choose to enable the EU Supported setting, for example, if you use resources to process personal data for European citizens. And you might choose to enable the HIPAA Supported setting if you plan to include Protected Health Information (PHI) in HIPAA-enabled services.
 {:shortdesc}
 
 
@@ -33,23 +32,23 @@ By enabling this setting, EU supported services have strict access controls to e
   3. Read the information about enabling the setting, and select **I understand and agree to these terms**.
   4. Click **On**.
 
-   After you enable the EU Supported setting, you can use the EU Supported tag to search the catalog for offerings that have EU-supported plans. 
+   After you enable the EU Supported setting, you can use the EU Supported tag to search the catalog for offerings that have EU-supported plans.
    {: tip}
 
 
 ## Enabling the HIPAA Supported setting
 {: #enabling-hipaa}
 
-You can choose to enable the HIPAA Supported setting to run sensitive workloads that are regulated under the US Health Insurance Portability and Accountability Act (HIPAA). By enabling this setting, you're indicating that your account processes PHI that might be subject to HIPAA. 
+You can choose to enable the HIPAA Supported setting to run sensitive workloads that are regulated under the US Health Insurance Portability and Accountability Act (HIPAA). By enabling this setting, you're indicating that your account processes PHI that might be subject to HIPAA.
 
 1. Go to **Manage > Account**, and select **Account setting** in the console.
-2. For the HIPAA Supported option, click **On**. 
-3. Read the information about enabling this setting. 
+2. For the HIPAA Supported option, click **On**.
+3. Read the information about enabling this setting.
 
   You can't disable the setting after you enable it.
   {: important}
-   
-4. Select **Accept**, and click **Submit**. 
+
+4. Select **Accept**, and click **Submit**.
 
   After you enable the HIPAA Supported setting, you can use the HIPAA Enabled tag to search the catalog for offerings that are HIPAA enabled.
   {: tip}

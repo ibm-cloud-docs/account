@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2015, 2018
+  years: 2015, 2019
 
-lastupdated: "2018-10-24"
+lastupdated: "2019-02-13"
 ---
 
 {:tsSymptoms: .tsSymptoms}
@@ -34,10 +34,10 @@ You're unable to create a new location because your account type doesn't allow i
 You receive an error message when you try to create a new {{site.data.keyword.Bluemix_notm}} location.
 {: tsSymptoms}
 
-This is likely because you're using a Lite account, which supports development in one public location only. 
+This is likely because you're using a Lite account, which supports development in one public location only.
 {: tsCauses}
 
-To access more locations, upgrade to a billable account. Go to **Manage > Billing and usage**, and select **Payments**. 
+To access more locations, upgrade to a billable account. Go to **Manage > Billing and usage**, and select **Payments**.
 {: tsResolve}
 
 
@@ -50,10 +50,10 @@ You try to create more than one org, and you have a Lite account.
 You receive an error message when you try to create a new organization.
 {: tsSymptoms}
 
-This is likely because you're using a Lite account, which supports development in one organization only. 
+This is likely because you're using a Lite account, which supports development in one organization only.
 {: tsCauses}
 
-To create a new org, upgrade to a billable account. Go to **Manage > Billing and usage**, and select **Upgrades**. 
+To create a new org, upgrade to a billable account. Go to **Manage > Billing and usage**, and select **Upgrades**.
 {: tsResolve}
 
 
@@ -173,7 +173,7 @@ To create a space, use one of the following methods:
 {: tsResolve}
 
   * From the console menu bar, click **Manage > Account**, and select **Organizations**. Then, select the organization in which you want to create the space, and click **Create a Space**.
-  * In the Cloud Foundry command line interface, type `cf create-space <space_name> -o <organization_name>`.
+  * In the {{site.data.keyword.Bluemix_notm}} command line interface, type `ibmcloud account space-create <space_name> -o <organization_name>`.
 
 
 ## Why do some apps share a domain name?
@@ -185,9 +185,9 @@ You might notice that several apps share a URL in {{site.data.keyword.Bluemix_no
 This problem might happen when you assign the same URL route for different apps in a space.
 {: tsCauses}
 
-For example, you push the myApp1 app to {{site.data.keyword.Bluemix_notm}} and set the domain to `mynewapp.mybluemix.net`. Then, you push another myApp2 app to the same space and set one of its URL routes to `mynewapp.mybluemix.net`. The route is now mapped to both apps.
+For example, you push the myApp1 app to {{site.data.keyword.Bluemix_notm}} and set the domain to `mynewapp.us-east.cf.appdomain.cloud`. Then, you push another myApp2 app to the same space and set one of its URL routes to `mynewapp.us-east.cf.appdomain.cloud`. The route is now mapped to both apps.
 
-This is supported behavior, and you can use this practice to achieve zero downtime for your app upgrade. For more information, see [How to ensure zero downtime](/docs/overview/zero_downtime.html#zero-downtime). 
+This is supported behavior, and you can use this practice to achieve zero downtime for your app upgrade. For more information, see [How to ensure zero downtime](/docs/overview?topic=overview-zero-downtime).
 {: tsResolve}
 
 
@@ -197,14 +197,15 @@ This is supported behavior, and you can use this practice to achieve zero downti
 
 As an administrator, you can't display every organization to administer them when you use the {{site.data.keyword.Bluemix_notm}} console. You can display and administer only those organizations to which you belong.
 
-As an administrator, you can't view all the organizations from the console. 
+As an administrator, you can't view all the organizations from the console.
 {: tsSymptoms}
 
-This is a limitation of the console. 
+This is a limitation of the console.
 {: tsCauses}
 
-You can use commands such as `cf orgs`, `cf create-org`, and `cf delete-org` from the Cloud Foundry command line interface to manage all the organizations. For a full list of Cloud Foundry commands, enter `cf help`.
+You can use commands such as `ibmcloud account orgs` and `ibmcloud account org-create` from the {{site.data.keyword.Bluemix_notm}} command line interface to manage all the organizations. For a full list of commands, enter `ibmcloud account help`.
 {: tsResolve}
+
 
 ## Why can't I add my credit card information?
 {: #ts_addcc}
@@ -221,6 +222,5 @@ This problem happens when your information isn't completed correctly on the Add 
 Complete the following steps:
 {: tsResolve}
 
-  1. On the Add credit card page, complete all the required fields. 
-  2. Select **I have read and agree to IBM's Terms and Conditions**, then click **Submit**. 
-  
+  1. On the Add credit card page, complete all the required fields.
+  2. Select **I have read and agree to IBM's Terms and Conditions**, then click **Submit**.

@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2017, 2018
-lastupdated: "2018-11-18"
+  years: 2017, 2019
+lastupdated: "2019-01-28"
 
 ---
 
@@ -18,7 +18,7 @@ lastupdated: "2018-11-18"
 Any {{site.data.keyword.Bluemix}} private resource that you create is restricted by default. If you're an administrator for the account, you can choose who can view your resource by adding the user to an inclusion list.
 {:shortdesc: .shortdesc}
 
-You can use the {{site.data.keyword.Bluemix}} [command-line interface (CLI)](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) or console to determine whether you have access to allow users to view a private resource that was added to the account. If you're an account owner, you can give access to a user in your account from the console by assigning an access policy. For more information, see [Managing access to your account](access.html).
+You can use the {{site.data.keyword.Bluemix}} [command-line interface (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) or console to determine whether you have access to allow users to view a private resource that was added to the account. If you're an account owner, you can give access to a user in your account from the console by assigning an access policy. For more information, see [Managing access to your account](/docs/account?topic=account-find-access).
 
 ## Finding your resource
 {: #find-resource}
@@ -89,6 +89,6 @@ If you leave your project or organization, you might want to transfer ownership 
 After you transfer ownership, you can no longer view the resource from your account. Make sure you want to transfer ownership, because this action can't be undone.
 {: important}
 
-You can use the [{{site.data.keyword.Bluemix}} command-line interface (CLI)](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_commands_settings) to transfer ownership of a private resource. Run the following command:
+You can use the [{{site.data.keyword.Bluemix}} command-line interface (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) to transfer ownership of a private resource. Run the following command:
 
 `ibmcloud catalog entry-visibility-set <service-id> --owner <account-id or account-email>`

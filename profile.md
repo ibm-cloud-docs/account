@@ -12,6 +12,7 @@ lastupdated: "2019-02-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
 {:new_window: target="_blank"}
 
 # Setting up your profile
@@ -34,6 +35,7 @@ You can change your profile photo. Go to the **{{site.data.keyword.avatar}}** ic
 {: #ibmid}
 
 An IBMid is a single ID that you use to log in to your {{site.data.keyword.Bluemix_notm}} account for infrastructure, services, and application features. You can't change your IBMid, but you can edit your associated profile information, such as your name, email, phone number, password, or company name. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Profile and settings**. For more information, see [Switching to IBMid and linking accounts](softlayerlink.html).
+
 
 ## Changing your cookie settings
 {: #tracking}

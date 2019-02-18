@@ -22,7 +22,7 @@ lastupdated: "2019-02-13"
 You can change the plan of an {{site.data.keyword.Bluemix}} service if plan changes are enabled for the specific service. You might want to change your plan, for example, to upgrade or reduce your plan. You can change your plan from your service instance dashboard.
 {: shortdesc}
 
-Are you looking for details about upgrading your account type? See [How do I upgrade or change my account type?](/docs/account/account_faq.html#changeacct) for more information.
+Are you looking for details about upgrading your account type? See [How do I upgrade or change my account type?](/docs/account?topic=account-changeacct) for more information.
 {: tip}
 
 You can change the service plans for only certain services. If plan changes are enabled for the service, the service instance dashboard displays a **Plan** option in the navigation. Each service has a different set of next steps to follow if you change your plan.
@@ -59,14 +59,14 @@ As an alternative to the console, you can change a service's plan by using the {
 
 1. Change the plan for your service instance.
 
-   - If the service is RC-enabled, change your plan using the [`ibmcloud resource service-instance-update` command](/docs/cli/reference/ibmcloud/cli_resource_group.html#ibmcloud_commands_resource).
+   - If the service is RC-enabled, change your plan using the [`ibmcloud resource service-instance-update` command](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_resource).
 
      ```
      ibmcloud resource service-instance-update <service_instance_name> --service-plan-id <plan_id>
      ```
      {: codeblock}
 
-   - If the service is not RC-enabled and is therefore based on Cloud Foundry, change your plan using the [`ibmcloud cf update-service` command](/docs/cli/reference/ibmcloud/cf_index.html#cf).
+   - If the service is not RC-enabled and is therefore based on Cloud Foundry, change your plan using the [`ibmcloud cf update-service` command](/docs/cli/reference/ibmcloud?topic=cloud-cli-cf#cf).
 
      ```
      ibmcloud cf update-service <service_instance_name> [-p <plan_name>]

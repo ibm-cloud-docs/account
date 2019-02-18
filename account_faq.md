@@ -21,14 +21,19 @@ lastupdated: "2019-02-06"
 {: #create-account}
 {: faq}
 
-Go to [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon"), and click **Create an {{site.data.keyword.Bluemix_notm}} account** to create a Lite account that never expires. See [Lite account](/docs/account/index.html#liteaccount) for more details about the included features.
+Go to [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon"), and click **Create an {{site.data.keyword.Bluemix_notm}} account** to create a Lite account that never expires. See [Lite account](/docs/account?topic=account-liteaccount#liteaccount) for more details about the included features.
 
 
 ## How do I resolve errors that occur when creating my account?
 {: #account-error}
 {: faq}
 
-You can create a support case if you get an error when you try to create your account. Click **Support** from the {{site.data.keyword.Bluemix}} console menu bar. Then, click **Create new case** from the Need more help section. After the case is opened, you receive an email notification. Follow the instructions for further communication on the issue.
+You can create a support case if you get an error when you try to create your account.
+
+1. Click **Support** from the {{site.data.keyword.Bluemix}} console menu bar.
+2. Click **Create a case** from the _Need more help_ section.
+3. Answer the questions regarding the case.
+4. An email notification is sent after the case is opened. Follow the instructions for further communication.
 
 
 ## What is Cloud Foundry?
@@ -37,7 +42,8 @@ You can create a support case if you get an error when you try to create your ac
 
 Cloud Foundry is an open source platform as a service (PaaS) option available through {{site.data.keyword.Bluemix_notm}} Public for building and deploying applications on the cloud. Cloud Foundry organizations and spaces are used to organize resources and apps available within specific regions.
 
-For more information about managing orgs and spaces, see [Adding orgs and spaces](/docs/account/orgs_spaces.html#orgsspacesusers). And, if you’re interested in learning more about how to provide access to resources in a Cloud Foundry space, see [Cloud Foundry access](/docs/iam/cfaccess.html#cfaccess).
+For more information about managing orgs and spaces, see [Adding orgs and spaces](/docs/account?topic=account-orgsspacesusers#orgsspacesusers). And, if you’re interested in learning more about how to provide access to resources in a Cloud Foundry space, see [Cloud Foundry access](/docs/iam?topic=iam-cfaccess#cfaccess).
+
 
 ## Can I move an org to another account?
 {: #move-org-diff-account}
@@ -45,17 +51,20 @@ For more information about managing orgs and spaces, see [Adding orgs and spaces
 
 Currently, you can't migrate an org to a different account.
 
+
 ## Which Cloud Foundry regions can I use?
 {: #whichregions}
 {: faq}
 
 In a Lite account, you can work in only one region. In a Pay-As-You-Go or Subscription account, you can access all available regions.
 
+
 ## What's a Lite pricing plan for services?
 {: #whatisliteplan}
 {: faq}
 
-A Lite plan is a free quota-based service plan. You can use a service Lite plan to build an app without incurring any charges. A Lite plan might be offered on a monthly cycle that is renewed each month or on a one-off usage basis. You can have one instance per Lite plan service. Lite pricing plans are offered in all accounts. For more information about Lite accounts, see [Account types](/docs/account/index.html#accounts).
+A Lite plan is a free quota-based service plan. You can use a service Lite plan to build an app without incurring any charges. A Lite plan might be offered on a monthly cycle that is renewed each month or on a one-off usage basis. You can have one instance per Lite plan service. Lite pricing plans are offered in all accounts. For more information about Lite accounts, see [Account types](/docs/account?topic=account-accounts#accounts).
+
 
 ## What happens when my Lite plan instance reaches the monthly quota?
 {: #monthlyquota}
@@ -63,11 +72,13 @@ A Lite plan is a free quota-based service plan. You can use a service Lite plan 
 
 Reaching any quota limit for Lite plan instances suspends the service for that month. Quota limits are per org, not per instance. New instances that are created in the same org reflect any usage from previous instances. The quota limits reset on the first of every month.
 
+
 ## How many resource groups, orgs, or spaces can I create?
 {: #resourcelimit}
 {: faq}
 
 If you have a billable account, there's no limit to the number of resource groups, orgs, or spaces that you can create within your account. However, if you have a Lite account, you're limited to one org and one resource group.
+
 
 ## How do I upgrade or convert my account type?
 {: #changeacct}
@@ -79,26 +90,28 @@ If you have a billable account, there's no limit to the number of resource group
   * To upgrade to a Subscription account, click **Upgrade**.
 * To convert between Pay-As-You-Go and Subscription account types, contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
+
 ## If I upgrade my Lite account, can I continue to use my existing instances?
 {: #nochange}
 {: faq}
 
 Yes, you can upgrade to a billable account and continue to use the instances you created with your Lite account.
 
+
 ## How do I upgrade my Pay-As-You-Go account?
 {: #upgrade}
 {: faq}
 
-To upgrade your Pay-As-You-Go account to a Subscription account, contact [IBM Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
+To upgrade your Pay-As-You-Go account to a Subscription account, contact [IBM Cloud Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
+
 
 ## How do I update my credit card?
 {: #updatepayment}
 {: faq}
 
-You can update the payment method that's associated with your account by going to [Payments](https://{DomainName}/billing/payments) in the console. Under Add Payment Method, enter in the billing information for your new card, then click **Add credit card**.
+You can update the payment method that's associated with your account by going to [Payments](https://cloud.ibm.com/billing/payments) in the console. Under Add Payment Method, enter in the billing information for your new card, then click **Add credit card**.
 
 To switch to a different payment method, select **Pay with Other** and then click **Submit change request**. A support case to change your payment method will be created for you.
-
 
 ## How do I reset my password?
 {: #reset-password}
@@ -113,6 +126,7 @@ To reset your VPN password, complete the following steps:
   3. From the VPN subnets section, click the Edit icon ![Edit icon](../icons/icon_write.svg) to enter a new VPN password.
   5. Click **Apply**.
 
+
 ## How do I cancel my account?
 {: #cancelaccount}
 {: faq}
@@ -126,6 +140,7 @@ To cancel a Lite account, go to [Account settings](https://cloud.ibm.com/account
 {: faq}
 
 Contact [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} to open a support case and request to delete your account. If you have data that is associated with your old account that you want to move to a new account, include this information in your email.
+
 
 ## Why is my account deactivated?
 {: #account-deactivated}
@@ -145,11 +160,13 @@ If you believe your account was deactivated in error, contact support by calling
 
 Click **Support** from the console menu bar to go to the Support Center.
 
+
 ## Can I sign up for a free trial?
 {: #freetrial}
 {: faq}
 
 {{site.data.keyword.Bluemix_notm}} trial accounts are available for faculty and students at accredited academic institutions. To qualify for a trial account, go to [Harness the Power of IBM ![External link icon](../icons/launch-glyph.svg)](https://onthehub.com/ibm/){: new_window} and validate your institution credentials.
+
 
 ## After I link my account, how do I log in?
 {: #al_login}
@@ -157,11 +174,13 @@ Click **Support** from the console menu bar to go to the Support Center.
 
 After you link your account, use your IBMid to log in to the {{site.data.keyword.Bluemix}} console.
 
+
 ## After I link my account, what's the impact on my support?
 {: #al_support}
 {: faq}
 
 After you link your account, you keep the same level of support when you add {{site.data.keyword.Bluemix_notm}} platform to your account.
+
 
 ## Are there other ways to get help with linking my account?
 {: #al_morehelp}
@@ -185,7 +204,7 @@ If you don't have a matching {{site.data.keyword.Bluemix_notm}} platform account
 
 When you link your accounts, you can use a $200 promotional credit to try {{site.data.keyword.Bluemix_notm}} services.
 
-To learn more about the $200 promotional credit, see [Pay-As-You-Go account](/docs/account/index.html#paygo).
+To learn more about the $200 promotional credit, see [Pay-As-You-Go account](/docs/account?topic=account-accounts#paygo).
 
 ## What does adding {{site.data.keyword.Bluemix_notm}} platform services to my SoftLayer account mean?
 {: #al_owaffslacct}
@@ -193,7 +212,7 @@ To learn more about the $200 promotional credit, see [Pay-As-You-Go account](/do
 
 It means that your account has access to all {{site.data.keyword.Bluemix_notm}} platform offerings. After you add the {{site.data.keyword.Bluemix_notm}} platform offering to your account, your account master must enable the user to have access to the offering.
 
-For more information about being an account master, see [Working with users](/docs/iam/iamusermanage.html#iamusermanage) for more information.
+For more information about being an account master, see [Working with users](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 ## How does linking accounts impact my SoftLayer Master Account ID?
 {: #al_howaffslmastacct}
@@ -213,7 +232,7 @@ If you have more than one account, you can click your account name to select ano
 {: #switch-account-owners}
 {: faq}
 
-You can't switch the owner of an account, but you can change resource owners. To learn more about switching ownership, see [Transferring ownership of a private resource](/docs/account/owners.html#how-to-change-the-owner-of-a-catalog-resource).
+You can't switch the owner of an account, but you can change resource owners. To learn more about switching ownership, see [Transferring ownership of a private resource](/docs/account?topic=account-include#owners).
 
 ## Does {{site.data.keyword.Bluemix_notm}} support batch registration of users?
 {: #batch-registration}
@@ -221,25 +240,25 @@ You can't switch the owner of an account, but you can change resource owners. To
 
 When you register users for {{site.data.keyword.Bluemix_notm}}, you must register each user individually. {{site.data.keyword.Bluemix_notm}} doesn't support batch registration of users.
 
-Go to [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com), and click **Create an {{site.data.keyword.Bluemix_notm}} account**. Then, complete the account registration form for each invidual user.
+Go to [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon"), and click **Create an {{site.data.keyword.Bluemix_notm}} account**. Then, complete the account registration form for each individual user.
 
 ## What are tags?
 {: #know-about-tags}
 {: faq}
 
-You can use tags to organize and view resources across your account by filtering tags from your resource list. For more information, see [Tagging resources](/docs/resources/tagging_resources.html#tagging).
+You can use tags to organize and view resources across your account by filtering tags from your resource list. For more information, see [Tagging resources](/docs/resources?topic=resources-add-remove#add-remove).
 
 ## Who can view the tags in an account?
 {: #tags-visibility-account}
 {: faq}
 
-Tags are visible throughout your account. If you have permission to see a resource, you can view all tags that are attached. For more information, see [Granting users access to tag resources](/docs/resources/grant-tag-access.html#access).
+Tags are visible throughout your account. If you have permission to see a resource, you can view all tags that are attached. For more information, see [Granting users access to tag resources](/docs/resources?topic=resources-access#access).
 
 ## What permissions do I need to add or remove tags?
 {: #permissions-add-remove-tags}
 {: faq}
 
-You must have at least the Editor for IAM-enabled resources or the developer role in a Cloud Foundry space on a resource to add or remove tags on that resource. For more information, see [Granting users access to tag resources](/docs/resources/grant-tag-access.html#access).
+You must have at least the Editor for IAM-enabled resources or the developer role in a Cloud Foundry space on a resource to add or remove tags on that resource. For more information, see [Granting users access to tag resources](/docs/resources?topic=resources-access#access).
 
 ## Can I delete my tag?
 {: # delete-tag}

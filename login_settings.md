@@ -3,8 +3,8 @@
 
 copyright:
 
-  years: 2018
-lastupdated: "2018-12-04"
+  years: 2018, 2019
+lastupdated: "2019-01-28"
 
 
 ---
@@ -33,7 +33,7 @@ You can view the following security options, and enable or disable them, only if
 
 To set up your security questions:
 1. From the console, go to Go to **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Profile and settings**, and select **Login settings**.
-2. Click **Edit**. 
+2. Click **Edit**.
 3. Select the questions that you want to have and answer them. You must use three security question options.
 4. Click **Save** when you're finished.  
 5. To make sure the `Yes` box is checked for the security questions to be enabled. Checking the `Yes` box might prompt you to sign in to your account again.  
@@ -56,25 +56,25 @@ This option is available only to users that log in with a SoftLayer ID. To updat
 ## Setting up TOTP authentication
 {: #MFA}
 
-To set up your TOTP authentication, click **Set up**. 
+To set up your TOTP authentication, click **Set up**.
 
 TOTP MFA adds an extra layer of security to your account by requiring a TOTP passcode in addition to the standard ID and password during login. You must set up your TOTP authentication before your account administrator can enable this MFA requirement for you.
 
-You might also be prompted for a time-based one-time passcode if the user TOTP setting isn't set up and enabled. This is because an account owner might turn on IBMid MFA for an account that you have access to. This type of MFA applies to every user in the account when this setting is turned on, and you're required to use it. For more information, see [Types of multifactor authentication](/docs/iam/mfatypes.html#types).
+You might also be prompted for a time-based one-time passcode if the user TOTP setting isn't set up and enabled. This is because an account owner might turn on IBMid MFA for an account that you have access to. This type of MFA applies to every user in the account when this setting is turned on, and you're required to use it. For more information, see [Types of multifactor authentication](/docs/iam?topic=iam-types).
 
 
-## Setting up external authentication 
+## Setting up external authentication
 {: #third-party-MFA}
 
-You or your account administrator can order Symantec or phone-based authentication for you for a monthly cost. For you to order external authentication, you have to have the add services infrastructure permissions. To find out if external authentication is enabled, go to **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Profile and settings**, and select **Login settings**. 
+You or your account administrator can order Symantec or phone-based authentication for you for a monthly cost. For you to order external authentication, you have to have the add services infrastructure permissions. To find out if external authentication is enabled, go to **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Profile and settings**, and select **Login settings**.
 
 ### Setting up Symantec authentication
 
 If your account administrator chooses to order Symantec identity protection, you must work with your administrator to help them complete the order by providing your credential ID:
 
 1. Go to [Symantec VIP](https://vip.symantec.com/).
-2. Click **Download**. 
-3. Get your credential ID and provide the ID to your administrator to complete the order. 
+2. Click **Download**.
+3. Get your credential ID and provide the ID to your administrator to complete the order.
 
 After your administrator orders and enables the option, you can use the app for login authentication.
 
@@ -84,10 +84,7 @@ You can set up and use phone-based identity protection after your account admini
 
 1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Profile and settings**, and select **Login settings**.
 2. If Phone-based MFA is disabled, click **Go to User details**.
-3. In the Manage user's login section, turn on phone-based authentication. 
+3. In the Manage user's login section, turn on phone-based authentication.
 4. To provide contact information for the authentication, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg).
 5. Complete all the fields. You can specify whether to receive a phone call or a text message as the authentication method. If you want to require a PIN, select the option from the **Pin type** list, and provide the PIN you want to use.  
-6. Click **Apply**. 
-
- 
-
+6. Click **Apply**.

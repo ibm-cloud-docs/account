@@ -25,18 +25,18 @@ lastupdated: "2019-02-13"
 
 The following table provides a comparison of Lite, Pay-As-You-Go, and Subscription accounts. For more details about each account, see the sections that follow.
 
-|  | Lite  | Pay-As-You-Go | Subscription |
-|--------------------|--------------------|--------------------|--------------------|
-| **Access to free Cloud Foundry memory** | 256 MB | 512 MB | 512 MB |
+|                                         | Lite               | Pay-As-You-Go      | Subscription       |
+|-----------------------------------------|--------------------|--------------------|--------------------|
+| **Access to free Cloud Foundry memory** | 256 MB             | 512 MB             | 512 MB             |
 | **Access to [Lite service plans ![External link icon](../icons/launch-glyph.svg "External link icon")](https://{DomainName}/catalog/?search=label:lite){: new_window}** | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
-| **Access to all free plans** |  | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
+| **Access to all free plans**            |                    | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | **Access to the full {{site.data.keyword.Bluemix_notm}} catalog** |  | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
-| **Access to multiple Cloud Foundry regions** |  | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
+| **Access to multiple Cloud Foundry regions** |               | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | **No time restrictions** | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
-| **Guaranteed zero cost** | ![Feature available](../icons/icon_enabled.svg) |  |  |
-| **Discounted pricing** |  |  | ![Feature available](../icons/icon_enabled.svg) |
+| **Guaranteed zero cost**                | ![Feature available](../icons/icon_enabled.svg) |  |         |
+| **Discounted pricing**                  |                    |                    | ![Feature available](../icons/icon_enabled.svg) |
 | **Best for learning or building proof of concepts** | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |  |
-| **Fit for production use cases** |  | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
+| **Fit for production use cases**        |                    | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 {: caption="Table 1. Comparison of {{site.data.keyword.Bluemix_notm}} accounts" caption-side="top"}
 
 
@@ -45,9 +45,9 @@ The following table provides a comparison of Lite, Pay-As-You-Go, and Subscripti
 
 Sign up for a Lite account to start building your apps and exploring services with select free Lite plans, which are displayed with a Lite tag ![Lite tag](../icons/Lite.svg) in the {{site.data.keyword.Bluemix_notm}} console. Your Lite account doesn't expire and your credit card isn't required.
 
-You have access to a single resource group that's created for you and named `Default`. All of your service's instances that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) are automatically added to this resource group. You can update the name of this resource group at any time. See [Renaming a resource group](/docs/resources/resourcegroups.html#renaming-a-resource-group) for the detailed steps.
+You have access to a single resource group that's created for you and named `Default`. All of your service's instances that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) are automatically added to this resource group. You can update the name of this resource group at any time. See [Renaming a resource group](/docs/resources?topic=resources-renaming-a-resource-group) for the detailed steps.
 
-Each resource group is free. When you create a connection between a service that is managed by IAM and a Cloud Foundry app, you create an alias, which is a service instance, that counts toward your quota. See [Managing connections](/docs/resources/connecting_apps.html#connect_app).
+Each resource group is free. When you create a connection between a service that is managed by IAM and a Cloud Foundry app, you create an alias, which is a service instance, that counts toward your quota. See [Managing connections](/docs/resources?topic=resources-connect_app).
 {: tip}
 
 ### What's available?
@@ -68,7 +68,7 @@ Check out the following list of key features that are available in a Lite accoun
 ### Upgrading your Lite account
 {: #upgrade-lite-account}
 
-You can upgrade to a Pay-As-You-Go account or Subscription account. For more information, see [Upgrading your account](/docs/account/account_settings.html#upgrading-account).
+You can upgrade to a Pay-As-You-Go account or Subscription account. For more information, see [How do I upgrade or change my account type?](/docs/account?topic=account-changeacct).
 
 You get a promotional credit of $200 after you upgrade to a Pay-As-You-Go account, and the credit is automatically applied to your account. Your $200 credit is valid for 30 days and is automatically applied to your invoice. The credit cannot be used with third-party offerings.
 
@@ -83,21 +83,21 @@ Also, with a Pay-As-You-Go account, you can order optional items such as advance
 ### Upgrading your Pay-As-You-Go account
 {: #upgrade-to-subscription}
 
-To upgrade your Pay-As-You-Go account to a Subscription account, contact [IBM Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
+To upgrade your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
 
 ## Subscription account
 {: #subscription-account}
 
 With a Subscription account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. You commit to a combined a minimum spending amount each month and receive a subscription discount that is applied to that minimum charge. You're charged the non-discounted rate for any usage that exceeds your total subscription amount. To view your subscription, go to **Manage > Billing and usage**, and select **Subscriptions**.
 
-If you have a subscription account, you can create most of the services that are available from the [IBM Cloud catalog](https://cloud.ibm.com/catalog){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon"). However, some services use a specific pricing plan that requires you to purchase it separately.
+If you have a subscription account, you can create most of the services that are available from the [{{site.data.keyword.Bluemix_notm}} catalog](https://cloud.ibm.com/catalog/){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon"). However, some services use a specific pricing plan that requires you to purchase it separately.
 
 ### {{site.data.keyword.Bluemix_dedicated_notm}} account
 With {{site.data.keyword.Bluemix_dedicated_notm}}, you must sign up for a one year minimum term that includes:
 
    * VPN connectivity back to your infrastructure
    * Fully redundant environment in a {{site.data.keyword.BluSoftlayer_notm}} data center
-   * All supported runtimes (IBM Java Liberty, Node.js, and built-in open source runtimes)
+   * All supported runtimes ({{site.data.keyword.runtime_liberty_short}}, {{site.data.keyword.runtime_nodejs_short}}, and built-in open source runtimes)
    * All dedicated services that you selected and all public {{site.data.keyword.Bluemix_notm}} services
    * Standard {{site.data.keyword.Bluemix_notm}} support
 
