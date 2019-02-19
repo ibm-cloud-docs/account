@@ -22,7 +22,7 @@ lastupdated: "2019-02-13"
 You can change the plan of an {{site.data.keyword.Bluemix}} service if plan changes are enabled for the specific service. You might want to change your plan, for example, to upgrade or reduce your plan. You can change your plan from your service instance dashboard.
 {: shortdesc}
 
-Are you looking for details about upgrading your account type? See [How do I upgrade or change my account type?](/docs/account?topic=account-changeacct) for more information.
+Are you looking for details about upgrading your account type? See [How do I upgrade or convert my account type?](/docs/account?topic=account-changeacct) for more information.
 {: tip}
 
 You can change the service plans for only certain services. If plan changes are enabled for the service, the service instance dashboard displays a **Plan** option in the navigation. Each service has a different set of next steps to follow if you change your plan.

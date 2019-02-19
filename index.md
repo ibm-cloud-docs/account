@@ -45,7 +45,7 @@ The following table provides a comparison of Lite, Pay-As-You-Go, and Subscripti
 
 Sign up for a Lite account to start building your apps and exploring services with select free Lite plans, which are displayed with a Lite tag ![Lite tag](../icons/Lite.svg) in the {{site.data.keyword.Bluemix_notm}} console. Your Lite account doesn't expire and your credit card isn't required.
 
-You have access to a single resource group that's created for you and named `Default`. All of your service's instances that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) are automatically added to this resource group. You can update the name of this resource group at any time. See [Renaming a resource group](/docs/resources?topic=resources-renaming-a-resource-group) for the detailed steps.
+You have access to a single resource group that's created for you and named `Default`. All of your service's instances that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) are automatically added to this resource group. You can update the name of this resource group at any time. See [Renaming a resource group](/docs/resources?topic=resources-rgs#rename_rgs) for the detailed steps.
 
 Each resource group is free. When you create a connection between a service that is managed by IAM and a Cloud Foundry app, you create an alias, which is a service instance, that counts toward your quota. See [Managing connections](/docs/resources?topic=resources-connect_app).
 {: tip}
@@ -68,7 +68,7 @@ Check out the following list of key features that are available in a Lite accoun
 ### Upgrading your Lite account
 {: #upgrade-lite-account}
 
-You can upgrade to a Pay-As-You-Go account or Subscription account. For more information, see [How do I upgrade or change my account type?](/docs/account?topic=account-changeacct).
+You can upgrade to a Pay-As-You-Go account or Subscription account. For more information, see [How do I upgrade or convert my account type?](/docs/account?topic=account-changeacct).
 
 You get a promotional credit of $200 after you upgrade to a Pay-As-You-Go account, and the credit is automatically applied to your account. Your $200 credit is valid for 30 days and is automatically applied to your invoice. The credit cannot be used with third-party offerings.
 
