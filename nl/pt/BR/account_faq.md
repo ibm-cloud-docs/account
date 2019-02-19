@@ -70,14 +70,15 @@ limites de cota são reconfigurados no primeiro dia de cada mês.
 
 Se você tiver uma conta faturável, não haverá limite para o número de grupos de recursos, organizações ou espaços que podem ser criados dentro de sua conta. No entanto, se você tiver uma conta Lite, estará limitado a uma organização e um grupo de recursos.
 
-## Como fazer upgrade ou mudar meu tipo de conta?
+## Como eu faço upgrade ou converto o meu tipo de conta?
 {: #changeacct}
 {: faq}
 
 * Para converter sua avaliação de 30 dias em uma conta Lite, entre em contato com [Vendas do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}. Depois de confirmar a elegibilidade, a equipe de Vendas compartilha um link exclusivo que pode ser usado para tentar converter sua conta. A conversão bem-sucedida não é garantida, pois as contas Lite não são totalmente compatíveis com as avaliações de 30 dias.  
-* Para fazer upgrade de uma conta Lite para uma Pré-paga, acesse **Gerenciar > Conta** e selecione **Configurações da conta**.
-* Para fazer upgrade de uma conta Lite para uma de Assinatura, acesse **Gerenciar > Conta** e selecione **Configurações da conta**.
-* Para converter a conta Pré-paga em uma conta de Assinatura, entre em contato com [Vendas do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
+* Para fazer upgrade de uma conta Lite para uma Pré-paga ou de Assinatura, acesse [Configurações da conta](https://{DomainName}/account/settings).
+  * Para fazer upgrade para uma conta Pré-paga, clique em **Incluir cartão de crédito**.
+  * Para fazer upgrade para uma conta de Assinatura, clique em **Upgrade**.
+* Para converter entre os tipos de conta Pré-paga e de Assinatura, entre em contato com [{{site.data.keyword.Bluemix_notm}} Vendas ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
 ## Se eu fizer upgrade da minha conta Lite, será possível continuar a usar minhas instâncias existentes?
 {: #nochange}
@@ -95,13 +96,16 @@ Para fazer upgrade da conta Pré-paga para uma conta de Assinatura, entre em con
 {: #updatepayment}
 {: faq}
 
-É possível atualizar facilmente o método de pagamento que está associado à sua conta faturável. No console, acesse **Gerenciar > Faturamento e uso > Pagamentos > Método de pagamento**.
+É possível atualizar o método de pagamento que está associado à sua conta acessando [Pagamentos](https://{DomainName}/billing/payments) no console. Sob Incluir método de pagamento, insira as informações de faturamento para o seu novo cartão e, em seguida, clique em **Incluir cartão de crédito**.
+
+Para alternar para um método de pagamento diferente, selecione **Pagamento com outro** e, em seguida, clique em **Enviar solicitação de mudança**. Um caso de suporte para mudar o seu método de pagamento será criado para você.
+
 
 ## Como reconfiguro a minha senha?
 {: #reset-password}
 {: faq}
 
-Para reconfigurar sua senha da conta, acesse o ícone Avatar ![Ícone Avatar](../icons/i-avatar-icon.svg) > **Perfil e configurações** e selecione **Configurações de login**. Em seguida, clique em **Mudar ou reconfigurar** no tile de informações sobre o usuário da conta.
+Para reconfigurar a sua senha da conta, acesse o ícone Avatar ![Ícone Avatar](../icons/i-avatar-icon.svg) **> Perfil e configurações**. Em seguida, clique em **Mudar ou reconfigurar** no tile de informações sobre o usuário da conta.
 
 Para reconfigurar sua senha da VPN, conclua as etapas a seguir:
 
@@ -128,9 +132,13 @@ Entre em contato com o Suporte do [{{site.data.keyword.Bluemix_notm}} ![Ícone d
 {: #account-deactivated}
 {: faq}
 
-Sua conta provavelmente está desativada porque ela foi cancelada por um usuário autorizado ou a conta foi suspensa.  
+A sua conta pode ser desativada pelos motivos a seguir:
 
-A critério da IBM, as contas que violam os comportamentos de uso aceitáveis dos serviços do {{site.data.keyword.Bluemix_notm}} podem ser desativadas sem aviso. Alguns serviços poderão ser restaurados se os usuários corrigirem seus comportamentos de uso depois de serem notificados sobre a ação ofensiva.
+- Para as contas para teste, o período de avaliação terminou. Para reativar a sua conta, efetue login em sua conta e atualize-a para uma conta Pré-paga.
+- Um usuário autorizado cancelou a conta.
+- A conta está suspensa. A critério da IBM, as contas que violam os comportamentos de uso aceitáveis dos serviços do {{site.data.keyword.Bluemix_notm}} podem ser desativadas sem aviso. Alguns serviços poderão ser restaurados se os usuários corrigirem seus comportamentos de uso depois de serem notificados sobre a ação ofensiva.
+
+Se você acredita que a sua conta foi desativada com erro, entre em contato com o suporte ligando 1-866-325-0045 e selecionando a terceira opção.
 
 ## Como obter suporte?
 {: #contactsupport}

@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2018
-lastupdated: "2018-11-19"
+  years: 2015, 2019
+lastupdated: "2019-02-13"
 
 ---
 
@@ -62,8 +62,8 @@ Confira a lista a seguir de recursos-chave que estão disponíveis em uma conta 
    * Você recebe notificações por e-mail sobre o status da conta e limites de cota.
    * Seus apps Cloud Foundry podem acessar até 256 MB de memória instantânea de tempo execução grátis.
    * É possível provisionar uma instância de qualquer serviço no [catálogo do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/catalog/?search=label:lite%20lite){: new_window} que tenha um plano Lite.
-   * Depois de 10 dias sem atividade de desenvolvimento, seus apps serão suspensos. É possível começar a trabalhar em novos apps sem ter que se preocupar com exceder os limites de cota de memória.
-   * Depois de 30 dias sem atividade de desenvolvimento, suas instâncias de serviço com planos Lite serão excluídas. Dessa forma, você não precisa gerenciar a exclusão de instâncias inativas antes de criar novas.
+   * Depois de 10 dias sem atividade de desenvolvimento, seus apps serão suspensos. Continue trabalhando em seus apps para acordá-los.
+   * Depois de 30 dias sem atividade de desenvolvimento, suas instâncias de serviço com planos Lite são excluídas.
 
 ### Fazendo upgrade de sua conta Lite
 {: #upgrade-lite-account}
@@ -88,9 +88,9 @@ Para fazer upgrade da conta Pré-paga para uma conta de Assinatura, entre em con
 ## Conta Assinatura
 {: #subscription-account}
 
-Com uma conta Assinatura, é possível criar múltiplos grupos de recursos para gerenciar facilmente a cota e visualizar o uso de faturamento para um conjunto de recursos. Você se compromete com um valor de gasto mínimo a cada mês e recebe um desconto de assinatura que é aplicado a esse encargo mínimo. Será cobrada uma taxa sem desconto por qualquer uso que exceda o seu valor total de assinatura. Para visualizar sua assinatura, acesse **Gerenciar > Faturamento e uso** e selecione **Assinaturas**. 
+Com uma conta Assinatura, é possível criar múltiplos grupos de recursos para gerenciar facilmente a cota e visualizar o uso de faturamento para um conjunto de recursos. Você se compromete com um valor de gasto mínimo a cada mês e recebe um desconto de assinatura que é aplicado a esse encargo mínimo. Será cobrada uma taxa sem desconto por qualquer uso que exceda o seu valor total de assinatura. Para visualizar sua assinatura, acesse **Gerenciar > Faturamento e uso** e selecione **Assinaturas**.
 
-Se você tiver uma conta de assinatura, será possível criar a maioria dos serviços que está disponível por meio do [catálogo do IBM Cloud](https://cloud.ibm.com/catalog/){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo"). No entanto, alguns serviços usam um plano de precificação específico que requer que você o compre separadamente.
+Se você tiver uma conta de assinatura, será possível criar a maioria dos serviços que está disponível por meio do [catálogo do IBM Cloud](https://cloud.ibm.com/catalog){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo"). No entanto, alguns serviços usam um plano de precificação específico que requer que você o compre separadamente.
 
 ### Conta do {{site.data.keyword.Bluemix_dedicated_notm}}
 Com o {{site.data.keyword.Bluemix_dedicated_notm}}, é necessário inscrever-se para um prazo mínimo de um ano que inclui:

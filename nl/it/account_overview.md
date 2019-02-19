@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019
-lastupdated: "2019-01-21"
+lastupdated: "2019-02-12"
 
 ---
 
@@ -17,10 +17,10 @@ lastupdated: "2019-01-21"
 # Gerarchia degli account
 {: #overview}
 
-Il tuo account {{site.data.keyword.Bluemix}} include molti componenti e sistemi che interagiscono. Comprendi in che modo degli specifici componenti sono connessi e come funziona l'accesso nel tuo account.
+Il tuo account {{site.data.keyword.Bluemix}} include molti componenti e sistemi che interagiscono. Comprendi in che modo degli specifici componenti sono connessi e come funziona l'accesso nel tuo account. 
 {:shortdesc}
 
-<a href="https://console.bluemix.net/docs/api/content/account/images/account_diagram.svg">
+<a href="https://cloud.ibm.com/docs/api/content/account/images/account_diagram.svg">
   <img src="images/account_diagram.svg" alt="diagramma account">
 </a>
 

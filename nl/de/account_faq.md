@@ -69,14 +69,15 @@ Wenn ein Grenzwert für das Kontingent für die Lite-Planinstanzen erreicht wird
 
 Wenn Sie über ein gebührenpflichtiges Konto verfügen, gibt es keinen Grenzwert für die Anzahl von Ressourcengruppen, Organisationen oder Bereichen, die Sie in Ihrem Konto erstellen können. Bei einem Lite-Konto sind Sie jedoch auf eine Organisation und eine Ressourcengruppe beschränkt.
 
-## Wie kann ich ein Upgrade meines Kontotyps durchführen oder den Kontotyp ändern?
+## Wie kann ich ein Upgrade meines Kontotyps durchführen oder den Kontotyp umwandeln?
 {: #changeacct}
 {: faq}
 
 * Zum Konvertieren Ihres 30-Tage-Testkontos in ein Lite-Konto wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}}-Vertrieb ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}. Nach der Prüfung der Teilnahmevoraussetzungen sendet Ihnen das Vertriebsteam einen Link zu, über den Sie versuchen können, Ihr Konto zu konvertieren. Ein Erfolg der Konvertierung kann nicht garantiert werden, da Lite-Konten nicht vollständig mit 30-Tage-Testkonten kompatibel sind.  
-* Für ein Upgrade von einem Lite-Konto auf ein nutzungsabhängiges Konto rufen Sie **Verwalten > Konto** auf und wählen Sie **Kontoeinstellungen** aus.
-* Für ein Upgrade von einem Lite-Konto auf ein Abonnementkonto rufen Sie **Verwalten > Konto** auf und wählen Sie **Kontoeinstellungen** aus.
-* Zum Konvertieren Ihres nutzungsabhängigen Kontos in ein Abonnementkonto wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}}-Vertrieb ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
+* Für ein Upgrade von einem Lite-Konto auf ein nutzungsabhängiges oder Abonnementkonto rufen Sie [Kontoeinstellungen](https://{DomainName}/account/settings) auf.
+  * Für ein Upgrade auf ein nutzungsabhängiges Konto klicken Sie auf **Kreditkarte hinzufügen**.
+  * Für ein Upgrade auf ein Abonnementkonto klicken Sie auf **Upgrade**.
+* Zum Konvertieren zwischen einem nutzungsabhängigen und einem Abonnementkonto wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}} Vertrieb ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
 ## Kann ich meine vorhandenen Instanzen weiterhin verwenden, wenn ich ein Upgrade für mein Lite-Konto durchführe?
 {: #nochange}
@@ -94,13 +95,16 @@ Wenn Sie für ein nutzungsabhängiges Konto ein Upgrade auf ein Abonnementkonto 
 {: #updatepayment}
 {: faq}
 
-Sie können die Zahlungsmethode, die Ihrem gebührenpflichtigen Konto zugeordnet ist, auf einfache Weise aktualisieren. Rufen Sie in der Konsole **Verwalten > Abrechnung und Nutzung > Zahlungen > Zahlungsmethode** auf.
+Sie können die Zahlungsmethode, die Ihrem Konto zugeordnet ist, aktualisieren, indem Sie in der Konsole [Zahlungen](https://{DomainName}/billing/payments) aufrufen. Geben Sie unter 'Zahlungsmethode hinzufügen' die Rechnungsinformationen für Ihre neue Karte ein und klicken Sie auf **Kreditkarte hinzufügen**.
+
+Wenn Sie zu einer anderen Zahlungsmethode wechseln möchten, wählen Sie die Option für eine **Andere Zahlungsmethode** aus und klicken Sie auf **Änderungsanforderung senden**. Ein Supportfall zum Ändern Ihrer Zahlungsmethode wird für Sie erstellt.
+
 
 ## Wie kann ich mein Kennwort zurücksetzen?
 {: #reset-password}
 {: faq}
 
-Wenn Sie das Kennwort für Ihr Konto zurücksetzen möchten, rufen Sie das Avatarsymbol ![Avatarsymbol](../icons/i-avatar-icon.svg) > **Profil und Einstellungen** auf und wählen Sie **Anmeldeeinstellungen** aus. Klicken Sie dann auf **Ändern oder zurücksetzen** in der Kachel mit den Kontobenutzerinformationen.
+Zum Zurücksetzen Ihres Kontokennworts rufen Sie das Avatarsymbol ![Avatarsymbol](../icons/i-avatar-icon.svg) und **> Profil und Einstellungen** auf. Klicken Sie dann auf **Ändern oder zurücksetzen** in der Kachel mit den Kontobenutzerinformationen.
 
 Führen Sie die folgenden Schritte aus, um Ihr VPN-Kennwort zurückzusetzen:
 
@@ -113,9 +117,9 @@ Führen Sie die folgenden Schritte aus, um Ihr VPN-Kennwort zurückzusetzen:
 {: #cancelaccount}
 {: faq}
 
-Für nutzungsabhängige Konten oder Abonnementkonten besteht die schnellste Möglichkeit, das Konto zu stornieren, darin, über den [Live-Chat](https://{DomainName}/unifiedsupport/supportcenter) Kontakt aufzunehmen oder die Telefonnummer 1-866-325-0045 anzurufen und Option 3 auszuwählen. Alternativ dazu können Sie auch einen Supportfall öffnen. 
+Für nutzungsabhängige Konten oder Abonnementkonten besteht die schnellste Möglichkeit, das Konto zu stornieren, darin, über den [Live-Chat](https://{DomainName}/unifiedsupport/supportcenter) Kontakt aufzunehmen oder die Telefonnummer 1-866-325-0045 anzurufen und Option 3 auszuwählen. Alternativ dazu können Sie auch einen Supportfall öffnen.
 
-Zum Stornieren eines Lite-Kontos rufen Sie [Kontoeinstellungen](https://cloud.ibm.com/account/settings) auf und klicken Sie auf **Konto inaktivieren**. 
+Zum Stornieren eines Lite-Kontos rufen Sie [Kontoeinstellungen](https://cloud.ibm.com/account/settings) auf und klicken Sie auf **Konto inaktivieren**.
 
 ## Wie kann ich mein Konto löschen?
 {: #deleteaccount}
@@ -127,9 +131,13 @@ Wenden Sie sich an [{{site.data.keyword.Bluemix_notm}} Support ![Symbol für ext
 {: #account-deactivated}
 {: faq}
 
-Ihr Konto wurde wahrscheinlich inaktiviert, weil ein berechtigter Benutzer es gekündigt hat oder weil das Konto ausgesetzt wurde.  
+Ihr Konto kann aus den folgenden Gründen inaktiviert werden:
 
-IBM kann Konten von Benutzern, die gegen die allgemeinen Nutzungsrichtlinien für die {{site.data.keyword.Bluemix_notm}}-Services verstoßen, ohne Vorankündigung inaktivieren. Bestimmte Services können wiederhergestellt werden, wenn die Benutzer ihr Nutzungsverhalten ändern, nachdem sie über ihren Verstoß informiert wurden.
+- Bei einem Testkonto kann es sein, dass der Testzeitraum beendet wurde. Zum Reaktivieren Ihres Kontos melden Sie sich bei Ihrem Konto an und führen Sie ein Upgrade auf ein nutzungsabhängiges Konto durch.
+- Ein berechtigter Benutzer hat das Konto storniert.
+- Das Konto wurde ausgesetzt. IBM kann Konten von Benutzern, die gegen die allgemeinen Nutzungsrichtlinien für die {{site.data.keyword.Bluemix_notm}}-Services verstoßen, ohne Vorankündigung inaktivieren. Bestimmte Services können wiederhergestellt werden, wenn die Benutzer ihr Nutzungsverhalten ändern, nachdem sie über ihren Verstoß informiert wurden.
+
+Wenn Sie glauben, dass Ihr Konto aufgrund eines Fehlers inaktiviert wurde, wenden Sie sich an den Support unter 1-866-325-0045 und wählen Sie die dritte Option aus.
 
 ## Wie erhalte ich Unterstützung?
 {: #contactsupport}

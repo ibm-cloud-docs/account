@@ -4,8 +4,8 @@
 
 copyright:
 
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-02-13"
 
 ---
 
@@ -16,13 +16,13 @@ lastupdated: "2018-11-19"
 {:new_window: target="_blank"}
 
 
-# Mudando seu plano
+# Mudando planos de serviço
 {: #changing}
 
-Será possível mudar seu plano de serviço do {{site.data.keyword.Bluemix}} se as mudanças do plano estiverem ativadas para o serviço específico. Você pode desejar mudar seu plano, por exemplo, para fazer upgrade ou reduzir seu plano. É possível mudar seu plano por meio de seu painel da instância de serviço.
+É possível mudar o plano de um serviço do {{site.data.keyword.Bluemix}} quando as mudanças de plano estão ativadas para o serviço específico. Você pode desejar mudar seu plano, por exemplo, para fazer upgrade ou reduzir seu plano. É possível mudar seu plano por meio de seu painel da instância de serviço.
 {: shortdesc}
 
-Você está procurando detalhes sobre como fazer upgrade de seu tipo de conta? Veja [Como faço upgrade ou mudo o meu tipo de conta?](/docs/account/account_faq.html#changeacct) para obter mais informações. 
+Você está procurando detalhes sobre como fazer upgrade de seu tipo de conta? Veja [Como faço upgrade ou mudo o meu tipo de conta?](/docs/account/account_faq.html#changeacct) para obter mais informações.
 {: tip}
 
 É possível mudar os planos de serviços somente para determinados serviços. Se mudanças de plano estiverem ativadas para o serviço, o painel da instância de serviço exibirá uma opção **Plano** na navegação. Cada serviço terá um conjunto diferente de etapas subsequentes se você mudar o seu plano.
@@ -32,21 +32,45 @@ Você está procurando detalhes sobre como fazer upgrade de seu tipo de conta? V
 tiver reduzido o plano, talvez precise remontar seu app. Ou, caso tenha feito upgrade do
 plano, talvez seja necessário remontar o app e tomar ações adicionais.
 
-Para remontar seu app, acesse sua lista de recursos para localizar o app ao qual o serviço está ligado. Clique no ícone Menu ![Ícone Menu](../icons/icon_hamburger.svg) **> Lista de recursos**. No menu do app, selecione **Reiniciar app**.
+   Para remontar seu app, acesse sua lista de recursos para localizar o app ao qual o serviço está ligado. Clique no ícone Menu ![Ícone Menu](../icons/icon_hamburger.svg) **> Lista de recursos**. No menu do app, selecione **Reiniciar app**.
 
-Outras ações de etapa subsequente dependem do serviço. Veja as ações específicas na tabela a seguir.
+  Para obter mais informações sobre quaisquer ações necessárias adicionais, consulte a documentação para o serviço.
 
-|Serviço |	Informações|
-|--------|-------------|
-|Presence Insights 	|Se você tiver um plano Lite e exceder os abonos grátis, uma mensagem 403 será exibida ou registrada para indicar que você não está mais autorizado e que a sua instância de serviço está desativada. Além disso, as chamadas API de REST POST são rejeitadas com uma resposta 403.<br/><br/>Se o serviço estiver desativado porque o abono grátis foi excedido, será necessário fazer upgrade de um plano Lite para um plano Pago. Seu serviço será reativado dentro de 2 horas.<br/><br/>Se você tiver um plano Pago, será possível reduzi-lo para o plano Lite, embora seu uso permaneça dentro do abono do plano Lite para eventos e armazenamento total.<br/><br/>Ao fazer upgrade ou reduzir seu plano, não é necessário remontar ou reiniciar seus apps.|
-{:caption="Tabela 1. Próximas etapas para mudar seu plano" caption-side="top"}
-
-
-## Mudando seu plano por meio da interface da linha de comandos
+## Mudando um plano por meio da CLI
 {: #changing_command_line}
 
-Opcionalmente, é possível mudar o seu plano de serviço por meio da interface da linha de comandos inserindo o comando a seguir:
+Como uma alternativa para o console, é possível mudar o plano de um serviço usando a interface da linha de comandos (CLI) do {{site.data.keyword.Bluemix_notm}}.
 
-```
-cf update-service <service_name> [-p <new_plan>]
-```
+1. Verifique se o serviço está ativado com o controlador de recurso.
+
+   ```
+   ibmcloud catalog service <service_name>
+   ```
+   {:codeblock}
+
+   Se o serviço estiver ativado com o controlador de recurso (RC), ele listará `RC Compatible true`. Tome nota do ID do plano para o qual você deseja mudar.
+
+   ```
+   RC Compatible      true
+   RC Provisionable   true
+   IAM Compatible     true
+   Children   Name                      Kind         ID
+              lite                      plan         4bcd3fgh-3cf2-47c0-93d4-d2f2289eac28
+              standard                  plan         264d0450-996d-4bcd-894d-fc7018dacf1e
+    ```
+
+1. Mude o plano para a sua instância de serviço.
+
+   - Se o serviço estiver ativado para RC, mude o seu plano usando o comando [`ibmcloud resource service-instance-update`](/docs/cli/reference/ibmcloud/cli_resource_group.html#ibmcloud_commands_resource).
+
+     ```
+     ibmcloud resource service-instance-update <service_instance_name> --service-plan-id <plan_id>
+     ```
+     {: codeblock}
+
+   - Se o serviço não estiver ativado para RC e, portanto, estiver baseado no Cloud Foundry, mude o seu plano usando o comando [`ibmcloud cf update-service`](/docs/cli/reference/ibmcloud/cf_index.html#cf).
+
+     ```
+     ibmcloud cf update-service <service_instance_name> [-p <plan_name>]
+     ```
+     {:codeblock}

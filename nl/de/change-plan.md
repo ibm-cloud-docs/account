@@ -4,8 +4,8 @@
 
 copyright:
 
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-02-13"
 
 ---
 
@@ -16,10 +16,10 @@ lastupdated: "2018-11-19"
 {:new_window: target="_blank"}
 
 
-# Plan ändern
+# Servicepläne ändern
 {: #changing}
 
-Sie können den {{site.data.keyword.Bluemix}}-Serviceplan ändern, wenn Planänderungen für den jeweiligen Service aktiviert sind. Der Plan kann beispielsweise geändert werden, um ein Upgrade durchzuführen oder um zu einem Plan mit weniger Features zu wechseln. Der Plan kann über das Dashboard der Serviceinstanz geändert werden.
+Sie können den Plan eines {{site.data.keyword.Bluemix}}-Service ändern, wenn für diesen einen Service Planänderungen aktiviert sind. Der Plan kann beispielsweise geändert werden, um ein Upgrade durchzuführen oder um zu einem Plan mit weniger Features zu wechseln. Der Plan kann über das Dashboard der Serviceinstanz geändert werden.
 {: shortdesc}
 
 Sind Sie auf der Suche nach Details zum Upgrade Ihres Kontotyps? Der Abschnitt [Wie kann ich ein Upgrade meines Kontotyps durchführen oder den Kontotyp ändern?](/docs/account/account_faq.html#changeacct) enthält weitere Informationen hierzu.
@@ -30,21 +30,45 @@ Das Ändern der Servicepläne ist nur für bestimmte Services möglich. Wenn Pla
 1. Klicken Sie im Dashboard der Serviceinstanz auf **Plan**. Normalerweise können Sie ein Upgrade oder eine Herabstufung für Ihren Plan vornehmen.
 2. Nach dem Ändern des Plans müssen Sie zusätzliche Schritte ausführen. Die Schritte variieren abhängig von der Art der Planänderung und vom Service. Wenn Sie beispielsweise Ihren Plan reduziert haben, müssen Sie möglicherweise ein erneutes Staging für Ihre App durchführen. Oder wenn Sie für Ihren Plan ein Upgrade durchgeführt haben, müssen Sie möglicherweise ein erneutes Staging für Ihre App und weitere Aktionen durchführen.
 
-Für ein erneutes Staging Ihrer App rufen Sie die Ressourcenliste auf und suchen Sie nach der App, an die der Service gebunden ist. Klicken Sie auf das Menüsymbol ![Menüsymbol](../icons/icon_hamburger.svg) ** und dann auf Ressourcenliste**. Wählen Sie im Menü 'App' die Option **Anwendung erneut starten** aus.
+   Für ein erneutes Staging Ihrer App rufen Sie die Ressourcenliste auf und suchen Sie nach der App, an die der Service gebunden ist. Klicken Sie auf das Menüsymbol ![Menüsymbol](../icons/icon_hamburger.svg) ** und dann auf Ressourcenliste**. Wählen Sie im Menü 'App' die Option **Anwendung erneut starten** aus.
 
-Die weiteren Aktionen des nächsten Schritts hängen vom Service ab. In der folgenden Tabelle sind bestimmte Aktionen aufgeführt.
+  Weitere Informationen zu weiteren erforderlichen Aktionen finden Sie in der Dokumentation für den Service.
 
-|Service |	Informationen|
-|--------|-------------|
-|Presence Insights 	|Wenn Sie einen Lite-Plan verwenden und das kostenfreie Kontingent überschreiten, wird die Nachricht 403 angezeigt oder protokolliert, um anzugeben, dass Sie nicht mehr über die entsprechende Berechtigung verfügen und dass Ihre Serviceinstanz inaktiviert ist. Darüber hinaus werden POST-Aufrufe der REST-API mit der Antwort 403 zurückgewiesen. <br/><br/>Wenn der Service inaktiviert wurde, weil Sie das kostenfreie Kontingent überschritten haben, können Sie ein Upgrade von einem Lite-Plan auf einen kostenpflichtigen Plan durchführen. Ihr Service wird innerhalb von zwei Stunden erneut aktiviert.<br/><br/>Wenn Sie einen kostenpflichtigen Plan verwenden, können Sie eine Herabstufung auf einen Lite-Plan durchführen, vorausgesetzt, Ihre Nutzungsrate für Ereignisse und Gesamtspeicher bleibt innerhalb des Lite-Kontingents für diese Posten.<br/><br/>Wenn Sie ein Upgrade oder eine Herabstufung des Plans vornehmen, müssen Sie kein erneutes Staging und keinen Neustart für Ihre Apps durchführen.|
-{:caption="Tabelle 1. Nächste Schritte zur Änderung eines Plans" caption-side="top"}
-
-
-## Plan über die Befehlszeilenschnittstelle ändern
+## Plan über die CLI ändern
 {: #changing_command_line}
 
-Optional können Sie den Serviceplan auch über die Befehlszeilenschnittstelle ändern, indem Sie den folgenden Befehl eingeben:
+Als Alternative zur Konsole können Sie den Plan eines Service über die {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle (CLI) ändern.
 
-```
-cf update-service <Servicename> [-p <neuer Plan>]
-```
+1. Prüfen Sie, ob der Service mit dem Ressourcencontroller aktiviert ist.
+
+   ```
+   ibmcloud catalog service <servicename>
+   ```
+   {:codeblock}
+
+   Wenn der Service mit dem Ressourcencontroller (RC) aktiviert ist, listet er `RC Compatible true` auf. Vermerken Sie die ID des Plans, zu dem Sie wechseln möchten.
+
+   ```
+   RC Compatible      true
+   RC Provisionable   true
+   IAM Compatible     true
+   Children   Name                      Kind         ID
+              lite                      plan         4bcd3fgh-3cf2-47c0-93d4-d2f2289eac28
+              standard                  plan         264d0450-996d-4bcd-894d-fc7018dacf1e
+    ```
+
+1. Ändern Sie den Plan für Ihre Serviceinstanz.
+
+   - Wenn der Service RC-aktiviert ist, ändern Sie Ihren Plan mit dem Befehl [`ibmcloud resource service-instance-update`](/docs/cli/reference/ibmcloud/cli_resource_group.html#ibmcloud_commands_resource).
+
+     ```
+     ibmcloud resource service-instance-update <service_instance_name> --service-plan-id <plan_id>
+     ```
+     {: codeblock}
+
+   - Wenn der Service nicht RC-aktiviert ist und daher auf Cloud Foundry basiert, ändern Sie Ihren Plan mit dem Befehl [`ibmcloud cf update-service`](/docs/cli/reference/ibmcloud/cf_index.html#cf).
+
+     ```
+     ibmcloud cf update-service <service_instance_name> [-p <plan_name>]
+     ```
+     {:codeblock}

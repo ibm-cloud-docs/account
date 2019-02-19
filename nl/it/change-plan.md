@@ -4,8 +4,8 @@
 
 copyright:
 
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-02-13"
 
 ---
 
@@ -16,13 +16,13 @@ lastupdated: "2018-11-19"
 {:new_window: target="_blank"}
 
 
-# Modifica del tuo piano
+# Modifica dei piani di servizio
 {: #changing}
 
-Puoi modificare il tuoi piano di servizio {{site.data.keyword.Bluemix}} se le modifiche del piano sono abilitate per lo specifico servizio. Potresti voler modificare il piano, ad esempio, per eseguire un upgrade del tuo piano o per ridurlo. Puoi modificare il tuo piano dal dashboard dell'istanza del servizio.
+Puoi modificare il piano di un servizio {{site.data.keyword.Bluemix}} se le modifiche di piano sono abilitate per lo specifico servizio. Potresti voler modificare il piano, ad esempio, per eseguire un upgrade del tuo piano o per ridurlo. Puoi modificare il tuo piano dal dashboard dell'istanza del servizio.
 {: shortdesc}
 
-Stai cercando dettagli sull'upgrade del tuo tipo di account? Vedi [Come posso eseguire l'upgrade o modificare il mio tipo di account?](/docs/account/account_faq.html#changeacct) per ulteriori informazioni, 
+Stai cercando dettagli sull'upgrade del tuo tipo di account? Vedi [Come posso eseguire l'upgrade o modificare il mio tipo di account?](/docs/account/account_faq.html#changeacct) per ulteriori informazioni,
 {: tip}
 
 Puoi modificare i piani di servizio solo per specifici servizi. Se per il servizio sono abilitate le modifiche del piano, il dashboard dell'istanza del servizio visualizza un'opzione **Piano** nel riquadro di navigazione. Se modifichi
@@ -33,22 +33,45 @@ il tuo piano, ogni servizio prevede una procedura diversa a cui devi attenerti.
 seconda del tipo di modifica del piano e del servizio. Ad esempio, se hai ridotto il tuo piano, è possibile
 che tu debba preparare nuovamente la tua applicazione. Nel caso invece in cui tu abbia eseguito l'upgrade del tuo piano, potresti dover preparare di nuovo la tua applicazione ed eseguire delle altre azioni.
 
-Per preparare di nuovo la tua applicazione, vai all'elenco risorse per trovare l'applicazione a cui è associato il servizio. Fai clic sull'icona Menu ![Icona Menu](../icons/icon_hamburger.svg) **> Elenco risorse**. Nel menu delle applicazioni, seleziona **Riavvia applicazione**.
+   Per preparare di nuovo la tua applicazione, vai all'elenco risorse per trovare l'applicazione a cui è associato il servizio. Fai clic sull'icona Menu ![Icona Menu](../icons/icon_hamburger.svg) **> Elenco risorse**. Nel menu delle applicazioni, seleziona **Riavvia applicazione**.
 
-Le altre azioni dei passi successivi dipendono dal servizio. Consulta la seguente tabella per le specifiche azioni.
+  Per ulteriori informazioni sulle eventuali ulteriori azioni richieste, vedi la documentazione per il servizio.
 
-|Servizio |	Informazioni|
-|--------|-------------|
-|Presence Insights 	|Se hai un piano Lite e superi le franchigie, viene visualizzato oppure registrato nei log un messaggio 403 che indica che non sei più autorizzato e la tua
-istanza del servizio viene disabilitata. Inoltre, le chiamate API POST REST vengono rifiutate con una risposta 403.<br/><br/>Se il tuo servizio è disabilitato perché hai superato la franchigia, puoi eseguire l'upgrade da un piano Lite a un piano a pagamento. Il tuo servizio viene riabilitato entro 2 ore.<br/><br/>Se hai un piano a pagamento, puoi ridurlo a un piano Lite finché il tuo utilizzo rimane entro la franchigia prevista dal piano Lite per gli eventi e l'archiviazione totale.<br/><br/>Quando esegui l'upgrade o la riduzione del tuo piano, non hai bisogno di preparare nuovamente o riavviare le tue applicazioni.|
-{:caption="Tabella 1. Passi successivi per la modifica del tuo piano" caption-side="top"}
-
-
-## Modifica del piano mediante l'interfaccia riga di comando
+## Modifica di un piano tramite la CLI
 {: #changing_command_line}
 
-Facoltativamente, puoi modificare il tuo piano di servizio mediante l'interfaccia riga di comando immettendo il seguente comando:
+Come alternativa alla console, puoi modificare il piano di un servizio utilizzando l'interfaccia riga di comando (o CLI, command-line interface) {{site.data.keyword.Bluemix_notm}}.
 
-```
-cf update-service <nome_servizio> [-p <nuovo_piano>]
-```
+1. Controlla se il servizio è abilitato con il controller delle risorse (o RC, resource controller).
+
+   ```
+   ibmcloud catalog service <service_name>
+   ```
+   {:codeblock}
+
+   Se è abilitato con il controller delle risorse (o RC, resource controller), il servizio elenca `RC Compatible true`. Annota l'ID del piano a cui desideri passare.
+
+   ```
+   RC Compatible      true
+   RC Provisionable   true
+   IAM Compatible     true
+   Children   Name                      Kind         ID
+              lite                      plan         4bcd3fgh-3cf2-47c0-93d4-d2f2289eac28
+              standard                  plan         264d0450-996d-4bcd-894d-fc7018dacf1e
+    ```
+
+1. Modifica il piano per la tua istanza del servizio.
+
+   - Se il servizio è abilitato a RC, modifica il tuo piano utilizzando il comando [`ibmcloud resource service-instance-update`.](/docs/cli/reference/ibmcloud/cli_resource_group.html#ibmcloud_commands_resource).
+
+     ```
+     ibmcloud resource service-instance-update <service_instance_name> --service-plan-id <plan_id>
+     ```
+     {: codeblock}
+
+   - Se il servizio non è abilitato a RC ed è pertanto basato su Cloud Foundry, modifica il tuo piano utilizzando il comando [`ibmcloud cf update-service`](/docs/cli/reference/ibmcloud/cf_index.html#cf).
+
+     ```
+     ibmcloud cf update-service <service_instance_name> [-p <plan_name>]
+     ```
+     {:codeblock}

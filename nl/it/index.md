@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2018
-lastupdated: "2018-11-19"
+  years: 2015, 2019
+lastupdated: "2019-02-13"
 
 ---
 
@@ -62,8 +62,8 @@ Controlla il seguente elenco di funzioni chiave disponibili in un account Lite:
    * Ricevi notifiche e-mail relative allo stato del tuo account e ai limiti di quota.
    * Le tue applicazioni Cloud Foundry possono accedere fino a 256 MB di memoria di runtime istantanea gratuita.
    * Puoi eseguire il provisioning di una singola istanza di qualsiasi servizio nel [catalogo {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/catalog/?search=label:lite%20lite){: new_window} che dispone di un piano Lite.
-   * Dopo 10 giorni senza attività di sviluppo, le tue applicazioni vengono sospese. Puoi iniziare a lavorare su nuove applicazioni senza doverti preoccupare di superare i limiti di quota della memoria.
-   * Dopo 30 giorni senza attività di sviluppo, le tue istanze del servizio con i piani Lite vengono eliminate. In questo modo, non devi gestire l'eliminazione di istanze inattive prima di crearne di nuove.
+   * Dopo 10 giorni senza attività di sviluppo, le tue applicazioni vengono sospese. Puoi ora attivare le tue applicazioni continuando a lavorare su di esse.
+   * Dopo 30 giorni senza attività di sviluppo, le tue istanze del servizio con i piani Lite vengono eliminate.
 
 ### Upgrade del tuo account Lite
 {: #upgrade-lite-account}
@@ -88,9 +88,9 @@ Per eseguire l'upgrade del tuo account Pagamento a consumo a un account Sottoscr
 ## Account Sottoscrizione
 {: #subscription-account}
 
-Con un account Sottoscrizione, puoi creare più gruppi di risorse per gestire facilmente la quota e visualizzare l'utilizzo della fatturazione per un insieme di risorse. Ti impegni a un importo di spesa minimo combinato ogni mese e ricevi uno sconto sulla sottoscrizione che viene applicato a tale addebito minimo. Ti viene addebitata la tariffa non scontata per l'utilizzo che supera la quantità totale della tua Sottoscrizione. Per visualizzare la tua sottoscrizione, vai a **Gestisci > Fatturazione e utilizzo** e seleziona **Sottoscrizioni**. 
+Con un account Sottoscrizione, puoi creare più gruppi di risorse per gestire facilmente la quota e visualizzare l'utilizzo della fatturazione per un insieme di risorse. Ti impegni a un importo di spesa minimo combinato ogni mese e ricevi uno sconto sulla sottoscrizione che viene applicato a tale addebito minimo. Ti viene addebitata la tariffa non scontata per l'utilizzo che supera la quantità totale della tua Sottoscrizione. Per visualizzare la tua sottoscrizione, vai a **Gestisci > Fatturazione e utilizzo** e seleziona **Sottoscrizioni**.
 
-Se hai un account Sottoscrizione, puoi creare la maggior parte dei servizi disponibili dal [catalogo IBM Cloud](https://cloud.ibm.com/catalog/){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno"). Tuttavia, alcuni servizi utilizzano un piano dei prezzi specifico che ti richiede di effettuarne l'acquisto separatamente.
+Se hai un account Sottoscrizione, puoi creare la maggior parte dei servizi disponibili dal [catalogo IBM Cloud](https://cloud.ibm.com/catalog){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno"). Tuttavia, alcuni servizi utilizzano un piano dei prezzi specifico che ti richiede di effettuarne l'acquisto separatamente.
 
 ### Account {{site.data.keyword.Bluemix_dedicated_notm}}
 Con {{site.data.keyword.Bluemix_dedicated_notm}}, devi registrarti per un periodo minimo di un anno che include:

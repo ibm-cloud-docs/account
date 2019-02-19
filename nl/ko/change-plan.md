@@ -4,8 +4,8 @@
 
 copyright:
 
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-02-13"
 
 ---
 
@@ -16,13 +16,13 @@ lastupdated: "2018-11-19"
 {:new_window: target="_blank"}
 
 
-# 플랜 변경
+# 서비스 플랜 변경
 {: #changing}
 
-플랜 변경이 특정 서비스에 대해 사용으로 설정되어 있으면 {{site.data.keyword.Bluemix}} 서비스 플랜을 변경할 수 있습니다. 플랜을 변경하고자 할 수 있습니다(예: 플랜을 업그레이드하거나 축소함). 서비스 인스턴스 대시보드에서 플랜을 변경할 수 있습니다.
+특정 {{site.data.keyword.Bluemix}} 서비스에 대해 플랜 변경이 사용으로 설정된 경우에는 해당 서비스의 플랜을 변경할 수 있습니다. 플랜을 변경하고자 할 수 있습니다(예: 플랜을 업그레이드하거나 축소함). 서비스 인스턴스 대시보드에서 플랜을 변경할 수 있습니다.
 {: shortdesc}
 
-계정 유형 업그레이드에 대한 세부사항을 알고 싶으십니까? 계정 유형 업그레이드에 대한 세부사항을 알아보려면 [내 계정 유형을 업그레이드하거나 변경하려면 어떻게 해야 합니까?](/docs/account/account_faq.html#changeacct)를 참조하십시오. 
+계정 유형 업그레이드에 대한 세부사항을 알고 싶으십니까? 계정 유형 업그레이드에 대한 세부사항을 알아보려면 [내 계정 유형을 업그레이드하거나 변경하려면 어떻게 해야 합니까?](/docs/account/account_faq.html#changeacct)를 참조하십시오.
 {: tip}
 
 특정 서비스에 대해서만 서비스 플랜을 변경할 수 있습니다. 서비스에 대해 플랜 변경이 가능하면 서비스 인스턴스 대시보드가 탐색에서 **플랜** 옵션을 표시합니다. 플랜을 변경하는 경우 서비스마다 수행할 다음 단계 세트가 다릅니다.
@@ -30,21 +30,45 @@ lastupdated: "2018-11-19"
 1. 서비스 인스턴스 대시보드에서 **플랜**을 클릭하십시오. 일반적으로 플랜을 업그레이드하거나 플랜을 낮출 수 있습니다.
 2. 플랜이 변경되면 추가 단계를 완료해야 합니다. 플랜 변경 유형과 서비스에 따라 단계는 달라집니다. 예를 들어, 플랜을 낮추는 경우 앱을 다시 스테이징해야 합니다. 또는 플랜을 업그레이드한 경우에는 앱을 다시 스테이징하고 기타 조치를 수행해야 할 수 있습니다.
 
-앱을 다시 스테이징하려면 리소스 목록으로 이동하여 서비스가 바인드되어 있는 앱을 찾으십시오. 메뉴 아이콘 ![메뉴 아이콘](../icons/icon_hamburger.svg) **> 리소스 목록**을 클릭하십시오. 앱 메뉴에서 **앱 다시 시작**을 선택하십시오.
+   앱을 다시 스테이징하려면 리소스 목록으로 이동하여 서비스가 바인드되어 있는 앱을 찾으십시오. 메뉴 아이콘 ![메뉴 아이콘](../icons/icon_hamburger.svg) **> 리소스 목록**을 클릭하십시오. 앱 메뉴에서 **앱 다시 시작**을 선택하십시오.
 
-다른 다음 단계 조치는 서비스에 따라 다릅니다. 특정 조치는 다음 테이블을 참조하십시오.
+  추가로 필요한 조치에 대한 자세한 정보는 해당 서비스에 대한 문서를 참조하십시오. 
 
-|서비스 |	정보|
-|--------|-------------|
-|Presence Insights 	|Lite 플랜을 사용하는 중에 무료 사용량을 초과하는 경우, 403 메시지가 표시되거나 사용자에게 더 이상 권한이 없다는 메시지가 로깅되고 서비스 인스턴스 사용이 불가능하게 됩니다. 또한 POST REST API 호출이 403 응답으로 거부됩니다. <br/><br/>무료 사용량을 초과하여 서비스가 사용 불가능한 경우 Lite 플랜을 유료 플랜으로 업그레이드할 수 있습니다. 서비스는 2시간 내에 다시 사용할 수 있게 됩니다. <br/><br/>유료 플랜을 보유하는 경우, 이벤트 및 총 스토리지에 대해 사용량이 Lite 플랜 허용량 범위 이내인 한 플랜을 Lite 플랜으로 축소할 수 있습니다. <br/><br/>플랜을 업그레이드하거나 축소하는 경우 앱을 다시 스테이징하거나 다시 시작할 필요가 없습니다. |
-{:caption="표 1. 플랜 변경을 위한 다음 단계" caption-side="top"}
-
-
-## 명령행 인터페이스를 통해 플랜 변경
+## CLI를 통한 플랜 변경
 {: #changing_command_line}
 
-선택적으로, 다음 명령을 입력하여 명령행 인터페이스에서 서비스 플랜을 변경할 수 있습니다.
+콘솔을 사용하는 대신 {{site.data.keyword.Bluemix_notm}} 명령행 인터페이스(CLI)를 사용하여 서비스의 플랜을 변경할 수 있습니다. 
 
-```
-cf update-service <service_name> [-p <new_plan>]
-```
+1. 서비스가 리소스 제어기에서 사용할 수 있도록 설정되었는지 확인하십시오. 
+
+   ```
+   ibmcloud catalog service <service_name>
+   ```
+   {:codeblock}
+
+   서비스가 리소스 제어기(RC)에서 사용할 수 있도록 설정된 경우에는 `RC Compatible true`가 나열됩니다. 변경할 플랜의 ID를 기록하십시오. 
+
+   ```
+   RC Compatible      true
+   RC Provisionable   true
+   IAM Compatible     true
+   Children   Name                      Kind         ID
+              lite                      plan         4bcd3fgh-3cf2-47c0-93d4-d2f2289eac28
+              standard                  plan         264d0450-996d-4bcd-894d-fc7018dacf1e
+    ```
+
+1. 서비스 인스턴스의 플랜을 변경하십시오. 
+
+   - RC 사용 서비스의 경우에는 [`ibmcloud resource service-instance-update` 명령](/docs/cli/reference/ibmcloud/cli_resource_group.html#ibmcloud_commands_resource)을 사용하여 플랜을 변경하십시오. 
+
+     ```
+     ibmcloud resource service-instance-update <service_instance_name> --service-plan-id <plan_id>
+     ```
+     {: codeblock}
+
+   - RC를 사용하지 않아 Cloud Foundry를 기반으로 하는 서비스의 경우에는 [`ibmcloud cf update-service` 명령](/docs/cli/reference/ibmcloud/cf_index.html#cf)을 사용하여 플랜을 변경하십시오. 
+
+     ```
+     ibmcloud cf update-service <service_instance_name> [-p <plan_name>]
+     ```
+     {:codeblock}

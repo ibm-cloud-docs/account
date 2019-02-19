@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2018
-lastupdated: "2018-11-19"
+  years: 2015, 2019
+lastupdated: "2019-02-13"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-11-19"
 # Kontotypen
 {: #accounts}
 
-{{site.data.keyword.Bluemix_notm}} bietet drei verschiedene Kontotypen: Lite-Konto, nutzungsabhängiges Konto und Abbonementkonto. Sobald Sie eine Registrierung durchführen, erhalten Sie ein kostenfreies Lite-Konto. Nutzungsabhängige Konten und Abonnementkonten sind die verfügbaren kostenpflichtigen Kontooptionen, mit denen jeweils unterschiedliche Features zur Verfügung stehen. Vergleichen Sie die einzelnen Kontotypen und wählen Sie das Konto aus, das für Sie am besten geeignet ist.
+{{site.data.keyword.Bluemix_notm}} bietet drei verschiedene Kontotypen: Lite-Konto, nutzungsabhängiges Konto und Abonnementkonto. Sobald Sie eine Registrierung durchführen, erhalten Sie ein kostenfreies Lite-Konto. Nutzungsabhängige Konten und Abonnementkonten sind die verfügbaren kostenpflichtigen Kontooptionen, mit denen jeweils unterschiedliche Features zur Verfügung stehen. Vergleichen Sie die einzelnen Kontotypen und wählen Sie das Konto aus, das für Sie am besten geeignet ist.
 {:shortdesc}
 
 
@@ -62,13 +62,13 @@ Die folgende Liste enthält zentrale Features, die mit einem Lite-Konto zur Verf
    * Sie erhalten E-Mail-Benachrichtigungen über Ihren Kontostatus und Ihre Kontingentbeschränkungen.
    * Ihre Cloud Foundry-Apps können auf bis zu 256 MB an freiem, sofort verfügbarem Laufzeitspeicher zugreifen.
    * Sie können eine Instanz jedes Service im [{{site.data.keyword.Bluemix_notm}}-Katalog einrichten![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/catalog/?search=label:lite%20lite){: new_window}, für den ein Lite-Plan besteht.
-   * Nach 10 Tagen ohne Entwicklungstätigkeit werden Ihre Apps inaktiviert. Sie können mit der Arbeit an neuen Apps beginnen, ohne sich Gedanken über das Überschreiten von Grenzwerten für Speicherkontingente zu machen. 
-   * Nach 30 Tagen ohne Entwicklungstätigkeit werden Ihre Serviceinstanzen mit den Lite-Plänen gelöscht. Das heißt, Sie müssen sich nicht um das Löschen inaktiver Instanzen kümmern, bevor Sie neue Instanzen erstellen.
+   * Nach 10 Tagen ohne Entwicklungstätigkeit werden Ihre Apps inaktiviert. Sie können Ihre Apps aktivieren, indem Sie die Arbeit an ihnen fortsetzen.
+   * Nach 30 Tagen ohne Entwicklungstätigkeit werden Ihre Serviceinstanzen mit den Lite-Plänen gelöscht.
 
 ### Upgrade für Lite-Konto durchführen
 {: #upgrade-lite-account}
 
-Sie können ein Upgrade auf ein nutzungsabhängiges Konto oder ein Abonnementkonto durchführen. Weitere Informationen finden Sie in [Upgrade für Konto durchführen](/docs/account/account_settings.html#upgrading-account). 
+Sie können ein Upgrade auf ein nutzungsabhängiges Konto oder ein Abonnementkonto durchführen. Weitere Informationen finden Sie in [Upgrade für Konto durchführen](/docs/account/account_settings.html#upgrading-account).
 
 Nach dem Upgrade auf ein Konto mit nutzungsabhängiger Zahlung erhalten Sie eine Werbegutschrift in Höhe von 200 US-Dollar. Dieses Guthaben wird Ihrem Konto automatisch gutgeschrieben. Die Gutschrift von 200 US-Dollar hat eine Gültigkeit von 30 Tagen und wird automatisch mit Ihrer Rechnung verrechnet. Die Gutschrift kann nicht mit Angeboten anderer Anbieter verwendet werden.
 
@@ -83,14 +83,14 @@ Darüber hinaus können mit einem nutzungsabhängigen Konto optionale Features, 
 ### Upgrade für nutzungsabhängiges Konto durchführen
 {: #upgrade-to-subscription}
 
-Wenn Sie für ein nutzungsabhängiges Konto ein Upgrade auf ein Abonnementkonto durchführen möchten, wenden Sie sich an den [IBM Vertrieb](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link"). 
+Wenn Sie für ein nutzungsabhängiges Konto ein Upgrade auf ein Abonnementkonto durchführen möchten, wenden Sie sich an den [IBM Vertrieb](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link").
 
 ## Abonnementkonto
 {: #subscription-account}
 
-Mit einem Abonnementkonto können Sie mehrere Ressourcengruppen erstellen, um Kontingente ohne großen Aufwand zu verwalten und um Informationen zu Abrechnung und Nutzung für eine Gruppe von Ressourcen anzuzeigen. Sie verpflichten sich zu einem kombinierten Mindestausgabebetrag pro Monat und erhalten einen Abonnementrabatt, der auf diese Mindestgebühr angewendet wird. Für eine Nutzung, die über die Gesamtsumme des Abonnements hinaus geht, fallen die normalen Gebühren ohne Rabatt an. Zum Anzeigen Ihres Abonnements rufen Sie **Verwalten > Abrechnung und Nutzung** auf und wählen Sie **Abonnements** aus.  
+Mit einem Abonnementkonto können Sie mehrere Ressourcengruppen erstellen, um Kontingente ohne großen Aufwand zu verwalten und um Informationen zu Abrechnung und Nutzung für eine Gruppe von Ressourcen anzuzeigen. Sie verpflichten sich zu einem kombinierten Mindestausgabebetrag pro Monat und erhalten einen Abonnementrabatt, der auf diese Mindestgebühr angewendet wird. Für eine Nutzung, die über die Gesamtsumme des Abonnements hinaus geht, fallen die normalen Gebühren ohne Rabatt an. Zum Anzeigen Ihres Abonnements rufen Sie **Verwalten > Abrechnung und Nutzung** auf und wählen Sie **Abonnements** aus.
 
-Wenn Sie über ein Abonnementkonto verfügen, können Sie die meisten Services erstellen, die im [IBM Cloud-Katalog](https://cloud.ibm.com/catalog/){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link") verfügbar sind. Für einige Services gilt jedoch ein bestimmter Preisstrukturplan, gemäß dem diese Services separat erworben werden müssen. 
+Wenn Sie über ein Abonnementkonto verfügen, können Sie die meisten Services erstellen, die im [IBM Cloud-Katalog](https://cloud.ibm.com/catalog){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link") verfügbar sind. Für einige Services gilt jedoch ein bestimmter Preisstrukturplan, gemäß dem diese Services separat erworben werden müssen.
 
 ### {{site.data.keyword.Bluemix_dedicated_notm}}-Konto
 Bei {{site.data.keyword.Bluemix_dedicated_notm}} müssen Sie sich für eine Mindestlaufzeit von einem Jahr anmelden.
