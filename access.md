@@ -38,7 +38,7 @@ To grant other permissions, use the Viewer and Editor roles. Review the followin
 | Administrator            | Can change object metadata or visibility for private services, and restrict visibility of a public service  |
 {: caption="Table 1. Example platform management roles and actions for the catalog" caption-side="top"}
 
-For more information about assigning access to users, see [Access to account management services](/docs/iam?topic=iam-acctmgmt#acctmgmt).
+For more information about assigning access to users, see [Assigning access to account management services](/docs/iam?topic=iam-account-services).
 
 ## Confirming your access
 {: #confirm-access}
