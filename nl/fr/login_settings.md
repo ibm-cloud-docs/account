@@ -3,8 +3,8 @@
 
 copyright:
 
-  years: 2018
-lastupdated: "2018-11-29"
+  years: 2018, 2019
+lastupdated: "2019-01-28"
 
 
 ---
@@ -33,7 +33,7 @@ Vous pouvez afficher les options de sécurité suivantes et les activer ou les d
 
 Pour configurer vos questions de sécurité, procédez comme suit :
 1. Dans la console, accédez à l'icône **{{site.data.keyword.avatar}}** ![Icône Avatar](../icons/i-avatar-icon.svg) > **Profil et paramètres** et sélectionnez **Paramètres de connexion**.
-2. Cliquez sur **Editer**. 
+2. Cliquez sur **Editer**.
 3. Sélectionnez les questions souhaitées et posez-les. Vous devez utiliser trois options de question de sécurité.
 4. Cliquez sur **Sauvegarder** une fois que vous avez terminé.  
 5. Assurez-vous que la case `Oui` est cochée afin que les questions de sécurité soient activées. Si vous sélectionnez l'option `Oui`, il peut vous être demandé de vous connecter à nouveau à votre compte.  
@@ -56,39 +56,35 @@ Cette option est disponible uniquement pour les utilisateurs qui se connectent a
 ## Configuration de l'authentification TOTP
 {: #MFA}
 
-Pour configurer votre authentification TOTP, cliquez sur **Configuration**. 
+Pour configurer votre authentification TOTP, cliquez sur **Configuration**.
 
 L'authentification multi-facteur TOTP ajoute une couche supplémentaire de sécurité à votre compte en demandant un code d'accès TOTP en plus de l'ID et du mot de passe standard lors de la connexion. Vous devez configurer votre authentification TOTP avant que votre administrateur de compte puisse activer pour vous cette exigence d'authentification multi-facteur.
 
-Vous pouvez également être invité à entrer un code d'accès à usage unique à durée limitée si le paramètre TOTP d'utilisateur n'est pas configuré et activé. Cela est dû au fait qu'un propriétaire de compte peut activer une authentification multi-facteur IBMid pour un compte auquel vous avez accès. Ce type d'authentification multi-facteur s'applique à tous les utilisateurs du compte lorsque ce paramètre est activé. Vous êtes tenu de l'utiliser. Pour plus d'informations, voir [Types d'authentification multi-facteur](/docs/iam/mfatypes.html#types).
+Vous pouvez également être invité à entrer un code d'accès à usage unique à durée limitée si le paramètre TOTP d'utilisateur n'est pas configuré et activé. Cela est dû au fait qu'un propriétaire de compte peut activer une authentification multi-facteur IBMid pour un compte auquel vous avez accès. Ce type d'authentification multi-facteur s'applique à tous les utilisateurs du compte lorsque ce paramètre est activé. Vous êtes tenu de l'utiliser. Pour plus d'informations, voir [Types d'authentification multi-facteur](/docs/iam?topic=iam-types).
 
 
-## Configuration des options d'authentification externe
+## Configuration de l'authentification externe
 {: #third-party-MFA}
 
-Vous (ou votre administrateur de compte) pouvez commander à un coût mensuel une authentification par téléphone ou Symantec. Pour que vous puissiez commander l'authentification externe, vous devez disposer de droits d'ajout d'infrastructure de services. Pour savoir si l'authentification externe est activée, accédez à l'**icône {{site.data.keyword.avatar}}** ![Icône Avatar](../icons/i-avatar-icon.svg) > **Profil et paramètres** et sélectionnez **Paramètres de connexion**. Si l'authentification multi-facteur par téléphone est désactivée, cliquez sur **Aller à > Détails de l'utilisateur**. Ce lien vous amène à la même page que si vous suiviez la procédure permettant de configurer votre authentification Symantec et de configurer votre authentification par téléphone.  
+Vous (ou votre administrateur de compte) pouvez commander à un coût mensuel une authentification par téléphone ou Symantec. Pour que vous puissiez commander l'authentification externe, vous devez disposer de droits d'ajout d'infrastructure de services. Pour savoir si l'authentification externe est activée, accédez à l'**icône {{site.data.keyword.avatar}}** ![Icône Avatar](../icons/i-avatar-icon.svg) > **Profil et paramètres** et sélectionnez **Paramètres de connexion**.
 
 ### Configuration de l'authentification Symantec
 
 Si votre administrateur de compte choisit de commander la protection d'identité Symantec, vous devez collaborer avec lui pour effectuer la commande et fournir votre ID de données d'identification :
 
 1. Accédez à la page [Symantec VIP](https://vip.symantec.com/).
-2. Cliquez sur **Télécharger**. 
-3. Procurez-vous votre ID de données d'identification et transmettez ce dernier à votre administrateur pour terminer la commande. 
+2. Cliquez sur **Télécharger**.
+3. Procurez-vous votre ID de données d'identification et transmettez ce dernier à votre administrateur pour terminer la commande.
 
 Une fois que l'administrateur commande et active l'option, vous pouvez utiliser l'application pour l'authentification de connexion.
 
 ### Configuration de l'authentification par téléphone
 
-Si votre administrateur de compte choisit de commander la protection d'identité par téléphone, vous devez la configurer après la commande par l'administrateur. Ensuite, votre administrateur peut l'activer afin que vous puissiez l'utiliser. Une fois que votre administrateur a commandé l'authentification par téléphone, procédez comme suit pour la configurer :
+Vous pouvez configurer et utiliser la protection d'identité par téléphone une fois que votre administrateur de compte l'a commandée et activée.
 
-1. Accédez à **Gérer** > **Accès (IAM)**.
-2. Cliquez sur **Utilisateurs** et sélectionnez votre nom dans la liste.
-3. Sur la page **Détails de l'utilisateur** de la section **Gérer la connexion de l'utilisateur**, cliquez sur l'icône **Editer** ![Icône Editer](../icons/icon_write.svg) pour la ligne **Authentification par téléphone**.
-4. Suivez les invites pour configurer votre authentification par téléphone.
-
-Une fois que vous avez configuré votre authentification par téléphone, l'administrateur de compte peut activer l'option afin que vous soyez invité à indiquer ce type d'authentification multi-facteur lors de la connexion.
-
-
- 
-
+1. Accédez à l'icône **{{site.data.keyword.avatar}}** ![Icône Avatar](../icons/i-avatar-icon.svg) > **Profil et paramètres** puis sélectionnez **Paramètres de connexion**.
+2. Si l'authentification multi-facteur par téléphone est désactivée, cliquez sur **Aller à > Détails de l'utilisateur**.
+3. Dans la section de gestion des connexions utilisateur, activez l'authentification par téléphone.
+4. Pour indiquer des informations de contact pour l'authentification, cliquez sur l'icône **Editer** ![Icône Editer](../icons/edit-tagging.svg).
+5. Renseignez toutes les zones. Vous pouvez définir si vous souhaitez recevoir un appel téléphonique ou un message texte comme méthode d'authentification. Si vous souhaitez qu'un code confidentiel (PIN) soit exigé, sélectionnez l'option dans la liste **Type de code confidentiel** et indiquez le code confidentiel que vous souhaitez utiliser.  
+6. Cliquez sur **Appliquer**.

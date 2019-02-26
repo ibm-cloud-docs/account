@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-07-24"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -25,4 +25,4 @@ Vous pouvez effectuer le suivi des événements suivants :
 * Ajout ou retrait d'utilisateurs
 * Création d'organisations
 
-Pour commencer à surveiller les actions de compte, voir [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker/index.html#getting-started-with-cla). Pour plus d'informations sur les différentes zones d'événement dont vous pouvez effectuer le suivi, voir [Suivi des événements de gestion des comptes](/docs/services/cloud-activity-tracker/services/at_events_acc_mgt.html).
+Pour commencer à surveiller les actions de compte, voir [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started-with-cla). Pour plus d'informations sur les différentes zones d'événement dont vous pouvez effectuer le suivi, voir [Suivi des événements de gestion des comptes](/docs/services/cloud-activity-tracker/services?topic=cloud-activity-tracker-at_events).

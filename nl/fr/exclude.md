@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2017, 2018
-lastupdated: "2018-11-28"
+  years: 2017, 2019
+lastupdated: "2019-01-28"
 
 ---
 
@@ -23,7 +23,7 @@ En tant qu'administrateur de votre compte {{site.data.keyword.Bluemix}}, vous po
 Le masquage d'une ressource dans le catalogue ne retire pas cet élément de l'interface CLI Cloud Foundry ou de la liste des catégories d'offre disponible dans la navigation de la console {{site.data.keyword.Bluemix_notm}} (Finance, Mobile, Watson et Applications Web, par exemple).
 {: note}
 
-Vous pouvez utiliser l'{{site.data.keyword.Bluemix}} [interface de ligne de commande (CLI)](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) ou la console afin de déterminer si vous avez le droit d'autoriser des utilisateurs à consulter une ressource privée ajoutée au compte. Si vous êtes propriétaire d'un compte, vous pouvez accorder l'accès à votre compte à un utilisateur à partir de la console en affectant une règle d'accès. Pour plus d'informations, voir [Gestion de l'accès à votre compte](access.html).
+Vous pouvez utiliser la console ou l'interface de ligne de commande (CLI) {{site.data.keyword.Bluemix}} [](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) afin de déterminer si vous avez le droit d'autoriser des utilisateurs à voir une ressource privée ajoutée au compte. Si vous êtes propriétaire d'un compte, vous pouvez accorder l'accès à votre compte à un utilisateur à partir de la console en affectant une règle d'accès. Pour plus d'informations, voir [Gestion de l'accès à votre compte](/docs/account?topic=account-find-access).
 
 ## Recherche d'une ressource
 {: #find-resource}
@@ -87,6 +87,6 @@ Children           Name                                          Kind         ID
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-Recherchez l'ID d'un objet et excluez un compte en exécutant la commande `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>`.
+Recherchez l'ID d'un objet et excluez un compte en utilisant la commande `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>`.
 
 Pour plus d'informations sur le fonctionnement de la visibilité, voir la [documentation de l'API Catalog](https://{DomainName}/apidocs/globalcatalog).

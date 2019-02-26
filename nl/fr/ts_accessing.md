@@ -44,7 +44,7 @@ Le mot de passe que vous avez utilisé pour vous connecter à {{site.data.keywor
 Utilisez l'une des méthodes suivantes :
 {: tsResolve}
  * Accédez à la page [de profil IBM ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://myibm.ibm.com/dashboard/){: new_window} pour confirmer que vous utilisez un mot de passe valide.
- * Si vous avez oublié votre mot de passe, cliquez sur **Mot de passe oublié ?** pour le réinitialiser. 
+ * Si vous avez oublié votre mot de passe, cliquez sur **Mot de passe oublié ?** pour le réinitialiser.
  * Si vous avez oublié votre IBMid ou que les problèmes avec votre mot de passe persistent, prenez contact avec le service Worldwide IBM Registration Helpdesk pour obtenir de l'aide.
 
 Si vous vous connectez à {{site.data.keyword.Bluemix_notm}} et que le processus de connexion est interrompu, quelle qu'en soit la raison (réinitialisation de votre mot de passe, par exemple), revenez à la console et démarrez à nouveau le processus de connexion.
@@ -69,7 +69,7 @@ Vous devez disposer d'un IBMid et d'un mot de passe valides pour vous connecter 
 
  * Entrez une adresse électronique complète pour l'IBMid.
  {: tsResolve}
- * Si vous êtes utilisateur SoftLayer disposant d'un ID SoftLayer, vous devez utiliser l'authentification IBMid dans chaque compte auquel vous avez accès avant de pouvoir vous connecter. Pour plus d'informations, voir [Passage à l'IBMid](/docs/account/softlayerlink.html).
+ * Si vous êtes utilisateur SoftLayer disposant d'un ID SoftLayer, vous devez utiliser l'authentification IBMid dans chaque compte auquel vous avez accès avant de pouvoir vous connecter. Pour plus d'informations, voir [Passage à l'IBMid](/docs/account?topic=account-unifyingaccounts).
 
 
 ## Pourquoi mon IBMid n'est-il associé à aucun compte {{site.data.keyword.Bluemix_notm}} ?
@@ -107,7 +107,7 @@ Utilisez l'une des méthodes suivantes :
 {: #ts_login_ibmid}
 {: troubleshoot}
 
-Si vous vous connectez à {site.data.keyword.Bluemix_notm}} et que l'authentification de votre IBMid n'aboutit pas, il peut exister un problème lié au service. 
+Si vous vous connectez à {{site.data.keyword.Bluemix_notm}} et que l'authentification de votre IBMid n'aboutit pas, il peut exister un problème lié au service.
 
 Lorsque vous vous connectez à {{site.data.keyword.Bluemix_notm}}, l'authentification via IBMid n'aboutit pas.
 {: tsSymptoms}
@@ -133,7 +133,7 @@ Après avoir procédé à votre enregistrement pour un compte Lite {{site.data.k
 Après avoir procédé à un enregistrement pour un compte Lite {{site.data.keyword.Bluemix_notm}}, vous recevez un message électronique incluant un lien sur lequel vous devez cliquer pour confirmer votre enregistrement.  
 {: tsCauses}
 
-La confirmation par courrier électronique est envoyée à l'adresse électronique associée à votre IBMid. Vérifiez votre boîte de réception et votre dossier de courrier indésirable. Si vous n'avez pas reçu le message électronique de confirmation, contactez [l'équipe de support {{site.data.keyword.Bluemix_notm}}](/docs/get-support/howtogetsupport.html).  
+La confirmation par courrier électronique est envoyée à l'adresse électronique associée à votre IBMid. Vérifiez votre boîte de réception et votre dossier de courrier indésirable. Si vous n'avez pas reçu le message électronique de confirmation, contactez [l'équipe de support {{site.data.keyword.Bluemix_notm}}](/docs/get-support?topic=get-support-getting-customer-support).  
 {: tsResolve}
 
 
@@ -157,5 +157,5 @@ Effectuez une ou plusieurs des actions suivantes :
   * Déconnectez-vous de {{site.data.keyword.Bluemix_notm}}, puis reconnectez-vous.
   * Utilisez le mode de navigation privée de votre navigateur.
   * Effacez les cookies et le cache du navigateur.
-  * Utilisez un navigateur différent. Pour plus d'informations sur les versions des navigateurs qui sont prises en charge par {{site.data.keyword.Bluemix_notm}}, voir [Prérequis {{site.data.keyword.Bluemix_notm}}](/docs/overview/prereqs.html#prereqs).
+  * Utilisez un navigateur différent. Pour plus d'informations sur les versions de navigateur prises en charge par {{site.data.keyword.Bluemix_notm}}, voir [Prérequis {{site.data.keyword.Bluemix_notm}}](/docs/overview?topic=overview-prereqs-platform).
   * Si vous avez installé l'interface de ligne de commande Cloud Foundry, entrez la commande `ibmcloud cf apps` pour déterminer si votre application est en cours d'exécution.

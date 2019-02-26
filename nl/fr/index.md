@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2018
-lastupdated: "2018-11-19"
+  years: 2015, 2019
+lastupdated: "2019-02-13"
 
 ---
 
@@ -25,18 +25,18 @@ lastupdated: "2018-11-19"
 
 Le tableau suivant compare les types de compte Lite, Paiement à la carte et Abonnement. Pour plus de détails sur chaque compte, voir les sections qui suivent.
 
-|  | Lite  | Paiement à la carte | Abonnement |
-|--------------------|--------------------|--------------------|--------------------|
-| **Accès à la mémoire Cloud Foundry gratuite** | 256 Mo | 512 Mo | 512 Mo |
+|                                         | Lite               | Paiement à la carte      | Abonnement       |
+|-----------------------------------------|--------------------|--------------------|--------------------|
+| **Accès à la mémoire Cloud Foundry gratuite** | 256 Mo             | 512 Mo             | 512 Mo             |
 | **Accès aux [plans de service Lite ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://{DomainName}/catalog/?search=label:lite){: new_window}** | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |
-| **Accès à tous les plans gratuits** |  | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |
+| **Accès à tous les plans gratuits**            |                    | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |
 | **Accès à l'intégralité du catalogue {{site.data.keyword.Bluemix_notm}}** |  | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |
-| **Accès à plusieurs régions Cloud Foundry** |  | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |
+| **Accès à plusieurs régions Cloud Foundry** |               | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |
 | **Sans restrictions de temps** | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |
-| **Gratuité garantie** | ![Fonction disponible](../icons/icon_enabled.svg) |  |  |
-| **Remise sur la tarification** |  |  | ![Fonction disponible](../icons/icon_enabled.svg) |
+| **Gratuité garantie**                | ![Fonction disponible](../icons/icon_enabled.svg) |  |         |
+| **Remise sur la tarification**                  |                    |                    | ![Fonction disponible](../icons/icon_enabled.svg) |
 | **Idéal pour l'apprentissage ou la génération de validation de concept** | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |  |
-| **Adapté aux scénarios de production** |  | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |
+| **Adapté aux scénarios de production**        |                    | ![Fonction disponible](../icons/icon_enabled.svg) | ![Fonction disponible](../icons/icon_enabled.svg) |
 {: caption="Tableau 1. Comparaison des comptes {{site.data.keyword.Bluemix_notm}}" caption-side="top"}
 
 
@@ -45,9 +45,9 @@ Le tableau suivant compare les types de compte Lite, Paiement à la carte et Abo
 
 Inscrivez-vous pour un compte Lite gratuit afin de construire des applications et d'explorer des services associés à des plans Lite gratuits signalés par l'indicateur Lite ![Balise Lite](../icons/Lite.svg) dans la console {{site.data.keyword.Bluemix_notm}}. Votre compte Lite n'expire pas et votre carte de crédit n'est pas nécessaire.
 
-Vous avez accès à un seul groupe de ressources, créé pour vous et nommé `Default`. Toutes vos instances de service gérées par {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) sont automatiquement ajoutées à ce groupe de ressources. Vous pouvez mettre à jour ce groupe de ressources à tout moment. Pour la procédure détaillée, voir [Changement de nom d'un groupe de ressources](/docs/resources/resourcegroups.html#renaming-a-resource-group).
+Vous avez accès à un seul groupe de ressources, créé pour vous et nommé `Default`. Toutes vos instances de service gérées par {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) sont automatiquement ajoutées à ce groupe de ressources. Vous pouvez mettre à jour ce groupe de ressources à tout moment. Pour la procédure détaillée, voir [Changement de nom d'un groupe de ressources](/docs/resources?topic=resources-rgs#rename_rgs).
 
-Chaque groupe de ressources est gratuit. Lorsque vous créez une connexion entre un service géré par IAM et une application Cloud Foundry, vous créez un alias, qui est une instance de service comptabilisée dans votre quota. Voir [Gestion des connexions](/docs/resources/connecting_apps.html#connect_app).
+Chaque groupe de ressources est gratuit. Lorsque vous créez une connexion entre un service géré par IAM et une application Cloud Foundry, vous créez un alias, qui est une instance de service comptabilisée dans votre quota. Voir [Gestion des connexions](/docs/resources?topic=resources-connect_app).
 {: tip}
 
 ### Quelles sont les disponibilités ?
@@ -62,13 +62,13 @@ La liste suivante répertorie les principales fonctions disponibles dans un comp
    * Des notifications vous sont envoyées par courrier électronique quant au statut de votre compte et à vos limites de quota.
    * Vos applications Cloud Foundry ont accès à 256 Mo de mémoire d'exécution gratuite et instantanée.
    * Vous pouvez mettre à disposition une instance de n'importe quel service du catalogue [{{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com/catalog/?search=label:lite%20lite){: new_window} doté d'un plan Lite.
-   * Après 10 jours sans activité de développement, vos applications passent en veille. Vous pouvez commencer à travailler sur de nouvelles applications sans vous soucier de dépasser les limites de quota de mémoire.
-   * Après 30 jours sans activité de développement, vos instances de service non associées à des plans Lite sont supprimées. Ainsi, vous n'avez pas à gérer la suppression des instances inactives avant d'en créer de nouvelles.
+   * Après 10 jours sans activité de développement, vos applications passent en veille. Vous pouvez réactiver vos applications en continuant de les utiliser.
+   * Après 30 jours sans activité de développement, vos instances de service non associées à des plans Lite sont supprimées.
 
 ### Mise à niveau de votre compte Lite
 {: #upgrade-lite-account}
 
-Vous pouvez effectuer une mise à niveau vers un compte Paiement à la carte ou vers un compte Abonnement. Pour plus d'informations, voir [Mise à niveau de votre compte](/docs/account/account_settings.html#upgrading-account).
+Vous pouvez effectuer une mise à niveau vers un compte Paiement à la carte ou vers un compte Abonnement. Pour plus d'informations, voir [Comment mettre à niveau ou convertir mon type de compte ?](/docs/account?topic=account-changeacct)
 
 Vous bénéficiez d'un crédit promotionnel de 200 $ après la mise à niveau vers un compte Paiement à la carte. Ce crédit est automatiquement appliqué à votre compte. Votre crédit de 200 $ est valide pendant 30 jours et est automatiquement pris en compte dans votre facture. Ce crédit ne peut pas être utilisé sur des offres de tiers.
 
@@ -83,21 +83,21 @@ De plus, avec un compte Paiement à la carte, vous pouvez commander des élémen
 ### Mise à niveau de votre compte Paiement à la carte
 {: #upgrade-to-subscription}
 
-Pour mettre à niveau votre compte Paiement à la carte en compte Abonnement, prenez contact avec le [service commercial IBM](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe").
+Pour mettre à niveau votre compte Paiement à la carte vers un compte Abonnement, prenez contact avec le [service commercial {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe").
 
 ## Compte d'abonnement
 {: #subscription-account}
 
-Avec un compte d'abonnement, vous pouvez créer plusieurs groupes de ressources de manière à faciliter la gestion du quota et l'affichage de la facturation d'utilisation d'un ensemble de ressources. Vous vous engagez à dépenser une somme minimale combinée par mois et recevez une remise sur abonnement qui est appliquée à ce montant minimal. Vous êtes facturé au tarif plein pour toute utilisation au-delà du montant total de votre abonnement. Pour voir votre abonnement, accédez à **Gérer > Facturation et utilisation** et sélectionnez **Abonnements**. 
+Avec un compte d'abonnement, vous pouvez créer plusieurs groupes de ressources de manière à faciliter la gestion du quota et l'affichage de la facturation d'utilisation d'un ensemble de ressources. Vous vous engagez à dépenser une somme minimale combinée par mois et recevez une remise sur abonnement qui est appliquée à ce montant minimal. Vous êtes facturé au tarif plein pour toute utilisation au-delà du montant total de votre abonnement. Pour voir votre abonnement, accédez à **Gérer > Facturation et utilisation** et sélectionnez **Abonnements**.
 
-Si vous avez un compte d'abonnement, vous pouvez créer la plupart des services disponibles dans le [catalogue IBM Cloud](https://cloud.ibm.com/catalog/){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe"). Toutefois, il peut être nécessaire d'acheter séparément certains services utilisant un plan de tarification spécifique.
+Si vous avez un compte d'abonnement, vous pouvez créer la plupart des services disponibles dans le catalogue [{{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com/catalog/){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe"). Toutefois, il peut être nécessaire d'acheter séparément certains services utilisant un plan de tarification spécifique.
 
 ### Compte {{site.data.keyword.Bluemix_dedicated_notm}}
 {{site.data.keyword.Bluemix_dedicated_notm}} exige un engagement minimal d'un an qui inclut :
 
    * Une connectivité du réseau privé virtuel vers votre infrastructure
    * Un environnement entièrement redondant dans un centre de données {{site.data.keyword.BluSoftlayer_notm}}
-   * Tous les contextes d'exécution pris en charge (IBM Java Liberty, Node.js et des contextes d'exécution open source intégrés)
+   * Tous les contextes d'exécution pris en charge ({{site.data.keyword.runtime_liberty_short}}, {{site.data.keyword.runtime_nodejs_short}} et contextes d'exécution open source intégrés)
    * Tous les services dédiés que vous avez sélectionnés et tous les services {{site.data.keyword.Bluemix_notm}} publics
    * Le support {{site.data.keyword.Bluemix_notm}} standard
 

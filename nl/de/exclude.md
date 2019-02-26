@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2017, 2018
-lastupdated: "2018-11-28"
+  years: 2017, 2019
+lastupdated: "2019-01-28"
 
 ---
 
@@ -23,34 +23,35 @@ Als Administrator für Ihr {{site.data.keyword.Bluemix}}-Konto können Sie eine 
 Durch das Ausblenden einer Ressource im Katalog wird diese Ressource nicht aus der Cloud Foundry-Befehlszeilenschnittstelle (CLI) oder aus den Angebotskategorielisten entfernt, die über die {{site.data.keyword.Bluemix_notm}}-Konsolennavigation verfügbar sind (z. B. Finanzen, Mobile, Watson und Web-Apps).
 {: note}
 
-Über die [Befehlszeilenschnittstelle (CLI)](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) oder die Konsole von {{site.data.keyword.Bluemix}} können Sie ermitteln, ob Sie über die erforderliche Zugriffsberechtigung verfügen, um Benutzern das Anzeigen einer privaten Ressource zu ermöglichen, die zum Konto hinzugefügt wurde. Als Kontoeigner können Sie einem Benutzer in Ihrem Konto die Zugriffsberechtigung über die Konsole erteilen, indem Sie eine Zugriffsrichtlinie zuweisen. Weitere Informationen finden Sie in [Zugriff auf Konto verwalten](access.html).
+Über die [Befehlszeilenschnittstelle (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) oder die Konsole von {{site.data.keyword.Bluemix}} können Sie ermitteln, ob Sie über die erforderliche Zugriffsberechtigung verfügen, um Benutzern das Anzeigen einer privaten Ressource zu ermöglichen, die zum Konto hinzugefügt wurde. Als Kontoeigner können Sie einem Benutzer in Ihrem Konto die Zugriffsberechtigung über die Konsole erteilen, indem Sie eine Zugriffsrichtlinie zuweisen. Weitere Informationen finden Sie in [Zugriff auf Konto verwalten](/docs/account?topic=account-find-access).
 
 ## Ressource suchen
 {: #find-resource}
 
-Führen Sie den Befehl `ibmcloud catalog search <service-id or service-name>` aus, um nach einer Ressource zu suchen. Ersetzen Sie die Variable 'service-id or service-name' durch den Namen oder die ID einer Ressource. Mithilfe der zurückgegebenen Informationen können Sie nach der ID oder dem Namen des Service suchen, der ausgeblendet werden soll. 
+Führen Sie den Befehl `ibmcloud catalog search <service-id or service-name>` aus, um nach einer Ressource zu suchen. Ersetzen Sie die Variable 'service-id or service-name' durch den Namen oder die ID einer Ressource. Mithilfe der zurückgegebenen Informationen können Sie nach der ID oder dem Namen des Service suchen, der ausgeblendet werden soll.
 
 ## Details der Ressource abrufen
 
-Führen Sie den Befehl `ibmcloud catalog service <service-id or service-name>` aus. Verwenden Sie diesen Befehl, um mithilfe der mit dem vorherigen Befehl ermittelten Informationen weitere Details zu der Ressource abzurufen. Mit den zurückgegebenen Informationen können Sie die Hierarchie anzeigen, die Aufschluss über die untergeordneten Ressourcen der Elemente in Ihrer Ressource gibt. 
+Führen Sie den Befehl `ibmcloud catalog service <service-id or service-name>` aus. Verwenden Sie diesen Befehl, um mithilfe der mit dem vorherigen Befehl ermittelten Informationen weitere Details zu der Ressource abzurufen. Mit den zurückgegebenen Informationen können Sie die Hierarchie anzeigen, die Aufschluss über die untergeordneten Ressourcen der Elemente in Ihrer Ressource gibt.
 
 ## Ressource ausblenden
 {: #vis-exc}
 
-Führen Sie den folgenden Befehl aus, um zu verhindern, dass Benutzer in Ihrem Konto eine öffentliche Ressource anzeigen. 
+Führen Sie den folgenden Befehl aus, um zu verhindern, dass Benutzer in Ihrem Konto eine öffentliche Ressource anzeigen.
 
 `ibmcloud catalog entry-visibility-set <resource-id> —-excludes-add <account-id or account-email>`
 
-Nach dem Flag 'exclude' können Sie eine durch Kommas getrennte Liste mit E-Mail-Adressen oder Konto-IDs hinzufügen, die Konten zugeordnet sind. 
+Nach dem Flag 'exclude' können Sie eine durch Kommas getrennte Liste mit E-Mail-Adressen oder Konto-IDs hinzufügen, die Konten zugeordnet sind.
 
-Der Prozess für das Ausblenden der Ressource nimmt nach der Befehlseingabe etwa 30 Minuten in Anspruch. Melden Sie sich nach 30 Minuten ab und erneut an Ihrem Konto an, um die ausgeblendete Ressource anzuzeigen. 
+Der Prozess für das Ausblenden der Ressource nimmt nach der Befehlseingabe etwa 30 Minuten in Anspruch. Melden Sie sich nach 30 Minuten ab und erneut an Ihrem Konto an, um die ausgeblendete Ressource anzuzeigen.
 
-Einträge, die Sie ausblenden, sind in der Konsole oder in der Befehlszeilenschnittstelle nicht verfügbar. Administratoren des ausgeschlossenen Kontos können die Ressource weiterhin anzeigen. {: note}
+Einträge, die Sie ausblenden, sind in der Konsole oder in der Befehlszeilenschnittstelle nicht verfügbar. Administratoren des ausgeschlossenen Kontos können die Ressource weiterhin anzeigen.
+{: note}
 
 ## Konto aus der Ausschlussliste entfernen
 {: #remove-exclude}
 
-Führen Sie den folgenden Befehl aus, um eine Konto-ID oder E-Mail-Adresse aus der Ausschlussliste zu entfernen. 
+Führen Sie den folgenden Befehl aus, um eine Konto-ID oder E-Mail-Adresse aus der Ausschlussliste zu entfernen.
 
 `ibmcloud catalog entry-visibility-set <service-id> —-excludes-remove <account-id or account-email>`
 
@@ -58,9 +59,9 @@ Führen Sie den folgenden Befehl aus, um eine Konto-ID oder E-Mail-Adresse aus d
 ## Beispiel: Sichtbarkeit untergeordneter Objekte verwalten
 {: #child}
 
-Sie können die Sichtbarkeit Ihrer gesamten Ressourcen verwalten. Die einzelnen untergeordneten Ressourcen verfügen über eigene Sichtbarkeitsmerkmale. Dieses Beispiel zeigt, wie Sie ein Konto vom Cloudant-Service ausschließen können. 
+Sie können die Sichtbarkeit Ihrer gesamten Ressourcen verwalten. Die einzelnen untergeordneten Ressourcen verfügen über eigene Sichtbarkeitsmerkmale. Dieses Beispiel zeigt, wie Sie ein Konto vom Cloudant-Service ausschließen können.
 
-Führen Sie den Befehl `ibmcloud catalog service cloudant` aus, um alle untergeordneten Elemente der Ressource anzuzeigen. 
+Führen Sie den Befehl `ibmcloud catalog service cloudant` aus, um alle untergeordneten Elemente der Ressource anzuzeigen.
 
 ```
 ID                 cloudant
@@ -88,4 +89,4 @@ Children           Name                                          Kind         ID
 
 Suchen Sie die ID für ein Objekt und schließen Sie ein Konto aus, indem Sie den Befehl `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>` ausführen. 
 
-Weitere Informationen zur Funktionsweise der Sichtbarkeit finden Sie in den [Katalog-API-Dokumenten](https://{DomainName}/apidocs/globalcatalog). 
+Weitere Informationen zur Funktionsweise der Sichtbarkeit finden Sie in den [Katalog-API-Dokumenten](https://{DomainName}/apidocs/globalcatalog).

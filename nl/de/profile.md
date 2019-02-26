@@ -4,14 +4,15 @@
 
 copyright:
 
-  years: 2015, 2018
-lastupdated: "2018-11-30"
+  years: 2015, 2019
+lastupdated: "2019-02-15"
 
 ---
 
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
 {:new_window: target="_blank"}
 
 # Profil einrichten
@@ -24,25 +25,27 @@ In Ihrem Profil können Sie ein Foto und persönliche Informationen hinzufügen,
 ## Profilfoto ändern
 {: #profile-photo}
 
-Sie können Ihr Profilfoto ändern. Rufen Sie das Symbol **{{site.data.keyword.avatar}}** ![Avatarsymbol](../icons/i-avatar-icon.svg) &gt; **Profil und Einstellungen** auf. 
+Sie können Ihr Profilfoto ändern. Rufen Sie das Symbol **{{site.data.keyword.avatar}}** ![Avatarsymbol](../icons/i-avatar-icon.svg) &gt; **Profil und Einstellungen** auf.
 
-  * Um ein Foto hinzuzufügen, klicken Sie auf **Foto hochladen**.
-  * Um das aktuelle Foto durch ein neues zu ersetzen, klicken Sie auf **Foto ändern**.
-  * Um das Foto zu entfernen, klicken Sie auf **Foto entfernen**.
+  * Wenn Sie ein Foto hinzufügen oder ein vorhandenes Foto ersetzen möchten, klicken Sie auf **Hochladen**.
+  * Klicken Sie zum Entfernen des Fotos auf **Bilder löschen**.
 
 
 ## Informationen zu Ihrer IBMid bearbeiten
 {: #ibmid}
 
-Eine IBMid ist eine einzelne ID, die Sie für die Anmeldung an Ihrem {{site.data.keyword.Bluemix_notm}}-Konto für Infrastruktur-, Service- und Anwendungsfeatures verwenden. Sie können Ihre IBMid nicht ändern, aber Sie können die zugehörigen Profilinformationen wie z. B. den Namen, die E-Mail-Adresse, die Telefonnummer, das Kennwort oder den Firmennamen bearbeiten. Rufen Sie das Symbol **{{site.data.keyword.avatar}}** ![Avatarsymbol](../icons/i-avatar-icon.svg) &gt; **Profil und Einstellungen** auf. Weitere Informationen finden Sie in [Zur IBMid wechseln und Konten verknüpfen](softlayerlink.html). 
+Eine IBMid ist eine einzelne ID, die Sie für die Anmeldung an Ihrem {{site.data.keyword.Bluemix_notm}}-Konto für Infrastruktur-, Service- und Anwendungsfeatures verwenden. Sie können Ihre IBMid nicht ändern, aber Sie können die zugehörigen Profilinformationen wie z. B. den Namen, die E-Mail-Adresse, die Telefonnummer, das Kennwort oder den Firmennamen bearbeiten. Rufen Sie das Symbol **{{site.data.keyword.avatar}}** ![Avatarsymbol](../icons/i-avatar-icon.svg) &gt; **Profil und Einstellungen** auf. Weitere Informationen finden Sie in [Zur IBMid wechseln und Konten verknüpfen](softlayerlink.html).
 
 
-## Einstellung zur Analyseaufzeichnung
+## Cookieeinstellungen ändern
 {: #tracking}
 
-Aktionen in der {{site.data.keyword.Bluemix_notm}}-Konsole werden standardmäßig aufgezeichnet. Die Aufzeichnung ermöglicht es dem {{site.data.keyword.Bluemix_notm}}-Team, eine bessere Erfahrung für Sie aufzubauen und eine bessere Unterstützung zu bieten. Die erfassten Daten werden nicht geteilt oder für andere Zwecke verwendet. Wenn Sie die Aufzeichnung inaktivieren, können Sie möglicherweise einige Funktionen, z. B. die Chat-Kommunikation, nicht verwenden.
+Die {{site.data.keyword.Bluemix_notm}}-Konsole benötigt Cookies, um Ihre Sitzungen zu verwalten, z. B. um die sichere Anmeldung zu ermöglichen, Transaktionen abzuwickeln und einige Einstellungen zu speichern. Zusätzliche Cookies werden verwendet, um ein personalisierteres Erlebnis für Sie zu schaffen und besseren Support zu bieten. Wenn Sie Ihre Cookieeinstellungen so ändern, dass sie von der IBM-Standardeinstellung abweichen, können Sie möglicherweise einige Funktionen, wie z. B. die Chat-Kommunikation, nicht nutzen. 
 
-Um die Analyseaufzeichnung zu inaktivieren, führen Sie die folgenden Schritte aus:
-1. Rufen Sie das Symbol **{{site.data.keyword.avatar}}** ![Avatarsymbol](../icons/i-avatar-icon.svg) &gt; **Profil und Einstellungen** auf. 
-2. Legen Sie für die **Analyseaufzeichnung** die Einstellung **Aus** fest. 
+Führen Sie die folgenden Schritte aus, um Ihre Einstellung in einen anderen Wert als den Standardwert von IBM zu ändern:
+1. Rufen Sie das **{{site.data.keyword.avatar}}**symbol ![Avatarsymbol](../icons/i-avatar-icon.svg) &gt; **Datenschutz** auf. 
+1. Klicken Sie auf **Cookieeinstellungen anzeigen**.
+1. Wählen Sie die zulässige Ebene für Cookies durch entsprechendes Verschieben des Schiebereglers aus. 
 
+   Durch Klicken auf **Erweiterte Einstellungen** können Sie für jede Ebene das genaue Unternehmen und seine Domäne anzeigen. Klicken Sie danach auf **Basiseinstellungen**, um zur Auswahl der Cookievorgaben zurückzukehren. {: tip}
+1. Klicken Sie auf **Zustimmen und angepasste Einstellungen speichern**. 

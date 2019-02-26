@@ -16,6 +16,7 @@ lastupdated: "2018-11-19"
 
 
 # Inscription à {{site.data.keyword.Bluemix_notm}}
+{: #signup}
 
 Vous pouvez vous inscrire à un [compte{{site.data.keyword.Bluemix}} ](https://cloud.ibm.com){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe") en utilisant un IBMid existant, en créant un nouvel IBMid ou en utilisant un ID fédéré. Un ID fédéré est un ID présent dans le domaine d'une société qui est enregistré auprès d'IBM de sorte que le domaine et les données d'identification de l'utilisateur puissent être utilisés pour accéder aux applications Web IBM. Cliquez sur **Créer un compte {{site.data.keyword.Bluemix_notm}}** pour commencer.
 {:shortdesc}
@@ -26,7 +27,7 @@ IBM utilise le langage Security Assertion Markup Language 2.0 (SAML 2.0) pour ce
 
 | Méthodes d'inscription | Détails |    
 |-----------------|---------|
-|IBMid existant | Si vous possédez déjà un IBMid, inscrivez-vous à {{site.data.keyword.Bluemix_notm}} avec les données d'identification existantes que vous utilisez pour recevoir les autres produits et services IBM. Vous devez entrer un numéro de téléphone lorsque vous vous inscrivez. |
-|Nouvel IBMid | Si vous ne possédez pas encore d'IBMid, vous pouvez choisir d'en créer un. Un IBMid vous permet d'utiliser un seul et même nom d'utilisateur de connexion pour tous les produits et services IBM que vous utilisez, y compris {{site.data.keyword.Bluemix_notm}}. Vous devez entrer vos informations personnelles, y compris vos nom et prénom, votre numéro de téléphone et votre mot de passe pour les nouvelles données d'identification. Vous pouvez utiliser cet IBMid pour vous connecter à d'autres produits et services IBM.  |
-|ID fédéré | Si votre société a déjà demandé à enregistrer auprès d'IBM les données d'identification de l'utilisateur du domaine de votre société, vous pouvez vous inscrire à {{site.data.keyword.Bluemix_notm}} à l'aide des données d'identification dont vous vous servez déjà pour la connexion de votre société. Vous devez entrer un numéro de téléphone lorsque vous vous inscrivez. |
+|IBMid existant   | Si vous possédez déjà un IBMid, inscrivez-vous à {{site.data.keyword.Bluemix_notm}} avec les données d'identification existantes que vous utilisez pour recevoir les autres produits et services IBM. Vous devez entrer un numéro de téléphone lorsque vous vous inscrivez. |
+|Nouvel IBMid        | Si vous ne possédez pas encore d'IBMid, vous pouvez choisir d'en créer un. Un IBMid vous permet d'utiliser un seul et même nom d'utilisateur de connexion pour tous les produits et services IBM que vous utilisez, y compris {{site.data.keyword.Bluemix_notm}}. Vous devez entrer vos informations personnelles, y compris vos nom et prénom, votre numéro de téléphone et votre mot de passe pour les nouvelles données d'identification. Vous pouvez utiliser cet IBMid pour vous connecter à d'autres produits et services IBM.  |
+|ID fédéré     | Si votre société a déjà demandé à enregistrer auprès d'IBM les données d'identification de l'utilisateur du domaine de votre société, vous pouvez vous inscrire à {{site.data.keyword.Bluemix_notm}} à l'aide des données d'identification dont vous vous servez déjà pour la connexion de votre société. Vous devez entrer un numéro de téléphone lorsque vous vous inscrivez. |
 {:caption="Tableau 1. Méthodes d'inscription" caption-side="top"}

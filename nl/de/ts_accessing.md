@@ -27,11 +27,11 @@ Allgemeine Probleme beim Zugriff auf {{site.data.keyword.Bluemix}} können sein,
 {:shortdesc}
 
 
-## Warum ist mein Kennwort nicht korrekt? 
+## Warum ist mein Kennwort nicht korrekt?
 {: #ts_logintobm}
 {: troubleshoot}
 
-Sie müssen über ein gültiges Kennwort verfügen, das Ihrer IBMid-ID oder SoftLayer-ID zugeordnet ist, um sich bei der {{site.data.keyword.Bluemix_notm}}-Konsole anzumelden. 
+Sie müssen über ein gültiges Kennwort verfügen, das Ihrer IBMid-ID oder SoftLayer-ID zugeordnet ist, um sich bei der {{site.data.keyword.Bluemix_notm}}-Konsole anzumelden.
 
 Wenn Sie versuchen, sich bei {{site.data.keyword.Bluemix_notm}} anzumelden, wird die folgende Fehlernachricht angezeigt:
 {: tsSymptoms}
@@ -43,8 +43,8 @@ Das Kennwort, das Sie für die Anmeldung bei {{site.data.keyword.Bluemix_notm}} 
 
 Verwenden Sie eine der folgenden Optionen:
 {: tsResolve}
- * Rufen Sie die [Profilseite von 'Meine IBM' ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://myibm.ibm.com/dashboard/){: new_window} auf, um sich zu vergewissern, dass Sie ein gültiges Kennwort verwenden. 
- * Falls Sie Ihr Kennwort vergessen haben, klicken Sie auf **Kennwort vergessen**, um Ihr Kennwort zurückzusetzen. 
+ * Rufen Sie die [Profilseite von 'Meine IBM' ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://myibm.ibm.com/dashboard/){: new_window} auf, um sich zu vergewissern, dass Sie ein gültiges Kennwort verwenden.
+ * Falls Sie Ihr Kennwort vergessen haben, klicken Sie auf **Kennwort vergessen**, um Ihr Kennwort zurückzusetzen.
  * Wenn Sie Ihre IBMid vergessen haben oder weiterhin Probleme mit dem Kennwort vorliegen, suchen Sie auf der Site 'Worldwide IBM Registration Helpdesk' nach Hilfe.
 
 Wenn Sie sich bei {{site.data.keyword.Bluemix_notm}} anmelden und der Anmeldeprozess aus irgendeinem Grund unterbrochen wird, z. B. durch das Zurücksetzen des Kennworts, kehren Sie zur Konsole zurück und starten Sie den Anmeldeprozess erneut.
@@ -55,7 +55,7 @@ Wenn Sie sich bei {{site.data.keyword.Bluemix_notm}} anmelden und der Anmeldepro
 {: #ts_old_username}
 {: troubleshoot}
 
-Für eine erfolgreiche Anmeldung mit der E-Mail-Adresse müssen Sie sicherstellen, dass für jedes Konto eine IBMid-Authentifizierung vorhanden ist. 
+Für eine erfolgreiche Anmeldung mit der E-Mail-Adresse müssen Sie sicherstellen, dass für jedes Konto eine IBMid-Authentifizierung vorhanden ist.
 
 Wenn Sie sich bei der {{site.data.keyword.Bluemix_notm}}-Konsole anmelden, wird die folgende Nachricht angezeigt:
 {: tsSymptoms}
@@ -69,10 +69,10 @@ Sie müssen über eine gültige IBMid und ein Kennwort verfügen, um sich bei {{
 
  * Geben Sie eine vollständig qualifizierte E-Mail-Adresse für die IBMid ein.
  {: tsResolve}
- * Wenn Sie ein SoftLayer-Benutzer mit einer SoftLayer-ID sind, müssen Sie in jedem Konto, auf das Sie zugreifen können, zur IBMid-Authentifizierung wechseln, bevor Sie sich anmelden können. Weitere Informationen finden Sie unter [Zur IBMid wechseln](/docs/account/softlayerlink.html).
+ * Wenn Sie ein SoftLayer-Benutzer mit einer SoftLayer-ID sind, müssen Sie in jedem Konto, auf das Sie zugreifen können, zur IBMid-Authentifizierung wechseln, bevor Sie sich anmelden können. Weitere Informationen finden Sie unter [Zur IBMid wechseln](/docs/account?topic=account-unifyingaccounts).
 
 
-## Warum ist meine IBMid keinen {{site.data.keyword.Bluemix_notm}}-Konten zugeordnet? 
+## Warum ist meine IBMid keinen {{site.data.keyword.Bluemix_notm}}-Konten zugeordnet?
 {: #ts_unabletologin}
 {: troubleshoot}
 
@@ -88,11 +88,11 @@ Führen Sie den Registrierungsprozess durch, um ein {{site.data.keyword.Bluemix_
 {: tsResolve}
 
 
-## Warum wird die Konsole nicht geöffnet, wenn ich mich mit meiner IBMid anmelde? 
+## Warum wird die Konsole nicht geöffnet, wenn ich mich mit meiner IBMid anmelde?
 {: #ts_login_stalls}
 {: troubleshoot}
 
-Sie erhalten eine Nachricht über die erfolgreiche Anmeldung, die Konsole wird jedoch nicht aufgerufen. 
+Sie erhalten eine Nachricht über die erfolgreiche Anmeldung, die Konsole wird jedoch nicht aufgerufen.
 
 Wenn Sie sich mit Ihrer IBMid anmelden, wird eine Nachricht über die erfolgreiche Anmeldung angezeigt, die [{{site.data.keyword.Bluemix_notm}}-Konsole](https://{DomainName}){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link") wird jedoch nicht aufgerufen.
 {: tsSymptoms}
@@ -100,14 +100,14 @@ Wenn Sie sich mit Ihrer IBMid anmelden, wird eine Nachricht über die erfolgreic
 Verwenden Sie eine der folgenden Optionen:
 {: tsResolve}
  * Schließen Sie Ihren Browser, löschen Sie Cookies sowie den Inhalt des Cache und versuchen Sie erneut, sich anzumelden.
- * Melden Sie sich über die [{{site.data.keyword.Bluemix_notm}}-Konsole](https://{DomainName}){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link") an. 
+ * Melden Sie sich über die [{{site.data.keyword.Bluemix_notm}}-Konsole](https://{DomainName}){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link") an.
 
 
 ## Warum wurde meine IBMid-Anmeldung nicht abgeschlossen?
 {: #ts_login_ibmid}
 {: troubleshoot}
 
-Wenn Sie sich bei {{site.data.keyword.Bluemix_notm}} anmelden und die Authentifizierung Ihrer IBMid nicht vollständig ausgeführt wird, liegt möglicherweise ein Problem mit dem Service vor.  
+Wenn Sie sich bei {{site.data.keyword.Bluemix_notm}} anmelden und die Authentifizierung Ihrer IBMid nicht vollständig ausgeführt wird, möglicherweise ein Problem mit dem Service vor. 
 
 Wenn Sie sich bei {{site.data.keyword.Bluemix_notm}} anmelden, wird die Authentifizierung mit der IBMid nicht vollständig abgeschlossen.
 {: tsSymptoms}
@@ -115,7 +115,7 @@ Wenn Sie sich bei {{site.data.keyword.Bluemix_notm}} anmelden, wird die Authenti
 Möglicherweise besteht ein Problem beim Service für die IBMid-Authentifizierung.
 {: tsCauses}
 
-Stellen Sie sicher, dass Sie sich bei [IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link") anmelden können. Ist dies der Fall, handelt es sich um ein Anwendungsproblem und Sie können die Anmeldung über die Konsole zu einem späteren Zeitpunkt erneut versuchen. Wenn Sie sich nicht bei dieser Seite anmelden können, wenden Sie sich an den [IBMid-Help-Desk ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}.   
+Stellen Sie sicher, dass Sie sich bei [IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link") anmelden können. Ist dies der Fall, handelt es sich um ein Anwendungsproblem und Sie können die Anmeldung über die Konsole zu einem späteren Zeitpunkt erneut versuchen. Wenn Sie sich nicht bei dieser Seite anmelden können, wenden Sie sich an den [IBMid-Help-Desk ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}.  
 {: tsResolve}
 
 
@@ -130,10 +130,10 @@ Nach der Registrierung für ein {{site.data.keyword.Bluemix_notm}}-Lite-Konto k�
 
 <code>Ihr Konto befindet sich im Zustand 'Anstehend'. Es kann bis zu 24 Stunden dauern, bis Sie eine Bestätigungs-E-Mail für Ihr Konto erhalten. Überprüfen Sie außerdem Ihren Spamordner. Wenn Sie trotzdem keine E-Mail-Bestätigung erhalten haben, wenden Sie sich an den <a href="http://ibm.biz/bluemixsupport.com" target="_blank">{{site.data.keyword.Bluemix_notm}}-Support</a>.</code>
 
-Bei der Registrierung für ein Lite-Konto in {{site.data.keyword.Bluemix_notm}} erhalten Sie eine E-Mail mit einem Link, auf den Sie klicken müssen, um die Registrierung zu bestätigen.   
+Bei der Registrierung für ein Lite-Konto in {{site.data.keyword.Bluemix_notm}} erhalten Sie eine E-Mail mit einem Link, auf den Sie klicken müssen, um die Registrierung zu bestätigen.  
 {: tsCauses}
 
-Die Bestätigungs-E-Mail wird an die E-Mail-Adresse gesendet, die Ihrer IBMid zugeordnet ist. Überprüfen Sie Ihren Posteingang und Ihren Spamordner. Wenn Sie die Bestätigungs-E-Mail nicht erhalten haben, wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}} Support](/docs/get-support/howtogetsupport.html).   
+Die Bestätigungs-E-Mail wird an die E-Mail-Adresse gesendet, die Ihrer IBMid zugeordnet ist. Überprüfen Sie Ihren Posteingang und Ihren Spamordner. Wenn Sie die Bestätigungs-E-Mail nicht erhalten haben, wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}} Support](/docs/get-support?topic=get-support-getting-customer-support).  
 {: tsResolve}
 
 
@@ -157,5 +157,5 @@ Führen Sie nach Bedarf eine oder mehrere der folgenden Aktionen aus:
   * Melden Sie sich bei {{site.data.keyword.Bluemix_notm}} ab und anschließend wieder an.
   * Verwenden Sie den persönlichen Browsing-Modus des Browsers.
   * Löschen Sie Cookies und den Inhalt des Browser-Cache.
-  * Verwenden Sie einen anderen Browser. Informationen zu den Versionen der Browser, die von {{site.data.keyword.Bluemix_notm}} unterstützt werden, finden Sie in den [{{site.data.keyword.Bluemix_notm}}-Voraussetzungen](/docs/overview/prereqs.html#prereqs).
+  * Verwenden Sie einen anderen Browser. Informationen zu den Versionen der Browser, die von {{site.data.keyword.Bluemix_notm}} unterstützt werden, finden Sie in den [{{site.data.keyword.Bluemix_notm}}-Voraussetzungen](/docs/overview?topic=overview-prereqs-platform).
   * Wenn Sie die Cloud Foundry-Befehlszeilenschnittstelle installiert haben, geben Sie den Befehl `ibmcloud cf apps` ein, um anzuzeigen, ob die App aktiv ist.
