@@ -3,8 +3,8 @@
 
 copyright:
 
-  years: 2018
-lastupdated: "2018-11-29"
+  years: 2018, 2019
+lastupdated: "2019-01-28"
 
 
 ---
@@ -33,7 +33,7 @@ Será possível visualizar as opções de segurança a seguir e ativar ou desati
 
 Para configurar suas perguntas de segurança:
 1. No console, acesse **Ícone do {{site.data.keyword.avatar}}**![Ícone do Avatar](../icons/i-avatar-icon.svg) > **Perfil e configurações** e selecione **Configurações de login**.
-2. Clique em **Editar**. 
+2. Clique em **Editar**.
 3. Selecione as perguntas que você deseja ter e respondê-las. Deve-se usar três opções de pergunta de segurança.
 4. Clique em **Salvar** quando tiver concluído.  
 5. Certificar-se de que a caixa `Yes` esteja marcada para que as perguntas de segurança sejam ativadas. Marcar a caixa `Yes` pode solicitar que você se conecte à sua conta novamente.  
@@ -56,39 +56,35 @@ Essa opção está disponível somente para usuários que efetuam login com um I
 ## Configurando a autenticação do TOTP
 {: #MFA}
 
-Para configurar sua autenticação do TOTP, clique em **Configurar**. 
+Para configurar sua autenticação do TOTP, clique em **Configurar**.
 
 A MFA do TOTP inclui uma camada extra de segurança em sua conta, requerendo uma senha TOTP, além do ID padrão e da senha durante o login. Deve-se configurar a autenticação do TOTP antes que seu administrador de conta possa ativar esse requisito da MFA para você.
 
-Também poderá ser solicitada a você uma senha única baseada em tempo se a configuração TOTP não estiver configurada e ativada. Isso é porque um proprietário da conta pode ativar a MFA do IBMid para uma conta para a qual você tenha acesso. Esse tipo de MFA se aplica a cada usuário na conta quando essa configuração está ativada e é necessário usá-la. Para obter mais informações, veja [Tipos de autenticação de diversos fatores](/docs/iam/mfatypes.html#types).
+Também poderá ser solicitada a você uma senha única baseada em tempo se a configuração TOTP não estiver configurada e ativada. Isso é porque um proprietário da conta pode ativar a MFA do IBMid para uma conta para a qual você tenha acesso. Esse tipo de MFA se aplica a cada usuário na conta quando essa configuração está ativada e é necessário usá-la. Para obter mais informações, veja [Tipos de autenticação de diversos fatores](/docs/iam?topic=iam-types).
 
 
-## Configurando opções de autenticação externa
+## Configurando a autenticação externa
 {: #third-party-MFA}
 
-Você ou seu administrador de conta pode pedir a autenticação da Symantec ou baseada em telefone para por um custo mensal. Para pedir a autenticação externa, é necessário ter as permissões de inclusão de infraestrutura de serviços. Para descobrir se a autenticação externa está ativada, acesse o ícone **{{site.data.keyword.avatar}}** ![Ícone do Avatar](../icons/i-avatar-icon.svg) > **Perfil e configurações** e selecione **Configurações de login**. Se a MFA baseada em telefone estiver desativada, clique em **Acessar detalhes do usuário**. Esse link levará você para a mesma página que as etapas para configurar sua autenticação da symantec e configurar sua autenticação baseada em telefone.  
+Você ou seu administrador de conta pode pedir a autenticação da Symantec ou baseada em telefone para por um custo mensal. Para pedir a autenticação externa, é necessário ter as permissões de inclusão de infraestrutura de serviços. Para descobrir se a autenticação externa está ativada, acesse o ícone **{{site.data.keyword.avatar}}** ![Ícone do Avatar](../icons/i-avatar-icon.svg) > **Perfil e configurações** e selecione **Configurações de login**.
 
 ### Configurando a autenticação da Symantec
 
 Se seu administrador de conta escolher pedir proteção de identidade Symantec, deve-se trabalhar com seu administrador para ajudá-lo a concluir a ordem, fornecendo seu ID de credencial:
 
 1. Acesse [Symantec VIP](https://vip.symantec.com/).
-2. Clique em **Download**. 
-3. Obtenha seu ID de credencial e forneça o ID para o seu administrador para concluir a ordem. 
+2. Clique em **Download**.
+3. Obtenha seu ID de credencial e forneça o ID para o seu administrador para concluir a ordem.
 
 Depois que seu administrador pede e ativa a opção, é possível usar o app para autenticação de login.
 
 ### Configurando a autenticação baseada em telefone
 
-Se o seu administrador de conta escolhe pedir proteção de identidade baseada em telefone, deve-se configurá-la após ela ser pedida por seu administrador. Em seguida, seu administrador pode ativá-la para que você use. Depois que seu administrador pedir a autenticação baseada em telefone, conclua as etapas a seguir para configurá-la:
+É possível configurar e usar a proteção de identidade baseada em telefone depois que o administrador de conta pedir e ativar.
 
-1. Acesse **Gerenciar** > **Acesso (IAM)**.
-2. Clique em **Usuários** e selecione seu nome na lista.
-3. Na página **Detalhes do usuário** na seção **Gerenciar login do usuário**, clique no ícone **Editar** ![Ícone Editar](../icons/icon_write.svg) para a linha **Autenticação baseada em telefone**.
-4. Siga os prompts para configurar a autenticação baseada em telefone.
-
-Depois de ter configurado sua autenticação baseada em telefone, o administrador de conta pode ativar a opção para você ser solicitado para esse tipo de MFA no login.
-
-
- 
-
+1. Acesse o ícone **{{site.data.keyword.avatar}}** ![Ícone Avatar](../icons/i-avatar-icon.svg) > **Perfil e configurações** e selecione **Configurações de login**.
+2. Se a MFA baseada em telefone estiver desativada, clique em **Acessar detalhes do usuário**.
+3. Na seção Gerenciar login do usuário, ative a autenticação baseada em telefone.
+4. Para fornecer informações de contato para a autenticação, clique no ícone **Editar** ![Ícone Editar](../icons/edit-tagging.svg).
+5. Preencha todos os campos. É possível especificar se deseja receber um telefonema ou uma mensagem de texto como o método de autenticação. Se desejar requerer um PIN, selecione a opção na lista **Tipo de PIN** e forneça o PIN que deseja usar.  
+6. Clique em **Aplicar**.

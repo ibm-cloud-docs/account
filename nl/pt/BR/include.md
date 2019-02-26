@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2017, 2018
-lastupdated: "2018-11-18"
+  years: 2017, 2019
+lastupdated: "2019-01-28"
 
 ---
 
@@ -18,7 +18,7 @@ lastupdated: "2018-11-18"
 Qualquer recurso privado do {{site.data.keyword.Bluemix}} que você cria é restrito por padrão. Se você for um administrador para a conta, será possível escolher quem pode visualizar seu recurso, incluindo o usuário em uma lista de inclusão.
 {:shortdesc: .shortdesc}
 
-É possível usar a [interface da linha de comandos (CLI)](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) do {{site.data.keyword.Bluemix}} ou o console para determinar se você tem acesso para permitir que os usuários visualizem um recurso privado que foi incluído na conta. Se você for um proprietário da conta, será possível fornecer acesso a um usuário em sua conta por meio do console designando uma política de acesso. Para obter mais informações, consulte [Gerenciando o acesso à sua conta](access.html).
+É possível usar a [interface da linha de comandos (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) do {{site.data.keyword.Bluemix}} ou o console para determinar se você tem acesso para permitir que usuários visualizem um recurso privado que foi incluído na conta. Se você for um proprietário da conta, será possível fornecer acesso a um usuário em sua conta por meio do console designando uma política de acesso. Para obter mais informações, consulte [Gerenciando o acesso à sua conta](/docs/account?topic=account-find-access).
 
 ## Localizando seu recurso
 {: #find-resource}
@@ -83,6 +83,6 @@ Se você deixar seu projeto ou organização, talvez deseje transferir a proprie
 Depois de transferir a propriedade, não é mais possível visualizar o recurso por meio de sua conta. Certifique-se de que deseja transferir a propriedade, porque essa ação não pode ser desfeita.
 {: important}
 
-É possível usar a [interface da linha de comandos (CLI) do {{site.data.keyword.Bluemix}}](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_commands_settings) para transferir a propriedade de um recurso privado. Execute o seguinte comando:
+É possível usar a [interface da linha de comandos (CLI) do {{site.data.keyword.Bluemix}}](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) para transferir a propriedade de um recurso privado. Execute o seguinte comando:
 
 `ibmcloud catalog entry-visibility-set <service-id> --owner <account-id or account-email>`

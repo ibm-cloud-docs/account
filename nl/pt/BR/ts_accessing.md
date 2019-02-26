@@ -44,7 +44,7 @@ A senha que você usou para efetuar login no {{site.data.keyword.Bluemix_notm}} 
 Use uma das opções a seguir:
 {: tsResolve}
  * Acesse a [página Meu perfil IBM ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://myibm.ibm.com/dashboard/){: new_window} para confirmar que você está usando uma senha válida.
- * Caso tenha esquecido sua senha, clique em **Esqueceu sua senha** para reconfigurar sua senha. 
+ * Caso tenha esquecido sua senha, clique em **Esqueceu sua senha** para reconfigurar sua senha.
  * Caso tenha esquecido seu IBMid ou continue tendo problemas com a senha, entre em contato com o Help desk de registro IBM mundial para obter ajuda.
 
 Se você se conectar ao {{site.data.keyword.Bluemix_notm}} e o processo de login for interrompido por qualquer motivo, como reconfiguração de sua senha, retorne para o console e inicie o processo de login novamente.
@@ -70,7 +70,7 @@ Deve-se ter um ID IBM e uma senha válidos para efetuar login no
 
  * Insira um endereço de e-mail completo para o IBMid.
  {: tsResolve}
- * Se você é um usuário do SoftLayer com um ID do SoftLayer, deve-se alternar para a autenticação do IBMid em cada conta para a qual tenha acesso antes de efetuar login. Para obter mais informações, consulte [Alternando para o IBMid](/docs/account/softlayerlink.html).
+ * Se você é um usuário do SoftLayer com um ID do SoftLayer, deve-se alternar para a autenticação do IBMid em cada conta para a qual tenha acesso antes de efetuar login. Para obter mais informações, consulte [Alternando para o IBMid](/docs/account?topic=account-unifyingaccounts).
 
 
 ## Por que meu IBMid não está associado a nenhuma conta do {{site.data.keyword.Bluemix_notm}}?
@@ -108,7 +108,7 @@ Use uma das opções a seguir:
 {: #ts_login_ibmid}
 {: troubleshoot}
 
-Se você efetua login no F{site.data.keyword.Bluemix_notm}} e a autenticação de seu IBMid não é concluída, pode haver um problema com o serviço. 
+Se você efetuar login no {{site.data.keyword.Bluemix_notm}} e a autenticação de seu IBMid não for concluída, poderá haver um problema com o serviço.
 
 Ao efetuar login no {{site.data.keyword.Bluemix_notm}}, a autenticação com o IBMid não é concluída.
 {: tsSymptoms}
@@ -134,7 +134,7 @@ Depois de se registrar para uma conta {{site.data.keyword.Bluemix_notm}} Lite, t
 Ao se registrar para uma conta {{site.data.keyword.Bluemix_notm}} Lite, você recebe um e-mail que inclui um link que deve ser clicado para confirmar seu registro.  
 {: tsCauses}
 
-O e-mail de confirmação é enviado para o endereço de e-mail que está associado a seu IBMid. Verifique sua caixa de entrada e sua pasta de spam. Se você não tiver recebido o e-mail de confirmação, entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}}](/docs/get-support/howtogetsupport.html).  
+O e-mail de confirmação é enviado para o endereço de e-mail que está associado a seu IBMid. Verifique sua caixa de entrada e sua pasta de spam. Se você não tiver recebido o e-mail de confirmação, entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}}](/docs/get-support?topic=get-support-getting-customer-support).  
 {: tsResolve}
 
 
@@ -159,5 +159,5 @@ Conclua uma ou mais das ações a seguir, conforme necessário:
 efetuar login novamente.
   * Usar o modo de navegação privada do seu navegador.
   * Limpar os cookies e o cache do navegador.
-  * Usar um navegador diferente. Para obter informações sobre as versões dos navegadores que são suportados pelo {{site.data.keyword.Bluemix_notm}}, consulte [Pré-requisitos do {{site.data.keyword.Bluemix_notm}}](/docs/overview/prereqs.html#prereqs).
+  * Usar um navegador diferente. Para obter informações sobre as versões dos navegadores suportados pelo {{site.data.keyword.Bluemix_notm}}, consulte [Pré-requisitos do {{site.data.keyword.Bluemix_notm}}](/docs/overview?topic=overview-prereqs-platform).
   * Se você instalou a interface da linha de comandos do Cloud Foundry, insira o comando `ibmcloud cf apps` para ver se seu app está em execução.

@@ -4,21 +4,20 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2018-12-02" 
+lastupdated: "2019-01-28" 
 
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:tip: .tip}
 {:important: .important}
-
+{:tip: .tip}
 
 # Ativando as configurações suportadas da UE e HIPAA
 {: #eu-hipaa-supported}
 
 Se você for o proprietário da conta, será possível ativar sua conta para que seja suportada pela UE e HIPAA. É possível optar por ativar a configuração
-Suportado pela UE, por exemplo, se você usar recursos para processar dados pessoais para os cidadãos europeus. E você pode escolher ativar a configuração Suportado pelo HIPAA se planejar incluir Informação Protegida de Saúde (PHI) nos serviços ativados pelo HIPAA. 
+Suportado pela UE, por exemplo, se você usar recursos para processar dados pessoais para os cidadãos europeus. E você pode escolher ativar a configuração Suportado pelo HIPAA se planejar incluir Informação Protegida de Saúde (PHI) nos serviços ativados pelo HIPAA.
 {:shortdesc}
 
 
@@ -34,23 +33,23 @@ Ativando essa configuração, os serviços suportados pela UE têm controles de 
   3. Leia as informações sobre a ativação dessa configuração e selecione **Eu entendo e concordo com estes termos**.
   4. Clique em **Ativado**.
 
-   Depois de ativar a configuração Suportado pela UE, é possível usar a tag Suportado pela UE para procurar no catálogo as ofertas que tenham planos suportados pela UE. 
+   Depois de ativar a configuração Suportado pela UE, é possível usar a tag Suportado pela UE para procurar no catálogo as ofertas que tenham planos suportados pela UE.
    {: tip}
 
 
 ## Ativando a configuração suportada pelo HIPAA
 {: #enabling-hipaa}
 
-É possível escolher ativar a configuração Suportado pelo HIPAA para executar cargas de trabalho sensíveis que são reguladas sob o Health Insurance Portability and Accountability Act (HIPAA) dos Estados Unidos. Ativando essa configuração, você está indicando que sua conta processa a PHI que pode estar sujeita ao HIPAA. 
+É possível escolher ativar a configuração Suportado pelo HIPAA para executar cargas de trabalho sensíveis que são reguladas sob o Health Insurance Portability and Accountability Act (HIPAA) dos Estados Unidos. Ativando essa configuração, você está indicando que sua conta processa a PHI que pode estar sujeita ao HIPAA.
 
 1. Acesse **Gerenciar > Conta** e selecione **Configuração da conta** no console.
-2. Para a opção Suportado pelo HIPAA, clique em **Ativado**. 
-3. Leia as informações sobre como ativar essa configuração. 
+2. Para a opção Suportado pelo HIPAA, clique em **Ativado**.
+3. Leia as informações sobre como ativar essa configuração.
 
   Não é possível desativar a configuração depois de ativá-la.
   {: important}
-   
-4. Selecione **Aceitar** e clique em **Enviar**. 
+
+4. Selecione **Aceitar** e clique em **Enviar**.
 
   Depois de ativar a configuração Suportado pelo HIPAA, é possível usar a tag Ativado para HIPAA para procurar no catálogo as ofertas que são ativadas para HIPAA.
   {: tip}

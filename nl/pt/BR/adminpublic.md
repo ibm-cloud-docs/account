@@ -16,6 +16,7 @@ lastupdated: "2018-11-19"
 
 
 # Inscrevendo-se para o {{site.data.keyword.Bluemix_notm}}
+{: #signup}
 
 É possível inscrever-se para uma [conta do {{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo") usando um IBMid existente, criando um novo IBMid ou usando um ID federado. Um ID federado é um ID dentro do domínio de uma empresa que
 foi registrado na IBM para que as credenciais de domínio e do usuário possam ser usadas para acessar
@@ -32,12 +33,12 @@ A IBM usa o Security Assertion Markup Language 2.0 (SAML 2.0) para essa federaç
 
 | Métodos de inscrição | Detalhes |    
 |-----------------|---------|
-|ID IBM existente | Se você já tiver um ID IBM, inscreva-se para o {{site.data.keyword.Bluemix_notm}} com suas credenciais existentes que você usa para outros produtos e serviços IBM. Deve-se inserir um número do telefone ao se inscrever. |
-|Novo ID IBM | Se você ainda não tiver um ID IBM, poderá selecionar para criar um. Com um IBMid, é possível
+|ID IBM existente   | Se você já tiver um ID IBM, inscreva-se para o {{site.data.keyword.Bluemix_notm}} com suas credenciais existentes que você usa para outros produtos e serviços IBM. Deve-se inserir um número do telefone ao se inscrever. |
+|Novo ID IBM        | Se você ainda não tiver um ID IBM, poderá selecionar para criar um. Com um IBMid, é possível
 usar o nome de usuário de login único para todos os produtos e serviços IBM que você usa, incluindo
 o {{site.data.keyword.Bluemix_notm}}. Deve-se inserir suas informações pessoais, que incluem nome e sobrenome, número do telefone e senha, para as novas credenciais. É possível usar esse
 IBMid para efetuar login em outros produtos e serviços IBM.  |
-|ID federado | Se sua empresa já solicitou para registrar as credenciais do usuário por meio do domínio de sua
+|ID federado     | Se sua empresa já solicitou para registrar as credenciais do usuário por meio do domínio de sua
 empresa com a IBM, será possível inscrever-se para o {{site.data.keyword.Bluemix_notm}} usando as
 credenciais que você já usa para login de sua empresa. Deve-se inserir um número do telefone ao se inscrever. |
 {:caption="Tabela 1. Métodos de inscrição" caption-side="top"}

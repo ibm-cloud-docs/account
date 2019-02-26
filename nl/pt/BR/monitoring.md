@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-07-24"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -25,4 +25,4 @@ Como um responsável pela segurança, auditor ou gerenciador, é possível usar 
 * Incluindo ou removendo usuários
 * Criando Organizações
 
-Para iniciar as ações da conta de monitoramento, consulte [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker/index.html#getting-started-with-cla). Para obter mais informações sobre cada uma das áreas de evento que podem ser controladas, consulte [Eventos de gerenciamento da conta](/docs/services/cloud-activity-tracker/services/at_events_acc_mgt.html).
+Para iniciar as ações da conta de monitoramento, consulte [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started-with-cla). Para obter mais informações sobre cada uma das áreas de evento que podem ser controladas, consulte [Eventos de gerenciamento da conta](/docs/services/cloud-activity-tracker/services?topic=cloud-activity-tracker-at_events).
