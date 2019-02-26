@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018
-lastupdated: "2018-11-15"
+  years: 2019
+lastupdated: "2019-01-21"
 
 ---
 
@@ -30,7 +30,7 @@ lastupdated: "2018-11-15"
 <dt>使用者</dt>
 <dd>使用者受邀加入帳戶，並取得帳戶中資源的存取權。</dd>
 <dt>服務 ID</dt>
-<dd>服務 ID 會識別與使用者 ID 如何識別使用者類似的服務或應用程式。您可以使用您建立的服務 ID，讓 {{site.data.keyword.Bluemix_notm}} 以外的應用程式能夠存取您的服務。您可以將特定存取原則指派給服務 ID，而服務 ID 限制用於使用特定服務的許可權，或甚至結合用於存取不同服務的許可權。因為服務 ID 未關聯至特定使用者，所以如果使用者剛好離開組織，並從帳戶刪除，服務 ID 仍會保留，以確保您的應用程式或服務保持啟動並執行。如需相關資訊，請參閱[建立及使用服務 ID](/docs/iam/serviceid.html#serviceids)。</dd>
+<dd>服務 ID 識別服務或應用程式的方式，與使用者 ID 識別使用者的方式類似。您可以使用您建立的服務 ID，讓 {{site.data.keyword.Bluemix_notm}} 以外的應用程式能夠存取您的服務。您可以將特定存取原則指派給服務 ID，而服務 ID 限制用於使用特定服務的許可權，或甚至結合用於存取不同服務的許可權。因為服務 ID 未關聯至特定使用者，所以如果使用者剛好離開組織，並從帳戶刪除，服務 ID 仍會保留，以確保您的應用程式或服務保持啟動並執行。如需相關資訊，請參閱[建立及使用服務 ID](/docs/iam/serviceid.html#serviceids)。</dd>
 <dt>服務實例或資源</dt>
 <dd>{{site.data.keyword.Bluemix_notm}} 中的服務是以資源群組或 Cloud Foundry 為基礎。可以新增至資源群組並藉由使用 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 管理的服務實例，稱為資源。新增至 Cloud Foundry 組織及空間的服務實例，會因為使用 Cloud Foundry 角色而有個別的存取管理系統。如需相關資訊，請參閱[何謂資源？](/docs/resources/acct_resources.html#resource)</dd>
 <dt>API 金鑰</dt>
@@ -38,7 +38,7 @@ lastupdated: "2018-11-15"
 <dt>存取群組</dt>
 <dd>您可以建立存取群組，將一組使用者和服務 ID 組織成單一實體，並輕鬆地指派許可權。您可以指派單一原則給群組，而不是針對每個個別使用者或服務 ID 指派相同的存取權多次。如需相關資訊，請參閱[設定存取群組](/docs/iam/groups.html#groups)。</dd>
 <dt>資源群組</dt>
-<dd>您可以使用資源群組，用可自訂的分組來組織帳戶資源，以便您可以同時將多個資源的存取權快速指派給使用者。使用 IAM 存取控制來管理的任何帳戶資源，都屬於您帳戶內的資源群組。使用者不會新增至資源群組，而是會提供使用者對資源群組內之資源的存取權，或是可以管理資源群組。獲得管理資源群組之存取權的使用者，可以在群組內建立新的實例、管理其他使用者使用群組的存取權，或根據被指派的 IAM 角色編輯群組名稱。如需相關資訊，請參閱[管理資源群組](/docs/resources/resourcegroups.html#rgs)及[將資源組織成資源群組的最佳作法](/docs/resources/bestpractice_rgs.html#bp_resourcegroups)。</dd>
+<dd>您可以使用資源群組，用可自訂的分組來組織帳戶資源，以便您可以同時將多個資源的存取權快速指派給使用者。使用 IAM 存取控制來管理的任何帳戶資源，都屬於您帳戶內的資源群組。使用者不會新增至資源群組，而是會提供使用者對資源群組內之資源的存取權，或是可以管理資源群組。獲得管理資源群組之存取權的使用者，可以在群組內建立新的實例、管理其他使用者使用群組的存取權，或根據被指派的 IAM 角色編輯群組名稱。如需相關資訊，請參閱[管理資源群組](/docs/resources/resourcegroups.html#rgs)及[用資源群組組織資源的最佳作法](/docs/resources/bestpractice_rgs.html#bp_resourcegroups)。</dd>
 <dt>Cloud Foundry 組織</dt>
 <dd>身為帳戶擁有者或組織管理員，您可以從主控台的「Cloud Foundry 組織」頁面中新增組織及空間。支援使用 Cloud Foundry 組織及空間的服務，會在您從型錄建立它們時新增至組織及空間。組織包含使用者、網域及配額。在每個組織內，會新增空間，而其中包含服務實例。如需相關資訊，請參閱[新增組織及空間](/docs/account/orgs_spaces.html#orgsspacesusers)。</dd>
 <dt>Cloud Foundry 空間</dt>

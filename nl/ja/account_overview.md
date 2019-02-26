@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019
-lastupdated: "2019-02-12"
+lastupdated: "2019-01-21"
 
 ---
 
@@ -20,7 +20,7 @@ lastupdated: "2019-02-12"
 {{site.data.keyword.Bluemix}} アカウントには、相互に作用する多くの要素とシステムが含まれています。 ここでは、それらの要素がどのように結び付いているのか、およびアカウント全体でアクセス権限がどのように機能するのかについて説明します。 
 {:shortdesc}
 
-<a href="https://cloud.ibm.com/docs/api/content/account/images/account_diagram.svg">
+<a href="https://console.bluemix.net/docs/api/content/account/images/account_diagram.svg">
   <img src="images/account_diagram.svg" alt="アカウントの図">
 </a>
 
@@ -34,7 +34,7 @@ lastupdated: "2019-02-12"
 <dt>サービス・インスタンスまたはリソース</dt>
 <dd>{{site.data.keyword.Bluemix_notm}} のサービスは、リソース・グループ・ベースまたは Cloud Foundry ベースのいずれかです。 リソース・グループに追加して、{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) を使用して管理できるサービス・インスタンスは、リソースと呼ばれます。 Cloud Foundry の組織およびスペースに追加されるサービス・インスタンスは、Cloud Foundry 役割を使用する別のアクセス管理システムを持ちます。 詳しくは、『[リソースとは](/docs/resources/acct_resources.html#resource)』を参照してください。</dd>
 <dt>API キー</dt>
-<dd>API キーは、呼び出し側のアプリケーションまたはユーザーを識別するために API に渡される固有のコードです。 ユーザー ID に関連付けられているプラットフォーム API キーを使用することができます。また、サービス ID 用の他の API キーを作成することができます。 詳しくは、『[API キーについて](/docs/iam/apikeys.html#manapikey)』を参照してください。</dd>
+<dd>API キーは、呼び出し側のアプリケーションまたはユーザーを識別するために API に渡される固有のコードです。 ユーザー ID に関連付けられているプラットフォーム API キーを使用することができます。また、サービス ID 用の他の API キーを作成することができます。詳しくは、『[API キーについて](/docs/iam/apikeys.html#manapikey)』を参照してください。</dd>
 <dt>アクセス・グループ</dt>
 <dd>アクセス・グループを作成して、ユーザーとサービス ID のセットを単一のエンティティーに編成して、許可を簡単に割り当てることができます。 個々のユーザーまたはサービス ID ごとに同じアクセス権限を複数回割り当てるのではなく、単一のポリシーをグループに割り当てることができます。 詳しくは、[アクセス・グループのセットアップ](/docs/iam/groups.html#groups)を参照してください。</dd>
 <dt>リソース・グループ</dt>
