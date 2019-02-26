@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-02-06"
+lastupdated: "2019-02-26"
 
 ---
 
@@ -49,7 +49,7 @@ For more information about managing orgs and spaces, see [Adding orgs and spaces
 {: #move-org-diff-account}
 {: faq}
 
-Currently, you can't migrate an org to a different account.
+Currently, orgs can't be moved to a different account. However, you can recreate the org with the same credentials in a different account to mimic this functionality. For more information, see [Adding orgs and spaces](https://cloud.ibm.com/docs/account?topic=account-orgsspacesusers#createorg). 
 
 
 ## Which Cloud Foundry regions can I use?
