@@ -16,6 +16,7 @@ lastupdated: "2018-11-19"
 
 
 # Registrazione a {{site.data.keyword.Bluemix_notm}}
+{: #signup}
 
 Puoi registrarti per un account [{{site.data.keyword.Bluemix}} ](https://cloud.ibm.com){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno") utilizzando un ID IBM esistente, creando un nuovo ID IBM oppure utilizzando un ID federato. Un ID federato è un ID all'interno di un dominio aziendale che è registrato con IBM, in modo che le credenziali di dominio e utente possano essere utilizzate per accedere alle applicazioni Web. Per iniziare, fai clic su **Crea un account {{site.data.keyword.Bluemix_notm}}**.
 {:shortdesc}
@@ -26,7 +27,7 @@ IBM utilizza Security Assertion Markup Language 2.0 (SAML 2.0) per questa federa
 
 | Metodi di registrazione | Dettagli |    
 |-----------------|---------|
-|ID IBM esistente | Se già disponi di un ID IBM, registrati a {{site.data.keyword.Bluemix_notm}} con le credenziali esistenti che utilizzi per i prodotti e servizi IBM. Devi immettere un numero di telefono quando ti registri. |
-|Nuovo ID IBM | Se non hai ancora un ID IBM, puoi scegliere di crearne uno. Con un ID IBM, puoi utilizzare un unico nome utente di accesso per tutti i prodotti e servizi IBM che vorrai utilizzare, incluso {{site.data.keyword.Bluemix_notm}}. Devi immettere le tue informazioni personali, che includono nome e cognome, numero di telefono e password per le nuove credenziali. Puoi utilizzare questo ID IBM per accedere ad altri servizi e prodotti IBM.  |
-|ID federato | Se la tua azienda ha già richiesto di registrare le credenziali utente dal dominio aziendale con IBM, puoi registrarti a {{site.data.keyword.Bluemix_notm}} utilizzando le credenziali che usi già per l'accesso della tua azienda. Devi immettere un numero di telefono quando ti registri. |
+|ID IBM esistente   | Se già disponi di un ID IBM, registrati a {{site.data.keyword.Bluemix_notm}} con le credenziali esistenti che utilizzi per i prodotti e servizi IBM. Devi immettere un numero di telefono quando ti registri. |
+|Nuovo ID IBM        | Se non hai ancora un ID IBM, puoi scegliere di crearne uno. Con un ID IBM, puoi utilizzare un unico nome utente di accesso per tutti i prodotti e servizi IBM che vorrai utilizzare, incluso {{site.data.keyword.Bluemix_notm}}. Devi immettere le tue informazioni personali, che includono nome e cognome, numero di telefono e password per le nuove credenziali. Puoi utilizzare questo ID IBM per accedere ad altri servizi e prodotti IBM.  |
+|ID federato     | Se la tua azienda ha già richiesto di registrare le credenziali utente dal dominio aziendale con IBM, puoi registrarti a {{site.data.keyword.Bluemix_notm}} utilizzando le credenziali che usi già per l'accesso della tua azienda. Devi immettere un numero di telefono quando ti registri. |
 {:caption="Tabella 1. Metodi di registrazione" caption-side="top"}

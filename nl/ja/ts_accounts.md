@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2015, 2018
+  years: 2015, 2019
 
-lastupdated: "2018-10-24"
+lastupdated: "2019-02-13"
 ---
 
 {:tsSymptoms: .tsSymptoms}
@@ -37,7 +37,7 @@ lastupdated: "2018-10-24"
 これは、1 つのパブリック・ロケーションのみでの開発をサポートするライト・アカウントを使用していることが原因と考えられます。
 {: tsCauses}
 
-より多くのロケーションにアクセスするには、有料アカウントにアップグレードしてください。**「管理」 > 「請求および使用量」**と進み、**「支払い」**をクリックします。
+より多くのロケーションにアクセスするには、有料アカウントにアップグレードしてください。 **「管理」 > 「請求および使用量」**と進み、**「支払い」**をクリックします。
 {: tsResolve}
 
 
@@ -50,10 +50,10 @@ lastupdated: "2018-10-24"
 新規組織を作成しようとすると、エラー・メッセージが出されます。
 {: tsSymptoms}
 
-これは、1 つの組織のみでの開発をサポートする、ライト・アカウントを使用していることが原因と考えられます。 
+これは、1 つの組織のみでの開発をサポートする、ライト・アカウントを使用していることが原因と考えられます。
 {: tsCauses}
 
-新規組織を作成するには、有料アカウントにアップグレードしてください。**「管理」 > 「請求および使用量」**と進み、**「アップグレード」**を選択します。
+新規組織を作成するには、有料アカウントにアップグレードしてください。 **「管理」 > 「請求および使用量」**と進み、**「アップグレード」**を選択します。
 {: tsResolve}
 
 
@@ -109,7 +109,7 @@ lastupdated: "2018-10-24"
 {{site.data.keyword.Bluemix_notm}} アカウントがキャンセルされたか中断状態の場合、そのアカウントの状況は非アクティブになります。
 {: tsCauses}
 
-アカウントを再アクティブ化するには、[サポート・センター](https://cloud.ibm.com/unifiedsupport/supportcenter){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") から Case をオープンします。Case には以下の情報を含めてください。
+アカウントを再アクティブ化するには、[サポート・センター](https://cloud.ibm.com/unifiedsupport/supportcenter){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") から Case をオープンします。 Case には以下の情報を含めてください。
 {: tsResolve}
 
   * {{site.data.keyword.Bluemix_notm}} へのログインに使用している IBM ID。
@@ -151,8 +151,8 @@ lastupdated: "2018-10-24"
 
 自分がコラボレーターでありメンバーではないためにユーザーを招待できない場合、古い {{site.data.keyword.Bluemix_notm}} アカウントを削除してから、招待を受けて組織のメンバーとしてアカウントに参加する必要があります。 古いアカウントを削除してメンバーとしてアカウントに参加するには、以下のステップを実行してください。
 
-  1. [{{site.data.keyword.Bluemix_notm}} サポート ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/unifiedsupport/supportcenter){: new_window} に連絡してサポート Case をオープンし、アカウントの削除を依頼します。古いアカウントに関連付けられているデータで、保存して新規アカウントに移行したいものがあれば、その情報を E メールに記載してください。
-  2. 自分のアカウントが削除された後、組織管理者の役割を持つユーザーに、自分を組織管理者として組織に招待してもらいます。その後、招待から {{site.data.keyword.Bluemix_notm}} に登録します。
+  1. [{{site.data.keyword.Bluemix_notm}} サポート ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/unifiedsupport/supportcenter){: new_window} に連絡してサポート Case をオープンし、アカウントの削除を依頼します。 古いアカウントに関連付けられているデータで、保存して新規アカウントに移行したいものがあれば、その情報を E メールに記載してください。
+  2. 自分のアカウントが削除された後、組織管理者の役割を持つユーザーに、自分を組織管理者として組織に招待してもらいます。 その後、招待から {{site.data.keyword.Bluemix_notm}} に登録します。
 
 
 ## 現在の組織にスペースが関連付けられていないのはなぜですか?
@@ -172,8 +172,8 @@ lastupdated: "2018-10-24"
 スペースを作成するには、次のいずれかの方法を使用します。
 {: tsResolve}
 
-  * コンソールのメニュー・バーで、**「管理」 > 「アカウント」**をクリックし、**「組織」**を選択します。スペースを作成する組織を選択し、**「スペースの作成」**をクリックします。
-  * Cloud Foundry コマンド・ライン・インターフェースに `cf create-space <space_name> -o <organization_name>` と入力します。
+  * コンソールのメニュー・バーで、**「管理」 > 「アカウント」**をクリックし、**「組織」**を選択します。 スペースを作成する組織を選択し、**「スペースの作成」**をクリックします。
+  * {{site.data.keyword.Bluemix_notm}} コマンド・ライン・インターフェースに `ibmcloud account space-create <space_name> -o <organization_name>` と入力します。
 
 
 ## いくつかのアプリがドメイン・ネームを共有するのはなぜですか?
@@ -185,9 +185,9 @@ lastupdated: "2018-10-24"
 この問題は、同じスペース内の異なるアプリに対して同一の URL 経路を指定した場合に発生する可能性があります。
 {: tsCauses}
 
-例えば、myApp1 アプリを {{site.data.keyword.Bluemix_notm}} にプッシュし、そのドメインを `mynewapp.stage1.mybluemix.net` に設定します。 次に、別の myApp2 アプリを同じスペースにプッシュし、その URL 経路の 1 つを `mynewapp.stage1.mybluemix.net` に設定します。 この経路は、この時点で両方のアプリにマップされています。
+例えば、myApp1 アプリを {{site.data.keyword.Bluemix_notm}} にプッシュし、そのドメインを `mynewapp.us-east.cf.appdomain.cloud` に設定します。 次に、別の myApp2 アプリを同じスペースにプッシュし、その URL 経路の 1 つを `mynewapp.us-east.cf.appdomain.cloud` に設定します。 この経路は、この時点で両方のアプリにマップされています。
 
-これはサポートされている動作で、このプラクティスを用いてアプリのアップグレードにおけるゼロ・ダウン時間を実現することができます。 詳しくは、『[ゼロ・ダウン時間の実現方法](/docs/overview/zero_downtime.html#zero-downtime)』を参照してください。
+これはサポートされている動作で、このプラクティスを用いてアプリのアップグレードにおけるゼロ・ダウン時間を実現することができます。 詳しくは、『[ゼロ・ダウン時間の実現方法](/docs/overview?topic=overview-zero-downtime)』を参照してください。
 {: tsResolve}
 
 
@@ -195,16 +195,17 @@ lastupdated: "2018-10-24"
 {: #ts_ui_org}
 {: troubleshoot}
 
-管理者として {{site.data.keyword.Bluemix_notm}} コンソールを使用するときに、管理のためにすべての組織を表示することはできません。自分が所属する組織のみを表示して管理することができます。
+管理者として {{site.data.keyword.Bluemix_notm}} コンソールを使用するときに、管理のためにすべての組織を表示することはできません。 自分が所属する組織のみを表示して管理することができます。
 
 管理者は、コンソールですべての組織を表示することはできません。
 {: tsSymptoms}
 
-これは、コンソールの制限です。 
+これは、コンソールの制限です。
 {: tsCauses}
 
-すべての組織を管理するには、Cloud Foundry コマンド・ライン・インターフェースから `cf orgs`、`cf create-org`、`cf delete-org` などのコマンドを使用できます。 Cloud Foundry コマンドの全リストを表示するには、`cf help` と入力してください。
+すべての組織を管理するには、{{site.data.keyword.Bluemix_notm}} コマンド・ライン・インターフェースから `ibmcloud account orgs` および `ibmcloud account org-create` などのコマンドを使用できます。 コマンドの全リストを表示するには、`ibmcloud account help` と入力してください。
 {: tsResolve}
+
 
 ## クレジット・カード情報を追加できないのはなぜですか?
 {: #ts_addcc}
@@ -221,6 +222,5 @@ lastupdated: "2018-10-24"
 以下のステップを実行します。
 {: tsResolve}
 
-  1. 「クレジット・カードの追加」ページで、必須フィールドをすべて入力します。 
-  2. **「IBM の使用条件を読み、これに同意します (I have read and agree to IBM's Terms and Conditions)」**を選択して**「送信 (Submit)」**をクリックします。 
-  
+  1. 「クレジット・カードの追加」ページで、必須フィールドをすべて入力します。
+  2. **「IBM の使用条件を読み、これに同意します (I have read and agree to IBM's Terms and Conditions)」**を選択して**「送信 (Submit)」**をクリックします。

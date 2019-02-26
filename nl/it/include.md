@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2017, 2018
-lastupdated: "2018-11-18"
+  years: 2017, 2019
+lastupdated: "2019-01-28"
 
 ---
 
@@ -18,12 +18,12 @@ lastupdated: "2018-11-18"
 Qualsiasi risorsa privata {{site.data.keyword.Bluemix}} che crei è limitata per impostazione predefinita. Se sei un amministratore per l'account, puoi scegliere chi può visualizzare la tua risorsa aggiungendo l'utente a un elenco di inclusione.
 {:shortdesc: .shortdesc}
 
-Puoi utilizzare l'{{site.data.keyword.Bluemix}} [interfaccia riga di comando (CLI, command-line interface)](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) o la console per determinare se disponi dell'accesso per consentire agli utenti di visualizzare una risorsa privata che era stata aggiunta all'account. Se sei un proprietario di account, puoi concedere l'accesso a un utente nel tuo account dalla console assegnando una politica di accesso. Per ulteriori informazioni, vedi [Gestione dell'accesso al tuo account](access.html).
+Puoi utilizzare l'{{site.data.keyword.Bluemix}} [interfaccia riga di comando (CLI, command-line interface)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) o la console per determinare se disponi dell'accesso per consentire agli utenti di visualizzare una risorsa privata che era stata aggiunta all'account. Se sei un proprietario di account, puoi concedere l'accesso a un utente nel tuo account dalla console assegnando una politica di accesso. Per ulteriori informazioni, vedi [Gestione dell'accesso al tuo account](/docs/account?topic=account-find-access).
 
 ## Individuazione della tua risorsa
 {: #find-resource}
 
-Esegui il comando `ibmcloud catalog service<service-id or service-name>`.Sostituisci le variabili service-id o service-name con il nome o l'ID della tua risorsa. Utilizza le informazioni restituite per visualizzare la gerarchia, che mostra le risorse secondarie degli elementi nella tua risorsa.
+Esegui il comando `ibmcloud catalog service<service-id or service-name>`. Sostituisci le variabili service-id o service-name con il nome o l'ID della tua risorsa. Utilizza le informazioni restituite per visualizzare la gerarchia, che mostra le risorse secondarie degli elementi nella tua risorsa.
 
 ## Impostazione della visibilità includendo un account
 {: #vis-inc}
@@ -89,6 +89,6 @@ Se lasci il tuo progetto o la tua organizzazioni, potresti voler trasferire la p
 Dopo che hai trasferito la proprietà, non puoi più visualizzare la risorsa dal tuo account. Assicurati che vuoi trasferire la proprietà poiché i risultati prodotti da questa azione non possono essere annullati.
 {: important}
 
-Puoi utilizzare l'[{{site.data.keyword.Bluemix}}interfaccia riga di comandi (CLI, command-line interface)](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_commands_settings) per trasferire la proprietà di una risorsa privata. Immetti il seguente comando:
+Puoi utilizzare l'[{{site.data.keyword.Bluemix}}interfaccia riga di comandi (CLI, command-line interface)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) per trasferire la proprietà di una risorsa privata. Immetti il seguente comando:
 
 `ibmcloud catalog entry-visibility-set <service-id> --owner <account-id or account-email>`

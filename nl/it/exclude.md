@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2017, 2018
-lastupdated: "2018-11-28"
+  years: 2017, 2019
+lastupdated: "2019-01-28"
 
 ---
 
@@ -23,7 +23,7 @@ In qualità di amministratore per il tuo account {{site.data.keyword.Bluemix}}, 
 Nascondere una risorsa nel catalogo non la rimuove dalla CLI Cloud Foundry o dall'elenco delle categorie dell'offerta disponibile dalla navigazione della console {{site.data.keyword.Bluemix_notm}}, come Elemento finanziario, Mobile, Watson e Applicazioni Web.
 {: note}
 
-Puoi utilizzare l'{{site.data.keyword.Bluemix}} [interfaccia riga di comando (CLI, command-line interface)](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) o la console per determinare se disponi dell'accesso per consentire agli utenti di visualizzare una risorsa privata che era stata aggiunta all'account. Se sei un proprietario di account, puoi concedere l'accesso a un utente nel tuo account dalla console assegnando una politica di accesso. Per ulteriori informazioni, vedi [Gestione dell'accesso al tuo account](access.html).
+Puoi utilizzare l'{{site.data.keyword.Bluemix}} [interfaccia riga di comando (CLI, command-line interface)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) o la console per determinare se disponi dell'accesso per consentire agli utenti di visualizzare una risorsa privata che era stata aggiunta all'account. Se sei un proprietario di account, puoi concedere l'accesso a un utente nel tuo account dalla console assegnando una politica di accesso. Per ulteriori informazioni, vedi [Gestione dell'accesso al tuo account](/docs/account?topic=account-find-access).
 
 ## Individuazione di una risorsa
 {: #find-resource}
@@ -32,7 +32,7 @@ Per cercare una risorsa, esegui il comando `ibmcloud catalog search <service-id 
 
 ## Ottenimento dei dettagli della risorsa
 
-Esegui il comando `ibmcloud catalog service<service-id or service-name>`.Utilizzando le informazioni restituite dall'esecuzione del comando precedente, utilizza questo comando per esaminare ulteriori dettagli sulla risorsa. Con le informazioni restituite, puoi visualizzare la gerarchia, che mostra le risorse secondarie degli elementi nella tua risorsa.
+Esegui il comando `ibmcloud catalog service<service-id or service-name>`. Utilizzando le informazioni restituite dall'esecuzione del comando precedente, utilizza questo comando per esaminare ulteriori dettagli sulla risorsa. Con le informazioni restituite, puoi visualizzare la gerarchia, che mostra le risorse secondarie degli elementi nella tua risorsa.
 
 ## Nascondimento della risorsa
 {: #vis-exc}

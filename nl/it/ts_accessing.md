@@ -44,7 +44,7 @@ La password che hai utilizzato per accedere a {{site.data.keyword.Bluemix_notm}}
 Utilizza una delle seguenti opzioni:
 {: tsResolve}
  * Vai alla [pagina Il mio profilo IBM ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://myibm.ibm.com/dashboard/){: new_window} per confermare che stai utilizzando una password valida.
- * Se hai dimenticato la password, fai clic su **Password dimenticata** per reimpostarla. 
+ * Se hai dimenticato la password, fai clic su **Password dimenticata** per reimpostarla.
  * Se hai dimenticato il tuo ID IBM o continui ad avere problemi con la tua password, contatta l'Help Desk Worldwide IBM Registration per ottenere assistenza.
 
 Se esegui l'accesso a {{site.data.keyword.Bluemix_notm}} e il processo di accesso viene interrotto per un qualsiasi motivo, come ad esempio la reimpostazione della tua password, ritorna alla console e avvia nuovamente il processo di accesso.
@@ -69,7 +69,7 @@ Per accedere a {{site.data.keyword.Bluemix_notm}}, devi disporre di un ID IBM e 
 
  * Immetti un indirizzo email completo per l'ID IBM.
  {: tsResolve}
- * Se sei un utente SoftLayer con un ID SoftLayer, devi passare all'autenticazione ID IBM in ciascun account a cui hai accesso prima di poter eseguire l'accesso. Per ulteriori informazioni, vedi [Passaggio all'ID IBM](/docs/account/softlayerlink.html).
+ * Se sei un utente SoftLayer con un ID SoftLayer, devi passare all'autenticazione ID IBM in ciascun account a cui hai accesso prima di poter eseguire l'accesso. Per ulteriori informazioni, vedi [Passaggio all'ID IBM](/docs/account?topic=account-unifyingaccounts).
 
 
 ## Perché il mio ID IBM non è associato ad alcun account {{site.data.keyword.Bluemix_notm}}?
@@ -107,7 +107,7 @@ Utilizza una delle seguenti opzioni:
 {: #ts_login_ibmid}
 {: troubleshoot}
 
-Se accedi a {{site.data.keyword.Bluemix_notm}} e l'autenticazione del tuo ID IBM non viene completata, è possibile che ci sia un problema con il servizio. 
+Se accedi a {{site.data.keyword.Bluemix_notm}} e l'autenticazione del tuo ID IBM non viene completata, potrebbe esserci un problema con il servizio.
 
 Quando accedi a {{site.data.keyword.Bluemix_notm}}, l'autenticazione tramite l'ID IBM non viene completata.
 {: tsSymptoms}
@@ -131,10 +131,10 @@ Dopo aver eseguito la registrazione per un account Lite {{site.data.keyword.Blue
 <code>Your account is pending. Please wait up to 24 hours for email confirmation and also check your
 spam folder. If you still have not received your e-mail confirmation, contact <a href="http://ibm.biz/bluemixsupport.com" target="_blank">{{site.data.keyword.Bluemix_notm}} Support</a>.</code>
 
-Quando esegui la registrazione per un account {{site.data.keyword.Bluemix_notm}} Lite, ricevi una email che include un link su cui devi fare clic per confermare la tua registrazione.   
+Quando esegui la registrazione per un account {{site.data.keyword.Bluemix_notm}} Lite, ricevi una email che include un link su cui devi fare clic per confermare la tua registrazione.  
 {: tsCauses}
 
-L'email di conferma viene inviata all'indirizzo email associato al tuo ID IBM. Controlla la cartella della posta in arrivo e quella dello spam. Se non hai ricevuto l'email di conferma, contatta il [supporto di {{site.data.keyword.Bluemix_notm}}](/docs/get-support/howtogetsupport.html).  
+L'email di conferma viene inviata all'indirizzo email associato al tuo ID IBM. Controlla la cartella della posta in arrivo e quella dello spam. Se non hai ricevuto l'email di conferma, contatta il [Supporto {{site.data.keyword.Bluemix_notm}}](/docs/get-support?topic=get-support-getting-customer-support).  
 {: tsResolve}
 
 
@@ -159,5 +159,5 @@ Completa una o più delle seguenti azioni, secondo necessità:
 riesegui l'accesso.
   * Utilizza la modalità di navigazione privata del tuo browser.
   * Cancella i cookie e la cache del browser.
-  * Utilizza un browser differente. Per informazioni sulle versioni dei browser supportati da {{site.data.keyword.Bluemix_notm}}, vedi [Prerequisiti di {{site.data.keyword.Bluemix_notm}}](/docs/overview/prereqs.html#prereqs).
+  * Utilizza un browser differente. Per informazioni sulle versioni dei browser supportate da {{site.data.keyword.Bluemix_notm}}, vedi [Prerequisiti di {{site.data.keyword.Bluemix_notm}}](/docs/overview?topic=overview-prereqs-platform).
   * Se hai installato l'interfaccia riga di comando Cloud Foundry, immetti il comando `ibmcloud cf apps` per vedere se la tua applicazione è in esecuzione.

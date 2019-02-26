@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-07-24"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -25,4 +25,4 @@ lastupdated: "2018-07-24"
 * ユーザーの追加または削除
 * 組織の作成
 
-アカウント・アクションのモニターを開始するには、[{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker/index.html#getting-started-with-cla)を参照してください。トラッキングできる各イベント領域について詳しくは、[アカウント管理イベント (Account management events) ](/docs/services/cloud-activity-tracker/services/at_events_acc_mgt.html)を参照してください。
+アカウント・アクションのモニターを開始するには、[{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started-with-cla)を参照してください。 トラッキングできる各イベント領域について詳しくは、[アカウント管理イベント (Account management events) ](/docs/services/cloud-activity-tracker/services?topic=cloud-activity-tracker-at_events)を参照してください。

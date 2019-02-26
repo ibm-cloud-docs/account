@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018
-lastupdated: "2018-11-28"
+  years: 2018, 2019
+lastupdated: "2019-01-28"
 
 ---
 
@@ -21,7 +21,7 @@ lastupdated: "2018-11-28"
 Le procedure consigliate sono un primo passo necessario per avere successo quando inizi a creare le risorse. Se sei pronto a ricevere le applicazioni per la produzione e a configurare un ambiente per i tuoi sviluppatori, consulta le seguenti sezioni per configurare il tuo account.
 {:shortdesc}
 
-Le seguenti procedure consigliate si focalizzano sull'utilizzo dei servizi abilitati IAM. Al momento, non tutti i servizi in {{site.data.keyword.cloud}} sono abilitati IAM. Le politiche IAM, i gruppi di risorse e i gruppi di accesso non si applicano alle istanze del servizio che appartengono a un'organizzazione e a uno spazio Cloud Foundry. Puoi ancora utilizzare sia le organizzazioni che gli spazi Cloud Foundry e i gruppi di risorse nel tuo account, ma devi assegnare agli utenti l'accesso a tali risorse separatamente. Per informazioni sulle organizzazioni e gli spazi Cloud Foundry, vedi [Aggiunta di organizzazioni e spazi](/docs/account/orgs_spaces.html#orgsspacesusers).
+Le seguenti procedure consigliate si focalizzano sull'utilizzo dei servizi abilitati IAM. Al momento, non tutti i servizi in {{site.data.keyword.cloud}} sono abilitati IAM. Le politiche IAM, i gruppi di risorse e i gruppi di accesso non si applicano alle istanze del servizio che appartengono a un'organizzazione e a uno spazio Cloud Foundry. Puoi ancora utilizzare sia le organizzazioni che gli spazi Cloud Foundry e i gruppi di risorse nel tuo account, ma devi assegnare agli utenti l'accesso a tali risorse separatamente. Per informazioni sulle organizzazioni e gli spazi Cloud Foundry, vedi [Aggiunta di organizzazioni e spazi](/docs/account?topic=account-orgsspacesusers).
 {: note}
 
 ## Cosa rende buona una strategia del gruppo di risorse?
@@ -35,14 +35,14 @@ Gli amministratori possono avere un migliore controllo dell'utilizzo delle risor
 
 Puoi concedere l'accesso agli utenti. Ad esempio, uno sviluppatore di solito dispone di autorizzazioni di accesso di portata adeguatamente ampia al gruppo di risorse di sviluppo e un accesso molto più limitato, o per niente consentito, al gruppo di risorse di produzione.
 
-Se disponi di un account Pagamento a consumo o Sottoscrizione, puoi creare ulteriori gruppi di risorse: 
+Se disponi di un account Pagamento a consumo o Sottoscrizione, puoi creare ulteriori gruppi di risorse:
 
-1. Vai a **Gestisci** > **Account** e seleziona **Gruppi di risorse** dal menu **Risorse account**. 
+1. Vai a **Gestisci** > **Account** e seleziona **Gruppi di risorse** dal menu **Risorse account**.
 3. Fai clic su **Crea**.
 4. Immetti il nome del tuo gruppo di risorse.
 5. Fai clic su **Aggiungi**.
 
-Per ulteriori informazioni su quale tipo di account funziona meglio per te, vedi [Tipi di account](/docs/account/index.html#accounts). 
+Per ulteriori informazioni su quale tipo di account funziona meglio per te, vedi [Tipi di account](/docs/account?topic=account-accounts).
 
 
 ## Configurazione dei tuoi gruppi di risorse
@@ -50,7 +50,7 @@ Per ulteriori informazioni su quale tipo di account funziona meglio per te, vedi
 
 I gruppi di risorse sono un contenitore logico per l'organizzazione delle risorse abilitate IAM. Tutti i servizi gestiti utilizzando il controllo dell'accesso {{site.data.keyword.cloud_notm}} IAM (Identity and Access Management) appartengono a un gruppo di risorse. Assegni una risorsa al suo gruppo di risorse quando la crei dal catalogo. Non puoi modificare l'assegnazione al gruppo di risorse dopo che l'hai configurata, ed è per questo che è importante configurare ora alcuni dei tuoi gruppi di risorse.
 
-Se disponi di un account Lite, hai accesso a un singolo gruppo di risorse creato per tuo conto. Non puoi creare dei gruppi di risorse supplementari. Considera [un upgrade del tuo account](/docs/account/account_settings.html#upgrading-account) per creare e gestire più gruppi di risorse.
+Se disponi di un account Lite, hai accesso a un singolo gruppo di risorse creato per tuo conto. Non puoi creare dei gruppi di risorse supplementari. Considera [un upgrade del tuo account](/docs/account?topic=account-changeacct#changeacct) per creare e gestire più gruppi di risorse.
 {: note}
 
 
@@ -76,27 +76,27 @@ Per aggiungere una risorsa a un gruppo di risorse, completa la seguente procedur
 5. Fai clic su **Crea**.
 
 Puoi sempre andare direttamente al catalogo per creare le risorse e assegnarle a un gruppo di risorse.
-{: tip} 
+{: tip}
 
-Per ulteriori informazioni, consulta [Procedure ottimali per organizzare le risorse in un gruppo di risorse](/docs/resources/bestpractice_rgs.html#bp_resourcegroups).
+Per ulteriori informazioni, consulta [Procedure ottimali per organizzare le risorse in un gruppo di risorse](/docs/resources?topic=resources-bp_resourcegroups).
 
 
 ## Utilizzo di tag per organizzare le risorse
 {: #tags}
 
-Utilizza le tag per organizzare le tue risorse e tracciare i costi d'utilizzo. Puoi aggiungere tag alle risorse correlate e visualizzarle in tutto il tuo account filtrando in base alle tag dal tuo dashboard. Le tag di coppia chiave-valore possono aiutarti a organizzare i tuoi ambienti di sviluppo, i tuoi progetti, la conformità e l'ottimizzazione. 
+Utilizza le tag per organizzare le tue risorse e tracciare i costi d'utilizzo. Puoi aggiungere tag alle risorse correlate e visualizzarle in tutto il tuo account filtrando in base alle tag dal tuo dashboard. Le tag di coppia chiave-valore possono aiutarti a organizzare i tuoi ambienti di sviluppo, i tuoi progetti, la conformità e l'ottimizzazione.
 
 Per aggiungere una tag a una risorsa, completa la seguente procedura:
 
 1. Fai clic sull'icona Menu ![Icona Menu](../icons/icon_hamburger.svg) > **Elenco risorse** per visualizzare il tuo elenco di risorse. Trova la risorsa a cui vuoi aggiungere delle tag.
-2. Se la risorsa già presenta una tag, passa il puntatore del mouse sulla tag esistente e fai clic sull'icona Modifica ![Icona Modifica](../icons/edit-tagging.svg). Se la risorsa non presenta una tag, passa il puntatore del mouse su **--** nella colonna `Tag` e fai clic su **Aggiungi tag**. 
+2. Se la risorsa già presenta una tag, passa il puntatore del mouse sulla tag esistente e fai clic sull'icona Modifica ![Icona Modifica](../icons/edit-tagging.svg). Se la risorsa non presenta una tag, passa il puntatore del mouse su **--** nella colonna `Tag` e fai clic su **Aggiungi tag**.
 3. Immetti un nome per la tag e premi Invio dopo ciascuna tag, se ne stai aggiungendo più di una.
-4. Per rimuovere una tag dalla risorsa, fai clic sull'icona Rimuovi ![Icona Rimuovi](../icons/close-tagging.svg) accanto alla tag. 
-5. Salva le tue modifiche. 
+4. Per rimuovere una tag dalla risorsa, fai clic sull'icona Rimuovi ![Icona Rimuovi](../icons/close-tagging.svg) accanto alla tag.
+5. Salva le tue modifiche.
 
-Per ulteriori informazioni su quali sono le risorse a cui possono essere aggiunte delle tag e su come assegnare l'accesso per delegare la funzionalità di aggiunta di tag agli utenti nel tuo account, vedi [Gestione delle tag](/docs/resources/tagging_resources.html#tag).
+Per ulteriori informazioni su quali sono le risorse a cui possono essere aggiunte delle tag e su come assegnare l'accesso per delegare la funzionalità di aggiunta di tag agli utenti nel tuo account, vedi [Gestione delle tag](/docs/resources?topic=resources-tag).
 
 
 ## Passi successivi
 
-Configura i gruppi di accesso per gli utenti e gli ID servizio che richiedono lo stesso accesso alle risorse e ai gruppi di risorse nel tuo account. Puoi assegnare un numero minimo di politiche di accesso, per risparmiare tempo. Per ulteriori informazioni, consulta [Procedure consigliate per l'assegnazione dell'accesso](/docs/iam/bp_access.html).
+Configura i gruppi di accesso per gli utenti e gli ID servizio che richiedono lo stesso accesso alle risorse e ai gruppi di risorse nel tuo account. Puoi assegnare un numero minimo di politiche di accesso, per risparmiare tempo. Per ulteriori informazioni, consulta [Procedure consigliate per l'assegnazione dell'accesso](/docs/iam?topic=iam-cfaccess).

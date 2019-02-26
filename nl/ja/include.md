@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2017, 2018
-lastupdated: "2018-11-18"
+  years: 2017, 2019
+lastupdated: "2019-01-28"
 
 ---
 
@@ -18,12 +18,12 @@ lastupdated: "2018-11-18"
 作成する {{site.data.keyword.Bluemix}} プライベート・リソースは、デフォルトで制限されています。 アカウントの管理者は、包含リストにユーザーを追加することで、リソースを表示できるユーザーを選択できます。
 {:shortdesc: .shortdesc}
 
-{{site.data.keyword.Bluemix}} [コマンド・ライン・インターフェース (CLI)](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) またはコンソールを使用して、アカウントに追加されたプライベート・リソースをユーザーが表示することを許可するためのアクセス権限が自分にあるかどうかを判断できます。アカウント所有者は、アクセス・ポリシーを割り当てることによって、コンソールからアカウント内のユーザーにアクセス権限を付与できます。詳しくは、[アカウントへのアクセスの管理](access.html)を参照してください。
+{{site.data.keyword.Bluemix}} [コマンド・ライン・インターフェース (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) またはコンソールを使用して、アカウントに追加されたプライベート・リソースをユーザーが表示することを許可するためのアクセス権限が自分にあるかどうかを判断できます。 アカウント所有者は、アクセス・ポリシーを割り当てることによって、コンソールからアカウント内のユーザーにアクセス権限を付与できます。 詳しくは、[アカウントへのアクセスの管理](/docs/account?topic=account-find-access)を参照してください。
 
 ## リソースの検出
 {: #find-resource}
 
-`ibmcloud catalog service <service-id or service-name>` コマンドを実行します。service-id 変数または service-name 変数はリソース名または ID で置き換えてください。返される情報に、リソース内の項目の子リソースを示す階層が表示されます。
+`ibmcloud catalog service <service-id or service-name>` コマンドを実行します。 service-id 変数または service-name 変数はリソース名または ID で置き換えてください。 返される情報に、リソース内の項目の子リソースを示す階層が表示されます。
 
 ## アカウントの包含による可視性の設定
 {: #vis-inc}
@@ -46,7 +46,7 @@ includes-add フラグの後に、アカウントに関連付けられた E メ�
 ## 例: 子オブジェクトの可視性の管理
 {: #child-vis}
 
-リソースの可視性もその子の可視性も管理できます。 空の includes (包含) リストは、アカウント管理者のみが表示できることを意味します。アカウントのすべてのメンバーが表示できるようにするためには、アカウントが包含リストに入っている必要があります。
+リソースの可視性もその子の可視性も管理できます。 空の includes (包含) リストは、アカウント管理者のみが表示できることを意味します。 アカウントのすべてのメンバーが表示できるようにするためには、アカウントが包含リストに入っている必要があります。
 
 以下の例は、`ibmcloud catalog service cloudant` コマンドを実行して Cloudant サービス・インスタンスの子を表示する方法を示しています。
 
@@ -74,11 +74,11 @@ Children           Name                                          Kind         ID
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-子デプロイメントのリソース ID を取得し、その後で、以下のコマンドを実行してアカウントを包含することができます。 
+子デプロイメントのリソース ID を取得し、その後で、以下のコマンドを実行してアカウントを包含することができます。
 
 `ibmcloud catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`
 
-オブジェクトの子は複雑な方法で可視性を継承できます。 子オブジェクトがプライベートである場合、独自の可視性構成があります。 しかし、子オブジェクトがパブリックに設定されている場合、その親の可視性を継承します。 プライベート子オブジェクトに可視性を設定すると、親よりも可視性が制限されることがあります。可視性の仕組みについて詳しくは、[カタログ API 資料](https://{DomainName}/apidocs/globalcatalog)を参照してください。
+オブジェクトの子は複雑な方法で可視性を継承できます。 子オブジェクトがプライベートである場合、独自の可視性構成があります。 しかし、子オブジェクトがパブリックに設定されている場合、その親の可視性を継承します。 プライベート子オブジェクトに可視性を設定すると、親よりも可視性が制限されることがあります。 可視性の仕組みについて詳しくは、[カタログ API 資料](https://{DomainName}/apidocs/globalcatalog)を参照してください。
 
 ## プライベート・リソースの所有権の移管
 {: #owners}
@@ -86,9 +86,9 @@ Children           Name                                          Kind         ID
 プロジェクトまたは組織を去るときに、アカウントの所有権を他のユーザーに移したいことがあります。
 {:shortdesc}
 
-所有権を移管すると、自分のアカウントからはリソースを表示できなくなります。このアクションは元に戻すことはできないため、所有権を本当に移管してもよいことを確認してください。
+所有権を移管すると、自分のアカウントからはリソースを表示できなくなります。 このアクションは元に戻すことはできないため、所有権を本当に移管してもよいことを確認してください。
 {: important}
 
-[{{site.data.keyword.Bluemix}} コマンド・ライン・インターフェース (CLI)](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_commands_settings) を使用して、プライベート・リソースの所有権を移管できます。次のコマンドを実行します。
+[{{site.data.keyword.Bluemix}} コマンド・ライン・インターフェース (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) を使用して、プライベート・リソースの所有権を移管できます。 次のコマンドを実行します。
 
 `ibmcloud catalog entry-visibility-set <service-id> --owner <account-id or account-email>`

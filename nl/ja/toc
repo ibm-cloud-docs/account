@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="account" audience="platform" arm="3397214" href="/docs/account/adminpublic.html" path="account"}
+{: .toc subcollection="account" audience="platform" arm="3397214" href="/docs/account?topic=account-signing-up-for-ibm-cloud" path="account"}
 アカウントの管理
 
     {: .navgroup id="learn"}

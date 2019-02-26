@@ -31,7 +31,7 @@ lastupdated: "2018-11-28"
 {: #ts_logintobm}
 {: troubleshoot}
 
-{{site.data.keyword.Bluemix_notm}} 콘솔에 로그인하려면 IBM ID 또는 SoftLayer ID와 연관된 올바른 비밀번호가 있어야 합니다. 
+{{site.data.keyword.Bluemix_notm}} 콘솔에 로그인하려면 IBM ID 또는 SoftLayer ID와 연관된 올바른 비밀번호가 있어야 합니다.
 
 {{site.data.keyword.Bluemix_notm}}에 로그인하려고 할 때 다음 오류 메시지가 표시됩니다.
 {: tsSymptoms}
@@ -43,8 +43,8 @@ lastupdated: "2018-11-28"
 
 다음 옵션 중 하나를 사용하십시오.
 {: tsResolve}
- * [내 IBM 프로파일 페이지 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://myibm.ibm.com/dashboard/){: new_window}로 이동하여 올바른 비밀번호를 사용 중인지 확인하십시오. 
- * 비밀번호를 잊어버린 경우에는 **비밀번호를 잊으셨습니까?**를 클릭하여 비밀번호를 재설정하십시오. 
+ * [내 IBM 프로파일 페이지 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://myibm.ibm.com/dashboard/){: new_window}로 이동하여 올바른 비밀번호를 사용 중인지 확인하십시오.
+ * 비밀번호를 잊어버린 경우에는 **비밀번호를 잊으셨습니까?**를 클릭하여 비밀번호를 재설정하십시오.
  * IBM ID를 잊어버렸거나 비밀번호와 관련된 문제점이 지속되는 경우 전세계 IBM Registration 헬프 데스크에 지원을 요청하십시오.
 
 {{site.data.keyword.Bluemix_notm}}에 로그인 중이며 로그인 프로세스가 어떠한 이유(예: 비밀번호 재설정)로 중단된 경우에는 콘솔로 돌아가서 로그인 프로세스를 다시 시작하십시오.
@@ -55,7 +55,7 @@ lastupdated: "2018-11-28"
 {: #ts_old_username}
 {: troubleshoot}
 
-이메일로 로그인하려면 각 계정에 대한 IBM ID 인증을 보유 중인지 확인해야 합니다. 
+이메일로 로그인하려면 각 계정에 대한 IBM ID 인증을 보유 중인지 확인해야 합니다.
 
 {{site.data.keyword.Bluemix_notm}} 콘솔에 로그인할 때 다음 메시지가 표시됩니다.
 {: tsSymptoms}
@@ -69,7 +69,7 @@ lastupdated: "2018-11-28"
 
  * IBM ID의 완전한 이메일 주소를 입력하십시오.
  {: tsResolve}
- * SoftLayer ID를 보유한 SoftLayer 사용자인 경우에는 로그인하기 전에 액세스를 보유한 각 계정의 IBM ID 인증으로 전환해야 합니다. 자세한 정보는 [IBM ID로 전환](/docs/account/softlayerlink.html)을 참조하십시오.
+ * SoftLayer ID를 보유한 SoftLayer 사용자인 경우에는 로그인하기 전에 액세스를 보유한 각 계정의 IBM ID 인증으로 전환해야 합니다. 자세한 정보는 [IBM ID로 전환](/docs/account?topic=account-unifyingaccounts)을 참조하십시오.
 
 
 ## 왜 내 IBM ID가 {{site.data.keyword.Bluemix_notm}} 계정과 연관되지 않습니까?
@@ -92,7 +92,7 @@ lastupdated: "2018-11-28"
 {: #ts_login_stalls}
 {: troubleshoot}
 
-로그인 성공 메시지를 받았지만 콘솔로 돌아가지 않습니다. 
+로그인 성공 메시지를 받았지만 콘솔로 돌아가지 않습니다.
 
 IBM ID를 사용하여 로그인하면 로그인 성공 메시지가 표시되지만 [{{site.data.keyword.Bluemix_notm}} 콘솔](https://{DomainName}){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")로 돌아가지 않습니다.
 {: tsSymptoms}
@@ -100,14 +100,14 @@ IBM ID를 사용하여 로그인하면 로그인 성공 메시지가 표시되�
 다음 옵션 중 하나를 사용하십시오.
 {: tsResolve}
  * 브라우저를 닫고 캐시 및 쿠키를 지운 다음 다시 로그인을 시도하십시오.
- * [{{site.data.keyword.Bluemix_notm}} 콘솔](https://{DomainName}){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")에서 로그인하십시오. 
+ * [{{site.data.keyword.Bluemix_notm}} 콘솔](https://{DomainName}){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")에서 로그인하십시오.
 
 
 ## 왜 내 IBM ID 로그인이 완료되지 않았습니까?
 {: #ts_login_ibmid}
 {: troubleshoot}
 
-{site.data.keyword.Bluemix_notm}}에 로그인 중이며 IBM ID의 인증이 완료되지 않은 경우에는 서비스에 문제가 있을 수 있습니다.  
+{{site.data.keyword.Bluemix_notm}}에 로그인 중이며 IBM ID의 인증이 완료되지 않은 경우에는 서비스에 문제가 있을 수 있습니다. 
 
 {{site.data.keyword.Bluemix_notm}}에 로그인하면 IBM ID 인증이 완료되지 않습니다.
 {: tsSymptoms}
@@ -115,11 +115,11 @@ IBM ID를 사용하여 로그인하면 로그인 성공 메시지가 표시되�
 IBM 인증 서비스에 문제점이 있을 수 있습니다.
 {: tsCauses}
 
-[IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")에 로그인할 수 있는지 확인하십시오. 로그인할 수 있으면 이는 애플리케이션 문제이며 나중에 다시 콘솔에 로그인을 시도할 수 있습니다. 해당 페이지에 로그인할 수 없는 경우에는 [IBM ID 헬프 데스크 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}에 문의하십시오.   
+[IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")에 로그인할 수 있는지 확인하십시오. 로그인할 수 있으면 이는 애플리케이션 문제이며 나중에 다시 콘솔에 로그인을 시도할 수 있습니다. 해당 페이지에 로그인할 수 없는 경우에는 [IBM ID 헬프 데스크 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}에 문의하십시오.  
 {: tsResolve}
 
 
-## 왜 계정을 등록한 후에 즉시 로그인할 수 없습니까? 
+## 왜 계정을 등록한 후에 즉시 로그인할 수 없습니까?
 {: #ts_accntpding}
 {: troubleshoot}
 
@@ -130,10 +130,10 @@ IBM 인증 서비스에 문제점이 있을 수 있습니다.
 
 <code>Your account is pending. Please wait up to 24 hours for email confirmation and also check your spam folder. If you still have not received your email confirmation, contact <a href="http://ibm.biz/bluemixsupport.com" target="_blank">{{site.data.keyword.Bluemix_notm}} Support</a>.</code>
 
-{{site.data.keyword.Bluemix_notm}} Lite 계정에 등록하면 등록 확인을 위해 반드시 클릭해야 하는 링크가 포함된 이메일을 수신합니다.   
+{{site.data.keyword.Bluemix_notm}} Lite 계정에 등록하면 등록 확인을 위해 반드시 클릭해야 하는 링크가 포함된 이메일을 수신합니다.  
 {: tsCauses}
 
-확인 이메일은 IBM ID와 연관된 이메일 주소로 발송됩니다. 받은 편지함과 스팸 폴더를 확인하십시오. 확인 이메일을 받지 못한 경우, [{{site.data.keyword.Bluemix_notm}} Support](/docs/get-support/howtogetsupport.html)에 문의하십시오.  
+확인 이메일은 IBM ID와 연관된 이메일 주소로 발송됩니다. 받은 편지함과 스팸 폴더를 확인하십시오. 확인 이메일을 받지 못한 경우, [{{site.data.keyword.Bluemix_notm}} Support](/docs/get-support?topic=get-support-getting-customer-support)에 문의하십시오.  
 {: tsResolve}
 
 
@@ -157,5 +157,5 @@ IBM 인증 서비스에 문제점이 있을 수 있습니다.
   * {{site.data.keyword.Bluemix_notm}}에서 로그아웃한 후 다시 로그인하십시오.
   * 브라우저의 개인용 브라우징 모드를 사용하십시오.
   * 브라우저의 쿠키와 캐시를 지우십시오.
-  * 다른 브라우저를 사용하십시오. {{site.data.keyword.Bluemix_notm}}에서 지원하는 브라우저 버전에 대한 정보는 [{{site.data.keyword.Bluemix_notm}} 필수 소프트웨어](/docs/overview/prereqs.html#prereqs)를 참조하십시오.
-  * Cloud Foundry 명령행 인터페이스를 설치한 경우에는 `ibmcloud cf apps` 명령을 입력하여 앱이 실행 중인지 확인하십시오. 
+  * 다른 브라우저를 사용하십시오. {{site.data.keyword.Bluemix_notm}}에서 지원하는 브라우저 버전에 대한 정보는 [{{site.data.keyword.Bluemix_notm}} 필수 소프트웨어](/docs/overview?topic=overview-prereqs-platform)를 참조하십시오.
+  * Cloud Foundry 명령행 인터페이스를 설치한 경우에는 `ibmcloud cf apps` 명령을 입력하여 앱이 실행 중인지 확인하십시오.

@@ -44,7 +44,7 @@ lastupdated: "2018-11-28"
 以下のいずれかの方法を使用してください。
 {: tsResolve}
  * [IBM プロファイル・ページ ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://myibm.ibm.com/dashboard/){: new_window} にアクセスして、有効なパスワードを使用していることを確認します。
- * パスワードを忘れた場合は、**「パスワードを忘れた場合 (Forgot your password)」**をクリックして、パスワードをリセットします。 
+ * パスワードを忘れた場合は、**「パスワードを忘れた場合 (Forgot your password)」**をクリックして、パスワードをリセットします。
  * IBM ID を忘れた場合、あるいはパスワードに関する問題が続く場合は、Worldwide IBM Registration Help Desk にご相談ください。
 
 {{site.data.keyword.Bluemix_notm}} にサインインし、ログイン・プロセスが何らかの理由 (例えば、パスワードのリセット) で中断された場合、コンソールに戻り、ログイン・プロセスを最初からやり直してください。
@@ -69,7 +69,7 @@ E メールに正常にログインするには、アカウントごとに IBM I
 
  * IBM ID の完全修飾 E メール・アドレスを入力してください。
  {: tsResolve}
- * SoftLayer ID を使用している SoftLayer ユーザーの場合、ログインできるためには、アクセス権限を持つ各アカウントで IBM ID 認証に切り替えておく必要があります。詳しくは、[IBM ID への切り替え](/docs/account/softlayerlink.html)を参照してください。
+ * SoftLayer ID を使用している SoftLayer ユーザーの場合、ログインできるためには、アクセス権限を持つ各アカウントで IBM ID 認証に切り替えておく必要があります。 詳しくは、[IBM ID への切り替え](/docs/account?topic=account-unifyingaccounts)を参照してください。
 
 
 ## IBM ID がどの {{site.data.keyword.Bluemix_notm}} アカウントにも関連付けられていないのはなぜですか?
@@ -107,7 +107,7 @@ IBM ID を使用してログインすると、ログインに成功したとい�
 {: #ts_login_ibmid}
 {: troubleshoot}
 
-{{site.data.keyword.Bluemix_notm}} にログインし、IBM ID の認証が完了しない場合、このサービスに問題がある可能性があります。 
+{{site.data.keyword.Bluemix_notm}} にログインし、IBM ID の認証が完了しない場合、このサービスに問題がある可能性があります。
 
 {{site.data.keyword.Bluemix_notm}} にログインしたときに、IBM ID を使用した認証が完了しません。
 {: tsSymptoms}
@@ -115,7 +115,7 @@ IBM ID を使用してログインすると、ログインに成功したとい�
 IBM ID 認証サービスに問題がある可能性があります。
 {: tsCauses}
 
-[IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") にログインできるかどうか確認してください。できる場合、これはアプリケーション問題であり、後でコンソールへのログインを再試行できます。このページにログインできない場合、[IBM ID ヘルプ・デスク ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window} にお問い合わせください。  
+[IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") にログインできるかどうか確認してください。 できる場合、これはアプリケーション問題であり、後でコンソールへのログインを再試行できます。 このページにログインできない場合、[IBM ID ヘルプ・デスク ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window} にお問い合わせください。  
 {: tsResolve}
 
 
@@ -133,7 +133,7 @@ IBM ID 認証サービスに問題がある可能性があります。
 {{site.data.keyword.Bluemix_notm}} ライト・アカウントに登録すると E メールが届きます。そのメールに含まれているリンクをクリックして登録を確認する必要があります。  
 {: tsCauses}
 
-確認の E メールは、IBM ID と関連付けられた E メール・アドレスに送信されます。受信ボックスとスパム・フォルダーを確認してください。 確認の E メールが届かない場合は、[{{site.data.keyword.Bluemix_notm}} サポート](/docs/get-support/howtogetsupport.html)にお問い合わせください。  
+確認の E メールは、IBM ID と関連付けられた E メール・アドレスに送信されます。 受信ボックスとスパム・フォルダーを確認してください。 確認の E メールが届かない場合は、[{{site.data.keyword.Bluemix_notm}} サポート](/docs/get-support?topic=get-support-getting-customer-support)にお問い合わせください。  
 {: tsResolve}
 
 
@@ -157,5 +157,5 @@ IBM ID 認証サービスに問題がある可能性があります。
   * {{site.data.keyword.Bluemix_notm}} をいったんログアウトしてから、再度ログインします。
   * ブラウザーのプライベート表示モードを使用します。
   * ブラウザーの Cookie およびキャッシュをクリアします。
-  * 異なるブラウザーを使用します。 {{site.data.keyword.Bluemix_notm}} によりサポートされているブラウザーのバージョンについて詳しくは、[{{site.data.keyword.Bluemix_notm}} の前提条件](/docs/overview/prereqs.html#prereqs)を参照してください。
+  * 異なるブラウザーを使用します。 {{site.data.keyword.Bluemix_notm}} によりサポートされているブラウザーのバージョンについて詳しくは、[{{site.data.keyword.Bluemix_notm}} の前提条件](/docs/overview?topic=overview-prereqs-platform)を参照してください。
   * Cloud Foundry コマンド・ライン・インターフェースがインストール済みであれば、`ibmcloud cf apps` コマンドを入力してアプリが実行中であるかどうか確認します。

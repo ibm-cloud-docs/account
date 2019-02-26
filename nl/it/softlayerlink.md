@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2016, 2018
+  years: 2016, 2019
 
-lastupdated: "2018-11-17"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -34,7 +34,7 @@ Per passare il tuo account SoftLayer esistente a un ID IBM, crea un ID IBM e qui
 
 1. Accedi al tuo account SoftLayer e fai clic su **OK** quando viene visualizzato il prompt per passare a un ID IBM.
 
-   Se sei un utente master e non viene visualizzato un prompt per passare a un ID IBM nel portale del cliente, contatta il supporto IBM per assistenza. Vedi [Richiesta di supporto](/docs/get-support/howtogetsupport.html#getting-customer-support) per ulteriori informazioni su come contattare il supporto.
+   Se sei un utente master e non viene visualizzato un prompt per passare a un ID IBM nel portale del cliente, contatta il supporto IBM per assistenza. Vedi [Richiesta di supporto](/docs/get-support?topic=get-support-getting-customer-support) per ulteriori informazioni su come contattare il supporto.
 
    Se hai già eseguito l'accesso e hai fatto clic su **Dopo** nel prompt, ma vuoi passare all'autenticazione con l'ID IBM nella sessione corrente, vai alla pagina Modifica profilo utente e fai clic su **Passa a ID IBM**.
 
@@ -55,7 +55,7 @@ Se sei un nuovo cliente, quando controlli il tuo ordine ti verrà chiesto il tuo
   * Per utilizzare un ID IBM esistente, immetti il nome utente o l'indirizzo e-mail dell'ID IBM se non è condiviso tra più ID IBM.
   * Per creare un nuovo ID IBM, immetti un indirizzo e-mail che non sia attualmente utilizzato da nessun ID IBM. Questo indirizzo e-mail è il nome utente per l'ID IBM ed è l'indirizzo a cui viene inviato il tuo codice di registrazione una volta che l'ID IBM è stato creato. Puoi aggiornare l'indirizzo e-mail associato all'ID IBM in un secondo momento, ma non puoi modificare il nome utente.
 
-Per risolvere eventuali problemi con l'accesso con il tuo ID IBM, vedi [Risoluzione dei problemi di accesso a {{site.data.keyword.Bluemix_notm}}](/docs/account/ts_accessing.html#accessing).
+Per risolvere eventuali problemi con l'accesso con il tuo ID IBM, vedi [Risoluzione dei problemi di accesso a {{site.data.keyword.Bluemix_notm}}](/docs/account?topic=account-accessing).
 
 
 ## Collegamento degli account ID IBM
@@ -74,12 +74,12 @@ Se sei un cliente dell'infrastruttura classica e hai anche degli account PaaS in
   * Se il tuo ID IBM ha un account {{site.data.keyword.Bluemix_notm}} associato, sarai reindirizzato a una pagina di autorizzazione, quindi tornerai al passo di conferma finale.
   * Se non hai un account {{site.data.keyword.Bluemix_notm}} associato, ti viene richiesto di crearne uno.
 
-Per vedere le domande e le risposte comuni sul collegamento del tuo account, controlla le [FAQ](/docs/account/account_faq.html#al_login).
+Per vedere le domande e le risposte comuni sul collegamento del tuo account, controlla le [FAQ](/docs/account?topic=account-al_login).
 
 ### Collegamento degli account utente ID IBM
 {: #link_customer_accounts}
 
-Dopo che i tuoi account utente sono passati all'autenticazione tramite ID IBM, i rivenditori e i distributori possono collegare i propri account utente. Per collegare gli account utente, devi essere un utente master SoftLayer. L'ID IBM che è l'utente master dell'account deve essere il proprietario dell'account della piattaforma {{site.data.keyword.Bluemix_notm}} a cui ti colleghi. 
+Dopo che i tuoi account utente sono passati all'autenticazione tramite ID IBM, i rivenditori e i distributori possono collegare i propri account utente. Per collegare gli account utente, devi essere un utente master SoftLayer. L'ID IBM che è l'utente master dell'account deve essere il proprietario dell'account della piattaforma {{site.data.keyword.Bluemix_notm}} a cui ti colleghi.
 
 Dopo aver collegato i tuoi account, non è possibile scollegarli.
 {: note}
@@ -87,7 +87,7 @@ Dopo aver collegato i tuoi account, non è possibile scollegarli.
 Assicurati di esaminare le seguenti note importanti sul collegamento degli account:
 
   * L'utente master dell'account SoftLayer che viene collegato deve avere un ID IBM.
-  * Ogni account utente che colleghi a un account {{site.data.keyword.Bluemix_notm}} deve appartenere a un unico ID IBM con un indirizzo e-mail univoco. Anche se un singolo ID IBM può possedere più account SoftLayer, devi modificare l'utente master in modo da essere un ID IBM univoco per ogni account. Contatta il supporto per modificare l'utente master di un account SoftLayer. Per ulteriori informazioni, vedi [Richiesta di supporto per l'infrastruttura {{site.data.keyword.Bluemix_notm}}](/docs/customer-portal/cpsupport.html).
+  * Ogni account utente che colleghi a un account {{site.data.keyword.Bluemix_notm}} deve appartenere a un unico ID IBM con un indirizzo e-mail univoco. Anche se un singolo ID IBM può possedere più account SoftLayer, devi modificare l'utente master in modo da essere un ID IBM univoco per ogni account. Contatta il supporto per modificare l'utente master di un account SoftLayer. Per ulteriori informazioni, vedi [Richiesta di supporto per l'infrastruttura {{site.data.keyword.Bluemix_notm}}](/docs/customer-portal?topic=customer-portal-customerportal_support).
   * Quando aggiungi nuovi utenti a un account collegato, devi aggiungerli a entrambi agli account SoftLayer e {{site.data.keyword.Bluemix_notm}} affinché possano accedere a tutte le funzionalità nella console unificata.
   * Se hai un account aziendale, utilizza il portale BAP (Brand Agent Portal) e se hai bisogno di assistenza quando colleghi il tuo account, contatta il team di Revenue Services inviando una e-mail a softlayer_revenue_services_team@wwpdl.vnet.ibm.com.
 
@@ -100,17 +100,17 @@ Completa la seguente procedura per collegare ciascun account SoftLayer a un acco
    5. Quando ti viene richiesto, scegli una delle seguenti azioni:
      * Se hai già un account {{site.data.keyword.Bluemix_notm}}, fornisci l'indirizzo e-mail associato a tale account per collegare gli account.
      * Se non hai un account {{site.data.keyword.Bluemix_notm}}, fornisci l'indirizzo e-mail che desideri utilizzare e segui le istruzioni per ricevere l'invito a {{site.data.keyword.Bluemix_notm}} e creare un account.
-   6. Dopo aver collegato l'account, informa l'utente finale di ogni account di migrare all'ID IBM utilizzando la procedura descritta nella sezione precedente [Passaggio all'ID IBM](/docs/account/softlayerlink.html#switchtoIBMid).
+   6. Dopo aver collegato l'account, informa l'utente finale di ogni account di migrare all'ID IBM utilizzando la procedura descritta nella sezione precedente [Passaggio all'ID IBM](#switchtoIBMid).
 
       Migra solo gli account dell'utente finale all'ID IBM. Non migrare gli account dell'azienda che sono account principali per gli account utente finale e non contengono alcuna risorsa. Gli utenti degli account dell'azienda che eseguono la migrazione all'ID IBM perdono la possibilità di accedere al portale BAP (Brand Agent Portal).
       {: important}
 
 Tieni presente le seguenti modifiche dopo che i tuoi account sono stati collegati:
-  
+
   * Puoi ora accedere alla [console {{site.data.keyword.Bluemix}} ![Icona link esterno](../icons/launch-glyph.svg)](https://cloud.ibm.com){: new_window}.
   * Devi utilizzare le credenziali dell'ID IBM per accedere a entrambi gli account SoftLayer e {{site.data.keyword.Bluemix_notm}}.
   * Eventuali sconti SoftLayer esistenti vengono applicati agli addebiti {{site.data.keyword.Bluemix_notm}}.
-  * Ricevi un'unica fattura in dollari americani (USD). Se hai un account {{site.data.keyword.Bluemix_notm}} esistente, la fatturazione tramite {{site.data.keyword.Bluemix_notm}} per le risorse dell'infrastruttura parte dal nuovo ciclo di fatturazione che inizia dopo il collegamento degli account. Per ulteriori informazioni, vedi [Fatturazione consolidata per gli account collegati](/docs/customer-portal/linking_accounts.html).
+  * Ricevi un'unica fattura in dollari americani (USD). Se hai un account {{site.data.keyword.Bluemix_notm}} esistente, la fatturazione tramite {{site.data.keyword.Bluemix_notm}} per le risorse dell'infrastruttura parte dal nuovo ciclo di fatturazione che inizia dopo il collegamento degli account. Per ulteriori informazioni, vedi [Fatturazione consolidata per gli account collegati](/docs/customer-portal?topic=customer-portal-unifybillaccounts).
   * Puoi monitorare l'utilizzo delle tue risorse dell'infrastruttura classica nella console {{site.data.keyword.Bluemix_notm}}.
 
 ## Utilizzo dell'autenticazione a più fattori negli account collegati
@@ -120,4 +120,4 @@ Se hai un account collegato, puoi utilizzare la pagina **Impostazioni** di {{sit
 
 Altri metodi di autenticazione multifattore non sono per singolo ID IBM. Sono per singolo account. Quando un ID IBM è associato a più account e tu passi da un account all'altro, devi confermare la tua identità ogni volta che passi a un account diverso che richiede l'autenticazione a due fattori. Ciò è vero anche se l'account precedente e il nuovo account sono entrambi configurati con lo stesso meccanismo di autenticazione a due fattori.
 
-Se hai precedentemente abilitato [2FA nel portale del cliente](/docs/customer-portal/cpenable2fa.html#customerportal_2fa) per le risorse della tua infrastruttura classica, e abiliti quindi l'impostazione MFA dell'account {{site.data.keyword.Bluemix_notm}}, l'impostazione dell'account MFA sovrascrive la 2FA che avevi impostato nel portale del cliente. Questo significa che puoi disabilitare la 2FA da te acquistata nel portale del cliente a favore dell'impostazione MFA dell'account. 
+Se hai precedentemente abilitato [2FA nel portale del cliente](/docs/customer-portal?topic=customer-portal-customerportal_2fa) per le risorse della tua infrastruttura classica, e abiliti quindi l'impostazione MFA dell'account {{site.data.keyword.Bluemix_notm}}, l'impostazione dell'account MFA sovrascrive la 2FA che avevi impostato nel portale del cliente. Questo significa che puoi disabilitare la 2FA da te acquistata nel portale del cliente a favore dell'impostazione MFA dell'account.

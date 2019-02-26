@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2017, 2018
-lastupdated: "2018-11-28"
+  years: 2017, 2019
+lastupdated: "2019-01-28"
 
 ---
 
@@ -23,7 +23,7 @@ lastupdated: "2018-11-28"
 카탈로그에서 리소스를 숨기는 경우 금융, 모바일, Watson 및 웹 앱 등의 {{site.data.keyword.Bluemix_notm}} 콘솔 탐색에서 사용 가능한 오퍼링 카테고리 목록에서 또는 Cloud Foundry 명령행 인터페이스(CLI)에서 해당 리소스가 제거되지는 않습니다.
 {: note}
 
-{{site.data.keyword.Bluemix}} [명령행 인터페이스(CLI)](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) 또는 콘솔을 사용하여 계정에 추가된 개인용 리소스를 사용자가 볼 수 있도록 허용하는 액세스 권한이 있는지 여부를 판별할 수 있습니다. 계정 소유자는 액세스 정책을 지정하여 콘솔에서 계정의 사용자에게 액세스를 제공할 수 있습니다. 자세한 정보는 [계정에 대한 액세스 관리](access.html)를 참조하십시오.
+{{site.data.keyword.Bluemix}} [명령행 인터페이스(CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) 또는 콘솔을 사용하여 계정에 추가된 개인용 리소스를 사용자가 볼 수 있도록 허용하는 액세스 권한이 있는지 여부를 판별할 수 있습니다. 계정 소유자는 액세스 정책을 지정하여 콘솔에서 계정의 사용자에게 액세스를 제공할 수 있습니다. 자세한 정보는 [계정에 대한 액세스 관리](/docs/account?topic=account-find-access)를 참조하십시오.
 
 ## 리소스 찾기
 {: #find-resource}
@@ -41,9 +41,9 @@ lastupdated: "2018-11-28"
 
 `ibmcloud catalog entry-visibility-set <resource-id> —-excludes-add <account-id or account-email>`
 
-제외 플래그 다음에 계정과 연관된 계정 ID 또는 이메일의 쉼표로 구분된 목록을 추가할 수 있습니다. 
+제외 플래그 다음에 계정과 연관된 계정 ID 또는 이메일의 쉼표로 구분된 목록을 추가할 수 있습니다.
 
-명령을 실행한 후 리소스를 숨기는 프로세스는 약 30분 정도 걸립니다. 30분 후 계정에서 로그아웃한 다음 로그인하여 숨겨진 리소스를 확인하십시오. 
+명령을 실행한 후 리소스를 숨기는 프로세스는 약 30분 정도 걸립니다. 30분 후 계정에서 로그아웃한 다음 로그인하여 숨겨진 리소스를 확인하십시오.
 
 숨긴 항목은 콘솔 또는 CLI에서 사용 가능하지 않습니다. 제외된 계정의 관리자는 여전히 리소스를 볼 수 있습니다.
 {: note}
@@ -51,7 +51,7 @@ lastupdated: "2018-11-28"
 ## 제외 목록에서 계정 제거
 {: #remove-exclude}
 
-제외 목록에서 계정 ID 또는 이메일을 제거하려면 다음 명령을 실행하십시오. 
+제외 목록에서 계정 ID 또는 이메일을 제거하려면 다음 명령을 실행하십시오.
 
 `ibmcloud catalog entry-visibility-set <service-id> —-excludes-remove <account-id or account-email>`
 
@@ -59,9 +59,9 @@ lastupdated: "2018-11-28"
 ## 예: 하위 오브젝트의 가시성 관리
 {: #child}
 
-모든 리소스의 가시성을 관리할 수 있습니다. 각 하위 리소스에는 개별 가시성 특성이 있습니다. 이 예에서는 Cloudant 서비스로부터 계정을 제외할 수 있는 방법을 보여줍니다. 
+모든 리소스의 가시성을 관리할 수 있습니다. 각 하위 리소스에는 개별 가시성 특성이 있습니다. 이 예에서는 Cloudant 서비스로부터 계정을 제외할 수 있는 방법을 보여줍니다.
 
-리소스의 모든 하위를 보려면 `ibmcloud catalog service cloudant` 명령을 실행하십시오. 
+리소스의 모든 하위를 보려면 `ibmcloud catalog service cloudant` 명령을 실행하십시오.
 
 ```
 ID                 cloudant
@@ -87,6 +87,6 @@ Children           Name                                          Kind         ID
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-`ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>` 명령을 실행하여 오브젝트의 ID를 찾고 계정을 제외하십시오. 
+오브젝트의 ID를 찾고 계정을 제외하려면 `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>` 명령을 실행하십시오.
 
-가시성의 작동 방식에 대한 자세한 정보는 [카탈로그 API 문서](https://{DomainName}/apidocs/globalcatalog)를 참조하십시오. 
+가시성의 작동 방식에 대한 자세한 정보는 [카탈로그 API 문서](https://{DomainName}/apidocs/globalcatalog)를 참조하십시오.
