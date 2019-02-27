@@ -5,6 +5,8 @@ copyright:
   years: 2017, 2019
 lastupdated: "2019-01-28"
 
+subcollection: account
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -26,7 +28,7 @@ Hiding a resource in the catalog does not remove it from the Cloud Foundry comma
 You can use the {{site.data.keyword.Bluemix}} [command-line interface (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) or console to determine whether you have access to allow users to view a private resource that was added to the account. If you're an account owner, you can give access to a user in your account from the console by assigning an access policy. For more information, see [Managing access to your account](/docs/account?topic=account-find-access).
 
 ## Finding a resource
-{: #find-resource}
+{: #find-resource-exc}
 
 Run the `ibmcloud catalog search <service-id or service-name>` command to search for a resource. Replace the service-id or service-name variables with a resource name or ID. Use the information that's returned to find the ID or name of the service that you want to hide.
 

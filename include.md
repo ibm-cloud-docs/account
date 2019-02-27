@@ -5,6 +5,8 @@ copyright:
   years: 2017, 2019
 lastupdated: "2019-01-28"
 
+subcollection: account
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -21,7 +23,7 @@ Any {{site.data.keyword.Bluemix}} private resource that you create is restricted
 You can use the {{site.data.keyword.Bluemix}} [command-line interface (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) or console to determine whether you have access to allow users to view a private resource that was added to the account. If you're an account owner, you can give access to a user in your account from the console by assigning an access policy. For more information, see [Managing access to your account](/docs/account?topic=account-find-access).
 
 ## Finding your resource
-{: #find-resource}
+{: #find-resource-inc}
 
 Run the `ibmcloud catalog service <service-id or service-name>` command. Replace the service-id or service-name variables with your resource name or ID. Use the information that is returned to view the hierarchy, which shows the child resources of the items in your resource.
 
@@ -37,7 +39,7 @@ After the includes-add flag, you can add a comma-separated list of emails or IDs
 After you run the command, the process to include the resource takes approximately 30 minutes. After 30 minutes, log out and back in to your account to see the included resource.
 
 ## Removing an account from the inclusion list
-{: #remove-exclude}
+{: #remove-include}
 
 Run the following command to remove an account from the includes list.
 
