@@ -2,21 +2,22 @@
 
 copyright:
 
-  years: 2018, 2019
+  years: 2018
 
-lastupdated: "2019-01-28" 
+lastupdated: "2018-12-02" 
 
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:important: .important}
 {:tip: .tip}
+{:important: .important}
+
 
 # Einstellungen für 'Unterstützung in der EU' und 'HIPAA-Unterstützung' aktivieren
-{: #eu-hipaa-supported}
+{: #eu-hipaa-supoorted}
 
-Als Kontoeigner können Sie für Ihr Konto die Einstellungen 'Unterstützung in der EU' und 'HIPAA-Unterstützung' aktivieren. Eine Aktivierung der Einstellung 'Unterstützung in der EU' kann z. B. sinnvoll sein, wenn Sie Ihre Ressourcen für die Verarbeitung von personenbezogenen Daten von EU-Bürgern verwenden. Darüber hinaus können Sie die Einstellung 'HIPAA-Unterstützung' aktivieren, wenn Sie planen, PHI-Daten (Protected Health Information, geschützte Gesundheitsdaten) in Services zu verwenden, die mit HIPAA-Unterstützung arbeiten.
+Als Kontoeigner können Sie für Ihr Konto die Einstellungen 'Unterstützung in der EU' und 'HIPAA-Unterstützung' aktivieren. Eine Aktivierung der Einstellung 'Unterstützung in der EU' kann z. B. sinnvoll sein, wenn Sie Ihre Ressourcen für die Verarbeitung von personenbezogenen Daten von EU-Bürgern verwenden. Darüber hinaus können Sie die Einstellung 'HIPAA-Unterstützung' aktivieren, wenn Sie planen, PHI-Daten (Protected Health Information, geschützte Gesundheitsdaten) in Services zu verwenden, die mit HIPAA-Unterstützung arbeiten. 
 {:shortdesc}
 
 
@@ -39,16 +40,16 @@ Durch die Aktivierung dieser Einstellung verfügen die Services mit Unterstützu
 ## Einstellung 'HIPAA-Unterstützung' aktivieren
 {: #enabling-hipaa}
 
-Sie können die Einstellung 'HIPAA-Unterstützung' aktivieren, um sensible Workloads auszuführen, die der Regulierung der US-amerikanischen HIPAA-Standards (HIPAA = Health Insurance Portability and Accountability Act) unterliegen. Wenn Sie diese Einstellung aktivieren, geben Sie an, dass in Ihrem Konto PHI-Daten verarbeitet werden, die möglicherweise den HIPAA-Vorgaben unterliegen.
+Sie können die Einstellung 'HIPAA-Unterstützung' aktivieren, um sensible Workloads auszuführen, die der Regulierung der US-amerikanischen HIPAA-Standards (HIPAA = Health Insurance Portability and Accountability Act) unterliegen. Wenn Sie diese Einstellung aktivieren, geben Sie an, dass in Ihrem Konto PHI-Daten verarbeitet werden, die möglicherweise den HIPAA-Vorgaben unterliegen. 
 
 1. Rufen Sie **Verwalten > Konto** auf und wählen Sie **Kontoeinstellung** in der Konsole aus.
-2. Klicken Sie für die Option 'HIPAA-Unterstützung' auf **Ein**.
-3. Lesen Sie die Informationen zur Aktivierung dieser Einstellung.
+2. Klicken Sie für die Option 'HIPAA-Unterstützung' auf **Ein**. 
+3. Lesen Sie die Informationen zur Aktivierung dieser Einstellung. 
 
   Nachdem Sie diese Einstellung aktiviert haben, können Sie sie nicht mehr inaktivieren.
   {: important}
-
-4. Wählen Sie **Zustimmen** aus und klicken Sie auf **Senden**.
+   
+4. Wählen Sie **Zustimmen** aus und klicken Sie auf **Senden**. 
 
   Nachdem Sie die Einstellung 'HIPAA-fähig' aktiviert haben, können Sie den Tag 'HIPAA-fähig' verwenden, um den Katalog nach Angeboten zu durchsuchen, die HIPAA-fähig sind.
   {: tip}
