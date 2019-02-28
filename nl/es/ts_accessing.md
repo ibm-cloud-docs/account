@@ -44,7 +44,7 @@ La contraseña que ha utilizado para iniciar sesión en {{site.data.keyword.Blue
 Utilice una de las opciones siguientes:
 {: tsResolve}
  * Vaya a la página [Mi perfil de IBM![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://myibm.ibm.com/dashboard/){: new_window} para confirmar que utiliza una contraseña válida.
- * Si ha olvidado su contraseña, pulse **¿Ha olvidado su contraseña?** para restablecer la contraseña. 
+ * Si ha olvidado su contraseña, pulse **¿Ha olvidado su contraseña?** para restablecer la contraseña.
  * Si ha olvidado el IBMid o sigue teniendo problemas con su contraseña, póngase en contacto con el centro de atención al cliente de registro de IBM a nivel mundial para obtener ayuda.
 
 Si inicia sesión en {{site.data.keyword.Bluemix_notm}} y el proceso se interrumpe por cualquier motivo como, por ejemplo, al restablecer la contraseña, vuelva a la consola e inicie el proceso de inicio de sesión de nuevo.
@@ -69,7 +69,7 @@ Debe tener un IBMid y contraseña válidos para poder iniciar una sesión en {{s
 
  * Especifique una dirección de correo electrónico completa para el IBMid.
  {: tsResolve}
- * Si es un usuario de SoftLayer con un ID de SoftLayer, debe cambiar a la autenticación del IBMid en cada cuenta a la que tenga acceso antes de poder iniciar una sesión. Para obtener más información, consulte [Cambio a un IBMid](/docs/account/softlayerlink.html).
+ * Si es un usuario de SoftLayer con un ID de SoftLayer, debe cambiar a la autenticación del IBMid en cada cuenta a la que tenga acceso antes de poder iniciar una sesión. Para obtener más información, consulte [Cambio a un IBMid](/docs/account?topic=account-unifyingaccounts).
 
 
 ## ¿Por qué mi IBMid no está asociado con ninguna cuenta de {{site.data.keyword.Bluemix_notm}}?
@@ -107,7 +107,7 @@ Utilice una de las opciones siguientes:
 {: #ts_login_ibmid}
 {: troubleshoot}
 
-Si inicia sesión en {{site.data.keyword.Bluemix_notm}} y la autenticación del IBMid no se completa, es posible que haya un problema con el servicio. 
+Si inicia sesión en {{site.data.keyword.Bluemix_notm}} y la autenticación del IBMid no se completa, es posible que haya un problema con el servicio.
 
 Cuando inicia una sesión en {{site.data.keyword.Bluemix_notm}}, la autenticación con IBMid no se completa.
 {: tsSymptoms}
@@ -133,7 +133,7 @@ Después de registrarse para una cuenta de Lite de {{site.data.keyword.Bluemix_n
 Cuando registra una cuenta Lite de {{site.data.keyword.Bluemix_notm}}, recibe un correo electrónico que incluye un enlace en el que debe pulsar para confirmar el registro.  
 {: tsCauses}
 
-El correo electrónico de confirmación se envía a la dirección de correo electrónico asociada con el IBMid. Consulte la bandeja de entrada de la carpeta spam. Si no ha recibido el correo electrónico de confirmación, póngase en contacto con el [Soporte de {{site.data.keyword.Bluemix_notm}}](/docs/get-support/howtogetsupport.html).  
+El correo electrónico de confirmación se envía a la dirección de correo electrónico asociada con el IBMid. Consulte la bandeja de entrada de la carpeta spam. Si no ha recibido el correo electrónico de confirmación, póngase en contacto con el [Soporte de {{site.data.keyword.Bluemix_notm}}](/docs/get-support?topic=get-support-getting-customer-support).  
 {: tsResolve}
 
 
@@ -143,7 +143,7 @@ El correo electrónico de confirmación se envía a la dirección de correo elec
 
 Cuando utilice la consola de {{site.data.keyword.Bluemix_notm}}, es posible que no pueda cargar una página de consola. En su lugar verá los mensajes de error BXNUI0001E o BXNUI0016E.
 
-Es posible que vea uno de los mensajes de error siguientes: 
+Es posible que vea uno de los mensajes de error siguientes:
 {: tsSymptoms}
 
 `BXNUI0001E: La página no se ha cargado porque {{site.data.keyword.Bluemix_notm}} no ha detectado si existe una sesión.`
@@ -157,5 +157,5 @@ Lleve a cabo una o varias de estas acciones si es necesario:
   * Finalice la sesión de {{site.data.keyword.Bluemix_notm}} y vuélvala a iniciar.
   * Utilice la modalidad de navegación privada del navegador.
   * Borre las cookies y la memoria caché del navegador.
-  * Utilice otro navegador. Para obtener información sobre las versiones de los navegadores a las que da soporte {{site.data.keyword.Bluemix_notm}}, consulte [Requisitos previos de {{site.data.keyword.Bluemix_notm}}](/docs/overview/prereqs.html#prereqs).
+  * Utilice otro navegador. Para obtener información sobre las versiones de los navegadores a las que da soporte {{site.data.keyword.Bluemix_notm}}, consulte [Requisitos previos de {{site.data.keyword.Bluemix_notm}}](/docs/overview?topic=overview-prereqs-platform).
   * Si ha instalado la interfaz de línea de mandatos Cloud Foundry, escriba el mandato `ibmcloud cf apps` para ver si la app se está ejecutando.

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2016, 2018
+  years: 2016, 2019
 
-lastupdated: "2018-11-17"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -34,7 +34,7 @@ Para cambiar desde su cuenta de SoftLayer existente a un IBMid, cree un IBMid y 
 
 1. Inicie una sesión en su cuenta de SoftLayer y pulse **Aceptar** cuando se visualice una solicitud para cambiar a un IBMid.
 
-   Si es un usuario maestro y no ve un indicador para cambiar a un IBMid en el portal de clientes póngase en contacto con el equipo de soporte de IBM para obtener ayuda. Consulte [Obtener soporte](/docs/get-support/howtogetsupport.html#getting-customer-support) para obtener información de contacto.
+   Si es un usuario maestro y no ve un indicador para cambiar a un IBMid en el portal de clientes póngase en contacto con el equipo de soporte de IBM para obtener ayuda. Consulte [Obtener soporte](/docs/get-support?topic=get-support-getting-customer-support) para obtener información de contacto.
 
    Si con anterioridad inició una sesión y pulso **Más tarde** en la solicitud, y desea cambiar a la autenticación de IBMid en la sesión actual, vaya a la página Editar perfil de usuario y pulse **Cambiar a IBMid**.
 
@@ -55,7 +55,7 @@ Si es un nuevo cliente, se le solicitará su IBMid existente o que cree un nuevo
   * Para utilizar un IBMid existente, escriba el nombre de usuario o la dirección de correo electrónico del IBMid si no se comparte con varios IBMid.
   * Para crear un nuevo IBMid, escriba una dirección de correo electrónico que no utilice actualmente ningún otro IBMid. Esta dirección de correo electrónico es el nombre de usuario para el IBMid, y es adónde se enviará su código de registro después de que se cree su IBMid. Más tarde podrá actualizar la dirección de correo electrónico asociada al IBMid, pero no podrá cambiar el nombre de usuario.
 
-Para resolver cualquier problema de inicio de sesión con su IBMid, consulte [Resolución de problemas para acceder a {{site.data.keyword.Bluemix_notm}}](/docs/account/ts_accessing.html#accessing).
+Para resolver cualquier problema de inicio de sesión con su IBMid, consulte [Resolución de problemas para acceder a {{site.data.keyword.Bluemix_notm}}](/docs/account?topic=account-accessing).
 
 
 ## Enlace de cuentas de IBMid
@@ -74,12 +74,12 @@ Si es un cliente de la infraestructura y también dispone de cuentas PaaS en {{s
   * Si tiene una cuenta de {{site.data.keyword.Bluemix_notm}} asociada a su IBMid, se le direccionará a una página de autorización, y luego al paso de confirmación final.
   * Si no tiene una cuenta de {{site.data.keyword.Bluemix_notm}} asociada, se le solicitará que cree una nueva.
 
-Para ver preguntas y respuestas comunes acerca de su cuenta, consulte [Preguntas frecuentes](/docs/account/account_faq.html#al_login).
+Para ver preguntas y respuestas comunes acerca de su cuenta, consulte [Preguntas frecuentes](/docs/account?topic=account-al_login).
 
 ### Cómo enlazar cuentas de usuario de IBMid
 {: #link_customer_accounts}
 
-Cuando sus cuentas de usuario se hayan cambiado a la autenticación de IBMid, los concesionarios y distribuidores podrán enlazar sus cuentas de usuario. Para enlazar cuentas de usuario debe ser un usuario maestro de SoftLayer. El IBMid que es el usuario maestro de la cuenta debe ser el propietario de la cuenta de la plataforma {{site.data.keyword.Bluemix_notm}} a la que se va a enlazar. 
+Cuando sus cuentas de usuario se hayan cambiado a la autenticación de IBMid, los concesionarios y distribuidores podrán enlazar sus cuentas de usuario. Para enlazar cuentas de usuario debe ser un usuario maestro de SoftLayer. El IBMid que es el usuario maestro de la cuenta debe ser el propietario de la cuenta de la plataforma {{site.data.keyword.Bluemix_notm}} a la que se va a enlazar.
 
 Después de enlazar sus cuentas, no podrá desenlazarlas.
 {: note}
@@ -87,7 +87,7 @@ Después de enlazar sus cuentas, no podrá desenlazarlas.
 Asegúrese de revisar las siguientes notas importantes para enlazar cuentas:
 
   * El usuario maestro de la cuenta de SoftLayer a la que se está enlazando debe tener un IBMid.
-  * Cada cuenta de usuario que enlace con una cuenta de {{site.data.keyword.Bluemix_notm}} debe ser propiedad de un IBMid exclusivo con una dirección de correo electrónico exclusiva. A pesar de que un único IBMid puede poseer varias cuentas de SoftLayer, debe cambiar el usuario maestro para que sea un IBMid exclusivo para cada cuenta. Póngase en contacto con el equipo de soporte para cambiar el usuario maestro de una cuenta de SoftLayer. Consulte [Obtención de soporte para la infraestructura de {{site.data.keyword.Bluemix_notm}}](/docs/customer-portal/cpsupport.html) para obtener más información.
+  * Cada cuenta de usuario que enlace con una cuenta de {{site.data.keyword.Bluemix_notm}} debe ser propiedad de un IBMid exclusivo con una dirección de correo electrónico exclusiva. A pesar de que un único IBMid puede poseer varias cuentas de SoftLayer, debe cambiar el usuario maestro para que sea un IBMid exclusivo para cada cuenta. Póngase en contacto con el equipo de soporte para cambiar el usuario maestro de una cuenta de SoftLayer. Consulte [Obtención de soporte para la infraestructura de {{site.data.keyword.Bluemix_notm}}](/docs/customer-portal?topic=customer-portal-customerportal_support) para obtener más información.
   * Cuando añada nuevos usuarios a una cuenta enlazada, debe añadirlos tanto a la cuenta de SoftLayer como a la cuenta de {{site.data.keyword.Bluemix_notm}} de forma que puedan acceder a todas las funcionalidades de la consola unificada.
   * Si tiene una cuenta derivada, utilice BAP (Brand Agent Portal). Necesitará soporte al enlazar su cuenta, póngase en contacto con el equipo de Revenue Services enviando un correo electrónico a softlayer_revenue_services_team@wwpdl.vnet.ibm.com.
 
@@ -100,17 +100,17 @@ Siga estos pasos para enlazar cada cuenta de SoftLayer con una cuenta de platafo
    5. Cuando se le solicite, realice una de las siguientes acciones:
      * Si ya tiene una cuenta de {{site.data.keyword.Bluemix_notm}}, proporcione la dirección de correo electrónico asociada a la cuenta para enlazar las cuentas.
      * Si no tiene una cuenta de {{site.data.keyword.Bluemix_notm}}, especifique la dirección de correo electrónico que desea utilizar y siga las instrucciones para ser invitado a {{site.data.keyword.Bluemix_notm}} y cree una cuenta.
-   6. Después de que haya enlazado la cuenta, informe al usuario final de cada cuenta para que migre a un IBMid siguiendo el procedimiento que se ha descrito en la sección anterior de [Cambio a IBMid](/docs/account/softlayerlink.html#switchtoIBMid).
+   6. Después de que haya enlazado la cuenta, informe al usuario final de cada cuenta para que migre a un IBMid siguiendo el procedimiento que se ha descrito en la sección anterior de [Cambio a IBMid](#switchtoIBMid).
 
       Migre únicamente cuentas de usuario final a IBMid. No migre cuentas derivadas, que son cuentas padre de cuentas de usuario final y no contienen recursos. Los usuarios de cuentas derivadas que migren a un IBMid pierden la posibilidad de iniciar una sesión en el Brand Agent Portal (BAP).
       {: important}
 
 Tenga en cuenta los cambios siguientes una vez que se enlacen las cuentas:
-  
+
   * Ahora inicie sesión en la consola de [{{site.data.keyword.Bluemix}} ![Icono de enlace externo](../icons/launch-glyph.svg)](https://cloud.ibm.com){: new_window}.
   * Debe utilizar las credenciales de IBMid para acceder a sus cuentas tanto de SoftLayer como de {{site.data.keyword.Bluemix_notm}}.
   * Cualquier descuento existente de SoftLayer se aplicará en cargos de {{site.data.keyword.Bluemix_notm}}.
-  * Recibirá una factura en dólares de Estados Unidos (USD). Si tiene una cuenta de {{site.data.keyword.Bluemix_notm}}, la facturación a través de {{site.data.keyword.Bluemix_notm}} para los recursos de infraestructura será efectiva para el nuevo ciclo de facturación que empieza una vez que se hayan enlazado las cuentas. Para obtener más información, consulte [Facturación consolidada para cuentas enlazadas](/docs/customer-portal/linking_accounts.html).
+  * Recibirá una factura en dólares de Estados Unidos (USD). Si tiene una cuenta de {{site.data.keyword.Bluemix_notm}}, la facturación a través de {{site.data.keyword.Bluemix_notm}} para los recursos de infraestructura será efectiva para el nuevo ciclo de facturación que empieza una vez que se hayan enlazado las cuentas. Para obtener más información, consulte [Facturación consolidada para cuentas enlazadas](/docs/customer-portal?topic=customer-portal-unifybillaccounts).
   * Puede supervisar el uso de los recursos de infraestructura clásica en la consola de {{site.data.keyword.Bluemix_notm}}.
 
 ## Uso de la autenticación de multifactores en cuentas enlazadas
@@ -120,4 +120,4 @@ Si tiene una cuenta enlazada, puede utilizar la página **Valores** de IAM de {{
 
 Otros métodos de autenticación de multifactores no son por IBMid. Son por cuenta. Cuando un IBMid está asociado con varias cuentas, y cambia entre ellas, debe confirmar su identidad cada vez que cambie a una cuenta distinta que requiera la autenticación de dos factores. Esto es cierto incluso si la cuenta anterior y la cuenta nueva están configuradas con el mismo mecanismo de autenticación de dos factores.
 
-Si anteriormente ha habilitado la [2FA en el portal de clientes](/docs/customer-portal/cpenable2fa.html#customerportal_2fa) para sus recursos de infraestructura clásica y habilita el valor MFA de la cuenta de {{site.data.keyword.Bluemix_notm}}, el valor de la cuenta de MFA sustituye la 2FA que ha configurado en el portal de customer. Esto significa que puede inhabilitar la 2FA que ha adquirido en el portal de clientes en favor del valor MFA de la cuenta. 
+Si anteriormente ha habilitado la [2FA en el portal de clientes](/docs/customer-portal?topic=customer-portal-customerportal_2fa) para sus recursos de infraestructura clásica y habilita el valor MFA de la cuenta de {{site.data.keyword.Bluemix_notm}}, el valor de la cuenta de MFA sustituye la 2FA que ha configurado en el portal de customer. Esto significa que puede inhabilitar la 2FA que ha adquirido en el portal de clientes en favor del valor MFA de la cuenta.

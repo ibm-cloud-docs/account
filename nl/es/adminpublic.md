@@ -16,6 +16,7 @@ lastupdated: "2018-11-19"
 
 
 # Registro en {{site.data.keyword.Bluemix_notm}}
+{: #signup}
 
 Puede registrarse para obtener una cuenta de [{{site.data.keyword.Bluemix}} ](https://cloud.ibm.com){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo") utilizando un IBMid existente, creando un IBMid nuevo o utilizando un ID federado. Un ID federado es un ID dentro del dominio de una empresa que ha sido registrado con IBM, por lo que el dominio y las credenciales de usuario pueden utilizarse para acceder a aplicaciones web de IBM. Pulse en **Crear una cuenta de {{site.data.keyword.Bluemix_notm}} ** para empezar.
 {:shortdesc}
@@ -27,7 +28,7 @@ IBM utiliza el Security Assertion Markup Language 2.0 (SAML 2.0) para esta feder
 
 | Métodos de inicio de sesión | Detalles |    
 |-----------------|---------|
-|IBMid existente | Si ya tiene un IBMid, regístrese en {{site.data.keyword.Bluemix_notm}} con sus credenciales existentes que utilice para otros productos y servicios de IBM. Debe especificar un número de teléfono al registrarse. |
-|IBMid nuevo | Si no aún no tiene un IBMid, puede optar por crear uno. Con IBMid puede utilizar un nombre de usuario de inicio de sesión para todos los productos y servicios de IBM que utilice, incluyendo {{site.data.keyword.Bluemix_notm}}. Debe especificar información personal, incluidos el nombre y apellido, el número de teléfono y la contraseña para las nuevas credenciales. Puede utilizar este IBMid para iniciar sesión al utilizar otros productos y servicios de IBM.  |
-|ID federado | Si la empresa ya ha solicitado registrar las credenciales de usuario desde el dominio de su empresa con IBM, puede registrarse en {{site.data.keyword.Bluemix_notm}} utilizando las credenciales que ya utilice para el inicio de sesión de su empresa. Debe especificar un número de teléfono al registrarse. |
+|IBMid existente   | Si ya tiene un IBMid, regístrese en {{site.data.keyword.Bluemix_notm}} con sus credenciales existentes que utilice para otros productos y servicios de IBM. Debe especificar un número de teléfono al registrarse. |
+|IBMid nuevo        | Si no aún no tiene un IBMid, puede optar por crear uno. Con IBMid puede utilizar un nombre de usuario de inicio de sesión para todos los productos y servicios de IBM que utilice, incluyendo {{site.data.keyword.Bluemix_notm}}. Debe especificar información personal, incluidos el nombre y apellido, el número de teléfono y la contraseña para las nuevas credenciales. Puede utilizar este IBMid para iniciar sesión al utilizar otros productos y servicios de IBM.  |
+|ID federado     | Si la empresa ya ha solicitado registrar las credenciales de usuario desde el dominio de su empresa con IBM, puede registrarse en {{site.data.keyword.Bluemix_notm}} utilizando las credenciales que ya utilice para el inicio de sesión de su empresa. Debe especificar un número de teléfono al registrarse. |
 {:caption="Tabla 1. Métodos de inicio de sesión" caption-side="top"}

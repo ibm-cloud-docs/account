@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2017, 2018
-lastupdated: "2018-11-28"
+  years: 2017, 2019
+lastupdated: "2019-01-28"
 
 ---
 
@@ -23,7 +23,7 @@ Como administrador de su cuenta de {{site.data.keyword.Bluemix}}, puede ocultar 
 Ocultar un recurso en el catálogo no lo eliminará de la interfaz de línea de mandatos (CLI) de Cloud Foundry o de la lista de suministro de servicios disponible en la navegación de la consola de {{site.data.keyword.Bluemix_notm}}, como Finanzas, Móvil, Watson y Apps web.
 {: note}
 
-Puede utilizar la [interfaz de línea de mandatos (CLI)](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) o consola de {{site.data.keyword.Bluemix}} para determinar si tiene acceso para permitir a los usuarios ver un recurso privado que se añadió a la cuenta. Si es propietario de la cuenta, puede dar acceso a un usuario a su cuenta desde la consola asignando una política de acceso. Para obtener más información, consulte [Gestión del acceso a su cuenta](access.html).
+Puede utilizar la [interfaz de línea de mandatos (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) o consola de {{site.data.keyword.Bluemix}} para determinar si tiene acceso para permitir a los usuarios ver un recurso privado que se añadió a la cuenta. Si es propietario de la cuenta, puede dar acceso a un usuario a su cuenta desde la consola asignando una política de acceso. Para obtener más información, consulte [Gestión del acceso a su cuenta](/docs/account?topic=account-find-access).
 
 ## Búsqueda de recursos
 {: #find-resource}
