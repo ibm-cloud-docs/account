@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018
-lastupdated: "2018-11-15"
+  years: 2019
+lastupdated: "2019-01-21"
 
 ---
 
@@ -40,7 +40,7 @@ lastupdated: "2018-11-15"
 <dt>资源组</dt>
 <dd>您可以使用资源组在可定制的分组中组织帐户资源，以便您可以一次性快速为用户分配对多个资源的访问权。使用 IAM 访问控制来管理的任何帐户资源都属于帐户中的资源组。用户不会添加到资源组，但会为用户提供对资源组内资源的访问权，或者用户可以管理资源组。授予了资源组管理访问权的用户可以在该组内创建新实例，管理其他用户使用该组的访问权，或者根据分配的 IAM 角色编辑组名。有关更多信息，请参阅[管理资源组](/docs/resources/resourcegroups.html#rgs)和[将资源组织成资源组的最佳实践](/docs/resources/bestpractice_rgs.html#bp_resourcegroups)。</dd>
 <dt>Cloud Foundry 组织</dt>
-<dd>作为帐户所有者或组织管理员，您可以在控制台的“Cloud Foundry 组织”页面中添加组织和空间。通过目录创建支持使用 Cloud Foundry 组织和空间的服务时，会将这些服务添加到组织和空间。组织包含用户、域和配额。在每个组织中，会添加空间，其中包含服务实例。有关更多信息，请参阅[添加组织和空间](/docs/account/orgs_spaces.html#orgsspacesusers)。</dd>
+<dd>作为帐户所有者或组织管理者，您可以在控制台的“Cloud Foundry 组织”页面中添加组织和空间。通过目录创建支持使用 Cloud Foundry 组织和空间的服务时，会将这些服务添加到组织和空间。组织包含用户、域和配额。在每个组织中，会添加空间，其中包含服务实例。有关更多信息，请参阅[添加组织和空间](/docs/account/orgs_spaces.html#orgsspacesusers)。</dd>
 <dt>Cloud Foundry 空间</dt>
 <dd>在组织内，您可以使用空间来对一组应用程序、服务和用户进行分组。空间与 {{site.data.keyword.Bluemix_notm}} 中的特定区域联系在一起。您可以基于交付生命周期在组织中创建多个空间。例如，可以创建 dev 空间（作为开发环境）、test 空间（作为测试环境）和 production 空间（作为生产环境）。然后，可以将应用程序与空间相关联。有关更多信息，请参阅[添加组织和空间](/docs/account/orgs_spaces.html#orgsspacesusers)。</dd>
 </dl>
