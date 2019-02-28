@@ -2,22 +2,21 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-12-02" 
+lastupdated: "2019-01-28" 
 
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:tip: .tip}
 {:important: .important}
-
+{:tip: .tip}
 
 # Habilitación de valores soportados UE e HIPAA
-{: #eu-hipaa-supoorted}
+{: #eu-hipaa-supported}
 
-Si es el propietario de la cuenta, puede habilitar la cuenta para que tenga soporte en UE e HIPAA. Puede optar por habilitar el valor Soporte en la UE, por ejemplo si utiliza recursos para procesar datos personales de ciudadanos europeos. Puede elegir habilitar el valor Soporte en HIPAA si tiene pensado incluir la información sanitaria protegida (PHI) en los servicios habilitados para HIPAA. 
+Si es el propietario de la cuenta, puede habilitar la cuenta para que tenga soporte en UE e HIPAA. Puede optar por habilitar el valor Soporte en la UE, por ejemplo si utiliza recursos para procesar datos personales de ciudadanos europeos. Puede elegir habilitar el valor Soporte en HIPAA si tiene pensado incluir la información sanitaria protegida (PHI) en los servicios habilitados para HIPAA.
 {:shortdesc}
 
 
@@ -33,23 +32,23 @@ Al habilitar este valor, se permite que los servicios con Soporte en la UE con c
   3. Lea la información sobre cómo habilitar este valor y seleccione **Comprendo y acepto estos términos**.
   4. Pulse **Activado**.
 
-   Después de habilitar el valor Soporte en la UE, puede utilizar la etiqueta Soporte en la UE para buscar en el catálogo las ofertas que tienen planes con soporte en la UE. 
+   Después de habilitar el valor Soporte en la UE, puede utilizar la etiqueta Soporte en la UE para buscar en el catálogo las ofertas que tienen planes con soporte en la UE.
    {: tip}
 
 
 ## Habilitación del valor Soporte en HIPAA
 {: #enabling-hipaa}
 
-Puede permitir el valor Soportado en HIPAA para que ejecute cargas de trabajo confidenciales reguladas por la norma HIPAA (Health Insurance Portability and Accountability Act) de EE.UU. Al habilitar este valor, indica que su cuenta procesa PHI que podrían estar sujetos a HIPAA. 
+Puede permitir el valor Soportado en HIPAA para que ejecute cargas de trabajo confidenciales reguladas por la norma HIPAA (Health Insurance Portability and Accountability Act) de EE.UU. Al habilitar este valor, indica que su cuenta procesa PHI que podrían estar sujetos a HIPAA.
 
 1. Vaya a **Gestionar > Cuenta** y seleccione **Valores de cuenta** en la consola.
-2. Para la opción Soportado en HIPAA, pulse en **Activado**. 
-3. Lea la información sobre la habilitación de este valor. 
+2. Para la opción Soportado en HIPAA, pulse en **Activado**.
+3. Lea la información sobre la habilitación de este valor.
 
   No podrá inhabilitar el valor después de haberlo habilitado.
   {: important}
-   
-4. Seleccione **Aceptar** y pulse **Enviar**. 
+
+4. Seleccione **Aceptar** y pulse **Enviar**.
 
   Después de habilitar el valor Soporte en HIPAA, puede utilizar la etiqueta Soporte en HIPAA para buscar en el catálogo las ofertas con soporte en HIPAA.
   {: tip}

@@ -25,18 +25,18 @@ lastupdated: "2019-02-13"
 
 La seguente tabella fornisce un confronto degli account Lite, Pagamento a consumo e Sottoscrizione. Per ulteriori dettagli su ciascun account, vedi le sezioni che seguono.
 
-|  | Lite  | Pagamento a consumo | Sottoscrizione |
-|--------------------|--------------------|--------------------|--------------------|
-| **Accesso alla memoria Cloud Foundry gratuita** | 256 MB | 512 MB | 512 MB |
+|                                         | Lite               | Pagamento a consumo      | Sottoscrizione       |
+|-----------------------------------------|--------------------|--------------------|--------------------|
+| **Accesso alla memoria Cloud Foundry gratuita** | 256 MB             | 512 MB             | 512 MB             |
 | **Accesso ai [piani di servizio Lite ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://{DomainName}/catalog/?search=label:lite){: new_window}** | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) |
-| **Accesso a tutti i piani gratuiti** |  | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) |
+| **Accesso a tutti i piani gratuiti**            |                    | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) |
 | **Accesso al catalogo {{site.data.keyword.Bluemix_notm}} completo** |  | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) |
-| **Accesso a più regioni Cloud Foundry** |  | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) |
+| **Accesso a più regioni Cloud Foundry** |               | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) |
 | **Nessun limite di tempo** | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) |
-| **Costo zero garantito** | ![Funzione disponibile](../icons/icon_enabled.svg) |  |  |
-| **Prezzo scontato** |  |  | ![Funzione disponibile](../icons/icon_enabled.svg) |
+| **Costo zero garantito**                | ![Funzione disponibile](../icons/icon_enabled.svg) |  |         |
+| **Prezzo scontato**                  |                    |                    | ![Funzione disponibile](../icons/icon_enabled.svg) |
 | **Ideale per l'apprendimento o la creazione di POC (Proof of Concept)** | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) |  |
-| **Adatto per i casi di utilizzo di produzione** |  | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) |
+| **Adatto per i casi di utilizzo di produzione**        |                    | ![Funzione disponibile](../icons/icon_enabled.svg) | ![Funzione disponibile](../icons/icon_enabled.svg) |
 {: caption="Tabella 1. Confronto degli account {{site.data.keyword.Bluemix_notm}}" caption-side="top"}
 
 
@@ -45,9 +45,9 @@ La seguente tabella fornisce un confronto degli account Lite, Pagamento a consum
 
 Registrati per un account Lite per iniziare a creare le tue applicazioni ed esplorare i servizi con esclusivi piani Lite gratuiti, che vengono visualizzati con una tag Lite ![Tag Lite](../icons/Lite.svg) nella console {{site.data.keyword.Bluemix_notm}}. Il tuo account Lite non scade e non è richiesta la tua carta di credito.
 
-Hai accesso a un singolo gruppo di risorse creato per te e denominato `Default`. Tutte le tue istanze del servizio gestite da {{site.data.keyword.Bluemix_notm}} IAM (Identity and Access Management) vengono aggiunte automaticamente a questo gruppo di risorse. Puoi aggiornare il nome di questo gruppo di risorse in qualsiasi momento. Per la procedura dettagliata, vedi [Ridenominazione di un gruppo di risorse](/docs/resources/resourcegroups.html#renaming-a-resource-group).
+Hai accesso a un singolo gruppo di risorse creato per te e denominato `Default`. Tutte le tue istanze del servizio gestite da {{site.data.keyword.Bluemix_notm}} IAM (Identity and Access Management) vengono aggiunte automaticamente a questo gruppo di risorse. Puoi aggiornare il nome di questo gruppo di risorse in qualsiasi momento. Per la procedura dettagliata, vedi [Ridenominazione di un gruppo di risorse](/docs/resources?topic=resources-rgs#rename_rgs).
 
-Ogni gruppo di risorse è gratuito. Quando crei una connessione tra un servizio gestito da IAM e un'applicazione Cloud Foundry, crei un alias, che è un'istanza del servizio, che viene conteggiato nella tua quota. Vedi [Gestione delle connessioni](/docs/resources/connecting_apps.html#connect_app).
+Ogni gruppo di risorse è gratuito. Quando crei una connessione tra un servizio gestito da IAM e un'applicazione Cloud Foundry, crei un alias, che è un'istanza del servizio, che viene conteggiato nella tua quota. Vedi [Gestione delle connessioni](/docs/resources?topic=resources-connect_app).
 {: tip}
 
 ### Disponibilità
@@ -68,7 +68,7 @@ Controlla il seguente elenco di funzioni chiave disponibili in un account Lite:
 ### Upgrade del tuo account Lite
 {: #upgrade-lite-account}
 
-Puoi eseguire l'upgrade a un account Pagamento a consumo o Sottoscrizione. Per ulteriori informazioni, vedi [Upgrade del tuo account](/docs/account/account_settings.html#upgrading-account).
+Puoi eseguire l'upgrade a un account Pagamento a consumo o Sottoscrizione. Per ulteriori informazioni, vedi [Come eseguo l'upgrade o la conversione del mio tipo di account?](/docs/account?topic=account-changeacct).
 
 Dopo aver eseguito l'upgrade a un account Pagamento a consumo ottieni un credito promozionale di $200 che viene automaticamente applicato al tuo account. Il tuo credito di $200 è valido per 30 giorni e viene applicato automaticamente alla tua fattura. Il credito non può essere utilizzato con le offerte di terze parti.
 
@@ -83,21 +83,22 @@ Inoltre, con un account Pagamento a consumo, puoi ordinare elementi facoltativi 
 ### Upgrade del tuo account Pagamento a consumo
 {: #upgrade-to-subscription}
 
-Per eseguire l'upgrade del tuo account Pagamento a consumo a un account Sottoscrizione, contatta il settore [Vendite di IBM](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno").
+Per eseguire l'upgrade del tuo account Pagamento a consumo a un account Sottoscrizione, contatta il settore [Vendite di {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno").
+
 
 ## Account Sottoscrizione
 {: #subscription-account}
 
 Con un account Sottoscrizione, puoi creare più gruppi di risorse per gestire facilmente la quota e visualizzare l'utilizzo della fatturazione per un insieme di risorse. Ti impegni a un importo di spesa minimo combinato ogni mese e ricevi uno sconto sulla sottoscrizione che viene applicato a tale addebito minimo. Ti viene addebitata la tariffa non scontata per l'utilizzo che supera la quantità totale della tua Sottoscrizione. Per visualizzare la tua sottoscrizione, vai a **Gestisci > Fatturazione e utilizzo** e seleziona **Sottoscrizioni**.
 
-Se hai un account Sottoscrizione, puoi creare la maggior parte dei servizi disponibili dal [catalogo IBM Cloud](https://cloud.ibm.com/catalog){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno"). Tuttavia, alcuni servizi utilizzano un piano dei prezzi specifico che ti richiede di effettuarne l'acquisto separatamente.
+Se hai un account Sottoscrizione, puoi creare la maggior parte dei servizi disponibili dal [catalogo {{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com/catalog/){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno"). Tuttavia, alcuni servizi utilizzano un piano dei prezzi specifico che ti richiede di effettuarne l'acquisto separatamente.
 
 ### Account {{site.data.keyword.Bluemix_dedicated_notm}}
 Con {{site.data.keyword.Bluemix_dedicated_notm}}, devi registrarti per un periodo minimo di un anno che include:
 
    * Connettività VPN alla tua infrastruttura
    * Ambiente totalmente ridondante in un data center {{site.data.keyword.BluSoftlayer_notm}}
-   * Tutti i runtime supportati (IBM Java Liberty, Node.js e runtime open source integrati)
+   * Tutti i runtime supportati ({{site.data.keyword.runtime_liberty_short}}, {{site.data.keyword.runtime_nodejs_short}} e runtime open source integrati)
    * Tutti i servizi dedicati da te selezionati e tutti i servizi {{site.data.keyword.Bluemix_notm}} pubblici
    * Supporto {{site.data.keyword.Bluemix_notm}} standard
 
