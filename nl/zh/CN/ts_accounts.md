@@ -109,7 +109,7 @@ lastupdated: "2018-10-24"
 如果您的 {{site.data.keyword.Bluemix_notm}} 帐户已取消或暂挂，那么其状态会变为不活动。
 {: tsCauses}
 
-要重新激活您的帐户，请在[支持中心](https://cloud.ibm.com/unifiedsupport/supportcenter){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标") 开具用例。请在用例中包含以下信息：
+要重新激活您的帐户，请在[支持中心](https://cloud.ibm.com/unifiedsupport/supportcenter){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标") 打开案例。请在案例中包含以下信息：
 {: tsResolve}
 
   * 您用于登录到 {{site.data.keyword.Bluemix_notm}} 的 IBM 标识。
@@ -128,30 +128,30 @@ lastupdated: "2018-10-24"
 只有以下 {{site.data.keyword.Bluemix_notm}} 用户才能邀请用户加入组织：
 {: tsCauses}
   * 组织的帐户所有者
-  * 组织管理者兼组织成员，而不是组织的合作者
+  * 组织管理者兼组织成员，而不是组织的合写入者
 
-在 {{site.data.keyword.Bluemix_notm}} 中，您可以是组织的成员，也可以是组织的合作者：
+在 {{site.data.keyword.Bluemix_notm}} 中，您可以是组织的成员，也可以是组织的合写入者：
 
-<dl><dt>合作者</dt>
-<dd>如果您已拥有 {{site.data.keyword.Bluemix_notm}} 帐户，并且有其他人邀请您加入组织，那么您会成为该组织的合作者。</dd>
+<dl><dt>合写入者</dt>
+<dd>如果您已拥有 {{site.data.keyword.Bluemix_notm}} 帐户，并且有其他人邀请您加入组织，那么您会成为该组织的合写入者。</dd>
 <dt>成员</dt>
 <dd>如果您没有 {{site.data.keyword.Bluemix_notm}} 帐户，但有人邀请您加入组织，然后您通过邀请注册了 {{site.data.keyword.Bluemix_notm}}，那么您会成为该组织的成员。</dd>
 </dl>
 
-如果您是组织的合作者，即使被指定为组织管理者，也不能邀请用户加入组织。
+如果您是组织的合写入者，即使被指定为组织管理者，也不能邀请用户加入组织。
 
-所有组织管理者（包括组织的合作者）都可以添加、修改和除去组织中的已有用户。
+所有组织管理者（包括组织的合写入者）都可以添加、修改和除去组织中的已有用户。
 {: note}
 
-如果无法邀请用户加入您的组织，并需要其他角色来完成此操作，请联系组织管理员来更改您的角色。要识别组织管理员，请完成以下步骤：
+如果无法邀请用户加入您的组织，并需要其他角色来完成此操作，请联系组织管理者来更改您的角色。要识别组织管理者，请完成以下步骤：
 {: tsResolve}
 
   1. 在控制台菜单栏中，单击**管理 > 帐户**，然后选择**公司联系人**。
-  2. 转至您的组织，并查看**用户**选项卡上的组织管理员信息。  
+  2. 转至您的组织，并查看**用户**选项卡上的组织管理者信息。  
 
-如果您由于是合作者（而非成员）而无法邀请用户，那么您必须删除您先前的 {{site.data.keyword.Bluemix_notm}} 帐户，然后受邀以组织成员身份加入该帐户。要删除您先前的帐户并以成员身份加入帐户，请完成以下步骤：
+如果您由于是合写入者（而非成员）而无法邀请用户，那么您必须删除您先前的 {{site.data.keyword.Bluemix_notm}} 帐户，然后受邀以组织成员身份加入该帐户。要删除您先前的帐户并以成员身份加入帐户，请完成以下步骤：
 
-  1. 联系 [{{site.data.keyword.Bluemix_notm}} 支持人员 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/unifiedsupport/supportcenter){: new_window}，以开具一个支持用例，请求删除您的帐户。如果存在与旧帐户相关联的数据并且想要将其保存并移动到新帐户，请在您的电子邮件中包含此信息。
+  1. 联系 [{{site.data.keyword.Bluemix_notm}} 支持人员 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/unifiedsupport/supportcenter){: new_window}，以打开一个支持案例，请求删除您的帐户。如果存在与旧帐户相关联的数据并且想要将其保存并移动到新帐户，请在您的电子邮件中包含此信息。
   2. 在您的帐户被删除后，让具有组织管理者角色的用户以组织管理者身份邀请您加入组织。然后，通过邀请注册 {{site.data.keyword.Bluemix_notm}}。
 
 
@@ -185,7 +185,7 @@ lastupdated: "2018-10-24"
 当您为空间内的不同应用程序分配相同 URL 路径时，可能会发生此问题。
 {: tsCauses}
 
-例如，将 myApp1 应用程序推送到 {{site.data.keyword.Bluemix_notm}}，并将域设置为 `mynewapp.stage1.mybluemix.net`。然后，将另一个应用程序 myApp2 推送到同一空间，并将该应用程序的其中一个 URL 路径设置为 `mynewapp.stage1.mybluemix.net`。现在，该路径映射到两个应用程序。
+例如，将 myApp1 应用程序推送到 {{site.data.keyword.Bluemix_notm}}，并将域设置为 `mynewapp.mybluemix.net`。然后，将另一个应用程序 myApp2 推送到同一空间，并将该应用程序的其中一个 URL 路径设置为 `mynewapp.mybluemix.net`。现在，该路径映射到两个应用程序。
 
 这是受支持行为，您可以使用这一做法来杜绝应用程序升级时的停机状况。有关更多信息，请参阅[如何确保零停机时间](/docs/overview/zero_downtime.html#zero-downtime)。
 {: tsResolve}

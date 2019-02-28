@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-11-18"
+lastupdated: "2018-12-04"
 
 ---
 
@@ -28,7 +28,7 @@ lastupdated: "2018-11-18"
 {: #account-error}
 {: faq}
 
-如果在尝试创建帐户时遇到错误，可以创建支持用例。在 {{site.data.keyword.Bluemix}} 控制台菜单栏中，单击**支持**。然后，在“需要更多帮助”部分中，单击**创建新用例**。开具用例后，您将收到电子邮件通知。请按照指示信息进行操作，以就该问题作进一步的沟通。
+如果在尝试创建帐户时遇到错误，可以创建支持案例。在 {{site.data.keyword.Bluemix}} 控制台菜单栏中，单击**支持**。然后，在“需要更多帮助”部分中，单击**创建新案例**。打开案例后，您将收到电子邮件通知。请按照指示信息进行操作，以就该问题作进一步的沟通。
 
 
 ## 什么是 Cloud Foundry？
@@ -49,7 +49,7 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 {: #whichregions}
 {: faq}
 
-在轻量帐户中，您仅可以在一个区域中工作。在现买现付或预订帐户中，您可以访问所有可用区域。
+在轻量帐户中，您仅可以在一个区域中工作。在现收现付或预订帐户中，您可以访问所有可用区域。
 
 ## 什么是服务的轻量价格套餐？
 {: #whatisliteplan}
@@ -74,9 +74,9 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 {: faq}
 
 * 要将 30 天试用帐户转换为轻量帐户，请联系 [{{site.data.keyword.Bluemix_notm}} 销售人员 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}。确认资格后，销售团队会共享唯一链接，您可使用该链接来尝试转换帐户。但不能保证转换一定会成功，因为轻量帐户不完全兼容 30 天试用帐户。  
-* 要从轻量帐户升级到现买现付帐户，请转至**管理 > 帐户**，然后选择**帐户设置**。
+* 要从轻量帐户升级到现收现付帐户，请转至**管理 > 帐户**，然后选择**帐户设置**。
 * 要从轻量帐户升级到预订帐户，请转至**管理 > 帐户**，然后选择**帐户设置**。
-* 要将现买现付帐户转换为预订帐户，请联系 [{{site.data.keyword.Bluemix_notm}} 销售人员 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}。
+* 要将现收现付帐户转换为预订帐户，请联系 [{{site.data.keyword.Bluemix_notm}} 销售人员 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}。
 
 ## 如果升级轻量帐户，可以继续使用现有实例吗？
 {: #nochange}
@@ -84,11 +84,11 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 
 可以，可以升级到计费帐户，并继续使用通过轻量帐户创建的实例。
 
-## 如何升级现买现付帐户？
-{: #nochange}
+## 如何升级现收现付帐户？
+{: #upgrade}
 {: faq}
 
-要将现买现付帐户升级到预订帐户，请联系 [IBM 销售人员](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")。
+要将现收现付帐户升级到预订帐户，请联系 [IBM 销售人员](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")。
 
 ## 如何更新信用卡？
 {: #updatepayment}
@@ -117,13 +117,13 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 
 ![帐户设置截屏。](images/cancel-faq3.svg "帐户设置截屏")
 
-如果转至**帐户设置**页面，但未显示**停用帐户**，您可以通过拨打 1-866-325-0045 并选择第三个选项与我们取得联系，或者可以开具[支持用例](https://{DomainName}/unifiedsupport/supportcenter){: new_window} ![外部链接图标](../icons/launch-glyph.svg)。
+如果转至**帐户设置**页面，但**停用帐户**按钮并未显示，您可以通过拨打 1-866-325-0045 并选择第三个选项，或者打开一个支持案例来与我们取得联系。
 
 ## 如何删除帐户？
 {: #deleteaccount}
 {: faq}
 
-联系 [{{site.data.keyword.Bluemix_notm}} 支持人员 ![外部链接图标](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window}，以开具一个支持用例，请求删除您的帐户。如果存在与旧帐户相关联的数据并且想要将其移动到新帐户，请在您的电子邮件中包含此信息。
+联系 [{{site.data.keyword.Bluemix_notm}} 支持人员 ![外部链接图标](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window}，以打开一个支持案例，请求删除您的帐户。如果存在与旧帐户相关联的数据并且想要将其移动到新帐户，请在您的电子邮件中包含此信息。
 
 ## 为什么我的帐户已停用？
 {: #account-deactivated}
@@ -179,7 +179,7 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 
 如果您链接帐户，那么可以使用 200 美元促销信用值来试用 {{site.data.keyword.Bluemix_notm}} 服务。 
 
-要了解有关 200 美元促销信用值的更多信息，请参阅[现买现付帐户](/docs/account/index.html#paygo)。 
+要了解有关 200 美元促销信用值的更多信息，请参阅[现收现付帐户](/docs/account/index.html#paygo)。 
 
 ## 向 SoftLayer 帐户添加 {{site.data.keyword.Bluemix_notm}} 平台服务意味着什么？ 
 {: #al_owaffslacct}
