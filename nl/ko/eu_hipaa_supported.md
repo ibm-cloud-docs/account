@@ -2,21 +2,22 @@
 
 copyright:
 
-  years: 2018, 2019
+  years: 2018
 
-lastupdated: "2019-01-28" 
+lastupdated: "2018-12-02" 
 
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:important: .important}
 {:tip: .tip}
+{:important: .important}
+
 
 # EU 및 HIPAA 지원 설정 사용
-{: #eu-hipaa-supported}
+{: #eu-hipaa-supoorted}
 
-계정 소유자는 EU 지원 및 HIPAA 지원이 되도록 계정을 설정할 수 있습니다. 예를 들어, 리소스를 사용하여 유럽 시민의 개인 데이터를 처리하는 경우 EU 지원 설정을 사용하도록 선택할 수 있습니다. 그리고 HIPAA 사용 서비스에 PHI(Protected Health Information)를 포함하려는 경우에는 HIPAA 지원 설정의 사용을 선택할 수 있습니다.
+계정 소유자는 EU 지원 및 HIPAA 지원이 되도록 계정을 설정할 수 있습니다. 예를 들어, 리소스를 사용하여 유럽 시민의 개인 데이터를 처리하는 경우 EU 지원 설정을 사용하도록 선택할 수 있습니다. 그리고 HIPAA 사용 서비스에 PHI(Protected Health Information)를 포함하려는 경우에는 HIPAA 지원 설정의 사용을 선택할 수 있습니다. 
 {:shortdesc}
 
 
@@ -39,16 +40,16 @@ EU 지원 설정을 사용하면 EU 지역의 {{site.data.keyword.Bluemix_notm}}
 ## HIPAA 지원 설정 사용
 {: #enabling-hipaa}
 
-연방의료보험통상책임법(HIPAA)으로 규제되는 민감한 워크로드를 실행할 수 있도록 HIPAA 지원 설정 사용을 선택할 수 있습니다. 이 설정을 사용하면 계정이 HIPAA에 종속될 수 있는 PHI를 처리함을 표시합니다.
+연방의료보험통상책임법(HIPAA)으로 규제되는 민감한 워크로드를 실행할 수 있도록 HIPAA 지원 설정 사용을 선택할 수 있습니다. 이 설정을 사용하면 계정이 HIPAA에 종속될 수 있는 PHI를 처리함을 표시합니다. 
 
 1. **관리 > 계정**으로 이동하여 콘솔에서 **계정 설정**을 선택하십시오.
-2. HIPAA 지원 옵션의 경우 **켜짐**을 클릭하십시오.
-3. 이 설정 사용에 대한 정보를 읽으십시오.
+2. HIPAA 지원 옵션의 경우 **켜짐**을 클릭하십시오. 
+3. 이 설정 사용에 대한 정보를 읽으십시오. 
 
   설정을 사용으로 설정한 후에는 사용 안함으로 설정할 수 없습니다.
   {: important}
-
-4. **승인**을 선택하고 **제출**을 클릭하십시오.
+   
+4. **승인**을 선택하고 **제출**을 클릭하십시오. 
 
   HIPAA 지원 설정을 사용으로 설정하고 나면 HIPAA 지원 태그를 사용하여 카탈로그에서 HIPAA가 사용되는 오퍼링을 검색할 수 있습니다.
   {: tip}
