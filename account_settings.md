@@ -4,6 +4,10 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-01-28"
 
+keywords: account settings, account owner, account name
+
+subcollection: account
+
 ---
 
 {:shortdesc: .shortdesc}

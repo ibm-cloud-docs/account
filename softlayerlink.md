@@ -1,10 +1,12 @@
 ---
 
 copyright:
-
   years: 2016, 2019
-
 lastupdated: "2019-01-28"
+
+keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, Bluemix account, Bluemix
+
+subcollection: account
 
 ---
 

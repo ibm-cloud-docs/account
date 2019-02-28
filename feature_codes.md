@@ -1,10 +1,12 @@
 ---
 
 copyright:
-
   years: 2018, 2019
+lastupdated: "2019-02-27"
 
-lastupdated: "2019-02-22"
+keywords: feature code, subscription code, subscription credit, support credit
+
+subcollection: account
 
 ---
 
@@ -19,7 +21,7 @@ lastupdated: "2019-02-22"
 # Applying feature codes
 {: #codes}
 
-Depending on your account type, you can use feature codes to add subscription and support credits, or to take advantage of {{site.data.keyword.Bluemix}} extra resources.
+Depending on your account type, you can use feature codes to add subscription and support credits, or to take advantage of extra {{site.data.keyword.Bluemix}} resources.
 {: shortdesc}
 
 

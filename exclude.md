@@ -5,6 +5,8 @@ copyright:
   years: 2017, 2019
 lastupdated: "2019-01-28"
 
+keywords: hide resource, limit viewer, exclude user, hide service
+
 subcollection: account
 
 ---

@@ -1,10 +1,12 @@
 ---
 
 copyright:
-
   years: 2015, 2018
 lastupdated: "2018-11-28"
 
+keywords: notifications, email notifications, IBM Cloud notifications, notification preferences
+
+subcollection: account
 
 ---
 
@@ -19,7 +21,7 @@ lastupdated: "2018-11-28"
 # Setting email preferences
 {: #email-prefs}
 
-Depending on your {{site.data.keyword.Bluemix}} account type, you can choose whether to receive email notifications about {{site.data.keyword.Bluemix}} platform unplanned events and planned events, or infrastructure email notifications about unplanned events, maintenance, and announcements. You can also choose to set notification subscriptions for classic infrastructure events. 
+Depending on your {{site.data.keyword.Bluemix}} account type, you can choose whether to receive email notifications about {{site.data.keyword.Bluemix}} platform unplanned events and planned events, or infrastructure email notifications about unplanned events, maintenance, and announcements. You can also choose to set notification subscriptions for classic infrastructure events.
 {: shortdesc}
 
 ## Setting platform notifications
@@ -62,17 +64,16 @@ Users in your account receive notifications for the following types of important
 
   * Unplanned infrastructure issues or outages: Issues that might cause an outage based on certain conditions for specific customers.
   * Planned service or scheduled maintenance: Maintenance that is required to keep the infrastructure operating at optimal status.
-  * Security vulnerabilities: The affected area is isolated. A patch is created to close the vulnerability, and tests are performed on the patch to ensure that no collateral function is affected. 
+  * Security vulnerabilities: The affected area is isolated. A patch is created to close the vulnerability, and tests are performed on the patch to ensure that no collateral function is affected.
   * Opened support cases: Alerts users of cases that are opened on their account.
 
 The timing of the notification varies depending on whether the event is unplanned, planned, or scheduled. The {{site.data.keyword.BluSoftlayer_notm}} infrastructure policy is to remedy problems as quickly as possible to remove or minimize the risk of further issues that might have a larger impact. Sometimes even planned maintenance is performed with only a short advanced notification.
 
-To set up subscription notifications for your users, complete the following steps: 
+To set up subscription notifications for your users, complete the following steps:
 
-  1. Go to **Manage > Account**, and select **Notifications**. 
-  2. Select a service from the table. 
-  3. In the Subscribed column, select **Yes** for the user who wants to receive notifications. 
+  1. Go to **Manage > Account**, and select **Notifications**.
+  2. Select a service from the table.
+  3. In the Subscribed column, select **Yes** for the user who wants to receive notifications.
 
-    To easily find the user you're looking for, click **Filter** and filter by given name, surname, or user name. 
+    To easily find the user you're looking for, click **Filter** and filter by given name, surname, or user name.
     {: tip}
-
