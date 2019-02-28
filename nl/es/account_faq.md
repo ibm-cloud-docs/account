@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2015, 2018
+  years: 2015, 2019
 
-lastupdated: "2018-12-04"
+lastupdated: "2019-02-06"
 
 ---
 
@@ -35,7 +35,7 @@ Puede crear un caso de soporte si obtiene un error al intentar crear su cuenta. 
 {: #cloud-foundry}
 {: faq}
 
-Cloud Foundry es una plataforma como servicio (PaaS) de código abierto disponible a través de {{site.data.keyword.Bluemix_notm}} Public para crear y desplegar aplicaciones en la nube. Las organizaciones y espacios de Cloud Foundry se utilizan para organizar los recursos y app disponibles en regiones específicas. 
+Cloud Foundry es una plataforma como servicio (PaaS) de código abierto disponible a través de {{site.data.keyword.Bluemix_notm}} Public para crear y desplegar aplicaciones en la nube. Las organizaciones y espacios de Cloud Foundry se utilizan para organizar los recursos y app disponibles en regiones específicas.
 
 Para obtener más información sobre la gestión de organizaciones y espacios, consulte [Adición de organizaciones y espacios](/docs/account/orgs_spaces.html#orgsspacesusers). Además, si está interesado en obtener más información sobre cómo proporcionar acceso a recursos en un espacio de Cloud Foundry, consulte [Acceso de Cloud Foundry](/docs/iam/cfaccess.html#cfaccess).
 
@@ -43,7 +43,7 @@ Para obtener más información sobre la gestión de organizaciones y espacios, c
 {: #move-org-diff-account}
 {: faq}
 
-Actualmente, no puede migrar una organización a otra cuenta distinta. 
+Actualmente, no puede migrar una organización a otra cuenta distinta.
 
 ## ¿Qué regiones de Cloud Foundry puedo utilizar?
 {: #whichregions}
@@ -69,14 +69,15 @@ Si se alcanza cualquier límite de cuota para instancias del plan Lite, se suspe
 
 Si tiene una cuenta facturable, no hay un límite en el número de grupos de recursos, organizaciones o espacios que pueda crear con su cuenta. Sin embargo, si tiene una cuenta Lite, estará limitado a una organización y a un grupo de recursos.
 
-## ¿Cómo puedo actualizar o cambiar mi tipo de cuenta?
+## ¿Cómo puedo actualizar o convertir mi tipo de cuenta?
 {: #changeacct}
 {: faq}
 
 * Para convertir la prueba de 30 días en una cuenta Lite, póngase en contacto con Ventas de [{{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}. Una vez confirmada la elegibilidad, el equipo de ventas comparte un enlace exclusivo que puede utilizar para intentar convertir la cuenta. La conversión satisfactoria no está garantizada, ya que las cuentas Lite no son completamente compatibles con las pruebas de 30 días.  
-* Para actualizar de una cuenta Pago según uso, vaya a **Gestionar > Cuenta** y seleccione **Valores de cuenta**.
-* Para actualizar de una cuenta Lite a una de Suscripción, vaya a **Gestionar > Cuenta** y seleccione **Valores de cuenta**.
-* Para convertir su cuenta de Pago según uso a una cuenta de Suscripción, póngase en contacto con [Ventas de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
+* Para actualizar de una cuenta Lite a una de pago según uso o a una de suscripción, vaya a [Valores de cuenta](https://{DomainName}/account/settings).
+  * Para actualizar a una cuenta de pago según uso, pulse **Añadir tarjeta de crédito**.
+  * Para actualizar a una cuenta de suscripción, pulse **Actualizar**.
+* Para convertir entre los tipos de una cuenta de Pago según uso y Suscripción, póngase en contacto con [Ventas de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
 ## Si actualizo mi cuenta Lite, ¿puedo seguir utilizando mis instancias existentes?
 {: #nochange}
@@ -94,30 +95,31 @@ Para actualizar su cuenta de Pago según uso a una cuenta de Suscripción, póng
 {: #updatepayment}
 {: faq}
 
-Actualizar el método de pago asociado a su cuenta facturable es un proceso sencillo. En la consola, vaya a **Gestionar > Pago y uso > Pagos > Método de pago**. 
+Para actualizar el método de pago asociado a su cuenta, vaya a [Pagos](https://{DomainName}/billing/payments) en la consola. Bajo Añadir método de pago, especifique la información de facturación correspondiente a la nueva tarjeta y pulse **Añadir tarjeta de crédito**.
 
-## ¿Cómo puedo restablecer mi contraseña? 
+Para cambiar a otro método de pago, seleccione **Pagar con otro método** y luego pulse **Enviar solicitud de cambio**. Se creará automáticamente un caso de soporte para cambiar su método de pago.
+
+
+## ¿Cómo puedo restablecer mi contraseña?
 {: #reset-password}
 {: faq}
 
-Para restablecer la contraseña de la cuenta, vaya al icono de Avatar ![icono Avatar](../icons/i-avatar-icon.svg) > **Perfil y valores** y seleccione **Valores de inicio de sesión**. A continuación, pulse en **Cambiar o restablecer** desde el mosaico de información de usuario de la cuenta. 
+Para restablecer la contraseña de su cuenta, vaya al icono de avatar ![Icono de avatar](../icons/i-avatar-icon.svg) **> Perfil y valores**. A continuación, pulse en **Cambiar o restablecer** desde el mosaico de información de usuario de la cuenta.
 
 Para restablecer la contraseña de VPN, siga estos pasos:
 
-  1. Vaya a **Gestionar > Acceso (IAM)** y seleccione **Usuarios**. 
-  2. Seleccione el usuario. 
-  3. En la sección de subredes de VPN, pulse el icono Editar ![icono Editar](../icons/icon_write.svg) para especificar una nueva contraseña de VPN. 
-  5. Pulse **Aplicar**. 
+  1. Vaya a **Gestionar > Acceso (IAM)** y seleccione **Usuarios**.
+  2. Seleccione el usuario.
+  3. En la sección de subredes de VPN, pulse el icono Editar ![icono Editar](../icons/icon_write.svg) para especificar una nueva contraseña de VPN.
+  5. Pulse **Aplicar**.
 
 ## ¿Cómo puedo cancelar mi cuenta?
 {: #cancelaccount}
 {: faq}
 
-Si tiene un tipo de cuenta apto, vaya a **Gestionar** > **Cuenta** > **Valores de cuenta** y pulse **Desactivar cuenta**. 
+Para las cuentas de pago según uso o de suscripción, la forma más rápida de cancelar su cuenta es ponerse en contacto con nosotros mediante el [chat en directo](https://{DomainName}/unifiedsupport/supportcenter) o llamando al teléfono 1-866-325-0045 y seleccionando la tercera opción. También puede abrir un caso de soporte.
 
-![Captura de pantalla de valores de cuenta](images/cancel-faq3.svg "Captura de pantalla de valores de cuenta")
-
-Si va a la página **Valores de cuenta** y no se muestra el botón **Desactivar cuenta**, puede llamar al teléfono 1-866-325-0045 y seleccionar la tercera opción o bien puede abrir un caso de soporte.
+Para cancelar una cuenta Lite, vaya a [Configuración de la cuenta](https://cloud.ibm.com/account/settings) y pulse **Desactivar cuenta**.
 
 ## ¿Cómo puedo suprimir mi cuenta?
 {: #deleteaccount}
@@ -129,9 +131,13 @@ Póngase en contacto con el [equipo de soporte de {{site.data.keyword.Bluemix_no
 {: #account-deactivated}
 {: faq}
 
-Es muy probable que su cuenta se haya desactivado porque un usuario autorizado la ha cancelado o que la cuenta esté suspendida.  
+Una cuenta se puede desactivar por los siguientes motivos:
 
-A discreción de IBM, las cuentas que no tengan un comportamiento de uso aceptable de los servicios de {{site.data.keyword.Bluemix_notm}} pueden ser inhabilitados sin previo aviso. Algunos servicios se pueden restaurar si los usuarios corrigen su comportamiento de uso después de que se les haya notificado sobre la acción ofensiva. 
+- En el caso de cuentas de prueba, ha finalizado el periodo de prueba. Para reactivar la cuenta, inicie una sesión en la cuenta y actualícela a una cuenta de pago según uso.
+- Un usuario autorizado ha cancelado la cuenta.
+- La cuenta se ha suspendido. A discreción de IBM, las cuentas que no tengan un comportamiento de uso aceptable de los servicios de {{site.data.keyword.Bluemix_notm}} pueden ser inhabilitados sin previo aviso. Algunos servicios se pueden restaurar si los usuarios corrigen su comportamiento de uso después de que se les haya notificado sobre la acción ofensiva.
+
+Si cree que su cuenta se ha desactivado por error, póngase en contacto con el equipo de soporte en el teléfono 1-866-325-0045 y seleccione la tercera opción.
 
 ## ¿Cómo obtengo soporte?
 {: #contactsupport}
@@ -157,7 +163,7 @@ Después de enlazar su cuenta, utilice su IBMid para iniciar una sesión en la c
 
 Después de enlazar su cuenta, mantendrá el mismo nivel de soporte que el que tenía al añadir la plataforma {{site.data.keyword.Bluemix_notm}} a su cuenta.
 
-## ¿Hay otras formas de obtener ayuda con relación al enlace de cuentas? 
+## ¿Hay otras formas de obtener ayuda con relación al enlace de cuentas?
 {: #al_morehelp}
 {: faq}
 
@@ -173,15 +179,15 @@ Si tiene varias cuentas de SoftLayer, primero debe enlazar las cuentas que tenga
 
 Si no tiene una cuenta de la plataforma {{site.data.keyword.Bluemix_notm}} coincidente, y la correspondiente cuenta IBMid, se puede crear una nueva cuenta de SoftLayer para enlazar las cuentas.
 
-## ¿Hay incentivos para enlazar mis cuentas? 
+## ¿Hay incentivos para enlazar mis cuentas?
 {: #al_incent}
 {: faq}
 
-Cuando enlace las cuentas, puede utilizar un crédito promocional de 200 dólares para probar los servicios de {{site.data.keyword.Bluemix_notm}}. 
+Cuando enlace las cuentas, puede utilizar un crédito promocional de 200 dólares para probar los servicios de {{site.data.keyword.Bluemix_notm}}.
 
-Para obtener más información sobre el crédito promocional de 200 $, consulte [Cuenta de Pago según uso](/docs/account/index.html#paygo). 
+Para obtener más información sobre el crédito promocional de 200 $, consulte [Cuenta de Pago según uso](/docs/account/index.html#paygo).
 
-## ¿Qué significa añadir los servicios de la plataforma {{site.data.keyword.Bluemix_notm}} a mi cuenta de SoftLayer? 
+## ¿Qué significa añadir los servicios de la plataforma {{site.data.keyword.Bluemix_notm}} a mi cuenta de SoftLayer?
 {: #al_owaffslacct}
 {: faq}
 
@@ -189,7 +195,7 @@ Esto significa que la cuenta tendrá acceso a todas las ofertas de la plataforma
 
 Para obtener más información sobre el papel del maestro de cuentas, consulte [Trabajar con usuarios](/docs/iam/iamusermanage.html#iamusermanage) para obtener más información.
 
-## El enlace de las cuentas, ¿cómo afecta al ID de cuenta maestra de SoftLayer? 
+## El enlace de las cuentas, ¿cómo afecta al ID de cuenta maestra de SoftLayer?
 {: #al_howaffslmastacct}
 {: faq}
 
@@ -203,7 +209,7 @@ Si tiene más de una cuenta, puede pulsar en el nombre de la cuenta para selecci
 
 ![Captura de pantalla del conmutador de cuentas](images/account-faq.svg "Captura de pantalla del conmutador de cuentas")
 
-## ¿Puedo conmutar entre propietarios de cuentas? 
+## ¿Puedo conmutar entre propietarios de cuentas?
 {: #switch-account-owners}
 {: faq}
 
@@ -214,9 +220,9 @@ No puede conmutar el propietario de una cuenta, pero puedo cambiar propietarios 
 {:faq}
 
 Cuando registre usuarios para {{site.data.keyword.Bluemix_notm}},
-debe registrar cada usuario por separado. {{site.data.keyword.Bluemix_notm}} no da soporte al registro por lotes de usuarios. 
+debe registrar cada usuario por separado. {{site.data.keyword.Bluemix_notm}} no da soporte al registro por lotes de usuarios.
 
-Vaya a [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com) y pulse en **Crear una cuenta de {{site.data.keyword.Bluemix_notm}}**. A continuación, complete el formulario de registro de la cuenta para cada usuario individual.	
+Vaya a [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com) y pulse en **Crear una cuenta de {{site.data.keyword.Bluemix_notm}}**. A continuación, complete el formulario de registro de la cuenta para cada usuario individual.
 
 ## ¿Qué son las etiquetas?
 {: #know-about-tags}
@@ -224,11 +230,11 @@ Vaya a [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com) y pulse en **Crear
 
 Puede utilizar etiquetas para organizar y visualizar recursos en la cuenta filtrando las etiquetas de la lista de recursos. Para obtener más información, consulte [Cómo etiquetar recursos](/docs/resources/tagging_resources.html#tagging).
 
-## ¿Quién puede ver las etiquetas en una cuenta? 
+## ¿Quién puede ver las etiquetas en una cuenta?
 {: #tags-visibility-account}
 {: faq}
 
-Las etiquetas son visibles en toda la cuenta. Si tiene permiso para ver un recurso, podrá ver todas las etiquetas adjuntas. Para obtener más información, consulte [Cómo otorgar a los usuarios acceso a recursos de etiqueta](/docs/resources/grant-tag-access.html#access). 
+Las etiquetas son visibles en toda la cuenta. Si tiene permiso para ver un recurso, podrá ver todas las etiquetas adjuntas. Para obtener más información, consulte [Cómo otorgar a los usuarios acceso a recursos de etiqueta](/docs/resources/grant-tag-access.html#access).
 
 ## ¿Qué permisos necesito para añadir o eliminar etiquetas?
 {: #permissions-add-remove-tags}
