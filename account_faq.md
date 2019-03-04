@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-26"
+lastupdated: "2019-03-04"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -30,12 +30,14 @@ Go to [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![Ext
 {: #account-error}
 {: faq}
 
-You can create a support case if you get an error when you try to create your account.
+If you are able to log in to an {{site.data.keyword.Bluemix_notm}} account, go to [Support](https://test.cloud.ibm.com/unifiedsupport/supportcenter) and choose one of the following options.
 
-1. Click **Support** from the {{site.data.keyword.Bluemix}} console menu bar.
-2. Click **Create a case** from the _Need more help_ section.
-3. Answer the questions regarding the case.
-4. An email notification is sent after the case is opened. Follow the instructions for further communication.
+* If you have advanced or premium support, click **Live chat** to talk to an {{site.data.keyword.Bluemix_notm}} support representative.
+* Create a support case by clicking **Create a case** from the _Need more help_ section.
+
+   After you open the case, an email notification is sent to you. Follow the instructions for further communication.
+
+If you can't log into an {{site.data.keyword.Bluemix}} account, [create an account request](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
 
 
 ## What is Cloud Foundry?
@@ -86,12 +88,10 @@ If you have a billable account, there's no limit to the number of resource group
 {: #changeacct}
 {: faq}
 
-* To convert your 30-day trial to a Lite account, contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}. After confirming eligibility, the Sales team shares a unique link that you can use to try to convert your account. Successful conversion isn't guaranteed as Lite accounts aren't entirely compatible with 30-day trials.  
 * To upgrade from a Lite to a Pay-As-You-Go account or a Subscription account, go to [Account settings](https://{DomainName}/account/settings).
   * To upgrade to a Pay-As-You-Go account, click **Add credit card**.
   * To upgrade to a Subscription account, click **Upgrade**.
 * To convert between Pay-As-You-Go and Subscription account types, contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
-
 
 ## If I upgrade my Lite account, can I continue to use my existing instances?
 {: #nochange}
@@ -128,14 +128,16 @@ To reset your VPN password, complete the following steps:
   3. From the VPN subnets section, click the Edit icon ![Edit icon](../icons/icon_write.svg) to enter a new VPN password.
   5. Click **Apply**.
 
-
 ## How do I cancel my account?
 {: #cancelaccount}
 {: faq}
 
-For Pay-As-You-Go or Subscription accounts, the quickest way to cancel your account is to contact us through [live chat](https://{DomainName}/unifiedsupport/supportcenter) or by calling 1-866-325-0045 and selecting the third option. Alternatively, you can open a support case.
+We're sad to see you go! If there's any way we can assist you with your account before you go, reach out to us by contacting support.
 
-To cancel a Lite account, go to [Account settings](https://cloud.ibm.com/account/settings) and click **Deactivate account**.
+If you do decide to leave, how you cancel your account depends on your account type. You can check your account type by going to [Account settings](https://cloud.ibm.com/account/settings) and looking under Account Type.
+
+* For Pay-As-You-Go or Subscription accounts, the quickest way to cancel your account is to contact us through [live chat](https://{DomainName}/unifiedsupport/supportcenter) or by calling 1-866-325-0045 and selecting the third option. Alternatively, you can open a support case.
+* To cancel a Lite account, go to [Account settings](https://cloud.ibm.com/account/settings) and click **Deactivate account**.
 
 ## How do I delete my account?
 {: #deleteaccount}
