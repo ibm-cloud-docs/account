@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2018
-lastupdated: "2018-11-19"
+  years: 2015, 2019
+lastupdated: "2019-02-13"
 
 ---
 
@@ -62,8 +62,8 @@ lastupdated: "2018-11-19"
    * 您會收到帳戶狀態及配額限制的電子郵件通知。
    * Cloud Foundry 應用程式可以同時存取最多 256 MB 的免費運行環境記憶體。
    * 您可以佈建 [{{site.data.keyword.Bluemix_notm}} 型錄 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com/catalog/?search=label:lite%20lite){: new_window} 中有「精簡」方案之任何服務的一個實例。
-   * 在 10 天沒有開發活動之後，您的應用程式就會進入休眠。您可以開始處理新的應用程式，而不需要擔心超出記憶體配額限制。
-   * 在 30 天沒有開發活動之後，就會刪除具有精簡方案的服務實例。如此一來，在建立新的實例之前，您不需要管理刪除非作用中實例。
+   * 在 10 天沒有開發活動之後，您的應用程式就會進入休眠。繼續使用應用程式，即可啟動應用程式。
+   * 在 30 天沒有開發活動之後，就會刪除具有精簡方案的服務實例。
 
 ### 升級精簡帳戶
 {: #upgrade-lite-account}
@@ -75,7 +75,7 @@ lastupdated: "2018-11-19"
 ## 隨收隨付制帳戶
 {: #paygo}
 
-使用「隨收隨付制」帳戶，您可以建立多個資源群組來輕鬆管理配額，以及檢視一組資源的計費使用情形。您的費用是根據 {{site.data.keyword.Bluemix_notm}} 運算及服務的用量。您有資格使用免費運行環境及服務額度。如果您的用量超過免費額度，則會收到 {{site.data.keyword.Bluemix_notm}} 的月份發票。發票的計價單位為美元 (USD)，並且會提供資源費用的詳細資料。
+使用「隨收隨付制」帳戶，您可以建立多個資源群組來輕鬆管理配額，以及檢視一組資源的計費用量。您的費用是根據 {{site.data.keyword.Bluemix_notm}} 運算及服務的用量。您有資格使用免費運行環境及服務額度。如果您的用量超過免費額度，則會收到 {{site.data.keyword.Bluemix_notm}} 的月份發票。發票的計價單位為美元 (USD)，並且會提供資源費用的詳細資料。
 
 此外，您可以使用「隨收隨付制」帳戶來訂購選購項目，例如進階或超值支援選項。如需相關資訊，請與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡。
 
@@ -88,9 +88,9 @@ lastupdated: "2018-11-19"
 ## 訂閱帳戶
 {: #subscription-account}
 
-使用「訂閱」帳戶，您可以建立多個資源群組來輕鬆管理配額，以及檢視一組資源的計費使用情形。您承諾每個月的最低消費金額，並獲得套用至該最低收費的訂閱折扣。對於超出訂閱總金額的任何用量，我們會向您收取未經折扣的費率。若要檢視您的訂閱，請移至**管理 > 計費及用量**，然後選取**訂閱**。 
+使用「訂閱」帳戶，您可以建立多個資源群組來輕鬆管理配額，以及檢視一組資源的計費用量。您承諾每個月的最低消費金額，並獲得套用至該最低收費的訂閱折扣。對於超出訂閱總金額的任何用量，我們會向您收取未經折扣的費率。若要檢視您的訂閱，請移至**管理 > 計費及用量**，然後選取**訂閱**。
 
-如果您具有訂閱帳戶，則可以從 [IBM Cloud 型錄](https://cloud.ibm.com/catalog/){: new_window}![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示") 建立大部分可用的服務。不過，部分服務會使用需要您個別購買的特定定價方案。
+如果您具有訂閱帳戶，則可以從 [IBM Cloud 型錄](https://cloud.ibm.com/catalog){: new_window}![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示") 建立大部分可用的服務。不過，部分服務會使用需要您個別購買的特定定價方案。
 
 ### {{site.data.keyword.Bluemix_dedicated_notm}} 帳戶
 使用 {{site.data.keyword.Bluemix_dedicated_notm}}，您必須註冊至少一年期限，包括：

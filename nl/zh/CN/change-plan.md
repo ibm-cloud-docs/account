@@ -4,8 +4,8 @@
 
 copyright:
 
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-02-13"
 
 ---
 
@@ -16,10 +16,10 @@ lastupdated: "2018-11-19"
 {:new_window: target="_blank"}
 
 
-# 更改套餐
+# 更改服务套餐
 {: #changing}
 
-您可以更改 {{site.data.keyword.Bluemix}} 服务套餐，前提是特定服务支持套餐更改。例如，您可能希望更改套餐的情况包括要升级或降级套餐。您可以在服务实例仪表板中更改套餐。
+您可以更改 {{site.data.keyword.Bluemix}} 服务的套餐，前提是特定服务支持套餐更改。例如，您可能希望更改套餐的情况包括要升级或降级套餐。您可以在服务实例仪表板中更改套餐。
 {: shortdesc}
 
 您在查找有关升级帐户类型的详细信息吗？如果要查找有关升级帐户类型的详细信息，请参阅[如何升级或更改帐户类型？](/docs/account/account_faq.html#changeacct)。
@@ -30,21 +30,45 @@ lastupdated: "2018-11-19"
 1. 在服务实例仪表板中，单击**套餐**。通常，可以升级套餐或降级套餐。
 2. 更改套餐后，必须完成额外的步骤。步骤根据套餐更改和服务的类型而有所不同。例如，如果降级了套餐，那么可能需要重新编译打包应用程序。或者，如果升级了套餐，那么可能需要重新编译打包应用程序并执行其他操作。
 
-要重新编译打包应用程序，请转至资源列表，以找到与服务绑定的应用程序。单击“菜单”图标 ![“菜单”图标](../icons/icon_hamburger.svg) > **资源列表**。在应用程序菜单中，选择**重新启动应用程序**。
+   要重新编译打包应用程序，请转至资源列表，以找到与服务绑定的应用程序。单击“菜单”图标 ![“菜单”图标](../icons/icon_hamburger.svg) > **资源列表**。在应用程序菜单中，选择**重新启动应用程序**。
 
-其他后续步骤操作取决于服务。请参阅下表以了解具体的操作。
+  有关任何进一步必需操作的更多信息，请参阅服务的文档。
 
-|服务|	信息|
-|--------|-------------|
-|Presence Insights|如果您拥有轻量套餐，但已超过免费限额，那么会显示或记录 403 消息，指示您不再有权使用，且您的服务实例已禁用。此外，还会拒绝 POST REST API 调用，并返回 403 响应。<br/><br/>如果由于超过免费限额而禁用了服务，那么可以从轻量套餐升级到付费套餐。服务将在 2 小时内重新启用。<br/><br/>如果您拥有付费套餐，那么可以将套餐降级到轻量套餐，只要您的使用量未超出事件和总存储量的轻量套餐限额即可。<br/><br/>升级或降级套餐后，都无需重新编译打包或重新启动应用程序。|
-{:caption="表 1. 更改套餐的后续步骤" caption-side="top"}
-
-
-## 通过命令行界面更改套餐
+## 通过 CLI 更改套餐
 {: #changing_command_line}
 
-（可选）您可以在命令行界面输入以下命令来更改服务套餐：
+作为控制台的替代方法，您可以使用 {{site.data.keyword.Bluemix_notm}} 命令行界面 (CLI) 来更改服务套餐。
 
-```
-cf update-service <service_name> [-p <new_plan>]
-```
+1. 检查服务是否支持资源控制器。
+
+   ```
+   ibmcloud catalog service <service_name>
+   ```
+   {:codeblock}
+
+   如果服务支持资源控制器 (RC)，那么会列出 `RC Compatible true`。请记下要更改为的套餐的标识。
+
+   ```
+   RC Compatible      true
+   RC Provisionable   true
+   IAM Compatible     true
+   Children   Name                      Kind         ID
+              lite                      plan         4bcd3fgh-3cf2-47c0-93d4-d2f2289eac28
+              standard                  plan         264d0450-996d-4bcd-894d-fc7018dacf1e
+    ```
+
+1. 更改服务实例的套餐。
+
+   - 如果服务支持 RC，请使用 [`ibmcloud resource service-instance-update` 命令](/docs/cli/reference/ibmcloud/cli_resource_group.html#ibmcloud_commands_resource)来更改套餐。
+
+     ```
+     ibmcloud resource service-instance-update <service_instance_name> --service-plan-id <plan_id>
+     ```
+     {: codeblock}
+
+   - 如果服务不支持 RC，因而是基于 Cloud Foundry 的服务，请使用 [`ibmcloud cf update-service` 命令](/docs/cli/reference/ibmcloud/cf_index.html#cf)来更改套餐。
+
+     ```
+     ibmcloud cf update-service <service_instance_name> [-p <plan_name>]
+     ```
+     {:codeblock}

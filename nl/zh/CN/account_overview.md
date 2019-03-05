@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019
-lastupdated: "2019-01-21"
+lastupdated: "2019-02-12"
 
 ---
 
@@ -20,7 +20,7 @@ lastupdated: "2019-01-21"
 {{site.data.keyword.Bluemix}} 帐户包含许多交互组件和系统。了解特定组件的连接方式以及访问权在您帐户中的生效方式。
 {:shortdesc}
 
-<a href="https://console.bluemix.net/docs/api/content/account/images/account_diagram.svg">
+<a href="https://cloud.ibm.com/docs/api/content/account/images/account_diagram.svg">
   <img src="images/account_diagram.svg" alt="帐户图">
 </a>
 

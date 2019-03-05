@@ -21,19 +21,14 @@ lastupdated: "2019-02-06"
 {: #create-account}
 {: faq}
 
-Rufen Sie [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link") auf und klicken Sie auf **{{site.data.keyword.Bluemix_notm}}-Konto erstellen**, um ein Lite-Konto zu erstellen, das nicht abläuft. Weitere Details zu den enthaltenen Features finden Sie in [Lite-Konto](/docs/account?topic=account-liteaccount#liteaccount).
+Rufen Sie [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link") auf und klicken Sie auf **{{site.data.keyword.Bluemix_notm}}-Konto erstellen**, um ein Lite-Konto zu erstellen, das nicht abläuft. Weitere Details zu den enthaltenen Features finden Sie in [Lite-Konto](/docs/account/index.html#liteaccount).
 
 
 ## Wie kann ich Fehler beheben, die bei der Erstellung meines Kontos auftreten?
 {: #account-error}
 {: faq}
 
-Wenn beim Erstellen Ihres Kontos ein Fehler auftritt, können Sie einen Supportfall erstellen.
-
-1. Klicken Sie in der Menüleiste der {{site.data.keyword.Bluemix}}-Konsole auf **Support**.
-2. Klicken Sie im Abschnitt _Sie benötigen weitere Hilfe?_ auf **Fall erstellen**.
-3. Beantworten Sie die Fragen zu dem Fall.
-4. Nachdem der Fall geöffnet worden ist, wird eine E-Mail-Benachrichtigung gesendet. Folgen Sie zur weiteren Kommunikation den entsprechenden Anweisungen.
+Wenn beim Erstellen Ihres Kontos ein Fehler auftritt, können Sie einen Supportfall erstellen. Klicken Sie in der Menüleiste der {{site.data.keyword.Bluemix}}-Konsole auf **Support**. Klicken Sie anschließend auf **Neuen Fall erstellen** im Abschnitt 'Sie benötigen weitere Hilfe?'. Nach dem Öffnen des Falls erhalten Sie eine E-Mail-Benachrichtigung. Befolgen Sie die Anweisungen für die weitere Kommunikation zu diesem Thema.
 
 
 ## Was ist Cloud Foundry?
@@ -42,8 +37,7 @@ Wenn beim Erstellen Ihres Kontos ein Fehler auftritt, können Sie einen Supportf
 
 Cloud Foundry ist eine über {{site.data.keyword.Bluemix_notm}} Public verfügbare quelloffene PaaS-Option (PaaS - Platform as a Service), mit der Anwendungen in der Cloud erstellt und bereitgestellt werden können. Cloud Foundry-Organisationen und -Bereiche werden verwendet, um Ressourcen und Apps in bestimmten Regionen zu organisieren.
 
-Weitere Informationen zum Verwalten von Organisationen und Bereichen finden Sie unter [Organisationen und Bereiche hinzufügen](/docs/account?topic=account-orgsspacesusers#orgsspacesusers). Wenn Sie Zugriff auf Ressourcen in einem Cloud Foundry-Bereich erteilen wollen, finden Sie weitere Informationen unter [Cloud Foundry-Zugriff](/docs/iam?topic=iam-cfaccess#cfaccess).
-
+Weitere Informationen zum Verwalten von Organisationen und Bereichen finden Sie unter [Organisationen und Bereiche hinzufügen](/docs/account/orgs_spaces.html#orgsspacesusers). Wenn Sie Zugriff auf Ressourcen in einem Cloud Foundry-Bereich erteilen wollen, finden Sie weitere Informationen unter [Cloud Foundry-Zugriff](/docs/iam/cfaccess.html#cfaccess).
 
 ## Kann ich eine Organisation in ein anderes Konto versetzen?
 {: #move-org-diff-account}
@@ -51,20 +45,17 @@ Weitere Informationen zum Verwalten von Organisationen und Bereichen finden Sie 
 
 Es ist derzeit nicht möglich, eine Organisation in ein anderes Konto zu migrieren.
 
-
 ## Welche Cloud Foundry-Regionen kann ich verwenden?
 {: #whichregions}
 {: faq}
 
 Bei einem Lite-Konto können Sie nur in einer Region arbeiten. In einem nutzungsabhängigen Konto oder Abonnementkonto können Sie auf alle verfügbaren Regionen zugreifen.
 
-
 ## Was ist ein Lite-Preisstrukturplan für Services?
 {: #whatisliteplan}
 {: faq}
 
-Ein Lite-Plan ist ein Serviceplan mit kostenfreiem Kontingent. Sie können einen Lite-Planservice verwenden, um eine App ohne Gebühren zu erstellen. Ein Lite-Plan kann in monatlichen Zyklen, die jeden Monat erneuert werden, oder für eine einmalige Gebühr angeboten werden. Pro Lite-Planservice können Sie über eine Instanz verfügen. Lite-Preisstrukturpläne werden in allen Konten angeboten. Weitere Informationen zu Lite-Konten finden Sie in [Kontotypen](/docs/account?topic=account-accounts#accounts).
-
+Ein Lite-Plan ist ein Serviceplan mit kostenfreiem Kontingent. Sie können einen Lite-Planservice verwenden, um eine App ohne Gebühren zu erstellen. Ein Lite-Plan kann in monatlichen Zyklen, die jeden Monat erneuert werden, oder für eine einmalige Gebühr angeboten werden. Pro Lite-Planservice können Sie über eine Instanz verfügen. Lite-Preisstrukturpläne werden in allen Konten angeboten. Weitere Informationen zu Lite-Konten finden Sie in [Kontotypen](/docs/account/index.html#accounts).
 
 ## Was passiert, wenn meine Lite-Planinstanz das monatliche Kontingent erreicht?
 {: #monthlyquota}
@@ -72,13 +63,11 @@ Ein Lite-Plan ist ein Serviceplan mit kostenfreiem Kontingent. Sie können einen
 
 Wenn ein Grenzwert für das Kontingent für die Lite-Planinstanzen erreicht wird, wird der Service für diesen Monat ausgesetzt. Grenzwerte für Kontingente gelten für die gesamte Organisation, nicht nur für die Instanz. Neue Instanzen, die in derselben Organisation erstellt werden, spiegeln die Nutzung bereits vorhandener Instanzen wider. Die Grenzwerte für Kontingente werden am ersten Tag jedes Monats zurückgesetzt.
 
-
 ## Wie viele Ressourcengruppen, Organisationen oder Bereiche kann ich erstellen?
 {: #resourcelimit}
 {: faq}
 
 Wenn Sie über ein gebührenpflichtiges Konto verfügen, gibt es keinen Grenzwert für die Anzahl von Ressourcengruppen, Organisationen oder Bereichen, die Sie in Ihrem Konto erstellen können. Bei einem Lite-Konto sind Sie jedoch auf eine Organisation und eine Ressourcengruppe beschränkt.
-
 
 ## Wie kann ich ein Upgrade meines Kontotyps durchführen oder den Kontotyp umwandeln?
 {: #changeacct}
@@ -90,28 +79,26 @@ Wenn Sie über ein gebührenpflichtiges Konto verfügen, gibt es keinen Grenzwer
   * Für ein Upgrade auf ein Abonnementkonto klicken Sie auf **Upgrade**.
 * Zum Konvertieren zwischen einem nutzungsabhängigen und einem Abonnementkonto wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}} Vertrieb ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
-
 ## Kann ich meine vorhandenen Instanzen weiterhin verwenden, wenn ich ein Upgrade für mein Lite-Konto durchführe?
 {: #nochange}
 {: faq}
 
 Ja, Sie können ein Upgrade auf ein gebührenpflichtiges Konto durchführen und die Instanzen, die Sie mit Ihrem Lite-Konto erstellt haben, weiter verwenden.
 
-
 ## Wie führe ich ein Upgrade für mein nutzungsabhängiges Konto durch?
 {: #upgrade}
 {: faq}
 
-Wenn Sie für ein nutzungsabhängiges Konto ein Upgrade auf ein Abonnementkonto durchführen möchten, wenden Sie sich an den [IBM Cloud-Vertrieb ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link").
-
+Wenn Sie für ein nutzungsabhängiges Konto ein Upgrade auf ein Abonnementkonto durchführen möchten, wenden Sie sich an den [IBM Vertrieb](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link").
 
 ## Wie aktualisiere ich meine Kreditkartendaten?
 {: #updatepayment}
 {: faq}
 
-Sie können die Zahlungsmethode, die Ihrem Konto zugeordnet ist, aktualisieren, indem Sie in der Konsole [Zahlungen](https://cloud.ibm.com/billing/payments) aufrufen. Geben Sie unter 'Zahlungsmethode hinzufügen' die Rechnungsinformationen für Ihre neue Karte ein und klicken Sie auf **Kreditkarte hinzufügen**.
+Sie können die Zahlungsmethode, die Ihrem Konto zugeordnet ist, aktualisieren, indem Sie in der Konsole [Zahlungen](https://{DomainName}/billing/payments) aufrufen. Geben Sie unter 'Zahlungsmethode hinzufügen' die Rechnungsinformationen für Ihre neue Karte ein und klicken Sie auf **Kreditkarte hinzufügen**.
 
 Wenn Sie zu einer anderen Zahlungsmethode wechseln möchten, wählen Sie die Option für eine **Andere Zahlungsmethode** aus und klicken Sie auf **Änderungsanforderung senden**. Ein Supportfall zum Ändern Ihrer Zahlungsmethode wird für Sie erstellt.
+
 
 ## Wie kann ich mein Kennwort zurücksetzen?
 {: #reset-password}
@@ -121,11 +108,10 @@ Zum Zurücksetzen Ihres Kontokennworts rufen Sie das Avatarsymbol ![Avatarsymbol
 
 Führen Sie die folgenden Schritte aus, um Ihr VPN-Kennwort zurückzusetzen:
 
-  1. Rufen Sie **Verwalten > Zugriff (IAM)** auf und wählen Sie **Benutzer** aus. 
+  1. Rufen Sie **Verwalten > Zugriff (IAM)** auf und wählen Sie **Benutzer** aus.
   2. Wählen Sie den Benutzer aus.
-  3. Klicken Sie im Abschnitt zu den VPN-Teilnetzen auf das Bearbeitungssymbol ![Bearbeitungssymbol](../icons/icon_write.svg), um ein neues VPN-Kennwort einzugeben. 
+  3. Klicken Sie im Abschnitt zu den VPN-Teilnetzen auf das Bearbeitungssymbol ![Bearbeitungssymbol](../icons/icon_write.svg), um ein neues VPN-Kennwort einzugeben.
   5. Klicken Sie auf **Anwenden**.
-
 
 ## Wie kann ich mein Konto kündigen?
 {: #cancelaccount}
@@ -140,7 +126,6 @@ Zum Stornieren eines Lite-Kontos rufen Sie [Kontoeinstellungen](https://cloud.ib
 {: faq}
 
 Wenden Sie sich an [{{site.data.keyword.Bluemix_notm}} Support ![Symbol für externen Link](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window}, um einen Supportfall für das Löschen Ihres Kontos zu öffnen. Wenn Sie über Daten verfügen, die Ihrem alten Konto zugeordnet sind, die jedoch in ein neues Konto übernommen werden sollen, dann geben Sie die entsprechenden Informationen in Ihrer E-Mail an.
-
 
 ## Warum ist mein Konto inaktiviert?
 {: #account-deactivated}
@@ -160,13 +145,11 @@ Wenn Sie glauben, dass Ihr Konto aufgrund eines Fehlers inaktiviert wurde, wende
 
 Klicken Sie auf **Support** in der Menüleiste der Konsole, um das Support Center aufzurufen.
 
-
 ## Kann ich eine Registrierung für eine kostenfreie Testversion durchführen?
 {: #freetrial}
 {: faq}
 
 Für Fakultätsmitglieder und Studierende akkreditierter akademischer Einrichtungen sind {{site.data.keyword.Bluemix_notm}}-Testkonten erhältlich. Um sich für ein solches Testkonto zu qualifizieren, rufen Sie die Seite [Nutzen Sie das Potenzial von IBM ![Symbol für externen Link](../icons/launch-glyph.svg)](https://onthehub.com/ibm/){: new_window} auf und validieren Sie die Berechtigungsnachweise für Ihre Einrichtung.
-
 
 ## Wie melde ich mich an, nachdem ich mein Konto verknüpft habe?
 {: #al_login}
@@ -174,13 +157,11 @@ Für Fakultätsmitglieder und Studierende akkreditierter akademischer Einrichtun
 
 Nach dem Verknüpfen Ihres Kontos melden Sie sich mit Ihrer IBMid bei der {{site.data.keyword.Bluemix}}-Konsole an.
 
-
 ## Wie wirkt sich das Verknüpfen meines Kontos auf meinen Support aus?
 {: #al_support}
 {: faq}
 
 Nach dem Verknüpfen Ihres Kontos ändert sich an Ihrem Support-Level nichts, wenn Sie die {{site.data.keyword.Bluemix_notm}}-Plattform zu Ihrem Konto hinzufügen.
-
 
 ## Gibt es andere Möglichkeiten, Hilfe beim Verknüpfen meines Kontos zu erhalten?
 {: #al_morehelp}
@@ -204,7 +185,7 @@ Wenn es kein übereinstimmendes {{site.data.keyword.Bluemix_notm}}-Plattformkont
 
 Wenn Sie Ihre Konten verknüpfen, erhalten Sie im Rahmen einer Werbeaktion eine Gutschrift von $ 200 zum Ausprobieren der {{site.data.keyword.Bluemix_notm}}-Services.
 
-Weitere Informationen zu der Werbeaktion mit einer Gutschrift von $ 200 finden Sie unter [Nutzungsabhängiges Konto](/docs/account?topic=account-accounts#paygo).
+Weitere Informationen zu der Werbeaktion mit einer Gutschrift von $ 200 finden Sie unter [Nutzungsabhängiges Konto](/docs/account/index.html#paygo).
 
 ## Was bedeutet es, {{site.data.keyword.Bluemix_notm}}-Plattformservices zu meinem SoftLayer-Konto hinzuzufügen?
 {: #al_owaffslacct}
@@ -212,7 +193,7 @@ Weitere Informationen zu der Werbeaktion mit einer Gutschrift von $ 200 finden S
 
 Es bedeutet, dass Ihr Konto Zugriff auf alle {{site.data.keyword.Bluemix_notm}} Platform-Angebote hat. Nachdem Sie das {{site.data.keyword.Bluemix_notm}}-Platform-Angebot zu Ihrem Konto hinzugefügt haben, muss der Master des Kontos dem Benutzer Zugriff auf das Angebot erteilen.
 
-Weitere Informationen für Master von Konten finden Sie in [Mit Benutzern arbeiten](/docs/iam?topic=iam-iamuserinv#iamuserinv).
+Weitere Informationen für Master von Konten finden Sie in [Mit Benutzern arbeiten](/docs/iam/iamusermanage.html#iamusermanage).
 
 ## Wie wirkt sich das Verknüpfen von Konten auf meine SoftLayer-Masterkonto-ID aus?
 {: #al_howaffslmastacct}
@@ -232,7 +213,7 @@ Wenn Sie über mehrere Konten verfügen, können Sie auf einen der Kontonamen kl
 {: #switch-account-owners}
 {: faq}
 
-Der Eigner eines Kontos kann nicht geändert werden; Sie können jedoch die Ressourceneigner ändern. Weitere Informationen zum Ändern des Eigentumsrechts finden Sie in [Eigentumsrecht für eine private Ressource übertragen](/docs/account?topic=account-include#owners).
+Der Eigner eines Kontos kann nicht geändert werden; Sie können jedoch die Ressourceneigner ändern. Weitere Informationen zum Ändern des Eigentumsrechts finden Sie in [Eigentumsrecht für eine private Ressource übertragen](/docs/account/owners.html#how-to-change-the-owner-of-a-catalog-resource).
 
 ## Unterstützt {{site.data.keyword.Bluemix_notm}} die Registrierung von Benutzern mithilfe einer Batchoperation?
 {: #batch-registration}
@@ -240,25 +221,25 @@ Der Eigner eines Kontos kann nicht geändert werden; Sie können jedoch die Ress
 
 Wenn Sie Benutzer für {{site.data.keyword.Bluemix_notm}} registrieren, müssen Sie für jeden Benutzer eine individuelle Registrierung vornehmen. {{site.data.keyword.Bluemix_notm}} unterstützt die Registrierung von Benutzern anhand einer Batchoperation nicht.
 
-Rufen Sie [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link") auf und klicken Sie auf **{{site.data.keyword.Bluemix_notm}}-Konto erstellen**. Füllen Sie dann das Kontoregistrierungsformular für jeden einzelnen Benutzer aus.
+Rufen Sie [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com) auf und klicken Sie auf **{{site.data.keyword.Bluemix_notm}}-Konto erstellen**. Füllen Sie dann das Kontoregistrierungsformular für jeden einzelnen Benutzer aus.
 
 ## Was sind Tags?
 {: #know-about-tags}
 {: faq}
 
-Mithilfe von Tags können Sie Ressourcen in Ihrem Konto organisieren und anzeigen, indem Sie in der Ressourcenliste Tags zum Filtern verwenden. Weitere Informationen finden Sie in [Ressourcen mit Tags kennzeichnen](/docs/resources?topic=resources-add-remove#add-remove). 
+Mithilfe von Tags können Sie Ressourcen in Ihrem Konto organisieren und anzeigen, indem Sie in der Ressourcenliste Tags zum Filtern verwenden. Weitere Informationen finden Sie in [Ressourcen mit Tags kennzeichnen](/docs/resources/tagging_resources.html#tagging).
 
 ## Wer kann die Tags in einem Konto anzeigen?
 {: #tags-visibility-account}
 {: faq}
 
-Tags sind im gesamten Konto sichtbar. Wenn Sie über die Berechtigung zum Anzeigen einer Ressource verfügen, können Sie alle zugeordneten Tags anzeigen. Weitere Informationen finden Sie in [Benutzern Zugriff zum Hinzufügen und Entfernen von Ressourcentags erteilen](/docs/resources?topic=resources-access#access).
+Tags sind im gesamten Konto sichtbar. Wenn Sie über die Berechtigung zum Anzeigen einer Ressource verfügen, können Sie alle zugeordneten Tags anzeigen. Weitere Informationen finden Sie in [Benutzern Zugriff zum Hinzufügen und Entfernen von Ressourcentags erteilen](/docs/resources/grant-tag-access.html#access).
 
 ## Welche Berechtigungen benötige ich zum Hinzufügen oder Entfernen von Tags?
 {: #permissions-add-remove-tags}
 {: faq}
 
-Sie benötigen für eine Ressource mindestens die Rolle eines Bearbeiters für IAM-fähige Ressourcen oder die Entwicklerrolle in einem Cloud Foundry-Bereich, um Tags zu dieser Ressource hinzuzufügen oder von dieser zu entfernen. Weitere Informationen finden Sie in [Benutzern Zugriff zum Hinzufügen und Entfernen von Ressourcentags erteilen](/docs/resources?topic=resources-access#access).
+Sie benötigen für eine Ressource mindestens die Rolle eines Bearbeiters für IAM-fähige Ressourcen oder die Entwicklerrolle in einem Cloud Foundry-Bereich, um Tags zu dieser Ressource hinzuzufügen oder von dieser zu entfernen. Weitere Informationen finden Sie in [Benutzern Zugriff zum Hinzufügen und Entfernen von Ressourcentags erteilen](/docs/resources/grant-tag-access.html#access).
 
 ## Kann ich einen eigenen Tag löschen?
 {: # delete-tag}
