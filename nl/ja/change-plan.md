@@ -22,7 +22,7 @@ lastupdated: "2019-02-13"
 {{site.data.keyword.Bluemix}} サービスのプランの変更は、その特定のサービスでプランの変更が有効になっていれば行うことができます。 プランを変更することによって、例えば、プランをアップグレードまたは縮小することができます。 プランの変更はサービス・インスタンス・ダッシュボードから行うことができます。
 {: shortdesc}
 
-アカウント・タイプのアップグレードに関する詳細をお探しですか? 詳細については、『[アカウント・タイプをアップグレードまたは変更するには、どのようにすればよいですか?](/docs/account/account_faq.html#changeacct)』を参照してください。
+アカウント・タイプのアップグレードに関する詳細をお探しですか? 詳しくは、[アカウント・タイプをアップグレードまたは変換するには、どのようにすればよいですか?](/docs/account?topic=account-changeacct)を参照してください。
 {: tip}
 
 サービス・プランは、特定のサービスについてのみ変更できます。 サービスでプラン変更が有効になっている場合は、サービス・インスタンス・ダッシュボードのナビゲーションに**「プラン」**オプションが表示されます。 プランを変更する場合、次に実行する一連のステップはサービスごとに異なります。
@@ -46,7 +46,7 @@ lastupdated: "2019-02-13"
    ```
    {:codeblock}
 
-   サービスがリソース・コントローラー (RC) を使用して使用可能になっている場合、`RC Compatible true` とリストされます。変更先のプランの ID をメモしてください。
+   サービスがリソース・コントローラー (RC) を使用して使用可能になっている場合、`RC Compatible true` とリストされます。 変更先のプランの ID をメモしてください。
 
    ```
    RC Compatible      true
@@ -59,14 +59,14 @@ lastupdated: "2019-02-13"
 
 1. サービス・インスタンスのプランを変更します。
 
-   - サービスが RC 対応の場合、[`ibmcloud resource service-instance-update` コマンド](/docs/cli/reference/ibmcloud/cli_resource_group.html#ibmcloud_commands_resource)を使用してプランを変更します。
+   - サービスが RC 対応の場合、[`ibmcloud resource service-instance-update` コマンド](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_resource)を使用してプランを変更します。
 
      ```
      ibmcloud resource service-instance-update <service_instance_name> --service-plan-id <plan_id>
      ```
      {: codeblock}
 
-   - サービスが RC 対応でなく、したがって Cloud Foundry ベースである場合、[`ibmcloud cf update-service` コマンド](/docs/cli/reference/ibmcloud/cf_index.html#cf)を使用してプランを変更します。
+   - サービスが RC 対応でなく、したがって Cloud Foundry ベースである場合、[`ibmcloud cf update-service` コマンド](/docs/cli/reference/ibmcloud?topic=cloud-cli-cf#cf)を使用してプランを変更します。
 
      ```
      ibmcloud cf update-service <service_instance_name> [-p <plan_name>]

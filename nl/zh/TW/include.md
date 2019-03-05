@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2017, 2018
-lastupdated: "2018-11-18"
+  years: 2017, 2019
+lastupdated: "2019-01-28"
 
 ---
 
@@ -18,7 +18,7 @@ lastupdated: "2018-11-18"
 依預設，會限制您建立的任何 {{site.data.keyword.Bluemix}} 專用資源。如果您是帳戶的管理者，則可以藉由將使用者新增至包含清單，來選擇可以檢視資源的人員。
 {:shortdesc: .shortdesc}
 
-您可以使用 {{site.data.keyword.Bluemix}} [指令行介面 (CLI)](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) 或主控台，來判定您是否有權可容許使用者檢視已新增至帳戶的專用資源。如果您是帳戶擁有者，則可以透過主控台來指派存取原則，將存取權授與給您帳戶中的使用者。如需相關資訊，請參閱[管理帳戶存取權](access.html)。
+您可以使用 {{site.data.keyword.Bluemix}} [指令行介面 (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) 或主控台，來判定您是否有權可容許使用者檢視已新增至帳戶的專用資源。如果您是帳戶擁有者，則可以透過主控台來指派存取原則，將存取權授與給您帳戶中的使用者。如需相關資訊，請參閱[管理對帳戶的存取權](/docs/account?topic=account-find-access)。
 
 ## 尋找資源
 {: #find-resource}
@@ -89,6 +89,6 @@ Children           Name                                          Kind         ID
 移轉所有權之後，就無法再從您的帳戶檢視該資源。請確定您要移轉所有權，因為此動作無法復原。
 {: important}
 
-您可以使用 [{{site.data.keyword.Bluemix}} 指令行介面 (CLI)](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_commands_settings) 來移轉專用資源的所有權。請執行下列指令：
+您可以使用 [{{site.data.keyword.Bluemix}} 指令行介面 (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) 來移轉專用資源的所有權。請執行下列指令：
 
 `ibmcloud catalog entry-visibility-set <service-id> --owner<account-id or account-email>`

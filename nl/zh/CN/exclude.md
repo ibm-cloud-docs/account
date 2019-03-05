@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2017, 2018
-lastupdated: "2018-11-28"
+  years: 2017, 2019
+lastupdated: "2019-01-28"
 
 ---
 
@@ -23,7 +23,7 @@ lastupdated: "2018-11-28"
 在目录中隐藏资源并不会从 Cloud Foundry 命令行界面 (CLI) 或通过 {{site.data.keyword.Bluemix_notm}} 控制台导航（例如，财务、移动、Watson 和 Web 应用程序）提供的产品类别列表中除去该资源。
 {: note}
 
-您可以使用 {{site.data.keyword.Bluemix}} [命令行界面 (CLI)](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) 或控制台来确定自己是否有权允许用户查看已添加到帐户的专用资源。如果您是帐户所有者，那么可以通过在控制台中分配访问策略，向您帐户中的用户授予访问权。有关更多信息，请参阅[管理对帐户的访问权](access.html)。
+您可以使用 {{site.data.keyword.Bluemix}} [命令行界面 (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) 或控制台来确定自己是否有权允许用户查看已添加到帐户的专用资源。如果您是帐户所有者，那么可以通过在控制台中分配访问策略，向您帐户中的用户授予访问权。有关更多信息，请参阅[管理对帐户的访问权](/docs/account?topic=account-find-access)。
 
 ## 查找资源
 {: #find-resource}

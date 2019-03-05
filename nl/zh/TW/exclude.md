@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2017, 2018
-lastupdated: "2018-11-28"
+  years: 2017, 2019
+lastupdated: "2019-01-28"
 
 ---
 
@@ -20,10 +20,10 @@ lastupdated: "2018-11-28"
 身為 {{site.data.keyword.Bluemix}} 帳戶的管理者，您可以向具有帳戶存取權的使用者隱藏公用資源。您可能會隱藏資源，以向非授權使用者隱藏機密性資訊，或是部分資訊可能需要只由有限數量的人員存取。
 {:shortdesc}
 
-隱藏型錄中的資源，並不會將它從 Cloud Foundry 指令行介面 (CLI) 或從可由 {{site.data.keyword.Bluemix_notm}} 主控台導覽的供應項目種類清單（例如金融、行動、Watson 及 Web 應用程式）中移除。
+隱藏型錄中的資源，並不會將它從 Cloud Foundry 指令行介面 (CLI) 或從可由 {{site.data.keyword.Bluemix_notm}} 主控台導覽的供應項目種類清單（例如金融、行動、Watson 及 Web 應用程式）移除。
 {: note}
 
-您可以使用 {{site.data.keyword.Bluemix}} [指令行介面 (CLI)](/docs/cli/reference/ibmcloud/bx_cli.html#bluemix_catalog_entry_visibility_set) 或主控台，來判定您是否有權可容許使用者檢視已新增至帳戶的專用資源。如果您是帳戶擁有者，則可以透過主控台來指派存取原則，將存取權授與給您帳戶中的使用者。如需相關資訊，請參閱[管理帳戶存取權](access.html)。
+您可以使用 {{site.data.keyword.Bluemix}} [指令行介面 (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) 或主控台，來判定您是否有權可容許使用者檢視已新增至帳戶的專用資源。如果您是帳戶擁有者，則可以透過主控台來指派存取原則，將存取權授與給您帳戶中的使用者。如需相關資訊，請參閱[管理對帳戶的存取權](/docs/account?topic=account-find-access)。
 
 ## 尋找資源
 {: #find-resource}
@@ -32,7 +32,7 @@ lastupdated: "2018-11-28"
 
 ## 取得資源的詳細資料
 
-執行 `ibmcloud catalog service <service-id or service-name>` 指令。利用執行前一個指令所傳回的資訊，使用此指令來檢查資源的其他詳細資料。您可以使用所傳回的資訊來檢視階層，而此階層會顯示資源中各項目的子項資源。
+執行 `ibmcloud catalog service <service-id or service-name>` 指令。利用執行前一個指令所傳回的資訊，使用這個指令來檢查資源的其他詳細資料。您可以使用所傳回的資訊來檢視階層，而此階層會顯示資源中各項目的子項資源。
 
 ## 隱藏資源
 {: #vis-exc}

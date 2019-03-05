@@ -16,6 +16,7 @@ lastupdated: "2018-11-19"
 
 
 # 註冊 {{site.data.keyword.Bluemix_notm}}
+{: #signup}
 
 您可以使用現有 IBM ID、建立新的 IBM ID 或使用聯合 ID 來註冊 [{{site.data.keyword.Bluemix}} 帳戶](https://cloud.ibm.com){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")。聯合 ID 是已向 IBM 登錄之公司網域內的 ID，因此您可以使用網域及使用者認證來存取 IBM Web 應用程式。按一下**建立 {{site.data.keyword.Bluemix_notm}} 帳戶**，以便開始使用。
 {:shortdesc}

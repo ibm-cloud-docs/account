@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-07-24"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -26,4 +26,4 @@ lastupdated: "2018-07-24"
 * 新增或移除使用者
 * 建立組織
 
-若要開始監視帳戶動作，請參閱 [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker/index.html#getting-started-with-cla)。如需您可以追蹤的每個事件區域的相關資訊，請參閱[帳戶管理事件](/docs/services/cloud-activity-tracker/services/at_events_acc_mgt.html)。
+若要開始監視帳戶動作，請參閱 [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started-with-cla)。如需您可以追蹤的每個事件區域的相關資訊，請參閱[帳戶管理事件](/docs/services/cloud-activity-tracker/services?topic=cloud-activity-tracker-at_events)。

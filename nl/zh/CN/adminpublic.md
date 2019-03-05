@@ -16,6 +16,7 @@ lastupdated: "2018-11-19"
 
 
 # 注册 {{site.data.keyword.Bluemix_notm}}
+{: #signup}
 
 您可以通过使用现有 IBM 标识、创建新 IBM 标识或使用联合标识来注册 [{{site.data.keyword.Bluemix}} 帐户](https://cloud.ibm.com){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")。联合标识是公司域内已向 IBM 注册的标识，因此域和用户凭证可用于访问 IBM Web 应用程序。单击**创建 {{site.data.keyword.Bluemix_notm}} 帐户**以开始。
 {:shortdesc}

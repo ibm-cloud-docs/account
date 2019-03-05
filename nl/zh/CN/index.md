@@ -25,18 +25,18 @@ lastupdated: "2019-02-13"
 
 下表提供了轻量、现收现付和预订帐户的比较。有关每种帐户的更多详细信息，请参阅后面的各部分。
 
-|  |轻量|现收现付|预订|
-|--------------------|--------------------|--------------------|--------------------|
+|                                         |轻量|现收现付|预订|
+|-----------------------------------------|--------------------|--------------------|--------------------|
 |**访问免费的 Cloud Foundry 内存**|256 MB|512 MB|512 MB|
 |**访问[轻量服务套餐 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://{DomainName}/catalog/?search=label:lite){: new_window}**| ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |
-|**访问所有免费套餐**|  | ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |
+|**访问所有免费套餐**|                    | ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |
 |**访问完整 {{site.data.keyword.Bluemix_notm}} 目录**|  | ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |
-|**访问多个 Cloud Foundry 区域**|  | ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |
+|**访问多个 Cloud Foundry 区域**|               | ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |
 |**无时间限制**| ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |
-|**保证零成本**| ![功能可用](../icons/icon_enabled.svg) |  |  |
-|**折扣定价**|  |  | ![功能可用](../icons/icon_enabled.svg) |
+|**保证零成本**| ![功能可用](../icons/icon_enabled.svg) |  |         |
+|**折扣定价**|                    |                    | ![功能可用](../icons/icon_enabled.svg) |
 |**学习或构建概念验证的最佳选择**| ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |  |
-|**适合生产用例**|  | ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |
+|**适合生产用例**|                    | ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |
 {: caption="表 1. {{site.data.keyword.Bluemix_notm}} 帐户比较" caption-side="top"}
 
 
@@ -45,9 +45,9 @@ lastupdated: "2019-02-13"
 
 注册轻量帐户可在 {{site.data.keyword.Bluemix_notm}} 控制台中使用所选的显示有轻量标记 ![轻量标记](../icons/Lite.svg) 的免费轻量套餐来构建应用程序和探索服务。轻量帐户不会到期，也无需信用卡。
 
-您有权访问为您创建的名为 `Default` 的单个资源组。由 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 管理的所有服务实例都会自动添加到此资源组。可以随时更新此资源组的名称。有关详细步骤，请参阅[重命名资源组](/docs/resources/resourcegroups.html#renaming-a-resource-group)。
+您有权访问为您创建的名为 `Default` 的单个资源组。由 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 管理的所有服务实例都会自动添加到此资源组。可以随时更新此资源组的名称。有关详细步骤，请参阅[重命名资源组](/docs/resources?topic=resources-rgs#rename_rgs)。
 
-每个资源组都是免费的。在创建 IAM 管理的服务与 Cloud Foundry 应用程序之间的连接时，将创建别名（即服务实例），此别名会计入配额。请参阅[管理连接](/docs/resources/connecting_apps.html#connect_app)。
+每个资源组都是免费的。在创建 IAM 管理的服务与 Cloud Foundry 应用程序之间的连接时，将创建别名（即服务实例），此别名会计入配额。请参阅[管理连接](/docs/resources?topic=resources-connect_app)。
 {: tip}
 
 ### 可用功能
@@ -68,7 +68,7 @@ lastupdated: "2019-02-13"
 ### 升级轻量帐户
 {: #upgrade-lite-account}
 
-您可以升级到现收现付帐户或预订帐户。有关更多信息，请参阅[升级帐户](/docs/account/account_settings.html#upgrading-account)。
+您可以升级到现收现付帐户或预订帐户。有关更多信息，请参阅[如何升级或转换帐户类型？](/docs/account?topic=account-changeacct)。
 
 升级到现收现付帐户后，您将获得 200 美元的促销信用值，该信用值会自动应用于您的帐户。200 美元信用值的有效期为 30 天，而且会自动应用于您的发票。该信用值不能用于第三方产品。
 
@@ -83,21 +83,21 @@ lastupdated: "2019-02-13"
 ### 升级现收现付帐户
 {: #upgrade-to-subscription}
 
-要将现收现付帐户升级到预订帐户，请联系 [IBM 销售人员](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")。
+要将现收现付帐户升级到预订帐户，请联系 [{{site.data.keyword.Bluemix_notm}} 销售人员](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")。
 
 ## 预订帐户
 {: #subscription-account}
 
 使用预订帐户，可以创建多个资源组，以便轻松管理配额并查看一组资源的计费使用情况。每月有最低组合消费，达到该最低消费可享受相应的预订折扣。对于超出预订总额的任何使用量，将按非折扣费率计费。要查看预订，请转至**管理 > 计费和使用情况**，然后选择**预订**。
 
-如果您有预订帐户，那么可以创建 [IBM Cloud 目录](https://cloud.ibm.com/catalog){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标") 中提供的大多数服务。但某些服务会使用特定的价格套餐，要求您单独购买。
+如果您有预订帐户，那么可以创建 [{{site.data.keyword.Bluemix_notm}} 目录](https://cloud.ibm.com/catalog/){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标") 中提供的大多数服务。但某些服务会使用特定的价格套餐，要求您单独购买。
 
 ### {{site.data.keyword.Bluemix_dedicated_notm}} 帐户
 使用 {{site.data.keyword.Bluemix_dedicated_notm}} 时，对于以下项，必须至少注册为期一年的使用期限：
 
    * 连回基础架构的 VPN 连接
    * {{site.data.keyword.BluSoftlayer_notm}} 数据中心内完全冗余的环境
-   * 所有受支持的运行时（IBM Java Liberty、Node.js 和内置开放式源代码运行时）
+   * 所有受支持的运行时（{{site.data.keyword.runtime_liberty_short}}、{{site.data.keyword.runtime_nodejs_short}} 和内置开放式源代码运行时）
    * 所有您选择的专用服务以及所有公共 {{site.data.keyword.Bluemix_notm}} 服务
    * 标准 {{site.data.keyword.Bluemix_notm}} 支持
 

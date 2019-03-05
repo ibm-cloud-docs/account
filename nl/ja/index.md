@@ -25,18 +25,18 @@ lastupdated: "2019-02-13"
 
 次の表は、ライト・アカウント、従量課金 (PAYG) アカウント、およびサブスクリプション・アカウントを比較しています。 各アカウントについて詳しくは、以降のセクションを参照してください。
 
-|  | ライト  | 従量課金 (PAYG) | サブスクリプション |
-|--------------------|--------------------|--------------------|--------------------|
-| **無料 Cloud Foundry メモリーへのアクセス** | 256 MB | 512 MB | 512 MB |
+|                                         | ライト               | 従量課金 (PAYG)      | サブスクリプション       |
+|-----------------------------------------|--------------------|--------------------|--------------------|
+| **無料 Cloud Foundry メモリーへのアクセス** | 256 MB             | 512 MB             | 512 MB             |
 | **[ライト・サービス・プラン ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://{DomainName}/catalog/?search=label:lite){: new_window} へのアクセス** | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
-| **すべての無料プランへのアクセス** |  | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
+| **すべての無料プランへのアクセス**            |                    | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
 | **フル {{site.data.keyword.Bluemix_notm}} カタログへのアクセス** |  | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
-| **複数の Cloud Foundry 地域へのアクセス** |  | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
+| **複数の Cloud Foundry 地域へのアクセス** |               | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
 | **時間制限なし** | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
-| **保証されたゼロ・コスト** | ![フィーチャー使用可能](../icons/icon_enabled.svg) |  |  |
-| **割引価格** |  |  | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
+| **保証されたゼロ・コスト**                | ![フィーチャー使用可能](../icons/icon_enabled.svg) |  |         |
+| **割引価格**                  |                    |                    | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
 | **PoC (概念検証) の学習または構築に最適** | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |  |
-| **実動ユース・ケース向き** |  | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
+| **実動ユース・ケース向き**        |                    | ![フィーチャー使用可能](../icons/icon_enabled.svg) | ![フィーチャー使用可能](../icons/icon_enabled.svg) |
 {: caption="表 1. {{site.data.keyword.Bluemix_notm}} アカウントの比較" caption-side="top"}
 
 
@@ -45,9 +45,9 @@ lastupdated: "2019-02-13"
 
 「ライト」タグ ![「ライト」タグ](../icons/Lite.svg) 付きで {{site.data.keyword.Bluemix_notm}} コンソールに表示される無料ライト・プランを選択してアプリの作成とサービスの探索を開始するには、ライト・アカウントを申し込みます。 ライト・アカウントには有効期限はなく、クレジット・カードは必要ありません。
 
-`Default` という名前の単一リソース・グループが作成され、それにアクセスできるようになります。 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) によって管理されるすべてのサービスのインスタンスがこのリソース・グループに自動的に追加されます。 いつでもこのリソース・グループの名前を更新できます。 詳しい手順については、[リソース・グループの名前変更](/docs/resources/resourcegroups.html#renaming-a-resource-group)を参照してください。
+`Default` という名前の単一リソース・グループが作成され、それにアクセスできるようになります。 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) によって管理されるすべてのサービスのインスタンスがこのリソース・グループに自動的に追加されます。 いつでもこのリソース・グループの名前を更新できます。 詳しい手順については、[リソース・グループの名前変更](/docs/resources?topic=resources-rgs#rename_rgs)を参照してください。
 
-各リソース・グループは無料です。 IAM によって管理されるサービスと Cloud Foundry アプリとの間に接続を作成すると、別名が作成されます。これはサービス・インスタンスであり、割り当て量に計上されます。 [接続の管理](/docs/resources/connecting_apps.html#connect_app)を参照してください。
+各リソース・グループは無料です。 IAM によって管理されるサービスと Cloud Foundry アプリとの間に接続を作成すると、別名が作成されます。これはサービス・インスタンスであり、割り当て量に計上されます。 [接続の管理](/docs/resources?topic=resources-connect_app)を参照してください。
 {: tip}
 
 ### プランの内容
@@ -68,7 +68,7 @@ lastupdated: "2019-02-13"
 ### ライト・アカウントのアップグレード
 {: #upgrade-lite-account}
 
-従量課金 (PAYG) アカウントまたはサブスクリプション・アカウントにアップグレードできます。 詳しくは、『[アカウントのアップグレード](/docs/account/account_settings.html#upgrading-account)』を参照してください。
+従量課金 (PAYG) アカウントまたはサブスクリプション・アカウントにアップグレードできます。 詳しくは、[アカウント・タイプをアップグレードまたは変換するには、どのようにすればよいですか?](/docs/account?topic=account-changeacct) を参照してください。
 
 従量課金 (PAYG) アカウントにアップグレードすると $200 のプロモーション・クレジットが渡され、そのクレジットは自動的にアカウントに適用されます。 この $200 のクレジットは 30 日間有効であり、請求書に自動的に適用されます。 このクレジットを、サード・パーティーのオファリングで使用することはできません。
 
@@ -83,21 +83,21 @@ lastupdated: "2019-02-13"
 ### 従量課金 (PAYG) アカウントのアップグレード
 {: #upgrade-to-subscription}
 
-従量課金 (PAYG) アカウントをサブスクリプション・アカウントにアップグレードするには、[IBM 営業担当員](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") にお問い合わせください。
+従量課金 (PAYG) アカウントをサブスクリプション・アカウントにアップグレードするには、[{{site.data.keyword.Bluemix_notm}} 営業担当員](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") にお問い合わせください。
 
 ## 「サブスクリプション」アカウント
 {: #subscription-account}
 
 サブスクリプション・アカウントを使用すると、複数のリソース・グループを作成して、リソースの集合での割り当て量の管理および有料使用量の表示を簡単に行うことができます。 毎月の結合された最小の使用容量に対してコミットし、最小の課金に適用されるサブスクリプションの割引を受けます。 サブスクリプションの総額を超える使用分は割引なしのレートで課金されます。 サブスクリプションを表示するには、**「管理」 > 「請求および使用量」**と進み、**「サブスクリプション」**を選択します。
 
-サブスクリプション・アカウントを使用している場合、[IBM Cloud カタログ](https://cloud.ibm.com/catalog){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") から使用可能なほとんどのサービスを作成できます。 ただし、いくつかのサービスでは、個別に購入する必要のある特定の料金プランが使用されています。
+サブスクリプション・アカウントを使用している場合、[{{site.data.keyword.Bluemix_notm}} カタログ](https://cloud.ibm.com/catalog/){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") から使用可能なほとんどのサービスを作成できます。 ただし、いくつかのサービスでは、個別に購入する必要のある特定の料金プランが使用されています。
 
 ### {{site.data.keyword.Bluemix_dedicated_notm}} アカウント
 {{site.data.keyword.Bluemix_dedicated_notm}} を使用するには、以下が含まれている最低 1 年間の契約が必要になります。
 
    * ご使用のインフラストラクチャーへの VPN 接続
    * {{site.data.keyword.BluSoftlayer_notm}} データ・センター内の完全に冗長な環境
-   * サポートされているすべてのランタイム (IBM Java Liberty、Node.js、および標準装備であるオープン・ソースの各ランタイム)
+   * サポートされているすべてのランタイム ({{site.data.keyword.runtime_liberty_short}}、{{site.data.keyword.runtime_nodejs_short}}、および標準装備であるオープン・ソースの各ランタイム)
    * 選択したすべての専用サービスおよびすべてのパブリック {{site.data.keyword.Bluemix_notm}} サービス
    * 標準 {{site.data.keyword.Bluemix_notm}} サポート
 

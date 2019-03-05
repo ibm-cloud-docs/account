@@ -25,18 +25,18 @@ lastupdated: "2019-02-13"
 
 Die folgende Tabelle enthält einen Vergleich von Lite-Konto, nutzungsabhängigem Konto und Abonnementkonto. Weitere Informationen zu den einzelnen Konten finden Sie in den folgenden Abschnitten.
 
-|  | Lite  | Nutzungsabhängig | Abonnement |
-|--------------------|--------------------|--------------------|--------------------|
-| **Zugriff auf kostenfreien Cloud Foundry-Speicher** | 256 MB | 512 MB | 512 MB |
+|                                         | Lite               | Nutzungsabhängig      | Abonnement       |
+|-----------------------------------------|--------------------|--------------------|--------------------|
+| **Zugriff auf kostenfreien Cloud Foundry-Speicher** | 256 MB             | 512 MB             | 512 MB             |
 | **Zugriff auf [Lite-Servicepläne ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://{DomainName}/catalog/?search=label:lite){: new_window}** | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |
-| **Zugriff auf alle kostenfreien Pläne** |  | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |
+| **Zugriff auf alle kostenfreien Pläne**            |                    | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |
 | **Zugriff auf den gesamten {{site.data.keyword.Bluemix_notm}}-Katalog** |  | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |
-| **Zugriff auf mehrere Cloud Foundry-Regionen** |  | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |
+| **Zugriff auf mehrere Cloud Foundry-Regionen** |               | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |
 | **Keine zeitlichen Begrenzungen** | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |
-| **Kostenfreiheitsgarantie** | ![Funktion verfügbar](../icons/icon_enabled.svg) |  |  |
-| **Preise mit Nachlass** |  |  | ![Funktion verfügbar](../icons/icon_enabled.svg) |
+| **Kostenfreiheitsgarantie**                | ![Funktion verfügbar](../icons/icon_enabled.svg) |  |         |
+| **Preise mit Nachlass**                  |                    |                    | ![Funktion verfügbar](../icons/icon_enabled.svg) |
 | **Eignung für Schulung oder Erstellung von POCs** | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |  |
-| **Eignung für den Produktionseinsatz** |  | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |
+| **Eignung für den Produktionseinsatz**        |                    | ![Funktion verfügbar](../icons/icon_enabled.svg) | ![Funktion verfügbar](../icons/icon_enabled.svg) |
 {: caption="Tabelle 1. Vergleich von {{site.data.keyword.Bluemix_notm}}-Konten" caption-side="top"}
 
 
@@ -45,9 +45,9 @@ Die folgende Tabelle enthält einen Vergleich von Lite-Konto, nutzungsabhängige
 
 Registrieren Sie sich für ein Lite-Konto, um unter Nutzung ausgewählten gebührenfreien Pläne mit der Entwicklung von Apps und Erkundung von Services zu beginnen. Diese Lite-Pläne werden mit einem Lite-Tag ![Lite-Tag](../icons/Lite.svg) in der {{site.data.keyword.Bluemix_notm}}-Konsole angezeigt. Ihr Lite-Konto gilt unbefristet und Ihre Kreditkarte wird nicht benötigt.
 
-Sie haben Zugriff auf eine einzelne Ressourcengruppe, die für Sie erstellt wurde und den Namen `Default` (Standard) trägt. Alle Instanzen des Service, die von {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) verwaltet werden, werden dieser Ressourcengruppe automatisch hinzugefügt. Sie können den Namen dieser Ressourcengruppe jederzeit ändern. Detaillierte Schritte finden Sie unter [Ressourcengruppe umbenennen](/docs/resources/resourcegroups.html#renaming-a-resource-group).
+Sie haben Zugriff auf eine einzelne Ressourcengruppe, die für Sie erstellt wurde und den Namen `Default` (Standard) trägt. Alle Instanzen des Service, die von {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) verwaltet werden, werden dieser Ressourcengruppe automatisch hinzugefügt. Sie können den Namen dieser Ressourcengruppe jederzeit ändern. Detaillierte Schritte finden Sie unter [Ressourcengruppe umbenennen](/docs/resources?topic=resources-rgs#rename_rgs).
 
-Jede Ressourcengruppe ist kostenfrei. Wenn Sie eine Verbindung zwischen einem von IAM verwalteten Service und einer Cloud Foundry-App erstellen, erstellen Sie einen Aliasnamen, der eine Serviceinstanz ist, die zu Ihrem Kontingent zählt. Weitere Informationen finden Sie in [Verbindungen verwalten](/docs/resources/connecting_apps.html#connect_app).
+Jede Ressourcengruppe ist kostenfrei. Wenn Sie eine Verbindung zwischen einem von IAM verwalteten Service und einer Cloud Foundry-App erstellen, erstellen Sie einen Aliasnamen, der eine Serviceinstanz ist, die zu Ihrem Kontingent zählt. Weitere Informationen finden Sie in [Verbindungen verwalten](/docs/resources?topic=resources-connect_app).
 {: tip}
 
 ### Merkmale und Leistungen
@@ -68,7 +68,7 @@ Die folgende Liste enthält zentrale Features, die mit einem Lite-Konto zur Verf
 ### Upgrade für Lite-Konto durchführen
 {: #upgrade-lite-account}
 
-Sie können ein Upgrade auf ein nutzungsabhängiges Konto oder ein Abonnementkonto durchführen. Weitere Informationen finden Sie in [Upgrade für Konto durchführen](/docs/account/account_settings.html#upgrading-account).
+Sie können ein Upgrade auf ein nutzungsabhängiges Konto oder ein Abonnementkonto durchführen. Weitere Informationen finden Sie in [Wie kann ich ein Upgrade meines Kontotyps durchführen oder den Kontotyp konvertieren?](/docs/account?topic=account-changeacct). 
 
 Nach dem Upgrade auf ein Konto mit nutzungsabhängiger Zahlung erhalten Sie eine Werbegutschrift in Höhe von 200 US-Dollar. Dieses Guthaben wird Ihrem Konto automatisch gutgeschrieben. Die Gutschrift von 200 US-Dollar hat eine Gültigkeit von 30 Tagen und wird automatisch mit Ihrer Rechnung verrechnet. Die Gutschrift kann nicht mit Angeboten anderer Anbieter verwendet werden.
 
@@ -83,21 +83,21 @@ Darüber hinaus können mit einem nutzungsabhängigen Konto optionale Features, 
 ### Upgrade für nutzungsabhängiges Konto durchführen
 {: #upgrade-to-subscription}
 
-Wenn Sie für ein nutzungsabhängiges Konto ein Upgrade auf ein Abonnementkonto durchführen möchten, wenden Sie sich an den [IBM Vertrieb](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link").
+Wenn Sie für ein nutzungsabhängiges Konto ein Upgrade auf ein Abonnementkonto durchführen möchten, wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}}-Vertrieb](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link"). 
 
 ## Abonnementkonto
 {: #subscription-account}
 
 Mit einem Abonnementkonto können Sie mehrere Ressourcengruppen erstellen, um Kontingente ohne großen Aufwand zu verwalten und um Informationen zu Abrechnung und Nutzung für eine Gruppe von Ressourcen anzuzeigen. Sie verpflichten sich zu einem kombinierten Mindestausgabebetrag pro Monat und erhalten einen Abonnementrabatt, der auf diese Mindestgebühr angewendet wird. Für eine Nutzung, die über die Gesamtsumme des Abonnements hinaus geht, fallen die normalen Gebühren ohne Rabatt an. Zum Anzeigen Ihres Abonnements rufen Sie **Verwalten > Abrechnung und Nutzung** auf und wählen Sie **Abonnements** aus.
 
-Wenn Sie über ein Abonnementkonto verfügen, können Sie die meisten Services erstellen, die im [IBM Cloud-Katalog](https://cloud.ibm.com/catalog){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link") verfügbar sind. Für einige Services gilt jedoch ein bestimmter Preisstrukturplan, gemäß dem diese Services separat erworben werden müssen.
+Wenn Sie über ein Abonnementkonto verfügen, können Sie die meisten Services erstellen, die im [{{site.data.keyword.Bluemix_notm}}-Katalog](https://cloud.ibm.com/catalog/){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link") verfügbar sind. Für einige Services gilt jedoch ein bestimmter Preisstrukturplan, gemäß dem diese Services separat erworben werden müssen.
 
 ### {{site.data.keyword.Bluemix_dedicated_notm}}-Konto
 Bei {{site.data.keyword.Bluemix_dedicated_notm}} müssen Sie sich für eine Mindestlaufzeit von einem Jahr anmelden.
 
    * VPN-Anbindung zurück zu Ihrer Infrastruktur
    * Vollständige redundante Umgebung in einem {{site.data.keyword.BluSoftlayer_notm}}-Rechenzentrum
-   * Alle unterstützten Laufzeiten (IBM Java Liberty, Node.js sowie integrierte Open-Source-Laufzeiten)
+   * Alle unterstützten Laufzeiten ({{site.data.keyword.runtime_liberty_short}}, {{site.data.keyword.runtime_nodejs_short}} sowie integrierte Open-Source-Laufzeiten)
    * Alle dedizierten Services, die Sie ausgewählt haben, und alle öffentlichen {{site.data.keyword.Bluemix_notm}}-Services
    * Standard-{{site.data.keyword.Bluemix_notm}}-Unterstützung
 

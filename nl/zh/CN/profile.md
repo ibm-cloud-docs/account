@@ -4,14 +4,15 @@
 
 copyright:
 
-  years: 2015, 2018
-lastupdated: "2018-11-30"
+  years: 2015, 2019
+lastupdated: "2019-02-15"
 
 ---
 
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
 {:new_window: target="_blank"}
 
 # 设置个人档案
@@ -26,9 +27,8 @@ lastupdated: "2018-11-30"
 
 您可以更改个人档案照片。请转至 **{{site.data.keyword.avatar}}** 图标 ![“头像”图标](../icons/i-avatar-icon.svg) &gt; **个人档案和设置**。
 
-  * 要添加照片，请单击**上传照片**。
-  * 要将当前照片替换为新照片，请单击**更改照片**。
-  * 要除去照片，请单击**除去照片**。
+  * 要添加照片或替换现有照片，请单击**上传**。
+  * 要除去照片，请单击**删除图片**。
 
 
 ## 编辑 IBM 标识信息
@@ -37,12 +37,16 @@ lastupdated: "2018-11-30"
 IBM 标识是您用于登录到 {{site.data.keyword.Bluemix_notm}} 帐户以获取基础架构、服务和应用程序功能的单个标识。您无法更改自己的 IBM 标识，但可以编辑关联的个人档案信息，例如您的姓名、电子邮件、电话号码、密码或公司名称。请转至 **{{site.data.keyword.avatar}}** 图标 ![“头像”图标](../icons/i-avatar-icon.svg) &gt; **个人档案和设置**。有关更多信息，请参阅[切换到 IBM 标识和链接帐户](softlayerlink.html)。
 
 
-## 分析跟踪设置
+## 更改 cookie 设置
 {: #tracking}
 
-缺省情况下，将跟踪 {{site.data.keyword.Bluemix_notm}} 控制台中的操作。通过跟踪，{{site.data.keyword.Bluemix_notm}} 团队可以为您构建更佳的体验，并提供更好的支持。我们不会将收集的数据用于其他用途或共享给其他人。如果选择禁用跟踪，那么可能无法使用某些功能，例如交谈通信。
+{{site.data.keyword.Bluemix_notm}} 控制台需要 cookie 来管理会话，例如提供安全登录，处理事务和保存一些首选项。其他 cookie 用于构建更个性化的体验，并提供更好的支持。如果您更改了 IBM 标准缺省值中的 cookie 设置，那么可能无法使用某些功能，例如交谈通信。
 
-要禁用分析跟踪，请完成以下步骤：
-1. 转至 **{{site.data.keyword.avatar}}** 图标 ![“头像”图标](../icons/i-avatar-icon.svg) &gt; **个人档案和设置**。
-2. 将**分析跟踪**设置为**关闭**。
+要更改 IBM 标准缺省值中的设置，请完成以下步骤：
+1. 转至**{{site.data.keyword.avatar}}**图标 ![“头像”图标](../icons/i-avatar-icon.svg) &gt; **隐私**。
+1. 单击**查看 cookie 设置**。
+1. 移动滑块以选择允许的 cookie 级别。
 
+   可以单击**高级设置**以查看每个级别的 cookie 的确切公司和域。然后，单击**基本设置**以返回到 cookie 首选项选择。
+   {: tip}
+1. 单击**同意并保存定制设置**。

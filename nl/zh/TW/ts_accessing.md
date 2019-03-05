@@ -44,7 +44,7 @@ lastupdated: "2018-11-28"
 請使用下列其中一個選項：
 {: tsResolve}
  * 移至[我的 IBM 設定檔頁面 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://myibm.ibm.com/dashboard/){: new_window}，以確認您使用的是有效的密碼。
- * 如果您忘記密碼，請按一下**忘記密碼**來重設密碼。 
+ * 如果您忘記密碼，請按一下**忘記密碼**來重設密碼。
  * 如果您忘記 IBM ID 或是持續發生密碼問題，請與 Worldwide IBM Registration Help Desk 聯絡以取得協助。
 
 如果您登入 {{site.data.keyword.Bluemix_notm}}，而登入處理程序因任何原因（例如重設密碼）而中斷，請回到主控台，然後再重新開始登入處理程序
@@ -69,7 +69,7 @@ lastupdated: "2018-11-28"
 
  * 輸入 IBM ID 的完整電子郵件位址。
  {: tsResolve}
- * 如果您是具有 SoftLayer ID 的 SoftLayer 使用者，則必須先在您具有存取權的每個帳戶中切換至 IBM ID 鑑別，然後才能登入。如需相關資訊，請參閱[切換至 IBM ID](/docs/account/softlayerlink.html)。
+ * 如果您是具有 SoftLayer ID 的 SoftLayer 使用者，則必須先在您具有存取權的每個帳戶中切換至 IBM ID 鑑別，然後才能登入。如需相關資訊，請參閱[切換至 IBM ID](/docs/account?topic=account-unifyingaccounts)。
 
 
 ## 為什麼我的 IBM ID 未與任何 {{site.data.keyword.Bluemix_notm}} 帳戶相關聯？
@@ -107,7 +107,7 @@ lastupdated: "2018-11-28"
 {: #ts_login_ibmid}
 {: troubleshoot}
 
-如果您登入 F{site.data.keyword.Bluemix_notm}}，且 IBM ID 鑑別未完成，則表示服務可能有問題。 
+如果您登入 {{site.data.keyword.Bluemix_notm}}，但 IBM ID 鑑別未完成，則表示服務可能有問題。
 
 當您登入 {{site.data.keyword.Bluemix_notm}} 時，未完成以 IBM ID 進行鑑別。
 {: tsSymptoms}
@@ -133,7 +133,7 @@ IBM ID 鑑別服務可能有問題。
 當您登錄 {{site.data.keyword.Bluemix_notm}}「精簡」帳戶時，會收到一封電子郵件，其中包含一個鏈結，您必須按一下以確認登錄。  
 {: tsCauses}
 
-確認電子郵件會傳送至與您 IBM ID 相關聯的電子郵件位址。檢查您的收件匣和垃圾郵件資料夾。如果未收到確認電子郵件，請與 [{{site.data.keyword.Bluemix_notm}} 支援中心](/docs/get-support/howtogetsupport.html)聯絡。  
+確認電子郵件會傳送至與您 IBM ID 相關聯的電子郵件位址。檢查您的收件匣和垃圾郵件資料夾。如果未收到確認電子郵件，請與 [{{site.data.keyword.Bluemix_notm}} 支援中心](/docs/get-support?topic=get-support-getting-customer-support)聯絡。  
 {: tsResolve}
 
 
@@ -157,5 +157,5 @@ IBM ID 鑑別服務可能有問題。
   * 登出 {{site.data.keyword.Bluemix_notm}} 然後再重新登入。
   * 使用瀏覽器的專用瀏覽模式。
   * 清除瀏覽器的 Cookie 及快取。
-  * 使用不同的瀏覽器。如需 {{site.data.keyword.Bluemix_notm}} 所支援瀏覽器版本的相關資訊，請參閱 [{{site.data.keyword.Bluemix_notm}} 必要條件](/docs/overview/prereqs.html#prereqs)。
+  * 使用不同的瀏覽器。如需 {{site.data.keyword.Bluemix_notm}} 所支援瀏覽器版本的相關資訊，請參閱 [{{site.data.keyword.Bluemix_notm}} 必要條件](/docs/overview?topic=overview-prereqs-platform)。
   * 如果您已安裝 Cloud Foundry 指令行介面，請輸入 `ibmcloud cf apps` 指令，以查看您的應用程式是否在執行中。

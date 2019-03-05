@@ -44,7 +44,7 @@ lastupdated: "2018-11-28"
 使用以下其中一个选项：
 {: tsResolve}
  * 转至[我的 IBM 个人档案页面 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://myibm.ibm.com/dashboard/){: new_window} 以确认您使用的密码是否有效。
- * 如果忘记密码，请单击**忘记密码**以重置密码。 
+ * 如果忘记密码，请单击**忘记密码**以重置密码。
  * 如果忘记 IBM 标识或密码问题仍未解决，请联系全球 IBM 注册帮助台来获取帮助。
 
 如果您登录到 {{site.data.keyword.Bluemix_notm}}，但由于任何原因（例如，重置密码）而导致登录过程中断，请返回到控制台并重新启动登录过程。
@@ -69,7 +69,7 @@ lastupdated: "2018-11-28"
 
  * 输入 IBM 标识的标准电子邮件地址。
  {: tsResolve}
- * 如果您是使用 SoftLayer 标识的 SoftLayer 用户，那么必须在您有权访问的每个帐户中切换到 IBM 标识认证，然后才能登录。有关更多信息，请参阅[切换到 IBM 标识](/docs/account/softlayerlink.html)。
+ * 如果您是使用 SoftLayer 标识的 SoftLayer 用户，那么必须在您有权访问的每个帐户中切换到 IBM 标识认证，然后才能登录。有关更多信息，请参阅[切换到 IBM 标识](/docs/account?topic=account-unifyingaccounts)。
 
 
 ## 为什么我的 IBM 标识未与任何 {{site.data.keyword.Bluemix_notm}} 帐户关联？
@@ -94,20 +94,20 @@ lastupdated: "2018-11-28"
 
 您获得了登录成功消息，但未返回到控制台。
 
-使用 IBM 标识登录时，显示了登录成功消息，但未返回到 [{{site.data.keyword.Bluemix_notm}} 控制台 ](https://{DomainName}){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")。
+使用 IBM 标识登录时，显示了登录成功消息，但未返回到 [{{site.data.keyword.Bluemix_notm}} 控制台](https://{DomainName}){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")。
 {: tsSymptoms}
 
 使用以下其中一个选项：
 {: tsResolve}
  * 关闭浏览器，清除高速缓存和 cookie，然后重试登录。
- * 通过 [{{site.data.keyword.Bluemix_notm}} 控制台 ](https://{DomainName}){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标") 登录。
+ * 通过 [{{site.data.keyword.Bluemix_notm}} 控制台](https://{DomainName}){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标") 登录。
 
 
 ## 为什么我的 IBM 标识登录无法完成？
 {: #ts_login_ibmid}
 {: troubleshoot}
 
-如果您登录到 {{site.data.keyword.Bluemix_notm}}，但 IBM 标识认证无法完成，说明服务可能存在问题。 
+如果您登录到 {{site.data.keyword.Bluemix_notm}}，但 IBM 标识认证无法完成，说明服务可能存在问题。
 
 登录到 {{site.data.keyword.Bluemix_notm}} 时，使用 IBM 标识认证未完成。
 {: tsSymptoms}
@@ -134,7 +134,7 @@ IBM 标识认证服务可能发生问题。
 在注册 {{site.data.keyword.Bluemix_notm}} 轻量帐户后，您将收到包含链接的电子邮件，您必须单击该链接以确认注册。  
 {: tsCauses}
 
-确认电子邮件将发送到与您的 IBM 标识关联的电子邮件地址。检查收件箱和垃圾邮件文件夹。如果未收到确认电子邮件，请联系 [{{site.data.keyword.Bluemix_notm}} 支持人员](/docs/get-support/howtogetsupport.html)。  
+确认电子邮件将发送到与您的 IBM 标识关联的电子邮件地址。检查收件箱和垃圾邮件文件夹。如果未收到确认电子邮件，请联系 [{{site.data.keyword.Bluemix_notm}} 支持人员](/docs/get-support?topic=get-support-getting-customer-support)。  
 {: tsResolve}
 
 
@@ -158,5 +158,5 @@ IBM 标识认证服务可能发生问题。
   * 注销 {{site.data.keyword.Bluemix_notm}}，并重新登录。
   * 使用浏览器的隐私浏览模式。
   * 清除浏览器的 cookie 和高速缓存。
-  * 使用其他浏览器。有关 {{site.data.keyword.Bluemix_notm}} 支持的浏览器版本的信息，请参阅 [{{site.data.keyword.Bluemix_notm}} 先决条件](/docs/overview/prereqs.html#prereqs)。
+  * 使用其他浏览器。有关 {{site.data.keyword.Bluemix_notm}} 支持的浏览器版本的信息，请参阅 [{{site.data.keyword.Bluemix_notm}} 先决条件](/docs/overview?topic=overview-prereqs-platform)。
   * 如果安装了 Cloud Foundry 命令行界面，请输入 `ibmcloud cf apps` 命令以查看应用程序是否正在运行。

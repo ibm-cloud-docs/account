@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2016, 2018
+  years: 2016, 2019
 
-lastupdated: "2018-11-17"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -34,7 +34,7 @@ IBM ID 是您用來登入 {{site.data.keyword.Bluemix}} 帳戶以便存取及購
 
 1. 登入 SoftLayer 帳戶，並在顯示切換至 IBM ID 的提示時按一下**確定**。
 
-   如果您是主要使用者，而客戶入口網站中未顯示切換至 IBM ID 的提示，請與 IBM 支援中心聯絡以取得協助。如需與支援中心聯絡的相關資訊，請參閱[取得支援](/docs/get-support/howtogetsupport.html#getting-customer-support)。
+   如果您是主要使用者，而客戶入口網站中未顯示切換至 IBM ID 的提示，請與 IBM 支援中心聯絡以取得協助。如需與支援中心聯絡的相關資訊，請參閱[取得支援](/docs/get-support?topic=get-support-getting-customer-support)。
 
    如果您先前已登入，並在提示時按了**稍後**，但想要在現行階段作業中切換至 IBM ID 鑑別，請移至「編輯使用者設定檔」頁面，然後按一下**切換至 IBM ID**。
 
@@ -55,7 +55,7 @@ IBM ID 是您用來登入 {{site.data.keyword.Bluemix}} 帳戶以便存取及購
   * 若要使用現有的 IBM ID，請輸入使用者名稱，或 IBM ID 的電子郵件位址（如果它未在多個 IBM ID 之間共用的話）。
   * 若要建立新的 IBM ID，請輸入目前未被任何 IBM ID 使用的電子郵件位址。此電子郵件位址是 IBM ID 的使用者名稱，而且是在建立 IBM ID 之後傳送登錄碼的位置。您之後可以更新與 IBM ID 相關聯的電子郵件位址，但是無法變更使用者名稱。
 
-若要解決使用 IBM ID 進行登入的所有問題，請參閱 [{{site.data.keyword.Bluemix_notm}} 存取的疑難排解](/docs/account/ts_accessing.html#accessing)。
+若要解決使用 IBM ID 進行登入的所有問題，請參閱 [{{site.data.keyword.Bluemix_notm}} 存取的疑難排解](/docs/account?topic=account-accessing)。
 
 
 ## 鏈結 IBM ID 帳戶
@@ -74,12 +74,12 @@ IBM ID 是您用來登入 {{site.data.keyword.Bluemix}} 帳戶以便存取及購
   * 如果您的 IBM ID 有相關聯的 {{site.data.keyword.Bluemix_notm}} 帳戶，會導向至授權頁面，然後回到最終確認步驟。
   * 如果您沒有相關聯的 {{site.data.keyword.Bluemix_notm}} 帳戶，則系統會提示您建立新帳戶。
 
-若要查看有關鏈結帳戶的一般問與答，請參閱[常見問題](/docs/account/account_faq.html#al_login)。
+若要查看有關鏈結帳戶的一般問與答，請參閱[常見問題](/docs/account?topic=account-al_login)。
 
 ### 鏈結 IBM ID 使用者帳戶
 {: #link_customer_accounts}
 
-在您的使用者帳戶切換至 IBM ID 鑑別之後，轉銷商及經銷商就可以鏈結他們的使用者帳戶。您必須是 SoftLayer 主要使用者，才能鏈結客戶帳戶。作為帳戶之主要使用者的 IBM ID 必須是您所要鏈結的 {{site.data.keyword.Bluemix_notm}} 平台帳戶的擁有者。 
+在您的使用者帳戶切換至 IBM ID 鑑別之後，轉銷商及經銷商就可以鏈結他們的使用者帳戶。您必須是 SoftLayer 主要使用者，才能鏈結客戶帳戶。作為帳戶之主要使用者的 IBM ID 必須是您所要鏈結的 {{site.data.keyword.Bluemix_notm}} 平台帳戶的擁有者。
 
 帳戶在鏈結之後，即無法解除鏈結。
 {: note}
@@ -87,7 +87,7 @@ IBM ID 是您用來登入 {{site.data.keyword.Bluemix}} 帳戶以便存取及購
 請務必檢閱有關鏈結帳戶的下列重要注意事項：
 
   * 所鏈結 SoftLayer 帳戶的主要使用者必須具有 IBM ID。
-  * 您鏈結至 {{site.data.keyword.Bluemix_notm}} 帳戶的每一個使用者帳戶，都必須為具有唯一電子郵件位址的唯一 IBM ID 所擁有。即使單一 IBM ID 可以擁有多個 SoftLayer 帳戶，您還是必須為每一個帳戶將主要使用者變更為唯一 IBM ID。請與支援中心聯絡，以變更 SoftLayer 帳戶的主要使用者。如需相關資訊，請參閱[取得 {{site.data.keyword.Bluemix_notm}} 基礎架構的支援](/docs/customer-portal/cpsupport.html)。
+  * 您鏈結至 {{site.data.keyword.Bluemix_notm}} 帳戶的每一個使用者帳戶，都必須為具有唯一電子郵件位址的唯一 IBM ID 所擁有。即使單一 IBM ID 可以擁有多個 SoftLayer 帳戶，您還是必須為每一個帳戶將主要使用者變更為唯一 IBM ID。請與支援中心聯絡，以變更 SoftLayer 帳戶的主要使用者。如需相關資訊，請參閱[取得 {{site.data.keyword.Bluemix_notm}} 基礎架構的支援](/docs/customer-portal?topic=customer-portal-customerportal_support)。
   * 將新使用者新增至已鏈結帳戶時，您必須將他們同時新增至 SoftLayer 帳戶及 {{site.data.keyword.Bluemix_notm}} 帳戶，他們才能存取統一主控台的所有功能。
   * 如果您有品牌帳戶、使用 Brand Agent Portal (BAP)，而且在鏈結帳戶時需要支援，則請傳送電子郵件到下列位址以與 Revenue Services 團隊聯絡：softlayer_revenue_services_team@wwpdl.vnet.ibm.com。
 
@@ -100,17 +100,17 @@ IBM ID 是您用來登入 {{site.data.keyword.Bluemix}} 帳戶以便存取及購
    5. 看到提示時，請執行下列其中一個動作：
      * 如果您已有 {{site.data.keyword.Bluemix_notm}} 帳戶，請提供與該帳戶相關聯的電子郵件位址來鏈結帳戶。
      * 如果您沒有 {{site.data.keyword.Bluemix_notm}} 帳戶，請提供您要使用的電子郵件位址，並遵循指示以受邀加入 {{site.data.keyword.Bluemix_notm}}，然後建立帳戶。
-   6. 在您鏈結帳戶之後，請遵循前面[切換至 IBM ID](/docs/account/softlayerlink.html#switchtoIBMid) 一節中所述的程序，通知每一個帳戶的一般使用者以移轉至 IBM ID。
+   6. 在您鏈結帳戶之後，請遵循前面[切換至 IBM ID](#switchtoIBMid) 一節中所述的程序，通知每一個帳戶的一般使用者以移轉至 IBM ID。
 
       僅將一般使用者帳戶移轉至 IBM ID。請不要移轉品牌帳戶，這是一般使用者帳戶的母帳戶，未包含任何資源。移轉至 IBM ID 的品牌帳戶使用者將無法登入 Brand Agent Portal (BAP)。
       {: important}
 
 請注意，鏈結帳戶之後有下列變更：
-  
+
   * 您現在會登入 [{{site.data.keyword.Bluemix}} 主控台 ![外部鏈結圖示](../icons/launch-glyph.svg)](https://cloud.ibm.com){: new_window}。
   * 您必須使用 IBM ID 認證來存取 SoftLayer 及 {{site.data.keyword.Bluemix_notm}} 帳戶。
   * 任何現有 SoftLayer 折扣都會套用至 {{site.data.keyword.Bluemix_notm}} 費用。
-  * 您收到一張計價單位為美元 (USD) 的發票。如果您有現有的 {{site.data.keyword.Bluemix_notm}} 帳戶，則會在鏈結帳戶之後開始的新計費週期，透過 {{site.data.keyword.Bluemix_notm}} 收取基礎架構資源的費用。如需相關資訊，請參閱[已鏈結帳戶的合併計費](/docs/customer-portal/linking_accounts.html)。
+  * 您收到一張計價單位為美元 (USD) 的發票。如果您有現有的 {{site.data.keyword.Bluemix_notm}} 帳戶，則會在鏈結帳戶之後開始的新計費週期，透過 {{site.data.keyword.Bluemix_notm}} 收取基礎架構資源的費用。如需相關資訊，請參閱[已鏈結帳戶的合併計費](/docs/customer-portal?topic=customer-portal-unifybillaccounts)。
   * 您可以在 {{site.data.keyword.Bluemix_notm}} 主控台中監視標準基礎架構資源的用量。
 
 ## 已鏈結帳戶中的多因子鑑別使用
@@ -120,4 +120,4 @@ IBM ID 是您用來登入 {{site.data.keyword.Bluemix}} 帳戶以便存取及購
 
 其他多因子鑑別方法並不是根據 IBM ID。它是根據帳戶。當 IBM ID 與多個帳戶相關聯，且您在帳戶之間切換時，每次切換到需要雙因子鑑別的不同帳戶時都必須確認身分。即使前一個帳戶和新的帳戶都已配置相同的雙因子鑑別機制時也是如此。
 
-如果您先前[在客戶入口網站啟用了標準基礎架構資源的 2FA](/docs/customer-portal/cpenable2fa.html#customerportal_2fa)，然後啟用了 {{site.data.keyword.Bluemix_notm}} 帳戶 MFA 設定，則 MFA 帳戶設定會置換您在客戶入口網站中設定的 2FA。這表示您可以停用在客戶入口網站中購買的 2FA，而支持帳戶 MFA 設定。 
+如果您先前[在客戶入口網站啟用了標準基礎架構資源的 2FA](/docs/customer-portal?topic=customer-portal-customerportal_2fa)，然後啟用了 {{site.data.keyword.Bluemix_notm}} 帳戶 MFA 設定，則 MFA 帳戶設定會置換您在客戶入口網站中設定的 2FA。這表示您可以停用在客戶入口網站中購買的 2FA，而支持帳戶 MFA 設定。
