@@ -42,7 +42,7 @@ The following table lists the API method that generates an event when they are c
   </tr>
   <tr>
     <td>billing.account.create</td>
-	  <td>An event is generated when you provison an account and after the account ID is assigned to the account.</td>
+	  <td>An event is generated when you provision an account and after the account ID is assigned to the account.</td>
   </tr>
   <tr>
     <td>billing.account.update</td>
