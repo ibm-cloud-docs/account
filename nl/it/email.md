@@ -1,10 +1,12 @@
 ---
 
 copyright:
-
   years: 2015, 2018
 lastupdated: "2018-11-28"
 
+keywords: notifications, email notifications, IBM Cloud notifications, notification preferences
+
+subcollection: account
 
 ---
 
@@ -38,7 +40,7 @@ Quando selezioni di ricevere gli eventi della piattaforma non programmati, ottie
   Per impostazione predefinita, tutte le notifiche della piattaforma {{site.data.keyword.Bluemix_notm}} sono disattivate.
   {: tip}
 
-4. Fai clic su **Save**.
+4. Fai clic su **Salva**.
 
 ## Impostazione delle notifiche dell'infrastruttura
 
@@ -51,7 +53,7 @@ Se sei il proprietario di un account Pagamento a consumo o Sottoscrizione, puoi 
   Per impostazione predefinita, tutte le notifiche dell'infrastruttura {{site.data.keyword.Bluemix_notm}} sono attivate.
   {: tip}
 
-4. Fai clic su **Save**.
+4. Fai clic su **Salva**.
 
 ## Impostazione delle notifiche utente
 {: #setting-user-notifications}
@@ -62,17 +64,16 @@ Gli utenti presenti nel tuo account ricevono notifiche per i seguenti tipi di ev
 
   * Problemi o interruzioni dell'infrastruttura non programmati: i problemi che potrebbero causare un'interruzione in base a specifiche condizioni per specifici clienti.
   * Servizio programmato o manutenzione pianificata: manutenzione necessaria per mantenere l'infrastruttura operativa in uno stato ottimale
-  * Vulnerabilità della sicurezza: l'area interessata viene isolata. Viene creata una patch per chiudere la vulnerabilità e vengono eseguiti dei test per garantire che non ne risenta alcuna funzione collaterale. 
+  * Vulnerabilità della sicurezza: l'area interessata viene isolata. Viene creata una patch per chiudere la vulnerabilità e vengono eseguiti dei test per garantire che non ne risenta alcuna funzione collaterale.
   * Casi di supporto aperti: avvisa gli utenti di casi che sono aperti sul loro account.
 
 La tempistica della notifica varia a seconda che l'evento sia non programmato, programmato o pianificato. La politica dell'infrastruttura {{site.data.keyword.BluSoftlayer_notm}} è di porre rimedio ai problemi il più rapidamente possibile per rimuovere o ridurre al minimo il rischio di ulteriori problemi che potrebbero avere un impatto maggiore. A volte anche la manutenzione programmata viene eseguita solo con breve preavviso.
 
-Per configurare le notifiche di sottoscrizione per i tuoi utenti, completa questa procedura: 
+Per configurare le notifiche di sottoscrizione per i tuoi utenti, completa questa procedura:
 
-  1. Vai a **Gestisci > Account** e seleziona **Notifiche**. 
-  2. Seleziona un servizio dalla tabella. 
-  3. Nella colonna Sottoscritto, seleziona **Sì** per l'utente che vuole ricevere le notifiche. 
+  1. Vai a **Gestisci > Account** e seleziona **Notifiche**.
+  2. Seleziona un servizio dalla tabella.
+  3. Nella colonna Sottoscritto, seleziona **Sì** per l'utente che vuole ricevere le notifiche.
 
     Per trovare facilmente l'utente che stai cercando, fai clic su **Filtro** e filtra in base al nome, al cognome o al nome utente.
     {: tip}
-

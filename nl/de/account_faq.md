@@ -1,10 +1,12 @@
 ---
 
 copyright:
-
   years: 2015, 2019
+lastupdated: "2019-02-26"
 
-lastupdated: "2019-02-06"
+keywords: account, upgrade, account settings, IBM Cloud account, Lite account
+
+subcollection: account
 
 ---
 
@@ -49,7 +51,7 @@ Weitere Informationen zum Verwalten von Organisationen und Bereichen finden Sie 
 {: #move-org-diff-account}
 {: faq}
 
-Es ist derzeit nicht möglich, eine Organisation in ein anderes Konto zu migrieren.
+Es ist derzeit nicht möglich, eine Organisation in ein anderes Konto zu versetzen. Sie können die Organisation jedoch mit denselben Berechtigungsnachweisen in einem anderen Konto erneut erstellen und so diese Funktionalität nachahmen. Weitere Informationen finden Sie in [Organisationen und Bereiche hinzufügen](https://cloud.ibm.com/docs/account?topic=account-orgsspacesusers#createorg).
 
 
 ## Welche Cloud Foundry-Regionen kann ich verwenden?
@@ -121,9 +123,9 @@ Zum Zurücksetzen Ihres Kontokennworts rufen Sie das Avatarsymbol ![Avatarsymbol
 
 Führen Sie die folgenden Schritte aus, um Ihr VPN-Kennwort zurückzusetzen:
 
-  1. Rufen Sie **Verwalten > Zugriff (IAM)** auf und wählen Sie **Benutzer** aus. 
+  1. Rufen Sie **Verwalten > Zugriff (IAM)** auf und wählen Sie **Benutzer** aus.
   2. Wählen Sie den Benutzer aus.
-  3. Klicken Sie im Abschnitt zu den VPN-Teilnetzen auf das Bearbeitungssymbol ![Bearbeitungssymbol](../icons/icon_write.svg), um ein neues VPN-Kennwort einzugeben. 
+  3. Klicken Sie im Abschnitt zu den VPN-Teilnetzen auf das Bearbeitungssymbol ![Bearbeitungssymbol](../icons/icon_write.svg), um ein neues VPN-Kennwort einzugeben.
   5. Klicken Sie auf **Anwenden**.
 
 
@@ -246,7 +248,7 @@ Rufen Sie [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} !
 {: #know-about-tags}
 {: faq}
 
-Mithilfe von Tags können Sie Ressourcen in Ihrem Konto organisieren und anzeigen, indem Sie in der Ressourcenliste Tags zum Filtern verwenden. Weitere Informationen finden Sie in [Ressourcen mit Tags kennzeichnen](/docs/resources?topic=resources-add-remove#add-remove). 
+Mithilfe von Tags können Sie Ressourcen in Ihrem Konto organisieren und anzeigen, indem Sie in der Ressourcenliste Tags zum Filtern verwenden. Weitere Informationen finden Sie in [Ressourcen mit Tags kennzeichnen](/docs/resources?topic=resources-add-remove#add-remove).
 
 ## Wer kann die Tags in einem Konto anzeigen?
 {: #tags-visibility-account}

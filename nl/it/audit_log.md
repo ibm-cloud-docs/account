@@ -1,10 +1,12 @@
 ---
 
 copyright:
+  years: 2018, 2019
+lastupdated: "2019-02-05"
 
-  years: 2018
+keywords: audit log, user access, account log
 
-lastupdated: "2018-11-12"
+subcollection: account
 
 ---
 
@@ -18,17 +20,21 @@ lastupdated: "2018-11-12"
 # Monitoraggio degli eventi di sistema con un log di controllo
 {: #audit-log}
 
-Se hai un account dell'infrastruttura classica, puoi monitorare gli eventi di replica dell'archiviazione visualizzando i log di controllo. I log di controllo tracciano le interazioni di ciascun utente, come i tentativi di accesso, gli aggiornamenti della velocità di porta, i riavvii dell'alimentazione e le interazioni effettuate dallo staff di supporto dell'infrastruttura {{site.data.keyword.BluSoftlayer_notm}}. {:shortdesc}
+Se hai un account dell'infrastruttura classica, puoi monitorare gli eventi di replica dell'archiviazione visualizzando i log di controllo. I log di controllo tracciano le interazioni di ciascun utente, come i tentativi di accesso, gli aggiornamenti della velocità di porta, i riavvii dell'alimentazione e le interazioni effettuate dallo staff di supporto dell'infrastruttura {{site.data.keyword.BluSoftlayer_notm}}.
+{:shortdesc}
 
 
-## Visualizzazione del tuo log di controllo
+## Visualizzazione del log di controllo 
+{: #view-audit-log}
 
-Per visualizzare il tuo log di controllo, vai a **Account > Gestisci** e seleziona **Log di controllo**. Il log di controllo visualizza inizialmente le ultime 25 interazioni effettuate dagli utenti nell'account. Puoi visualizzare fino a 200 interazioni in qualsiasi momento. Espandi il menu Elementi per pagina per visualizzare più risultati. 
+Per visualizzare il tuo log di controllo, vai a **Gestisci > Account** e seleziona **Log di controllo**. Il log di controllo visualizza inizialmente le ultime 25 interazioni effettuate dagli utenti nell'account. Puoi visualizzare fino a 200 interazioni in qualsiasi momento. Espandi il menu Elementi per pagina per visualizzare più risultati.
 
 ### Visualizzazione dei log di accesso per un utente
+{: #view-access-logs}
+
 Dalla pagina del log di controllo, puoi anche visualizzare i dati per ciascun tentativo di accesso effettuato da uno specifico utente. I log visualizzano un indicatore di data e ora e l'indirizzo IP per ogni tentativo di accesso. Utilizza la seguente procedura per visualizzare i log di accesso di un utente.
 
-1. Vai a **Gestisci > Account** e seleziona **Log di controllo**. 
+1. Vai a **Gestisci > Account** e seleziona **Log di controllo**.
 2. Seleziona quindi **Filtro** per l'utente, seleziona il periodo di tempo che vuoi visualizzare e scegli un tipo di oggetto.  
 
-Il log di accesso per ciascun utente visualizza i tentativi di accesso effettuati da tale utente per data, insieme all'indirizzo IP da cui è stato effettuato il tentativo. Le informazioni nel log di accesso sono di sola lettura. 
+Il log di accesso per ciascun utente visualizza i tentativi di accesso effettuati da tale utente per data, insieme all'indirizzo IP da cui è stato effettuato il tentativo. Le informazioni nel log di accesso sono di sola lettura.

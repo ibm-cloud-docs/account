@@ -1,10 +1,12 @@
 ---
 
 copyright:
-
   years: 2015, 2018
-
 lastupdated: "2018-11-28"
+
+keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
+
+subcollection: account
 
 ---
 
@@ -107,7 +109,7 @@ Verwenden Sie eine der folgenden Optionen:
 {: #ts_login_ibmid}
 {: troubleshoot}
 
-Wenn Sie sich bei {{site.data.keyword.Bluemix_notm}} anmelden und die Authentifizierung Ihrer IBMid nicht vollständig ausgeführt wird, möglicherweise ein Problem mit dem Service vor. 
+Wenn Sie sich bei {{site.data.keyword.Bluemix_notm}} anmelden und die Authentifizierung Ihrer IBMid nicht vollständig ausgeführt wird, möglicherweise ein Problem mit dem Service vor.
 
 Wenn Sie sich bei {{site.data.keyword.Bluemix_notm}} anmelden, wird die Authentifizierung mit der IBMid nicht vollständig abgeschlossen.
 {: tsSymptoms}

@@ -1,9 +1,12 @@
 ---
 
 copyright:
-
   years: 2015, 2019
 lastupdated: "2019-01-28"
+
+keywords: account, add orgs, add spaces, manage users, user access
+
+subcollection: account
 
 ---
 
@@ -83,4 +86,4 @@ Per aggiungere uno spazio, completa la seguente procedura:
   1. Fai clic sul nome dell'organizzazione a cui vuoi aggiungere uno spazio.
   2. Fai clic su **Aggiungi uno spazio**.
   3. Seleziona una regione e immetti un nome.
-  4. Fai clic su **Save**.
+  4. Fai clic su **Salva**.

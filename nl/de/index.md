@@ -1,9 +1,12 @@
 ---
 
 copyright:
-
   years: 2015, 2019
 lastupdated: "2019-02-13"
+
+keywords: account types, Lite, free account, paid account, buy account, account difference, compare account
+
+subcollection: account
 
 ---
 
@@ -68,7 +71,7 @@ Die folgende Liste enthält zentrale Features, die mit einem Lite-Konto zur Verf
 ### Upgrade für Lite-Konto durchführen
 {: #upgrade-lite-account}
 
-Sie können ein Upgrade auf ein nutzungsabhängiges Konto oder ein Abonnementkonto durchführen. Weitere Informationen finden Sie in [Wie kann ich ein Upgrade meines Kontotyps durchführen oder den Kontotyp konvertieren?](/docs/account?topic=account-changeacct). 
+Sie können ein Upgrade auf ein nutzungsabhängiges Konto oder ein Abonnementkonto durchführen. Weitere Informationen finden Sie in [Wie kann ich ein Upgrade meines Kontotyps durchführen oder den Kontotyp konvertieren?](/docs/account?topic=account-changeacct).
 
 Nach dem Upgrade auf ein Konto mit nutzungsabhängiger Zahlung erhalten Sie eine Werbegutschrift in Höhe von 200 US-Dollar. Dieses Guthaben wird Ihrem Konto automatisch gutgeschrieben. Die Gutschrift von 200 US-Dollar hat eine Gültigkeit von 30 Tagen und wird automatisch mit Ihrer Rechnung verrechnet. Die Gutschrift kann nicht mit Angeboten anderer Anbieter verwendet werden.
 
@@ -83,7 +86,7 @@ Darüber hinaus können mit einem nutzungsabhängigen Konto optionale Features, 
 ### Upgrade für nutzungsabhängiges Konto durchführen
 {: #upgrade-to-subscription}
 
-Wenn Sie für ein nutzungsabhängiges Konto ein Upgrade auf ein Abonnementkonto durchführen möchten, wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}}-Vertrieb](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link"). 
+Wenn Sie für ein nutzungsabhängiges Konto ein Upgrade auf ein Abonnementkonto durchführen möchten, wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}}-Vertrieb](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link").
 
 ## Abonnementkonto
 {: #subscription-account}

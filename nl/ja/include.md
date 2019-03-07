@@ -1,9 +1,12 @@
 ---
 
 copyright:
-
   years: 2017, 2019
 lastupdated: "2019-01-28"
+
+keywords: add user, share resource, private resource, share catalog
+
+subcollection: account
 
 ---
 
@@ -21,7 +24,7 @@ lastupdated: "2019-01-28"
 {{site.data.keyword.Bluemix}} [コマンド・ライン・インターフェース (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) またはコンソールを使用して、アカウントに追加されたプライベート・リソースをユーザーが表示することを許可するためのアクセス権限が自分にあるかどうかを判断できます。 アカウント所有者は、アクセス・ポリシーを割り当てることによって、コンソールからアカウント内のユーザーにアクセス権限を付与できます。 詳しくは、[アカウントへのアクセスの管理](/docs/account?topic=account-find-access)を参照してください。
 
 ## リソースの検出
-{: #find-resource}
+{: #find-resource-inc}
 
 `ibmcloud catalog service <service-id or service-name>` コマンドを実行します。 service-id 変数または service-name 変数はリソース名または ID で置き換えてください。 返される情報に、リソース内の項目の子リソースを示す階層が表示されます。
 
@@ -37,7 +40,7 @@ includes-add フラグの後に、アカウントに関連付けられた E メ�
 コマンドを実行した後、リソースを組み込むプロセスに約 30 分かかります。 30 分後に、ログアウトしてアカウントに戻り、組み込まれたリソースを確認します。
 
 ## 組み込みリストからのアカウントの削除
-{: #remove-exclude}
+{: #remove-include}
 
 組み込みリストからアカウントを削除するには、以下のコマンドを実行します。
 

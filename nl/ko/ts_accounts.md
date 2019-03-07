@@ -1,10 +1,12 @@
 ---
 
 copyright:
-
   years: 2015, 2019
-
 lastupdated: "2019-02-13"
+
+keywords: troubleshoot account, account problem, account support, account help, org error, resource error, error message
+
+subcollection: account
 ---
 
 {:tsSymptoms: .tsSymptoms}

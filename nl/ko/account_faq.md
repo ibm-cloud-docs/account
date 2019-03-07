@@ -1,10 +1,12 @@
 ---
 
 copyright:
-
   years: 2015, 2019
+lastupdated: "2019-02-26"
 
-lastupdated: "2019-02-06"
+keywords: account, upgrade, account settings, IBM Cloud account, Lite account
+
+subcollection: account
 
 ---
 
@@ -31,9 +33,9 @@ lastupdated: "2019-02-06"
 계정을 작성하는 중에 오류가 발생하는 경우에는 지원 케이스를 작성할 수 있습니다.
 
 1. {{site.data.keyword.Bluemix}} 콘솔 메뉴 표시줄에서 **지원**을 클릭하십시오.
-2. _추가 도움 필요_ 섹션에서 **케이스 작성**을 클릭하십시오. 
-3. 케이스에 대한 질문에 답변하십시오. 
-4. 케이스가 열리면 이메일 알림이 발송됩니다. 추가로 소통하려면 지시사항을 따르십시오. 
+2. _추가 도움 필요_ 섹션에서 **케이스 작성**을 클릭하십시오.
+3. 케이스에 대한 질문에 답변하십시오.
+4. 케이스가 열리면 이메일 알림이 발송됩니다. 추가로 소통하려면 지시사항을 따르십시오.
 
 
 ## Cloud Foundry란 무엇입니까?
@@ -49,7 +51,7 @@ Cloud Foundry는 클라우드에서 애플리케이션을 빌드하고 배치하
 {: #move-org-diff-account}
 {: faq}
 
-현재는 조직을 다른 계정으로 마이그레이션할 수 없습니다.
+현재는 조직을 다른 계정으로 이동할 수 없습니다. 그러나 다른 계정에 동일한 인증 정보로 해당 조직을 다시 작성하여 이 기능을 흉내낼 수는 있습니다. 자세한 정보는 [조직 및 영역 추가](https://cloud.ibm.com/docs/account?topic=account-orgsspacesusers#createorg)를 참조하십시오.
 
 
 ## 어떤 Cloud Foundry 지역을 사용할 수 있습니까?
@@ -102,7 +104,7 @@ Lite 플랜 인스턴스의 어느 할당량에든 도달하면 해당 월에 �
 {: #upgrade}
 {: faq}
 
-종량과금제 계정을 구독 계정으로 업그레이드하려면 [IBM Cloud 영업 팀](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")에 문의하십시오. 
+종량과금제 계정을 구독 계정으로 업그레이드하려면 [IBM Cloud 영업 팀](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")에 문의하십시오.
 
 
 ## 내 신용카드는 어떻게 업데이트합니까?
@@ -212,7 +214,7 @@ $200 프로모션 크레딧에 대해 자세히 알아보려면 [종량과금제
 
 이는 계정이 모든 {{site.data.keyword.Bluemix_notm}} 플랫폼 오퍼링에 액세스할 수 있음을 의미합니다. {{site.data.keyword.Bluemix_notm}} 플랫폼 오퍼링을 계정에 추가한 후에 계정 마스터는 사용자가 오퍼링에 액세스할 수 있도록 허용해야 합니다.
 
-계정 마스터가 수행하는 작업에 대한 자세한 정보는 [사용자 관련 작업](/docs/iam?topic=iam-iamuserinv#iamuserinv)을 참조하십시오. 
+계정 마스터가 수행하는 작업에 대한 자세한 정보는 [사용자 관련 작업](/docs/iam?topic=iam-iamuserinv#iamuserinv)을 참조하십시오.
 
 ## 계정을 연결하면 내 SoftLayer 마스터 계정 ID에 어떤 영향이 있습니까?
 {: #al_howaffslmastacct}
@@ -240,7 +242,7 @@ IBM ID를 사용하여 {{site.data.keyword.Bluemix_notm}} 콘솔에 액세스할
 
 {{site.data.keyword.Bluemix_notm}}에 사용자를 등록할 경우 각 사용자를 개별적으로 등록해야 합니다. {{site.data.keyword.Bluemix_notm}}에서는 사용자 일괄 등록을 지원하지 않습니다.
 
-[{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")로 이동하여 **{{site.data.keyword.Bluemix_notm}} 계정 작성**을 클릭하십시오. 그 후 각 개별 사용자에 대해 계정 등록 양식을 완성하십시오. 
+[{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")로 이동하여 **{{site.data.keyword.Bluemix_notm}} 계정 작성**을 클릭하십시오. 그 후 각 개별 사용자에 대해 계정 등록 양식을 완성하십시오.
 
 ## 태그란 무엇입니까?
 {: #know-about-tags}

@@ -5,6 +5,10 @@ copyright:
   years: 2017, 2019
 lastupdated: "2019-01-28"
 
+keywords: hide resource, limit viewer, exclude user, hide service
+
+subcollection: account
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -26,7 +30,7 @@ Durch das Ausblenden einer Ressource im Katalog wird diese Ressource nicht aus d
 Über die [Befehlszeilenschnittstelle (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) oder die Konsole von {{site.data.keyword.Bluemix}} können Sie ermitteln, ob Sie über die erforderliche Zugriffsberechtigung verfügen, um Benutzern das Anzeigen einer privaten Ressource zu ermöglichen, die zum Konto hinzugefügt wurde. Als Kontoeigner können Sie einem Benutzer in Ihrem Konto die Zugriffsberechtigung über die Konsole erteilen, indem Sie eine Zugriffsrichtlinie zuweisen. Weitere Informationen finden Sie in [Zugriff auf Konto verwalten](/docs/account?topic=account-find-access).
 
 ## Ressource suchen
-{: #find-resource}
+{: #find-resource-exc}
 
 Führen Sie den Befehl `ibmcloud catalog search <service-id or service-name>` aus, um nach einer Ressource zu suchen. Ersetzen Sie die Variable 'service-id or service-name' durch den Namen oder die ID einer Ressource. Mithilfe der zurückgegebenen Informationen können Sie nach der ID oder dem Namen des Service suchen, der ausgeblendet werden soll.
 
@@ -87,6 +91,6 @@ Children           Name                                          Kind         ID
                       |__standard-alias-us-south             alias        cloudant-standard:alias:us-south             us-south
 ```
 
-Suchen Sie die ID für ein Objekt und schließen Sie ein Konto aus, indem Sie den Befehl `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>` ausführen. 
+Suchen Sie die ID für ein Objekt und schließen Sie ein Konto aus, indem Sie den Befehl `ibmcloud catalog entry-visibility-set <resource-id> --excludes-add <account-id or account-email>` ausführen.
 
 Weitere Informationen zur Funktionsweise der Sichtbarkeit finden Sie in den [Katalog-API-Dokumenten](https://{DomainName}/apidocs/globalcatalog).

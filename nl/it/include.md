@@ -1,9 +1,12 @@
 ---
 
 copyright:
-
   years: 2017, 2019
 lastupdated: "2019-01-28"
+
+keywords: add user, share resource, private resource, share catalog
+
+subcollection: account
 
 ---
 
@@ -21,9 +24,9 @@ Qualsiasi risorsa privata {{site.data.keyword.Bluemix}} che crei è limitata per
 Puoi utilizzare l'{{site.data.keyword.Bluemix}} [interfaccia riga di comando (CLI, command-line interface)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) o la console per determinare se disponi dell'accesso per consentire agli utenti di visualizzare una risorsa privata che era stata aggiunta all'account. Se sei un proprietario di account, puoi concedere l'accesso a un utente nel tuo account dalla console assegnando una politica di accesso. Per ulteriori informazioni, vedi [Gestione dell'accesso al tuo account](/docs/account?topic=account-find-access).
 
 ## Individuazione della tua risorsa
-{: #find-resource}
+{: #find-resource-inc}
 
-Esegui il comando `ibmcloud catalog service<service-id or service-name>`. Sostituisci le variabili service-id o service-name con il nome o l'ID della tua risorsa. Utilizza le informazioni restituite per visualizzare la gerarchia, che mostra le risorse secondarie degli elementi nella tua risorsa.
+Esegui `ibmcloud catalog service <service-id or service-name>`. Sostituisci le variabili service-id o service-name con il nome o l'ID della tua risorsa. Utilizza le informazioni restituite per visualizzare la gerarchia, che mostra le risorse secondarie degli elementi nella tua risorsa.
 
 ## Impostazione della visibilità includendo un account
 {: #vis-inc}
@@ -37,7 +40,7 @@ Dopo l'indicatore includes-add, puoi aggiungere un elenco separato da virgole di
 Dopo che hai eseguito il comando, il processo per includere la risorsa richiede circa 30 minuti. Dopo 30 minuti, scollegati e torna al tuo account per vedere la risorsa inclusa.
 
 ## Rimozione di un account dall'elenco di inclusione
-{: #remove-exclude}
+{: #remove-include}
 
 Esegui il seguente comando per rimuovere un account dall'elenco di inclusione.
 

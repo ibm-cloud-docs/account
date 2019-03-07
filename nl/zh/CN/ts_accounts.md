@@ -1,10 +1,12 @@
 ---
 
 copyright:
-
   years: 2015, 2019
-
 lastupdated: "2019-02-13"
+
+keywords: troubleshoot account, account problem, account support, account help, org error, resource error, error message
+
+subcollection: account
 ---
 
 {:tsSymptoms: .tsSymptoms}
@@ -173,7 +175,7 @@ lastupdated: "2019-02-13"
 {: tsResolve}
 
   * 在控制台菜单栏中，单击**管理 > 帐户**，然后选择**组织**。然后，选择要在其中创建空间的组织，并单击**创建空间**。
-  * 在 {{site.data.keyword.Bluemix_notm}} 命令行界面中，输入 `ibmcloud account space-create <space_name> -o <organization_name>`。
+  * 在 {{site.data.keyword.Bluemix_notm}} 命令行界面中，输入 `ibmcloud account space-create <space_name> -o <organization_name>`.
 
 
 ## 为什么某些应用程序共享一个域名？

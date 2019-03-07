@@ -1,10 +1,12 @@
 ---
 
 copyright:
-
   years: 2015, 2019
+lastupdated: "2019-02-26"
 
-lastupdated: "2019-02-06"
+keywords: account, upgrade, account settings, IBM Cloud account, Lite account
+
+subcollection: account
 
 ---
 
@@ -49,7 +51,7 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 {: #move-org-diff-account}
 {: faq}
 
-目前，您还不能将组织迁移到其他帐户中。
+目前，您还不能将组织移动到其他帐户中。但是，可以在其他帐户中使用相同凭证来重新创建该组织以模拟此功能。有关更多信息，请参阅[添加组织和空间](https://cloud.ibm.com/docs/account?topic=account-orgsspacesusers#createorg)。
 
 
 ## 我可以使用哪些 Cloud Foundry 区域？

@@ -1,9 +1,12 @@
 ---
 
 copyright:
-
   years: 2015, 2019
 lastupdated: "2019-02-13"
+
+keywords: account types, Lite, free account, paid account, buy account, account difference, compare account
+
+subcollection: account
 
 ---
 
@@ -84,7 +87,6 @@ Inoltre, con un account Pagamento a consumo, puoi ordinare elementi facoltativi 
 {: #upgrade-to-subscription}
 
 Per eseguire l'upgrade del tuo account Pagamento a consumo a un account Sottoscrizione, contatta il settore [Vendite di {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno").
-
 
 ## Account Sottoscrizione
 {: #subscription-account}

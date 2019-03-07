@@ -5,6 +5,10 @@ copyright:
   years: 2017, 2019
 lastupdated: "2019-01-28"
 
+keywords: hide resource, limit viewer, exclude user, hide service
+
+subcollection: account
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -26,7 +30,7 @@ lastupdated: "2019-01-28"
 {{site.data.keyword.Bluemix}} [コマンド・ライン・インターフェース (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) またはコンソールを使用して、アカウントに追加されたプライベート・リソースをユーザーが表示することを許可するためのアクセス権限が自分にあるかどうかを判断できます。 アカウント所有者は、アクセス・ポリシーを割り当てることによって、コンソールからアカウント内のユーザーにアクセス権限を付与できます。 詳しくは、[アカウントへのアクセスの管理](/docs/account?topic=account-find-access)を参照してください。
 
 ## リソースの検出
-{: #find-resource}
+{: #find-resource-exc}
 
 `ibmcloud catalog search <service-id or service-name>` コマンドを実行してリソースを検索します。 service-id 変数または service-name 変数はリソース名または ID に置換してください。 返ってきた情報を使用して、非表示にするサービスの ID または名前を見つけます。
 

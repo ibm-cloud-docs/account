@@ -1,10 +1,12 @@
 ---
 
 copyright:
-
   years: 2018, 2019
-
 lastupdated: "2019-02-05"
+
+keywords: audit log, user access, account log
+
+subcollection: account
 
 ---
 
@@ -25,14 +27,14 @@ Wenn Sie über ein Konto der klassischen Infrastruktur verfügen, können Sie Sp
 ## Auditprotokoll anzeigen
 {: #view-audit-log}
 
-Rufen Sie zum Anzeigen des Auditprotokolls **Verwalten > Konto** auf und wählen Sie **Auditprotokoll** aus. Im Auditprotokoll werden anfangs die letzten 25 Interaktionen von Benutzern mit dem Konto angezeigt. Sie können jederzeit bis zu 200 Interaktionen anzeigen. Erweitern Sie das Menü für die Anzeige der Elemente pro Seite, um weitere Ergebnisse anzuzeigen. 
+Rufen Sie zum Anzeigen des Auditprotokolls **Verwalten > Konto** auf und wählen Sie **Auditprotokoll** aus. Im Auditprotokoll werden anfangs die letzten 25 Interaktionen von Benutzern mit dem Konto angezeigt. Sie können jederzeit bis zu 200 Interaktionen anzeigen. Erweitern Sie das Menü für die Anzeige der Elemente pro Seite, um weitere Ergebnisse anzuzeigen.
 
 ### Zugriffsprotokoll eines Benutzers anzeigen
 {: #view-access-logs}
 
 Auf der Auditprotokollseite können Sie auch Daten zu den einzelnen Zugriffsversuchen eines bestimmten Benutzers anzeigen. In den Protokollen sind für jeden Zugriffsversuch eine Datums-und Zeitmarke und eine IP-Adresse angegeben. Führen Sie die folgenden Schritte aus, um das Zugriffsprotokoll eines Benutzers anzuzeigen.
 
-1. Rufen Sie **Verwalten > Konto** auf und wählen Sie **Auditprotokoll** aus. 
+1. Rufen Sie **Verwalten > Konto** auf und wählen Sie **Auditprotokoll** aus.
 2. **Filtern** Sie dann anhand des Benutzers, wählen Sie den Zeitrahmen aus, der angezeigt werden soll, und wählen Sie einen Objekttyp aus.  
 
-Im Zugriffsprotokoll werden für jeden Benutzer die von ihm unternommenen Zugriffsversuche nach Datum sortiert zusammen mit der IP-Adresse angezeigt, über die der Zugriffsversuch erfolgte. Die Informationen im Zugriffsprotokoll sind schreibgeschützt. 
+Im Zugriffsprotokoll werden für jeden Benutzer die von ihm unternommenen Zugriffsversuche nach Datum sortiert zusammen mit der IP-Adresse angezeigt, über die der Zugriffsversuch erfolgte. Die Informationen im Zugriffsprotokoll sind schreibgeschützt.

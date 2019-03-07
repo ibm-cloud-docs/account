@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-
   years: 2015, 2019
 lastupdated: "2019-02-15"
+
+keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy
+
+subcollection: account
 
 ---
 

@@ -1,9 +1,12 @@
 ---
 
 copyright:
-
   years: 2017, 2019
 lastupdated: "2019-01-28"
+
+keywords: add user, share resource, private resource, share catalog
+
+subcollection: account
 
 ---
 
@@ -21,7 +24,7 @@ lastupdated: "2019-01-28"
 {{site.data.keyword.Bluemix}} [명령행 인터페이스(CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) 또는 콘솔을 사용하여 계정에 추가된 개인용 리소스를 사용자가 볼 수 있도록 허용하는 액세스 권한이 있는지 여부를 판별할 수 있습니다. 계정 소유자는 액세스 정책을 지정하여 콘솔에서 계정의 사용자에게 액세스를 제공할 수 있습니다. 자세한 정보는 [계정에 대한 액세스 관리](/docs/account?topic=account-find-access)를 참조하십시오.
 
 ## 리소스 찾기
-{: #find-resource}
+{: #find-resource-inc}
 
 `ibmcloud catalog service <service-id or service-name>` 명령을 실행하십시오. service-id 또는 service-name 변수를 리소스 이름 또는 ID로 바꾸십시오. 리턴된 정보를 사용하면 리소스에 있는 항목의 하위 리소스를 표시하는 계층 구조를 볼 수 있습니다.
 
@@ -37,7 +40,7 @@ includes-add 플래그 뒤에 계정과 연관된 ID 또는 쉼표로 구분된 
 명령을 실행한 후 리소스를 포함하는 프로세스는 약 30분 정도 걸립니다. 30분 후 계정에서 로그아웃한 다음 로그인하여 포함된 리소스를 확인하십시오.
 
 ## 포함 목록에서 계정 제거
-{: #remove-exclude}
+{: #remove-include}
 
 포함 목록에서 계정을 제거하려면 다음 명령을 실행하십시오.
 

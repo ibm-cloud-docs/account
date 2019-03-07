@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-
   years: 2015, 2019
 lastupdated: "2019-02-15"
+
+keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy
+
+subcollection: account
 
 ---
 
@@ -40,13 +41,13 @@ IBM ID は、インフラストラクチャー、サービス、およびアプ�
 ## Cookie の設定の変更
 {: #tracking}
 
-{{site.data.keyword.Bluemix_notm}} コンソールでは、セキュア・ログインの提供、トランザクションの処理、および設定の保存など、セッションを管理するために Cookie が必要です。ユーザーに合わせてよりパーソナライズされたエクスペリエンスを構築したり、より適切なサポートを提供するためには、追加の Cookie が使用されます。Cookie の設定を IBM 標準デフォルトから変更すると、チャット通信などの一部の機能を使用できなくなる可能性があります。
+{{site.data.keyword.Bluemix_notm}} コンソールでは、セキュア・ログインの提供、トランザクションの処理、および設定の保存など、セッションを管理するために Cookie が必要です。 ユーザーに合わせてよりパーソナライズされたエクスペリエンスを構築したり、より適切なサポートを提供するためには、追加の Cookie が使用されます。 Cookie の設定を IBM 標準デフォルトから変更すると、チャット通信などの一部の機能を使用できなくなる可能性があります。
 
 設定を IBM 標準デフォルトから変更するには、以下のステップを実行します。
 1. **「{{site.data.keyword.avatar}}」**アイコン ![「アバター」アイコン](../icons/i-avatar-icon.svg) &gt; **「プライバシー」**に移動します。
 1. **「Cookie 設定の表示 (View cookie settings)」**をクリックします。
 1. スライダーを移動して、許可される Cookie のレベルを選択します。
 
-   **「詳細設定」**をクリックすると、各レベルの Cookie の正確な会社およびドメインを表示できます。次に、**「基本設定」**をクリックして、Cookie の設定選択に戻ります。
+   **「詳細設定」**をクリックすると、各レベルの Cookie の正確な会社およびドメインを表示できます。 次に、**「基本設定」**をクリックして、Cookie の設定選択に戻ります。
    {: tip}
 1. **「同意してカスタム設定を保存 (Agree and save custom settings)」**をクリックします。
