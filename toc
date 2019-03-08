@@ -36,7 +36,7 @@ Managing your account
         manageorg.md
 
     {: .topicgroup}
-    Managing catalog visiblity
+    Managing catalog visibility
         access.md
         include.md
         exclude.md
