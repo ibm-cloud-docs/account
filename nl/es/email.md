@@ -1,10 +1,12 @@
 ---
 
 copyright:
-
   years: 2015, 2018
 lastupdated: "2018-11-28"
 
+keywords: notifications, email notifications, IBM Cloud notifications, notification preferences
+
+subcollection: account
 
 ---
 
@@ -19,7 +21,7 @@ lastupdated: "2018-11-28"
 # Configuración de las preferencias de correo electrónico
 {: #email-prefs}
 
-En función del tipo de cuenta de {{site.data.keyword.Bluemix}}, puede seleccionar si desea recibir notificaciones de correo electrónico sobre sucesos no planificados de la plataforma {{site.data.keyword.Bluemix}} o notificaciones de correo electrónico de infraestructura sobre sucesos no planificados, mantenimiento y anuncios. También puede optar por establecer suscripciones de notificación para sucesos de infraestructura clásica. 
+En función del tipo de cuenta de {{site.data.keyword.Bluemix}}, puede seleccionar si desea recibir notificaciones de correo electrónico sobre sucesos no planificados de la plataforma {{site.data.keyword.Bluemix}} o notificaciones de correo electrónico de infraestructura sobre sucesos no planificados, mantenimiento y anuncios. También puede optar por establecer suscripciones de notificación para sucesos de infraestructura clásica.
 {: shortdesc}
 
 ## Establecimiento de notificaciones de plataforma
@@ -62,17 +64,16 @@ Los usuarios de la cuenta reciben notificaciones de los siguientes tipos de suce
 
   * Problemas o paradas de infraestructura no planificados: Problemas que podrían causar una interrupción en determinadas condiciones para clientes específicos.
   * Mantenimiento o servicio planificado: Mantenimiento necesario para que la infraestructura siga funcionando en estado óptimo.
-  * Vulnerabilidades de seguridad: El área afectada está aislada. Se crea un parche para cerrar la vulnerabilidad y se realizan pruebas para garantizar que no esté afectada ninguna función colateral. 
+  * Vulnerabilidades de seguridad: El área afectada está aislada. Se crea un parche para cerrar la vulnerabilidad y se realizan pruebas para garantizar que no esté afectada ninguna función colateral.
   * Casos de soporte abiertos: Alerta a los usuarios de los casos abiertos en su cuenta.
 
 La hora de la notificación varía en función de si el suceso está o no planificado. La política de la infraestructura de {{site.data.keyword.BluSoftlayer_notm}} es remediar problemas lo antes posible para eliminar o minimizar el riesgo de más problemas al desarrollar lo que podría tener un mayor impacto. A veces incluso el mantenimiento planificado se realiza con solo una notificación brevemente avanzada.
 
-Para configurar notificaciones de suscripción para los usuarios, complete los pasos siguientes: 
+Para configurar notificaciones de suscripción para los usuarios, complete los pasos siguientes:
 
-  1. Vaya a **Gestionar > Cuenta** y seleccione **Notificaciones**. 
-  2. Seleccione un servicio de la tabla. 
-  3. En la columna Suscrito, seleccione **Sí** para el usuario que desea recibir notificaciones. 
+  1. Vaya a **Gestionar > Cuenta** y seleccione **Notificaciones**.
+  2. Seleccione un servicio de la tabla.
+  3. En la columna Suscrito, seleccione **Sí** para el usuario que desea recibir notificaciones.
 
-    Para encontrar el usuario fácilmente, pulse en **Filtrar** y filtre por nombre, apellido o nombre de usuario. 
+    Para encontrar el usuario fácilmente, pulse en **Filtrar** y filtre por nombre, apellido o nombre de usuario.
     {: tip}
-

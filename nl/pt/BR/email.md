@@ -1,10 +1,12 @@
 ---
 
 copyright:
-
   years: 2015, 2018
 lastupdated: "2018-11-28"
 
+keywords: notifications, email notifications, IBM Cloud notifications, notification preferences
+
+subcollection: account
 
 ---
 
@@ -62,17 +64,16 @@ Os usuários em sua conta recebem notificações para os tipos de eventos operac
 
   * Problemas ou indisponibilidades de infraestrutura não planejados: problemas que podem causar uma indisponibilidade com base em determinadas condições para clientes específicos.
   * Serviço planejado ou manutenção planejada: manutenção que é necessária para manter a infraestrutura em operação no status ideal.
-  * Vulnerabilidades de segurança: a área afetada é isolada. Uma correção é criada para fechar a vulnerabilidade e os testes são executados na correção para assegurar que nenhuma função indireta seja afetada. 
+  * Vulnerabilidades de segurança: a área afetada é isolada. Uma correção é criada para fechar a vulnerabilidade e os testes são executados na correção para assegurar que nenhuma função indireta seja afetada.
   * Casos de suporte abertos: alerta os usuários de casos que são abertos em sua conta.
 
 A sincronização da notificação varia dependendo se o evento é planejado ou não planejado. A política de infraestrutura do {{site.data.keyword.BluSoftlayer_notm}} é solucionar problemas o mais rápido possível para remover ou minimizar o risco de problemas adicionais que possam ter um impacto maior. Às vezes, mesmo a manutenção planejada é executada com somente uma notificação avançada.
 
-Para configurar notificações de assinatura para seus usuários, conclua as etapas a seguir: 
+Para configurar notificações de assinatura para seus usuários, conclua as etapas a seguir:
 
-  1. Acesse **Gerenciar > Conta** e selecione **Notificações**. 
-  2. Selecione um serviço na tabela. 
-  3. Na coluna Inscrito, selecione **Sim** para o usuário que deseja receber notificações. 
+  1. Acesse **Gerenciar > Conta** e selecione **Notificações**.
+  2. Selecione um serviço na tabela.
+  3. Na coluna Inscrito, selecione **Sim** para o usuário que deseja receber notificações.
 
     Para localizar facilmente o usuário que você está procurando, clique em **Filtrar** e filtre por nome, sobrenome ou nome do usuário.
     {: tip}
-

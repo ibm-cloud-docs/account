@@ -1,10 +1,12 @@
 ---
 
 copyright:
-
   years: 2015, 2019
+lastupdated: "2019-02-26"
 
-lastupdated: "2019-02-06"
+keywords: account, upgrade, account settings, IBM Cloud account, Lite account
+
+subcollection: account
 
 ---
 
@@ -49,7 +51,7 @@ Para obtener más información sobre la gestión de organizaciones y espacios, c
 {: #move-org-diff-account}
 {: faq}
 
-Actualmente, no puede migrar una organización a otra cuenta distinta.
+Actualmente, no puede desplazar una organización a otra cuenta distinta. Sin embargo, puede recrear la organización con las mismas credenciales en una cuenta distinta para imitar esta funcionalidad. Para obtener más información, consulte [Adición de organizaciones y espacios](https://cloud.ibm.com/docs/account?topic=account-orgsspacesusers#createorg).
 
 
 ## ¿Qué regiones de Cloud Foundry puedo utilizar?

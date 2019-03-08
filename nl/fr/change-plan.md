@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-
   years: 2017, 2019
 lastupdated: "2019-02-13"
+
+keywords: change service, upgrade service, service plan
+
+subcollection: account
 
 ---
 

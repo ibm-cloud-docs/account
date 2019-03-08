@@ -1,9 +1,12 @@
 ---
 
 copyright:
-
   years: 2015, 2019
 lastupdated: "2019-01-28"
+
+keywords: account, add orgs, add spaces, manage users, user access
+
+subcollection: account
 
 ---
 

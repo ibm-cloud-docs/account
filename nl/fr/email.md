@@ -1,10 +1,12 @@
 ---
 
 copyright:
-
   years: 2015, 2018
 lastupdated: "2018-11-28"
 
+keywords: notifications, email notifications, IBM Cloud notifications, notification preferences
+
+subcollection: account
 
 ---
 
@@ -62,17 +64,16 @@ Les utilisateurs de votre compte reçoivent des notifications pour les événeme
 
   * Problèmes d'infrastructure non planifiés ou indisponibilités : Problèmes pouvant provoquer une indisponibilité selon certaines conditions pour des clients spécifiques.
   * Service ou maintenance planifié : Maintenance requise pour que l'infrastructure fonctionne de manière optimale.
-  * Vulnérabilité en matière de sécurité : La zone concernée est isolée. Un correctif est créé pour fermer la vulnérabilité et des tests sont effectués sur le correctif afin de garantir qu'aucune fonction collatérale n'est affectée. 
+  * Vulnérabilité en matière de sécurité : La zone concernée est isolée. Un correctif est créé pour fermer la vulnérabilité et des tests sont effectués sur le correctif afin de garantir qu'aucune fonction collatérale n'est affectée.
   * Cas de support ouverts : Signale aux utilisateurs les cas ouverts sur leur compte.
 
 Le délai de la notification varie selon que l'événement soit planifié ou non. La politique d'infrastructure {{site.data.keyword.BluSoftlayer_notm}} consiste à remédier au problème aussi rapidement que possible afin de supprimer ou de réduire le risque de voir des problèmes supplémentaires se développer qui pourraient avoir un impact plus conséquent. Il arrive parfois qu'une maintenance planifiée soit effectuée en ayant été notifiée très peu de temps auparavant.
 
-Pour configurer des notifications d'abonnement pour vos utilisateurs, procédez comme suit : 
+Pour configurer des notifications d'abonnement pour vos utilisateurs, procédez comme suit :
 
-  1. Accédez à **Gérer > Compte** et sélectionnez **Notifications**. 
-  2. Sélectionnez un service dans la table. 
-  3. Dans la colonne Abonné, sélectionnez **Oui** pour l'utilisateur qui souhaite recevoir des notifications. 
+  1. Accédez à **Gérer > Compte** et sélectionnez **Notifications**.
+  2. Sélectionnez un service dans la table.
+  3. Dans la colonne Abonné, sélectionnez **Oui** pour l'utilisateur qui souhaite recevoir des notifications.
 
     Pour trouver facilement l'utilisateur que vous recherchez, cliquez sur **Filtrer** et effectuez un filtrage par nom, prénom ou non d'utilisateur indiqué.
     {: tip}
-

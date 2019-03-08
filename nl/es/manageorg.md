@@ -1,9 +1,12 @@
 ---
 
 copyright:
-
   years: 2015, 2019
 lastupdated: "2019-01-28"
+
+keywords: account owner, user roles, manage account, orgs, spaces
+
+subcollection: account
 
 ---
 

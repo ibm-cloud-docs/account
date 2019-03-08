@@ -1,10 +1,12 @@
 ---
 
 copyright:
-
   years: 2015, 2018
-
 lastupdated: "2018-11-28"
+
+keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
+
+subcollection: account
 
 ---
 
