@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-13"
+lastupdated: "2019-03-13"
 
-keywords: account types, Lite, free account, paid account, buy account, account difference, compare account
+keywords: account types, Lite, free account, paid account, buy account, account difference, compare account, subscription, service bundle
 
 subcollection: account
 
@@ -94,6 +94,19 @@ To upgrade your Pay-As-You-Go account to a Subscription account, contact [{{site
 With a Subscription account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. You commit to a combined a minimum spending amount each month and receive a subscription discount that is applied to that minimum charge. You're charged the non-discounted rate for any usage that exceeds your total subscription amount. To view your subscription, go to **Manage > Billing and usage**, and select **Subscriptions**.
 
 If you have a subscription account, you can create most of the services that are available from the [{{site.data.keyword.Bluemix_notm}} catalog](https://cloud.ibm.com/catalog/){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon"). However, some services use a specific pricing plan that requires you to purchase it separately.
+
+### Service bundle subscriptions
+{: #service-bundles}
+
+Service bundle subscriptions give you access and credit towards a set of services within a particular domain that are targeted for popular use cases. You can choose from service bundles that span AI, analytics, {{site.data.keyword.blockchainfull_notm}}, Internet of Things (IoT), and cloud-native services. If your needs cross multiple domains, you can purchase multiple service bundle subscriptions.
+
+You can add services bundles to any type of existing account, including Lite accounts. For the first 90 days, you're limited to using the services within the bundle. After the initial 90 days, you can access the full catalog.
+
+Service bundle subscriptions aren't available through the {{site.data.keyword.Bluemix_notm}} console. To learn more and purchase a service bundle, contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
+{:tip}
+
+After you purchase a service bundle subscription, you'll receive an email with a feature code that you apply to add the bundle to your account. For more information about how to apply feature codes, see [Applying feature codes](/docs/account?topic=account-codes). When your service bundle expires or you use all of the credit, you can continue to use any of the services, with usage charged at the Pay-As-You Go rate.
+
 
 ### {{site.data.keyword.Bluemix_dedicated_notm}} account
 With {{site.data.keyword.Bluemix_dedicated_notm}}, you must sign up for a one year minimum term that includes:
