@@ -96,7 +96,7 @@ With a Subscription account, you can create multiple resource groups to easily m
 If you have a subscription account, you can create most of the services that are available from the [{{site.data.keyword.Bluemix_notm}} catalog](https://cloud.ibm.com/catalog/){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon"). However, some services use a specific pricing plan that requires you to purchase it separately.
 
 ### Service bundle subscriptions
-{: #service-bundles}
+{: #service-subscriptions}
 
 Service bundle subscriptions give you access and credit towards a set of services within a particular domain that are targeted for popular use cases. You can choose from service bundles that span AI, analytics, {{site.data.keyword.blockchainfull_notm}}, Internet of Things (IoT), and cloud-native services. If your needs cross multiple domains, you can purchase multiple service bundle subscriptions.
 
