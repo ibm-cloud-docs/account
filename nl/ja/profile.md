@@ -32,10 +32,10 @@ subcollection: account
   * 写真を削除するには、**「図の削除」**をクリックします。
 
 
-## IBM ID 情報の編集
+## IBMid 情報の編集
 {: #ibmid}
 
-IBM ID は、インフラストラクチャー、サービス、およびアプリケーションの各機能用に {{site.data.keyword.Bluemix_notm}} アカウントにログインするために使用する単一の ID です。 IBM ID を変更することはできませんが、関連付けられているプロファイル情報 (名前、E メール、電話番号、パスワード、会社名など) は編集できます。 **「{{site.data.keyword.avatar}}」**アイコン ![「アバター」アイコン](../icons/i-avatar-icon.svg) &gt; **「プロファイルと設定」**に移動します。 詳しくは、『[IBM ID への切り替えとアカウントのリンク](softlayerlink.html)』を参照してください。
+IBMid は、インフラストラクチャー、サービス、およびアプリケーションの各機能用に {{site.data.keyword.Bluemix_notm}} アカウントにログインするために使用する単一の ID です。 IBMid を変更することはできませんが、関連付けられているプロファイル情報 (名前、E メール、電話番号、パスワード、会社名など) は編集できます。 **「{{site.data.keyword.avatar}}」**アイコン ![「アバター」アイコン](../icons/i-avatar-icon.svg) &gt; **「プロファイルと設定」**に移動します。 詳しくは、『[IBMid への切り替えとアカウントのリンク](softlayerlink.html)』を参照してください。
 
 
 ## Cookie の設定の変更
