@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-04"
+lastupdated: "2019-03-08"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -83,7 +83,6 @@ Reaching any quota limit for Lite plan instances suspends the service for that m
 
 If you have a billable account, there's no limit to the number of resource groups, orgs, or spaces that you can create within your account. However, if you have a Lite account, you're limited to one org and one resource group.
 
-
 ## How do I upgrade or convert my account type?
 {: #changeacct}
 {: faq}
@@ -93,19 +92,13 @@ If you have a billable account, there's no limit to the number of resource group
   * To upgrade to a Subscription account, click **Upgrade**.
 * To convert between Pay-As-You-Go and Subscription account types, contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
+Learn more in [Upgrading your account](/docs/account?topic=account-upgrading-account).
+
 ## If I upgrade my Lite account, can I continue to use my existing instances?
 {: #nochange}
 {: faq}
 
 Yes, you can upgrade to a billable account and continue to use the instances you created with your Lite account.
-
-
-## How do I upgrade my Pay-As-You-Go account?
-{: #upgrade}
-{: faq}
-
-To upgrade your Pay-As-You-Go account to a Subscription account, contact [IBM Cloud Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
-
 
 ## How do I update my credit card?
 {: #updatepayment}
@@ -134,7 +127,7 @@ To reset your VPN password, complete the following steps:
 
 We're sad to see you go! If there's any way we can assist you with your account before you go, reach out to us by contacting support.
 
-If you do decide to leave, how you cancel your account depends on your account type. You can check your account type by going to [Account settings](https://cloud.ibm.com/account/settings) and looking under Account Type.
+If you do decide to leave, how you cancel your account depends on your account type. You can check your account type by going to [Account settings](https://cloud.ibm.com/account/settings) and looking under _Account Type_.
 
 * For Pay-As-You-Go or Subscription accounts, the quickest way to cancel your account is to contact us through [live chat](https://{DomainName}/unifiedsupport/supportcenter) or by calling 1-866-325-0045 and selecting the third option. Alternatively, you can open a support case.
 * To cancel a Lite account, go to [Account settings](https://cloud.ibm.com/account/settings) and click **Deactivate account**.
@@ -162,7 +155,7 @@ If you believe your account was deactivated in error, contact support by calling
 {: #contactsupport}
 {: faq}
 
-Click **Support** from the console menu bar to go to the Support Center.
+Click **Support** from the console menu bar to go to the Support Center. Learn more about support in [Getting support](/docs/get-support?topic=get-support-support-plans].
 
 
 ## Can I sign up for a free trial?

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-13"
+lastupdated: "2019-03-19"
 
 keywords: account types, Lite, free account, paid account, buy account, account difference, compare account, subscription, service bundle
 
@@ -21,7 +21,6 @@ subcollection: account
 
 {{site.data.keyword.Bluemix_notm}} has three different account types: Lite, Pay-As-You-Go, and Subscription. You get a free Lite account as soon as you sign up. Pay-As-You-Go and Subscription are our billable account options, each offering different features. Compare each account and choose the one that best suits your needs.
 {:shortdesc}
-
 
 ## Comparing accounts
 {: #compare}
@@ -63,37 +62,32 @@ Check out the following list of key features that are available in a Lite accoun
    * You can use one org in one {{site.data.keyword.Bluemix_notm}} region.
    * Basic {{site.data.keyword.Bluemix_notm}} support for free. Basic support is provided for non-production environments or workloads where traditional severities are not used and specific response times are not stipulated.
    * You receive email notifications about your account status and quota limits.
-   * Your Cloud Foundry apps can access up to 256 MB of free, instantaneous runtime memory.
+   * Your Cloud Foundry apps can access up to 256 MB of free, instantaneous runtime memory per month.
    * You can provision one instance of any service in the [{{site.data.keyword.Bluemix_notm}} catalog ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/catalog/?search=label:lite%20lite){: new_window} that has a Lite plan.
    * After 10 days of no development activity, your apps go to sleep. You can wake up your apps by continuing to work on them.
    * After 30 days of no development activity, your service instances with Lite plans are deleted.
 
-### Upgrading your Lite account
-{: #upgrade-lite-account}
-
-You can upgrade to a Pay-As-You-Go account or Subscription account. For more information, see [How do I upgrade or convert my account type?](/docs/account?topic=account-changeacct).
-
-You get a promotional credit of $200 after you upgrade to a Pay-As-You-Go account, and the credit is automatically applied to your account. Your $200 credit is valid for 30 days and is automatically applied to your invoice. The credit cannot be used with third-party offerings.
-
 ## Pay-As-You-Go account
 {: #paygo}
 
-With a Pay-As-You-Go account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. Your charges are based on your use of {{site.data.keyword.Bluemix_notm}} computing and services. You're eligible for free runtime and service allowances. If you use more than the free allowance, you receive a monthly {{site.data.keyword.Bluemix_notm}} invoice. The invoice is in United States dollars (USD) and provides details about your resource charges.
+With a Pay-As-You-Go account, you can access the full {{site.data.keyword.Bluemix_notm}} catalog, including all free plans, and you get double the free runtime memory at 512 MB per month. You'll pay only for billable services that you use, with no long-term contracts or commitments.
 
-Also, with a Pay-As-You-Go account, you can order optional items such as advanced or premium support options. Contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg) for more information.
+You can create multiple resource groups to easily manage quota and view billing usage for a set of resources. Your charges are based on your use of {{site.data.keyword.Bluemix_notm}} computing and services. If you use more than the free runtime and service allowances, you receive a monthly invoice that provides details about your resource charges.
 
-
-### Upgrading your Pay-As-You-Go account
-{: #upgrade-to-subscription}
-
-To upgrade your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
+Also, with a Pay-As-You-Go account, you can order advanced or premium support plans to get extra help with your production workloads. Learn more in [Support plans](/docs/get-support?topic=get-support-support-plans).
 
 ## Subscription account
 {: #subscription-account}
 
-With a Subscription account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. You commit to a combined a minimum spending amount each month and receive a subscription discount that is applied to that minimum charge. You're charged the non-discounted rate for any usage that exceeds your total subscription amount. To view your subscription, go to **Manage > Billing and usage**, and select **Subscriptions**.
+With a Subscription account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. You commit to a minimum spending amount each month and receive a subscription discount that is applied to that minimum charge.
 
-If you have a subscription account, you can create most of the services that are available from the [{{site.data.keyword.Bluemix_notm}} catalog](https://cloud.ibm.com/catalog/){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon"). However, some services use a specific pricing plan that requires you to purchase it separately.
+For example, if you commit to spend $100 a month for 6 months, you can get a 10% discount. During the subscription term, you get $600 of usage but pay only $540 for it. The longer the subscription term, the better the discount.
+
+Your usage is deducted from your total subscription amount. Even if your usage varies from month to month, you get predictable, consistent billing. If your usage exceeds your total subscription amount, you're charged the non-discounted rate for the overage.
+
+As with Pay-As-You-Go accounts, your Subscription account enables you to order advanced or premium support plans to get extra help if you need it. Learn more in [Support plans](/docs/get-support?topic=get-support-support-plans).
+
+If you have a Subscription account, you can create most of the services that are available from the [{{site.data.keyword.Bluemix_notm}} catalog](https://cloud.ibm.com/catalog/){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon"). However, some services use a specific pricing plan that requires you to purchase it separately.
 
 ### Service bundle subscriptions
 {: #service-subscriptions}
@@ -107,7 +101,6 @@ Service bundle subscriptions aren't available through the {{site.data.keyword.Bl
 
 After you purchase a service bundle subscription, you'll receive an email with a feature code that you apply to add the bundle to your account. For more information about how to apply feature codes, see [Applying feature codes](/docs/account?topic=account-codes). When your service bundle expires or you use all of the credit, you can continue to use any of the services, with usage charged at the Pay-As-You Go rate.
 
-
 ### {{site.data.keyword.Bluemix_dedicated_notm}} account
 With {{site.data.keyword.Bluemix_dedicated_notm}}, you must sign up for a one year minimum term that includes:
 
@@ -120,3 +113,12 @@ With {{site.data.keyword.Bluemix_dedicated_notm}}, you must sign up for a one ye
 You can also order optional items such as {{site.data.keyword.BluDirectLink}} or advanced or premium support options. Contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg) for more information.
 
 What you pay each month during that term is based on the dedicated services that you want, plus a Subscription account that gives you access to all public services. Usage charges of the services in {{site.data.keyword.Bluemix_notm}} Public are calculated based on your Subscription account agreement. You receive an invoice for any services that you use beyond that subscription agreement. Contact your IBM designated account representative or [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg) to get started on your agreement.
+
+## Upgrading your account
+{: #upgrade-lite-account}
+
+When you're ready to take your account to the next level, you can [upgrade your Lite account](/docs/account?topic=account-upgrading-account) to a Pay-As-You-Go account or Subscription account. Upgrading your account unlocks the full {{site.data.keyword.Bluemix_notm}} catalog, gives you extra free resources, and more.
+
+After you upgrade your Lite account to a Pay-As-You-Go account, you get a promotional credit of $200 that is automatically applied to your account. Your $200 credit is valid for 30 days, and your usage is automatically deducted from the credit amount. The credit cannot be used with third-party offerings, and the credit might not be available for all accounts.
+
+If you already have a Pay-As-You-Go or Subscription account, you can also convert your account to a different type. For more information, see [Upgrading your account](/docs/account?topic=account-upgrading-account).

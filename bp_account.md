@@ -53,7 +53,7 @@ For more information about which account type will work best for you, see [Accou
 
 Resource groups are a logical container for organizing your IAM-enabled resources. All services that are managed by using {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) access control belong to a resource group. You assign a resource to its resource group when you create it from the catalog. You can't change the resource group assignment after you set it, which is why it's important to set up some of your resource groups now.
 
-If you have a Lite account, you have access to a single resource group that's created for you. You can't create extra resource groups. Consider [upgrading your account](/docs/account?topic=account-changeacct#changeacct) to create and work with multiple resource groups.
+If you have a Lite account, you have access to a single resource group that's created for you. You can't create extra resource groups. Consider [upgrading your account](/docs/account?topic=account-upgrading-account) to create and work with multiple resource groups.
 {: note}
 
 
