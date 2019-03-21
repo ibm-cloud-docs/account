@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-26"
+lastupdated: "2019-03-04"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -30,12 +30,14 @@ subcollection: account
 {: #account-error}
 {: faq}
 
-계정을 작성하는 중에 오류가 발생하는 경우에는 지원 케이스를 작성할 수 있습니다.
+{{site.data.keyword.Bluemix_notm}} 계정에 로그인할 수 있으면 [지원](https://test.cloud.ibm.com/unifiedsupport/supportcenter)으로 이동하여 다음 옵션 중 하나를 선택하십시오.
 
-1. {{site.data.keyword.Bluemix}} 콘솔 메뉴 표시줄에서 **지원**을 클릭하십시오.
-2. _추가 도움 필요_ 섹션에서 **케이스 작성**을 클릭하십시오.
-3. 케이스에 대한 질문에 답변하십시오.
-4. 케이스가 열리면 이메일 알림이 발송됩니다. 추가로 소통하려면 지시사항을 따르십시오.
+* 고급 또는 프리미엄 지원에 해당하는 경우, **실시간 대화**를 클릭하여 {{site.data.keyword.Bluemix_notm}} 지원 담당자와 대화할 수 있습니다.
+* _추가 도움 필요_ 섹션에서 **케이스 작성**을 클릭하여 지원 케이스를 작성하십시오.
+
+   케이스를 열면 이메일 알림이 발송됩니다. 추가로 소통하려면 지시사항을 따르십시오.
+
+{{site.data.keyword.Bluemix}} 계정에 로그인할 수 없는 경우에는 [계정 요청을 작성 ](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")하십시오.
 
 
 ## Cloud Foundry란 무엇입니까?
@@ -86,12 +88,10 @@ Lite 플랜 인스턴스의 어느 할당량에든 도달하면 해당 월에 �
 {: #changeacct}
 {: faq}
 
-* 30일 평가판을 Lite 계정으로 변환하려면 [{{site.data.keyword.Bluemix_notm}} 영업 팀 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}에 문의하십시오. 적격성을 확인한 후에 영업 팀은 사용자가 계정을 변환하기 위해 사용할 수 있는 고유 링크를 공유합니다. Lite 계정이 30일 평가판과 완벽하게 호환 가능하지 않으므로 성공적인 변환은 보장되지 않습니다.  
 * Lite에서 종량과금제 또는 구독 계정으로 업그레이드하려면 [계정 설정](https://{DomainName}/account/settings)으로 이동하십시오.
   * 종량과금제 계정으로 업그레이드하려면 **신용카드 추가**를 클릭하십시오.
   * 구독 계정으로 업그레이드하려면 **업그레이드**를 클릭하십시오.
 * 종량과금제 계정과 구독 계정을 상호 변환하려면 [{{site.data.keyword.Bluemix_notm}} 영업 팀 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}에 문의하십시오.
-
 
 ## 내 Lite 계정을 업그레이드하는 경우 내 기존 인스턴스를 계속 사용할 수 있습니까?
 {: #nochange}
@@ -128,14 +128,16 @@ VPN 비밀번호를 재설정하려면 다음 단계를 완료하십시오.
   3. VPN 서브넷 섹션에서 편집 아이콘 ![편집 아이콘](../icons/icon_write.svg)을 클릭하여 새 VPN 비밀번호를 입력하십시오.
   5. **적용**을 클릭하십시오.
 
-
 ## 내 계정은 어떻게 취소합니까?
 {: #cancelaccount}
 {: faq}
 
-종량과금제 또는 구독 계정의 경우, 가장 빠른 계정 취소 방법은 [실시간 대화](https://{DomainName}/unifiedsupport/supportcenter)를 통해 또는 1-866-325-0045 번호로 전화한 후 세 번째 옵션을 선택하여 당사에 요청하는 것입니다. 또는 지원 케이스를 열 수도 있습니다.
+만족스럽지 못한 점이 있으면 나가기로 결정하기 전에 지원 담당자에게 지원에 대해 문의해 주십시오.
 
-Lite 계정을 취소하려면 [계정 설정](https://cloud.ibm.com/account/settings)으로 이동하여 **계정 비활성화**를 클릭하십시오.
+나가기로 결정한 경우 계정 유형에 따라 계정을 취소하는 방법이 다릅니다. [계정 설정](https://cloud.ibm.com/account/settings)으로 이동하여 계정 유형 아래에서 계정 유형을 확인할 수 있습니다.
+
+* 종량과금제 또는 구독 계정의 경우, 가장 빠른 계정 취소 방법은 [실시간 대화](https://{DomainName}/unifiedsupport/supportcenter)를 통해 또는 1-866-325-0045 번호로 전화한 후 세 번째 옵션을 선택하여 당사에 요청하는 것입니다. 또는 지원 케이스를 열 수도 있습니다.
+* Lite 계정을 취소하려면 [계정 설정](https://cloud.ibm.com/account/settings)으로 이동하여 **계정 비활성화**를 클릭하십시오.
 
 ## 내 계정은 어떻게 삭제합니까?
 {: #deleteaccount}

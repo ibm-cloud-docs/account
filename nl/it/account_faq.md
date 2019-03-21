@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-26"
+lastupdated: "2019-03-04"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -30,12 +30,14 @@ Vai a [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![Ico
 {: #account-error}
 {: faq}
 
-Puoi creare un caso di supporto se ottieni un errore quando provi ai creare il tuo account.
+Se sei in grado di eseguire l'accesso a un account {{site.data.keyword.Bluemix_notm}}, vai a [Supporto](https://test.cloud.ibm.com/unifiedsupport/supportcenter) e scegli una delle seguenti opzioni:
 
-1. Fai clic su **Supporto** dalla barra dei menu della console {{site.data.keyword.Bluemix}}.
-2. Fai clic su **Crea un caso** dalla sezione _Hai bisogno di ulteriore aiuto?_.
-3. Rispondi alle domande relative al caso.
-4. Una notifica email viene inviata dopo che il caso è stato aperto. Attieniti alle istruzioni per ulteriori comunicazioni.
+* Se hai un supporto avanzato o premium, fai clic su **Live chat** per parlare a un rappresentante del supporto {{site.data.keyword.Bluemix_notm}}.
+* Crea un caso di supporto facendo clic su **Crea un caso** dalla sezione _Serve ancora aiuto_.
+
+   Dopo che hai aperto il caso, ti viene inviata una notifica email. Attieniti alle istruzioni per ulteriori comunicazioni.
+
+Se non puoi accedere a un account {{site.data.keyword.Bluemix}}, [crea una richiesta di account](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno").
 
 
 ## Cos'è Cloud Foundry?
@@ -86,12 +88,10 @@ Se disponi di un account fatturabile, non esiste alcun limite al numero di grupp
 {: #changeacct}
 {: faq}
 
-* Per convertire la tua versione di prova di 30 giorni in un account Lite, contatta il settore [Vendite di {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}. Dopo aver confermato l'idoneità, il team del settore Vendite condivide un link univoco che puoi utilizzare per provare a convertire il tuo account. L'esito positivo della conversione non è garantito poiché gli account Lite non sono interamente compatibili con le versioni di prova di 30 giorni.  
 * Per eseguire l'upgrade da un account Lite a un account Pagamento a consumo o a un account Sottoscrizione, vai a [Impostazioni account](https://{DomainName}/account/settings).
   * Per eseguire l'upgrade a un account Pagamento a consumo, fai clic su **Aggiungi carta di credito**.
   * Per eseguire l'upgrade a un account Sottoscrizione, fai clic su **Esegui upgrade**.
 * Per una conversione tra i tipi di account Pagamento a consumo e Sottoscrizione, contatta il settore [Vendite di {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
-
 
 ## Se eseguo l'upgrade del mio account Lite, posso continuare a utilizzare le mie istanze esistenti?
 {: #nochange}
@@ -128,14 +128,16 @@ Per reimpostare la tua password VPN, completa la seguente procedura:
   3. Dalla sezione Sottoreti VPN, fai clic sull'icona Modifica ![Icona Modifica](../icons/icon_write.svg) per immettere una nuova password VPN.
   5. Fai clic su **Applica**.
 
-
 ## Come posso annullare il mio account?
 {: #cancelaccount}
 {: faq}
 
-Per gli account Pagamento a consumo o Sottoscrizione, il modo più rapido per annullare il tuo account è contattandoci tramite la [live chat](https://{DomainName}/unifiedsupport/supportcenter) oppure chiamando il numero 1-866-325-0045 e selezionando la terza opzione. In alternativa, puoi aprire un caso di supporto.
+Ci dispiace che tu vada via. Se possiamo aiutarti in qualsiasi modo con il tuo account prima che tu vada, ti invitiamo a metterti in comunicazione con noi contattando il supporto.
 
-Per annullare un account Lite, vai a [Impostazioni account](https://cloud.ibm.com/account/settings) e fai clic su **Disattiva account**.
+Se decidi di andare via, il modo in cui annulli il tuo account dipende dal tuo tipo di account. Puoi controllare il tipo del tuo account andando a [Impostazioni account](https://cloud.ibm.com/account/settings) e guardando in Tipo di account.
+
+* Per gli account Pagamento a consumo o Sottoscrizione, il modo più rapido per annullare il tuo account è contattandoci tramite la [live chat](https://{DomainName}/unifiedsupport/supportcenter) oppure chiamando il numero 1-866-325-0045 e selezionando la terza opzione. In alternativa, puoi aprire un caso di supporto.
+* Per annullare un account Lite, vai a [Impostazioni account](https://cloud.ibm.com/account/settings) e fai clic su **Disattiva account**.
 
 ## Come posso eliminare il mio account?
 {: #deleteaccount}

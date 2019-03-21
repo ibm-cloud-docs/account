@@ -175,7 +175,7 @@ Verwenden Sie eine der folgenden Methoden, um einen Bereich zu erstellen:
 {: tsResolve}
 
   * Klicken Sie in der Menüleiste der Konsole auf **Verwalten > Konto** und wählen Sie **Organisationen** aus. Wählen Sie anschließend die Organisation aus, in der Sie den Bereich erstellen möchten und klicken Sie auf **Bereich erstellen**.
-  * Geben Sie in der {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle `ibmcloud account space-create <space_name> -o <organization_name>` ein. 
+  * Geben Sie in der {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle Folgendes ein: `ibmcloud account space-create <space_name> -o <organization_name>`.
 
 
 ## Warum verwenden einige Apps einen Domänennamen gemeinsam?

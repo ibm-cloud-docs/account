@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-26"
+lastupdated: "2019-03-04"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -30,12 +30,14 @@ subcollection: account
 {: #account-error}
 {: faq}
 
-如果在您嘗試建立帳戶時遇到錯誤，您可以建立一個支援案例。
+如果您可以登入 {{site.data.keyword.Bluemix_notm}} 帳戶，請移至[支援](https://test.cloud.ibm.com/unifiedsupport/supportcenter)，然後選擇下列其中一個選項。
 
-1. 從 {{site.data.keyword.Bluemix}} 主控台功能表列中，按一下**支援**。
-2. 按一下_需要更多協助_ 區段中的**建立新的案例**。
-3. 回答有關該案例的問題。
-4. 開立案例後即會傳送電子郵件通知。請遵循指示來進行進一步的溝通。
+* 如果您有進階或超值支援，請按一下**即時會談**來與 {{site.data.keyword.Bluemix_notm}} 支援代表交談。
+* 按一下_需要更多協助_ 區段中的**建立案例**，以建立支援案例。
+
+   在您開啟案例之後，系統即會向您發送一則電子郵件通知。請遵循指示來進行進一步的溝通。
+
+如果無法登入 {{site.data.keyword.Bluemix}} 帳戶，請[建立帳戶要求](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")。
 
 
 ## 何謂 Cloud Foundry？
@@ -86,12 +88,10 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 {: #changeacct}
 {: faq}
 
-* 若要將 30 天試用轉換為「精簡」帳戶，請與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} 聯絡。確認資格之後，銷售團隊會分享一個唯一鏈結，您可以用來嘗試轉換帳戶。轉換不一定會成功，因為精簡帳戶未完全與 30 天試用相容。  
 * 若要從「精簡」升級至「隨收隨付制」帳戶或「訂閱」帳戶，請移至[帳戶設定](https://{DomainName}/account/settings)。
   * 若要升級至「隨收隨付制」帳戶，請按一下**新增信用卡**。
   * 若要升級至「訂閱」帳戶，請按一下**升級**。
 * 若要在「隨收隨付制」與「訂閱」帳戶類型之間轉換，請與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} 聯絡。
-
 
 ## 如果我將「精簡」帳戶升級，還能繼續使用我的現有實例嗎？
 {: #nochange}
@@ -128,14 +128,16 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
   3. 從 VPN 子網路區段中，按一下「編輯」圖示 ![「編輯」圖示](../icons/icon_write.svg)，以輸入新的 VPN 密碼。
   5. 按一下**套用**。
 
-
 ## 如何取消我的帳戶？
 {: #cancelaccount}
 {: faq}
 
-針對隨收隨付制或訂閱帳戶，取消帳戶最快的方式就是透過[即時會談](https://{DomainName}/unifiedsupport/supportcenter)與我們聯絡，或是撥打 1-866-325-0045 並選取第三個選項。您也可以開立支援案例。
+看到您要離開，我們覺得很遺憾！在您離開之前，如果有任何方法可以協助您使用帳戶，請透過與支援中心聯絡來聯繫我們。
 
-若要取消精簡帳戶，請移至[帳戶設定](https://cloud.ibm.com/account/settings)，然後按一下**取消啟動帳戶**。
+如果您真的決定要離開，則帳戶的取消方式取決於您的帳戶類型。您可以移至[帳戶設定](https://cloud.ibm.com/account/settings)，然後在「帳戶類型」下尋找，來檢查您的帳戶類型。
+
+* 針對隨收隨付制或訂閱帳戶，取消帳戶最快的方式就是透過[即時會談](https://{DomainName}/unifiedsupport/supportcenter)與我們聯絡，或是撥打 1-866-325-0045 並選取第三個選項。您也可以開立支援案例。
+* 若要取消精簡帳戶，請移至[帳戶設定](https://cloud.ibm.com/account/settings)，然後按一下**取消啟動帳戶**。
 
 ## 如何刪除帳戶？
 {: #deleteaccount}

@@ -24,7 +24,7 @@ Se hai un account dell'infrastruttura classica, puoi monitorare gli eventi di re
 {:shortdesc}
 
 
-## Visualizzazione del log di controllo 
+## Visualizzazione del log di controllo
 {: #view-audit-log}
 
 Per visualizzare il tuo log di controllo, vai a **Gestisci > Account** e seleziona **Log di controllo**. Il log di controllo visualizza inizialmente le ultime 25 interazioni effettuate dagli utenti nell'account. Puoi visualizzare fino a 200 interazioni in qualsiasi momento. Espandi il menu Elementi per pagina per visualizzare più risultati.

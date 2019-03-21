@@ -37,7 +37,7 @@ O {{site.data.keyword.Bluemix_notm}} usa as informações no perfil da empresa p
 
 Para incluir ou editar um contato da conta, acesse **Gerenciar > Conta** e selecione **Contatos da empresa**. Mantenha as informações sobre os contatos da conta concluídos e atualizados no caso de uma consulta ser necessária.
 
-Assegure-se de que os contatos da conta sejam as pessoas apropriadas a serem contatadas para cada tipo de solicitação. É possível ter múltiplas entradas de contato para cada conta, mas apenas um contato para cada tipo de serviço. As informações de contato específicas da conta não incluem o perfil da conta, que é a informação de contato primária que está associada a uma conta.
+Assegure-se de que os contatos da conta sejam as pessoas apropriadas a serem contatadas para cada tipo de solicitação. É possível ter múltiplas entradas de contato para cada conta, mas apenas um contato para cada tipo de serviço. As informações de contato específicas da conta não incluem o perfil da conta, que é a informação de contato principal que está associada a uma conta.
 
   Verifique as informações antes de fazer a atualização. Depois de enviar as novas informações de contato, os contatos da conta são atualizados imediatamente.
   {: important}

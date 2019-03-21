@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-26"
+lastupdated: "2019-03-04"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -30,12 +30,14 @@ Acesse [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![Í
 {: #account-error}
 {: faq}
 
-Será possível criar um caso de suporte se você obtiver um erro ao tentar criar sua conta.
+Se você puder efetuar login em uma conta do {{site.data.keyword.Bluemix_notm}}, acesse [Suporte](https://test.cloud.ibm.com/unifiedsupport/supportcenter) e escolha uma das opções a seguir.
 
-1. Clique em **Suporte** na barra de menus do console do {{site.data.keyword.Bluemix}}.
-2. Clique em **Criar um caso** na seção _Preciso de mais ajuda_.
-3. Responda às perguntas sobre o caso.
-4. Uma notificação por e-mail é enviada depois que o caso é aberto. Siga as instruções para obter comunicação adicional.
+* Se você tiver suporte avançado ou premium, clique em **Bate-papo em tempo real** para conversar com um representante de suporte do {{site.data.keyword.Bluemix_notm}}.
+* Crie um caso de suporte clicando em **Criar um caso** na seção _Precisa de mais ajuda_.
+
+   Depois de abrir o caso, uma notificação por e-mail é enviada a você. Siga as instruções para obter comunicação adicional.
+
+Se não for possível efetuar login em uma conta do {{site.data.keyword.Bluemix}}, [crie uma solicitação de conta](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo").
 
 
 ## O que é Cloud Foundry?
@@ -87,12 +89,10 @@ Se você tiver uma conta faturável, não haverá limite para o número de grupo
 {: #changeacct}
 {: faq}
 
-* Para converter sua avaliação de 30 dias em uma conta Lite, entre em contato com [Vendas do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}. Depois de confirmar a elegibilidade, a equipe de Vendas compartilha um link exclusivo que pode ser usado para tentar converter sua conta. A conversão bem-sucedida não é garantida, pois as contas Lite não são totalmente compatíveis com as avaliações de 30 dias.  
 * Para fazer upgrade de uma conta Lite para uma Pré-paga ou de Assinatura, acesse [Configurações da conta](https://{DomainName}/account/settings).
   * Para fazer upgrade para uma conta Pré-paga, clique em **Incluir cartão de crédito**.
   * Para fazer upgrade para uma conta de Assinatura, clique em **Upgrade**.
 * Para converter entre os tipos de conta Pré-paga e de Assinatura, entre em contato com [{{site.data.keyword.Bluemix_notm}} Vendas ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
-
 
 ## Se eu fizer upgrade da minha conta Lite, será possível continuar a usar minhas instâncias existentes?
 {: #nochange}
@@ -129,14 +129,16 @@ Para reconfigurar sua senha da VPN, conclua as etapas a seguir:
   3. Na seção de sub-redes VPN, clique no ícone Editar ![Ícone Editar](../icons/icon_write.svg) para inserir uma nova senha da VPN.
   5. Clique em **Aplicar**.
 
-
 ## Como cancelar minha conta?
 {: #cancelaccount}
 {: faq}
 
-Para contas Pré-pagas ou de Assinatura, a maneira mais rápida de cancelar sua conta é entrar em contato conosco por meio do [bate-papo em tempo real](https://{DomainName}/unifiedsupport/supportcenter) ou ligando para 1-866-325-0045 e selecionando a terceira opção. Como alternativa, é possível abrir um caso de suporte.
+Estamos tristes em ver você ir! Se houver alguma maneira de ajudar você com a sua conta antes acessá-la, entre em contato conosco contatando o suporte.
 
-Para cancelar uma conta Lite, acesse [Configurações da conta](https://cloud.ibm.com/account/settings) e clique em **Desativar conta**.
+Se decidir sair, a maneira como você cancela a sua conta depende do seu tipo de conta. É possível verificar o seu tipo de conta acessando [Configurações da conta](https://cloud.ibm.com/account/settings) e procurando em Tipo de conta.
+
+* Para contas Pré-pagas ou de Assinatura, a maneira mais rápida de cancelar sua conta é entrar em contato conosco por meio do [bate-papo em tempo real](https://{DomainName}/unifiedsupport/supportcenter) ou ligando para 1-866-325-0045 e selecionando a terceira opção. Como alternativa, é possível abrir um caso de suporte.
+* Para cancelar uma conta Lite, acesse [Configurações da conta](https://cloud.ibm.com/account/settings) e clique em **Desativar conta**.
 
 ## Como excluir minha conta?
 {: #deleteaccount}

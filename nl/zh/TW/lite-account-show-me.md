@@ -41,6 +41,6 @@ subcollection: account
 
 用 Watson 服務為您的應用程式增添智慧。您甚至可以結合 Watson 與 {{site.data.keyword.iot_short_notm}}，建置尖端的解決方案。您也將可以存取 {{site.data.keyword.apiconnect_short}}、{{site.data.keyword.mobilepushshort}}、{{site.data.keyword.prf_hubshort}} 及更多功能。
 
-精簡帳戶與付費帳戶有何不同？這個精簡帳戶是以配額為基礎，這表示您的服務用量會有配額的上限。如此，您不會在瞭解 Watson 或開發尚無法正式作業的應用程式時，帳單意外地增加。當您接近限制或已達到配額時，我們會通知您，讓您能採取適當的動作。
+精簡帳戶與付費帳戶有何不同？這個精簡帳戶是以配額為基礎，這表示您的服務用量會有配額的上限。如此，您不會在瞭解 Watson 或開發尚無法正式作業的應用程式時，意外地增加帳單。當您接近限制或已達到配額時，我們會通知您，讓您能採取適當的動作。
 
 馬上註冊 {{site.data.keyword.Bluemix_notm}} 精簡帳戶，開始用 {{site.data.keyword.Bluemix_notm}} 來進行建置。

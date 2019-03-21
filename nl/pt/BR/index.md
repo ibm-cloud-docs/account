@@ -75,7 +75,7 @@ Confira a lista a seguir de recursos-chave que estão disponíveis em uma conta 
 
 Você obterá um crédito promocional de US$ 200 após fazer upgrade para uma conta Pré-paga e o crédito será automaticamente aplicado à sua conta. Seu crédito de US$ 200 é válido por 30 dias e é automaticamente aplicado à sua fatura. O crédito não pode ser usado com ofertas de terceiros.
 
-## Conta de Pagamento por uso
+## Conta pré-paga
 {: #paygo}
 
 Com uma conta pré-paga, é possível criar múltiplos grupos de recursos para gerenciar facilmente a cota e visualizar o uso de faturamento para um conjunto de recursos. Seus encargos são baseados em seu uso de cálculo e serviços do {{site.data.keyword.Bluemix_notm}}. Você é elegível para abonos grátis de tempo de execução e serviço. Se você usar além do abono grátis, receberá uma fatura mensal do {{site.data.keyword.Bluemix_notm}}. A fatura será em dólares dos Estados Unidos (US$) e fornecerá detalhes sobre os encargos do recurso.

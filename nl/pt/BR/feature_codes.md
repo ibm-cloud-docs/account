@@ -28,7 +28,7 @@ Dependendo do seu tipo de conta, é possível usar códigos de recurso para incl
 ## Incluindo o crédito de assinatura e de suporte
 {: #feature-code-billable}
 
-Depois de comprar créditos de assinatura ou de suporte, você inclui o crédito em sua conta aplicando um código de recurso. A aplicação dos códigos de recurso garante que o crédito seja incluído em sua conta e você não receba cobranças excedentes inesperadas.
+Depois de comprar créditos de assinatura ou de suporte, você inclui o crédito em sua conta aplicando um código de recurso.A aplicação dos códigos de recurso garante que o crédito seja incluído em sua conta e você não receba cobranças excedentes inesperadas.
 
 Depois que a equipe de Vendas do {{site.data.keyword.Bluemix_notm}} faz o pedido, um e-mail com o código de recurso para cada item de linha de assinatura e de suporte é enviado para o contato apropriado. Se você comprou uma assinatura e não recebeu seu código de recurso, [entre em contato conosco ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ou envie um e-mail para Vendas em CloudDigitalSales@us.ibm.com para solicitar um novo envio.
 

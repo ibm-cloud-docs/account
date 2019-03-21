@@ -19,7 +19,7 @@ subcollection: account
 # Registro en {{site.data.keyword.Bluemix_notm}}
 {: #signup}
 
-Puede registrarse para obtener una cuenta de [{{site.data.keyword.Bluemix}} ](https://cloud.ibm.com){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo") utilizando un IBMid existente, creando un IBMid nuevo o utilizando un ID federado. Un ID federado es un ID dentro del dominio de una empresa que ha sido registrado con IBM, por lo que el dominio y las credenciales de usuario pueden utilizarse para acceder a aplicaciones web de IBM. Pulse en **Crear una cuenta de {{site.data.keyword.Bluemix_notm}} ** para empezar.
+Puede registrarse para obtener una cuenta de [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo") utilizando un IBMid existente, creando un IBMid nuevo o utilizando un ID federado. Un ID federado es un ID dentro del dominio de una empresa que ha sido registrado con IBM, por lo que el dominio y las credenciales de usuario pueden utilizarse para acceder a aplicaciones web de IBM. Pulse en **Crear una cuenta de {{site.data.keyword.Bluemix_notm}}** para empezar.
 {:shortdesc}
 
 Es posible utilizar un ID federado para registrarse en {{site.data.keyword.Bluemix_notm}} solo si su empresa ya está registrada con IBM. El registro del dominio de una empresa con IBM permite que los usuarios puedan iniciar sesión en los productos y servicios de IBM utilizando sus credenciales de usuario de empresa existentes. La autenticación la gestiona el proveedor de identidades de la empresa. Al iniciar sesión en
