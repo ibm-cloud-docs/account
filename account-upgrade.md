@@ -49,13 +49,13 @@ To upgrade from a Lite account to a Subscription account, complete the following
 1. Go to **Manage > Account**, and select **Account settings**. Then click **Upgrade**, which takes you to the Subscriptions page.
 1. Select your monthly spending commitment and subscription term, and click **Get started**.
 
-   If you're not sure how much your typical usage might cost, you can estimate it by using the [cost estimator](/estimator/review){:new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
+   If you're not sure how much your typical usage might cost, you can estimate it by using the [cost estimator](https://{DomainName}/estimator/review){:new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
    {:tip}
 1. Review your subscription details, and then enter your payment information.
 
    After your payment information is processed, your subscription credit is added to your account.
 
-Your subscription renews automatically. If you want to discontinue your subscription renewal, [contact support](/unifiedsupport/supportcenter).
+Your subscription renews automatically. If you want to discontinue your subscription renewal, [contact support](https://{DomainName}/unifiedsupport/supportcenter).
 {: note}
 
 ### Converting a Pay-As-You-Go account to a Subscription account
