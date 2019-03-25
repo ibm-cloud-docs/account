@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-08"
+lastupdated: "2019-03-25"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -15,6 +15,7 @@ subcollection: account
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:faq: data-hd-content-type='faq'}
+{:tip: .tip}
 
 # FAQs
 {: #accountfaqs}
@@ -75,6 +76,10 @@ A Lite plan is a free quota-based service plan. You can use a service Lite plan 
 {: faq}
 
 Reaching any quota limit for Lite plan instances suspends the service for that month. Quota limits are per org, not per instance. New instances that are created in the same org reflect any usage from previous instances. The quota limits reset on the first of every month.
+
+You can check your usage by going to **Manage > Billing and usage** and selecting **Usage**. For more information, see [Viewing your usage](/docs/billing-usage?topic=billing-usage-viewingusage).
+
+If you want to stop or delete a service, you can do so from the resource list. Learn more in [Navigating the {{site.data.keyword.Bluemix_notm}} console](/docs/overview?topic=overview-ui).
 
 
 ## How many resource groups, orgs, or spaces can I create?
