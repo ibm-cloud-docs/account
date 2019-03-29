@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-04"
+lastupdated: "2019-03-08"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -30,7 +30,7 @@ Rufen Sie [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} !
 {: #account-error}
 {: faq}
 
-Wenn Sie sich bei einem {{site.data.keyword.Bluemix_notm}}-Konto anmelden können, rufen Sie das [Support Center](https://test.cloud.ibm.com/unifiedsupport/supportcenter) auf und wählen Sie eine der folgenden Optionen aus. 
+Wenn Sie sich bei einem {{site.data.keyword.Bluemix_notm}}-Konto anmelden können, rufen Sie das [Support Center](https://test.cloud.ibm.com/unifiedsupport/supportcenter) auf und wählen Sie eine der folgenden Optionen aus.
 
 * Wenn Sie über Advanced Support oder Premium Support verfügen, klicken Sie auf **Live chat**, um mit einem {{site.data.keyword.Bluemix_notm}}-Ansprechpartner zu sprechen.
 * Erstellen Sie einen Supportfall, indem Sie auf die Option **Fall erstellen** im Abschnitt _Sie benötigen weitere Hilfe?_ klicken.
@@ -83,7 +83,6 @@ Wenn ein Grenzwert für das Kontingent für die Lite-Planinstanzen erreicht wird
 
 Wenn Sie über ein gebührenpflichtiges Konto verfügen, gibt es keinen Grenzwert für die Anzahl von Ressourcengruppen, Organisationen oder Bereichen, die Sie in Ihrem Konto erstellen können. Bei einem Lite-Konto sind Sie jedoch auf eine Organisation und eine Ressourcengruppe beschränkt.
 
-
 ## Wie kann ich ein Upgrade meines Kontotyps durchführen oder den Kontotyp umwandeln?
 {: #changeacct}
 {: faq}
@@ -93,19 +92,13 @@ Wenn Sie über ein gebührenpflichtiges Konto verfügen, gibt es keinen Grenzwer
   * Für ein Upgrade auf ein Abonnementkonto klicken Sie auf **Upgrade**.
 * Zum Konvertieren zwischen einem nutzungsabhängigen und einem Abonnementkonto wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}} Vertrieb ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
+Weitere Informationen finden Sie in [Upgrade für das Konto durchführen](/docs/account?topic=account-upgrading-account).
+
 ## Kann ich meine vorhandenen Instanzen weiterhin verwenden, wenn ich ein Upgrade für mein Lite-Konto durchführe?
 {: #nochange}
 {: faq}
 
 Ja, Sie können ein Upgrade auf ein gebührenpflichtiges Konto durchführen und die Instanzen, die Sie mit Ihrem Lite-Konto erstellt haben, weiter verwenden.
-
-
-## Wie führe ich ein Upgrade für mein nutzungsabhängiges Konto durch?
-{: #upgrade}
-{: faq}
-
-Wenn Sie für ein nutzungsabhängiges Konto ein Upgrade auf ein Abonnementkonto durchführen möchten, wenden Sie sich an den [IBM Cloud-Vertrieb ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link").
-
 
 ## Wie aktualisiere ich meine Kreditkartendaten?
 {: #updatepayment}
@@ -134,7 +127,7 @@ Führen Sie die folgenden Schritte aus, um Ihr VPN-Kennwort zurückzusetzen:
 
 Schade, dass Sie schon gehen! Wenn wir Ihnen mit Ihrem Konto behilflich sein können, wenden Sie sich an unseren Support.
 
-Wenn Sie Ihr Konto beenden möchten, ist das weitere Vorgehen von Ihrem Kontotyp abhängig. Sie können Ihren Kontotyp überprüfen, indem Sie die [Kontoeinstellungen](https://cloud.ibm.com/account/settings) aufrufen und unter 'Kontotyp' nachsehen.
+Wenn Sie Ihr Konto beenden möchten, ist das weitere Vorgehen von Ihrem Kontotyp abhängig. Sie können Ihren Kontotyp überprüfen, indem Sie in den [Kontoeinstellungen](https://cloud.ibm.com/account/settings) die Einstellung _Kontotyp_ aufrufen. 
 
 * Für nutzungsabhängige Konten oder Abonnementkonten besteht die schnellste Möglichkeit, das Konto zu stornieren, darin, über den [Live-Chat](https://{DomainName}/unifiedsupport/supportcenter) Kontakt aufzunehmen oder die Telefonnummer 1-866-325-0045 anzurufen und Option 3 auszuwählen. Alternativ dazu können Sie auch einen Supportfall öffnen.
 * Zum Stornieren eines Lite-Kontos rufen Sie [Kontoeinstellungen](https://cloud.ibm.com/account/settings) auf und klicken Sie auf **Konto inaktivieren**.
@@ -162,7 +155,7 @@ Wenn Sie glauben, dass Ihr Konto aufgrund eines Fehlers inaktiviert wurde, wende
 {: #contactsupport}
 {: faq}
 
-Klicken Sie auf **Support** in der Menüleiste der Konsole, um das Support Center aufzurufen.
+Klicken Sie auf **Support** in der Menüleiste der Konsole, um das Support Center aufzurufen. Weitere Informationen zur Unterstützung finden Sie in [Unterstützung anfordern](/docs/get-support?topic=get-support-support-plans].
 
 
 ## Kann ich eine Registrierung für eine kostenfreie Testversion durchführen?

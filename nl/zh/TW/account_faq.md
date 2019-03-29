@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-04"
+lastupdated: "2019-03-08"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -83,7 +83,6 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 
 如果您具有計費帳戶，則可以在帳戶內建立的資源群組、組織或空間數量沒有限制。不過，如果您有精簡帳戶，則限制為一個組織及一個資源群組。
 
-
 ## 如何升級或轉換我的帳戶類型？
 {: #changeacct}
 {: faq}
@@ -93,33 +92,27 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
   * 若要升級至「訂閱」帳戶，請按一下**升級**。
 * 若要在「隨收隨付制」與「訂閱」帳戶類型之間轉換，請與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} 聯絡。
 
+請在[升級帳戶](/docs/account?topic=account-upgrading-account)中進一步瞭解。
+
 ## 如果我將「精簡」帳戶升級，還能繼續使用我的現有實例嗎？
 {: #nochange}
 {: faq}
 
 是的，您可以升級成計費帳戶，並繼續使用您以精簡帳戶建立的實例。
 
-
-## 如何升級我的「隨收隨付制」帳戶？
-{: #upgrade}
-{: faq}
-
-若要將「隨收隨付制」帳戶升級為「訂閱」帳戶，請與 [IBM Cloud 銷售人員](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示") 聯絡。
-
-
 ## 如何更新我的信用卡？
 {: #updatepayment}
 {: faq}
 
-移至主控台中的 [付款](https://cloud.ibm.com/billing/payments)，即可更新與您帳戶相關聯的付款方法。請在「新增付款方法」下方，輸入新信用卡的計費資訊，然後按一下**新增信用卡**。
+移至主控台中的 [付款](https://cloud.ibm.com/billing/payments)，即可更新與您帳戶相關聯的付款方法。在「新增付款方法」下，輸入您新卡片的計費資訊，然後按一下**新增信用卡**。
 
-若要切換為不同的付款方法，請選取**使用其他方式付款**，然後按一下**提交變更要求**。將為您建立一個變更付款方法的支援案例。
+若要切換至不同的付款方法，請選取**使用其他方法付費**，然後按一下**提交變更要求**。將會為您建立變更付款方法的支援案例。
 
 ## 如何重設密碼？
 {: #reset-password}
 {: faq}
 
-若要重設帳戶密碼，請移至「虛擬人像」圖示 ![「虛擬人像」圖示](../icons/i-avatar-icon.svg) **設定檔和設定**。然後，按一下帳戶使用者資訊磚中的**變更或重設**。
+若要重設帳戶密碼，請移至「虛擬人像」圖示 ![「虛擬人像」圖示](../icons/i-avatar-icon.svg) **> 設定檔和設定**。然後，按一下帳戶使用者資訊磚中的**變更或重設**。
 
 若要重設 VPN 密碼，請完成下列步驟：
 
@@ -134,7 +127,7 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 
 看到您要離開，我們覺得很遺憾！在您離開之前，如果有任何方法可以協助您使用帳戶，請透過與支援中心聯絡來聯繫我們。
 
-如果您真的決定要離開，則帳戶的取消方式取決於您的帳戶類型。您可以移至[帳戶設定](https://cloud.ibm.com/account/settings)，然後在「帳戶類型」下尋找，來檢查您的帳戶類型。
+如果您真的決定要離開，則帳戶的取消方式取決於您的帳戶類型。您可以移至[帳戶設定](https://cloud.ibm.com/account/settings)，然後在_帳戶類型_ 下尋找，來檢查您的帳戶類型。
 
 * 針對隨收隨付制或訂閱帳戶，取消帳戶最快的方式就是透過[即時會談](https://{DomainName}/unifiedsupport/supportcenter)與我們聯絡，或是撥打 1-866-325-0045 並選取第三個選項。您也可以開立支援案例。
 * 若要取消精簡帳戶，請移至[帳戶設定](https://cloud.ibm.com/account/settings)，然後按一下**取消啟動帳戶**。
@@ -162,7 +155,7 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 {: #contactsupport}
 {: faq}
 
-按一下主控台功能表列中的**支援**，以移至「支援中心」。
+按一下主控台功能表列中的**支援**，以移至「支援中心」。在[取得支援](/docs/get-support?topic=get-support-support-plans)中進一步瞭解支援中心。
 
 
 ## 我可以註冊免費試用嗎？
