@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-04"
+lastupdated: "2019-03-08"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -83,7 +83,6 @@ Lorsque la limite de quota relative aux instances de plan Lite est atteinte, le 
 
 Si vous avez un compte facturable, le nombre de groupes de ressources, d'organisations ou d'espaces que vous pouvez créer dans votre compte est illimité. En revanche, si vous utilisez un compte Lite, vous êtes limité à une organisation et à un groupe de ressources.
 
-
 ## Comment mettre à niveau ou convertir mon type de compte ?
 {: #changeacct}
 {: faq}
@@ -93,19 +92,13 @@ Si vous avez un compte facturable, le nombre de groupes de ressources, d'organis
   * Pour effectuer une mise à niveau vers un compte Abonnement, cliquez sur **Mettre à niveau**.
 * Pour effectuer une conversion entre des types de compte Paiement à la carte et Abonnement, prenez contact avec le [service commercial {{site.data.keyword.Bluemix_notm}}![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
+Pour plus d'informations, voir [Mise à niveau de votre compte](/docs/account?topic=account-upgrading-account).
+
 ## Si je mets à niveau mon compte Lite, puis-je continuer d'utiliser mes instances existantes ?
 {: #nochange}
 {: faq}
 
 Oui, vous pouvez effectuer une mise à niveau vers un compte facturable et continuer d'utiliser les instances que vous avez créées avec votre compte Lite.
-
-
-## Comment mettre à niveau mon compte Paiement à la carte ?
-{: #upgrade}
-{: faq}
-
-Pour mettre à niveau votre compte Paiement à la carte en compte Abonnement, prenez contact avec le [service commercial IBM Cloud](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe").
-
 
 ## Comment mettre à jour ma carte de crédit ?
 {: #updatepayment}
@@ -134,7 +127,7 @@ Pour réinitialiser votre mot de passe VPN, procédez comme suit :
 
 Nous nous désolons de votre départ. Si nous pouvons vous être utile, n'hésitez pas à contacter le support.
 
-Si vous maintenez votre décision malgré tout, le mode de résiliation de votre compte dépend du type de ce dernier. Pour connaître votre type de compte, accédez à la section [Paramètres de compte](https://cloud.ibm.com/account/settings) et vérifiez les données indiquées dans Type de compte.
+Si vous maintenez votre décision malgré tout, le mode de résiliation de votre compte dépend du type de ce dernier. Pour connaître votre type de compte, accédez à la section [Paramètres de compte](https://cloud.ibm.com/account/settings) et consultez les données indiquées dans _Type de compte_.
 
 * Pour les comptes Paiement à la carte ou Abonnement, la manière la plus rapide d'annuler votre compte consiste à nous contacter via la [discussion en ligne](https://{DomainName}/unifiedsupport/supportcenter) ou en nous appelant au numéro 1-866-325-0045 et en sélectionnant la troisième option. Vous pouvez également ouvrir un cas de support.
 * Pour annuler un compte Lite, accédez à [Paramètres de compte](https://cloud.ibm.com/account/settings) et cliquez sur **Désactiver le compte**.
@@ -162,7 +155,7 @@ Si vous pensez que votre compte a été désactivé à tort, contactez le servic
 {: #contactsupport}
 {: faq}
 
-Cliquez sur **Support** dans la barre de menus de la console pour accéder au centre de support.
+Cliquez sur **Support** dans la barre de menus de la console pour accéder au centre de support. Pour plus d'informations sur le support, voir [Support](/docs/get-support?topic=get-support-support-plans].
 
 
 ## Puis-je souscrire à un essai gratuit ?

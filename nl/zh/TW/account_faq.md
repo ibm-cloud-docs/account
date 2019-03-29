@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-25"
+lastupdated: "2019-03-08"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -15,7 +15,6 @@ subcollection: account
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:faq: data-hd-content-type='faq'}
-{:tip: .tip}
 
 # 常見問題 (FAQ)
 {: #accountfaqs}
@@ -77,10 +76,6 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 
 達到精簡方案若為任何配額限制會導致該月份暫停使用該服務。配額限制是根據組織，而不是根據實例。在相同組織中建立的新實例會反映先前實例的任何用量。配額限制會在每個月一日重設。
 
-移至**管理 > 計費及用量**，然後選取**用量**，即可檢查您的用量。如需相關資訊，請參閱[檢視用量](/docs/billing-usage?topic=billing-usage-viewingusage)。
-
-如果想要停止或刪除服務，您可以從資源清單這麼做。請在[導覽 {{site.data.keyword.Bluemix_notm}} 主控台](/docs/overview?topic=overview-ui)中進一步瞭解。
-
 
 ## 我可以建立多少資源群組、組織或空間？
 {: #resourcelimit}
@@ -109,15 +104,15 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 {: #updatepayment}
 {: faq}
 
-移至主控台中的 [付款](https://cloud.ibm.com/billing/payments)，即可更新與您帳戶相關聯的付款方法。請在「新增付款方法」下方，輸入新信用卡的計費資訊，然後按一下**新增信用卡**。
+移至主控台中的 [付款](https://cloud.ibm.com/billing/payments)，即可更新與您帳戶相關聯的付款方法。在「新增付款方法」下，輸入您新卡片的計費資訊，然後按一下**新增信用卡**。
 
-若要切換為不同的付款方法，請選取**使用其他方式付款**，然後按一下**提交變更要求**。將為您建立一個變更付款方法的支援案例。
+若要切換至不同的付款方法，請選取**使用其他方法付費**，然後按一下**提交變更要求**。將會為您建立變更付款方法的支援案例。
 
 ## 如何重設密碼？
 {: #reset-password}
 {: faq}
 
-若要重設帳戶密碼，請移至「虛擬人像」圖示 ![「虛擬人像」圖示](../icons/i-avatar-icon.svg) **設定檔和設定**。然後，按一下帳戶使用者資訊磚中的**變更或重設**。
+若要重設帳戶密碼，請移至「虛擬人像」圖示 ![「虛擬人像」圖示](../icons/i-avatar-icon.svg) **> 設定檔和設定**。然後，按一下帳戶使用者資訊磚中的**變更或重設**。
 
 若要重設 VPN 密碼，請完成下列步驟：
 

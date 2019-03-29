@@ -87,7 +87,7 @@ subcollection: account
 
 如同隨收隨付制帳戶，您的訂閱帳戶讓您能訂購進階或超值支援方案，以獲得所需的額外協助。請在[支援方案](/docs/get-support?topic=get-support-support-plans)中進一步瞭解。
 
-如果您具有訂閱帳戶，則可以從 [{{site.data.keyword.Bluemix_notm}} 型錄](https://{DomainName}/catalog){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示") 建立大部分可用的服務。不過，部分服務會使用需要您個別購買的特定定價方案。
+如果您具有訂閱帳戶，則可以從 [{{site.data.keyword.Bluemix_notm}} 型錄](https://cloud.ibm.com/catalog/){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示") 建立大部分可用的服務。不過，部分服務會使用需要您個別購買的特定定價方案。
 
 ### 服務組合訂閱
 {: #service-subscriptions}

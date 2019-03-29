@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-03-20"
 
 keywords: GDPR, HIPAA, data security, PHI, account settings, europe
 
@@ -14,6 +14,7 @@ subcollection: account
 {:new_window: target="_blank"}
 {:important: .important}
 {:tip: .tip}
+{:note: .note}
 
 # Habilitación de valores soportados UE e HIPAA
 {: #eu-hipaa-supported}
@@ -35,22 +36,31 @@ Al habilitar este valor, se permite que los servicios con Soporte en la UE con c
   4. Pulse **Activado**.
 
    Después de habilitar el valor Soporte en la UE, puede utilizar la etiqueta Soporte en la UE para buscar en el catálogo las ofertas que tienen planes con soporte en la UE.
-   {: tip}
 
 
 ## Habilitación del valor Soporte en HIPAA
 {: #enabling-hipaa}
 
-Puede permitir el valor Soportado en HIPAA para que ejecute cargas de trabajo confidenciales reguladas por la norma HIPAA (Health Insurance Portability and Accountability Act) de EE.UU. Al habilitar este valor, indica que su cuenta procesa PHI que podrían estar sujetos a HIPAA.
+Los protocolos US Health Insurance Portability and Accountability Act (HIPAA) y Health Information Technology for Economic and Clinical Health (HITECH) Act definen estándares para la gestión de la información y de las transacciones electrónicas relacionadas con sanidad. Si usted o su empresa forman parte de una entidad adherida a HIPAA, deben habilitar el valor Soporte de HIPAA si ejecutan cargas de trabajo confidenciales reguladas por HIPAA y por el protocolo HITECH. Encontrará más información sobre la conformidad de {{site.data.keyword.Bluemix_notm}} en [Conformidad en {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud/compliance){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo").
+
+El hecho de habilitar este valor tiene las siguientes consecuencias:
+
+* Le permite filtrar según servicio habilitados para HIPAA en el catálogo
+* Indica a IBM que su cuenta guarda información protegida de sanidad (PHI)
+* Acepta digitalmente el protocolo Business Associate Addendum (BAA) de IBM para las entidades que quedan cubiertas
+
+Habilite este valor únicamente si usted o su empresa constituyen una entidad cubierta por HIPAA. Si usted o su empresa constituyen un socio empresarial de una entidad cubierta por este protocolo, [póngase en contacto con el equipo de ventas de {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-wcp){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo") para aceptar la BAA aplicable. Para obtener más información sobre las definiciones de HIPAA de las entidades y asociados empresariales cubiertos, consulte el documento sobre [servicios del Departamento de salud y servicios humanos](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo").
+{: important}
+
+Las cuentas que habilitan el valor Soporte de HIPAA tienen siguen teniendo acceso al catálogo completo de servicios. Los servicios de {{site.data.keyword.Bluemix_notm}} suelen ofrecer varios planes. La etiqueta Habilitado para HIPAA de un servicio se puede aplicar a todos los planes de servicio o se puede limitar a planes o configuraciones específicos. Como cliente, usted es el único responsable de limitar PHI a los planes y arquitecturas habilitados para IPAA de acuerdo con HIPAA y HITECH.
 
 1. Vaya a **Gestionar > Cuenta** y seleccione **Valores de cuenta** en la consola.
 2. Para la opción Soportado en HIPAA, pulse en **Activado**.
 3. Lea la información sobre la habilitación de este valor.
 
   No podrá inhabilitar el valor después de haberlo habilitado.
-  {: important}
+  {: note}
 
 4. Seleccione **Aceptar** y pulse **Enviar**.
 
   Después de habilitar el valor Soporte en HIPAA, puede utilizar la etiqueta Soporte en HIPAA para buscar en el catálogo las ofertas con soporte en HIPAA.
-  {: tip}

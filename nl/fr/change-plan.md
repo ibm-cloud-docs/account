@@ -23,7 +23,7 @@ subcollection: account
 Vous pouvez changer le plan d'un service {{site.data.keyword.Bluemix}} si les changements de plan sont activés pour le service spécifique. Vous pouvez être amené à changer de plan, par exemple, pour mettre à niveau ou réduire votre plan. Vous pouvez effectuer cette action à partir de votre tableau de bord d'instance de service.
 {: shortdesc}
 
-Recherchez-vous plus de détails sur la mise à niveau de votre type de compte ? Voir [Comment mettre à niveau ou convertir mon type de compte ?](/docs/account?topic=account-changeacct) pour plus d'informations.
+Recherchez-vous plus de détails sur la mise à niveau de votre type de compte ? Pour plus d'informations, voir [Mise à niveau de votre compte](/docs/account?topic=account-upgrading-account).
 {: tip}
 
 Vous pouvez changer les plans de service pour certains services uniquement. Si le changement de plan est possible pour le service, le tableau de bord de l'instance du service affiche l'option **Plan** dans la navigation. Chaque service propose un ensemble différent d'étapes à suivre si vous changez de plan.

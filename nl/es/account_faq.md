@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-04"
+lastupdated: "2019-03-08"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -85,7 +85,6 @@ Si se alcanza cualquier límite de cuota para instancias del plan Lite, se suspe
 
 Si tiene una cuenta facturable, no hay un límite en el número de grupos de recursos, organizaciones o espacios que pueda crear con su cuenta. Sin embargo, si tiene una cuenta Lite, estará limitado a una organización y a un grupo de recursos.
 
-
 ## ¿Cómo puedo actualizar o convertir mi tipo de cuenta?
 {: #changeacct}
 {: faq}
@@ -95,19 +94,13 @@ Si tiene una cuenta facturable, no hay un límite en el número de grupos de rec
   * Para actualizar a una cuenta de suscripción, pulse **Actualizar**.
 * Para convertir entre los tipos de una cuenta de Pago según uso y Suscripción, póngase en contacto con el [equipo de ventas de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
+Encontrará más información en el apartado sobre [Actualización de la cuenta](/docs/account?topic=account-upgrading-account).
+
 ## Si actualizo mi cuenta Lite, ¿puedo seguir utilizando mis instancias existentes?
 {: #nochange}
 {: faq}
 
 Sí, puede actualizarla a una cuenta facturable y seguir utilizando las instancias que creó con su cuenta Lite.
-
-
-## ¿Cómo actualizo mi cuenta de Pago según uso?
-{: #upgrade}
-{: faq}
-
-Para actualizar su cuenta de Pago según uso a una cuenta de Suscripción, póngase en contacto con el [Equipo de ventas de IBM Cloud](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo").
-
 
 ## ¿Cómo puedo actualizar mi tarjeta de crédito?
 {: #updatepayment}
@@ -137,7 +130,7 @@ Para restablecer la contraseña de VPN, siga estos pasos:
 Sentimos que se vaya. Si podemos ayudarle de alguna manera con su cuenta antes de que se marche, póngase en contacto con nosotros a través del soporte.
 
 Si decide marcharse, la manera de cancelar su cuenta dependerá del tipo de cuenta. Puede comprobar su tipo de cuenta accediendo a
-[Configuración de la cuenta](https://cloud.ibm.com/account/settings) y buscando Tipo de cuenta.
+[Configuración de la cuenta](https://cloud.ibm.com/account/settings) y buscando _Tipo de cuenta_.
 
 * Para las cuentas de pago según uso o de suscripción, la forma más rápida de cancelar su cuenta es ponerse en contacto con nosotros mediante el [chat en directo](https://{DomainName}/unifiedsupport/supportcenter) o llamando al teléfono 1-866-325-0045 y seleccionando la tercera opción. También puede abrir un caso de soporte.
 * Para cancelar una cuenta Lite, vaya a [Configuración de la cuenta](https://cloud.ibm.com/account/settings) y pulse **Desactivar cuenta**.
@@ -165,7 +158,7 @@ Si cree que su cuenta se ha desactivado por error, póngase en contacto con el e
 {: #contactsupport}
 {: faq}
 
-Pulse **Soporte** en la barra de menús de la consola para ir al centro de soporte.
+Pulse **Soporte** en la barra de menús de la consola para ir al centro de soporte. Encontrará más información sobre soporte en [Obtención de soporte](/docs/get-support?topic=get-support-support-plans].
 
 
 ## ¿Puedo registrarme para una prueba gratuita?
