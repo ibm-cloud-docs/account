@@ -49,13 +49,13 @@ Para fazer upgrade de uma conta Lite para uma conta de Assinatura, conclua as et
 1. Acesse **Gerenciar > Conta** e selecione **Configurações da conta**. Em seguida, clique em **Fazer upgrade**, o que o levará até a página Assinaturas.
 1. Selecione seu compromisso de gasto mensal e o prazo de assinatura e clique em **Introdução**.
 
-   Se você não tiver certeza de quanto seu uso típico pode custar, poderá estimar isso usando o [estimador de custo](/estimator/review){:new_window}![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo").
+   Se você não tiver certeza de quanto seu uso típico pode custar, poderá estimar isso usando o [estimador de custo](https://{DomainName}/estimator/review){:new_window}![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo").
    {:tip}
 1. Revise os detalhes de sua assinatura e, em seguida, insira suas informações de pagamento.
 
    Depois que suas informações de pagamento forem processadas, seu crédito de assinatura será incluído em sua conta.
 
-Sua assinatura é renovada automaticamente. Se você desejar descontinuar sua renovação de assinatura, [entre em contato com o suporte](/unifiedsupport/supportcenter).
+Sua assinatura é renovada automaticamente. Se você desejar descontinuar sua renovação de assinatura, [entre em contato com o suporte](https://{DomainName}/unifiedsupport/supportcenter).
 {: note}
 
 ### Convertendo uma conta Pré-paga em uma conta de Assinatura
