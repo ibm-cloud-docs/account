@@ -49,13 +49,13 @@ subcollection: account
 1. 移至**管理 > 帳戶**，然後選取**帳戶設定**。然後按一下**升級**，這會將您帶到「訂閱」頁面。
 1. 選取您的每月消費承諾和訂閱期限，然後按一下**開始使用**。
 
-   如果您不確定一般用量可能花費多少，可以使用[成本預估器](/estimator/review){:new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示") 進行預估。
+   如果您不確定一般用量可能花費多少，可以使用[成本預估器](https://{DomainName}/estimator/review){:new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示") 進行預估。
    {:tip}
 1. 檢閱您的訂閱詳細資料，然後輸入付款資訊。
 
    付款資訊經過處理之後，您的訂閱額度便已加到帳戶。
 
-您的訂閱會自動更新。如果想要停止訂閱更新，請[與支援中心聯絡](/unifiedsupport/supportcenter)。
+您的訂閱會自動更新。如果想要停止訂閱更新，請[與支援中心聯絡](https://{DomainName}/unifiedsupport/supportcenter)。
 {: note}
 
 ### 將隨收隨付制帳戶轉換成訂閱帳戶

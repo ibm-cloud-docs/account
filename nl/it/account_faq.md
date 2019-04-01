@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-04"
+lastupdated: "2019-03-25"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -15,6 +15,7 @@ subcollection: account
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:faq: data-hd-content-type='faq'}
+{:tip: .tip}
 
 # Domande frequenti
 {: #accountfaqs}
@@ -76,13 +77,16 @@ Un piano Lite è un piano di servizi gratuito basato sulle quote. Puoi utilizzar
 
 Il raggiungimento di qualsiasi limite di quota per le istanze del piano Lite sospende il servizio per quel mese. I limiti di quota sono per organizzazione, non per istanza. Le nuove istanze create nella stessa organizzazione riflettono qualsiasi utilizzo dalle istanze precedenti. I limiti di quota sono reimpostati il primo di ogni mese.
 
+Puoi consultare il tuo utilizzo andando a **Gestisci > Fatturazione e utilizzo** e selezionando **Utilizzo**. Per ulteriori informazioni, vedi [Visualizzazione del tuo utilizzo](/docs/billing-usage?topic=billing-usage-viewingusage).
+
+Se vuoi arrestare o eliminare un servizio, puoi farlo dall'elenco di risorse. Ulteriori informazioni in [Navigazione nella console {{site.data.keyword.Bluemix_notm}}](/docs/overview?topic=overview-ui).
+
 
 ## Quanti gruppi di risorse, organizzazioni o spazi posso creare?
 {: #resourcelimit}
 {: faq}
 
 Se disponi di un account fatturabile, non esiste alcun limite al numero di gruppi di risorse, organizzazioni o spazi che puoi creare all'interno del tuo account. Tuttavia, se hai un account Lite, sei limitato a un'organizzazione e a un gruppo di risorse.
-
 
 ## Come eseguo l'upgrade o la conversione del mio tipo di account?
 {: #changeacct}
@@ -93,19 +97,13 @@ Se disponi di un account fatturabile, non esiste alcun limite al numero di grupp
   * Per eseguire l'upgrade a un account Sottoscrizione, fai clic su **Esegui upgrade**.
 * Per una conversione tra i tipi di account Pagamento a consumo e Sottoscrizione, contatta il settore [Vendite di {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
+Ulteriori informazioni in [Upgrade del tuo account](/docs/account?topic=account-upgrading-account).
+
 ## Se eseguo l'upgrade del mio account Lite, posso continuare a utilizzare le mie istanze esistenti?
 {: #nochange}
 {: faq}
 
 Sì, puoi eseguire l'upgrade a un account fatturabile e continuare a utilizzare le istanze create con il tuo account Lite.
-
-
-## Come eseguo l'upgrade del mio account Pagamento a consumo?
-{: #upgrade}
-{: faq}
-
-Per eseguire l'upgrade del tuo account Pagamento a consumo a un account Sottoscrizione, contatta il settore [Vendite di IBM Cloud](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno").
-
 
 ## Come aggiorno la mia carta di credito?
 {: #updatepayment}
@@ -134,7 +132,7 @@ Per reimpostare la tua password VPN, completa la seguente procedura:
 
 Ci dispiace che tu vada via. Se possiamo aiutarti in qualsiasi modo con il tuo account prima che tu vada, ti invitiamo a metterti in comunicazione con noi contattando il supporto.
 
-Se decidi di andare via, il modo in cui annulli il tuo account dipende dal tuo tipo di account. Puoi controllare il tipo del tuo account andando a [Impostazioni account](https://cloud.ibm.com/account/settings) e guardando in Tipo di account.
+Se decidi di andare via, il modo in cui annulli il tuo account dipende dal tuo tipo di account. Puoi controllare il tipo del tuo account andando a [Impostazioni account](https://cloud.ibm.com/account/settings) e guardando in _Tipo di account_.
 
 * Per gli account Pagamento a consumo o Sottoscrizione, il modo più rapido per annullare il tuo account è contattandoci tramite la [live chat](https://{DomainName}/unifiedsupport/supportcenter) oppure chiamando il numero 1-866-325-0045 e selezionando la terza opzione. In alternativa, puoi aprire un caso di supporto.
 * Per annullare un account Lite, vai a [Impostazioni account](https://cloud.ibm.com/account/settings) e fai clic su **Disattiva account**.
@@ -162,7 +160,7 @@ Se credi che il tuo account sia stato disattivato erroneamente, contatta il supp
 {: #contactsupport}
 {: faq}
 
-Fai clic su **Supporto** dalla barra dei menu della console per andare al Centro di supporto.
+Fai clic su **Supporto** dalla barra dei menu della console per andare al Centro di supporto. Ulteriori informazioni sul supporto in [Richiesta di supporto](/docs/get-support?topic=get-support-support-plans].
 
 
 ## Posso registrarmi per una versione di prova?
