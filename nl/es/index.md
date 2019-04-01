@@ -87,7 +87,7 @@ El uso se resta del importe total de la suscripción. Aunque el uso varíe de me
 
 Al igual que sucede con las cuentas de pago según uso, la cuenta de suscripción le permite solicitar planes de soporte avanzados o premium para obtener más ayuda si la necesita. Encontrará más información en el apartado sobre [Planes de soporte](/docs/get-support?topic=get-support-support-plans).
 
-Si tiene una cuenta de suscripción, puede crear la mayoría de los servicios que están disponibles en el [catálogo de {{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com/catalog/){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo"). Sin embargo, algunos servicios utilizan un plan de precios específicos que requiere que se adquieran por separado.
+Si tiene una cuenta de suscripción, puede crear la mayoría de los servicios que están disponibles en el [catálogo de {{site.data.keyword.Bluemix_notm}}](https://{DomainName}/catalog){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo"). Sin embargo, algunos servicios utilizan un plan de precios específicos que requiere que se adquieran por separado.
 
 ### Suscripciones de paquetes de servicios
 {: #service-subscriptions}
