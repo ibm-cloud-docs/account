@@ -130,7 +130,7 @@ If your account is pending, you can't log in to {{site.data.keyword.Bluemix_notm
 After you register for an {{site.data.keyword.Bluemix_notm}} Lite account, you might not be able to log in to {{site.data.keyword.Bluemix_notm}}. The following message is displayed:
 {: tsSymptoms}
 
-<code>Your account is pending. Please wait up to 24 hours for email confirmation and also check your spam folder. If you still have not received your email confirmation, contact <a href="http://ibm.biz/bluemixsupport.com" target="_blank">{{site.data.keyword.Bluemix_notm}} Support</a>.</code>
+<code>Your account is pending. Please wait up to 24 hours for email confirmation and also check your spam folder. If you still have not received your email confirmation, contact <a href="https://ibm.biz/ibmcloudsupport" target="_blank">{{site.data.keyword.Bluemix_notm}} Support</a>.</code>
 
 When you register for an {{site.data.keyword.Bluemix_notm}} Lite account, you receive an email that includes a link that you must click to confirm your registration.  
 {: tsCauses}
