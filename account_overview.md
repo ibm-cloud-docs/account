@@ -50,6 +50,6 @@ Within the diagram, there are two main concepts for the components in the accoun
 
 Another important aspect of the previous diagram is the depiction of the three types of access management systems that you can use to provide account users access to resources within the account.
 
-  * You can use IAM [access roles](/docs/iam?topic=iam-iamusermanrol#iamusermanrol) to provide users access to all resources that belong to a resource group. You can also give users access to manage resource groups and create new service instances that are assigned to a resource group.
-  * You can use Cloud Foundry [organization and space roles](/docs/iam?topic=iam-cfroles#cfroles) to provide users access to any service instances that reside in a Cloud Foundry space.
+  * You can use IAM [access roles](/docs/iam?topic=iam-userroles#iamusermanrol) to provide users access to all resources that belong to a resource group. You can also give users access to manage resource groups and create new service instances that are assigned to a resource group.
+  * You can use Cloud Foundry [organization and space roles](/docs/iam?topic=iam-cfaccess#cfroles) to provide users access to any service instances that reside in a Cloud Foundry space.
   * You can use classic infrastructure permissions to grant users more granular [permissions](/docs/iam?topic=iam-infrapermission#infrapermission) for classic infrastructure. You assign device access and VPN subnet access separately.

@@ -248,7 +248,7 @@ Go to [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![Ext
 {: #know-about-tags}
 {: faq}
 
-You can use tags to organize and view resources across your account by filtering tags from your resource list. For more information, see [Tagging resources](/docs/resources?topic=resources-add-remove#add-remove).
+You can use tags to organize and view resources across your account by filtering tags from your resource list. For more information, see [Working with tags](/docs/resources?topic=resources-tag).
 
 ## Who can view the tags in an account?
 {: #tags-visibility-account}

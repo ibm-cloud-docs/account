@@ -66,7 +66,7 @@ Complete the following steps to add an org:
 
 Within an organization, you can use spaces to group a set of applications, services, and users. Spaces are tied to a specific region in {{site.data.keyword.Bluemix_notm}}. You can create spaces in an org based on the delivery lifecycle. For example, you can create a `dev` space as a development environment, a `test` space as a testing environment, and a `production` space as a production environment. Then, you can associate your apps with spaces.
 
-After you add users to an org, you can grant them permissions to the spaces. Similar to orgs, spaces also have a set of [Cloud Foundry roles](/docs/iam?topic=iam-cfroles) with specific permissions that are assigned to team members:
+After you add users to an org, you can grant them permissions to the spaces. Similar to orgs, spaces also have a set of [Cloud Foundry roles](/docs/iam?topic=iam-cfaccess#cfroles) with specific permissions that are assigned to team members:
 
   * Space manager
   * Space developer

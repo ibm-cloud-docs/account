@@ -46,18 +46,18 @@ You can view the resources of only one org at a time. If you are a member of mul
   * To edit user roles at the org level, click the Actions icon ![Action icon](../icons/action-menu-icon.svg), and select **Users**.
     {: #listmembers}
 
-    Depending on how you want to modify the user permissions, select or clear the check box for a specific role. The roles that you can assign at the organization level are Manager, Billing manager, and Auditor. For more information, see [Cloud Foundry roles](/docs/iam?topic=iam-cfroles).
+    Depending on how you want to modify the user permissions, select or clear the check box for a specific role. The roles that you can assign at the organization level are Manager, Billing manager, and Auditor. For more information, see [Cloud Foundry roles](/docs/iam?topic=iam-cfaccess#cfroles).
 
   * To edit user roles for a specific space, click the org in which the space is assigned. Then, click the name of the space.
 
-    Depending on how you want to modify the user permissions, select or clear the check box for a specific role. The roles that you can assign at the space level are Manager, Developer, and Auditor. For more information, see [Cloud Foundry roles](/docs/iam?topic=iam-cfroles).
+    Depending on how you want to modify the user permissions, select or clear the check box for a specific role. The roles that you can assign at the space level are Manager, Developer, and Auditor. For more information, see [Cloud Foundry roles](/docs/iam?topic=iam-cfaccess#cfroles).
 
   * To manage your domains, click the Actions icon ![Action icon](../icons/action-menu-icon.svg) for the respective org, and select **Domains**.
     {: #managedomains}
 
     As an account owner or organization manager, you can view the system domain and add custom domains for applications that are built within an org and its spaces. If you're a space manager, this page displays read-only list of the domains that are assigned to the space.
 
-    If you add a custom domain, you must configure your DNS server to resolve your custom domain to point to the {{site.data.keyword.Bluemix_notm}} system domain. In this way, when {{site.data.keyword.Bluemix_notm}} receives a request for your custom domain, it's properly routed to your app. The system domain is always available to a space, and custom domains might also be allocated to a space. Apps that are created in a space might use any of the domains that are listed for that space. For more information about creating and by using custom domains, see [Creating and using a custom domain](/docs/apps?topic=creating-apps-updatingapps).
+    If you add a custom domain, you must configure your DNS server to resolve your custom domain to point to the {{site.data.keyword.Bluemix_notm}} system domain. In this way, when {{site.data.keyword.Bluemix_notm}} receives a request for your custom domain, it's properly routed to your app. The system domain is always available to a space, and custom domains might also be allocated to a space. Apps that are created in a space might use any of the domains that are listed for that space. For more information about creating and by using custom domains, see [Managing your domains](/docs/apps?topic=creating-apps-update-domain).
 
   * To manage the allocated quota for an org, click the Actions icon ![Action icon](../icons/action-menu-icon.svg) for the respective org, and select **Quotas**.
     {: #managequota}
