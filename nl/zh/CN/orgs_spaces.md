@@ -66,7 +66,7 @@ subcollection: account
 
 在组织内，您可以使用空间来对一组应用程序、服务和用户进行分组。空间与 {{site.data.keyword.Bluemix_notm}} 中的特定区域联系在一起。您可以基于交付生命周期在组织中创建多个空间。例如，可以创建 `dev` 空间（作为开发环境）、`test` 空间（作为测试环境）和 `production` 空间（作为生产环境）。然后，可以将应用程序与空间相关联。
 
-在将用户添加到组织之后，您可以向其授予对空间的许可权。与组织类似，空间也具有一组 [Cloud Foundry 角色](/docs/iam?topic=iam-cfroles)，这些角色带有分配给团队成员的特定许可权：
+在将用户添加到组织之后，您可以向其授予对空间的许可权。与组织类似，空间也具有一组 [Cloud Foundry 角色](/docs/iam?topic=iam-cfaccess#cfroles)，这些角色带有分配给团队成员的特定许可权：
 
   * 空间管理者
   * 空间开发者

@@ -248,7 +248,7 @@ IBM ID를 사용하여 {{site.data.keyword.Bluemix_notm}} 콘솔에 액세스할
 {: #know-about-tags}
 {: faq}
 
-태그를 사용하면 리소스 목록에서 태그를 필터링하여 계정에서 리소스를 구성하고 볼 수 있습니다. 자세한 정보는 [리소스 태그 지정](/docs/resources?topic=resources-add-remove#add-remove)을 참조하십시오.
+태그를 사용하면 리소스 목록에서 태그를 필터링하여 계정에서 리소스를 구성하고 볼 수 있습니다. 자세한 정보는 [태그에 대한 작업](/docs/resources?topic=resources-tag)을 참조하십시오.
 
 ## 누가 계정의 태그를 볼 수 있습니까?
 {: #tags-visibility-account}

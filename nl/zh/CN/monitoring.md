@@ -27,4 +27,4 @@ subcollection: account
 * 添加或除去用户
 * 创建组织
 
-要开始监视帐户操作，请参阅 [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker)。有关可以跟踪的每个事件区域的更多信息，请参阅[帐户管理事件](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_events_acc_mgt)。
+要开始监视帐户操作，请参阅 [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started)。有关可以跟踪的每个事件区域的更多信息，请参阅[帐户管理事件](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_events_acc_mgt)。

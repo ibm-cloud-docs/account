@@ -35,7 +35,7 @@ subcollection: account
 ## 編輯 IBM ID 資訊
 {: #ibmid}
 
-IBM ID 是您用來登入 {{site.data.keyword.Bluemix_notm}} 帳戶以便使用基礎架構、服務及應用程式特性的單一 ID。您無法變更 IBM ID，但可以編輯相關聯的設定檔資訊，例如姓名、電子郵件、電話號碼、密碼或公司名稱。移至 **{{site.data.keyword.avatar}}** 圖示 ![「虛擬人像」圖示](../icons/i-avatar-icon.svg) > **設定檔和設定**。如需相關資訊，請參閱[切換至 IBM ID 及鏈結帳戶](softlayerlink.html)。
+IBM ID 是您用來登入 {{site.data.keyword.Bluemix_notm}} 帳戶以便使用基礎架構、服務及應用程式特性的單一 ID。您無法變更 IBM ID，但可以編輯相關聯的設定檔資訊，例如姓名、電子郵件、電話號碼、密碼或公司名稱。移至 **{{site.data.keyword.avatar}}** 圖示 ![「虛擬人像」圖示](../icons/i-avatar-icon.svg) > **設定檔和設定**。如需相關資訊，請參閱[切換至 IBM ID 及鏈結帳戶](/docs/account?topic=account-unifyingaccounts)。
 
 
 ## 變更 Cookie 設定

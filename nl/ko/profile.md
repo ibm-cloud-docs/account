@@ -35,7 +35,7 @@ subcollection: account
 ## IBM ID 정보 편집
 {: #ibmid}
 
-IBM ID는 인프라, 서비스 및 애플리케이션 기능에 대해 {{site.data.keyword.Bluemix_notm}} 계정에 로그인하는 데 사용하는 단일 ID입니다. IBM ID를 변경할 수는 없지만 이와 연관된 프로파일 정보(예: 이름, 이메일, 전화번호, 비밀번호 또는 회사 이름)는 편집이 가능합니다. **{{site.data.keyword.avatar}}** 아이콘 ![아바타 아이콘](../icons/i-avatar-icon.svg) &gt; **프로파일 및 설정**으로 이동하십시오. 자세한 정보는 [IBM ID로 전환 및 계정 연결](softlayerlink.html)을 참조하십시오.
+IBM ID는 인프라, 서비스 및 애플리케이션 기능에 대해 {{site.data.keyword.Bluemix_notm}} 계정에 로그인하는 데 사용하는 단일 ID입니다. IBM ID를 변경할 수는 없지만 이와 연관된 프로파일 정보(예: 이름, 이메일, 전화번호, 비밀번호 또는 회사 이름)는 편집이 가능합니다. **{{site.data.keyword.avatar}}** 아이콘 ![아바타 아이콘](../icons/i-avatar-icon.svg) &gt; **프로파일 및 설정**으로 이동하십시오. 자세한 정보는 [IBM ID로 전환 및 계정 연결](/docs/account?topic=account-unifyingaccounts)을 참조하십시오.
 
 
 ## 쿠키 설정 변경

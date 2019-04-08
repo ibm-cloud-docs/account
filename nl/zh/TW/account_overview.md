@@ -50,6 +50,6 @@ subcollection: account
 
 前一個圖表的另一個重要層面是三種存取管理系統的描述，您可以用來提供帳戶使用者對於帳戶內資源的存取權。
 
-  * 您可以使用 IAM [存取角色](/docs/iam?topic=iam-iamusermanrol#iamusermanrol)來提供使用者對於屬於資源群組之所有資源的存取權。您也可以授與使用者管理資源群組的存取權，以及建立指派給資源群組的新服務實例。
-  * 您可以使用 Cloud Foundry [組織及空間角色](/docs/iam?topic=iam-cfroles#cfroles)來提供使用者對於位在 Cloud Foundry 空間內之任何服務實例的存取權。
+  * 您可以使用 IAM [存取角色](/docs/iam?topic=iam-userroles#iamusermanrol)來提供使用者對於屬於資源群組之所有資源的存取權。您也可以授與使用者管理資源群組的存取權，以及建立指派給資源群組的新服務實例。
+  * 您可以使用 Cloud Foundry [組織及空間角色](/docs/iam?topic=iam-cfaccess#cfroles)來提供使用者對於位在 Cloud Foundry 空間內之任何服務實例的存取權。
   * 您可以使用標準基礎架構許可權，將標準基礎架構的其他精細[許可權](/docs/iam?topic=iam-infrapermission#infrapermission)授與給使用者。您可以個別指派裝置存取權及 VPN 子網路存取權。

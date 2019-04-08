@@ -50,6 +50,6 @@ subcollection: account
 
 上图的另一个重要方面是描述了三种类型的访问管理系统，您可以使用这些系统为帐户用户提供对帐户内资源的访问权。
 
-  * 可以使用 IAM [访问角色](/docs/iam?topic=iam-iamusermanrol#iamusermanrol)向用户提供对属于一个资源组的所有资源的访问权。还可以为用户提供访问权，用于管理资源组和创建新服务实例以分配给资源组。
-  * 可以使用 Cloud Foundry [组织和空间角色](/docs/iam?topic=iam-cfroles#cfroles)为用户提供对位于 Cloud Foundry 空间中的任何服务实例的访问权。
+  * 可以使用 IAM [访问角色](/docs/iam?topic=iam-userroles#iamusermanrol)向用户提供对属于一个资源组的所有资源的访问权。还可以为用户提供访问权，用于管理资源组和创建新服务实例以分配给资源组。
+  * 可以使用 Cloud Foundry [组织和空间角色](/docs/iam?topic=iam-cfaccess#cfroles)为用户提供对位于 Cloud Foundry 空间中的任何服务实例的访问权。
   * 可以使用经典基础架构许可权授予用户对传统基础架构的更详细[许可权](/docs/iam?topic=iam-infrapermission#infrapermission)。您可分别分配设备访问权和 VPN 子网访问权。

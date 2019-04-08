@@ -130,7 +130,7 @@ IBMid 認証サービスに問題がある可能性があります。
 {{site.data.keyword.Bluemix_notm}} ライト・アカウントに登録した後、{{site.data.keyword.Bluemix_notm}} にログインできない場合があります。 次のメッセージが表示されます。
 {: tsSymptoms}
 
-<code>アカウントが保留になっています。 E メールの確認を最大 24 時間待って、スパム・フォルダーも確認してください。 それでも確認の E メールが届かない場合は、<a href="http://ibm.biz/bluemixsupport.com" target="_blank">{{site.data.keyword.Bluemix_notm}} サポート</a>までお問い合わせください。</code>
+<code>アカウントが保留になっています。 E メールの確認を最大 24 時間待って、スパム・フォルダーも確認してください。 それでも確認の E メールが届かない場合は、<a href="https://ibm.biz/ibmcloudsupport" target="_blank">{{site.data.keyword.Bluemix_notm}} サポート</a>までお問い合わせください。</code>
 
 {{site.data.keyword.Bluemix_notm}} ライト・アカウントに登録すると E メールが届きます。そのメールに含まれているリンクをクリックして登録を確認する必要があります。  
 {: tsCauses}

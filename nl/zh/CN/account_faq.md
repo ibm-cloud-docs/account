@@ -248,7 +248,7 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 {: #know-about-tags}
 {: faq}
 
-可以使用标记来组织整个帐户中的资源，然后通过在资源列表中过滤标记来查看这些资源。有关更多信息，请参阅[标记资源](/docs/resources?topic=resources-add-remove#add-remove)。
+可以使用标记来组织整个帐户中的资源，然后通过在资源列表中过滤标记来查看这些资源。有关更多信息，请参阅[使用标记](/docs/resources?topic=resources-tag)。
 
 ## 谁可以查看帐户中的标记？
 {: #tags-visibility-account}

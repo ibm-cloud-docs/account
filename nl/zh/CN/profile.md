@@ -35,7 +35,7 @@ subcollection: account
 ## 编辑 IBM 标识信息
 {: #ibmid}
 
-IBM 标识是您用于登录到 {{site.data.keyword.Bluemix_notm}} 帐户以获取基础架构、服务和应用程序功能的单个标识。您无法更改自己的 IBM 标识，但可以编辑关联的个人档案信息，例如您的姓名、电子邮件、电话号码、密码或公司名称。请转至 **{{site.data.keyword.avatar}}** 图标 ![“头像”图标](../icons/i-avatar-icon.svg) &gt; **个人档案和设置**。有关更多信息，请参阅[切换到 IBM 标识和链接帐户](softlayerlink.html)。
+IBM 标识是您用于登录到 {{site.data.keyword.Bluemix_notm}} 帐户以获取基础架构、服务和应用程序功能的单个标识。您无法更改自己的 IBM 标识，但可以编辑关联的个人档案信息，例如您的姓名、电子邮件、电话号码、密码或公司名称。请转至 **{{site.data.keyword.avatar}}** 图标 ![“头像”图标](../icons/i-avatar-icon.svg) &gt; **个人档案和设置**。有关更多信息，请参阅[切换到 IBM 标识和链接帐户](/docs/account?topic=account-unifyingaccounts)。
 
 
 ## 更改 cookie 设置
