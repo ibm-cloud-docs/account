@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-25"
+lastupdated: "2019-04-09"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -112,6 +112,18 @@ Yes, you can upgrade to a billable account and continue to use the instances you
 You can update the payment method that's associated with your account by going to [Payments](https://cloud.ibm.com/billing/payments) in the console. Under Add Payment Method, enter in the billing information for your new card, then click **Add credit card**.
 
 To switch to a different payment method, select **Pay with Other** and then click **Submit change request**. A support case to change your payment method will be created for you.
+
+## How do I change my email notification settings?
+{: #change-email-prefs}
+{: faq}
+
+You can change which email notifications you receive for planned events, unplanned events, and announcements in your profile settings.
+1. Go to [Notifications](https://cloud.ibm.com/user/notifications) in your profile settings.
+1. Select whether to receive email notifications for each type of event.
+
+For classic infrastructure services, account owners can also subscribe users to notifications from those services by going to **Manage > Account > Notifications**.
+
+For more information, see [Setting email preferences](/docs/account?topic=account-email-prefs).
 
 ## How do I reset my password?
 {: #reset-password}
