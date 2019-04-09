@@ -251,7 +251,7 @@ Vai a [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![Ico
 {: #know-about-tags}
 {: faq}
 
-Puoi utilizzare le tag per organizzare e visualizzare le risorse nel tuo account filtrando le tag dal tuo elenco risorse. Per ulteriori informazioni, vedi [Aggiunta di tag alle risorse](/docs/resources?topic=resources-add-remove#add-remove).
+Puoi utilizzare le tag per organizzare e visualizzare le risorse nel tuo account filtrando le tag dal tuo elenco risorse. Per ulteriori informazioni, consulta [Gestione delle tag](/docs/resources?topic=resources-tag).
 
 ## Chi può visualizzare le tag in un account?
 {: #tags-visibility-account}

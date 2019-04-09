@@ -50,6 +50,6 @@ Dentro del diagrama, hay dos conceptos principales correspondiente a la jerarqu�
 
 Otro aspecto importante del diagrama anterior es la representación de los tres tipos de sistemas de gestión de acceso que puede utilizar para otorgar a los usuarios de la cuenta acceso a los recursos de la misma.
 
-  * Puede utilizar los [roles de acceso](/docs/iam?topic=iam-iamusermanrol#iamusermanrol) para otorgar a los usuarios acceso a todos los recursos pertenecientes a un grupo de recursos. También puede proporcionar a los usuarios acceso para gestionar grupos de recursos y crear nuevas instancias de servicio que se asignan a un grupo de recursos.
-  * Puede utilizar los [roles de organización y de espacio](/docs/iam?topic=iam-cfroles#cfroles) de Cloud Foundry para otorgar a los usuarios acceso a cualquier instancia de servicio que resida en un espacio de Cloud Foundry.
+  * Puede utilizar los [roles de acceso](/docs/iam?topic=iam-userroles#iamusermanrol) de IAM para otorgar a los usuarios acceso a todos los recursos pertenecientes a un grupo de recursos. También puede proporcionar a los usuarios acceso para gestionar grupos de recursos y crear nuevas instancias de servicio que se asignan a un grupo de recursos.
+  * Puede utilizar los [roles de organización y de espacio](/docs/iam?topic=iam-cfaccess#cfroles) de Cloud Foundry para otorgar a los usuarios acceso a cualquier instancia de servicio que resida en un espacio de Cloud Foundry.
   * Puede utilizar permisos de infraestructura clásica para otorgar a los usuarios [permisos](/docs/iam?topic=iam-infrapermission#infrapermission) más detallados a la infraestructura clásica. Puede asignar el acceso de dispositivo y el acceso de subred VPN por separado.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-03-20"
 
 keywords: manage account, account events, track events, account tracking, monitoring
 
@@ -27,4 +27,4 @@ Puoi tracciare i seguenti eventi:
 * Aggiunta o rimozione di utenti
 * Creazione di organizzazioni
 
-Per iniziare a monitorare le azioni dell'account, consulta [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started-with-cla). Per ulteriori informazioni su ciascuna delle aree di evento che puoi tracciare, vedi [Eventi di gestione dell'account](/docs/services/cloud-activity-tracker/services?topic=cloud-activity-tracker-at_events).
+Per iniziare a monitorare le azioni dell'account, consulta [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started). Per ulteriori informazioni su ciascuna delle aree di evento che puoi tracciare, vedi [Eventi di gestione dell'account](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_events_acc_mgt).

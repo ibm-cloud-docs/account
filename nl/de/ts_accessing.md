@@ -130,7 +130,7 @@ Falls sich Ihr Konto im Wartestatus befindet, können Sie sich nicht bei {{site.
 Nach der Registrierung für ein {{site.data.keyword.Bluemix_notm}}-Lite-Konto können Sie sich möglicherweise nicht bei {{site.data.keyword.Bluemix_notm}} anmelden. Die folgende Nachricht wird angezeigt:
 {: tsSymptoms}
 
-<code>Ihr Konto befindet sich im Zustand 'Anstehend'. Es kann bis zu 24 Stunden dauern, bis Sie eine Bestätigungs-E-Mail für Ihr Konto erhalten. Überprüfen Sie außerdem Ihren Spamordner. Wenn Sie trotzdem keine E-Mail-Bestätigung erhalten haben, wenden Sie sich an den <a href="http://ibm.biz/bluemixsupport.com" target="_blank">{{site.data.keyword.Bluemix_notm}}-Support</a>.</code>
+<code>Ihr Konto befindet sich im Zustand 'Anstehend'. Es kann bis zu 24 Stunden dauern, bis Sie eine Bestätigungs-E-Mail für Ihr Konto erhalten. Überprüfen Sie außerdem Ihren Spamordner. Wenn Sie trotzdem keine E-Mail-Bestätigung erhalten haben, wenden Sie sich an den <a href="https://ibm.biz/ibmcloudsupport" target="_blank">{{site.data.keyword.Bluemix_notm}}-Support</a>.</code>
 
 Bei der Registrierung für ein Lite-Konto in {{site.data.keyword.Bluemix_notm}} erhalten Sie eine E-Mail mit einem Link, auf den Sie klicken müssen, um die Registrierung zu bestätigen.  
 {: tsCauses}

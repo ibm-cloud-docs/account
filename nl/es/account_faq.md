@@ -253,7 +253,7 @@ Vaya a [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![Ic
 {: #know-about-tags}
 {: faq}
 
-Puede utilizar etiquetas para organizar y visualizar recursos en la cuenta filtrando las etiquetas de la lista de recursos. Para obtener más información, consulte [Cómo etiquetar recursos](/docs/resources?topic=resources-add-remove#add-remove).
+Puede utilizar etiquetas para organizar y visualizar recursos en la cuenta filtrando las etiquetas de la lista de recursos. Para obtener más información, consulte [Cómo trabajar con etiquetas](/docs/resources?topic=resources-tag).
 
 ## ¿Quién puede ver las etiquetas en una cuenta?
 {: #tags-visibility-account}

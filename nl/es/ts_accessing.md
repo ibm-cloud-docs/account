@@ -130,7 +130,7 @@ Si la cuenta está pendiente, no puede iniciar una sesión en {{site.data.keywor
 Después de registrarse para una cuenta de Lite de {{site.data.keyword.Bluemix_notm}}, es posible que no pueda iniciar sesión en {{site.data.keyword.Bluemix_notm}}. Se visualiza el mensaje siguiente:
 {: tsSymptoms}
 
-<code>Su cuenta está pendiente. Debe esperar hasta 24 horas a recibir una confirmación por correo electrónico y debe comprobar la carpeta spam. Si transcurrido este tiempo no ha recibido la confirmación por correo electrónico, póngase en contacto con el <a href="http://ibm.biz/bluemixsupport.com" target="_blank">Soporte de {{site.data.keyword.Bluemix_notm}}</a>.</code>
+<code>Su cuenta está pendiente. Debe esperar hasta 24 horas a recibir una confirmación por correo electrónico y debe comprobar la carpeta spam. Si transcurrido este tiempo no ha recibido la confirmación por correo electrónico, póngase en contacto con el <a href="https://ibm.biz/ibmcloudsupport" target="_blank">Soporte de {{site.data.keyword.Bluemix_notm}}</a>.</code>
 
 Cuando registra una cuenta Lite de {{site.data.keyword.Bluemix_notm}}, recibe un correo electrónico que incluye un enlace en el que debe pulsar para confirmar el registro.  
 {: tsCauses}

@@ -249,7 +249,7 @@ Acesse o [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![
 {: #know-about-tags}
 {: faq}
 
-É possível usar tags para organizar e visualizar recursos em sua conta, filtrando tags de sua lista de recursos. Para obter mais informações, veja [Recursos de identificação](/docs/resources?topic=resources-add-remove#add-remove).
+É possível usar tags para organizar e visualizar recursos em sua conta, filtrando tags de sua lista de recursos. Para obter mais informações, consulte [Trabalhando com tags](/docs/resources?topic=resources-tag).
 
 ## Quem pode visualizar as tags em uma conta?
 {: #tags-visibility-account}

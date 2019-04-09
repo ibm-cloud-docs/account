@@ -53,6 +53,6 @@ le tue applicazioni agli spazi. Per ulteriori informazioni, vedi [Aggiunta di or
 
 Un altro aspetto importante del diagramma precedente è la raffigurazione dei tre tipi di sistemi di gestione dell'accesso che puoi utilizzare per fornire agli utenti dell'account l'accesso alle risorse all'interno dell'account.
 
-  * Puoi utilizzare i [ruoli di accesso](/docs/iam?topic=iam-iamusermanrol#iamusermanrol) IAM per fornire agli utenti l'accesso a tutte le risorse che appartengono a un gruppo di risorse. Puoi anche concedere l'accesso agli utenti per gestire i gruppi di risorse e creare nuove istanze del servizio che vengono assegnate a un gruppo di risorse.
-  * Puoi utilizzare i [ruoli di spazio e organizzazione](/docs/iam?topic=iam-cfroles#cfroles) Cloud Foundry per fornire agli utenti l'accesso a qualsiasi istanza del servizio che si trova in uno spazio Cloud Foundry.
+  * Puoi utilizzare i [ruoli di accesso](/docs/iam?topic=iam-userroles#iamusermanrol) IAM per fornire agli utenti l'accesso a tutte le risorse che appartengono a un gruppo di risorse. Puoi anche concedere l'accesso agli utenti per gestire i gruppi di risorse e creare nuove istanze del servizio che vengono assegnate a un gruppo di risorse.
+  * Puoi utilizzare i [ruoli di spazio e organizzazione](/docs/iam?topic=iam-cfaccess#cfroles) Cloud Foundry per fornire agli utenti l'accesso a qualsiasi istanza del servizio che si trova in uno spazio Cloud Foundry.
   * Puoi utilizzare le autorizzazioni dell'infrastruttura classica per concedere agli utenti delle [autorizzazioni](/docs/iam?topic=iam-infrapermission#infrapermission) più granulari per l'infrastruttura classica. Assegni l'accesso ai dispositivi e l'accesso alle sottoreti VPN separatamente.

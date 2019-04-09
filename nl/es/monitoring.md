@@ -27,4 +27,4 @@ Puede realizar un seguimiento de los siguientes sucesos:
 * Adición o eliminación de usuarios
 * Creación de organizaciones
 
-Para empezar a supervisar las acciones de la cuenta, consulte [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker). Para obtener más información sobre cada una de las áreas de sucesos de las que puede realizar un seguimiento, consulte [Sucesos de gestión de cuentas](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_events_acc_mgt).
+Para empezar a supervisar las acciones de la cuenta, consulte [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started). Para obtener más información sobre cada una de las áreas de sucesos de las que puede realizar un seguimiento, consulte [Sucesos de gestión de cuentas](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_events_acc_mgt).

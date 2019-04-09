@@ -56,6 +56,6 @@ vida de entrega. Por exemplo, é possível criar um espaço de desenvolvimento c
 
 Outro aspecto importante do diagrama anterior é a representação dos três tipos de sistemas de gerenciamento de acesso que podem ser usados para fornecer aos usuários da conta o acesso a recursos dentro da conta.
 
-  * É possível usar as [funções de acesso](/docs/iam?topic=iam-iamusermanrol#iamusermanrol) do IAM para fornecer aos usuários acesso a todos os recursos que pertencem a um grupo de recursos. Também é possível fornecer aos usuários acesso para gerenciar grupos de recursos e criar novas instâncias de serviço que são designadas a um grupo de recursos.
-  * É possível usar as [funções de organização e espaço](/docs/iam?topic=iam-cfroles#cfroles) do Cloud Foundry para fornecer aos usuários acesso a quaisquer instâncias de serviço que residam em um espaço do Cloud Foundry.
+  * É possível usar as [funções de acesso](/docs/iam?topic=iam-userroles#iamusermanrol) do IAM para fornecer aos usuários acesso a todos os recursos que pertencem a um grupo de recursos. Também é possível fornecer aos usuários acesso para gerenciar grupos de recursos e criar novas instâncias de serviço que são designadas a um grupo de recursos.
+  * É possível usar as [funções de organização e espaço](/docs/iam?topic=iam-cfaccess#cfroles) do Cloud Foundry para fornecer aos usuários acesso a quaisquer instâncias de serviço que residam em um espaço do Cloud Foundry.
   * É possível usar permissões de infraestrutura clássica para conceder aos usuários [permissões](/docs/iam?topic=iam-infrapermission#infrapermission) mais granulares para infraestrutura clássica. Você designa o acesso ao dispositivo e o acesso à sub-rede VPN separadamente.

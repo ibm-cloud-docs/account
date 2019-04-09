@@ -190,7 +190,7 @@ Nach dem Verknüpfen Ihres Kontos ändert sich an Ihrem Support-Level nichts, we
 
   1. Der Blog [Schritte zum Verknüpfen Ihrer IaaS- und PaaS-Konten](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link") enthält nützliche Informationen.
   2. Öffnen Sie im {{site.data.keyword.BluSoftlayer_full}}-Kundenportal einen **Live-Chat mit dem Vertriebsteam**, Fragen zum Konto zu stellen.
-  3. Öffnen Sie ein Ticket über das Kundenportal. Wählen Sie **Support** > **Ticket hinzufügen** aus und wählen Sie dann im Feld **Betreff** die Option **Kontoanfrage** aus, um Ihre Frage zum Konto an das richtige Support-Team zu adressieren.
+  3. Öffnen Sie ein Ticket über das Kundenportal. Wählen Sie **Support** > **Ticket hinzufügen** aus und wählen Sie dann im Feld **Subjekt** die Option **Kontoanfrage** aus, um Ihre Frage zum Konto an das richtige Support-Team zu adressieren.
 
 ## Wie verknüpfe ich mein Konto, wenn ich mehrere Konten haben?
 {: #al_multacct}
@@ -248,7 +248,7 @@ Rufen Sie [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} !
 {: #know-about-tags}
 {: faq}
 
-Mithilfe von Tags können Sie Ressourcen in Ihrem Konto organisieren und anzeigen, indem Sie in der Ressourcenliste Tags zum Filtern verwenden. Weitere Informationen finden Sie in [Ressourcen mit Tags kennzeichnen](/docs/resources?topic=resources-add-remove#add-remove).
+Mithilfe von Tags können Sie Ressourcen in Ihrem Konto organisieren und anzeigen, indem Sie in der Ressourcenliste Tags zum Filtern verwenden. Weitere Informationen finden Sie in [Mit Tags arbeiten](/docs/resources?topic=resources-tag).
 
 ## Wer kann die Tags in einem Konto anzeigen?
 {: #tags-visibility-account}

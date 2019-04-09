@@ -66,7 +66,7 @@ Complete los pasos siguientes para añadir una organización:
 
 En el seno de una organización, podrá utilizar espacios para agrupar un conjunto de aplicaciones, servicios y usuarios. Los espacios están vinculados a una región específica en {{site.data.keyword.Bluemix_notm}}. Puede crear espacios en una organización en función del ciclo de vida de entrega. Por ejemplo, puede crear un espacio `dev` como entorno de desarrollo, un espacio `test` como entorno de prueba y un espacio `production` como entorno de producción. Luego puede asociar sus apps a los espacios.
 
-Tras añadir usuarios a una organización, puede otorgarles permisos a los espacios. Similar a las organizaciones, los espacios también tienen un conjunto de [roles de Cloud Foundry](/docs/iam?topic=iam-cfroles) que se pueden asignar a los miembros del equipo:
+Tras añadir usuarios a una organización, puede otorgarles permisos a los espacios. Similar a las organizaciones, los espacios también tienen un conjunto de [roles de Cloud Foundry](/docs/iam?topic=iam-cfaccess#cfroles) que se pueden asignar a los miembros del equipo:
 
   * Gestor de espacio
   * Desarrollador de espacio

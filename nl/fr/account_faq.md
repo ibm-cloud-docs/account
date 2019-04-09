@@ -248,7 +248,7 @@ Accédez à [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window}
 {: #know-about-tags}
 {: faq}
 
-Vous pouvez utiliser des étiquettes pour organiser et afficher des ressources de votre compte en filtrant des étiquettes dans votre liste de ressources. Pour plus d'informations, voir [Etiquetage de ressources](/docs/resources?topic=resources-add-remove#add-remove).
+Vous pouvez utiliser des étiquettes pour organiser et afficher des ressources de votre compte en filtrant des étiquettes dans votre liste de ressources. Pour plus d'informations, voir [Utilisation d'étiquettes](/docs/resources?topic=resources-tag).
 
 ## Qui peut voir les étiquettes d'un compte ?
 {: #tags-visibility-account}
