@@ -242,7 +242,7 @@ If you have more than one account, you can click your account name to select ano
 
 ![Account switcher screen capture.](images/account-faq.svg "Account switcher screen capture")
 
-## Can I switch account owners?
+## Can I make someone else the account owner?
 {: #switch-account-owners}
 {: faq}
 
