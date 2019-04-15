@@ -67,7 +67,7 @@ subcollection: account
      ```
      {: codeblock}
 
-   - 如果服务不支持 RC，因而是基于 Cloud Foundry 的服务，请使用 [`ibmcloud cf update-service` 命令](/docs/cli/reference/ibmcloud?topic=cloud-cli-cf#cf)来更改套餐。
+   - 如果服务不支持 RC，因而是基于 Cloud Foundry 的服务，请使用 [`ibmcloud cf update-service` 命令](/docs/cli?topic=cloud-cli-ibmcloud_commands_services#ibmcloud_service_update)来更改套餐。
 
      ```
      ibmcloud cf update-service <service_instance_name> [-p <plan_name>]

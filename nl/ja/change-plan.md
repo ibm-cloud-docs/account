@@ -67,7 +67,7 @@ subcollection: account
      ```
      {: codeblock}
 
-   - サービスが RC 対応でなく、したがって Cloud Foundry ベースである場合、[`ibmcloud cf update-service` コマンド](/docs/cli/reference/ibmcloud?topic=cloud-cli-cf#cf)を使用してプランを変更します。
+   - サービスが RC 対応でなく、したがって Cloud Foundry ベースである場合、[`ibmcloud cf update-service` コマンド](/docs/cli?topic=cloud-cli-ibmcloud_commands_services#ibmcloud_service_update)を使用してプランを変更します。
 
      ```
      ibmcloud cf update-service <service_instance_name> [-p <plan_name>]

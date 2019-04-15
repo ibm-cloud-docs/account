@@ -122,4 +122,4 @@ IBM ID 是您用來登入 {{site.data.keyword.Bluemix}} 帳戶以便存取及購
 
 其他多因子鑑別方法並不是根據 IBM ID。它是根據帳戶。當 IBM ID 與多個帳戶相關聯，且您在帳戶之間切換時，每次切換到需要雙因子鑑別的不同帳戶時都必須確認身分。即使前一個帳戶和新的帳戶都已配置相同的雙因子鑑別機制時也是如此。
 
-如果您先前[在客戶入口網站啟用了標準基礎架構資源的 2FA](/docs/customer-portal?topic=customer-portal-customerportal_2fa)，然後啟用了 {{site.data.keyword.Bluemix_notm}} 帳戶 MFA 設定，則 MFA 帳戶設定會置換您在客戶入口網站中設定的 2FA。這表示您可以停用在客戶入口網站中購買的 2FA，而支持帳戶 MFA 設定。
+如果您先前[在客戶入口網站啟用了標準基礎架構資源的 2FA](/docs/customer-portal?topic=customer-portal-cp_setup-2fa#cp-enable-2fa)，然後啟用了 {{site.data.keyword.Bluemix_notm}} 帳戶 MFA 設定，則 MFA 帳戶設定會置換您在客戶入口網站中設定的 2FA。這表示您可以停用在客戶入口網站中購買的 2FA，而支持帳戶 MFA 設定。

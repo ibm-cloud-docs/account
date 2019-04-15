@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-08"
+lastupdated: "2019-04-09"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -15,6 +15,7 @@ subcollection: account
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:faq: data-hd-content-type='faq'}
+{:tip: .tip}
 
 # Foire aux questions
 {: #accountfaqs}
@@ -76,6 +77,10 @@ Un plan Lite désigne un plan de service basé sur un quota gratuit. Vous pouvez
 
 Lorsque la limite de quota relative aux instances de plan Lite est atteinte, le service est suspendu pour le mois concerné. Les limites de quota sont définies au niveau des organisations et non au niveau des instances. Les nouvelles instances créées dans la même organisation reflètent les utilisations depuis les instances précédentes. Les limites de quota sont réinitialisées le premier jour de chaque mois.
 
+Pour vérifier votre utilisation, accédez à **Gérer > Facturation et utilisation** puis sélectionnez **Utilisation**. Pour plus d'informations, voir [Affichage de votre utilisation](/docs/billing-usage?topic=billing-usage-viewingusage).
+
+Si vous souhaitez arrêter ou supprimer un service, vous pouvez effectuer cette action à partir de la liste de ressources. Pour en savoir plus, voir [Navigation dans la console {{site.data.keyword.Bluemix_notm}}](/docs/overview?topic=overview-ui).
+
 
 ## Combien de groupes de ressources, d'organisations ou d'espaces puis-je créer ?
 {: #resourcelimit}
@@ -107,6 +112,18 @@ Oui, vous pouvez effectuer une mise à niveau vers un compte facturable et conti
 Vous pouvez mettre à jour la méthode de paiement associée à votre compte en accédant à la section [Paiements](https://cloud.ibm.com/billing/payments) dans la console. Sous Ajouter méthode de paiement, entrez les informations de facturation correspondant à votre nouvelle carte puis cliquez sur **Ajouter une carte de crédit**.
 
 Pour utiliser une autre méthode de paiement, sélectionnez **Payer autrement** puis cliquez sur **Soumettre la demande de changement**. Un cas de support concernant le changement de méthode de paiement sera créé pour vous.
+
+## Comment modifier mes paramètres de notification par courrier électronique ?
+{: #change-email-prefs}
+{: faq}
+
+Vous pouvez modifier les notifications par courrier électronique que vous recevez pour des événements planifiés ou non planifiés ainsi que les annonces dans vos paramètres de profil.
+1. Accédez à [Notifications](https://cloud.ibm.com/user/notifications) dans vos paramètres de profil.
+1. Sélectionnez si vous voulez recevoir des notifications par courrier électronique pour chaque type d'événement.
+
+Concernant les services d'infrastructure classique, les propriétaires de compte peuvent également abonner des utilisateurs à des notifications provenant de ces services en accédant à **Gérer > Compte > Notifications**.
+
+Pour plus d'informations, voir [Définition des préférences de courrier](/docs/account?topic=account-email-prefs).
 
 ## Comment réinitialiser mon mot de passe ?
 {: #reset-password}
@@ -243,7 +260,7 @@ Accédez à [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window}
 {: #know-about-tags}
 {: faq}
 
-Vous pouvez utiliser des étiquettes pour organiser et afficher des ressources de votre compte en filtrant des étiquettes dans votre liste de ressources. Pour plus d'informations, voir [Etiquetage de ressources](/docs/resources?topic=resources-add-remove#add-remove).
+Vous pouvez utiliser des étiquettes pour organiser et afficher des ressources de votre compte en filtrant des étiquettes dans votre liste de ressources. Pour plus d'informations, voir [Utilisation d'étiquettes](/docs/resources?topic=resources-tag).
 
 ## Qui peut voir les étiquettes d'un compte ?
 {: #tags-visibility-account}

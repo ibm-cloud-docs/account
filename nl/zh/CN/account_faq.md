@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-08"
+lastupdated: "2019-04-09"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -15,6 +15,7 @@ subcollection: account
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:faq: data-hd-content-type='faq'}
+{:tip: .tip}
 
 # 常见问题
 {: #accountfaqs}
@@ -74,7 +75,11 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 {: #monthlyquota}
 {: faq}
 
-达到轻量套餐实例的任何配额限制都会暂挂该月的服务。配额限制按组织设置，而不是按实例设置的。在同一组织中创建的新实例会反映出先前实例的任何使用情况。配额限制会在每个月的第 1 天重置。
+达到轻量套餐实例的任何配额限制都会暂挂该月的服务。配额限制按组织设置，而不是按实例设置的。在同一组织中创建的新实例会反映出先前实例的任何使用情况。配额限制将在每个月的第一天重置。
+
+通过转至**管理 > 计费和使用情况**，然后选择**使用情况**来查看使用情况。有关更多信息，请参阅[查看使用情况](/docs/billing-usage?topic=billing-usage-viewingusage)。
+
+如果要停止或删除服务，可以通过资源列表来执行此操作。请在[探索 {{site.data.keyword.Bluemix_notm}} 控制台](/docs/overview?topic=overview-ui)中了解更多信息。
 
 
 ## 我可以创建多少个资源组、组织或空间？
@@ -107,6 +112,18 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 您可以通过转至控制台中的[付款](https://cloud.ibm.com/billing/payments)，更新与帐户关联的付款方式。在“添加付款方式”下，输入新卡的帐单信息，然后单击**添加信用卡**。
 
 要切换到其他付款方式，请选择**其他付款方式**，然后单击**提交变更请求**。这将为您创建一个用于更改付款方式的支持案例。
+
+## 如何更改电子邮件通知设置？
+{: #change-email-prefs}
+{: faq}
+
+您可以在概要文件设置中更改您针对计划事件、计划外事件和声明接收到的电子邮件通知。
+1. 在概要文件设置中转至[通知](https://cloud.ibm.com/user/notifications)。
+1. 选择是否接收每种类型事件的电子邮件通知。
+
+对于经典基础架构服务，帐户所有者还可以为用户订阅那些服务的通知，方法是转至**管理 > 帐户 > 通知**。
+
+有关更多信息，请参阅[设置电子邮件首选项](/docs/account?topic=account-email-prefs)。
 
 ## 如何重置密码？
 {: #reset-password}
@@ -225,7 +242,7 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 
 ![帐户切换器截屏。](images/account-faq.svg "帐户切换器截屏")
 
-## 我可以切换帐户所有者吗？
+## 我可以将其他人设为帐户所有者吗？
 {: #switch-account-owners}
 {: faq}
 
@@ -243,7 +260,7 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 {: #know-about-tags}
 {: faq}
 
-可以使用标记来组织整个帐户中的资源，然后通过在资源列表中过滤标记来查看这些资源。有关更多信息，请参阅[标记资源](/docs/resources?topic=resources-add-remove#add-remove)。
+可以使用标记来组织整个帐户中的资源，然后通过在资源列表中过滤标记来查看这些资源。有关更多信息，请参阅[使用标记](/docs/resources?topic=resources-tag)。
 
 ## 谁可以查看帐户中的标记？
 {: #tags-visibility-account}

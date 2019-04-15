@@ -67,7 +67,7 @@ Vous pouvez changer le plan d'un service non seulement en utilisant la console m
      ```
      {: codeblock}
 
-   - Si le service n'est pas activé via le contrôleur de ressources mais dépend de Cloud Foundry, changez votre plan en utilisant la commande [`ibmcloud cf update-service`](/docs/cli/reference/ibmcloud?topic=cloud-cli-cf#cf).
+   - Si le service n'est pas activé via le contrôleur de ressources mais dépend de Cloud Foundry, changez votre plan en utilisant la commande [`ibmcloud cf update-service`](/docs/cli?topic=cloud-cli-ibmcloud_commands_services#ibmcloud_service_update).
 
      ```
      ibmcloud cf update-service <service_instance_name> [-p <plan_name>]

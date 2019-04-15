@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-03-20"
+lastupdated: "2019-04-10"
 
 keywords: manage account, account events, track events, account tracking, monitoring
 
@@ -28,4 +28,4 @@ subcollection: account
 * 新增或移除使用者
 * 建立組織
 
-若要開始監視帳戶動作，請參閱 [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker)。如需您可以追蹤的每個事件區域的相關資訊，請參閱[帳戶管理事件](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_events_acc_mgt)。
+若要開始監視帳戶動作，請參閱 [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started-with-cla)。如需您可以追蹤的每個事件區域的相關資訊，請參閱[帳戶管理事件](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_events_acc_mgt)。
