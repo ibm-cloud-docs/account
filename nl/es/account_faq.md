@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-08"
+lastupdated: "2019-04-09"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -15,6 +15,7 @@ subcollection: account
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:faq: data-hd-content-type='faq'}
+{:tip: .tip}
 
 # Preguntas más frecuentes
 {: #accountfaqs}
@@ -78,6 +79,11 @@ Un plan Lite corresponde a una cuota gratuita basada en un plan de servicio. Pue
 
 Si se alcanza cualquier límite de cuota para instancias del plan Lite, se suspende el servicio para ese mes. Los límites de cuota son por organización, no por instancia. Las nuevas instancias creadas en la misma organización reflejan el uso de instancias anteriores. Los límites de cuota se restablecen el primer día del mes.
 
+Para ver su uso, vaya a **Gestionar > Facturación y uso** y seleccione **Uso**. Para obtener más información, consulte
+[Visualización del uso](/docs/billing-usage?topic=billing-usage-viewingusage).
+
+Si desea detener o suprimir un servicio, puede hacerlo desde la lista de recursos. Para obtener más información, consulte [Navegación en la consola {{site.data.keyword.Bluemix_notm}}](/docs/overview?topic=overview-ui).
+
 
 ## ¿Cuántos grupos de recursos, organizaciones o espacios puedo crear?
 {: #resourcelimit}
@@ -109,6 +115,18 @@ Sí, puede actualizarla a una cuenta facturable y seguir utilizando las instanci
 Para actualizar el método de pago asociado a su cuenta, vaya a [Pagos](https://cloud.ibm.com/billing/payments) en la consola. Bajo Añadir método de pago, especifique la información de facturación correspondiente a la nueva tarjeta y pulse **Añadir tarjeta de crédito**.
 
 Para cambiar a otro método de pago, seleccione **Pagar con otro método** y luego pulse **Enviar solicitud de cambio**. Se creará automáticamente un caso de soporte para cambiar su método de pago.
+
+## ¿Cómo se cambian los valores de notificación por correo electrónico?
+{: #change-email-prefs}
+{: faq}
+
+Puede cambiar las notificaciones por correo electrónico que recibe para sucesos planificados, sucesos no planificados y anuncios en los valores de su perfil.
+1. Vaya a [Notificaciones](https://cloud.ibm.com/user/notifications) en los valores del perfil.
+1. Seleccione si desea recibir notificaciones por correo electrónico para cada tipo de suceso.
+
+Para los servicios de la infraestructura clásica, los propietarios de cuentas también pueden suscribir usuarios a notificaciones de estos servicios en **Gestionar > Cuenta > Notificaciones**.
+
+Para obtener más información, consulte [Establecimiento de preferencias de correo electrónico](/docs/account?topic=account-email-prefs).
 
 ## ¿Cómo puedo restablecer mi contraseña?
 {: #reset-password}
@@ -228,11 +246,11 @@ Si tiene más de una cuenta, puede pulsar en el nombre de la cuenta para selecci
 
 ![Captura de pantalla del conmutador de cuentas](images/account-faq.svg "Captura de pantalla del conmutador de cuentas")
 
-## ¿Puedo conmutar entre propietarios de cuentas?
+## ¿Puedo convertir a alguien más en propietario de cuenta?
 {: #switch-account-owners}
 {: faq}
 
-No puede conmutar el propietario de una cuenta, pero puedo cambiar propietarios de recursos. Para obtener más información sobre el cambio de la propiedad, consulte [Cómo transferir la propiedad de un recurso privado](/docs/account?topic=account-include#owners).
+No puede cambiar el propietario de una cuenta, pero puedo cambiar propietarios de recursos. Para obtener más información sobre el cambio de la propiedad, consulte [Cómo transferir la propiedad de un recurso privado](/docs/account?topic=account-include#owners).
 
 ## ¿Ofrece soporte {{site.data.keyword.Bluemix_notm}} al registro por lotes de los usuarios?
 {: #batch-registration}
@@ -247,7 +265,7 @@ Vaya a [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![Ic
 {: #know-about-tags}
 {: faq}
 
-Puede utilizar etiquetas para organizar y visualizar recursos en la cuenta filtrando las etiquetas de la lista de recursos. Para obtener más información, consulte [Cómo etiquetar recursos](/docs/resources?topic=resources-add-remove#add-remove).
+Puede utilizar etiquetas para organizar y visualizar recursos en la cuenta filtrando las etiquetas de la lista de recursos. Para obtener más información, consulte [Cómo trabajar con etiquetas](/docs/resources?topic=resources-tag).
 
 ## ¿Quién puede ver las etiquetas en una cuenta?
 {: #tags-visibility-account}
