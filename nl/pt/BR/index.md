@@ -87,7 +87,7 @@ Seu uso é deduzido de sua quantia total de assinatura. Mesmo que seu uso varie 
 
 Assim como com as contas Pré-pagas, sua conta de Assinatura permite que você solicite planos de suporte avançado ou premium para obter ajuda extra se você precisar. Saiba mais em [Planos de suporte](/docs/get-support?topic=get-support-support-plans).
 
-Se você têm uma conta de Assinatura, é possível criar a maioria dos serviços que estão disponíveis no [catálogo do {{site.data.keyword.Bluemix_notm}}](https://{DomainName}/catalog){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo"). No entanto, alguns serviços usam um plano de precificação específico que requer que você o compre separadamente.
+Se você tiver uma conta de Assinatura, será possível criar a maioria dos serviços que estão disponíveis no [catálogo do {{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com/catalog/){: new_window}![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo"). No entanto, alguns serviços usam um plano de precificação específico que requer que você o compre separadamente.
 
 ### Assinaturas de pacote configurável de serviços
 {: #service-subscriptions}

@@ -87,9 +87,9 @@ Il tuo utilizzo viene dedotto dalla tua quantità di sottoscrizione totale. Anch
 
 Come con gli account Pagamento a consumo, il tuo account Sottoscrizione ti consente di ordinare piani di supporto premium o avanzato per avere un ulteriore aiuto se ne hai bisogno. Ulteriori informazioni in [Piani di supporto](/docs/get-support?topic=get-support-support-plans).
 
-Se hai un account Sottoscrizione, puoi creare la maggior parte dei servizi disponibili dal [catalogo {{site.data.keyword.Bluemix_notm}}](https://{DomainName}/catalog){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno"). Tuttavia, alcuni servizi utilizzano un piano dei prezzi specifico che ti richiede di effettuarne l'acquisto separatamente.
+Se hai un account Sottoscrizione, puoi creare la maggior parte dei servizi disponibili dal [catalogo {{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com/catalog/){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno"). Tuttavia, alcuni servizi utilizzano un piano dei prezzi specifico che ti richiede di effettuarne l'acquisto separatamente.
 
-### Sottoscrizioni al bundle di servizi
+### Sottoscrizioni al bundle di servizi 
 {: #service-subscriptions}
 
 Le sottoscrizioni al bundle di servizi ti forniscono l'accesso e il credito per una serie di servizi in un determinato dominio destinati a casi di utilizzo popolari. Puoi scegliere dai bundle di servizi che comprendono i servizi IA, analisi, {{site.data.keyword.blockchainfull_notm}}, Internet of Things (IoT) e nativi cloud. Se le tue esigenze spaziano tra più domini, puoi acquistare più sottoscrizioni di bundle di servizi.

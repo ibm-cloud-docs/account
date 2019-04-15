@@ -32,7 +32,7 @@ Per eseguire un upgrade del tuo account, devi avere un ruolo di editor o superio
 ## Upgrade a un account Pagamento a consumo
 {: #upgrade-paygo}
 
-Con un account Pagamento a consumo, paghi solo per quello che utilizzi oltre le franchigie per i runtime e i servizi gratuite. Dopo aver eseguito l'upgrade, puoi continuare a utilizzare tutte le istanze che hai creato con il tuo account Lite.
+Con un account Pagamento a consumo, paghi solo per quello che utilizzi oltre le franchigie per i runtime e i servizi gratuite. Dopo aver eseguito l'upgrade, puoi continuare a utilizzare tutte le istanze che hai creato con il tuo account Lite. 
 
 Per eseguire l'upgrade a un account Pagamento a consumo, vai a **Gestisci > Account** e seleziona **Impostazioni account**. Fai quindi clic su **Aggiungi carta di credito** e immetti le informazioni sul pagamento.
 
@@ -49,13 +49,13 @@ Per eseguire l'upgrade da un account Lite a un account Sottoscrizione, completa 
 1. Vai a **Gestisci > Account** e seleziona **Impostazioni account**. Quindi fai clic su **Upgrade**, che ti porterà alla pagina Sottoscrizioni.
 1. Seleziona l'impegno di spesa mensile e la scadenza della sottoscrizione e fai clic su **Inizia subito**.
 
-   Se non sei sicuro di quanto potrebbe costare il tuo utilizzo tipico mensile, puoi stimarlo utilizzando lo [stimatore costi](https://{DomainName}/estimator/review){:new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno").
+   Se non sei sicuro di quanto potrebbe costare il tuo utilizzo tipico mensile, puoi stimarlo utilizzando lo [stimatore costi](/estimator/review){:new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno").
    {:tip}
 1. Rivedi i tuoi dettagli di sottoscrizione e poi immetti le tue informazioni sul pagamento.
 
-   Dopo che le informazioni sul pagamento vengono elaborate, viene aggiunto il credito di sottoscrizione al tuo account.
+   Dopo che le informazioni sul pagamento vengono elaborate, viene aggiunto il credito di sottoscrizione al tuo account. 
 
-La tua sottoscrizione si rinnova automaticamente. Se vuoi interrompere il rinnovo della tua sottoscrizione, [contatta il supporto](https://{DomainName}/unifiedsupport/supportcenter).
+La tua sottoscrizione si rinnova automaticamente. Se vuoi interrompere il rinnovo della tua sottoscrizione, [contatta il supporto](/unifiedsupport/supportcenter).
 {: note}
 
 ### Conversione di un account Pagamento a consumo a un account Sottoscrizione

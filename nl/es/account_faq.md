@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-25"
+lastupdated: "2019-03-08"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -15,7 +15,6 @@ subcollection: account
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:faq: data-hd-content-type='faq'}
-{:tip: .tip}
 
 # Preguntas más frecuentes
 {: #accountfaqs}
@@ -78,11 +77,6 @@ Un plan Lite corresponde a una cuota gratuita basada en un plan de servicio. Pue
 {: faq}
 
 Si se alcanza cualquier límite de cuota para instancias del plan Lite, se suspende el servicio para ese mes. Los límites de cuota son por organización, no por instancia. Las nuevas instancias creadas en la misma organización reflejan el uso de instancias anteriores. Los límites de cuota se restablecen el primer día del mes.
-
-Para ver su uso, vaya a **Gestionar > Facturación y uso** y seleccione **Uso**. Para obtener más información, consulte
-[Visualización del uso](/docs/billing-usage?topic=billing-usage-viewingusage).
-
-Si desea detener o suprimir un servicio, puede hacerlo desde la lista de recursos. Para obtener más información, consulte [Navegación en la consola {{site.data.keyword.Bluemix_notm}}](/docs/overview?topic=overview-ui).
 
 
 ## ¿Cuántos grupos de recursos, organizaciones o espacios puedo crear?
@@ -253,7 +247,7 @@ Vaya a [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![Ic
 {: #know-about-tags}
 {: faq}
 
-Puede utilizar etiquetas para organizar y visualizar recursos en la cuenta filtrando las etiquetas de la lista de recursos. Para obtener más información, consulte [Cómo trabajar con etiquetas](/docs/resources?topic=resources-tag).
+Puede utilizar etiquetas para organizar y visualizar recursos en la cuenta filtrando las etiquetas de la lista de recursos. Para obtener más información, consulte [Cómo etiquetar recursos](/docs/resources?topic=resources-add-remove#add-remove).
 
 ## ¿Quién puede ver las etiquetas en una cuenta?
 {: #tags-visibility-account}

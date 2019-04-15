@@ -87,7 +87,7 @@ subcollection: account
 
 与现收现付帐户一样，您的预订帐户可以订购高级或高端支持套餐，以便在需要时获得额外帮助。要了解更多信息，请参阅[支持套餐](/docs/get-support?topic=get-support-support-plans)。
 
-如果您有预订帐户，那么可以创建 [{{site.data.keyword.Bluemix_notm}} 目录](https://{DomainName}/catalog){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标") 中提供的大多数服务。但某些服务会使用特定的价格套餐，要求您单独购买。
+如果您有预订帐户，那么可以创建 [{{site.data.keyword.Bluemix_notm}} 目录](https://cloud.ibm.com/catalog/){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标") 中提供的大多数服务。但某些服务会使用特定的价格套餐，要求您单独购买。
 
 ### 服务捆绑预订
 {: #service-subscriptions}

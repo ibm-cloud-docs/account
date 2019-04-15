@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-25"
+lastupdated: "2019-03-08"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -15,7 +15,6 @@ subcollection: account
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:faq: data-hd-content-type='faq'}
-{:tip: .tip}
 
 # Domande frequenti
 {: #accountfaqs}
@@ -76,10 +75,6 @@ Un piano Lite è un piano di servizi gratuito basato sulle quote. Puoi utilizzar
 {: faq}
 
 Il raggiungimento di qualsiasi limite di quota per le istanze del piano Lite sospende il servizio per quel mese. I limiti di quota sono per organizzazione, non per istanza. Le nuove istanze create nella stessa organizzazione riflettono qualsiasi utilizzo dalle istanze precedenti. I limiti di quota sono reimpostati il primo di ogni mese.
-
-Puoi consultare il tuo utilizzo andando a **Gestisci > Fatturazione e utilizzo** e selezionando **Utilizzo**. Per ulteriori informazioni, vedi [Visualizzazione del tuo utilizzo](/docs/billing-usage?topic=billing-usage-viewingusage).
-
-Se vuoi arrestare o eliminare un servizio, puoi farlo dall'elenco di risorse. Ulteriori informazioni in [Navigazione nella console {{site.data.keyword.Bluemix_notm}}](/docs/overview?topic=overview-ui).
 
 
 ## Quanti gruppi di risorse, organizzazioni o spazi posso creare?
@@ -251,7 +246,7 @@ Vai a [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![Ico
 {: #know-about-tags}
 {: faq}
 
-Puoi utilizzare le tag per organizzare e visualizzare le risorse nel tuo account filtrando le tag dal tuo elenco risorse. Per ulteriori informazioni, consulta [Gestione delle tag](/docs/resources?topic=resources-tag).
+Puoi utilizzare le tag per organizzare e visualizzare le risorse nel tuo account filtrando le tag dal tuo elenco risorse. Per ulteriori informazioni, vedi [Aggiunta di tag alle risorse](/docs/resources?topic=resources-add-remove#add-remove).
 
 ## Chi può visualizzare le tag in un account?
 {: #tags-visibility-account}

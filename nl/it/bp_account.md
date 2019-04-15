@@ -53,7 +53,7 @@ Per ulteriori informazioni su quale tipo di account funziona meglio per te, vedi
 
 I gruppi di risorse sono un contenitore logico per l'organizzazione delle risorse abilitate IAM. Tutti i servizi gestiti utilizzando il controllo dell'accesso {{site.data.keyword.cloud_notm}} IAM (Identity and Access Management) appartengono a un gruppo di risorse. Assegni una risorsa al suo gruppo di risorse quando la crei dal catalogo. Non puoi modificare l'assegnazione al gruppo di risorse dopo che l'hai configurata, ed è per questo che è importante configurare ora alcuni dei tuoi gruppi di risorse.
 
-Se disponi di un account Lite, hai accesso a un singolo gruppo di risorse creato per tuo conto. Non puoi creare dei gruppi di risorse supplementari. Considera [un upgrade del tuo account](/docs/account?topic=account-changeacct#changeacct) per creare e gestire più gruppi di risorse.
+Se disponi di un account Lite, hai accesso a un singolo gruppo di risorse creato per tuo conto. Non puoi creare dei gruppi di risorse supplementari. Considera [un upgrade del tuo account](/docs/account?topic=account-upgrading-account) per creare e gestire più gruppi di risorse.
 {: note}
 
 

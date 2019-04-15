@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-25"
+lastupdated: "2019-03-08"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -15,7 +15,6 @@ subcollection: account
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:faq: data-hd-content-type='faq'}
-{:tip: .tip}
 
 # FAQ
 {: #accountfaqs}
@@ -76,10 +75,6 @@ Lite 플랜은 무료로 제공되는 할당량 기반 서비스 플랜입니다
 {: faq}
 
 Lite 플랜 인스턴스의 어느 할당량에든 도달하면 해당 월에 대해 서비스가 일시중단됩니다. 할당량 한계는 인스턴스별이 아니라 조직별로 적용됩니다. 동일 조직에서 작성된 새 인스턴스는 이전 인스턴스의 사용량을 반영합니다. 할당량 한계는 매월 1일에 재설정됩니다.
-
-**관리 > 청구 및 사용량**으로 이동하고 **사용량**을 선택하여 사용량을 확인할 수 있습니다. 자세한 정보는 [사용량 보기](/docs/billing-usage?topic=billing-usage-viewingusage)를 참조하십시오.
-
-서비스를 중지 또는 삭제하고자 하는 경우 리소스 목록에서 수행할 수 있습니다. [{{site.data.keyword.Bluemix_notm}} 콘솔 탐색](/docs/overview?topic=overview-ui)에서 자세히 볼 수 있습니다.
 
 
 ## 얼마나 많은 리소스 그룹, 조직 또는 영역을 작성할 수 있습니까?
@@ -248,7 +243,7 @@ IBM ID를 사용하여 {{site.data.keyword.Bluemix_notm}} 콘솔에 액세스할
 {: #know-about-tags}
 {: faq}
 
-태그를 사용하면 리소스 목록에서 태그를 필터링하여 계정에서 리소스를 구성하고 볼 수 있습니다. 자세한 정보는 [태그에 대한 작업](/docs/resources?topic=resources-tag)을 참조하십시오.
+태그를 사용하면 리소스 목록에서 태그를 필터링하여 계정에서 리소스를 구성하고 볼 수 있습니다. 자세한 정보는 [리소스 태그 지정](/docs/resources?topic=resources-add-remove#add-remove)을 참조하십시오.
 
 ## 누가 계정의 태그를 볼 수 있습니까?
 {: #tags-visibility-account}
