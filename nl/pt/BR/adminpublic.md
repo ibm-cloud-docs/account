@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2015, 2018
-lastupdated: "2018-11-19"
+  years: 2015, 2019
+lastupdated: "2019-04-08"
 
-keywords: create account, IBMid, sign up for account
+keywords: create account, IBMid, sign up for account, sign up
 
 subcollection: account
 
@@ -19,27 +19,42 @@ subcollection: account
 # Inscrevendo-se para o {{site.data.keyword.Bluemix_notm}}
 {: #signup}
 
-É possível inscrever-se para uma [conta do {{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo") usando um IBMid existente, criando um novo IBMid ou usando um ID federado. Um ID federado é um ID dentro do domínio de uma empresa que
-foi registrado na IBM para que as credenciais de domínio e do usuário possam ser usadas para acessar
-aplicativos da web da IBM. Clique em **Criar uma conta do {{site.data.keyword.Bluemix_notm}}** para iniciar.
+É possível inscrever-se em uma conta do {{site.data.keyword.Bluemix}} usando seu IBMid existente ou criando um novo IBMid. Se a sua empresa estiver registrada para usar uma identidade federada para conexão única (SSO), inscreva-se com sua identidade federada no lugar.
 {:shortdesc}
 
-Um ID federado poderá ser usado para inscrever-se para o {{site.data.keyword.Bluemix_notm}}
-somente se sua empresa já estiver registrada com a IBM. O registro do domínio de uma empresa na IBM permite que
-os usuários efetuem log-in nos produtos e serviços IBM usando suas credenciais de usuário
-da empresa existentes. A autenticação então é manipulada pelo provedor de identidade da
-sua empresa. Ao efetuar login no {{site.data.keyword.Bluemix_notm}} com um ID federado, é solicitado que você efetue login por meio da página de login da sua empresa. Para obter mais informações, veja [Guia de adoção de federação corporativa do IBMid ![Ícone de link externo](../icons/launch-glyph.svg)](https://ibm.box.com/v/IBMid-Federation-Guide){: new_window}. Um patrocinador IBM, como um defensor da oferta ou do cliente, é necessário quando você solicita o registro de IDs federados.
-
-A IBM usa o Security Assertion Markup Language 2.0 (SAML 2.0) para essa federação de identidade. O SAML 2.0 é uma versão padrão para trocar dados de autenticação entre os domínios de segurança. É um protocolo baseado em XML que usa um token de segurança que contém asserções para passar informações entre o "Provedor de Identidade" das organizações e o "IBM Rely Party (RP)", também conhecido como Provedor de Serviços.
-
-| Métodos de inscrição | Detalhes |    
+| ID de inscrição | Detalhes |    
 |-----------------|---------|
-|ID IBM existente   | Se você já tiver um ID IBM, inscreva-se para o {{site.data.keyword.Bluemix_notm}} com suas credenciais existentes que você usa para outros produtos e serviços IBM. Deve-se inserir um número do telefone ao se inscrever. |
-|Novo ID IBM        | Se você ainda não tiver um ID IBM, poderá selecionar para criar um. Com um IBMid, é possível
-usar o nome de usuário de login único para todos os produtos e serviços IBM que você usa, incluindo
-o {{site.data.keyword.Bluemix_notm}}. Deve-se inserir suas informações pessoais, que incluem nome e sobrenome, número do telefone e senha, para as novas credenciais. É possível usar esse
-IBMid para efetuar login em outros produtos e serviços IBM.  |
+|ID IBM existente   | Se você já tiver um ID IBM, inscreva-se para o {{site.data.keyword.Bluemix_notm}} com suas credenciais existentes que você usa para outros produtos e serviços IBM. |
+|Novo ID IBM        | Se ainda não tiver um IBMid, você criará um ao inscrever-se. Com um IBMid, é possível usar um nome de usuário para efetuar login em todos os produtos e serviços IBM, incluindo o {{site.data.keyword.Bluemix_notm}}. |
 |ID federado     | Se sua empresa já solicitou para registrar as credenciais do usuário por meio do domínio de sua
 empresa com a IBM, será possível inscrever-se para o {{site.data.keyword.Bluemix_notm}} usando as
 credenciais que você já usa para login de sua empresa. Deve-se inserir um número do telefone ao se inscrever. |
-{:caption="Tabela 1. Métodos de inscrição" caption-side="top"}
+{:caption="Tabela 1. Opções de ID para inscrição no {{site.data.keyword.Bluemix_notm}}" caption-side="top"}
+
+## Inscrevendo-se com um IBMid novo ou existente
+{: #signup-ibmid}
+
+Caso não faça parte de uma empresa que usa identidades federadas, você se inscreverá no {{site.data.keyword.Bluemix_notm}} com um IBMid.
+
+1. Acesse a [ página de login do {{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com/){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo") e clique em **Criar uma conta do {{site.data.keyword.Bluemix_notm}}**.
+1. Insira seu endereço de e-mail do IBMid. Se você não tiver um IBMid existente, um ID será criado com base no e-mail que você inserir.
+1. Preencha os campos restantes com suas informações e clique em **Criar conta**.
+
+
+## Inscrevendo-se com uma identidade federada
+{: #signup-federated}
+
+Um ID federado é um ID dentro do domínio de uma empresa que
+foi registrado na IBM para que as credenciais de domínio e do usuário possam ser usadas para acessar
+aplicativos da web da IBM. É possível se inscrever no {{site.data.keyword.Bluemix_notm}} com uma identidade federada apenas se sua empresa já está registrada com a IBM. O registro do domínio de uma empresa na IBM permite que
+os usuários efetuem log-in nos produtos e serviços IBM usando suas credenciais de usuário
+da empresa existentes. A autenticação é, então, manipulada pelo provedor de identidade de sua empresa usando a SSO.
+
+A IBM usa o Security Assertion Markup Language 2.0 (SAML 2.0) para essa federação de identidade. O SAML 2.0 é uma versão padrão para trocar dados de autenticação entre os domínios de segurança. Ele é um protocolo baseado em XML que usa um token de segurança que contém asserções para transmitir informações entre o "provedor de identidade" das organizações e o "IBM Rely Party (RP)", também conhecido como o provedor de serviços.
+
+Para obter informações sobre como registrar sua empresa para uma identidade federada, consulte o [Guia de adoção do IBMid Enterprise Federation ![Ícone de link externo](../icons/launch-glyph.svg)](https://ibm.box.com/v/IBMid-Federation-Guide){: new_window}. Um patrocinador IBM, como um defensor da oferta ou do cliente, é necessário quando você solicita o registro de IDs federados.
+
+### Efetuando login com um ID federado
+{: #login-federated}
+
+Ao efetuar login no console do {{site.data.keyword.Bluemix_notm}} com uma identidade federada, você será solicitado a efetuar login por meio da página de login da sua empresa. Se você efetuar login por meio de uma CLI, será necessário especificar parâmetros adicionais para se autenticar. Para obter mais informações, consulte [Efetuando login com uma identidade federada](/docs/iam?topic=iam-federated_id).

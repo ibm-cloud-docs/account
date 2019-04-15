@@ -69,7 +69,7 @@ Como uma alternativa para o console, é possível mudar o plano de um serviço u
      ```
      {: codeblock}
 
-   - Se o serviço não estiver ativado com o RC e for, portanto, baseado no Cloud Foundry, mude seu plano usando o [comando `ibmcloud cf update-service`](/docs/cli/reference/ibmcloud?topic=cloud-cli-cf#cf).
+   - Se o serviço não estiver ativado para RC e, portanto, se basear no Cloud Foundry, mude seu plano usando o [comando `ibmcloud cf update-service`](/docs/cli?topic=cloud-cli-ibmcloud_commands_services#ibmcloud_service_update).
 
      ```
      ibmcloud cf update-service <service_instance_name> [-p <plan_name>]
