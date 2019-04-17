@@ -67,7 +67,7 @@ subcollection: account
      ```
      {: codeblock}
 
-   - 如果服務未啟用 RC 而因此基於 Cloud Foundry，請使用 [`ibmcloud cf update-service` 指令](/docs/cli/reference/ibmcloud?topic=cloud-cli-cf#cf)來變更方案。
+   - 如果服務未啟用 RC 而因此基於 Cloud Foundry，請使用 [`ibmcloud cf update-service` 指令](/docs/cli?topic=cloud-cli-ibmcloud_commands_services#ibmcloud_service_update)來變更方案。
 
      ```
      ibmcloud cf update-service <service_instance_name> [-p <plan_name>]

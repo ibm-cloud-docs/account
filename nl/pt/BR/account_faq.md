@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-25"
+lastupdated: "2019-04-09"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -113,6 +113,18 @@ Sim, é possível fazer upgrade para uma conta faturável e continuar a usar as 
 É possível atualizar o método de pagamento que está associado à sua conta acessando [Pagamentos](https://cloud.ibm.com/billing/payments) no console. Sob Incluir método de pagamento, insira as informações de faturamento para o seu novo cartão e, em seguida, clique em **Incluir cartão de crédito**.
 
 Para alternar para um método de pagamento diferente, selecione **Pagamento com outro** e, em seguida, clique em **Enviar solicitação de mudança**. Um caso de suporte para mudar o seu método de pagamento será criado para você.
+
+## Como mudar minhas configurações de notificação por e-mail?
+{: #change-email-prefs}
+{: faq}
+
+É possível mudar as notificações por e-mail recebidas para eventos planejados, eventos não planejados e anúncios em suas configurações de perfil.
+1. Acesse [Notificações](https://cloud.ibm.com/user/notifications) em suas configurações de perfil.
+1. Selecione se as notificações por e-mail para cada tipo de evento devem ser recebidas.
+
+Para serviços de infraestrutura clássica, os proprietários da conta também podem inscrever usuários para notificações desses serviços acessando **Gerenciar > Conta > Notificações**.
+
+Para obter mais informações, consulte [Configurando preferências de e-mail](/docs/account?topic=account-email-prefs).
 
 ## Como reconfiguro a minha senha?
 {: #reset-password}
@@ -231,7 +243,7 @@ Se você tiver mais de uma conta, será possível clicar no nome da conta para s
 
 ![Captura de tela do alternador de conta.](images/account-faq.svg "Captura de tela do alternador de conta")
 
-## Posso alternar proprietários de conta?
+## Posso tornar alguém o proprietário da conta?
 {: #switch-account-owners}
 {: faq}
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-25"
+lastupdated: "2019-03-08"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -15,7 +15,6 @@ subcollection: account
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:faq: data-hd-content-type='faq'}
-{:tip: .tip}
 
 # Häufig gestellte Fragen (FAQs)
 {: #accountfaqs}
@@ -77,10 +76,6 @@ Ein Lite-Plan ist ein Serviceplan mit kostenfreiem Kontingent. Sie können einen
 
 Wenn ein Grenzwert für das Kontingent für die Lite-Planinstanzen erreicht wird, wird der Service für diesen Monat ausgesetzt. Grenzwerte für Kontingente gelten für die gesamte Organisation, nicht nur für die Instanz. Neue Instanzen, die in derselben Organisation erstellt werden, spiegeln die Nutzung bereits vorhandener Instanzen wider. Die Grenzwerte für Kontingente werden am ersten Tag jedes Monats zurückgesetzt.
 
-Sie können die Nutzung überprüfen, indem Sie **Verwalten > Abrechnung und Nutzung** aufrufen und **Nutzung** auswählen. Weitere Informationen finden Sie unter [Nutzung anzeigen](/docs/billing-usage?topic=billing-usage-viewingusage).
-
-Wenn Sie einen Service stoppen oder löschen möchten, können Sie dies über die Ressourcenliste tun. Weitere Informationen finden Sie in [Navigation in der {{site.data.keyword.Bluemix_notm}}-Konsole](/docs/overview?topic=overview-ui).
-
 
 ## Wie viele Ressourcengruppen, Organisationen oder Bereiche kann ich erstellen?
 {: #resourcelimit}
@@ -132,7 +127,7 @@ Führen Sie die folgenden Schritte aus, um Ihr VPN-Kennwort zurückzusetzen:
 
 Schade, dass Sie schon gehen! Wenn wir Ihnen mit Ihrem Konto behilflich sein können, wenden Sie sich an unseren Support.
 
-Wenn Sie Ihr Konto beenden möchten, ist das weitere Vorgehen von Ihrem Kontotyp abhängig. Sie können Ihren Kontotyp überprüfen, indem Sie in den [Kontoeinstellungen](https://cloud.ibm.com/account/settings) die Einstellung _Kontotyp_ aufrufen.
+Wenn Sie Ihr Konto beenden möchten, ist das weitere Vorgehen von Ihrem Kontotyp abhängig. Sie können Ihren Kontotyp überprüfen, indem Sie in den [Kontoeinstellungen](https://cloud.ibm.com/account/settings) die Einstellung _Kontotyp_ aufrufen. 
 
 * Für nutzungsabhängige Konten oder Abonnementkonten besteht die schnellste Möglichkeit, das Konto zu stornieren, darin, über den [Live-Chat](https://{DomainName}/unifiedsupport/supportcenter) Kontakt aufzunehmen oder die Telefonnummer 1-866-325-0045 anzurufen und Option 3 auszuwählen. Alternativ dazu können Sie auch einen Supportfall öffnen.
 * Zum Stornieren eines Lite-Kontos rufen Sie [Kontoeinstellungen](https://cloud.ibm.com/account/settings) auf und klicken Sie auf **Konto inaktivieren**.
@@ -190,7 +185,7 @@ Nach dem Verknüpfen Ihres Kontos ändert sich an Ihrem Support-Level nichts, we
 
   1. Der Blog [Schritte zum Verknüpfen Ihrer IaaS- und PaaS-Konten](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link") enthält nützliche Informationen.
   2. Öffnen Sie im {{site.data.keyword.BluSoftlayer_full}}-Kundenportal einen **Live-Chat mit dem Vertriebsteam**, Fragen zum Konto zu stellen.
-  3. Öffnen Sie ein Ticket über das Kundenportal. Wählen Sie **Support** > **Ticket hinzufügen** aus und wählen Sie dann im Feld **Subjekt** die Option **Kontoanfrage** aus, um Ihre Frage zum Konto an das richtige Support-Team zu adressieren.
+  3. Öffnen Sie ein Ticket über das Kundenportal. Wählen Sie **Support** > **Ticket hinzufügen** aus und wählen Sie dann im Feld **Betreff** die Option **Kontoanfrage** aus, um Ihre Frage zum Konto an das richtige Support-Team zu adressieren.
 
 ## Wie verknüpfe ich mein Konto, wenn ich mehrere Konten haben?
 {: #al_multacct}
@@ -248,7 +243,7 @@ Rufen Sie [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} !
 {: #know-about-tags}
 {: faq}
 
-Mithilfe von Tags können Sie Ressourcen in Ihrem Konto organisieren und anzeigen, indem Sie in der Ressourcenliste Tags zum Filtern verwenden. Weitere Informationen finden Sie in [Mit Tags arbeiten](/docs/resources?topic=resources-tag).
+Mithilfe von Tags können Sie Ressourcen in Ihrem Konto organisieren und anzeigen, indem Sie in der Ressourcenliste Tags zum Filtern verwenden. Weitere Informationen finden Sie in [Ressourcen mit Tags kennzeichnen](/docs/resources?topic=resources-add-remove#add-remove).
 
 ## Wer kann die Tags in einem Konto anzeigen?
 {: #tags-visibility-account}

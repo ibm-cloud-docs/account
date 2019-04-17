@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-25"
+lastupdated: "2019-04-09"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -112,6 +112,18 @@ Oui, vous pouvez effectuer une mise à niveau vers un compte facturable et conti
 Vous pouvez mettre à jour la méthode de paiement associée à votre compte en accédant à la section [Paiements](https://cloud.ibm.com/billing/payments) dans la console. Sous Ajouter méthode de paiement, entrez les informations de facturation correspondant à votre nouvelle carte puis cliquez sur **Ajouter une carte de crédit**.
 
 Pour utiliser une autre méthode de paiement, sélectionnez **Payer autrement** puis cliquez sur **Soumettre la demande de changement**. Un cas de support concernant le changement de méthode de paiement sera créé pour vous.
+
+## Comment modifier mes paramètres de notification par courrier électronique ?
+{: #change-email-prefs}
+{: faq}
+
+Vous pouvez modifier les notifications par courrier électronique que vous recevez pour des événements planifiés ou non planifiés ainsi que les annonces dans vos paramètres de profil.
+1. Accédez à [Notifications](https://cloud.ibm.com/user/notifications) dans vos paramètres de profil.
+1. Sélectionnez si vous voulez recevoir des notifications par courrier électronique pour chaque type d'événement.
+
+Concernant les services d'infrastructure classique, les propriétaires de compte peuvent également abonner des utilisateurs à des notifications provenant de ces services en accédant à **Gérer > Compte > Notifications**.
+
+Pour plus d'informations, voir [Définition des préférences de courrier](/docs/account?topic=account-email-prefs).
 
 ## Comment réinitialiser mon mot de passe ?
 {: #reset-password}

@@ -2,7 +2,7 @@
 {:topicgroup: .topicgroup}
 {:utterance .utterance}
 
-{: .toc subcollection="account" audience="platform" arm="3397214" href="/docs/account?topic=account-account_setup" path="account"}
+{: .toc subcollection="account" audience="platform" arm="3397214" href="/docs/account?topic=account-signing-up-for-ibm-cloud" path="account"}
 계정 관리
 
     {: .navgroup id="learn"}
@@ -13,7 +13,7 @@
 
     {: .navgroup id="howto"}
     index.md
-
+    
     {: .topicgroup}
     계정 설정
         adminpublic.md

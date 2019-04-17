@@ -70,7 +70,7 @@ Como alternativa a la consola, puede cambiar el plan de un servicio mediante la 
      ```
      {: codeblock}
 
-   - Si el servicio no está habilitado para RC y, por tanto, se basa en Cloud Foundry, cambie el plan con el [mandato `ibmcloud cf update-service`](/docs/cli/reference/ibmcloud?topic=cloud-cli-cf#cf).
+   - Si el servicio no está habilitado para RC y, por tanto, se basa en Cloud Foundry, cambie el plan con el [mandato `ibmcloud cf update-service`](/docs/cli?topic=cloud-cli-ibmcloud_commands_services#ibmcloud_service_update).
 
      ```
      ibmcloud cf update-service <service_instance_name> [-p <plan_name>]

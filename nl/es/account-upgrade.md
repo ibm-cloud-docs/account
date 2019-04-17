@@ -49,13 +49,13 @@ Para actualizar de una cuenta Lite a una de suscripción, siga estos pasos.
 1. Vaya a **Gestionar > Cuenta** y seleccione **Configuración de la cuenta**. Luego pulse **Actualizar**, lo que le llevará a la página Suscripciones.
 1. Seleccione su compromiso de gasto mensual y el plazo de la suscripción y pulse **Empezar**.
 
-   Si no está segura sobre lo que puede costar un uso típico, puede calcularlo con el [estimador de costes](https://{DomainName}/estimator/review){:new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo").
+   Si no está segura sobre lo que puede costar un uso típico, puede calcularlo con el [estimador de costes](/estimator/review){:new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo").
    {:tip}
 1. Revise los detalles de la suscripción y especifique la información de pago.
 
    Una vez procesada la información de pago, su crédito de suscripción se añade a su cuenta.
 
-La suscripción se renueva de forma automática. Si desea cancelar la renovación de la suscripción, [póngase en contacto con el equipo de soporte](https://{DomainName}/unifiedsupport/supportcenter).
+La suscripción se renueva de forma automática. Si desea cancelar la renovación de la suscripción, [póngase en contacto con el equipo de soporte](/unifiedsupport/supportcenter).
 {: note}
 
 ### Conversión de una cuenta de pago según uso en una cuenta de suscripción

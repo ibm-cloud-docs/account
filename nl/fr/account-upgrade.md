@@ -49,13 +49,13 @@ Pour effectuer une mise à niveau à partir d'un compte Lite, procédez comme su
 1. Accédez à **Gérer > Compte** puis sélectionnez **Paramètres de compte**. Cliquez ensuite sur **Mettre à niveau**. La page Abonnements s'affiche alors.
 1. Sélectionnez votre engagement financier ainsi que votre durée d'abonnement puis cliquez sur **Commencer**.
 
-   Si vous ne savez pas combien votre utilisation standard peut coûter, vous pouvez l'estimer en utilisant l'[estimateur de coût](https://{DomainName}/estimator/review){:new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe").
+   Si vous ne savez pas combien votre utilisation standard peut coûter, vous pouvez l'estimer en utilisant l'[estimateur de coût](/estimator/review){:new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe").
    {:tip}
 1. Consultez les détails de votre abonnement puis entrez vos informations de paiement.
 
    Une fois vos informations de paiement traitées, votre crédit d'abonnement est ajouté à votre compte.
 
-Votre abonnement est automatiquement renouvelé. Si vous souhaitez l'arrêter, [contactez le support](https://{DomainName}/unifiedsupport/supportcenter).
+Votre abonnement est automatiquement renouvelé. Si vous souhaitez l'arrêter, [contactez le support](/unifiedsupport/supportcenter).
 {: note}
 
 ### Conversion d'un compte Paiement à la carte en compte d'abonnement

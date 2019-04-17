@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-03-20"
+lastupdated: "2019-04-10"
 
 keywords: manage account, account events, track events, account tracking, monitoring
 
@@ -27,4 +27,4 @@ subcollection: account
 * 사용자 추가 또는 제거
 * 조직 작성
 
-계정 모니터링 조치를 시작하려면 [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started)의 내용을 참조하십시오. 추적 가능한 각 이벤트 영역에 대한 자세한 정보는 [계정 관리 이벤트](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_events_acc_mgt)를 참조하십시오.
+계정 모니터링 조치를 시작하려면 [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started-with-cla)의 내용을 참조하십시오. 추적 가능한 각 이벤트 영역에 대한 자세한 정보는 [계정 관리 이벤트](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_events_acc_mgt)를 참조하십시오.

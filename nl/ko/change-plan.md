@@ -67,7 +67,7 @@ subcollection: account
      ```
      {: codeblock}
 
-   - RC를 사용하지 않아 Cloud Foundry를 기반으로 하는 서비스의 경우에는 [`ibmcloud cf update-service` 명령](/docs/cli/reference/ibmcloud?topic=cloud-cli-cf#cf)을 사용하여 플랜을 변경하십시오.
+   - RC를 사용하지 않아 Cloud Foundry를 기반으로 하는 서비스의 경우에는 [`ibmcloud cf update-service` 명령](/docs/cli?topic=cloud-cli-ibmcloud_commands_services#ibmcloud_service_update)을 사용하여 플랜을 변경하십시오.
 
      ```
      ibmcloud cf update-service <service_instance_name> [-p <plan_name>]

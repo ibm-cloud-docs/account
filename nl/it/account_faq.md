@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-25"
+lastupdated: "2019-04-09"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -112,6 +112,18 @@ Sì, puoi eseguire l'upgrade a un account fatturabile e continuare a utilizzare 
 Puoi aggiornare il metodo di pagamento associato al tuo account andando a [Pagamenti](https://cloud.ibm.com/billing/payments) nella console. In Aggiungi metodo di pagamento, immetti le informazioni di fatturazione per la tua nuova carta e fai quindi clic su **Aggiungi carta di credito**.
 
 Per passare a un metodo di pagamento differente, seleziona **Pay with Other** e fai quindi clic su **Submit change request**. Un caso di supporto per modificare il tuo metodo di pagamento verrà creato per tuo conto.
+
+## Come posso modificare le impostazioni della mia notifica email?
+{: #change-email-prefs}
+{: faq}
+
+Nelle impostazioni del tuo profilo, puoi modificare quali notifiche email riceverai per gli eventi pianificati, per quelli non pianificati e per gli annunci. 
+1. Vai a [Notifiche](https://cloud.ibm.com/user/notifications) nelle impostazioni del tuo profilo. 
+1. Seleziona se vuoi ricevere le notifiche email per ogni tipo di evento.
+
+Per i servizi dell'infrastruttura classica, i proprietari di account possono anche sottoscrivere gli utenti alle notifiche provenienti da tali servizi andando a **Gestisci > Account > Notifiche**.
+
+Per ulteriori informazioni, vedi [Impostazione delle preferenze email](/docs/account?topic=account-email-prefs).
 
 ## Come posso reimpostare la mia password?
 {: #reset-password}
@@ -230,7 +242,7 @@ Se hai più di un account, puoi fare clic sul tuo nome di account per selezionar
 
 ![Acquisizione della schermata del commutatore di account](images/account-faq.svg "Acquisizione della schermata del commutatore di account")
 
-## Come passo da un proprietario di account a un altro?
+## Come posso far sì che un'altra persona diventi proprietario dell'account?
 {: #switch-account-owners}
 {: faq}
 
