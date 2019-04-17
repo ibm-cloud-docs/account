@@ -97,6 +97,8 @@ If you have a billable account, there's no limit to the number of resource group
   * To upgrade to a Subscription account, click **Upgrade**.
 * To convert between Pay-As-You-Go and Subscription account types, contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
+If you're not sure of your current account type, you can find it on the Account settings page.
+
 Learn more in [Upgrading your account](/docs/account?topic=account-upgrading-account).
 
 ## If I upgrade my Lite account, can I continue to use my existing instances?
@@ -172,7 +174,7 @@ If you believe your account was deactivated in error, contact support by calling
 {: #contactsupport}
 {: faq}
 
-Click **Support** from the console menu bar to go to the Support Center. Learn more about support in [Getting support](/docs/get-support?topic=get-support-support-plans].
+Click **Support** from the console menu bar to go to the Support Center. Learn more about support in [Getting support](/docs/get-support?topic=get-support-support-plans).
 
 
 ## Can I sign up for a free trial?

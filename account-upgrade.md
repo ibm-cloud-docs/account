@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-19"
+lastupdated: "2019-04-17"
 
 keywords: account upgrade, paid account, production account, Pay-As-You-Go, Subscription
 
@@ -23,6 +23,8 @@ subcollection: account
 
 Lite accounts make it easy to get started with {{site.data.keyword.Bluemix}} and try out services. When you are ready for more, you can upgrade your account to a Pay-As-You-Go or Subscription account to unlock the entire catalog of production-ready services.
 {:shortdesc}
+
+You can check your current account type by going to **Manage > Account > Account settings** and looking under _Account Type_.
 
 Not sure which type of account you want to upgrade to? Get detailed information about the benefits of each account type in [Account types](/docs/account?topic=account-accounts).
 {: tip}
