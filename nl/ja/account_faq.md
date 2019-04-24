@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-08"
+lastupdated: "2019-03-25"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -15,6 +15,7 @@ subcollection: account
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:faq: data-hd-content-type='faq'}
+{:tip: .tip}
 
 # FAQ
 {: #accountfaqs}
@@ -75,6 +76,10 @@ Cloud Foundry は、クラウド上でアプリケーションを作成および
 {: faq}
 
 ライト・プランのインスタンスがいずれかの割り当て量の制限に達すると、その月のサービスは使用停止されます。 割り当て量の制限は、インスタンスごとではなく、組織ごとに課せられます。 同じ組織内で作成された新しいインスタンスには、これまでのインスタンスによる使用量が反映されます。 割り当て量の制限は、毎月 1 日にリセットされます。
+
+使用量を確認するには、**「管理」 > 「請求および使用量」**に移動し、**「使用量」**を選択します。詳しくは、[「使用量の表示」](/docs/billing-usage?topic=billing-usage-viewingusage)を参照してください。
+
+サービスの停止または削除は、リソース・リストから行うことができます。詳しくは、『[{{site.data.keyword.Bluemix_notm}} コンソールのナビゲート](/docs/overview?topic=overview-ui)』を参照してください。
 
 
 ## 作成できるリソース・グループ数、組織数、スペース数はいくつですか?

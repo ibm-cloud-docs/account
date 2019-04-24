@@ -66,7 +66,7 @@ subcollection: account
 
 在組織內，您可以使用空間來群組一組應用程式、服務及使用者。在 {{site.data.keyword.Bluemix_notm}} 中，空間關聯於特定地區。您可以根據交付生命週期，在組織中建立空間。例如，您可以建立 `dev` 空間作為開發環境、`test` 空間作為測試環境，以及 `production` 空間作為正式作業環境。然後，您可以建立應用程式與空間的關聯。
 
-將使用者新增至組織之後，即可將空間的許可權授與給他們。與組織類似，空間也會有一組 [Cloud Foundry 角色](/docs/iam?topic=iam-cfroles)，其具有指派給團隊成員的特定許可權：
+將使用者新增至組織之後，即可將空間的許可權授與給他們。與組織類似，空間也會有一組 [Cloud Foundry 角色](/docs/iam?topic=iam-cfaccess#cfroles)，其具有指派給團隊成員的特定許可權：
 
   * 空間管理員
   * 空間開發人員

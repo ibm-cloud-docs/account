@@ -2,7 +2,7 @@
 {:topicgroup: .topicgroup}
 {:utterance .utterance}
 
-{: .toc subcollection="account" audience="platform" arm="3397214" href="/docs/account?topic=account-signing-up-for-ibm-cloud" path="account"}
+{: .toc subcollection="account" audience="platform" arm="3397214" href="/docs/account?topic=account-account_setup" path="account"}
 Gerenciando sua conta
 
     {: .navgroup id="learn"}
@@ -13,7 +13,7 @@ Gerenciando sua conta
 
     {: .navgroup id="howto"}
     index.md
-    
+
     {: .topicgroup}
     Configuração de conta
         adminpublic.md

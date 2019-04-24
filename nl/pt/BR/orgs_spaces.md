@@ -88,7 +88,7 @@ vida de entrega. Por exemplo, é possível criar um espaço `dev` como um ambien
 desenvolvimento, um espaço `test` como um ambiente de teste e um
 espaço `production` como um ambiente de produção. Em seguida, é possível associar os apps aos espaços.
 
-Depois de incluir usuários em uma organização, é possível conceder a eles permissões para os espaços. Semelhantemente às organizações, os espaços também têm um conjunto de [funções do Cloud Foundry](/docs/iam?topic=iam-cfroles) com permissões específicas que são designadas aos membros da equipe:
+Depois de incluir usuários em uma organização, é possível conceder a eles permissões para os espaços. Semelhantemente às organizações, os espaços também têm um conjunto de [funções do Cloud Foundry](/docs/iam?topic=iam-cfaccess#cfroles) com permissões específicas que são designadas aos membros da equipe:
 
   * Gerente de espaço
   * Desenvolvedor de espaço

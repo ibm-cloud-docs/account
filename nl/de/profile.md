@@ -35,7 +35,7 @@ Sie können Ihr Profilfoto ändern. Rufen Sie das Symbol **{{site.data.keyword.a
 ## Informationen zu Ihrer IBMid bearbeiten
 {: #ibmid}
 
-Eine IBMid ist eine einzelne ID, die Sie für die Anmeldung an Ihrem {{site.data.keyword.Bluemix_notm}}-Konto für Infrastruktur-, Service- und Anwendungsfeatures verwenden. Sie können Ihre IBMid nicht ändern, aber Sie können die zugehörigen Profilinformationen wie z. B. den Namen, die E-Mail-Adresse, die Telefonnummer, das Kennwort oder den Firmennamen bearbeiten. Rufen Sie das Symbol **{{site.data.keyword.avatar}}** ![Avatarsymbol](../icons/i-avatar-icon.svg) &gt; **Profil und Einstellungen** auf. Weitere Informationen finden Sie in [Zur IBMid wechseln und Konten verknüpfen](softlayerlink.html).
+Eine IBMid ist eine einzelne ID, die Sie für die Anmeldung an Ihrem {{site.data.keyword.Bluemix_notm}}-Konto für Infrastruktur-, Service- und Anwendungsfeatures verwenden. Sie können Ihre IBMid nicht ändern, aber Sie können die zugehörigen Profilinformationen wie z. B. den Namen, die E-Mail-Adresse, die Telefonnummer, das Kennwort oder den Firmennamen bearbeiten. Rufen Sie das Symbol **{{site.data.keyword.avatar}}** ![Avatarsymbol](../icons/i-avatar-icon.svg) &gt; **Profil und Einstellungen** auf. Weitere Informationen finden Sie in [Zur IBMid wechseln und Konten verknüpfen](/docs/account?topic=account-unifyingaccounts).
 
 
 ## Cookieeinstellungen ändern

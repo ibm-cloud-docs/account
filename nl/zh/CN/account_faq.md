@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-08"
+lastupdated: "2019-03-25"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -15,6 +15,7 @@ subcollection: account
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:faq: data-hd-content-type='faq'}
+{:tip: .tip}
 
 # 常见问题
 {: #accountfaqs}
@@ -75,6 +76,10 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 {: faq}
 
 达到轻量套餐实例的任何配额限制都会暂挂该月的服务。配额限制按组织设置，而不是按实例设置的。在同一组织中创建的新实例会反映出先前实例的任何使用情况。配额限制会在每个月的第 1 天重置。
+
+通过转至**管理 > 计费和使用情况**，然后选择**使用情况**来查看使用情况。有关更多信息，请参阅[查看使用情况](/docs/billing-usage?topic=billing-usage-viewingusage)。
+
+如果要停止或删除服务，可以通过资源列表来执行此操作。请在[探索 {{site.data.keyword.Bluemix_notm}} 控制台](/docs/overview?topic=overview-ui)中了解更多信息。
 
 
 ## 我可以创建多少个资源组、组织或空间？
@@ -243,7 +248,7 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 {: #know-about-tags}
 {: faq}
 
-可以使用标记来组织整个帐户中的资源，然后通过在资源列表中过滤标记来查看这些资源。有关更多信息，请参阅[标记资源](/docs/resources?topic=resources-add-remove#add-remove)。
+可以使用标记来组织整个帐户中的资源，然后通过在资源列表中过滤标记来查看这些资源。有关更多信息，请参阅[使用标记](/docs/resources?topic=resources-tag)。
 
 ## 谁可以查看帐户中的标记？
 {: #tags-visibility-account}

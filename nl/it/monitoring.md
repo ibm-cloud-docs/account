@@ -27,4 +27,4 @@ Puoi tracciare i seguenti eventi:
 * Aggiunta o rimozione di utenti
 * Creazione di organizzazioni
 
-Per iniziare a monitorare le azioni dell'account, consulta [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker). Per ulteriori informazioni su ciascuna delle aree di evento che puoi tracciare, vedi [Eventi di gestione dell'account](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_events_acc_mgt).
+Per iniziare a monitorare le azioni dell'account, consulta [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started). Per ulteriori informazioni su ciascuna delle aree di evento che puoi tracciare, vedi [Eventi di gestione dell'account](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_events_acc_mgt).

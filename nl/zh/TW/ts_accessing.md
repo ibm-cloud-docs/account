@@ -130,7 +130,7 @@ IBM ID 鑑別服務可能有問題。
 在登錄取得 {{site.data.keyword.Bluemix_notm}} 精簡帳戶之後，您可能無法登入 {{site.data.keyword.Bluemix_notm}}。系統會顯示下列訊息：
 {: tsSymptoms}
 
-<code>您的帳戶處於擱置狀態。請稍候，最晚 24 小時即會收到電子郵件確認信，同時也請檢查垃圾郵件資料夾。如果您仍未收到確認電子郵件，請與 <a href="http://ibm.biz/bluemixsupport.com" target="_blank">{{site.data.keyword.Bluemix_notm}} 支援中心</a>聯絡。</code>
+<code>您的帳戶處於擱置狀態。請稍候，最晚 24 小時即會收到電子郵件確認信，同時也請檢查垃圾郵件資料夾。如果您仍未收到確認電子郵件，請與 <a href="https://ibm.biz/ibmcloudsupport" target="_blank">{{site.data.keyword.Bluemix_notm}} 支援中心</a>聯絡。</code>
 
 當您登錄 {{site.data.keyword.Bluemix_notm}}「精簡」帳戶時，會收到一封電子郵件，其中包含一個鏈結，您必須按一下以確認登錄。  
 {: tsCauses}

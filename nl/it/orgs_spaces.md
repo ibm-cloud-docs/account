@@ -72,7 +72,7 @@ uno spazio `test` come un ambiente di test e uno
 spazio `production` come un ambiente di produzione. Puoi quindi associare
 le tue applicazioni agli spazi.
 
-Dopo aver aggiunto gli utenti a un'organizzazione, puoi concedere loro le autorizzazioni per gli spazi. Analogamente alle organizzazioni, anche gli spazi hanno una serie di [ruoli Cloud Foundry](/docs/iam?topic=iam-cfroles) con specifiche autorizzazioni che vengono assegnati ai membri del team:
+Dopo aver aggiunto gli utenti a un'organizzazione, puoi concedere loro le autorizzazioni per gli spazi. Analogamente alle organizzazioni, anche gli spazi hanno una serie di [ruoli Cloud Foundry](/docs/iam?topic=iam-cfaccess#cfroles) con specifiche autorizzazioni che vengono assegnati ai membri del team:
 
   * Gestore spazio
   * Sviluppatore spazio

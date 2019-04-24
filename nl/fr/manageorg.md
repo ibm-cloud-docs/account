@@ -46,18 +46,18 @@ Vous ne pouvez afficher les ressources que d'une seule organisation à la fois. 
   * Pour éditer des rôles utilisateur au niveau de l'organisation, cliquez sur l'icône Actions ![Icône Action](../icons/action-menu-icon.svg) et sélectionnez **Utilisateurs**.
     {: #listmembers}
 
-    Selon la manière dont vous souhaitez modifier les droits d'accès des utilisateurs, sélectionnez ou désélectionnez la case à cocher correspondant à un rôle spécifique. Les rôles que vous pouvez affecter au niveau de l'organisation sont les suivants : Responsable, Responsable de la facturation et Auditeur. Pour plus d'informations, voir [Rôles Cloud Foundry](/docs/iam?topic=iam-cfroles).
+    Selon la manière dont vous souhaitez modifier les droits d'accès des utilisateurs, sélectionnez ou désélectionnez la case à cocher correspondant à un rôle spécifique. Les rôles que vous pouvez affecter au niveau de l'organisation sont les suivants : Responsable, Responsable de la facturation et Auditeur. Pour plus d'informations, voir [Rôles Cloud Foundry](/docs/iam?topic=iam-cfaccess#cfroles).
 
   * Pour éditer des rôles utilisateur pour un espace spécifique, cliquez sur l'organisation dans laquelle l'espace est affecté. Cliquez ensuite sur le nom de l'espace.
 
-    Selon la manière dont vous souhaitez modifier les droits d'accès des utilisateurs, sélectionnez ou désélectionnez la case à cocher correspondant à un rôle spécifique. Les rôles que vous pouvez affecter au niveau de l'espace sont les suivants : Responsable, Développeur et Auditeur. Pour plus d'informations, voir [Rôles Cloud Foundry](/docs/iam?topic=iam-cfroles).
+    Selon la manière dont vous souhaitez modifier les droits d'accès des utilisateurs, sélectionnez ou désélectionnez la case à cocher correspondant à un rôle spécifique. Les rôles que vous pouvez affecter au niveau de l'espace sont les suivants : Responsable, Développeur et Auditeur. Pour plus d'informations, voir [Rôles Cloud Foundry](/docs/iam?topic=iam-cfaccess#cfroles).
 
   * Pour gérer vos domaines, cliquez sur l'icône Actions ![Icône Action](../icons/action-menu-icon.svg) pour l'organisation concernée puis sélectionnez **Domaines**.
     {: #managedomains}
 
     En tant que propriétaire de compte ou responsable de l'organisation, vous pouvez afficher le domaine de système et ajouter des données personnalisés pour les applications construites dans une organisation et ses espaces. Si vous êtes responsable de l'espace, cette page affiche une liste en lecture seule des domaines affectés à l'espace.
 
-    Si vous ajoutez un domaine personnalisé, vous devez configurer votre serveur DNS pour qu'il résolve votre domaine personnalisé, de telle sorte qu'il désigne le domaine de système {{site.data.keyword.Bluemix_notm}}. Ainsi, lorsque {{site.data.keyword.Bluemix_notm}} reçoit une demande pour votre domaine personnalisé, celle-ci est correctement acheminée vers votre application. Le domaine de système est toujours disponible dans un espace, et des domaines personnalisés peuvent également être alloués à un espace. Les applications créées dans un espace peuvent utiliser tout domaine répertorié pour cet espace. Pour plus d'informations sur la création et l'utilisation de domaines personnalisés, voir [Création et utilisation d'un domaine personnalisé](/docs/apps?topic=creating-apps-updatingapps).
+    Si vous ajoutez un domaine personnalisé, vous devez configurer votre serveur DNS pour qu'il résolve votre domaine personnalisé, de telle sorte qu'il désigne le domaine de système {{site.data.keyword.Bluemix_notm}}. Ainsi, lorsque {{site.data.keyword.Bluemix_notm}} reçoit une demande pour votre domaine personnalisé, celle-ci est correctement acheminée vers votre application. Le domaine de système est toujours disponible dans un espace, et des domaines personnalisés peuvent également être alloués à un espace. Les applications créées dans un espace peuvent utiliser tout domaine répertorié pour cet espace. Pour plus d'informations sur la création et l'utilisation de domaines personnalisés, voir [Gestion de vos domaines](/docs/apps?topic=creating-apps-update-domain).
 
   * Pour gérer le quota alloué pour une organisation, cliquez sur l'icône Actions ![Icône Action](../icons/action-menu-icon.svg) pour l'organisation concernée puis sélectionnez **Quotas**.
     {: #managequota}

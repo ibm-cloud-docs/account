@@ -27,4 +27,4 @@ Die folgenden Ereignisse können verfolgt werden:
 * Benutzer hinzufügen oder entfernen
 * Organisationen erstellen
 
-Informationen zum Einstieg in die Überwachung von Kontoaktionen finden Sie in [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker). Weitere Informationen zu den einzelnen Ereignisbereichen, die verfolgt werden können, finden Sie in [Kontomanagementereignisse](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_events_acc_mgt).
+Informationen zum Einstieg in die Überwachung von Kontoaktionen finden Sie in [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started). Weitere Informationen zu den einzelnen Ereignisbereichen, die verfolgt werden können, finden Sie in [Kontomanagementereignisse](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_events_acc_mgt).

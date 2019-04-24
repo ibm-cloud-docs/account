@@ -50,6 +50,6 @@ subcollection: account
 
 이전 다이어그램의 또 다른 중요한 측면은 계정 사용자에게 계정 내의 리소스에 대한 액세스를 제공하는 데 사용할 수 있는 세 가지 유형의 액세스 관리 시스템에 대한 설명입니다.
 
-  * IAM [액세스 역할](/docs/iam?topic=iam-iamusermanrol#iamusermanrol)을 사용하여 사용자에게 리소스 그룹에 속한 모든 리소스에 대한 액세스를 제공할 수 있습니다. 또한 사용자에게 리소스 그룹을 관리하고 리소스 그룹에 지정된 새 서비스 인스턴스를 작성하기 위한 액세스 권한을 부여할 수도 있습니다.
-  * Cloud Foundry [조직 및 영역 역할](/docs/iam?topic=iam-cfroles#cfroles)을 사용하여 사용자에게 Cloud Foundry 영역에 상주하는 서비스 인스턴스에 대한 액세스를 제공할 수 있습니다.
+  * IAM [액세스 역할](/docs/iam?topic=iam-userroles#iamusermanrol)을 사용하여 사용자에게 리소스 그룹에 속한 모든 리소스에 대한 액세스를 제공할 수 있습니다. 또한 사용자에게 리소스 그룹을 관리하고 리소스 그룹에 지정된 새 서비스 인스턴스를 작성하기 위한 액세스 권한을 부여할 수도 있습니다.
+  * Cloud Foundry [조직 및 영역 역할](/docs/iam?topic=iam-cfaccess#cfroles)을 사용하여 사용자에게 Cloud Foundry 영역에 상주하는 서비스 인스턴스에 대한 액세스를 제공할 수 있습니다.
   * 클래식 인프라 권한을 사용하여 사용자에게 클래식 인프라에 대한 보다 세부 단위의 [권한](/docs/iam?topic=iam-infrapermission#infrapermission)을 부여할 수 있습니다. 디바이스 액세스 및 VPN 서브넷 액세스는 별도로 지정합니다.

@@ -66,7 +66,7 @@ Führen Sie die folgenden Schritte aus, um eine Organisation hinzuzufügen:
 
 Innerhalb einer Organisation können Sie Bereiche verwenden, um eine Reihe von Anwendungen, Services und Benutzern zu gruppieren. Bereiche sind an eine bestimmte Region in {{site.data.keyword.Bluemix_notm}} gebunden. Sie können auf der Basis des Bereitstellungslebenszyklus Bereiche in einer Organisation erstellen. Sie können z. B. einen Bereich `dev` als Entwicklungsumgebung, einen Bereich `test` als Testumgebung und einen Bereich `production` als Produktionsumgebung erstellen. Anschließend können Sie Ihre Apps den Bereichen zuordnen.
 
-Nachdem Sie Benutzer zu einer Organisation hinzugefügt haben, können Sie ihnen Berechtigungen für die Bereiche erteilen. Ähnlich wie Organisationen verfügen Bereiche über eine Reihe von [Cloud Foundry-Rollen](/docs/iam?topic=iam-cfroles) mit bestimmten Berechtigungen, die Teammitgliedern zugeordnet sind:
+Nachdem Sie Benutzer zu einer Organisation hinzugefügt haben, können Sie ihnen Berechtigungen für die Bereiche erteilen. Ähnlich wie Organisationen verfügen Bereiche über eine Reihe von [Cloud Foundry-Rollen](/docs/iam?topic=iam-cfaccess#cfroles) mit bestimmten Berechtigungen, die Teammitgliedern zugeordnet sind:
 
   * Bereichsmanager
   * Bereichsentwickler
