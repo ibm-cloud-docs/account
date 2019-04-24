@@ -1,12 +1,10 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-02-13"
 
-keywords: troubleshoot account, account problem, account support, account help, org error, resource error, error message
+  years: 2015, 2018
 
-subcollection: account
+lastupdated: "2018-10-24"
 ---
 
 {:tsSymptoms: .tsSymptoms}
@@ -175,7 +173,7 @@ subcollection: account
 {: tsResolve}
 
   * 在控制台菜单栏中，单击**管理 > 帐户**，然后选择**组织**。然后，选择要在其中创建空间的组织，并单击**创建空间**。
-  * 在 {{site.data.keyword.Bluemix_notm}} 命令行界面中，输入 `ibmcloud account space-create <space_name> -o <organization_name>`.
+  * 在 Cloud Foundry 命令行界面中，输入 `cf create-space <space_name> -o <organization_name>`.
 
 
 ## 为什么某些应用程序共享一个域名？
@@ -187,9 +185,9 @@ subcollection: account
 当您为空间内的不同应用程序分配相同 URL 路径时，可能会发生此问题。
 {: tsCauses}
 
-例如，将 myApp1 应用程序推送到 {{site.data.keyword.Bluemix_notm}}，并将域设置为 `mynewapp.us-east.cf.appdomain.cloud`。然后，将另一个应用程序 myApp2 推送到同一空间，并将该应用程序的其中一个 URL 路径设置为 `mynewapp.us-east.cf.appdomain.cloud`。现在，该路径映射到两个应用程序。
+例如，将 myApp1 应用程序推送到 {{site.data.keyword.Bluemix_notm}}，并将域设置为 `mynewapp.mybluemix.net`。然后，将另一个应用程序 myApp2 推送到同一空间，并将该应用程序的其中一个 URL 路径设置为 `mynewapp.mybluemix.net`。现在，该路径映射到两个应用程序。
 
-这是受支持行为，您可以使用这一做法来杜绝应用程序升级时的停机状况。有关更多信息，请参阅[如何确保零停机时间](/docs/overview?topic=overview-zero-downtime)。
+这是受支持行为，您可以使用这一做法来杜绝应用程序升级时的停机状况。有关更多信息，请参阅[如何确保零停机时间](/docs/overview/zero_downtime.html#zero-downtime)。
 {: tsResolve}
 
 
@@ -205,9 +203,8 @@ subcollection: account
 这是控制台的限制。
 {: tsCauses}
 
-您可以通过 {{site.data.keyword.Bluemix_notm}} 命令行界面，使用命令（如 `ibmcloud account orgs` 和 `ibmcloud account org-create`）来管理所有组织。要获取命令的完整列表，请输入 `ibmcloud account help`。
+您可以通过 Cloud Foundry 命令行界面，使用命令（如 `cf orgs`、`cf create-org` 和 `cf delete-org`）来管理所有组织。要获取 Cloud Foundry 命令的完整列表，请输入 `cf help`。
 {: tsResolve}
-
 
 ## 为什么无法添加信用卡信息？
 {: #ts_addcc}
@@ -224,5 +221,6 @@ subcollection: account
 请完成以下步骤：
 {: tsResolve}
 
-  1. 在“添加信用卡”页面上，填写所有必填字段。
-  2. 选择**我已阅读并同意 IBM 条款和条件**，然后单击**提交**。
+  1. 在“添加信用卡”页面上，填写所有必填字段。 
+  2. 选择**我已阅读并同意 IBM 条款和条件**，然后单击**提交**。 
+  

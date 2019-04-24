@@ -1,12 +1,10 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-02-13"
 
-keywords: troubleshoot account, account problem, account support, account help, org error, resource error, error message
+  years: 2015, 2018
 
-subcollection: account
+lastupdated: "2018-10-24"
 ---
 
 {:tsSymptoms: .tsSymptoms}
@@ -36,10 +34,10 @@ Sie können keinen neuen Standort erstellen, da Ihr Kontotyp dies nicht zulässt
 Sie erhalten eine Fehlernachricht, wenn Sie versuchen, einen neuen {{site.data.keyword.Bluemix_notm}}-Standort zu erstellen.
 {: tsSymptoms}
 
-Dies liegt wahrscheinlich daran, dass Sie ein Lite-Konto verwenden, das die Entwicklung an nur einem öffentlichen Standort unterstützt.
+Dies liegt wahrscheinlich daran, dass Sie ein Lite-Konto verwenden, das die Entwicklung an nur einem öffentlichen Standort unterstützt. 
 {: tsCauses}
 
-Wenn Sie auf weitere Standorte zugreifen möchten, müssen Sie ein Upgrade auf ein kostenpflichtiges Konto durchführen. Rufen Sie **Verwalten > Abrechnung und Nutzung** auf und wählen Sie **Zahlungen** aus.
+Wenn Sie auf weitere Standorte zugreifen möchten, müssen Sie ein Upgrade auf ein kostenpflichtiges Konto durchführen. Rufen Sie **Verwalten > Abrechnung und Nutzung** auf und wählen Sie **Zahlungen** aus. 
 {: tsResolve}
 
 
@@ -52,10 +50,10 @@ Sie versuchen, mehr als eine Organisation zu erstellen, verfügen aber über ein
 Sie erhalten eine Fehlernachricht, wenn Sie versuchen, eine neue Organisation zu erstellen.
 {: tsSymptoms}
 
-Dies liegt wahrscheinlich daran, dass Sie ein Lite-Konto verwenden, das die Entwicklung in nur einer Organisation unterstützt.
+Dies liegt wahrscheinlich daran, dass Sie ein Lite-Konto verwenden, das die Entwicklung in nur einer Organisation unterstützt. 
 {: tsCauses}
 
-Wenn Sie eine neue Organisation erstellen möchten, müssen Sie ein Upgrade auf ein kostenpflichtiges Konto durchführen. Rufen Sie **Verwalten > Abrechnung und Nutzung** auf und wählen Sie **Upgrades** aus.
+Wenn Sie eine neue Organisation erstellen möchten, müssen Sie ein Upgrade auf ein kostenpflichtiges Konto durchführen. Rufen Sie **Verwalten > Abrechnung und Nutzung** auf und wählen Sie **Upgrades** aus. 
 {: tsResolve}
 
 
@@ -175,7 +173,7 @@ Verwenden Sie eine der folgenden Methoden, um einen Bereich zu erstellen:
 {: tsResolve}
 
   * Klicken Sie in der Menüleiste der Konsole auf **Verwalten > Konto** und wählen Sie **Organisationen** aus. Wählen Sie anschließend die Organisation aus, in der Sie den Bereich erstellen möchten und klicken Sie auf **Bereich erstellen**.
-  * Geben Sie in der {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle Folgendes ein: `ibmcloud account space-create <space_name> -o <organization_name>`.
+  * Geben Sie in der Cloud Foundry-Befehlszeilenschnittstelle Folgendes ein: `cf create-space <space_name> -o <organization_name>`.
 
 
 ## Warum verwenden einige Apps einen Domänennamen gemeinsam?
@@ -187,9 +185,9 @@ Es kann vorkommen, dass in {{site.data.keyword.Bluemix_notm}} eine URL von mehre
 Dieses Problem kann auftreten, wenn Sie unterschiedlichen Apps in einem Bereich dieselbe URL-Route zuweisen.
 {: tsCauses}
 
-Beispiel: Sie übertragen die App 'myApp1' per Push-Operation an {{site.data.keyword.Bluemix_notm}} und legen als Domäne `mynewapp.us-east.cf.appdomain.cloud` fest. Anschließend übertragen Sie eine weitere App mit dem Namen 'myApp2' per Push-Operation in denselben Bereich und legen für eine der URL-Routen den Namen `mynewapp.us-east.cf.appdomain.cloud` fest. Die Route ist jetzt beiden Apps zugeordnet.
+Beispiel: Sie übertragen die App 'myApp1' per Push-Operation an {{site.data.keyword.Bluemix_notm}} und legen als Domäne `mynewapp.mybluemix.net` fest. Anschließend übertragen Sie eine weitere App mit dem Namen 'myApp2' per Push-Operation in denselben Bereich und legen für eine der URL-Routen den Namen `mynewapp.mybluemix.net` fest. Die Route ist jetzt beiden Apps zugeordnet.
 
-Hierbei handelt es sich um ein unterstütztes Verhalten; Sie können dieses Verfahren verwenden, um beim Upgrade einer App Ausfallzeiten vollständig zu vermeiden. Weitere Informationen finden Sie in [Ausfallzeiten vermeiden](/docs/overview?topic=overview-zero-downtime).
+Hierbei handelt es sich um ein unterstütztes Verhalten; Sie können dieses Verfahren verwenden, um beim Upgrade einer App Ausfallzeiten vollständig zu vermeiden. Weitere Informationen finden Sie in [Ausfallzeiten vermeiden](/docs/overview/zero_downtime.html#zero-downtime). 
 {: tsResolve}
 
 
@@ -199,15 +197,14 @@ Hierbei handelt es sich um ein unterstütztes Verhalten; Sie können dieses Verf
 
 Als Administrator können Sie nicht jede Organisation zur Verwaltung anzeigen, wenn Sie die {{site.data.keyword.Bluemix_notm}}-Konsole verwenden. Sie können nur die Organisationen anzeigen und verwalten, zu denen Sie gehören.
 
-Als Administrator können Sie nicht alle Organisationen über die Konsole anzeigen.
+Als Administrator können Sie nicht alle Organisationen über die Konsole anzeigen. 
 {: tsSymptoms}
 
-Hierbei handelt es sich um eine Einschränkung der Konsole.
+Hierbei handelt es sich um eine Einschränkung der Konsole. 
 {: tsCauses}
 
-Sie können Befehle wie z. B. `ibmcloud account orgs` und `ibmcloud account org-create` über die {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle verwenden, um alle Organisationen zu verwalten. Geben Sie `ibmcloud account help` ein, um eine vollständige Liste der Befehle zu erhalten.
+Sie können über die Cloud Foundry-Befehlszeilenschnittstelle Befehle wie `cf orgs`, `cf create-org` oder `cf delete-org` verwenden, um alle Organisationen zu verwalten. Für eine vollständige Liste der Cloud Foundry-Befehle geben Sie `cf help` ein.
 {: tsResolve}
-
 
 ## Warum kann ich meine Kreditkarteninformationen nicht hinzufügen?
 {: #ts_addcc}
@@ -224,5 +221,6 @@ Dieses Problem tritt auf, wenn Sie auf der Seite 'Kreditkarte hinzufügen' die I
 Führen Sie die folgenden Schritte aus:
 {: tsResolve}
 
-  1. Füllen Sie auf der Seite 'Kreditkarte hinzufügen' alle erforderlichen Felder aus.
-  2. Wählen Sie das Kontrollkästchen unter **Ich habe die allgemeinen Geschäftsbedingungen von IBM gelesen und stimme ihnen zu** aus und klicken Sie auf **Senden**.
+  1. Füllen Sie auf der Seite 'Kreditkarte hinzufügen' alle erforderlichen Felder aus. 
+  2. Wählen Sie das Kontrollkästchen unter **Ich habe die allgemeinen Geschäftsbedingungen von IBM gelesen und stimme ihnen zu** aus und klicken Sie auf **Senden**. 
+  

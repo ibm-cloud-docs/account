@@ -1,12 +1,10 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-02-13"
 
-keywords: troubleshoot account, account problem, account support, account help, org error, resource error, error message
+  years: 2015, 2018
 
-subcollection: account
+lastupdated: "2018-10-24"
 ---
 
 {:tsSymptoms: .tsSymptoms}
@@ -36,10 +34,10 @@ Vous ne pouvez pas créer de nouvel emplacement car votre type de compte ne perm
 Vous recevez un message d'erreur lorsque vous tentez de créer un emplacement {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
 
-Il est probable que vous utilisiez un compte Lite, lequel ne permet un développement que dans un seul emplacement public.
+Il est probable que vous utilisiez un compte Lite, lequel ne permet un développement que dans un seul emplacement public. 
 {: tsCauses}
 
-Pour pouvoir accéder à des emplacements supplémentaires, vous devez utiliser un compte facturable. Accédez à **Gérer > Facturation et utilisation** et sélectionnez **Paiements**.
+Pour pouvoir accéder à des emplacements supplémentaires, vous devez utiliser un compte facturable. Accédez à **Gérer > Facturation et utilisation** et sélectionnez **Paiements**. 
 {: tsResolve}
 
 
@@ -52,10 +50,10 @@ Vous tentez de créer plusieurs organisations et vous avez un compte Lite.
 Vous recevez un message d'erreur lorsque vous tentez de créer une organisation.
 {: tsSymptoms}
 
-Il est probable que vous utilisiez un compte Lite, lequel ne permet un développement que dans une seule organisation.
+Il est probable que vous utilisiez un compte Lite, lequel ne permet un développement que dans une seule organisation. 
 {: tsCauses}
 
-Pour créer une organisation, une mise à niveau vers un compte facturable est requise. Accédez à **Gérer > Facturation et utilisation** et sélectionnez **Mises à niveau**.
+Pour créer une organisation, une mise à niveau vers un compte facturable est requise. Accédez à **Gérer > Facturation et utilisation** et sélectionnez **Mises à niveau**. 
 {: tsResolve}
 
 
@@ -175,7 +173,7 @@ Pour créer un espace, appliquez l'une des méthodes suivantes :
 {: tsResolve}
 
   * Dans la barre de menus de la console, cliquez sur **Gérer > Compte** et sélectionnez **Organisations**. Ensuite, sélectionnez l'organisation dans laquelle vous voulez créer l'espace, puis cliquez sur **Créer un espace**.
-  * Dans l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}, entrez `ibmcloud account space-create <space_name> -o <organization_name>`.
+  * Dans l'interface de ligne de commande Cloud Foundry, entrez `cf create-space <space_name> -o <organization_name>`.
 
 
 ## Pourquoi certaines applications partagent-elles un nom de domaine ?
@@ -187,9 +185,9 @@ Il se peut que plusieurs applications partagent une adresse URL dans {{site.data
 Ce problème peut se produire lorsque vous affectez la même route d'adresse URL à plusieurs applications dans un espace.
 {: tsCauses}
 
-Par exemple, vous envoyez par commande push l'application myApp1 dans {{site.data.keyword.Bluemix_notm}} et définissez le nom de domaine `mynewapp.us-east.cf.appdomain.cloud`. Puis, vous envoyez par commande push une autre application myApp2 dans le même espace et affectez `mynewapp.us-east.cf.appdomain.cloud` à l'une de ses routes d'URL. La route est désormais mappée aux deux applications.
+Par exemple, vous envoyez par commande push l'application myApp1 dans {{site.data.keyword.Bluemix_notm}} et définissez le nom de domaine `mynewapp.mybluemix.net`. Puis, vous envoyez par commande push une autre application myApp2 dans le même espace et affectez `mynewapp.mybluemix.net` à l'une de ses routes d'URL. La route est désormais mappée aux deux applications.
 
-Il s'agit du comportement pris en charge ; il permet d'obtenir un temps d'indisponibilité nul pour la mise à niveau de votre application. Pour plus d'informations, voir [Comment garantir un temps d'indisponibilité nul](/docs/overview?topic=overview-zero-downtime).
+Il s'agit du comportement pris en charge ; il permet d'obtenir un temps d'indisponibilité nul pour la mise à niveau de votre application. Pour plus d'informations, voir [Comment garantir un temps d'indisponibilité nul](/docs/overview/zero_downtime.html#zero-downtime). 
 {: tsResolve}
 
 
@@ -199,15 +197,14 @@ Il s'agit du comportement pris en charge ; il permet d'obtenir un temps d'indisp
 
 En tant qu'administrateur, vous ne pouvez pas afficher chaque organisation pour les gérer lorsque vous utilisez la console {{site.data.keyword.Bluemix_notm}}. Vous pouvez afficher et administrer uniquement les organisations auxquelles vous appartenez.
 
-En tant qu'administrateur, vous ne pouvez pas afficher toutes les organisations à partir de la console.
+En tant qu'administrateur, vous ne pouvez pas afficher toutes les organisations à partir de la console. 
 {: tsSymptoms}
 
-Il s'agit d'une limitation de la console.
+Il s'agit d'une limitation de la console. 
 {: tsCauses}
 
-Vous pouvez utiliser des commandes, telles `ibmcloud account orgs` et `ibmcloud account org-create` à partir de l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}} pour gérer toutes les organisations. Pour obtenir la liste complète des commandes, entrez `ibmcloud account help`.
+Vous pouvez utiliser des commandes telles que `cf orgs`, `cf create-org` et `cf delete-org` à partir de l'interface de ligne de commande Cloud Foundry pour gérer toutes les organisations. Pour obtenir une liste complète des commandes Cloud Foundry, entrez `cf help`.
 {: tsResolve}
-
 
 ## Pourquoi ne puis-je pas ajouter mes informations de carte de crédit ?
 {: #ts_addcc}
@@ -224,5 +221,6 @@ Ce problème survient lorsque vos informations ne sont pas entrées correctement
 Procédez comme suit :
 {: tsResolve}
 
-  1. Sur la page Ajouter une carte de crédit, renseignez toutes les zones requises.
-  2. Sélectionnez l'option indiquant que vous avez lu et accepté les dispositions d'IBM****, puis cliquez sur **Soumettre**.
+  1. Sur la page Ajouter une carte de crédit, renseignez toutes les zones requises. 
+  2. Sélectionnez l'option indiquant que vous avez lu et accepté les dispositions d'IBM****, puis cliquez sur **Soumettre**. 
+  

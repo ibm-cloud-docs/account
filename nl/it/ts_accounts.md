@@ -1,12 +1,10 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-02-13"
 
-keywords: troubleshoot account, account problem, account support, account help, org error, resource error, error message
+  years: 2015, 2018
 
-subcollection: account
+lastupdated: "2018-10-24"
 ---
 
 {:tsSymptoms: .tsSymptoms}
@@ -36,10 +34,10 @@ Non puoi creare una nuova ubicazione perché il tuo tipo di account non lo conse
 Ricevi un messaggio di errore quando provi a creare una nuova ubicazione {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
 
-Ciò è probabilmente dovuto al fatto che stai utilizzando un account Lite, che supporta lo sviluppo in una sola ubicazione pubblica.
+Ciò è probabilmente dovuto al fatto che stai utilizzando un account Lite, che supporta lo sviluppo in una sola ubicazione pubblica. 
 {: tsCauses}
 
-Per accedere a più ubicazioni, esegui l'upgrade a un account fatturabile. Vai a **Gestisci > Fatturazione e utilizzo** e seleziona **Pagamenti**.
+Per accedere a più ubicazioni, esegui l'upgrade a un account fatturabile. Vai a **Gestisci > Fatturazione e utilizzo** e seleziona **Pagamenti**. 
 {: tsResolve}
 
 
@@ -52,10 +50,10 @@ Provi a creare più di una singola organizzazione e disponi di un account Lite.
 Ricevi un messaggio di errore quando provi a creare una nuova organizzazione.
 {: tsSymptoms}
 
-Ciò è probabilmente dovuto al fatto che stai utilizzando un account Lite, che supporta lo sviluppo solo in una singola organizzazione.
+Ciò è probabilmente dovuto al fatto che stai utilizzando un account Lite, che supporta lo sviluppo solo in una singola organizzazione. 
 {: tsCauses}
 
-Per creare una nuova organizzazione, esegui l'upgrade a un account fatturabile. Vai a **Gestisci > Fatturazione e utilizzo** e seleziona **Upgrade**.
+Per creare una nuova organizzazione, esegui l'upgrade a un account fatturabile. Vai a **Gestisci > Fatturazione e utilizzo** e seleziona **Upgrade**. 
 {: tsResolve}
 
 
@@ -186,7 +184,7 @@ Per creare uno spazio, utilizza uno dei seguenti metodi:
 {: tsResolve}
 
   * Dalla barra dei menu della console, fai clic su **Gestisci > Account** e seleziona **Organizzazioni**. Quindi, seleziona l'organizzazione in cui vuoi creare lo spazio e fai clic su **Crea uno spazio**.
-  * Nell'interfaccia riga di comando {{site.data.keyword.Bluemix_notm}}, immetti `ibmcloud account space-create <space_name> -o <organization_name>`.
+  * Nell'interfaccia riga di comando Cloud Foundry, immetti `cf create-space <space_name> -o <organization_name>`.
 
 
 ## Perché alcune applicazioni condividono un nome dominio?
@@ -198,9 +196,9 @@ Potresti notare che diverse applicazioni condividono un URL in {{site.data.keywo
 Questo problema potrebbe verificarsi se assegni la stessa rotta URL per le diverse applicazioni in uno spazio.
 {: tsCauses}
 
-Ad esempio, esegui il push dell'applicazione myApp1 a {{site.data.keyword.Bluemix_notm}} e imposti il dominio su `mynewapp.us-east.cf.appdomain.cloud`. Esegui quindi il push di un'altra applicazione myApp2 nello stesso spazio e imposti una delle sue rotte URL su `mynewapp.us-east.cf.appdomain.cloud`. La rotta è ora associata a entrambe le applicazioni.
+Ad esempio, esegui il push dell'applicazione myApp1 a {{site.data.keyword.Bluemix_notm}} e imposti il dominio su `mynewapp.mybluemix.net`. Esegui quindi il push di un'altra applicazione myApp2 allo stesso spazio e imposti una delle sue rotte URL su `mynewapp.mybluemix.net`. La rotta è ora associata a entrambe le applicazioni.
 
-Questo è il funzionamento supportato e puoi utilizzare questa procedura affinché non si verifichino tempi di inattività per l'upgrade della tua applicazione. Per ulteriori informazioni, vedi il documento relativo a [come garantire nessun tempo di inattività](/docs/overview?topic=overview-zero-downtime).
+Questo è il funzionamento supportato e puoi utilizzare questa procedura affinché non si verifichino tempi di inattività per l'upgrade della tua applicazione. Per ulteriori informazioni, vedi il documento relativo a [come garantire nessun tempo di inattività](/docs/overview/zero_downtime.html#zero-downtime). 
 {: tsResolve}
 
 
@@ -210,15 +208,14 @@ Questo è il funzionamento supportato e puoi utilizzare questa procedura affinch
 
 In qualità di amministratore, non puoi visualizzare tutte le organizzazioni per gestirle quando utilizzi la console {{site.data.keyword.Bluemix_notm}}. Puoi visualizzare e gestire solo le organizzazioni alle quali appartieni.
 
-In qualità di amministratore, non puoi visualizzare tutte le organizzazioni dalla console.
+In qualità di amministratore, non puoi visualizzare tutte le organizzazioni dalla console. 
 {: tsSymptoms}
 
-Si tratta di una limitazione della console.
+Si tratta di una limitazione della console. 
 {: tsCauses}
 
-Puoi utilizzare comandi come `ibmcloud account orgs` e `ibmcloud account org-create` dall'interfaccia riga di comando {{site.data.keyword.Bluemix_notm}} per gestire tutte le organizzazioni. Per un elenco completo dei comandi, immetti `ibmcloud account help`.
+Puoi utilizzare i comandi come `cf orgs`, `cf create-org` e `cf delete-org` dall'interfaccia riga di comando Cloud Foundry per gestire tutte le organizzazioni. Per un elenco completo dei comandi Cloud Foundry, immetti `cf help`.
 {: tsResolve}
-
 
 ## Perché non posso aggiungere le informazioni della mia carta di credito?
 {: #ts_addcc}
@@ -236,6 +233,7 @@ Completa
 la seguente procedura:
 {: tsResolve}
 
-  1. Nella pagina Aggiungi carta di credito, completa tutti i campi obbligatori.
+  1. Nella pagina Aggiungi carta di credito, completa tutti i campi obbligatori. 
   2. Seleziona **Ho letto e accetto i termini e le condizioni IBM**
-e fai clic su **Invia**.
+e fai clic su **Invia**. 
+  

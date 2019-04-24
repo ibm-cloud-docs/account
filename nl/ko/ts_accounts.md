@@ -1,12 +1,10 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-02-13"
 
-keywords: troubleshoot account, account problem, account support, account help, org error, resource error, error message
+  years: 2015, 2018
 
-subcollection: account
+lastupdated: "2018-10-24"
 ---
 
 {:tsSymptoms: .tsSymptoms}
@@ -36,10 +34,10 @@ subcollection: account
 새 {{site.data.keyword.Bluemix_notm}} 위치를 작성하려고 시도하면 오류 메시지를 수신합니다.
 {: tsSymptoms}
 
-이는 하나의 공용 위치에서만 개발을 지원하는 Lite 계정을 사용 중이기 때문일 수 있습니다.
+이는 하나의 공용 위치에서만 개발을 지원하는 Lite 계정을 사용 중이기 때문일 수 있습니다. 
 {: tsCauses}
 
-더 많은 위치에 액세스하려면 청구 가능 계정으로 업그레이드하십시오. **관리 > 청구 및 사용량**으로 이동하여 **지불**을 선택하십시오.
+더 많은 위치에 액세스하려면 청구 가능 계정으로 업그레이드하십시오. **관리 > 청구 및 사용량**으로 이동하여 **지불**을 선택하십시오. 
 {: tsResolve}
 
 
@@ -52,10 +50,10 @@ subcollection: account
 새 조직을 작성하려고 시도하면 오류 메시지를 수신합니다.
 {: tsSymptoms}
 
-이는 하나의 조직에서만 개발을 지원하는 Lite 계정을 사용 중이기 때문일 수 있습니다.
+이는 하나의 조직에서만 개발을 지원하는 Lite 계정을 사용 중이기 때문일 수 있습니다. 
 {: tsCauses}
 
-새 조직을 작성하려면 청구 가능 계정으로 업그레이드하십시오. **관리 > 청구 및 사용량**으로 이동하여 **업그레이드**를 선택하십시오.
+새 조직을 작성하려면 청구 가능 계정으로 업그레이드하십시오. **관리 > 청구 및 사용량**으로 이동하여 **업그레이드**를 선택하십시오. 
 {: tsResolve}
 
 
@@ -176,7 +174,7 @@ Lite 계정에서의 업그레이드를 원하지 않지만 일부 유휴 상태
 {: tsResolve}
 
   * 콘솔 메뉴 표시줄에서 **관리 > 계정**을 클릭하고 **조직**을 선택하십시오. 그런 다음, 영역을 작성하려는 조직을 선택하고 **영역 작성**을 클릭하십시오.
-  * {{site.data.keyword.Bluemix_notm}} 명령행 인터페이스에서 다음 명령을 입력하십시오. `ibmcloud account space-create <space_name> -o <organization_name>`.
+  * Cloud Foundry 명령행 인터페이스에서 다음을 입력하십시오. `cf create-space <space_name> -o <organization_name>`.
 
 
 ## 왜 일부 앱이 도메인 이름을 공유합니까?
@@ -188,9 +186,9 @@ Lite 계정에서의 업그레이드를 원하지 않지만 일부 유휴 상태
 이 문제점은 한 영역의 서로 다른 앱에 대해 동일한 URL 라우트를 지정한 경우에 발생할 수 있습니다.
 {: tsCauses}
 
-예를 들면, 사용자가 myApp1 앱을 {{site.data.keyword.Bluemix_notm}}로 푸시하고 도메인을 `mynewapp.us-east.cf.appdomain.cloud`로 설정합니다. 그 후 다른 myApp2 앱을 동일한 영역으로 푸시하고 해당 URL 라우트 중 하나를 `mynewapp.us-east.cf.appdomain.cloud`로 설정합니다. 이제 라우트가 두 앱 모두에 맵핑됩니다.
+예를 들어, myApp1 앱을 {{site.data.keyword.Bluemix_notm}}로 푸시하고 도메인을 `mynewapp.mybluemix.net`으로 설정하십시오. 그리고 다른 myApp2 앱을 동일한 영역으로 푸시하고 URL 라우트 중 하나를 `mynewapp.mybluemix.net`으로 설정하십시오. 이제 라우트가 두 앱 모두에 맵핑됩니다.
 
-이는 지원되는 동작이며 이 사례를 사용하여 앱 업그레이드를 위한 작동 중지 시간을 없앨 수 있습니다. 자세한 정보는 [작동 중지 시간을 없애는 방법](/docs/overview?topic=overview-zero-downtime)을 참조하십시오.
+이는 지원되는 동작이며 이 사례를 사용하여 앱 업그레이드를 위한 작동 중지 시간을 없앨 수 있습니다. 자세한 정보는 [작동 중지 시간을 없애는 방법](/docs/overview/zero_downtime.html#zero-downtime)을 참조하십시오. 
 {: tsResolve}
 
 
@@ -200,15 +198,14 @@ Lite 계정에서의 업그레이드를 원하지 않지만 일부 유휴 상태
 
 관리자는 {{site.data.keyword.Bluemix_notm}} 콘솔 사용 시에 관리할 모든 조직을 표시할 수 없습니다. 관리자가 속한 조직만 표시하고 관리할 수 있습니다.
 
-관리자로서 콘솔에서 모든 조직을 볼 수 없습니다.
+관리자로서 콘솔에서 모든 조직을 볼 수 없습니다. 
 {: tsSymptoms}
 
-이는 콘솔의 제한사항입니다.
+이는 콘솔의 제한사항입니다. 
 {: tsCauses}
 
-{{site.data.keyword.Bluemix_notm}} 명령행 인터페이스에서 `ibmcloud account orgs` 및 `ibmcloud account org-create`와 같은 명령을 사용하여 모든 조직을 관리할 수 있습니다. 명령의 전체 목록을 보려면 `ibmcloud account help`를 입력하십시오.
+Cloud Foundry 명령행 인터페이스에서 `cf orgs`, `cf create-org` 및 `cf delete-org`와 같은 명령을 사용하여 모든 조직을 관리할 수 있습니다. Cloud Foundry 명령의 전체 목록을 보려면 `cf help`를 입력하십시오.
 {: tsResolve}
-
 
 ## 왜 내 신용카드 정보를 추가할 수 없습니까?
 {: #ts_addcc}
@@ -225,5 +222,6 @@ Lite 계정을 청구 가능 계정으로 업그레이드하기 위해 신용카
 다음 단계를 수행하십시오.
 {: tsResolve}
 
-  1. 신용카드 추가 페이지에서 모든 필수 필드를 채우십시오.
-  2. **IBM 이용 약관을 읽고 동의함**을 선택한 다음 **제출**을 클릭하십시오.
+  1. 신용카드 추가 페이지에서 모든 필수 필드를 채우십시오. 
+  2. **IBM 이용 약관을 읽고 동의함**을 선택한 다음 **제출**을 클릭하십시오. 
+  

@@ -1,12 +1,10 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-02-13"
 
-keywords: troubleshoot account, account problem, account support, account help, org error, resource error, error message
+  years: 2015, 2018
 
-subcollection: account
+lastupdated: "2018-10-24"
 ---
 
 {:tsSymptoms: .tsSymptoms}
@@ -175,7 +173,7 @@ subcollection: account
 {: tsResolve}
 
   * 從主控台功能表列，按一下**管理 > 帳戶**，然後選取**組織**。然後，選取您要在其中建立空間的組織，並且按一下**建立空間**。
-  * 在 {{site.data.keyword.Bluemix_notm}} 指令行介面中，鍵入 `ibmcloud account space-create <space_name> -o<organization_name>`。
+  * 在 Cloud Foundry 指令行介面中，鍵入 `cf create-space <space_name> -o <organization_name>`。
 
 
 ## 為什麼部分應用程式會共用網域名稱？
@@ -187,9 +185,9 @@ subcollection: account
 當您將相同的 URL 路徑指派給空間中的不同應用程式時，可能就會發生此問題。
 {: tsCauses}
 
-例如，您將 myApp1 應用程式推送至 {{site.data.keyword.Bluemix_notm}}，並將網域設為 `mynewapp.us-east.cf.appdomain.cloud`。然後，將另一個 myApp2 應用程式推送至相同的空間，並將其中一個 URL 路徑設為 `mynewapp.us-east.cf.appdomain.cloud`。路徑現在同時對映至這兩個應用程式。
+例如，您將 myApp1 應用程式推送至 {{site.data.keyword.Bluemix_notm}}，並將網域設為 `mynewapp.mybluemix.net`。然後，將另一個 myApp2 應用程式推送至相同的空間，並將其中一個 URL 路徑設為 `mynewapp.mybluemix.net`。路徑現在同時對映至這兩個應用程式。
 
-這是受支援的行為，而且您可以使用此作法，讓應用程式升級達到零中斷時間。如需相關資訊，請參閱[如何確保運作零中斷](/docs/overview?topic=overview-zero-downtime)。
+這是受支援的行為，而且您可以使用此作法，讓應用程式升級達到零中斷時間。如需相關資訊，請參閱[如何確保運作零中斷](/docs/overview/zero_downtime.html#zero-downtime)。
 {: tsResolve}
 
 
@@ -205,9 +203,8 @@ subcollection: account
 這是主控台的限制。
 {: tsCauses}
 
-您可以從 {{site.data.keyword.Bluemix_notm}} 指令行介面使用 `ibmcloud account orgs` 及 `ibmcloud account org-create` 之類的指令來管理所有組織。如需完整的指令清單，請輸入 `ibmcloud account help`。
+您可以從 Cloud Foundry 指令行介面使用 `cf orgs`、`cf create-org` 及 `cf delete-org` 之類的指令來管理所有組織。如需完整的 Cloud Foundry 指令清單，請輸入 `cf help`。
 {: tsResolve}
-
 
 ## 為什麼我無法新增信用卡資訊？
 {: #ts_addcc}
@@ -224,5 +221,6 @@ subcollection: account
 請完成下列步驟：
 {: tsResolve}
 
-  1. 在「新增信用卡」頁面上，完成所有必要欄位。
-  2. 選取**我已閱讀並同意 IBM 條款**，然後按一下**提交**。
+  1. 在「新增信用卡」頁面上，完成所有必要欄位。 
+  2. 選取**我已閱讀並同意 IBM 條款**，然後按一下**提交**。 
+  
