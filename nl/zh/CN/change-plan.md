@@ -1,12 +1,11 @@
 ---
 
+
+
 copyright:
+
   years: 2017, 2019
 lastupdated: "2019-02-13"
-
-keywords: change service, upgrade service, service plan
-
-subcollection: account
 
 ---
 
@@ -23,7 +22,7 @@ subcollection: account
 您可以更改 {{site.data.keyword.Bluemix}} 服务的套餐，前提是特定服务支持套餐更改。例如，您可能希望更改套餐的情况包括要升级或降级套餐。您可以在服务实例仪表板中更改套餐。
 {: shortdesc}
 
-您在查找有关升级帐户类型的详细信息吗？有关更多信息，请参阅[升级帐户](/docs/account?topic=account-upgrading-account)。
+您在查找有关升级帐户类型的详细信息吗？如果要查找有关升级帐户类型的详细信息，请参阅[如何升级或更改帐户类型？](/docs/account/account_faq.html#changeacct)。
 {: tip}
 
 只能更改特定服务的服务套餐。如果服务支持套餐更改，那么服务实例仪表板的导航中会显示**套餐**选项。每个服务在套餐更改后都有一组不同的后续步骤要执行。
@@ -60,14 +59,14 @@ subcollection: account
 
 1. 更改服务实例的套餐。
 
-   - 如果服务支持 RC，请使用 [`ibmcloud resource service-instance-update` 命令](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_resource)来更改套餐。
+   - 如果服务支持 RC，请使用 [`ibmcloud resource service-instance-update` 命令](/docs/cli/reference/ibmcloud/cli_resource_group.html#ibmcloud_commands_resource)来更改套餐。
 
      ```
      ibmcloud resource service-instance-update <service_instance_name> --service-plan-id <plan_id>
      ```
      {: codeblock}
 
-   - 如果服务不支持 RC，因而是基于 Cloud Foundry 的服务，请使用 [`ibmcloud cf update-service` 命令](/docs/cli?topic=cloud-cli-ibmcloud_commands_services#ibmcloud_service_update)来更改套餐。
+   - 如果服务不支持 RC，因而是基于 Cloud Foundry 的服务，请使用 [`ibmcloud cf update-service` 命令](/docs/cli/reference/ibmcloud/cf_index.html#cf)来更改套餐。
 
      ```
      ibmcloud cf update-service <service_instance_name> [-p <plan_name>]

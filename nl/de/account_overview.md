@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019
-lastupdated: "2019-01-21"
+lastupdated: "2019-02-12"
 
 ---
 
@@ -20,7 +20,7 @@ lastupdated: "2019-01-21"
 Das {{site.data.keyword.Bluemix}}-Konto umfasst zahlreiche Komponenten und Systeme, die interagieren. Hier erfahren Sie, wie bestimmte Komponenten miteinander verbunden sind und wie der Zugriff innerhalb Ihres Kontos funktioniert. 
 {:shortdesc}
 
-<a href="https://console.bluemix.net/docs/api/content/account/images/account_diagram.svg">
+<a href="https://cloud.ibm.com/docs/api/content/account/images/account_diagram.svg">
   <img src="images/account_diagram.svg" alt="Kontodiagramm">
 </a>
 

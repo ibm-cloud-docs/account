@@ -1,12 +1,11 @@
 ---
 
+
+
 copyright:
+
   years: 2017, 2019
 lastupdated: "2019-02-13"
-
-keywords: change service, upgrade service, service plan
-
-subcollection: account
 
 ---
 
@@ -17,13 +16,13 @@ subcollection: account
 {:new_window: target="_blank"}
 
 
-# Modifica dei piani di servizi
+# Modifica dei piani di servizio
 {: #changing}
 
-Puoi modificare il piano di un servizio {{site.data.keyword.Bluemix}} se le modifiche del piano sono abilitate per lo specifico servizio. Potresti voler modificare il piano, ad esempio, per eseguire un upgrade del tuo piano o per ridurlo. Puoi modificare il tuo piano dal dashboard dell'istanza del servizio.
+Puoi modificare il piano di un servizio {{site.data.keyword.Bluemix}} se le modifiche di piano sono abilitate per lo specifico servizio. Potresti voler modificare il piano, ad esempio, per eseguire un upgrade del tuo piano o per ridurlo. Puoi modificare il tuo piano dal dashboard dell'istanza del servizio.
 {: shortdesc}
 
-Stai cercando dettagli sull'upgrade del tuo tipo di account? Per ulteriori informazioni, vedi [Aggiornamento del tuo account](/docs/account?topic=account-upgrading-account).
+Stai cercando dettagli sull'upgrade del tuo tipo di account? Vedi [Come posso eseguire l'upgrade o modificare il mio tipo di account?](/docs/account/account_faq.html#changeacct) per ulteriori informazioni,
 {: tip}
 
 Puoi modificare i piani di servizio solo per specifici servizi. Se per il servizio sono abilitate le modifiche del piano, il dashboard dell'istanza del servizio visualizza un'opzione **Piano** nel riquadro di navigazione. Se modifichi
@@ -36,21 +35,21 @@ che tu debba preparare nuovamente la tua applicazione. Nel caso invece in cui tu
 
    Per preparare di nuovo la tua applicazione, vai all'elenco risorse per trovare l'applicazione a cui è associato il servizio. Fai clic sull'icona Menu ![Icona Menu](../icons/icon_hamburger.svg) **> Elenco risorse**. Nel menu delle applicazioni, seleziona **Riavvia applicazione**.
 
-  Per ulteriori informazioni su altre azioni necessarie, consulta la documentazione relativa al servizio. 
+  Per ulteriori informazioni sulle eventuali ulteriori azioni richieste, vedi la documentazione per il servizio.
 
 ## Modifica di un piano tramite la CLI
 {: #changing_command_line}
 
-Come alternativa alla console, puoi modificare il piano del servizio utilizzando la CLI di {{site.data.keyword.Bluemix_notm}}.
+Come alternativa alla console, puoi modificare il piano di un servizio utilizzando l'interfaccia riga di comando (o CLI, command-line interface) {{site.data.keyword.Bluemix_notm}}.
 
-1. Controlla se il servizio è abilitato con il controller delle risorse.
+1. Controlla se il servizio è abilitato con il controller delle risorse (o RC, resource controller).
 
    ```
    ibmcloud catalog service <service_name>
    ```
    {:codeblock}
 
-   Se il servizio è abilitato con il controller delle risorse, riporta `RC Compatible true`. Prendi nota dell'ID del piano a cui desideri passare. 
+   Se è abilitato con il controller delle risorse (o RC, resource controller), il servizio elenca `RC Compatible true`. Annota l'ID del piano a cui desideri passare.
 
    ```
    RC Compatible      true
@@ -61,16 +60,16 @@ Come alternativa alla console, puoi modificare il piano del servizio utilizzando
               standard                  plan         264d0450-996d-4bcd-894d-fc7018dacf1e
     ```
 
-1. Modifica il piano per la tua istanza del servizio. 
+1. Modifica il piano per la tua istanza del servizio.
 
-   - Se il servizio è abilitato per il controller delle risorse, modifica il tuo piano utilizzando il comando [`ibmcloud resource service-instance-update`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_resource).
+   - Se il servizio è abilitato a RC, modifica il tuo piano utilizzando il comando [`ibmcloud resource service-instance-update`.](/docs/cli/reference/ibmcloud/cli_resource_group.html#ibmcloud_commands_resource).
 
      ```
      ibmcloud resource service-instance-update <service_instance_name> --service-plan-id <plan_id>
      ```
      {: codeblock}
 
-   - Se il servizio non è abilitato per il controller delle risorse ed è quindi basato su Cloud Foundry, modifica il tuo piano utilizzando il comando [`ibmcloud cf update-service`](/docs/cli?topic=cloud-cli-ibmcloud_commands_services#ibmcloud_service_update).
+   - Se il servizio non è abilitato a RC ed è pertanto basato su Cloud Foundry, modifica il tuo piano utilizzando il comando [`ibmcloud cf update-service`](/docs/cli/reference/ibmcloud/cf_index.html#cf).
 
      ```
      ibmcloud cf update-service <service_instance_name> [-p <plan_name>]

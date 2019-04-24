@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019
-lastupdated: "2019-01-21"
+lastupdated: "2019-02-12"
 
 ---
 
@@ -20,7 +20,7 @@ lastupdated: "2019-01-21"
 {{site.data.keyword.Bluemix}} 계정에는 상호작용하는 여러 컴포넌트와 시스템이 포함되어 있습니다. 특정 컴포넌트가 연결된 방법과 계정에서 액세스가 작동하는 방법을 알아보십시오. 
 {:shortdesc}
 
-<a href="https://console.bluemix.net/docs/api/content/account/images/account_diagram.svg">
+<a href="https://cloud.ibm.com/docs/api/content/account/images/account_diagram.svg">
   <img src="images/account_diagram.svg" alt="계정 다이어그램">
 </a>
 

@@ -1,12 +1,11 @@
 ---
 
+
+
 copyright:
+
   years: 2017, 2019
 lastupdated: "2019-02-13"
-
-keywords: change service, upgrade service, service plan
-
-subcollection: account
 
 ---
 
@@ -23,7 +22,7 @@ subcollection: account
 Sie können den Plan eines {{site.data.keyword.Bluemix}}-Service ändern, wenn für diesen einen Service Planänderungen aktiviert sind. Der Plan kann beispielsweise geändert werden, um ein Upgrade durchzuführen oder um zu einem Plan mit weniger Features zu wechseln. Der Plan kann über das Dashboard der Serviceinstanz geändert werden.
 {: shortdesc}
 
-Sind Sie auf der Suche nach Details zum Upgrade Ihres Kontotyps? Weitere Informationen finden Sie in [Upgrade für das Konto durchführen](/docs/account?topic=account-upgrading-account).
+Sind Sie auf der Suche nach Details zum Upgrade Ihres Kontotyps? Der Abschnitt [Wie kann ich ein Upgrade meines Kontotyps durchführen oder den Kontotyp ändern?](/docs/account/account_faq.html#changeacct) enthält weitere Informationen hierzu.
 {: tip}
 
 Das Ändern der Servicepläne ist nur für bestimmte Services möglich. Wenn Planänderungen für den Service aktiviert sind, wird im Serviceinstanzdashboard die Option **Plan** im Navigationsbereich angezeigt. Für jeden Service müssen unterschiedliche weitere Schritte ausgeführt werden, wenn Sie Ihren Plan ändern.
@@ -60,14 +59,14 @@ Als Alternative zur Konsole können Sie den Plan eines Service über die {{site.
 
 1. Ändern Sie den Plan für Ihre Serviceinstanz.
 
-   - Wenn der Service RC-fähig ist, können Sie Ihren Plan mit dem [Befehl `ibmcloud resource service-instance-update` ändern](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_resource).
+   - Wenn der Service RC-aktiviert ist, ändern Sie Ihren Plan mit dem Befehl [`ibmcloud resource service-instance-update`](/docs/cli/reference/ibmcloud/cli_resource_group.html#ibmcloud_commands_resource).
 
      ```
      ibmcloud resource service-instance-update <service_instance_name> --service-plan-id <plan_id>
      ```
      {: codeblock}
 
-   - Wenn der Service nicht RC-fähig ist und daher auf Cloud Foundry basiert, können Sie Ihren Plan mithilfe des [Befehls `ibmcloud cf update-service`](/docs/cli?topic=cloud-cli-ibmcloud_commands_services#ibmcloud_service_update) ändern.
+   - Wenn der Service nicht RC-aktiviert ist und daher auf Cloud Foundry basiert, ändern Sie Ihren Plan mit dem Befehl [`ibmcloud cf update-service`](/docs/cli/reference/ibmcloud/cf_index.html#cf).
 
      ```
      ibmcloud cf update-service <service_instance_name> [-p <plan_name>]

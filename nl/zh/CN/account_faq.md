@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2015, 2018
+  years: 2015, 2019
 
-lastupdated: "2018-12-04"
+lastupdated: "2019-02-06"
 
 ---
 
@@ -35,7 +35,7 @@ lastupdated: "2018-12-04"
 {: #cloud-foundry}
 {: faq}
 
-Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可通过 {{site.data.keyword.Bluemix_notm}} Public 来访问，用于在云上构建和部署应用程序。Cloud Foundry 组织和空间用于组织特定区域内提供的资源和应用程序。 
+Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可通过 {{site.data.keyword.Bluemix_notm}} Public 来访问，用于在云上构建和部署应用程序。Cloud Foundry 组织和空间用于组织特定区域内提供的资源和应用程序。
 
 有关管理组织和空间的更多信息，请参阅[添加组织和空间](/docs/account/orgs_spaces.html#orgsspacesusers)。此外，如果您有兴趣了解如何在 Cloud Foundry 空间中提供对资源的访问权，请参阅 [Cloud Foundry 访问权](/docs/iam/cfaccess.html#cfaccess)。
 
@@ -43,7 +43,7 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 {: #move-org-diff-account}
 {: faq}
 
-目前，您还不能将组织迁移到其他帐户中。 
+目前，您还不能将组织迁移到其他帐户中。
 
 ## 我可以使用哪些 Cloud Foundry 区域？
 {: #whichregions}
@@ -69,14 +69,15 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 
 如果您拥有计费帐户，那么可以在您的帐户中创建任意数量的资源组、组织或空间。但是，如果您拥有轻量帐户，那么只能创建一个组织和一个资源组。
 
-## 如何升级或更改帐户类型？
+## 如何升级或转换帐户类型？
 {: #changeacct}
 {: faq}
 
 * 要将 30 天试用帐户转换为轻量帐户，请联系 [{{site.data.keyword.Bluemix_notm}} 销售人员 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}。确认资格后，销售团队会共享唯一链接，您可使用该链接来尝试转换帐户。但不能保证转换一定会成功，因为轻量帐户不完全兼容 30 天试用帐户。  
-* 要从轻量帐户升级到现收现付帐户，请转至**管理 > 帐户**，然后选择**帐户设置**。
-* 要从轻量帐户升级到预订帐户，请转至**管理 > 帐户**，然后选择**帐户设置**。
-* 要将现收现付帐户转换为预订帐户，请联系 [{{site.data.keyword.Bluemix_notm}} 销售人员 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}。
+* 要从轻量帐户升级到现收现付帐户帐户，请转至[帐户设置](https://{DomainName}/account/settings)。
+  * 要升级为现收现付帐户，请单击**添加信用卡**。
+  * 要升级为预订帐户，请单击**升级**。
+* 要在现收现付帐户类型和预订帐户类型之间进行转换，请联系 [{{site.data.keyword.Bluemix_notm}} 销售人员 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}。
 
 ## 如果升级轻量帐户，可以继续使用现有实例吗？
 {: #nochange}
@@ -94,30 +95,31 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 {: #updatepayment}
 {: faq}
 
-您可以轻松更新与计费帐户关联的付款方式。在控制台中，转至**管理 > 计费和使用情况 > 付款 > 付款方式**。 
+您可以通过转至控制台中的[付款](https://{DomainName}/billing/payments)，更新与帐户关联的付款方式。在“添加付款方式”下，输入新卡的帐单信息，然后单击**添加信用卡**。
 
-## 如何重置密码？ 
+要切换到其他付款方式，请选择**其他付款方式**，然后单击**提交变更请求**。这将为您创建一个用于更改付款方式的支持案例。
+
+
+## 如何重置密码？
 {: #reset-password}
 {: faq}
 
-要重置帐户密码，请转至“头像”图标 ![“头像”图标](../icons/i-avatar-icon.svg) > **个人档案和设置**，然后选择**登录设置**。接着，单击“帐户用户信息”磁贴中的**更改或重置**。 
+要重置帐户密码，请转至“头像”图标 ![“头像”图标](../icons/i-avatar-icon.svg) > **个人档案和设置**。接着，单击“帐户用户信息”磁贴中的**更改或重置**。
 
 要重置 VPN 密码，请完成以下步骤：
 
-  1. 转至**管理 > 访问权 (IAM)**，然后选择**用户**。 
-  2. 选择用户。 
-  3. 在“VPN 子网”部分中，单击“编辑”图标 ![“编辑”图标](../icons/icon_write.svg) 以输入新的 VPN 密码。 
-  5. 单击**应用**。 
+  1. 转至**管理 > 访问权 (IAM)**，然后选择**用户**。
+  2. 选择用户。
+  3. 在“VPN 子网”部分中，单击“编辑”图标 ![“编辑”图标](../icons/icon_write.svg) 以输入新的 VPN 密码。
+  5. 单击**应用**。
 
 ## 如何取消帐户？
 {: #cancelaccount}
 {: faq}
 
-如果您有符合要求的帐户类型，请转至**管理** > **帐户** > **帐户设置**，然后单击**停用帐户**。 
+对于现收现付帐户或预订帐户，取消帐户的最快方法是通过[实时交谈](https://{DomainName}/unifiedsupport/supportcenter)或致电 1-866-325-0045 并选择第三个选项来联系我们。也可以打开一个支持案例。
 
-![帐户设置截屏。](images/cancel-faq3.svg "帐户设置截屏")
-
-如果转至**帐户设置**页面，但**停用帐户**按钮并未显示，您可以通过拨打 1-866-325-0045 并选择第三个选项，或者打开一个支持案例来与我们取得联系。
+要取消轻量帐户，请转至[帐户设置](https://cloud.ibm.com/account/settings)，然后单击**取消激活帐户**。
 
 ## 如何删除帐户？
 {: #deleteaccount}
@@ -129,9 +131,13 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 {: #account-deactivated}
 {: faq}
 
-您的帐户已停用的原因很可能是授权用户取消了帐户或帐户已暂挂。  
+帐户可能停用的原因如下：
 
-对于违反 {{site.data.keyword.Bluemix_notm}} 服务的可接受使用行为的帐户，IBM 将酌情直接禁用这些帐户而不另行通知。如果用户在收到攻击行为的通知后更正了其使用行为，IBM 将酌情复原一些服务。 
+- 对于试用帐户，可能是因为试用期结束。要重新激活帐户，请登录到帐户，并将其升级为现收现付帐户。
+- 授权用户取消了该帐户。
+- 帐户已暂挂。对于违反 {{site.data.keyword.Bluemix_notm}} 服务的可接受使用行为的帐户，IBM 将酌情直接禁用这些帐户而不另行通知。如果用户在收到攻击行为的通知后更正了其使用行为，IBM 将酌情复原一些服务。
+
+如果您认为自己的帐户被错误停用，请致电 1-866-325-0045 并选择第三个选项来联系支持人员。
 
 ## 如何获得支持？
 {: #contactsupport}
@@ -157,7 +163,7 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 
 链接帐户之后，向帐户添加 {{site.data.keyword.Bluemix_notm}} 平台时，支持级别保持不变。
 
-## 还有其他方法可获取链接帐户的帮助吗？ 
+## 还有其他方法可获取链接帐户的帮助吗？
 {: #al_morehelp}
 {: faq}
 
@@ -173,15 +179,15 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 
 如果您没有匹配的 {{site.data.keyword.Bluemix_notm}} 平台帐户，也没有附带的 IBM 标识帐户，那么可以创建新的 SoftLayer 帐户来链接这些帐户。
 
-## 链接帐户有奖励吗？ 
+## 链接帐户有奖励吗？
 {: #al_incent}
 {: faq}
 
-如果您链接帐户，那么可以使用 200 美元促销信用值来试用 {{site.data.keyword.Bluemix_notm}} 服务。 
+如果您链接帐户，那么可以使用 200 美元促销信用值来试用 {{site.data.keyword.Bluemix_notm}} 服务。
 
-要了解有关 200 美元促销信用值的更多信息，请参阅[现收现付帐户](/docs/account/index.html#paygo)。 
+要了解有关 200 美元促销信用值的更多信息，请参阅[现收现付帐户](/docs/account/index.html#paygo)。
 
-## 向 SoftLayer 帐户添加 {{site.data.keyword.Bluemix_notm}} 平台服务意味着什么？ 
+## 向 SoftLayer 帐户添加 {{site.data.keyword.Bluemix_notm}} 平台服务意味着什么？
 {: #al_owaffslacct}
 {: faq}
 
@@ -189,7 +195,7 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 
 有关成为帐户主用户的更多信息，请参阅[使用用户](/docs/iam/iamusermanage.html#iamusermanage)。
 
-## 链接帐户对 SoftLayer 主帐户标识有怎样的影响？ 
+## 链接帐户对 SoftLayer 主帐户标识有怎样的影响？
 {: #al_howaffslmastacct}
 {: faq}
 
@@ -203,7 +209,7 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 
 ![帐户切换器截屏。](images/account-faq.svg "帐户切换器截屏")
 
-## 我可以切换帐户所有者吗？ 
+## 我可以切换帐户所有者吗？
 {: #switch-account-owners}
 {: faq}
 
@@ -213,9 +219,9 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 {: #batch-registration}
 {:faq}
 
-在对 {{site.data.keyword.Bluemix_notm}} 注册用户时，必须单独注册每个用户。{{site.data.keyword.Bluemix_notm}} 不支持用户批量注册。 
+在对 {{site.data.keyword.Bluemix_notm}} 注册用户时，必须单独注册每个用户。{{site.data.keyword.Bluemix_notm}} 不支持用户批量注册。
 
-转至 [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com)，然后单击**创建 {{site.data.keyword.Bluemix_notm}} 帐户**。接着，为每个单独的用户填写帐户注册表单。	
+转至 [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com)，然后单击**创建 {{site.data.keyword.Bluemix_notm}} 帐户**。接着，为每个单独的用户填写帐户注册表单。
 
 ## 什么是标记？
 {: #know-about-tags}
@@ -223,11 +229,11 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 
 可以使用标记来组织整个帐户中的资源，然后通过在资源列表中过滤标记来查看这些资源。有关更多信息，请参阅[标记资源](/docs/resources/tagging_resources.html#tagging)。
 
-## 谁可以查看帐户中的标记？ 
+## 谁可以查看帐户中的标记？
 {: #tags-visibility-account}
 {: faq}
 
-标记在整个帐户中可见。如果您有权查看资源，那么就可以查看所有附加的标记。有关更多信息，请参阅[授予用户标记资源的访问权](/docs/resources/grant-tag-access.html#access)。 
+标记在整个帐户中可见。如果您有权查看资源，那么就可以查看所有附加的标记。有关更多信息，请参阅[授予用户标记资源的访问权](/docs/resources/grant-tag-access.html#access)。
 
 ## 添加或除去标记需要哪些许可权？
 {: #permissions-add-remove-tags}
