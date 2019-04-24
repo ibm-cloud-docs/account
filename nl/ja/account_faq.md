@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-26"
+lastupdated: "2019-03-04"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -30,12 +30,14 @@ subcollection: account
 {: #account-error}
 {: faq}
 
-アカウントを作成しようとしてエラーが発生した場合は、サポート Case を作成できます。
+{{site.data.keyword.Bluemix_notm}} アカウントにログインできる場合は、[サポート](https://test.cloud.ibm.com/unifiedsupport/supportcenter)にアクセスして、以下のいずれかのオプションを選択してください。
 
-1. {{site.data.keyword.Bluemix}} コンソールのメニュー・バーで**「サポート」**をクリックします。
-2. 「_お困りですか?_」セクションで、**「Case の作成 (Create a case)」**をクリックします。
-3. Case に関連する質問に答えます。
-4. Case がオープンされた後、E メール通知が送信されます。 その後のコミュニケーションについての指示に従ってください。
+* 拡張サポートまたはプレミアム・サポートのお客様の場合は、**「ライブ・チャット」** をクリックして、{{site.data.keyword.Bluemix_notm}} サポート担当者にご相談ください。
+* 「_お困りですか?_」セクションで、**「Case の作成 (Create a case)」**をクリックしして、サポート Case を作成します。
+
+   Case のオープン後に、E メール通知が送信されます。 その後のコミュニケーションについての指示に従ってください。
+
+{{site.data.keyword.Bluemix}} アカウントにログインできない場合は、[アカウント要求を作成してください](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")。
 
 
 ## Cloud Foundry とは?
@@ -51,7 +53,7 @@ Cloud Foundry は、クラウド上でアプリケーションを作成および
 {: #move-org-diff-account}
 {: faq}
 
-現在のところ、組織を別のアカウントに移動することはできません。ただし、この機能を再現するために、別のアカウントで同じ資格情報を使用して組織を再作成することは可能です。詳しくは、『[組織およびスペースの追加](https://cloud.ibm.com/docs/account?topic=account-orgsspacesusers#createorg)』を参照してください。
+現在のところ、組織を別のアカウントに移動することはできません。 ただし、この機能を再現するために、別のアカウントで同じ資格情報を使用して組織を再作成することは可能です。 詳しくは、『[組織およびスペースの追加](https://cloud.ibm.com/docs/account?topic=account-orgsspacesusers#createorg)』を参照してください。
 
 
 ## どの Cloud Foundry 地域を使用できますか?
@@ -86,12 +88,10 @@ Cloud Foundry は、クラウド上でアプリケーションを作成および
 {: #changeacct}
 {: faq}
 
-* 30 日間のトライアル・アカウントをライト・アカウントに移行するには、[{{site.data.keyword.Bluemix_notm}} 営業担当員 ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} にお問い合わせください。 加入基準を確認した後、営業担当チームは、アカウントの移行を試行するために使用できる固有のリンクをお客様と共有します。 ライト・アカウントは、30 日間のトライアル・アカウントと完全に互換ではないため、移行が成功する保証はありません。  
 * ライト・アカウントから従量課金 (PAYG) アカウントまたはサブスクリプション・アカウントにアップグレードするには、[「アカウント設定」](https://{DomainName}/account/settings)に進みます。
   * 従量課金 (PAYG) アカウントにアップグレードするには、**「クレジット・カードの追加」**をクリックします。
   * サブスクリプション・アカウントにアップグレードするには、**「アップグレード」**をクリックします。
 * 従量課金 (PAYG) アカウント・タイプとサブスクリプション・アカウント・タイプの間で変換を行うには、[{{site.data.keyword.Bluemix_notm}} 営業担当員 ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} にお問い合わせください。
-
 
 ## ライト・アカウントをアップグレードした場合、既存のインスタンスを引き続き使用できますか?
 {: #nochange}
@@ -128,14 +128,16 @@ VPN パスワードをリセットするには、以下のステップを実行�
   3. 「VPN サブネット」セクションで、編集アイコン ![編集アイコン](../icons/icon_write.svg) をクリックして、新しい VPN パスワードを入力します。
   5. **「適用」**をクリックします。
 
-
 ## アカウントを取り消すには、どのようにすればよいですか?
 {: #cancelaccount}
 {: faq}
 
-従量課金 (PAYG) アカウントまたはサブスクリプション・アカウントの場合、アカウントを取り消す最も簡単な方法は、[ライブ・チャット](https://{DomainName}/unifiedsupport/supportcenter)で連絡するか、1-866-325-0045 に電話をかけて 3 番目のオプションを選択することです。 あるいは、サポート Case を開くこともできます。
+取り消しをご希望でしょうか。取り消しを行う前に、アカウントに関してお手伝いさせていただくことがあれば、サポートにお問い合わせください。
 
-ライト・アカウントを取り消すには、[「アカウント設定」](https://cloud.ibm.com/account/settings)に進み、**「アカウントの非アクティブ化」**をクリックします。
+取り消しを行う場合、アカウントを取り消す方法は、アカウントのタイプによって異なります。 アカウントのタイプをチェックするには、[「アカウント設定」](https://cloud.ibm.com/account/settings) に移動し、「アカウント・タイプ」の下で確認してください。
+
+* 従量課金 (PAYG) アカウントまたはサブスクリプション・アカウントの場合、アカウントを取り消す最も簡単な方法は、[ライブ・チャット](https://{DomainName}/unifiedsupport/supportcenter)で連絡するか、1-866-325-0045 に電話をかけて 3 番目のオプションを選択することです。 あるいは、サポート Case を開くこともできます。
+* ライト・アカウントを取り消すには、[「アカウント設定」](https://cloud.ibm.com/account/settings)に進み、**「アカウントの非アクティブ化」**をクリックします。
 
 ## アカウントを削除するには、どのようにすればよいですか?
 {: #deleteaccount}
@@ -174,7 +176,7 @@ VPN パスワードをリセットするには、以下のステップを実行�
 {: #al_login}
 {: faq}
 
-アカウントをリンクした後、IBM ID を使用して、{{site.data.keyword.Bluemix}} コンソールにログインします。
+アカウントをリンクした後、IBMid を使用して、{{site.data.keyword.Bluemix}} コンソールにログインします。
 
 
 ## アカウントをリンクすると、サポートについてどのような影響がありますか?
@@ -197,9 +199,9 @@ VPN パスワードをリセットするには、以下のステップを実行�
 {: #al_multacct}
 {: faq}
 
-複数の SoftLayer アカウントを持っている場合、一致する {{site.data.keyword.Bluemix_notm}} プラットフォーム・アカウントを持つアカウントと、付随する IBM ID をリンクする必要があります。
+複数の SoftLayer アカウントを持っている場合、一致する {{site.data.keyword.Bluemix_notm}} プラットフォーム・アカウントを持つアカウントと、付随する IBMid をリンクする必要があります。
 
-一致する {{site.data.keyword.Bluemix_notm}} プラットフォーム・アカウントと、付随する IBM ID アカウントがない場合は、新しい SoftLayer アカウントを作成してアカウントをリンクすることができます。
+一致する {{site.data.keyword.Bluemix_notm}} プラットフォーム・アカウントと、付随する IBMid アカウントがない場合は、新しい SoftLayer アカウントを作成してアカウントをリンクすることができます。
 
 ## アカウントをリンクすると何かインセンティブはありますか?
 {: #al_incent}
@@ -221,7 +223,7 @@ VPN パスワードをリセットするには、以下のステップを実行�
 {: #al_howaffslmastacct}
 {: faq}
 
-{{site.data.keyword.Bluemix_notm}} コンソールには IBM ID を使用してアクセスできるため、カスタマー・ポータルへのサインインに Softlayer アカウントの ID を引き続き使用できます。
+{{site.data.keyword.Bluemix_notm}} コンソールには IBMid を使用してアクセスできるため、カスタマー・ポータルへのサインインに Softlayer アカウントの ID を引き続き使用できます。
 
 ## 複数のアカウントを切り替えるには、どのようにすればよいですか?
 {: #switch-between-accounts}

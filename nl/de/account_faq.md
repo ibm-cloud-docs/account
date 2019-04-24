@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-26"
+lastupdated: "2019-03-04"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -30,12 +30,14 @@ Rufen Sie [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} !
 {: #account-error}
 {: faq}
 
-Wenn beim Erstellen Ihres Kontos ein Fehler auftritt, können Sie einen Supportfall erstellen.
+Wenn Sie sich bei einem {{site.data.keyword.Bluemix_notm}}-Konto anmelden können, rufen Sie das [Support Center](https://test.cloud.ibm.com/unifiedsupport/supportcenter) auf und wählen Sie eine der folgenden Optionen aus. 
 
-1. Klicken Sie in der Menüleiste der {{site.data.keyword.Bluemix}}-Konsole auf **Support**.
-2. Klicken Sie im Abschnitt _Sie benötigen weitere Hilfe?_ auf **Fall erstellen**.
-3. Beantworten Sie die Fragen zu dem Fall.
-4. Nachdem der Fall geöffnet worden ist, wird eine E-Mail-Benachrichtigung gesendet. Folgen Sie zur weiteren Kommunikation den entsprechenden Anweisungen.
+* Wenn Sie über Advanced Support oder Premium Support verfügen, klicken Sie auf **Live chat**, um mit einem {{site.data.keyword.Bluemix_notm}}-Ansprechpartner zu sprechen.
+* Erstellen Sie einen Supportfall, indem Sie auf die Option **Fall erstellen** im Abschnitt _Sie benötigen weitere Hilfe?_ klicken.
+
+   Nachdem Sie den Fall erstellt haben, wird Ihnen eine E-Mail-Benachrichtigung gesendet. Folgen Sie zur weiteren Kommunikation den entsprechenden Anweisungen.
+
+Wenn Sie sich nicht bei einem {{site.data.keyword.Bluemix}}-Konto anmelden können, [Erstellen Sie eine Kontoanforderung](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link").
 
 
 ## Was ist Cloud Foundry?
@@ -86,12 +88,10 @@ Wenn Sie über ein gebührenpflichtiges Konto verfügen, gibt es keinen Grenzwer
 {: #changeacct}
 {: faq}
 
-* Zum Konvertieren Ihres 30-Tage-Testkontos in ein Lite-Konto wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}}-Vertrieb ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}. Nach der Prüfung der Teilnahmevoraussetzungen sendet Ihnen das Vertriebsteam einen Link zu, über den Sie versuchen können, Ihr Konto zu konvertieren. Ein Erfolg der Konvertierung kann nicht garantiert werden, da Lite-Konten nicht vollständig mit 30-Tage-Testkonten kompatibel sind.  
 * Für ein Upgrade von einem Lite-Konto auf ein nutzungsabhängiges oder Abonnementkonto rufen Sie [Kontoeinstellungen](https://{DomainName}/account/settings) auf.
   * Für ein Upgrade auf ein nutzungsabhängiges Konto klicken Sie auf **Kreditkarte hinzufügen**.
   * Für ein Upgrade auf ein Abonnementkonto klicken Sie auf **Upgrade**.
 * Zum Konvertieren zwischen einem nutzungsabhängigen und einem Abonnementkonto wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}} Vertrieb ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
-
 
 ## Kann ich meine vorhandenen Instanzen weiterhin verwenden, wenn ich ein Upgrade für mein Lite-Konto durchführe?
 {: #nochange}
@@ -128,14 +128,16 @@ Führen Sie die folgenden Schritte aus, um Ihr VPN-Kennwort zurückzusetzen:
   3. Klicken Sie im Abschnitt zu den VPN-Teilnetzen auf das Bearbeitungssymbol ![Bearbeitungssymbol](../icons/icon_write.svg), um ein neues VPN-Kennwort einzugeben.
   5. Klicken Sie auf **Anwenden**.
 
-
 ## Wie kann ich mein Konto kündigen?
 {: #cancelaccount}
 {: faq}
 
-Für nutzungsabhängige Konten oder Abonnementkonten besteht die schnellste Möglichkeit, das Konto zu stornieren, darin, über den [Live-Chat](https://{DomainName}/unifiedsupport/supportcenter) Kontakt aufzunehmen oder die Telefonnummer 1-866-325-0045 anzurufen und Option 3 auszuwählen. Alternativ dazu können Sie auch einen Supportfall öffnen.
+Schade, dass Sie schon gehen! Wenn wir Ihnen mit Ihrem Konto behilflich sein können, wenden Sie sich an unseren Support.
 
-Zum Stornieren eines Lite-Kontos rufen Sie [Kontoeinstellungen](https://cloud.ibm.com/account/settings) auf und klicken Sie auf **Konto inaktivieren**.
+Wenn Sie Ihr Konto beenden möchten, ist das weitere Vorgehen von Ihrem Kontotyp abhängig. Sie können Ihren Kontotyp überprüfen, indem Sie die [Kontoeinstellungen](https://cloud.ibm.com/account/settings) aufrufen und unter 'Kontotyp' nachsehen.
+
+* Für nutzungsabhängige Konten oder Abonnementkonten besteht die schnellste Möglichkeit, das Konto zu stornieren, darin, über den [Live-Chat](https://{DomainName}/unifiedsupport/supportcenter) Kontakt aufzunehmen oder die Telefonnummer 1-866-325-0045 anzurufen und Option 3 auszuwählen. Alternativ dazu können Sie auch einen Supportfall öffnen.
+* Zum Stornieren eines Lite-Kontos rufen Sie [Kontoeinstellungen](https://cloud.ibm.com/account/settings) auf und klicken Sie auf **Konto inaktivieren**.
 
 ## Wie kann ich mein Konto löschen?
 {: #deleteaccount}

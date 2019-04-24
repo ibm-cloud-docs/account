@@ -71,7 +71,7 @@ TOTP MFA 可为帐户提供额外一层的安全保护，因为它会要求用�
 
 ### 设置 Symantec 认证
 
-如果帐户管理员选择订购 Symantec 身份保护，那么您必须与管理员协作，通过提供您的凭证标识来帮助他们完成订购：
+如果帐户管理员选择订购 Symantec Identity Protection，那么您必须与管理员协作，通过提供您的凭证标识来帮助他们完成订购：
 
 1. 转至 [Symantec VIP](https://vip.symantec.com/)。
 2. 单击**下载**。

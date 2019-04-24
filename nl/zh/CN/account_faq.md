@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-26"
+lastupdated: "2019-03-04"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -30,12 +30,14 @@ subcollection: account
 {: #account-error}
 {: faq}
 
-如果在尝试创建帐户时遇到错误，可以创建支持案例。
+如果您能够登录到 {{site.data.keyword.Bluemix_notm}} 帐户，请转至[支持](https://test.cloud.ibm.com/unifiedsupport/supportcenter)页面，然后选择以下某个选项。
 
-1. 在 {{site.data.keyword.Bluemix}} 控制台菜单栏中，单击**支持**。
-2. 然后，在_需要更多帮助_部分中，单击**创建案例**。
-3. 回答与案例相关的问题。
-4. 打开案例后，系统会发送电子邮件通知。请按照指示信息作进一步的沟通。
+* 如果您拥有高级支持或高端支持，请单击**实时交谈**，与 {{site.data.keyword.Bluemix_notm}} 支持代表进行交谈。
+* 通过在_需要更多帮助_部分中单击**创建案例**来创建支持案例。
+
+   提交案例后，您会收到一封电子邮件。请按照指示信息作进一步的沟通。
+
+如果无法登录到 {{site.data.keyword.Bluemix}} 帐户，请[创建帐户请求](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")。
 
 
 ## 什么是 Cloud Foundry？
@@ -86,12 +88,10 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 {: #changeacct}
 {: faq}
 
-* 要将 30 天试用帐户转换为轻量帐户，请联系 [{{site.data.keyword.Bluemix_notm}} 销售人员 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}。确认资格后，销售团队会共享唯一链接，您可使用该链接来尝试转换帐户。但不能保证转换一定会成功，因为轻量帐户不完全兼容 30 天试用帐户。  
 * 要从轻量帐户升级到现收现付帐户帐户，请转至[帐户设置](https://{DomainName}/account/settings)。
   * 要升级为现收现付帐户，请单击**添加信用卡**。
   * 要升级为预订帐户，请单击**升级**。
 * 要在现收现付帐户类型和预订帐户类型之间进行转换，请联系 [{{site.data.keyword.Bluemix_notm}} 销售人员 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}。
-
 
 ## 如果升级轻量帐户，可以继续使用现有实例吗？
 {: #nochange}
@@ -128,14 +128,16 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
   3. 在“VPN 子网”部分中，单击“编辑”图标 ![“编辑”图标](../icons/icon_write.svg) 以输入新的 VPN 密码。
   5. 单击**应用**。
 
-
 ## 如何取消帐户？
 {: #cancelaccount}
 {: faq}
 
-对于现收现付帐户或预订帐户，取消帐户的最快方法是通过[实时交谈](https://{DomainName}/unifiedsupport/supportcenter)或致电 1-866-325-0045 并选择第三个选项来联系我们。也可以打开一个支持案例。
+您要取消帐户，我们非常遗憾！在此之前，如果有任何方法我们可以帮助您解决您的帐户问题，请与我们的支持人员联系。
 
-要取消轻量帐户，请转至[帐户设置](https://cloud.ibm.com/account/settings)，然后单击**取消激活帐户**。
+如果您决定取消帐户，请查看您的帐户类型，它决定了您可以如何取消帐户。您可以转至[帐户设置](https://cloud.ibm.com/account/settings)，然后在“帐户类型”下查看您的帐户类型。
+
+* 对于现收现付帐户或预订帐户，取消帐户的最快方法是通过[实时交谈](https://{DomainName}/unifiedsupport/supportcenter)或致电 1-866-325-0045 并选择第三个选项来联系我们。也可以打开一个支持案例。
+* 要取消轻量帐户，请转至[帐户设置](https://cloud.ibm.com/account/settings)，然后单击**取消激活帐户**。
 
 ## 如何删除帐户？
 {: #deleteaccount}

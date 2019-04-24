@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-26"
+lastupdated: "2019-03-04"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -30,12 +30,14 @@ Accédez à [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window}
 {: #account-error}
 {: faq}
 
-Vous pouvez créer un cas de support si une erreur est générée lorsque vous tentez de créer votre compte.
+Si vous pouvez vous connecter à un compte {{site.data.keyword.Bluemix_notm}}, accédez au [support](https://test.cloud.ibm.com/unifiedsupport/supportcenter) et choisissez une des options suivantes.
 
-1. Cliquez sur **Support** dans la barre de menus de la console {{site.data.keyword.Bluemix}}.
-2. Cliquez sur **Créer un cas** dans la section _Besoin d'aide ?_
-3. Répondez aux questions relatives au cas.
-4. Une notification par courrier électronique est envoyée une fois le cas ouvert. Suivez les instructions pour toute communication supplémentaire.
+* Si vous disposez du support avancé ou premium, cliquez sur **Dialogue en ligne** pour parler à un responsable de l'assistance technique {{site.data.keyword.Bluemix_notm}}.
+* Créez un cas de support en cliquant sur **Créer un cas** dans la section _Besoin d'aide ?_
+
+   Un message électronique vous sera envoyé après l'ouverture du cas. Suivez les instructions pour toute communication supplémentaire.
+
+Si vous ne pouvez pas vous connecter à un compte {{site.data.keyword.Bluemix}}, [créez une demande de compte](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe").
 
 
 ## Qu'est-ce que Cloud Foundry ?
@@ -86,12 +88,10 @@ Si vous avez un compte facturable, le nombre de groupes de ressources, d'organis
 {: #changeacct}
 {: faq}
 
-* Pour convertir votre essai de 30 jours en compte Lite, prenez contact avec le [service commercial {{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}. Après avoir confirmé l'éligibilité, l'équipe commerciale partage un lien unique que vous pouvez utiliser pour essayer de convertir votre compte. La conversion n'est pas garantie car les comptes Lite ne sont pas totalement compatibles avec les essais de 30 jours.  
 * Pour effectuer une mise à niveau d'un compte Lite vers un compte Paiement à la carte ou un compte Abonnement, sélectionnez [Paramètres de compte](https://{DomainName}/account/settings).
   * Pour effectuer une mise à niveau vers une compte Paiement à la carte, cliquez sur **Ajouter une carte de crédit**.
   * Pour effectuer une mise à niveau vers un compte Abonnement, cliquez sur **Mettre à niveau**.
 * Pour effectuer une conversion entre des types de compte Paiement à la carte et Abonnement, prenez contact avec le [service commercial {{site.data.keyword.Bluemix_notm}}![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
-
 
 ## Si je mets à niveau mon compte Lite, puis-je continuer d'utiliser mes instances existantes ?
 {: #nochange}
@@ -128,14 +128,16 @@ Pour réinitialiser votre mot de passe VPN, procédez comme suit :
   3. Dans la section Sous-réseaux VPN, cliquez sur l'icône Editer ![Icône Editer](../icons/icon_write.svg) pour entrer un nouveau mot de passe VPN.
   5. Cliquez sur **Appliquer**.
 
-
 ## Comment résilier mon compte ?
 {: #cancelaccount}
 {: faq}
 
-Pour les comptes Paiement à la carte ou Abonnement, la manière la plus rapide d'annuler votre compte consiste à nous contacter via la [discussion en ligne](https://{DomainName}/unifiedsupport/supportcenter) ou en nous appelant au numéro 1-866-325-0045 et en sélectionnant la troisième option. Vous pouvez également ouvrir un cas de support.
+Nous nous désolons de votre départ. Si nous pouvons vous être utile, n'hésitez pas à contacter le support.
 
-Pour annuler un compte Lite, accédez à [Paramètres de compte](https://cloud.ibm.com/account/settings) et cliquez sur **Désactiver le compte**.
+Si vous maintenez votre décision malgré tout, le mode de résiliation de votre compte dépend du type de ce dernier. Pour connaître votre type de compte, accédez à la section [Paramètres de compte](https://cloud.ibm.com/account/settings) et vérifiez les données indiquées dans Type de compte.
+
+* Pour les comptes Paiement à la carte ou Abonnement, la manière la plus rapide d'annuler votre compte consiste à nous contacter via la [discussion en ligne](https://{DomainName}/unifiedsupport/supportcenter) ou en nous appelant au numéro 1-866-325-0045 et en sélectionnant la troisième option. Vous pouvez également ouvrir un cas de support.
+* Pour annuler un compte Lite, accédez à [Paramètres de compte](https://cloud.ibm.com/account/settings) et cliquez sur **Désactiver le compte**.
 
 ## Comment supprimer mon compte ?
 {: #deleteaccount}

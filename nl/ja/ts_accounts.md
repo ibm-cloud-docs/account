@@ -114,7 +114,7 @@ subcollection: account
 アカウントを再アクティブ化するには、[サポート・センター](https://cloud.ibm.com/unifiedsupport/supportcenter){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") から Case をオープンします。 Case には以下の情報を含めてください。
 {: tsResolve}
 
-  * {{site.data.keyword.Bluemix_notm}} へのログインに使用している IBM ID。
+  * {{site.data.keyword.Bluemix_notm}} へのログインに使用している IBMid。
   * アプリを作成している組織の名前。 この情報は、サポート・チームが、組織内の正しい役割またはメンバーシップがユーザーに割り当てられているかどうかを判別するのに役立ちます。
 
 
