@@ -1,12 +1,9 @@
 ---
 
 copyright:
+
   years: 2018, 2019
 lastupdated: "2019-01-28"
-
-keywords: resource group, account access, user access, IAM, organize
-
-subcollection: account
 
 ---
 
@@ -53,7 +50,7 @@ subcollection: account
 
 리소스 그룹은 IAM 사용 리소스를 구성하는 데 사용하는 논리적 컨테이너입니다. {{site.data.keyword.cloud_notm}} Identity and Access Management(IAM) 액세스 제어를 사용하여 관리되는 모든 서비스는 리소스 그룹에 속합니다. 카탈로그에서 작성할 때 해당 리소스 그룹에 리소스를 지정합니다. 리소스 그룹 지정은 설정한 후 변경할 수 있으므로, 리소스 그룹의 일부를 지금 설정하는 것이 중요합니다.
 
-Lite 계정이 있으면 자신을 위해 작성된 단일 리소스 그룹에 액세스할 수 있습니다. 추가 리소스 그룹을 작성할 수는 없습니다. 복수의 리소스 그룹을 작성하고 이에 대해 작업하려면 [계정 업그레이드](/docs/account?topic=account-upgrading-account)를 고려하십시오.
+Lite 계정이 있으면 자신을 위해 작성된 단일 리소스 그룹에 액세스할 수 있습니다. 추가 리소스 그룹을 작성할 수는 없습니다. 복수의 리소스 그룹을 작성하고 이에 대해 작업하려면 [계정 업그레이드](/docs/account?topic=account-changeacct#changeacct)를 고려하십시오.
 {: note}
 
 

@@ -1,6 +1,5 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
-{:utterance .utterance}
 
 {: .toc subcollection="account" audience="platform" arm="3397214" href="/docs/account?topic=account-signing-up-for-ibm-cloud" path="account"}
 Gestione del tuo account
@@ -12,25 +11,23 @@ Gestione del tuo account
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-    index.md
-    
     {: .topicgroup}
     Impostazione dell'account
         adminpublic.md
+        index.md
         profile.md
         login_settings.md
 
-    account-upgrade.md
-    feature_codes.md
+    contact_info.md
 
     {: .topicgroup}
-    Modifica delle impostazioni dell'account
+    Impostazioni dell'account
         account_settings.md
+        feature_codes.md
         eu_hipaa_supported.md
-        contact_info.md
-        email.md
 
     change-plan.md
+    email.md
     softlayerlink.md
 
     {: .topicgroup}

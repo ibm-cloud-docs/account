@@ -21,14 +21,19 @@ lastupdated: "2019-02-06"
 {: #create-account}
 {: faq}
 
-移至 [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")，然後按一下**建立 {{site.data.keyword.Bluemix_notm}} 帳戶**，以建立永不到期的「精簡」帳戶。如需所包括特性的詳細資料，請參閱[精簡帳戶](/docs/account/index.html#liteaccount)。
+移至 [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")，然後按一下**建立 {{site.data.keyword.Bluemix_notm}} 帳戶**，以建立永不到期的「精簡」帳戶。如需所包括特性的詳細資料，請參閱[精簡帳戶](/docs/account?topic=account-liteaccount#liteaccount)。
 
 
 ## 如何解決建立我的帳戶時所發生的錯誤？
 {: #account-error}
 {: faq}
 
-如果在您嘗試建立帳戶時遇到錯誤，您可以建立一個支援案例。從 {{site.data.keyword.Bluemix}} 主控台功能表列中，按一下**支援**。然後，按一下「需要更多協助」區段中的**建立新的案例**。開立案例之後，您會收到一則電子郵件通知。請遵循指示，針對該問題進行進一步的溝通。
+如果在您嘗試建立帳戶時遇到錯誤，您可以建立一個支援案例。
+
+1. 從 {{site.data.keyword.Bluemix}} 主控台功能表列中，按一下**支援**。
+2. 按一下_需要更多協助_ 區段中的**建立新的案例**。
+3. 回答有關該案例的問題。
+4. 開立案例後即會傳送電子郵件通知。請遵循指示來進行進一步的溝通。
 
 
 ## 何謂 Cloud Foundry？
@@ -37,7 +42,8 @@ lastupdated: "2019-02-06"
 
 Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的開放程式碼平台即服務 (PaaS) 選項，可用來在雲端上建置及部署應用程式。Cloud Foundry 組織及空間用來組織特定地區內可用的資源及應用程式。
 
-如需管理組織和空間的相關資訊，請參閱[新增組織及空間](/docs/account/orgs_spaces.html#orgsspacesusers)。此外，如果您有興趣進一步瞭解如何提供對 Cloud Foundry 空間內資源的存取權，請參閱 [Cloud Foundry 存取](/docs/iam/cfaccess.html#cfaccess)。
+如需管理組織和空間的相關資訊，請參閱[新增組織及空間](/docs/account?topic=account-orgsspacesusers#orgsspacesusers)。此外，如果您有興趣進一步瞭解如何提供對 Cloud Foundry 空間內資源的存取權，請參閱 [Cloud Foundry 存取](/docs/iam?topic=iam-cfaccess#cfaccess)。
+
 
 ## 我可以將組織移到另一個帳戶嗎？
 {: #move-org-diff-account}
@@ -45,17 +51,20 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 
 目前，您無法將組織移轉至其他帳戶。
 
+
 ## 可以使用哪些 Cloud Foundry 地區？
 {: #whichregions}
 {: faq}
 
 在「精簡」帳戶中，您只能在一個地區中工作。在「隨收隨付制」或「訂閱帳戶」中，您可以存取所有可用的地區。
 
+
 ## 何謂服務的「精簡」定價方案服務？
 {: #whatisliteplan}
 {: faq}
 
-「精簡」方案是以免費配額為基礎的服務方案。您可以使用服務「精簡」方案來建置應用程式，而不會產生任何費用。「精簡」方案可以是每月固定提供（每一個月更新一次）或一次性使用。每個「精簡」方案服務可以有一個實例。所有帳戶都提供「精簡」定價方案。如需「精簡」帳戶的相關資訊，請參閱[帳戶類型](/docs/account/index.html#accounts)。
+「精簡」方案是以免費配額為基礎的服務方案。您可以使用服務「精簡」方案來建置應用程式，而不會產生任何費用。「精簡」方案可以是每月固定提供（每一個月更新一次）或一次性使用。每個「精簡」方案服務可以有一個實例。所有帳戶都提供「精簡」定價方案。如需「精簡」帳戶的相關資訊，請參閱[帳戶類型](/docs/account?topic=account-accounts#accounts)。
+
 
 ## 當精簡方案實例達到每月配額時會發生什麼情況？
 {: #monthlyquota}
@@ -63,11 +72,13 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 
 達到精簡方案若為任何配額限制會導致該月份暫停使用該服務。配額限制是根據組織，而不是根據實例。在相同組織中建立的新實例會反映先前實例的任何用量。配額限制會在每個月一日重設。
 
+
 ## 我可以建立多少資源群組、組織或空間？
 {: #resourcelimit}
 {: faq}
 
 如果您具有計費帳戶，則可以在帳戶內建立的資源群組、組織或空間數量沒有限制。不過，如果您有精簡帳戶，則限制為一個組織及一個資源群組。
+
 
 ## 如何升級或轉換我的帳戶類型？
 {: #changeacct}
@@ -77,7 +88,8 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 * 若要從「精簡」升級至「隨收隨付制」帳戶或「訂閱」帳戶，請移至[帳戶設定](https://{DomainName}/account/settings)。
   * 若要升級至「隨收隨付制」帳戶，請按一下**新增信用卡**。
   * 若要升級至「訂閱」帳戶，請按一下**升級**。
-* 若要轉換「隨收隨付制」與「訂閱」帳戶類型，請聯絡 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}。
+* 若要在「隨收隨付制」與「訂閱」帳戶類型之間轉換，請與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} 聯絡。
+
 
 ## 如果我將「精簡」帳戶升級，還能繼續使用我的現有實例嗎？
 {: #nochange}
@@ -85,26 +97,27 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 
 是的，您可以升級成計費帳戶，並繼續使用您以精簡帳戶建立的實例。
 
+
 ## 如何升級我的「隨收隨付制」帳戶？
 {: #upgrade}
 {: faq}
 
-若要將「隨收隨付制」帳戶升級為「訂閱」帳戶，請與 [IBM 銷售人員 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示") 聯絡。
+若要將「隨收隨付制」帳戶升級為「訂閱」帳戶，請與 [IBM Cloud 銷售人員](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示") 聯絡。
+
 
 ## 如何更新我的信用卡？
 {: #updatepayment}
 {: faq}
 
-您可以移至主控台中的[付款](https://{DomainName}/billing/payments)，以更新與您的帳戶相關聯的付款方法。在「新增付款方法」下，輸入您新卡片的計費資訊，然後按一下**新增信用卡**。
+移至主控台中的 [付款](https://cloud.ibm.com/billing/payments)，即可更新與您帳戶相關聯的付款方法。請在「新增付款方法」下方，輸入新信用卡的計費資訊，然後按一下**新增信用卡**。
 
-若要切換至不同的付款方法，請選取**使用其他方法付費**，然後按一下**提交變更要求**。將會為您建立變更付款方法的支援案例。
-
+若要切換為不同的付款方法，請選取**使用其他方式付款**，然後按一下**提交變更要求**。將為您建立一個變更付款方法的支援案例。
 
 ## 如何重設密碼？
 {: #reset-password}
 {: faq}
 
-若要重設帳戶密碼，請移至「虛擬人像」圖示 ![「虛擬人像」圖示](../icons/i-avatar-icon.svg) **> 設定檔和設定**。然後，按一下帳戶使用者資訊磚中的**變更或重設**。
+若要重設帳戶密碼，請移至「虛擬人像」圖示 ![「虛擬人像」圖示](../icons/i-avatar-icon.svg) **設定檔和設定**。然後，按一下帳戶使用者資訊磚中的**變更或重設**。
 
 若要重設 VPN 密碼，請完成下列步驟：
 
@@ -112,6 +125,7 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
   2. 選取使用者。
   3. 從 VPN 子網路區段中，按一下「編輯」圖示 ![「編輯」圖示](../icons/icon_write.svg)，以輸入新的 VPN 密碼。
   5. 按一下**套用**。
+
 
 ## 如何取消我的帳戶？
 {: #cancelaccount}
@@ -127,17 +141,18 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 
 請與 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} 聯絡以開立支援案例，並要求刪除您的帳戶。如果您的資料與舊帳戶相關聯並且要移至新帳戶，請在電子郵件中包含此資訊。
 
+
 ## 為什麼我的帳戶被停用了？
 {: #account-deactivated}
 {: faq}
 
-可能因下列原因而取消啟動您的帳戶：
+停用您帳戶的原因如下：
 
-- 針對試用帳戶，試用期間已結束。若要重新啟動帳戶，請登入帳戶，並將它升級至「隨收隨付制」帳戶。
+- 對於試用帳戶，試用期間已結束。若要重新啟動帳戶，請登入您的帳戶並將其升級為「隨收隨付制」帳戶。
 - 授權使用者已取消帳戶。
-- 已暫停帳戶。如果帳戶違反 {{site.data.keyword.Bluemix_notm}} 服務可接受的使用行為，IBM 將逕行停權，而不另行通知。如果使用者在收到違規動作通知之後，更正其使用行為，可還原部分服務。
+- 帳戶已暫停。如果帳戶違反 {{site.data.keyword.Bluemix_notm}} 服務可接受的使用行為，IBM 將逕行停權，而不另行通知。如果使用者在收到違規動作通知之後，更正其使用行為，可還原部分服務。
 
-如果您相信帳戶因錯誤而予以取消啟動，則請撥打 1-866-325-0045 並選取第三個選項來聯絡支援中心。
+如果您相信您的帳戶遭錯誤停用，請致電 1-866-325-0045 並選取第三個選項與支援人員聯絡。
 
 ## 如何取得支援？
 {: #contactsupport}
@@ -145,11 +160,13 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 
 按一下主控台功能表列中的**支援**，以移至「支援中心」。
 
+
 ## 我可以註冊免費試用嗎？
 {: #freetrial}
 {: faq}
 
 {{site.data.keyword.Bluemix_notm}} 試用帳戶可在認證合格的學術機構中提供給教職師及學生。若要符合試用帳戶的資格，請移至 [Harness the Power of IBM ![外部鏈結圖示](../icons/launch-glyph.svg)](https://onthehub.com/ibm/){: new_window}，並驗證機構認證。
+
 
 ## 鏈結我的帳戶之後，要如何登入？
 {: #al_login}
@@ -157,11 +174,13 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 
 鏈結您的帳戶之後，請使用您的 IBM ID 登入 {{site.data.keyword.Bluemix}} 主控台。
 
+
 ## 鏈結我的帳戶之後，對我的支援有什麼影響？
 {: #al_support}
 {: faq}
 
 鏈結您的帳戶之後，您會維持與將 {{site.data.keyword.Bluemix_notm}} 平台新增至帳戶時相同的支援層次。
+
 
 ## 是否有其他方法可以取得鏈結帳戶的協助？
 {: #al_morehelp}
@@ -185,7 +204,7 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 
 當您鏈結帳戶時，可以使用 200 美元的促銷額度來試用 {{site.data.keyword.Bluemix_notm}} 服務。
 
-若要進一步瞭解 200 美元的促銷額度，請參閱[隨收隨付制帳戶](/docs/account/index.html#paygo)。
+若要進一步瞭解 200 美元的促銷額度，請參閱[隨收隨付制帳戶](/docs/account?topic=account-accounts#paygo)。
 
 ## 將 {{site.data.keyword.Bluemix_notm}} 平台服務新增至我的 SoftLayer 帳戶有什麼涵義？
 {: #al_owaffslacct}
@@ -193,7 +212,7 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 
 這表示您的帳戶可以存取所有 {{site.data.keyword.Bluemix_notm}} 平台供應項目。將 {{site.data.keyword.Bluemix_notm}} 平台供應項目新增至帳戶之後，您的帳戶管理員必須讓使用者能夠存取供應項目。
 
-如需成為帳戶管理員的相關資訊，請參閱[處理使用者](/docs/iam/iamusermanage.html#iamusermanage)，以取得相關資訊。
+如需成為帳戶管理員的相關資訊，請參閱[處理使用者](/docs/iam?topic=iam-iamuserinv#iamuserinv)。
 
 ## 鏈結帳戶對我的 SoftLayer 主帳戶 ID 有什麼影響？
 {: #al_howaffslmastacct}
@@ -213,7 +232,7 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 {: #switch-account-owners}
 {: faq}
 
-您不能切換帳戶擁有者，但可以變更資源擁有者。若要進一步瞭解如何切換所有權，請參閱[移轉專用資源的所有權](/docs/account/owners.html#how-to-change-the-owner-of-a-catalog-resource)。
+您不能切換帳戶擁有者，但可以變更資源擁有者。若要進一步瞭解如何切換所有權，請參閱[移轉專用資源的所有權](/docs/account?topic=account-include#owners)。
 
 ## {{site.data.keyword.Bluemix_notm}} 是否支援批次登錄使用者？
 {: #batch-registration}
@@ -221,25 +240,25 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 
 當您向 {{site.data.keyword.Bluemix_notm}} 登錄使用者時，必須個別登錄每一個使用者。{{site.data.keyword.Bluemix_notm}} 不支援批次登錄使用者。
 
-移至 [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com)，然後按一下**建立 {{site.data.keyword.Bluemix_notm}} 帳戶**。然後，完成每一位使用者的帳戶登錄表單。
+移至 [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")，然後按一下**建立 {{site.data.keyword.Bluemix_notm}} 帳戶**。然後，完成每一位個別使用者的帳戶登錄表單。
 
 ## 何謂標籤？
 {: #know-about-tags}
 {: faq}
 
-您可以藉由過濾資源清單中的標籤，以使用標籤來組織及檢視帳戶中的資源。如需相關資訊，請參閱[標記資源](/docs/resources/tagging_resources.html#tagging)。
+您可以藉由過濾資源清單中的標籤，以使用標籤來組織及檢視帳戶中的資源。如需相關資訊，請參閱[標記資源](/docs/resources?topic=resources-add-remove#add-remove)。
 
 ## 誰可以在帳戶中檢視標籤？
 {: #tags-visibility-account}
 {: faq}
 
-在您的帳戶中到處都能可看見標籤。如果您有權查看資源，即可檢視附加的所有標籤。如需相關資訊，請參閱[授與使用者對標籤資源的存取權](/docs/resources/grant-tag-access.html#access)。
+在您的帳戶中到處都能可看見標籤。如果您有權查看資源，即可檢視附加的所有標籤。如需相關資訊，請參閱[授與使用者對標籤資源的存取權](/docs/resources?topic=resources-access#access)。
 
 ## 新增或移除標籤需要哪些許可權？
 {: #permissions-add-remove-tags}
 {: faq}
 
-您必須至少具有已啟用 IAM 功能之資源的編輯者，或是對於資源之 Cloud Foundry 空間中的開發人員角色，才能在該資源上新增或移除標籤。如需相關資訊，請參閱[授與使用者對標籤資源的存取權](/docs/resources/grant-tag-access.html#access)。
+您必須至少具有已啟用 IAM 功能之資源的編輯者，或是對於資源之 Cloud Foundry 空間中的開發人員角色，才能在該資源上新增或移除標籤。如需相關資訊，請參閱[授與使用者對標籤資源的存取權](/docs/resources?topic=resources-access#access)。
 
 ## 我可以刪除標籤嗎？
 {: # delete-tag}

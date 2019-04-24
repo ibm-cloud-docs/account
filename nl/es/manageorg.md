@@ -1,12 +1,9 @@
 ---
 
 copyright:
+
   years: 2015, 2019
 lastupdated: "2019-01-28"
-
-keywords: account owner, user roles, manage account, orgs, spaces
-
-subcollection: account
 
 ---
 
@@ -46,18 +43,18 @@ Solo puede ver los recursos de una única organización a la vez. Si es miembro 
   * Para editar los roles de usuario en el nivel de organización, pulse en el icono Acciones ![icono Acción](../icons/action-menu-icon.svg) y seleccione **Usuarios**.
     {: #listmembers}
 
-    En función de como desea modificar los permisos de usuario, seleccione o desmarque el recuadro de selección de un rol específico. Los roles que puede asignar a nivel de organización son Gestor, Gestor de facturación y Auditor. Para obtener más información, consulte [Roles de Cloud Foundry](/docs/iam?topic=iam-cfaccess#cfroles).
+    En función de como desea modificar los permisos de usuario, seleccione o desmarque el recuadro de selección de un rol específico. Los roles que puede asignar a nivel de organización son Gestor, Gestor de facturación y Auditor. Para obtener más información, consulte [Roles de Cloud Foundry](/docs/iam?topic=iam-cfroles).
 
   * Para editar roles de usuario en un espacio específico, seleccione la organización en la que se ha asignado el espacio. A continuación, pulse en el nombre del espacio.
 
-    En función de como desea modificar los permisos de usuario, seleccione o desmarque el recuadro de selección de un rol específico. Los roles que puede asignar a nivel de espacio son Gestor, Desarrollador y Auditor. Para obtener más información, consulte [Roles de Cloud Foundry](/docs/iam?topic=iam-cfaccess#cfroles).
+    En función de como desea modificar los permisos de usuario, seleccione o desmarque el recuadro de selección de un rol específico. Los roles que puede asignar a nivel de espacio son Gestor, Desarrollador y Auditor. Para obtener más información, consulte [Roles de Cloud Foundry](/docs/iam?topic=iam-cfroles).
 
   * Para gestionar los dominios, pulse el icono Acciones ![icono Acción](../icons/action-menu-icon.svg) de la organización correspondiente y seleccione **Dominios**.
     {: #managedomains}
 
     Como propietario de cuenta o gestor de organización, puede ver el dominio del sistema y añadir dominios personalizados para aplicaciones que están incluidas dentro una organización y sus espacios. Si es un gestor de espacios, esta página mostrará una lista de solo lectura de los dominios asignados al espacio.
 
-    Si añade un dominio personalizado, debe configurar el servidor DNS para resolver el dominio personalizado para que apunte al dominio del sistema de {{site.data.keyword.Bluemix_notm}}. De este modo, cuando {{site.data.keyword.Bluemix_notm}} recibe una solicitud para el dominio personalizado, se direcciona correctamente a la app. El dominio del sistema siempre está disponible en un espacio y también se pueden asignar dominios personalizados a un espacio. Las apps creadas en el espacio pueden utilizar cualquiera de los dominios listados para dicho espacio. Para obtener más información sobre cómo crear y utilizar dominios personalizados, consulte [Gestión de dominios](/docs/apps?topic=creating-apps-update-domain).
+    Si añade un dominio personalizado, debe configurar el servidor DNS para resolver el dominio personalizado para que apunte al dominio del sistema de {{site.data.keyword.Bluemix_notm}}. De este modo, cuando {{site.data.keyword.Bluemix_notm}} recibe una solicitud para el dominio personalizado, se direcciona correctamente a la app. El dominio del sistema siempre está disponible en un espacio y también se pueden asignar dominios personalizados a un espacio. Las apps creadas en el espacio pueden utilizar cualquiera de los dominios listados para dicho espacio. Para obtener más información sobre cómo crear y utilizar dominios personalizados, consulte [Creación y utilización de un dominio personalizado](/docs/apps?topic=creating-apps-updatingapps).
 
   * Para gestionar todas las cuotas asignadas de una organización, haga clic en el icono Acciones ![icono Acción](../icons/action-menu-icon.svg) de la organización correspondiente y seleccione **Cuotas**.
     {: #managequota}

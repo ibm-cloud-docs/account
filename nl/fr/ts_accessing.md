@@ -1,12 +1,10 @@
 ---
 
 copyright:
+
   years: 2015, 2018
+
 lastupdated: "2018-11-28"
-
-keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
-
-subcollection: account
 
 ---
 
@@ -130,7 +128,7 @@ Si votre compte est en attente, vous ne pouvez pas vous connecter à {{site.data
 Après avoir procédé à votre enregistrement pour un compte Lite {{site.data.keyword.Bluemix_notm}}, il est possible que vous ne puissiez pas vous connecter à {{site.data.keyword.Bluemix_notm}}. Le message suivant s'affiche :
 {: tsSymptoms}
 
-<code>Votre compte est en attente. La confirmation par courrier électronique peut prendre jusqu'à 24 heures ; vérifiez également votre dossier de courrier indésirable. Si vous ne recevez pas votre confirmation par courrier électronique, contactez le <a href="https://ibm.biz/ibmcloudsupport" target="_blank">support {{site.data.keyword.Bluemix_notm}}</a>.</code>
+<code>Votre compte est en attente. La confirmation par courrier électronique peut prendre jusqu'à 24 heures ; vérifiez également votre dossier de courrier indésirable. Si vous ne recevez pas votre confirmation par courrier électronique, contactez le <a href="http://ibm.biz/bluemixsupport.com" target="_blank">support {{site.data.keyword.Bluemix_notm}}</a>.</code>
 
 Après avoir procédé à un enregistrement pour un compte Lite {{site.data.keyword.Bluemix_notm}}, vous recevez un message électronique incluant un lien sur lequel vous devez cliquer pour confirmer votre enregistrement.  
 {: tsCauses}

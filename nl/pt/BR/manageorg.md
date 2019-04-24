@@ -1,12 +1,9 @@
 ---
 
 copyright:
+
   years: 2015, 2019
 lastupdated: "2019-01-28"
-
-keywords: account owner, user roles, manage account, orgs, spaces
-
-subcollection: account
 
 ---
 
@@ -52,11 +49,11 @@ os espaços e recursos dentro da organização também são excluídos. Essa aç
   * Para editar funções de usuário no nível de organização, clique no ícone Ações ![Ícone de ação](../icons/action-menu-icon.svg) e selecione **Usuários**.
     {: #listmembers}
 
-    Dependendo de como desejar modificar as permissões de usuário, selecione ou desmarque a caixa de seleção para uma função específica. As funções que podem ser designadas no nível de organização são Gerente, Gerente de faturamento e Auditor. Para obter mais informações, consulte [Funções do Cloud Foundry](/docs/iam?topic=iam-cfaccess#cfroles).
+    Dependendo de como desejar modificar as permissões de usuário, selecione ou desmarque a caixa de seleção para uma função específica. As funções que podem ser designadas no nível de organização são Gerente, Gerente de faturamento e Auditor. Para obter mais informações, consulte [Funções do Cloud Foundry](/docs/iam?topic=iam-cfroles).
 
   * Para editar funções de usuário para um espaço específico, clique na organização à qual o espaço é designado. Em seguida, clique no nome do espaço.
 
-    Dependendo de como desejar modificar as permissões de usuário, selecione ou desmarque a caixa de seleção para uma função específica. As funções que podem ser designadas no nível de espaço são Gerente, Desenvolvedor e Auditor. Para obter mais informações, consulte [Funções do Cloud Foundry](/docs/iam?topic=iam-cfaccess#cfroles).
+    Dependendo de como desejar modificar as permissões de usuário, selecione ou desmarque a caixa de seleção para uma função específica. As funções que podem ser designadas no nível de espaço são Gerente, Desenvolvedor e Auditor. Para obter mais informações, consulte [Funções do Cloud Foundry](/docs/iam?topic=iam-cfroles).
 
   * Para gerenciar seus domínios, clique no ícone Ações ![Ícone de ação](../icons/action-menu-icon.svg) para a respectiva organização e selecione **Domínios**.
     {: #managedomains}
@@ -68,7 +65,7 @@ e incluir domínios customizados para aplicativos que são construídos dentro d
 configurar seu servidor DNS para resolver seu domínio customizado para apontar para o
 domínio do sistema {{site.data.keyword.Bluemix_notm}}. Dessa maneira, quando o
 {{site.data.keyword.Bluemix_notm}} recebe uma solicitação para seu domínio customizado, ela é roteada
-corretamente para seu app. O domínio do sistema está sempre disponível para um espaço e domínios customizados também podem ser alocados para um espaço. Os apps que são criados em um espaço podem usar qualquer um dos domínios que estão listados para esse espaço. Para obter mais informações sobre a criação e o uso de domínios customizados, consulte [Gerenciando seus domínios](/docs/apps?topic=creating-apps-update-domain).
+corretamente para seu app. O domínio do sistema está sempre disponível para um espaço e domínios customizados também podem ser alocados para um espaço. Os apps que são criados em um espaço podem usar qualquer um dos domínios que estão listados para esse espaço. Para obter mais informações sobre a criação e o uso de domínios customizados, veja [Criando e usando um domínio customizado](/docs/apps?topic=creating-apps-updatingapps).
 
   * Para gerenciar a cota alocada para uma organização, clique no ícone Ações ![Ícone de ação](../icons/action-menu-icon.svg) para a respectiva organização e selecione **Cotas**.
     {: #managequota}

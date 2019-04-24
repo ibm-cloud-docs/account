@@ -1,12 +1,9 @@
 ---
 
 copyright:
+
   years: 2017, 2019
 lastupdated: "2019-01-28"
-
-keywords: hide resource, limit viewer, exclude user, hide service
-
-subcollection: account
 
 ---
 
@@ -29,7 +26,7 @@ Le masquage d'une ressource dans le catalogue ne retire pas cet élément de l'i
 Vous pouvez utiliser la console ou l'interface de ligne de commande (CLI) {{site.data.keyword.Bluemix}} [](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) afin de déterminer si vous avez le droit d'autoriser des utilisateurs à voir une ressource privée ajoutée au compte. Si vous êtes propriétaire d'un compte, vous pouvez accorder l'accès à votre compte à un utilisateur à partir de la console en affectant une règle d'accès. Pour plus d'informations, voir [Gestion de l'accès à votre compte](/docs/account?topic=account-find-access).
 
 ## Recherche d'une ressource
-{: #find-resource-exc}
+{: #find-resource}
 
 Exécutez la commande `ibmcloud catalog search <service-id or service-name>` pour rechercher une ressource. Remplacez les variables service-id ou service-name par un ID ou un nom de ressource. Utilisez les informations renvoyées pour trouver l'ID ou le nom du service à masquer.
 

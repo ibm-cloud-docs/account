@@ -1,12 +1,9 @@
 ---
 
 copyright:
+
   years: 2017, 2019
 lastupdated: "2019-01-28"
-
-keywords: user access, IBM Cloud account access, account owner
-
-subcollection: account
 
 ---
 

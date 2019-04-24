@@ -1,12 +1,9 @@
 ---
 
 copyright:
+
   years: 2018, 2019
 lastupdated: "2019-01-28"
-
-keywords: resource group, account access, user access, IAM, organize
-
-subcollection: account
 
 ---
 
@@ -53,7 +50,7 @@ subcollection: account
 
 リソース・グループは、IAM 対応リソースを編成するための論理コンテナーです。 {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) アクセス制御を使用して管理されるすべてのサービスは、いずれかのリソース・グループに属します。 リソースをカタログから作成するときに、リソース・グループに割り当てます。 リソース・グループの割り当てを設定後に変更することはできません。そのため、いくつかのリソース・グループをすぐにセットアップしておくことが重要です。
 
-ライト・アカウントを持っているユーザーは、そのユーザーのために作成された単一のリソース・グループへのアクセス権限を持ちます。 追加のリソース・グループを作成することはできません。 複数のリソース・グループを作成して操作するには、[アカウントのアップグレード](/docs/account?topic=account-upgrading-account)を検討してください。
+ライト・アカウントを持っているユーザーは、そのユーザーのために作成された単一のリソース・グループへのアクセス権限を持ちます。 追加のリソース・グループを作成することはできません。 複数のリソース・グループを作成して操作するには、[アカウントのアップグレード](/docs/account?topic=account-changeacct#changeacct)を検討してください。
 {: note}
 
 

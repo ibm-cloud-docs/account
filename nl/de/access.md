@@ -1,12 +1,9 @@
 ---
 
 copyright:
+
   years: 2017, 2019
 lastupdated: "2019-01-28"
-
-keywords: user access, IBM Cloud account access, account owner
-
-subcollection: account
 
 ---
 
@@ -41,7 +38,7 @@ Verwenden Sie die Rollen eines Anzeigeberechtigten und eines Bearbeiters, um wei
 | Administrator            | Objektmetadaten oder Sichtbarkeit privater Services ändern, Sichtbarkeit eines öffentlichen Service einschränken  |
 {: caption="Tabelle 1. Beispiele für Plattformmanagementrollen und -aktionen für den Katalog" caption-side="top"}
 
-Weitere Informationen zum Zuweisen von Zugriffsberechtigungen für Benutzer finden Sie in [Zugriff auf Kontoverwaltungsservices zuweisen](/docs/iam?topic=iam-account-services).
+Weitere Informationen zum Zuweisen von Zugriffsberechtigungen für Benutzer finden Sie in [Zugriff auf Kontoverwaltungsservices zuweisen](/docs/iam?topic=iam-account-services). 
 
 ## Zugriff bestätigen
 {: #confirm-access}

@@ -1,12 +1,9 @@
 ---
 
 copyright:
+
   years: 2018, 2019
 lastupdated: "2019-01-28"
-
-keywords: resource group, account access, user access, IAM, organize
-
-subcollection: account
 
 ---
 
@@ -53,7 +50,7 @@ subcollection: account
 
 资源组是用于对支持 IAM 的资源进行组织的逻辑容器。使用 {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) 访问控制来管理的所有服务都属于一个资源组。在从目录创建资源时，将资源分配给其资源组。资源组一旦分配好就不能更改，所以有必要现在就设置一些资源组。
 
-如果您拥有轻量帐户，那么可以访问为您创建的单个资源组。但您无法创建额外的资源组。要创建和使用多个资源组，请考虑[升级帐户](/docs/account?topic=account-upgrading-account)。
+如果您拥有轻量帐户，那么可以访问为您创建的单个资源组。但您无法创建额外的资源组。要创建和使用多个资源组，请考虑[升级帐户](/docs/account?topic=account-changeacct#changeacct)。
 {: note}
 
 

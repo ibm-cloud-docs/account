@@ -1,12 +1,9 @@
 ---
 
 copyright:
+
   years: 2017, 2019
 lastupdated: "2019-01-28"
-
-keywords: hide resource, limit viewer, exclude user, hide service
-
-subcollection: account
 
 ---
 
@@ -29,7 +26,7 @@ Ocultar um recurso no catálogo não o remove da interface da linha de comandos 
 É possível usar a [interface da linha de comandos (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) do {{site.data.keyword.Bluemix}} ou o console para determinar se você tem acesso para permitir que usuários visualizem um recurso privado que foi incluído na conta. Se você for um proprietário da conta, será possível fornecer acesso a um usuário em sua conta por meio do console designando uma política de acesso. Para obter mais informações, consulte [Gerenciando o acesso à sua conta](/docs/account?topic=account-find-access).
 
 ## Localizando um recurso
-{: #find-resource-exc}
+{: #find-resource}
 
 Execute o comando `ibmcloud catalog search <service-id or service-name>` para procurar um recurso. Substitua as variáveis service-id ou service-name por um nome de recurso ou ID. Use as informações que são retornadas para localizar o ID ou o nome do serviço que você deseja ocultar.
 

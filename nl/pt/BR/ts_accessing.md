@@ -1,12 +1,10 @@
 ---
 
 copyright:
+
   years: 2015, 2018
+
 lastupdated: "2018-11-28"
-
-keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
-
-subcollection: account
 
 ---
 
@@ -131,7 +129,7 @@ Se a sua conta estiver pendente, não será possível efetuar login no {{site.da
 Depois de se registrar para uma conta {{site.data.keyword.Bluemix_notm}} Lite, talvez você não consiga efetuar login no {{site.data.keyword.Bluemix_notm}}. É exibida a seguinte mensagem:
 {: tsSymptoms}
 
-<code>Sua conta está pendente. Aguarde até 24 horas pela confirmação por email e verifique também sua pasta de spam. Se você ainda não tiver recebido sua confirmação por e-mail, entre em contato com o <a href="https://ibm.biz/ibmcloudsupport" target="_blank">Suporte do {{site.data.keyword.Bluemix_notm}}</a>.</code>
+<code>Sua conta está pendente. Aguarde até 24 horas pela confirmação por email e verifique também sua pasta de spam. Se você ainda não recebeu sua confirmação por e-mail, entre em contato com o <a href="http://ibm.biz/bluemixsupport.com" target="_blank">Suporte do {{site.data.keyword.Bluemix_notm}}</a>.</code>
 
 Ao se registrar para uma conta {{site.data.keyword.Bluemix_notm}} Lite, você recebe um e-mail que inclui um link que deve ser clicado para confirmar seu registro.  
 {: tsCauses}

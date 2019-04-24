@@ -1,12 +1,10 @@
 ---
 
 copyright:
+
   years: 2015, 2018
+
 lastupdated: "2018-11-28"
-
-keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
-
-subcollection: account
 
 ---
 
@@ -45,7 +43,7 @@ La contraseña que ha utilizado para iniciar sesión en {{site.data.keyword.Blue
 
 Utilice una de las opciones siguientes:
 {: tsResolve}
- * Vaya a la página [Mi perfil de IBM ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://myibm.ibm.com/dashboard/){: new_window} para confirmar que utiliza una contraseña válida.
+ * Vaya a la página [Mi perfil de IBM![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://myibm.ibm.com/dashboard/){: new_window} para confirmar que utiliza una contraseña válida.
  * Si ha olvidado su contraseña, pulse **¿Ha olvidado su contraseña?** para restablecer la contraseña.
  * Si ha olvidado el IBMid o sigue teniendo problemas con su contraseña, póngase en contacto con el centro de atención al cliente de registro de IBM a nivel mundial para obtener ayuda.
 
@@ -96,13 +94,13 @@ Para crear una cuenta de {{site.data.keyword.Bluemix_notm}}, siga el proceso de 
 
 Cuando obtiene un mensaje de inicio de sesión correcto, pero no vuelve a la consola.
 
-Cuando inicia sesión utilizando su IBMid, se muestra un mensaje de inicio de sesión correcto, pero no vuelve a la [consola de {{site.data.keyword.Bluemix_notm}}](https://{DomainName}){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo").
+Cuando inicia sesión utilizando su IBMid, se muestra un mensaje de inicio de sesión correcto, pero no vuelve a la [consola de {{site.data.keyword.Bluemix_notm}} ](https://{DomainName}){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo").
 {: tsSymptoms}
 
 Utilice una de las opciones siguientes:
 {: tsResolve}
  * Cierre el navegador, borre la memoria caché y las cookies y luego intente de nuevo iniciar la sesión.
- * Inicie sesión desde la [consola de {{site.data.keyword.Bluemix_notm}}](https://{DomainName}){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo").
+ * Inicie sesión desde la [consola de {{site.data.keyword.Bluemix_notm}} ](https://{DomainName}){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo").
 
 
 ## ¿Por qué no se ha completado mi inicio de sesión de IBMid?
@@ -117,7 +115,7 @@ Cuando inicia una sesión en {{site.data.keyword.Bluemix_notm}}, la autenticaci�
 Es posible que haya un problema con el servicio de autenticación de IBMid.
 {: tsCauses}
 
-Asegúrese de que puede iniciar sesión en [IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo"). Si puede hacerlo, entonces se trata de un problema en la aplicación y puede intentar iniciar sesión de nuevo en la consola más adelante. Si no puede iniciar una sesión en esa página, póngase en contacto con el [centro de atención al cliente de IBMid ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}.  
+Asegúrese de que puede iniciar sesión en [IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo"). Si puede hacerlo, entonces se trata de un problema en la aplicación y puede intentar iniciar sesión de nuevo en la consola más adelante. Si no puede iniciar una sesión en esa página, póngase en contacto con el [centro de atención al cliente de IBMid![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}.  
 {: tsResolve}
 
 
@@ -130,7 +128,7 @@ Si la cuenta está pendiente, no puede iniciar una sesión en {{site.data.keywor
 Después de registrarse para una cuenta de Lite de {{site.data.keyword.Bluemix_notm}}, es posible que no pueda iniciar sesión en {{site.data.keyword.Bluemix_notm}}. Se visualiza el mensaje siguiente:
 {: tsSymptoms}
 
-<code>Su cuenta está pendiente. Debe esperar hasta 24 horas a recibir una confirmación por correo electrónico y debe comprobar la carpeta spam. Si transcurrido este tiempo no ha recibido la confirmación por correo electrónico, póngase en contacto con el <a href="https://ibm.biz/ibmcloudsupport" target="_blank">Soporte de {{site.data.keyword.Bluemix_notm}}</a>.</code>
+<code>Su cuenta está pendiente. Debe esperar hasta 24 horas a recibir una confirmación por correo electrónico y debe comprobar la carpeta spam. Si transcurrido este tiempo no ha recibido la confirmación por correo electrónico, póngase en contacto con el <a href="http://ibm.biz/bluemixsupport.com" target="_blank">Soporte de {{site.data.keyword.Bluemix_notm}}</a>.</code>
 
 Cuando registra una cuenta Lite de {{site.data.keyword.Bluemix_notm}}, recibe un correo electrónico que incluye un enlace en el que debe pulsar para confirmar el registro.  
 {: tsCauses}

@@ -2,20 +2,19 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-12-02" 
+lastupdated: "2019-01-28" 
 
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:tip: .tip}
 {:important: .important}
-
+{:tip: .tip}
 
 # 启用欧盟支持和支持 HIPAA 设置
-{: #eu-hipaa-supoorted}
+{: #eu-hipaa-supported}
 
 如果您是帐户所有者，那么可以为帐户启用“欧盟支持”和“支持 HIPAA”功能。例如，如果使用资源来处理欧洲居民的个人数据，那么可以选择启用“欧盟支持”设置。如果您计划在启用 HIPAA 的服务中包含受保护的健康信息 (PHI)，那么可以选择启用“支持 HIPAA”设置。
 {:shortdesc}
@@ -40,16 +39,16 @@ lastupdated: "2018-12-02"
 ## 启用“支持 HIPAA”设置
 {: #enabling-hipaa}
 
-您可以选择启用“支持 HIPAA”设置来运行适用于美国《健康保险可移植性和责任法案》(HIPAA) 规定的敏感工作负载。启用此设置即表示您的帐户会处理可能受 HIPAA 约束的 PHI。 
+您可以选择启用“支持 HIPAA”设置来运行适用于美国《健康保险可移植性和责任法案》(HIPAA) 规定的敏感工作负载。启用此设置即表示您的帐户会处理可能受 HIPAA 约束的 PHI。
 
 1. 在控制台中，转至**管理 > 帐户**，然后选择**帐户设置**。
-2. 对于“支持 HIPAA”选项，单击**开启**。 
-3. 阅读有关启用此设置的信息。 
+2. 对于“支持 HIPAA”选项，单击**开启**。
+3. 阅读有关启用此设置的信息。
 
   此设置启用后即无法禁用。
   {: important}
-   
-4. 选择**接受**，然后单击**提交**。 
+
+4. 选择**接受**，然后单击**提交**。
 
   在启用“支持 HIPAA”设置之后，可以使用“支持 HIPAA”标记来搜索目录中支持 HIPAA 的产品。
   {: tip}

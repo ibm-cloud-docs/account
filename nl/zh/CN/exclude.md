@@ -1,12 +1,9 @@
 ---
 
 copyright:
+
   years: 2017, 2019
 lastupdated: "2019-01-28"
-
-keywords: hide resource, limit viewer, exclude user, hide service
-
-subcollection: account
 
 ---
 
@@ -29,7 +26,7 @@ subcollection: account
 您可以使用 {{site.data.keyword.Bluemix}} [命令行界面 (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) 或控制台来确定自己是否有权允许用户查看已添加到帐户的专用资源。如果您是帐户所有者，那么可以通过在控制台中分配访问策略，向您帐户中的用户授予访问权。有关更多信息，请参阅[管理对帐户的访问权](/docs/account?topic=account-find-access)。
 
 ## 查找资源
-{: #find-resource-exc}
+{: #find-resource}
 
 运行 `ibmcloud catalog search <service-id or service-name>` 命令以搜索资源。将 service-id 或 service-name 变量替换为资源名称或标识。使用返回的信息来查找要隐藏的服务的标识或名称。
 

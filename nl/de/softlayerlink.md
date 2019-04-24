@@ -1,12 +1,10 @@
 ---
 
 copyright:
+
   years: 2016, 2019
+
 lastupdated: "2019-01-28"
-
-keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, Bluemix account, Bluemix
-
-subcollection: account
 
 ---
 
@@ -122,4 +120,4 @@ Wenn Sie über ein verknüpftes Konto verfügen, können Sie auf der Seite **Ein
 
 Andere Mehrfaktorauthentifizierungsmethoden erfolgen nicht pro IBMid. Sie erfolgen pro Konto. Wenn eine IBMid mehreren Konten zugeordnet ist und Sie zwischen den Konten wechseln, müssen Sie Ihre Identität bei jedem Wechsel zu einem anderen Konto, für das eine Zwei-Faktor-Authentifizierung erforderlich ist, bestätigen. Dies gilt auch, wenn das vorherige Konto und das neue Konto beide mit demselben Mechanismus für die Zwei-Faktor-Authentifizierung konfiguriert sind.
 
-Wenn Sie zuvor die [Zwei-Faktor-Authentifizierung (2FA) im Kundenportal](/docs/customer-portal?topic=customer-portal-cp_setup-2fa#cp-enable-2fa) für Ihre Ressourcen der klassischen Infrastruktur aktiviert haben und dann die MFA-Einstellung für das {{site.data.keyword.Bluemix_notm}}-Konto aktivieren, überschreibt letztere die 2FA im Kundenportal. Dies bedeutet, dass Sie die 2FA, die Sie im Kundenportal erworben haben, zugunsten der MFA-Einstellung inaktivieren können.
+Wenn Sie zuvor die [Zwei-Faktor-Authentifizierung (2FA) im Kundenportal](/docs/customer-portal?topic=customer-portal-customerportal_2fa) für Ihre Ressourcen der klassischen Infrastruktur aktiviert haben und dann die MFA-Einstellung für das {{site.data.keyword.Bluemix_notm}}-Konto aktivieren, überschreibt letztere die 2FA im Kundenportal. Dies bedeutet, dass Sie die 2FA, die Sie im Kundenportal erworben haben, zugunsten der MFA-Einstellung inaktivieren können.

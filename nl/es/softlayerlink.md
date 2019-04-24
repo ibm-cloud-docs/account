@@ -1,12 +1,10 @@
 ---
 
 copyright:
+
   years: 2016, 2019
+
 lastupdated: "2019-01-28"
-
-keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, Bluemix account, Bluemix
-
-subcollection: account
 
 ---
 
@@ -122,4 +120,4 @@ Si tiene una cuenta enlazada, puede utilizar la página **Valores** de IAM de {{
 
 Otros métodos de autenticación de multifactores no son por IBMid. Son por cuenta. Cuando un IBMid está asociado con varias cuentas, y cambia entre ellas, debe confirmar su identidad cada vez que cambie a una cuenta distinta que requiera la autenticación de dos factores. Esto es cierto incluso si la cuenta anterior y la cuenta nueva están configuradas con el mismo mecanismo de autenticación de dos factores.
 
-Si anteriormente ha habilitado la [2FA en el portal de clientes](/docs/customer-portal?topic=customer-portal-cp_setup-2fa#cp-enable-2fa) para sus recursos de infraestructura clásica y habilita el valor MFA de la cuenta de {{site.data.keyword.Bluemix_notm}}, el valor de la cuenta de MFA sustituye la 2FA que ha configurado en el portal de customer. Esto significa que puede inhabilitar la 2FA que ha adquirido en el portal de clientes en favor del valor MFA de la cuenta.
+Si anteriormente ha habilitado la [2FA en el portal de clientes](/docs/customer-portal?topic=customer-portal-customerportal_2fa) para sus recursos de infraestructura clásica y habilita el valor MFA de la cuenta de {{site.data.keyword.Bluemix_notm}}, el valor de la cuenta de MFA sustituye la 2FA que ha configurado en el portal de customer. Esto significa que puede inhabilitar la 2FA que ha adquirido en el portal de clientes en favor del valor MFA de la cuenta.

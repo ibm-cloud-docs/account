@@ -1,12 +1,9 @@
 ---
 
 copyright:
+
   years: 2018, 2019
 lastupdated: "2019-01-28"
-
-keywords: resource group, account access, user access, IAM, organize
-
-subcollection: account
 
 ---
 
@@ -53,7 +50,7 @@ Weitere Informationen zu dem am besten für Sie geeigneten Kontotyp finden Sie i
 
 Ressourcengruppen dienen als logische Container zum Organisieren Ihrer IAM-fähigen Ressourcen. Alle Services, die mit der Zugriffssteuerung von {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) verwaltet werden, gehören zu einer Ressourcengruppe. Die Zuweisung einer Ressource zu ihrer Ressourcengruppe erfolgt bei ihrer Erstellung aus dem Katalog. Die Ressourcengruppenzuordnung kann nicht geändert werden, nachdem sie erst einmal eingerichtet wurde. Daher ist es wichtig, dass Sie einige Ihrer Ressourcengruppen zum jetzigen Zeitpunkt einrichten.
 
-Mit einem Lite-Konto verfügen Sie über Zugriff auf eine einzelne Ressourcengruppe, die für Sie erstellt wird. Sie können keine zusätzlichen Ressourcengruppen erstellen. Wenn Sie ein [Upgrade für Ihr Konto durchführen](/docs/account?topic=account-upgrading-account), können Sie mehrere Ressourcengruppen erstellen und mit diesen arbeiten.
+Mit einem Lite-Konto verfügen Sie über Zugriff auf eine einzelne Ressourcengruppe, die für Sie erstellt wird. Sie können keine zusätzlichen Ressourcengruppen erstellen. Wenn Sie ein [Upgrade für Ihr Konto durchführen](/docs/account?topic=account-changeacct#changeacct), können Sie mehrere Ressourcengruppen erstellen und mit diesen arbeiten.
 {: note}
 
 

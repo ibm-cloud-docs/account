@@ -1,12 +1,9 @@
 ---
 
 copyright:
+
   years: 2018, 2019
 lastupdated: "2019-01-28"
-
-keywords: resource group, account access, user access, IAM, organize
-
-subcollection: account
 
 ---
 
@@ -53,7 +50,7 @@ subcollection: account
 
 資源群組是一種邏輯容器，用來組織已啟用 IAM 的資源。使用 {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) 存取控制來管理的所有服務，都屬於某個資源群組。當您從型錄建立服務時，會將資源指派給其資源群組。您在設定後就無法變更資源群組指派，這就是為什麼必須現在設定一些資源群組的原因。
 
-如果您具有「精簡」帳戶，則可以存取為您所建立的單一資源群組。您無法建立額外的資源群組。請考慮[升級帳戶](/docs/account?topic=account-upgrading-account)，以建立並使用多個資源群組。
+如果您具有「精簡」帳戶，則可以存取為您所建立的單一資源群組。您無法建立額外的資源群組。請考慮[升級帳戶](/docs/account?topic=account-changeacct#changeacct)，以建立並使用多個資源群組。
 {: note}
 
 

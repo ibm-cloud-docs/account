@@ -1,12 +1,9 @@
 ---
 
 copyright:
+
   years: 2017, 2019
 lastupdated: "2019-01-28"
-
-keywords: hide resource, limit viewer, exclude user, hide service
-
-subcollection: account
 
 ---
 
@@ -29,7 +26,7 @@ subcollection: account
 {{site.data.keyword.Bluemix}} [명령행 인터페이스(CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) 또는 콘솔을 사용하여 계정에 추가된 개인용 리소스를 사용자가 볼 수 있도록 허용하는 액세스 권한이 있는지 여부를 판별할 수 있습니다. 계정 소유자는 액세스 정책을 지정하여 콘솔에서 계정의 사용자에게 액세스를 제공할 수 있습니다. 자세한 정보는 [계정에 대한 액세스 관리](/docs/account?topic=account-find-access)를 참조하십시오.
 
 ## 리소스 찾기
-{: #find-resource-exc}
+{: #find-resource}
 
 `ibmcloud catalog search <service-id or service-name>` 명령을 실행하여 리소스를 검색할 수 있습니다. service-id 또는 service-name 변수를 리소스 이름 또는 ID로 바꾸십시오. 리턴된 정보를 사용하여 숨기려는 서비스의 이름 또는 ID를 찾으십시오.
 

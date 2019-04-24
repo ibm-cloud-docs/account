@@ -1,12 +1,11 @@
 ---
 
+
 copyright:
+
   years: 2018, 2019
 lastupdated: "2019-01-28"
 
-keywords: account security, account access, login security, password, authentication
-
-subcollection: account
 
 ---
 
@@ -73,7 +72,7 @@ Puoi ordinare l'autenticazione Symantec oppure basata sul telefono, oppure può 
 
 Se l'amministratore del tuo account sceglie di ordinare la protezione dell'identità Symantec, devi lavorare insieme a lui per aiutarlo a completare l'ordine fornendo il tuo ID credenziale:
 
-1. Vai a [Symantec VIP](https://vip.symantec.com/).
+1. Vai a [VIP Symantec](https://vip.symantec.com/).
 2. Fai clic su **Scarica**.
 3. Ottieni il tuo ID credenziale e fornisci l'ID al tuo amministratore per completare l'ordine.
 

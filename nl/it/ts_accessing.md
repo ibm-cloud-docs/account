@@ -1,12 +1,10 @@
 ---
 
 copyright:
+
   years: 2015, 2018
+
 lastupdated: "2018-11-28"
-
-keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
-
-subcollection: account
 
 ---
 
@@ -131,7 +129,7 @@ Dopo aver eseguito la registrazione per un account Lite {{site.data.keyword.Blue
 {: tsSymptoms}
 
 <code>Your account is pending. Please wait up to 24 hours for email confirmation and also check your
-spam folder. If you still have not received your e-mail confirmation, contact <a href="https://ibm.biz/ibmcloudsupport" target="_blank">{{site.data.keyword.Bluemix_notm}} Support</a>.</code>
+spam folder. If you still have not received your e-mail confirmation, contact <a href="http://ibm.biz/bluemixsupport.com" target="_blank">{{site.data.keyword.Bluemix_notm}} Support</a>.</code>
 
 Quando esegui la registrazione per un account {{site.data.keyword.Bluemix_notm}} Lite, ricevi una email che include un link su cui devi fare clic per confermare la tua registrazione.  
 {: tsCauses}

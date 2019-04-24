@@ -1,12 +1,10 @@
 ---
 
 copyright:
+
   years: 2016, 2019
+
 lastupdated: "2019-01-28"
-
-keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, Bluemix account, Bluemix
-
-subcollection: account
 
 ---
 
@@ -89,7 +87,7 @@ Dopo aver collegato i tuoi account, non è possibile scollegarli.
 Assicurati di esaminare le seguenti note importanti sul collegamento degli account:
 
   * L'utente master dell'account SoftLayer che viene collegato deve avere un ID IBM.
-  * Ogni account utente che colleghi a un account {{site.data.keyword.Bluemix_notm}} deve appartenere a un unico ID IBM con un indirizzo e-mail univoco. Anche se un singolo ID IBM può possedere più account SoftLayer, devi modificare l'utente master in modo da essere un ID IBM univoco per ogni account. Contatta il supporto per modificare l'utente master di un account SoftLayer. Per ulteriori informazioni, vedi [Richiesta di supporto per l'infrastruttura {{site.data.keyword.Bluemix_notm}}](/docs/customer-portal?topic=customer-portal-customerportal_support). 
+  * Ogni account utente che colleghi a un account {{site.data.keyword.Bluemix_notm}} deve appartenere a un unico ID IBM con un indirizzo e-mail univoco. Anche se un singolo ID IBM può possedere più account SoftLayer, devi modificare l'utente master in modo da essere un ID IBM univoco per ogni account. Contatta il supporto per modificare l'utente master di un account SoftLayer. Per ulteriori informazioni, vedi [Richiesta di supporto per l'infrastruttura {{site.data.keyword.Bluemix_notm}}](/docs/customer-portal?topic=customer-portal-customerportal_support).
   * Quando aggiungi nuovi utenti a un account collegato, devi aggiungerli a entrambi agli account SoftLayer e {{site.data.keyword.Bluemix_notm}} affinché possano accedere a tutte le funzionalità nella console unificata.
   * Se hai un account aziendale, utilizza il portale BAP (Brand Agent Portal) e se hai bisogno di assistenza quando colleghi il tuo account, contatta il team di Revenue Services inviando una e-mail a softlayer_revenue_services_team@wwpdl.vnet.ibm.com.
 
@@ -122,4 +120,4 @@ Se hai un account collegato, puoi utilizzare la pagina **Impostazioni** di {{sit
 
 Altri metodi di autenticazione multifattore non sono per singolo ID IBM. Sono per singolo account. Quando un ID IBM è associato a più account e tu passi da un account all'altro, devi confermare la tua identità ogni volta che passi a un account diverso che richiede l'autenticazione a due fattori. Ciò è vero anche se l'account precedente e il nuovo account sono entrambi configurati con lo stesso meccanismo di autenticazione a due fattori.
 
-Se hai precedentemente abilitato [2FA nel portale del cliente](/docs/customer-portal?topic=customer-portal-cp_setup-2fa#cp-enable-2fa) per le risorse della tua infrastruttura classica, e abiliti quindi l'impostazione MFA dell'account {{site.data.keyword.Bluemix_notm}}, l'impostazione dell'account MFA sovrascrive la 2FA che avevi impostato nel portale del cliente. Questo significa che puoi disabilitare la 2FA da te acquistata nel portale del cliente a favore dell'impostazione MFA dell'account.
+Se hai precedentemente abilitato [2FA nel portale del cliente](/docs/customer-portal?topic=customer-portal-customerportal_2fa) per le risorse della tua infrastruttura classica, e abiliti quindi l'impostazione MFA dell'account {{site.data.keyword.Bluemix_notm}}, l'impostazione dell'account MFA sovrascrive la 2FA che avevi impostato nel portale del cliente. Questo significa che puoi disabilitare la 2FA da te acquistata nel portale del cliente a favore dell'impostazione MFA dell'account.

@@ -1,12 +1,11 @@
 ---
 
+
+
 copyright:
+
   years: 2015, 2019
 lastupdated: "2019-02-15"
-
-keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy
-
-subcollection: account
 
 ---
 
@@ -37,7 +36,7 @@ Em seu perfil, é possível incluir uma foto ou informações pessoais, gerencia
 
 Um IBMid é um ID único que você usa para efetuar login na sua conta do
 {{site.data.keyword.Bluemix_notm}}
-para infraestrutura, serviços e recursos de aplicativos. Não é possível mudar seu IBMid, mas é possível editar suas informações de perfil associadas, como seu nome, e-mail, número do telefone, senha ou nome da empresa. Acesse o ícone do **{{site.data.keyword.avatar}}** ![Ícone do Avatar](../icons/i-avatar-icon.svg) &gt; **Perfil e configurações**. Para obter mais informações, veja [Alternando para IBMid e vinculando contas](/docs/account?topic=account-unifyingaccounts).
+para infraestrutura, serviços e recursos de aplicativos. Não é possível mudar seu IBMid, mas é possível editar suas informações de perfil associadas, como seu nome, e-mail, número do telefone, senha ou nome da empresa. Acesse o ícone do **{{site.data.keyword.avatar}}** ![Ícone do Avatar](../icons/i-avatar-icon.svg) &gt; **Perfil e configurações**. Para obter mais informações, veja [Alternando para IBMid e vinculando contas](softlayerlink.html).
 
 
 ## Mudando suas configurações de cookie

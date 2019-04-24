@@ -1,12 +1,9 @@
 ---
 
 copyright:
+
   years: 2018, 2019
 lastupdated: "2019-01-28"
-
-keywords: resource group, account access, user access, IAM, organize
-
-subcollection: account
 
 ---
 
@@ -53,7 +50,7 @@ Pour plus d'informations sur le type de compte vous correspondant le mieux, voir
 
 Les groupes de ressources sont un conteneur logique vous permettant d'organiser vos ressources activées par IAM. Tous les services gérés à l'aide du contrôle d'accès {{site.data.keyword.cloud_notm}} IAM (Identity and Access Management) appartiennent à un groupe de ressources. Vous affectez une ressource à son groupe de ressources lorsque vous le créez à partir du catalogue. Vous ne pouvez pas modifier l'affectation de groupe de ressources après l'avoir définie, et c'est pourquoi il est important de configurer certains de vos groupes de ressources dès maintenant.
 
-Si vous avez un compte Lite, vous avez accès à un groupe de ressources unique créé pour vous. Vous ne pouvez pas créer de groupes de ressources supplémentaires. Pensez à [mettre à niveau votre compte](/docs/account?topic=account-upgrading-account) pour créer et utiliser plusieurs groupes de ressources.
+Si vous avez un compte Lite, vous avez accès à un groupe de ressources unique créé pour vous. Vous ne pouvez pas créer de groupes de ressources supplémentaires. Pensez à [mettre à niveau votre compte](/docs/account?topic=account-changeacct#changeacct) pour créer et utiliser plusieurs groupes de ressources.
 {: note}
 
 

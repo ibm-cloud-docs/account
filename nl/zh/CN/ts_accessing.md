@@ -1,12 +1,10 @@
 ---
 
 copyright:
+
   years: 2015, 2018
+
 lastupdated: "2018-11-28"
-
-keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
-
-subcollection: account
 
 ---
 
@@ -131,7 +129,7 @@ IBM 标识认证服务可能发生问题。
 在注册 {{site.data.keyword.Bluemix_notm}} 轻量帐户后，可能无法登录到 {{site.data.keyword.Bluemix_notm}}。将显示以下消息：
 {: tsSymptoms}
 
-<code>帐户暂挂。请等待最多 24 小时以获取电子邮件确认并请检查垃圾邮件文件夹。如果仍未收到确认电子邮件，请联系 <a href="https://ibm.biz/ibmcloudsupport" target="_blank">{{site.data.keyword.Bluemix_notm}} 支持</a>。</code>
+<code>帐户暂挂。请等待最多 24 小时以获取电子邮件确认并请检查垃圾邮件文件夹。如果仍未收到确认电子邮件，请联系 <a href="http://ibm.biz/bluemixsupport.com" target="_blank">{{site.data.keyword.Bluemix_notm}} 支持</a>。</code>
 
 在注册 {{site.data.keyword.Bluemix_notm}} 轻量帐户后，您将收到包含链接的电子邮件，您必须单击该链接以确认注册。  
 {: tsCauses}

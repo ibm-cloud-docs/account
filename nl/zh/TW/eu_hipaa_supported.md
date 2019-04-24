@@ -2,20 +2,19 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-12-02" 
+lastupdated: "2019-01-28" 
 
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:tip: .tip}
 {:important: .important}
-
+{:tip: .tip}
 
 # 啟用 EU 及 HIPAA 支援的設定
-{: #eu-hipaa-supoorted}
+{: #eu-hipaa-supported}
 
 如果您是帳戶擁有者，可以啟用帳戶以便成為「歐盟支援」和「HIPAA 支援」。例如，如果您使用資源來處理歐洲居民的個人資料，您可以選擇啟用「歐盟支援」設定。而且，如果您計劃在啟用 HIPAA 功能的服務中納入「受保護的健康資訊 (PHI) 」，您可以選擇啟用「HIPAA 支援」設定。
 {:shortdesc}
@@ -40,16 +39,16 @@ lastupdated: "2018-12-02"
 ## 啟用 HIPAA 支援設定
 {: #enabling-hipaa}
 
-您可以選擇啟用「HIPAA 支援」設定來執行受到「美國醫療保險轉移和責任法 (HIPAA)」管制的機密工作負載。啟用此設定，表示您帳戶會處理可能受 HIPAA 管制的 PHI。 
+您可以選擇啟用「HIPAA 支援」設定來執行受到「美國醫療保險轉移和責任法 (HIPAA)」管制的機密工作負載。啟用此設定，表示您帳戶會處理可能受 HIPAA 管制的 PHI。
 
 1. 移至**管理 > 帳戶**，然後在主控台中選取**帳戶設定**。
-2. 對於「HIPAA 支援」選項，按一下**開啟**。 
-3. 閱讀啟用此設定的相關資訊。 
+2. 對於「HIPAA 支援」選項，按一下**開啟**。
+3. 閱讀啟用此設定的相關資訊。
 
   啟用設定之後，您無法予以停用。
   {: important}
-   
-4. 選取**接受**，然後按一下**提交**。 
+
+4. 選取**接受**，然後按一下**提交**。
 
   啟用「HIPAA 支援」設定之後，您可以使用「已啟用 HIPAA」標籤在型錄中搜尋已啟用 HIPAA 的供應項目。
   {: tip}

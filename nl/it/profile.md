@@ -1,12 +1,11 @@
 ---
 
+
+
 copyright:
+
   years: 2015, 2019
 lastupdated: "2019-02-15"
-
-keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy
-
-subcollection: account
 
 ---
 
@@ -35,7 +34,7 @@ Puoi modificare la tua foto del profilo. Vai all'icona **{{site.data.keyword.ava
 ## Modifica delle informazioni del tuo ID IBM
 {: #ibmid}
 
-Un ID IBM è un singolo ID che utilizzi per accedere al tuo account {{site.data.keyword.Bluemix_notm}} per le funzioni di infrastruttura, servizi e applicazione. Non puoi modificare il tuo ID IBM ma puoi modificare le tue informazioni del profilo associate, come il tuo nome, la tua email, il tuo numero di telefono, la tua password o il tuo nome dell'azienda. Vai all'icona **{{site.data.keyword.avatar}}**![Icona Avatar](../icons/i-avatar-icon.svg) &gt; **Profile and settings**. Per ulteriori informazioni, vedi [Passaggio all'ID IBM e collegamento degli account](/docs/account?topic=account-unifyingaccounts).
+Un ID IBM è un singolo ID che utilizzi per accedere al tuo account {{site.data.keyword.Bluemix_notm}} per le funzioni di infrastruttura, servizi e applicazione. Non puoi modificare il tuo ID IBM ma puoi modificare le tue informazioni del profilo associate, come il tuo nome, la tua email, il tuo numero di telefono, la tua password o il tuo nome dell'azienda. Vai all'icona **{{site.data.keyword.avatar}}**![Icona Avatar](../icons/i-avatar-icon.svg) &gt; **Profilo e impostazioni**. Per ulteriori informazioni, vedi [Passaggio all'ID IBM e collegamento degli account](softlayerlink.html).
 
 
 ## Modifica delle tue impostazioni dei cookie

@@ -1,12 +1,9 @@
 ---
 
 copyright:
+
   years: 2017, 2019
 lastupdated: "2019-01-28"
-
-keywords: user access, IBM Cloud account access, account owner
-
-subcollection: account
 
 ---
 
@@ -41,7 +38,7 @@ subcollection: account
 |관리자            | 개인 서비스의 가시성 또는 오브젝트 메타데이터를 변경하고 퍼블릭 서비스의 가시성을 제한할 수 있음  |
 {: caption="표 1. 카탈로그에 대한 플랫폼 관리 역할 및 조치의 예" caption-side="top"}
 
-사용자에게 액세스 권한을 지정하는 데 대한 자세한 정보는 [계정 관리 서비스에 대한 액세스 권한 지정](/docs/iam?topic=iam-account-services)을 참조하십시오.
+사용자에게 액세스 권한을 지정하는 데 대한 자세한 정보는 [계정 관리 서비스에 대한 액세스 권한 지정](/docs/iam?topic=iam-account-services)을 참조하십시오. 
 
 ## 액세스 확인
 {: #confirm-access}

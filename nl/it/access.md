@@ -1,12 +1,9 @@
 ---
 
 copyright:
+
   years: 2017, 2019
 lastupdated: "2019-01-28"
-
-keywords: user access, IBM Cloud account access, account owner
-
-subcollection: account
 
 ---
 
@@ -57,4 +54,4 @@ Per utilizzare la console, completa la seguente procedura:
   3. Fai clic sulla scheda **Politiche di accesso**, in cui puoi visualizzare le tue politiche di accesso assegnate. Devi disporre del ruolo di amministratore Cloud IAM per la risorsa del catalogo nel tuo account per aggiornare l'elenco che include gli account e per visualizzare le risorse private nel catalogo.
 
 
-Per utilizzare la [CLI](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_commands_iam), esegui `ibmcloud iam user-policies <your-user-name>`. Il comando restituisce un errore se non sei un amministratore per l'account.
+Per utilizzare la [CLI](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_commands_iam), esegui il comando `ibmcloud iam user-policies <your-user-name>`. Il comando restituisce un errore se non sei un amministratore per l'account.

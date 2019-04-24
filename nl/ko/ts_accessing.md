@@ -1,12 +1,10 @@
 ---
 
 copyright:
+
   years: 2015, 2018
+
 lastupdated: "2018-11-28"
-
-keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
-
-subcollection: account
 
 ---
 
@@ -109,7 +107,7 @@ IBM ID를 사용하여 로그인하면 로그인 성공 메시지가 표시되�
 {: #ts_login_ibmid}
 {: troubleshoot}
 
-{{site.data.keyword.Bluemix_notm}}에 로그인 중이며 IBM ID의 인증이 완료되지 않은 경우에는 서비스에 문제가 있을 수 있습니다.
+{{site.data.keyword.Bluemix_notm}}에 로그인 중이며 IBM ID의 인증이 완료되지 않은 경우에는 서비스에 문제가 있을 수 있습니다. 
 
 {{site.data.keyword.Bluemix_notm}}에 로그인하면 IBM ID 인증이 완료되지 않습니다.
 {: tsSymptoms}
@@ -130,7 +128,7 @@ IBM 인증 서비스에 문제점이 있을 수 있습니다.
 {{site.data.keyword.Bluemix_notm}} Lite 계정에 등록한 후에는 {{site.data.keyword.Bluemix_notm}}에 로그인할 수 없습니다. 다음 메시지가 표시됩니다.
 {: tsSymptoms}
 
-<code>Your account is pending. Please wait up to 24 hours for email confirmation and also check your spam folder. If you still have not received your email confirmation, contact <a href="https://ibm.biz/ibmcloudsupport" target="_blank">{{site.data.keyword.Bluemix_notm}} Support</a>.</code>
+<code>Your account is pending. Please wait up to 24 hours for email confirmation and also check your spam folder. If you still have not received your email confirmation, contact <a href="http://ibm.biz/bluemixsupport.com" target="_blank">{{site.data.keyword.Bluemix_notm}} Support</a>.</code>
 
 {{site.data.keyword.Bluemix_notm}} Lite 계정에 등록하면 등록 확인을 위해 반드시 클릭해야 하는 링크가 포함된 이메일을 수신합니다.  
 {: tsCauses}

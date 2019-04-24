@@ -1,6 +1,5 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
-{:utterance .utterance}
 
 {: .toc subcollection="account" audience="platform" arm="3397214" href="/docs/account?topic=account-signing-up-for-ibm-cloud" path="account"}
 계정 관리
@@ -12,25 +11,23 @@
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-    index.md
-    
     {: .topicgroup}
     계정 설정
         adminpublic.md
+        index.md
         profile.md
         login_settings.md
 
-    account-upgrade.md
-    feature_codes.md
+    contact_info.md
 
     {: .topicgroup}
-    계정 설정 수정
+    계정 설정
         account_settings.md
+        feature_codes.md
         eu_hipaa_supported.md
-        contact_info.md
-        email.md
 
     change-plan.md
+    email.md
     softlayerlink.md
 
     {: .topicgroup}

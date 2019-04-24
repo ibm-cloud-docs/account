@@ -2,22 +2,21 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-12-02" 
+lastupdated: "2019-01-28" 
 
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:tip: .tip}
 {:important: .important}
-
+{:tip: .tip}
 
 # Abilitazione delle impostazioni supportate da UE e HIPAA
-{: #eu-hipaa-supoorted}
+{: #eu-hipaa-supported}
 
-Se sei il proprietario dell'account, puoi abilitare il tuo account in modo che sia supportato dall'UE e dall'HIPAA. Potresti scegliere di abilitare l'impostazione Abilitato UE, ad esempio, se utilizzi le risorse per elaborare i dati personali per i cittadini europei. Potresti anche scegliere di abilitare l'impostazione Supportato HIPAA se intendi includere informazioni sanitarie protette (PHI, Protected Health Information) nei servizi abilitati all'HIPAA. 
+Se sei il proprietario dell'account, puoi abilitare il tuo account in modo che sia supportato dall'UE e dall'HIPAA. Potresti scegliere di abilitare l'impostazione Abilitato UE, ad esempio, se utilizzi le risorse per elaborare i dati personali per i cittadini europei. Potresti anche scegliere di abilitare l'impostazione Supportato HIPAA se intendi includere informazioni sanitarie protette (PHI, Protected Health Information) nei servizi abilitati all'HIPAA.
 {:shortdesc}
 
 
@@ -33,23 +32,23 @@ Abilitando questa impostazione, i servizi supportati dall'UE hanno dei rigorosi 
   3. Leggi le informazioni sull'abilitazione dell'impostazione e seleziona **Comprendo e accetto questi termini**.
   4. Fai clic su **Attivo**.
 
-   Dopo aver abilitato l'impostazione Supportato UE, puoi utilizzare la tag Supportato UE per ricercare nel catalogo le offerte che dispongono di piani supportati dall'UE.
-  {: tip}
+   Dopo che hai abilitato l'impostazione Supportato UE, puoi utilizzare la tag Supportato UE per cercare nel catalogo le offerte che hanno dei piani supportati dall'UE.
+   {: tip}
 
 
 ## Abilitazione dell'impostazione Supportato HIPAA
 {: #enabling-hipaa}
 
-Puoi scegliere di abilitare l'impostazione Supportato HIPAA per eseguire carichi di lavoro sensibili regolamentati in base all'HIPAA (Health Insurance Portability and Accountability Act) degli Stati Uniti. Abilitando questa impostazione, stai indicando che il tuo account elabora informazioni sanitarie protette (PHI, Protected Health Information) che potrebbero essere soggette all'HIPAA. 
+Puoi scegliere di abilitare l'impostazione Supportato HIPAA per eseguire carichi di lavoro sensibili regolamentati in base all'HIPAA (Health Insurance Portability and Accountability Act) degli Stati Uniti. Abilitando questa impostazione, stai indicando che il tuo account elabora informazioni sanitarie protette (PHI, Protected Health Information) che potrebbero essere soggette all'HIPAA.
 
 1. Vai a **Gestisci > Account** e seleziona **Impostazione account** nella console.
-2. Per l'opzione Supportato HIPAA, fai clic su **Attivo**. 
-3. Leggi le informazioni relative all'abilitazione di questa impostazione. 
+2. Per l'opzione Supportato HIPAA, fai clic su **Attivo**.
+3. Leggi le informazioni relative all'abilitazione di questa impostazione.
 
   Non puoi disabilitare l'impostazione dopo che l'hai abilitata.
   {: important}
-   
-4. Seleziona **Accetta** e fai clic su **Invia**. 
 
-  Dopo che hai abilitato l'impostazione Supportato HIPAA, puoi utilizzare la tag Abilitato HIPAA per ricercare nel catalogo le offerte abilitate all'HIPAA.
+4. Seleziona **Accetta** e fai clic su **Invia**.
+
+  Dopo che hai abilitato l'impostazione Supportato HIPAA, puoi utilizzare la tag HIPAA abilitato per cercare nel catalogo le offerte che sono abilitate a HIPAA.
   {: tip}

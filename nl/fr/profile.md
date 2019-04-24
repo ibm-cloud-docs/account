@@ -1,12 +1,11 @@
 ---
 
+
+
 copyright:
+
   years: 2015, 2019
 lastupdated: "2019-02-15"
-
-keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy
-
-subcollection: account
 
 ---
 
@@ -35,7 +34,7 @@ Vous pouvez changer votre photo de profil. Accédez à l'icône **{{site.data.ke
 ## Edition de vos informations IBMid
 {: #ibmid}
 
-Un IBMid est un ID unique que vous utilisez pour vous connecter à votre compte {{site.data.keyword.Bluemix_notm}} afin de vous servir des fonctions d'infrastructure, de services et d'application. Vous ne pouvez pas changer votre IBMid, mais vous pouvez éditer vos informations de profil associées, comme votre nom, votre adresse électronique, votre numéro de téléphone, votre mot de passe ou le nom de votre société. Accédez à l'icône **{{site.data.keyword.avatar}}** ![icône Avatar](../icons/i-avatar-icon.svg) &gt; **Profil et paramètres**. Pour plus d'informations, voir [Passage à l'IBMid et liaison des comptes](/docs/account?topic=account-unifyingaccounts).
+Un IBMid est un ID unique que vous utilisez pour vous connecter à votre compte {{site.data.keyword.Bluemix_notm}} afin de vous servir des fonctions d'infrastructure, de services et d'application. Vous ne pouvez pas changer votre IBMid, mais vous pouvez éditer vos informations de profil associées, comme votre nom, votre adresse électronique, votre numéro de téléphone, votre mot de passe ou le nom de votre société. Accédez à l'icône **{{site.data.keyword.avatar}}** ![icône Avatar](../icons/i-avatar-icon.svg) &gt; **Profil et paramètres**. Pour plus d'informations, voir [Passage à l'IBMid et liaison des comptes](softlayerlink.html).
 
 
 ## Changement de vos paramètres de cookie
