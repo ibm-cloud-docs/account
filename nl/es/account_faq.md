@@ -117,7 +117,7 @@ Si tiene un tipo de cuenta apto, vaya a **Gestionar** > **Cuenta** > **Valores d
 
 ![Captura de pantalla de valores de cuenta](images/cancel-faq3.svg "Captura de pantalla de valores de cuenta")
 
-Si va a la página **Valores de cuenta** y no se muestra el botón **Desactivar cuenta**, puede llamar al teléfono 1-866-325-0045 y seleccionar la tercera opción o bien puede abrir un caso de soporte. 
+Si va a la página **Valores de cuenta** y no se muestra el botón **Desactivar cuenta**, puede llamar al teléfono 1-866-325-0045 y seleccionar la tercera opción o bien puede abrir un caso de soporte.
 
 ## ¿Cómo puedo suprimir mi cuenta?
 {: #deleteaccount}
@@ -155,7 +155,7 @@ Después de enlazar su cuenta, utilice su IBMid para iniciar una sesión en la c
 {: #al_support}
 {: faq}
 
-Después de enlazar su cuenta, mantendrá el mismo nivel de soporte que el que tenía al añadir la plataforma de {{site.data.keyword.Bluemix_notm}} a su cuenta.
+Después de enlazar su cuenta, mantendrá el mismo nivel de soporte que el que tenía al añadir la plataforma {{site.data.keyword.Bluemix_notm}} a su cuenta.
 
 ## ¿Hay otras formas de obtener ayuda con relación al enlace de cuentas? 
 {: #al_morehelp}
@@ -169,7 +169,7 @@ Después de enlazar su cuenta, mantendrá el mismo nivel de soporte que el que t
 {: #al_multacct}
 {: faq}
 
-Si tiene varias cuentas de SoftLayer, primero debe enlazar las cuentas que tengan una cuenta de plataforma de {{site.data.keyword.Bluemix_notm}} coincidente, y el correspondiente IBMid.
+Si tiene varias cuentas de SoftLayer, primero debe enlazar las cuentas que tengan una cuenta de plataforma {{site.data.keyword.Bluemix_notm}} coincidente, y el correspondiente IBMid.
 
 Si no tiene una cuenta de la plataforma {{site.data.keyword.Bluemix_notm}} coincidente, y la correspondiente cuenta IBMid, se puede crear una nueva cuenta de SoftLayer para enlazar las cuentas.
 
