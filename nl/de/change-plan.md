@@ -67,7 +67,7 @@ Als Alternative zur Konsole können Sie den Plan eines Service über die {{site.
      ```
      {: codeblock}
 
-   - Wenn der Service nicht RC-fähig ist und daher auf Cloud Foundry basiert, können Sie Ihren Plan mit dem [Befehl `ibmcloud cf update-service`](/docs/cli/reference/ibmcloud?topic=cloud-cli-cf#cf) ändern.
+   - Wenn der Service nicht RC-fähig ist und daher auf Cloud Foundry basiert, können Sie Ihren Plan mithilfe des [Befehls `ibmcloud cf update-service`](/docs/cli?topic=cloud-cli-ibmcloud_commands_services#ibmcloud_service_update) ändern.
 
      ```
      ibmcloud cf update-service <service_instance_name> [-p <plan_name>]

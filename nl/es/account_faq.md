@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-25"
+lastupdated: "2019-04-09"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -115,6 +115,18 @@ Sí, puede actualizarla a una cuenta facturable y seguir utilizando las instanci
 Para actualizar el método de pago asociado a su cuenta, vaya a [Pagos](https://cloud.ibm.com/billing/payments) en la consola. Bajo Añadir método de pago, especifique la información de facturación correspondiente a la nueva tarjeta y pulse **Añadir tarjeta de crédito**.
 
 Para cambiar a otro método de pago, seleccione **Pagar con otro método** y luego pulse **Enviar solicitud de cambio**. Se creará automáticamente un caso de soporte para cambiar su método de pago.
+
+## ¿Cómo se cambian los valores de notificación por correo electrónico?
+{: #change-email-prefs}
+{: faq}
+
+Puede cambiar las notificaciones por correo electrónico que recibe para sucesos planificados, sucesos no planificados y anuncios en los valores de su perfil.
+1. Vaya a [Notificaciones](https://cloud.ibm.com/user/notifications) en los valores del perfil.
+1. Seleccione si desea recibir notificaciones por correo electrónico para cada tipo de suceso.
+
+Para los servicios de la infraestructura clásica, los propietarios de cuentas también pueden suscribir usuarios a notificaciones de estos servicios en **Gestionar > Cuenta > Notificaciones**.
+
+Para obtener más información, consulte [Establecimiento de preferencias de correo electrónico](/docs/account?topic=account-email-prefs).
 
 ## ¿Cómo puedo restablecer mi contraseña?
 {: #reset-password}
@@ -234,11 +246,11 @@ Si tiene más de una cuenta, puede pulsar en el nombre de la cuenta para selecci
 
 ![Captura de pantalla del conmutador de cuentas](images/account-faq.svg "Captura de pantalla del conmutador de cuentas")
 
-## ¿Puedo conmutar entre propietarios de cuentas?
+## ¿Puedo convertir a alguien más en propietario de cuenta?
 {: #switch-account-owners}
 {: faq}
 
-No puede conmutar el propietario de una cuenta, pero puedo cambiar propietarios de recursos. Para obtener más información sobre el cambio de la propiedad, consulte [Cómo transferir la propiedad de un recurso privado](/docs/account?topic=account-include#owners).
+No puede cambiar el propietario de una cuenta, pero puedo cambiar propietarios de recursos. Para obtener más información sobre el cambio de la propiedad, consulte [Cómo transferir la propiedad de un recurso privado](/docs/account?topic=account-include#owners).
 
 ## ¿Ofrece soporte {{site.data.keyword.Bluemix_notm}} al registro por lotes de los usuarios?
 {: #batch-registration}

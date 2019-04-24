@@ -123,4 +123,4 @@ IBM 标识是您用于登录到 {{site.data.keyword.Bluemix}} 帐户以访问和
 
 其他多因子认证方法不是按 IBM 标识进行的。而是按帐户进行的。当一个 IBM 标识与多个帐户相关联，而您在各帐户之间进行切换时，每次切换到要求双因子认证的不同帐户时都必须确认身份。即使旧帐户和新帐户都配置了相同的双因子认证机制，也是如此。
 
-如果先前已针对经典基础架构资源[在客户门户网站中启用了 2FA](/docs/customer-portal?topic=customer-portal-customerportal_2fa)，然后又启用了 {{site.data.keyword.Bluemix_notm}} 帐户的 MFA 设置，那么 MFA 帐户设置会覆盖在客户门户网站中设置的 2FA。这意味着，您可以禁用在客户门户网站中购买的 2FA，而使用帐户的 MFA 设置。
+如果先前已针对经典基础架构资源[在客户门户网站中启用了 2FA](/docs/customer-portal?topic=customer-portal-cp_setup-2fa#cp-enable-2fa)，然后又启用了 {{site.data.keyword.Bluemix_notm}} 帐户的 MFA 设置，那么 MFA 帐户设置会覆盖在客户门户网站中设置的 2FA。这意味着，您可以禁用在客户门户网站中购买的 2FA，而使用帐户的 MFA 设置。

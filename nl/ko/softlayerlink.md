@@ -122,4 +122,4 @@ IBM ID로 로그인 시에 발생하는 문제점을 해결하려면 [{{site.dat
 
 기타 다단계 인증 방법은 IBM ID별이 아닙니다. 계정별로 수행됩니다. IBM ID가 여러 계정과 연관되어 있고, 계정 간에 전환할 때는 2단계 인증이 필요한 다른 계정으로 전환할 때마다 ID를 확인해야 합니다. 이는 이전 계정과 새 계정이 모두 같은 2단계 인증 메커니즘으로 구성된 경우에도 해당됩니다.
 
-이전에 클래식 인프라 리소스에 대해 [고객 포털에서 2FA](/docs/customer-portal?topic=customer-portal-customerportal_2fa)를 사용으로 설정한 후 {{site.data.keyword.Bluemix_notm}} 계정 MFA 설정을 사용으로 설정한 경우에는 MFA 계정 설정이 고객 포털에서 설정된 2FA를 대체합니다. 이는 계정 MFA 설정을 위해 고객 포털에서 구매한 2FA를 사용 안함으로 설정할 수 있음을 의미합니다.
+이전에 클래식 인프라 리소스에 대해 [고객 포털에서 2FA](/docs/customer-portal?topic=customer-portal-cp_setup-2fa#cp-enable-2fa)를 사용으로 설정한 후 {{site.data.keyword.Bluemix_notm}} 계정 MFA 설정을 사용으로 설정한 경우에는 MFA 계정 설정이 고객 포털에서 설정된 2FA를 대체합니다. 이는 계정 MFA 설정을 위해 고객 포털에서 구매한 2FA를 사용 안함으로 설정할 수 있음을 의미합니다.

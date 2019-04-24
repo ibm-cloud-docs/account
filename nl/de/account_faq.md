@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-25"
+lastupdated: "2019-04-09"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -113,6 +113,18 @@ Sie können die Zahlungsmethode, die Ihrem Konto zugeordnet ist, aktualisieren, 
 
 Wenn Sie zu einer anderen Zahlungsmethode wechseln möchten, wählen Sie die Option für eine **Andere Zahlungsmethode** aus und klicken Sie auf **Änderungsanforderung senden**. Ein Supportfall zum Ändern Ihrer Zahlungsmethode wird für Sie erstellt.
 
+## Wie ändere ich meine Einstellungen für die E-Mail-Benachrichtigung?
+{: #change-email-prefs}
+{: faq}
+
+In Ihren Profileinstellungen können Sie ändern, welche E-Mail-Benachrichtigungen Sie für geplante Ereignisse, ungeplante Ereignisse und Ankündigungen erhalten möchten.
+1. Wechseln Sie in Ihren Profileinstellungen zu [Ankündigungen](https://cloud.ibm.com/user/notifications).
+1. Wählen Sie für jeden Ereignistyp aus, ob Sie E-Mail-Benachrichtigungen erhalten möchten.
+
+Bei klassischen Infrastrukturservices können Kontoeigner auch für Benutzer Abonnements für diese Services einrichten, indem **Verwalten > Konto > Benachrichtigungen** aufgerufen wird.
+
+Weitere Informationen finden Sie in [E-Mail-Vorgaben festlegen](/docs/account?topic=account-email-prefs).
+
 ## Wie kann ich mein Kennwort zurücksetzen?
 {: #reset-password}
 {: faq}
@@ -123,7 +135,7 @@ Führen Sie die folgenden Schritte aus, um Ihr VPN-Kennwort zurückzusetzen:
 
   1. Rufen Sie **Verwalten > Zugriff (IAM)** auf und wählen Sie **Benutzer** aus.
   2. Wählen Sie den Benutzer aus.
-  3. Klicken Sie im Abschnitt zu den VPN-Teilnetzen auf das Bearbeitungssymbol ![Bearbeitungssymbol](../icons/icon_write.svg), um ein neues VPN-Kennwort einzugeben.
+  3. Klicken Sie im Abschnitt zu den VPN-Teilnetzen auf das Bearbeitungssymbol ![Symbol 'Bearbeiten'](../icons/icon_write.svg), um ein neues VPN-Kennwort einzugeben.
   5. Klicken Sie auf **Anwenden**.
 
 ## Wie kann ich mein Konto kündigen?
@@ -230,7 +242,7 @@ Wenn Sie über mehrere Konten verfügen, können Sie auf einen der Kontonamen kl
 
 ![Screenshot zum Wechseln von Konten](images/account-faq.svg "Screenshot zum Wechseln von Konten")
 
-## Kann ich den Kontoeigner wechseln?
+## Kann ich eine andere Person als Kontoeigner angeben?
 {: #switch-account-owners}
 {: faq}
 
