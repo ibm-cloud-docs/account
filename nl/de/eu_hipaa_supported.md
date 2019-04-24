@@ -1,25 +1,23 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-03-20"
 
-keywords: GDPR, HIPAA, data security, PHI, account settings, europe
+  years: 2018
 
-subcollection: account
+lastupdated: "2018-12-02" 
 
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:important: .important}
 {:tip: .tip}
-{:note: .note}
+{:important: .important}
+
 
 # Einstellungen für 'Unterstützung in der EU' und 'HIPAA-Unterstützung' aktivieren
-{: #eu-hipaa-supported}
+{: #eu-hipaa-supoorted}
 
-Als Kontoeigner können Sie für Ihr Konto die Einstellungen 'Unterstützung in der EU' und 'HIPAA-Unterstützung' aktivieren. Eine Aktivierung der Einstellung 'Unterstützung in der EU' kann z. B. sinnvoll sein, wenn Sie Ihre Ressourcen für die Verarbeitung von personenbezogenen Daten von EU-Bürgern verwenden. Darüber hinaus können Sie die Einstellung 'HIPAA-Unterstützung' aktivieren, wenn Sie planen, PHI-Daten (Protected Health Information, geschützte Gesundheitsdaten) in Services zu verwenden, die mit HIPAA-Unterstützung arbeiten.
+Als Kontoeigner können Sie für Ihr Konto die Einstellungen 'Unterstützung in der EU' und 'HIPAA-Unterstützung' aktivieren. Eine Aktivierung der Einstellung 'Unterstützung in der EU' kann z. B. sinnvoll sein, wenn Sie Ihre Ressourcen für die Verarbeitung von personenbezogenen Daten von EU-Bürgern verwenden. Darüber hinaus können Sie die Einstellung 'HIPAA-Unterstützung' aktivieren, wenn Sie planen, PHI-Daten (Protected Health Information, geschützte Gesundheitsdaten) in Services zu verwenden, die mit HIPAA-Unterstützung arbeiten. 
 {:shortdesc}
 
 
@@ -36,31 +34,22 @@ Durch die Aktivierung dieser Einstellung verfügen die Services mit Unterstützu
   4. Klicken Sie auf **Ein**.
 
    Nachdem Sie die Einstellung 'Unterstützung in der EU' aktiviert haben, können Sie den Tag 'Unterstützung in der EU' verwenden, um den Katalog nach Angeboten zu durchsuchen, die in der EU unterstützte Planungen aufweisen.
+   {: tip}
 
 
 ## Einstellung 'HIPAA-Unterstützung' aktivieren
 {: #enabling-hipaa}
 
-In den US-amerikanischen Health Insurance Portability and Accountability Act (HIPAA) und Health Information Technology for Economic and Clinical Health (HITECH) Act sind Standards zur Verarbeitung elektronischer Transaktionen und Informationen des Gesundheitswesens definiert. Falls es sich bei Ihnen oder Ihrer Firma der HIPAA-Definition entsprechend um ein Unternehmen im Gesundheitswesen handelt, müssen Sie die Einstellung 'HIPAA-Unterstützung' aktivieren, wenn Sie sensible Workloads ausführen, die den Bestimmungen von HIPAA und dem HITECH Act unterliegen. Weitere Informationen zur {{site.data.keyword.Bluemix_notm}}-Compliance finden Sie in [Compliance in {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud/compliance){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link").
-
-Das Aktivieren dieser Einstellung bewirkt Folgendes:
-
-* Ermöglicht das Filtern nach Services mit HIPAA-Unterstützung im Katalog. 
-* Informiert IBM darüber, dass in Ihrem Konto geschützte Gesundheitsdaten (Protected Health Information, PHI) gespeichert werden. 
-* Akzeptiert die Bedingungen des IBM Business Associate Addendum (BAA) für Unternehmen im Gesundheitswesen digital. 
-
-Aktivieren Sie diese Einstellung nur, wenn es sich bei Ihnen oder Ihrer Firma der HIPAA-Definition entsprechend um ein Unternehmen im Gesundheitswesen handelt. Wenn Sie oder Ihre Firma Geschäftspartner eines Unternehmens im Gesundheitswesen sind, [kontaktieren Sie den {{site.data.keyword.Bluemix_notm}} Vertrieb ](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-wcp){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link"), um das hierfür gültige BAA zu akzeptieren. Weitere Informationen zu den HIPAA-Definitionen für Unternehmen im Gesundheitswesen und Geschäftspartner finden Sie auf der Website [US Department of Health & Human Services](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link").
-{: important}
-
-Konten mit aktivierter Einstellung 'HIPAA-Unterstützung' verfügen weiterhin über Zugriff auf den gesamten Servicekatalog. Für {{site.data.keyword.Bluemix_notm}}-Services werden normalerweise mehrere Pläne angeboten. Die Kennzeichnung 'HIPAA-Unterstützung aktiviert' eines Service kann sich auf alle verfügbaren Pläne beziehen oder auf bestimmte Pläne oder Konfigurationen begrenzt sein. Sie als Kunde sind allein dafür verantwortlich, geschützte Gesundheitsdaten (PHI) auf Angebotspläne zu begrenzen, für die die HIPAA-Unterstützung aktiviert ist, und bei der Produktentwicklung die in HIPAA und HITECH festgelegten Bestimmungen einzuhalten. 
+Sie können die Einstellung 'HIPAA-Unterstützung' aktivieren, um sensible Workloads auszuführen, die der Regulierung der US-amerikanischen HIPAA-Standards (HIPAA = Health Insurance Portability and Accountability Act) unterliegen. Wenn Sie diese Einstellung aktivieren, geben Sie an, dass in Ihrem Konto PHI-Daten verarbeitet werden, die möglicherweise den HIPAA-Vorgaben unterliegen. 
 
 1. Rufen Sie **Verwalten > Konto** auf und wählen Sie **Kontoeinstellung** in der Konsole aus.
-2. Klicken Sie für die Option 'HIPAA-Unterstützung' auf **Ein**.
-3. Lesen Sie die Informationen zur Aktivierung dieser Einstellung.
+2. Klicken Sie für die Option 'HIPAA-Unterstützung' auf **Ein**. 
+3. Lesen Sie die Informationen zur Aktivierung dieser Einstellung. 
 
   Nachdem Sie diese Einstellung aktiviert haben, können Sie sie nicht mehr inaktivieren.
-  {: note}
-
-4. Wählen Sie **Zustimmen** aus und klicken Sie auf **Senden**.
+  {: important}
+   
+4. Wählen Sie **Zustimmen** aus und klicken Sie auf **Senden**. 
 
   Nachdem Sie die Einstellung 'HIPAA-fähig' aktiviert haben, können Sie den Tag 'HIPAA-fähig' verwenden, um den Katalog nach Angeboten zu durchsuchen, die HIPAA-fähig sind.
+  {: tip}

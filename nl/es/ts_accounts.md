@@ -177,7 +177,7 @@ Para crear un espacio, utilice uno de estos métodos:
 {: tsResolve}
 
   * En la barra de menús, pulse **Gestionar > Cuenta** y pulse **Organizaciones**. A continuación, seleccione la organización en la que desea crear el espacio y pulse **Crear un espacio**.
-  * En la interfaz de línea de mandatos Cloud Foundry, escriba `cf create-space <space_name> -o <organization_name>`.
+  * En la interfaz de línea de mandatos de Cloud Foundry, escriba `cf create-space <space_name> -o <organization_name>`.
 
 
 ## ¿Por qué algunas apps comparten un nombre de dominio?

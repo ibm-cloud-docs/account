@@ -1,25 +1,23 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-03-20"
 
-keywords: GDPR, HIPAA, data security, PHI, account settings, europe
+  years: 2018
 
-subcollection: account
+lastupdated: "2018-12-02" 
 
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:important: .important}
 {:tip: .tip}
-{:note: .note}
+{:important: .important}
+
 
 # Activation des paramètres pris en charge dans l'Union Européenne et pour la loi HIPAA
-{: #eu-hipaa-supported}
+{: #eu-hipaa-supoorted}
 
-Si vous êtes propriétaire du compte, vous pouvez faire en sorte que votre compte soit pris en charge pour l'Union Européenne ainsi que pour la loi HIPAA. Vous pouvez décider, par exemple, d'activer le paramètre Support dans l'Union européenne si vous utilisez des ressources pour le traitement de données personnelles de citoyens européens. Vous pouvez également choisir d'activer le paramètre Loi HIPAA prise en charge si vous planifiez d'inclure des renseignements médicaux personnels (PHI, Protected Health Information) dans les services activés par HIPAA.
+Si vous êtes propriétaire du compte, vous pouvez faire en sorte que votre compte soit pris en charge pour l'Union Européenne ainsi que pour la loi HIPAA. Vous pouvez décider, par exemple, d'activer le paramètre Support dans l'Union européenne si vous utilisez des ressources pour le traitement de données personnelles de citoyens européens. Vous pouvez également choisir d'activer le paramètre Loi HIPAA prise en charge si vous planifiez d'inclure des renseignements médicaux personnels (PHI, Protected Health Information) dans les services activés par HIPAA. 
 {:shortdesc}
 
 
@@ -36,31 +34,22 @@ En activant ce paramètre, les services pris en charge pour l'Union européenne 
   4. Cliquez sur **Activer**.
 
    Après avoir activé le paramètre Support dans l'Union européenne, vous pouvez utiliser la balise correspondante pour rechercher dans le catalogue des offres avec des plans couvrant l'Union européenne.
+   {: tip}
 
 
 ## Activation du paramètre de prise en charge HIPAA
 {: #enabling-hipaa}
 
-Les lois HIPAA et HITECH américaines définissent des normes pour la gestion électronique des informations et des transactions concernant les soins de santé. Si vous (ou votre entreprise) êtes une entité couverte, selon la définition faite dans la loi HIPAA, vous devez activer le paramètre Loi HIPAA prise en charge si vous exécutez des charges de travail sensibles soumises aux lois HIPAA et HITECH. Pour en savoir plus sur la conformité {{site.data.keyword.Bluemix_notm}}, voir [Conformité sur l'{{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/fr-fr/cloud/compliance){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe").
-
-L'activation de ce paramètre permet :
-
-* d'effectuer le filtrage en fonction des services du catalogue activés pour HIPAA
-* d'indiquer à IBM que votre compte stocke des renseignements médicaux protégés
-* d'accepter numériquement l'annexe IBM Business Associate Addendum (BAA) pour les entités couvertes
-
-Activez ce paramètre uniquement si vous (ou votre entreprise) êtes une entité couverte, comme cela est défini par la loi HIPAA. Si vous (ou votre entreprise) êtes un partenaire accrédité d'une entité couverte, [prenez contact avec le service commercial {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-wcp){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe") pour accepter l'annexe IBM Cloud Business Associate Addendum (BAA) applicable. Pour plus d'informations sur les définitions HIPAA des entités couvertes et des partenaires accrédités, consultez le site Web [US Department of Health & Human Services](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe").
-{: important}
-
-Les comptes qui activent le paramètre Loi HIPAA prise en charge ont toujours accès à l'ensemble du catalogue de services. Les services {{site.data.keyword.Bluemix_notm}} proposent généralement plusieurs plans. Le libellé Activé pour HIPAA sur un service peut s'appliquer à tous les plans disponibles ou être limité à des plans ou à des configurations spécifiques. Vous, client, avez seul la charge de limiter les renseignements médicaux personnels aux architectures et aux plans d'offre activés pour HIPAA et conformes aux lois HIPAA et HITECH.
+Vous pouvez choisir d'activer le paramètre Loi HIPAA prise en charge pour l'exécution de charges de travail sensibles qui sont régies par la loi américaine Health Insurance Portability and Accountability Act (HIPAA). En activant ce paramètre, vous indiquez que votre compte traite des renseignements médicaux personnels pouvant être soumis à la loi HIPAA. 
 
 1. Accédez à **Gérer > Compte** et sélectionnez **Paramètres de compte** dans la console.
-2. Pour l'option Loi HIPAA prise en charge, cliquez sur **Activé**.
-3. Lisez les informations associées avant d'activer ce paramètre.
+2. Pour l'option Loi HIPAA prise en charge, cliquez sur **Activé**. 
+3. Lisez les informations associées avant d'activer ce paramètre. 
 
   Vous ne pouvez pas désactiver ce paramètre une fois que vous l'avez activé.
-  {: note}
-
-4. Sélectionnez **Accepter** puis cliquez sur **Soumettre**.
+  {: important}
+   
+4. Sélectionnez **Accepter** puis cliquez sur **Soumettre**. 
 
   Après avoir activé le paramètre Loi HIPAA prise en charge, vous pouvez utiliser la balise HIPAA activé pour rechercher dans le catalogue des offres activées pour HIPAA.
+  {: tip}
