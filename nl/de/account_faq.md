@@ -97,6 +97,8 @@ Wenn Sie über ein gebührenpflichtiges Konto verfügen, gibt es keinen Grenzwer
   * Für ein Upgrade auf ein Abonnementkonto klicken Sie auf **Upgrade**.
 * Zum Konvertieren zwischen einem nutzungsabhängigen und einem Abonnementkonto wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}} Vertrieb ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
+Den aktuellen Kontotyp finden Sie auf der Seite mit den Kontoeinstellungen. 
+
 Weitere Informationen finden Sie in [Upgrade für das Konto durchführen](/docs/account?topic=account-upgrading-account).
 
 ## Kann ich meine vorhandenen Instanzen weiterhin verwenden, wenn ich ein Upgrade für mein Lite-Konto durchführe?
@@ -172,7 +174,7 @@ Wenn Sie glauben, dass Ihr Konto aufgrund eines Fehlers inaktiviert wurde, wende
 {: #contactsupport}
 {: faq}
 
-Klicken Sie auf **Support** in der Menüleiste der Konsole, um das Support Center aufzurufen. Weitere Informationen zur Unterstützung finden Sie in [Unterstützung anfordern](/docs/get-support?topic=get-support-support-plans].
+Klicken Sie auf **Support** in der Menüleiste der Konsole, um das Support Center aufzurufen. Weitere Informationen zum Support finden Sie in [Unterstützung anfordern](/docs/get-support?topic=get-support-support-plans). 
 
 
 ## Kann ich eine Registrierung für eine kostenfreie Testversion durchführen?

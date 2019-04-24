@@ -97,6 +97,8 @@ Si vous avez un compte facturable, le nombre de groupes de ressources, d'organis
   * Pour effectuer une mise à niveau vers un compte Abonnement, cliquez sur **Mettre à niveau**.
 * Pour effectuer une conversion entre des types de compte Paiement à la carte et Abonnement, prenez contact avec le [service commercial {{site.data.keyword.Bluemix_notm}}![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
+Si vous ne savez pas quel est votre type de compte, consultez la page Paramètres de compte.
+
 Pour plus d'informations, voir [Mise à niveau de votre compte](/docs/account?topic=account-upgrading-account).
 
 ## Si je mets à niveau mon compte Lite, puis-je continuer d'utiliser mes instances existantes ?
@@ -172,7 +174,7 @@ Si vous pensez que votre compte a été désactivé à tort, contactez le servic
 {: #contactsupport}
 {: faq}
 
-Cliquez sur **Support** dans la barre de menus de la console pour accéder au centre de support. Pour plus d'informations sur le support, voir [Support](/docs/get-support?topic=get-support-support-plans].
+Cliquez sur **Support** dans la barre de menus de la console pour accéder au centre de support. Pour en savoir plus sur le support, voir [Support](/docs/get-support?topic=get-support-support-plans).
 
 
 ## Puis-je souscrire à un essai gratuit ?

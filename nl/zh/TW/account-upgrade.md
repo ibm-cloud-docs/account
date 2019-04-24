@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-19"
+lastupdated: "2019-04-17"
 
 keywords: account upgrade, paid account, production account, Pay-As-You-Go, Subscription
 
@@ -23,6 +23,8 @@ subcollection: account
 
 精簡帳戶讓您能輕鬆開始使用 {{site.data.keyword.Bluemix}} 並試用服務。當您準備好接觸更多內容時，可將帳戶升級至「隨收隨付制」或「訂閱」帳戶，以解除鎖定可用於正式作業的完整服務型錄。
 {:shortdesc}
+
+您可以移至**管理 > 帳戶 > 帳戶設定**，然後在_帳戶類型_ 下尋找，來檢查您的現行帳戶類型。
 
 不確定要升級到何種帳戶？請在[帳戶類型](/docs/account?topic=account-accounts)取得關於每種帳戶類型好處的相關資訊。
 {: tip}
@@ -49,13 +51,13 @@ subcollection: account
 1. 移至**管理 > 帳戶**，然後選取**帳戶設定**。然後按一下**升級**，這會將您帶到「訂閱」頁面。
 1. 選取您的每月消費承諾和訂閱期限，然後按一下**開始使用**。
 
-   如果您不確定一般用量可能花費多少，可以使用[成本預估器](/estimator/review){:new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示") 進行預估。
+   如果您不確定一般用量可能花費多少，可以使用[成本預估器](https://{DomainName}/estimator/review){:new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示") 進行預估。
    {:tip}
 1. 檢閱您的訂閱詳細資料，然後輸入付款資訊。
 
    付款資訊經過處理之後，您的訂閱額度便已加到帳戶。
 
-您的訂閱會自動更新。如果想要停止訂閱更新，請[與支援中心聯絡](/unifiedsupport/supportcenter)。
+您的訂閱會自動更新。如果想要停止訂閱更新，請[與支援中心聯絡](https://{DomainName}/unifiedsupport/supportcenter)。
 {: note}
 
 ### 將隨收隨付制帳戶轉換成訂閱帳戶

@@ -97,6 +97,8 @@ Lite 플랜 인스턴스의 어느 할당량에든 도달하면 해당 월에 �
   * 구독 계정으로 업그레이드하려면 **업그레이드**를 클릭하십시오.
 * 종량과금제 계정과 구독 계정을 상호 변환하려면 [{{site.data.keyword.Bluemix_notm}} 영업 팀 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}에 문의하십시오.
 
+현재 계정 유형을 모르는 경우에는 계정 설정 페이지에서 찾아볼 수 있습니다. 
+
 [계정 업그레이드](/docs/account?topic=account-upgrading-account)에서 자세히 볼 수 있습니다.
 
 ## 내 Lite 계정을 업그레이드하는 경우 내 기존 인스턴스를 계속 사용할 수 있습니까?
@@ -172,7 +174,7 @@ VPN 비밀번호를 재설정하려면 다음 단계를 완료하십시오.
 {: #contactsupport}
 {: faq}
 
-콘솔 메뉴 표시줄에서 **지원**을 클릭하여 지원 센터로 이동하십시오. [지원 받기](/docs/get-support?topic=get-support-support-plans]에서 지원에 대해 자세히 알아볼 수 있습니다.
+콘솔 메뉴 표시줄에서 **지원**을 클릭하여 지원 센터로 이동하십시오. [지원 받기](/docs/get-support?topic=get-support-support-plans)에서 지원에 대해 더 자세히 알아보십시오. 
 
 
 ## 무료 평가판을 위해 등록할 수 있습니까?

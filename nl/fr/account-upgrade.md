@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-19"
+lastupdated: "2019-04-17"
 
 keywords: account upgrade, paid account, production account, Pay-As-You-Go, Subscription
 
@@ -23,6 +23,8 @@ subcollection: account
 
 Les comptes Lite vous permettent de commencer à utiliser {{site.data.keyword.Bluemix}} et de tester les services. Lorsque vous êtes prêt à passer à l'étape suivante, vous pouvez utiliser un compte Paiement à la carte ou un compte d'abonnement. L'ensemble du catalogue de services prêts pour la production est alors déverrouillé.
 {:shortdesc}
+
+Pour connaître votre type de compte, accédez à la section **Gérer > Compte > Paramètres de compte** et consultez les données indiquées dans _Type de compte_.
 
 Vous ne savez pas quel type de compte vous souhaitez désormais utiliser ? La section [Types de compte](/docs/account?topic=account-accounts) inclut des informations détaillées sur les avantages de chaque type de compte.
 {: tip}
@@ -49,13 +51,13 @@ Pour effectuer une mise à niveau à partir d'un compte Lite, procédez comme su
 1. Accédez à **Gérer > Compte** puis sélectionnez **Paramètres de compte**. Cliquez ensuite sur **Mettre à niveau**. La page Abonnements s'affiche alors.
 1. Sélectionnez votre engagement financier ainsi que votre durée d'abonnement puis cliquez sur **Commencer**.
 
-   Si vous ne savez pas combien votre utilisation standard peut coûter, vous pouvez l'estimer en utilisant l'[estimateur de coût](/estimator/review){:new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe").
+   Si vous ne savez pas combien votre utilisation standard peut coûter, vous pouvez l'estimer en utilisant l'[estimateur de coût](https://{DomainName}/estimator/review){:new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe").
    {:tip}
 1. Consultez les détails de votre abonnement puis entrez vos informations de paiement.
 
    Une fois vos informations de paiement traitées, votre crédit d'abonnement est ajouté à votre compte.
 
-Votre abonnement est automatiquement renouvelé. Si vous souhaitez l'arrêter, [contactez le support](/unifiedsupport/supportcenter).
+Votre abonnement est automatiquement renouvelé. Si vous souhaitez l'arrêter, [contactez le support](https://{DomainName}/unifiedsupport/supportcenter).
 {: note}
 
 ### Conversion d'un compte Paiement à la carte en compte d'abonnement

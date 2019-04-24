@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-19"
+lastupdated: "2019-04-17"
 
 keywords: account upgrade, paid account, production account, Pay-As-You-Go, Subscription
 
@@ -23,6 +23,8 @@ subcollection: account
 
 轻量帐户可让您轻松地开始使用 {{site.data.keyword.Bluemix}} 和试用服务。如果需要使用更多服务，可以将您的帐户升级为现收现付帐户或预订帐户，以解锁生产就绪型服务的整个目录。
 {:shortdesc}
+
+您可以转至**管理 > 帐户 > 帐户设置**，然后在_帐户类型_下查看您的当前帐户类型。
 
 不确定要升级到哪种帐户？有关每种帐户类型的优点的详细信息，请参阅[帐户类型](/docs/account?topic=account-accounts)。
 {: tip}
@@ -49,13 +51,13 @@ subcollection: account
 1. 转至**管理 > 帐户**，然后选择**帐户设置**。然后，单击**升级**，这将打开“预订”页面。
 1. 选择您的每月花费承诺和预订期限，然后单击**开始使用**。
 
-   如果您不确定在正常使用的情况下成本会是多少，可以使用[成本估算工具](/estimator/review){:new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标") 来进行估算。
+   如果您不确定在正常使用的情况下成本会是多少，可以使用[成本估算工具](https://{DomainName}/estimator/review){:new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标") 来进行估算。
    {:tip}
 1. 查看预订详细信息，然后输入您的付款信息。
 
    当您处理完付款信息后，系统会将您的预订信用值添加到您的帐户中。
 
-您的预订会自动续订。如果要停止续订，请[联系支持人员](/unifiedsupport/supportcenter)。
+您的预订会自动续订。如果要停止续订，请[联系支持人员](https://{DomainName}/unifiedsupport/supportcenter)。
 {: note}
 
 ### 将现收现付帐户转换为预订帐户

@@ -97,6 +97,8 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
   * 要升级为预订帐户，请单击**升级**。
 * 要在现收现付帐户类型和预订帐户类型之间进行转换，请联系 [{{site.data.keyword.Bluemix_notm}} 销售人员 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}。
 
+如果您不确定自己的当前帐户类型，可以在“帐户设置”页面上找到此信息。
+
 要了解更多信息，请参阅[升级帐户](/docs/account?topic=account-upgrading-account)。
 
 ## 如果升级轻量帐户，可以继续使用现有实例吗？
@@ -172,7 +174,7 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 {: #contactsupport}
 {: faq}
 
-在控制台菜单栏中，单击**支持**以转至支持中心。要了解有关支持的更多信息，请参阅 [获取支持](/docs/get-support?topic=get-support-support-plans]。
+在控制台菜单栏中，单击**支持**以转至支持中心。在[获取支持](/docs/get-support?topic=get-support-support-plans)中了解有关支持的更多信息。
 
 
 ## 我能注册以进行免费试用吗？

@@ -97,6 +97,8 @@ Se disponi di un account fatturabile, non esiste alcun limite al numero di grupp
   * Per eseguire l'upgrade a un account Sottoscrizione, fai clic su **Esegui upgrade**.
 * Per una conversione tra i tipi di account Pagamento a consumo e Sottoscrizione, contatta il settore [Vendite di {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
+Se non sei sicuro del tipo di account corrente, puoi trovarlo nella pagina Impostazioni account.
+
 Ulteriori informazioni in [Upgrade del tuo account](/docs/account?topic=account-upgrading-account).
 
 ## Se eseguo l'upgrade del mio account Lite, posso continuare a utilizzare le mie istanze esistenti?
@@ -117,8 +119,8 @@ Per passare a un metodo di pagamento differente, seleziona **Pay with Other** e 
 {: #change-email-prefs}
 {: faq}
 
-Nelle impostazioni del tuo profilo, puoi modificare quali notifiche email riceverai per gli eventi pianificati, per quelli non pianificati e per gli annunci. 
-1. Vai a [Notifiche](https://cloud.ibm.com/user/notifications) nelle impostazioni del tuo profilo. 
+Nelle impostazioni del tuo profilo, puoi modificare quali notifiche email riceverai per gli eventi pianificati, per quelli non pianificati e per gli annunci.
+1. Vai a [Notifiche](https://cloud.ibm.com/user/notifications) nelle impostazioni del tuo profilo.
 1. Seleziona se vuoi ricevere le notifiche email per ogni tipo di evento.
 
 Per i servizi dell'infrastruttura classica, i proprietari di account possono anche sottoscrivere gli utenti alle notifiche provenienti da tali servizi andando a **Gestisci > Account > Notifiche**.
@@ -172,7 +174,7 @@ Se credi che il tuo account sia stato disattivato erroneamente, contatta il supp
 {: #contactsupport}
 {: faq}
 
-Fai clic su **Supporto** dalla barra dei menu della console per andare al Centro di supporto. Ulteriori informazioni sul supporto in [Richiesta di supporto](/docs/get-support?topic=get-support-support-plans].
+Fai clic su **Supporto** dalla barra dei menu della console per andare al Centro di supporto. Per ulteriori informazioni sul supporto, vedi [Richiesta di supporto](/docs/get-support?topic=get-support-support-plans).
 
 
 ## Posso registrarmi per una versione di prova?

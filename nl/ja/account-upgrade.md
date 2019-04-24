@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-19"
+lastupdated: "2019-04-17"
 
 keywords: account upgrade, paid account, production account, Pay-As-You-Go, Subscription
 
@@ -23,6 +23,8 @@ subcollection: account
 
 ライト・アカウントでは、簡単に {{site.data.keyword.Bluemix}} を開始して、サービスを試すことができます。 さらに使用する準備ができたら、ご使用のアカウントを従量課金 (PAYG) アカウントまたはサブスクリプション・アカウントにアップグレードして、実稼働環境で利用可能なサービスのカタログ全体のロックを解除することができます。
 {:shortdesc}
+
+現行のアカウント・タイプは、**「管理」 > 「アカウント」 > 「アカウント設定」**に移動し、_「アカウント・タイプ」_の下で確認できます。
 
 どちらのタイプのアカウントにアップグレードするのかわからない場合は、 それぞれのアカウント・タイプのメリットについて詳しくは、『[アカウント・タイプ](/docs/account?topic=account-accounts)』を参照してください。
 {: tip}

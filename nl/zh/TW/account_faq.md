@@ -97,6 +97,8 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
   * 若要升級至「訂閱」帳戶，請按一下**升級**。
 * 若要在「隨收隨付制」與「訂閱」帳戶類型之間轉換，請與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} 聯絡。
 
+如果您不確定現行帳戶類型為何，可以在「帳戶設定」頁面找到。
+
 請在[升級帳戶](/docs/account?topic=account-upgrading-account)中進一步瞭解。
 
 ## 如果我將「精簡」帳戶升級，還能繼續使用我的現有實例嗎？
@@ -172,7 +174,7 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 {: #contactsupport}
 {: faq}
 
-按一下主控台功能表列中的**支援**，以移至「支援中心」。在[取得支援](/docs/get-support?topic=get-support-support-plans)中進一步瞭解支援中心。
+按一下主控台功能表列中的**支援**，以移至「支援中心」。請在[取得協助](/docs/get-support?topic=get-support-support-plans)中進一步瞭解支援。
 
 
 ## 我可以註冊免費試用嗎？
