@@ -23,7 +23,7 @@ subcollection: account
 您可以變更 {{site.data.keyword.Bluemix}} 服務的方案（如果已啟用該特定服務的方案變更）。您可能想要變更方案，例如，升級或降低方案。您可以從服務實例儀表板變更方案。
 {: shortdesc}
 
-您在尋找關於升級帳戶類型的詳細資料嗎？如需相關資訊，請參閱[如何升級或轉換我的帳戶類型？](/docs/account?topic=account-changeacct)。
+您在尋找關於升級帳戶類型的詳細資料嗎？如需相關資訊，請參閱[升級帳戶](/docs/account?topic=account-upgrading-account)。
 {: tip}
 
 您只能針對特定服務變更服務方案。如果已啟用服務的方案變更，則服務實例儀表板會在導覽中顯示**方案**選項。如果您變更方案，則每一個服務都會有要遵循的不同後續步驟集。

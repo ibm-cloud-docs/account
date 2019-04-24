@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-03-20"
 
 keywords: GDPR, HIPAA, data security, PHI, account settings, europe
 
@@ -14,6 +14,7 @@ subcollection: account
 {:new_window: target="_blank"}
 {:important: .important}
 {:tip: .tip}
+{:note: .note}
 
 # EU 및 HIPAA 지원 설정 사용
 {: #eu-hipaa-supported}
@@ -35,22 +36,31 @@ EU 지원 설정을 사용하면 EU 지역의 {{site.data.keyword.Bluemix_notm}}
   4. **설정**을 클릭하십시오.
 
    EU 지원 설정을 사용으로 설정하고 나면, EU 지원 태그를 사용하여 카탈로그에서 EU 지원 플랜이 포함된 오퍼링을 검색할 수 있습니다.
-   {: tip}
 
 
 ## HIPAA 지원 설정 사용
 {: #enabling-hipaa}
 
-연방의료보험통상책임법(HIPAA)으로 규제되는 민감한 워크로드를 실행할 수 있도록 HIPAA 지원 설정 사용을 선택할 수 있습니다. 이 설정을 사용하면 계정이 HIPAA에 종속될 수 있는 PHI를 처리함을 표시합니다.
+미국 의료 보험 이동 및 책임법(HIPAA)과 경제 및 임상 보건 의료 정보 기술(HITECH)법은 전자 의료 거래 및 정보 취급 표준을 정의합니다. 귀하 또는 귀사가 HIPAA에서 정의한 대상 법인인 경우, HIPAA 및 HITECH 법에 따라 규제되는 중요 워크로드를 실행할 때 HIPAA 지원 설정을 실행해야 합니다. [ {{site.data.keyword.Bluemix_notm}}의 규제 준수](https://www.ibm.com/cloud/compliance){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")에서 {{site.data.keyword.Bluemix_notm}} 규제 준수에 대해 자세히 알아보십시오.
+
+이 설정을 활성화하면 다음과 같은 효과가 있습니다. 
+
+* 카탈로그에서 HIPAA 사용 서비스를 필터링할 수 있습니다. 
+* 계정에 PHI(Protected Health Information)가 저장되어 있음을 IBM에 알립니다. 
+* 대상 법인에 대해 IBM BAA(Business Associate Addendum)를 디지털 방식으로 수락합니다. 
+
+사용자 또는 회사가 HIPAA에서 정의한 대상 법인인 경우에만 이 설정을 활성화하십시오. 귀하 또는 귀사가 대상 법인의 비즈니스 관계자인 경우 [contact {{site.data.keyword.Bluemix_notm}} 영업](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-wcp){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")에 문의하여 해당 BAA를 수락하십시오. 대상 법인 및 비즈니스 관계자의 HIPAA 정의에 대한 자세한 내용은 [US Department of Health & Human Services](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘") 웹 사이트를 참조하십시오.
+{: important}
+
+HIPAA 지원 설정을 활성화한 계정은 여전히 전체 서비스 카탈로그에 액세스할 수 있습니다. {{site.data.keyword.Bluemix_notm}} 서비스는 일반적으로 여러 가지 플랜을 제공합니다. 서비스의 HIPAA 사용 레이블은 사용 가능한 모든 플랜에 적용되거나 특정 계획 또는 구성으로 제한될 수 있습니다. 고객은 PHI를 HIPAA 지원 오퍼링 플랜으로 제한하고 HIPAA 및 HITECH에 따라 설계할 단독 책임이 있습니다. 
 
 1. **관리 > 계정**으로 이동하여 콘솔에서 **계정 설정**을 선택하십시오.
 2. HIPAA 지원 옵션의 경우 **켜짐**을 클릭하십시오.
 3. 이 설정 사용에 대한 정보를 읽으십시오.
 
   설정을 사용으로 설정한 후에는 사용 안함으로 설정할 수 없습니다.
-  {: important}
+  {: note}
 
 4. **승인**을 선택하고 **제출**을 클릭하십시오.
 
   HIPAA 지원 설정을 사용으로 설정하고 나면 HIPAA 지원 태그를 사용하여 카탈로그에서 HIPAA가 사용되는 오퍼링을 검색할 수 있습니다.
-  {: tip}

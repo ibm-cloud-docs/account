@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-04"
+lastupdated: "2019-03-08"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -84,7 +84,6 @@ limites de cota são reconfigurados no primeiro dia de cada mês.
 
 Se você tiver uma conta faturável, não haverá limite para o número de grupos de recursos, organizações ou espaços que podem ser criados dentro de sua conta. No entanto, se você tiver uma conta Lite, estará limitado a uma organização e um grupo de recursos.
 
-
 ## Como eu faço upgrade ou converto o meu tipo de conta?
 {: #changeacct}
 {: faq}
@@ -92,21 +91,15 @@ Se você tiver uma conta faturável, não haverá limite para o número de grupo
 * Para fazer upgrade de uma conta Lite para uma Pré-paga ou de Assinatura, acesse [Configurações da conta](https://{DomainName}/account/settings).
   * Para fazer upgrade para uma conta Pré-paga, clique em **Incluir cartão de crédito**.
   * Para fazer upgrade para uma conta de Assinatura, clique em **Upgrade**.
-* Para converter entre os tipos de conta Pré-paga e de Assinatura, entre em contato com [{{site.data.keyword.Bluemix_notm}} Vendas ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
+* Para converter entre os tipos de conta Pré-paga e de Assinatura, entre em contato com a equipe de [{{site.data.keyword.Bluemix_notm}} Vendas ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
+
+Saiba mais em [Fazendo upgrade de sua conta](/docs/account?topic=account-upgrading-account).
 
 ## Se eu fizer upgrade da minha conta Lite, será possível continuar a usar minhas instâncias existentes?
 {: #nochange}
 {: faq}
 
 Sim, é possível fazer upgrade para uma conta faturável e continuar a usar as instâncias que você criou com sua conta Lite.
-
-
-## Como fazer upgrade da minha conta Pré-paga?
-{: #upgrade}
-{: faq}
-
-Para fazer upgrade da conta Pré-paga para uma conta de Assinatura, entre em contato com [Vendas do IBM Cloud](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo").
-
 
 ## Como atualizar meu cartão de crédito?
 {: #updatepayment}
@@ -135,7 +128,7 @@ Para reconfigurar sua senha da VPN, conclua as etapas a seguir:
 
 Estamos tristes em ver você ir! Se houver alguma maneira de ajudar você com a sua conta antes acessá-la, entre em contato conosco contatando o suporte.
 
-Se decidir sair, a maneira como você cancela a sua conta depende do seu tipo de conta. É possível verificar o seu tipo de conta acessando [Configurações da conta](https://cloud.ibm.com/account/settings) e procurando em Tipo de conta.
+Se decidir sair, a maneira como você cancela a sua conta depende do seu tipo de conta. É possível verificar seu tipo de conta acessando [Configurações da conta](https://cloud.ibm.com/account/settings) e olhando _Tipo de conta_.
 
 * Para contas Pré-pagas ou de Assinatura, a maneira mais rápida de cancelar sua conta é entrar em contato conosco por meio do [bate-papo em tempo real](https://{DomainName}/unifiedsupport/supportcenter) ou ligando para 1-866-325-0045 e selecionando a terceira opção. Como alternativa, é possível abrir um caso de suporte.
 * Para cancelar uma conta Lite, acesse [Configurações da conta](https://cloud.ibm.com/account/settings) e clique em **Desativar conta**.
@@ -163,7 +156,7 @@ Se você acredita que a sua conta foi desativada com erro, entre em contato com 
 {: #contactsupport}
 {: faq}
 
-Clique em **Suporte** na barra de menus do console para acessar o Centro de Suporte.
+Clique em **Suporte** na barra de menus do console para acessar o Centro de Suporte. Saiba mais sobre o suporte em [Obtendo suporte](/docs/get-support?topic=get-support-support-plans].
 
 
 ## Posso inscrever-me para uma avaliação grátis?

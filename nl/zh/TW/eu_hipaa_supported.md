@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-03-20"
 
 keywords: GDPR, HIPAA, data security, PHI, account settings, europe
 
@@ -14,6 +14,7 @@ subcollection: account
 {:new_window: target="_blank"}
 {:important: .important}
 {:tip: .tip}
+{:note: .note}
 
 # 啟用 EU 及 HIPAA 支援的設定
 {: #eu-hipaa-supported}
@@ -35,22 +36,33 @@ subcollection: account
   4. 按一下**開啟**。
 
    啟用「歐盟支援」設定之後，您可以使用「歐盟支援」標籤在型錄中搜尋具有歐盟支援方案的供應項目。
-   {: tip}
+   
 
 
 ## 啟用 HIPAA 支援設定
 {: #enabling-hipaa}
 
-您可以選擇啟用「HIPAA 支援」設定來執行受到「美國醫療保險轉移和責任法 (HIPAA)」管制的機密工作負載。啟用此設定，表示您帳戶會處理可能受 HIPAA 管制的 PHI。
+美國醫療保險轉移和責任法 (HIPAA) 及經濟和臨床健康之健康資訊科技法 (HITECH) 定義了用來處理電子醫療保健交易與資訊的標準。如果您或您的公司依照 HIPAA 定義是受到涵蓋的實體，且您執行受到 HIPAA 和 HITECH 法案規範的機密工作負載，則必須啟用「HIPAA 支援」設定。請在 [Compliance on the {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud/compliance){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示") 中進一步瞭解 {{site.data.keyword.Bluemix_notm}} 法規遵循。
+
+啟用此設定有下列效果：
+
+* 讓您能在型錄中過濾已啟用 HIPAA 的服務
+* 向 IBM 指出您的帳戶儲存了受保護的健康資訊 (PHI)
+* 以數位方式接受受涵蓋實體的 IBM Business Associate Addendum (BAA)
+
+請唯有在您或您的公司依照 HIPAA 定義是受到涵蓋的實體的情況下才啟用此設定。如果您或您的公司是受涵蓋實體的業務往來者，[請與 {{site.data.keyword.Bluemix_notm}} 銷售人員聯絡](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-wcp){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")，以接受適用的 BAA。如需受涵蓋實體及業務往來者的 HIPAA 定義相關資訊，請參閱[美國衛生及公共服務部](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示") 網站。
+{: important}
+
+啟用「HIPAA 支援」設定的帳戶仍可存取完整的服務型錄。{{site.data.keyword.Bluemix_notm}} 服務一般會提供多個方案。服務上的「已啟用 HIPAA」標籤可適用於所有可用的方案，或是限制在特定方案或配置。身為客戶的您，需完全負責將 PHI 限制在「已啟用 HIPAA」的供應項目方案，並根據 HIPAA 及 HITECH 進行建構。
 
 1. 移至**管理 > 帳戶**，然後在主控台中選取**帳戶設定**。
 2. 對於「HIPAA 支援」選項，按一下**開啟**。
 3. 閱讀啟用此設定的相關資訊。
 
   啟用設定之後，您無法予以停用。
-  {: important}
+  {: note}
 
 4. 選取**接受**，然後按一下**提交**。
 
   啟用「HIPAA 支援」設定之後，您可以使用「已啟用 HIPAA」標籤在型錄中搜尋已啟用 HIPAA 的供應項目。
-  {: tip}
+  

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-04"
+lastupdated: "2019-03-08"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -83,7 +83,6 @@ Lite 플랜 인스턴스의 어느 할당량에든 도달하면 해당 월에 �
 
 청구 가능 계정을 보유한 경우에는 계정 내에서 작성할 수 있는 리소스 그룹, 조직 또는 영역의 수에 제한이 없습니다. 그러나 Lite 계정을 보유한 경우에는 하나의 조직과 하나의 리소스 그룹으로 제한됩니다.
 
-
 ## 내 계정 유형을 업그레이드하거나 변환하려면 어떻게 해야 합니까?
 {: #changeacct}
 {: faq}
@@ -93,19 +92,13 @@ Lite 플랜 인스턴스의 어느 할당량에든 도달하면 해당 월에 �
   * 구독 계정으로 업그레이드하려면 **업그레이드**를 클릭하십시오.
 * 종량과금제 계정과 구독 계정을 상호 변환하려면 [{{site.data.keyword.Bluemix_notm}} 영업 팀 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}에 문의하십시오.
 
+[계정 업그레이드](/docs/account?topic=account-upgrading-account)에서 자세히 볼 수 있습니다.
+
 ## 내 Lite 계정을 업그레이드하는 경우 내 기존 인스턴스를 계속 사용할 수 있습니까?
 {: #nochange}
 {: faq}
 
 예, 청구 가능 계정으로 업그레이드한 후에도 Lite 계정에서 작성한 인스턴스를 계속 사용할 수 있습니다.
-
-
-## 내 종량과금제 계정을 어떻게 업그레이드합니까?
-{: #upgrade}
-{: faq}
-
-종량과금제 계정을 구독 계정으로 업그레이드하려면 [IBM Cloud 영업 팀](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")에 문의하십시오.
-
 
 ## 내 신용카드는 어떻게 업데이트합니까?
 {: #updatepayment}
@@ -134,7 +127,7 @@ VPN 비밀번호를 재설정하려면 다음 단계를 완료하십시오.
 
 만족스럽지 못한 점이 있으면 나가기로 결정하기 전에 지원 담당자에게 지원에 대해 문의해 주십시오.
 
-나가기로 결정한 경우 계정 유형에 따라 계정을 취소하는 방법이 다릅니다. [계정 설정](https://cloud.ibm.com/account/settings)으로 이동하여 계정 유형 아래에서 계정 유형을 확인할 수 있습니다.
+나가기로 결정한 경우 계정 유형에 따라 계정을 취소하는 방법이 다릅니다. [계정 설정](https://cloud.ibm.com/account/settings)으로 이동하여 _계정 유형_ 아래에서 계정 유형을 확인할 수 있습니다.
 
 * 종량과금제 또는 구독 계정의 경우, 가장 빠른 계정 취소 방법은 [실시간 대화](https://{DomainName}/unifiedsupport/supportcenter)를 통해 또는 1-866-325-0045 번호로 전화한 후 세 번째 옵션을 선택하여 당사에 요청하는 것입니다. 또는 지원 케이스를 열 수도 있습니다.
 * Lite 계정을 취소하려면 [계정 설정](https://cloud.ibm.com/account/settings)으로 이동하여 **계정 비활성화**를 클릭하십시오.
@@ -162,7 +155,7 @@ VPN 비밀번호를 재설정하려면 다음 단계를 완료하십시오.
 {: #contactsupport}
 {: faq}
 
-콘솔 메뉴 표시줄에서 **지원**을 클릭하여 지원 센터로 이동하십시오.
+콘솔 메뉴 표시줄에서 **지원**을 클릭하여 지원 센터로 이동하십시오. [지원 받기](/docs/get-support?topic=get-support-support-plans]에서 지원에 대해 자세히 알아볼 수 있습니다.
 
 
 ## 무료 평가판을 위해 등록할 수 있습니까?

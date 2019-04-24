@@ -1,5 +1,6 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
+{:utterance .utterance}
 
 {: .toc subcollection="account" audience="platform" arm="3397214" href="/docs/account?topic=account-signing-up-for-ibm-cloud" path="account"}
 Gestión de la cuenta
@@ -11,23 +12,25 @@ Gestión de la cuenta
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
+    index.md
+    
     {: .topicgroup}
-    Configuración de cuenta
+    Configuración de la cuenta
         adminpublic.md
-        index.md
         profile.md
         login_settings.md
 
-    contact_info.md
+    account-upgrade.md
+    feature_codes.md
 
     {: .topicgroup}
-    Valores de cuenta
+    Modificación de los valores de la cuenta
         account_settings.md
-        feature_codes.md
         eu_hipaa_supported.md
+        contact_info.md
+        email.md
 
     change-plan.md
-    email.md
     softlayerlink.md
 
     {: .topicgroup}
@@ -36,7 +39,7 @@ Gestión de la cuenta
         manageorg.md
 
     {: .topicgroup}
-    Gestión de visibilidad del catálogo
+    Gestión de la visibilidad del catálogo
         access.md
         include.md
         exclude.md

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-04"
+lastupdated: "2019-03-08"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -83,29 +83,22 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 
 如果您拥有计费帐户，那么可以在您的帐户中创建任意数量的资源组、组织或空间。但是，如果您拥有轻量帐户，那么只能创建一个组织和一个资源组。
 
-
 ## 如何升级或转换帐户类型？
 {: #changeacct}
 {: faq}
 
-* 要从轻量帐户升级到现收现付帐户帐户，请转至[帐户设置](https://{DomainName}/account/settings)。
+* 要从轻量帐户升级到现收现付帐户或预订帐户，请转至[帐户设置](https://{DomainName}/account/settings)。
   * 要升级为现收现付帐户，请单击**添加信用卡**。
   * 要升级为预订帐户，请单击**升级**。
 * 要在现收现付帐户类型和预订帐户类型之间进行转换，请联系 [{{site.data.keyword.Bluemix_notm}} 销售人员 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}。
+
+要了解更多信息，请参阅[升级帐户](/docs/account?topic=account-upgrading-account)。
 
 ## 如果升级轻量帐户，可以继续使用现有实例吗？
 {: #nochange}
 {: faq}
 
 可以，可以升级到计费帐户，并继续使用通过轻量帐户创建的实例。
-
-
-## 如何升级现收现付帐户？
-{: #upgrade}
-{: faq}
-
-要将现收现付帐户升级到预订帐户，请联系 [IBM Cloud 销售人员](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")。
-
 
 ## 如何更新信用卡？
 {: #updatepayment}
@@ -134,7 +127,7 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 
 您要取消帐户，我们非常遗憾！在此之前，如果有任何方法我们可以帮助您解决您的帐户问题，请与我们的支持人员联系。
 
-如果您决定取消帐户，请查看您的帐户类型，它决定了您可以如何取消帐户。您可以转至[帐户设置](https://cloud.ibm.com/account/settings)，然后在“帐户类型”下查看您的帐户类型。
+如果您决定取消帐户，请查看您的帐户类型，它决定了您可以如何取消帐户。您可以转至[帐户设置](https://cloud.ibm.com/account/settings)，然后在_帐户类型_下查看您的帐户类型。
 
 * 对于现收现付帐户或预订帐户，取消帐户的最快方法是通过[实时交谈](https://{DomainName}/unifiedsupport/supportcenter)或致电 1-866-325-0045 并选择第三个选项来联系我们。也可以打开一个支持案例。
 * 要取消轻量帐户，请转至[帐户设置](https://cloud.ibm.com/account/settings)，然后单击**取消激活帐户**。
@@ -162,7 +155,7 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 {: #contactsupport}
 {: faq}
 
-在控制台菜单栏中，单击**支持**以转至支持中心。
+在控制台菜单栏中，单击**支持**以转至支持中心。要了解有关支持的更多信息，请参阅 [获取支持](/docs/get-support?topic=get-support-support-plans]。
 
 
 ## 我能注册以进行免费试用吗？

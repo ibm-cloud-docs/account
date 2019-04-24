@@ -23,7 +23,7 @@ subcollection: account
 Puede cambiar el plan de un servicio de {{site.data.keyword.Bluemix}} si los cambios de plan están habilitados para el servicio específico. Es posible que desee cambiar el plan, por ejemplo, para actualizarlo o reducirlo. Puede cambiar el plan desde el panel de control de la instancia de servicio.
 {: shortdesc}
 
-¿Desea ver información sobre cómo actualizar su tipo de cuenta? Consulte [¿Cómo puedo actualizar o convertir mi tipo de cuenta?](/docs/account?topic=account-changeacct) para obtener más información.
+¿Desea ver información sobre cómo actualizar su tipo de cuenta? Consulte [Actualización de la cuenta](/docs/account?topic=account-upgrading-account) para obtener más información.
 {: tip}
 
 Solo puede cambiar los planes de servicio de determinados servicios. Si los cambios de plan están habilitados para el servicio, el panel de control de la instancia de servicio muestra una opción **Plan** en la navegación. Cada servicio tiene un conjunto distinto de pasos siguientes a seguir

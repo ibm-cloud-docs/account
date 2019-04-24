@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-03-20"
 
 keywords: GDPR, HIPAA, data security, PHI, account settings, europe
 
@@ -14,6 +14,7 @@ subcollection: account
 {:new_window: target="_blank"}
 {:important: .important}
 {:tip: .tip}
+{:note: .note}
 
 # Ativando as configurações suportadas da UE e HIPAA
 {: #eu-hipaa-supported}
@@ -36,22 +37,31 @@ Ativando essa configuração, os serviços suportados pela UE têm controles de 
   4. Clique em **Ativado**.
 
    Depois de ativar a configuração Suportado pela UE, é possível usar a tag Suportado pela UE para procurar no catálogo as ofertas que tenham planos suportados pela UE.
-   {: tip}
 
 
 ## Ativando a configuração suportada pelo HIPAA
 {: #enabling-hipaa}
 
-É possível escolher ativar a configuração Suportado pelo HIPAA para executar cargas de trabalho sensíveis que são reguladas sob o Health Insurance Portability and Accountability Act (HIPAA) dos Estados Unidos. Ativando essa configuração, você está indicando que sua conta processa a PHI que pode estar sujeita ao HIPAA.
+O Health Insurance Portability and Accountability Act (HIPAA) e o Health Information Technology for Economic and Clinical Health (HITECH) Act dos EUA definem os padrões para manipulação de transações e informações eletrônicas de assistência médica. Se você ou sua empresa forem uma entidade coberta, conforme definido pelo HIPAA, deverão ativar a configuração Suportada pelo HIPAA se você executar cargas de trabalho sensíveis que são reguladas sob o HIPAA e o HITECH Act. Saiba mais sobre a conformidade do {{site.data.keyword.Bluemix_notm}} em [Conformidade no {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud/compliance){: new_window}![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo").
+
+A ativação dessa configuração tem os efeitos a seguir:
+
+* Permite que você filtre os serviços Ativados pelo HIPAA no catálogo
+* Indica à IBM que sua conta armazena informação protegida de saúde (PHI)
+* Aceita digitalmente o IBM Business Associate Addendum (BAA) para entidades cobertas
+
+Permita essa configuração apenas se você ou sua empresa forem uma entidade coberta conforme definido pelo HIPAA. Se você ou sua empresa forem uma associação de negócios de uma entidade coberta, [entre em contato com a equipe de Vendas do {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-wcp){: new_window}![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo") para aceitar o BAA aplicável. Para obter mais informações sobre as definições de HIPAA de entidades cobertas e associações de negócios, consulte o website [Departamento de saúde e dos serviços humanos dos EUA](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo").
+{: important}
+
+As contas que ativam a configuração Suportada pelo HIPAA ainda têm acesso ao catálogo integral de serviços. Os serviços do {{site.data.keyword.Bluemix_notm}} geralmente oferecem vários planos. O rótulo Ativado pelo HIPAA em um serviço pode se aplicar a todos os planos disponíveis ou estar limitado a planos ou configurações específicos. Você, como o cliente, é o único responsável por limitar a PHI aos planos de oferta Ativados pelo HIPAA e arquitetar em conformidade com o HIPAA e o HITECH.
 
 1. Acesse **Gerenciar > Conta** e selecione **Configuração da conta** no console.
 2. Para a opção Suportado pelo HIPAA, clique em **Ativado**.
 3. Leia as informações sobre como ativar essa configuração.
 
   Não é possível desativar a configuração depois de ativá-la.
-  {: important}
+  {: note}
 
 4. Selecione **Aceitar** e clique em **Enviar**.
 
   Depois de ativar a configuração Suportado pelo HIPAA, é possível usar a tag Ativado para HIPAA para procurar no catálogo as ofertas que são ativadas para HIPAA.
-  {: tip}

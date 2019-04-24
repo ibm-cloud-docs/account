@@ -23,7 +23,7 @@ subcollection: account
 Puoi modificare il piano di un servizio {{site.data.keyword.Bluemix}} se le modifiche di piano sono abilitate per lo specifico servizio. Potresti voler modificare il piano, ad esempio, per eseguire un upgrade del tuo piano o per ridurlo. Puoi modificare il tuo piano dal dashboard dell'istanza del servizio.
 {: shortdesc}
 
-Stai cercando dettagli sull'upgrade del tuo tipo di account? Vedi [Come eseguo l'upgrade o la conversione del mio tipo di account?](/docs/account?topic=account-changeacct) per ulteriori informazioni,
+Stai cercando dettagli sull'upgrade del tuo tipo di account? Per ulteriori informazioni, vedi [Upgrade del tuo account](/docs/account?topic=account-upgrading-account).
 {: tip}
 
 Puoi modificare i piani di servizio solo per specifici servizi. Se per il servizio sono abilitate le modifiche del piano, il dashboard dell'istanza del servizio visualizza un'opzione **Piano** nel riquadro di navigazione. Se modifichi
