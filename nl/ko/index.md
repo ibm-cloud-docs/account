@@ -1,9 +1,12 @@
 ---
 
 copyright:
-
   years: 2015, 2019
 lastupdated: "2019-02-13"
+
+keywords: account types, Lite, free account, paid account, buy account, account difference, compare account
+
+subcollection: account
 
 ---
 
@@ -68,7 +71,7 @@ Lite 계정에 사용 가능한 다음 주요 기능 목록을 확인하십시�
 ### Lite 계정 업그레이드
 {: #upgrade-lite-account}
 
-종량과금제 계정 또는 구독 계정을 업그레이드할 수 있습니다. 자세한 정보는 [내 계정 유형을 업그레이드하거나 변환하려면 어떻게 해야 합니까?](/docs/account?topic=account-changeacct)를 참조하십시오. 
+종량과금제 계정 또는 구독 계정을 업그레이드할 수 있습니다. 자세한 정보는 [내 계정 유형을 업그레이드하거나 변환하려면 어떻게 해야 합니까?](/docs/account?topic=account-changeacct)를 참조하십시오.
 
 종량과금제 계정으로 업그레이드하면 프로모션을 위한 $200 크레딧을 받을 수 있으며, 크레딧은 계정에 자동으로 적용됩니다. 이 $200 크레딧은 30일 동안 유효하며 청구서에 자동으로 적용됩니다. 이 크레딧은 서드파티 오퍼링에 사용할 수 없습니다.
 
@@ -83,7 +86,7 @@ Lite 계정에 사용 가능한 다음 주요 기능 목록을 확인하십시�
 ### 종량과금제 계정 업그레이드
 {: #upgrade-to-subscription}
 
-종량과금제 계정을 구독 계정으로 업그레이드하려면 [{{site.data.keyword.Bluemix_notm}} 영업 팀](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")에 문의하십시오. 
+종량과금제 계정을 구독 계정으로 업그레이드하려면 [{{site.data.keyword.Bluemix_notm}} 영업 팀](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")에 문의하십시오.
 
 ## 구독 계정
 {: #subscription-account}

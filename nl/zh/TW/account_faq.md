@@ -1,10 +1,12 @@
 ---
 
 copyright:
-
   years: 2015, 2019
+lastupdated: "2019-02-26"
 
-lastupdated: "2019-02-06"
+keywords: account, upgrade, account settings, IBM Cloud account, Lite account
+
+subcollection: account
 
 ---
 
@@ -49,7 +51,7 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 {: #move-org-diff-account}
 {: faq}
 
-目前，您無法將組織移轉至其他帳戶。
+目前，您無法將組織移至其他帳戶。不過您可以用相同的認證在不同帳戶中重建組織，來模擬此功能。如需相關資訊，請參閱[新增組織及空間](https://cloud.ibm.com/docs/account?topic=account-orgsspacesusers#createorg)。
 
 
 ## 可以使用哪些 Cloud Foundry 地區？

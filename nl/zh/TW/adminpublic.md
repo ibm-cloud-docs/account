@@ -1,11 +1,12 @@
 ---
 
-
 copyright:
-
   years: 2015, 2018
 lastupdated: "2018-11-19"
 
+keywords: create account, IBMid, sign up for account
+
+subcollection: account
 
 ---
 

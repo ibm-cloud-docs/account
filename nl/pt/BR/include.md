@@ -1,9 +1,12 @@
 ---
 
 copyright:
-
   years: 2017, 2019
 lastupdated: "2019-01-28"
+
+keywords: add user, share resource, private resource, share catalog
+
+subcollection: account
 
 ---
 
@@ -21,7 +24,7 @@ Qualquer recurso privado do {{site.data.keyword.Bluemix}} que você cria é rest
 É possível usar a [interface da linha de comandos (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) do {{site.data.keyword.Bluemix}} ou o console para determinar se você tem acesso para permitir que usuários visualizem um recurso privado que foi incluído na conta. Se você for um proprietário da conta, será possível fornecer acesso a um usuário em sua conta por meio do console designando uma política de acesso. Para obter mais informações, consulte [Gerenciando o acesso à sua conta](/docs/account?topic=account-find-access).
 
 ## Localizando seu recurso
-{: #find-resource}
+{: #find-resource-inc}
 
 Execute o comando `ibmcloud catalog service <service-id or service-name>`. Substitua as variáveis service-id ou service-name por seu nome de recurso ou ID. Use as informações que são retornadas para visualizar a hierarquia, que mostra os recursos-filhos dos itens em seu recurso.
 
@@ -37,7 +40,7 @@ Após a sinalização includes-add, é possível incluir uma lista separada por 
 Depois de executar o comando, o processo para incluir o recurso leva aproximadamente 30 minutos. Após 30 minutos, efetue logout e login novamente em sua conta para ver o recurso incluído.
 
 ## Removendo uma conta da lista de inclusão
-{: #remove-exclude}
+{: #remove-include}
 
 Execute o comando a seguir para remover uma conta da lista de inclusões.
 

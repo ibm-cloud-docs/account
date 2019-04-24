@@ -41,6 +41,6 @@ Depois de criar sua conta Lite, tenha sucesso desde o início hospedando seus ap
 
 Torne seus aplicativos inteligentes com os serviços do Watson. Além disso, é possível combinar o Watson com o {{site.data.keyword.iot_short_notm}} para criar soluções inovadoras. Você também terá acesso ao {{site.data.keyword.apiconnect_short}}, ao {{site.data.keyword.mobilepushshort}}, ao {{site.data.keyword.prf_hubshort}} e a muito mais.
 
-Como a conta Lite difere das contas pagas? Essa conta Lite é baseada em cota, o que significa que seu uso dos serviços é limitado a uma cota. Dessa forma, você não executa acidentalmente uma nota enquanto está aprendendo sobre o Watson ou desenvolvendo um app que não esteja pronto para produção. Quando estiver se aproximando do limite ou atingir a cota, nós o notificaremos para que seja possível tomar as ações apropriadas.
+Como a conta Lite difere das contas pagas? Essa conta Lite é baseada em cota, o que significa que seu uso dos serviços é limitado a uma cota. Dessa forma, você não cria uma fatura acidental enquanto aprende sobre o Watson ou desenvolve um aplicativo que não está pronto para a produção. Quando estiver se aproximando do limite ou atingir a cota, nós o notificaremos para que seja possível tomar as ações apropriadas.
 
 Inscreva-se hoje para obter uma conta Lite do {{site.data.keyword.Bluemix_notm}} e começar a construir com o {{site.data.keyword.Bluemix_notm}}.

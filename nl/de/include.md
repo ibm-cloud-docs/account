@@ -1,9 +1,12 @@
 ---
 
 copyright:
-
   years: 2017, 2019
 lastupdated: "2019-01-28"
+
+keywords: add user, share resource, private resource, share catalog
+
+subcollection: account
 
 ---
 
@@ -21,7 +24,7 @@ Der Zugriff auf jede private {{site.data.keyword.Bluemix}}-Ressource, die Sie er
 Über die [Befehlszeilenschnittstelle (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) oder die Konsole von {{site.data.keyword.Bluemix}} können Sie ermitteln, ob Sie über die erforderliche Zugriffsberechtigung verfügen, um Benutzern das Anzeigen einer privaten Ressource zu ermöglichen, die zum Konto hinzugefügt wurde. Als Kontoeigner können Sie einem Benutzer in Ihrem Konto die Zugriffsberechtigung über die Konsole erteilen, indem Sie eine Zugriffsrichtlinie zuweisen. Weitere Informationen finden Sie in [Zugriff auf Konto verwalten](/docs/account?topic=account-find-access).
 
 ## Eigene Ressource suchen
-{: #find-resource}
+{: #find-resource-inc}
 
 Führen Sie den Befehl `ibmcloud catalog service <service-id or service-name>` aus. Ersetzen Sie die Variable 'service-id or service-name' durch den Namen oder die ID Ihrer Ressource. Verwenden Sie die zurückgegebenen Informationen zum Anzeigen der Hierarchie, in der die untergeordneten Ressourcen der Elemente in Ihrer Ressource enthalten sind.
 
@@ -37,7 +40,7 @@ Geben Sie im Anschluss an das Flag 'includes-add' eine durch Kommas unterteilte 
 Der Prozess für das Einbeziehen der Ressource nimmt nach der Befehlseingabe etwa 30 Minuten in Anspruch. Melden Sie sich nach 30 Minuten ab und erneut mit Ihrem Konto an, um die aufgenommene Ressource angezeigt zu bekommen.
 
 ## Konto aus der Einschlussliste entfernen
-{: #remove-exclude}
+{: #remove-include}
 
 Führen Sie den folgenden Befehl aus, um ein Konto aus der Einschlussliste zu entfernen.
 

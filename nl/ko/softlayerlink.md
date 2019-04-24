@@ -1,10 +1,12 @@
 ---
 
 copyright:
-
   years: 2016, 2019
-
 lastupdated: "2019-01-28"
+
+keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, Bluemix account, Bluemix
+
+subcollection: account
 
 ---
 
@@ -55,7 +57,7 @@ IBM ID로 전환하는 프로세스를 시작하는 경우, 프로세스가 완�
   * 기존 IBM ID를 사용하려면 IBM ID의 이메일 주소 또는 사용자 이름을 입력하십시오(여러 IBM ID 간에 공유되지 않는 경우).
   * 새 IBM ID를 작성하려면 현재 IBM ID에서 사용하지 않는 이메일 주소를 입력하십시오. 이 이메일 주소는 IBM ID의 사용자 이름이며, IBM ID가 작성된 후 이 주소로 등록 코드가 전송됩니다. 나중에 IBM ID와 연관된 이메일 주소를 업데이트할 수 있지만 사용자 이름을 변경할 수는 없습니다.
 
-IBM ID로 로그인 시에 발생하는 문제점을 해결하려면 [{{site.data.keyword.Bluemix_notm}} 액세스에 대한 문제점 해결](/docs/account?topic=account-accessing)을 참조하십시오. 
+IBM ID로 로그인 시에 발생하는 문제점을 해결하려면 [{{site.data.keyword.Bluemix_notm}} 액세스에 대한 문제점 해결](/docs/account?topic=account-accessing)을 참조하십시오.
 
 
 ## IBM ID 계정 연결
@@ -87,7 +89,7 @@ IBM ID로 로그인 시에 발생하는 문제점을 해결하려면 [{{site.dat
 계정 연결에 대한 다음 중요 참고사항을 반드시 검토하십시오.
 
   * 연결되는 SoftLayer 계정의 마스터 사용자에게는 IBM ID가 있어야 합니다.
-  * {{site.data.keyword.Bluemix_notm}} 계정에 연결되는 각 사용자 계정은 고유 이메일 주소가 있는 고유 IBM ID에서 소유해야 합니다. 하나의 IBM ID가 여러 SoftLayer 계정을 소유할 수 있지만, 각 계정에 대해 고유 IBM ID가 되도록 마스터 사용자를 변경해야 합니다. SoftLayer 계정의 마스터 사용자를 변경하려면 지원 팀에 문의하십시오. 자세한 정보는 [{{site.data.keyword.Bluemix_notm}} 인프라에 대한 지원 받기](/docs/customer-portal?topic=customer-portal-customerportal_support)를 참조하십시오. 
+  * {{site.data.keyword.Bluemix_notm}} 계정에 연결되는 각 사용자 계정은 고유 이메일 주소가 있는 고유 IBM ID에서 소유해야 합니다. 하나의 IBM ID가 여러 SoftLayer 계정을 소유할 수 있지만, 각 계정에 대해 고유 IBM ID가 되도록 마스터 사용자를 변경해야 합니다. SoftLayer 계정의 마스터 사용자를 변경하려면 지원 팀에 문의하십시오. 자세한 정보는 [{{site.data.keyword.Bluemix_notm}} 인프라에 대한 지원 받기](/docs/customer-portal?topic=customer-portal-customerportal_support)를 참조하십시오.
   * 연결된 계정에 새 사용자를 추가하는 경우에는 통합 콘솔의 모든 기능에 액세스할 수 있도록 사용자를 SoftLayer 계정 및 {{site.data.keyword.Bluemix_notm}} 계정 모두에 추가해야 합니다.
   * 브랜드 계정을 보유하고 BAP(Brand Agent Portal)를 사용하며 계정 연결 시에 지원이 필요한 경우에는 softlayer_revenue_services_team@wwpdl.vnet.ibm.com으로 이메일을 발송하여 Revenue Services 팀에 문의하십시오.
 

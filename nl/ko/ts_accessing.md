@@ -1,10 +1,12 @@
 ---
 
 copyright:
-
   years: 2015, 2018
-
 lastupdated: "2018-11-28"
+
+keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
+
+subcollection: account
 
 ---
 
@@ -107,7 +109,7 @@ IBM ID를 사용하여 로그인하면 로그인 성공 메시지가 표시되�
 {: #ts_login_ibmid}
 {: troubleshoot}
 
-{{site.data.keyword.Bluemix_notm}}에 로그인 중이며 IBM ID의 인증이 완료되지 않은 경우에는 서비스에 문제가 있을 수 있습니다. 
+{{site.data.keyword.Bluemix_notm}}에 로그인 중이며 IBM ID의 인증이 완료되지 않은 경우에는 서비스에 문제가 있을 수 있습니다.
 
 {{site.data.keyword.Bluemix_notm}}에 로그인하면 IBM ID 인증이 완료되지 않습니다.
 {: tsSymptoms}

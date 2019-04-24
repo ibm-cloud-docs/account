@@ -1,9 +1,12 @@
 ---
 
 copyright:
-
   years: 2019
 lastupdated: "2019-02-12"
+
+keywords: IBM Cloud account, account differences, resources, access
+
+subcollection: account
 
 ---
 

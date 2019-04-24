@@ -31,7 +31,7 @@ Si es el propietario de una cuenta Lite, puede seleccionar si desea recibir noti
 
 Puede establecer notificaciones de correo electrónico solo para su perfil, no para la cuenta. En otras palabras, si cambia a otra cuenta, las actualizaciones de notificación de la plataforma que realice abarcarán su perfil y no la cuenta a la que ha cambiado.
 
-Si selecciona recibir sucesos de plataforma no planificados, obtendrá correos electrónicos sobre los problemas que pueden provocar una interrupción (Sev 1). En cualquier momento, puede ver todos los sucesos planificados y no planificados de la página [Estado ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com/status){: new_window}.
+Si selecciona recibir sucesos de plataforma no planificados, obtendrá correos electrónicos sobre los problemas que pueden provocar una interrupción (Sev 1). En cualquier momento, puede ver todos los sucesos planificados y no planificados de la página [Estado![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com/status){: new_window}.
 
 1. Vaya al icono Avatar ![icono Avatar](../icons/i-avatar-icon.svg) &gt; **Perfil y valores**.
 2. Pulse **Notificaciones**.

@@ -1,9 +1,12 @@
 ---
 
 copyright:
-
   years: 2017, 2019
 lastupdated: "2019-01-28"
+
+keywords: add user, share resource, private resource, share catalog
+
+subcollection: account
 
 ---
 
@@ -21,7 +24,7 @@ lastupdated: "2019-01-28"
 您可以使用 {{site.data.keyword.Bluemix}} [指令行介面 (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) 或主控台，來判定您是否有權可容許使用者檢視已新增至帳戶的專用資源。如果您是帳戶擁有者，則可以透過主控台來指派存取原則，將存取權授與給您帳戶中的使用者。如需相關資訊，請參閱[管理對帳戶的存取權](/docs/account?topic=account-find-access)。
 
 ## 尋找資源
-{: #find-resource}
+{: #find-resource-inc}
 
 執行 `ibmcloud catalog service <service-id or service-name>` 指令。將 service-id 或 service-name 變數取代為資源名稱或 ID。使用所傳回的資訊來檢視階層，而此階層會顯示資源中各項目的子項資源。
 
@@ -37,7 +40,7 @@ lastupdated: "2019-01-28"
 執行指令之後，包含資源的處理程序大約需要 30 分鐘。在 30 分鐘之後，請登出並重新登入帳戶，以查看包含的資源。
 
 ## 從包含清單移除帳戶
-{: #remove-exclude}
+{: #remove-include}
 
 執行下列指令，以從包含清單移除帳戶。
 

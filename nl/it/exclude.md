@@ -5,6 +5,10 @@ copyright:
   years: 2017, 2019
 lastupdated: "2019-01-28"
 
+keywords: hide resource, limit viewer, exclude user, hide service
+
+subcollection: account
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -26,13 +30,13 @@ Nascondere una risorsa nel catalogo non la rimuove dalla CLI Cloud Foundry o dal
 Puoi utilizzare l'{{site.data.keyword.Bluemix}} [interfaccia riga di comando (CLI, command-line interface)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) o la console per determinare se disponi dell'accesso per consentire agli utenti di visualizzare una risorsa privata che era stata aggiunta all'account. Se sei un proprietario di account, puoi concedere l'accesso a un utente nel tuo account dalla console assegnando una politica di accesso. Per ulteriori informazioni, vedi [Gestione dell'accesso al tuo account](/docs/account?topic=account-find-access).
 
 ## Individuazione di una risorsa
-{: #find-resource}
+{: #find-resource-exc}
 
 Per cercare una risorsa, esegui il comando `ibmcloud catalog search <service-id or service-name>`. Sostituisci le variabili service-id o service-name con un nome o un ID risorsa. Utilizza le informazioni restituite per trovare l'ID o il nome del servizio che vuoi nascondere.
 
 ## Ottenimento dei dettagli della risorsa
 
-Esegui il comando `ibmcloud catalog service<service-id or service-name>`. Utilizzando le informazioni restituite dall'esecuzione del comando precedente, utilizza questo comando per esaminare ulteriori dettagli sulla risorsa. Con le informazioni restituite, puoi visualizzare la gerarchia, che mostra le risorse secondarie degli elementi nella tua risorsa.
+Esegui `ibmcloud catalog service <service-id or service-name>`. Utilizzando le informazioni restituite dall'esecuzione del comando precedente, utilizza questo comando per esaminare ulteriori dettagli sulla risorsa. Con le informazioni restituite, puoi visualizzare la gerarchia, che mostra le risorse secondarie degli elementi nella tua risorsa.
 
 ## Nascondimento della risorsa
 {: #vis-exc}

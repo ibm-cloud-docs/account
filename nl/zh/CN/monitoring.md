@@ -1,10 +1,12 @@
 ---
 
 copyright:
-
   years: 2018, 2019
-
 lastupdated: "2019-01-28"
+
+keywords: manage account, account events, track events, account tracking, monitoring
+
+subcollection: account
 
 ---
 

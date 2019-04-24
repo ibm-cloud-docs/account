@@ -1,10 +1,12 @@
 ---
 
 copyright:
-
   years: 2015, 2019
+lastupdated: "2019-02-26"
 
-lastupdated: "2019-02-06"
+keywords: account, upgrade, account settings, IBM Cloud account, Lite account
+
+subcollection: account
 
 ---
 
@@ -33,7 +35,7 @@ lastupdated: "2019-02-06"
 1. {{site.data.keyword.Bluemix}} コンソールのメニュー・バーで**「サポート」**をクリックします。
 2. 「_お困りですか?_」セクションで、**「Case の作成 (Create a case)」**をクリックします。
 3. Case に関連する質問に答えます。
-4. Case がオープンされた後、E メール通知が送信されます。その後のコミュニケーションについての指示に従ってください。
+4. Case がオープンされた後、E メール通知が送信されます。 その後のコミュニケーションについての指示に従ってください。
 
 
 ## Cloud Foundry とは?
@@ -49,7 +51,7 @@ Cloud Foundry は、クラウド上でアプリケーションを作成および
 {: #move-org-diff-account}
 {: faq}
 
-現在のところ、組織を別のアカウントに移行することはできません。
+現在のところ、組織を別のアカウントに移動することはできません。ただし、この機能を再現するために、別のアカウントで同じ資格情報を使用して組織を再作成することは可能です。詳しくは、『[組織およびスペースの追加](https://cloud.ibm.com/docs/account?topic=account-orgsspacesusers#createorg)』を参照してください。
 
 
 ## どの Cloud Foundry 地域を使用できますか?

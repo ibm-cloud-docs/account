@@ -1,9 +1,12 @@
 ---
 
 copyright:
-
   years: 2018, 2019
 lastupdated: "2019-01-28"
+
+keywords: resource group, account access, user access, IAM, organize
+
+subcollection: account
 
 ---
 
