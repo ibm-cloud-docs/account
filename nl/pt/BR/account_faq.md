@@ -98,6 +98,8 @@ Se você tiver uma conta faturável, não haverá limite para o número de grupo
   * Para fazer upgrade para uma conta de Assinatura, clique em **Upgrade**.
 * Para converter entre os tipos de conta Pré-paga e de Assinatura, entre em contato com a equipe de [{{site.data.keyword.Bluemix_notm}} Vendas ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
+Se você não tiver certeza do seu tipo de conta atual, será possível localizá-lo na página Configurações da conta.
+
 Saiba mais em [Fazendo upgrade de sua conta](/docs/account?topic=account-upgrading-account).
 
 ## Se eu fizer upgrade da minha conta Lite, será possível continuar a usar minhas instâncias existentes?
@@ -173,7 +175,7 @@ Se você acredita que a sua conta foi desativada com erro, entre em contato com 
 {: #contactsupport}
 {: faq}
 
-Clique em **Suporte** na barra de menus do console para acessar o Centro de Suporte. Saiba mais sobre o suporte em [Obtendo suporte](/docs/get-support?topic=get-support-support-plans].
+Clique em **Suporte** na barra de menus do console para acessar o Centro de Suporte. Saiba mais sobre o suporte em [Obtendo suporte](/docs/get-support?topic=get-support-support-plans).
 
 
 ## Posso inscrever-me para uma avaliação grátis?

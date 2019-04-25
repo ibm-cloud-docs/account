@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-19"
+lastupdated: "2019-04-17"
 
 keywords: account upgrade, paid account, production account, Pay-As-You-Go, Subscription
 
@@ -23,6 +23,8 @@ subcollection: account
 
 As contas Lite tornam mais fácil começar a usar o {{site.data.keyword.Bluemix}} e experimentar os serviços. Quando você estiver pronto para mais, será possível fazer upgrade de sua conta para uma conta Pré-paga ou de Assinatura para desbloquear o catálogo inteiro de serviços prontos para produção.
 {:shortdesc}
+
+É possível verificar seu tipo de conta atual acessando **Gerenciar > Conta > Configurações da conta** e procurando em _Tipo de conta_.
 
 Não tem certeza para qual tipo de conta você deseja fazer upgrade? Obtenha informações detalhadas sobre os benefícios de cada tipo de conta em [Tipos de conta](/docs/account?topic=account-accounts).
 {: tip}
@@ -49,13 +51,13 @@ Para fazer upgrade de uma conta Lite para uma conta de Assinatura, conclua as et
 1. Acesse **Gerenciar > Conta** e selecione **Configurações da conta**. Em seguida, clique em **Fazer upgrade**, o que o levará até a página Assinaturas.
 1. Selecione seu compromisso de gasto mensal e o prazo de assinatura e clique em **Introdução**.
 
-   Se você não tiver certeza de quanto seu uso típico pode custar, poderá estimar isso usando o [estimador de custo](/estimator/review){:new_window}![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo").
+   Se você não tiver certeza de quanto seu uso típico pode custar, poderá estimar isso usando o [estimador de custo](https://{DomainName}/estimator/review){:new_window}![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo").
    {:tip}
 1. Revise os detalhes de sua assinatura e, em seguida, insira suas informações de pagamento.
 
    Depois que suas informações de pagamento forem processadas, seu crédito de assinatura será incluído em sua conta.
 
-Sua assinatura é renovada automaticamente. Se você desejar descontinuar sua renovação de assinatura, [entre em contato com o suporte](/unifiedsupport/supportcenter).
+Sua assinatura é renovada automaticamente. Se você desejar descontinuar sua renovação de assinatura, [entre em contato com o suporte](https://{DomainName}/unifiedsupport/supportcenter).
 {: note}
 
 ### Convertendo uma conta Pré-paga em uma conta de Assinatura
