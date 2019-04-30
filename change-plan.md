@@ -2,9 +2,9 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-13"
+lastupdated: "2019-04-30"
 
-keywords: change service, upgrade service, service plan
+keywords: change service, upgrade service, service plan, pricing plan
 
 subcollection: account
 
@@ -20,7 +20,7 @@ subcollection: account
 # Changing service plans
 {: #changing}
 
-You can change the plan of an {{site.data.keyword.Bluemix}} service if plan changes are enabled for the specific service. You might want to change your plan, for example, to upgrade or reduce your plan. You can change your plan from your service instance dashboard.
+You can change the pricing plan of an {{site.data.keyword.Bluemix}} service if plan changes are enabled for the specific service. You might want to change the plan, for example, to upgrade or reduce your plan. You can change the service's pricing plan from the service instance dashboard.
 {: shortdesc}
 
 Are you looking for details about upgrading your account type? See [Upgrading your account](/docs/account?topic=account-upgrading-account) for more information.
@@ -28,8 +28,12 @@ Are you looking for details about upgrading your account type? See [Upgrading yo
 
 You can change the service plans for only certain services. If plan changes are enabled for the service, the service instance dashboard displays a **Plan** option in the navigation. Each service has a different set of next steps to follow if you change your plan.
 
-1. Click **Plan** in the service instance dashboard. Typically, you can upgrade your plan or reduce your plan.
-2. After you change your plan, you must complete extra steps. The steps vary depending on the type of plan change and the service. For example, if you reduced your plan, you might need to restage your app. Or, if you upgraded your plan, you might need to restage your app and take other actions.
+1. From the {{site.data.keyword.Bluemix_notm}} console, click the Menu icon ![Menu icon](../icons/icon_hamburger.svg) > **Resource list** to view your list of resources. Click the service that you want to update.
+1. Click **Plan** in the service instance dashboard. Select the plan that you want to change to, and click **Save**.
+
+    Some services have plans that are not selectable from the Plan page. Typically, these plans aren't selectable because they require assistance from the Sales team or they require a migration before you can change plans. See the documentation for the service for information about required next steps.
+
+1. After you change your plan, you must complete extra steps. The steps vary depending on the type of plan change and the service. For example, if you reduced your plan, you might need to restage your app. Or, if you upgraded your plan, you might need to restage your app and take other actions.
 
    To restage your app, go to your resource list to find the app that the service is bound to. Click the Menu icon ![Menu icon](../icons/icon_hamburger.svg) **> Resource list**. In the app menu, select **Restart App**.
 
@@ -38,7 +42,7 @@ You can change the service plans for only certain services. If plan changes are 
 ## Changing a plan through the CLI
 {: #changing_command_line}
 
-As an alternative to the console, you can change a service's plan by using the {{site.data.keyword.Bluemix_notm}} command-line interface (CLI).
+As an alternative to the console, you can change a service's pricing plan by using the {{site.data.keyword.Bluemix_notm}} command-line interface (CLI).
 
 1. Check whether the service is enabled with the resource controller.
 
