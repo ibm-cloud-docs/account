@@ -57,7 +57,7 @@ subcollection: account
 
     作为帐户所有者或组织管理者，您可以针对组织及其空间内构建的应用程序，查看系统域并添加定制域。如果您是空间管理者，那么此页面将显示分配给空间的域的只读列表。
 
-    如果您添加定制域，那么必须配置 DNS 服务器以将您的定制域解析为指向 {{site.data.keyword.Bluemix_notm}} 系统域。这样，当 {{site.data.keyword.Bluemix_notm}} 接收到定制域的请求时，可以将其正确路由到您的应用程序。系统域始终可供空间使用，另外还可为空间分配定制域。空间中创建的应用程序可使用为该空间列出的任何域。有关创建和使用定制域的更多信息，请参阅[管理域](/docs/apps?topic=creating-apps-update-domain)。
+    如果您添加定制域，那么必须配置 DNS 服务器以将您的定制域解析为指向 {{site.data.keyword.Bluemix_notm}} 系统域。这样，当 {{site.data.keyword.Bluemix_notm}} 接收到定制域的请求时，可以将其正确路由到您的应用程序。系统域始终可供空间使用，另外还可为空间分配定制域。空间中创建的应用程序可使用为该空间列出的任何域。有关创建和使用定制域的更多信息，请参阅[管理域](/docs/apps?topic=creating-apps-update-domain#update-domain)。
 
   * 要管理组织的已分配配额，请单击相应组织的“操作”图标 ![“操作”图标](../icons/action-menu-icon.svg)，然后选择**配额**。
     {: #managequota}

@@ -57,7 +57,7 @@ subcollection: account
 
     身為帳戶擁有者或組織管理員，您可以檢視系統網域，以及新增在組織及其空間內建置之應用程式的自訂網域。如果您是空間管理員，此頁面會顯示已指派給空間之網域的唯讀清單。
 
-    如果您新增自訂網域，則必須配置 DNS 伺服器來解析自訂網域，以指向 {{site.data.keyword.Bluemix_notm}} 系統網域。使用此方式，{{site.data.keyword.Bluemix_notm}} 接到您的自訂網域的要求時，可以將它適當地遞送至您的應用程式。空間隨時都可以使用系統網域，也可以將自訂網域配置給空間。在空間中建立的應用程式，可能會使用針對該空間所列出的任何網域。如需建立及使用自訂網域的相關資訊，請參閱[管理網域](/docs/apps?topic=creating-apps-update-domain)。
+    如果您新增自訂網域，則必須配置 DNS 伺服器來解析自訂網域，以指向 {{site.data.keyword.Bluemix_notm}} 系統網域。使用此方式，{{site.data.keyword.Bluemix_notm}} 接到您的自訂網域的要求時，可以將它適當地遞送至您的應用程式。空間隨時都可以使用系統網域，也可以將自訂網域配置給空間。在空間中建立的應用程式，可能會使用針對該空間所列出的任何網域。如需建立及使用自訂網域的相關資訊，請參閱[管理網域](/docs/apps?topic=creating-apps-update-domain#update-domain)。
 
   * 若要管理組織的已配置配額，請針對個別組織按一下「動作」圖示 ![「動作」圖示](../icons/action-menu-icon.svg)，然後選取**配額**。
     {: #managequota}
