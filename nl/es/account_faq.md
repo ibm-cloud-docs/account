@@ -100,6 +100,8 @@ Si tiene una cuenta facturable, no hay un límite en el número de grupos de rec
   * Para actualizar a una cuenta de suscripción, pulse **Actualizar**.
 * Para convertir entre los tipos de una cuenta de Pago según uso y Suscripción, póngase en contacto con el [equipo de ventas de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
+Si no está seguro de su tipo de cuenta actual, puede consultarlo en la página Configuración de la cuenta.
+
 Encontrará más información en el apartado sobre [Actualización de la cuenta](/docs/account?topic=account-upgrading-account).
 
 ## Si actualizo mi cuenta Lite, ¿puedo seguir utilizando mis instancias existentes?
@@ -176,7 +178,7 @@ Si cree que su cuenta se ha desactivado por error, póngase en contacto con el e
 {: #contactsupport}
 {: faq}
 
-Pulse **Soporte** en la barra de menús de la consola para ir al centro de soporte. Encontrará más información sobre soporte en [Obtención de soporte](/docs/get-support?topic=get-support-support-plans].
+Pulse **Soporte** en la barra de menús de la consola para ir al centro de soporte. Encontrará más información sobre soporte en [Obtención de soporte](/docs/get-support?topic=get-support-support-plans).
 
 
 ## ¿Puedo registrarme para una prueba gratuita?

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-19"
+lastupdated: "2019-04-17"
 
 keywords: account upgrade, paid account, production account, Pay-As-You-Go, Subscription
 
@@ -23,6 +23,8 @@ subcollection: account
 
 Las cuentas Lite permiten empezar a trabajar fácilmente con {{site.data.keyword.Bluemix}} y probar nuestros servicios. Cuando esté preparado para más, puede actualizar su cuenta a una de pago según uso o de suscripción para disponer de todo el catálogo de servicios listos para producción.
 {:shortdesc}
+
+Puede comprobar su tipo de cuenta actual accediendo a **Gestionar > Cuenta > Configuración de la cuenta** y buscando _Tipo de cuenta_.
 
 ¿No está seguro del tipo de cuenta al que desea actualizar? Encontrará información detallada sobre las ventajas de cada tipo de cuenta en [Tipos de cuenta](/docs/account?topic=account-accounts).
 {: tip}
@@ -49,13 +51,13 @@ Para actualizar de una cuenta Lite a una de suscripción, siga estos pasos.
 1. Vaya a **Gestionar > Cuenta** y seleccione **Configuración de la cuenta**. Luego pulse **Actualizar**, lo que le llevará a la página Suscripciones.
 1. Seleccione su compromiso de gasto mensual y el plazo de la suscripción y pulse **Empezar**.
 
-   Si no está segura sobre lo que puede costar un uso típico, puede calcularlo con el [estimador de costes](/estimator/review){:new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo").
+   Si no está segura sobre lo que puede costar un uso típico, puede calcularlo con el [estimador de costes](https://{DomainName}/estimator/review){:new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo").
    {:tip}
 1. Revise los detalles de la suscripción y especifique la información de pago.
 
    Una vez procesada la información de pago, su crédito de suscripción se añade a su cuenta.
 
-La suscripción se renueva de forma automática. Si desea cancelar la renovación de la suscripción, [póngase en contacto con el equipo de soporte](/unifiedsupport/supportcenter).
+La suscripción se renueva de forma automática. Si desea cancelar la renovación de la suscripción, [póngase en contacto con el equipo de soporte](https://{DomainName}/unifiedsupport/supportcenter).
 {: note}
 
 ### Conversión de una cuenta de pago según uso en una cuenta de suscripción
