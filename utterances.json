@@ -1,0 +1,382 @@
+{
+    "create-account": [
+      "How do I create an account?",
+      "What do I do to make an account?",
+      "How do I sign up for IBM Cloud",
+      "creating an account",
+      "how to create an account",
+      "creating a cloud account",
+      "sign up for an account",
+      "how can i make an account",
+      "I want to create an account",
+      "I would like to make an account",
+      "Show me how to create an account"
+    ],
+    "account-error": [
+      "resolve errors that occur when creating my cloud account",
+      "resolving account issues",
+      "fixing account errors during sign up",
+      "getting errors when signing up for IBM Cloud",
+      "fixing account errors",
+      "I am getting errors with my account",
+      "I cannot create my account",
+      "creating my account failed",
+      "I am unable to make an account",
+      "I can't create an account",
+      "Error when creating my account"
+    ],
+    "cloud-foundry": [
+      "what is Cloud Foundry",
+      "what does Cloud Foundry do",
+      "Is Cloud Foundry a platform",
+      "I want to learn about Cloud Foundry",
+      "Tell me about Cloud Foundry"
+    ],
+    "move-org-diff-account": [
+      "moving an org to another account",
+      "changing an org to another account",
+      "how do i move orgs",
+      "can I move an org to a different account",
+      "is it possible to transfer orgs to another account",
+      "am i able to move orgs between accounts"
+    ],
+    "whichregions": [
+      "what regions are available for Cloud Foundry",
+      "what CF regions can I use",
+      "can Cloud Foundry use all regions",
+      "which regions are there for Cloud Foundry",
+      "Cloud Foundry regions"
+    ],
+    "whatisliteplan": [
+      "what is a lite account",
+      "what is a lite plan",
+      "what are the benefits of a lite plan",
+      "how much is a lite plan",
+      "how much does a lite plan costs",
+      "do I have to pay for a lite plan",
+      "Is a lite plan free?",
+      "I want to know about lite plans",
+      "Tell me more about lite plans"
+    ],
+    "monthlyquota": [
+      "is there a quota for a lite plan",
+      "do I get charged for a lite plan",
+      "does a lite plan get suspended",
+      "what happens when my quota is met on a lite plan",
+      "are quotas per month",
+      "are quotas per instance",
+      "are quotas reset per month",
+      "lite plan mothly quotas"
+    ],
+    "resourcelimit": [
+      "how many resource groups can I create",
+      "is there a limit to the number of resource groups I can create",
+      "how many orgs can I create",
+      "is there a limit to the number of orgs I can create",
+      "how many spaces can I create",
+      "is there a limit to the number of spaces I can create"
+    ],
+    "changeacct": [
+      "How do I upgrade my account",
+      "How do I change my account",
+      "can I upgrade my account",
+      "upgrading my account",
+      "is upgrading my account possible",
+      "how do I change my account type",
+      "tell me how to upgrade my account type",
+      "I want to upgrade my account",
+      "what do I do to change my account type",
+      "Where do I change my account?",
+      "How do I convert my account?",
+      "I want to switch my account type?"
+    ],
+    "nochange": [
+      "are my instances available after upgrade",
+      "will i lose my old instances if I upgrade my account",
+      "can i keep using my existing services after I change my account type",
+      "what happens to my existing instances after upgrading my account"
+    ],
+    "updatepayment": [
+      "how do i change my credit card info",
+      "tell me how to edit my credit card",
+      "i want to update my credit card info",
+      "i would like to change my credit card",
+      "how can i edit my payment options",
+      "where do i change my payment options"
+    ],
+    "change-email-prefs": [
+      "how can I change my email preferences",
+      "email notifications",
+      "stop email notifications"
+    ],
+    "reset-password": [
+      "How do I reset my password?",
+      "I want to change my account password",
+      "Where do I reset my VPN password?",
+      "How can I update my account password?",
+      "What do I do to update my VPN password?",
+      "new account password",
+      "new VPN password",
+    ],
+    "cancelaccount": [
+      "How do I cancel my account?",
+      "Where do I cancel my account?",
+      "Tell me how to cancel my account",
+      "cancel account"
+    ],
+    "deleteaccount": [
+      "How do I delete my account?",
+      "Where do I delete my account?",
+      "I want to delete my account",
+      "I want to close my account",
+      "Tell me how to delete my account",
+      "delete account"
+    ],
+    "account-deactivated": [
+      "Why is my account deactivated?",
+      "My account is deactivated",
+      "How do I reactivate my account?",
+      "Why was my account deactivated?"
+    ],
+    "contactsupport": [
+      "How do I get support?",
+      "Where is support?",
+      "How can I contact support?",
+      "How do I get help?",
+      "I want to contact support",
+      "I need help",
+      "I want to talk to tech support",
+      "support",
+      "help"
+    ],
+    "freetrial": [
+      "Can I sign up for a free trial?",
+      "Is there a free trial?",
+      "How do I get a free trial?",
+      "free trial"
+    ],
+    "al_login": [
+      "How do I log in with my linked account?",
+      "Where do I log in after linking my account?",
+      "Logging in with a linked account"
+    ],
+    "al_support": [
+      "Afterwards, what's the impact from support?",
+      "What kind of support do I get after I link my account?",
+      "How much support will I receive after I link my account?",
+      "After I link my account, how much support will I get?",
+      "support impact",
+      "impact from support",
+      "support after linking account",
+      "support from linked account"
+    ],
+    "al_morehelp": [
+      "Where do I get help with linking my account?",
+      "Other ways to link my account",
+      "need help with linking my account",
+      "linked account help",
+      "Is there another way to get help with linking my account?"
+    ],
+    "al_multacct": [
+      "What if I have several accounts, how do I link them?",
+      "link several accounts together",
+      "link my accounts",
+      "link multiple accounts",
+      "I want to link several accounts"
+    ],
+    "al_incent": [
+      "incentives for linked accounts",
+      "What are the incentives for linking my accounts?",
+      "What are the benefits of linking my accounts?",
+      "What do I get for linking my accounts?",
+      "Is there value in linking my accounts?",
+      "Why should I link my accounts?"
+    ],
+    "al_owaffslacct": [
+      "Why should I add IBM Cloud platform services to my SoftLayer account?",
+      "What do I get if I add IBM Cloud platform services to my SoftLayer account?",
+      "What happens to my SoftLayer account by adding IBM Cloud platform services?",
+      "add IBM Cloud to SoftLayer",
+      "combining IBM Cloud with SoftLayer",
+      "attaching IBM Cloud with SoftLayer"
+    ],
+    "al_howaffslmastacct": [
+      "What happens to my SoftLayer Master Account ID after I link my accounts?",
+      "What is the impact to SoftLayer after I link my accounts?",
+      "What about my Master Account ID with SoftLayer?"
+    ],
+    "switch-between-accounts": [
+      "switch multiple accounts",
+      "change between accounts",
+      "Can I switch between multiple accounts?",
+      "switching accounts",
+      "How do I switch between several accounts?"
+    ],
+    "switch-account-owners": [
+      "Am I allowed to switch account owners?",
+      "change account owners",
+      "How to switch account owners?",
+      "switch owner",
+      "change owner"
+    ],
+    "batch-registration": [
+      "Can IBM Cloud support batch registration of users?",
+      "Does IBM Cloud support multiple registrations of users?",
+      "register many users",
+      "register more than one user",
+      "Can IBM Cloud register multiple users?",
+      "Is IBM Cloud able to register more than one user at a time?"
+    ],
+    "know-about-tags": [
+      "What is a tag?",
+      "How do I use tags?",
+      "How are tags used?",
+      "What are tags?"
+    ],
+    "tags-visibility-account": [
+      "Who can see tags in an account?",
+      "Who is allowed to view the tags in an account?",
+      "view tags in account"
+    ],
+    "permissions-add-remove-tags": [
+      "What permissions are needed to add or remove tags?",
+      "What permissions are required to add or remove tags?",
+      "adding or removing tags"
+    ],
+    "delete-tag": [
+      "Am I allowed to delete a tag?",
+      "How to delete a tag?",
+      "Can I remove a tag?",
+      "Can I get rid of a tag?",
+      "deleting a tag",
+      "removing a tag"
+    ],
+    "rename-tag": [
+      "Am I allowed to rename a tag?",
+      "How to rename a tag?",
+      "Can I change the name of a tag?",
+      "Am I allowed to change the name of a tag?",
+      "renaming a tag",
+      "changing tag name",
+      "edit tag name"
+    ],
+    "nosecondreg": [
+      "Why am I not able to access a different IBM Cloud location?",
+      "cannot access a different location",
+      "can't access different locations",
+      "Why am I not allowed to access a different IBM Cloud location?",
+      "Why can't I use a different IBM Cloud location?"
+    ],
+    "nosecondorg": [
+      "Why am I not allowed to create a new organization?",
+      "cannot create new organization",
+      "having trouble creating a new organization",
+      "Why can't I make a new organization?",
+      "Why can't I form a new organization?"
+    ],
+    "nosecondlite": [
+      "can't make a new Lite plan instance",
+      "having trouble creating a new Lite plan instance",
+      "Am I allowed to create a new Lite plan instance?",
+      "Why can't I form a new Lite plan instance?"
+    ],
+    "noruntimemem": [
+      "How did I go over the runtime memory allowance?",
+      "went over my runtime memory allowance",
+      "How did I use too much of my runtime memory allowance?"
+    ],
+    "ts_accnt_inactive": [
+      "Why isn't my account working?",
+      "Why did my account deactivate?",
+      "inactive account",
+      "account not active",
+      "account not working properly"
+    ],
+    "ts_adduser": [
+      "Why am I not allowed to add users to an organization?",
+      "adding users to org",
+      "add people to an org",
+      "Can I add users to an org?",
+      "Who is allowed to add users to an org?"
+    ],
+    "ts_no_space": [
+      "Why aren't there any spaces associated with my current organization?",
+      "Where are the spaces associated with my current org?",
+      "Why are no spaces linked with my current org?",
+      "Why are there not any spaces connected with my current organization?"
+    ],
+    "ts_domain_diff": [
+      "sharing domain names",
+      "Which apps share a domain name?",
+      "What types of apps share a domain name?",
+      "kinds of app that share a domain",
+      "Which apps share domains?",
+      "Why am I sharing a domain name with some apps?"
+    ],
+    "ts_ui_org": [
+      "Can administrators use the console to view all orgs?",
+      "Administrators not allowed to use the console to view all organizations",
+      "Why can't admins use the console to see all of the orgs?",
+      "Who can use the console to view all orgs?"
+    ],
+    "ts_addcc": [
+      "not able to add my credit card",
+      "can't add credit card",
+      "Why am I not allowed to add my credit card information?",
+      "having trouble adding a credit card",
+      "credit card not being added",
+      "credit card won't add info"
+    ],
+    "ts_logintobm": [
+      "Why is my password incorrect?",
+      "I want to reset my password",
+      "Why can't I login with my new password?",
+      "my password is wrong",
+      "incorrect password",
+      "wrong password",
+      "can't use my password",
+      "password not working"
+    ],
+    "ts_old_username": [
+      "Why was my IBMid or email not recognized?",
+      "Why isn't my IBMid or email being recognized?",
+      "not recognizing my IBMid or email",
+      "my id is not being recognized",
+      "Why was my ID not recognized?"
+    ],
+    "ts_unabletologin": [
+      "Why is my IBMid not being recognized with any IBM Cloud accounts?",
+      "Why is my IBMid not connected with any IBM Cloud accounts?",
+      "Why is my IBMid not linked with any IBM Cloud accounts?",
+      "Why are my IBM Cloud accounts not associated with my IBMid?",
+      "ID not associated with accounts"
+    ],
+    "ts_login_stalls": [
+      "Why isn't the console opening with my IBMid?",
+      "the console will not open when I log in",
+      "console not opening",
+      "console isn't opening",
+      "console doesn't open after logging in"
+    ],
+    "ts_login_ibmid": [
+      "Why didn't my IBMid login go through?",
+      "Why isn't my IBMid login complete?",
+      "logging in not complete",
+      "login not completing",
+      "login isn't completing",
+      "Why didn't my IBMid login finish?"
+    ],
+    "ts_accntpding": [
+      "After registering an account, I can't log in right away",
+      "not letting me log in immediately after registering",
+      "not able to log in after registration of an account",
+      "can't log in after account registration"
+    ],
+    "ts_err": [
+      "Why am I encountering pages that don't load?",
+      "Why am I seeing console pages not loading?",
+      "Why are console pages not loading?",
+      "can't load console pages",
+      "not loading console pages"
+    ]
+}
