@@ -2,9 +2,9 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-13"
+lastupdated: "2019-04-30"
 
-keywords: change service, upgrade service, service plan
+keywords: change service, upgrade service, service plan, pricing plan
 
 subcollection: account
 
@@ -20,7 +20,7 @@ subcollection: account
 # Changement des plans de service
 {: #changing}
 
-Vous pouvez changer le plan d'un service {{site.data.keyword.Bluemix}} si les changements de plan sont activés pour le service spécifique. Vous pouvez être amené à changer de plan, par exemple, pour mettre à niveau ou réduire votre plan. Vous pouvez effectuer cette action à partir de votre tableau de bord d'instance de service.
+Vous pouvez changer le plan de tarification d'un service {{site.data.keyword.Bluemix}} si les changements de plan sont activés pour le service spécifique. Vous pouvez être amené à changer de plan, par exemple, pour mettre à niveau ou réduire votre plan. Vous pouvez changer le plan de tarification du service à partir du tableau de bord de l'instance de service.
 {: shortdesc}
 
 Recherchez-vous plus de détails sur la mise à niveau de votre type de compte ? Pour plus d'informations, voir [Mise à niveau de votre compte](/docs/account?topic=account-upgrading-account).
@@ -28,8 +28,12 @@ Recherchez-vous plus de détails sur la mise à niveau de votre type de compte ?
 
 Vous pouvez changer les plans de service pour certains services uniquement. Si le changement de plan est possible pour le service, le tableau de bord de l'instance du service affiche l'option **Plan** dans la navigation. Chaque service propose un ensemble différent d'étapes à suivre si vous changez de plan.
 
-1. Cliquez sur **Plan** dans le tableau de bord d'instance de service. En général, vous pouvez mettre à niveau votre plan ou passer à un plan de niveau inférieur.
-2. Après avoir changé de plan, vous devez effectuer des étapes supplémentaires. Celles-ci varient selon le type de changement de plan et le service. Par exemple, si vous êtes passé à un plan de niveau inférieur, il se peut que vous deviez reconstituer votre application. Ou bien, si vous avez mis à niveau votre plan, vous devrez peut-être reconstituer votre application et effectuer d'autres opérations.
+1. Dans la console {{site.data.keyword.Bluemix_notm}}, cliquez sur l'icône Menu ![Icône Menu](../icons/icon_hamburger.svg) > **Liste de ressources** pour afficher votre liste de ressources. Cliquez sur le service à mettre à jour.
+1. Cliquez sur **Plan** dans le tableau de bord d'instance de service. Sélectionnez le plan pour lequel vous voulez changer, puis cliquez sur **Sauvegarder**.
+
+    Certains services ont des plans qui ne peuvent pas être sélectionnés à partir de la page Plan. Généralement, ces plans ne peuvent pas être sélectionnés car ils nécessitent l'aide de l'équipe commerciale ou une migration avant de changer les plans. Pour plus d'informations sur la procédure requise, voir la documentation du service.
+
+1. Après avoir changé de plan, vous devez effectuer des étapes supplémentaires. Celles-ci varient selon le type de changement de plan et le service. Par exemple, si vous êtes passé à un plan de niveau inférieur, il se peut que vous deviez reconstituer votre application. Ou bien, si vous avez mis à niveau votre plan, vous devrez peut-être reconstituer votre application et effectuer d'autres opérations.
 
    Pour reconstituer votre application, accédez à votre liste de ressources pour trouver l'application à laquelle le service est lié. Cliquez sur l'icône Menu ![Icône Menu](../icons/icon_hamburger.svg) **> Liste de ressources**. Dans le menu de l'application, sélectionnez **Redémarrer l'application**.
 
@@ -38,7 +42,7 @@ Vous pouvez changer les plans de service pour certains services uniquement. Si l
 ## Changement d'un plan via l'interface de ligne de commande
 {: #changing_command_line}
 
-Vous pouvez changer le plan d'un service non seulement en utilisant la console mais également en utilisant l'interface de ligne de commande (CLI) {{site.data.keyword.Bluemix_notm}}.
+Vous pouvez changer le plan de tarification d'un service non seulement en utilisant la console mais également en utilisant l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}.
 
 1. Vérifiez que le service est activé via le contrôleur de ressources.
 

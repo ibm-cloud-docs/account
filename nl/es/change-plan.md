@@ -2,9 +2,9 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-13"
+lastupdated: "2019-04-30"
 
-keywords: change service, upgrade service, service plan
+keywords: change service, upgrade service, service plan, pricing plan
 
 subcollection: account
 
@@ -20,7 +20,7 @@ subcollection: account
 # Cambio de planes de servicio
 {: #changing}
 
-Puede cambiar el plan de un servicio de {{site.data.keyword.Bluemix}} si los cambios de plan están habilitados para el servicio específico. Es posible que desee cambiar el plan, por ejemplo, para actualizarlo o reducirlo. Puede cambiar el plan desde el panel de control de la instancia de servicio.
+Puede cambiar el plan de precios de un servicio de {{site.data.keyword.Bluemix}} si los cambios de plan están habilitados para el servicio específico. Es posible que desee cambiar el plan, por ejemplo para actualizarlo o reducirlo. Puede cambiar el plan de precios del servicio desde el panel de control de la instancia de servicio.
 {: shortdesc}
 
 ¿Desea ver información sobre cómo actualizar su tipo de cuenta? Consulte [Actualización de la cuenta](/docs/account?topic=account-upgrading-account) para obtener más información.
@@ -29,8 +29,12 @@ Puede cambiar el plan de un servicio de {{site.data.keyword.Bluemix}} si los cam
 Solo puede cambiar los planes de servicio de determinados servicios. Si los cambios de plan están habilitados para el servicio, el panel de control de la instancia de servicio muestra una opción **Plan** en la navegación. Cada servicio tiene un conjunto distinto de pasos siguientes a seguir
 si cambia su plan.
 
-1. Pulse **Plan** en el panel de control de la instancia de servicio. Por lo general, puede actualizar su plan o reducirlo.
-2. Después de cambiar el plan, debe completar unos pasos adicionales. Los pasos varían según el tipo de cambio
+1. En la consola de {{site.data.keyword.Bluemix_notm}}, pulse el icono de Menú ![Icono de Menú](../icons/icon_hamburger.svg) > **Lista de recursos** para ver su lista de recursos. Pulse el servicio que desea actualizar.
+1. Pulse **Plan** en el panel de control de la instancia de servicio. Seleccione el plan al que desea cambiar y pulse **Guardar**.
+
+    Algunos servicios tienen planes que no se pueden seleccionar de la página Plan. Normalmente, estos planes no se pueden seleccionar porque requieren asistencia del equipo de ventas o necesitan una migración para poder cambiar los planes. Consulte la documentación del servicio para obtener información acerca de los siguientes pasos necesarios.
+
+1. Después de cambiar el plan, debe completar unos pasos adicionales. Los pasos varían según el tipo de cambio
 de plan y del servicio. Por ejemplo, si ha reducido su plan, es posible que tenga que volver a transferir su
 app. O, si ha actualizado su plan, es posible que deba volver a transferir su app y realizar otras acciones.
 
@@ -41,7 +45,7 @@ app. O, si ha actualizado su plan, es posible que deba volver a transferir su ap
 ## Cambio de un plan mediante la CLI
 {: #changing_command_line}
 
-Como alternativa a la consola, puede cambiar el plan de un servicio mediante la interfaz de línea de mandatos (CLI) de {{site.data.keyword.Bluemix_notm}}.
+Como alternativa a la consola, puede cambiar el plan de precios de un servicio mediante la interfaz de línea de mandatos (CLI) de {{site.data.keyword.Bluemix_notm}}.
 
 1. Compruebe si el servicio está habilitado con el controlador de recursos.
 

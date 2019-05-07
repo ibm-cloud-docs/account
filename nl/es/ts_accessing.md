@@ -53,7 +53,7 @@ Si inicia sesión en {{site.data.keyword.Bluemix_notm}} y el proceso se interrum
 {: tip}
 
 
-## ¿Por qué no se han reconocido mi IBMid o mi correo electrónico?
+## ¿Por qué no se ha reconocido mi IBMid o mi correo electrónico?
 {: #ts_old_username}
 {: troubleshoot}
 

@@ -2,9 +2,9 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-13"
+lastupdated: "2019-04-30"
 
-keywords: change service, upgrade service, service plan
+keywords: change service, upgrade service, service plan, pricing plan
 
 subcollection: account
 
@@ -20,7 +20,7 @@ subcollection: account
 # Mudando planos de serviço
 {: #changing}
 
-É possível mudar o plano de um serviço do {{site.data.keyword.Bluemix}} quando as mudanças de plano estão ativadas para o serviço específico. Você pode desejar mudar seu plano, por exemplo, para fazer upgrade ou reduzir seu plano. É possível mudar seu plano por meio de seu painel da instância de serviço.
+É possível mudar o plano de precificação de um serviço {{site.data.keyword.Bluemix}} quando as mudanças no plano estão ativadas para o serviço específico. Você pode desejar mudar o plano, por exemplo, fazer upgrade ou reduzir seu plano. É possível mudar o plano de precificação do serviço no painel da instância de serviço.
 {: shortdesc}
 
 Você está procurando detalhes sobre como fazer upgrade de seu tipo de conta? Consulte [Fazendo upgrade de sua conta](/docs/account?topic=account-upgrading-account) para obter mais informações.
@@ -28,8 +28,12 @@ Você está procurando detalhes sobre como fazer upgrade de seu tipo de conta? C
 
 É possível mudar os planos de serviços somente para determinados serviços. Se mudanças de plano estiverem ativadas para o serviço, o painel da instância de serviço exibirá uma opção **Plano** na navegação. Cada serviço terá um conjunto diferente de etapas subsequentes se você mudar o seu plano.
 
-1. Clique em **Plano** no painel da instância de serviço. Normalmente, é possível fazer upgrade do plano ou reduzi-lo.
-2. Depois de mudar seu plano, deve-se concluir etapas extras. As etapas serão diferentes dependendo do tipo de mudança de plano e do serviço. Por exemplo, se
+1. No console do {{site.data.keyword.Bluemix_notm}}, clique no ícone Menu ![Ícone Menu](../icons/icon_hamburger.svg) > **Lista de recursos** para visualizar sua lista de recursos. Clique no serviço que você deseja atualizar.
+1. Clique em **Plano** no painel da instância de serviço. Selecione o plano para o qual você deseja mudar e clique em **Salvar**.
+
+    Alguns serviços têm planos que não são selecionáveis na página Plano. Geralmente, esses planos não são selecionáveis porque requerem assistência da equipe de Vendas ou requerem uma migração antes que seja possível mudar os planos. Veja a documentação para o serviço para obter informações sobre as próximas etapas requeridas.
+
+1. Depois de mudar seu plano, deve-se concluir etapas extras. As etapas serão diferentes dependendo do tipo de mudança de plano e do serviço. Por exemplo, se
 tiver reduzido o plano, talvez precise remontar seu app. Ou, caso tenha feito upgrade do
 plano, talvez seja necessário remontar o app e tomar ações adicionais.
 
@@ -40,7 +44,7 @@ plano, talvez seja necessário remontar o app e tomar ações adicionais.
 ## Mudando um plano por meio da CLI
 {: #changing_command_line}
 
-Como uma alternativa para o console, é possível mudar o plano de um serviço usando a interface da linha de comandos (CLI) do {{site.data.keyword.Bluemix_notm}}.
+Como uma alternativa para o console, é possível mudar o plano de precificação de um serviço usando a interface da linha de comandos (CLI) do {{site.data.keyword.Bluemix_notm}}.
 
 1. Verifique se o serviço está ativado com o controlador de recurso.
 

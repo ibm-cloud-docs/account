@@ -2,9 +2,9 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-13"
+lastupdated: "2019-04-30"
 
-keywords: change service, upgrade service, service plan
+keywords: change service, upgrade service, service plan, pricing plan
 
 subcollection: account
 
@@ -20,7 +20,7 @@ subcollection: account
 # Servicepläne ändern
 {: #changing}
 
-Sie können den Plan eines {{site.data.keyword.Bluemix}}-Service ändern, wenn für diesen einen Service Planänderungen aktiviert sind. Der Plan kann beispielsweise geändert werden, um ein Upgrade durchzuführen oder um zu einem Plan mit weniger Features zu wechseln. Der Plan kann über das Dashboard der Serviceinstanz geändert werden.
+Sie können den Preistarif eines {{site.data.keyword.Bluemix}}-Service ändern, wenn für diesen einen Service Planänderungen aktiviert sind. Der Tarif kann beispielsweise geändert werden, um ein Upgrade durchzuführen oder um zu einem Plan mit weniger Features zu wechseln. Sie können den Preistarif des Service über das Dashboard der Serviceinstanz ändern.
 {: shortdesc}
 
 Sind Sie auf der Suche nach Details zum Upgrade Ihres Kontotyps? Weitere Informationen finden Sie in [Upgrade für das Konto durchführen](/docs/account?topic=account-upgrading-account).
@@ -28,8 +28,12 @@ Sind Sie auf der Suche nach Details zum Upgrade Ihres Kontotyps? Weitere Informa
 
 Das Ändern der Servicepläne ist nur für bestimmte Services möglich. Wenn Planänderungen für den Service aktiviert sind, wird im Serviceinstanzdashboard die Option **Plan** im Navigationsbereich angezeigt. Für jeden Service müssen unterschiedliche weitere Schritte ausgeführt werden, wenn Sie Ihren Plan ändern.
 
-1. Klicken Sie im Dashboard der Serviceinstanz auf **Plan**. Normalerweise können Sie ein Upgrade oder eine Herabstufung für Ihren Plan vornehmen.
-2. Nach dem Ändern des Plans müssen Sie zusätzliche Schritte ausführen. Die Schritte variieren abhängig von der Art der Planänderung und vom Service. Wenn Sie beispielsweise Ihren Plan reduziert haben, müssen Sie möglicherweise ein erneutes Staging für Ihre App durchführen. Oder wenn Sie für Ihren Plan ein Upgrade durchgeführt haben, müssen Sie möglicherweise ein erneutes Staging für Ihre App und weitere Aktionen durchführen.
+1. Klicken Sie in der {{site.data.keyword.Bluemix_notm}}-Konsole auf das Menüsymbol ![Menüsymbol](../icons/icon_hamburger.svg) und dann auf **Ressourcenliste**, um Ihre Ressourcenliste anzuzeigen. Klicken Sie auf den Service, den Sie aktualisieren möchten. 
+1. Klicken Sie im Dashboard der Serviceinstanz auf **Plan**. Wählen Sie den Plan aus, zu dem Sie wechseln möchten, und klicken Sie auf **Speichern**. 
+
+    Einige Services verfügen über Pläne, die nicht über die Seite 'Plan' ausgewählt werden können. Typischerweise sind diese Pläne nicht auswählbar, weil sie Unterstützung vom Vertriebsteam erforderlich machen oder weil eine Migration ausgeführt werden muss, bevor Sie Pläne ändern können. Informationen zu den erforderlichen nächsten Schritten finden Sie in der Dokumentation. 
+
+1. Nach dem Ändern des Plans müssen Sie zusätzliche Schritte ausführen. Die Schritte variieren abhängig von der Art der Planänderung und vom Service. Wenn Sie beispielsweise Ihren Plan reduziert haben, müssen Sie möglicherweise ein erneutes Staging für Ihre App durchführen. Oder wenn Sie für Ihren Plan ein Upgrade durchgeführt haben, müssen Sie möglicherweise ein erneutes Staging für Ihre App und weitere Aktionen durchführen.
 
    Für ein erneutes Staging Ihrer App rufen Sie die Ressourcenliste auf und suchen Sie nach der App, an die der Service gebunden ist. Klicken Sie auf das Menüsymbol ![Menüsymbol](../icons/icon_hamburger.svg) ** und dann auf Ressourcenliste**. Wählen Sie im Menü 'App' die Option **Anwendung erneut starten** aus.
 
@@ -38,7 +42,7 @@ Das Ändern der Servicepläne ist nur für bestimmte Services möglich. Wenn Pla
 ## Plan über die CLI ändern
 {: #changing_command_line}
 
-Als Alternative zur Konsole können Sie den Plan eines Service über die {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle (CLI) ändern.
+Als Alternative zur Konsole können Sie den Preistarif eines Service über die {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle (CLI) ändern. 
 
 1. Prüfen Sie, ob der Service mit dem Ressourcencontroller aktiviert ist.
 
