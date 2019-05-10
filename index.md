@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-19"
+lastupdated: "2019-05-10"
 
 keywords: account types, Lite, free account, paid account, buy account, account difference, compare account, subscription, service bundle
 
@@ -100,19 +100,6 @@ Service bundle subscriptions aren't available through the {{site.data.keyword.Bl
 {:tip}
 
 After you purchase a service bundle subscription, you'll receive an email with a feature code that you apply to add the bundle to your account. For more information about how to apply feature codes, see [Applying feature codes](/docs/account?topic=account-codes). When your service bundle expires or you use all of the credit, you can continue to use any of the services, with usage charged at the Pay-As-You Go rate.
-
-### {{site.data.keyword.Bluemix_dedicated_notm}} account
-With {{site.data.keyword.Bluemix_dedicated_notm}}, you must sign up for a one year minimum term that includes:
-
-   * VPN connectivity back to your infrastructure
-   * Fully redundant environment in a {{site.data.keyword.BluSoftlayer_notm}} data center
-   * All supported runtimes ({{site.data.keyword.runtime_liberty_short}}, {{site.data.keyword.runtime_nodejs_short}}, and built-in open source runtimes)
-   * All dedicated services that you selected and all public {{site.data.keyword.Bluemix_notm}} services
-   * Standard {{site.data.keyword.Bluemix_notm}} support
-
-You can also order optional items such as {{site.data.keyword.BluDirectLink}} or advanced or premium support options. Contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg) for more information.
-
-What you pay each month during that term is based on the dedicated services that you want, plus a Subscription account that gives you access to all public services. Usage charges of the services in {{site.data.keyword.Bluemix_notm}} Public are calculated based on your Subscription account agreement. You receive an invoice for any services that you use beyond that subscription agreement. Contact your IBM designated account representative or [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg) to get started on your agreement.
 
 ## Upgrading your account
 {: #upgrade-lite-account}
