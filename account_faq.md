@@ -40,16 +40,6 @@ If you are able to log in to an {{site.data.keyword.Bluemix_notm}} account, go t
 
 If you can't log into an {{site.data.keyword.Bluemix}} account, [create an account request](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
 
-
-## How can I view accounts that I own?
-{: #accounts-owned}
-{: faq}
-
-The IBM Cloud console header lists all accounts that are affiliated with your login ID, including those you own. You can view your role in each account on the [Users](https://{DomainName}/iam/users] page.
-
-You can also find your accounts from the CLI by running the `ibmcloud account list` command.
-
-
 ## What is Cloud Foundry?
 {: #cloud-foundry}
 {: faq}
@@ -169,7 +159,6 @@ If you do decide to leave, how you cancel your account depends on your account t
 
 Contact [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} to open a support case and request to delete your account. If you have data that is associated with your old account that you want to move to a new account, include this information in your email.
 
-
 ## Why is my account deactivated?
 {: #account-deactivated}
 {: faq}
@@ -188,13 +177,11 @@ If you believe your account was deactivated in error, contact support by calling
 
 Click **Support** from the console menu bar to go to the Support Center. Learn more about support in [Getting support](/docs/get-support?topic=get-support-support-plans).
 
-
 ## Can I sign up for a free trial?
 {: #freetrial}
 {: faq}
 
 {{site.data.keyword.Bluemix_notm}} trial accounts are available for faculty and students at accredited academic institutions. To qualify for a trial account, go to [Harness the Power of IBM ![External link icon](../icons/launch-glyph.svg)](https://onthehub.com/ibm/){: new_window} and validate your institution credentials.
-
 
 ## After I link my account, how do I log in?
 {: #al_login}
@@ -202,13 +189,11 @@ Click **Support** from the console menu bar to go to the Support Center. Learn m
 
 After you link your account, use your IBMid to log in to the {{site.data.keyword.Bluemix}} console.
 
-
 ## After I link my account, what's the impact on my support?
 {: #al_support}
 {: faq}
 
 After you link your account, you keep the same level of support when you add {{site.data.keyword.Bluemix_notm}} platform to your account.
-
 
 ## Are there other ways to get help with linking my account?
 {: #al_morehelp}
@@ -248,6 +233,14 @@ For more information about being an account master, see [Working with users](/do
 
 You can still use the ID for your SoftLayer account to sign in to the customer portal because the {{site.data.keyword.Bluemix_notm}} console is accessible with IBMids.
 
+## How can I view accounts that I own?
+{: #accounts-owned}
+{: faq}
+
+The IBM Cloud console header lists all accounts that are affiliated with your login ID, including those you own. You can view your role in each account on the [Users](https://{DomainName}/iam/users] page.
+
+You can also find your accounts from the CLI by running the `ibmcloud account list` command.
+
 ## How do I switch between multiple accounts?
 {: #switch-between-accounts}
 {: faq}
@@ -260,7 +253,9 @@ If you have more than one account, you can click your account name to select ano
 {: #switch-account-owners}
 {: faq}
 
-You can't switch the owner of an account, but you can change resource owners. To learn more about switching ownership, see [Transferring ownership of a private resource](/docs/account?topic=account-include#owners).
+You can transfer ownership of individual resources within your account to someone else by using the `ibmcloud catalog` command. To learn more, see [Transferring ownership of a private resource](/docs/account?topic=account-include#owners).
+
+Transferring ownership of your entire account requires additional help from support. To get help, [contact support](/docs/get-support?topic=get-support-getting-customer-support).
 
 ## Does {{site.data.keyword.Bluemix_notm}} support batch registration of users?
 {: #batch-registration}
@@ -299,4 +294,3 @@ Before you can delete a tag, you must remove it from all resources. If you still
 {: faq}
 
 You can't edit the name of a tag. To rename a tag, remove it and reassign the resource with a new tag.  
-
