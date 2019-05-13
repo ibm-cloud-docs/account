@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-09"
+lastupdated: "2019-05-13"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -39,6 +39,15 @@ If you are able to log in to an {{site.data.keyword.Bluemix_notm}} account, go t
    After you open the case, an email notification is sent to you. Follow the instructions for further communication.
 
 If you can't log into an {{site.data.keyword.Bluemix}} account, [create an account request](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
+
+
+## How can I view accounts that I own?
+{: #accounts-owned}
+{: faq}
+
+The IBM Cloud console header lists all accounts that are affiliated with your login ID, including those you own. You can view your role in each account on the [Users](https://{DomainName}/iam/users] page.
+
+You can also find your accounts from the CLI by running the `ibmcloud account list` command.
 
 
 ## What is Cloud Foundry?
@@ -79,8 +88,11 @@ Reaching any quota limit for Lite plan instances suspends the service for that m
 
 You can check your usage by going to **Manage > Billing and usage** and selecting **Usage**. For more information, see [Viewing your usage](/docs/billing-usage?topic=billing-usage-viewingusage).
 
-If you want to stop or delete a service, you can do so from the resource list. Learn more in [Navigating the {{site.data.keyword.Bluemix_notm}} console](/docs/overview?topic=overview-ui).
+## How do I delete a service from my account?
+{: #accounts-service-removal}
+{: faq}
 
+If you want to stop or delete a service, you can do so from the resource list. Learn more in [Navigating the {{site.data.keyword.Bluemix_notm}} console](/docs/overview?topic=overview-ui).
 
 ## How many resource groups, orgs, or spaces can I create?
 {: #resourcelimit}
@@ -288,16 +300,3 @@ Before you can delete a tag, you must remove it from all resources. If you still
 
 You can't edit the name of a tag. To rename a tag, remove it and reassign the resource with a new tag.  
 
-## What accounts do I own?
-{: #accounts-owned}
-{: faq}
-
-The IBM Cloud console header in the UI lists all accounts you are affiliated with as an owner or other role.
-To find the accounts you own you can also use the CLI to run the command ibmcloud account list.
-
-## How do I remove a service from my account?
-{: #accounts-service-removal}
-{: faq}
-
-This document will assist in [managing the resources in your resource list] (docs/overview?topic=overview-ui#dashboardview).
- 
