@@ -287,3 +287,17 @@ Before you can delete a tag, you must remove it from all resources. If you still
 {: faq}
 
 You can't edit the name of a tag. To rename a tag, remove it and reassign the resource with a new tag.  
+
+## What accounts do I own?
+{: #accounts-owned}
+{: faq}
+
+The IBM Cloud console header in the UI lists all accounts you are affiliated with as an owner or other role.
+To find the accounts you own you can also use the CLI to run the command ibmcloud account list.
+
+## How do I remove a service from my account?
+{: #accounts-service-removal}
+{: faq}
+
+This document will assist in [managing the resources in your resource list] (docs/overview?topic=overview-ui#dashboardview).
+ 
