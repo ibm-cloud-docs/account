@@ -68,6 +68,15 @@
       "are quotas reset per month",
       "lite plan mothly quotas"
     ],
+    "accounts-service-removal": [
+      "How do I delete a service from my account?",
+      "remove server from my account",
+      "How can I delete a service off my account",
+      "need to remove a service as not using it",
+      "Can I delete this server from my account?",
+      "I want you to cancel the SSL certificate from my account",
+      "remove a service from my account"
+    ],
     "resourcelimit": [
       "how many resource groups can I create",
       "is there a limit to the number of resource groups I can create",
@@ -204,6 +213,19 @@
       "What happens to my SoftLayer Master Account ID after I link my accounts?",
       "What is the impact to SoftLayer after I link my accounts?",
       "What about my Master Account ID with SoftLayer?"
+    ],
+    "accounts-owned": [
+      "What accounts do I have?",
+      "Which accounts do I own",
+      "How many accounts do I have",
+      "Which accounts am I in",
+      "accounts I own",
+      "I want to know the accounts I am in",
+      "accounts I am in?",
+      "which accounts I am in please",
+      "what accounts do I have",
+      "which accounts am I affiliated with",
+      "what accounts are in my name"
     ],
     "switch-between-accounts": [
       "switch multiple accounts",
@@ -378,27 +400,5 @@
       "Why are console pages not loading?",
       "can't load console pages",
       "not loading console pages"
-    ],
-    "accounts-owned": [
-      "What accounts do I have?",
-      "Which accounts do I own",
-      "How many accounts do I have",
-      "Which accounts am I in",
-      "accounts I own",
-      "I want to know the accounts I am in",
-      "accounts I am in?",
-      "which accounts I am in please",
-      "what accounts do I have",
-      "which accounts am I affiliated with",
-      "what accounts are in my name"
-    ],
-    "accounts-service-removal": [
-      "How do I delete a service from my account?",
-      "remove server from my account",
-      "How can I delete a service off my account",
-      "need to remove a service as not using it",
-      "Can I delete this server from my account?",
-      "I want you to cancel the SSL certificate from my account",
-      "remove a service from my account"
-    ],
+    ]
 }
