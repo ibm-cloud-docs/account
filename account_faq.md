@@ -237,7 +237,7 @@ You can still use the ID for your SoftLayer account to sign in to the customer p
 {: #accounts-owned}
 {: faq}
 
-The IBM Cloud console header lists all accounts that are affiliated with your login ID, including those you own. You can view your role in each account on the [Users](https://{DomainName}/iam/users] page.
+The IBM Cloud console header lists all accounts that are affiliated with your login ID, including those you own. You can view your role in each account on the [Users](https://{DomainName}/iam/users) page.
 
 You can also find your accounts from the CLI by running the `ibmcloud account list` command.
 
