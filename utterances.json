@@ -239,7 +239,8 @@
       "change account owners",
       "How to switch account owners?",
       "switch owner",
-      "change owner"
+      "change owner",
+      "transfer owner"
     ],
     "batch-registration": [
       "Can IBM Cloud support batch registration of users?",
