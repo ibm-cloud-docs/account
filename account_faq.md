@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-13"
+lastupdated: "2019-05-17"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -38,7 +38,7 @@ If you are able to log in to an {{site.data.keyword.Bluemix_notm}} account, go t
 
    After you open the case, an email notification is sent to you. Follow the instructions for further communication.
 
-If you can't log into an {{site.data.keyword.Bluemix}} account, [create an account request](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
+If you can't log into an {{site.data.keyword.Bluemix_notm}} account, [create an account request](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
 
 ## What is Cloud Foundry?
 {: #cloud-foundry}
@@ -94,26 +94,23 @@ If you have a billable account, there's no limit to the number of resource group
 {: #changeacct}
 {: faq}
 
-* To upgrade from a Lite to a Pay-As-You-Go account or a Subscription account, go to [Account settings](https://{DomainName}/account/settings).
-  * To upgrade to a Pay-As-You-Go account, click **Add credit card**.
-  * To upgrade to a Subscription account, click **Upgrade**.
-* To convert between Pay-As-You-Go and Subscription account types, contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
+To upgrade your Lite account, go to [Account settings](https://{DomainName}/account/settings). In the Account Upgrade section, click **Add credit card** to upgrade to a Pay-As-You-Go account, or click **Upgrade** for a Subscription account. You can also apply a promotional feature code to convert your Lite account to a trial account on the Account settings page.
 
-If you're not sure of your current account type, you can find it on the Account settings page.
+To convert between Pay-As-You-Go and Subscription account types, contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
-Learn more in [Upgrading your account](/docs/account?topic=account-upgrading-account).
+If you're not sure of your current account type, you can find it on the Account settings page. Learn more in [Upgrading your account](/docs/account?topic=account-upgrading-account).
 
 ## If I upgrade my Lite account, can I continue to use my existing instances?
 {: #nochange}
 {: faq}
 
-Yes, you can upgrade to a billable account and continue to use the instances you created with your Lite account.
+Yes, when you upgrade to a billable account, you can continue to use the instances you created with your Lite account.
 
 ## How do I update my credit card?
 {: #updatepayment}
 {: faq}
 
-You can update the payment method that's associated with your account by going to [Payments](https://cloud.ibm.com/billing/payments) in the console. Under Add Payment Method, enter in the billing information for your new card, then click **Add credit card**.
+Updating your credit card is just like adding a new one. Go to [Payments](https://{DomainName}/billing/payments), and in the Add Payment Method section, enter the billing information for your new card, then click **Add credit card**.
 
 To switch to a different payment method, select **Pay with Other** and then click **Submit change request**. A support case to change your payment method will be created for you.
 
