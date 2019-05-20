@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-19"
+lastupdated: "2019-05-10"
 
 keywords: account types, Lite, free account, paid account, buy account, account difference, compare account, subscription, service bundle
 
@@ -100,19 +100,6 @@ Las suscripciones a paquetes de servicios no están disponibles a través de la 
 {:tip}
 
 Después de adquirir una suscripción a un paquete de servicios, recibirá un correo electrónico con el código de característica que debe aplicar para añadir el paquete a su cuenta. Para obtener más información sobre cómo aplicar códigos de característica, consulte el apartado sobre [Aplicación de códigos de característica](/docs/account?topic=account-codes). Cuando caduque el paquete de servicios o cuando agote todo el crédito, puede seguir utilizando cualquiera de los servicios y el uso se cargará a la tasa de pago según uso.
-
-### Cuenta de {{site.data.keyword.Bluemix_dedicated_notm}}
-Con {{site.data.keyword.Bluemix_dedicated_notm}}, debe registrarse para un plazo mínimo de un año que incluye:
-
-   * Conectividad VPN para volver a su infraestructura
-   * Entorno completo y redundante en un centro de datos de {{site.data.keyword.BluSoftlayer_notm}}
-   * Todos los tiempos de ejecución soportados ({{site.data.keyword.runtime_liberty_short}}, {{site.data.keyword.runtime_nodejs_short}} y ejecuciones de código abierto)
-   * Todos los servicios dedicados que ha seleccionado y todos los servicios públicos de {{site.data.keyword.Bluemix_notm}}
-   * Soporte de {{site.data.keyword.Bluemix_notm}} estándar
-
-También puede pedir elementos opcionales como {{site.data.keyword.BluDirectLink}} u opciones de soporte avanzado o premium. Póngase en contacto con el [equipo de ventas de {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg) para obtener más información.
-
-Lo que deberá abonar cada mes durante dicho plazo dependerá de los servicios dedicados que desee, más una cuenta de suscripción que le ofrece acceso a todos los servicios públicos. Los cargos por uso de los servicios de {{site.data.keyword.Bluemix_notm}} público se calculan en función del acuerdo de la cuenta de suscripción. Recibirá una factura correspondiente a los servicios que utilice por encima del acuerdo de suscripción. Póngase en contacto con su representante de cuenta designado de IBM o con el [equipo de ventas de {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg) para empezar a trabajar en su acuerdo.
 
 ## Actualización de la cuenta
 {: #upgrade-lite-account}

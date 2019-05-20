@@ -6,8 +6,8 @@
       "Konto erstellen",
       "Vorgehensweise Konto erstellen",
       "Cloudkonto erstellen",
-      "für ein Konto registrieren",
-      "wie kann ich ein Konto erstellen",
+      "Für ein Konto registrieren",
+      "Wie kann ich ein Konto erstellen",
       "Ich möchte ein Konto erstellen",
       "Ich würde gerne ein Konto erstellen",
       "Zeig mir, wie ich ein Konto erstelle"
@@ -26,86 +26,95 @@
       "Fehler beim Erstellen meines Kontos"
     ],
     "cloud-foundry": [
-      "was ist Cloud Foundry",
-      "was macht Cloud Foundry",
+      "Was ist Cloud Foundry",
+      "Was macht Cloud Foundry",
       "Ist Cloud Foundry eine Plattform",
       "Ich möchte mehr über Cloud Foundry lernen",
       "Erzähl mir mehr über Cloud Foundry"
     ],
     "move-org-diff-account": [
       "Organisation zu einem anderen Konto umziehen",
-      "mit Organisation zu einem anderen Konto wechseln",
-      "wie ziehe ich Organisationen um",
-      "kann ich eine Organisation zu einem anderen Konto umziehen",
-      "ist es möglich, Organisationen in ein anderes Konto zu übertragen",
-      "kann ich Organisationen zwischen Konten umziehen"
+      "Mit einer Organisation zu einem anderen Konto wechseln",
+      "Wie ziehe ich Organisationen um",
+      "Kann ich eine Organisation zu einem anderen Konto umziehen",
+      "Ist es möglich, Organisationen in ein anderes Konto zu übertragen",
+      "Kann ich Organisationen zwischen Konten umziehen"
     ],
     "whichregions": [
-      "welche Regionen sind für Cloud Foundry verfügbar",
-      "welche CF-Regionen kann ich verwenden",
-      "kann Cloud Foundry alle Regionen verwenden",
-      "welche Regionen gibt es für Cloud Foundry",
+      "Welche Regionen sind für Cloud Foundry verfügbar",
+      "Welche CF-Regionen kann ich verwenden",
+      "Kann Cloud Foundry alle Regionen verwenden",
+      "Welche Regionen gibt es für Cloud Foundry",
       "Cloud Foundry-Regionen"
     ],
     "whatisliteplan": [
-      "was ist ein Lite-Konto",
-      "was ist ein Lite-Plan",
-      "welche Vorteile hat ein Lite-Plan",
-      "was kostet ein Lite-Plan",
-      "wie viel kostet ein Lite-Plan",
-      "muss ich für einen Lite-Plan zahlen",
+      "Was ist ein Lite-Konto",
+      "Was ist ein Lite-Plan",
+      "Welche Vorteile hat ein Lite-Plan",
+      "Was kostet ein Lite-Plan",
+      "Wie viel kostet ein Lite-Plan",
+      "Muss ich für einen Lite-Plan zahlen",
       "Ist ein Lite-Plan kostenlos?",
       "Ich möchte mehr über Lite-Pläne wissen",
       "Erzähl mir mehr über Lite-Pläne"
     ],
     "monthlyquota": [
-      "gibt es ein Kontingent für einen Lite-Plan",
-      "wird mir ein Lite-Plan in Rechnung gestellt",
-      "wird ein Lite-Plan ausgesetzt",
-      "was passiert, wenn mein Kontingent in einem Lite-Plan ausgeschöpft wird",
-      "gelten Kontingente pro Monat",
-      "gelten Kontingente pro Instanz",
-      "werden kontingente monatlich zurückgesetzt",
+      "Gibt es ein Kontingent für einen Lite-Plan",
+      "Wird mir ein Lite-Plan in Rechnung gestellt",
+      "Wird ein Lite-Plan ausgesetzt",
+      "Was passiert, wenn mein Kontingent in einem Lite-Plan ausgeschöpft wird",
+      "Gelten Kontingente pro Monat",
+      "Gelten Kontingente pro Instanz",
+      "Werden Kontingente monatlich zurückgesetzt",
       "Lite-Plan monatliche Kontingente"
     ],
+    "accounts-service-removal": [
+      "Wie kann ich einen Service aus meinem Konto löschen?",
+      "Wie kann ich einen Server aus meinem Konto löschen?",
+      "Wie lösche ich einen Service aus meinem Konto?",
+      "Ein Service soll entfernt werden, da er nicht genutzt wird.",
+      "Kann ich diesen Server aus meinem Konto löschen?",
+      "Ich möchte das SSL-Zertifikat für mein Konto stornieren.",
+      "Service von meinem Konto entfernen"
+    ],
     "resourcelimit": [
-      "wie viele Ressourcengruppen kann ich erstellen",
-      "gibt es ein Limit für die Anzahl von Ressourcengruppen, die ich erstellen kann",
-      "wie viele Organisationen kann ich erstellen",
-      "gibt es ein Limit für die Anzahl von Organisationen, die ich erstellen kann",
-      "wie viele Bereiche kann ich erstellen",
-      "gibt es ein Limit für die Anzahl von Bereichen, die ich erstellen kann"
+      "Wie viele Ressourcengruppen kann ich erstellen",
+      "Gibt es ein Limit für die Anzahl von Ressourcengruppen, die ich erstellen kann",
+      "Wie viele Organisationen kann ich erstellen",
+      "Gibt es ein Limit für die Anzahl von Organisationen, die ich erstellen kann",
+      "Wie viele Bereiche kann ich erstellen",
+      "Gibt es ein Limit für die Anzahl von Bereichen, die ich erstellen kann"
     ],
     "changeacct": [
       "Wie kann ich mein Konto upgraden",
       "Wie kann ich mein Konto ändern",
-      "kann ich mein Konto upgraden",
-      "mein Konto upgraden",
-      "ist ein Upgrade für mein Konto möglich",
-      "wie ändere ich meinen Kontotyp",
-      "sag mir, wie ich meinen Kontotyp upgrade",
+      "Kann ich mein Konto upgraden",
+      "Mein Konto upgraden",
+      "Ist ein Upgrade für mein Konto möglich",
+      "Wie ändere ich meinen Kontotyp",
+      "Sag mir, wie ich meinen Kontotyp upgrade",
       "Ich will mein Konto upgraden",
-      "was muss ich tun, um meinen Kontotyp zu ändern",
+      "Was muss ich tun, um meinen Kontotyp zu ändern",
       "Wo ändere ich mein konto?",
       "Wie kann ich mein Konto konvertieren?",
-      "Ich will meinen Kontotyp wechseln?"
+      "Ich will meinen Kontotyp wechseln"
     ],
     "nochange": [
-      "sind meine Instanzen nach dem Upgrade verfügbar",
-      "verliere ich meine alten Instanzen, wenn ich mein Konto upgrade",
-      "kann ich meine vorhandenen Services weiter verwenden, nachdem ich meinen Kontotyp geändert habe",
-      "was passiert mit meinen vorhandenen Instanzen nach dem Upgrade meines Kontos"
+      "Sind meine Instanzen nach dem Upgrade verfügbar",
+      "Verliere ich meine alten Instanzen, wenn ich mein Konto upgrade",
+      "Kann ich meine vorhandenen Services weiter verwenden, nachdem ich meinen Kontotyp geändert habe",
+      "Was passiert mit meinen vorhandenen Instanzen nach dem Upgrade meines Kontos"
     ],
     "updatepayment": [
-      "wie ändere ich meine Kreditkarteinformationen",
-      "sag mir, wie ich meine Kreditkarte bearbeiten kann",
-      "ich will meine Kreditkarteinformationen aktualisieren",
-      "ich würde gerne meine Kreditkarte ändern",
-      "wie kann ich meine Zahlungsoptionen bearbeiten",
-      "wo ändere ich meine Zahlungsoptionen"
+      "Wie ändere ich meine Kreditkarteinformationen",
+      "Sag mir, wie ich meine Kreditkarte bearbeiten kann",
+      "Ich will meine Kreditkarteinformationen aktualisieren",
+      "Ich würde gerne meine Kreditkarte ändern",
+      "Wie kann ich meine Zahlungsoptionen bearbeiten",
+      "Wo ändere ich meine Zahlungsoptionen"
     ],
     "change-email-prefs": [
-      "wie kann ich meine E-Mail-Vorgaben ändern",
+      "Wie kann ich meine E-Mail-Vorgaben ändern",
       "E-Mail-Benachrichtigungen",
       "E-Mail-Benachrichtigungen stoppen"
     ],
@@ -115,8 +124,8 @@
       "Wo setze ich mein VPN-Kennwort zurück?",
       "Wie kann ich mein Kontokennwort aktualisieren?",
       "Was muss ich tun, um mein VPN-Kennwort zu aktualisieren?",
-      "neues Kontokennwort",
-      "neues VPN-Kennwort"
+      "Neues Kontokennwort",
+      "Neues VPN-Kennwort"
     ],
     "cancelaccount": [
       "Wie kann ich mein Konto kündigen?",
@@ -173,15 +182,15 @@
     "al_morehelp": [
       "Wo bekomme ich Hilfe beim Verknüpfen meines Kontos?",
       "Andere Wege, mein Konto zu verknüpfen",
-      "brauche Hilfe beim Verknüpfen meines Kontos",
-      "verknüpftes Konto Hilfe",
+      "Brauche Hilfe beim Verknüpfen meines Kontos",
+      "Verknüpftes Konto Hilfe",
       "Gibt es eine andere Möglichkeit, Hilfe beim Verknüpfen meines Kontos zu erhalten?"
     ],
     "al_multacct": [
       "Wenn ich mehrere Konten habe, wie verknüpfe ich sie?",
-      "mehrere Konten miteinander verknüpfen",
-      "meine Konten verknüpfen",
-      "mehrere Konten verknüpfen",
+      "Mehrere Konten miteinander verknüpfen",
+      "Meine Konten verknüpfen",
+      "Mehrere Konten verknüpfen",
       "Ich möchte mehrere Konten verknüpfen"
     ],
     "al_incent": [
@@ -205,9 +214,22 @@
       "Welche Auswirkung hat das Verknüpfen meiner Konten auf SoftLayer?",
       "Was passiert mit meiner Stammkonto-ID für SoftLayer?"
     ],
+    "accounts-owned": [
+      "Über welche Konten verfüge ich?",
+      "Für welche Konten bin ich der Eigner?",
+      "Über wie viele Konten verfüge ich?",
+      "In welchen Konten bin ich?",
+      "Konten, deren Eigner ich bin",
+      "Ich möchte wissen, in welchen Konten ich bin.",
+      "Konten, in denen ich bin",
+      "In welchen Konten bin ich?",
+      "Über welche Konten verfüge ich?",
+      "Welchen Konten bin ich zugeordnet?",
+      "Welche Konten laufen auf meinen Namen?"
+    ],
     "switch-between-accounts": [
-      "zwischen mehreren Konten wechseln",
-      "zwischen Konten wechseln",
+      "Zwischen mehreren Konten wechseln",
+      "Zwischen Konten wechseln",
       "Kann ich zwischen mehreren Konten wechseln?",
       "Konten wechseln",
       "Wie wechsele ich zwischen mehreren Konten?"
@@ -222,8 +244,8 @@
     "batch-registration": [
       "Kann IBM Cloud die Registrierung von Benutzern mithilfe einer Batchoperation unterstützen?",
       "Unterstützt IBM Cloud mehrere Registrierungen von Benutzern?",
-      "viele Benutzer registrieren",
-      "mehr als einen Benutzer registrieren",
+      "Viele Benutzer registrieren",
+      "Mehr als einen Benutzer registrieren",
       "Kann IBM Cloud mehrere Benutzer registrieren?",
       "Ist IBM Cloud in der Lage, zu einem bestimmten Zeitpunkt mehr als einen Benutzer zu registrieren?"
     ],
@@ -262,33 +284,33 @@
     ],
     "nosecondreg": [
       "Warum bin ich nicht in der Lage, auf eine andere IBM Cloud-Position zuzugreifen?",
-      "kann nicht auf eine andere Position zugreifen",
-      "kann nicht auf verschiedene Positionen zugreifen",
+      "Kann nicht auf eine andere Position zugreifen",
+      "Kann nicht auf verschiedene Positionen zugreifen",
       "Warum darf ich nicht auf eine andere IBM Cloud-Position zugreifen?",
       "Warum darf ich keine andere IBM Cloud-Position verwenden?"
     ],
     "nosecondorg": [
       "Warum darf ich keine neue Organisation erstellen?",
-      "kann keine neue Organisation erstellen",
+      "Kann keine neue Organisation erstellen",
       "Probleme beim Erstellen einer neuen Organisation",
       "Warum kann ich keine neue Organisation einrichten?",
       "Warum kann ich keine neue Organisation bilden?"
     ],
     "nosecondlite": [
-      "kann keine neue Lite-Planinstanz erstellen",
+      "Kann keine neue Lite-Planinstanz erstellen",
       "Probleme beim Erstellen einer neuen Lite-Planinstanz",
       "Darf ich eine neue Lite-Planinstanz erstellen?",
       "Warum kann ich keine neue Lite-Planinstanz einrichten?"
     ],
     "noruntimemem": [
       "Wie habe ich das zulässige Laufzeitspeicherkontingent überschritten?",
-      "mein Laufzeitspeicherkontingent überschritten",
+      "Mein Laufzeitspeicherkontingent überschritten",
       "Wie habe ich zu viel meines Laufzeitspeicherkontingents verbraucht?"
     ],
     "ts_accnt_inactive": [
       "Warum funktioniert mein Konto nicht?",
       "Warum wurde mein Konto inaktiviert?",
-      "inaktives Konto",
+      "Inaktives Konto",
       "Konto nicht aktiv",
       "Konto funktioniert nicht ordnungsgemäß"
     ],
@@ -320,8 +342,8 @@
       "Wer kann über die Konsole alle Organisationen anzeigen?"
     ],
     "ts_addcc": [
-      "kann meine Kreditkarte nicht hinzufügen",
-      "kann Kreditkarte nicht hinzufügen",
+      "Kann meine Kreditkarte nicht hinzufügen",
+      "Kann Kreditkarte nicht hinzufügen",
       "Warum darf ich meine Kreditkartendaten nicht hinzufügen?",
       "Probleme beim Hinzufügen einer Kreditkarte",
       "Kreditkarte wird nicht hinzugefügt",
@@ -331,17 +353,17 @@
       "Warum ist mein Kennwort nicht korrekt?",
       "Ich will mein Kennwort zurücksetzen",
       "Warum kann ich mich nicht mit meinem neuen Kennwort anmelden?",
-      "mein Kennwort ist falsch",
-      "inkorrektes Kennwort",
-      "falsches Kennwort",
-      "kann mein Kennwort nicht verwenden",
+      "Mein Kennwort ist falsch",
+      "Inkorrektes Kennwort",
+      "Falsches Kennwort",
+      "Kann mein Kennwort nicht verwenden",
       "Kennwort funktioniert nicht"
     ],
     "ts_old_username": [
       "Warum wurde meine IBMid oder E-Mail-Adresse nicht erkannt?",
       "Warum wird meine IBMid oder E-Mail-Adresse nicht erkannt?",
-      "meine IBMid oder E-Mail-Adresse wird nicht erkannt",
-      "meine ID wird nicht erkannt",
+      "Meine IBMid oder E-Mail-Adresse wird nicht erkannt",
+      "Meine ID wird nicht erkannt",
       "Warum wurde meine ID nicht erkannt?"
     ],
     "ts_unabletologin": [
@@ -353,7 +375,7 @@
     ],
     "ts_login_stalls": [
       "Warum lässt sich die Konsole nicht mit meiner IBMid öffnen?",
-      "die Konsole öffnet sich nicht, wenn ich mich anmelde",
+      "Die Konsole öffnet sich nicht, wenn ich mich anmelde",
       "Konsole öffnet sich nicht",
       "Konsole wird nicht geöffnet",
       "Konsole wird nach dem Anmelden nicht geöffnet"
@@ -368,15 +390,15 @@
     ],
     "ts_accntpding": [
       "Nach der Registrierung eines Kontos kann ich mich nicht direkt anmelden",
-      "kann mich direkt nach Registrierung nicht anmelden",
+      "Kann mich direkt nach Registrierung nicht anmelden",
       "Nach der Registrierung eines Kontos kann ich mich nicht anmelden",
-      "kann mich nach Kontoregistrierung nicht anmelden"
+      "Kann mich nach Kontoregistrierung nicht anmelden"
     ],
     "ts_err": [
       "Warum werden manche Seiten nicht geladen?",
       "Warum sehe ich Konsolenseiten, die nicht geladen werden?",
       "Warum werden Konsolenseiten nicht geladen?",
-      "kann Konsolenseiten nicht laden",
+      "Kann Konsolenseiten nicht laden",
       "Konsolenseiten werden nicht geladen"
     ]
 }

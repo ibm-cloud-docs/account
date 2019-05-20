@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-09"
+lastupdated: "2019-05-13"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -39,7 +39,6 @@ Wenn Sie sich bei einem {{site.data.keyword.Bluemix_notm}}-Konto anmelden könne
    Nachdem Sie den Fall erstellt haben, wird Ihnen eine E-Mail-Benachrichtigung gesendet. Folgen Sie zur weiteren Kommunikation den entsprechenden Anweisungen.
 
 Wenn Sie sich nicht bei einem {{site.data.keyword.Bluemix}}-Konto anmelden können, [Erstellen Sie eine Kontoanforderung](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link").
-
 
 ## Was ist Cloud Foundry?
 {: #cloud-foundry}
@@ -79,8 +78,11 @@ Wenn ein Grenzwert für das Kontingent für die Lite-Planinstanzen erreicht wird
 
 Sie können die Nutzung überprüfen, indem Sie **Verwalten > Abrechnung und Nutzung** aufrufen und **Nutzung** auswählen. Weitere Informationen finden Sie unter [Nutzung anzeigen](/docs/billing-usage?topic=billing-usage-viewingusage).
 
-Wenn Sie einen Service stoppen oder löschen möchten, können Sie dies über die Ressourcenliste tun. Weitere Informationen finden Sie in [Navigation in der {{site.data.keyword.Bluemix_notm}}-Konsole](/docs/overview?topic=overview-ui).
+## Wie kann ich einen Service aus meinem Konto löschen?
+{: #accounts-service-removal}
+{: faq}
 
+Wenn Sie einen Service stoppen oder löschen möchten, können Sie dies über die Ressourcenliste tun. Weitere Informationen finden Sie in [Navigation in der {{site.data.keyword.Bluemix_notm}}-Konsole](/docs/overview?topic=overview-ui).
 
 ## Wie viele Ressourcengruppen, Organisationen oder Bereiche kann ich erstellen?
 {: #resourcelimit}
@@ -97,7 +99,7 @@ Wenn Sie über ein gebührenpflichtiges Konto verfügen, gibt es keinen Grenzwer
   * Für ein Upgrade auf ein Abonnementkonto klicken Sie auf **Upgrade**.
 * Zum Konvertieren zwischen einem nutzungsabhängigen und einem Abonnementkonto wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}} Vertrieb ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
-Den aktuellen Kontotyp finden Sie auf der Seite mit den Kontoeinstellungen. 
+Den aktuellen Kontotyp finden Sie auf der Seite mit den Kontoeinstellungen.
 
 Weitere Informationen finden Sie in [Upgrade für das Konto durchführen](/docs/account?topic=account-upgrading-account).
 
@@ -157,7 +159,6 @@ Wenn Sie Ihr Konto beenden möchten, ist das weitere Vorgehen von Ihrem Kontotyp
 
 Wenden Sie sich an [{{site.data.keyword.Bluemix_notm}} Support ![Symbol für externen Link](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window}, um einen Supportfall für das Löschen Ihres Kontos zu öffnen. Wenn Sie über Daten verfügen, die Ihrem alten Konto zugeordnet sind, die jedoch in ein neues Konto übernommen werden sollen, dann geben Sie die entsprechenden Informationen in Ihrer E-Mail an.
 
-
 ## Warum ist mein Konto inaktiviert?
 {: #account-deactivated}
 {: faq}
@@ -174,8 +175,7 @@ Wenn Sie glauben, dass Ihr Konto aufgrund eines Fehlers inaktiviert wurde, wende
 {: #contactsupport}
 {: faq}
 
-Klicken Sie auf **Support** in der Menüleiste der Konsole, um das Support Center aufzurufen. Weitere Informationen zum Support finden Sie in [Unterstützung anfordern](/docs/get-support?topic=get-support-support-plans). 
-
+Klicken Sie auf **Support** in der Menüleiste der Konsole, um das Support Center aufzurufen. Weitere Informationen zum Support finden Sie in [Unterstützung anfordern](/docs/get-support?topic=get-support-support-plans).
 
 ## Kann ich eine Registrierung für eine kostenfreie Testversion durchführen?
 {: #freetrial}
@@ -183,20 +183,17 @@ Klicken Sie auf **Support** in der Menüleiste der Konsole, um das Support Cente
 
 Für Fakultätsmitglieder und Studierende akkreditierter akademischer Einrichtungen sind {{site.data.keyword.Bluemix_notm}}-Testkonten erhältlich. Um sich für ein solches Testkonto zu qualifizieren, rufen Sie die Seite [Nutzen Sie das Potenzial von IBM ![Symbol für externen Link](../icons/launch-glyph.svg)](https://onthehub.com/ibm/){: new_window} auf und validieren Sie die Berechtigungsnachweise für Ihre Einrichtung.
 
-
 ## Wie melde ich mich an, nachdem ich mein Konto verknüpft habe?
 {: #al_login}
 {: faq}
 
 Nach dem Verknüpfen Ihres Kontos melden Sie sich mit Ihrer IBMid bei der {{site.data.keyword.Bluemix}}-Konsole an.
 
-
 ## Wie wirkt sich das Verknüpfen meines Kontos auf meinen Support aus?
 {: #al_support}
 {: faq}
 
 Nach dem Verknüpfen Ihres Kontos ändert sich an Ihrem Support-Level nichts, wenn Sie die {{site.data.keyword.Bluemix_notm}}-Plattform zu Ihrem Konto hinzufügen.
-
 
 ## Gibt es andere Möglichkeiten, Hilfe beim Verknüpfen meines Kontos zu erhalten?
 {: #al_morehelp}
@@ -236,6 +233,14 @@ Weitere Informationen für Master von Konten finden Sie in [Mit Benutzern arbeit
 
 Sie können die ID weiterhin für Ihr SoftLayer-Konto verwenden, um sich beim Kundenportal anzumelden, da auf die {{site.data.keyword.Bluemix_notm}}-Konsole über IBMids zugegriffen werden kann.
 
+## Wie kann ich Konten anzeigen, deren Eigner ich bin?
+{: #accounts-owned}
+{: faq}
+
+Im Header der IBM Cloud-Konsole sind alle Konten aufgeführt, die Ihrer Anmelde-ID zugeordnet sind. Hierzu gehören auch die Konten, deren Eigner Sie sind. Sie können Ihre Rolle im jeweiligen Konto auf der Seite [Benutzer](https://{DomainName}/iam/users) anzeigen.
+
+Sie können Ihre Konten auch auflisten, indem Sie den Befehl `ibmcloud account list` über die Befehlszeilenschnittstelle ausführen. 
+
 ## Wie kann ich zwischen mehreren Konten wechseln?
 {: #switch-between-accounts}
 {: faq}
@@ -248,7 +253,9 @@ Wenn Sie über mehrere Konten verfügen, können Sie auf einen der Kontonamen kl
 {: #switch-account-owners}
 {: faq}
 
-Der Eigner eines Kontos kann nicht geändert werden; Sie können jedoch die Ressourceneigner ändern. Weitere Informationen zum Ändern des Eigentumsrechts finden Sie in [Eigentumsrecht für eine private Ressource übertragen](/docs/account?topic=account-include#owners).
+Sie können das Eigentumsrecht für einzelne Ressourcen innerhalb Ihres Kontos an eine andere Person übertragen, indem Sie den Befehl `ibmcloud catalog` verwenden. Weitere Informationen finden Sie in [Eigentumsrecht für eine private Ressource übertragen](/docs/account?topic=account-include#owners).
+
+Zur Übertragung des Eigentumsrechts für Ihre gesamtes Konto benötigen Sie zusätzliche Unterstützung des Support-Teams. [Wenden Sie sich an den Support](/docs/get-support?topic=get-support-getting-customer-support), um Unterstützung anzufordern. 
 
 ## Unterstützt {{site.data.keyword.Bluemix_notm}} die Registrierung von Benutzern mithilfe einer Batchoperation?
 {: #batch-registration}

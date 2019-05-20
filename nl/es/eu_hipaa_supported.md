@@ -19,7 +19,7 @@ subcollection: account
 # Habilitación de valores soportados UE e HIPAA
 {: #eu-hipaa-supported}
 
-Si es el propietario de la cuenta, puede habilitar la cuenta para que tenga soporte en UE e HIPAA. Puede optar por habilitar el valor Soporte en la UE, por ejemplo si utiliza recursos para procesar datos personales de ciudadanos europeos. Puede elegir habilitar el valor Soporte en HIPAA si tiene pensado incluir la información sanitaria protegida (PHI) en los servicios habilitados para HIPAA.
+Si es el propietario de la cuenta, puede habilitar la cuenta para que tenga soporte en UE e HIPAA. Puede optar por habilitar el valor Soporte en la UE, por ejemplo si utiliza recursos para procesar datos personales de ciudadanos europeos. Puede elegir habilitar el valor Soporte de HIPAA si tiene pensado incluir la información sanitaria protegida (PHI) en los servicios habilitados para HIPAA.
 {:shortdesc}
 
 
@@ -38,7 +38,7 @@ Al habilitar este valor, se permite que los servicios con Soporte en la UE con c
    Después de habilitar el valor Soporte en la UE, puede utilizar la etiqueta Soporte en la UE para buscar en el catálogo las ofertas que tienen planes con soporte en la UE.
 
 
-## Habilitación del valor Soporte en HIPAA
+## Habilitación del valor Soporte de HIPAA
 {: #enabling-hipaa}
 
 Los protocolos US Health Insurance Portability and Accountability Act (HIPAA) y Health Information Technology for Economic and Clinical Health (HITECH) Act definen estándares para la gestión de la información y de las transacciones electrónicas relacionadas con sanidad. Si usted o su empresa forman parte de una entidad adherida a HIPAA, deben habilitar el valor Soporte de HIPAA si ejecutan cargas de trabajo confidenciales reguladas por HIPAA y por el protocolo HITECH. Encontrará más información sobre la conformidad de {{site.data.keyword.Bluemix_notm}} en [Conformidad en {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud/compliance){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo").
@@ -55,7 +55,7 @@ Habilite este valor únicamente si usted o su empresa constituyen una entidad cu
 Las cuentas que habilitan el valor Soporte de HIPAA tienen siguen teniendo acceso al catálogo completo de servicios. Los servicios de {{site.data.keyword.Bluemix_notm}} suelen ofrecer varios planes. La etiqueta Habilitado para HIPAA de un servicio se puede aplicar a todos los planes de servicio o se puede limitar a planes o configuraciones específicos. Como cliente, usted es el único responsable de limitar PHI a los planes y arquitecturas habilitados para HIPAA de acuerdo con HIPAA y HITECH.
 
 1. Vaya a **Gestionar > Cuenta** y seleccione **Valores de cuenta** en la consola.
-2. Para la opción Soportado en HIPAA, pulse en **Activado**.
+2. Para la opción Soporte de HIPAA, pulse en **Activado**.
 3. Lea la información sobre la habilitación de este valor.
 
   No podrá inhabilitar el valor después de haberlo habilitado.
@@ -63,4 +63,4 @@ Las cuentas que habilitan el valor Soporte de HIPAA tienen siguen teniendo acces
 
 4. Seleccione **Aceptar** y pulse **Enviar**.
 
-  Después de habilitar el valor Soporte en HIPAA, puede utilizar la etiqueta Soporte en HIPAA para buscar en el catálogo las ofertas con soporte en HIPAA.
+  Después de habilitar el valor Soporte de HIPAA, puede utilizar la etiqueta Soporte de HIPAA para buscar en el catálogo las ofertas con soporte de HIPAA.

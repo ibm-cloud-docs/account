@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-09"
+lastupdated: "2019-05-13"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -41,7 +41,6 @@ Si puede iniciar sesión en una cuenta de {{site.data.keyword.Bluemix_notm}}, va
    Después de abrir el caso, se le enviará una notificación por correo electrónico. Siga las instrucciones para una mayor comunicación.
 
 Si no puede iniciar sesión en una cuenta de {{site.data.keyword.Bluemix}}, [cree una solicitud de cuenta](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo").
-
 
 ## ¿Qué es Cloud Foundry?
 {: #cloud-foundry}
@@ -82,8 +81,11 @@ Si se alcanza cualquier límite de cuota para instancias del plan Lite, se suspe
 Para ver su uso, vaya a **Gestionar > Facturación y uso** y seleccione **Uso**. Para obtener más información, consulte
 [Visualización del uso](/docs/billing-usage?topic=billing-usage-viewingusage).
 
-Si desea detener o suprimir un servicio, puede hacerlo desde la lista de recursos. Para obtener más información, consulte [Navegación en la consola {{site.data.keyword.Bluemix_notm}}](/docs/overview?topic=overview-ui).
+## ¿Cómo puedo suprimir un servicio de mi cuenta?
+{: #accounts-service-removal}
+{: faq}
 
+Si desea detener o suprimir un servicio, puede hacerlo desde la lista de recursos. Para obtener más información, consulte [Navegación en la consola {{site.data.keyword.Bluemix_notm}}](/docs/overview?topic=overview-ui).
 
 ## ¿Cuántos grupos de recursos, organizaciones o espacios puedo crear?
 {: #resourcelimit}
@@ -161,7 +163,6 @@ Si decide marcharse, la manera de cancelar su cuenta dependerá del tipo de cuen
 
 Póngase en contacto con el [equipo de soporte de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} para abrir un caso de soporte y solicitar la supresión de su cuenta. Si tiene datos asociados con su antigua cuenta que desea moverlos a una nueva cuenta, incluya esta información en su correo electrónico.
 
-
 ## ¿Por qué está desactivada mi cuenta?
 {: #account-deactivated}
 {: faq}
@@ -180,13 +181,11 @@ Si cree que su cuenta se ha desactivado por error, póngase en contacto con el e
 
 Pulse **Soporte** en la barra de menús de la consola para ir al centro de soporte. Encontrará más información sobre soporte en [Obtención de soporte](/docs/get-support?topic=get-support-support-plans).
 
-
 ## ¿Puedo registrarme para una prueba gratuita?
 {: #freetrial}
 {: faq}
 
 Las cuentas de prueba de {{site.data.keyword.Bluemix_notm}} están disponibles para profesores y estudiantes de instituciones académicas acreditadas. Para cumplir los requisitos para una cuenta de prueba, vaya a [Aprovechar la potencia de IBM ![Icono de enlace externo](../icons/launch-glyph.svg)](https://onthehub.com/ibm/){: new_window} y valide las credenciales de la institución.
-
 
 ## Después de enlazar mi cuenta, ¿cómo inicio una sesión?
 {: #al_login}
@@ -194,13 +193,11 @@ Las cuentas de prueba de {{site.data.keyword.Bluemix_notm}} están disponibles p
 
 Después de enlazar su cuenta, utilice su IBMid para iniciar una sesión en la consola de {{site.data.keyword.Bluemix}}.
 
-
 ## Después de enlazar mi cuenta, ¿cómo afecta a mi soporte?
 {: #al_support}
 {: faq}
 
 Después de enlazar su cuenta, mantendrá el mismo nivel de soporte que el que tenía al añadir la plataforma {{site.data.keyword.Bluemix_notm}} a su cuenta.
-
 
 ## ¿Hay otras formas de obtener ayuda con relación al enlace de cuentas?
 {: #al_morehelp}
@@ -240,6 +237,14 @@ Para obtener más información sobre el papel del maestro de cuentas, consulte [
 
 Todavía podrá utilizar el ID de cuenta de SoftLayer para iniciar una sesión en el portal de clientes porque es posible acceder a la consola de {{site.data.keyword.Bluemix_notm}} mediante los IBMid.
 
+## ¿Cómo puedo ver las cuentas que poseo?
+{: #accounts-owned}
+{: faq}
+
+En la cabecera de la consola de IBM Cloud se muestran las cuentas a las que está afiliado con su ID de inicio de sesión, incluidas las que son de su propiedad. Puede ver su rol sobre cada cuenta en la página [Usuarios](https://{DomainName}/iam/users).
+
+También puede encontrar las cuentas en la CLI con el mandato `ibmcloud account list`.
+
 ## ¿Cómo puedo conmutar entre varias cuentas?
 {: #switch-between-accounts}
 {: faq}
@@ -252,7 +257,9 @@ Si tiene más de una cuenta, puede pulsar en el nombre de la cuenta para selecci
 {: #switch-account-owners}
 {: faq}
 
-No puede cambiar el propietario de una cuenta, pero puedo cambiar propietarios de recursos. Para obtener más información sobre el cambio de la propiedad, consulte [Cómo transferir la propiedad de un recurso privado](/docs/account?topic=account-include#owners).
+Puede transferir la propiedad de recursos individuales dentro de su cuenta a otro usuario mediante el mandato `ibmcloud catalog`. Para obtener más información, consulte [Cómo transferir la propiedad de un recurso privado](/docs/account?topic=account-include#owners).
+
+Para transferir la propiedad de toda la cuenta necesitará ayuda adicional del equipo de soporte. Para obtener ayuda, [póngase en contacto con el equipo de soporte](/docs/get-support?topic=get-support-getting-customer-support).
 
 ## ¿Ofrece soporte {{site.data.keyword.Bluemix_notm}} al registro por lotes de los usuarios?
 {: #batch-registration}

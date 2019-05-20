@@ -68,6 +68,15 @@
       "se restablecen las cuotas por mes",
       "cuotas mensuales del plan lite"
     ],
+    "accounts-service-removal": [
+      "¿Cómo suprimo un servicio de mi cuenta?",
+      "eliminar servidor de mi cuenta",
+      "¿Cómo puedo suprimir un servicio de mi cuenta?",
+      "necesito eliminar un servicio porque no lo utilizo",
+      "¿Puedo suprimir este servidor de mi cuenta?",
+      "Quiero cancelar el certificado SSL de mi cuenta",
+      "eliminar un servicio de mi cuenta"
+    ],
     "resourcelimit": [
       "cuántos grupos de recursos puedo crear",
       "existe un límite en el número de grupos de recursos que puedo crear",
@@ -204,6 +213,19 @@
       "¿Qué ocurre con mi ID de cuenta maestra de SoftLayer después de enlazar mis cuentas?",
       "¿Cuál es el impacto en SoftLayer de enlazar mis cuentas?",
       "¿Qué sucede con mi ID de cuenta maestra con SoftLayer?"
+    ],
+    "accounts-owned": [
+      "¿Qué cuentas tengo?",
+      "Qué cuentas poseo",
+      "Cuántas cuentas tengo",
+      "En qué cuentas participo",
+      "cuentas que poseo",
+      "Quiero saber las cuentas en las que participo",
+      "¿cuentas en las que participo?",
+      "en qué cuentas participo",
+      "qué cuentas tengo",
+      "a qué cuentas estoy afiliado",
+      "qué cuentas están a mi nombre"
     ],
     "switch-between-accounts": [
       "cambiar varias cuentas",

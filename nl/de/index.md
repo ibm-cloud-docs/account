@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-19"
+lastupdated: "2019-05-10"
 
 keywords: account types, Lite, free account, paid account, buy account, account difference, compare account, subscription, service bundle
 
@@ -70,7 +70,7 @@ Die folgende Liste enthält zentrale Features, die mit einem Lite-Konto zur Verf
 ## Nutzungsabhängiges Konto
 {: #paygo}
 
-Mit einem nutzungsabhängigen Konto verfügen Sie über Zugriff auf den gesamten {{site.data.keyword.Bluemix_notm}}-Katalog, einschließlich aller kostenfreien Pläne, und Sie erhalten mit 512 MB pro Monat die doppelte Menge an freiem Laufzeitspeicher. Gebühren fallen nur für die von Ihnen genutzten abrechnungsfähigen Services an, ohne langfristige Verträge oder Verpflichtungen. 
+Mit einem nutzungsabhängigen Konto verfügen Sie über Zugriff auf den gesamten {{site.data.keyword.Bluemix_notm}}-Katalog, einschließlich aller kostenfreien Pläne, und Sie erhalten mit 512 MB pro Monat die doppelte Menge an freiem Laufzeitspeicher. Gebühren fallen nur für die von Ihnen genutzten abrechnungsfähigen Services an, ohne langfristige Verträge oder Verpflichtungen.
 
 Sie können mehrere Ressourcengruppen erstellen, um Kontingente ohne großen Aufwand zu verwalten und um Informationen zu Abrechnung und Nutzung für eine Gruppe von Ressourcen anzuzeigen. Die für Sie anfallenden Gebühren richten Sie nach Ihrer Nutzung von {{site.data.keyword.Bluemix_notm}}-Berechnungen und -Services. Wenn die Nutzung das kostenfreie Laufzeit- und Servicekontingent überschreitet, erhalten Sie eine monatliche Rechnung, die Details zu den Ressourcengebühren enthält.
 
@@ -81,44 +81,31 @@ Darüber hinaus können Sie mit einem nutzungsabhängigen Konto Advanced oder Pr
 
 Mit einem Abonnementkonto können Sie mehrere Ressourcengruppen erstellen, um Kontingente ohne großen Aufwand zu verwalten und um Informationen zu Abrechnung und Nutzung für eine Gruppe von Ressourcen anzuzeigen. Sie verpflichten sich zu einem Mindestausgabebetrag pro Monat und erhalten einen Abonnementrabatt, der auf diese Mindestgebühr angewendet wird.
 
-Beispiel: Wenn Sie sich zu einem Ausgabebetrag von $ 100 pro Monat für einen Zeitraum von 6 Monaten verpflichten, können Sie einen Rabatt von 10 % erhalten. Während der Abonnementlaufzeit fallen Nutzungsgebühren von $ 600 an, Sie bezahlen jedoch nur $ 540 dafür. Je länger die Abonnementlaufzeit, desto höher der Rabatt. 
+Beispiel: Wenn Sie sich zu einem Ausgabebetrag von $ 100 pro Monat für einen Zeitraum von 6 Monaten verpflichten, können Sie einen Rabatt von 10 % erhalten. Während der Abonnementlaufzeit fallen Nutzungsgebühren von $ 600 an, Sie bezahlen jedoch nur $ 540 dafür. Je länger die Abonnementlaufzeit, desto höher der Rabatt.
 
-Ihre Nutzung wird von der Gesamtmenge des Abonnements subtrahiert. Selbst wenn die Nutzung von Monat zu Monat variiert, bleibt die Abrechnung vorhersehbar und konsistent. Wenn die Nutzung die Gesamtmenge des Abonnements überschreitet, fallen für die Überschreitung die regulären Gebühren ohne Rabatt an. 
+Ihre Nutzung wird von der Gesamtmenge des Abonnements subtrahiert. Selbst wenn die Nutzung von Monat zu Monat variiert, bleibt die Abrechnung vorhersehbar und konsistent. Wenn die Nutzung die Gesamtmenge des Abonnements überschreitet, fallen für die Überschreitung die regulären Gebühren ohne Rabatt an.
 
 Wie die nutzungsabhängigen Konten ermöglicht Ihnen auch das Abonnementkonto, Advanced oder Premium Support-Pläne zu bestellen, um bei Bedarf zusätzliche Unterstützung zu erhalten. Weitere Informationen finden Sie in [Support-Pläne](/docs/get-support?topic=get-support-support-plans).
 
-Wenn Sie über ein Abonnementkonto verfügen, können Sie die meisten Services erstellen, die im [{{site.data.keyword.Bluemix_notm}}-Katalog](https://cloud.ibm.com/catalog/){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link") verfügbar sind. Für einige Services gilt jedoch ein bestimmter Preisstrukturplan, gemäß dem diese Services separat erworben werden müssen.
+Wenn Sie über ein Abonnementkonto verfügen, können Sie die meisten Services erstellen, die im [{{site.data.keyword.Bluemix_notm}}-Katalog](https://{DomainName}/catalog){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link") verfügbar sind. Für einige Services gilt jedoch ein bestimmter Preisstrukturplan, gemäß dem diese Services separat erworben werden müssen.
 
 ### Serviceabonnementpakete
 {: #service-subscriptions}
 
-Serviceabonnementpakete bieten Zugriff und Gutschriften für eine Gruppe von Services innerhalb einer bestimmten Domäne, die für gängige Anwendungsfälle verwendet werden. Sie können Servicepakete aus den Bereichen AI, Analytics, {{site.data.keyword.blockchainfull_notm}}, Internet of Things (IoT) und Cloud-native Services auswählen. Falls die gegebenen Anforderungen mehrere Domänen betreffen, können Sie mehrere Serviceabonnementpakete erwerben. 
+Serviceabonnementpakete bieten Zugriff und Gutschriften für eine Gruppe von Services innerhalb einer bestimmten Domäne, die für gängige Anwendungsfälle verwendet werden. Sie können Servicepakete aus den Bereichen AI, Analytics, {{site.data.keyword.blockchainfull_notm}}, Internet of Things (IoT) und Cloud-native Services auswählen. Falls die gegebenen Anforderungen mehrere Domänen betreffen, können Sie mehrere Serviceabonnementpakete erwerben.
 
-Sie können Servicepakete zu jedem vorhandenen Kontotyp hinzufügen, auch zu Lite-Konten. In den ersten 90 Tagen ist die Nutzung auf Services innerhalb des Pakets begrenzt. Nach den ersten 90 Tagen verfügen Sie über Zugriff auf den gesamten Katalog. Serviceabonnementpakete unterliegen den Bedingungen der [{{site.data.keyword.Bluemix_notm}}-Servicebeschreibung](/docs/overview/terms-of-use?topic=overview-terms). 
+Sie können Servicepakete zu jedem vorhandenen Kontotyp hinzufügen, auch zu Lite-Konten. In den ersten 90 Tagen ist die Nutzung auf Services innerhalb des Pakets begrenzt. Nach den ersten 90 Tagen verfügen Sie über Zugriff auf den gesamten Katalog. Serviceabonnementpakete unterliegen den Bedingungen der [{{site.data.keyword.Bluemix_notm}}-Servicebeschreibung](/docs/overview/terms-of-use?topic=overview-terms).
 
 Serviceabonnementpakete sind nicht über die {{site.data.keyword.Bluemix_notm}}-Konsole verfügbar. Wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}}-Vertrieb ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}, wenn Sie weitere Informationen benötigen oder ein Servicepaket erwerben möchten.
 {:tip}
 
-Nach dem Kauf eines Serviceabonnementpakets erhalten Sie eine E-Mail mit einem Feature-Code, den Sie anwenden, um das Paket zu Ihrem Konto hinzuzufügen. Weitere Informationen zum Anwenden von Feature-Codes finden Sie in [Feature-Codes anwenden](/docs/account?topic=account-codes). Wenn das Servicepaket abläuft oder die Gutschrift verbraucht ist, können Sie die Services weiter nutzen, wobei die nutzungsabhängigen Gebühren berechnet werden. 
-
-### {{site.data.keyword.Bluemix_dedicated_notm}}-Konto
-Bei {{site.data.keyword.Bluemix_dedicated_notm}} müssen Sie sich für eine Mindestlaufzeit von einem Jahr anmelden.
-
-   * VPN-Anbindung zurück zu Ihrer Infrastruktur
-   * Vollständige redundante Umgebung in einem {{site.data.keyword.BluSoftlayer_notm}}-Rechenzentrum
-   * Alle unterstützten Laufzeiten ({{site.data.keyword.runtime_liberty_short}}, {{site.data.keyword.runtime_nodejs_short}} sowie integrierte Open-Source-Laufzeiten)
-   * Alle dedizierten Services, die Sie ausgewählt haben, und alle öffentlichen {{site.data.keyword.Bluemix_notm}}-Services
-   * Standard-{{site.data.keyword.Bluemix_notm}}-Unterstützung
-
-Es können auch optionale Features, wie z. B. {{site.data.keyword.BluDirectLink}}, Advanced Support oder Premium Support, bestellt werden. Weitere Informationen erhalten Sie vom [{{site.data.keyword.Bluemix_notm}}-Vertrieb ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg).
-
-Die monatlichen Kosten während dieser Laufzeit sind von den von Ihnen gewünschten dedizierten Services plus einem Abonnementkonto abhängig, mit dem Sie auf alle öffentlichen Services zugreifen können. Die Nutzungsgebühren der Services in {{site.data.keyword.Bluemix_notm}} Public werden auf der Grundlage Ihrer Abonnementkontovereinbarung berechnet. Sie erhalten für sämtliche Services, die Sie über die Abonnementvereinbarung hinaus nutzen, eine Rechnung. Für Informationen zu Ihrer Vereinbarung wenden Sie sich an Ihren zugewiesenen IBM Kundenbeauftragten oder an den [{{site.data.keyword.Bluemix_notm}}-Vertrieb](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg).
+Nach dem Kauf eines Serviceabonnementpakets erhalten Sie eine E-Mail mit einem Feature-Code, den Sie anwenden, um das Paket zu Ihrem Konto hinzuzufügen. Weitere Informationen zum Anwenden von Feature-Codes finden Sie in [Feature-Codes anwenden](/docs/account?topic=account-codes). Wenn das Servicepaket abläuft oder die Gutschrift verbraucht ist, können Sie die Services weiter nutzen, wobei die nutzungsabhängigen Gebühren berechnet werden.
 
 ## Upgrade für Konto durchführen
 {: #upgrade-lite-account}
 
-Wenn Sie Ihr Konto erweitern möchten, können Sie ein [Upgrade für ein Lite-Konto](/docs/account?topic=account-upgrading-account) auf ein nutzungsabhängiges Konto oder ein Abonnementkonto durchführen. Ein Upgrade für Ihr Konto bietet Ihnen die gesamte Palette des {{site.data.keyword.Bluemix_notm}}-Katalogs, zusätzliche freie Ressourcen und mehr. 
+Wenn Sie Ihr Konto erweitern möchten, können Sie ein [Upgrade für ein Lite-Konto](/docs/account?topic=account-upgrading-account) auf ein nutzungsabhängiges Konto oder ein Abonnementkonto durchführen. Ein Upgrade für Ihr Konto bietet Ihnen die gesamte Palette des {{site.data.keyword.Bluemix_notm}}-Katalogs, zusätzliche freie Ressourcen und mehr.
 
-Nach einem Upgrade des Lite-Kontos auf ein nutzungsabhängiges Konto erhalten Sie eine Werbegutschrift von $ 200, die automatisch für Ihr Konto angewendet wird. Die Gutschrift von $ 200 ist für einen Zeitraum von 30 Tagen gültig und die Nutzung wird automatisch vom Gutschriftsbetrag subtrahiert. Die Gutschrift kann nicht mit Angeboten anderer Anbieter verwendet werden und ist möglicherweise nicht für alle Konten verfügbar. 
+Nach einem Upgrade des Lite-Kontos auf ein nutzungsabhängiges Konto erhalten Sie eine Werbegutschrift von $ 200, die automatisch für Ihr Konto angewendet wird. Die Gutschrift von $ 200 ist für einen Zeitraum von 30 Tagen gültig und die Nutzung wird automatisch vom Gutschriftsbetrag subtrahiert. Die Gutschrift kann nicht mit Angeboten anderer Anbieter verwendet werden und ist möglicherweise nicht für alle Konten verfügbar.
 
 Wenn Sie bereits über ein nutzungsabhängiges Konto oder ein Abonnementkonto verfügen, können Sie das Konto auch in einen anderen Kontotyp konvertieren. Weitere Informationen finden Sie in [Upgrade für Konto durchführen](/docs/account?topic=account-upgrading-account).
