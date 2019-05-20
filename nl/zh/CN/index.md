@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-19"
+lastupdated: "2019-05-10"
 
 keywords: account types, Lite, free account, paid account, buy account, account difference, compare account, subscription, service bundle
 
@@ -87,7 +87,7 @@ subcollection: account
 
 与现收现付帐户一样，您的预订帐户可以订购高级或高端支持套餐，以便在需要时获得额外帮助。要了解更多信息，请参阅[支持套餐](/docs/get-support?topic=get-support-support-plans)。
 
-如果您有预订帐户，那么可以创建 [{{site.data.keyword.Bluemix_notm}} 目录](https://cloud.ibm.com/catalog/){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标") 中提供的大多数服务。但某些服务会使用特定的价格套餐，要求您单独购买。
+如果您有预订帐户，那么可以创建 [{{site.data.keyword.Bluemix_notm}} 目录](https://{DomainName}/catalog){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标") 中提供的大多数服务。但某些服务会使用特定的价格套餐，要求您单独购买。
 
 ### 服务捆绑预订
 {: #service-subscriptions}
@@ -100,19 +100,6 @@ subcollection: account
 {:tip}
 
 购买服务捆绑预订后，您会收到一封电子邮件，其中包含将捆绑添加到您的帐户时要应用的特征代码。有关如何应用特征代码的更多信息，请参阅[应用特征代码](/docs/account?topic=account-codes)。当您的服务捆绑过期或您使用了所有信用值时，您可以继续使用任何服务，使用额按现收现付费率计算。
-
-### {{site.data.keyword.Bluemix_dedicated_notm}} 帐户
-使用 {{site.data.keyword.Bluemix_dedicated_notm}} 时，对于以下项，必须至少注册为期一年的使用期限：
-
-   * 连回基础架构的 VPN 连接
-   * {{site.data.keyword.BluSoftlayer_notm}} 数据中心内完全冗余的环境
-   * 所有受支持的运行时（{{site.data.keyword.runtime_liberty_short}}、{{site.data.keyword.runtime_nodejs_short}} 和内置开放式源代码运行时）
-   * 所有您选择的专用服务以及所有公共 {{site.data.keyword.Bluemix_notm}} 服务
-   * 标准 {{site.data.keyword.Bluemix_notm}} 支持
-
-您还可订购可选项，例如，{{site.data.keyword.BluDirectLink}} 或者高级或高端支持选项。有关更多信息，请联系 [{{site.data.keyword.Bluemix_notm}} 销售人员](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部链接图标](../icons/launch-glyph.svg)。
-
-在该期限内，您每月所支付的费用取决于所需的专用服务以及预订帐户（通过该帐户，您可以访问所有公共服务）。{{site.data.keyword.Bluemix_notm}} Public 中服务的使用量费用按照您的预订帐户协议进行计算。如果使用了超过该预订协议的服务，那么您会收到相应发票。请联系 IBM 指定的客户代表或联系 [{{site.data.keyword.Bluemix_notm}} 销售人员](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部链接图标](../icons/launch-glyph.svg) 来着手处理您的协议。
 
 ## 升级帐户
 {: #upgrade-lite-account}

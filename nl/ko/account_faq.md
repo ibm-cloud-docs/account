@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-09"
+lastupdated: "2019-05-13"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -20,14 +20,14 @@ subcollection: account
 # FAQ
 {: #accountfaqs}
 
-## 내 계정은 어떻게 작성합니까?
+## 내 계정은 어떻게 생성합니까?
 {: #create-account}
 {: faq}
 
-[{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")로 이동하고 **{{site.data.keyword.Bluemix_notm}} 계정 작성**을 클릭하여 만기가 없는 Lite 계정을 작성하십시오. 포함된 기능에 관한 세부사항은 [Lite 계정](/docs/account?topic=account-liteaccount#liteaccount)을 참조하십시오.
+[{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")로 이동하고 **{{site.data.keyword.Bluemix_notm}} 계정 생성**을 클릭하여 만기가 없는 Lite 계정을 생성하십시오. 포함된 기능에 관한 세부사항은 [Lite 계정](/docs/account?topic=account-liteaccount#liteaccount)을 참조하십시오.
 
 
-## 내 계정을 작성할 때 발생하는 오류를 어떻게 해결합니까?
+## 내 계정을 생성할 때 발생하는 오류를 어떻게 해결합니까?
 {: #account-error}
 {: faq}
 
@@ -39,7 +39,6 @@ subcollection: account
    케이스를 열면 이메일 알림이 발송됩니다. 추가로 소통하려면 지시사항을 따르십시오.
 
 {{site.data.keyword.Bluemix}} 계정에 로그인할 수 없는 경우에는 [계정 요청을 작성 ](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")하십시오.
-
 
 ## Cloud Foundry란 무엇입니까?
 {: #cloud-foundry}
@@ -79,8 +78,11 @@ Lite 플랜 인스턴스의 어느 할당량에든 도달하면 해당 월에 �
 
 **관리 > 청구 및 사용량**으로 이동하고 **사용량**을 선택하여 사용량을 확인할 수 있습니다. 자세한 정보는 [사용량 보기](/docs/billing-usage?topic=billing-usage-viewingusage)를 참조하십시오.
 
-서비스를 중지 또는 삭제하고자 하는 경우 리소스 목록에서 수행할 수 있습니다. [{{site.data.keyword.Bluemix_notm}} 콘솔 탐색](/docs/overview?topic=overview-ui)에서 자세히 볼 수 있습니다.
+## 내 계정에서 서비스를 어떻게 삭제합니까? 
+{: #accounts-service-removal}
+{: faq}
 
+서비스를 중지 또는 삭제하고자 하는 경우 리소스 목록에서 수행할 수 있습니다. [{{site.data.keyword.Bluemix_notm}} 콘솔 탐색](/docs/overview?topic=overview-ui)에서 자세히 볼 수 있습니다.
 
 ## 얼마나 많은 리소스 그룹, 조직 또는 영역을 작성할 수 있습니까?
 {: #resourcelimit}
@@ -97,7 +99,7 @@ Lite 플랜 인스턴스의 어느 할당량에든 도달하면 해당 월에 �
   * 구독 계정으로 업그레이드하려면 **업그레이드**를 클릭하십시오.
 * 종량과금제 계정과 구독 계정을 상호 변환하려면 [{{site.data.keyword.Bluemix_notm}} 영업 팀 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}에 문의하십시오.
 
-현재 계정 유형을 모르는 경우에는 계정 설정 페이지에서 찾아볼 수 있습니다. 
+현재 계정 유형을 모르는 경우에는 계정 설정 페이지에서 찾아볼 수 있습니다.
 
 [계정 업그레이드](/docs/account?topic=account-upgrading-account)에서 자세히 볼 수 있습니다.
 
@@ -157,7 +159,6 @@ VPN 비밀번호를 재설정하려면 다음 단계를 완료하십시오.
 
 [{{site.data.keyword.Bluemix_notm}} 지원 센터 ![외부 링크 아이콘](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window}에 문의하여 지원 케이스를 열고 계정 삭제를 요청하십시오. 새 계정으로 이동할 이전 계정과 연관된 데이터가 있으면 이 정보를 이메일에 포함하십시오.
 
-
 ## 왜 내 계정이 비활성화되었습니까?
 {: #account-deactivated}
 {: faq}
@@ -174,8 +175,7 @@ VPN 비밀번호를 재설정하려면 다음 단계를 완료하십시오.
 {: #contactsupport}
 {: faq}
 
-콘솔 메뉴 표시줄에서 **지원**을 클릭하여 지원 센터로 이동하십시오. [지원 받기](/docs/get-support?topic=get-support-support-plans)에서 지원에 대해 더 자세히 알아보십시오. 
-
+콘솔 메뉴 표시줄에서 **지원**을 클릭하여 지원 센터로 이동하십시오. [지원 받기](/docs/get-support?topic=get-support-support-plans)에서 지원에 대해 더 자세히 알아보십시오.
 
 ## 무료 평가판을 위해 등록할 수 있습니까?
 {: #freetrial}
@@ -183,20 +183,17 @@ VPN 비밀번호를 재설정하려면 다음 단계를 완료하십시오.
 
 공인 교육 기관의 교직원 및 학생은 {{site.data.keyword.Bluemix_notm}} 평가판 계정을 사용할 수 있습니다. 평가판 계정에 대한 사용 자격을 얻으려면 [IBM의 파워 활용 ![외부 링크아이콘](../icons/launch-glyph.svg)](https://onthehub.com/ibm/){: new_window}으로 이동하여 기관 인증 정보의 유효성을 검증하십시오.
 
-
 ## 계정을 연결한 후에는 어떻게 로그인합니까?
 {: #al_login}
 {: faq}
 
 계정이 연결되면 IBM ID를 사용하여 {{site.data.keyword.Bluemix}} 콘솔에 로그인하십시오.
 
-
 ## 계정을 연결하고 나면 지원에 어떤 영향이 있습니까?
 {: #al_support}
 {: faq}
 
 계정을 연결한 후에도 계정에 {{site.data.keyword.Bluemix_notm}} 플랫폼을 추가하면 동일한 지원 레벨이 유지됩니다.
-
 
 ## 계정 연결에 대해 도움을 받는 다른 방법이 있습니까?
 {: #al_morehelp}
@@ -212,7 +209,7 @@ VPN 비밀번호를 재설정하려면 다음 단계를 완료하십시오.
 
 복수의 SoftLayer 계정이 있는 경우에는 일치하는 {{site.data.keyword.Bluemix_notm}} 플랫폼 계정 및 해당 IBM ID가 있는 계정을 연결해야 합니다.
 
-일치하는 {{site.data.keyword.Bluemix_notm}} 플랫폼 계정 및 해당 IBM ID 계정이 없는 경우에는 계정을 연결하기 위해 새 SoftLayer 계정을 작성할 수 있습니다.
+일치하는 {{site.data.keyword.Bluemix_notm}} 플랫폼 계정 및 해당 IBM ID 계정이 없는 경우에는 계정을 연결하기 위해 새 SoftLayer 계정을 생성할 수 있습니다.
 
 ## 내 계정을 연결하면 혜택이 있습니까?
 {: #al_incent}
@@ -236,6 +233,14 @@ $200 프로모션 크레딧에 대해 자세히 알아보려면 [종량과금제
 
 IBM ID를 사용하여 {{site.data.keyword.Bluemix_notm}} 콘솔에 액세스할 수 있으므로 여전히 SoftLayer 계정의 ID를 사용하여 고객 포털에 로그인할 수 있습니다.
 
+## 내가 소유한 계정을 어떻게 볼 수 있습니까? 
+{: #accounts-owned}
+{: faq}
+
+IBM Cloud 콘솔 헤더에는 본인이 소유한 계정을 포함하여 본인의 로그인 ID로 가입된 모든 계정이 나열됩니다. 각 계정에서 본인의 역할은 [사용자](https://{DomainName}/iam/users) 페이지에서 확인할 수 있습니다. 
+
+`ibmcloud account list` 명령을 실행하여 CLI를 통해 자신의 계정을 찾을 수도 있습니다. 
+
 ## 복수의 계정 간에 어떻게 전환합니까?
 {: #switch-between-accounts}
 {: faq}
@@ -248,7 +253,9 @@ IBM ID를 사용하여 {{site.data.keyword.Bluemix_notm}} 콘솔에 액세스할
 {: #switch-account-owners}
 {: faq}
 
-계정 소유자를 전환할 수는 없지만 리소스 소유자는 변경이 가능합니다. 소유권 전환에 대해 자세히 알아보려면 [개인용 리소스의 소유권 전환](/docs/account?topic=account-include#owners)을 참조하십시오.
+계정 내 개별 자원의 소유권을 다른 사람에게 이전하려는 경우 `ibmcloud catalog` 명령을 사용할 수 있습니다. 자세히 알아보려면 [개인용 리소스의 소유권 이전](/docs/account?topic=account-include#owners)을 참조하십시오.
+
+전체 계정의 소유권을 이전하려면 지원 센터의 추가 지원이 필요합니다. 도움을 얻으려면 [지원 센터에 문의](/docs/get-support?topic=get-support-getting-customer-support)하십시오. 
 
 ## {{site.data.keyword.Bluemix_notm}}에서 사용자의 일괄처리 등록을 지원합니까?
 {: #batch-registration}
@@ -256,7 +263,7 @@ IBM ID를 사용하여 {{site.data.keyword.Bluemix_notm}} 콘솔에 액세스할
 
 {{site.data.keyword.Bluemix_notm}}에 사용자를 등록할 경우 각 사용자를 개별적으로 등록해야 합니다. {{site.data.keyword.Bluemix_notm}}에서는 사용자 일괄 등록을 지원하지 않습니다.
 
-[{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")로 이동하여 **{{site.data.keyword.Bluemix_notm}} 계정 작성**을 클릭하십시오. 그 후 각 개별 사용자에 대해 계정 등록 양식을 완성하십시오.
+[{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")로 이동하여 **{{site.data.keyword.Bluemix_notm}} 계정 생성**을 클릭하십시오. 그 후 각 개별 사용자에 대해 계정 등록 양식을 완성하십시오.
 
 ## 태그란 무엇입니까?
 {: #know-about-tags}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-19"
+lastupdated: "2019-05-10"
 
 keywords: account types, Lite, free account, paid account, buy account, account difference, compare account, subscription, service bundle
 
@@ -87,7 +87,7 @@ subcollection: account
 
 如同隨收隨付制帳戶，您的訂閱帳戶讓您能訂購進階或超值支援方案，以獲得所需的額外協助。請在[支援方案](/docs/get-support?topic=get-support-support-plans)中進一步瞭解。
 
-如果您具有訂閱帳戶，則可以從 [{{site.data.keyword.Bluemix_notm}} 型錄](https://cloud.ibm.com/catalog/){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示") 建立大部分可用的服務。不過，部分服務會使用需要您個別購買的特定定價方案。
+如果您具有訂閱帳戶，則可以從 [{{site.data.keyword.Bluemix_notm}} 型錄](https://{DomainName}/catalog){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示") 建立大部分可用的服務。不過，部分服務會使用需要您個別購買的特定定價方案。
 
 ### 服務組合訂閱
 {: #service-subscriptions}
@@ -100,19 +100,6 @@ subcollection: account
 {:tip}
 
 購買服務組合訂閱之後，您會收到一封電子郵件，內含特性碼可供您套用以將組合新增至您的帳戶。如需如何套用特性碼的相關資訊，請參閱[套用特性碼](/docs/account?topic=account-codes)。服務組合到期，或是您已使用所有額度時，可以繼續使用任何服務，用量將會以隨收隨付制費率收費。
-
-### {{site.data.keyword.Bluemix_dedicated_notm}} 帳戶
-使用 {{site.data.keyword.Bluemix_dedicated_notm}}，您必須註冊至少一年期限，包括：
-
-   * 回到您基礎架構的 VPN 連線功能
-   * {{site.data.keyword.BluSoftlayer_notm}} 資料中心內的完整備用環境
-   * 所有支援的運行環境（{{site.data.keyword.runtime_liberty_short}}、{{site.data.keyword.runtime_nodejs_short}} 及內建開放程式碼運行環境）
-   * 您選取的所有專用服務及所有公用 {{site.data.keyword.Bluemix_notm}} 服務
-   * 標準 {{site.data.keyword.Bluemix_notm}} 支援
-
-您也可以訂購選購項目，例如 {{site.data.keyword.BluDirectLink}} 或是進階或超值支援選項。如需相關資訊，請與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡。
-
-您在該期間每個月所支付的金額是根據您想要的專用服務，加上讓您存取所有公用服務的「訂閱」帳戶。{{site.data.keyword.Bluemix_notm}} Public 中的服務使用費用是根據您的「訂閱」帳戶合約來計算。您會收到關於任何超出訂閱合約之使用服務的發票。請與 IBM 指定的客戶業務代表聯絡，或與 [{{site.data.keyword.Bluemix_notm}} 銷售人員](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg) 聯絡，以開始您的合約。
 
 ## 升級帳戶
 {: #upgrade-lite-account}

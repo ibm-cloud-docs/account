@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-09"
+lastupdated: "2019-05-13"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -39,7 +39,6 @@ Si vous pouvez vous connecter à un compte {{site.data.keyword.Bluemix_notm}}, a
    Un message électronique vous sera envoyé après l'ouverture du cas. Suivez les instructions pour toute communication supplémentaire.
 
 Si vous ne pouvez pas vous connecter à un compte {{site.data.keyword.Bluemix}}, [créez une demande de compte](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe").
-
 
 ## Qu'est-ce que Cloud Foundry ?
 {: #cloud-foundry}
@@ -79,8 +78,11 @@ Lorsque la limite de quota relative aux instances de plan Lite est atteinte, le 
 
 Pour vérifier votre utilisation, accédez à **Gérer > Facturation et utilisation** puis sélectionnez **Utilisation**. Pour plus d'informations, voir [Affichage de votre utilisation](/docs/billing-usage?topic=billing-usage-viewingusage).
 
-Si vous souhaitez arrêter ou supprimer un service, vous pouvez effectuer cette action à partir de la liste de ressources. Pour en savoir plus, voir [Navigation dans la console {{site.data.keyword.Bluemix_notm}}](/docs/overview?topic=overview-ui).
+## Comment supprimer un service de mon compte ?
+{: #accounts-service-removal}
+{: faq}
 
+Si vous souhaitez arrêter ou supprimer un service, vous pouvez effectuer cette action à partir de la liste de ressources. Pour en savoir plus, voir [Navigation dans la console {{site.data.keyword.Bluemix_notm}}](/docs/overview?topic=overview-ui).
 
 ## Combien de groupes de ressources, d'organisations ou d'espaces puis-je créer ?
 {: #resourcelimit}
@@ -157,7 +159,6 @@ Si vous maintenez votre décision malgré tout, le mode de résiliation de votre
 
 Contactez le [service de support {{site.data.keyword.Bluemix_notm}}![Icône de lien externe](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} pour ouvrir un cas de support et demander la suppression de votre compte. Si des données sont associées à votre ancien compte et que vous souhaitez les déplacer vers un nouveau compte, incluez ces informations dans votre message électronique.
 
-
 ## Pourquoi mon compte est-il désactivé ?
 {: #account-deactivated}
 {: faq}
@@ -176,13 +177,11 @@ Si vous pensez que votre compte a été désactivé à tort, contactez le servic
 
 Cliquez sur **Support** dans la barre de menus de la console pour accéder au centre de support. Pour en savoir plus sur le support, voir [Support](/docs/get-support?topic=get-support-support-plans).
 
-
 ## Puis-je souscrire à un essai gratuit ?
 {: #freetrial}
 {: faq}
 
 Des comptes d'essai {{site.data.keyword.Bluemix_notm}} sont disponibles pour les enseignants et les étudiants d'institutions académiques accréditées. Pour être éligible pour un compte d'essai, accédez au site [Harness the Power of IBM ![Icône de lien externe](../icons/launch-glyph.svg)](https://onthehub.com/ibm/){: new_window} et validez les données d'identification de votre institution.
-
 
 ## Après avoir lié mon compte, comment puis-je me connecter ?
 {: #al_login}
@@ -190,13 +189,11 @@ Des comptes d'essai {{site.data.keyword.Bluemix_notm}} sont disponibles pour les
 
 Une fois que avez lié votre compte, utilisez votre IBMid pour établir une connexion à la console {{site.data.keyword.Bluemix}}.
 
-
 ## Une fois que j'ai lié mon compte, quel est l'impact sur mon support ?
 {: #al_support}
 {: faq}
 
 Une fois que vous avez lié votre compte, vous conservez le même niveau de support lorsque vous ajoutez la plateforme {{site.data.keyword.Bluemix_notm}} à votre compte.
-
 
 ## Existe-t-il d'autres moyens pour obtenir de l'aide relative à la liaison de mon compte ?
 {: #al_morehelp}
@@ -236,6 +233,14 @@ Pour plus d'informations sur la fonction de responsable de compte, voir [Gestion
 
 Vous pouvez toujours utiliser l'ID de votre compte SoftLayer pour vous connecter au portail client car la console {{site.data.keyword.Bluemix_notm}} est accessible à l'aide des IBMid.
 
+## Comment puis-je visualiser les comptes que je possède ?
+{: #accounts-owned}
+{: faq}
+
+L'en-tête de console IBM Cloud répertorie tous les comptes qui sont affiliés à votre ID de connexion, y compris ceux que vous possédez. Vous pouvez visualiser votre rôle dans chaque compte sur la page [Utilisateurs](https://{DomainName}/iam/users). 
+
+Vous pouvez également définir vos comptes à partir de l'interface de ligne de commande en exécutant la commande `ibmcloud account list`. 
+
 ## Comment puis-je passer d'un compte à un autre ?
 {: #switch-between-accounts}
 {: faq}
@@ -248,7 +253,9 @@ Si vous avez plusieurs comptes, vous pouvez cliquer sur votre nom de compte pour
 {: #switch-account-owners}
 {: faq}
 
-Non, mais vous pouvez changer les propriétaires des ressources. Pour en savoir plus sur le changement de propriétaire, voir [Transfert de la propriété d'une ressource privée](/docs/account?topic=account-include#owners).
+Vous pouvez transférer la propriété de ressources individuelles au sein de votre compte à quelqu'un d'autre à l'aide de la commande `ibmcloud catalog`. Pour en savoir plus sur, voir [Transfert de la propriété d'une ressource privée](/docs/account?topic=account-include#owners).
+
+Transférer la propriété de tout votre compte requiert de l'aide supplémentaire de la part du support. Pour obtenir de l'aide, [contactez le support](/docs/get-support?topic=get-support-getting-customer-support).
 
 ## {{site.data.keyword.Bluemix_notm}} prend-il en charge l'enregistrement par lots d'utilisateurs ?
 {: #batch-registration}

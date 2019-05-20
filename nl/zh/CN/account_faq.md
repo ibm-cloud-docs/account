@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-09"
+lastupdated: "2019-05-13"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -39,7 +39,6 @@ subcollection: account
    提交案例后，您会收到一封电子邮件。请按照指示信息作进一步的沟通。
 
 如果无法登录到 {{site.data.keyword.Bluemix}} 帐户，请[创建帐户请求](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")。
-
 
 ## 什么是 Cloud Foundry？
 {: #cloud-foundry}
@@ -79,8 +78,11 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 
 通过转至**管理 > 计费和使用情况**，然后选择**使用情况**来查看使用情况。有关更多信息，请参阅[查看使用情况](/docs/billing-usage?topic=billing-usage-viewingusage)。
 
-如果要停止或删除服务，可以通过资源列表来执行此操作。请在[探索 {{site.data.keyword.Bluemix_notm}} 控制台](/docs/overview?topic=overview-ui)中了解更多信息。
+## 如何从帐户中删除服务？
+{: #accounts-service-removal}
+{: faq}
 
+如果要停止或删除服务，可以通过资源列表来执行此操作。请在[探索 {{site.data.keyword.Bluemix_notm}} 控制台](/docs/overview?topic=overview-ui)中了解更多信息。
 
 ## 我可以创建多少个资源组、组织或空间？
 {: #resourcelimit}
@@ -157,7 +159,6 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 
 联系 [{{site.data.keyword.Bluemix_notm}} 支持人员 ![外部链接图标](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window}，以打开一个支持案例，请求删除您的帐户。如果存在与旧帐户相关联的数据并且想要将其移动到新帐户，请在您的电子邮件中包含此信息。
 
-
 ## 为什么我的帐户已停用？
 {: #account-deactivated}
 {: faq}
@@ -176,13 +177,11 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 
 在控制台菜单栏中，单击**支持**以转至支持中心。在[获取支持](/docs/get-support?topic=get-support-support-plans)中了解有关支持的更多信息。
 
-
 ## 我能注册以进行免费试用吗？
 {: #freetrial}
 {: faq}
 
 {{site.data.keyword.Bluemix_notm}} 试用帐户适用于经认可的学术机构的教师和学生。要获得使用试用帐户的资格，请转至 [Harness the Power of IBM ![外部链接图标](../icons/launch-glyph.svg)](https://onthehub.com/ibm/){: new_window}，并验证您的机构凭证。
-
 
 ## 链接帐户后，如何登录？
 {: #al_login}
@@ -190,13 +189,11 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 
 链接帐户后，可以使用您的 IBM 标识登录到 {{site.data.keyword.Bluemix}} 控制台。
 
-
 ## 链接帐户后，对我的支持有什么影响？
 {: #al_support}
 {: faq}
 
 链接帐户之后，向帐户添加 {{site.data.keyword.Bluemix_notm}} 平台时，支持级别保持不变。
-
 
 ## 还有其他方法可获取链接帐户的帮助吗？
 {: #al_morehelp}
@@ -236,6 +233,14 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 
 您依旧可以使用 SoftLayer 帐户的标识来登录到客户门户网站，因为 {{site.data.keyword.Bluemix_notm}} 控制台允许使用 IBM 标识进行访问。
 
+## 如何查看我拥有的帐户？
+{: #accounts-owned}
+{: faq}
+
+IBM Cloud 控制台标题列出了与您的登录标识相关联的所有帐户，包括您拥有的帐户。您可以在[用户](https://{DomainName}/iam/users)页面中查看您在每个帐户中的角色。
+
+还可以通过运行 `ibmcloud account list` 命令从 CLI 中查找您的帐户。
+
 ## 如何在多个帐户之间切换？
 {: #switch-between-accounts}
 {: faq}
@@ -248,7 +253,9 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 {: #switch-account-owners}
 {: faq}
 
-您不能切换帐户所有者，但可以更改资源所有者。要了解有关切换所有权的更多信息，请参阅[转移专用资源所有权](/docs/account?topic=account-include#owners)。
+您可以通过使用 `ibmcloud catalog` 命令将帐户中单个资源的所有权转移给其他人。要了解更多，请参阅[转移专用资源所有权](/docs/account?topic=account-include#owners)。
+
+转移整个帐户的所有权需要支持人员的额外帮助。要获取帮助，请[联系支持人员](/docs/get-support?topic=get-support-getting-customer-support)。
 
 ## {{site.data.keyword.Bluemix_notm}} 支持批量注册用户吗？
 {: #batch-registration}

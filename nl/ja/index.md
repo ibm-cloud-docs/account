@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-19"
+lastupdated: "2019-05-10"
 
 keywords: account types, Lite, free account, paid account, buy account, account difference, compare account, subscription, service bundle
 
@@ -100,19 +100,6 @@ subcollection: account
 {:tip}
 
 サービス・バンドル・サブスクリプションの購入後は、アカウントにバンドルを追加するために適用するフィーチャー・コードが記載された E メールを受信します。 フィーチャー・コードの適用方法について詳しくは、『[フィーチャー・コードの適用](/docs/account?topic=account-codes)』を参照してください。 サービス・バンドルが期限切れになった場合、またはすべてのクレジットを使用した場合は、使用量が従量課金 (PAYG) のレートで課金されるようにした状態で、どのサービスでも継続して使用することができます。
-
-### {{site.data.keyword.Bluemix_dedicated_notm}} アカウント
-{{site.data.keyword.Bluemix_dedicated_notm}} を使用するには、以下が含まれている最低 1 年間の契約が必要になります。
-
-   * ご使用のインフラストラクチャーへの VPN 接続
-   * {{site.data.keyword.BluSoftlayer_notm}} データ・センター内の完全に冗長な環境
-   * サポートされているすべてのランタイム ({{site.data.keyword.runtime_liberty_short}}、{{site.data.keyword.runtime_nodejs_short}}、および標準装備であるオープン・ソースの各ランタイム)
-   * 選択したすべての専用サービスおよびすべてのパブリック {{site.data.keyword.Bluemix_notm}} サービス
-   * 標準 {{site.data.keyword.Bluemix_notm}} サポート
-
-{{site.data.keyword.BluDirectLink}} や、拡張サポートまたはプレミアム・サポートのオプションなど、オプション項目を注文することもできます。 詳しくは、[{{site.data.keyword.Bluemix_notm}} 営業担当](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg) にお問い合わせください。
-
-その期間中の月々の支払額は、希望する専用サービスと、すべてのパブリック・サービスへのアクセス権限を付与するサブスクリプション・アカウントに基づきます。 {{site.data.keyword.Bluemix_notm}} Public のサービスの使用料は、サブスクリプション・アカウントの契約に基づいて計算されます。 サブスクリプション契約の対象ではないサービスを使用した場合には、請求書が送付されます。 契約を開始する場合は、IBM 指定アカウント担当者または [{{site.data.keyword.Bluemix_notm}} 営業担当](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg) に連絡してください。
 
 ## アカウントのアップグレード
 {: #upgrade-lite-account}

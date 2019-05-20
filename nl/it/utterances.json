@@ -68,6 +68,15 @@
       "le quote vengono ripristinate ogni mese",
       "quote mensili del piano lite"
     ],
+    "accounts-service-removal": [
+      "Come posso eliminare un servizio dal mio account?",
+      "rimuovere il server dal mio account",
+      "Come posso eliminare un servizio dal mio account",
+      "è necessario rimuovere un servizio perché non viene utilizzato",
+      "Posso eliminare questo server dal mio account?",
+      "Voglio annullare il certificato SSL dal mio account",
+      "rimuovere un servizio dal mio account"
+    ],
     "resourcelimit": [
       "quanti gruppi di risorse posso creare",
       "esiste un limite al numero di gruppi di risorse che posso creare",
@@ -204,6 +213,19 @@
       "Cosa succede al mio ID account master SoftLayer dopo aver collegato i miei account?",
       "Qual è l'impatto con SoftLayer dopo aver collegato i miei account?",
       "Cosa succede al mio ID account master con SoftLayer?"
+    ],
+    "accounts-owned": [
+      "Quali account ho? ",
+      "Quali account gestisco",
+      "Quanti account ho",
+      "In quale account sono",
+      "account che gestisco",
+      "Voglio sapere in quali account sono",
+      "in quali account sono?",
+      "in quali account sono",
+      "quali account ho",
+      "con quali account sono affiliato",
+      "quali account sono a mio nome"
     ],
     "switch-between-accounts": [
       "passaggio ad account multipli",

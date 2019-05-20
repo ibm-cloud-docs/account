@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-09"
+lastupdated: "2019-05-13"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -39,7 +39,6 @@ subcollection: account
    在您開啟案例之後，系統即會向您發送一則電子郵件通知。請遵循指示來進行進一步的溝通。
 
 如果無法登入 {{site.data.keyword.Bluemix}} 帳戶，請[建立帳戶要求](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")。
-
 
 ## 何謂 Cloud Foundry？
 {: #cloud-foundry}
@@ -79,8 +78,11 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 
 移至**管理 > 計費及用量**，然後選取**用量**，即可檢查您的用量。如需相關資訊，請參閱[檢視用量](/docs/billing-usage?topic=billing-usage-viewingusage)。
 
-如果想要停止或刪除服務，您可以從資源清單這麼做。請在[導覽 {{site.data.keyword.Bluemix_notm}} 主控台](/docs/overview?topic=overview-ui)中進一步瞭解。
+## 如何從我的帳戶中刪除服務？
+{: #accounts-service-removal}
+{: faq}
 
+如果想要停止或刪除服務，您可以從資源清單這麼做。請在[導覽 {{site.data.keyword.Bluemix_notm}} 主控台](/docs/overview?topic=overview-ui)中進一步瞭解。
 
 ## 我可以建立多少資源群組、組織或空間？
 {: #resourcelimit}
@@ -157,7 +159,6 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 
 請與 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} 聯絡以開立支援案例，並要求刪除您的帳戶。如果您的資料與舊帳戶相關聯並且要移至新帳戶，請在電子郵件中包含此資訊。
 
-
 ## 為什麼我的帳戶被停用了？
 {: #account-deactivated}
 {: faq}
@@ -176,13 +177,11 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 
 按一下主控台功能表列中的**支援**，以移至「支援中心」。請在[取得協助](/docs/get-support?topic=get-support-support-plans)中進一步瞭解支援。
 
-
 ## 我可以註冊免費試用嗎？
 {: #freetrial}
 {: faq}
 
 {{site.data.keyword.Bluemix_notm}} 試用帳戶可在認證合格的學術機構中提供給教職師及學生。若要符合試用帳戶的資格，請移至 [Harness the Power of IBM ![外部鏈結圖示](../icons/launch-glyph.svg)](https://onthehub.com/ibm/){: new_window}，並驗證機構認證。
-
 
 ## 鏈結我的帳戶之後，要如何登入？
 {: #al_login}
@@ -190,13 +189,11 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 
 鏈結您的帳戶之後，請使用您的 IBM ID 登入 {{site.data.keyword.Bluemix}} 主控台。
 
-
 ## 鏈結我的帳戶之後，對我的支援有什麼影響？
 {: #al_support}
 {: faq}
 
 鏈結您的帳戶之後，您會維持與將 {{site.data.keyword.Bluemix_notm}} 平台新增至帳戶時相同的支援層次。
-
 
 ## 是否有其他方法可以取得鏈結帳戶的協助？
 {: #al_morehelp}
@@ -236,6 +233,14 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 
 您仍可以使用 SoftLayer 帳戶的 ID ，來登入客戶入口網站，因為可以使用 IBM ID 來存取 {{site.data.keyword.Bluemix_notm}} 主控台。
 
+## 如何檢視我擁有的帳戶？
+{: #accounts-owned}
+{: faq}
+
+IBM Cloud 主控台標頭會列出與您登入 ID 相連結的所有帳戶（包括您擁有的帳戶）。您可以在[使用者](https://{DomainName}/iam/users)頁面上檢視每個帳戶中的角色。
+
+您也可以從 CLI 執行 `ibmcloud account list` 指令來尋找帳戶。
+
 ## 如何在多個帳戶之間切換？
 {: #switch-between-accounts}
 {: faq}
@@ -248,7 +253,9 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 {: #switch-account-owners}
 {: faq}
 
-您不能切換帳戶擁有者，但可以變更資源擁有者。若要進一步瞭解如何切換所有權，請參閱[移轉專用資源的所有權](/docs/account?topic=account-include#owners)。
+您可以使用 `ibmcloud catalog` 指令，將帳戶內個別資源的所有權傳送給某個人。若要進一步瞭解，請參閱[傳送專用資源的所有權](/docs/account?topic=account-include#owners)。
+
+傳送整個帳戶的所有權需要支援人員的額外協助。若要取得協助，請[與支援中心聯絡](/docs/get-support?topic=get-support-getting-customer-support)。
 
 ## {{site.data.keyword.Bluemix_notm}} 是否支援批次登錄使用者？
 {: #batch-registration}

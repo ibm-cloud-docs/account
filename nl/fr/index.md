@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-19"
+lastupdated: "2019-05-10"
 
 keywords: account types, Lite, free account, paid account, buy account, account difference, compare account, subscription, service bundle
 
@@ -87,33 +87,19 @@ Votre utilisation est déduite du montant total de votre abonnement. Même si vo
 
 Tout comme avec les comptes Paiement à la carte, votre compte d'abonnement permet de commander des plans de support avancés ou premium pour obtenir de l'aide supplémentaire si vous en avez besoin. Pour en savoir plus, voir [Plans de support](/docs/get-support?topic=get-support-support-plans).
 
-Si vous avez un compte d'abonnement, vous pouvez créer la plupart des services disponibles dans le catalogue [{{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com/catalog/){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe"). Toutefois, il peut être nécessaire d'acheter séparément certains services utilisant un plan de tarification spécifique.
+Si vous avez un compte Abonnement, vous pouvez créer la plupart des services disponibles dans le catalogue [{{site.data.keyword.Bluemix_notm}}](https://{DomainName}/catalog){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe"). Toutefois, il peut être nécessaire d'acheter séparément certains services utilisant un plan de tarification spécifique.
 
 ### Abonnement à une offre groupée de services
 {: #service-subscriptions}
 
 Les abonnements à des offres groupées de services vous permettent d'accéder à un ensemble de services dans un domaine spécifique qui sont ciblés pour les cas d'utilisation les plus répandus et de bénéficier d'un crédit pour ces services. Vous pouvez choisir l'offre groupée de services souhaitée parmi les services d'intelligence artificielle, d'analyse, {{site.data.keyword.blockchainfull_notm}}, Internet of Things (IoT) et les services natifs de cloud. Si vous avez besoin de plusieurs de ces services, vous pouvez acheter plusieurs abonnements d'offre groupée de services.
 
-Vous pouvez ajouter des offres groupées de services à tout type de compte existant, y compris les comptes Lite. Pendant les 90 premiers jours, vous êtes limité à l'utilisation des services de l'offre groupée. Après cette période, vous pouvez accéder à l'ensemble du catalogue. Les abonnements à des offres groupées de services sont sujets aux conditions [Description de service {{site.data.keyword.Bluemix_notm}}](/docs/overview/terms-of-use?topic=overview-terms). 
+Vous pouvez ajouter des offres groupées de services à tout type de compte existant, y compris les comptes Lite. Pendant les 90 premiers jours, vous êtes limité à l'utilisation des services de l'offre groupée. Après cette période, vous pouvez accéder à l'ensemble du catalogue. Les abonnements à des offres groupées de services sont sujets aux conditions [Description de service {{site.data.keyword.Bluemix_notm}}](/docs/overview/terms-of-use?topic=overview-terms).
 
 Les abonnements aux offres groupées de services ne sont pas disponibles dans la console {{site.data.keyword.Bluemix_notm}}. Pour en savoir plus et acheter une offre groupée de services, contactez le [service commercial {{site.data.keyword.Bluemix_notm}}![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 {:tip}
 
 Une fois que vous avez acheté une offre groupée de services, vous recevez un courrier électronique avec un code de fonction à appliquer pour ajouter l'offre à votre compte. Pour plus d'informations sur l'application des codes de fonction, voir [Application de codes de fonction](/docs/account?topic=account-codes). Lorsque votre offre groupée de services arrive à expiration ou lorsque vous avez utilisé l'intégralité de votre crédit, vous pouvez continuer à utiliser des services en étant facturé selon le tarif Paiement à la carte.
-
-### Compte {{site.data.keyword.Bluemix_dedicated_notm}}
-{{site.data.keyword.Bluemix_dedicated_notm}} exige un engagement minimal d'un an qui inclut :
-
-   * Une connectivité du réseau privé virtuel vers votre infrastructure
-   * Un environnement entièrement redondant dans un centre de données {{site.data.keyword.BluSoftlayer_notm}}
-   * Tous les contextes d'exécution pris en charge ({{site.data.keyword.runtime_liberty_short}}, {{site.data.keyword.runtime_nodejs_short}} et contextes d'exécution open source intégrés)
-   * Tous les services dédiés que vous avez sélectionnés et tous les services {{site.data.keyword.Bluemix_notm}} publics
-   * Le support {{site.data.keyword.Bluemix_notm}} standard
-
-Vous pouvez également commander des éléments facultatifs, comme {{site.data.keyword.BluDirectLink}} ou des options de support avancées ou premium. Contactez le [service commercial {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg) pour plus d'informations.
-
-Le prix que vous payez chaque mois au cours de cet engagement dépend des services dédiés que vous choisissez et inclut un compte d'abonnement qui vous permet d'accéder à tous les services publics. Le prix de l'utilisation des services dans l'environnement {{site.data.keyword.Bluemix_notm}} public est calculé selon votre contrat de compte d'abonnement. Vous recevez une facture pour tous les services que vous utilisez au-delà de la franchise
-définie dans le contrat d'abonnement. Contactez votre représentant de compte IBM ou le [service commercial {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg) pour mettre en oeuvre votre contrat.
 
 ## Mise à niveau de votre compte
 {: #upgrade-lite-account}

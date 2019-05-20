@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-09"
+lastupdated: "2019-05-13"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -39,7 +39,6 @@ subcollection: account
    Case のオープン後に、E メール通知が送信されます。 その後のコミュニケーションについての指示に従ってください。
 
 {{site.data.keyword.Bluemix}} アカウントにログインできない場合は、[アカウント要求を作成してください](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")。
-
 
 ## Cloud Foundry とは?
 {: #cloud-foundry}
@@ -79,8 +78,11 @@ Cloud Foundry は、クラウド上でアプリケーションを作成および
 
 使用量を確認するには、**「管理」 > 「請求および使用量」**に移動し、**「使用量」**を選択します。 詳しくは、[「使用量の表示」](/docs/billing-usage?topic=billing-usage-viewingusage)を参照してください。
 
-サービスの停止または削除は、リソース・リストから行うことができます。 詳しくは、『[{{site.data.keyword.Bluemix_notm}} コンソールのナビゲート](/docs/overview?topic=overview-ui)』を参照してください。
+## アカウントからサービスを削除するには、どのようにすればよいですか?
+{: #accounts-service-removal}
+{: faq}
 
+サービスの停止または削除は、リソース・リストから行うことができます。 詳しくは、『[{{site.data.keyword.Bluemix_notm}} コンソールのナビゲート](/docs/overview?topic=overview-ui)』を参照してください。
 
 ## 作成できるリソース・グループ数、組織数、スペース数はいくつですか?
 {: #resourcelimit}
@@ -157,7 +159,6 @@ VPN パスワードをリセットするには、以下のステップを実行�
 
 [{{site.data.keyword.Bluemix_notm}} サポート ![外部リンク・アイコン](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} に連絡して、サポート Case をオープンし、アカウントの削除を依頼してください。 古いアカウントに関連付けられているデータで、新規アカウントに移行したいものがあれば、その情報を E メールに記載してください。
 
-
 ## アカウントが非アクティブになったのはなぜですか?
 {: #account-deactivated}
 {: faq}
@@ -176,13 +177,11 @@ VPN パスワードをリセットするには、以下のステップを実行�
 
 コンソールのメニュー・バーで**「サポート」**をクリックして、サポート・センターにアクセスしてください。 サポートについて詳しくは、[サポートの利用](/docs/get-support?topic=get-support-support-plans)を参照してください。
 
-
 ## 無料トライアルに登録できますか?
 {: #freetrial}
 {: faq}
 
 認定された学術機関の教師および生徒は {{site.data.keyword.Bluemix_notm}} トライアル・アカウントを使用できます。 トライアル・アカウントの資格を得るには、[Harness the Power of IBM ![外部リンク・アイコン](../icons/launch-glyph.svg)](https://onthehub.com/ibm/){: new_window} にアクセスし、機関の資格情報を検証します。
-
 
 ## アカウントをリンクした後、ログインするにはどうすればよいですか?
 {: #al_login}
@@ -190,13 +189,11 @@ VPN パスワードをリセットするには、以下のステップを実行�
 
 アカウントをリンクした後、IBMid を使用して、{{site.data.keyword.Bluemix}} コンソールにログインします。
 
-
 ## アカウントをリンクすると、サポートについてどのような影響がありますか?
 {: #al_support}
 {: faq}
 
 アカウントをリンクした後、{{site.data.keyword.Bluemix_notm}} プラットフォームをアカウントに追加すると、同じレベルのサポートが維持されます。
-
 
 ## アカウントのリンクについて支援を得る他の方法はありますか?
 {: #al_morehelp}
@@ -237,6 +234,14 @@ VPN パスワードをリセットするには、以下のステップを実行�
 
 {{site.data.keyword.Bluemix_notm}} コンソールには IBMid を使用してアクセスできるため、カスタマー・ポータルへのサインインに Softlayer アカウントの ID を引き続き使用できます。
 
+## 所有するアカウントを表示するには、どのようにすればよいですか?
+{: #accounts-owned}
+{: faq}
+
+IBM Cloud コンソールのヘッダーには、自分のログイン ID を含めて、自分のログイン ID に所属するすべてのアカウントがリストされます。[「ユーザー」](https://{DomainName}/iam/users)ページで、各アカウントの自分の役割を表示できます。
+
+`ibmcloud account list` コマンドを実行すると、CLI から自分のアカウントを検索することもできます。
+
 ## 複数のアカウントを切り替えるには、どのようにすればよいですか?
 {: #switch-between-accounts}
 {: faq}
@@ -249,7 +254,9 @@ VPN パスワードをリセットするには、以下のステップを実行�
 {: #switch-account-owners}
 {: faq}
 
-アカウント所有者を切り替えることはできませんが、リソース所有者を変更することはできます。 所有権の切り替えについて詳しくは、『[プライベート・リソースの所有権の移動](/docs/account?topic=account-include#owners)』を参照してください。
+`ibmcloud catalog` コマンドを使用すると、アカウント内の個別リソースの所有権を他のユーザーに移動できます。詳しくは、『[プライベート・リソースの所有権の移動](/docs/account?topic=account-include#owners)』を参照してください。
+
+アカウント全体の所有権を移動するには、サポートからさらに支援が必要です。支援を受けるには、[サポートにお問い合わせください](/docs/get-support?topic=get-support-getting-customer-support)。
 
 ## {{site.data.keyword.Bluemix_notm}} ではユーザーのバッチ登録はサポートされていますか?
 {: #batch-registration}

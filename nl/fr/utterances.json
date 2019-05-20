@@ -68,6 +68,15 @@
       "les quotas sont-ils décomptés par mois",
       "quotas mensuels de plan lite"
     ],
+    "accounts-service-removal": [
+      "Comment supprimer un service de mon compte ?",
+      "retirer un serveur de mon compte",
+      "Comment supprimer un service de mon compte ?",
+      "j'ai besoin de retirer un service car je ne l'utilise pas",
+      "Puis-je supprimer ce serveur de mon compte ?",
+      "Je souhaite que vous annuliez le certificat SSL sur mon compte",
+      "retirer un service de mon compte"
+    ],
     "resourcelimit": [
       "combien de groupes de ressources puis-je créer",
       "le nombre de groupes de ressources que je peux créer est-il limité",
@@ -204,6 +213,19 @@
       "Que se passe-t-il au niveau de mon ID de compte principal SoftLayer une fois que j'ai lié mes comptes ?",
       "Quel est l'impact sur SoftLayer après liaison de mes comptes ?",
       "Que se passe-t-il pour mon ID de compte principal avec SoftLayer ?"
+    ],
+    "accounts-owned": [
+      "Quels sont les comptes que je possède ?",
+      "Quels sont les comptes que je possède",
+      "Combien de compte sont en ma possession",
+      "Dans quels comptes est-ce que je me trouve",
+      "comptes que je possède",
+      "Je souhaite savoir dans quels comptes que je me trouve",
+      "comptes dans lesquels je me trouve",
+      "dans quels comptes est-ce que je me trouve",
+      "quels sont les comptes que je possède",
+      "Quels sont les comptes auxquels je suis affiliés",
+      "quels sont les comptes que je possède"
     ],
     "switch-between-accounts": [
       "bascule entre plusieurs comptes",
