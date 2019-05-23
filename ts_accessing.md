@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2018
-lastupdated: "2018-11-28"
+  years: 2015, 2019
+lastupdated: "2019-05-23"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -127,15 +127,17 @@ Make sure you can log in to [IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/auth
 
 If your account is pending, you can't log in to {{site.data.keyword.Bluemix_notm}}.
 
-After you register for an {{site.data.keyword.Bluemix_notm}} Lite account, you might not be able to log in to {{site.data.keyword.Bluemix_notm}}. The following message is displayed:
+After you register for an {{site.data.keyword.Bluemix_notm}} Lite account, you might not be able to log in to {{site.data.keyword.Bluemix_notm}}. 
 {: tsSymptoms}
 
-<code>Your account is pending. Please wait up to 24 hours for email confirmation and also check your spam folder. If you still have not received your email confirmation, contact <a href="https://ibm.biz/ibmcloudsupport" target="_blank">{{site.data.keyword.Bluemix_notm}} Support</a>.</code>
-
-When you register for an {{site.data.keyword.Bluemix_notm}} Lite account, you receive an email that includes a link that you must click to confirm your registration.  
+When you register for an {{site.data.keyword.Bluemix_notm}} Lite account, you receive an email that includes a confirmation link. You must click this link to confirm your registration.  
 {: tsCauses}
 
-The confirmation email is sent to the email address that is associated with your IBMid. Check your inbox and your spam folder. If you haven't received the confirmation email, contact [{{site.data.keyword.Bluemix_notm}} Support](/docs/get-support?topic=get-support-getting-customer-support).  
+The confirmation email is sent to the email address that is associated with your IBMid. Check your inbox and your spam folder. If you haven't received the confirmation email, go to <a href="http://cloud.ibm.com">http://cloud.ibm.com</a> and attempt to log in. The following message is displayed:
+
+<code>To complete your registration, check your email.<br> 
+Can't find the email? Resend</code>
+Click the Resend link in the message that is displayed. The confirmation email is resent to the email address that is associated with your IBMid. Contact [{{site.data.keyword.Bluemix_notm}} Support](/docs/get-support?topic=get-support-getting-customer-support) if you cannot complete your registration.  
 {: tsResolve}
 
 
