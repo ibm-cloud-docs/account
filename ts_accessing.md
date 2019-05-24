@@ -15,7 +15,7 @@ subcollection: account
 {:tsResolve: .tsResolve}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
-{:screen: .screen}
+{:pre: .pre}
 {:tip: .tip}
 {:note: .note}
 {:new_window: target="_blank"}
@@ -125,20 +125,24 @@ Make sure you can log in to [IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/auth
 {: #ts_accntpding}
 {: troubleshoot}
 
-If your account is pending, you can't log in to {{site.data.keyword.Bluemix_notm}}.
+If your account is still pending, you won't be able to log in to {{site.data.keyword.Bluemix_notm}}.
 
-After you register for an {{site.data.keyword.Bluemix_notm}} Lite account, you might not be able to log in to {{site.data.keyword.Bluemix_notm}}. 
+After you register for an {{site.data.keyword.Bluemix_notm}} account, you might not be able to log in to {{site.data.keyword.Bluemix_notm}}. 
 {: tsSymptoms}
 
-When you register for an {{site.data.keyword.Bluemix_notm}} Lite account, you receive an email that includes a confirmation link. You must click this link to confirm your registration.  
+When you register for an {{site.data.keyword.Bluemix_notm}} account, you receive an email that includes a confirmation link. You must click this link to confirm your registration.  
 {: tsCauses}
 
-The confirmation email is sent to the email address that is associated with your IBMid. Check your inbox and your spam folder. If you haven't received the confirmation email, go to <a href="http://cloud.ibm.com">http://cloud.ibm.com</a> and attempt to log in. The following message is displayed:
-
-<code>To complete your registration, check your email.<br> 
-Can't find the email? Resend</code>
-Click the Resend link in the message that is displayed. The confirmation email is resent to the email address that is associated with your IBMid. Contact [{{site.data.keyword.Bluemix_notm}} Support](/docs/get-support?topic=get-support-getting-customer-support) if you cannot complete your registration.  
+The confirmation email is sent to the email address that is associated with your IBMid. Check your inbox and your spam folder. If you haven't received the confirmation email, go to the [{{site.data.keyword.Bluemix_notm}} login page](https://cloud.ibm.com/){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") and try to log in. The following message is displayed:
 {: tsResolve}
+
+```
+To complete your registration, check your email. 
+Can't find the email? Resend
+```
+{:pre}
+
+Click **Resend** to send another confirmation email to the email address that is associated with your IBMid. If you still can't complete your registration, contact [{{site.data.keyword.Bluemix_notm}} support](/docs/get-support?topic=get-support-getting-customer-support).  
 
 
 ## Why do I encounter console pages that don't load?
