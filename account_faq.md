@@ -290,4 +290,11 @@ Before you can delete a tag, you must remove it from all resources. If you still
 {: #rename-tag}
 {: faq}
 
-You can't edit the name of a tag. To rename a tag, remove it and reassign the resource with a new tag.  
+You can't edit the name of a tag. To rename a tag, remove it and reassign the resource with a new tag. 
+
+## How can I remove all of my person data from IBM Cloud?
+{: #remove-pi}
+{: faq}
+
+To understand how IBM handles your personal information, see the [IBM Privacy Statement] (https://www.ibm.com/privacy/us/en/). To ensure that your data protection issue is handled quickly and securely, see the **Your rights section**. Within the section, there is a link to a form where you can submit a request to remove your personal information.  
+
