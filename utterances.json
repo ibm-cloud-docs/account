@@ -97,7 +97,9 @@
       "what do I do to change my account type",
       "Where do I change my account?",
       "How do I convert my account?",
-      "I want to switch my account type?"
+      "I want to switch my account type?",
+      "Upgrade to subscription",
+      "Upgrade to pay-as-you-go"
     ],
     "nochange": [
       "are my instances available after upgrade",

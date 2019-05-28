@@ -156,12 +156,11 @@ If you do decide to leave, how you cancel your account depends on your account t
 
 Contact [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} to open a support case and request to delete your account. If you have data that is associated with your old account that you want to move to a new account, include this information in your email.
 
-
 ## How can I remove my personal data from {{site.data.keyword.Bluemix_notm}}?
 {: #remove-pi}
 {: faq}
 
-To understand how IBM handles your personal information, see the [IBM Privacy Statement](https://www.ibm.com/privacy/). In the Your Rights section, review the information about what you can request to remove. Click the link in the section to submit a request to remove your personal information. 
+To understand how IBM handles your personal information, see the [IBM Privacy Statement ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/privacy/){: new_window}. In the Your Rights section, review the information about what you can request to remove. Click the link in the section to submit a request to remove your personal information.
 
 ## Why is my account deactivated?
 {: #account-deactivated}
@@ -297,5 +296,4 @@ Before you can delete a tag, you must remove it from all resources. If you still
 {: #rename-tag}
 {: faq}
 
-You can't edit the name of a tag. To rename a tag, remove it and reassign the resource with a new tag. 
-
+You can't edit the name of a tag. To rename a tag, remove it and reassign the resource with a new tag.
