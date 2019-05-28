@@ -141,6 +141,14 @@
       "Tell me how to delete my account",
       "delete account"
     ],
+    "remove-pi": [
+      "How do I remove my personal data?",
+      "remove personal data",
+      "remove personal information",
+      "delete personal data",
+      "delete my data,"
+      "erase personal data"
+    ],
     "account-deactivated": [
       "Why is my account deactivated?",
       "My account is deactivated",
