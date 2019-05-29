@@ -15,7 +15,7 @@ Managing your account
     index.md
 
     {: .topicgroup}
-    Account setup
+    Setting up your account
         adminpublic.md
         profile.md
         login_settings.md
@@ -30,7 +30,6 @@ Managing your account
         contact_info.md
         email.md
 
-    change-plan.md
     softlayerlink.md
 
     {: .topicgroup}
