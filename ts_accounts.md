@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-13"
+lastupdated: "2019-05-29"
 
 keywords: troubleshoot account, account problem, account support, account help, org error, resource error, error message
 
@@ -36,10 +36,10 @@ You're unable to create a new location because your account type doesn't allow i
 You receive an error message when you try to create a new {{site.data.keyword.Bluemix_notm}} location.
 {: tsSymptoms}
 
-This is likely because you're using a Lite account, which supports development in one public location only.
+This is likely because you're using a Lite account, which supports development in one public location only. For more information about Lite account features, see [Lite account](/docs/account?topic=account-accounts#liteaccount). 
 {: tsCauses}
 
-To access more locations, upgrade to a billable account. Go to **Manage > Billing and usage**, and select **Payments**.
+To access more locations, upgrade to a billable account. Go to **Manage > Account**, and select **Account settings**. In the Account upgrade section, select your upgrade option.
 {: tsResolve}
 
 
@@ -52,10 +52,10 @@ You try to create more than one org, and you have a Lite account.
 You receive an error message when you try to create a new organization.
 {: tsSymptoms}
 
-This is likely because you're using a Lite account, which supports development in one organization only.
+You're likely seeing this error because you're using a Lite account, which supports development in one organization only. For more information about Lite account features, see [Lite account](/docs/account?topic=account-accounts#liteaccount). 
 {: tsCauses}
 
-To create a new org, upgrade to a billable account. Go to **Manage > Billing and usage**, and select **Upgrades**.
+To create a new org, upgrade to a billable account. Go to **Manage > Billing and usage**, and select **Payments**.
 {: tsResolve}
 
 
@@ -70,10 +70,10 @@ You receive the following error message when you try to create a new Lite plan i
 
 `Unable to provision new Lite instance`
 
-There's a limit of one instance per Lite plan instance to ensure that these plans stay free.
+There's a limit of one instance per Lite plan instance to ensure that these plans stay free. For more information about Lite account features, see [Lite account](/docs/account?topic=account-accounts#liteaccount). 
 {: tsCauses}
 
-You can create more instances of the service by selecting one of the billable service plans, which are available in the billable accounts. To upgrade to a billable account from the console, go to **Manage > Billing and usage**, and select **Upgrades**.
+You can create more instances of the service by selecting one of the billable service plans, which are available in the billable accounts. To upgrade to a billable account from the console, go to **Manage > Account**, and select **Account settings**.
 {: tsResolve}
 
 If you don't want to upgrade from a Lite account and are no longer using your existing Lite service instance, you can delete the existing Lite plan instance from the dashboard and then create a new instance.
@@ -85,13 +85,13 @@ If you don't want to upgrade from a Lite account and are no longer using your ex
 
 You've gone over the allowed memory for your account.
 
-You're unable to deploy apps, and an error stating that you've exceeded your organization's memory limit.
+You're unable to deploy apps, and an error states that you've exceeded your organization's memory limit.
 {: tsSymptoms}
 
 In a Lite account, your Cloud Foundry apps can use up to 256 MB of instantaneous runtime memory. In billable accounts, there's a 2 GB memory limit.
 {: tsCauses}
 
-If you're using a Lite account, you can get more memory by upgrading to a billable account. Go to **Manage > Billing and usage**, and select **Upgrades**.
+If you're using a Lite account, you can get more memory by upgrading to a billable account. Go to **Manage > Account**, and select **Account settings**. For more information about Lite account features, see [Lite account](/docs/account?topic=account-accounts#liteaccount). 
 {: tsResolve}
 
 If you don't want to upgrade from a Lite account but have some idle apps, you can delete them to free up some runtime memory.
@@ -174,7 +174,8 @@ Apps must be created in a space under your organization.
 To create a space, use one of the following methods:
 {: tsResolve}
 
-  * From the console menu bar, click **Manage > Account**, and select **Organizations**. Then, select the organization in which you want to create the space, and click **Create a Space**.
+  * From the console menu bar, click **Manage > Account**. Expand **Account resources** and click **Cloud Foundry orgs**.
+  Then, select the organization in which you want to create the space, and click **Add a space**.
   * In the {{site.data.keyword.Bluemix_notm}} command line interface, type `ibmcloud account space-create <space_name> -o <organization_name>`.
 
 
@@ -189,7 +190,7 @@ This problem might happen when you assign the same URL route for different apps 
 
 For example, you push the myApp1 app to {{site.data.keyword.Bluemix_notm}} and set the domain to `mynewapp.us-east.cf.appdomain.cloud`. Then, you push another myApp2 app to the same space and set one of its URL routes to `mynewapp.us-east.cf.appdomain.cloud`. The route is now mapped to both apps.
 
-This is supported behavior, and you can use this practice to achieve zero downtime for your app upgrade. For more information, see [How to ensure zero downtime](/docs/overview?topic=overview-zero-downtime).
+This behavior is supported, and you can use this practice to achieve zero downtime for your app upgrade. For more information, see [How to ensure zero downtime](/docs/overview?topic=overview-zero-downtime).
 {: tsResolve}
 
 
@@ -202,14 +203,14 @@ As an administrator, you can't display every organization to administer them whe
 As an administrator, you can't view all the organizations from the console.
 {: tsSymptoms}
 
-This is a limitation of the console.
+This behavior is a limitation of the console.
 {: tsCauses}
 
 You can use commands such as `ibmcloud account orgs` and `ibmcloud account org-create` from the {{site.data.keyword.Bluemix_notm}} command line interface to manage all the organizations. For a full list of commands, enter `ibmcloud account help`.
 {: tsResolve}
 
 
-## Why can't I add my credit card information?
+## Why can't I submit the form to add my credit card information?
 {: #ts_addcc}
 {: troubleshoot}
 
@@ -226,3 +227,32 @@ Complete the following steps:
 
   1. On the Add credit card page, complete all the required fields.
   2. Select **I have read and agree to IBM's Terms and Conditions**, then click **Submit**.
+
+## How do I add a credit card when the option is unavailable through the console?
+{: #ts_ccibm}
+{: troubleshoot}
+
+You want to enter a credit card to pay for {{site.data.keyword.Bluemix_notm}} services, but the option doesn't appear. 
+
+When you try to enter your credit card information, you see the following message:
+{: tsSymptoms}
+
+```
+Your payments are managed through IBM.com. To view your payments and maintain your billing, you can visit the IBM.com portal which contains everything for your IBMid account.
+```
+{: screen}
+
+You click **Explore** to access the ibm.com website, but you don't see a location to enter your credit card information.
+
+We securely process credit card transactions through the {{site.data.keyword.Bluemix_notm}} console. However, in some countries, we must take additional steps to ensure the integrity of the credit card data. Those credit card requests are completed through the ibm.com website. Both methods ensure that your credit card information is securely processed.   
+{: tsCauses}
+
+To provide your credit card information for payment, complete the following steps:
+{: tsResolve}
+
+  1. Go to [ibm.com ![External link icon](../icons/launch-glyph.svg "External link icon")](http://www.ibm.com){: new_window} and log in with the same IBMid and password that you use to log in to {{site.data.keyword.Bluemix_notm}}. 
+  1. Click the Avatar icon ![Avatar icon](../icons/i-avatar-icon.svg), and select **Billing**.
+  1. Click **Manage payment method**.
+  1. Enter your credit card information, and click **Register**.
+
+The information will be verified and added to your {{site.data.keyword.Bluemix_notm}} account as your payment method for any charges. 
