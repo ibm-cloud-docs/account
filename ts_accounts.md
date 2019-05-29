@@ -36,7 +36,7 @@ You're unable to create a new location because your account type doesn't allow i
 You receive an error message when you try to create a new {{site.data.keyword.Bluemix_notm}} location.
 {: tsSymptoms}
 
-This is likely because you're using a Lite account, which supports development in one public location only. For more information about Lite account features, see [Lite account](/docs/account?topic=account-accounts#liteaccount). 
+This is likely because you're using a Lite account, which supports development in one public location only. For more information about Lite account features, see [Lite account](/docs/account?topic=account-accounts#liteaccount).
 {: tsCauses}
 
 To access more locations, upgrade to a billable account. Go to **Manage > Account**, and select **Account settings**. In the Account upgrade section, select your upgrade option.
@@ -52,7 +52,7 @@ You try to create more than one org, and you have a Lite account.
 You receive an error message when you try to create a new organization.
 {: tsSymptoms}
 
-You're likely seeing this error because you're using a Lite account, which supports development in one organization only. For more information about Lite account features, see [Lite account](/docs/account?topic=account-accounts#liteaccount). 
+You're likely seeing this error because you're using a Lite account, which supports development in one organization only. For more information about Lite account features, see [Lite account](/docs/account?topic=account-accounts#liteaccount).
 {: tsCauses}
 
 To create a new org, upgrade to a billable account. Go to **Manage > Billing and usage**, and select **Payments**.
@@ -70,7 +70,7 @@ You receive the following error message when you try to create a new Lite plan i
 
 `Unable to provision new Lite instance`
 
-There's a limit of one instance per Lite plan instance to ensure that these plans stay free. For more information about Lite account features, see [Lite account](/docs/account?topic=account-accounts#liteaccount). 
+There's a limit of one instance per Lite plan instance to ensure that these plans stay free. For more information about Lite account features, see [Lite account](/docs/account?topic=account-accounts#liteaccount).
 {: tsCauses}
 
 You can create more instances of the service by selecting one of the billable service plans, which are available in the billable accounts. To upgrade to a billable account from the console, go to **Manage > Account**, and select **Account settings**.
@@ -91,7 +91,7 @@ You're unable to deploy apps, and an error states that you've exceeded your orga
 In a Lite account, your Cloud Foundry apps can use up to 256 MB of instantaneous runtime memory. In billable accounts, there's a 2 GB memory limit.
 {: tsCauses}
 
-If you're using a Lite account, you can get more memory by upgrading to a billable account. Go to **Manage > Account**, and select **Account settings**. For more information about Lite account features, see [Lite account](/docs/account?topic=account-accounts#liteaccount). 
+If you're using a Lite account, you can get more memory by upgrading to a billable account. Go to **Manage > Account**, and select **Account settings**. For more information about Lite account features, see [Lite account](/docs/account?topic=account-accounts#liteaccount).
 {: tsResolve}
 
 If you don't want to upgrade from a Lite account but have some idle apps, you can delete them to free up some runtime memory.
@@ -232,15 +232,12 @@ Complete the following steps:
 {: #ts_ccibm}
 {: troubleshoot}
 
-You want to enter a credit card to pay for {{site.data.keyword.Bluemix_notm}} services, but the option doesn't appear. 
+You want to enter a credit card to pay for {{site.data.keyword.Bluemix_notm}} services, but the option doesn't appear.
 
 When you try to enter your credit card information, you see the following message:
 {: tsSymptoms}
 
-```
-Your payments are managed through IBM.com. To view your payments and maintain your billing, you can visit the IBM.com portal which contains everything for your IBMid account.
-```
-{: screen}
+`Your payments are managed through IBM.com. To view your payments and maintain your billing, you can visit the IBM.com portal which contains everything for your IBMid account.`
 
 You click **Explore** to access the ibm.com website, but you don't see a location to enter your credit card information.
 
@@ -250,9 +247,9 @@ We securely process credit card transactions through the {{site.data.keyword.Blu
 To provide your credit card information for payment, complete the following steps:
 {: tsResolve}
 
-  1. Go to [ibm.com ![External link icon](../icons/launch-glyph.svg "External link icon")](http://www.ibm.com){: new_window} and log in with the same IBMid and password that you use to log in to {{site.data.keyword.Bluemix_notm}}. 
+  1. Go to [ibm.com ![External link icon](../icons/launch-glyph.svg "External link icon")](http://www.ibm.com){: new_window} and log in with the same IBMid and password that you use to log in to {{site.data.keyword.Bluemix_notm}}.
   1. Click the Avatar icon ![Avatar icon](../icons/i-avatar-icon.svg), and select **Billing**.
   1. Click **Manage payment method**.
   1. Enter your credit card information, and click **Register**.
 
-The information will be verified and added to your {{site.data.keyword.Bluemix_notm}} account as your payment method for any charges. 
+The information will be verified and added to your {{site.data.keyword.Bluemix_notm}} account as your payment method for any charges.
