@@ -40,7 +40,7 @@ You can grant access to users. For example, a developer typically has fairly wid
 
 If you have a Pay-As-You-Go or Subscription account, you can create more resource groups:
 
-1. Go to **Manage** > **Account**, and select **Resource groups** from the **Account resources** menu.
+1. Go to **Manage > Account**. Expand **Account resources**, and select **Resource groups**.
 3. Click **Create**.
 4. Enter the name of your resource group.
 5. Click **Add**.
