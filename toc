@@ -8,7 +8,6 @@ Managing your account
     {: .navgroup id="learn"}
     bp_account.md
     account_overview.md
-    lite-account-show-me.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
