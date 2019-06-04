@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2018
-lastupdated: "2018-11-28"
+  years: 2015, 2019
+lastupdated: "2019-05-23"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -125,18 +125,24 @@ Asegúrese de que puede iniciar sesión en [IBM](https://idaas.iam.ibm.com/idaas
 {: #ts_accntpding}
 {: troubleshoot}
 
-Si la cuenta está pendiente, no puede iniciar una sesión en {{site.data.keyword.Bluemix_notm}}.
+Si la cuenta aún está pendiente, no podrá iniciar una sesión en {{site.data.keyword.Bluemix_notm}}.
 
-Después de registrarse para una cuenta de Lite de {{site.data.keyword.Bluemix_notm}}, es posible que no pueda iniciar sesión en {{site.data.keyword.Bluemix_notm}}. Se visualiza el mensaje siguiente:
+Después de registrarse para una cuenta de {{site.data.keyword.Bluemix_notm}}, es posible que no pueda iniciar sesión en {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
 
-<code>Su cuenta está pendiente. Debe esperar hasta 24 horas a recibir una confirmación por correo electrónico y debe comprobar la carpeta spam. Si transcurrido este tiempo no ha recibido la confirmación por correo electrónico, póngase en contacto con el <a href="https://ibm.biz/ibmcloudsupport" target="_blank">Soporte de {{site.data.keyword.Bluemix_notm}}</a>.</code>
-
-Cuando registra una cuenta Lite de {{site.data.keyword.Bluemix_notm}}, recibe un correo electrónico que incluye un enlace en el que debe pulsar para confirmar el registro.  
+Cuando se registre para una cuenta de {{site.data.keyword.Bluemix_notm}}, recibirá un correo electrónico de confirmación. Debe pulsar este enlace para confirmar el registro. Si no confirma el registro, la cuenta queda en estado pendiente.
 {: tsCauses}
 
-El correo electrónico de confirmación se envía a la dirección de correo electrónico asociada con el IBMid. Consulte la bandeja de entrada de la carpeta spam. Si no ha recibido el correo electrónico de confirmación, póngase en contacto con el [Soporte de {{site.data.keyword.Bluemix_notm}}](/docs/get-support?topic=get-support-getting-customer-support).  
+El correo electrónico de confirmación se envía a la dirección de correo electrónico asociada con el IBMid. Consulte la bandeja de entrada de la carpeta spam. Si no ha recibido el correo electrónico de confirmación, vaya a la [página de inicio de sesión de {{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com/){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo") e intente iniciar una sesión. Se visualiza el mensaje siguiente:
 {: tsResolve}
+
+```
+Para finalizar el registro, consulte su correo electrónico.
+¿No encuentra el correo electrónico? Vuelva a enviar
+```
+{:screen}
+
+Pulse **Reenviar** para enviar otro correo electrónico de confirmación a la dirección de correo electrónico asociada con su IBMid. Si sigue sin poder completar el registro, póngase en contacto con el [equipo de soporte de {{site.data.keyword.Bluemix_notm}}](/docs/get-support?topic=get-support-getting-customer-support).  
 
 
 ## ¿Por qué hay páginas de la consola que no se cargan?

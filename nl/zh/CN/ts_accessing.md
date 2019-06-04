@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2018
-lastupdated: "2018-11-28"
+  years: 2015, 2019
+lastupdated: "2019-05-23"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -126,18 +126,24 @@ IBM 标识认证服务可能发生问题。
 {: #ts_accntpding}
 {: troubleshoot}
 
-如果帐户暂挂，那么无法登录到 {{site.data.keyword.Bluemix_notm}}。
+如果帐户仍然暂挂，那么无法登录到 {{site.data.keyword.Bluemix_notm}}。
 
-在注册 {{site.data.keyword.Bluemix_notm}} 轻量帐户后，可能无法登录到 {{site.data.keyword.Bluemix_notm}}。将显示以下消息：
+在注册 {{site.data.keyword.Bluemix_notm}} 帐户后，可能无法登录到 {{site.data.keyword.Bluemix_notm}}。
 {: tsSymptoms}
 
-<code>帐户暂挂。请等待最多 24 小时以获取电子邮件确认并请检查垃圾邮件文件夹。如果仍未收到确认电子邮件，请联系 <a href="https://ibm.biz/ibmcloudsupport" target="_blank">{{site.data.keyword.Bluemix_notm}} 支持</a>。</code>
-
-在注册 {{site.data.keyword.Bluemix_notm}} 轻量帐户后，您将收到包含链接的电子邮件，您必须单击该链接以确认注册。  
+在注册 {{site.data.keyword.Bluemix_notm}} 帐户后，您将收到包含确认链接的电子邮件。您必须单击该链接以确认注册。如果未确认注册，那么帐户将保持暂挂状态。
 {: tsCauses}
 
-确认电子邮件将发送到与您的 IBM 标识关联的电子邮件地址。检查收件箱和垃圾邮件文件夹。如果未收到确认电子邮件，请联系 [{{site.data.keyword.Bluemix_notm}} 支持人员](/docs/get-support?topic=get-support-getting-customer-support)。  
+确认电子邮件将发送到与您的 IBM 标识关联的电子邮件地址。检查收件箱和垃圾邮件文件夹。如果尚未收到确认电子邮件，请转至 [{{site.data.keyword.Bluemix_notm}} 登录页面](https://cloud.ibm.com/){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标") 并尝试登录。将显示以下消息：
 {: tsResolve}
+
+```
+要完成注册，请检查电子邮件。
+找不到电子邮件？重新发送
+```
+{:screen}
+
+单击**重新发送**以再次将确认电子邮件发送到与您的 IBM 标识关联的电子邮件地址。如果仍然无法完成注册，请联系 [{{site.data.keyword.Bluemix_notm}} 支持人员](/docs/get-support?topic=get-support-getting-customer-support)。  
 
 
 ## 为什么会遇到无法装入的控制台页面？

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2018
-lastupdated: "2018-11-28"
+  years: 2015, 2019
+lastupdated: "2019-05-23"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -125,18 +125,24 @@ IBM ID 鑑別服務可能有問題。
 {: #ts_accntpding}
 {: troubleshoot}
 
-如果您的帳戶處於擱置狀態，即無法登入 {{site.data.keyword.Bluemix_notm}}。
+如果您的帳戶仍處於擱置狀態，就無法登入 {{site.data.keyword.Bluemix_notm}}。
 
-在登錄取得 {{site.data.keyword.Bluemix_notm}} 精簡帳戶之後，您可能無法登入 {{site.data.keyword.Bluemix_notm}}。系統會顯示下列訊息：
+在登錄取得 {{site.data.keyword.Bluemix_notm}} 帳戶之後，您可能無法登入 {{site.data.keyword.Bluemix_notm}}。
 {: tsSymptoms}
 
-<code>您的帳戶處於擱置狀態。請稍候，最晚 24 小時即會收到電子郵件確認信，同時也請檢查垃圾郵件資料夾。如果您仍未收到確認電子郵件，請與 <a href="https://ibm.biz/ibmcloudsupport" target="_blank">{{site.data.keyword.Bluemix_notm}} 支援中心</a>聯絡。</code>
-
-當您登錄 {{site.data.keyword.Bluemix_notm}}「精簡」帳戶時，會收到一封電子郵件，其中包含一個鏈結，您必須按一下以確認登錄。  
+當您登錄取得 {{site.data.keyword.Bluemix_notm}} 帳戶時，會收到一封電子郵件，其中包含一個確認鏈結。您必須按一下此鏈結來確認您的登錄。如果您未確認登錄，您的帳戶就會維持在擱置狀態。
 {: tsCauses}
 
-確認電子郵件會傳送至與您 IBM ID 相關聯的電子郵件位址。檢查您的收件匣和垃圾郵件資料夾。如果未收到確認電子郵件，請與 [{{site.data.keyword.Bluemix_notm}} 支援中心](/docs/get-support?topic=get-support-getting-customer-support)聯絡。  
+確認電子郵件會傳送至與您 IBM ID 相關聯的電子郵件位址。檢查您的收件匣和垃圾郵件資料夾。如果您尚未收到確認電子郵件，請移至 [{{site.data.keyword.Bluemix_notm}} 登入頁面](https://cloud.ibm.com/){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")，並嘗試登入。系統會顯示下列訊息：
 {: tsResolve}
+
+```
+若要完成登錄，請檢查電子郵件。
+找不到電子郵件嗎？重新傳送
+```
+{:screen}
+
+按一下**重新傳送**，將另一封確認電子郵件傳送至與您 IBM ID 相關聯的電子郵件位址。如果您仍然無法完成登錄，請與 [{{site.data.keyword.Bluemix_notm}} 支援中心](/docs/get-support?topic=get-support-getting-customer-support)聯絡。  
 
 
 ## 為什麼我會遇到無法載入的主控台頁面？

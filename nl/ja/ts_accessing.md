@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2018
-lastupdated: "2018-11-28"
+  years: 2015, 2019
+lastupdated: "2019-05-23"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -125,18 +125,24 @@ IBMid 認証サービスに問題がある可能性があります。
 {: #ts_accntpding}
 {: troubleshoot}
 
-アカウントが保留になっている場合は、{{site.data.keyword.Bluemix_notm}} にログインできません。
+アカウントがまだ保留になっている場合は、{{site.data.keyword.Bluemix_notm}} にログインできません。
 
-{{site.data.keyword.Bluemix_notm}} ライト・アカウントに登録した後、{{site.data.keyword.Bluemix_notm}} にログインできない場合があります。 次のメッセージが表示されます。
+{{site.data.keyword.Bluemix_notm}} アカウントを登録した後、{{site.data.keyword.Bluemix_notm}} にログインできない場合があります。
 {: tsSymptoms}
 
-<code>アカウントが保留になっています。 E メールの確認を最大 24 時間待って、スパム・フォルダーも確認してください。 それでも確認の E メールが届かない場合は、<a href="http://ibm.biz/bluemixsupport.com" target="_blank">{{site.data.keyword.Bluemix_notm}} サポート</a>までお問い合わせください。</code>
-
-{{site.data.keyword.Bluemix_notm}} ライト・アカウントに登録すると E メールが届きます。そのメールに含まれているリンクをクリックして登録を確認する必要があります。  
+{{site.data.keyword.Bluemix_notm}} アカウントを登録すると、確認のリンクを含む E メールが届きます。 このリンクをクリックして、登録を確認する必要があります。 登録を確認しないと、アカウントが保留状態のままになります。
 {: tsCauses}
 
-確認の E メールは、IBMid と関連付けられた E メール・アドレスに送信されます。 受信ボックスとスパム・フォルダーを確認してください。 確認の E メールが届かない場合は、[{{site.data.keyword.Bluemix_notm}} サポート](/docs/get-support?topic=get-support-getting-customer-support)にお問い合わせください。  
+確認の E メールは、IBMid と関連付けられた E メール・アドレスに送信されます。 受信ボックスとスパム・フォルダーを確認してください。 確認の E メールが届かない場合は、[{{site.data.keyword.Bluemix_notm}} ログイン・ページ](https://cloud.ibm.com/){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") に移動して、ログインしてみてください。 次のメッセージが表示されます。
 {: tsResolve}
+
+```
+登録を完了するには、E メールをご確認ください。
+E メールが見つかりませんか? 再送
+```
+{:screen}
+
+**「再送」**をクリックして、IBMid に関連付けられている E メール・アドレスにもう一度確認の E メールを送信します。 それでも登録を完全できない場合は、[{{site.data.keyword.Bluemix_notm}} サポート](/docs/get-support?topic=get-support-getting-customer-support)に連絡してください。  
 
 
 ## ロードされないコンソール・ページがあるのはなぜですか?

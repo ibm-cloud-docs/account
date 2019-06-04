@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-13"
+lastupdated: "2019-05-28"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -38,7 +38,7 @@ Wenn Sie sich bei einem {{site.data.keyword.Bluemix_notm}}-Konto anmelden könne
 
    Nachdem Sie den Fall erstellt haben, wird Ihnen eine E-Mail-Benachrichtigung gesendet. Folgen Sie zur weiteren Kommunikation den entsprechenden Anweisungen.
 
-Wenn Sie sich nicht bei einem {{site.data.keyword.Bluemix}}-Konto anmelden können, [Erstellen Sie eine Kontoanforderung](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link").
+Wenn Sie sich nicht bei einem {{site.data.keyword.Bluemix_notm}}-Konto anmelden können, [Erstellen Sie eine Kontoanforderung](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link").
 
 ## Was ist Cloud Foundry?
 {: #cloud-foundry}
@@ -94,26 +94,23 @@ Wenn Sie über ein gebührenpflichtiges Konto verfügen, gibt es keinen Grenzwer
 {: #changeacct}
 {: faq}
 
-* Für ein Upgrade von einem Lite-Konto auf ein nutzungsabhängiges oder Abonnementkonto rufen Sie [Kontoeinstellungen](https://{DomainName}/account/settings) auf.
-  * Für ein Upgrade auf ein nutzungsabhängiges Konto klicken Sie auf **Kreditkarte hinzufügen**.
-  * Für ein Upgrade auf ein Abonnementkonto klicken Sie auf **Upgrade**.
-* Zum Konvertieren zwischen einem nutzungsabhängigen und einem Abonnementkonto wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}} Vertrieb ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
+Wenn Sie ein Upgrade für Ihr Lite-Konto durchführen möchten, rufen Sie [Kontoeinstellungen](https://{DomainName}/account/settings) auf. Klicken Sie im Abschnitt für Kontoupgrades auf **Kreditkarte hinzufügen**, um ein Upgrade auf ein Konto mit nutzungsabhängiger Zahlung durchzuführen, oder klicken Sie auf **Upgrade** für ein Abonnementkonto. Darüber hinaus können Sie auf der Seite mit den Kontoeinstellungen einen Werbe-Feature-Code hinzufügen, um Ihr Lite-Konto in ein Testkonto zu konvertieren.
 
-Den aktuellen Kontotyp finden Sie auf der Seite mit den Kontoeinstellungen.
+Zum Konvertieren zwischen einem nutzungsabhängigen und einem Abonnementkonto wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}} Vertrieb ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
-Weitere Informationen finden Sie in [Upgrade für das Konto durchführen](/docs/account?topic=account-upgrading-account).
+Den aktuellen Kontotyp finden Sie auf der Seite mit den Kontoeinstellungen. Weitere Informationen finden Sie in [Upgrade für das Konto durchführen](/docs/account?topic=account-upgrading-account).
 
 ## Kann ich meine vorhandenen Instanzen weiterhin verwenden, wenn ich ein Upgrade für mein Lite-Konto durchführe?
 {: #nochange}
 {: faq}
 
-Ja, Sie können ein Upgrade auf ein gebührenpflichtiges Konto durchführen und die Instanzen, die Sie mit Ihrem Lite-Konto erstellt haben, weiter verwenden.
+Ja, wenn Sie ein Upgrade auf ein gebührenpflichtiges Konto durchführen, können Sie die Instanzen, die Sie mit Ihrem Lite-Konto erstellt haben, weiter verwenden.
 
 ## Wie aktualisiere ich meine Kreditkartendaten?
 {: #updatepayment}
 {: faq}
 
-Sie können die Zahlungsmethode, die Ihrem Konto zugeordnet ist, aktualisieren, indem Sie in der Konsole [Zahlungen](https://cloud.ibm.com/billing/payments) aufrufen. Geben Sie unter 'Zahlungsmethode hinzufügen' die Rechnungsinformationen für Ihre neue Karte ein und klicken Sie auf **Kreditkarte hinzufügen**.
+Die Vorgehensweise beim Aktualisieren der Kreditkarte entspricht der beim Hinzufügen einer neuen Kreditkarte. Rufen Sie [Zahlungen](https://{DomainName}/billing/payments) auf und geben Sie im Abschnitt für das Hinzufügen einer Zahlungsmethode die Abrechnungsinformationen für die neue Karte ein. Klicken Sie anschließend auf **Kreditkarte hinzufügen**.
 
 Wenn Sie zu einer anderen Zahlungsmethode wechseln möchten, wählen Sie die Option für eine **Andere Zahlungsmethode** aus und klicken Sie auf **Änderungsanforderung senden**. Ein Supportfall zum Ändern Ihrer Zahlungsmethode wird für Sie erstellt.
 
@@ -158,6 +155,12 @@ Wenn Sie Ihr Konto beenden möchten, ist das weitere Vorgehen von Ihrem Kontotyp
 {: faq}
 
 Wenden Sie sich an [{{site.data.keyword.Bluemix_notm}} Support ![Symbol für externen Link](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window}, um einen Supportfall für das Löschen Ihres Kontos zu öffnen. Wenn Sie über Daten verfügen, die Ihrem alten Konto zugeordnet sind, die jedoch in ein neues Konto übernommen werden sollen, dann geben Sie die entsprechenden Informationen in Ihrer E-Mail an.
+
+## Wie kann ich meine personenbezogenen Daten aus {{site.data.keyword.Bluemix_notm}} entfernen?
+{: #remove-pi}
+{: faq}
+
+Informationen zur Verarbeitung personenbezogener Daten durch IBM finden Sie in der [IBM Datenschutzerklärung ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/privacy/){: new_window}. Der Abschnitt 'Ihre Rechte' enthält Informationen zu den Daten, deren Löschung Sie anfordern können. Klicken Sie auf den Link in diesem Abschnitt, wenn Sie eine Anforderung zur Löschung Ihrer personenbezogenen Daten senden möchten. 
 
 ## Warum ist mein Konto inaktiviert?
 {: #account-deactivated}
@@ -239,7 +242,7 @@ Sie können die ID weiterhin für Ihr SoftLayer-Konto verwenden, um sich beim Ku
 
 Im Header der IBM Cloud-Konsole sind alle Konten aufgeführt, die Ihrer Anmelde-ID zugeordnet sind. Hierzu gehören auch die Konten, deren Eigner Sie sind. Sie können Ihre Rolle im jeweiligen Konto auf der Seite [Benutzer](https://{DomainName}/iam/users) anzeigen.
 
-Sie können Ihre Konten auch auflisten, indem Sie den Befehl `ibmcloud account list` über die Befehlszeilenschnittstelle ausführen. 
+Sie können Ihre Konten auch auflisten, indem Sie den Befehl `ibmcloud account list` über die Befehlszeilenschnittstelle ausführen.
 
 ## Wie kann ich zwischen mehreren Konten wechseln?
 {: #switch-between-accounts}
@@ -255,7 +258,7 @@ Wenn Sie über mehrere Konten verfügen, können Sie auf einen der Kontonamen kl
 
 Sie können das Eigentumsrecht für einzelne Ressourcen innerhalb Ihres Kontos an eine andere Person übertragen, indem Sie den Befehl `ibmcloud catalog` verwenden. Weitere Informationen finden Sie in [Eigentumsrecht für eine private Ressource übertragen](/docs/account?topic=account-include#owners).
 
-Zur Übertragung des Eigentumsrechts für Ihre gesamtes Konto benötigen Sie zusätzliche Unterstützung des Support-Teams. [Wenden Sie sich an den Support](/docs/get-support?topic=get-support-getting-customer-support), um Unterstützung anzufordern. 
+Zur Übertragung des Eigentumsrechts für Ihre gesamtes Konto benötigen Sie zusätzliche Unterstützung des Support-Teams. [Wenden Sie sich an den Support](/docs/get-support?topic=get-support-getting-customer-support), um Unterstützung anzufordern.
 
 ## Unterstützt {{site.data.keyword.Bluemix_notm}} die Registrierung von Benutzern mithilfe einer Batchoperation?
 {: #batch-registration}
@@ -293,4 +296,4 @@ Bevor Sie einen Tag löschen können, müssen Sie ihn von allen Ressourcen entfe
 {: #rename-tag}
 {: faq}
 
-Der Name eines Tags kann nicht bearbeitet werden. Wenn Sie einen Tag umbenennen möchten, entfernen Sie ihn und weisen Sie der Ressource einen neuen Tag zu.  
+Der Name eines Tags kann nicht bearbeitet werden. Wenn Sie einen Tag umbenennen möchten, entfernen Sie ihn und weisen Sie der Ressource einen neuen Tag zu.

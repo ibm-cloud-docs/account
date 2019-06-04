@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-13"
+lastupdated: "2019-05-29"
 
 keywords: troubleshoot account, account problem, account support, account help, org error, resource error, error message
 
@@ -20,7 +20,7 @@ subcollection: account
 {:new_window: target="_blank"}
 {:troubleshoot: data-hd-content-type='troubleshoot'}
 
-# 有关管理帐户的故障诊断
+# 针对管理帐户的故障诊断
 {: #managingaccounts}
 
 管理帐户时会发生的一般问题可能包括不同的应用程序具有同一域名，或管理员无法查看所有组织。在许多情况下，只需执行几个简单的步骤即可解决这些问题。
@@ -37,9 +37,10 @@ subcollection: account
 {: tsSymptoms}
 
 这可能是因为您使用的是轻量帐户，该帐户仅支持在一个公共位置中进行开发。
+有关轻量帐户功能的更多信息，请参阅[轻量帐户](/docs/account?topic=account-accounts#liteaccount)。
 {: tsCauses}
 
-要访问更多位置，请升级到计费帐户。转至**管理 > 计费和使用情况**，然后选择**付款**。
+要访问更多位置，请升级到计费帐户。转至**管理 > 帐户**，然后选择**帐户设置**。在“帐户升级”部分中，选择您的升级选项。
 {: tsResolve}
 
 
@@ -52,10 +53,10 @@ subcollection: account
 尝试创建新组织时收到错误消息。
 {: tsSymptoms}
 
-这可能是因为您使用的是轻量帐户，该帐户仅支持在一个组织中进行开发。
+显示该错误可能是因为您使用的是轻量帐户，轻量帐户仅支持在一个组织中进行开发。有关轻量帐户功能的更多信息，请参阅[轻量帐户](/docs/account?topic=account-accounts#liteaccount)。
 {: tsCauses}
 
-要创建新的组织，请升级到计费帐户。请转至**管理 > 计费和使用情况**，然后选择**升级**。
+要创建新的组织，请升级到计费帐户。转至**管理 > 计费和使用情况**，然后选择**付款**。
 {: tsResolve}
 
 
@@ -71,9 +72,10 @@ subcollection: account
 `无法供应新轻量实例`
 
 每个轻量套餐实例只能有一个实例，此限制确保这些套餐始终是免费的。
+有关轻量帐户功能的更多信息，请参阅[轻量帐户](/docs/account?topic=account-accounts#liteaccount)。
 {: tsCauses}
 
-计费帐户中提供了多个计费服务套餐，您可以从中选择一个计费服务套餐来创建多个服务实例。要从控制台升级到计费帐户，请转至**管理 > 计费和使用情况**，然后选择**升级**。
+计费帐户中提供了多个计费服务套餐，您可以从中选择一个计费服务套餐来创建多个服务实例。要通过控制台升级为计费帐户，请转至**管理 > 帐户**，然后选择**帐户设置**。
 {: tsResolve}
 
 如果您不想从轻量帐户升级且不再使用现有的轻量服务实例，那么可以从仪表板中删除现有轻量套餐实例，然后创建新实例。
@@ -91,7 +93,7 @@ subcollection: account
 在轻量帐户中，Cloud Foundry 应用程序最多可以使用 256 MB 的即时运行时内存。在计费帐户中，内存限制为 2 GB。
 {: tsCauses}
 
-如果使用的是轻量帐户，那么可以升级到计费帐户，以便获取更多内存。请转至**管理 > 计费和使用情况**，然后选择**升级**。
+如果使用的是轻量帐户，那么可以升级到计费帐户，以便获取更多内存。转至**管理 > 帐户**，然后选择**帐户设置**。有关轻量帐户功能的更多信息，请参阅[轻量帐户](/docs/account?topic=account-accounts#liteaccount)。
 {: tsResolve}
 
 如果您不想从轻量帐户升级，但拥有一些空闲的应用程序，那么可以删除空闲的应用程序以释放一些运行时内存。
@@ -174,8 +176,8 @@ subcollection: account
 要创建空间，请使用以下某种方法： 
 {: tsResolve}
 
-  * 在控制台菜单栏中，单击**管理 > 帐户**，然后选择**组织**。然后，选择要在其中创建空间的组织，并单击**创建空间**。
-  * 在 {{site.data.keyword.Bluemix_notm}} 命令行界面中，输入 `ibmcloud account space-create <space_name> -o <organization_name>`.
+  * 在控制台菜单栏中，单击**管理 > 帐户**。展开**帐户资源**，并单击 **Cloud Foundry 组织**。然后，选择要在其中创建空间的组织，并单击**添加空间**。
+  * 在 {{site.data.keyword.Bluemix_notm}} 命令行界面中，输入 `ibmcloud account space-create <space_name> -o <organization_name>`。
 
 
 ## 为什么某些应用程序共享一个域名？
@@ -202,14 +204,14 @@ subcollection: account
 作为管理员，您无法通过控制台查看所有组织。
 {: tsSymptoms}
 
-这是控制台的限制。
+此行为是控制台的限制。
 {: tsCauses}
 
 您可以通过 {{site.data.keyword.Bluemix_notm}} 命令行界面，使用命令（如 `ibmcloud account orgs` 和 `ibmcloud account org-create`）来管理所有组织。要获取命令的完整列表，请输入 `ibmcloud account help`。
 {: tsResolve}
 
 
-## 为什么无法添加信用卡信息？
+## 为什么我无法提交表单来添加信用卡信息？
 {: #ts_addcc}
 {: troubleshoot}
 
@@ -226,3 +228,29 @@ subcollection: account
 
   1. 在“添加信用卡”页面上，填写所有必填字段。
   2. 选择**我已阅读并同意 IBM 条款和条件**，然后单击**提交**。
+
+## 如果通过控制台无法使用添加信用卡的选项，如何添加信用卡？
+{: #ts_ccibm}
+{: troubleshoot}
+
+您要输入信用卡来支付 {{site.data.keyword.Bluemix_notm}} 服务的费用，但相关选项未显示。
+
+尝试输入信用卡信息时，您会看到以下错误消息：
+{: tsSymptoms}
+
+`您的付款是通过 IBM.com 进行管理的。要查看您的付款并维护计费，您可以访问 IBM.com 门户网站，其中包含您的 IBM 标识账户的所有内容。`
+
+您单击**探索**来访问 ibm.com Web 站点，但看不到用于输入信用卡信息的位置。
+
+我们通过 {{site.data.keyword.Bluemix_notm}} 控制台来安全地处理信用卡交易。但是，在某些国家/地区，我们必须采取额外的措施来确保信用卡数据的完整性。这些信用卡请求将通过 ibm.com Web 站点来完成。这两种方法都可确保您的信用卡信息得到安全处理。   
+{: tsCauses}
+
+要提供信用卡信息进行付款，请完成以下步骤：
+{: tsResolve}
+
+  1. 转至 [ibm.com ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://www.ibm.com){: new_window}，然后使用用于登录到 {{site.data.keyword.Bluemix_notm}} 的相同 IBM 标识和密码进行登录。
+  1. 单击“头像”图标 ![“头像”图标](../icons/i-avatar-icon.svg)，然后选择**计费**。
+  1. 单击**管理付款方式**。
+  1. 输入您的信用卡信息，然后单击**注册**。
+
+这些信息经过验证后，会添加到您的 {{site.data.keyword.Bluemix_notm}} 帐户，以作为您支付任何费用的付款方式。

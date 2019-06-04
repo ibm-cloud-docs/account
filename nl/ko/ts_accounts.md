@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-13"
+lastupdated: "2019-05-29"
 
 keywords: troubleshoot account, account problem, account support, account help, org error, resource error, error message
 
@@ -36,10 +36,10 @@ subcollection: account
 새 {{site.data.keyword.Bluemix_notm}} 위치를 작성하려고 시도하면 오류 메시지를 수신합니다.
 {: tsSymptoms}
 
-이는 하나의 공용 위치에서만 개발을 지원하는 Lite 계정을 사용 중이기 때문일 수 있습니다.
+이는 하나의 공용 위치에서만 개발을 지원하는 Lite 계정을 사용 중이기 때문일 수 있습니다. Lite 계정 기능에 대한 자세한 정보는 [Lite 계정](/docs/account?topic=account-accounts#liteaccount)을 참조하십시오.
 {: tsCauses}
 
-더 많은 위치에 액세스하려면 청구 가능 계정으로 업그레이드하십시오. **관리 > 청구 및 사용량**으로 이동하여 **지불**을 선택하십시오.
+더 많은 위치에 액세스하려면 청구 가능 계정으로 업그레이드하십시오. **관리 > 계정**으로 이동하여 **계정 설정**을 선택하십시오. 계정 업그레이드 섹션에서 업그레이드 옵션을 선택하십시오.
 {: tsResolve}
 
 
@@ -52,10 +52,10 @@ subcollection: account
 새 조직을 작성하려고 시도하면 오류 메시지를 수신합니다.
 {: tsSymptoms}
 
-이는 하나의 조직에서만 개발을 지원하는 Lite 계정을 사용 중이기 때문일 수 있습니다.
+이 오류는 하나의 조직에서만 개발을 지원하는 Lite 계정을 사용 중이기 때문일 수 있습니다. Lite 계정 기능에 대한 자세한 정보는 [Lite 계정](/docs/account?topic=account-accounts#liteaccount)을 참조하십시오.
 {: tsCauses}
 
-새 조직을 작성하려면 청구 가능 계정으로 업그레이드하십시오. **관리 > 청구 및 사용량**으로 이동하여 **업그레이드**를 선택하십시오.
+새 조직을 작성하려면 청구 가능 계정으로 업그레이드하십시오. **관리 > 청구 및 사용량**으로 이동하여 **지불**을 선택하십시오.
 {: tsResolve}
 
 
@@ -70,10 +70,10 @@ subcollection: account
 
 `Unable to provision new Lite instance`
 
- 해당 플랜이 무료 상태를 유지할 수 있도록 Lite 플랜 인스턴스당 1개 인스턴스의 한계가 있습니다.
+ 해당 플랜이 무료 상태를 유지할 수 있도록 Lite 플랜 인스턴스당 1개 인스턴스의 한계가 있습니다. Lite 계정 기능에 대한 자세한 정보는 [Lite 계정](/docs/account?topic=account-accounts#liteaccount)을 참조하십시오.
 {: tsCauses}
 
-청구 가능 계정에서 사용 가능한 청구 가능 서비스 플랜 중 하나를 선택하여 서비스의 추가 인스턴스를 작성할 수 있습니다. 콘솔에서 청구 가능 계정으로 업그레이드하려면 **관리 > 청구 및 사용량**으로 이동하여 **업그레이드**를 선택하십시오.
+청구 가능 계정에서 사용 가능한 청구 가능 서비스 플랜 중 하나를 선택하여 서비스의 추가 인스턴스를 작성할 수 있습니다. 콘솔에서 청구 가능 계정으로 업그레이드하려면 **관리 > 계정**으로 이동하여 **계정 설정**을 선택하십시오.
 {: tsResolve}
 
 Lite 계정에서의 업그레이드를 원하지 않으며 기존 Lite 서비스 인스턴스를 더 이상 사용하지 않는 경우에는 대시보드에서 기존 Lite 플랜 인스턴스를 삭제한 후에 새 인스턴스를 작성할 수 있습니다.
@@ -91,7 +91,7 @@ Lite 계정에서의 업그레이드를 원하지 않으며 기존 Lite 서비�
 Lite 계정에서 Cloud Foundry 앱은 최대 256MB의 바로 사용 가능한 런타임 메모리를 사용할 수 있습니다. 청구 가능 계정의 메모리 한계는 2GB입니다.
 {: tsCauses}
 
-Lite 계정을 사용 중인 경우에는 청구 가능 계정으로 업그레이드하여 추가 메모리를 확보할 수 있습니다. **관리 > 청구 및 사용량**으로 이동하여 **업그레이드**를 선택하십시오.
+Lite 계정을 사용 중인 경우에는 청구 가능 계정으로 업그레이드하여 추가 메모리를 확보할 수 있습니다. **관리 > 계정**으로 이동하여 **계정 설정**을 선택하십시오. Lite 계정 기능에 대한 자세한 정보는 [Lite 계정](/docs/account?topic=account-accounts#liteaccount)을 참조하십시오.
 {: tsResolve}
 
 Lite 계정에서의 업그레이드를 원하지 않지만 일부 유휴 상태의 앱이 있는 경우에는 이를 삭제하여 일부 런타임 메모리를 확보할 수 있습니다.
@@ -175,8 +175,9 @@ Lite 계정에서의 업그레이드를 원하지 않지만 일부 유휴 상태
 영역을 작성하려면 다음 방법 중 하나를 사용하십시오.
 {: tsResolve}
 
-  * 콘솔 메뉴 표시줄에서 **관리 > 계정**을 클릭하고 **조직**을 선택하십시오. 그런 다음, 영역을 작성하려는 조직을 선택하고 **영역 작성**을 클릭하십시오.
-  * {{site.data.keyword.Bluemix_notm}} 명령행 인터페이스에서 다음 명령을 입력하십시오. `ibmcloud account space-create <space_name> -o <organization_name>`.
+  * 콘솔 메뉴 표시줄에서 **관리 > 계정**을 클릭하십시오. **계정 리소스**를 펼치고 **Cloud Foundry 조직**을 클릭하십시오.
+  그런 다음, 영역을 작성하려는 조직을 선택하고 **영역 추가**를 클릭하십시오.
+  * {{site.data.keyword.Bluemix_notm}} 명령행 인터페이스에서 `ibmcloud account space-create <space_name> -o <organization_name>`를 입력하십시오.
 
 
 ## 왜 일부 앱이 도메인 이름을 공유합니까?
@@ -190,7 +191,7 @@ Lite 계정에서의 업그레이드를 원하지 않지만 일부 유휴 상태
 
 예를 들면, 사용자가 myApp1 앱을 {{site.data.keyword.Bluemix_notm}}로 푸시하고 도메인을 `mynewapp.us-east.cf.appdomain.cloud`로 설정합니다. 그 후 다른 myApp2 앱을 동일한 영역으로 푸시하고 해당 URL 라우트 중 하나를 `mynewapp.us-east.cf.appdomain.cloud`로 설정합니다. 이제 라우트가 두 앱 모두에 맵핑됩니다.
 
-이는 지원되는 동작이며 이 사례를 사용하여 앱 업그레이드를 위한 작동 중지 시간을 없앨 수 있습니다. 자세한 정보는 [작동 중지 시간을 없애는 방법](/docs/overview?topic=overview-zero-downtime)을 참조하십시오.
+이 동작이 지원되며 이 사례를 사용하여 앱 업그레이드를 위한 작동 중지 시간을 없앨 수 있습니다. 자세한 정보는 [작동 중지 시간을 없애는 방법](/docs/overview?topic=overview-zero-downtime)을 참조하십시오.
 {: tsResolve}
 
 
@@ -203,14 +204,14 @@ Lite 계정에서의 업그레이드를 원하지 않지만 일부 유휴 상태
 관리자로서 콘솔에서 모든 조직을 볼 수 없습니다.
 {: tsSymptoms}
 
-이는 콘솔의 제한사항입니다.
+이 동작은 콘솔의 제한사항입니다.
 {: tsCauses}
 
 {{site.data.keyword.Bluemix_notm}} 명령행 인터페이스에서 `ibmcloud account orgs` 및 `ibmcloud account org-create`와 같은 명령을 사용하여 모든 조직을 관리할 수 있습니다. 명령의 전체 목록을 보려면 `ibmcloud account help`를 입력하십시오.
 {: tsResolve}
 
 
-## 왜 내 신용카드 정보를 추가할 수 없습니까?
+## 내 신용카드 정보를 추가하기 위해 양식을 제출할 수 없는 이유가 무엇입니까?
 {: #ts_addcc}
 {: troubleshoot}
 
@@ -227,3 +228,29 @@ Lite 계정을 청구 가능 계정으로 업그레이드하기 위해 신용카
 
   1. 신용카드 추가 페이지에서 모든 필수 필드를 채우십시오.
   2. **IBM 이용 약관을 읽고 동의함**을 선택한 다음 **제출**을 클릭하십시오.
+
+## 콘솔에 신용카드 추가 옵션이 없는 경우에는 어떻게 이를 수행합니까?
+{: #ts_ccibm}
+{: troubleshoot}
+
+{{site.data.keyword.Bluemix_notm}} 서비스의 비용을 지불하기 위해 신용카드를 입력하려 하지만 해당 옵션이 표시되지 않습니다. 
+
+신용카드 정보를 입력하려고 할 때 다음과 같은 메시지가 표시됩니다.
+{: tsSymptoms}
+
+`Your payments are managed through IBM.com. To view your payments and maintain your billing, you can visit the IBM.com portal which contains everything for your IBMid account.`
+
+ibm.com 웹 사이트에 액세스하기 위해 **탐색**을 클릭했으나 신용카드 정보를 입력하는 위치가 표시되지 않습니다. 
+
+IBM에서는 {{site.data.keyword.Bluemix_notm}} 콘솔을 통해 안전하게 신용카드 거래를 처리합니다. 그러나 일부 국가에서는 신용카드 데이터의 무결성을 보장하기 위해 추가 단계가 필요합니다. 이러한 신용카드 요청은 ibm.com 웹 사이트를 통해 완료됩니다. 두 방법은 모두 신용카드 정보가 안전하게 처리될 수 있도록 합니다.    
+{: tsCauses}
+
+지불을 위해 신용카드 정보를 제공하려면 다음 단계를 완료하십시오.
+{: tsResolve}
+
+  1. [ibm.com ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.ibm.com){: new_window}으로 이동하여 {{site.data.keyword.Bluemix_notm}}에 로그인할 때 사용하는 것과 동일한 IBM ID 및 비밀번호로 로그인하십시오. 
+  1. 아바타 아이콘 ![아바타 아이콘](../icons/i-avatar-icon.svg)을 클릭하고 **비용 청구**를 선택하십시오.
+  1. **결제 방법 관리**를 클릭하십시오.
+  1. 신용카드 정보를 입력하고 **등록**을 클릭하십시오.
+
+해당 정보가 확인되며 모든 비용에 대한 지불 방법으로서 {{site.data.keyword.Bluemix_notm}} 계정에 추가됩니다. 

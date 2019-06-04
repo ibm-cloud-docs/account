@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-13"
+lastupdated: "2019-05-29"
 
 keywords: troubleshoot account, account problem, account support, account help, org error, resource error, error message
 
@@ -38,10 +38,10 @@ No puede crear una nueva ubicación porque el tipo de cuenta que tiene no lo per
 Puede recibir un mensaje de error al intentar crear una nueva ubicación de {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
 
-Es probable que esto ocurra por estar utilizando una cuenta Lite, que únicamente soporta el desarrollo en una ubicación pública.
+Es probable que esto ocurra por estar utilizando una cuenta Lite, que únicamente soporta el desarrollo en una ubicación pública. Para obtener más información sobre las características de la cuenta Lite, consulte [Cuenta Lite](/docs/account?topic=account-accounts#liteaccount).
 {: tsCauses}
 
-Para acceder a más ubicaciones, actualice a una cuenta facturable. Vaya a **Gestionar > Facturación y uso** y seleccione **Pagos**.
+Para acceder a más ubicaciones, actualice a una cuenta facturable. Vaya a **Gestionar > Cuenta** y seleccione **Configuración de la cuenta**. En la sección de actualización de cuenta, seleccione su opción de actualización.
 {: tsResolve}
 
 
@@ -54,10 +54,10 @@ Está intentando crear más de una organización y tiene una cuenta Lite.
 Puede recibir un mensaje de error al intentar crear una nueva organización.
 {: tsSymptoms}
 
-Es probable que esto ocurra por estar utilizando una cuenta Lite, que únicamente soporta el desarrollo en una organización.
+Es probable que vea este error porque utiliza una cuenta Lite, que únicamente da soporte al desarrollo en una organización. Para obtener más información sobre las características de la cuenta Lite, consulte [Cuenta Lite](/docs/account?topic=account-accounts#liteaccount).
 {: tsCauses}
 
-Para crear una nueva organización, actualice a una cuenta facturable. Vaya a **Gestionar > Facturación y uso** y seleccione **Actualizaciones**.
+Para crear una nueva organización, actualice a una cuenta facturable. Vaya a **Gestionar > Facturación y uso** y seleccione **Pagos**.
 {: tsResolve}
 
 
@@ -72,10 +72,10 @@ Puede recibir el siguiente mensaje de error al intentar crear una nueva instanci
 
 `No es posible suministrar una nueva instancia de Lite`
 
-Hay un límite de una instancia por instancia del plan lite para garantizar que estos planes continúan siendo gratuitos.
+Hay un límite de una instancia por instancia del plan lite para garantizar que estos planes continúan siendo gratuitos. Para obtener más información sobre las características de la cuenta Lite, consulte [Cuenta Lite](/docs/account?topic=account-accounts#liteaccount).
 {: tsCauses}
 
-Se pueden crear más instancias del servicio seleccionando uno de los planes de servicios facturables, que también están disponibles en las cuentas facturables. Para actualizar a una cuenta facturable desde la consola, vaya a **Gestionar > Facturación y uso** y seleccione **Actualizaciones**.
+Se pueden crear más instancias del servicio seleccionando uno de los planes de servicios facturables, que también están disponibles en las cuentas facturables. Para actualizar a una cuenta de pago desde la consola, vaya a **Gestionar > Cuenta** y seleccione **Valores de cuenta**.
 {: tsResolve}
 
 Si no desea actualizar la cuenta Lite y ya no está utilizando la instancia de servicio Lite existente, puede suprimir dicha instancia de plan Lite desde el panel de control y, a continuación, crear una nueva instancia.
@@ -93,7 +93,7 @@ No puede desplegar apps y aparece un error que indica que ha superado el límite
 En una cuenta Lite, sus apps de Cloud Foundry pueden utilizar hasta 256 MB de memoria de tiempo de ejecución instantánea. En las cuentas facturables, hay un límite de 2 GB de memoria.
 {: tsCauses}
 
-Si está utilizando una cuenta Lite, puede obtener más memoria actualizando a una cuenta facturable. Vaya a **Gestionar > Facturación y uso** y seleccione **Actualizaciones**.
+Si está utilizando una cuenta Lite, puede obtener más memoria actualizando a una cuenta facturable. Vaya a **Gestionar > Cuenta** y seleccione **Configuración de la cuenta**. Para obtener más información sobre las características de la cuenta Lite, consulte [Cuenta Lite](/docs/account?topic=account-accounts#liteaccount).
 {: tsResolve}
 
 Si no desea actualizar la cuenta Lite y tiene apps desocupadas, puede suprimirlas para liberar memoria de tiempo de ejecución.
@@ -178,7 +178,8 @@ Las apps se deben crear en un espacio de la organización.
 Para crear un espacio, utilice uno de estos métodos:
 {: tsResolve}
 
-  * En la barra de menús, pulse **Gestionar > Cuenta** y pulse **Organizaciones**. A continuación, seleccione la organización en la que desea crear el espacio y pulse **Crear un espacio**.
+  * Desde la barra de menús, pulse **Gestionar > Cuenta**. Amplíe los **Recursos de cuenta** y pulse **Organizaciones de Cloud Foundry**.
+  A continuación, seleccione la organización en la que desea crear el espacio y pulse **Añadir un espacio**.
   * En la interfaz de línea de mandatos {{site.data.keyword.Bluemix_notm}}, escriba `ibmcloud account space-create <space_name> -o <organization_name>`.
 
 
@@ -193,7 +194,7 @@ Este problema puede producirse cuando se asigna la misma ruta de URL a distintas
 
 Por ejemplo, supongamos que envía la app myApp1 a {{site.data.keyword.Bluemix_notm}} y establece el dominio en `mynewapp.us-east.cf.appdomain.cloud`. Luego envía otra app myApp2 al mismo espacio y establece una de sus rutas de URL en `mynewapp.us-east.cf.appdomain.cloud`. Ahora la ruta está correlacionada a ambas apps.
 
-Este es el comportamiento soportado y puede utilizar este procedimiento para conseguir un tiempo de inactividad cero para la actualización de la app. Para obtener más información, consulte [Cómo garantizar un tiempo de inactividad zero](/docs/overview?topic=overview-zero-downtime).
+Este comportamiento recibe soporte y puede utilizar este procedimiento para conseguir un tiempo de inactividad cero para la actualización de la app. Para obtener más información, consulte [Cómo garantizar un tiempo de inactividad zero](/docs/overview?topic=overview-zero-downtime).
 {: tsResolve}
 
 
@@ -206,14 +207,14 @@ Como administrador, no puede visualizar todas las organizaciones para administra
 Como administrador, no puede ver todas las organizaciones desde la consola.
 {: tsSymptoms}
 
-Se trata de una limitación de la consola.
+Este comportamiento es una limitación de la consola.
 {: tsCauses}
 
 Puede utilizar mandatos como `ibmcloud account orgs` e `ibmcloud account org-create` desde la interfaz de línea de mandatos de {{site.data.keyword.Bluemix_notm}} para gestionar todas las organizaciones. Para ver una lista completa de mandatos, especifique `ibmcloud account help`.
 {: tsResolve}
 
 
-## ¿Por qué no puedo añadir la información de mi tarjeta de crédito?
+## ¿Por qué no puedo enviar el formulario para añadir la información de mi tarjeta de crédito?
 {: #ts_addcc}
 {: troubleshoot}
 
@@ -230,3 +231,29 @@ Siga estos pasos:
 
   1. En la página Añadir tarjeta de crédito, complete todos los campos necesarios.
   2. Seleccione **He leído y acepto los términos y condiciones de IBM**, luego pulse **Enviar**.
+
+## ¿Cómo puedo añadir una tarjeta de crédito cuando la opción no está disponible en la consola?
+{: #ts_ccibm}
+{: troubleshoot}
+
+Desea proporcionar una tarjeta de crédito para abonar los servicios de {{site.data.keyword.Bluemix_notm}}, pero la opción no aparece.
+
+Cuando intenta proporcionar la información de su tarjeta de crédito, recibe el siguiente mensaje:
+{: tsSymptoms}
+
+`Los pagos se gestionan a través de IBM.com. Para ver sus pagos y mantener su facturación, puede visitar el portal IBM.com, que contiene toda la información correspondiente a su cuenta de IBMid.`
+
+Pulsa **Explorar** para acceder al sitio web ibm.com, pero no ve dónde se especifica la información sobre su tarjeta de crédito.
+
+Procesamos de forma segura las transacciones con tarjeta de crédito a través de la consola de {{site.data.keyword.Bluemix_notm}}. Sin embargo, en algunos países debemos seguir pasos adicionales para garantizar la integridad de los datos de las tarjetas de crédito. Estas solicitudes de tarjeta de crédito se realizan a través del sitio web ibm.com. Ambos métodos garantizan que la información de su tarjeta de crédito se procesa de forma segura.   
+{: tsCauses}
+
+Para proporcionar la información de su tarjeta de crédito para realizar pagos, siga estos pasos:
+{: tsResolve}
+
+  1. Vaya a [ibm.com ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](http://www.ibm.com){: new_window} e inicie una sesión con el mismo IBMid y la misma contraseña que utiliza para iniciar sesión en {{site.data.keyword.Bluemix_notm}}.
+  1. Pulse el icono de avatar ![Icono de avatar](../icons/i-avatar-icon.svg) y seleccione **Facturación**.
+  1. Pulse **Gestionar método de pago**.
+  1. Especifique la información de su tarjeta de crédito y pulse **Registrar**.
+
+La información se verificará y se añadirá a su cuenta de {{site.data.keyword.Bluemix_notm}} como método de pago de cualquier cargo.

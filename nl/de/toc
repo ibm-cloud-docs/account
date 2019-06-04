@@ -15,7 +15,7 @@ Eigenes Konto verwalten
     index.md
 
     {: .topicgroup}
-    Kontoeinrichtung
+    Konto einrichten
         adminpublic.md
         profile.md
         login_settings.md
@@ -30,7 +30,6 @@ Eigenes Konto verwalten
         contact_info.md
         email.md
 
-    change-plan.md
     softlayerlink.md
 
     {: .topicgroup}

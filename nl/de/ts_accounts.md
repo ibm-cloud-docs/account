@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-13"
+lastupdated: "2019-05-29"
 
 keywords: troubleshoot account, account problem, account support, account help, org error, resource error, error message
 
@@ -36,10 +36,10 @@ Sie können keinen neuen Standort erstellen, da Ihr Kontotyp dies nicht zulässt
 Sie erhalten eine Fehlernachricht, wenn Sie versuchen, einen neuen {{site.data.keyword.Bluemix_notm}}-Standort zu erstellen.
 {: tsSymptoms}
 
-Dies liegt wahrscheinlich daran, dass Sie ein Lite-Konto verwenden, das die Entwicklung an nur einem öffentlichen Standort unterstützt.
+Dies liegt wahrscheinlich daran, dass Sie ein Lite-Konto verwenden, das die Entwicklung an nur einem öffentlichen Standort unterstützt. Weitere Informationen zu den Features von Lite-Konten finden Sie in [Lite-Konto](/docs/account?topic=account-accounts#liteaccount).
 {: tsCauses}
 
-Wenn Sie auf weitere Standorte zugreifen möchten, müssen Sie ein Upgrade auf ein kostenpflichtiges Konto durchführen. Rufen Sie **Verwalten > Abrechnung und Nutzung** auf und wählen Sie **Zahlungen** aus.
+Wenn Sie auf weitere Standorte zugreifen möchten, müssen Sie ein Upgrade auf ein kostenpflichtiges Konto durchführen. Rufen Sie **Verwalten > Konto** auf und wählen Sie **Kontoeinstellungen** aus. Wählen Sie im Abschnitt für Kontoupgrades Ihre Upgradeoption aus.
 {: tsResolve}
 
 
@@ -52,10 +52,10 @@ Sie versuchen, mehr als eine Organisation zu erstellen, verfügen aber über ein
 Sie erhalten eine Fehlernachricht, wenn Sie versuchen, eine neue Organisation zu erstellen.
 {: tsSymptoms}
 
-Dies liegt wahrscheinlich daran, dass Sie ein Lite-Konto verwenden, das die Entwicklung in nur einer Organisation unterstützt.
+Dieser Fehler wird vermutlich angezeigt, weil Sie ein Lite-Konto verwenden, das die Entwicklung in nur einer Organisation unterstützt. Weitere Informationen zu den Features von Lite-Konten finden Sie in [Lite-Konto](/docs/account?topic=account-accounts#liteaccount).
 {: tsCauses}
 
-Wenn Sie eine neue Organisation erstellen möchten, müssen Sie ein Upgrade auf ein kostenpflichtiges Konto durchführen. Rufen Sie **Verwalten > Abrechnung und Nutzung** auf und wählen Sie **Upgrades** aus.
+Wenn Sie eine neue Organisation erstellen möchten, müssen Sie ein Upgrade auf ein kostenpflichtiges Konto durchführen. Rufen Sie **Verwalten > Abrechnung und Nutzung** auf und wählen Sie **Zahlungen** aus.
 {: tsResolve}
 
 
@@ -70,10 +70,10 @@ Sie erhalten die folgende Fehlernachricht, wenn Sie versuchen, eine neue Instanz
 
 `Fehler beim Erstellen einer neuen Lite-Instanz`
 
-Es gilt eine Begrenzung von einer Instanz pro Lite-Plan, damit diese Pläne weiterhin kostenfrei angeboten werden können.
+Es gilt eine Begrenzung von einer Instanz pro Lite-Plan, damit diese Pläne weiterhin kostenfrei angeboten werden können. Weitere Informationen zu den Features von Lite-Konten finden Sie in [Lite-Konto](/docs/account?topic=account-accounts#liteaccount).
 {: tsCauses}
 
-Sie können weitere Instanzen des Service erstellen, indem Sie einen der abrechenbaren Servicepläne auswählen, die unter den gebührenpflichtigen Konten verfügbar sind. Wenn Sie ein Upgrade auf ein kostenpflichtiges Konto über die Konsole durchführen möchten, rufen Sie **Verwalten > Abrechnung und Nutzung** auf und wählen Sie **Upgrades** aus.
+Sie können weitere Instanzen des Service erstellen, indem Sie einen der abrechenbaren Servicepläne auswählen, die unter den gebührenpflichtigen Konten verfügbar sind. Wenn Sie ein Upgrade auf ein kostenpflichtiges Konto über die Konsole durchführen möchten, rufen Sie **Verwalten > Konto** auf und wählen Sie **Kontoeinstellungen** aus.
 {: tsResolve}
 
 Wenn Sie kein Upgrade für ein Lite-Konto durchführen möchten und Ihre vorhandene Lite-Serviceinstanz nicht mehr verwenden, können Sie die vorhandene Lite-Planinstanz über das Dashboard löschen und dann eine neue Instanz erstellen.
@@ -91,7 +91,7 @@ Sie können keine Apps bereitstellen und erhalten eine Fehlermeldung, dass Sie d
 Bei einem Lite-Konto können Ihre Cloud Foundry-Apps bis zu 256 MB des sofort verfügbaren Laufzeitspeichers verwenden. Für kostenpflichtige Konten gilt eine Speicherbegrenzung von 2 GB.
 {: tsCauses}
 
-Wenn Sie mit einem Lite-Konto arbeiten, können Sie weiteren Speicher durch ein Upgrade auf ein kostenpflichtiges Konto erhalten. Rufen Sie **Verwalten > Abrechnung und Nutzung** auf und wählen Sie **Upgrades** aus.
+Wenn Sie mit einem Lite-Konto arbeiten, können Sie weiteren Speicher durch ein Upgrade auf ein kostenpflichtiges Konto erhalten. Rufen Sie **Verwalten > Konto** auf und wählen Sie **Kontoeinstellungen** aus. Weitere Informationen zu den Features von Lite-Konten finden Sie in [Lite-Konto](/docs/account?topic=account-accounts#liteaccount).
 {: tsResolve}
 
 Wenn Sie kein Upgrade für ein Lite-Konto durchführen möchten, aber über inaktive Apps verfügen, können Sie diese löschen, um etwas Laufzeitspeicher freizugeben.
@@ -174,7 +174,8 @@ Apps müssen innerhalb eines Bereichs unter Ihrer Organisation erstellt werden.
 Verwenden Sie eine der folgenden Methoden, um einen Bereich zu erstellen:
 {: tsResolve}
 
-  * Klicken Sie in der Menüleiste der Konsole auf **Verwalten > Konto** und wählen Sie **Organisationen** aus. Wählen Sie anschließend die Organisation aus, in der Sie den Bereich erstellen möchten und klicken Sie auf **Bereich erstellen**.
+  * Klicken Sie in der Menüleiste der Konsole auf **Verwalten > Konto**. Erweitern Sie **Kontoressourcen** und klicken Sie auf **Cloud Foundry-Organisationen**.
+  Wählen Sie anschließend die Organisation aus, in der Sie den Bereich erstellen möchten, und klicken Sie auf **Bereich hinzufügen**.
   * Geben Sie in der {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle Folgendes ein: `ibmcloud account space-create <space_name> -o <organization_name>`.
 
 
@@ -189,7 +190,7 @@ Dieses Problem kann auftreten, wenn Sie unterschiedlichen Apps in einem Bereich 
 
 Beispiel: Sie übertragen die App 'myApp1' per Push-Operation an {{site.data.keyword.Bluemix_notm}} und legen als Domäne `mynewapp.us-east.cf.appdomain.cloud` fest. Anschließend übertragen Sie eine weitere App mit dem Namen 'myApp2' per Push-Operation in denselben Bereich und legen für eine der URL-Routen den Namen `mynewapp.us-east.cf.appdomain.cloud` fest. Die Route ist jetzt beiden Apps zugeordnet.
 
-Hierbei handelt es sich um ein unterstütztes Verhalten; Sie können dieses Verfahren verwenden, um beim Upgrade einer App Ausfallzeiten vollständig zu vermeiden. Weitere Informationen finden Sie in [Ausfallzeiten vermeiden](/docs/overview?topic=overview-zero-downtime).
+Hierbei handelt es sich um ein unterstütztes Verhalten; Sie können dieses Verfahren verwenden, um beim Upgrade einer App Ausfallzeiten vollständig zu vermeiden. Weitere Informationen finden Sie in [Sicherstellen, dass keine Ausfallzeiten auftreten](/docs/overview?topic=overview-zero-downtime).
 {: tsResolve}
 
 
@@ -202,14 +203,14 @@ Als Administrator können Sie nicht jede Organisation zur Verwaltung anzeigen, w
 Als Administrator können Sie nicht alle Organisationen über die Konsole anzeigen.
 {: tsSymptoms}
 
-Hierbei handelt es sich um eine Einschränkung der Konsole.
+Bei diesem Verhalten handelt es sich um eine Einschränkung der Konsole.
 {: tsCauses}
 
 Sie können Befehle wie z. B. `ibmcloud account orgs` und `ibmcloud account org-create` über die {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle verwenden, um alle Organisationen zu verwalten. Geben Sie `ibmcloud account help` ein, um eine vollständige Liste der Befehle zu erhalten.
 {: tsResolve}
 
 
-## Warum kann ich meine Kreditkarteninformationen nicht hinzufügen?
+## Warum kann ich das Formular zum Hinzufügen meiner Kreditkarteninformationen nicht senden?
 {: #ts_addcc}
 {: troubleshoot}
 
@@ -226,3 +227,29 @@ Führen Sie die folgenden Schritte aus:
 
   1. Füllen Sie auf der Seite 'Kreditkarte hinzufügen' alle erforderlichen Felder aus.
   2. Wählen Sie das Kontrollkästchen unter **Ich habe die allgemeinen Geschäftsbedingungen von IBM gelesen und stimme ihnen zu** aus und klicken Sie auf **Senden**.
+
+## Wie füge ich eine Kreditkarte hinzu, wenn die Option in der Konsole nicht verfügbar ist?
+{: #ts_ccibm}
+{: troubleshoot}
+
+Sie möchten eine Kreditkarte für die Bezahlung von {{site.data.keyword.Bluemix_notm}}-Services angeben, die Option wird jedoch nicht angezeigt. 
+
+Beim Versuch, Kreditkarteninformationen einzugeben, wird die folgende Nachricht angezeigt:
+{: tsSymptoms}
+
+`Ihre Zahlungen werden von IBM.com verwaltet. Zur Anzeige Ihrer Zahlungen und zur Verwaltung Ihrer Abrechnung können Sie das IBM.com-Portal aufrufen, das alle Informationen für Ihr IBMid-Konto enthält. `
+
+Sie klicken auf **Erkunden**, um die Website 'ibm.com' aufzurufen, es wird jedoch kein Feld zur Eingabe Ihrer Kreditkarteninformationen angezeigt. 
+
+Kreditkartentransaktion werden sicher über die {{site.data.keyword.Bluemix_notm}}-Konsole verarbeitet. In einigen Ländern sind jedoch zusätzliche Schritte erforderlich, um die Integrität der Kreditkartendaten zu gewährleisten. Die entsprechenden Kreditkartenanforderungen werden über die Website 'ibm.com' ausgeführt. Beide Methoden gewährleisten die sichere Verarbeitung Ihrer Kreditkarteninformationen.    
+{: tsCauses}
+
+Führen Sie die folgenden Schritte aus, um die Kreditkarteninformationen für die Zahlung anzugeben:
+{: tsResolve}
+
+  1. Rufen Sie [ibm.com ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://www.ibm.com){: new_window} auf und melden Sie sich mit derselben IBMid und demselben Kennwort an, die Sie auch für die Anmeldung bei {{site.data.keyword.Bluemix_notm}} verwenden. 
+  1. Klicken Sie auf das Avatarsymbol ![Avatarsymbol](../icons/i-avatar-icon.svg) und wählen Sie **Abrechnung** aus. 
+  1. Klicken Sie auf **Zahlungsmethode verwalten**. 
+  1. Geben Sie die Kreditkarteninformationen ein und klicken Sie auf **Registrieren**. 
+
+Die Informationen werden verifiziert und als Zahlungsmethode für alle anfallenden Gebühren zu Ihrem {{site.data.keyword.Bluemix_notm}}-Konto hinzugefügt. 

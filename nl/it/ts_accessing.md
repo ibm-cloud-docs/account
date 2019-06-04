@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2018
-lastupdated: "2018-11-28"
+  years: 2015, 2019
+lastupdated: "2019-05-23"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -125,19 +125,24 @@ Assicurati di poter accedere a [IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/a
 {: #ts_accntpding}
 {: troubleshoot}
 
-Se il tuo account è in sospeso, non puoi accedere a {{site.data.keyword.Bluemix_notm}}.
+Se il tuo account è ancora in sospeso, non potrai accedere a {{site.data.keyword.Bluemix_notm}}.
 
-Dopo aver eseguito la registrazione per un account Lite {{site.data.keyword.Bluemix_notm}}, potresti non riuscire ad accedere a {{site.data.keyword.Bluemix_notm}}. Viene visualizzato il seguente messaggio:
+Dopo aver eseguito la registrazione per un account {{site.data.keyword.Bluemix_notm}}, potresti non riuscire ad accedere a {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
 
-<code>Your account is pending. Please wait up to 24 hours for email confirmation and also check your
-spam folder. If you still have not received your e-mail confirmation, contact <a href="https://ibm.biz/ibmcloudsupport" target="_blank">{{site.data.keyword.Bluemix_notm}} Support</a>.</code>
-
-Quando esegui la registrazione per un account {{site.data.keyword.Bluemix_notm}} Lite, ricevi una email che include un link su cui devi fare clic per confermare la tua registrazione.  
+Quando ti registri per un account {{site.data.keyword.Bluemix_notm}}, ricevi un'email che include un link di conferma. Devi fare clic su questo link per confermare la tua registrazione. Se non confermi la tua registrazione, il tuo account rimane nello stato in sospeso.
 {: tsCauses}
 
-L'email di conferma viene inviata all'indirizzo email associato al tuo ID IBM. Controlla la cartella della posta in arrivo e quella dello spam. Se non hai ricevuto l'email di conferma, contatta il [Supporto {{site.data.keyword.Bluemix_notm}}](/docs/get-support?topic=get-support-getting-customer-support).  
+L'email di conferma viene inviata all'indirizzo email associato al tuo ID IBM. Controlla la cartella della posta in arrivo e quella dello spam. Se non hai ricevuto un'e-mail di conferma, vai alla [Pagina di accesso {{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com/){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno") e riprova ad accedere. Viene visualizzato il seguente messaggio:
 {: tsResolve}
+
+```
+Per completare la registrazione, controlla la tua e-mail.
+Non riesci a trovare l'email? Invia nuovamente
+```
+{:screen}
+
+Fai clic su **Invia nuovamente** per inviare un'altra email di conferma all'indirizzo email associato al tuo ID IBM. Se ancora non riesci a completare la tua registrazione, contatta il [Supporto {{site.data.keyword.Bluemix_notm}}](/docs/get-support?topic=get-support-getting-customer-support).  
 
 
 ## Perché mi imbatto in pagine della console che non si caricano?

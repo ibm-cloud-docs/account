@@ -15,7 +15,7 @@
     index.md
 
     {: .topicgroup}
-    帳戶設定
+    設定帳戶
         adminpublic.md
         profile.md
         login_settings.md
@@ -30,7 +30,6 @@
         contact_info.md
         email.md
 
-    change-plan.md
     softlayerlink.md
 
     {: .topicgroup}

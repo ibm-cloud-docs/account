@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-13"
+lastupdated: "2019-05-28"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -40,7 +40,7 @@ Si puede iniciar sesión en una cuenta de {{site.data.keyword.Bluemix_notm}}, va
 
    Después de abrir el caso, se le enviará una notificación por correo electrónico. Siga las instrucciones para una mayor comunicación.
 
-Si no puede iniciar sesión en una cuenta de {{site.data.keyword.Bluemix}}, [cree una solicitud de cuenta](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo").
+Si no puede iniciar sesión en una cuenta de {{site.data.keyword.Bluemix_notm}}, [cree una solicitud de cuenta](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo").
 
 ## ¿Qué es Cloud Foundry?
 {: #cloud-foundry}
@@ -81,7 +81,7 @@ Si se alcanza cualquier límite de cuota para instancias del plan Lite, se suspe
 Para ver su uso, vaya a **Gestionar > Facturación y uso** y seleccione **Uso**. Para obtener más información, consulte
 [Visualización del uso](/docs/billing-usage?topic=billing-usage-viewingusage).
 
-## ¿Cómo puedo suprimir un servicio de mi cuenta?
+## ¿Cómo suprimo un servicio de mi cuenta?
 {: #accounts-service-removal}
 {: faq}
 
@@ -97,26 +97,23 @@ Si tiene una cuenta facturable, no hay un límite en el número de grupos de rec
 {: #changeacct}
 {: faq}
 
-* Para actualizar de una cuenta Lite a una de pago según uso o a una de suscripción, vaya a [Valores de cuenta](https://{DomainName}/account/settings).
-  * Para actualizar a una cuenta de pago según uso, pulse **Añadir tarjeta de crédito**.
-  * Para actualizar a una cuenta de suscripción, pulse **Actualizar**.
-* Para convertir entre los tipos de una cuenta de Pago según uso y Suscripción, póngase en contacto con el [equipo de ventas de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
+Para actualizar su cuenta Lite, consulte [Configuración de la cuenta](https://{DomainName}/account/settings). En la sección Actualización de cuenta, pulse **Añadir tarjeta de crédito** para actualizar a una cuenta de pago según uso, o pulse **Actualizar** para una cuenta de suscripción. También puede aplicar un código de característica proporcional para convertir su cuenta Lite en una cuenta de prueba en la página de configuración de cuenta.
 
-Si no está seguro de su tipo de cuenta actual, puede consultarlo en la página Configuración de la cuenta.
+Para convertir entre los tipos de una cuenta de Pago según uso y Suscripción, póngase en contacto con el [equipo de ventas de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
-Encontrará más información en el apartado sobre [Actualización de la cuenta](/docs/account?topic=account-upgrading-account).
+Si no está seguro de su tipo de cuenta actual, puede consultarlo en la página Configuración de la cuenta. Encontrará más información en el apartado sobre [Actualización de la cuenta](/docs/account?topic=account-upgrading-account).
 
 ## Si actualizo mi cuenta Lite, ¿puedo seguir utilizando mis instancias existentes?
 {: #nochange}
 {: faq}
 
-Sí, puede actualizarla a una cuenta facturable y seguir utilizando las instancias que creó con su cuenta Lite.
+Sí, cuando actualiza a una cuenta facturable, puede seguir utilizando las instancias que creó con su cuenta Lite.
 
 ## ¿Cómo puedo actualizar mi tarjeta de crédito?
 {: #updatepayment}
 {: faq}
 
-Para actualizar el método de pago asociado a su cuenta, vaya a [Pagos](https://cloud.ibm.com/billing/payments) en la consola. Bajo Añadir método de pago, especifique la información de facturación correspondiente a la nueva tarjeta y pulse **Añadir tarjeta de crédito**.
+Actualizar su tarjeta de crédito es igual que añadir una nueva. Vaya a [Pagos](https://{DomainName}/billing/payments), y en la sección Añadir método de pago, especifique la información de facturación correspondiente a la nueva tarjeta y pulse **Añadir tarjeta de crédito**.
 
 Para cambiar a otro método de pago, seleccione **Pagar con otro método** y luego pulse **Enviar solicitud de cambio**. Se creará automáticamente un caso de soporte para cambiar su método de pago.
 
@@ -162,6 +159,12 @@ Si decide marcharse, la manera de cancelar su cuenta dependerá del tipo de cuen
 {: faq}
 
 Póngase en contacto con el [equipo de soporte de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} para abrir un caso de soporte y solicitar la supresión de su cuenta. Si tiene datos asociados con su antigua cuenta que desea moverlos a una nueva cuenta, incluya esta información en su correo electrónico.
+
+## ¿Cómo puedo eliminar mis datos personales de {{site.data.keyword.Bluemix_notm}}?
+{: #remove-pi}
+{: faq}
+
+Para entender la forma en que IBM gestiona su información personal, consulte la [Declaración de privacidad de IBM ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/privacy/){: new_window}. En la sección Sus derechos, revise la información sobre lo que puede solicitar que se elimine. Pulse el enlace de la sección para enviar una solicitud para eliminar su información personal.
 
 ## ¿Por qué está desactivada mi cuenta?
 {: #account-deactivated}
@@ -298,4 +301,4 @@ Antes de poder suprimir una etiqueta, debe eliminarla de todos los recursos. Si 
 {: #rename-tag}
 {: faq}
 
-No puede editar el nombre de una etiqueta. Para cambiar el nombre de la etiqueta, elimínela y vuelva a asignar una nueva etiqueta para el recurso.  
+No puede editar el nombre de una etiqueta. Para cambiar el nombre de la etiqueta, elimínela y vuelva a asignar una nueva etiqueta para el recurso.

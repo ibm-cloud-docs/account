@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2018
-lastupdated: "2018-11-28"
+  years: 2015, 2019
+lastupdated: "2019-05-23"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -125,18 +125,24 @@ Stellen Sie sicher, dass Sie sich bei [IBM](https://idaas.iam.ibm.com/idaas/mtfi
 {: #ts_accntpding}
 {: troubleshoot}
 
-Falls sich Ihr Konto im Wartestatus befindet, können Sie sich nicht bei {{site.data.keyword.Bluemix_notm}} anmelden.
+Falls sich Ihr Konto noch im Wartestatus befindet, können Sie sich nicht bei {{site.data.keyword.Bluemix_notm}} anmelden.
 
-Nach der Registrierung für ein {{site.data.keyword.Bluemix_notm}}-Lite-Konto können Sie sich möglicherweise nicht bei {{site.data.keyword.Bluemix_notm}} anmelden. Die folgende Nachricht wird angezeigt:
+Nach der Registrierung für ein {{site.data.keyword.Bluemix_notm}}-Konto können Sie sich möglicherweise nicht bei {{site.data.keyword.Bluemix_notm}} anmelden.
 {: tsSymptoms}
 
-<code>Ihr Konto befindet sich im Zustand 'Anstehend'. Es kann bis zu 24 Stunden dauern, bis Sie eine Bestätigungs-E-Mail für Ihr Konto erhalten. Überprüfen Sie außerdem Ihren Spamordner. Wenn Sie trotzdem keine E-Mail-Bestätigung erhalten haben, wenden Sie sich an den <a href="https://ibm.biz/ibmcloudsupport" target="_blank">{{site.data.keyword.Bluemix_notm}}-Support</a>.</code>
-
-Bei der Registrierung für ein Lite-Konto in {{site.data.keyword.Bluemix_notm}} erhalten Sie eine E-Mail mit einem Link, auf den Sie klicken müssen, um die Registrierung zu bestätigen.  
+Bei der Registrierung für ein {{site.data.keyword.Bluemix_notm}}-Konto erhalten Sie eine E-Mail mit einem Bestätigungs-Link. Sie müssen auf diesen Link klicken, um die Registrierung zu bestätigen. Wenn Sie die Registrierung nicht bestätigen, bleibt Ihr Konto im Wartestatus.
 {: tsCauses}
 
-Die Bestätigungs-E-Mail wird an die E-Mail-Adresse gesendet, die Ihrer IBMid zugeordnet ist. Überprüfen Sie Ihren Posteingang und Ihren Spamordner. Wenn Sie die Bestätigungs-E-Mail nicht erhalten haben, wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}} Support](/docs/get-support?topic=get-support-getting-customer-support).  
+Die Bestätigungs-E-Mail wird an die E-Mail-Adresse gesendet, die Ihrer IBMid zugeordnet ist. Überprüfen Sie Ihren Posteingang und Ihren Spamordner. Wenn Sie die Bestätigungs-E-Mail nicht erhalten haben, rufen Sie die [{{site.data.keyword.Bluemix_notm}} Anmeldeseite](https://cloud.ibm.com/){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link") auf und versuchen Sie, sich anzumelden. Die folgende Nachricht wird angezeigt:
 {: tsResolve}
+
+```
+Zum Abschluss Ihrer Registrierung müssen Sie Ihren E-Mail-Eingang überprüfen.
+Die E-Mail ist nicht vorhanden? Erneut senden.
+```
+{:screen}
+
+Klicken Sie auf **Erneut senden**, damit eine weitere Bestätigungs-E-Mail an die E-Mail-Adresse gesendet wird, die Ihrer IBMid zugeordnet ist. Falls es weiterhin nicht möglich ist, die Registrierung abzuschließen, wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}}-Support](/docs/get-support?topic=get-support-getting-customer-support).   
 
 
 ## Warum werden Konsolenseiten nicht geladen?

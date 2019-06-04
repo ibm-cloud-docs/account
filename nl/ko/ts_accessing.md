@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2018
-lastupdated: "2018-11-28"
+  years: 2015, 2019
+lastupdated: "2019-05-23"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -83,10 +83,10 @@ subcollection: account
 
 `You have reached this page because your authentication was successful, however, this IBMid is not associated with any {{site.data.keyword.Bluemix_notm}} accounts.`
 
-올바른 IBM ID로 [{{site.data.keyword.Bluemix_notm}} 콘솔](https://{DomainName}){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")에서 로그인했지만 작성된 {{site.data.keyword.Bluemix_notm}} 계정이 없습니다.
+올바른 IBM ID로 [{{site.data.keyword.Bluemix_notm}} 콘솔](https://{DomainName}){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")에서 로그인했지만 생성된 {{site.data.keyword.Bluemix_notm}} 계정이 없습니다.
 {: tsCauses}
 
-{{site.data.keyword.Bluemix_notm}} 계정을 작성하려면 등록 프로세스를 따르십시오.
+{{site.data.keyword.Bluemix_notm}} 계정을 생성하려면 등록 프로세스를 따르십시오.
 {: tsResolve}
 
 
@@ -125,18 +125,24 @@ IBM 인증 서비스에 문제점이 있을 수 있습니다.
 {: #ts_accntpding}
 {: troubleshoot}
 
-계정이 보류 중인 경우 {{site.data.keyword.Bluemix_notm}}에 로그인할 수 없습니다.
+계정이 아직 보류 중인 경우 {{site.data.keyword.Bluemix_notm}}에 로그인할 수 없습니다.
 
-{{site.data.keyword.Bluemix_notm}} Lite 계정에 등록한 후에는 {{site.data.keyword.Bluemix_notm}}에 로그인할 수 없습니다. 다음 메시지가 표시됩니다.
+{{site.data.keyword.Bluemix_notm}} 계정에 등록한 후에는 {{site.data.keyword.Bluemix_notm}}에 로그인할 수 없습니다.
 {: tsSymptoms}
 
-<code>Your account is pending. Please wait up to 24 hours for email confirmation and also check your spam folder. If you still have not received your email confirmation, contact <a href="https://ibm.biz/ibmcloudsupport" target="_blank">{{site.data.keyword.Bluemix_notm}} Support</a>.</code>
-
-{{site.data.keyword.Bluemix_notm}} Lite 계정에 등록하면 등록 확인을 위해 반드시 클릭해야 하는 링크가 포함된 이메일을 수신합니다.  
+{{site.data.keyword.Bluemix_notm}} 계정에 등록하면 확인 링크가 포함된 이메일을 수신합니다. 등록을 확인하려면 이 링크를 클릭해야 합니다. 등록을 확인하지 않으면 계정의 보류 상태가 계속 유지됩니다.
 {: tsCauses}
 
-확인 이메일은 IBM ID와 연관된 이메일 주소로 발송됩니다. 받은 편지함과 스팸 폴더를 확인하십시오. 확인 이메일을 받지 못한 경우, [{{site.data.keyword.Bluemix_notm}} Support](/docs/get-support?topic=get-support-getting-customer-support)에 문의하십시오.  
+확인 이메일은 IBM ID와 연관된 이메일 주소로 발송됩니다. 받은 편지함과 스팸 폴더를 확인하십시오. 확인 이메일을 받지 못한 경우, [{{site.data.keyword.Bluemix_notm}} 로그인 페이지](https://cloud.ibm.com/){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")로 이동하여 로그인하십시오. 다음 메시지가 표시됩니다.
 {: tsResolve}
+
+```
+To complete your registration, check your email.
+Can't find the email? Resend
+```
+{:screen}
+
+**재발송**을 클릭하여 다른 확인 이메일을 IBM ID와 연관된 이메일 주소로 발송하십시오. 여전히 등록을 완료할 수 없는 경우에는 [{{site.data.keyword.Bluemix_notm}} 지원](/docs/get-support?topic=get-support-getting-customer-support)에 문의하십시오.   
 
 
 ## 왜 로드되지 않는 콘솔 페이지가 나타납니까?
