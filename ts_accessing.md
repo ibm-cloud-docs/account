@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-23"
+lastupdated: "2019-06-03"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -144,7 +144,6 @@ Can't find the email? Resend
 
 Click **Resend** to send another confirmation email to the email address that is associated with your IBMid. If you still can't complete your registration, contact [{{site.data.keyword.Bluemix_notm}} support](/docs/get-support?topic=get-support-getting-customer-support).  
 
-
 ## Why do I encounter console pages that don't load?
 {: #ts_err}
 {: troubleshoot}
@@ -167,3 +166,22 @@ Complete one or more of the following actions, as necessary:
   * Clear the cookies and the cache of the browser.
   * Use a different browser. For information about the versions of the browsers that are supported by {{site.data.keyword.Bluemix_notm}}, see [{{site.data.keyword.Bluemix_notm}} prerequisites](/docs/overview?topic=overview-prereqs-platform).
   * If you installed the Cloud Foundry command line interface, enter the `ibmcloud cf apps` command to see whether your app is running.
+
+## How can I access infrastructure services in my account?
+{: #troubleshoot-infrastructure-access}
+{: troubleshoot}
+
+When you attempt to access infrastructure sections of the IBM Cloud console, you see a message that states:
+{: tsSymptoms}
+
+`This page can't be loaded because your infrastructure account is not fully configured as an IBM Cloud account.`
+
+There are multiple reasons why you might see this error message:
+{: tsCauses}
+
+* You have a [Lite account](/docs/account?topic=account-accounts#liteaccount), which does not allow access to infrastructure services.
+* Your account is not linked to an infrastructure account.
+
+
+To resolve this issue, you must upgrade to a Pay-As-You-Go or Subscription account. For information, see [Upgrading your account](/docs/account?topic=account-upgrading-account).
+{: tsResolve}
