@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-13"
+lastupdated: "2019-05-29"
 
 keywords: troubleshoot account, account problem, account support, account help, org error, resource error, error message
 
@@ -36,10 +36,10 @@ Vous ne pouvez pas créer de nouvel emplacement car votre type de compte ne perm
 Vous recevez un message d'erreur lorsque vous tentez de créer un emplacement {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
 
-Il est probable que vous utilisiez un compte Lite, lequel ne permet un développement que dans un seul emplacement public.
+Il est probable que vous utilisiez un compte Lite, lequel ne permet un développement que dans un seul emplacement public. Pour plus d'informations sur les fonctions de compte Lite, voir [Compte Lite](/docs/account?topic=account-accounts#liteaccount).
 {: tsCauses}
 
-Pour pouvoir accéder à des emplacements supplémentaires, vous devez utiliser un compte facturable. Accédez à **Gérer > Facturation et utilisation** et sélectionnez **Paiements**.
+Pour pouvoir accéder à des emplacements supplémentaires, vous devez utiliser un compte facturable. Accédez à **Gérer > Compte** puis sélectionnez **Paramètres de compte**. Dans la section Mise à niveau du compte, sélectionnez votre option de mise à niveau.
 {: tsResolve}
 
 
@@ -52,10 +52,10 @@ Vous tentez de créer plusieurs organisations et vous avez un compte Lite.
 Vous recevez un message d'erreur lorsque vous tentez de créer une organisation.
 {: tsSymptoms}
 
-Il est probable que vous utilisiez un compte Lite, lequel ne permet un développement que dans une seule organisation.
+Vous recevez ce message d'erreur probablement parce que vous utilisez un compte Lite, lequel ne permet un développement que dans une seule organisation. Pour plus d'informations sur les fonctions de compte Lite, voir [Compte Lite](/docs/account?topic=account-accounts#liteaccount).
 {: tsCauses}
 
-Pour créer une organisation, une mise à niveau vers un compte facturable est requise. Accédez à **Gérer > Facturation et utilisation** et sélectionnez **Mises à niveau**.
+Pour créer une organisation, une mise à niveau vers un compte facturable est requise. Accédez à **Gérer > Facturation et utilisation** et sélectionnez **Paiements**.
 {: tsResolve}
 
 
@@ -70,10 +70,10 @@ Vous recevez le message d'erreur suivant lorsque vous tentez de créer une nouve
 
 `Impossible de mettre à disposition une nouvelle instance Lite`
 
-Pour pouvoir maintenir la gratuité de ces plans, une seule instance est permise par plan Lite.
+Pour pouvoir maintenir la gratuité de ces plans, une seule instance est permise par plan Lite. Pour plus d'informations sur les fonctions de compte Lite, voir [Compte Lite](/docs/account?topic=account-accounts#liteaccount).
 {: tsCauses}
 
-Vous pouvez créer d'autres instances du service en sélectionnant l'un des plans de service facturables, disponibles dans les comptes facturables. Pour effectuer une mise à niveau vers un compte facturable depuis la console, accédez à **Gérer > Facturation et utilisation** et sélectionnez **Mises à niveau**.
+Vous pouvez créer d'autres instances du service en sélectionnant l'un des plans de service facturables, disponibles dans les comptes facturables. Pour effectuer une mise à niveau vers un compte facturable à partir de la console, accédez à **Gérer > Compte** puis sélectionnez **Paramètres de compte**.
 {: tsResolve}
 
 Si vous ne souhaitez pas effectuer de mise à niveau depuis un compte Lite et que vous n'utilisez plus votre instance de service Lite existante, vous pouvez supprimer cette instance de plan de service à partir du tableau de bord Services, puis en créer une nouvelle.
@@ -85,13 +85,13 @@ Si vous ne souhaitez pas effectuer de mise à niveau depuis un compte Lite et qu
 
 Vous avez dépassé la mémoire autorisée pour votre compte.
 
-Vous ne parvenez pas à déployer des applications et un message s'affiche indiquant que vous avez dépassé la limite de mémoire allouée à votre organisation.
+Vous ne parvenez pas à déployer des applications, et un message d'erreur s'affiche indiquant que vous avez dépassé la limite de mémoire allouée à votre organisation.
 {: tsSymptoms}
 
 Dans un compte Lite, vos applications Cloud Foundry peuvent utiliser jusqu'à 256 Mo de mémoire d'exécution simultanée. Dans les comptes facturables, il existe une limite de mémoire de 2 Go.
 {: tsCauses}
 
-Si vous utilisez un compte Lite, vous pouvez obtenir plus de mémoire en effectuant une mise à niveau vers un compte facturable. Accédez à **Gérer > Facturation et utilisation** et sélectionnez **Mises à niveau**.
+Si vous utilisez un compte Lite, vous pouvez obtenir plus de mémoire en effectuant une mise à niveau vers un compte facturable. Accédez à **Gérer > Compte** puis sélectionnez **Paramètres de compte**. Pour plus d'informations sur les fonctions de compte Lite, voir [Compte Lite](/docs/account?topic=account-accounts#liteaccount).
 {: tsResolve}
 
 Si vous ne souhaitez pas effectuer de mise à niveau depuis un compte Lite, mais disposez de diverses applications inactives, vous pouvez les supprimer pour libérer de la mémoire d'exécution.
@@ -174,8 +174,8 @@ Les applications doivent être créées dans un espace sous votre organisation.
 Pour créer un espace, appliquez l'une des méthodes suivantes :
 {: tsResolve}
 
-  * Dans la barre de menus de la console, cliquez sur **Gérer > Compte** et sélectionnez **Organisations**. Ensuite, sélectionnez l'organisation dans laquelle vous voulez créer l'espace, puis cliquez sur **Créer un espace**.
-  * Dans l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}, entrez `ibmcloud account space-create <space_name> -o <organization_name>`.
+  * Dans la barre de menus de la console, cliquez sur **Gérer > Compte**. Développez **Ressources de compte** et sélectionnez **Organisations Cloud Foundry**. Ensuite, sélectionnez l'organisation dans laquelle vous voulez créer l'espace, puis cliquez sur **Ajouter un espace**.
+  * Dans l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}, tapez `ibmcloud account space-create <space_name> -o <organization_name>`.
 
 
 ## Pourquoi certaines applications partagent-elles un nom de domaine ?
@@ -189,7 +189,7 @@ Ce problème peut se produire lorsque vous affectez la même route d'adresse URL
 
 Par exemple, vous envoyez par commande push l'application myApp1 dans {{site.data.keyword.Bluemix_notm}} et définissez le nom de domaine `mynewapp.us-east.cf.appdomain.cloud`. Puis, vous envoyez par commande push une autre application myApp2 dans le même espace et affectez `mynewapp.us-east.cf.appdomain.cloud` à l'une de ses routes d'URL. La route est désormais mappée aux deux applications.
 
-Il s'agit du comportement pris en charge ; il permet d'obtenir un temps d'indisponibilité nul pour la mise à niveau de votre application. Pour plus d'informations, voir [Comment garantir un temps d'indisponibilité nul](/docs/overview?topic=overview-zero-downtime).
+Ce comportement est pris en charge ; il permet d'obtenir un temps d'indisponibilité nul pour la mise à niveau de votre application. Pour plus d'informations, voir [Comment garantir un temps d'indisponibilité nul](/docs/overview?topic=overview-zero-downtime).
 {: tsResolve}
 
 
@@ -202,14 +202,14 @@ En tant qu'administrateur, vous ne pouvez pas afficher chaque organisation pour 
 En tant qu'administrateur, vous ne pouvez pas afficher toutes les organisations à partir de la console.
 {: tsSymptoms}
 
-Il s'agit d'une limitation de la console.
+Ce comportement correspond à une limitation de la console.
 {: tsCauses}
 
 Vous pouvez utiliser des commandes, telles `ibmcloud account orgs` et `ibmcloud account org-create` à partir de l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}} pour gérer toutes les organisations. Pour obtenir la liste complète des commandes, entrez `ibmcloud account help`.
 {: tsResolve}
 
 
-## Pourquoi ne puis-je pas ajouter mes informations de carte de crédit ?
+## Pourquoi ne puis-je pas soumettre le formulaire pour ajouter mes informations de carte de crédit ?
 {: #ts_addcc}
 {: troubleshoot}
 
@@ -226,3 +226,29 @@ Procédez comme suit :
 
   1. Sur la page Ajouter une carte de crédit, renseignez toutes les zones requises.
   2. Sélectionnez l'option indiquant que vous avez lu et accepté les dispositions d'IBM****, puis cliquez sur **Soumettre**.
+
+## Comment puis-je ajouter une carte de crédit lorsque l'option n'est pas disponible via la console ?
+{: #ts_ccibm}
+{: troubleshoot}
+
+Vous voulez entrer vos informations de carte de crédit pour procéder au règlement des services {{site.data.keyword.Bluemix_notm}}, mais l'option vous permettant de le faire n'est pas affichée.
+
+Lorsque vous tentez d'entrer vos informations de carte de crédit, le message d'erreur suivant s'affiche :
+{: tsSymptoms}
+
+`Vos paiements sont gérés via IBM.com. Pour afficher vos paiements et gérer votre facturation, vous pouvez visiter le portail IBM.com qui contient toutes les informations relatives à votre compte IBMid.`
+
+Vous cliquez sur **Explorer** pour accéder au site Web ibm.com, mais vous ne voyez pas l'emplacement où saisir vos informations de carte de crédit. 
+
+Nous utilisons un système sécurisé pour le traitement des transactions par carte de crédit via la console {{site.data.keyword.Bluemix_notm}}. Toutefois, dans certains pays, nous devons prendre des mesures supplémentaires pour garantir l'intégrité des données de carte de crédit. Ces demandes de carte de crédit sont traitées via le site Web ibm.com. Ces deux méthodes garantissent le traitement sécurisé de vos informations de carte de crédit.    
+{: tsCauses}
+
+Pour fournir vos informations de carte de crédit afin de procéder au paiement, procédez comme suit :
+{: tsResolve}
+
+  1. Accédez à [ibm.com ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](http://www.ibm.com){: new_window} et connectez-vous avec le même IBMid et le même mot de passe que ceux que vous utilisez pour vous connecter à {{site.data.keyword.Bluemix_notm}}.
+  1. Cliquez sur l'icône Avatar ![icône Avatar](../icons/i-avatar-icon.svg) et sélectionnez **Billing**.
+  1. Cliquez sur **Manage payment method**.
+  1. Entrez vos informations de carte de crédit, puis cliquez sur **Register**.
+
+Les informations seront vérifiées et ajoutées à votre compte {{site.data.keyword.Bluemix_notm}} comme mode de règlement pour tous les frais. 

@@ -15,7 +15,7 @@ Gestion de votre compte
     index.md
 
     {: .topicgroup}
-    Configuration de compte
+    Configuration de votre compte
         adminpublic.md
         profile.md
         login_settings.md
@@ -30,7 +30,6 @@ Gestion de votre compte
         contact_info.md
         email.md
 
-    change-plan.md
     softlayerlink.md
 
     {: .topicgroup}

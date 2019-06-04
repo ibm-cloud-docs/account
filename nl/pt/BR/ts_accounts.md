@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-13"
+lastupdated: "2019-05-29"
 
 keywords: troubleshoot account, account problem, account support, account help, org error, resource error, error message
 
@@ -36,10 +36,10 @@ Não é possível criar um novo local porque seu tipo de conta não permite isso
 Você recebe uma mensagem de erro ao tentar criar um novo local do {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
 
-Isso é provavelmente porque você está usando uma conta Lite, que suporta o desenvolvimento em somente um local público.
+Isso é provavelmente porque você está usando uma conta Lite, que suporta o desenvolvimento em somente um local público. Para obter mais informações sobre os recursos da conta Lite, veja [Conta Lite](/docs/account?topic=account-accounts#liteaccount).
 {: tsCauses}
 
-Para acessar mais locais, faça upgrade para uma conta faturável. Acesse **Gerenciar > Faturamento e uso** e selecione **Pagamentos**.
+Para acessar mais locais, faça upgrade para uma conta faturável. Acesse **Gerenciar > Conta** e selecione **Configurações da conta**. Na seção Upgrade de conta, selecione a opção de upgrade.
 {: tsResolve}
 
 
@@ -52,10 +52,11 @@ Você tenta criar mais de uma organização e tem uma conta Lite.
 Você receberá uma mensagem de erro ao tentar criar uma nova organização.
 {: tsSymptoms}
 
-Isso é provavelmente porque você está usando uma conta Lite, que suporta o desenvolvimento em somente uma organização.
+É provável que você veja esse erro porque está usando uma conta Lite, que suporta o desenvolvimento
+somente em uma organização. Para obter mais informações sobre os recursos da conta Lite, veja [Conta Lite](/docs/account?topic=account-accounts#liteaccount).
 {: tsCauses}
 
-Para criar uma nova organização, faça upgrade para uma conta faturável. Acesse **Gerenciar > Faturamento e uso** e selecione **Upgrades**.
+Para criar uma nova organização, faça upgrade para uma conta faturável. Acesse **Gerenciar > Faturamento e uso** e selecione **Pagamentos**.
 {: tsResolve}
 
 
@@ -70,10 +71,10 @@ Você recebe a mensagem de erro a seguir quando tenta criar uma nova instância 
 
 `Não é possível provisionar uma nova instância Lite`
 
-Há um limite de uma instância por instância do plano Lite para assegurar que esses planos permaneçam grátis.
+Há um limite de uma instância por instância do plano Lite para assegurar que esses planos permaneçam grátis. Para obter mais informações sobre os recursos da conta Lite, veja [Conta Lite](/docs/account?topic=account-accounts#liteaccount).
 {: tsCauses}
 
-É possível criar mais instâncias do serviço selecionando um dos planos de serviços faturáveis que estão disponíveis nas contas faturáveis. Para fazer upgrade para uma conta faturável por meio do console, acesse **Gerenciar > Faturamento e uso** e selecione **Upgrades**.
+É possível criar mais instâncias do serviço selecionando um dos planos de serviços faturáveis que estão disponíveis nas contas faturáveis. Para fazer upgrade para uma conta faturável no console, acesse **Gerenciar > Conta** e selecione **Configurações da conta**.
 {: tsResolve}
 
 Se você não desejar fazer upgrade de uma conta Lite e não estiver mais usando a sua instância de serviço Lite existente, será possível excluir a instância do plano Lite existente do painel e, em seguida, criar uma nova instância.
@@ -85,13 +86,13 @@ Se você não desejar fazer upgrade de uma conta Lite e não estiver mais usando
 
 Você ultrapassou a memória permitida para sua conta.
 
-Não é possível implementar apps e um erro está informando que você excedeu o limite de memória de sua organização.
+Não é possível implementar apps e um erro declara que você excedeu o limite de memória de sua organização.
 {: tsSymptoms}
 
 Em uma conta Lite, os aplicativos do Cloud Foundry podem usar até 256 MB de memória de tempo de execução instantânea. Em contas faturáveis, há um limite de 2 GB de memória.
 {: tsCauses}
 
-Se você estiver usando uma conta Lite, será possível obter mais memória fazendo upgrade para uma conta faturável. Acesse **Gerenciar > Faturamento e uso** e selecione **Upgrades**.
+Se você estiver usando uma conta Lite, será possível obter mais memória fazendo upgrade para uma conta faturável. Acesse **Gerenciar > Conta** e selecione **Configurações da conta**. Para obter mais informações sobre os recursos da conta Lite, veja [Conta Lite](/docs/account?topic=account-accounts#liteaccount).
 {: tsResolve}
 
 Se você não desejar fazer upgrade de uma conta Lite, mas tiver alguns apps inativos, será possível excluí-los para liberar alguma memória de tempo de execução.
@@ -180,7 +181,8 @@ Os apps devem ser criados em um espaço em sua organização.
 Para criar um espaço, use um dos métodos a seguir:
 {: tsResolve}
 
-  * Na barra de menus do console, clique em **Gerenciar > Conta** e selecione **Organizações**. Em seguida, selecione a organização na qual você deseja criar o espaço e clique em **Criar um espaço**.
+  * Na barra de menus do console, clique em **Gerenciar > Conta**. Expanda**Recursos da conta** e clique em **organizações do Cloud Foundry**.
+  Em seguida, selecione a organização na qual você deseja criar o espaço e clique em **Incluir um espaço**.
   * Na interface da linha de comandos do {{site.data.keyword.Bluemix_notm}}, digite `ibmcloud account space-create <space_name> -o <organization_name>`.
 
 
@@ -195,7 +197,8 @@ Esse problema pode ocorrer quando você designa a mesma rota de URL a diferentes
 
 Por exemplo, você envia por push o app myApp1 para o {{site.data.keyword.Bluemix_notm}} e configura o domínio como `mynewapp.us-east.cf.appdomain.cloud`. Em seguida, você envia por push outro app myApp2 para o mesmo espaço e configura uma de suas rotas de URL como `mynewapp.us-east.cf.appdomain.cloud`. A rota agora é mapeada para ambos os apps.
 
-Esse é um comportamento suportado e é possível usar essa prática para atingir o tempo de inatividade zero para o upgrade do app. Para obter mais informações, veja [Como assegurar tempo de inatividade zero](/docs/overview?topic=overview-zero-downtime).
+Esse comportamento é suportado e é possível usar essa prática para atingir tempo de inatividade
+zero para upgrade do app. Para obter mais informações, veja [Como assegurar tempo de inatividade zero](/docs/overview?topic=overview-zero-downtime).
 {: tsResolve}
 
 
@@ -208,14 +211,14 @@ Como um administrador, não é possível exibir cada organização para administ
 Como um administrador, não é possível visualizar todas as organizações por meio do console.
 {: tsSymptoms}
 
-Essa é uma limitação do console.
+Esse comportamento é uma limitação do console.
 {: tsCauses}
 
 É possível usar comandos como `ibmcloud account orgs` e `ibmcloud account org-create` na interface da linha de comandos do {{site.data.keyword.Bluemix_notm}} para gerenciar todas as organizações. Para obter uma lista completa de comandos, insira `ibmcloud account help`.
 {: tsResolve}
 
 
-## Por que não posso incluir minhas informações de cartão de crédito?
+## Por que não posso enviar o formulário para incluir minhas informações de cartão de crédito?
 {: #ts_addcc}
 {: troubleshoot}
 
@@ -233,3 +236,32 @@ as etapas a seguir:
 
   1. Na página Incluir cartão de crédito, preencha todos os campos obrigatórios.
   2. Selecione **Eu li e concordo com os Termos e Condições da IBM**, em seguida, clique em **Enviar**.
+
+## Como incluo um cartão de crédito quando a opção está indisponível por meio do console?
+{: #ts_ccibm}
+{: troubleshoot}
+
+Você deseja inserir um cartão de crédito para pagar os serviços do {{site.data.keyword.Bluemix_notm}}, mas a opção não aparece.
+
+Quando você tenta inserir suas informações de cartão de crédito, vê a mensagem a seguir:
+{: tsSymptoms}
+
+`Seus pagamentos são gerenciados por meio do IBM.com. Para visualizar seus pagamentos e manter
+seu faturamento, é possível visitar o portal IBM.com que contém tudo para sua conta do IBMid.`
+
+Você clica em **Explorar** para acessar o website ibm.com, mas não vê um local para inserir suas informações de cartão de crédito.
+
+Processamos as transações de cartão de crédito de forma segura por meio do console do {{site.data.keyword.Bluemix_notm}}. No entanto, em alguns países, temos que tomar medidas adicionais para assegurar a integridade dos dados do cartão de crédito. Essas solicitações de cartão
+de crédito são concluídas por meio do website ibm.com. Os dois métodos garantem que suas informações
+de cartão de crédito são processadas com segurança.   
+{: tsCauses}
+
+Para fornecer as informações de seu cartão de crédito para pagamento, conclua as etapas a seguir:
+{: tsResolve}
+
+  1. Acesse [ibm.com ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://www.ibm.com){: new_window} e efetue login com o mesmo IBMid e senha usados para efetuar login no {{site.data.keyword.Bluemix_notm}}.
+  1. Clique no ícone Avatar ![ícone Avatar](../icons/i-avatar-icon.svg) e selecione **Faturamento**.
+  1. Clique em **Gerenciar método de pagamento**.
+  1. Insira as informações de seu cartão de crédito e clique em **Registrar**.
+
+As informações serão verificadas e incluídas em sua conta do {{site.data.keyword.Bluemix_notm}} como seu método de pagamento para quaisquer encargos.

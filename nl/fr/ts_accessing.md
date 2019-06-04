@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2018
-lastupdated: "2018-11-28"
+  years: 2015, 2019
+lastupdated: "2019-05-23"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -125,18 +125,23 @@ Vérifiez que vous pouvez vous connecter à [IBM](https://idaas.iam.ibm.com/idaa
 {: #ts_accntpding}
 {: troubleshoot}
 
-Si votre compte est en attente, vous ne pouvez pas vous connecter à {{site.data.keyword.Bluemix_notm}}.
+Si votre compte est toujours en attente, vous ne pouvez pas vous connecter à {{site.data.keyword.Bluemix_notm}}.
 
-Après avoir procédé à votre enregistrement pour un compte Lite {{site.data.keyword.Bluemix_notm}}, il est possible que vous ne puissiez pas vous connecter à {{site.data.keyword.Bluemix_notm}}. Le message suivant s'affiche :
+Après vous être inscrit pour obtenir un compte {{site.data.keyword.Bluemix_notm}}, il se peut que vous ne puissiez pas vous connecter à {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
 
-<code>Votre compte est en attente. La confirmation par courrier électronique peut prendre jusqu'à 24 heures ; vérifiez également votre dossier de courrier indésirable. Si vous ne recevez pas votre confirmation par courrier électronique, contactez le <a href="https://ibm.biz/ibmcloudsupport" target="_blank">support {{site.data.keyword.Bluemix_notm}}</a>.</code>
-
-Après avoir procédé à un enregistrement pour un compte Lite {{site.data.keyword.Bluemix_notm}}, vous recevez un message électronique incluant un lien sur lequel vous devez cliquer pour confirmer votre enregistrement.  
+Lorsque vous vous inscrivez pour obtenir un compte {{site.data.keyword.Bluemix_notm}}, vous recevez un message électronique incluant un lien de confirmation. Vous devez cliquer sur ce lien pour confirmer votre inscription. Si vous ne confirmez pas votre inscription, votre compte reste en attente.
 {: tsCauses}
 
-La confirmation par courrier électronique est envoyée à l'adresse électronique associée à votre IBMid. Vérifiez votre boîte de réception et votre dossier de courrier indésirable. Si vous n'avez pas reçu le message électronique de confirmation, contactez [l'équipe de support {{site.data.keyword.Bluemix_notm}}](/docs/get-support?topic=get-support-getting-customer-support).  
+La confirmation par courrier électronique est envoyée à l'adresse électronique associée à votre IBMid. Vérifiez votre boîte de réception et votre dossier de courrier indésirable. Si vous n'avez pas reçu le courrier électronique de confirmation, accédez à la [page de connexion {{site.data.keyword.Bluemix_notm}} ](https://cloud.ibm.com/){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe") et essayez de vous connecter. Le message suivant s'affiche :
 {: tsResolve}
+
+```
+Pour finaliser votre enregistrement, consultez votre messagerie. Vous ne trouvez pas le courrier électronique ? Renvoyer
+```
+{:screen}
+
+Cliquez sur **Renvoyer** pour envoyer un autre courrier électronique de confirmation à l'adresse électronique qui est associée à votre IBMid. Si vous ne parvenez toujours pas à finaliser votre inscription, contactez le [support {{site.data.keyword.Bluemix_notm}}](/docs/get-support?topic=get-support-getting-customer-support).  
 
 
 ## Pourquoi certaines pages de la console ne se chargent-elles pas ?

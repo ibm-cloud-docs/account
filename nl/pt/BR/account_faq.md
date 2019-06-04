@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-09"
+lastupdated: "2019-05-28"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -38,8 +38,7 @@ Se você puder efetuar login em uma conta do {{site.data.keyword.Bluemix_notm}},
 
    Depois de abrir o caso, uma notificação por e-mail é enviada a você. Siga as instruções para obter comunicação adicional.
 
-Se não for possível efetuar login em uma conta do {{site.data.keyword.Bluemix}}, [crie uma solicitação de conta](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo").
-
+Se não for possível efetuar login em uma conta do {{site.data.keyword.Bluemix_notm}}, [crie uma solicitação de conta](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo").
 
 ## O que é Cloud Foundry?
 {: #cloud-foundry}
@@ -80,8 +79,11 @@ limites de cota são reconfigurados no primeiro dia de cada mês.
 
 É possível verificar seu uso acessando **Gerenciar > Faturamento e uso** e selecionando **Uso**. Para obter mais informações, consulte [Visualizando seu uso](/docs/billing-usage?topic=billing-usage-viewingusage).
 
-Se você deseja parar ou excluir um serviço, é possível fazer isso na lista de recursos. Saiba mais em [Navegando no console do {{site.data.keyword.Bluemix_notm}}](/docs/overview?topic=overview-ui).
+## Como excluo um serviço da minha conta?
+{: #accounts-service-removal}
+{: faq}
 
+Se você deseja parar ou excluir um serviço, é possível fazer isso na lista de recursos. Saiba mais em [Navegando no console do {{site.data.keyword.Bluemix_notm}}](/docs/overview?topic=overview-ui).
 
 ## Quantos grupos de recursos, organizações ou espaços posso criar?
 {: #resourcelimit}
@@ -93,26 +95,23 @@ Se você tiver uma conta faturável, não haverá limite para o número de grupo
 {: #changeacct}
 {: faq}
 
-* Para fazer upgrade de uma conta Lite para uma Pré-paga ou de Assinatura, acesse [Configurações da conta](https://{DomainName}/account/settings).
-  * Para fazer upgrade para uma conta Pré-paga, clique em **Incluir cartão de crédito**.
-  * Para fazer upgrade para uma conta de Assinatura, clique em **Upgrade**.
-* Para converter entre os tipos de conta Pré-paga e de Assinatura, entre em contato com a equipe de [{{site.data.keyword.Bluemix_notm}} Vendas ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
+Para fazer upgrade de sua conta Lite, acesse [Configurações da conta](https://{DomainName}/account/settings). Na seção Upgrade de conta, clique em **Incluir cartão de crédito** para fazer upgrade para uma conta pré-paga ou clique em **Fazer upgrade** para uma conta de assinatura. Também é possível aplicar um código de recurso promocional para converter sua conta Lite em uma conta de avaliação na página Configurações da conta.
 
-Se você não tiver certeza do seu tipo de conta atual, será possível localizá-lo na página Configurações da conta.
+Para converter entre os tipos de conta Pré-paga e de Assinatura, entre em contato com a equipe de [{{site.data.keyword.Bluemix_notm}} Vendas ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
-Saiba mais em [Fazendo upgrade de sua conta](/docs/account?topic=account-upgrading-account).
+Se você não tiver certeza do seu tipo de conta atual, será possível localizá-lo na página Configurações da conta. Saiba mais em [Fazendo upgrade de sua conta](/docs/account?topic=account-upgrading-account).
 
 ## Se eu fizer upgrade da minha conta Lite, será possível continuar a usar minhas instâncias existentes?
 {: #nochange}
 {: faq}
 
-Sim, é possível fazer upgrade para uma conta faturável e continuar a usar as instâncias que você criou com sua conta Lite.
+Sim, quando você faz upgrade para uma conta faturável, é possível continuar a usar as instâncias que você criou com sua conta Lite.
 
 ## Como atualizar meu cartão de crédito?
 {: #updatepayment}
 {: faq}
 
-É possível atualizar o método de pagamento que está associado à sua conta acessando [Pagamentos](https://cloud.ibm.com/billing/payments) no console. Sob Incluir método de pagamento, insira as informações de faturamento para o seu novo cartão e, em seguida, clique em **Incluir cartão de crédito**.
+A atualização de seu cartão de crédito é exatamente como incluir um novo. Acesse [Pagamentos](https://{DomainName}/billing/payments) e, na seção Incluir método de pagamento, insira as informações de faturamento para o seu novo cartão e, em seguida, clique em **Incluir cartão de crédito**.
 
 Para alternar para um método de pagamento diferente, selecione **Pagamento com outro** e, em seguida, clique em **Enviar solicitação de mudança**. Um caso de suporte para mudar o seu método de pagamento será criado para você.
 
@@ -158,6 +157,13 @@ Se decidir sair, a maneira como você cancela a sua conta depende do seu tipo de
 
 Entre em contato com o Suporte do [{{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} para abrir um caso de suporte e solicitar para excluir sua conta. Se você tem dados que estão associados à sua conta antiga e deseja salvá-los e movê-los para uma nova conta, inclua essas informações em seu e-mail.
 
+## Como posso remover meus dados pessoais do {{site.data.keyword.Bluemix_notm}}?
+{: #remove-pi}
+{: faq}
+
+Para entender como a IBM manipula suas informações pessoais, veja a [Declaração de Privacidade IBM ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/privacy/){: new_window}. Na seção Your Rights, revise as informações sobre
+o que é possível solicitar para remover. Clique no link na seção para enviar uma solicitação para
+remover suas informações pessoais.
 
 ## Por que minha conta está desativada?
 {: #account-deactivated}
@@ -177,13 +183,11 @@ Se você acredita que a sua conta foi desativada com erro, entre em contato com 
 
 Clique em **Suporte** na barra de menus do console para acessar o Centro de Suporte. Saiba mais sobre o suporte em [Obtendo suporte](/docs/get-support?topic=get-support-support-plans).
 
-
 ## Posso inscrever-me para uma avaliação grátis?
 {: #freetrial}
 {: faq}
 
 As contas para teste do {{site.data.keyword.Bluemix_notm}} estão disponíveis para professores e estudantes de instituições acadêmicas credenciadas. Para se qualificar para uma conta para teste, acesse [Aproveitar o poder da IBM![Ícone de link externo](../icons/launch-glyph.svg)](https://onthehub.com/ibm/){: new_window} e valide suas credenciais da instituição.
-
 
 ## Depois de vincular minha conta, como efetuar login?
 {: #al_login}
@@ -191,13 +195,11 @@ As contas para teste do {{site.data.keyword.Bluemix_notm}} estão disponíveis p
 
 Depois de vincular a conta, use o seu IBMid para efetuar login no console do {{site.data.keyword.Bluemix}}.
 
-
 ## Depois de vincular minha conta, qual é o impacto no meu suporte?
 {: #al_support}
 {: faq}
 
 Depois de vincular sua conta, você mantém o mesmo nível de suporte de quando inclui a plataforma {{site.data.keyword.Bluemix_notm}} em sua conta.
-
 
 ## Há outras maneiras para obter ajuda com a vinculação de minha conta?
 {: #al_morehelp}
@@ -237,6 +239,14 @@ Para obter mais informações sobre como ser uma conta mestre, consulte [Trabalh
 
 Ainda é possível usar o ID para sua conta do SoftLayer para conectar-se ao portal do cliente porque o console do {{site.data.keyword.Bluemix_notm}} é acessível com IBMids.
 
+## Como posso visualizar as contas que possuo?
+{: #accounts-owned}
+{: faq}
+
+O cabeçalho do console do IBM Cloud lista todas as contas afiliadas ao seu ID de login, incluindo as que você possui. É possível visualizar sua função em cada conta na página [Usuários](https://{DomainName}/iam/users).
+
+Também é possível localizar suas contas por meio da CLI executando o comando `ibmcloud account list`.
+
 ## Como alterno entre múltiplas contas?
 {: #switch-between-accounts}
 {: faq}
@@ -249,7 +259,9 @@ Se você tiver mais de uma conta, será possível clicar no nome da conta para s
 {: #switch-account-owners}
 {: faq}
 
-Não é possível alternar o proprietário de uma conta, mas é possível mudar proprietários de recursos. Para saber mais sobre como alternar a propriedade, veja [Transferindo a propriedade de um recurso privado](/docs/account?topic=account-include#owners).
+É possível transferir a propriedade de recursos individuais dentro de sua conta a outra pessoa usando o comando `ibmcloud catalog`. Para saber mais, consulte [Transferindo a propriedade de um recurso privado](/docs/account?topic=account-include#owners).
+
+Transferindo a propriedade de toda a sua conta requer ajuda adicional do suporte. Para obter ajuda, [entre em contato com o suporte](/docs/get-support?topic=get-support-getting-customer-support).
 
 ## O {{site.data.keyword.Bluemix_notm}} suporta o registro em lote de usuários?
 {: #batch-registration}
@@ -287,4 +299,4 @@ Antes que seja possível excluir uma tag, deve-se removê-la de todos os recurso
 {: #rename-tag}
 {: faq}
 
-Não é possível editar o nome de uma tag. Para renomear uma tag, remova-a e redesigne o recurso a uma nova tag.  
+Não é possível editar o nome de uma tag. Para renomear uma tag, remova-a e redesigne o recurso a uma nova tag.

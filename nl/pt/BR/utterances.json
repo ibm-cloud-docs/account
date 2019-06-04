@@ -68,6 +68,15 @@
       "as cotas são reconfiguradas por mês",
       "cotas de plano Lite"
     ],
+    "accounts-service-removal": [
+      "Como excluo um serviço da minha conta?",
+      "remover servidor da minha conta",
+      "Como posso excluir um serviço da minha conta",
+      "preciso remover um serviço, pois não estou usando-o",
+      "Posso excluir esse servidor da minha conta?",
+      "Quero que você cancele o certificado SSL da minha conta",
+      "remover um serviço da minha conta"
+    ],
     "resourcelimit": [
       "quantos grupos de recursos posso criar",
       "há um limite para o número de grupos de recursos que posso criar",
@@ -88,7 +97,9 @@
       "o que fazer para mudar meu tipo de conta",
       "Onde eu mudo minha conta?",
       "Como converter minha conta?",
-      "Desejo alternar o meu tipo de conta?"
+      "Desejo alternar o meu tipo de conta?",
+      "Fazer upgrade para assinatura",
+      "Fazer upgrade para pay-as-you-go"
     ],
     "nochange": [
       "minhas instâncias estão disponíveis após o upgrade",
@@ -131,6 +142,14 @@
       "Desejo fechar minha conta",
       "Diga-me como excluir minha conta",
       "excluir conta"
+    ],
+    "remove-pi": [
+      "Como remover meus dados pessoais?",
+      "remover dados pessoais",
+      "remover informações pessoais",
+      "excluir dados pessoais",
+      "excluir meus dados,",
+      "apagar dados pessoais"
     ],
     "account-deactivated": [
       "Por que minha conta está desativada?",
@@ -205,6 +224,19 @@
       "Qual é o impacto para o SoftLayer após eu vincular minhas contas?",
       "E sobre o ID da minha conta principal com o SoftLayer?"
     ],
+    "accounts-owned": [
+      "Quais contas eu tenho?",
+      "Quais contas possuo",
+      "Quantas contas eu tenho",
+      "Em quais contas estou",
+      "contas que possuo",
+      "Quero saber as contas em que estou",
+      "contas em que estou?",
+      "em quais contas estou",
+      "quais contas eu tenho",
+      "a quais contas estou afiliado",
+      "quais contas estão no meu nome"
+    ],
     "switch-between-accounts": [
       "alternar múltiplas contas",
       "mudar entre as contas",
@@ -217,7 +249,8 @@
       "mudar proprietários de contas",
       "Como alternar proprietários de contas?",
       "alternar proprietário",
-      "mudar proprietário"
+      "mudar proprietário",
+      "transferir proprietário"
     ],
     "batch-registration": [
       "O IBM Cloud pode suportar o registro em lote de usuários?",

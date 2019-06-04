@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2018
-lastupdated: "2018-11-28"
+  years: 2015, 2019
+lastupdated: "2019-05-23"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -126,18 +126,27 @@ Certifique-se de que seja possível efetuar login na [IBM](https://idaas.iam.ibm
 {: #ts_accntpding}
 {: troubleshoot}
 
-Se a sua conta estiver pendente, não será possível efetuar login no {{site.data.keyword.Bluemix_notm}}.
+Se a sua conta ainda estiver pendente, não será possível efetuar login no {{site.data.keyword.Bluemix_notm}}.
 
-Depois de se registrar para uma conta {{site.data.keyword.Bluemix_notm}} Lite, talvez você não consiga efetuar login no {{site.data.keyword.Bluemix_notm}}. É exibida a seguinte mensagem:
+Depois de registrar-se para uma conta do {{site.data.keyword.Bluemix_notm}}, talvez
+você não consiga efetuar login no {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
 
-<code>Sua conta está pendente. Aguarde até 24 horas pela confirmação por email e verifique também sua pasta de spam. Se você ainda não tiver recebido sua confirmação por e-mail, entre em contato com o <a href="https://ibm.biz/ibmcloudsupport" target="_blank">Suporte do {{site.data.keyword.Bluemix_notm}}</a>.</code>
-
-Ao se registrar para uma conta {{site.data.keyword.Bluemix_notm}} Lite, você recebe um e-mail que inclui um link que deve ser clicado para confirmar seu registro.  
+Ao registrar-se para uma conta do {{site.data.keyword.Bluemix_notm}}, você receberá
+um e-mail que inclui um link de confirmação. Deve-se clicar nesse link para confirmar seu registro. Se
+você não confirmar seu registro, sua conta permanecerá em um estado pendente.
 {: tsCauses}
 
-O e-mail de confirmação é enviado para o endereço de e-mail que está associado a seu IBMid. Verifique sua caixa de entrada e sua pasta de spam. Se você não tiver recebido o e-mail de confirmação, entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}}](/docs/get-support?topic=get-support-getting-customer-support).  
+O e-mail de confirmação é enviado para o endereço de e-mail que está associado a seu IBMid. Verifique sua caixa de entrada e sua pasta de spam. Se você não tiver recebido o e-mail de confirmação, acesse a [página de login do {{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com/){: new_window}![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo") e tente efetuar login. É exibida a seguinte mensagem:
 {: tsResolve}
+
+```
+Para concluir seu registro, verifique seu e-mail.
+Não consegue localizar o e-mail? Reenviar
+```
+{:screen}
+
+Clique em **Reenviar** para enviar outro e-mail de confirmação para o endereço de e-mail que está associado a seu IBMid. Se você ainda não puder concluir seu registro, entre em contato com o [suporte do {{site.data.keyword.Bluemix_notm}}](/docs/get-support?topic=get-support-getting-customer-support).  
 
 
 ## Por que eu encontro páginas do console que não são carregadas?

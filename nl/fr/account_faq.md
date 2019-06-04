@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-13"
+lastupdated: "2019-05-28"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -38,7 +38,7 @@ Si vous pouvez vous connecter à un compte {{site.data.keyword.Bluemix_notm}}, a
 
    Un message électronique vous sera envoyé après l'ouverture du cas. Suivez les instructions pour toute communication supplémentaire.
 
-Si vous ne pouvez pas vous connecter à un compte {{site.data.keyword.Bluemix}}, [créez une demande de compte](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe").
+Si vous ne pouvez pas vous connecter à un compte {{site.data.keyword.Bluemix_notm}}, [créez une demande de compte](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe").
 
 ## Qu'est-ce que Cloud Foundry ?
 {: #cloud-foundry}
@@ -94,26 +94,23 @@ Si vous avez un compte facturable, le nombre de groupes de ressources, d'organis
 {: #changeacct}
 {: faq}
 
-* Pour effectuer une mise à niveau d'un compte Lite vers un compte Paiement à la carte ou un compte Abonnement, sélectionnez [Paramètres de compte](https://{DomainName}/account/settings).
-  * Pour effectuer une mise à niveau vers une compte Paiement à la carte, cliquez sur **Ajouter une carte de crédit**.
-  * Pour effectuer une mise à niveau vers un compte Abonnement, cliquez sur **Mettre à niveau**.
-* Pour effectuer une conversion entre des types de compte Paiement à la carte et Abonnement, prenez contact avec le [service commercial {{site.data.keyword.Bluemix_notm}}![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
+Pour mettre à niveau un compte Lite, accédez à [Paramètres de compte](https://{DomainName}/account/settings). Dans la section Mise à niveau du compte, cliquez sur **Ajouter une carte de crédit** pour effectuer une mise à niveau vers un compte de paiement à la carte ou cliquez sur **Mise à niveau** pour une mise à niveau vers un compte d'abonnement. Vous pouvez également appliquer un code de fonction promotionnel pour convertir votre compte Lite en compte d'essai sur la page Paramètres de compte.
 
-Si vous ne savez pas quel est votre type de compte, consultez la page Paramètres de compte.
+Pour effectuer une conversion entre des types de compte Paiement à la carte et Abonnement, prenez contact avec le [service commercial {{site.data.keyword.Bluemix_notm}}![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
-Pour plus d'informations, voir [Mise à niveau de votre compte](/docs/account?topic=account-upgrading-account).
+Si vous ne savez pas quel est votre type de compte, consultez la page Paramètres de compte. Pour plus d'informations, voir [Mise à niveau de votre compte](/docs/account?topic=account-upgrading-account).
 
 ## Si je mets à niveau mon compte Lite, puis-je continuer d'utiliser mes instances existantes ?
 {: #nochange}
 {: faq}
 
-Oui, vous pouvez effectuer une mise à niveau vers un compte facturable et continuer d'utiliser les instances que vous avez créées avec votre compte Lite.
+Oui, si vous procédez à une mise à niveau vers un compte facturable, vous pouvez continuer d'utiliser les instances créées avec votre compte Lite.
 
 ## Comment mettre à jour ma carte de crédit ?
 {: #updatepayment}
 {: faq}
 
-Vous pouvez mettre à jour la méthode de paiement associée à votre compte en accédant à la section [Paiements](https://cloud.ibm.com/billing/payments) dans la console. Sous Ajouter méthode de paiement, entrez les informations de facturation correspondant à votre nouvelle carte puis cliquez sur **Ajouter une carte de crédit**.
+Mettre à jour votre carte de crédit équivaut à ajouter une nouvelle carte. Accédez à [Paiements](https://{DomainName}/billing/payments) et, dans la section Ajouter méthode de paiement, entrez les informations de facturation correspondant à votre nouvelle carte puis cliquez sur **Ajouter une carte de crédit**.
 
 Pour utiliser une autre méthode de paiement, sélectionnez **Payer autrement** puis cliquez sur **Soumettre la demande de changement**. Un cas de support concernant le changement de méthode de paiement sera créé pour vous.
 
@@ -158,6 +155,12 @@ Si vous maintenez votre décision malgré tout, le mode de résiliation de votre
 {: faq}
 
 Contactez le [service de support {{site.data.keyword.Bluemix_notm}}![Icône de lien externe](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} pour ouvrir un cas de support et demander la suppression de votre compte. Si des données sont associées à votre ancien compte et que vous souhaitez les déplacer vers un nouveau compte, incluez ces informations dans votre message électronique.
+
+## Comment puis-je retirer mes données à caractère personnel d'{{site.data.keyword.Bluemix_notm}} ?
+{: #remove-pi}
+{: faq}
+
+Pour comprendre comment IBM gère les informations personnelles, voir la [déclaration de confidentialité IBM![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/privacy/){: new_window}. Dans la section Your Rights, lisez les informations expliquant ce que vous pouvez demander à retirer. Cliquez sur le lien dans la section pour soumettre une demande de retrait de vos informations personnelles.
 
 ## Pourquoi mon compte est-il désactivé ?
 {: #account-deactivated}
@@ -237,9 +240,9 @@ Vous pouvez toujours utiliser l'ID de votre compte SoftLayer pour vous connecter
 {: #accounts-owned}
 {: faq}
 
-L'en-tête de console IBM Cloud répertorie tous les comptes qui sont affiliés à votre ID de connexion, y compris ceux que vous possédez. Vous pouvez visualiser votre rôle dans chaque compte sur la page [Utilisateurs](https://{DomainName}/iam/users). 
+L'en-tête de console IBM Cloud répertorie tous les comptes qui sont affiliés à votre ID de connexion, y compris ceux que vous possédez. Vous pouvez visualiser votre rôle dans chaque compte sur la page [Utilisateurs](https://{DomainName}/iam/users).
 
-Vous pouvez également définir vos comptes à partir de l'interface de ligne de commande en exécutant la commande `ibmcloud account list`. 
+Vous pouvez également définir vos comptes à partir de l'interface de ligne de commande en exécutant la commande `ibmcloud account list`.
 
 ## Comment puis-je passer d'un compte à un autre ?
 {: #switch-between-accounts}
@@ -293,4 +296,4 @@ Avant de pouvoir supprimer une étiquette, vous devez la retirer de toutes les r
 {: #rename-tag}
 {: faq}
 
-Vous ne pouvez pas modifier le nom d'une étiquette. Pour renommer une étiquette, retirez-la et réaffectez la ressource avec une nouvelle étiquette.  
+Vous ne pouvez pas modifier le nom d'une étiquette. Pour renommer une étiquette, retirez-la et réaffectez la ressource avec une nouvelle étiquette.
