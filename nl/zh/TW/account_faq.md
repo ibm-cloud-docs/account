@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-17"
+lastupdated: "2019-05-28"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -156,6 +156,12 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 
 請與 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} 聯絡以開立支援案例，並要求刪除您的帳戶。如果您的資料與舊帳戶相關聯並且要移至新帳戶，請在電子郵件中包含此資訊。
 
+## 如何從 {{site.data.keyword.Bluemix_notm}} 中移除我的個人資料？
+{: #remove-pi}
+{: faq}
+
+若要瞭解 IBM 如何處理您的個人資訊，請參閱 [IBM 隱私權聲明 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/privacy/){: new_window}。在「您的權利」一節中，請檢閱您可以要求移除之項目的相關資訊。按一下本節中的鏈結，即可提交要求來移除您的個人資訊。
+
 ## 為什麼我的帳戶被停用了？
 {: #account-deactivated}
 {: faq}
@@ -290,4 +296,4 @@ IBM Cloud 主控台標頭會列出與您登入 ID 相連結的所有帳戶（包
 {: #rename-tag}
 {: faq}
 
-您無法編輯標籤的名稱。若要重新命名標籤，請將它移除，然後使用新標籤重新指派資源。  
+您無法編輯標籤的名稱。若要重新命名標籤，請將它移除，然後使用新標籤重新指派資源。

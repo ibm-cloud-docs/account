@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-17"
+lastupdated: "2019-05-28"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -157,6 +157,14 @@ Se decidir sair, a maneira como você cancela a sua conta depende do seu tipo de
 
 Entre em contato com o Suporte do [{{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} para abrir um caso de suporte e solicitar para excluir sua conta. Se você tem dados que estão associados à sua conta antiga e deseja salvá-los e movê-los para uma nova conta, inclua essas informações em seu e-mail.
 
+## Como posso remover meus dados pessoais do {{site.data.keyword.Bluemix_notm}}?
+{: #remove-pi}
+{: faq}
+
+Para entender como a IBM manipula suas informações pessoais, veja a [Declaração de Privacidade IBM ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/privacy/){: new_window}. Na seção Your Rights, revise as informações sobre
+o que é possível solicitar para remover. Clique no link na seção para enviar uma solicitação para
+remover suas informações pessoais.
+
 ## Por que minha conta está desativada?
 {: #account-deactivated}
 {: faq}
@@ -291,4 +299,4 @@ Antes que seja possível excluir uma tag, deve-se removê-la de todos os recurso
 {: #rename-tag}
 {: faq}
 
-Não é possível editar o nome de uma tag. Para renomear uma tag, remova-a e redesigne o recurso a uma nova tag.  
+Não é possível editar o nome de uma tag. Para renomear uma tag, remova-a e redesigne o recurso a uma nova tag.

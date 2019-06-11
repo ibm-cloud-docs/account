@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-17"
+lastupdated: "2019-05-28"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -156,6 +156,12 @@ Se decidi di andare via, il modo in cui annulli il tuo account dipende dal tuo t
 
 Contatta il [Supporto {{site.data.keyword.Bluemix_notm}}![Icona link esterno](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} per aprire un caso di supporto e richiedere l'eliminazione del tuo account. Se hai dei dati associati al tuo account precedente che vuoi passare a un nuovo account, includi queste informazioni nell'e-mail.
 
+## Come posso rimuovere i miei dati personali da {{site.data.keyword.Bluemix_notm}}?
+{: #remove-pi}
+{: faq}
+
+Per sapere come IBM gestisce le tue informazioni personali, vedi [IBM Privacy Statement ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/privacy/){: new_window}. Nella sezione Your Rights, controlla le informazioni su cosa puoi richiedere di rimuovere. Fai clic sul link nella sezione per inviare una richiesta di rimozione delle tue informazioni personali.
+
 ## Perché il mio account è disattivato?
 {: #account-deactivated}
 {: faq}
@@ -293,4 +299,4 @@ Prima di poter eliminare una tag, devi rimuoverla da tutte le risorse. Se ancora
 {: #rename-tag}
 {: faq}
 
-Non puoi modificare il nome di una tag. Per rinominare una tag, rimuovila e riassegna la risorsa con una nuova tag.  
+Non puoi modificare il nome di una tag. Per rinominare una tag, rimuovila e riassegna la risorsa con una nuova tag.

@@ -97,7 +97,9 @@
       "o que fazer para mudar meu tipo de conta",
       "Onde eu mudo minha conta?",
       "Como converter minha conta?",
-      "Desejo alternar o meu tipo de conta?"
+      "Desejo alternar o meu tipo de conta?",
+      "Fazer upgrade para assinatura",
+      "Fazer upgrade para pay-as-you-go"
     ],
     "nochange": [
       "minhas instâncias estão disponíveis após o upgrade",
@@ -140,6 +142,14 @@
       "Desejo fechar minha conta",
       "Diga-me como excluir minha conta",
       "excluir conta"
+    ],
+    "remove-pi": [
+      "Como remover meus dados pessoais?",
+      "remover dados pessoais",
+      "remover informações pessoais",
+      "excluir dados pessoais",
+      "excluir meus dados,",
+      "apagar dados pessoais"
     ],
     "account-deactivated": [
       "Por que minha conta está desativada?",

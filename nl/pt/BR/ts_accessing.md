@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-05-23"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -148,6 +148,7 @@ Não consegue localizar o e-mail? Reenviar
 
 Clique em **Reenviar** para enviar outro e-mail de confirmação para o endereço de e-mail que está associado a seu IBMid. Se você ainda não puder concluir seu registro, entre em contato com o [suporte do {{site.data.keyword.Bluemix_notm}}](/docs/get-support?topic=get-support-getting-customer-support).  
 
+
 ## Por que eu encontro páginas do console que não são carregadas?
 {: #ts_err}
 {: troubleshoot}
@@ -171,22 +172,3 @@ efetuar login novamente.
   * Limpar os cookies e o cache do navegador.
   * Usar um navegador diferente. Para obter informações sobre as versões dos navegadores suportados pelo {{site.data.keyword.Bluemix_notm}}, consulte [Pré-requisitos do {{site.data.keyword.Bluemix_notm}}](/docs/overview?topic=overview-prereqs-platform).
   * Se você instalou a interface da linha de comandos do Cloud Foundry, insira o comando `ibmcloud cf apps` para ver se seu app está em execução.
-
-## Como posso acessar serviços de infraestrutura em minha conta?
-{: #troubleshoot-infrastructure-access}
-{: troubleshoot}
-
-Quando você tenta acessar seções de infraestrutura do console do IBM Cloud, você vê uma mensagem que informa:
-{: tsSymptoms}
-
-`Esta página não pode ser carregada porque sua conta de infraestrutura não está totalmente configurada como uma conta do IBM Cloud.`
-
-Existem diversos motivos pelos quais é possível ver essa mensagem de erro:
-{: tsCauses}
-
-* Você tem uma [conta Lite](/docs/account?topic=account-accounts#liteaccount), a qual não permite acesso a serviços de infraestrutura.
-* Sua conta não está vinculada a uma conta de infraestrutura.
-
-
-Para resolver esse problema, deve-se fazer upgrade para uma conta Pré-paga ou de Assinatura. Para obter informações, consulte [Fazendo upgrade de sua conta](/docs/account?topic=account-upgrading-account).
-{: tsResolve}

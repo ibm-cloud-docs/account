@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-05-23"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -142,7 +142,8 @@ Die E-Mail ist nicht vorhanden? Erneut senden.
 ```
 {:screen}
 
-Klicken Sie auf **Erneut senden**, damit eine weitere Bestätigungs-E-Mail an die E-Mail-Adresse gesendet wird, die Ihrer IBMid zugeordnet ist. Falls es weiterhin nicht möglich ist, die Registrierung abzuschließen, wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}}-Support](/docs/get-support?topic=get-support-getting-customer-support).  
+Klicken Sie auf **Erneut senden**, damit eine weitere Bestätigungs-E-Mail an die E-Mail-Adresse gesendet wird, die Ihrer IBMid zugeordnet ist. Falls es weiterhin nicht möglich ist, die Registrierung abzuschließen, wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}}-Support](/docs/get-support?topic=get-support-getting-customer-support).   
+
 
 ## Warum werden Konsolenseiten nicht geladen?
 {: #ts_err}
@@ -166,22 +167,3 @@ Führen Sie nach Bedarf eine oder mehrere der folgenden Aktionen aus:
   * Löschen Sie Cookies und den Inhalt des Browser-Cache.
   * Verwenden Sie einen anderen Browser. Informationen zu den Versionen der Browser, die von {{site.data.keyword.Bluemix_notm}} unterstützt werden, finden Sie in den [{{site.data.keyword.Bluemix_notm}}-Voraussetzungen](/docs/overview?topic=overview-prereqs-platform).
   * Wenn Sie die Cloud Foundry-Befehlszeilenschnittstelle installiert haben, geben Sie den Befehl `ibmcloud cf apps` ein, um anzuzeigen, ob die App aktiv ist.
-
-## Wie kann ich auf Infrastrukturservices in meinem Konto zugreifen?
-{: #troubleshoot-infrastructure-access}
-{: troubleshoot}
-
-Wenn Sie versuchen, auf Infrastrukturabschnitte in der IBM Cloud-Konsole zuzugreifen, wird die folgende Nachricht angezeigt:
-{: tsSymptoms}
-
-`Diese Seite kann nicht geladen werden, da das Infrastrukturkonto nicht vollständig als IBM Cloud-Konto konfiguriert ist. `
-
-Für die Anzeige dieser Fehlernachricht kann es mehrere Gründe geben:
-{: tsCauses}
-
-* Sie verfügen über ein [Lite-Konto](/docs/account?topic=account-accounts#liteaccount), das den Zugriff auf Infrastrukturservices nicht zulässt. 
-* Das Konto ist nicht mit einem Infrastrukturkonto verbunden. 
-
-
-Zur Behebung dieses Problems müssen Sie ein Upgrade auf ein Konto mit nutzungsabhängiger Abrechnung oder ein Abonnementkonto durchführen. Weitere Informationen finden Sie in [Upgrade für Konto durchführen](/docs/account?topic=account-upgrading-account).
-{: tsResolve}

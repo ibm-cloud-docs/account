@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-17"
+lastupdated: "2019-05-28"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -156,6 +156,12 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 
 联系 [{{site.data.keyword.Bluemix_notm}} 支持人员 ![外部链接图标](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window}，以打开一个支持案例，请求删除您的帐户。如果存在与旧帐户相关联的数据并且想要将其移动到新帐户，请在您的电子邮件中包含此信息。
 
+## 如何从 {{site.data.keyword.Bluemix_notm}} 中除去我的个人数据？
+{: #remove-pi}
+{: faq}
+
+要了解 IBM 如何处理您的个人信息，请参阅 [IBM 隐私声明 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/privacy/){: new_window}。在“您的权利”部分中，查看有关可以请求除去哪些内容的信息。单击该部分中的链接可提交除去您个人信息的请求。
+
 ## 为什么我的帐户已停用？
 {: #account-deactivated}
 {: faq}
@@ -290,4 +296,4 @@ IBM Cloud 控制台标题列出了与您的登录标识相关联的所有帐户�
 {: #rename-tag}
 {: faq}
 
-您无法编辑标记的名称。要重命名标记，请将其除去，然后为资源重新分配新标记。  
+您无法编辑标记的名称。要重命名标记，请将其除去，然后为资源重新分配新标记。

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-17"
+lastupdated: "2019-05-28"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -156,6 +156,12 @@ Si vous maintenez votre décision malgré tout, le mode de résiliation de votre
 
 Contactez le [service de support {{site.data.keyword.Bluemix_notm}}![Icône de lien externe](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} pour ouvrir un cas de support et demander la suppression de votre compte. Si des données sont associées à votre ancien compte et que vous souhaitez les déplacer vers un nouveau compte, incluez ces informations dans votre message électronique.
 
+## Comment puis-je retirer mes données à caractère personnel d'{{site.data.keyword.Bluemix_notm}} ?
+{: #remove-pi}
+{: faq}
+
+Pour comprendre comment IBM gère les informations personnelles, voir la [déclaration de confidentialité IBM![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/privacy/){: new_window}. Dans la section Your Rights, lisez les informations expliquant ce que vous pouvez demander à retirer. Cliquez sur le lien dans la section pour soumettre une demande de retrait de vos informations personnelles.
+
 ## Pourquoi mon compte est-il désactivé ?
 {: #account-deactivated}
 {: faq}
@@ -290,4 +296,4 @@ Avant de pouvoir supprimer une étiquette, vous devez la retirer de toutes les r
 {: #rename-tag}
 {: faq}
 
-Vous ne pouvez pas modifier le nom d'une étiquette. Pour renommer une étiquette, retirez-la et réaffectez la ressource avec une nouvelle étiquette.  
+Vous ne pouvez pas modifier le nom d'une étiquette. Pour renommer une étiquette, retirez-la et réaffectez la ressource avec une nouvelle étiquette.

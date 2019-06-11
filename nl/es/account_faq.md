@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-17"
+lastupdated: "2019-05-28"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -81,7 +81,7 @@ Si se alcanza cualquier límite de cuota para instancias del plan Lite, se suspe
 Para ver su uso, vaya a **Gestionar > Facturación y uso** y seleccione **Uso**. Para obtener más información, consulte
 [Visualización del uso](/docs/billing-usage?topic=billing-usage-viewingusage).
 
-## ¿Cómo puedo suprimir un servicio de mi cuenta?
+## ¿Cómo suprimo un servicio de mi cuenta?
 {: #accounts-service-removal}
 {: faq}
 
@@ -159,6 +159,12 @@ Si decide marcharse, la manera de cancelar su cuenta dependerá del tipo de cuen
 {: faq}
 
 Póngase en contacto con el [equipo de soporte de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} para abrir un caso de soporte y solicitar la supresión de su cuenta. Si tiene datos asociados con su antigua cuenta que desea moverlos a una nueva cuenta, incluya esta información en su correo electrónico.
+
+## ¿Cómo puedo eliminar mis datos personales de {{site.data.keyword.Bluemix_notm}}?
+{: #remove-pi}
+{: faq}
+
+Para entender la forma en que IBM gestiona su información personal, consulte la [Declaración de privacidad de IBM ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/privacy/){: new_window}. En la sección Sus derechos, revise la información sobre lo que puede solicitar que se elimine. Pulse el enlace de la sección para enviar una solicitud para eliminar su información personal.
 
 ## ¿Por qué está desactivada mi cuenta?
 {: #account-deactivated}
@@ -295,4 +301,4 @@ Antes de poder suprimir una etiqueta, debe eliminarla de todos los recursos. Si 
 {: #rename-tag}
 {: faq}
 
-No puede editar el nombre de una etiqueta. Para cambiar el nombre de la etiqueta, elimínela y vuelva a asignar una nueva etiqueta para el recurso.  
+No puede editar el nombre de una etiqueta. Para cambiar el nombre de la etiqueta, elimínela y vuelva a asignar una nueva etiqueta para el recurso.

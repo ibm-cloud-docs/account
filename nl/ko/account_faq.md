@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-17"
+lastupdated: "2019-05-28"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -156,6 +156,12 @@ VPN 비밀번호를 재설정하려면 다음 단계를 완료하십시오.
 
 [{{site.data.keyword.Bluemix_notm}} 지원 센터 ![외부 링크 아이콘](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window}에 문의하여 지원 케이스를 열고 계정 삭제를 요청하십시오. 새 계정으로 이동할 이전 계정과 연관된 데이터가 있으면 이 정보를 이메일에 포함하십시오.
 
+## {{site.data.keyword.Bluemix_notm}}에서 개인 데이터를 어떻게 제거할 수 있습니까?
+{: #remove-pi}
+{: faq}
+
+IBM에서 개인 정보를 어떻게 처리하는지 알아보려면 [IBM 개인정보처리방침 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/privacy/kr/ko){: new_window}을 참조하십시오. 사용자 권한 절에서 제거하도록 요청할 수 있는 항목에 대한 정보를 검토하십시오. 자신의 개인 정보를 제거하도록 요청을 제출하려면 이 절에 있는 링크를 클릭하십시오. 
+
 ## 왜 내 계정이 비활성화되었습니까?
 {: #account-deactivated}
 {: faq}
@@ -290,4 +296,4 @@ IBM Cloud 콘솔 헤더에는 본인이 소유한 계정을 포함하여 본인�
 {: #rename-tag}
 {: faq}
 
-태그의 이름은 편집할 수 없습니다. 태그의 이름을 변경하려면 이를 제거한 후에 새 태그로 리소스를 재지정하십시오.  
+태그의 이름은 편집할 수 없습니다. 태그의 이름을 변경하려면 이를 제거한 후에 새 태그로 리소스를 재지정하십시오.

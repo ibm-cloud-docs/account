@@ -71,7 +71,7 @@
     "accounts-service-removal": [
       "¿Cómo suprimo un servicio de mi cuenta?",
       "eliminar servidor de mi cuenta",
-      "¿Cómo puedo suprimir un servicio de mi cuenta?",
+      "¿Cómo suprimo un servicio de mi cuenta?",
       "necesito eliminar un servicio porque no lo utilizo",
       "¿Puedo suprimir este servidor de mi cuenta?",
       "Quiero cancelar el certificado SSL de mi cuenta",
@@ -97,7 +97,9 @@
       "qué debo hacer para cambiar mi tipo de cuenta",
       "Dónde cambio mi cuenta",
       "Cómo se convierte mi cuenta",
-      "Quiero cambiar mi tipo de cuenta"
+      "Quiero cambiar mi tipo de cuenta",
+      "Actualizar a suscripción",
+      "Actualizar a pago según uso"
     ],
     "nochange": [
       "están disponibles son mis instancias después de la actualización",
@@ -140,6 +142,14 @@
       "Quiero cerrar mi cuenta",
       "Dígame cómo suprimir mi cuenta",
       "suprimir cuenta"
+    ],
+    "remove-pi": [
+      "¿Cómo puedo eliminar mis datos personales?",
+      "eliminar datos personales",
+      "eliminar información personal",
+      "suprimir datos personales",
+      "suprimir mis datos",
+      "borrar datos personales"
     ],
     "account-deactivated": [
       "¿Por qué está desactivada mi cuenta?",
