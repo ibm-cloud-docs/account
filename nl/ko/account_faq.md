@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-13"
+lastupdated: "2019-05-17"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -38,7 +38,7 @@ subcollection: account
 
    케이스를 열면 이메일 알림이 발송됩니다. 추가로 소통하려면 지시사항을 따르십시오.
 
-{{site.data.keyword.Bluemix}} 계정에 로그인할 수 없는 경우에는 [계정 요청을 작성 ](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")하십시오.
+{{site.data.keyword.Bluemix_notm}} 계정에 로그인할 수 없는 경우에는 [계정 요청을 작성 ](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")하십시오.
 
 ## Cloud Foundry란 무엇입니까?
 {: #cloud-foundry}
@@ -78,7 +78,7 @@ Lite 플랜 인스턴스의 어느 할당량에든 도달하면 해당 월에 �
 
 **관리 > 청구 및 사용량**으로 이동하고 **사용량**을 선택하여 사용량을 확인할 수 있습니다. 자세한 정보는 [사용량 보기](/docs/billing-usage?topic=billing-usage-viewingusage)를 참조하십시오.
 
-## 내 계정에서 서비스를 어떻게 삭제합니까? 
+## 내 계정에서 서비스를 어떻게 삭제합니까?
 {: #accounts-service-removal}
 {: faq}
 
@@ -94,26 +94,23 @@ Lite 플랜 인스턴스의 어느 할당량에든 도달하면 해당 월에 �
 {: #changeacct}
 {: faq}
 
-* Lite에서 종량과금제 또는 구독 계정으로 업그레이드하려면 [계정 설정](https://{DomainName}/account/settings)으로 이동하십시오.
-  * 종량과금제 계정으로 업그레이드하려면 **신용카드 추가**를 클릭하십시오.
-  * 구독 계정으로 업그레이드하려면 **업그레이드**를 클릭하십시오.
-* 종량과금제 계정과 구독 계정을 상호 변환하려면 [{{site.data.keyword.Bluemix_notm}} 영업 팀 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}에 문의하십시오.
+Lite 계정을 업그레이드하려면 [계정 설정](https://{DomainName}/account/settings)으로 이동하십시오. 계정 업그레이드 섹션에서 **신용카드 추가**를 클릭하여 종량과금제 계정으로 업그레이드하거나 구독 계정 **업그레이드**를 클릭하십시오. 계정 설정 페이지에서 Lite 계정을 체험판 계정으로 변환하도록 프로모션 기능 코드도 적용할 수 있습니다.
 
-현재 계정 유형을 모르는 경우에는 계정 설정 페이지에서 찾아볼 수 있습니다.
+종량과금제 계정과 구독 계정을 상호 변환하려면 [{{site.data.keyword.Bluemix_notm}} 영업 팀 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}에 문의하십시오.
 
-[계정 업그레이드](/docs/account?topic=account-upgrading-account)에서 자세히 볼 수 있습니다.
+현재 계정 유형을 모르는 경우에는 계정 설정 페이지에서 찾아볼 수 있습니다. [계정 업그레이드](/docs/account?topic=account-upgrading-account)에서 자세히 볼 수 있습니다.
 
 ## 내 Lite 계정을 업그레이드하는 경우 내 기존 인스턴스를 계속 사용할 수 있습니까?
 {: #nochange}
 {: faq}
 
-예, 청구 가능 계정으로 업그레이드한 후에도 Lite 계정에서 작성한 인스턴스를 계속 사용할 수 있습니다.
+예, 청구 가능 계정으로 업그레이드할 때 Lite 계정에서 작성한 인스턴스를 계속 사용할 수 있습니다.
 
 ## 내 신용카드는 어떻게 업데이트합니까?
 {: #updatepayment}
 {: faq}
 
-콘솔에서 [지불](https://cloud.ibm.com/billing/payments)로 이동하여 계정과 연관된 지불 방법을 업데이트할 수 있습니다. 지불 방법 추가에서 새 카드의 비용 청구 정보를 입력한 후 **신용카드 추가**를 클릭하십시오.
+신용카드 업데이트는 새로운 신용카드를 추가할 때와 동일하게 수행합니다. [결제](https://{DomainName}/billing/payments)로 이동하여 결제 방법 추가 섹션에서 새로운 카드의 청구 정보를 입력한 다음 **신용카드 추가**를 클릭하십시오.
 
 다른 지불 방법으로 전환하려면 **다른 방법으로 지불**을 선택한 후 **변경 요청 제출**을 클릭하십시오. 지불 방법을 변경하는 지원 케이스가 작성됩니다.
 
@@ -233,13 +230,13 @@ $200 프로모션 크레딧에 대해 자세히 알아보려면 [종량과금제
 
 IBM ID를 사용하여 {{site.data.keyword.Bluemix_notm}} 콘솔에 액세스할 수 있으므로 여전히 SoftLayer 계정의 ID를 사용하여 고객 포털에 로그인할 수 있습니다.
 
-## 내가 소유한 계정을 어떻게 볼 수 있습니까? 
+## 내가 소유한 계정을 어떻게 볼 수 있습니까?
 {: #accounts-owned}
 {: faq}
 
-IBM Cloud 콘솔 헤더에는 본인이 소유한 계정을 포함하여 본인의 로그인 ID로 가입된 모든 계정이 나열됩니다. 각 계정에서 본인의 역할은 [사용자](https://{DomainName}/iam/users) 페이지에서 확인할 수 있습니다. 
+IBM Cloud 콘솔 헤더에는 본인이 소유한 계정을 포함하여 본인의 로그인 ID로 가입된 모든 계정이 나열됩니다. 각 계정에서 본인의 역할은 [사용자](https://{DomainName}/iam/users) 페이지에서 확인할 수 있습니다.
 
-`ibmcloud account list` 명령을 실행하여 CLI를 통해 자신의 계정을 찾을 수도 있습니다. 
+`ibmcloud account list` 명령을 실행하여 CLI를 통해 자신의 계정을 찾을 수도 있습니다.
 
 ## 복수의 계정 간에 어떻게 전환합니까?
 {: #switch-between-accounts}
@@ -255,7 +252,7 @@ IBM Cloud 콘솔 헤더에는 본인이 소유한 계정을 포함하여 본인�
 
 계정 내 개별 자원의 소유권을 다른 사람에게 이전하려는 경우 `ibmcloud catalog` 명령을 사용할 수 있습니다. 자세히 알아보려면 [개인용 리소스의 소유권 이전](/docs/account?topic=account-include#owners)을 참조하십시오.
 
-전체 계정의 소유권을 이전하려면 지원 센터의 추가 지원이 필요합니다. 도움을 얻으려면 [지원 센터에 문의](/docs/get-support?topic=get-support-getting-customer-support)하십시오. 
+전체 계정의 소유권을 이전하려면 지원 센터의 추가 지원이 필요합니다. 도움을 얻으려면 [지원 센터에 문의](/docs/get-support?topic=get-support-getting-customer-support)하십시오.
 
 ## {{site.data.keyword.Bluemix_notm}}에서 사용자의 일괄처리 등록을 지원합니까?
 {: #batch-registration}

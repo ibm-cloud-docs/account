@@ -239,7 +239,8 @@
       "Kontoeigner wechseln",
       "Wie wechsele ich Kontoeigner?",
       "Eigner wechseln",
-      "Eigner ändern"
+      "Eigner ändern",
+      "Eigner übertragen"
     ],
     "batch-registration": [
       "Kann IBM Cloud die Registrierung von Benutzern mithilfe einer Batchoperation unterstützen?",

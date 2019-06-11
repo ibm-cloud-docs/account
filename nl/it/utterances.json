@@ -215,7 +215,7 @@
       "Cosa succede al mio ID account master con SoftLayer?"
     ],
     "accounts-owned": [
-      "Quali account ho? ",
+      "Quali account ho?",
       "Quali account gestisco",
       "Quanti account ho",
       "In quale account sono",
@@ -239,7 +239,8 @@
       "modifica dei proprietari dell'account",
       "Come modifico i proprietari dell'account?",
       "cambio di proprietario",
-      "modifica del proprietario"
+      "modifica del proprietario",
+      "trasferimento del proprietario "
     ],
     "batch-registration": [
       "IBM Cloud può supportare la registrazione batch degli utenti?",

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-13"
+lastupdated: "2019-05-17"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -38,7 +38,7 @@ subcollection: account
 
    提交案例后，您会收到一封电子邮件。请按照指示信息作进一步的沟通。
 
-如果无法登录到 {{site.data.keyword.Bluemix}} 帐户，请[创建帐户请求](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")。
+如果无法登录到 {{site.data.keyword.Bluemix_notm}} 帐户，请[创建帐户请求](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")。
 
 ## 什么是 Cloud Foundry？
 {: #cloud-foundry}
@@ -94,26 +94,23 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 {: #changeacct}
 {: faq}
 
-* 要从轻量帐户升级到现收现付帐户或预订帐户，请转至[帐户设置](https://{DomainName}/account/settings)。
-  * 要升级为现收现付帐户，请单击**添加信用卡**。
-  * 要升级为预订帐户，请单击**升级**。
-* 要在现收现付帐户类型和预订帐户类型之间进行转换，请联系 [{{site.data.keyword.Bluemix_notm}} 销售人员 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}。
+要升级轻量帐户，请转至[帐户设置](https://{DomainName}/account/settings)。在“帐户升级”部分中，单击**添加信用卡**以升级到现收现付帐户，或者单击**升级**以升级到预订帐户。还可以在“帐户设置”页面上应用促销特征代码将轻量帐户转换为试用帐户。
 
-如果您不确定自己的当前帐户类型，可以在“帐户设置”页面上找到此信息。
+要在现收现付帐户类型和预订帐户类型之间进行转换，请联系 [{{site.data.keyword.Bluemix_notm}} 销售人员 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}。
 
-要了解更多信息，请参阅[升级帐户](/docs/account?topic=account-upgrading-account)。
+如果您不确定自己的当前帐户类型，可以在“帐户设置”页面上找到此信息。要了解更多信息，请参阅[升级帐户](/docs/account?topic=account-upgrading-account)。
 
 ## 如果升级轻量帐户，可以继续使用现有实例吗？
 {: #nochange}
 {: faq}
 
-可以，可以升级到计费帐户，并继续使用通过轻量帐户创建的实例。
+可以，升级到计费帐户之后，可以继续使用通过轻量帐户创建的实例。
 
 ## 如何更新信用卡？
 {: #updatepayment}
 {: faq}
 
-您可以通过转至控制台中的[付款](https://cloud.ibm.com/billing/payments)，更新与帐户关联的付款方式。在“添加付款方式”下，输入新卡的帐单信息，然后单击**添加信用卡**。
+更新信用卡就像添加新信用卡一样。请转至[付款方式](https://{DomainName}/billing/payments)，并在“添加付款方式”部分输入新卡的帐单信息，然后单击**添加信用卡**。
 
 要切换到其他付款方式，请选择**其他付款方式**，然后单击**提交变更请求**。这将为您创建一个用于更改付款方式的支持案例。
 

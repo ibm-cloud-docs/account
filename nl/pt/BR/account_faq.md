@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-13"
+lastupdated: "2019-05-17"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -38,7 +38,7 @@ Se você puder efetuar login em uma conta do {{site.data.keyword.Bluemix_notm}},
 
    Depois de abrir o caso, uma notificação por e-mail é enviada a você. Siga as instruções para obter comunicação adicional.
 
-Se não for possível efetuar login em uma conta do {{site.data.keyword.Bluemix}}, [crie uma solicitação de conta](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo").
+Se não for possível efetuar login em uma conta do {{site.data.keyword.Bluemix_notm}}, [crie uma solicitação de conta](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo").
 
 ## O que é Cloud Foundry?
 {: #cloud-foundry}
@@ -95,26 +95,23 @@ Se você tiver uma conta faturável, não haverá limite para o número de grupo
 {: #changeacct}
 {: faq}
 
-* Para fazer upgrade de uma conta Lite para uma Pré-paga ou de Assinatura, acesse [Configurações da conta](https://{DomainName}/account/settings).
-  * Para fazer upgrade para uma conta Pré-paga, clique em **Incluir cartão de crédito**.
-  * Para fazer upgrade para uma conta de Assinatura, clique em **Upgrade**.
-* Para converter entre os tipos de conta Pré-paga e de Assinatura, entre em contato com a equipe de [{{site.data.keyword.Bluemix_notm}} Vendas ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
+Para fazer upgrade de sua conta Lite, acesse [Configurações da conta](https://{DomainName}/account/settings). Na seção Upgrade de conta, clique em **Incluir cartão de crédito** para fazer upgrade para uma conta pré-paga ou clique em **Fazer upgrade** para uma conta de assinatura. Também é possível aplicar um código de recurso promocional para converter sua conta Lite em uma conta de avaliação na página Configurações da conta.
 
-Se você não tiver certeza do seu tipo de conta atual, será possível localizá-lo na página Configurações da conta.
+Para converter entre os tipos de conta Pré-paga e de Assinatura, entre em contato com a equipe de [{{site.data.keyword.Bluemix_notm}} Vendas ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
-Saiba mais em [Fazendo upgrade de sua conta](/docs/account?topic=account-upgrading-account).
+Se você não tiver certeza do seu tipo de conta atual, será possível localizá-lo na página Configurações da conta. Saiba mais em [Fazendo upgrade de sua conta](/docs/account?topic=account-upgrading-account).
 
 ## Se eu fizer upgrade da minha conta Lite, será possível continuar a usar minhas instâncias existentes?
 {: #nochange}
 {: faq}
 
-Sim, é possível fazer upgrade para uma conta faturável e continuar a usar as instâncias que você criou com sua conta Lite.
+Sim, quando você faz upgrade para uma conta faturável, é possível continuar a usar as instâncias que você criou com sua conta Lite.
 
 ## Como atualizar meu cartão de crédito?
 {: #updatepayment}
 {: faq}
 
-É possível atualizar o método de pagamento que está associado à sua conta acessando [Pagamentos](https://cloud.ibm.com/billing/payments) no console. Sob Incluir método de pagamento, insira as informações de faturamento para o seu novo cartão e, em seguida, clique em **Incluir cartão de crédito**.
+A atualização de seu cartão de crédito é exatamente como incluir um novo. Acesse [Pagamentos](https://{DomainName}/billing/payments) e, na seção Incluir método de pagamento, insira as informações de faturamento para o seu novo cartão e, em seguida, clique em **Incluir cartão de crédito**.
 
 Para alternar para um método de pagamento diferente, selecione **Pagamento com outro** e, em seguida, clique em **Enviar solicitação de mudança**. Um caso de suporte para mudar o seu método de pagamento será criado para você.
 

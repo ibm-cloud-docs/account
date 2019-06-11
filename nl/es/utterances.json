@@ -239,7 +239,8 @@
       "cambiar propietarios de cuenta",
       "¿Cómo se cambia el propietario de una cuenta?",
       "cambio de propietario",
-      "cambiar propietario"
+      "cambiar propietario",
+      "transferir propietario"
     ],
     "batch-registration": [
       "¿Da IBM Cloud soporte al registro por lotes de usuarios?",

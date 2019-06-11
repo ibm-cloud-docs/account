@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-13"
+lastupdated: "2019-05-17"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -38,7 +38,7 @@ subcollection: account
 
    Case のオープン後に、E メール通知が送信されます。 その後のコミュニケーションについての指示に従ってください。
 
-{{site.data.keyword.Bluemix}} アカウントにログインできない場合は、[アカウント要求を作成してください](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")。
+{{site.data.keyword.Bluemix_notm}} アカウントにログインできない場合は、[アカウント要求を作成してください](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")。
 
 ## Cloud Foundry とは?
 {: #cloud-foundry}
@@ -94,14 +94,11 @@ Cloud Foundry は、クラウド上でアプリケーションを作成および
 {: #changeacct}
 {: faq}
 
-* ライト・アカウントから従量課金 (PAYG) アカウントまたはサブスクリプション・アカウントにアップグレードするには、[「アカウント設定」](https://{DomainName}/account/settings)に進みます。
-  * 従量課金 (PAYG) アカウントにアップグレードするには、**「クレジット・カードの追加」**をクリックします。
-  * サブスクリプション・アカウントにアップグレードするには、**「アップグレード」**をクリックします。
-* 従量課金 (PAYG) アカウント・タイプとサブスクリプション・アカウント・タイプの間で変換を行うには、[{{site.data.keyword.Bluemix_notm}} 営業担当員 ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} にお問い合わせください。
+ライト・アカウントをアップグレードするには、[「アカウント設定」](https://{DomainName}/account/settings)にアクセスします。「アカウントのアップグレード」セクションで、**「クレジット・カードの追加」**をクリックして従量課金 (PAYG) アカウントにアップグレードするか、サブスクリプション・アカウントの**「アップグレード」**をクリックします。また、「アカウント設定」ページで、割引フィーチャー・コードを適用して、ライト・アカウントをトライアル・アカウントに変換することもできます。
 
-現行のアカウント・タイプが分からない場合は、「アカウント設定」ページで確認できます。
+従量課金 (PAYG) アカウント・タイプとサブスクリプション・アカウント・タイプの間で変換を行うには、[{{site.data.keyword.Bluemix_notm}} 営業担当員 ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} にお問い合わせください。
 
-詳しくは、『[アカウントのアップグレード](/docs/account?topic=account-upgrading-account)』を参照してください。
+現行のアカウント・タイプが分からない場合は、「アカウント設定」ページで確認できます。詳しくは、『[アカウントのアップグレード](/docs/account?topic=account-upgrading-account)』を参照してください。
 
 ## ライト・アカウントをアップグレードした場合、既存のインスタンスを引き続き使用できますか?
 {: #nochange}
@@ -113,7 +110,7 @@ Cloud Foundry は、クラウド上でアプリケーションを作成および
 {: #updatepayment}
 {: faq}
 
-アカウントに関連付けられている支払い方法は、コンソールで[「支払い」](https://cloud.ibm.com/billing/payments)に進むことによって更新できます。 「支払い方法の追加」の下で、新しいカードの請求先情報を入力し、**「クレジット・カードの追加」**をクリックします。
+クレジット・カードの更新は、新しいクレジット・カードの追加と同じようにできます。[「支払い」](https://{DomainName}/billing/payments)にアクセスし、「支払方法の追加 (Add Payment Method)」セクションで、新しいカードの請求情報を入力し、**「クレジット・カードの追加」**をクリックします。
 
 異なる支払い方法に切り替えるには、**「他の方法で支払う」**を選択し、**「変更要求の送信」**をクリックします。 支払い方法を変更するためのサポート Case が作成されます。
 
@@ -238,7 +235,7 @@ VPN パスワードをリセットするには、以下のステップを実行�
 {: #accounts-owned}
 {: faq}
 
-IBM Cloud コンソールのヘッダーには、自分のログイン ID を含めて、自分のログイン ID に所属するすべてのアカウントがリストされます。[「ユーザー」](https://{DomainName}/iam/users)ページで、各アカウントの自分の役割を表示できます。
+IBM Cloud コンソールのヘッダーには、自分のログイン ID を含めて、自分のログイン ID に所属するすべてのアカウントがリストされます。 [「ユーザー」](https://{DomainName}/iam/users)ページで、各アカウントの自分の役割を表示できます。
 
 `ibmcloud account list` コマンドを実行すると、CLI から自分のアカウントを検索することもできます。
 
@@ -254,9 +251,9 @@ IBM Cloud コンソールのヘッダーには、自分のログイン ID を含
 {: #switch-account-owners}
 {: faq}
 
-`ibmcloud catalog` コマンドを使用すると、アカウント内の個別リソースの所有権を他のユーザーに移動できます。詳しくは、『[プライベート・リソースの所有権の移動](/docs/account?topic=account-include#owners)』を参照してください。
+`ibmcloud catalog` コマンドを使用すると、アカウント内の個別リソースの所有権を他のユーザーに移動できます。 詳しくは、『[プライベート・リソースの所有権の移動](/docs/account?topic=account-include#owners)』を参照してください。
 
-アカウント全体の所有権を移動するには、サポートからさらに支援が必要です。支援を受けるには、[サポートにお問い合わせください](/docs/get-support?topic=get-support-getting-customer-support)。
+アカウント全体の所有権を移動するには、サポートからさらに支援が必要です。 支援を受けるには、[サポートにお問い合わせください](/docs/get-support?topic=get-support-getting-customer-support)。
 
 ## {{site.data.keyword.Bluemix_notm}} ではユーザーのバッチ登録はサポートされていますか?
 {: #batch-registration}

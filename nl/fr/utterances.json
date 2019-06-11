@@ -239,7 +239,8 @@
       "changer les propriétaires de compte",
       "Comment est-ce que je change des propriétaires de compte ?",
       "basculer un propriétaire",
-      "changer un propriétaire"
+      "changer un propriétaire",
+      "transférer un propriétaire"
     ],
     "batch-registration": [
       "IBM Cloud prend-il en charge l'enregistrement par lots d'utilisateurs ?",
