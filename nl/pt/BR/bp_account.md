@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-05-31"
 
 keywords: resource group, account access, user access, IAM, organize
 
@@ -40,7 +40,7 @@ Os administradores poderão ter melhor controle do uso de recursos no nível de 
 
 Se você tiver uma conta Pré-paga ou de Assinatura, será possível criar mais grupos de recursos:
 
-1. Acesse **Gerenciar** > **Conta** e selecione **Grupos de recursos** no menu **Recursos de conta**.
+1. Acesse **Gerenciar > Conta**. Expanda **Recursos da conta** e selecione **Grupos de recursos**.
 3. Clique em **Criar**.
 4. Insira o nome de seu grupo de recursos.
 5. Clique em **Incluir**.
@@ -72,7 +72,7 @@ Como proprietário da conta, é possível incluir recursos em qualquer grupo de 
 
 Para incluir um recurso em um grupo de recursos, conclua as etapas a seguir:
 
-1. Acesse **Gerenciar > Conta** e selecione **Grupos de recursos**.
+1. Acesse **Gerenciar** > **Conta** e selecione **Grupos de recursos** no menu **Recursos de conta**.
 2. Clique no ícone Ações ![Ícone Ações](../icons/action-menu-icon.svg) para o grupo de recursos no qual você deseja incluir recursos e selecione **Incluir recursos**.
 3. Depois de ser redirecionado para o catálogo, selecione o recurso que você gostaria de incluir.
 4. Selecione o grupo de recursos para o qual você deseja designá-lo.
