@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-28"
+lastupdated: "2019-05-13"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -38,7 +38,7 @@ subcollection: account
 
    在您開啟案例之後，系統即會向您發送一則電子郵件通知。請遵循指示來進行進一步的溝通。
 
-如果無法登入 {{site.data.keyword.Bluemix_notm}} 帳戶，請[建立帳戶要求](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")。
+如果無法登入 {{site.data.keyword.Bluemix}} 帳戶，請[建立帳戶要求](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")。
 
 ## 何謂 Cloud Foundry？
 {: #cloud-foundry}
@@ -94,23 +94,26 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 {: #changeacct}
 {: faq}
 
-若要升級「精簡」帳戶，請移至[帳戶設定](https://{DomainName}/account/settings)。在「帳戶升級」區段中，按一下**新增信用卡**以升級至「隨收隨付制」帳戶，或針對「訂閱」帳戶按一下**升級**。您也可以在「帳戶設定」頁面上套用促銷特性碼，將「精簡」帳戶轉換成試用帳戶。
+* 若要從「精簡」升級至「隨收隨付制」帳戶或「訂閱」帳戶，請移至[帳戶設定](https://{DomainName}/account/settings)。
+  * 若要升級至「隨收隨付制」帳戶，請按一下**新增信用卡**。
+  * 若要升級至「訂閱」帳戶，請按一下**升級**。
+* 若要在「隨收隨付制」與「訂閱」帳戶類型之間轉換，請與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} 聯絡。
 
-若要在「隨收隨付制」與「訂閱」帳戶類型之間轉換，請與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} 聯絡。
+如果您不確定現行帳戶類型為何，可以在「帳戶設定」頁面找到。
 
-如果您不確定現行帳戶類型為何，可以在「帳戶設定」頁面找到。請在[升級帳戶](/docs/account?topic=account-upgrading-account)中進一步瞭解。
+請在[升級帳戶](/docs/account?topic=account-upgrading-account)中進一步瞭解。
 
 ## 如果我將「精簡」帳戶升級，還能繼續使用我的現有實例嗎？
 {: #nochange}
 {: faq}
 
-可以，當您升級成計費帳戶時，可以繼續使用您以「精簡」帳戶建立的實例。
+是的，您可以升級成計費帳戶，並繼續使用您以精簡帳戶建立的實例。
 
 ## 如何更新我的信用卡？
 {: #updatepayment}
 {: faq}
 
-更新信用卡就像新增信用卡一樣。請移至[付款](https://{DomainName}/billing/payments)，並在「新增付款方法」區段中，輸入新信用卡的計費資訊，然後按一下**新增信用卡**。
+移至主控台中的 [付款](https://cloud.ibm.com/billing/payments)，即可更新與您帳戶相關聯的付款方法。請在「新增付款方法」下方，輸入新信用卡的計費資訊，然後按一下**新增信用卡**。
 
 若要切換為不同的付款方法，請選取**使用其他方式付款**，然後按一下**提交變更要求**。將為您建立一個變更付款方法的支援案例。
 
@@ -155,12 +158,6 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 {: faq}
 
 請與 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} 聯絡以開立支援案例，並要求刪除您的帳戶。如果您的資料與舊帳戶相關聯並且要移至新帳戶，請在電子郵件中包含此資訊。
-
-## 如何從 {{site.data.keyword.Bluemix_notm}} 中移除我的個人資料？
-{: #remove-pi}
-{: faq}
-
-若要瞭解 IBM 如何處理您的個人資訊，請參閱 [IBM 隱私權聲明 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/privacy/){: new_window}。在「您的權利」一節中，請檢閱您可以要求移除之項目的相關資訊。按一下本節中的鏈結，即可提交要求來移除您的個人資訊。
 
 ## 為什麼我的帳戶被停用了？
 {: #account-deactivated}
@@ -296,4 +293,4 @@ IBM Cloud 主控台標頭會列出與您登入 ID 相連結的所有帳戶（包
 {: #rename-tag}
 {: faq}
 
-您無法編輯標籤的名稱。若要重新命名標籤，請將它移除，然後使用新標籤重新指派資源。
+您無法編輯標籤的名稱。若要重新命名標籤，請將它移除，然後使用新標籤重新指派資源。  

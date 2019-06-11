@@ -97,9 +97,7 @@
       "que dois-je faire pour modifier mon type de compte",
       "Où est-ce que je modifie mon compte ?",
       "Comment est-ce que je convertis mon compte ?",
-      "Je souhaite changer de type de compte ?",
-      "Mettre à niveau vers le type Abonnement",
-      "Mettre à niveau vers le type Paiement à la carte"
+      "Je souhaite changer de type de compte ?"
     ],
     "nochange": [
       "mes instances sont-elles disponibles après une mise à niveau",
@@ -142,14 +140,6 @@
       "Je souhaite fermer mon compte",
       "Dites-moi comment supprimer mon compte",
       "supprimer un compte"
-    ],
-    "remove-pi": [
-      "Comment puis-je retirer mes données à caractère personnel ?",
-      "retirer les données à caractère personnel",
-      "retirer les informations personnelles",
-      "supprimer les données à caractère personnel",
-      "supprimer mes données",
-      "effacer des données à caractère personnel"
     ],
     "account-deactivated": [
       "Pourquoi mon compte est-il désactivé ?",
@@ -249,8 +239,7 @@
       "changer les propriétaires de compte",
       "Comment est-ce que je change des propriétaires de compte ?",
       "basculer un propriétaire",
-      "changer un propriétaire",
-      "transférer un propriétaire"
+      "changer un propriétaire"
     ],
     "batch-registration": [
       "IBM Cloud prend-il en charge l'enregistrement par lots d'utilisateurs ?",

@@ -97,9 +97,7 @@
       "cosa devo fare per modificare il mio tipo di account",
       "Dove posso modificare il mio account?",
       "Come converto il mio account?",
-      "Voglio cambiare il mio tipo di account?",
-      "Esegui l'upgrade a un account Sottoscrizione",
-      "Esegui l'upgrade a un account Pagamento a consumo. "
+      "Voglio cambiare il mio tipo di account?"
     ],
     "nochange": [
       "le mie istanze sono disponibili dopo l'upgrade",
@@ -142,14 +140,6 @@
       "Voglio chiudere il mio account",
       "Vorrei sapere come eliminare il mio account",
       "elimina account"
-    ],
-    "remove-pi": [
-      "Come rimuovo i miei dati personali? ",
-      "rimuovi i dati personali",
-      "rimuovi le informazioni personali",
-      "elimina i dati personali",
-      "elimina i miei dati,",
-      "cancella i dati personali"
     ],
     "account-deactivated": [
       "Perché il mio account è disattivato?",
@@ -225,7 +215,7 @@
       "Cosa succede al mio ID account master con SoftLayer?"
     ],
     "accounts-owned": [
-      "Quali account ho?",
+      "Quali account ho? ",
       "Quali account gestisco",
       "Quanti account ho",
       "In quale account sono",
@@ -249,8 +239,7 @@
       "modifica dei proprietari dell'account",
       "Come modifico i proprietari dell'account?",
       "cambio di proprietario",
-      "modifica del proprietario",
-      "trasferimento del proprietario"
+      "modifica del proprietario"
     ],
     "batch-registration": [
       "IBM Cloud può supportare la registrazione batch degli utenti?",

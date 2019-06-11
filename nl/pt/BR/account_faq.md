@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-28"
+lastupdated: "2019-05-13"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -38,7 +38,7 @@ Se você puder efetuar login em uma conta do {{site.data.keyword.Bluemix_notm}},
 
    Depois de abrir o caso, uma notificação por e-mail é enviada a você. Siga as instruções para obter comunicação adicional.
 
-Se não for possível efetuar login em uma conta do {{site.data.keyword.Bluemix_notm}}, [crie uma solicitação de conta](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo").
+Se não for possível efetuar login em uma conta do {{site.data.keyword.Bluemix}}, [crie uma solicitação de conta](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo").
 
 ## O que é Cloud Foundry?
 {: #cloud-foundry}
@@ -95,23 +95,26 @@ Se você tiver uma conta faturável, não haverá limite para o número de grupo
 {: #changeacct}
 {: faq}
 
-Para fazer upgrade de sua conta Lite, acesse [Configurações da conta](https://{DomainName}/account/settings). Na seção Upgrade de conta, clique em **Incluir cartão de crédito** para fazer upgrade para uma conta pré-paga ou clique em **Fazer upgrade** para uma conta de assinatura. Também é possível aplicar um código de recurso promocional para converter sua conta Lite em uma conta de avaliação na página Configurações da conta.
+* Para fazer upgrade de uma conta Lite para uma Pré-paga ou de Assinatura, acesse [Configurações da conta](https://{DomainName}/account/settings).
+  * Para fazer upgrade para uma conta Pré-paga, clique em **Incluir cartão de crédito**.
+  * Para fazer upgrade para uma conta de Assinatura, clique em **Upgrade**.
+* Para converter entre os tipos de conta Pré-paga e de Assinatura, entre em contato com a equipe de [{{site.data.keyword.Bluemix_notm}} Vendas ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
-Para converter entre os tipos de conta Pré-paga e de Assinatura, entre em contato com a equipe de [{{site.data.keyword.Bluemix_notm}} Vendas ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
+Se você não tiver certeza do seu tipo de conta atual, será possível localizá-lo na página Configurações da conta.
 
-Se você não tiver certeza do seu tipo de conta atual, será possível localizá-lo na página Configurações da conta. Saiba mais em [Fazendo upgrade de sua conta](/docs/account?topic=account-upgrading-account).
+Saiba mais em [Fazendo upgrade de sua conta](/docs/account?topic=account-upgrading-account).
 
 ## Se eu fizer upgrade da minha conta Lite, será possível continuar a usar minhas instâncias existentes?
 {: #nochange}
 {: faq}
 
-Sim, quando você faz upgrade para uma conta faturável, é possível continuar a usar as instâncias que você criou com sua conta Lite.
+Sim, é possível fazer upgrade para uma conta faturável e continuar a usar as instâncias que você criou com sua conta Lite.
 
 ## Como atualizar meu cartão de crédito?
 {: #updatepayment}
 {: faq}
 
-A atualização de seu cartão de crédito é exatamente como incluir um novo. Acesse [Pagamentos](https://{DomainName}/billing/payments) e, na seção Incluir método de pagamento, insira as informações de faturamento para o seu novo cartão e, em seguida, clique em **Incluir cartão de crédito**.
+É possível atualizar o método de pagamento que está associado à sua conta acessando [Pagamentos](https://cloud.ibm.com/billing/payments) no console. Sob Incluir método de pagamento, insira as informações de faturamento para o seu novo cartão e, em seguida, clique em **Incluir cartão de crédito**.
 
 Para alternar para um método de pagamento diferente, selecione **Pagamento com outro** e, em seguida, clique em **Enviar solicitação de mudança**. Um caso de suporte para mudar o seu método de pagamento será criado para você.
 
@@ -156,14 +159,6 @@ Se decidir sair, a maneira como você cancela a sua conta depende do seu tipo de
 {: faq}
 
 Entre em contato com o Suporte do [{{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} para abrir um caso de suporte e solicitar para excluir sua conta. Se você tem dados que estão associados à sua conta antiga e deseja salvá-los e movê-los para uma nova conta, inclua essas informações em seu e-mail.
-
-## Como posso remover meus dados pessoais do {{site.data.keyword.Bluemix_notm}}?
-{: #remove-pi}
-{: faq}
-
-Para entender como a IBM manipula suas informações pessoais, veja a [Declaração de Privacidade IBM ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/privacy/){: new_window}. Na seção Your Rights, revise as informações sobre
-o que é possível solicitar para remover. Clique no link na seção para enviar uma solicitação para
-remover suas informações pessoais.
 
 ## Por que minha conta está desativada?
 {: #account-deactivated}
@@ -299,4 +294,4 @@ Antes que seja possível excluir uma tag, deve-se removê-la de todos os recurso
 {: #rename-tag}
 {: faq}
 
-Não é possível editar o nome de uma tag. Para renomear uma tag, remova-a e redesigne o recurso a uma nova tag.
+Não é possível editar o nome de uma tag. Para renomear uma tag, remova-a e redesigne o recurso a uma nova tag.  

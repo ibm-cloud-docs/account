@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-28"
+lastupdated: "2019-05-13"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -38,7 +38,7 @@ Se sei in grado di eseguire l'accesso a un account {{site.data.keyword.Bluemix_n
 
    Dopo che hai aperto il caso, ti viene inviata una notifica email. Attieniti alle istruzioni per ulteriori comunicazioni.
 
-Se non puoi accedere a un account {{site.data.keyword.Bluemix_notm}}, [crea una richiesta di account](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno").
+Se non puoi accedere a un account {{site.data.keyword.Bluemix}}, [crea una richiesta di account](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno").
 
 ## Cos'è Cloud Foundry?
 {: #cloud-foundry}
@@ -94,23 +94,26 @@ Se disponi di un account fatturabile, non esiste alcun limite al numero di grupp
 {: #changeacct}
 {: faq}
 
-Per eseguire un upgrade del tuo account Lite, vai a [Impostazioni account](https://{DomainName}/account/settings). Nella sezione Upgrade dell'account, fai clic su **Aggiungi carta di credito** per eseguire l'upgrade a un account Pagamento a consumo o fai clic su **Upgrade** per un account Sottoscrizione. Puoi anche applicare un codice funzione promozionale per convertire il tuo account Lite a un account di prova sulla pagina Impostazioni account.
+* Per eseguire l'upgrade da un account Lite a un account Pagamento a consumo o a un account Sottoscrizione, vai a [Impostazioni account](https://{DomainName}/account/settings).
+  * Per eseguire l'upgrade a un account Pagamento a consumo, fai clic su **Aggiungi carta di credito**.
+  * Per eseguire l'upgrade a un account Sottoscrizione, fai clic su **Esegui upgrade**.
+* Per una conversione tra i tipi di account Pagamento a consumo e Sottoscrizione, contatta il settore [Vendite di {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
-Per una conversione tra i tipi di account Pagamento a consumo e Sottoscrizione, contatta il settore [Vendite di {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
+Se non sei sicuro del tipo di account corrente, puoi trovarlo nella pagina Impostazioni account.
 
-Se non sei sicuro del tipo di account corrente, puoi trovarlo nella pagina Impostazioni account. Ulteriori informazioni in [Upgrade del tuo account](/docs/account?topic=account-upgrading-account).
+Ulteriori informazioni in [Upgrade del tuo account](/docs/account?topic=account-upgrading-account).
 
 ## Se eseguo l'upgrade del mio account Lite, posso continuare a utilizzare le mie istanze esistenti?
 {: #nochange}
 {: faq}
 
-Sì, quando esegui l'upgrade a un account fatturabile, puoi continuare a utilizzare le istanze create con il tuo account Lite.
+Sì, puoi eseguire l'upgrade a un account fatturabile e continuare a utilizzare le istanze create con il tuo account Lite.
 
 ## Come aggiorno la mia carta di credito?
 {: #updatepayment}
 {: faq}
 
-Aggiornare la tua carta di credito è proprio come aggiungerne una nuova. Vai a [Pagamenti](https://{DomainName}/billing/payments) e nella sezione Aggiungi metodo di pagamento, immetti le informazioni di fatturazione per la tua nuova carta di credito e fai poi clic su **Aggiungi carta di credito**.
+Puoi aggiornare il metodo di pagamento associato al tuo account andando a [Pagamenti](https://cloud.ibm.com/billing/payments) nella console. In Aggiungi metodo di pagamento, immetti le informazioni di fatturazione per la tua nuova carta e fai quindi clic su **Aggiungi carta di credito**.
 
 Per passare a un metodo di pagamento differente, seleziona **Pay with Other** e fai quindi clic su **Submit change request**. Un caso di supporto per modificare il tuo metodo di pagamento verrà creato per tuo conto.
 
@@ -120,7 +123,7 @@ Per passare a un metodo di pagamento differente, seleziona **Pay with Other** e 
 
 Nelle impostazioni del tuo profilo, puoi modificare quali notifiche email riceverai per gli eventi pianificati, per quelli non pianificati e per gli annunci.
 1. Vai a [Notifiche](https://cloud.ibm.com/user/notifications) nelle impostazioni del tuo profilo.
-1. Seleziona se ricevere notifiche email per ciascun tipo di evento.
+1. Seleziona se vuoi ricevere le notifiche email per ogni tipo di evento.
 
 Per i servizi dell'infrastruttura classica, i proprietari di account possono anche sottoscrivere gli utenti alle notifiche provenienti da tali servizi andando a **Gestisci > Account > Notifiche**.
 
@@ -155,12 +158,6 @@ Se decidi di andare via, il modo in cui annulli il tuo account dipende dal tuo t
 {: faq}
 
 Contatta il [Supporto {{site.data.keyword.Bluemix_notm}}![Icona link esterno](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} per aprire un caso di supporto e richiedere l'eliminazione del tuo account. Se hai dei dati associati al tuo account precedente che vuoi passare a un nuovo account, includi queste informazioni nell'e-mail.
-
-## Come posso rimuovere i miei dati personali da {{site.data.keyword.Bluemix_notm}}?
-{: #remove-pi}
-{: faq}
-
-Per sapere come IBM gestisce le tue informazioni personali, vedi [IBM Privacy Statement ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/privacy/){: new_window}. Nella sezione Your Rights, controlla le informazioni su cosa puoi richiedere di rimuovere. Fai clic sul link nella sezione per inviare una richiesta di rimozione delle tue informazioni personali.
 
 ## Perché il mio account è disattivato?
 {: #account-deactivated}
@@ -299,4 +296,4 @@ Prima di poter eliminare una tag, devi rimuoverla da tutte le risorse. Se ancora
 {: #rename-tag}
 {: faq}
 
-Non puoi modificare il nome di una tag. Per rinominare una tag, rimuovila e riassegna la risorsa con una nuova tag.
+Non puoi modificare il nome di una tag. Per rinominare una tag, rimuovila e riassegna la risorsa con una nuova tag.  

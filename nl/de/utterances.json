@@ -97,13 +97,11 @@
       "Was muss ich tun, um meinen Kontotyp zu ändern",
       "Wo ändere ich mein konto?",
       "Wie kann ich mein Konto konvertieren?",
-      "Ich will meinen Kontotyp wechseln",
-      "Upgrade auf Abonnement",
-      "Upgrade auf nutzungsabhängiges Konto"
+      "Ich will meinen Kontotyp wechseln"
     ],
     "nochange": [
       "Sind meine Instanzen nach dem Upgrade verfügbar",
-      "Verliere ich meine alten Instanzen, wenn ich ein Upgrade für mein Konto durchführen",
+      "Verliere ich meine alten Instanzen, wenn ich mein Konto upgrade",
       "Kann ich meine vorhandenen Services weiter verwenden, nachdem ich meinen Kontotyp geändert habe",
       "Was passiert mit meinen vorhandenen Instanzen nach dem Upgrade meines Kontos"
     ],
@@ -142,14 +140,6 @@
       "Ich will mein Konto schließen",
       "Sag mir, wie ich mein Konto lösche",
       "Konto löschen"
-    ],
-    "remove-pi": [
-      "Wie kann ich meine personenbezogenen Daten entfernen?",
-      "Personenbezogene Daten entfernen",
-      "Personenbezogene Informationen entfernen",
-      "Personenbezogene Daten löschen",
-      "Meine Daten löschen",
-      "Personenbezogene Daten löschen"
     ],
     "account-deactivated": [
       "Warum ist mein Konto inaktiviert?",
@@ -249,8 +239,7 @@
       "Kontoeigner wechseln",
       "Wie wechsele ich Kontoeigner?",
       "Eigner wechseln",
-      "Eigner ändern",
-      "Eigner übertragen"
+      "Eigner ändern"
     ],
     "batch-registration": [
       "Kann IBM Cloud die Registrierung von Benutzern mithilfe einer Batchoperation unterstützen?",
