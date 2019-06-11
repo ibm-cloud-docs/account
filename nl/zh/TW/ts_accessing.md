@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-23"
+lastupdated: "2019-06-03"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -144,7 +144,6 @@ IBM ID 鑑別服務可能有問題。
 
 按一下**重新傳送**，將另一封確認電子郵件傳送至與您 IBM ID 相關聯的電子郵件位址。如果您仍然無法完成登錄，請與 [{{site.data.keyword.Bluemix_notm}} 支援中心](/docs/get-support?topic=get-support-getting-customer-support)聯絡。  
 
-
 ## 為什麼我會遇到無法載入的主控台頁面？
 {: #ts_err}
 {: troubleshoot}
@@ -167,3 +166,22 @@ IBM ID 鑑別服務可能有問題。
   * 清除瀏覽器的 Cookie 及快取。
   * 使用不同的瀏覽器。如需 {{site.data.keyword.Bluemix_notm}} 所支援瀏覽器版本的相關資訊，請參閱 [{{site.data.keyword.Bluemix_notm}} 必要條件](/docs/overview?topic=overview-prereqs-platform)。
   * 如果您已安裝 Cloud Foundry 指令行介面，請輸入 `ibmcloud cf apps` 指令，以查看您的應用程式是否在執行中。
+
+## 如何在我的帳戶中存取基礎架構服務？
+{: #troubleshoot-infrastructure-access}
+{: troubleshoot}
+
+當您嘗試存取 IBM Cloud 主控台的基礎架構區段時，會看到訊息，指出：
+{: tsSymptoms}
+
+`This page can't be loaded because your infrastructure account is not fully configured as an IBM Cloud account.`
+
+有多個原因可讓您看到此錯誤訊息：
+{: tsCauses}
+
+* 您的[精簡帳戶](/docs/account?topic=account-accounts#liteaccount)不容許存取基礎架構服務。
+* 您的帳戶未鏈結至基礎架構帳戶。
+
+
+若要解決此問題，您必須升級至「隨收隨付制」或「訂閱」帳戶。如需相關資訊，請參閱[升級帳戶](/docs/account?topic=account-upgrading-account)。
+{: tsResolve}

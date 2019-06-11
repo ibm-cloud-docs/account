@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-10"
+lastupdated: "2019-06-03"
 
 keywords: account types, Lite, free account, paid account, buy account, account difference, compare account, subscription, service bundle
 
@@ -15,6 +15,7 @@ subcollection: account
 {:screen: .screen}
 {:tip: .tip}
 {:new_window: target="_blank"}
+{:row-headers: .row-headers}
 
 # Tipos de Conta
 {: #accounts}
@@ -39,8 +40,10 @@ A tabela a seguir fornece uma comparação das contas Lite, Pré-paga e de Assin
 | **Precificação com desconto**                  |                    |                    | ![Recurso disponível](../icons/icon_enabled.svg) |
 | **Melhor para provas de conceito de aprendizado ou construção** | ![Recurso disponível](../icons/icon_enabled.svg) | ![Recurso disponível](../icons/icon_enabled.svg) |  |
 | **Adequado para casos de uso de produção**        |                    | ![Recurso disponível](../icons/icon_enabled.svg) | ![Recurso disponível](../icons/icon_enabled.svg) |
+{: row-headers}
+{: class="comparison-table"}
 {: caption="Tabela 1. Comparação de contas do {{site.data.keyword.Bluemix_notm}}" caption-side="top"}
-
+{: summary="This table has row and column headers. The row headers identify the feature. The column headers identify the account type. To understand which features apply to the account types, navigate to the row, and find the feature that you're interested in."}
 
 ## Conta Lite
 {: #liteaccount}

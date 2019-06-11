@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-23"
+lastupdated: "2019-06-03"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -144,7 +144,6 @@ E メールが見つかりませんか? 再送
 
 **「再送」**をクリックして、IBMid に関連付けられている E メール・アドレスにもう一度確認の E メールを送信します。 それでも登録を完全できない場合は、[{{site.data.keyword.Bluemix_notm}} サポート](/docs/get-support?topic=get-support-getting-customer-support)に連絡してください。  
 
-
 ## ロードされないコンソール・ページがあるのはなぜですか?
 {: #ts_err}
 {: troubleshoot}
@@ -167,3 +166,22 @@ E メールが見つかりませんか? 再送
   * ブラウザーの Cookie およびキャッシュをクリアします。
   * 異なるブラウザーを使用します。 {{site.data.keyword.Bluemix_notm}} によりサポートされているブラウザーのバージョンについて詳しくは、[{{site.data.keyword.Bluemix_notm}} の前提条件](/docs/overview?topic=overview-prereqs-platform)を参照してください。
   * Cloud Foundry コマンド・ライン・インターフェースがインストール済みであれば、`ibmcloud cf apps` コマンドを入力してアプリが実行中であるかどうか確認します。
+
+## アカウントでインフラストラクチャー・サービスにアクセスするにはどのようにすればよいですか?
+{: #troubleshoot-infrastructure-access}
+{: troubleshoot}
+
+IBM Cloud コンソールのインフラストラクチャーのセクションにアクセスしようとしたときに以下のメッセージが表示されることがあります。
+{: tsSymptoms}
+
+`インフラストラクチャー・アカウントが IBM Cloud アカウントとして完全に構成されていないため、このページをロードできません。`
+
+このエラー・メッセージが表示される理由は複数あります。
+{: tsCauses}
+
+* [ライト・アカウント](/docs/account?topic=account-accounts#liteaccount)を使用している (ライト・アカウントではインフラストラクチャー・サービスへのアクセスは許可されていません)。
+* 使用しているアカウントがインフラストラクチャー・アカウントにリンクされていない。
+
+
+この問題を解決するには、従量課金 (PAYG) アカウントまたはサブスクリプション・アカウントにアップグレードする必要があります。詳しくは、[アカウントのアップグレード](/docs/account?topic=account-upgrading-account)を参照してください。
+{: tsResolve}
