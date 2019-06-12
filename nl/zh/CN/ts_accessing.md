@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-23"
+lastupdated: "2019-06-03"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -145,7 +145,6 @@ IBM 标识认证服务可能发生问题。
 
 单击**重新发送**以再次将确认电子邮件发送到与您的 IBM 标识关联的电子邮件地址。如果仍然无法完成注册，请联系 [{{site.data.keyword.Bluemix_notm}} 支持人员](/docs/get-support?topic=get-support-getting-customer-support)。  
 
-
 ## 为什么会遇到无法装入的控制台页面？
 {: #ts_err}
 {: troubleshoot}
@@ -168,3 +167,22 @@ IBM 标识认证服务可能发生问题。
   * 清除浏览器的 cookie 和高速缓存。
   * 使用其他浏览器。有关 {{site.data.keyword.Bluemix_notm}} 支持的浏览器版本的信息，请参阅 [{{site.data.keyword.Bluemix_notm}} 先决条件](/docs/overview?topic=overview-prereqs-platform)。
   * 如果安装了 Cloud Foundry 命令行界面，请输入 `ibmcloud cf apps` 命令以查看应用程序是否正在运行。
+
+## 如何在帐户中访问基础架构服务？
+{: #troubleshoot-infrastructure-access}
+{: troubleshoot}
+
+尝试访问 IBM Cloud 控制台的基础架构部分时，您会看到一条消息，指出：
+{: tsSymptoms}
+
+`无法装入此页面，因为您的基础架构帐户未完全配置为 IBM Cloud 帐户。`
+
+有多种原因可能会导致您看到此错误消息：
+{: tsCauses}
+
+* 您使用的是[轻量帐户](/docs/account?topic=account-accounts#liteaccount)，轻量帐户不允许访问基础架构服务。
+* 您的帐户未链接到基础架构帐户。
+
+
+要解决此问题，您必须升级到现收现付或预订帐户。有关信息，请参阅[升级帐户](/docs/account?topic=account-upgrading-account)。
+{: tsResolve}

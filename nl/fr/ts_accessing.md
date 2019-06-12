@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-23"
+lastupdated: "2019-06-03"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -137,12 +137,12 @@ La confirmation par courrier électronique est envoyée à l'adresse électroniq
 {: tsResolve}
 
 ```
-Pour finaliser votre enregistrement, consultez votre messagerie. Vous ne trouvez pas le courrier électronique ? Renvoyer
+Pour finaliser votre enregistrement, consultez votre messagerie.
+Vous ne trouvez pas le courrier électronique ? Renvoyer
 ```
 {:screen}
 
 Cliquez sur **Renvoyer** pour envoyer un autre courrier électronique de confirmation à l'adresse électronique qui est associée à votre IBMid. Si vous ne parvenez toujours pas à finaliser votre inscription, contactez le [support {{site.data.keyword.Bluemix_notm}}](/docs/get-support?topic=get-support-getting-customer-support).  
-
 
 ## Pourquoi certaines pages de la console ne se chargent-elles pas ?
 {: #ts_err}
@@ -166,3 +166,22 @@ Effectuez une ou plusieurs des actions suivantes :
   * Effacez les cookies et le cache du navigateur.
   * Utilisez un navigateur différent. Pour plus d'informations sur les versions de navigateur prises en charge par {{site.data.keyword.Bluemix_notm}}, voir [Prérequis {{site.data.keyword.Bluemix_notm}}](/docs/overview?topic=overview-prereqs-platform).
   * Si vous avez installé l'interface de ligne de commande Cloud Foundry, entrez la commande `ibmcloud cf apps` pour déterminer si votre application est en cours d'exécution.
+
+## Comment puis-je accéder aux services d'infrastructure dans mon compte ?
+{: #troubleshoot-infrastructure-access}
+{: troubleshoot}
+
+Lorsque vous tentez d'accéder aux section d'infrastructure de la console IBM Cloud, le message suivant s'affiche :
+{: tsSymptoms}
+
+`Cette page ne peut pas être chargée car votre compte d'infrastructure n'est pas entièrement configuré en tant que compte IBM Cloud. `
+
+Les raisons pour lesquelles ce message d'erreur s'affiche sont multiples :
+{: tsCauses}
+
+* Vous avez un [compte Lite](/docs/account?topic=account-accounts#liteaccount), lequel ne permet pas d'accéder aux services d'infrastructure. 
+* Votre compte n'est pas lié à un compte d'infrastructure. 
+
+
+Pour résoudre ce problème, vous devez effectuer une mise à niveau vers un compte de type Paiement à la carte ou Abonnement. Pour toute information, voir [Mise à niveau de votre compte](/docs/account?topic=account-upgrading-account).
+{: tsResolve}

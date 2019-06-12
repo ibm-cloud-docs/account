@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-23"
+lastupdated: "2019-06-03"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -142,8 +142,7 @@ Can't find the email? Resend
 ```
 {:screen}
 
-**재발송**을 클릭하여 다른 확인 이메일을 IBM ID와 연관된 이메일 주소로 발송하십시오. 여전히 등록을 완료할 수 없는 경우에는 [{{site.data.keyword.Bluemix_notm}} 지원](/docs/get-support?topic=get-support-getting-customer-support)에 문의하십시오.   
-
+**재발송**을 클릭하여 다른 확인 이메일을 IBM ID와 연관된 이메일 주소로 발송하십시오. 여전히 등록을 완료할 수 없는 경우에는 [{{site.data.keyword.Bluemix_notm}} 지원](/docs/get-support?topic=get-support-getting-customer-support)에 문의하십시오.  
 
 ## 왜 로드되지 않는 콘솔 페이지가 나타납니까?
 {: #ts_err}
@@ -167,3 +166,22 @@ Can't find the email? Resend
   * 브라우저의 쿠키와 캐시를 지우십시오.
   * 다른 브라우저를 사용하십시오. {{site.data.keyword.Bluemix_notm}}에서 지원하는 브라우저 버전에 대한 정보는 [{{site.data.keyword.Bluemix_notm}} 필수 소프트웨어](/docs/overview?topic=overview-prereqs-platform)를 참조하십시오.
   * Cloud Foundry 명령행 인터페이스를 설치한 경우에는 `ibmcloud cf apps` 명령을 입력하여 앱이 실행 중인지 확인하십시오.
+
+## 내 계정에서 인프라 서비스에 어떻게 액세스할 수 있습니까? 
+{: #troubleshoot-infrastructure-access}
+{: troubleshoot}
+
+IBM Cloud 콘솔의 인프라 섹션에 액세스하려고 하면 다음과 같은 메시지가 표시됩니다.
+{: tsSymptoms}
+
+`사용자의 인프라 계정이 완전한 IBM Cloud 계정으로 구성되지 않았기 때문에 이 페이지를 로드할 수 없습니다. `
+
+이 오류 메시지가 표시되는 이유는 여러 가지입니다.
+{: tsCauses}
+
+* 인프라 서비스에 액세스할 수 없는 [Lite 계정](/docs/account?topic=account-accounts#liteaccount)을 보유하고 있습니다. 
+* 사용자의 계정이 인프라 계정에 연결되어 있지 않습니다. 
+
+
+이 문제를 해결하려면 종량과금제 또는 구독 계정으로 업그레이드해야 합니다. 자세한 정보는 [계정 업그레이드](/docs/account?topic=account-upgrading-account)를 참조하십시오.
+{: tsResolve}

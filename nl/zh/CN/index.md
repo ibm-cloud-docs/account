@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-10"
+lastupdated: "2019-06-03"
 
 keywords: account types, Lite, free account, paid account, buy account, account difference, compare account, subscription, service bundle
 
@@ -15,6 +15,7 @@ subcollection: account
 {:screen: .screen}
 {:tip: .tip}
 {:new_window: target="_blank"}
+{:row-headers: .row-headers}
 
 # 帐户类型
 {: #accounts}
@@ -39,8 +40,10 @@ subcollection: account
 |**折扣定价**|                    |                    | ![功能可用](../icons/icon_enabled.svg) |
 |**学习或构建概念验证的最佳选择**| ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |  |
 |**适合生产用例**|                    | ![功能可用](../icons/icon_enabled.svg) | ![功能可用](../icons/icon_enabled.svg) |
+{: row-headers}
+{: class="comparison-table"}
 {: caption="表 1. {{site.data.keyword.Bluemix_notm}} 帐户比较" caption-side="top"}
-
+{: summary="This table has row and column headers. The row headers identify the feature. The column headers identify the account type. To understand which features apply to the account types, navigate to the row, and find the feature that you're interested in."}
 
 ## 轻量帐户
 {: #liteaccount}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-05-31"
 
 keywords: resource group, account access, user access, IAM, organize
 
@@ -40,7 +40,7 @@ Vous pouvez octroyer l'accès aux utilisateurs. Par exemple, un développeur dis
 
 Si vous disposez d'un compte Paiement à la carte ou Abonnement, vous pouvez créer des groupes de ressources supplémentaires :
 
-1. Accédez à **Gérer** > **Compte** et sélectionnez **Groupes de ressources** dans le menu **Ressources de compte**.
+1. Accédez à **Gérer > Compte**. Développez **Ressources de compte** et sélectionnez **Groupes de ressources**.
 3. Cliquez sur **Créer**.
 4. Entrez le nom de votre groupe de ressources.
 5. Cliquez sur **Ajouter**.
@@ -72,7 +72,7 @@ En tant que propriétaire de compte, vous pouvez ajouter des ressources à un gr
 
 Pour ajouter une ressource à un groupe de ressources, procédez comme suit :
 
-1. Accédez à **Gérer > Compte** et sélectionnez **Groupes de ressources**.
+1. Accédez à **Gérer** > **Compte** et sélectionnez **Groupes de ressources** dans le menu **Ressources de compte**.
 2. Cliquez sur l'icône Actions ![Icône Actions](../icons/action-menu-icon.svg) pour le groupe de ressources auquel vous souhaitez ajouter des ressources et sélectionnez **Ajouter des ressources**.
 3. Lorsque vous êtes redirigé vers le catalogue, sélectionnez la ressource que vous souhaitez ajouter.
 4. Sélectionnez le groupe de ressources auquel vous souhaitez l'affecter.
