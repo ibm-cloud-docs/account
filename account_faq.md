@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-28"
+lastupdated: "2019-06-11"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -82,7 +82,7 @@ You can check your usage by going to **Manage > Billing and usage** and selectin
 {: #accounts-service-removal}
 {: faq}
 
-If you want to stop or delete a service, you can do so from the resource list. Learn more in [Navigating the {{site.data.keyword.Bluemix_notm}} console](/docs/overview?topic=overview-ui).
+If you want to delete a service, you can do so from the resource list. Learn more in [Working with resources and services](/docs/resources?topic=resources-resources-faq#service-removal).
 
 ## How many resource groups, orgs, or spaces can I create?
 {: #resourcelimit}
@@ -248,9 +248,9 @@ You can also find your accounts from the CLI by running the `ibmcloud account li
 {: #switch-between-accounts}
 {: faq}
 
-If you have more than one account, you can click your account name to select another account that you have access to.  
+If you have more than one account, you can click your account name in the console menu bar to select another account that you have access to.  
 
-![Account switcher screen capture.](images/account-faq.svg "Account switcher screen capture")
+![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-faq.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.")
 
 ## Can I make someone else the account owner?
 {: #switch-account-owners}
@@ -258,7 +258,7 @@ If you have more than one account, you can click your account name to select ano
 
 You can transfer ownership of individual resources within your account to someone else by using the `ibmcloud catalog` command. To learn more, see [Transferring ownership of a private resource](/docs/account?topic=account-include#owners).
 
-Transferring ownership of your entire account requires additional help from support. To get help, [contact support](/docs/get-support?topic=get-support-getting-customer-support).
+To transfer ownership of your entire account, update your [company profile](https://{DomainName}/account/company-profile). For more information, see [Transferring ownership of your account](/docs/account?topic=account-transfer).
 
 ## Does {{site.data.keyword.Bluemix_notm}} support batch registration of users?
 {: #batch-registration}
@@ -296,4 +296,4 @@ Before you can delete a tag, you must remove it from all resources. If you still
 {: #rename-tag}
 {: faq}
 
-You can't edit the name of a tag. To rename a tag, remove it and reassign the resource with a new tag.
+You can't edit the name of a tag. To rename a tag, remove it and reassign the resource with a new tag.  
