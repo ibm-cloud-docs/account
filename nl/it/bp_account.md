@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-05-31"
 
 keywords: resource group, account access, user access, IAM, organize
 
@@ -40,7 +40,7 @@ Puoi concedere l'accesso agli utenti. Ad esempio, uno sviluppatore di solito dis
 
 Se disponi di un account Pagamento a consumo o Sottoscrizione, puoi creare ulteriori gruppi di risorse:
 
-1. Vai a **Gestisci** > **Account** e seleziona **Gruppi di risorse** dal menu **Risorse account**.
+1. Vai a **Gestisci > Account**. Espandi **Risorse account** e seleziona **Gruppi di risorse**.
 3. Fai clic su **Crea**.
 4. Immetti il nome del tuo gruppo di risorse.
 5. Fai clic su **Aggiungi**.
@@ -72,7 +72,7 @@ In qualità di proprietario dell'account, puoi aggiungere risorse a qualsiasi gr
 
 Per aggiungere una risorsa a un gruppo di risorse, completa la seguente procedura:
 
-1. Vai a **Gestisci > Account** e seleziona **Gruppi di risorse**.
+1. Vai a **Gestisci** > **Account** e seleziona **Gruppi di risorse** dal menu **Risorse account**.
 2. Fai clic sull'icona Azioni ![Icona Azioni](../icons/action-menu-icon.svg) per il gruppo di risorse a cui vuoi aggiungere le risorse e seleziona **Aggiungi risorse**.
 3. Dopo che sei stato reindirizzato al catalogo, seleziona la risorsa che vuoi aggiungere.
 4. Seleziona il gruppo di risorse a cui vuoi assegnarla.

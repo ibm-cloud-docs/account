@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-23"
+lastupdated: "2019-06-03"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -144,7 +144,6 @@ Non riesci a trovare l'email? Invia nuovamente
 
 Fai clic su **Invia nuovamente** per inviare un'altra email di conferma all'indirizzo email associato al tuo ID IBM. Se ancora non riesci a completare la tua registrazione, contatta il [Supporto {{site.data.keyword.Bluemix_notm}}](/docs/get-support?topic=get-support-getting-customer-support).  
 
-
 ## Perché mi imbatto in pagine della console che non si caricano?
 {: #ts_err}
 {: troubleshoot}
@@ -168,3 +167,22 @@ riesegui l'accesso.
   * Cancella i cookie e la cache del browser.
   * Utilizza un browser differente. Per informazioni sulle versioni dei browser supportate da {{site.data.keyword.Bluemix_notm}}, vedi [Prerequisiti di {{site.data.keyword.Bluemix_notm}}](/docs/overview?topic=overview-prereqs-platform).
   * Se hai installato l'interfaccia riga di comando Cloud Foundry, immetti il comando `ibmcloud cf apps` per vedere se la tua applicazione è in esecuzione.
+
+## Come posso accedere ai servizi dell'infrastruttura nel mio account?
+{: #troubleshoot-infrastructure-access}
+{: troubleshoot}
+
+Quando tenti di accedere alle sezioni dell'infrastruttura della console IBM Cloud, visualizzi un messaggio che indica:
+{: tsSymptoms}
+
+`This page can't be loaded because your infrastructure account is not fully configured as an IBM Cloud account.`
+
+Esistono molti motivi per cui potresti visualizzare questo messaggio di errore:
+{: tsCauses}
+
+* Hai un [account Lite](/docs/account?topic=account-accounts#liteaccount), che non permette l'accesso ai servizi dell'infrastruttura.
+* Il tuo account non è collegato a un account dell'infrastruttura.
+
+
+Per risolvere questo problema, devi eseguire l'upgrade a un account Pagamento a consumo o Sottoscrizione. Per informazioni, vedi [Upgrade del tuo account](/docs/account?topic=account-upgrading-account).
+{: tsResolve}
