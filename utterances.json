@@ -330,7 +330,9 @@
       "adding users to org",
       "add people to an org",
       "Can I add users to an org?",
-      "Who is allowed to add users to an org?"
+      "Who is allowed to add users to an org?",
+      "can't invite user",
+      "can't create user"
     ],
     "ts_no_space": [
       "Why aren't there any spaces associated with my current organization?",
