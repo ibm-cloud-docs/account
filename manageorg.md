@@ -4,7 +4,7 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-28"
 
-keywords: account owner, user roles, manage account, orgs, spaces
+keywords: update orgs, update spaces, quotas, Cloud Foundry orgs, domains
 
 subcollection: account
 
@@ -57,7 +57,7 @@ You can view the resources of only one org at a time. If you are a member of mul
 
     As an account owner or organization manager, you can view the system domain and add custom domains for applications that are built within an org and its spaces. If you're a space manager, this page displays read-only list of the domains that are assigned to the space.
 
-    If you add a custom domain, you must configure your DNS server to resolve your custom domain to point to the {{site.data.keyword.Bluemix_notm}} system domain. In this way, when {{site.data.keyword.Bluemix_notm}} receives a request for your custom domain, it's properly routed to your app. The system domain is always available to a space, and custom domains might also be allocated to a space. Apps that are created in a space might use any of the domains that are listed for that space. For more information about creating and by using custom domains, see [Managing your domains](/docs/apps?topic=creating-apps-update-domain#update-domain).
+    If you add a custom domain, you must configure your DNS server to resolve your custom domain to point to the {{site.data.keyword.Bluemix_notm}} system domain. In this way, when {{site.data.keyword.Bluemix_notm}} receives a request for your custom domain, it's properly routed to your app. The system domain is always available to a space, and custom domains might also be allocated to a space. Apps that are created in a space might use any of the domains that are listed for that space. For more information about creating and by using custom domains, see [Managing your domains](/docs/apps?topic=creating-apps-update-domain).
 
   * To manage the allocated quota for an org, click the Actions icon ![Action icon](../icons/action-menu-icon.svg) for the respective org, and select **Quotas**.
     {: #managequota}

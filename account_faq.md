@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-11"
+lastupdated: "2019-06-19"
 
-keywords: account, upgrade, account settings, IBM Cloud account, Lite account
+keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
 subcollection: account
 
@@ -17,14 +17,17 @@ subcollection: account
 {:faq: data-hd-content-type='faq'}
 {:tip: .tip}
 
-# FAQs
+# FAQs for account
 {: #accountfaqs}
+
+FAQs for your {{site.data.keyword.cloud}} might include questions about lite accounts, reassigning users, account errors, or account tags. To find all FAQs for {{site.data.keyword.cloud_notm}}, see our FAQ library. 
+{: shortdesc}
 
 ## How do I create an account?
 {: #create-account}
 {: faq}
 
-Go to [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon"), and click **Create an {{site.data.keyword.Bluemix_notm}} account** to create a Lite account that never expires. See [Lite account](/docs/account?topic=account-liteaccount#liteaccount) for more details about the included features.
+Go to [{{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon"), and click **Create an {{site.data.keyword.Bluemix_notm}} account** to create a Lite account that never expires. See [Lite account](/docs/account?topic=account-liteaccount#liteaccount) for more details about the included features.
 
 
 ## How do I resolve errors that occur when creating my account?

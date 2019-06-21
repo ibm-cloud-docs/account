@@ -4,7 +4,7 @@ copyright:
   years: 2019
 lastupdated: "2019-06-11"
 
-keywords: change owner, transfer account, transfer account ownership, switch owner
+keywords: change owner, transfer account, transfer account ownership, switch owner, transfer owner
 
 subcollection: account
 

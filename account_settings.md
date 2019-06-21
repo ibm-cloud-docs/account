@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: account settings, account owner, account name
+keywords: account settings, edit account name, view account type
 
 subcollection: account
 
@@ -20,7 +20,7 @@ subcollection: account
 # Viewing your account settings
 {: #account_settings}
 
-As an account owner, you can change the account name and view your account type. If you have an IAM operator role or higher on all account management services, you can view and update the account name.  
+As an {{site.data.keyword.cloud}} account owner, you can change the account name and view your account type. If you have an IAM operator role or higher on all account management services, you can view and update the account name.  
 {:shortdesc}
 
 ## Editing the account name

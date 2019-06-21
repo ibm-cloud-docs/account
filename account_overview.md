@@ -2,9 +2,9 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-02-12"
+lastupdated: "2019-06-19"
 
-keywords: IBM Cloud account, account differences, resources, access
+keywords: IBM Cloud account, account differences, account overview, account components, how access works
 
 subcollection: account
 
@@ -17,15 +17,17 @@ subcollection: account
 {:new_window: target="_blank"}
 
 
-# Account hierarchy
+# What's in an account?
 {: #overview}
 
-Your {{site.data.keyword.Bluemix}} account includes many interacting components and systems. Get an understanding of how certain components are connected and how access works across your account.
+Your {{site.data.keyword.Bluemix}} account includes many interacting components and systems. Concepts like how certain components are connected or how access works help you in understanding how to set up your account.
 {:shortdesc}
 
 <a href="https://cloud.ibm.com/docs/api/content/account/images/account_diagram.svg">
-  <img src="images/account_diagram.svg" alt="account diagram">
+  <img src="images/account_diagram.svg" alt="A diagram that shows the components in an account, including services, users, and the subcomponents of each.">
 </a>
+
+Figure 1. Account components and systems
 
 Within the diagram, there are two main concepts for the components in the account hierarchy that are important to understand. The use of the solid lines and the dotted lines help illustrate that some components are contained within others, for example, users are added to access groups or Cloud Foundry orgs. However, some components interact with others for providing access instead of membership. For example, users are given access to resource groups but are not members of a resource group the same way they are for access groups. These concepts are also explained in the following sections.
 

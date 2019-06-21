@@ -2,9 +2,9 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: add user, share resource, private resource, share catalog
+keywords: add user, share resource, private resource, share catalog, find resource, set visibility
 
 subcollection: account
 
@@ -18,8 +18,8 @@ subcollection: account
 # Adding accounts to your private resource
 {: #include}
 
-Any {{site.data.keyword.Bluemix}} private resource that you create is restricted by default. If you're an administrator for the account, you can choose who can view your resource by adding the user to an inclusion list.
-{:shortdesc: .shortdesc}
+Any {{site.data.keyword.Bluemix}} private resource that you create is restricted by default. If you're an administrator for the account, you can choose who can view your resource by adding the user to an inclusion list. You can also transfer ownership of a private resource.
+{:shortdesc}
 
 You can use the {{site.data.keyword.Bluemix}} [command-line interface (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) or console to determine whether you have access to allow users to view a private resource that was added to the account. If you're an account owner, you can give access to a user in your account from the console by assigning an access policy. For more information, see [Managing access to your account](/docs/account?topic=account-find-access).
 
@@ -33,7 +33,10 @@ Run the `ibmcloud catalog service <service-id or service-name>` command. Replace
 
 Run the following command to allow an account to see your private resource.
 
-`ibmcloud catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>`
+```
+ibmcloud catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>
+```
+{:codeblock}
 
 After the includes-add flag, you can add a comma-separated list of emails or IDs associated with accounts.
 
@@ -79,19 +82,24 @@ Children           Name                                          Kind         ID
 
 You can get the resource ID for the child deployment, and then include an account by running the following command:
 
-`ibmcloud catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`
+```
+ibmcloud catalog entry-visibility-set <service-id> —-includes-add <some-other-account>
+```
+{:codeblock}
 
 The children of an object can inherit visibility in complex ways. If the child object is private, it has its own visibility configuration. However, if the child object is set to public, it inherits the visibility of its parent. Setting visibility on a private child object might restrict its visibility to more than the parent. For more information about how visibility works, see the [Catalog API docs](https://{DomainName}/apidocs/globalcatalog).
 
 ## Transferring ownership of a private resource
 {: #owners}
 
-If you leave your project or organization, you might want to transfer ownership of your account to someone else.
-{:shortdesc}
+If you leave your project or organization, you might want to transfer ownership of resources in your account to someone else.
 
 After you transfer ownership, you can no longer view the resource from your account. Make sure you want to transfer ownership, because this action can't be undone.
 {: important}
 
 You can use the [{{site.data.keyword.Bluemix}} command-line interface (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) to transfer ownership of a private resource. Run the following command:
 
-`ibmcloud catalog entry-visibility-set <service-id> --owner <account-id or account-email>`
+```
+ibmcloud catalog entry-visibility-set <service-id> --owner <account-id or account-email>
+```
+{:codeblock}

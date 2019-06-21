@@ -2,9 +2,9 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-20"
 
-keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, Bluemix account, Bluemix
+keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, switch to IBMid
 
 subcollection: account
 
@@ -21,7 +21,7 @@ subcollection: account
 # Switching to IBMid and linking accounts
 {: #unifyingaccounts}
 
-An IBMid is a single ID that you use to log in to your {{site.data.keyword.Bluemix}} account to access and purchase infrastructure, services, and application features. All new accounts automatically receive an IBMid and existing SoftLayer accounts, except SAML federated accounts, are enabled to switch to IBMid authentication.
+An IBMid is a single ID that you use to log in to your {{site.data.keyword.Bluemix}} account to access and purchase infrastructure, services, and application features. All new accounts automatically receive an IBMid. Existing SoftLayer accounts, except SAML-federated accounts, can be enabled to switch to IBMid authentication. You can also link accounts for a single view of your accounts, billing, and usage.
 {:shortdesc}
 
 ## Switching to IBMid
@@ -47,7 +47,7 @@ To switch your existing SoftLayer account to an IBMid, you create an IBMid and t
 ### Confirming your IBMid with the registration code
 {: #confIBMiduseregcode}
 
-1. When you receive your registration code, click the link in the email or copy the URL into a browser and enter your registration code. The registration code is valid for seven days and you can use it only once.
+1. When you receive your registration code, click the link in the email or copy the URL into a browser and enter your registration code. The registration code is valid for seven days, and you can use it only once.
 
 2. After you submit your registration code, use your IBMid to log in to the customer portal.
 
@@ -63,14 +63,14 @@ To resolve any problems with logging in with your IBMid, see [Troubleshooting fo
 ## Linking IBMid accounts
 {: #link_accounts}
 
-After accounts are switched to IBMid accounts, you can link SoftLayer accounts and {{site.data.keyword.Bluemix_notm}} accounts to use combined infrastructure as a service (IaaS) and platform as a service (PaaS) resources. Then, you can access IaaS resources and PaaS resources from a single login. Linking your accounts also provides you with a single bill for all of the PaaS and IaaS resources that you use. You can link your own account or, if you are a master user, you can link your user accounts.
+After accounts are switched to IBMid accounts, you can link SoftLayer accounts and {{site.data.keyword.Bluemix_notm}} accounts so that you can access infrastructure and platform resources from a single login. Linking your accounts also provides you with a single bill for all infrastructure and platform resources that you use. You can link your own account or, if you are a master user, you can link your user accounts.
 
 ### Linking your IBMid account
 {: #link_user_account}
 
-If you are a classic infrastructure customer, and you also have PaaS accounts in {{site.data.keyword.Bluemix_notm}} or create them, you can link IaaS and PaaS for a single view of your accounts. To link your accounts, use the following steps:
+If you are a classic infrastructure customer, and you also have an {{site.data.keyword.Bluemix_notm}} account, you can link your accounts for a single view of your accounts, billing, and usage. To link your accounts, complete the following steps:
 1. Log in to your SoftLayer account.
-2. From the Account Summary page, click **New! Link a Bluemix Account**.
+2. From the Account Summary page, click **Link an IBM Cloud Account**.
 3. Review the terms of use and click to acknowledge your acceptance.
 4. Complete one of the following final steps, depending on how your account is set up:
   * If your IBMid has an associated {{site.data.keyword.Bluemix_notm}} account you’ll be directed to an authorization page, then back to the final confirmation step.
@@ -96,7 +96,7 @@ Be sure to review the following important notes about linking accounts:
 Complete the following steps to link each SoftLayer account to an existing {{site.data.keyword.Bluemix_notm}} platform account or to create a new one:
 
    1. Log in to the customer portal with your master user account IBMid.
-   2. From the customer portal, click **Link a Bluemix Account**.
+   2. From the customer portal, click **Link an IBM Cloud Account**.
    3. Read and accept the terms for linking SoftLayer and {{site.data.keyword.Bluemix_notm}} accounts.
    4. Follow the wizard prompts, including adding the users in the SoftLayer account to the {{site.data.keyword.Bluemix_notm}} account.
    5. When you are prompted, do one of the following actions:
@@ -122,4 +122,4 @@ If you have a linked account, you can use the {{site.data.keyword.Bluemix_notm}}
 
 Other multi-factor authentication methods are not per IBMid. It is per account. When an IBMid is associated with multiple accounts, and you switch between accounts, you must confirm your identity every time you switch to a different account that requires two-factor authentication. This is true even if the prior account and the new account are both configured with the same two-factor authentication mechanism.
 
-If you previously enabled [2FA in the customer portal](/docs/customer-portal?topic=customer-portal-cp_setup-2fa#cp-enable-2fa) for your classic infrastructure resources, and then you enable the {{site.data.keyword.Bluemix_notm}} account MFA setting, the MFA account setting overrides the 2FA that you set up in the customer portal. This means you can disable the 2FA that you purchased in the customer portal in favor of the account MFA setting.
+If you previously enabled [2FA in the customer portal](/docs/customer-portal?topic=customer-portal-cp_setup-2fa) for your classic infrastructure resources, and then you enable the {{site.data.keyword.Bluemix_notm}} account MFA setting, the MFA account setting overrides the 2FA that you set up in the customer portal. This means you can disable the 2FA that you purchased in the customer portal in favor of the account MFA setting.

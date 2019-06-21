@@ -4,7 +4,7 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-04-17"
 
-keywords: account upgrade, paid account, production account, Pay-As-You-Go, Subscription
+keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
 subcollection: account
 

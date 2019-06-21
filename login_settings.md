@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: account security, account access, login security, password, authentication
+keywords: account security, login security, TOTP, MFA, password expiration
 
 subcollection: account
 
@@ -21,7 +21,7 @@ subcollection: account
 # Setting up login security
 {: #login-settings}
 
-With authorized access, you can set up extra security for your login. You can set security questions and answers, select a password expiration, set up time-based one-time passcode (TOTP) multifactor authentication (MFA), and set up external authentication options.  
+With authorized access, you can set up extra security for your {{site.data.keyword.cloud}} login. You can set security questions and answers, select a password expiration, set up time-based one-time passcode (TOTP), multifactor authentication (MFA), and set up external authentication options.  
 {:shortdesc}
 
 An account owner can require IBMid MFA on an account that you're a member of. IBMid MFA overrides any other user MFA setting. For example, when IBMid MFA is set, you're prompted for a TOTP MFA associated with your IBMid instead of security questions or one of the external authentication methods.

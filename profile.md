@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-15"
+lastupdated: "2019-06-20"
 
-keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy
+keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy, set up profile
 
 subcollection: account
 
@@ -19,7 +19,7 @@ subcollection: account
 # Setting up your profile
 {: #usersettings}
 
-In your profile, you can add a photo and personal information, manage notifications, change login settings, and monitor your privacy. Setting it up helps your teammates know who you are and how you can help.
+In your {{site.data.keyword.cloud}} profile, you can add a photo and personal information, manage notifications, change login settings, and monitor your privacy. Setting it up helps your teammates know who you are and how you can help.
 {:shortdesc}
 
 

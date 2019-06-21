@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-05-31"
+lastupdated: "2019-06-19"
 
-keywords: resource group, account access, user access, IAM, organize
+keywords: organizing resource group, account best practices, best practices account
 
 subcollection: account
 
@@ -72,7 +72,7 @@ As an account owner, you can add resources to any resource group. Other users mu
 
 To add a resource to a resource group, complete the following steps:
 
-1. Go to **Manage** > **Account**, and select **Resource groups** from the **Account resources** menu.
+1. Go to **Manage > Account**. Expand **Account resources**, and select **Resource groups**.
 2. Click the Actions icon ![Actions icon](../icons/action-menu-icon.svg) for the resource group that you want to add resources to, and select **Add resources**.
 3. After you're redirected to the catalog, select the resource you would like to add.
 4. Select the resource group that you want to assign it to.

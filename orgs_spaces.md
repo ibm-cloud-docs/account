@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-08"
+lastupdated: "2019-06-19"
 
-keywords: account, add orgs, add spaces, manage users, user access
+keywords: account, add orgs, add spaces, cloud foundry orgs
 
 subcollection: account
 
@@ -19,13 +19,15 @@ subcollection: account
 # Adding orgs and spaces
 {: #orgsspacesusers}
 
-As an {{site.data.keyword.Bluemix}} account owner, you can add orgs and spaces to your account. If you're an organization manager, you can manage the orgs in the account. You can manage Cloud Foundry orgs and spaces by going to **Manage** > **Account** and selecting **Account resources > Cloud Foundry orgs**.
+As an {{site.data.keyword.Bluemix}} account owner, you can add orgs and spaces to your account. If you're an organization manager, you can manage the orgs in the account. 
 {:shortdesc}
 
 ## Cloud Foundry org concepts
 {: #cf-org-concepts}
 
-You can use orgs to enable collaboration among users and to facilitate the logical grouping of project resources in the following ways:
+You can manage Cloud Foundry orgs and spaces by going to **Manage** > **Account** and selecting **Account resources > Cloud Foundry orgs**.
+
+Orgs enable collaboration among users and facilitate the logical grouping of project resources in the following ways:
 
    * You can group a set of spaces, apps, services, domains, routes, and users together in orgs.
    * You can manage the user access to the orgs and spaces on an individual basis.

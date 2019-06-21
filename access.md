@@ -2,9 +2,9 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: user access, IBM Cloud account access, account owner
+keywords: user access, IBM Cloud account access, account owner, delegating access, confirming access
 
 subcollection: account
 
@@ -18,7 +18,7 @@ subcollection: account
 # Managing user access to the catalog
 {: #find-access}
 
-As an {{site.data.keyword.Bluemix}} account owner, you can assign users access to the catalog by using an {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) policy. You can control the visibility of private services that are added to the account catalog or public services that are created in the account. By default, only the account owner can complete these tasks.
+As an {{site.data.keyword.Bluemix}} account owner, you can assign, delegate, and confirm users access to the catalog by using an {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) policy. You can control the visibility of private services that are added to the account catalog or public services that are created in the account. By default, only the account owner can complete these tasks.
 
 ## Delegating access
 {: #get-access}
