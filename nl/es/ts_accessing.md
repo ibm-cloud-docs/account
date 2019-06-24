@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-23"
+lastupdated: "2019-06-03"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -144,7 +144,6 @@ Para finalizar el registro, consulte su correo electrónico.
 
 Pulse **Reenviar** para enviar otro correo electrónico de confirmación a la dirección de correo electrónico asociada con su IBMid. Si sigue sin poder completar el registro, póngase en contacto con el [equipo de soporte de {{site.data.keyword.Bluemix_notm}}](/docs/get-support?topic=get-support-getting-customer-support).  
 
-
 ## ¿Por qué hay páginas de la consola que no se cargan?
 {: #ts_err}
 {: troubleshoot}
@@ -167,3 +166,22 @@ Lleve a cabo una o varias de estas acciones si es necesario:
   * Borre las cookies y la memoria caché del navegador.
   * Utilice otro navegador. Para obtener información sobre las versiones de los navegadores a las que da soporte {{site.data.keyword.Bluemix_notm}}, consulte [Requisitos previos de {{site.data.keyword.Bluemix_notm}}](/docs/overview?topic=overview-prereqs-platform).
   * Si ha instalado la interfaz de línea de mandatos Cloud Foundry, escriba el mandato `ibmcloud cf apps` para ver si la app se está ejecutando.
+
+## ¿Cómo puedo acceder a los servicios de la infraestructura en mi cuenta?
+{: #troubleshoot-infrastructure-access}
+{: troubleshoot}
+
+Cuando intenta acceder a secciones de las secciones de la infraestructura de la consola de IBM Cloud, ve un mensaje que indica:
+{: tsSymptoms}
+
+`Esta página no se puede cargar porque su cuenta de la infraestructura no está completamente configurada como una cuenta de IBM Cloud.`
+
+Existen varios motivos para que aparezca este mensaje de error:
+{: tsCauses}
+
+* Tiene una [cuenta Lite](/docs/account?topic=account-accounts#liteaccount), que no permite acceder a los servicios de la infraestructura.
+* Su cuenta no está enlazada a una cuenta de la infraestructura.
+
+
+Para solucionar este problema, debe actualizar a una cuenta de pago según uso o de suscripción. Para obtener información, consulte [Actualización de la cuenta](/docs/account?topic=account-upgrading-account).
+{: tsResolve}

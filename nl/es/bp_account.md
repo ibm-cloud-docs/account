@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-05-31"
 
 keywords: resource group, account access, user access, IAM, organize
 
@@ -40,7 +40,7 @@ Puede otorgar acceso a los usuarios. Por ejemplo, un desarrollador normalmente t
 
 Si tiene una cuenta de Pago según uso o de Suscripción, puede crear grupos de recursos adicionales:
 
-1. Vaya a **Gestionar** > **Cuenta** y seleccione **Grupos de recursos** del menú **Recursos de cuenta**.
+1. Vaya a **Gestionar > Cuenta**. Amplíe **Recursos de cuenta** y seleccione **Grupos de recursos**.
 3. Pulse **Crear**.
 4. Especifique el nombre del grupo de recursos.
 5. Pulse **Añadir**.
@@ -72,7 +72,7 @@ Como propietario de una cuenta, puede añadir recursos a cualquier grupo de recu
 
 Para añadir un recurso a un grupo de recursos, siga los siguientes pasos:
 
-1. Vaya a **Gestionar > Cuenta** y seleccione **Grupos de recursos**.
+1. Vaya a **Gestionar** > **Cuenta** y seleccione **Grupos de recursos** del menú **Recursos de cuenta**.
 2. Pulse en el icono de Acciones ![Icono de acciones](../icons/action-menu-icon.svg) correspondiente al grupo de recursos al que desea añadir recursos y seleccione **Añadir recursos**.
 3. Cuando se le redirija al catálogo, seleccione el recurso que desea añadir.
 4. Seleccione el grupo de recursos al que desea asignarlo.
