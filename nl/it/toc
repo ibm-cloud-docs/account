@@ -44,6 +44,7 @@ Gestione del tuo account
         exclude.md
 
     audit_log.md
+    transfer.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}

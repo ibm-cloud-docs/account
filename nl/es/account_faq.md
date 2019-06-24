@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-28"
+lastupdated: "2019-06-11"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -85,7 +85,7 @@ Para ver su uso, vaya a **Gestionar > Facturación y uso** y seleccione **Uso**.
 {: #accounts-service-removal}
 {: faq}
 
-Si desea detener o suprimir un servicio, puede hacerlo desde la lista de recursos. Para obtener más información, consulte [Navegación en la consola {{site.data.keyword.Bluemix_notm}}](/docs/overview?topic=overview-ui).
+Si desea suprimir un servicio, puede hacerlo desde la lista de recursos. Encontrará más información en el apartado sobre [Cómo trabajar con recursos y servicios](/docs/resources?topic=resources-resources-faq#service-removal).
 
 ## ¿Cuántos grupos de recursos, organizaciones o espacios puedo crear?
 {: #resourcelimit}
@@ -252,9 +252,9 @@ También puede encontrar las cuentas en la CLI con el mandato `ibmcloud account 
 {: #switch-between-accounts}
 {: faq}
 
-Si tiene más de una cuenta, puede pulsar en el nombre de la cuenta para seleccionar otra cuenta a la que tenga acceso.  
+Si tiene más de una cuenta, puede pulsar en el nombre de la cuenta en la barra de menús de la consola para seleccionar otra cuenta a la que tenga acceso.  
 
-![Captura de pantalla del conmutador de cuentas](images/account-faq.svg "Captura de pantalla del conmutador de cuentas")
+![Una captura de pantalla del selector de cuentas en la barra de menús de la consola. El selector de cuentas muestra el nombre y el número de cuenta, y debe seleccionar la cuenta actual para ver una lista de las otras cuentas a las que puede acceder.](images/account-faq.svg "El selector de cuentas muestra el nombre y el número de la cuenta, y debe seleccionar la cuenta actual para ver una lista de las otras cuentas a las que puede acceder.")
 
 ## ¿Puedo convertir a alguien más en propietario de cuenta?
 {: #switch-account-owners}
@@ -262,7 +262,7 @@ Si tiene más de una cuenta, puede pulsar en el nombre de la cuenta para selecci
 
 Puede transferir la propiedad de recursos individuales dentro de su cuenta a otro usuario mediante el mandato `ibmcloud catalog`. Para obtener más información, consulte [Cómo transferir la propiedad de un recurso privado](/docs/account?topic=account-include#owners).
 
-Para transferir la propiedad de toda la cuenta necesitará ayuda adicional del equipo de soporte. Para obtener ayuda, [póngase en contacto con el equipo de soporte](/docs/get-support?topic=get-support-getting-customer-support).
+Para transferir la propiedad de toda la cuenta, actualice el [perfil de la empresa](https://{DomainName}/account/company-profile). Para obtener más información, consulte [Transferencia de la propiedad de la cuenta](/docs/account?topic=account-transfer).
 
 ## ¿Ofrece soporte {{site.data.keyword.Bluemix_notm}} al registro por lotes de los usuarios?
 {: #batch-registration}
@@ -301,4 +301,4 @@ Antes de poder suprimir una etiqueta, debe eliminarla de todos los recursos. Si 
 {: #rename-tag}
 {: faq}
 
-No puede editar el nombre de una etiqueta. Para cambiar el nombre de la etiqueta, elimínela y vuelva a asignar una nueva etiqueta para el recurso.
+No puede editar el nombre de una etiqueta. Para cambiar el nombre de la etiqueta, elimínela y vuelva a asignar una nueva etiqueta para el recurso.  

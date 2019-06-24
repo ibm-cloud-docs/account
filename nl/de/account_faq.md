@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-28"
+lastupdated: "2019-06-11"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -82,7 +82,7 @@ Sie können die Nutzung überprüfen, indem Sie **Verwalten > Abrechnung und Nut
 {: #accounts-service-removal}
 {: faq}
 
-Wenn Sie einen Service stoppen oder löschen möchten, können Sie dies über die Ressourcenliste tun. Weitere Informationen finden Sie in [Navigation in der {{site.data.keyword.Bluemix_notm}}-Konsole](/docs/overview?topic=overview-ui).
+Wenn Sie einen Service löschen möchten, können Sie dies über die Ressourcenliste tun. Weitere Informationen finden Sie in [Mit Ressourcen und Services arbeiten](/docs/resources?topic=resources-resources-faq#service-removal). 
 
 ## Wie viele Ressourcengruppen, Organisationen oder Bereiche kann ich erstellen?
 {: #resourcelimit}
@@ -160,7 +160,7 @@ Wenden Sie sich an [{{site.data.keyword.Bluemix_notm}} Support ![Symbol für ext
 {: #remove-pi}
 {: faq}
 
-Informationen zur Verarbeitung personenbezogener Daten durch IBM finden Sie in der [IBM Datenschutzerklärung ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/privacy/){: new_window}. Der Abschnitt 'Ihre Rechte' enthält Informationen zu den Daten, deren Löschung Sie anfordern können. Klicken Sie auf den Link in diesem Abschnitt, wenn Sie eine Anforderung zur Löschung Ihrer personenbezogenen Daten senden möchten. 
+Informationen zur Verarbeitung personenbezogener Daten durch IBM finden Sie in der [IBM Datenschutzerklärung ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/privacy/){: new_window}. Der Abschnitt 'Ihre Rechte' enthält Informationen zu den Daten, deren Löschung Sie anfordern können. Klicken Sie auf den Link in diesem Abschnitt, wenn Sie eine Anforderung zur Löschung Ihrer personenbezogenen Daten senden möchten.
 
 ## Warum ist mein Konto inaktiviert?
 {: #account-deactivated}
@@ -248,9 +248,9 @@ Sie können Ihre Konten auch auflisten, indem Sie den Befehl `ibmcloud account l
 {: #switch-between-accounts}
 {: faq}
 
-Wenn Sie über mehrere Konten verfügen, können Sie auf einen der Kontonamen klicken, um ein anderes Konto auszuwählen, auf das Sie zugreifen können.  
+Wenn Sie über mehrere Konten verfügen, können Sie auf einen der Kontonamen in der Menüleiste der Konsole klicken, um ein anderes Konto auszuwählen, auf das Sie zugreifen können.   
 
-![Screenshot zum Wechseln von Konten](images/account-faq.svg "Screenshot zum Wechseln von Konten")
+![Screenshot der Kontoauswahl in der Menüleiste der Konsole. Kontoname und Kontonummer werden angezeigt. Sie können das aktuelle Konto auswählen, um eine Liste anderer Konten aufzurufen, auf die Sie zugreifen können.](images/account-faq.svg "In der Kontoauswahl werden der Kontoname und die Kontonummer angezeigt. Sie können das aktuelle Konto auswählen, um eine Liste anderer Konten aufzurufen, auf die Sie zugreifen können.")
 
 ## Kann ich eine andere Person als Kontoeigner angeben?
 {: #switch-account-owners}
@@ -258,7 +258,7 @@ Wenn Sie über mehrere Konten verfügen, können Sie auf einen der Kontonamen kl
 
 Sie können das Eigentumsrecht für einzelne Ressourcen innerhalb Ihres Kontos an eine andere Person übertragen, indem Sie den Befehl `ibmcloud catalog` verwenden. Weitere Informationen finden Sie in [Eigentumsrecht für eine private Ressource übertragen](/docs/account?topic=account-include#owners).
 
-Zur Übertragung des Eigentumsrechts für Ihre gesamtes Konto benötigen Sie zusätzliche Unterstützung des Support-Teams. [Wenden Sie sich an den Support](/docs/get-support?topic=get-support-getting-customer-support), um Unterstützung anzufordern.
+Wenn Sie das Eigentumsrecht für Ihr gesamtes Konto übertragen möchten, aktualisieren Sie Ihr [Unternehmensprofil](https://{DomainName}/account/company-profile). Weitere Informationen finden Sie in [Eigentumsrecht für Ihr Konto übertragen](/docs/account?topic=account-transfer).
 
 ## Unterstützt {{site.data.keyword.Bluemix_notm}} die Registrierung von Benutzern mithilfe einer Batchoperation?
 {: #batch-registration}
@@ -296,4 +296,4 @@ Bevor Sie einen Tag löschen können, müssen Sie ihn von allen Ressourcen entfe
 {: #rename-tag}
 {: faq}
 
-Der Name eines Tags kann nicht bearbeitet werden. Wenn Sie einen Tag umbenennen möchten, entfernen Sie ihn und weisen Sie der Ressource einen neuen Tag zu.
+Der Name eines Tags kann nicht bearbeitet werden. Wenn Sie einen Tag umbenennen möchten, entfernen Sie ihn und weisen Sie der Ressource einen neuen Tag zu.  

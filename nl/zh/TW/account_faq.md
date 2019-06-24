@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-28"
+lastupdated: "2019-06-11"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -82,7 +82,7 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 {: #accounts-service-removal}
 {: faq}
 
-如果想要停止或刪除服務，您可以從資源清單這麼做。請在[導覽 {{site.data.keyword.Bluemix_notm}} 主控台](/docs/overview?topic=overview-ui)中進一步瞭解。
+如果您要刪除服務，則可以從資源清單這麼做。請在[使用資源及服務](/docs/resources?topic=resources-resources-faq#service-removal)中進一步瞭解。
 
 ## 我可以建立多少資源群組、組織或空間？
 {: #resourcelimit}
@@ -248,17 +248,17 @@ IBM Cloud 主控台標頭會列出與您登入 ID 相連結的所有帳戶（包
 {: #switch-between-accounts}
 {: faq}
 
-如果您有多個帳戶，則可以按一下帳戶名稱來選取您有權存取的另一個帳戶。  
+如果您有多個帳戶，則可以按一下主控台功能表列中的帳戶名稱來選取您有權存取的另一個帳戶。  
 
-![帳戶切換器畫面擷取。](images/account-faq.svg "帳戶切換器畫面擷取")
+![主控台功能表列中帳戶選取器的畫面擷取。帳戶選取器會顯示帳戶名稱及帳號，而且您選取現行帳戶來顯示可存取的其他帳戶清單。](images/account-faq.svg "帳戶選取器會顯示帳戶名稱及帳號，而且您選取現行帳戶來顯示可存取的其他帳戶清單。")
 
 ## 我可以讓別人成為帳戶擁有者嗎？
 {: #switch-account-owners}
 {: faq}
 
-您可以使用 `ibmcloud catalog` 指令，將帳戶內個別資源的所有權傳送給某個人。若要進一步瞭解，請參閱[傳送專用資源的所有權](/docs/account?topic=account-include#owners)。
+您可以使用 `ibmcloud catalog` 指令，將帳戶內個別資源的所有權轉移給某個人。若要進一步瞭解，請參閱[轉移專用資源的所有權](/docs/account?topic=account-include#owners)。
 
-傳送整個帳戶的所有權需要支援人員的額外協助。若要取得協助，請[與支援中心聯絡](/docs/get-support?topic=get-support-getting-customer-support)。
+若要轉移整個帳戶的所有權，請更新[公司設定檔](https://{DomainName}/account/company-profile)。如需相關資訊，請參閱[轉移帳戶的所有權](/docs/account?topic=account-transfer)。
 
 ## {{site.data.keyword.Bluemix_notm}} 是否支援批次登錄使用者？
 {: #batch-registration}
@@ -296,4 +296,4 @@ IBM Cloud 主控台標頭會列出與您登入 ID 相連結的所有帳戶（包
 {: #rename-tag}
 {: faq}
 
-您無法編輯標籤的名稱。若要重新命名標籤，請將它移除，然後使用新標籤重新指派資源。
+您無法編輯標籤的名稱。若要重新命名標籤，請將它移除，然後使用新標籤重新指派資源。  

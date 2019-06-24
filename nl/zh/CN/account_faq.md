@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-28"
+lastupdated: "2019-06-11"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -82,7 +82,7 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 {: #accounts-service-removal}
 {: faq}
 
-如果要停止或删除服务，可以通过资源列表来执行此操作。请在[探索 {{site.data.keyword.Bluemix_notm}} 控制台](/docs/overview?topic=overview-ui)中了解更多信息。
+如果要删除服务，可以通过资源列表来执行此操作。要了解更多信息，请参阅[使用资源和服务](/docs/resources?topic=resources-resources-faq#service-removal)。
 
 ## 我可以创建多少个资源组、组织或空间？
 {: #resourcelimit}
@@ -248,9 +248,9 @@ IBM Cloud 控制台标题列出了与您的登录标识相关联的所有帐户�
 {: #switch-between-accounts}
 {: faq}
 
-如果您有多个帐户，那么可以单击您的帐户名称以选择您有权访问的其他帐户。  
+如果您有多个帐户，那么可以在控制台菜单栏中单击您的帐户名称，以选择您有权访问的其他帐户。  
 
-![帐户切换器截屏。](images/account-faq.svg "帐户切换器截屏")
+![控制台菜单栏中帐户选择器的截屏。帐户选择器显示帐户名称和帐号，您可选择当前帐户以显示您可以访问的其他帐户的列表。](images/account-faq.svg "帐户选择器显示帐户名称和帐号，您可选择当前帐户以显示您可以访问的其他帐户的列表。")
 
 ## 我可以将其他人设为帐户所有者吗？
 {: #switch-account-owners}
@@ -258,7 +258,7 @@ IBM Cloud 控制台标题列出了与您的登录标识相关联的所有帐户�
 
 您可以通过使用 `ibmcloud catalog` 命令将帐户中单个资源的所有权转移给其他人。要了解更多，请参阅[转移专用资源所有权](/docs/account?topic=account-include#owners)。
 
-转移整个帐户的所有权需要支持人员的额外帮助。要获取帮助，请[联系支持人员](/docs/get-support?topic=get-support-getting-customer-support)。
+要转移整个帐户的所有权，请更新[公司概要文件](https://{DomainName}/account/company-profile)。有关更多信息，请参阅[转移帐户所有权](/docs/account?topic=account-transfer)。
 
 ## {{site.data.keyword.Bluemix_notm}} 支持批量注册用户吗？
 {: #batch-registration}
@@ -296,4 +296,4 @@ IBM Cloud 控制台标题列出了与您的登录标识相关联的所有帐户�
 {: #rename-tag}
 {: faq}
 
-您无法编辑标记的名称。要重命名标记，请将其除去，然后为资源重新分配新标记。
+您无法编辑标记的名称。要重命名标记，请将其除去，然后为资源重新分配新标记。  

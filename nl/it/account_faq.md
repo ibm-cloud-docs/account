@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-28"
+lastupdated: "2019-06-11"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -82,7 +82,7 @@ Puoi consultare il tuo utilizzo andando a **Gestisci > Fatturazione e utilizzo**
 {: #accounts-service-removal}
 {: faq}
 
-Se vuoi arrestare o eliminare un servizio, puoi farlo dall'elenco di risorse. Ulteriori informazioni in [Navigazione nella console {{site.data.keyword.Bluemix_notm}}](/docs/overview?topic=overview-ui).
+Se vuoi eliminare un servizio, puoi farlo dall'elenco di risorse. Per ulteriori informazioni, vedi [Gestione di risorse e servizi](/docs/resources?topic=resources-resources-faq#service-removal).
 
 ## Quanti gruppi di risorse, organizzazioni o spazi posso creare?
 {: #resourcelimit}
@@ -248,9 +248,9 @@ Puoi anche trovare i tuoi account dalla CLI eseguendo il comando `ibmcloud accou
 {: #switch-between-accounts}
 {: faq}
 
-Se hai più di un account, puoi fare clic sul tuo nome di account per selezionare un altro account a cui hai accesso.  
+Se hai più di un account, puoi fare clic sul tuo nome di account nella barra dei menu della console per selezionare un altro account a cui hai accesso.  
 
-![Acquisizione della schermata del commutatore di account](images/account-faq.svg "Acquisizione della schermata del commutatore di account")
+![Un'acquisizione schermo del selettore dell'account nella barra dei menu della console. Il selettore dell'account visualizza il nome e il numero di account e tu selezioni l'account corrente per visualizzare un elenco di altri account a cui puoi accedere.](images/account-faq.svg "Il selettore dell'account visualizza il nome e il numero di account e tu selezioni l'account corrente per visualizzare un elenco di altri account a cui puoi accedere.")
 
 ## Come posso far sì che un'altra persona diventi proprietario dell'account?
 {: #switch-account-owners}
@@ -258,7 +258,7 @@ Se hai più di un account, puoi fare clic sul tuo nome di account per selezionar
 
 Puoi trasferire la proprietà di risorse individuali all'interno del tuo account a qualcun altro utilizzando il comando `ibmcloud catalog`. Per ulteriori informazioni, vedi [Trasferimento della proprietà di una risorsa privata](/docs/account?topic=account-include#owners).
 
-Per trasferire la proprietà di tutto il tuo account è necessario ulteriore aiuto da parte del supporto. Per assistenza, [contatta il supporto](/docs/get-support?topic=get-support-getting-customer-support).
+Per trasferire la proprietà del tuo intero account, aggiorna il [profilo aziendale](https://{DomainName}/account/company-profile). Per ulteriori informazioni, vedi [Trasferimento della proprietà del tuo account](/docs/account?topic=account-transfer).
 
 ## {{site.data.keyword.Bluemix_notm}} supporta la registrazione batch degli utenti?
 {: #batch-registration}
@@ -299,4 +299,4 @@ Prima di poter eliminare una tag, devi rimuoverla da tutte le risorse. Se ancora
 {: #rename-tag}
 {: faq}
 
-Non puoi modificare il nome di una tag. Per rinominare una tag, rimuovila e riassegna la risorsa con una nuova tag.
+Non puoi modificare il nome di una tag. Per rinominare una tag, rimuovila e riassegna la risorsa con una nuova tag.  

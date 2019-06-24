@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-28"
+lastupdated: "2019-06-11"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -82,7 +82,7 @@ Lite 플랜 인스턴스의 어느 할당량에든 도달하면 해당 월에 �
 {: #accounts-service-removal}
 {: faq}
 
-서비스를 중지 또는 삭제하고자 하는 경우 리소스 목록에서 수행할 수 있습니다. [{{site.data.keyword.Bluemix_notm}} 콘솔 탐색](/docs/overview?topic=overview-ui)에서 자세히 볼 수 있습니다.
+서비스를 삭제하고자 하는 경우 리소스 목록에서 수행할 수 있습니다. [리소스 및 서비스 관련 작업](/docs/resources?topic=resources-resources-faq#service-removal)에서 자세히 알아보십시오. 
 
 ## 얼마나 많은 리소스 그룹, 조직 또는 영역을 작성할 수 있습니까?
 {: #resourcelimit}
@@ -160,7 +160,7 @@ VPN 비밀번호를 재설정하려면 다음 단계를 완료하십시오.
 {: #remove-pi}
 {: faq}
 
-IBM에서 개인 정보를 어떻게 처리하는지 알아보려면 [IBM 개인정보처리방침 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/privacy/kr/ko){: new_window}을 참조하십시오. 사용자 권한 절에서 제거하도록 요청할 수 있는 항목에 대한 정보를 검토하십시오. 자신의 개인 정보를 제거하도록 요청을 제출하려면 이 절에 있는 링크를 클릭하십시오. 
+IBM에서 개인 정보를 어떻게 처리하는지 알아보려면 [IBM 개인정보처리방침 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/privacy/kr/ko){: new_window}을 참조하십시오. 사용자 권한 절에서 제거하도록 요청할 수 있는 항목에 대한 정보를 검토하십시오. 자신의 개인 정보를 제거하도록 요청을 제출하려면 이 절에 있는 링크를 클릭하십시오.
 
 ## 왜 내 계정이 비활성화되었습니까?
 {: #account-deactivated}
@@ -248,9 +248,9 @@ IBM Cloud 콘솔 헤더에는 본인이 소유한 계정을 포함하여 본인�
 {: #switch-between-accounts}
 {: faq}
 
-둘 이상의 계정이 있으면 계정 이름을 클릭하여 액세스 권한을 보유한 다른 계정을 선택할 수 있습니다.  
+둘 이상의 계정이 있으면 콘솔 메뉴 표시줄의 계정 이름을 클릭하여 액세스 권한을 보유한 다른 계정을 선택할 수 있습니다.  
 
-![계정 전환기 화면 캡처.](images/account-faq.svg "계정 전환기 화면 캡처")
+![콘솔 메뉴 표시줄에 있는 계정 선택기의 화면 캡처입니다. 계정 선택기는 계정 이름 및 계정 번호를 표시하며, 사용자는 현재 계정을 선택하여 액세스할 수 있는 기타 계정의 목록을 표시합니다.](images/account-faq.svg "계정 선택기는 계정 이름 및 계정 번호를 표시하며, 사용자는 현재 계정을 선택하여 액세스할 수 있는 기타 계정의 목록을 표시합니다.")
 
 ## 어떻게 다른 사용자를 계정 소유자로 만들 수 있습니까?
 {: #switch-account-owners}
@@ -258,7 +258,7 @@ IBM Cloud 콘솔 헤더에는 본인이 소유한 계정을 포함하여 본인�
 
 계정 내 개별 자원의 소유권을 다른 사람에게 이전하려는 경우 `ibmcloud catalog` 명령을 사용할 수 있습니다. 자세히 알아보려면 [개인용 리소스의 소유권 이전](/docs/account?topic=account-include#owners)을 참조하십시오.
 
-전체 계정의 소유권을 이전하려면 지원 센터의 추가 지원이 필요합니다. 도움을 얻으려면 [지원 센터에 문의](/docs/get-support?topic=get-support-getting-customer-support)하십시오.
+전체 계정의 소유권을 이전하려면 [회사 프로파일](https://{DomainName}/account/company-profile)을 업데이트하십시오. 자세한 정보는 [계정의 소유권 이전](/docs/account?topic=account-transfer)을 참조하십시오.
 
 ## {{site.data.keyword.Bluemix_notm}}에서 사용자의 일괄처리 등록을 지원합니까?
 {: #batch-registration}
@@ -296,4 +296,4 @@ IBM Cloud 콘솔 헤더에는 본인이 소유한 계정을 포함하여 본인�
 {: #rename-tag}
 {: faq}
 
-태그의 이름은 편집할 수 없습니다. 태그의 이름을 변경하려면 이를 제거한 후에 새 태그로 리소스를 재지정하십시오.
+태그의 이름은 편집할 수 없습니다. 태그의 이름을 변경하려면 이를 제거한 후에 새 태그로 리소스를 재지정하십시오.  

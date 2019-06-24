@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-28"
+lastupdated: "2019-06-11"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -82,7 +82,7 @@ Cloud Foundry は、クラウド上でアプリケーションを作成および
 {: #accounts-service-removal}
 {: faq}
 
-サービスの停止または削除は、リソース・リストから行うことができます。 詳しくは、『[{{site.data.keyword.Bluemix_notm}} コンソールのナビゲート](/docs/overview?topic=overview-ui)』を参照してください。
+サービスの削除は、リソース・リストから行うことができます。 詳しくは、『[リソースおよびサービスの処理](/docs/resources?topic=resources-resources-faq#service-removal)』を参照してください。
 
 ## 作成できるリソース・グループ数、組織数、スペース数はいくつですか?
 {: #resourcelimit}
@@ -249,9 +249,9 @@ IBM Cloud コンソールのヘッダーには、自分のログイン ID を含
 {: #switch-between-accounts}
 {: faq}
 
-アカウントを複数お持ちの場合、アカウント名をクリックして、アクセス権限のある別のアカウントを選択できます。  
+アカウントを複数お持ちの場合、コンソールのメニュー・バーでアカウント名をクリックすることで、アクセス権限をお持ちの別のアカウントを選択できます。  
 
-![アカウント切り替えの画面キャプチャー](images/account-faq.svg "アカウント切り替えの画面キャプチャー")
+![コンソールのメニュー・バーのアカウント・セレクターの画面キャプチャー。アカウント・セレクターにアカウント名とアカウント番号が表示され、現行アカウントを選択すると、アクセスできるその他のアカウントのリストが表示されます。](images/account-faq.svg "アカウント・セレクターにアカウント名とアカウント番号が表示され、現行アカウントを選択すると、アクセスできるその他のアカウントのリストが表示されます。")
 
 ## 別の人をアカウント所有者にすることはできますか?
 {: #switch-account-owners}
@@ -259,7 +259,7 @@ IBM Cloud コンソールのヘッダーには、自分のログイン ID を含
 
 `ibmcloud catalog` コマンドを使用すると、アカウント内の個別リソースの所有権を他のユーザーに移動できます。 詳しくは、『[プライベート・リソースの所有権の移動](/docs/account?topic=account-include#owners)』を参照してください。
 
-アカウント全体の所有権を移動するには、サポートからさらに支援が必要です。 支援を受けるには、[サポートにお問い合わせください](/docs/get-support?topic=get-support-getting-customer-support)。
+アカウント全体の所有権を移動するには、[会社プロファイル](https://{DomainName}/account/company-profile)を更新します。詳しくは、『[アカウントの所有権の移動](/docs/account?topic=account-transfer)』を参照してください。
 
 ## {{site.data.keyword.Bluemix_notm}} ではユーザーのバッチ登録はサポートされていますか?
 {: #batch-registration}
@@ -297,4 +297,4 @@ IBM Cloud コンソールのヘッダーには、自分のログイン ID を含
 {: #rename-tag}
 {: faq}
 
-タグの名前を編集することはできません。 タグの名前を変更するには、タグを削除し、新しいタグを使用してリソースを再割り当てします。
+タグの名前を編集することはできません。 タグの名前を変更するには、タグを削除し、新しいタグを使用してリソースを再割り当てします。  

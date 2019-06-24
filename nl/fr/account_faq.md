@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-28"
+lastupdated: "2019-06-11"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -82,7 +82,7 @@ Pour vérifier votre utilisation, accédez à **Gérer > Facturation et utilisat
 {: #accounts-service-removal}
 {: faq}
 
-Si vous souhaitez arrêter ou supprimer un service, vous pouvez effectuer cette action à partir de la liste de ressources. Pour en savoir plus, voir [Navigation dans la console {{site.data.keyword.Bluemix_notm}}](/docs/overview?topic=overview-ui).
+Si vous souhaitez supprimer un service, vous pouvez le faire depuis la liste de ressources. Découvrez comment dans [Utilisation des ressources et des services](/docs/resources?topic=resources-resources-faq#service-removal).
 
 ## Combien de groupes de ressources, d'organisations ou d'espaces puis-je créer ?
 {: #resourcelimit}
@@ -248,9 +248,9 @@ Vous pouvez également définir vos comptes à partir de l'interface de ligne de
 {: #switch-between-accounts}
 {: faq}
 
-Si vous avez plusieurs comptes, vous pouvez cliquer sur votre nom de compte pour sélectionner un autre compte auquel vous avez accès.  
+Si vous possédez plusieurs comptes, vous pouvez cliquer sur le nom de votre compte dans la barre de menus de la console pour sélectionner un autre compte auquel vous avez accès.  
 
-![Capture d'écran de commutateur de compte.](images/account-faq.svg "Capture d'écran de commutateur de compte")
+![Capture d'écran du sélecteur de compte dans la barre de menus de la console. Le sélecteur de compte affiche le nom de compte et le numéro de compte, et vous sélectionnez le compte en cours pour afficher la liste d'autres comptes auxquels vous pouvez accéder.](images/account-faq.svg "Le sélecteur de compte affiche le nom de compte et le numéro de compte, et vous sélectionnez le compte en cours pour afficher la liste d'autres comptes auxquels vous pouvez accéder.")
 
 ## Puis-je changer le propriétaire d'un compte ?
 {: #switch-account-owners}
@@ -258,7 +258,7 @@ Si vous avez plusieurs comptes, vous pouvez cliquer sur votre nom de compte pour
 
 Vous pouvez transférer la propriété de ressources individuelles au sein de votre compte à quelqu'un d'autre à l'aide de la commande `ibmcloud catalog`. Pour en savoir plus sur, voir [Transfert de la propriété d'une ressource privée](/docs/account?topic=account-include#owners).
 
-Transférer la propriété de tout votre compte requiert de l'aide supplémentaire de la part du support. Pour obtenir de l'aide, [contactez le support](/docs/get-support?topic=get-support-getting-customer-support).
+Pour transférer la propriété de la totalité de votre compte, mettez à jour votre [profil de société](https://{DomainName}/account/company-profile). Pour plus d'informations, voir [Transfert de propriété de votre compte](/docs/account?topic=account-transfer).
 
 ## {{site.data.keyword.Bluemix_notm}} prend-il en charge l'enregistrement par lots d'utilisateurs ?
 {: #batch-registration}
@@ -296,4 +296,4 @@ Avant de pouvoir supprimer une étiquette, vous devez la retirer de toutes les r
 {: #rename-tag}
 {: faq}
 
-Vous ne pouvez pas modifier le nom d'une étiquette. Pour renommer une étiquette, retirez-la et réaffectez la ressource avec une nouvelle étiquette.
+Vous ne pouvez pas modifier le nom d'une étiquette. Pour renommer une étiquette, retirez-la et réaffectez la ressource avec une nouvelle étiquette.  
