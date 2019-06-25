@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-28"
+lastupdated: "2019-06-11"
 
 keywords: account, upgrade, account settings, IBM Cloud account, Lite account
 
@@ -83,7 +83,7 @@ limites de cota são reconfigurados no primeiro dia de cada mês.
 {: #accounts-service-removal}
 {: faq}
 
-Se você deseja parar ou excluir um serviço, é possível fazer isso na lista de recursos. Saiba mais em [Navegando no console do {{site.data.keyword.Bluemix_notm}}](/docs/overview?topic=overview-ui).
+Se você deseja excluir um serviço, também é possível fazê-lo por meio da lista de recursos. Saiba mais em [Trabalhando com recursos e serviços](/docs/resources?topic=resources-resources-faq#service-removal).
 
 ## Quantos grupos de recursos, organizações ou espaços posso criar?
 {: #resourcelimit}
@@ -251,9 +251,9 @@ Também é possível localizar suas contas por meio da CLI executando o comando 
 {: #switch-between-accounts}
 {: faq}
 
-Se você tiver mais de uma conta, será possível clicar no nome da conta para selecionar outra conta para a qual tenha acesso.  
+Se você tiver mais de uma conta, será possível clicar no nome da sua conta na barra de menus do console para selecionar outra conta para a qual tiver acesso.  
 
-![Captura de tela do alternador de conta.](images/account-faq.svg "Captura de tela do alternador de conta")
+![Uma captura de tela do seletor de conta na barra de menus do console. O seletor de conta exibe o nome da conta e o número da conta, e você seleciona a conta atual para exibir uma lista das outras contas que você pode acessar.](images/account-faq.svg "O seletor de conta exibe o nome da conta e o número da conta, e você seleciona a conta atual para exibir uma lista das outras contas que você pode acessar.")
 
 ## Posso tornar alguém o proprietário da conta?
 {: #switch-account-owners}
@@ -261,7 +261,7 @@ Se você tiver mais de uma conta, será possível clicar no nome da conta para s
 
 É possível transferir a propriedade de recursos individuais dentro de sua conta a outra pessoa usando o comando `ibmcloud catalog`. Para saber mais, consulte [Transferindo a propriedade de um recurso privado](/docs/account?topic=account-include#owners).
 
-Transferindo a propriedade de toda a sua conta requer ajuda adicional do suporte. Para obter ajuda, [entre em contato com o suporte](/docs/get-support?topic=get-support-getting-customer-support).
+Para transferir a propriedade de toda a sua conta, atualize seu [perfil da empresa](https://{DomainName}/account/company-profile). Para obter mais informações, consulte [Transferindo a propriedade de sua conta](/docs/account?topic=account-transfer).
 
 ## O {{site.data.keyword.Bluemix_notm}} suporta o registro em lote de usuários?
 {: #batch-registration}
@@ -299,4 +299,4 @@ Antes que seja possível excluir uma tag, deve-se removê-la de todos os recurso
 {: #rename-tag}
 {: faq}
 
-Não é possível editar o nome de uma tag. Para renomear uma tag, remova-a e redesigne o recurso a uma nova tag.
+Não é possível editar o nome de uma tag. Para renomear uma tag, remova-a e redesigne o recurso a uma nova tag.  
