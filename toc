@@ -49,6 +49,7 @@ Managing your account
 
     {: .navgroup id="reference"}
     monitoring.md
+    [Command reference](/cli/cloud-cli-ibmcloud_commands_account)
     {: .navgroup-end}
 
     {: .navgroup id="help"}
