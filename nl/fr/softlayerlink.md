@@ -2,9 +2,9 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-20"
 
-keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, Bluemix account, Bluemix
+keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, switch to IBMid
 
 subcollection: account
 
@@ -21,7 +21,7 @@ subcollection: account
 # Passage à l'IBMid et liaison des comptes
 {: #unifyingaccounts}
 
-Un IBMid est un ID unique que vous utilisez pour vous connecter à votre compte {{site.data.keyword.Bluemix}} afin d'accéder à des fonctions d'infrastructure, de services et d'application et de les acheter. Tous les nouveaux comptes reçoivent automatiquement un IBMid et les comptes SoftLayer existants, à l'exception des comptes fédérés SAML, sont activés pour passer à l'authentification par IBMid.
+Un IBMid est un ID unique que vous utilisez pour vous connecter à votre compte {{site.data.keyword.Bluemix}} afin d'accéder à des fonctions d'infrastructure, de services et d'application et de les acheter. Tous les nouveaux comptes reçoivent automatiquement un IBMid. Les comptes SoftLayer existants, à l'exception des comptes fédérés par SAML, peuvent être activés pour passer à l'authentification IBMid. Vous pouvez également lier des comptes afin d'obtenir une vue unique de vos comptes, de la facturation et de l'utilisation.
 {:shortdesc}
 
 ## Passage à l'IBMid
@@ -51,7 +51,7 @@ Pour faire basculer votre compte SoftLayer existant vers un IBMid, vous devez cr
 
 2. Après avoir soumis votre code d'enregistrement, utilisez votre IBMid pour vous connecter au portail client.
 
-   Dans l'invite de connexion au compte, accédez à la section **Connexion à un compte avec identité IBM** et cliquez sur **Connexion avec identité IBM**. N'utilisez pas les zones **Nom d'utilisateur** et **Mot de passe** que vous utilisiez auparavant avec votre ID Softlayer.
+   Dans l'invite de connexion au compte, accédez à la section **Connexion à un compte avec identité IBM** et cliquez sur **Connexion avec identité IBM**. N'utilisez pas les zones **Nom d'utilisateur** et **Mot de passe** que vous utilisiez auparavant avec votre ID SoftLayer.
 
 Si vous êtes un nouveau client, vous êtes invité à entrer votre IBMid ou à créer un nouvel IBMid lorsque vous êtes sur le point de payer votre commande.
   * Pour utiliser un IBMid existant, entrez le nom d'utilisateur ou l'adresse électronique de l'IBMid, si ces données ne sont pas partagées par plusieurs IBMid.
@@ -63,14 +63,14 @@ Afin de résoudre les problèmes liés à la connexion avec votre IBMid, voir [T
 ## Liaison des comptes IBMid
 {: #link_accounts}
 
-Une fois que les comptes sont devenus des comptes IBMid, vous pouvez lier les comptes SoftLayer et {{site.data.keyword.Bluemix_notm}} pour utiliser des ressources IaaS (infrastructure sous forme de services) et PaaS (plateforme sous forme de services) combinées. Vous pouvez ensuite accéder aux ressources IaaS et PaaS à partir d'une seule connexion. Le fait de lier vos comptes vous permet également d'obtenir une seule facture pour toutes les ressources PaaS et IaaS que vous utilisez. Vous pouvez lier votre propre compte ou, si vous êtes un utilisateur principal, vous pouvez lier vos comptes utilisateur.
+Une fois que les comptes sont devenus des comptes IBMid, vous pouvez lier les comptes SoftLayer et les comptes {{site.data.keyword.Bluemix_notm}} afin d'accéder aux ressources d'infrastructure et de plateforme à partir d'une seule connexion. Le fait de lier vos comptes vous permet également d'obtenir une seule facture pour toutes les ressources d'infrastructure et de plateforme que vous utilisez. Vous pouvez lier votre propre compte ou, si vous êtes un utilisateur principal, vous pouvez lier vos comptes utilisateur.
 
 ### Liaison de votre compte IBMid
 {: #link_user_account}
 
-Si vous êtes un client d'infrastructure classique et que vous possédez également des comptes PaaS dans {{site.data.keyword.Bluemix_notm}} ou que vous les créez, vous pouvez lier IaaS et PaaS afin d'obtenir une vue unique de vos comptes. Pour lier vos comptes, procédez comme suit :
+Si vous êtes un client d'infrastructure classique et que vous possédez également des comptes {{site.data.keyword.Bluemix_notm}}, vous pouvez lier vos comptes afin d'obtenir une vue unique de vos comptes, de la facturation et de l'utilisation. Pour lier vos comptes, procédez comme suit :
 1. Connectez-vous à votre compte SoftLayer.
-2. Sur la page Récapitulatif du compte, cliquez sur **Nouveauté ! Liez un compte Bluemix**.
+2. Sur la page Récapitulatif du compte, cliquez sur l'option permettant de lier un compte IBM Cloud****.
 3. Lisez les conditions d'utilisation et cliquez pour confirmer que vous les acceptez.
 4. Effectuez l'une des étapes finales suivantes, en fonction de la configuration de votre compte :
   * Si un compte {{site.data.keyword.Bluemix_notm}} est associé à votre IBMid, vous êtes redirigé vers une page d'autorisation, puis ramené à l'étape de confirmation finale.
@@ -96,7 +96,7 @@ Tenez compte des remarques suivantes concernant la liaison de vos comptes :
 Pour lier chaque compte SoftLayer à un compte de plateforme {{site.data.keyword.Bluemix_notm}} existant ou pour en créer un nouveau, procédez comme suit :
 
    1. Connectez-vous au portail client avec votre IBMid de compte d'utilisateur principal.
-   2. Dans le portail client, cliquez sur **Liez un compte Bluemix**.
+   2. Dans le portail client, cliquez sur l'option permettant de lier un compte IBM Cloud****.
    3. Lisez et acceptez les dispositions pour la liaison de comptes SoftLayer et {{site.data.keyword.Bluemix_notm}}.
    4. Suivez les invites de l'assistant en ajoutant les utilisateurs du compte SoftLayer au compte {{site.data.keyword.Bluemix_notm}}.
    5. Lorsque vous y êtes invité, effectuez l'une des actions suivantes :
@@ -122,4 +122,4 @@ Si vous avez un compte lié, vous pouvez utiliser la page des paramètres d'{{si
 
 Les autres méthodes d'authentification multi-facteur ne s'effectuent pas par IBMid mais par compte. Quand un IBMid est associé à plusieurs comptes et que vous passez d'un compte à l'autre, vous devez confirmer votre identité chaque fois que vous utilisez un compte différent qui nécessite une authentification à deux facteurs. Cette règle s'applique même si le compte précédent et le nouveau compte sont tous les deux configurés avec le même mécanisme d'authentification à deux facteurs.
 
-Si vous avez déjà activé [l'authentification à deux facteurs dans le portail client](/docs/customer-portal?topic=customer-portal-cp_setup-2fa#cp-enable-2fa) pour les ressources de votre infrastructure classique et que vous activez le paramètre d'authentification multi-facteur de compte {{site.data.keyword.Bluemix_notm}}, ce dernier écrase l'authentification à deux facteurs que vous avez configurée dans le portail utilisateur. Autrement dit, vous pouvez désactiver l'authentification à deux facteurs que vous avez acquise dans le portail utilisateur au profit du paramètre d'authentification multi-facteur du compte.
+Si vous avez déjà activé [l'authentification à deux facteurs dans le portail client](/docs/customer-portal?topic=customer-portal-cp_setup-2fa) pour les ressources de votre infrastructure classique et que vous activez le paramètre d'authentification multi-facteur de compte {{site.data.keyword.Bluemix_notm}}, ce dernier écrase l'authentification à deux facteurs que vous avez configurée dans le portail utilisateur. Autrement dit, vous pouvez désactiver l'authentification à deux facteurs que vous avez acquise dans le portail utilisateur au profit du paramètre d'authentification multi-facteur du compte.

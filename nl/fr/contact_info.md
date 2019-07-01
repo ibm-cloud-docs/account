@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-20"
+  years: 2018, 2019
+lastupdated: "2019-06-19"
 
-keywords: company information, company details, company account, company profile
+keywords: company information, company details, company account, company profile, account contact
 
 subcollection: account
 
@@ -22,7 +22,7 @@ subcollection: account
 # Mise à jour des détails du profil de société
 {: #contact-info}
 
-Chaque compte {{site.data.keyword.Bluemix}} inclut un profil de société contenant les informations sur la société et les détails concernant le titulaire principal du compte. Vous pouvez utiliser les données du profil de société lorsque vous configurez des contacts et des profils utilisateur. Vous pouvez avoir différents contacts spécifiques au compte utilisés en association avec les services disponibles dans le compte. Si vous disposez d'un accès administrateur ou d'un accès supérieur, vous pouvez mettre à jour vos informations de contact.
+Chaque compte {{site.data.keyword.Bluemix}} inclut un profil de société contenant les informations sur la société et les détails concernant le titulaire principal du compte. Vous pouvez utiliser les données du profil de société lorsque vous configurez des contacts et des profils utilisateur. Vous pouvez avoir différents contacts spécifiques au compte utilisés en association avec les services disponibles dans le compte. Si vous disposez d'un accès administrateur ou d'un accès supérieur, vous pouvez mettre à jour vos informations de contact de compte.
 {:shortdesc}
 
 ## Mise à jour de votre profil de société

@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: account settings, account owner, account name
+keywords: account settings, edit account name, view account type
 
 subcollection: account
 
@@ -20,7 +20,7 @@ subcollection: account
 # Affichage de vos paramètres de compte
 {: #account_settings}
 
-En tant que propriétaire de compte, vous pouvez changer le nom du compte et afficher votre type de compte. Si vous disposez d'un rôle Opérateur IAM ou d'un rôle supérieur sur tous les services de gestion de compte, vous pouvez afficher et mettre à jour le nom du compte.  
+En tant que propriétaire de compte {{site.data.keyword.cloud}}, vous pouvez changer le nom du compte et afficher votre type de compte. Si vous disposez d'un rôle Opérateur IAM ou d'un rôle supérieur sur tous les services de gestion de compte, vous pouvez afficher et mettre à jour le nom du compte.  
 {:shortdesc}
 
 ## Edition du nom de compte

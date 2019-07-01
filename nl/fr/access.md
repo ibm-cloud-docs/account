@@ -2,9 +2,9 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: user access, IBM Cloud account access, account owner
+keywords: user access, IBM Cloud account access, account owner, delegating access, confirming access
 
 subcollection: account
 
@@ -18,7 +18,7 @@ subcollection: account
 # Gestion de l'accès utilisateur au catalogue
 {: #find-access}
 
-En tant que propriétaire de compte {{site.data.keyword.Bluemix}}, vous pouvez affecter l'accès des utilisateurs au catalogue en utilisant une règle {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM). Vous pouvez contrôler la visibilité des services privés ajoutés au catalogue ou aux services publics créés dans le compte. Par défaut, seul le propriétaire d'un compte peut effectuer ces tâches.
+En tant que propriétaire de compte {{site.data.keyword.Bluemix}}, vous pouvez affecter, déléguer et confirmer l'accès des utilisateurs au catalogue en utilisant une règle {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM). Vous pouvez contrôler la visibilité des services privés ajoutés au catalogue ou aux services publics créés dans le compte. Par défaut, seul le propriétaire d'un compte peut effectuer ces tâches.
 
 ## Délégation de l'accès
 {: #get-access}
@@ -57,4 +57,4 @@ Pour utiliser la console, procédez comme suit :
   3. Cliquez sur l'onglet **Règles d'accès**, dans lequel vous pouvez visualiser les règles d'accès qui vous sont affectées. Vous devez disposer du rôle Administrateur IAM Cloud pour le catalogue de ressources de votre compte pour mettre à jour la liste incluant les comptes afin de voir les ressources privées du catalogue.
 
 
-Pour utiliser l'[interface CLI](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_commands_iam), exécutez la commande `ibmcloud iam user-policies <your-user-name>`. L'exécution de la commande génère une erreur si vous n'êtes pas administrateur du compte.
+Pour utiliser l'interface [CLI](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_commands_iam), exécutez la commande `ibmcloud iam user-policies <your-user-name>`. L'exécution de la commande génère une erreur si vous n'êtes pas administrateur du compte.

@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: account security, account access, login security, password, authentication
+keywords: account security, login security, TOTP, MFA, password expiration
 
 subcollection: account
 
@@ -21,7 +21,7 @@ subcollection: account
 # Configuration de la sécurité de connexion
 {: #login-settings}
 
-Avec l'accès autorisé, vous pouvez configurer des options de sécurité supplémentaires pour votre connexion. Vous pouvez définir des questions et des réponses de sécurité, sélectionner une expiration de mot de passe, configurer l'authentification multi-facteur de code d'accès à usage unique à durée limité (TOTP) et configurer les options d'authentification externe.  
+Avec l'accès autorisé, vous pouvez configurer des options de sécurité supplémentaires pour votre connexion {{site.data.keyword.cloud}}. Vous pouvez définir des questions et des réponses de sécurité, sélectionner une expiration de mot de passe, configurer le code d'accès à usage unique à durée limité (TOTP) ainsi que l'authentification multi-facteur (MFA) et configurer les options d'authentification externe.  
 {:shortdesc}
 
 Un propriétaire de compte peut exiger une authentification multi-facteur IBMid pour un compte dont vous êtes membre. L'authentification multi-facteur IBMid remplace tout autre paramètre utilisateur d'authentification multi-facteur. Par exemple, lorsque l'authentification multi-facteur IBMid est définie, vous êtes invité à effectuer l'authentification multi-facteur TOTP associée à votre ID IBMid au lieu d'utiliser des questions de sécurité ou une des méthodes d'authentification externe.

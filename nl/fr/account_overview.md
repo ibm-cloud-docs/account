@@ -2,9 +2,9 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-02-12"
+lastupdated: "2019-06-19"
 
-keywords: IBM Cloud account, account differences, resources, access
+keywords: IBM Cloud account, account differences, account overview, account components, how access works
 
 subcollection: account
 
@@ -17,15 +17,17 @@ subcollection: account
 {:new_window: target="_blank"}
 
 
-# Hiérarchie de compte
+# De quoi un compte est-il composé ?
 {: #overview}
 
-Votre compte {{site.data.keyword.Bluemix}} inclut plusieurs composants et systèmes interagissant les uns avec les autres. Découvrez comment certains composants sont connectés et comment l'accès fonctionne dans votre compte.
+Votre compte {{site.data.keyword.Bluemix}} inclut plusieurs composants et systèmes interagissant les uns avec les autres. Des concepts, tels la connexion de certains composants ou le fonctionnement de l'accès, vous permettent de mieux comprendre comment configurer votre compte.
 {:shortdesc}
 
 <a href="https://cloud.ibm.com/docs/api/content/account/images/account_diagram.svg">
-  <img src="images/account_diagram.svg" alt="diagramme de compte">
+  <img src="images/account_diagram.svg" alt="Diagramme présentant les composants d'un compte, incluant les services, les utilisateurs et les sous-composants.">
 </a>
+
+Figure 1. Composants et systèmes de compte
 
 Le diagramme présente deux principaux concepts s'appliquant aux composants de la hiérarchie de compte qu'il est important de bien connaître. L'utilisation de lignes continues et de lignes pointillées indique que certains composants sont inclus dans d'autres. Par exemple, les utilisateurs sont ajoutés à des groupes d'accès ou à des organisations Cloud Foundry. Toutefois, certains composants interagissent avec d'autres afin de fournir l'accès à un élément et non une adhésion à ce dernier. Par exemple, les utilisateurs se voient accorder l'accès à des groupes de ressources mais ne sont pas membres d'un groupe de ressources comme ils le sont d'un groupe d'accès. Ces concepts sont également présentés dans les sections suivantes.
 

@@ -4,7 +4,7 @@ copyright:
   years: 2019
 lastupdated: "2019-06-11"
 
-keywords: change owner, transfer account, transfer account ownership, switch owner
+keywords: change owner, transfer account, transfer account ownership, switch owner, transfer owner
 
 subcollection: account
 
@@ -31,7 +31,7 @@ Vous pouvez transférer la propriété de ressources individuelles au sein de vo
 ## Transfert d'un compte que vous possédez
 {: #transfer-own}
 
-Si vous êtes le propriétaire du compte et que vous pouvez vous connecter à votre compte, procédez comme suit pour transférer la propriété de votre compte. 
+Si vous êtes le propriétaire du compte et que vous pouvez vous connecter à votre compte, procédez comme suit pour transférer la propriété de votre compte.
 
 1. Dans la console, accédez à **Gérer > Compte**, puis sélectionnez **Profil de la société**.
 1. Cliquez sur **Demander mise à jour du profil**.
@@ -58,4 +58,4 @@ Si le propriétaire d'un compte quitte votre société et que vous devez transf�
 
    ![Capture d'écran du sélecteur de compte dans la barre de menus de la console. Le sélecteur de compte affiche le nom de compte et le numéro de compte, et vous sélectionnez le compte en cours pour afficher la liste d'autres comptes auxquels vous pouvez accéder.](images/account-faq.svg "Le sélecteur de compte affiche le nom de compte et le numéro de compte, et vous sélectionnez le compte en cours pour afficher la liste d'autres comptes auxquels vous pouvez accéder.")
 
-Pour créer le cas de support, accédez à **Support** et cliquez sur **Créer un cas**. Joignez au cas le document de demande officielle avant de le soumettre. 
+Pour créer le cas de support, accédez à **Support** et cliquez sur **Créer un cas**. Joignez au cas le document de demande officielle avant de le soumettre.

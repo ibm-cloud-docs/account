@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-08"
+lastupdated: "2019-06-19"
 
-keywords: account, add orgs, add spaces, manage users, user access
+keywords: account, add orgs, add spaces, cloud foundry orgs
 
 subcollection: account
 
@@ -19,13 +19,15 @@ subcollection: account
 # Ajout d'organisations et d'espaces
 {: #orgsspacesusers}
 
-En tant que propriétaire de compte {{site.data.keyword.Bluemix}}, vous pouvez ajouter des organisations et des espaces à votre compte. Si vous êtes responsable d'une organisation, vous pouvez gérer les organisations du compte. Pour gérer des espaces et des organisations Cloud Foundry accédez à **Gérer** > **Compte**, puis sélectionnez **Ressources de compte > Organisations Cloud Foundry**.
+En tant que propriétaire de compte {{site.data.keyword.Bluemix}}, vous pouvez ajouter des organisations et des espaces à votre compte. Si vous êtes responsable d'une organisation, vous pouvez gérer les organisations du compte. 
 {:shortdesc}
 
 ## Concepts liés aux organisations Cloud Foundry
 {: #cf-org-concepts}
 
-Vous pouvez utiliser des organisations afin de permettre la collaboration entre les utilisateurs et de faciliter le regroupement logique des ressources de projet comme suit :
+Pour gérer des espaces et des organisations Cloud Foundry accédez à **Gérer** > **Compte**, puis sélectionnez **Ressources de compte > Organisations Cloud Foundry**.
+
+Les organisations permettent la collaboration entre les utilisateurs et facilitent le regroupement logique des ressources de projet, comme suit :
 
    * Vous pouvez regrouper un ensemble d'espaces, d'applications, de services, de domaines, de routes et d'utilisateurs dans des organisations.
    * Vous pouvez gérer les accès utilisateur aux organisations et aux espaces de manière individuelle.
@@ -71,7 +73,7 @@ Vous pouvez affecter les [rôles Cloud Foundry](/docs/iam?topic=iam-cfaccess#cfr
 
 Dans une organisation, vous pouvez utiliser des espaces pour regrouper un ensemble d'applications, de services et d'utilisateurs. Les espaces sont définis au sein d'une seule région {{site.data.keyword.Bluemix_notm}}. Vous pouvez créer des espaces dans une organisation en fonction du cycle de vie de distribution. Par exemple, vous pouvez créer un espace `dev` en tant qu'environnement de développement, un espace `test` en tant qu'environnement de test et un espace `production` en tant qu'environnement de production. Ensuite, vous pouvez associer vos applications à des espaces.
 
-Pour ajouter un espace à une organisation, procédez comme suit : 
+Pour ajouter un espace à une organisation, procédez comme suit :
 
 1. Sur la page Organisations Cloud Foundry, cliquez sur le nom de l'organisation à laquelle vous voulez ajouter un espace.
 2. Cliquez sur **Ajouter un espace**.

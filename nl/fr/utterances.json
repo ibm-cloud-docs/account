@@ -330,7 +330,9 @@
       "ajout d'utilisateurs à une organisation",
       "ajout de personnes à une organisation",
       "Puis-je ajouter des utilisateurs à une organisation ?",
-      "Qui est autorisé à ajouter des utilisateurs à une organisation ?"
+      "Qui est autorisé à ajouter des utilisateurs à une organisation ?",
+      "Invitation d'utilisateur impossible",
+      "Création d'utilisateur impossible"
     ],
     "ts_no_space": [
       "Pourquoi aucun espace n'est-il associé à mon organisation en cours ?",
