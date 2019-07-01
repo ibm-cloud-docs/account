@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-11"
+lastupdated: "2019-06-19"
 
-keywords: account, upgrade, account settings, IBM Cloud account, Lite account
+keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
 subcollection: account
 
@@ -17,14 +17,17 @@ subcollection: account
 {:faq: data-hd-content-type='faq'}
 {:tip: .tip}
 
-# 常见问题
+# 帐户的常见问题解答
 {: #accountfaqs}
+
+{{site.data.keyword.cloud}} 的常见问题可能包括有关轻量帐户、重新分配用户、帐户错误或者帐户标记的问题。要查找 {{site.data.keyword.cloud_notm}} 的所有常见问题，请参阅我们的常见问题库。
+{: shortdesc}
 
 ## 如何创建帐户？
 {: #create-account}
 {: faq}
 
-转至 [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")，然后单击**创建 {{site.data.keyword.Bluemix_notm}} 帐户**以创建永不到期的轻量帐户。请参阅[轻量帐户](/docs/account?topic=account-liteaccount#liteaccount)以获取有关包含的功能的更多详细信息。
+转至 [{{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")，然后单击**创建 {{site.data.keyword.Bluemix_notm}} 帐户**以创建永不到期的轻量帐户。请参阅[轻量帐户](/docs/account?topic=account-liteaccount#liteaccount)以获取有关包含的功能的更多详细信息。
 
 
 ## 如何解决在创建帐户时发生的错误？

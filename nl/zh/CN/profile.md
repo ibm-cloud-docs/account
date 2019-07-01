@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-15"
+lastupdated: "2019-06-20"
 
-keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy
+keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy, set up profile
 
 subcollection: account
 
@@ -19,7 +19,7 @@ subcollection: account
 # 设置个人档案
 {: #usersettings}
 
-在个人档案中，您可以添加照片和个人信息，管理通知，更改登录设置以及监视自己的隐私。设置个人档案可帮助您的队友了解您的身份以及您可以如何提供帮助。
+在您的 {{site.data.keyword.cloud}} 个人档案中，您可以添加照片和个人信息，管理通知，更改登录设置以及监视自己的隐私。设置个人档案可帮助您的队友了解您的身份以及您可以如何提供帮助。
 {:shortdesc}
 
 

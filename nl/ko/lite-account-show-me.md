@@ -4,7 +4,7 @@ copyright:
   years: 2015, 2018
 lastupdated: "2018-11-19"
 
-keywords: free account, Lite account, free service, sign up for account, video
+keywords: free account, Lite account, free service, sign up for account, Lite account video
 
 subcollection: account
 
@@ -37,7 +37,7 @@ Lite 계정은 영구 무료 계정입니다. Lite 계정에서는 무엇이 제
 
 시간 제한 없이 무료로 {{site.data.keyword.Bluemix_notm}}를 경험할 준비가 되셨습니까? 무료 {{site.data.keyword.Bluemix_notm}} Lite 계정은 만료되지 않습니다. 즉, 사용자는 {{site.data.keyword.Bluemix_notm}}에서 제공하는 최고의 기능들로 스마트한 온라인 앱을 원하는 만큼 빌드할 수 있습니다.
 
-Lite 계정을 작성했으면 256MB의 Cloud Foundry 런타임 메모리와 2GB의 Kubernetes 클러스터로 앱을 호스팅하여 작업을 시작하십시오.
+Lite 계정을 생성했으면 256MB의 Cloud Foundry 런타임 메모리와 2GB의 Kubernetes 클러스터로 앱을 호스팅하여 작업을 시작하십시오.
 
 Watson 서비스로 앱에 인텔리전스를 제공하십시오. Watson을 {{site.data.keyword.iot_short_notm}}과 결합하여 최첨단 솔루션을 빌드할 수도 있습니다. 또한 사용자는 {{site.data.keyword.apiconnect_short}}, {{site.data.keyword.mobilepushshort}}, {{site.data.keyword.prf_hubshort}} 등에 액세스할 수 있습니다.
 

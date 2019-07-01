@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-11"
+lastupdated: "2019-06-19"
 
-keywords: account, upgrade, account settings, IBM Cloud account, Lite account
+keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
 subcollection: account
 
@@ -17,14 +17,17 @@ subcollection: account
 {:faq: data-hd-content-type='faq'}
 {:tip: .tip}
 
-# FAQ
+# 계정에 대한 FAQ
 {: #accountfaqs}
+
+{{site.data.keyword.cloud}}에 대한 FAQ에는 Lite 계정, 사용자 재지정, 계정 오류 또는 계정 태그에 대한 질문이 포함될 수 있습니다. {{site.data.keyword.cloud_notm}}에 대한 모든 FAQ를 찾으려면 FAQ 라이브러리를 참조하십시오.
+{: shortdesc}
 
 ## 내 계정은 어떻게 생성합니까?
 {: #create-account}
 {: faq}
 
-[{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")로 이동하고 **{{site.data.keyword.Bluemix_notm}} 계정 생성**을 클릭하여 만기가 없는 Lite 계정을 생성하십시오. 포함된 기능에 관한 세부사항은 [Lite 계정](/docs/account?topic=account-liteaccount#liteaccount)을 참조하십시오.
+[{{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")로 이동하고 **{{site.data.keyword.Bluemix_notm}} 계정 작성**을 클릭하여 만기가 없는 Lite 계정을 생성하십시오. 포함된 기능에 관한 세부사항은 [Lite 계정](/docs/account?topic=account-liteaccount#liteaccount)을 참조하십시오.
 
 
 ## 내 계정을 생성할 때 발생하는 오류를 어떻게 해결합니까?
@@ -82,7 +85,7 @@ Lite 플랜 인스턴스의 어느 할당량에든 도달하면 해당 월에 �
 {: #accounts-service-removal}
 {: faq}
 
-서비스를 삭제하고자 하는 경우 리소스 목록에서 수행할 수 있습니다. [리소스 및 서비스 관련 작업](/docs/resources?topic=resources-resources-faq#service-removal)에서 자세히 알아보십시오. 
+서비스를 삭제하고자 하는 경우 리소스 목록에서 수행할 수 있습니다. [리소스 및 서비스 관련 작업](/docs/resources?topic=resources-resources-faq#service-removal)에서 자세히 알아보십시오.
 
 ## 얼마나 많은 리소스 그룹, 조직 또는 영역을 작성할 수 있습니까?
 {: #resourcelimit}

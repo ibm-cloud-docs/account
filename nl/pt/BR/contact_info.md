@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-20"
+  years: 2018, 2019
+lastupdated: "2019-06-19"
 
-keywords: company information, company details, company account, company profile
+keywords: company information, company details, company account, company profile, account contact
 
 subcollection: account
 
@@ -22,7 +22,7 @@ subcollection: account
 # Atualizando detalhes do perfil da empresa
 {: #contact-info}
 
-Cada conta do {{site.data.keyword.Bluemix}} inclui um perfil da empresa que contém informações e detalhes da empresa sobre o titular da conta primário. É possível usar dados do perfil da empresa ao configurar contatos e perfis do usuário. É possível ter vários contatos específicos da conta que são usados em associação com os serviços disponíveis na conta. Se você tiver acesso administrativo ou superior, será possível atualizar suas informações de contato.
+Cada conta do {{site.data.keyword.Bluemix}} inclui um perfil da empresa que contém informações e detalhes da empresa sobre o titular da conta primário. É possível usar dados do perfil da empresa ao configurar contatos e perfis do usuário. É possível ter vários contatos específicos da conta que são usados em associação com os serviços disponíveis na conta. Se você tiver acesso administrativo ou superior, será possível atualizar suas informações de contato da conta.
 {:shortdesc}
 
 ## Atualizando o perfil da empresa

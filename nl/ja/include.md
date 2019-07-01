@@ -2,9 +2,9 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: add user, share resource, private resource, share catalog
+keywords: add user, share resource, private resource, share catalog, find resource, set visibility
 
 subcollection: account
 
@@ -18,8 +18,8 @@ subcollection: account
 # プライベート・リソースへのアカウントの追加
 {: #include}
 
-作成する {{site.data.keyword.Bluemix}} プライベート・リソースは、デフォルトで制限されています。 アカウントの管理者は、包含リストにユーザーを追加することで、リソースを表示できるユーザーを選択できます。
-{:shortdesc: .shortdesc}
+作成する {{site.data.keyword.Bluemix}} プライベート・リソースは、デフォルトで制限されています。 アカウントの管理者は、包含リストにユーザーを追加することで、リソースを表示できるユーザーを選択できます。また、専用リソースの所有権を移動することもできます。
+{:shortdesc}
 
 {{site.data.keyword.Bluemix}} [コマンド・ライン・インターフェース (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) またはコンソールを使用して、アカウントに追加されたプライベート・リソースをユーザーが表示することを許可するためのアクセス権限が自分にあるかどうかを判断できます。 アカウント所有者は、アクセス・ポリシーを割り当てることによって、コンソールからアカウント内のユーザーにアクセス権限を付与できます。 詳しくは、[アカウントへのアクセスの管理](/docs/account?topic=account-find-access)を参照してください。
 
@@ -33,7 +33,10 @@ subcollection: account
 
 アカウントがプライベート・リソースを表示できるよう許可するには、以下のコマンドを実行します。
 
-`ibmcloud catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>`
+```
+ibmcloud catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>
+```
+{:codeblock}
 
 includes-add フラグの後に、アカウントに関連付けられた E メールまたは ID のコンマ区切りリストを追加できます。
 
@@ -79,19 +82,24 @@ Children           Name                                          Kind         ID
 
 子デプロイメントのリソース ID を取得し、その後で、以下のコマンドを実行してアカウントを包含することができます。
 
-`ibmcloud catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`
+```
+ibmcloud catalog entry-visibility-set <service-id> —-includes-add <some-other-account>
+```
+{:codeblock}
 
 オブジェクトの子は複雑な方法で可視性を継承できます。 子オブジェクトがプライベートである場合、独自の可視性構成があります。 しかし、子オブジェクトがパブリックに設定されている場合、その親の可視性を継承します。 プライベート子オブジェクトに可視性を設定すると、親よりも可視性が制限されることがあります。 可視性の仕組みについて詳しくは、[カタログ API 資料](https://{DomainName}/apidocs/globalcatalog)を参照してください。
 
 ## プライベート・リソースの所有権の移管
 {: #owners}
 
-プロジェクトまたは組織を去るときに、アカウントの所有権を他のユーザーに移したいことがあります。
-{:shortdesc}
+プロジェクトまたは組織を去るときに、アカウント内のリソースの所有権を他のユーザーに移すことが必要な場合があります。
 
 所有権を移管すると、自分のアカウントからはリソースを表示できなくなります。 このアクションは元に戻すことはできないため、所有権を本当に移管してもよいことを確認してください。
 {: important}
 
 [{{site.data.keyword.Bluemix}} コマンド・ライン・インターフェース (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) を使用して、プライベート・リソースの所有権を移管できます。 次のコマンドを実行します。
 
-`ibmcloud catalog entry-visibility-set <service-id> --owner <account-id or account-email>`
+```
+ibmcloud catalog entry-visibility-set <service-id> --owner <account-id or account-email>
+```
+{:codeblock}

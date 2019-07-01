@@ -2,9 +2,9 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-20"
 
-keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, Bluemix account, Bluemix
+keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, switch to IBMid
 
 subcollection: account
 
@@ -21,7 +21,7 @@ subcollection: account
 # IBMid への切り替えとアカウントのリンク
 {: #unifyingaccounts}
 
-IBMid は、{{site.data.keyword.Bluemix}} アカウントにログインして、インフラストラクチャー、サービス、およびアプリケーション機能のアクセスおよび購入に使用できる単一 ID です。 すべての新しいアカウントは自動的に IBMid を受け取り、SAML フェデレーテッド・アカウントを除く既存の SoftLayer アカウントは IBMid 認証に切り替えることができます。
+IBMid は、{{site.data.keyword.Bluemix}} アカウントにログインして、インフラストラクチャー、サービス、およびアプリケーション機能のアクセスおよび購入に使用できる単一 ID です。 すべての新規アカウントは、自動的に IBMid を受け取ります。既存の SoftLayer アカウントは、SAML 統合アカウントを除き、IBMid 認証への切り替えを有効にできます。また、アカウント、請求処理、および使用量を単一ビューで表示できるように、複数のアカウントをリンクすることもできます。
 {:shortdesc}
 
 ## IBMid への切り替え
@@ -47,7 +47,7 @@ IBMid への切り替えを開始しても、処理が完了する前であれ�
 ### 登録コードを使用した IBMid の確認
 {: #confIBMiduseregcode}
 
-1. 登録コードを受信したら、E メールのリンクをクリックするか、URL をブラウザーにコピーして、登録コードを入力します。 コードは 7 日間有効で、1 回のみ使用できます。
+1. 登録コードを受信したら、E メールのリンクをクリックするか、URL をブラウザーにコピーして、登録コードを入力します。 登録コードは 7 日間有効で、1 回のみ使用できます。
 
 2. 登録コードを送信した後、IBMid を使用してカスタマー・ポータルにログインします。
 
@@ -63,14 +63,14 @@ IBMid でのログインに関する問題を解決するには、[{{site.data.k
 ## IBMid アカウントのリンク
 {: #link_accounts}
 
-アカウントを IBMid アカウントに切り替えた後、Infrastructure as a Service (IaaS) リソースと Platform as a Service (PaaS) リソースを組み合わせて使用するために、SoftLayer アカウントと {{site.data.keyword.Bluemix_notm}} アカウントをリンクできます。 その後、単一のログインから IaaS リソースと PaaS リソースにアクセスできます。 アカウントをリンクすると、使用するすべての PaaS リソースおよび IaaS リソースに対する単一の請求書も提供されます。 自分自身のアカウントをリンクするか、マスター・ユーザーの場合は、複数のユーザー・アカウントをリンクできます。
+アカウントを IBMid アカウントに切り替えたら、単一ログインからインフラストラクチャー・リソースとプラットフォーム・リソースにアクセスできるように、SoftLayer アカウントと {{site.data.keyword.Bluemix_notm}} アカウントをリンクすることができます。アカウントをリンクすると、使用するすべてのインフラストラクチャー・リソースとプラットフォーム・リソースの請求書も単一で提供されます。自分自身のアカウントをリンクするか、マスター・ユーザーの場合は、複数のユーザー・アカウントをリンクできます。
 
 ### IBMid アカウントのリンク
 {: #link_user_account}
 
-クラシック・インフラストラクチャーのカスタマーであり、{{site.data.keyword.Bluemix_notm}} 内に PaaS アカウントも持っているか作成した場合は、それらのアカウントを単一のビューで表示できるように IaaS と PaaS をリンクできます。 複数のアカウントをリンクするには、以下の手順を使用します。
+クラシック・インフラストラクチャーをご利用のお客様で、{{site.data.keyword.Bluemix_notm}} アカウントも持っている場合は、アカウント、請求処理、および使用量の単一ビューを表示できるように、アカウントをリンクすることができます。アカウントをリンクするには、以下の手順を実行します。
 1. SoftLayer アカウントにログインします。
-2. 「アカウント要約」ページで、**「新規! Bluemix アカウントをリンクします」**をクリックします。
+2. 「アカウント要約」ページで、**「IBM Cloud アカウントをリンクします (Link an IBM Cloud Account)」**をクリックします。
 3. ご利用条件を検討し、クリックして受け入れることを確認します。
 4. アカウントのセットアップ方法に応じて、以下のいずれかの最終ステップを実行します。
   * IBMid に {{site.data.keyword.Bluemix_notm}} アカウントが関連付けられている場合は、許可ページに誘導されてから、再び最終確認ステップに誘導されます。
@@ -96,7 +96,7 @@ IBMid でのログインに関する問題を解決するには、[{{site.data.k
 各 SoftLayer アカウントを既存の {{site.data.keyword.Bluemix_notm}} プラットフォーム・アカウントにリンクしたり、新規のアカウントを作成したりするには、以下の手順を実行します。
 
    1. マスター・ユーザー・アカウントの IBMid を使用して、カスタマー・ポータルにログインします。
-   2. カスタマー・ポータルで**「Bluemix アカウントをリンクします」**をクリックします。
+   2. カスタマー・ポータルで、**「IBM Cloud アカウントをリンクします (Link an IBM Cloud Account)」**をクリックします。
    3. SoftLayer アカウントと {{site.data.keyword.Bluemix_notm}} アカウントをリンクする場合のご利用条件を読み、同意します。
    4. SoftLayer アカウントのユーザーを {{site.data.keyword.Bluemix_notm}} アカウントに追加する操作も含めて、ウィザードのプロンプトに従います。
    5. プロンプトが表示されたら、次のいずれかの操作を行います。
@@ -122,4 +122,4 @@ IBMid でのログインに関する問題を解決するには、[{{site.data.k
 
 その他の多要素認証方式は、IBMid 単位ではありません。 アカウント単位です。 IBMid が複数のアカウントに関連付けられていて、アカウント間で切り替えを行う場合、2 要素認証を必要とする別のアカウントに切り替えるたびに ID を確認する必要があります。 これは、前のアカウントと新しいアカウントが両方とも同じ 2 要素認証メカニズムを使用して構成されている場合でも同じです。
 
-前にクラシック・インフラストラクチャー・リソースに対して[カスタマー・ポータルで 2FA ](/docs/customer-portal?topic=customer-portal-cp_setup-2fa#cp-enable-2fa)を有効にした場合、その後で {{site.data.keyword.Bluemix_notm}} アカウント MFA 設定を有効にすると、カスタマー・ポータルでセットアップした 2FA はアカウント MFA 設定でオーバーライドされます。 これは、アカウント MFA 設定を優先して、購入した 2FA をカスタマー・ポータルで無効にできることを意味します。
+前にクラシック・インフラストラクチャー・リソースに対して[カスタマー・ポータルで 2FA ](/docs/customer-portal?topic=customer-portal-cp_setup-2fa)を有効にした場合、その後で {{site.data.keyword.Bluemix_notm}} アカウント MFA 設定を有効にすると、カスタマー・ポータルでセットアップした 2FA はアカウント MFA 設定でオーバーライドされます。これは、アカウント MFA 設定を優先して、購入した 2FA をカスタマー・ポータルで無効にできることを意味します。

@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-20"
+  years: 2018, 2019
+lastupdated: "2019-06-19"
 
-keywords: company information, company details, company account, company profile
+keywords: company information, company details, company account, company profile, account contact
 
 subcollection: account
 
@@ -22,7 +22,7 @@ subcollection: account
 # 会社プロファイル詳細の更新
 {: #contact-info}
 
-各 {{site.data.keyword.Bluemix}} アカウントには会社プロファイルが含まれていて、プロファイルには、会社情報と、1 次アカウント所有者に関する詳細が含まれています。 会社プロファイルからのデータを、連絡先およびユーザー・プロファイルをセットアップするときに使用できます。 アカウント内の使用可能なサービスに関連して使用されるアカウント固有のさまざまな連絡先を設定できます。 管理者以上のアクセス権限がある場合は、連絡先情報を更新できます。
+各 {{site.data.keyword.Bluemix}} アカウントには会社プロファイルが含まれていて、プロファイルには、会社情報と、1 次アカウント所有者に関する詳細が含まれています。 会社プロファイルからのデータを、連絡先およびユーザー・プロファイルをセットアップするときに使用できます。 アカウント内の使用可能なサービスに関連して使用されるアカウント固有のさまざまな連絡先を設定できます。 管理者以上のアクセス権限がある場合は、アカウントの連絡先情報を更新できます。
 {:shortdesc}
 
 ## 会社プロファイルの更新

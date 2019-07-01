@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-15"
+lastupdated: "2019-06-20"
 
-keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy
+keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy, set up profile
 
 subcollection: account
 
@@ -19,7 +19,7 @@ subcollection: account
 # プロファイルのセットアップ
 {: #usersettings}
 
-プロファイルでは、写真および個人情報の追加、通知の管理、ログイン設定の変更、およびプライバシーのモニターを行うことができます。 これをセットアップすることにより、自分が誰なのか、どのように役立てるのかをチームの仲間に知ってもらうことができます。
+{{site.data.keyword.cloud}} のプロファイルでは、写真および個人情報の追加、通知の管理、ログイン設定の変更、およびプライバシーのモニターを行うことができます。これをセットアップすることにより、自分が誰なのか、どのように役立てるのかをチームの仲間に知ってもらうことができます。
 {:shortdesc}
 
 
@@ -35,7 +35,7 @@ subcollection: account
 ## IBMid 情報の編集
 {: #ibmid}
 
-IBMid は、インフラストラクチャー、サービス、およびアプリケーションの各機能用に {{site.data.keyword.Bluemix_notm}} アカウントにログインするために使用する単一の ID です。 IBMid を変更することはできませんが、関連付けられているプロファイル情報 (名前、E メール、電話番号、パスワード、会社名など) は編集できます。 **「{{site.data.keyword.avatar}}」**アイコン ![「アバター」アイコン](../icons/i-avatar-icon.svg) &gt; **「プロファイルと設定」**に移動します。 詳しくは、『[IBMid への切り替えとアカウントのリンク](softlayerlink.html)』を参照してください。
+IBMid は、インフラストラクチャー、サービス、およびアプリケーションの各機能用に {{site.data.keyword.Bluemix_notm}} アカウントにログインするために使用する単一の ID です。 IBMid を変更することはできませんが、関連付けられているプロファイル情報 (名前、E メール、電話番号、パスワード、会社名など) は編集できます。 **「{{site.data.keyword.avatar}}」**アイコン ![「アバター」アイコン](../icons/i-avatar-icon.svg) &gt; **「プロファイルと設定」**に移動します。 詳しくは、『[IBMid への切り替えとアカウントのリンク](/docs/account?topic=account-unifyingaccounts)』を参照してください。
 
 
 ## Cookie の設定の変更

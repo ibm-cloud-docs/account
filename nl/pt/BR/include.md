@@ -2,9 +2,9 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: add user, share resource, private resource, share catalog
+keywords: add user, share resource, private resource, share catalog, find resource, set visibility
 
 subcollection: account
 
@@ -18,8 +18,8 @@ subcollection: account
 # Incluindo contas em seu recurso privado
 {: #include}
 
-Qualquer recurso privado do {{site.data.keyword.Bluemix}} que você cria é restrito por padrão. Se você for um administrador para a conta, será possível escolher quem pode visualizar seu recurso, incluindo o usuário em uma lista de inclusão.
-{:shortdesc: .shortdesc}
+Qualquer recurso privado do {{site.data.keyword.Bluemix}} que você cria é restrito por padrão. Se você for um administrador para a conta, será possível escolher quem pode visualizar seu recurso, incluindo o usuário em uma lista de inclusão. Também é possível transferir a propriedade de um recurso privado.
+{:shortdesc}
 
 É possível usar a [interface da linha de comandos (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) do {{site.data.keyword.Bluemix}} ou o console para determinar se você tem acesso para permitir que usuários visualizem um recurso privado que foi incluído na conta. Se você for um proprietário da conta, será possível fornecer acesso a um usuário em sua conta por meio do console designando uma política de acesso. Para obter mais informações, consulte [Gerenciando o acesso à sua conta](/docs/account?topic=account-find-access).
 
@@ -33,7 +33,10 @@ Execute o comando `ibmcloud catalog service <service-id or service-name>`. Subst
 
 Execute o comando a seguir para permitir que uma conta veja seu recurso privado.
 
-`ibmcloud catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>`
+```
+ibmcloud catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>
+```
+{:codeblock}
 
 Após a sinalização includes-add, é possível incluir uma lista separada por vírgula de e-mails ou IDs associados a contas.
 
@@ -73,19 +76,24 @@ Children           Name                                          Kind         ID
 
 É possível obter o ID do recurso para a implementação filha e, em seguida, incluir uma conta executando o comando a seguir:
 
-`ibmcloud catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`
+```
+ibmcloud catalog entry-visibility-set <service-id> —-includes-add <some-other-account>
+```
+{:codeblock}
 
 Os filhos de um objeto podem herdar visibilidade de formas complexas. Se o objeto-filho for privado, ele terá sua própria configuração de visibilidade. No entanto, se o objeto-filho for configurado como público, ele herdará a visibilidade de seu pai. Configurar a visibilidade em um objeto-filho privado pode restringir sua visibilidade para mais do que o pai. Para obter mais informações sobre como a visibilidade funciona, veja os [Docs da API do catálogo](https://{DomainName}/apidocs/globalcatalog).
 
 ## Transferindo a propriedade de um recurso privado
 {: #owners}
 
-Se você deixar seu projeto ou organização, talvez deseje transferir a propriedade de sua conta para alguém.
-{:shortdesc}
+Se você deixar seu projeto ou organização, talvez queira transferir a propriedade dos recursos em sua conta para outra pessoa.
 
 Depois de transferir a propriedade, não é mais possível visualizar o recurso por meio de sua conta. Certifique-se de que deseja transferir a propriedade, porque essa ação não pode ser desfeita.
 {: important}
 
 É possível usar a [interface da linha de comandos (CLI) do {{site.data.keyword.Bluemix}}](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) para transferir a propriedade de um recurso privado. Execute o seguinte comando:
 
-`ibmcloud catalog entry-visibility-set <service-id> --owner <account-id or account-email>`
+```
+ibmcloud catalog entry-visibility-set <service-id> --owner <account-id or account-email>
+```
+{:codeblock}

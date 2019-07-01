@@ -166,7 +166,7 @@
       "Preciso de ajuda",
       "Desejo falar com o suporte técnico.",
       "suporte",
-      "ajuda"
+      "auxílio"
     ],
     "freetrial": [
       "Posso inscrever-me para uma avaliação grátis?",
@@ -330,7 +330,9 @@
       "incluindo usuários na organização",
       "incluir pessoas em uma organização",
       "Posso incluir usuários em uma organização?",
-      "Quem tem permissão para incluir usuários em uma organização?"
+      "Quem tem permissão para incluir usuários em uma organização?",
+      "não é possível convidar o usuário",
+      "não é possível criar o usuário"
     ],
     "ts_no_space": [
       "Por que não há nenhum espaço associado à minha organização atual?",

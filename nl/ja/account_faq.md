@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-11"
+lastupdated: "2019-06-19"
 
-keywords: account, upgrade, account settings, IBM Cloud account, Lite account
+keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
 subcollection: account
 
@@ -17,14 +17,17 @@ subcollection: account
 {:faq: data-hd-content-type='faq'}
 {:tip: .tip}
 
-# FAQ
+# アカウントに関する FAQ
 {: #accountfaqs}
+
+{{site.data.keyword.cloud}} に関する FAQ には、ライト・アカウント、ユーザーの再割り当て、アカウント・エラー、またはアカウント・タグについての質問が含まれていることがあります。{{site.data.keyword.cloud_notm}} に関するすべての FAQ を見つけるには、FAQ ライブラリーを参照してください。
+{: shortdesc}
 
 ## アカウントを作成するには、どのようにすればよいですか?
 {: #create-account}
 {: faq}
 
-[{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") にアクセスし、**「{{site.data.keyword.Bluemix_notm}} アカウントの作成」**をクリックして、有効期限が切れることのないライト・アカウントを作成します。 含まれるフィーチャーについて詳しくは、『[ライト・アカウント](/docs/account?topic=account-liteaccount#liteaccount)』を参照してください。
+[{{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") にアクセスし、**「{{site.data.keyword.Bluemix_notm}} アカウントの作成」**をクリックして、有効期限が切れることのないライト・アカウントを作成します。 含まれるフィーチャーについて詳しくは、『[ライト・アカウント](/docs/account?topic=account-liteaccount#liteaccount)』を参照してください。
 
 
 ## アカウントを作成するときに発生したエラーを解決するには、どのようにすればよいですか?
@@ -259,7 +262,7 @@ IBM Cloud コンソールのヘッダーには、自分のログイン ID を含
 
 `ibmcloud catalog` コマンドを使用すると、アカウント内の個別リソースの所有権を他のユーザーに移動できます。 詳しくは、『[プライベート・リソースの所有権の移動](/docs/account?topic=account-include#owners)』を参照してください。
 
-アカウント全体の所有権を移動するには、[会社プロファイル](https://{DomainName}/account/company-profile)を更新します。詳しくは、『[アカウントの所有権の移動](/docs/account?topic=account-transfer)』を参照してください。
+アカウント全体の所有権を移動するには、[会社プロファイル](https://{DomainName}/account/company-profile)を更新します。 詳しくは、『[アカウントの所有権の移動](/docs/account?topic=account-transfer)』を参照してください。
 
 ## {{site.data.keyword.Bluemix_notm}} ではユーザーのバッチ登録はサポートされていますか?
 {: #batch-registration}

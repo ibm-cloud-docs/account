@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-08"
+lastupdated: "2019-06-19"
 
-keywords: account, add orgs, add spaces, manage users, user access
+keywords: account, add orgs, add spaces, cloud foundry orgs
 
 subcollection: account
 
@@ -19,13 +19,16 @@ subcollection: account
 # 新增組織及空間
 {: #orgsspacesusers}
 
-身為 {{site.data.keyword.Bluemix}} 帳戶擁有者，您可以將組織及空間新增至您的帳戶。如果您是組織管理員，則可以管理帳戶中的組織。您可以移至**管理** > **帳戶**然後選取**帳戶資源 > Cloud Foundry 組織**，來管理 Cloud Foundry 組織及空間。
+身為 {{site.data.keyword.Bluemix}} 帳戶擁有者，您可以將組織及空間新增至您的帳戶。如果您是組織管理員，則可以管理帳戶中的組織。
 {:shortdesc}
 
 ## Cloud Foundry 組織概念
 {: #cf-org-concepts}
 
-您可以使用組織來啟用使用者之間的協同作業，以及使用下列方式促進專案資源的邏輯分組：
+您可以移至**管理** > **帳戶**然後選取**帳戶資源 > Cloud Foundry 組織**，來管理 Cloud Foundry 組織及空間。
+
+
+組織可使用下列方式，啟用使用者間之間協同作業，並促進專案資源的邏輯分組：
 
    * 您可以一組空間、應用程式、服務、網域、路徑及使用者一起分組成為組織。
    * 您可以根據個別基準來管理使用者對組織及空間的存取權。
@@ -36,12 +39,12 @@ subcollection: account
 <dt>空間</dt>
 <dd>組織內的子群組，您可以用來組織應用程式、服務和使用者。在 {{site.data.keyword.Bluemix_notm}} 中，空間關聯於特定地區。</dd>
 <dt>使用者</dt>
-<dd>組織及空間中具有基本許可權的角色。您必須先被指派給組織，才能獲授與組織內空間的其他許可權。如需更多詳細資料，請參閱 [Cloud Foundry 存取權](/docs/iam?topic=iam-cfaccess)。</dd>
+<dd>組織及空間中具有基本許可權的角色。您必須先指派到組織，然後才能向您授權對該組織中的空間的其他許可權。有關更多詳細資料，請參閱 [Cloud Foundry 存取權](/docs/iam?topic=iam-cfaccess)。</dd>
 <dt>網域</dt>
-<dd>提供網際網路上配置給組織的路徑。路徑具有一個子網域及一個網域。子網域一般是應用程式名稱。網域可能是系統網域，或您針對應用程式所登錄的自訂網域。<br/>
+<dd>提供網際網路上配置給組織的路徑。路徑具有子網域和網域。子網域一般是應用程式名稱。網域可能是系統網域，或您針對應用程式所登錄的自訂網域。<br/>
 <p>如果您新增自訂網域，則必須配置 DNS 伺服器來解析自訂網域，以指向 {{site.data.keyword.Bluemix_notm}} 系統網域。使用此方式，{{site.data.keyword.Bluemix_notm}} 接到您的自訂網域的要求時，可以將它適當地遞送至您的應用程式。</p></dd>
 <dt>配額</dt>
-<dd>代表組織可用的資源，包括可配置供組織使用的服務數目及記憶體量。建立組織時，會指派配額。組織空間中的任何應用程式或服務都會使用配額。使用「隨收隨付制」或「訂閱」帳戶，您可以在組織需要變更時，調整 Cloud Foundry 應用程式及容器的配額。</dd>
+<dd>代表組織可用的資源，包括可配置供組織使用的服務數和記憶體數量。在建立組織時會配置配額。組織空間中的任何應用程式或服務都會使用配額。使用「隨收隨付制」或「訂閱」帳戶，您可以在組織需要變更時，調整 Cloud Foundry 應用程式及容器的配額。</dd>
 </dl>
 
 在「訂閱」帳戶中，配額是起始消費通知的使用者定義限制。
@@ -60,7 +63,7 @@ subcollection: account
 
 新增組織之後，您會自動獲得指派「組織管理員」許可權，讓您可以編輯組織名稱、新增使用者，以及在組織中建立或刪除空間。
 
-您可以將下列 [Cloud Foundry 角色](/docs/iam?topic=iam-cfaccess#cfroles)指派給組織中的使用者。依預設，受邀加入帳戶的所有使用者都會獲得指派審核員角色。
+您可以為組織中的使用者指派下列 [Cloud Foundry 角色](/docs/iam?topic=iam-cfaccess#cfroles)。依預設，會為被邀請到該帳戶的所有使用者指派審核員角色。
 
    * 組織管理員
    * 組織帳單管理員

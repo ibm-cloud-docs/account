@@ -4,7 +4,7 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-28"
 
-keywords: account owner, user roles, manage account, orgs, spaces
+keywords: update orgs, update spaces, quotas, Cloud Foundry orgs, domains
 
 subcollection: account
 
@@ -60,7 +60,7 @@ subcollection: account
     カスタム・ドメインを追加する場合は、
 DNS サーバーを構成してカスタム・ドメインを解決し、
 {{site.data.keyword.Bluemix_notm}}
-システム・ドメインを指すようにする必要があります。 この方法では、{{site.data.keyword.Bluemix_notm}} はカスタム・ドメインの要求を受け取ると、ご使用のアプリに適切に経路指定します。 システム・ドメインはスペースで常に使用可能で、カスタム・ドメインもまたスペースに割り振ることができます。 スペース内に作成されたアプリは、そのスペース用にリストされている任意のドメインを使用できます。 カスタム・ドメインの作成および使用について詳しくは、『[ドメインの管理 (Managing your domains)](/docs/apps?topic=creating-apps-update-domain#update-domain)』を参照してください。
+システム・ドメインを指すようにする必要があります。 この方法では、{{site.data.keyword.Bluemix_notm}} はカスタム・ドメインの要求を受け取ると、ご使用のアプリに適切に経路指定します。 システム・ドメインはスペースで常に使用可能で、カスタム・ドメインもまたスペースに割り振ることができます。 スペース内に作成されたアプリは、そのスペース用にリストされている任意のドメインを使用できます。 カスタム・ドメインの作成および使用について詳しくは、『[ドメインの管理 (Managing your domains)](/docs/apps?topic=creating-apps-update-domain)』を参照してください。
 
   * 組織に割り振られた割り当て量を管理するには、各組織の「アクション」アイコン ![アクション・アイコン](../icons/action-menu-icon.svg) をクリックし、**「割り当て量」**を選択します。
     {: #managequota}

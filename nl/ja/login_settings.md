@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: account security, account access, login security, password, authentication
+keywords: account security, login security, TOTP, MFA, password expiration
 
 subcollection: account
 
@@ -21,7 +21,7 @@ subcollection: account
 # ログイン・セキュリティーのセットアップ
 {: #login-settings}
 
-認可されたアクセス権限を持っているユーザーは、自分のログインに対して追加のセキュリティーをセットアップできます。 セキュリティーのための質問と答えの設定、パスワード有効期限の選択、時間ベースのワンタイム・パスコード (TOTP) 多要素認証 (MFA) のセットアップ、および外部認証オプションのセットアップを行うことができます。  
+認可されたアクセス権限を持っているユーザーは、{{site.data.keyword.cloud}} ログインのための追加のセキュリティーをセットアップできます。セキュリティーのための質問と答えの設定、パスワード有効期限の選択、時間ベースのワンタイム・パスコード (TOTP)、多要素認証 (MFA) のセットアップ、および外部認証オプションのセットアップを行うことができます。  
 {:shortdesc}
 
 アカウント所有者は、ユーザーがメンバーになっているアカウントに対する IBMid MFA を要求できます。 IBMid MFA は、他のユーザーの MFA 設定をオーバーライドします。 例えば、IBMid MFA が設定されている場合、セキュリティーのための質問またはいずれかの外部認証方式の代わりに、IBMid と関連付けられた TOTP MFA のプロンプトが出されます。

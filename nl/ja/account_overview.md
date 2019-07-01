@@ -2,9 +2,9 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-02-12"
+lastupdated: "2019-06-19"
 
-keywords: IBM Cloud account, account differences, resources, access
+keywords: IBM Cloud account, account differences, account overview, account components, how access works
 
 subcollection: account
 
@@ -17,15 +17,17 @@ subcollection: account
 {:new_window: target="_blank"}
 
 
-# アカウント階層
+# アカウントに含まれている内容
 {: #overview}
 
-{{site.data.keyword.Bluemix}} アカウントには、相互に作用する多くの要素とシステムが含まれています。 ここでは、それらの要素がどのように結び付いているのか、およびアカウント全体でアクセス権限がどのように機能するのかについて説明します。
+{{site.data.keyword.Bluemix}} アカウントには、相互に作用する多くの要素とシステムが含まれています。 特定のコンポーネントがどのように接続されているか、またはアクセスがどのように機能するかというような概念は、アカウントのセットアップ方法を理解するうえで役立ちます。
 {:shortdesc}
 
 <a href="https://cloud.ibm.com/docs/api/content/account/images/account_diagram.svg">
-  <img src="images/account_diagram.svg" alt="アカウントの図">
+  <img src="images/account_diagram.svg" alt="サービス、ユーザー、およびそれぞれのサブコンポーネントを含む、アカウント内のコンポーネントを示す図。">
 </a>
+
+図 1. アカウントのコンポーネントとシステム
 
 図の中には、アカウント階層内の要素に関する 2 つの主な概念があり、これらの概念を理解することが重要です。 実線と点線によって、一部の要素が他の要素内に含まれている ( 例えば、ユーザーはアクセス・グループまたは Cloud Foundry の組織に追加される) ことがわかります。 ただし、いくつかの要素は、メンバーシップではなくアクセス権限を提供するために他の要素と相互作用します。 例えば、ユーザーにはリソース・グループへのアクセス権限が付与されますが、リソース・グループのメンバーにはアクセス・グループの場合と同じ方法では付与されません。 このような概念は、以下のセクションでも説明します。
 
@@ -51,6 +53,6 @@ subcollection: account
 
 上の図の別の重要な側面は、アカウント内のリソースへのアクセス権限をアカウント・ユーザーに付与するために使用できる 3 つのタイプのアクセス管理システムの描画です。
 
-  * IAM [アクセス役割](/docs/iam?topic=iam-iamusermanrol#iamusermanrol)を使用して、特定のリソース・グループに属するすべてのリソースへのアクセス権限をユーザーに付与できます。 リソース・グループの管理およびリソース・グループに割り当てられる新規サービス・インスタンスの作成を行うためのアクセス権限をユーザーに付与することもできます。
-  * Cloud Foundry [組織とスペースの役割](/docs/iam?topic=iam-cfroles#cfroles)を使用して、特定の Cloud Foundry スペース内にあるすべてのサービス・インスタンスへのアクセス権限をユーザーに付与できます。
+  * IAM [アクセス役割](/docs/iam?topic=iam-userroles#iamusermanrol)を使用して、特定のリソース・グループに属するすべてのリソースへのアクセス権限をユーザーに付与できます。 リソース・グループの管理およびリソース・グループに割り当てられる新規サービス・インスタンスの作成を行うためのアクセス権限をユーザーに付与することもできます。
+  * Cloud Foundry [組織とスペースの役割](/docs/iam?topic=iam-cfaccess#cfroles)を使用して、特定の Cloud Foundry スペース内にあるすべてのサービス・インスタンスへのアクセス権限をユーザーに付与できます。
   * クラシック・インフラストラクチャーの許可を使用して、クラシック・インフラストラクチャー用に、より細分化された[許可](/docs/iam?topic=iam-infrapermission#infrapermission)をユーザーに付与できます。 デバイス・アクセス権限と VPN サブネット・アクセス権限は別々に割り当てます。

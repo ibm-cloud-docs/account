@@ -2,9 +2,9 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-20"
 
-keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, Bluemix account, Bluemix
+keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, switch to IBMid
 
 subcollection: account
 
@@ -21,7 +21,7 @@ subcollection: account
 # 切换到 IBM 标识并链接帐户
 {: #unifyingaccounts}
 
-IBM 标识是您用于登录到 {{site.data.keyword.Bluemix}} 帐户以访问和购买基础架构、服务和应用程序功能的单个标识。所有新帐户都将自动接收 IBM 标识，并且支持现有 SoftLayer 帐户（SAML 联合帐户除外）切换到 IBM 标识认证。
+IBM 标识是您用于登录到 {{site.data.keyword.Bluemix}} 帐户以访问和购买基础架构、服务和应用程序功能的单个标识。所有新帐户会自动收到 IBM 标识。支持除了 SAML 联合帐户外的现有 SoftLayer 帐户切换到 IBM 标识认证。您还可以链接帐户以获取帐户、计费和使用情况的单一视图。
 {:shortdesc}
 
 ## 切换到 IBM 标识
@@ -63,14 +63,14 @@ IBM 标识是您用于登录到 {{site.data.keyword.Bluemix}} 帐户以访问和
 ## 链接 IBM 标识帐户
 {: #link_accounts}
 
-帐户切换到 IBM 标识帐户后，您可以链接 SoftLayer 帐户和 {{site.data.keyword.Bluemix_notm}} 帐户，以使用组合的基础架构即服务 (IaaS) 和平台即服务 (PaaS) 资源。然后，您可以通过单点登录来访问 IaaS 资源和 PaaS 资源。链接帐户还为您提供了针对您使用的所有 PaaS 和 IaaS 资源的单个帐单。您可以链接自己的帐户，或者如果您是主用户，那么可以链接您的用户帐户。
+帐户切换到 IBM 标识帐户后，您可以链接 SoftLayer 帐户和 {{site.data.keyword.Bluemix_notm}} 帐户，使得您登录一次就可以访问基础架构和平台资源。链接帐户还针对您使用的所有基础架构和平台资源为您提供单个帐单。您可以链接自己的帐户，或者如果您是主用户，那么可以链接您的用户帐户。
 
 ### 链接 IBM 标识帐户
 {: #link_user_account}
 
-如果您是经典基础架构客户，并且在 {{site.data.keyword.Bluemix_notm}} 中还具有 PaaS 帐户或者创建了这些帐户，那么可以链接 IaaS 和 PaaS 以获取帐户的单个视图。要链接帐户，请使用以下步骤：
+如果您是经典基础架构客户，并且还具有 {{site.data.keyword.Bluemix_notm}} 帐户，那么您可以链接帐户以获取帐户、计费和使用情况的单一视图。要链接帐户，请完成以下步骤：
 1. 登录到 SoftLayer 帐户。
-2. 在“帐户摘要”页面中，单击**新功能！链接 Bluemix 帐户**。
+2. 从“帐户摘要”页面，单击**链接 IBM Cloud 帐户**。
 3. 复查使用条款，然后单击以确认接受这些条款。
 4. 根据帐户的设置方式，完成以下其中一个最终步骤：
   * 如果 IBM 标识具有关联的 {{site.data.keyword.Bluemix_notm}} 帐户，那么会将您定向到授权页面，然后返回到最终确认步骤。
@@ -96,7 +96,7 @@ IBM 标识是您用于登录到 {{site.data.keyword.Bluemix}} 帐户以访问和
 要将每个 SoftLayer 帐户链接到现有 {{site.data.keyword.Bluemix_notm}} 平台帐户或创建新帐户，请完成以下步骤：
 
    1. 使用您的主用户帐户 IBM 标识登录到客户门户网站。
-   2. 在客户门户网站中，单击**链接 Bluemix 帐户**。
+   2. 从客户门户网站，单击**链接 IBM Cloud 帐户**。
    3. 阅读并接受链接 SoftLayer 和 {{site.data.keyword.Bluemix_notm}} 帐户的条款。
    4. 请遵循向导提示，包括将 SoftLayer 帐户中的用户添加到 {{site.data.keyword.Bluemix_notm}} 帐户。
    5. 系统提示时，执行以下其中一个操作：
@@ -123,4 +123,4 @@ IBM 标识是您用于登录到 {{site.data.keyword.Bluemix}} 帐户以访问和
 
 其他多因子认证方法不是按 IBM 标识进行的。而是按帐户进行的。当一个 IBM 标识与多个帐户相关联，而您在各帐户之间进行切换时，每次切换到要求双因子认证的不同帐户时都必须确认身份。即使旧帐户和新帐户都配置了相同的双因子认证机制，也是如此。
 
-如果先前已针对经典基础架构资源[在客户门户网站中启用了 2FA](/docs/customer-portal?topic=customer-portal-cp_setup-2fa#cp-enable-2fa)，然后又启用了 {{site.data.keyword.Bluemix_notm}} 帐户的 MFA 设置，那么 MFA 帐户设置会覆盖在客户门户网站中设置的 2FA。这意味着，您可以禁用在客户门户网站中购买的 2FA，而使用帐户的 MFA 设置。
+如果先前已针对经典基础架构资源[在客户门户网站中启用了 2FA](/docs/customer-portal?topic=customer-portal-cp_setup-2fa)，然后又启用了 {{site.data.keyword.Bluemix_notm}} 帐户的 MFA 设置，那么 MFA 帐户设置会覆盖在客户门户网站中设置的 2FA。这意味着，您可以禁用在客户门户网站中购买的 2FA，而使用帐户的 MFA 设置。

@@ -2,9 +2,9 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: add user, share resource, private resource, share catalog
+keywords: add user, share resource, private resource, share catalog, find resource, set visibility
 
 subcollection: account
 
@@ -19,7 +19,8 @@ subcollection: account
 {: #include}
 
 依預設，會限制您建立的任何 {{site.data.keyword.Bluemix}} 專用資源。如果您是帳戶的管理者，則可以藉由將使用者新增至包含清單，來選擇可以檢視資源的人員。
-{:shortdesc: .shortdesc}
+您還可以轉移專用資源的所有權。
+{:shortdesc}
 
 您可以使用 {{site.data.keyword.Bluemix}} [指令行介面 (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) 或主控台，來判定您是否有權可容許使用者檢視已新增至帳戶的專用資源。如果您是帳戶擁有者，則可以透過主控台來指派存取原則，將存取權授與給您帳戶中的使用者。如需相關資訊，請參閱[管理對帳戶的存取權](/docs/account?topic=account-find-access)。
 
@@ -33,7 +34,10 @@ subcollection: account
 
 執行下列指令，以容許帳戶查看您的專用資源。
 
-`ibmcloud catalog entry-visibility-set <service-id> --includes-add<account-id or account-email>`
+```
+ibmcloud catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>
+```
+{:codeblock}
 
 在 includes-add 旗標後面，您可以新增與帳戶相關聯的電子郵件或 ID 清單（以逗點區隔）。
 
@@ -44,7 +48,7 @@ subcollection: account
 
 執行下列指令，以從包含清單移除帳戶。
 
-`ibmcloud catalog entry-visibility-set <service-id> --includes-remove<account-id or account-email>`
+`ibmcloud catalog entry-visibility-set <service-id> --includes-remove <account-id or account-email>`
 
 ## 範例：管理子物件的可見性
 {: #child-vis}
@@ -79,19 +83,25 @@ Children           Name                                          Kind         ID
 
 您可以取得子項部署的資源 ID，然後執行下列指令來包含帳戶：
 
-`ibmcloud catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`
+```
+ibmcloud catalog entry-visibility-set <service-id> —-includes-add <some-other-account>
+```
+{:codeblock}
 
 物件的子項可以透過複雜的方式來繼承可見性。如果子物件為專用，則會有自己的可見性配置。不過，如果子物件設為公用，則會繼承其母項的可見性。設定專用子物件的可見性時，其可見性限制可能會高於母項。如需可見性運作方式的相關資訊，請參閱[型錄 API 文件](https://{DomainName}/apidocs/globalcatalog)。
 
 ## 移轉專用資源的所有權
 {: #owners}
 
-如果您離開專案或組織，可能會想要將帳戶的所有權移轉給其他人。
-{:shortdesc}
+如果您離開專案或組織，您可能希望將您帳戶中的資源的所有權轉移給其他某個人。
+
 
 移轉所有權之後，就無法再從您的帳戶檢視該資源。請確定您要移轉所有權，因為此動作無法復原。
 {: important}
 
 您可以使用 [{{site.data.keyword.Bluemix}} 指令行介面 (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) 來移轉專用資源的所有權。請執行下列指令：
 
-`ibmcloud catalog entry-visibility-set <service-id> --owner<account-id or account-email>`
+```
+ibmcloud catalog entry-visibility-set <service-id> --owner <account-id or account-email>
+```
+{:codeblock}

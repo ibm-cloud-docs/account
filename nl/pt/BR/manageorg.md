@@ -4,7 +4,7 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-28"
 
-keywords: account owner, user roles, manage account, orgs, spaces
+keywords: update orgs, update spaces, quotas, Cloud Foundry orgs, domains
 
 subcollection: account
 
@@ -68,7 +68,7 @@ e incluir domínios customizados para aplicativos que são construídos dentro d
 configurar seu servidor DNS para resolver seu domínio customizado para apontar para o
 domínio do sistema {{site.data.keyword.Bluemix_notm}}. Dessa maneira, quando o
 {{site.data.keyword.Bluemix_notm}} recebe uma solicitação para seu domínio customizado, ela é roteada
-corretamente para seu app. O domínio do sistema está sempre disponível para um espaço e domínios customizados também podem ser alocados para um espaço. Os apps que são criados em um espaço podem usar qualquer um dos domínios que estão listados para esse espaço. Para obter mais informações sobre a criação e o uso de domínios customizados, consulte [Gerenciando seus domínios](/docs/apps?topic=creating-apps-update-domain#update-domain).
+corretamente para seu app. O domínio do sistema está sempre disponível para um espaço e domínios customizados também podem ser alocados para um espaço. Os apps que são criados em um espaço podem usar qualquer um dos domínios que estão listados para esse espaço. Para obter mais informações sobre a criação e o uso de domínios customizados, consulte [Gerenciando seus domínios](/docs/apps?topic=creating-apps-update-domain).
 
   * Para gerenciar a cota alocada para uma organização, clique no ícone Ações ![Ícone de ação](../icons/action-menu-icon.svg) para a respectiva organização e selecione **Cotas**.
     {: #managequota}

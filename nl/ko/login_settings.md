@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: account security, account access, login security, password, authentication
+keywords: account security, login security, TOTP, MFA, password expiration
 
 subcollection: account
 
@@ -21,7 +21,7 @@ subcollection: account
 # 로그인 보안 설정
 {: #login-settings}
 
-권한 부여된 액세스를 이용하여 로그인에 대한 추가 보안을 설정할 수 있습니다. 보안 질문과 답변을 설정하고 비밀번호 만기를 선택하며 TOTP(Time-based One-Time Passcode) MFA(Multifactor Authentication)를 설정하고 외부 인증 옵션을 설정할 수 있습니다.  
+권한 부여된 액세스를 이용하여 {{site.data.keyword.cloud}} 로그인에 대한 추가 보안을 설정할 수 있습니다. 보안 질문과 답변을 설정하고 비밀번호 만기를 선택하며 TOTP(Time-based One-Time Passcode), MFA(Multifactor Authentication)를 설정하고 외부 인증 옵션을 설정할 수 있습니다.  
 {:shortdesc}
 
 계정 소유자는 사용자가 구성원인 계정의 IBM ID MFA를 요구합니다. IBM ID MFA는 기타 사용자 MFA 설정을 대체합니다. 예를 들어, IBM ID MFA가 설정되면 외부 인증 방법 중 하나 또는 보안 질문 대신 IBM ID와 연관된 TOTP MFA에 대한 프롬프트가 제시됩니다.

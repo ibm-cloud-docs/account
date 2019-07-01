@@ -2,9 +2,9 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-20"
 
-keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, Bluemix account, Bluemix
+keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, switch to IBMid
 
 subcollection: account
 
@@ -21,7 +21,7 @@ subcollection: account
 # IBM ID로 전환 및 계정 연결
 {: #unifyingaccounts}
 
-IBM ID는 인프라, 서비스 및 애플리케이션 기능에 대한 액세스와 구매를 위해 {{site.data.keyword.Bluemix}} 계정에 로그인하는 데 사용하는 단일 ID입니다. 모든 새 계정은 자동으로 IBM ID를 받으며, SAML 연합 계정을 제외한 기존 SoftLayer 계정은 IBM ID 인증으로 전환할 수 있도록 설정됩니다.
+IBM ID는 인프라, 서비스 및 애플리케이션 기능에 대한 액세스와 구매를 위해 {{site.data.keyword.Bluemix}} 계정에 로그인하는 데 사용하는 단일 ID입니다. 모든 새 계정은 자동으로 IBM ID를 수신합니다. 기존의 SoftLayer 계정(SAML 연합 계정 제외)은 IBM ID 인증으로 전환하여 사용할 수 있습니다. 또한 계정, 청구 및 사용량을 한 번에 볼 수 있도록 계정을 링크할 수 있습니다.
 {:shortdesc}
 
 ## IBM ID로 전환
@@ -63,18 +63,18 @@ IBM ID로 로그인 시에 발생하는 문제점을 해결하려면 [{{site.dat
 ## IBM ID 계정 연결
 {: #link_accounts}
 
-계정이 IBM ID 계정으로 전환되면 SoftLayer 계정과 {{site.data.keyword.Bluemix_notm}} 계정을 연결하여 결합된 IaaS(Infrastructure as a Service) 및 PaaS(Platform as a Service) 리소스를 사용할 수 있습니다. 그런 다음 단일 로그인에서 IaaS 리소스 및 PaaS 리소스에 액세스할 수 있습니다. 또한 계정을 연결하면 사용하는 모든 PaaS 및 IaaS 리소스에 대해 하나의 청구서만 발행됩니다. 소유한 계정을 연결하거나, 마스터 사용자인 경우 사용자 계정을 연결할 수 있습니다.
+계정이 IBM ID 계정으로 전환되면 SoftLayer 계정과 {{site.data.keyword.Bluemix_notm}} 계정을 연결하여 단일 로그인에서 인프라 및 플랫폼 리소스에 액세스할 수 있습니다. 또한 계정을 연결하면 사용하는 모든 인프라 및 플랫폼 리소스에 대해 하나의 청구서만 발행됩니다. 소유한 계정을 연결하거나, 마스터 사용자인 경우 사용자 계정을 연결할 수 있습니다.
 
 ### IBM ID 계정 연결
 {: #link_user_account}
 
-클래식 인프라 고객이며 {{site.data.keyword.Bluemix_notm}}의 PaaS 계정 역시 보유하거나 이를 작성하는 경우, 계정의 단일 보기를 위해 IaaS 및 PaaS를 연결할 수 있습니다. 계정을 연결하려면 다음 단계를 사용하십시오.
+클래식 인프라 고객이며 {{site.data.keyword.Bluemix_notm}} 계정도 보유한 경우, 계정, 청구 및 사용량을 한 번에 볼 수 있도록 계정을 링크할 수 있습니다. 계정을 연결하려면 다음 단계를 완료하십시오.
 1. SoftLayer 계정에 로그인하십시오.
-2. 계정 요약 페이지에서 **새로운 기능! Bluemix 계정 연결**을 클릭하십시오.
+2. 계정 요약 페이지에서 **IBM Cloud 계정 링크**를 클릭하십시오.
 3. 이용 약관을 검토하고 클릭하여 동의하십시오.
 4. 계정 설정 방법에 따라 다음 최종 단계 중 하나를 완료하십시오.
   * IBM ID에 연관된 {{site.data.keyword.Bluemix_notm}} 계정이 있으면 권한 페이지로 이동된 후에 다시 최종 확인 단계로 이동됩니다.
-  * 연관된 {{site.data.keyword.Bluemix_notm}} 계정이 없으면 새로 작성하도록 프롬프트가 표시됩니다.
+  * 연관된 {{site.data.keyword.Bluemix_notm}} 계정이 없으면 새로 생성하도록 프롬프트가 표시됩니다.
 
 계정 연결에 대한 일반적인 질문 및 응답을 보려면 [FAQ](/docs/account?topic=account-al_login)를 확인하십시오.
 
@@ -93,15 +93,15 @@ IBM ID로 로그인 시에 발생하는 문제점을 해결하려면 [{{site.dat
   * 연결된 계정에 새 사용자를 추가하는 경우에는 통합 콘솔의 모든 기능에 액세스할 수 있도록 사용자를 SoftLayer 계정 및 {{site.data.keyword.Bluemix_notm}} 계정 모두에 추가해야 합니다.
   * 브랜드 계정을 보유하고 BAP(Brand Agent Portal)를 사용하며 계정 연결 시에 지원이 필요한 경우에는 softlayer_revenue_services_team@wwpdl.vnet.ibm.com으로 이메일을 발송하여 Revenue Services 팀에 문의하십시오.
 
-각 SoftLayer 계정을 기존 {{site.data.keyword.Bluemix_notm}} 플랫폼 계정에 연결하거나 새 계정을 작성하려면 다음 단계를 완료하십시오.
+각 SoftLayer 계정을 기존 {{site.data.keyword.Bluemix_notm}} 플랫폼 계정에 연결하거나 새 계정을 생성하려면 다음 단계를 완료하십시오.
 
    1. 마스터 사용자 계정 IBM ID를 사용하여 고객 포털에 로그인하십시오.
-   2. 고객 포털에서 **Bluemix 계정 연결**을 클릭하십시오.
+   2. 고객 포털에서 **IBM Cloud 계정 링크**를 클릭하십시오.
    3. SoftLayer 및 {{site.data.keyword.Bluemix_notm}} 계정의 연결과 관련된 이용 약관을 읽고 이에 동의하십시오.
    4. SoftLayer 계정의 사용자를 {{site.data.keyword.Bluemix_notm}} 계정에 추가를 포함하여 마법사 프롬프트를 따르십시오.
    5. 프롬프트가 표시되면 다음 조치 중 하나를 수행하십시오.
      * 이미 {{site.data.keyword.Bluemix_notm}} 계정이 있는 경우에는 해당 계정과 연관된 이메일 주소를 제공하여 계정을 연결하십시오.
-     * {{site.data.keyword.Bluemix_notm}} 계정이 없는 경우에는 사용할 이메일 주소를 입력한 후 지시사항에 따라 {{site.data.keyword.Bluemix_notm}}에 방문하여 계정을 작성하십시오.
+     * {{site.data.keyword.Bluemix_notm}} 계정이 없는 경우에는 사용할 이메일 주소를 입력한 후 지시사항에 따라 {{site.data.keyword.Bluemix_notm}}에 방문하여 계정을 생성하십시오.
    6. 계정을 연결한 후에는 이전의 [IBM ID로 전환](#switchtoIBMid) 절에 설명되어 있는 프로시저에 따라 IBM ID로 마이그레이션하도록 각 계정의 사용자에게 알리십시오.
 
       일반 사용자 계정만 IBM ID로 마이그레이션하십시오. 일반 사용자 계정의 상위 계정이며 리소스를 포함하지 않는 브랜드 계정은 마이그레이션하지 마십시오. 브랜드 계정 사용자가 IBM ID로 마이그레이션하면 BAP(Brand Agent Portal) 포털에 로그인할 수 없습니다.
@@ -122,4 +122,4 @@ IBM ID로 로그인 시에 발생하는 문제점을 해결하려면 [{{site.dat
 
 기타 다단계 인증 방법은 IBM ID별이 아닙니다. 계정별로 수행됩니다. IBM ID가 여러 계정과 연관되어 있고, 계정 간에 전환할 때는 2단계 인증이 필요한 다른 계정으로 전환할 때마다 ID를 확인해야 합니다. 이는 이전 계정과 새 계정이 모두 같은 2단계 인증 메커니즘으로 구성된 경우에도 해당됩니다.
 
-이전에 클래식 인프라 리소스에 대해 [고객 포털에서 2FA](/docs/customer-portal?topic=customer-portal-cp_setup-2fa#cp-enable-2fa)를 사용으로 설정한 후 {{site.data.keyword.Bluemix_notm}} 계정 MFA 설정을 사용으로 설정한 경우에는 MFA 계정 설정이 고객 포털에서 설정된 2FA를 대체합니다. 이는 계정 MFA 설정을 위해 고객 포털에서 구매한 2FA를 사용 안함으로 설정할 수 있음을 의미합니다.
+이전에 클래식 인프라 리소스에 대해 [고객 포털에서 2FA](/docs/customer-portal?topic=customer-portal-cp_setup-2fa)를 사용으로 설정한 후 {{site.data.keyword.Bluemix_notm}} 계정 MFA 설정을 사용으로 설정한 경우에는 MFA 계정 설정이 고객 포털에서 설정된 2FA를 대체합니다. 이는 계정 MFA 설정을 위해 고객 포털에서 구매한 2FA를 사용 안함으로 설정할 수 있음을 의미합니다.

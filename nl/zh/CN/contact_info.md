@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-20"
+  years: 2018, 2019
+lastupdated: "2019-06-19"
 
-keywords: company information, company details, company account, company profile
+keywords: company information, company details, company account, company profile, account contact
 
 subcollection: account
 
@@ -22,7 +22,7 @@ subcollection: account
 # 更新公司概要文件详细信息
 {: #contact-info}
 
-每个 {{site.data.keyword.Bluemix}} 帐户都有一个公司概要文件，其中包含公司信息和有关主帐户持有者的详细信息。设置联系人和用户概要文件时，可以使用公司概要文件中的数据。您可以拥有各种特定于帐户的联系人，这些联系人与帐户上可用的服务联合使用。如果您具有管理访问权或更高权限，那么可以更新您的联系人信息。
+每个 {{site.data.keyword.Bluemix}} 帐户都有一个公司概要文件，其中包含公司信息和有关主帐户持有者的详细信息。设置联系人和用户概要文件时，可以使用公司概要文件中的数据。您可以拥有各种特定于帐户的联系人，这些联系人与帐户上可用的服务联合使用。如果您具有管理访问权或更高权限，那么可以更新您的帐户联系人信息。
 {:shortdesc}
 
 ## 更新公司概要文件

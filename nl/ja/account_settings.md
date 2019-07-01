@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: account settings, account owner, account name
+keywords: account settings, edit account name, view account type
 
 subcollection: account
 
@@ -20,7 +20,7 @@ subcollection: account
 # アカウント設定の表示
 {: #account_settings}
 
-アカウント所有者は、アカウント名の変更およびアカウント・タイプの表示を行うことができます。 すべてのアカウント管理サービスに対する IAM オペレーター以上の役割を持っている場合は、アカウント名を表示および更新できます。  
+{{site.data.keyword.cloud}} のアカウント所有者は、アカウント名の変更およびアカウント・タイプの表示を行うことができます。すべてのアカウント管理サービスに対する IAM オペレーター以上の役割を持っている場合は、アカウント名を表示および更新できます。  
 {:shortdesc}
 
 ## アカウント名の編集

@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-15"
+lastupdated: "2019-06-20"
 
-keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy
+keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy, set up profile
 
 subcollection: account
 
@@ -19,7 +19,7 @@ subcollection: account
 # 設定設定檔
 {: #usersettings}
 
-在設定檔中，您可以新增照片和個人資訊、管理通知、變更登入設定，以及監視您的隱私。設定它可協助您的隊友瞭解您的身分以及您可以提供哪些協助。
+在您的 {{site.data.keyword.cloud}} 設定檔中，您可以新增照片和個人資訊、管理通知、變更登入設定以及監視自己的隱私權。設定它可協助您的隊友瞭解您的身分以及您可以提供哪些協助。
 {:shortdesc}
 
 

@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-03-20"
+lastupdated: "2019-06-19"
 
-keywords: GDPR, HIPAA, data security, PHI, account settings, europe
+keywords: GDPR, HIPAA, data security, PHI, europe
 
 subcollection: account
 
@@ -19,7 +19,7 @@ subcollection: account
 # 启用欧盟支持和支持 HIPAA 设置
 {: #eu-hipaa-supported}
 
-如果您是帐户所有者，那么可以为帐户启用“欧盟支持”和“支持 HIPAA”功能。例如，如果使用资源来处理欧洲居民的个人数据，那么可以选择启用“欧盟支持”设置。如果您计划在启用 HIPAA 的服务中包含受保护的健康信息 (PHI)，那么可以选择启用“支持 HIPAA”设置。
+如果您是帐户所有者，那么可以为 {{site.data.keyword.cloud}} 帐户启用“欧盟支持”和“支持 HIPAA”功能。例如，如果使用资源来处理欧洲居民的个人数据，那么可以选择启用“欧盟支持”设置。如果您计划在启用 HIPAA 的服务中包含受保护的健康信息 (PHI)，那么可以选择启用“支持 HIPAA”设置。
 {:shortdesc}
 
 

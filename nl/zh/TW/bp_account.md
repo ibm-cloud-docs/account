@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-05-31"
+lastupdated: "2019-06-19"
 
-keywords: resource group, account access, user access, IAM, organize
+keywords: organizing resource group, account best practices, best practices account
 
 subcollection: account
 
@@ -72,7 +72,7 @@ subcollection: account
 
 若要將資源新增至資源群組，請完成下列步驟：
 
-1. 移至**管理** > **帳戶**，然後選取**帳戶資源**功能表中的**資源群組**。
+1. 移至**管理 > 帳戶**。展開**帳戶資源**，然後選取**資源群組**。
 2. 針對您要新增資源的資源群組按一下「動作」圖示 ![「動作」圖示](../icons/action-menu-icon.svg)，然後選取**新增資源**。
 3. 系統將您重新導向至型錄之後，請選取您想要新增的資源。
 4. 選取您要指派資源的資源群組。

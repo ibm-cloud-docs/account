@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-15"
+lastupdated: "2019-06-20"
 
-keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy
+keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy, set up profile
 
 subcollection: account
 
@@ -19,7 +19,7 @@ subcollection: account
 # 프로파일 설정
 {: #usersettings}
 
-프로파일에서 사진과 개인 정보를 추가하고 알림을 관리하며 로그인 설정을 변경하고 개인정보처리방침을 모니터할 수 있습니다. 이를 설정하면 팀 구성원에게 자신을 알리고 자신이 어떻게 도움을 줄 수 있는지를 알리는 데 도움이 됩니다.
+{{site.data.keyword.cloud}} 프로파일에서 사진과 개인 정보를 추가하고 알림을 관리하며 로그인 설정을 변경하고 개인정보처리방침을 모니터할 수 있습니다. 이를 설정하면 팀 구성원에게 자신을 알리고 자신이 어떻게 도움을 줄 수 있는지를 알리는 데 도움이 됩니다.
 {:shortdesc}
 
 

@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: account settings, account owner, account name
+keywords: account settings, edit account name, view account type
 
 subcollection: account
 
@@ -20,7 +20,7 @@ subcollection: account
 # 查看帐户设置
 {: #account_settings}
 
-帐户所有者可以更改帐户名称和查看帐户类型。如果您拥有对所有帐户管理服务的 IAM 操作员角色或更高级别的角色，那么可以查看和更新帐户名称。  
+作为 {{site.data.keyword.cloud}} 帐户所有者，您可以更改帐户名称以及查看帐户类型。如果您拥有对所有帐户管理服务的 IAM 操作员角色或更高级别的角色，那么可以查看和更新帐户名称。  
 {:shortdesc}
 
 ## 编辑帐户名称

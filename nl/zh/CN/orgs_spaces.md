@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-08"
+lastupdated: "2019-06-19"
 
-keywords: account, add orgs, add spaces, manage users, user access
+keywords: account, add orgs, add spaces, cloud foundry orgs
 
 subcollection: account
 
@@ -19,13 +19,16 @@ subcollection: account
 # 添加组织和空间
 {: #orgsspacesusers}
 
-作为 {{site.data.keyword.Bluemix}} 帐户所有者，您可以向自己的帐户添加组织和空间。如果您是组织管理者，那么可以管理帐户中的组织。您可以转至**管理** > **帐户**，然后选择**帐户资源 > Cloud Foundry 组织**以对 Cloud Foundry 组织和空间进行管理。
+作为 {{site.data.keyword.Bluemix}} 帐户所有者，您可以向自己的帐户添加组织和空间。如果您是组织管理者，那么可以管理帐户中的组织。
 {:shortdesc}
 
 ## Cloud Foundry 组织概念
 {: #cf-org-concepts}
 
-您可以通过以下方式，使用组织来启用用户间的协作并促进项目资源的逻辑分组：
+您可以转至**管理** > **帐户**，然后选择**帐户资源 > Cloud Foundry 组织**以对 Cloud Foundry 组织和空间进行管理。
+
+
+组织可以通过以下方式，支持用户间的协作并促进项目资源的逻辑分组：
 
    * 可以通过组织将一组空间、应用程序、服务、域、路径和用户分组到一起。
    * 可以分别管理用户对组织和空间的访问权。
@@ -38,8 +41,7 @@ subcollection: account
 <dt>用户</dt>
 <dd>在组织和空间中具有基本许可权的角色。您必须先分配到组织，然后才能向您授予对该组织中的空间的其他许可权。有关更多详细信息，请参阅 [Cloud Foundry 访问权](/docs/iam?topic=iam-cfaccess)。</dd>
 <dt>域</dt>
-<dd>提供因特网上分配给组织的路径。路径具有子域和域。子域通常是应用程序名称。域可能是系统域，或者为应用程序注册的定制域。<br/>
-<p>如果您添加定制域，那么必须配置 DNS 服务器以将您的定制域解析为指向 {{site.data.keyword.Bluemix_notm}} 系统域。这样，当 {{site.data.keyword.Bluemix_notm}} 接收到定制域的请求时，它可以将其正确路由到您的应用程序。</p></dd>
+<dd>提供因特网上分配给组织的路径。路径具有子域和域。子域通常是应用程序名称。域可能是系统域，或者为应用程序注册的定制域。<br/><p>如果您添加定制域，那么必须配置 DNS 服务器以将您的定制域解析为指向 {{site.data.keyword.Bluemix_notm}} 系统域。这样，当 {{site.data.keyword.Bluemix_notm}} 接收到定制域的请求时，它可以将其正确路由到您的应用程序。</p></dd>
 <dt>配额</dt>
 <dd>表示组织可用的资源，包括可分配供组织使用的服务数和内存量。在创建组织时会分配配额。组织内空间中的任何应用程序或服务都会使用一定的配额。通过现收现付帐户或预订帐户，可以根据您组织的需求变化来调整 Cloud Foundry 应用程序和容器的配额。</dd>
 </dl>

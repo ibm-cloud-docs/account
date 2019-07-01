@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: account security, account access, login security, password, authentication
+keywords: account security, login security, TOTP, MFA, password expiration
 
 subcollection: account
 
@@ -21,7 +21,7 @@ subcollection: account
 # 设置登录安全性
 {: #login-settings}
 
-通过授权访问，您可以为登录设置额外的安全性。您可以设置安全性问题和答案，选择密码到期时间，设置基于时间的一次性密码 (TOTP) 多因子认证 (MFA)，以及设置外部认证选项。  
+通过授权访问，您可以为 {{site.data.keyword.cloud}} 登录设置额外的安全性。您可以设置安全性问题和答案，选择密码到期时间，设置基于时间的一次性密码 (TOTP)、多因子认证 (MFA)，以及设置外部认证选项。  
 {:shortdesc}
 
 帐户所有者可以要求对您所属的帐户使用 IBM 标识 MFA。IBM 标识 MFA 会覆盖其他任何用户 MFA 设置。例如，设置 IBM 标识 MFA 后，系统会提示您输入与您的 IBM 标识关联的 TOTP MFA，而不提示安全问题或某个外部认证方法。

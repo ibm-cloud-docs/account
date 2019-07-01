@@ -2,9 +2,9 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: user access, IBM Cloud account access, account owner
+keywords: user access, IBM Cloud account access, account owner, delegating access, confirming access
 
 subcollection: account
 
@@ -18,7 +18,7 @@ subcollection: account
 # 管理使用者對型錄的存取權
 {: #find-access}
 
-身為 {{site.data.keyword.Bluemix}} 帳戶擁有者，您可以使用 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 原則，將型錄的存取權指派給使用者。您可以控制新增至帳戶型錄的專用服務可見性，或在帳戶中建立之公用服務的可見性。依預設，只有帳戶擁有者可以完成這些作業。
+作為 {{site.data.keyword.Bluemix}} 帳戶擁有者，您可以透過使用 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 原則指派、授權和確認使用者對型錄的存取權。您可以控制新增至帳戶型錄的專用服務可見性，或在帳戶中建立之公用服務的可見性。依預設，只有帳戶擁有者可以完成這些作業。
 
 ## 委派存取權
 {: #get-access}

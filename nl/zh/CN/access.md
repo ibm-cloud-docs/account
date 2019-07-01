@@ -2,9 +2,9 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: user access, IBM Cloud account access, account owner
+keywords: user access, IBM Cloud account access, account owner, delegating access, confirming access
 
 subcollection: account
 
@@ -18,7 +18,7 @@ subcollection: account
 # 管理用户对目录的访问权
 {: #find-access}
 
-作为 {{site.data.keyword.Bluemix}} 帐户所有者，您可以通过 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 策略向用户分配对目录的访问权。您可以控制添加到帐户目录的私有服务或帐户中所创建公共服务的可视性。缺省情况下，仅帐户所有者可以完成这些任务。
+作为 {{site.data.keyword.Bluemix}} 帐户所有者，您可以通过使用 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 策略分配、授权和确认用户对目录的访问权。您可以控制添加到帐户目录的私有服务或帐户中所创建公共服务的可视性。缺省情况下，仅帐户所有者可以完成这些任务。
 
 ## 授予访问权
 {: #get-access}
@@ -57,4 +57,4 @@ subcollection: account
   3. 单击**访问策略**选项卡，在其中可以查看为您分配的访问策略。您必须具有帐户中目录资源的 Cloud IAM 管理员角色，才能更新包含可查看目录中专用资源的帐户的列表。
 
 
-要使用 [ CLI](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_commands_iam)，请运行 `ibmcloud iam user-policies <your-user-name>` 命令。如果您不是帐户管理员，那么此命令会返回错误。
+要使用 [CLI](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_commands_iam)，请运行 `ibmcloud iam user-policies <your-user-name>` 命令。如果您不是帐户管理员，那么此命令会返回错误。

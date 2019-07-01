@@ -4,7 +4,7 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-04-17"
 
-keywords: account upgrade, paid account, production account, Pay-As-You-Go, Subscription
+keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
 subcollection: account
 
@@ -24,7 +24,7 @@ subcollection: account
 Lite 계정으로 {{site.data.keyword.Bluemix}}를 쉽게 시작하고 서비스를 사용해 볼 수 있습니다. 추가 준비를 마치면 계정을 종량과금제 또는 구독 계정으로 업그레이드하여 프로덕션 지원 서비스의 전체 카탈로그를 이용할 수 있습니다.
 {:shortdesc}
 
-** 관리 > 계정 > 계정 설정**으로 이동한 후 _계정 유형_을 확인하여 현재 계정 유형을 확인할 수 있습니다. 
+** 관리 > 계정 > 계정 설정**으로 이동한 후 _계정 유형_을 확인하여 현재 계정 유형을 확인할 수 있습니다.
 
 어떤 유형의 계정으로 업그레이드할지 확실하지 않습니까? [계정 유형](/docs/account?topic=account-accounts)에서 각 계정 유형의 이점에 대한 자세한 정보를 얻으십시오.
 {: tip}

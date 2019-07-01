@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-20"
+  years: 2018, 2019
+lastupdated: "2019-06-19"
 
-keywords: company information, company details, company account, company profile
+keywords: company information, company details, company account, company profile, account contact
 
 subcollection: account
 
@@ -22,7 +22,7 @@ subcollection: account
 # 更新公司設定檔詳細資料
 {: #contact-info}
 
-每個 {{site.data.keyword.Bluemix}} 帳戶都包括一個公司設定檔，其中包含公司資訊及主要帳戶持有者的詳細資料。當您設定聯絡人及使用者設定檔時，可以使用公司設定檔中的資料。您可以具有與帳戶中可用服務相關聯的各種帳戶特定聯絡人。如果您具有管理存取權或更高權限，則可以更新聯絡資訊。
+每個 {{site.data.keyword.Bluemix}} 帳戶都包括一個公司設定檔，其中包含公司資訊及主要帳戶持有者的詳細資料。當您設定聯絡人及使用者設定檔時，可以使用公司設定檔中的資料。您可以具有與帳戶中可用服務相關聯的各種帳戶特定聯絡人。如果您具有管理存取權或更高權限，則可以更新您的帳戶聯絡資訊。
 {:shortdesc}
 
 ## 更新公司設定檔

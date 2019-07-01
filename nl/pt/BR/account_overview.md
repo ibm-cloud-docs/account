@@ -2,9 +2,9 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-02-12"
+lastupdated: "2019-06-19"
 
-keywords: IBM Cloud account, account differences, resources, access
+keywords: IBM Cloud account, account differences, account overview, account components, how access works
 
 subcollection: account
 
@@ -17,15 +17,16 @@ subcollection: account
 {:new_window: target="_blank"}
 
 
-# Hierarquia da conta
+# O que há em uma conta?
 {: #overview}
 
-Sua conta do {{site.data.keyword.Bluemix}} inclui muitos componentes e sistemas interativos. Obtenha um entendimento de como determinados componentes estão conectados e como acessar trabalhos em sua conta.
+Sua conta do {{site.data.keyword.Bluemix}} inclui muitos componentes e sistemas interativos. Conceitos, por exemplo, de como certos componentes estão conectados ou como o acesso funciona ajudarão a entender como configurar sua conta.
 {:shortdesc}
 
 <a href="https://cloud.ibm.com/docs/api/content/account/images/account_diagram.svg">
-  <img src="images/account_diagram.svg" alt="diagrama da conta">
-</a>
+  <img src="images/account_diagram.svg" alt="Um diagrama que mostra os componentes em uma conta, incluindo serviços, usuários e os subcomponentes de cada."> </a>
+
+Figura 1. Componentes e sistemas da conta
 
 Dentro do diagrama, há dois conceitos principais para os componentes na hierarquia da conta cujo entendimento é importante. O uso das linhas contínuas e das linhas pontilhadas ajudam a ilustrar que alguns componentes estão contidos em outros, por exemplo, os usuários estão incluídos em grupos de acesso ou em organizações do Cloud Foundry. No entanto, alguns componentes interagem com outros para fornecer acesso em vez de associação. Por exemplo, os usuários recebem acesso a grupos de recursos, mas não são membros de um grupo de recursos da mesma maneira que eles são para grupos de acesso. Esses conceitos também são explicados nas seções a seguir.
 

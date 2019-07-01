@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-02-05"
+lastupdated: "2019-06-19"
 
-keywords: audit log, user access, account log
+keywords: audit log, user access, account log, system events, monitor system events, user access logs
 
 subcollection: account
 

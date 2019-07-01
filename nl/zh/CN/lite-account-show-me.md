@@ -4,7 +4,7 @@ copyright:
   years: 2015, 2018
 lastupdated: "2018-11-19"
 
-keywords: free account, Lite account, free service, sign up for account, video
+keywords: free account, Lite account, free service, sign up for account, Lite account video
 
 subcollection: account
 
@@ -30,7 +30,7 @@ subcollection: account
   </div>
 </p>
 
-## 视频字幕
+## 视频抄本
 {: #transcript-lite-account}
 
 以下部分提供了此轻量帐户视频的抄本，供可能需要替代格式或翻译版本的用户使用。

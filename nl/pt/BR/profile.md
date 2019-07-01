@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-15"
+lastupdated: "2019-06-20"
 
-keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy
+keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy, set up profile
 
 subcollection: account
 
@@ -19,7 +19,7 @@ subcollection: account
 # Configurando seu Perfil
 {: #usersettings}
 
-Em seu perfil, é possível incluir uma foto ou informações pessoais, gerenciar notificações, mudar configurações de login e monitorar sua privacidade. Configurá-lo ajuda seus colegas a saberem quem você é e como você pode ajudar.
+Em seu perfil do {{site.data.keyword.cloud}}, é possível incluir uma foto e informações pessoais, gerenciar notificações, mudar configurações de login e monitorar sua privacidade. Configurá-lo ajuda seus colegas a saberem quem você é e como você pode ajudar.
 {:shortdesc}
 
 

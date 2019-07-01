@@ -2,9 +2,9 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-20"
 
-keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, Bluemix account, Bluemix
+keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, switch to IBMid
 
 subcollection: account
 
@@ -21,7 +21,7 @@ subcollection: account
 # Alternando para o IBMid e vinculando contas
 {: #unifyingaccounts}
 
-Um IBMid é um ID único que você usa para efetuar login em sua conta do {{site.data.keyword.Bluemix}} para acessar e comprar recursos de infraestrutura, serviços e aplicativos. Todas as novas contas recebem automaticamente um IBMid e as contas existentes do SoftLayer, exceto contas federadas SAML, são ativadas para alternar para a autenticação do IBMid.
+Um IBMid é um ID único que você usa para efetuar login em sua conta do {{site.data.keyword.Bluemix}} para acessar e comprar recursos de infraestrutura, serviços e aplicativos. Todas as novas contas recebem automaticamente um IBMid. Contas do SoftLayer existentes, exceto contas federadas do SAML, podem ser ativadas para alternar para autenticação de IBMid. Também é possível vincular contas para uma única visualização de suas contas, faturamento e uso.
 {:shortdesc}
 
 ## Alternando para o IBMid
@@ -47,7 +47,7 @@ Para alternar sua conta existente do SoftLayer para um IBMid, crie um IBMid e, e
 ### Confirmando seu IBMid com o código de registro
 {: #confIBMiduseregcode}
 
-1. Ao receber seu código de registro, clique no link no e-mail ou copie a URL em um navegador e insira seu código de registro. O código de registro é válido por sete dias e pode ser usado apenas uma vez.
+1. Ao receber seu código de registro, clique no link no e-mail ou copie a URL em um navegador e insira seu código de registro. O código de registro é válido por sete dias e é possível usá-lo apenas uma vez.
 
 2. Depois de enviar seu código de registro, use seu IBMid para efetuar login no portal do cliente.
 
@@ -63,18 +63,15 @@ Para resolver quaisquer problemas ao efetuar login com seu IBMid, consulte [Reso
 ## Vinculando contas do IBMid
 {: #link_accounts}
 
-Depois que as contas são alternadas para as contas do IBMid, é possível vincular contas do SoftLayer e
-contas do {{site.data.keyword.Bluemix_notm}} para usar uma combinação de recursos de infraestrutura como
-serviço (IaaS) e de plataforma como serviço (PaaS). Em seguida, é possível acessar recursos de IaaS e
-de PaaS por meio de um login único. A vinculação de suas contas também fornecerá uma única nota para todos os recursos PaaS e IaaS que você usar. É possível vincular sua própria conta ou, caso você seja um usuário principal, vincular sua conta
+Após as contas serem alternadas para as contas do IBMid, é possível vincular contas do SoftLayer e contas do {{site.data.keyword.Bluemix_notm}} para que você possa acessar recursos de infraestrutura e plataforma por meio de um único login. A vinculação das suas contas também fornece uma única conta para todos os recursos de infraestrutura e plataforma que você usar. É possível vincular sua própria conta ou, caso você seja um usuário principal, vincular sua conta
 do usuário.
 
 ### Vinculando suas contas do IBMid
 {: #link_user_account}
 
-Se você for um cliente de infraestrutura clássica e também tiver contas PaaS no {{site.data.keyword.Bluemix_notm}} ou criá-las, será possível vincular o IaaS e o PaaS para uma única visualização de suas contas. Para vincular suas contas, use as etapas a seguir:
+Se você for um cliente de infraestrutura clássica e também tiver uma conta do {{site.data.keyword.Bluemix_notm}}, será possível vincular suas contas para uma única visualização de suas contas e uso. Para vincular suas contas, conclua as etapas a seguir:
 1. Efetue login em sua conta do SoftLayer.
-2. Na página Resumo da conta, clique em **Novo! Vincular uma conta do Bluemix**.
+2. Na página Resumo da conta, clique em **Vincular uma conta do IBM Cloud**.
 3. Revise os termos de uso e clique para reconhecer sua aceitação.
 4. Conclua uma das etapas finais a seguir, dependendo de como sua conta foi configurada:
   * Se o seu IBMid tiver uma conta do {{site.data.keyword.Bluemix_notm}} associada, você será
@@ -105,7 +102,7 @@ Certifique-se de revisar as notas importantes a seguir sobre vinculação de con
 Conclua as etapas a seguir para vincular cada conta do SoftLayer a uma conta da plataforma {{site.data.keyword.Bluemix_notm}} existente ou para criar uma nova:
 
    1. Efetue login no portal do cliente com seu IBMid da conta do usuário principal.
-   2. No portal do cliente, clique em **Vincular uma conta do Bluemix**.
+   2. No portal do cliente, clique em **Vincular uma conta do IBM Cloud**.
    3. Leia e aceite os termos para vincular contas do SoftLayer e do {{site.data.keyword.Bluemix_notm}}.
    4. Siga os prompts do assistente, incluindo a inclusão de usuários da conta do SoftLayer na conta do {{site.data.keyword.Bluemix_notm}}.
    5. Quando for solicitado, execute uma das ações a seguir:
@@ -131,4 +128,4 @@ Se você tiver uma conta vinculada, será possível usar a página **Configuraç
 
 Outros métodos de autenticação de diversos fatores não são por IBMid. Ela é por conta. Quando um IBMid está associado a várias contas e você alterna entre elas, é necessário confirmar sua identidade toda vez que você muda para uma conta diferente que requer autenticação de dois fatores. Isso é verdadeiro mesmo se a conta anterior e a nova estão ambas configuradas com o mesmo mecanismo de autenticação de dois fatores.
 
-Se você ativou anteriormente a [2FA no portal do cliente](/docs/customer-portal?topic=customer-portal-cp_setup-2fa#cp-enable-2fa) para seus recursos de infraestrutura clássica e, em seguida, ativar a configuração MFA da conta do {{site.data.keyword.Bluemix_notm}}, a configuração da conta MFA substituirá a 2FA que foi configurada no portal do cliente. Isso significa que é possível desativar a 2FA que você comprou no portal do cliente em favor da configuração MFA da conta.
+Se você ativou anteriormente a [2FA no portal do cliente](/docs/customer-portal?topic=customer-portal-cp_setup-2fa) para seus recursos de infraestrutura clássica e, em seguida, ativar a configuração MFA da conta do {{site.data.keyword.Bluemix_notm}}, a configuração da conta MFA substituirá a 2FA que foi configurada no portal do cliente. Isso significa que é possível desativar a 2FA que você comprou no portal do cliente em favor da configuração MFA da conta.

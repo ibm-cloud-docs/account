@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: account security, account access, login security, password, authentication
+keywords: account security, login security, TOTP, MFA, password expiration
 
 subcollection: account
 
@@ -21,7 +21,7 @@ subcollection: account
 # 設定登入安全
 {: #login-settings}
 
-透過授權存取，您可以為登入設定額外的安全。您可以設定安全問題和回答、選取密碼有效期限、設定以時間為基礎的一次性密碼 (TOTP) 多因子鑑別 (MFA)，以及設定外部鑑別選項。  
+透過授權存取，您可以為 {{site.data.keyword.cloud}} 登入設定額外的安全。您可以設定安全問題和回答，選取密碼有效期限，設定以時間為基礎的一次性密碼 (TOTP)、多因子鑑別 (MFA)，以及設定外部鑑別選項。  
 {:shortdesc}
 
 帳戶擁有者在您所屬的帳戶上可能需要 IBM ID MFA。IBM ID MFA 會置換任何其他使用者 MFA 設定。例如，已設定 IBM ID MFA 時，系統會提示您輸入與您 IBM ID 相關聯的 TOTP MFA，而不是顯示安全問題或其中一個外部鑑別方法。

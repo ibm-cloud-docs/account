@@ -2,9 +2,9 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-20"
 
-keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, Bluemix account, Bluemix
+keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, switch to IBMid
 
 subcollection: account
 
@@ -21,7 +21,7 @@ subcollection: account
 # 切換至 IBM ID 並鏈結帳戶
 {: #unifyingaccounts}
 
-IBM ID 是您用來登入 {{site.data.keyword.Bluemix}} 帳戶以便存取及購買基礎架構、服務及應用程式特性的單一 ID。所有新帳戶會自動收到 IBM ID，而現有的 SoftLayer 帳戶（SAML 聯合帳戶除外）會啟用切換至 IBM ID 鑑別。
+IBM ID 是您用來登入 {{site.data.keyword.Bluemix}} 帳戶以便存取及購買基礎架構、服務及應用程式特性的單一 ID。所有新帳戶會自動收到 IBM ID。可以啟用除了 SAML 聯合帳戶外的現有 SoftLayer 帳戶，以切換至 IBM ID 鑑別。您還可以鏈結帳戶以得到帳戶、計費和用量的單一視圖。
 {:shortdesc}
 
 ## 切換至 IBM ID
@@ -47,7 +47,7 @@ IBM ID 是您用來登入 {{site.data.keyword.Bluemix}} 帳戶以便存取及購
 ### 使用登錄碼來確認 IBM ID
 {: #confIBMiduseregcode}
 
-1. 當您收到登錄碼時，請按一下電子郵件中的鏈結，或將 URL 複製到瀏覽器，並輸入登錄碼。登錄碼的有效時間是 7 天，而且只能使用一次。
+1. 當您收到登錄碼時，請按一下電子郵件中的鏈結，或將 URL 複製到瀏覽器，並輸入登錄碼。登錄代碼有效期為 7 天，並且只能使用一次。
 
 2. 提交登錄碼之後，請使用 IBM ID 來登入客戶入口網站。
 
@@ -63,14 +63,14 @@ IBM ID 是您用來登入 {{site.data.keyword.Bluemix}} 帳戶以便存取及購
 ## 鏈結 IBM ID 帳戶
 {: #link_accounts}
 
-帳戶切換至 IBM ID 帳戶之後，您可以鏈結 SoftLayer 帳戶及 {{site.data.keyword.Bluemix_notm}} 帳戶，以利用合併的基礎架構即服務 (Iaas) 及平台即服務 (PaaS) 資源。然後，您就可以從單一登入存取 IaaS 資源和 PaaS 資源。鏈結您的帳戶也會讓您針對您使用的所有 PaaS 及 IaaS 資源收到單一張帳單。您可以鏈結自己的帳戶，或者，如果您是主要使用者，則可以鏈結您的使用者帳戶。
+帳戶切換至 IBM ID 帳戶後，您可以鏈結 SoftLayer 帳戶和 {{site.data.keyword.Bluemix_notm}} 帳戶，以便您登入一次就可以存取基礎架構和平台資源。鏈結帳戶還可以對您使用的所有基礎架構和平台資源提供單一帳單。您可以鏈結自己的帳戶，或者，如果您是主要使用者，則可以鏈結您的使用者帳戶。
 
 ### 鏈結 IBM ID 帳戶
 {: #link_user_account}
 
-如果您是標準基礎架構客戶，且您的 {{site.data.keyword.Bluemix_notm}} 中也有 PaaS 帳戶或是建立它們，則可以鏈結 IaaS 和 PaaS 來取得帳戶的單一視圖。若要鏈結帳戶，請使用下列步驟：
+如果您是標準基礎架構客戶，並且還具有 {{site.data.keyword.Bluemix_notm}} 帳戶，則您可以鏈結帳戶以獲取帳戶、計費及用量的單一視圖。要鏈結帳戶，請完成下列步驟：
 1. 登入您的 SoftLayer 帳戶。
-2. 從「帳戶摘要」頁面，按一下**新增功能！鏈結 Bluemix 帳戶**。
+2. 從「帳戶摘要」頁面，按一下**鏈結 IBM Cloud 帳戶**。
 3. 檢閱使用條款，並按一下以確認接受。
 4. 根據帳戶的設定方式，完成下列其中一個最終步驟：
   * 如果您的 IBM ID 有相關聯的 {{site.data.keyword.Bluemix_notm}} 帳戶，會導向至授權頁面，然後回到最終確認步驟。
@@ -96,7 +96,7 @@ IBM ID 是您用來登入 {{site.data.keyword.Bluemix}} 帳戶以便存取及購
 完成下列步驟，以將每一個 SoftLayer 帳戶鏈結至現有的 {{site.data.keyword.Bluemix_notm}} 平台帳戶或建立新帳戶：
 
    1. 使用您的主要使用者帳戶 IBM ID 來登入客戶入口網站。
-   2. 從客戶入口網站中，按一下**鏈結 Bluemix 帳戶**。
+   2. 從客戶入口網站，按一下**鏈結 IBM Cloud 帳戶**。
    3. 閱讀並接受將 SoftLayer 帳戶與 {{site.data.keyword.Bluemix_notm}} 帳戶鏈結所適用的條款。
    4. 請遵循精靈提示（包括將 SoftLayer 帳戶中的使用者新增至 {{site.data.keyword.Bluemix_notm}} 帳戶）。
    5. 看到提示時，請執行下列其中一個動作：
@@ -122,4 +122,4 @@ IBM ID 是您用來登入 {{site.data.keyword.Bluemix}} 帳戶以便存取及購
 
 其他多因子鑑別方法並不是根據 IBM ID。它是根據帳戶。當 IBM ID 與多個帳戶相關聯，且您在帳戶之間切換時，每次切換到需要雙因子鑑別的不同帳戶時都必須確認身分。即使前一個帳戶和新的帳戶都已配置相同的雙因子鑑別機制時也是如此。
 
-如果您先前[在客戶入口網站啟用了標準基礎架構資源的 2FA](/docs/customer-portal?topic=customer-portal-cp_setup-2fa#cp-enable-2fa)，然後啟用了 {{site.data.keyword.Bluemix_notm}} 帳戶 MFA 設定，則 MFA 帳戶設定會置換您在客戶入口網站中設定的 2FA。這表示您可以停用在客戶入口網站中購買的 2FA，而支持帳戶 MFA 設定。
+如果您先前[在客戶入口網站啟用了標準基礎架構資源的 2FA](/docs/customer-portal?topic=customer-portal-cp_setup-2fa)，然後啟用了 {{site.data.keyword.Bluemix_notm}} 帳戶 MFA 設定，則 MFA 帳戶設定會置換您在客戶入口網站中設定的 2FA。這表示您可以停用在客戶入口網站中購買的 2FA，而支持帳戶 MFA 設定。

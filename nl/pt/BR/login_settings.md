@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: account security, account access, login security, password, authentication
+keywords: account security, login security, TOTP, MFA, password expiration
 
 subcollection: account
 
@@ -21,7 +21,7 @@ subcollection: account
 # Configurando a segurança de login
 {: #login-settings}
 
-Com acesso autorizado, é possível configurar a segurança extra para seu login. É possível configurar perguntas e respostas de segurança, selecionar uma expiração de senha, configurar a autenticação de diversos fatores (MFA) do time-based one-time passcode (TOTP) e configurar as opções de autenticação externa.  
+Com o acesso autorizado, é possível configurar a segurança extra para seu login do {{site.data.keyword.cloud}}. É possível configurar perguntas e respostas, selecionar uma expiração de senha, configurar uma senha descartável baseada em tempo (TOTP), a autenticação de diversos fatores (MFA) e configurar opções de autenticação externa.  
 {:shortdesc}
 
 Um proprietário da conta pode requerer a MFA do IBMid em uma conta da qual você é um membro. A MFA do IBMid substitui qualquer outra configuração de MFA. Por exemplo, quando a MFA do IBMid está configurada, você recebe uma solicitação para fornecer uma MFA do TOTP associada a seu IBMid em vez de perguntas de segurança ou um dos métodos de autenticação externa.

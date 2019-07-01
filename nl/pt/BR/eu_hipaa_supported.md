@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-03-20"
+lastupdated: "2019-06-19"
 
-keywords: GDPR, HIPAA, data security, PHI, account settings, europe
+keywords: GDPR, HIPAA, data security, PHI, europe
 
 subcollection: account
 
@@ -19,7 +19,7 @@ subcollection: account
 # Ativando as configurações suportadas da UE e HIPAA
 {: #eu-hipaa-supported}
 
-Se você for o proprietário da conta, será possível ativar sua conta para que seja suportada pela UE e HIPAA. É possível optar por ativar a configuração
+Se você for o proprietário da conta, será possível ativar sua conta do {{site.data.keyword.cloud}} para ser suportada por UE e HIPAA. É possível optar por ativar a configuração
 Suportado pela UE, por exemplo, se você usar recursos para processar dados pessoais para os cidadãos europeus. E você pode escolher ativar a configuração Suportado pelo HIPAA se planejar incluir Informação Protegida de Saúde (PHI) nos serviços ativados pelo HIPAA.
 {:shortdesc}
 

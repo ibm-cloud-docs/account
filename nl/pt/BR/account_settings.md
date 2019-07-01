@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: account settings, account owner, account name
+keywords: account settings, edit account name, view account type
 
 subcollection: account
 
@@ -20,7 +20,7 @@ subcollection: account
 # Visualizando suas configurações de conta
 {: #account_settings}
 
-Como proprietário da conta, é possível mudar o nome da conta e visualizar seu tipo de conta. Se você tiver uma função de operador do IAM ou superior em todos os serviços de gerenciamento de conta, será possível visualizar e atualizar o nome da conta.  
+Como um proprietário de conta do {{site.data.keyword.cloud}}, é possível mudar o nome da conta e visualizar seu tipo de conta. Se você tiver uma função de operador do IAM ou superior em todos os serviços de gerenciamento de conta, será possível visualizar e atualizar o nome da conta.  
 {:shortdesc}
 
 ## Editando o nome da conta

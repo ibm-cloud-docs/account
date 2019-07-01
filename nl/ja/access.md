@@ -2,9 +2,9 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: user access, IBM Cloud account access, account owner
+keywords: user access, IBM Cloud account access, account owner, delegating access, confirming access
 
 subcollection: account
 
@@ -18,7 +18,7 @@ subcollection: account
 # カタログへのユーザーのアクセス権限の管理
 {: #find-access}
 
-{{site.data.keyword.Bluemix}} アカウント所有者は、{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) ポリシーを使用して、ユーザーにカタログへのアクセス権限を割り当てることができます。 アカウント・カタログに追加されたプライベート・サービスやアカウント内に作成されたパブリック・サービスの可視性を制御できます。 デフォルトでは、アカウント所有者のみがこれらのタスクを実行できます。
+{{site.data.keyword.Bluemix}} アカウント所有者は、{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) ポリシーを使用して、カタログへのアクセス権をユーザーに割り当て、委任、および確認することができます。アカウント・カタログに追加されたプライベート・サービスやアカウント内に作成されたパブリック・サービスの可視性を制御できます。 デフォルトでは、アカウント所有者のみがこれらのタスクを実行できます。
 
 ## アクセス権限の委任
 {: #get-access}

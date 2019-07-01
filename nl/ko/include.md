@@ -2,9 +2,9 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: add user, share resource, private resource, share catalog
+keywords: add user, share resource, private resource, share catalog, find resource, set visibility
 
 subcollection: account
 
@@ -18,8 +18,8 @@ subcollection: account
 # 개인용 리소스에 계정 추가
 {: #include}
 
-작성된 {{site.data.keyword.Bluemix}} 개인용 리소스에는 기본적으로 제한이 있습니다. 계정의 관리자인 경우에는 포함 목록에 사용자를 추가하여 리소스를 볼 수 있는 사용자를 선택할 수 있습니다.
-{:shortdesc: .shortdesc}
+작성된 {{site.data.keyword.Bluemix}} 개인용 리소스에는 기본적으로 제한이 있습니다. 계정의 관리자인 경우에는 포함 목록에 사용자를 추가하여 리소스를 볼 수 있는 사용자를 선택할 수 있습니다. 또한 개인용 리소스의 소유권을 이전할 수 있습니다.
+{:shortdesc}
 
 {{site.data.keyword.Bluemix}} [명령행 인터페이스(CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) 또는 콘솔을 사용하여 계정에 추가된 개인용 리소스를 사용자가 볼 수 있도록 허용하는 액세스 권한이 있는지 여부를 판별할 수 있습니다. 계정 소유자는 액세스 정책을 지정하여 콘솔에서 계정의 사용자에게 액세스를 제공할 수 있습니다. 자세한 정보는 [계정에 대한 액세스 관리](/docs/account?topic=account-find-access)를 참조하십시오.
 
@@ -33,7 +33,10 @@ subcollection: account
 
 계정이 개인용 리소스를 볼 수 있도록 하려면 다음 명령을 실행하십시오.
 
-`ibmcloud catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>`
+```
+ibmcloud catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>
+```
+{:codeblock}
 
 includes-add 플래그 뒤에 계정과 연관된 ID 또는 쉼표로 구분된 이메일 목록을 추가할 수 있습니다.
 
@@ -79,19 +82,24 @@ Children           Name                                          Kind         ID
 
 하위 배치에 대한 리소스 ID를 가져온 후에 다음 명령을 실행하여 계정을 포함할 수 있습니다.
 
-`ibmcloud catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`
+```
+ibmcloud catalog entry-visibility-set <service-id> —-includes-add <some-other-account>
+```
+{:codeblock}
 
 오브젝트의 하위는 복잡한 방식으로 가시성을 상속할 수 있습니다. 하위 오브젝트가 개인용이면 고유 가시성 구성이 있습니다. 하지만 하위 오브젝트가 공용으로 설정된 경우에는 해당 상위 가시성을 상속합니다. 개인용 하위 오브젝트의 가시성을 설정하면 상위보다 더 해당 가시성이 제한될 수 있습니다. 가시성의 작동 방식에 대한 자세한 정보는 [카탈로그 API 문서](https://{DomainName}/apidocs/globalcatalog)를 참조하십시오.
 
 ## 개인용 리소스의 소유권 이전
 {: #owners}
 
-프로젝트 또는 조직을 떠나는 경우 계정의 소유권을 다른 사용자에게 이전하고자 할 수 있습니다.
-{:shortdesc}
+프로젝트 또는 조직을 떠나는 경우 계정 내의 리소스의 소유권을 다른 사용자에게 이전하고자 할 수 있습니다.
 
 일단 소유권이 이전되면 계정에서 리소스를 더 이상 볼 수 없습니다. 이 조치를 되돌릴 수 없으므로 소유권 이전을 원하는지를 확실히 결정해야 합니다.
 {: important}
 
 [{{site.data.keyword.Bluemix}} 명령행 인터페이스(CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli)를 사용하여 개인용 리소스의 소유권을 이전할 수 있습니다. 다음 명령을 실행하십시오.
 
-`ibmcloud catalog entry-visibility-set <service-id> --owner <account-id or account-email>`
+```
+ibmcloud catalog entry-visibility-set <service-id> --owner <account-id or account-email>
+```
+{:codeblock}

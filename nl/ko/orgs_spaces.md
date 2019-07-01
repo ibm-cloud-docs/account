@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-08"
+lastupdated: "2019-06-19"
 
-keywords: account, add orgs, add spaces, manage users, user access
+keywords: account, add orgs, add spaces, cloud foundry orgs
 
 subcollection: account
 
@@ -19,13 +19,15 @@ subcollection: account
 # 조직 및 영역 추가
 {: #orgsspacesusers}
 
-{{site.data.keyword.Bluemix}} 계정 소유자는 계정에 조직 및 영역을 추가할 수 있습니다. 조직 관리자는 계정의 조직을 관리할 수 있습니다. **관리** > **계정**으로 이동하고 **계정 리소스 > Cloud Foundry 조직**을 선택하여 Cloud Foundry 조직 및 영역을 관리할 수 있습니다.
+{{site.data.keyword.Bluemix}} 계정 소유자는 계정에 조직 및 영역을 추가할 수 있습니다. 조직 관리자는 계정의 조직을 관리할 수 있습니다. 
 {:shortdesc}
 
 ## Cloud Foundry 조직의 개념
 {: #cf-org-concepts}
 
-조직을 사용하여 사용자 간 협업을 사용으로 설정하고 다음 방식으로 프로젝트 리소스의 논리적 그룹화를 용이하게 할 수 있습니다.
+**관리** > **계정**으로 이동하고 **계정 리소스 > Cloud Foundry 조직**을 선택하여 Cloud Foundry 조직 및 영역을 관리할 수 있습니다.
+
+조직이 사용자 간 협업을 사용으로 설정하고 다음 방식으로 프로젝트 리소스의 논리적 그룹화를 용이하게 할 수 있습니다.
 
    * 조직에서 영역, 앱, 서비스, 도메인, 라우트 및 사용자의 세트를 함께 그룹화할 수 있습니다.
    * 개별적으로 조직 및 영역에 대한 사용자 액세스를 관리할 수 있습니다.
@@ -50,7 +52,7 @@ subcollection: account
 ## 조직 추가
 {: #createorg}
 
-청구 가능 계정이 있는 경우 필요한 수의 조직을 추가할 수 있습니다. Lite 계정은 조직을 하나만 가질 수 있으며 이는 사용자의 계정 내에 이미 작성되어 있습니다.
+청구 가능 계정이 있는 경우 필요한 수의 조직을 추가할 수 있습니다. Lite 계정은 조직을 하나만 가질 수 있으며 이는 사용자의 계정 내에 이미 생성되어 있습니다.
 
 1. **관리** > **계정**으로 이동하여 **계정 리소스 > Cloud Foundry 조직**을 선택하십시오. **작성**을 클릭하십시오.
 2. 조직 이름을 입력하십시오. 이름은 {{site.data.keyword.Bluemix_notm}}에서 고유해야 합니다.

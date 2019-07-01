@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-20"
+  years: 2018, 2019
+lastupdated: "2019-06-19"
 
-keywords: company information, company details, company account, company profile
+keywords: company information, company details, company account, company profile, account contact
 
 subcollection: account
 
@@ -22,7 +22,7 @@ subcollection: account
 # 회사 프로파일 세부사항 업데이트
 {: #contact-info}
 
-각 {{site.data.keyword.Bluemix}} 계정에는 회사 정보 및 기본 계정 소유자에 대한 세부사항이 포함된 회사 프로파일이 포함되어 있습니다. 연락처 및 사용자 프로파일을 설정하는 경우 회사 프로파일의 데이터를 사용할 수 있습니다. 계정에서 사용할 수 있는 서비스와 결합되어 사용되는 다양한 계정 특정 연락처가 있을 수 있습니다. 관리 액세스 권한 이상이 있는 경우에는 연락처 정보를 업데이트할 수 있습니다.
+각 {{site.data.keyword.Bluemix}} 계정에는 회사 정보 및 기본 계정 소유자에 대한 세부사항이 포함된 회사 프로파일이 포함되어 있습니다. 연락처 및 사용자 프로파일을 설정하는 경우 회사 프로파일의 데이터를 사용할 수 있습니다. 계정에서 사용할 수 있는 서비스와 결합되어 사용되는 다양한 계정 특정 연락처가 있을 수 있습니다. 관리 액세스 권한 이상이 있는 경우에는 계정 연락처 정보를 업데이트할 수 있습니다.
 {:shortdesc}
 
 ## 사용자 회사 프로파일 업데이트
@@ -30,7 +30,7 @@ subcollection: account
 
 회사 프로파일 세부사항에 대한 업데이트를 요청하려면 **관리 > 계정**으로 이동하여 **회사 프로파일**을 선택하십시오. 회사 프로파일에 대한 업데이트를 요청하면 클래식 인프라 팀 구성원이 해당 요청을 검토합니다. 추가 정보가 필요하면 당사 팀이 케이스를 업데이트하여 업데이트를 요청합니다.
 
-{{site.data.keyword.Bluemix_notm}}는 회사 프로파일의 정보를 사용하여 사용자에게 연락합니다. 전화번호나 이메일이 변경된 경우에는 반드시 이를 업데이트해야 합니다. 회사 프로파일 정보는 계정이 작성될 때 입력됩니다.
+{{site.data.keyword.Bluemix_notm}}는 회사 프로파일의 정보를 사용하여 사용자에게 연락합니다. 전화번호나 이메일이 변경된 경우에는 반드시 이를 업데이트해야 합니다. 회사 프로파일 정보는 계정이 생성될 때 입력됩니다.
 
 ## 계정 연락처 추가 또는 편집
 {: #account-contact}

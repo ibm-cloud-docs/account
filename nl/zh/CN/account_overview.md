@@ -2,9 +2,9 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-02-12"
+lastupdated: "2019-06-19"
 
-keywords: IBM Cloud account, account differences, resources, access
+keywords: IBM Cloud account, account differences, account overview, account components, how access works
 
 subcollection: account
 
@@ -17,15 +17,17 @@ subcollection: account
 {:new_window: target="_blank"}
 
 
-# 帐户层次结构
+# 帐户中有什么？
 {: #overview}
 
-{{site.data.keyword.Bluemix}} 帐户包含许多交互组件和系统。了解特定组件的连接方式以及访问权在您帐户中的生效方式。
+{{site.data.keyword.Bluemix}} 帐户包含许多交互组件和系统。特定组件如何连接或者访问权的工作原理之类的概念将帮助您了解如何设置帐户。
 {:shortdesc}
 
 <a href="https://cloud.ibm.com/docs/api/content/account/images/account_diagram.svg">
-  <img src="images/account_diagram.svg" alt="帐户图">
+  <img src="images/account_diagram.svg" alt="显示帐户中组件（包括服务、用户以及每项的子组件）的图。">
 </a>
+
+图 1. 帐户组件和系统
 
 在该图中，帐户层次结构中的组件有两个主要概念务必要理解。实线和虚线用于帮助说明某些组件包含在其他组件中，例如将用户添加到访问组或 Cloud Foundry 组织。但是，某些组件与其他组件进行交互的目的是为了提供访问权，而不是提供成员资格。例如，授予了用户对资源组的访问权，但这些用户并不会像针对访问组那样，成为资源组的成员。以下各部分还将对这些概念进行说明。
 
@@ -33,7 +35,7 @@ subcollection: account
 <dt>用户</dt>
 <dd>可以邀请用户加入帐户并向其授予对帐户中资源的访问权。</dd>
 <dt>服务标识</dt>
-<dd>服务标识用于标识服务或应用程序，类似于用户标识对用户进行标识的方式。可以使用创建的服务标识来支持 {{site.data.keyword.Bluemix_notm}} 外部的应用程序访问服务。您可以向服务标识分配特定访问策略，以限制使用特定服务的许可权，甚至可以将访问不同服务的许可权组合在一起。由于服务标识并不与特定用户绑定，因此即使用户离开组织并被从帐户中删除，该服务标识仍会保留，以确保您的应用程序或服务保持正常运行。有关更多信息，请参阅[创建和使用服务标识](/docs/iam?topic=iam-serviceids#serviceids)。</dd>
+<dd>服务标识识别服务或应用程序的方式与用户标识识别用户的方式相似。可以使用创建的服务标识来支持 {{site.data.keyword.Bluemix_notm}} 外部的应用程序访问服务。您可以向服务标识分配特定访问策略，以限制使用特定服务的许可权，甚至可以将访问不同服务的许可权组合在一起。由于服务标识并不与特定用户绑定，因此即使用户离开组织并被从帐户中删除，该服务标识仍会保留，以确保您的应用程序或服务保持正常运行。有关更多信息，请参阅[创建和使用服务标识](/docs/iam?topic=iam-serviceids#serviceids)。</dd>
 <dt>服务实例或资源</dt>
 <dd>{{site.data.keyword.Bluemix_notm}} 中的服务是基于资源组或基于 Cloud Foundry 的服务。可以添加到资源组并使用 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 进行管理的服务实例称为资源。添加到 Cloud Foundry 组织和空间的服务实例通过使用 Cloud Foundry 角色，采用单独的访问管理系统。有关更多信息，请参阅[什么是资源？](/docs/resources?topic=resources-resource#resource)</dd>
 <dt>API 密钥</dt>

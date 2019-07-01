@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-03-20"
+lastupdated: "2019-06-19"
 
-keywords: GDPR, HIPAA, data security, PHI, account settings, europe
+keywords: GDPR, HIPAA, data security, PHI, europe
 
 subcollection: account
 
@@ -19,7 +19,7 @@ subcollection: account
 # 「EU サポート対象」および「HIPAA サポートあり」設定の有効化
 {: #eu-hipaa-supported}
 
-アカウント所有者は、アカウントで「EU サポート対象」および「HIPAA サポートあり」を有効にすることができます。 例えばヨーロッパ市民の個人データを処理するためにリソースを使用する場合などに、「EU サポート対象」設定を有効にすることを選択できます。 HIPAA 対応サービスに Protected Health Information (PHI) を組み込むことを計画している場合は、「HIPAA サポートあり」設定を有効にすることを選択できます。
+アカウント所有者は、{{site.data.keyword.cloud}} アカウントで「EU サポートあり」および「HIPAA サポートあり」を有効にすることができます。例えばヨーロッパ市民の個人データを処理するためにリソースを使用する場合などに、「EU サポート対象」設定を有効にすることを選択できます。 HIPAA 対応サービスに Protected Health Information (PHI) を組み込むことを計画している場合は、「HIPAA サポートあり」設定を有効にすることを選択できます。
 {:shortdesc}
 
 
@@ -52,7 +52,7 @@ subcollection: account
 この設定は、お客様またはお客様の会社が HIPAA が定める適用対象事業体である場合にのみ有効にしてください。 お客様またはお客様の会社が適用対象事業体の事業提携者の場合は、[{{site.data.keyword.Bluemix_notm}} 営業担当員](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-wcp){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") にお問い合わせいただき、該当する BAA に同意してください。 適用対象事業体および事業提携者の HIPAA 定義について詳しくは、『[US Department of Health & Human Services](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")』Web サイトを参照してください。
 {: important}
 
-「HIPAA サポートあり」設定を有効にしたアカウントは、サービスのカタログ全体に引き続きアクセスできます。{{site.data.keyword.Bluemix_notm}} サービスでは通常、複数のプランが提供されます。 サービスの「HIPAA 使用可能」ラベルは、使用可能なすべてのプランに適用することも、特定のプランまたは構成に制限することもできます。 お客様は、PHI を HIPAA 対応オファリング・プランに制限すること、および HIPAA および HITECH に準拠して設計を行うことに関して一切の責任を負うものとします。
+「HIPAA サポートあり」設定を有効にしたアカウントは、サービスのカタログ全体に引き続きアクセスできます。 {{site.data.keyword.Bluemix_notm}} サービスでは通常、複数のプランが提供されます。 サービスの「HIPAA 使用可能」ラベルは、使用可能なすべてのプランに適用することも、特定のプランまたは構成に制限することもできます。 お客様は、PHI を HIPAA 対応オファリング・プランに制限すること、および HIPAA および HITECH に準拠して設計を行うことに関して一切の責任を負うものとします。
 
 1. コンソールで、**「管理」 > 「アカウント」**と進み、**「アカウント設定」**を選択します。
 2. 「HIPAA サポートあり」オプションに対して、**「オン」**をクリックします。
