@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-11"
+lastupdated: "2019-06-19"
 
-keywords: account, upgrade, account settings, IBM Cloud account, Lite account
+keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
 subcollection: account
 
@@ -17,14 +17,17 @@ subcollection: account
 {:faq: data-hd-content-type='faq'}
 {:tip: .tip}
 
-# Preguntas más frecuentes
+# Preguntas más frecuentes sobre la cuenta
 {: #accountfaqs}
+
+Las preguntas más frecuentes sobre su cuenta de {{site.data.keyword.cloud}} pueden incluir preguntas acerca de cuentas lite, reasignación de usuarios, errores de cuenta etiquetas de cuenta. Para encontrar todas las preguntas más frecuentes sobre {{site.data.keyword.cloud_notm}}, consulte nuestra biblioteca de preguntas más frecuentes. 
+{: shortdesc}
 
 ## ¿Cómo puedo crear una cuenta?
 {: #create-account}
 {: faq}
 
-Vaya a [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo") y pulse en **Crear una cuenta de {{site.data.keyword.Bluemix_notm}}** para crear una cuenta Lite que no caduque. Consulte [Cuenta Lite](/docs/account?topic=account-liteaccount#liteaccount) para obtener más detalles sobre las características incluidas.
+Vaya a [{{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo") y pulse en **Crear una cuenta de {{site.data.keyword.Bluemix_notm}}** para crear una cuenta Lite que no caduque. Consulte [Cuenta Lite](/docs/account?topic=account-liteaccount#liteaccount) para obtener más detalles sobre las características incluidas.
 
 
 ## ¿Cómo se resuelven los errores que se producen al crear mi cuenta?

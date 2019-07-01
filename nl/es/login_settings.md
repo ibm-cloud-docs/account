@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: account security, account access, login security, password, authentication
+keywords: account security, login security, TOTP, MFA, password expiration
 
 subcollection: account
 
@@ -21,7 +21,7 @@ subcollection: account
 # Configuración de la seguridad de inicio de sesión
 {: #login-settings}
 
-Con el acceso autorizado puede configurar una seguridad adicional para el inicio de sesión. Puede seleccionar una caducidad de contraseña y configurar preguntas y respuesta de seguridad, la autenticación de multifactores (MFA) de código de acceso de un solo uso basado en tiempo (TOTP) y las opciones de autenticación externas.  
+Con el acceso autorizado puede configurar una seguridad adicional para el inicio de sesión de {{site.data.keyword.cloud}}. Puede seleccionar una caducidad de contraseña y configurar preguntas y respuesta de seguridad, el código de acceso de un solo uso basado en tiempo (TOTP), la autenticación de multifactores (MFA) y las opciones de autenticación externas.  
 {:shortdesc}
 
 Un propietario de cuenta puede requerir la MFA de IBMid en una cuenta de la que es miembro. La MFA de IBMid altera temporalmente cualquier otro valor de MFA del usuario. Por ejemplo, cuando se establece la MFA de IBMid, se le solicita una MFA de TOTP asociada con el IBMid en lugar de preguntas de seguridad o uno de los métodos de autenticación externa.

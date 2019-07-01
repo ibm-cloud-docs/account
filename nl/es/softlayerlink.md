@@ -2,9 +2,9 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-20"
 
-keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, Bluemix account, Bluemix
+keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, switch to IBMid
 
 subcollection: account
 
@@ -21,7 +21,7 @@ subcollection: account
 # Cómo cambiar a IBMid y enlazar cuentas
 {: #unifyingaccounts}
 
-Un IBMid es un ID único que utiliza para iniciar sesión en la cuenta de {{site.data.keyword.Bluemix}} para acceder a las características de infraestructura, servicios y aplicaciones, y adquirirlas. Todas las nuevas cuentas automáticamente recibirán un IBMid y las cuentas existentes de SoftLayer, excepto las cuentas federadas SAML, estarán habilitadas para conmutar a la autenticación de IBMid.
+Un IBMid es un ID único que utiliza para iniciar sesión en la cuenta de {{site.data.keyword.Bluemix}} para acceder a las características de infraestructura, servicios y aplicaciones, y adquirirlas. Todas las cuentas nuevas reciben automáticamente un IBMid. Las cuentas de SoftLayer existentes, excepto las cuentas federadas con SAML, se pueden habilitar para cambiar a la autenticación mediante IBMid. También puede enlazar cuentas para tener una única vista de sus cuentas, facturación y uso.
 {:shortdesc}
 
 ## Cambio a IBMid
@@ -63,14 +63,15 @@ Para resolver cualquier problema de inicio de sesión con su IBMid, consulte [Re
 ## Enlace de cuentas de IBMid
 {: #link_accounts}
 
-Cuando las cuentas se hayan cambiado a cuentas de IBMid, podrá enlazar cuentas de SoftLayer y {{site.data.keyword.Bluemix_notm}} para un uso combinado de los recursos de la infraestructura como servicio (IaaS) y de la plataforma como servicio (PaaS). A continuación, podrá acceder a recursos IaaS y PaaS desde un inicio de sesión único. Enlazar sus cuentas también supondrá una única factura para todos los recursos IaaS y PaaS que utilice. Puede enlazar su propia cuenta o, si es un usuario maestro, puede enlazar sus cuentas de usuario.
+Una vez que las cuentas se hayan cambiado a cuentas de IBMid, puede enlazar las cuentas de SoftLayer y las cuentas de {{site.data.keyword.Bluemix_notm}} de manera que pueda acceder a los recursos de infraestructura y de la plataforma con un único inicio de sesión. Enlazar sus cuentas también supondrá una única factura para todos los recursos de infraestructura y de la plataforma que utilice. Puede enlazar su propia cuenta o, si es un usuario maestro, puede enlazar sus cuentas de usuario.
 
 ### Enlace de su cuenta de IBMid
 {: #link_user_account}
 
-Si es un cliente de la infraestructura y también dispone de cuentas PaaS en {{site.data.keyword.Bluemix_notm}} o las crea, puede enlazar IaaS y PaaS para obtener una vista única de sus cuentas. Para enlazar las cuentas, siga estos pasos:
+Si es un cliente de la infraestructura clásica, y tiene también una cuenta de
+{{site.data.keyword.Bluemix_notm}}, puede enlazar sus cuentas para tener una única vista de sus cuentas, facturación y uso. Para enlazar las cuentas, realice los pasos siguientes:
 1. Inicie sesión en su cuenta de SoftLayer.
-2. En la página Resumen de la cuenta, pulse **Nuevo. Enlazar una cuenta de Bluemix**.
+2. En la página Resumen de la cuenta, pulse **Enlazar una cuenta de IBM Cloud**.
 3. Revise las condiciones de uso y pulse para aceptarlas.
 4. Complete uno de los pasos finales siguientes, en función de cómo está configurada su cuenta:
   * Si tiene una cuenta de {{site.data.keyword.Bluemix_notm}} asociada a su IBMid, se le direccionará a una página de autorización, y luego al paso de confirmación final.
@@ -96,7 +97,7 @@ Asegúrese de revisar las siguientes notas importantes para enlazar cuentas:
 Siga estos pasos para enlazar cada cuenta de SoftLayer con una cuenta de plataforma de {{site.data.keyword.Bluemix_notm}} existente o para crear una nueva:
 
    1. Inicie sesión en el portal de clientes con su IBMid de cuenta de usuario maestro.
-   2. Desde el portal de clientes, haga clic en **Enlazar a una cuenta Bluemix**.
+   2. Desde el portal de clientes, pulse **Enlazar una cuenta de IBM Cloud**.
    3. Lea y acepte las condiciones para enlazar cuentas de SoftLayer y {{site.data.keyword.Bluemix_notm}}.
    4. Siga las indicaciones del asistente, incluida la adición de los usuarios de la cuenta de SoftLayer a la cuenta de {{site.data.keyword.Bluemix_notm}}.
    5. Cuando se le solicite, realice una de las siguientes acciones:
@@ -122,4 +123,4 @@ Si tiene una cuenta enlazada, puede utilizar la página **Valores** de {{site.da
 
 Otros métodos de autenticación de multifactores no son por IBMid. Son por cuenta. Cuando un IBMid está asociado con varias cuentas, y cambia entre ellas, debe confirmar su identidad cada vez que cambie a una cuenta distinta que requiera la autenticación de dos factores. Esto es cierto incluso si la cuenta anterior y la cuenta nueva están configuradas con el mismo mecanismo de autenticación de dos factores.
 
-Si anteriormente ha habilitado la [2FA en el portal de clientes](/docs/customer-portal?topic=customer-portal-cp_setup-2fa#cp-enable-2fa) para sus recursos de infraestructura clásica y habilita el valor MFA de la cuenta de {{site.data.keyword.Bluemix_notm}}, el valor de la cuenta de MFA sustituye la 2FA que ha configurado en el portal de customer. Esto significa que puede inhabilitar la 2FA que ha adquirido en el portal de clientes en favor del valor MFA de la cuenta.
+Si anteriormente ha habilitado la [2FA en el portal de clientes](/docs/customer-portal?topic=customer-portal-cp_setup-2fa) para sus recursos de infraestructura clásica y habilita el valor MFA de la cuenta de {{site.data.keyword.Bluemix_notm}}, el valor de la cuenta de MFA sustituye la 2FA que ha configurado en el portal de customer. Esto significa que puede inhabilitar la 2FA que ha adquirido en el portal de clientes en favor del valor MFA de la cuenta.

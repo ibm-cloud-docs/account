@@ -2,9 +2,9 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: user access, IBM Cloud account access, account owner
+keywords: user access, IBM Cloud account access, account owner, delegating access, confirming access
 
 subcollection: account
 
@@ -18,7 +18,7 @@ subcollection: account
 # Gestión del acceso de usuario al catálogo
 {: #find-access}
 
-Como propietario de la cuenta de {{site.data.keyword.Bluemix}} puede asignar a los usuarios acceso al catálogo utilizando una política de Identity and Access Management (IAM) de {{site.data.keyword.Bluemix_notm}}. Puede controlar la visibilidad de los servicios privados que se añaden al catálogo de cuenta o a los servicios públicos creados en la cuenta. De forma predeterminada, solo el propietario de la cuenta puede realizar estas tareas.
+Como propietario de la cuenta de {{site.data.keyword.Bluemix}} puede asignar, delegar y confirmar a los usuarios el acceso al catálogo utilizando una política de Identity and Access Management (IAM) de {{site.data.keyword.Bluemix_notm}}. Puede controlar la visibilidad de los servicios privados que se añaden al catálogo de cuenta o a los servicios públicos creados en la cuenta. De forma predeterminada, solo el propietario de la cuenta puede realizar estas tareas.
 
 ## Delegación de acceso
 {: #get-access}

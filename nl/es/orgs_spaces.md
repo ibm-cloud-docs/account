@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-08"
+lastupdated: "2019-06-19"
 
-keywords: account, add orgs, add spaces, manage users, user access
+keywords: account, add orgs, add spaces, cloud foundry orgs
 
 subcollection: account
 
@@ -19,13 +19,15 @@ subcollection: account
 # Adición de organizaciones y espacios
 {: #orgsspacesusers}
 
-Como propietario de la cuenta de {{site.data.keyword.Bluemix}}, puede añadir organizaciones y espacios a la misma. Si es un gestor de la organización, puede gestionar las organizaciones en la cuenta. Para gestionar organizaciones y espacios de Cloud Foundry, vaya a **Gestionar** > **Cuenta** y seleccione **Recursos de cuenta > Organizaciones de Cloud Foundry**.
+Como propietario de la cuenta de {{site.data.keyword.Bluemix}}, puede añadir organizaciones y espacios a la misma. Si es un gestor de la organización, puede gestionar las organizaciones en la cuenta. 
 {:shortdesc}
 
 ## Conceptos sobre las organizaciones de Cloud Foundry
 {: #cf-org-concepts}
 
-Puede utilizar organizaciones para habilitar la colaboración entre usuarios y facilitar la agrupación lógica de recursos del proyecto de las maneras siguientes:
+Para gestionar organizaciones y espacios de Cloud Foundry, vaya a **Gestionar** > **Cuenta** y seleccione **Recursos de cuenta > Organizaciones de Cloud Foundry**.
+
+Las organizaciones permiten la colaboración entre usuarios y facilitan la agrupación lógica de recursos del proyecto de las maneras siguientes:
 
    * Puede agrupar un conjunto de espacios, apps, servicios, dominios, rutas y usuarios conjuntamente en organizaciones.
    * Puede gestionar el acceso de usuario a las organizaciones y espacios de forma individual.
