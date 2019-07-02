@@ -27,6 +27,7 @@ Managing your account
     Modifying account settings
         account_settings.md
         eu_hipaa_supported.md
+        vrf-service-endpoint.md
         contact_info.md
         email.md
 
