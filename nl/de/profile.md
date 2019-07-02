@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-02-15"
+lastupdated: "2019-06-20"
 
-keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy
+keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy, set up profile
 
 subcollection: account
 
@@ -19,7 +19,7 @@ subcollection: account
 # Profil einrichten
 {: #usersettings}
 
-In Ihrem Profil können Sie ein Foto und persönliche Informationen hinzufügen, Benachrichtigungen verwalten, Anmeldeeinstellungen ändern und den Datenschutz überwachen. Durch das Einrichten eines Profils informieren Sie Ihre Teammitglieder darüber, wer Sie sind und welche Unterstützung Sie bereitstellen können.
+In Ihrem {{site.data.keyword.cloud}}-Profil können Sie ein Foto und persönliche Informationen hinzufügen, Benachrichtigungen verwalten, Anmeldeeinstellungen ändern und den Datenschutz überwachen. Durch das Einrichten eines Profils informieren Sie Ihre Teammitglieder darüber, wer Sie sind und welche Unterstützung Sie bereitstellen können.
 {:shortdesc}
 
 

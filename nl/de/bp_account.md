@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-05-31"
+lastupdated: "2019-06-19"
 
-keywords: resource group, account access, user access, IAM, organize
+keywords: organizing resource group, account best practices, best practices account
 
 subcollection: account
 
@@ -40,7 +40,7 @@ Sie können Benutzern Zugriffsberechtigungen erteilen. Ein Entwickler verfügt z
 
 Wenn Sie über ein Konto mit nutzungsabhängiger Zahlung oder ein Abonnementkonto verfügen, können Sie weitere Ressourcengruppen erstellen:
 
-1. Rufen Sie **Verwalten > Konto** auf. Erweitern Sie **Kontoressourcen** und wählen Sie **Ressourcengruppen** aus. 
+1. Rufen Sie **Verwalten > Konto** auf. Erweitern Sie **Kontoressourcen** und wählen Sie **Ressourcengruppen** aus.
 3. Klicken Sie auf **Erstellen**.
 4. Geben Sie den Namen für Ihre Ressourcengruppe ein.
 5. Klicken Sie auf **Hinzufügen**.
@@ -72,7 +72,7 @@ Als Kontoeigner können Sie Ressourcen zu jeder beliebigen Ressourcengruppe hinz
 
 Führen Sie zum Hinzufügen einer Ressource zu einer Ressourcengruppe die folgenden Schritte aus:
 
-1. Rufen Sie **Verwalten** > **Konto** auf und wählen Sie **Ressourcengruppen** im Menü **Kontoressourcen** aus.
+1. Rufen Sie **Verwalten > Konto** auf. Erweitern Sie **Kontoressourcen** und wählen Sie **Ressourcengruppen** aus.
 2. Klicken Sie auf das Aktionssymbol ![Aktionssymbol](../icons/action-menu-icon.svg) für die Ressourcengruppe, zu der Ressourcen hinzugefügt werden sollen, und wählen Sie **Ressourcen hinzufügen** aus.
 3. Nachdem Sie zum Katalog weitergeleitet wurden, wählen Sie die Ressource aus, die Sie hinzufügen möchten.
 4. Wählen Sie die Ressourcengruppe aus, der Sie die Ressource zuweisen wollen.

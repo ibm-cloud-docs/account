@@ -2,9 +2,9 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-20"
 
-keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, Bluemix account, Bluemix
+keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, switch to IBMid
 
 subcollection: account
 
@@ -21,7 +21,7 @@ subcollection: account
 # Zur IBMid wechseln und Konten verknüpfen
 {: #unifyingaccounts}
 
-Eine IBMid ist eine einzelne ID, die Sie für die Anmeldung an Ihrem {{site.data.keyword.Bluemix}}-Konto für den Zugriff auf und den Kauf von Infrastruktur-, Service- und Anwendungsfeatures verwenden. Alle neuen Konten erhalten automatisch eine IBMid und vorhandene SoftLayer-Konten, mit Ausnahme von föderierten SAML-Konten, werden für den Wechsel zur IBMid-Authentifizierung aktiviert.
+Eine IBMid ist eine einzelne ID, die Sie für die Anmeldung an Ihrem {{site.data.keyword.Bluemix}}-Konto für den Zugriff auf und den Kauf von Infrastruktur-, Service- und Anwendungsfeatures verwenden. Jedes neue Konto erhält automatisch eine IBMid. Vorhandene SoftLayer-Konten, mit Ausnahme von SAML-föderierten Konten, können für den Wechsel zur IBMid-Authentifizierung aktiviert werden. Sie können auch Konten verknüpfen, um eine einzige Ansicht Ihrer Konten, Abrechnungen und Nutzungen zu erhalten.
 {:shortdesc}
 
 ## Zur IBMid wechseln
@@ -63,14 +63,14 @@ Informationen zur Lösung von Problemen, die bei der Anmeldung mit Ihrer IBMid a
 ## IBMid-Konten verknüpfen
 {: #link_accounts}
 
-Nachdem die Konten auf IBMid-Konten umgestellt wurden, können Sie SoftLayer- und {{site.data.keyword.Bluemix_notm}}-Konten verknüpfen, um die kombinierten IaaS- (Infrastructure as a Service) und PaaS-Ressourcen (Platform as a Service) zu nutzen. Anschließend können Sie mit einer einzigen Anmeldung auf IaaS-Ressourcen und PaaS-Ressourcen zugreifen. Dank dem Verknüpfen Ihrer Konten erhalten Sie eine gemeinsame Abrechnung für alle verwendeten PaaS- und IaaS-Ressourcen. Sie können Ihr eigenes Konto oder, wenn Sie ein Masterbenutzer sind, Ihre Benutzerkonten verknüpfen.
+Nachdem die Konten auf IBMid-Konten umgestellt wurden, können Sie SoftLayer- und {{site.data.keyword.Bluemix_notm}}-Konten verknüpfen, sodass Sie über eine einzige Anmeldung auf Infrastruktur- und Plattformressourcen zugreifen können. Dank dem Verknüpfen Ihrer Konten erhalten Sie eine gemeinsame Abrechnung für alle verwendeten Infrastruktur- und Plattformressourcen. Sie können Ihr eigenes Konto oder, wenn Sie ein Masterbenutzer sind, Ihre Benutzerkonten verknüpfen.
 
 ### Ihr IBMid-Konto verknüpfen
 {: #link_user_account}
 
-Wenn Sie Kunde der klassischen Infrastruktur sind und außerdem über PaaS-Konten in {{site.data.keyword.Bluemix_notm}} verfügen oder diese erstellen, können Sie IaaS und PaaS verknüpfen, um eine Gesamtansicht Ihrer Konten zu erhalten. Führen Sie die folgenden Schritte aus, um Ihre Konten zu verknüpfen:
+Wenn Sie Kunde der klassischen Infrastruktur sind und außerdem über ein {{site.data.keyword.Bluemix_notm}}-Konto verfügen, können Sie Ihre Konten verknüpfen, um eine einzige Ansicht Ihrer Konten, Abrechnungen und Nutzungen zu erhalten. Führen Sie die folgenden Schritte aus, um Ihre Konten zu verknüpfen:
 1. Melden Sie sich an Ihrem SoftLayer-Konto an.
-2. Klicken Sie auf der Seite 'Konto - Zusammenfassung' auf **Neu! Bluemix-Konto verknüpfen**.
+2. Klicken Sie auf der Seite 'Konto - Zusammenfassung' auf **IBM Cloud-Konto verknüpfen**.
 3. Überprüfen Sie die Nutzungsbedingungen und bestätigen Sie, dass Sie ihnen zustimmen.
 4. Führen Sie einen der folgenden abschließenden Schritte aus, je nachdem, wie Ihr Konto eingerichtet ist:
   * Wenn Ihre IBMid über ein zugeordnetes {{site.data.keyword.Bluemix_notm}}-Konto verfügt, werden Sie zu einer Berechtigungsseite weitergeleitet und anschließend zurück zum letzten Bestätigungsschritt.
@@ -96,7 +96,7 @@ Lesen Sie unbedingt die folgenden wichtigen Hinweise zum Verknüpfen von Konten:
 Führen Sie die folgenden Schritte aus, um jedes SoftLayer-Konto mit einem vorhandenen {{site.data.keyword.Bluemix_notm}}-Plattformkonto zu verknüpfen oder ein neues Konto zu erstellen:
 
    1. Melden Sie sich beim Kundenportal mit Ihrer Masterbenutzerkonto-ID an.
-   2. Klicken Sie im Kundenportal auf **Bluemix-Konto verknüpfen**.
+   2. Klicken Sie im Kundenportal auf **IBM Cloud-Konto verknüpfen**.
    3. Lesen und akzeptieren Sie die Bedingungen für das Verknüpfen von SoftLayer- und {{site.data.keyword.Bluemix_notm}}-Konten.
    4. Befolgen Sie die Eingabeaufforderungen im Assistenten und fügen Sie die Benutzer im SoftLayer-Konto dem {{site.data.keyword.Bluemix_notm}}-Konto hinzu.
    5. Führen Sie bei entsprechender Aufforderung eine der folgenden Aktionen aus:
@@ -122,4 +122,4 @@ Wenn Sie über ein verknüpftes Konto verfügen, können Sie auf der Seite **Ein
 
 Andere Mehrfaktorauthentifizierungsmethoden erfolgen nicht pro IBMid. Sie erfolgen pro Konto. Wenn eine IBMid mehreren Konten zugeordnet ist und Sie zwischen den Konten wechseln, müssen Sie Ihre Identität bei jedem Wechsel zu einem anderen Konto, für das eine Zwei-Faktor-Authentifizierung erforderlich ist, bestätigen. Dies gilt auch, wenn das vorherige Konto und das neue Konto beide mit demselben Mechanismus für die Zwei-Faktor-Authentifizierung konfiguriert sind.
 
-Wenn Sie zuvor die [Zwei-Faktor-Authentifizierung (2FA) im Kundenportal](/docs/customer-portal?topic=customer-portal-cp_setup-2fa#cp-enable-2fa) für Ihre Ressourcen der klassischen Infrastruktur aktiviert haben und dann die MFA-Einstellung für das {{site.data.keyword.Bluemix_notm}}-Konto aktivieren, überschreibt letztere die 2FA im Kundenportal. Dies bedeutet, dass Sie die 2FA, die Sie im Kundenportal erworben haben, zugunsten der MFA-Einstellung inaktivieren können.
+Wenn Sie zuvor die [Zwei-Faktor-Authentifizierung (2FA) im Kundenportal](/docs/customer-portal?topic=customer-portal-cp_setup-2fa) für Ihre Ressourcen der klassischen Infrastruktur aktiviert haben und dann die MFA-Einstellung für das {{site.data.keyword.Bluemix_notm}}-Konto aktivieren, überschreibt letztere die 2FA im Kundenportal. Dies bedeutet, dass Sie die 2FA, die Sie im Kundenportal erworben haben, zugunsten der MFA-Einstellung inaktivieren können.

@@ -4,7 +4,7 @@ copyright:
   years: 2015, 2018
 lastupdated: "2018-11-19"
 
-keywords: free account, Lite account, free service, sign up for account, video
+keywords: free account, Lite account, free service, sign up for account, Lite account video
 
 subcollection: account
 

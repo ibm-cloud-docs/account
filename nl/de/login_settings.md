@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: account security, account access, login security, password, authentication
+keywords: account security, login security, TOTP, MFA, password expiration
 
 subcollection: account
 
@@ -21,7 +21,7 @@ subcollection: account
 # Anmeldesicherheit einrichten
 {: #login-settings}
 
-Mit der entsprechenden Zugriffsberechtigung können Sie zusätzliche Sicherheit für die Anmeldung einrichten. Sie können Sicherheitsfragen und die zugehörigen Antworten festlegen, ein Ablaufdatum für Kennwörter auswählen, die Mehrfaktorauthentifizierung (MFA) mit zeitbasiertem einmaligem Kenncode (Time-based One-time Passcode, TOTP) einrichten und Optionen für die externe Authentifizierung festlegen.  
+Mit der entsprechenden Zugriffsberechtigung können Sie zusätzliche Sicherheit für die {{site.data.keyword.cloud}}-Anmeldung einrichten. Sie können Sicherheitsfragen und die zugehörigen Antworten festlegen, ein Ablaufdatum für Kennwörter auswählen, einen zeitbasierten einmaligen Kenncode (Time-based One-time Passcode, TOTP) und Mehrfaktorauthentifizierung (MFA) einrichten und Optionen für die externe Authentifizierung festlegen.  
 {:shortdesc}
 
 Ein Kontoeigner kann festlegen, dass die Mehrfaktorauthentifizierung mit einer IBMid (IBMid MFA) für ein Konto erforderlich ist, dessen Mitglied Sie sind. Die Mehrfaktorauthentifizierung mit einer IBMid setzt alle anderen MFA-Einstellungen des Benutzers außer Kraft. Beispiel: Wenn die Mehrfaktorauthentifizierung mit einer IBMid festgelegt ist, werden Sie zur Eingabe einer TOTP-MFA aufgefordert, die Ihrer IBMid zugeordnet ist, nicht zur Beantwortung von Sicherheitsfragen oder zur Verwendung einer externen Authentifizierungsmethode.

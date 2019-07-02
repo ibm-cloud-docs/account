@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-11"
+lastupdated: "2019-06-19"
 
-keywords: account, upgrade, account settings, IBM Cloud account, Lite account
+keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
 subcollection: account
 
@@ -17,14 +17,17 @@ subcollection: account
 {:faq: data-hd-content-type='faq'}
 {:tip: .tip}
 
-# Häufig gestellte Fragen (FAQs)
+# Häufig gestellte Fragen (FAQs) zum Konto
 {: #accountfaqs}
+
+Die FAQs zu {{site.data.keyword.cloud}} können Fragen zu Lite-Konten, zur erneuten Benutzerzuweisung, zu Kontofehlern oder -Tags beinhalten. Die vollständigen FAQs zu {{site.data.keyword.cloud_notm}} finden Sie in unserer FAQ-Bibliothek.
+{: shortdesc}
 
 ## Wie erstelle ich ein Konto?
 {: #create-account}
 {: faq}
 
-Rufen Sie [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link") auf und klicken Sie auf **{{site.data.keyword.Bluemix_notm}}-Konto erstellen**, um ein Lite-Konto zu erstellen, das nicht abläuft. Weitere Details zu den enthaltenen Features finden Sie in [Lite-Konto](/docs/account?topic=account-liteaccount#liteaccount).
+Rufen Sie [{{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link") auf und klicken Sie auf **{{site.data.keyword.Bluemix_notm}}-Konto erstellen**, um ein Lite-Konto zu erstellen, das nicht abläuft. Weitere Details zu den enthaltenen Features finden Sie in [Lite-Konto](/docs/account?topic=account-liteaccount#liteaccount).
 
 
 ## Wie kann ich Fehler beheben, die bei der Erstellung meines Kontos auftreten?
@@ -82,7 +85,7 @@ Sie können die Nutzung überprüfen, indem Sie **Verwalten > Abrechnung und Nut
 {: #accounts-service-removal}
 {: faq}
 
-Wenn Sie einen Service löschen möchten, können Sie dies über die Ressourcenliste tun. Weitere Informationen finden Sie in [Mit Ressourcen und Services arbeiten](/docs/resources?topic=resources-resources-faq#service-removal). 
+Wenn Sie einen Service löschen möchten, können Sie dies über die Ressourcenliste tun. Weitere Informationen finden Sie in [Mit Ressourcen und Services arbeiten](/docs/resources?topic=resources-resources-faq#service-removal).
 
 ## Wie viele Ressourcengruppen, Organisationen oder Bereiche kann ich erstellen?
 {: #resourcelimit}
@@ -248,7 +251,7 @@ Sie können Ihre Konten auch auflisten, indem Sie den Befehl `ibmcloud account l
 {: #switch-between-accounts}
 {: faq}
 
-Wenn Sie über mehrere Konten verfügen, können Sie auf einen der Kontonamen in der Menüleiste der Konsole klicken, um ein anderes Konto auszuwählen, auf das Sie zugreifen können.   
+Wenn Sie über mehrere Konten verfügen, können Sie auf einen der Kontonamen in der Menüleiste der Konsole klicken, um ein anderes Konto auszuwählen, auf das Sie zugreifen können.  
 
 ![Screenshot der Kontoauswahl in der Menüleiste der Konsole. Kontoname und Kontonummer werden angezeigt. Sie können das aktuelle Konto auswählen, um eine Liste anderer Konten aufzurufen, auf die Sie zugreifen können.](images/account-faq.svg "In der Kontoauswahl werden der Kontoname und die Kontonummer angezeigt. Sie können das aktuelle Konto auswählen, um eine Liste anderer Konten aufzurufen, auf die Sie zugreifen können.")
 

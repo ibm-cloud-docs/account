@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: account settings, account owner, account name
+keywords: account settings, edit account name, view account type
 
 subcollection: account
 
@@ -20,7 +20,7 @@ subcollection: account
 # Kontoeinstellungen anzeigen
 {: #account_settings}
 
-Als Kontoeigner können Sie den Kontonamen ändern und den Kontotyp anzeigen. Wenn Sie über die IAM-Rolle eines Operators oder eine Rolle mit umfassenderen Berechtigungen für alle Kontoverwaltungsservices verfügen, können Sie den Kontonamen anzeigen und aktualisieren.  
+Als {{site.data.keyword.cloud}}-Kontoeigner können Sie den Kontonamen ändern und den Kontotyp anzeigen. Wenn Sie über die IAM-Rolle eines Operators oder eine Rolle mit umfassenderen Berechtigungen für alle Kontoverwaltungsservices verfügen, können Sie den Kontonamen anzeigen und aktualisieren.  
 {:shortdesc}
 
 ## Kontonamen bearbeiten

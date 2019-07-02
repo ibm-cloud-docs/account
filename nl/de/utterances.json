@@ -172,7 +172,10 @@
       "Kann ich eine Registrierung für eine kostenfreie Testversion durchführen?",
       "Gibt es eine kostenlose Testversion?",
       "Wie erhalte ich einen kostenlose Testversion?",
-      "kostenlose Testversion"
+      "Kostenloses Konto für Studierende",
+      "Konto für Studierende",
+      "kostenlose Testversion",
+      "Ausbildungskonto"
     ],
     "al_login": [
       "Wie melde ich mich mit meinem verknüpften Konto an?",
@@ -330,7 +333,9 @@
       "Benutzer zu Organisation hinzufügen",
       "Personen zu Organisation hinzufügen",
       "Kann ich Benutzer zu einer Organisation hinzufügen?",
-      "Wer darf Benutzer zu einer Organisation hinzufügen?"
+      "Wer darf Benutzer zu einer Organisation hinzufügen?",
+      "Einladen eines Benutzers nicht möglich",
+      "Erstellen eines Benutzers nicht möglich"
     ],
     "ts_no_space": [
       "Warum sind meiner aktuellen Organisation keine Bereiche zugeordnet?",

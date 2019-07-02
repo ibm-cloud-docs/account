@@ -4,7 +4,7 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-28"
 
-keywords: account owner, user roles, manage account, orgs, spaces
+keywords: update orgs, update spaces, quotas, Cloud Foundry orgs, domains
 
 subcollection: account
 
@@ -57,7 +57,7 @@ Sie können jeweils nur die Ressourcen einer einzelnen Organisation anzeigen. We
 
     Als Kontoeigner oder Organisationsmanager können Sie die Systemdomäne anzeigen und angepasste Domänen für Anwendungen hinzufügen, die innerhalb einer Organisation und ihren Bereichen erstellt werden. Wenn Sie Bereichsmanager sind, wird auf dieser Seite eine schreibgeschützte Liste der Domänen angezeigt, die dem Speicherbereich zugeordnet sind.
 
-    Wenn Sie eine angepasste Domäne hinzufügen möchten, müssen Sie Ihren DNS-Server so konfigurieren, dass er auf die {{site.data.keyword.Bluemix_notm}}-Systemdomäne verweist. Auf diese Weise wird eine von {{site.data.keyword.Bluemix_notm}} aus Ihrer angepassten Domäne empfangene Anforderung ordnungsgemäß an Ihre App weitergeleitet. Die Systemdomäne ist für einen Bereich immer verfügbar und angepasste Domänen können auch einem Bereich zugeordnet sein. In einem Bereich erstellte Anwendungen können eine beliebige der Domänen verwenden, die für diesen Bereich aufgelistet sind. Weitere Informationen zum Erstellen und Verwenden angepasster Domänen finden Sie in [Ihre Domänen verwalten](/docs/apps?topic=creating-apps-update-domain#update-domain).
+    Wenn Sie eine angepasste Domäne hinzufügen möchten, müssen Sie Ihren DNS-Server so konfigurieren, dass er auf die {{site.data.keyword.Bluemix_notm}}-Systemdomäne verweist. Auf diese Weise wird eine von {{site.data.keyword.Bluemix_notm}} aus Ihrer angepassten Domäne empfangene Anforderung ordnungsgemäß an Ihre App weitergeleitet. Die Systemdomäne ist für einen Bereich immer verfügbar und angepasste Domänen können auch einem Bereich zugeordnet sein. In einem Bereich erstellte Anwendungen können eine beliebige der Domänen verwenden, die für diesen Bereich aufgelistet sind. Weitere Informationen zum Erstellen und Verwenden angepasster Domänen finden Sie in [Ihre Domänen verwalten](/docs/apps?topic=creating-apps-update-domain).
 
   * Klicken Sie zum Verwalten der zugeordneten Kontingente für eine Organisation auf das Aktionssymbol ![Aktionssymbol](../icons/action-menu-icon.svg) für die entsprechende Organisation und wählen Sie **Kontingente** aus.
     {: #managequota}

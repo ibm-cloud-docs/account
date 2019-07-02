@@ -2,9 +2,9 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: user access, IBM Cloud account access, account owner
+keywords: user access, IBM Cloud account access, account owner, delegating access, confirming access
 
 subcollection: account
 
@@ -18,7 +18,7 @@ subcollection: account
 # Benutzerzugriff auf den Katalog verwalten
 {: #find-access}
 
-Als {{site.data.keyword.Bluemix}}-Kontoeigner können Sie Benutzern den Zugriff auf den Katalog zuweisen, indem Sie eine IAM-Richtlinie (Identity and Access Management) in {{site.data.keyword.Bluemix_notm}} verwenden. Auf diese Weise können Sie die Anzeige privater Services, die zum Kontokatalog hinzugefügt werden, oder öffentlicher Services, die im Konto erstellt werden, steuern. Standardmäßig kann nur der Kontoeigner diese Aufgaben ausführen.
+Als {{site.data.keyword.Bluemix}}-Kontoeigner können Sie Benutzern den Zugriff auf den Katalog zuweisen, delegieren und bestätigen, indem Sie eine IAM-Richtlinie (Identity and Access Management) in {{site.data.keyword.Bluemix_notm}} verwenden. Auf diese Weise können Sie die Anzeige privater Services, die zum Kontokatalog hinzugefügt werden, oder öffentlicher Services, die im Konto erstellt werden, steuern. Standardmäßig kann nur der Kontoeigner diese Aufgaben ausführen.
 
 ## Zugriff delegieren
 {: #get-access}

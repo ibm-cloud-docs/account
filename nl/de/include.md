@@ -2,9 +2,9 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-19"
 
-keywords: add user, share resource, private resource, share catalog
+keywords: add user, share resource, private resource, share catalog, find resource, set visibility
 
 subcollection: account
 
@@ -18,8 +18,8 @@ subcollection: account
 # Konten zur privaten Ressource hinzufügen
 {: #include}
 
-Der Zugriff auf jede private {{site.data.keyword.Bluemix}}-Ressource, die Sie erstellen, ist standardmäßig eingeschränkt. Als Administrator des Kontos können Sie die Benutzer auswählen, denen Ihre Ressource angezeigt wird, indem Sie diese Benutzer zu einer Einschlussliste hinzufügen.
-{:shortdesc: .shortdesc}
+Der Zugriff auf jede private {{site.data.keyword.Bluemix}}-Ressource, die Sie erstellen, ist standardmäßig eingeschränkt. Als Administrator des Kontos können Sie die Benutzer auswählen, denen Ihre Ressource angezeigt wird, indem Sie diese Benutzer zu einer Einschlussliste hinzufügen. Sie können auch das Eigentum an einer privaten Ressource übertragen.
+{:shortdesc}
 
 Über die [Befehlszeilenschnittstelle (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) oder die Konsole von {{site.data.keyword.Bluemix}} können Sie ermitteln, ob Sie über die erforderliche Zugriffsberechtigung verfügen, um Benutzern das Anzeigen einer privaten Ressource zu ermöglichen, die zum Konto hinzugefügt wurde. Als Kontoeigner können Sie einem Benutzer in Ihrem Konto die Zugriffsberechtigung über die Konsole erteilen, indem Sie eine Zugriffsrichtlinie zuweisen. Weitere Informationen finden Sie in [Zugriff auf Konto verwalten](/docs/account?topic=account-find-access).
 
@@ -33,7 +33,10 @@ Führen Sie den Befehl `ibmcloud catalog service <service-id or service-name>` a
 
 Führen Sie den folgenden Befehl aus, um es einem Konto zu ermöglichen, Ihre private Ressource anzuzeigen.
 
-`ibmcloud catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>`
+```
+ibmcloud catalog entry-visibility-set <service-id> --includes-add <account-id or account-email>
+```
+{:codeblock}
 
 Geben Sie im Anschluss an das Flag 'includes-add' eine durch Kommas unterteilte Aufzählung von E-Mail-Adressen oder IDs an, die Konten zugeordnet sind.
 
@@ -79,19 +82,24 @@ Children           Name                                          Kind         ID
 
 Sie können die Ressourcen-ID für die untergeordnete Bereitstellung abrufen und anschließend mit dem folgenden Befehl ein Konto einbeziehen:
 
-`ibmcloud catalog entry-visibility-set <service-id> —-includes-add <some-other-account>`
+```
+ibmcloud catalog entry-visibility-set <service-id> —-includes-add <some-other-account>
+```
+{:codeblock}
 
 Die untergeordneten Elemente eines Objekts können die Sichtbarkeit übernehmen. Diese Vererbung ist jedoch relativ komplex. Ist das untergeordnete Objekt privat, wird die zugehörigen eigene Sichtbarkeitskonfiguration angewendet. Ist das untergeordnete Objekt jedoch als öffentlich konfiguriert, wird die Sichtbarkeit des übergeordneten Elements übernommen. Durch das Festlegen der Sichtbarkeit eines privaten untergeordneten Objekts wird die Sichtbarkeit möglicherweise auf mehr als das übergeordnete Objekt eingeschränkt. Weitere Informationen zur Funktionsweise der Sichtbarkeit finden Sie in den [Katalog-API-Dokumenten](https://{DomainName}/apidocs/globalcatalog).
 
 ## Eigentumsrecht für eine private Ressource übertragen
 {: #owners}
 
-Beim Verlassen Ihres Projekts oder Ihrer Organisation können Sie das Eigentumsrecht für Ihr Konto einer anderen Person übertraten.
-{:shortdesc}
+Beim Verlassen Ihres Projekts oder Ihrer Organisation können Sie das Eigentum an den Ressourcen in Ihrem Konto an eine andere Person übertragen.
 
 Nachdem Sie das Eigentumsrecht übertragen haben, können Sie die Ressource nicht mehr von Ihrem Konto aus anzeigen. Stellen Sie sicher, dass Sie das Eigentumsrecht übertragen möchten, da diese Aktion nicht rückgängig gemacht werden kann.
 {: important}
 
 Sie können die [{{site.data.keyword.Bluemix}}-Befehlszeilenschnittstelle (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) verwenden, um das Eigentumsrecht für eine private Ressource zu übertragen. Führen Sie den folgenden Befehl aus:
 
-`ibmcloud catalog entry-visibility-set <service-id> --owner <account-id or account-email>`
+```
+ibmcloud catalog entry-visibility-set <service-id> --owner <account-id or account-email>
+```
+{:codeblock}

@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-08"
+lastupdated: "2019-06-19"
 
-keywords: account, add orgs, add spaces, manage users, user access
+keywords: account, add orgs, add spaces, cloud foundry orgs
 
 subcollection: account
 
@@ -19,13 +19,15 @@ subcollection: account
 # Organisationen und Bereiche hinzufügen
 {: #orgsspacesusers}
 
-Als {{site.data.keyword.Bluemix}}-Kontoeigner können Sie Organisationen und Bereiche zu Ihrem Konto hinzufügen. Als Organisationsmanager können Sie die Organisationen im Konto verwalten. Sie können Organisationen und Bereiche von Cloud Foundry verwalten, indem Sie **Verwalten** > **Konto** aufrufen und **Kontoressourcen > Cloud Foundry-Organisationen** auswählen.
+Als {{site.data.keyword.Bluemix}}-Kontoeigner können Sie Organisationen und Bereiche zu Ihrem Konto hinzufügen. Als Organisationsmanager können Sie die Organisationen im Konto verwalten. 
 {:shortdesc}
 
 ## Konzepte für Cloud Foundry-Organisationen
 {: #cf-org-concepts}
 
-Sie können Organisationen verwenden, um die Onlinezusammenarbeit zwischen den Benutzern zu ermöglichen und die logische Gruppierung von Projektressourcen auf folgende Weise zu erleichtern:
+Sie können Organisationen und Bereiche von Cloud Foundry verwalten, indem Sie **Verwalten** > **Konto** aufrufen und **Kontoressourcen > Cloud Foundry-Organisationen** auswählen.
+
+Organisationen ermöglichen die Onlinezusammenarbeit zwischen den Benutzern und erleichtern die logische Gruppierung von Projektressourcen auf folgende Weise:
 
    * Sie können eine Reihe von Bereichen, Apps, Services, Domänen, Routen und Benutzern in Organisationen zusammen gruppieren.
    * Sie können den Benutzerzugriff auf die Organisationen und Bereiche auf individueller Basis verwalten.
@@ -71,7 +73,7 @@ Sie können Benutzern in einer Organisation folgende [Cloud Foundry-Rollen](/doc
 
 Innerhalb einer Organisation können Sie Bereiche verwenden, um eine Reihe von Anwendungen, Services und Benutzern zu gruppieren. Bereiche werden innerhalb einer einzigen {{site.data.keyword.Bluemix_notm}}-Region definiert. Sie können auf der Basis des Bereitstellungslebenszyklus Bereiche in einer Organisation erstellen. Sie können z. B. einen Bereich `dev` als Entwicklungsumgebung, einen Bereich `test` als Testumgebung und einen Bereich `production` als Produktionsumgebung erstellen. Anschließend können Sie Ihre Apps den Bereichen zuordnen.
 
-Führen Sie folgende Schritte aus, um einer Organisation einen Bereich hinzuzufügen. 
+Führen Sie folgende Schritte aus, um einer Organisation einen Bereich hinzuzufügen.
 
 1. Klicken Sie auf der Seite der Cloud Foundry-Organisationen auf den Namen der Organisation, der Sie einen Bereich hinzufügen wollen.
 2. Klicken Sie auf **Bereich hinzufügen**.

@@ -2,9 +2,9 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-02-12"
+lastupdated: "2019-06-19"
 
-keywords: IBM Cloud account, account differences, resources, access
+keywords: IBM Cloud account, account differences, account overview, account components, how access works
 
 subcollection: account
 
@@ -17,15 +17,16 @@ subcollection: account
 {:new_window: target="_blank"}
 
 
-# Kontohierarchie
+# Was ist in einem Konto enthalten?
 {: #overview}
 
-Das {{site.data.keyword.Bluemix}}-Konto umfasst zahlreiche Komponenten und Systeme, die interagieren. Hier erfahren Sie, wie bestimmte Komponenten miteinander verbunden sind und wie der Zugriff innerhalb Ihres Kontos funktioniert.
+Das {{site.data.keyword.Bluemix}}-Konto umfasst zahlreiche Komponenten und Systeme, die interagieren. Konzepte wie z. B. die Vorgehensweise zum Verbinden von Komponenten oder wie der Zugriff funktioniert, geben Ihnen eine Verständnisgrundlage für das Einrichten Ihres Kontos.
 {:shortdesc}
 
 <a href="https://cloud.ibm.com/docs/api/content/account/images/account_diagram.svg">
-  <img src="images/account_diagram.svg" alt="Kontodiagramm">
-</a>
+  <img src="images/account_diagram.svg" alt="Diagramm mit den Komponenten eines Kontos, darunter Services, Benutzer und die jeweils zugehörigen Unterkomponenten."> </a>
+
+Abbildung 1. Kontokomponenten und -systeme
 
 Das Diagramm enthält zwei Hauptkonzepte für die Komponenten in der Kontohierarchie, die von zentraler Bedeutung sind. Mithilfe der durchgezogenen und der gepunkteten Linien wird dargestellt, dass einige Komponenten in anderen Komponente enthalten sind. Ein Beispiel hierfür sind Benutzer, die zu Zugriffsgruppen oder Cloud Foundry-Organisationen hinzugefügt werden. Einige Komponenten interagieren jedoch mit anderen Komponenten, um Zugriff zu ermöglichen, nicht weil eine Zugehörigkeit besteht. Ein Beispiel hierfür sind Benutzer, die Zugriff auf Ressourcengruppen erhalten. Die Benutzer sind jedoch keine Mitglieder einer Ressourcengruppe wie sie beispielsweise Mitglieder einer Zugriffsgruppe sind. Diese Konzepte werden auch in den folgenden Abschnitten erläutert.
 

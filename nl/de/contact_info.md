@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-20"
+  years: 2018, 2019
+lastupdated: "2019-06-19"
 
-keywords: company information, company details, company account, company profile
+keywords: company information, company details, company account, company profile, account contact
 
 subcollection: account
 
@@ -22,7 +22,7 @@ subcollection: account
 # Unternehmensprofildetails aktualisieren
 {: #contact-info}
 
-Jedem {{site.data.keyword.Bluemix}}-Konto ist ein Unternehmensprofil zugeordnet, das Unternehmensinformationen und Details zum primären Kontoeigner enthält. Sie können Daten aus dem Unternehmensprofil verwenden, wenn Sie Ansprechpartner und Benutzerprofile konfigurieren. Verschiedene kontospezifische Kontaktinformationen können in Verbindung mit den im Konto verfügbaren Services verwendet werden. Wenn Sie über Administratorzugriff oder umfassendere Berechtigungen verfügen, können Sie die Kontaktinformationen aktualisieren.
+Jedem {{site.data.keyword.Bluemix}}-Konto ist ein Unternehmensprofil zugeordnet, das Unternehmensinformationen und Details zum primären Kontoeigner enthält. Sie können Daten aus dem Unternehmensprofil verwenden, wenn Sie Ansprechpartner und Benutzerprofile konfigurieren. Verschiedene kontospezifische Kontaktinformationen können in Verbindung mit den im Konto verfügbaren Services verwendet werden. Wenn Sie über Administratorzugriff oder umfassendere Berechtigungen verfügen, können Sie die Kontaktinformationen für Ihr Konto aktualisieren.
 {:shortdesc}
 
 ## Unternehmensprofil aktualisieren
