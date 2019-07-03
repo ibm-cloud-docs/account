@@ -20,7 +20,7 @@ subcollection: account
 # FAQs for account
 {: #accountfaqs}
 
-FAQs for your {{site.data.keyword.cloud}} might include questions about lite accounts, reassigning users, account errors, or account tags. To find all FAQs for {{site.data.keyword.cloud_notm}}, see our FAQ library. 
+FAQs for your {{site.data.keyword.cloud}} might include questions about lite accounts, reassigning users, account errors, or account tags. To find all FAQs for {{site.data.keyword.cloud_notm}}, see our FAQ library.
 {: shortdesc}
 
 ## How do I create an account?
@@ -187,7 +187,9 @@ Click **Support** from the console menu bar to go to the Support Center. Learn m
 {: #freetrial}
 {: faq}
 
-{{site.data.keyword.Bluemix_notm}} trial accounts are available for faculty and students at accredited academic institutions. To qualify for a trial account, go to [Harness the Power of IBM ![External link icon](../icons/launch-glyph.svg)](https://onthehub.com/ibm/){: new_window} and validate your institution credentials.
+{{site.data.keyword.Bluemix_notm}} Lite accounts provide access to free Lite plan services. You can use these services for as long as you want without being charged, and your account never expires. [Sign up for a Lite account](https://{DomainName}/registration).
+
+{{site.data.keyword.Bluemix_notm}} trial accounts are available for faculty and students at accredited academic institutions. To qualify for a trial account, go to [Harness the Power of IBM ![External link icon](../icons/launch-glyph.svg)](https://ibm.biz/academic){: new_window} and validate your institution credentials. Unlike Lite accounts, trial accounts expire after their trial period ends.
 
 ## After I link my account, how do I log in?
 {: #al_login}
