@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-07-08"
 
 keywords: organizing resource group, account best practices, best practices account
 
@@ -102,4 +102,4 @@ For more information about what resources can be tagged and how to assign access
 
 ## Next steps
 
-Set up access groups for the users and service IDs that require the same access to resources and resource groups in your account. You can assign a minimal number of access policies, which saves you time. For more information, see [Best practices for assigning access](/docs/iam?topic=iam-cfaccess).
+Set up access groups for the users and service IDs that require the same access to resources and resource groups in your account. You can assign a minimal number of access policies, which saves you time. For more information, see [Best practices for assigning access](/docs/iam?topic=iam-account_setup).
