@@ -99,7 +99,7 @@
       "Come converto il mio account?",
       "Voglio cambiare il mio tipo di account?",
       "Esegui l'upgrade a un account Sottoscrizione",
-      "Esegui l'upgrade a un account Pagamento a consumo. "
+      "Esegui l'upgrade a un account Pagamento a consumo."
     ],
     "nochange": [
       "le mie istanze sono disponibili dopo l'upgrade",
@@ -144,7 +144,7 @@
       "elimina account"
     ],
     "remove-pi": [
-      "Come rimuovo i miei dati personali? ",
+      "Come rimuovo i miei dati personali?",
       "rimuovi i dati personali",
       "rimuovi le informazioni personali",
       "elimina i dati personali",
@@ -172,7 +172,10 @@
       "Posso registrarmi per una versione di prova?",
       "Esiste una versione di prova gratuita?",
       "Come posso ottenere una versione di prova gratuita?",
-      "versione di prova gratuita"
+      "account studente gratuito",
+      "account studente",
+      "versione di prova gratuita",
+      "account per la formazione "
     ],
     "al_login": [
       "Come posso ad accedere con il mio account collegato?",
@@ -330,7 +333,9 @@
       "aggiunta di utenti all'organizzazione",
       "aggiunta di persone a un'organizzazione",
       "Posso aggiungere degli utenti a un'organizzazione?",
-      "Chi può aggiungere degli utenti a un'organizzazione?"
+      "Chi può aggiungere degli utenti a un'organizzazione?",
+      "impossibile invitare l'utente",
+      "impossibile creare l'utente"
     ],
     "ts_no_space": [
       "Perché non esiste alcuno spazio associato alla mia organizzazione corrente?",

@@ -160,7 +160,7 @@
     "contactsupport": [
       "A quelles formes de support peut-on accéder ?",
       "Où est le support ?",
-      "Comment puis-je contacter le  support ?",
+      "Comment puis-je contacter le support ?",
       "Comment puis-je obtenir de l'aide ?",
       "Je souhaite contacter le support",
       "J'ai besoin d'aide",
@@ -172,7 +172,10 @@
       "Puis-je souscrire à un essai gratuit ?",
       "Existe-t-il un essai gratuit ?",
       "Comment puis-je obtenir un essai gratuit ?",
-      "essai gratuit"
+      "compte étudiant gratuit",
+      "compte étudiant",
+      "essai gratuit",
+      "compte éducation"
     ],
     "al_login": [
       "Comment est-ce que je me connecte avec mon compte lié ?",

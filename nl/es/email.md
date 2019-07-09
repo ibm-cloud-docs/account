@@ -58,7 +58,7 @@ Si es el propietario de una cuenta de Pago según uso o de Suscripción, puede e
 ## Configuración de notificaciones de usuario
 {: #setting-user-notifications}
 
-Solo es posible establecer notificaciones de usuario en los recursos de infraestructura clásicos. Si es un propietario de cuenta, puede establecer suscripciones de notificaciones para los usuarios de su cuenta. Las suscripciones son para un conjunto específico de servicios de desarrollador como {{site.data.keyword.autoscaling}} y Raid Alert Monitoring. Cuando el usuario se suscribe a un servicio, recibe correos electrónicos sobre dicho servicio.  
+Solo es posible establecer notificaciones de usuario en los recursos de infraestructura clásica. Si es un propietario de cuenta, puede establecer suscripciones de notificaciones para los usuarios de su cuenta. Las suscripciones son para un conjunto específico de servicios de desarrollador como {{site.data.keyword.autoscaling}} y Raid Alert Monitoring. Cuando el usuario se suscribe a un servicio, recibe correos electrónicos sobre dicho servicio.  
 
 Los usuarios de la cuenta reciben notificaciones de los siguientes tipos de sucesos operativos importantes:
 
