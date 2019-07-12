@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-07-12"
 
 keywords: account, add orgs, add spaces, cloud foundry orgs
 
@@ -19,7 +19,7 @@ subcollection: account
 # Adding orgs and spaces
 {: #orgsspacesusers}
 
-As an {{site.data.keyword.Bluemix}} account owner, you can add orgs and spaces to your account. If you're an organization manager, you can manage the orgs in the account. 
+As an {{site.data.keyword.Bluemix}} account owner, you can add orgs and spaces to your account. If you're an organization manager, you can manage the orgs in the account.
 {:shortdesc}
 
 ## Cloud Foundry org concepts
@@ -52,7 +52,7 @@ In a Subscription account, the quota is a user-defined limit that initiates spen
 ## Adding orgs
 {: #createorg}
 
-If you have a billable account, you can add as many orgs as you need. Lite accounts can have only one org, which is already created in your account.
+If you have a billable account, you can add as many orgs as you need. Lite accounts can have only one org, which is already created in your account. Orgs can't be deleted after you add them.
 
 1. Go to **Manage** > **Account**, and select **Account resources > Cloud Foundry orgs**. Click **Create**.
 2. Enter an org name. The name must be unique in {{site.data.keyword.Bluemix_notm}}.
