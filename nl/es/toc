@@ -24,9 +24,10 @@ Gestión de la cuenta
     feature_codes.md
 
     {: .topicgroup}
-    Modificación de los valores de la cuenta
+    Modificación de los valores de una cuenta
         account_settings.md
         eu_hipaa_supported.md
+        vrf-service-endpoint.md
         contact_info.md
         email.md
 
@@ -49,6 +50,7 @@ Gestión de la cuenta
 
     {: .navgroup id="reference"}
     monitoring.md
+    [Consulta de mandatos](/cli/cloud-cli-ibmcloud_commands_account)
     {: .navgroup-end}
 
     {: .navgroup id="help"}

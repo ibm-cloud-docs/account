@@ -82,7 +82,7 @@ Además, con una cuenta de pago según uso, puede solicitar planes de soporte pr
 ## Cuenta de Suscripción
 {: #subscription-account}
 
-Con una cuenta de Suscripción, puede crear varios grupos de recursos para gestionar fácilmente la cuota y ver el uso de facturación de un conjunto de recursos. Se compromete a una cantidad de gasto mínimo al mes y recibirá un descuento de suscripción que se aplicará a dicho cargo mínimo.
+Con una cuenta de Suscripción, puede crear varios grupos de recursos para gestionar fácilmente la cuota y ver el uso de facturación de un conjunto de recursos. Se compromete a una cantidad de gasto mínimo al mes y recibirá un descuento por suscripción que se aplicará a dicho cargo mínimo.
 
 Por ejemplo, si se compromete a gastar 100 $ al mes durante 6 meses, puede obtener un descuento del 10 %. Mientras dure la suscripción, obtiene 600 $ de uso pero solo paga 540 $. Cuando más largo sea el periodo de la suscripción, mayor es el descuento.
 

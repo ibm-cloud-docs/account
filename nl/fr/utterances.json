@@ -1,44 +1,39 @@
 {
     "create-account": [
-      "Comment créer un compte ?",
-      "Comment procéder pour créer un compte ?",
-      "Comment s'inscrire à IBM Cloud",
       "création d'un compte",
-      "comment créer un compte",
       "création d'un compte cloud",
-      "inscription à un compte",
-      "comment puis-je ouvrir un compte",
-      "Je souhaite créer un compte",
-      "J'aimerais ouvrir un compte",
-      "Montrez-moi comment créer un compte"
+      "s'inscrire pour ouvrir un compte",
+      "s'inscrire à IBM Cloud",
+      "créer un compte",
+      "créer un compte sur IBM Cloud"
     ],
     "account-error": [
-      "résoudre les erreurs survenant lors de la création de mon compte cloud",
+      "résoudre les erreurs survenant lors de la création de mon compte",
       "résolution des problèmes de compte",
       "correction des erreurs liées au compte lors de l'inscription",
       "erreurs lors de l'inscription à IBM Cloud",
-      "correction des erreurs liées au compte",
-      "Je reçois des erreurs avec mon compte",
-      "Je ne peux pas créer mon compte",
-      "la création de mon compte a échoué",
-      "Je n'arrive pas à créer un compte",
-      "Je ne peux pas créer de compte",
+      "impossible de créer un compte cloud",
+      "la création du compte a échoué",
+      "impossible de créer un compte IBM Cloud",
+      "impossible de créer un compte",
       "Erreur lors de la création de mon compte"
     ],
     "cloud-foundry": [
       "qu'est-ce que Cloud Foundry",
       "que fait Cloud Foundry",
       "Est-ce que Cloud Foundry est une plateforme",
-      "J'aimerais en savoir plus sur Cloud Foundry",
+      "en savoir plus sur Cloud Foundry",
       "Parlez-moi de Cloud Foundry"
     ],
     "move-org-diff-account": [
       "déplacement d'une organisation vers un autre compte",
       "passage d'une organisation vers un autre compte",
-      "comment déplacer une organisation",
+      "déplacer les organisations sur un compte distinct",
+      "modification d'une organisation",
+      "transférer une organisation d'un compte à un autre",
       "puis-je déplacer une organisation dans un autre compte",
-      "est-il possible de transférer des organisations vers un autre compte",
-      "puis-je déplacer des organisations entre comptes"
+      "transférer des organisations sur un autre compte",
+      "puis-je déplacer des organisations d'un compte à un autre"
     ],
     "whichregions": [
       "quelles sont les régions disponibles pour Cloud Foundry",
@@ -48,15 +43,17 @@
       "Régions Cloud Foundry"
     ],
     "whatisliteplan": [
-      "qu'est-ce qu'un compte lite",
-      "qu'est-ce qu'un plan lite",
-      "quels sont les avantages d'un plan lite",
+      "compte lite",
+      "plan lite",
+      "tarification d'un plan lite",
+      "avantages d'un plan lite",
       "combien coûte un plan lite",
-      "quel est le prix d'un plan lite plan",
+      "quel est le coût d'un plan lite",
       "dois-je payer pour un plan lite",
-      "Un plan lite est-il gratuit ?",
+      "Un plan lite est-il gratuit",
       "J'aimerais en savoir plus sur les plans lite",
-      "Dites m'en plus sur les plans lite"
+      "Dites m'en plus sur les plans lite",
+      "plan lite pour les services"
     ],
     "monthlyquota": [
       "existe-t-il un quota pour un plan lite",
@@ -69,352 +66,405 @@
       "quotas mensuels de plan lite"
     ],
     "accounts-service-removal": [
-      "Comment supprimer un service de mon compte ?",
-      "retirer un serveur de mon compte",
+      "Comment supprimer un service de mon compte",
+      "retirer le serveur de mon compte",
       "Comment supprimer un service de mon compte ?",
       "j'ai besoin de retirer un service car je ne l'utilise pas",
-      "Puis-je supprimer ce serveur de mon compte ?",
+      "Puis-je supprimer ce serveur de mon compte",
       "Je souhaite que vous annuliez le certificat SSL sur mon compte",
       "retirer un service de mon compte"
     ],
     "resourcelimit": [
-      "combien de groupes de ressources puis-je créer",
-      "le nombre de groupes de ressources que je peux créer est-il limité",
+      "nombre de groupes de ressources",
+      "nombre limite de groupes de ressources",
       "combien d'organisations puis-je créer",
-      "le nombre d'organisations que je peux créer est-il limité",
-      "combien d'espaces puis-je créer",
-      "le nombre d'espaces que je peux créer est-il limité"
+      "nombre limite d'organisations",
+      "combien d'espaces puis-je avoir",
+      "nombre limite d'espaces",
+      "limites d'organisations",
+      "limites de groupes de ressources",
+      "limites d'espaces cloud foundry"
     ],
     "changeacct": [
-      "comment mettre à niveau mon compte",
-      "comment modifier mon compte",
-      "puis-je mettre mon compte à niveau",
-      "mise à niveau de mon compte",
-      "est-il possible de mettre mon compte à niveau",
-      "comment modifier le type de mon compte",
-      "dites-moi comment mettre à niveau mon type de compte",
-      "Je souhaite mettre mon compte à niveau",
-      "que dois-je faire pour modifier mon type de compte",
-      "Où est-ce que je modifie mon compte ?",
-      "Comment est-ce que je convertis mon compte ?",
-      "Je souhaite changer de type de compte ?",
+      "mettre à niveau mon type de compte",
+      "changer de plan de compte",
+      "mettre à niveau mon plan de compte",
+      "mise à niveau de mon compte IBM Cloud",
+      "convertir mon compte cloud",
+      "modifier mon type de compte",
+      "mettre à niveau vers un compte payant",
+      "changer de plan",
+      "mettre à niveau un compte lite",
+      "changer mon type de compte",
       "Mettre à niveau vers le type Abonnement",
       "Mettre à niveau vers le type Paiement à la carte"
     ],
     "nochange": [
       "mes instances sont-elles disponibles après une mise à niveau",
-      "est-ce que je perds mes anciennes instances si je mets mon compte à niveau",
-      "puis-je continuer à utiliser mes services existants après avoir modifié mon type de compte",
+      "est-ce que je perds mes instances si je mets mon compte à niveau",
+      "continuer à utiliser mes services existants après avoir modifié mon type de compte",
       "que se passe-t-il pour mes instances existantes après mise à niveau de mon compte"
     ],
     "updatepayment": [
-      "comment modifier les informations de ma carte de crédit",
-      "dites-moi comment modifier ma carte de crédit",
-      "je souhaite mettre à jour les informations de ma carte de crédit",
-      "j'aimerais changer ma carte de crédit",
-      "comment modifier mes options de paiement",
-      "où puis-je modifier mes options de paiement"
+      "modifier les informations de carte de crédit",
+      "éditer ma carte de crédit",
+      "mettre à jour mes informations de carte de crédit",
+      "modifier ma carte de crédit",
+      "éditer mes options de paiement",
+      "modifier mes options de paiement",
+      "mettre à jour les détails de paiement"
     ],
     "change-email-prefs": [
-      "comment puis-je modifier mes préférences de messagerie électronique",
+      "modifier les préférences de courrier électronique",
       "notifications par courrier électronique",
-      "arrêter les notifications par courrier électronique"
+      "arrêter les notifications par courrier électronique",
+      "paramètres de notification",
+      "se désabonner des notifications par courrier électronique"
     ],
     "reset-password": [
-      "Comment réinitialiser mon mot de passe ?",
-      "Je souhaite modifier le mot de passe de mon compte",
-      "Où est-ce que je réinitialise mon mot de passe VPN ?",
-      "Comment puis-je mettre à jour le mot de passe de mon compte ?",
-      "Que dois-je faire pour mettre à jour mon mot de passe VPN ?",
-      "nouveau mot de passe de compte",
-      "nouveau mot de passe VPN"
+      "réinitialiser mon mot de passe",
+      "modifier le mot de passe de mon compte",
+      "réinitialiser le mot de passe VPN",
+      "mettre à jour mon mot de passe",
+      "mettre à jour le mot de passe VPN",
+      "nouveau mot de passe du compte IBM Cloud",
+      "nouveau mot de passe VPN",
+      "j'ai oublié mon mot de passe",
+      "remplacer mon mot de passe IBM Cloud",
+      "Je ne me souviens plus de mes informations de connexion",
+      "J'ai oublié mes identifiants de connexion"
     ],
     "cancelaccount": [
-      "Comment résilier mon compte ?",
-      "Où est-ce que je résilie mon compte ?",
-      "Dites-moi comment résilier mon compte",
-      "résilier un compte"
+      "résilier mon compte",
+      "je voudrais résilier mon compte",
+      "Comment résilier mon compte",
+      "résiliation d'un compte",
+      "résilier mon compte",
+      "je dois résilier mon compte",
+      "suspendre ce compte",
+      "comment désactiver le compte"  
     ],
     "deleteaccount": [
-      "Comment supprimer mon compte ?",
-      "Où est-ce que je supprime mon compte ?",
+      "supprimer mon compte",
+      "Où est-ce que je supprime mon compte",
       "Je souhaite supprimer mon compte",
-      "Je souhaite fermer mon compte",
       "Dites-moi comment supprimer mon compte",
-      "supprimer un compte"
+      "fermer mon compte IBM Cloud",
+      "mettre fin à mon compte cloud",
+      "supprimer mon compte",
+      "je n'ai plus besoin de ce compte. comment puis-je le supprimer",
+      "fermer ce compte"
     ],
     "remove-pi": [
-      "Comment puis-je retirer mes données à caractère personnel ?",
       "retirer les données à caractère personnel",
       "retirer les informations personnelles",
+      "retirer mes informations",
       "supprimer les données à caractère personnel",
       "supprimer mes données",
       "effacer des données à caractère personnel"
     ],
     "account-deactivated": [
-      "Pourquoi mon compte est-il désactivé ?",
-      "Mon compte est désactivé",
-      "Comment est-ce que je réactive mon compte ?",
-      "Pourquoi mon compte a-t-il été désactivé ?"
+      "compte désactivé",
+      "Mon compte IBM Cloud est désactivé",
+      "Désactivation du compte",
+      "Réactiver mon compte",
+      "Pourquoi mon compte a-t-il été désactivé",
+      "mon compte a été désactivé",
+      "réactiver mon compte"
     ],
     "contactsupport": [
-      "A quelles formes de support peut-on accéder ?",
-      "Où est le support ?",
-      "Comment puis-je contacter le support ?",
-      "Comment puis-je obtenir de l'aide ?",
-      "Je souhaite contacter le support",
-      "J'ai besoin d'aide",
-      "Je souhaite parler au support technique",
-      "support",
-      "Commande help"
+      "Comment contacter le support",
+      "Où trouver le support",
+      "Contacter le support",
+      "je veux contacter le support IBM",
+      "parler au support technique",
+      "connectez-moi avec le support"
     ],
     "freetrial": [
-      "Puis-je souscrire à un essai gratuit ?",
-      "Existe-t-il un essai gratuit ?",
-      "Comment puis-je obtenir un essai gratuit ?",
+      "s'inscrire pour un essai gratuit",
+      "Existe-t-il un essai gratuit",
+      "Comment obtenir un essai gratuit",
       "compte étudiant gratuit",
       "compte étudiant",
       "essai gratuit",
       "compte éducation"
     ],
     "al_login": [
-      "Comment est-ce que je me connecte avec mon compte lié ?",
-      "Où est-ce que je me connecte après avoir lié mon compte ?",
-      "Connexion avec un compte lié"
+      "se connecter avec un compte lié",
+      "connexion après liaison d'un compte",
+      "Connexion avec un compte lié",
+      "connexion de compte lié",
+      "connexion avec un compte lié"
     ],
     "al_support": [
-      "Par la suite, quel est l'impact du support ?",
-      "Quel type de support est-ce que j'obtiens après avoir lié mon compte ?",
-      "Quel niveau de support est-ce que je recevrai après avoir lié mon compte ?",
-      "Après avoir lié mon compte, quel niveau de support est-ce que j'obtiendrai ?",
-      "impact du support",
-      "impact du support",
+      "quel support obtenir avec un compte lié",
+      "support après liaison de mon compte",
+      "Après avoir lié mon compte, quel niveau de support est-ce que j'obtiendrai",
+      "support de compte lié",
       "support après liaison d'un compte",
-      "support d'un compte lié"
+      "support d'un compte lié",
+      "les comptes liés affectent-ils le support"
     ],
     "al_morehelp": [
-      "Où est-ce que j'obtiens de l'aide en liant mon compte ?",
+      "Où est-ce que j'obtiens de l'aide en liant mon compte",
       "Autres moyens de lier mon compte",
       "j'ai besoin d'aide pour lier mon compte",
       "Aide pour un compte lié",
-      "Existe-t-il d'autres moyens pour obtenir de l'aide concernant la liaison de mon compte ?"
+      "Existe-t-il d'autres moyens pour obtenir de l'aide concernant la liaison de mon compte",
+      "Je ne peux pas lier mon compte",
+      "Problème concernant la liaison de mon compte"
     ],
     "al_multacct": [
-      "Que faire si j'ai plusieurs comptes, comment les lier ?",
-      "lier ensemble plusieurs comptes",
-      "lier mes comptes",
+      "comment lier plus d'un compte",
+      "plusieurs comptes, comment puis-je les lier",
+      "lier plusieurs comptes",
+      "lier tous mes comptes",
       "lier plusieurs comptes",
       "Je souhaite lier plusieurs comptes"
     ],
     "al_incent": [
       "primes pour des comptes liés",
-      "Quelles sont les primes accordées pour la liaison de mes comptes ?",
-      "Quels sont les avantages liés à la liaison de mes comptes ?",
-      "Quels bénéfices est-ce que j'obtiens à lier mes comptes ?",
-      "Y a-t-il une plus-value à lier mes comptes ?",
-      "Pourquoi devrais-je lier mes comptes ?"
+      "primes pour lier mes comptes",
+      "avantages de lier mes comptes",
+      "Quels bénéfices est-ce que j'obtiens à lier mes comptes",
+      "valeur issue de la liaison de mes comptes",
+      "Pourquoi dois-je lier mes comptes",
+      "qu'est-ce qu'un compte lié"
     ],
     "al_owaffslacct": [
-      "Pourquoi devrais-je ajouter des services de plateforme IBM Cloud à mon compte SoftLayer ?",
-      "Qu'est-ce que j'obtiens si j'ajoute des services de plateforme IBM Cloud à mon compte SoftLayer ?",
-      "Que se passe-t-il au niveau de mon compte SoftLayer lorsque j'ajoute des services de plateforme IBM Cloud ?",
+      "Pourquoi devrais-je ajouter des services de plateforme IBM Cloud à mon compte SoftLayer",
+      "Qu'est-ce que j'obtiens si j'ajoute des services de plateforme IBM Cloud à mon compte SoftLayer",
+      "Que se passe-t-il au niveau de mon compte SoftLayer lorsque j'ajoute des services de plateforme IBM Cloud",
       "ajouter IBM Cloud à SoftLayer",
+      "connecter Softlayer et le compte IBM",
       "combiner IBM Cloud et SoftLayer",
-      "connecter IBM Cloud à SoftLayer"
+      "connecter IBM Cloud à SoftLayer",
+      "différence entre Softlayer et IBM Cloud"
     ],
     "al_howaffslmastacct": [
-      "Que se passe-t-il au niveau de mon ID de compte principal SoftLayer une fois que j'ai lié mes comptes ?",
-      "Quel est l'impact sur SoftLayer après liaison de mes comptes ?",
-      "Que se passe-t-il pour mon ID de compte principal avec SoftLayer ?"
+      "Que se passe-t-il au niveau de mon ID de compte principal SoftLayer après avoir lié mes comptes",
+      "Quel est l'impact sur SoftLayer après liaison de mes comptes",
+      "Que se passe-t-il pour mon ID de compte principal avec SoftLayer",
+      "compte lié et softlayer",
+      "ID softlayer avec un compte lié"
     ],
     "accounts-owned": [
-      "Quels sont les comptes que je possède ?",
       "Quels sont les comptes que je possède",
-      "Combien de compte sont en ma possession",
+      "Quels sont les comptes que je possède",
+      "Combien de comptes sont en ma possession",
       "Dans quels comptes est-ce que je me trouve",
       "comptes que je possède",
-      "Je souhaite savoir dans quels comptes que je me trouve",
       "comptes dans lesquels je me trouve",
-      "dans quels comptes est-ce que je me trouve",
-      "quels sont les comptes que je possède",
-      "Quels sont les comptes auxquels je suis affiliés",
+      "quels sont les comptes auxquels je suis affiliés",
       "quels sont les comptes que je possède"
     ],
     "switch-between-accounts": [
       "bascule entre plusieurs comptes",
       "changement entre plusieurs comptes",
-      "Puis-je basculer entre plusieurs comptes ?",
+      "Puis-je basculer entre plusieurs comptes",
       "changement de comptes",
-      "Comment puis-je basculer entre plusieurs comptes ?"
+      "Comment puis-je basculer entre plusieurs comptes",
+      "passer à un autre compte",
+      "basculer dans un autre compte"
     ],
     "switch-account-owners": [
-      "Suis-je autorisé à changer les propriétaires de compte ?",
+      "basculer de propriétaires de compte",
       "changer les propriétaires de compte",
-      "Comment est-ce que je change des propriétaires de compte ?",
       "basculer un propriétaire",
       "changer un propriétaire",
-      "transférer un propriétaire"
+      "transférer la propriété de mon compte",
+      "transférer la propriété d'un compte",
+      "attribuer mon compte à quelqu'un d'autre",
+      "transfert de propriété",
+      "propriété transférée"
     ],
     "batch-registration": [
-      "IBM Cloud prend-il en charge l'enregistrement par lots d'utilisateurs ?",
-      "IBM Cloud prend-il en charge les enregistrements multiples d'utilisateurs ?",
+      "IBM Cloud prend-il en charge l'enregistrement par lots d'utilisateurs",
+      "IBM Cloud prend-il en charge l'enregistrement multiple d'utilisateurs",
       "enregistrer un grand nombre d'utilisateurs",
       "enregistrer plusieurs utilisateurs",
-      "IBM Cloud peut-il enregistrer plusieurs utilisateurs ?",
-      "IBM Cloud est-il capable d'enregistrer plusieurs utilisateurs à la fois ?"
+      "IBM Cloud peut-il enregistrer plusieurs utilisateurs",
+      "IBM Cloud est-il capable d'enregistrer plusieurs utilisateurs à la fois",
+      "enregistrement d'utilisateurs par lots",
+      "enregistrer plusieurs utilisateurs à la fois"
     ],
     "know-about-tags": [
-      "Qu'est-ce qu'une étiquette ?",
-      "Comment est-ce que j'utilise les étiquettes ?",
-      "Comment les étiquettes sont-elles utilisées ?",
-      "Qu'est-ce qu'une étiquette ?"
+      "Qu'est-ce qu'une étiquette",
+      "Comment utiliser les étiquettes",
+      "Comment sont utilisées les étiquettes",
+      "Qu'est-ce qu'une étiquette"
     ],
     "tags-visibility-account": [
-      "Qui peut voir les étiquettes d'un compte ?",
-      "Qui est autorisé à afficher les étiquettes d'un compte ?",
-      "afficher les étiquettes d'un compte"
+      "Qui peut voir les étiquettes d'un compte",
+      "Qui est autorisé à afficher les étiquettes d'un compte",
+      "afficher les étiquettes d'un compte",
+      "Puis-je voir les étiquettes du compte"
     ],
     "permissions-add-remove-tags": [
-      "Quels droits sont nécessaires pour ajouter ou supprimer des étiquettes ?",
-      "Quels droits sont requis pour ajouter ou supprimer des étiquettes ?",
-      "ajout ou suppression d'étiquettes"
+      "Quels sont les droits requis pour ajouter ou supprimer des étiquettes",
+      "Quelles sont les conditions requises pour ajouter ou supprimer des étiquettes dans les ressources",
+      "Puis-je ajouter ou supprimer une étiquette",
+      "remplacer une étiquette",
+      "Je ne peux pas retirer mon étiquette"
     ],
     "delete-tag": [
-      "Suis-je autorisé à supprimer une étiquette ?",
-      "Comment supprimer une étiquette ?",
-      "Puis-je supprimer une étiquette ?",
-      "Puis-je éliminer une étiquette ?",
+      "Suis-je autorisé à supprimer une étiquette",
+      "Comment supprimer une étiquette",
+      "Puis-je supprimer une étiquette",
+      "Puis-je me défaire d'une étiquette",
       "suppression d'une étiquette",
       "élimination d'une étiquette"
     ],
     "rename-tag": [
-      "Suis-je autorisé à renommer une étiquette ?",
-      "Comment renommer une étiquette ?",
-      "Puis-je changer le nom d'une étiquette ?",
-      "Suis-je autorisé à changer le nom d'une étiquette ?",
       "renommer une étiquette",
       "changer le nom d'une étiquette",
       "éditer le nom d'une étiquette"
     ],
     "nosecondreg": [
-      "Pourquoi ne puis-je pas accéder à un autre emplacement IBM Cloud ?",
+      "impossible d'accéder à un autre emplacement d'IBM Cloud",
       "impossible d'accéder à un autre emplacement",
-      "accès à un autre emplacement impossible",
-      "Pourquoi ne puis-je pas autorisé à accéder à un autre emplacement IBM Cloud ?",
-      "Pourquoi ne puis-je pas utiliser un autre emplacement IBM Cloud ?"
+      "accès impossible à d'autres emplacements",
+      "accès non autorisé à un autre emplacement d'IBM Cloud",
+      "impossible d'utiliser un autre emplacement d'IBM Cloud",
+      "impossible d'utiliser d'autres emplacements d'IBM Cloud"
     ],
     "nosecondorg": [
-      "Pourquoi ne puis-je pas autorisé à créer une nouvelle organisation ?",
+      "impossible de parvenir à créer une nouvelle organisation",
       "impossible de créer une nouvelle organisation",
-      "problème lors de la création d'une nouvelle organisation",
-      "Pourquoi ne puis-je pas définir une nouvelle organisation ?",
-      "Pourquoi ne puis-je pas constituer une nouvelle organisation ?"
+      "problèmes lors de la création d'une nouvelle organisation",
+      "difficultés à créer une nouvelle organisation",
+      "impossible de former une nouvelle organisation"
     ],
     "nosecondlite": [
+      "impossible de former une nouvelle instance de plan lite",
       "impossible de créer une nouvelle instance de plan lite",
-      "problème lors de la création d'une nouvelle instance de plan Lite",
-      "Suis-je autorisé à créer une nouvelle instance de plan Lite ?",
-      "Pourquoi ne puis-je pas constituer une nouvelle instance de plan Lite ?"
+      "création d'une nouvelle instance de plan Lite non autorisée",
+      "Pourquoi ne puis-je pas constituer une nouvelle instance de plan Lite",
+      "mettre à disposition une autre ressource de plan Lite",
+      "Impossible de mettre à disposition une nouvelle instance Lite",
+      "plusieurs instances de plan lite"
     ],
     "noruntimemem": [
-      "Comment ai-je dépassé la franchise de mémoire d'exécution ?",
       "dépassement de la franchise de mémoire d'exécution",
-      "Comment ai-je trop utilisé de mémoire d'exécution ?"
+      "franchise de mémoire d'exécution dépassée",
+      "utilisation excessive de la franchise de mémoire d'exécution",
+      "Limite de mémoire de l'organisation dépassée",
+      "mémoire d'exécution de l'instance lite"
     ],
     "ts_accnt_inactive": [
-      "Pourquoi est-ce que mon compte ne fonctionne pas ?",
-      "Pourquoi mon compte s'est-il désactivé ?",
+      "BXNUI0096E",
+      "L'application n'a pas été créée. Votre compte est inactif car il a été résilié ou suspendu",
       "compte inactif",
       "compte non actif",
-      "le compte ne fonctionne pas correctement"
+      "compte non activé"
     ],
     "ts_adduser": [
-      "Pourquoi ne suis-je pas autorisé à ajouter des utilisateurs à une organisation ?",
+      "impossible d'ajouter des utilisateurs à une organisation",
+      "impossible d'ajouter des utilisateurs à mon organisation",
       "ajout d'utilisateurs à une organisation",
       "ajout de personnes à une organisation",
-      "Puis-je ajouter des utilisateurs à une organisation ?",
-      "Qui est autorisé à ajouter des utilisateurs à une organisation ?",
-      "Invitation d'utilisateur impossible",
-      "Création d'utilisateur impossible"
+      "Qui est autorisé à ajouter des utilisateurs à une organisation",
+      "droits sur l'organisation",
+      "Puis-je ajouter des utilisateurs à une organisation",
+      "ajouter un autre utilisateur",
+      "ajouter un accès utilisateur"
     ],
     "ts_no_space": [
-      "Pourquoi aucun espace n'est-il associé à mon organisation en cours ?",
-      "Où sont les espaces associés à mon organisation en cours ?",
-      "Pourquoi aucun espace n'est-il lié à mon organisation en cours ?",
-      "Pourquoi aucun espace n'est-il connecté à mon organisation en cours ?"
+      "BXNUI0097E",
+      "Pour qu'une application puisse être ajoutée, un espace au moins doit être associé à votre organisation et à votre région",
+      "aucun espace n'est associé à mon organisation actuelle",
+      "impossible de créer une application sans espace",
+      "aucun espace dans mon organisation",
+      "Où sont les espaces associés à mon organisation actuelle",
+      "aucun espace n'est lié à mon organisation actuelle"
     ],
     "ts_domain_diff": [
-      "partage de noms de domaine",
-      "Pourquoi des applications partagent-elles un nom de domaine ?",
-      "Quels types d'applications se partagent un nom de domaine ?",
-      "types d'application qui se partagent un domaine",
-      "Quelles applications se partagent des domaines ?",
-      "Pourquoi est-ce que je partage un nom de domaine avec certaines applications ?"
+      "applications partageant des noms de domaine",
+      "Quels types d'applications se partagent un nom de domaine",
+      "types d'application qui partagent un domaine",
+      "Quelles applications partagent des domaines",
+      "différentes applications partageant un nom de domaine"
     ],
     "ts_ui_org": [
-      "Les administrateurs peuvent-ils utiliser la console pour afficher toutes les organisations ?",
-      "Les administrateurs ne sont pas autorisés à utiliser la console pour afficher toutes les organisations",
-      "Pourquoi les administrateurs ne peuvent-ils pas utiliser la console pour afficher toutes les organisations ?",
-      "Qui peut utiliser la console pour afficher toutes les organisations ?"
+      "Impossible d'afficher toutes les organisations",
+      "Les administrateurs ne parviennent pas à voir les organisations dans la console",
+      "l'administrateur ne parvient pas à afficher les organisations",
+      "comment puis-je gérer l'ensemble de mes organisations",
+      "utiliser la console pour voir toutes mes organisations"
     ],
     "ts_addcc": [
       "impossible d'ajouter ma carte de crédit",
       "je ne peux pas ajouter de carte de crédit",
-      "Pourquoi ne suis-je pas autorisé à ajouter mes informations de carte de crédit ?",
-      "problème lors de l'ajout d'une carte de crédit",
+      "ajout de mes informations de carte de crédit non autorisé",
+      "difficultés à ajouter une carte de crédit",
       "carte de crédit non ajoutée",
-      "la carte de crédit n'ajoute pas d'informations"
+      "la carte de crédit n'ajoute pas d'informations",
+      "impossible d'ajouter des options de paiement",
+      "impossible d'ajouter un mode de paiement",
+      "impossible d'enregistrer ma carte de crédit"
     ],
     "ts_logintobm": [
-      "Pourquoi mon mot de passe est-il incorrect ?",
-      "Je souhaite réinitialiser mon mot de passe",
-      "Pourquoi ne puis-je pas me connecter avec mon nouveau mot de passe ?",
       "mon mot de passe est incorrect",
       "mot de passe incorrect",
       "mauvais mot de passe",
       "impossible d'utiliser mon mot de passe",
-      "le mot de passe ne fonctionne pas"
+      "le mot de passe ne fonctionne pas",
+      "Le mot de passe que vous avez entré est incorrect"
     ],
     "ts_old_username": [
-      "Pourquoi mon adresse électronique ou mon IBMid n'a-t-il pas été reconnu ?",
-      "Pourquoi mon IBMid ou mon adresse électronique ne sont-ils pas reconnus ?",
-      "adresse électronique ou IBMid non reconnus",
+      "IBMid ou adresse électronique reconnus",
+      "IBMid ou adresse électronique non reconnus",
       "mon ID n'est pas reconnu",
-      "Pourquoi on ID n'est-il pas reconnu ?"
+      "ID non reconnu",
+      "IBMID non opérationnel",
+      "Nous n'avons pas reconnu cette adresse électronique ou cet IBMid",
+      "j'ai oublié mon ID utilisateur"
     ],
     "ts_unabletologin": [
-      "Pourquoi mon IBMid n'est-il reconnu avec aucun des comptes IBM Cloud ?",
-      "Pourquoi mon IBMid n'est-il connecté à aucun des comptes IBM Cloud ?",
-      "Pourquoi mon IBMid n'est-il lié à aucun des comptes IBM Cloud ?",
-      "Pourquoi aucun de mes comptes IBM Cloud n'est-il associé à mon IBMid ?",
-      "ID non associé à des comptes"
+      "IBMid non connecté à un compte IBM Cloud",
+      "IBMid non lié à un compte IBM Cloud",
+      "Comptes IBM Cloud non associés à mon IBMid",
+      "ID non associé à des comptes",
+      "Vous avez pu accéder à cette page car votre authentification a abouti. Toutefois, cet IBMid n'est associé à aucun compte IBM Cloud"
     ],
     "ts_login_stalls": [
-      "Pourquoi la console ne s'ouvre-t-elle pas avec mon IBMid ?",
+      "impossible d'ouvrir la console après la connexion",
       "la console ne s'ouvre pas lorsque je me connecte",
       "console ne s'ouvrant pas",
-      "la console ne s'ouvre pas",
+      "console refusant de s'ouvrir",
       "la console ne s'ouvre pas après connexion"
     ],
     "ts_login_ibmid": [
-      "Pourquoi ma connexion IBMid ne passe-t-elle pas ?",
-      "Pourquoi ma connexion IBMid n'a-t-elle pas abouti ?",
+      "la connexion avec l'IBMid n'aboutit pas",
+      "impossible de se connecter avec l'IBMId",
       "connexion non effectuée",
       "la connexion n'a pas abouti",
       "connexion non aboutie",
-      "Pourquoi ma connexion IBMid ne s'est-elle pas effectuée ?"
+      "la connexion avec mon IBMid n'arrive pas à aboutir",
+      "impossible d'établir la connexion",
+      "Impossible de se connecter à mon compte",
+      "la connexion ne fonctionne pas"
     ],
     "ts_accntpding": [
-      "Après enregistrement d'un compte, je ne peut pas me connecter immédiatement",
-      "je ne parviens pas à me connecter immédiatement après enregistrement",
-      "impossible de me connecter après enregistrement d'un compte",
-      "je ne parviens pas à me connecter après enregistrement d'un compte"
+      "Après enregistrement d'un compte, je ne peux pas me connecter immédiatement",
+      "impossible de me connecter immédiatement après la création d'un compte",
+      "connexion impossible après enregistrement d'un compte",
+      "je ne parviens pas à me connecter après enregistrement d'un compte",
+      "impossible de se connecter après la création d'un compte",
+      "connexion après inscription à IBM Cloud",
+      "impossible d'accéder à mon compte après l'inscription",
+      "Votre compte est en attente"
     ],
     "ts_err": [
-      "Pourquoi certaines pages de la console ne se chargent-elles pas ?",
-      "Pourquoi certaines pages de la console ne se chargent pas ?",
-      "Pourquoi des pages de la console ne se chargent pas ?",
-      "je ne parviens pas à charger certaines pages de la console",
-      "des pages de la console ne se chargent pas"
+      "pages qui ne se chargent pas",
+      "pages incomplètes sur la console",
+      "certaines pages de la console ne sont pas visibles",
+      "les pages de la console ne se chargent pas",
+      "impossible de charger certaines pages de la console",
+      "des pages de la console ne se chargent pas",
+      "BXNUI0001E",
+      "La page n'a pas été chargée car IBM Cloud n'a pas détecté s'il existait une session",
+      "BXNUI0016E",
+      "Les applications et les services n'ont pas été extraits car une page IBM Cloud n'a pas été chargée"
     ]
 }

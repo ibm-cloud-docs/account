@@ -187,7 +187,9 @@ Cliquez sur **Support** dans la barre de menus de la console pour accéder au ce
 {: #freetrial}
 {: faq}
 
-Des comptes d'essai {{site.data.keyword.Bluemix_notm}} sont disponibles pour les enseignants et les étudiants d'institutions académiques accréditées. Pour être éligible pour un compte d'essai, accédez au site [Harness the Power of IBM ![Icône de lien externe](../icons/launch-glyph.svg)](https://onthehub.com/ibm/){: new_window} et validez les données d'identification de votre institution.
+Les comptes {{site.data.keyword.Bluemix_notm}} Lite fournissent l'accès aux services gratuits du plan Lite. Vous pouvez utiliser ces services aussi longtemps que vous voulez sans être facturé et votre compte n'expire jamais. [Inscrivez-vous pour obtenir un compte Lite](https://{DomainName}/registration).
+
+Des comptes d'essai {{site.data.keyword.Bluemix_notm}} sont disponibles pour les enseignants et les étudiants d'institutions académiques accréditées. Pour être éligible pour un compte d'essai, accédez au site [Harness the Power of IBM ![Icône de lien externe](../icons/launch-glyph.svg)](https://ibm.biz/academic){: new_window} et validez les données d'identification de votre institution. Contrairement aux comptes Lite, les comptes d'essai expirent à la fin de la période d'essai.
 
 ## Après avoir lié mon compte, comment puis-je me connecter ?
 {: #al_login}

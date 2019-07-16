@@ -43,7 +43,7 @@ Una vez procesada la información de pago, su cuenta se actualiza y puede explor
 ## Actualización a una cuenta de suscripción
 {: #upgrade-subscription}
 
-Con una cuenta de Suscripción, se compromete a una cantidad de gasto mínimo al mes y recibirá un descuento de suscripción que se aplicará a dicho cargo mínimo. Si su uso supera la cantidad total de la suscripción, se le cargará una tasa normal sin descuento solo por la parte excedente.
+Con una cuenta de Suscripción, se compromete a una cantidad de gasto mínimo al mes y recibirá un descuento por suscripción que se aplicará a dicho cargo mínimo. Si su uso supera la cantidad total de la suscripción, se le cargará una tasa normal sin descuento solo por la parte excedente.
 
 Las suscripciones que adquiera a través de la consola se limitan a 5.000 $ (USD) o el equivalente en la moneda en la que se le facture. Si desea adquirir una suscripción mayor, póngase en contacto con el [equipo de ventas de {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg).
 

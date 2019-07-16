@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-07-08"
 
 keywords: organizing resource group, account best practices, best practices account
 
@@ -102,4 +102,4 @@ Para obtener más información sobre qué recursos se pueden etiquetar y cómo a
 
 ## Pasos siguientes
 
-Configure los grupos de acceso para los usuarios y los ID de servicio que requieren el mismo acceso a recursos y grupos de recursos en su cuenta. Puede asignar un número mínimo de políticas de acceso, lo que le ahorra tiempo. Para obtener más información, consulte [Prácticas recomendadas para asignar acceso](/docs/iam?topic=iam-cfaccess).
+Configure los grupos de acceso para los usuarios y los ID de servicio que requieren el mismo acceso a recursos y grupos de recursos en su cuenta. Puede asignar un número mínimo de políticas de acceso, lo que le ahorra tiempo. Para obtener más información, consulte [Prácticas recomendadas para asignar acceso](/docs/iam?topic=iam-account_setup).

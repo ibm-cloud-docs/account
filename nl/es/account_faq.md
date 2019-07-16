@@ -20,7 +20,7 @@ subcollection: account
 # Preguntas más frecuentes sobre la cuenta
 {: #accountfaqs}
 
-Las preguntas más frecuentes sobre su cuenta de {{site.data.keyword.cloud}} pueden incluir preguntas acerca de cuentas lite, reasignación de usuarios, errores de cuenta etiquetas de cuenta. Para encontrar todas las preguntas más frecuentes sobre {{site.data.keyword.cloud_notm}}, consulte nuestra biblioteca de preguntas más frecuentes. 
+Las preguntas más frecuentes sobre su cuenta de {{site.data.keyword.cloud}} pueden incluir preguntas acerca de cuentas lite, reasignación de usuarios, errores de cuenta etiquetas de cuenta. Para encontrar todas las preguntas más frecuentes sobre {{site.data.keyword.cloud_notm}}, consulte nuestra biblioteca de preguntas más frecuentes.
 {: shortdesc}
 
 ## ¿Cómo puedo crear una cuenta?
@@ -191,7 +191,9 @@ Pulse **Soporte** en la barra de menús de la consola para ir al centro de sopor
 {: #freetrial}
 {: faq}
 
-Las cuentas de prueba de {{site.data.keyword.Bluemix_notm}} están disponibles para profesores y estudiantes de instituciones académicas acreditadas. Para cumplir los requisitos para una cuenta de prueba, vaya a [Aprovechar la potencia de IBM ![Icono de enlace externo](../icons/launch-glyph.svg)](https://onthehub.com/ibm/){: new_window} y valide las credenciales de la institución.
+Las cuentas Lite de {{site.data.keyword.Bluemix_notm}} proporcionan acceso a los servicios gratuitos del plan Lite. Puede utilizar estos servicios durante el tiempo que desee sin que se le facture y su cuenta nunca caduca. [Regístrese para una cuenta Lite](https://{DomainName}/registration).
+
+Las cuentas de prueba de {{site.data.keyword.Bluemix_notm}} están disponibles para profesores y estudiantes de instituciones académicas acreditadas. Para cumplir los requisitos para una cuenta de prueba, vaya a [Aprovechar la potencia de IBM ![Icono de enlace externo](../icons/launch-glyph.svg)](https://ibm.biz/academic){: new_window} y valide las credenciales de la institución. A diferencia de las cuentas de Lite, las cuentas de prueba caducan cuando finaliza el periodo de prueba.
 
 ## Después de enlazar mi cuenta, ¿cómo inicio una sesión?
 {: #al_login}
