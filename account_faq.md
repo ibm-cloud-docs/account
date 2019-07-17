@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-07-17"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -190,6 +190,12 @@ Click **Support** from the console menu bar to go to the Support Center. Learn m
 {{site.data.keyword.Bluemix_notm}} Lite accounts provide access to free Lite plan services. You can use these services for as long as you want without being charged, and your account never expires. [Sign up for a Lite account](https://{DomainName}/registration).
 
 {{site.data.keyword.Bluemix_notm}} trial accounts are available for faculty and students at accredited academic institutions. To qualify for a trial account, go to [Harness the Power of IBM ![External link icon](../icons/launch-glyph.svg)](https://ibm.biz/academic){: new_window} and validate your institution credentials. Unlike Lite accounts, trial accounts expire after their trial period ends.
+
+## Can I log in to the {{site.data.keyword.Bluemix_notm}} console with my SoftLayer ID?
+{: #slid}
+{: faq}
+
+Yes, you can use your SoftLayer ID to log in to the console. Go to the [login page](https://cloud.ibm.com/login){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon"), and select **SoftLayer ID** from the **ID** list.  
 
 ## After I link my account, how do I log in?
 {: #al_login}
