@@ -24,9 +24,10 @@ Gerenciando sua conta
     feature_codes.md
 
     {: .topicgroup}
-    Modificando configurações de conta
+    Modificando as configurações da conta
         account_settings.md
         eu_hipaa_supported.md
+        vrf-service-endpoint.md
         contact_info.md
         email.md
 
@@ -49,6 +50,7 @@ Gerenciando sua conta
 
     {: .navgroup id="reference"}
     monitoring.md
+    [Referência de comando](/cli/cloud-cli-ibmcloud_commands_account)
     {: .navgroup-end}
 
     {: .navgroup id="help"}

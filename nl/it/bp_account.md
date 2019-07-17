@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-05-31"
+lastupdated: "2019-07-08"
 
-keywords: resource group, account access, user access, IAM, organize
+keywords: organizing resource group, account best practices, best practices account
 
 subcollection: account
 
@@ -72,7 +72,7 @@ In qualità di proprietario dell'account, puoi aggiungere risorse a qualsiasi gr
 
 Per aggiungere una risorsa a un gruppo di risorse, completa la seguente procedura:
 
-1. Vai a **Gestisci** > **Account** e seleziona **Gruppi di risorse** dal menu **Risorse account**.
+1. Vai a **Gestisci > Account**. Espandi **Risorse account** e seleziona **Gruppi di risorse**.
 2. Fai clic sull'icona Azioni ![Icona Azioni](../icons/action-menu-icon.svg) per il gruppo di risorse a cui vuoi aggiungere le risorse e seleziona **Aggiungi risorse**.
 3. Dopo che sei stato reindirizzato al catalogo, seleziona la risorsa che vuoi aggiungere.
 4. Seleziona il gruppo di risorse a cui vuoi assegnarla.
@@ -102,4 +102,4 @@ Per ulteriori informazioni su quali sono le risorse a cui possono essere aggiunt
 
 ## Passi successivi
 
-Configura i gruppi di accesso per gli utenti e gli ID servizio che richiedono lo stesso accesso alle risorse e ai gruppi di risorse nel tuo account. Puoi assegnare un numero minimo di politiche di accesso, per risparmiare tempo. Per ulteriori informazioni, consulta [Procedure consigliate per l'assegnazione dell'accesso](/docs/iam?topic=iam-cfaccess).
+Configura i gruppi di accesso per gli utenti e gli ID servizio che richiedono lo stesso accesso alle risorse e ai gruppi di risorse nel tuo account. Puoi assegnare un numero minimo di politiche di accesso, per risparmiare tempo. Per ulteriori informazioni, consulta [Procedure consigliate per l'assegnazione dell'accesso](/docs/iam?topic=iam-account_setup).

@@ -27,6 +27,7 @@ Gestione del tuo account
     Modifica delle impostazioni dell'account
         account_settings.md
         eu_hipaa_supported.md
+        vrf-service-endpoint.md
         contact_info.md
         email.md
 
@@ -49,6 +50,7 @@ Gestione del tuo account
 
     {: .navgroup id="reference"}
     monitoring.md
+    [Guida di riferimento ai comandi](/cli/cloud-cli-ibmcloud_commands_account)
     {: .navgroup-end}
 
     {: .navgroup id="help"}

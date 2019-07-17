@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-07-08"
 
 keywords: organizing resource group, account best practices, best practices account
 
@@ -102,4 +102,4 @@ Para obter mais informações sobre quais recursos podem ser identificados e com
 
 ## Próximas Etapas
 
-Configure grupos de acesso para os usuários e IDs de serviço que requerem o mesmo acesso a recursos e grupos de recursos em sua conta. É possível designar um número mínimo de políticas de acesso, o que economiza tempo. Para obter mais informações, veja [Melhores práticas para designar acesso](/docs/iam?topic=iam-cfaccess).
+Configure grupos de acesso para os usuários e IDs de serviço que requerem o mesmo acesso a recursos e grupos de recursos em sua conta. É possível designar um número mínimo de políticas de acesso, o que economiza tempo. Para obter mais informações, veja [Melhores práticas para designar acesso](/docs/iam?topic=iam-account_setup).

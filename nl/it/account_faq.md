@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-11"
+lastupdated: "2019-06-19"
 
-keywords: account, upgrade, account settings, IBM Cloud account, Lite account
+keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
 subcollection: account
 
@@ -17,14 +17,17 @@ subcollection: account
 {:faq: data-hd-content-type='faq'}
 {:tip: .tip}
 
-# Domande frequenti
+# FAQ per l'account
 {: #accountfaqs}
+
+Le FAQ per {{site.data.keyword.cloud}} potrebbero includere delle domande sugli account lite, la riassegnazione degli utenti, gli errori dell'account e le tag dell'account. Per trovare tutte le FAQ per {{site.data.keyword.cloud_notm}}, vedi la nostra libreria di FAQ.
+{: shortdesc}
 
 ## Come creo un account?
 {: #create-account}
 {: faq}
 
-Vai a [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno") e fai clic su **Crea un account {{site.data.keyword.Bluemix_notm}}** per creare un account Lite che non scade mai. Vedi [Account Lite](/docs/account?topic=account-liteaccount#liteaccount) per ulteriori dettagli sulle funzioni incluse.
+Vai a [{{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno") e fai clic su **Crea un account {{site.data.keyword.Bluemix_notm}}** per creare un account Lite che non scade mai. Vedi [Account Lite](/docs/account?topic=account-liteaccount#liteaccount) per ulteriori dettagli sulle funzioni incluse.
 
 
 ## Come risolvo gli errori che si verificano in fase di creazione del mio account?
@@ -184,7 +187,9 @@ Fai clic su **Supporto** dalla barra dei menu della console per andare al Centro
 {: #freetrial}
 {: faq}
 
-Gli account di prova {{site.data.keyword.Bluemix_notm}} sono disponibili per docenti e studenti presso istituti accademici accreditati. Per poter beneficiare di un account di prova, vai a [Harness the Power of IBM ![Icona link esterno](../icons/launch-glyph.svg)](https://onthehub.com/ibm/){: new_window} e convalida le credenziali del tuo istituto.
+Gli account {{site.data.keyword.Bluemix_notm}} Lite forniscono l'accesso ai servizi del piano Lite gratuito. Puoi utilizzare questi servizi per tutto il tempo che vuoi senza alcun addebito e il tuo account non scade mai. [Registrati per un account Lite](https://{DomainName}/registration).
+
+Gli account di prova {{site.data.keyword.Bluemix_notm}} sono disponibili per docenti e studenti presso istituti accademici accreditati. Per poter beneficiare di un account di prova, vai a [Harness the Power of IBM ![Icona link esterno](../icons/launch-glyph.svg)](https://ibm.biz/academic){: new_window} e convalida le credenziali del tuo istituto. A differenza degli account Lite, gli account di prova scadono una volta terminato il periodo di prova.
 
 ## Dopo aver collegato il mio account, come posso accedere?
 {: #al_login}

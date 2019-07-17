@@ -1,44 +1,39 @@
 {
     "create-account": [
-      "Como criar uma conta?",
-      "O que eu faço para criar uma conta?",
-      "Como eu me inscrevo para o IBM Cloud",
       "criando uma conta",
-      "como criar uma conta",
       "criando uma conta de nuvem",
-      "inscrever-se em uma conta",
-      "como posso criar uma conta",
-      "Desejo criar uma conta",
-      "Gostaria de criar uma conta",
-      "Mostre-me como criar uma conta"
+      "inscrever-se para obter uma conta",
+      "inscrever-se para obter o IBM Cloud",
+      "criar conta",
+      "criar conta no IBM Cloud"
     ],
     "account-error": [
-      "resolver erros que ocorrem ao criar minha conta de nuvem",
+      "resolver erros que ocorrem ao criar minha conta",
       "resolvendo problemas de conta",
       "corrigindo erros de conta durante a inscrição",
       "obtendo erros ao inscrever-se para o IBM Cloud",
-      "corrigindo erros de conta",
-      "Estou obtendo erros com minha conta",
-      "Não posso criar minha conta",
-      "a criação da minha conta falhou",
-      "Não sou capaz de criar uma conta",
-      "Não consigo criar uma conta",
+      "não é possível criar uma conta de nuvem",
+      "criação da conta com falha",
+      "não é possível fazer uma conta do IBM Cloud",
+      "não é possível criar uma conta",
       "Erro ao criar minha conta"
     ],
     "cloud-foundry": [
       "o que é o Cloud Foundry",
       "o que o Cloud Foundry faz",
       "O Cloud Foundry é uma plataforma",
-      "Eu quero aprender sobre o Cloud Foundry",
+      "conheça o Cloud Foundry",
       "Conte-me sobre o Cloud Foundry"
     ],
     "move-org-diff-account": [
       "movendo uma organização para outra conta",
       "mudando uma organização para outra conta",
-      "como eu movo as organizações",
+      "mover organizações para contas separadas",
+      "mudando uma organização",
+      "transferir organização entre as contas",
       "posso mover uma organização para uma conta diferente",
-      "é possível transferir as organizações para outra conta",
-      "eu sou capaz de mover as organizações entre as contas"
+      "transferir organizações para outra conta",
+      "sou capaz de mover organizações entre contas"
     ],
     "whichregions": [
       "quais regiões estão disponíveis para o Cloud Foundry",
@@ -48,15 +43,17 @@
       "regiões do Cloud Foundry"
     ],
     "whatisliteplan": [
-      "o que é uma conta Lite",
-      "o que é um plano Lite",
-      "quais são os benefícios de um plano Lite",
+      "conta Lite",
+      "plano Lite",
+      "precificação do plano Lite",
+      "benefícios de um plano Lite",
       "quanto é um plano Lite",
       "quanto custa um plano Lite",
       "eu tenho que pagar por um plano Lite",
-      "Existe um plano Lite grátis?",
+      "É um plano Lite grátis",
       "Desejo saber sobre os planos Lite",
-      "Conte-me mais sobre os planos Lite"
+      "Conte-me mais sobre os planos Lite",
+      "plano Lite para serviços"
     ],
     "monthlyquota": [
       "há uma cota para um plano Lite",
@@ -66,355 +63,408 @@
       "são cotas por mês",
       "são cotas por instância",
       "as cotas são reconfiguradas por mês",
-      "cotas de plano Lite"
+      "cotas mensais do plano Lite"
     ],
     "accounts-service-removal": [
-      "Como excluo um serviço da minha conta?",
+      "Como excluir um serviço da minha conta",
       "remover servidor da minha conta",
       "Como posso excluir um serviço da minha conta",
       "preciso remover um serviço, pois não estou usando-o",
-      "Posso excluir esse servidor da minha conta?",
+      "Posso excluir esse servidor da minha conta",
       "Quero que você cancele o certificado SSL da minha conta",
       "remover um serviço da minha conta"
     ],
     "resourcelimit": [
-      "quantos grupos de recursos posso criar",
-      "há um limite para o número de grupos de recursos que posso criar",
+      "quantos grupos de recursos",
+      "limite para o número de grupos de recursos",
       "quantas organizações posso criar",
-      "há um limite para o número de organizações que posso criar",
-      "quantos espaços posso criar",
-      "há um limite para o número de espaços que posso criar"
+      "limite para o número de organizações",
+      "quantos espaços posso ter",
+      "limite para o número de espaços",
+      "limites da organização",
+      "limites do grupo de recursos",
+      "limites de espaço do Cloud Foundry"
     ],
     "changeacct": [
-      "Como faço upgrade da minha conta",
-      "Como mudo minha conta",
-      "posso fazer upgrade da minha conta",
-      "fazendo upgrade da minha conta",
-      "é possível fazer upgrade de minha conta",
-      "como mudo o meu tipo de conta",
-      "conte-me como fazer upgrade do meu tipo de conta",
-      "Desejo fazer upgrade da minha conta",
-      "o que fazer para mudar meu tipo de conta",
-      "Onde eu mudo minha conta?",
-      "Como converter minha conta?",
-      "Desejo alternar o meu tipo de conta?",
+      "fazer upgrade de meu tipo de conta",
+      "mudar plano de conta",
+      "fazer upgrade de meu plano de conta",
+      "fazendo upgrade da minha conta do IBM Cloud",
+      "converter minha conta de nuvem",
+      "mudar meu tipo de conta",
+      "fazer upgrade para uma conta paga",
+      "mudar plano",
+      "fazer upgrade da conta Lite",
+      "alternar meu tipo de conta",
       "Fazer upgrade para assinatura",
       "Fazer upgrade para pay-as-you-go"
     ],
     "nochange": [
       "minhas instâncias estão disponíveis após o upgrade",
-      "eu perderei minhas instâncias antigas se fizer upgrade da minha conta",
-      "posso continuar usando meus serviços existentes depois que mudar meu tipo de conta",
+      "eu perderei minhas instâncias se fizer upgrade da minha conta",
+      "continuar usando meus serviços existentes depois de mudar meu tipo de conta",
       "o que acontece com minhas instâncias existentes depois de fazer upgrade de minha conta"
     ],
     "updatepayment": [
-      "como eu mudo as informações do meu cartão de crédito",
-      "conte-me como editar meu cartão de crédito",
-      "eu desejo atualizar as informações do meu cartão de crédito",
-      "eu gostaria de mudar o meu cartão de crédito",
-      "como posso editar minhas opções de pagamento",
-      "onde eu mudo as minhas opções de pagamento"
+      "mudar as informações do cartão de crédito",
+      "editar meu cartão de crédito",
+      "atualizar as informações do meu cartão de crédito",
+      "mudar meu cartão de crédito",
+      "editar minhas opções de pagamento",
+      "mudar minhas opções de pagamento",
+      "atualizar detalhes do pagamento"
     ],
     "change-email-prefs": [
-      "como posso mudar minhas preferências de e-mail",
+      "mudar preferências de e-mail",
       "notificações por e-mail",
-      "parar notificações por e-mail"
+      "parar notificações por e-mail",
+      "configurações de notificação",
+      "cancelar assinatura de notificações por e-mail"
     ],
     "reset-password": [
-      "Como reconfiguro a minha senha?",
-      "Desejo mudar a minha senha de conta",
-      "Onde reconfiguro minha senha de VPN?",
-      "Como posso atualizar a senha da minha conta?",
-      "O que fazer para atualizar a senha da minha VPN?",
-      "nova senha da conta",
-      "nova senha de VPN"
+      "reconfigurar minha senha",
+      "mudar senha da minha conta",
+      "reconfigurar senha da VPN",
+      "atualizar minha senha",
+      "atualizar senha da VPN",
+      "nova senha da conta do IBM Cloud",
+      "nova senha de VPN",
+      "esqueci minha senha",
+      "substituir senha do IBM Cloud",
+      "não consigo lembrar as informações de login",
+      "esqueci minhas credenciais de login"
     ],
     "cancelaccount": [
-      "Como cancelar minha conta?",
-      "Onde eu cancelo minha conta?",
-      "Diga-me como cancelar minha conta",
-      "cancelar conta"
+      "cancelar minha conta",
+      "Eu gostaria de cancelar minha conta",
+      "Como eu cancelo minha conta.",
+      "cancelando uma conta",
+      "cancelar minha conta",
+      "preciso ter minha conta cancelada",
+      "suspender esta conta",
+      "como desativar a conta"  
     ],
     "deleteaccount": [
-      "Como excluir minha conta?",
-      "Onde eu excluo minha conta?",
+      "excluir minha conta",
+      "Onde eu excluo minha conta",
       "Desejo excluir minha conta",
-      "Desejo fechar minha conta",
-      "Diga-me como excluir minha conta",
-      "excluir conta"
+      "Diga-me como excluir minha conta.",
+      "fechar minha conta do IBM Cloud",
+      "finalizar minha conta de nuvem",
+      "remover minha conta",
+      "não preciso dessa conta. como posso excluí-la",
+      "fechar esta conta"
     ],
     "remove-pi": [
-      "Como remover meus dados pessoais?",
       "remover dados pessoais",
       "remover informações pessoais",
+      "remover minhas informações",
       "excluir dados pessoais",
       "excluir meus dados,",
       "apagar dados pessoais"
     ],
     "account-deactivated": [
-      "Por que minha conta está desativada?",
-      "Minha conta está desativada",
-      "Como reativar minha conta?",
-      "Por que minha conta foi desativada?"
+      "conta desativada",
+      "Minha conta do IBM Cloud está desativada",
+      "desativação da conta",
+      "Reativar minha conta",
+      "Por que minha conta foi desativada",
+      "minha conta foi desativada",
+      "reativar minha conta"
     ],
     "contactsupport": [
-      "Como obter suporte?",
-      "Onde está o suporte?",
-      "Como posso entrar em contato com o suporte?",
-      "Como obtenho ajuda?",
-      "Desejo entrar em contato com o suporte",
-      "Preciso de ajuda",
-      "Desejo falar com o suporte técnico.",
-      "suporte",
-      "ajuda"
+      "Como entrar em contato com o suporte",
+      "Onde está o suporte",
+      "Entre em contato com o suporte",
+      "Desejo entrar em contato com o suporte IBM",
+      "falar com o suporte técnico",
+      "conectar-me com o suporte"
     ],
     "freetrial": [
-      "Posso inscrever-me para uma avaliação grátis?",
-      "Há uma avaliação grátis?",
-      "Como obtenho uma avaliação grátis?",
+      "inscrever-me para uma avaliação grátis",
+      "Há uma avaliação grátis",
+      "Como obter uma avaliação grátis",
       "conta grátis do aluno",
       "conta do aluno",
       "avaliação grátis",
       "conta de educação"
     ],
     "al_login": [
-      "Como efetuar login com minha conta vinculada?",
-      "Onde eu efetuo login depois de vincular minha conta?",
-      "Efetuando login com uma conta vinculada"
+      "efetuar login com conta vinculada",
+      "efetuar login após vincular a conta",
+      "Efetuando login com uma conta vinculada",
+      "login da conta vinculada",
+      "conectar com a conta vinculada"
     ],
     "al_support": [
-      "Posteriormente, qual é o impacto do suporte?",
-      "Qual tipo de suporte eu obtenho depois de vincular minha conta?",
-      "Quanto suporte eu vou receber depois de vincular minha conta?",
-      "Depois de vincular minha conta, quanto suporte obterei?",
-      "impacto de suporte",
-      "impacto do suporte",
+      "que suporte eu obtenho com uma conta vinculada",
+      "suporte depois de vincular minha conta",
+      "Depois de vincular minha conta, quanto suporte eu obtenho",
+      "suporte de conta vinculada",
       "suporte após a vinculação da conta",
-      "suporte da conta vinculada"
+      "suporte da conta vinculada",
+      "contas vinculadas afetam o suporte"
     ],
     "al_morehelp": [
-      "Onde posso obter ajuda com a vinculação da minha conta?",
+      "Onde eu obtenho ajuda com a vinculação da minha conta",
       "Outras maneiras de vincular minha conta",
       "precisa de ajuda com a vinculação da minha conta",
       "ajuda da conta vinculada",
-      "Há outra maneira de obter ajuda com a vinculação da minha conta?"
+      "Há outra maneira de obter ajuda com a vinculação da minha conta",
+      "Não consigo vincular minha conta.",
+      "Problema ao vincular minha conta"
     ],
     "al_multacct": [
-      "E se eu tiver várias contas, como as vinculo?",
+      "como eu vinculo mais de uma conta",
+      "várias contas, como eu as vinculo",
       "vincular várias contas",
-      "vincular minhas contas",
+      "vincular todas as minhas contas",
       "vincular múltiplas contas",
       "Desejo vincular várias contas"
     ],
     "al_incent": [
       "incentivos para contas vinculadas",
-      "Quais são os incentivos para vincular as minhas contas?",
-      "Quais são os benefícios de vincular as minhas contas?",
-      "O que eu obtenho para vincular as minhas contas?",
-      "Existe valor em vincular minhas contas?",
-      "Por que devo vincular as minhas contas?"
+      "incentivos para vincular as minhas contas",
+      "benefícios de vincular as minhas contas",
+      "O que eu obtenho por vincular minhas contas",
+      "valor na vinculação de minhas contas",
+      "Por que devo vincular minhas contas",
+      "o que é uma conta vinculada"
     ],
     "al_owaffslacct": [
-      "Por que devo incluir os serviços da plataforma IBM Cloud na minha conta do SoftLayer?",
-      "O que eu obtenho se incluir serviços da plataforma IBM Cloud na minha conta do SoftLayer?",
-      "O que acontece com a minha conta do SoftLayer incluindo os serviços da plataforma IBM Cloud?",
+      "Por que devo incluir serviços da plataforma IBM Cloud na minha conta do SoftLayer",
+      "O que eu obtenho se incluir serviços da plataforma IBM Cloud na minha conta do SoftLayer",
+      "O que acontece com minha conta do SoftLayer incluindo serviços da plataforma IBM Cloud",
       "incluir o IBM Cloud no SoftLayer",
+      "conectar Softlayer e conta IBM",
       "combinando o IBM Cloud com o SoftLayer",
-      "conectando o IBM Cloud ao SoftLayer"
+      "conectando o IBM Cloud ao SoftLayer",
+      "diferença entre Softlayer e IBM Cloud"
     ],
     "al_howaffslmastacct": [
-      "O que acontece com meu ID da conta principal do SoftLayer depois de vincular minhas contas?",
-      "Qual é o impacto para o SoftLayer após eu vincular minhas contas?",
-      "E sobre o ID da minha conta principal com o SoftLayer?"
+      "O que acontece com meu ID da conta principal do SoftLayer depois de vincular minhas contas",
+      "Qual é o impacto para o SoftLayer depois de eu vincular minhas contas",
+      "E quanto ao meu ID da conta principal com o SoftLayer",
+      "conta vinculada e softlayer",
+      "ID de softlayer com uma conta vinculada"
     ],
     "accounts-owned": [
-      "Quais contas eu tenho?",
+      "Quais contas eu tenho",
       "Quais contas possuo",
       "Quantas contas eu tenho",
       "Em quais contas estou",
       "contas que possuo",
-      "Quero saber as contas em que estou",
-      "contas em que estou?",
-      "em quais contas estou",
-      "quais contas eu tenho",
+      "contas em que estou",
       "a quais contas estou afiliado",
       "quais contas estão no meu nome"
     ],
     "switch-between-accounts": [
       "alternar múltiplas contas",
       "mudar entre as contas",
-      "Posso alternar entre múltiplas contas?",
+      "Posso alternar entre várias contas",
       "alternando contas",
-      "Como alternar entre várias contas?"
+      "Como alternar entre várias contas",
+      "mudar para outra conta",
+      "alternar para uma conta diferente"
     ],
     "switch-account-owners": [
-      "Tenho permissão para alternar proprietários de contas?",
+      "alternar proprietários da conta",
       "mudar proprietários de contas",
-      "Como alternar proprietários de contas?",
       "alternar proprietário",
       "mudar proprietário",
-      "transferir proprietário"
+      "transferir a propriedade da minha conta",
+      "transferir propriedade da conta",
+      "dar minha conta para outra pessoa",
+      "transferência de propriedade",
+      "propriedade transferida"
     ],
     "batch-registration": [
-      "O IBM Cloud pode suportar o registro em lote de usuários?",
-      "O IBM Cloud suporta vários registros de usuários?",
+      "O IBM Cloud pode suportar o registro em lote de usuários",
+      "O IBM Cloud suporta diversos registros de usuários",
       "registrar muitos usuários",
       "registrar mais de um usuário",
-      "O IBM Cloud pode registrar múltiplos usuários?",
-      "O IBM Cloud é capaz de registrar mais de um usuário a cada vez?"
+      "O IBM Cloud pode registrar múltiplos usuários",
+      "O IBM Cloud é capaz de registrar mais de um usuário de cada vez",
+      "registro do usuário em lote",
+      "registrar múltiplos usuários de uma vez"
     ],
     "know-about-tags": [
-      "O que é uma tag?",
-      "Como uso as tags?",
-      "Como as tags são usadas?",
-      "O que são tags?"
+      "O que é uma tag",
+      "Como utilizo tags",
+      "Como as tags são usadas",
+      "O que são tags"
     ],
     "tags-visibility-account": [
-      "Quem pode ver as tags em uma conta?",
-      "Quem tem permissão para visualizar as tags em uma conta?",
-      "visualizar tags na conta"
+      "Quem pode ver as tags em uma conta",
+      "Quem tem permissão para visualizar as tags em uma conta",
+      "visualizar tags na conta",
+      "Posso ver as tags da conta"
     ],
     "permissions-add-remove-tags": [
-      "Quais permissões são necessárias para incluir ou remover tags?",
-      "Quais permissões são requeridas para incluir ou remover tags?",
-      "incluindo ou removendo tags"
+      "Quais permissões são necessárias para incluir ou remover tags",
+      "O que é necessário para incluir ou remover tags de recursos",
+      "Posso incluir ou remover uma tag",
+      "substituir uma tag",
+      "Eu não posso remover minha tag"
     ],
     "delete-tag": [
-      "Tenho permissão para excluir uma tag?",
-      "Como excluir uma tag?",
-      "Posso remover uma tag?",
-      "Posso me livrar de uma tag?",
+      "Tenho permissão para excluir uma tag",
+      "Como excluir uma tag",
+      "Posso remover uma tag",
+      "Posso eliminar uma tag",
       "excluindo uma tag",
       "removendo uma tag"
     ],
     "rename-tag": [
-      "Tenho permissão para renomear uma tag?",
-      "Como renomear uma tag?",
-      "Posso mudar o nome de uma tag?",
-      "Tenho permissão para mudar o nome de uma tag?",
-      "renomeando uma tag",
-      "mudando o nome da tag",
+      "renomear uma tag",
+      "mudar o nome de uma tag",
       "editar nome da tag"
     ],
     "nosecondreg": [
-      "Por que não é possível acessar um local diferente do IBM Cloud?",
+      "não é possível acessar um local diferente do IBM Cloud",
       "não é possível acessar um local diferente",
       "não é possível acessar locais diferentes",
-      "Por que não tenho permissão para acessar um local diferente do IBM Cloud?",
-      "Por que não posso usar um local diferente do IBM Cloud?"
+      "não é permitido acessar um local diferente do IBM Cloud",
+      "não é possível usar um local diferente do IBM Cloud",
+      "não é possível usar diferentes locais do IBM Cloud"
     ],
     "nosecondorg": [
-      "Por que não tenho permissão para criar uma nova organização?",
       "não é possível criar uma nova organização",
+      "não é possível criar uma nova organização",
+      "problemas ao criar uma nova organização",
       "tendo problemas ao criar uma nova organização",
-      "Por que não posso criar uma nova organização?",
-      "Por que não posso formar uma nova organização?"
+      "não é possível criar uma nova organização"
     ],
     "nosecondlite": [
       "não é possível criar uma nova instância do plano Lite",
-      "tendo problemas ao criar uma nova instância do plano Lite",
-      "Tenho permissão para criar uma nova instância do plano Lite?",
-      "Por que não posso formar uma nova instância do plano Lite?"
+      "não é possível criar uma nova instância do plano Lite",
+      "não é permitido criar uma nova instância do plano Lite",
+      "Por que não consigo formar uma nova instância do plano Lite",
+      "provisionar outro recurso de plano Lite",
+      "Não é possível provisionar a nova instância Lite",
+      "mais de uma instância de plano Lite"
     ],
     "noruntimemem": [
-      "Como eu reviso o abono de memória de tempo de execução?",
+      "revisar meu abono de memória de tempo de execução",
       "revisei meu abono de memória de tempo de execução",
-      "Como eu usei em excesso o meu abono de memória de tempo de execução?"
+      "usei muito do meu abono de memória de tempo de execução",
+      "excedido o limite de memória da organização",
+      "memória de tempo de execução da instância Lite"
     ],
     "ts_accnt_inactive": [
-      "Por que minha conta não está funcionando?",
-      "Por que minha conta foi desativada?",
+      "BXNUI0096E",
+      "O app não foi criado. Sua conta está inativa porque foi cancelada ou suspensa",
       "conta inativa",
       "conta não ativa",
-      "a conta não está funcionando corretamente"
+      "a conta não está ativada"
     ],
     "ts_adduser": [
-      "Por que não tenho permissão para incluir usuários em uma nova organização?",
+      "não é possível incluir usuários em uma organização",
+      "não é possível incluir usuários em minha organização",
       "incluindo usuários na organização",
       "incluir pessoas em uma organização",
-      "Posso incluir usuários em uma organização?",
-      "Quem tem permissão para incluir usuários em uma organização?",
-      "não é possível convidar o usuário",
-      "não é possível criar o usuário"
+      "Quem tem permissão para incluir usuários em uma organização",
+      "permissões da organização",
+      "Eu sou capaz de incluir usuários em uma organização",
+      "incluir outro usuário",
+      "incluir acesso de usuário"
     ],
     "ts_no_space": [
-      "Por que não há nenhum espaço associado à minha organização atual?",
-      "Onde estão os espaços associados à minha organização atual?",
-      "Por que não há espaços vinculados à minha organização atual?",
-      "Por que não há nenhum espaço conectado à minha organização atual?"
+      "BXNUI0097E",
+      "Antes de poder incluir um app, pelo menos um espaço deve ser associado à sua organização e região",
+      "nenhum espaço associado à minha organização atual",
+      "não é possível criar um app sem um espaço",
+      "sem espaços na minha organização",
+      "Onde estão os espaços associados à minha organização atual",
+      "nenhum espaço vinculado à minha organização atual"
     ],
     "ts_domain_diff": [
-      "compartilhando nomes de domínios",
-      "Quais apps compartilham um nome de domínio?",
-      "Quais tipos de apps compartilham um nome de domínio?",
+      "apps compartilhando nomes de domínio",
+      "Quais tipos de apps compartilham um nome de domínio",
       "tipos de apps que compartilham um domínio",
-      "Quais apps compartilham domínios?",
-      "Por que estou compartilhando um nome de domínio com alguns apps?"
+      "Quais apps compartilham domínios",
+      "diferentes apps compartilhando o nome de domínio"
     ],
     "ts_ui_org": [
-      "Os administradores podem usar o console para visualizar todas as organizações?",
-      "Administradores não têm permissão para usar o console para visualizar todas as organizações",
-      "Por que os administradores não podem usar o console para ver todas as organizações?",
-      "Quem pode usar o console para visualizar todas as organizações?"
+      "Não é possível visualizar todas as organizações",
+      "Administradores não podem ver organizações no console",
+      "o administrador não pode visualizar organizações",
+      "como posso gerenciar todas as minhas organizações",
+      "usar o console para ver todas as minhas organizações"
     ],
     "ts_addcc": [
       "não é capaz de incluir o meu cartão de crédito",
       "não é possível incluir um cartão de crédito",
-      "Por que não tenho permissão para incluir as informações do meu cartão de crédito?",
-      "tendo problemas para incluir um cartão de crédito",
+      "não é permitido incluir as informações de meu cartão de crédito",
+      "problemas ao incluir um cartão de crédito",
       "o cartão de crédito não está sendo incluído",
-      "o cartão de crédito não incluirá informações"
+      "o cartão de crédito não incluirá informações",
+      "não é possível incluir opções de pagamento",
+      "não é possível incluir método de pagamento",
+      "não é possível registrar meu cartão de crédito"
     ],
     "ts_logintobm": [
-      "Por que a minha senha está incorreta?",
-      "Desejo reconfigurar minha senha",
-      "Por que não posso efetuar login com minha nova senha?",
       "minha senha está errada",
       "senha incorreta",
       "senha errada",
       "não é possível usar minha senha",
-      "a senha não está funcionando"
+      "a senha não está funcionando",
+      "A senha inserida não está correta"
     ],
     "ts_old_username": [
-      "Por que meu IBMid ou e-mail não foi reconhecido?",
-      "Por que meu IBMid ou e-mail não está sendo reconhecido?",
+      "IBMid ou e-mail sendo reconhecido",
       "não reconhecendo meu IBMid ou e-mail",
       "meu ID não está sendo reconhecido",
-      "Por que meu ID não foi reconhecido?"
+      "ID não reconhecido",
+      "IBMiD não está funcionando",
+      "Nós não reconhecemos esse IBMid ou e-mail",
+      "esqueci meu ID de usuário"
     ],
     "ts_unabletologin": [
-      "Por que meu IBMid não está sendo reconhecido com nenhuma conta do IBM Cloud?",
-      "Por que meu IBMid não está conectado a nenhuma conta do IBM Cloud?",
-      "Por que meu IBMid não está vinculado a nenhuma conta do IBM Cloud?",
-      "Por que minhas contas do IBM Cloud não estão associadas ao meu IBMid?",
-      "ID não associado às contas"
+      "IBMid não conectado a nenhuma conta do IBM Cloud",
+      "IBMid não vinculado a nenhuma conta do IBM Cloud",
+      "Contas do IBM Cloud não associadas ao meu IBMid",
+      "ID não associado às contas",
+      "Você chegou a esta página porque sua autenticação foi bem-sucedida, no entanto, esse IBMid não está associado a nenhuma conta do IBM Cloud"
     ],
     "ts_login_stalls": [
-      "Por que o console não está abrindo com meu IBMid?",
+      "não é possível abrir o console após o login",
       "o console não será aberto quando eu efetuar login",
       "console não abrindo",
-      "o console não está abrindo",
+      "o console não será aberto",
       "o console não abre após efetuar login"
     ],
     "ts_login_ibmid": [
-      "Por que meu login do IBMid não deu certo?",
-      "Por que meu login do IBMid não é concluído?",
+      "O login do IBMid não será passado",
+      "não é possível efetuar login com o IBMId",
       "login não concluído",
       "o login não está concluindo",
       "o login não está sendo concluído",
-      "Por que meu login do IBMid não foi concluído?"
+      "meu último login do IBMid não foi concluído",
+      "não é possível concluir o login",
+      "não é possível efetuar login na minha conta",
+      "efetuar login não funciona"
     ],
     "ts_accntpding": [
       "Depois de registrar uma conta, não consigo efetuar login imediatamente.",
-      "não permitindo que eu efetue login imediatamente após o registro",
+      "não está me deixando efetuar login imediatamente após fazer uma conta",
       "não é possível efetuar login após o registro de uma conta",
-      "não é possível efetuar login após o registro da conta"
+      "não é possível efetuar login após o registro da conta",
+      "não é possível efetuar login após criar uma conta",
+      "efetuar login após a inscrição para o IBM Cloud",
+      "não é possível entrar na minha conta depois de me inscrever",
+      "Sua conta está pendente"
     ],
     "ts_err": [
-      "Por que estou encontrando páginas que não carregam?",
-      "Por que estou vendo páginas do console que não estão carregando?",
-      "Por que as páginas do console não estão carregando?",
+      "páginas que não carregam",
+      "páginas interrompidas no console",
+      "não vendo algumas páginas do console",
+      "páginas do console não carregando",
       "não é possível carregar páginas do console",
-      "não carregando páginas do console"
+      "não carregando páginas do console",
+      "BXNUI0001E",
+      "A página não foi carregada porque o IBM Cloud não detectou se uma sessão existe",
+      "BXNUI0016E",
+      "Os apps e serviços não foram recuperados porque uma página do IBM Cloud não foi carregada"
     ]
 }

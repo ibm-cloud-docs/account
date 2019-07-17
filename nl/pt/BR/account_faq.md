@@ -27,7 +27,12 @@ As perguntas mais frequentes para seu {{site.data.keyword.cloud}} podem incluir 
 {: #create-account}
 {: faq}
 
-Acesse [{{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo") e clique em **Criar uma conta do {{site.data.keyword.Bluemix_notm}}** para criar uma conta Lite que nunca expira. Veja [Conta Lite](/docs/account?topic=account-liteaccount#liteaccount) para obter mais detalhes sobre os recursos incluídos.
+Acesse
+[{{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com){: new_window}![Ícone de link externo](../icons/launch-glyph.svg "Íconede link externo") e clique em
+
+**Criar uma conta do
+{{site.data.keyword.Bluemix_notm}}** para criar uma conta Lite
+que nunca expira. Veja [Conta Lite](/docs/account?topic=account-liteaccount#liteaccount) para obter mais detalhes sobre os recursos incluídos.
 
 
 ## Como resolver erros que ocorrem ao criar minha conta?
@@ -190,7 +195,12 @@ Clique em **Suporte** na barra de menus do console para acessar o Centro de Supo
 {: #freetrial}
 {: faq}
 
-As contas para teste do {{site.data.keyword.Bluemix_notm}} estão disponíveis para professores e estudantes de instituições acadêmicas credenciadas. Para se qualificar para uma conta para teste, acesse [Aproveitar o poder da IBM![Ícone de link externo](../icons/launch-glyph.svg)](https://onthehub.com/ibm/){: new_window} e valide suas credenciais da instituição.
+As contas Lite do {{site.data.keyword.Bluemix_notm}} fornecem acesso aos
+serviços do plano Lite grátis. É possível usar esses serviços por quanto tempo você
+desejar sem ser cobrado e sua conta nunca expira. [Inscreva-se para obter uma conta Lite](https://{DomainName}/registration).
+
+As contas para teste do {{site.data.keyword.Bluemix_notm}} estão disponíveis para professores e estudantes de instituições acadêmicas credenciadas. Para se qualificar para uma conta para teste, acesse [Aproveitar o poder da IBM![Ícone de link externo](../icons/launch-glyph.svg)](https://ibm.biz/academic){: new_window} e valide suas credenciais da instituição. Diferentemente das contas Lite, as contas para teste expiram após o término do período de
+avaliação.
 
 ## Depois de vincular minha conta, como efetuar login?
 {: #al_login}
