@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-07-08"
 
 keywords: organizing resource group, account best practices, best practices account
 
@@ -102,4 +102,4 @@ subcollection: account
 
 ## 後續步驟
 
-針對您帳戶中，需要對資源和資源群組具有相同存取權的使用者及服務 ID 設定存取群組。您可以指派最小數目的存取原則，進而節省時間。如需相關資訊，請參閱[指派存取權的最佳作法](/docs/iam?topic=iam-cfaccess)。
+針對您帳戶中，需要對資源和資源群組具有相同存取權的使用者及服務 ID 設定存取群組。您可以指派最小數目的存取原則，進而節省時間。如需相關資訊，請參閱[指派存取權的最佳作法](/docs/iam?topic=iam-account_setup)。

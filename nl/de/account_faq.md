@@ -187,7 +187,9 @@ Klicken Sie auf **Support** in der Menüleiste der Konsole, um das Support Cente
 {: #freetrial}
 {: faq}
 
-Für Fakultätsmitglieder und Studierende akkreditierter akademischer Einrichtungen sind {{site.data.keyword.Bluemix_notm}}-Testkonten erhältlich. Um sich für ein solches Testkonto zu qualifizieren, rufen Sie die Seite [Nutzen Sie das Potenzial von IBM ![Symbol für externen Link](../icons/launch-glyph.svg)](https://onthehub.com/ibm/){: new_window} auf und validieren Sie die Berechtigungsnachweise für Ihre Einrichtung.
+{{site.data.keyword.Bluemix_notm}} Lite-Konten bieten Zugriff auf die Services im Rahmen der kostenfreien Lite-Konten. Sie können diese Services für einen unbegrenzten Zeitraum kostenfrei nutzen und für das Konto gilt kein Ablaufdatum. [Registrierung für ein Lite-Konto durchführen](https://{DomainName}/registration). 
+
+Für Fakultätsmitglieder und Studierende akkreditierter akademischer Einrichtungen sind {{site.data.keyword.Bluemix_notm}}-Testkonten erhältlich. Um sich für ein solches Testkonto zu qualifizieren, rufen Sie die Seite [Nutzen Sie das Potenzial von IBM ![Symbol für externen Link](../icons/launch-glyph.svg)](https://ibm.biz/academic){: new_window} auf und validieren Sie die Berechtigungsnachweise für Ihre Einrichtung. Im Gegensatz zu Lite-Konten laufen Testkonten nach dem Ende des Testzeitraums ab. 
 
 ## Wie melde ich mich an, nachdem ich mein Konto verknüpft habe?
 {: #al_login}

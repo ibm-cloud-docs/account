@@ -187,7 +187,9 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 {: #freetrial}
 {: faq}
 
-{{site.data.keyword.Bluemix_notm}} 試用帳戶可在認證合格的學術機構中提供給教職師及學生。若要符合試用帳戶的資格，請移至 [Harness the Power of IBM ![外部鏈結圖示](../icons/launch-glyph.svg)](https://onthehub.com/ibm/){: new_window}，並驗證機構認證。
+{{site.data.keyword.Bluemix_notm}} 精簡帳戶可用來存取免費的精簡方案服務。只要您想要便可以一直使用這些服務，且不會被收費，您的帳戶也永不到期。[註冊精簡帳戶](https://{DomainName}/registration)。
+
+{{site.data.keyword.Bluemix_notm}} 試用帳戶可在認證合格的學術機構中提供給教職師及學生。若要符合試用帳戶的資格，請移至 [Harness the Power of IBM ![外部鏈結圖示](../icons/launch-glyph.svg)](https://ibm.biz/academic){: new_window}，並驗證機構認證。與精簡帳戶不同，試用帳戶會在其試用期間結束之後到期。
 
 ## 鏈結我的帳戶之後，要如何登入？
 {: #al_login}

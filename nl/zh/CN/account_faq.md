@@ -187,7 +187,9 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 {: #freetrial}
 {: faq}
 
-{{site.data.keyword.Bluemix_notm}} 试用帐户适用于经认可的学术机构的教师和学生。要获得使用试用帐户的资格，请转至 [Harness the Power of IBM ![外部链接图标](../icons/launch-glyph.svg)](https://onthehub.com/ibm/){: new_window}，并验证您的机构凭证。
+{{site.data.keyword.Bluemix_notm}} 轻量帐户提供对免费轻量套餐服务的访问权。您可以在不收取任何费用的情况下使用这些服务任意长的时间，并且您的帐户永不到期。[注册轻量帐户](https://{DomainName}/registration)。
+
+{{site.data.keyword.Bluemix_notm}} 试用帐户适用于经认可的学术机构的教师和学生。要获得使用试用帐户的资格，请转至 [Harness the Power of IBM ![外部链接图标](../icons/launch-glyph.svg)](https://ibm.biz/academic){: new_window}，并验证您的机构凭证。与轻量帐户不同，试用帐户在试用期结束后到期。
 
 ## 链接帐户后，如何登录？
 {: #al_login}

@@ -20,7 +20,7 @@ subcollection: account
 # アカウントに関する FAQ
 {: #accountfaqs}
 
-{{site.data.keyword.cloud}} に関する FAQ には、ライト・アカウント、ユーザーの再割り当て、アカウント・エラー、またはアカウント・タグについての質問が含まれていることがあります。{{site.data.keyword.cloud_notm}} に関するすべての FAQ を見つけるには、FAQ ライブラリーを参照してください。
+{{site.data.keyword.cloud}} に関する FAQ には、ライト・アカウント、ユーザーの再割り当て、アカウント・エラー、またはアカウント・タグについての質問が含まれていることがあります。 {{site.data.keyword.cloud_notm}} に関するすべての FAQ を見つけるには、FAQ ライブラリーを参照してください。
 {: shortdesc}
 
 ## アカウントを作成するには、どのようにすればよいですか?
@@ -187,7 +187,9 @@ IBM によるお客様の個人情報の取り扱いについて詳しくは、[
 {: #freetrial}
 {: faq}
 
-認定された学術機関の教師および生徒は {{site.data.keyword.Bluemix_notm}} トライアル・アカウントを使用できます。 トライアル・アカウントの資格を得るには、[Harness the Power of IBM ![外部リンク・アイコン](../icons/launch-glyph.svg)](https://onthehub.com/ibm/){: new_window} にアクセスし、機関の資格情報を検証します。
+{{site.data.keyword.Bluemix_notm}} ライト・アカウントでは、無料のライト・プラン・サービスにアクセスできます。課金されることなくこれらのサービスを必要な期間使用することができ、アカウントの有効期限が切れることはありません。[ライト・アカウントに登録](https://{DomainName}/registration)してください。
+
+認定された学術機関の教師および生徒は {{site.data.keyword.Bluemix_notm}} トライアル・アカウントを使用できます。 トライアル・アカウントの資格を得るには、[Harness the Power of IBM ![外部リンク・アイコン](../icons/launch-glyph.svg)](https://ibm.biz/academic){: new_window} にアクセスし、ご自身の機関の資格情報を検証します。ライト・アカウントとは異なり、トライアル・アカウントは試用期間が終了すると有効期限が切れます。
 
 ## アカウントをリンクした後、ログインするにはどうすればよいですか?
 {: #al_login}

@@ -27,6 +27,7 @@
     修改帳戶設定
         account_settings.md
         eu_hipaa_supported.md
+        vrf-service-endpoint.md
         contact_info.md
         email.md
 
@@ -49,6 +50,7 @@
 
     {: .navgroup id="reference"}
     monitoring.md
+    [指令參考資料](/cli/cloud-cli-ibmcloud_commands_account)
     {: .navgroup-end}
 
     {: .navgroup id="help"}

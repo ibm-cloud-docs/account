@@ -27,6 +27,7 @@ Eigenes Konto verwalten
     Kontoeinstellungen ändern
         account_settings.md
         eu_hipaa_supported.md
+        vrf-service-endpoint.md
         contact_info.md
         email.md
 
@@ -49,6 +50,7 @@ Eigenes Konto verwalten
 
     {: .navgroup id="reference"}
     monitoring.md
+    [Befehlsreferenz](/cli/cloud-cli-ibmcloud_commands_account)
     {: .navgroup-end}
 
     {: .navgroup id="help"}

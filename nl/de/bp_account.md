@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-07-08"
 
 keywords: organizing resource group, account best practices, best practices account
 
@@ -102,4 +102,4 @@ Weitere Informationen dazu, welche Ressourcen mit Tags gekennzeichnet werden kö
 
 ## Nächste Schritte
 
-Richten Sie Zugriffsgruppen für die Benutzer und Service-IDs ein, die denselben Zugriff auf Ressourcen und Ressourcengruppen in Ihrem Konto benötigen. Sie können eine sehr geringe Anzahl von Zugriffsrichtlinien zuweisen, wodurch Sie Zeit sparen. Weitere Informationen enthält [Bewährte Verfahren für die Zuweisung von Zugriff](/docs/iam?topic=iam-cfaccess).
+Richten Sie Zugriffsgruppen für die Benutzer und Service-IDs ein, die denselben Zugriff auf Ressourcen und Ressourcengruppen in Ihrem Konto benötigen. Sie können eine sehr geringe Anzahl von Zugriffsrichtlinien zuweisen, wodurch Sie Zeit sparen. Weitere Informationen enthält [Bewährte Verfahren für die Zuweisung von Zugriff](/docs/iam?topic=iam-account_setup).

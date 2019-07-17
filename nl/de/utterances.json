@@ -1,44 +1,39 @@
 {
     "create-account": [
-      "Wie erstelle ich ein Konto?",
-      "Was muss ich tun, um ein Konto zu erstellen?",
-      "Wie registriere ich mich für IBM Cloud",
       "Konto erstellen",
-      "Vorgehensweise Konto erstellen",
       "Cloudkonto erstellen",
-      "Für ein Konto registrieren",
-      "Wie kann ich ein Konto erstellen",
-      "Ich möchte ein Konto erstellen",
-      "Ich würde gerne ein Konto erstellen",
-      "Zeig mir, wie ich ein Konto erstelle"
+      "Registrierung für ein Konto",
+      "Registrierung für IBM Cloud",
+      "Erstellen eines Kontos",
+      "Konto in IBM Cloud erstellen"
     ],
     "account-error": [
-      "Fehler beheben, die auftreten, wenn ich mein Cloudkonto erstelle",
+      "Fehler beim Erstellen des Kontos beheben",
       "Kontoprobleme beheben",
       "Kontofehler während Registrierung beheben",
       "Fehler beim Registrieren für IBM Cloud",
-      "Kontofehler beheben",
-      "Ich bekomme Fehler bei meinem Konto",
-      "Ich kann mein Konto nicht erstellen",
-      "Erstellung meines Kontos schlägt fehl",
-      "Ich bin nicht in der Lage, ein Konto zu erstellen",
-      "Ich kann kein Konto erstellen",
+      "Erstellen eines Cloud-Kontos nicht möglich",
+      "Kontoerstellung fehlgeschlagen",
+      "Erstellen eines IBM Cloud-Kontos nicht möglich",
+      "Erstellen eines Kontos nicht möglich",
       "Fehler beim Erstellen meines Kontos"
     ],
     "cloud-foundry": [
       "Was ist Cloud Foundry",
-      "Was macht Cloud Foundry",
+      "Funktionsweise von Cloud Foundry",
       "Ist Cloud Foundry eine Plattform",
-      "Ich möchte mehr über Cloud Foundry lernen",
-      "Erzähl mir mehr über Cloud Foundry"
+      "Informationen zu Cloud Foundry",
+      "Details zur Cloud Foundry"
     ],
     "move-org-diff-account": [
-      "Organisation zu einem anderen Konto umziehen",
+      "Organisation zu einem anderen Konto versetzen",
       "Mit einer Organisation zu einem anderen Konto wechseln",
-      "Wie ziehe ich Organisationen um",
-      "Kann ich eine Organisation zu einem anderen Konto umziehen",
-      "Ist es möglich, Organisationen in ein anderes Konto zu übertragen",
-      "Kann ich Organisationen zwischen Konten umziehen"
+      "Organisationen in ein anderes Konto versetzen",
+      "Organisation ändern",
+      "Organisation zwischen Konten transferieren",
+      "Kann ich eine Organisation in ein anderes Konto versetzen",
+      "Organisationen an ein anderes Konto transferieren",
+      "Können Organisationen zwischen Konten transferiert werden"
     ],
     "whichregions": [
       "Welche Regionen sind für Cloud Foundry verfügbar",
@@ -48,15 +43,17 @@
       "Cloud Foundry-Regionen"
     ],
     "whatisliteplan": [
-      "Was ist ein Lite-Konto",
-      "Was ist ein Lite-Plan",
-      "Welche Vorteile hat ein Lite-Plan",
-      "Was kostet ein Lite-Plan",
+      "Lite-Konto",
+      "Lite-Plan",
+      "Preisstruktur von Lite-Plänen",
+      "Vorteile eines Lite-Plans",
+      "Kosten eines Lite-Plans",
       "Wie viel kostet ein Lite-Plan",
-      "Muss ich für einen Lite-Plan zahlen",
-      "Ist ein Lite-Plan kostenlos?",
+      "Ist ein Lite-Plan kostenpflichtig",
+      "Ist ein Lite-Plan kostenfrei",
       "Ich möchte mehr über Lite-Pläne wissen",
-      "Erzähl mir mehr über Lite-Pläne"
+      "Details zu Lite-Plänen",
+      "Lite-Plan für Services"
     ],
     "monthlyquota": [
       "Gibt es ein Kontingent für einen Lite-Plan",
@@ -66,355 +63,408 @@
       "Gelten Kontingente pro Monat",
       "Gelten Kontingente pro Instanz",
       "Werden Kontingente monatlich zurückgesetzt",
-      "Lite-Plan monatliche Kontingente"
+      "Monatliche Lite-Plan-Kontingente"
     ],
     "accounts-service-removal": [
-      "Wie kann ich einen Service aus meinem Konto löschen?",
-      "Wie kann ich einen Server aus meinem Konto löschen?",
-      "Wie lösche ich einen Service aus meinem Konto?",
+      "Wie kann ich einen Service aus meinem Konto löschen",
+      "Wie kann ich einen Server aus meinem Konto entfernen",
+      "Wie lösche ich einen Service aus meinem Konto",
       "Ein Service soll entfernt werden, da er nicht genutzt wird.",
-      "Kann ich diesen Server aus meinem Konto löschen?",
+      "Kann ich diesen Server aus meinem Konto löschen",
       "Ich möchte das SSL-Zertifikat für mein Konto stornieren.",
       "Service von meinem Konto entfernen"
     ],
     "resourcelimit": [
-      "Wie viele Ressourcengruppen kann ich erstellen",
-      "Gibt es ein Limit für die Anzahl von Ressourcengruppen, die ich erstellen kann",
+      "Anzahl der Ressourcengruppen",
+      "Grenzwert für Anzahl der Ressourcengruppen",
       "Wie viele Organisationen kann ich erstellen",
-      "Gibt es ein Limit für die Anzahl von Organisationen, die ich erstellen kann",
-      "Wie viele Bereiche kann ich erstellen",
-      "Gibt es ein Limit für die Anzahl von Bereichen, die ich erstellen kann"
+      "Begrenzung der Anzahl von Ressourcengruppen",
+      "Anzahl der Bereiche",
+      "Begrenzung der Anzahl von Bereichen",
+      "Organisationsgrenzwerte",
+      "Ressourcengruppengrenzwerte",
+      "Cloud Foundry-Bereichsgrenzwerte"
     ],
     "changeacct": [
-      "Wie kann ich mein Konto upgraden",
-      "Wie kann ich mein Konto ändern",
-      "Kann ich mein Konto upgraden",
-      "Mein Konto upgraden",
-      "Ist ein Upgrade für mein Konto möglich",
-      "Wie ändere ich meinen Kontotyp",
-      "Sag mir, wie ich meinen Kontotyp upgrade",
-      "Ich will mein Konto upgraden",
-      "Was muss ich tun, um meinen Kontotyp zu ändern",
-      "Wo ändere ich mein konto?",
-      "Wie kann ich mein Konto konvertieren?",
-      "Ich will meinen Kontotyp wechseln",
+      "Upgrade für Kontotyp",
+      "Kontoplan ändern",
+      "Upgrade für Kontoplan",
+      "Upgrade für IBM Cloud-Konto",
+      "Cloud-Konto konvertieren",
+      "Kontotyp ändern",
+      "Upgrade auf ein kostenpflichtiges Konto",
+      "Plan ändern",
+      "Upgrade für Lite-Konto",
+      "Kontotyp wechseln",
       "Upgrade auf Abonnement",
       "Upgrade auf nutzungsabhängiges Konto"
     ],
     "nochange": [
       "Sind meine Instanzen nach dem Upgrade verfügbar",
-      "Verliere ich meine alten Instanzen, wenn ich ein Upgrade für mein Konto durchführen",
-      "Kann ich meine vorhandenen Services weiter verwenden, nachdem ich meinen Kontotyp geändert habe",
+      "Gehen bei einem Upgrade für mein Konto Instanzen verloren",
+      "Weiterverwenden der vorhandenen Services nach dem ändern des Kontotyps",
       "Was passiert mit meinen vorhandenen Instanzen nach dem Upgrade meines Kontos"
     ],
     "updatepayment": [
-      "Wie ändere ich meine Kreditkarteinformationen",
-      "Sag mir, wie ich meine Kreditkarte bearbeiten kann",
-      "Ich will meine Kreditkarteinformationen aktualisieren",
-      "Ich würde gerne meine Kreditkarte ändern",
-      "Wie kann ich meine Zahlungsoptionen bearbeiten",
-      "Wo ändere ich meine Zahlungsoptionen"
+      "Kreditkarteninformationen ändern",
+      "Meine Kreditkarte bearbeiten",
+      "Meine Kreditkarteninformationen aktualisieren",
+      "Meine Kreditkarte ändern",
+      "Meine Zahlungsoptionen bearbeiten",
+      "Meine Zahlungsoptionen ändern",
+      "Zahlungsdetails aktualisieren"
     ],
     "change-email-prefs": [
-      "Wie kann ich meine E-Mail-Vorgaben ändern",
+      "E-Mail-Vorgaben ändern",
       "E-Mail-Benachrichtigungen",
-      "E-Mail-Benachrichtigungen stoppen"
+      "E-Mail-Benachrichtigungen stoppen",
+      "Benachrichtigungseinstellungen",
+      "Abonnement für E-Mail-Benachrichtigungen beenden"
     ],
     "reset-password": [
-      "Wie kann ich mein Kennwort zurücksetzen?",
-      "Ich will mein Kontokennwort ändern",
-      "Wo setze ich mein VPN-Kennwort zurück?",
-      "Wie kann ich mein Kontokennwort aktualisieren?",
-      "Was muss ich tun, um mein VPN-Kennwort zu aktualisieren?",
-      "Neues Kontokennwort",
-      "Neues VPN-Kennwort"
+      "Kennwort zurücksetzen",
+      "Kennwort für mein Konto ändern",
+      "VPN-Kennwort zurücksetzen",
+      "Kennwort aktualisieren",
+      "VPN-Kennwort aktualisieren",
+      "Neues IBM Cloud-Kontokennwort",
+      "Neues VPN-Kennwort",
+      "Kennwort vergessen",
+      "IBM Cloud-Kennwort ersetzen",
+      "Anmeldeinformationen vergessen",
+      "Anmeldeberechtigungsnachweise vergessen"
     ],
     "cancelaccount": [
-      "Wie kann ich mein Konto kündigen?",
-      "Wo kündige ich mein Konto?",
-      "Sag mir, wie ich mein Konto kündige",
-      "Konto kündigen"
+      "Konto stornieren",
+      "Ich möchte mein Konto stornieren",
+      "Stornieren des Kontos",
+      "Stornieren eines Kontos",
+      "Konto stornieren",
+      "Stornierung des Kontos erforderlich",
+      "Dieses Konto aussetzen",
+      "Inaktivieren des Kontos"  
     ],
     "deleteaccount": [
-      "Wie kann ich mein Konto löschen?",
-      "Wo lösche ich mein Konto?",
+      "Mein Konto löschen",
+      "Löschen meines Kontos",
       "Ich will mein Konto löschen",
-      "Ich will mein Konto schließen",
-      "Sag mir, wie ich mein Konto lösche",
-      "Konto löschen"
+      "Informationen zum Löschen des Kontos",
+      "IBM Cloud-Konto schließen",
+      "Cloud-Konto beenden",
+      "Konto entfernen",
+      "Dieses Konto wird nicht benötigt. Informationen zum Löschen",
+      "Dieses Konto schließen"
     ],
     "remove-pi": [
-      "Wie kann ich meine personenbezogenen Daten entfernen?",
       "Personenbezogene Daten entfernen",
       "Personenbezogene Informationen entfernen",
+      "Meine Informationen entfernen",
       "Personenbezogene Daten löschen",
       "Meine Daten löschen",
       "Personenbezogene Daten löschen"
     ],
     "account-deactivated": [
-      "Warum ist mein Konto inaktiviert?",
-      "Mein Konto ist inaktiviert",
-      "Wie reaktiviere ich mein Konto?",
-      "Warum wurde mein Konto inaktiviert?"
+      "Konto inaktiviert",
+      "Mein IBM Cloud-Konto ist inaktiviert",
+      "Kontoinaktivierung",
+      "Konto reaktivieren",
+      "Warum wurde mein Konto inaktiviert",
+      "Konto wurde inaktiviert",
+      "Reaktivieren des Kontos"
     ],
     "contactsupport": [
-      "Wie erhalte ich Unterstützung?",
-      "Wo finde ich Unterstützung?",
-      "Wie kann ich den Support kontaktieren?",
-      "Wie bekomme ich Hilfe?",
-      "Ich will den Support kontaktieren",
-      "Ich brauche Hilfe",
-      "Ich will mit dem technischen Support sprechen",
-      "Unterstützung",
-      "Hilfe"
+      "Support kontaktieren",
+      "Support anfordern",
+      "Kontaktaufnahme mit Support",
+      "IBM Support kontaktieren",
+      "Technischen Support kontaktieren",
+      "Verbindung mit Support aufnehmen"
     ],
     "freetrial": [
-      "Kann ich eine Registrierung für eine kostenfreie Testversion durchführen?",
-      "Gibt es eine kostenlose Testversion?",
-      "Wie erhalte ich einen kostenlose Testversion?",
-      "Kostenloses Konto für Studierende",
+      "Registrierung für kostenfreie Testversion",
+      "Ist eine kostenfreie Testversion verfügbar",
+      "Wie erhalte ich eine kostenlose Testversion",
+      "Kostenfreies Konto für Studierende",
       "Konto für Studierende",
-      "kostenlose Testversion",
+      "Kostenfreie Testversion",
       "Ausbildungskonto"
     ],
     "al_login": [
-      "Wie melde ich mich mit meinem verknüpften Konto an?",
-      "Wo melde ich mich an, nachdem ich mein Konto verknüpft habe?",
-      "Mit verknüpftem Konto anmelden"
+      "Anmeldung mit verknüpftem Konto",
+      "Anmeldung nach dem Verknüpfen des Kontos",
+      "Mit verknüpftem Konto anmelden",
+      "Verknüpftes Konto für die Anmeldung verwenden",
+      "Anmelden mit verknüpftem Konto"
     ],
     "al_support": [
-      "Wie sieht es mit der Unterstützung im Anschluss aus?",
-      "Welche Art von Unterstützung erhalte ich, nachdem ich mein Konto verknüpft habe?",
-      "Wie viel Unterstützung erhalte ich, nachdem ich mein Konto verknüpft habe?",
-      "Nachdem ich mein Konto verknüpft habe, wie viel Unterstützung werde ich bekommen?",
-      "Auswirkung auf die Unterstützung",
-      "Auswirkung der Unterstützung",
+      "Welche Unterstützung erhalte ich mit einem verknüpften Konto",
+      "Support nach dem Verknüpfen des Kontos",
+      "Welche Unterstützung erhalte ich nach dem Verknüpfen des Kontos",
+      "Support für verknüpftes Konto",
       "Unterstützung nach dem Verknüpfen des Kontos",
-      "Unterstützung von verknüpftem Konto"
+      "Unterstützung für verknüpftes Konto",
+      "Auswirkungen von verknüpften Konten auf die Unterstützung"
     ],
     "al_morehelp": [
-      "Wo bekomme ich Hilfe beim Verknüpfen meines Kontos?",
-      "Andere Wege, mein Konto zu verknüpfen",
-      "Brauche Hilfe beim Verknüpfen meines Kontos",
-      "Verknüpftes Konto Hilfe",
-      "Gibt es eine andere Möglichkeit, Hilfe beim Verknüpfen meines Kontos zu erhalten?"
+      "Wo erhalte ich Hilfe beim Verknüpfen meines Kontos",
+      "Andere Möglichkeiten zum Verknüpfen meines Kontos",
+      "Hilfe beim Verknüpfen meines Kontos",
+      "Hilfe für verknüpftes Konto",
+      "Gibt es eine andere Möglichkeit, Hilfe beim Verknüpfen meines Kontos zu erhalten",
+      "Verknüpfen meines Kontos nicht möglich",
+      "Probleme beim Verknüpfen meines Kontos"
     ],
     "al_multacct": [
-      "Wenn ich mehrere Konten habe, wie verknüpfe ich sie?",
-      "Mehrere Konten miteinander verknüpfen",
-      "Meine Konten verknüpfen",
+      "Mehr als ein Konto verknüpfen",
+      "Wie funktioniert das Verknüpfen mehrerer Konten",
       "Mehrere Konten verknüpfen",
+      "Alle Konten verknüpfen",
+      "Verknüpfen mehrerer Konten",
       "Ich möchte mehrere Konten verknüpfen"
     ],
     "al_incent": [
       "Anreize für verknüpfte Konten",
-      "Welche Anreize zum Verknüpfen meiner Konten gibt es?",
-      "Welche Vorteile hat das Verknüpfen meiner Konten?",
-      "Was bekomme ich für das Verknüpfen meiner Konten?",
-      "Welchen Wert hat das Verknüpfen meiner Konten?",
-      "Warum sollte ich meine Konten verknüpfen?"
+      "Anreize für die Verknüpfung meiner Konten",
+      "Vorteile der Verknüpfung meiner Konten",
+      "Welche Vorteile bietet das Verknüpfen meiner Konten",
+      "Vorteile von verknüpften Konten",
+      "Gründe für das Verknüpfen von Konten",
+      "Was ist ein verknüpftes Konto"
     ],
     "al_owaffslacct": [
-      "Warum sollte ich IBM Cloud-Plattformservices zu meinem SoftLayer-Konto hinzufügen?",
-      "Was bekomme ich dafür, IBM Cloud-Plattformservices zu meinem SoftLayer-Konto hinzuzufügen?",
-      "Was passiert mit meinem SoftLayer-Konto, wenn IBM Cloud-Plattformservices hinzugefügt werden?",
+      "Warum sollte ich IBM Cloud-Plattformservices zu meinem SoftLayer-Konto hinzufügen",
+      "Was bekomme ich dafür, IBM Cloud-Plattformservices zu meinem SoftLayer-Konto hinzuzufügen",
+      "Was passiert mit meinem SoftLayer-Konto, wenn IBM Cloud-Plattformservices hinzugefügt werden",
       "IBM Cloud zu SoftLayer hinzufügen",
+      "SoftLayer- und IBM Konto verbinden",
       "IBM Cloud mit SoftLayer kombinieren",
-      "IBM Cloud SoftLayer anhängen"
+      "IBM Cloud SoftLayer anhängen",
+      "Unterschied zwischen Softlayer und IBM Cloud"
     ],
     "al_howaffslmastacct": [
-      "Was passiert mit meiner SoftLayer-Stammkonto-ID nach dem Verknüpfen meiner Konten?",
-      "Welche Auswirkung hat das Verknüpfen meiner Konten auf SoftLayer?",
-      "Was passiert mit meiner Stammkonto-ID für SoftLayer?"
+      "Was passiert mit meiner SoftLayer-Stammkonto-ID nach dem Verknüpfen meiner Konten",
+      "Welche Auswirkung hat das Verknüpfen meiner Konten auf SoftLayer",
+      "Was passiert mit meiner Stammkonto-ID für SoftLayer",
+      "Verknüpfte Konto und SoftLayer",
+      "SoftLayer-ID mit einem verknüpften Konto"
     ],
     "accounts-owned": [
-      "Über welche Konten verfüge ich?",
-      "Für welche Konten bin ich der Eigner?",
-      "Über wie viele Konten verfüge ich?",
-      "In welchen Konten bin ich?",
+      "Über welche Konten verfüge ich",
+      "Für welche Konten bin ich der Eigner",
+      "Über wie viele Konten verfüge ich",
+      "In welchen Konten bin ich",
       "Konten, deren Eigner ich bin",
-      "Ich möchte wissen, in welchen Konten ich bin.",
       "Konten, in denen ich bin",
-      "In welchen Konten bin ich?",
-      "Über welche Konten verfüge ich?",
-      "Welchen Konten bin ich zugeordnet?",
-      "Welche Konten laufen auf meinen Namen?"
+      "Welchen Konten bin ich zugeordnet",
+      "Welche Konten laufen auf meinen Namen"
     ],
     "switch-between-accounts": [
       "Zwischen mehreren Konten wechseln",
       "Zwischen Konten wechseln",
-      "Kann ich zwischen mehreren Konten wechseln?",
+      "Kann ich zwischen mehreren Konten wechseln",
       "Konten wechseln",
-      "Wie wechsele ich zwischen mehreren Konten?"
+      "Wechseln zwischen mehreren Konten",
+      "Zu einem anderen Konto wechseln",
+      "Wechseln zu einem anderen Konto"
     ],
     "switch-account-owners": [
-      "Darf ich Kontoeigner wechseln?",
       "Kontoeigner wechseln",
-      "Wie wechsele ich Kontoeigner?",
+      "Kontoeigner ändern",
       "Eigner wechseln",
       "Eigner ändern",
-      "Eigner übertragen"
+      "Übertragung des Eigentumsrechts für mein Konto",
+      "Eigentumsrecht für Konto übertragen",
+      "Konto an eine andere Person übertragen",
+      "Übertragung des Eigentumsrechts",
+      "Eigentumsrecht übertragen"
     ],
     "batch-registration": [
-      "Kann IBM Cloud die Registrierung von Benutzern mithilfe einer Batchoperation unterstützen?",
-      "Unterstützt IBM Cloud mehrere Registrierungen von Benutzern?",
-      "Viele Benutzer registrieren",
+      "Kann IBM Cloud die Registrierung von Benutzern mithilfe einer Batchoperation unterstützen",
+      "Unterstützt IBM Cloud mehrere Registrierungen von Benutzern",
+      "Mehrere Benutzer registrieren",
       "Mehr als einen Benutzer registrieren",
-      "Kann IBM Cloud mehrere Benutzer registrieren?",
-      "Ist IBM Cloud in der Lage, zu einem bestimmten Zeitpunkt mehr als einen Benutzer zu registrieren?"
+      "Kann IBM Cloud mehrere Benutzer registrieren",
+      "Ist IBM Cloud in der Lage, mehr als einen Benutzer gleichzeitig zu registrieren",
+      "Benutzerregistrierung mit Batchoperation",
+      "Mehrere Benutzer gleichzeitig registrieren"
     ],
     "know-about-tags": [
-      "Was ist ein Tag?",
-      "Wie verwende ich Tags?",
-      "Wie werden Tags verwendet?",
-      "Was sind Tags?"
+      "Was ist ein Tag",
+      "Verwendung von Tags",
+      "Tags verwenden",
+      "Was sind Tags"
     ],
     "tags-visibility-account": [
-      "Wo kann ich Tags in einem Konto sehen?",
-      "Wer kann die Tags in einem Konto anzeigen?",
-      "Tags in Konto anzeigen"
+      "Wer kann Tags in einem Konto anzeigen",
+      "Wer ist berechtigt, Tags in einem Konto anzuzeigen",
+      "Tags in Konto anzeigen",
+      "Kann ich die Tags im Konto anzeigen"
     ],
     "permissions-add-remove-tags": [
-      "Welche Berechtigungen werden benötigt zum Hinzufügen oder Entfernen von Tags?",
-      "Welche Berechtigungen sind erforderlich zum Hinzufügen oder Entfernen von Tags?",
-      "Tags hinzufügen oder entfernen"
+      "Welche Berechtigungen werden benötigt zum Hinzufügen oder Entfernen von Tags",
+      "Voraussetzungen für das Hinzufügen oder Entfernen von Tags für Ressourcen",
+      "Hinzufügen oder Entfernen eines Tags",
+      "Tag ersetzen",
+      "Entfernen des Tags nicht möglich"
     ],
     "delete-tag": [
-      "Darf ich einen Tag löschen?",
-      "Wie lösche ich einen Tag?",
-      "Kann ich einen Tag entfernen?",
-      "Kann ich einen Tag loswerden?",
+      "Darf ich einen Tag löschen",
+      "Wie lösche ich einen Tag",
+      "Kann ich einen Tag entfernen",
+      "Entfernen eines Tags",
       "Tag löschen",
       "Tag entfernen"
     ],
     "rename-tag": [
-      "Darf ich einen Tag umbenennen?",
-      "Wie benenne ich einen Tag um?",
-      "Kann ich den Namen eines Tags ändern?",
-      "Darf ich den Namen eines Tags ändern?",
       "Tag umbenennen",
-      "Tagnamen ändern",
+      "Namen des Tags ändern",
       "Tagnamen bearbeiten"
     ],
     "nosecondreg": [
-      "Warum bin ich nicht in der Lage, auf eine andere IBM Cloud-Position zuzugreifen?",
-      "Kann nicht auf eine andere Position zugreifen",
-      "Kann nicht auf verschiedene Positionen zugreifen",
-      "Warum darf ich nicht auf eine andere IBM Cloud-Position zugreifen?",
-      "Warum darf ich keine andere IBM Cloud-Position verwenden?"
+      "Zugriff auf einen anderen IBM Cloud-Standort nicht möglich",
+      "Zugriff auf einen anderen Standort nicht möglich",
+      "Zugriff auf andere Standorte nicht möglich",
+      "Zugriff auf einen anderen IBM Cloud-Standort nicht zulässig",
+      "Verwendung eines anderen IBM Cloud-Standorts nicht möglich",
+      "Verwendung anderer IBM Cloud-Standorte nicht möglich"
     ],
     "nosecondorg": [
-      "Warum darf ich keine neue Organisation erstellen?",
-      "Kann keine neue Organisation erstellen",
+      "Erstellen einer neuen Organisation nicht möglich",
+      "Neue Organisation kann nicht erstellt werden",
+      "Probleme beim der Erstellung einer neuen Organisation",
       "Probleme beim Erstellen einer neuen Organisation",
-      "Warum kann ich keine neue Organisation einrichten?",
-      "Warum kann ich keine neue Organisation bilden?"
+      "Erstellung einer neuen Organisation funktioniert nicht"
     ],
     "nosecondlite": [
-      "Kann keine neue Lite-Planinstanz erstellen",
-      "Probleme beim Erstellen einer neuen Lite-Planinstanz",
-      "Darf ich eine neue Lite-Planinstanz erstellen?",
-      "Warum kann ich keine neue Lite-Planinstanz einrichten?"
+      "Neue Lite-Planinstanz kann nicht erstellt werden",
+      "Erstellen einer neuen Lite-Planinstanz nicht möglich",
+      "Erstellen einer neuen Lite-Planinstanz nicht zulässig",
+      "Warum kann ich keine neue Lite-Planinstanz einrichten",
+      "Bereitstellen einer weiteren Ressource im Rahmen eines Lite-Plans",
+      "Bereitstellen einer neuen Lite-Instanz nicht möglich",
+      "Mehrere Lite-Planinstanzen"
     ],
     "noruntimemem": [
-      "Wie habe ich das zulässige Laufzeitspeicherkontingent überschritten?",
-      "Mein Laufzeitspeicherkontingent überschritten",
-      "Wie habe ich zu viel meines Laufzeitspeicherkontingents verbraucht?"
+      "Überschreiten des Laufzeitspeicherkontingents",
+      "Laufzeitspeicherkontingent überschritten",
+      "Zu viel von meinem Laufzeitspeicherkontingent genutzt",
+      "Speichergrenzwert für Organisation überschritten",
+      "Laufzeitspeicher der Lite-Instanz"
     ],
     "ts_accnt_inactive": [
-      "Warum funktioniert mein Konto nicht?",
-      "Warum wurde mein Konto inaktiviert?",
+      "BXNUI0096E",
+      "Die App wurde nicht erstellt. Ihr Konto ist inaktiv, da es storniert oder ausgesetzt wurde.",
       "Inaktives Konto",
       "Konto nicht aktiv",
-      "Konto funktioniert nicht ordnungsgemäß"
+      "Konto ist nicht aktiviert"
     ],
     "ts_adduser": [
-      "Warum darf ich keine Benutzer zu einer Organisation hinzufügen?",
+      "Hinzufügen von Benutzern zur Organisation nicht möglich",
+      "Benutzer können nicht zur Organisation hinzugefügt werden",
       "Benutzer zu Organisation hinzufügen",
       "Personen zu Organisation hinzufügen",
-      "Kann ich Benutzer zu einer Organisation hinzufügen?",
-      "Wer darf Benutzer zu einer Organisation hinzufügen?",
-      "Einladen eines Benutzers nicht möglich",
-      "Erstellen eines Benutzers nicht möglich"
+      "Wer ist berechtigt, Benutzer zu einer Organisation hinzuzufügen",
+      "Organisationsberechtigungen",
+      "Kann ich Benutzer zu einer Organisation hinzufügen",
+      "Hinzufügen eines weiteren Benutzers",
+      "Benutzerzugriff hinzufügen"
     ],
     "ts_no_space": [
-      "Warum sind meiner aktuellen Organisation keine Bereiche zugeordnet?",
-      "Wo sind die Bereiche, die meiner aktuellen Organisation zugeordnet sind?",
-      "Warum sind keine Bereiche mit meiner aktuellen Organisation verknüpft?",
-      "Warum gibt es keine Bereiche, die mit meiner aktuellen Organisation verbunden sind?"
+      "BXNUI0097E",
+      "Bevor Sie eine App hinzufügen können, muss Ihrer Organisation und Ihrer Region mindestens ein Bereich zugeordnet sein. ",
+      "Der aktuellen Organisation sind keine Bereiche zugeordnet",
+      "Erstellen einer App ohne Bereich nicht möglich",
+      "Keine Bereiche in meiner Organisation",
+      "Wo sind die Bereiche, die meiner aktuellen Organisation zugeordnet sind",
+      "Mit der aktuellen Organisation sind keine Bereiche verknüpft"
     ],
     "ts_domain_diff": [
-      "Domänennamen gemeinsam nutzen",
-      "Welche Apps nutzen einen Domänennamen gemeinsam?",
-      "Welche Typen von Apps nutzen einen Domänennamen gemeinsam?",
+      "Apps mit gemeinsamen Domänennamen",
+      "Welche Arten von Apps nutzen einen Domainnamen gemeinsam",
       "Arten von Apps, die eine Domäne gemeinsam nutzen",
-      "Welche Apps nutzen Domänen gemeinsam?",
-      "Warum nutze ich einen Domänennamen mit anderen Apps gemeinsam?"
+      "Welche Apps nutzen Domänen gemeinsam",
+      "Verschiedene Apps mit gemeinsamem Domänenname"
     ],
     "ts_ui_org": [
-      "Können Administratoren über die Konsole alle Organisationen anzeigen?",
-      "Administratoren dürfen Konsole nicht verwenden, um alle Organisationen anzuzeigen",
-      "Warum können Admins die Konsole nicht verwenden, um alle Organisationen anzuzeigen?",
-      "Wer kann über die Konsole alle Organisationen anzeigen?"
+      "Anzeigen aller Organisationen nicht möglich",
+      "Administratoren können Organisationen nicht in der Konsole anzeigen",
+      "Administrator kann Organisationen nicht anzeigen",
+      "Alle Organisationen verwalten",
+      "Alle Organisationen über die Konsole anzeigen"
     ],
     "ts_addcc": [
-      "Kann meine Kreditkarte nicht hinzufügen",
-      "Kann Kreditkarte nicht hinzufügen",
-      "Warum darf ich meine Kreditkartendaten nicht hinzufügen?",
+      "Hinzufügen der Kreditkarte nicht möglich",
+      "Kreditkarte kann nicht hinzugefügt werden",
+      "Hinzufügen der Kreditkarteninformationen nicht zulässig",
       "Probleme beim Hinzufügen einer Kreditkarte",
       "Kreditkarte wird nicht hinzugefügt",
-      "Kreditkarteninformationen können nicht hinzugefügt werden"
+      "Kreditkarteninformationen können nicht hinzugefügt werden",
+      "Hinzufügen von Zahlungsoptionen nicht möglich",
+      "Hinzufügen einer Zahlungsmethode nicht möglich",
+      "Registrierung der Kreditkarte nicht möglich"
     ],
     "ts_logintobm": [
-      "Warum ist mein Kennwort nicht korrekt?",
-      "Ich will mein Kennwort zurücksetzen",
-      "Warum kann ich mich nicht mit meinem neuen Kennwort anmelden?",
       "Mein Kennwort ist falsch",
       "Inkorrektes Kennwort",
       "Falsches Kennwort",
       "Kann mein Kennwort nicht verwenden",
-      "Kennwort funktioniert nicht"
+      "Kennwort funktioniert nicht",
+      "Das eingegebene Kennwort ist nicht korrekt"
     ],
     "ts_old_username": [
-      "Warum wurde meine IBMid oder E-Mail-Adresse nicht erkannt?",
-      "Warum wird meine IBMid oder E-Mail-Adresse nicht erkannt?",
+      "Erkennen der IBMid oder E-Mail-Adresse",
       "Meine IBMid oder E-Mail-Adresse wird nicht erkannt",
       "Meine ID wird nicht erkannt",
-      "Warum wurde meine ID nicht erkannt?"
+      "ID nicht erkannt",
+      "IBMid funktioniert nicht",
+      "Diese IBMid oder E-Mail-Adresse wurde nicht erkannt",
+      "Benutzer-ID vergessen"
     ],
     "ts_unabletologin": [
-      "Warum wird meine IBMid von keinem IBM Cloud-Konto erkannt?",
-      "Warum ist meine IBMid mit keinem IBM Cloud-Konto verbunden?",
-      "Warum ist meine IBMid mit keinem IBM Cloud-Konto verknüpft?",
-      "Warum sind meine IBM Cloud-Konten meiner IBMid nicht zugeordnet?",
-      "ID keinem Konto zugeordnet"
+      "IBMid nicht mit IBM Cloud-Konten verbunden",
+      "IBMid nicht mit IBM Cloud-Konten verknüpft",
+      "IBM Cloud-Konten nicht meiner IBMid zugeordnet",
+      "ID keinem Konto zugeordnet",
+      "Sie sind auf diese Seite gelangt, weil Ihre Authentifizierung erfolgreich war; allerdings ist diese IBMid keinem IBM Cloud-Konto zugeordnet."
     ],
     "ts_login_stalls": [
-      "Warum lässt sich die Konsole nicht mit meiner IBMid öffnen?",
-      "Die Konsole öffnet sich nicht, wenn ich mich anmelde",
-      "Konsole öffnet sich nicht",
+      "Öffnen der Konsole nach der Anmeldung nicht möglich",
+      "Die Konsole wird nicht geöffnet, wenn ich mich anmelde",
       "Konsole wird nicht geöffnet",
+      "Öffnen der Konsole fehlgeschlagen",
       "Konsole wird nach dem Anmelden nicht geöffnet"
     ],
     "ts_login_ibmid": [
-      "Warum wurde meine IBMid-Anmeldung nicht ausgeführt?",
-      "Warum ist meine IBMid-Anmeldung nicht vollständig?",
+      "Anmeldung mit IBMid funktioniert nicht",
+      "Anmeldung mit IBMId nicht möglich",
       "Anmeldung nicht vollständig",
       "Anmeldung nicht abgeschlossen",
       "Anmeldung wird nicht abgeschlossen",
-      "Warum wurde meine IBMid-Anmeldung nicht fertiggestellt?"
+      "Anmeldung mit IBMId nicht beendet",
+      "Anmeldung kann nicht abgeschlossen werden",
+      "Anmeldung bei Konto nicht möglich",
+      "Anmeldung funktioniert nicht"
     ],
     "ts_accntpding": [
       "Nach der Registrierung eines Kontos kann ich mich nicht direkt anmelden",
-      "Kann mich direkt nach Registrierung nicht anmelden",
-      "Nach der Registrierung eines Kontos kann ich mich nicht anmelden",
-      "Kann mich nach Kontoregistrierung nicht anmelden"
+      "Anmeldung unmittelbar nach der Erstellung eines Kontos nicht möglich",
+      "Anmeldung nach der Registrierung eines Kontos nicht möglich",
+      "Nach der Registrierung eines Kontos keine Anmeldung möglich",
+      "Nach der Erstellung eines Kontos keine Anmeldung möglich",
+      "Anmeldung nach der Registrierung für IBM Cloud",
+      "Zugriff auf das Konto nach der Registrierung nicht möglich",
+      "Konto im Status 'anstehend'"
     ],
     "ts_err": [
-      "Warum werden manche Seiten nicht geladen?",
-      "Warum sehe ich Konsolenseiten, die nicht geladen werden?",
-      "Warum werden Konsolenseiten nicht geladen?",
-      "Kann Konsolenseiten nicht laden",
-      "Konsolenseiten werden nicht geladen"
+      "Seiten, die nicht geladen werden",
+      "Fehlerhafte Seien in der Konsole",
+      "Einige Konsolenseiten werden nicht angezeigt",
+      "Konsolenseiten werden nicht geladen",
+      "Konsolenseiten können nicht geladen werden",
+      "Laden von Konsolenseiten nicht möglich",
+      "BXNUI0001E",
+      "Die Seite wurde nicht geladen, da IBM Cloud nicht feststellen konnte, ob eine Sitzung vorhanden ist.",
+      "BXNUI0016E",
+      "Die Apps und Services wurden nicht abgerufen, da eine IBM Cloud-Seite nicht geladen wurde."
     ]
 }

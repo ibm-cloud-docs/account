@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-07-08"
 
 keywords: organizing resource group, account best practices, best practices account
 
@@ -102,4 +102,4 @@ Lite 계정이 있으면 자신을 위해 작성된 단일 리소스 그룹에 �
 
 ## 다음 단계
 
-계정의 리소스와 리소스 그룹에 대해 동일한 액세스 권한이 필요한 사용자와 서비스 ID를 위한 액세스 그룹을 설정하십시오. 최소 수의 액세스 정책을 지정할 수 있으므로 시간이 절약됩니다. 자세한 정보는 [액세스 지정 우수 사례](/docs/iam?topic=iam-cfaccess)를 참조하십시오.
+계정의 리소스와 리소스 그룹에 대해 동일한 액세스 권한이 필요한 사용자와 서비스 ID를 위한 액세스 그룹을 설정하십시오. 최소 수의 액세스 정책을 지정할 수 있으므로 시간이 절약됩니다. 자세한 정보는 [액세스 지정 우수 사례](/docs/iam?topic=iam-account_setup)를 참조하십시오.

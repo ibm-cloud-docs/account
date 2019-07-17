@@ -187,7 +187,9 @@ IBM에서 개인 정보를 어떻게 처리하는지 알아보려면 [IBM 개인
 {: #freetrial}
 {: faq}
 
-공인 교육 기관의 교직원 및 학생은 {{site.data.keyword.Bluemix_notm}} 평가판 계정을 사용할 수 있습니다. 평가판 계정에 대한 사용 자격을 얻으려면 [IBM의 파워 활용 ![외부 링크아이콘](../icons/launch-glyph.svg)](https://onthehub.com/ibm/){: new_window}으로 이동하여 기관 인증 정보의 유효성을 검증하십시오.
+{{site.data.keyword.Bluemix_notm}} Lite 계정은 무료 Lite 플랜 서비스에 대한 액세스를 제공합니다. 비용 청구 없이 원하는 만큼 이러한 서비스를 사용할 수 있으며 계정은 만료되지 않습니다. [Lite 계정을 등록](https://{DomainName}/registration)하십시오.
+
+공인 교육 기관의 교직원 및 학생은 {{site.data.keyword.Bluemix_notm}} 평가판 계정을 사용할 수 있습니다. 평가판 계정에 대한 사용 자격을 얻으려면 [IBM의 파워 활용 ![외부 링크아이콘](../icons/launch-glyph.svg)](https://ibm.biz/academic){: new_window}으로 이동하여 기관 인증 정보의 유효성을 검증하십시오. Lite 계정과 달리 평가판 계정은 평가 기간이 끝나면 만료됩니다.
 
 ## 계정을 연결한 후에는 어떻게 로그인합니까?
 {: #al_login}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-07-08"
 
 keywords: organizing resource group, account best practices, best practices account
 
@@ -102,4 +102,4 @@ subcollection: account
 
 ## 后续步骤
 
-为需要您帐户中资源和资源组的相同访问权的用户和服务标识设置访问组。您可以分配尽量少的访问策略，这样可以节省时间。有关更多信息，请参阅[分配访问权的最佳实践](/docs/iam?topic=iam-cfaccess)。
+为需要您帐户中资源和资源组的相同访问权的用户和服务标识设置访问组。您可以分配尽量少的访问策略，这样可以节省时间。有关更多信息，请参阅[分配访问权的最佳实践](/docs/iam?topic=iam-account_setup)。
