@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-07-16"
+lastupdated: "2019-07-18"
 
 keywords: feature code, subscription code, subscription credit, support credit, promo code
 
@@ -26,7 +26,7 @@ If you have a Lite account, you can apply feature codes to take advantage of ext
 Are you looking for details about adding platform and infrastructure subscriptions or support credit to your account? See [Managing subscriptions](/docs/billing-usage?topic=billing-usage-subscriptions) for more information.
 {:tip}
 
-You must have an Editor role or higher on the Billing service to apply a feature code. In some instances, you might also see these codes referred to as promo codes. The extra resources or capabilities that are provided vary depending on the particular code but include one or more of the following items in general:
+You must have an Editor role or higher on all account management services to apply a feature code. In some instances, you might also see these codes referred to as promo codes. The extra resources or capabilities that are provided vary depending on the particular code but include one or more of the following items in general:
 
   * Increase the memory quota to a number of GB that is specified by the code
   * Add one organization with a memory quota that is specified by the code
