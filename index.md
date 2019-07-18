@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-07-15"
 
 keywords: account types, Lite, free account, paid account, buy account, account difference, compare account, subscription, service bundle
 
@@ -102,7 +102,7 @@ You can add services bundles to any type of existing account, including Lite acc
 Service bundle subscriptions aren't available through the {{site.data.keyword.Bluemix_notm}} console. To learn more and purchase a service bundle, contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 {:tip}
 
-After you purchase a service bundle subscription, you'll receive an email with a feature code that you apply to add the bundle to your account. For more information about how to apply feature codes, see [Applying feature codes](/docs/account?topic=account-codes). When your service bundle expires or you use all of the credit, you can continue to use any of the services, with usage charged at the Pay-As-You Go rate.
+After you purchase a service bundle subscription, you'll receive an email with a subscription code that you apply to add the bundle to your account. For more information about how to apply subscription codes, see [Managing subscriptions](/docs/billing-usage?topic=billing-usage-subscriptions). When your service bundle expires or you use all of the credit, you can continue to use any of the services, with usage charged at the Pay-As-You Go rate.
 
 ## Upgrading your account
 {: #upgrade-lite-account}
