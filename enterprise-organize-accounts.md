@@ -1,0 +1,103 @@
+---
+
+copyright:
+  years: 2019
+lastupdated: "2019-07-25"
+
+keywords: enterprise, create account group, organize accounts, move accounts
+
+subcollection: account
+
+---
+
+{:shortdesc: .shortdesc}
+{:new_window: target="_blank"}
+{:codeblock: .codeblock}
+{:important: .important}
+{:tip: .tip}
+{:note: .note}
+
+# Organizing accounts in an enterprise
+{: #enterprise-organize}
+
+Use account groups to organize related accounts in your {{site.data.keyword.Bluemix}} enterprise. You can create a multitiered enterprise hierarchy by nesting account groups within an account group. If you need to, you can reorganize by moving accounts between account groups.
+{:shortdesc}
+
+For example, the following diagram depicts a four-tier enterprise that you can set up by creating two account groups. Then, you can create two additional account groups that have one of the account groups as a parent. You can move accounts freely within the account groups, no matter what level they're in.
+
+![A diagram that shows four enterprise tiers. The top tier is the enterprise, which contains two tiers of account groups. Then, the account group contains accounts.](images/enterprise-hierarchy.svg "Enterprise tiers are created by adding account groups."){: caption="Figure 1. A four-tier enterprise hierarchy" caption-side="bottom"}
+
+Remember that how you organize your enterprise impacts how you can track usage costs. For more information, see [Centrally manage billing and usage with enterprises](/docs/billing-usage?topic=billing-usage-enterprise).
+{: tip}
+
+## Creating account groups
+{: #create-account-group}
+
+To create an account group, you need the Administrator or Editor role on the Enterprise service in the enterprise account.
+
+1. From the Enterprise dashboard, click **Accounts** to view the accounts and account groups in the enterprise.
+1. In the Account groups section, click **Create**.
+1. Enter a name for the account group that reflects the accounts that it will contain. See [How can I use an enterprise?](/docs/account?topic=account-enterprise#enterprise-use-cases) for examples of how you might organize accounts.
+1. If you want an enterprise user other than yourself to be the primary contact for the account group, select their IBMid from the **Contact** menu. If a user that you want to assign as the contact isn't in the enterprise, first invite the user to the enterprise account. The contact can't be changed after you create the account group. See [Inviting users](/docs/iam?topic=iam-iamuserinv) for more information.
+
+   The contact is different from an account owner in that they don't have any additional access within the account group or its accounts. The user that you select as contact acts as a focal point for any account group issues. For example, if a financial officer notices that the account group's usage costs are unexpectedly high, they might notify the account group contact.
+
+
+1. If you want the account group to be in a different part of your enterprise hierarchy, select a different parent.
+
+  Account groups can't be moved from where you create them.
+  {: note}
+1. Click **Create**.
+
+To create a new tier in your enterprise hierarchy, create new account groups within the account group. You can move accounts that are already in the enterprise into the account group, or you can import or create accounts within it. See [Adding accounts to an enterprise](/docs/account?topic=account-enterprise-add] for more information about importing and creating accounts.
+
+### Creating account groups by using the API
+{: #create-account-groups-api}
+
+You can programmatically create an account group in the enterprise by calling the Enterprise Management API.
+
+The following sample request creates an account group directly under the enterprise level. When you call the API, replace the ID variables with the values from your enterprise. To nest the account group within another account group, specify the ID of the account group in the Cloud Resource Name (CRN) in the following format: `crn:v1:bluemix:public:enterprise::a/$ENTERPRISE_ACCOUNT_ID::account-group:$ACCOUNT_GROUP_ID`.
+
+```
+curl -X POST \
+"https://enterprise.cloud.ibm.com/v1/account-groups \
+-H "Authorization: Bearer <IAM_Token>" \
+-H 'Content-Type: application/json' \
+-d '{
+  "parent": "crn:v1:bluemix:public:enterprise::a/$ENTERPRISE_ACCOUNT_ID::enterprise:$ENTERPRISE_ID",
+  "name": "Sample Account Group",
+  "owner_iam_id": "IBMid-0123ABC"
+}'
+```
+{: codeblock}
+
+<!--For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-account-group){: external}.-->
+
+## Moving accounts within the enterprise
+{: #move-accounts}
+
+You can move accounts anywhere within your enterprise. For example, you can move an account from a lower account group into its parent account group, or you can move it directly under the enterprise. Accounts can be moved only within the enterprise. They can't be moved to a different enterprise or removed from the enterprise to be a stand-alone account.
+
+To move an account, you need the Administrator role on the Billing service in the enterprise account and the Editor or Administrator role on either the entire enterprise or both the current and target account groups.
+
+1. From the Enterprise dashboard, click **Accounts**.
+1. In the Accounts section, click the Actions icon in the row for the account, and select **Move account**.
+1. Select the new parent for the account, and click **Save**.
+
+### Moving accounts by using the API
+{: #move-account-api}
+
+You can move an account by calling the Enterprise Management API as shown in the following sample request. Replace the IAM token and ID variables with the values from your enterprise.
+
+```
+curl -X PATCH \
+"https://enterprise.cloud.ibm.com/v1/accounts/$ACCOUNT_ID" \
+-H "Authorization: Bearer <IAM_Token>" \
+-H 'Content-Type: application/json' \
+-d '{
+  "parent": crn:v1:bluemix:public:enterprise::a/$ENTERPRISE_ACCOUNT_ID::account-group:$ACCOUNT_GROUP_1"",
+}'
+```
+{: codeblock}
+
+<!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#move-an-account-with-the-enterprise){: external}.-->

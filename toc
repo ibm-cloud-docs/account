@@ -6,14 +6,20 @@
 Managing your account
 
     {: .navgroup id="learn"}
-    bp_account.md
+    index.md
     account_overview.md
     lite-account-show-me.md
+    bp_account.md
+
+    {: .topicgroup}
+    Centrally managing multiple accounts with enterprises
+        enterprises.md
+        enterprise-tutorial.md
+        enterprise-video.md
+        bp_enterprise.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-    index.md
-
     {: .topicgroup}
     Setting up your account
         adminpublic.md
@@ -31,8 +37,6 @@ Managing your account
         contact_info.md
         email.md
 
-    softlayerlink.md
-
     {: .topicgroup}
     Managing orgs and spaces
         orgs_spaces.md
@@ -44,17 +48,36 @@ Managing your account
         include.md
         exclude.md
 
+    {: .topicgroup}
+    Setting up an enterprise
+        enterprise-create.md
+        enterprise-add-accounts.md
+        enterprise-organize-accounts.md
+        enterprise-settings.md
+
     audit_log.md
+    softlayerlink.md
     transfer.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
     monitoring.md
     [Command reference](/cli/cloud-cli-ibmcloud_commands_account)
+
+    {: .topicgroup}
+    API reference
+        [User Management](https://{DomainName}/apidocs/user-management){: new_window}
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    account_faq.md
-    ts_accessing.md
-    ts_accounts.md
+    {: .topicgroup}
+    FAQs
+        account_faq.md
+        enterprise_faq.md
+
+    {: .topicgroup}
+    Troubleshooting
+        ts_accessing.md
+        ts_accounts.md
+        ts_enterprise.md
     {: .navgroup-end}
