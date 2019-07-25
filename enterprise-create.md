@@ -54,7 +54,7 @@ After a few moments, your enterprise is created, and you can view the enterprise
 ## Creating an enterprise by using the API
 {: #create-api}
 
-You can programmatically create an enterprise by calling the Enterprise Management API as shown in the following sample request. For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-enterprise){: external}.
+You can programmatically create an enterprise by calling the Enterprise Management API as shown in the following sample request. For detailed information about the API, see <!--[Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-enterprise){: external}--> Enterprise Management API.
 
 ```
 curl -X POST \

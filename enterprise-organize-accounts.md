@@ -71,7 +71,7 @@ curl -X POST \
 ```
 {: codeblock}
 
-For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-account-group){: external}.
+<!--For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-account-group){: external}.-->
 
 ## Moving accounts within the enterprise
 {: #move-accounts}
@@ -100,4 +100,4 @@ curl -X PATCH \
 ```
 {: codeblock}
 
-For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#move-an-account-with-the-enterprise){: external}.
+<!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#move-an-account-with-the-enterprise){: external}.-->
