@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-17"
+lastupdated: "2019-07-29"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -24,7 +24,7 @@ subcollection: account
 Lite accounts make it easy to get started with {{site.data.keyword.Bluemix}} and try out services. When you are ready for more, you can upgrade your account to a Pay-As-You-Go or Subscription account to unlock the entire catalog of production-ready services.
 {:shortdesc}
 
-You can check your current account type by going to **Manage > Account > Account settings** and looking under _Account Type_.
+You can check your current account type by going to **Manage > Account > Account settings** and looking under Account Type.
 
 Not sure which type of account you want to upgrade to? Get detailed information about the benefits of each account type in [Account types](/docs/account?topic=account-accounts).
 {: tip}
@@ -36,9 +36,14 @@ To upgrade your account, you must have an editor role or higher on all account m
 
 With a Pay-As-You-Go account, you pay for only what you use beyond the free runtime and service allowances. After you upgrade, you can continue to use any instances that you created with your Lite account.
 
-To upgrade to a Pay-As-You-Go account, go to **Manage > Account**, and select **Account settings**. Then click **Add Credit Card**, and enter your payment information.
+To upgrade to a Pay-As-You-Go account,
+1. Go to **Manage > Account**.
+1. Select **Account settings**, and click **Add credit card**.
+1. Enter your payment information, click **Next**, and submit your information.
 
 After your payment information is processed, your account is upgraded and you can explore and access the full {{site.data.keyword.Bluemix_notm}} catalog. For any billable services that you use beyond any free allowances, you receive a monthly invoice. If your upgrade included a promotional credit, the credit might take a few hours to appear in your account.
+
+If you're upgrading to reactivate a deactivated account, your account might take a few days to be fully available. If your account continues to be in a pending state, see [Troubleshooting for accessing {{site.data.keyword.Bluemix_notm}}](/docs/account?topic=account-accessing) for help.
 
 ## Upgrading to a Subscription account
 {: #upgrade-subscription}
@@ -55,7 +60,7 @@ To upgrade from a Lite account to a Subscription account, complete the following
    {:tip}
 1. Review your subscription details, and then enter your payment information.
 
-   After your payment information is processed, your subscription credit is added to your account.
+   After your payment information is processed, your subscription credit is added to your account. You can monitor your subscription usage on this same Subscriptions page. See [Managing subscriptions](/docs/billing-usage?topic=billing-usage-subscriptions for more information.
 
 Your subscription renews automatically. If you want to discontinue your subscription renewal, [contact support](https://{DomainName}/unifiedsupport/supportcenter).
 {: note}
