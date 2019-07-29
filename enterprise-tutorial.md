@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-25"
+lastupdated: "2019-07-26"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, enterprise users, enterprise access, enterprise tutorial
 
@@ -20,15 +20,19 @@ subcollection: account
 # Getting started with an enterprise
 {: #enterprise-tutorial}
 
-In this tutorial, you create an enterprise for a fictitious company called *Example Corp* that wants to track their usage costs by department. By completing this tutorial, you learn how to model your enterprise structure by department, set up account groups, add existing accounts and users, and explore subscriptions.
+This tutorial walks you through how to set up an enterprise by department so you can manage and track usage costs for multiple {{site.data.keyword.Bluemix}} accounts. By completing this tutorial, you learn how to create an enterprise, add accounts and organize them in account groups, invite users, and explore subscriptions.
 {:shortdesc}
+
+The tutorial uses a fictitious company called *Example Corp* that wants to create an enterprise with the following structure. As you complete the tutorial, adapt each step to match your organization's accounts and desired structure.
 
 ![A four-tier enterprise that groups accounts according to department in an organization. For example, account groups are named Marketing, Development, and Sales. The account groups contain accounts for teams within those departments. For example, the Sales account group contains accounts for Direct, Online, and Enablement.](images/enterprise-by-dept.svg "An enterprise that organizes accounts according to department in the organization."){: caption="Figure 1. An enterprise that is organized by department" caption-side="bottom"}
 
 ## Before you begin
 {: #setting-prereqs}
 
-To create an [{{site.data.keyword.Bluemix_notm}} enterprise](/docs/account?topic=account-enterprise), you must be the account owner or have the Administrator role on the Billing account management service in a Subscription account.
+Read [What is an enterprise?](/docs/account?topic=account-enterprise) to learn the basic principles of how account management, billing, resources, and user and access management work in an enterprise.
+
+Verify that you have the required access in a Subscription account, which serves as the base account from which you create the enterprise. To create an enterprise, you must be the account owner or have the Administrator role on the Billing account management service.
 
 Creating an enterprise from an account and importing existing accounts cannot be undone. This tutorial is provided as an example of the steps you can follow to set up an enterprise by department, but you should carefully plan your enterprise structure around your organization's needs.
 {:important}
@@ -36,36 +40,42 @@ Creating an enterprise from an account and importing existing accounts cannot be
 ## Step 1. Create the enterprise
 {: #create_enterprise_tutorial}
 
+Enterprises are created from an existing Subscription account. When you create the enterprise, the account is added to the enterprise hierarchy. Billing transitions to being managed by the enterprise, but its users and resources are remain the same and are completely unaffected. For a complete description of account impacts, see [Creating an enterprise](/docs/account?topic=account-create-enterprise).
+
 1. Go to **Manage** > **Enterprise**, and click **Create**.
-2. Enter the name of your company, Example Corp, to identify your enterprise.
-3. Enter `example.com` as the domain name.
+2. Enter the name of your company, such as Example Corp, to identify your enterprise.
+3. Enter your company's domain, such as `examplecorp.com`.
 4. Review the information about the impact to your account, and select **I understand the impact to my account**. Then, click **Create**. The account is now permanently part of the enterprise and can't be removed.
 
-After your enterprise is created, you are directed to the enterprise dashboard. From here, you can view the enterprise details, accounts, users, and billing information. To view the account that you used to create the enterprise, go to the **Accounts** page.
+After your enterprise is created, you are directed to the enterprise dashboard. From here, you can view the enterprise details, accounts, users, and billing information. Go to the **Accounts** page to view your enterprise structure, where you see the following accounts:
+  * An enterprise account with the same name as your enterprise. This account is used for enterprise management.
+  * The account that you created the enterprise from. Users can continue working with resources in the account unaffected.
 
 ## Step 2. Create an enterprise structure with account groups
 {: #account_groups_tutorial}
 
-Your company, Example Corp, uses account groups to organize related accounts. The second and third tier of the enterprise hierarchy contain the Marketing, Development, Sales, Design, and Engineering account groups. Complete the following steps to create the account groups:
+Use account groups to organize related accounts. The second and third tier of the Example Corp. enterprise hierarchy contain the Marketing, Development, Sales, Design, and Engineering account groups. Complete the following steps to create the account groups:
 
 1. From the enterprise dashboard, click **Accounts** to view accounts and account groups in the enterprise.
 2. In the account group section, click **Create**.
-3. Enter `Marketing` for the account group name.
+3. Enter the account group name, such as `Marketing`.
 4. In the contact field, enter the IBMid for the user that you want to be the main contact for the account group. Because an account group can't contain any resources, it doesn't have an owner like an account.
 5. Select **Example Corp** as the parent account.
 6. Click **Create**.
 
-Repeat the steps to create the Sales, Development, Design, and Engineering account groups. When you create the Design and Engineering account groups, make sure that you add Development as the parent account.
+Repeat the steps to create the Sales, Development, Design, and Engineering account groups. When you create the Design and Engineering account groups, make sure that you add Development as the parent account group.
 
 ## Step 3. Import existing accounts
 {: #existing_accounts_tutorial}
 
-Now that you created an enterprise and the structure for account groups, you can import an existing account to the enterprise. To import an existing account, the following access is required:
+Now that you created an enterprise structure, you can import an existing account to the enterprise. When you import an account, it is permanently added to the enterprise. Just like when you create an enterprise, billing for the imported accounts transitions to being managed by the enterprise, but its users and resources remain the same. For details, see [Importing existing accounts](/docs/account?topic=account-enterprise-add#add-accounts).
+
+To import an existing account, the following access is required:
 
 * Within the account to be imported, you must be the account owner or have the Administrator role on the Enterprise and Billing account management services within the account.
 * Within the enterprise account, you need the Editor or Administrator role on the Enterprise service and the Administrator role on the Billing service.
 
-Complete the following steps to import the existing UX-UI account to the Design account group:
+Complete the following steps to import the example UX-UI account to the Design account group:
 1. From the enterprise dashboard, click **Accounts** to view the accounts and account groups in the enterprise.
 2. In the Accounts section, click **Add** > **Import account**.
 3. Select **UX-UI** from the **Account** list.
@@ -76,14 +86,14 @@ Complete the following steps to import the existing UX-UI account to the Design 
 4. Select **Design** as the parent of the UX-UI account. This determines where in the enterprise hierarchy the account exists.
 5. Review the information about the impacts to your account, and select **I understand the impact to my account**. Then, click **Import**.
 
-Repeat the steps to import the Content account.
+Repeat the steps to import more accounts.
 
 ## Step 4. Create new accounts
 {: #create-accounts_tutorial}
 
-You can create new accounts within your Example Corp enterprise. The accounts are created as Pay-As-You-Go accounts, and usage is billed to the enterprise. To create an account, you need an access policy with the Editor or Administrator role on the Enterprise service.
+You can create new accounts within your enterprise. The accounts are created as Pay-As-You-Go accounts, and usage is billed to the enterprise. To create an account, you need an access policy with the Editor or Administrator role on the Enterprise service.
 
-Complete the following steps to create the Web account in your enterprise:
+Complete the following steps to create the example Web account in your enterprise:
 
 1. From the Enterprise dashboard, click **Accounts** to view the accounts and account groups in the enterprise.
 1. In the Accounts section, select **Add** > **Create account**.
@@ -94,7 +104,7 @@ Complete the following steps to create the Web account in your enterprise:
 
 After you create the account, the account owner can log in to the account to invite other users and manage their access.
 
-Repeat the steps to add Print, Frontend, Backend, Direct, Online, and Enablement accounts. Review the following table to see the child account and parent account group hierarchy.
+Repeat the steps to create more accounts. As an example, the Example Corp enterprise has the following child account and parent account group hierarchy.
 
 | Child | Parent |
 | ----- | -------|
@@ -109,7 +119,7 @@ Repeat the steps to add Print, Frontend, Backend, Direct, Online, and Enablement
 ## Step 5. Explore subscriptions
 {: #explore-sub_tutorial}
 
-In this example, some accounts that were imported to the Example Corp enterprise included existing subscriptions. You can explore subscriptions in the enterprise from the enterprise dashboard.
+You can explore subscriptions in the enterprise from the enterprise dashboard. Any existing subscriptions from accounts that are imported into the enterprise are moved to the enterprise account and added to the enterprise [credit pool](/docs/billing-usage?topic=billing-usage-enterprise#credit-pool).
 
 1. Go back to the Enterprise dashboard by clicking **Dashboard**. In the Billing section, you can view available credit, remaining credit, and subscription expiration dates.
 1. To view details about all subscriptions in the enterprise, click **View subscriptions**.

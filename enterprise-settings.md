@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-25"
+lastupdated: "2019-07-29"
 
 keywords: enterprise, enterprise settings, manage enterprise, view enterprise, rename enterprise
 
@@ -35,6 +35,22 @@ To view your enterprise dashboard, go to **Manage > Enterprise**. The dashboard 
    * [View and manage subscription credit](/docs/billing-usage?topic=billing-usage-subscriptions)
 
 Also, you can rename your enterprise by clicking **Rename** in the Enterprise details section.
+
+## Managing your enterprise from the CLI
+{: #enterprise-manage-cli}
+
+* View enterprise information such as the name, domain, owner, and creation and update dates.
+
+  ```
+  ibmcloud enterprise show
+  ```
+  {: codeblock}
+* Rename the enterprise by specifying the new name on the `-n` option in the following command.
+
+   ```
+   ibmcloud enterprise update -n NEW_NAME
+   ```
+   {:codeblock}
 
 ## Managing your enterprise by using the API
 {: #enterprise-manage-api}
