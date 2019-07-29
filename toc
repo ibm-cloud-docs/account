@@ -62,7 +62,11 @@ Managing your account
 
     {: .navgroup id="reference"}
     monitoring.md
-    [Command reference](/cli/cloud-cli-ibmcloud_commands_account)
+
+    {: .topicgroup}
+    Command reference
+        [Managing accounts, users, and Cloud Foundry orgs](/cli/cloud-cli-ibmcloud_commands_account)
+        [Managing enterprises, account groups, and accounts](/cli/cloud-cli-ibmcloud_enterprise)
 
     {: .topicgroup}
     API reference
