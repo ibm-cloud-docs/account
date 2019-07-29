@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-25"
+lastupdated: "2019-07-29"
 
 keywords: enterprise, create account group, organize accounts, move accounts
 
@@ -23,7 +23,7 @@ subcollection: account
 Use account groups to organize related accounts in your {{site.data.keyword.Bluemix}} enterprise. You can create a multitiered enterprise hierarchy by nesting account groups within an account group. If you need to, you can reorganize by moving accounts between account groups.
 {:shortdesc}
 
-For example, the following diagram depicts a four-tier enterprise that you can set up by creating two account groups. Then, you can create two additional account groups that have one of the account groups as a parent. You can move accounts freely within the account groups, no matter what level they're in.
+For example, the following diagram depicts a four-tier enterprise that you can set up by nesting account groups. First, you create two account groups that have the enterprise as the parent. Then, you can create two additional account groups that have one of those account groups as a parent. You can move accounts freely within the account groups, no matter what tier they're in. However, account groups cannot be moved.
 
 ![A diagram that shows four enterprise tiers. The top tier is the enterprise, which contains two tiers of account groups. Then, the account group contains accounts.](images/enterprise-hierarchy.svg "Enterprise tiers are created by adding account groups."){: caption="Figure 1. A four-tier enterprise hierarchy" caption-side="bottom"}
 
@@ -45,11 +45,22 @@ To create an account group, you need the Administrator or Editor role on the Ent
 
 1. If you want the account group to be in a different part of your enterprise hierarchy, select a different parent.
 
-  Account groups can't be moved from where you create them.
+  Account groups can't be deleted or moved from where you create them.
   {: note}
 1. Click **Create**.
 
-To create a new tier in your enterprise hierarchy, create new account groups within the account group. You can move accounts that are already in the enterprise into the account group, or you can import or create accounts within it. See [Adding accounts to an enterprise](/docs/account?topic=account-enterprise-add] for more information about importing and creating accounts.
+To create a new tier in your enterprise hierarchy, create new account groups within the account group. You can move accounts that are already in the enterprise into the account group, or you can import or create accounts within it. See [Adding accounts to an enterprise](/docs/account?topic=account-enterprise-add) for more information about importing and creating accounts.
+
+### Creating account groups by using the CLI
+{: #create-account-groups-cli}
+
+Create an account group by running the following command. To nest an account group within another account group, specify the name of the account group on the `--parent-account-group` option. If you want a different user to be the contact for the account group, specify their IBMid on the `--primary-contact-id` option.
+
+```
+ibmcloud enterprise account-group-create NAME
+[--parent-account-group ACCOUNT_GROUP_NAME] [--primary-contact-id USER_ID]
+```
+{: codeblock}
 
 ### Creating account groups by using the API
 {: #create-account-groups-api}
@@ -66,12 +77,12 @@ curl -X POST \
 -d '{
   "parent": "crn:v1:bluemix:public:enterprise::a/$ENTERPRISE_ACCOUNT_ID::enterprise:$ENTERPRISE_ID",
   "name": "Sample Account Group",
-  "owner_iam_id": "IBMid-0123ABC"
+  "primary_contact_iam_id": "IBMid-0123ABC"
 }'
 ```
 {: codeblock}
 
-<!--For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-account-group){: external}.-->
+<!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-account-group){: external}.-->
 
 ## Moving accounts within the enterprise
 {: #move-accounts}
@@ -83,6 +94,37 @@ To move an account, you need the Administrator role on the Billing service in th
 1. From the Enterprise dashboard, click **Accounts**.
 1. In the Accounts section, click the Actions icon in the row for the account, and select **Move account**.
 1. Select the new parent for the account, and click **Save**.
+
+### Moving an account by using the CLI
+{: #move-accounts-cli}
+
+1. Find the account name and ID by listing all accounts in your enterprise.
+
+   ```
+   ibmcloud enterprise accounts --recursive
+   ```
+   {: codeblock}
+1. If you're moving the account to an account group, find the account group name and ID.
+
+   ```
+   ibmcloud enterprise account-groups
+   ```
+   {: codeblock}
+1. Move the account by specifying the new parent on the related option.
+
+   To move the account to an account group, specify the account group name on the `--parent-account-group` option.
+
+   ```
+   ibmcloud enterprise account-move -n NAME --parent-account-group ACCOUNT_GROUP_NAME
+   ```
+   {: codeblock}
+
+   To move the account directly under the enterprise, specify the `--parent-enterprise` option.
+
+   ```
+   ibmcloud enterprise account-move -n NAME --parent-enterprise
+   ```
+   {: codeblock}
 
 ### Moving accounts by using the API
 {: #move-account-api}
@@ -100,4 +142,4 @@ curl -X PATCH \
 ```
 {: codeblock}
 
-<!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#move-an-account-with-the-enterprise){: external}.-->
+<!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#move-an-account-with-the-enterprise){: external}. -->

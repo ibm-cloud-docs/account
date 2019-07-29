@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-25"
+lastupdated: "2019-07-29"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, multiple account
 
@@ -46,15 +46,60 @@ If you don't have a Subscription account, you can upgrade your account as descri
    After the account is added to the enterprise, it can't be removed. Be sure you want to permanently move the account to an enterprise.
    {: important}
 
-After a few moments, your enterprise is created, and you can view the enterprise dashboard. Click **Accounts** to view the two accounts in your enterprise.
+After a few moments, your enterprise is created, and you can view the enterprise dashboard. Your IBMid is listed as the contact. The contact serves as a focal point for any enterprise concerns, such as billing or usage questions. You're also assigned as the enterprise account owner, so you can invite additional users to manage the enterprise.
+
+Click **Accounts** to view your enterprise hierarchy, which contains two accounts.
 
 * The enterprise account, which is where you invite users and grant access to manage the enterprise.
 * The account that you used to create the enterprise. Its users and resources remain the same, but billing is now managed by the enterprise.
 
+## Creating an enterprise by using the CLI
+{: #create-cli}
+
+1. Log in, and select the account.
+
+   ```
+   ibmcloud login
+   ```
+   {:codeblock}
+1. Create the enterprise by running the following command, where `NAME` is a unique name to identify the enterprise.
+
+   ```
+   ibmcloud enterprise create NAME [-d, --domain DOMAIN_NAME] [--primary-contact-id PRIMARY_CONTACT_USER_ID]
+   ```
+   {:codeblock}
+
+   For example, the following command creates an enterprise that is named `Example Corp Enterprise` with the `examplecorp.com` domain.
+
+   ```
+   ibmcloud enterprise create "Example Corp Enterprise" -d examplecorp.com
+   ```
+   {:codeblock}
+
+   By default, the enterprise is created with the currently logged-in user in the following roles:
+      * The contact for the enterprise, which identifies a focal person to notify with enterprise-related concerns
+      * The owner of the enterprise account, which has full access to manage the enterprise account
+
+   You can specify the IBMid for a different user on the `--primary-contact-id` option. The same user is assigned to both roles.
+1. Review the impact to your account, and confirm that you want to continue by entering `y`.
+   ```
+   Account abcde12345fghij67890 will be incorporated into enterprise My new enterprise
+   (which cannot be undone). Do you want to proceed? [y/N]> y
+   ```
+
+After the enterprise is created, two new IDs are displayed. The first ID is associated with the enterprise, and the second ID identifies the enterprise account, which you use to manage the enterprise.
+
+```
+ID:                      09876jihgf54321edcba   
+Enterprise Account ID:   edcba12345jihgf67890
+```
+
+The account that you used to create the enterprise is now a part of the enterprise. Run the [`ibmcloud enterprise accounts`](/docs/cli?topic=cloud-cli-ibmcloud_enterprise#ibmcloud_enterprise_accounts) command to view the two accounts in your enterprise: the enterprise account, and the account you used to create the enterprise.
+
 ## Creating an enterprise by using the API
 {: #create-api}
 
-You can programmatically create an enterprise by calling the Enterprise Management API as shown in the following sample request. For detailed information about the API, see <!--[Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-enterprise){: external}--> Enterprise Management API.
+You can programmatically create an enterprise by calling the Enterprise Management API as shown in the following sample request. <!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-enterprise){: external}.-->
 
 ```
 curl -X POST \
@@ -65,7 +110,7 @@ curl -X POST \
   "source_account_id": "a1b2c32a5ea94809a9840f5e23c362d",
   "name": "Sample Enterprise",
   "domain": "example.com",
-  "owner_iam_id": "IBMid-0123ABC"
+  "primary_contact_iam_id": "IBMid-0123ABC"
 }'
 ```
 {: codeblock}
@@ -74,3 +119,5 @@ curl -X POST \
 {: #create-next-steps}
 
 Build out your enterprise structure by adding more existing accounts or creating new accounts within your enterprise. For more information, see [Adding accounts to your enterprise](/docs/account?topic=account-enterprise-add).
+
+You can also invite additional users to the enterprise account so that they can help manage the enterprise. For example, you might want to invite a financial officer to manage billing and track usage costs, and invite department leads to administer accounts. See [Inviting users](/docs/iam?topic=iam-iamuserinv) for more information about how to invite users.

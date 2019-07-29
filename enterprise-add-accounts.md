@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-25"
+lastupdated: "2019-07-29"
 
 keywords: enterprise, add account, import account, create account
 
@@ -54,11 +54,33 @@ To import an existing account, complete the following steps:
    After the account is imported to the enterprise, it can't be removed. Be sure you want to permanently move the account to the enterprise.
    {: important}
 
+### Importing accounts by using the CLI
+{: #add-account-cli}
+
+1. Find the ID of the account that you want to import to the enterprise.
+
+   ```
+   ibmcloud account list
+   ```
+   {: codeblock}
+1. If you want to add the account to an account group, find the names and IDs of existing account groups in the enterprise.
+
+   ```
+   ibmcloud enterprise account-groups --recursive
+   ```
+   {: codeblock}
+1. Import the account into the enterprise, specifying the account ID for the `--account ID` parameter. If you don't specify a parent account group, the account is added directly under the enterprise.
+
+   ```
+   ibmcloud enterprise account-import --account-id ID
+   [--parent-account-group ACCOUNT_GROUP_NAME | --parent-account-group-id ACCOUNT_GROUP_ID]
+   ```
+   {: codeblock}
 
 ### Importing accounts by using the API
 {: #add-account-api}
 
-To import an existing account to the enterprise, call the <!--[Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#import-an-account-into-an-enterprise){: external}--> as shown in the following sample request. Replace the {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) token and ID variables with the values from your enterprise.
+To import an existing account to the enterprise, call the <!-- [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#import-an-account-into-an-enterprise){: external}--> Enterprise Management API as shown in the following sample request. Replace the {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) token and ID variables with the values from your enterprise.
 
 ```
 curl -X PUT \
@@ -84,10 +106,27 @@ You can create new accounts within your enterprise. The accounts are created as 
 
 After you create the account, the account owner can log in to the account to invite other users and manage their access.
 
+### Creating accounts by using the CLI
+{: #create-accounts-cli}
+
+1. If you want to add the account to an account group, find the names and IDs of existing account groups.
+
+   ```
+   ibmcloud enterprise account-groups --recursive
+   ```
+   {: codeblock}
+1. Create the account by running the following command. If you don't specify a parent account group, the account is added directly under the enterprise. To make a different user the account owner, specify their IBMid on the `--owner` option.
+
+   ```
+   ibmcloud enterprise account-create NAME
+   [--parent-account-group ACCOUNT_GROUP_NAME] [--owner USER_ID]
+   ```
+   {: codeblock}
+
 ### Creating accounts by using the API
 {: #create-account-api}
 
-To create a new account in the enterprise, call the Enterprise Management API as shown in the following sample request, replacing the IAM token and ID variables with the values from your enterprise. <!--For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-a-new-account-in-an-enterprise){: external}-->.
+To create a new account in the enterprise, call the Enterprise Management API as shown in the following sample request, replacing the IAM token and ID variables with the values from your enterprise. <!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-a-new-account-in-an-enterprise){: external}. -->
 
 ```
 curl -X POST \
