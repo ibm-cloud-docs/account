@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-30"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -60,7 +60,7 @@ To upgrade from a Lite account to a Subscription account, complete the following
    {:tip}
 1. Review your subscription details, and then enter your payment information.
 
-   After your payment information is processed, your subscription credit is added to your account. You can monitor your subscription usage on this same Subscriptions page. See [Managing subscriptions](/docs/billing-usage?topic=billing-usage-subscriptions for more information.
+   After your payment information is processed, your subscription credit is added to your account. You can monitor your subscription usage on this same Subscriptions page. See [Managing subscriptions](/docs/billing-usage?topic=billing-usage-subscriptions) for more information.
 
 Your subscription renews automatically. If you want to discontinue your subscription renewal, [contact support](https://{DomainName}/unifiedsupport/supportcenter).
 {: note}
