@@ -25,11 +25,11 @@ Your {{site.data.keyword.Bluemix}} account includes many interacting components 
 
 Within the following diagram, there are two main concepts for the components in the account hierarchy that are important to understand. The use of the solid lines and the dotted lines help illustrate that some components are contained within others, for example, users are added to access groups or Cloud Foundry orgs. However, some components interact with others for providing access instead of membership. For example, users are given access to resource groups but are not members of a resource group the same way they are for access groups. 
 
+<figure>
 <a href="https://cloud.ibm.com/docs/api/content/account/images/account_diagram.svg">
-  <img src="images/account_diagram.svg" alt="A diagram that shows the components in an account, including services, users, and the subcomponents of each.">
-</a>
-
-Figure 1. Account components and systems
+<img src="images/account_diagram.svg" alt="A diagram that shows the components in an account, including services, users, and the subcomponents of each."></a>
+<figcaption>Figure 1. Account components and systems</figcaption>
+</figure>
 
 <dl>
 <dt>Users</dt>
