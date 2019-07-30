@@ -466,5 +466,82 @@
       "The page wasn't loaded because IBM Cloud didn't detect whether a session exists",
       "BXNUI0016E",
       "The apps and services weren't retrieved because an IBM Cloud page didn't load"
+    ],
+    "lite-to-enterprise": [
+      "import lite into enterprise",
+      "importing lite account into enterprises",
+      "migrate lite account to enterprise",
+      "add lite to enterprise",
+      "lite addition to an enterprise"
+    ],
+    "remove-enterprise": [
+      "remove my account from enterprises",
+      "removing from enterprise",
+      "take out accounts from enterprise",
+      "deleting from an enterprise",
+      "enterprise account deletion"
+    ],
+    "move-enterprise-account": [
+      "moving an account within an enterpise",
+      "account move in enterprises",
+      "transfer account in enterprise",
+      "enterprise account transferring",
+      "account movement within enterprise"
+    ],
+    "move-account-group": [
+      "move enterprise's account group",
+      "account group movement within an enterprise",
+      "move group within an enterprise",
+      "group moving within an enterprise",
+      "move a group out of an enterprise"
+    ],
+    "rename-enterprise-account": [
+      "changing the name of the account in an enterprise",
+      "enterprise account name change",
+      "updating enterprise's account name",
+      "edit account name within an enterprise",
+      "account name editing for enterprises"
+    ],
+    "enterprise-invite-users": [
+      "inviting other users to my enterprise",
+      "ask a user to join an enterprise",
+      "users joining our enterprise",
+      "invitation to a user to an enterprise",
+      "enterprise invite for users"
+    ],
+    "troubleshoot-view-enterprise": [
+      "can't see the entire enterprise hierarchy",
+      "not seeing the complete enterprise",
+      "unable to view enterprise hierarchy",
+      "view the hierarchy and missing accounts",
+      "complete hierarchy not visible"
+    ],
+    "troubleshoot-existing-enterprise": [
+      "can't see the existing account as an option to add",
+      "error trying to add an existing account to enterprise",
+      "my current account not available to add to the enterprise",
+      "unable to add account to enterprise",
+      "account not available for adding to an enterprise"
+    ],
+    "troubleshoot-add-enterprise": [
+      "can't click add account in the enterprise",
+      "can't create an account to the enterprise",
+      "in enterprise, why can't I add an account",
+      "issue adding an enterprise account",
+      "unable in my enterprise to add account"
+    ],
+    "troubleshoot-viewsub-enterprise": [
+      "can't view the Subscriptions page from a child account",
+      "don't have permission to view subscription data for this account",
+      "don't have permission to view this information",
+      "trying to view subscriptions of enterprise",
+      "unable to view enterprise subscriptions"
+    ],
+    "troubleshoot-promo-enterprise": [
+      "can't apply a subscription code to enterprise account",
+      "unable to add to my enterpise a subscription code",
+      "add a feature code to child account on the enterprise",
+      "subscription code addition to enterprise",
+      "issue adding subscription code to enterprise"
     ]
 }
