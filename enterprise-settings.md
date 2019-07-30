@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-25"
 
 keywords: enterprise, enterprise settings, manage enterprise, view enterprise, rename enterprise
 
@@ -55,7 +55,7 @@ Also, you can rename your enterprise by clicking **Rename** in the Enterprise de
 ## Managing your enterprise by using the API
 {: #enterprise-manage-api}
 
-You can programmatically update an enterprise by calling the Enterprise Management API as shown in the following sample request. You can update the enterprise name or domain by passing the new values on the API call. <!--For detailed information about the API, see the [Enterprise Management API documentation](https://{DomainName}/apidocs/enterprise-apis/enterprise#update-an-enterprise){: external}.-->
+You can programmatically update an enterprise by calling the Enterprise Management API as shown in the following sample request. You can update the enterprise name or domain by passing the new values on the API call. For detailed information about the API, see the [Enterprise Management API documentation](https://{DomainName}/apidocs/enterprise-apis/enterprise#update-an-enterprise){: external}.
 
 ```
 curl -X PATCH \

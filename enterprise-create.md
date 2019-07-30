@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-25"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, multiple account
 
@@ -99,7 +99,7 @@ The account that you used to create the enterprise is now a part of the enterpri
 ## Creating an enterprise by using the API
 {: #create-api}
 
-You can programmatically create an enterprise by calling the Enterprise Management API as shown in the following sample request. <!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-enterprise){: external}.-->
+You can programmatically create an enterprise by calling the Enterprise Management API as shown in the following sample request. For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-enterprise){: external}.
 
 ```
 curl -X POST \

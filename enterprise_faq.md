@@ -25,7 +25,7 @@ subcollection: account
 {: #lite-to-enterprise}
 {: faq}
 
-Yes, but your Lite account is automatically upgraded to a Pay-As-You-Go account. Billing for the account is then managed at the enterprise level. For more information, see [Upgrading your account](/docs/account?topic=account-upgrading-account).
+Yes, but your Lite account is automatically upgraded to a Pay-As-You-Go account. Billing for the account is then managed at the enterprise level. For more information, see [Centrally managing billing and usage with enterprises](https://cloud.ibm.com/docs/billing-usage?topic=billing-usage-enterprise).
 
 ## Can I remove my account from an enterprise?
 {: #remove-enterprise}
