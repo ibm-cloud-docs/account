@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-07-17"
+lastupdated: "2019-07-29"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -17,10 +17,10 @@ subcollection: account
 {:faq: data-hd-content-type='faq'}
 {:tip: .tip}
 
-# FAQs for account
+# FAQs for accounts
 {: #accountfaqs}
 
-FAQs for your {{site.data.keyword.cloud}} might include questions about lite accounts, reassigning users, account errors, or account tags. To find all FAQs for {{site.data.keyword.cloud_notm}}, see our FAQ library.
+FAQs for your {{site.data.keyword.cloud}} might include questions about Lite accounts, reassigning users, account errors, or account tags. To find all FAQs for {{site.data.keyword.cloud_notm}}, see our FAQ library.
 {: shortdesc}
 
 ## How do I create an account?
@@ -171,7 +171,7 @@ To understand how IBM handles your personal information, see the [IBM Privacy St
 
 Your account might be deactivated for the following reasons:
 
-- For trial accounts, the trial period ended. To reactivate your account, log in to your account and upgrade it to a Pay-As-You-Go account.
+- For trial accounts, the trial period ended. To reactivate your account, log in to your account and upgrade it to a Pay-As-You-Go account. Your account might take a few days to fully reactivate.
 - An authorized user canceled the account.
 - The account is suspended. At the discretion of IBM, accounts that violate the acceptable usage behaviors of the {{site.data.keyword.Bluemix_notm}} services can be disabled without notice. Some services can be restored if users correct their usage behaviors after they're notified of the offensive action.
 
@@ -181,7 +181,7 @@ If you believe your account was deactivated in error, contact support by calling
 {: #contactsupport}
 {: faq}
 
-Click **Support** from the console menu bar to go to the Support Center. Learn more about support in [Getting support](/docs/get-support?topic=get-support-support-plans).
+Click **Support** from the console menu bar to go to the Support Center. For more information, see [Getting support](/docs/get-support?topic=get-support-support-plans).
 
 ## Can I sign up for a free trial?
 {: #freetrial}
@@ -270,6 +270,18 @@ If you have more than one account, you can click your account name in the consol
 You can transfer ownership of individual resources within your account to someone else by using the `ibmcloud catalog` command. To learn more, see [Transferring ownership of a private resource](/docs/account?topic=account-include#owners).
 
 To transfer ownership of your entire account, update your [company profile](https://{DomainName}/account/company-profile). For more information, see [Transferring ownership of your account](/docs/account?topic=account-transfer).
+
+## How do I change the name or IBMid in my profile?
+{: #change-profile-settings}
+{: faq}
+
+You can change your personal information, such as name, email, or phone number, by going to the Avatar icon![Avatar icon](../icons/i-avatar-icon.svg) **>  Profile and settings**. You can't change your IBMid, but you can create a new one if appropriate. The [IBMid worldwide help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html) is available to help with general ID questions not related to your {{site.data.keyword.Bluemix_notm}} account.
+
+## How do I change the language associated with my account?
+{: #switch-account-lang}
+{: faq}
+
+The language used is based on your web browser settings. To view content in your native language, update your browser's language settings.
 
 ## Does {{site.data.keyword.Bluemix_notm}} support batch registration of users?
 {: #batch-registration}

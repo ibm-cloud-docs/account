@@ -142,7 +142,7 @@
       "cancel my account",
       "need my account cancelled",
       "suspend this account",
-      "how to deactivate the account"  
+      "how to deactivate the account"
     ],
     "deleteaccount": [
       "delete my account",
@@ -257,6 +257,21 @@
       "accounts I am in",
       "which accounts am I affiliated with",
       "what accounts are in my name"
+    ],
+    "change-profile-settings": [
+      "change user id",
+      "update userid",
+      "edit my IBM ID",
+      "change contact name",
+      "change email",
+      "update phone number",
+      "edit personal information"
+    ],
+     "switch-account-lang": [
+      "change language to english",
+      "change account language",
+      "switch language",
+      "update language setting"
     ],
     "switch-between-accounts": [
       "switch multiple accounts",
