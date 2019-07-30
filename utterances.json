@@ -492,13 +492,13 @@
       "move enterprise's account group",
       "account group movement within an enterprise",
       "move group within an enterprise",
-      "group moving within an enterprise",
+      "move account group",
       "move a group out of an enterprise"
     ],
     "rename-enterprise-account": [
       "changing the name of the account in an enterprise",
       "enterprise account name change",
-      "updating enterprise's account name",
+      "updating account name in enterprise",
       "edit account name within an enterprise",
       "account name editing for enterprises"
     ],
@@ -517,11 +517,11 @@
       "complete hierarchy not visible"
     ],
     "troubleshoot-existing-enterprise": [
-      "can't see the existing account as an option to add",
-      "error trying to add an existing account to enterprise",
-      "my current account not available to add to the enterprise",
-      "unable to add account to enterprise",
-      "account not available for adding to an enterprise"
+      "can't see the existing account as an option to import",
+      "error trying to import an existing account to enterprise",
+      "my current account not available to import to the enterprise",
+      "unable to import account to enterprise",
+      "import account to enterprise"
     ],
     "troubleshoot-add-enterprise": [
       "can't click add account in the enterprise",
@@ -533,7 +533,7 @@
     "troubleshoot-viewsub-enterprise": [
       "can't view the Subscriptions page from a child account",
       "don't have permission to view subscription data for this account",
-      "don't have permission to view this information",
+      "view enterprise subscription",
       "trying to view subscriptions of enterprise",
       "unable to view enterprise subscriptions"
     ],
