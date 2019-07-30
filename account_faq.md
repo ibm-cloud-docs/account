@@ -133,7 +133,7 @@ For more information, see [Setting email preferences](/docs/account?topic=accoun
 {: #reset-password}
 {: faq}
 
-To reset your account password, go to the Avatar icon ![Avatar icon](../icons/i-avatar-icon.svg) **> Profile and settings**. Then, click **Change or reset** from the Account user information tile.
+To reset your account password, go to the **Avatar** icon ![Avatar icon](../icons/i-avatar-icon.svg) **> Profile and settings**. Then, click **Change or reset** from the Account user information tile.
 
 To reset your VPN password, complete the following steps:
 
@@ -275,7 +275,7 @@ To transfer ownership of your entire account, update your [company profile](http
 {: #change-profile-settings}
 {: faq}
 
-You can change your personal information, such as name, email, or phone number, by going to the Avatar icon![Avatar icon](../icons/i-avatar-icon.svg) **>  Profile and settings**. You can't change your IBMid, but you can create a new one if appropriate. The [IBMid worldwide help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html) is available to help with general ID questions not related to your {{site.data.keyword.Bluemix_notm}} account.
+You can change your personal information, such as name, email, or phone number, by going to the **Avatar** icon ![Avatar icon](../icons/i-avatar-icon.svg) **>  Profile and settings**. You can't change your IBMid, but you can create a new one if appropriate. The [IBMid worldwide help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html) is available to help with general ID questions not related to your {{site.data.keyword.Bluemix_notm}} account.
 
 ## How do I change the language associated with my account?
 {: #switch-account-lang}
