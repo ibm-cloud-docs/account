@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-11"
+lastupdated: "2019-07-31"
 
 keywords: change owner, transfer account, transfer account ownership, switch owner, transfer owner
 
@@ -43,7 +43,11 @@ The {{site.data.keyword.cloud_notm}} team reviews the changes before they go int
 ## Transferring an account from another owner
 {: #transfer-lost}
 
-If the owner of an account left your company and you need to transfer the account to a new owner, you must submit a support case. In the support case, you'll need to attach an official document from your company that contains the following information.
+If the owner of an account left your company and you need to transfer the account, you must choose a new owner and then submit a support case to request a transfer. 
+
+The new owner must be a user in the account and can't be the owner of another {{site.data.keyword.cloud_notm}} account. If the user isn't in the account, another user can invite them to the account or you can request to add them to the account in the support case that you create. If they already own an {{site.data.keyword.cloud_notm}} account, you can request to move the account that they currently own to another user or cancel the account.
+
+In the support case to request an account transfer, you must attach an official document from your company that contains the following information.
 - Your official company letterhead
 - Your company's article of incorporation, if applicable
 - A statement that the individual is no longer associated with your company
