@@ -47,7 +47,7 @@ When you set up your enterprise, you create an enterprise hierarchy that reflect
 For example, your company might create accounts for each team, with resource groups or Cloud Foundry orgs within the account for development, testing, and production environments. Another company might have distinct accounts for each environment, which are grouped into account groups for each team.
 
 However you choose to structure your enterprise, be as consistent as possible to simplify enterprise management. Because it's easy to create and keep track of new accounts, it can be tempting to create lots of separate accounts as users request them. However, each account introduces additional management overhead. As you plan how to structure your enterprise, keep in mind the following points.
-- For each account you create, users must be invited and their access must be managed separately.
+- For each account that you create, users must be invited and their access must be managed separately.
 - An inconsistent structure can make it harder to determine who to give access within each account and which teams are using resources.
 - Users can collaborate on resources and services only within an account. Resources can't be moved between accounts.
 
