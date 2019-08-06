@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-08-06"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -57,14 +57,14 @@ If you sign in to {{site.data.keyword.Bluemix_notm}} and the log in process is d
 {: #ts_old_username}
 {: troubleshoot}
 
-To successfully log into your email, you would have to make sure you have IBMid authentication for each account.
+To successfully log in to the {{site.data.keyword.Bluemix_notm}} console, make sure you have IBMid authentication for each account.
 
-When you log in to the {{site.data.keyword.Bluemix_notm}} console, the following message is displayed:
+When you log in to the console, the following message is displayed:
 {: tsSymptoms}
 
 `We didn't recognize this IBMid or email.`
 
-You tried to log in to the console, but didn't use a valid IBMid. For example, you didn't enter a fully qualified email address for the IBMid, or you tried to use a previous username and password.
+You tried to log in to the console, but didn't use a valid IBMid. For example, you didn't enter a fully qualified email address for the IBMid, or you tried to use a previous user name and password.
 {: tsCauses}
 
 You must have a valid IBMid and password to log in to {{site.data.keyword.Bluemix_notm}}.
@@ -94,9 +94,7 @@ To create an {{site.data.keyword.Bluemix_notm}} account, follow the sign up proc
 {: #ts_login_stalls}
 {: troubleshoot}
 
-When you get a login success message, but you don't return to the console.
-
-When you log in using your IBMid, a login success message is displayed, but you don't return to the [{{site.data.keyword.Bluemix_notm}} console](https://{DomainName}){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
+When you log in using your IBMid, a login success message is displayed, but you don't return to the {{site.data.keyword.Bluemix_notm}} console.
 {: tsSymptoms}
 
 Use one of the following options:
@@ -109,7 +107,7 @@ Use one of the following options:
 {: #ts_login_ibmid}
 {: troubleshoot}
 
-If you log in to {{site.data.keyword.Bluemix_notm}} and the authentication of your IBMid doesn't complete, then there might be a problem with the service.
+If you log in to {{site.data.keyword.Bluemix_notm}} and the authentication of your IBMid doesn't complete, there might be a problem with the service.
 
 When you log in to {{site.data.keyword.Bluemix_notm}}, authenticating with IBMid doesn't complete.
 {: tsSymptoms}
@@ -117,7 +115,7 @@ When you log in to {{site.data.keyword.Bluemix_notm}}, authenticating with IBMid
 There might be a problem with the IBMid authentication service.
 {: tsCauses}
 
-Make sure you can log in to [IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon"). if you can, it is an application problem and you can try logging in to the console again later. If you can't log in to that page, contact the [IBMid help desk ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}.  
+Make sure you can log in to [IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon"). If you can, it is an application problem and you can try logging in to the console again later. If you can't log in to that page, contact the [IBMid help desk ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}.  
 {: tsResolve}
 
 
@@ -138,19 +136,19 @@ The confirmation email is sent to the email address that is associated with your
 
 ```
 To complete your registration, check your email.
-Can't find the email? Resend
+Can't find the email? Resend.
 ```
 {:screen}
 
-Click **Resend** to send another confirmation email to the email address that is associated with your IBMid. If you still can't complete your registration, contact [{{site.data.keyword.Bluemix_notm}} support](/docs/get-support?topic=get-support-getting-customer-support).  
+Click **Resend** to send another confirmation email to the email address that is associated with your IBMid. If you still can't complete your registration, contact [{{site.data.keyword.Bluemix_notm}} Support](/docs/get-support?topic=get-support-getting-customer-support).  
 
 ## Why do I encounter console pages that don't load?
 {: #ts_err}
 {: troubleshoot}
 
-When you use the {{site.data.keyword.Bluemix_notm}} console, you might not be able to load a console page. Instead, you might see error messages BXNUI0001E or BXNUI0016E.
+When you use the {{site.data.keyword.Bluemix_notm}} console, you might not be able to load a console page. Instead, error messages BXNUI0001E or BXNUI0016E might be displayed.
 
-You might see one of the following error messages:
+One of the following error messages might be displayed:
 {: tsSymptoms}
 
 `BXNUI0001E: The page wasn't loaded because {{site.data.keyword.Bluemix_notm}} didn't detect whether a session exists.`
@@ -171,12 +169,12 @@ Complete one or more of the following actions, as necessary:
 {: #troubleshoot-infrastructure-access}
 {: troubleshoot}
 
-When you attempt to access infrastructure sections of the IBM Cloud console, you see a message that states:
+When you attempt to access infrastructure sections of the IBM Cloud console, the following message might be displayed:
 {: tsSymptoms}
 
 `This page can't be loaded because your infrastructure account is not fully configured as an IBM Cloud account.`
 
-There are multiple reasons why you might see this error message:
+There are multiple reasons why the message is displayed:
 {: tsCauses}
 
 * You have a [Lite account](/docs/account?topic=account-accounts#liteaccount), which does not allow access to infrastructure services.
