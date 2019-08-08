@@ -6,14 +6,20 @@
 アカウントの管理
 
     {: .navgroup id="learn"}
-    bp_account.md
+    index.md
     account_overview.md
     lite-account-show-me.md
+    bp_account.md
+
+    {: .topicgroup}
+    エンタープライズを使用した複数アカウントの一元管理
+        enterprises.md
+        enterprise-tutorial.md
+        enterprise-video.md
+        bp_enterprise.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-    index.md
-
     {: .topicgroup}
     アカウントのセットアップ
         adminpublic.md
@@ -31,8 +37,6 @@
         contact_info.md
         email.md
 
-    softlayerlink.md
-
     {: .topicgroup}
     組織の管理
         orgs_spaces.md
@@ -44,17 +48,40 @@
         include.md
         exclude.md
 
+    {: .topicgroup}
+    エンタープライズのセットアップ
+        enterprise-create.md
+        enterprise-add-accounts.md
+        enterprise-organize-accounts.md
+        enterprise-settings.md
+
     audit_log.md
+    softlayerlink.md
     transfer.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
     monitoring.md
-    [コマンド・リファレンス](/cli/cloud-cli-ibmcloud_commands_account)
+
+    {: .topicgroup}
+    コマンド・リファレンス
+        [アカウント、ユーザー、および Cloud Foundry 組織の管理](/cli/cloud-cli-ibmcloud_commands_account)
+        [エンタープライズ、アカウント・グループ、およびアカウントの管理](/cli/cloud-cli-ibmcloud_enterprise)
+
+    {: .topicgroup}
+    API リファレンス
+        [ユーザー管理](https://{DomainName}/apidocs/user-management){: new_window}
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    account_faq.md
-    ts_accessing.md
-    ts_accounts.md
+    {: .topicgroup}
+    FAQ
+        account_faq.md
+        enterprise_faq.md
+
+    {: .topicgroup}
+    トラブルシューティング
+        ts_accessing.md
+        ts_accounts.md
+        ts_enterprise.md
     {: .navgroup-end}

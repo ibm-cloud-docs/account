@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-17"
+lastupdated: "2019-07-29"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -24,7 +24,7 @@ subcollection: account
 Lite-Konten vereinfachen den Einstieg in {{site.data.keyword.Bluemix}} und das Ausprobieren von Services. Wenn Sie Ihr Konto erweitern möchten, können Sie ein Upgrade auf ein nutzungsabhängiges Konto oder ein Abonnementkonto durchführen, damit Ihnen der gesamte Katalog einsatzbereiter Services zur Verfügung steht.
 {:shortdesc}
 
-Den aktuellen Kontotyp können Sie überprüfen, indem Sie unter **Verwalten > Konto > Kontoeinstellungen** die Option _Kontotyp_ aufrufen.
+Den aktuellen Kontotyp können Sie überprüfen, indem Sie unter **Verwalten > Konto > Kontoeinstellungen** die Option 'Kontotyp' aufrufen.
 
 Sie sind nicht sicher, auf welchen Kontotyp Sie das Upgrade durchführen sollen? Detaillierte Informationen zu den Vorteilen der jeweiligen Kontotypen finden Sie in [Kontotypen](/docs/account?topic=account-accounts).
 {: tip}
@@ -36,9 +36,14 @@ Wenn Sie ein Upgrade für Ihr Konto durchführen möchten, benötigen Sie die Ro
 
 Bei einem nutzungsabhängigen Konto fallen nur für die Nutzung Kosten an, die über die freien Laufzeit- und Servicekontingente hinaus gehen. Nach dem Upgrade können Sie alle Instanzen, die Sie mit dem Lite-Konto erstellt haben, weiterhin verwenden.
 
-Für ein Upgrade auf ein nutzungsabhängiges Konto rufen Sie **Verwalten > Konto** auf und wählen **Kontoeinstellungen** aus. Klicken Sie anschließend auf **Kreditkarte hinzufügen** und geben Sie Ihre Zahlungsinformationen ein.
+Gehen Sie wie folgt vor, um ein Upgrade auf ein nutzungsabhängiges Konto durchzuführen:
+1. Rufen Sie **Verwalten > Konto** auf.
+1. Wählen Sie **Kontoeinstellungen** aus und klicken Sie auf **Kreditkarte hinzufügen**.
+1. Geben Sie Ihre Zahlungsinformationen ein, klicken Sie auf **Weiter** und übergeben Sie Ihre Informationen zur Verarbeitung.
 
 Nach der Verarbeitung Ihrer Zahlungsinformationen wird das Upgrade für Ihr Konto durchgeführt. Nun können Sie den gesamten {{site.data.keyword.Bluemix_notm}}-Katalog durchsuchen und darauf zugreifen. Für die Nutzung von abrechnungsfähigen Services, die über freie Kontingente hinaus geht, erhalten Sie eine monatliche Rechnung. Wenn das Upgrade eine Werbegutschrift umfasst, kann es einige Stunden dauern, bis die Gutschrift in Ihrem Konto angezeigt wird.
+
+Wenn Sie ein Upgrade durchführen, um ein inaktiviertes Konto zu reaktivieren, kann es einige Tage dauern, bis Ihr Konto vollständig verfügbar ist. Wenn Ihr Konto aber weiterhin im Wartestatus verbleibt, finden Sie entsprechende Hilfeinformationen unter [Troubleshooting for accessing {{site.data.keyword.Bluemix_notm}}](/docs/account?topic=account-accessing).
 
 ## Upgrade auf ein Abonnementkonto
 {: #upgrade-subscription}
@@ -55,7 +60,7 @@ Führen Sie die folgenden Schritte aus, um ein Upgrade von einem Lite-Konto auf 
    {:tip}
 1. Überprüfen Sie die Abonnementdetails und geben Sie dann Ihre Zahlungsinformationen ein.
 
-   Nach der Verarbeitung Ihrer Zahlungsinformationen wird die Abonnementgutschrift zu Ihrem Konto hinzugefügt.
+   Nach der Verarbeitung Ihrer Zahlungsinformationen wird die Abonnementgutschrift zu Ihrem Konto hinzugefügt. Sie können Ihre Abonnementnutzung auf derselben Abonnementseite überwachen. Weitere Informationen finden Sie unter [Abonnements verwalten](/docs/billing-usage?topic=billing-usage-subscriptions.
 
 Das Abonnement wird automatisch verlängert. Wenn Sie die Abonnementverlängerung nicht weiter fortsetzen möchten, [wenden Sie sich an das Support-Team](https://{DomainName}/unifiedsupport/supportcenter).
 {: note}

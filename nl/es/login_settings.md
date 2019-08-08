@@ -37,7 +37,7 @@ Para configurar las preguntas de seguridad:
 2. Pulse **Editar**.
 3. Seleccione las preguntas que desee y respóndalas. Debe utilizar tres opciones de preguntas de seguridad.
 4. Pulse en **Guardar** cuando haya terminado.  
-5. Para asegurarse, se marca el recuadro `Sí` para que se activen las preguntas de seguridad. Si selecciona el recuadro `Sí` es posible que se le solicite que vuelva a iniciar sesión.  
+5. Para asegurarse, se marca el recuadro `Sí` para que se activen las preguntas de seguridad. Si selecciona el recuadro `Sí` es posible que se le solicite que vuelva a iniciar la sesión en su cuenta.  
 
 Puede configurar respuestas de las tres preguntas de seguridad para obtener una autenticación adicional en el inicio de sesión. Debe configurar las preguntas de seguridad y las respuestas para que el administrador pueda habilitar este requisito de la MFA.
 
