@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-25"
+lastupdated: "2019-08-09"
 
 keywords: enterprise, enterprise account, video, what is an enterprise, introduction, intro
 
@@ -16,6 +16,7 @@ subcollection: account
 {:important: .important}
 {:tip: .tip}
 {:note: .note}
+{:script: data-hd-video='script'}
 
 # Video - Introducing {{site.data.keyword.Bluemix_notm}} enterprises
 {: #enterprise-video}
@@ -28,7 +29,8 @@ With an {{site.data.keyword.Bluemix}} enterprise, you can centrally manage billi
 </div>
 
 ## Video transcript
-{: #video-transcript}
+{: #video-transcript-enterprise}
+{: script}
 
 Your {{site.data.keyword.Bluemix_notm}} account is your home for collaboration in the cloud. As you scale up your cloud workload, you might find that you're managing multiple {{site.data.keyword.Bluemix_notm}} accounts. For example, your company might have many teams, each with one or more of their own accounts for development, testing, and production environments. Or, you might isolate certain workloads in separate accounts to meet security or compliance guidelines. As the number of accounts grows, it can become more difficult to track resource usage and associated costs.
 
@@ -38,4 +40,4 @@ Consolidated billing simplifies invoicing and payment within your enterprise. Us
 
 If you want to dive into the details to see where your money is going, you can do that. Enterprises provide top-down usage reporting so you can analyze costs for usage in your accounts and account groups. You have visibility from the enterprise level down to the resource type in each account.
 
-Whether you prefer to manage your cloud through the {{site.data.keyword.Bluemix_notm}} console, the CLI, or our robust APIs, we have the capability to fit your work style. Learn more and start creating your enterprise at https://cloud.ibm.com/enterprise.
+Whether you prefer to manage your cloud through the {{site.data.keyword.Bluemix_notm}} console, the CLI, or our robust APIs, we have the capability to fit your work style. Learn more and start creating your enterprise at `https://cloud.ibm.com/enterprise`.
