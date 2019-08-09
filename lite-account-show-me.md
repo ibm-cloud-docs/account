@@ -26,7 +26,7 @@ The Lite account is our free account that never expires. What’s offered in a L
 {: shortdesc}
 
 <p>
-  <div class="embed-responsive embed-responsive-16by9">
+  <div class="embed-responsive embed-responsive-16by9" data-hd-video="video">
     <iframe class="embed-responsive-item" id="youtubeplayer" title="IBM Cloud Lite account" type="text/html" width="640" height="390" src="https://www.youtube.com/embed/0rMYXcbpHbI" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
   </div>
 </p>
@@ -34,6 +34,7 @@ The Lite account is our free account that never expires. What’s offered in a L
 ## Video transcript
 {: #transcript-lite-account}
 {: script}
+{: notoc}
 
 The following section provides the transcript for the Lite account video for users who might need an alternative format or a translated version.
 
