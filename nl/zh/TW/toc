@@ -6,14 +6,20 @@
 管理帳戶
 
     {: .navgroup id="learn"}
-    bp_account.md
+    index.md
     account_overview.md
     lite-account-show-me.md
+    bp_account.md
+
+    {: .topicgroup}
+    使用企業集中管理多個帳戶
+        enterprises.md
+        enterprise-tutorial.md
+        enterprise-video.md
+        bp_enterprise.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-    index.md
-
     {: .topicgroup}
     設定帳戶
         adminpublic.md
@@ -31,8 +37,6 @@
         contact_info.md
         email.md
 
-    softlayerlink.md
-
     {: .topicgroup}
     管理組織及空間
         orgs_spaces.md
@@ -44,17 +48,41 @@
         include.md
         exclude.md
 
+    {: .topicgroup}
+    設定企業
+        enterprise-create.md
+        enterprise-add-accounts.md
+        enterprise-organize-accounts.md
+        enterprise-settings.md
+
     audit_log.md
+    softlayerlink.md
     transfer.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
     monitoring.md
-    [指令參考資料](/cli/cloud-cli-ibmcloud_commands_account)
+    
+
+    {: .topicgroup}
+    指令參考手冊
+        [管理帳戶、使用者及 Cloud Foundry 組織](/cli/cloud-cli-ibmcloud_commands_account)
+        [管理企業、帳戶群組及帳戶](/cli/cloud-cli-ibmcloud_enterprise)
+
+    {: .topicgroup}
+    API 參考資料
+        [使用者管理](https://{DomainName}/apidocs/user-management){: new_window}
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    account_faq.md
-    ts_accessing.md
-    ts_accounts.md
+    {: .topicgroup}
+    常見問題
+        account_faq.md
+        enterprise_faq.md
+
+    {: .topicgroup}
+    疑難排解
+        ts_accessing.md
+        ts_accounts.md
+        ts_enterprise.md
     {: .navgroup-end}

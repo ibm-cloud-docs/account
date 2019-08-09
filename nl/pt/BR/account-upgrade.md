@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-17"
+lastupdated: "2019-07-29"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -24,7 +24,7 @@ subcollection: account
 As contas Lite tornam mais fácil começar a usar o {{site.data.keyword.Bluemix}} e experimentar os serviços. Quando você estiver pronto para mais, será possível fazer upgrade de sua conta para uma conta Pré-paga ou de Assinatura para desbloquear o catálogo inteiro de serviços prontos para produção.
 {:shortdesc}
 
-É possível verificar seu tipo de conta atual acessando **Gerenciar > Conta > Configurações da conta** e procurando em _Tipo de conta_.
+É possível verificar seu tipo de conta atual acessando **Gerenciar > Conta > Configurações da conta** e procurando em Tipo de conta.
 
 Não tem certeza para qual tipo de conta você deseja fazer upgrade? Obtenha informações detalhadas sobre os benefícios de cada tipo de conta em [Tipos de conta](/docs/account?topic=account-accounts).
 {: tip}
@@ -36,9 +36,14 @@ Para fazer upgrade de sua conta, deve-se ter uma função de editor ou superior 
 
 Com uma conta Pré-paga, você paga somente pelo que você usa além dos abonos de serviço e do tempo de execução grátis. Depois de fazer upgrade, é possível continuar a usar quaisquer instâncias que você criou com sua conta Lite.
 
-Para fazer upgrade para uma conta Pré-paga, acesse **Gerenciar > Conta** e selecione **Configurações da conta**. Em seguida, clique em **Incluir cartão de crédito** e insira suas informações de pagamento.
+Para fazer upgrade para uma conta Pré-paga,
+1. Acesse **Gerenciar > Conta**.
+1. Selecione **Configurações da conta** e clique em **Incluir cartão de crédito**.
+1. Insira suas informações de pagamento, clique em **Avançar** e envie suas informações.
 
 Depois que suas informações de pagamento são processadas, sua conta é submetida a upgrade e é possível explorar e acessar o catálogo integral do {{site.data.keyword.Bluemix_notm}}. Para quaisquer serviços faturáveis que você usa além de quaisquer abonos grátis, você recebe uma fatura mensal. Se o upgrade incluiu um crédito promocional, o crédito pode levar algumas horas para aparecer em sua conta.
+
+Se você estiver fazendo upgrade para reativar uma conta desativada, poderá levar alguns dias para a sua conta estar totalmente disponível. Se a sua conta continuar em um estado pendente, consulte [Resolução de problemas para acessar o {{site.data.keyword.Bluemix_notm}}](/docs/account?topic=account-accessing) para obter ajuda.
 
 ## Fazendo upgrade para uma conta de Assinatura
 {: #upgrade-subscription}
@@ -55,7 +60,7 @@ Para fazer upgrade de uma conta Lite para uma conta de Assinatura, conclua as et
    {:tip}
 1. Revise os detalhes de sua assinatura e, em seguida, insira suas informações de pagamento.
 
-   Depois que suas informações de pagamento forem processadas, seu crédito de assinatura será incluído em sua conta.
+   Depois que suas informações de pagamento forem processadas, seu crédito de assinatura será incluído em sua conta. É possível monitorar o uso de sua assinatura na mesma página Assinaturas. Consulte [Gerenciando assinaturas] (/docs/billing-usage?topic=billing-usage-subscriptions para obter mais informações.
 
 Sua assinatura é renovada automaticamente. Se você desejar descontinuar sua renovação de assinatura, [entre em contato com o suporte](https://{DomainName}/unifiedsupport/supportcenter).
 {: note}

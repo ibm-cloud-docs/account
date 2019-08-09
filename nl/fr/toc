@@ -6,14 +6,20 @@
 Gestion de votre compte
 
     {: .navgroup id="learn"}
-    bp_account.md
+    index.md
     account_overview.md
     lite-account-show-me.md
+    bp_account.md
+
+    {: .topicgroup}
+    Gestion centrale de plusieurs comptes avec des entreprises
+        enterprises.md
+        enterprise-tutorial.md
+        enterprise-video.md
+        bp_enterprise.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-    index.md
-
     {: .topicgroup}
     Configuration de votre compte
         adminpublic.md
@@ -31,8 +37,6 @@ Gestion de votre compte
         contact_info.md
         email.md
 
-    softlayerlink.md
-
     {: .topicgroup}
     Gestion d'organisations et d'espaces
         orgs_spaces.md
@@ -44,17 +48,40 @@ Gestion de votre compte
         include.md
         exclude.md
 
+    {: .topicgroup}
+    Configuration d'une entreprise
+        enterprise-create.md
+        enterprise-add-accounts.md
+        enterprise-organize-accounts.md
+        enterprise-settings.md
+
     audit_log.md
+    softlayerlink.md
     transfer.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
     monitoring.md
-    [Référence de commande](/cli/cloud-cli-ibmcloud_commands_account)
+
+    {: .topicgroup}
+    Référence de commande
+        [Gestion des comptes, des utilisateurs et des organisations Cloud Foundry](/cli/cloud-cli-ibmcloud_commands_account)
+        [Gestion des entreprises, des groupes de comptes et des comptes](/cli/cloud-cli-ibmcloud_enterprise)
+
+    {: .topicgroup}
+    Référence d'API
+        [Gestion des utilisateurs](https://{DomainName}/apidocs/user-management){: new_window}
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    account_faq.md
-    ts_accessing.md
-    ts_accounts.md
+    {: .topicgroup}
+    Foire aux questions
+        account_faq.md
+        enterprise_faq.md
+
+    {: .topicgroup}
+    Traitement des incidents
+        ts_accessing.md
+        ts_accounts.md
+        ts_enterprise.md
     {: .navgroup-end}

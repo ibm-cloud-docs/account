@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-17"
+lastupdated: "2019-07-29"
 
-keywords: account upgrade, paid account, production account, Pay-As-You-Go, Subscription
+keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
 subcollection: account
 
@@ -24,7 +24,7 @@ subcollection: account
 Gli account Lite rendono più semplice iniziare ad utilizzare {{site.data.keyword.Bluemix}} e provare i nostri servizi. Quando sei pronto per qualcosa di più, puoi eseguire l'upgrade del tuo account a un account Pagamento a consumo o Sottoscrizione per sbloccare l'intero catalogo di servizi pronti per la produzione.
 {:shortdesc}
 
-Puoi controllare il tuo tipo di account corrente andando su **Gestisci > Account > Impostazioni account** e guardando sotto _Tipo di account_.
+Puoi controllare il tuo tipo di account corrente andando su **Gestisci > Account > Impostazioni account** e guardando sotto Tipo di account.
 
 Non sei sicuro a quale tipo di account vuoi eseguire l'upgrade? Ottieni delle informazioni dettagliate sui vantaggi di ogni tipo di account in [Tipi di account](/docs/account?topic=account-accounts).
 {: tip}
@@ -36,9 +36,14 @@ Per eseguire un upgrade del tuo account, devi avere un ruolo di editor o superio
 
 Con un account Pagamento a consumo, paghi solo per quello che utilizzi oltre le franchigie per i runtime e i servizi gratuite. Dopo aver eseguito l'upgrade, puoi continuare a utilizzare tutte le istanze che hai creato con il tuo account Lite.
 
-Per eseguire l'upgrade a un account Pagamento a consumo, vai a **Gestisci > Account** e seleziona **Impostazioni account**. Fai quindi clic su **Aggiungi carta di credito** e immetti le informazioni sul pagamento.
+Per eseguire l'aggiornamento a un account Pagamento a consumo, 
+1. Vai a **Gestisci > Account**.
+1. Seleziona **Impostazioni account** e fai clic su **Aggiungi carta di credito**.
+1. Immetti le tue informazioni di pagamento, fai clic su **Avanti** e inviale.
 
 Dopo che le informazioni sul pagamento vengono elaborate, viene eseguito l'upgrade del tuo account e puoi esplorare ed accedere al catalogo completo di {{site.data.keyword.Bluemix_notm}}. Per tutti i servizi fatturabili che utilizzi oltre le franchigie gratuite, riceverai una fattura mensile. Se il tuo upgrade include un credito promozionale, potrebbero essere necessarie alcune ore prima che venga visualizzato nel tuo account.
+
+Se stai eseguendo l'upgrade per riattivare un account disattivato, potrebbero essere necessari alcuni giorni per far tornare completamente disponibile il tuo account. Se il tuo account continua ad essere in uno stato in sospeso, vedi [Risoluzione dei problemi relativi all'accesso a {{site.data.keyword.Bluemix_notm}}](/docs/account?topic=account-accessing).
 
 ## Upgrade a un account Sottoscrizione
 {: #upgrade-subscription}
@@ -55,7 +60,7 @@ Per eseguire l'upgrade da un account Lite a un account Sottoscrizione, completa 
    {:tip}
 1. Rivedi i tuoi dettagli di sottoscrizione e poi immetti le tue informazioni sul pagamento.
 
-   Dopo che le informazioni sul pagamento vengono elaborate, viene aggiunto il credito di sottoscrizione al tuo account.
+   Dopo che le informazioni sul pagamento vengono elaborate, viene aggiunto il credito di sottoscrizione al tuo account. Puoi monitorare il tuo utilizzo della sottoscrizione su questa stessa pagina relativa alle sottoscrizioni. Per ulteriori informazioni, vedi [Gestione delle sottoscrizioni](/docs/billing-usage?topic=billing-usage-subscriptions.
 
 La tua sottoscrizione si rinnova automaticamente. Se vuoi interrompere il rinnovo della tua sottoscrizione, [contatta il supporto](https://{DomainName}/unifiedsupport/supportcenter).
 {: note}

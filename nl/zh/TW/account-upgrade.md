@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-17"
+lastupdated: "2019-07-29"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -24,7 +24,7 @@ subcollection: account
 精簡帳戶讓您能輕鬆開始使用 {{site.data.keyword.Bluemix}} 並試用服務。當您準備好接觸更多內容時，可將帳戶升級至「隨收隨付制」或「訂閱」帳戶，以解除鎖定可用於正式作業的完整服務型錄。
 {:shortdesc}
 
-您可以移至**管理 > 帳戶 > 帳戶設定**，然後在_帳戶類型_ 下尋找，來檢查您的現行帳戶類型。
+您可以移至**管理 > 帳戶 > 帳戶設定**，然後在「帳戶類型」下尋找，來檢查您的現行帳戶類型。
 
 不確定要升級到何種帳戶？請在[帳戶類型](/docs/account?topic=account-accounts)取得關於每種帳戶類型好處的相關資訊。
 {: tip}
@@ -36,9 +36,14 @@ subcollection: account
 
 使用隨收隨付制帳戶，您只需要為您使用超過免費運行環境與服務額度的部分付費。升級之後，您可以繼續使用當初以精簡帳戶建立的任何實例。
 
-若要升級至「隨收隨付制」帳戶，請移至**管理 > 帳戶**，然後選取**帳戶設定**。然後，按一下**新增信用卡**，並輸入付款資訊。
+若要升級至「隨收隨付制」帳戶，請執行下列動作：
+1. 移至**管理 > 帳戶**。
+1. 選取**帳戶設定**，然後按一下**新增信用卡**。
+1. 輸入您的付款資訊、按一下**下一步**，然後提交您的資訊。
 
 付款資訊經過處理之後，您的帳戶便已升級，您便可以探索及存取完整的 {{site.data.keyword.Bluemix_notm}} 型錄。針對任何可計費服務，如果您的用量超過任何免費額度，則會收到月份的發票。如果您的升級包含促銷額度，額度可能需要過幾個小時才會出現在您的帳戶中。
+
+如果您要升級以重新啟動已停用的帳戶，您的帳戶可能需要幾天才能完全可用。如果您的帳戶持續處於擱置狀態，請參閱[存取 {{site.data.keyword.Bluemix_notm}} 的疑難排解](/docs/account?topic=account-accessing)，以取得協助。
 
 ## 升級至訂閱帳戶
 {: #upgrade-subscription}
@@ -55,7 +60,7 @@ subcollection: account
    {:tip}
 1. 檢閱您的訂閱詳細資料，然後輸入付款資訊。
 
-   付款資訊經過處理之後，您的訂閱額度便已加到帳戶。
+   付款資訊經過處理之後，您的訂閱額度便已加到帳戶。您可以在這個相同的「訂閱」頁面上監視訂閱用量。如需相關資訊，請參閱[管理訂閱](/docs/billing-usage?topic=billing-usage-subscriptions)。
 
 您的訂閱會自動更新。如果想要停止訂閱更新，請[與支援中心聯絡](https://{DomainName}/unifiedsupport/supportcenter)。
 {: note}

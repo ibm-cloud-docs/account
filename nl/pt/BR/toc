@@ -6,14 +6,20 @@
 Gerenciando sua conta
 
     {: .navgroup id="learn"}
-    bp_account.md
+    index.md
     account_overview.md
     lite-account-show-me.md
+    bp_account.md
+
+    {: .topicgroup}
+    Gerenciando centralmente múltiplas contas com empresas
+        enterprises.md
+        enterprise-tutorial.md
+        enterprise-video.md
+        bp_enterprise.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-    index.md
-
     {: .topicgroup}
     Configurando sua conta
         adminpublic.md
@@ -31,8 +37,6 @@ Gerenciando sua conta
         contact_info.md
         email.md
 
-    softlayerlink.md
-
     {: .topicgroup}
     Gerenciando organizações e espaços
         orgs_spaces.md
@@ -44,17 +48,38 @@ Gerenciando sua conta
         include.md
         exclude.md
 
+    {: .topicgroup}
+    Configurando uma empresa
+        enterprise-create.md
+        enterprise-add-accounts.md
+        enterprise-organize-accounts.md
+        enterprise-settings.md
+
     audit_log.md
+    softlayerlink.md
     transfer.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
     monitoring.md
-    [Referência de comando](/cli/cloud-cli-ibmcloud_commands_account)
+
+    {: .topicgroup}
+    Referência de comando [Gerenciando contas, usuários e organizações do Cloud Foundry](/cli/cloud-cli-ibmcloud_commands_account)[Gerenciando empresas, grupos de contas e contas](/cli/cloud-cli-ibmcloud_enterprise)
+
+    {: .topicgroup}
+    Referência de API
+        [Gerenciamento de usuários](https://{DomainName}/apidocs/user-management){: new_window}
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    account_faq.md
-    ts_accessing.md
-    ts_accounts.md
+    {: .topicgroup}
+    Perguntas mais frequentes
+        account_faq.md
+        enterprise_faq.md
+
+    {: .topicgroup}
+    Resolução de problemas
+        ts_accessing.md
+        ts_accounts.md
+        ts_enterprise.md
     {: .navgroup-end}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-17"
+lastupdated: "2019-07-29"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -24,7 +24,7 @@ subcollection: account
 Les comptes Lite vous permettent de commencer à utiliser {{site.data.keyword.Bluemix}} et de tester les services. Lorsque vous êtes prêt à passer à l'étape suivante, vous pouvez utiliser un compte Paiement à la carte ou un compte d'abonnement. L'ensemble du catalogue de services prêts pour la production est alors déverrouillé.
 {:shortdesc}
 
-Pour connaître votre type de compte, accédez à la section **Gérer > Compte > Paramètres de compte** et consultez les données indiquées dans _Type de compte_.
+Pour connaître votre type de compte, accédez à la section **Gérer > Compte > Paramètres de compte** et consultez les données indiquées dans Type de compte. 
 
 Vous ne savez pas quel type de compte vous souhaitez désormais utiliser ? La section [Types de compte](/docs/account?topic=account-accounts) inclut des informations détaillées sur les avantages de chaque type de compte.
 {: tip}
@@ -36,9 +36,14 @@ Pour mettre à niveau votre compte, vous devez disposer du rôle Editeur ou d'un
 
 Avec un compte Paiement à la carte, vous ne payez que ce que vous utilisez au delà des franchises gratuites de services et de contexte d'exécution. Après la mise à niveau, vous pouvez continuer d'utiliser les instances créées avec votre compte Lite.
 
-Pour effectuer une mise à niveau vers un compte Paiement à la carte, sélectionnez **Gérer > Compte** puis **Paramètres de compte**. Cliquez ensuite sur **Ajouter une carte de crédit** et entrez vos informations de paiement.
+Pour effectuer une mise à niveau vers un compte Paiement à la carte :
+1. Accédez à **Gérer > Compte**.
+1. Sélectionnez **Paramètres de compte** puis cliquez sur **Ajouter une carte de crédit**.
+1. Entrez vos informations de paiement, cliquez sur **Suivant** puis soumettez vos informations.
 
 Une fois vos informations de paiement traitées, votre compte est mis à niveau et vous pouvez consulter l'ensemble du catalogue {{site.data.keyword.Bluemix_notm}}. Vous recevez une facture mensuelle pour tous les services facturables utilisés au delà de votre franchise gratuite. Si votre mise à niveau incluait un crédit promotionnel, quelques heures peuvent s'écouler avant qu'il n'apparaisse dans votre compte.
+
+Si vous effectuez une mise à niveau pour réactiver un compte désactivé, il peut être nécessaire d'attendre quelques jours avant que votre compte soit totalement disponible. Si votre compte est toujours à l'état en attente, voir [Traitement des incidents liés à l'accès à {{site.data.keyword.Bluemix_notm}}](/docs/account?topic=account-accessing) pour obtenir de l'aide.
 
 ## Mise à niveau vers un compte d'abonnement
 {: #upgrade-subscription}
@@ -55,7 +60,7 @@ Pour effectuer une mise à niveau à partir d'un compte Lite, procédez comme su
    {:tip}
 1. Consultez les détails de votre abonnement puis entrez vos informations de paiement.
 
-   Une fois vos informations de paiement traitées, votre crédit d'abonnement est ajouté à votre compte.
+   Une fois vos informations de paiement traitées, votre crédit d'abonnement est ajouté à votre compte. Vous pouvez surveiller l'utilisation des abonnements sur cette page Abonnements. Pour plus d'informations, voir [Gestion des abonnements](/docs/billing-usage?topic=billing-usage-subscriptions.
 
 Votre abonnement est automatiquement renouvelé. Si vous souhaitez l'arrêter, [contactez le support](https://{DomainName}/unifiedsupport/supportcenter).
 {: note}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-17"
+lastupdated: "2019-07-29"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -24,7 +24,7 @@ subcollection: account
 轻量帐户可让您轻松地开始使用 {{site.data.keyword.Bluemix}} 和试用服务。如果需要使用更多服务，可以将您的帐户升级为现收现付帐户或预订帐户，以解锁生产就绪型服务的整个目录。
 {:shortdesc}
 
-您可以转至**管理 > 帐户 > 帐户设置**，然后在_帐户类型_下查看您的当前帐户类型。
+您可以转至**管理 > 帐户 > 帐户设置**，然后在“帐户类型”下查看您的当前帐户类型。
 
 不确定要升级到哪种帐户？有关每种帐户类型的优点的详细信息，请参阅[帐户类型](/docs/account?topic=account-accounts)。
 {: tip}
@@ -36,9 +36,14 @@ subcollection: account
 
 使用现收现付帐户时，只需支付超出免费运行时和服务限额的费用。升级后，可以继续使用在轻量帐户下创建的任何实例。
 
-要升级为现收现付帐户，请转至**管理 > 帐户**，然后选择**帐户设置**。然后，单击**添加信用卡**，并输入您的付款信息。
+要升级到现收现付帐户，请执行以下操作：
+1. 转至**管理 > 帐户**。
+1. 选择**帐户设置**，然后单击**添加信用卡**。
+1. 输入您的付款信息，单击**下一步**，然后提交您的信息。
 
 处理完付款信息后，您的帐户就升级好了，您可以浏览和访问完整 {{site.data.keyword.Bluemix_notm}}“目录”。对于超出免费限额的任何计费服务，您会收到按月开具的发票。如果您的升级包含促销信用值，那么可能需要几个小时才能在您的帐户中看到该信用值。
+
+如果是升级以重新激活已停用的帐户，那么您的帐户可能需要几天时间才能完全可用。如果您的帐户一直处于暂挂状态，请参阅[有关访问 {{site.data.keyword.Bluemix_notm}} 的故障诊断](/docs/account?topic=account-accessing)以获取帮助。
 
 ## 升级到预订帐户
 {: #upgrade-subscription}
@@ -55,7 +60,7 @@ subcollection: account
    {:tip}
 1. 查看预订详细信息，然后输入您的付款信息。
 
-   当您处理完付款信息后，系统会将您的预订信用值添加到您的帐户中。
+   当您处理完付款信息后，系统会将您的预订信用值添加到您的帐户中。您可以在此相同的“预订”页面上监视预订使用情况。有关更多信息，请参阅[管理预订](/docs/billing-usage?topic=billing-usage-subscriptions)。
 
 您的预订会自动续订。如果要停止续订，请[联系支持人员](https://{DomainName}/unifiedsupport/supportcenter)。
 {: note}
