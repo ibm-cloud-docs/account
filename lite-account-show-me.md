@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-11-19"
+lastupdated: "2019-07-09"
 
 keywords: free account, Lite account, free service, sign up for account, Lite account video
 
@@ -17,6 +17,7 @@ subcollection: account
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:download: .download}
+{:script: data-hd-video='script'}
 
 # Video - {{site.data.keyword.cloud_notm}} Lite account
 {: #show_me_video}
@@ -32,6 +33,7 @@ The Lite account is our free account that never expires. What’s offered in a L
 
 ## Video transcript
 {: #transcript-lite-account}
+{: script}
 
 The following section provides the transcript for the Lite account video for users who might need an alternative format or a translated version.
 
