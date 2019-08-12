@@ -31,6 +31,7 @@ With an {{site.data.keyword.Bluemix}} enterprise, you can centrally manage billi
 ## Video transcript
 {: #video-transcript-enterprise}
 {: script}
+{: notoc}
 
 Your {{site.data.keyword.Bluemix_notm}} account is your home for collaboration in the cloud. As you scale up your cloud workload, you might find that you're managing multiple {{site.data.keyword.Bluemix_notm}} accounts. For example, your company might have many teams, each with one or more of their own accounts for development, testing, and production environments. Or, you might isolate certain workloads in separate accounts to meet security or compliance guidelines. As the number of accounts grows, it can become more difficult to track resource usage and associated costs.
 
