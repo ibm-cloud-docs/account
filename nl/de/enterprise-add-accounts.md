@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-26"
 
 keywords: enterprise, add account, import account, create account
 
@@ -80,7 +80,7 @@ Führen Sie die folgenden Schritte aus, um ein vorhandenes Konto zu importieren:
 ### Konten über die Anwendungsprogrammierschnittstelle (API) importieren
 {: #add-account-api}
 
-Wenn Sie ein vorhandenes Konto in das Unternehmen importieren möchten, rufen Sie die <!-- [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#import-an-account-into-an-enterprise){: external}--> Enterprise Management API auf, wie dies in der folgenden Beispielanforderung dargestellt ist. Ersetzen Sie das IAM-Token (IAM = Identity and Access Management) und die ID-Variablen von {{site.data.keyword.Bluemix_notm}} durch die Werte aus Ihrem Unternehmen.
+Wenn Sie ein vorhandenes Konto in das Unternehmen importieren möchten, rufen Sie die [Unternehmensverwaltungs-API](https://{DomainName}/apidocs/enterprise-apis/enterprise#import-an-account-into-an-enterprise){: external} auf, wie in der folgenden Beispielanforderung dargestellt. Ersetzen Sie das IAM-Token (IAM = Identity and Access Management) und die ID-Variablen von {{site.data.keyword.Bluemix_notm}} durch die Werte aus Ihrem Unternehmen.
 
 ```
 curl -X PUT \
@@ -126,7 +126,7 @@ Nachdem Sie das Konto erstellt haben, kann sich der Kontoeigner bei dem Konto an
 ### Konten über die Anwendungsprogrammierschnittstelle (API) erstellen
 {: #create-account-api}
 
-Wenn Sie ein neues Konto im Unternehmen erstellen möchten, rufen Sie die Enterprise Management API wie in der folgenden Beispielanforderung auf und ersetzen Sie das IAM-Token und ID-Variablen durch die Werte von Ihrem Unternehmen ersetzen. <!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-a-new-account-in-an-enterprise){: external}. -->
+Wenn Sie ein neues Konto im Unternehmen erstellen möchten, rufen Sie die Unternehmensverwaltungs-API wie in der folgenden Beispielanforderung auf und ersetzen Sie das IAM-Token und ID-Variablen durch die Werte Ihres Unternehmens. Detaillierte Informationen zur API finden Sie in [Unternehmensverwaltungs-API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-a-new-account-in-an-enterprise){: external}.
 
 ```
 curl -X POST \

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-08-06"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -57,9 +57,9 @@ subcollection: account
 {: #ts_old_username}
 {: troubleshoot}
 
-若要順利登入您的電子郵件，您必須確定每個帳戶都有 IBM ID 鑑別。
+若要順利登入 {{site.data.keyword.Bluemix_notm}} 主控台，您必須確定每個帳戶都有 IBM ID 鑑別。
 
-當您登入 {{site.data.keyword.Bluemix_notm}} 主控台時，顯示下列訊息：
+當您登入主控台，系統會顯示下列訊息：
 {: tsSymptoms}
 
 `We didn't recognize this IBMid or email.`
@@ -94,9 +94,7 @@ subcollection: account
 {: #ts_login_stalls}
 {: troubleshoot}
 
-當您收到登入成功訊息，但未回到主控台時。
-
-當您使用 IBM ID 登入時，會顯示登入成功訊息，但您未回到 [{{site.data.keyword.Bluemix_notm}} 主控台](https://{DomainName}){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")。
+當您使用 IBM ID 登入時，會顯示登入成功訊息，但您未回到 {{site.data.keyword.Bluemix_notm}} 主控台。
 {: tsSymptoms}
 
 請使用下列其中一個選項：
@@ -109,7 +107,7 @@ subcollection: account
 {: #ts_login_ibmid}
 {: troubleshoot}
 
-如果您登入 {{site.data.keyword.Bluemix_notm}}，但 IBM ID 鑑別未完成，則表示服務可能有問題。
+如果您登入 {{site.data.keyword.Bluemix_notm}}，且 IBM ID 鑑別未完成，則表示服務可能有問題。
 
 當您登入 {{site.data.keyword.Bluemix_notm}} 時，未完成以 IBM ID 進行鑑別。
 {: tsSymptoms}
@@ -117,7 +115,7 @@ subcollection: account
 IBM ID 鑑別服務可能有問題。
 {: tsCauses}
 
-請確定您可以登入 [IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")。如果可以，便是應用程式的問題，您可以稍後再嘗試登入主控台。如果無法登入該頁面，請洽詢 [IBM ID 服務台 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}。  
+請確定您可以登入 [IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")。如果可以登入，則是應用程式的問題，您可以稍後再嘗試登入主控台。如果無法登入該頁面，請洽詢 [IBM ID 服務台 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}。  
 {: tsResolve}
 
 
@@ -138,7 +136,7 @@ IBM ID 鑑別服務可能有問題。
 
 ```
 若要完成登錄，請檢查電子郵件。
-找不到電子郵件嗎？重新傳送
+找不到電子郵件嗎？請重新傳送。
 ```
 {:screen}
 
@@ -148,9 +146,9 @@ IBM ID 鑑別服務可能有問題。
 {: #ts_err}
 {: troubleshoot}
 
-當您使用 {{site.data.keyword.Bluemix_notm}} 主控台時，可能無法載入主控台頁面。反之，可能會看到錯誤訊息 BXNUI0001E 或 BXNUI0016E。
+當您使用 {{site.data.keyword.Bluemix_notm}} 主控台時，可能無法載入主控台頁面。反之，系統可能會顯示錯誤訊息 BXNUI0001E 或 BXNUI0016E。
 
-您可能會看到下列其中一則錯誤訊息：
+系統可能會顯示下列其中一個錯誤訊息：
 {: tsSymptoms}
 
 `BXNUI0001E: The page wasn't loaded because {{site.data.keyword.Bluemix_notm}} didn't detect whether a session exists.`
@@ -171,12 +169,12 @@ IBM ID 鑑別服務可能有問題。
 {: #troubleshoot-infrastructure-access}
 {: troubleshoot}
 
-當您嘗試存取 IBM Cloud 主控台的基礎架構區段時，會看到訊息，指出：
+當您嘗試存取 IBM Cloud 主控台的基礎架構區段時，系統可能會顯示下列訊息：
 {: tsSymptoms}
 
 `This page can't be loaded because your infrastructure account is not fully configured as an IBM Cloud account.`
 
-有多個原因可讓您看到此錯誤訊息：
+系統為何會顯示這個訊息有多個原因：
 {: tsCauses}
 
 * 您的[精簡帳戶](/docs/account?topic=account-accounts#liteaccount)不容許存取基礎架構服務。

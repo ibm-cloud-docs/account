@@ -25,7 +25,7 @@ subcollection: account
 {: #lite-to-enterprise}
 {: faq}
 
-Ja, aber für Ihr Lite-Konto wird automatisch ein Upgrade auf ein nutzungsabhängiges Konto durchgeführt. Die Abrechnung für das Konto erfolgt dann auf Unternehmensebene. Weitere Informationen finden Sie in [Upgrade für Konto durchführen](/docs/account?topic=account-upgrading-account).
+Ja, aber für Ihr Lite-Konto wird automatisch ein Upgrade auf ein nutzungsabhängiges Konto durchgeführt. Die Abrechnung für das Konto erfolgt dann auf Unternehmensebene. Weitere Informationen finden Sie unter [Abrechnung und Nutzung zentral mit Unternehmen verwalten](https://cloud.ibm.com/docs/billing-usage?topic=billing-usage-enterprise). 
 
 ## Kann ich mein Konto aus einem Unternehmen entfernen?
 {: #remove-enterprise}

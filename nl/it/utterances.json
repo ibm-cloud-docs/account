@@ -142,7 +142,7 @@
       "annulla il mio account",
       "ho bisogno di annullare il mio account",
       "sospendi questo account",
-      "come disattivo l'account"  
+      "come disattivo l'account"
     ],
     "deleteaccount": [
       "elimina il mio account",
@@ -257,6 +257,21 @@
       "account in cui sono",
       "con quali account sono affiliato",
       "quali account sono a mio nome"
+    ],
+    "change-profile-settings": [
+      "modifica ID account",
+      "aggiorna ID utente",
+      "modifica mio ID IBM",
+      "modifica nome contatto",
+      "modifica email",
+      "aggiorna numero di telefono",
+      "modifica informazioni personali"
+    ],
+     "switch-account-lang": [
+      "modifica lingua con l'inglese",
+      "modifica lingua account",
+      "cambio lingua",
+      "aggiorna impostazioni lingua"
     ],
     "switch-between-accounts": [
       "passaggio ad account multipli",
@@ -466,5 +481,82 @@
       "La pagina non è stata caricata perché IBM Cloud non ha rilevato se esiste una sessione",
       "BXNUI0016E",
       "Le applicazioni e i servizi non sono stati richiamati perché una pagina IBM Cloud non è stata caricata"
+    ],
+    "lite-to-enterprise": [
+      "importa account lite nell'azienda",
+      "importazione account lite nelle aziende",
+      "migra account lite all'azienda",
+      "aggiungi account lite all'azienda",
+      "aggiunta di account lite a un'azienda"
+    ],
+    "remove-enterprise": [
+      "rimuovi il mio account dalle aziende",
+      "rimozione dall'azienda",
+      "estrai gli account dall'azienda",
+      "eliminazione da un'azienda",
+      "eliminazione account aziendale"
+    ],
+    "move-enterprise-account": [
+      "spostamento di un account all'interno di un'azienda",
+      "spostamento dell'account nelle aziende",
+      "trasferimento dell'account nell'azienda",
+      "trasferimento dell'account aziendale",
+      "spostamento dell'account all'interno dell'azienda"
+    ],
+    "move-account-group": [
+      "sposta gruppo di account dell'azienda",
+      "spostamento gruppo di account all'interno di un'azienda",
+      "sposta gruppo all'interno di un'azienda",
+      "sposta gruppo di account",
+      "sposta un gruppo all'esterno di un'azienda"
+    ],
+    "rename-enterprise-account": [
+      "modifica del nome dell'account in un'azienda",
+      "modifica nome account aziendale",
+      "aggiornamento del nome dell'account nell'azienda",
+      "modifica nome account all'interno di un'azienda",
+      "modifica nome account per le aziende"
+    ],
+    "enterprise-invite-users": [
+      "invito di altri utenti nella mia azienda",
+      "chiedere a un utente di unirsi a un'azienda",
+      "utenti che si uniscono alla nostra azienda",
+      "invito di un utente in un'azienda",
+      "invito nell'azienda per gli utenti"
+    ],
+    "troubleshoot-view-enterprise": [
+      "impossibile visualizzare l'intera gerarchia aziendale",
+      "non si visualizza l'azienda completa",
+      "impossibile visualizzare la gerarchia aziendale",
+      "visualizza la gerarchia e account mancanti",
+      "gerarchia completa non visibile"
+    ],
+    "troubleshoot-existing-enterprise": [
+      "impossibile visualizzare l'account esistente come un'opzione per l'importazione",
+      "errore durante il tentativo di importare un account esistente nell'azienda",
+      "il mio account corrente non è disponibile per l'importazione nell'azienda",
+      "impossibile importare l'account nell'azienda",
+      "importa account nell'azienda"
+    ],
+    "troubleshoot-add-enterprise": [
+      "impossibile fare clic per aggiungere l'account nell'azienda",
+      "impossibile creare un account nell'azienda",
+      "nell'azienda, perché non posso aggiungere un account",
+      "errore durante l'aggiunta di un account aziendale",
+      "impossibile aggiungere l'account nella mia azienda"
+    ],
+    "troubleshoot-viewsub-enterprise": [
+      "impossibile visualizzare la pagina Sottoscrizioni da un account secondario",
+      "non disponi dell'autorizzazione per visualizzare i dati di sottoscrizione per questo account",
+      "visualizza sottoscrizione aziendale",
+      "tentativo di visualizzare le sottoscrizioni dell'azienda",
+      "impossibile visualizzare le sottoscrizioni dell'azienda"
+    ],
+    "troubleshoot-promo-enterprise": [
+      "impossibile applicare un codice di sottoscrizione all'account aziendale",
+      "impossibile aggiungere un codice di sottoscrizione alla mia azienda",
+      "aggiungi un codice funzione all'account secondario sull'azienda",
+      "aggiunta del codice di sottoscrizione all'azienda",
+      "errore durante l'aggiunta del codice di sottoscrizione all'azienda"
     ]
 }

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-07-18"
+lastupdated: "2019-07-29"
 
 keywords: troubleshoot enterprise, enterprise problem, account problem, enterprise support, enterprise help, error message
 
@@ -48,27 +48,29 @@ Contatta il proprietario dell'azienda per richiedere l'accesso corretto.
 
 Se sei il proprietario dell'azienda, completa la seguente procedura per assegnare a un utente l'accesso all'intera azienda:
 1. Vai a **Gestisci** > **Accesso (IAM)** > **Utenti**.
-2. Seleziona il nome dell'utente. 
+2. Seleziona il nome dell'utente.
 2. Fai clic sulla scheda **Politiche di accesso** > **Assegna accesso** > **Assegna l'accesso ai servizi di gestione dell'account**.
 3. Seleziona **Azienda** come servizio e seleziona il nome della tua azienda.
 4. Seleziona il gruppo di account o l'account nell'azienda a cui vuoi fornire l'accesso all'utente. Ad esempio, se vuoi che un utente abbia l'accesso per visualizzare un solo account, seleziona l'account e assegna all'utente il ruolo di visualizzatore o superiore. Se vuoi che un utente abbia l'accesso per visualizzare l'intera azienda, lascia la selezione di gruppo di account e account vuota e assegna l'accesso.
 
-## Perché non posso aggiungere un account esistente all'azienda?
+## Perché non posso importare un account esistente nell'azienda?
 {: #troubleshoot-existing-enterprise}
 {: troubleshoot}
 
-Quando tenti di aggiungere un account esistente all'azienda, si verifica uno dei seguenti errori:
+Quando tenti di importare un account esistente nell'azienda, si verifica uno dei seguenti errori:
 {: tsSymptoms}
 * Quando fai clic su **Aggiungi account esistente** nella sezione Account, l'account che vuoi aggiungere non è elencato.
-* Non hai l'opzione di fare clic su **Aggiungi account esistente**.
+* Non hai l'opzione di fare clic su **Importa account**.
 
-Non ti è stato assegnato l'accesso corretto.
+Non ti è stato assegnato l'accesso corretto o l'account non è idoneo per essere importato.
 {: tsCauses}
 
-Se non puoi visualizzare l'account esistente elencato come opzione, hai bisogno del ruolo di amministratore sul servizio di fatturazione dell'account esistente.
+Se non puoi visualizzare l'account esistente che vuoi importare, hai bisogno del ruolo di amministratore sul servizio di fatturazione dell'account esistente.
 {: tsResolve}
 
-Per aggiungere un account esistente all'azienda, hai bisogno del ruolo di amministratore o editor sul servizio di fatturazione dell'azienda e il ruolo di amministratore o editor sul servizio dell'azienda per l'azienda o il gruppo di account principale.
+Se l'opzione **Importa account** non è disponibile, verifica di avere il ruolo di amministratore o editor sul servizio di fatturazione dell'azienda e il ruolo di amministratore o editor sul servizio dell'azienda per l'azienda o il gruppo di account principale.
+
+Se l'account che vuoi importare è un account Pagamento a consumo e non puoi ancora importarlo dopo aver verificato di avere l'accesso, l'account potrebbe non essere idoneo per essere importato nell'azienda. Alcuni account Pagamento a consumo non possono essere importati direttamente in un'azienda, come molti account Pagamento a consumo che sono fatturati in dollari americani (USD). Contatta il [settore Vendite di {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icona link esterno](../icons/launch-glyph.svg) per convertire l'account in un account Sottoscrizione e poi importalo nell'azienda.
 
 ## Perché non posso creare un nuovo account nell'azienda?
 {: #troubleshoot-add-enterprise}
@@ -111,7 +113,7 @@ Per visualizzare o gestire la fatturazione, devi essere invitato nell'account az
 Non puoi aggiungere un codice di sottoscrizione al tuo account perché non disponi dell'accesso corretto.  
 {: tsSymptoms}
 
-Poiché sei un account secondario sull'azienda, non puoi applicare i codici di sottoscrizione. I codici di sottoscrizione devono essere applicati al livello aziendale.
+Poiché il tuo account è un account secondario sull'azienda, non puoi applicare i codici di sottoscrizione. I codici di sottoscrizione devono essere applicati al livello aziendale.
 {: tsCauses}
 
 Contatta il proprietario o l'amministratore dell'azienda per aggiungere il codice di sottoscrizione. Quando viene aggiunto il codice di sottoscrizione, si applica a tutti gli account nell'azienda. Per ulteriori informazioni, vedi [Gestione delle sottoscrizioni](/docs/billing-usage?topic=billing-usage-subscriptions).

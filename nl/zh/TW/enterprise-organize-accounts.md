@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-25"
 
 keywords: enterprise, create account group, organize accounts, move accounts
 
@@ -65,7 +65,7 @@ ibmcloud enterprise account-group-create NAME
 ### 使用 API 來建立帳戶群組
 {: #create-account-groups-api}
 
-您可以透過呼叫「企業管理 API」，以程式設計方式在企業中建立帳戶群組。
+您可以透過呼叫「企業管理 API」，以程式化方式在企業中建立帳戶群組。
 
 下列要求範例會直接在企業層級下建立帳戶群組。當您呼叫 API 時，請將 ID 變數取代為您企業的值。若要在另一個帳戶群組內巢狀內嵌帳戶群組，請以下列格式指定「雲端資源名稱 (CRN)」中帳戶群組的 ID：`crn:v1:bluemix:public:enterprise::a/$ENTERPRISE_ACCOUNT_ID::account-group:$ACCOUNT_GROUP_ID`。
 
@@ -82,7 +82,7 @@ curl -X POST \
 ```
 {: codeblock}
 
-<!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-account-group){: external}.-->
+如需 API 的詳細資訊，請參閱[企業管理 API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-account-group){: external}。
 
 ## 在企業內移動帳戶
 {: #move-accounts}
@@ -129,7 +129,7 @@ curl -X POST \
 ### 使用 API 來移動帳戶
 {: #move-account-api}
 
-您可以呼叫「企業管理 API」來移動帳戶，如下列要求範例所示。將 IAM 記號及 ID 變數取代為您企業的值。
+您可以呼叫「企業管理 API」來移動帳戶，如下列範例要求所示。將 IAM 記號及 ID 變數取代為您企業的值。
 
 ```
 curl -X PATCH \
@@ -142,4 +142,4 @@ curl -X PATCH \
 ```
 {: codeblock}
 
-<!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#move-an-account-with-the-enterprise){: external}. -->
+如需 API 的詳細資訊，請參閱[企業管理 API](https://{DomainName}/apidocs/enterprise-apis/enterprise#move-an-account-with-the-enterprise){: external}。

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-30"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -61,6 +61,7 @@ subcollection: account
 1. 檢閱您的訂閱詳細資料，然後輸入付款資訊。
 
    付款資訊經過處理之後，您的訂閱額度便已加到帳戶。您可以在這個相同的「訂閱」頁面上監視訂閱用量。如需相關資訊，請參閱[管理訂閱](/docs/billing-usage?topic=billing-usage-subscriptions)。
+
 
 您的訂閱會自動更新。如果想要停止訂閱更新，請[與支援中心聯絡](https://{DomainName}/unifiedsupport/supportcenter)。
 {: note}

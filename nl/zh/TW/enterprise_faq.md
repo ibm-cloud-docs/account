@@ -25,7 +25,7 @@ subcollection: account
 {: #lite-to-enterprise}
 {: faq}
 
-是，但您的「精簡」帳戶會自動升級至「隨收隨付制」帳戶。 然後，在企業層級管理帳戶的計費。如需相關資訊，請參閱[升級帳戶](/docs/account?topic=account-upgrading-account)。
+是，但您的「精簡」帳戶會自動升級至「隨收隨付制」帳戶。 然後，在企業層級管理帳戶的計費。如需相關資訊，請參閱[使用企業集中管理計費及用量](https://cloud.ibm.com/docs/billing-usage?topic=billing-usage-enterprise)。
 
 ## 是否可以從企業中移除我的帳戶？
 {: #remove-enterprise}

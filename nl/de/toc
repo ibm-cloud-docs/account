@@ -2,7 +2,7 @@
 {:topicgroup: .topicgroup}
 {:utterance .utterance}
 
-{: .toc subcollection="account" audience="platform" arm="3397214" href="/docs/account?topic=account-account_setup" path="account"}
+{:  .toc subcollection="account" category="platform_services" audience="platform" arm="3397214" href="/docs/account?topic=account-account_setup" path="account"}
 Eigenes Konto verwalten
 
     {: .navgroup id="learn"}
@@ -71,6 +71,7 @@ Eigenes Konto verwalten
     {: .topicgroup}
     API-Referenz
         [Benutzerverwaltung](https://{DomainName}/apidocs/user-management){: new_window}
+        [Unternehmensverwaltung](https://{DomainName}/apidocs/enterprise-apis/enterprise){: new_window}
     {: .navgroup-end}
 
     {: .navgroup id="help"}

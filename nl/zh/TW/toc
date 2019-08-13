@@ -2,7 +2,7 @@
 {:topicgroup: .topicgroup}
 {:utterance .utterance}
 
-{: .toc subcollection="account" audience="platform" arm="3397214" href="/docs/account?topic=account-account_setup" path="account"}
+{:  .toc subcollection="account" category="platform_services" audience="platform" arm="3397214" href="/docs/account?topic=account-account_setup" path="account"}
 管理帳戶
 
     {: .navgroup id="learn"}
@@ -62,7 +62,6 @@
 
     {: .navgroup id="reference"}
     monitoring.md
-    
 
     {: .topicgroup}
     指令參考手冊
@@ -72,6 +71,7 @@
     {: .topicgroup}
     API 參考資料
         [使用者管理](https://{DomainName}/apidocs/user-management){: new_window}
+        [企業管理](https://{DomainName}/apidocs/enterprise-apis/enterprise){: new_window}
     {: .navgroup-end}
 
     {: .navgroup id="help"}

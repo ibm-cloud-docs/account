@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-08-06"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -57,9 +57,9 @@ Se esegui l'accesso a {{site.data.keyword.Bluemix_notm}} e il processo di access
 {: #ts_old_username}
 {: troubleshoot}
 
-Per accedere correttamente alla tua email, devi assicurarti di avere l'autenticazione ID IBM per ciascun account.
+Per accedere correttamente alla console {{site.data.keyword.Bluemix_notm}}, assicurati di avere l'autenticazione ID IBM per ciascun account.
 
-Quando accedi alla console {{site.data.keyword.Bluemix_notm}}, viene visualizzato il seguente messaggio:
+Quando accedi alla console, viene visualizzato il seguente messaggio:
 {: tsSymptoms}
 
 `ID IBM o indirizzo e-mail non riconosciuto.`
@@ -94,9 +94,7 @@ Per creare un account {{site.data.keyword.Bluemix_notm}}, segui il processo di r
 {: #ts_login_stalls}
 {: troubleshoot}
 
-Quando ottieni un messaggio di accesso eseguito correttamente ma non ritorni alla console.
-
-Quando esegui l'accesso utilizzando il tuo ID IBM, viene visualizzato un messaggio di accesso eseguito correttamente ma non ritorni alla [console {{site.data.keyword.Bluemix_notm}}](https://{DomainName}){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno").
+Quando esegui l'accesso utilizzando il tuo ID IBM, viene visualizzato un messaggio di accesso eseguito correttamente ma non ritorni alla console {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
 
 Utilizza una delle seguenti opzioni:
@@ -138,7 +136,7 @@ L'email di conferma viene inviata all'indirizzo email associato al tuo ID IBM. C
 
 ```
 Per completare la registrazione, controlla la tua e-mail.
-Non riesci a trovare l'email? Invia nuovamente
+Non riesci a trovare l'email? Riesegui l'invio.
 ```
 {:screen}
 
@@ -148,9 +146,9 @@ Fai clic su **Invia nuovamente** per inviare un'altra email di conferma all'indi
 {: #ts_err}
 {: troubleshoot}
 
-Quando utilizzi la console {{site.data.keyword.Bluemix_notm}}, potresti non riuscire a caricare una pagina della console. Potresti visualizzare invece i messaggi di errore BXNUI0001E o BXNUI0016E.
+Quando utilizzi la console {{site.data.keyword.Bluemix_notm}}, potresti non riuscire a caricare una pagina della console. Potrebbero invece essere visualizzati i messaggi di errore BXNUI0001E o BXNUI0016E.
 
-Potresti vedere uno dei seguenti messaggi di errore:
+Potrebbe essere visualizzato uno dei seguenti messaggi di errore:
 {: tsSymptoms}
 
 `BXNUI0001E: La pagina non è stata caricata perché {{site.data.keyword.Bluemix_notm}} non ha rilevato se esiste una sessione.`
@@ -172,12 +170,12 @@ riesegui l'accesso.
 {: #troubleshoot-infrastructure-access}
 {: troubleshoot}
 
-Quando tenti di accedere alle sezioni dell'infrastruttura della console IBM Cloud, visualizzi un messaggio che indica:
+Quando tenti di accedere alle sezioni dell'infrastruttura della console IBM Cloud, potrebbe essere visualizzato il seguente messaggio:
 {: tsSymptoms}
 
 `This page can't be loaded because your infrastructure account is not fully configured as an IBM Cloud account.`
 
-Esistono molti motivi per cui potresti visualizzare questo messaggio di errore:
+Esistono molti motivi sul perché viene visualizzato il messaggio:
 {: tsCauses}
 
 * Hai un [account Lite](/docs/account?topic=account-accounts#liteaccount), che non permette l'accesso ai servizi dell'infrastruttura.

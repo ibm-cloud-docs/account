@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-11"
+lastupdated: "2019-07-31"
 
 keywords: change owner, transfer account, transfer account ownership, switch owner, transfer owner
 
@@ -43,7 +43,11 @@ Das {{site.data.keyword.cloud_notm}}-Team überprüft die Änderungen, bevor die
 ## Konto von einem anderen Eigner übertragen
 {: #transfer-lost}
 
-Wenn der Eigner eines Kontos das Unternehmen verlässt und Sie das Konto an einen neuen Eigner übertragen müssen, müssen Sie einen Supportfall übergeben. In diesem Supportfall müssen Sie ein offizielles Dokument Ihres Unternehmens anhängen, das die nachfolgend aufgeführten Informationen enthält.
+Wenn der Eigner eines Kontos das Unternehmen verlässt und Sie das Konto übertragen müssen, müssen Sie einen neuen Eigner auswählen und dann einen Supportfall öffnen, um eine Übertragung anzufordern.  
+
+Der neue Eigner muss ein Benutzer in dem betreffenden Konto sein und darf nicht der Eigner eines anderen {{site.data.keyword.cloud_notm}}-Kontos sein. Wenn sich der Benutzer nicht im Konto befindet, kann er von einem anderen Benutzer eingeladen werden oder Sie können in dem Supporfall, den Sie erstellt haben, anfordern, dass der Benutzer zum Konto hinzugefügt wird. Wenn der Benutzer bereits Eigner eines {{site.data.keyword.cloud_notm}}-Kontos ist, können Sie anfordern, dass das aktuelle Konto dieses Benutzers an einen anderen Benutzer übertragen oder storniert wird. 
+
+Im Supportfall zum Anfordern einer Kontoübertragung müssen Sie ein offizielles Dokument Ihres Unternehmens anfügen, das die nachfolgend aufgeführten Informationen enthält. 
 - Offizieller Briefkopf des Unternehmens
 - Satzung des Unternehmens, falls zutreffend
 - Erklärung, dass die betreffende Person nicht mehr zum Unternehmen gehört

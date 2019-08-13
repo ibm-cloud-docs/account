@@ -2,7 +2,7 @@
 {:topicgroup: .topicgroup}
 {:utterance .utterance}
 
-{: .toc subcollection="account" audience="platform" arm="3397214" href="/docs/account?topic=account-account_setup" path="account"}
+{:  .toc subcollection="account" category="platform_services" audience="platform" arm="3397214" href="/docs/account?topic=account-account_setup" path="account"}
 Gestione del tuo account
 
     {: .navgroup id="learn"}
@@ -70,7 +70,8 @@ Gestione del tuo account
 
     {: .topicgroup}
     Guida di riferimento API
-        [Gestione utente](https://{DomainName}/apidocs/user-management){: new_window}
+        [Gestione utenti](https://{DomainName}/apidocs/user-management){: new_window}
+        [Enterprise Management](https://{DomainName}/apidocs/enterprise-apis/enterprise){: new_window}
     {: .navgroup-end}
 
     {: .navgroup id="help"}

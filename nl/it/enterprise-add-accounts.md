@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-26"
 
 keywords: enterprise, add account, import account, create account
 
@@ -63,7 +63,7 @@ Per importare un account esistente, completa la seguente procedura:
    ibmcloud account list
    ```
    {: codeblock}
-1. Se vuoi aggiungere l'account a un gruppo di account, trova i nomi e gli ID dei gruppi di account esistenti nell'azienda. 
+1. Se vuoi aggiungere l'account a un gruppo di account, trova i nomi e gli ID dei gruppi di account esistenti nell'azienda.
 
    ```
    ibmcloud enterprise account-groups --recursive
@@ -80,7 +80,7 @@ Per importare un account esistente, completa la seguente procedura:
 ### Importazione degli account utilizzando l'API
 {: #add-account-api}
 
-Per importare un account esistente nell'azienda, richiama l'<!-- [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#import-an-account-into-an-enterprise){: external}-->API Enterprise Management come mostrato nella seguente richiesta di esempio. Sostituisci le variabili ID e il token {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) con i valori dalla tua azienda.
+Per importare un account esistente nell'azienda, richiama l'[API Enterprise Management](https://{DomainName}/apidocs/enterprise-apis/enterprise#import-an-account-into-an-enterprise){: external} come mostrato nella seguente richiesta di esempio. Sostituisci le variabili ID e il token {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) con i valori dalla tua azienda.
 
 ```
 curl -X PUT \
@@ -109,7 +109,7 @@ Dopo aver creato l'account, il proprietario dell'account può accedere all'accou
 ### Creazione degli account utilizzando la CLI
 {: #create-accounts-cli}
 
-1. Se vuoi aggiungere l'account a un gruppo di account, trova i nomi e gli ID dei gruppi di account esistenti. 
+1. Se vuoi aggiungere l'account a un gruppo di account, trova i nomi e gli ID dei gruppi di account esistenti.
 
    ```
    ibmcloud enterprise account-groups --recursive
@@ -126,7 +126,7 @@ Dopo aver creato l'account, il proprietario dell'account può accedere all'accou
 ### Creazione degli account utilizzando l'API
 {: #create-account-api}
 
-Per creare un nuovo account nell'azienda, richiama l'API Enterprise Management come mostrato nella seguente richiesta di esempio, sostituendo le variabili ID e il token IAM con i valori dalla tua azienda. <!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-a-new-account-in-an-enterprise){: external}. -->
+Per creare un nuovo account nell'azienda, richiama l'API Enterprise Management come mostrato nella seguente richiesta di esempio, sostituendo le variabili ID e il token IAM con i valori dalla tua azienda. Per informazioni dettagliate sull'API, vedi [API Enterprise Management](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-a-new-account-in-an-enterprise){: external}.
 
 ```
 curl -X POST \

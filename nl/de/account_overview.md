@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-07-15"
 
 keywords: IBM Cloud account, account differences, account overview, account components, how access works
 
@@ -23,12 +23,13 @@ subcollection: account
 Das {{site.data.keyword.Bluemix}}-Konto umfasst zahlreiche Komponenten und Systeme, die interagieren. Konzepte wie z. B. die Vorgehensweise zum Verbinden von Komponenten oder wie der Zugriff funktioniert, geben Ihnen eine Verständnisgrundlage für das Einrichten Ihres Kontos.
 {:shortdesc}
 
+Das folgende Diagramm enthält zwei Hauptkonzepte für die Komponenten in der Kontohierarchie, die von zentraler Bedeutung sind. Mithilfe der durchgezogenen und der gepunkteten Linien wird dargestellt, dass einige Komponenten in anderen Komponente enthalten sind. Ein Beispiel hierfür sind Benutzer, die zu Zugriffsgruppen oder Cloud Foundry-Organisationen hinzugefügt werden. Einige Komponenten interagieren jedoch mit anderen Komponenten, um Zugriff zu ermöglichen, nicht weil eine Zugehörigkeit besteht. Ein Beispiel hierfür sind Benutzer, die Zugriff auf Ressourcengruppen erhalten. Die Benutzer sind jedoch keine Mitglieder einer Ressourcengruppe wie sie beispielsweise Mitglieder einer Zugriffsgruppe sind. 
+
+<figure>
 <a href="https://cloud.ibm.com/docs/api/content/account/images/account_diagram.svg">
-  <img src="images/account_diagram.svg" alt="Diagramm mit den Komponenten eines Kontos, darunter Services, Benutzer und die jeweils zugehörigen Unterkomponenten."> </a>
-
-Abbildung 1. Kontokomponenten und -systeme
-
-Das Diagramm enthält zwei Hauptkonzepte für die Komponenten in der Kontohierarchie, die von zentraler Bedeutung sind. Mithilfe der durchgezogenen und der gepunkteten Linien wird dargestellt, dass einige Komponenten in anderen Komponente enthalten sind. Ein Beispiel hierfür sind Benutzer, die zu Zugriffsgruppen oder Cloud Foundry-Organisationen hinzugefügt werden. Einige Komponenten interagieren jedoch mit anderen Komponenten, um Zugriff zu ermöglichen, nicht weil eine Zugehörigkeit besteht. Ein Beispiel hierfür sind Benutzer, die Zugriff auf Ressourcengruppen erhalten. Die Benutzer sind jedoch keine Mitglieder einer Ressourcengruppe wie sie beispielsweise Mitglieder einer Zugriffsgruppe sind. Diese Konzepte werden auch in den folgenden Abschnitten erläutert.
+<img src="images/account_diagram.svg" alt="Diagramm mit den Komponenten in einem Konto, einschließlich Services, Benutzer und zugehörige Unterkomponenten"></a>
+<figcaption>Abbildung 1. Kontokomponenten und Systeme</figcaption>
+</figure>
 
 <dl>
 <dt>Benutzer</dt>

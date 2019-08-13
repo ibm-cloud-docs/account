@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-25"
 
 keywords: enterprise, create account group, organize accounts, move accounts
 
@@ -65,7 +65,7 @@ ibmcloud enterprise account-group-create NAME
 ### Kontogruppen über die Anwendungsprogrammierschnittstelle erstellen
 {: #create-account-groups-api}
 
-Sie können programmgesteuert eine Kontogruppe im Unternehmen erstellen, indem Sie die Enterprise Management API aufrufen.
+Sie können programmgesteuert eine Kontogruppe im Unternehmen erstellen, indem Sie die Unternehmensverwaltungs-API aufrufen. 
 
 Die folgende Beispielanforderung erstellt eine Kontogruppe direkt unter der Unternehmensebene. Wenn Sie die API aufrufen, ersetzen Sie die ID-Variablen durch die Werte aus Ihrem Unternehmen. Wenn Sie die Kontogruppe in einer anderen Kontogruppe verschachteln möchten, geben Sie die ID der Kontogruppe im Cloudressourcennamen (Cloud Resource Name, CRN) im folgenden Format ein: `crn:v1:bluemix:public:enterprise::a/$ENTERPRISE_ACCOUNT_ID::account-group:$ACCOUNT_GROUP_ID`.
 
@@ -82,7 +82,7 @@ curl -X POST \
 ```
 {: codeblock}
 
-<!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-account-group){: external}.-->
+Detaillierte Informationen zur API finden Sie in [Unternehmensverwaltungs-API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-account-group){: external}.
 
 ## Konten innerhalb des Unternehmens verschieben
 {: #move-accounts}
@@ -129,7 +129,7 @@ Um ein Konto zu verschieben, benötigen Sie die Rolle "Administrator" für den A
 ### Konten über die Anwendungsprogrammierschnittstelle (API) verschieben
 {: #move-account-api}
 
-Sie können ein Konto verschieben, indem Sie die Enterprise Management API aufrufen, wie dies in der folgenden Beispielanforderung dargestellt ist. Ersetzen Sie das IAM-Token und die ID-Variablen durch die Werte aus Ihrem Unternehmen.
+Sie können ein Konto verschieben, indem Sie die Unternehmensverwaltungs-API aufrufen, wie in der folgenden Beispielanforderung dargestellt. Ersetzen Sie das IAM-Token und die ID-Variablen durch die Werte aus Ihrem Unternehmen.
 
 ```
 curl -X PATCH \
@@ -142,4 +142,4 @@ curl -X PATCH \
 ```
 {: codeblock}
 
-<!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#move-an-account-with-the-enterprise){: external}. -->
+Detaillierte Informationen zur API finden Sie in [Unternehmensverwaltungs-API](https://{DomainName}/apidocs/enterprise-apis/enterprise#move-an-account-with-the-enterprise){: external}.

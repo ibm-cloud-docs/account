@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-25"
 
 keywords: enterprise, enterprise settings, manage enterprise, view enterprise, rename enterprise
 
@@ -55,7 +55,7 @@ Inoltre, puoi ridenominare la tua azienda facendo clic su **Ridenomina** nella s
 ## Gestione della tua azienda utilizzando l'API
 {: #enterprise-manage-api}
 
-Puoi aggiornare in modo programmatico un'azienda richiamando l'API Enterprise Management come mostrato nella seguente richiesta di esempio. Puoi aggiornare il nome o il dominio dell'azienda passando i nuovi valori sulla chiamata API. <!--For detailed information about the API, see the [Enterprise Management API documentation](https://{DomainName}/apidocs/enterprise-apis/enterprise#update-an-enterprise){: external}.-->
+Puoi aggiornare in modo programmatico un'azienda richiamando l'API Enterprise Management come mostrato nella seguente richiesta di esempio. Puoi aggiornare il nome o il dominio dell'azienda passando i nuovi valori sulla chiamata API. Per informazioni dettagliate sull'API, vedi la [documentazione API Enterprise Management](https://{DomainName}/apidocs/enterprise-apis/enterprise#update-an-enterprise){: external}.
 
 ```
 curl -X PATCH \

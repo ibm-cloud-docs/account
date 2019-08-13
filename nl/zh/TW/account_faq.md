@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-07-29"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -17,10 +17,10 @@ subcollection: account
 {:faq: data-hd-content-type='faq'}
 {:tip: .tip}
 
-# 帳戶的常見問題解答
+# 帳戶的常見問題 (FAQ)
 {: #accountfaqs}
 
-{{site.data.keyword.cloud}} 的常見問題可能包括有關精簡帳戶、重新指派使用者、帳戶錯誤或者帳戶標籤的問題。要尋找 {{site.data.keyword.cloud_notm}} 的所有常見問題，請參閱我們的常見問題庫。
+{{site.data.keyword.cloud}} 的常見問題可能包括精簡帳戶、重新指派使用者、帳戶錯誤或者帳戶標籤的相關問題。要尋找 {{site.data.keyword.cloud_notm}} 的所有常見問題，請參閱我們的常見問題庫。
 {: shortdesc}
 
 ## 如何建立帳戶？
@@ -133,7 +133,7 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 {: #reset-password}
 {: faq}
 
-若要重設帳戶密碼，請移至「虛擬人像」圖示 ![「虛擬人像」圖示](../icons/i-avatar-icon.svg) **設定檔和設定**。然後，按一下帳戶使用者資訊磚中的**變更或重設**。
+若要重設帳戶密碼，請移至**虛擬人像**圖示 ![「虛擬人像」圖示](../icons/i-avatar-icon.svg) **> 設定檔和設定**。然後，按一下帳戶使用者資訊磚中的**變更或重設**。
 
 若要重設 VPN 密碼，請完成下列步驟：
 
@@ -171,7 +171,7 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 
 停用您帳戶的原因如下：
 
-- 對於試用帳戶，試用期間已結束。若要重新啟動帳戶，請登入您的帳戶並將其升級為「隨收隨付制」帳戶。
+- 對於試用帳戶，試用期間已結束。若要重新啟動帳戶，請登入您的帳戶並將其升級為「隨收隨付制」帳戶。您的帳戶需要花費幾天的時間來完全重新啟動。
 - 授權使用者已取消帳戶。
 - 帳戶已暫停。如果帳戶違反 {{site.data.keyword.Bluemix_notm}} 服務可接受的使用行為，IBM 將逕行停權，而不另行通知。如果使用者在收到違規動作通知之後，更正其使用行為，可還原部分服務。
 
@@ -181,7 +181,7 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 {: #contactsupport}
 {: faq}
 
-按一下主控台功能表列中的**支援**，以移至「支援中心」。請在[取得協助](/docs/get-support?topic=get-support-support-plans)中進一步瞭解支援。
+按一下主控台功能表列中的**支援**，以移至「支援中心」。如需相關資訊，請參閱[取得支援](/docs/get-support?topic=get-support-support-plans)。
 
 ## 我可以註冊免費試用嗎？
 {: #freetrial}
@@ -190,6 +190,12 @@ Cloud Foundry 是可透過 {{site.data.keyword.Bluemix_notm}} Public 取得的�
 {{site.data.keyword.Bluemix_notm}} 精簡帳戶可用來存取免費的精簡方案服務。只要您想要便可以一直使用這些服務，且不會被收費，您的帳戶也永不到期。[註冊精簡帳戶](https://{DomainName}/registration)。
 
 {{site.data.keyword.Bluemix_notm}} 試用帳戶可在認證合格的學術機構中提供給教職師及學生。若要符合試用帳戶的資格，請移至 [Harness the Power of IBM ![外部鏈結圖示](../icons/launch-glyph.svg)](https://ibm.biz/academic){: new_window}，並驗證機構認證。與精簡帳戶不同，試用帳戶會在其試用期間結束之後到期。
+
+## 我能用我的 SoftLayer ID 登入 {{site.data.keyword.Bluemix_notm}} 主控台嗎？
+{: #slid}
+{: faq}
+
+是的，您可以使用您的 SoftLayer ID 登入主控台。請移至[登入頁面](https://cloud.ibm.com/login){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")，然後從 **ID** 清單選取 **SoftLayer ID**。  
 
 ## 鏈結我的帳戶之後，要如何登入？
 {: #al_login}
@@ -264,6 +270,18 @@ IBM Cloud 主控台標頭會列出與您登入 ID 相連結的所有帳戶（包
 您可以使用 `ibmcloud catalog` 指令，將帳戶內個別資源的所有權轉移給某個人。若要進一步瞭解，請參閱[轉移專用資源的所有權](/docs/account?topic=account-include#owners)。
 
 若要轉移整個帳戶的所有權，請更新[公司設定檔](https://{DomainName}/account/company-profile)。如需相關資訊，請參閱[轉移帳戶的所有權](/docs/account?topic=account-transfer)。
+
+## 如何變更我的設定檔中的名稱或 IBM ID？
+{: #change-profile-settings}
+{: faq}
+
+您可以移至**虛擬人像**圖示 ![「虛擬人像」圖示](../icons/i-avatar-icon.svg) **>  設定檔和設定**來變更個人資訊，例如姓名、電子郵件或電話號碼。您無法變更您的 IBM ID，但是您可以建立新的 IBM ID（若適當的話）。可以使用 [IBMid worldwide help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html) 來協助處理與您的 {{site.data.keyword.Bluemix_notm}} 帳戶無關的一般 ID 問題。
+
+## W如何變更與我的帳戶相關聯的語言？
+{: #switch-account-lang}
+{: faq}
+
+使用的語言是根據您的 Web 瀏覽器設定。若要以您的本國語言檢視內容，請更新您的瀏覽器語言設定。
 
 ## {{site.data.keyword.Bluemix_notm}} 是否支援批次登錄使用者？
 {: #batch-registration}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-25"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, multiple account
 
@@ -29,7 +29,7 @@ Crea un'azienda {{site.data.keyword.Bluemix}} da un account Sottoscrizione esist
 Per creare un'[azienda {{site.data.keyword.Bluemix_notm}}](/docs/account?topic=account-enterprise), devi essere il proprietario dell'account o avere il ruolo di amministratore sul servizio di gestione dell'account di fatturazione in un account Sottoscrizione.
 
 L'account Sottoscrizione che utilizzi per creare l'azienda viene spostato in modo permanente nell'azienda. Lo spostamento dell'account nell'azienda ha i seguenti impatti:
-* La fatturazione per le transizioni dell'account viene [gestita dall'azienda](/docs/billing-usage?topic=billing-usage-enterprise). Dopo la transizione, gli utenti nell'account non possono accedere alle informazioni di pagamento e fatturazione, come le fatture, i pagamenti o le sottoscrizioni per i successivi periodi di fatturazione. Per visualizzare o gestire la fatturazione, gli utenti devono essere invitati nell'account aziendale e gli deve essere dato l'accesso al servizio di fatturazione in tale account. 
+* La fatturazione per le transizioni dell'account viene [gestita dall'azienda](/docs/billing-usage?topic=billing-usage-enterprise). Dopo la transizione, gli utenti nell'account non possono accedere alle informazioni di pagamento e fatturazione, come le fatture, i pagamenti o le sottoscrizioni per i successivi periodi di fatturazione. Per visualizzare o gestire la fatturazione, gli utenti devono essere invitati nell'account aziendale e gli deve essere dato l'accesso al servizio di fatturazione in tale account.
 * Gli utenti e le autorizzazioni di accesso all'interno dell'account non vengono modificati. L'accesso nell'account è separato dall'azienda e gli utenti non ottengono automaticamente l'accesso nell'azienda quando l'account viene aggiunto. Tuttavia, come precedentemente menzionato, le informazioni di fatturazione non sono più disponibili nell'account indipendentemente dalle autorizzazioni di accesso.
 * Le risorse all'interno dell'account non vengono modificate. Gli utenti con autorizzazioni di accesso corrette possono continuare a visualizzare le informazioni di utilizzo delle risorse nell'account.
 
@@ -99,7 +99,7 @@ L'account che hai utilizzato per creare l'azienda fa ora parte dell'azienda. Ese
 ## Creazione di un'azienda utilizzando l'API
 {: #create-api}
 
-Puoi creare in modo programmatico un'azienda richiamando l'API Enterprise Management come mostrato nella seguente richiesta di esempio. <!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-enterprise){: external}.-->
+Puoi creare in modo programmatico un'azienda richiamando l'API Enterprise Management come mostrato nella seguente richiesta di esempio. Per informazioni dettagliate sull'API, vedi [API Enterprise Management](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-enterprise){: external}.
 
 ```
 curl -X POST \

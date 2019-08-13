@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-08-02"
 
 keywords: account types, Lite, free account, paid account, buy account, account difference, compare account, subscription, service bundle
 
@@ -73,7 +73,7 @@ subcollection: account
 ## 隨收隨付制帳戶
 {: #paygo}
 
-使用隨收隨付制帳戶，您可以存取完整的 {{site.data.keyword.Bluemix_notm}} 型錄，包括所有免費方案，且您每個月會得到兩倍的免費運行環境記憶體 512 MB。您只需支付所使用的可計費服務，不會有任何長期合約或承諾消費。
+使用隨收隨付制帳戶，您可以存取完整的 {{site.data.keyword.Bluemix_notm}} 型錄，包括所有免費方案，且您每個月會得到兩倍的免費運行環境記憶體 512 MB。您只需支付所使用的可計費服務，不會有任何長期合約或承諾消費。升級至「隨收隨付制」帳戶時，您會收到 [$200 元額度](#upgrade-lite-account)來協助您開始使用。
 
 您可以建立多個資源群組來輕鬆管理配額，以及檢視一組資源的計費用量。您的費用是根據 {{site.data.keyword.Bluemix_notm}} 運算及服務的用量。如果您的用量超過免費的運行環境和服務額度，則會收到月份的發票，其中會提供關於資源費用的詳細資料。
 
@@ -102,7 +102,7 @@ subcollection: account
 服務組合訂閱無法透過 {{site.data.keyword.Bluemix_notm}} 主控台取得。若要進一步瞭解及購買服務組合，請與 [{{site.data.keyword.Bluemix_notm}} 銷售人員 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} 聯絡。
 {:tip}
 
-購買服務組合訂閱之後，您會收到一封電子郵件，內含特性碼可供您套用以將組合新增至您的帳戶。如需如何套用特性碼的相關資訊，請參閱[套用特性碼](/docs/account?topic=account-codes)。服務組合到期，或是您已使用所有額度時，可以繼續使用任何服務，用量將會以隨收隨付制費率收費。
+購買服務組合訂閱後，您會收到一封電子郵件，其中包含將組合新增到您的帳戶時要套用的訂閱碼。如需如何套用訂閱碼的相關資訊，請參閱[管理訂閱](/docs/billing-usage?topic=billing-usage-subscriptions)。服務組合到期，或是您已使用所有額度時，可以繼續使用任何服務，用量將會以隨收隨付制費率收費。
 
 ## 升級帳戶
 {: #upgrade-lite-account}

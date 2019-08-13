@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-08-02"
 
 keywords: account types, Lite, free account, paid account, buy account, account difference, compare account, subscription, service bundle
 
@@ -73,7 +73,7 @@ Die folgende Liste enthält zentrale Features, die mit einem Lite-Konto zur Verf
 ## Nutzungsabhängiges Konto
 {: #paygo}
 
-Mit einem nutzungsabhängigen Konto verfügen Sie über Zugriff auf den gesamten {{site.data.keyword.Bluemix_notm}}-Katalog, einschließlich aller kostenfreien Pläne, und Sie erhalten mit 512 MB pro Monat die doppelte Menge an freiem Laufzeitspeicher. Gebühren fallen nur für die von Ihnen genutzten abrechnungsfähigen Services an, ohne langfristige Verträge oder Verpflichtungen.
+Mit einem nutzungsabhängigen Konto verfügen Sie über Zugriff auf den gesamten {{site.data.keyword.Bluemix_notm}}-Katalog, einschließlich aller kostenfreien Pläne, und Sie erhalten mit 512 MB pro Monat die doppelte Menge an freiem Laufzeitspeicher. Gebühren fallen nur für die von Ihnen genutzten abrechnungsfähigen Services an, ohne langfristige Verträge oder Verpflichtungen. Wenn Sie ein Upgrade auf ein nutzungsabhängiges Konto durchführen, erhalten Sie zum Einstieg ein [Guthaben von $ 200](#upgrade-lite-account). 
 
 Sie können mehrere Ressourcengruppen erstellen, um Kontingente ohne großen Aufwand zu verwalten und um Informationen zu Abrechnung und Nutzung für eine Gruppe von Ressourcen anzuzeigen. Die für Sie anfallenden Gebühren richten Sie nach Ihrer Nutzung von {{site.data.keyword.Bluemix_notm}}-Berechnungen und -Services. Wenn die Nutzung das kostenfreie Laufzeit- und Servicekontingent überschreitet, erhalten Sie eine monatliche Rechnung, die Details zu den Ressourcengebühren enthält.
 
@@ -102,7 +102,7 @@ Sie können Servicepakete zu jedem vorhandenen Kontotyp hinzufügen, auch zu Lit
 Serviceabonnementpakete sind nicht über die {{site.data.keyword.Bluemix_notm}}-Konsole verfügbar. Wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}}-Vertrieb ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}, wenn Sie weitere Informationen benötigen oder ein Servicepaket erwerben möchten.
 {:tip}
 
-Nach dem Kauf eines Serviceabonnementpakets erhalten Sie eine E-Mail mit einem Feature-Code, den Sie anwenden, um das Paket zu Ihrem Konto hinzuzufügen. Weitere Informationen zum Anwenden von Feature-Codes finden Sie in [Feature-Codes anwenden](/docs/account?topic=account-codes). Wenn das Servicepaket abläuft oder die Gutschrift verbraucht ist, können Sie die Services weiter nutzen, wobei die nutzungsabhängigen Gebühren berechnet werden.
+Nach dem Kauf eines Serviceabonnementpakets erhalten Sie eine E-Mail mit einem Abonnementcode, den Sie anwenden, um das Paket zu Ihrem Konto hinzuzufügen. Weitere Informationen zum Anwenden von Abonnementcodes finden Sie in [Abonnements verwalten](/docs/billing-usage?topic=billing-usage-subscriptions). Wenn das Servicepaket abläuft oder die Gutschrift verbraucht ist, können Sie die Services weiter nutzen, wobei die nutzungsabhängigen Gebühren berechnet werden.
 
 ## Upgrade für Konto durchführen
 {: #upgrade-lite-account}

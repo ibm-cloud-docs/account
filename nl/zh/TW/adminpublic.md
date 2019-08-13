@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-08"
+lastupdated: "2019-07-29"
 
 keywords: create account, IBMid, sign up for account, sign up
 
@@ -37,7 +37,9 @@ subcollection: account
 1. 移至 [{{site.data.keyword.Bluemix_notm}} 登入頁面](https://cloud.ibm.com/){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")，然後按一下**建立 {{site.data.keyword.Bluemix_notm}} 帳戶**。
 1. 輸入您的 IBM ID 電子郵件位址。如果您沒有現有的 IBM ID，則會根據您輸入的電子郵件建立一個 ID。
 1. 以您的資訊完成剩餘欄位，然後按一下**建立帳戶**。
+1. 按一下傳送至您所提供電子郵件位址之確認電子郵件中的鏈結來確認您的帳戶。
 
+若您使用新帳戶登入時發生問題，請參閱[存取 {{site.data.keyword.Bluemix_notm}} 的疑難排解](/docs/account?topic=account-accessing)以取得協助。
 
 ## 使用聯合 ID 進行註冊
 {: #signup-federated}

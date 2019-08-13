@@ -18,14 +18,14 @@ subcollection: account
 {:tip: .tip}
 {:note: .note}
 
-# FAQ per aziende
+# FAQ per le aziende
 {: #enterprise-faqs}
 
 ## Posso importare un account Lite in un'azienda?
 {: #lite-to-enterprise}
 {: faq}
 
-Sì, ma il tuo account Lite viene automaticamente aggiornato a un account Pagamento a consumo. La fatturazione dell'account viene quindi gestita al livello aziendale. Per ulteriori informazioni, vedi [Upgrade del tuo account](/docs/account?topic=account-upgrading-account).
+Sì, ma il tuo account Lite viene automaticamente aggiornato a un account Pagamento a consumo. La fatturazione dell'account viene quindi gestita al livello aziendale. Per ulteriori informazioni, vedi [Gestione centralizzata di fatturazione e utilizzo con le aziende](https://cloud.ibm.com/docs/billing-usage?topic=billing-usage-enterprise).
 
 ## Posso rimuovere il mio account da un'azienda?
 {: #remove-enterprise}

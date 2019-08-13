@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-08-02"
 
 keywords: account types, Lite, free account, paid account, buy account, account difference, compare account, subscription, service bundle
 
@@ -73,7 +73,7 @@ Controlla il seguente elenco di funzioni chiave disponibili in un account Lite:
 ## Account Pagamento a consumo
 {: #paygo}
 
-Con un account Pagamento a consumo, puoi accedere all'intero catalogo di {{site.data.keyword.Bluemix_notm}}, inclusi tutti i piani gratuiti e ottenere il doppio della memoria di runtime gratuita a 512 MB al mese. Pagherai solo i servizi fatturabili che utilizzi, senza impegni o contratti a lungo termine.
+Con un account Pagamento a consumo, puoi accedere all'intero catalogo di {{site.data.keyword.Bluemix_notm}}, inclusi tutti i piani gratuiti e ottenere il doppio della memoria di runtime gratuita a 512 MB al mese. Paghi solo i servizi fatturabili che utilizzi, senza impegni o contratti a lungo termine. Quando esegui l'upgrade a un account Pagamento a consumo, ricevi un [credito di $200](#upgrade-lite-account) per aiutarti a iniziare a lavorare.
 
 Puoi creare più gruppi di risorse per gestire facilmente la quota e visualizzare l'utilizzo della fatturazione per un insieme di risorse. Gli addebiti a tuo carico si basano sul tuo utilizzo di capacità di calcolo e servizi {{site.data.keyword.Bluemix_notm}}. Se superi le franchigie per runtime e servizi gratuite, ricevi una fattura mensile che ti fornisce i dettagli sui tuoi costi delle risorse.
 
@@ -102,7 +102,7 @@ Puoi aggiungere i bundle di servizi a qualsiasi tipo di account esistente, inclu
 Le sottoscrizioni al bundle di servizi non sono disponibili tramite la console {{site.data.keyword.Bluemix_notm}}. Per ulteriori informazioni e l'acquisto di un bundle di servizi, contatta il settore [Vendite {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 {:tip}
 
-Dopo aver acquistato una sottoscrizione al bundle di servizi, riceverai un'email con un codice funzione che devi applicare per aggiungere il bundle al tuo account. Per ulteriori informazioni su come applicare i codici funzione, vedi [Applicazione di codici funzione](/docs/account?topic=account-codes). Quando il tuo bundle di servizi scade o utilizzi tutto il credito, puoi continuare ad utilizzare tutti i servizi, con l'utilizzo addebitato alla tariffa di pagamento a consumo.
+Dopo aver acquistato una sottoscrizione al bundle di servizi, riceverai un'email con un codice sottoscrizione che devi applicare per aggiungere il bundle al tuo account. Per ulteriori informazioni su come applicare i codici sottoscrizione, vedi [Gestione delle sottoscrizioni](/docs/billing-usage?topic=billing-usage-subscriptions). Quando il tuo bundle di servizi scade o utilizzi tutto il credito, puoi continuare ad utilizzare tutti i servizi, con l'utilizzo addebitato alla tariffa di pagamento a consumo.
 
 ## Upgrade del tuo account
 {: #upgrade-lite-account}

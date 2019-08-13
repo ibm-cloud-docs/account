@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-08-06"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -57,9 +57,9 @@ Wenn Sie sich bei {{site.data.keyword.Bluemix_notm}} anmelden und der Anmeldepro
 {: #ts_old_username}
 {: troubleshoot}
 
-Für eine erfolgreiche Anmeldung mit der E-Mail-Adresse müssen Sie sicherstellen, dass für jedes Konto eine IBMid-Authentifizierung vorhanden ist.
+Für eine erfolgreiche Anmeldung bei der {{site.data.keyword.Bluemix_notm}}-Konsole müssen Sie sicherstellen, dass Sie über eine IBMid-Authentifizierung für jedes Konto verfügen. 
 
-Wenn Sie sich bei der {{site.data.keyword.Bluemix_notm}}-Konsole anmelden, wird die folgende Nachricht angezeigt:
+Wenn Sie sich bei der Konsole anmelden, wird die folgende Nachricht angezeigt:
 {: tsSymptoms}
 
 `Diese IBMid oder E-Mail-Adresse wurde nicht erkannt.`
@@ -94,9 +94,7 @@ Führen Sie den Registrierungsprozess durch, um ein {{site.data.keyword.Bluemix_
 {: #ts_login_stalls}
 {: troubleshoot}
 
-Sie erhalten eine Nachricht über die erfolgreiche Anmeldung, die Konsole wird jedoch nicht aufgerufen.
-
-Wenn Sie sich mit Ihrer IBMid anmelden, wird eine Nachricht über die erfolgreiche Anmeldung angezeigt, die [{{site.data.keyword.Bluemix_notm}}-Konsole](https://{DomainName}){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link") wird jedoch nicht aufgerufen.
+Wenn Sie sich mit Ihrer IBMid anmelden, wird eine Nachricht über die erfolgreiche Anmeldung angezeigt, die {{site.data.keyword.Bluemix_notm}}-Konsole wird jedoch nicht erneut aufgerufen.
 {: tsSymptoms}
 
 Verwenden Sie eine der folgenden Optionen:
@@ -142,13 +140,13 @@ Die E-Mail ist nicht vorhanden? Erneut senden.
 ```
 {:screen}
 
-Klicken Sie auf **Erneut senden**, damit eine weitere Bestätigungs-E-Mail an die E-Mail-Adresse gesendet wird, die Ihrer IBMid zugeordnet ist. Falls es weiterhin nicht möglich ist, die Registrierung abzuschließen, wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}}-Support](/docs/get-support?topic=get-support-getting-customer-support).  
+Klicken Sie auf **Erneut senden**, damit eine weitere Bestätigungs-E-Mail an die E-Mail-Adresse gesendet wird, die Ihrer IBMid zugeordnet ist. Falls es weiterhin nicht möglich ist, die Registrierung abzuschließen, wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}} Support](/docs/get-support?topic=get-support-getting-customer-support).  
 
 ## Warum werden Konsolenseiten nicht geladen?
 {: #ts_err}
 {: troubleshoot}
 
-Wenn Sie die {{site.data.keyword.Bluemix_notm}}-Konsole verwenden, kann es vorkommen, dass Sie eine Konsolenseite nicht laden können. Stattdessen können die Fehlernachrichten BXNUI0001E oder BXNUI0016E angezeigt werden.
+Wenn Sie die {{site.data.keyword.Bluemix_notm}}-Konsole verwenden, kann es vorkommen, dass Sie eine Konsolenseite nicht laden können. Stattdessen werden möglicherweise die Fehlernachrichten BXNUI0001E oder BXNUI0016E angezeigt. 
 
 Es wird möglicherweise eine der folgenden Fehlernachrichten angezeigt:
 {: tsSymptoms}
@@ -176,11 +174,11 @@ Wenn Sie versuchen, auf Infrastrukturabschnitte in der IBM Cloud-Konsole zuzugre
 
 `Diese Seite kann nicht geladen werden, da das Infrastrukturkonto nicht vollständig als IBM Cloud-Konto konfiguriert ist. `
 
-Für die Anzeige dieser Fehlernachricht kann es mehrere Gründe geben:
+Für die Anzeige dieser Nachricht gibt es mehrere mögliche Gründe:
 {: tsCauses}
 
-* Sie verfügen über ein [Lite-Konto](/docs/account?topic=account-accounts#liteaccount), das den Zugriff auf Infrastrukturservices nicht zulässt. 
-* Das Konto ist nicht mit einem Infrastrukturkonto verbunden. 
+* Sie verfügen über ein [Lite-Konto](/docs/account?topic=account-accounts#liteaccount), das den Zugriff auf Infrastrukturservices nicht zulässt.
+* Das Konto ist nicht mit einem Infrastrukturkonto verbunden.
 
 
 Zur Behebung dieses Problems müssen Sie ein Upgrade auf ein Konto mit nutzungsabhängiger Abrechnung oder ein Abonnementkonto durchführen. Weitere Informationen finden Sie in [Upgrade für Konto durchführen](/docs/account?topic=account-upgrading-account).

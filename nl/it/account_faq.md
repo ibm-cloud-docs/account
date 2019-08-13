@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-07-29"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -17,10 +17,10 @@ subcollection: account
 {:faq: data-hd-content-type='faq'}
 {:tip: .tip}
 
-# FAQ per l'account
+# FAQ per gli account
 {: #accountfaqs}
 
-Le FAQ per {{site.data.keyword.cloud}} potrebbero includere delle domande sugli account lite, la riassegnazione degli utenti, gli errori dell'account e le tag dell'account. Per trovare tutte le FAQ per {{site.data.keyword.cloud_notm}}, vedi la nostra libreria di FAQ.
+Le FAQ per {{site.data.keyword.cloud}} potrebbero includere delle domande sugli account Lite, la riassegnazione degli utenti, gli errori dell'account e le tag dell'account. Per trovare tutte le FAQ per {{site.data.keyword.cloud_notm}}, vedi la nostra libreria di FAQ.
 {: shortdesc}
 
 ## Come creo un account?
@@ -133,7 +133,7 @@ Per ulteriori informazioni, vedi [Impostazione delle preferenze email](/docs/acc
 {: #reset-password}
 {: faq}
 
-Per reimpostare la password del tuo account, vai all'icona Avatar ![Icona Avatar](../icons/i-avatar-icon.svg) **> Profilo e impostazioni**. Fai quindi clic su **Modifica o reimposta** dal tile delle informazioni sull'utente dell'account.
+Per reimpostare la password del tuo account, vai all'icona **Avatar** ![Icona Avatar](../icons/i-avatar-icon.svg) **> Profilo e impostazioni**. Fai quindi clic su **Modifica o reimposta** dal tile delle informazioni sull'utente dell'account.
 
 Per reimpostare la tua password VPN, completa la seguente procedura:
 
@@ -171,7 +171,7 @@ Per sapere come IBM gestisce le tue informazioni personali, vedi [IBM Privacy St
 
 Il tuo account potrebbe essere disattivato per i seguenti motivi:
 
-- Per gli account di prova, il periodo di prova è terminato. Per riattivare il tuo account, accedi al tuo account ed eseguine l'upgrade a un account Pagamento a consumo.
+- Per gli account di prova, il periodo di prova è terminato. Per riattivare il tuo account, accedi al tuo account ed eseguine l'upgrade a un account Pagamento a consumo. Il tuo account potrebbe avere bisogno di alcuni giorni per essere completamente riattivato.
 - Un utente autorizzato ha annullato l'account.
 - L'account è sospeso. A discrezione di IBM, gli account che violano il comportamento di utilizzo accettabile dei servizi {{site.data.keyword.Bluemix_notm}} possono essere disabilitati senza preavviso. Alcuni servizi possono essere ripristinati se gli utenti correggono il loro comportamento di utilizzo dopo essere stati informati dell'azione offensiva.
 
@@ -181,7 +181,7 @@ Se credi che il tuo account sia stato disattivato erroneamente, contatta il supp
 {: #contactsupport}
 {: faq}
 
-Fai clic su **Supporto** dalla barra dei menu della console per andare al Centro di supporto. Per ulteriori informazioni sul supporto, vedi [Richiesta di supporto](/docs/get-support?topic=get-support-support-plans).
+Fai clic su **Supporto** dalla barra dei menu della console per andare al Centro di supporto. Per ulteriori informazioni, vedi [Richiesta di assistenza tecnica](/docs/get-support?topic=get-support-support-plans).
 
 ## Posso registrarmi per una versione di prova?
 {: #freetrial}
@@ -190,6 +190,12 @@ Fai clic su **Supporto** dalla barra dei menu della console per andare al Centro
 Gli account {{site.data.keyword.Bluemix_notm}} Lite forniscono l'accesso ai servizi del piano Lite gratuito. Puoi utilizzare questi servizi per tutto il tempo che vuoi senza alcun addebito e il tuo account non scade mai. [Registrati per un account Lite](https://{DomainName}/registration).
 
 Gli account di prova {{site.data.keyword.Bluemix_notm}} sono disponibili per docenti e studenti presso istituti accademici accreditati. Per poter beneficiare di un account di prova, vai a [Harness the Power of IBM ![Icona link esterno](../icons/launch-glyph.svg)](https://ibm.biz/academic){: new_window} e convalida le credenziali del tuo istituto. A differenza degli account Lite, gli account di prova scadono una volta terminato il periodo di prova.
+
+## Posso accedere alla console {{site.data.keyword.Bluemix_notm}} con il mio ID SoftLayer?
+{: #slid}
+{: faq}
+
+Sì, puoi utilizzare il tuo ID SoftLayer per accedere alla console. Vai alla [pagina di accesso](https://cloud.ibm.com/login){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno") e seleziona **SoftLayer ID** dall'elenco **ID**.  
 
 ## Dopo aver collegato il mio account, come posso accedere?
 {: #al_login}
@@ -264,6 +270,18 @@ Se hai più di un account, puoi fare clic sul tuo nome di account nella barra de
 Puoi trasferire la proprietà di risorse individuali all'interno del tuo account a qualcun altro utilizzando il comando `ibmcloud catalog`. Per ulteriori informazioni, vedi [Trasferimento della proprietà di una risorsa privata](/docs/account?topic=account-include#owners).
 
 Per trasferire la proprietà del tuo intero account, aggiorna il [profilo aziendale](https://{DomainName}/account/company-profile). Per ulteriori informazioni, vedi [Trasferimento della proprietà del tuo account](/docs/account?topic=account-transfer).
+
+## Come modifico il nome o l'ID IBM nel mio profilo?
+{: #change-profile-settings}
+{: faq}
+
+Puoi modificare le tue informazioni personali, ad esempio il nome, l'email o il numero di telefono, andando all'icona **Avatar** ![icona Avatar](../icons/i-avatar-icon.svg) **>  Profilo e impostazioni**. Non puoi modificare il tuo ID IBM, ma puoi crearne uno nuovo se appropriato. L'[IBMid worldwide help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html) è disponibile per aiutarti con domande sugli ID generali non relative al tuo account {{site.data.keyword.Bluemix_notm}}.
+
+## Come modifico la lingua associata al mio account?
+{: #switch-account-lang}
+{: faq}
+
+La lingua utilizzata è basata sulle tue impostazioni del browser web. Per visualizzare i contenuti nella tua lingua nativa, aggiorna le impostazioni della lingua del tuo browser.
 
 ## {{site.data.keyword.Bluemix_notm}} supporta la registrazione batch degli utenti?
 {: #batch-registration}

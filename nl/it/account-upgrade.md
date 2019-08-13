@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-30"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -36,7 +36,7 @@ Per eseguire un upgrade del tuo account, devi avere un ruolo di editor o superio
 
 Con un account Pagamento a consumo, paghi solo per quello che utilizzi oltre le franchigie per i runtime e i servizi gratuite. Dopo aver eseguito l'upgrade, puoi continuare a utilizzare tutte le istanze che hai creato con il tuo account Lite.
 
-Per eseguire l'aggiornamento a un account Pagamento a consumo, 
+Per eseguire l'aggiornamento a un account Pagamento a consumo,
 1. Vai a **Gestisci > Account**.
 1. Seleziona **Impostazioni account** e fai clic su **Aggiungi carta di credito**.
 1. Immetti le tue informazioni di pagamento, fai clic su **Avanti** e inviale.
@@ -60,7 +60,7 @@ Per eseguire l'upgrade da un account Lite a un account Sottoscrizione, completa 
    {:tip}
 1. Rivedi i tuoi dettagli di sottoscrizione e poi immetti le tue informazioni sul pagamento.
 
-   Dopo che le informazioni sul pagamento vengono elaborate, viene aggiunto il credito di sottoscrizione al tuo account. Puoi monitorare il tuo utilizzo della sottoscrizione su questa stessa pagina relativa alle sottoscrizioni. Per ulteriori informazioni, vedi [Gestione delle sottoscrizioni](/docs/billing-usage?topic=billing-usage-subscriptions.
+   Dopo che le informazioni sul pagamento vengono elaborate, viene aggiunto il credito di sottoscrizione al tuo account. Puoi monitorare il tuo utilizzo della sottoscrizione su questa stessa pagina relativa alle sottoscrizioni. Per ulteriori informazioni, vedi [Gestione delle sottoscrizioni](/docs/billing-usage?topic=billing-usage-subscriptions).
 
 La tua sottoscrizione si rinnova automaticamente. Se vuoi interrompere il rinnovo della tua sottoscrizione, [contatta il supporto](https://{DomainName}/unifiedsupport/supportcenter).
 {: note}

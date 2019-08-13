@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-30"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -60,7 +60,7 @@ Führen Sie die folgenden Schritte aus, um ein Upgrade von einem Lite-Konto auf 
    {:tip}
 1. Überprüfen Sie die Abonnementdetails und geben Sie dann Ihre Zahlungsinformationen ein.
 
-   Nach der Verarbeitung Ihrer Zahlungsinformationen wird die Abonnementgutschrift zu Ihrem Konto hinzugefügt. Sie können Ihre Abonnementnutzung auf derselben Abonnementseite überwachen. Weitere Informationen finden Sie unter [Abonnements verwalten](/docs/billing-usage?topic=billing-usage-subscriptions.
+   Nach der Verarbeitung Ihrer Zahlungsinformationen wird die Abonnementgutschrift zu Ihrem Konto hinzugefügt. Sie können Ihre Abonnementnutzung auf derselben Abonnementseite überwachen. In [Abonnements verwalten](/docs/billing-usage?topic=billing-usage-subscriptions) finden Sie weitere Informationen.
 
 Das Abonnement wird automatisch verlängert. Wenn Sie die Abonnementverlängerung nicht weiter fortsetzen möchten, [wenden Sie sich an das Support-Team](https://{DomainName}/unifiedsupport/supportcenter).
 {: note}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-25"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, multiple account
 
@@ -99,7 +99,7 @@ Das Konto, das Sie zum Erstellen des Unternehmens verwendet haben, ist jetzt Tei
 ## Unternehmen über die Anwendungsprogrammierschnittstelle (API) erstellen
 {: #create-api}
 
-Sie können ein Unternehmen über das Programm erstellen, indem Sie die Enterprise Management API aufrufen, wie dies in der folgenden Beispielanforderung dargestellt wird. <!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-enterprise){: external}.-->
+Sie können ein Unternehmen über das Programm erstellen, indem Sie die Unternehmensverwaltungs-API aufrufen, wie in der folgenden Beispielanforderung dargestellt. Detaillierte Informationen zur API finden Sie in [Unternehmensverwaltungs-API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-enterprise){: external}.
 
 ```
 curl -X POST \

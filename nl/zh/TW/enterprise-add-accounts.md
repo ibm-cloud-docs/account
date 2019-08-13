@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-26"
 
 keywords: enterprise, add account, import account, create account
 
@@ -80,7 +80,7 @@ subcollection: account
 ### 使用 API 匯入帳戶
 {: #add-account-api}
 
-若要將現有帳戶匯入至企業，請呼叫<!-- [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#import-an-account-into-an-enterprise){: external}-->「企業管理 API」，如下列要求範例所示。將 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 記號及 ID 變數取代為您企業的值。
+若要將現有帳戶匯入至企業，請呼叫[企業管理 API](https://{DomainName}/apidocs/enterprise-apis/enterprise#import-an-account-into-an-enterprise){: external}，如下列範例要求所示。將 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 記號及 ID 變數取代為您企業的值。
 
 ```
 curl -X PUT \
@@ -126,7 +126,7 @@ curl -X PUT \
 ### 使用 API 來建立帳戶
 {: #create-account-api}
 
-若要在企業中建立新的帳戶，請呼叫「企業管理 API」，如下列要求範例所示，將 IAM 記號及 ID 變數取代為您企業的值。<!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-a-new-account-in-an-enterprise){: external}. -->
+若要在企業中建立新的帳戶，請呼叫「企業管理 API」，如下列範例要求所示，將 IAM 記號及 ID 變數取代為您企業的值。如需 API 的詳細資訊，請參閱[企業管理 API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-a-new-account-in-an-enterprise){: external}。
 
 ```
 curl -X POST \

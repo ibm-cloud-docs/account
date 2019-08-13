@@ -72,7 +72,7 @@ In qualità di proprietario dell'account, puoi aggiungere risorse a qualsiasi gr
 
 Per aggiungere una risorsa a un gruppo di risorse, completa la seguente procedura:
 
-1. Vai a **Gestisci > Account**. Espandi **Risorse account** e seleziona **Gruppi di risorse**.
+1. Vai a **Gestisci > Account** e seleziona **Gruppi di risorse**.
 2. Fai clic sull'icona Azioni ![Icona Azioni](../icons/action-menu-icon.svg) per il gruppo di risorse a cui vuoi aggiungere le risorse e seleziona **Aggiungi risorse**.
 3. Dopo che sei stato reindirizzato al catalogo, seleziona la risorsa che vuoi aggiungere.
 4. Seleziona il gruppo di risorse a cui vuoi assegnarla.

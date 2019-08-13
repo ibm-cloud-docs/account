@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-25"
 
 keywords: enterprise, enterprise settings, manage enterprise, view enterprise, rename enterprise
 
@@ -55,7 +55,7 @@ subcollection: account
 ## 使用 API 管理企業
 {: #enterprise-manage-api}
 
-您可以透過呼叫「企業管理 API」，以程式設計方式更新企業，如下列要求範例所示。您可以在 API 呼叫上傳遞新值，以更新企業名稱或網域。<!--For detailed information about the API, see the [Enterprise Management API documentation](https://{DomainName}/apidocs/enterprise-apis/enterprise#update-an-enterprise){: external}.-->
+您可以透過呼叫「企業管理 API」，以程式化方式更新企業，如下列要求範例所示。您可以在 API 呼叫上傳遞新值，以更新企業名稱或網域。如需 API 的詳細資訊，請參閱[企業管理 API 文件](https://{DomainName}/apidocs/enterprise-apis/enterprise#update-an-enterprise){: external}。
 
 ```
 curl -X PATCH \

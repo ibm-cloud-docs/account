@@ -2,9 +2,9 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-02-12"
+lastupdated: "2019-07-15"
 
-keywords: IBM Cloud account, account differences, resources, access
+keywords: IBM Cloud account, account differences, account overview, account components, how access works
 
 subcollection: account
 
@@ -17,17 +17,19 @@ subcollection: account
 {:new_window: target="_blank"}
 
 
-# Gerarchia degli account
+# Cosa c'è in un account?
 {: #overview}
 
-Il tuo account {{site.data.keyword.Bluemix}} include molti componenti e sistemi che interagiscono. Comprendi in che modo degli specifici componenti sono connessi e come funziona l'accesso nel tuo account.
+Il tuo account {{site.data.keyword.Bluemix}} include molti componenti e sistemi che interagiscono. Concetti su come alcuni componenti sono connessi o su come funziona l'accesso ti aiutano a comprendere come configurare il tuo account.
 {:shortdesc}
 
-<a href="https://cloud.ibm.com/docs/api/content/account/images/account_diagram.svg">
-  <img src="images/account_diagram.svg" alt="diagramma account">
-</a>
+All'interno del seguente diagramma, sono presenti due concetti principali per i componenti nella gerarchia dell'account che è importante comprendere. L'utilizzo delle linee continue e delle linee tratteggiate aiuta ad illustrare che alcuni componenti sono contenuti all'interno di altri, ad esempio gli utenti vengono aggiunti ai gruppi di accesso o alle organizzazioni Cloud Foundry. Tuttavia, alcuni componenti interagiscono con altri per fornire l'accesso invece dell'appartenenza. Ad esempio, agli utenti viene concesso l'accesso ai gruppi di risorse ma non sono membri di un gruppo di risorse nello stesso modo in cui lo sono per i gruppi di accesso. 
 
-All'interno del diagramma, sono presenti due concetti principali per i componenti nella gerarchia dell'account che è importante comprendere. L'utilizzo delle linee continue e delle linee tratteggiate aiuta ad illustrare che alcuni componenti sono contenuti all'interno di altri, ad esempio gli utenti vengono aggiunti ai gruppi di accesso o alle organizzazioni Cloud Foundry. Tuttavia, alcuni componenti interagiscono con altri per fornire l'accesso invece dell'appartenenza. Ad esempio, agli utenti viene concesso l'accesso ai gruppi di risorse ma non sono membri di un gruppo di risorse nello stesso modo in cui lo sono per i gruppi di accesso. Questi concetti sono spiegati anche nelle seguenti sezioni.
+<figure>
+<a href="https://cloud.ibm.com/docs/api/content/account/images/account_diagram.svg">
+<img src="images/account_diagram.svg" alt="Un diagramma che mostra i componenti in un account, inclusi i servizi, gli utenti e i componenti secondari di ognuno di essi."></a>
+<figcaption>Figura 1. Sistemi e componenti dell'account</figcaption>
+</figure>
 
 <dl>
 <dt>Utenti</dt>

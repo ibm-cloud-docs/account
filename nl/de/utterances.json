@@ -142,7 +142,7 @@
       "Konto stornieren",
       "Stornierung des Kontos erforderlich",
       "Dieses Konto aussetzen",
-      "Inaktivieren des Kontos"  
+      "Inaktivieren des Kontos"
     ],
     "deleteaccount": [
       "Mein Konto löschen",
@@ -258,6 +258,21 @@
       "Welchen Konten bin ich zugeordnet",
       "Welche Konten laufen auf meinen Namen"
     ],
+    "change-profile-settings": [
+      "Benutzer-ID ändern",
+      "Benutzer-ID aktualisieren",
+      "IBM ID bearbeiten",
+      "Namen der Kontaktperson ändern",
+      "E-Mail-Adresse ändern",
+      "Telefonnummer aktualisieren",
+      "Personenbezogene Daten bearbeiten"
+    ],
+     "switch-account-lang": [
+      "Sprache in Englisch ändern",
+      "Sprache für Konto ändern",
+      "Sprache wechseln",
+      "Spracheinstellungen aktualisieren"
+    ],
     "switch-between-accounts": [
       "Zwischen mehreren Konten wechseln",
       "Zwischen Konten wechseln",
@@ -371,7 +386,7 @@
     ],
     "ts_no_space": [
       "BXNUI0097E",
-      "Bevor Sie eine App hinzufügen können, muss Ihrer Organisation und Ihrer Region mindestens ein Bereich zugeordnet sein. ",
+      "Bevor Sie eine App hinzufügen können, muss Ihrer Organisation und Ihrer Region mindestens ein Bereich zugeordnet sein.",
       "Der aktuellen Organisation sind keine Bereiche zugeordnet",
       "Erstellen einer App ohne Bereich nicht möglich",
       "Keine Bereiche in meiner Organisation",
@@ -466,5 +481,82 @@
       "Die Seite wurde nicht geladen, da IBM Cloud nicht feststellen konnte, ob eine Sitzung vorhanden ist.",
       "BXNUI0016E",
       "Die Apps und Services wurden nicht abgerufen, da eine IBM Cloud-Seite nicht geladen wurde."
+    ],
+    "lite-to-enterprise": [
+      "Lite-Konto in Unternehmen importieren",
+      "Importieren eines Lite-Kontos in ein Unternehmen",
+      "Lite-Konto in ein Unternehmen migrieren",
+      "Lite-Konto zu einem Unternehmen hinzufügen",
+      "Hinzufügen eines Lite-Kontos zu einem Unternehmen"
+    ],
+    "remove-enterprise": [
+      "Konto aus dem Unternehmen entfernen",
+      "Entfernen aus dem Unternehmen",
+      "Konten aus dem Unternehmen löschen",
+      "Löschen aus einem Unternehmen",
+      "Löschen von Konten aus dem Unternehmen"
+    ],
+    "move-enterprise-account": [
+      "Konto innerhalb eines Unternehmens verschieben",
+      "Verschieben von Konten im Unternehmen",
+      "Übertragen eines Kontos im Unternehmen",
+      "Konten im Unternehmen übertragen",
+      "Verschieben eines Kontos innerhalb eines Unternehmens"
+    ],
+    "move-account-group": [
+      "Kontogruppe eines Unternehmens verschieben",
+      "Verschieben einer Kontogruppe innerhalb eines Unternehmens",
+      "Gruppe innerhalb eines Unternehmens verschieben",
+      "Kontogruppe verschieben",
+      "Gruppe aus einem Unternehmen entfernen"
+    ],
+    "rename-enterprise-account": [
+      "Name des Kontos in einem Unternehmen ändern",
+      "Kontonamen im Unternehmen ändern",
+      "Aktualisieren eines Kontonamens im Unternehmen",
+      "Kontonamen in einem Unternehmen bearbeiten",
+      "Bearbeiten eines Kontonamens für ein Unternehmen"
+    ],
+    "enterprise-invite-users": [
+      "Andere Benutzer in mein Unternehmen einladen",
+      "Benutzer zum Teilnehmen am Unternehmen einladen",
+      "Teilnehmen von Benutzern am Unternehmen",
+      "Einladung eines Benutzers zum Unternehmen",
+      "Einladen von Benutzern zum Unternehmen"
+    ],
+    "troubleshoot-view-enterprise": [
+      "Es wird nicht die gesamte Unternehmenshierarchie angezeigt",
+      "Es wird nicht das gesamte Unternehmen angezeigt",
+      "Unternehmenshierarchie kann nicht angezeigt werden",
+      "Hierarchieanzeige und fehlende Konten",
+      "Anzeige der Hierarchie nicht vollständig"
+    ],
+    "troubleshoot-existing-enterprise": [
+      "Vorhandenes Konto wird nicht als Importoption angezeigt",
+      "Fehler beim Importieren eines vorhandenen Kontos in das Unternehmen",
+      "Aktuelles Konto nicht für den Import in das Unternehmen verfügbar",
+      "Importieren eines Kontos in das Unternehmen nicht möglich",
+      "Konto in das Unternehmen importieren"
+    ],
+    "troubleshoot-add-enterprise": [
+      "Klicken auf die Option zum Hinzufügen eines Kontos für das Unternehmen nicht möglich",
+      "Erstellen eines Kontos für das Unternehmen nicht möglich",
+      "Warum kann ich im Unternehmen kein Konto hinzufügen",
+      "Problem beim Hinzufügen eines Kontos für das Unternehmen",
+      "Hinzufügen eines Kontos im Unternehmen nicht möglich"
+    ],
+    "troubleshoot-viewsub-enterprise": [
+      "Anzeigen der Abonnementseite von einem untergeordneten Konto aus nicht möglich",
+      "Berechtigung zum Anzeigen von Abonnementdaten für dieses Konto nicht vorhanden",
+      "Abonnement für Unternehmen anzeigen",
+      "Anzeigen von Abonnements für ein Unternehmen",
+      "Abonnements können für das Unternehmen nicht angezeigt werden"
+    ],
+    "troubleshoot-promo-enterprise": [
+      "Abonnementcode kann für das Unternehmenskonto nicht angewendet werden",
+      "Hinzufügen eines Abonnementcodes zum Unternehmen nicht möglich",
+      "Feature-Code zu einem untergeordneten Konto im Unternehmen hinzufügen",
+      "Abonnementcode zum Unternehmen hinzufügen",
+      "Problem beim Hinzufügen eines Abonnementcodes zum Unternehmen"
     ]
 }

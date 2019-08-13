@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-07-29"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -17,10 +17,10 @@ subcollection: account
 {:faq: data-hd-content-type='faq'}
 {:tip: .tip}
 
-# Häufig gestellte Fragen (FAQs) zum Konto
+# Häufig gestellte Fragen (FAQs) zu Konten
 {: #accountfaqs}
 
-Die FAQs zu {{site.data.keyword.cloud}} können Fragen zu Lite-Konten, zur erneuten Benutzerzuweisung, zu Kontofehlern oder -Tags beinhalten. Die vollständigen FAQs zu {{site.data.keyword.cloud_notm}} finden Sie in unserer FAQ-Bibliothek.
+Die häufig gestellten Fragen zu {{site.data.keyword.cloud}} können Fragen zu Lite-Konten, zur erneuten Benutzerzuweisung, zu Kontofehlern oder -Tags beinhalten. Die vollständigen FAQs zu {{site.data.keyword.cloud_notm}} finden Sie in unserer FAQ-Bibliothek.
 {: shortdesc}
 
 ## Wie erstelle ich ein Konto?
@@ -133,7 +133,7 @@ Weitere Informationen finden Sie in [E-Mail-Vorgaben festlegen](/docs/account?to
 {: #reset-password}
 {: faq}
 
-Zum Zurücksetzen Ihres Kontokennworts rufen Sie das Avatarsymbol ![Avatarsymbol](../icons/i-avatar-icon.svg) und **> Profil und Einstellungen** auf. Klicken Sie dann auf **Ändern oder zurücksetzen** in der Kachel mit den Kontobenutzerinformationen.
+Zum Zurücksetzen Ihres Kontokennworts rufen Sie das **Avatarsymbol** ![Avatarsymbol](../icons/i-avatar-icon.svg) **> Profil und Einstellungen** auf. Klicken Sie dann auf **Ändern oder zurücksetzen** in der Kachel mit den Kontobenutzerinformationen.
 
 Führen Sie die folgenden Schritte aus, um Ihr VPN-Kennwort zurückzusetzen:
 
@@ -171,7 +171,7 @@ Informationen zur Verarbeitung personenbezogener Daten durch IBM finden Sie in d
 
 Ihr Konto kann aus den folgenden Gründen inaktiviert werden:
 
-- Bei einem Testkonto kann es sein, dass der Testzeitraum beendet wurde. Zum Reaktivieren Ihres Kontos melden Sie sich bei Ihrem Konto an und führen Sie ein Upgrade auf ein nutzungsabhängiges Konto durch.
+- Bei einem Testkonto kann es sein, dass der Testzeitraum beendet wurde. Zum Reaktivieren Ihres Kontos melden Sie sich bei Ihrem Konto an und führen Sie ein Upgrade auf ein nutzungsabhängiges Konto durch. Die vollständige Aktivierung des Kontos kann einige Tage in Anspruch nehmen. 
 - Ein berechtigter Benutzer hat das Konto storniert.
 - Das Konto wurde ausgesetzt. IBM kann Konten von Benutzern, die gegen die allgemeinen Nutzungsrichtlinien für die {{site.data.keyword.Bluemix_notm}}-Services verstoßen, ohne Vorankündigung inaktivieren. Bestimmte Services können wiederhergestellt werden, wenn die Benutzer ihr Nutzungsverhalten ändern, nachdem sie über ihren Verstoß informiert wurden.
 
@@ -181,15 +181,21 @@ Wenn Sie glauben, dass Ihr Konto aufgrund eines Fehlers inaktiviert wurde, wende
 {: #contactsupport}
 {: faq}
 
-Klicken Sie auf **Support** in der Menüleiste der Konsole, um das Support Center aufzurufen. Weitere Informationen zum Support finden Sie in [Unterstützung anfordern](/docs/get-support?topic=get-support-support-plans).
+Klicken Sie auf **Support** in der Menüleiste der Konsole, um das Support Center aufzurufen. Weitere Informationen finden Sie in [Unterstützung anfordern](/docs/get-support?topic=get-support-support-plans).
 
 ## Kann ich eine Registrierung für eine kostenfreie Testversion durchführen?
 {: #freetrial}
 {: faq}
 
-{{site.data.keyword.Bluemix_notm}} Lite-Konten bieten Zugriff auf die Services im Rahmen der kostenfreien Lite-Konten. Sie können diese Services für einen unbegrenzten Zeitraum kostenfrei nutzen und für das Konto gilt kein Ablaufdatum. [Registrierung für ein Lite-Konto durchführen](https://{DomainName}/registration). 
+{{site.data.keyword.Bluemix_notm}} Lite-Konten bieten Zugriff auf die Services im Rahmen der kostenfreien Lite-Konten. Sie können diese Services für einen unbegrenzten Zeitraum kostenfrei nutzen und für das Konto gilt kein Ablaufdatum. [Registrierung für ein Lite-Konto durchführen](https://{DomainName}/registration).
 
-Für Fakultätsmitglieder und Studierende akkreditierter akademischer Einrichtungen sind {{site.data.keyword.Bluemix_notm}}-Testkonten erhältlich. Um sich für ein solches Testkonto zu qualifizieren, rufen Sie die Seite [Nutzen Sie das Potenzial von IBM ![Symbol für externen Link](../icons/launch-glyph.svg)](https://ibm.biz/academic){: new_window} auf und validieren Sie die Berechtigungsnachweise für Ihre Einrichtung. Im Gegensatz zu Lite-Konten laufen Testkonten nach dem Ende des Testzeitraums ab. 
+Für Fakultätsmitglieder und Studierende akkreditierter akademischer Einrichtungen sind {{site.data.keyword.Bluemix_notm}}-Testkonten erhältlich. Um sich für ein solches Testkonto zu qualifizieren, rufen Sie die Seite [Nutzen Sie das Potenzial von IBM ![Symbol für externen Link](../icons/launch-glyph.svg)](https://ibm.biz/academic){: new_window} auf und validieren Sie die Berechtigungsnachweise für Ihre Einrichtung. Im Gegensatz zu Lite-Konten laufen Testkonten nach dem Ende des Testzeitraums ab.
+
+## Kann ich mich bei der {{site.data.keyword.Bluemix_notm}}-Konsole mit meiner SoftLayer-ID anmelden?
+{: #slid}
+{: faq}
+
+Ja, Sie können Ihre SoftLayer-ID für die Anmeldung bei der Konsole verwenden. Rufen Sie die [Anmeldeseite](https://cloud.ibm.com/login){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link") auf und wählen Sie **SoftLayer-ID** in der Liste der **IDs** aus.  
 
 ## Wie melde ich mich an, nachdem ich mein Konto verknüpft habe?
 {: #al_login}
@@ -264,6 +270,18 @@ Wenn Sie über mehrere Konten verfügen, können Sie auf einen der Kontonamen in
 Sie können das Eigentumsrecht für einzelne Ressourcen innerhalb Ihres Kontos an eine andere Person übertragen, indem Sie den Befehl `ibmcloud catalog` verwenden. Weitere Informationen finden Sie in [Eigentumsrecht für eine private Ressource übertragen](/docs/account?topic=account-include#owners).
 
 Wenn Sie das Eigentumsrecht für Ihr gesamtes Konto übertragen möchten, aktualisieren Sie Ihr [Unternehmensprofil](https://{DomainName}/account/company-profile). Weitere Informationen finden Sie in [Eigentumsrecht für Ihr Konto übertragen](/docs/account?topic=account-transfer).
+
+## Wie kann ich den Namen oder die IBMid in meinem Profil ändern?
+{: #change-profile-settings}
+{: faq}
+
+Sie können Ihre personenbezogenen Daten, wie z. B. Name, E-Mail-Adresse oder Telefonnummer ändern, indem Sie das **Avatarsymbol** ![Avatarsymbol](../icons/i-avatar-icon.svg) **> Profil und Einstellungen** aufrufen. Sie können die IBMid nicht ändern, aber gegebenenfalls eine neue erstellen. Der [weltweite IBMid-Help-Desk](https://www.ibm.com/ibmid/myibm/help/de/helpdesk.html) bietet Unterstützung bei allgemeinen Fragen zu IDs, die nicht Ihr {{site.data.keyword.Bluemix_notm}}-Konto betreffen. 
+
+## Wie kann ich die meinem Konto zugeordnete Sprache ändern?
+{: #switch-account-lang}
+{: faq}
+
+Die verwendete Sprache basiert auf den Einstellungen Ihres Web-Browsers. Wenn Sie Inhalte in der Landessprache anzeigen möchten, aktualisieren Sie die Spracheinstellungen des Browsers. 
 
 ## Unterstützt {{site.data.keyword.Bluemix_notm}} die Registrierung von Benutzern mithilfe einer Batchoperation?
 {: #batch-registration}
