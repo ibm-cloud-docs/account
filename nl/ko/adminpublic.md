@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-08"
+lastupdated: "2019-07-29"
 
 keywords: create account, IBMid, sign up for account, sign up
 
@@ -34,10 +34,12 @@ subcollection: account
 
 연합 ID를 사용하는 회사의 일원이 아닌 경우, IBM ID를 사용하여 {{site.data.keyword.Bluemix_notm}}에 등록하십시오.
 
-1. [{{site.data.keyword.Bluemix_notm}} 로그인 페이지](https://cloud.ibm.com/){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon")로 이동하여 **{{site.data.keyword.Bluemix_notm}} 계정 작성**을 클릭하십시오.
+1. [{{site.data.keyword.Bluemix_notm}} 로그인 페이지](https://cloud.ibm.com/){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon")로 이동하여 **{{site.data.keyword.Bluemix_notm}} 계정 생성**을 클릭하십시오.
 1. IBM ID 이메일 주소를 입력하십시오. 기존 IBM ID가 없는 경우, 사용자가 입력한 이메일을 기반으로 하여 ID가 작성됩니다.
-1. 사용자의 정보로 나머지 필드를 완료하고 **계정 작성**을 클릭하십시오.
+1. 사용자의 정보로 나머지 필드를 완료하고 **계정 생성**을 클릭하십시오.
+1. 제공된 이메일 주소로 전송된 확인 이메일에서 링크를 클릭하여 계정을 확인하십시오.
 
+새 계정으로 로그인하는 데 문제가 있으면 [{{site.data.keyword.Bluemix_notm}} 액세스 문제점 해결](/docs/account?topic=account-accessing)에서 도움말을 참조하십시오.
 
 ## 연합 ID로 등록
 {: #signup-federated}

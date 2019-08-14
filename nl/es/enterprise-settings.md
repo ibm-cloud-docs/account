@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-25"
 
 keywords: enterprise, enterprise settings, manage enterprise, view enterprise, rename enterprise
 
@@ -55,7 +55,7 @@ Puede renombrar la empresa pulsando en **Renombrar** en la sección Detalles de 
 ## Gestión de la empresa utilizando la API
 {: #enterprise-manage-api}
 
-Puede actualizar una empresa mediante programación llamando a la API de gestión de empresa tal como se muestra en la siguiente solicitud de ejemplo. Puede actualizar el nombre de la empresa o el dominio pasando los nuevos valores en la llamada de API. <!--For detailed information about the API, see the [Enterprise Management API documentation](https://{DomainName}/apidocs/enterprise-apis/enterprise#update-an-enterprise){: external}.-->
+Puede actualizar una empresa mediante programación llamando a la API de gestión de empresa tal como se muestra en la siguiente solicitud de ejemplo. Puede actualizar el nombre de la empresa o el dominio pasando los nuevos valores en la llamada de API. Para obtener información detallada sobre la API, consulte la [documentación de la API de Gestión de empresa](https://{DomainName}/apidocs/enterprise-apis/enterprise#update-an-enterprise){: external}.
 
 ```
 curl -X PATCH \

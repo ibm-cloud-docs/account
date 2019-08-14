@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-07-18"
+lastupdated: "2019-07-29"
 
 keywords: troubleshoot enterprise, enterprise problem, account problem, enterprise support, enterprise help, error message
 
@@ -48,27 +48,29 @@ Póngase en contacto con el propietario de la empresa para solicitar el acceso c
 
 Si es el propietario de la empresa, complete los pasos siguientes para asignar a un usuario acceso a toda la empresa:
 1. Vaya a **Gestionar** > **Acceso (IAM)** > **Usuarios**.
-2. Seleccione el nombre del usuario. 
+2. Seleccione el nombre del usuario.
 2. Pulse el separador **Políticas de acceso** > **Asignar acceso** > **Asignar acceso a servicios de gestión de cuentas**.
 3. Seleccione **Empresa** como el servicio y seleccione el nombre de la empresa.
 4. Seleccione la cuenta o el grupo de cuentas de la empresa al que desea otorgar acceso al usuario. Por ejemplo, si desea que un usuario tenga acceso para ver sólo una cuenta, seleccione la cuenta y asigne al usuario el rol de Visor o un rol superior. Si desea que un usuario tenga acceso para ver toda la empresa, deje en blanco los campos grupos de cuenta y cuenta y asigne el acceso.
 
-## ¿Por qué no puedo añadir una cuenta existente a la empresa?
+## ¿Por qué no puedo importar una cuenta existente a la empresa?
 {: #troubleshoot-existing-enterprise}
 {: troubleshoot}
 
-Al intentar añadir una cuenta existente a la empresa, se produce uno de los siguientes problemas:
+Al intentar importar una cuenta existente a la empresa, se produce uno de los siguientes problemas:
 {: tsSymptoms}
 * Al pulsar **Añadir una cuenta existente** en la sección Cuenta, la cuenta que desea añadir no aparece en la lista.
-* No tiene la opción de pulsar **Añadir una cuenta existente**.
+* No tiene la opción de pulsar **Importar cuenta**.
 
-No se le ha asignado el acceso correcto.
+No se le ha asignado el acceso correcto o la cuenta no es apta para ser importada.
 {: tsCauses}
 
-Si no puede ver la cuenta existente que en la lista de opciones, necesita el rol de Administrador en el servicio de facturación de la cuenta existente.
+Si no puede ver la cuenta existente que desea importar, necesita el rol de Administrador en el servicio de Facturación de la cuenta existente.
 {: tsResolve}
 
-Para añadir una cuenta existente a la empresa, necesita el rol de Administrador o de Editor en el servicio de facturación de la empresa y el rol de Administrador o Editor en el servicio de empresa para la empresa o el grupo de cuentas padre.
+Si la opción **Importar cuenta** no está disponible, verifique que tiene el rol de Administrador o Editor en el servicio de Facturación de la empresa y el rol de Administrador o Editor en el servicio de Empresa para la empresa o el grupo de cuentas padre.
+
+Si la cuenta que desea importar es una cuenta de Pago según uso y sigue sin poder importarla tras verificar que tiene acceso, puede que la cuenta no sea apta para ser importada en la empresa. Algunas cuentas de Pago según uso no se pueden importar directamente en una empresa, como por ejemplo las cuentas de Pago según uso que se facturan en dólares de Estados Unidos (USD). Póngase en contacto con [el equipo de Ventas de {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg) para convertirla a una cuenta de suscripción y después importarla en la empresa.
 
 ## ¿Por qué no puedo crear una cuenta nueva en la empresa?
 {: #troubleshoot-add-enterprise}
@@ -82,8 +84,8 @@ No se le ha asignado el acceso correcto.
 
 Para crear una cuenta en la empresa, debe tener el acceso siguiente.
 {: tsResolve}
-1. Rol de Administrador en el servicio de facturación de la empresa.
-2. Rol de Administrador o de Editor en el servicio de empresa para la empresa o el grupo de cuentas padre de destino.
+1. Rol de Administrador en el servicio de Facturación de la empresa.
+2. Rol de Administrador o de Editor en el servicio de Empresa para la empresa o el grupo de cuentas padre de destino.
 
 ## ¿Por qué no puedo ver las suscripciones de empresa?
 {: #troubleshoot-viewsub-enterprise}
@@ -111,7 +113,7 @@ Para ver o gestionar la facturación, tiene que haber sido invitado a la cuenta 
 No puede agregar un código de suscripción a su cuenta porque no tiene el acceso correcto.  
 {: tsSymptoms}
 
-Debido a que es una cuenta secundaria de la empresa, no puede aplicar códigos de suscripción. Los códigos de suscripción se deben aplicar a nivel de empresa.
+Debido a que la cuenta es una cuenta secundaria de la empresa, no puede aplicar códigos de suscripción. Los códigos de suscripción se deben aplicar a nivel de empresa.
 {: tsCauses}
 
 Póngase en contacto con el propietario o con el administrador de la empresa para añadir el código de suscripción. Cuando se añade el código de suscripción, se aplica a todas las cuentas de la empresa. Para obtener más información, consulte [Gestión de suscripciones](/docs/billing-usage?topic=billing-usage-subscriptions).

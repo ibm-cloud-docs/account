@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-08-06"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -57,14 +57,15 @@ Si vous vous connectez à {{site.data.keyword.Bluemix_notm}} et que le processus
 {: #ts_old_username}
 {: troubleshoot}
 
-Pour vous connecter à votre messagerie électronique, vous devez vous assurer que vous disposez de l'authentification IBMid pour chaque compte.
+Pour pouvoir vous connecter à la console {{site.data.keyword.Bluemix_notm}}, assurez-vous de disposer d'une authentification IBMid pour chaque compte.
 
-Lorsque vous vous connectez à la console {{site.data.keyword.Bluemix_notm}}, le message suivant s'affiche :
+Lorsque vous vous connectez à la console, le message suivant s'affiche :
 {: tsSymptoms}
 
 `Nous ne reconnaissons pas cet IBMid ou cette adresse électronique. `
 
-Vous avez tenté de vous connecter à la console mais n'avez pas utilisé d'IBMid valide. Par exemple, vous n'avez pas entré d'adresse électronique complète pour l'IBMid ou vous avez tenté d'utiliser vos nom d'utilisateur et mot de passe précédents.
+Vous avez tenté de vous connecter à la console mais n'avez pas utilisé d'IBMid valide. 
+Par exemple, vous n'avez pas entré d'adresse électronique complète pour l'IBMid ou vous avez tenté d'utiliser vos nom d'utilisateur et mot de passe précédents.
 {: tsCauses}
 
 Vous devez disposer d'un IBMid et d'un mot de passe valides pour vous connecter à {{site.data.keyword.Bluemix_notm}}.
@@ -94,9 +95,7 @@ Pour créer un compte {{site.data.keyword.Bluemix_notm}}, suivez le processus d'
 {: #ts_login_stalls}
 {: troubleshoot}
 
-Lorsqu'un message de succès de connexion est généré mais que la console ne s'affiche pas à nouveau.
-
-Lorsque vous vous connectez à l'aide de votre IBMid, un message indiquant que la connexion a abouti s'affiche mais la [console {{site.data.keyword.Bluemix_notm}} ](https://{DomainName}){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe") ne s'affiche pas à nouveau.
+Lorsque vous vous connectez à l'aide de votre IBMid, un message indiquant que la connexion a abouti s'affiche mais la console {{site.data.keyword.Bluemix_notm}} ne s'affiche pas à nouveau.
 {: tsSymptoms}
 
 Utilisez l'une des méthodes suivantes :
@@ -117,7 +116,8 @@ Lorsque vous vous connectez à {{site.data.keyword.Bluemix_notm}}, l'authentific
 Il s'agit peut-être d'un problème lié au service d'authentification via IBMid.
 {: tsCauses}
 
-Vérifiez que vous pouvez vous connecter à [IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe"). Dans ce cas, le problème est lié à l'application et vous pouvez tenter à nouveau de vous connecter à la console. Si vous ne pouvez pas vous connecter à cette page, contactez le [centre d'assistance IBMid ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}.  
+Vérifiez que vous pouvez vous connecter à [IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe"). 
+Dans ce cas, le problème est lié à l'application et vous pouvez tenter à nouveau de vous connecter à la console. Si vous ne pouvez pas vous connecter à cette page, contactez le [centre d'assistance IBMid ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}.  
 {: tsResolve}
 
 
@@ -138,7 +138,7 @@ La confirmation par courrier électronique est envoyée à l'adresse électroniq
 
 ```
 Pour finaliser votre enregistrement, consultez votre messagerie.
-Vous ne trouvez pas le courrier électronique ? Renvoyer
+Vous ne trouvez pas le courrier électronique ? Renvoyez.
 ```
 {:screen}
 
@@ -150,7 +150,7 @@ Cliquez sur **Renvoyer** pour envoyer un autre courrier électronique de confirm
 
 Lorsque vous utilisez la console {{site.data.keyword.Bluemix_notm}}, il est possible que vous ne puissiez pas charger une page de console. A la place, un message d'erreur BXNUI0001E ou BXNUI0016E peut s'afficher.
 
-Un des messages d'erreur suivants peut s'afficher :
+L'un des messages d'erreur suivants peut s'afficher :
 {: tsSymptoms}
 
 `BXNUI0001E : La page n'a pas été chargée car {{site.data.keyword.Bluemix_notm}} n'a pas détecté s'il existait une session.`
@@ -171,16 +171,16 @@ Effectuez une ou plusieurs des actions suivantes :
 {: #troubleshoot-infrastructure-access}
 {: troubleshoot}
 
-Lorsque vous tentez d'accéder aux section d'infrastructure de la console IBM Cloud, le message suivant s'affiche :
+Lorsque vous tentez d'accéder aux sections d'infrastructure de la console IBM Cloud, le message suivant peut s'afficher :
 {: tsSymptoms}
 
 `Cette page ne peut pas être chargée car votre compte d'infrastructure n'est pas entièrement configuré en tant que compte IBM Cloud. `
 
-Les raisons pour lesquelles ce message d'erreur s'affiche sont multiples :
+Il existe plusieurs raisons pour lesquelles le message s'affiche :
 {: tsCauses}
 
-* Vous avez un [compte Lite](/docs/account?topic=account-accounts#liteaccount), lequel ne permet pas d'accéder aux services d'infrastructure. 
-* Votre compte n'est pas lié à un compte d'infrastructure. 
+* Vous avez un [compte Lite](/docs/account?topic=account-accounts#liteaccount), lequel ne permet pas d'accéder aux services d'infrastructure.
+* Votre compte n'est pas lié à un compte d'infrastructure.
 
 
 Pour résoudre ce problème, vous devez effectuer une mise à niveau vers un compte de type Paiement à la carte ou Abonnement. Pour toute information, voir [Mise à niveau de votre compte](/docs/account?topic=account-upgrading-account).

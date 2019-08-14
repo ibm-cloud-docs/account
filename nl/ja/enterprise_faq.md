@@ -25,7 +25,7 @@ subcollection: account
 {: #lite-to-enterprise}
 {: faq}
 
-はい。ただし、ライト・アカウントは自動的に従量課金 (PAYG) アカウントにアップグレードされます。その後、そのアカウントに対する請求はエンタープライズ・レベルで管理されます。詳しくは、『[アカウントのアップグレード](/docs/account?topic=account-upgrading-account)』を参照してください。
+はい。ただし、ライト・アカウントは自動的に従量課金 (PAYG) アカウントにアップグレードされます。 その後、そのアカウントに対する請求はエンタープライズ・レベルで管理されます。 詳しくは、『[エンタープライズを使用した請求および使用量の一元管理](https://cloud.ibm.com/docs/billing-usage?topic=billing-usage-enterprise)』を参照してください。
 
 ## エンタープライズから自分のアカウントを削除できますか?
 {: #remove-enterprise}
@@ -37,7 +37,7 @@ subcollection: account
 {: #move-enterprise-account}
 {: faq}
 
-はい。エンタープライズ内の任意の場所にアカウントを移動できます。例えば、アカウントをエンタープライズのすぐ下に移動したり、あるアカウント・グループから別のアカウント・グループに移動したりできます。詳しくは、『[エンタープライズ内でのアカウントの移動](/docs/account?topic=account-enterprise-organize#move-accounts)』を参照してください。
+はい。エンタープライズ内の任意の場所にアカウントを移動できます。 例えば、アカウントをエンタープライズのすぐ下に移動したり、あるアカウント・グループから別のアカウント・グループに移動したりできます。 詳しくは、『[エンタープライズ内でのアカウントの移動](/docs/account?topic=account-enterprise-organize#move-accounts)』を参照してください。
 
 ## アカウント・グループを移動できますか?
 {: #move-account-group}
@@ -49,10 +49,10 @@ subcollection: account
 {: #rename-enterprise-account}
 {: faq}
 
-いいえ。エンタープライズ内でアカウントの名前を編集することはできません。アカウントの名前を編集するには、**「管理」** > **「アカウント」**と移動し、**「アカウント設定」**を選択します。「アカウント」セクションで、編集アイコン ![編集アイコン](../icons/edit-tagging.svg) をクリックし、新しいアカウント名を入力し、**「送信」**をクリックします。
+いいえ。エンタープライズ内でアカウントの名前を編集することはできません。 アカウントの名前を編集するには、**「管理」** > **「アカウント」**と移動し、**「アカウント設定」**を選択します。 「アカウント」セクションで、編集アイコン ![編集アイコン](../icons/edit-tagging.svg) をクリックし、新しいアカウント名を入力し、**「送信」**をクリックします。
 
 ## エンタープライズにユーザーを招待できますか?
 {: #enterprise-invite-users}
 {: faq}
 
-エンタープライズにユーザーを招待するには、ユーザー管理サービスに対するエディター以上の役割が設定された {{site.data.keyword.Bluemix_notm}} ID およびアクセス管理 (IAM) アクセス・ポリシーが必要です。詳しくは、『[ユーザーの招待](/docs/iam?topic=iam-iamuserinv#invitations)』を参照してください。
+エンタープライズにユーザーを招待するには、ユーザー管理サービスに対するエディター以上の役割が設定された {{site.data.keyword.Bluemix_notm}} ID およびアクセス管理 (IAM) アクセス・ポリシーが必要です。 詳しくは、『[ユーザーの招待](/docs/iam?topic=iam-iamuserinv#invitations)』を参照してください。

@@ -142,7 +142,7 @@
       "cancelar minha conta",
       "preciso ter minha conta cancelada",
       "suspender esta conta",
-      "como desativar a conta"  
+      "como desativar a conta"
     ],
     "deleteaccount": [
       "excluir minha conta",
@@ -257,6 +257,21 @@
       "contas em que estou",
       "a quais contas estou afiliado",
       "quais contas estão no meu nome"
+    ],
+    "change-profile-settings": [
+      "mudar ID do usuário",
+      "atualizar ID do usuário",
+      "editar meu IBMid",
+      "mudar nome do contato",
+      "mudar e-mail",
+      "atualizar número do telefone",
+      "editar informações pessoais"
+    ],
+     "switch-account-lang": [
+      "mudar o idioma para o inglês",
+      "mudar idioma da conta",
+      "alternar idioma",
+      "atualizar configuração de idioma"
     ],
     "switch-between-accounts": [
       "alternar múltiplas contas",
@@ -466,5 +481,82 @@
       "A página não foi carregada porque o IBM Cloud não detectou se uma sessão existe",
       "BXNUI0016E",
       "Os apps e serviços não foram recuperados porque uma página do IBM Cloud não foi carregada"
+    ],
+    "lite-to-enterprise": [
+      "importar Lite na empresa",
+      "importando conta Lite nas empresas",
+      "migrar a conta Lite na empresa",
+      "incluir Lite na empresa",
+      "inclusão de Lite em uma empresa"
+    ],
+    "remove-enterprise": [
+      "remover minha conta das empresas",
+      "removendo da empresa",
+      "tirar contas da empresa",
+      "excluindo de uma empresa",
+      "exclusão de conta corporativa"
+    ],
+    "move-enterprise-account": [
+      "movendo uma conta dentro de uma empresa",
+      "movimento de conta em empresas",
+      "transferir conta na empresa",
+      "transferência de conta corporativa",
+      "movimento de conta dentro da empresa"
+    ],
+    "move-account-group": [
+      "mover grupo de conta da empresa",
+      "movimento do grupo de contas dentro de uma empresa",
+      "mover grupo dentro de uma empresa",
+      "mover grupo de conta",
+      "mover um grupo para fora de uma empresa"
+    ],
+    "rename-enterprise-account": [
+      "mudando o nome da conta em uma empresa",
+      "mudança de nome da conta corporativa",
+      "atualizando nome da conta na empresa",
+      "editar nome da conta dentro de uma empresa",
+      "edição do nome da conta para empresas"
+    ],
+    "enterprise-invite-users": [
+      "convidando outros usuários para a minha empresa",
+      "solicitar a um usuário que se junte a uma empresa",
+      "usuários se unindo à nossa empresa",
+      "convite para um usuário para uma empresa",
+      "convite corporativo para usuários"
+    ],
+    "troubleshoot-view-enterprise": [
+      "não é possível ver a hierarquia corporativa inteira",
+      "não estou vendo a empresa completa",
+      "não é possível visualizar a hierarquia corporativa",
+      "visualizar a hierarquia e contas ausentes",
+      "hierarquia completa não visível"
+    ],
+    "troubleshoot-existing-enterprise": [
+      "não é possível ver a conta existente como uma opção para importar",
+      "erro ao tentar importar uma conta existente na empresa",
+      "minha conta atual não está disponível para importar na empresa",
+      "não é possível importar a conta na empresa",
+      "importar conta na empresa"
+    ],
+    "troubleshoot-add-enterprise": [
+      "não é possível clicar em incluir conta na empresa",
+      "não é possível criar uma conta para a empresa",
+      "na empresa, por que não posso incluir uma conta",
+      "problema ao incluir uma conta corporativa",
+      "não é possível na minha empresa incluir a conta"
+    ],
+    "troubleshoot-viewsub-enterprise": [
+      "não é possível visualizar a página Assinaturas por meio de uma conta-filha",
+      "não tenho permissão para visualizar dados de assinatura para esta conta",
+      "visualizar assinatura corporativa",
+      "tentando visualizar assinaturas da empresa",
+      "não é possível visualizar assinaturas corporativas"
+    ],
+    "troubleshoot-promo-enterprise": [
+      "não é possível aplicar um código de assinatura à conta corporativa",
+      "não é possível incluir na minha empresa um código de assinatura",
+      "incluir um código de recurso na conta-filha na empresa",
+      "inclusão de código de assinatura na empresa",
+      "problema ao incluir o código de assinatura na empresa"
     ]
 }

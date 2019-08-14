@@ -25,7 +25,7 @@ subcollection: account
 {: #lite-to-enterprise}
 {: faq}
 
-Sí, pero su cuenta Lite se actualiza automáticamente a una cuenta de Pago según uso. A continuación, la facturación de la cuenta se gestiona a nivel de empresa. Para obtener más información, consulte [Actualización de la cuenta](/docs/account?topic=account-upgrading-account).
+Sí, pero su cuenta Lite se actualiza automáticamente a una cuenta de Pago según uso. A continuación, la facturación de la cuenta se gestiona a nivel de empresa. Para obtener más información, consulte [Gestión centralizada de la facturación y el uso con las empresas](https://cloud.ibm.com/docs/billing-usage?topic=billing-usage-enterprise).
 
 ## ¿Puedo eliminar mi cuenta de una empresa?
 {: #remove-enterprise}

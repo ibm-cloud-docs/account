@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-07-15"
 
 keywords: IBM Cloud account, account differences, account overview, account components, how access works
 
@@ -23,13 +23,13 @@ subcollection: account
 {{site.data.keyword.Bluemix}} 帐户包含许多交互组件和系统。特定组件如何连接或者访问权的工作原理之类的概念将帮助您了解如何设置帐户。
 {:shortdesc}
 
+在下图中，帐户层次结构中的组件有两个主要概念务必要理解。实线和虚线用于帮助说明某些组件包含在其他组件中，例如将用户添加到访问组或 Cloud Foundry 组织。但是，某些组件与其他组件进行交互的目的是为了提供访问权，而不是提供成员资格。例如，授予了用户对资源组的访问权，但这些用户并不会像针对访问组那样，成为资源组的成员。 
+
+<figure>
 <a href="https://cloud.ibm.com/docs/api/content/account/images/account_diagram.svg">
-  <img src="images/account_diagram.svg" alt="显示帐户中组件（包括服务、用户以及每项的子组件）的图。">
-</a>
-
-图 1. 帐户组件和系统
-
-在该图中，帐户层次结构中的组件有两个主要概念务必要理解。实线和虚线用于帮助说明某些组件包含在其他组件中，例如将用户添加到访问组或 Cloud Foundry 组织。但是，某些组件与其他组件进行交互的目的是为了提供访问权，而不是提供成员资格。例如，授予了用户对资源组的访问权，但这些用户并不会像针对访问组那样，成为资源组的成员。以下各部分还将对这些概念进行说明。
+<img src="images/account_diagram.svg" alt="显示帐户中组件的图，包含服务、用户以及每项的子组件。"></a>
+<figcaption>图 1. 帐户组件和系统</figcaption>
+</figure>
 
 <dl>
 <dt>用户</dt>

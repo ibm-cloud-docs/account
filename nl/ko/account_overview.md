@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-07-15"
 
 keywords: IBM Cloud account, account differences, account overview, account components, how access works
 
@@ -23,13 +23,13 @@ subcollection: account
 {{site.data.keyword.Bluemix}} 계정에는 상호작용하는 여러 컴포넌트와 시스템이 포함되어 있습니다. 특정 컴포넌트가 연결되는 방법 또는 액세스가 작동하는 방법 등에 대한 개념은 계정을 설정하는 방법을 이해하는 데 도움을 줍니다.
 {:shortdesc}
 
+다음 다이어그램 내에는 이해해야 할 계정 계층 구조의 컴포넌트에 대한 두 가지 기본 개념이 있습니다. 실선과 점선을 사용하여 일부 컴포넌트가 다른 컴포넌트 내에 포함되어 있음(예: 사용자가 액세스 그룹 또는 Cloud Foundry 조직에 추가됨)을 나타내는 데 도움을 줍니다. 그러나 일부 컴포넌트는 멤버십 대신 액세스 제공을 위해 기타 컴포넌트와 상호작용합니다. 예를 들어, 사용자는 리소스 그룹에 대한 액세스를 부여받지만 액세스 그룹에 대한 것과 동일한 방식으로 리소스 그룹의 구성원은 아닙니다. 
+
+<figure>
 <a href="https://cloud.ibm.com/docs/api/content/account/images/account_diagram.svg">
-  <img src="images/account_diagram.svg" alt="서비스, 사용자 및 각각의 서브컴포넌트를 포함하여 계정 내의 컴포넌트를 표시하는 다이어그램입니다.">
-</a>
-
-그림 1. 계정 컴포넌트 및 시스템
-
-다이어그램 내에는 이해해야 할 계정 계층 구조의 컴포넌트에 대한 두 가지 기본 개념이 있습니다. 실선과 점선을 사용하여 일부 컴포넌트가 다른 컴포넌트 내에 포함되어 있음(예: 사용자가 액세스 그룹 또는 Cloud Foundry 조직에 추가됨)을 나타내는 데 도움을 줍니다. 그러나 일부 컴포넌트는 멤버십 대신 액세스 제공을 위해 기타 컴포넌트와 상호작용합니다. 예를 들어, 사용자는 리소스 그룹에 대한 액세스를 부여받지만 액세스 그룹에 대한 것과 동일한 방식으로 리소스 그룹의 구성원은 아닙니다. 이러한 개념은 다음 섹션에도 설명되어 있습니다.
+<img src="images/account_diagram.svg" alt="서비스, 사용자 및 각각의 서브컴포넌트를 포함하여 계정 내의 컴포넌트를 표시하는 다이어그램입니다."></a>
+<figcaption>그림 1. 계정 컴포넌트 및 시스템</figcaption>
+</figure>
 
 <dl>
 <dt>사용자</dt>

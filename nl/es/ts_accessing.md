@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-08-06"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -57,9 +57,9 @@ Si inicia sesión en {{site.data.keyword.Bluemix_notm}} y el proceso se interrum
 {: #ts_old_username}
 {: troubleshoot}
 
-Para iniciar sesión correctamente en el correo electrónico, deberá asegurarse de que tiene la autenticación de IBMid para cada cuenta.
+Para iniciar sesión correctamente en la consola de {{site.data.keyword.Bluemix_notm}}, asegúrese de tener una autenticación de IBMid para cada cuenta.
 
-Cuando inicia sesión en la consola de {{site.data.keyword.Bluemix_notm}} aparece el siguiente mensaje:
+Cuando inicia sesión en la consola, aparece el siguiente mensaje:
 {: tsSymptoms}
 
 `No hemos reconocido este IBMid o correo electrónico.`
@@ -94,9 +94,7 @@ Para crear una cuenta de {{site.data.keyword.Bluemix_notm}}, siga el proceso de 
 {: #ts_login_stalls}
 {: troubleshoot}
 
-Cuando obtiene un mensaje de inicio de sesión correcto, pero no vuelve a la consola.
-
-Cuando inicia sesión utilizando su IBMid, se muestra un mensaje de inicio de sesión correcto, pero no vuelve a la [consola de {{site.data.keyword.Bluemix_notm}}](https://{DomainName}){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo").
+Cuando inicia sesión utilizando su IBMid, se muestra un mensaje de inicio de sesión correcto, pero no vuelve a la consola de {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
 
 Utilice una de las opciones siguientes:
@@ -138,7 +136,7 @@ El correo electrónico de confirmación se envía a la dirección de correo elec
 
 ```
 Para finalizar el registro, consulte su correo electrónico.
-¿No encuentra el correo electrónico? Vuelva a enviar
+¿No encuentra el correo electrónico? Reenviar.
 ```
 {:screen}
 
@@ -148,9 +146,9 @@ Pulse **Reenviar** para enviar otro correo electrónico de confirmación a la di
 {: #ts_err}
 {: troubleshoot}
 
-Cuando utilice la consola de {{site.data.keyword.Bluemix_notm}}, es posible que no pueda cargar una página de consola. En su lugar verá los mensajes de error BXNUI0001E o BXNUI0016E.
+Cuando utilice la consola de {{site.data.keyword.Bluemix_notm}}, es posible que no pueda cargar una página de consola. En su lugar, se mostrarán los mensajes de error BXNUI0001E o BXNUI0016E.
 
-Es posible que vea uno de los mensajes de error siguientes:
+Puede aparecer uno de los siguientes mensajes de error:
 {: tsSymptoms}
 
 `BXNUI0001E: La página no se ha cargado porque {{site.data.keyword.Bluemix_notm}} no ha detectado si existe una sesión.`
@@ -171,12 +169,12 @@ Lleve a cabo una o varias de estas acciones si es necesario:
 {: #troubleshoot-infrastructure-access}
 {: troubleshoot}
 
-Cuando intenta acceder a secciones de las secciones de la infraestructura de la consola de IBM Cloud, ve un mensaje que indica:
+Cuando intenta acceder a secciones de las secciones de la infraestructura de la consola de IBM Cloud, puede que aparezca el siguiente mensaje:
 {: tsSymptoms}
 
 `Esta página no se puede cargar porque su cuenta de la infraestructura no está completamente configurada como una cuenta de IBM Cloud.`
 
-Existen varios motivos para que aparezca este mensaje de error:
+Hay diversas razones por las que se muestra este mensaje:
 {: tsCauses}
 
 * Tiene una [cuenta Lite](/docs/account?topic=account-accounts#liteaccount), que no permite acceder a los servicios de la infraestructura.

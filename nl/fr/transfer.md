@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-11"
+lastupdated: "2019-07-31"
 
 keywords: change owner, transfer account, transfer account ownership, switch owner, transfer owner
 
@@ -43,7 +43,13 @@ L'équipe {{site.data.keyword.cloud_notm}} passe en revue les changements apport
 ## Transfert d'un compte depuis un autre propriétaire
 {: #transfer-lost}
 
-Si le propriétaire d'un compte quitte votre société et que vous devez transférer le compte à un nouvel utilisateur, vous devez soumettre un cas de support. Vous devrez joindre à ce cas de support un document officiel de votre société qui contient les informations suivantes.
+Si le propriétaire d'un compte a quitté votre société et que vous avez besoin de transférer le compte, vous devez choisir un nouveau propriétaire, puis soumettre un dossier de support pour demander un transfert. 
+
+Le nouveau propriétaire doit être un utilisateur du compte et ne peut pas être le propriétaire d'un autre compte {{site.data.keyword.cloud_notm}}. 
+Si l'utilisateur n'est pas dans le compte, un autre utilisateur peut l'inviter dans le compte ou vous pouvez demander son ajout au compte dans le cas de support que vous créez. 
+S'il possède déjà un compte {{site.data.keyword.cloud_notm}}, vous pouvez demander à transférer ce compte dont il est actuellement propriétaire vers un autre utilisateur ou annuler le compte.
+
+Dans le cas de support de demande de transfert de compte, vous devez joindre un document officiel de votre entreprise qui contient les informations suivantes.
 - L'en-tête officiel de votre société
 - Un document d'incorporation de votre société, le cas échéant
 - Un document indiquant que la personne n'est plus associée à votre société

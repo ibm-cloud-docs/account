@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-08-06"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -57,14 +57,14 @@ Se você se conectar ao {{site.data.keyword.Bluemix_notm}} e o processo de login
 {: #ts_old_username}
 {: troubleshoot}
 
-Para efetuar login com êxito em seu e-mail, você teria que ter certeza de que tem a autenticação do IBMid para cada conta.
+Para efetuar login com sucesso no console do {{site.data.keyword.Bluemix_notm}}, certifique-se de ter a autenticação do IBMid para cada conta.
 
-Ao efetuar login no console do {{site.data.keyword.Bluemix_notm}}, a mensagem a seguir será exibida:
+Ao efetuar login no console, a mensagem a seguir será exibida:
 {: tsSymptoms}
 
 `Nós não reconhecemos este IBMid ou e-mail. `
 
-Você tentou efetuar login no console, mas não usou um IBMid válido. Por exemplo, você não inseriu um endereço de e-mail completo para o IBMid ou tentou usar um nome de usuário e senha anteriores.
+Você tentou efetuar login no console, mas não usou um IBMid válido. Por exemplo, você não digitou um endereço de e-mail completo qualificado para o IBMid ou tentou usar um nome de usuário e senha anteriores.
 {: tsCauses}
 
 Deve-se ter um ID IBM e uma senha válidos para efetuar login no
@@ -95,9 +95,7 @@ Para criar uma conta do {{site.data.keyword.Bluemix_notm}}, siga o processo de i
 {: #ts_login_stalls}
 {: troubleshoot}
 
-Quando você obtém uma mensagem de êxito de login, mas não retorna para o console.
-
-Ao efetuar login usando seu IBMid, uma mensagem de êxito de login é exibida, mas você não retorna para o [console do {{site.data.keyword.Bluemix_notm}}](https://{DomainName}){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo").
+Quando você efetua login usando seu IBMid, uma mensagem de êxito de login é exibida, mas você não retorna ao console do {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
 
 Use uma das opções a seguir:
@@ -110,7 +108,7 @@ Use uma das opções a seguir:
 {: #ts_login_ibmid}
 {: troubleshoot}
 
-Se você efetuar login no {{site.data.keyword.Bluemix_notm}} e a autenticação de seu IBMid não for concluída, poderá haver um problema com o serviço.
+Se você efetuar login no {{site.data.keyword.Bluemix_notm}} e a autenticação de seu IBMid não for concluída, talvez haja um problema com o serviço.
 
 Ao efetuar login no {{site.data.keyword.Bluemix_notm}}, a autenticação com o IBMid não é concluída.
 {: tsSymptoms}
@@ -118,7 +116,7 @@ Ao efetuar login no {{site.data.keyword.Bluemix_notm}}, a autenticação com o I
 Pode haver um problema com o serviço de autenticação do IBMid.
 {: tsCauses}
 
-Certifique-se de que seja possível efetuar login na [IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo"). Caso seja possível, este é um problema de aplicativo e é possível tentar efetuar login no console novamente mais tarde. Se não for possível efetuar login nessa página, entre em contato com o [help desk do IBMid ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}.  
+Certifique-se de que seja possível efetuar login na [IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo"). Se for possível, será um problema de aplicativo e será possível tentar efetuar login no console novamente mais tarde. Se não for possível efetuar login nessa página, entre em contato com o [help desk do IBMid ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window}.  
 {: tsResolve}
 
 
@@ -142,19 +140,19 @@ O e-mail de confirmação é enviado para o endereço de e-mail que está associ
 
 ```
 Para concluir seu registro, verifique seu e-mail.
-Não consegue localizar o e-mail? Reenviar
+Não consegue localizar o e-mail? Reenviar.
 ```
 {:screen}
 
-Clique em **Reenviar** para enviar outro e-mail de confirmação para o endereço de e-mail que está associado a seu IBMid. Se você ainda não puder concluir seu registro, entre em contato com o [suporte do {{site.data.keyword.Bluemix_notm}}](/docs/get-support?topic=get-support-getting-customer-support).  
+Clique em **Reenviar** para enviar outro e-mail de confirmação para o endereço de e-mail que está associado a seu IBMid. Se você ainda não conseguir concluir seu registro, entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}}](/docs/get-support?topic=get-support-getting-customer-support).  
 
 ## Por que eu encontro páginas do console que não são carregadas?
 {: #ts_err}
 {: troubleshoot}
 
-Ao usar o console do {{site.data.keyword.Bluemix_notm}}, você pode não ser capaz de carregar uma página do console. Em vez disso, talvez você consulte as mensagens de erro BXNUI0001E ou BXNUI0016E.
+Ao usar o console do {{site.data.keyword.Bluemix_notm}}, você pode não ser capaz de carregar uma página do console. Em vez disso, as mensagens de erro BXNUI0001E ou BXNUI0016E podem ser exibidas.
 
-É possível ver uma das mensagens de erro a seguir:
+Uma das mensagens de erro a seguir pode ser exibida:
 {: tsSymptoms}
 
 `BXNUI0001E: The page wasn't loaded because {{site.data.keyword.Bluemix_notm}} didn't detect whether a session exists.`
@@ -176,12 +174,12 @@ efetuar login novamente.
 {: #troubleshoot-infrastructure-access}
 {: troubleshoot}
 
-Quando você tenta acessar seções de infraestrutura do console do IBM Cloud, você vê uma mensagem que informa:
+Quando você tenta acessar seções de infraestrutura do console do IBM Cloud, a mensagem a seguir pode ser exibida:
 {: tsSymptoms}
 
 `Esta página não pode ser carregada porque sua conta de infraestrutura não está totalmente configurada como uma conta do IBM Cloud.`
 
-Existem diversos motivos pelos quais é possível ver essa mensagem de erro:
+Há vários motivos pelos quais a mensagem é exibida:
 {: tsCauses}
 
 * Você tem uma [conta Lite](/docs/account?topic=account-accounts#liteaccount), a qual não permite acesso a serviços de infraestrutura.

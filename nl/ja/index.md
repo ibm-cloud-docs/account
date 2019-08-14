@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-08-02"
 
 keywords: account types, Lite, free account, paid account, buy account, account difference, compare account, subscription, service bundle
 
@@ -73,7 +73,7 @@ subcollection: account
 ## 「従量課金 (PAYG)」アカウント
 {: #paygo}
 
-従量課金 (PAYG) アカウントを使用すると、すべての無料プランを含む {{site.data.keyword.Bluemix_notm}} カタログ全体にアクセスでき、1 カ月当たり 2 倍の 512 MB の無料ランタイム・メモリーを取得します。 長期の契約や確約なしに、使用した有料サービスに対してのみお支払いいただきます。
+従量課金 (PAYG) アカウントを使用すると、すべての無料プランを含む {{site.data.keyword.Bluemix_notm}} カタログ全体にアクセスでき、1 カ月当たり 2 倍の 512 MB の無料ランタイム・メモリーを取得します。 長期の契約やコミットメントなしに、使用した有料サービスに対してのみお支払いいただきます。従量課金 (PAYG) アカウントにアップグレードすると、開始に役立てることができる [$200 のクレジット](#upgrade-lite-account)を受け取ります。
 
 複数のリソース・グループを作成して、リソースの集合での割り当て量の管理および有料使用量の表示を簡単に行うことができます。 {{site.data.keyword.Bluemix_notm}} の計算とサービスの使用量に基づいて課金されます。 使用量がランタイムおよびサービスの無料枠を超えると、リソースの課金の詳細を示す月次請求書を受け取ることになります。
 
@@ -102,7 +102,7 @@ subcollection: account
 サービス・バンドル・サブスクリプションは、{{site.data.keyword.Bluemix_notm}} コンソールからはご利用になれません。 サービス・バンドルの詳細と購入については、[{{site.data.keyword.Bluemix_notm}} 営業担当員 ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} にお問い合わせください。
 {:tip}
 
-サービス・バンドル・サブスクリプションの購入後は、アカウントにバンドルを追加するために適用するフィーチャー・コードが記載された E メールを受信します。 フィーチャー・コードの適用方法について詳しくは、『[フィーチャー・コードの適用](/docs/account?topic=account-codes)』を参照してください。 サービス・バンドルが期限切れになった場合、またはすべてのクレジットを使用した場合は、使用量が従量課金 (PAYG) のレートで課金されるようにした状態で、どのサービスでも継続して使用することができます。
+サービス・バンドル・サブスクリプションの購入後は、アカウントにバンドルを追加するために適用するサブスクリプション・コードが記載された E メールが送られてきます。 サブスクリプション・コードの適用方法について詳しくは、『[サブスクリプションの管理](/docs/billing-usage?topic=billing-usage-subscriptions)』を参照してください。 サービス・バンドルが期限切れになった場合、またはすべてのクレジットを使用した場合は、使用量が従量課金 (PAYG) のレートで課金されるようにした状態で、どのサービスでも継続して使用することができます。
 
 ## アカウントのアップグレード
 {: #upgrade-lite-account}

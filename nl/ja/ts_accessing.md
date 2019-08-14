@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-08-06"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -57,9 +57,9 @@ subcollection: account
 {: #ts_old_username}
 {: troubleshoot}
 
-E メールに正常にログインするには、アカウントごとに IBMid 認証があることを確認する必要があります。
+{{site.data.keyword.Bluemix_notm}} コンソールに正常にログインするには、アカウントごとに IBMid 認証があることを確認する必要があります。
 
-{{site.data.keyword.Bluemix_notm}} コンソールにログインすると、以下のメッセージが表示されます。
+コンソールにログインすると、以下のメッセージが表示されます。
 {: tsSymptoms}
 
 `この IBMid または E メールを認識できません。(We didn't recognize this IBMid or email.)`
@@ -94,9 +94,7 @@ E メールに正常にログインするには、アカウントごとに IBMid
 {: #ts_login_stalls}
 {: troubleshoot}
 
-ログイン成功メッセージが出されますが、コンソールに戻りません。
-
-IBMid を使用してログインすると、ログインに成功したというメッセージが表示されますが、[{{site.data.keyword.Bluemix_notm}} コンソール](https://{DomainName}){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") に戻りません。
+IBMid を使用してログインすると、ログインに成功したというメッセージが表示されますが、{{site.data.keyword.Bluemix_notm}} コンソールに戻りません。
 {: tsSymptoms}
 
 以下のいずれかの方法を使用してください。
@@ -117,7 +115,7 @@ IBMid を使用してログインすると、ログインに成功したとい�
 IBMid 認証サービスに問題がある可能性があります。
 {: tsCauses}
 
-[IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") にログインできるかどうか確認してください。 できる場合、これはアプリケーション問題であり、後でコンソールへのログインを再試行できます。 このページにログインできない場合、[IBMid ヘルプ・デスク ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window} にお問い合わせください。  
+[IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") にログインできるかどうか確認してください。 ログインできる場合、これはアプリケーション問題であり、後でコンソールへのログインを再試行できます。このページにログインできない場合、[IBMid ヘルプ・デスク ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window} にお問い合わせください。  
 {: tsResolve}
 
 
@@ -138,7 +136,7 @@ IBMid 認証サービスに問題がある可能性があります。
 
 ```
 登録を完了するには、E メールをご確認ください。
-E メールが見つかりませんか? 再送
+E メールが見つかりませんか? 再送。
 ```
 {:screen}
 
@@ -150,7 +148,7 @@ E メールが見つかりませんか? 再送
 
 {{site.data.keyword.Bluemix_notm}} コンソールを使用する際、コンソール・ページをロードできない場合があります。 代わりに、エラー・メッセージ BXNUI0001E または BXNUI0016E が表示されることがあります。
 
-以下のいずれかのエラー・メッセージが表示されます。
+以下のいずれかのエラー・メッセージが表示される場合があります。
 {: tsSymptoms}
 
 `BXNUI0001E: セッションが存在しているかどうかを {{site.data.keyword.Bluemix_notm}} が検出しなかったため、ページはロードされませんでした。`
@@ -171,17 +169,17 @@ E メールが見つかりませんか? 再送
 {: #troubleshoot-infrastructure-access}
 {: troubleshoot}
 
-IBM Cloud コンソールのインフラストラクチャーのセクションにアクセスしようとしたときに以下のメッセージが表示されることがあります。
+IBM Cloud コンソールのインフラストラクチャーのセクションにアクセスしようとすると、以下のメッセージが表示されることがあります。
 {: tsSymptoms}
 
 `インフラストラクチャー・アカウントが IBM Cloud アカウントとして完全に構成されていないため、このページをロードできません。`
 
-このエラー・メッセージが表示される理由は複数あります。
+メッセージが表示される理由は複数あります。
 {: tsCauses}
 
 * [ライト・アカウント](/docs/account?topic=account-accounts#liteaccount)を使用している (ライト・アカウントではインフラストラクチャー・サービスへのアクセスは許可されていません)。
 * 使用しているアカウントがインフラストラクチャー・アカウントにリンクされていない。
 
 
-この問題を解決するには、従量課金 (PAYG) アカウントまたはサブスクリプション・アカウントにアップグレードする必要があります。詳しくは、[アカウントのアップグレード](/docs/account?topic=account-upgrading-account)を参照してください。
+この問題を解決するには、従量課金 (PAYG) アカウントまたはサブスクリプション・アカウントにアップグレードする必要があります。 詳しくは、[アカウントのアップグレード](/docs/account?topic=account-upgrading-account)を参照してください。
 {: tsResolve}

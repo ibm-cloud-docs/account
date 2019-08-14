@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-07-29"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -133,7 +133,7 @@ Lite 계정을 업그레이드하려면 [계정 설정](https://{DomainName}/acc
 {: #reset-password}
 {: faq}
 
-계정 비밀번호를 재설정하려면 아바타 아이콘 ![아바타 아이콘](../icons/i-avatar-icon.svg) **> 프로필 및 설정**으로 이동하십시오. 그리고 계정 사용자 정보 타일에서 **변경 또는 재설정**을 클릭하십시오.
+계정 비밀번호를 재설정하려면 **아바타** 아이콘 ![아바타 아이콘](../icons/i-avatar-icon.svg) **> 프로파일 및 설정**으로 이동하십시오. 그리고 계정 사용자 정보 타일에서 **변경 또는 재설정**을 클릭하십시오.
 
 VPN 비밀번호를 재설정하려면 다음 단계를 완료하십시오.
 
@@ -171,7 +171,7 @@ IBM에서 개인 정보를 어떻게 처리하는지 알아보려면 [IBM 개인
 
 계정은 다음 이유로 인해 비활성화될 수 있습니다.
 
-- 평가판 계정의 경우, 평가판 기간이 종료되었습니다. 계정을 다시 활성화하려면 계정에 로그인한 후 종량과금제 계정으로 업그레이드하십시오.
+- 평가판 계정의 경우, 평가판 기간이 종료되었습니다. 계정을 다시 활성화하려면 계정에 로그인한 후 종량과금제 계정으로 업그레이드하십시오. 계정이 완전히 재활성화되려면 며칠 정도 소요될 수 있습니다.
 - 권한 부여된 사용자가 계정을 취소했습니다.
 - 계정이 일시중단되었습니다. IBM의 재량에 따라, {{site.data.keyword.Bluemix_notm}} 서비스의 허용된 사용 방법을 위반하는 계정은 별도의 통지 없이 이용이 중단될 수 있습니다. 일부 서비스는 위반 행위에 대해 알림을 받은 후에 사용자가 자신의 사용 방법을 바로잡은 경우 복원될 수 있습니다.
 
@@ -181,7 +181,7 @@ IBM에서 개인 정보를 어떻게 처리하는지 알아보려면 [IBM 개인
 {: #contactsupport}
 {: faq}
 
-콘솔 메뉴 표시줄에서 **지원**을 클릭하여 지원 센터로 이동하십시오. [지원 받기](/docs/get-support?topic=get-support-support-plans)에서 지원에 대해 더 자세히 알아보십시오.
+콘솔 메뉴 표시줄에서 **지원**을 클릭하여 지원 센터로 이동하십시오. 자세한 정보는 [시작하기](/docs/get-support?topic=get-support-support-plans)를 참조하십시오.
 
 ## 무료 평가판을 위해 등록할 수 있습니까?
 {: #freetrial}
@@ -190,6 +190,12 @@ IBM에서 개인 정보를 어떻게 처리하는지 알아보려면 [IBM 개인
 {{site.data.keyword.Bluemix_notm}} Lite 계정은 무료 Lite 플랜 서비스에 대한 액세스를 제공합니다. 비용 청구 없이 원하는 만큼 이러한 서비스를 사용할 수 있으며 계정은 만료되지 않습니다. [Lite 계정을 등록](https://{DomainName}/registration)하십시오.
 
 공인 교육 기관의 교직원 및 학생은 {{site.data.keyword.Bluemix_notm}} 평가판 계정을 사용할 수 있습니다. 평가판 계정에 대한 사용 자격을 얻으려면 [IBM의 파워 활용 ![외부 링크아이콘](../icons/launch-glyph.svg)](https://ibm.biz/academic){: new_window}으로 이동하여 기관 인증 정보의 유효성을 검증하십시오. Lite 계정과 달리 평가판 계정은 평가 기간이 끝나면 만료됩니다.
+
+## 내 SoftLayer ID로 {{site.data.keyword.Bluemix_notm}} 콘솔에 로그인할 수 있습니까?
+{: #slid}
+{: faq}
+
+예, SoftLayer ID를 사용하여 콘솔에 로그인할 수 있습니다. [로그인 페이지](https://cloud.ibm.com/login){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")로 이동하여 **ID** 목록에서 **SoftLayer ID**를 선택하십시오.  
 
 ## 계정을 연결한 후에는 어떻게 로그인합니까?
 {: #al_login}
@@ -264,6 +270,18 @@ IBM Cloud 콘솔 헤더에는 본인이 소유한 계정을 포함하여 본인�
 계정 내 개별 자원의 소유권을 다른 사람에게 이전하려는 경우 `ibmcloud catalog` 명령을 사용할 수 있습니다. 자세히 알아보려면 [개인용 리소스의 소유권 이전](/docs/account?topic=account-include#owners)을 참조하십시오.
 
 전체 계정의 소유권을 이전하려면 [회사 프로파일](https://{DomainName}/account/company-profile)을 업데이트하십시오. 자세한 정보는 [계정의 소유권 이전](/docs/account?topic=account-transfer)을 참조하십시오.
+
+## 프로파일에서 이름 또는 IBM ID를 변경하는 방법은 무엇입니까?
+{: #change-profile-settings}
+{: faq}
+
+**아바타** 아이콘 ![아바타 아이콘](../icons/i-avatar-icon.svg) **>  프로파일 설정**으로 이동하여 이름, 이메일 또는 전화번호 등의 개인 정보를 변경할 수 있습니다. IBM ID를 변경할 수는 없으나 적절한 새 IBM ID를 작성할 수 있습니다. [IBM ID 전세계 헬프 데스크](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html)에서 {{site.data.keyword.Bluemix_notm}} 계정과 연관되지 않은 일반적인 ID 질문에 대해 도움을 받을 수 있습니다.
+
+## 내 계정과 연관된 언어를 어떻게 변경할 수 있습니까?
+{: #switch-account-lang}
+{: faq}
+
+사용되는 언어는 웹 브라우저 설정을 기반으로 합니다. 자국어로 컨텐츠를 보려면 브라우저의 언어 설정을 업데이트하십시오.
 
 ## {{site.data.keyword.Bluemix_notm}}에서 사용자의 일괄처리 등록을 지원합니까?
 {: #batch-registration}

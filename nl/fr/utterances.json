@@ -142,7 +142,7 @@
       "résilier mon compte",
       "je dois résilier mon compte",
       "suspendre ce compte",
-      "comment désactiver le compte"  
+      "comment désactiver le compte"
     ],
     "deleteaccount": [
       "supprimer mon compte",
@@ -257,6 +257,21 @@
       "comptes dans lesquels je me trouve",
       "quels sont les comptes auxquels je suis affiliés",
       "quels sont les comptes que je possède"
+    ],
+    "change-profile-settings": [
+      "modifier l'ID utilisateur",
+      "mettre à jour l'ID utilisateur",
+      "éditer mon IBMid",
+      "modifier le nom du contact",
+      "modifier le courrier électronique",
+      "mettre à jour le numéro de téléphone",
+      "modifier les informations personnelles"
+    ],
+     "switch-account-lang": [
+      "passer à l'anglais",
+      "changer la langue du compte",
+      "changer de langue",
+      "mettre à jour les paramètres linguistiques"
     ],
     "switch-between-accounts": [
       "bascule entre plusieurs comptes",
@@ -466,5 +481,82 @@
       "La page n'a pas été chargée car IBM Cloud n'a pas détecté s'il existait une session",
       "BXNUI0016E",
       "Les applications et les services n'ont pas été extraits car une page IBM Cloud n'a pas été chargée"
+    ],
+    "lite-to-enterprise": [
+      "importer un compte Lite dans une entreprise",
+      "importer un compte Lite dans des entreprises",
+      "migrer un compte Lite vers une entreprise",
+      "ajouter un compte Lite à une entreprise",
+      "ajout d'un compte Lite à une entreprise"
+    ],
+    "remove-enterprise": [
+      "supprimer mon compte des entreprises",
+      "suppression d'une entreprise",
+      "retirer des comptes d'une entreprise",
+      "suppression depuis une entreprise",
+      "suppression de compte d'entreprise"
+    ],
+    "move-enterprise-account": [
+      "déplacement d'un compte au sein d'une entreprise",
+      "déplacement de compte dans des entreprises",
+      "transfert de compte dans une entreprise",
+      "transfert de compte d'une entreprise",
+      "mouvement de compte au sein d'une entreprise"
+    ],
+    "move-account-group": [
+      "déplacement d'un groupe de comptes d'une entreprise",
+      "mouvement de groupe de comptes au sein d'une entreprise",
+      "déplacement d'un groupe au sein d'une entreprise",
+      "déplacement d'un groupe de comptes",
+      "retrait d'un groupe d'une entreprise"
+    ],
+    "rename-enterprise-account": [
+      "modification du nom du compte dans une entreprise",
+      "modification du nom de compte d'entreprise",
+      "mise à jour du nom de compte dans l'entreprise",
+      "édition du nom de compte au sein d'une entreprise",
+      "édition de nom de compte pour des entreprises"
+    ],
+    "enterprise-invite-users": [
+      "inviter d'autres utilisateurs dans mon entreprise",
+      "demander à un utilisateur de rejoindre une entreprise",
+      "utilisateurs rejoignant notre entreprise",
+      "invitation d'un utilisateur à une entreprise",
+      "invitation d'entreprise pour des utilisateurs"
+    ],
+    "troubleshoot-view-enterprise": [
+      "impossible de voir l'ensemble de la hiérarchie d'entreprise",
+      "intégralité de l'entreprise non visible",
+      "impossible de visualiser la hiérarchie de l'entreprise",
+      "afficher la hiérarchie et les comptes manquants",
+      "hiérarchie complète non visible"
+    ],
+    "troubleshoot-existing-enterprise": [
+      "impossible de voir le compte existant comme option d'importation",
+      "erreur lors de la tentative d'importation d'un compte existant dans l'entreprise",
+      "mon compte courant n'est pas disponible pour importation dans l'entreprise",
+      "impossible d'importer un compte dans l'entreprise",
+      "importation de compte dans l'entreprise"
+    ],
+    "troubleshoot-add-enterprise": [
+      "impossible de cliquer sur Ajouter un compte dans l'entreprise",
+      "impossible de créer un compte dans l'entreprise",
+      "pourquoi est-ce impossible d'ajouter un compte dans l'entreprise",
+      "problème lors de l'ajout d'un compte d'entreprise",
+      "impossible d'ajouter un compte dans mon entreprise"
+    ],
+    "troubleshoot-viewsub-enterprise": [
+      "impossible d'afficher la page Abonnements à partir d'un compte enfant",
+      "vous ne disposez pas des droits permettant d'afficher les données d'abonnement pour ce compte",
+      "afficher l'abonnement d'entreprise",
+      "tentative de visualisation des abonnements d'entreprise",
+      "impossible de visualiser les abonnements d'entreprise"
+    ],
+    "troubleshoot-promo-enterprise": [
+      "impossible d'appliquer un code d'abonnement au compte d'entreprise",
+      "impossible d'ajouter un code d'abonnement à mon entreprise",
+      "ajouter un code de fonction à un compte enfant sur l'entreprise",
+      "ajout de code d'abonnement à l'entreprise",
+      "problème lors de l'ajout d'un code d'abonnement à l'entreprise"
     ]
 }

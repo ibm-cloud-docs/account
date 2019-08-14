@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-30"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -60,7 +60,7 @@ Para actualizar de una cuenta Lite a una de suscripción, siga estos pasos.
    {:tip}
 1. Revise los detalles de la suscripción y especifique la información de pago.
 
-   Una vez procesada la información de pago, su crédito de suscripción se añade a su cuenta. Puede supervisar el uso de la suscripción en esta misma página Suscripciones. Consulte [Gestión de suscripciones](/docs/billing-usage?topic=billing-usage-subscriptions para obtener más información.
+   Una vez procesada la información de pago, su crédito de suscripción se añade a su cuenta. Puede supervisar el uso de la suscripción en esta misma página Suscripciones. Consulte [Gestión de suscripciones](/docs/billing-usage?topic=billing-usage-subscriptions) para obtener más información.
 
 La suscripción se renueva de forma automática. Si desea cancelar la renovación de la suscripción, [póngase en contacto con el equipo de soporte](https://{DomainName}/unifiedsupport/supportcenter).
 {: note}

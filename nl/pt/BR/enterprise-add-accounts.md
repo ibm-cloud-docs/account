@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-26"
 
 keywords: enterprise, add account, import account, create account
 
@@ -47,7 +47,7 @@ Para importar uma conta existente, conclua as etapas a seguir:
 1. Selecione a conta que você deseja importar.
 
    Se nenhuma conta é exibida, é provável que você não tenha o acesso correto em nenhuma conta existente.
-  {: tip}
+   {: tip}
 1. Se você desejar incluir a conta em um grupo de contas, selecione o grupo de contas que será o pai. O pai que você seleciona determina onde a conta existe na hierarquia corporativa.
 1. Revise as informações sobre impactos em sua conta e selecione **Eu entendo o impacto em minha conta**. Em seguida, clique em **Importar**.
 
@@ -80,7 +80,7 @@ Para importar uma conta existente, conclua as etapas a seguir:
 ### Importando contas usando a API
 {: #add-account-api}
 
-Para importar uma conta existente na empresa, chame a <!-- [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#import-an-account-into-an-enterprise){: external}--> API de gerenciamento corporativo conforme mostrado na solicitação de amostra a seguir. Substitua as variáveis de token e ID do {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) pelos valores de sua empresa.
+Para importar uma conta existente na empresa, chame a [API de gerenciamento corporativo](https://{DomainName}/apidocs/enterprise-apis/enterprise#import-an-account-into-an-enterprise){: external} conforme mostrado na solicitação de amostra a seguir. Substitua as variáveis de token e ID do {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) pelos valores de sua empresa.
 
 ```
 curl -X PUT \
@@ -126,7 +126,7 @@ Depois de criar a conta, o proprietário da conta poderá efetuar login na conta
 ### Criando contas usando a API
 {: #create-account-api}
 
-Para criar uma nova conta na empresa, chame a API de gerenciamento corporativo conforme mostrado na solicitação de amostra a seguir, substituindo as variáveis de token e ID do IAM pelos valores da sua empresa. <!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-a-new-account-in-an-enterprise){: external}. -->
+Para criar uma nova conta na empresa, chame a API de gerenciamento corporativo conforme mostrado na solicitação de amostra a seguir, substituindo as variáveis de token e de ID do IAM pelos valores de sua empresa. Para obter informações detalhadas sobre a API, consulte [API de gerenciamento corporativo](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-a-new-account-in-an-enterprise){: external}.
 
 ```
 curl -X POST \

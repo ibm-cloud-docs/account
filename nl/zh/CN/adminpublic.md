@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-08"
+lastupdated: "2019-07-29"
 
 keywords: create account, IBMid, sign up for account, sign up
 
@@ -37,7 +37,9 @@ subcollection: account
 1. 转至 [{{site.data.keyword.Bluemix_notm}} 登录页面](https://cloud.ibm.com/){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")，然后单击**创建 {{site.data.keyword.Bluemix_notm}} 帐户**。
 1. 输入 IBM 标识电子邮件地址。如果没有现有的 IBM 标识，就会根据您输入的电子邮件创建一个标识。
 1. 在其余字段中填充信息，然后单击**创建帐户**。
+1. 通过单击发送到您提供的电子邮件地址的确认电子邮件中的链接来确认帐户。
 
+如果在登录新帐户时遇到任何问题，请参阅[有关访问 {{site.data.keyword.Bluemix_notm}} 的故障诊断](/docs/account?topic=account-accessing)以获取帮助。
 
 ## 使用联合标识注册
 {: #signup-federated}

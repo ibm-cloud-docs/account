@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-07-29"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -17,7 +17,7 @@ subcollection: account
 {:faq: data-hd-content-type='faq'}
 {:tip: .tip}
 
-# Foire aux questions concernant les comptes
+# Foire aux question concernant les comptes
 {: #accountfaqs}
 
 Les foires aux questions concernant {{site.data.keyword.cloud}} peuvent inclure des questions sur les comptes Lite, la réaffectation d'utilisateur, les erreurs de compte ou les étiquettes de compte. Pour trouver toutes les foires aux questions concernant {{site.data.keyword.cloud_notm}}, consultez notre bibliothèque de foires aux questions.
@@ -133,7 +133,7 @@ Pour plus d'informations, voir [Définition des préférences de courrier](/docs
 {: #reset-password}
 {: faq}
 
-Pour réinitialiser votre mot de passe de compte, accédez à l'icône Avatar ![Icône Avatar](../icons/i-avatar-icon.svg) ** puis sélectionnez Profil et paramètres**. Cliquez ensuite sur **Modifier ou Réinitialiser** dans la section d'informations Utilisateurs du compte.
+Pour réinitialiser votre mot de passe de compte, accédez à l'icône **Avatar** ![Icône Avatar](../icons/i-avatar-icon.svg) **> Profil et paramètres**. Cliquez ensuite sur **Modifier ou Réinitialiser** dans la section d'informations Utilisateurs du compte.
 
 Pour réinitialiser votre mot de passe VPN, procédez comme suit :
 
@@ -171,7 +171,8 @@ Pour comprendre comment IBM gère les informations personnelles, voir la [décla
 
 Votre compte peut être désactivé pour les raisons suivantes :
 
-- La période d'essai est terminée pour les comptes d'essai. Pour réactiver votre compte, connectez-vous à ce dernier et effectuez une mise à niveau vers un compte Paiement à la carte.
+- La période d'essai est terminée pour les comptes d'essai. Pour réactiver votre compte, connectez-vous à ce dernier et effectuez une mise à niveau vers un compte Paiement à la carte. 
+Quelques jours peuvent être nécessaires pour réactiver complètement votre compte.
 - Un utilisateur autorisé a annulé le compte.
 - Le compte a été suspendu. IBM peut, à sa seule discrétion, désactiver sans aucun préavis les comptes ne respectant pas les comportements d'utilisation acceptables des services {{site.data.keyword.Bluemix_notm}}. Certains services peuvent être restaurés si les utilisateurs modifient leur comportement après avoir reçu une notification signalant l'action fautive.
 
@@ -181,7 +182,7 @@ Si vous pensez que votre compte a été désactivé à tort, contactez le servic
 {: #contactsupport}
 {: faq}
 
-Cliquez sur **Support** dans la barre de menus de la console pour accéder au centre de support. Pour en savoir plus sur le support, voir [Support](/docs/get-support?topic=get-support-support-plans).
+Cliquez sur **Support** dans la barre de menus de la console pour accéder au centre de support. Pour plus d'informations, voir [Support](/docs/get-support?topic=get-support-support-plans).
 
 ## Puis-je souscrire à un essai gratuit ?
 {: #freetrial}
@@ -190,6 +191,12 @@ Cliquez sur **Support** dans la barre de menus de la console pour accéder au ce
 Les comptes {{site.data.keyword.Bluemix_notm}} Lite fournissent l'accès aux services gratuits du plan Lite. Vous pouvez utiliser ces services aussi longtemps que vous voulez sans être facturé et votre compte n'expire jamais. [Inscrivez-vous pour obtenir un compte Lite](https://{DomainName}/registration).
 
 Des comptes d'essai {{site.data.keyword.Bluemix_notm}} sont disponibles pour les enseignants et les étudiants d'institutions académiques accréditées. Pour être éligible pour un compte d'essai, accédez au site [Harness the Power of IBM ![Icône de lien externe](../icons/launch-glyph.svg)](https://ibm.biz/academic){: new_window} et validez les données d'identification de votre institution. Contrairement aux comptes Lite, les comptes d'essai expirent à la fin de la période d'essai.
+
+## Puis-je me connecter à la console {{site.data.keyword.Bluemix_notm}} avec mon ID SoftLayer ?
+{: #slid}
+{: faq}
+
+Oui, vous pouvez utiliser votre ID SoftLayer pour vous connecter à la console. Accédez à la [page de connexion](https://cloud.ibm.com/login){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe") et sélectionnez **ID SoftLayer** dans la liste d'**ID**.  
 
 ## Après avoir lié mon compte, comment puis-je me connecter ?
 {: #al_login}
@@ -264,6 +271,19 @@ Si vous possédez plusieurs comptes, vous pouvez cliquer sur le nom de votre com
 Vous pouvez transférer la propriété de ressources individuelles au sein de votre compte à quelqu'un d'autre à l'aide de la commande `ibmcloud catalog`. Pour en savoir plus sur, voir [Transfert de la propriété d'une ressource privée](/docs/account?topic=account-include#owners).
 
 Pour transférer la propriété de la totalité de votre compte, mettez à jour votre [profil de société](https://{DomainName}/account/company-profile). Pour plus d'informations, voir [Transfert de propriété de votre compte](/docs/account?topic=account-transfer).
+
+## Comment modifier le nom ou l'IBMid dans mon profil ?
+{: #change-profile-settings}
+{: faq}
+
+Vous pouvez modifier vos informations personnelles, telles que le nom, le courrier électronique ou le numéro de téléphone, en cliquant sur l'icône **Avatar** ![IcôneAvatar](../icons/i-avatar-icon.svg) **> Profil et paramètres**. Vous ne pouvez pas modifier votre IBMid, mais vous pouvez, au besoin, en créer un nouveau. Le [centre d'assistance mondial IBM piur les IBMid](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html) est disponible pour vous aider sur les questions générales liées aux ID qui ne concernent pas votre compte {{site.data.keyword.Bluemix_notm}}.
+
+
+## Comment puis-je changer la langue associée à mon compte ?
+{: #switch-account-lang}
+{: faq}
+
+La langue utilisée dépend des paramètres de votre navigateur Web. Pour afficher le contenu dans votre langue maternelle, mettez à jour les paramètres linguistiques de votre navigateur.
 
 ## {{site.data.keyword.Bluemix_notm}} prend-il en charge l'enregistrement par lots d'utilisateurs ?
 {: #batch-registration}

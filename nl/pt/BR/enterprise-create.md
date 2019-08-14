@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-25"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, multiple account
 
@@ -98,7 +98,7 @@ A conta que você usou para criar a empresa é agora uma parte da empresa. Execu
 ## Criando uma empresa usando a API
 {: #create-api}
 
-É possível criar programaticamente uma empresa chamando a API de gerenciamento corporativo, conforme mostrado na solicitação de amostra a seguir. <!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-enterprise){: external}.-->
+É possível criar programaticamente uma empresa chamando a API de gerenciamento corporativo, conforme mostrado na solicitação de amostra a seguir. Para obter informações detalhadas sobre a API, consulte [API de gerenciamento corporativo](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-enterprise){: external}.
 
 ```
 curl -X POST \

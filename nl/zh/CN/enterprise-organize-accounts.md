@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-25"
 
 keywords: enterprise, create account group, organize accounts, move accounts
 
@@ -83,7 +83,7 @@ curl -X POST \
 ```
 {: codeblock}
 
-<!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-account-group){: external}.-->
+有关 API 的详细信息，请参阅[企业管理 API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-account-group){: external}。
 
 ## 在企业中移动帐户
 {: #move-accounts}
@@ -143,4 +143,4 @@ curl -X PATCH \
 ```
 {: codeblock}
 
-<!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#move-an-account-with-the-enterprise){: external}. -->
+有关 API 的详细信息，请参阅[企业管理 API](https://{DomainName}/apidocs/enterprise-apis/enterprise#move-an-account-with-the-enterprise){: external}。

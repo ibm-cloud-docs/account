@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-07-29"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -17,7 +17,7 @@ subcollection: account
 {:faq: data-hd-content-type='faq'}
 {:tip: .tip}
 
-# 帐户的常见问题解答
+# 帐户的常见问题
 {: #accountfaqs}
 
 {{site.data.keyword.cloud}} 的常见问题可能包括有关轻量帐户、重新分配用户、帐户错误或者帐户标记的问题。要查找 {{site.data.keyword.cloud_notm}} 的所有常见问题，请参阅我们的常见问题库。
@@ -133,7 +133,7 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 {: #reset-password}
 {: faq}
 
-要重置帐户密码，请转至“头像”图标 ![“头像”图标](../icons/i-avatar-icon.svg) > **个人档案和设置**。接着，单击“帐户用户信息”磁贴中的**更改或重置**。
+要重置帐户密码，请转至**头像**图标 ![“头像”图标](../icons/i-avatar-icon.svg) > **个人档案和设置**。接着，单击“帐户用户信息”磁贴中的**更改或重置**。
 
 要重置 VPN 密码，请完成以下步骤：
 
@@ -171,7 +171,7 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 
 帐户可能停用的原因如下：
 
-- 对于试用帐户，可能是因为试用期结束。要重新激活帐户，请登录到帐户，并将其升级为现收现付帐户。
+- 对于试用帐户，可能是因为试用期结束。要重新激活帐户，请登录到帐户，并将其升级为现收现付帐户。帐户完全重新激活可能要花费几天的时间。
 - 授权用户取消了该帐户。
 - 帐户已暂挂。对于违反 {{site.data.keyword.Bluemix_notm}} 服务的可接受使用行为的帐户，IBM 将酌情直接禁用这些帐户而不另行通知。如果用户在收到攻击行为的通知后更正了其使用行为，IBM 将酌情复原一些服务。
 
@@ -181,7 +181,7 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 {: #contactsupport}
 {: faq}
 
-在控制台菜单栏中，单击**支持**以转至支持中心。在[获取支持](/docs/get-support?topic=get-support-support-plans)中了解有关支持的更多信息。
+在控制台菜单栏中，单击**支持**以转至支持中心。有关更多信息，请参阅[获取支持](/docs/get-support?topic=get-support-support-plans)。
 
 ## 我能注册以进行免费试用吗？
 {: #freetrial}
@@ -190,6 +190,12 @@ Cloud Foundry 是一个开放式源代码的平台即服务 (PaaS) 选项，可�
 {{site.data.keyword.Bluemix_notm}} 轻量帐户提供对免费轻量套餐服务的访问权。您可以在不收取任何费用的情况下使用这些服务任意长的时间，并且您的帐户永不到期。[注册轻量帐户](https://{DomainName}/registration)。
 
 {{site.data.keyword.Bluemix_notm}} 试用帐户适用于经认可的学术机构的教师和学生。要获得使用试用帐户的资格，请转至 [Harness the Power of IBM ![外部链接图标](../icons/launch-glyph.svg)](https://ibm.biz/academic){: new_window}，并验证您的机构凭证。与轻量帐户不同，试用帐户在试用期结束后到期。
+
+## 可以使用 SoftLayer 标识登录到 {{site.data.keyword.Bluemix_notm}} 控制台吗？
+{: #slid}
+{: faq}
+
+可以，您可以使用 SoftLayer 标识登录到控制台。转至[登录页面](https://cloud.ibm.com/login){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")，然后从**标识**列表选择 **SoftLayer 标识**。  
 
 ## 链接帐户后，如何登录？
 {: #al_login}
@@ -264,6 +270,18 @@ IBM Cloud 控制台标题列出了与您的登录标识相关联的所有帐户�
 您可以通过使用 `ibmcloud catalog` 命令将帐户中单个资源的所有权转移给其他人。要了解更多，请参阅[转移专用资源所有权](/docs/account?topic=account-include#owners)。
 
 要转移整个帐户的所有权，请更新[公司概要文件](https://{DomainName}/account/company-profile)。有关更多信息，请参阅[转移帐户所有权](/docs/account?topic=account-transfer)。
+
+## 如何更改概要文件中的名称和 IBM 标识？
+{: #change-profile-settings}
+{: faq}
+
+您可以更改个人信息，如名称、电子邮件或电话号码，方法是转至**头像**图标 ![“头像”图标](../icons/i-avatar-icon.svg) **> 概要文件和设置**。您无法更改自己的 IBM 标识，但如果合适，可以创建新标识。[IBM 标识全球帮助台](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html)可帮助解决与 {{site.data.keyword.Bluemix_notm}} 帐户不相关的常见标识问题。
+
+## 如何更改与帐户关联的语言？
+{: #switch-account-lang}
+{: faq}
+
+使用的语言是基于 Web 浏览器设置的。要以您的母语查看内容，请更新浏览器的语言设置。
 
 ## {{site.data.keyword.Bluemix_notm}} 支持批量注册用户吗？
 {: #batch-registration}

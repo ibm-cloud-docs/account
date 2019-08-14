@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-07-15"
 
 keywords: IBM Cloud account, account differences, account overview, account components, how access works
 
@@ -23,12 +23,13 @@ subcollection: account
 Sua conta do {{site.data.keyword.Bluemix}} inclui muitos componentes e sistemas interativos. Conceitos, por exemplo, de como certos componentes estão conectados ou como o acesso funciona ajudarão a entender como configurar sua conta.
 {:shortdesc}
 
+No diagrama a seguir, é importante entender dois conceitos principais para os componentes na hierarquia da conta. O uso das linhas contínuas e das linhas pontilhadas ajudam a ilustrar que alguns componentes estão contidos em outros, por exemplo, os usuários estão incluídos em grupos de acesso ou em organizações do Cloud Foundry. No entanto, alguns componentes interagem com outros para fornecer acesso em vez de associação. Por exemplo, os usuários recebem acesso a grupos de recursos, mas não são membros de um grupo de recursos da mesma maneira que eles são para grupos de acesso. 
+
+<figure>
 <a href="https://cloud.ibm.com/docs/api/content/account/images/account_diagram.svg">
-  <img src="images/account_diagram.svg" alt="Um diagrama que mostra os componentes em uma conta, incluindo serviços, usuários e os subcomponentes de cada."> </a>
-
-Figura 1. Componentes e sistemas da conta
-
-Dentro do diagrama, há dois conceitos principais para os componentes na hierarquia da conta cujo entendimento é importante. O uso das linhas contínuas e das linhas pontilhadas ajudam a ilustrar que alguns componentes estão contidos em outros, por exemplo, os usuários estão incluídos em grupos de acesso ou em organizações do Cloud Foundry. No entanto, alguns componentes interagem com outros para fornecer acesso em vez de associação. Por exemplo, os usuários recebem acesso a grupos de recursos, mas não são membros de um grupo de recursos da mesma maneira que eles são para grupos de acesso. Esses conceitos também são explicados nas seções a seguir.
+<img src="images/account_diagram.svg" alt="Um diagrama que mostra os componentes em uma conta, incluindo serviços, usuários e os subcomponentes de cada um."></a>
+<figcaption>Figura 1. Componentes e sistemas da conta</figcaption>
+</figure>
 
 <dl>
 <dt>Usuários</dt>
@@ -37,7 +38,7 @@ Dentro do diagrama, há dois conceitos principais para os componentes na hierarq
 <dd>Um ID de serviço identifica um serviço ou um aplicativo semelhante a como um ID de usuário identifica um usuário. É possível usar um ID de serviço criado para permitir que um aplicativo fora do {{site.data.keyword.Bluemix_notm}} acesse seus serviços. É possível designar políticas de acesso específicas ao ID de serviço que restringem permissões para usar serviços específicos ou até mesmo combinar permissões para acessar serviços diferentes. Como os IDs de serviço não são vinculados a um usuário específico, se um usuário deixar uma organização e for excluído da conta, o ID do serviço permanecerá, assegurando que seu aplicativo ou serviço continue funcionando. Para obter mais informações, consulte [Criando e trabalhando com IDs de serviço](/docs/iam?topic=iam-serviceids#serviceids).</dd>
 <dt>Instâncias de serviço ou recursos</dt>
 <dd>Os serviços no {{site.data.keyword.Bluemix_notm}} são baseados no grupo de recursos ou no Cloud Foundry. As instâncias de serviço que podem ser incluídas em um grupo de recursos e gerenciadas usando o {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) são chamadas de recursos. As instâncias de serviço que são incluídas nas organizações e nos espaços do Cloud Foundry têm um sistema de gerenciamento de acesso separado usando as funções do Cloud Foundry. Para obter mais informações, consulte [O que é um recurso?](/docs/resources?topic=resources-resource#resource)</dd>
-<dt>Chaves API (interface de programação de aplicativos)</dt>
+<dt>Chaves de API</dt>
 <dd>Uma chave de API é um código exclusivo que é passado para uma API para identificar o aplicativo de chamada ou usuário. É
 possível usar as chaves de API da plataforma associadas a identidades do usuário e criar outras chaves de API para os IDs de
 serviço. Para obter mais informações, veja [Entendendo chaves de API](/docs/iam?topic=iam-manapikey#manapikey).</dd>

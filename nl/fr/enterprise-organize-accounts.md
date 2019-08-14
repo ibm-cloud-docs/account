@@ -1,8 +1,8 @@
----
+﻿---
 
 copyright:
   years: 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-25"
 
 keywords: enterprise, create account group, organize accounts, move accounts
 
@@ -25,7 +25,7 @@ Utilisez des groupes de comptes afin d'organiser les comptes liés dans votre en
 
 Par exemple, le diagramme suivant présente une entreprise à quatre niveaux que vous pouvez configurer en imbriquant des groupes de comptes. Créez tout d'abord deux groupes de comptes ayant l'entreprise comme parent. Créez ensuite deux groupes de comptes supplémentaires ayant un de ces groupes de comptes comme parent. Vous pouvez déplacer des comptes en toute liberté dans les groupes de comptes, quel que soit le niveau dans lequel ils se trouvent. Toutefois, il n'est pas possible de déplacer les groupes de comptes.
 
-![Diagramme présentant quatre niveaux d'entreprise. Le premier niveau est celui de l'entreprise, qui contient deux niveaux de groupes de comptes. Ensuite, le groupe de comptes contient des comptes.](images/enterprise-hierarchy.svg "Les niveaux d'entreprise sont créés en ajoutant des groupes de comptes.")
+![Diagramme présentant quatre niveaux d'entreprise. Le premier niveau est celui de l'entreprise, qui contient deux niveaux de groupes de comptes. Ensuite, le groupe de comptes contient des comptes.](images/enterprise-hierarchy.svg "Les niveaux d'entreprise sont créés en ajoutant des groupes de comptes."){: caption="Figure 1. Hiérarchie d'entreprise à quatre niveaux" caption-side="bottom"}
 
 N'oubliez pas que le mode d'organisation de votre entreprise a des conséquences sur le mode de suivi des coûts d'utilisation. Pour plus d'informations, voir [Gestion centrale de la facturation et de l'utilisation avec les entreprises](/docs/billing-usage?topic=billing-usage-enterprise).
 {: tip}
@@ -82,7 +82,7 @@ curl -X POST \
 ```
 {: codeblock}
 
-<!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-account-group){: external}.-->
+Pour plus d'informations sur l'API, voir [API Enterprise Management](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-account-group){: external}.
 
 ## Déplacement de comptes au sein de l'entreprise
 {: #move-accounts}
@@ -142,4 +142,6 @@ curl -X PATCH \
 ```
 {: codeblock}
 
-<!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#move-an-account-with-the-enterprise){: external}. -->
+Pour plus d'informations sur l'API, voir
+[API
+Enterprise Management](https://{DomainName}/apidocs/enterprise-apis/enterprise#move-an-account-with-the-enterprise){: external}.

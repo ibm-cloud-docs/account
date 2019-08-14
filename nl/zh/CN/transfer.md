@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-11"
+lastupdated: "2019-07-31"
 
 keywords: change owner, transfer account, transfer account ownership, switch owner, transfer owner
 
@@ -43,7 +43,11 @@ subcollection: account
 ## 转移其他所有者的帐户
 {: #transfer-lost}
 
-如果帐户的所有者离开了公司，因此需要将帐户转移给新的所有者，那么必须提交支持案例。在支持案例中，需要附加公司的正式文档，其中包含以下信息。
+如果帐户的所有者离开了公司，因此需要转移帐户，那么必须选择一个新的所有者，然后提交支持案例以请求转移。 
+
+新的所有者必须是帐户中的用户，并且不能是其他 {{site.data.keyword.cloud_notm}} 帐户的所有者。如果用户不在帐户中，那么其他用户可以将其邀请到帐户中，或者，也可以请求将其添加到您创建的支持案例的帐户中。如果他们已经拥有 {{site.data.keyword.cloud_notm}} 帐户，那么您可以请求将其现在拥有的帐户移动给其他用户或者取消该帐户。
+
+在请求帐户转移的支持案例中，必须附加公司的正式文件，其中包含以下信息。
 - 正式的公司抬头
 - 公司章程（如果适用）
 - 此人不再与公司关联的声明

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-30"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -61,6 +61,7 @@ subcollection: account
 1. 查看预订详细信息，然后输入您的付款信息。
 
    当您处理完付款信息后，系统会将您的预订信用值添加到您的帐户中。您可以在此相同的“预订”页面上监视预订使用情况。有关更多信息，请参阅[管理预订](/docs/billing-usage?topic=billing-usage-subscriptions)。
+
 
 您的预订会自动续订。如果要停止续订，请[联系支持人员](https://{DomainName}/unifiedsupport/supportcenter)。
 {: note}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-30"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -24,7 +24,7 @@ subcollection: account
 Les comptes Lite vous permettent de commencer à utiliser {{site.data.keyword.Bluemix}} et de tester les services. Lorsque vous êtes prêt à passer à l'étape suivante, vous pouvez utiliser un compte Paiement à la carte ou un compte d'abonnement. L'ensemble du catalogue de services prêts pour la production est alors déverrouillé.
 {:shortdesc}
 
-Pour connaître votre type de compte, accédez à la section **Gérer > Compte > Paramètres de compte** et consultez les données indiquées dans Type de compte. 
+Pour connaître votre type de compte, accédez à la section **Gérer > Compte > Paramètres de compte** et consultez les données indiquées dans Type de compte.
 
 Vous ne savez pas quel type de compte vous souhaitez désormais utiliser ? La section [Types de compte](/docs/account?topic=account-accounts) inclut des informations détaillées sur les avantages de chaque type de compte.
 {: tip}
@@ -60,7 +60,7 @@ Pour effectuer une mise à niveau à partir d'un compte Lite, procédez comme su
    {:tip}
 1. Consultez les détails de votre abonnement puis entrez vos informations de paiement.
 
-   Une fois vos informations de paiement traitées, votre crédit d'abonnement est ajouté à votre compte. Vous pouvez surveiller l'utilisation des abonnements sur cette page Abonnements. Pour plus d'informations, voir [Gestion des abonnements](/docs/billing-usage?topic=billing-usage-subscriptions.
+   Une fois vos informations de paiement traitées, votre crédit d'abonnement est ajouté à votre compte. Vous pouvez surveiller l'utilisation des abonnements sur cette page Abonnements. Pour plus d'informations, voir [Gestion des abonnements](/docs/billing-usage?topic=billing-usage-subscriptions).
 
 Votre abonnement est automatiquement renouvelé. Si vous souhaitez l'arrêter, [contactez le support](https://{DomainName}/unifiedsupport/supportcenter).
 {: note}

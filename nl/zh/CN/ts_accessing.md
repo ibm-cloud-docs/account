@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-08-06"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -57,9 +57,9 @@ subcollection: account
 {: #ts_old_username}
 {: troubleshoot}
 
-要成功登录到电子邮件，您必须确保每个帐户都使用 IBM 标识认证。
+要成功登录到 {{site.data.keyword.Bluemix_notm}} 控制台，必须确保每个帐户都使用 IBM 标识认证。
 
-登录到 {{site.data.keyword.Bluemix_notm}} 控制台时，显示了以下消息：
+登录到控制台时，会显示以下消息：
 {: tsSymptoms}
 
 `无法识别此 IBM 标识或电子邮件。`
@@ -94,9 +94,7 @@ subcollection: account
 {: #ts_login_stalls}
 {: troubleshoot}
 
-您获得了登录成功消息，但未返回到控制台。
-
-使用 IBM 标识登录时，显示了登录成功消息，但未返回到 [{{site.data.keyword.Bluemix_notm}} 控制台](https://{DomainName}){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")。
+使用 IBM 标识登录时，显示了登录成功消息，但未返回到 {{site.data.keyword.Bluemix_notm}} 控制台。
 {: tsSymptoms}
 
 使用以下其中一个选项：
@@ -139,7 +137,7 @@ IBM 标识认证服务可能发生问题。
 
 ```
 要完成注册，请检查电子邮件。
-找不到电子邮件？重新发送
+找不到电子邮件？重新发送。
 ```
 {:screen}
 
@@ -149,9 +147,9 @@ IBM 标识认证服务可能发生问题。
 {: #ts_err}
 {: troubleshoot}
 
-在使用 {{site.data.keyword.Bluemix_notm}} 控制台时，您可能无法装入控制台页面。相反，您可能会看到错误消息 BXNUI0001E 或 BXNUI0016E。
+在使用 {{site.data.keyword.Bluemix_notm}} 控制台时，您可能无法装入控制台页面。相反，可能会显示错误消息 BXNUI0001E 或 BXNUI0016E。
 
-您可能会看到以下其中一条错误消息：
+可能会显示以下某条错误消息：
 {: tsSymptoms}
 
 `BXNUI0001E: 未装入页面，因为 {{site.data.keyword.Bluemix_notm}} 未检测到是否存在会话。`
@@ -172,12 +170,12 @@ IBM 标识认证服务可能发生问题。
 {: #troubleshoot-infrastructure-access}
 {: troubleshoot}
 
-尝试访问 IBM Cloud 控制台的基础架构部分时，您会看到一条消息，指出：
+尝试访问 IBM Cloud 控制台的基础架构部分时，可能会显示以下消息：
 {: tsSymptoms}
 
 `无法装入此页面，因为您的基础架构帐户未完全配置为 IBM Cloud 帐户。`
 
-有多种原因可能会导致您看到此错误消息：
+显示此消息的原因很多：
 {: tsCauses}
 
 * 您使用的是[轻量帐户](/docs/account?topic=account-accounts#liteaccount)，轻量帐户不允许访问基础架构服务。

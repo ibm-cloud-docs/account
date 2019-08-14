@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-25"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, multiple account
 
@@ -99,7 +99,7 @@ Enterprise Account ID:   edcba12345jihgf67890
 ## 使用 API 创建企业
 {: #create-api}
 
-您可以如以下样本请求中所示，通过调用企业管理 API 以编程方式创建企业。<!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-enterprise){: external}.-->
+您可以如以下样本请求中所示，通过调用企业管理 API 以编程方式创建企业。有关 API 的详细信息，请参阅[企业管理 API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-enterprise){: external}。
 
 ```
 curl -X POST \

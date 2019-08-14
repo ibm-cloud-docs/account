@@ -25,7 +25,7 @@ subcollection: account
 {: #lite-to-enterprise}
 {: faq}
 
-Oui, mais votre compte Lite est automatiquement converti en compte Paiement à la carte. La facturation du compte est ensuite gérée au niveau de l'entreprise. Pour plus d'informations, voir [Mise à niveau de votre compte](/docs/account?topic=account-upgrading-account).
+Oui, mais votre compte Lite est automatiquement converti en compte Paiement à la carte. La facturation du compte est ensuite gérée au niveau de l'entreprise. Pour plus d'informations, voir [Gestion centrale de la facturation et de l'utilisation avec les entreprises](https://cloud.ibm.com/docs/billing-usage?topic=billing-usage-enterprise).
 
 ## Puis-je retirer mon compte d'une entreprise ?
 {: #remove-enterprise}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-30"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -60,7 +60,7 @@ Para fazer upgrade de uma conta Lite para uma conta de Assinatura, conclua as et
    {:tip}
 1. Revise os detalhes de sua assinatura e, em seguida, insira suas informações de pagamento.
 
-   Depois que suas informações de pagamento forem processadas, seu crédito de assinatura será incluído em sua conta. É possível monitorar o uso de sua assinatura na mesma página Assinaturas. Consulte [Gerenciando assinaturas] (/docs/billing-usage?topic=billing-usage-subscriptions para obter mais informações.
+   Depois que suas informações de pagamento forem processadas, seu crédito de assinatura será incluído em sua conta. É possível monitorar o uso de sua assinatura na mesma página Assinaturas. Consulte [Gerenciando assinaturas](/docs/billing-usage?topic=billing-usage-subscriptions) para obter mais informações.
 
 Sua assinatura é renovada automaticamente. Se você desejar descontinuar sua renovação de assinatura, [entre em contato com o suporte](https://{DomainName}/unifiedsupport/supportcenter).
 {: note}

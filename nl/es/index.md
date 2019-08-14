@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-08-02"
 
 keywords: account types, Lite, free account, paid account, buy account, account difference, compare account, subscription, service bundle
 
@@ -73,7 +73,7 @@ Consulte la siguiente lista con las características principales que están disp
 ## Cuenta de Pago según uso
 {: #paygo}
 
-Con una cuenta de pago según uso, puede acceder a todo el catálogo de {{site.data.keyword.Bluemix_notm}}, incluidos todos los planes gratuitos, y obtiene el doble de memoria de tiempo de ejecución gratuita a 512 MB al mes. Solo pagará los servicios facturables que utilice, sin contratos ni compromisos a largo plazo.
+Con una cuenta de pago según uso, puede acceder a todo el catálogo de {{site.data.keyword.Bluemix_notm}}, incluidos todos los planes gratuitos, y obtiene el doble de memoria de tiempo de ejecución gratuita a 512 MB al mes. Solo paga los servicios facturables que utilice, sin contratos ni compromisos a largo plazo. Cuando se actualiza a una cuenta Pago según uso, recibe un [crédito de 200 $](#upgrade-lite-account) para ayudarle a empezar.
 
 Puede crear varios grupos de recursos para gestionar fácilmente la cuota y ver el uso de facturación de un conjunto de recursos. Los cargos son en función del uso del cálculo y los servicios de {{site.data.keyword.Bluemix_notm}}. Si utiliza más de un tiempo de ejecución gratuito y concesiones de servicio, recibirá una factura mensual con detalles sobre los cargos de recursos.
 
@@ -102,7 +102,7 @@ Puede añadir paquetes de servicios a cualquier tipo de cuenta existente, inclui
 Las suscripciones a paquetes de servicios no están disponibles a través de la consola de {{site.data.keyword.Bluemix_notm}}. Para obtener más información y para adquirir un paquete de servicios, póngase en contacto con el [equipo de ventas de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 {:tip}
 
-Después de adquirir una suscripción a un paquete de servicios, recibirá un correo electrónico con el código de característica que debe aplicar para añadir el paquete a su cuenta. Para obtener más información sobre cómo aplicar códigos de característica, consulte el apartado sobre [Aplicación de códigos de característica](/docs/account?topic=account-codes). Cuando caduque el paquete de servicios o cuando agote todo el crédito, puede seguir utilizando cualquiera de los servicios y el uso se cargará a la tasa de pago según uso.
+Después de adquirir una suscripción a un paquete de servicios, recibirá un correo electrónico con el código de suscripción que debe aplicar para añadir el paquete a su cuenta. Para obtener más información sobre cómo aplicar códigos de suscripción, consulte el apartado sobre [Gestión de suscripciones](/docs/billing-usage?topic=billing-usage-subscriptions). Cuando caduque el paquete de servicios o cuando agote todo el crédito, puede seguir utilizando cualquiera de los servicios y el uso se cargará a la tasa de pago según uso.
 
 ## Actualización de la cuenta
 {: #upgrade-lite-account}

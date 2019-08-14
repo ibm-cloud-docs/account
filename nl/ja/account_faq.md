@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-07-29"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -20,7 +20,7 @@ subcollection: account
 # アカウントに関する FAQ
 {: #accountfaqs}
 
-{{site.data.keyword.cloud}} に関する FAQ には、ライト・アカウント、ユーザーの再割り当て、アカウント・エラー、またはアカウント・タグについての質問が含まれていることがあります。 {{site.data.keyword.cloud_notm}} に関するすべての FAQ を見つけるには、FAQ ライブラリーを参照してください。
+{{site.data.keyword.cloud}} に関する FAQ には、ライト・アカウント、ユーザーの再割り当て、アカウント・エラー、またはアカウント・タグについての質問が含まれていることがあります。{{site.data.keyword.cloud_notm}} に関するすべての FAQ を見つけるには、FAQ ライブラリーを参照してください。
 {: shortdesc}
 
 ## アカウントを作成するには、どのようにすればよいですか?
@@ -115,7 +115,7 @@ Cloud Foundry は、クラウド上でアプリケーションを作成および
 
 クレジット・カードの更新は、新しいクレジット・カードの追加と同じようにできます。 [「支払い」](https://{DomainName}/billing/payments)にアクセスし、「支払方法の追加 (Add Payment Method)」セクションで、新しいカードの請求情報を入力し、**「クレジット・カードの追加」**をクリックします。
 
-異なる支払い方法に切り替えるには、**「他の方法で支払う」**を選択し、**「変更要求の送信」**をクリックします。 支払い方法を変更するためのサポート Case が作成されます。
+異なる支払方法に切り替えるには、**「他の方法で支払う」**を選択し、**「変更要求の送信」**をクリックします。 支払方法を変更するためのサポート Case が作成されます。
 
 ## E メール通知の設定は、どのような方法で変更しますか?
 {: #change-email-prefs}
@@ -133,7 +133,7 @@ Cloud Foundry は、クラウド上でアプリケーションを作成および
 {: #reset-password}
 {: faq}
 
-アカウントのパスワードをリセットするには、アバターのアイコン ![アバター・アイコン](../icons/i-avatar-icon.svg) **>「プロファイルと設定」**に移動します。 次に、アカウント・ユーザー情報のタイルから**「変更またはリセット」**をクリックします。
+アカウントのパスワードをリセットするには、**「アバター」**アイコン ![「アバター」アイコン](../icons/i-avatar-icon.svg) **>「プロファイルと設定」**に移動します。次に、アカウント・ユーザー情報のタイルから**「変更またはリセット」**をクリックします。
 
 VPN パスワードをリセットするには、以下のステップを実行します。
 
@@ -171,7 +171,7 @@ IBM によるお客様の個人情報の取り扱いについて詳しくは、[
 
 以下の理由でアカウントが非アクティブになることがあります。
 
-- トライアル・アカウントの場合、トライアル期間が終わった。 アカウントを再アクティブ化するには、アカウントにログインし、従量課金 (PAYG) アカウントにアップグレードします。
+- トライアル・アカウントの場合、トライアル期間が終わった。 アカウントを再アクティブ化するには、アカウントにログインし、従量課金 (PAYG) アカウントにアップグレードします。アカウントが完全に再アクティブ化されるまで数日かかる場合があります。
 - 権限があるユーザーがアカウントを取り消した。
 - アカウントが中断状態になった。 IBM の裁量により、{{site.data.keyword.Bluemix_notm}} サービスの容認できる使用行動に違反したアカウントは、予告なしに使用不可にされることがあります。 ユーザーが攻撃的なアクションを通知された後に使用行動を修正した場合、一部のサービスが復元されることがあります。
 
@@ -181,15 +181,21 @@ IBM によるお客様の個人情報の取り扱いについて詳しくは、[
 {: #contactsupport}
 {: faq}
 
-コンソールのメニュー・バーで**「サポート」**をクリックして、サポート・センターにアクセスしてください。 サポートについて詳しくは、[サポートの利用](/docs/get-support?topic=get-support-support-plans)を参照してください。
+コンソールのメニュー・バーで**「サポート」**をクリックして、サポート・センターにアクセスしてください。 詳しくは、[サポートの利用](/docs/get-support?topic=get-support-support-plans)を参照してください。
 
 ## 無料トライアルに登録できますか?
 {: #freetrial}
 {: faq}
 
-{{site.data.keyword.Bluemix_notm}} ライト・アカウントでは、無料のライト・プラン・サービスにアクセスできます。課金されることなくこれらのサービスを必要な期間使用することができ、アカウントの有効期限が切れることはありません。[ライト・アカウントに登録](https://{DomainName}/registration)してください。
+{{site.data.keyword.Bluemix_notm}} ライト・アカウントでは、無料のライト・プラン・サービスにアクセスできます。 課金されることなくこれらのサービスを必要な期間使用することができ、アカウントの有効期限が切れることはありません。 [ライト・アカウントに登録](https://{DomainName}/registration)してください。
 
-認定された学術機関の教師および生徒は {{site.data.keyword.Bluemix_notm}} トライアル・アカウントを使用できます。 トライアル・アカウントの資格を得るには、[Harness the Power of IBM ![外部リンク・アイコン](../icons/launch-glyph.svg)](https://ibm.biz/academic){: new_window} にアクセスし、ご自身の機関の資格情報を検証します。ライト・アカウントとは異なり、トライアル・アカウントは試用期間が終了すると有効期限が切れます。
+認定された学術機関の教師および生徒は {{site.data.keyword.Bluemix_notm}} トライアル・アカウントを使用できます。 トライアル・アカウントの資格を得るには、[Harness the Power of IBM ![外部リンク・アイコン](../icons/launch-glyph.svg)](https://ibm.biz/academic){: new_window} にアクセスし、ご自身の機関の資格情報を検証します。 ライト・アカウントとは異なり、トライアル・アカウントは試用期間が終了すると有効期限が切れます。
+
+## SoftLayer ID で {{site.data.keyword.Bluemix_notm}} コンソールにログインできますか?
+{: #slid}
+{: faq}
+
+はい。SoftLayer ID を使用してコンソールにログインできます。 [ログイン・ページ](https://cloud.ibm.com/login){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") に移動して、**「ID」**リストから**「SoftLayer ID」**を選択します。  
 
 ## アカウントをリンクした後、ログインするにはどうすればよいですか?
 {: #al_login}
@@ -265,6 +271,18 @@ IBM Cloud コンソールのヘッダーには、自分のログイン ID を含
 `ibmcloud catalog` コマンドを使用すると、アカウント内の個別リソースの所有権を他のユーザーに移動できます。 詳しくは、『[プライベート・リソースの所有権の移動](/docs/account?topic=account-include#owners)』を参照してください。
 
 アカウント全体の所有権を移動するには、[会社プロファイル](https://{DomainName}/account/company-profile)を更新します。 詳しくは、『[アカウントの所有権の移動](/docs/account?topic=account-transfer)』を参照してください。
+
+## プロファイル内の名前や IBMid を変更するには、どのようにすればよいですか?
+{: #change-profile-settings}
+{: faq}
+
+名前、E メール・アドレス、電話番号などの個人情報は、**「アバター」**アイコン ![「アバター」アイコン](../icons/i-avatar-icon.svg) **>  「プロファイルと設定」**に移動して、変更できます。IBMid は変更できませんが、必要に応じて新しい IBMid を作成できます。[IBMid worldwide help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html)では、{{site.data.keyword.Bluemix_notm}} アカウントに関連しない ID に関する一般的な質問にお答えすることができます。
+
+## アカウントに関連付けられている言語を変更するには、どのようにすればよいですか?
+{: #switch-account-lang}
+{: faq}
+
+使用される言語は、Web ブラウザーの設定に基づきます。母国語でコンテンツを表示するには、ブラウザーの言語設定を更新してください。
 
 ## {{site.data.keyword.Bluemix_notm}} ではユーザーのバッチ登録はサポートされていますか?
 {: #batch-registration}

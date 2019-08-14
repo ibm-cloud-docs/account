@@ -72,7 +72,7 @@ Como propietario de una cuenta, puede añadir recursos a cualquier grupo de recu
 
 Para añadir un recurso a un grupo de recursos, siga los siguientes pasos:
 
-1. Vaya a **Gestionar > Cuenta**. Amplíe **Recursos de cuenta** y seleccione **Grupos de recursos**.
+1. Vaya a **Gestionar > Cuenta** y seleccione **Grupos de recursos**.
 2. Pulse en el icono de Acciones ![Icono de acciones](../icons/action-menu-icon.svg) correspondiente al grupo de recursos al que desea añadir recursos y seleccione **Añadir recursos**.
 3. Cuando se le redirija al catálogo, seleccione el recurso que desea añadir.
 4. Seleccione el grupo de recursos al que desea asignarlo.

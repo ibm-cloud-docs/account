@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-08-02"
 
 keywords: account types, Lite, free account, paid account, buy account, account difference, compare account, subscription, service bundle
 
@@ -73,7 +73,8 @@ La liste suivante répertorie les principales fonctions disponibles dans un comp
 ## Compte Paiement à la carte
 {: #paygo}
 
-Avec un compte Paiement à la carte, vous pouvez accéder à l'ensemble du catalogue {{site.data.keyword.Bluemix_notm}} (tous les plans gratuits, notamment) et vous disposez du double de mémoire par mois, soit 512 Mo. Vous paierez uniquement les services facturables utilisés sans aucun engagement ou contrat à long terme.
+Avec un compte Paiement à la carte, vous pouvez accéder à l'ensemble du catalogue {{site.data.keyword.Bluemix_notm}} (tous les plans gratuits, notamment) et vous disposez du double de mémoire par mois, soit 512 Mo. 
+Vous payez uniquement les services facturables utilisés sans aucun engagement ou contrat à long terme. Lorsque vous effectuez une mise à niveau vers un compte Pay-As-You-Go, vous recevez un [crédit de 200 $](#upgrade-lite-account) pour vous aider à démarrer.
 
 Vous pouvez créer plusieurs groupes de ressources de manière à faciliter la gestion du quota et l'affichage de la facturation d'utilisation d'un ensemble de ressources. Les frais sont facturés d'après votre utilisation des ressources de calcul et des services {{site.data.keyword.Bluemix_notm}}. Si votre utilisation dépasse les franchises de service et d'exécution, vous recevez une facture mensuelle qui inclut des détails sur les ressources facturées.
 
@@ -102,7 +103,7 @@ Vous pouvez ajouter des offres groupées de services à tout type de compte exis
 Les abonnements aux offres groupées de services ne sont pas disponibles dans la console {{site.data.keyword.Bluemix_notm}}. Pour en savoir plus et acheter une offre groupée de services, contactez le [service commercial {{site.data.keyword.Bluemix_notm}}![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 {:tip}
 
-Une fois que vous avez acheté une offre groupée de services, vous recevez un courrier électronique avec un code de fonction à appliquer pour ajouter l'offre à votre compte. Pour plus d'informations sur l'application des codes de fonction, voir [Application de codes de fonction](/docs/account?topic=account-codes). Lorsque votre offre groupée de services arrive à expiration ou lorsque vous avez utilisé l'intégralité de votre crédit, vous pouvez continuer à utiliser des services en étant facturé selon le tarif Paiement à la carte.
+Une fois que vous avez acheté une offre groupée de services, vous recevez un courrier électronique avec un code d'abonnement à appliquer pour ajouter l'offre à votre compte. Pour plus d'informations sur l'application de codes d'abonnement, voir [Gestion des abonnements](/docs/billing-usage?topic=billing-usage-subscriptions). Lorsque votre offre groupée de services arrive à expiration ou lorsque vous avez utilisé l'intégralité de votre crédit, vous pouvez continuer à utiliser des services en étant facturé selon le tarif Paiement à la carte.
 
 ## Mise à niveau de votre compte
 {: #upgrade-lite-account}

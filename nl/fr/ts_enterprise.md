@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-07-18"
+lastupdated: "2019-07-29"
 
 keywords: troubleshoot enterprise, enterprise problem, account problem, enterprise support, enterprise help, error message
 
@@ -48,27 +48,33 @@ Contactez le propriétaire de l'entreprise afin de demander l'accès correct.
 
 Si vous êtes propriétaire de l'entreprise, procédez comme suit pour affecter un accès utilisateur à l'ensemble de l'entreprise :
 1. Accédez à **Gérer** > **Accès (IAM)** > **Utilisateurs**.
-2. Sélectionnez le nom de l'utilisateur. 
+2. Sélectionnez le nom de l'utilisateur.
 2. Cliquez sur l'onglet **Règles d'accès**, sélectionnez **Affecter un accès** > **Affecter l'accès aux services de gestion des comptes**.
 3. Sélectionnez **Entreprise** comme service puis choisissez le nom de votre entreprise.
 4. Sélectionnez le groupe de comptes ou le compte dans l'entreprise auquel vous souhaitez que l'utilisateur ait accès. Par exemple, si vous souhaitez qu'un utilisateur dispose d'un accès lui permettant de consulter un seul compte, sélectionnez le compte et affectez à l'utilisateur le rôle Afficheur ou un rôle supérieur. Si vous souhaitez qu'un utilisateur dispose d'un accès lui permettant d'afficher l'ensemble de l'entreprise, laissez les sélections de compte et de groupe de comptes vides puis affectez l'accès.
 
-## Pourquoi ne puis-je pas ajouter de compte existant à l'entreprise ?
+## Pourquoi ne puis-je pas importer un compte existant dans l'entreprise ?
 {: #troubleshoot-existing-enterprise}
 {: troubleshoot}
 
-Lorsque vous tentez d'ajouter un compte existant à l'entreprise, un des problèmes suivants survient :
+Lorsque vous tentez d'importer un compte existant dans l'entreprise, l'un des problèmes suivants se produit :
 {: tsSymptoms}
 * Lorsque vous cliquez sur **Ajouter un compte** dans la section Compte, le compte que vous souhaitez ajouter n'est pas répertorié.
-* Vous ne pouvez pas cliquer sur **Ajouter un compte**.
+* Vous n'avez pas la possibilité de cliquer sur **Importer le compte**.
 
-L'accès correct ne vous est pas affecté.
+Vous ne disposez pas des droits appropriés ou le compte n'est pas éligible pour importation.
 {: tsCauses}
 
-Si vous ne pouvez pas voir le compte existant répertorié en tant qu'option, vous devez disposer du rôle Administrateur sur le service de facturation du compte existant.
+Si vous ne pouvez pas voir le compte existant que vous voulez importer, vous devez disposer du rôle Administrateur sur le service de facturation du compte existant.
 {: tsResolve}
 
-Pour ajouter un compte existant à l'entreprise, vous devez disposer du rôle Administrateur ou Editeur sur le service de facturation pour l'entreprise parent ou le groupe de comptes.
+Si l'option **Importer le compte** n'est pas disponible, vérifiez que vous disposez du rôle Administrateur ou Editeur sur le service Facturation de l'entreprise et du rôle
+Administrateur ou Editeur sur le service Entreprise pour l'entreprise parent ou le groupe de compte.
+
+Si le compte que vous voulez importer est un compte Pay-As-You-Go et que vous ne pouvez toujours pas l'importer après avoir vérifiez que vous disposez des droits requis, il est possible que le compte ne soit pas éligible pour importation dans l'entreprise. 
+Certains comptes Pay-As-You-Go ne peuvent pas être importés directement dans une entreprise, tels la plupart des comptes Pay-As-You-Go facturés en dollars américains (USD). 
+Contactez le service [Ventes {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}
+![Icône de lien externe](../icons/launch-glyph.svg) pour convertir le compte en compte d'abonnement, puis l'importer dans l'entreprise.
 
 ## Pourquoi ne puis-je pas créer de nouveau compte dans l'entreprise ?
 {: #troubleshoot-add-enterprise}
@@ -82,8 +88,8 @@ L'accès correct ne vous est pas affecté.
 
 Pour créer un compte dans l'entreprise, vous devez disposer de l'accès suivant.
 {: tsResolve}
-1. Rôle Administrateur sur le service de facturation de l'entreprise.
-2. Rôle Administrateur ou Editeur sur le service d'entreprise du groupe de comptes ou de l'entreprise parent ciblé.
+1. Rôle Administrateur sur le service Facturation de l'entreprise.
+2. Rôle Administrateur ou Editeur sur le service Entreprise pour l'entreprise parent ou le groupe de comptes cible.
 
 ## Pourquoi ne puis-je pas voir les abonnements d'entreprise ?
 {: #troubleshoot-viewsub-enterprise}
@@ -111,7 +117,7 @@ Pour consulter ou gérer la facturation, vous devez être invité à rejoindre l
 Vous ne pouvez pas ajouter de code d'abonnement à votre compte car vous ne disposez pas de l'accès correct.  
 {: tsSymptoms}
 
-Etant donné que vous êtes un compte enfant dans l'entreprise, vous ne pouvez pas appliquer de code d'abonnement. De tels codes doivent être appliqués au niveau de l'entreprise.
+Etant donné que votre compte est un compte enfant dans l'entreprise, vous ne pouvez pas appliquer de codes d'abonnement. De tels codes doivent être appliqués au niveau de l'entreprise.
 {: tsCauses}
 
 Contactez le propriétaire ou l'administrateur de l'entreprise pour ajouter le code d'abonnement. Une fois cette action effectuée, le code s'applique à tous les comptes de l'entreprise. Pour plus d'informations, voir [Gestion des abonnements](/docs/billing-usage?topic=billing-usage-subscriptions).

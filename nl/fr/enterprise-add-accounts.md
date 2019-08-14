@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-26"
 
 keywords: enterprise, add account, import account, create account
 
@@ -80,7 +80,7 @@ Pour importer un compte existant, procédez comme suit :
 ### Importation de comptes à l'aide de l'API
 {: #add-account-api}
 
-Pour importer un compte existant dans l'entreprise, appelez l'API <!-- [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#import-an-account-into-an-enterprise){: external}--> Enterprise Management, comme cela est présenté dans la demande exemple suivante. Remplacez le jeton {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) et les variables d'ID par les valeurs de votre entreprise.
+Pour importer un compte existant dans l'entreprise, appelez l'[API Enterprise Management](https://{DomainName}/apidocs/enterprise-apis/enterprise#import-an-account-into-an-enterprise){: external}, comme indiqué dans l'exemple de demande suivant. Remplacez le jeton {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) et les variables d'ID par les valeurs de votre entreprise.
 
 ```
 curl -X PUT \
@@ -126,7 +126,7 @@ Une fois que vous avez créé le compte, le propriétaire du compte peut se conn
 ### Création de compte à l'aide de l'API
 {: #create-account-api}
 
-Pour créer un compte dans l'entreprise, appelez l'API Enterprise Management, comme cela est présenté dans la demande exemple suivante, en remplaçant le jeton IAM et les variables d'ID par les valeurs de votre entreprise. <!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-a-new-account-in-an-enterprise){: external}. -->
+Pour créer un compte dans l'entreprise, appelez l'API Enterprise Management comme indiqué dans l'exemple de demande suivant, en remplaçant les variables de jeton et d'ID IAM par les valeurs de votre entreprise. Pour plus d'informations sur l'API, voir [API Enterprise Management](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-a-new-account-in-an-enterprise){: external}.
 
 ```
 curl -X POST \

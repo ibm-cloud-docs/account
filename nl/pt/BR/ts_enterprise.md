@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-07-18"
+lastupdated: "2019-07-29"
 
 keywords: troubleshoot enterprise, enterprise problem, account problem, enterprise support, enterprise help, error message
 
@@ -48,27 +48,29 @@ Entre em contato com o proprietário corporativo para solicitar o acesso correto
 
 Se você for o proprietário da empresa, conclua as etapas a seguir para designar um acesso de usuário à empresa inteira:
 1. Acesse **Gerenciar** > **Acesso (IAM)** > **Usuários**.
-2. Selecione o nome do usuário. 
+2. Selecione o nome do usuário.
 2. Clique na guia **Políticas de acesso** > **Designar acesso** > **Designar acesso a serviços de gerenciamento de conta**.
 3. Selecione **Empresa** como o serviço e selecione o nome de sua empresa.
 4. Selecione o grupo de contas ou a conta na empresa para a qual você deseja fornecer o acesso de usuário. Por exemplo, se você desejar que um usuário tenha acesso para visualizar apenas uma única conta, selecione a conta e designe ao usuário a função de Visualizador ou superior. Se você desejar que um usuário tenha acesso para visualizar a empresa inteira, deixe o grupo de contas e as seleções de conta em branco e designe o acesso.
 
-## Por que não posso incluir uma conta existente na empresa?
+## Por que não posso importar uma conta existente na empresa?
 {: #troubleshoot-existing-enterprise}
 {: troubleshoot}
 
-Quando você tenta incluir uma conta existente no corporativo, ocorre um dos problemas a seguir:
+Quando você tenta importar uma conta existente na empresa, ocorre um dos problemas a seguir:
 {: tsSymptoms}
 * Quando você clica em **Incluir conta existente** na seção Conta, a conta que você deseja incluir não está listada.
-* Você não tem a opção de clicar em **Incluir conta existente**.
+* Você não tem a opção de clicar em **Importar conta**.
 
-Você não tem o acesso correto designado.
+Você não está designado ao acesso correto ou a conta não é elegível para ser importada.
 {: tsCauses}
 
-Se você não puder ver a conta existente que está listada como uma opção, será necessária a função de Administrador no serviço de faturamento da conta existente.
+Se você não puder ver a conta existente que deseja importar, será necessária a função de Administrador no serviço Faturamento da conta existente.
 {: tsResolve}
 
-Para incluir uma conta existente na empresa, é necessária a função de Administrador ou de Editor no serviço de faturamento da empresa e a função de Administrador ou de Editor no serviço corporativo para o grupo de empresas ou contas pai.
+Se a opção **Importar conta** não estiver disponível, verifique se você tem a função de Administrador ou de Editor no serviço Faturamento da empresa e a função de Administrador ou Editor no serviço Corporativo para o grupo de empresas ou de conta pai.
+
+Se a conta que você deseja importar for uma conta Pré-paga e ainda não puder importá-la depois de verificar se você tem acesso, a conta pode não ser elegível para ser importada na empresa. Algumas contas Pré-pagas não podem ser diretamente importadas em uma empresa, como muitas contas Pré-pagas que são faturadas em dólares dos Estados Unidos (USD). Entre em contato com [Vendas do {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}![Ícone de link externo](../icons/launch-glyph.svg) para converter a conta em uma conta de Assinatura e, em seguida, importe-a na empresa.
 
 ## Por que não posso criar uma nova conta na empresa?
 {: #troubleshoot-add-enterprise}
@@ -82,8 +84,8 @@ Você não tem o acesso correto designado.
 
 Para criar uma conta na empresa, deve-se ter o acesso a seguir.
 {: tsResolve}
-1. Função de administrador sobre o serviço de faturamento da empresa.
-2. Função de Administrador ou de Editor no serviço corporativo para o grupo de contas ou empresa pai de destino.
+1. Função de Administrador no serviço Faturamento da empresa.
+2. A função de Administrador ou de Editor no serviço Corporativo para o grupo de empresas ou de conta pai de destino.
 
 ## Por que não posso ver as assinaturas corporativas?
 {: #troubleshoot-viewsub-enterprise}
@@ -111,7 +113,7 @@ Para visualizar ou gerenciar faturamento, é necessário ser convidado para a co
 Não é possível incluir um código de assinatura em sua conta porque você não tem o acesso correto.  
 {: tsSymptoms}
 
-Como você é uma conta-filha na empresa, não é possível aplicar códigos de assinatura. Os códigos de assinatura devem ser aplicados no nível corporativo.
+Como sua conta é uma conta-filha na empresa, não é possível aplicar códigos de assinatura. Os códigos de assinatura devem ser aplicados no nível corporativo.
 {: tsCauses}
 
 Entre em contato com o proprietário ou com o administrador da empresa para incluir o código de assinatura. Quando o código de assinatura é incluído, ele se aplica a todas as contas na empresa. Para obter mais informações, consulte [Gerenciando assinaturas](/docs/billing-usage?topic=billing-usage-subscriptions).

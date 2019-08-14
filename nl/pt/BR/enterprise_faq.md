@@ -25,7 +25,7 @@ subcollection: account
 {: #lite-to-enterprise}
 {: faq}
 
-Sim, mas sua conta Lite passa por um upgrade automático para uma conta Pré-paga. O faturamento para a conta é, então, gerenciado no nível corporativo. Para obter mais informações, veja [Fazendo upgrade de sua conta](/docs/account?topic=account-upgrading-account).
+Sim, mas sua conta Lite passa por um upgrade automático para uma conta Pré-paga. O faturamento para a conta é, então, gerenciado no nível corporativo. Para obter mais informações, consulte [Gerenciando centralmente o faturamento e o uso com empresas](https://cloud.ibm.com/docs/billing-usage?topic=billing-usage-enterprise).
 
 ## Posso remover minha conta de uma empresa?
 {: #remove-enterprise}

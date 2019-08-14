@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-25"
 
 keywords: enterprise, create account group, organize accounts, move accounts
 
@@ -82,7 +82,7 @@ curl -X POST \
 ```
 {: codeblock}
 
-<!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-account-group){: external}.-->
+Para obtener información detallada sobre la API, consulte [API de Gestión de empresa](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-account-group){: external}.
 
 ## Mover cuentas dentro de la empresa
 {: #move-accounts}
@@ -142,4 +142,4 @@ curl -X PATCH \
 ```
 {: codeblock}
 
-<!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#move-an-account-with-the-enterprise){: external}. -->
+Para obtener información detallada sobre la API, consulte [API de Gestión de empresa](https://{DomainName}/apidocs/enterprise-apis/enterprise#move-an-account-with-the-enterprise){: external}.

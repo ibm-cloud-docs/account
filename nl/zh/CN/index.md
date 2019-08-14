@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-08-02"
 
 keywords: account types, Lite, free account, paid account, buy account, account difference, compare account, subscription, service bundle
 
@@ -73,7 +73,7 @@ subcollection: account
 ## 现收现付帐户
 {: #paygo}
 
-使用现收现付帐户，可以访问完整 {{site.data.keyword.Bluemix_notm}}“目录”（包括所有免费套餐），并且可获得双倍的免费运行时内存，即每月 512 MB。您只需为所使用的计费服务付费，而无需长期合同或任何承诺。
+使用现收现付帐户，可以访问完整 {{site.data.keyword.Bluemix_notm}}“目录”（包括所有免费套餐），并且可获得双倍的免费运行时内存，即每月 512 MB。您只需为所使用的计费服务付费，而无需长期合同或任何承诺。在升级到“现买现付”帐户后，您会收到 [$200 信用](#upgrade-lite-account)帮助您开始使用。
 
 您可以创建多个资源组，以轻松管理配额和查看一组资源的计费使用情况。将根据您所使用的 {{site.data.keyword.Bluemix_notm}} 计算和服务收费。如果使用额超出免费运行时和服务限额，您会收到按月开具的发票，其中提供有关资源费用的详细信息。
 
@@ -102,7 +102,7 @@ subcollection: account
 服务捆绑预订不能通过 {{site.data.keyword.Bluemix_notm}} 控制台进行。要了解更多信息和购买服务捆绑，请联系 [{{site.data.keyword.Bluemix_notm}} 销售人员 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}。
 {:tip}
 
-购买服务捆绑预订后，您会收到一封电子邮件，其中包含将捆绑添加到您的帐户时要应用的特征代码。有关如何应用特征代码的更多信息，请参阅[应用特征代码](/docs/account?topic=account-codes)。当您的服务捆绑过期或您使用了所有信用值时，您可以继续使用任何服务，使用额按现收现付费率计算。
+购买服务捆绑预订后，您会收到一封电子邮件，其中包含将捆绑添加到您的帐户时要应用的预订代码。有关如何应用预订代码的更多信息，请参阅[管理预订](/docs/billing-usage?topic=billing-usage-subscriptions)。当您的服务捆绑过期或您使用了所有信用值时，您可以继续使用任何服务，使用额按现收现付费率计算。
 
 ## 升级帐户
 {: #upgrade-lite-account}

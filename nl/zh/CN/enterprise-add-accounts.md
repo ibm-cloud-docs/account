@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-07-26"
 
 keywords: enterprise, add account, import account, create account
 
@@ -80,7 +80,7 @@ ibmcloud account list
 ### 使用 API 导入帐户
 {: #add-account-api}
 
-要将现有帐户导入到企业，请如以下样本请求中所示调用<!-- [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#import-an-account-into-an-enterprise){: external}-->企业管理 API。将 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 令牌和标识变量替换为企业中的值。
+要将现有帐户导入到企业，请如以下样本请求中所示调用[企业管理 API](https://{DomainName}/apidocs/enterprise-apis/enterprise#import-an-account-into-an-enterprise){: external}。将 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 令牌和标识变量替换为企业中的值。
 
 ```
 curl -X PUT \
@@ -126,8 +126,8 @@ curl -X PUT \
 ### 使用 API 创建帐户
 {: #create-account-api}
 
-要在企业中创建新帐户，请如以下样本请求中所示调用企业管理 API，并将 IAM 令牌和标识变量替换为企业中的值。<!-- For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-a-new-account-in-an-enterprise){: external}. -->
-
+要在企业中创建新帐户，请如以下样本请求中所示调用企业管理 API，并将 IAM 令牌和标识变量替换为企业中的值。
+有关 API 的详细信息，请参阅[企业管理 API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-a-new-account-in-an-enterprise){: external}。
 
 ```
 curl -X POST \

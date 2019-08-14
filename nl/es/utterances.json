@@ -142,7 +142,7 @@
       "cancelar mi cuenta",
       "necesito que se cancele mi cuenta",
       "suspender esta cuenta",
-      "cómo desactivar la cuenta"  
+      "cómo desactivar la cuenta"
     ],
     "deleteaccount": [
       "suprimir mi cuenta",
@@ -258,6 +258,21 @@
       "a qué cuentas estoy afiliado",
       "qué cuentas están a mi nombre"
     ],
+    "change-profile-settings": [
+      "cambiar ID de usuario",
+      "actualizar ID de usuario",
+      "editar mi IBM ID",
+      "cambiar el nombre de contacto",
+      "cambiar el correo electrónico",
+      "actualizar el número de teléfono",
+      "editar información personal"
+    ],
+     "switch-account-lang": [
+      "cambiar el idioma a inglés",
+      "cambiar el idioma de la cuenta",
+      "cambiar de idioma",
+      "actualizar la configuración de idioma"
+    ],
     "switch-between-accounts": [
       "cambiar varias cuentas",
       "cambio entre cuentas",
@@ -322,27 +337,27 @@
     ],
     "nosecondreg": [
       "no puedo acceder a otra ubicación de IBM Cloud",
-      "no se puede acceder a una ubicación distinta",
-      "no se puede acceder a ubicaciones diferentes",
+      "no puedo acceder a una ubicación distinta",
+      "no puedo acceder a ubicaciones diferentes",
       "no se me permite acceder a otra ubicación de IBM Cloud",
       "no puedo utilizar otra ubicación de IBM Cloud",
       "no puedo utilizar otras ubicaciones de IBM Cloud"
     ],
     "nosecondorg": [
       "no puedo crear una nueva organización",
-      "no se puede crear una nueva organización",
+      "no puedo crear una nueva organización",
       "problemas al crear una nueva org",
       "problemas para crear una nueva organización",
       "no puedo crear una organización nueva"
     ],
     "nosecondlite": [
-      "no se puede crear una nueva instancia del plan Lite",
-      "no puedo crear una nueva instancia del plan Lite",
-      "no se me permite crear una nueva instancia del plan Lite",
-      "Por qué no puedo formar una nueva instancia del plan Lite",
-      "suministrar otro recurso del plan Lite",
+      "no puedo hacer una nueva instancia de plan Lite",
+      "no puedo crear una nueva instancia de plan Lite",
+      "no se me permite crear una nueva instancia de plan Lite",
+      "Por qué no puedo formar una nueva instancia de plan Lite",
+      "suministrar otro recurso de plan Lite",
       "No puedo suministrar una nueva instancia Lite",
-      "más de una instancia del plan lite"
+      "más de una instancia de plan lite"
     ],
     "noruntimemem": [
       "sobrepasar la concesión de memoria de tiempo de ejecución",
@@ -359,8 +374,8 @@
       "la cuenta no está activada"
     ],
     "ts_adduser": [
-      "no se pueden añadir usuarios a una organización",
-      "no se pueden añadir usuarios a mi org",
+      "no puedo añadir usuarios a una organización",
+      "no puedo añadir usuarios a mi org",
       "adición de usuarios a org",
       "añadir personas a una org",
       "A quién se le permite añadir usuarios a una org",
@@ -373,7 +388,7 @@
       "BXNUI0097E",
       "Para poder añadir una app, debe haber al menos un espacio asociado con la organización y la región",
       "no hay ningún espacio asociado con mi organización actual",
-      "no se puede crear una app sin un espacio",
+      "no puedo crear una app sin un espacio",
       "no hay espacios en mi org",
       "Dónde están los espacios asociados a mi org actual",
       "no hay ningún espacio enlazado a mi org actual"
@@ -393,8 +408,8 @@
       "utilizar la consola para ver todas mis orgs"
     ],
     "ts_addcc": [
-      "no se puede añadir mi tarjeta de crédito",
-      "no se puede añadir tarjeta de crédito",
+      "no puedo añadir mi tarjeta de crédito",
+      "no puedo añadir tarjeta de crédito",
       "no se me permite añadir la información de mi tarjeta de crédito",
       "problemas para añadir una tarjeta de crédito",
       "no se añade tarjeta de crédito",
@@ -428,7 +443,7 @@
       "Ha llegado a esta página porque la autenticación ha sido correcta; sin embargo, este IBMid no está asociado con ninguna cuenta de IBM Cloud"
     ],
     "ts_login_stalls": [
-      "no se puede abrir la consola después de iniciar sesión",
+      "no puedo abrir la consola después de iniciar sesión",
       "la consola no se abre cuando inicio una sesión",
       "consola no se abre",
       "la consola no se abrirá",
@@ -436,12 +451,12 @@
     ],
     "ts_login_ibmid": [
       "El inicio de sesión de IBMid no se completa",
-      "no se puede iniciar sesión con IBMId",
+      "no puedo iniciar sesión con IBMId",
       "inicio de sesión no completado",
       "no se completa el inicio de sesión",
       "el inicio de sesión no se completa",
       "no ha completado mi inicio de sesión de IBMid",
-      "no se puede completar el inicio de sesión",
+      "no puedo completar el inicio de sesión",
       "no puedo iniciar sesión en mi cuenta",
       "el inicio de sesión no funciona"
     ],
@@ -449,10 +464,10 @@
       "Después de registrar una cuenta, no puedo iniciar una sesión de inmediato",
       "no se me permite iniciar sesión inmediatamente después de crear una cuenta",
       "no puedo iniciar sesión después de registrar una cuenta",
-      "no se puede iniciar sesión después del registro de cuenta",
+      "no puedo iniciar sesión después del registro de cuenta",
       "no puedo iniciar sesión después de crear una cuenta",
       "inicio de sesión después de registro para IBM Cloud",
-      "no se puede entrar en mi cuenta después de registrarla",
+      "no puedo entrar en mi cuenta después de registrarla",
       "Su cuenta está pendiente"
     ],
     "ts_err": [
@@ -460,11 +475,88 @@
       "páginas cortadas en la consola",
       "algunas páginas de la consola no se ven",
       "no se cargan páginas en la consola",
-      "no se pueden cargar páginas de la consola",
+      "no puedo cargar páginas de la consola",
       "no se cargan páginas de la consola",
       "BXNUI0001E",
       "La página no se ha cargado porque IBM Cloud no ha detectado si existe una sesión",
       "BXNUI0016E",
       "No se han recuperado apps ni servicios porque no se ha cargado una página de IBM Cloud"
+    ],
+    "lite-to-enterprise": [
+      "importar lite en empresa",
+      "importación de una cuenta lite en una empresa",
+      "migrar cuenta lite a empresa",
+      "añadir lite a empresa",
+      "adición de una cuenta lite a una empresa"
+    ],
+    "remove-enterprise": [
+      "eliminar mi cuenta de empresas",
+      "eliminar de una empresa",
+      "sacar cuentas de la empresa",
+      "suprimir de una empresa",
+      "supresión de cuentas de empresa"
+    ],
+    "move-enterprise-account": [
+      "mover una cuenta dentro de una empresa",
+      "mover cuenta en empresa",
+      "transferir cuenta en empresa",
+      "transferencia de cuentas de empresa",
+      "movimiento de cuentas dentro de una empresa"
+    ],
+    "move-account-group": [
+      "mover grupo de cuentas de la empresa",
+      "movimiento de grupos de cuentas dentro de una empresa",
+      "mover grupo dentro de una empresa",
+      "mover grupo de cuentas",
+      "mover un grupo fuera de una empresa"
+    ],
+    "rename-enterprise-account": [
+      "cambiar el nombre de la cuenta en una empresa",
+      "cambio de nombre de cuenta de empresa",
+      "actualizar el nombre de cuenta en una empresa",
+      "editar el nombre de cuenta en una empresa",
+      "edición de nombres de cuenta para empresas"
+    ],
+    "enterprise-invite-users": [
+      "invitar a otros usuarios a mi empresa",
+      "pedir a un usuario que se una a una empresa",
+      "usuarios que se unen a nuestra empresa",
+      "invitación a un usuario a una empresa",
+      "invitación de empresa para usuarios"
+    ],
+    "troubleshoot-view-enterprise": [
+      "no puedo ver la jerarquía de empresa completa",
+      "no ver la empresa completa",
+      "no puedo ver la jerarquía de empresa",
+      "ver la jerarquía y las cuentas que faltan",
+      "jerarquía completa no visible"
+    ],
+    "troubleshoot-existing-enterprise": [
+      "no puedo ver la cuenta existente como opción para importar",
+      "error al importar una cuenta existente a la empresa",
+      "mi cuenta actual no está disponible para importarla a la empresa",
+      "no se puede importar una cuenta a la empresa",
+      "importar cuenta a empresa"
+    ],
+    "troubleshoot-add-enterprise": [
+      "no puedo pulsar añadir cuenta a la empresa",
+      "no puedo crear una cuenta en la empresa",
+      "en una empresa, ¿por qué no puedo añadir una cuenta?",
+      "problema al añadir una cuenta de empresa",
+      "no puedo añadir cuenta en mi empresa"
+    ],
+    "troubleshoot-viewsub-enterprise": [
+      "no puedo ver la página de suscripciones desde una cuenta secundaria",
+      "no tengo permiso para ver los datos de suscripción de esta cuenta",
+      "ver suscripción de empresa",
+      "intentando ver suscripciones de empresa",
+      "no puedo ver suscripciones de empresa"
+    ],
+    "troubleshoot-promo-enterprise": [
+      "no puedo aplicar un código de suscripción a una cuenta de empresa",
+      "no puedo añadir un código de suscripción a mi empresa",
+      "añadir un código de característica a una cuenta secundaria de la empresa",
+      "adición de código de suscripción a empresa",
+      "problema al añadir código de suscripción a empresa"
     ]
 }

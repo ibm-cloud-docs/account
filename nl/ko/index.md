@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-08-02"
 
 keywords: account types, Lite, free account, paid account, buy account, account difference, compare account, subscription, service bundle
 
@@ -73,7 +73,7 @@ Lite 계정에 사용 가능한 다음 주요 기능 목록을 확인하십시�
 ## 종량과금제 계정
 {: #paygo}
 
-종량과금제 계정을 사용하면 모든 무료 플랜을 포함한 전체 {{site.data.keyword.Bluemix_notm}} 카탈로그에 액세스할 수 있으며, 매월 512MB의 무료 런타임 메모리를 두 배로 확보할 수 있습니다. 장기 계약이나 약정 없이 사용한 청구 가능한 서비스에 대해서만 비용을 지불하게 됩니다.
+종량과금제 계정을 사용하면 모든 무료 플랜을 포함한 전체 {{site.data.keyword.Bluemix_notm}} 카탈로그에 액세스할 수 있으며, 매월 512MB의 무료 런타임 메모리를 두 배로 확보할 수 있습니다. 장기 계약이나 약정 없이 사용한 청구 가능한 서비스에 대해서만 비용을 지불합니다. 종량과금제 계정으로 업그레이드한 경우, 시작하는 데 도움을 받을 수 있도록 [$200 크레딧](#upgrade-lite-account)을 받습니다.
 
 여러 리소스 그룹을 작성하여 할당량을 쉽게 관리하고 리소스 세트에 대한 청구 사용량을 볼 수 있습니다. 비용은 {{site.data.keyword.Bluemix_notm}} 컴퓨팅 및 서비스의 사용을 기준으로 청구됩니다. 사용 가능한 런타임 및 서비스 허용량을 초과하여 사용하는 경우 리소스 비용에 대한 세부사항을 제공하는 월별 청구서를 받습니다.
 
@@ -102,7 +102,7 @@ Lite 계정을 포함하여 모든 유형의 기존 계정에 서비스 번들�
 서비스 번들 구독은 {{site.data.keyword.Bluemix_notm}} 콘솔을 통해 이용할 수 없습니다. 서비스 번들에 대해 자세히 알아보고 구매하려면 [{{site.data.keyword.Bluemix_notm}} 영업![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}에 문의하십시오.
 {:tip}
 
-서비스 번들 구독을 구입하면 번들을 계정에 추가하기 위해 적용하는 기능 코드가 포함된 이메일을 받습니다. 기능 코드를 적용하는 방법에 대한 자세한 내용은 [기능 코드 적용](/docs/account?topic=account-codes)을 참조하십시오. 서비스 번들이 만료되거나 모든 크레딧을 사용하는 경우, 사용량을 종량과금제 요금으로 지불하면서 모든 서비스를 계속 사용할 수 있습니다.
+서비스 번들 구독을 구매하면 계정에 번들을 추가하기 위해 적용하는 구독 코드가 포함된 이메일을 수신하게 됩니다. 구독 코드를 적용하는 방법에 대한 자세한 정보는 [구독 관리](/docs/billing-usage?topic=billing-usage-subscriptions)를 참조하십시오. 서비스 번들이 만료되거나 모든 크레딧을 사용하는 경우, 사용량을 종량과금제 요금으로 지불하면서 모든 서비스를 계속 사용할 수 있습니다.
 
 ## 계정 업그레이드
 {: #upgrade-lite-account}

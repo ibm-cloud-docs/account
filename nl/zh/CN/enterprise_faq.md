@@ -25,7 +25,8 @@ subcollection: account
 {: #lite-to-enterprise}
 {: faq}
 
-可以，但是轻量帐户会自动升级为现收现付帐户。然后，该帐户的计费会在企业级别进行管理。有关更多信息，请参阅[升级帐户](/docs/account?topic=account-upgrading-account)。
+可以，但是轻量帐户会自动升级为现收现付帐户。然后，该帐户的计费会在企业级别进行管理。有关更多信息，请参阅[集中管理企业的计费和使用情况](https://cloud.ibm.com/docs/billing-usage?topic=billing-usage-enterprise)。
+
 
 ## 可以从企业中除去帐户吗？
 {: #remove-enterprise}

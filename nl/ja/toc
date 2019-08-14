@@ -2,7 +2,7 @@
 {:topicgroup: .topicgroup}
 {:utterance .utterance}
 
-{: .toc subcollection="account" audience="platform" arm="3397214" href="/docs/account?topic=account-account_setup" path="account"}
+{:  .toc subcollection="account" category="platform_services" audience="platform" arm="3397214" href="/docs/account?topic=account-account_setup" path="account"}
 アカウントの管理
 
     {: .navgroup id="learn"}
@@ -71,6 +71,7 @@
     {: .topicgroup}
     API リファレンス
         [ユーザー管理](https://{DomainName}/apidocs/user-management){: new_window}
+        [エンタープライズ管理](https://{DomainName}/apidocs/enterprise-apis/enterprise){: new_window}
     {: .navgroup-end}
 
     {: .navgroup id="help"}

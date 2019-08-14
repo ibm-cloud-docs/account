@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-07-29"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -17,10 +17,10 @@ subcollection: account
 {:faq: data-hd-content-type='faq'}
 {:tip: .tip}
 
-# Preguntas más frecuentes sobre la cuenta
+# Preguntas más frecuentes sobre cuentas
 {: #accountfaqs}
 
-Las preguntas más frecuentes sobre su cuenta de {{site.data.keyword.cloud}} pueden incluir preguntas acerca de cuentas lite, reasignación de usuarios, errores de cuenta etiquetas de cuenta. Para encontrar todas las preguntas más frecuentes sobre {{site.data.keyword.cloud_notm}}, consulte nuestra biblioteca de preguntas más frecuentes.
+Las preguntas más frecuentes sobre su cuenta de {{site.data.keyword.cloud}} pueden incluir preguntas acerca de cuentas Lite, reasignación de usuarios, errores de cuenta etiquetas de cuenta. Para encontrar todas las preguntas más frecuentes sobre {{site.data.keyword.cloud_notm}}, consulte nuestra biblioteca de preguntas más frecuentes.
 {: shortdesc}
 
 ## ¿Cómo puedo crear una cuenta?
@@ -136,7 +136,7 @@ Para obtener más información, consulte [Establecimiento de preferencias de cor
 {: #reset-password}
 {: faq}
 
-Para restablecer la contraseña de su cuenta, vaya al icono de avatar ![Icono de avatar](../icons/i-avatar-icon.svg) **> Perfil y valores**. A continuación, pulse en **Cambiar o restablecer** desde el mosaico de información de usuario de la cuenta.
+Para restablecer la contraseña de su cuenta, vaya al icono de **Avatar** ![Icono de avatar](../icons/i-avatar-icon.svg) **> Perfil y valores**. A continuación, pulse en **Cambiar o restablecer** desde el mosaico de información de usuario de la cuenta.
 
 Para restablecer la contraseña de VPN, siga estos pasos:
 
@@ -175,7 +175,7 @@ Para entender la forma en que IBM gestiona su información personal, consulte la
 
 Una cuenta se puede desactivar por los siguientes motivos:
 
-- En el caso de cuentas de prueba, ha finalizado el periodo de prueba. Para reactivar la cuenta, inicie una sesión en la cuenta y actualícela a una cuenta de pago según uso.
+- En el caso de cuentas de prueba, ha finalizado el periodo de prueba. Para reactivar la cuenta, inicie una sesión en la cuenta y actualícela a una cuenta de pago según uso. Puede que la cuenta tarde unos días en reactivarse completamente.
 - Un usuario autorizado ha cancelado la cuenta.
 - La cuenta se ha suspendido. A discreción de IBM, las cuentas que no tengan un comportamiento de uso aceptable de los servicios de {{site.data.keyword.Bluemix_notm}} pueden ser inhabilitados sin previo aviso. Algunos servicios se pueden restaurar si los usuarios corrigen su comportamiento de uso después de que se les haya notificado sobre la acción ofensiva.
 
@@ -185,7 +185,7 @@ Si cree que su cuenta se ha desactivado por error, póngase en contacto con el e
 {: #contactsupport}
 {: faq}
 
-Pulse **Soporte** en la barra de menús de la consola para ir al centro de soporte. Encontrará más información sobre soporte en [Obtención de soporte](/docs/get-support?topic=get-support-support-plans).
+Pulse **Soporte** en la barra de menús de la consola para ir al centro de soporte. Para obtener más información, consulte [Obtención de soporte](/docs/get-support?topic=get-support-support-plans).
 
 ## ¿Puedo registrarme para una prueba gratuita?
 {: #freetrial}
@@ -194,6 +194,12 @@ Pulse **Soporte** en la barra de menús de la consola para ir al centro de sopor
 Las cuentas Lite de {{site.data.keyword.Bluemix_notm}} proporcionan acceso a los servicios gratuitos del plan Lite. Puede utilizar estos servicios durante el tiempo que desee sin que se le facture y su cuenta nunca caduca. [Regístrese para una cuenta Lite](https://{DomainName}/registration).
 
 Las cuentas de prueba de {{site.data.keyword.Bluemix_notm}} están disponibles para profesores y estudiantes de instituciones académicas acreditadas. Para cumplir los requisitos para una cuenta de prueba, vaya a [Aprovechar la potencia de IBM ![Icono de enlace externo](../icons/launch-glyph.svg)](https://ibm.biz/academic){: new_window} y valide las credenciales de la institución. A diferencia de las cuentas de Lite, las cuentas de prueba caducan cuando finaliza el periodo de prueba.
+
+## ¿Puedo iniciar la sesión en la consola de {{site.data.keyword.Bluemix_notm}} con mi ID de SoftLayer?
+{: #slid}
+{: faq}
+
+Sí, puede utilizar su ID de SoftLayer para iniciar la sesión en la consola. Vaya a la [página de inicio de sesión](https://cloud.ibm.com/login){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo") y seleccione **ID de SoftLayer** en la lista **ID**.  
 
 ## Después de enlazar mi cuenta, ¿cómo inicio una sesión?
 {: #al_login}
@@ -268,6 +274,18 @@ Si tiene más de una cuenta, puede pulsar en el nombre de la cuenta en la barra 
 Puede transferir la propiedad de recursos individuales dentro de su cuenta a otro usuario mediante el mandato `ibmcloud catalog`. Para obtener más información, consulte [Cómo transferir la propiedad de un recurso privado](/docs/account?topic=account-include#owners).
 
 Para transferir la propiedad de toda la cuenta, actualice el [perfil de la empresa](https://{DomainName}/account/company-profile). Para obtener más información, consulte [Transferencia de la propiedad de la cuenta](/docs/account?topic=account-transfer).
+
+## ¿Cómo puedo cambiar el nombre o el IBMid en mi perfil?
+{: #change-profile-settings}
+{: faq}
+
+Puede cambiar su información personal, como por ejemplo el nombre, el correo electrónico o el número de teléfono yendo al icono de **Avatar** ![Icono de avatar](../icons/i-avatar-icon.svg) **>  Perfil y valores**. No puede cambiar el IBMid, pero puede crear uno nuevo si procede. Puede acceder al [Centro mundial de atención al cliente sobre IBMid](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html) para preguntas generales sobre el ID no relacionadas con la cuenta de {{site.data.keyword.Bluemix_notm}}.
+
+## ¿Cómo puedo cambiar el idioma asociado a mi cuenta?
+{: #switch-account-lang}
+{: faq}
+
+El idioma que se utiliza se basa en los valores del navegador web. Para ver el contenido en su idioma nativo, actualice la configuración de idioma del navegador.
 
 ## ¿Ofrece soporte {{site.data.keyword.Bluemix_notm}} al registro por lotes de los usuarios?
 {: #batch-registration}

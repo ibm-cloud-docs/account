@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-08"
+lastupdated: "2019-07-29"
 
 keywords: create account, IBMid, sign up for account, sign up
 
@@ -37,7 +37,9 @@ Si no forma parte de una empresa que utiliza ID federados, se registrará para {
 1. Vaya a la [página de inicio de sesión de {{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com/){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo") y pulse **Crear una cuenta de {{site.data.keyword.Bluemix_notm}}**.
 1. Especifique su dirección de correo electrónico de IBMid. Si no tiene un IBMid existente, se crea un ID en función del correo electrónico que especifique.
 1. Cumplimente los demás campos con su información y pulse **Crear cuenta**.
+1. Confirme la cuenta pulsando en el enlace que aparece en el correo electrónico de confirmación enviado a la dirección de correo electrónico que ha proporcionado.
 
+Si encuentra algún problema para iniciar sesión con la nueva cuenta, consulte [Resolución de problemas de acceso a {{site.data.keyword.Bluemix_notm}}](/docs/account?topic=account-accessing) para obtener ayuda.
 
 ## Registro con un ID federado
 {: #signup-federated}

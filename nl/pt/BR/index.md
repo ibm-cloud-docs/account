@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-08-02"
 
 keywords: account types, Lite, free account, paid account, buy account, account difference, compare account, subscription, service bundle
 
@@ -73,7 +73,7 @@ Confira a lista a seguir de recursos-chave que estão disponíveis em uma conta 
 ## Conta pré-paga
 {: #paygo}
 
-Com uma conta Pré-paga, é possível acessar o catálogo integral do {{site.data.keyword.Bluemix_notm}}, incluindo todos os planos grátis, e você obtém o dobro da memória de tempo de execução grátis, com 512 MB por mês. Você pagará somente pelos serviços faturáveis que usar, sem contratos ou compromissos de longo prazo.
+Com uma conta Pré-paga, é possível acessar o catálogo integral do {{site.data.keyword.Bluemix_notm}}, incluindo todos os planos grátis, e você obtém o dobro da memória de tempo de execução grátis, com 512 MB por mês. Você paga somente por serviços faturáveis que você usa, sem contratos de longo prazo ou compromissos. Ao fazer upgrade para uma conta Pré-paga, você recebe um [crédito de $200](#upgrade-lite-account) para ajudá-lo a iniciar.
 
 É possível criar vários grupos de recursos para gerenciar facilmente a cota e visualizar o uso de faturamento para um conjunto de recursos. Seus encargos são baseados em seu uso de cálculo e serviços do {{site.data.keyword.Bluemix_notm}}. Se você usar mais do que os abonos de serviço e o tempo de execução grátis, você receberá uma fatura mensal que fornece detalhes sobre os encargos de recurso.
 
@@ -102,7 +102,7 @@ As assinaturas de pacote configurável de serviços fornecem acesso e crédito a
 As assinaturas de pacote configurável de serviços não estão disponíveis por meio do console do {{site.data.keyword.Bluemix_notm}}. Para saber mais e comprar um pacote configurável de serviços, entre em contato com a equipe de [Vendas do {{site.data.keyword.Bluemix_notm}}![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 {:tip}
 
-Depois de comprar uma assinatura de pacote configurável de serviços, você receberá um e-mail com um código de recurso que se aplica para incluir o pacote configurável em sua conta. Para obter mais informações sobre como aplicar códigos de recurso, consulte [Aplicando códigos de recurso](/docs/account?topic=account-codes). Quando seu pacote configurável de serviços expirar ou você usar todo o crédito, será possível continuar a usar qualquer um dos serviços com o uso cobrado na taxa Pré-paga.
+Depois de comprar uma assinatura de pacote configurável de serviços, você receberá um e-mail com um código de assinatura que se aplica para incluir o pacote configurável em sua conta. Para obter mais informações sobre como aplicar códigos de recurso, consulte [Gerenciando assinaturas](/docs/billing-usage?topic=billing-usage-subscriptions). Quando seu pacote configurável de serviços expirar ou você usar todo o crédito, será possível continuar a usar qualquer um dos serviços com o uso cobrado na taxa Pré-paga.
 
 ## Fazendo upgrade de sua conta
 {: #upgrade-lite-account}
