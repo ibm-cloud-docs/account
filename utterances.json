@@ -282,6 +282,13 @@
       "change to another account",
       "switch to a different account"
     ],
+    "bookmark-page-account": [
+      "find url for account",
+      "bookmark page in account",
+      "target url to account",
+      "save resource page",
+      "save URL to account resource"
+    ],
     "switch-account-owners": [
       "switch account owners",
       "change account owners",

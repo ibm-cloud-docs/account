@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-08-16"
 
 keywords: platform notifications, email notifications, IBM Cloud notifications, notification preferences, email preferences, user notifications, infrastructure notifications
 
@@ -33,7 +33,7 @@ You can set platform email notifications only for your profile, not the account.
 
 When you select to receive unplanned platform events, you get emails only about issues that can cause an outage (Sev 1). At any time, you can see all planned and unplanned events from the [Status ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/status){: new_window} page.
 
-1. Go to the Avatar icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Profile and settings**.
+1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Profile and settings**.
 2. Click **Notifications**.
 3. Select whether to receive platform notifications for each of the categories that you want to update.
 
@@ -46,7 +46,7 @@ When you select to receive unplanned platform events, you get emails only about 
 
 If you're a Pay-As-You-Go or Subscription account owner, you can choose whether to receive {{site.data.keyword.Bluemix_notm}} infrastructure email notifications about unplanned events, maintenance, and announcements. Infrastructure notifications are scoped to the account that you switched to. You can switch to another account and manage notifications for that account.
 
-1. Go to the Avatar icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Profile and settings**.
+1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Profile and settings**.
 2. Click **Notifications**.
 3. Select whether to receive infrastructure notifications for each of the categories that you want to update.
 
@@ -55,10 +55,10 @@ If you're a Pay-As-You-Go or Subscription account owner, you can choose whether 
 
 4. Click **Save**.
 
-## Setting user notifications
+## Setting user notifications for classic infrastructure resources
 {: #setting-user-notifications}
 
-Setting user notifications is available for classic infrastructure resources only. If you're an account owner, you can set notification subscriptions for users in your account. The subscriptions are for a specific set of developer services like {{site.data.keyword.autoscaling}} and Raid Alert Monitoring. When the user is subscribed to a service, they receive emails about that service.  
+Setting user notifications is available for classic infrastructure resources only. If you're an account owner, you can subscribe users in your account to notifications for a specific set of developer services like {{site.data.keyword.autoscaling}} and Raid Alert Monitoring. When the user is subscribed to a service, they receive emails about that service. Changes that you make for a user take effect only for future notifications.  A user is not notified about events that occurred before you set up notifications.
 
 Users in your account receive notifications for the following types of important operational events:
 
@@ -77,3 +77,19 @@ To set up subscription notifications for your users, complete the following step
 
     To easily find the user you're looking for, click **Filter** and filter by given name, surname, or user name.
     {: tip}
+
+### Assigning required access to receive notifications
+{: #required-user-notification-access}
+
+Users that you set up for classic infrastructure notifications must also have access to the devices, network, and services that send the notifications.
+
+To ensure that a user has the correct access, go to **Manage** > **Access (IAM)** > **Users**, select their name, and then select **Classic infrastructure**. From the **Permissions** option, assign users the following classic infrastructure permissions.
+
+| Permission Category | Required Permissions |
+| ------------------- | -------------------- |
+| Device              | View Hardware Details <br/> View Virtual Server Details |
+| Network             | Manage Network Gateways |
+| Services            | Manage Lockbox <br/> Storage Manage |
+{: caption="Table 1. Required classic infrastructure permissions for receiving user notifications" caption-side="top"}
+
+Then, go to **Devices** to assign a user access to the specific devices and device types. You can also enable future access to all devices of a certain type. For more information about setting classic infrastructure permissions, see [Managing classic infrastructure access](/docs/iam?topic=iam-mngclassicinfra#mngclassicinfra).

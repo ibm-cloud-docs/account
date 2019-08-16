@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-08-16"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -133,7 +133,7 @@ For more information, see [Setting email preferences](/docs/account?topic=accoun
 {: #reset-password}
 {: faq}
 
-To reset your account password, go to the **Avatar** icon ![Avatar icon](../icons/i-avatar-icon.svg) **> Profile and settings**. Then, click **Change or reset** from the Account user information tile.
+To reset your account password, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) **> Profile and settings**. Then, click **Change or reset** from the Account user information tile.
 
 To reset your VPN password, complete the following steps:
 
@@ -148,7 +148,7 @@ To reset your VPN password, complete the following steps:
 
 We're sad to see you go! If there's any way we can assist you with your account before you go, reach out to us by contacting support.
 
-If you do decide to leave, how you cancel your account depends on your account type. You can check your account type by going to [Account settings](https://cloud.ibm.com/account/settings) and looking under _Account Type_.
+If you do decide to leave, how you cancel your account depends on your account type. You can check your account type by going to [Account settings](https://cloud.ibm.com/account/settings) and looking under _Account Type_. Only account owners can cancel accounts.
 
 * For Pay-As-You-Go or Subscription accounts, the quickest way to cancel your account is to contact us through [live chat](https://{DomainName}/unifiedsupport/supportcenter) or by calling 1-866-325-0045 and selecting the third option. Alternatively, you can open a support case.
 * To cancel a Lite account, go to [Account settings](https://cloud.ibm.com/account/settings) and click **Deactivate account**.
@@ -263,6 +263,20 @@ If you have more than one account, you can click your account name in the consol
 
 ![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-faq.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.")
 
+## Can I bookmark a console page for a specific account?
+{: #bookmark-page-account}
+{: faq}
+
+You can target URLs for any {{site.data.keyword.Bluemix_notm}} console page to a specific account. If you have multiple accounts, you can bookmark the account-specific URLs to easily access resources in different accounts without having to manually switch between them.
+
+1. Switch to the account that you want to target, and go to the [Account settings](https://{DomainName}/account/settings) page. In the Account section, find the account ID, such as `a1b2c3d4e5f61234567890fedcba4321`.
+1. Go to the console page that you want to bookmark, and add `?bss_account=<account-id>` to the URL, replacing `<account-id>` with the ID from your account. For example:
+   ```
+   https://{DomainName}/billing/usage?bss_account=a1b2c3d4e5f61234567890fedcba4321
+   ```
+   {: screen}
+1. Bookmark the URL in your browser.
+
 ## Can I make someone else the account owner?
 {: #switch-account-owners}
 {: faq}
@@ -275,7 +289,7 @@ To transfer ownership of your entire account, update your [company profile](http
 {: #change-profile-settings}
 {: faq}
 
-You can change your personal information, such as name, email, or phone number, by going to the **Avatar** icon ![Avatar icon](../icons/i-avatar-icon.svg) **>  Profile and settings**. You can't change your IBMid, but you can create a new one if appropriate. The [IBMid worldwide help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html) is available to help with general ID questions not related to your {{site.data.keyword.Bluemix_notm}} account.
+You can change your personal information, such as name, email, or phone number, by going to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) **>  Profile and settings**. You can't change your IBMid, but you can create a new one if appropriate. The [IBMid worldwide help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html) is available to help with general ID questions not related to your {{site.data.keyword.Bluemix_notm}} account.
 
 ## How do I change the language associated with my account?
 {: #switch-account-lang}
