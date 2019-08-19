@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-08-16"
+lastupdated: "2019-08-19"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -148,10 +148,10 @@ To reset your VPN password, complete the following steps:
 
 We're sad to see you go! If there's any way we can assist you with your account before you go, reach out to us by contacting support.
 
-If you do decide to leave, how you cancel your account depends on your account type. You can check your account type by going to [Account settings](https://cloud.ibm.com/account/settings) and looking under _Account Type_. Only account owners can cancel accounts.
+If you do decide to leave, how you cancel your account depends on your account type. You can check your account type by going to the [Account settings](https://cloud.ibm.com/account/settings) page in the console and looking under **Account Type**. Only account owners can cancel accounts.
 
 * For Pay-As-You-Go or Subscription accounts, the quickest way to cancel your account is to contact us through [live chat](https://{DomainName}/unifiedsupport/supportcenter) or by calling 1-866-325-0045 and selecting the third option. Alternatively, you can open a support case.
-* To cancel a Lite account, go to [Account settings](https://cloud.ibm.com/account/settings) and click **Deactivate account**.
+* To cancel a Lite account, go to the [Account settings](https://cloud.ibm.com/account/settings) page, and click **Deactivate account**.
 
 ## How do I delete my account?
 {: #deleteaccount}
