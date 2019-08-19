@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-06-20"
+lastupdated: "2019-08-19"
 
 keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, switch to IBMid
 
@@ -91,7 +91,7 @@ Be sure to review the following important notes about linking accounts:
   * The master user of the SoftLayer account that's being linked must have an IBMid.
   * Each user account that you link to an {{site.data.keyword.Bluemix_notm}} account must be owned by a unique IBMid with a unique email address. Even though a single IBMid can own multiple SoftLayer accounts, you must change the master user to be a unique IBMid for each account. Contact support to change the master user of a SoftLayer account. See [Getting support for {{site.data.keyword.Bluemix_notm}} infrastructure](/docs/customer-portal?topic=customer-portal-customerportal_support) for more information.
   * When you add new users to a linked account, you must add them to both the SoftLayer account and the {{site.data.keyword.Bluemix_notm}} account so that they can access all the capabilities of the unified console.
-  * If you have a brand account, you use the Brand Agent Portal (BAP), and you need support when linking your account, contact the Revenue Services team by emailing softlayer_revenue_services_team@wwpdl.vnet.ibm.com.
+  * If you have a brand account, you use the Brand Agent Portal (BAP), and you need support when you link your account, contact the Revenue Services team by emailing softlayer_revenue_services_team@wwpdl.vnet.ibm.com.
 
 Complete the following steps to link each SoftLayer account to an existing {{site.data.keyword.Bluemix_notm}} platform account or to create a new one:
 
@@ -102,7 +102,7 @@ Complete the following steps to link each SoftLayer account to an existing {{sit
    5. When you are prompted, do one of the following actions:
      * If you already have an {{site.data.keyword.Bluemix_notm}} account, provide the email address that is associated with that account to link the accounts.
      * If you don't have an {{site.data.keyword.Bluemix_notm}} account, provide the email address that you want to use and follow the instructions to be invited to {{site.data.keyword.Bluemix_notm}} and create an account.
-   6. After you link the account, inform the end user of each account to migrate to IBMid by following the procedure described in the preceding [Switching to IBMid](#switchtoIBMid) section.
+   6. After you link the account, inform the end user of each account to migrate to IBMid by following the procedure that's described in the preceding [Switching to IBMid](#switchtoIBMid) section.
 
       Migrate only end user accounts to IBMid. Do not migrate brand accounts, which are parent accounts for end user accounts and do not contain any resources. Brand account users that migrate to IBMid lose the ability to log in to the Brand Agent Portal (BAP).
       {: important}
@@ -118,8 +118,8 @@ Note the following changes after your accounts are linked:
 ## Multi-factor authentication usage in linked accounts
 {: #2fa}
 
-If you have a linked account, you can use the {{site.data.keyword.Bluemix_notm}} IAM **Settings** page to enable multi-factor authentication (MFA) for your account. This is also commonly known as two-factor authentication (2FA), and it adds a layer of security for accessing your account beyond the standard required IBMid and password. MFA for your account applies to all resources in your linked {{site.data.keyword.Bluemix_notm}} account. When it is enabled for your account, it also applies to all users who have been added to your account.
+If you have a linked account, you can use the {{site.data.keyword.Bluemix_notm}} IAM **Settings** page to enable multi-factor authentication (MFA) for your account. Multi-factor authentication is also commonly known as two-factor authentication (2FA), and it adds a layer of security for accessing your account beyond the standard required IBMid and password. MFA for your account applies to all resources in your linked {{site.data.keyword.Bluemix_notm}} account. When it is enabled for your account, it also applies to all users who have been added to your account.
 
-Other multi-factor authentication methods are not per IBMid. It is per account. When an IBMid is associated with multiple accounts, and you switch between accounts, you must confirm your identity every time you switch to a different account that requires two-factor authentication. This is true even if the prior account and the new account are both configured with the same two-factor authentication mechanism.
+Other multi-factor authentication methods are not per IBMid but rather per account. When an IBMid is associated with multiple accounts, and you switch between accounts, you must confirm your identity every time you switch to a different account that requires two-factor authentication. This is true even if the prior account and the new account are both configured with the same two-factor authentication mechanism.
 
-If you previously enabled [2FA in the customer portal](/docs/customer-portal?topic=customer-portal-cp_setup-2fa) for your classic infrastructure resources, and then you enable the {{site.data.keyword.Bluemix_notm}} account MFA setting, the MFA account setting overrides the 2FA that you set up in the customer portal. This means you can disable the 2FA that you purchased in the customer portal in favor of the account MFA setting.
+If you previously enabled [2FA in the customer portal](/docs/customer-portal?topic=customer-portal-cp_setup-2fa) for your classic infrastructure resources, and then you enable the {{site.data.keyword.Bluemix_notm}} account MFA setting, the MFA account setting overrides the 2FA that you set up in the customer portal. By using this method, you can disable the 2FA that you purchased in the customer portal in favor of the account MFA setting.

@@ -20,7 +20,7 @@ subcollection: account
 # FAQs for accounts
 {: #accountfaqs}
 
-FAQs for your {{site.data.keyword.cloud}} might include questions about Lite accounts, reassigning users, account errors, or account tags. To find all FAQs for {{site.data.keyword.cloud_notm}}, see our FAQ library.
+FAQs for your {{site.data.keyword.cloud}} might include questions about Lite accounts, reassigning users, account errors, or account tags. To find all FAQs for {{site.data.keyword.cloud_notm}}, see our [FAQ library](https://{DomainName}/docs/faqs).
 {: shortdesc}
 
 ## How do I create an account?
@@ -41,7 +41,7 @@ If you are able to log in to an {{site.data.keyword.Bluemix_notm}} account, go t
 
    After you open the case, an email notification is sent to you. Follow the instructions for further communication.
 
-If you can't log into an {{site.data.keyword.Bluemix_notm}} account, [create an account request](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
+If you can't log in to an {{site.data.keyword.Bluemix_notm}} account, [create an account request](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
 
 ## What is Cloud Foundry?
 {: #cloud-foundry}
@@ -56,7 +56,7 @@ For more information about managing orgs and spaces, see [Adding orgs and spaces
 {: #move-org-diff-account}
 {: faq}
 
-Currently, you can't move an org to a different account. However, you can recreate the org with the same credentials in a different account to mimic this functionality. For more information, see [Adding orgs and spaces](https://cloud.ibm.com/docs/account?topic=account-orgsspacesusers#createorg).
+Currently, you can't move an org to a different account. However, you can re-create the org with the same credentials in a different account to mimic this functionality. For more information, see [Adding orgs and spaces](https://cloud.ibm.com/docs/account?topic=account-orgsspacesusers#createorg).
 
 
 ## Which Cloud Foundry regions can I use?
@@ -175,7 +175,7 @@ Your account might be deactivated for the following reasons:
 - An authorized user canceled the account.
 - The account is suspended. At the discretion of IBM, accounts that violate the acceptable usage behaviors of the {{site.data.keyword.Bluemix_notm}} services can be disabled without notice. Some services can be restored if users correct their usage behaviors after they're notified of the offensive action.
 
-If you believe your account was deactivated in error, contact support by calling 1-866-325-0045 and selecting the third option.
+If you believe that your account was deactivated in error, contact support by calling 1-866-325-0045 and selecting the third option.
 
 ## How do I get support?
 {: #contactsupport}
@@ -213,7 +213,7 @@ After you link your account, you keep the same level of support when you add {{s
 {: #al_morehelp}
 {: faq}
 
-  1. See the [Steps to Link your IaaS and PaaS Accounts blog](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") for helpful information.
+  1. See the [Steps to Link your IaaS and PaaS Accounts blog](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") for more information.
   2. From the {{site.data.keyword.BluSoftlayer_full}} customer portal, open a **Sales Live Chat** to ask account questions.
   3. Open a ticket from the customer portal. Select **Support** > **Add ticket** and then, in the **Subject** field, select **Accounting Request** to route your account question to the correct support team.
 
@@ -289,9 +289,9 @@ To transfer ownership of your entire account, update your [company profile](http
 {: #change-profile-settings}
 {: faq}
 
-You can change your personal information, such as name, email, or phone number, by going to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) **>  Profile and settings**. You can't change your IBMid, but you can create a new one if appropriate. The [IBMid worldwide help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html) is available to help with general ID questions not related to your {{site.data.keyword.Bluemix_notm}} account.
+You can change your personal information, such as name, email, or phone number, by going to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) **>  Profile and settings**. You can't change your IBMid, but you can create a new one if appropriate. The [IBMid worldwide help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html) is available to help with general ID questions that aren't specific to your {{site.data.keyword.Bluemix_notm}} account.
 
-## How do I change the language associated with my account?
+## How do I change my account language?
 {: #switch-account-lang}
 {: faq}
 

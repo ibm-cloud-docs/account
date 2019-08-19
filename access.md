@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-07-31"
 
 keywords: user access, IBM Cloud account access, account owner, delegating access, confirming access
 
@@ -23,7 +23,7 @@ As an {{site.data.keyword.Bluemix}} account owner, you can assign, delegate, and
 ## Delegating access
 {: #get-access}
 
-You can delegate access on your account to control what users can see and to control how much authority those users have. For example, some information might only be appropriate for one users to read and analyze, whereas another another might be given the authority to edit that information. To delegate account access to another user in the account, complete the following steps.
+You can delegate access on your account to control what users can see and to control how much authority those users have. For example, some information might only be appropriate for one user to read and analyze, whereas another might be given the authority to edit that information. To delegate account access to another user in the account, complete the following steps.
 
 1. Click **Manage** > **Access (IAM)**.
 2. Click **Access starts with the user** on the landing page.

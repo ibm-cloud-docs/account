@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-29"
+lastupdated: "2019-08-19"
 
 keywords: troubleshoot account, account problem, account support, account help, org error, resource error, error message
 
@@ -36,7 +36,7 @@ You're unable to create a new location because your account type doesn't allow i
 You receive an error message when you try to create a new {{site.data.keyword.Bluemix_notm}} location.
 {: tsSymptoms}
 
-This is likely because you're using a Lite account, which supports development in one public location only. For more information about Lite account features, see [Lite account](/docs/account?topic=account-accounts#liteaccount).
+This error typically occurs because you're using a Lite account, which supports development in one public location only. For more information about Lite account features, see [Lite account](/docs/account?topic=account-accounts#liteaccount).
 {: tsCauses}
 
 To access more locations, upgrade to a billable account. Go to **Manage > Account**, and select **Account settings**. In the Account upgrade section, select your upgrade option.
@@ -83,7 +83,7 @@ If you don't want to upgrade from a Lite account and are no longer using your ex
 {: #noruntimemem}
 {: troubleshoot}
 
-You've gone over the allowed memory for your account.
+You went over the allowed memory for your account.
 
 You're unable to deploy apps, and an error states that you've exceeded your organization's memory limit.
 {: tsSymptoms}
@@ -153,7 +153,7 @@ If you can't invite users to your organization and need a different role to do s
 
 If you can't invite users because you're a collaborator and not a member, you must delete your previous {{site.data.keyword.Bluemix_notm}} account and then be invited to join the account as a member of the organization. To delete your previous account and join the account as a member, complete the following steps:
 
-  1. Contact [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/unifiedsupport/supportcenter){: new_window} to open a support case and request that your account be deleted. If you have data that is associated with your old account that you want to save and move to the new account, include this information in your email.
+  1. Contact [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/unifiedsupport/supportcenter){: new_window} to open a support case and request to delete your account. If you have data that is associated with your old account that you want to save and move to the new account, include this information in your email.
   2. After your account is deleted, have a user with the organization manager role invite you to the organization as an organization manager. Then, sign up for {{site.data.keyword.Bluemix_notm}} from the invitation.
 
 
@@ -176,7 +176,7 @@ To create a space, use one of the following methods:
 
   * From the console menu bar, click **Manage > Account**. Expand **Account resources** and click **Cloud Foundry orgs**.
   Then, select the organization in which you want to create the space, and click **Add a space**.
-  * In the {{site.data.keyword.Bluemix_notm}} command line interface, type `ibmcloud account space-create <space_name> -o <organization_name>`.
+  * In the {{site.data.keyword.Bluemix_notm}} command-line interface, enter `ibmcloud account space-create <space_name> -o <organization_name>`.
 
 
 ## Why do some apps share a domain name?
@@ -206,7 +206,7 @@ As an administrator, you can't view all the organizations from the console.
 This behavior is a limitation of the console.
 {: tsCauses}
 
-You can use commands such as `ibmcloud account orgs` and `ibmcloud account org-create` from the {{site.data.keyword.Bluemix_notm}} command line interface to manage all the organizations. For a full list of commands, enter `ibmcloud account help`.
+You can use commands such as `ibmcloud account orgs` and `ibmcloud account org-create` from the {{site.data.keyword.Bluemix_notm}} command-line interface to manage all the organizations. For a full list of commands, enter `ibmcloud account help`.
 {: tsResolve}
 
 
@@ -241,15 +241,16 @@ When you try to enter your credit card information, you see the following messag
 
 You click **Explore** to access the ibm.com website, but you don't see a location to enter your credit card information.
 
-We securely process credit card transactions through the {{site.data.keyword.Bluemix_notm}} console. However, in some countries, we must take additional steps to ensure the integrity of the credit card data. Those credit card requests are completed through the ibm.com website. Both methods ensure that your credit card information is securely processed.   
+Credit card transactions are securely processed through the {{site.data.keyword.Bluemix_notm}} console. However, in some countries, extra steps are taken to ensure the integrity of the credit card data. Those credit card requests are completed through the ibm.com website. Both methods ensure that your credit card information is securely processed.   
 {: tsCauses}
 
 To provide your credit card information for payment, complete the following steps:
 {: tsResolve}
 
   1. Go to [ibm.com ![External link icon](../icons/launch-glyph.svg "External link icon")](http://www.ibm.com){: new_window} and log in with the same IBMid and password that you use to log in to {{site.data.keyword.Bluemix_notm}}.
-  1. Click the Avatar icon ![Avatar icon](../icons/i-avatar-icon.svg), and select **Billing**.
+  1. Click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg), and select **Billing**.
   1. Click **Manage payment method**.
   1. Enter your credit card information, and click **Register**.
 
-The information will be verified and added to your {{site.data.keyword.Bluemix_notm}} account as your payment method for any charges.
+The information is verified and added to your {{site.data.keyword.Bluemix_notm}} account as your payment method for any charges.
+

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-08-06"
+lastupdated: "2019-08-19"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -57,7 +57,7 @@ If you sign in to {{site.data.keyword.Bluemix_notm}} and the log in process is d
 {: #ts_old_username}
 {: troubleshoot}
 
-To successfully log in to the {{site.data.keyword.Bluemix_notm}} console, make sure you have IBMid authentication for each account.
+To successfully log in to the {{site.data.keyword.Bluemix_notm}} console, make sure that you have IBMid authentication for each account.
 
 When you log in to the console, the following message is displayed:
 {: tsSymptoms}
@@ -83,10 +83,10 @@ When you log in to {{site.data.keyword.Bluemix_notm}}, the following message is 
 
 `You have reached this page because your authentication was successful, however, this IBMid is not associated with any {{site.data.keyword.Bluemix_notm}} accounts.`
 
-You logged in from the [{{site.data.keyword.Bluemix_notm}} console](https://{DomainName}){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") with a valid IBMid, but you don't have an {{site.data.keyword.Bluemix_notm}} account created.
+You logged in from the [{{site.data.keyword.Bluemix_notm}} console](https://{DomainName}){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") with a valid IBMid, but you don't have an {{site.data.keyword.Bluemix_notm}} account.
 {: tsCauses}
 
-To create an {{site.data.keyword.Bluemix_notm}} account, follow the sign up process.
+Create an {{site.data.keyword.Bluemix_notm}} account by following the sign-up process.
 {: tsResolve}
 
 
@@ -123,7 +123,7 @@ Make sure you can log in to [IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/auth
 {: #ts_accntpding}
 {: troubleshoot}
 
-If your account is still pending, you won't be able to log in to {{site.data.keyword.Bluemix_notm}}.
+If your account is still pending, you can't log in to {{site.data.keyword.Bluemix_notm}}.
 
 After you register for an {{site.data.keyword.Bluemix_notm}} account, you might not be able to log in to {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
@@ -162,8 +162,8 @@ Complete one or more of the following actions, as necessary:
   * Log out of {{site.data.keyword.Bluemix_notm}} and log in again.
   * Use the private browsing mode of your browser.
   * Clear the cookies and the cache of the browser.
-  * Use a different browser. For information about the versions of the browsers that are supported by {{site.data.keyword.Bluemix_notm}}, see [{{site.data.keyword.Bluemix_notm}} prerequisites](/docs/overview?topic=overview-prereqs-platform).
-  * If you installed the Cloud Foundry command line interface, enter the `ibmcloud cf apps` command to see whether your app is running.
+  * Use a different browser. For more information about browsers that are supported by {{site.data.keyword.Bluemix_notm}}, see [{{site.data.keyword.Bluemix_notm}} prerequisites](/docs/overview?topic=overview-prereqs-platform).
+  * If you installed the Cloud Foundry command-line interface, enter the `ibmcloud cf apps` command to see whether your app is running.
 
 ## How can I access infrastructure services in my account?
 {: #troubleshoot-infrastructure-access}
@@ -181,5 +181,5 @@ There are multiple reasons why the message is displayed:
 * Your account is not linked to an infrastructure account.
 
 
-To resolve this issue, you must upgrade to a Pay-As-You-Go or Subscription account. For information, see [Upgrading your account](/docs/account?topic=account-upgrading-account).
+To resolve this issue, you must upgrade to a Pay-As-You-Go or Subscription account. For more information, see [Upgrading your account](/docs/account?topic=account-upgrading-account).
 {: tsResolve}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-08-05"
+lastupdated: "2019-08-19"
 
 keywords: enterprise, enterprise resources, enterprise account
 
@@ -27,7 +27,7 @@ These best practices provide you with the basic building blocks for setting up a
 ## Organizing accounts according to how you want to track billing
 {: #organize-enterprise-usage}
 
-A key benefit of {{site.data.keyword.cloud_notm}} enterprises is that they enable you to centrally view and manage billing and usage across multiple accounts. This capability's usefulness is dependent on your enterprise structure, because usage data is aggregated by each account group and account. Create account groups for projects that function under a common budget. See [How can I use an enterprise?](/docs/account?topic=account-enterprise#enterprise-use-cases) for examples.
+A key benefit of {{site.data.keyword.cloud_notm}} enterprises is that they enable you to centrally view and manage billing and usage across multiple accounts. This capability's usefulness is dependent on your enterprise structure because usage data is aggregated by each account group and account. Create account groups for projects that function under a common budget. See [How can I use an enterprise?](/docs/account?topic=account-enterprise#enterprise-use-cases) for examples.
 
 The enterprise administrator or your financial officer might not be familiar with each individual account or account group. To make it easier to identify their purpose, give each account and account group a human-readable name. If your company uses billing codes, you can also incorporate them into the name. For example, instead of a `devteam` account group with `fed ui` and `be api` accounts, create the `Development - A2B3` account group with `Front-end UI team` and `Back-end API team` accounts.
 
@@ -46,7 +46,7 @@ When you set up your enterprise, you create an enterprise hierarchy that reflect
 
 For example, your company might create accounts for each team, with resource groups or Cloud Foundry orgs within the account for development, testing, and production environments. Another company might have distinct accounts for each environment, which are grouped into account groups for each team.
 
-However you choose to structure your enterprise, be as consistent as possible to simplify enterprise management. Because it's easy to create and keep track of new accounts, it can be tempting to create a lot of separate accounts as users request them. However, each account introduces additional management overhead. As you plan how to structure your enterprise, keep in mind the following points:
+However you choose to structure your enterprise, be as consistent as possible to simplify enterprise management. Because it's easy to create and keep track of new accounts, it can be tempting to create many separate accounts as users request them. However, each account introduces more management overhead. As you plan how to structure your enterprise, keep in mind the following points:
 - For each account that you create, users must be invited and their access must be managed separately.
 - An inconsistent structure can make it harder to determine who to give access within each account and which teams are using resources.
 - Users can collaborate on resources and services within an individual account only. Resources can't be moved between accounts.
@@ -54,9 +54,9 @@ However you choose to structure your enterprise, be as consistent as possible to
 ## Setting up access policies in an enterprise
 {: #access-enterprise}
 
-As always, follow the best practice for assigning the minimal number of access policies and levels of access. This enables you to spend less time assigning access to users and more time focusing on developing in {{site.data.keyword.cloud_notm}}, while ensuring that you don't provide too much access to users who don't need it.
+As always, follow the best practice for assigning the minimal number of access policies and levels of access. By using these techniques, you spend less time assigning access to users and more time on developing in {{site.data.keyword.cloud_notm}} while ensuring that you don't provide too much access to users who don't need it.
 
-Access groups are a useful tool for assigning access to a group of users and service IDs that all need the same access. By using access groups, you can streamline access management by assigning the minimal number of access policies to groups of users. As an example, if you have five users that you want to manage all of the billing and account management-related tasks for the enterprise, you can add them to an access group that is called `Administrators`. In the access group, you can assign two policies: one with the administrator role on the Billing account management service and one with the administrator role on all account management services in the account. As users change job responsibilities or teams, you can add or remove users from the access group instead of adding or removing the same policies from the individual users. See [Assigning enterprise access](/docs/iam?topic=iam-assign-access-enterprise) for more information.
+Access groups are a useful tool for assigning access to a group of users and service IDs that all need the same access. By using access groups, you can streamline access management by assigning the minimal number of access policies to groups of users. As an example, if you have five users that you want to manage all of the billing and account management-related tasks for the enterprise, you can add them to an `Administrators` access group. In the access group, you can assign two policies: one with the administrator role on the Billing account management service and one with the administrator role on all account management services in the account. As users change job responsibilities or teams, you can add or remove users from the access group instead of adding or removing the same policies from the individual users. See [Assigning enterprise access](/docs/iam?topic=iam-assign-access-enterprise) for more information.
 
 ## Working with resources in an enterprise
 {: #child-resources-enterprise}

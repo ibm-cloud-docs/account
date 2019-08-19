@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-08-19"
 
 keywords: create account, IBMid, sign up for account, sign up
 
@@ -32,7 +32,7 @@ You can sign up for an {{site.data.keyword.Bluemix}} account by using your exist
 ## Signing up with a new or existing IBMid
 {: #signup-ibmid}
 
-If you're not part of a company that uses federated IDs, you'll sign up for {{site.data.keyword.Bluemix_notm}} with an IBMid.
+If you're not part of a company that uses federated IDs, sign up for {{site.data.keyword.Bluemix_notm}} with an IBMid.
 
 1. Go to the [{{site.data.keyword.Bluemix_notm}} login page](https://cloud.ibm.com/){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon"), and click **Create an {{site.data.keyword.Bluemix_notm}} account**.
 1. Enter your IBMid email address. If you don't have an existing IBMid, an ID is created based on the email that you enter.
@@ -44,7 +44,7 @@ If you encounter any issues logging in with your new account, see [Troubleshooti
 ## Signing up with a federated ID
 {: #signup-federated}
 
-A federated ID is an ID within a company's domain that is registered with IBM so that the domain and user credentials can be used to access IBM web applications. You can sign up for {{site.data.keyword.Bluemix_notm}} with a federated ID only if your company is already registered with IBM. Registering a company's domain with IBM enables users to log in to IBM products and services by using their existing company user credentials. Authentication is then handled by your company's identity provider using SSO.
+A federated ID is an ID within a company's domain that is registered with IBM so that the domain and user credentials can be used to access IBM web applications. You can sign up for {{site.data.keyword.Bluemix_notm}} with a federated ID only if your company is already registered with IBM. Registering a company's domain with IBM enables users to log in to IBM products and services by using their existing company user credentials. Authentication is then handled by your company's identity provider through single sign-on (SSO).
 
 IBM uses the Security Assertion Markup Language 2.0 (SAML 2.0) for this identity federation. SAML 2.0 is a standard version for exchanging authentication data between security domains. It's an XML-based protocol that uses a security token that contains assertions to pass information between the organizations "Identity Provider", and the "IBM Rely Party (RP)", otherwise known as the Service Provider.
 
@@ -53,4 +53,4 @@ For information about how to register your company for a federated ID, see the [
 ### Logging in with a federated ID
 {: #login-federated}
 
-When you log in to the {{site.data.keyword.Bluemix_notm}} console with a federated ID, you're prompted to log in through your company's login page. If you log in through a CLI, you'll need to specify additional parameters to authenticate. For more information, see [Logging in with a federated ID](/docs/iam?topic=iam-federated_id).
+When you log in to the {{site.data.keyword.Bluemix_notm}} console with a federated ID, you're prompted to log in through your company's login page. If you log in through a CLI, you need to specify extra parameters to authenticate. For more information, see [Logging in with a federated ID](/docs/iam?topic=iam-federated_id).
