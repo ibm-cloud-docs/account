@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-25"
+lastupdated: "2019-08-09"
 
 keywords: enterprise, enterprise account, video, what is an enterprise, introduction, intro
 
@@ -16,6 +16,7 @@ subcollection: account
 {:important: .important}
 {:tip: .tip}
 {:note: .note}
+{:script: data-hd-video='script'}
 
 # Video - Einführung in {{site.data.keyword.Bluemix_notm}}-Unternehmen
 {: #enterprise-video}
@@ -28,7 +29,9 @@ Mit einem {{site.data.keyword.Bluemix}}-Unternehmen können Sie die Abrechnung z
 </div>
 
 ## Videomitschrift
-{: #video-transcript}
+{: #video-transcript-enterprise}
+{: script}
+{: notoc}
 
 Ihr {{site.data.keyword.Bluemix_notm}}-Konto ist Ihre Ausgangsposition für die Zusammenarbeit in der Cloud. Wenn Sie Cloud-Workload zunimmt, verwenden Sie möglicherweise mehrere {{site.data.keyword.Bluemix_notm}}-Konten. Beispielsweise kann es in Ihrem Unternehmen viele Teams geben, die jeweils ein oder mehr eigene Konten für Entwicklungs-, Test- und Produktionsumgebungen besitzen. Oder Sie isolieren bestimmte Workloads in separaten Konten, um Sicherheits- oder Compliance-Richtlinien zu erfüllen. Wenn die Anzahl der Konten wächst, kann es schwieriger werden, die Ressourcennutzung und die damit verbundenen Kosten zu verfolgen.
 
@@ -38,4 +41,4 @@ Die konsolidierte Abrechnung vereinfacht die Rechnungsstellung und Bezahlung inn
 
 Wenn Sie genauer untersuchen wollen, wohin Ihre Zahlungen gehen, können Sie das tun. Unternehmen bieten Nutzungsberichte mit ansteigendem Detaillierungsgrad, sodass Sie die Kosten für die Nutzung in Ihren Konten und Kontogruppen analysieren können. Sie erhalten Transparenz von der Unternehmensebene bis zum Ressourcentyp in jedem Konto.
 
-Sie haben die Möglichkeit zu wählen, ob Sie Ihre Cloud über die {{site.data.keyword.Bluemix_notm}}-Konsole, die CLI oder die leistungsfähigen APIs verwalten - entsprechend Ihren Anforderungen und Ihrem Arbeitsstil. Unter https://cloud.ibm.com/enterprise finden Sie weitere Informationen und können mit dem Erstellen eines Unternehmens beginnen.
+Sie haben die Möglichkeit zu wählen, ob Sie Ihre Cloud über die {{site.data.keyword.Bluemix_notm}}-Konsole, die CLI oder die leistungsfähigen APIs verwalten - entsprechend Ihren Anforderungen und Ihrem Arbeitsstil. Unter `https://cloud.ibm.com/enterprise` finden Sie weitere Informationen und können mit dem Erstellen eines Unternehmens beginnen. 

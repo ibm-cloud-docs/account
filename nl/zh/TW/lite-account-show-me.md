@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-11-19"
+lastupdated: "2019-07-09"
 
 keywords: free account, Lite account, free service, sign up for account, Lite account video
 
@@ -17,6 +17,7 @@ subcollection: account
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:download: .download}
+{:script: data-hd-video='script'}
 
 # 影片 - {{site.data.keyword.cloud_notm}} Lite account
 {: #show_me_video}
@@ -25,13 +26,15 @@ subcollection: account
 {: shortdesc}
 
 <p>
-  <div class="embed-responsive embed-responsive-16by9">
+  <div class="embed-responsive embed-responsive-16by9" data-hd-video="video">
     <iframe class="embed-responsive-item" id="youtubeplayer" title="IBM Cloud Lite account" type="text/html" width="640" height="390" src="https://www.youtube.com/embed/0rMYXcbpHbI" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
   </div>
 </p>
 
 ## 視訊記錄
 {: #transcript-lite-account}
+{: script}
+{: notoc}
 
 下一節將為可能需要替代格式或翻譯版本的使用者，提供精簡帳戶影像的記錄。
 

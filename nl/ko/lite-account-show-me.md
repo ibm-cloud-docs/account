@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-11-19"
+lastupdated: "2019-07-09"
 
 keywords: free account, Lite account, free service, sign up for account, Lite account video
 
@@ -17,6 +17,7 @@ subcollection: account
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:download: .download}
+{:script: data-hd-video='script'}
 
 # 동영상 - {{site.data.keyword.cloud_notm}} Lite 계정
 {: #show_me_video}
@@ -25,13 +26,15 @@ Lite 계정은 영구 무료 계정입니다. Lite 계정에서는 무엇이 제
 {: shortdesc}
 
 <p>
-  <div class="embed-responsive embed-responsive-16by9">
+  <div class="embed-responsive embed-responsive-16by9" data-hd-video="video">
     <iframe class="embed-responsive-item" id="youtubeplayer" title="IBM Cloud Lite 계정" type="text/html" width="640" height="390" src="https://www.youtube.com/embed/0rMYXcbpHbI" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
   </div>
 </p>
 
 ## 동영상 대본
 {: #transcript-lite-account}
+{: script}
+{: notoc}
 
 다음 절에서는 대체 형식 또는 번역된 버전이 필요한 사용자를 위해 Lite 계정 동영상의 대본을 제공합니다.
 

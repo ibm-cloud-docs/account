@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-25"
+lastupdated: "2019-08-09"
 
 keywords: enterprise, enterprise account, video, what is an enterprise, introduction, intro
 
@@ -16,6 +16,7 @@ subcollection: account
 {:important: .important}
 {:tip: .tip}
 {:note: .note}
+{:script: data-hd-video='script'}
 
 # Vídeo - Introducción a las empresas de {{site.data.keyword.Bluemix_notm}}
 {: #enterprise-video}
@@ -28,7 +29,9 @@ Con una empresa de {{site.data.keyword.Bluemix}}, puede gestionar de forma centr
 </div>
 
 ## Transcripción del vídeo
-{: #video-transcript}
+{: #video-transcript-enterprise}
+{: script}
+{: notoc}
 
 Su cuenta de {{site.data.keyword.Bluemix_notm}} es su inicio para colaborar en la nube. A medida que escala la carga de trabajo de la nube, es posible que encuentre que está gestionando varias cuentas de {{site.data.keyword.Bluemix_notm}}. Por ejemplo, su empresa puede tener muchos equipos, cada uno de ellos con una o más cuentas propias para entornos de desarrollo, prueba y producción. O bien, puede aislar determinadas cargas de trabajo en cuentas independientes para cumplir las directrices de seguridad o de conformidad. A medida que crece el número de cuentas, puede ser más difícil realizar un seguimiento del uso de recursos y de los costes asociados.
 
@@ -38,4 +41,4 @@ La facturación consolidada simplifica la facturación y el pago dentro de la em
 
 Si desea ver más detalles para ver a dónde va su dinero, puede hacerlo. Las empresas proporcionan informes de uso de arriba abajo para que pueda analizar los costes de uso de sus cuentas y grupos de cuentas. Puede ver desde el nivel de empresa hasta el tipo de recurso de cada cuenta.
 
-Tanto si prefiere gestionar la nube mediante la consola de {{site.data.keyword.Bluemix_notm}}, la CLI, o nuestras robustas API, tenemos la funcionalidad que mejor se ajusta a su forma de trabajar. Obtenga más información y empiece a crear su empresa en https://cloud.ibm.com/enterprise.
+Tanto si prefiere gestionar la nube mediante la consola de {{site.data.keyword.Bluemix_notm}}, la CLI, o nuestras robustas API, tenemos la funcionalidad que mejor se ajusta a su forma de trabajar. Obtenga más información y empiece a crear su empresa en `https://cloud.ibm.com/enterprise`.

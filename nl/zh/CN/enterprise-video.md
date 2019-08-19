@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-25"
+lastupdated: "2019-08-09"
 
 keywords: enterprise, enterprise account, video, what is an enterprise, introduction, intro
 
@@ -16,6 +16,7 @@ subcollection: account
 {:important: .important}
 {:tip: .tip}
 {:note: .note}
+{:script: data-hd-video='script'}
 
 # 视频 - {{site.data.keyword.Bluemix_notm}} 企业简介
 {: #enterprise-video}
@@ -28,7 +29,9 @@ subcollection: account
 </div>
 
 ## 视频抄本
-{: #video-transcript}
+{: #video-transcript-enterprise}
+{: script}
+{: notoc}
 
 您的 {{site.data.keyword.Bluemix_notm}} 帐户是您在云中进行协作的根据地。在扩展云工作负载时，您可能会发现要管理多个 {{site.data.keyword.Bluemix_notm}} 帐户。例如，您的公司可能有多个团队，每个团队有一个或多个自己的帐户用于开发、测试和生产环境。或者，您可能在单独的帐户中隔离某些工作负载，以满足安全性或合规性准则。随着帐户数量的增长，跟踪资源使用情况和关联成本可能变得更加困难。
 
@@ -38,4 +41,4 @@ subcollection: account
 
 如果您想深入研究详细信息，以了解资金的流向，也完全可以做到这一点。企业提供自顶向下使用情况报告，供您分析帐户和帐户组中的使用成本。您可以从企业级别向下查看每个帐户中的资源类型。
 
-无论您是希望通过 {{site.data.keyword.Bluemix_notm}} 控制台、CLI 还是稳健的 API 来管理云，我们都能适应您的工作方式。请在 https://cloud.ibm.com/enterprise 上了解更多信息并开始创建企业。
+无论您是希望通过 {{site.data.keyword.Bluemix_notm}} 控制台、CLI 还是稳健的 API 来管理云，我们都能适应您的工作方式。在 `https://cloud.ibm.com/enterprise` 了解更多信息并开始创建企业。

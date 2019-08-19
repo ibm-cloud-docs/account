@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-11-19"
+lastupdated: "2019-07-09"
 
 keywords: free account, Lite account, free service, sign up for account, Lite account video
 
@@ -17,6 +17,7 @@ subcollection: account
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:download: .download}
+{:script: data-hd-video='script'}
 
 # Vídeo - Cuenta Lite de {{site.data.keyword.cloud_notm}}
 {: #show_me_video}
@@ -25,13 +26,15 @@ La cuenta Lite es nuestra cuenta gratuita que nunca caduca. ¿Qué ofrece una cu
 {: shortdesc}
 
 <p>
-  <div class="embed-responsive embed-responsive-16by9">
+  <div class="embed-responsive embed-responsive-16by9" data-hd-video="video">
     <iframe class="embed-responsive-item" id="youtubeplayer" title="Cuenta Lite de IBM Cloud" type="text/html" width="640" height="390" src="https://www.youtube.com/embed/0rMYXcbpHbI" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
   </div>
 </p>
 
 ## Transcripción del vídeo
 {: #transcript-lite-account}
+{: script}
+{: notoc}
 
 La sección siguiente proporciona la transcripción de este vídeo de cuenta Lite para los usuarios que necesiten un formato alternativo o una versión traducida.
 
