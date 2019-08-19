@@ -20,7 +20,7 @@ subcollection: account
 # FAQs for accounts
 {: #accountfaqs}
 
-FAQs for your {{site.data.keyword.cloud}} might include questions about Lite accounts, reassigning users, account errors, or account tags. To find all FAQs for {{site.data.keyword.cloud_notm}}, see our [FAQ library](https://{DomainName}/docs/faqs).
+FAQs for your {{site.data.keyword.cloud}} account might include questions about Lite accounts, reassigning users, account errors, or account tags. To find all FAQs for {{site.data.keyword.cloud_notm}}, see our [FAQ library](https://{DomainName}/docs/faqs).
 {: shortdesc}
 
 ## How do I create an account?

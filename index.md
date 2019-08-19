@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-08-02"
+lastupdated: "2019-08-19"
 
-keywords: account types, Lite, free account, paid account, buy account, account difference, compare account, subscription, service bundle
+keywords: account types, Lite, free account, trial account, paid account, buy account, account difference, compare account, subscription
 
 subcollection: account
 
@@ -20,7 +20,7 @@ subcollection: account
 # Account types
 {: #accounts}
 
-{{site.data.keyword.Bluemix_notm}} has three different account types: Lite, Pay-As-You-Go, and Subscription. You get a free Lite account as soon as you sign up. Pay-As-You-Go and Subscription are our billable account options, each offering different features. Compare each account and choose the one that best suits your needs.
+{{site.data.keyword.Bluemix}} has three different account types: Lite, Pay-As-You-Go, and Subscription. You get a free Lite account as soon as you sign up. Pay-As-You-Go and Subscription are billable account options and each offer different features. Compare each account and choose the one that best suits your needs.
 {:shortdesc}
 
 ## Comparing accounts
@@ -30,7 +30,7 @@ The following table provides a comparison of Lite, Pay-As-You-Go, and Subscripti
 
 |                                         | Lite               | Pay-As-You-Go      | Subscription       |
 |-----------------------------------------|--------------------|--------------------|--------------------|
-| **Access to free Cloud Foundry memory** | 256 MB             | 512 MB             | 512 MB             |
+| **Free Cloud Foundry memory** | 256 MB             | 512 MB             | 512 MB             |
 | **Access to [Lite service plans ![External link icon](../icons/launch-glyph.svg "External link icon")](https://{DomainName}/catalog/?search=label:lite){: new_window}** | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | **Access to all free plans**            |                    | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | **Access to the full {{site.data.keyword.Bluemix_notm}} catalog** |  | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-07-12"
+lastupdated: "2019-08-19"
 
 keywords: update orgs, update spaces, quotas, Cloud Foundry orgs, domains
 
@@ -21,7 +21,7 @@ subcollection: account
 # Updating orgs and spaces
 {: #orgupdates}
 
-As an {{site.data.keyword.Bluemix}} account owner or organization manager, you can perform management tasks at the organization level and the space level. These tasks include renaming an organization or space, assigning or updating Cloud Foundry users roles, managing domains, and viewing organization quota details.
+As an {{site.data.keyword.Bluemix}} account owner or Cloud Foundry organization manager, you can perform management tasks at the org level and the space level. These tasks include renaming an org or space, assigning or updating Cloud Foundry users' roles, managing domains, and viewing org quota details.
 {:shortdesc}
 
 Go to **Manage > Account**, and select **Cloud Foundry orgs**.

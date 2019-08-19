@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-07-25"
+lastupdated: "2019-08-19"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -20,6 +20,9 @@ subcollection: account
 
 # FAQs for enterprises
 {: #enterprise-faqs}
+
+FAQs for your {{site.data.keyword.cloud}} enterprise might include questions about importing accounts, moving accounts and account groups, and inviting users to your enterprise. To find all FAQs for {{site.data.keyword.cloud_notm}}, see our [FAQ library](https://{DomainName}/docs/faqs).
+{: shortdesc}
 
 ## Can I import a Lite account into an enterprise?
 {: #lite-to-enterprise}

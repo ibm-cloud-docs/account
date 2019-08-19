@@ -19,7 +19,7 @@ subcollection: account
 # Adding orgs and spaces
 {: #orgsspacesusers}
 
-As an {{site.data.keyword.Bluemix}} account owner, you can add orgs and spaces to your account. If you're an organization manager, you can manage the orgs in the account.
+As an {{site.data.keyword.Bluemix}} account owner, you can add Cloud Foundry orgs and spaces to your account. If you're an organization manager, you can manage the orgs in the account.
 {:shortdesc}
 
 ## Cloud Foundry org concepts
@@ -43,7 +43,7 @@ Orgs can span multiple regions, and they are defined by the following items:
 <dd>Provide the route on the internet that is allocated to the org. A route has a subdomain and a domain. A subdomain is typically the application name. A domain might be a system domain or a custom domain that you registered for your application.<br/>
 <p>If you add a custom domain, you must configure your DNS server to resolve your custom domain to point to the {{site.data.keyword.Bluemix_notm}} system domain. In this way, when {{site.data.keyword.Bluemix_notm}} receives a request for your custom domain, it can properly route it to your application.</p></dd>
 <dt>Quota</dt>
-<dd>Represents the resources that are available to an org, including the number of services and the amount of memory that can be allocated for use by the org. Quotas are assigned when orgs are created. Any application or service in a space within an  org contributes to the usage of the quota. With Pay-As-You-Go or Subscription accounts, you can adjust your quota for Cloud Foundry applications and containers as the needs of your org change.</dd>
+<dd>Represents the resources that are available to an org, including the number of services and the amount of memory that can be allocated for use by the org. Quotas are assigned when orgs are created. Any application or service in a space within an org contributes to the usage of the quota. With Pay-As-You-Go or Subscription accounts, you can adjust your quota for Cloud Foundry applications and containers as the needs of your org change.</dd>
 </dl>
 
 In a Subscription account, the quota is a user-defined limit that initiates spending notifications.

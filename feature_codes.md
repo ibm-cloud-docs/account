@@ -17,7 +17,7 @@ subcollection: account
 {:important: .important}
 {:note: .note}
 
-# Applying feature codes
+# Applying feature codes to Lite accounts
 {: #codes}
 
 If you have a Lite account, you can apply feature codes to take advantage of extra {{site.data.keyword.Bluemix}} resources or capabilities. Feature codes are typically provided for certain events, such as educational sessions or conference workshops.
