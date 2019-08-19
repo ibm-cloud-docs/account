@@ -41,4 +41,4 @@ Consolidated billing simplifies invoicing and payment within your enterprise. Us
 
 If you want to dive into the details to see where your money is going, you can do that. Enterprises provide top-down usage reporting so you can analyze costs for usage in your accounts and account groups. You have visibility from the enterprise level down to the resource type in each account.
 
-Whether you prefer to manage your cloud through the {{site.data.keyword.Bluemix_notm}} console, the CLI, or our robust APIs, we have the capability to fit your work style. Learn more and start creating your enterprise at `https://cloud.ibm.com/enterprise`.
+Whether you prefer to manage your cloud through the {{site.data.keyword.Bluemix_notm}} console, the CLI, or our robust APIs, we have the capability to fit your work style. Learn more and start creating your enterprise at https://cloud.ibm.com/enterprise.
