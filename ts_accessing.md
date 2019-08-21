@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-08-19"
+lastupdated: "2019-08-20"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -119,19 +119,19 @@ Make sure you can log in to [IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/auth
 {: tsResolve}
 
 
-## Why can't I log in immediately after I register an account?
+## Why can't I log in immediately after I create an account?
 {: #ts_accntpding}
 {: troubleshoot}
 
 If your account is still pending, you can't log in to {{site.data.keyword.Bluemix_notm}}.
 
-After you register for an {{site.data.keyword.Bluemix_notm}} account, you might not be able to log in to {{site.data.keyword.Bluemix_notm}}.
+After you create an {{site.data.keyword.Bluemix_notm}} account, you might not be able to log in to {{site.data.keyword.Bluemix_notm}}. You see the message, `Your account is pending`.
 {: tsSymptoms}
 
-When you register for an {{site.data.keyword.Bluemix_notm}} account, you receive an email that includes a confirmation link. You must click this link to confirm your registration. If you don't confirm your registration, your account remains in a pending state.
+When you sign up for an {{site.data.keyword.Bluemix_notm}} account, you receive an email that includes a confirmation link. You must click this link to confirm your account. If you don't confirm your account, the account remains in a pending state.
 {: tsCauses}
 
-The confirmation email is sent to the email address that is associated with your IBMid. Check your inbox and your spam folder. If you haven't received the confirmation email, go to the [{{site.data.keyword.Bluemix_notm}} login page](https://cloud.ibm.com/){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") and try to log in. The following message is displayed:
+The confirmation email is sent to the email address that is associated with your IBMid. If you cannot find the confirmation email, go to the [{{site.data.keyword.Bluemix_notm}} login page](https://cloud.ibm.com/){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") and try to log in. The following message is displayed:
 {: tsResolve}
 
 ```
@@ -140,7 +140,31 @@ Can't find the email? Resend.
 ```
 {:screen}
 
-Click **Resend** to send another confirmation email to the email address that is associated with your IBMid. If you still can't complete your registration, contact [{{site.data.keyword.Bluemix_notm}} Support](/docs/get-support?topic=get-support-getting-customer-support).  
+Click **Resend** to send another confirmation email to the email address that is associated with your IBMid. 
+
+If you receive the email but the confirmation link doesn't work, it might be a problem with your web browser. You can troubleshoot potential browser problems by clearing cache and cookies in the browser, by using a private or incognito window, or by using a browser on a different computer or device.
+
+## Why didn’t I receive the confirmation email for creating my account?
+{: #ts_email}
+{: troubleshoot}
+
+You didn't receive the confirmation email to activate your account.
+{: tsSymptoms}
+
+Your email client or email server might be blocking the email.
+{: tsCauses}
+
+Check your inbox and your spam folder for the email. The confirmation email is sent from the `ibmacct@iam.ibm.com` email address, and the subject begins with "Action Required!"
+{: tsResolve}
+
+  * Check for filters or settings in your email program that delete email or route email to a location other than your inbox. 
+  * Make sure your spam filter or security software is allowing emails with links through to your email address.
+  * Contact your email provider or administrator to ask them to check for any configuration that blocks email from `ibmacct@iam.ibm.com`.
+
+After you unblock the confirmation email, go to the [{{site.data.keyword.Bluemix_notm}} console](https://{DomainName}){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") and log in. Click **Resend** to send another confirmation email to the email address that is associated with your IBMid.
+
+If you still can't activate your account, contact [{{site.data.keyword.Bluemix_notm}} Support](/docs/get-support?topic=get-support-getting-customer-support).  
+
 
 ## Why do I encounter console pages that don't load?
 {: #ts_err}

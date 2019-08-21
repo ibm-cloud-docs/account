@@ -477,6 +477,14 @@
       "can't get into my account after signing up",
       "Your account is pending"
     ],
+    "ts_email": [
+      "Your account is pending",
+      "confirmation email",
+      "did not get email",
+      "activation email",
+      "no confirmation email",
+      "signup email"
+    ],
     "ts_err": [
       "pages that don't load",
       "broken pages on console",
