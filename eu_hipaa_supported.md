@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-08-30"
 
 keywords: GDPR, HIPAA, data security, PHI, europe
 
@@ -35,7 +35,7 @@ By enabling this setting, EU supported services have strict access controls to e
   3. Read the information about enabling the setting, and select **I understand and agree to these terms**.
   4. Click **On**.
 
-   After you enable the EU Supported setting, you can use the EU Supported tag to search the catalog for offerings that have EU-supported plans.
+   After you enable the EU Supported setting, you can use the EU Supported tag to search the catalog for offerings that have EU-supported plans. See [Requesting support for resources in the European Union](/docs/get-support?topic=get-support-getting-customer-support#eusupported) for more information.
 
 
 ## Enabling the HIPAA Supported setting
