@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-26"
+lastupdated: "2019-09-03"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, enterprise users, enterprise access, enterprise tutorial
 
@@ -40,7 +40,7 @@ Creating an enterprise from an account and importing existing accounts cannot be
 ## Step 1. Create the enterprise
 {: #create_enterprise_tutorial}
 
-Enterprises are created from an existing Subscription account. When you create the enterprise, the account is added to the enterprise hierarchy. Billing transitions to being managed by the enterprise, but its users and resources are remain the same and are completely unaffected. For a complete description of account impacts, see [Creating an enterprise](/docs/account?topic=account-create-enterprise).
+Enterprises are created from an existing Subscription account. When you create the enterprise, the account is added to the enterprise hierarchy. Billing transitions to being managed by the enterprise, but its users and resources remain the same and are completely unaffected. For a complete description of account impacts, see [Creating an enterprise](/docs/account?topic=account-create-enterprise).
 
 1. Go to **Manage** > **Enterprise**, and click **Create**.
 2. Enter the name of your company, such as Example Corp, to identify your enterprise.
@@ -126,7 +126,33 @@ You can explore subscriptions in the enterprise from the enterprise dashboard. A
 
    In the Platform subscription section, you can view the subscription start date, end date, starting credit and available credit. To add more credit, you can purchase additional subscriptions and apply the subscription code.
 
-## Step 6. Assign users in child accounts access to create resources
+## Step 6. Invite users to manage your enterprise
+{: #invite-enterprise-users-tutorial}
+
+In a large organization like Example Corp., there are likely other people who you want to give access to manage the enterprise so they can do their jobs. In this case, you want to give department leads of the Marketing, Development, and Sales account groups access to manage their accounts and resource usage, and you want the Example Corp. financial officer to have access to view the entire enterprise's billing and usage. To give other users access, you invite them to the enterprise account and assign them the appropriate access policies. 
+
+First, invite the department leads and assign them access.
+
+1. Go to the Enterprise dashboard by clicking **Manage > Enterprise**. In the Users section, click **Invite users**.
+1. Enter the email address of the user you want to invite, such as `jsmith@example.com`.
+1. In the **Assign access to** menu, select **Account management services**.
+1. In the **Services** menu, select **Enterprise**.
+1. Select the Example Corp enterprise.
+1. Select the first account group, Marketing. Leave the account selection blank. This scopes the access to only the particular account group.
+1. Select **Editor** as the access role.
+1. Click **Invite users**.
+
+Invite the other two department leads by clicking **Invite users** again and assigning the Editor access role for their department's respective account groups. Then, invite the financial officer and and follow the same steps, but don't select an account group, and assign the **Usage Report Viewer** access instead. 
+
+With the Usage Report Viewer role, the financial officer can see usage from all accounts but can't create, import, or otherwise organize accounts. You then need to provide them access to billing in the enterprise.
+
+1. From the Users page, click the name of the user from the list.
+1. Click the **Access policies** tab, and then **Assign access**.
+1. Click **Assign access to account management services**.
+1. Select the Billing service, and then select the Administrator role.
+1. Click **Assign**.
+
+## Step 7. Assign users in child accounts access to create resources
 {: #users_create_resources}
 
 Before you begin, make sure that you switch to the account where you want to create the resource. In this case, switch to the *Print* account. If you want users in your account to create resources from the catalog and assign them to a resource group, you must assign two types of access policies.
@@ -137,7 +163,7 @@ Complete the following steps to assign the required access:
 
 1. Go to **Manage** > **Access (IAM)**, and select **Users**.
 2. Select a user name from the list.
-3. Click the **Access policies** tab > **Assign access**.
+3. Click **Access policies > Assign access**.
 4. Click **Assign access within a resource group**.
 5. Select the resource group that you want to assign the user access to.
 6. Select the Viewer role or higher on the resource group.
@@ -147,7 +173,7 @@ Complete the following steps to assign the required access:
 8. Select the Editor or Administrator role.
 9. Click **Assign**.
 
-## Step 7. View usage from all accounts
+## Step 8. View usage from all accounts
 {: #usage_tutorial}
 
 1. Log in to the Example Corp enterprise account.
