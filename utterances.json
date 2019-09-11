@@ -40,7 +40,11 @@
       "what CF regions can I use",
       "can Cloud Foundry use all regions",
       "which regions are there for Cloud Foundry",
-      "Cloud Foundry regions"
+      "Cloud Foundry regions",
+      "change region",
+      "change location",
+      "change default region",
+      "update my region"
     ],
     "whatisliteplan": [
       "lite account",
@@ -349,8 +353,11 @@
       "can't access different locations",
       "not allowed to access a different IBM Cloud location",
       "can't use a different IBM Cloud location",
-      "unable to use different IBM Cloud locations"
-    ],
+      "unable to use different IBM Cloud locations",
+      "can't change region",
+      "unable to change region",
+      "can't update my location"       
+     ],
     "nosecondorg": [
       "unable to create a new organization",
       "cannot create new organization",
