@@ -505,6 +505,14 @@
       "BXNUI0016E",
       "The apps and services weren't retrieved because an IBM Cloud page didn't load"
     ],
+    "troubleshoot-infrastructure-access": [
+      "page can't be loaded because your infrastructure account is not fully configured",
+      "access infrastructure sections of the IBM Cloud console",
+      "open infrastructure section of the console",
+      "can't load infrastructure section of the IBM console ",
+      "can't load infrastructure pages",
+      "not loading infrastructure pages"
+    ],
     "lite-to-enterprise": [
       "import lite into enterprise",
       "importing lite account into enterprises",
