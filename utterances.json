@@ -511,7 +511,10 @@
       "open infrastructure section of the console",
       "can't load infrastructure section of the IBM console ",
       "can't load infrastructure pages",
-      "not loading infrastructure pages"
+      "not loading infrastructure pages",
+      "unable to access infrastructure services",
+      "can't access IaaS services",
+      "Lite account have access to infrastructure services"
     ],
     "lite-to-enterprise": [
       "import lite into enterprise",
