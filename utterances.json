@@ -486,7 +486,7 @@
       "Your account is pending"
     ],
     "ts_email": [
-      "Your account is pending",
+      "missing verification email",
       "confirmation email",
       "did not get email",
       "activation email",
