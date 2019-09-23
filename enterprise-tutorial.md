@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-09-03"
+lastupdated: "2019-09-23"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, enterprise users, enterprise access, enterprise tutorial
 
@@ -129,18 +129,20 @@ You can explore subscriptions in the enterprise from the enterprise dashboard. A
 ## Step 6. Invite users to manage your enterprise
 {: #invite-enterprise-users-tutorial}
 
-In a large organization like Example Corp., there are likely other people who you want to give access to manage the enterprise so they can do their jobs. In this case, you want to give department leads of the Marketing, Development, and Sales account groups access to manage their accounts and resource usage, and you want the Example Corp. financial officer to have access to view the entire enterprise's billing and usage. To give other users access, you invite them to the enterprise account and assign them the appropriate access policies. 
+In a large organization like Example Corp., there are likely other people who you want to give access to manage the enterprise so they can do their jobs. In this case, you want to give department leads of the Marketing, Development, and Sales account groups access to manage their accounts and resource usage, and you want the Example Corp. financial officer to have access to view the entire enterprise's billing and usage. To give other users access, you invite them to the enterprise account and assign them the appropriate access. 
 
 First, invite the department leads and assign them access.
 
 1. Go to the Enterprise dashboard by clicking **Manage > Enterprise**. In the Users section, click **Invite users**.
 1. Enter the email address of the user you want to invite, such as `jsmith@example.com`.
-1. In the **Assign access to** menu, select **Account management services**.
-1. In the **Services** menu, select **Enterprise**.
-1. Select the Example Corp enterprise.
-1. Select the first account group, Marketing. Leave the account selection blank. This scopes the access to only the particular account group.
-1. Select **Editor** as the access role.
-1. Click **Invite users**.
+1. Expand the **Manually assign users access** section.
+1. Select **Account management**
+1. Select **Enterprise**. 
+1. Select the **Example Corp** enterprise.
+1. Select the first account group, **Marketing**. Leave the account selection blank. This scopes the access to only the particular account group.
+1. Select the **Editor** role.
+1. Click **Add**.
+1. Click **Invite**.
 
 Invite the other two department leads by clicking **Invite users** again and assigning the Editor access role for their department's respective account groups. Then, invite the financial officer and and follow the same steps, but don't select an account group, and assign the **Usage Report Viewer** access instead. 
 
@@ -168,7 +170,7 @@ Complete the following steps to assign the required access:
 5. Select the resource group that you want to assign the user access to.
 6. Select the Viewer role or higher on the resource group.
 7. Select the service that you want to assign the user access to.
-  * If you want the user to be able to provision any service, select **All services**.
+  * If you want the user to be able to provision any service, select **All services**.
   * If you want to assign the user specific access, select a service from the list. The user has access only to the service selected.
 8. Select the Editor or Administrator role.
 9. Click **Assign**.
