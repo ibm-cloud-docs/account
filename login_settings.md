@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-10-01"
 
 keywords: account security, login security, TOTP, MFA, password expiration
 
@@ -37,7 +37,7 @@ To set up your security questions:
 2. Click **Edit**.
 3. Select the questions that you want to have and answer them. You must use three security question options.
 4. Click **Save** when you're finished.  
-5. To make sure the `Yes` box is checked for the security questions to be enabled. Checking the `Yes` box might prompt you to sign in to your account again.  
+5. Select the **Yes** checkbox to enable the security questions. Selecting this option might prompt you to sign in to your account again.  
 
 You can set up answers to three security questions for extra authentication at login. You must set up your security questions and answers before your administrator can enable this MFA requirement for you.
 
