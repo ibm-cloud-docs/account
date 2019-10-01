@@ -25,6 +25,7 @@ Managing your account
         adminpublic.md
         profile.md
         login_settings.md
+        custom-dashboard.md
 
     account-upgrade.md
     feature_codes.md
