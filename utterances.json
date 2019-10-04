@@ -433,6 +433,20 @@
       "unable to add payment method",
       "can't register my credit card"
     ],
+    "cannot-apply-feature-code": [
+      "can not apply my feature code",
+      "feature code does not work",
+      "code cannot be applied",
+      "unable to apply code",
+      "can't use feature code"
+    ],
+    "cant-create-service-feature-code": [
+      "feature code doesn't work",
+      "cannot create service feature code",
+      "unable to create resource after code",
+      "cant add service Lite account",
+      "cant provision service for course"
+    ],
     "ts_logintobm": [
       "my password is wrong",
       "incorrect password",
