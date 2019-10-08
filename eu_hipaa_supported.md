@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-08-30"
+lastupdated: "2019-10-08"
 
 keywords: GDPR, HIPAA, data security, PHI, europe
 
@@ -26,7 +26,7 @@ If you're the account owner, you can enable your {{site.data.keyword.cloud}} acc
 ## Enabling the EU Supported setting
 {: #bill_eusupported}
 
-Enabling the EU supported setting limits Level 1 and Level 2 support that is provided by {{site.data.keyword.Bluemix_notm}} support team members in the European Union region. However, {{site.data.keyword.Bluemix_notm}} processing activities might be performed by teams that are outside of the EU region. Global teams can be contacted when issues aren't resolved by the Level 1 or Level 2 support teams in the EU. The global teams are always contacted at the instruction of the EU support team and only when there's no impact to the security or privacy of your data.
+Enabling the EU supported setting limits Advanced Customer Support (ACS) that is provided by {{site.data.keyword.Bluemix_notm}} support team members in the European Union region. However, {{site.data.keyword.Bluemix_notm}} processing activities might be performed by teams that are outside of the EU region. Global teams can be contacted when issues aren't resolved by the ACS support teams in the EU. The global teams are always contacted at the instruction of the EU support team and only when there's no impact to the security or privacy of your data.
 
 By enabling this setting, EU supported services have strict access controls to ensure the data you store and process is restricted and controlled by the IBM support team in the EU region. If {{site.data.keyword.Bluemix_notm}} experts that are outside of the European region need access to this data, an EU support team member reviews the access request. The EU support team member provides necessary access to the global cloud expert only to the requested system, and only for a specific time frame after which access is revoked. Throughout this process, your data is always protected.
 
