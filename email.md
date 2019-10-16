@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-08-16"
+lastupdated: "2019-10-16"
 
 keywords: platform notifications, email notifications, IBM Cloud notifications, notification preferences, email preferences, user notifications, infrastructure notifications
 
@@ -15,6 +15,8 @@ subcollection: account
 {:tip: .tip}
 {:note: .note}
 {:screen: .screen}
+{:help: data-hd-content-type='help'} 
+{:support: data-reuse='support'} 
 {:new_window: target="_blank"}
 
 
@@ -26,10 +28,12 @@ Depending on your {{site.data.keyword.Bluemix}} account type, you can choose whe
 
 ## Setting platform notifications
 {: #setting-platform-notifications}
+{: help} 
+{: support}
 
-If you're a Lite account owner, you can choose whether to receive email notifications about {{site.data.keyword.Bluemix}} platform unplanned events, such as outages, and planned events, such as maintenance. When you set {{site.data.keyword.Bluemix_notm}} platform notifications, you receive email notifications that are associated with only the {{site.data.keyword.Bluemix_notm}} platform. You do not receive email notifications about events that are associated with {{site.data.keyword.Bluemix_notm}} services.
+You can choose whether to receive email notifications about {{site.data.keyword.Bluemix}} platform unplanned events, such as outages, and planned events, such as maintenance. When you set {{site.data.keyword.Bluemix_notm}} platform notifications, you receive email notifications that are associated with only the {{site.data.keyword.Bluemix_notm}} platform. You do not receive email notifications about events that are associated with {{site.data.keyword.Bluemix_notm}} services.
 
-You can set platform email notifications only for your profile, not the account. In other words, if you switch to another account, any platform notification updates you make are scoped to your profile and not the account you switched to.
+Your platform email notifications settings are tied to your profile, not the account. In other words, any changes to platform notification settings are shared across your profile in all accounts that you have access to.
 
 When you select to receive unplanned platform events, you get emails only about issues that can cause an outage (Sev 1). At any time, you can see all planned and unplanned events from the [Status ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/status){: new_window} page.
 
@@ -43,8 +47,11 @@ When you select to receive unplanned platform events, you get emails only about 
 4. Click **Save**.
 
 ## Setting infrastructure notifications
+{: #setting-infra-notifications}
+{: help} 
+{: support}
 
-If you're a Pay-As-You-Go or Subscription account owner, you can choose whether to receive {{site.data.keyword.Bluemix_notm}} infrastructure email notifications about unplanned events, maintenance, and announcements. Infrastructure notifications are scoped to the account that you switched to. You can switch to another account and manage notifications for that account.
+If you're a user in a Pay-As-You-Go or Subscription account, you can choose whether to receive {{site.data.keyword.Bluemix_notm}} infrastructure email notifications about unplanned events, maintenance, and announcements. Infrastructure notifications settings affect only the account that you're in when you set them. You can switch to another account and separately manage notifications for that account.
 
 1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Profile and settings**.
 2. Click **Notifications**.
@@ -58,7 +65,7 @@ If you're a Pay-As-You-Go or Subscription account owner, you can choose whether 
 ## Setting user notifications for classic infrastructure resources
 {: #setting-user-notifications}
 
-Setting user notifications is available for classic infrastructure resources only. If you're an account owner, you can subscribe users in your account to notifications for a specific set of developer services like {{site.data.keyword.autoscaling}} and Raid Alert Monitoring. When the user is subscribed to a service, they receive emails about that service. Changes that you make for a user take effect only for future notifications.  A user is not notified about events that occurred before you set up notifications.
+Setting user notifications is available for classic infrastructure resources only. If you're an account owner, you can subscribe users in your account to notifications for a specific set of developer services like {{site.data.keyword.autoscaling}} and Raid Alert Monitoring. When the user is subscribed to a service, they receive emails about that service. Changes that you make for a user take effect only for future notifications. A user is not notified about events that occurred before you set up notifications.
 
 Users in your account receive notifications for the following types of important operational events:
 
