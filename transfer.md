@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-31"
+lastupdated: "2019-10-15"
 
 keywords: change owner, transfer account, transfer account ownership, switch owner, transfer owner
 
@@ -20,10 +20,8 @@ subcollection: account
 # Transferring ownership of your account
 {: #transfer}
 
-You can transfer your entire {{site.data.keyword.cloud}} account to a different owner by updating the company profile. If you need to transfer an account from another owner, create a support case with your company information.
+You can transfer your entire {{site.data.keyword.cloud}} account to a different owner by creating a support case with information about the new owner. Only Pay-As-You-Go or Subscription accounts can be transferred.
 {:shortdesc}
-
-Only Pay-As-You-Go or Subscription accounts can be transferred.
 
 You can transfer ownership of individual resources within your account by using the `ibmcloud catalog` command. For more information, see [Transferring ownership of a private resource](/docs/account?topic=account-include#owners).
 {: tip}
@@ -31,19 +29,14 @@ You can transfer ownership of individual resources within your account by using 
 ## Transferring an account that you own
 {: #transfer-own}
 
-If you're the account owner and are able to log in to your account, complete the following steps to transfer the ownership of your account.
+As the account owner, you can transfer your account to a new owner by creating a support case. The new owner must be an existing user within the account. If the person that you want to own the account isn't an existing user, [invite them to the account](/docs/iam?topic=iam-iamuserinv) before you create the support case.
 
-1. In the console, go to **Manage > Account**, and select **Company profile**.
-1. Click **Request Profile Update**.
-1. Update the account profile with the new owner information.
-1. Click **Submit Update Request**.
-
-The {{site.data.keyword.cloud_notm}} team reviews the changes before they go into effect.
+To create the support case, go to **Support**, and click **Create a case**. In the case description, include the full name and IBMid of the user that is to be the new account owner. 
 
 ## Transferring an account from another owner
 {: #transfer-lost}
 
-If the owner of an account left your company and you need to transfer the account, you must choose a new owner and then submit a support case to request a transfer. 
+If the owner of an account left your company and you need to transfer the account, you must choose a new owner and then create a support case to request a transfer. 
 
 The new owner must be a user in the account and can't be the owner of another {{site.data.keyword.cloud_notm}} account. If the user isn't in the account, another user can invite them to the account or you can request to add them to the account in the support case that you create. If they already own an {{site.data.keyword.cloud_notm}} account, you can request to move the account that they currently own to another user or cancel the account.
 
@@ -52,7 +45,7 @@ In the support case to request an account transfer, you must attach an official 
 - Your company's article of incorporation, if applicable
 - A statement that the individual is no longer associated with your company
 - An explanation that you want the account owner to be changed to a new owner
-- The first and last name of the new account owner
+- The given name and surname of the new account owner
 - The email address and phone number of the new account owner
 - A signature of an executive at your company
 - The account number of the account to transfer

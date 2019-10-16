@@ -59,6 +59,15 @@
       "Tell me more about lite plans",
       "lite plan for services"
     ],
+    "howmanyapps": [
+      "number of apps I can build",
+      "apps can I make",
+      "apps allowed to build",
+      "Is there a limit on apps",
+      "How many applications can I have in my account",
+      "How many apps am I allowed to have",
+      "limit on apps"
+    ],
     "monthlyquota": [
       "is there a quota for a lite plan",
       "do I get charged for a lite plan",
@@ -226,15 +235,6 @@
       "link all of my accounts",
       "link multiple accounts",
       "I want to link several accounts"
-    ],
-    "al_incent": [
-      "incentives for linked accounts",
-      "incentives for linking my accounts",
-      "benefits of linking my accounts",
-      "What do I get for linking my accounts",
-      "value in linking my accounts",
-      "Why should I link my accounts",
-      "what is a linked account"
     ],
     "al_owaffslacct": [
       "Why should I add IBM Cloud platform services to my SoftLayer account",

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-08-19"
+lastupdated: "2019-10-15"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -15,6 +15,7 @@ subcollection: account
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:faq: data-hd-content-type='faq'}
+{:support: data-reuse='support'}
 {:tip: .tip}
 
 # FAQs for accounts
@@ -72,10 +73,16 @@ In a Lite account, you can work in only one region. In a Pay-As-You-Go or Subscr
 
 A Lite plan is a free quota-based service plan. You can use a service Lite plan to build an app without incurring any charges. A Lite plan might be offered on a monthly cycle that is renewed each month or on a one-off usage basis. You can have one instance per Lite plan service. Lite pricing plans are offered in all accounts. For more information about Lite accounts, see [Account types](/docs/account?topic=account-accounts#accounts).
 
+## How many apps can I build?
+{: #howmanyapps}
+{: faq}
+
+In a Lite account, your apps have up to 256 MB of instantaneous runtime memory. You can deploy apps until you use the available Lite account allowance. If you need more memory, upgrade to a billable account to get 512 MB of free instantaneous runtime memory and pay only for what you use over that limit. There's no limit to the number of apps you can build in a billable account.
 
 ## What happens when my Lite plan instance reaches the monthly quota?
 {: #monthlyquota}
 {: faq}
+{: support}
 
 Reaching any quota limit for Lite plan instances suspends the service for that month. Quota limits are per org, not per instance. New instances that are created in the same org reflect any usage from previous instances. The quota limits reset on the first of every month.
 
@@ -90,14 +97,16 @@ If you want to delete a service, you can do so from the resource list. Learn mor
 ## How many resource groups, orgs, or spaces can I create?
 {: #resourcelimit}
 {: faq}
+{: support}
 
 If you have a billable account, there's no limit to the number of resource groups, orgs, or spaces that you can create within your account. However, if you have a Lite account, you're limited to one org and one resource group.
 
 ## How do I upgrade or convert my account type?
 {: #changeacct}
 {: faq}
+{: support}
 
-To upgrade your Lite account, go to [Account settings](https://{DomainName}/account/settings). In the Account Upgrade section, click **Add credit card** to upgrade to a Pay-As-You-Go account, or click **Upgrade** for a Subscription account. You can also apply a promotional feature code to convert your Lite account to a trial account on the Account settings page.
+To upgrade your Lite account, go to [Account settings](https://{DomainName}/account/settings). In the Account Upgrade section, click **Add credit card** to upgrade to a Pay-As-You-Go account, or click **Upgrade** for a Subscription account. You can also apply a feature code from an online course or educational event to convert your Lite account to a trial account.
 
 To convert between Pay-As-You-Go and Subscription account types, contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
 
@@ -112,6 +121,7 @@ Yes, when you upgrade to a billable account, you can continue to use the instanc
 ## How do I update my credit card?
 {: #updatepayment}
 {: faq}
+{: support}
 
 Updating your credit card is just like adding a new one. Go to [Payments](https://{DomainName}/billing/payments), and in the Add Payment Method section, enter the billing information for your new card, then click **Add credit card**.
 
@@ -145,6 +155,7 @@ To reset your VPN password, complete the following steps:
 ## How do I cancel my account?
 {: #cancelaccount}
 {: faq}
+{: support}
 
 We're sad to see you go! If there's any way we can assist you with your account before you go, reach out to us by contacting support.
 
@@ -168,6 +179,7 @@ To understand how IBM handles your personal information, see the [IBM Privacy St
 ## Why is my account deactivated?
 {: #account-deactivated}
 {: faq}
+{: support}
 
 Your account might be deactivated for the following reasons:
 
@@ -225,14 +237,6 @@ If you have multiple SoftLayer accounts, you must link the accounts that have a 
 
 If you don't have a matching {{site.data.keyword.Bluemix_notm}} platform account, and an accompanying IBMid account, a new SoftLayer account can be created to link the accounts.
 
-## Are there incentives for linking my accounts?
-{: #al_incent}
-{: faq}
-
-When you link your accounts, you can use a $200 promotional credit to try {{site.data.keyword.Bluemix_notm}} services.
-
-To learn more about the $200 promotional credit, see [Pay-As-You-Go account](/docs/account?topic=account-accounts#paygo).
-
 ## What does adding {{site.data.keyword.Bluemix_notm}} platform services to my SoftLayer account mean?
 {: #al_owaffslacct}
 {: faq}
@@ -258,6 +262,7 @@ You can also find your accounts from the CLI by running the `ibmcloud account li
 ## How do I switch between multiple accounts?
 {: #switch-between-accounts}
 {: faq}
+{: support}
 
 If you have more than one account, you can click your account name in the console menu bar to select another account that you have access to.  
 
@@ -280,20 +285,23 @@ You can target URLs for any {{site.data.keyword.Bluemix_notm}} console page to a
 ## Can I make someone else the account owner?
 {: #switch-account-owners}
 {: faq}
+{: support}
 
 You can transfer ownership of individual resources within your account to someone else by using the `ibmcloud catalog` command. To learn more, see [Transferring ownership of a private resource](/docs/account?topic=account-include#owners).
 
-To transfer ownership of your entire account, update your [company profile](https://{DomainName}/account/company-profile). For more information, see [Transferring ownership of your account](/docs/account?topic=account-transfer).
+To transfer ownership of your entire account, create a support case that requests to make another user in the account the new owner. For more information, see [Transferring ownership of your account](/docs/account?topic=account-transfer).
 
 ## How do I change the name or IBMid in my profile?
 {: #change-profile-settings}
 {: faq}
+{: support}
 
 You can change your personal information, such as name, email, or phone number, by going to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) **>  Profile and settings**. You can't change your IBMid, but you can create a new one if appropriate. The [IBMid worldwide help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html) is available to help with general ID questions that aren't specific to your {{site.data.keyword.Bluemix_notm}} account.
 
 ## How do I change my account language?
 {: #switch-account-lang}
 {: faq}
+{: support}
 
 The language used is based on your web browser settings. To view content in your native language, update your browser's language settings.
 
