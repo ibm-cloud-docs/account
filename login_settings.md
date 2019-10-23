@@ -32,17 +32,19 @@ You can view the following security options, and enable or disable them, only if
 ## Setting up security questions
 {: #security-questions}
 
-To set up your security questions:
-1. From the console, go to Go to **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Profile and settings**, and select **Login settings**.
-2. Click **Edit**.
-3. Select the questions that you want to have and answer them. You must use three security question options.
-4. Click **Save** when you're finished.  
-5. Select the **Yes** checkbox to enable the security questions. Selecting this option might prompt you to sign in to your account again.  
-
 You can set up answers to three security questions for extra authentication at login. You must set up your security questions and answers before your administrator can enable this MFA requirement for you.
 
-You must be the account owner or have the User-managed login setting enabled for you by your account administrator to turn security questions on and off.
-{: note}
+To set up your security questions:
+1. From the console, go to Go to **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Profile and settings**, and select **Login settings**.
+2. Click **Set up**.
+
+   If you previously set up security questions, click **Edit**.
+3. Select the questions that you want to have and answer them. You must use three security question options.
+4. Click **Save** when you're finished.  
+5. Select the **Yes** checkbox for the security questions to be enabled. Selecting this option might prompt you to sign in to your account again.  
+
+   If this option isn't selected, you don't have access to turn on security questions. You must be the account owner or have the User-managed login setting enabled for you by your account administrator to turn security questions on and off. Contact your account owner or administrator to get access.
+   {: note}
 
 ## Setting a password expiration
 {: #password-expiration}
@@ -67,7 +69,7 @@ You might also be prompted for a time-based one-time passcode if the user TOTP s
 ## Setting up external authentication
 {: #third-party-MFA}
 
-You or your account administrator can order Symantec or phone-based authentication for you for a monthly cost. For you to order external authentication, you have to have the add services infrastructure permissions. To find out if external authentication is enabled, go to **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Profile and settings**, and select **Login settings**.
+You or your account administrator can order Symantec or phone-based authentication for you for a monthly cost. For you to order external authentication, you must have the add services classic infrastructure permission. To find out if external authentication is enabled, go to **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Profile and settings**, and select **Login settings**. For more information, see [Ordering external authentication MFA for a user](/docs/iam?topic=iam-external).
 
 ### Setting up Symantec authentication
 
