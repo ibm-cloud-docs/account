@@ -436,8 +436,8 @@
     "cannot-apply-feature-code": [
       "can not apply my feature code",
       "feature code does not work",
-      "code cannot be applied",
-      "unable to apply code",
+      "feature code cannot be applied",
+      "unable to apply feature code",
       "can't use feature code"
     ],
     "cant-create-service-feature-code": [

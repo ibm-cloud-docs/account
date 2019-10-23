@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-09-23"
+lastupdated: "2019-09-26"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, enterprise users, enterprise access, enterprise tutorial
 
@@ -54,7 +54,7 @@ After your enterprise is created, you are directed to the enterprise dashboard. 
 ## Step 2. Create an enterprise structure with account groups
 {: #account_groups_tutorial}
 
-Use account groups to organize related accounts. The second and third tier of the Example Corp. enterprise hierarchy contain the Marketing, Development, Sales, Design, and Engineering account groups. Complete the following steps to create the account groups:
+Use account groups to [organize related accounts](/docs/account?topic=account-enterprise-organize). The second and third tier of the Example Corp. enterprise hierarchy contain the Marketing, Development, Sales, Design, and Engineering account groups. Complete the following steps to create the account groups:
 
 1. From the enterprise dashboard, click **Accounts** to view accounts and account groups in the enterprise.
 2. In the account group section, click **Create**.
@@ -170,7 +170,7 @@ Complete the following steps to assign the required access:
 5. Select the resource group that you want to assign the user access to.
 6. Select the Viewer role or higher on the resource group.
 7. Select the service that you want to assign the user access to.
-  * If you want the user to be able to provision any service, select **All services**.
+  * If you want the user to be able to provision any service, select **All services**.
   * If you want to assign the user specific access, select a service from the list. The user has access only to the service selected.
 8. Select the Editor or Administrator role.
 9. Click **Assign**.

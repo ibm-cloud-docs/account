@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-07-29"
+lastupdated: "2019-09-03"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -29,14 +29,14 @@ You can check your current account type by going to **Manage > Account > Account
 Not sure which type of account you want to upgrade to? Get detailed information about the benefits of each account type in [Account types](/docs/account?topic=account-accounts).
 {: tip}
 
-To upgrade your account, you must have an editor role or higher on all account management services. Learn more about IAM roles for managing accounts in [Platform management roles](/docs/iam?topic=iam-userroles#platformroles).
+To upgrade your account, you must have an access policy with the Editor role or higher on all account management services. For more information about IAM roles for managing accounts, see [Platform management roles](/docs/iam?topic=iam-userroles#platformroles).
 
 ## Upgrading to a Pay-As-You-Go account
 {: #upgrade-paygo}
 
 With a Pay-As-You-Go account, you pay for only what you use beyond the free runtime and service allowances. After you upgrade, you can continue to use any instances that you created with your Lite account.
 
-To upgrade to a Pay-As-You-Go account,
+To upgrade to a Pay-As-You-Go account, complete the following steps.
 1. Go to **Manage > Account**.
 1. Select **Account settings**, and click **Add credit card**.
 1. Enter your payment information, click **Next**, and submit your information.

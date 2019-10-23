@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-25"
+lastupdated: "2019-10-22"
 
 keywords: enterprise, enterprise account, multiple accounts, organization, hierarchy
 
@@ -16,6 +16,7 @@ subcollection: account
 {:important: .important}
 {:tip: .tip}
 {:note: .note}
+{:term: .term}
 
 # What is an enterprise?
 {: #enterprise}
@@ -120,4 +121,4 @@ Educational institutions might want to provide {{site.data.keyword.Bluemix_notm}
 
 Within each account, students can create resources to build their projects and collaborate with other students in the account. The university has a complete view of the costs of each department and course.
 
-![A three-tier enterprise that models how a university can organize their accounts. For example, account groups are named for each department: Data Science, Computer Science, and Computer Engineering. Each account groups contains individual accounts for each class, such as DS101 and DS102.](images/enterprise-edu.svg "An enterprise for a university that has account groups for each department, and individual accounts for each class."){: caption="Figure 6. An enterprise for a university" caption-side="bottom"}
+![A three-tier enterprise that models how a university can organize their accounts. For example, account groups are named for each department: Data Science, Computer Science, and Computer Engineering. Each account group contains individual accounts for each class, such as DS101 and DS102.](images/enterprise-edu.svg "An enterprise for a university that has account groups for each department, and individual accounts for each class."){: caption="Figure 6. An enterprise for a university" caption-side="bottom"}
