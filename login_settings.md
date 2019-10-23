@@ -43,7 +43,7 @@ To set up your security questions:
 4. Click **Save** when you're finished.  
 5. Select the **Yes** checkbox to enable the security questions. Selecting this option might prompt you to sign in to your account again.  
 
-   If this option isn't selected, you don't have access to turn on security questions. You must be the account owner or have the User-managed login setting enabled for you by your account administrator to turn security questions on and off. Contact your account owner or administrator to get access.
+   If this option is disabled, you don't have access to turn on security questions. You must be the account owner or have the User-managed login setting enabled for you by your account administrator to turn security questions on and off. Contact your account owner or administrator to get access.
    {: note}
 
 ## Setting a password expiration
