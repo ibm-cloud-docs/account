@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-09-26"
+lastupdated: "2019-11-04"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, enterprise users, enterprise access, enterprise tutorial
 
@@ -144,7 +144,7 @@ First, invite the department leads and assign them access.
 1. Click **Add**.
 1. Click **Invite**.
 
-Invite the other two department leads by clicking **Invite users** again and assigning the Editor access role for their department's respective account groups. Then, invite the financial officer and and follow the same steps, but don't select an account group, and assign the **Usage Report Viewer** access instead. 
+Invite the other two department leads by clicking **Invite users** again and assigning the Editor access role for their department's respective account groups. Then, invite the financial officer and follow the same steps, but don't select an account group, and assign the **Usage Report Viewer** access instead. 
 
 With the Usage Report Viewer role, the financial officer can see usage from all accounts but can't create, import, or otherwise organize accounts. You then need to provide them access to billing in the enterprise.
 
