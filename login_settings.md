@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-10-22"
+lastupdated: "2019-11-13"
 
 keywords: account security, login security, TOTP, MFA, password expiration
 
@@ -41,9 +41,9 @@ To set up your security questions:
    If you previously set up security questions, click **Edit**.
 3. Select the questions that you want to have and answer them. You must use three security question options.
 4. Click **Save** when you're finished.  
-5. Select the **Yes** checkbox to enable the security questions. Selecting this option might prompt you to sign in to your account again.  
+5. Select the **Yes** checkbox for the security questions to be enabled. Selecting this option might prompt you to sign in to your account again.  
 
-   If this option is disabled, you don't have access to turn on security questions. You must be the account owner or have the User-managed login setting enabled for you by your account administrator to turn security questions on and off. Contact your account owner or administrator to get access.
+   If this option isn't selected, you don't have access to turn on security questions. You must be the account owner or have the User-managed login setting enabled for you by your account administrator to turn security questions on and off. Contact your account owner or administrator to get access.
    {: note}
 
 ## Setting a password expiration
@@ -62,6 +62,9 @@ This option is available only to users that log in with a SoftLayer ID. To updat
 To set up your TOTP authentication, click **Set up**.
 
 TOTP MFA adds an extra layer of security to your account by requiring a TOTP passcode in addition to the standard ID and password during login. You must set up your TOTP authentication before your account administrator can enable this MFA requirement for you.
+
+If you plan to set up user-based TOTP MFA for more than one account, give your account a unique name in the authenticator app for the first account that you set this up for. By using unique names for each account in your app, you can ensure that you don't lock yourself out of your first account when you set up MFA for your second account.
+{: tip}
 
 You might also be prompted for a time-based one-time passcode if the user TOTP setting isn't set up and enabled. This is because an account owner might turn on IBMid MFA for an account that you have access to. This type of MFA applies to every user in the account when this setting is turned on, and you're required to use it. For more information, see [Types of multifactor authentication](/docs/iam?topic=iam-types).
 
