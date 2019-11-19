@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-06-19"
+lastupdated: "2019-11-19"
 
 keywords: company information, company details, company account, company profile, account contact
 
@@ -32,12 +32,12 @@ To request an update to the company profile details, go to **Manage > Account**,
 
 {{site.data.keyword.Bluemix_notm}} uses the information in the company profile to contact you. If your phone number or email changes, be sure to update them. The company profile information is entered when the account was created.
 
-## Adding or editing an account contact
+## Editing a company contact
 {: #account-contact}
 
-To add or edit an account contact, go to **Manage > Account**, and select **Company contacts**. Keep the information about the account contacts complete and up-to-date in case an inquiry is required.
+Company contacts are created when certain products or services are ordered. For example, when a Regional Internet Registry (RIR) report is requested or a domain is ordered, a company contact is created. To edit a company contact, go to **Manage** > **Account**, and select **Company contacts**. Keep the information about the company contacts complete and up-to-date in case an inquiry is required.
 
-Ensure that the account contacts are the appropriate people to be contacted for each type of request. You might have multiple contact entries for each account, but only one contact for each type of service. Account-specific contact information doesn't include the account profile, which is the primary contact information that is associated with an account.
+Ensure that the company contacts are the appropriate people to be contacted for each type of request. You might have multiple contact entries for each account, but only one contact for each type of service. Company-specific contact information doesn't include the account profile, which is the primary contact information that is associated with an account.
 
-  Verify the information before you make the update. After you submit the new contact information, the account contacts are updated immediately.
+  Verify the information before you make the update. After you submit the new contact information, the company contacts are updated immediately.
   {: important}
