@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-09-24"
+lastupdated: "2019-11-19"
 
 keywords: enterprise, create account group, organize accounts, move accounts
 
@@ -38,7 +38,7 @@ To create an account group, you need the Administrator or Editor role on the Ent
 1. From the Enterprise dashboard, click **Accounts** to view the accounts and account groups in the enterprise.
 1. In the Account groups section, click **Create**.
 1. Enter a name for the account group that reflects the accounts that it will contain. See [How can I use an enterprise?](/docs/account?topic=account-enterprise#enterprise-use-cases) for examples of how you might organize accounts.
-1. If you want an enterprise user other than yourself to be the primary contact for the account group, select their IBMid from the **Contact** menu. If a user that you want to assign as the contact isn't in the enterprise, first invite the user to the enterprise account. The contact can't be changed after you create the account group. See [Inviting users](/docs/iam?topic=iam-iamuserinv) for more information.
+1. If you want an enterprise user other than yourself to be the primary contact for the account group, select their IBMid from the **Contact** menu. If a user that you want to assign as the contact isn't in the enterprise, first invite the user to the enterprise account. See [Inviting users](/docs/iam?topic=iam-iamuserinv) for more information.
 
    The contact is different from an account owner in that they don't have any additional access within the account group or its accounts. The user that you select as contact acts as a focal point for any account group issues. For example, if a financial officer notices that the account group's usage costs are unexpectedly high, they might notify the account group contact.
 
@@ -143,3 +143,22 @@ curl -X PATCH \
 {: codeblock}
 
 For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#move-an-account-with-the-enterprise){: external}.
+
+## Updating the account group contact 
+
+You can update the contact for an account group by using the [Enterprise Management API](https://cloud.ibm.com/apidocs/enterprise-apis/enterprise#update-an-account-group){: external} or by opening a support case in the [Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter):
+
+1. If a user that you want to assign as the contact isn't in the enterprise, first invite the user to the enterprise account. See [Inviting users](/docs/iam?topic=iam-iamuserinv) for more information.
+1. Find the IAM ID for the new contact. Go to **Manage** > **Access (IAM)** and select **Users**. Click the user's name from the list. The IAM ID is displayed in the User details section. 
+1. Update the primary contact for the account group as shown in the following sample request: 
+
+  ```
+  curl -X PATCH \
+  "https://enterprise.cloud.ibm.com/v1/account-groups/$ACCOUNT_GROUP_ID" \
+  -H "Authorization: Bearer <IAM_Token>" \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "primary_contact_iam_id": "iam_id"
+  }'
+  ```
+  {: codeblock}
