@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-11-19"
+lastupdated: "2019-11-20"
 
 keywords: enterprise, create account group, organize accounts, move accounts
 
@@ -152,13 +152,13 @@ You can update the contact for an account group by using the [Enterprise Managem
 1. Find the IAM ID for the new contact. Go to **Manage** > **Access (IAM)** and select **Users**. Click the user's name from the list. The IAM ID is displayed in the User details section. 
 1. Update the primary contact for the account group as shown in the following sample request: 
 
-  ```
-  curl -X PATCH \
-  "https://enterprise.cloud.ibm.com/v1/account-groups/$ACCOUNT_GROUP_ID" \
-  -H "Authorization: Bearer <IAM_Token>" \
-  -H 'Content-Type: application/json' \
-  -d '{
-    "primary_contact_iam_id": "iam_id"
-  }'
-  ```
-  {: codeblock}
+```
+curl -X PATCH \
+"https://enterprise.cloud.ibm.com/v1/account-groups/$ACCOUNT_GROUP_ID" \
+-H "Authorization: Bearer <IAM_Token>" \
+-H 'Content-Type: application/json' \
+-d '{
+  "primary_contact_iam_id": "iam_id"
+}'
+```
+{: codeblock}
