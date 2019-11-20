@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-10-17"
+lastupdated: "2019-11-20"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -163,12 +163,6 @@ If you do decide to leave, how you cancel your account depends on your account t
 
 * For Pay-As-You-Go or Subscription accounts, the quickest way to cancel your account is to contact us through [live chat](https://{DomainName}/unifiedsupport/supportcenter) or by calling 1-866-325-0045 and selecting the third option. Alternatively, you can open a support case.
 * To cancel a Lite account, go to the [Account settings](https://cloud.ibm.com/account/settings) page, and click **Deactivate account**.
-
-## How do I delete my account?
-{: #deleteaccount}
-{: faq}
-
-Contact [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} to open a support case and request to delete your account. If you have data that is associated with your old account that you want to move to a new account, include this information in your email.
 
 ## How can I remove my personal data from {{site.data.keyword.Bluemix_notm}}?
 {: #remove-pi}
