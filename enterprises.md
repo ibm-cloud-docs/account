@@ -40,7 +40,7 @@ At its core, an enterprise consists of three main building blocks:
 You create tiers in your enterprise by nesting an account group within an account group.
 ![A diagram that shows four enterprise tiers. The top tier is the enterprise, which contains two tiers of account groups. Then, the account group contains accounts.](images/enterprise-hierarchy.svg "Enterprise tiers are created by adding account groups."){: caption="Figure 1. A four-tier enterprise hierarchy" caption-side="bottom"}
 
-An enterprise can contain up to 10 tiers of accounts and account groups. In its most basic form, an enterprise has two tiers: The enterprise account, and a single child account.
+An enterprise can contain up to 5 tiers of accounts and account groups. In its most basic form, an enterprise has two tiers: The enterprise account, and a single child account.
 
 Your enterprise structure is flexible and can grow and change as your needs do. You can add and remove account groups and move accounts between account groups. If the purpose of an account group changes, you can rename it to better reflect the accounts it contains.
 
