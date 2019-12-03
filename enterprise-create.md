@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-25"
+lastupdated: "2019-12-03"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, multiple account
 
@@ -20,7 +20,7 @@ subcollection: account
 # Creating an enterprise
 {: #create-enterprise}
 
-You create an {{site.data.keyword.Bluemix}} enterprise from an existing Subscription account. The account that you use to create the enterprise is permanently added to the enterprise.
+You create an {{site.data.keyword.Bluemix}} enterprise from an existing Subscription account. When an existing subscription account is used, an enterprise and an enterprise account are created. The account that you use to create the enterprise and the new enterprise account are permanently added to the enterprise, but this account does not become the parent account.
 {:shortdesc}
 
 ## Before you begin
