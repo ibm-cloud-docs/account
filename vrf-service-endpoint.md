@@ -2,9 +2,9 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-01"
+lastupdated: "2019-12-04"
 
-keywords: VRF, virtual routing and forwarding, service endpoint, private network
+keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network
 
 subcollection: account
 
@@ -23,7 +23,7 @@ subcollection: account
 By default, you connect to resources in your account over the {{site.data.keyword.Bluemix}} public network. You can enable virtual routing and forwarding (VRF) to move IP routing for your account and all of its resources into a separate routing table. If VRF is enabled, you can then enable {{site.data.keyword.Bluemix_notm}} service endpoints to connect directly to resources without using the public network.
 {:shortdesc}
 
-To enable virtual routing and forwarding and {{site.data.keyword.Bluemix_notm}} service endpoint, you need a billable account.
+To enable virtual routing and forwarding and {{site.data.keyword.Bluemix_notm}} service endpoints, you need a billable account.
 
 ## Enabling VRF
 {: #vrf}
@@ -35,13 +35,13 @@ Enabling VRF permanently alters networking for your account. Be sure that you un
 
 To enable VRF, create a support case with your request.
 
-1. In the console, go to **Support** and click **Create a case**.
-1. Select **Account and access** as the support type.
-1. In the **Subject** field, enter `Private networking question`.
-1. In the **Description** field, enter the following message, replacing _enter your account number_ with your {{site.data.keyword.Bluemix_notm}} account number.
+1. In the console, go to **Manage > Account**, then click **Account settings**.
+1. In the Virtual routing and forwarding section, click **Create case**.
+1. In the case description, replace `ADD YOUR ACCOUNT NUMBER` with your classic infrastructure account number, and click **Submit**.
 
-   `We are requesting that account *enter your account number* is moved to its own VRF. We understand the risks and approve the change. Please reply back with the scheduled window(s) of time where this change will be made so we can prepare for the migration.`
-
+   Don't change the rest of the prefilled support case information. The information is tailored to make sure your request is handled as quickly as possible.
+   {: tip}
+   
 The {{site.data.keyword.Bluemix_notm}} network engineering team will reach out to the case owner to schedule a time for your account's networking to be converted to VRF. During the conversion process, connections to resources in your account might be unstable due to packet loss. The conversion takes roughly 15-30 minutes, depending on the complexity of your account. If your account has legacy {{site.data.keyword.BluDirectLink}} connections, it might take more time.
 
 
@@ -53,7 +53,21 @@ When {{site.data.keyword.Bluemix_notm}} service endpoints are enabled in your ac
 Before you can enable service endpoints, VRF must be enabled for your account.
 {: note}
 
-To enable service endpoints from the CLI, you need version 0.13 or later of the [{{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cloud-cli-getting-started).
+### From the console
+{: #service-endpoint-console}
+
+1. In the console, go to **Manage > Account**, then click **Account settings**.
+1. In the Service endpoints section, click **On**.
+
+   If you can't click the button, VRF might not be enabled for your account. Verify that it's enabled by checking the virtual routing and forwarding section, which is the preceding section in your account settings.
+1. Review the impacts to your account, and click **On**.
+
+It might take a few minutes for this change to take affect.
+
+### From the CLI
+{: #service-endpoint-cli}
+
+To enable service endpoints from the [{{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cloud-cli-getting-started), you need version 0.13 or later.
 
 1.  Check whether service endpoints are already enabled in your account.
 
@@ -82,9 +96,9 @@ To enable service endpoints from the CLI, you need version 0.13 or later of the 
    {: codeblock}
 
    It might take a few minutes for this change to take affect. After the command completes, you can run the `ibmcloud account show` command again to verify.
-
-    If VRF isn't enabled for your account, running this command prompts you to create a case to enable it. Enter `y` to create the support case. After VRF is enabled in the account, run the command again to enable service endpoint connectivity in your account.
-
+   
+    If VRF isn't enabled for your account, running this command prompts you to create a case to enable it. Enter `y` to create the support case. After VRF is enabled in the account, run the command again to enable service endpoint connectivity in your account. 
+    
     ```
     Service Endpoint is not available in linked Softlayer Account 1008967.
     Enable VRF(Virtual Routing and Forwarding) first to proceed.
@@ -96,6 +110,6 @@ To enable service endpoints from the CLI, you need version 0.13 or later of the 
     Ticket:        Private Network Question
     ```
     {: screen}
-
+  
 
 After service endpoints are enabled, you can create resources that connect over the {{site.data.keyword.Bluemix_notm}} private network. For a list of services that support service endpoints and more information, see [Setting up private network endpoints](/docs/resources?topic=resources-private-network-endpoints).
