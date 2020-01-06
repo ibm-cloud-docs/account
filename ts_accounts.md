@@ -111,7 +111,7 @@ When you try to create an app in {{site.data.keyword.Bluemix_notm}}, the followi
 The status of your {{site.data.keyword.Bluemix_notm}} account becomes inactive when the account is canceled or suspended.
 {: tsCauses}
 
-To reactivate your account, contact IBM Cloud Support by calling +1-(866)325-0045 and select option 3. Include the following information so the support team can help restore the correct account:
+To reactivate your account, contact IBM Cloud Support by calling +1-(866)325-0045 and select option 3. Include the following information so the support team can help restore the account:
 {: tsResolve}
 
   * The IBMid that you use to log in to {{site.data.keyword.Bluemix_notm}}.
