@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-08-19"
+  years: 2019, 2020
+lastupdated: "2020-01-09"
 
 keywords: enterprise, enterprise resources, enterprise account
 
@@ -27,7 +27,7 @@ These best practices provide you with the basic building blocks for setting up a
 ## Organizing accounts according to how you want to track billing
 {: #organize-enterprise-usage}
 
-A key benefit of {{site.data.keyword.cloud_notm}} enterprises is that they enable you to centrally view and manage billing and usage across multiple accounts. This capability's usefulness is dependent on your enterprise structure because usage data is aggregated by each account group and account. Create account groups for projects that function under a common budget. See [How can I use an enterprise?](/docs/account?topic=account-enterprise#enterprise-use-cases) for examples.
+A key benefit of {{site.data.keyword.cloud_notm}} enterprises is that they enable you to centrally view and manage billing and usage across multiple accounts. This capability's usefulness depends on your enterprise structure because usage data is aggregated by each account group and account. Create account groups for projects that function under a common budget. See [How can I use an enterprise?](/docs/account?topic=account-enterprise#enterprise-use-cases) for examples.
 
 The enterprise administrator or your financial officer might not be familiar with each individual account or account group. To make it easier to identify their purpose, give each account and account group a human-readable name. If your company uses billing codes, you can also incorporate them into the name. For example, instead of a `devteam` account group with `fed ui` and `be api` accounts, create the `Development - A2B3` account group with `Front-end UI team` and `Back-end API team` accounts.
 

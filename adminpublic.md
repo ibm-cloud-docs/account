@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-08-19"
+  years: 2015, 2020
+lastupdated: "2020-01-09"
 
 keywords: create account, IBMid, sign up for account, sign up
 
@@ -25,7 +25,7 @@ You can sign up for an {{site.data.keyword.Bluemix}} account by using your exist
 | Sign-up ID | Details |    
 |-----------------|---------|
 |Existing IBMid   | If you already have an IBMid, sign up for {{site.data.keyword.Bluemix_notm}} with your existing credentials that you use for other IBM products and services. |
-|New IBMid        | If you don't yet have an IBMid, you'll create one when you sign up. With an IBMid, you can use one user name to log in to all IBM products and services, including {{site.data.keyword.Bluemix_notm}}. |
+|New IBMid        | If you don't yet have an IBMid, you'll create one when you sign up. With an IBMid, you can use one username to log in to all IBM products and services, including {{site.data.keyword.Bluemix_notm}}. |
 |Federated ID     | If your company already requested to register the user credentials from your company's domain with IBM, you can sign up for {{site.data.keyword.Bluemix_notm}} by using the credentials that you already use for your company's login. You must enter a phone number when you sign up. |
 {:caption="Table 1. ID options for signing up for {{site.data.keyword.Bluemix_notm}}" caption-side="top"}
 
