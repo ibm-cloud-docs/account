@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-07-08"
+  years: 2018, 2020
+lastupdated: "2020-01-09"
 
-keywords: organizing resource group, account best practices, best practices account
+keywords: organizing resource group, account best practices, best practices account, my resources 
 
 subcollection: account
 
@@ -45,7 +45,7 @@ If you have a Pay-As-You-Go or Subscription account, you can create more resourc
 4. Enter the name of your resource group.
 5. Click **Add**.
 
-For more information about which account type will work best for you, see [Account types](/docs/account?topic=account-accounts).
+For more information about which account type works best for you, see [Account types](/docs/account?topic=account-accounts).
 
 
 ## Setting up your resource groups

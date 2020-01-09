@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-09-03"
+  years: 2015, 2020
+lastupdated: "2020-01-09"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -53,7 +53,7 @@ With a Subscription account, you commit to a minimum spending amount each month 
 Subscriptions that you purchase through the console are limited to $5,000 United States dollars (USD) or the equivalent in your billing currency. If you want to purchase a larger subscription, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg).
 
 To upgrade from a Lite account to a Subscription account, complete the following steps.
-1. Go to **Manage > Account**, and select **Account settings**. Then click **Upgrade**, which takes you to the Subscriptions page.
+1. Go to **Manage > Account**, and select **Account settings**. Then, click **Upgrade**, which takes you to the Subscriptions page.
 1. Select your monthly spending commitment and subscription term, and click **Get started**.
 
    If you're not sure how much your typical usage might cost, you can estimate it by using the [cost estimator](https://{DomainName}/estimator/review){:new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").

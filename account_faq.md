@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-11-20"
+  years: 2015, 2020
+lastupdated: "2020-01-09"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -57,7 +57,7 @@ For more information about managing orgs and spaces, see [Adding orgs and spaces
 {: #move-org-diff-account}
 {: faq}
 
-Currently, you can't move an org to a different account. However, you can re-create the org with the same credentials in a different account to mimic this functionality. For more information, see [Adding orgs and spaces](https://cloud.ibm.com/docs/account?topic=account-orgsspacesusers#createorg).
+Currently, you can't move an org to a different account. However, you can re-create the org with the same credentials in a different account to mimic this functions. For more information, see [Adding orgs and spaces](https://cloud.ibm.com/docs/account?topic=account-orgsspacesusers#createorg).
 
 
 ## Which Cloud Foundry regions can I use?
@@ -284,14 +284,14 @@ To transfer ownership of your entire account, create a support case that request
 {: faq}
 {: support}
 
-You can change your personal information, such as name, email, or phone number, by going to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) **>  Profile and settings**. You can't change your IBMid, but you can create a new one if appropriate. The [IBMid worldwide help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html) is available to help with general ID questions that aren't specific to your {{site.data.keyword.Bluemix_notm}} account.
+You can change your personal information, such as name, email, or phone number, by going to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) **> Profile and settings**. You can't change your IBMid, but you can create a new one if appropriate. The [IBMid worldwide help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html) is available to help with general ID questions that aren't specific to your {{site.data.keyword.Bluemix_notm}} account.
 
 ## How do I change my account language?
 {: #switch-account-lang}
 {: faq}
 {: support}
 
-The language used is based on your web browser settings. To view content in your native language, update your browser's language settings.
+The language that is used is based on your web browser settings. To view content in your native language, update your browser's language settings.
 
 ## Does {{site.data.keyword.Bluemix_notm}} support batch registration of users?
 {: #batch-registration}

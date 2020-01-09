@@ -39,7 +39,7 @@ If you're not part of a company that uses federated IDs, sign up for {{site.data
 1. Complete the remaining fields with your information, and click **Create account**.
 1. Confirm your account by clicking the link in the confirmation email that's sent to your provided email address.
 
-If you encounter any issues logging in with your new account, see [Troubleshooting for accessing {{site.data.keyword.Bluemix_notm}}](/docs/account?topic=account-accessing) for help.
+If you encounter any issues with logging in with your new account, see [Troubleshooting for accessing {{site.data.keyword.Bluemix_notm}}](/docs/account?topic=account-accessing) for help.
 
 ## Signing up with a federated ID
 {: #signup-federated}
