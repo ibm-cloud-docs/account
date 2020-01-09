@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2019
-lastupdated: "2019-08-19"
+  years: 2016, 2020
+lastupdated: "2020-01-08"
 
 keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, switch to IBMid
 
@@ -42,7 +42,7 @@ To switch your existing SoftLayer account to an IBMid, you create an IBMid and t
 
 2. Follow the wizard prompts to create your IBMid.
 
-   Enter an email address that is not currently in use by any IBMid. This email address is used as the user name for the new IBMid, and it's where your registration code is sent after the IBMid is created. You can update the email address that is associated with the IBMid later on, but you can't change the user name.
+   Enter an email address that is not currently in use by any IBMid. This email address is used as the username for the new IBMid, and it's where your registration code is sent after the IBMid is created. You can update the email address that is associated with the IBMid later on, but you can't change the username.
 
 ### Confirming your IBMid with the registration code
 {: #confIBMiduseregcode}
@@ -51,11 +51,11 @@ To switch your existing SoftLayer account to an IBMid, you create an IBMid and t
 
 2. After you submit your registration code, use your IBMid to log in to the customer portal.
 
-   At the Account Login prompt, go to the **IBMid Account Login** section and click **Log in with IBMid**. Do not use the **Username** and **Password** fields that you used previously with your SoftLayer ID.
+   At the Account Login prompt, go to the **IBMid Account Login** section and click **Log in with IBMid**. Do not use the **username** and **Password** fields that you used previously with your SoftLayer ID.
 
 If you are a new customer, you're asked for your existing IBMid or to create a new IBMid when you check out your order.
-  * To use an existing IBMid, enter the user name or the email address of the IBMid if it is not shared across multiple IBMids.
-  * To create a new IBMid, enter an email address that is not currently in use by any IBMid. This email address is the user name for the IBMid, and it's where your registration code is sent after the IBMid is created. You can update the email address that's associated with the IBMid later on, but you can't change the user name.
+  * To use an existing IBMid, enter the username or the email address of the IBMid if it is not shared across multiple IBMids.
+  * To create a new IBMid, enter an email address that is not currently in use by any IBMid. This email address is the username for the IBMid, and it's where your registration code is sent after the IBMid is created. You can update the email address that's associated with the IBMid later on, but you can't change the username.
 
 To resolve any problems with logging in with your IBMid, see [Troubleshooting for accessing {{site.data.keyword.Bluemix_notm}}](/docs/account?topic=account-accessing).
 
@@ -107,7 +107,7 @@ Complete the following steps to link each SoftLayer account to an existing {{sit
       Migrate only end user accounts to IBMid. Do not migrate brand accounts, which are parent accounts for end user accounts and do not contain any resources. Brand account users that migrate to IBMid lose the ability to log in to the Brand Agent Portal (BAP).
       {: important}
 
-Note the following changes after your accounts are linked:
+Note that the following changes after your accounts are linked:
 
   * You now log in to the [{{site.data.keyword.Bluemix}} console ![External link icon](../icons/launch-glyph.svg)](https://cloud.ibm.com){: new_window}.
   * You must use your IBMid credentials to access both your SoftLayer and your {{site.data.keyword.Bluemix_notm}} accounts.

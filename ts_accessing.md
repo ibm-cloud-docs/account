@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-08-20"
+  years: 2015, 2020
+lastupdated: "2020-01-09"
 
 keywords: troubleshoot account, account problem, account support, account help, account error, access error, login error, error message
 
@@ -158,7 +158,7 @@ Check your inbox and your spam folder for the email. The confirmation email is s
 {: tsResolve}
 
   * Check for filters or settings in your email program that delete email or route email to a location other than your inbox. 
-  * Make sure your spam filter or security software is allowing emails with links through to your email address.
+  * Make sure that your spam filter or security software is allowing emails with links through to your email address.
   * Contact your email provider or administrator to ask them to check for any configuration that blocks email from `ibmacct@iam.ibm.com`.
 
 After you unblock the confirmation email, go to the [{{site.data.keyword.Bluemix_notm}} console](https://{DomainName}){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") and log in. Click **Resend** to send another confirmation email to the email address that is associated with your IBMid.

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-11-13"
+  years: 2018, 2020
+lastupdated: "2020-01-08"
 
 keywords: account security, login security, TOTP, MFA, password expiration
 
@@ -43,7 +43,7 @@ To set up your security questions:
 4. Click **Save** when you're finished.  
 5. Select the **Yes** checkbox for the security questions to be enabled. Selecting this option might prompt you to sign in to your account again.  
 
-   If this option isn't selected, you don't have access to turn on security questions. You must be the account owner or have the User-managed login setting enabled for you by your account administrator to turn security questions on and off. Contact your account owner or administrator to get access.
+   If this option isn't selected, you don't have access to turn on security questions. You must be the account owner or have the User-managed login setting that is enabled for you by your account administrator to turn security questions on and off. Contact your account owner or administrator to get access.
    {: note}
 
 ## Setting a password expiration
@@ -53,7 +53,7 @@ To set the length of time you would like to use your current password, select an
 
 The password expiration is set to never by default. When you sign up for an account, you're never required to change your password. When you set a password expiration period, you're notified of your password expiration by email 14 days before, 7 days before, and the day the password is set to expire.
 
-This option is available only to users that log in with a SoftLayer ID. To update your password expiration, you must be an account owner or have the User-managed login setting enabled for you by your account administrator on your IAM User details page.
+This option is available only to users that log in with a SoftLayer ID. To update your password expiration, you must be an account owner or have the User-managed login setting that is enabled for you by your account administrator on your IAM User details page.
 {: note}
 
 ## Setting up TOTP authentication
@@ -72,7 +72,7 @@ You might also be prompted for a time-based one-time passcode if the user TOTP s
 ## Setting up external authentication
 {: #third-party-MFA}
 
-You or your account administrator can order Symantec or phone-based authentication for you for a monthly cost. For you to order external authentication, you must have the add services classic infrastructure permission. To find out if external authentication is enabled, go to **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Profile and settings**, and select **Login settings**. For more information, see [Ordering external authentication MFA for a user](/docs/iam?topic=iam-external).
+You or your account administrator can order Symantec or phone-based authentication for you for a monthly cost. For you to order external authentication, you must have the add services classic infrastructure permission. To find out whether external authentication is enabled, go to **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Profile and settings**, and select **Login settings**. For more information, see [Ordering external authentication MFA for a user](/docs/iam?topic=iam-external).
 
 ### Setting up Symantec authentication
 

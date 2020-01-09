@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2015, 2020 
+  years: 2015, 2020
 lastupdated: "2020-01-09"
 
 keywords: troubleshoot account, account problem, account support, account help, org error, resource error, error message

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2019
-lastupdated: "2019-01-28"
+  years: 2017, 2020
+lastupdated: "2020-01-09"
 
 keywords: hide resource, limit viewer, exclude user, hide service
 
@@ -20,7 +20,7 @@ subcollection: account
 # Hiding a public resource from users
 {: #exclude}
 
-As an administrator for your {{site.data.keyword.Bluemix}} account, you can hide a public resource from users who have access to the account. You might hide resources to keep sensitive information hidden from non-authorized users, or some information might only need to be accessed by a finite number of people.
+As an administrator for your {{site.data.keyword.Bluemix}} account, you can hide a public resource from users who have access to the account. You might hide resources to keep sensitive information hidden from non-authorized users, or some information might need to be only accessed by a finite number of people.
 {:shortdesc}
 
 Hiding a resource in the catalog does not remove it from the Cloud Foundry command-line interface (CLI) or from the offering category list that's available from the {{site.data.keyword.Bluemix_notm}} console navigation, such as Finance, Mobile, Watson, and Web Apps.

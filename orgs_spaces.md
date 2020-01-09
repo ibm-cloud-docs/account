@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-07-12"
+  years: 2015, 2020
+lastupdated: "2020-01-09"
 
 keywords: account, add orgs, add spaces, cloud foundry orgs
 
@@ -14,6 +14,8 @@ subcollection: account
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:help: data-hd-content-type='help'} 
+{:support: data-reuse='support'}
 {:new_window: target="_blank"}
 
 # Adding orgs and spaces
@@ -51,13 +53,15 @@ In a Subscription account, the quota is a user-defined limit that initiates spen
 
 ## Adding orgs
 {: #createorg}
+{: help} 
+{: support}
 
 If you have a billable account, you can add as many orgs as you need. Lite accounts can have only one org, which is already created in your account. Orgs can't be deleted after you add them.
 
 1. Go to **Manage** > **Account**, and select **Account resources > Cloud Foundry orgs**. Click **Create**.
 2. Enter an org name. The name must be unique in {{site.data.keyword.Bluemix_notm}}.
 
-   If the org name is already in use by another {{site.data.keyword.Bluemix_notm}} Public, Dedicated, or Local user, you'll have to specify a different name.
+   If the org name is already in use by another {{site.data.keyword.Bluemix_notm}} Public, Dedicated, or Local user, you have to specify a different name.
 3. Click **Add**.
 
 After you add the org, you're automatically assigned the Organization Manager permission, so you can edit the org name, add users, and create or delete spaces in the org.
@@ -70,6 +74,8 @@ You can assign the following [Cloud Foundry roles](/docs/iam?topic=iam-cfaccess#
 
 ## Adding spaces
 {: #spaceinfo}
+{: help} 
+{: support}
 
 Within an organization, you can use spaces to group a set of applications, services, and users. Spaces are defined within a single {{site.data.keyword.Bluemix_notm}} region. You can create spaces in an org based on the delivery lifecycle. For example, you can create a `dev` space as a development environment, a `test` space as a testing environment, and a `production` space as a production environment. Then, you can associate your apps with spaces.
 

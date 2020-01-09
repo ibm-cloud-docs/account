@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-10-22"
+  years: 2019, 2020
+lastupdated: "2020-01-09"
 
 keywords: enterprise, enterprise account, multiple accounts, organization, hierarchy
 
@@ -27,7 +27,7 @@ subcollection: account
 When compared to using multiple stand-alone accounts, enterprises offer the following key benefits:
 - Centralized account management: View your entire enterprise hierarchy at a glance, without needing to switch accounts. You can add existing accounts or create new accounts directly within the enterprise.
 - Consolidated subscription billing: Track your subscriptions and credit spending for all accounts from a single view. Your subscription credit is pooled and shared among accounts in the enterprise.
-- Top-down usage reporting: From your enterprise account, you can view usage of all accounts in your enterprise, organized by account group.
+- Top-down usage reporting: From your enterprise account, you can view usage of all accounts in your enterprise, which is organized by account group.
 
 ## Enterprise hierarchy
 {: #enterprise-hierarchy}
@@ -81,7 +81,7 @@ For more information, see [Viewing usage in an enterprise](/docs/billing-usage?t
 
 Enterprises keep user and access management isolated between the enterprise and its child accounts to provide greater security for your accounts' data. The users and their assigned access in the enterprise account are entirely separate from those in the child accounts, and no access is automatically inherited between the two types of accounts.
 
-The user lists for each account are only visible to the users who are invited to that account. Just because a user is invited and given access to manage the entire enterprise, it doesn't mean that they can view the users invited to each child account. User management in each enterprise and each account is entirely separate and must be managed by the account owner or a user given the Administrator role on the User management account management service in the specific account.
+The user lists for each account are only visible to the users who are invited to that account. Just because a user is invited and given access to manage the entire enterprise, it doesn't mean that they can view the users who are invited to each child account. User management in each enterprise and each account is entirely separate and must be managed by the account owner or a user given the Administrator role on the User management account management service in the specific account.
 
 Similar to how user management is entirely separate in each account and the enterprise itself, so is access management. This separation means that users who manage your enterprise can't access account resources within the child accounts unless you specifically enable them to. For example, your financial officer can have the Administrator role on the Billing account management service within the enterprise account, which provides them access to billing and payment information and usage data down to the resource type. But, unless they are invited to a child account and are assigned access to the Billing account management service for that account, they can't view offers or update spending limits for the child account.
 

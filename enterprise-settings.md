@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-07-25"
+  years: 2019, 2020
+lastupdated: "2020-01-09"
 
 keywords: enterprise, enterprise settings, manage enterprise, view enterprise, rename enterprise
 
@@ -20,7 +20,7 @@ subcollection: account
 # Managing your enterprise
 {: #enterprise-settings}
 
-From the dashboard of your {{site.data.keyword.Bluemix}} enterprise, you can view enterprise details, take common actions such as adding accounts and inviting users, and view billing information. You can also rename your enterprise on the dashboard or using the CLI or API.
+From the dashboard of your {{site.data.keyword.Bluemix}} enterprise, you can view enterprise details, take common actions such as adding accounts and inviting users, and view billing information. You can also rename your enterprise on the dashboard or by using the CLI or API.
 {:shortdesc}
 
 To manage enterprise settings, you need the Administrator or Editor role on the Enterprise service in the enterprise account.

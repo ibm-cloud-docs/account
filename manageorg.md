@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-10-01"
+  years: 2015, 2020
+lastupdated: "2020-01-08"
 
 keywords: update orgs, update spaces, quotas, Cloud Foundry orgs, domains
 
@@ -61,4 +61,5 @@ You can view the resources of only one org at a time. If you are a member of mul
 
     To change the quota that is allocated to an org, you must create a support case. For more information, see [Working with support cases](/docs/get-support?topic=get-support-open-case).
 
-    To view the quota details at the space level for each location, click the Actions icon ![Action icon](../icons/action-menu-icon.svg) for the respective org, and select **Quotas**. Then, expand the each row accordingly.
+    To view the quota details at the space level for each location, click the Actions icon ![Action icon](../icons/action-menu-icon.svg) for the respective org, and select **Quotas**. Then, expand each row accordingly.
+
