@@ -227,36 +227,3 @@ Complete the following steps:
 
   1. On the Add credit card page, complete all the required fields.
   2. Select **I have read and agree to IBM's Terms and Conditions**, then click **Submit**.
-
-## Why can't I apply a feature code?
-{: #cannot-apply-feature-code}
-{: troubleshoot}
-
-When you try to apply a feature code, you see an error that states that the code cannot be applied.
-{: tsSymptoms}
-
-You might see this error for any of the following reasons:
-{: tsCauses}
-
-- Your account doesn't meet the requirements for the feature code.
-- You don't have the required access in the account. 
-- The code expired.
-
-
-- Verify that you have the correct account type. For example, some feature codes for educational promotions are only for Lite accounts. To view your account type, go to **Manage > Account**, and select **Account settings**. For more information, see [Applying feature codes](/docs/account?topic=account-codes).
-- Verify that you have access to apply the code. To apply any code, you must have an Editor role or higher on all account management services. To view or change roles, see [Assigning access to account management services](/docs/iam?topic=iam-account-services).
-- Contact the person who provided the code for help with reissuing an expired code.
-{: tsResolve}
-
-## Why can’t I create a service after I apply a feature code?
-{: #cant-create-service-feature-code}
-{: troubleshoot}
-
-When you try to create an instance of a service from the catalog, you're prompted to upgrade with a message such as `Upgrade your account to create instances of the offering.`
-{: tsSymptoms}
-
-Your account wasn't enabled to create resources of that type after you applied the feature code. The resources or capabilities that are provided vary for each feature code.
-{: tsCauses}
-
-Contact the person who gave you the feature code to verify the capabilities that it can enable for your account. For example, contact your educational provider for feature codes that they gave you for use with coursework.
-{: tsResolve}
