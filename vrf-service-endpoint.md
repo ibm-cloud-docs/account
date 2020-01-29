@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-12-04"
+  years: 2019, 2020
+lastupdated: "2020-01-29"
 
 keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network
 
@@ -37,7 +37,7 @@ To enable VRF, create a support case with your request.
 
 1. In the console, go to **Manage > Account**, then click **Account settings**.
 1. In the Virtual routing and forwarding section, click **Create case**.
-1. In the case description, replace `ADD YOUR ACCOUNT NUMBER` with your classic infrastructure account number, and click **Submit**.
+1. In the case description, enter your classic infrastructure account number, and click **Submit**.
 
    Don't change the rest of the prefilled support case information. The information is tailored to make sure your request is handled as quickly as possible.
    {: tip}
