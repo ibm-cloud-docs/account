@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-01-09"
+lastupdated: "2020-02-05"
 
 keywords: account types, Lite, free account, trial account, paid account, buy account, account difference, compare account, subscription
 
@@ -63,7 +63,6 @@ Check out the following list of key features that are available in a Lite accoun
    * The account is free - no credit card required.
    * The account never expires.
    * You can use one org in one {{site.data.keyword.Bluemix_notm}} region.
-   * Basic {{site.data.keyword.Bluemix_notm}} support for free. Basic support is provided for non-production environments or workloads where traditional severities are not used and specific response times are not stipulated.
    * You receive email notifications about your account status and quota limits.
    * Your Cloud Foundry apps can access up to 256 MB of free, instantaneous runtime memory per month.
    * You can provision one instance of any service in the [{{site.data.keyword.Bluemix_notm}} catalog ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/catalog/?search=label:lite%20lite){: new_window} that has a Lite plan.
@@ -77,7 +76,7 @@ With a Pay-As-You-Go account, you can access the full {{site.data.keyword.Bluemi
 
 You can create multiple resource groups to easily manage quota and view billing usage for a set of resources. Your charges are based on your use of {{site.data.keyword.Bluemix_notm}} computing and services. If you use more than the free runtime and service allowances, you receive a monthly invoice that provides details about your resource charges.
 
-Also, with a Pay-As-You-Go account, you can order Advanced or Premium support plans to get extra help with your production workloads. Learn more in [Support plans](/docs/get-support?topic=get-support-support-plans).
+Basic support is included with your {{site.data.keyword.Bluemix_notm}} Pay-As-You-Go. It is provided for non-production environments or workloads where traditional severities are not used and specific response times are not stipulated. Also, with a Pay-As-You-Go account, you can order Advanced or Premium support plans to get extra help with your production workloads. Learn more in [Support plans](/docs/get-support?topic=get-support-support-plans).
 
 ## Subscription account
 {: #subscription-account}
