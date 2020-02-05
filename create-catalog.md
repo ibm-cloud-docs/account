@@ -37,6 +37,8 @@ To complete this tutorial, you need to be assigned the following roles:
 * Manager role on the Schematics service
 * Viewer role on all resource groups
 
+For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
+
 If you don't see what you're expecting in the console based on your permissions, try refreshing your session by going to https://cloud.ibm.com/login.
 {: tip}
 

@@ -30,7 +30,7 @@ This feature is available only in a closed beta. If you’re interested in parti
 ## Before you begin
 {: #prereqs-acctfilter}
 
-To complete this tutorial, you need to be assigned the administrator role on the private catalog service. With this type of access, you can set filters in the {{site.data.keyword.cloud_notm}} catalog for all users in the account.
+To complete this tutorial, you need to be assigned the administrator role on the private catalog service. With this type of access, you can set filters in the {{site.data.keyword.cloud_notm}} catalog for all users in the account. For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
 
   If you don't see what you're expecting in the console based on your permissions, try refreshing your session by going to https://cloud.ibm.com/login.
   {: tip} 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-02-04"
+lastupdated: "2020-02-05"
 
 keywords: catalog, restrict visibility, hide offering, restrict by user, filter catalog
 
@@ -30,7 +30,7 @@ This feature is available only in a closed beta. If you’re interested in parti
 ## Before you begin
 {: #prereq-restrict}
 
-To complete this tutorial, you need to be assigned only the editor role on the private catalog service. With this type of access, you can create private catalogs and set filters that apply only to users with access to your private catalog. You can also view the account-level filters on the Settings page, but you can't edit them. 
+To complete this tutorial, you need to be assigned only the editor role on the private catalog service. With this type of access, you can create private catalogs and set filters that apply only to users with access to your private catalog. You can also view the account-level filters on the Settings page, but you can't edit them. For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
 
   If you don't see what you're expecting in the console based on your permissions, try refreshing your session by going to https://cloud.ibm.com/login.
   {: tip}

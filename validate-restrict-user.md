@@ -30,7 +30,7 @@ This feature is available only in a closed beta. If you’re interested in parti
 ## Before you begin
 {: #prereq-restrict-validate}
 
-To complete this tutorial, you need to be assigned the viewer role on the private catalog service. With this type of access, you can view only the offerings included in the filter that the private catalog editor set in [Filtering the {{site.data.keyword.cloud_notm}} catalog at a private catalog level](/docs/account?topic=account-restrict-by-user). You can also view what filters the editor set, but you can't update them.
+To complete this tutorial, you need to be assigned the viewer role on the private catalog service. With this type of access, you can view only the offerings included in the filter that the private catalog editor set in [Filtering the {{site.data.keyword.cloud_notm}} catalog at a private catalog level](/docs/account?topic=account-restrict-by-user). You can also view what filters the editor set, but you can't update them. For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
 
   If you don't see what you're expecting in the console based on your permissions, try refreshing your session by going to https://cloud.ibm.com/login.
   {: tip}

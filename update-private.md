@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-01-31"
+lastupdated: "2020-02-05"
 
 keywords: catalog, private catalog, update, private catalog offering, update version
 
@@ -30,7 +30,7 @@ This feature is available only in a closed beta. If you’re interested in parti
 ## Before you begin
 {: #prereq-update}
 
-To complete this tutorial, you need to be assigned the editor role on the private catalog service. With this type of access, you can create private catalogs and set filters that apply only to users with access to your private catalog. You can also view the account-level filters on the Settings page, but you can't update them.
+To complete this tutorial, you need to be assigned the editor role on the private catalog service. With this type of access, you can create private catalogs and set filters that apply only to users with access to your private catalog. You can also view the account-level filters on the Settings page, but you can't update them. For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
 
   If you don't see what you're expecting in the console based on your permissions, try refreshing your session by going to https://cloud.ibm.com/login.
   {: tip}

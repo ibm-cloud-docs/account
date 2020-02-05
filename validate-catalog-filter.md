@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-02-04"
+lastupdated: "2020-02-05"
 
 keywords: catalog, visibility, filter catalog, hide offering, catalog filtering, validating
 
@@ -30,7 +30,7 @@ This feature is available only in a closed beta. If you’re interested in parti
 ## Before you begin
 {: #prereqs-acctfilter-validate}
 
-To complete this tutorial, you need to be assigned only the viewer role on the private catalog service. With this type of access, you can view only the offerings included in the filter that the administrator set in [Filtering the {{site.data.keyword.cloud_notm}} catalog for all account users](/docs/account?topic=account-filter-account). You can also view what filters the administrator set, but you can't update them. 
+To complete this tutorial, you need to be assigned only the viewer role on the private catalog service. With this type of access, you can view only the offerings included in the filter that the administrator set in [Filtering the {{site.data.keyword.cloud_notm}} catalog for all account users](/docs/account?topic=account-filter-account). You can also view what filters the administrator set, but you can't update them. For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
 
   If you don't see what you're expecting in the console based on your permissions, try refreshing your session by going to https://cloud.ibm.com/login.
   {: tip}

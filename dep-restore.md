@@ -16,7 +16,7 @@ subcollection: account
 {:tip: .tip}
 {:note: .note}
 {:important: .important}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 
 # Deprecating and restoring a version of a software offering
 {: #dep-restore}

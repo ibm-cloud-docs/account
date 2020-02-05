@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-02-04"
+lastupdated: "2020-02-05"
 
 keywords: catalog, catalogs, private catalogs, install software, software offering 
 
@@ -36,6 +36,8 @@ To complete this tutorial, you need to be assigned the following roles:
 * Administrator and manager roles on the Kubernetes cluster service
 * Manager role on the Schematics service
 * Viewer role on all resource groups
+
+For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
 
 If you don't see what you're expecting in the console based on your permissions, try refreshing your session by going to https://cloud.ibm.com/login.
 {: tip}
