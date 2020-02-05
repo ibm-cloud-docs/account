@@ -44,10 +44,17 @@ Managing your account
         manageorg.md
 
     {: .topicgroup}
-    Managing catalog visibility
-        access.md
-        include.md
-        exclude.md
+     Managing catalogs
+        catalog.md
+        catalog-access-reqs.md
+        visibility-public-catalog.md
+        validate-catalog-filter.md
+        restrict-by-user.md
+        validate-restrict-user.md
+        create-catalog.md
+        install-sw-private.md
+        update-private.md
+        dep-restore.md
 
     {: .topicgroup}
     Setting up an enterprise
