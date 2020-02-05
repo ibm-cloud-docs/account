@@ -24,7 +24,7 @@ subcollection: account
 This tutorial walks you through the steps for creating a private catalog and adding your own software offering. The software offering is available to all users with access to the private catalog.
 {: shortdesc} 
 
-This feature is available only in a closed beta. If you’re interested in participating, contact kala.nenkova@ibm.com.
+This feature is available only in a closed beta program. If you’re interested in participating, contact kala.nenkova@ibm.com.
 {: note}
 
 ## Before you begin

@@ -24,7 +24,7 @@ subcollection: account
 In this tutorial, you deprecate a version of the apache-two-instances offering. Then, you restore the version to the {{site.data.keyword.cloud}} catalog. 
 {: shortdesc}
 
-This feature is available only in a closed beta. If you’re interested in participating, contact kala.nenkova@ibm.com.
+This feature is available only in a closed beta program. If you’re interested in participating, contact kala.nenkova@ibm.com.
 {: note}
 
 ## Before you begin
@@ -146,7 +146,7 @@ You successfully completed this task if you ran all CLI commands with the expect
 ## Next steps
 {: #next-feedback}
 
-We'd love to know what you think about the catalog management beta! We put together the following surveys to help with submitting your feedback:
+We'd love to know what you think about the catalog management beta! We put together the following surveys that you can use to provide your feedback:
 
 * [Survey: Filtering the {{site.data.keyword.cloud_notm}} catalog for all account users](https://airtable.com/shrOeKPjUz5bzw02c){: external}
 * [Survey: Filtering the {{site.data.keyword.cloud_notm}} catalog at a private catalog level](https://airtable.com/shrSb9if7nPO36jhh){: external}

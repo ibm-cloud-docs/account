@@ -24,7 +24,7 @@ subcollection: account
 This tutorial walks you through the steps to set a filter to include all {{site.data.keyword.cloud}} offerings, except for {{site.data.keyword.appid_full}}, in the {{site.data.keyword.cloud_notm}} catalog.
 {: shortdesc}
 
-This feature is available only in a closed beta. If you’re interested in participating, contact kala.nenkova@ibm.com.
+This feature is available only in a closed beta program. If you’re interested in participating, contact kala.nenkova@ibm.com.
 {: note}
 
 ## Before you begin

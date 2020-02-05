@@ -26,7 +26,7 @@ As the account owner, you assign users specific access depending on what tasks t
 
 For more details about access management, see [Managing access in {{site.data.keyword.cloud_notm}}](/docs/iam?topic=iam-cloudaccess).
 
-This feature is available only in a closed beta. If you’re interested in participating, contact kala.nenkova@ibm.com.
+This feature is available only in a closed beta program. If you’re interested in participating, contact kala.nenkova@ibm.com.
 {: note}
 
 ## Set up your access groups

@@ -24,7 +24,7 @@ subcollection: account
 In this tutorial, you set a filter to restrict users from viewing offerings that provide free pricing plans in the {{site.data.keyword.cloud}} catalog.  
 {: shortdesc}
 
-This feature is available only in a closed beta. If you’re interested in participating, contact kala.nenkova@ibm.com.
+This feature is available only in a closed beta program. If you’re interested in participating, contact kala.nenkova@ibm.com.
 {: note}
 
 ## Before you begin

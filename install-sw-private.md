@@ -24,7 +24,7 @@ subcollection: account
 In this tutorial, you install the apache-two-instances offering that was previously added to the My first catalog catalog. 
 {: shortdesc} 
 
-This feature is available only in a closed beta. If you’re interested in participating, contact kala.nenkova@ibm.com.
+This feature is available only in a closed beta program. If you’re interested in participating, contact kala.nenkova@ibm.com.
 {: note}
 
 ## Before you begin

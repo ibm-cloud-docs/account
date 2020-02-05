@@ -24,7 +24,7 @@ subcollection: account
 In this tutorial, you validate that you can view all {{site.data.keyword.cloud}} catalog offerings except {{site.data.keyword.appid_short_notm}}. 
 {: shortdesc}
 
-This feature is available only in a closed beta. If you’re interested in participating, contact kala.nenkova@ibm.com.
+This feature is available only in a closed beta program. If you’re interested in participating, contact kala.nenkova@ibm.com.
 {: note}
 
 ## Before you begin

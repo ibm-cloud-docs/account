@@ -24,7 +24,7 @@ subcollection: account
 In this tutorial, you update the apache-two-instances offering by updating the readme of the existing version and adding a new version. 
 {: shortdesc}
 
-This feature is available only in a closed beta. If you’re interested in participating, contact kala.nenkova@ibm.com.
+This feature is available only in a closed beta program. If you’re interested in participating, contact kala.nenkova@ibm.com.
 {: note}
 
 ## Before you begin

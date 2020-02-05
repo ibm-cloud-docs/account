@@ -24,7 +24,7 @@ subcollection: account
 Learn how to manage the {{site.data.keyword.cloud}} offerings that users in your account and private catalogs can view in the {{site.data.keyword.cloud_notm}} catalog. Gain an understanding of how to add your own software offerings to private catalogs to make them available for users with the required access. 
 {: shortdesc}
 
-This feature is available only in a closed beta. If you’re interested in participating, contact kala.nenkova@ibm.com.
+This feature is available only in a closed beta program. If you’re interested in participating, contact kala.nenkova@ibm.com.
 {: note}
 
 ## Before you begin
