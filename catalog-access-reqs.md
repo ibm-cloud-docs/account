@@ -21,7 +21,7 @@ subcollection: account
 # Assigning users access
 {: #catalog-access}
 
-As the account owner, you need to assign users specific access depending on what tasks they are performing. To streamline the process of assigning access, you can use access groups to organize a set of users into a single entity. That way, you can assign a single policy to the group one time, and then add or remove users from the group as needed. 
+As the account owner, you assign users specific access depending on what tasks they are performing. To streamline the process of assigning access, you can use access groups to organize a set of users into a single entity. That way, you can assign a single policy to the group one time, and then add or remove users from the group as needed. 
 {: shortdesc}
 
 For more details about access management, see [Managing access in {{site.data.keyword.cloud_notm}}](/docs/iam?topic=iam-cloudaccess).
@@ -32,7 +32,7 @@ This feature is available only in a closed beta. If you’re interested in parti
 ## Set up your access groups
 {: #catalog-access-groups}
 
-Create your access groups, and assign the specific IAM policies.
+See the following sections for details about creating your access groups and assigning specific IAM policies to each one.
 
 ### Administrator access
 {: #catalog-access-admin}
@@ -80,7 +80,7 @@ Viewer access is required for viewing private catalogs, the filtered {{site.data
 
 1. Go to **Users**, and click **Invite users**.
 2. Specify the email addresses of the users. If you are inviting more than one user with a single invitation, they are all assigned the same access.
-3. Select one of the three access groups you created from the Add users to access groups section, and click **Add** > **Invite**.
+3. Select one of the three access groups you previously created, and click **Add** > **Invite**.
 4. Repeat the steps to add users to your other access groups. 
 
 
