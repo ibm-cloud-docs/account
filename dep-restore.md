@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-02-03"
+lastupdated: "2020-02-05"
 
 keywords: deprecate offering, restore offering, catalog, catalogs, software
 
@@ -30,7 +30,7 @@ This feature is available only in a closed beta. If you’re interested in parti
 ## Before you begin
 {: #prereq-restore}
 
-To complete this tutorial, you need to be assigned the editor role on the private catalog service. 
+To complete this tutorial, you need to be assigned the editor role on the private catalog service. For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
 
   If you don't see what you're expecting in the console based on your permissions, try refreshing your session by going to https://cloud.ibm.com/login.
   {: tip}
@@ -142,4 +142,13 @@ When you restore a deprecated version, you are required to validate and publish 
 {: #success-cicd-deprecate}
 
 You successfully completed this task if you ran all CLI commands with the expected results.
+
+## Next steps
+{: #next-feedback}
+
+We'd love to know what you think about the catalog management beta! We put together the following surveys to help with submitting your feedback:
+
+* [Survey: Filtering the {{site.data.keyword.cloud_notm}} catalog for all account users](https://airtable.com/shrOeKPjUz5bzw02c){: external}
+* [Survey: Filtering the {{site.data.keyword.cloud_notm}} catalog at a private catalog level](https://airtable.com/shrSb9if7nPO36jhh){: external}
+* [Survey: Adding your own software to a private catalog](https://airtable.com/shr6Fornt8WwtAKPZ){: external}
 
