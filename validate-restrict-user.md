@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-02-04"
+lastupdated: "2020-02-05"
 
 keywords: catalog, restrict offering, hide offering, restrict by user
 
@@ -43,6 +43,7 @@ Validate that you can't view {{site.data.keyword.cloud_notm}} offerings with fre
 1. Click **Catalog** in the console menu bar. 
 2. Select **My first catalog** from the list of catalogs.
 1. Search for the {{site.data.keyword.apiconnect_short}} service, and confirm that no results are returned. The offering is not available, because the editor set a filter to exclude all offerings with free pricing plans.  
+<br>
 
 Next, validate that you can't edit the applied filters:
 
