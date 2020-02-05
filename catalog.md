@@ -30,6 +30,14 @@ This feature is available only in a closed beta. If you’re interested in parti
 ## Before you begin
 {: #landing-prereqs}
 
+### Assign users access
+{: #access-prereq}
+
+The account owner must assign users in their account specific access roles so they can successfully complete the tutorials. For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
+
+### Install the CLI and plug-in
+{: #cli-plugin-install}
+
 You can complete the tutorials by using either the {{site.data.keyword.cloud_notm}} console or command-line interface (CLI). Make sure you install the {{site.data.keyword.cloud_notm}} CLI and the catalogs management CLI plug-in. For details about installing the CLI, see [Getting started with the {{site.data.keyword.cloud_notm}} CLI and Developer Tools](/docs/cli?topic=cloud-cli-getting-started).
 
 After you install the {{site.data.keyword.cloud_notm}} CLI, log in with the **`ibmcloud login`** command to generate an access token and authenticate your session. Then, run the following command to install the catalogs management CLI plug-in:
