@@ -92,11 +92,10 @@ The new version number is included in the **Version** list on the Private tab of
 Before you begin this task, delete the version that you previously created:
 
 1. Go to [Manage > Catalogs](https://cloud.ibm.com/content-mgmt/catalogs), and click **My first catalog** from the list of private catalogs.
-2. Expand the apache-two-instances row, click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg) from the 2.4.41 row, and select **Delete**. 
+2. Expand the apache-two-instances row, click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg) from the 2.4.41 row, and select **Delete**. The selected version is deleted, and version 2.4.39 remains intact. 
+<br>
 
-  <br> The selected version is deleted, and version 2.4.39 remains intact. 
-
-<br><br> Complete the following steps to create a draft version, update it, and merge the changes to the current version of your software offering.  
+Complete the following steps to create a draft version, update it, and merge the changes to the current version of your software offering.  
 
   You need the version locator for your offering version. To find it, run the `ibmcloud catalog offering list --catalog "My first catalog"` command, and search for version 2.4.39.
   {: important}

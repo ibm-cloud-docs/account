@@ -98,6 +98,7 @@ First clean up your resources and the Apache deployment on your cluster by delet
 1. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **Schematics**.
 2. Click **Workspaces**.
 3. In the row for your workspace instance, click the **Actions** ![Actions icon](../icons/actions-icon-vertical.svg) icon, and select delete.
+<br>
 
 Complete the following steps to add your software offering by using the CLI. You can use this task in a CI/CD process.
 
