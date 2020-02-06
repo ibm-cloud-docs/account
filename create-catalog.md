@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-02-05"
+lastupdated: "2020-02-06"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, offering visibility, import software
 
@@ -148,3 +148,8 @@ Complete the following steps to add your software offering by using the CLI. You
 {: #install-sw-next}
 
 A user installs the apache-two-instances offering from your private catalog. See [Installing a private software offering](/docs/account?topic=account-install-sw) for more information.
+
+### Providing feedback
+{: #survey-addsw}
+
+We put together a [survey](https://airtable.com/shr6Fornt8WwtAKPZ){: external} specifically about this tutorial. We'd love to know what you think!
