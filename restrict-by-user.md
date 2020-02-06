@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-02-05"
+lastupdated: "2020-02-06"
 
 keywords: catalog, restrict visibility, hide offering, restrict by user, filter catalog
 
@@ -55,7 +55,7 @@ Complete the following steps to create your private catalog and set a filter tha
 
 Complete the following steps to create your private catalog and set a filter that excludes offerings with free plans from the {{site.data.keyword.cloud_notm}} catalog.
 
-1. If you created the `My first catalog` catalog in the previous section, delete it.
+1. If you created the My first catalog catalog in the previous section, delete it.
     
     ```
     ibmcloud catalog delete --catalog "My first catalog"
@@ -83,5 +83,12 @@ Complete the following steps to create your private catalog and set a filter tha
 {: #next-restrictuser}
 
 A user with access to the private catalog validates that they can't view offerings with free pricing plans in the {{site.data.keyword.cloud}} catalog. See [Validating filters set at the private catalog level](/docs/account?topic=account-restrict-user-validate) for more information.
+
+### Providing feedback
+{: #survey-privatefilter}
+
+We put together a [survey](https://airtable.com/shrSb9if7nPO36jhh){: external} specifically about this tutorial. We'd love to know what you think!
+
+
 
 
