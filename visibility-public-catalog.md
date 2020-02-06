@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-02-05"
+lastupdated: "2020-02-06"
 
 keywords: catalog, private catalogs, visibility, filter catalog, hide offering, catalog filtering
 
@@ -72,3 +72,9 @@ Complete the following steps to set a filter that includes all {{site.data.keywo
 {: #next-acctfilter}
 
 A user in the account validates that they can view all catalog offerings except {{site.data.keyword.appid_short_notm}}. See [Validating the account-level catalog filters](/docs/account?topic=account-validate-acctfilter) for more information.
+
+### Providing feedback
+{: #survey-acctfilter}
+
+We put together a [survey](https://airtable.com/shrOeKPjUz5bzw02c){: external} specifically about this tutorial. We'd love to know what you think!
+
