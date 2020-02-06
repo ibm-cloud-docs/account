@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-02-05"
+lastupdated: "2020-02-06"
 
 keywords: deprecate offering, restore offering, catalog, catalogs, software
 
@@ -146,9 +146,8 @@ You successfully completed this task if you ran all CLI commands with the expect
 ## Next steps
 {: #next-feedback}
 
-We'd love to know what you think about the catalog management beta! We put together the following surveys that you can use to provide your feedback:
+If you didn't get a chance to complete the surveys about the catalog management beta, we'd love to know what you think! 
 
 * [Survey: Filtering the {{site.data.keyword.cloud_notm}} catalog for all account users](https://airtable.com/shrOeKPjUz5bzw02c){: external}
 * [Survey: Filtering the {{site.data.keyword.cloud_notm}} catalog at a private catalog level](https://airtable.com/shrSb9if7nPO36jhh){: external}
 * [Survey: Adding your own software to a private catalog](https://airtable.com/shr6Fornt8WwtAKPZ){: external}
-
