@@ -43,8 +43,10 @@ Managing your account
         orgs_spaces.md
         manageorg.md
 
+    software-license.md
+
     {: .topicgroup}
-     Managing catalogs
+    Managing catalogs
         catalog.md
         catalog-access-reqs.md
         visibility-public-catalog.md
