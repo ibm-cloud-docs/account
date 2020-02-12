@@ -6,7 +6,7 @@ lastupdated: "2020-01-09"
 
 keywords: dashboard, widgets display, manage visibility, customize, console
 
-subcollection: overview
+subcollection: account
 
 ---
 
