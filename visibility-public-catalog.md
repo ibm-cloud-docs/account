@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-02-06"
+lastupdated: "2020-02-12"
 
 keywords: catalog, private catalogs, visibility, filter catalog, hide offering, catalog filtering
 
@@ -44,7 +44,7 @@ Complete the following steps to set a filter that includes all {{site.data.keywo
 1. Select **Settings**.
 1. In the Rules section, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg).
 1. Select **Exclude all offerings in the {{site.data.keyword.cloud_notm}} catalog** to start with an empty catalog.   
-1. Click **Add rule**, select **Provider**, and click **IBM**. 
+1. Click **Add another rule**, select **Provider**, and click **IBM**. 
 1. Click **Add exception**, and select **Exclude** > **{{site.data.keyword.appid_short_notm}}**.
 1. Expand the Filter preview section to verify that {{site.data.keyword.appid_short_notm}} is not included in the list of offerings. 
 1. Click **Update** to apply your filter. 
