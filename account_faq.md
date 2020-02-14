@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-01-09"
+lastupdated: "2020-02-14"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -43,6 +43,22 @@ If you are able to log in to an {{site.data.keyword.Bluemix_notm}} account, go t
    After you open the case, an email notification is sent to you. Follow the instructions for further communication.
 
 If you can't log in to an {{site.data.keyword.Bluemix_notm}} account, [create an account request](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
+
+## Can I log in to the console with my SoftLayer ID?
+{: #slid}
+{: faq}
+
+Yes, you can use your SoftLayer ID to log in to the console. Go to the [login page](https://cloud.ibm.com/login){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon"), and select **SoftLayer ID** from the **ID** list.  
+
+## Where can I find my SoftLayer resources in the console?
+{: #slitems}
+{: faq}
+
+To view your devices, storage, network, security, and services, you can use any of the following options:
+
+* Click the **Menu icon** ![Menu icon](../icons/icon_hamburger.svg) > **Classic Infrastructure**.
+* Click the **Menu icon** ![Menu icon](../icons/icon_hamburger.svg) > **Resource list**. 
+* Click any of the links that are listed in the Classic infrastructure widget on your dashboard. Go to **Menu icon** ![Menu icon](../icons/icon_hamburger.svg) > **Dashboard** to access the Classic infrastructure widget.
 
 ## What is Cloud Foundry?
 {: #cloud-foundry}
@@ -197,53 +213,11 @@ Click **Support** from the console menu bar to go to the Support Center. For mor
 
 {{site.data.keyword.Bluemix_notm}} trial accounts are available for faculty and students at accredited academic institutions. To qualify for a trial account, go to [Harness the Power of IBM ![External link icon](../icons/launch-glyph.svg)](https://ibm.biz/academic){: new_window} and validate your institution credentials. Unlike Lite accounts, trial accounts expire after their trial period ends.
 
-## After I link my account, how do I log in?
-{: #al_login}
-{: faq}
-
-After you link your account, use your IBMid to log in to the {{site.data.keyword.Bluemix}} console.
-
-## After I link my account, what's the impact on my support?
-{: #al_support}
-{: faq}
-
-After you link your account, you keep the same level of support when you add {{site.data.keyword.Bluemix_notm}} platform to your account.
-
-## Are there other ways to get help with linking my account?
-{: #al_morehelp}
-{: faq}
-
-  1. See the [Steps to Link your IaaS and PaaS Accounts blog](https://www.ibm.com/blogs/bluemix/2018/03/follow-steps-link-iaas-paas-accounts/){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") for more information.
-  2. From the {{site.data.keyword.BluSoftlayer_full}} customer portal, open a **Sales Live Chat** to ask account questions.
-  3. Open a ticket from the customer portal. Select **Support** > **Add ticket** and then, in the **Subject** field, select **Accounting Request** to route your account question to the correct support team.
-
-## How do I link my account if I have several accounts?
-{: #al_multacct}
-{: faq}
-
-If you have multiple SoftLayer accounts, you must link the accounts that have a matching {{site.data.keyword.Bluemix_notm}} platform account, and an accompanying IBMid.
-
-If you don't have a matching {{site.data.keyword.Bluemix_notm}} platform account, and an accompanying IBMid account, a new SoftLayer account can be created to link the accounts.
-
-## What does adding {{site.data.keyword.Bluemix_notm}} platform services to my SoftLayer account mean?
-{: #al_owaffslacct}
-{: faq}
-
-It means that your account has access to all {{site.data.keyword.Bluemix_notm}} platform offerings. After you add the {{site.data.keyword.Bluemix_notm}} platform offering to your account, your account master must enable the user to have access to the offering.
-
-For more information about being an account master, see [Working with users](/docs/iam?topic=iam-iamuserinv#iamuserinv).
-
-## How does linking accounts impact my SoftLayer Master Account ID?
-{: #al_howaffslmastacct}
-{: faq}
-
-You can still use the ID for your SoftLayer account to sign in to the customer portal because the {{site.data.keyword.Bluemix_notm}} console is accessible with IBMids.
-
 ## How can I view accounts that I own?
 {: #accounts-owned}
 {: faq}
 
-The IBM Cloud console header lists all accounts that are affiliated with your login ID, including those you own. You can view your role in each account on the [Users](https://{DomainName}/iam/users) page.
+The {{site.data.keyword.Bluemix_notm}} console header lists all accounts that are affiliated with your login ID, including those you own. You can view your role in each account on the [Users](https://{DomainName}/iam/users) page.
 
 You can also find your accounts from the CLI by running the `ibmcloud account list` command.
 
@@ -319,7 +293,7 @@ Tags are visible throughout your account. If you have permission to see a resour
 
 You must have at least the Editor for IAM-enabled resources or the developer role in a Cloud Foundry space on a resource to add or remove tags on that resource. For more information, see [Granting users access to tag resources](/docs/resources?topic=resources-access#access).
 
-## Can I delete my tag?
+## Can I delete my tags?
 {: # delete-tag}
 {: faq}
 
