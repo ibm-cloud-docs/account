@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-02-14"
+lastupdated: "2020-02-18"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -49,16 +49,6 @@ If you can't log in to an {{site.data.keyword.Bluemix_notm}} account, [create an
 {: faq}
 
 Yes, you can use your SoftLayer ID to log in to the console. Go to the [login page](https://cloud.ibm.com/login){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon"), and select **SoftLayer ID** from the **ID** list.  
-
-## Where can I find my SoftLayer resources in the console?
-{: #slitems}
-{: faq}
-
-To view your devices, storage, network, security, and services, you can use any of the following options:
-
-* Click the **Menu icon** ![Menu icon](../icons/icon_hamburger.svg) > **Classic Infrastructure**.
-* Click the **Menu icon** ![Menu icon](../icons/icon_hamburger.svg) > **Resource list**. 
-* Click any of the links that are listed in the Classic infrastructure widget on your dashboard. Go to **Menu icon** ![Menu icon](../icons/icon_hamburger.svg) > **Dashboard** to access the Classic infrastructure widget.
 
 ## What is Cloud Foundry?
 {: #cloud-foundry}
