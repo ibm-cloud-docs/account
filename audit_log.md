@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-01-09"
+lastupdated: "2020-02-19"
 
-keywords: audit log, user access, account log, system events, monitor system events, user access logs
+keywords: audit log, user access, account log, system events, monitor system events, user access logs, grant audit log access, access to audit logs 
 
 subcollection: account
 
@@ -38,3 +38,8 @@ From the audit log page, you can also see data for each access attempt that is m
 2. Then, **Filter** for the user, select the timeframe that you want to view, and choose an object type.  
 
 The access log for each user displays the access attempts that were made by that user by date, along with the IP address from which the access attempt was made. Information within the access log is read-only.
+
+### Granting access to the audit log
+{: #grant-access-logs}
+
+The Viewer role or higher on all account management services is required to view the audit log. For classic infrastructure permissions, a user must be assigned the Super user role. 
