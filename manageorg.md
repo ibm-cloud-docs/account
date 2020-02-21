@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-01-08"
+lastupdated: "2020-02-21"
 
 keywords: update orgs, update spaces, quotas, Cloud Foundry orgs, domains
 
@@ -36,7 +36,10 @@ You can view the resources of only one org at a time. If you are a member of mul
 
   * To delete a space, select the org in which the space is assigned. Then, click the Actions icon ![Action icon](../icons/action-menu-icon.svg), and select **Delete**.
 
-    When you delete a space, all included resources and users are also deleted. You can delete spaces but not orgs.
+    When you delete a space, all included resources and users are also deleted. 
+
+    You can delete spaces but not orgs.
+    {: note}
 
   * To edit user roles at the org level, click the Actions icon ![Action icon](../icons/action-menu-icon.svg), and select **Users**.
     {: #listmembers}
