@@ -2,9 +2,9 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-02-06"
+lastupdated: "2020-02-25"
 
-keywords: catalog, restrict visibility, hide offering, restrict by user, filter catalog
+keywords: catalog, restrict visibility, hide offering, restrict by user, filter catalog, private catalog
 
 subcollection: account
 
@@ -16,15 +16,15 @@ subcollection: account
 {:tip: .tip}
 {:note: .note}
 {:important: .important}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 
 # Filtering the {{site.data.keyword.cloud_notm}} catalog at a private catalog level
 {: #restrict-by-user}
 
-In this tutorial, you set a filter to restrict users from viewing offerings that provide free pricing plans in the {{site.data.keyword.cloud}} catalog.  
+In this tutorial, you set a filter to restrict users from viewing all third-party offerings in the {{site.data.keyword.cloud}} catalog.  
 {: shortdesc}
 
-This feature is available only in a closed beta program. If you’re interested in participating, contact kala.nenkova@ibm.com.
+This feature is available only in a closed beta. If you’re interested in participating, contact kala.nenkova@ibm.com.
 {: note}
 
 ## Before you begin
@@ -38,22 +38,22 @@ To complete this tutorial, you need to be assigned only the editor role on the p
 ## Create a private catalog and set a filter in the console
 {: #restrict-editor-filter}
 
-Complete the following steps to create your private catalog and set a filter that excludes offerings with free plans from the {{site.data.keyword.cloud_notm}} catalog.
+Complete the following steps to create your private catalog and set a filter that excludes all third-party offerings from the {{site.data.keyword.cloud_notm}} catalog.
 
 1. Go to [Manage > Catalogs](https://cloud.ibm.com/content-mgmt/catalogs), and click **Create**.
 1. Enter `My first catalog` as the catalog name, select the resource group that you want to assign it to, and click **Create**.
 2. Click the name of your new catalog.
-1. Click **{{site.data.keyword.cloud_notm}} catalog**. The list that's displayed includes the available offerings based on the filter that the administrator set on the Settings page. 
+1. Click **{{site.data.keyword.IBM_notm}} offerings**. The list that's displayed includes the available offerings based on the filter that the administrator set on the Settings page. 
 2. Click **Manage filters** to set additional restrictions that apply only to users with access to the private catalog that you're creating. 
 3. In the Rules section, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg).
 4. Make sure **Including all offerings in the {{site.data.keyword.cloud_notm}} catalog** is selected, and click **Add rule**.
-5. Select **Pricing plan** from the list, and click **Free**. 
+5. Select **Provider** from the list, and click **Third Party**. 
 6. Click **Update**.
 
 ## Create a private catalog and set a filter by using the CLI
 {: #restrict-cli-filtering}
 
-Complete the following steps to create your private catalog and set a filter that excludes offerings with free plans from the {{site.data.keyword.cloud_notm}} catalog.
+Complete the following steps to create your private catalog and set a filter that excludes all third-party offerings from the {{site.data.keyword.cloud_notm}} catalog.
 
 1. If you created the My first catalog catalog in the previous section, delete it.
     
@@ -72,23 +72,20 @@ Complete the following steps to create your private catalog and set a filter tha
     ```
     {:codeblock}
     
-1. Create a filter that excludes offerings with free plans from the {{site.data.keyword.cloud}} catalog. This filtered view applies to all users with access to your private catalog.
+1. Create a filter that excludes all third-party offerings from the {{site.data.keyword.cloud}} catalog. This filtered view applies to all users with access to your private catalog.
     
     ```
-    ibmcloud catalog filter create --catalog "My first catalog" --include-all true  --pricing-plan free
+    ibmcloud catalog filter create --catalog "My first catalog" --include-all true  --provider third party
     ```
     {:codeblock}
 
 ## Next steps
 {: #next-restrictuser}
 
-A user with access to the private catalog validates that they can't view offerings with free pricing plans in the {{site.data.keyword.cloud}} catalog. See [Validating filters set at the private catalog level](/docs/account?topic=account-restrict-user-validate) for more information.
+A user with access to the private catalog validates that they can't view any third-party offerings in the {{site.data.keyword.cloud}} catalog. See [Validating filters set at the private catalog level](/docs/account?topic=account-restrict-user-validate) for more information.
 
 ### Providing feedback
 {: #survey-privatefilter}
 
 We put together a [survey](https://airtable.com/shrSb9if7nPO36jhh){: external} specifically about this tutorial. We'd love to know what you think!
-
-
-
 
