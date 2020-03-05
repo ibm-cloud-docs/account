@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-02-06"
+lastupdated: "2020-03-05"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, offering visibility, import software
 
@@ -69,7 +69,7 @@ Complete the following steps to add an Apache Helm chart from Bitnami with a few
 1. Enter `My first catalog` as the catalog name, select the resource group that you want to assign it to, and click **Create**.
 1. Select **My first catalog** from the list of private catalogs.
 1. Click **Add offering**.  
-1. Enter the repository URL or TGZ archive location for your software offering, and click **Add**. For testing purposes use the Bitnami Apache offering: https://charts.bitnami.com/ibm/apache-6.0.2.tgz. This creates Apache version 2.4.39 from chart version 6.0.2.
+1. Enter the repository URL or TGZ archive location for your software offering, and click **Add**. For testing purposes use the Bitnami Apache offering: https://charts.bitnami.com/ibm/apache-7.3.7.tgz. This creates Apache version 2.4.41 from chart version 7.3.7.
 1. Click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg), update the offering name to `apache-two-instances`, and set at least one category for your offering, for example, Developer Tools. This category can be used by users later to filter for the offering.
 2. Click **Update** to apply your changes. 
 1. Scroll to the Configure deployment details section, and click **Add deployment values**.
