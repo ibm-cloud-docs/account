@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-02-18"
+lastupdated: "2020-03-09"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -114,7 +114,7 @@ If you have a billable account, there's no limit to the number of resource group
 
 To upgrade your Lite account, go to [Account settings](https://{DomainName}/account/settings). In the Account Upgrade section, click **Add credit card** to upgrade to a Pay-As-You-Go account, or click **Upgrade** for a Subscription account. You can also apply a feature code from an online course or educational event to convert your Lite account to a trial account.
 
-To convert between Pay-As-You-Go and Subscription account types, contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window}.
+To convert between Pay-As-You-Go and Subscription account types, contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/catalog?contactmodule){: new_window}.
 
 If you're not sure of your current account type, you can find it on the Account settings page. Learn more in [Upgrading your account](/docs/account?topic=account-upgrading-account).
 

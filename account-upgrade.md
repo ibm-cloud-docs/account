@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-01-09"
+lastupdated: "2020-03-09"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -50,7 +50,7 @@ If you're upgrading to reactivate a deactivated account, your account might take
 
 With a Subscription account, you commit to a minimum spending amount each month and receive a subscription discount that is applied to that minimum charge. If your usage exceeds your total subscription amount, you're charged the regular non-discounted rate only on the overage.
 
-Subscriptions that you purchase through the console are limited to $5,000 United States dollars (USD) or the equivalent in your billing currency. If you want to purchase a larger subscription, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg).
+Subscriptions that you purchase through the console are limited to $5,000 United States dollars (USD) or the equivalent in your billing currency. If you want to purchase a larger subscription, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://cloud.ibm.com/catalog?contactmodule){: new_window} ![External link icon](../icons/launch-glyph.svg).
 
 To upgrade from a Lite account to a Subscription account, complete the following steps.
 1. Go to **Manage > Account**, and select **Account settings**. Then, click **Upgrade**, which takes you to the Subscriptions page.
@@ -68,4 +68,4 @@ Your subscription renews automatically. If you want to discontinue your subscrip
 ### Converting a Pay-As-You-Go account to a Subscription account
 {: #paygo-to-subscription}
 
-You can convert your Pay-As-You-Go account to a Subscription account at any time. Contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud-computing/bluemix/contact-us){: new_window} ![External link icon](../icons/launch-glyph.svg) to get started.
+You can convert your Pay-As-You-Go account to a Subscription account at any time. Contact [{{site.data.keyword.Bluemix_notm}} Sales](https://cloud.ibm.com/catalog?contactmodule){: new_window} ![External link icon](../icons/launch-glyph.svg) to get started.

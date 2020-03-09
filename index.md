@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-02-05"
+lastupdated: "2020-03-09"
 
 keywords: account types, Lite, free account, trial account, paid account, buy account, account difference, compare account, subscription
 
@@ -99,7 +99,7 @@ Your subscription applies to most services in the catalog. However, some service
 ### Support subscriptions
 {: #support-subscriptions}
 
-Basic support is included with your Subscription account. If you want to enhance your support experience for production-critical resources, contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/contact-us/){: new_window} to purchase a support subscription for an Advanced or Premium support plan. With a support subscription, you commit to a monthly spending amount that goes towards your support costs. 
+Basic support is included with your Subscription account. If you want to enhance your support experience for production-critical resources, contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/catalog?contactmodule){: new_window} to purchase a support subscription for an Advanced or Premium support plan. With a support subscription, you commit to a monthly spending amount that goes towards your support costs. 
 
 Support subscription credit is separate from any platform or service subscription credit in your account and can't be spent on resource usage. For more information, see [How subscription credit is spent](/docs/billing-usage?topic=billing-usage-subscriptions#subscription-basics).
 
@@ -110,7 +110,7 @@ Service bundle subscriptions give you access and credit towards a set of service
 
 You can add services bundles to any type of existing account, including Lite accounts. Service bundle subscriptions are subject to the [{{site.data.keyword.Bluemix_notm}} Service Description](/docs/overview/terms-of-use?topic=overview-terms) terms.
 
-Service bundle subscriptions aren't available through the {{site.data.keyword.Bluemix_notm}} console. To learn more and purchase a service bundle, contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/contact-us/){: new_window}.
+Service bundle subscriptions aren't available through the {{site.data.keyword.Bluemix_notm}} console. To learn more and purchase a service bundle, contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/catalog?contactmodule){: new_window}.
 {:tip}
 
 After you purchase a service bundle subscription, you'll receive an email with a subscription code that you apply to add the bundle to your account. For more information about how to apply subscription codes, see [Adding subscription credit](/docs/billing-usage?topic=billing-usage-subscriptions#subscription-codes). When your service bundle expires or you use all of the credit, you can continue to use any of the services, with usage charged at the Pay-As-You Go rate.
