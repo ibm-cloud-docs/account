@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2020
-lastupdated: "2020-02-05"
+lastupdated: "2020-03-04"
 
 keywords: catalog, restrict offerings, public catalog, private catalog, Helm chart, Terraform, add software
 
@@ -21,7 +21,7 @@ subcollection: account
 # Working with the {{site.data.keyword.cloud_notm}} catalog and your private catalogs
 {: #manage-catalog}
 
-Learn how to manage the {{site.data.keyword.cloud}} offerings that users in your account and private catalogs can view in the {{site.data.keyword.cloud_notm}} catalog. Gain an understanding of how to add your own software offerings to private catalogs to make them available for users with the required access. 
+Learn how to manage the {{site.data.keyword.cloud}} offerings that users can view in the {{site.data.keyword.cloud_notm}} catalog and in the private catalogs they have access to. Gain an understanding of how to add your own offerings to private catalogs to make them available for users with the required access. 
 {: shortdesc}
 
 This feature is available only in a closed beta program. If you’re interested in participating, contact kala.nenkova@ibm.com.

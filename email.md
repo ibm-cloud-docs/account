@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-10-16"
+  years: 2015, 2020
+lastupdated: "2020-02-28"
 
 keywords: platform notifications, email notifications, IBM Cloud notifications, notification preferences, email preferences, user notifications, infrastructure notifications
 
@@ -23,7 +23,7 @@ subcollection: account
 # Setting email preferences
 {: #email-prefs}
 
-Depending on your {{site.data.keyword.Bluemix}} account type, you can choose whether to receive email notifications about {{site.data.keyword.Bluemix}} platform unplanned events and planned events, or infrastructure email notifications about unplanned events, maintenance, and announcements. You can also choose to set notification subscriptions for classic infrastructure events.
+Depending on your {{site.data.keyword.Bluemix}} account type, you can choose whether to receive email notifications about {{site.data.keyword.Bluemix}} platform unplanned events and planned events, or infrastructure email notifications about unplanned events, maintenance, and announcements. You can also choose to set notification subscriptions for classic infrastructure events. These notifications are for only the services you use or the devices that you have provisioned, and if they are impacted by the event, maintenance, or announcement.
 {: shortdesc}
 
 ## Setting platform notifications

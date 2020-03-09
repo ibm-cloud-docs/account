@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-02-05"
+lastupdated: "2020-03-05"
 
 keywords: catalog, private catalog, update, private catalog offering, update version
 
@@ -21,7 +21,7 @@ subcollection: account
 # Updating a software offering
 {: #update-private}
 
-In this tutorial, you update the apache-two-instances offering by updating the readme of the existing version and adding a new version. 
+In this tutorial, you update the apache-two-instances offering by updating the readme of the existing version of the offering. 
 {: shortdesc}
 
 This feature is available only in a closed beta program. If you’re interested in participating, contact kala.nenkova@ibm.com.
@@ -60,31 +60,6 @@ When you make specific updates to a software offering, such as updating the read
 {: #update-success-validate}
 
 You can find the new line of text in the readme.
-
-## Add a new version in the console
-{: #update-editor-import}
-
-Complete the following steps to add a new version of the apache-two-instances offering.  
-
-1. Go to [Manage > Catalogs](https://cloud.ibm.com/content-mgmt/catalogs), and click **My first catalog** from the list of private catalogs.
-2. Click the apache-two-instances offering.
-1. Click **Add new version**, enter `https://charts.bitnami.com/ibm/apache-7.3.2.tgz` as the TGZ URL, and click **Add**. This action adds version 2.4.41 from apache chart version 7.3.2.
-1. Click the Validate offering tab.
-2. Select a Kubernetes cluster, and enter a namespace value.
-1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg), and select **Publish to account**.
-
-### Validate the new version is available 
-{: #update-validate-version}
-
-1. Click **Catalog** in the console menu bar.
-1. Click the Private tab.
-1. Select the apache-two-instances offering.
-1. Verify that both version 2.4.41 and version 2.4.39 are listed in the **Version** list.
-
-### Success criteria
-{: #update-validate-version}
-
-The new version number is included in the **Version** list on the Private tab of the catalog.
 
 ## Update an existing version by using the CLI
 {: #update-version-cli}
@@ -128,47 +103,6 @@ Complete the following steps to create a draft version, update it, and merge the
 {: #existingversion-success-cli}
 
 You successfully completed the task if the updated version is included in the search results. 
-
-## Add a new version by using CLI
-{: #update-cicd-import}
-
-Complete the following steps to add a new version, validate it, and publish it to your account:
-
-1. Add a new version of the offering to your private catalog.  
-    ```
-    ibmcloud catalog offering import-version --catalog "My first catalog" --offering "apache-two-instances" --zipurl https://charts.bitnami.com/ibm/apache-7.3.2.tgz
-    ```
-    {: codeblock}
-    
-1. Validate the offering.
-    ```
-    ibmcloud catalog offering validate --version-locator <LOCATOR> --cluster <CLUSTER> --namespace "apache-test-deployment"
-    ```
-    {: codeblock}
-    
-    This operation runs a few minutes. You can check the validation status by querying the offering and checking the current state of the draft version. 
-    
-    ```
-    ibmcloud catalog offering get --catalog "My first catalog" --offering "apache-two-instances"
-    ```
-    {: codeblock}
-    
-1. Publish the new version to your account. This step adds another version in the existing tile on the Private tab in the {{site.data.keyword.cloud_notm}} catalog.
-    ```
-    ibmcloud catalog offering publish-to-account --version-locator <LOCATOR>
-    ```
-    {: codeblock}
-    
-1.  Search for the offering in the {{site.data.keyword.cloud_notm}} catalog.
-    ```
-    ibmcloud catalog get --public | grep apache-two-instances
-    ```
-    {: codeblock}
-
-### Success criteria
-{: #newversion-success-cli}
-
-You successfully completed the task if the new version is included in the search results. 
 
 ## Next steps
 {: next-deprestore}
