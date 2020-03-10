@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-03-09"
+lastupdated: "2020-03-10"
 
 keywords: GDPR, HIPAA, data security, PHI, europe, ACS 
 
@@ -35,7 +35,7 @@ By enabling this setting, EU supported services have strict access controls to e
   3. Read the information about enabling the setting, and select **I understand and agree to these terms**.
   4. Click **On**.
 
-   After you enable the EU Supported setting, you can use the EU Supported tag to search the catalog for offerings that have EU-supported plans. See [Filtering EU Supported services](/docs/account?topic=account-eu-hipaa-supported#filter-eu-supported-services) for more information.
+   After you enable the setting, you can use the EU Supported filter option to search the catalog for offerings that have EU-supported pricing plans.
 
 
 ## Enabling the HIPAA Supported setting
@@ -63,20 +63,4 @@ Accounts that enable the HIPAA Supported setting still have access to the full c
 
 4. Select **Accept**, and click **Submit**.
 
-  After you enable the HIPAA Supported setting, you can use the HIPAA Enabled tag to search the catalog for offerings that are HIPAA enabled.
-
-
-## Filtering EU Supported services
-{: #filter-eu-supported-services}
-
-You can filter your search for platform services with the supported plans in the {{site.data.keyword.Bluemix_notm}} catalog. To do so, complete the following steps:
-
-1. Go to the [{{site.data.keyword.Bluemix_notm}} catalog](https://{DomainName}/catalog/){: external}.
-1. Select **EU supported**. 
-
-All plans, except Lite plans, for the following categories of {{site.data.keyword.Bluemix_notm}} infrastructure services are hosted in Europe and available as EU supported:
-
-* Compute
-* Storage
-* Network
-* Containers
+  After you enable the setting, you can use the HIPAA Enabled tag to search the catalog for offerings that are HIPAA enabled.
