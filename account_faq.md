@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-03-09"
+lastupdated: "2020-03-17"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -239,7 +239,7 @@ You can target URLs for any {{site.data.keyword.Bluemix_notm}} console page to a
 {: faq}
 {: support}
 
-You can transfer ownership of individual resources within your account to someone else by using the `ibmcloud catalog` command. To learn more, see [Transferring ownership of a private resource](/docs/account?topic=account-include#owners).
+You can transfer ownership of individual resources within your account to someone else by using the `ibmcloud catalog` command. To learn more, see [Transferring ownership of a private resource](/docs/account?topic=account-transfer#transfer-own).
 
 To transfer ownership of your entire account, create a support case that requests to make another user in the account the new owner. For more information, see [Transferring ownership of your account](/docs/account?topic=account-transfer).
 
