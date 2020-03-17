@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2019
-lastupdated: "2019-06-19"
+  years: 2017, 2020
+lastupdated: "2020-03-17"
 
 keywords: add user, share resource, private resource, share catalog, find resource, set visibility
 
@@ -21,7 +21,7 @@ subcollection: account
 Any {{site.data.keyword.Bluemix}} private resource that you create is restricted by default. If you're an administrator for the account, you can choose who can view your resource by adding the user to an inclusion list. You can also transfer ownership of a private resource.
 {:shortdesc}
 
-You can use the {{site.data.keyword.Bluemix}} [command-line interface (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) or console to determine whether you have access to allow users to view a private resource that was added to the account. If you're an account owner, you can give access to a user in your account from the console by assigning an access policy. For more information, see [Managing access to your account](/docs/account?topic=account-find-access).
+You can use the {{site.data.keyword.Bluemix}} [command-line interface (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) or console to determine whether you have access to allow users to view a private resource that was added to the account. If you're an account owner, you can give access to a user in your account from the console by assigning an access policy. For more information, see [Assigning access to account management services](/docs/iam?topic=iam-account-services).
 
 ## Finding your resource
 {: #find-resource-inc}
