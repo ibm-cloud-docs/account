@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2020
-lastupdated: "2020-01-08"
+lastupdated: "2020-03-17"
 
 keywords: SoftLayer account, link account, complete account, IBM Cloud account, IBMid, switch to IBMid
 
@@ -75,8 +75,6 @@ If you are a classic infrastructure customer, and you also have an {{site.data.k
 4. Complete one of the following final steps, depending on how your account is set up:
   * If your IBMid has an associated {{site.data.keyword.Bluemix_notm}} account you’ll be directed to an authorization page, then back to the final confirmation step.
   * If you don’t have an associated {{site.data.keyword.Bluemix_notm}} account, you are prompted to create a new one.
-
-To see common questions and answers about linking your account, check out the [FAQs](/docs/account?topic=account-al_login).
 
 ### Linking IBMid user accounts
 {: #link_customer_accounts}
