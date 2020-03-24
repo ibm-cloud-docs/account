@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-02-06"
+lastupdated: "2020-03-24"
 
 keywords: deprecate offering, restore offering, catalog, catalogs, software
 
@@ -110,22 +110,22 @@ You need the version locator for your offering version. To find it, run the `ibm
     
 When you restore a deprecated version, you are required to validate and publish the software offering again.
 
+  To find the version-locator for the draft version, run the `ibmcloud catalog offering list --catalog "My first catalog"` command, and search for version 2.4.39-draft.
+  {: note}
+
 1. Restore the offering. This action creates a draft version of the deprecated version.
     ```
-    ibmcloud catalog offering deprecate --version-locator <VERSION_LOCATOR>
+    ibmcloud catalog offering restore --version-locator <VERSION_LOCATOR>
     ```
     {: codeblock}
         
 1. Validate the offering:
     ```
-    ibmcloud catalog offering validate --version-locator <LOCATOR> --cluster <CLUSTER> --namespace "apache-test-deployment"
+    ibmcloud catalog offering validate --version-locator **<VERSION_LOCATOR_OF_DRAFT_VERSION>** --cluster <CLUSTER> --namespace "apache-test-deployment"
     ```
     {: codeblock}
         
 1. Merge the draft version. This action automatically makes version 2.4.39 available in the catalog.  
-    
-    To find the version-locator for the draft version, run the `ibmcloud catalog offering list --catalog "My first catalog"` command, and search for version 2.4.39-draft.
-    {: note}
       
     ```
     ibmcloud catalog offering merge-draft --version-locator **<VERSION_LOCATOR_OF_DRAFT_VERSION>**
