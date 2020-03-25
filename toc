@@ -67,7 +67,6 @@ Managing your account
         enterprise-settings.md
 
     audit_log.md
-    softlayerlink.md
     transfer.md
     {: .navgroup-end}
 
