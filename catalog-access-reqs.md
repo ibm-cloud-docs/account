@@ -4,7 +4,7 @@ copyright:
   years: 2020
 lastupdated: "2020-04-02"
 
-keywords: catalog, private catalogs, IAM access, roles, private catalog service
+keywords: catalog, private catalogs, IAM access, roles, private catalog service, software, catalogs
 
 subcollection: account
 
@@ -78,7 +78,7 @@ Viewer access is required for viewing private catalogs, the filtered {{site.data
 7. Select **Account management**.
 8. Select **Catalog Management** from the **What type of access do you want to assign?** list.
 9. Select the catalog that you want users to access.
-9. In the Platform access section, select the **Editor** role.
+9. In the Platform access section, select the **Viewer** role.
 10. Click **Add** > **Assign**.
 
 ## Add users to your access groups
