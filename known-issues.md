@@ -27,7 +27,7 @@ Known issues related to managing your account and catalogs include not being abl
 ## Catalog management settings don't apply to some {{site.data.keyword.IBM_notm}} products
 {: #settings-noapply}
 
-Turning off the visibility of the {{site.data.keyword.cloud}} catalog or setting a filter to exclude all {{site.data.keyword.IBM_notm}} products from the catalog or your private catalogs doesn't apply to the following products. Users in your account can still create instances of them by using an API or the CLI.
+Turning off the visibility of the {{site.data.keyword.cloud}} catalog or excluding all {{site.data.keyword.IBM_notm}} products from the catalog or your private catalogs doesn't apply to the following products. Users in your account can still create instances of them by using an API or the CLI.
 
 * {{site.data.keyword.block_storage_is_short}} for VPC
 * {{site.data.keyword.vpx_full}}
@@ -44,8 +44,6 @@ Turning off the visibility of the {{site.data.keyword.cloud}} catalog or setting
 * {{site.data.keyword.cloud_notm}} Gateway Appliance
 * {{site.data.keyword.cloud_notm}} Hardware Security Modules
 * {{site.data.keyword.containerlong_notm}}
-* {{site.data.keyword.loadbalancer_full}
-* {{site.data.keyword.cos_full_notm}}
 * {{site.data.keyword.BluVirtServers}}
 * {{site.data.keyword.vpc_full}}
 * Load Balancer for VPC
