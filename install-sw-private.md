@@ -4,7 +4,7 @@ copyright:
   years: 2020
 lastupdated: "2020-04-02"
 
-keywords: catalog, catalogs, private catalogs, install software, software offering 
+keywords: catalog, catalogs, private catalogs, install software, software product 
 
 subcollection: account
 
@@ -18,10 +18,10 @@ subcollection: account
 {:important: .important}
 {:new_window: target="_blank"}
 
-# Installing a private software offering
+# Installing software from your private catalog
 {: #install-sw}
 
-In this tutorial, you install the apache-two-instances offering that was previously added to the My first catalog catalog. 
+In this tutorial, you install the apache-two-instances product that was previously added to the My first catalog catalog. 
 {: shortdesc} 
 
 ## Before you begin
@@ -29,7 +29,7 @@ In this tutorial, you install the apache-two-instances offering that was previou
 
 To complete this tutorial, you need to be assigned the following roles:
 
-* Viewer on the private catalog service or a specific private catalog
+* Viewer role on the catalog management service
 * Administrator and manager roles on the Kubernetes cluster service
 * Manager role on the Schematics service
 * Viewer role on all resource groups
@@ -39,12 +39,12 @@ For more information, see [Assigning users access](/docs/account?topic=account-c
 If you don't see what you're expecting in the console based on your permissions, try refreshing your session by going to https://cloud.ibm.com/login.
 {: tip}
 
-## Install a private software offering in the console
+## Install the software by using the console
 {: #installsw-console}
 
 1. Click **Catalog** in the console menu bar.
 2. Select **My first catalog** from the list of catalogs. 
-1. Click the Private tab, and select **apache-two-instances**.
+1. Click **Private** > **apache-two-instances**.
 1. Select a Kubernetes cluster, and enter a namespace value.
 1. Click **Install** to install the Apache Helm chart.
 
@@ -53,14 +53,13 @@ If you don't see what you're expecting in the console based on your permissions,
 
 You successfully completed this tutorial if the following items are true:
 
-1. The Private tab is displayed in the {{site.data.keyword.cloud_notm}} catalog. 
-1. You can click the Private tab, and view the apache-two-instances offering.
-2. You can install the apache-two-instances offering offering.
+1. You can navigate to the Private tab and view the apache-two-instances product.
+2. You can install the software.
 
 ## Next steps
 {: next-update}
 
-A user with access to your private catalog updates the apache-two-instances offering. See [Updating a software offering in your private catalog](/docs/account?topic=account-update-private) for more information.
+A user with access to your private catalog updates the software. See [Updating software in your private catalog](/docs/account?topic=account-update-private) for more information.
 
 
 
