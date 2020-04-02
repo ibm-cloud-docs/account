@@ -4,7 +4,7 @@ copyright:
   years: 2019, 2020
 lastupdated: "2020-04-02"
 
-keywords: catalog, private catalogs, visibility, filter catalog, hide offering, catalog filtering
+keywords: catalog, private catalogs, visibility, filter catalog, hide product, catalog filtering
 
 subcollection: account
 
@@ -21,13 +21,13 @@ subcollection: account
 # Filtering the {{site.data.keyword.cloud_notm}} catalog for all account users
 {: #filter-account}
 
-This tutorial walks you through the steps to set a filter to include all {{site.data.keyword.cloud}} offerings, except for {{site.data.keyword.appid_full}}, in the {{site.data.keyword.cloud_notm}} catalog.
+This tutorial walks you through the steps to set a filter to include all {{site.data.keyword.cloud}} products, except for {{site.data.keyword.appid_full}}, in the {{site.data.keyword.cloud_notm}} catalog.
 {: shortdesc}
 
 ## Before you begin
 {: #prereqs-acctfilter}
 
-To complete this tutorial, you need to be assigned the administrator role on the private catalog service. With this type of access, you can set filters in the {{site.data.keyword.cloud_notm}} catalog for all users in the account. For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
+To complete this tutorial, you need to be assigned the administrator role on the catalog management service. With this type of access, you can set filters in the {{site.data.keyword.cloud_notm}} catalog for all users in the account. For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
 
   If you don't see what you're expecting in the console based on your permissions, try refreshing your session by going to https://cloud.ibm.com/login.
   {: tip} 
@@ -35,13 +35,13 @@ To complete this tutorial, you need to be assigned the administrator role on the
 ## Set a catalog filter in the console
 {: #create-acctfilter}
 
-Complete the following steps to set a filter that includes all {{site.data.keyword.cloud_notm}} offerings in the catalog except for {{site.data.keyword.appid_short_notm}}.
+Complete the following steps to set a filter that includes all {{site.data.keyword.cloud_notm}} products in the catalog except for {{site.data.keyword.appid_short_notm}}.
 
 1. Log in to your {{site.data.keyword.cloud_notm}} account, and go to [Manage > Catalogs](https://cloud.ibm.com/content-mgmt/catalogs).
 1. Select **Settings**.
 2. Make sure the visibility of the {{site.data.keyword.cloud_notm}} catalog is turned on.
 1. In the Rules section, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg).
-1. Select **Exclude all offerings in the {{site.data.keyword.cloud_notm}} catalog** to start with an empty catalog.   
+1. Select **Exclude all products in the {{site.data.keyword.cloud_notm}} catalog** to start with an empty catalog.   
 1. Click **Add rule**, select **Provider**, and click **IBM**. 
 1. Click **Add exception**, and select **Exclude** > **{{site.data.keyword.appid_short_notm}}**.
 1. In the Preview section, verify that the value for {{site.data.keyword.appid_short_notm}} in the Included column is No. 
@@ -53,14 +53,14 @@ Complete the following steps to set a filter that includes all {{site.data.keywo
 Before you start this task, make sure you [install the {{site.data.keyword.cloud_notm}} CLI and the catalogs management CLI plug-in](/docs/account?topic=account-manage-catalog#landing-prereqs).
 <br>
 
-Complete the following steps to set a filter that includes all {{site.data.keyword.cloud_notm}} offerings in the catalog except for {{site.data.keyword.appid_short_notm}}.  
+Complete the following steps to set a filter that includes all {{site.data.keyword.cloud_notm}} products in the catalog except for {{site.data.keyword.appid_short_notm}}.  
 1. Remove the existing filter that you created in the previous steps.
     ```
     ibmcloud catalog filter delete
     ```
     {: codeblock}
     
-1. Create a filter that includes only {{site.data.keyword.cloud_notm}} offerings in the catalog and excludes {{site.data.keyword.appid_short_notm}} from the catalog.
+1. Create a filter that includes only {{site.data.keyword.cloud_notm}} products in the catalog and excludes {{site.data.keyword.appid_short_notm}} from the catalog.
     ```
     ibmcloud catalog filter create --include-all false --provider ibm_created --exclude-list appid
     ```
@@ -69,4 +69,6 @@ Complete the following steps to set a filter that includes all {{site.data.keywo
 ## Next steps
 {: #next-acctfilter}
 
-A user in the account validates that they can view all catalog offerings except {{site.data.keyword.appid_short_notm}}. See [Validating the account-level catalog filters](/docs/account?topic=account-validate-acctfilter) for more information.
+A user in the account validates that they can view all products except {{site.data.keyword.appid_short_notm}}. See [Validating the account-level catalog filters](/docs/account?topic=account-validate-acctfilter) for more information.
+
+
