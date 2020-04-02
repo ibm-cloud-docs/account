@@ -41,8 +41,9 @@ Administrator access is required for setting account-level filters to the {{site
 4. Click **Create**.
 5. Enter `private-catalog-admins` as the group name, and click **Create**.
 6. Click **Access policies** > **Assign access**.
-7. Select **IAM services**.
-8. From the What type of access do you want to assign section, select **Private Catalog** and confirm that the **Account** option is selected.
+7. Select **Account management**.
+8. Select **Catalog Management** from the **What type of access do you want to assign?** list.
+9. Select the catalog that you want users to access.
 9. In the Platform access section, select the **Administrator** role.
 10. Click **Add** > **Assign**.
 
@@ -54,10 +55,17 @@ Editor access is required for creating private catalogs, setting filters at the 
 1. Go to **Access groups**, and click **Create**.
 2. Enter `private-catalog-editors` as the group name, and click **Create**.
 6. Click **Access policies** > **Assign access**.
-7. Select **IAM services**.
-8. From the What type of access do you want to assign section, select **Private Catalog** and confirm that the **Account** option is selected.
+7. Select **Account management**.
+8. Select **Catalog Management** from the **What type of access do you want to assign?** list.
+9. Select the catalog that you want users to access.
 9. In the Platform access section, select the **Editor** role.
-10. Click **Add** > **Assign**.
+10. Click **Add**.
+11. Select **IAM services** > **Kubernetes Service**.
+12. Select your cluster, and then select the **Administrator** and **Manager** roles.
+13. Click **Add**.
+14. Select **IAM services** > **Schematics**.
+15. Select the **Manager** role.
+16. Click **Add** > **Assign**.
 
 ### Viewer access
 {: #catalog-access-viewer}
@@ -67,9 +75,10 @@ Viewer access is required for viewing private catalogs, the filtered {{site.data
 1. Go to **Access groups**, and click **Create**.
 2. Enter `private-catalog-viewers` as the group name, and click **Create**.
 6. Click **Access policies** > **Assign access**.
-7. Select **IAM services**.
-8. From the What type of access do you want to assign section, select **Private Catalog** and confirm that the **Account** option is selected.
-9. In the Platform access section, select the **Viewer** role.
+7. Select **Account management**.
+8. Select **Catalog Management** from the **What type of access do you want to assign?** list.
+9. Select the catalog that you want users to access.
+9. In the Platform access section, select the **Editor** role.
 10. Click **Add** > **Assign**.
 
 ## Add users to your access groups
