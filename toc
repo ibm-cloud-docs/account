@@ -94,4 +94,6 @@ Managing your account
         ts_accessing.md
         ts_accounts.md
         ts_enterprise.md
+
+    known-issues.md
     {: .navgroup-end}
