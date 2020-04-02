@@ -4,7 +4,7 @@ copyright:
   years: 2020
 lastupdated: "2020-04-02"
 
-keywords: deprecate offering, restore offering, catalog, catalogs, software
+keywords: deprecate software, restore software, catalog, catalogs, software 
 
 subcollection: account
 
@@ -18,27 +18,27 @@ subcollection: account
 {:important: .important}
 {:external: target="_blank" .external}
 
-# Deprecating and restoring a version of a software offering
+# Deprecating and restoring a software version
 {: #dep-restore}
 
-In this tutorial, you deprecate a version of the apache-two-instances offering. Then, you restore the version to the {{site.data.keyword.cloud}} catalog. 
+In this tutorial, you deprecate a version of the apache-two-instances product. Then, you restore the version to the {{site.data.keyword.cloud}} catalog. 
 {: shortdesc}
 
 ## Before you begin
 {: #prereq-restore}
 
-To complete this tutorial, you need to be assigned the editor role on the private catalog service. For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
+To complete this tutorial, you need to be assigned the editor role on the catalog management service. For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
 
   If you don't see what you're expecting in the console based on your permissions, try refreshing your session by going to https://cloud.ibm.com/login.
   {: tip}
 
-## Deprecate a version of a software offering in the console
+## Deprecate a software version by using console
 {: #deprecate-editor}
 
-When you deprecate a version, it is not displayed in the catalog for any user that hasn't installed it. All users who previously installed the offering can still access it. 
+When you deprecate a version, it is not displayed in the catalog for any user that hasn't installed it. All users who previously installed the software can still access it. 
 
-1. Go [Manage > Catalogs](https://cloud.ibm.com/content-mgmt/catalogs), and click **My first catalog** from the list of private catalogs.
-1. Click the apache-two-instances offering.
+1. Go **Manage** > **Catalogs** > **Private catalogs**, and select **My first catalog** from the list of private catalogs.
+1. Click **apache-two-instances**.
 1. From the **Version** list, select **2.4.39**. 
 1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg), and select **Deprecate**.
 
@@ -46,58 +46,48 @@ When you deprecate a version, it is not displayed in the catalog for any user th
 {: #deprecate-validate-editor}
 
 1. Click **Catalog** in the console menu bar.
-1. Click the Private tab. 
-1. Select apache-two-instances offering. 
+1. Select **My first catalog** from the list of catalogs.
+1. Select the Private tab, and click **apache-two-instances**. 
 1. Verify that only version 2.4.41 is listed in the **Version** list.
 
-### Success criteria
-{: #success-deprecate}
 
-Version 2.4.39 of the apache-two-instances offering offering isn't listed in the **Version** list on the Private tab of the catalog.
-
-
-## Restore the deprecated version in the console
+## Restore the deprecated version by using the console
 {: #restore-editor}
 
-When you restore a deprecated version, you are required to validate and publish the software offering again.
+When you restore a deprecated version, you are required to validate and publish the software again.
 
-1. Go to [Manage > Catalogs](https://cloud.ibm.com/content-mgmt/catalogs), and select **My first catalog**.
-1. Click the apache-two-instances offering.
+1. Go to **Manage** > **Catalogs** > **Private catalogs**, and select **My first catalog**.
+1. Click **apache-two-instances**.
 1. Click the **Version** list, and select **2.4.39**. 
 1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg), and select **Restore**.
 1. Confirm that you want to restore the deprecated version.
 1. Click the Validate offering tab.
 2. Select a cluster from the **Cluster** list, and select **apache-test-deployment** from the **Namespace** list.
 3. Click **Validate**.
-1. When the offering is validated, click the **Actions** icon ![List of options icon][options-icon], and select **Merge changes**. 
+1. When the software is validated, click the **Actions** icon ![List of options icon][options-icon], and select **Merge changes**. 
 
 ### Validate the version is restored
 {: #restore-validate-editor}
 
 1. Click **Catalog** from the console menu bar.
 1. Select **My first catalog** from the list of catalogs, and click the Private tab.
-1. Select the apache-two-instances offering. 
-1. Verify both version 2.4.39 and version 2.4.41 are listed in the **Version** list.
-
-### Success criteria
-{: #success-restore-validate}
-
-Both versions of the apache-two-instances offering are included in the **Version** list on the Private tab of the catalog.
+1. Click **apache-two-instances**. 
+1. Verify that both version 2.4.39 and version 2.4.41 are listed in the **Version** list.
 
 
-## Deprecate a version of a software offering by using the CLI
+## Deprecate a software version by using the CLI
 {: #deprecate-cicd-editor}
 
-You need the version locator for your offering version. To find it, run the `ibmcloud catalog offering list --catalog "My first catalog"` command, and search for version 2.4.39.
+You need the version locator for your software version. To find it, run the **`ibmcloud catalog offering list --catalog "My first catalog"`** command, and search for version 2.4.39.
 {: important}
 
-1. Deprecate a version of your software offering.
+1. Deprecate the existing software version.
     ```
     ibmcloud catalog offering deprecate --version-locator <VERSION_LOCATOR>
     ```
     {: codeblock}
     
-1. Search the offerings in the catalog and verify that apache 2.4.39 is deprecated:
+1. Search the catalog and verify that apache 2.4.39 is deprecated:
     ```
     ibmcloud catalog offering search --catalog "My first catalog"
     ```
@@ -105,18 +95,15 @@ You need the version locator for your offering version. To find it, run the `ibm
     
 ## Restore a deprecated version by using the CLI
     
-When you restore a deprecated version, you are required to validate and publish the software offering again.
+When you restore a deprecated version, you are required to validate and publish the software again.
 
-  To find the version-locator for the draft version, run the `ibmcloud catalog offering list --catalog "My first catalog"` command, and search for version 2.4.39-draft.
-  {: note}
-
-1. Restore the offering. This action creates a draft version of the deprecated version.
+1. Restore the deprecated version. This action creates a draft version.
     ```
     ibmcloud catalog offering restore --version-locator <VERSION_LOCATOR>
     ```
     {: codeblock}
         
-1. Validate the offering:
+1. Validate the software:
     ```
     ibmcloud catalog offering validate --version-locator **<VERSION_LOCATOR_OF_DRAFT_VERSION>** --cluster <CLUSTER> --namespace "apache-test-deployment"
     ```
@@ -129,22 +116,9 @@ When you restore a deprecated version, you are required to validate and publish 
     ```
     {: codeblock}
         
-1. Search the offerings in the catalog, and verify that apache 2.4.39 is listed.
+1. Search the catalog and verify that apache 2.4.39 is listed.
     ```
     ibmcloud catalog offering get --catalog "My first catalog" --offering "apache"
     ```
     {: codeblock}
 
-### Success criteria
-{: #success-cicd-deprecate}
-
-You successfully completed this task if you ran all CLI commands with the expected results.
-
-## Next steps
-{: #next-feedback}
-
-If you didn't get a chance to complete the surveys about the catalog management beta, we'd love to know what you think! 
-
-* [Survey: Filtering the {{site.data.keyword.cloud_notm}} catalog for all account users](https://airtable.com/shrOeKPjUz5bzw02c){: external}
-* [Survey: Filtering the {{site.data.keyword.cloud_notm}} catalog at a private catalog level](https://airtable.com/shrSb9if7nPO36jhh){: external}
-* [Survey: Adding your own software to a private catalog](https://airtable.com/shr6Fornt8WwtAKPZ){: external}
