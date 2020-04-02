@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-03-05"
+lastupdated: "2020-04-02"
 
 keywords: catalog, private catalog, update, private catalog offering, update version
 
@@ -23,9 +23,6 @@ subcollection: account
 
 In this tutorial, you update the apache-two-instances offering by updating the readme of the existing version of the offering. 
 {: shortdesc}
-
-This feature is available only in a closed beta program. If you’re interested in participating, contact kala.nenkova@ibm.com.
-{: note}
 
 ## Before you begin
 {: #prereq-update}

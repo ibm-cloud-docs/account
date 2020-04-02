@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-02-05"
+lastupdated: "2020-04-02"
 
 keywords: catalog, private catalogs, IAM access, roles, private catalog service
 
@@ -25,9 +25,6 @@ As the account owner, you assign users specific access depending on what tasks t
 {: shortdesc}
 
 For more details about access management, see [Managing access in {{site.data.keyword.cloud_notm}}](/docs/iam?topic=iam-cloudaccess).
-
-This feature is available only in a closed beta program. If you’re interested in participating, contact kala.nenkova@ibm.com.
-{: note}
 
 ## Set up your access groups
 {: #catalog-access-groups}

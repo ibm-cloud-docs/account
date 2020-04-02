@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-02-05"
+lastupdated: "2020-04-02"
 
 keywords: catalog, catalogs, private catalogs, install software, software offering 
 
@@ -23,9 +23,6 @@ subcollection: account
 
 In this tutorial, you install the apache-two-instances offering that was previously added to the My first catalog catalog. 
 {: shortdesc} 
-
-This feature is available only in a closed beta program. If you’re interested in participating, contact kala.nenkova@ibm.com.
-{: note}
 
 ## Before you begin
 {: #prereq-installsw}

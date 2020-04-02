@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-02-25"
+lastupdated: "2020-04-02"
 
 keywords: catalog, restrict visibility, hide offering, restrict by user, filter catalog, private catalog
 
@@ -23,9 +23,6 @@ subcollection: account
 
 In this tutorial, you set a filter to restrict users from viewing all third-party offerings in the {{site.data.keyword.cloud}} catalog.  
 {: shortdesc}
-
-This feature is available only in a closed beta. If you’re interested in participating, contact kala.nenkova@ibm.com.
-{: note}
 
 ## Before you begin
 {: #prereq-restrict}
@@ -83,9 +80,4 @@ Complete the following steps to create your private catalog and set a filter tha
 {: #next-restrictuser}
 
 A user with access to the private catalog validates that they can't view any third-party offerings in the {{site.data.keyword.cloud}} catalog. See [Validating filters set at the private catalog level](/docs/account?topic=account-restrict-user-validate) for more information.
-
-### Providing feedback
-{: #survey-privatefilter}
-
-We put together a [survey](https://airtable.com/shrSb9if7nPO36jhh){: external} specifically about this tutorial. We'd love to know what you think!
 

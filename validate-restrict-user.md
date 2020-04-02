@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-02-05"
+lastupdated: "2020-04-02"
 
 keywords: catalog, restrict offering, hide offering, restrict by user
 
@@ -23,9 +23,6 @@ subcollection: account
 
 In this tutorial, you validate that you can't view {{site.data.keyword.cloud}} offerings that provide free pricing plans.  
 {: shortdesc}
-
-This feature is available only in a closed beta program. If you’re interested in participating, contact kala.nenkova@ibm.com.
-{: note}
 
 ## Before you begin
 {: #prereq-restrict-validate}

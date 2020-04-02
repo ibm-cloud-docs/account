@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-02-25"
+lastupdated: "2020-04-02"
 
 keywords: catalog, private catalogs, visibility, filter catalog, hide offering, catalog filtering
 
@@ -23,9 +23,6 @@ subcollection: account
 
 This tutorial walks you through the steps to set a filter to include all {{site.data.keyword.cloud}} offerings, except for {{site.data.keyword.appid_full}}, in the {{site.data.keyword.cloud_notm}} catalog.
 {: shortdesc}
-
-This feature is available only in a closed beta. If you’re interested in participating, contact kala.nenkova@ibm.com.
-{: note}
 
 ## Before you begin
 {: #prereqs-acctfilter}
@@ -73,8 +70,3 @@ Complete the following steps to set a filter that includes all {{site.data.keywo
 {: #next-acctfilter}
 
 A user in the account validates that they can view all catalog offerings except {{site.data.keyword.appid_short_notm}}. See [Validating the account-level catalog filters](/docs/account?topic=account-validate-acctfilter) for more information.
-
-### Providing feedback
-{: #survey-acctfilters}
-
-We put together a [survey](https://airtable.com/shrOeKPjUz5bzw02c){: external} specifically about this tutorial. We'd love to know what you think!

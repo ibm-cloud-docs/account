@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-03-24"
+lastupdated: "2020-04-02"
 
 keywords: deprecate offering, restore offering, catalog, catalogs, software
 
@@ -23,9 +23,6 @@ subcollection: account
 
 In this tutorial, you deprecate a version of the apache-two-instances offering. Then, you restore the version to the {{site.data.keyword.cloud}} catalog. 
 {: shortdesc}
-
-This feature is available only in a closed beta program. If you’re interested in participating, contact kala.nenkova@ibm.com.
-{: note}
 
 ## Before you begin
 {: #prereq-restore}

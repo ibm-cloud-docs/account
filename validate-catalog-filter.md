@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-02-05"
+lastupdated: "2020-04-02"
 
 keywords: catalog, visibility, filter catalog, hide offering, catalog filtering, validating
 
@@ -23,9 +23,6 @@ subcollection: account
 
 In this tutorial, you validate that you can view all {{site.data.keyword.cloud}} catalog offerings except {{site.data.keyword.appid_short_notm}}. 
 {: shortdesc}
-
-This feature is available only in a closed beta program. If you’re interested in participating, contact kala.nenkova@ibm.com.
-{: note}
 
 ## Before you begin
 {: #prereqs-acctfilter-validate}
