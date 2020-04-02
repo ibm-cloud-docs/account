@@ -141,4 +141,4 @@ Complete the following steps to add your product by using the CLI. You can use t
 ## Next steps
 {: #install-sw-next}
 
-A user installs the apache-two-instances product from your private catalog. See [Installing a product from your private catalog](/docs/account?topic=account-install-sw) for more information.
+A user installs the apache-two-instances product from your private catalog. See [Installing software from your private catalog](/docs/account?topic=account-install-sw) for more information.
