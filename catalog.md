@@ -56,12 +56,12 @@ You can run the following command to verify that the CLI plug-in is installed:
 
 The catalog management tutorials walk you through the steps for restricting products from users being able to access. You can learn how to tailor the list of available products for different groups of users in your account. Also, you can add Helm charts or Terraform-based software to your account for users to consume. 
 
-  * [Filtering the {{site.data.keyword.cloud_notm}} catalog for all account users](/docs/account?topic=account-filter-account): Set filters to include or exclude specific products from the {{site.data.keyword.cloud_notm}} catalog. These filters apply to all users in your account.
-  * [Including specific {{site.data.keyword.IBM_notm}} products in a private catalog](/docs/account?topic=account-restrict-by-user): Create a private catalog, and set an additional filter that further scopes the catalog to users with access. 
+  * [Customizing the {{site.data.keyword.cloud_notm}} catalog for all account users](/docs/account?topic=account-filter-account): Set filters to include or exclude specific products from the {{site.data.keyword.cloud_notm}} catalog. These filters apply to all users in your account.
+  * [Customizing your private catalogs](/docs/account?topic=account-restrict-by-user): Create a private catalog, and set an additional filter that further scopes the catalog to users with access. 
   * [Adding your software to a private catalog](/docs/account?topic=account-create-private-catalog): Add your own software to your private catalog.
   * [Installing software from your private catalog](/docs/account?topic=account-install-sw): Install the software from your private catalog.
-  * [Updating a software version](https://test.cloud.ibm.com/docs/account?topic=account-update-private): Update the readme of the current version of your software, and add a new version of your software.
-  * [Deprecating and restoring a software version](https://test.cloud.ibm.com/docs/account?topic=account-dep-restore): Deprecate and then restore a specific version of your software.
+  * [Updating software versions](https://test.cloud.ibm.com/docs/account?topic=account-update-private): Update the readme of the current version of your software, and add a new version of your software.
+  * [Deprecating and restoring software versions](https://test.cloud.ibm.com/docs/account?topic=account-dep-restore): Deprecate and then restore a specific version of your software.
 
 
 
