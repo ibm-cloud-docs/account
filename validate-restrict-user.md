@@ -21,7 +21,7 @@ subcollection: account
 # Validating filters set at the private catalog level
 {: #restrict-user-validate}
 
-In this tutorial, you validate that you can view specific {{site.data.keyword.IBM}} products in the private catalog you've been given access to. 
+In this tutorial, you validate that you can view specific {{site.data.keyword.IBM}} products in the private catalog that you've been given access to. 
 {: shortdesc}
 
 ## Before you begin
@@ -40,21 +40,13 @@ Validate that your private catalog includes {{site.data.keyword.cloudant_short_n
 1. Click **Catalog** in the console menu bar. 
 2. Select **My first catalog** from the list of catalogs.
 1. Search for {{site.data.keyword.cloudant_short_notm}} and {{site.data.keyword.containerlong_notm}}, and confirm that the products are included in the search results. 
-<br>  
+<br><br>
 
-Next, validate that you can't edit the applied filters:
+Next, validate that you can't edit the catalog settings and filters:
 
 1. Go to **Manage** > **Catalogs**, and select **Settings**. Confirm that you can view the current settings, but you can't update them.
 1. Click **Private catalogs** > **My first catalog**.
-1. Click **{{site.data.keyword.cloud_notm}} catalog products** > **Manage filters**. Confirm that you can view the current settings, but you can't update them. 
-
-### Success criteria
-{: #restrict-success-filter}
-
-As a viewer, you successfully completed this task if the following items are true:
-
-* You can find {{site.data.keyword.cloudant_short_notm}} and {{site.data.keyword.containerlong_notm}}.
-* You can't update the filters on the Settings page or on the Manage filters page within the `My first catalog` private catalog.
+1. Click **{{site.data.keyword.cloud_notm}} catalog products** > **Manage filters**. Confirm that you can view the current filters, but you can't update them. 
 
 ## Validate your filtered view by using the CLI
 {: #restrict-validate-cli} 
@@ -65,11 +57,6 @@ Run the following command to validate that you can view {{site.data.keyword.clou
   ibmcloud catalog offering list --catalog "My first catalog"
   ```
   {: codeblock}
-
-### Success criteria
-{: #restrict-success-cli}
-
-You successfully completed this task if you ran the command and the specific products were included in the output. 
 
 ## Next steps
 {: #next-addsw}
