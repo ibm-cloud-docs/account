@@ -27,27 +27,29 @@ Known issues related to managing your account and catalogs include not being abl
 ## Catalog management settings don't apply to some {{site.data.keyword.IBM_notm}} products
 {: #settings-noapply}
 
-Turning off the visibility of the {{site.data.keyword.cloud}} catalog or excluding all {{site.data.keyword.IBM_notm}} products from the catalog or your private catalogs doesn't apply to the following products. Users in your account can still create instances of them by using an API or the CLI.
+Turning off {{site.data.keyword.cloud}} catalog visibility or excluding all {{site.data.keyword.IBM_notm}} products from the catalog or your private catalogs doesn't apply to the following products. Users in your account can still create instances of them by using an API or the CLI.
 
-* {{site.data.keyword.block_storage_is_short}} for VPC
+* {{site.data.keyword.block_storage_is_short}}
 * {{site.data.keyword.vpx_full}}
 * Fortigate Security Appliance
 * Hardware Firewall
 * Hardware Firewall Dedicated
 * {{site.data.keyword.backup_notm}}
-* {{site.data.keyword.baremetal_long}}
-* {{site.data.keyword.blockstoragefull}} 
+* {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}
+* {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}
 * {{site.data.keyword.cloud_notm}} Content Delivery Network
 * {{site.data.keyword.cloud_notm}} Direct Link
 * {{site.data.keyword.cloud_notm}} Direct Link on Classic
-* {{site.data.keyword.openwhisk_short}}
+* {{site.data.keyword.IBM_notm}} {{site.data.keyword.openwhisk_short}}
 * {{site.data.keyword.cloud_notm}} Gateway Appliance
 * {{site.data.keyword.cloud_notm}} Hardware Security Modules
 * {{site.data.keyword.containerlong_notm}}
-* {{site.data.keyword.BluVirtServers}}
-* {{site.data.keyword.vpc_full}}
+* {{site.data.keyword.cloud_notm}} Load Balancer
+* {{site.data.keyword.cos_full_notm}}
+* {{site.data.keyword.cloud_notm}} {{site.data.keyword.BluVirtServers_short}}
 * Load Balancer for VPC
 * Subnets and IPs
+* Virtual Private Cloud
 * Virtual Server for VPC
 * VLANs
 * VPN
