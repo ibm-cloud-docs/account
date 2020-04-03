@@ -18,10 +18,10 @@ subcollection: account
 {:important: .important}
 {:external: target="_blank" .external}
 
-# Deprecating and restoring a software version
+# Deprecating and restoring software versions
 {: #dep-restore}
 
-In this tutorial, you deprecate a version of the apache-two-instances product. Then, you restore the version to the {{site.data.keyword.cloud}} catalog. 
+In this tutorial, you deprecate a version of the apache-two-instances software instance. Then, you restore the version to the {{site.data.keyword.cloud}} catalog. 
 {: shortdesc}
 
 ## Before you begin
@@ -47,7 +47,7 @@ When you deprecate a version, it is not displayed in the catalog for any user th
 
 1. Click **Catalog** in the console menu bar.
 1. Select **My first catalog** from the list of catalogs.
-1. Select the Private tab, and click **apache-two-instances**. 
+1. Click the Private tab > **apache-two-instances**. 
 1. Verify that only version 2.4.41 is listed in the **Version** list.
 
 
@@ -60,7 +60,6 @@ When you restore a deprecated version, you are required to validate and publish 
 1. Click **apache-two-instances**.
 1. Click the **Version** list, and select **2.4.39**. 
 1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg), and select **Restore**.
-1. Confirm that you want to restore the deprecated version.
 1. Click the Validate offering tab.
 2. Select a cluster from the **Cluster** list, and select **apache-test-deployment** from the **Namespace** list.
 3. Click **Validate**.
@@ -70,8 +69,8 @@ When you restore a deprecated version, you are required to validate and publish 
 {: #restore-validate-editor}
 
 1. Click **Catalog** from the console menu bar.
-1. Select **My first catalog** from the list of catalogs, and click the Private tab.
-1. Click **apache-two-instances**. 
+1. Select **My first catalog** from the list of catalogs.
+1. Click the Private tab > **apache-two-instances**. 
 1. Verify that both version 2.4.39 and version 2.4.41 are listed in the **Version** list.
 
 
