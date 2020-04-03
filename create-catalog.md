@@ -21,7 +21,7 @@ subcollection: account
 # Adding your software to a private catalog
 {: #create-private-catalog}
 
-This tutorial walks you through the steps for creating a private catalog and adding your own product to it. The product is available to all users with access to the private catalog.
+This tutorial walks you through the steps for creating a private catalog and adding your own software to it. The software is available to all users with access to the private catalog.
 {: shortdesc} 
 
 ## Before you begin
@@ -58,13 +58,13 @@ Creating a cluster can take a few minutes. When the status on the Overview page 
 
 Complete the following steps to add an Apache Helm chart from Bitnami with a few custom configurations to your private catalog. 
 
-1. Go to **Manage** > **Catalogs**. If you created a private catalog in the previous tutorials, you can skip the next 3 steps.
+1. Go to **Manage** > **Catalogs** > **Private catalogs**. If you created a private catalog in the previous tutorials, you can skip the next 3 steps.
 1. Click **Create** to start creating a new private catalog.
-1. Enter `My first catalog` as the catalog name, select the resource group that you want to assign it to, and click **Create**.
+1. Enter `My first catalog` as the catalog name, choose whether you want to start with an empty catalog or with available products included, and click **Create**.
 1. Select **My first catalog** from the list of private catalogs.
 1. Click **Add product**.  
-1. Enter the repository URL or TGZ archive location for your product, and click **Add**. For testing purposes use the Bitnami Apache product: https://charts.bitnami.com/ibm/apache-7.3.7.tgz. This creates Apache version 2.4.41 from chart version 7.3.7.
-1. Click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg), update the product name to `apache-two-instances`, and set at least one category for your product, for example, Developer Tools. This category can be used by users later to filter for the product.
+1. Enter the repository URL or TGZ archive location for your software version, and click **Add product**. For testing purposes use the Bitnami Apache product: https://charts.bitnami.com/ibm/apache-7.3.7.tgz. This creates Apache version 2.4.41 from chart version 7.3.7.
+1. Click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg), update the name to `apache-two-instances`, and set at least one category, for example, Developer Tools. This category can be used by users later to filter for the software.
 2. Click **Update** to apply your changes. 
 1. Scroll to the Configure deployment details section, and click **Add deployment values**.
 1. Select **replicaCount**, and click **Add deployment values**.
@@ -73,7 +73,7 @@ Complete the following steps to add an Apache Helm chart from Bitnami with a few
 1. Click **Update**.
 1. Click the Validate product tab.
 1. In the Configure the validation target section, select your cluster from the **Cluster** list, and enter `apache-test-deployment` as the namespace.
-1. Click **Validate** to ensure that your product can be installed successfully. This step is required before you can make it available for users in your account. This action can take several minutes. In the Validation summary section, the status is displayed as Validated when the deployment is complete. 
+1. Click **Validate** to ensure that your software can be installed successfully. This step is required before you can make it available for users in your account. This action can take several minutes. In the Validation summary section, the status is displayed as Validated when the deployment is complete. 
 2. Make sure the deployment is successful by checking the Schematics workspace and the Kubernetes cluster:
     1. Click **View logs** in the Validation summary section. You're directed to your workspace details.
     2. Confirm that the recent activity shows that the plan is applied.
@@ -84,7 +84,7 @@ Complete the following steps to add an Apache Helm chart from Bitnami with a few
     1. Click **Namespaces** > the name of your namespace. 
     1. Click **Services** in the navigation. 
     1. Click the external endpoint link with port 80, and verify a page with the text `It works!` is displayed. 
-1. Return to the Validate product tab, click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg), and select **Publish to account** to make the product available to all users in your account through your private catalog.
+1. Return to the Validate product tab, click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg), and select **Publish to account** to make your software available to all users in your account through your private catalog.
 
 ## Add your product by using CLI
 {: #create-cicd-product}
@@ -93,32 +93,32 @@ First clean up your resources and the Apache deployment on your cluster by delet
 
 1. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **Schematics**.
 2. Click **Workspaces**.
-3. In the row for your workspace instance, click the **Actions** ![Actions icon](../icons/actions-icon-vertical.svg) icon, and select delete.
-<br>
+3. In the row for your workspace instance, click the **Actions** ![Actions icon](../icons/actions-icon-vertical.svg) icon, and select **Delete**.
+<br><br>
 
-Complete the following steps to add your product by using the CLI. You can use this task in a CI/CD process.
+Complete the following steps to add your software by using the CLI. You can use this task in a CI/CD process.
 
-1. Delete the product that you previously installed to start fresh.
+1. Delete the software that you previously installed to start fresh.
     ```
     ibmcloud catalog offering delete  --catalog "My first catalog" --offering "apache-two-instances"
     ```
     {: codeblock}
     
-1. Add a new product to your private catalog.  
+1. Add your software to your private catalog.  
     ```
     ibmcloud catalog offering create --catalog "My first catalog" --zipurl https://charts.bitnami.com/ibm/apache-6.0.2.tgz
     ```
     {: codeblock}
     
-1. Add the **Developer Tools** category to the product.  
+1. Add the **Developer Tools** category.  
     ```
     ibmcloud catalog offering add-category --catalog "My first catalog" --offering "apache-two-instances" --category "Developer Tools"
     ```
     {: codeblock}
     
-1. Validate the product.  
+1. Validate the software.  
     
-    You need the version locator for your product. To find it, run the `ibmcloud catalog offering list --catalog "My first catalog"` command, and search for the particular version of your product. Also, use the cluster that you created when you set up the required resources. 
+    You need the version locator for your software. To find it, run the **`ibmcloud catalog offering list --catalog "My first catalog"`** command, and search for the particular version of your software. Also, use the cluster that you created when you set up the required resources. 
     {: important}
     
     ```
@@ -126,13 +126,13 @@ Complete the following steps to add your product by using the CLI. You can use t
     ```
     {: codeblock}
     
-    Deploying the product can take a few minutes. You can check the validation status by querying the product validation state. The validation is complete when the state is Valid. 
+    Deploying the software can take a few minutes. You can check the validation status by querying the product validation state. The validation is complete when the state is Valid. 
     ```
     ibmcloud catalog offering validate-status --version-locator <LOCATOR>
     ```
     {: codeblock}
     
-1. Publish the product to the account. 
+1. Publish your software to make it available to users in your account.
     ```
     ibmcloud catalog offering publish-to-account --version-locator <LOCATOR>
     ```
@@ -141,4 +141,4 @@ Complete the following steps to add your product by using the CLI. You can use t
 ## Next steps
 {: #install-sw-next}
 
-A user installs the apache-two-instances product from your private catalog. See [Installing software from your private catalog](/docs/account?topic=account-install-sw) for more information.
+A user installs the software from your private catalog. See [Installing software from your private catalog](/docs/account?topic=account-install-sw) for more information.
