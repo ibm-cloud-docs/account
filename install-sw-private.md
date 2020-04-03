@@ -21,7 +21,7 @@ subcollection: account
 # Installing software from your private catalog
 {: #install-sw}
 
-In this tutorial, you install the apache-two-instances product that was previously added to the My first catalog catalog. 
+In this tutorial, you install the apache-two-instances software instance that was previously added to the My first catalog catalog. 
 {: shortdesc} 
 
 ## Before you begin
@@ -45,7 +45,7 @@ If you don't see what you're expecting in the console based on your permissions,
 1. Click **Catalog** in the console menu bar.
 2. Select **My first catalog** from the list of catalogs. 
 1. Click **Private** > **apache-two-instances**.
-1. Select a Kubernetes cluster, and enter a namespace value.
+1. Select a Kubernetes cluster and enter a namespace value.
 1. Click **Install** to install the Apache Helm chart.
 
 ### Success criteria
@@ -59,7 +59,7 @@ You successfully completed this tutorial if the following items are true:
 ## Next steps
 {: next-update}
 
-A user with access to your private catalog updates the software. See [Updating software in your private catalog](/docs/account?topic=account-update-private) for more information.
+A user with access to your private catalog updates the software. See [Updating software versions](/docs/account?topic=account-update-private) for more information.
 
 
 
