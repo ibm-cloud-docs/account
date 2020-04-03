@@ -48,14 +48,6 @@ If you don't see what you're expecting in the console based on your permissions,
 1. Select a Kubernetes cluster and enter a namespace value.
 1. Click **Install** to install the Apache Helm chart.
 
-### Success criteria
-{: #create-success-offering}
-
-You successfully completed this tutorial if the following items are true:
-
-1. You can navigate to the Private tab and view the apache-two-instances product.
-2. You can install the software.
-
 ## Next steps
 {: next-update}
 
