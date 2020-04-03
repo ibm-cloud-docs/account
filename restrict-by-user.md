@@ -18,7 +18,7 @@ subcollection: account
 {:important: .important}
 {:external: target="_blank" .external}
 
-# Including specific {{site.data.keyword.IBM_notm}} products in your private catalog
+# Customizing your private catalogs
 {: #restrict-by-user}
 
 In this tutorial, you set a filter to include only specific {{site.data.keyword.IBM}} products in your private catalog.
@@ -35,23 +35,22 @@ To complete this tutorial, you need to be assigned only the editor role on the c
 ## Create a private catalog and set a filter by using the console
 {: #restrict-editor-filter}
 
-Complete the following steps to create a private catalog and set a filter that includes specific {{site.data.keyword.IBM_notm}} products in your private catalog. 
+Complete the following steps to create a private catalog and set filters by using the console. 
 
-1. Go to **Manage** > **Catalogs**, and click **Create**.
-1. Enter `My first catalog` as the catalog name, select the resource group that you want to assign it to, and click **Create**.
+1. Go to **Manage** > **Catalogs**, and click **Create a catalog**.
+1. Enter `My first catalog` as the catalog name, select whether you want to start with an empty catalog or with available products included, and click **Create**.
 2. Click the name of your new catalog.
-1. Click **{{site.data.keyword.IBM_notm}} catalog products**. The list that's displayed includes the available products based on the filter that the administrator set on the Settings page. 
+1. Click **{{site.data.keyword.cloud_notm}} catalog products**. The list that's displayed shows the products that are available based on the account-level settings. 
 2. Click **Manage filters** to set additional restrictions that apply only to users with access to the private catalog that you're creating. 
-3. In the Rules section, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg).
-4. Make sure **Exclude all products in the {{site.data.keyword.cloud_notm}} catalog** is selected, and click **Add rule**.
+3. Click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg), make sure **Exclude all products in the {{site.data.keyword.cloud_notm}} catalog** is selected, and click **Add rule**.
 5. Select **Provider** from the list, and click **{{site.data.keyword.IBM_notm}}**. 
-6. In the Exceptions section, select **Include**, and then select **Cloudant** and **Kubernetes Service** from the list of products. 
+6. In the Exceptions section, select **Include**, and then select **{{site.data.keyword.cloudant_short_notm}}** and **{{site.data.keyword.containerlong_notm}}** from the list of products. 
 6. Click **Update**.
 
 ## Create a private catalog and set a filter by using the CLI
 {: #restrict-cli-filtering}
 
-Complete the following steps to create your private catalog and set a filter that includes specific {{site.data.keyword.IBM_notm}} products in your private catalog.
+Complete the following steps to create your private catalog and set filters by using the CLI.
 
 1. If you created the My first catalog catalog in the previous section, delete it.
     
@@ -70,7 +69,7 @@ Complete the following steps to create your private catalog and set a filter tha
     ```
     {:codeblock}
     
-1. Create a filter that includes specific {{site.data.keyword.IBM_notm}} products. This filtered view applies to all users with access to your private catalog.
+1. Create a filter that includes specific {{site.data.keyword.IBM_notm}} products, **{{site.data.keyword.cloudant_short_notm}}** and **{{site.data.keyword.containerlong_notm}}**. This filtered view applies to all users with access to your private catalog.
     
     ```
     ibmcloud catalog filter create --catalog "My first catalog" --include-all false  --provider ibm_created --include-list kubernetes cloudant
