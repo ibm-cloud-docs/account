@@ -90,10 +90,37 @@ Managing your account
         enterprise_faq.md
 
     {: .topicgroup}
-    Troubleshooting
-        ts_accessing.md
-        ts_accounts.md
-        ts_enterprise.md
+    Troubleshooting for accessing IBM Cloud 
+        ts_password.md
+        ts_login_id.md
+        ts_signup.md
+        ts_console_error.md
+        ts_authentication_issue.md
+        ts_pending_account.md
+        ts_account_activation.md
+        ts_page_load.md
+        ts_account_infra.md
+    
+    {: .topicgroup}    
+    Troubleshooting for managing accounts
+        ts_create_location.md
+        ts_create_org.md
+        ts_lite_instance.md
+        ts_runtime.md
+        ts_inactive_account.md
+        ts_add_users_org.md
+        ts_space_org.md
+        ts_admin_org.md
+        ts_add_cc.md
+    
+    {: .topicgroup}
+    Troubleshooting for an enterprise 
+        ts_view_enterprise.md
+        ts_import_enterprise.md
+        ts_create_enterprise_acct.md
+        ts_subscriptions_enterprise.md
+        ts-enterprise_apply.md
 
     known-issues.md
     {: .navgroup-end}
+
