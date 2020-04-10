@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-04-01"
+lastupdated: "2020-04-10"
 
 keywords: manage account, account events, track events, account tracking, monitoring, catalog tracking, catalog management
 
@@ -17,7 +17,7 @@ subcollection: account
 {:tip: .tip}
 {:deprecated: .deprecated}
 
-# Event tracking
+# Auditing events for account and catalogs management
 {: #accttracking}
 
 As a security officer, auditor, or manager, you can use the {{site.data.keyword.at_full}} service to track how users and applications interact with an {{site.data.keyword.Bluemix}} account, the {{site.data.keyword.Bluemix_notm}} catalog, and private catalogs.
