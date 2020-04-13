@@ -5,6 +5,7 @@
     "sign up for a account",
     "sign up for IBM Cloud",
     "create account",
+    "create account for a client",
     "create account on IBM Cloud"
   ],
   "account-error": [
@@ -16,7 +17,15 @@
     "account creation failed",
     "unable to make an IBM Cloud account",
     "can't create an account",
+    "have issues with Cloud account",  
     "Error when creating my account"
+  ],
+  "slid": [
+    "use my SoftLayer ID to log in",
+    "log in with softlayer id",
+    "logging in using id from softlayer",
+    "softlayer id log in",
+    "log on with softlayer id"
   ],
   "cloud-foundry": [
     "what is Cloud Foundry",
@@ -44,6 +53,7 @@
     "change region",
     "change location",
     "change default region",
+    "can i change my region",
     "update my region"
   ],
   "whatisliteplan": [
@@ -55,6 +65,7 @@
     "how much does a lite plan cost",
     "do I have to pay for a lite plan",
     "Is a lite plan free",
+    "does this free account expire",
     "I want to know about lite plans",
     "Tell me more about lite plans",
     "lite plan for services"
@@ -104,6 +115,9 @@
     "upgrade my account plan",
     "upgrading my IBM Cloud account",
     "convert my cloud account",
+    "account type",
+    "account upgrade",
+    "account upgrades",
     "change my account type",
     "upgrade to a paid account",
     "change plan",
@@ -140,6 +154,7 @@
     "reset VPN password",
     "update my password",
     "update VPN password",
+    "change password",        
     "new IBM Cloud account password",
     "new VPN password",
     "forgot my password",
@@ -155,6 +170,7 @@
     "cancel my account",
     "need my account cancelled",
     "suspend this account",
+    "cancel my account with you",
     "how to deactivate the account",
     "deactivate account"  
   ],
@@ -185,7 +201,9 @@
     "Why was my account deactivated",
     "my account was deactivated",
     "can i unsuspend my account", 
+    "getting error message this account is deactivated",
     "remove my account from suspended",  
+    "want to reactive my account",  
     "re-activate my account"
   ],
   "contactsupport": [
@@ -201,7 +219,9 @@
     "Is there a free trial",
     "How do I get a free trial",
     "free student account",
+    "free service for student",  
     "student account",
+    "offering free services for academic students", 
     "free trial",
     "education account"
   ],
@@ -271,6 +291,7 @@
     "change user id",
     "update userid",
     "edit my IBM ID",
+    "account settings",  
     "change contact name",
     "change email",
     "update phone number",
@@ -280,7 +301,12 @@
     "change language to english",
     "change account language",
     "switch language",
-    "update language setting"
+    "change language",
+    "change my language settings",
+    "change lauguage back to English",
+    "update language setting",
+    "change the language of my account to English",
+    "change the language"
   ],
   "switch-between-accounts": [
     "switch multiple accounts",
@@ -397,6 +423,7 @@
     "unable to add users to my org",
     "adding users to org",
     "add people to an org",
+    "add users to IBM cloud",
     "Who is allowed to add users to an org",
     "organization permissions",
     "Am I able to add users to an organization",
@@ -429,6 +456,7 @@
   "ts_addcc": [
     "not able to add my credit card",
     "can't add credit card",
+    "cant add card",  
     "not allowed to add my credit card information",
     "trouble adding a credit card",
     "credit card not being added",
@@ -581,6 +609,7 @@
     "can't click add account in the enterprise",
     "can't create an account to the enterprise",
     "in enterprise, why can't I add an account",
+    "do you know why I can't click the create button under enterprise",
     "issue adding an enterprise account",
     "unable in my enterprise to add account"
   ],
@@ -600,4 +629,3 @@
     "issue adding subscription code to enterprise"
   ]
 }
-
