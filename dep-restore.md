@@ -63,7 +63,7 @@ When you restore a deprecated version, you are required to validate and publish 
 1. Click the Validate offering tab.
 2. Select a cluster from the **Cluster** list, and select **apache-test-deployment** from the **Namespace** list.
 3. Click **Validate**.
-1. When the software is validated, click the **Actions** icon ![List of options icon][options-icon], and select **Merge changes**. 
+1. When the software is validated, click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg), and select **Merge changes**. 
 
 ### Validate the version is restored
 {: #restore-validate-editor}
