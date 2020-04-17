@@ -47,6 +47,7 @@ You can track the following events:
 * Listing all products in an account
 * Creating, updating, viewing, or deleting a product
 
-
+`unavailable` indicates when an update is made, but specific details about the update aren't included. 
+{: important}
 
 For more information about each of the event areas that you can track, see [Account management events](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-at_events_acc_mgt).
