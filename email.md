@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-02-28"
+lastupdated: "2019-04-21"
 
 keywords: platform notifications, email notifications, IBM Cloud notifications, notification preferences, email preferences, user notifications, infrastructure notifications
 
@@ -72,7 +72,6 @@ Users in your account receive notifications for the following types of important
   * Unplanned infrastructure issues or outages: Issues that might cause an outage based on certain conditions for specific customers.
   * Planned service or scheduled maintenance: Maintenance that is required to keep the infrastructure operating at optimal status.
   * Security vulnerabilities: The affected area is isolated. A patch is created to close the vulnerability, and tests are performed on the patch to ensure that no collateral function is affected.
-  * Opened support cases: Alerts users of cases that are opened on their account.
 
 The timing of the notification varies depending on whether the event is unplanned, planned, or scheduled. The {{site.data.keyword.BluSoftlayer_notm}} infrastructure policy is to remedy problems as quickly as possible to remove or minimize the risk of further issues that might have a larger impact. Sometimes even planned maintenance is performed with only a short advanced notification.
 
