@@ -294,3 +294,11 @@ Before you can delete a tag, you must remove it from all resources. If you still
 {: faq}
 
 You can't edit the name of a tag. To rename a tag, remove it and reassign the resource with a new tag.  
+
+## How do I delete my account?
+{: #deleteaccount}
+{: faq}
+
+Contact [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: new_window} to open a support case and request to delete your account. If you have data that is associated with your old account that you want to move to a new account, include this information in your email.
+
+Data in deleted accounts is not recoverable.
