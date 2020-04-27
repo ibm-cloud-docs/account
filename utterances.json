@@ -53,6 +53,7 @@
     "change region",
     "change location",
     "change default region",
+    "How to change account region",
     "can i change my region",
     "update my region"
   ],
@@ -68,6 +69,8 @@
     "does this free account expire",
     "I want to know about lite plans",
     "Tell me more about lite plans",
+    "whats the lite plan",
+    "lite",
     "lite plan for services"
   ],
   "howmanyapps": [
@@ -146,6 +149,8 @@
     "email notifications",
     "stop email notifications",
     "notification settings",
+    "stop receiving maintenance email",
+    "stop receiving maintenance emails at my email address",
     "unsubscribe from email notifications"
   ],
   "reset-password": [
@@ -191,6 +196,7 @@
     "remove my info",
     "delete personal data",
     "delete my data,",
+    "delete my information from your website",
     "erase personal data"
   ],
   "account-deactivated": [
@@ -223,6 +229,7 @@
     "student account",
     "offering free services for academic students", 
     "free trial",
+    "how can I get free trail",
     "education account"
   ],
   "al_login": [
@@ -284,7 +291,6 @@
     "accounts I am in",
     "which accounts am I affiliated with",
     "am I the account owner",
-      
     "what accounts are in my name"
   ],
   "change-profile-settings": [
@@ -302,10 +308,16 @@
     "change account language",
     "switch language",
     "change language",
-    "change my language settings",
+    "change my language setting",
     "change lauguage back to English",
     "update language setting",
     "change the language of my account to English",
+    "manually change the site's language",
+    "how to change the site's language",
+    "configure language",
+    "can i change the language settings",
+    "how can i change my language settings",
+    "How do i change the language of page",
     "change the language"
   ],
   "switch-between-accounts": [
@@ -402,6 +414,7 @@
     "Why can't I form a new Lite plan instance",
     "provision another Lite plan resource",
     "Unable to provision new Lite instance",
+    "i cant create a lite",
     "more than one lite plan instance"
   ],
   "noruntimemem": [
@@ -495,6 +508,8 @@
     "the console will not open when I log in",
     "console not opening",
     "console won't open",
+    "I cannot open my console",
+    "can't open my console",
     "console doesn't open after logging in"
   ],
   "ts_login_ibmid": [
