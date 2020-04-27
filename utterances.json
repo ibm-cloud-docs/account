@@ -32,6 +32,7 @@
     "what does Cloud Foundry do",
     "Is Cloud Foundry a platform",
     "learn about Cloud Foundry",
+    "Where is Cloud Foundry orgs",  
     "Tell me about Cloud Foundry"
   ],
   "move-org-diff-account": [
@@ -54,6 +55,9 @@
     "change location",
     "change default region",
     "How to change account region",
+    "to change my region"
+    "where do i change the regon",
+    "region change",
     "can i change my region",
     "update my region"
   ],
@@ -70,6 +74,7 @@
     "I want to know about lite plans",
     "Tell me more about lite plans",
     "whats the lite plan",
+    "account will be free of charge forever",
     "lite",
     "lite plan for services"
   ],
@@ -165,6 +170,7 @@
     "forgot my password",
     "replace IBM Cloud password",
     "can't remember log in info",
+     "know my VPN user id and password",
     "forgot my login credentials"
   ],
   "cancelaccount": [
@@ -300,6 +306,8 @@
     "account settings",  
     "change contact name",
     "change email",
+    "Change Name in profile",
+    "change my last name in my account",
     "update phone number",
     "edit personal information"
   ],
@@ -312,6 +320,7 @@
     "change lauguage back to English",
     "update language setting",
     "change the language of my account to English",
+    "change the language of the page, i want it in english",
     "manually change the site's language",
     "how to change the site's language",
     "configure language",
@@ -441,6 +450,8 @@
     "organization permissions",
     "Am I able to add users to an organization",
     "add another user",
+    "add user to my account",
+    "add another user to the account",
     "add user access"
   ],
   "ts_no_space": [
@@ -539,6 +550,8 @@
     "did not get email",
     "activation email",
     "no confirmation email",
+    "havent received any email for signing up for my cloud account",
+    "not received the email to sign up to my account",
     "signup email"
   ],
   "ts_err": [
