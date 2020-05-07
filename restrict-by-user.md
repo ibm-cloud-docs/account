@@ -2,9 +2,9 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-04-02"
+lastupdated: "2020-05-07"
 
-keywords: catalog, restrict visibility, hide product, restrict by user, filter catalog, private catalog
+keywords: catalog, restrict visibility, hide product, restrict by user, filter catalog, private catalog, catalog management service, public catalog
 
 subcollection: account
 
@@ -21,65 +21,67 @@ subcollection: account
 # Customizing your private catalogs
 {: #restrict-by-user}
 
-In this tutorial, you set a filter to include only specific {{site.data.keyword.IBM}} products in your private catalog.
+Private catalogs provide a way to centrally manage access to products in the {{site.data.keyword.cloud}} catalog and your own catalogs. You can customize your private catalogs to make specific solutions available to your users. By doing so, you can ensure that your catalogs are relevant to your business. 
 {: shortdesc}
+
+Let's say you're an operations admin for your team, and you require access to all products in the {{site.data.keyword.cloud_notm}} catalog. A member of your team is tasked with a specific project, for example, building a voice-enable chatbot by using {{site.data.keyword.conversationshort}}, {{site.data.keyword.speechtotextshort}}, and {{site.data.keyword.texttospeechshort}}. And, you want them to access only those products in the {{site.data.keyword.cloud_notm}} catalog.  
+
+To achieve this, you create one catalog that includes all products in the {{site.data.keyword.cloud}} catalog. Then, you create another catalog that includes only the required products, and you give the team member viewer access to the catalog. 
 
 ## Before you begin
 {: #prereq-restrict}
 
-To complete this tutorial, you need to be assigned only the editor role on the catalog management service. With this type of access, you can create private catalogs and set filters that apply only to users with access to your private catalog. You can also view the account-level filters on the Settings page, but you can't edit them. For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
+* To complete this task, you need the administrator role on the catalog management service. See [Assigning access to account management services](/docs/iam?topic=iam-account-services) for more information. 
+* To give users access to your private catalog, invite them to join your {{site.data.keyword.cloud_notm}} account. See [Inviting users to an account](/docs/iam?topic=iam-iamuserinv) for more information.
 
-  If you don't see what you're expecting in the console based on your permissions, try refreshing your session by going to https://cloud.ibm.com/login.
+## Creating a private catalog with all products
+{: #catalog-all}
+
+Complete the following steps to create a catalog that includes all products in the {{site.data.keyword.cloud_notm}} catalog:
+
+1. In the console, go to **Manage** > **Catalogs**, and click **Create a catalog**.
+1. Enter a name, make sure the **Start with all available products in this account** option is selected, and click **Create**. 
+
+  As the account owner or administrator, you control which products are available by setting filters from the Settings page. Any filters that you set at the account level are inherited by all private catalogs that are in your account. 
   {: tip}
+  
+2. Confirm that the catalog includes all products by clicking the catalog name > **Manage filters**. Then, check that **Include all products in the {{site.data.keyword.cloud_notm}} catalog** is selected in **Step 1: Select to include or exclude all products in the {{site.data.keyword.cloud_notm}} catalog**.
 
-## Create a private catalog and set a filter by using the console
-{: #restrict-editor-filter}
+## Creating a private catalog with select products
+{: #catalog-select}
 
-Complete the following steps to create a private catalog and set filters by using the console. 
+Complete the following steps to create a catalog that includes a specific set of products in the {{site.data.keyword.cloud_notm}} catalog:
 
 1. Go to **Manage** > **Catalogs**, and click **Create a catalog**.
-1. Enter `My first catalog` as the catalog name, select whether you want to start with an empty catalog or with available products included, and click **Create**.
-2. Click the name of your new catalog.
-1. Click **{{site.data.keyword.cloud_notm}} catalog products**. The list that's displayed shows the products that are available based on the account-level settings. 
-2. Click **Manage filters** to set additional restrictions that apply only to users with access to the private catalog that you're creating. 
-3. Click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg), make sure **Exclude all products in the {{site.data.keyword.cloud_notm}} catalog** is selected, and click **Add rule**.
-5. Select **Provider** from the list, and click **{{site.data.keyword.IBM_notm}}**. 
-6. In the Exceptions section, select **Include**, and then select **{{site.data.keyword.cloudant_short_notm}}** and **{{site.data.keyword.containerlong_notm}}** from the list of products. 
-6. Click **Update**.
+2. Enter a name, and click **Create**.
+3. Click the catalog name > **Manage filters**.
+4. Select **Exclude all products in the {{site.data.keyword.cloud_notm}} catalog** in **Step 1: Select to include or exclude all products in the {{site.data.keyword.cloud_notm}} catalog**. 
+5. Skip step 2, and click **Add** in **Step 3: Add exceptions to the rules**. 
+6. Make sure **Include** is selected as the condition, and then individually select the products you want users to access. In the case of our example project, you select {{site.data.keyword.conversationshort}}, {{site.data.keyword.speechtotextshort}}, and {{site.data.keyword.texttospeechshort}}.
 
-## Create a private catalog and set a filter by using the CLI
-{: #restrict-cli-filtering}
+## Setting the visibility of the {{site.data.keyword.cloud_notm}} catalog
+{: #catalog-off}
 
-Complete the following steps to create your private catalog and set filters by using the CLI.
+Now that you created your private catalogs, complete the following steps to turn off visibility of the public catalog to all users in your account.
 
-1. If you created the My first catalog catalog in the previous section, delete it.
-    
-    ```
-    ibmcloud catalog delete --catalog "My first catalog"
-    ```
-    {:codeblock}
-    
-1. Create a new private catalog in your account.
+1. Click **Catalogs** in the breadcrumb at the top of the page.
+2. Click **Settings**.
+3. Set **{{site.data.keyword.cloud_notm}} catalog** to **Off**. 
+4. Confirm that your filters and settings are correctly applied by going to the public catalog, and expanding the catalog switcher. Only the private catalogs in your account should be displayed in the list. 
 
-  You must target a resource group to create a catalog, as the catalog exists in the context of a particular resource group. To get a list of the resource groups in the account, run the **`ibmcloud resource groups`** command and then the **`ibmcloud target -g "resource group"`** command.
-  {: important}
-    
-    ```
-    ibmcloud catalog create --name "My first catalog" --description "A private catalog for testing purposes"
-    ```
-    {:codeblock}
-    
-1. Create a filter that includes specific {{site.data.keyword.IBM_notm}} products, **{{site.data.keyword.cloudant_short_notm}}** and **{{site.data.keyword.containerlong_notm}}**. This filtered view applies to all users with access to your private catalog.
-    
-    ```
-    ibmcloud catalog filter create --catalog "My first catalog" --include-all false  --provider ibm_created --include-list kubernetes cloudant
-    ```
-    {:codeblock}
+## Authorizing access to private catalogs
+{: #customcatalog-access}
 
-## Next steps
-{: #next-restrictuser}
+To authorize users to work with the products in your private catalogs, assign them the viewer role for the specific catalog. See [Assigning access to account management services](/docs/iam?topic=iam-account-services) for more information.  
 
-A user with the required access validates that they can view the specific {{site.data.keyword.IBM_notm}} products in your private catalog. See [Validating filters set at the private catalog level](/docs/account?topic=account-restrict-user-validate) for more information.
+
+
+
+
+
+
+
+
 
 
 
