@@ -24,7 +24,7 @@ subcollection: account
 Private catalogs provide a way to centrally manage access to products in the {{site.data.keyword.cloud}} catalog and your own catalogs. You can customize your private catalogs to make specific solutions available to your users. By doing so, you can ensure that your catalogs are relevant to your business. 
 {: shortdesc}
 
-Let's say you're an operations admin for your team, and you require access to all products in the {{site.data.keyword.cloud_notm}} catalog. A member of your team is tasked with a specific project, for example, building a voice-enable chatbot by using {{site.data.keyword.conversationshort}}, {{site.data.keyword.speechtotextshort}}, and {{site.data.keyword.texttospeechshort}}. And, you want them to access only those products in the {{site.data.keyword.cloud_notm}} catalog.  
+Let's say you're an operations admin for your team, and you require access to all products in the {{site.data.keyword.cloud_notm}} catalog. A member of your team is tasked with a specific project, for example, building a voice-enabled chatbot by using {{site.data.keyword.conversationshort}}, {{site.data.keyword.speechtotextshort}}, and {{site.data.keyword.texttospeechshort}}. And, you want them to access only those products in the {{site.data.keyword.cloud_notm}} catalog.  
 
 To achieve this, you create one catalog that includes all products in the {{site.data.keyword.cloud}} catalog. Then, you create another catalog that includes only the required products, and you give the team member viewer access to the catalog. 
 
