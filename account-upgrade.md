@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-03-09"
+lastupdated: "2020-05-08"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -41,9 +41,37 @@ To upgrade to a Pay-As-You-Go account, complete the following steps.
 1. Select **Account settings**, and click **Add credit card**.
 1. Enter your payment information, click **Next**, and submit your information.
 
-After your payment information is processed, your account is upgraded and you can explore and access the full {{site.data.keyword.Bluemix_notm}} catalog. For any billable services that you use beyond any free allowances, you receive a monthly invoice. If your upgrade included a promotional credit, the credit might take a few hours to appear in your account.
+
+After your payment information is processed, your account is upgraded and you can explore and access the full {{site.data.keyword.Bluemix_notm}} catalog. For any billable services that you use beyond any free allowances, you receive a monthly invoice. 
 
 If you're upgrading to reactivate a deactivated account, your account might take a few days to be fully available. If your account continues to be in a pending state, see [Troubleshooting for accessing {{site.data.keyword.Bluemix_notm}}](/docs/account?topic=account-accessing) for help.
+
+### Promotional credit for upgrading your account 
+If your upgrade included a promotional credit, the credit might take a few hours to appear in your account. The following table lists the current upgrade promotional amounts for different currencies: 
+
+
+| Country | Currency   | Converted Promo Amount |
+|---------------|-------------|----------------|
+|United States  | USD  | 200.00 |
+|Australia  |	AUD  | 274.60 |
+|Brazil  |	BRL  |742.96 |
+|Canada  |	CAD  |255.99 |
+|Switzerland  | CHF  | 190.85 |
+|China  |	CNY  |1,836.38 |
+|Denmark  | DKK  | 1,258.68|
+|Euro  | EUR  | 168.67  |
+|UK  |	GBP  | 149.07 |
+|Indonesia  | IDR  | 3,128,000.00
+|India  |	INR  |13,474.41 |
+|Japan  | JPY  | 22,400.62 |
+|South Korea  |	KRW  | 232,999.57 |
+|Norway  | NOK  | 1,622.83 |
+|New Zealand  | NZD  | 302.40 |
+|Sweden  | SEK  | 1,747.41|
+|South Africa  | ZAR  | 3,040.00 |
+
+{:caption="Table 1. Promo price for different currencies" caption-side="top"}
+
 
 ## Upgrading to a Subscription account
 {: #upgrade-subscription}
