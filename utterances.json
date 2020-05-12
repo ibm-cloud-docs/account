@@ -6,6 +6,7 @@
     "sign up for IBM Cloud",
     "create account",
     "create account for a client",
+    "how to created account",  
     "create account on IBM Cloud"
   ],
   "account-error": [
@@ -123,10 +124,10 @@
     "upgrade my account plan",
     "upgrading my IBM Cloud account",
     "convert my cloud account",
-    "account type",
     "account upgrade",
     "account upgrades",
     "change my account type",
+    "want to change my account for a Subscription account",  
     "upgrade to a paid account",
     "change plan",
     "upgrade lite account",
@@ -156,6 +157,8 @@
     "notification settings",
     "stop receiving maintenance email",
     "stop receiving maintenance emails at my email address",
+    "unsubscribe mailing list",
+    "unsubcsribe from the mailing list", 
     "unsubscribe from email notifications"
   ],
   "reset-password": [
@@ -183,6 +186,9 @@
     "suspend this account",
     "cancel my account with you",
     "how to deactivate the account",
+    "wanted to deactivate my account how would i go about that", 
+    "unsubscribe from this account",
+    "unsubscribe my ibm cloud account", 
     "deactivate account"  
   ],
   "deleteaccount": [
@@ -214,7 +220,8 @@
     "my account was deactivated",
     "can i unsuspend my account", 
     "getting error message this account is deactivated",
-    "remove my account from suspended",  
+    "remove my account from suspended", 
+    "my account is blocked",  
     "want to reactive my account",  
     "re-activate my account"
   ],
@@ -383,6 +390,7 @@
     "What is required to add or remove tags from resources",
     "Can I add or remove a tag",
     "replace a tag",
+    "how to get tag",  
     "I can't remove my tag"
   ],
   "can-i-delete-my-tags-": [
@@ -542,6 +550,8 @@
     "can't login after creating an account",
     "log in after signup for IBM Cloud",
     "can't get into my account after signing up",
+    "why is my account upgrade pending", 
+    "how long will my upgrade be pending for",  
     "Your account is pending"
   ],
   "ts_email": [
@@ -655,5 +665,19 @@
     "add a code to child account on the enterprise",
     "subscription code addition to enterprise",
     "issue adding subscription code to enterprise"
-  ]
+  ],
+  "ts_upgrade_cc": [
+    "You do not have the permissions necessary to view this page",
+    "can't I upgrade my account",
+    "can't upgrade to a Pay-As-You-Go account",
+    "issue in upgrading account",
+    "cant upgrade account",
+    "not able to upgrade my account",
+    "having trouble updating my account", 
+    "account upgrade issue",
+    "cannot upgrade my account", 
+    "trying to upgrade my account but it's getting declined",
+    "unable to upgrade my account",
+    "unable to upgrade"
+ ]     
 }
