@@ -112,6 +112,7 @@ Managing your account
         ts_space_org.md
         ts_admin_org.md
         ts_add_cc.md
+        ts_upgrade.md
     
     {: .topicgroup}
     Troubleshooting for an enterprise 
