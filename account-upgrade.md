@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-05-08"
+lastupdated: "2020-05-26"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -44,7 +44,8 @@ To upgrade to a Pay-As-You-Go account, complete the following steps.
 
 After your payment information is processed, your account is upgraded and you can explore and access the full {{site.data.keyword.Bluemix_notm}} catalog. For any billable services that you use beyond any free allowances, you receive a monthly invoice. 
 
-If you're upgrading to reactivate a deactivated account, your account might take a few days to be fully available. If your account continues to be in a pending state, see [Troubleshooting for accessing {{site.data.keyword.Bluemix_notm}}](/docs/account?topic=account-accessing) for help.
+If you're upgrading to reactivate a deactivated account, your account might take a few days to be fully available. If your account continues to be in a pending state, see [Why can't I upgrade my account?](/docs/account?topic=account-ts_upgrade_cc) for help.
+
 
 ### Promotional credit for upgrading your account 
 If your upgrade included a promotional credit, the credit might take a few hours to appear in your account. The following table lists the current upgrade promotional amounts for different currencies: 
