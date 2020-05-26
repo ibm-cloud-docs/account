@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-05-22"
+lastupdated: "2020-05-26"
 
 keywords: account types, Lite, free account, trial account, paid account, buy account, account difference, compare account, subscription
 
@@ -41,6 +41,7 @@ The following table provides a comparison of Lite, Pay-As-You-Go, and Subscripti
 | **Discounted pricing**                  |                    |                    | ![Feature available](../icons/icon_enabled.svg) |
 | **Best for learning or building proof of concepts** | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |  |
 | **Fit for production use cases**        |                    | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
+| **Fit for creating an enterprise**        |                    |  | ![Feature available](../icons/icon_enabled.svg) |
 {: row-headers}
 {: class="comparison-table"}
 {: caption="Table 1. Comparison of {{site.data.keyword.Bluemix_notm}} accounts" caption-side="top"}
