@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-05-26"
+lastupdated: "2020-05-27"
 
 keywords: account types, Lite, free account, trial account, paid account, buy account, account difference, compare account, subscription
 
@@ -30,8 +30,8 @@ The following table provides a comparison of Lite, Pay-As-You-Go, and Subscripti
 
 |                                         | Lite               | Pay-As-You-Go      | Subscription       |
 |-----------------------------------------|--------------------|--------------------|--------------------|
-| **Free Cloud Foundry memory** | 256 MB             |           |              |
-| **Free Community Runtime** | 186 GBH             |   186 GBH       |    186 GBH          |
+| **Free Cloud Foundry memory** | 256 MB             |             |              |
+| **[Free community buildpacks](/docs/cloud-foundry-public?topic=cloud-foundry-using_buildpacks)** | 186 GBH             |   186 GBH       |    186 GBH          |
 | **Access to [Lite service plans ![External link icon](../icons/launch-glyph.svg "External link icon")](https://{DomainName}/catalog/?search=label:lite){: new_window}** | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | **Access to all free plans**            |                    | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | **Access to the full {{site.data.keyword.Bluemix_notm}} catalog** |  | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
@@ -41,7 +41,7 @@ The following table provides a comparison of Lite, Pay-As-You-Go, and Subscripti
 | **Discounted pricing**                  |                    |                    | ![Feature available](../icons/icon_enabled.svg) |
 | **Best for learning or building proof of concepts** | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |  |
 | **Fit for production use cases**        |                    | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
-| **Fit for creating an enterprise**        |                    |  | ![Feature available](../icons/icon_enabled.svg) |
+| **Available for enterprises**        |                    |  | ![Feature available](../icons/icon_enabled.svg) |
 {: row-headers}
 {: class="comparison-table"}
 {: caption="Table 1. Comparison of {{site.data.keyword.Bluemix_notm}} accounts" caption-side="top"}
