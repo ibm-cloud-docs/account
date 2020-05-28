@@ -26,7 +26,7 @@ subcollection: account
 Depending on your {{site.data.keyword.Bluemix}} account type, you can choose whether to receive email notifications about {{site.data.keyword.Bluemix}} platform unplanned events and planned events, or infrastructure email notifications about unplanned events, maintenance, and announcements. You can also choose to set notification subscriptions for classic infrastructure events. These notifications are for only the services you use or the devices that you have provisioned, and if they are impacted by the event, maintenance, or announcement.
 {: shortdesc}
 
-If you set your email preferences but aren't receiving email notfications, make sure emails that are sent from `no_reply@cloud.ibm.com` aren't blocked or in your spam folder. For more information, see [Why am I not receiving email notifications?](/docs/account?topic=account-ts_email_notifications).
+If you set your email preferences but aren't receiving email notifications, make sure emails that are sent from `no_reply@cloud.ibm.com` aren't blocked or in your spam folder. For more information, see [Why am I not receiving email notifications?](/docs/account?topic=account-ts_email_notifications).
 {: tip}
 
 ## Setting platform notifications
