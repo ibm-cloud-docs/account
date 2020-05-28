@@ -28,7 +28,7 @@ To enable virtual routing and forwarding and {{site.data.keyword.Bluemix_notm}} 
 ## Enabling VRF
 {: #vrf}
 
-VRF allows multiple instances of a routing table to exist in a router and to work simultaneously. When you enable VRF, a separate routing table is created for your account, and connections to and from your account's resources are routed separately on the {{site.data.keyword.Bluemix_notm}} network. VRF is enabled at the account level, so all resources are affected by this networking change. For more information about VRF technology and how it affects your account's network routing, see [Virtual routing and forwarding on {{site.data.keyword.Bluemix_notm}}](/docs/resources?topic=direct-link-overview-of-virtual-routing-and-forwarding-vrf-on-ibm-cloud).
+VRF allows multiple instances of a routing table to exist in a router and to work simultaneously. When you enable VRF, a separate routing table is created for your account, and connections to and from your account's resources are routed separately on the {{site.data.keyword.Bluemix_notm}} network. VRF is enabled at the account level, so all resources are affected by this networking change. For more information about VRF technology and how it affects your account's network routing, see [Virtual routing and forwarding on {{site.data.keyword.Bluemix_notm}}](/docs/dl?topic=dl-overview-of-virtual-routing-and-forwarding-vrf-on-ibm-cloud).
 
 Enabling VRF permanently alters networking for your account. Be sure that you understand the impact to your account and resources. After you enable VRF, it cannot be disabled.
 {: important}
