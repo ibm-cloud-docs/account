@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-05-26"
+lastupdated: "2020-06-02"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -46,7 +46,6 @@ After your payment information is processed, your account is upgraded and you ca
 
 If you're upgrading to reactivate a deactivated account, your account might take a few days to be fully available. If your account continues to be in a pending state, see [Why can't I upgrade my account?](/docs/account?topic=account-ts_upgrade_cc) for help.
 
-
 ### Promotional credit for upgrading your account 
 If your upgrade included a promotional credit, the credit might take a few hours to appear in your account. The following table lists the current upgrade promotional amounts for different currencies: 
 
@@ -55,7 +54,7 @@ If your upgrade included a promotional credit, the credit might take a few hours
 |---------------|-------------|----------------|
 |United States  | USD  | 200.00 |
 |Australia  |	AUD  | 274.60 |
-|Brazil  |	BRL  |742.96 |
+|Brazil  |	BRL  |846.41 |
 |Canada  |	CAD  |255.99 |
 |Switzerland  | CHF  | 190.85 |
 |China  |	CNY  |1,836.38 |
@@ -69,10 +68,9 @@ If your upgrade included a promotional credit, the credit might take a few hours
 |Norway  | NOK  | 1,622.83 |
 |New Zealand  | NZD  | 302.40 |
 |Sweden  | SEK  | 1,747.41|
-|South Africa  | ZAR  | 3,040.00 |
+|South Africa  | ZAR  | 3,496.00 |
 
 {:caption="Table 1. Promo price for different currencies" caption-side="top"}
-
 
 ## Upgrading to a Subscription account
 {: #upgrade-subscription}
