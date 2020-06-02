@@ -35,7 +35,7 @@ Go to [{{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com){: new_window} 
 {: #account-error}
 {: faq}
 
-If you are able to log in to an {{site.data.keyword.Bluemix_notm}} account, go to [Support](https://test.cloud.ibm.com/unifiedsupport/supportcenter) and choose one of the following options.
+If you are able to log in to an {{site.data.keyword.Bluemix_notm}} account, go to [Support](https://cloud.ibm.com/unifiedsupport/supportcenter) and choose one of the following options.
 
 * If you have advanced or premium support, click **Live chat** to talk to an {{site.data.keyword.Bluemix_notm}} support representative.
 * Create a support case by clicking **Create a case** from the _Need more help_ section.
