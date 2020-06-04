@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-05-18"
+lastupdated: "2020-06-04"
 
 keywords: change owner, transfer account, transfer account ownership, switch owner, transfer owner
 
@@ -22,9 +22,6 @@ subcollection: account
 
 You can transfer your entire {{site.data.keyword.cloud}} account to a different owner by creating a support case with information about the new owner. Only Pay-As-You-Go or Subscription accounts can be transferred.
 {:shortdesc}
-
-You can transfer ownership of individual resources within your account by using the `ibmcloud catalog` command. For more information, see [Transferring ownership of a private resource](/docs/account?topic=account-transfer#transfer-own).
-{: tip}
 
 ## Transferring an account that you own
 {: #transfer-own}
