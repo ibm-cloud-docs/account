@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-01-29"
+lastupdated: "2020-06-05"
 
 keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network
 
@@ -67,7 +67,7 @@ It might take a few minutes for this change to take affect.
 ### From the CLI
 {: #service-endpoint-cli}
 
-To enable service endpoints from the [{{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cloud-cli-getting-started), you need version 0.13 or later.
+To enable service endpoints from the [{{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cli-getting-started), you need version 0.13 or later.
 
 1.  Check whether service endpoints are already enabled in your account.
 

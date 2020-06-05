@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-01-09"
+lastupdated: "2020-06-05"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, multiple account
 
@@ -94,7 +94,7 @@ ID:                      09876jihgf54321edcba
 Enterprise Account ID:   edcba12345jihgf67890
 ```
 
-The account that you used to create the enterprise is now a part of the enterprise. Run the [`ibmcloud enterprise accounts`](/docs/cli?topic=cloud-cli-ibmcloud_enterprise#ibmcloud_enterprise_accounts) command to view the two accounts in your enterprise: the enterprise account, and the account you used to create the enterprise.
+The account that you used to create the enterprise is now a part of the enterprise. Run the [`ibmcloud enterprise accounts`](/docs/cli?topic=cli-ibmcloud_enterprise#ibmcloud_enterprise_accounts) command to view the two accounts in your enterprise: the enterprise account, and the account you used to create the enterprise.
 
 ## Creating an enterprise by using the API
 {: #create-api}

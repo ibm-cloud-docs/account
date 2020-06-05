@@ -26,7 +26,7 @@ As an administrator for your {{site.data.keyword.Bluemix}} account, you can hide
 Hiding a resource in the catalog does not remove it from the Cloud Foundry command-line interface (CLI) or from the offering category list that's available from the {{site.data.keyword.Bluemix_notm}} console navigation, such as Finance, Mobile, Watson, and Web Apps.
 {: note}
 
-You can use the {{site.data.keyword.Bluemix}} [command-line interface (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli) or console to determine whether you have access to allow users to view a private resource that was added to the account. If you're an account owner, you can give access to a user in your account from the console by assigning an access policy. For more information, see [Assigning access to account management services](/docs/iam?topic=iam-account-services).
+You can use the {{site.data.keyword.Bluemix}} [command-line interface (CLI)](/docs/cli?topic=cli-ibmcloud_cli) or console to determine whether you have access to allow users to view a private resource that was added to the account. If you're an account owner, you can give access to a user in your account from the console by assigning an access policy. For more information, see [Assigning access to account management services](/docs/iam?topic=iam-account-services).
 
 ## Finding a resource
 {: #find-resource-exc}

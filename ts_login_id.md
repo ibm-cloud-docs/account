@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-04-08"
+lastupdated: "2020-06-05"
 
 keywords: troubleshoot account, email login, IBMid help, troubleshoot IBMid
 
@@ -39,4 +39,4 @@ You must have a valid IBMid and password to log in to {{site.data.keyword.Bluemi
 
  * Enter a fully qualified email address for the IBMid.
  {: tsResolve}
- * If you're a SoftLayer user with a SoftLayer ID, you must switch to IBMid authentication in each account that you have access to before you can log in. For more information, see [Switching to IBMid](/docs/account?topic=account-unifyingaccounts).
+ * If you're a SoftLayer user with a SoftLayer ID, you must switch to IBMid authentication in each account that you have access to before you can log in. For more information, see [Switching to IBMid](/docs/iam?topic=iam-enablemfa#enablemfa).

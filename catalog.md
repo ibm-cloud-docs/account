@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2020
-lastupdated: "2020-04-02"
+lastupdated: "2020-06-05"
 
 keywords: catalog, restrict, public catalog, private catalog, Helm chart, Terraform, add software
 
@@ -35,7 +35,7 @@ The account owner must assign users in their account specific access roles so th
 ### Install the CLI and plug-in
 {: #cli-plugin-install}
 
-You can complete the tutorials by using either the {{site.data.keyword.cloud_notm}} console or command-line interface (CLI). Make sure you install the {{site.data.keyword.cloud_notm}} CLI and the catalogs management CLI plug-in. For details about installing the CLI, see [Getting started with the {{site.data.keyword.cloud_notm}} CLI and Developer Tools](/docs/cli?topic=cloud-cli-getting-started).
+You can complete the tutorials by using either the {{site.data.keyword.cloud_notm}} console or command-line interface (CLI). Make sure you install the {{site.data.keyword.cloud_notm}} CLI and the catalogs management CLI plug-in. For details about installing the CLI, see [Getting started with the {{site.data.keyword.cloud_notm}} CLI and Developer Tools](/docs/cli?topic=cli-getting-started).
 
 After you install the {{site.data.keyword.cloud_notm}} CLI, log in with the **`ibmcloud login`** command to generate an access token and authenticate your session. Then, run the following command to install the catalogs management CLI plug-in:
 

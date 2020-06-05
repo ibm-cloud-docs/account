@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-04-10"
+lastupdated: "2020-06-05"
 
 keywords: manage account, account events, track events, account tracking, monitoring, catalog tracking, catalog management
 
@@ -50,4 +50,4 @@ You can track the following events:
 `unavailable` indicates when an update is made, but specific details about the update aren't included. 
 {: important}
 
-For more information about each of the event areas that you can track, see [Account management events](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-at_events_acc_mgt).
+For more information about each of the event areas that you can track, see [Account management events](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-at_events_acc_mgt).
