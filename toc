@@ -49,10 +49,8 @@ Managing your account
     Managing catalogs
         catalog.md
         catalog-access-reqs.md
-        visibility-public-catalog.md
-        validate-catalog-filter.md
+        catalog-settings.md
         restrict-by-user.md
-        validate-restrict-user.md
         create-catalog.md
         install-sw-private.md
         update-private.md
@@ -92,7 +90,7 @@ Managing your account
         enterprise_faq.md
 
     {: .topicgroup}
-    Troubleshooting for accessing IBM Cloud 
+    Troubleshooting for accessing IBM Cloud
         ts_password.md
         ts_login_id.md
         ts_signup.md
@@ -102,8 +100,8 @@ Managing your account
         ts_account_activation.md
         ts_page_load.md
         ts_account_infra.md
-    
-    {: .topicgroup}    
+
+    {: .topicgroup}
     Troubleshooting for managing accounts
         ts_create_location.md
         ts_create_org.md
@@ -116,9 +114,9 @@ Managing your account
         ts_add_cc.md
         ts_upgrade.md
         ts_email_issue.md
-    
+
     {: .topicgroup}
-    Troubleshooting for an enterprise 
+    Troubleshooting for an enterprise
         ts_view_enterprise.md
         ts_import_enterprise.md
         ts_create_enterprise_acct.md
@@ -127,4 +125,3 @@ Managing your account
 
     known-issues.md
     {: .navgroup-end}
-
