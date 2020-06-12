@@ -44,7 +44,7 @@ If your account is a parent account in an {{site.data.keyword.cloud_notm}} enter
 2. Confirm that the visibility of the public catalog is set to **On**.
 3. In the What products are available? section, select **Exclude all products in the {{site.data.keyword.cloud_notm}} catalog**.
 4. Set one or more filters to customize what products are available by category.
-5. Add exceptions to the filter rules that you set in the previous step. 
+5. (Optional) Add exceptions to the filter rules that you set in the previous step. 
 6. Use the **Preview** table to confirm your selections, and click **Update**.
 
 ## Managing access to products for specific users 
@@ -61,7 +61,7 @@ Set filters on a private catalog for fine-grained control of which products in t
 3. Click **Manage filters**.
 3. Select to include or exclude all products in the public catalog. 
 4. Set one or more filters to customize what products are available by category. 
-5. Add exceptions to the filter rules that you set in the previous step. 
+5. (Optional) Add exceptions to the filter rules that you set in the previous step. 
 6. Click **Update**. 
 7. Go to the Settings page and turn off the visibility of the public catalog.  
 7. To give users access to work with the products in the private catalog, assign them the viewer role on the catalog management service.  
