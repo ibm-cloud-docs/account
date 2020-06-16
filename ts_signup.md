@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-04-08"
+lastupdated: "2020-06-16"
 
 keywords: troubleshoot account, authentication, IBMid accounts, sign-up error 
 
