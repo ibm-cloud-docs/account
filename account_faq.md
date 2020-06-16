@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-06-11"
+lastupdated: "2020-06-16"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -38,11 +38,64 @@ Go to [{{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com){: new_window} 
 If you are able to log in to an {{site.data.keyword.Bluemix_notm}} account, go to [Support](https://cloud.ibm.com/unifiedsupport/supportcenter) and choose one of the following options.
 
 * If you have advanced or premium support, click **Live chat** to talk to an {{site.data.keyword.Bluemix_notm}} support representative.
-* Create a support case by clicking **Create a case** from the _Need more help_ section.
+* Create a support case by clicking **Create a case** from the Need more help section.
 
    After you open the case, an email notification is sent to you. Follow the instructions for further communication.
 
 If you can't log in to an {{site.data.keyword.Bluemix_notm}} account, [create an account request](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
+
+## How do I update my credit card?
+{: #updatepayment}
+{: faq}
+{: support}
+
+Updating your credit card is just like adding a new one. Go to [Payments](https://{DomainName}/billing/payments), and in the Add Payment Method section, enter the billing information for your new card, then click **Add credit card**.
+
+To switch to a different payment method, select **Pay with Other** and then click **Submit change request**. A support case to change your payment method will be created for you.
+
+## How do I upgrade my account?
+{: #changeacct}
+{: faq}
+{: support}
+
+To upgrade your Lite account, go to [Account settings](https://{DomainName}/account/settings). In the Account Upgrade section, click **Add credit card** to upgrade to a Pay-As-You-Go account, or click **Upgrade** for a Subscription account. 
+
+See [Upgrading your account](/docs/account?topic=account-upgrading-account) for more information.
+
+## If I upgrade my Lite account, can I continue to use my existing instances?
+{: #nochange}
+{: faq}
+
+Yes, when you upgrade to a billable account, you can continue to use the instances you created with your Lite account.
+
+## Can I convert my account?
+{: #convertacct}
+{: faq}
+{: support}
+
+Yes, the following options are available depending on your account type:
+
+* You can convert your trial account to a Lite account by going to [A better {{site.data.keyword.Bluemix_notm}} is just around the corner](https://cloud.ibm.com/registration/startUpgradeToLite){: external} and providing the email address that's associated with your IBMid. 
+* If you have a feature code from an online course or educational event, you use it to convert your Lite account to a trial account. Go to the [Account settings](https://{DomainName}/account/settings){: external} page in the console to apply the code to your account.
+* To convert your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/catalog?contactmodule){: external}.
+
+## Can I sign up for a free trial?
+{: #freetrial}
+{: faq}
+
+{{site.data.keyword.Bluemix_notm}} trial accounts are available for faculty and students at accredited academic institutions. To qualify for a trial account, go to [Harness the Power of IBM ![External link icon](../icons/launch-glyph.svg)](https://ibm.biz/academic){: new_window} and validate your institution credentials. Unlike Lite accounts, trial accounts expire after their trial period ends.
+
+## How do I cancel my account?
+{: #cancelaccount}
+{: faq}
+{: support}
+
+We're sad to see you go! If there's any way we can assist you with your account before you go, reach out to us by contacting support.
+
+If you do decide to leave, how you cancel your account depends on your account type. You can check your account type by going to the [Account settings](https://cloud.ibm.com/account/settings) page in the console and looking under **Account Type**. Only account owners can cancel accounts.
+
+* For Pay-As-You-Go or Subscription accounts, the quickest way to cancel your account is to contact us through [live chat](https://{DomainName}/unifiedsupport/supportcenter) or by calling 1-866-325-0045 and selecting the third option. Alternatively, you can open a support case.
+* To cancel a Lite account, go to the [Account settings](https://cloud.ibm.com/account/settings) page, and click **Deactivate account**.
 
 ## Can I log in to the console with my SoftLayer ID?
 {: #slid}
@@ -107,32 +160,6 @@ If you want to delete a service, you can do so from the resource list. Learn mor
 
 If you have a billable account, there's no limit to the number of resource groups, orgs, or spaces that you can create within your account. However, if you have a Lite account, you're limited to one org and one resource group.
 
-## How do I upgrade or convert my account type?
-{: #changeacct}
-{: faq}
-{: support}
-
-To upgrade your Lite account, go to [Account settings](https://{DomainName}/account/settings). In the Account Upgrade section, click **Add credit card** to upgrade to a Pay-As-You-Go account, or click **Upgrade** for a Subscription account. You can also apply a feature code from an online course or educational event to convert your Lite account to a trial account.
-
-To convert between Pay-As-You-Go and Subscription account types, contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/catalog?contactmodule){: new_window}.
-
-If you're not sure of your current account type, you can find it on the Account settings page. Learn more in [Upgrading your account](/docs/account?topic=account-upgrading-account).
-
-## If I upgrade my Lite account, can I continue to use my existing instances?
-{: #nochange}
-{: faq}
-
-Yes, when you upgrade to a billable account, you can continue to use the instances you created with your Lite account.
-
-## How do I update my credit card?
-{: #updatepayment}
-{: faq}
-{: support}
-
-Updating your credit card is just like adding a new one. Go to [Payments](https://{DomainName}/billing/payments), and in the Add Payment Method section, enter the billing information for your new card, then click **Add credit card**.
-
-To switch to a different payment method, select **Pay with Other** and then click **Submit change request**. A support case to change your payment method will be created for you.
-
 ## How do I change my email notification settings?
 {: #change-email-prefs}
 {: faq}
@@ -158,18 +185,6 @@ To reset your VPN password, complete the following steps:
   3. From the VPN subnets section, click the Edit icon ![Edit icon](../icons/icon_write.svg) to enter a new VPN password.
   5. Click **Apply**.
 
-## How do I cancel my account?
-{: #cancelaccount}
-{: faq}
-{: support}
-
-We're sad to see you go! If there's any way we can assist you with your account before you go, reach out to us by contacting support.
-
-If you do decide to leave, how you cancel your account depends on your account type. You can check your account type by going to the [Account settings](https://cloud.ibm.com/account/settings) page in the console and looking under **Account Type**. Only account owners can cancel accounts.
-
-* For Pay-As-You-Go or Subscription accounts, the quickest way to cancel your account is to contact us through [live chat](https://{DomainName}/unifiedsupport/supportcenter) or by calling 1-866-325-0045 and selecting the third option. Alternatively, you can open a support case.
-* To cancel a Lite account, go to the [Account settings](https://cloud.ibm.com/account/settings) page, and click **Deactivate account**.
-
 ## How can I remove my personal data from {{site.data.keyword.Bluemix_notm}}?
 {: #remove-pi}
 {: faq}
@@ -194,12 +209,6 @@ If you believe that your account was deactivated in error, contact support by ca
 {: faq}
 
 Click **Support** from the console menu bar to go to the Support Center. For more information, see [Getting support](/docs/get-support?topic=get-support-support-plans).
-
-## Can I sign up for a free trial?
-{: #freetrial}
-{: faq}
-
-{{site.data.keyword.Bluemix_notm}} trial accounts are available for faculty and students at accredited academic institutions. To qualify for a trial account, go to [Harness the Power of IBM ![External link icon](../icons/launch-glyph.svg)](https://ibm.biz/academic){: new_window} and validate your institution credentials. Unlike Lite accounts, trial accounts expire after their trial period ends.
 
 ## How can I view accounts that I own?
 {: #accounts-owned}
