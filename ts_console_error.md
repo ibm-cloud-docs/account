@@ -28,6 +28,9 @@ subcollection: account
 When you log in using your IBMid, a login success message is displayed, but you don't return to the {{site.data.keyword.Bluemix_notm}} console.
 {: tsSymptoms}
 
+An issue with the browser is causing you to not return to the {{site.data.keyword.Bluemix_notm}} console.
+{: tsCauses}
+
 Use one of the following options:
 {: tsResolve}
  * Close your browser, clear the cache and cookies, then try to log in again.
