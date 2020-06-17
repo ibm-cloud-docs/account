@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-06-16"
+lastupdated: "2020-06-17"
 
-keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
+keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade account, convert acccount, trial, Lite account
 
 subcollection: account
 
@@ -75,7 +75,7 @@ Yes, when you upgrade to a billable account, you can continue to use the instanc
 
 Yes, the following options are available depending on your account type:
 
-* You can convert your trial account to a Lite account by going to [A better {{site.data.keyword.Bluemix_notm}} is just around the corner](https://cloud.ibm.com/registration/startUpgradeToLite){: external} and providing the email address that's associated with your IBMid. 
+* You can convert your trial account to a Lite account by providing the email address that's associated with your IBMid at https://cloud.ibm.com/registration/startUpgradeToLite. 
 * If you have a feature code from an online course or educational event, you use it to convert your Lite account to a trial account. Go to the [Account settings](https://{DomainName}/account/settings){: external} page in the console to apply the code to your account.
 * To convert your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/catalog?contactmodule){: external}.
 
