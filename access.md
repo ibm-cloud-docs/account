@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2019
-lastupdated: "2019-07-31"
+  years: 2017, 2020
+lastupdated: "2020-06-17"
 
 keywords: user access, IBM Cloud account access, account owner, delegating access, confirming access
 
@@ -57,4 +57,4 @@ To use the console, complete the following steps:
   3. Click the **Access Policies** tab, where you can view your assigned access policies. You must have the Cloud IAM administrator role for the catalog resource in your account to update the list that includes accounts to see private resources in the catalog.
 
 
-To use the [CLI](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_commands_iam), run the `ibmcloud iam user-policies <your-user-name>` command. The command returns an error if you aren't an administrator for the account.
+To use the [CLI](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_commands_iam), run the `ibmcloud iam user-policies <your-user-name>` command. The command returns an error if you aren't an administrator for the account.
