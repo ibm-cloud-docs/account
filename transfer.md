@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-06-04"
+lastupdated: "2020-06-18"
 
 keywords: change owner, transfer account, transfer account ownership, switch owner, transfer owner
 
@@ -19,6 +19,8 @@ subcollection: account
 
 # Transferring ownership of your account
 {: #transfer}
+
+<!--The translation for "Master Account" might need to be updated. Here is the feedback that we got: Master Account should be マスターアカウント(Master Account) in Japanese. It should not be "アカウントの所有者(A person who owns Account)" it is confusing.-->
 
 You can transfer your entire {{site.data.keyword.cloud}} account to a different owner by creating a support case with information about the new owner. Only Pay-As-You-Go or Subscription accounts can be transferred.
 {:shortdesc}
