@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2019-05-26"
+lastupdated: "2019-06-23"
 
 keywords: platform notifications, email notifications, IBM Cloud notifications, notification preferences, email preferences, user notifications, infrastructure notifications
 
@@ -20,13 +20,13 @@ subcollection: account
 {:new_window: target="_blank"}
 
 
-# Setting email preferences
+# Setting email preferences for notifications
 {: #email-prefs}
 
 Depending on your {{site.data.keyword.Bluemix}} account type, you can choose whether to receive email notifications about {{site.data.keyword.Bluemix}} platform unplanned events and planned events, or infrastructure email notifications about unplanned events, maintenance, and announcements. You can also choose to set notification subscriptions for classic infrastructure events. These notifications are for only the services you use or the devices that you have provisioned, and if they are impacted by the event, maintenance, or announcement.
 {: shortdesc}
 
-If you set your email preferences but aren't receiving email notifications, make sure emails that are sent from `no_reply@cloud.ibm.com` aren't blocked or in your spam folder. For more information, see [Why am I not receiving email notifications?](/docs/account?topic=account-ts_email_notifications).
+If you set your email preferences but aren't receiving email notifications, make sure emails that are sent from `no_reply@cloud.ibm.com` aren't blocked or in your spam folder. See [Why am I not receiving email notifications?](/docs/account?topic=account-ts_email_notifications) for more information.
 {: tip}
 
 ## Setting platform notifications
@@ -40,7 +40,7 @@ Your platform email notifications settings are tied to your profile, not the acc
 
 When you select to receive unplanned platform events, you get emails only about issues that can cause an outage (Sev 1). At any time, you can see all planned and unplanned events from the [Status ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/status){: new_window} page.
 
-1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Profile and settings**.
+1. In the {{site.data.keyword.Bluemix_notm}} console, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Profile and settings**.
 2. Click **Notifications**.
 3. Select whether to receive platform notifications for each of the categories that you want to update.
 
@@ -56,7 +56,7 @@ When you select to receive unplanned platform events, you get emails only about 
 
 If you're a user in a Pay-As-You-Go or Subscription account, you can choose whether to receive {{site.data.keyword.Bluemix_notm}} infrastructure email notifications about unplanned events, maintenance, and announcements. Infrastructure notifications settings affect only the account that you're in when you set them. You can switch to another account and separately manage notifications for that account.
 
-1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Profile and settings**.
+1. In the console, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Profile and settings**.
 2. Click **Notifications**.
 3. Select whether to receive infrastructure notifications for each of the categories that you want to update.
 
@@ -80,7 +80,7 @@ The timing of the notification varies depending on whether the event is unplanne
 
 To set up subscription notifications for your users, complete the following steps:
 
-  1. Go to **Manage > Account**, and select **Notifications**.
+  1. In the console, go to **Manage > Account**, and select **Notifications**.
   2. Select a service from the table.
   3. In the Subscribed column, select **Yes** for the user who wants to receive notifications.
 
@@ -92,7 +92,7 @@ To set up subscription notifications for your users, complete the following step
 
 Users that you set up for classic infrastructure notifications must also have access to the devices, network, and services that send the notifications.
 
-To ensure that a user has the correct access, go to **Manage** > **Access (IAM)** > **Users**, select their name, and then select **Classic infrastructure**. From the **Permissions** option, assign users the following classic infrastructure permissions.
+To ensure that a user has the correct access, go to **Manage** > **Access (IAM)** > **Users** in the console, select their name, and then select **Classic infrastructure**. From the **Permissions** option, assign users the following classic infrastructure permissions.
 
 | Permission Category | Required Permissions |
 | ------------------- | -------------------- |
@@ -101,4 +101,23 @@ To ensure that a user has the correct access, go to **Manage** > **Access (IAM)*
 | Services            | Manage Lockbox <br/> Storage Manage |
 {: caption="Table 1. Required classic infrastructure permissions for receiving user notifications" caption-side="top"}
 
-Then, go to **Devices** to assign a user access to the specific devices and device types. You can also enable future access to all devices of a certain type. For more information about setting classic infrastructure permissions, see [Managing classic infrastructure access](/docs/iam?topic=iam-mngclassicinfra#mngclassicinfra).
+Then, go to **Devices** to assign a user access to the specific devices and device types. You can also enable future access to all devices of a certain type. For more information about setting classic infrastructure permissions, see [Managing classic infrastructure access](/docs/account?topic=account-mngclassicinfra).
+
+## Adding users to a distribution list 
+{: distribution-list}
+
+You can create a list of up to 10 email addresses that will receive account-wide notifications. Users that are added to the distribution list are notified about any event that's affecting the account. You must have the editor role or higher on the account management service to add users to the distribution list. For more information, see [Assigning access to account management services](/docs/account?topic=account-account-services).
+
+To add users to a distribution list, complete the following steps: 
+1. Using the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account**, > **Distribution List**. 
+2. Select **Add email**. 
+3. Enter an email address and a name identifier. 
+
+  You can add up to 10 email addresses to the distribution list. 
+  {: note}
+  
+4. Click **Add**. 
+
+### Unsubscribing from the distribution list 
+
+Users have the option to unsubscribe from the distribution list. To unsubscribe, use the unsubscribe link in the footer of any email that is sent from the distribution list. 
