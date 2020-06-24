@@ -113,7 +113,7 @@ To add users to a distribution list, complete the following steps:
 2. Select **Add email**. 
 3. Enter an email address and a name identifier. 
 
-  You can add up to 10 email addresses to the distribution list. 
+  You can add up to 10 email addresses to the distribution list. Users that are added don't have to be IBM Cloud users, you can add any email address to the distribution list. 
   {: note}
   
 4. Click **Add**. 
