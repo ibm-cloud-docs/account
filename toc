@@ -74,6 +74,7 @@ Managing your account
     Command reference
         [Managing accounts, users, and Cloud Foundry orgs](/cli/cloud-cli-ibmcloud_commands_account)
         [Managing enterprises, account groups, and accounts](/cli/cloud-cli-ibmcloud_enterprise)
+        /cli/cli-manage-catalogs-plugin
 
     {: .topicgroup}
     API reference
