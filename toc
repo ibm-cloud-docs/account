@@ -69,6 +69,7 @@ Managing your account
 
     {: .navgroup id="reference"}
     monitoring.md
+    compliance-filters.md
 
     {: .topicgroup}
     Command reference
