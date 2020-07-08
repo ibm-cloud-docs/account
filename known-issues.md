@@ -13,7 +13,6 @@ subcollection: account
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
 {:faq: data-hd-content-type='faq'}
 {:support: data-reuse='support'}
 {:tip: .tip}

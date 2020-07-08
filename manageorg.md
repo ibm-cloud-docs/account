@@ -15,7 +15,6 @@ subcollection: account
 {:tip: .tip}
 {:note: .note}
 {:screen: .screen}
-{:new_window: target="_blank"}
 
 
 # Updating orgs and spaces

@@ -16,7 +16,6 @@ subcollection: account
 {:tip: .tip}
 {:help: data-hd-content-type='help'} 
 {:support: data-reuse='support'}
-{:new_window: target="_blank"}
 
 # Adding orgs and spaces
 {: #orgsspacesusers}

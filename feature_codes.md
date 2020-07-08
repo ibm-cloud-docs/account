@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-01-09"
+lastupdated: "2020-06-08"
 
 keywords: feature code, subscription code, subscription credit, support credit, promo code
 
@@ -11,7 +11,6 @@ subcollection: account
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
 {:tip: .tip}
 {:note .note}
 {:important: .important}
@@ -37,7 +36,7 @@ You must have an Editor role or higher on all account management services to app
 
 Complete the following steps to apply a feature code to your account:
 
-1. From the console, go to **Manage > Account**, and select **Account settings**.
+1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage > Account**, and select **Account settings**.
 1. Click **Apply code**.
 1. Enter the feature code, which is typically a random alphanumeric value such as `a1b2c3def456`.
 1. Click **Apply**.

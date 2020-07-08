@@ -14,7 +14,6 @@ subcollection: account
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:screen: .screen}
-{:new_window: target="_blank"}
 
 
 # Monitoring system events with an audit log

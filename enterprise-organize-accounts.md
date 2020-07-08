@@ -11,7 +11,6 @@ subcollection: account
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
 {:codeblock: .codeblock}
 {:important: .important}
 {:tip: .tip}

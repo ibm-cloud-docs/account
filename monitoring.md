@@ -13,7 +13,7 @@ subcollection: account
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:tip: .tip}
 {:deprecated: .deprecated}
 
@@ -23,7 +23,7 @@ subcollection: account
 As a security officer, auditor, or manager, you can use the {{site.data.keyword.at_full}} service to track how users and applications interact with an {{site.data.keyword.Bluemix}} account, the {{site.data.keyword.Bluemix_notm}} catalog, and private catalogs.
 {:shortdesc}
 
-As of 9 May 2019 the {{site.data.keyword.cloudaccesstraillong}} service is deprecated. You must create an instance of the {{site.data.keyword.at_short}} in your account to continue tracking account management events. For more information, see [Deprecation of the IBM Cloud Activity Tracker service](https://www.ibm.com/blogs/bluemix/2019/04/deprecating-ibm-cloud-activity-tracker/){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
+As of 9 May 2019 the {{site.data.keyword.cloudaccesstraillong}} service is deprecated. You must create an instance of the {{site.data.keyword.at_short}} in your account to continue tracking account management events. For more information, see [Deprecation of the IBM Cloud Activity Tracker service](https://www.ibm.com/blogs/bluemix/2019/04/deprecating-ibm-cloud-activity-tracker/){: external} ![External link icon](../icons/launch-glyph.svg "External link icon").
 {: deprecated}
 
 

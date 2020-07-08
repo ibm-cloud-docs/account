@@ -15,7 +15,6 @@ subcollection: account
 {:screen: .screen}
 {:tip: .tip}
 {:note: .note}
-{:new_window: target="_blank"}
 
 # Setting up your profile
 {: #usersettings}

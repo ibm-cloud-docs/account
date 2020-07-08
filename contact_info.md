@@ -16,7 +16,6 @@ subcollection: account
 {:note: .note}
 {:important: .important}
 {:screen: .screen}
-{:new_window: target="_blank"}
 
 
 # Updating company profile details

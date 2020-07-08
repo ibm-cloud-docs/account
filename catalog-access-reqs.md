@@ -16,7 +16,6 @@ subcollection: account
 {:tip: .tip}
 {:note: .note}
 {:important: .important}
-{:new_window: target="_blank"}
 
 # Assigning users access
 {: #catalog-access}

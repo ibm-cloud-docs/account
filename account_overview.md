@@ -14,7 +14,6 @@ subcollection: account
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
-{:new_window: target="_blank"}
 
 
 # What's in an account?

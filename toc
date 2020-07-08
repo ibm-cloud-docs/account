@@ -79,10 +79,10 @@ Managing your account
 
     {: .topicgroup}
     API reference
-        [Catalog Management](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog){: new_window}
-        [Global Catalog](https://cloud.ibm.com/apidocs/resource-catalog/global-catalog){: new_window}
-        [Enterprise Management](https://{DomainName}/apidocs/enterprise-apis/enterprise){: new_window}
-        [User Management](https://{DomainName}/apidocs/user-management){: new_window}
+        [Catalog Management](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog){: external}
+        [Global Catalog](https://cloud.ibm.com/apidocs/resource-catalog/global-catalog){: external}
+        [Enterprise Management](https://{DomainName}/apidocs/enterprise-apis/enterprise){: external}
+        [User Management](https://{DomainName}/apidocs/user-management){: external}
     {: .navgroup-end}
 
     {: .navgroup id="help"}

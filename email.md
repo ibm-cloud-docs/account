@@ -17,7 +17,7 @@ subcollection: account
 {:screen: .screen}
 {:help: data-hd-content-type='help'} 
 {:support: data-reuse='support'} 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 
 
 # Setting email preferences for notifications
@@ -38,7 +38,7 @@ You can choose whether to receive email notifications about {{site.data.keyword.
 
 Your platform email notifications settings are tied to your profile, not the account. In other words, any changes to platform notification settings are shared across your profile in all accounts that you have access to.
 
-When you select to receive unplanned platform events, you get emails only about issues that can cause an outage (Sev 1). At any time, you can see all planned and unplanned events from the [Status ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/status){: new_window} page.
+When you select to receive unplanned platform events, you get emails only about issues that can cause an outage (Sev 1). At any time, you can see all planned and unplanned events from the [Status ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/status){: external} page.
 
 1. In the {{site.data.keyword.Bluemix_notm}} console, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Profile and settings**.
 2. Click **Notifications**.

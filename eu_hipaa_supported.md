@@ -11,10 +11,10 @@ subcollection: account
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
 {:important: .important}
 {:tip: .tip}
 {:note: .note}
+{:external: target="_blank" .external}
 
 # Enabling EU and HIPAA supported settings
 {: #eu-hipaa-supported}
@@ -41,7 +41,7 @@ By enabling this setting, EU supported services have strict access controls to e
 ## Enabling the HIPAA Supported setting
 {: #enabling-hipaa}
 
-The US Health Insurance Portability and Accountability Act (HIPAA) and the Health Information Technology for Economic and Clinical Health (HITECH) Act define standards for handling electronic healthcare transactions and information. If you or your company is a covered entity as defined by HIPAA, you must enable the HIPAA Supported setting if you run sensitive workloads that are regulated under HIPAA and the HITECH Act. Learn more about {{site.data.keyword.Bluemix_notm}} compliance in [Compliance on the {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud/compliance){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
+The US Health Insurance Portability and Accountability Act (HIPAA) and the Health Information Technology for Economic and Clinical Health (HITECH) Act define standards for handling electronic healthcare transactions and information. If you or your company is a covered entity as defined by HIPAA, you must enable the HIPAA Supported setting if you run sensitive workloads that are regulated under HIPAA and the HITECH Act. Learn more about {{site.data.keyword.Bluemix_notm}} compliance in [Compliance on the {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud/compliance){: external} ![External link icon](../icons/launch-glyph.svg "External link icon").
 
 Enabling this setting has the following effects:
 
@@ -49,7 +49,7 @@ Enabling this setting has the following effects:
 * Indicates to IBM that your account stores protected health information (PHI)
 * Digitally accepts the IBM Business Associate Addendum (BAA) for covered entities
 
-Enable this setting only if you or your company is a covered entity as defined by HIPAA. If you or your company is a business associate of a covered entity, [contact {{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-wcp){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") to accept the applicable BAA. For more information about HIPAA definitions of covered entities and business associates, see the [US Department of Health & Human Services](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") website.
+Enable this setting only if you or your company is a covered entity as defined by HIPAA. If you or your company is a business associate of a covered entity, [contact {{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-wcp){: external} ![External link icon](../icons/launch-glyph.svg "External link icon") to accept the applicable BAA. For more information about HIPAA definitions of covered entities and business associates, see the [US Department of Health & Human Services](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html){: external} ![External link icon](../icons/launch-glyph.svg "External link icon") website.
 {: important}
 
 Accounts that enable the HIPAA Supported setting still have access to the full catalog of services. {{site.data.keyword.Bluemix_notm}} services typically offer multiple plans. The HIPAA Enabled label on a service can apply to all available plans or be limited to specific plans or configurations. You as the client are solely responsible for limiting PHI to HIPAA Enabled offering plans and architecting in accordance with HIPAA and HITECH.
