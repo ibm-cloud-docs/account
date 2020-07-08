@@ -2,9 +2,9 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-04-02"
+lastupdated: "2020-06-10"
 
-keywords: catalog, private catalogs, IAM access, roles, private catalog service, software, catalogs
+keywords: catalog, private catalogs, IAM access, roles, private catalog service, access groups, permissions
 
 subcollection: account
 
@@ -23,9 +23,9 @@ subcollection: account
 As the account owner, you assign users specific access depending on what tasks they are performing. To streamline the process of assigning access, you can use access groups to organize a set of users into a single entity. That way, you can assign a single policy to the group one time, and then add or remove users from the group as needed. 
 {: shortdesc}
 
-For more details about access management, see [Managing access in {{site.data.keyword.cloud_notm}}](/docs/iam?topic=iam-cloudaccess).
+For more details about access management, see [Managing access in {{site.data.keyword.cloud_notm}}](/docs/account?topic=account-cloudaccess).
 
-## Set up your access groups
+## Setting up your access groups
 {: #catalog-access-groups}
 
 See the following sections for details about creating your access groups and assigning specific IAM policies to each one.
@@ -69,7 +69,7 @@ Editor access is required for creating private catalogs, setting filters at the 
 ### Viewer access
 {: #catalog-access-viewer}
 
-Viewer access is required for viewing private catalogs, the filtered {{site.data.keyword.cloud_notm}} catalog, and the filter settings.   
+Viewer access is required for viewing private catalogs, the filtered {{site.data.keyword.cloud_notm}} catalog, and the filter settings.  
 
 1. Go to **Access groups**, and click **Create**.
 2. Enter `private-catalog-viewers` as the group name, and click **Create**.
@@ -79,6 +79,17 @@ Viewer access is required for viewing private catalogs, the filtered {{site.data
 9. Select the catalog that you want users to access.
 9. In the Platform access section, select the **Viewer** role.
 10. Click **Add** > **Assign**.
+
+You also need to have viewer access on the resource group to which your private catalog is assigned. You can assign your private catalog to a resource group when you complete the steps for creating your private catalog. For more information, see [Customizing the IBM Cloud catalog for all account users](/docs/account?topic=account-filter-account). 
+
+To assign viewer access to your private catalog's resource group, use the following steps:
+
+1. Go to **Users** and select the user. 
+1. Select **Access policies** > **Assign access**. 
+1. From the **Assign users additional access** section, select **IAM services**.  
+1. Select **All Identity and Access enabled services** and your private catalogs resource group from the **What type of access do you want to assign?** list.
+1. In the Platform access section, select the **Viewer** role.
+1. Click **Add** > **Assign**.
 
 ## Add users to your access groups
 {: #catalog-access-users}

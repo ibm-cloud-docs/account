@@ -3,7 +3,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-05-04"
+lastupdated: "2020-05-26"
 
 keywords: license, entitlement, software, passport advantage, cloud pak, binding a license, PPA, part number
 
@@ -35,7 +35,7 @@ In most cases, someone in a procurement or financial role in your organization w
 ## Assigning licenses to an account
 {: #assign-license}
 
-When you assign licenses to your account, all users with access to your account can use them to install the software to which the licenses apply. If the procurement focal is not the owner of the account to which the license must be assigned, they must be assigned the administrator role on the [License and entitlement account management service](/docs/iam?topic=iam-account-services#license-entitlement-management). 
+When you assign licenses to your account, all users with access to your account can use them to install the software to which the licenses apply. If the procurement focal is not the owner of the account to which the license must be assigned, they must be assigned the administrator role on the [License and entitlement account management service](/docs/account?topic=account-account-services#license-entitlement-management). 
 
 Complete the following steps to assign a license to an account:
 1. Log in to the console and go to **Manage** > **Account**.
@@ -43,6 +43,6 @@ Complete the following steps to assign a license to an account:
 1. If you don't have any licenses assigned to the account, click **Check {{site.data.keyword.IBM_notm}} Passport Advantage** to find all the licenses that are tied to your IBMid. If you have existing licenses, click **Assign** to assign more licenses to the account.
 
 You can unassign a license from the account. Note, however, any Schematics workspaces in which the license is used will be impacted. 
-{: note}
+{: important}
 
 

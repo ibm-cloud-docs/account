@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-06-18"
+lastupdated: "2020-06-09"
 
 keywords: change owner, transfer account, transfer account ownership, switch owner, transfer owner
 
@@ -20,17 +20,18 @@ subcollection: account
 # Transferring ownership of your account
 {: #transfer}
 
-<!--The translation for "Master Account" might need to be updated. Here is the feedback that we got: Master Account should be マスターアカウント(Master Account) in Japanese. It should not be "アカウントの所有者(A person who owns Account)" it is confusing.-->
-
-You can transfer your entire {{site.data.keyword.cloud}} account to a different owner by creating a support case with information about the new owner. Only Pay-As-You-Go or Subscription accounts can be transferred.
+You can transfer your {{site.data.keyword.cloud}} account to a different owner by creating a support case with information about the new owner. Only Pay-As-You-Go or Subscription accounts can be transferred.
 {:shortdesc}
+
+You can transfer ownership of individual resources within your account by using the `ibmcloud catalog` command. For more information, see [Transferring ownership of a private resource](/docs/account?topic=account-transfer#transfer-own).
+{: tip}
 
 ## Transferring an account that you own
 {: #transfer-own}
 
-As the account owner, you can transfer your account to a new owner by creating a support case. The new owner must be an existing user within the account. If the person that you want to own the account isn't an existing user, [invite them to the account](/docs/iam?topic=iam-iamuserinv) before you create the support case.
+As the account owner, you can transfer your account to a new owner by creating a support case. The new owner must be an existing user within the account. If the person that you want to own the account isn't an existing user, [invite them to the account](/docs/account?topic=account-iamuserinv) before you create the support case.
 
-To create the support case, go to **Support**, and click **Create a case**. In the case description, include the full name and IBMid of the user that is to be the new account owner. 
+To create the support case, go to **Support**, and click **Create a case** in the {{site.data.keyword.cloud_notm}} console. In the case description, include the full name and IBMid of the user that is to be the new account owner. 
 
 ## Transferring an account from another owner
 {: #transfer-lost}
@@ -54,4 +55,4 @@ In the support case to request an account transfer, you must attach an official 
 
    ![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-faq.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.")
 
-To create the support case, go to **Support**, and click **Create a case**. Attach the official request document to the case before you submit it.
+To create the support case, go to **Support**, and click **Create a case** in the console. Attach the official request document to the case before you submit it.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-04-02"
+lastupdated: "2020-06-04"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog
 
@@ -17,7 +17,7 @@ subcollection: account
 {:support: data-reuse='support'}
 {:tip: .tip}
 
-# Known issues
+# Known issues and limitations
 {: #known-issues}
 
 Known issues related to managing your account and catalogs include not being able to restrict access to some {{site.data.keyword.IBM}} products. 
@@ -53,6 +53,29 @@ Turning off {{site.data.keyword.cloud}} catalog visibility or excluding all {{si
 * VLANs
 * VPN
 * VPN for VPC
+
+## {{site.data.keyword.Bluemix_notm}} IAM limits
+{: #iam_limits}
+
+The following table lists the maximum limits for {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) resources. These limits apply to any user who can create {{site.data.keyword.Bluemix_notm}} IAM resources. If a limit is exceeded, you receive an exception and are not allowed to create any new resources beyond that limit.
+{:shortdesc}
+
+| Resource                               | Max  |
+|----------------------------------------|------|
+| Access groups per account              | 500  |
+| Access groups per user                 | 50   |
+| Service IDs per account                | 2000 |
+| API Keys per identity                  | 20   |
+| Dynamic rules per access group         | 5    |
+| Policies per account                   | 2010 |
+| Policies per subject within an account | 500  |
+| Custom roles per account               | 40   |
+{:caption="Table 1. IAM Account Limits" caption-side="top"}
+
+A maximum of 1,000 policies and service to service authorizations within one account is recommended to ensure optimal performance within your account. For more information about limiting the number of policies in your account, see the [Best practices for organizing resources and assigning access](/docs/account?topic=account-account_setup).
+{: tip}
+
+If you need to check the number of policies in your account or request an increase in the account limit, see [Managing policy limits](/docs/account?topic=account-policy-limits).
 
 
 

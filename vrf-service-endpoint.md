@@ -2,9 +2,9 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-06-05"
+lastupdated: "2020-06-09"
 
-keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network
+keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network, services that support service endpoints, service endpoint support, using service endpoints
 
 subcollection: account
 
@@ -19,10 +19,19 @@ subcollection: account
 # Enabling VRF and service endpoints
 {: #vrf-service-endpoint}
 
-By default, you connect to resources in your account over the {{site.data.keyword.Bluemix}} public network. You can enable virtual routing and forwarding (VRF) to move IP routing for your account and all of its resources into a separate routing table. If VRF is enabled, you can then enable {{site.data.keyword.Bluemix_notm}} service endpoints to connect directly to resources without using the public network.
+When using the classic infrastructure, you connect to resources in your account over the {{site.data.keyword.Bluemix}} public network by default. You can enable virtual routing and forwarding (VRF) to move IP routing for your account and all of its resources into a separate routing table. If VRF is enabled, you can then enable {{site.data.keyword.Bluemix_notm}} service endpoints to connect directly to resources without using the public network.
 {:shortdesc}
 
-To enable virtual routing and forwarding and {{site.data.keyword.Bluemix_notm}} service endpoints, you need a billable account.
+These steps aren't required for accessing resources from the VPC infrastructure.
+{: note}
+
+## Before you begin
+{: #before-service-endpoint-enablement}
+
+Before you begin, ensure that you meet the following criteria:
+
+* You need a billable account to enable virtual routing and forwarding and {{site.data.keyword.Bluemix_notm}} service endpoints.
+* You must have access to {{site.data.keyword.cloud_notm}} infrastructure in your account. Go to the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **Classic Infrastructure** to verify that you have access.
 
 ## Enabling VRF
 {: #vrf}
@@ -38,16 +47,16 @@ To enable VRF, create a support case with your request.
 1. In the Virtual routing and forwarding section, click **Create case**.
 1. In the case description, enter your classic infrastructure account number, and click **Submit**.
 
-   Don't change the rest of the prefilled support case information. The information is tailored to make sure your request is handled as quickly as possible.
+   Don't change the rest of the prefilled support case information. The information is tailored to make sure that your request is handled as quickly as possible.
    {: tip}
-   
-The {{site.data.keyword.Bluemix_notm}} network engineering team will reach out to the case owner to schedule a time for your account's networking to be converted to VRF. During the conversion process, connections to resources in your account might be unstable due to packet loss. The conversion takes roughly 15-30 minutes, depending on the complexity of your account. If your account has legacy {{site.data.keyword.BluDirectLink}} connections, it might take more time.
+
+The {{site.data.keyword.Bluemix_notm}} network engineering team will reach out to the case owner to schedule a time for your account's networking to be converted to VRF. During the conversion process, connections to resources in your account might be unstable due to packet loss. The conversion takes roughly 15 - 30 minutes, depending on the complexity of your account. If your account has legacy {{site.data.keyword.BluDirectLink}} connections, it might take more time.
 
 
 ## Enabling service endpoints
 {: #service-endpoint}
 
-When {{site.data.keyword.Bluemix_notm}} service endpoints are enabled in your account, you can choose to expose a private network endpoint when you create a resource. You can then connect directly to this endpoint over the {{site.data.keyword.Bluemix_notm}} private network rather than the public network. Because resources that use private network endpoints don't have an internet-routable IP address, connections to these resources are more secure. For more information, see [Service endpoints for private network connections](/docs/resources?topic=resources-service-endpoints).
+When {{site.data.keyword.Bluemix_notm}} service endpoints are enabled in your account, you can choose to expose a private network endpoint when you create a resource. You can then connect directly to this endpoint over the {{site.data.keyword.Bluemix_notm}} private network rather than the public network. Because resources that use private network endpoints don't have an internet-routable IP address, connections to these resources are more secure. For more information, see [Service endpoints for private network connections](/docs/account?topic=account-service-endpoints-overview).
 
 Before you can enable service endpoints, VRF must be enabled for your account.
 {: note}
@@ -61,7 +70,7 @@ Before you can enable service endpoints, VRF must be enabled for your account.
    If you can't click the button, VRF might not be enabled for your account. Verify that it's enabled by checking the virtual routing and forwarding section, which is the preceding section in your account settings.
 1. Review the impacts to your account, and click **On**.
 
-It might take a few minutes for this change to take affect.
+It might take a few minutes for this change to take effect.
 
 ### From the CLI
 {: #service-endpoint-cli}
@@ -111,4 +120,52 @@ To enable service endpoints from the [{{site.data.keyword.Bluemix_notm}} CLI](/d
     {: screen}
   
 
-After service endpoints are enabled, you can create resources that connect over the {{site.data.keyword.Bluemix_notm}} private network. For a list of services that support service endpoints and more information, see [Setting up private network endpoints](/docs/resources?topic=resources-private-network-endpoints).
+After service endpoints are enabled, you can create resources that connect over the {{site.data.keyword.Bluemix_notm}} private network. For a list of services that support service endpoints and more information, see [Setting up private network endpoints](/docs/account?topic=account-vrf-service-endpoint).
+
+## Using service endpoints
+{: #use-service-endpoint}
+
+After you enable the VRF and service endpoint account settings, you can create resources from the catalog that support service endpoints. The following table lists the services that support using service endpoints.
+
+Refer to the documentation for the specific service for more information about using service endpoints.
+{: tip}
+
+| Service | Documentation |
+|-------------------|-------------------------------|
+| {{site.data.keyword.iae_short}} | [{{site.data.keyword.iae_short}} cloud service endpoints integration](/docs/services/AnalyticsEngine?topic=AnalyticsEngine-service-endpoint-integration) |
+| {{site.data.keyword.databases-for-elasticsearch}} | [{{site.data.keyword.databases-for-elasticsearch}} service endpoints integration](/docs/services/databases-for-elasticsearch?topic=cloud-databases-service-endpoints) |
+| {{site.data.keyword.databases-for-etcd}} | [{{site.data.keyword.databases-for-etcd}} service endpoints integration](/docs/services/databases-for-etcd?topic=cloud-databases-service-endpoints) |
+| {{site.data.keyword.databases-for-mongodb}} | [{{site.data.keyword.databases-for-mongodb}} service endpoints integration](/docs/services/databases-for-mongodb?topic=cloud-databases-service-endpoints) |
+| {{site.data.keyword.databases-for-postgresql}} | [{{site.data.keyword.databases-for-postgresql}} service endpoints integration](/docs/services/databases-for-postgresql?topic=cloud-databases-service-endpoints)|
+| {{site.data.keyword.databases-for-redis}} | [{{site.data.keyword.databases-for-redis}} service endpoints integration](/docs/services/databases-for-redis?topic=cloud-databases-service-endpoints)|
+| {{site.data.keyword.Db2_on_Cloud_short}} | [Connectivity options](/docs/services/Db2onCloud?topic=Db2onCloud-connect_options) |
+| {{site.data.keyword.dashdbshort}} | [Connecting to a private endpoint](/docs/services/Db2whc?topic=Db2whc-connect_options#priv_endpt) |
+|{{site.data.keyword.messagehub}} | [Restricting network access using the Enterprise plan](/docs/EventStreams?topic=EventStreams-restrict_access) |
+| {{site.data.keyword.hscrypto}} | [{{site.data.keyword.hscrypto}} service endpoints integration](/docs/services/hs-crypto?topic=hs-crypto-private-endpoints)|
+| {{site.data.keyword.cloudant}}  |  [Available for all dedicated hardware plans deployed after 1 January 2019](//docs/Cloudant?topic=Cloudant-ibm-cloud-public#dedicated-hardware-plan) |
+| {{site.data.keyword.registryshort_notm}} | {{site.data.keyword.containershort}} clusters with [private service endpoints only](/docs/containers?topic=containers-plan_clusters#workeruser-master) pull container images by using the [{{site.data.keyword.registryshort_notm}}](/docs/Registry?topic=Registry-registry_overview) service endpoint. |
+| {{site.data.keyword.cfee_full}} | [{{site.data.keyword.cfee_full_notm}} service endpoints integration](/docs/cloud-foundry?topic=cloud-foundry-isolated-network#private-access)|
+| {{site.data.keyword.streaminganalyticsfull}} |  [Managing service endpoints for {{site.data.keyword.streaminganalyticsshort}}](/docs/services/StreamingAnalytics?topic=StreamingAnalytics-manage_endpoints#manage_endpoints) |
+| {{site.data.keyword.keymanagementserviceshort}} | [Connecting to {{site.data.keyword.keymanagementserviceshort}} on the {{site.data.keyword.cloud_notm}} private network](/docs/services/key-protect?topic=key-protect-private-endpoints) |
+| KMIP for VMware on {{site.data.keyword.cloud_notm}} | [KMIP for VMware on {{site.data.keyword.cloud_notm}} documentation](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations#kmip_standalone_considerations-install)|
+| {{site.data.keyword.containershort}} | [Public and private service endpoints for {{site.data.keyword.containershort_notm}}](/docs/containers?topic=containers-plan_clusters#workeruser-master) |
+| {{site.data.keyword.messages-for-rabbitmq}} | [{{site.data.keyword.messages-for-rabbitmq}} service endpoints integration](/docs/services/messages-for-rabbitmq?topic=cloud-databases-service-endpoints)|
+| {{site.data.keyword.cos_short}} | [{{site.data.keyword.cos_short}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-advanced-endpoints) utilizes {{site.data.keyword.keymanagementserviceshort}}'s service endpoint for its BYOK integration|
+| {{site.data.keyword.la_full}} | [{{site.data.keyword.la_full_notm}} service endpoints integration](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-endpoints)|
+| {{site.data.keyword.mon_full_notm}} | [{{site.data.keyword.mon_full_notm}} service endpoints integration](/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-endpoints#endpoints_ingestion)|
+| {{site.data.keyword.bpshort}} | [Using private endpoints](/docs/schematics?topic=schematics-private-endpoints) |
+| {{site.data.keyword.conversationshort}} | [Protecting sensitive information](/docs/assistant?topic=assistant-security) with {{site.data.keyword.conversationshort}} |
+| {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.cncshort}} | [Public and private network endpoints](/docs/compare-comply?topic=watson-public-private-endpoints) with {{site.data.keyword.cncshort}} |
+| {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.discoveryshort}} | [Public and private network endpoints](/docs/discovery?topic=watson-public-private-endpoints) with {{site.data.keyword.discoveryshort}} |
+| {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.wh-iml_short}} | [Public and private network endpoints](/docs/wh-iml?topic=watson-public-private-endpoints) with {{site.data.keyword.wh-iml_short}} |
+| {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.knowledgestudioshort}} | [Public and private network endpoints](/docs/services/watson-knowledge-studio?topic=watson-public-private-endpoints) with {{site.data.keyword.knowledgestudioshort}} |
+| {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.languagetranslatorshort}} | [Public and private network endpoints](/docs/services/language-translator?topic=watson-public-private-endpoints) with {{site.data.keyword.languagetranslatorshort}} |
+| {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.nlushort}} | [Public and private network endpoints](/docs/services/natural-language-understanding?topic=watson-public-private-endpoints) with {{site.data.keyword.nlushort}} |
+| {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.personalityinsightsshort}} | [Public and private network endpoints](/docs/services/personality-insights?topic=watson-public-private-endpoints) with {{site.data.keyword.personalityinsightsshort}} |
+| {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.speechtotextshort}} | [Public and private network endpoints](/docs/services/speech-to-text?topic=watson-public-private-endpoints) with {{site.data.keyword.speechtotextshort}} |
+| {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.texttospeechshort}} | [Public and private network endpoints](/docs/services/text-to-speech?topic=watson-public-private-endpoints) with {{site.data.keyword.texttospeechshort}} |
+| {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.toneanalyzershort}} | [Public and private network endpoints](/docs/services/tone-analyzer?topic=watson-public-private-endpoints) with {{site.data.keyword.toneanalyzershort}} |
+{: caption="Table 1. Services that support using service endpoints" caption-side="top"}
+
+
+

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-07-26"
+  years: 2020
+lastupdated: "2020-06-08"
 
 keywords: enterprise, add account, import account, create account
 
@@ -41,7 +41,7 @@ To import existing accounts into an enterprise, the following access is required
 
 To import an existing account, complete the following steps:
 
-1. Log in to your enterprise account, and go to **Manage > Enterprise**.
+1. Log in to your enterprise account, and go to **Manage > Enterprise** in the {{site.data.keyword.Bluemix_notm}} console.
 1. Click **Accounts** to view the accounts and account groups in the enterprise. In the Accounts section, select **Add > Import account**.
 1. Select the account that you want to import.
 

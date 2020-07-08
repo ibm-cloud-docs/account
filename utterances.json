@@ -1,683 +1,1151 @@
 {
-  "create-account": [
-    "creating an account",
-    "creating a cloud account",
-    "sign up for a account",
-    "sign up for IBM Cloud",
-    "create account",
-    "create account for a client",
-    "how to created account",  
-    "create account on IBM Cloud"
-  ],
-  "account-error": [
-    "resolve errors that occur when creating my account",
-    "resolving account issues",
-    "fixing account errors during sign up",
-    "getting errors when signing up for IBM Cloud",
-    "cannot create a cloud account",
-    "account creation failed",
-    "unable to make an IBM Cloud account",
-    "can't create an account",
-    "have issues with Cloud account",  
-    "Error when creating my account"
-  ],
-  "slid": [
-    "use my SoftLayer ID to log in",
-    "log in with softlayer id",
-    "logging in using id from softlayer",
-    "softlayer id log in",
-    "log on with softlayer id"
-  ],
-  "cloud-foundry": [
-    "what is Cloud Foundry",
-    "what does Cloud Foundry do",
-    "Is Cloud Foundry a platform",
-    "learn about Cloud Foundry",
-    "Where is Cloud Foundry orgs",  
-    "Tell me about Cloud Foundry"
-  ],
-  "move-org-diff-account": [
-    "moving an org to another account",
-    "changing an org to another account",
-    "move orgs to separate account",
-    "changing an organization",
-    "transfer org between account",
-    "can I move an org to a different account",
-    "transfer orgs to another account",
-    "am I able to move orgs between accounts"
-  ],
-  "whichregions": [
-    "what regions are available for Cloud Foundry",
-    "what CF regions can I use",
-    "can Cloud Foundry use all regions",
-    "which regions are there for Cloud Foundry",
-    "Cloud Foundry regions",
-    "change region",
-    "change location",
-    "change default region",
-    "How to change account region",
-    "to change my region",
-    "where do i change the regon",
-    "region change",
-    "can i change my region",
-    "update my region"
-  ],
-  "whatisliteplan": [
-    "lite account",
-    "lite plan",
-    "lite plan pricing",
-    "benefits of a lite plan",
-    "how much is a lite plan",
-    "how much does a lite plan cost",
-    "do I have to pay for a lite plan",
-    "Is a lite plan free",
-    "does this free account expire",
-    "I want to know about lite plans",
-    "Tell me more about lite plans",
-    "whats the lite plan",
-    "account will be free of charge forever",
-    "lite",
-    "lite plan for services"
-  ],
-  "howmanyapps": [
-    "number of apps I can build",
-    "apps can I make",
-    "apps allowed to build",
-    "Is there a limit on apps",
-    "How many applications can I have in my account",
-    "How many apps am I allowed to have",
-    "limit on apps"
-  ],
-  "monthlyquota": [
-    "is there a quota for a lite plan",
-    "do I get charged for a lite plan",
-    "does a lite plan get suspended",
-    "what happens when my quota is met on a lite plan",
-    "are quotas per month",
-    "are quotas per instance",
-    "are quotas reset per month",
-    "lite plan monthly quotas"
-  ],
-  "accounts-service-removal": [
-    "How do I delete a service from my account",
-    "remove server from my account",
-    "How can I delete a service off my account",
-    "need to remove a service as not using it",
-    "Can I delete this server from my account",
-    "I want you to cancel the SSL certificate from my account",
-    "remove a service from my account"
-  ],
-  "resourcelimit": [
-    "how many resource groups",
-    "limit to the number of resource groups",
-    "how many orgs can I create",
-    "limit to the number of orgs",
-    "how many spaces can I have",
-    "limit to the number of spaces",
-    "organization limits",
-    "resource group limits",
-    "cloud foundry space limits"
-  ],
-  "changeacct": [
-    "upgrade my account type",
-    "change account plan",
-    "upgrade my account plan",
-    "upgrading my IBM Cloud account",
-    "convert my cloud account",
-    "account upgrade",
-    "account upgrades",
-    "change my account type",
-    "want to change my account for a Subscription account",  
-    "upgrade to a paid account",
-    "change plan",
-    "upgrade lite account",
-    "switch my account type",
-    "Upgrade to subscription",
-    "Upgrade to pay-as-you-go"
-  ],
-  "nochange": [
-    "are my instances available after upgrade",
-    "will I lose my instances if I upgrade my account",
-    "keep using my existing services after I change my account type",
-    "what happens to my existing instances after upgrading my account"
-  ],
-  "updatepayment": [
-    "change credit card info",
-    "edit my credit card",
-    "update my credit card information",
-    "change my credit card",
-    "edit my payment options",
-    "change my payment options",
-    "update payment details"
-  ],
-  "change-email-prefs": [
-    "change email preferences",
-    "email notifications",
-    "stop email notifications",
-    "notification settings",
-    "stop receiving maintenance email",
-    "stop receiving maintenance emails at my email address",
-    "unsubscribe mailing list",
-    "unsubcsribe from the mailing list", 
-    "unsubscribe from email notifications"
-  ],
-  "reset-password": [
-    "reset my password",
-    "change my account password",
-    "reset VPN password",
-    "update my password",
-    "update VPN password",
-    "change password",        
-    "new IBM Cloud account password",
-    "new VPN password",
-    "forgot my password",
-    "replace IBM Cloud password",
-    "can't remember log in info",
-     "know my VPN user id and password",
-    "forgot my login credentials"
-  ],
-  "cancelaccount": [
-    "cancel my account",
-    "i would like to cancel my account",
-    "How do I cancel my account",
-    "cancelling an account",
-    "cancel my account",
-    "need my account cancelled",
-    "suspend this account",
-    "cancel my account with you",
-    "how to deactivate the account",
-    "wanted to deactivate my account how would i go about that", 
-    "unsubscribe from this account",
-    "unsubscribe my ibm cloud account", 
-    "deactivate account"  
-  ],
-  "deleteaccount": [
-    "delete my account",
-    "Where do I delete my account",
-    "I want to delete my account",
-    "Tell me how to delete my account.",
-    "close my IBM Cloud account",
-    "terminate my cloud account",
-    "remove my account",
-    "don't need this account. how can I delete it",
-    "close this account"
-  ],
-  "remove-pi": [
-    "remove personal data",
-    "remove personal information",
-    "remove my info",
-    "delete personal data",
-    "delete my data,",
-    "delete my information from your website",
-    "erase personal data"
-  ],
-  "account-deactivated": [
-    "account deactivated",
-    "My IBM Cloud account is deactivated",
-    "account deactivation",
-    "Reactivate my account",
-    "Why was my account deactivated",
-    "my account was deactivated",
-    "can i unsuspend my account", 
-    "getting error message this account is deactivated",
-    "remove my account from suspended", 
-    "my account is blocked",  
-    "want to reactive my account",  
-    "re-activate my account"
-  ],
-  "contactsupport": [
-    "How do I contact support",
-    "Where is support",
-    "Contact support",
-    "I want to contact IBM support",
-    "talk to tech support",
-    "connect me with support"
-  ],
-  "freetrial": [
-    "sign up for a free trial",
-    "Is there a free trial",
-    "How do I get a free trial",
-    "free student account",
-    "free service for student",  
-    "student account",
-    "offering free services for academic students", 
-    "free trial",
-    "how can I get free trail",
-    "education account"
-  ],
-  "al_login": [
-    "log in with linked account",
-    "login after linking account",
-    "Logging in with a linked account",
-    "linked account log in",
-    "sign in with linked account"
-  ],
-  "al_support": [
-    "what support do I get with a linked account",
-    "support after I link my account",
-    "After I link my account, how much support will I get",
-    "linked account support",
-    "support after linking account",
-    "support from linked account",
-    "do linked accounts affect support"
-  ],
-  "al_morehelp": [
-    "Where do I get help with linking my account",
-    "Other ways to link my account",
-    "need help with linking my account",
-    "linked account help",
-    "Is there another way to get help with linking my account",
-    "I can't link my account",
-    "Trouble with linking my account"
-  ],
-  "al_multacct": [
-    "how do I link more than one account",
-    "several accounts, how do I link them",
-    "link several accounts",
-    "link all of my accounts",
-    "link multiple accounts",
-    "I want to link several accounts"
-  ],
-  "al_owaffslacct": [
-    "Why should I add IBM Cloud platform services to my SoftLayer account",
-    "What do I get if I add IBM Cloud platform services to my SoftLayer account",
-    "What happens to my SoftLayer account by adding IBM Cloud platform services",
-    "add IBM Cloud to SoftLayer",
-    "connect Softlayer and IBM account",
-    "combining IBM Cloud with SoftLayer",
-    "attaching IBM Cloud with SoftLayer",
-    "difference between Softlayer and IBM Cloud"
-  ],
-  "al_howaffslmastacct": [
-    "What happens to my SoftLayer Master Account ID after I link my accounts",
-    "What is the impact to SoftLayer after I link my accounts",
-    "What about my Master Account ID with SoftLayer",
-    "linked account and softlayer",
-    "softlayer ID with a linked account"
-  ],
-  "accounts-owned": [
-    "What accounts do I have",
-    "Which accounts do I own",
-    "How many accounts do I have",
-    "Which accounts am I in",
-    "accounts I own",
-    "accounts I am in",
-    "which accounts am I affiliated with",
-    "am I the account owner",
-    "what accounts are in my name"
-  ],
-  "change-profile-settings": [
-    "change user id",
-    "update userid",
-    "edit my IBM ID",
-    "account settings",  
-    "change contact name",
-    "change email",
-    "Change Name in profile",
-    "change my last name in my account",
-    "update phone number",
-    "edit personal information"
-  ],
-   "switch-account-lang": [
-    "change language to english",
-    "change account language",
-    "switch language",
-    "change language",
-    "change my language setting",
-    "change lauguage back to English",
-    "update language setting",
-    "change the language of my account to English",
-    "change the language of the page, i want it in english",
-    "manually change the site's language",
-    "how to change the site's language",
-    "configure language",
-    "can i change the language settings",
-    "how can i change my language settings",
-    "How do i change the language of page",
-    "change the language"
-  ],
-  "switch-between-accounts": [
-    "switch multiple accounts",
-    "change between accounts",
-    "Can I switch between multiple accounts",
-    "switching accounts",
-    "How do I switch between several accounts",
-    "change to another account",
-    "switch to a different account"
-  ],
-  "bookmark-page-account": [
-    "find url for account",
-    "bookmark page in account",
-    "target url to account",
-    "save resource page",
-    "save URL to account resource"
-  ],
-  "switch-account-owners": [
-    "switch account owners",
-    "change account owners",
-    "switch owner",
-    "change owner",
-    "transfer ownership of my account",
-    "transfer account ownership",
-    "give my account to someone else",
-    "ownership transfer",
-    "ownership transferred"
-  ],
-  "batch-registration": [
-    "Can IBM Cloud support batch registration of users",
-    "Does IBM Cloud support multiple registration of users",
-    "register many users",
-    "register more than one user",
-    "Can IBM Cloud register multiple users",
-    "Is IBM Cloud able to register more than one user at a time",
-    "batch user registration",
-    "register multiple users at once"
-  ],
-  "know-about-tags": [
-    "What is a tag",
-    "How do I use tags",
-    "How are tags used",
-    "What are tags"
-  ],
-  "tags-visibility-account": [
-    "Who can see tags in an account",
-    "Who is allowed to view the tags in an account",
-    "view tags in account",
-    "Can I see the account tags"
-  ],
-  "permissions-add-remove-tags": [
-    "What permissions are needed to add or remove tags",
-    "What is required to add or remove tags from resources",
-    "Can I add or remove a tag",
-    "replace a tag",
-    "how to get tag",  
-    "I can't remove my tag"
-  ],
-  "can-i-delete-my-tags-": [
-    "Am I allowed to delete a tag",
-    "How to delete a tag",
-    "Can I remove a tag",
-    "Can I get rid of a tag",
-    "deleting a tag",
-    "removing a tag"
-  ],
-  "rename-tag": [
-    "rename a tag",
-    "change the name of a tag",
-    "edit tag name"
-  ],
-  "nosecondreg": [
-    "not able to access a different IBM Cloud location",
-    "cannot access a different location",
-    "can't access different locations",
-    "not allowed to access a different IBM Cloud location",
-    "can't use a different IBM Cloud location",
-    "unable to use different IBM Cloud locations",
-    "can't change region",
-    "unable to change region",
-    "can't update my location"       
+    "create-account": [
+      "creating an account",
+      "creating a cloud account",
+      "sign up for a account",
+      "sign up for IBM Cloud",
+      "create account",
+      "create account for a client",
+      "how to created account",  
+      "create account on IBM Cloud"
+    ],
+    "account-error": [
+      "resolve errors that occur when creating my account",
+      "resolving account issues",
+      "fixing account errors during sign up",
+      "getting errors when signing up for IBM Cloud",
+      "cannot create a cloud account",
+      "account creation failed",
+      "unable to make an IBM Cloud account",
+      "can't create an account",
+      "have issues with Cloud account",  
+      "Error when creating my account"
+    ],
+    "slid": [
+      "use my SoftLayer ID to log in",
+      "log in with softlayer id",
+      "logging in using id from softlayer",
+      "softlayer id log in",
+      "log on with softlayer id"
+    ],
+    "cloud-foundry": [
+      "what is Cloud Foundry",
+      "what does Cloud Foundry do",
+      "Is Cloud Foundry a platform",
+      "learn about Cloud Foundry",
+      "Where is Cloud Foundry orgs",  
+      "Tell me about Cloud Foundry"
+    ],
+    "move-org-diff-account": [
+      "moving an org to another account",
+      "changing an org to another account",
+      "move orgs to separate account",
+      "changing an organization",
+      "transfer org between account",
+      "can I move an org to a different account",
+      "transfer orgs to another account",
+      "am I able to move orgs between accounts"
+    ],
+    "whichregions": [
+      "what regions are available for Cloud Foundry",
+      "what CF regions can I use",
+      "can Cloud Foundry use all regions",
+      "which regions are there for Cloud Foundry",
+      "Cloud Foundry regions",
+      "change region",
+      "change location",
+      "change default region",
+      "How to change account region",
+      "to change my region",
+      "where do i change the regon",
+      "region change",
+      "can i change my region",
+      "update my region"
+    ],
+    "whatisliteplan": [
+      "lite account",
+      "lite plan",
+      "lite plan pricing",
+      "benefits of a lite plan",
+      "how much is a lite plan",
+      "how much does a lite plan cost",
+      "do I have to pay for a lite plan",
+      "Is a lite plan free",
+      "does this free account expire",
+      "I want to know about lite plans",
+      "Tell me more about lite plans",
+      "whats the lite plan",
+      "account will be free of charge forever",
+      "lite",
+      "lite plan for services"
+    ],
+    "howmanyapps": [
+      "number of apps I can build",
+      "apps can I make",
+      "apps allowed to build",
+      "Is there a limit on apps",
+      "How many applications can I have in my account",
+      "How many apps am I allowed to have",
+      "limit on apps"
+    ],
+    "monthlyquota": [
+      "is there a quota for a lite plan",
+      "do I get charged for a lite plan",
+      "does a lite plan get suspended",
+      "what happens when my quota is met on a lite plan",
+      "are quotas per month",
+      "are quotas per instance",
+      "are quotas reset per month",
+      "lite plan monthly quotas"
+    ],
+    "accounts-service-removal": [
+      "How do I delete a service from my account",
+      "remove server from my account",
+      "How can I delete a service off my account",
+      "need to remove a service as not using it",
+      "Can I delete this server from my account",
+      "I want you to cancel the SSL certificate from my account",
+      "remove a service from my account"
+    ],
+    "resourcelimit": [
+      "how many resource groups",
+      "limit to the number of resource groups",
+      "how many orgs can I create",
+      "limit to the number of orgs",
+      "how many spaces can I have",
+      "limit to the number of spaces",
+      "organization limits",
+      "resource group limits",
+      "cloud foundry space limits"
+    ],
+    "changeacct": [
+      "upgrade my account type",
+      "change account plan",
+      "upgrade my account plan",
+      "upgrading my IBM Cloud account",
+      "convert my cloud account",
+      "account upgrade",
+      "account upgrades",
+      "change my account type",
+      "want to change my account for a Subscription account",  
+      "upgrade to a paid account",
+      "change plan",
+      "upgrade lite account",
+      "switch my account type",
+      "Upgrade to subscription",
+      "Upgrade to pay-as-you-go"
+    ],
+    "convertacct":[
+      "can I convert my account",
+      "convert account",
+      "convert trial",
+      "convert Lite account",
+      "convert Pay-As-You-Go account",
+      "upgrade to lite",
+      "upgrade from trial to lite",
+      "upgrading my trial account to lite"
+    ],
+    "nochange": [
+      "are my instances available after upgrade",
+      "will I lose my instances if I upgrade my account",
+      "keep using my existing services after I change my account type",
+      "what happens to my existing instances after upgrading my account"
+    ],
+    "updatepayment": [
+      "change credit card info",
+      "edit my credit card",
+      "update my credit card information",
+      "change my credit card",
+      "edit my payment options",
+      "change my payment options",
+      "update payment details"
+    ],
+    "change-email-prefs": [
+      "change email preferences",
+      "email notifications",
+      "stop email notifications",
+      "notification settings",
+      "stop receiving maintenance email",
+      "stop receiving maintenance emails at my email address",
+      "unsubscribe mailing list",
+      "unsubcsribe from the mailing list", 
+      "unsubscribe from email notifications"
+    ],
+    "reset-password": [
+      "reset my password",
+      "change my account password",
+      "reset VPN password",
+      "update my password",
+      "update VPN password",
+      "change password",        
+      "new IBM Cloud account password",
+      "new VPN password",
+      "forgot my password",
+      "replace IBM Cloud password",
+      "can't remember log in info",
+       "know my VPN user id and password",
+      "forgot my login credentials"
+    ],
+    "cancelaccount": [
+      "cancel my account",
+      "i would like to cancel my account",
+      "How do I cancel my account",
+      "cancelling an account",
+      "cancel my account",
+      "need my account cancelled",
+      "suspend this account",
+      "cancel my account with you",
+      "how to deactivate the account",
+      "wanted to deactivate my account how would i go about that", 
+      "unsubscribe from this account",
+      "unsubscribe my ibm cloud account", 
+      "deactivate account"  
+    ],
+    "deleteaccount": [
+      "delete my account",
+      "Where do I delete my account",
+      "I want to delete my account",
+      "Tell me how to delete my account.",
+      "close my IBM Cloud account",
+      "terminate my cloud account",
+      "remove my account",
+      "don't need this account. how can I delete it",
+      "close this account"
+    ],
+    "remove-pi": [
+      "remove personal data",
+      "remove personal information",
+      "remove my info",
+      "delete personal data",
+      "delete my data,",
+      "delete my information from your website",
+      "erase personal data"
+    ],
+    "account-deactivated": [
+      "account deactivated",
+      "My IBM Cloud account is deactivated",
+      "account deactivation",
+      "Reactivate my account",
+      "Why was my account deactivated",
+      "my account was deactivated",
+      "can i unsuspend my account", 
+      "getting error message this account is deactivated",
+      "remove my account from suspended", 
+      "my account is blocked",  
+      "want to reactive my account",  
+      "re-activate my account"
+    ],
+    "contactsupport": [
+      "How do I contact support",
+      "Where is support",
+      "Contact support",
+      "I want to contact IBM support",
+      "talk to tech support",
+      "connect me with support"
+    ],
+    "freetrial": [
+      "sign up for a free trial",
+      "Is there a free trial",
+      "How do I get a free trial",
+      "free student account",
+      "free service for student",  
+      "student account",
+      "offering free services for academic students", 
+      "free trial",
+      "how can I get free trail",
+      "education account"
+    ],
+    "al_login": [
+      "log in with linked account",
+      "login after linking account",
+      "Logging in with a linked account",
+      "linked account log in",
+      "sign in with linked account"
+    ],
+    "al_support": [
+      "what support do I get with a linked account",
+      "support after I link my account",
+      "After I link my account, how much support will I get",
+      "linked account support",
+      "support after linking account",
+      "support from linked account",
+      "do linked accounts affect support"
+    ],
+    "al_morehelp": [
+      "Where do I get help with linking my account",
+      "Other ways to link my account",
+      "need help with linking my account",
+      "linked account help",
+      "Is there another way to get help with linking my account",
+      "I can't link my account",
+      "Trouble with linking my account"
+    ],
+    "al_multacct": [
+      "how do I link more than one account",
+      "several accounts, how do I link them",
+      "link several accounts",
+      "link all of my accounts",
+      "link multiple accounts",
+      "I want to link several accounts"
+    ],
+    "al_owaffslacct": [
+      "Why should I add IBM Cloud platform services to my SoftLayer account",
+      "What do I get if I add IBM Cloud platform services to my SoftLayer account",
+      "What happens to my SoftLayer account by adding IBM Cloud platform services",
+      "add IBM Cloud to SoftLayer",
+      "connect Softlayer and IBM account",
+      "combining IBM Cloud with SoftLayer",
+      "attaching IBM Cloud with SoftLayer",
+      "difference between Softlayer and IBM Cloud"
+    ],
+    "al_howaffslmastacct": [
+      "What happens to my SoftLayer Master Account ID after I link my accounts",
+      "What is the impact to SoftLayer after I link my accounts",
+      "What about my Master Account ID with SoftLayer",
+      "linked account and softlayer",
+      "softlayer ID with a linked account"
+    ],
+    "accounts-owned": [
+      "What accounts do I have",
+      "Which accounts do I own",
+      "How many accounts do I have",
+      "Which accounts am I in",
+      "accounts I own",
+      "accounts I am in",
+      "which accounts am I affiliated with",
+      "am I the account owner",
+      "what accounts are in my name"
+    ],
+    "change-profile-settings": [
+      "change user id",
+      "update userid",
+      "edit my IBM ID",
+      "account settings",  
+      "change contact name",
+      "change email",
+      "Change Name in profile",
+      "change my last name in my account",
+      "update phone number",
+      "edit personal information"
+    ],
+     "switch-account-lang": [
+      "change language to english",
+      "change account language",
+      "switch language",
+      "change language",
+      "change my language setting",
+      "change lauguage back to English",
+      "update language setting",
+      "change the language of my account to English",
+      "change the language of the page, i want it in english",
+      "manually change the site's language",
+      "how to change the site's language",
+      "configure language",
+      "can i change the language settings",
+      "how can i change my language settings",
+      "How do i change the language of page",
+      "change the language"
+    ],
+    "switch-between-accounts": [
+      "switch multiple accounts",
+      "change between accounts",
+      "Can I switch between multiple accounts",
+      "switching accounts",
+      "How do I switch between several accounts",
+      "change to another account",
+      "switch to a different account"
+    ],
+    "bookmark-page-account": [
+      "find url for account",
+      "bookmark page in account",
+      "target url to account",
+      "save resource page",
+      "save URL to account resource"
+    ],
+    "switch-account-owners": [
+      "switch account owners",
+      "change account owners",
+      "switch owner",
+      "change owner",
+      "transfer ownership of my account",
+      "transfer account ownership",
+      "give my account to someone else",
+      "ownership transfer",
+      "ownership transferred"
+    ],
+    "batch-registration": [
+      "Can IBM Cloud support batch registration of users",
+      "Does IBM Cloud support multiple registration of users",
+      "register many users",
+      "register more than one user",
+      "Can IBM Cloud register multiple users",
+      "Is IBM Cloud able to register more than one user at a time",
+      "batch user registration",
+      "register multiple users at once"
+    ],
+    "know-about-tags": [
+      "What is a tag",
+      "How do I use tags",
+      "How are tags used",
+      "What are tags"
+    ],
+    "tags-visibility-account": [
+      "Who can see tags in an account",
+      "Who is allowed to view the tags in an account",
+      "view tags in account",
+      "Can I see the account tags"
+    ],
+    "permissions-add-remove-tags": [
+      "What permissions are needed to add or remove tags",
+      "What is required to add or remove tags from resources",
+      "Can I add or remove a tag",
+      "replace a tag",
+      "how to get tag",  
+      "I can't remove my tag"
+    ],
+    "can-i-delete-my-tags-": [
+      "Am I allowed to delete a tag",
+      "How to delete a tag",
+      "Can I remove a tag",
+      "Can I get rid of a tag",
+      "deleting a tag",
+      "removing a tag"
+    ],
+    "rename-tag": [
+      "rename a tag",
+      "change the name of a tag",
+      "edit tag name"
+    ],
+    "nosecondreg": [
+      "not able to access a different IBM Cloud location",
+      "cannot access a different location",
+      "can't access different locations",
+      "not allowed to access a different IBM Cloud location",
+      "can't use a different IBM Cloud location",
+      "unable to use different IBM Cloud locations",
+      "can't change region",
+      "unable to change region",
+      "can't update my location"       
+     ],
+    "nosecondorg": [
+      "unable to create a new organization",
+      "cannot create new organization",
+      "problems creating a new org",
+      "having trouble creating a new organization",
+      "can't make a new organization"
+    ],
+    "nosecondlite": [
+      "can't make a new Lite plan instance",
+      "can't create a new Lite plan instance",
+      "not allowed to create a new Lite plan instance",
+      "Why can't I form a new Lite plan instance",
+      "provision another Lite plan resource",
+      "Unable to provision new Lite instance",
+      "i cant create a lite",
+      "more than one lite plan instance"
+    ],
+    "noruntimemem": [
+      "go over the runtime memory allowance",
+      "went over my runtime memory allowance",
+      "used too much of my runtime memory allowance",
+      "exceeded organization's memory limit",
+      "lite instance runtime memory"
+    ],
+    "ts_accnt_inactive": [
+      "BXNUI0096E",
+      "The app wasn't created. Your account is inactive because it was canceled or suspended",
+      "inactive account",
+      "account not active",
+      "account is not activated"
+    ],
+    "ts_adduser": [
+      "can't add users to an organization",
+      "unable to add users to my org",
+      "adding users to org",
+      "add people to an org",
+      "add users to IBM cloud",
+      "Who is allowed to add users to an org",
+      "organization permissions",
+      "Am I able to add users to an organization",
+      "add another user",
+      "add user to my account",
+      "add another user to the account",
+      "add user access"
+    ],
+    "ts_no_space": [
+      "BXNUI0097E",
+      "Before you can add an app, at least one space must be associated with your organization and region",
+      "no spaces associated with my current organization",
+      "can't create an app without a space",
+      "no spaces in my org",
+      "Where are the spaces associated with my current org",
+      "no spaces linked with my current org"
+    ],
+    "ts_domain_diff": [
+      "apps sharing domain names",
+      "What types of apps share a domain name",
+      "kinds of app that share a domain",
+      "Which apps share domains",
+      "different apps sharing domain name"
+    ],
+    "ts_ui_org": [
+      "Can't view all orgs",
+      "Administrators unable to see organizations in console",
+      "admin can't view organizations",
+      "how can I manage all of my orgs",
+      "use the console to see all of my orgs"
+    ],
+    "ts_addcc": [
+      "not able to add my credit card",
+      "can't add credit card",
+      "cant add card",  
+      "not allowed to add my credit card information",
+      "trouble adding a credit card",
+      "credit card not being added",
+      "credit card won't add info",
+      "not able to add payment options",
+      "unable to add payment method",
+      "can't register my credit card"
+    ],
+   
+    "ts_logintobm": [
+      "my password is wrong",
+      "incorrect password",
+      "wrong password",
+      "can't use my password",
+      "password not working",
+      "The password that you entered is not correct"
+    ],
+    "ts_old_username": [
+      "IBMid or email being recognized",
+      "not recognizing my IBMid or email",
+      "my id is not being recognized",
+      "ID not recognized",
+      "IBMID not working",
+      "We didn't recognize this IBMid or email",
+      "forgot my user ID"
+    ],
+    "ts_unabletologin": [
+      "IBMid not connected with any IBM Cloud accounts",
+      "IBMid not linked with any IBM Cloud accounts",
+      "IBM Cloud accounts not associated with my IBMid",
+      "ID not associated with accounts",
+      "You have reached this page because your authentication was successful, however, this IBMid is not associated with any IBM Cloud accounts"
+    ],
+    "ts_login_stalls": [
+      "can't open console after login",
+      "the console will not open when I log in",
+      "console not opening",
+      "console won't open",
+      "I cannot open my console",
+      "can't open my console",
+      "console doesn't open after logging in"
+    ],
+    "ts_login_ibmid": [
+      "IBMid login won't go through",
+      "can't log in with IBMId",
+      "logging in not complete",
+      "login not completing",
+      "login isn't completing",
+      "didn't my IBMid login finish",
+      "can't complete login",
+      "unable to login to my account",
+      "log in doesn't work"
+    ],
+    "ts_accntpding": [
+      "After registering an account, I can't log in right away",
+      "not letting me log in immediately after making an account",
+      "unable to log in after registration of an account",
+      "can't log in after account registration",
+      "can't login after creating an account",
+      "log in after signup for IBM Cloud",
+      "can't get into my account after signing up",
+      "why is my account upgrade pending", 
+      "how long will my upgrade be pending for",  
+      "Your account is pending"
+    ],
+    "ts_email": [
+      "missing verification email",
+      "confirmation email",
+      "did not get email",
+      "activation email",
+      "no confirmation email",
+      "havent received any email for signing up for my cloud account",
+      "not received the email to sign up to my account",
+      "signup email"
+    ],
+    "ts_err": [
+      "pages that don't load",
+      "broken pages on console",
+      "not seeing some console pages",
+      "console pages not loading",
+      "can't load console pages",
+      "not loading console pages",
+      "BXNUI0001E",
+      "The page wasn't loaded because IBM Cloud didn't detect whether a session exists",
+      "BXNUI0016E",
+      "The apps and services weren't retrieved because an IBM Cloud page didn't load"
+    ],
+    "troubleshoot-infrastructure-access": [
+      "page can't be loaded because your infrastructure account is not fully configured",
+      "access infrastructure sections of the IBM Cloud console",
+      "open infrastructure section of the console",
+      "can't load infrastructure section of the IBM console ",
+      "can't load infrastructure pages",
+      "not loading infrastructure pages",
+      "unable to access infrastructure services",
+      "can't access IaaS services",
+      "Lite account have access to infrastructure services"
+    ],
+    "lite-to-enterprise": [
+      "import lite into enterprise",
+      "importing lite account into enterprises",
+      "migrate lite account to enterprise",
+      "add lite to enterprise",
+      "lite addition to an enterprise"
+    ],
+    "remove-enterprise": [
+      "remove my account from enterprises",
+      "removing from enterprise",
+      "take out accounts from enterprise",
+      "deleting from an enterprise",
+      "enterprise account deletion"
+    ],
+    "move-enterprise-account": [
+      "moving an account within an enterpise",
+      "account move in enterprises",
+      "transfer account in enterprise",
+      "enterprise account transferring",
+      "account movement within enterprise"
+    ],
+    "move-account-group": [
+      "move enterprise's account group",
+      "account group movement within an enterprise",
+      "move group within an enterprise",
+      "move account group",
+      "move a group out of an enterprise"
+    ],
+    "rename-enterprise-account": [
+      "changing the name of the account in an enterprise",
+      "enterprise account name change",
+      "updating account name in enterprise",
+      "edit account name within an enterprise",
+      "account name editing for enterprises"
+    ],
+    "enterprise-invite-users": [
+      "inviting other users to my enterprise",
+      "ask a user to join an enterprise",
+      "users joining our enterprise",
+      "invitation to a user to an enterprise",
+      "enterprise invite for users"
+    ],
+    "troubleshoot-view-enterprise": [
+      "can't see the entire enterprise hierarchy",
+      "not seeing the complete enterprise",
+      "unable to view enterprise hierarchy",
+      "view the hierarchy and missing accounts",
+      "complete hierarchy not visible"
+    ],
+    "troubleshoot-existing-enterprise": [
+      "can't see the existing account as an option to import",
+      "error trying to import an existing account to enterprise",
+      "my current account not available to import to the enterprise",
+      "unable to import account to enterprise",
+      "import account to enterprise"
+    ],
+    "troubleshoot-add-enterprise": [
+      "can't click add account in the enterprise",
+      "can't create an account to the enterprise",
+      "in enterprise, why can't I add an account",
+      "do you know why I can't click the create button under enterprise",
+      "issue adding an enterprise account",
+      "unable in my enterprise to add account"
+    ],
+    "troubleshoot-viewsub-enterprise": [
+      "can't view the Subscriptions page from a child account",
+      "don't have permission to view subscription data for this account",
+      "view enterprise subscription",
+      "trying to view subscriptions of enterprise",
+      "unable to view enterprise subscriptions"
+    ],
+    "troubleshoot-promo-enterprise": [
+      "can't apply a subscription code to enterprise account",
+      "unable to add to my enterpise a subscription code",
+      "add a feature code to child account on the enterprise",
+      "add a code to child account on the enterprise",
+      "subscription code addition to enterprise",
+      "issue adding subscription code to enterprise"
+    ],
+    "ts_upgrade_cc": [
+      "You do not have the permissions necessary to view this page",
+      "can't I upgrade my account",
+      "can't upgrade to a Pay-As-You-Go account",
+      "issue in upgrading account",
+      "cant upgrade account",
+      "not able to upgrade my account",
+      "having trouble updating my account", 
+      "account upgrade issue",
+      "cannot upgrade my account", 
+      "trying to upgrade my account but it's getting declined",
+      "unable to upgrade my account",
+      "unable to upgrade"
    ],
-  "nosecondorg": [
-    "unable to create a new organization",
-    "cannot create new organization",
-    "problems creating a new org",
-    "having trouble creating a new organization",
-    "can't make a new organization"
+   "resource-group": [
+    "what is a resource group",
+    "what's resource groups?",
+    "what do resource groups do",
+    "tell me about resource groups",
+    "learn about resource groups",
+    "how do I use a resource group"
+],
+  "create-add-resource": [
+    "can't add a resource to a resource group",
+    "can't add another resource",
+    "unable to add another resource to my group",
+    "adding a resource group gives an error",
+    "tring to add a second resource group",
+    "I'm trying to create a new Resource Group",
+    "can't create a resource group",
+    "issue adding a resource group",
+    "trying to create a new Resource Group it say's limit reached"
+],
+  "create-resource": [
+   "can I create a resource group?",
+   "who can create resource groups",
+   "can only administrators add a resource group to the account",
+   "adding a resource group to my Lite account",
+   "access to create resource groups",   
+   "can I create resource groups without paying"
+],
+  "delete-resource-group": [
+    "need to remove my resource group",
+    "delete a resource group?",
+    "remove resource group",
+    "get rid of this resource group",
+    "resource group deletion",
+    "removal of resource group",
+    "no longer need this resource group"
+],
+  "view-usage": [   
+   "summary of the usage by resource group",
+   "view usage per resource group",
+   "list my resource group usage",
+   "show me account usage for this resource group",
+   "manage billing and usage for each resource group"
+],
+  "instance-migrated": [
+    "migrate my Cloud Foundry instances to my resource group",
+    "services to a resource group migration",
+    "migrating my CF services to resource group",
+    "transfer of services to a resource group",
+    "services to be transferred to this resource group"
+],
+  "instances-between-rgs": [
+    "move this service to my other resource group",
+    "transfer this resource group's services to my other resource group",
+    "move services to a different resource group",
+    "transfer of services to a different resource group",
+    "services to be transferred to another resource group"
+],
+  "service-removal": [
+    "delete a service from this account",
+    "cancel all services",
+    "cancel services from this account",
+    "service removal from my account",
+    "how to delete service",
+    "how to delete a service",
+    "remove a service as do not want it on my account",
+    "how to delete my existing Lite plan instance",
+    "probem deleting the existing service instance",
+    "unsubscribe from this service",  
+    "delete the existing service instance",
+    "unsubscribe the selected plan",
+    "unsubscribe to a service",  
+    "services need to be deleted from account"
+ ],
+  "tag-faq": [
+    "add tags to resource group",
+    "tag addition to resource group",
+    "add or remove a tag from resource group",
+    "removal of resource group tags",
+    "adding a tag for a resource group"
   ],
-  "nosecondlite": [
-    "can't make a new Lite plan instance",
-    "can't create a new Lite plan instance",
-    "not allowed to create a new Lite plan instance",
-    "Why can't I form a new Lite plan instance",
-    "provision another Lite plan resource",
-    "Unable to provision new Lite instance",
-    "i cant create a lite",
-    "more than one lite plan instance"
+   "ts_service_broker": [     
+    "error trying to delete a service",
+    "trying to remove a service and get an error",
+    "Gateway timeout error",
+    "can't delete a service",
+    "deleting a service gives an error"
   ],
-  "noruntimemem": [
-    "go over the runtime memory allowance",
-    "went over my runtime memory allowance",
-    "used too much of my runtime memory allowance",
-    "exceeded organization's memory limit",
-    "lite instance runtime memory"
-  ],
-  "ts_accnt_inactive": [
-    "BXNUI0096E",
-    "The app wasn't created. Your account is inactive because it was canceled or suspended",
-    "inactive account",
-    "account not active",
-    "account is not activated"
-  ],
-  "ts_adduser": [
-    "can't add users to an organization",
-    "unable to add users to my org",
-    "adding users to org",
-    "add people to an org",
-    "add users to IBM cloud",
-    "Who is allowed to add users to an org",
-    "organization permissions",
-    "Am I able to add users to an organization",
-    "add another user",
-    "add user to my account",
-    "add another user to the account",
-    "add user access"
-  ],
-  "ts_no_space": [
-    "BXNUI0097E",
-    "Before you can add an app, at least one space must be associated with your organization and region",
-    "no spaces associated with my current organization",
-    "can't create an app without a space",
-    "no spaces in my org",
-    "Where are the spaces associated with my current org",
-    "no spaces linked with my current org"
-  ],
-  "ts_domain_diff": [
-    "apps sharing domain names",
-    "What types of apps share a domain name",
-    "kinds of app that share a domain",
-    "Which apps share domains",
-    "different apps sharing domain name"
-  ],
-  "ts_ui_org": [
-    "Can't view all orgs",
-    "Administrators unable to see organizations in console",
-    "admin can't view organizations",
-    "how can I manage all of my orgs",
-    "use the console to see all of my orgs"
-  ],
-  "ts_addcc": [
-    "not able to add my credit card",
-    "can't add credit card",
-    "cant add card",  
-    "not allowed to add my credit card information",
-    "trouble adding a credit card",
-    "credit card not being added",
-    "credit card won't add info",
-    "not able to add payment options",
-    "unable to add payment method",
-    "can't register my credit card"
-  ],
- 
-  "ts_logintobm": [
-    "my password is wrong",
-    "incorrect password",
-    "wrong password",
-    "can't use my password",
-    "password not working",
-    "The password that you entered is not correct"
-  ],
-  "ts_old_username": [
-    "IBMid or email being recognized",
-    "not recognizing my IBMid or email",
-    "my id is not being recognized",
-    "ID not recognized",
-    "IBMID not working",
-    "We didn't recognize this IBMid or email",
-    "forgot my user ID"
-  ],
-  "ts_unabletologin": [
-    "IBMid not connected with any IBM Cloud accounts",
-    "IBMid not linked with any IBM Cloud accounts",
-    "IBM Cloud accounts not associated with my IBMid",
-    "ID not associated with accounts",
-    "You have reached this page because your authentication was successful, however, this IBMid is not associated with any IBM Cloud accounts"
-  ],
-  "ts_login_stalls": [
-    "can't open console after login",
-    "the console will not open when I log in",
-    "console not opening",
-    "console won't open",
-    "I cannot open my console",
-    "can't open my console",
-    "console doesn't open after logging in"
-  ],
-  "ts_login_ibmid": [
-    "IBMid login won't go through",
-    "can't log in with IBMId",
-    "logging in not complete",
-    "login not completing",
-    "login isn't completing",
-    "didn't my IBMid login finish",
-    "can't complete login",
-    "unable to login to my account",
-    "log in doesn't work"
-  ],
-  "ts_accntpding": [
-    "After registering an account, I can't log in right away",
-    "not letting me log in immediately after making an account",
-    "unable to log in after registration of an account",
-    "can't log in after account registration",
-    "can't login after creating an account",
-    "log in after signup for IBM Cloud",
-    "can't get into my account after signing up",
-    "why is my account upgrade pending", 
-    "how long will my upgrade be pending for",  
-    "Your account is pending"
-  ],
-  "ts_email": [
-    "missing verification email",
-    "confirmation email",
-    "did not get email",
-    "activation email",
-    "no confirmation email",
-    "havent received any email for signing up for my cloud account",
-    "not received the email to sign up to my account",
-    "signup email"
-  ],
-  "ts_err": [
-    "pages that don't load",
-    "broken pages on console",
-    "not seeing some console pages",
-    "console pages not loading",
-    "can't load console pages",
-    "not loading console pages",
-    "BXNUI0001E",
-    "The page wasn't loaded because IBM Cloud didn't detect whether a session exists",
-    "BXNUI0016E",
-    "The apps and services weren't retrieved because an IBM Cloud page didn't load"
-  ],
-  "troubleshoot-infrastructure-access": [
-    "page can't be loaded because your infrastructure account is not fully configured",
-    "access infrastructure sections of the IBM Cloud console",
-    "open infrastructure section of the console",
-    "can't load infrastructure section of the IBM console ",
-    "can't load infrastructure pages",
-    "not loading infrastructure pages",
-    "unable to access infrastructure services",
-    "can't access IaaS services",
-    "Lite account have access to infrastructure services"
-  ],
-  "lite-to-enterprise": [
-    "import lite into enterprise",
-    "importing lite account into enterprises",
-    "migrate lite account to enterprise",
-    "add lite to enterprise",
-    "lite addition to an enterprise"
-  ],
-  "remove-enterprise": [
-    "remove my account from enterprises",
-    "removing from enterprise",
-    "take out accounts from enterprise",
-    "deleting from an enterprise",
-    "enterprise account deletion"
-  ],
-  "move-enterprise-account": [
-    "moving an account within an enterpise",
-    "account move in enterprises",
-    "transfer account in enterprise",
-    "enterprise account transferring",
-    "account movement within enterprise"
-  ],
-  "move-account-group": [
-    "move enterprise's account group",
-    "account group movement within an enterprise",
-    "move group within an enterprise",
-    "move account group",
-    "move a group out of an enterprise"
-  ],
-  "rename-enterprise-account": [
-    "changing the name of the account in an enterprise",
-    "enterprise account name change",
-    "updating account name in enterprise",
-    "edit account name within an enterprise",
-    "account name editing for enterprises"
-  ],
-  "enterprise-invite-users": [
-    "inviting other users to my enterprise",
-    "ask a user to join an enterprise",
-    "users joining our enterprise",
-    "invitation to a user to an enterprise",
-    "enterprise invite for users"
-  ],
-  "troubleshoot-view-enterprise": [
-    "can't see the entire enterprise hierarchy",
-    "not seeing the complete enterprise",
-    "unable to view enterprise hierarchy",
-    "view the hierarchy and missing accounts",
-    "complete hierarchy not visible"
-  ],
-  "troubleshoot-existing-enterprise": [
-    "can't see the existing account as an option to import",
-    "error trying to import an existing account to enterprise",
-    "my current account not available to import to the enterprise",
-    "unable to import account to enterprise",
-    "import account to enterprise"
-  ],
-  "troubleshoot-add-enterprise": [
-    "can't click add account in the enterprise",
-    "can't create an account to the enterprise",
-    "in enterprise, why can't I add an account",
-    "do you know why I can't click the create button under enterprise",
-    "issue adding an enterprise account",
-    "unable in my enterprise to add account"
-  ],
-  "troubleshoot-viewsub-enterprise": [
-    "can't view the Subscriptions page from a child account",
-    "don't have permission to view subscription data for this account",
-    "view enterprise subscription",
-    "trying to view subscriptions of enterprise",
-    "unable to view enterprise subscriptions"
-  ],
-  "troubleshoot-promo-enterprise": [
-    "can't apply a subscription code to enterprise account",
-    "unable to add to my enterpise a subscription code",
-    "add a feature code to child account on the enterprise",
-    "add a code to child account on the enterprise",
-    "subscription code addition to enterprise",
-    "issue adding subscription code to enterprise"
-  ],
-  "ts_upgrade_cc": [
-    "You do not have the permissions necessary to view this page",
-    "can't I upgrade my account",
-    "can't upgrade to a Pay-As-You-Go account",
-    "issue in upgrading account",
-    "cant upgrade account",
-    "not able to upgrade my account",
-    "having trouble updating my account", 
-    "account upgrade issue",
-    "cannot upgrade my account", 
-    "trying to upgrade my account but it's getting declined",
-    "unable to upgrade my account",
-    "unable to upgrade"
- ]     
+   "ts_service_instance": [   
+     "service instance in the wrong resource group",
+     "service was migrated to a wrong resource group",
+     "resource is assigned to an incorrect resource group",  
+     "not in the correct resource group",
+     "assigned the instance to the wrong resource group"
+   ],
+    "ts_migrate_instance": [
+      "can't migrate a Cloud Foundry service instance to a resource group",
+      "having trouble migrating an instance to my resource group",
+      "trying to migrate an instance to another resource group and can't",
+      "can't transfer this to a different resource group",
+       "unable to transfer a service to a resource group"
+    ],  
+     "ts_service_migration": [ 
+      "migrate all Cloud Foundry services to a resource group",
+      "having trouble migrating all instances to my resource group",
+      "are all my services eligible for migration",
+      "can't transfer my services to a  different resource group" 
+    ],  
+     "dc-required-move": [ 
+      "must I migrate my resources",
+      "why migrate these resources",
+      "do I have to transition my resources",
+      "resource migration",
+      "migrate to a new data center",
+      "migrate resources to a new data center"
+    ],
+     "dc-fully-migrated": [
+      "need to be fully migrated on the date my data center is closed",
+      "migrate completely before my data center closes",
+      "migrate must be completed fully before my data center closes",
+      "need to migrate before the data center closes",
+      "complete transition before the data center is closed"
+     ],
+     "dc-move-again": [
+       "have to migrate my resources again",
+       "ever need to migrate these resources again",
+       "will I have to transition my resources again",
+       "resource migration in the future",
+       "need to migrate my resources in the future"
+     ],
+     "dc-select-deploy": [
+       "which is the best data center to deploy to",
+       "how to select which data center to deploy to",
+       "choose which data center to migrate resources",
+       "choose the data center for resource migration",
+       "which data center do you recommend for resource transition"
+     ],
+     "dc-transition-sites": [
+       "what data centers can I use during the transition period",
+       "data centers to use in transition period",
+       "during transition period which data centers can I use",
+       "during my transition period can I use any data center",
+       "use any data center during your transition period"
+     ],
+     "dc-free-months": [
+       "transition period resources in addition to my existing server",
+       "during transition period do I get additional resources",
+       "receive any transition period servers",
+       "during data center migration do I get additional resources",
+       "during data center migration will I get additional servers"
+     ],
+     "dc-determine-config": [
+       "determine my current hardware configuration",
+       "figure out my current hardware configuration",
+       "view my current hardware setup",
+       "view my system configuration details",
+       "see my current configuration for services"
+     ],
+     "dc-determine-utilization": [
+       "determine the utilization of my current hardware",
+       "know the utilization of my current configuration",
+       "find out the utilization of my current hardware",
+       "know the utilization for my existing configuration",
+       "tools to understand the utilization of my system"
+     ],
+     "dc-compare-processor": [  
+       "do I compare old and new processors",
+       "compare the specifications of old and new Intel processors",
+       "old and new processor comparison",
+       "comparison of specs of old and new processors",
+       "new and old intel processor compared"
+     ],
+     "dc-choose-os": [   
+      "choose my new operating system",
+      "select my new O/S after migration",
+      "choose the O/S for migrating my resources",
+      "following transition how do I choose my new OS",
+      "transition how do I select my new operating system"
+     ],
+     "dc-bandwidth-rate": [   
+      "what bandwidth do I get with my new configuration",
+      "get a different bandwidth package after I migrate",
+      "get the same bandwidth after migration",
+      "after I have transitioned will I have the same bandwidth",
+      "rate for the bandwidth the same as before migration"
+     ],
+     "dc-copy-data": [ 
+      "copy data from my old server to the new one",
+      "how do I migrate my servers",
+      "migrate old server data to new server",
+      "how to copy data to a new server",
+      "need to transition my server data"
+      ],
+     "dc-setup-networking": [  
+      "need to set up my networking at the new data site",
+      "need to update my networking at the new data center",
+      "my network also needs a new set up after I migrate",
+      "set up my virtual machine network after migration",
+      "update my VM network after I have migrated"
+      ],
+     "dc-ip-addresses": [ 
+       "keep my existing IP addresses after migration",
+       "keep the same IP address after moving to the new data center",
+       "new servers have new primary IP subnets",
+       "transfer my current IP address to the new data center",
+       "after migration can I keep this same IP address"
+      ],  
+      "whatisiam":[
+        "what's IAM",
+        "what is identity and access",
+        "what does IAM mean",
+        "describe IAM",
+        "understand what IAM is"
+        ],
+      "iam-enabled":[
+         "whats IAM enabled",
+         "describe iam enabled service",
+         "use iam-enabled services",
+         "assign resource group to an IAM-enabled service",
+         "how to use IAM enabled services"
+       ],
+     "iam-policies":[
+        "explain IAM access policy",
+        "how do the access policy work",
+        "does the access policy work",
+        "what is the access policy",
+        "tell me about IAM access policy",
+        "Who can give access IAM authority",
+        "explain for the policy for access for IAM"
+        ],
+      "iam-cloudfoundry":[
+        "are IAM and Cloud Foundry the same",
+        "difference between Cloud Foundry and IAM",
+        "are IAM and Cloud Foundry different",
+        "IAM and Cloud Foundry do differently",
+        "are Cloud Foundry and IAM different"
+        ],
+      "iam-access":[
+        "What access do I have",
+        "access groups I can access",
+        "access do I have assigned",
+        "different access assigned to me",
+        "where can I see my access"  
+        ],
+      "request-access":[
+        "request access to a resource",
+        "update my access to a resource",
+        "upgrade my access rights",
+        "looking to change my access",
+        "requesting access to a new resource"  
+        ],
+      "iam-id":[
+        "find my IAM ID",
+        "looking for an IAM id",
+        "finding my iam id",
+        "find the IAM id for another person",
+        "iam id of a team member"  
+        ],
+      "resource-groups":[
+        "why use resource groups",
+        "why use access groups",
+        "benefit of a resource group",
+        "benefit of an access group",
+        "benefits of access groups"  
+        ],
+      "resources":[
+        "create resources within a resource group",
+        "add a resource to a resource group",
+        "update a resource group with resources",
+        "allow a user to create a resource in a resource group",
+        "users to create resources in resource groups"  
+        ],
+      "iam-api-keys": [
+        "where do I find my API key and url",
+        "find my API keys",
+        "finding the api key",
+        "manage API keys",
+        "want to get a API key",
+        "do i get an ibm api key",
+        "What is my API key",
+        "get my URL and API Key",
+        "where is my api key",
+        "do I get API Keys",
+        "api key find it",
+        "secret key",
+        "want to generate API key",
+        "API key",
+        "cloud API key",
+        "need my api keys"    
+        ],
+      "user-access":[
+        "can I do as Administrator for IAM",
+        "can I assign access to others",
+        "access rights to grant others access",
+        "access assignment for other users",
+        "add my colleagues to log in to the IBM cloud",
+        "give access to someone else"      
+        ],
+      "providing-access":[
+        "difference between access to manage a resource group and access to resources",
+        "same access to manage resource group and  the resources in the group",
+        "different access for resources and resource groups",
+        "can I do if I have access to manage a resource group",
+        "What can I do if I have access to manage resources"         
+        ],
+      "remove-users":[
+        "who can remove users",
+        "who has access to remove users from an account",
+        "can I delete a user",
+        "why can't I remove a user",
+        "need to delete someone from an acount",          
+        "removing users from this account"
+        ],
+      "multi-factor":[
+        "require IBMid multifactor authentication for my account",
+        "require MFA for my account",
+        "IBM id multifactor authentication requirement",
+        "IBMid MFA requirements",
+        "activate mfa on my ibm id",
+        "want MFA for my account",        
+        "requiring MFA for these accounts"
+        ],
+      "service-platform-roles":[
+        "What are service and platform roles",
+        "whats a service role",
+        "what is a platfrom role",
+        "Are service and platform roles the same",
+        "is a service role different from platform roles"        
+        ],
+      "action-mapping":[
+        "actions mapped to each IAM role",
+        "actions for roles can each user do",
+        "actions can a user do in the IAM",
+        "are the different IAM role actions",
+        "IAM role actions"       
+       ],
+      "groups-organizations":[
+        "difference between a resource group and Cloud Foundry orgs and spaces",
+        "differences between resource groups and orgs and spaces",
+        "are resource groups and orgs different",
+        "is a resource group and an org different",
+        "are resource groups and orgs and spaces the same",
+        "are spaces and orgs different to resource groups"
+        ],
+      "account-administrator":[   
+         "delegate account administrator capabilities",
+         "give someone admin capabilities for the account",
+         "assign someone else full administrator rights for the account",
+         "give full administrator access",
+         "full access to the account",
+         "delegate admin access",
+         "full administrator access",
+         "give someone an Admin role",
+         "assign a user full access as an account administrator",
+         "assign an Administrator role"
+         ],
+      "resources-and-rg":[   
+         "access enables a user to work with a single resource", 
+         "assign access to an individual resource in the account",
+         "give access to all resources in the account",
+         "access for a user to resource",
+         "what access policy on the specific resource does a user need"
+         ],
+      "users":[   
+         "every user in my account see all the other users",
+         "view all users in the account",
+         "can view all users in our account",
+         "can't see all users for the account",
+         "user list visibility"
+         ],
+      "account-invite":[   
+         "assign access to a user when I invite them to the account?",
+         "give access to Users immediately",
+         "when do I have to give users access",
+         "do I assign access to a new users immediately",
+         "do I have to give a user access as soon as I add them to the account"
+         ],
+      "appid":[   
+         "add authentication into my web and mobile apps",
+         "adding authentication into your web and mobile apps",
+         "add authentication to my web and mobile apps",
+         "how to secure my apps and services",
+         "add security to my apps"
+         ],
+      "infrastructure-devices":[
+        "manage a user's access to infrastructure",
+        "manage user access to infrastructure",
+        "management of user access in infrastructure",
+        "manage a user's access for classic infrastructure",
+        "Access for classic infrastructure management",
+        "assign access to IAM-enabled infrastructure services",
+        "access for IAM enabled infrastructure services"
+          ],
+       "migrated-permissions-faq":[
+         "manage access for users previously in softlayer",
+         "manage permissions that used to be in Softlayer",
+         "manage migrated permissions access",
+         "billing and support permissions in my SoftLayer account management",
+         "migrated permissions access management"
+          ],
+        "total-policies": [	
+          "how many policies do I have in my account",
+          "check how many policies are in this account",
+          "how many policies do I have",
+          "total number of policies per account",
+          "total of a specific type of policies per account",
+        "limit for policies within an account"
+        ],	  
+      "troubleshoot-serviceaccess":[   
+         "can't access a resource from the Resource list page",
+         "cant access the services on the Resource list",
+         "unable to access a service from the resource",
+         "You do not have access to any organizations, spaces, or resource groups in this region",
+         "don't have access to any organizations, spaces, or resource groups in this region",
+         "cant access organizations, spaces, or resource groups"
+         ],
+      "troubleshoot-myaccess":[   
+         "want to know what access I am assigned",
+         "not sure what level of access I'm assigned",
+         "don't have access to complete a task",
+         "what level of access am I assigned",
+         "what access levels do I have"
+         ],
+      "troubleshoot-invite":[   
+         "cant I invite users to the account",
+         "can not add anyone to the account",
+         "am I unable to invite users to this account",
+         "can't add anyone to this account",
+         "can't invite users to the account"
+         ],
+      "troubleshoot-classicinfra":[     
+         "view classic infrastructure permissions for other users",
+         "can't view another user's classic infrastructure permissions",
+         "access to view and edit permissions for another user",
+         "edit permissions for another user in the account",
+         "edit classic infrastructure permissions for other users"
+         ],
+      "troubleshoot-migrated-permissions":[  
+         "manage migrated billing and support case permissions",
+         "don't have the same managing billing and support case permissions",
+         "manage permissions for migrated billing",
+         "migrated permissions access groups might not have been assigned the correct access",
+         "migrated billing and support case permission"
+         ],
+      "troubleshoot-policy-limit":[
+         "error message that I reached the limit of access policies ",
+         "can't assign access in my account because I reached the max number of allowed policies",
+         "new policy can't be created to assign access",
+         "422: Exceeded maximum policies quota error",
+         "error 422 exceeded maximum policies",
+         "limit of total number of policies allowed"
+        ],
+      "troubleshoot-serviceid-access": [
+        "don't have access to manage a service ID I created",
+        "can't update a service id i created",
+        "unable to change a service id",
+        "trying to update a service id and getting an error",
+        "not access a service id"
+      ]    
 }

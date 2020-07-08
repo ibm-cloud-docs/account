@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-01-09"
+lastupdated: "2020-06-10"
 
 keywords: enterprise, enterprise account, multiple accounts, organization, hierarchy
 
@@ -18,7 +18,7 @@ subcollection: account
 {:term: .term}
 
 # What is an enterprise?
-{: #enterprise}
+{: #what-is-enterprise}
 
 {{site.data.keyword.Bluemix}} enterprises provide a way to centrally manage billing and resource usage across multiple accounts. Within an enterprise, you create a multitiered hierarchy of accounts, with billing and payments for all accounts managed at the enterprise level.
 {:shortdesc}
@@ -60,7 +60,7 @@ Learn more in [Centrally manage billing and usage with enterprises](/docs/billin
 ## Resource management
 {: #enterprise-resources}
 
-Resources and services within an enterprise function the same as in stand-alone accounts. Each account in an enterprise can contain resources in resource groups and services in Cloud Foundry orgs and spaces. Account groups can't contain resources. For more information, see [Working with resources and services](/docs/resources?topic=resources-resource).
+Resources and services within an enterprise function the same as in stand-alone accounts. Each account in an enterprise can contain resources in resource groups and services in Cloud Foundry orgs and spaces. Account groups can't contain resources. For more information, see [Managing resources](/docs/account?topic=account-manage_resource).
 
 ![A diagram that shows that resources are contained in accounts in the enterprise.](images/enterprise-resources.svg "Resources are tied to the account in the enterprise, just like a stand-alone account."){: caption="Figure 3. Resources in an enterprise" caption-side="bottom"}
 
@@ -84,7 +84,7 @@ The user lists for each account are only visible to the users who are invited to
 
 Similar to how user management is entirely separate in each account and the enterprise itself, so is access management. This separation means that users who manage your enterprise can't access account resources within the child accounts unless you specifically enable them to. For example, your financial officer can have the Administrator role on the Billing account management service within the enterprise account, which provides them access to billing and payment information and usage data down to the resource type. But, unless they are invited to a child account and are assigned access to the Billing account management service for that account, they can't view offers or update spending limits for the child account.
 
-For more information, see [User management for enterprises](/docs/iam?topic=iam-enterprise-access).
+For more information, see [User management for enterprises](/docs/account?topic=account-enterprise-access).
 
 ## How can I use an enterprise?
 {: #enterprise-use-cases}

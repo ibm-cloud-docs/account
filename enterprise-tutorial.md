@@ -1,12 +1,16 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-11-04"
+  years: 2019, 2020
+lastupdated: "2020-07-08"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, enterprise users, enterprise access, enterprise tutorial
 
 subcollection: account
+
+content-type: tutorial
+account-plan: subscription
+completion-time: 15m
 
 ---
 
@@ -15,21 +19,25 @@ subcollection: account
 {:important: .important}
 {:tip: .tip}
 {:note: .note}
+{:tutorial: .tutorial}
+{:step: data-tutorial-type='step'}
+{:step-next: data-tutorial-type='step-next'}
 
-# Getting started with an enterprise
+# Setting up an enterprise
 {: #enterprise-tutorial}
+{: tutorial}
 
 This tutorial walks you through how to set up an enterprise by department so you can manage and track usage costs for multiple {{site.data.keyword.Bluemix}} accounts. By completing this tutorial, you learn how to create an enterprise, add accounts and organize them in account groups, invite users, and explore subscriptions.
 {:shortdesc}
 
-The tutorial uses a fictitious company called *Example Corp* that wants to create an enterprise with the following structure. As you complete the tutorial, adapt each step to match your organization's accounts and desired structure.
+The tutorial uses a fictitious company that is called *Example Corp* that wants to create an enterprise with the following structure. As you complete the tutorial, adapt each step to match your organization's accounts and desired structure.
 
 ![A four-tier enterprise that groups accounts according to department in an organization. For example, account groups are named Marketing, Development, and Sales. The account groups contain accounts for teams within those departments. For example, the Sales account group contains accounts for Direct, Online, and Enablement.](images/enterprise-by-dept.svg "An enterprise that organizes accounts according to department in the organization."){: caption="Figure 1. An enterprise that is organized by department" caption-side="bottom"}
 
 ## Before you begin
 {: #setting-prereqs}
 
-Read [What is an enterprise?](/docs/account?topic=account-enterprise) to learn the basic principles of how account management, billing, resources, and user and access management work in an enterprise.
+Read [What is an enterprise?](/docs/account?topic=account-what-is-enterprise) to learn the basic principles of how account management, billing, resources, and user and access management work in an enterprise.
 
 Verify that you have the required access in a Subscription account, which serves as the base account from which you create the enterprise. To create an enterprise, you must be the account owner or have the Administrator role on the Billing account management service.
 
@@ -38,10 +46,11 @@ Creating an enterprise from an account and importing existing accounts cannot be
 
 ## Step 1. Create the enterprise
 {: #create_enterprise_tutorial}
+{: step}
 
 Enterprises are created from an existing Subscription account. When you create the enterprise, the account is added to the enterprise hierarchy. Billing transitions to being managed by the enterprise, but its users and resources remain the same and are completely unaffected. For a complete description of account impacts, see [Creating an enterprise](/docs/account?topic=account-create-enterprise).
 
-1. Go to **Manage** > **Enterprise**, and click **Create**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Enterprise**, and click **Create**.
 2. Enter the name of your company, such as Example Corp, to identify your enterprise.
 3. Enter your company's domain, such as `examplecorp.com`.
 4. Review the information about the impact to your account, and select **I understand the impact to my account**. Then, click **Create**. The account is now permanently part of the enterprise and can't be removed.
@@ -52,6 +61,7 @@ After your enterprise is created, you are directed to the enterprise dashboard. 
 
 ## Step 2. Create an enterprise structure with account groups
 {: #account_groups_tutorial}
+{: step}
 
 Use account groups to [organize related accounts](/docs/account?topic=account-enterprise-organize). The second and third tier of the Example Corp. enterprise hierarchy contain the Marketing, Development, Sales, Design, and Engineering account groups. Complete the following steps to create the account groups:
 
@@ -66,8 +76,9 @@ Repeat the steps to create the Sales, Development, Design, and Engineering accou
 
 ## Step 3. Import existing accounts
 {: #existing_accounts_tutorial}
+{: step}
 
-Now that you created an enterprise structure, you can import an existing account to the enterprise. When you import an account, it is permanently added to the enterprise. Just like when you create an enterprise, billing for the imported accounts transitions to being managed by the enterprise, but its users and resources remain the same. For details, see [Importing existing accounts](/docs/account?topic=account-enterprise-add#add-accounts).
+Now that you created an enterprise structure, you can import an existing account to the enterprise. When you import an account, it is permanently added to the enterprise. Like when you create an enterprise, billing for the imported accounts transitions to being managed by the enterprise, but its users and resources remain the same. For details, see [Importing existing accounts](/docs/account?topic=account-enterprise-add#add-accounts).
 
 To import an existing account, the following access is required:
 
@@ -89,6 +100,7 @@ Repeat the steps to import more accounts.
 
 ## Step 4. Create new accounts
 {: #create-accounts_tutorial}
+{: step}
 
 You can create new accounts within your enterprise. The accounts are created as Pay-As-You-Go accounts, and usage is billed to the enterprise. To create an account, you need an access policy with the Editor or Administrator role on the Enterprise service.
 
@@ -117,6 +129,7 @@ Repeat the steps to create more accounts. As an example, the Example Corp enterp
 
 ## Step 5. Explore subscriptions
 {: #explore-sub_tutorial}
+{: step}
 
 You can explore subscriptions in the enterprise from the enterprise dashboard. Any existing subscriptions from accounts that are imported into the enterprise are moved to the enterprise account and added to the enterprise [credit pool](/docs/billing-usage?topic=billing-usage-enterprise#credit-pool).
 
@@ -127,6 +140,7 @@ You can explore subscriptions in the enterprise from the enterprise dashboard. A
 
 ## Step 6. Invite users to manage your enterprise
 {: #invite-enterprise-users-tutorial}
+{: step}
 
 In a large organization like Example Corp., there are likely other people who you want to give access to manage the enterprise so they can do their jobs. In this case, you want to give department leads of the Marketing, Development, and Sales account groups access to manage their accounts and resource usage, and you want the Example Corp. financial officer to have access to view the entire enterprise's billing and usage. To give other users access, you invite them to the enterprise account and assign them the appropriate access. 
 
@@ -155,27 +169,31 @@ With the Usage Report Viewer role, the financial officer can see usage from all 
 
 ## Step 7. Assign users in child accounts access to create resources
 {: #users_create_resources}
+{: step}
 
 Before you begin, make sure that you switch to the account where you want to create the resource. In this case, switch to the *Print* account. If you want users in your account to create resources from the catalog and assign them to a resource group, you must assign two types of access policies.
-* Assign one access policy with Viewer role or higher on the resource group.
-* Assign one access policy with Editor or Administrator role on the service.
+* Assign one access policy with viewer role or higher on the resource group.
+* Assign one access policy with editor or administrator role on the service.
 
 Complete the following steps to assign the required access:
 
-1. Go to **Manage** > **Access (IAM)**, and select **Users**.
-2. Select a user name from the list.
+1. In the console, go to **Manage** > **Access (IAM)**, and select **Users**.
+2. Click the user's name from the list.
 3. Click **Access policies > Assign access**.
-4. Click **Assign access within a resource group**.
+4. Select the service that you want to assign the user access to.
+    * If you want the user to be able to create any service, select **All Identity and Access enabled services**.
+    * If you want to assign the user access to a specific service, select it from the list. 
 5. Select the resource group that you want to assign the user access to.
-6. Select the Viewer role or higher on the resource group.
-7. Select the service that you want to assign the user access to.
-  * If you want the user to be able to provision any service, select **All services**.
-  * If you want to assign the user specific access, select a service from the list. The user has access only to the service selected.
-8. Select the Editor or Administrator role.
-9. Click **Assign**.
+6. Select the region.
+7. Select the viewer role or higher from the list of platform access roles. 
+8. (Optional) Select the reader role or higher from the list of service access roles. 
+6. Select the viewer role or higher from the list of resource group access roles.
+7. Click **Add**.
+8. Review the access summary, and click **Assign**. 
 
 ## Step 8. View usage from all accounts
 {: #usage_tutorial}
+{: step}
 
 1. Log in to the Example Corp enterprise account.
 2. Go to **Manage > Billing and usage**, and select **Usage**.
@@ -188,5 +206,11 @@ Repeat the steps to view usage for the Development, Sales, Design, and Engineeri
 
    From the enterprise account, you can't view usage data for the resource plan or instance because it requires access within the account. Click **Switch to the account** to view data for the account. You need billing access to the resources and services in the account. See [Viewing your usage](/docs/billing-usage?topic=billing-usage-viewingusage) for more information.
 
-Data is shown in the enterprise account only for usage that is incurred by accounts in the enterprise. To view usage from before an account was added to the enterprise, log in to that account and select the relevant time frame.
+Data is shown in the enterprise account only for usage that is incurred by accounts in the enterprise. To view usage from before an account was added to the enterprise, log in to that account and select the relevant timeframe.
 {: note}
+
+## Next steps
+{: #enterprise-next-steps}
+{: step-next}
+
+Now that you learned the basics of how to set up an enterprise, you can continue to add accounts, account groups, and users as your teams and cloud workloads grow. For more information, see [Managing your enterprise](/docs/account?topic=account-enterprise-settings).
