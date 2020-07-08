@@ -2,128 +2,280 @@
 {:topicgroup: .topicgroup}
 {:utterance .utterance}
 
-{:  .toc subcollection="account" category="platform_services" audience="platform" arm="3397214" href="/docs/account?topic=account-account_setup" path="account"}
-Managing your account
+{:  .toc subcollection="account" category="platform_services" audience="platform" href="/docs/account?topic=account-account-getting-started" console-page="/" product-page="https://ibm.com/cloud" path="account"}
+Managing your account, resources, and access
 
     {: .navgroup id="learn"}
-    index.md
-    account_overview.md
-    lite-account-show-me.md
-    bp_account.md
+    {: .topicgroup}
+    Learning about accounts
+        index.md
+        account_overview.md
+        enterprise-video.md
 
     {: .topicgroup}
-    Centrally managing multiple accounts with enterprises
-        enterprises.md
-        enterprise-tutorial.md
-        enterprise-video.md
+    Best practices
+        bp_account.md
         bp_enterprise.md
+
+    {: .topicgroup}
+    Tutorials
+        acct-getstart-tutorial.md
+        enterprise-tutorial.md
+        iam-quickstart.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
     {: .topicgroup}
-    Setting up your account
-        adminpublic.md
-        profile.md
-        login_settings.md
-        custom-dashboard.md
+    Securing your account
+        iam-whatis.md
 
-    account-upgrade.md
-    feature_codes.md
+        {: .topicgroup}
+        Understanding access roles and permissions
+            iam-manageaccess.md
+            iam-users_roles.md
+            iam-infrastructureaccess.md
+            iam-cfaccess.md
+
+        {: .topicgroup}
+        Setting up authentication
+            iam-mfatypes.md
+            iam-mfa.md
+            iam-totp.md
+            iam-external_mfa.md
+            iam-securityquestions.md
+            iam-login_fedid.md
+            iam-idp-integration.md
+            iam-connect_dedicated_id.md
+            iam-saml-federation.md
+
+        {: .topicgroup}
+        Managing access
+            iam-groups.md
+            iam-roles-management.md
+            iam-accessgroup_rules.md
+            iam-mng-access.md
+            iam-account_management.md
+            iam-wildcard.md
+            iam-public_access.md
+            iam-mnginfra.md
+            iam-migrated_permissions.md
+            iam-mngcf.md
+            iam-authorizations.md
+            iam-policy-number.md
+
+        {: .topicgroup}
+        Managing identities
+            iam-userinv.md
+            iam-remove-users.md
+            iam-serviceid.md
+
+        {: .topicgroup}
+        Administering user settings
+            iam-usersetting.md
+            iam-update_status.md
+            iam-specific_ip.md
+            iam-vpn_password.md
+
+        {: .topicgroup}
+        Using API keys
+            iam-apikeys.md
+            iam-userid_keys.md
+            iam-serviceid_keys.md
+            iam-classic_infra_keys.md
+            iam-apikey_iamtoken.md
+            iam-apikeys_services.md
 
     {: .topicgroup}
-    Modifying account settings
+    Working with resources
+
+        {: .topicgroup}
+        Managing resource groups
+            resourcegroups.md
+            rg-access.md
+            rg-delete.md
+
+        {: .topicgroup}
+        Managing resources
+            manage_resource.md
+            delete-resources.md
+            reclaim-resource.md
+            searching.md
+            iam-access-report.md
+
+        {: .topicgroup}
+        Tagging resources
+            tagging_resources.md
+            grant-tag-access.md
+
+        service_in_other_regions.md
+        using-services.md
+
+        {: .topicgroup}
+        Connecting resources to apps
+            connect_external_app.md
+            s2s.md
+            connecting_apps.md
+            service_credentials.md
+
+        {: .topicgroup}
+        Connecting to resources over a private network
+            service-endpoints.md
+            vrf-service-endpoint.md
+
+        {: .topicgroup}
+        Migrating resources
+            instance_migration.md
+            data-center-migration.md
+
+        {: .topicgroup}
+        Working with software
+            software-license.md
+            catalog-install-private.md
+
+    {: .topicgroup}
+    Centrally managing multiple accounts with enterprises
+        enterprises.md
+
+        {: .topicgroup}
+        Setting up an enterprise
+            enterprise-create.md
+            enterprise-add-accounts.md
+            enterprise-organize-accounts.md
+
+        {: .topicgroup}
+        Assigning enterprise access
+            enterprise-access.md
+            enterprise-assign-access.md
+
+        enterprise-settings.md
+
+    {: .topicgroup}
+    Centrally managing products with private catalogs
+        catalog-whatis.md
+        catalog-custom-private.md
+
+        {: .topicgroup}
+        Managing software in your private catalogs
+            catalog-add-private.md
+            catalog-update-private.md
+            catalog-dep-restore.md
+
+        catalog-settings.md
+        catalog-access-reqs.md
+
+    custom-dashboard.md
+    profile.md
+    contact_info.md
+
+    {: .topicgroup}
+    Updating account settings
         account_settings.md
-        eu_hipaa_supported.md
-        vrf-service-endpoint.md
-        contact_info.md
         email.md
+        eu_hipaa_supported.md
+
+    feature_codes.md
+    account-upgrade.md
+    transfer.md
 
     {: .topicgroup}
     Managing orgs and spaces
         orgs_spaces.md
         manageorg.md
-
-    software-license.md
-
-    {: .topicgroup}
-    Managing catalogs
-        catalog.md
-        catalog-access-reqs.md
-        catalog-settings.md
-        restrict-by-user.md
-        create-catalog.md
-        install-sw-private.md
-        update-private.md
-        dep-restore.md
-
-    {: .topicgroup}
-    Setting up an enterprise
-        enterprise-create.md
-        enterprise-add-accounts.md
-        enterprise-organize-accounts.md
-        enterprise-settings.md
-
-    audit_log.md
-    transfer.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    monitoring.md
-    compliance-filters.md
-
-    {: .topicgroup}
-    Command reference
-        [Managing accounts, users, and Cloud Foundry orgs](/cli/cloud-cli-ibmcloud_commands_account)
-        [Managing enterprises, account groups, and accounts](/cli/cloud-cli-ibmcloud_enterprise)
-        /cli/cli-manage-catalogs-plugin
-
     {: .topicgroup}
     API reference
         [Catalog Management](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog){: external}
-        [Global Catalog](https://cloud.ibm.com/apidocs/resource-catalog/global-catalog){: external}
         [Enterprise Management](https://{DomainName}/apidocs/enterprise-apis/enterprise){: external}
+        [Global Catalog](https://cloud.ibm.com/apidocs/resource-catalog/global-catalog){: external}
+        [Global Search](https://cloud.ibm.com/apidocs/search){: external}
+        [Global Tagging](https://cloud.ibm.com/apidocs/tagging){: external}
+        [IAM Access Groups API](https://cloud.ibm.com/apidocs/iam-access-groups){: external}
+        [IBM Cloud Open Service Broker](https://cloud.ibm.com/apidocs/resource-controller/ibm-cloud-osb-api){: external}
+        [IAM Identity Services API](https://cloud.ibm.com/apidocs/iam-identity-token-api){: external}
+        [IAM Policy Management API](https://cloud.ibm.com/apidocs/iam-policy-management){: external}
+        [Resource Controller v2 API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller){: external}
+        [Resource Controller v1 API](https://cloud.ibm.com/apidocs/resource-controller/resource-manager){: external}
         [User Management](https://{DomainName}/apidocs/user-management){: external}
+
+    {: .topicgroup}
+    Command reference
+        /cli/cli-manage-catalogs-plugin
+        /cli/cli-ibmcloud_commands_services
+        /cli/cli-ibmcloud_commands_account
+        /cli/cli-ibmcloud_enterprise
+        /cli/cli-ibmcloud_commands_iam
+        /cli/cli-ibmcloud_catalog
+        /cli/cli-ibmcloud_commands_resource
+
+    crn.md
+
+    {: .topicgroup}
+    Tracking events
+        monitoring.md
+        audit_log.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
     {: .topicgroup}
     FAQs
-        account_faq.md
-        enterprise_faq.md
+        faqs-account.md
+        faqs-enterprise.md
+        faqs-iam.md
+        faqs-resources.md
+        faqs-migration.md
 
     {: .topicgroup}
-    Troubleshooting for accessing IBM Cloud
-        ts_password.md
-        ts_login_id.md
-        ts_signup.md
-        ts_console_error.md
-        ts_authentication_issue.md
-        ts_pending_account.md
-        ts_account_activation.md
-        ts_page_load.md
-        ts_account_infra.md
+    Troubleshooting accessing IBM Cloud
+        ts-password.md
+        ts-login-id.md
+        ts-signup.md
+        ts-console-error.md
+        ts-authentication-issue.md
+        ts-pending-account.md
+        ts-account-activation.md
+        ts-page-load.md
+        ts-account-infra.md
 
     {: .topicgroup}
-    Troubleshooting for managing accounts
-        ts_create_location.md
-        ts_create_org.md
-        ts_lite_instance.md
-        ts_runtime.md
-        ts_inactive_account.md
-        ts_add_users_org.md
-        ts_space_org.md
-        ts_admin_org.md
-        ts_add_cc.md
-        ts_upgrade.md
-        ts_email_issue.md
+    Troubleshooting account management
+        ts-create-location.md
+        ts-create-org.md
+        ts-lite-instance.md
+        ts-runtime.md
+        ts-inactive-account.md
+        ts-add-usersorg.md
+        ts-space-org.md
+        ts-admin-org.md
+        ts-add-cc.md
+        ts-upgrade.md
+        ts-email-issue.md
 
     {: .topicgroup}
-    Troubleshooting for an enterprise
-        ts_view_enterprise.md
-        ts_import_enterprise.md
-        ts_create_enterprise_acct.md
-        ts_subscriptions_enterprise.md
-        ts-enterprise_apply.md
+    Troubleshooting enterprises
+        ts-view-enterprise.md
+        ts-import-enterprise.md
+        ts-create-enterprise-acct.md
+        ts-subscriptions-enterprise.md
+        ts-enterprise-apply.md
+
+    {: .topicgroup}
+    Troubleshooting IAM
+        ts-iam-resourceaccess.md
+        ts-iam-myaccess.md
+        ts-iam-invite.md
+        ts-iam-classicinfra.md
+        ts-iam-migratedpermissions.md
+        ts-iam-max-policy.md
+        ts-iam-serviceid.md
+
+    {: .topicgroup}
+    Troubleshooting resources
+        ts-rscs-delete.md
+        ts-rscs-migrate-all.md
+        ts-rscs-migrate-rg.md
+        ts-rscs-migrate-cf.md
 
     known-issues.md
     {: .navgroup-end}
