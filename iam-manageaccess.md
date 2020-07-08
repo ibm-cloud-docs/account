@@ -8,7 +8,7 @@ lastupdated: "2020-06-09"
 
 keywords: users level of access, user control, access control, permissions, manage access, access management, platform management tasks, assign roles
 
-subcollection: overview
+subcollection: account
 
 ---
 
@@ -36,11 +36,4 @@ While each type of access is managed separately, all access policies are made up
 
 For IAM policies, the subject can be an access group, user, or service ID. And, the target can be an account management service, resource group, service in the account, specific service instance, or resource type within a service. Platform and service roles can be selected to scope the level of access for the subject. For Cloud Foundry access, a user is given access to a Cloud Foundry org and space by selecting each and assigning an org role and space role. For classic infrastructure, a user is selected, and then the access can be scoped to a service or device with specific permissions assigned.
 
-<!--
-## Watch and learn
-{: #watch-iamaccess}
-
-<div class="embed-responsive embed-responsive-16by9" data-hd-video="video">
-  <iframe class="embed-responsive-item" id="youtubeplayer" title="IBM Cloud console guide: Getting access" type="text/html" width="640" height="360" src="https://mediacenter.ibm.com/media/1_q33pxjan" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
-</div>-->
 
