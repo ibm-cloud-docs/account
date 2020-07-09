@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2019-06-23"
+lastupdated: "2019-07-08"
 
 keywords: platform notifications, email notifications, IBM Cloud notifications, notification preferences, email preferences, user notifications, infrastructure notifications
 
@@ -120,4 +120,4 @@ To add users to a distribution list, complete the following steps:
 
 ### Unsubscribing from the distribution list 
 
-Users have the option to unsubscribe from the distribution list. To unsubscribe, use the unsubscribe link in the footer of any email that is sent from the distribution list. 
+Users have the option to unsubscribe from the distribution list. To unsubscribe, use the unsubscribe link in the footer of any email sent from the distribution list. 

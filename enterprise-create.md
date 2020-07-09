@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-06-05"
+lastupdated: "2020-06-10"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, multiple account
 
@@ -38,7 +38,7 @@ If you don't have a Subscription account, you can upgrade your account as descri
 ## Creating an enterprise in the console
 {: #create-console}
 
-1. Go to **Manage > Enterprise**, and click **Create**.
+1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage > Enterprise**, and click **Create**.
 1. Enter a unique name to identify your enterprise. Typically, the name reflects your company or organization, such as `My organization's enterprise`. You can edit the enterprise name later if needed.
 1. If your company or organization has an associated domain name, enter it in the **Domain** field. You can specify any domain or subdomain format, such as `example.com` or `my.example.com`.
 1. Review the information about the impact to your account, and select **I understand the impact to my account**. Then, click **Create**.
@@ -120,4 +120,4 @@ curl -X POST \
 
 Build out your enterprise structure by adding more existing accounts or creating new accounts within your enterprise. For more information, see [Adding accounts to your enterprise](/docs/account?topic=account-enterprise-add).
 
-You can also invite additional users to the enterprise account so that they can help manage the enterprise. For example, you might want to invite a financial officer to manage billing and track usage costs, and invite department leads to administer accounts. See [Inviting users](/docs/iam?topic=iam-iamuserinv) for more information about how to invite users.
+You can also invite additional users to the enterprise account so that they can help manage the enterprise. For example, you might want to invite a financial officer to manage billing and track usage costs, and invite department leads to administer accounts. See [Inviting users](/docs/account?topic=account-iamuserinv) for more information about how to invite users.

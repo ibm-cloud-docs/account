@@ -14,6 +14,7 @@ subcollection: account
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:external: target="_blank" .external}
 {:tip: .tip}
 
 # Understanding API keys

@@ -17,11 +17,15 @@ subcollection: account
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:external: target="_blank" .external}
 {:faq: data-hd-content-type='faq'}
 
 
 # FAQs about managing resources
 {: #resources-faq}
+
+FAQs for managing {{site.data.keyword.cloud_notm}} resources might include questions about working with resource groups, migrating Cloud Foundry instances, and access for working with resources.
+{: shortdesc}
 
 ## What is a resource group?
 {: #resource-group}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-01-09"
+lastupdated: "2020-06-10"
 
 keywords: enterprise, enterprise settings, manage enterprise, view enterprise, rename enterprise
 
@@ -28,9 +28,9 @@ To manage enterprise settings, you need the Administrator or Editor role on the 
 ## Managing your enterprise in the console
 {: #enterprise-manage}
 
-To view your enterprise dashboard, go to **Manage > Enterprise**. The dashboard provides an overview of accounts, users, and subscription credit in your enterprise. The dashboard has quick links so that you can perform the following common actions:
+To view your enterprise dashboard, go to **Manage > Enterprise** in the {{site.data.keyword.Bluemix_notm}} console. The dashboard provides an overview of accounts, users, and subscription credit in your enterprise. The dashboard has quick links so that you can perform the following common actions:
    * [Add new or existing accounts to your enterprise](/docs/account?topic=account-enterprise-add)
-   * [Invite users to the enterprise account](/docs/iam?topic=iam-iamuserinv)
+   * [Invite users to the enterprise account](/docs/account?topic=account-iamuserinv)
    * [View and manage subscription credit](/docs/billing-usage?topic=billing-usage-subscriptions)
 
 Also, you can rename your enterprise by clicking **Rename** in the Enterprise details section.

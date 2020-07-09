@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020 
-lastupdated: "2020-01-09"
+lastupdated: "2020-06-15"
 
 keywords: dashboard, widgets display, manage visibility, customize, console
 
@@ -21,7 +21,7 @@ subcollection: account
 {: #custom-dashboard}
 
 You can customize your dashboard in the {{site.data.keyword.cloud}} console to ensure that what is displayed is relevant to you.
-{: .shortdesc}
+{: shortdesc}
 
 ## Adding widgets
 {: #add-widget}
@@ -41,4 +41,4 @@ Removing a widget doesn't delete it. You can find it in the Widgets pane.
 ## Reorganizing your dashboard
 {: #reorg-dashboard}
 
-You can rearrange the widgets on your dashboard by grabbing a widget and moving it. For example, as an account owner, tracking who has access to your account might be a top priority for you. You want these details to be displayed at the top of your dashboard, but you must scroll to find the User access widget. Grab the widget to move it to the top of your dashboard.
+You can rearrange the widgets on your dashboard by grabbing a widget and moving it. For example, as an account owner, tracking who has access to your account might be a top priority for you. You want these details to be displayed first on your dashboard, but you must scroll to find the User access widget. Grab the widget to move it to the beginning of your dashboard.

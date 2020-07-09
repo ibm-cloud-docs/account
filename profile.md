@@ -16,7 +16,7 @@ subcollection: account
 {:tip: .tip}
 {:note: .note}
 
-# Setting up your profile
+# Updating your profile
 {: #usersettings}
 
 In your {{site.data.keyword.cloud}} profile, you can add a photo and personal information, manage notifications, and monitor your privacy. Setting it up helps your teammates know who you are and how you can help.
