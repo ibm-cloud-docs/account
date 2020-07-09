@@ -14,7 +14,7 @@ subcollection: account
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:note: .note}
 {:tip: .tip}
 
@@ -26,8 +26,6 @@ You can use classic infrastructure API keys to access classic infrastructure API
 
 {{site.data.keyword.cloud}} API keys can also be used to access classic infrastructure APIs.
 {: tip}
-
-<!-- Removed If you are an ancestor in the classic infrastructure hierarchy for a user, and you have the Manage users classic infrastructure permission, you can view, create, and delete classic infrastructure API keys for VPN only users. in favor of general ability to do this VPN and regular users with new functionality. -->
 
 To manage classic infrastructure API keys, go to **Manage** > **Access (IAM)** > **API keys**, and select **Classic infrastructure API keys** in the {{site.data.keyword.cloud_notm}} console. You can see your classic infrastructure API key and any API keys for users that you are an ancestor for in the user hierarchy, meaning you invited the user or someone you invited to the account invited the user, and so on.
 

@@ -11,7 +11,7 @@ subcollection: account
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:tip: .tip}
 {:note .note}
 {:important: .important}
