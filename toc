@@ -151,7 +151,6 @@ Managing your account, resources, and access
 
     {: .topicgroup}
     Centrally managing products with private catalogs
-        catalog-whatis.md
         catalog-custom-private.md
 
         {: .topicgroup}
