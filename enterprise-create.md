@@ -26,7 +26,7 @@ You create an {{site.data.keyword.Bluemix}} enterprise from an existing Subscrip
 ## Before you begin
 {: #create-prereqs}
 
-To create an [{{site.data.keyword.Bluemix_notm}} enterprise](/docs/account?topic=account-enterprise), you must be the account owner or have the Administrator role on the Billing account management service in a Subscription account.
+To create an [{{site.data.keyword.Bluemix_notm}} enterprise](/docs/account?topic=account-what-is-enterprise), you must be the account owner or have the Administrator role on the Billing account management service in a Subscription account.
 
 The Subscription account that you use to create the enterprise is permanently moved into the enterprise. Moving the account into the enterprise has the following impacts:
 * Billing for the account transitions to being [managed by the enterprise](/docs/billing-usage?topic=billing-usage-enterprise). After the transition, users in the account can't access billing and payment information, such as invoices, payments, or subscriptions, for future billing periods. To view or manage billing, users need to be invited to the enterprise account and be given access to the Billing service in that account.

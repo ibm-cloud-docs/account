@@ -24,7 +24,7 @@ subcollection: account
 {{site.data.keyword.cloud}} enterprises are valuable for large companies or organizations that need to group a set of accounts while still maintaining a separation and isolation between the accounts for different departments or teams. The management of users and their access to resources in each account remains entirely separate even when the accounts are added and organized in an enterprise. 
 {:shortdesc}
 
-See [What is an enterprise?](/docs/account?topic=account-enterprise) for more information about enterprises.
+See [What is an enterprise?](/docs/account?topic=account-what-is-enterprise) for more information about enterprises.
 
 The user list for each child account in an enterprise is accessible only to users in that child account. This means the users who are invited to the enterprise and the users who are invited to the accounts within the enterprise remain entirely separate. This is beneficial because you can add multiple accounts to an enterprise and organize them as needed into account groups, but keep the user lists restricted from other accounts. 
 
