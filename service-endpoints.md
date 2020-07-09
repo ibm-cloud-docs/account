@@ -21,6 +21,7 @@ subcollection: account
 {: #service-endpoints-overview}
 
 An increased focus on security is required by customers that use cloud-based services for production workloads. For many customers, accessing services in a secure manner is not only a sensible corporate policy, but in some cases required by compliance regulations. {{site.data.keyword.IBM_notm}} has enhanced the connectivity options for customers who require isolated connectivity options for their workloads. 
+{: shortdesc}
 
 With {{site.data.keyword.cloud}} service endpoints, you can connect to {{site.data.keyword.cloud_notm}} services over the {{site.data.keyword.cloud_notm}} private network. Moving these workloads from the public network offers two advantages:
 

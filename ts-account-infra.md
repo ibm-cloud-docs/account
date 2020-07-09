@@ -24,6 +24,9 @@ subcollection: account
 {: #troubleshoot-infrastructure-access}
 {: troubleshoot}
 
+You can't view all infrastructure sections of the console because of an account configuration issue.
+{: shortdesc}
+
 When you attempt to access infrastructure sections of the IBM Cloud console, the following message might be displayed:
 {: tsSymptoms}
 

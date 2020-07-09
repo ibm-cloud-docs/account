@@ -23,6 +23,9 @@ subcollection: account
 {: #troubleshoot-viewsub-enterprise}
 {: troubleshoot}
 
+You can't see the Subscriptions page content in the console due to lack of access.
+{: shortdesc}
+
 When you go to view the Subscriptions page in the {{site.data.keyword.Bluemix}} console from a child account, the following message is displayed:
 {: tsSymptoms}
 

@@ -25,6 +25,9 @@ subcollection: account
 {: #ts_email}
 {: troubleshoot}
 
+I didn't receive a confirmation email for successful account creation.
+{: shortdesc}
+
 You didn't receive the confirmation email to activate your account.
 {: tsSymptoms}
 

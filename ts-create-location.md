@@ -24,6 +24,7 @@ subcollection: account
 {: troubleshoot}
 
 You're unable to create a new location because your account type doesn't allow it.
+{: shortdesc}
 
 You receive an error message when you try to create a new {{site.data.keyword.Bluemix_notm}} location.
 {: tsSymptoms}

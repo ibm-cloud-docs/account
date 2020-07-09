@@ -25,6 +25,7 @@ subcollection: account
 {: troubleshoot}
 
 When you use the {{site.data.keyword.Bluemix}} console, you might not be able to load a console page. Instead, error messages BXNUI0001E or BXNUI0016E might be displayed.
+{: shortdesc}
 
 One of the following error messages might be displayed:
 {: tsSymptoms}

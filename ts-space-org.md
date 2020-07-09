@@ -23,6 +23,7 @@ subcollection: account
 {: troubleshoot}
 
 You can't create an app if no space is associated with your current organization.
+{: shortdesc}
 
 When you try to create an app the following error message is displayed:
 {: tsSymptoms}

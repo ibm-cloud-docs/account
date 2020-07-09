@@ -23,6 +23,7 @@ subcollection: account
 {: troubleshoot}
 
 As an administrator, you can't display every organization to administer them when you use the {{site.data.keyword.Bluemix_notm}} console. You can display and administer only those organizations to which you belong.
+{: shortdesc}
 
 As an administrator, you can't view all the organizations from the console.
 {: tsSymptoms}

@@ -23,6 +23,7 @@ subcollection: account
 {: troubleshoot}
 
 You can't create an app in {{site.data.keyword.Bluemix_notm}} if your account is inactive. You must contact the support team to fix this problem.
+{: shortdesc}
 
 When you try to create an app in {{site.data.keyword.Bluemix_notm}}, the following error message is displayed:
 {: tsSymptoms}

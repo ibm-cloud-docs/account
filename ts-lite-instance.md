@@ -24,6 +24,7 @@ subcollection: account
 {: troubleshoot}
 
 You try to create more than one instance in your Lite account.
+{: shortdesc}
 
 You receive the following error message when you try to create a new Lite plan instance:
 {: tsSymptoms}

@@ -23,6 +23,7 @@ subcollection: account
 {: troubleshoot}
 
 You went over the allowed memory for your {{site.data.keyword.Bluemix}} account.
+{: shortdesc}
 
 You're unable to deploy apps, and an error states that you've exceeded your organization's memory limit.
 {: tsSymptoms}

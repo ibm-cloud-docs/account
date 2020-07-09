@@ -21,7 +21,7 @@ subcollection: account
 {: #custom-dashboard}
 
 You can customize your dashboard in the {{site.data.keyword.cloud}} console to ensure that what is displayed is relevant to you.
-{: .shortdesc}
+{: shortdesc}
 
 ## Adding widgets
 {: #add-widget}

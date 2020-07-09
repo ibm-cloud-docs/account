@@ -21,6 +21,8 @@ subcollection: account
 #  FAQs about migrating resources to a different data center
 {: #faqs-dc-closure}
 
+FAQs about migrating resources between data centers might include questions about migration requirements, timing, gathering information about your current or new configuration.
+{: shortdesc}
 
 ##  Why am I required to migrate my resources?
 {: #dc-required-move}

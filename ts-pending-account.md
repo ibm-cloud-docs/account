@@ -26,6 +26,7 @@ subcollection: account
 {: troubleshoot}
 
 If your account is still pending, you can't log in to {{site.data.keyword.Bluemix}}.
+{: shortdesc}
 
 After you create an {{site.data.keyword.Bluemix_notm}} account, you might not be able to log in to {{site.data.keyword.Bluemix_notm}}. The `Your account is pending` message might be displayed.
 {: tsSymptoms}

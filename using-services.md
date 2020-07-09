@@ -20,6 +20,7 @@ subcollection: account
 {: #api-services-infrastructure}
 
 You can easily use API-based public {{site.data.keyword.Bluemix}} services with your classic infrastructure assets. All APIs are secure and encrypted so that your data is protected.
+{: shortdesc}
 
 You can gain insights and cognitive knowledge by calling Watson APIs from your apps to make them more personalized. Or, use data and analytics services to tap into high-performance analytics for your apps. Or, choose database-as-a-service where you can leave the management to {{site.data.keyword.Bluemix_notm}}.
 

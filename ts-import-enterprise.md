@@ -25,6 +25,7 @@ subcollection: account
 {: troubleshoot}
 
 To import an existing enterprise, you must have the correct access roles assigned on the billing service. 
+{: shortdesc}
 
 When you try to import an existing account to enterprise, one of the following issues occurs:
 {: tsSymptoms}

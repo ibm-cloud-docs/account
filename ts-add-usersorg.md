@@ -24,6 +24,7 @@ subcollection: account
 {: troubleshoot}
 
 You can invite users to your organization only if you're the account owner, or if you're both a manager and a member of the organization.
+{: shortdesc}
 
 You can't see the **Invite a New User** link in your **Manage Organizations** section.
 {: tsSymptoms}

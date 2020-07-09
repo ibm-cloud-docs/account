@@ -25,6 +25,7 @@ subcollection: account
 {: troubleshoot}
 
 To successfully log in to the {{site.data.keyword.Bluemix}} console, make sure that you have IBMid authentication for each account.
+{: shortdesc}
 
 When you log in to the console, the following message is displayed:
 {: tsSymptoms}

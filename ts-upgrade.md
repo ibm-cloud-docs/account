@@ -23,6 +23,7 @@ subcollection: account
 {: troubleshoot}
 
 You can't upgrade to a Pay-As-You-Go account.
+{: shortdesc}
 
 When you go **Manage** > **Account** > **Account Settings** in the {{site.data.keyword.Bluemix_notm}} console, the following message is displayed:
 {: tsSymptoms}

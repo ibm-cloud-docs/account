@@ -23,6 +23,7 @@ subcollection: account
 {: troubleshoot}
 
 You can't submit your credit card information to upgrade your Lite account to a billable account.
+{: shortdesc}
 
 The **Submit** button on the Add credit card page is disabled.
 {: tsSymptoms}

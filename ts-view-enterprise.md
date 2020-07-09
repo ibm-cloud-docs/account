@@ -24,6 +24,7 @@ subcollection: account
 {: troubleshoot}
 
 If you aren't able to view the entire {{site.data.keyword.Bluemix}} enterprise, you might need to check what access you are assigned.
+{: shortdesc}
 
 You can view a few of the accounts in the enterprise but not the entire enterprise hierarchy. The account hierarchy shows only accounts that you have access to, not the entire enterprise account.
 {: tsSymptoms}

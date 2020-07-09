@@ -23,6 +23,9 @@ subcollection: account
 {: #troubleshoot-promo-enterprise}
 {: troubleshoot}
 
+A subscription code can't be added to the account because of specific access that is required.
+{: shortdesc}
+
 You can't add a subscription code to your {{site.data.keyword.Bluemix}} account, because you don't have the correct access.  
 {: tsSymptoms}
 

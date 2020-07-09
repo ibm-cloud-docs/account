@@ -25,6 +25,7 @@ subcollection: account
 {: troubleshoot}
 
 You must have the correct access to complete certain tasks. 
+{: shortdesc}
 
 You can't click **Add account** in the Account section in the {{site.data.keyword.Bluemix}} console.
 {: tsSymptoms}

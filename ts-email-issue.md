@@ -23,6 +23,7 @@ subcollection: account
 {: troubleshoot}
 
 You are having issues with receiving email notifications. 
+{: shortdesc}
 
 You completed the instructions required to set platform or infrastructure email notifications, but still are not receiving them.
 {: tsSymptoms}

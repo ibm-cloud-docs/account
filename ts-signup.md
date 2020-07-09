@@ -26,6 +26,7 @@ subcollection: account
 {: troubleshoot}
 
 Your IBMid must be associated with an {{site.data.keyword.Bluemix}} account. 
+{: shortdesc}
 
 When you log in to {{site.data.keyword.Bluemix_notm}}, the following message is displayed:
 {: tsSymptoms}

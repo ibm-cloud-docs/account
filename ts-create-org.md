@@ -23,7 +23,8 @@ subcollection: account
 {: #nosecondorg}
 {: troubleshoot}
 
-You try to create more than one org, and you have a Lite account.  
+You try to create more than one org, and you have a Lite account.
+{: shortdesc}  
 
 You receive an error message when you try to create a new organization.
 {: tsSymptoms}

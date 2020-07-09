@@ -25,6 +25,9 @@ subcollection: account
 {: #ts_login_stalls}
 {: troubleshoot}
 
+You can't view the console after login.
+{: shortdesc}
+
 When you log in to the {{site.data.keyword.Bluemix_notm}} console by using your IBMid, a login success message is displayed, but you don't return to the {{site.data.keyword.Bluemix_notm}} console.
 {: tsSymptoms}
 
