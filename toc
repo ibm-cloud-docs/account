@@ -152,6 +152,7 @@ Managing your account, resources, and access
     {: .topicgroup}
     Centrally managing products with private catalogs
         catalog-custom-private.md
+        catalog-enterprise-filters.md
 
         {: .topicgroup}
         Managing software in your private catalogs
