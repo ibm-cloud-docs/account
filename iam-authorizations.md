@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2020
 
-lastupdated: "2020-04-21"
+lastupdated: "2020-07-10"
 
 keywords: authorizations, service to service access, access between services, dependent service, source service, target service, assigned access, access policies
 
@@ -57,7 +57,7 @@ To authorize a source service access a target service, run the `ibmcloud iam aut
 The following sample uses mock data to create a policy where a specific source service instance of {{site.data.keyword.cos_full_notm}} is authorized to access a specific target service instance of {{site.data.keyword.keymanagementservicelong_notm}}:
 
 ```
-ibm cloud iam authorization-policy-create cloud-object-storage kms Reader --source-service-instance-id 123123 --target-service-instance-id 456456
+ibmcloud iam authorization-policy-create cloud-object-storage kms Reader --source-service-instance-id 123123 --target-service-instance-id 456456
 ```
 
 For more information about all of the parameters that are available for this command, see [ibmcloud iam authorization-policy-create](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_authorization_policy_create).
