@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-07-07"
+lastupdated: "2020-07-10"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings
 
@@ -23,13 +23,13 @@ subcollection: account
 This tutorial walks you through the steps for setting up an account in {{site.data.keyword.cloud}}. By completing this tutorial, you learn how to set up account authentication, manage your account settings, effectively organize resources in your account, and control access to resources.
 {:shortdesc}
 
-This tutorial focuses on how to set up a Pay-As-You-Go account. If you're looking for details about how to set up accounts in an enterprise hierarchy, see [Getting started with an enterprise](/docs/account?topic=account-enterprise-tutorial).
+This tutorial focuses on how to set up a Pay-As-You-Go account. If you're looking for details about setting up accounts in an enterprise hierarchy, see [Setting up an enterprise](/docs/account?topic=account-enterprise-tutorial).
 {: tip}
 
 ## Step 1. Create your account
 {: #account-gs-createlite}
 
-First, create a Lite account by using your existing IBMid or a new IBMid. If your company is registered to use a federated ID for single sign-on (SSO), you can use your federated ID instead to create your account.
+First, create a Lite account by using your existing IBMid or a new IBMid. If your company is registered to use a federated ID for single sign-on (SSO), you can use your federated ID instead.
 
 | Login ID | Details |    
 |-----------------|---------|
