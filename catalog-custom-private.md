@@ -26,7 +26,7 @@ Private catalogs provide a way to centrally manage access to products in the {{s
 
 Let's say you're an operations admin for your team, and you require access to all products in the {{site.data.keyword.cloud_notm}} catalog. A member of your team is tasked with a specific project, for example, building a voice-enabled chatbot by using {{site.data.keyword.conversationshort}}, {{site.data.keyword.speechtotextshort}}, and {{site.data.keyword.texttospeechshort}}. And, you want them to access only those products in the {{site.data.keyword.cloud_notm}} catalog.  
 
-To achieve this, you create one catalog that includes all products in the {{site.data.keyword.cloud}} catalog. Then, you create another catalog that includes only the required products, and you give the team member viewer access to the catalog. 
+To achieve this, you create one catalog that includes all products in the {{site.data.keyword.cloud_notm}} catalog. Then, you create another catalog that includes only the required products, and you give the team member viewer access to the catalog. 
 
 All private catalogs that are in an account inherit filters that are set by the account owner or administrator at the account level. In addition, if the account is a parent account in an {{site.data.keyword.cloud_notm}} enterprise, the filters apply to all child account groups and accounts.
 {: tip}
