@@ -16,14 +16,14 @@ Managing your account, resources, and access
     Best practices
         bp_account.md
         bp_enterprise.md
-
-    {: .topicgroup}
-    Tutorials
-        acct-getstart-tutorial.md
-        enterprise-tutorial.md
-        iam-quickstart.md
     {: .navgroup-end}
 
+    {: .navgroup id="tutorial"}
+    acct-getstart-tutorial.md
+    enterprise-tutorial.md
+    iam-quickstart.md
+    {: .navgroup-end}
+    
     {: .navgroup id="howto"}
     {: .topicgroup}
     Securing your account
