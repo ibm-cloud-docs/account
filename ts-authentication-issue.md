@@ -34,6 +34,6 @@ When you log in to {{site.data.keyword.Bluemix_notm}}, authenticating with IBMid
 There might be a problem with the IBMid authentication service.
 {: tsCauses}
 
-Make sure you can log in to [IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser){: external} ![External link icon](../icons/launch-glyph.svg "External link icon"). 
+Make sure you can log in to [IBM](https://idaas.iam.ibm.com/idaas/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser){: external}. 
 {: tsResolve}
-If you can, it is an application problem and you can try logging in to the console again later. If you can't log in to that page, contact the [IBMid help desk ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: external}.  
+If you can, it is an application problem and you can try logging in to the console again later. If you can't log in to that page, contact the [IBMid help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: external}.  

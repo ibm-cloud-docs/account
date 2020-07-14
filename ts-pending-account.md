@@ -34,7 +34,7 @@ After you create an {{site.data.keyword.Bluemix_notm}} account, you might not be
 When you sign up for an {{site.data.keyword.Bluemix_notm}} account, you receive an email that includes a confirmation link. You must click this link to confirm your account. If you don't confirm your account, the account remains in a pending state.
 {: tsCauses}
 
-The confirmation email is sent to the email address that is associated with your IBMid. If you cannot find the confirmation email, go to the [{{site.data.keyword.Bluemix_notm}} login page](https://cloud.ibm.com/){: external} ![External link icon](../icons/launch-glyph.svg "External link icon") and try to log in. The following message is displayed:
+The confirmation email is sent to the email address that is associated with your IBMid. If you cannot find the confirmation email, go to the [{{site.data.keyword.Bluemix_notm}} login page](https://cloud.ibm.com/){: external} and try to log in. The following message is displayed:
 {: tsResolve}
 
 ```

@@ -77,13 +77,13 @@ If your upgrade included a promotional credit, the credit might take a few hours
 
 With a Subscription account, you commit to a minimum spending amount each month and receive a subscription discount that is applied to that minimum charge. If your usage exceeds your total subscription amount, you're charged the regular non-discounted rate only on the overage.
 
-Subscriptions that you purchase through the console are limited to $5,000 United States dollars (USD) or the equivalent in your billing currency. If you want to purchase a larger subscription, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://cloud.ibm.com/catalog?contactmodule){: external} ![External link icon](../icons/launch-glyph.svg).
+Subscriptions that you purchase through the console are limited to $5,000 United States dollars (USD) or the equivalent in your billing currency. If you want to purchase a larger subscription, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://cloud.ibm.com/catalog?contactmodule){: external}.
 
 To upgrade from a Lite account to a Subscription account, complete the following steps.
 1. In the console, go to **Manage > Account**, and select **Account settings**. Then, click **Upgrade**, which takes you to the Subscriptions page.
 1. Select your monthly spending commitment and subscription term, and click **Get started**.
 
-   If you're not sure how much your typical usage might cost, you can estimate it by using the [cost estimator](https://{DomainName}/estimator/review){:external} ![External link icon](../icons/launch-glyph.svg "External link icon").
+   If you're not sure how much your typical usage might cost, you can estimate it by using the [cost estimator](https://{DomainName}/estimator/review){:external}.
    {:tip}
 1. Review your subscription details, and then enter your payment information.
 
@@ -95,4 +95,4 @@ Your subscription renews automatically. If you want to discontinue your subscrip
 ### Converting a Pay-As-You-Go account to a Subscription account
 {: #paygo-to-subscription}
 
-You can convert your Pay-As-You-Go account to a Subscription account at any time. Contact [{{site.data.keyword.Bluemix_notm}} Sales](https://cloud.ibm.com/catalog?contactmodule){: external} ![External link icon](../icons/launch-glyph.svg) to get started.
+You can convert your Pay-As-You-Go account to a Subscription account at any time. Contact [{{site.data.keyword.Bluemix_notm}} Sales](https://cloud.ibm.com/catalog?contactmodule){: external} to get started.

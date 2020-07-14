@@ -41,6 +41,6 @@ Check your inbox and your spam folder for the email. The confirmation email is s
   * Make sure that your spam filter or security software is allowing emails with links through to your email address.
   * Contact your email provider or administrator to ask them to check for any configuration that blocks email from `ibmacct@iam.ibm.com`.
 
-After you unblock the confirmation email, go to the [{{site.data.keyword.Bluemix_notm}} console](https://{DomainName}){: external} ![External link icon](../icons/launch-glyph.svg "External link icon") and log in. Click **Resend** to send another confirmation email to the email address that is associated with your IBMid.
+After you unblock the confirmation email, go to the [{{site.data.keyword.Bluemix_notm}} console](https://{DomainName}){: external} and log in. Click **Resend** to send another confirmation email to the email address that is associated with your IBMid.
 
 If you still can't activate your account, contact [{{site.data.keyword.Bluemix_notm}} Support](/docs/get-support?topic=get-support-getting-customer-support).  

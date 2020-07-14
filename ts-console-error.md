@@ -37,4 +37,4 @@ An issue with the browser is causing you to not return to the {{site.data.keywor
 Use one of the following options:
 {: tsResolve}
  * Close your browser, clear the cache and cookies, then try to log in again.
- * Log in from the [{{site.data.keyword.Bluemix_notm}} console](https://{DomainName}){: external} ![External link icon](../icons/launch-glyph.svg "External link icon").
+ * Log in from the [{{site.data.keyword.Bluemix_notm}} console](https://{DomainName}){: external}.

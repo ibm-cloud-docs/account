@@ -55,5 +55,5 @@ If you can't invite users to your organization and need a different role to do s
 
 If you can't invite users because you're a collaborator and not a member, you must delete your previous {{site.data.keyword.Bluemix_notm}} account and then be invited to join the account as a member of the organization. To delete your previous account and join the account as a member, complete the following steps:
 
-  1. Contact [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} to open a support case and request to delete your account. If you have data that is associated with your old account that you want to save and move to the new account, include this information in your email.
+  1. Contact [{{site.data.keyword.Bluemix_notm}} Support](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} to open a support case and request to delete your account. If you have data that is associated with your old account that you want to save and move to the new account, include this information in your email.
   2. After your account is deleted, have a user with the organization manager role invite you to the organization as an organization manager. Then, sign up for {{site.data.keyword.Bluemix_notm}} from the invitation.

@@ -43,7 +43,7 @@ First, create a Lite account by using your existing IBMid or a new IBMid. If you
 
 If you're not a part of a company that uses a federated ID, use your IBMid to create your Lite account.
 
-1. Go to the [{{site.data.keyword.Bluemix_notm}} login page](https://cloud.ibm.com/){: external} ![External link icon](../icons/launch-glyph.svg "External link icon"), and click **Create an {{site.data.keyword.Bluemix_notm}} account**.
+1. Go to the [{{site.data.keyword.Bluemix_notm}} login page](https://cloud.ibm.com/){: external}, and click **Create an {{site.data.keyword.Bluemix_notm}} account**.
 1. Enter your IBMid email address. If you don't have an existing IBMid, an ID is created based on the email that you enter.
 1. Complete the remaining fields with your information, and click **Create account**.
 1. Confirm your account by clicking the link in the confirmation email that's sent to your provided email address.
@@ -55,7 +55,7 @@ A federated ID is an ID within a company's domain that is registered with {{site
 
 {{site.data.keyword.IBM_notm}} uses the Security Assertion Markup Language 2.0 (SAML 2.0) for this identity federation. SAML 2.0 is a standard version for exchanging authentication data between security domains. It's an XML-based protocol that uses a security token that contains assertions to pass information between the organizations "Identity Provider", and the "{{site.data.keyword.IBM_notm}} Rely Party (RP)", otherwise known as the Service Provider.
 
-For information about how to register your company for a federated ID, see the [IBMid Enterprise Federation Adoption Guide ![External link icon](../icons/launch-glyph.svg)](https://ibm.box.com/v/IBMid-Federation-Guide){: external}. An {{site.data.keyword.IBM_notm}} sponsor, such as an offering advocate or client advocate, is required when you request to register federated IDs.
+For information about how to register your company for a federated ID, see the [IBMid Enterprise Federation Adoption Guide {: external}. An {{site.data.keyword.IBM_notm}} sponsor, such as an offering advocate or client advocate, is required when you request to register federated IDs.
 
 ## Step 2. Upgrade to a Pay-As-You-Go account
 {: #account-gs-upgrade}

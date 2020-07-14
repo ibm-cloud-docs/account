@@ -75,7 +75,7 @@ Complete the following steps to set up your one-time passcode with an authentica
 6. Click **Continue** to enter your code.
 7. Enter your code and select **Verify**.
 
-If you encounter an error message that states that you've already set up authentication, but your verification code is not working or you do not have your verification code to enter, you must contact the [Help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: external} ![External link icon](../icons/launch-glyph.svg "External link icon") to reset your MFA enrollment.
+If you encounter an error message that states that you've already set up authentication, but your verification code is not working or you do not have your verification code to enter, you must contact the [Help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: external} to reset your MFA enrollment.
 {: note}
 {: #mfahelp}
 

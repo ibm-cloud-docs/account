@@ -126,9 +126,9 @@ You can access and use {{site.data.keyword.Bluemix_notm}} IAM through the Access
 * To access {{site.data.keyword.Bluemix_notm}} IAM by using the console, go to **Manage** &gt; **Access (IAM)**.
 * Go to [Managing IAM access, API keys, service IDs, and access groups](/docs/cli?topic=cli-ibmcloud_commands_iam) to review the available CLI commands.
 * Go to the following API docs to review the available APIs:
-    * [IAM Identity Services API](https://{DomainName}/apidocs/iam-identity-token-api){: external} ![External link icon](../icons/launch-glyph.svg "External link icon")
-    * [IAM Access Groups API](https://{DomainName}/apidocs/iam-access-groups){: external} ![External link icon](../icons/launch-glyph.svg "External link icon")
-    * [IAM Policy Management API](https://{DomainName}/apidocs/iam-policy-management){: external} ![External link icon](../icons/launch-glyph.svg "External link icon")
+    * [IAM Identity Services API](https://{DomainName}/apidocs/iam-identity-token-api){: external}
+    * [IAM Access Groups API](https://{DomainName}/apidocs/iam-access-groups){: external}
+    * [IAM Policy Management API](https://{DomainName}/apidocs/iam-policy-management){: external}
     
 
 

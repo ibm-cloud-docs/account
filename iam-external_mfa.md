@@ -35,7 +35,7 @@ To order external authentication, complete the following steps:
 2. Select a user from the list.
 3. From the **User details** page, select **Order external authentication** in the Manage user's login section.
 4. Select **Symantec identity protection** or **Phone-based identity protection**.
-    * For Symantec authentication, the user must download the [Symantec VIP](https://vip.symantec.com/){: external} ![External link icon](../icons/launch-glyph.svg) app and obtain a credential ID to continue with the ordering process.
+    * For Symantec authentication, the user must download the [Symantec VIP](https://vip.symantec.com/){: external} app and obtain a credential ID to continue with the ordering process.
     * For phone-based authentication, you can proceed with the order, but your user must [set up their configuration](/docs/account?topic=account-external#setting-up-phone-based-authentication) before you can enable the option.
 5. Based on your selection, follow the prompts to review the price and terms before you place the order.
 6. Click **Order** to finalize your selection.

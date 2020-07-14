@@ -30,7 +30,7 @@ FAQs for your {{site.data.keyword.cloud}} account might include questions about 
 {: #create-account}
 {: faq}
 
-Go to [{{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com){: external} ![External link icon](../icons/launch-glyph.svg "External link icon"), and click **Create an {{site.data.keyword.Bluemix_notm}} account**.
+Go to [{{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com){: external}, and click **Create an {{site.data.keyword.Bluemix_notm}} account**.
 
 ## How do I resolve errors that occur when creating my account?
 {: #account-error}
@@ -43,7 +43,7 @@ If you are able to log in to an {{site.data.keyword.Bluemix_notm}} account, go t
 
    After you open the case, an email notification is sent to you. Follow the instructions for further communication.
 
-If you can't log in to an {{site.data.keyword.Bluemix_notm}} account, [create an account request](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: external} ![External link icon](../icons/launch-glyph.svg "External link icon").
+If you can't log in to an {{site.data.keyword.Bluemix_notm}} account, [create an account request](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: external}.
 
 ## How do I update my credit card?
 {: #updatepayment}
@@ -78,13 +78,13 @@ Yes, the following options are available depending on your account type:
 
 * You can convert your trial account to a Lite account by providing the email address that's associated with your IBMid at https://cloud.ibm.com/registration/startUpgradeToLite.
 * If you have a feature code from an online course or educational event, you can use it to convert your Lite account to a trial account. Go to the [Account settings](https://{DomainName}/account/settings){: external} page in the console to apply the code to your account.
-* To convert your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/catalog?contactmodule){: external}.
+* To convert your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://cloud.ibm.com/catalog?contactmodule){: external}.
 
 ## Can I sign up for a free trial?
 {: #freetrial}
 {: faq}
 
-{{site.data.keyword.Bluemix_notm}} trial accounts are available for faculty and students at accredited academic institutions. To qualify for a trial account, go to [Harness the Power of IBM ![External link icon](../icons/launch-glyph.svg)](https://ibm.biz/academic){: external} and validate your institution credentials. Unlike Lite accounts, trial accounts expire after 30 days.
+{{site.data.keyword.Bluemix_notm}} trial accounts are available for faculty and students at accredited academic institutions. To qualify for a trial account, go to [Harness the Power of IBM](https://ibm.biz/academic){: external} and validate your institution credentials. Unlike Lite accounts, trial accounts expire after 30 days.
 
 ## How do I cancel my account?
 {: #cancelaccount}
@@ -102,7 +102,7 @@ If you do decide to leave, how you cancel your account depends on your account t
 {: #slid}
 {: faq}
 
-Yes, you can use your SoftLayer ID to log in to the console. Go to the [login page](https://cloud.ibm.com/login){: external} ![External link icon](../icons/launch-glyph.svg "External link icon"), and select **SoftLayer ID** from the **ID** list.  
+Yes, you can use your SoftLayer ID to log in to the console. Go to the [login page](https://cloud.ibm.com/login){: external}, and select **SoftLayer ID** from the **ID** list.  
 
 ## What is Cloud Foundry?
 {: #cloud-foundry}
@@ -190,7 +190,7 @@ To reset your VPN password, complete the following steps:
 {: #remove-pi}
 {: faq}
 
-To understand how IBM handles your personal information, see the [IBM Privacy Statement ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/privacy/){: external}. In the Your Rights section, review the information about what you can request to remove. Click the link in the section to submit a request to remove your personal information.
+To understand how IBM handles your personal information, see the [IBM Privacy Statement](https://www.ibm.com/privacy/){: external}. In the Your Rights section, review the information about what you can request to remove. Click the link in the section to submit a request to remove your personal information.
 
 ## Why is my account deactivated?
 {: #account-deactivated}
@@ -271,7 +271,7 @@ The language that is used is based on your web browser settings. To view content
 
 When you register users for {{site.data.keyword.Bluemix_notm}}, you must register each user individually. {{site.data.keyword.Bluemix_notm}} doesn't support batch registration of users.
 
-Go to [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: external} ![External link icon](../icons/launch-glyph.svg "External link icon"), and click **Create an {{site.data.keyword.Bluemix_notm}} account**. Then, complete the account registration form for each individual user.
+Go to [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: external}, and click **Create an {{site.data.keyword.Bluemix_notm}} account**. Then, complete the account registration form for each individual user.
 
 ## What are tags?
 {: #know-about-tags}
@@ -307,6 +307,6 @@ You can't edit the name of a tag. To rename a tag, remove it and reassign the re
 {: #deleteaccount}
 {: faq}
 
-Contact [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg)](https://{DomainName}/unifiedsupport/supportcenter){: external} to open a support case and request to delete your account. If you have data that is associated with your old account that you want to move to a new account, include this information in your email.
+Contact [{{site.data.keyword.Bluemix_notm}} Support](https://{DomainName}/unifiedsupport/supportcenter){: external} to open a support case and request to delete your account. If you have data that is associated with your old account that you want to move to a new account, include this information in your email.
 
 Data in deleted accounts is not recoverable.

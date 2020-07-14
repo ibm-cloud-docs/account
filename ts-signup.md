@@ -33,7 +33,7 @@ When you log in to {{site.data.keyword.Bluemix_notm}}, the following message is 
 
 `You have reached this page because your authentication was successful, however, this IBMid is not associated with any {{site.data.keyword.Bluemix_notm}} accounts.`
 
-You logged in from the [{{site.data.keyword.Bluemix_notm}} console](https://{DomainName}){: external} ![External link icon](../icons/launch-glyph.svg "External link icon") with a valid IBMid, but you don't have an {{site.data.keyword.Bluemix_notm}} account.
+You logged in from the [{{site.data.keyword.Bluemix_notm}} console](https://{DomainName}){: external}  with a valid IBMid, but you don't have an {{site.data.keyword.Bluemix_notm}} account.
 {: tsCauses}
 
 Create an {{site.data.keyword.Bluemix_notm}} account by following the sign-up process.
