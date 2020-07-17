@@ -92,7 +92,7 @@ Then, one of the following two options:
 * Administrator or Editor role for the Enterprise account management service for the entire enterprise
 * Administrator or Editor role on the current and target account group 
 
-For details about the actions users can take for each role, see [Actions and roles for account management services](/docs/iam?topic=iam-account-services#account-management-actions-roles).
+For details about the actions users can take for each role, see [Actions and roles for account management services](/docs/account?topic=account-account-services#account-management-actions-roles).
 
 ## Assigning access in the console
 {: #enterprise-access-console}
@@ -111,7 +111,7 @@ You can set the target of the policy to be for the entire enterprise, a specific
 7. (Optional) Repeat steps to add additional access. 
 8. Click **Assign** to assign all added access. 
 
-For more information about roles and actions to assign access in an enterprise account, see [Assigning access to account management service](https://cloud.ibm.com/docs/iam?topic=iam-account-services#enterprise-account-management).
+For more information about roles and actions to assign access in an enterprise account, see [Assigning access to account management service](/docs/account?topic=account-account-services#enterprise-account-management).
 
 ## Assigning access by using the CLI
 {: #enterprise-cli-policy}

@@ -115,7 +115,7 @@ To assign a new access policy, complete the following steps:
 2. From the row for the user that you want to assign access, select the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, and click **Assign access**.
 3. Click **Add** for each access group that you want the users to belong to.
 4. (Optional) If you want to assign additional access to Cloud Foundry roles, classic infrastructure permissions, individual IAM services, or account management services, expand the Assign users additional access section.
-5. Select any combination of roles or permissions to define the scope of access, and click **Add**. For more information, see [Cloud IAM roles](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
+5. Select any combination of roles or permissions to define the scope of access, and click **Add**. For more information, see [Cloud IAM roles](/docs/account?topic=account-userroles#iamusermanrol).
 7. Click **Assign** to assign all added access to the selected user. 
     
 Assign the viewer role or higher to the resource group that contains the resource to ensure that the user can access the resource from their list of resources.

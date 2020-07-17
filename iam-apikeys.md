@@ -50,7 +50,7 @@ In addition to your {{site.data.keyword.cloud_notm}} API keys, a couple of other
 * Classic infrastructure API keys
 * Service-specific API keys
 
-You can also use API keys that are associated with service IDs that you create. Service IDs are used to connect an application inside or outside of {{site.data.keyword.Bluemix_notm}} to an {{site.data.keyword.Bluemix_notm}} service. Service ID API keys inherit all access that is assigned to the specific service ID. For more information about creating API keys associated with a service ID, see [Managing service ID API keys](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys).
+You can also use API keys that are associated with service IDs that you create. Service IDs are used to connect an application inside or outside of {{site.data.keyword.Bluemix_notm}} to an {{site.data.keyword.Bluemix_notm}} service. Service ID API keys inherit all access that is assigned to the specific service ID. For more information about creating API keys associated with a service ID, see [Managing service ID API keys](/docs/account?topic=account-serviceidapikeys#serviceidapikeys).
 
 [Classic infrastructure API keys](/docs/account?topic=account-classic_keys) are used to call the APIs for classic infrastructure services. You can create only one classic infrastructure API key at a time. You can create a classic infrastructure API key for yourself from the API keys page or the User details page.
 
