@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-06-09"
+lastupdated: "2020-07-24"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources 
 
@@ -95,7 +95,7 @@ A logical way to assign access to your resource groups and the included resource
 
 For the Auditor-Group, assign two access policies that grant viewer access to the `CustApp-Test` and the `CustApp-Prod` resources and resource groups. For the Developer-Group, assign two access policies that grant editor access to the `CustApp-Dev` and `CustApp-Test` resources and resource groups. For the Admin-Group, assign three access policies that grant administrator access to all three `CustApp` resource groups and their resources.
 
-You can assign administrator access to everything in an account by creating an access group and assigning two policies to it. To create the first policy, use the **IAM services** option, and select **All Identity and Access enabled services** in **All resource groups** with the Administrator platform role, Manager service role, Administrator resource group access role assigned. To create the second policy, use the **Account Management** option, and select **All Account Management Services** with the administrator role assigned.
+You can assign administrator access to all IAM-enabled resources in an account by creating an access group and assigning it two policies. To create the first policy, use the **IAM services** option, and select **All Identity and Access enabled services** in the **Account** with the Administrator platform role and Manager service role assigned. To create the second policy, use the **IAM services** option, and select **No service access** in **All resource groups** with the administrator role assigned. This second policy provide access to view and manage all resource groups in the account.
 {: tip}
 
 ### Sample access policies
