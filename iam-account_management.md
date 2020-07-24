@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2020
 
-lastupdated: "2020-07-01"
+lastupdated: "2020-07-24"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, role management service, catalog management service
 
@@ -39,7 +39,7 @@ To assign access to one or all account management services, complete the followi
 5. Select any combination of roles or permissions to define the scope of access, and click **Add**.
 6. Click **Assign**. 
 
-To grant another user full access to the account for the purposes of managing user access and all account resources, you must assign two policies. One policy that gives the user access to all resources in the account by selecting **All Identity and Access enabled services** with the **Administrator** and **Manager** role assigned. And, one policy that gives the user access to all account management services in the account by selecting **All account management services** with the **Administrator** role assigned.
+To grant another user full access to the account for the purposes of managing user access and all IAM-enabled account resources, you must assign two policies. To create the first policy, use the **IAM services** option, and select **All Identity and Access enabled services** in the **Account** with the Administrator platform role and Manager service role assigned. To create the second policy, use the **IAM services** option, and select **No service access** in **All resource groups** with the administrator role assigned. This second policy provide access to view and manage all resource groups in the account.
 {: tip}
 
 ### Using the CLI to assign access
