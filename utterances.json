@@ -7,7 +7,7 @@
       "create account",
       "create account for a client",
       "how to created account",  
-	  "would like an account",	
+      "would like an account",	
       "create account on IBM Cloud"
     ],
     "account-error": [
@@ -55,15 +55,15 @@
       "Cloud Foundry regions",
       "change region",
       "change location",
-	  "change my account location",	
-	  "how to change the lite plan location",	
+      "change my account location",	
+      "how to change the lite plan location",	
       "change default region",
       "How to change account region",
       "to change my region",
       "where do i change the regon",
       "region change",
       "can i change my region",
-	  "update my location",	
+      "update my location",	
       "update my region"
     ],
     "whatisliteplan": [
@@ -75,7 +75,7 @@
       "how much does a lite plan cost",
       "do I have to pay for a lite plan",
       "Is a lite plan free",
-	  "does this free account expire",
+      "does this free account expire",
       "I want to know about lite plans",
       "Tell me more about lite plans",
       "whats the lite plan",
@@ -133,7 +133,7 @@
       "want to change my account for a Subscription account",  
       "upgrade to a paid account",
       "change plan",
-	  "Upgrade to Premium",	
+      "Upgrade to Premium",	
       "upgrade lite account",
       "switch my account type",
       "Upgrade to subscription",
@@ -143,14 +143,14 @@
       "can I convert my account",
       "convert account",
       "convert trial",
-	  "convert this account",	
+      "convert this account",	
       "convert Lite account",
       "convert Pay-As-You-Go account",
       "upgrade to lite",
-	  "go from a Trial account to a Lite account",
-	  "convert my account to a lite account",	
-	  "convert my trial account to Lite",
-	  "convert Pay-As-You-Go account to a Subscription account",
+      "go from a Trial account to a Lite account",
+      "convert my account to a lite account",	
+      "convert my trial account to Lite",
+      "convert Pay-As-You-Go account to a Subscription account",
       "upgrade from trial to lite",
       "upgrading my trial account to lite"
     ],
@@ -205,25 +205,37 @@
       "suspend this account",
       "cancel my account with you",
       "how to deactivate the account",
-	  "cancel our account",	
-	  "cancel our account because we don't use it",	
+      "cancel our account",	
+      "cancel our account because we don't use it",	
       "wanted to deactivate my account how would i go about that", 
-	  "want to discontinue my cloud account",
+      "want to discontinue my cloud account",
+      "want to deactivate my account",
+      "CANCEL MY ACCOUNT PLEASE", 
       "unsubscribe from this account",
       "unsubscribe my ibm cloud account", 
       "deactivate account"  
     ],
     "deleteaccount": [
       "delete my account",
+      "account delete",
       "Where do I delete my account",
       "I want to delete my account",
       "Tell me how to delete my account.",
       "close my IBM Cloud account",
       "terminate my cloud account",
-	  "not able to delete my ibm account",	
+      "close account",
+      "delete account",
+      "account closure",
+      "like to unsubscribe your ibm account",    
+      "not able to delete my ibm accout",
+      "delete or sunset my account, how can I do that",
+      "Delete my IBM account",
+      "would like to terminate my account",
+      "would like to close my cloud account",
+      "please close this account with immediate effect",    
       "remove my account",
       "don't need this account. how can I delete it",
-	  "delete or deactivate my IBM cloud account",
+      "delete or deactivate my IBM cloud account",
       "close this account"
     ],
     "remove-pi": [
@@ -255,7 +267,7 @@
       "Contact support",
       "I want to contact IBM support",
       "talk to tech support",
-	  "customer ssupport",	
+      "customer ssupport",	
       "connect me with support"
     ],
     "freetrial": [
@@ -340,19 +352,19 @@
       "change email",
       "Change Name in profile",
       "change my last name in my account",
-	  "update my profile for my cloud account",
-	  "update my account profile",
-	  "change the account profile details",	
+      "update my profile for my cloud account",
+      "update my account profile",
+      "change the account profile details",	
       "update phone number",
       "edit personal information"
     ],
      "switch-account-lang": [
       "change language to english",
-	  "where to set the langage", 
+      "where to set the langage", 
       "change account language",
       "switch language",
       "change language",
-	  "How can I change the language",	 
+      "How can I change the language",	 
       "change my language setting",
       "change lauguage back to English",
       "update language setting",
@@ -363,8 +375,8 @@
       "configure language",
       "can i change the language settings",
       "how can i change my language settings",
-	  "language setting",
-	  "where is the language setting",	 
+      "language setting",
+      "where is the language setting",	 
       "How do i change the language of page",
       "change the language"
     ],
@@ -389,7 +401,7 @@
       "change account owners",
       "switch owner",
       "change owner",
-	  "transfer ownership of my account",
+      "transfer ownership of my account",
       "transfer account ownership",
       "give my account to someone else",
       "ownership transfer",
@@ -408,6 +420,7 @@
     "know-about-tags": [
       "What is a tag",
       "How do I use tags",
+      "tags used in Cloud",	    
       "How are tags used",
       "What are tags"
     ],
@@ -415,8 +428,8 @@
       "Who can see tags in an account",
       "Who is allowed to view the tags in an account",
       "view tags in account",
-	  "list tags",
-	  "lising account tags",	
+      "list tags",
+      "lising account tags",	
       "Can I see the account tags"
     ],
     "permissions-add-remove-tags": [
@@ -438,8 +451,8 @@
     "rename-tag": [
       "rename a tag",
       "change the name of a tag",
-	  "updating a tag name",
-	"changing name of a tag",
+      "updating a tag name",
+      "changing name of a tag",
       "edit tag name"
     ],
     "nosecondreg": [
@@ -457,10 +470,10 @@
       "unable to create a new organization",
       "cannot create new organization",
       "problems creating a new org",
-	  "I can not create org",
-	  "can not create organization",	
-	  "can't create an org",
-	  "unable to create orgs",
+      "I can not create org",
+      "can not create organization",	
+      "can't create an org",
+      "unable to create orgs",
       "having trouble creating a new organization",
       "can't make a new organization"
     ],
@@ -486,10 +499,10 @@
       "The app wasn't created. Your account is inactive because it was canceled or suspended",
       "inactive account",
       "account not active",
-	  "getting an error message BXNUI0096E",
-	  "error BXNUI0096E when trying to create an app",
-	  "unable to access my account it's saying that account is inactive",
-	  "my account is inactive and suspended",
+      "getting an error message BXNUI0096E",
+      "error BXNUI0096E when trying to create an app",
+      "unable to access my account it's saying that account is inactive",
+      "my account is inactive and suspended",
       "account is not activated"
     ],
     "ts_adduser": [
@@ -526,7 +539,9 @@
       "Can't view all orgs",
       "Administrators unable to see organizations in console",
       "admin can't view organizations",
+      "unable to view my orgs",	    
       "how can I manage all of my orgs",
+      "where can I see orgs",	    
       "use the console to see all of my orgs"
     ],
     "ts_addcc": [
@@ -548,7 +563,7 @@
       "wrong password",
       "can't use my password",
       "password not working",
-	  "password that I entered is not correct",
+      "password that I entered is not correct",
       "The password that you entered is not correct"
     ],
     "ts_old_username": [
@@ -583,8 +598,8 @@
       "login not completing",
       "login isn't completing",
       "didn't my IBMid login finish",
-	  "internal error to cloud when trying to login",
-	  "error with IBMid login",	
+      "internal error to cloud when trying to login",
+      "error with IBMid login",	
       "can't complete login",
       "unable to login to my account",
       "log in doesn't work"
@@ -721,7 +736,7 @@
       "cant upgrade account",
       "not able to upgrade my account",
       "having trouble updating my account", 
-	  "cannot upgrade this account",	
+      "cannot upgrade this account",	
       "account upgrade issue",
       "cannot upgrade my account", 
       "trying to upgrade my account but it's getting declined",
@@ -730,15 +745,15 @@
    ],
    "resource-group": [
     "what is a resource group",
-	"what are iam resource groups",   
+    "what are iam resource groups",   
     "what's resource groups?",
     "what do resource groups do",
     "tell me about resource groups",
-	"can I get a resource group",
-	"don't have a resource goup",  
-	"create a resource group",
-	"manage a resource group",
-	"creating resource groups",   
+    "can I get a resource group",
+    "don't have a resource goup",  
+    "create a resource group",
+    "manage a resource group",
+    "creating resource groups",   
     "learn about resource groups",
     "how do I use a resource group"
 ],
@@ -749,7 +764,7 @@
     "adding a resource group gives an error",
     "tring to add a second resource group",
     "I'm trying to create a new Resource Group",
-	"creating a group of resources does not work",  
+    "creating a group of resources does not work",  
     "can't create a resource group",
     "issue adding a resource group",
     "trying to create a new Resource Group it say's limit reached"
@@ -813,6 +828,7 @@
     "tag addition to resource group",
     "add or remove a tag from resource group",
     "removal of resource group tags",
+    "tagging a resource group", 	  
     "adding a tag for a resource group"
   ],
    "ts_service_broker": [     
@@ -944,13 +960,14 @@
       "whatisiam":[
         "what's IAM",
         "what is identity and access",
-		"more information regarding IAM",
-		"additional infor about IAM",  
+	"more information regarding IAM",
+	"additional infor about IAM",  
         "what does IAM mean",
         "describe IAM",
-		"why IAM required",
-		"why use IAM",
-		"what is iam for",  
+	"why IAM required",
+	"why use IAM",
+	"what is iam for",  
+	"getting started with IAM",      
         "understand what IAM is"
         ],
       "iam-enabled":[
@@ -1000,13 +1017,13 @@
       "resource-groups":[
         "why use resource groups",
         "why use access groups",
-		"Tell me about Access Group",  
+	"Tell me about Access Group",  
         "benefit of a resource group",
         "benefit of an access group",
-		"use resource groups and access groups", 
-		"difference between access group and resource group",
-		"what's an access group",
-		"difference with access groups and resource groups", 
+	"use resource groups and access groups", 
+	"difference between access group and resource group",
+	"what's an access group",
+	"difference with access groups and resource groups", 
         "benefits of access groups"  
         ],
       "resources":[
@@ -1118,8 +1135,8 @@
          "assign access to a user when I invite them to the account?",
          "give access to Users immediately",
          "when do I have to give users access",
-		 "invite more users to my account",
-		 "invite additional users to the account",
+	 "invite more users to my account",
+	 "invite additional users to the account",
          "do I assign access to a new users immediately",
          "do I have to give a user access as soon as I add them to the account"
          ],
@@ -1152,7 +1169,7 @@
           "how many policies do I have",
           "total number of policies per account",
           "total of a specific type of policies per account",
-        "limit for policies within an account"
+          "limit for policies within an account"
         ],	  
       "troubleshoot-serviceaccess":[   
          "can't access a resource from the Resource list page",
@@ -1205,12 +1222,13 @@
         "trying to update a service id and getting an error",
         "not access a service id"
       ],
-	  "ts_email_notifications":[
-	  	"not receiving email notifications",
-		"issues with receiving email notifications",
-		"issue receiving email notification",
-		"not getting email notifications",
-		"no longer get email notification" 
+     "ts_email_notifications":[
+  	"not receiving email notifications",
+	"issues with receiving email notifications",
+	"issue receiving email notification",
+	"where are my email notifications",     
+	"not getting email notifications",
+	"no longer get email notification" 
 	 ]
  
 }
