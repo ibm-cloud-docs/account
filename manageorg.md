@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-06-08"
+lastupdated: "2020-07-27"
 
 keywords: update orgs, update spaces, quotas, Cloud Foundry orgs, domains
 
@@ -39,6 +39,8 @@ You can view the resources of only one org at a time. If you are a member of mul
     
     You can delete spaces but not orgs.
     {: note}
+    
+ * To repurpose an org, delete all spaces within the org and then rename it. Although you cannot delete orgs, you can simplify the list on the Cloud Foundry Orgs page by clearing and then re-using obsolete orgs rather than creating new ones.
 
   * To edit user roles at the org level, click the Actions icon ![Action icon](../icons/action-menu-icon.svg), and select **Users**.
     {: #listmembers}
