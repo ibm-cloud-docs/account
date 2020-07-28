@@ -82,7 +82,7 @@ There is a [limit](/docs/account?topic=account-known-issues#iam_limits) on the t
 * Use access groups to organize users and service IDs that all require the same level of access. This way, you can assign a single policy rather than an individual policy for each user or service ID. This way, you assign or revoke access by adding or removing users from the access group.
 * Use the principle of least privilege and assign only the access that is required. This can help you ensure that users in your account are limited to only the actions that you want to allow. It also reduces the time that you might need to spend later deleting or reducing assigned access. 
 
-## What is a good access group strategy?
+## What makes a good access group strategy?
 {: #accessgroup_strategy}
 
 An access group is an organization of users and service IDs in a grouping to which the same IAM access can be granted. All identities in a single access group inherit the same access.
