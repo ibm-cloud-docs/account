@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2020
 
-lastupdated: "2020-07-24"
+lastupdated: "2020-07-30"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, role management service, catalog management service
 
@@ -21,7 +21,7 @@ subcollection: account
 # Assigning access to account management services
 {: #account-services}
 
-As the account owner or the administrator of an account management service, you can grant users access to invite users to the account, track billing and usage, and work with support cases. Users with account management access policies ca n also manage service IDs, access policies, catalog entries, and access groups.
+As the account owner or the administrator of an account management service, you can grant users access to invite users to the account, track billing and usage, and work with support cases. Users with account management access policies can also manage service IDs, access policies, catalog entries, and access groups.
 {:shortdesc}
 
 ## Creating policies for account management service access
