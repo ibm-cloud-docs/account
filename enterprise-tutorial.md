@@ -9,8 +9,7 @@ keywords: enterprise, enterprise account, create enterprise, set up enterprise, 
 subcollection: account
 
 content-type: tutorial
-account-plan: subscription
-completion-time: 15m
+completion-time: 10m
 
 ---
 
@@ -25,7 +24,8 @@ completion-time: 15m
 
 # Setting up an enterprise
 {: #enterprise-tutorial}
-{: tutorial}
+{: toc-content-type="tutorial"}
+{: toc-completion-time="10m"}
 
 This tutorial walks you through how to set up an enterprise by department so you can manage and track usage costs for multiple {{site.data.keyword.Bluemix}} accounts. By completing this tutorial, you learn how to create an enterprise, add accounts and organize them in account groups, invite users, and explore subscriptions.
 {:shortdesc}
@@ -211,6 +211,5 @@ Data is shown in the enterprise account only for usage that is incurred by accou
 
 ## Next steps
 {: #enterprise-next-steps}
-{: step-next}
 
 Now that you learned the basics of how to set up an enterprise, you can continue to add accounts, account groups, and users as your teams and cloud workloads grow. For more information, see [Managing your enterprise](/docs/account?topic=account-enterprise-settings).
