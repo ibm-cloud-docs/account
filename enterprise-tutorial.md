@@ -44,7 +44,7 @@ Verify that you have the required access in a Subscription account, which serves
 Creating an enterprise from an account and importing existing accounts cannot be undone. This tutorial is provided as an example of the steps you can follow to set up an enterprise by department, but you should carefully plan your enterprise structure around your organization's needs.
 {:important}
 
-## Step 1. Create the enterprise
+## Create the enterprise
 {: #create_enterprise_tutorial}
 {: step}
 
@@ -59,7 +59,7 @@ After your enterprise is created, you are directed to the enterprise dashboard. 
   * An enterprise account with the same name as your enterprise. This account is used for enterprise management.
   * The account that you created the enterprise from. Users can continue working with resources in the account unaffected.
 
-## Step 2. Create an enterprise structure with account groups
+## Create an enterprise structure with account groups
 {: #account_groups_tutorial}
 {: step}
 
@@ -74,7 +74,7 @@ Use account groups to [organize related accounts](/docs/account?topic=account-en
 
 Repeat the steps to create the Sales, Development, Design, and Engineering account groups. When you create the Design and Engineering account groups, make sure that you add Development as the parent account group.
 
-## Step 3. Import existing accounts
+## Import existing accounts
 {: #existing_accounts_tutorial}
 {: step}
 
@@ -98,7 +98,7 @@ Complete the following steps to import the example UX-UI account to the Design a
 
 Repeat the steps to import more accounts.
 
-## Step 4. Create new accounts
+## Create new accounts
 {: #create-accounts_tutorial}
 {: step}
 
@@ -127,7 +127,7 @@ Repeat the steps to create more accounts. As an example, the Example Corp enterp
 | Enablement | Sales |
 {:caption="Table 1. Child account and parent account group hierarchy" caption-side="top"}
 
-## Step 5. Explore subscriptions
+## Explore subscriptions
 {: #explore-sub_tutorial}
 {: step}
 
@@ -138,7 +138,7 @@ You can explore subscriptions in the enterprise from the enterprise dashboard. A
 
    In the Platform subscription section, you can view the subscription start date, end date, starting credit and available credit. To add more credit, you can purchase additional subscriptions and apply the subscription code.
 
-## Step 6. Invite users to manage your enterprise
+## Invite users to manage your enterprise
 {: #invite-enterprise-users-tutorial}
 {: step}
 
@@ -167,7 +167,7 @@ With the Usage Report Viewer role, the financial officer can see usage from all 
 1. Select the Billing service, and then select the Administrator role.
 1. Click **Assign**.
 
-## Step 7. Assign users in child accounts access to create resources
+## Assign users in child accounts access to create resources
 {: #users_create_resources}
 {: step}
 
@@ -191,7 +191,7 @@ Complete the following steps to assign the required access:
 7. Click **Add**.
 8. Review the access summary, and click **Assign**. 
 
-## Step 8. View usage from all accounts
+## View usage from all accounts
 {: #usage_tutorial}
 {: step}
 
