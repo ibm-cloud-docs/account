@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-07-08"
+  years: 2018, 2020
+lastupdated: "2020-08-03"
 
-keywords: service endpoint, private network endpoint, connect service to private network
+keywords: service endpoint, private network endpoint, connect service to private network, cloud service endpoints
 
 subcollection: account
 
@@ -32,6 +32,6 @@ The following figure shows how traffic is routed through {{site.data.keyword.clo
 
 ![IBM Cloud Service Endpoint](images/CSE.png "Traffic being routed through a service endpoint"){: caption="Figure 1. Traffic routed through a service endpoint" caption-side="bottom"}
 
-To access {{site.data.keyword.cloud_notm}} service endpoints, you must enable virtual routing and forwarding (VRF) in your account.  Then, you can enable the use of service endpoints. After both options are enabled, you can start creating services that support the use of VRF and service endpoints from the catalog. For more information, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint).
+If you are using classic infrastructure, you must enable virtual routing and forwarding (VRF) in your account first. Then, you can enable the use of service endpoints. After both options are enabled, you can start creating services that support the use of VRF and service endpoints from the catalog. If you are using {{site.data.keyword.vpc_full}}, then you don't need to enable VRF for your cloud account. For more information, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint).
 
 
