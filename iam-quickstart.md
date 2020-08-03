@@ -1,25 +1,32 @@
 ---
 
 copyright:
-
-  years: 2017, 2020
-
-lastupdated: "2020-06-09"
+   years: 2020
+lastupdated: "2020-07-31"
 
 keywords: get started with IAM, getting started with Identity and Access Management tutorial, IAM tutorial, IAM quick start, resource group, access group, access policy, inviting users
 
 subcollection: account
 
+content-type: tutorial
+completion-time: 10m
+
 ---
 
 {:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
+{:screen: .screen}  
+{:codeblock: .codeblock}  
+{:pre: .pre}
 {:tip: .tip}
 {:note: .note}
+{:external: target="_blank" .external}
+{:step: data-tutorial-type='step'}
+{:step-next: data-tutorial-type='step-next'}
 
 # Setting up user access
-{: #getstarted}
+{: #access-getstarted}
+{: toc-content-type="tutorial"} 
+{: toc-completion-time="10m"}
 
 Get up and running quickly with {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) by setting up access groups for quick access assignments, inviting users to your account, and managing their access.
 {:shortdesc}
@@ -36,13 +43,15 @@ If you are new to using IAM, check out the following documentation to learn more
 * [IAM access](/docs/account?topic=account-userroles) gives a more in-depth review of how access management works by using access policies.
 
 
-## Step 1. Create access groups
-{: #step2}
+## Create access groups
+{: #create-access-group}
+{: step}
 
 To streamline the process of assigning access to users in your account, you can create an access group. Access groups are a way to organize users and service IDs so that you can easily assign access by adding one or more policies for the entire group. Then, you can add or remove users and service IDs as needed instead of assigning individual access to each user.
 
 ### Set up your groups
 {: #group_setup}
+
 
 To create an access group, complete the following steps:
 
@@ -74,8 +83,9 @@ After you create your access groups, you can assign access to all members of the
 4. Click **Add**. Repeat as needed to add more access.
 5. Click **Assign** to assign all added access to your access group. 
 
-## Step 2. Invite users 
-{: #step1}
+## Invite users 
+{: #invite-user}
+{: step}
 
 You can invite one or multiple users in a single invite. If you invite multiple users in one invitation, the same access is assigned to each user. However, you can invite users to your account with no access, and assign them access later.
 
@@ -103,8 +113,9 @@ For more information, see [Inviting users to an account](/docs/account?topic=acc
 
 ## Step 3. Manage access for existing users
 {: #user_access_manage}
+{: step}
 
-After you invite users, you might want to assign more access or edit the existing access to ensure all members of your account have the correct level of access.
+After you invite users, you might want to assign more access or edit the existing access to ensure that all members of your account have the correct level of access.
 
 ### Assigning new access
 {: #new_access}
@@ -135,6 +146,6 @@ You can update existing access by editing the assigned roles for a user.
 
 
 ## Next steps
-{: #next}
+{: #iam-user-next}
 
-Learn what else you can do with {{site.data.keyword.Bluemix_notm}} IAM by checking out the [Cloud IAM features](/docs/account?topic=account-iamoverview#features) list.
+Learn what else you can do with {{site.data.keyword.Bluemix_notm}} IAM by checking out the [features list](/docs/account?topic=account-iamoverview#features).
