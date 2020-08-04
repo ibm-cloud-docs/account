@@ -20,7 +20,6 @@ completion-time: 10m
 {:note: .note}
 {:tutorial: .tutorial}
 {:step: data-tutorial-type='step'}
-{:step-next: data-tutorial-type='step-next'}
 
 # Setting up an enterprise
 {: #enterprise-tutorial}
