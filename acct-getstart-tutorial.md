@@ -2,11 +2,14 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-07-10"
+lastupdated: "2020-08-04"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings
 
 subcollection: account
+
+content-type: tutorial
+completion-time: 1h
 
 ---
 
@@ -16,9 +19,12 @@ subcollection: account
 {:tip: .tip}
 {:note: .note}
 {:external: target="_blank" .external}
+{:step: data-tutorial-type='step'}
 
 # Setting up your {{site.data.keyword.cloud_notm}} account
 {: #account-getting-started}
+{: toc-content-type="tutorial"}
+{: toc-completion-time="1h"}
 
 This tutorial walks you through the steps for setting up an account in {{site.data.keyword.cloud}}. By completing this tutorial, you learn how to set up account authentication, manage your account settings, effectively organize resources in your account, and control access to resources.
 {:shortdesc}
@@ -26,8 +32,9 @@ This tutorial walks you through the steps for setting up an account in {{site.da
 This tutorial focuses on how to set up a Pay-As-You-Go account. If you're looking for details about setting up accounts in an enterprise hierarchy, see [Setting up an enterprise](/docs/account?topic=account-enterprise-tutorial).
 {: tip}
 
-## Step 1. Create your account
+## Create your account
 {: #account-gs-createlite}
+{: step}
 
 First, create a Lite account by using your existing IBMid or a new IBMid. If your company is registered to use a federated ID for single sign-on (SSO), you can use your federated ID instead.
 
@@ -55,10 +62,11 @@ A federated ID is an ID within a company's domain that is registered with {{site
 
 {{site.data.keyword.IBM_notm}} uses the Security Assertion Markup Language 2.0 (SAML 2.0) for this identity federation. SAML 2.0 is a standard version for exchanging authentication data between security domains. It's an XML-based protocol that uses a security token that contains assertions to pass information between the organizations "Identity Provider", and the "{{site.data.keyword.IBM_notm}} Rely Party (RP)", otherwise known as the Service Provider.
 
-For information about how to register your company for a federated ID, see the [IBMid Enterprise Federation Adoption Guide {: external}. An {{site.data.keyword.IBM_notm}} sponsor, such as an offering advocate or client advocate, is required when you request to register federated IDs.
+For information about how to register your company for a federated ID, see the [IBMid Enterprise Federation Adoption Guide](https://ibm.box.com/v/IBMid-Federation-Guide){: external}. An {{site.data.keyword.IBM_notm}} sponsor, such as an offering advocate or client advocate, is required when you request to register federated IDs.
 
-## Step 2. Upgrade to a Pay-As-You-Go account
+## Upgrade to a Pay-As-You-Go account
 {: #account-gs-upgrade}
+{: step}
 
 Upgrade your Lite account to a Pay-As-You-Go account to access the full {{site.data.keyword.cloud_notm}} catalog. 
 
@@ -66,8 +74,9 @@ Upgrade your Lite account to a Pay-As-You-Go account to access the full {{site.d
 2. Select **Account settings**, and click **Add credit card**.
 1. Enter your credit card information.
 
-## Step 3. Set up account authentication
+## Set up account authentication
 {: #account-gs-mfa}
+{: step}
 
 An the account owner, you can set up  multifactor authentication (MFA) for users in your account.  
 
@@ -94,8 +103,9 @@ After you enable MFA for your account, complete the following steps to set up a 
 6. Click **Continue** to enter your code.
 7. Enter your code and select **Verify**.
 
-## Step 4. Estimate your costs
+## Estimate your costs
 {: #account-gs-estimate}
+{: step}
 
 Complete the following steps to get an estimate of how much your usage might cost:
 
@@ -111,8 +121,9 @@ Complete the following steps to get an estimate of how much your usage might cos
   You can download a PDF of the estimate by clicking **Download PDF**.
   {: tip}
 
-## Step 5. Manage your invoices and payment methods
+## Manage your invoices and payment methods
 {: #account-gs-invoicepayment}
+{: step}
 
 Before you start working with resources in your account, familiarize yourself with where you can manage your payment method and access your invoices.
 
@@ -128,8 +139,9 @@ Before you start working with resources in your account, familiarize yourself wi
 * To access an invoice for an account that's billed in USD currency, go to **Manage** > **Billing and usage**, and select **Invoices**. 
 * To access an invoice for an account that's billed in non-USD currency, go to **Manage** > **Billing and usage**, and select **Invoices**. Then, click **{{site.data.keyword.IBM_notm}} Invoices**. 
 
-## Step 6. Set preferences for receiving notifications
+## Set preferences for receiving notifications
 {: #account-gs-notifications}
+{: step}
 
 Complete the following steps to set your preferences for receiving various types of notifications: 
 
@@ -139,8 +151,9 @@ Complete the following steps to set your preferences for receiving various types
    * Infrastructure notifications apply only to the account in which the preferences are set. By default, all infrastructure notifications are turned on. 
 2. To receive spending notifications, go to **Manage** > **Billing and usage** > **Spending notifications**. You receive notifications when you reach 80%, 90%, and 100% of the spending thresholds that you specify. 
 
-## Step 7. Create your resource groups
+## Create your resource groups
 {: #account-gs-resourcegroups}
+{: step}
 
 Resource groups provide a way for you to easily manage access to multiple resources and to view billage usage for a set of resources. With your Pay-As-You-Go account, you can create more resource groups in addition to the default resource group that's included when you first created your Lite account. 
 
@@ -150,8 +163,9 @@ Resource groups provide a way for you to easily manage access to multiple resour
 
 See [What makes a good resource group strategy?](/docs/account?topic=account-account_setup#resource-group-strategy) for details about how to optimally organize resources in your resource groups. 
 
-## Step 8. Set up access
+## Set up access
 {: #account-gs-accessgroups}
+{: step}
 
 IAM access groups provide a way for you to quickly and easily assign access to multiple resources in your account at one time. 
 
@@ -174,8 +188,9 @@ IAM access groups provide a way for you to quickly and easily assign access to m
   
 See [What is a good access group strategy?](/docs/account?topic=account-account_setup#resource-group-strategy) for details about how to best set up your access groups. 
   
-## Step 9. Invite users to your account
+## Invite users to your account
 {: #account-gs-inviteusers}
+{: step}
 
 You're ready to invite users to your account and grant them access based on the resources they will work with and the tasks they'll perform. If you want users to create resources from the catalog and assign the resources to a resource group, the following access is required:
 
@@ -190,15 +205,15 @@ Complete the following steps:
 4. Add the user to one or more of the access groups that you created in the previous step. 
 5. Click **Invite**. 
 
-## Step 10. Explore your support options
+## Explore your support options
 {: #account-gs-supportcenter}
+{: step}
 
 You can use the Support Center to get help with any issues that you might encounter. To access the Support Center, click **Support** in the console menu bar. 
 
 * The "Help just for you" section features links to common tasks, troubleshooting, and FAQs specific to the resources in your account.
 * The "Featured FAQs" section provides FAQs related to platform tasks, for example, resetting your password, IAM, and upgrading your account.
 * The "Contact support" section provides the options for getting in touch with a support representative: start a live chat, contact by phone, or create a support case.
-
 
 
 
