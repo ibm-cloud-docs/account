@@ -4,7 +4,7 @@ copyright:
   years: 2020
 lastupdated: "2020-08-06"
 
-keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources
+keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users, Cloud Foundry orgs
 
 subcollection: account
 
@@ -20,7 +20,7 @@ subcollection: account
 # Known issues and limitations
 {: #known-issues}
 
-Known issues and limitations include not being able to restrict access to some products in the {{site.data.keyword.cloud}}  catalog and the maximum limits for creating {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) resources.
+Known issues and limitations include not being able to restrict access to some products in the {{site.data.keyword.cloud}} catalog, the maximum limits for creating {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) resources, and not being able to delete users from accounts that have too many Cloud Foundry orgs. 
 {:shortdesc}
 
 ## Catalog management settings don't apply to some {{site.data.keyword.IBM_notm}} products
@@ -77,7 +77,7 @@ A maximum of 1,000 policies and service to service authorizations within one acc
 
 If you need to check the number of policies in your account or request an increase in the account limit, see [Managing policy limits](/docs/account?topic=account-policy-limits).
 
-## Error deleting users in accounts with too many Cloud Foundry orgs
+## Deleting users in accounts with too many Cloud Foundry orgs
 {: #delete-user-error}
 
 Because of a known issue when the number of Cloud Foundry orgs associated with the account exceeds a threshold, the following error might occur when you delete a user from the account:
