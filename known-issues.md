@@ -26,7 +26,7 @@ Known issues and limitations include not being able to restrict access to some p
 ## Catalog management settings don't apply to some {{site.data.keyword.IBM_notm}} products
 {: #settings-noapply}
 
-Turning off {{site.data.keyword.cloud}} catalog visibility or excluding all {{site.data.keyword.IBM_notm}} products from the catalog or your private catalogs doesn't apply to the following products. Users in your account can still create instances of them by using an API or the CLI.
+Turning off {{site.data.keyword.cloud_notm}} catalog visibility or excluding all {{site.data.keyword.IBM}} products from the catalog or your private catalogs doesn't apply to the following products. Users in your account can still create instances of them by using an API or the CLI.
 
 * {{site.data.keyword.block_storage_is_short}}
 * {{site.data.keyword.vpx_full}}
