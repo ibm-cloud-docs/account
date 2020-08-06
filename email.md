@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2019-07-08"
+lastupdated: "2019-08-06"
 
 keywords: platform notifications, email notifications, IBM Cloud notifications, notification preferences, email preferences, user notifications, infrastructure notifications
 
@@ -80,7 +80,7 @@ The timing of the notification varies depending on whether the event is unplanne
 
 To set up subscription notifications for your users, complete the following steps:
 
-  1. In the console, go to **Manage > Account**, and select **Notifications**.
+  1. In the console, go to **Manage > Account**, and select **Subscriptions**.
   2. Select a service from the table.
   3. In the Subscribed column, select **Yes** for the user who wants to receive notifications.
 
