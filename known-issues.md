@@ -2,9 +2,9 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-07-27"
+lastupdated: "2020-08-06"
 
-keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog
+keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources
 
 subcollection: account
 
@@ -20,7 +20,7 @@ subcollection: account
 # Known issues and limitations
 {: #known-issues}
 
-Known issues related to managing your account and catalogs include not being able to restrict access to some {{site.data.keyword.IBM}} products. 
+Known issues and limitations include not being able to restrict access to some products in the {{site.data.keyword.cloud}}  catalog and the maximum limits for creating {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) resources.
 {:shortdesc}
 
 ## Catalog management settings don't apply to some {{site.data.keyword.IBM_notm}} products
@@ -57,7 +57,7 @@ Turning off {{site.data.keyword.cloud}} catalog visibility or excluding all {{si
 ## {{site.data.keyword.Bluemix_notm}} IAM limits
 {: #iam_limits}
 
-The following table lists the maximum limits for {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) resources. These limits apply to any user who can create {{site.data.keyword.Bluemix_notm}} IAM resources. If a limit is exceeded, you receive an exception and are not allowed to create any new resources beyond that limit.
+The following table lists the maximum limits for IAM resources. These limits apply to any user who can create IAM resources. If a limit is exceeded, you receive an exception and are not allowed to create any new resources beyond that limit.
 {:shortdesc}
 
 | Resource                               | Max  |
