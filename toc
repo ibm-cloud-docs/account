@@ -154,6 +154,8 @@ Managing your account, resources, and access
         catalog-custom-private.md
         catalog-enterprise-filters.md
 
+    
+
         {: .topicgroup}
         Managing software in your private catalogs
             catalog-add-private.md
@@ -163,7 +165,7 @@ Managing your account, resources, and access
         catalog-settings.md
         catalog-access-reqs.md
 
-    custom-dashboard.md
+    scope_dash.md
     profile.md
     contact_info.md
 
