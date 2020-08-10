@@ -253,6 +253,7 @@ Managing your account, resources, and access
         ts-add-cc.md
         ts-upgrade.md
         ts-email-issue.md
+        ts-dash-access.md
 
     {: .topicgroup}
     Troubleshooting enterprises
