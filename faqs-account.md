@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-06-30"
+lastupdated: "2020-08-10"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite
 
@@ -139,11 +139,6 @@ A Lite plan is a free quota-based service plan. You can use a service Lite plan 
 
 In a Lite account, your apps have up to 256 MB of instantaneous runtime memory. You can deploy apps until you use the available Lite account allowance. If you need more memory, upgrade to a billable account to get 512 MB of free instantaneous runtime memory and pay only for what you use over that limit. There's no limit to the number of apps you can build in a billable account.
 
-## How do I delete a service from my account?
-{: #accounts-service-removal}
-{: faq}
-
-If you want to delete a service, you can do so by going to the My resources page. Learn more in [Working with resources and services](/docs/account?topic=account-resources-faq#service-removal).
 
 ## What happens when my Lite plan instance reaches the monthly quota?
 {: #monthlyquota}
