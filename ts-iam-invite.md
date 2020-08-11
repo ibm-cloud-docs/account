@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-06-02"
+lastupdated: "2020-08-11"
 
 
 keywords: troubleshoot invite users, access to invite users, access to add users
@@ -38,3 +38,5 @@ You might not be assigned the correct access.
 
 To invite users and manage outstanding invitations, you must be an account owner, an organization manager, a user with an IAM access policy with Editor or higher role on the user management account management service, or you must have classic infrastructure permissions to add users.
 {: tsResolve}
+
+After you have the correct access, go to **Manage > Access (IAM)**, then select **Users**, and click **Invite users** to add users to the account.
