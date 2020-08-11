@@ -23,7 +23,7 @@ Managing your account, resources, and access
     enterprise-tutorial.md
     iam-quickstart.md
     {: .navgroup-end}
-    
+
     {: .navgroup id="howto"}
     {: .topicgroup}
     Securing your account
@@ -153,8 +153,7 @@ Managing your account, resources, and access
     Centrally managing products with private catalogs
         catalog-custom-private.md
         catalog-enterprise-filters.md
-
-    
+        catalog-audit-logs.md
 
         {: .topicgroup}
         Managing software in your private catalogs
