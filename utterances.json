@@ -160,15 +160,6 @@
       "keep using my existing services after I change my account type",
       "what happens to my existing instances after upgrading my account"
     ],
-    "updatepayment": [
-      "change credit card info",
-      "edit my credit card",
-      "update my credit card information",
-      "change my credit card",
-      "edit my payment options",
-      "change my payment options",
-      "update payment details"
-    ],
     "change-email-prefs": [
       "change email preferences",
       "email notifications",
@@ -210,6 +201,8 @@
       "wanted to deactivate my account how would i go about that", 
       "want to discontinue my cloud account",
       "want to deactivate my account",
+      "cancel",
+      "cancel subscription",	    
       "CANCEL MY ACCOUNT PLEASE", 
       "unsubscribe from this account",
       "unsubscribe my ibm cloud account", 
@@ -594,6 +587,8 @@
     "ts_login_ibmid": [
       "IBMid login won't go through",
       "can't log in with IBMId",
+      "can't login",
+      "unable to login",	    
       "logging in not complete",
       "login not completing",
       "login isn't completing",
