@@ -27,7 +27,7 @@ With audit logs you can follow the changes that have been made to your private c
 To view the audit logs, you need to be a manager of the account the catalog is in or have write access to the catalog. For write access, you need at least editor access on the catalog and the account. See [Assigning access to account management services](/docs/account?topic=account-account-services) for more information.
 
 
-## Managing the audit logs table
+## Viewing changes
 {: #audit-logs-table}
 
 1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Catalogs** from the console menu bar.
