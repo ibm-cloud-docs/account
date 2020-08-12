@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-07-17"
+lastupdated: "2020-08-12"
 
 keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network, services that support service endpoints, service endpoint support, using service endpoints
 
@@ -22,7 +22,7 @@ subcollection: account
 When using the classic infrastructure, you connect to resources in your account over the {{site.data.keyword.Bluemix}} public network by default. You can enable virtual routing and forwarding (VRF) to move IP routing for your account and all of its resources into a separate routing table. If VRF is enabled, you can then enable {{site.data.keyword.Bluemix_notm}} service endpoints to connect directly to resources without using the public network.
 {:shortdesc}
 
-These steps aren't required for accessing resources from the VPC infrastructure.
+Virtual Private Clouds (VPCs) are automatically enabled for virtual routing and forwarding (VRF). To enable service endpoints for your VPC, continue to [Enabling service endpoints](#service-endpoint).
 {: note}
 
 ## Before you begin
@@ -58,7 +58,7 @@ The {{site.data.keyword.Bluemix_notm}} network engineering team will reach out t
 
 When {{site.data.keyword.Bluemix_notm}} service endpoints are enabled in your account, you can choose to expose a private network endpoint when you create a resource. You can then connect directly to this endpoint over the {{site.data.keyword.Bluemix_notm}} private network rather than the public network. Because resources that use private network endpoints don't have an internet-routable IP address, connections to these resources are more secure. For more information, see [Service endpoints for private network connections](/docs/account?topic=account-service-endpoints-overview).
 
-Before you can enable service endpoints, VRF must be enabled for your account.
+Before you can enable service endpoints, VRF must be enabled for your account. Virtual Private Clouds (VPCs) are automatically enabled for VRF.
 {: note}
 
 ### From the console
