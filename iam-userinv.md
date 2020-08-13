@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2020
 
-lastupdated: "2020-06-02"
+lastupdated: "2020-08-13"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -20,6 +20,7 @@ subcollection: account
 {:tip: .tip}
 {:note: .note}
 {:external: target="_blank" .external}
+{:video: .video}
 
 # Inviting users to an account
 {: #iamuserinv}
@@ -27,6 +28,28 @@ subcollection: account
 Use {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) to invite users, cancel invitations, or resend a pending invitation. You can invite a single user or multiple users.
 {:shortdesc}
 
+## Watch and learn
+{: #watch-iam-invite}
+
+![IBM Cloud console guide: Inviting users to the account](https://www.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&entry_id=1_ea3b5fz1){: video output="iframe" data-script="#invite-transcript" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
+
+### Video transcript
+{: #invite-transcript}
+{: notoc}
+
+Welcome back to another installment of the IBM Cloud Console Guide. In this video, we’ll be talking about how to invite users to your IBM Cloud account.
+
+Inviting users to your IBM Cloud account is simple. Click on “Manage”, and then click “Access (IAM).” Then, click on the “Users” tab on the left menu, and click on the blue “Invite Users” button.
+
+Once you are on the “Invite Users” page, you can invite users to your account by typing in their email address in the text box (Cursor moves to Enter email addresses text box).
+
+On this page, you can also add users to access groups. In the “Add users to access groups” section, you will see the access groups that you have created. To add a user to one or more access groups, click the “Add” button to the right of the appropriate access group.
+
+If you need to assign access to classic infrastructure permissions or Cloud Foundry resources, you can do this in the “Assign users additional access section” which is found just below the access group section. Click on the additional access you would like to assign (clicks Classic infrastructure tile, selects Super user radio button), and then click on the blue “Add” button (then, clicks "Invite" button).
+
+You can manage existing users and their access from the users menu. Click on “Users” in the Access (IAM) left menu. From here, you can see all of the users in your account. 
+
+To manage access for existing users, simply click on the user’s name and you will have access to their user details, access groups, access policies, classic infrastructure, and Cloud Foundry access. From here, you can make changes to access permissions as needed (Clicks "Assign access" button from the Access policies tab to show how additional IAM access can be assigned for the selected user).
 
 ## Before you begin
 {: #invite-access}
