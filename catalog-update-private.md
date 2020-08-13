@@ -17,7 +17,7 @@ subcollection: account
 {:note: .note}
 {:important: .important}
 
-# Updating a version of your software
+# Updating your software
 {: #update-private}
 
 To update the software that's in your private catalog, you can add a new version or update and republish an existing version. 
@@ -26,7 +26,7 @@ To update the software that's in your private catalog, you can add a new version
 ## Before you begin
 {: #prereq-update}
 
-To complete this task, you need to be assigned the editor role on the catalog management service. With this type of access, you can create private catalogs and set filters that apply only to users with access to your private catalog. You can also view the account-level filters on the Settings page, but you can't update them. For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
+To complete this task, you need to be assigned the editor role on the catalog management service. For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
 
 ## Update an existing version by using the console
 {: #update-editor-offering}
