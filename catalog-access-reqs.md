@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-06-10"
+lastupdated: "2020-08-14"
 
 keywords: catalog, private catalogs, IAM access, roles, private catalog service, access groups, permissions
 
@@ -17,13 +17,13 @@ subcollection: account
 {:note: .note}
 {:important: .important}
 
-# Assigning users access
+# Assigning catalog management access
 {: #catalog-access}
 
-As the account owner, you assign users specific access depending on what tasks they are performing. To streamline the process of assigning access, you can use access groups to organize a set of users into a single entity. That way, you can assign a single policy to the group one time, and then add or remove users from the group as needed. 
+As the account owner, you assign users specific catalog management access depending on what tasks they are performing. To streamline the process of assigning access, you can use access groups to organize a set of users into a single entity. That way, you can assign a single policy to the group one time, and then add or remove users from the group as needed. 
 {: shortdesc}
 
-For more details about access management, see [Managing access in {{site.data.keyword.cloud_notm}}](/docs/account?topic=account-cloudaccess).
+For more details, see [Managing access in {{site.data.keyword.cloud_notm}}](/docs/account?topic=account-cloudaccess).
 
 ## Setting up your access groups
 {: #catalog-access-groups}
