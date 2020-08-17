@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2020
 
-lastupdated: "2020-08-13"
+lastupdated: "2020-08-17"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -107,42 +107,42 @@ By using the CLI, you can choose to assign Cloud Foundry access or no access and
 ### Inviting users by using the API
 {: #api-invite}
 
-You can use the [API](https://cloud.ibm.com/apidocs/user-management#invite-users){: external} to invite users in bulk. All users that are included in a single invitation are assigned the same access. When you invite users by using the API, you enter emails in a comma-separated list with each entry that is surrounded by quotations, for example:
+You can use the [API](https://cloud.ibm.com/apidocs/user-management#invite-users){: external} to invite users in bulk. All users that are included in a single invitation are assigned the same access. When you invite users by using the API, you enter emails in a comma-separated list with each entry that is surrounded by quotations. This example assigns access by adding the user to an access group.
 
 
 ```
-curl -X POST \
-  https://user-management.cloud.ibm.com/v2/accounts/987d4cfd77b04e9b9e1a6asdcc861234/users \
-  -H 'Authorization: Bearer <IAM_TOKEN>'
-  -H 'Content-Type: application/json' \
-    -d '{
+curl -X POST https://user-management.cloud.ibm.com/v2/accounts/987d4cfd77b04e9b9e1a6asdcc861234/users -H 'Authorization: Bearer <IAM_TOKEN>'
+  -H 'Content-Type: application/json' -d '{
       "users": [
-            {
-              "email": "cloud_api_example_member@ibm.com",
-              "account_role": "Member"
-            },
-            {
-              "email": "second_user@ibm.com",
-              "account_role": "Member"
-            },
-            {
-              "email": "third_user@ibm.com",
-              "account_role": "Member"
-            }
-      ],
-      "iam_policy": [
       {
-        "roles": [
-        {
-          "id": "crn:v1:bluemix:public:iam::::role:Viewer"
+        "email": "cloud_api_example_member@ibm.com",
+        "account_role": "Member"
+      }],
+      "iam_policy": [{
+        "type": "access",
+        "roles": [{
+          "role_id": "crn:v1:bluemix:public:iam::::role:Viewer"
         }],
-        "resources": [
-        {
-          "accountId": "111d4cfd77b04e9b9e1a6asdcc861234",
-          "resourceType": "resource-group",
-          "resource": "111449dd871049c29ec3a53853ce123e"
+        "resources": [{
+          "attributes": [{
+              "name": "accountId",
+              "value": "987d4cfd77b04e9b9e1a6asdcc861234"
+            },
+            {
+              "name": "resourceType",
+              "value": "resource-group"
+            },
+            {
+              "name": "resource",
+              "value": "2c7449dd871049c29ec3a53853ce123e"
+            }
+          ]
         }]
-      }]
+      }],
+      "access_groups":[
+        "AccessGroupId-******-0f54-4d4f-89c2-e5fdc0b9a28c",
+        "AccessGroupId-******-3087-4395-a382-a8e8ff9ccc23"
+      ]
     }'
 ```
 {: codeblock}
