@@ -2,14 +2,14 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-08-11"
+lastupdated: "2020-08-26"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings
 
 subcollection: account
 
 content-type: tutorial
-completion-time: 1h
+completion-time: 60m
 
 ---
 
@@ -24,7 +24,7 @@ completion-time: 1h
 # Setting up your {{site.data.keyword.cloud_notm}} account
 {: #account-getting-started}
 {: toc-content-type="tutorial"}
-{: toc-completion-time="1h"}
+{: toc-completion-time="60m"}
 
 This tutorial walks you through the steps for setting up an account in {{site.data.keyword.cloud}}. By completing this tutorial, you learn how to set up account authentication, manage your account settings, effectively organize resources in your account, and control access to resources.
 {:shortdesc}
