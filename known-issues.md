@@ -77,15 +77,6 @@ A maximum of 1,000 policies and service to service authorizations within one acc
 
 If you need to check the number of policies in your account or request an increase in the account limit, see [Managing policy limits](/docs/account?topic=account-policy-limits).
 
-## Deleting users in accounts with too many Cloud Foundry orgs
-{: #delete-user-error}
 
-Because of a known issue when the number of Cloud Foundry orgs associated with the account exceeds a threshold, the following error might occur when you delete a user from the account:
-
-`Remove user:
-User could not be removed. Cannot proceed with the delete request. Please contact Support for assistance.
-`
-
-This error can occur even if you’ve successfully deleted users in the past. Until this issue is resolved within the platform, open a support case to delete users from the account.
 
 
