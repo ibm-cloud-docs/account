@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2020
 
-lastupdated: "2020-06-09"
+lastupdated: "2020-08-31"
 
 keywords: frequently asked question, faq, iam
 
@@ -101,6 +101,12 @@ For information about the types of API keys that are available in {{site.data.ke
 * For information about how to manage {{site.data.keyword.cloud_notm}} API keys that are associated with user identities, see [Managing user API keys](/docs/account?topic=account-userapikey).  
 * For information about how to manage API keys that are associated with a service ID, see [Managing service ID API keys](/docs/account?topic=account-serviceidapikeys).
 * For information about how to manage classic infrastructure API keys, see [Managing classic infrastructure API keys](/docs/account?topic=account-classic_keys).
+
+## Where do I find service credentials?
+{: #service-credentials}
+{: faq}
+
+To view an existing service credential for a service, go to your resource list by clicking the **Menu icon  ![Menu icon](../icons/icon_hamburger.svg)** > **Resource list**, then select the name of the service to open its details. Click **Service credentials** to view the details.
 
 ## Why use resource groups and access groups?
 {: #resource-groups}
