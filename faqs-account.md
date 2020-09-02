@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-08-10"
+lastupdated: "2020-09-02"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite
 
@@ -213,6 +213,12 @@ Click **Support** from the console menu bar to go to the Support Center. For mor
 The {{site.data.keyword.cloud_notm}} console header lists all accounts that are affiliated with your login ID, including those you own. You can view your role in each account on the [Users](https://{DomainName}/iam/users) page.
 
 You can also find your accounts from the CLI by running the `ibmcloud account list` command.
+
+## How do I view my account ID and account type?
+{: #account-details}
+{: faq}
+
+Go to the [Account settings](https://{DomainName}/account/settings) page in the console to view the account ID and account type.
 
 ## How do I switch between multiple accounts?
 {: #switch-between-accounts}
