@@ -23,7 +23,7 @@ completion-time: 10m
 {:step: data-tutorial-type='step'}
 {:step-next: data-tutorial-type='step-next'}
 
-# Setting up user access
+# Inviting users
 {: #access-getstarted}
 {: toc-content-type="tutorial"} 
 {: toc-completion-time="10m"}
@@ -111,7 +111,7 @@ Specify the email addresses of the users. If you are inviting more than one user
 For more information, see [Inviting users to an account](/docs/account?topic=account-iamuserinv).
 
 
-## Step 3. Manage access for existing users
+## Manage access for existing users
 {: #user_access_manage}
 {: step}
 
