@@ -243,6 +243,7 @@ Managing your account, resources, and access
     Troubleshooting account management
         ts-create-location.md
         ts-create-org.md
+        ts_create_service.md
         ts-lite-instance.md
         ts-runtime.md
         ts-inactive-account.md
