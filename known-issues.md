@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-08-06"
+lastupdated: "2020-09-10"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users, Cloud Foundry orgs
 
@@ -77,6 +77,10 @@ A maximum of 1,000 policies and service to service authorizations within one acc
 
 If you need to check the number of policies in your account or request an increase in the account limit, see [Managing policy limits](/docs/account?topic=account-policy-limits).
 
+## Resource group is inactive with state: SUSPENDED
+{: #resource_inactive}
 
-
+When the process to reactivate or upgrade a suspended account does not complete successfully, you might see the following error when creating a new service: "The resource group <name> is inactive with state: SUSPENDED"
+ 
+To resolve the issue, [open a support case](/docs/get-support?topic=get-support-open-case) and include the group name from the error message in the case details.
 
