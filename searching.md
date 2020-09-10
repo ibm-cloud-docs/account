@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2020
-lastupdated: "2020-09-03"
+lastupdated: "2020-09-08"
 
 keywords: search, find, search for instance, search for resource
 
@@ -78,7 +78,10 @@ You can search for the following attributes:
 <dd>The tags that have been attached to a classic infrastructure resource. Requires you to specify `-p classic-infrastructure` parameter. </dd>  
 <dt>`_objectType:`</dt>
 <dd>The object type of the classic infrastructure resource. Allowed values are: `SoftLayer_Virtual_DedicatedHost`, `SoftLayer_Hardware`, `SoftLayer_Network_Application_Delivery_Controller`, `SoftLayer_Network_Subnet_IpAddress`, `SoftLayer_Network_Vlan`, `SoftLayer_Network_Vlan_Firewall`, `SoftLayer_Virtual_Guest`. Requires you to specify `-p classic-infrastructure` parameter. </dd> 
-</dl>
+  
+  The usage of `-p classic-infrastructure` for _objectType `SoftLayer_Virtual_DedicatedHost`, `SoftLayer_Network_Vlan_Firewall`, `SoftLayer_Virtual_Guest` and `SoftLayer_Hardware` (for the classic infrastructure bare metal servers only) is deprecated since now they are searcheable as all other not classic infrastructure resources.
+  </dl>
+
 
 ### Searching for classic infrastructure resources
 To search for classic infrastructure resources, the string must be contained within double quotation marks (") in order for an exact match for the query string to be returned. 
@@ -91,11 +94,13 @@ In addition, if you enter a search term that includes a hyphen (-) and you don't
 
 The following examples can help you search for account resources.
 
+When the `-p classic-infrastucture` parameter is not specified search spans across all resources but classic infrastructure resources with `_objectType` `SoftLayer_Network_Application_Delivery_Controller`, `SoftLayer_Network_Subnet_IpAddress`, `SoftLayer_Network_Vlan` or `SoftLayer_Hardware` (excluding bare metal servers).
+
 * To search for all your resources named `ABC`, enter the following command:
 
     `ibmcloud resource search ‘name:ABC’`
 
-* To search for all Cloud Foundry applications named `MyResource`, enter the following command:
+* To search for all Cloud Foundry applications whose name starts with `my`, enter the following command:
 
     `ibmcloud resource search 'name:my* AND type:cf-application'`
 
@@ -110,6 +115,7 @@ The following examples can help you search for account resources.
 * To search for resources that are not classic infrastructure that were created between 16 May 2020 and 20 May 2020, enter the following command:
 
     `ibmcloud resource search "creation_date:[2020-05-16T00:00:00Z TO 2020-05-20T00:00:00Z]"`
+     
 
 * To search for resources that are not classic infrastructure whose name starts with "my", ordered by type, enter the following command:
 
@@ -118,12 +124,16 @@ The following examples can help you search for account resources.
 * To search for resources that are not classic infrastructure and have been tagged with `MyTag`, enter the following command:
 
     `ibmcloud resource search 'tags:MyTag'`
+    
+* To search for all classic infrastructure virtual servers whose fully qualified domain name is `MyVM`, enter the following command:
+
+    `ibmcloud resource search “doc.fullyQualifiedDomainName:MyVM AND service_name:virtual-server”`
 
 * To search for all classic infrastructure resources that have been tagged with `MyTag`, enter the following command:
 
     `ibmcloud resource search 'tagReferences.tag.name:MyTag' -p classic-infrastructure`
     
-* To search for all classic infrastructure of type `Softlayer_Hardware`
+* To search for all classic infrastructure of type `SoftLayer_Network_Vlan`
 
-    `ibmcloud resource search '_objectType:SoftLayer_Hardware' -p classic-infrastructure`
+    `ibmcloud resource search '_objectType:SoftLayer_Network_Vlan' -p classic-infrastructure`
   
