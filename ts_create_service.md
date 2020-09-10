@@ -31,9 +31,11 @@ You might receive one of the following error messages when you create a service:
 * Create service error.
 * Create Service [500, Internal Server Error]. An error occurred while trying to create the service. Please try again later.
 
-Creating a service instance can fail when you don't have access, exceed a plan limit, or experience a problem with your web browser. An active incident or planned maintenance might also affect your ability to create a service instance. {: tsCauses}
+Creating a service instance can fail when you don't have access, exceed a plan limit, or experience a problem with your web browser. An active incident or planned maintenance might also affect your ability to create a service instance. 
+{: tsCauses}
 
-To resolve this issue, use one of the following options: {: tsResolve}
+To resolve this issue, use one of the following options: 
+{: tsResolve}
 
 * You might not have the correct access. You must have the editor role or higher to create a service instance. Contact the account owner to request the correct access. For more information, see [Cloud IAM roles](/docs/account?topic=account-userroles#iamusermanrol). 
 
@@ -42,3 +44,4 @@ To resolve this issue, use one of the following options: {: tsResolve}
 * If you're experiencing a web browser issue, see [Why do I encounter console pages that don't load?](/docs/account?topic=account-ts_err).
 
 * Go to the [{{site.data.keyword.Bluemix_notm}} - Status](https://cloud.ibm.com/status){: external} page to check whether an active incident or planned maintenance is affecting your ability to create a service instance. 
+
