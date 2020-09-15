@@ -134,7 +134,7 @@ The remaining users only need access to the resource group that's associated wit
 ### Multiple resource groups in my account
 {: #multi-rgs}
 
-Some of the users in my account are the administrators for a service, `Service A`, across my entire account, and they need access to all instances of that service and to create instances. These users don’t need access to other resources in the account. I crete an access group and assign an administrator role on Service A at the account level, plus a viewer role for all resource groups in the account.
+Some of the users in my account are the administrators for a service, `Service A`, across my entire account, and they need access to all instances of that service and to create instances. These users don’t need access to other resources in the account. I create an access group and assign an administrator role on Service A at the account level, plus a viewer role for all resource groups in the account.
 
 ### A user requiring access to a specific resource
 {: #user-specific-resource}
