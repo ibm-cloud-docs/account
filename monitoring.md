@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-06-03"
+lastupdated: "2020-09-15"
 
 keywords: manage account, account events, track events, account tracking, monitoring, catalog tracking, catalog management
 
@@ -22,10 +22,6 @@ subcollection: account
 
 As a security officer, auditor, or manager, you can use the {{site.data.keyword.at_full}} service to track how users and applications interact with an {{site.data.keyword.Bluemix}} account, the {{site.data.keyword.Bluemix_notm}} catalog, private catalogs, and with {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM).
 {:shortdesc}
-
-As of 9 May 2019 the {{site.data.keyword.cloudaccesstraillong}} service is deprecated. You must create an instance of the {{site.data.keyword.at_short}} in your account to continue tracking account management and IAM events. For more information, see [Deprecation of the IBM Cloud Activity Tracker service](https://www.ibm.com/cloud/blog/release-notes/deprecating-ibm-cloud-activity-tracker){: external}.
-{: deprecated}
-
 
 ## Account management events
 {: #account-management-events}
