@@ -4,7 +4,7 @@ copyright:
 
   years: 2020
 
-lastupdated: "2020-06-09"
+lastupdated: "2020-09-14"
 
 keywords: identity provider, IdP, App ID, IAM, integration, IdP SSO, third-party authentication, dynamic rules, external identity provider
 
@@ -18,6 +18,7 @@ subcollection: account
 {:tip: .tip}
 {:note: .note}
 {:important: .important}
+{:external: target="_blank" .external}
 
 # Enabling authentication from an external identity provider
 {: #idp-integration}
@@ -25,7 +26,9 @@ subcollection: account
 You can integrate with your external identity provider (IdP) to securely authenticate external users to your {{site.data.keyword.cloud}} account. By using your IdP, you can provide a way for users in your company to use single sign-on (SSO). Connecting your cloud account with an {{site.data.keyword.appid_full_notm}} instance of your choice makes it all possible.
 {:shortdesc}
 
-Each account can have up to five IdPs added through the Identity providers page in the Access (IAM) section of the console. You set up your IdP by selecting which {{site.data.keyword.appid_short}} instance to integrate with IAM. Then, the IdP is given a random realm ID that is the unique prefix for users of that {{site.data.keyword.appid_short}} service instance. 
+A more commonly used authentication method in {{site.data.keyword.cloud_notm}} that federates you for all {{site.data.keyword.IBM_notm}} products and has no usage charges is IBMid federation by registering your company's domain. Registering a company's domain with {{site.data.keyword.IBM_notm}} enables users to log in to {{site.data.keyword.IBM_notm}} products and services by using their existing company user credentials. Authentication is then handled by your company's identity provider through single sign-on (SSO). For information about how to register your company for a federated ID, see the [IBMid Enterprise Federation Adoption Guide](https://ibm.box.com/v/IBMid-Federation-Guide){: external}. An {{site.data.keyword.IBM_notm}} sponsor, such as an offering advocate or client advocate, is required when you request to register federated IDs.
+
+If you choose to use an external IdP reference through IAM, each account can have up to five IdP references added through the Identity providers page in the Access (IAM) section of the console. You set up your IdP reference by selecting which {{site.data.keyword.appid_short}} instance to integrate with IAM. Then, the IdP reference is given a random realm ID that is the unique prefix for users of that {{site.data.keyword.appid_short}} service instance. 
 
 Setting up the integration between your {{site.data.keyword.appid_short}} instance, which is already configured with your IdP, and your {{site.data.keyword.cloud_notm}} account makes it so you can continue to manage all users externally in your IdP. It also simplifies the log in process to your cloud account for users in your enterprise. After the integration is complete, you must provide your users with a custom URL that they use to login each time. There is no need to invite anyone to your account because if they exist as a user in your connected IdP's user repository, they can log in with their credentials through the custom URL.
 
@@ -34,7 +37,7 @@ Setting up the integration between your {{site.data.keyword.appid_short}} instan
 
 * Create an instance of {{site.data.keyword.appid_short}} from the {{site.data.keyword.cloud_notm}} catalog. For more information, see the [Getting started tutorial](/docs/appid?topic=appid-managing-idp).
 * Configure your {{site.data.keyword.appid_short}} instance. For more information about how to do this depending on your use case, see the {{site.data.keyword.appid_short}} documentation about [managing authentication](/docs/appid?topic=appid-managing-idp).
-* Make sure you have the required access to view and manage IdPs, if you aren't the account owner. You must be assigned the operator role or higher on the {{site.data.keyword.appid_short}} instance and the operator or administration role on the [IAM Identity Service](/docs/account?topic=account-account-services#identity-service-account-management). 
+* Make sure you have the required access to view and manage IdP references, if you aren't the account owner. You must be assigned the operator role or higher on the {{site.data.keyword.appid_short}} instance and the operator or administration role on the [IAM Identity Service](/docs/account?topic=account-account-services#identity-service-account-management). 
 
 ## Configuration of your {{site.data.keyword.appid_short}} instance for IAM integration
 {: #configure-appid-instance}
@@ -73,34 +76,34 @@ When a user authenticates successfully by using the {{site.data.keyword.appid_sh
 ## Enabling and connecting your identity provider
 {: #idp-console}
 
-If you haven't configured any IAM identity providers before in your account, you must enable the IdP login setting for your account first.
+If you haven't configured any IAM identity provider references before in your account, you must enable the login setting for your account first.
 
-1. Enable the IdP login settings for your account. You can skip this step if you've already enabled this setting.
+1. Enable the login settings for your account. You can skip this step if you've already enabled this setting.
   1. Go to **Manage** > **Access (IAM)** > **Identity providers**, and click **Enable**. 
-  2. Enter an alias for the default IdP URL, which you provide to users to log in to your account. 
+  2. Enter an alias for the default account URL, which you provide to users to log in to your account. 
   
     Since you're sharing the URL with external users, make sure the alias is unique and simple. A common format might be to use your company name or a variation of it.
     {: tip}
      
-2. Click **Create** to create your IdP. 
-3. Enter a name for the IdP, and select the {{site.data.keyword.appid_short}} instance that you want to connect. Then, select the following options:
+2. Click **Create** to create your IdP reference. 
+3. Enter a name for the IdP reference, and select the {{site.data.keyword.appid_short}} instance that you want to connect. Then, select the following options:
 
-  * **Enable for account login?**: Enable your IdPs to be used for users to log in to your account. This option is set by default when you first create an IdP. 
-  * **Set as the default?**: When selected, users can use the default IdP URL that you created when you enabled this feature to log in to your account. You can have only one default IdP. For all other IdPs that you create, users must use the realm IDs to log in.
+  * **Enable for account login?**: Enable your IdP references to be used for users to log in to your account. This option is set by default when you first create an IdP reference. 
+  * **Set as the default?**: When selected, users can use the default IdP reference URL that you created when you enabled this feature to log in to your account. You can have only one default IdP reference. For all other IdP references that you create, users must use the realm IDs to log in.
  
 4. Click **Create**.
 
-Your IdP is now available on the Identity providers list and the realm ID is generated automatically as the value that represents your IAM identity provider in {{site.data.keyword.cloud_notm}}.
+Your IdP reference is now available on the Identity providers list and the realm ID is generated automatically as the value that represents your IAM identity provider in {{site.data.keyword.cloud_notm}}.
 {: note}
 
 ## Logging in with external identity provider credentials
 {: #log-in-external-idp}
 
-After your {{site.data.keyword.appid_short}} instance is connected to your IdP, and your {{site.data.keyword.appid_short}} instance is integrated with IAM, your users can start logging in to your account. If the IdP is set as the default IdP, then you can share the **Default ID URL** for your account. 
+After your {{site.data.keyword.appid_short}} instance is connected to your IdP, and your {{site.data.keyword.appid_short}} instance is integrated with IAM, your users can start logging in to your account. If the IdP reference is set as the default, then you can share the **Default ID URL** for your account. 
 
-However, since you can have only one set as the default, but you can have up to five set-up in your account, you might need to get the IdP URL for another IdP: 
+However, since you can have only one set as the default, but you can have up to five set-up in your account, you might need to get the URL for another IdP reference: 
 
-1. From the Identity provider pages, click the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu for the row of the IdP you need a URL for.
+1. From the Identity provider pages, click the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu for the row of the IdP reference you need a URL for.
 2. Select **View IDP URL**. 
 3. Copy the **IdP URL** link to give to users to log in. 
 
@@ -123,5 +126,4 @@ If you are working with an external identity provider, it is recommended that yo
 
 Don't invite users by using the {{site.data.keyword.cloud_notm}} invite process since this works only for users with IBMids. If you used {{site.data.keyword.cloud_notm}} invites for your account, you would end up with a mixture of users coming from IBMid and users being automatically onboarded from your external identity provider. This can easily lead to confusion because IBMid users log in through the {{site.data.keyword.cloud_notm}} website while users from your external identity provider must log in with a special URL. This can lead to duplicate usernames in one account, which is strongly discouraged due to limitations in the {{site.data.keyword.containershort}} as previously mentioned.
 {: tip}
-
 
