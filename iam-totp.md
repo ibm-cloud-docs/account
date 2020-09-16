@@ -47,5 +47,3 @@ To turn on this MFA option for a user, he or she must first [set up TOTP](#totp-
 You can manage this setting for yourself if you have the User-managed login setting enabled on your User details page.
 {: tip}
 
-## Setting up TOTP
-{: #totp-setup}
