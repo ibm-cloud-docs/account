@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-07-08"
+lastupdated: "2020-09-17"
 
 keywords: account types, Lite, free account, trial account, paid account, buy account, account difference, compare account, subscription
 
@@ -31,7 +31,7 @@ The following table provides a comparison of Lite, Pay-As-You-Go, and Subscripti
 |                                         | Lite               | Pay-As-You-Go      | Subscription       |
 |-----------------------------------------|--------------------|--------------------|--------------------|
 | **Free Cloud Foundry memory** | 256 MB             |             |              |
-| **[Free community buildpacks](/docs/cloud-foundry-public?topic=cloud-foundry-using_buildpacks)** | 186 GBH             |   186 GBH       |    186 GBH          |
+| **[Free community buildpacks](/docs/cloud-foundry-public?topic=cloud-foundry-public-available_buildpacks)** | 186 GBH             |   186 GBH       |    186 GBH          |
 | **Access to [Lite service plans](https://{DomainName}/catalog/?search=label:lite){: external}** | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | **Access to all free plans**            |                    | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | **Access to the full {{site.data.keyword.Bluemix_notm}} catalog** |  | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
