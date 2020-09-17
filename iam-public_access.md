@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2020
 
-lastupdated: "2020-06-09"
+lastupdated: "2020-09-18"
 
 keywords: public access, anonymous access, users, service IDs, public access group, enable, disable, manage, IAM
 
@@ -32,7 +32,7 @@ To manage public access, you must be an administrator of the [IAM Access Groups 
 
 When public access is enabled in the account, you can create a policy to define the resources that all members of the Public Access group can access. To create a policy, you must have administrator access on the resource. 
 
-As an example, the following section describes how to assign public access to an {{site.data.keyword.cos_full}} bucket that is named `mybucket123`. 
+{{site.data.keyword.cos_full}} is used as the example as it is the only supported resource type for public access at this time. As an example, the following section describes how to assign public access to an {{site.data.keyword.cos_short}} bucket that is named `mybucket123`. 
 
 ### Assigning access in the console
 {: #public-access-console}
