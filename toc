@@ -171,6 +171,7 @@ Managing your account, resources, and access
     {: .topicgroup}
     Updating account settings
         account_settings.md
+        shell-settings.md
         email.md
         eu_hipaa_supported.md
 

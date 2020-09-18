@@ -4,9 +4,9 @@ copyright:
 
   years: 2019, 2020
 
-lastupdated: "2020-07-30"
+lastupdated: "2020-09-18"
 
-keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, role management service, catalog management service
+keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, role management service, catalog management service, cloud shell service
 
 subcollection: account
 
@@ -203,6 +203,20 @@ You can give users access to manage service IDs and Identity Providers (IDPs) by
 {: caption="Table 7. Roles and example actions for the IAM Identity service" caption-side="top"}
 {: #identity-service-acct-mgmt}
 
+### {{site.data.keyword.cloud-shell_notm}} settings
+{: #shell-service-account-management}
+
+You can assign users access to view or update {{site.data.keyword.cloud-shell_notm}} settings for the account. Any user in the account can view {{site.data.keyword.cloud-shell_notm}} settings. Only the account owner or a user with the {{site.data.keyword.cloud-shell_notm}} administrator role can update the settings.
+
+| Roles         | Actions                                                                                           |
+|---------------|----------------------------------------------------------------------------------------------------|
+| Viewer        | View {{site.data.keyword.cloud-shell_notm}} settings        |
+| Operator      | View {{site.data.keyword.cloud-shell_notm}} settings        |
+| Editor        | View {{site.data.keyword.cloud-shell_notm}} settings        |
+| Administrator | View and update {{site.data.keyword.cloud-shell_notm}} settings |
+{: caption="Table 8. Roles and example actions for the {{site.data.keyword.cloud-shell_notm}} service" caption-side="top"}
+{: #shell-service-acct-mgmt}
+
 ### License and entitlement 
 {: #license-entitlement-management}
 
@@ -214,7 +228,7 @@ You can use the license and entitlement service to assign users access to manage
 | Operator      |  Not applicable                                                                                            |
 | Editor        |  Editors can create entitlements and view, update, bind, or delete only the entitlements they acquired.    |
 | Administrator |  Administrators can create entitlements and view, update, bind, or delete any entitlements in the account. |
-{: caption="Table 8. Roles and example actions for the license and entitlement service" caption-side="top"}
+{: caption="Table 9. Roles and example actions for the license and entitlement service" caption-side="top"}
 
 ### Role management
 {: #custom-roles-account-management}
@@ -227,7 +241,7 @@ You can give users access to create, update, and delete custom roles for service
 | Operator      | Not applicable             |
 | Editor        | Edit and update custom roles in an account          |
 | Administrator | Create, edit, update, and delete custom roles in an account  |
-{: caption="Table 9. Roles and example actions for the Role management service" caption-side="top"}
+{: caption="Table 10. Roles and example actions for the Role management service" caption-side="top"}
 
 ### Support center
 {: #support-center-account-management}
@@ -240,7 +254,7 @@ You can give users access to manage support cases by using the support center se
 | Operator      |  Not applicable                                                               |
 | Editor        |  View cases <br><br> Search cases <br><br> Update cases <br><br> Create cases |
 | Administrator |  View cases <br><br> Search cases <br><br> Update cases <br><br> Create cases |
-{: caption="Table 10. Roles and example actions for the Support Center service" caption-side="top"}
+{: caption="Table 11. Roles and example actions for the Support Center service" caption-side="top"}
 
 Assign users the viewer role on the user management service in addition to a support center access policy so the user can see all cases in the account regardless of user list visibility settings. If the user list visibility is set to restricted, this can limit a user's ability to view, search, and manage support cases in an account that they didn't open themselves.
 {: tip}
@@ -256,7 +270,7 @@ You can give users access to view users in an account, invite and remove users, 
 | Operator      | View users in the account <br><br> View user profile settings                                          |
 | Editor        | View, invite, remove, and update users from the account <br><br> View and update user profile settings |
 | Administrator | View, invite, remove, and update users from the account <br><br> View and update user profile settings |
-{: caption="Table 11. Roles and example actions for the User Management service" caption-side="top"}
+{: caption="Table 12. Roles and example actions for the User Management service" caption-side="top"}
 
 The viewer role on the user management service is a role that is commonly assigned for users assigned a role to view or manage support cases. If an account owner restricts the visibility of the user list in the IAM settings, users can't see support cases that are opened by other users in the account. However, if they are assigned the viewer role for the user management service, the user list visibility setting doesn't affect the ability to view cases in the account.
 {: tip}
@@ -273,7 +287,7 @@ To quickly give users a wide-ranging set of account management access, you can a
 | Operator      | All operator role actions for the account management services                                                |
 | Editor        | All editor role actions for the account management services and the ability to create resource groups        |
 | Administrator | All administrator role actions for the account management services and the ability to create resource groups |
-{: caption="Table 12. Roles and example actions for a policy on all identity and access services" caption-side="top"}
+{: caption="Table 13. Roles and example actions for a policy on all identity and access services" caption-side="top"}
 
 
 
