@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2020
 
-lastupdated: "2020-07-24"
+lastupdated: "2020-09-21"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -72,7 +72,7 @@ Platform management roles cover a range of actions, including the ability to cre
 
 * Service access roles
 
-Service access roles define a user or service’s ability to perform actions on a service instance, such as accessing the console or performing API calls. The service access roles are manager, writer, and reader. 
+Service access roles define a user or service’s ability to perform actions on a service instance, such as accessing the console or performing API calls. The most common service access roles are manager, writer, and reader. Each service maps particular actions for working with the service to each of these roles.
 
 You might not see all of the roles that are listed here as options when you assign policies in the UI because only the roles available for the service that you chose are displayed. For more information on what roles are enabled and what actions each access role allows for each service, see the documentation for that service.
 {: note}
@@ -80,6 +80,9 @@ You might not see all of the roles that are listed here as options when you assi
 * Custom roles
 
 An account owner or a user assigned the Administrator role on the Role management service can create custom roles for a service on the IAM Roles page. 
+
+You can review the available roles and associated actions for a particular service by going to the [Roles](cloud.ibm.com/iam/roles) page, and selecting the service that you want to learn more about. This is the same page where you can create a custom role in the console.
+{: note}
 
 ### Platform management roles
 {: #platformroles}
@@ -92,7 +95,7 @@ Select all roles that apply when you create a policy. Each role allows separate 
 The following table provides examples for some of the platform management actions that users can take within the context of catalog resources and resource groups. See the documentation for each catalog offering to understand how the roles apply to users within the context of the service that is being used.
 
 
-|                    | One or all IAM-enabled services                                                      | Selected service in a resource group                | Selected resource group |
+|                    | One or all IAM-enabled services                                                      | Selected service in a resource group                | Resource group access |
 |--------------------|--------------------------------------------------------------------------------------|-----------------------------------------------------|-------------------------|
 | Viewer role        | View instances, aliases, bindings, and credentials                                   | View only specified instances in the resource group | View resource group     |
 | Operator role      |  View instances and manage aliases, bindings, and credentials                        |  Not applicable                                     | Not applicable          |
@@ -108,7 +111,7 @@ For information about the specific actions users can take based on their assigne
 
 Some services might map specific actions to the platform management roles that are related to the management of the service rather than to the access of the service. As an example, see the following table that details the {{site.data.keyword.containershort_notm}} service actions that are mapped to these roles.
 
-| Platform Management Role | Actions                                                                                                    | Example Actions for {{site.data.keyword.containershort_notm}} |
+| Platform management role | Actions                                                                                                    | Example actions for {{site.data.keyword.containershort_notm}} |
 |--------------------------|------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
 | Viewer                   | Can view service instances, but can't modify them                                                          | <ul><li>List clusters</li><li>View details for a cluster</li></ul>|
 | Editor                   | Perform all platform actions except for managing the account and assigning access policies                 |<ul><li>Bind a service to a cluster</li><li>Create a webhook</li></ul> |
