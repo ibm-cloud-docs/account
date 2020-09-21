@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-07-24"
+lastupdated: "2020-09-21"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources 
 
@@ -81,6 +81,8 @@ There is a [limit](/docs/account?topic=account-known-issues#iam_limits) on the t
 * Use resource groups to organize resources that you want a group of developers in your account to use, for example. Then, if all of those developers are in an access group together, you can use the minimum number of policies instead of assigning policies to each developer for each resource.
 * Use access groups to organize users and service IDs that all require the same level of access. This way, you can assign a single policy rather than an individual policy for each user or service ID. This way, you assign or revoke access by adding or removing users from the access group.
 * Use the principle of least privilege and assign only the access that is required. This can help you ensure that users in your account are limited to only the actions that you want to allow. It also reduces the time that you might need to spend later deleting or reducing assigned access. 
+
+For more best practices from IBM Garage for Cloud, see [Managing access to resources in {{site.data.keyword.cloud_notm}}](https://cloudnativetoolkit.dev/toolkit-resources/resource-mgmt/){: external}.
 
 ## What makes a good access group strategy?
 {: #accessgroup_strategy}
