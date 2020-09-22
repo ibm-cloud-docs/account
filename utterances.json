@@ -38,17 +38,12 @@
     "we are having issues with Cloud account",
     "Error when creating my account"
   ],
-  "slid": [
-    "use my SoftLayer ID to log in",
-    "log in with softlayer id",
-    "logging in using id from softlayer",
-    "softlayer id log in",
-    "how to log in with softlayer id",
-    "log on with softlayer id"
-  ],
   "cloud-foundry": [
     "what is Cloud Foundry",
     "what does Cloud Foundry do",
+    "what is cloud foundry for",
+    "cloud foundry access",
+    "access to cloud foundry",
     "Is Cloud Foundry a platform",
     "learn about Cloud Foundry",
     "Where is Cloud Foundry orgs",
@@ -91,6 +86,8 @@
     "to change my region",
     "how to change location",
     "where do i change the regon",
+    "how to change loacation",
+    "how to change location",
     "region change",
     "can i change my region",
     "update my location",
@@ -146,6 +143,8 @@
     "quota in the lite account work?",
     "What is my quota for a lite plan",
     "Lite plan instance reaches the monthly quota",
+    "how do i see my usage quota",
+    "how do i see my quota",
     "My usage limit is reached in cloud",
     "what would be the limit for lite plan",
     "are quotas per month",
@@ -189,7 +188,10 @@
     "Upgrade to subscription",
     "how do i upgrade my account",
     "how to upgrade this account",
-    " want an upgrade to pay-as-you-go",
+    "want an upgrade to pay-as-you-go",
+    "I need to upgrade my account",
+    "upgrade account",
+    "upgrading my account",
     "make my account pay as you go",
     "i want IBM pay as you go account",
     "IBM Pay-As-You-Go'",
@@ -217,19 +219,12 @@
     "unable to change plus trial plan to LITE plan",
     "go from a Trial account to a Lite account",
     "convert my account to a lite account",
+    "have IBM Cloud trail account which needs to be upgrade",
     "convert my trial account to Lite",
     "convert Pay-As-You-Go account to a Subscription account",
     "Switch to Lite account",
     "upgrade from trial to lite",
     "upgrading my trial account to lite"
-  ],
-  "nochange": [
-    "are my instances available after upgrade",
-    "will I lose my instances if I upgrade my account",
-    "Do I lose my instances if I upgrade",
-    "lose my srvices after upgrading my account",
-    "keep using my existing services after I change my account type",
-    "what happens to my existing instances after upgrading my account"
   ],
   "change-email-prefs": [
     "change email preferences",
@@ -397,6 +392,10 @@
     "remove my account from suspended",
     "How I activate my account?",
     "how to active my cloud account",
+    "my account seems to be block.How can I resume it",
+    "Cannot log in to the account because it is blocked",
+    "My IBM Cloud account is canceled",
+    "my account was canceled in error",
     "my account is blocked",
     "want to reactive my account",
     "how to re-activate the account",
@@ -431,6 +430,7 @@
     "student account",
     "offering free services for academic students",
     "free trial",
+    "what is account type trial",
     "special offers for students",
     "when is the free trail due",
     "free trail finishes",
@@ -571,45 +571,6 @@
     "batch user registration",
     "register multiple users at once"
   ],
-  "know-about-tags": [
-    "What is a tag",
-    "How do I use tags",
-    "how to get tags",
-    "tags used in Cloud",
-    "How are tags used",
-    "What are tags"
-  ],
-  "tags-visibility-account": [
-    "Who can see tags in an account",
-    "Who is allowed to view the tags in an account",
-    "view tags in account",
-    "list tags",
-    "lising account tags",
-    "Can I see the account tags"
-  ],
-  "permissions-add-remove-tags": [
-    "What permissions are needed to add or remove tags",
-    "What is required to add or remove tags from resources",
-    "Can I add or remove a tag",
-    "replace a tag",
-    "how to get tag",
-    "I can't remove my tag"
-  ],
-  "can-i-delete-my-tags-": [
-    "Am I allowed to delete a tag",
-    "How to delete a tag",
-    "Can I remove a tag",
-    "Can I get rid of a tag",
-    "deleting a tag",
-    "removing a tag"
-  ],
-  "rename-tag": [
-    "rename a tag",
-    "change the name of a tag",
-    "updating a tag name",
-    "changing name of a tag",
-    "edit tag name"
-  ],
   "nosecondreg": [
     "not able to access a different IBM Cloud location",
     "cannot access a different location",
@@ -710,13 +671,6 @@
     "help me out on creating the space",
     "Where are the spaces associated with my current org",
     "no spaces linked with my current org"
-  ],
-  "ts_domain_diff": [
-    "apps sharing domain names",
-    "What types of apps share a domain name",
-    "kinds of app that share a domain",
-    "Which apps share domains",
-    "different apps sharing domain name"
   ],
   "ts_ui_org": [
     "Can't view all orgs",
@@ -894,36 +848,6 @@
     "can't access IaaS services",
     "Lite account have access to infrastructure services"
   ],
-  "lite-to-enterprise": [
-    "import lite into enterprise",
-    "importing lite account into enterprises",
-    "migrate lite account to enterprise",
-    "add lite to enterprise",
-    "lite addition to an enterprise"
-  ],
-  "remove-enterprise": [
-    "remove my account from enterprises",
-    "removing from enterprise",
-    "take out accounts from enterprise",
-    "deleting from an enterprise",
-    "enterprise account deletion"
-  ],
-  "move-enterprise-account": [
-    "moving an account within an enterpise",
-    "create account group",
-    "create account groups",
-    "account move in enterprises",
-    "transfer account in enterprise",
-    "enterprise account transferring",
-    "account movement within enterprise"
-  ],
-  "move-account-group": [
-    "move enterprise's account group",
-    "account group movement within an enterprise",
-    "move group within an enterprise",
-    "move account group",
-    "move a group out of an enterprise"
-  ],
   "rename-enterprise-account": [
     "changing the name of the account in an enterprise",
     "enterprise account name change",
@@ -944,45 +868,6 @@
     "add a user to an enterprise account",
     "invitation to a user to an enterprise",
     "enterprise invite for users"
-  ],
-  "troubleshoot-view-enterprise": [
-    "can't see the entire enterprise hierarchy",
-    "not seeing the complete enterprise",
-    "unable to view enterprise hierarchy",
-    "view the hierarchy and missing accounts",
-    "complete hierarchy not visible"
-  ],
-  "troubleshoot-existing-enterprise": [
-    "can't see the existing account as an option to import",
-    "error trying to import an existing account to enterprise",
-    "my current account not available to import to the enterprise",
-    "import account option isn't available",
-    "unable to import account to enterprise",
-    "import account to enterprise"
-  ],
-  "troubleshoot-add-enterprise": [
-    "can't click add account in the enterprise",
-    "can't create an account to the enterprise",
-    "in enterprise, why can't I add an account",
-    "do you know why I can't click the create button under enterprise",
-    "issue adding an enterprise account",
-    "unable in my enterprise to add account"
-  ],
-  "troubleshoot-viewsub-enterprise": [
-    "can't view the Subscriptions page from a child account",
-    "don't have permission to view subscription data for this account",
-    "Looks like you don't have permission to view subscription data for this account",
-    "view enterprise subscription",
-    "trying to view subscriptions of enterprise",
-    "unable to view enterprise subscriptions"
-  ],
-  "troubleshoot-promo-enterprise": [
-    "can't apply a subscription code to enterprise account",
-    "unable to add to my enterpise a subscription code",
-    "add a feature code to child account on the enterprise",
-    "add a code to child account on the enterprise",
-    "subscription code addition to enterprise",
-    "issue adding subscription code to enterprise"
   ],
   "ts_upgrade_cc": [
     "You do not have the permissions necessary to view this page",
@@ -1010,6 +895,7 @@
     "an issue to upgrade my account",
     "trying to upgrade my account to Pay-As-You-Go",
     "issues during upgrade of my account",
+    "trying to upgrade my account but it keeps saying error",
     "upgrade unsuccessful",
     "Upgrading didn't work",
     "I have problem upgrading my account",
@@ -1089,18 +975,11 @@
     "how to delete a resource group",
     "get rid of this resource group",
     "resource group deletion",
+    "how I can delete my resouce group",
+    "how can I delete my resource group",
     "removal of resource group",
     "need to remove a resource group",
     "no longer need this resource group"
-  ],
-  "view-usage": [
-    "summary of the usage by resource group",
-    "view usage per resource group",
-    "list my resource group usage",
-    "what's the usage for my resource group",
-    "usage by resource group",
-    "show me account usage for this resource group",
-    "manage billing and usage for each resource group"
   ],
   "instance-migrated": [
     "migrate my Cloud Foundry instances to my resource group",
@@ -1111,15 +990,6 @@
     "migrating services to a reource group",
     "migrate services to a resource group",
     "services to be migrated to this resource group"
-  ],
-  "instances-between-rgs": [
-    "move this service to my other resource group",
-    "transfer this resource group's services to my other resource group",
-    "move services to a different resource group",
-    "move a service to a different resource group",
-    "how to move a service to another resource group",
-    "transfer of services to a different resource group",
-    "services to be transferred to another resource group"
   ],
   "service-removal": [
     "delete a service from this account",
@@ -1156,14 +1026,6 @@
     "remove a service from my account",
     "services need to be deleted from account"
   ],
-  "tag-faq": [
-    "add tags to resource group",
-    "tag addition to resource group",
-    "add or remove a tag from resource group",
-    "removal of resource group tags",
-    "tagging a resource group",
-    "adding a tag for a resource group"
-  ],
   "ts_service_broker": [
     "error trying to delete a service",
     "trying to remove a service and get an error",
@@ -1174,128 +1036,6 @@
     "Gateway error removing a service",
     "can't delete a service",
     "deleting a service gives an error"
-  ],
-  "ts_service_instance": [
-    "service instance in the wrong resource group",
-    "move a service instance to a different resource group",
-    "service was migrated to a wrong resource group",
-    "resource is assigned to an incorrect resource group",
-    "not in the correct resource group",
-    "assigned the instance to the wrong resource group"
-  ],
-  "ts_migrate_instance": [
-    "can't migrate a Cloud Foundry service instance to a resource group",
-    "why can't I migrate a CF service instance to a resource group",
-    "having trouble migrating an instance to my resource group",
-    "trying to migrate an instance to another resource group and can't",
-    "can't transfer this to a different resource group",
-    "unable to transfer a service to a resource group"
-  ],
-  "ts_service_migration": [
-    "migrate all Cloud Foundry services to a resource group",
-    "how to migrate all CF services to a resource group",
-    "having trouble migrating all instances to my resource group",
-    "are all my services eligible for migration",
-    "can't transfer my services to a different resource group"
-  ],
-  "dc-required-move": [
-    "must I migrate my resources",
-    "why migrate these resources",
-    "do I have to transition my resources",
-    "resource migration",
-    "migrate to a new data center",
-    "migrate resources to a new data center"
-  ],
-  "dc-fully-migrated": [
-    "need to be fully migrated on the date my data center is closed",
-    "migrate completely before my data center closes",
-    "migrate must be completed fully before my data center closes",
-    "need to migrate before the data center closes",
-    "complete transition before the data center is closed"
-  ],
-  "dc-move-again": [
-    "have to migrate my resources again",
-    "ever need to migrate these resources again",
-    "will I have to transition my resources again",
-    "resource migration in the future",
-    "need to migrate my resources in the future"
-  ],
-  "dc-select-deploy": [
-    "which is the best data center to deploy to",
-    "how to select which data center to deploy to",
-    "choose which data center to migrate resources",
-    "choose the data center for resource migration",
-    "which data center do you recommend for resource transition"
-  ],
-  "dc-transition-sites": [
-    "what data centers can I use during the transition period",
-    "data centers to use in transition period",
-    "during transition period which data centers can I use",
-    "during my transition period can I use any data center",
-    "use any data center during your transition period"
-  ],
-  "dc-free-months": [
-    "transition period resources in addition to my existing server",
-    "during transition period do I get additional resources",
-    "receive any transition period servers",
-    "during data center migration do I get additional resources",
-    "during data center migration will I get additional servers"
-  ],
-  "dc-determine-config": [
-    "determine my current hardware configuration",
-    "figure out my current hardware configuration",
-    "view my current hardware setup",
-    "view my system configuration details",
-    "see my current configuration for services"
-  ],
-  "dc-determine-utilization": [
-    "determine the utilization of my current hardware",
-    "know the utilization of my current configuration",
-    "find out the utilization of my current hardware",
-    "know the utilization for my existing configuration",
-    "tools to understand the utilization of my system"
-  ],
-  "dc-compare-processor": [
-    "do I compare old and new processors",
-    "compare the specifications of old and new Intel processors",
-    "old and new processor comparison",
-    "comparison of specs of old and new processors",
-    "new and old intel processor compared"
-  ],
-  "dc-choose-os": [
-    "choose my new operating system",
-    "select my new O/S after migration",
-    "choose the O/S for migrating my resources",
-    "following transition how do I choose my new OS",
-    "transition how do I select my new operating system"
-  ],
-  "dc-bandwidth-rate": [
-    "what bandwidth do I get with my new configuration",
-    "get a different bandwidth package after I migrate",
-    "get the same bandwidth after migration",
-    "after I have transitioned will I have the same bandwidth",
-    "rate for the bandwidth the same as before migration"
-  ],
-  "dc-copy-data": [
-    "copy data from my old server to the new one",
-    "how do I migrate my servers",
-    "migrate old server data to new server",
-    "how to copy data to a new server",
-    "need to transition my server data"
-  ],
-  "dc-setup-networking": [
-    "need to set up my networking at the new data site",
-    "need to update my networking at the new data center",
-    "my network also needs a new set up after I migrate",
-    "set up my virtual machine network after migration",
-    "update my VM network after I have migrated"
-  ],
-  "dc-ip-addresses": [
-    "keep my existing IP addresses after migration",
-    "keep the same IP address after moving to the new data center",
-    "new servers have new primary IP subnets",
-    "transfer my current IP address to the new data center",
-    "after migration can I keep this same IP address"
   ],
   "whatisiam": [
     "what's IAM",
@@ -1312,15 +1052,6 @@
     "getting started with IAM",
     "understand what IAM is"
   ],
-  "iam-enabled": [
-    "whats IAM enabled",
-    "IAM enabled",
-    "describe iam enabled service",
-    "use iam-enabled services",
-    "what are iam-enabled services",
-    "assign resource group to an IAM-enabled service",
-    "how to use IAM enabled services"
-  ],
   "iam-policies": [
     "explain IAM access policy",
     "how do the access policy work",
@@ -1329,13 +1060,6 @@
     "tell me about IAM access policy",
     "Who can give access IAM authority",
     "explain for the policy for access for IAM"
-  ],
-  "iam-cloudfoundry": [
-    "are IAM and Cloud Foundry the same",
-    "difference between Cloud Foundry and IAM",
-    "are IAM and Cloud Foundry different",
-    "IAM and Cloud Foundry do differently",
-    "are Cloud Foundry and IAM different"
   ],
   "iam-access": [
     "What access do I have",
@@ -1436,13 +1160,6 @@
     "set access to someone else",
     "give access to someone else"
   ],
-  "providing-access": [
-    "difference between access to manage a resource group and access to resources",
-    "same access to manage resource group and  the resources in the group",
-    "different access for resources and resource groups",
-    "can I do if I have access to manage a resource group",
-    "What can I do if I have access to manage resources"
-  ],
   "remove-users": [
     "who can remove users",
     "who has access to remove users from an account",
@@ -1464,20 +1181,6 @@
     "enabling MFA Multi-Factor Authentication",
     "want MFA for my account",
     "requiring MFA for these accounts"
-  ],
-  "service-platform-roles": [
-    "describe service and platform roles",
-    "whats a service role",
-    "what is a platfrom role",
-    "Are service and platform roles the same",
-    "is a service role different from platform roles"
-  ],
-  "action-mapping": [
-    "actions mapped to each IAM role",
-    "actions for roles can each user do",
-    "actions can a user do in the IAM",
-    "are the different IAM role actions",
-    "IAM role actions"
   ],
   "groups-organizations": [
     "difference between a resource group and Cloud Foundry orgs and spaces",
@@ -1520,27 +1223,12 @@
     "get access to resource groups",
     "what access policy on the specific resource does a user need"
   ],
-  "users": [
-    "every user in my account see all the other users",
-    "view all users in the account",
-    "how to view all users in this account",
-    "can view all users in our account",
-    "can't see all users for the account",
-    "user list visibility"
-  ],
   "account-invite": [
     "assign access to a user when I invite them to the account?",
     "give access to Users immediately",
     "when do I have to give users access",
     "do I assign access to a new users immediately",
     "do I have to give a user access as soon as I add them to the account"
-  ],
-  "appid": [
-    "add authentication into my web and mobile apps",
-    "adding authentication into your web and mobile apps",
-    "add authentication to my web and mobile apps",
-    "how to secure my apps and services",
-    "add security to my apps"
   ],
   "infrastructure-devices": [
     "manage a user's access to infrastructure",
@@ -1555,13 +1243,6 @@
     "access to classic infrastructure",
     "assign access to IAM-enabled infrastructure services",
     "access for IAM enabled infrastructure services"
-  ],
-  "migrated-permissions-faq": [
-    "manage access for users previously in softlayer",
-    "manage permissions that used to be in Softlayer",
-    "manage migrated permissions access",
-    "billing and support permissions in my SoftLayer account management",
-    "migrated permissions access management"
   ],
   "total-policies": [
     "how many policies do I have in my account",
@@ -1595,6 +1276,11 @@
     "need help with access",
     "help to see what access I have",
     "cannot access payments page (contact your administrator for access)",
+    "You are not authorized to access this account",
+    "not authorized to access this account",
+    "I need an access to another account",
+    "need access to another account",
+    "I need account access",
     "What access do I have",
     "what access levels do I have"
   ],
@@ -1621,20 +1307,6 @@
     "can't add anyone to this account",
     "why can't I add anyone to this account",
     "can't invite users to the account"
-  ],
-  "troubleshoot-classicinfra": [
-    "view classic infrastructure permissions for other users",
-    "can't view another user's classic infrastructure permissions",
-    "access to view and edit permissions for another user in softlayer",
-    "edit permissions for another user in the account for classic infrastructure",
-    "edit classic infrastructure permissions for other users"
-  ],
-  "troubleshoot-migrated-permissions": [
-    "manage migrated billing and support case permissions",
-    "don't have the same managing billing and support case permissions",
-    "manage permissions for migrated billing",
-    "migrated permissions access groups might not have been assigned the correct access",
-    "migrated billing and support case permission"
   ],
   "troubleshoot-policy-limit": [
     "error message that I reached the limit of access policies ",
