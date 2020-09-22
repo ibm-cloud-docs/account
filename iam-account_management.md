@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2020
 
-lastupdated: "2020-09-18"
+lastupdated: "2020-09-21"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, role management service, catalog management service, cloud shell service
 
@@ -206,7 +206,7 @@ You can give users access to manage service IDs and Identity Providers (IDPs) by
 ### {{site.data.keyword.cloud-shell_notm}} settings
 {: #shell-service-account-management}
 
-You can assign users access to view or update {{site.data.keyword.cloud-shell_notm}} settings for the account. Any user in the account can view {{site.data.keyword.cloud-shell_notm}} settings. Only the account owner or a user with the {{site.data.keyword.cloud-shell_notm}} administrator role can update the settings.
+You can assign users access to view and update {{site.data.keyword.cloud-shell_notm}} settings for the account. Only the account owner or a user with the {{site.data.keyword.cloud-shell_notm}} administrator role can view and update the settings.
 
 | Roles         | Actions                                                                                           |
 |---------------|----------------------------------------------------------------------------------------------------|
