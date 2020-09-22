@@ -217,7 +217,25 @@ You can assign users access to view or update {{site.data.keyword.cloud-shell_no
 {: caption="Table 8. Roles and example actions for the {{site.data.keyword.cloud-shell_notm}} service" caption-side="top"}
 {: #shell-service-acct-mgmt}
 
-| Roles         | Actions                                                                                                                                                    |
+### License and entitlement 
+{: #license-entitlement-management}
+
+You can use the license and entitlement service to assign users access to manage licenses and entitlements within an account. Any member of an account can view and use an account’s entitlement.  
+ 
+| Roles         | Actions                                                                                                    |
+|---------------|------------------------------------------------------------------------------------------------------------|
+| Viewer        |  Not applicable                                                                                            |
+| Operator      |  Not applicable                                                                                            |
+| Editor        |  Editors can create entitlements and view, update, bind, or delete only the entitlements they acquired.    |
+| Administrator |  Administrators can create entitlements and view, update, bind, or delete any entitlements in the account. |
+{: caption="Table 9. Roles and example actions for the license and entitlement service" caption-side="top"}
+
+### Role management
+{: #custom-roles-account-management}
+
+You can give users access to create, update, and delete custom roles for services in the account. 
+
+| Roles         | Actions                        |
 |---------------|------------------------------------|
 | Viewer        | Not applicable         |
 | Operator      | Not applicable             |
