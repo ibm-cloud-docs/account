@@ -19,7 +19,6 @@ subcollection: account
 {:note: .note}
 {:important: .important}
 
-**staging only** 
 # Allowing specific IP addresses 
 {: #ips}
 
