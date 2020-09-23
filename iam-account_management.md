@@ -198,9 +198,13 @@ You can give users access to manage service IDs and Identity Providers (IDPs) by
 | Roles         | Actions                                                                                           |
 |---------------|----------------------------------------------------------------------------------------------------|
 | Viewer        | View IDs              |
-| Operator      | Create and delete IDs and API keys <br><br> View, create, update, and delete IDPs          |
-| Editor        | Create, update, and delete IDs and API keys <br><br> View and update IDPs       |
-| Administrator | Create, update, and delete IDs and API keys <br><br> Assign access policies to IDs <br><br> View, create, update, and delete IDPs |
+| Operator      | Create and delete IDs and API keys <br><br> View, create, update, and delete IDPs <br><br> Update IAM account setting for service IDs and user API key creation         |
+| Editor        | Create, update, and delete IDs and API keys <br><br> View and update IDPs <br><br> Update IAM account setting for service IDs and user API key creation      |
+| Administrator | Create, update, and delete IDs and API keys <br><br> Assign access policies to IDs <br><br> View, create, update, and delete IDPs <br><br> Update IAM account setting for service IDs and user API key creation |
+| User API key creator | Can create API keys when the account setting to restrict API key creation is enabled. |
+| Service ID creator | Can create service IDs when the account setting to restrict service ID creation is enabled. |
+{: caption="Table 7. Roles and example actions for the IAM Identity service" caption-side="top"}
+{: #identity-service-acct-mgmt}
 {: caption="Table 7. Roles and example actions for the IAM Identity service" caption-side="top"}
 {: #identity-service-acct-mgmt}
 
