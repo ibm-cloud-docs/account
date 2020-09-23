@@ -74,6 +74,8 @@ Managing your account, resources, and access
             iam-usersetting.md
             iam-update_status.md
             iam-specific_ip.md
+            iam-restrict-api.md
+            iam-restrict-service-id.md
             iam-vpn_password.md
 
         {: .topicgroup}
