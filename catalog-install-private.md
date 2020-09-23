@@ -30,7 +30,7 @@ To complete this task, you need to be assigned the following roles:
 
 * Viewer role on the catalog management service
 * Administrator and manager roles on the cluster
-* Viewer role on all resource groups
+* Viewer role on all resource groups. Select **No service access**, a resource group name, then the role, and repeat for each resource group.
 
 For more information, see [Assigning catalog management access](/docs/account?topic=account-catalog-access).
 

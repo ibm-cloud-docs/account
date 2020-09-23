@@ -97,7 +97,7 @@ A logical way to assign access to your resource groups and the included resource
 
 For the Auditor-Group, assign two access policies that grant viewer access to the `CustApp-Test` and the `CustApp-Prod` resources and resource groups. For the Developer-Group, assign two access policies that grant editor access to the `CustApp-Dev` and `CustApp-Test` resources and resource groups. For the Admin-Group, assign three access policies that grant administrator access to all three `CustApp` resource groups and their resources.
 
-You can assign administrator access to everything in an account by creating an access group and assigning two policies to it. To create the first policy, use the **IAM services** option, and select **All Identity and Access enabled services** in **All resource groups** with the Administrator platform role, Manager service role, Administrator resource group access role assigned. To create the second policy, use the **Account Management** option, and select **All Account Management Services** with the administrator role assigned.
+You can assign administrator access to everything in an account by creating an access group and assigning two policies to it. To create the first policy, use the **IAM services** option, and select **All Identity and Access enabled services** in **Account** with the Administrator platform role and Manager service role. To create the second policy, use the **Account Management** option, and select **All Account Management Services** with the Administrator role assigned.
 {: tip}
 
 ### Sample access policies
@@ -122,7 +122,7 @@ Some of the users in your account need to manage the account and assign other us
 
 I want to grant all users various roles in the account and the default resource group. I don't need to create more resource groups to separate resources or restrict some users from accessing some of the resources. I can grant the users the roles that are appropriate for their needs by creating an access group for each group of users:
 
-* Create an access group and assign users to the group who need to manage the account and give others access. Then, assign a policy with an administrator role on the all IAM-enabled services, account management services, and all resource groups.
+* Create an access group and assign users to the group who need to manage the account and give others access. Then, assign a policy with an administrator role on the all IAM-enabled services and all account management services.
 * Create an access group and assign users to the group who need to create service instances. Then, assign a policy with an editor role on the default resource group and a policy with the editor role for any service the users need to create.
 * Create an access group and assign users to the group who need to use the service instances in a resource group. Then, assign a policy with a writer or reader role on the service instances that exist in the resource group.
 
@@ -136,7 +136,7 @@ The remaining users only need access to the resource group that's associated wit
 ### Multiple resource groups in my account
 {: #multi-rgs}
 
-Some of the users in my account are the administrators for a service, `Service A`, across my entire account, and they need access to all instances of that service and to create instances. These users don’t need access to other resources in the account. I create an access group and assign an administrator role on Service A at the account level, plus a viewer role for all resource groups in the account.
+Some of the users in my account are the administrators for a service, `Service A`, across my entire account, and they need access to all instances of that service and to create instances. These users don’t need access to other resources in the account. I create an access group and assign an administrator role on Service A at the account level, and a policy with the viewer role for any resource groups in the account that they need to be able to create instances in. You can do this by selecting **No service access**, then select the resource group, and at least viewer role for that resource group. Then, repeat for each resource group that they need access to.
 
 ### A user requiring access to a specific resource
 {: #user-specific-resource}

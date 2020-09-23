@@ -40,8 +40,8 @@ If you delete or edit an existing policy for a service ID currently being used, 
 {: note}
 
 If you want to enable a user full administrator access to complete [account management tasks](/docs/account?topic=account-account-services#account-services), such as inviting and removing users, viewing billing and usage, managing service IDs, managing access groups, managing user access, and access to all account resources, you must assign a user the following access:
-* A policy for **All Identity and Access enabled services** within **All resource groups** with the Administrator and Manager roles for the services and the Administrator role for all resource groups
-* A policy with Administrator role on **All Account Management Services** 
+* A policy for **All Identity and Access enabled services** within the **Account** with the Administrator and Manager roles.
+* A policy with Administrator role on **All Account Management Services** 	* A policy with Administrator role on **All Account Management Services**.
 
 ### Access to resources within a resource group
 {: #access_to_resources}
@@ -53,7 +53,7 @@ To assign access to all resources in a resource group or to just one service wit
 3. Add the user or service ID to an access group. Click **Add** for the access group that you want the user or service ID to belong to.
 4. (Optional) Manually assign additional access.
   1. Expand the Assign additional access section, and click **IAM services**.
-  2. Select the option for all services or just a specific service, and then specify if the access is in the **Account**, which means the user or service ID doesn't get access to the resource group that contains the resource, or select **All resource groups** or a specific resource group. By selecting a resource group option, you are prompted with roles for access to manage the resource group as well.
+  2. Select the option for all services or just a specific service, and then specify if the access is in the **Account**, which means the user or service ID doesn't get access to the resource group that contains the resource, or select a specific resource group. By selecting a resource group, you can select roles for access to manage the resource group as well.
   3. Select any combination of roles to assign, and click **Add** > **Assign**.
 
 ### Access to resources

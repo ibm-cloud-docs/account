@@ -41,7 +41,7 @@ In addition to access to the type of service or specific resource, the user must
 1. From the row for the user that you want to assign access, select the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, and click **Assign access**.
 1. Select **Assign users additional access**.
 1. Select the **IAM services** tile. 
-1. Select the type of access you want to assign, then select a specific resource group if you want to limit the user to view or manage only resources in that resource group, or select **All resource groups**. 
+Select the type of access you want to assign, then select the specific resource group to which you want to allow access.
 1. Next, select the role that you want the user to have. The Viewer role is sufficient to enable the user to access the resource. 
 1. Click **Add** to add the access to the access summary. 
 1. Click **Assign**. 

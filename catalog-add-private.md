@@ -32,7 +32,7 @@ To complete this tutorial, you need to be assigned the following roles:
 * Editor role on the catalog management service
 * Administrator and manager roles on the Kubernetes service
 * Manager role on the Schematics service
-* Viewer role on all resource groups
+* Viewer role on all resource groups. Select **No service access**, a resource group name, then the role, and repeat for each resource group.
 
 For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
 

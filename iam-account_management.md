@@ -205,8 +205,6 @@ You can give users access to manage service IDs and Identity Providers (IDPs) by
 | Service ID creator | Can create service IDs when the account setting to restrict service ID creation is enabled. |
 {: caption="Table 7. Roles and example actions for the IAM Identity service" caption-side="top"}
 {: #identity-service-acct-mgmt}
-{: caption="Table 7. Roles and example actions for the IAM Identity service" caption-side="top"}
-{: #identity-service-acct-mgmt}
 
 ### {{site.data.keyword.cloud-shell_notm}} settings
 {: #shell-service-account-management}
