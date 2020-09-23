@@ -66,6 +66,7 @@ If you're using the [Policy management API](https://cloud.ibm.com/apidocs/iam-po
 | Global catalog | serviceName=globalcatalog |
 | IAM Access groups service | serviceName=iam-groups |
 | IAM Identity service | serviceName=iam-identity |
+| {{site.data.keyword.cloud-shell_notm}} | serviceName=cloudshell |
 | License and entitlement | serviceName=entitlement | 
 | Role management | serviceName=iam-access-management |
 | Support center| serviceName=support |
