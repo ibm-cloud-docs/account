@@ -45,7 +45,7 @@ Now that the setting is enabled to restrict users from creating service IDs, you
 ## Assigning access to create service IDs with restrictions enabled
 {: #restrict-api-create-access}
 
-If the Restrict service ID creation setting is enabled, only users, including the account owner, assigned the `Service ID Creator` role on the IAM Identity Service can create service IDs.
+If the Restrict service ID creation setting is enabled, only users, including the account owner, assigned the `Service ID creator` role on the IAM Identity Service can create service IDs.
 
 The quickest way to assign a group of users the required access for creating service IDs is to create an access group and assign the group the required role. For more information about assigning access policies, see [Setting up access groups](/docs/account?topic=account-groups).
 {: tip}
