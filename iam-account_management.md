@@ -39,7 +39,7 @@ To assign access to one or all account management services, complete the followi
 5. Select any combination of roles or permissions to define the scope of access, and click **Add**.
 6. Click **Assign**. 
 
-To grant another user full access to the account for the purposes of managing user access and all IAM-enabled account resources, you must assign two policies. To create the first policy, use the **IAM services** option, and select **All Identity and Access enabled services** in the **Account** with the Administrator platform role and Manager service role assigned. To create the second policy, use the **IAM services** option, and select **No service access** in **All resource groups** with the administrator role assigned. This second policy provide access to view and manage all resource groups in the account.
+To grant another user full access to the account for the purposes of managing user access and all IAM-enabled account resources, you must assign two policies. To create the first policy, use the **IAM services** option, and select **All Identity and Access enabled services** in **Account** with the Administrator platform role and Manager service role. To create the second policy, use the **Account Management** option, and select **All Account Management Services** with the Administrator role assigned.
 {: tip}
 
 ### Using the CLI to assign access
