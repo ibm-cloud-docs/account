@@ -14,7 +14,7 @@ subcollection: account
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:external: target="_blank" .external}
+{:new_window: target="_blank"}
 {:tip: .tip}
 
 # Understanding API keys
@@ -69,6 +69,9 @@ On the {{site.data.keyword.cloud_notm}} API keys page, you can create, edit, or 
 {: #API-key-access}
 
 By default, you always have access to create your own API keys, and then update and delete them as needed. You also can manage your own classic infrastructure API key and any users' classic infrastructure API keys who you are an ancestor of in the classic infrastructure user hierarchy, meaning you invited the user or someone you invited to the account invited the user, and so on.
+
+If the Restrict API key creation IAM account setting is enabled, then everyone in the account is blocked from creating API keys, including the account owner, unless they are assigned explicit access. For more information, see [Restricting users from creating API keys](/docs/account?topic=account-allow-api-create).
+{: important}
 
 If you are the account owner or a user with the required access, you can access other user's API keys or service ID API keys by using the **View** filter on the API keys page. You can edit or delete the API keys depending on your assigned access. You see only the filter options for the type of API keys that you have access to view and manage.
 
