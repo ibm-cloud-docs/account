@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2020
 
-lastupdated: "2020-09-21"
+lastupdated: "2020-09-23"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, role management service, catalog management service, cloud shell service
 
@@ -66,6 +66,7 @@ If you're using the [Policy management API](https://cloud.ibm.com/apidocs/iam-po
 | Global catalog | serviceName=globalcatalog |
 | IAM Access groups service | serviceName=iam-groups |
 | IAM Identity service | serviceName=iam-identity |
+| {{site.data.keyword.cloud-shell_notm}} | serviceName=cloudshell |
 | License and entitlement | serviceName=entitlement | 
 | Role management | serviceName=iam-access-management |
 | Support center| serviceName=support |
