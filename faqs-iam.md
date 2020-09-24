@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2020
 
-lastupdated: "2020-08-31"
+lastupdated: "2020-09-24"
 
 keywords: frequently asked question, faq, iam
 
@@ -131,6 +131,18 @@ So, minimally the user must have the following access:
 
 * Viewer role or higher on the resource group itself
 * Editor role or higher on the service or all services in the resource group
+
+## How do I assign access to all resource groups?
+{: #all-rgs}
+
+To assign a user, service ID, or access group a policy on all resource groups, you have a couple of options:
+
+* A policy for **All Identity and Access enabled services** in the **Account** with the **Viewer** resource group access role selected. However, you must also assign at least one platform or service role to assign this type of policy.
+* A policy for **All Account Management Services** with the **Viewer** role or higher provides access to view all resource groups. However, be aware that this type of policy also assigns the role that you choose for each account management service, so it can be a powerful policy that enables a user to manage users, account settings, billing information, and more.
+* A policy with **No service access** and a particular resource group selected as well as a resource group access role assigned. You can repeat this type of policy as needed for each available resource group in the account.
+
+You can also assign access to individual resource groups with a policy on a service as long as you select a targeted resource group by name and assign a resource group access role.
+{: tip}
 
 ## What access enables a user to work with a single resource?
 {: #resources-and-rg}
