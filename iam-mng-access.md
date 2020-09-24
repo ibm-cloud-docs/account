@@ -41,7 +41,7 @@ If you delete or edit an existing policy for a service ID currently being used, 
 
 If you want to enable a user full administrator access to complete [account management tasks](/docs/account?topic=account-account-services#account-services), such as inviting and removing users, viewing billing and usage, managing service IDs, managing access groups, managing user access, and access to all account resources, you must assign a user the following access:
 * A policy for **All Identity and Access enabled services** within the **Account** with the Administrator and Manager roles.
-* A policy with Administrator role on **All Account Management Services** 	* A policy with Administrator role on **All Account Management Services**.
+* A policy with Administrator role on **All Account Management Services**.
 
 ### Access to resources within a resource group
 {: #access_to_resources}
