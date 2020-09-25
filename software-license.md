@@ -3,7 +3,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-05-26"
+lastupdated: "2020-09-25"
 
 keywords: license, entitlement, software, passport advantage, cloud pak, binding a license, PPA, part number
 
@@ -42,7 +42,7 @@ Complete the following steps to assign a license to an account:
 2. Click **Licenses**. 
 1. If you don't have any licenses assigned to the account, click **Check {{site.data.keyword.IBM_notm}} Passport Advantage** to find all the licenses that are tied to your IBMid. If you have existing licenses, click **Assign** to assign more licenses to the account.
 
-You can unassign a license from the account. Note, however, any Schematics workspaces in which the license is used will be impacted. 
+You can unassign a license from the account. Note, however, any {{site.data.keyword.bplong_notm}} workspaces in which the license is used will be impacted. 
 {: important}
 
 
