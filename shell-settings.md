@@ -39,7 +39,7 @@ Only account owners, users assigned the Administrator role for the {{site.data.k
 6. Select **Administrator**, and then click **Add**.
 7. In the Access summary pane, click **Assign**.
 
-For more information, see the IAM roles and actions for the [{{site.data.keyword.cloud-shell_notm}}](/docs/account?topic=account-account-services#shell-service-acct-mgmt) account management service.
+For more information, see the IAM roles and actions for the [{{site.data.keyword.cloud-shell_notm}}](/docs/account?topic=account-account-services#account-management-actions-roles) account management service.
 
 ## Enabling or disabling {{site.data.keyword.cloud-shell_short}} for an account
 {: #shell-settings-enable}
