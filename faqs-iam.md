@@ -6,9 +6,9 @@ copyright:
 
   years: 2018, 2020
 
-lastupdated: "2020-09-24"
+lastupdated: "2020-09-30"
 
-keywords: frequently asked question, faq, iam
+keywords: frequently asked questions for iam, iam faq, iam questions, identity and access management questions
 
 subcollection: account
 
@@ -265,3 +265,11 @@ All permissions that were previously assigned in your SoftLayer account can be m
 {: faq}
 
 You can [check the number of policies in an account](/docs/account?topic=account-policy-limits) by using the CLI to ensure that you don't hit the limit for your account. 
+
+## What does it mean for a user to be in pending state?
+{: #pending-user}
+{: faq}
+
+A user who is list as `Pending` is a user who has been invited to {{site.data.keyword.cloud_notm}} but who hasn't accepted their invitation. On the Users page, the management actions for these users include resending the invitation or cancelling the invitation. 
+
+When inspecting access group memberships or access policies in your account, you might see memberships or policies related to pending users that were created as part of the invite. These display with an IAM ID that uses the `BSS-`. This IAM ID is a placeholder for the memberships and policies until the user accepts the invitation. And, since the user hasn't registered with {{site.data.keyword.cloud_notm}}, they can't retrieve an IAM access token to leverage the assigned acccess.  When the user accepts the invitation and registers with {{site.data.keyword.cloud_notm}}, the ID in these memberships and policies is replaced with their assigned IAM ID.
