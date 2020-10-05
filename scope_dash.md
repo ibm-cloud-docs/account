@@ -60,10 +60,10 @@ The following table outlines the different actions and user permissions that are
 
 | Role     |	Actions  |	
 |------------|-------------------|
-| Dashboard owner  | Edit this dashboard   |
-| All users with the dashboard link   | Share this dashboard  |
-| Dashboard owner | Delete this dashboard  |
-| All users with the dashboard link    | Duplicate this dashboard |
+| Dashboard owner  | **Edit**   |
+| All users with the dashboard link   | **Share**   |
+| Dashboard owner | **Delete**   |
+| All users with the dashboard link    | **Duplicate**  |
 {: caption="Table 1. Roles for managing a scoped dashboard" caption-side="top"} 
 
 ### Sharing a dashboard
