@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020 
-lastupdated: "2020-08-10"
+lastupdated: "2020-10-05"
 
 keywords: dashboard, widgets display, manage visibility, customize, console, dashboard templates 
 
@@ -35,7 +35,7 @@ Aside from being able to view dashboards, users can view resource details that a
 
 To create a dashboard, you select a template and then add and remove widgets based on your needs. To begin creating a dashboard, complete the following steps:  
 
-1. In the {{site.data.keyword.cloud_notm}} console, click the Actions icon ![Action icon](../icons/action-menu-icon.svg), and select **New dashboard**. 
+1. In the {{site.data.keyword.cloud_notm}} console, click the Actions icon ![Action icon](../icons/action-menu-icon.svg), and select **Create a dashboard**. 
 2. Select a template from the available options, and then click **Next**. 
   * Blank: Create a dashboard from scratch by adding widgets that align with your workflow.
   * Default: The default template offers a broad coverage of development, management, and infrastructure widgets.
@@ -51,7 +51,7 @@ To create a dashboard, you select a template and then add and remove widgets bas
 ## Managing your dashboard 
 {: #manage-dash}
 
-After you create a dashboard, you can manage your dashboard by in the {{site.data.keyword.Bluemix_notm}} console by going to **Manage** > **Account**, and selecting **Account resources** > **Dashboards**. Or, from your dashboard click the Actions icon ![Action icon](../icons/action-menu-icon.svg ) > **Manage all dashboards**.
+After you create a dashboard, you can manage your dashboard by in the {{site.data.keyword.Bluemix_notm}} console by going to **Manage** > **Account**, and selecting **Account resources** > **Dashboards**. Or, from your dashboard click the Actions icon ![Action icon](../icons/action-menu-icon.svg ) > **Manage my dashboards**.
 
 Any dashboard that is shared with you appears on your dashboards page. 
 {: note}
@@ -74,14 +74,14 @@ You can share dashboards with users in your account to give them access to view 
 ### Adding widgets to your dashboard 
 {: #add-widgets}
 
-Only the user that created the dashboard can edit it. A dashboard includes widgets that are configured to display specific information that is relevant to you and your team. To edit a dashboard, click the Actions icon ![More Actions icon](../icons/action-menu-icon.svg) > **Edit this dashboard**. From here, you can use the dashboard pane to add and remove widgets, and adjust the scope of your resources. 
+Only the user that created the dashboard can edit it. A dashboard includes widgets that are configured to display specific information that is relevant to you and your team. To edit a dashboard, click the Actions icon ![More Actions icon](../icons/action-menu-icon.svg) > **Edit**. From here, you can use the dashboard pane to add and remove widgets, and adjust the scope of your resources. 
 
 ### Duplicating a dashboard
 {: #dupe-dash}
 
 You can duplicate a dashboard to include the same structure and layout without having to re-create the dashboard from scratch. The layout of the widgets and content that is included in the notes widget will be duplicated. You must define the scope and dashboard access separately. The scope and assigned access is not saved from the dashboard that was duplicated. 
 
- To duplicate a dashboard, click the Actions icon ![More Actions icon](../icons/action-menu-icon.svg) > **Duplicate this dashboard**.
+ To duplicate a dashboard, click the Actions icon ![More Actions icon](../icons/action-menu-icon.svg) > **Duplicate**.
 
 ### Reorganizing your dashboard
 {: #reorg-dashboard}
@@ -102,7 +102,7 @@ If you don't want to view a dashboard, you can remove the dashboard from your li
 You can delete a dashboard only if you created it. After you delete a dashboard, you can't recover it and it's deleted for all users.
 
 To delete a dashboard: 
-1. Expand the Actions icon ![Action icon](../icons/action-menu-icon.svg), and select **Delete this dashboard**
+1. Expand the Actions icon ![Action icon](../icons/action-menu-icon.svg), and select **Delete**.
 2. Click **Delete**. 
 
 
