@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-10-06"
+lastupdated: "2020-10-07"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -19,105 +19,73 @@ subcollection: account
 {:external: target="_blank" .external}
 {:beta: .beta}
 
-# Adding your software to a private catalog
+# Adding products to a private catalog
 {: #create-private-catalog}
 
-You can add products to a private catalog to centrally manage all usable services within your account. You can onboard your software by using a public or private repository. If you choose to onboard with a private repository, you can use a personal access token for verification or you can use a [secret](/docs/secrets-manager?topic=secrets-manager-secret-basics). 
+You can use private catalogs to onboard your own products and centrally manage access to them for all users in your account. 
 {: shortdesc} 
 
 ## Before you begin
 {: #prereq-create}
 
 * You need a [Kubernetes cluster](https://cloud.ibm.com/kubernetes/landing){: external} to validate your software.
-* You need to be assigned the following roles:
+* Make sure you're assigned the following roles:
   * Editor role on the catalog management service
   * Writer role on the {{site.data.keyword.secrets-manager_short}} service
   * Viewer role on all resource groups. Select **No service access**, a resource group name, then the role, and repeat for each resource group.
+ if you're using a secret as part of adding your product from a private repository, 
+  
   For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
 
-  If you're using a secret to onboard an offering from a private repository, you need to have additional access for [integrating with other services](/docs/secrets-manager?topic=secrets-manager-integrations). 
-  {: important}
+* If you're using a secret to add products from a private repository:
+  * [Writer service role for Secrets Manager](/docs/secrets-manager?topic=secrets-manager-iam)
+  * Additional access for [integrating with other services](/docs/secrets-manager?topic=secrets-manager-integrations).
+  
+  {{site.data.keyword.secrets-manager_full_notm}} is a beta service that is available for evaluation and testing purposes only. Beta services might be unstable or change frequently.
+  {: beta}
 
+## Creating your private catalog
+{: #create-catalog}
 
-## Creating a private catalog
-{: #create-private-catalog}
+1. Go to **Manage** > **Catalogs**, and select **Private catalogs**. 
+2. Click **Create**.
+3. Select **Product default** as the catalog type. 
+4. Enter a name and description of your catalog.
+5. Select whether to exclude all products in the {{site.data.keyword.cloud}} catalog from your catalog.
+6. Click **Create**.
 
-Before you can add an offering to a private catalog, you first need to create a private catalog. To create a private catalog, use the following steps:
-
-1. Go to **Manage** > **Catalogs** > **Private catalogs**. 
-1. Click **Create** to start creating a new private catalog.
-1. Enter the catalog name and choose whether you want to start with an empty catalog or with available products included, and click **Create**.
-
-## Adding software from a public repository
+## Adding a product to your catalog
 {: #add-public-repo}
 
-You can add your product from a public or private repository. To add from a public repository, use the following steps:
+Complete the following steps to add a product to your catalog:
 
-1. Go to **Manage** > **Catalogs** > **Private catalogs**.
-1. Select your private catalog and select **Private products**. 
-1. Click **Add**. 
+1. Click **Private catalogs**, and select your private catalog from the list.
+1. Click **Private products** > **Add**.
+1. Select whether you are adding your product from a private or public repository. 
 1. Enter your repository's URL or TGZ archive. 
-1. Select the Category and Deployment target. 
-1. Click **Add**.  
+1. If you're adding your product from a private repository, you can choose to provide a personal access token or you can use a secret. Instead of giving users a personal access token, you can give them access to a secret and add the token to a secret and centrally manage all tokens and access the secret allows.
 
-## Adding software from a private repository
-{: #add-private-repo}
+  * If you're using a personal access token, select **No** to indicate you aren't using a secret and provide your personal access token.
+  * If you're using a secret, select **Yes** and click **Select from Secrets Manager**. Select your service instance, secret group, and secret. If you don't see your secret, make sure you're using the correct secret group and service instance. 
+    
+    `No service instance available` might be displayed if you haven't created a secret or if you don't have the correct access to use secrets, even if you have service instances that are created. 
+    {: note}
 
-You can add your product from a public or private repository. When you use a private repository, you need to provide a personal access token or you can use a secret. 
-
-### Using a personal access token
-{: #add-software-token}
-
-To add from a private repository by using a personal access token, use the following steps:
-
-1. Go to **Manage** > **Catalogs** > **Private catalogs**.
-1. Select your private catalog and select **Private products**. 
-1. Click **Add**. 
-1. Select the **Private repository**. 
-1. Select **No** for using a secret and provide your personal access token for your private repository. Or you can [use a secret]
-1. Select the Category and Deployment target.
+1. Select a category and your deployment target.
 1. Click **Add**. 
 
-### Using a secret
-{: #add-use-secret}
-
-{{site.data.keyword.secrets-manager_short}} is a beta service that is available for evaluation and testing. Beta services might be unstable or change frequently.
-{: beta}
-
-You can use {{site.data.keyword.secrets-manager_full_notm}} to create a secret that can be used in place of an access token, API key, password, or any type of credential that you might use to access a confidential system. Instead of giving the user the Personal access token for a private repository, you can give the user access to the secret and add the token to a secret and centrally manage all tokens and access the secret allows. For more information, see [Getting started with Secrets Manager](/docs/secrets-manager?topic=secrets-manager-getting-started). 
-{: shortdesc} 
-
-To use a secret, you need the writer service role for Secrets Manager. For more information, see [Managing access for Secrets Manager](/docs/secrets-manager?topic=secrets-manager-iam). 
-
-If you're onboarding an offering to your private catalog, you need to have additional access for [integrating with other services](/docs/secrets-manager?topic=secrets-manager-integrations). 
-{: important}
-
-Complete the following steps to use a secret:
-
-1. Go to **Manage** > **Catalogs** > **Private catalogs**.
-1. Select your private catalog and select **Private products**. 
-1. Click **Add**. 
-1. Select the **Private repository**. 
-1. Select **Yes** to use a secret and click **Select from Secrets Manager**. 
-1. To select a secret, you need to drill down the choices to find the relevant secret. Select a **Service instance**. Select a **Secret group**. Select a **Secret**. If you don't see your secret, make sure you're using the correct secret group and service instance. 
-  Service instance displays `No service instance available` if you haven't created a secret or if you don't have the correct access to use secrets, even if you have service instances that are created. 
-  {: note}
-1. Select the Category and Deployment target. 
-1. Click **Add**. 
-
-
-## Publishing your software to your account
+## Publishing your product 
 {: #validating-software}
 
-When you publish your software to your account, you make it available for use by each user in that account. Before you can publish to your account, you need to review your software's version details and readme and then validate your software. After you verify your products information, use the following steps to validate:
+After you add your product to your catalog, you're ready to publish it to your account. First review the version details and readme and then validate your software. After you verify your product details, complete the following steps to validate it:
 
 1. Select **Validate product**. 
 1. Select a cluster. 
-1. Click **Validate** to ensure that your software can be installed successfully. This step is required before you can make it available for users in your account. This action can take several minutes. In the Validation summary section, the status is displayed as Validated when the deployment is complete. 
-1. After you validate your software, you can click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg), and select **Publish to account** to make your software available to all users in your account through your private catalog.
+1. Click **Validate** to ensure that your product can be installed successfully. This step is required before you can make it available for users in your account, and the validation can take several minutes. In the Validation summary section, the status is displayed as Validated when the deployment is complete. 
+1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg), and select **Publish to account** to make your prooduct available to all users in your account through your private catalog.
 
 
-## Add your software by using the CLI
+## Adding your product by using the CLI
 {: #create-cicd-product}
 
 Complete the following steps to add your software by using the CLI. You can use this task in a CI/CD process.
@@ -155,8 +123,4 @@ Complete the following steps to add your software by using the CLI. You can use 
     ibmcloud catalog offering publish-to-account --version-locator <LOCATOR>
     ```
     {: codeblock}
-    
-## Next steps
-{: #install-sw-next}
 
-A user installs the software from your private catalog. See [Installing software from your private catalog](/docs/account?topic=account-install-sw) for more information.
