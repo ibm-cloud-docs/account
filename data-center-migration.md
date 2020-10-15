@@ -4,7 +4,7 @@ copyright:
 
   years: 2020
 
-lastupdated: "2020-06-10"
+lastupdated: "2020-10-15"
 
 keywords: migrate, migrating data center, migrate resources
 
@@ -44,6 +44,7 @@ Complete the following steps to migrate resources to a new data center:
 1. Copy your data to a new server by using the following methods. You must establish connectivity between the old and new servers and have sufficient storage in the new server. 
   * Use [Secure Copy Protocol (SCP)](https://www.ibm.com/support/knowledgecenter/ST5Q4U_1.5.2/com.ibm.storwize.v7000.unified.152.doc/usgr_usng_scp.html){: external} to securely copy a file from source to destination.
   * Use [rsync](https://download.samba.org/pub/rsync/rsync.html){: external} if you need to copy multiple files. Rsync also copies directory structures and preserves file permissions. 
+  * Migrate your virtual server instance [from one classic data center to another](docs/virtual-servers?topic=virtual-servers-migrating-vsi-new-datacenter).
   * Migrate your [virtual server instance](/docs/vpc?topic=vpc-migrate-vsi-to-vpc) by creating an image template and deploying it in a new {{site.data.keyword.vpc_short}}.
   * Migrate your [VMware cluster](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-migrations) to a new data center by using HCX.
   * Migrate a local load balancer to [IBM Cloud Load Balancer](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started). For more information, see [IBM Cloud Load Balancer migration FAQs](/docs/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer).
