@@ -17,7 +17,7 @@ subcollection: account
 {:screen: .screen}
 {:external: target="_blank" .external}
 {:note: .note}
-{important: .important}
+{:important: .important}
 {:tip: .tip}
 
 # What is {{site.data.keyword.Bluemix_notm}} Identity and Access Management?
