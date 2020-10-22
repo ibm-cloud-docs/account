@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-09-02"
+lastupdated: "2020-10-22"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite
 
@@ -30,7 +30,7 @@ FAQs for your {{site.data.keyword.cloud}} account might include questions about 
 {: #create-account}
 {: faq}
 
-Go to [{{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com){: external}, and click **Create an {{site.data.keyword.Bluemix_notm}} account**.
+[Create an {{site.data.keyword.Bluemix_notm}} account](https://cloud.ibm.com/registration){: external} by signing up with your email address.
 
 ## How do I resolve errors that occur when creating my account?
 {: #account-error}
