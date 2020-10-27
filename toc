@@ -214,6 +214,7 @@ Managing your account, resources, and access
         /cli/cli-ibmcloud_commands_resource
 
     crn.md
+    iam-service-roles.md
     iam-login-flows.md
 
     {: .topicgroup}
