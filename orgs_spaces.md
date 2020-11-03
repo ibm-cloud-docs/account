@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-06-08"
+lastupdated: "2020-11-03"
 
 keywords: account, add orgs, add spaces, cloud foundry orgs
 
@@ -20,7 +20,7 @@ subcollection: account
 # Adding orgs and spaces
 {: #orgsspacesusers}
 
-As an {{site.data.keyword.Bluemix}} account owner, you can add Cloud Foundry orgs and spaces to your account. If you're an organization manager, you can manage the orgs in the account.
+As an {{site.data.keyword.Bluemix}} account owner, you can add Cloud Foundry orgs and spaces to your account. Only account owners can create new Cloud Found orgs. If you're an organization manager, you can manage the orgs in the account after they are created.
 {:shortdesc}
 
 ## Cloud Foundry org concepts
@@ -37,7 +37,7 @@ Orgs can span multiple regions, and they are defined by the following items:
 
 <dl>
 <dt>Spaces</dt>
-<dd>A sub-group within an org that you can use to organize applications, services, and users. Spaces are tied to a specific region in {{site.data.keyword.Bluemix_notm}}. </dd>
+<dd>A subgroup within an org that you can use to organize applications, services, and users. Spaces are tied to a specific region in {{site.data.keyword.Bluemix_notm}}. </dd>
 <dt>Users</dt>
 <dd>The role with basic permission in orgs and spaces. You must be assigned to an org before you can be granted other permissions to the spaces within the org. For more details, see [Cloud Foundry access](/docs/account?topic=account-cfaccess).</dd>
 <dt>Domains</dt>
@@ -60,7 +60,7 @@ If you have a billable account, you can add as many orgs as you need. Lite accou
 1. In the console, go to **Manage** > **Account**, and select **Account resources > Cloud Foundry orgs**. Click **Create**.
 2. Enter an org name. The name must be unique in {{site.data.keyword.Bluemix_notm}}.
 
-   If the org name is already in use by another {{site.data.keyword.Bluemix_notm}} Public, Dedicated, or Local user, you have to specify a different name.
+   If the org name is already in use by another {{site.data.keyword.Bluemix_notm}} Public, Dedicated, or Local user, you must specify a different name.
 3. Click **Add**.
 
 After you add the org, you're automatically assigned the Organization Manager permission, so you can edit the org name, add users, and create or delete spaces in the org.
