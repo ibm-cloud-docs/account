@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-09-17"
+lastupdated: "2020-11-05"
 
 keywords: account types, Lite, free account, trial account, paid account, buy account, account difference, compare account, subscription
 
@@ -80,6 +80,9 @@ You can create multiple resource groups to easily manage quota and view billing 
 
 Basic support is included with your {{site.data.keyword.Bluemix_notm}} Pay-As-You-Go. It is provided for non-production environments or workloads where traditional severities are not used and specific response times are not stipulated. Also, with a Pay-As-You-Go account, you can order Advanced or Premium support plans to get extra help with your production workloads. Learn more in [Support plans](/docs/get-support?topic=get-support-support-plans).
 
+<!--committed use information is staging only for now -hlucey-->
+Pay-As-You-Go accounts are eligible for the new Pay-As-You-Go with Committed Use model. For more information, see [Pay-As-You-Go with Committed Use](/docs/account?topic=account-accounts)
+
 ## Subscription account
 {: #subscription-account}
 
@@ -88,6 +91,9 @@ Subscription accounts offer many of the same benefits as Pay-As-You-Go accounts,
 When you purchase a subscription, you commit to a minimum spending amount for a certain period of time and receive a discount on the overall cost. For example, if you commit to spend $1,000 a month for 6 months, you might get a 5% discount. For the duration of the subscription, you get $6,000 of usage but pay only $5,700 for it. The larger the subscription, the better the discount. 
 
 Large organizations and other users with large cloud workloads can benefit from the savings and predictable billing that are provided by subscriptions. {{site.data.keyword.Bluemix_notm}} offers multiple types of subscriptions to fit your usage needs. 
+
+<!--committed use information is staging only for now -hlucey-->
+Subscription accounts are eligible for the new Pay-As-You-Go with Committed Use model. For more information, see [Pay-As-You-Go with Committed Use](/docs/account?topic=account-accounts)
 
 ### Platform subscriptions
 {: #platform-subscriptions}
@@ -123,6 +129,13 @@ After you purchase a service bundle subscription, you'll receive an email with a
 When your subscription is about to expire, you are notified by email 60, 30, 14, and 1 day before the expiration date of the last subscription on the account. After your subscription expires, your account is converted to a Pay-As-You-Go account, which means you pay only for billable services that you use with no contracts or commitments. In addition, the discounts that are associated with your subscription account won't apply to the Pay-As-You-Go account. Go to the [Subscriptions](https://{DomainName}/billing/subscriptions) page to check if any of your subscriptions are approaching their expiration date.
 
 You can work with [{{site.data.keyword.Bluemix_notm}} Sales](https://cloud.ibm.com/catalog?contactmodule){: external} to renew your subscription account. 
+<!--committed use information is staging only for now -hlucey-->
+## Pay-As-You-Go with Committed Use 
+{: #committment-model}
+
+The Pay-As-You-Go with Committed Use model can be applied to Pay-As-You-Go accounts or Subscription accounts. With this commitment model, you commit to spend a certain amount on IBM Cloud and receive discounts across the platform. You are billed monthly based on your usage and unlike a subscription, you will continue to receive a discount even after you reach your committed amount. 
+
+Advanced and premium support options are available for Pay-As-You-Go with Committed Use. Support pricing for committed use is split into two different teirs that depend on the price level of your commitment. For more information about support pricing for commitments, see [Pricing for Committed use]. 
 
 ## Upgrading your account
 {: #upgrade-lite-account}
