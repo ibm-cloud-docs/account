@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2020-11-04"
+lastupdated: "2020-11-05"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -2166,12 +2166,12 @@ Review the available platform and service roles available and the actions mapped
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `is.image.image.list` |  | Administrator, Editor, Operator, Viewer |
-| `is.image.image.read` |  | Administrator, Editor, Operator, Viewer |
-| `is.image.image.create` |  | Administrator, Editor |
-| `is.image.image.update` |  | Administrator, Editor |
-| `is.image.image.delete` |  | Administrator, Editor |
-| `is.image.image.provision` |  | Administrator, Editor, Operator |
+| `is.image.image.list` | List Images | Administrator, Editor, Operator, Viewer |
+| `is.image.image.read` | Read Images | Administrator, Editor, Operator, Viewer |
+| `is.image.image.create` | Create Images | Administrator, Editor |
+| `is.image.image.update` | Update Images | Administrator, Editor |
+| `is.image.image.delete` | Delete Images | Administrator, Editor |
+| `is.image.image.provision` | Provision Images | Administrator, Editor, Operator |
 | `is.image.image.operate` | Operate on Custom Images | Administrator, Editor, Operator |
 {: caption="Table 50. Service actions - Image Service for VPC" caption-side="top"}
 {: #actions-table50}
@@ -3552,19 +3552,19 @@ Review the available platform and service roles available and the actions mapped
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `is.key.key.list` |  | Administrator, Editor, Operator, Viewer |
-| `is.key.key.create` |  | Administrator, Editor |
-| `is.key.key.delete` |  | Administrator, Editor |
-| `is.key.key.read` |  | Administrator, Editor, Operator, Viewer |
-| `is.key.key.update` |  | Administrator, Editor |
-| `is.key.artifactattachment.create` |  | Administrator, Editor |
-| `is.key.artifactattachment.update` |  | Administrator, Editor |
-| `is.key.artifactattachment.delete` |  | Administrator, Editor |
-| `is.key.userdata.list` |  | Administrator, Editor, Operator |
-| `is.key.userdata.create` |  | Administrator, Editor |
-| `is.key.userdata.delete` |  | Administrator, Editor |
-| `is.key.userdata.read` |  | Administrator, Editor, Operator, Viewer |
-| `is.key.artifactattachment.read` |  | Administrator, Editor, Operator, Viewer |
+| `is.key.key.list` | List SSH Keys | Administrator, Editor, Operator, Viewer |
+| `is.key.key.create` | Create SSH Key | Administrator, Editor |
+| `is.key.key.delete` | Delete SSH Key | Administrator, Editor |
+| `is.key.key.read` | View SSH Key | Administrator, Editor, Operator, Viewer |
+| `is.key.key.update` | Update SSH Key | Administrator, Editor |
+| `is.key.artifactattachment.create` | Create Artifact Attachment | Administrator, Editor |
+| `is.key.artifactattachment.update` | Update Artifact Attachment | Administrator, Editor |
+| `is.key.artifactattachment.delete` | Delete Artifact Attachment | Administrator, Editor |
+| `is.key.userdata.list` | List User Data | Administrator, Editor, Operator |
+| `is.key.userdata.create` | Create User Data | Administrator, Editor |
+| `is.key.userdata.delete` | Delete User Data | Administrator, Editor |
+| `is.key.userdata.read` | Read User Data | Administrator, Editor, Operator, Viewer |
+| `is.key.artifactattachment.read` | Read Artifact Attachment | Administrator, Editor, Operator, Viewer |
 | `is.key.key.operate` | Operate on Key | Administrator, Editor, Operator |
 {: caption="Table 84. Service actions - SSH Key for VPC" caption-side="top"}
 {: #actions-table84}
@@ -3977,11 +3977,11 @@ Review the available platform and service roles available and the actions mapped
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `is.instance.instance.list` |  | Administrator, Editor, Operator, Viewer |
-| `is.instance.instance.create` |  | Administrator, Editor |
-| `is.instance.instance.read` |  | Administrator, Editor, Operator, Viewer |
-| `is.instance.instance.update` |  | Administrator, Editor |
-| `is.instance.instance.delete` |  | Administrator, Editor |
+| `is.instance.instance.list` | List Virtual Server Instance | Administrator, Editor, Operator, Viewer |
+| `is.instance.instance.create` | Create Virtual Server Instance | Administrator, Editor |
+| `is.instance.instance.read` | View Virtual Server Instance | Administrator, Editor, Operator, Viewer |
+| `is.instance.instance.update` | Update Virtual Server Instance | Administrator, Editor |
+| `is.instance.instance.delete` | Delete Virtual Server Instance | Administrator, Editor |
 | `is.instance.instance.operate` | As an administrator, an editor or an operator, you can operate on a virtual server instance | Administrator, Editor, Operator |
 | `is.instance.instance-template.read` | View an Instance Template  | Administrator, Editor, Operator, Viewer |
 | `is.instance.instance-template.create` | Create an Instance Template | Administrator, Editor |
