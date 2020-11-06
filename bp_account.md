@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-09-21"
+lastupdated: "2020-11-06"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources 
 
@@ -16,6 +16,7 @@ subcollection: account
 {:tip: .tip}
 {:note: .note}
 {:important: .important}
+{:term: .term}
 
 
 # Best practices for organizing resources and assigning access
