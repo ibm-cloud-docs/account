@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2020-11-09"
+lastupdated: "2020-11-10"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3173,6 +3173,7 @@ Review the available platform and service roles available and the actions mapped
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| SecretsReader | As a secrets reader, you can perform reader role actions, and read the secret payload. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 77. Service roles - Secrets Manager" caption-side="top"}
@@ -3188,21 +3189,22 @@ Review the available platform and service roles available and the actions mapped
 | `secrets-manager.secret-group.create` | Create secret groups to organize your secrets for access control. | Manager |
 | `secrets-manager.secret-group.update` | Update a secret group. | Manager |
 | `secrets-manager.secret-group.delete` | Delete a secret group. | Manager |
-| `secrets-manager.secret-group.read` | View the details of a secret group. | Manager, Reader, Writer |
-| `secrets-manager.secret-groups.list` | List the secret groups in your instance. | Manager, Reader, Writer |
+| `secrets-manager.secret-group.read` | View the details of a secret group. | Manager, Reader, SecretsReader, Writer |
+| `secrets-manager.secret-groups.list` | List the secret groups in your instance. | Manager, Reader, SecretsReader, Writer |
 | `secrets-manager.secret.create` | Create a secret. | Manager, Writer |
 | `secrets-manager.secret.import` | Import a secret. | Manager, Writer |
-| `secrets-manager.secret.read` | View the details of a secret. | Manager, Writer |
+| `secrets-manager.secret.read` | View the details of a secret. | Manager, SecretsReader, Writer |
 | `secrets-manager.secret.delete` | Delete a secret. | Manager |
-| `secrets-manager.secrets.list` | List the secrets in your instance. | Manager, Reader, Writer |
+| `secrets-manager.secrets.list` | List the secrets in your instance. | Manager, Reader, SecretsReader, Writer |
 | `secrets-manager.secret.rotate` | Rotate a secret. | Manager, Writer |
 | `secrets-manager.secret-metadata.update` | Update a secret. | Manager, Writer |
-| `secrets-manager.secret-metadata.read` | View the metadata of a secret. | Manager, Reader, Writer |
+| `secrets-manager.secret-metadata.read` | View the metadata of a secret. | Manager, Reader, SecretsReader, Writer |
 | `secrets-manager.secret-policies.set` | Set secret policies. | Manager |
 | `secrets-manager.secret-policies.get` | Get secret policies. | Manager |
 | `secrets-manager.secret-engine-config.set` | Set secret engine configuration. | Manager |
 | `secrets-manager.secret-engine-config.get` | Get secret engine configuration. | Manager |
-| `secrets-manager.endpoints.view` | Get service instance endpoints. | Manager, Reader, Writer |
+| `secrets-manager.endpoints.view` | Get service instance endpoints. | Manager, Reader, SecretsReader, Writer |
+| `secrets-manager.secret-versions.list` | List secret versions. | Manager, Reader, SecretsReader, Writer |
 {: caption="Table 77. Service actions - Secrets Manager" caption-side="top"}
 {: #actions-table77}
 {: tab-title="Actions"}
