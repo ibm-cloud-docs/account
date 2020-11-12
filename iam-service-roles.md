@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2020-11-11"
+lastupdated: "2020-11-12"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -2300,6 +2300,8 @@ Review the available platform and service roles available and the actions mapped
 | `kms.instance.readipwhitelistport` | Retrieve port associated with instance level ip whitelist policy. | Manager |
 | `kms.instance.readallowedipport` | Retrieve port associated with instance level allowed IP policy. | Manager |
 | `kms.secrets.sync` | Initiate a manual data synchronization request to the associated resources of a key. | Manager, Writer |
+| `kms.secrets.createalias` | Create an alias for an encryption key. | Manager, Writer |
+| `kms.secrets.deletealias` |  Delete an alias for an encryption key. | Manager, Writer |
 {: caption="Table 53. Service actions - Key Protect" caption-side="top"}
 {: #actions-table53}
 {: tab-title="Actions"}
