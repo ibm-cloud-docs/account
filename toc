@@ -162,24 +162,26 @@ Managing your account, resources, and access
             catalog-add-private.md
             catalog-update-private.md
             catalog-dep-restore.md
-
         catalog-settings.md
         catalog-access-reqs.md
 
     scope_dash.md
-    profile.md
-    contact_info.md
 
     {: .topicgroup}
-    Updating account settings
-        account_settings.md
-        shell-settings.md
-        email.md
-        eu_hipaa_supported.md
+    Managing your account
+        account-upgrade.md
+        create-mult-accounts.md
+        transfer.md
+        profile.md
+        contact_info.md
+        feature_codes.md
 
-    feature_codes.md
-    account-upgrade.md
-    transfer.md
+        {: .topicgroup}
+        Updating account settings
+            account_settings.md
+            shell-settings.md
+            eu_hipaa_supported.md
+            email.md
 
     {: .topicgroup}
     Managing orgs and spaces
@@ -196,9 +198,9 @@ Managing your account, resources, and access
         [Global Search](https://cloud.ibm.com/apidocs/search){: external}
         [Global Tagging](https://cloud.ibm.com/apidocs/tagging){: external}
         [IAM Access Groups API](https://cloud.ibm.com/apidocs/iam-access-groups){: external}
-        [IBM Cloud Open Service Broker](https://cloud.ibm.com/apidocs/resource-controller/ibm-cloud-osb-api){: external}
         [IAM Identity Services API](https://cloud.ibm.com/apidocs/iam-identity-token-api){: external}
         [IAM Policy Management API](https://cloud.ibm.com/apidocs/iam-policy-management){: external}
+        [IBM Cloud Open Service Broker](https://cloud.ibm.com/apidocs/resource-controller/ibm-cloud-osb-api){: external}
         [Resource Controller v2 API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller){: external}
         [Resource Controller v1 API](https://cloud.ibm.com/apidocs/resource-controller/resource-manager){: external}
         [User Management](https://{DomainName}/apidocs/user-management){: external}
