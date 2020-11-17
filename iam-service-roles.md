@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2020-11-16"
+lastupdated: "2020-11-17"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3862,22 +3862,14 @@ Review the available platform and service roles available and the actions mapped
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `user-management.email.retrieve` |  |  |
 | `user-management.user.create` | Add a user to the account | Administrator, Editor |
 | `user-management.user.update` | Update a user in the account | Administrator, Editor |
-| `user-management.user.system-update` |  |  |
 | `user-management.user.state-change` | Change the state of a user in the account | Administrator, Editor |
-| `user-management.user.system-state-change` |  |  |
-| `user-management.user.register` |  |  |
-| `user-management.user.verify` |  |  |
 | `user-management.user.delete` | Remove a user from the account | Administrator, Editor |
 | `user-management.user.retrieve` | Retrieve users from the account | Administrator, Editor, Operator, Viewer |
 | `user-management.invitation-email.create` | Resend email invitation | Administrator, Editor |
 | `user-management.preference.update` | Update user preferences | Administrator, Editor |
 | `user-management.preference.retrieve` | Retrieve user preferences | Administrator, Editor, Operator, Viewer |
-| `user-management.user-linkage.create` |  |  |
-| `user-management.user-linkage.update` |  |  |
-| `user-management.user-linkage.delete` |  |  |
 | `user-management.user-linkage.retrieve` | Retrieve user linkages | Administrator, Editor, Operator, Viewer |
 | `user-management.user-setting.update` | Update user settings | Administrator, Editor |
 | `user-management.user-setting.retrieve` | Retrieve user settings | Administrator, Editor, Operator, Viewer |
