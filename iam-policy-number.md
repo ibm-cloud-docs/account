@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-06-09"
+lastupdated: "2020-11-18"
 
 keywords: maximum limits, limits, maximum policies, check for limits, check policy number, increase policy limit, total number of account policies
 
@@ -28,17 +28,30 @@ If you aren't sure how many policies are in your account, and you want to ensure
 
 To get the total number of policies per account, you can use the [IAM Policy Management API](/apidocs/iam-policy-management#get-policies-by-attributes):
 
-1. Log in to [IBM Cloud CLI](/docs/cli?topic=cli-getting-started):
+1. Log in to {{site.data.keyword.cloud}} CLI. If you have multiple accounts, you are prompted to select which account to use. If you do not specify a region with the `-r` flag, you must also select a region.
+  ```
+  ibmcloud login
+  ```
+  {: codeblock}
+
+  If your credentials are rejected, you might be using a federated ID. To log in with a federated ID, use the `--sso` flag. See [Logging in with a federated ID](/docs/account?topic=account-federated_id) for more details.
+  {: tip}
+  
+  If it's your first time using the {{site.data.keyword.cloud_notm}} CLI, check out the [getting started tutorial](/docs/cli?topic=cli-getting-started).
+  
 2. Generate your IAM access token: 
     ```
-       ibmcloud iam oauth-tokens
+    ibmcloud iam oauth-tokens
     ```
-3. Enter the following `curl` command to get a total number of policies in one account. You might want to install `jq` to format the JSON, which is used in the folling examples: 
+    {: codeblock}
+    
+3. Enter the following `curl` command to get a total number of policies in one account. You can find the correct value for the `account_id` query parameter by running the `ibmcloud account list` command. The account ID is in the Account GUID column. You might want to install `jq` to format the JSON, which is used in the following examples: 
     ```
-       curl --location --request GET "https://iam.cloud.ibm.com/v1/policies?account_id=<account_id>" \
-         --header "Content-Type: application/json" \
-         --header "Authorization: <IAM TOKEN>" | jq -r .policies | jq '. | length'
+    curl --location --request GET "https://iam.cloud.ibm.com/v1/policies?account_id=<account_id>" \
+       --header "Content-Type: application/json" \
+       --header "Authorization: <IAM TOKEN>" | jq -r .policies | jq '. | length'
     ```
+    {: codeblock} 
 In the following example output the last line displays the total number of policies:
     ```
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -46,6 +59,7 @@ In the following example output the last line displays the total number of polic
       100  2919  100  2919    0     0   3918      0 --:--:-- --:--:-- --:--:--  3912
       351
     ```
+    
 
 ## Getting the total of a specific type of policies per account
 {: #total-policies-by-type}
