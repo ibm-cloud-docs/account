@@ -72,13 +72,19 @@ Log in, and select your account to run the appropiate CLI command. You might wan
     ```
        ibmcloud iam service-policies <service-id> -f --output JSON | jq '. | length'
     ```
+    {: codeblock}
+    
 * To get count of policies for a username(email):
     ```
        ibmcloud iam user-policies <username> -f --output JSON | jq '. | length'
     ```
+    {: codeblock}
+    
 * To get count of policies for an access group id:
     ```
        ibmcloud iam access-group-policies <access-group> -f --output JSON | jq '. | length'
+    ```
+    {: codeblock}
     ```
 
 ## Requesting a policy limit increase
