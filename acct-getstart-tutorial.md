@@ -2,9 +2,9 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-08-26"
+lastupdated: "2020-11-19"
 
-keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings
+keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, MFA, authetication, TOTP
 
 subcollection: account
 
@@ -85,8 +85,11 @@ Complete the following steps to enable MFA:
 1. Go to **Manage** > **Access (IAM)** > **Settings**.
 2. Click **Edit** for the Account login setting.
 3. Select **None**, **Non-federated users only**, or **All users** depending on which type of authentication you want to require.
-4. If you select the non-federated users only option, confirm that you understand the impact of requiring MFA.
-5. Click **Update**.
+
+  If you select the non-federated users only option, confirm that you understand the impact of requiring MFA.
+  {: note}
+
+4. Click **Update**.
 
 
 After you enable MFA for your account, complete the following steps to set up a time-based one-time passcode (TOTP) with an authenticator app that you'll use the next time that you log in. All users in your account must also set up the one-time passcode at their next login.
