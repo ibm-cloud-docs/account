@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-11-19"
+lastupdated: "2020-11-24"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, MFA, authetication, TOTP
 
@@ -78,9 +78,7 @@ Upgrade your Lite account to a Pay-As-You-Go account to access the full {{site.d
 {: #account-gs-mfa}
 {: step}
 
-An the account owner, you can set up  multifactor authentication (MFA) for users in your account.  
-
-Complete the following steps to enable MFA:
+An the account owner, complete the following steps to set up  multifactor authentication (MFA) for users in your account.  
 
 1. Go to **Manage** > **Access (IAM)** > **Settings**.
 2. Click **Edit** for the Account login setting.
@@ -92,7 +90,7 @@ Complete the following steps to enable MFA:
 4. Click **Update**.
 
 
-After you enable MFA for your account, complete the following steps to set up a time-based one-time passcode (TOTP) with an authenticator app that you'll use the next time that you log in. All users in your account must also set up the one-time passcode at their next login.
+After you enable MFA for your account, complete the following steps to set up a time-based one-time passcode (TOTP) with an authenticator app, such as {{site.data.keyword.IBM_notm}} Security Verify or Google Authenticator, that you'll use the next time you log in. All users in your account must also set up the one-time passcode at their next login.
 
 1. Log in with your IBMid and password.
 
@@ -100,7 +98,7 @@ After you enable MFA for your account, complete the following steps to set up a 
   {: note}
 
 2. Select **Verify** on the **Verification is required** screen to set up MFA with an authenticator app.
-3. Select **Setup your authenticator app** to get a one-time code sent to your email to continue setting up the authenticator app.
+3. Select **Setup your authenticator app** to get a one-time passcode sent to your email to continue setting up the authenticator app.
 4. Select **Verify**.
 5. Scan the bar code with your app, or click **Can't scan the bar code?** to enter a provided key.
 6. Click **Continue** to enter your code.
@@ -134,7 +132,7 @@ Before you start working with resources in your account, familiarize yourself wi
 {: #account-gs-paymentdetails}
 
 * To manage your payment method for an account that's billed in USD currency, go to **Manage > Billing and usage**, and select **Payments**.
-* To manage your payment method for an account that's billed in non-USD currency, go to [IBM Billing](https://myibm.ibm.com/billing/){: external}.
+* To manage your payment method for an account that's billed in non-USD currency, go to [{{site.data.keyword.IBM_notm}} Billing](https://myibm.ibm.com/billing/){: external}.
 
 ### Accessing your invoices
 {: #account-gs-invoicedetails}
