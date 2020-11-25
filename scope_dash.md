@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020 
-lastupdated: "2020-10-05"
+lastupdated: "2020-11-25"
 
 keywords: dashboard, widgets display, manage visibility, customize, console, dashboard templates 
 
@@ -60,9 +60,9 @@ The following table outlines the different actions and user permissions that are
 
 | Role     |	Actions  |	
 |------------|-------------------|
-| Dashboard owner  | **Edit**   |
+| Dashboard owner  | **Edit**    |
 | All users with the dashboard link   | **Share**   |
-| Dashboard owner | **Delete**   |
+| Dashboard owner | **Delete**  |
 | All users with the dashboard link    | **Duplicate**  |
 {: caption="Table 1. Roles for managing a scoped dashboard" caption-side="top"} 
 
@@ -74,7 +74,9 @@ You can share dashboards with users in your account to give them access to view 
 ### Adding widgets to your dashboard 
 {: #add-widgets}
 
-Only the user that created the dashboard can edit it. A dashboard includes widgets that are configured to display specific information that is relevant to you and your team. To edit a dashboard, click the Actions icon ![More Actions icon](../icons/action-menu-icon.svg) > **Edit**. From here, you can use the dashboard pane to add and remove widgets, and adjust the scope of your resources. 
+Only the user that created the dashboard can edit it. A dashboard includes widgets that are configured to display specific information that is relevant to you and your team. To edit a dashboard, click the Actions icon ![More Actions icon](../icons/action-menu-icon.svg) > **Edit**. From here, you can use the dashboard pane to add and remove widgets, and adjust the scope of your resources. To view a list of the available widgets, see [Dashboard widgets]().
+
+You can't directly edit the default console dashboard. When you click **Edit** on the default console dashboard, a duplicate version is created that you can edit. You can return to the original default console dashboard by selected the dashboard with the default label. {: note}
 
 ### Duplicating a dashboard
 {: #dupe-dash}
@@ -105,4 +107,24 @@ To delete a dashboard:
 1. Expand the Actions icon ![Action icon](../icons/action-menu-icon.svg), and select **Delete**.
 2. Click **Delete**. 
 
+##  Dashboard widgets 
+{: #dashboard-widget}
 
+When you customize a dashboard, you can add widgets to ensure what is displayed is relevant to you. The widgets range from development centric to management centric, and you can add and remove them at any time. The following widgets are available to add to a dashboard: 
+
+* Apps: Create and manage your apps by using this widget. 
+* Classic infrastructure: View all useful links for classic infrastructure users. 
+* Compliance and security: Monitor your overall security and compliance to internal and external regulations. 
+* For you: This widget displays recommendations that are selected for you. 
+* IBM Cloud status: Stay up to date on the status of resources in specific locations. 
+* Kubernetes: View and track your clusters after you create them. 
+* News: Stay up to date with the latest IBM Cloud News. 
+* Notes: You can use this widget to provide essential information that's custom to your team. 
+* Planned maintenance: View upcoming and planned maintenance events. 
+* Quick start: Personalized tasks to help you get started with IBM Cloud. 
+* Recent support cases: View a summary of your support cases. 
+* Resource summary: Track and view the status of your resources. 
+* Spending summary: View a summary of total spending over the past year.
+* Toolchains: Create and manage your toolchains. 
+* Usage: View billing usage details for your account. 
+* User access: View and manage users in your account. 
