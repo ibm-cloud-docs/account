@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2020-11-24"
+lastupdated: "2020-11-25"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1718,6 +1718,7 @@ Review the available platform and service roles available and the actions mapped
 | `hyperp-dbaas-mongodb.databases.list` | List all databases | Manager, Reader, Writer |
 | `hyperp-dbaas-mongodb.logs.list` | List database log files and audit log files | Manager, Reader, Writer |
 | `hyperp-dbaas-mongodb.logs.read` | Download a database log file or an audit log file | Manager |
+| `hyperp-dbaas-mongodb.clusters.resource.scale` | Scale cluster resources | Manager |
 | `hyperp-dbaas-mongodb.clusters.tasks.list` | List the tasks running or recently run on a cluster | Manager, Reader, Writer |
 | `hyperp-dbaas-mongodb.clusters.tasks.read` | Get the detailed information about a task | Manager, Reader, Writer |
 | `hyperp-dbaas-mongodb.clusters.configuration.update` | Update the database configuration of your cluster | Manager |
@@ -1755,6 +1756,7 @@ Review the available platform and service roles available and the actions mapped
 | `hyperp-dbaas-postgresql.databases.list` | List all databases | Manager, Reader, Writer |
 | `hyperp-dbaas-postgresql.logs.list` | List database log files and audit log files | Manager, Reader, Writer |
 | `hyperp-dbaas-postgresql.logs.read` | Download a database log file or an audit log file | Manager |
+| `hyperp-dbaas-postgresql.clusters.resource.scale` | Scale cluster resources | Manager |
 | `hyperp-dbaas-postgresql.clusters.tasks.list` | List the tasks running or recently run on a cluster | Manager, Reader, Writer |
 | `hyperp-dbaas-postgresql.clusters.tasks.read` | Get the detailed information about a task | Manager, Reader, Writer |
 | `hyperp-dbaas-postgresql.clusters.configuration.update` | Update the database configuration of your cluster | Manager |
