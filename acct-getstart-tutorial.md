@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-11-24"
+lastupdated: "2020-11-25"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, MFA, authetication, TOTP
 
@@ -74,35 +74,34 @@ Upgrade your Lite account to a Pay-As-You-Go account to access the full {{site.d
 2. Select **Account settings**, and click **Add credit card**.
 1. Enter your credit card information.
 
-## Set up account authentication
+## Set up account MFA
 {: #account-gs-mfa}
 {: step}
 
-An the account owner, complete the following steps to set up  multifactor authentication (MFA) for users in your account.  
+By default, users in your account authenticate themselves by logging in with a username and password. To require users to use more secure authentication methods, complete the following steps to set up multifactor authentication (MFA). 
 
 1. Go to **Manage** > **Access (IAM)** > **Settings**.
-2. Click **Edit** for the Account login setting.
-3. Select **None**, **Non-federated users only**, or **All users** depending on which type of authentication you want to require.
+2. Update the current authentication setting by clicking **Edit** in the Authentication section.
+3. Select the type of MFA to enable in your account.
 
-  If you select the non-federated users only option, confirm that you understand the impact of requiring MFA.
-  {: note}
+ * **MFA for users with an IBMid**: Require users to authenticate by using an IBMid, password, and time-based one-time passcode (TOTP). You can enable this option for all users or just non-federated users. 
+ * **MFA for all users (IBMid & supported IdPs)**: Require users to authenticate by using one of the following MFA methods. This option applies to users who are using either an IBMid or an external identity provider (IdP). 
+     * **Email-based MFA**: Users authenticate by using a security passcode that's sent via email. 
+     * **TOTP MFA**: Users authenticate by using a TOTP. 
+     * **U2F MFA**: Users authenticate by using a hardware security key that generates a six-digit numerical code. This method offers the highest level of security. 
 
 4. Click **Update**.
 
-
-After you enable MFA for your account, complete the following steps to set up a time-based one-time passcode (TOTP) with an authenticator app, such as {{site.data.keyword.IBM_notm}} Security Verify or Google Authenticator, that you'll use the next time you log in. All users in your account must also set up the one-time passcode at their next login.
+After you set up MFA in your account, create a time-based one-time passcode (TOTP) with an authenticator app, such as {{site.data.keyword.IBM_notm}} Security Verify or Google Authenticator, that you use the next time you log in. All users in your account must also create a TOTP with an authenticator app before they can log in again. 
 
 1. Log in with your IBMid and password.
 
   It might take up to 5 minutes for you to be able to log in after MFA is enabled.
   {: note}
 
-2. Select **Verify** on the **Verification is required** screen to set up MFA with an authenticator app.
-3. Select **Setup your authenticator app** to get a one-time passcode sent to your email to continue setting up the authenticator app.
-4. Select **Verify**.
-5. Scan the bar code with your app, or click **Can't scan the bar code?** to enter a provided key.
-6. Click **Continue** to enter your code.
-7. Enter your code and select **Verify**.
+2. Click **Verify** on the Verification is required screen to create a TOTP with an authenticator app.
+3. Click **Setup your authenticator app**.
+5. Use your app to scan the bar code, or select **Can't scan the bar code?** to enter the provided key.
 
 ## Estimate your costs
 {: #account-gs-estimate}
