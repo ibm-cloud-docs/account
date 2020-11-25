@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-10-22"
+lastupdated: "2020-11-25"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite
 
@@ -311,3 +311,13 @@ You can't edit the name of a tag. To rename a tag, remove it and reassign the re
 Contact [{{site.data.keyword.Bluemix_notm}} Support](https://{DomainName}/unifiedsupport/supportcenter){: external} to open a support case and request to delete your account. If you have data that is associated with your old account that you want to move to a new account, include this information in your email.
 
 Data in deleted accounts is not recoverable.
+
+## Can I edit the default dashboard?
+{: #access-dashboard}
+{: faq}
+
+You can't edit the default dashboard directly. However, you can create a duplicate version of it that you can edit and personalize however you want by clicking the Actions icon ![Action icon](../icons/action-menu-icon.svg) > **Edit** in {{site.data.keyword.Bluemix_notm}} console. 
+
+By maintaining the original version of the default dashboard, you can discover the latest widgets and functionalities, which get built and added over time. This way, you can always bring out the most of your workflow.
+
+You can also switch between the duplicate and original versions by selecting each one from your list of dashboards that's displayed on your active dashboard.
