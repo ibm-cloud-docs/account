@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2020
 
-lastupdated: "2020-09-21"
+lastupdated: "2020-11-30"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -17,14 +17,15 @@ subcollection: account
 {:screen: .screen}
 {:tip: .tip}
 {:note: .note}
+{:external: target="_blank" .external}
 
 # IAM access
 {: #userroles}
 
-All services that are organized in a resource group in your account are managed by using {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM). Account owners are automatically assigned the account administrator role for Cloud IAM. As the account administrator, you can assign and manage access for users, create resource groups, create access groups, view billing details and track usage, and create service instances. You provide access for users, service IDs, and access groups by creating policies that set a target for the subject of the policy to access and a role that defines what type of access that is allowed.
+All services that are organized in a resource group in your account are managed by using {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM). Account owners are automatically assigned the account administrator role. As the account administrator, you can assign and manage access for users, create resource groups, create access groups, view billing details and track usage, and create service instances. You provide access for users, service IDs, and access groups by creating policies that set a target for the subject of the policy to access and a role that defines what type of access that is allowed.
 {: shortdesc}
 
-## What are Cloud IAM policies and who can assign them?
+## What are IAM policies and who can assign them?
 {: #iamusermanpol}
 
 A policy grants a subject one or multiple roles to a set of resources so that specific actions can be taken within the context of the specified target resources.
@@ -35,7 +36,7 @@ The following graphic helps to explain how the IAM policy is created. Policies a
 
 You can assign and manage policies if you have the proper role. The following table shows policy management tasks and the role that is required for each.
 
-| Action                                                       | Required Role                                                                                                            |
+| Action                                                       | Required role                                                                                                            |
 |--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | Create a policy in an account for all services and instances | Account owner or administrator on all account management services and all Identity and Access enabled services           |
 | Create a policy on a service in an account                   | Account owner, administrator on all Identity and Access enabled services, or administrator on the service in the account |
@@ -58,31 +59,25 @@ You can provide fine-grained access for users, service IDs, or access groups by 
 * A single resource type within an instance, for example, a bucket in an {{site.data.keyword.objectstorageshort}} instance
 
 If you want to enable a user full administrator access to complete [account management tasks](/docs/account?topic=account-account-services#account-services), such as inviting and removing users, viewing billing and usage, managing service IDs, managing access groups, managing user access, and access to all account resources, you must assign a user the following access:
-* A policy for **All Identity and Access enabled services** within the **Account** with the Administrator and Manager roles.
-* A policy with Administrator role on **All Account Management Services**	
+* A policy for all identity and access enabled services within the account with the administrator and manager roles assigned.
+* A policy with the administrator role assigned on all account management services.
 
-## Cloud IAM roles
+## IAM roles
 {: #iamusermanrol}
 
-With Cloud IAM, you can manage and define access for users and resources in your account. Two types of roles can be assigned: platform management roles and service access roles.
+You can manage and define access based on specific roles for users and resources in your account. 
 
-* Platform management roles
+* Platform management roles cover a range of actions, including the ability to create and delete instances, manage aliases, bindings, and credentials, and manage access. The platform roles are administrator, editor, operator, viewer. Platform management roles also apply to [account management services](/docs/account?topic=account-account-services#account-management-actions-roles) that enable users to invite users, manage service IDs, access policies, catalog entries, and track billing and usage depending on their assigned role on an account management service.
 
-Platform management roles cover a range of actions, including the ability to create and delete instances, manage aliases, bindings, and credentials, and manage access. The platform roles are administrator, editor, operator, viewer. Platform management roles also apply to [account management services](/docs/account?topic=account-account-services#account-management-actions-roles) that enable users to invite users, manage service IDs, access policies, catalog entries, and track billing and usage depending on their assigned role on an account management service.
+* Service access roles define a user or service’s ability to perform actions on a service instance, such as accessing the console or performing API calls. The most common service access roles are manager, writer, and reader. Each service maps particular actions for working with the service to each of these roles.
 
-* Service access roles
+  You might not see all of the roles that are listed here as options when you assign policies in the UI because only the roles available for the service that you chose are displayed. For more information on what roles are enabled and what actions each access role allows for each service, see the documentation for that service.
+  {: note}
 
-Service access roles define a user or service’s ability to perform actions on a service instance, such as accessing the console or performing API calls. The most common service access roles are manager, writer, and reader. Each service maps particular actions for working with the service to each of these roles.
+* Custom roles for a service can be created on the IAM Roles page by the account owner or a user assigned the administrator role on the role management service. 
 
-You might not see all of the roles that are listed here as options when you assign policies in the UI because only the roles available for the service that you chose are displayed. For more information on what roles are enabled and what actions each access role allows for each service, see the documentation for that service.
-{: note}
-
-* Custom roles
-
-An account owner or a user assigned the Administrator role on the Role management service can create custom roles for a service on the IAM Roles page. 
-
-You can review the available roles and associated actions for a particular service by going to the [Roles](cloud.ibm.com/iam/roles) page, and selecting the service that you want to learn more about. This is the same page where you can create a custom role in the console.
-{: note}
+  You can review the available roles and associated actions for a particular service by going to the [Roles](https://cloud.ibm.com/iam/roles){: external} page, and selecting the service that you want to learn more about. This is the same page where you can create a custom role in the console.
+  {: note}
 
 ### Platform management roles
 {: #platformroles}
@@ -127,7 +122,7 @@ Service access roles enable users to be assigned different levels of permission 
 The actions that can be taken based on each assigned role vary based on the service that you selected for the policy. Not all services use these types of roles. See the documentation for the service for more details.
 {: note}
 
-| Service Access Role | Actions                                                                                       | Example Actions for {{site.data.keyword.objectstorageshort}} Service |
+| Service access role | Actions                                                                                       | Example actions for {{site.data.keyword.objectstorageshort}} service |
 |---------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | Reader              | Perform read-only actions within a service, such as viewing service-specific resources        | List and download objects                                            |
 | Writer              | Permissions beyond the reader role, including creating and editing service-specific resources | Create and destroy buckets and objects                               |
@@ -140,4 +135,3 @@ The actions that can be taken based on each assigned role vary based on the serv
 An account owner or a user assigned the Administrator role on the Role management service can create custom roles for a service on the IAM Roles page. Any number of actions that are available for a service for any platform or service role can be combined and added to a custom named role. 
 
 After the role is created, any user who can assign access for that service sees the new custom role as an option. For more information, see [Creating custom roles](/docs/account?topic=account-custom-roles).
-
