@@ -35,7 +35,7 @@ The following two types of MFA options might be enabled for your account:
 IBMid MFA satisfies the authentication requirement so that you are not prompted for any other types of MFA even if they are enabled. So, if an account to which you are a member has this option turned on, this is the only type of MFA that you are prompted for at login. If you are a new user, use the ID-based IBMid MFA option to ensure that your login is easy and secure.
 {: tip}
 
-## ID-based MFA option
+## ID-based MFA options
 {: #id-based}
 
 The account owner or an administrator for the billing service can enable MFA at the account level, and it applies to all account resources. You can update the MFA settings for your account from the **Manage** > **Access (IAM)** > **Settings** page in the {{site.data.keyword.Bluemix}} console.
