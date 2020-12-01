@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-11-25"
+lastupdated: "2020-12-01"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, MFA, authetication, TOTP
 
@@ -18,6 +18,7 @@ completion-time: 60m
 {:screen: .screen}
 {:tip: .tip}
 {:note: .note}
+{:important: .important}
 {:external: target="_blank" .external}
 {:step: data-tutorial-type='step'}
 
@@ -79,6 +80,9 @@ Upgrade your Lite account to a Pay-As-You-Go account to access the full {{site.d
 {: step}
 
 By default, users in your account authenticate themselves by logging in with a username and password. To require users to use more secure authentication methods, complete the following steps to set up multifactor authentication (MFA). 
+
+Setting up MFA in your account affects all members of the account. This means that if users of your account are members of multiple {{site.data.keyword.cloud_notm}} accounts, they must enroll for MFA at their next login even if they don't intend to use resources in the secured account. 
+{: important}
 
 1. Go to **Manage** > **Access (IAM)** > **Settings**.
 2. Update the current authentication setting by clicking **Edit** in the Authentication section.
