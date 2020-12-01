@@ -4,7 +4,7 @@ copyright:
 
   years: 2020
 
-lastupdated: "2020-10-15"
+lastupdated: "2020-12-01"
 
 keywords: migrate, migrating data center, migrate resources
 
@@ -24,7 +24,7 @@ subcollection: account
 {{site.data.keyword.IBM}} continually updates and modernizes data centers to give you higher levels of performance. Some data centers aren't able to be upgraded, so they must be closed and you must migrate your resources to a different data center.
 {:shortdesc}
 
-Throughout the data center migration process, help is available. To identify your impacted servers, take advantage of special offers, or learn about recommended configurations, use one of the following options to contact the {{site.data.keyword.IBM_notm}} 24x7 Client Success team: 
+Throughout the data center migration process, help is available. To take advantage of special offers, or learn about recommended configurations, use one of the following options to contact the {{site.data.keyword.IBM_notm}} 24x7 Client Success team: 
   * [Live chat](https://www.ibm.com/cloud/data-centers/?focusArea=WCP%20-%20Pooled%20CSM&contactmodule){: external}
   * Phone: (US) 866-597-9687; (EMEA) +31 20 308 0540; (APAC) +65 6622 2231
 
@@ -35,7 +35,12 @@ For information about which data centers are closing, see [Withdrawal of support
  
 Complete the following steps to migrate resources to a new data center: 
 
-1. Identify any virtual server instances or bare metal servers that are currently running on the data centers that are set to close. For more information, contact the Client Success team [Live chat](https://www.ibm.com/cloud/data-centers/?focusArea=WCP%20-%20Pooled%20CSM&contactmodule){: external}. 
+1. Identify any virtual server instances or bare metal servers that are currently running on the data centers that are set to close.  
+   1. Begin by [viewing all subnets](/docs/subnets?topic=subnets-view-all-subnets). 
+   1. [Filter the list of subnets](/docs/subnets?topic=subnets-view-all-subnets#filter-details) by location, such as `Dallas 5`. 
+   1. In the resulting filtered list, click the name of the VLAN in the **VLAN** column. To identify a specific POD within a data center, check the VLAN name for a string like, `bcr02` or `fcr04`. `Bcr02` = backend customer router, POD 2. `Fcr04` = frontend customer router, POD 4. 
+   1. On the **Instance detail** page, locate the **Devices** section that identifies virtual server instances and bare metal servers that are provisioned in the VLAN. 
+   1. To identify all devices in the data center, complete these steps for each VLAN in the data center. 
 1. Order replacement servers in new data centers. For more information, see the following documentation:
   * [Planning for VPC instances](/docs/vpc?topic=vpc-vsi_best_practices)
   * [Getting started with virtual servers](/docs/virtual-servers?topic=virtual-servers-getting-started-tutorial)
@@ -52,13 +57,4 @@ Complete the following steps to migrate resources to a new data center:
 
   Copy only applications and application data between systems. Copying older versions of operating system files to a newer version can cause problems. Shut down databases before you copy them between the systems to ensure that the data is consistent. When migrating database data, migrate the data in a way that doesn’t limit your options to import it into the new system. Rather than copying database data from system to system, consider exporting it to a format so you can import it to a newer database. Flat text files, CSV files, and other files provide more options than using proprietary or closed file formats when it comes to moving data between systems. Always test your data migration approaches on a small set of test data before officially copying.
 1. Cancel your servers. You continue to be invoiced for the old servers until you cancel them. For more information, see [Device types and actions](/docs/virtual-servers?topic=virtual-servers-managing-virtual-servers#device-types-and-actions). 
-
-
-
-
-
-
-
-
-
 
