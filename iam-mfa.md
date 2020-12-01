@@ -20,7 +20,7 @@ subcollection: account
 {:tip: .tip}
 {:note: .note}
 
-# Requiring MFA for users in your account
+# Enabling MFA for your account
 {: #enablemfa}
 
 As an {{site.data.keyword.Bluemix}} account owner or administrator for the billing service, you can choose to require multifactor authentication (MFA) for every user in the account or just users with non-federated IDs who do not use single sign-on (SSO). 
@@ -79,7 +79,7 @@ If you encounter an error message that states that you've already set up authent
 {: note}
 {: #mfahelp}
 
-## Disabling MFA for all users in your account
+## Disabling MFA
 {: #disablemfa}
 
 To disable MFA, you must be the account owner or an administrator for the account management billing service. Disabling MFA does not affect users that are already logged in. The action takes effect at all new logins.
