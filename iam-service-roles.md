@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2020-12-01"
+lastupdated: "2020-12-02"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3334,7 +3334,7 @@ Review the available platform and service roles available and the actions mapped
 | `security-advisor.keys.read` | Role to read BYOK/KYOK configurations of the service | Manager, Reader, Writer |
 | `security-advisor.keys.write` | Role to create BYOK configurations of the service | Manager |
 | `security-advisor.keys.delete` | Role to delete BYOK configurations of the service | Manager |
-| `security-advisor.activity-insights-config.test` | Test activity insights configuration | Writer |
+| `security-advisor.activity-insights-config.test` | Test activity insights configuration | Manager, Writer |
 {: caption="Table 79. Service actions - Security Advisor" caption-side="top"}
 {: #actions-table79}
 {: tab-title="Actions"}
