@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2020-12-07"
+lastupdated: "2020-12-08"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -2308,6 +2308,7 @@ Review the available platform and service roles available and the actions mapped
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | ReaderPlus | As a reader plus, you can perform read-only actions within Key Protect such as viewing service-specific resources. You can also access key material for standard keys. |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 54. Service roles - Key Protect" caption-side="top"}
@@ -2357,6 +2358,7 @@ Review the available platform and service roles available and the actions mapped
 | `kms.secrets.sync` | Initiate a manual data synchronization request to the associated resources of a key. | Manager, Writer |
 | `kms.secrets.createalias` | Create an alias for an encryption key. | Manager, Writer |
 | `kms.secrets.deletealias` |  Delete an alias for an encryption key. | Manager, Writer |
+| `kms.governance.configread` | Retrieve current configuration of the queried resources. | Service Configuration Reader |
 {: caption="Table 54. Service actions - Key Protect" caption-side="top"}
 {: #actions-table54}
 {: tab-title="Actions"}
