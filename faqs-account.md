@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-11-25"
+lastupdated: "2020-12-09"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite
 
@@ -200,11 +200,11 @@ Your account might be deactivated for the following reasons:
 
 If you believe that your account was deactivated in error, contact support by calling 1-866-325-0045 and selecting the third option.
 
-## How do I get support?
+## What are my options for contacting {{site.data.keyword.cloud_notm}} Support?
 {: #contactsupport}
 {: faq}
 
-Click **Support** from the console menu bar to go to the Support Center. For more information, see [Getting support](/docs/get-support?topic=get-support-support-plans).
+From the console menu bar, click **Support** to go to the Support Center and to view your current support plan. For more information, see [Getting support](/docs/get-support?topic=get-support-support-plans).
 
 ## Can I view a list of accounts that I own?
 {: #accounts-owned}
