@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-11-30"
+lastupdated: "2019-12-10"
 
 keywords: enterprise, enterprise account, video, what is an enterprise, introduction, intro
 
@@ -24,7 +24,7 @@ subcollection: account
 With an {{site.data.keyword.Bluemix}} enterprise, you can centrally manage billing and track resource usage across multiple accounts. What is an enterprise, and how is different from a typical stand-alone account? Find out about how you can use enterprises to better manage your accounts in this video.
 {:shortdesc}
 
-![Introducing {{site.data.keyword.cloud_notm}} enterprises](https://www.youtube.com/embed/3-LEmMamaxA){: video output="iframe" data-script="#video-transcript-enterprise" id="youtubeplayer" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
+![Introducing {{site.data.keyword.cloud_notm}} enterprises](https://video.ibm.com/embed/recorded/128825312){: video output="iframe" data-script="#video-transcript-enterprise" id="watson-media-player" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
 
 ## Video transcript
 {: #video-transcript-enterprise}
