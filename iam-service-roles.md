@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2020-12-10"
+lastupdated: "2020-12-11"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3180,7 +3180,7 @@ Review the available platform and service roles available and the actions mapped
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-| SecretsReader | As a secrets reader, you can perform reader role actions, and read the secret payload. |
+| SecretsReader | As a secrets reader, you can perform read-only actions, and you can also access the secret data that is associated with a secret. A secrets reader can't create secrets or modify the value of an existing secret. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 76. Service roles - Secrets Manager" caption-side="top"}
