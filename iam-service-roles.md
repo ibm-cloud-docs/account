@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2020-12-14"
+lastupdated: "2020-12-15"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -2075,9 +2075,25 @@ Review the available platform and service roles available and the actions mapped
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 
+| Role | Description |
+| ----- | :----- |
+| Cloud Developer | As a cloud developer, you can create Cloud Shell environments to manage IBM Cloud resources and develop applications for IBM Cloud (Web Preview enabled). |
+| Cloud Operator | As a cloud operator, you can create Cloud Shell environments to manage IBM Cloud resources. |
+| File Manager | As a file manager, you can create Cloud Shell environments to manage IBM Cloud resources and manage files in your workspace (File Upload and File Download enabled). |
+{: row-headers}
+{: caption="Table 46. Service roles - IBM Cloud Shell" caption-side="top"}
+{: #service-roles-table46}
+{: tab-title="Service roles"}
+{: tab-group="cloudshell"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `cloudshell.account-settings.update` | Update cloud shell account setting | Administrator |
+| `cloudshell.account-settings.update` | The ability to update Cloud Shell account settings. | Administrator |
+| `cloudshell.server.create` | The ability to create Cloud Shell environments. | Administrator, Cloud Developer, Cloud Operator, File Manager |
+| `cloudshell.server.preview-web` | The ability to preview web applications in Cloud Shell (Web Preview enabled). | Administrator, Cloud Developer |
+| `cloudshell.server.manage-file` | The ability to manage files in the Cloud Shell workspace (File Upload and File Download enabled). | Administrator, File Manager |
 {: caption="Table 46. Service actions - IBM Cloud Shell" caption-side="top"}
 {: #actions-table46}
 {: tab-title="Actions"}
