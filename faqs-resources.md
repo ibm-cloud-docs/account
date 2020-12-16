@@ -95,18 +95,18 @@ Yes, you can. To access your usage dashboard, go to **Manage** &gt; **Billing an
 
 Any user assigned the correct access for the specific type of resource can add tags. When a resource is tagged, it is visible to all users who have read access to the resource. However, to add or remove a tag from a resource, certain access roles or permissions are required depending on the resource type. For example, for any resources that are managed by using IAM, you must be assigned the Editor or Administrator role on the resource. For more information about the required access for other resources types, see [Tagging permissions](/docs/account?topic=account-access#tagging-permissions).
 
-## Where can I find my in the {{site.data.keyword.Bluemix_notm}} console?
+## Where can I find my resources in the {{site.data.keyword.Bluemix_notm}} console?
 {: #slitems}
 {: faq}
 
-To view your apps, services, devices, storage, and other resources in the console, you can choose from the following options:
+To view all of your resources, select from the following options:
 
-* To view all of your resources, select from the following options:
-  * Click the **Menu icon** ![Menu icon](../icons/icon_hamburger.svg) > **Resource List**.
-  * Click the **Menu icon** ![Menu icon](../icons/icon_hamburger.svg) > **Dashboard**, and click any of the links that are listed in the Resource summary widget.
+* Click the **Menu icon** ![Menu icon](../icons/icon_hamburger.svg) > **Resource List**.
+* Click the **Menu icon** ![Menu icon](../icons/icon_hamburger.svg) > **Dashboard**, and click any of the links that are listed in the Resource summary widget.
   
-* To view just your classic infrastructure resources, select from the following options:
-  * Click the **Menu icon** ![Menu icon](../icons/icon_hamburger.svg) > **Classic Infrastructure**.
-  * Click the **Menu icon** ![Menu icon](../icons/icon_hamburger.svg) > **Dashboard**, and click any of the links that are listed in the Classic infrastructure widget.
+To view just your classic infrastructure resources, select from the following options:
+
+* Click the **Menu icon** ![Menu icon](../icons/icon_hamburger.svg) > **Classic Infrastructure**.
+* Click the **Menu icon** ![Menu icon](../icons/icon_hamburger.svg) > **Dashboard**, and click any of the links that are listed in the Classic infrastructure widget.
 
 
