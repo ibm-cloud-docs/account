@@ -293,3 +293,23 @@ You can't edit the default dashboard directly. However, you can create a duplica
 By maintaining the original version of the default dashboard, you can discover the latest widgets and functionalities, which get built and added over time. This way, you can always bring out the most of your workflow.
 
 You can also switch between the duplicate and original versions by selecting each one from your list of dashboards that's displayed on your active dashboard.
+
+## What is Cloud Foundry?
+{: #cloud-foundry}
+{: faq}
+
+Cloud Foundry is an open source platform as a service (PaaS) option available through {{site.data.keyword.Bluemix_notm}} Public for building and deploying applications on the cloud. Cloud Foundry organizations and spaces are used to organize resources and apps available within specific regions.
+
+For more information about managing orgs and spaces, see [Adding orgs and spaces](/docs/account?topic=account-orgsspacesusers). And, if you’re interested in learning more about how to provide access to resources in a Cloud Foundry space, see [Cloud Foundry access](/docs/account?topic=account-cfaccess).
+
+## Can I move an org to another account?
+{: #move-org-diff-account}
+{: faq}
+
+Currently, you can't move an org to a different account. However, you can re-create the org with the same credentials in a different account to mimic this functionality. For more information, see [Adding orgs and spaces](/docs/account?topic=account-orgsspacesusers#createorg).
+
+## Which Cloud Foundry regions can I use?
+{: #whichregions}
+{: faq}
+
+In a Lite account, you can work in only one region. In a Pay-As-You-Go or Subscription account, you can access all available regions.
