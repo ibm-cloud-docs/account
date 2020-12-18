@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-12-09"
+lastupdated: "2020-12-18"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite
 
@@ -26,17 +26,17 @@ subcollection: account
 FAQs for your {{site.data.keyword.cloud}} account might include questions about upgrading an account, reassigning users, resolving account errors, or tagging resources in an account. To find all FAQs for {{site.data.keyword.cloud_notm}}, see our [FAQ library](https://{DomainName}/docs/faqs).
 {: shortdesc}
 
-## How do I create an account?
+## How do I create an {{site.data.keyword.Bluemix_notm}} account?
 {: #create-account}
 {: faq}
 
-[Create an {{site.data.keyword.Bluemix_notm}} account](https://cloud.ibm.com/registration){: external} by signing up with your email address.
+You can create an account by [registering](https://cloud.ibm.com/registration){: external} your email address.
 
 ## How do I resolve errors that occur when creating my account?
 {: #account-error}
 {: faq}
 
-If you are able to log in to an {{site.data.keyword.Bluemix_notm}} account, go to [Support](https://cloud.ibm.com/unifiedsupport/supportcenter) and choose one of the following options.
+If you are able to log in to an {{site.data.keyword.Bluemix_notm}} account, go to the [Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} and choose one of the following options.
 
 * If you have advanced or premium support, click **Live chat** to talk to an {{site.data.keyword.Bluemix_notm}} support representative.
 * Create a support case by clicking **Create a case** from the Need more help? section.
@@ -59,7 +59,7 @@ To switch to a different payment method, select **Pay with Other** and then clic
 {: faq}
 {: support}
 
-To upgrade your Lite account, go to [Account settings](https://{DomainName}/account/settings). In the Account Upgrade section, click **Add credit card** to upgrade to a Pay-As-You-Go account, or click **Upgrade** for a Subscription account. 
+To upgrade your Lite account, go to your [account settings](https://{DomainName}/account/settings). In the Account Upgrade section, click **Add credit card** to upgrade to a Pay-As-You-Go account, or click **Upgrade** for a Subscription account. 
 
 See [Upgrading your account](/docs/account?topic=account-upgrading-account) for more information.
 
@@ -67,7 +67,7 @@ See [Upgrading your account](/docs/account?topic=account-upgrading-account) for 
 {: #nochange}
 {: faq}
 
-Yes, when you upgrade to a billable account, you can continue to use the instances you created with your Lite account.
+Yes, when you upgrade to a Pay-As-You-Go or Subscription account, you can continue to use the instances you created with your Lite account.
 
 ## Can I convert my account?
 {: #convertacct}
@@ -86,46 +86,29 @@ Yes, the following options are available depending on your account type:
 
 {{site.data.keyword.Bluemix_notm}} trial accounts are available for faculty and students at accredited academic institutions. To qualify for a trial account, go to [Harness the Power of IBM](https://ibm.biz/academic){: external} and validate your institution credentials. Unlike Lite accounts, trial accounts expire after 30 days.
 
-## How do I cancel my account?
+## Can I cancel my account?
 {: #cancelaccount}
 {: faq}
 {: support}
 
-We're sad to see you go! If there's any way we can assist you with your account before you go, reach out to us by contacting support.
+We're sad to see you go! If there's any way we can assist you before you decide to cancel your account, [reach out to us](https://cloud.ibm.com/unifiedsupport/supportcenter){: external}.
 
-If you do decide to leave, how you cancel your account depends on your account type. You can check your account type by going to the [Account settings](https://cloud.ibm.com/account/settings) page in the console and looking in the Account type section. Only account owners can cancel accounts.
-
-* For Pay-As-You-Go or Subscription accounts, the quickest way to cancel your account is to contact us through [live chat](https://{DomainName}/unifiedsupport/supportcenter) or by calling 1-866-325-0045 and selecting the third option. Alternatively, you can open a support case.
+* To cancel a Pay-As-You-Go or Subscription account, contact us through [live chat](https://{DomainName}/unifiedsupport/supportcenter) or by calling 1-866-325-0045 and selecting the third option. Or, you can open a support case.
 * To cancel a Lite account, go to the [Account settings](https://cloud.ibm.com/account/settings) page, and click **Deactivate account**.
+
+## Can I delete my account?
+{: #deleteaccount}
+{: faq}
+
+Contact [{{site.data.keyword.Bluemix_notm}} Support](https://{DomainName}/unifiedsupport/supportcenter){: external} to open a support case and request to delete your account. If you have data that is associated with your old account that you want to move to a new account, include this information in your email.
+
+Data in deleted accounts is not recoverable.
 
 ## Can I log in to the console with my SoftLayer ID?
 {: #slid}
 {: faq}
 
-Yes, you can use your SoftLayer ID to log in to the console. Go to the [login page](https://cloud.ibm.com/login){: external}, and select **SoftLayer ID** from the **ID** list.  
-
-## What is Cloud Foundry?
-{: #cloud-foundry}
-{: faq}
-
-Cloud Foundry is an open source platform as a service (PaaS) option available through {{site.data.keyword.Bluemix_notm}} Public for building and deploying applications on the cloud. Cloud Foundry organizations and spaces are used to organize resources and apps available within specific regions.
-
-For more information about managing orgs and spaces, see [Adding orgs and spaces](/docs/account?topic=account-orgsspacesusers). And, if you’re interested in learning more about how to provide access to resources in a Cloud Foundry space, see [Cloud Foundry access](/docs/account?topic=account-cfaccess).
-
-
-## Can I move an org to another account?
-{: #move-org-diff-account}
-{: faq}
-
-Currently, you can't move an org to a different account. However, you can re-create the org with the same credentials in a different account to mimic this functionality. For more information, see [Adding orgs and spaces](/docs/account?topic=account-orgsspacesusers#createorg).
-
-
-## Which Cloud Foundry regions can I use?
-{: #whichregions}
-{: faq}
-
-In a Lite account, you can work in only one region. In a Pay-As-You-Go or Subscription account, you can access all available regions.
-
+Yes, you can use your SoftLayer ID to log in to the console. Go to the [login page](https://cloud.ibm.com/login){: external}, and click **Log in with SoftLayer ID**.  
 
 ## What's a Lite pricing plan for services?
 {: #whatisliteplan}
@@ -137,8 +120,7 @@ A Lite plan is a free quota-based service plan. You can use a service Lite plan 
 {: #howmanyapps}
 {: faq}
 
-In a Lite account, your apps have up to 256 MB of instantaneous runtime memory. You can deploy apps until you use the available Lite account allowance. If you need more memory, upgrade to a billable account to get 512 MB of free instantaneous runtime memory and pay only for what you use over that limit. There's no limit to the number of apps you can build in a billable account.
-
+In a Lite account, your apps have up to 256 MB of instantaneous runtime memory. You can deploy apps until you use the available Lite account allowance. If you need more memory, upgrade to a billable account to get 512 MB of free instantaneous runtime memory and pay only for what you use over that limit. There's no limit to the number of apps you can build in a Pay-As-You-Go or Subscription account.
 
 ## What happens when my Lite plan instance reaches the monthly quota?
 {: #monthlyquota}
@@ -154,25 +136,23 @@ You can check your usage by going to **Manage > Billing and usage** in the conso
 {: faq}
 {: support}
 
-If you have a billable account, there's no limit to the number of resource groups, orgs, or spaces that you can create within your account. However, if you have a Lite account, you're limited to one org and one resource group.
+If you have a Pay-As-You Go or Subscription account, there's no limit to the number of resource groups, orgs, or spaces that you can create. However, if you have a Lite account, you're limited to one org and one resource group.
 
-## How do I change my email notification settings?
+## Can I change which notifications I receive?
 {: #change-email-prefs}
 {: faq}
 
-You can change which email notifications you receive for planned events, unplanned events, and announcements in your profile settings.
-1. In the console, go to [Notifications](https://cloud.ibm.com/user/notifications) in your profile settings.
-1. Select whether to receive email notifications for each type of event.
+Yes, you can update your email preferences for receiving notifications from the Email preferences page in the console. Click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Profile** > **Email preferences**.
 
-For classic infrastructure services, account owners can also subscribe users to notifications from those services by going to **Manage > Account > Notifications**.
+For classic infrastructure services, account owners can also subscribe users to notifications for those services by going to **Manage** > **Account** > **Classic infrastructure** > **Subscriptions**. 
 
 For more information, see [Setting email preferences](/docs/account?topic=account-email-prefs).
 
-## How do I reset my password?
+## Can I reset my password?
 {: #reset-password}
 {: faq}
 
-To reset your account password, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) **> Profile and settings** in the console. Then, click **Change or reset** from the Account user information tile.
+To reset your account password, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) >  **Profile** in the console. Then, click **Edit** in the Account user information widget.
 
 To reset your VPN password, complete the following steps:
 
@@ -181,11 +161,11 @@ To reset your VPN password, complete the following steps:
   3. From the VPN subnets section, click the Edit icon ![Edit icon](../icons/icon_write.svg) to enter a new VPN password.
   5. Click **Apply**.
 
-## How can I remove my personal data from {{site.data.keyword.Bluemix_notm}}?
+## Can I remove my personal data from {{site.data.keyword.Bluemix_notm}}?
 {: #remove-pi}
 {: faq}
 
-To understand how IBM handles your personal information, see the [IBM Privacy Statement](https://www.ibm.com/privacy/){: external}. In the Your Rights section, review the information about what you can request to remove. Click the link in the section to submit a request to remove your personal information.
+To understand how {{site.data.keyword.IBM_notm}} handles your personal information, see the [{{site.data.keyword.IBM_notm}} Privacy Statement](https://www.ibm.com/privacy/){: external}. In the Your Rights section, review the information about what you can request to remove. Click the link in the section to submit a request to remove your personal information.
 
 ## Why is my account deactivated?
 {: #account-deactivated}
@@ -196,7 +176,7 @@ Your account might be deactivated for the following reasons:
 
 - For trial accounts, the trial period ended. To reactivate your account, log in to your account and upgrade it to a Pay-As-You-Go account. Your account might take a few days to fully reactivate.
 - An authorized user canceled the account.
-- The account is suspended. At the discretion of IBM, accounts that violate the acceptable usage behaviors of the {{site.data.keyword.Bluemix_notm}} services can be disabled without notice. Some services can be restored if users correct their usage behaviors after they're notified of the offensive action.
+- The account is suspended. At the discretion of {{site.data.keyword.IBM_notm}}, accounts that violate the acceptable usage behaviors of the {{site.data.keyword.Bluemix_notm}} services can be disabled without notice. Some services can be restored if users correct their usage behaviors after they're notified of the offensive action.
 
 If you believe that your account was deactivated in error, contact support by calling 1-866-325-0045 and selecting the third option.
 
@@ -210,17 +190,17 @@ From the console menu bar, click **Support** to go to the Support Center and to 
 {: #accounts-owned}
 {: faq}
 
-The {{site.data.keyword.cloud_notm}} console header lists all accounts that are affiliated with your login ID, including those you own. You can view your role in each account on the [Users](https://{DomainName}/iam/users) page.
+The {{site.data.keyword.cloud_notm}} console menu bar lists all accounts that are affiliated with your login ID, including those you own. You can view your role in each account on the [Users](https://{DomainName}/iam/users) page.
 
 You can also find your accounts from the CLI by running the `ibmcloud account list` command.
 
-## How do I view my account ID and account type?
+## Can I view my account ID and account type?
 {: #account-details}
 {: faq}
 
-Go to the [Account settings](https://{DomainName}/account/settings) page in the console to view the account ID and account type.
+Go to the [Account settings](https://{DomainName}/account/settings) page in the console to view your account ID and account type.
 
-## How do I switch between multiple accounts?
+## Can I switch between multiple accounts?
 {: #switch-between-accounts}
 {: faq}
 {: support}
@@ -252,14 +232,14 @@ You can transfer ownership of individual resources within your account to someon
 
 To transfer ownership of your entire account, create a support case that requests to make another user in the account the new owner. For more information, see [Transferring ownership of your account](/docs/account?topic=account-transfer).
 
-## How do I change the name or IBMid in my profile?
+## Can I change the name or IBMid in my profile?
 {: #change-profile-settings}
 {: faq}
 {: support}
 
 You can change your personal information, such as name, email, or phone number, by going to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) **> Profile and settings** in the console. You can't change your IBMid, but you can create a new one if appropriate. The [IBMid worldwide help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html) is available to help with general ID questions that aren't specific to your {{site.data.keyword.Bluemix_notm}} account.
 
-## How do I change my account language?
+## Can I change my account language?
 {: #switch-account-lang}
 {: faq}
 {: support}
@@ -303,14 +283,6 @@ Before you can delete a tag, you must remove it from all resources. If you still
 {: faq}
 
 You can't edit the name of a tag. To rename a tag, remove it and reassign the resource with a new tag.  
-
-## How do I delete my account?
-{: #deleteaccount}
-{: faq}
-
-Contact [{{site.data.keyword.Bluemix_notm}} Support](https://{DomainName}/unifiedsupport/supportcenter){: external} to open a support case and request to delete your account. If you have data that is associated with your old account that you want to move to a new account, include this information in your email.
-
-Data in deleted accounts is not recoverable.
 
 ## Can I edit the default dashboard?
 {: #access-dashboard}
