@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2020
 
-lastupdated: "2020-09-23"
+lastupdated: "2020-12-21"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, role management service, catalog management service, cloud shell service
 
@@ -217,6 +217,9 @@ You can assign users access to view and update {{site.data.keyword.cloud-shell_n
 | Operator      | Not applicable        |
 | Editor        | Not applicable        |
 | Administrator | View and update {{site.data.keyword.cloud-shell_notm}} settings |
+| Cloud Operator | Create {{site.data.keyword.cloud-shell_short}} environments to manage {{site.data.keyword.cloud_notm}} resources. |
+| Cloud Developer | Create {{site.data.keyword.cloud-shell_short}} environments to manage {{site.data.keyword.cloud_notm}} resources and develop applications for {{site.data.keyword.cloud_notm}} (Web Preview enabled). |
+| File Manager | Create {{site.data.keyword.cloud-shell_short}} environments to manage {{site.data.keyword.cloud_notm}}resources and manage files in your workspace (File Upload and File Download enabled). |
 {: caption="Table 8. Roles and example actions for the {{site.data.keyword.cloud-shell_notm}} service" caption-side="top"}
 {: #shell-service-acct-mgmt}
 
