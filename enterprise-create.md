@@ -101,7 +101,7 @@ The account that you used to create the enterprise is now a part of the enterpri
 
 You can programmatically create an enterprise by calling the Enterprise Management API as shown in the following sample request. For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-enterprise){: external}.
 
-```
+```bash
 curl -X POST \
 "https://enterprise.cloud.ibm.com/v1/enterprises \
 -H "Authorization: Bearer <Token>" \
