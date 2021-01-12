@@ -233,6 +233,7 @@ Managing your account, resources, and access
         faqs-iam.md
         faqs-resources.md
         faqs-migration.md
+        faqs-commit.md
 
     {: .topicgroup}
     Troubleshooting accessing IBM Cloud
