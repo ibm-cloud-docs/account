@@ -23,7 +23,7 @@ subcollection: account
 # What is {{site.data.keyword.Bluemix_notm}} Identity and Access Management?
 {: #iamoverview}
 
-Learn about what {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) is, how it IAM works, what features are available, and how to access the console, CLI, and APIs to work with IAM in your account.
+Learn about what {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) is, how IAM works, what features are available, and how to access the console, CLI, and APIs to work with IAM in your account.
 {:shortdesc}
 
 {: #what_is_IAM}
