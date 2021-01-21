@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-01-20"
+lastupdated: "2021-01-21"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -2273,6 +2273,9 @@ Review the available platform and service roles available and the actions mapped
 | `kms.secrets.createalias` | Create an alias for an encryption key. | Manager, Writer |
 | `kms.secrets.deletealias` |  Delete an alias for an encryption key. | Manager, Writer |
 | `kms.governance.configread` | Retrieve current configuration of the queried resources. | Service Configuration Reader |
+| `kms.keyrings.list` | Retrieve a list of key rings in the instance. | Manager, Reader, ReaderPlus, Writer |
+| `kms.keyrings.create` | Create a key ring in the instance. | Manager, Writer |
+| `kms.keyrings.delete` | Delete a key ring in the instance. | Manager |
 {: caption="Table 50. Service actions - Key Protect" caption-side="top"}
 {: #actions-table50}
 {: tab-title="Actions"}
