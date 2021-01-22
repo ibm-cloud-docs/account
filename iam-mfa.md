@@ -2,10 +2,10 @@
 
 copyright:
 
-  years: 2018, 2020
-lastupdated: "2020-12-01"
+  years: 2018, 2021
+lastupdated: "2021-01-22"
 
-keywords: MFA, multifactor authentication, IBMid MFA, two-factor authentication, account MFA, time-based one-time passcode, TOTP
+keywords: MFA, multifactor authentication, IBMid MFA, two-factor authentication, account MFA, time-based one-time passcode, TOTP, FIDO U2F, U2F, universal 2nd factor authentication
 
 subcollection: account
 
