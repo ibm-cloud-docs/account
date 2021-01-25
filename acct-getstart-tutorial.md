@@ -4,7 +4,7 @@ copyright:
   years: 2020
 lastupdated: "2020-12-01"
 
-keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, MFA, authetication, TOTP
+keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, MFA, authetication, TOTP, U2F, FIDO U2F, security key
 
 subcollection: account
 
