@@ -5,7 +5,7 @@ copyright:
   years: 2018, 2020
 lastupdated: "2020-12-01"
 
-keywords: MFA, multifactor authentication, two-factor authentication
+keywords: MFA, multifactor authentication, two-factor authentication, U2F, FIDO U2F, security key
 
 subcollection: account
 
