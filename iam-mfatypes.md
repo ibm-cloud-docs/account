@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2020
-lastupdated: "2020-12-01"
+  years: 2018, 2021
+lastupdated: "2021-01-26"
 
 keywords: MFA, multifactor authentication, two-factor authentication, U2F, FIDO U2F, security key
 
@@ -52,7 +52,7 @@ Authenticate by using one of the following MFA methods. This option applies to u
   
   * Email-based MFA: Users authenticate by using a security passcode that's sent via email.
   * TOTP MFA: Users authenticate by using a TOTP.
-  * U2F MFA: Users authenticate by using a hardware security key that generates a six-digit numerical code. This method offers the highest level of security.
+  * U2F MFA: Users authenticate by using a physical hardware-based security key that generates a six-digit numerical code. The security key is based on the FIDO U2F open authentication standard. This method offers the highest level of security.
 
 ## Account-based MFA options
 {: #account-based}
