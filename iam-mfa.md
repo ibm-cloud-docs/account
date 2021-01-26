@@ -57,7 +57,7 @@ To enable MFA, you must be the account owner or an administrator for the billing
   * **MFA for all users (IBMid & supported IdPs)**: Require users to authenticate by using one of the following MFA methods. This option applies to users who are using either an IBMid or an external identity provider (IdP). 
     * **Email-based MFA**: Users authenticate by using a security passcode that's sent via email.
     * **TOTP MFA**: Users authenticate by using a TOTP.
-    * **U2F MFA**: Users authenticate by using a physical hardware-based security key that generates a six-digit numerical code. The security key is based on the FIDO U2F open authentication standard. This method offers the highest level of security. 
+    * **U2F MFA**: Users authenticate by using a physical hardware-based security key that generates a six-digit numerical code. Based on the FIDO U2F open authentication standard, this method offers the highest level of security.
 
 4. Click **Update**.
 
