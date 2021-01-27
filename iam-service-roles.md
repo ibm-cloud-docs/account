@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-01-26"
+lastupdated: "2021-01-27"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1202,6 +1202,7 @@ Review the available platform and service roles available and the actions mapped
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 27. Service roles - Event Streams" caption-side="top"}
@@ -1224,6 +1225,7 @@ Review the available platform and service roles available and the actions mapped
 | `messagehub.schema.write` | Create a schema/schema version | Manager, Writer |
 | `messagehub.schema.manage` | Delete a schema/schema version | Manager |
 | `messagehub.cluster.manage` | Manage the configuration of an Event Streams instance | Manager |
+| `messagehub.config.read` | Configuration Information Point API access | Reader, Service Configuration Reader |
 {: caption="Table 27. Service actions - Event Streams" caption-side="top"}
 {: #actions-table27}
 {: tab-title="Actions"}
