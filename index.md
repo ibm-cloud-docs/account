@@ -83,7 +83,6 @@ You can create multiple resource groups to easily manage quota and view billing 
 
 Basic support is included with your {{site.data.keyword.Bluemix_notm}} Pay-As-You-Go. It is provided for non-production environments or workloads where traditional severities are not used and specific response times are not stipulated. Also, with a Pay-As-You-Go account, you can order Advanced or Premium support plans to get extra help with your production workloads. Learn more in [Support plans](/docs/get-support?topic=get-support-support-plans).
 
-<!--committed use information is staging only for now -hlucey-->
 A subset of Pay-As-You-Go accounts are eligible for the new Pay-As-You-Go with Committed Use model. For more information, see [Pay as you go with Committed Use](/docs/account?topic=account-accounts#commitment-model)
 
 ## Subscription account
@@ -95,7 +94,6 @@ When you purchase a subscription, you commit to a minimum spending amount for a 
 
 Large organizations and other users with large cloud workloads can benefit from the savings and predictable billing that are provided by subscriptions. {{site.data.keyword.Bluemix_notm}} offers multiple types of subscriptions to fit your usage needs. 
 
-<!--committed use information is staging only for now -hlucey-->
 A subset of subscription accounts are eligible for the new Pay-As-You-Go with Committed Use model. For more information, see [Pay as you go with Committed Use pricing model](/docs/account?topic=account-accounts#commitment-model)
 
 ### Platform subscriptions
@@ -136,7 +134,7 @@ You can work with [{{site.data.keyword.Bluemix_notm}} Sales](https://cloud.ibm.c
 ## Pay as you go with Committed Use pricing model
 {: #commitment-model}
 
-{{site.data.keyword.cloud_notm}} customers with a Subscription account can sign up for the Pay as you go with Committed Use pricing model. With this pricing model, you commit to spend a certain amount on {{site.data.keyword.Bluemix_notm}} and you also receive discounts across the platform. You are billed monthly based on your usage and you continue to receive a discount even after you reach your committed amount. For more information about the pricing model, see [Pay as you go with Committed Use pricing model](/docs/billing-usage?topic=billing-usage-committed-use). 
+{{site.data.keyword.cloud_notm}} customers can sign up for the Pay as you go with Committed Use pricing model. With this pricing model, you commit to spend a certain amount on {{site.data.keyword.Bluemix_notm}} and you also receive discounts across the platform. You are billed monthly based on your usage and you continue to receive a discount even after you reach your committed amount. For more information about the pricing model, see [Pay as you go with Committed Use pricing model](/docs/billing-usage?topic=billing-usage-committed-use). 
 
 The pricing model will continue to roll out to new customers worldwide throughout 2021. For more information about the availability of the pricing model in your location, contact [{{site.data.keyword.cloud_notm}} Sales](https://cloud.ibm.com/catalog?contactmodule){: external}. 
 {: note}
