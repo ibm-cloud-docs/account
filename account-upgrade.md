@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2020
-lastupdated: "2020-07-08"
+  years: 2015, 2021
+lastupdated: "2021-01-27"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -50,27 +50,27 @@ If you're upgrading to reactivate a deactivated account, your account might take
 If your upgrade included a promotional credit, the credit might take a few hours to appear in your account. The following table lists the current upgrade promotional amounts for different currencies: 
 
 
-| Country | Currency   | Converted Promo Amount |
-|---------------|-------------|----------------|
-|United States  | USD  | 200.00 |
-|Australia  |	AUD  | 274.60 |
-|Brazil  |	BRL  |846.41 |
-|Canada  |	CAD  |255.99 |
-|Switzerland  | CHF  | 190.85 |
-|China  |	CNY  |1,836.38 |
-|Denmark  | DKK  | 1,258.68|
-|Euro  | EUR  | 168.67  |
-|UK  |	GBP  | 149.07 |
-|Indonesia  | IDR  | 3,128,000.00
-|India  |	INR  |13,474.41 |
-|Japan  | JPY  | 22,400.62 |
-|South Korea  |	KRW  | 232,999.57 |
-|Norway  | NOK  | 1,622.83 |
-|New Zealand  | NZD  | 302.40 |
-|Sweden  | SEK  | 1,747.41|
-|South Africa  | ZAR  | 3,496.00 |
-
+| Country       | Currency   | Converted Promo Amount |
+|---------------|------------|------------------------|
+| United States | USD        | 200.00                 |
+| Australia     | AUD        | 279.94                 |
+| Brazil        | BRL        | 862.84                 |
+| Canada        | CAD        | 260.96                 |
+| Switzerland   | CHF        | 190.85                 |
+| China         | CNY        | 1,836.38               |
+| Denmark       | DKK        | 1,258.68               |
+| Euro          | EUR        | 168.67                 |
+| UK            | GBP        | 151.96                 |
+| Indonesia     | IDR        | 3,128,000.00           |
+| India         | INR        | 14,390.14              |
+| Japan         | JPY        | 22,400.62              |
+| South Korea   | KRW        | 232,999.57             |
+| Norway        | NOK        | 1,654.34               |
+| New Zealand   | NZD        | 302.40                 |
+| Sweden        | SEK        | 1,781.34               |
+| South Africa  | ZAR        | 3,563.88               |
 {:caption="Table 1. Promo price for different currencies" caption-side="top"}
+
 
 ## Upgrading to a Subscription account
 {: #upgrade-subscription}
