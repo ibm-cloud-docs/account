@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-01-28"
+lastupdated: "2021-01-29"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -991,6 +991,9 @@ Review the available platform and service roles available and the actions mapped
 | `PATCH /v4/:platform/deployments/:deployment_id/billable` | Set billable annotation to true | Administrator, Editor, Operator |
 | `PATCH /v4/:platform/deployments/:deployment_id/migrated` | Set migration flag to false | Administrator, Editor, Operator |
 | `GET /v4/:platform/deployments/:deployment_id/check_updates` | Check deployment for available updates | Administrator, Editor, Operator, Viewer |
+| `POST /v4/:platform/deployments/:deployment_id/dr_take_over` | dr_take_over | Administrator, Editor, Operator |
+| `GET /v4/:platform/deployments/:deployment_id/get_dr` | get_dr | Administrator, Editor, Operator |
+| `POST /v4/:platform/deployments/:deployment_id/resyncs` | resyncs | Administrator, Editor, Operator |
 {: caption="Table 20. Service actions - Db2" caption-side="top"}
 {: #actions-table20}
 {: tab-title="Actions"}
