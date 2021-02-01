@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-01-12"
+lastupdated: "2021-02-01"
 
 keywords: account types, Lite, free account, trial account, paid account, buy account, account difference, compare account, subscription, Pay As You Go with Committed Use, PayGo with Commit
 
@@ -29,7 +29,7 @@ subcollection: account
 
 The following table provides a comparison of Lite, Pay-As-You-Go, and Subscription accounts. For more details about each account, see the sections that follow.
 
-|                                         | Lite               | Pay-As-You-Go      | Subscription       | PayGo with Committed Use pricing model   |
+|                                         | Lite               | Pay-As-You-Go      | Subscription       | PayGo with Committed Use billing model   |
 |-----------------------------------------|--------------------|--------------------|--------------------|--------------------|
 | **Free Cloud Foundry memory** | 256 MB             |             |              |              |
 | **[Free community buildpacks](/docs/cloud-foundry-public?topic=cloud-foundry-public-available_buildpacks)** | 186 GBH             |   186 GBH       |    186 GBH          |      186 GBH        |
@@ -94,7 +94,7 @@ When you purchase a subscription, you commit to a minimum spending amount for a 
 
 Large organizations and other users with large cloud workloads can benefit from the savings and predictable billing that are provided by subscriptions. {{site.data.keyword.Bluemix_notm}} offers multiple types of subscriptions to fit your usage needs. 
 
-A subset of subscription accounts are eligible for the new Pay-As-You-Go with Committed Use model. For more information, see [Pay as you go with Committed Use pricing model](/docs/account?topic=account-accounts#commitment-model)
+A subset of subscription accounts are eligible for the new Pay-As-You-Go with Committed Use model. For more information, see [Pay as you go with Committed Use billing model](/docs/account?topic=account-accounts#commitment-model)
 
 ### Platform subscriptions
 {: #platform-subscriptions}
@@ -131,10 +131,10 @@ When your subscription is about to expire, you are notified by email 60, 30, 14,
 
 You can work with [{{site.data.keyword.Bluemix_notm}} Sales](https://cloud.ibm.com/catalog?contactmodule){: external} to renew your subscription account. 
 
-## Pay as you go with Committed Use pricing model
+## Pay as you go with Committed Use billing model
 {: #commitment-model}
 
-{{site.data.keyword.cloud_notm}} customers can sign up for the Pay as you go with Committed Use pricing model. With this pricing model, you commit to spend a certain amount on {{site.data.keyword.Bluemix_notm}} and you also receive discounts across the platform. You are billed monthly based on your usage and you continue to receive a discount even after you reach your committed amount. For more information about the pricing model, see [Pay as you go with Committed Use pricing model](/docs/billing-usage?topic=billing-usage-committed-use). 
+{{site.data.keyword.cloud_notm}} customers can sign up for the Pay as you go with Committed Use billing model. With this billing model, you commit to spend a certain amount on {{site.data.keyword.Bluemix_notm}} and you also receive discounts across the platform. You are billed monthly based on your usage and you continue to receive a discount even after you reach your committed amount. For more information about the billing model, see [Pay as you go with Committed Use billing model](/docs/billing-usage?topic=billing-usage-committed-use). 
 
-The pricing model will continue to roll out to new customers worldwide throughout 2021. For more information about the availability of the pricing model in your location, contact [{{site.data.keyword.cloud_notm}} Sales](https://cloud.ibm.com/catalog?contactmodule){: external}. 
+The billing model will continue to roll out to new customers worldwide throughout 2021. For more information about the availability of the billing model in your location, contact [{{site.data.keyword.cloud_notm}} Sales](https://cloud.ibm.com/catalog?contactmodule){: external}. 
 {: note}
