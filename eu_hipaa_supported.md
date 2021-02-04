@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2020
-lastupdated: "2020-03-10"
+  years: 2018, 2021
+lastupdated: "2021-02-04"
 
 keywords: GDPR, HIPAA, data security, PHI, europe, ACS 
 
@@ -35,7 +35,7 @@ By enabling this setting, EU supported services have strict access controls to e
   3. Read the information about enabling the setting, and select **I understand and agree to these terms**.
   4. Click **On**.
 
-   After you enable the setting, you can use the EU Supported filter option to search the catalog for offerings that have EU-supported pricing plans.
+   After you enable the setting, you can use the EU Supported filter option to search the catalog for products that have EU-supported pricing plans.
 
 
 ## Enabling the HIPAA Supported setting
@@ -52,7 +52,7 @@ Enabling this setting has the following effects:
 Enable this setting only if you or your company is a covered entity as defined by HIPAA. If you or your company is a business associate of a covered entity, [contact {{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-wcp){: external} to accept the applicable BAA. For more information about HIPAA definitions of covered entities and business associates, see the [US Department of Health & Human Services](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html){: external} website.
 {: important}
 
-Accounts that enable the HIPAA Supported setting still have access to the full catalog of services. {{site.data.keyword.Bluemix_notm}} services typically offer multiple plans. The HIPAA Enabled label on a service can apply to all available plans or be limited to specific plans or configurations. You as the client are solely responsible for limiting PHI to HIPAA Enabled offering plans and architecting in accordance with HIPAA and HITECH.
+Accounts that enable the HIPAA Supported setting still have access to the full catalog of services. {{site.data.keyword.Bluemix_notm}} services typically offer multiple plans. The HIPAA Enabled label on a service can apply to all available plans or be limited to specific plans or configurations. You as the client are solely responsible for limiting PHI to HIPAA Enabled product plans and architecting in accordance with HIPAA and HITECH.
 
 1. Go to **Manage > Account**, and select **Account setting** in the console.
 2. For the HIPAA Supported option, click **On**.
@@ -63,4 +63,4 @@ Accounts that enable the HIPAA Supported setting still have access to the full c
 
 4. Select **Accept**, and click **Submit**.
 
-  After you enable the setting, you can use the HIPAA Enabled tag to search the catalog for offerings that are HIPAA enabled.
+  After you enable the setting, you can use the HIPAA Enabled tag to search the catalog for products that are HIPAA enabled.
