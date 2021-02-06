@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-02-05"
+lastupdated: "2021-02-06"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3945,6 +3945,7 @@ Review the available platform and service roles available and the actions mapped
 
 | Role | Description |
 | ----- | :----- |
+| Console Administrator | As a console administrator, you can access the virtual server instance console. This role only provides console access and must be combined with another role that has operator access to the virtual server such as Operator, Editor or Administrator. |
 | IP Spoofing Operator | As the IP spoofing operator, you can enable or disable the IP spoofing check on virtual server instances. This role should only be granted if necessary.  |
 {: row-headers}
 {: caption="Table 93. Service roles - Virtual Server for VPC" caption-side="top"}
@@ -3967,6 +3968,7 @@ Review the available platform and service roles available and the actions mapped
 | `is.instance.instance-template.update` | Update an Instance Template | Administrator, Editor |
 | `is.instance.instance-template.delete` | Delete an Instance Template | Administrator, Editor |
 | `is.instance.instance.ip-spoofing` | IP spoofing control for Virtual Server Instance | IP Spoofing Operator |
+| `is.instance.instance.console` | Access Virtual Server Instance Console | Console Administrator |
 {: caption="Table 93. Service actions - Virtual Server for VPC" caption-side="top"}
 {: #actions-table93}
 {: tab-title="Actions"}
