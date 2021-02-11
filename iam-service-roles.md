@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-02-10"
+lastupdated: "2021-02-11"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3327,9 +3327,8 @@ Review the available platform and service roles available and the actions mapped
 
 | Role | Description |
 | ----- | :----- |
-| ResultsSubmitter | As a results submitter, you can post compliance and security assessment results. |
 | ServiceEditor | Edit configuration governance services |
-| ServiceProvider | As a service provider, you can access compliance and security  |
+| ServiceProvider | As a service provider, you can access compliance and security. |
 {: row-headers}
 {: caption="Table 77. Service roles - Security and Compliance Center" caption-side="top"}
 {: #service-roles-table77}
@@ -3340,86 +3339,72 @@ Review the available platform and service roles available and the actions mapped
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `compliance.dashboard.view` |  | Administrator, Editor, Operator |
-| `compliance.controls.create` | Use this role to create  compliance catalog | Administrator, Editor |
-| `compliance.controls.read` | Use this role to view compliance catalog | Administrator, Editor, Operator, Viewer |
-| `compliance.controls.update` | Use this role to edit  compliance catalog | Administrator, Editor |
-| `compliance.controls.delete` | Delete Cloud compliance control | Administrator, Editor |
-| `compliance.profiles.create` | Use this role to create  compliance profile | Administrator, Editor |
-| `compliance.profiles.read` | Use this role to view compliance profile | Administrator, Editor, Viewer |
-| `compliance.profiles.update` | Use this role to edit  compliance profile | Administrator, Editor |
-| `compliance.profiles.delete` | Use this role to delete  compliance profile | Administrator, Editor |
-| `compliance.targets.create` | Use this role to create  compliance resource definition | Administrator, Editor |
-| `compliance.targets.read` | Use this role to view compliance resource definition | Administrator, Editor, Operator, Viewer |
-| `compliance.targets.update` | Use this role to edit  compliance resource definition | Administrator, Editor |
-| `compliance.targets.delete` | Use this role to delete  compliance resource definition | Administrator, Editor |
-| `compliance.results.read` | Use this role to view compliance and security assessment results | Administrator, Editor, Operator, Viewer |
-| `compliance.results.delete` | Use this role to delete compliance and security assessment results | Administrator, Editor |
-| `compliance.results.create` | Use this role to create compliance and security assessment results | Administrator, ResultsSubmitter |
-| `compliance.config-state.create` | Publish config state | ServiceProvider |
-| `compliance.configuration-governance.attachments-create` | Create configuration governance attachments | Administrator, Editor |
-| `compliance.configuration-governance.attachments-delete` | Delete configuration governance attachments | Administrator, Editor |
-| `compliance.configuration-governance.attachments-read` | Read configuration governance attachments | Administrator, Editor, Operator, Viewer |
-| `compliance.configuration-governance.attachments-update` | Update configuration governance attachments | Administrator, Editor |
-| `compliance.configuration-governance.config-ready` | configuration governance config ready | ServiceProvider |
-| `compliance.configuration-governance.config-state-create` | Create configuration governance config state | Administrator, Editor, ServiceProvider |
-| `compliance.configuration-governance.config-state-delete` | Delete configuration governance config state | Administrator, Editor |
-| `compliance.configuration-governance.config-state-read` | Read configuration governance config state | Administrator, Editor, Operator, Viewer |
-| `compliance.configuration-governance.config-state-update` | Update configuration governance config state | Administrator, Editor |
-| `compliance.configuration-governance.results-create` | Create configuration governance results | Administrator, Editor |
-| `compliance.configuration-governance.results-delete` | Delete configuration governance results | Administrator, Editor |
-| `compliance.configuration-governance.results-read` | Read configuration governance results | Administrator, Editor, Operator, Viewer |
-| `compliance.configuration-governance.results-update` | Update configuration governance results | Administrator, Editor |
-| `compliance.configuration-governance.rules-create` | Create configuration governance rules | Administrator, Editor |
-| `compliance.configuration-governance.rules-delete` | Delete configuration governance rules | Administrator, Editor |
-| `compliance.configuration-governance.rules-eval` | Evaluate configuration governance rules | ServiceProvider |
-| `compliance.configuration-governance.rules-read` | Read configuration governance rules | Administrator, Editor, Operator, Viewer |
-| `compliance.configuration-governance.rules-update` | Update configuration governance rules | Administrator, Editor |
-| `compliance.configuration-governance.services-create` | Create configuration governance services | Administrator, Editor, ServiceEditor |
-| `compliance.configuration-governance.services-delete` | Delete configuration governance services | Administrator, Editor, ServiceEditor |
-| `compliance.configuration-governance.services-update` | Update configuration governance services | Administrator, Editor, ServiceEditor |
-| `compliance.posture-management.collectors-create` | Use this role create compliance collector | Administrator, Editor |
-| `compliance.posture-management.collectors-delete` | Use this role to delete compliance collector | Administrator, Editor |
-| `compliance.posture-management.collectors-read` | Use this role to read compliance collector | Administrator, Editor, Operator, Viewer |
-| `compliance.posture-management.collectors-update` | Use this role to update compliance collector | Administrator, Editor |
-| `compliance.posture-management.controls-create` | Use this role to create  compliance catalog | Administrator, Editor |
-| `compliance.posture-management.controls-delete` | Delete Cloud compliance control | Administrator, Editor |
-| `compliance.posture-management.controls-read` | Use this role to view compliance catalog | Administrator, Editor, Operator, Viewer |
-| `compliance.posture-management.controls-update` | Use this role to edit  compliance catalog | Administrator, Editor |
-| `compliance.posture-management.credentials-create` | Use this role to Create compliance credential | Administrator, Editor |
-| `compliance.posture-management.credentials-delete` | Use this role to delete compliance credential | Administrator, Editor |
-| `compliance.posture-management.credentials-read` | Use this role to read compliance credential | Administrator, Editor, Operator, Viewer |
-| `compliance.posture-management.credentials-update` | Use this role to update compliance credential | Administrator, Editor |
-| `compliance.posture-management.credentialsmap-create` | Use this role to create compliance credentialmap | Administrator, Editor |
-| `compliance.posture-management.credentialsmap-delete` | Use this role to delete compliance credentialmap | Administrator, Editor |
-| `compliance.posture-management.credentialsmap-read` | Use this role to read compliance credentialmap | Administrator, Editor, Operator, Viewer |
-| `compliance.posture-management.credentialsmap-update` | Use this role to update compliance credentialmap | Administrator, Editor |
-| `compliance.posture-management.dashboard-view` | Use this role to view Compliance Dashboard | Administrator, Editor, Operator, Viewer |
-| `compliance.posture-management.events-create` | This role is used to create event logs | Administrator, Editor, Operator, Viewer |
-| `compliance.posture-management.events-view` | Use this role to view event log | Administrator, Editor, Operator, Viewer |
-| `compliance.posture-management.profiles-create` | Use this role to create compliance template | Administrator, Editor |
-| `compliance.posture-management.profiles-delete` | Use this role to delete compliance template  | Administrator, Editor |
-| `compliance.posture-management.profiles-read` | Use this role to read compliance.template | Administrator, Editor, Operator, Viewer |
-| `compliance.posture-management.profiles-update` | Use this roe to update compliance template | Administrator, Editor |
-| `compliance.posture-management.scopes-create` | Use this role to create compliance schema | Administrator, Editor |
-| `compliance.posture-management.scopes-delete` | Use this role to delete compliance scope | Administrator, Editor |
-| `compliance.posture-management.scopes-read` | Use this role to read compliance schema | Administrator, Editor, Operator, Viewer |
-| `compliance.posture-management.scopes-update` | Use this role to edit the compliance scope | Administrator, Editor |
-| `compliance.posture-management.tags-create` | Use this for tags | Administrator, Editor, Operator |
-| `compliance.posture-management.tags-delete` | Delete tag | Administrator, Editor, Operator |
-| `compliance.posture-management.tags-read` | Read tags | Administrator, Editor, Operator, Viewer |
-| `compliance.posture-management.tags-update` | Update tags | Administrator, Editor, Operator |
-| `compliance.posture-management.tenants-create` | Use this role to create compliance tenant | Administrator, Editor |
-| `compliance.posture-management.tenants-delete` | Use this role to delete compliance tenant | Administrator, Editor |
-| `compliance.posture-management.tenants-read` | Use this role to read compliance tenant | Administrator, Editor, Operator, Viewer |
-| `compliance.posture-management.tenants-update` | Use this role to update compliance tenant | Administrator, Editor |
-| `compliance.posture-management.validations-create` | Use this role to create compliance validation | Administrator, Editor |
-| `compliance.posture-management.validations-delete` | Use this roles to delete compliance validation  | Administrator, Editor |
-| `compliance.posture-management.validations-read` | Use this role to read compliance validation | Administrator, Editor, Operator, Viewer |
-| `compliance.posture-management.validations-update` | Use this role to update compliance validation | Administrator, Editor |
-| `compliance.posture-management.values-create` | Use this role to create compliance policy | Administrator, Editor |
-| `compliance.posture-management.values-read` | Use this role to read compliance policy | Administrator, Editor, Operator, Viewer |
-| `compliance.posture-management.values-update` | Use this role to update compliance policy | Administrator, Editor |
+| `compliance.posture-management.dashboard-view` | Access the Security and Compliance dashboard to view security and compliance posture and results. | Administrator, Editor, Operator, Viewer |
+| `compliance.posture-management.controls-create` | Add a control to a profile. | Administrator, Editor |
+| `compliance.posture-management.controls-read` | View the controls that you can add to a profile. | Administrator, Editor, Operator, Viewer |
+| `compliance.posture-management.controls-update` | Update an existing control. | Administrator, Editor |
+| `compliance.posture-management.controls-delete` | Delete a control. | Administrator, Editor |
+| `compliance.posture-management.scopes-create` | Create a scope. | Administrator, Editor |
+| `compliance.posture-management.scopes-update` | Edit a scope. | Administrator, Editor |
+| `compliance.posture-management.scopes-read` | View scopes. | Administrator, Editor, Operator, Viewer |
+| `compliance.posture-management.scopes-delete` | Delete a scope. | Administrator, Editor |
+| `compliance.posture-management.credentials-create` | Create a credential. | Administrator, Editor |
+| `compliance.posture-management.credentials-update` | Update a credential. | Administrator, Editor |
+| `compliance.posture-management.credentials-read` | View credentials. | Administrator, Editor, Operator, Viewer |
+| `compliance.posture-management.credentials-delete` | Delete a credential. | Administrator, Editor |
+| `compliance.posture-management.credentialsmap-create` | Map credentials to a scope. | Administrator, Editor |
+| `compliance.posture-management.credentialsmap-update` | Edit an existing credentials mapping. | Administrator, Editor |
+| `compliance.posture-management.credentialsmap-read` | View credentials mappings. | Administrator, Editor, Operator, Viewer |
+| `compliance.posture-management.credentialsmap-delete` | Delete a credentials mapping. | Administrator, Editor |
+| `compliance.posture-management.profiles-create` | Create a profile. | Administrator, Editor |
+| `compliance.posture-management.profiles-update` | Update a profile. | Administrator, Editor |
+| `compliance.posture-management.profiles-read` | View profiles. | Administrator, Editor, Operator, Viewer |
+| `compliance.posture-management.profiles-delete` | Delete a profile. | Administrator, Editor |
+| `compliance.posture-management.validations-create` | Run a vallidation scan. | Administrator, Editor |
+| `compliance.posture-management.validations-update` | Update a validation scan. | Administrator, Editor |
+| `compliance.posture-management.validations-read` | View a validation scan. | Administrator, Editor, Operator, Viewer |
+| `compliance.posture-management.validations-delete` | Delete a validation scan. | Administrator, Editor |
+| `compliance.posture-management.collectors-create` | Create a collector. | Administrator, Editor |
+| `compliance.posture-management.collectors-update` | Update a collector. | Administrator, Editor |
+| `compliance.posture-management.collectors-read` | View collectors. | Administrator, Editor, Operator, Viewer |
+| `compliance.posture-management.collectors-delete` | Delete a collector. | Administrator, Editor |
+| `compliance.posture-management.values-create` | Add parameters to an existing goal. | Administrator, Editor |
+| `compliance.posture-management.values-update` | Update the parameters of an existing goal. | Administrator, Editor |
+| `compliance.posture-management.values-read` | View the parameters that are associated with a goal. | Administrator, Editor, Operator, Viewer |
+| `compliance.posture-management.tenants-create` |  Create tenants | Administrator, Editor |
+| `compliance.posture-management.tenants-update` |  Update tenants  | Administrator, Editor |
+| `compliance.posture-management.tenants-read` | View tenants  | Administrator, Editor, Operator, Viewer |
+| `compliance.posture-management.tenants-delete` | Delete tenants | Administrator, Editor |
+| `compliance.posture-management.events-create` | Create an audit log for monitoring compliance activity. | Administrator, Editor, Operator, Viewer |
+| `compliance.posture-management.events-view` | View audit logs. | Administrator, Editor, Operator, Viewer |
+| `compliance.configuration-governance.rules-create` | Create a config rule. | Administrator, Editor |
+| `compliance.configuration-governance.rules-read` | View the config rules that are available for your accounts. | Administrator, Editor, Operator, Viewer |
+| `compliance.configuration-governance.rules-update` | Update an existing config rule. | Administrator, Editor |
+| `compliance.configuration-governance.rules-delete` | Delete a config rule. | Administrator, Editor |
+| `compliance.configuration-governance.rules-eval` | Evaluate the configuration changes of a resource. | ServiceProvider |
+| `compliance.configuration-governance.config-ready` | Configuration governance config ready. | ServiceProvider |
+| `compliance.configuration-governance.attachments-create` | Create an attachment between a rule and a scope. | Administrator, Editor |
+| `compliance.configuration-governance.attachments-read` | View the attachments that are associated with a rule. | Administrator, Editor, Operator, Viewer |
+| `compliance.configuration-governance.attachments-update` | Update a rule attachment. | Administrator, Editor |
+| `compliance.configuration-governance.attachments-delete` | Delete a rule attachment. | Administrator, Editor |
+| `compliance.configuration-governance.services-create` | Create a definition to enable a service for configuration governance. | Administrator, Editor, ServiceEditor |
+| `compliance.configuration-governance.services-update` | Update an existing service definition. | Administrator, Editor, ServiceEditor |
+| `compliance.configuration-governance.services-delete` | Delete a service definition. | Administrator, Editor, ServiceEditor |
+| `compliance.configuration-governance.config-state-create` | Create configuration governance config state. | Administrator, Editor, ServiceProvider |
+| `compliance.configuration-governance.config-state-read` | Read configuration governance config state. | Administrator, Editor, Operator, Viewer |
+| `compliance.configuration-governance.config-state-update` | Update configuration governance config state. | Administrator, Editor |
+| `compliance.configuration-governance.config-state-delete` | Delete configuration governance config state. | Administrator, Editor |
+| `compliance.configuration-governance.results-create` | Create configuration governance results. | Administrator, Editor |
+| `compliance.configuration-governance.results-read` | Read configuration governance results. | Administrator, Editor, Operator, Viewer |
+| `compliance.configuration-governance.results-update` | Update configuration governance results. | Administrator, Editor |
+| `compliance.configuration-governance.results-delete` | Delete configuration governance results. | Administrator, Editor |
+| `compliance.posture-management.tags-create` | Create tags. | Administrator, Editor, Operator |
+| `compliance.posture-management.tags-update` | Update tags. | Administrator, Editor, Operator |
+| `compliance.posture-management.tags-delete` | Delete a tag. | Administrator, Editor, Operator |
+| `compliance.posture-management.tags-read` | View tags. | Administrator, Editor, Operator, Viewer |
+| `compliance.posture-management.keys-read` | Read BYOK/KYOK configuration | Administrator, Editor, Operator, Viewer |
+| `compliance.posture-management.keys-write` | Edit BYOK/KYOK configuration | Administrator, Editor |
+| `compliance.posture-management.keys-delete` | Enable/Disable BYOK configuration | Administrator, Editor |
 {: caption="Table 77. Service actions - Security and Compliance Center" caption-side="top"}
 {: #actions-table77}
 {: tab-title="Actions"}
