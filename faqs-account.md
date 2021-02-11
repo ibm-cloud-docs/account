@@ -93,8 +93,9 @@ Yes, the following options are available depending on your account type:
 
 We're sad to see you go! If there's any way we can assist you before you decide to cancel your account, [reach out to us](https://cloud.ibm.com/unifiedsupport/supportcenter){: external}.
 
-* To cancel a Pay-As-You-Go or Subscription account, contact us through [live chat](https://{DomainName}/unifiedsupport/supportcenter) or by calling 1-866-325-0045 and selecting the third option. Or, you can open a support case.
+* To cancel a Pay-As-You-Go or Subscription account, contact us through [live chat](https://{DomainName}/unifiedsupport/supportcenter) or by calling 1-866-325-0045 and selecting the third option. Or, you can open a support case. Once your Pay-As-You-Go account has been canceled, all usage will be stopped across all services running in your account, and the usage accrued in the current billing period will be sent in one final invoice at the close of the billing period. 
 * To cancel a Lite account, go to the [Account settings](https://cloud.ibm.com/account/settings) page, and click **Deactivate account**.
+
 
 ## Can I delete my account?
 {: #deleteaccount}
