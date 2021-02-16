@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-02-11"
+lastupdated: "2021-02-116"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite
 
@@ -190,7 +190,7 @@ From the console menu bar, click **Support** to go to the Support Center and to 
 {: #accounts-owned}
 {: faq}
 
-The {{site.data.keyword.cloud_notm}} console menu bar lists all accounts that are affiliated with your login ID, including those you own. You can view your role in each account on the [Users](https://{DomainName}/iam/users) page.
+The {{site.data.keyword.cloud_notm}} console menu bar lists all accounts that are affiliated with your login ID, including those you own. You can view your role in each account on the [Users](https://{DomainName}/iam/users) page. The 'owner' tag next to a user name indicates the account owner.
 
 You can also find your accounts from the CLI by running the `ibmcloud account list` command.
 
