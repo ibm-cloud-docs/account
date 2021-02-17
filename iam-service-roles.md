@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-02-16"
+lastupdated: "2021-02-17"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -2266,6 +2266,7 @@ Review the available platform and service roles available and the actions mapped
 
 | Role | Description |
 | ----- | :----- |
+| KeyPurge | Role for purging key. |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | ReaderPlus | As a reader plus, you can perform read-only actions within Key Protect such as viewing service-specific resources. You can also access key material for standard keys. |
@@ -2323,6 +2324,7 @@ Review the available platform and service roles available and the actions mapped
 | `kms.keyrings.list` | Retrieve a list of key rings in the instance. | Manager, Reader, ReaderPlus, Writer |
 | `kms.keyrings.create` | Create a key ring in the instance. | Manager, Writer |
 | `kms.keyrings.delete` | Delete a key ring in the instance. | Manager |
+| `kms.secrets.purge` | Purge an encryption key. | KeyPurge |
 {: caption="Table 51. Service actions - Key Protect" caption-side="top"}
 {: #actions-table51}
 {: tab-title="Actions"}
