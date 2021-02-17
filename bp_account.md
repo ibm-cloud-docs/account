@@ -74,17 +74,17 @@ While these are the most popular roles for assigning access in the platform, the
 
 For more information about the roles that can be assigned, see [IAM roles](/docs/account?topic=account-userroles#iamusermanrol).
 
-## Reducing time and effort managing access
+## Reducing time and effort to manage access
 {: #limit-policies}
 
-There is a [limit](/docs/account?topic=account-known-issues#iam_limits) on the total number of policies that are allowed in an account. There are a few strategies that you can use to ensure that you don't reach the limit and that can help you to reduce the amount of time that you spend assigning and managing access in your account:
+There is a [limit](/docs/account?topic=account-known-issues#iam_limits) on the total number of policies that are allowed in an account. You can leverage a few strategies to ensure that you don't reach the limit and to reduce the amount of time that you spend managing access for the identities in your account (users or service IDs):
 
-* Use resource groups to organize resources that you want a group of developers in your account to use, for example. Then, if all of those developers are in an access group together, you can use the minimum number of policies instead of assigning policies to each developer for each resource.
-* Use access groups to organize users and service IDs that all require the same level of access. This way, you can assign a single policy rather than an individual policy for each user or service ID. This way, you assign or revoke access by adding or removing users from the access group.
-* Use access management tags to connect access groups with resources. Once the access policy is created by using access management tags, you can grant or revoke access to any IAM-enabled resource on the account by attaching or detaching the same access management tags.
-* Use the principle of least privilege and assign only the access that is required. This can help you ensure that users in your account are limited to only the actions that you want to allow. It also reduces the time that you might need to spend later deleting or reducing assigned access. 
+* Use the principle of least privilege and assign only the access that is required. This can help you ensure that the identities in your account are limited to only the actions that you want to allow. 
+* Add resources to a resource group to further minimize the number of required policies. For example, you might have a team working on a project that uses specific resources in your account. Add the team members to an access group with a policy defined to assign access only to the resources that are in a specific resource group. This way, you don't have to assign a policy to each resource for each team member. 
+* Use access groups to streamline managing access for identities that require the same level of access. You can set up an access group with a specific policy defined, and then add those identities to the group. If the group members need additional access later on, you simply define a new policy for the access group.
+* Use access management tags to control access to the resources in your account at scale. By assigning access only to resources that have specific tags attached to them, you can avoid multiple updates to your defined policies. 
 
-For more best practices from IBM Garage for Cloud, see [Managing access to resources in {{site.data.keyword.cloud_notm}}](https://cloudnativetoolkit.dev/toolkit-resources/resource-mgmt/){: external}.
+For more best practices from {{site.data.keyword.IBM_notm}} Garage for Cloud, see [Managing access to resources in {{site.data.keyword.cloud_notm}}](https://cloudnativetoolkit.dev/toolkit-resources/resource-mgmt/){: external}.
 
 ## What makes a good access group strategy?
 {: #accessgroup_strategy}
