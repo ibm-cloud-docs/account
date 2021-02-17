@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-09-10"
+  years: 2020, 2021
+lastupdated: "2021-02-17"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users, Cloud Foundry orgs
 
@@ -64,6 +64,7 @@ The following table lists the maximum limits for IAM resources. These limits app
 |----------------------------------------|------|
 | Access groups per account              | 500  |
 | Access groups per user                 | 50   |
+| Access management tags per account     | 30   |
 | Service IDs per account                | 2000 |
 | API Keys per identity                  | 20   |
 | Dynamic rules per access group         | 5    |
@@ -76,6 +77,9 @@ A maximum of 1,000 policies and service to service authorizations within one acc
 {: tip}
 
 If you need to check the number of policies in your account or request an increase in the account limit, see [Managing policy limits](/docs/account?topic=account-policy-limits).
+
+### Access management tag limitations
+Access management tags are only available when you create an access policy that is scoped for all Identity and Access enabled services. In this case, when you enable the access based on tags, no other attributes can be added, and when you base your policy on a specific region or resource group, no tag can be added to the access policy.
 
 ## Resource group is inactive with state: SUSPENDED
 {: #resource_inactive}
