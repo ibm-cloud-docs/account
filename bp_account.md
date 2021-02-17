@@ -49,12 +49,12 @@ All resources that are managed by using IAM access control belong to a resource 
 A default resource group is created for you when you create a Lite account, and you're limited to the use of one resource group. If you want to create multiple resource groups, [upgrade](/docs/account?topic=account-upgrading-account) to a Pay-As-You-Go or Subscription account. 
 {: tip}
 
-### Creating user tags to organize resources
+### Searching for resources
 {: #tags}
 
-A user tag is a label that you assign to a resource for easy filtering of resources in your resource list. You can create user tags to organize your resources and easily find them later. You can also apply user tags to help you with identifying specific team usage or cost allocation when you view your [exported usage report](/docs/billing-usage?topic=billing-usage-viewingusage#export-csv).
+You can use user tags to easily organize and search for the resources in your account. You can also use user tags to help identify specific team usage or cost allocation when you view your [exported usage report](/docs/billing-usage?topic=billing-usage-viewingusage#export-csv).
 
-For more information about tagging resources, see [Working with tags](/docs/account?topic=account-tag).
+For more information, see [Working with tags](/docs/account?topic=account-tag).
 
 ## How IAM access works
 {: #how_access}
