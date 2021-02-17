@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2020
-lastupdated: "2020-11-06"
+  years: 2018, 2021
+lastupdated: "2021-02-17"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources 
 
@@ -49,10 +49,10 @@ All resources that are managed by using IAM access control belong to a resource 
 A default resource group is created for you when you create a Lite account, and you're limited to the use of one resource group. If you want to create multiple resource groups, [upgrade](/docs/account?topic=account-upgrading-account) to a Pay-As-You-Go or Subscription account. 
 {: tip}
 
-### Using tags to organize resources
+### Creating user tags to organize resources
 {: #tags}
 
-A tag is a label that you assign to a resource for easy filtering of resources in your resource list. You can use tags to organize your resources and easily find them later. You can also use tags to help you with identifying specific team usage or cost allocation when you view your [exported usage report](/docs/billing-usage?topic=billing-usage-viewingusage#export-csv).
+A user tag is a label that you assign to a resource for easy filtering of resources in your resource list. You can create user tags to organize your resources and easily find them later. You can also apply user tags to help you with identifying specific team usage or cost allocation when you view your [exported usage report](/docs/billing-usage?topic=billing-usage-viewingusage#export-csv).
 
 For more information about tagging resources, see [Working with tags](/docs/account?topic=account-tag).
 
@@ -81,6 +81,7 @@ There is a [limit](/docs/account?topic=account-known-issues#iam_limits) on the t
 
 * Use resource groups to organize resources that you want a group of developers in your account to use, for example. Then, if all of those developers are in an access group together, you can use the minimum number of policies instead of assigning policies to each developer for each resource.
 * Use access groups to organize users and service IDs that all require the same level of access. This way, you can assign a single policy rather than an individual policy for each user or service ID. This way, you assign or revoke access by adding or removing users from the access group.
+* Use access management tags to connect access groups with resources. Once the access policy is created by using access management tags, you can grant or revoke access to any IAM-enabled resource on the account by attaching or detaching the same access management tags.
 * Use the principle of least privilege and assign only the access that is required. This can help you ensure that users in your account are limited to only the actions that you want to allow. It also reduces the time that you might need to spend later deleting or reducing assigned access. 
 
 For more best practices from IBM Garage for Cloud, see [Managing access to resources in {{site.data.keyword.cloud_notm}}](https://cloudnativetoolkit.dev/toolkit-resources/resource-mgmt/){: external}.
