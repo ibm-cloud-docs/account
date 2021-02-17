@@ -84,8 +84,6 @@ There is a [limit](/docs/account?topic=account-known-issues#iam_limits) on the t
 * Use access groups to streamline managing access for identities that require the same level of access. You can set up an access group with a specific policy defined, and then add those identities to the group. If the group members need additional access later on, you simply define a new policy for the access group.
 * Use access management tags to control access to the resources in your account at scale. By assigning access only to resources that have specific tags attached to them, you can avoid multiple updates to your defined policies. 
 
-For more best practices from {{site.data.keyword.IBM_notm}} Garage for Cloud, see [Managing access to resources in {{site.data.keyword.cloud_notm}}](https://cloudnativetoolkit.dev/toolkit-resources/resource-mgmt/){: external}.
-
 ## What makes a good access group strategy?
 {: #accessgroup_strategy}
 
