@@ -257,56 +257,49 @@ Go to [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: external}, and cl
 {: #know-about-tags}
 {: faq}
 
-Tags are labels or `key:value` pairs for organizing your resources or manage access to them.
-* You can use **User tags** to organize and view resources across your account and help you tracking usage costs.
-* You can even manage access to your resources by using **Access management tags**.
+Tags are `key:value` pairs that you use to organize your resources or control access to them.
 
-To learn more about tags, visit [Working with tags](/docs/account?topic=account-tag).
+* You can use user tags to organize and view resources across your account and help you track usage costs.
+* You can limit access to specific resources in your account by using access management tags. 
 
+For more information, see [Working with tags](/docs/account?topic=account-tag).
 
-## Who can view the tags in an account?
-{: #tags-visibility-account}
-{: faq}
-
-Tags are visible throughout your account. If you have permission to see a resource, you can view all tags that are attached and also have permission to view access policy with tags on the resource. For more information, see [Granting users access to tag resources](/docs/account?topic=account-access).
-
-Because tags are visible account-wide, avoid using personal information, such as your name, address, phone number, email address, or other identifying or proprietary information.
-{: note}
-
-## What permissions do I need to attach or detach user tags on a resource?
-{: #permissions-add-remove-resource-tags}
-{: faq}
-
-You must have at least the Editor for IAM-enabled resources or the developer role in a Cloud Foundry space on a resource to add or remove tags on that resource. For more information, see [Granting users access to tag resources](/docs/account?topic=account-access).
-
-## What permissions do I need to attach or detach access management tags on a resource?
-{: #permissions-add-remove-access-tags}
-{: faq}
-
-You must have Administrator role over the targeted resource to attach or detach access management tags. For more information, see Granting users access to tag resources. For more information, see [Granting users access to tag resources](/docs/account?topic=account-access).
-
-## What permissions do I need to create access management tags on the account?
+## What access is required to create access management tags?
 {: #permissions-create-access-tags}
 {: faq}
 
-You must have the Administrator role on the Tagging Service that is listed under the Account management services or Administrator role on all Account management services. For more information, visit [Granting users access to tag resources](/docs/account?topic=account-access).
+You must be the account owner or have the following roles:
 
-## Can I delete my tag?
+* Administrator on all account management services
+* Administrator on the tagging service
+
+For more information, see [Granting users access to tag resources](/docs/account?topic=account-access).
+
+## What access is required to attach or detach tags?
+{: #permissions-add-remove-resource-tags}
+{: faq}
+
+* To manage user tags on a resource, you must have at least the editor role for IAM-enabled resources or the developer role in a Cloud Foundry space. 
+* To manage access management tags, you must have the administrator role on the targeted resource.
+
+For more information, see [Granting users access to tag resources](/docs/account?topic=account-access).
+
+## Can users in my account view my tags?
+{: #tags-visibility-account}
+{: faq}
+
+Yes, tags are visible throughout your account. If your account users have permission to view a resource, they can also view all tags that are attached to those resources. For more information, see [Granting users access to tag resources](/docs/account?topic=account-access).
+
+## Can I delete my tags?
 {: #delete-tag}
 {: faq}
 
 Before you can delete a tag, you must detach it from all resources. The tag might be attached to a resource that you don't have permission to view. The same tag can be attached to several resources by different users in the same billing account. Users don't have the same visibility on all resources on the account. Contact the account owner who can resolve the problem by detaching the tag from the blocking resource.
 
-If you still can't delete it, the tag might be attached to a resource that that was reclaimed. If a reclaimed resource is blocking tag deletion, you can use the {{site.data.keyword.Bluemix}} CLI to manage the reclamation process of specific resources. For more information, see [Using resource reclamations](/docs/account?topic=account-resource-reclamation).
+If you still can't delete it, the tag might be attached to a reclaimed resource. You can use the {{site.data.keyword.Bluemix_notm}} CLI to manage the reclamation process of specific resources. For more information, see [Using resource reclamations](/docs/account?topic=account-resource-reclamation).
 
 When you delete an access management tag from the account, any associated IAM policies are also deleted with it.
 {: note}
-
-## Can I rename a tag?
-{: #rename-tag}
-{: faq}
-
-You can't edit the name of a tag. To rename a tag, remove it and reassign the resource with a new tag.  
 
 ## Can I edit the default dashboard?
 {: #access-dashboard}
