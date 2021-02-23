@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-02-22"
+lastupdated: "2021-02-23"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3384,6 +3384,14 @@ Review the available platform and service roles available and the actions mapped
 | `compliance.configuration-governance.rules-update` | Update an existing config rule. | Administrator, Editor |
 | `compliance.configuration-governance.rules-delete` | Delete a config rule. | Administrator, Editor |
 | `compliance.configuration-governance.rules-eval` | Evaluate the configuration changes of a resource. | ServiceProvider |
+| `compliance.configuration-governance.templates-create` | Create a template. | Administrator, Editor |
+| `compliance.configuration-governance.templates-read` | View the templates that are available for your accounts. | Administrator, Editor, Operator, Viewer |
+| `compliance.configuration-governance.templates-update` | Update an existing template. | Administrator, Editor |
+| `compliance.configuration-governance.templates-delete` | Delete a template. | Administrator, Editor |
+| `compliance.configuration-governance.default-configs-create` | Create a default configuration. | Administrator, Editor |
+| `compliance.configuration-governance.default-configs-read` | View the default configurations that are available for your accounts. | Administrator, Editor, Operator, Viewer |
+| `compliance.configuration-governance.default-configs-update` | Update an existing default configuration. | Administrator, Editor |
+| `compliance.configuration-governance.default-configs-delete` | Delete a default configuration. | Administrator, Editor |
 | `compliance.configuration-governance.config-ready` | Configuration governance config ready. | ServiceProvider |
 | `compliance.configuration-governance.attachments-create` | Create an attachment between a rule and a scope. | Administrator, Editor |
 | `compliance.configuration-governance.attachments-read` | View the attachments that are associated with a rule. | Administrator, Editor, Operator, Viewer |
@@ -3407,6 +3415,8 @@ Review the available platform and service roles available and the actions mapped
 | `compliance.posture-management.keys-read` | Read BYOK/KYOK configuration | Administrator, Editor, Operator, Viewer |
 | `compliance.posture-management.keys-write` | Edit BYOK/KYOK configuration | Administrator, Editor |
 | `compliance.posture-management.keys-delete` | Enable/Disable BYOK configuration | Administrator, Editor |
+| `compliance.admin.settings-read` | View Admin Settings | Administrator, Editor, Operator, Viewer |
+| `compliance.admin.settings-update` | Edit Admin Settings | Administrator |
 {: caption="Table 77. Service actions - Security and Compliance Center" caption-side="top"}
 {: #actions-table77}
 {: tab-title="Actions"}
