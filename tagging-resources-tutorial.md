@@ -2,7 +2,7 @@
 
 copyright:
    years: 2021
-lastupdated: "2021-02-17"
+lastupdated: "2021-02-23"
 
 keywords: tagging resources, managing access, access management tags, create access management tags, get started with access management tags, IAM-enabled resources, tag your resource, access group, access group policy
 
@@ -101,7 +101,3 @@ Then, add users to your access group:
 After you create the access policy, access to other resources can be granted or revoked by attaching and detaching the same access management tag to those resources.
 {: note}
 
-## Next steps
-{: #tagging-resources-next}
-
-To learn how you can perform the same actions by using CLI and API commands, see [Working with tags](/docs/account?topic=account-tag).
