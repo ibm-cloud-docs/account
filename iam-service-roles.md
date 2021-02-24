@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-02-23"
+lastupdated: "2021-02-24"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1997,22 +1997,25 @@ Review the available platform and service roles available and the actions mapped
 | `satellite.link.get` | Get configuration and status of a Link instance. | Administrator, Editor, Operator, Satellite Link Source and Endpoint Controller, Viewer |
 | `satellite.link.delete` | Delete a Link instance of a Satellite Location.  | Administrator, Operator |
 | `satellite.link-endpoints.list` | List all Link Endpoints of a Satellite Location. | Administrator, Editor, Operator, Satellite Link Source and Endpoint Controller, Viewer |
-| `satellite.link-endpoint.create` | Create a Link Endpoint with specified configuration. | Administrator, Editor, Operator, Satellite Link Source and Endpoint Controller |
-| `satellite.link-endpoint.get` | Get configuration and status of a Link Endpoint. | Administrator, Editor, Operator, Satellite Link Source and Endpoint Controller, Viewer |
-| `satellite.link-endpoint.update` | Modify configuration of a Link Endpoint. | Administrator, Editor, Operator, Satellite Link Source and Endpoint Controller |
-| `satellite.link-endpoint.delete` | Delete a Link Endpoint. | Administrator, Editor, Operator, Satellite Link Source and Endpoint Controller |
+| `satellite.link-endpoints.create` | Create a Link Endpoint with specified configuration. | Administrator, Editor, Operator, Satellite Link Source and Endpoint Controller |
+| `satellite.link-endpoints.get` | Get configuration and status of a Link Endpoint. | Administrator, Editor, Operator, Satellite Link Source and Endpoint Controller, Viewer |
+| `satellite.link-endpoints.update` | Modify configuration of a Link Endpoint. | Administrator, Editor, Operator, Satellite Link Source and Endpoint Controller |
+| `satellite.link-endpoints.delete` | Delete a Link Endpoint. | Administrator, Editor, Operator, Satellite Link Source and Endpoint Controller |
 | `satellite.link-endpoint-certs.get` | Get certificate/key of a Link Endpoint. | Administrator, Editor, Operator, Satellite Link Source and Endpoint Controller |
 | `satellite.link-endpoint-certs.upload` | Upload certificate/key for a Link Endpoint. | Administrator, Editor, Operator, Satellite Link Source and Endpoint Controller |
 | `satellite.link-endpoint-certs.delete` | Delete certificate/key of a Link Endpoint. | Administrator, Editor, Operator, Satellite Link Source and Endpoint Controller |
-| `satellite.link-endpoint-certs.generate` | Generate self-signed certificate/key for a Link Endpoint. | Administrator, Editor, Operator, Satellite Link Source and Endpoint Controller |
-| `satellite.link-sources.list` | List all ACL Sources of a Link instance. | Administrator, Editor, Manager, Operator, Reader, Satellite Link Source and Endpoint Controller, Viewer, Writer |
-| `satellite.link-source.create` | Create a ACL Source for a Link instance. | Administrator, Editor, Manager, Operator, Satellite Link Source and Endpoint Controller, Writer |
-| `satellite.link-source.delete` | Delete a ACL Source of a Link instance. | Administrator, Editor, Manager, Operator, Satellite Link Source and Endpoint Controller, Writer |
+| `satellite.link-sources.list` | List all ACL Sources of a Link instance. | Administrator, Editor, Operator, Satellite Link Source and Endpoint Controller, Viewer |
+| `satellite.link-sources.create` | Create a ACL Source for a Link instance. | Administrator, Editor, Operator, Satellite Link Source and Endpoint Controller |
+| `satellite.link-sources.delete` | Delete a ACL Source of a Link instance. | Administrator, Editor, Operator, Satellite Link Source and Endpoint Controller |
 | `satellite.link-endpoint-sources.list` | List ACL Sources used by a Link Endpoint.  | Administrator, Editor, Operator, Satellite Link Source and Endpoint Controller, Viewer |
 | `satellite.link-endpoint-sources.update` | Update ACL Sources enable/disable state of a Link Endpoint. | Administrator, Editor, Operator, Satellite Link Source Access Controller |
-| `satellite.link-source.update` | Modify IP address/subnets list of a ACL Source configured for the specified Link instance. | Administrator, Editor, Manager, Operator, Satellite Link Source and Endpoint Controller, Writer |
+| `satellite.link-sources.update` | Modify IP address/subnets list of a ACL Source configured for the specified Link instance. | Administrator, Editor, Operator, Satellite Link Source and Endpoint Controller |
 | `satellite.config-cluster.update` | Update cluster registration | Manager |
 | `satellite.location.cluster-create` | Enables the user to create Red Hat OpenShift on IBM Cloud clusters in the Satellite Location | Administrator, Satellite Cluster Creator |
+| `satellite.link-endpoints.import` | Import Endpoint from previous export. | Administrator, Editor, Operator, Satellite Link Source and Endpoint Controller |
+| `satellite.link-endpoints.export` | Export Endpoint configuration to an archive file. | Administrator, Editor, Operator, Satellite Link Source and Endpoint Controller |
+| `satellite.link-source-endpoints.list` | List Source status for all Endpoints. | Administrator, Editor, Operator, Satellite Link Source and Endpoint Controller |
+| `satellite.link-source-endpoints.update` | Update Source status for listed Endpoints. | Administrator, Editor, Operator, Satellite Link Source Access Controller |
 {: caption="Table 43. Service actions - IBM Cloud Satellite" caption-side="top"}
 {: #actions-table43}
 {: tab-title="Actions"}
