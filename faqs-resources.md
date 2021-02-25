@@ -2,13 +2,15 @@
 
 copyright:
 
-  years: 2015, 2020
+  years: 2015, 2021
 
-lastupdated: "2020-12-15"
+lastupdated: "2021-02-25"
 
 keywords: resource FAQs, resource frequently asked questions, resource group
 
 subcollection: account
+
+content-type: faq
 
 ---
 

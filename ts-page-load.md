@@ -1,12 +1,14 @@
 ---
 
 copyright:
-  years: 2015, 2020
-lastupdated: "2020-11-18"
+  years: 2015, 2021
+lastupdated: "2021-02-25"
 
 keywords: troubleshoot account, page load, page error, console page error
 
 subcollection: account
+
+content-type: troubleshoot
 
 ---
 

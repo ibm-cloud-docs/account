@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2020
-lastupdated: "2020-04-07"
+  years: 2018, 2021
+lastupdated: "2020-02-24"
 
 keywords: IAM token, token, API key, generate token, access token, temporary credential
 
@@ -30,7 +30,7 @@ Generate an {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) t
 
 You can generate an IAM token by using either your [{{site.data.keyword.Bluemix_notm}} API key](/docs/account?topic=account-userapikey#userapikey) or a [service ID's API key](/docs/account?topic=account-serviceidapikeys). The API key is a permanent credential that can be reused if you don't lose the API key value or delete the API key in the account. This process is also used if you are developing an application that needs to work with other {{site.data.keyword.Bluemix_notm}} services. You must use a service ID API key to get an access token to be passed to each of the {{site.data.keyword.Bluemix_notm}} services.
 
-An access token is a temporary credential that expires after 1 hour. After the acquired token expires, you must generate a new token to continue calling {{site.data.keyword.Bluemix_notm}} or service APIs, and you can perform only actions that are allowed by your level of assigned access within all accounts.
+An access token is a temporary credential that expires after 1 hour at the latest. After the acquired token expires, you must generate a new token to continue calling {{site.data.keyword.Bluemix_notm}} or service APIs, and you can perform only actions that are allowed by your level of assigned access within all accounts. Use the response property `expires_in` in the API response to identify the length of time that your specific access token is valid.
 {: note}
 
 Use the following `curl` command to generate an IAM token by using an API key.
@@ -77,5 +77,5 @@ The following sample is the expected response:
 ```
 {: codeblock}
 
-An IAM token is valid for 60 minutes, and it is subject to change. When a token expires, you must generate a new one.
+An IAM token is valid for up to 60 minutes, and it is subject to change. When a token expires, you must generate a new one. Use the property `expires_in` for the expiration of the IAM token that you have just created.
 {: note}

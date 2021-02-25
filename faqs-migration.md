@@ -2,13 +2,15 @@
 
 copyright:
 
-  years: 2020
+  years: 2020, 2021
 
-lastupdated: "2020-06-09"
+lastupdated: "2021-02-25"
 
 keywords: migration FAQs, data centers
 
 subcollection: account
+
+content-type: faq
 
 ---
 

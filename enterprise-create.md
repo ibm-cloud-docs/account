@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2020
-lastupdated: "2020-06-10"
+  years: 2019, 2021
+lastupdated: "2021-02-22"
 
-keywords: enterprise, enterprise account, create enterprise, set up enterprise, multiple account
+keywords: enterprise, enterprise account, create enterprise, set up enterprise, multiple account, video
 
 subcollection: account
 
@@ -13,9 +13,20 @@ subcollection: account
 {:shortdesc: .shortdesc}
 {:external: target="_blank" .external}
 {:codeblock: .codeblock}
+{:pre: .pre}
 {:important: .important}
 {:tip: .tip}
 {:note: .note}
+{:curl: .ph data-hd-programlang='curl'}
+{:go: .ph data-hd-programlang='go'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
+{:ruby: .ph data-hd-programlang='ruby'}
+{:api: .ph data-hd-interface='api'}
+{:cli: .ph data-hd-interface='cli'}
+{:ui: .ph data-hd-interface='ui'}
+
 
 # Creating an enterprise
 {: #create-enterprise}
@@ -37,6 +48,7 @@ If you don't have a Subscription account, you can upgrade your account as descri
 
 ## Creating an enterprise in the console
 {: #create-console}
+{: ui}
 
 1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage > Enterprise**, and click **Create**.
 1. Enter a unique name to identify your enterprise. Typically, the name reflects your company or organization, such as `My organization's enterprise`. You can edit the enterprise name later if needed.
@@ -55,6 +67,7 @@ Click **Accounts** to view your enterprise hierarchy, which contains two account
 
 ## Creating an enterprise by using the CLI
 {: #create-cli}
+{: cli}
 
 1. Log in, and select the account.
 
@@ -62,7 +75,7 @@ Click **Accounts** to view your enterprise hierarchy, which contains two account
    ibmcloud login
    ```
    {:codeblock}
-1. Create the enterprise by running the following command, where `NAME` is a unique name to identify the enterprise.
+1. Create the enterprise by running the [`ibmcloud enterprise create`](/docs/account?topic=cli-ibmcloud_enterprise#ibmcloud_enterprise_create) command, where `NAME` is a unique name to identify the enterprise.
 
    ```
    ibmcloud enterprise create NAME [-d, --domain DOMAIN_NAME] [--primary-contact-id PRIMARY_CONTACT_USER_ID]
@@ -94,10 +107,11 @@ ID:                      09876jihgf54321edcba
 Enterprise Account ID:   edcba12345jihgf67890
 ```
 
-The account that you used to create the enterprise is now a part of the enterprise. Run the [`ibmcloud enterprise accounts`](/docs/cli?topic=cli-ibmcloud_enterprise#ibmcloud_enterprise_accounts) command to view the two accounts in your enterprise: the enterprise account, and the account you used to create the enterprise.
+The account that you used to create the enterprise is now a part of the enterprise. Run the [`ibmcloud enterprise accounts`](/docs/account?topic=cli-ibmcloud_enterprise#ibmcloud_enterprise_accounts) command to view the two accounts in your enterprise: the enterprise account, and the account you used to create the enterprise.
 
 ## Creating an enterprise by using the API
 {: #create-api}
+{: api}
 
 You can programmatically create an enterprise by calling the Enterprise Management API as shown in the following sample request. For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-enterprise){: external}.
 
@@ -113,7 +127,56 @@ curl -X POST \
   "primary_contact_iam_id": "IBMid-0123ABC"
 }'
 ```
+{: pre}
+{: curl}
+
+```java
+CreateEnterpriseOptions options = new CreateEnterpriseOptions.Builder()
+        .sourceAccountId("a1b2c32a5ea94809a9840f5e23c362d")
+        .name("IBM")
+        .primaryContactIamID("IBMid-0123ABC")
+        .domain("IBM.com")
+        .build();
+Response<CreateEnterpriseResponse> response = service.createEnterprise(options).execute();
+```
 {: codeblock}
+{: java}
+
+```javascript
+const params = {
+        sourceAccountId: 'a1b2c32a5ea94809a9840f5e23c362d'
+        name: 'IBM'
+        primaryContactIamId: 'IBMid-0123ABC'
+        domain: 'IBM.com'
+};
+service.createEnterprise(params).then(response => {
+        console.log(response);
+}).catch(err => {});
+```
+{: codeblock}
+{: javascript}
+
+```python
+response = service.create_enterprise (
+        source_account_id = 'a1b2c32a5ea94809a9840f5e23c362d',
+        name = 'IBM',
+        primary_contact_iam_id = 'IBMid-0123ABC',
+        domain= 'IBM.com'
+)
+```
+{: codeblock}
+{: python}
+
+```go
+createEnterpriseOptionsModel := service.NewCreateEnterpriseOptions(
+        "a1b2c32a5ea94809a9840f5e23c362d",
+        "Sample Enterprise",
+        "example.com",
+        "IBMid-0123ABC")
+result, detailedResponse, err := service.createEnterprise(createEnterpriseOptionsModel)
+```
+{: codeblock}
+{: go}
 
 ## Next steps
 {: #create-next-steps}

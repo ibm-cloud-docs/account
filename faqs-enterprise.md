@@ -1,12 +1,14 @@
 ---
 
 copyright:
-  years: 2015, 2020
-lastupdated: "2020-06-09"
+  years: 2015, 2021
+lastupdated: "2021-02-25"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
 subcollection: account
+
+content-type: faq
 
 ---
 

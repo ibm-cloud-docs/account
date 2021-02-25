@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-02-09"
+lastupdated: "2021-02-23"
 
 keywords: platform notifications, email notifications, IBM Cloud notifications, notification preferences, email preferences, user notifications, infrastructure notifications
 
@@ -47,8 +47,8 @@ Your platform email notifications settings are tied to your profile, not the acc
   * To receive updates about the status of your infrastructure orders, select **Ordering**.  
   * To manage the notification distribution list in regard to your account, subscriptions or security and compliance alerts, click **Additional notification preferences** > **Manage**.
 
-  By default, all {{site.data.keyword.Bluemix_notm}} platform notifications are turned off.
-  {: tip}
+To quickly turn off emails for the selected account, or for all other accounts, click **Actions** in the upper-right corner of the page and select your preference.
+{: tip}
 
 ## Setting resource notifications
 {: #setting-resource-notifications}
@@ -66,8 +66,8 @@ You can set your preferences to receive resource-related notifications for incid
   * Receive notifications about security vulnerabilities and the required actions to take.
   * Receive notifications about resource activity, such as status and service updates. 
 
-  By default, all {{site.data.keyword.Bluemix_notm}} resource notifications are turned off.
-  {: tip}
+To quickly turn off emails for the selected account, or for all other accounts, click **Actions** in the upper-right corner of the page and select your preference.
+{: tip}
 
 ## Setting user notifications for classic infrastructure resources
 {: #setting-user-notifications}
