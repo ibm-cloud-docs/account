@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2021
-lastupdated: "2021-02-17"
+lastupdated: "2021-02-25"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, full list of tags, how to use tags
 
@@ -71,7 +71,30 @@ Before you can attach your access management tags to individual resources, you n
 
 1. Go to **Manage** > **Account** in the {{site.data.keyword.cloud}} console, and select **Tags**.
 2. Click **Access management tags**.
-3. Type your wanted tag names that are separated with commas and click **Create Tags**. The newly created tags appear in the list. These tags are now ready to be attached to resources and to be written into access policies.
+3. Type the names of your tags, and click **Create Tags**. These tags are now ready to be attached to resources and to be written to access policies.
+
+### Creating access management tags by using the CLI
+{: #create-access-cli}
+
+1. Log in to {{site.data.keyword.cloud}} CLI. If you have multiple accounts, you are prompted to select which account to use. If you do not specify a region with the `-r` flag, you must also select a region.
+    ```
+    ibmcloud login
+    ```
+    {: codeblock}
+
+    If your credentials are rejected, you might be using a federated ID. To log in with a federated ID, use the `--sso` flag. See [Logging in with a federated ID](/docs/account?topic=account-federated_id) for more details.
+    {: tip}
+    
+    If it's your first time using the {{site.data.keyword.cloud_notm}} CLI, check out the [getting started tutorial](/docs/cli?topic=cli-getting-started).
+
+2. Enter the `ibmcloud resource tag-create` command to create an access management tag in your account. This example creates a tag that is called `project:myproject`: 
+    ```
+    ibmcloud resource tag-create --tag-names project:myproject
+    ```
+    {: codeblock} 
+ 
+
+For more information, see the [`ibmcloud resource` command reference](/docs/cli?topic=cli-ibmcloud_commands_resource).
 
 
 ### Creating access management tags by using the API
