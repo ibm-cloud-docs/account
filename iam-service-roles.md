@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-02-24"
+lastupdated: "2021-02-25"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -70,6 +70,7 @@ Review the available platform and service roles available and the actions mapped
 | `ibmae.cluster.read` |  | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
 | `ibmae.cluster.resize` |  | Administrator, Editor, Manager, Writer |
 | `ibmae.cluster.resetpassword` |  | Administrator, Manager |
+| `ibmae.cluster.updatePrivateEndpointAllowlist` |  | Administrator, Editor, Manager, Writer |
 | `ibmae.cluster.updatePrivateEndpointWhitelist` |  | Administrator, Editor, Manager, Writer |
 | `ibmae.cluster.viewpassword` |  | Administrator, Editor, Manager, Writer |
 {: caption="Table 1. Service actions - Analytics Engine" caption-side="top"}
