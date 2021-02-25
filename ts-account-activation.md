@@ -1,12 +1,14 @@
 ---
 
 copyright:
-  years: 2015, 2020
-lastupdated: "2020-09-17"
+  years: 2015, 2021
+lastupdated: "2021-02-25"
 
 keywords: troubleshoot account, activate account, confirmation email
 
 subcollection: account
+
+content-type: troubleshoot
 
 ---
 

@@ -1,11 +1,13 @@
 ---
 
 copyright:
-  years: 2015, 2020
-lastupdated: "2020-04-06"
+  years: 2015, 2021
+lastupdated: "2021-02-25"
 
 keywords: troubleshoot account, account problem, view all orgs 
 subcollection: account
+
+content-type: troubleshoot
 ---
 
 {:tsSymptoms: .tsSymptoms}

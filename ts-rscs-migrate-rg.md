@@ -2,13 +2,15 @@
 
 copyright:
 
-  years: 2015, 2020
+  years: 2015, 2021
 
-lastupdated: "2020-06-02"
+lastupdated: "2021-02-25"
 
 keywords: troubleshooting services, troubleshooting resources, service problems, resource problems, resource group, move resource, reassign resource, reassign instance
 
 subcollection: account
+
+content-type: troubleshoot
 
 ---
 

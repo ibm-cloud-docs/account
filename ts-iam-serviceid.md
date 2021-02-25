@@ -1,13 +1,14 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-06-02"
+  years: 2020, 2021
+lastupdated: "2021-02-25"
 
 keywords: troubleshoot manage service id, can't manage service id
 
 subcollection: account
 
+content-type: troubleshoot
 ---
 
 {:tsSymptoms: .tsSymptoms}

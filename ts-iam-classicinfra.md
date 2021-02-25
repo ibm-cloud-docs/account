@@ -1,13 +1,15 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-06-02"
+  years: 2020, 2021
+lastupdated: "2021-02-25"
 
 
 keywords: troubleshoot classic infrastructure permissions, what classic infrastructure permission does a user have
 
 subcollection: account
+
+content-type: troubleshoot
 
 ---
 

@@ -4,13 +4,15 @@
 
 copyright:
 
-  years: 2018, 2020
+  years: 2018, 2021
 
-lastupdated: "2020-09-30"
+lastupdated: "2021-02-25"
 
 keywords: frequently asked questions for iam, iam faq, iam questions, identity and access management questions
 
 subcollection: account
+
+content-type: faq
 
 ---
 
