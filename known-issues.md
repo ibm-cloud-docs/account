@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-09-10"
+  years: 2020, 2021
+lastupdated: "2021-02-23"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users, Cloud Foundry orgs
 
@@ -64,23 +64,29 @@ The following table lists the maximum limits for IAM resources. These limits app
 |----------------------------------------|------|
 | Access groups per account              | 500  |
 | Access groups per user                 | 50   |
+| Access management tags per account     | 30   |
 | Service IDs per account                | 2000 |
 | API Keys per identity                  | 20   |
 | Dynamic rules per access group         | 5    |
 | Policies per account                   | 2010 |
 | Policies per subject within an account | 500  |
 | Custom roles per account               | 40   |
-{:caption="Table 1. IAM Account Limits" caption-side="top"}
+{:caption="Table 1. IAM account limits" caption-side="top"}
 
 A maximum of 1,000 policies and service to service authorizations within one account is recommended to ensure optimal performance within your account. For more information about limiting the number of policies in your account, see the [Best practices for organizing resources and assigning access](/docs/account?topic=account-account_setup).
 {: tip}
 
 If you need to check the number of policies in your account or request an increase in the account limit, see [Managing policy limits](/docs/account?topic=account-policy-limits).
 
+### Policy limitations based on attributes
+{: #access-tag-limits}
+
+Access management tags are only available when you create an access policy that is scoped for all IAM-enabled services. In this case, when you enable the access based on tags, no other attributes can be added. And, when you base your policy on a specific region or resource group, no tag can be added to the access policy.
+
 ## Resource group is inactive with state: SUSPENDED
 {: #resource_inactive}
 
-When the process to reactivate or upgrade a suspended account does not complete successfully, you might see the following error when creating a new service: "The resource group <name> is inactive with state: SUSPENDED"
+When the process to reactivate or upgrade a suspended account does not complete successfully, you might see the following message when creating a new service: `The resource group <name> is inactive with state: SUSPENDED`.
  
 To resolve the issue, [open a support case](/docs/get-support?topic=get-support-open-case) and include the group name from the error message in the case details.
 

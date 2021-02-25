@@ -22,6 +22,7 @@ Managing your account, resources, and access
     acct-getstart-tutorial.md
     enterprise-tutorial.md
     iam-quickstart.md
+    tagging-resources-tutorial.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -280,6 +281,10 @@ Managing your account, resources, and access
         ts-iam-migratedpermissions.md
         ts-iam-max-policy.md
         ts-iam-serviceid.md
+        ts-iam-create-accesstag.md
+        ts-iam-attach-detach-accesstag.md
+        ts-iam-delete-accesstag.md
+        ts-iam-instances.md
 
     {: .topicgroup}
     Troubleshooting resources

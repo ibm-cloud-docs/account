@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018-2020
-lastupdated: "2020-07-30"
+  years: 2018, 2021
+lastupdated: "2021-02-17"
 
 keywords: tagging, enabling others to tag, tagging permissions
 
@@ -19,18 +19,18 @@ subcollection: account
 # Granting users access to tag resources
 {: #access}
 
-As the account owner, you might want to delegate some of the responsibility of tagging resources. For users to add tags to a resource, you must grant them the appropriate access. Use {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) access policies to grant users access to resources in a resource group. Use Cloud Foundry roles to grant users access to resources in a Cloud Foundry org and space.
+As the account owner, you might want to delegate some of the responsibility of tagging resources. For users to attach tags to a resource, you must grant them the appropriate access. Use {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) access policies to grant users access to resources in a resource group. Use Cloud Foundry roles to grant users access to resources in a Cloud Foundry org and space.
 {: shortdesc}
 
 ## Tagging permissions
 {: #tagging-permissions}
 
-Any user in an account can view tags. When a resource is tagged, all users who have read access to the resource can view the tag. To add or remove a tag from a resource, certain access roles or permissions are required depending on the resource type. See the following table to understand what role is required for each resource type.
+Any user in an account can view tags. When a resource is tagged, all users who have read access to the resource can view the tag. To attach or detach a tag on a resource, certain access roles or permissions are required depending on the resource type and tag type. See the following table to understand what role is required for each resource type.
 
 
 | Resource Type | Role |
 |--------|---------------|
-| IAM-enabled | Editor or administrator on the resource |
+| IAM-enabled | To attach or detach user tags, editor or administrator on the resource <br> To attach or detach access management tags, administrator on the resource <br> To view the assigned policies on the resource that has an access management tag attached, viewer role |
 | Cloud Foundry | Developer on the space that the resource belongs to  |
 | Bare metal on classic infrastructure| View hardware details and access to a specific set of services or all bare metal servers |
 | Dedicated Hosts on classic infrastructure | View virtual dedicated host details and access to a specific set of services or all dedicated hosts |
@@ -44,7 +44,7 @@ Any user in an account can view tags. When a resource is tagged, all users who h
 | FortiGate Security Appliance | Manage Firewalls |
 | IBM Cloud Load Balancer | Manage Load Balancers |
 | Gateway Appliance | Manage Network Gateways |
-{: caption="Table 1. Required roles for adding and removing tags" caption-side="top"}
+{: caption="Table 1. Required roles for attaching and detaching tags" caption-side="top"}
 {: summary="This is a simple data table."}
 
 
