@@ -127,6 +127,39 @@ To attach or detach an access management tag, appropriate permission is required
 When you detach an access management tag from a resource, any associated access policies are also detached from that resource.
 {: note}
 
+### By using the CLI
+{: #attach-detach-cli}
+
+Log in to [{{site.data.keyword.cloud}} CLI](/docs/cli?topic=cli-getting-started) and select your account to run the appropriate CLI command:
+* To attach a tag to a resource, use the `ibmcloud resource tag-attach` command.
+    The following example shows how to attach a user tag called `MyTag` to a resource named `MyResource`:
+    ```
+    ibmcloud resource tag-attach --tag-name MyTag --resource-name  'MyResource'
+    ```
+    {: codeblock}
+    
+    An example for attaching an access management tag called `project:myproject` to a resource named `MyResource`:
+    ```
+    ibmcloud resource tag-attach --tag-names MyTag --resource-name  'MyResource' --tag-type access 
+    ```
+    {: codeblock}    
+
+    The allowed values for `tag-type` are `user` for user tags and `access` for access management tags. The default value is `user`.
+* To detach a tag from a resource, use the `ibmcloud resource tag-detach` command.
+    An example to detach a user tag called `MyTag` from a resource named `MyResource`:
+    ```
+    ibmcloud resource tag-detach --tag-names MyTag —resource-name 'MyResource'
+    ```
+    {: codeblock}
+    
+    An example to detach an access management tag called `MyTag` from a resource named `MyResource`:
+    ```
+    ibmcloud resource tag-detach --tag-names project:myproject —resource-name 'MyResource' --tag-type access
+    ```
+    {: codeblock}
+ 
+For more information, see the [`ibmcloud resource` command reference](/docs/cli?topic=cli-ibmcloud_commands_resource). 
+
 ### By using the API
 {: #attach-detach-api}
 
