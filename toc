@@ -74,6 +74,7 @@ Managing your account, resources, and access
         Administering user settings
             iam-usersetting.md
             iam-update_status.md
+            iam-session-settings.md
             iam-specific_ip.md
             iam-restrict-api.md
             iam-restrict-service-id.md
