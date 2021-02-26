@@ -333,3 +333,8 @@ Currently, you can't move an org to a different account. However, you can re-cre
 {: faq}
 
 In a Lite account, you can work in only one region. In a Pay-As-You-Go or Subscription account, you can access all available regions.
+
+## Why do I get logged out of my account?
+{: #user-session-log-out}
+
+The administrator of your account has customized the duration of active and inactive accounts which requires users to enter their credentials after a specific time. For more information, see [Managing user's log in session durations](/docs/account?topic=account-iam-work-sessions). 
