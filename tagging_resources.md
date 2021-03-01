@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2021
-lastupdated: "2021-02-25"
+lastupdated: "2021-03-01"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, full list of tags, how to use tags
 
@@ -16,6 +16,7 @@ subcollection: account
 {:tip: .tip}
 {:note: .note}
 {:external: target="_blank" .external}
+
 
 
 # Working with tags
@@ -96,7 +97,6 @@ Before you can attach your access management tags to individual resources, you n
 
 For more information, see the [`ibmcloud resource` command reference](/docs/cli?topic=cli-ibmcloud_commands_resource).
 
-
 ### Creating access management tags by using the API
 {: #create-access-api}
 
@@ -140,7 +140,7 @@ Log in to [{{site.data.keyword.cloud}} CLI](/docs/cli?topic=cli-getting-started)
     
     An example for attaching an access management tag called `project:myproject` to a resource named `MyResource`:
     ```
-    ibmcloud resource tag-attach --tag-names MyTag --resource-name  'MyResource' --tag-type access 
+    ibmcloud resource tag-attach --tag-names project:myproject --resource-name  'MyResource' --tag-type access 
     ```
     {: codeblock}    
 
@@ -152,7 +152,7 @@ Log in to [{{site.data.keyword.cloud}} CLI](/docs/cli?topic=cli-getting-started)
     ```
     {: codeblock}
     
-    An example to detach an access management tag called `MyTag` from a resource named `MyResource`:
+    An example to detach an access management tag called `project:myproject` from a resource named `MyResource`:
     ```
     ibmcloud resource tag-detach --tag-names project:myproject —resource-name 'MyResource' --tag-type access
     ```
@@ -195,6 +195,7 @@ You can search for tags by using any of the following methods:
 The same tag can be attached to multiple resources by different users in the same billing account, and not all users have visibility on all resources on the account.
 {: note}
 
+
 ## Tagging for resellers
 {: #resell}
 
@@ -204,6 +205,7 @@ To control tag visibility, circulate tagging guidelines and let users know that 
 
 Use codes rather than names for clients and accounts and avoid placing sensitive information in tags.
 {: tip}
+
 
 ## Deleting unused tags from the account
 {: #delete}
