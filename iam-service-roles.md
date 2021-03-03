@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-03-02"
+lastupdated: "2021-03-03"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -2329,6 +2329,7 @@ Review the available platform and service roles available and the actions mapped
 | `kms.keyrings.create` | Create a key ring in the instance. | Manager, Writer |
 | `kms.keyrings.delete` | Delete a key ring in the instance. | Manager |
 | `kms.secrets.purge` | Purge an encryption key. | KeyPurge |
+| `kms.secrets.patch` | Patch attributes of an encryption key. | Manager, Writer |
 {: caption="Table 51. Service actions - Key Protect" caption-side="top"}
 {: #actions-table51}
 {: tab-title="Actions"}
@@ -3272,7 +3273,7 @@ Review the available platform and service roles available and the actions mapped
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `security-advisor.dashboard.view` | View Dashboard | Administrator, Editor, Operator |
+| `security-advisor.dashboard.view` |  | Administrator, Editor, Operator |
 | `security-advisor.findings.read` |  | Manager, Reader, Writer |
 | `security-advisor.findings.write` |  | Manager, Writer |
 | `security-advisor.findings.delete` |  | Manager |
@@ -3281,6 +3282,9 @@ Review the available platform and service roles available and the actions mapped
 | `security-advisor.metadata.delete` |  | Manager |
 | `security-advisor.metadata.write` |  | Manager |
 | `security-advisor.metadata.update` |  | Manager |
+| `security-advisor.data.post` |  | Manager, Writer |
+| `security-advisor.data.get` |  | Manager, Reader, Writer |
+| `security-advisor.analytics.post` |  | Manager, Writer |
 | `security-advisor.custom-solution.read` |  | Manager, Reader, Writer |
 | `security-advisor.custom-solution.write` |  | Manager |
 | `security-advisor.custom-solution.update` |  | Manager |
@@ -3293,20 +3297,17 @@ Review the available platform and service roles available and the actions mapped
 | `security-advisor.network-insights.disable` |  | Manager |
 | `security-advisor.activity-insights.enable` |  | Manager |
 | `security-advisor.activity-insights.disable` |  | Manager |
+| `security-advisor.insights-cos.create` |  | Manager |
 | `security-advisor.notification-channels.read` |  | Manager, Reader, Writer |
 | `security-advisor.notification-channels.create` |  | Manager |
 | `security-advisor.notification-channels.delete` |  | Manager |
 | `security-advisor.notification-channels.update` |  | Manager |
 | `security-advisor.accounts.list` |  | Reader |
-| `security-advisor.insights.read` | Fetch  the list of supported insights | Manager, Reader, Writer |
-| `security-advisor.network-insights-cos.create` | Add cos bucket details for insights | Manager |
-| `security-advisor.activity-insights-cos.create` | Add cos bucket details for activity insights | Manager |
-| `security-advisor.network-insights-cos.delete` | Delete cos bucket details for network insights | Manager |
-| `security-advisor.activity-insights-cos.delete` | Delete cos bucket details for activity insights | Manager |
-| `security-advisor.keys.read` | Role to read BYOK/KYOK configurations of the service | Manager, Reader, Writer |
-| `security-advisor.keys.write` | Role to create BYOK configurations of the service | Manager |
-| `security-advisor.keys.delete` | Role to delete BYOK configurations of the service | Manager |
-| `security-advisor.activity-insights-config.test` | Test activity insights configuration | Manager, Writer |
+| `security-advisor.findings.list` | List all findings | Reader |
+| `security-advisor.metadata.list` | List all metadata | Reader |
+| `security-advisor.notification-channels.list` | List all alert channels | Reader |
+| `security-advisor.partner-solution.list` | List all partner integrations | Reader |
+| `security-advisor.custom-solution.list` | List all direct connections | Reader |
 {: caption="Table 76. Service actions - Security Advisor" caption-side="top"}
 {: #actions-table76}
 {: tab-title="Actions"}
