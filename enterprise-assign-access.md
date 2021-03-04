@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2019, 2020
+  years: 2019, 2021
 
-lastupdated: "2020-04-16"
+lastupdated: "2021-03-04"
 
 keywords: enterprise policy, enterprise access, assign enterprise access, enterprise service
 
@@ -18,6 +18,9 @@ subcollection: account
 {:tip: .tip}
 {:note: .note}
 {:external: target="_blank" .external}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
 
 # Assigning enterprise access
 {: #assign-access-enterprise}
@@ -92,10 +95,11 @@ Then, one of the following two options:
 * Administrator or Editor role for the Enterprise account management service for the entire enterprise
 * Administrator or Editor role on the current and target account group 
 
-For details about the actions users can take for each role, see [Actions and roles for account management services](/docs/account?topic=account-account-services#account-management-actions-roles).
+For details about the actions users can take for each role, see [Actions and roles for account management services](/docs/account?topic=account-account-services#enterprise-account-management).
 
 ## Assigning access in the console
 {: #enterprise-access-console}
+{: ui}
 
 To assign an access policy to an existing user in the enterprise account, complete the following steps:
 
@@ -111,10 +115,11 @@ You can set the target of the policy to be for the entire enterprise, a specific
 7. (Optional) Repeat steps to add additional access. 
 8. Click **Assign** to assign all added access. 
 
-For more information about roles and actions to assign access in an enterprise account, see [Assigning access to account management service](/docs/account?topic=account-account-services#enterprise-account-management).
+For more information about roles and actions to assign access in an enterprise account, see [Assigning access to account management service](https://cloud.ibm.com/docs/account?topic=account-account-services#enterprise-account-management).
 
 ## Assigning access by using the CLI
 {: #enterprise-cli-policy}
+{: cli}
 
 To create a new access policy for a user, run the **`ibmcloud iam user-policy-create`** command. In the command example, a JSON file is used to specify the policy details. Review the example in the [Assigning access by using the API](#enterprise-api-policy) section for an example of what to include in the JSON file.
 
@@ -127,6 +132,7 @@ For more information, see [ibmcloud iam user-policy-create](/docs/cli?topic=cli-
 
 ## Assigning access by using the API
 {: #enterprise-api-policy}
+{: api}
 
 The following request example assigns a policy for a user with the Editor role on the Enterprise service in an enterprise account that is scoped to an account group. This type of policy is hierarchical and applies to all descendant objects in the hierarchy, which means all account groups or accounts within the specified target account group.  
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2020
-lastupdated: "2020-06-08"
+  years: 2019, 2021
+lastupdated: "2021-03-04"
 
 keywords: enterprise, create account group, organize accounts, move accounts, account group, change contact, account group contact 
 
@@ -15,6 +15,9 @@ subcollection: account
 {:important: .important}
 {:tip: .tip}
 {:note: .note}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
 
 # Organizing accounts in an enterprise
 {: #enterprise-organize}
@@ -34,6 +37,10 @@ Remember that how you organize your enterprise impacts how you can track usage c
 
 To create an account group, you need the Administrator or Editor role on the Enterprise service in the enterprise account.
 
+### Creating account groups in the console
+{: #create-account-groups-ui}
+{: ui}
+
 1. From the Enterprise dashboard in the {{site.data.keyword.Bluemix_notm}} console, click **Accounts** to view the accounts and account groups in the enterprise.
 1. In the Account groups section, click **Create**.
 1. Enter a name for the account group that reflects the accounts that it will contain. See [How can I use an enterprise?](/docs/account?topic=account-what-is-enterprise#enterprise-use-cases) for examples of how you might organize accounts.
@@ -51,6 +58,7 @@ To create a new tier in your enterprise hierarchy, create new account groups wit
 
 ### Creating account groups by using the CLI
 {: #create-account-groups-cli}
+{: cli}
 
 Create an account group by running the following command. To nest an account group within another account group, specify the name of the account group on the `--parent-account-group` option. If you want a different user to be the contact for the account group, specify their IBMid on the `--primary-contact-id` option.
 
@@ -62,6 +70,7 @@ ibmcloud enterprise account-group-create NAME
 
 ### Creating account groups by using the API
 {: #create-account-groups-api}
+{: api}
 
 You can programmatically create an account group in the enterprise by calling the Enterprise Management API.
 
@@ -89,12 +98,17 @@ You can move accounts anywhere within your enterprise. For example, you can move
 
 To move an account, you need the Administrator role on the Billing service in the enterprise account and the Editor or Administrator role on either the entire enterprise or both the current and target account groups.
 
+### Moving an account in the console
+{: #move-account-ui}
+{: ui}
+
 1. From the Enterprise dashboard in the console, click **Accounts**.
 1. In the Accounts section, click the Actions icon ![Actions icon](../icons/actions-icon-vertical.svg) in the row for the account, and select **Move account**.
 1. Select the new parent for the account, and click **Save**.
 
 ### Moving an account by using the CLI
 {: #move-accounts-cli}
+{: cli}
 
 1. Find the account name and ID by listing all accounts in your enterprise.
 
@@ -126,6 +140,7 @@ To move an account, you need the Administrator role on the Billing service in th
 
 ### Moving accounts by using the API
 {: #move-account-api}
+{: api}
 
 You can move an account by calling the Enterprise Management API as shown in the following sample request. Replace the IAM token and ID variables with the values from your enterprise.
 
@@ -141,22 +156,3 @@ curl -X PATCH \
 {: codeblock}
 
 For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#move-an-account-with-the-enterprise){: external}.
-
-## Updating the account group contact 
-
-You can update the contact for an account group by using the [Enterprise Management API](https://cloud.ibm.com/apidocs/enterprise-apis/enterprise#update-an-account-group){: external} or by opening a support case in the [Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter):
-
-1. If a user that you want to assign as the contact isn't in the enterprise, first invite the user to the enterprise account. See [Inviting users](/docs/account?topic=account-iamuserinv) for more information.
-1. Find the IAM ID for the new contact. Go to **Manage** > **Access (IAM)** and select **Users**. Click the user's name from the list. The IAM ID is displayed in the User details section. 
-1. Update the primary contact for the account group as shown in the following sample request: 
-
-  ```
-  curl -X PATCH \
-  "https://enterprise.cloud.ibm.com/v1/account-groups/$ACCOUNT_GROUP_ID" \
-  -H "Authorization: Bearer <IAM_Token>" \
-  -H 'Content-Type: application/json' \
-  -d '{
-    "primary_contact_iam_id": "iam_id"
-  }'
-  ```
-  {: codeblock}

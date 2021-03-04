@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-06-08"
+  years: 2020, 2021
+lastupdated: "2021-03-04"
 
 keywords: enterprise, add account, import account, create account
 
@@ -15,6 +15,9 @@ subcollection: account
 {:important: .important}
 {:tip: .tip}
 {:note: .note}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
 
 # Adding accounts to an enterprise
 {: #enterprise-add}
@@ -39,7 +42,12 @@ To import existing accounts into an enterprise, the following access is required
    * Within the account to be imported, you must be the account owner or have the Administrator role on the Billing service within the account.
    * Within the enterprise account, you need the Editor or Administrator role on the Enterprise service and the Administrator role on the Billing service.
 
+### Importing an account in the console
+{: #add-accoun-ui}
+{: ui}
+
 To import an existing account, complete the following steps:
+
 
 1. Log in to your enterprise account, and go to **Manage > Enterprise** in the {{site.data.keyword.Bluemix_notm}} console.
 1. Click **Accounts** to view the accounts and account groups in the enterprise. In the Accounts section, select **Add > Import account**.
@@ -55,6 +63,7 @@ To import an existing account, complete the following steps:
 
 ### Importing accounts by using the CLI
 {: #add-account-cli}
+{: cli}
 
 1. Find the ID of the account that you want to import to the enterprise.
 
@@ -78,6 +87,7 @@ To import an existing account, complete the following steps:
 
 ### Importing accounts by using the API
 {: #add-account-api}
+{: api}
 
 To import an existing account to the enterprise, call the [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#import-an-account-into-an-enterprise){: external} as shown in the following sample request. Replace the {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) token and ID variables with the values from your enterprise.
 
@@ -96,6 +106,10 @@ curl -X PUT \
 
 You can create new accounts within your enterprise. The accounts are created as Pay-As-You-Go accounts, and usage is billed to the enterprise. To create an account, you need an access policy with the Editor or Administrator role on the Enterprise service.
 
+### Creating accounts in the console
+{: #create-account-ui}
+{: ui}
+
 1. From the Enterprise dashboard, click **Accounts** to view accounts and account groups in the enterprise.
 1. In the Accounts section, select **Add > Create account**.
 1. Enter a name for the account that's unique within the enterprise. Because it's one of many accounts, a unique, descriptive name helps you understand the purpose of the account at a glance.
@@ -107,6 +121,7 @@ After you create the account, the account owner can log in to the account to inv
 
 ### Creating accounts by using the CLI
 {: #create-accounts-cli}
+{: cli}
 
 1. If you want to add the account to an account group, find the names and IDs of existing account groups.
 
@@ -124,6 +139,7 @@ After you create the account, the account owner can log in to the account to inv
 
 ### Creating accounts by using the API
 {: #create-account-api}
+{: api}
 
 To create a new account in the enterprise, call the Enterprise Management API as shown in the following sample request, replacing the IAM token and ID variables with the values from your enterprise. For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-a-new-account-in-an-enterprise){: external}.
 
@@ -138,4 +154,4 @@ curl -X POST \
   "owner_iam_id": "IBMid-0123ABC"
 }'
 ```
-{: codeblock}
+ <!---{: codeblock}--->

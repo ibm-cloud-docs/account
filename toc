@@ -145,6 +145,7 @@ Managing your account, resources, and access
             enterprise-create.md
             enterprise-add-accounts.md
             enterprise-organize-accounts.md
+            enterprise-update-group-contact.md
 
         {: .topicgroup}
         Assigning enterprise access
