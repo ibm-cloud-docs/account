@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2020
+  years: 2017, 2021
 
-lastupdated: "2020-11-03"
+lastupdated: "2021-03-03"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -18,6 +18,9 @@ subcollection: account
 {:tip: .tip}
 {:note: .note}
 {:external: target="_blank" .external}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
 
 # Creating and working with service IDs
 {: #serviceids}
@@ -37,6 +40,7 @@ If the Restrict service ID creation IAM account setting is enabled, then everyon
 
 ## Creating a service ID
 {: #create_serviceid}
+{: ui}
 
 To create a service ID, complete the following steps:
 
@@ -49,6 +53,7 @@ Then, hover on the row of a service ID to use the **Actions** ![List of actions 
 
 ## Updating a service ID
 {: #update_serviceid}
+{: ui}
 
 You can update a service ID by changing the name and description at any time. You can also delete and create new API keys as needed or update the assigned access policies. Hover on the row of a service ID to use the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu to manage your service ID.
 
@@ -80,10 +85,12 @@ To assign access to a specific service ID in the account, set an access policy f
 * Specify the service ID identifier in the Resource ID field
 
 To get the identifier of a specific service ID, go to **Manage** > **Access (IAM)**, and select **Service IDs**. Select the service ID that you want to view details for, and copy the ID value.
-{: tip}
+{: ui}
+
 
 ### Locking a service ID from the UI
 {: #lock_serviceid_ui}
+{: ui}
 
 A locked service ID is indicated by the ![Locked icon](images/locked.svg "Locked") icon.
 
@@ -96,6 +103,7 @@ To unlock a service ID, select the service ID from the table that you want to un
 
 ### Locking and unlocking a service ID by using the CLI
 {: #lock_serviceid_cli}
+{: cli}
 
 To lock a service ID, use the following command:
 
