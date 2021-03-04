@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-11-18"
+  years: 2020, 2021
+lastupdated: "2021-03-04"
 
 keywords: maximum limits, limits, maximum policies, check for limits, check policy number, increase policy limit, total number of account policies
 
@@ -85,7 +85,6 @@ Log in, and select your account to run the appropiate CLI command. You might wan
        ibmcloud iam access-group-policies <access-group> -f --output JSON | jq '. | length'
     ```
     {: codeblock}
-    ```
 
 ## Requesting a policy limit increase
 {: #limit-increase}
