@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2020
+  years: 2017, 2021
 
-lastupdated: "2020-07-10"
+lastupdated: "2021-03-04"
 
 keywords: authorizations, service to service access, access between services, dependent service, source service, target service, assigned access, access policies
 
@@ -18,7 +18,9 @@ subcollection: account
 {:external: target="_blank" .external}
 {:tip: .tip}
 {:note: .note}
-
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
 
 # Using authorizations to grant access between services
 {: #serviceauth}
@@ -38,6 +40,7 @@ The source service's dependent services might be in the source service's account
 
 ## Creating an authorization in the console
 {: #create-auth}
+{: ui}
 
 You must have access to the target service to create an authorization between services. You can grant only the level of access that you have as a user of the target service. For example, if you have viewer access on the target service, you can assign only the viewer role for the authorization.
 
@@ -49,8 +52,9 @@ You must have access to the target service to create an authorization between se
 5. Select a role to assign access to the source service that accesses the target service.
 6. Click **Authorize**.
 
-### Creating an authorization by using the CLI
+## Creating an authorization by using the CLI
 {: #auth-cli}
+{: cli}
 
 To authorize a source service access a target service, run the `ibmcloud iam authorization-policy-create` command. 
 
@@ -62,8 +66,9 @@ ibmcloud iam authorization-policy-create cloud-object-storage kms Reader --sourc
 
 For more information about all of the parameters that are available for this command, see [ibmcloud iam authorization-policy-create](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_authorization_policy_create).
 
-### Creating an authorization by using the API
+## Creating an authorization by using the API
 {: #auth-api}
+{: api}
 
 To authorize a source service access to a target service, use the [IAM Policy Management API](/apidocs/iam-policy-management#create-a-policy). See the following API example for Create a policy method with the `type=authorization` specified. All of the possible attributes are listed.
 
@@ -138,10 +143,10 @@ Not all services support policies at the `resourceType` and individual `resource
 
 You can remove any authorization between services in the account if you are assigned the Administrator role on the target service. If you remove any access policies created by the source service for its dependent services, the source service is unable to complete the workflow or access the target service.
 
-1. In the console, click **Manage** &gt; **Access (IAM)**, and select **Authorizations**.
-2. Identify the row for the authorization that you want to remove from the account.
-3. From the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, select **Remove**.
-5. Select **Remove**.
+1. {: ui} In the console, click **Manage** &gt; **Access (IAM)**, and select **Authorizations**.
+2. {: ui} Identify the row for the authorization that you want to remove from the account.
+3. {: ui} From the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, select **Remove**.
+5. {: ui} Select **Remove**.
 
 If the source service is removed from the account, any policies that are created by that service for its dependent services are deleted automatically. Similarly, if the dependent service is removed from the account, any access policies that are delegated to that service are also deleted.
 {: note}
