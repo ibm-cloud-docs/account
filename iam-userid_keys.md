@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2020
-lastupdated: "2020-04-16"
+  years: 2015, 2021
+lastupdated: "2021-03-04"
 
 keywords: API key, user API keys, IBM Cloud API keys, manage user keys, create API key
 
@@ -18,6 +18,9 @@ subcollection: account
 {:help: data-hd-content-type='help'}
 {:note: .note}
 {:tip: .tip}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
 
 # Managing user API keys
 {: #userapikey}
@@ -34,19 +37,21 @@ A functional ID is a user ID created to represent a program, application, or ser
 
 ## Managing user API keys
 {: #manage-user-keys}
+{: ui}
 
 To manage the {{site.data.keyword.Bluemix_notm}} API keys that are associated with your user identity or the ones that you have access to manage for other users in the account, go to **Manage** &gt; **Access (IAM)** &gt; **API keys** in the console. On the API keys page, you can create, edit, or delete {{site.data.keyword.cloud_notm}} API keys for yourself, and you can manage all [classic infrastructure API keys](/docs/account?topic=account-classic_keys) for users that you are an ancestor of in the user hierarchy. In addition, if you are the account owner or a user assigned the required access to manage other user's API keys in the account, you can use the **View** filter to list and manage those API keys too.
 
-| Filter Options | Displayed API Keys | Required Access | Allowed Actions |
-|-------------------|------------------|------------------|-------------|
-| My {{site.data.keyword.cloud_notm}} API keys      | Your IBM Cloud API keys | No access required | View, create, edit, delete |
-| All user {{site.data.keyword.cloud_notm}} API keys | All IBM Cloud API keys created by all users in the account | Administrator role on IAM Identity service | View, edit, and delete |
+| Filter Options                                     | Displayed API Keys                                         | Required Access                            | Allowed Actions            |
+|----------------------------------------------------|------------------------------------------------------------|--------------------------------------------|----------------------------|
+| My {{site.data.keyword.cloud_notm}} API keys       | Your IBM Cloud API keys                                    | No access required                         | View, create, edit, delete |
+| All user {{site.data.keyword.cloud_notm}} API keys | All IBM Cloud API keys created by all users in the account | Administrator role on IAM Identity service | View, edit, and delete     |
 {: caption="Table 1. Required access for API key management on the API keys page" caption-side="top"}
 
 ## Creating an API key
 {: #create_user_key}
 {: help}
 {: support}
+{: ui}
 
 As an {{site.data.keyword.Bluemix_notm}} user you might want to use an API key when you enable a program or script without distributing your password to the script. A benefit of using an API key can be that a user or organization can create several API keys for different programs and the API keys can be deleted independently if compromised without interfering with other API keys or even the user. You can create up to 20 API keys.
 
@@ -61,6 +66,11 @@ To create an API key for your user identity in the UI, complete the following st
 For security reasons, the API key is only available to be copied or downloaded at the time of creation. If the API key is lost, you must create a new API key.
 {: tip}
 
+
+## Creating an API key using the CLI
+{: #create_user_key-cli}
+{: cli}
+
 To create an API key by using the CLI, use the following command:
 
 1. Enter `ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]` in your command prompt, and specify a name, description, and file for saving your key. See the following example:
@@ -72,6 +82,7 @@ ibmcloud iam api-key-create MyKey -d "this is my API key" --file key_file
 
 ## Updating an API key
 {: #update_user_key}
+{: ui}
 
 If you want to change the name or the description of an API key, complete the following steps in the UI or CLI.
 
@@ -85,6 +96,11 @@ To edit an API key, complete the following steps:
 To edit an API key that is not your own, but you have access to manage, go to the API keys page. Then, select the **All user {{site.data.keyword.cloud_notm}} API keys** option from the **View** menu to find the API key.
 {: tip}
 
+
+## Updating an API key using the CLI
+{: #update_user_key-cli}
+{: cli}
+
 To edit an API key by using the CLI, enter the following command:
 
 1. Enter `ibmcloud iam api-key-update NAME [-n NAME] [-d DESCRIPTION]` in your command prompt, specifying the old name, new name, and new description for the key. For example:
@@ -96,10 +112,11 @@ ibmcloud iam api-key-update MyCurrentName -n MyNewName -d "the new description o
 ## Locking an API key
 {: #lock_user_key}
 
-For platform API keys that represent your user identity you can prevent the API key from being deleted by locking it. A locked API key is indicated by the ![Locked icon](images/locked.svg "Locked") icon. You can lock and unlock your API key by using the UI or CLI.
+For platform API keys that represent your user identity you can prevent the API key from being deleted by locking it. A locked API key is indicated by the ![Locked icon](images/locked.svg "Locked") icon. 
 
 ### Locking and unlocking an API key from the UI
 {: #lockui}
+{: ui}
 
 1. In the console, go to **Manage** &gt; **Access (IAM)** &gt; **API keys**.
 2. Identify the row of the API key that you want to lock, and select **Lock** from the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu.
@@ -109,6 +126,7 @@ You can unlock your API key at any time to update or remove the API key from you
 
 ### Locking and unlocking an API key by using the CLI
 {: #lockcli}
+{: cli}
 
 To lock an API key, use the following command:
 
@@ -165,6 +183,7 @@ ibmcloud iam api-key-unlock test-api-key
 
 ## Deleting an API key
 {: #delete_user_key}
+{: ui}
 
 If you are using a key rotation strategy, you might want to delete an older key and replace it with a new key.
 
@@ -176,6 +195,10 @@ To delete an API key, complete the following steps:
 
 To delete an API key that is not your own, but you have access to manage, go to the API keys page. Then, select the **All user {{site.data.keyword.cloud_notm}} API keys** option from the **View** menu to find the API key.
 {: tip}
+
+## Deleting an API key using the CLI
+{: #delete_user_key-cli}
+{: cli}
 
 To delete an API key by using the CLI:
 
