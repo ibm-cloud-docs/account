@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2021
-lastupdated: "2021-02-17"
+lastupdated: "2021-03-04"
 
 keywords: access groups, access group, create group, assign access to group
 
@@ -17,21 +17,15 @@ subcollection: account
 {:tip: .tip}
 {:note: .note}
 {:video: .video}
-
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
 
 # Setting up access groups
 {: #groups}
 
 An access group can be created to organize a set of users and service IDs into a single entity that makes it easy for you to assign access. You can assign a single policy to the group instead of assigning the same access multiple times per individual user or service ID.
 {:shortdesc}
-
-To manage or create new access groups, you must have the following type of access:
-
-* Account owner
-* Administrator or editor on the IAM Access Groups account management service in the account
-* Administrator or editor for the all Account Management Services
-
-Additionally, an administrator or editor can be assigned access to manage an individual group by creating an access policy where the resource is the Access group ID. For more information about access policies and roles for the IAM Access Groups service, see [IAM access](/docs/account?topic=account-userroles#userroles).
 
 To make assigning and managing access even easier, you can set up resource groups to organize a set of resources that you want a group of users to have access to. When your resource group is set up, you can assign a policy that gives access to all resources within that group instead of creating access policies for individual service instances within your account.
 {: tip}
@@ -81,9 +75,20 @@ Inviting users to the access group is easy. You can add users directly to each a
 
 Thank you for watching this installment of the IBM Cloud Console Guide. 
 
+## Before you begin
+{: #prereq-create-groups}
 
-## Creating an access group
+To manage or create new access groups, you must have the following type of access:
+
+* Account owner
+* Administrator or editor on the IAM Access Groups account management service in the account
+* Administrator or editor for the all Account Management Services
+
+Additionally, an administrator or editor can be assigned access to manage an individual group by creating an access policy where the resource is the Access group ID. For more information about access policies and roles for the IAM Access Groups service, see [IAM access](/docs/account?topic=account-userroles#userroles).
+
+## Creating an access group in the console
 {: #create_ag}
+{: ui}
 
 To create an access group, complete the following steps:
 
@@ -96,6 +101,10 @@ Next, continue to set up your group by adding users or service IDs. Or, you can 
 You can delete a group by selecting the **Remove group** option. When you remove a group from the account, you are removing all users and service IDs from the group and all access that is assigned to the group.
 {: note}
 
+## Creating an access group by using the CLI
+{: #create_ag_cli}
+{: cli}
+
 To create an access group by using the CLI, you can use the [ibmcloud iam access-group-create](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_access_group_policy_create) command.
 
 ```
@@ -103,9 +112,23 @@ ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
 ```
 {: codeblock}
 
+## Creating an access group by using the API
+{: #create_ag_api}
+{: api}
 
-## Assigning access to a group
+You can programmatically create access groups by calling the [{{site.data.keyword.iamlong}} (IAM) Access Groups API](https://{DomainName}/apidocs/tagging){: external} as shown in the following sample request. The example creates an access group for managers in the account:
+```
+curl -X POST -H "Authorization: {iam_token}" \
+-H "Accept: application/json" \
+-H "Content-Type: application/json" \
+-d '{ "name": "Managers", "description": "Group for managers" }' \
+"{base_url}/groups?account_id={account_id}"
+```
+{: codeblock}
+
+## Assigning access to a group in the console
 {: #access_ag}
+{: ui}
 
 After you set up your group with users and service IDs, you can assign a common access policy to the group. Remember, any policy that you set for the group applies to all entities within the group.
 
@@ -123,10 +146,64 @@ After you set up your group with users and service IDs, you can assign a common 
    
 5. Click **Add** > **Assign**.  
 
+## Assigning access to a group by using the CLI
+{: #access_ag_cli}
+{: cli}
 
 To create an access group policy by using the CLI, you can use the [ibmcloud iam access-group-policy-create](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_access_group_policy_create) command.
 
 ```
 ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --roles ROLE_NAME1,ROLE_NAME2... [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
+```
+{: codeblock}
+
+## Assigning access to a group by using the API
+{: #access_ag_api}
+{: api}
+
+You can programmatically assign access to a group by calling the [{{site.data.keyword.iamlong}} (IAM) Policy Management API](https://{DomainName}/apidocs/iam-policy-management){: external} as shown in the following sample request. The example assigns an access group `Editor` role for an instance of a service:
+
+```
+curl -X POST 'https://iam.cloud.ibm.com/v1/policies' \
+-H 'Authorization: Bearer $TOKEN' \
+-H 'Content-Type: application/json' \
+-d '{
+  "type": "access",
+  "description": "Editor role for SERVICE_NAME's RESOURCE_NAME",
+  "subjects": [
+    {
+      "attributes": [
+        {
+          "name": "access_group_id",
+          "value": "AccessGroupId-b9820a9e-9cf4-4920-908d-983f1560b128"
+        }
+      ]
+    }'
+  ],
+  "roles":[
+    {
+      "role_id": "crn:v1:bluemix:public:iam::::role:Editor"
+    }
+  ],
+  "resources":[
+    {
+      "attributes": [
+        {
+          "name": "accountId",
+          "value": "$ACCOUNT_ID"
+        },
+        {
+          "name": "serviceName",
+          "value": "$SERVICE_NAME"
+        },
+        {
+          "name": "resource",
+          "value": "$RESOURCE_NAME",
+          "operator": "stringEquals"
+        }
+      ]
+    }
+  ]
+}'
 ```
 {: codeblock}
