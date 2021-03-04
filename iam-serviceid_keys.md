@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2020
-lastupdated: "2020-04-16"
+  years: 2015, 2021
+lastupdated: "2021-03-03"
 
 keywords: service ID, service ID API key, lock service ID API key, delete service ID API key
 
@@ -16,6 +16,9 @@ subcollection: account
 {:screen: .screen}
 {:tip: .tip}
 {:note: .note}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
 
 
 # Managing service ID API keys
@@ -36,10 +39,12 @@ For more information, see [Examples of how to use a service ID](/docs/account?to
 All users can create service IDs in an account, and they are the administrator for those IDs and can create the associated API key and access policies. However, account owners and users assigned the Administrator role on the IAM Identity service can manage the API keys for all service IDs in an account. Users can also be given access to a single service ID only, if the ID is specified when the administrator assigns the access.
 
 If you are a user with the required access, you can view, update, and delete API keys for any service ID in the account. Go to the **API keys** page, and select the **All service ID API keys** option in the **View** menu to find an API key that you want to view details for, update, or delete.
+{: ui}
 
 
 ## Creating an API key for a service ID
 {: #create_service_key}
+{: ui}
 
 Create an API key to associate with a service ID in the console:
 
@@ -58,6 +63,7 @@ For security reasons, the API key is only available to be copied or downloaded a
 
 ## Updating an API key for a service ID
 {: #update_service_key}
+{: ui}
 
 You can update an API key by editing the name or description that is used to identify the key in the UI.
 
@@ -69,12 +75,18 @@ You can update an API key by editing the name or description that is used to ide
 If you didn't create the service ID, but you are the account owner or an administrator for the IAM Identity service, you can update API keys for any service ID in the account. Go to the **API keys** page, and select the **All service ID API keys** option in the **View** menu to find the API key that you want to work with.
 {: tip}
 
+
+## Updating an API key for a service ID
+{: #update_service_key-cli}
+{: cli}
+
 To update an API key for a service ID by using the CLI, you can use the [ibmcloud iam service-api-key-update](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_service_api_key_update) command.
 
 ```
 ibmcloud iam service-api-key-update NAME SERVICE_ID [-n, --name NEW_sNAME] [-d, --description DESCRIPTION] [-v, --version VERSION] [-f, --force]
 ```
 {: codeblock}
+
 
 ## Locking a service ID's API key
 {: #lockkey}
@@ -90,10 +102,11 @@ For API keys that represent the identity of the service ID, you can prevent the 
 You can unlock your API key at any time to update, delete, or add an access policy, or to remove the API key.
 {: tip}
 
-### Locking or unlocking a service ID API key with the CLI
+## Locking or unlocking a service ID API key with the CLI
 {: #lock_unlock_cli}
+{: cli}
 
-To lock a service ID API key, use the following command:
+For API keys that represent the identity of the service ID, you can prevent the API key from being deleted by locking it. A locked API key is indicated by the ![Locked icon](images/locked.svg "Locked") icon in the UI. To lock a service ID API key, use the following command:
 
 ```
 ibmcloud iam service-api-key-lock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|SERVICE_ID_UUID) [-f, --force]
@@ -132,6 +145,7 @@ ibmcloud iam service-api-key-unlock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|S
 
 ## Deleting an API key for a service ID
 {: #delete_service_key}
+{: ui}
 
 You can delete an API key that is associated with a service ID. However, deleting an API key that is used by an application removes the ability for that application to authenticate with your services.
 
@@ -144,7 +158,13 @@ You can delete an API key that is associated with a service ID. However, deletin
 If you didn't create the service ID, but you are the account owner or an administrator for the IAM Identity service, you can delete API keys for any service ID in the account. Go to the **API keys** page, and select the **All service ID API keys** option in the **View** menu to find the API key that you want to work with.
 {: tip}
 
-To delete an API key for a service ID by using the CLI, you can use the [ibmcloud iam service-api-key-delete](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_service_api_key_delete) command.
+
+## Deleting an API key for a service ID using the CLI
+{: #delete_service_key-cli}
+{: cli}
+
+You can delete an API key that is associated with a service ID. However, deleting an API key that is used by an application removes the ability for that application to authenticate with your services. To delete an API key for a service ID by using the CLI, you can use the [ibmcloud iam service-api-key-delete](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_service_api_key_delete) command.
+
 ```
 ibmcloud iam service-api-key-delete NAME SERVICE_ID [-f, --force]
 ```
