@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2015, 2020
+  years: 2015, 2021
 
-lastupdated: "2020-08-17"
+lastupdated: "2021-03-03"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -21,6 +21,9 @@ subcollection: account
 {:note: .note}
 {:external: target="_blank" .external}
 {:video: .video}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
 
 # Inviting users to an account
 {: #iamuserinv}
@@ -30,12 +33,14 @@ Use {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) to invite
 
 ## Watch and learn
 {: #watch-iam-invite}
+{: ui}
 
 ![IBM Cloud console guide: Inviting users to the account](https://www.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&entry_id=1_ea3b5fz1){: video output="iframe" data-script="#invite-transcript" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
 
 ### Video transcript
 {: #invite-transcript}
 {: notoc}
+{: ui}
 
 Welcome back to another installment of the IBM Cloud Console Guide. In this video, we’ll be talking about how to invite users to your IBM Cloud account.
 
@@ -68,6 +73,7 @@ Depending on your access level, you can invite new users and assign all or just 
 {: #invitations}
 {: help} 
 {: support}
+{: ui}
 
 To invite users, complete the following steps:
 
@@ -80,7 +86,7 @@ To invite users, complete the following steps:
   * Manually assign users access. Expand this section to assign individual IAM access policies, Cloud Foundry roles, or classic infrastructure permissions.
      * Select **Cloud Foundry**, choose an organization, then select a region to select a specific space, and assign a space role. An organization and space role are both required to add the access assignment to the invite.
      * Select **Classic infrastructure**, and then choose from the three permission sets.
-     * Select **IAM services**, and then select the option for all services or just a specific service. Next, you can scope the access to the entire account or just one resource group. Then, select all roles that apply. To view what actions are mapped to each role, click the **Actions for role** option to view a list of all actions that are mapped to a specific role. <br><br> Some services support the use of advanced operators to grant access to resources that satisfy specific naming conventions. See [Assigning access by using wildcard policies](/docs/account?topic=account-wildcard) for more information.
+     * Select **IAM services**, and then select the option for all services or just a specific service. Next, you can scope the access to the entire account or just one resource group. Then, select all roles that apply. To view what actions are mapped to each role, click the **Actions for role** option to view a list of all actions that are mapped to a specific role. <br><br> Some services support the use of advanced operators to grant access to resources that satisfy specific naming conventions. See [Assigning access by using wildcard policies](/docs/account?topic=account-wildcard) for more information. 
      
          If you select the **Account** scope for the access policy, the user must already have the Viewer role or higher on the resource group or groups that contain the resources you want the user to have access to. Without a role on a resource group, the user can't work with the resource from the Resource list page in the console.
          {: tip}
@@ -93,8 +99,9 @@ To invite users, complete the following steps:
 You can cancel an invitation for any users that are shown in a Processing or Pending state in the Status column. If an invited user did not receive an invitation, you can resend the invitation to any user in a Pending state.
 {: note}
 
-### Inviting users by using the CLI
+## Inviting users by using the CLI
 {: #cli-invite}
+{: cli}
 
 To invite users by using the command-line interface (CLI), run the following command:
 
@@ -104,8 +111,9 @@ ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE,
 
 By using the CLI, you can choose to assign Cloud Foundry access or no access and work on assigning access later. For more information about the command parameters, see [**`ibmcloud account user-invite`**](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_user_invite). 
 
-### Inviting users by using the API
+## Inviting users by using the API
 {: #api-invite}
+{: api}
 
 You can use the [API](https://cloud.ibm.com/apidocs/user-management#invite-users){: external} to invite users in bulk. All users that are included in a single invitation are assigned the same access. When you invite users by using the API, you enter emails in a comma-separated list with each entry that is surrounded by quotations. This example assigns access by adding the user to an access group.
 
@@ -150,6 +158,7 @@ curl -X POST https://user-management.cloud.ibm.com/v2/accounts/987d4cfd77b04e9b9
 
 ## Adding VPN-only users
 {: #add-vpn-only}
+{: ui}
 
 Any user with the following permissions can add a VPN-only user:
 
