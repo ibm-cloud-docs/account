@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2019, 2020
+  years: 2019, 2021
 
-lastupdated: "2020-12-21"
+lastupdated: "2021-03-04"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, role management service, catalog management service, cloud shell service
 
@@ -17,6 +17,9 @@ subcollection: account
 {:screen: .screen}
 {:tip: .tip}
 {:note: .note}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
 
 # Assigning access to account management services
 {: #account-services}
@@ -29,6 +32,7 @@ As the account owner or the administrator of an account management service, you 
 
 ### Using the console to assign access
 {: #console-acct-mgmt}
+{: ui}
 
 To assign access to one or all account management services, complete the following steps:
 
@@ -43,6 +47,7 @@ To grant another user full access to the account for the purposes of managing us
 {: tip}
 
 ### Using the CLI to assign access
+{: cli}
 
 To assign access, run the `user-policy-create` command. For more information, see [ibmcloud iam user-policy-create](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_create). The following example command assigns a policy with the Administrator role for the Access groups account management service.
 
@@ -55,6 +60,7 @@ For service names to use in the CLI command for each account management service,
 
 ### Using the API to assign access
 {: #api-acct-mgmt}
+{: api}
 
 If you're using the [Policy management API](https://cloud.ibm.com/apidocs/iam-policy-management#create-a-policy), the account management services use the following attributes and values:
 
@@ -294,22 +300,5 @@ To quickly give users a wide-ranging set of account management access, you can a
 | Editor        | All editor role actions for the account management services and the ability to create resource groups        |
 | Administrator | All administrator role actions for the account management services and the ability to create resource groups |
 {: caption="Table 13. Roles and example actions for a policy on all identity and access services" caption-side="top"}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
