@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2019, 2020
+  years: 2019, 2021
 
-lastupdated: "2020-09-18"
+lastupdated: "2021-03-04"
 
 keywords: public access, anonymous access, users, service IDs, public access group, enable, disable, manage, IAM
 
@@ -18,6 +18,9 @@ subcollection: account
 {:tip: .tip}
 {:note: .note}
 {:pre: .pre}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
 
 # Managing public access to resources
 {: #public}
@@ -36,6 +39,7 @@ When public access is enabled in the account, you can create a policy to define 
 
 ### Assigning access in the console
 {: #public-access-console}
+{: ui}
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Access groups**.
 2. Click the name of the public access group > **Assign access**.  
@@ -48,6 +52,7 @@ When public access is enabled in the account, you can create a policy to define 
 
 ### Assigning access by using the CLI
 {: #public-access-cli}
+{: cli}
 
 To assign access for the Public Access group, run the **`ibmcloud iam access-group-policy-create`** command. In the command example, the policy details are specified in a JSON file. See [Assigning access by using the API](/docs/account?topic=account-public#public-access-api) for an example of what to include in the JSON file.
 
@@ -60,6 +65,7 @@ For more information about the command options, see [`ibmcloud iam access-group-
 
 ### Assigning access by using the API
 {: #public-access-api}
+{: api}
  
 The following request example creates a policy for the Public Access group. 
 
@@ -112,11 +118,13 @@ When you disable public access, all existing policies for the Public Access grou
 
 ### Disabling access in the console
 {: #disable-public-ui}
+{: ui}
 
 To disable public access for the account, go to **Manage** > **Access (IAM)** > **Settings** in the console, and set the Public access setting to **Disable public access**.
 
 ### Disabling access by using the API
 {: #disable-public-api}
+{: api}
 
 The following request example disables public access for the account. 
 
@@ -132,4 +140,3 @@ curl -X PATCH \
 {: codeblock}
 
 For more information, see [Update account settings](https://cloud.ibm.com/apidocs/iam-access-groups#update-account-settings){: external}.
-
