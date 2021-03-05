@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-03-04"
+lastupdated: "2021-03-05"
 
 keywords: authorizations, service to service access, access between services, dependent service, source service, target service, assigned access, access policies
 
@@ -63,6 +63,7 @@ The following sample uses mock data to create a policy where a specific source s
 ```
 ibmcloud iam authorization-policy-create cloud-object-storage kms Reader --source-service-instance-id 123123 --target-service-instance-id 456456
 ```
+{: codeblock}
 
 For more information about all of the parameters that are available for this command, see [ibmcloud iam authorization-policy-create](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_authorization_policy_create).
 
@@ -133,20 +134,58 @@ curl --request POST \
     ]
 }'
 ```
+{: codeblock}
 
 Not all services support policies at the `resourceType` and individual `resource` level. Examples of services that do support these attributes are {{site.data.keyword.cos_full_notm}} and {{site.data.keyword.keymanagementservicelong_notm}}, where buckets and keys are the resource type and the ID is listed to specify the specific resource.
 {: note}
 
 
-## Removing an authorization
+## Removing an authorization in the console
 {: #remove-auth}
+{: ui}
 
 You can remove any authorization between services in the account if you are assigned the Administrator role on the target service. If you remove any access policies created by the source service for its dependent services, the source service is unable to complete the workflow or access the target service.
 
-1. {: ui} In the console, click **Manage** &gt; **Access (IAM)**, and select **Authorizations**.
-2. {: ui} Identify the row for the authorization that you want to remove from the account.
-3. {: ui} From the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, select **Remove**.
-5. {: ui} Select **Remove**.
+1. In the console, click **Manage** &gt; **Access (IAM)**, and select **Authorizations**.
+2. Identify the row for the authorization that you want to remove from the account.
+3. From the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, select **Remove**.
+5. Select **Remove**.
+
+If the source service is removed from the account, any policies that are created by that service for its dependent services are deleted automatically. Similarly, if the dependent service is removed from the account, any access policies that are delegated to that service are also deleted.
+{: note}
+
+## Removing an authorization by using the CLI
+{: #remove-auth-cli}
+{: cli}
+
+You can remove any authorization between services in the account if you are assigned the Administrator role on the target service. If you remove any access policies created by the source service for its dependent services, the source service is unable to complete the workflow or access the target service.
+
+To authorize a source service access a target service, run the `ibmcloud iam authorization-policy-create` command. 
+
+The following sample deletes an authorization policy:
+```
+ibmcloud iam authorization-policy-delete 12345678-abcd-1a2b-a1b2-1234567890ab
+```
+{: codeblock}
+
+For more information about all of the parameters that are available for this command, see [ibmcloud iam authorization-policy-delete](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_authorization_policy_delete).
+
+If the source service is removed from the account, any policies that are created by that service for its dependent services are deleted automatically. Similarly, if the dependent service is removed from the account, any access policies that are delegated to that service are also deleted.
+{: note}
+
+## Removing an authorization by using the API
+{: #remove-auth-api}
+{: api}
+
+You can remove any authorization between services in the account if you are assigned the Administrator role on the target service. If you remove any access policies created by the source service for its dependent services, the source service is unable to complete the workflow or access the target service.
+
+To delete an authorization policy, use the [IAM Policy Management API](/apidocs/iam-policy-management#delete-policy) as in the following sample request:
+```
+curl -X DELETE 'https://iam.test.cloud.ibm.com/v1/policies/$POLICY_ID' \
+-H 'Authorization: Bearer $TOKEN' \
+-H 'Content-Type: application/json'
+```
+{: codeblock}
 
 If the source service is removed from the account, any policies that are created by that service for its dependent services are deleted automatically. Similarly, if the dependent service is removed from the account, any access policies that are delegated to that service are also deleted.
 {: note}
