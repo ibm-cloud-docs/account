@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2021
 
-lastupdated: "2021-03-04"
+lastupdated: "2021-03-05"
 
 keywords: public access, anonymous access, users, service IDs, public access group, enable, disable, manage, IAM
 
@@ -54,7 +54,7 @@ When public access is enabled in the account, you can create a policy to define 
 {: #public-access-cli}
 {: cli}
 
-To assign access for the Public Access group, run the **`ibmcloud iam access-group-policy-create`** command. In the command example, the policy details are specified in a JSON file. See [Assigning access by using the API](/docs/account?topic=account-public#public-access-api) for an example of what to include in the JSON file.
+To assign access for the Public Access group, run the **`ibmcloud iam access-group-policy-create`** command. In the command example, the policy details are specified in a JSON file. Switch to the API instructions for an example of what to include in the JSON file.
 
 ```sh
 ibmcloud iam access-group-policy Public Access -f @policy.json
@@ -121,6 +121,12 @@ When you disable public access, all existing policies for the Public Access grou
 {: ui}
 
 To disable public access for the account, go to **Manage** > **Access (IAM)** > **Settings** in the console, and set the Public access setting to **Disable public access**.
+
+### Disabling access by using the CLI
+{: #disable-public-cli}
+{: cli}
+
+This action can be done only through the UI or API. To see the steps, switch to the UI or API instructions.
 
 ### Disabling access by using the API
 {: #disable-public-api}
