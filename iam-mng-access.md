@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-03-04"
+lastupdated: "2021-03-05"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access 
 
@@ -171,6 +171,12 @@ Enter the [**`ibmcloud iam service-policy-create`**](/docs/cli?topic=cli-ibmclou
   ibmcloud iam service-policy-create test --roles Administrator --resource-group-name sample-resource-group
   ```
   {: codeblock}
+  
+### Assigning access within a resource group by using the API
+{: #access-resourcegroups-api}
+{: api}
+
+This action can be done only through the UI or CLI. To see the steps, switch to the UI or CLI instructions.
 
 ## Removing access in the console
 {: #removing-access-console}
