@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2021
 
-lastupdated: "2021-02-25"
+lastupdated: "2021-03-08"
 
 keywords: frequently asked questions for iam, iam faq, iam questions, identity and access management questions
 
@@ -98,7 +98,7 @@ In the console, go to **Manage** > **Access (IAM)**, and select **Users**. Then,
 {: #iam-api-keys}
 {: faq}
 
-For information about the types of API keys that are available in {{site.data.keyword.cloud_notm}}, see [Understanding API keys](/docs/account?topic=account-manapikey). In the console, go to **Manage > Access (IAM) > API keys** to view and manage API keys that you have access to.
+In the console, go to **Manage > Access (IAM) > API keys** to view and manage API keys that you have access to.
 
 * For information about how to manage {{site.data.keyword.cloud_notm}} API keys that are associated with user identities, see [Managing user API keys](/docs/account?topic=account-userapikey).  
 * For information about how to manage API keys that are associated with a service ID, see [Managing service ID API keys](/docs/account?topic=account-serviceidapikeys).
