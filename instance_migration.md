@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2020
+  years: 2017, 2021
 
-lastupdated: "2020-04-10"
+lastupdated: "2021-03-08"
 
 keywords: migrate, migrating to a resource group, migrate Cloud Foundry
 
@@ -116,7 +116,7 @@ Apps are migrated one at a time by clicking the ![Migrate this service instance 
 
 After you migrate your Cloud Foundry service instances to a resource group, you need to ensure that the users in your account have the required level of access to the resources in the account resource groups. You might also want to provide access to manage the resource group so that users can create new service instances in the account resource groups.
 
-For more information about assigning access to resources in your resource groups, see [Assigning access to resource groups and the resources within them](/docs/account?topic=account-assign-access-resources#access_to_resources).
+For more information about assigning access to resources in your resource groups, see [Managing access to resources](/docs/account?topic=account-assign-access-resources#assign-access-resources).
 
 Also, make sure to review the documentation for your service to see whether any updates for your existing apps must be made after the migration is complete. 
 
