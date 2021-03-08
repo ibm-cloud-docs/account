@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-02-17"
+lastupdated: "2021-03-18"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources 
 
@@ -150,5 +150,5 @@ I assign the user a writer role on Bucket A in the specific instance of {{site.d
 
 Now that you know how to set up your resource groups, organize your resources, and create access groups in your account, you can start [inviting users to your account](/docs/account?topic=account-iamuserinv) and assigning them access to your access groups. 
 
-If you already invited users to your account, you can go to your Users page and start [assigning access](/docs/account?topic=account-assign-access-resources#assign_new_access).
+If you already invited users to your account, you can go to your Users page and start [assigning access](/docs/account?topic=account-assign-access-resources#assign-access-resources).
 
