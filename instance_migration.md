@@ -124,4 +124,4 @@ Also, make sure to review the documentation for your service to see whether any 
 ## Troubleshooting
 {: #ts_migration}
 
-If you run into any issues with migrating Cloud Foundry service instances, check out [TWhy can't I migrate a Cloud Foundry service instance to a resource group?](/docs/account?topic=account-ts_migrate_instance).
+If you run into any issues with migrating Cloud Foundry service instances, check out [Why can't I migrate a Cloud Foundry service instance to a resource group?](/docs/account?topic=account-ts_migrate_instance).
