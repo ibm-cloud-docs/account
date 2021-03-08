@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2021
 
-lastupdated: "2021-02-25"
+lastupdated: "2021-03-08"
 
 keywords: resource FAQs, resource frequently asked questions, resource group
 
@@ -51,7 +51,7 @@ When you have Cloud Foundry services that can be migrated to a resource group, y
 
 Most likely you're dealing with an access issue. You must have at least the Viewer role on the resource group itself and at least the Editor role on the service in the account. Learn more in [Adding resources to a resource group](/docs/account?topic=account-rgs#add_to_rgs).
 
-For more information about how to check your assigned access, see [Reviewing your assigned access](/docs/account?topic=account-assign-access-resources#review_your_access).
+For more information about how to check your assigned access, see [Managing access to resources](/docs/account?topic=account-assign-access-resources#assign-access-resources).
 
 If you need additional access in the account, contact the account owner that is listed on the [Users](https://{DomainName}/iam#/users) page. 
 
