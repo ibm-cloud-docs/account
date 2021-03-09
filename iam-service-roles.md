@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-03-08"
+lastupdated: "2021-03-09"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1155,43 +1155,41 @@ Review the available platform and service roles available and the actions mapped
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 
-| Role | Description |
-| ----- | :----- |
-| Usage Report Viewer | Usage report viewers can view the usage reports for the entire enterprise, an account group and its accounts, or a specific account. |
-{: row-headers}
-{: caption="Table 26. Service roles - Enterprise" caption-side="top"}
-{: #service-roles-table26}
-{: tab-title="Service roles"}
-{: tab-group="enterprise"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `enterprise.enterprise.create` |  | Administrator |
 | `enterprise.enterprise.update` |  | Administrator, Editor |
-| `enterprise.enterprise.retrieve` |  | Administrator, Editor, Operator, Usage Report Viewer, Viewer |
+| `enterprise.enterprise.retrieve` |  | Administrator, Editor, Operator, Viewer |
 | `enterprise.enterprise.import` |  | Administrator, Editor |
 | `enterprise.enterprise.system-update` |  |  |
-| `enterprise.enterprise.retrieve-usage-report` |  | Administrator, Editor, Usage Report Viewer |
-| `enterprise.enterprise.attach-config-rules` |  | Administrator |
-| `enterprise.enterprise.detach-config-rules` |  | Administrator |
-| `enterprise.enterprise.update-config-rules` |  | Administrator |
 | `enterprise.account-group.create` |  | Administrator, Editor |
 | `enterprise.account-group.update` |  | Administrator, Editor |
-| `enterprise.account-group.retrieve` |  | Administrator, Editor, Operator, Usage Report Viewer, Viewer |
-| `enterprise.account-group.retrieve-usage-report` |  | Administrator, Editor, Usage Report Viewer |
-| `enterprise.account-group.attach-config-rules` |  | Administrator |
-| `enterprise.account-group.detach-config-rules` |  | Administrator |
-| `enterprise.account-group.update-config-rules` |  | Administrator |
+| `enterprise.account-group.retrieve` |  | Administrator, Editor, Operator, Viewer |
 | `enterprise.account.create` |  | Administrator, Editor |
-| `enterprise.account.update` |  | Administrator, Editor |
 | `enterprise.account.move` |  | Administrator |
-| `enterprise.account.retrieve` |  | Administrator, Editor, Operator, Usage Report Viewer, Viewer |
-| `enterprise.account.retrieve-usage-report` |  | Administrator, Editor, Usage Report Viewer |
-| `enterprise.account.attach-config-rules` |  | Administrator |
-| `enterprise.account.detach-config-rules` |  | Administrator |
-| `enterprise.account.update-config-rules` |  | Administrator |
+| `enterprise.account.retrieve` |  | Administrator, Editor, Operator, Viewer |
+| `enterprise.enterprise.attach-templates` | Attach templates to an enterprise. | Administrator |
+| `enterprise.enterprise.detach-templates` | Detach templates from an enterprise. | Administrator |
+| `enterprise.enterprise.update-templates` | Update templates attached to an enterprise. | Administrator |
+| `enterprise.account-group.attach-templates` | Attach templates to an account group. | Administrator |
+| `enterprise.account-group.detach-templates` | Detach templates from an account group. | Administrator |
+| `enterprise.account-group.update-templates` | Update templates attached to an account group. | Administrator |
+| `enterprise.account.detach-templates` | Detach templates from an account within an enterprise. | Administrator |
+| `enterprise.account.update-templates` | Update templates attached to an account within an enterprise. | Administrator |
+| `enterprise.enterprise.attach-config-rules` | Attach configuration rules to an enterprise. | Administrator |
+| `enterprise.enterprise.detach-config-rules` | Detach configuration rules from an enterprise. | Administrator |
+| `enterprise.enterprise.update-config-rules` | Update configuration rules attached to an enterprise. | Administrator |
+| `enterprise.account-group.attach-config-rules` | Attach configuration rules to an account group. | Administrator |
+| `enterprise.account-group.detach-config-rules` | Detach configuration rules from an account group. | Administrator |
+| `enterprise.account-group.update-config-rules` | Update configuration rules attached to an account group. | Administrator |
+| `enterprise.account.attach-config-rules` | Attach configuration rules to an account within an enterprise. | Administrator |
+| `enterprise.account.detach-config-rules` | Detach configuration rules from an account within an enterprise. | Administrator |
+| `enterprise.account.update-config-rules` | Update configuration rules attached to an account within an enterprise. | Administrator |
+| `enterprise.account-group.retrieve-usage-report` | Retrieve resource usage reports of the resources in the account-group | Administrator, Editor |
+| `enterprise.account.retrieve-usage-report` | Retrieve resource usage reports of the resources in the account | Administrator, Editor |
+| `enterprise.enterprise.retrieve-usage-report` | Retrieve resource usage reports of the resources in the enterprise | Administrator, Editor |
+| `enterprise.account.attach-templates` | Attach templates to an account within an enterprise. | Administrator |
+| `enterprise.account.update` | Update account properties within an enterprise. | Administrator, Editor |
 {: caption="Table 26. Service actions - Enterprise" caption-side="top"}
 {: #actions-table26}
 {: tab-title="Actions"}
