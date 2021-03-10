@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-03-09"
+lastupdated: "2021-03-10"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -2234,7 +2234,7 @@ Review the available platform and service roles available and the actions mapped
 | `kms.keyrings.create` | Create a key ring in the instance. | Manager, Writer |
 | `kms.keyrings.delete` | Delete a key ring in the instance. | Manager |
 | `kms.secrets.purge` | Purge an encryption key. | KeyPurge |
-| `kms.secrets.patch` | Patch attributes of an encryption key. | Manager, Writer |
+| `kms.secrets.patch` | Patch attributes of an encryption key. | Manager |
 {: caption="Table 50. Service actions - Key Protect" caption-side="top"}
 {: #actions-table50}
 {: tab-title="Actions"}
