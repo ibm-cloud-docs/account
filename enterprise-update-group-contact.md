@@ -56,10 +56,8 @@ This action can be done only through the UI, API, or SDKs. To see the steps, swi
 To update the primary contact for the account group, call the [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#import-an-account-into-an-enterprise){: external} as shown in the following sample request. Replace the IAM token and ID variables with the values from your enterprise.
 
 1. If a user that you want to assign as the contact isn't in the enterprise, first invite the user to the enterprise account. See [Inviting users](/docs/account?topic=account-iamuserinv) for more information.
- <!---MAKE THIS A NOTE BEFORE THE CODEBLOCK?--->
 
 1. To find the IAM ID for the new contact, see [List accounts](https://cloud.ibm.com/apidocs/enterprise-apis/enterprise#list-accounts) in the Enterprise Management API. 
- <!---MAKE THIS A TIP AFTER THE CODEBLOCK?--->
 
 ```
   curl -X PATCH \
