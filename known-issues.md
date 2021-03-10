@@ -36,6 +36,7 @@ Turning off {{site.data.keyword.cloud_notm}} catalog visibility or excluding all
 * {{site.data.keyword.backup_notm}}
 * {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}
 * {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}
+* {{site.data.keyword.registrylong_notm}}
 * {{site.data.keyword.cloud_notm}} Content Delivery Network
 * {{site.data.keyword.cloud_notm}} Direct Link
 * {{site.data.keyword.cloud_notm}} Direct Link on Classic
