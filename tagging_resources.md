@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2021
-lastupdated: "2021-03-01"
+lastupdated: "2021-03-10"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, full list of tags, how to use tags
 
@@ -16,8 +16,9 @@ subcollection: account
 {:tip: .tip}
 {:note: .note}
 {:external: target="_blank" .external}
-
-
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
 
 # Working with tags
 {: #tag}
@@ -26,9 +27,10 @@ Use tags to organize, track usage costs, and even manage access to your resource
 {: shortdesc}
 
 To see a full list of tags in your account, go to **Manage** > **Account** in the {{site.data.keyword.cloud}} console, and select **Tags**.
+{: ui}
 
 You can apply **user tags** to organize your resources and easily find them later or help you with identifying specific team usage or cost allocation.
-By clicking **Access management tags**, you can create tags to control access to your resources without requiring updates to your IAM policies.
+By creating **access management tags**, you can control access to your resources without requiring updates to your IAM policies.
 
 ## Tagging rules
 {: #limits}
@@ -64,6 +66,7 @@ You don't need to create user tags to attach them to resources. Go to the [Attac
 
 ### Creating access management tags in the console
 {: #create-access-console}
+{: ui}
 
 Before you can attach your access management tags to individual resources, you need to create them first. To create access management tags, you need to have administrator role on either the Tagging Service that is listed under the Account management services or on all Account management services.
 
@@ -76,6 +79,7 @@ Before you can attach your access management tags to individual resources, you n
 
 ### Creating access management tags by using the CLI
 {: #create-access-cli}
+{: cli}
 
 1. Log in to {{site.data.keyword.cloud}} CLI. If you have multiple accounts, you are prompted to select which account to use. If you do not specify a region with the `-r` flag, you must also select a region.
     ```
@@ -88,7 +92,7 @@ Before you can attach your access management tags to individual resources, you n
     
     If it's your first time using the {{site.data.keyword.cloud_notm}} CLI, check out the [getting started tutorial](/docs/cli?topic=cli-getting-started).
 
-2. Enter the `ibmcloud resource tag-create` command to create an access management tag in your account. This example creates a tag that is called `project:myproject`: 
+2. Enter the **`ibmcloud resource tag-create`** command to create an access management tag in your account. This example creates a tag that is called `project:myproject`: 
     ```
     ibmcloud resource tag-create --tag-names project:myproject
     ```
@@ -99,6 +103,7 @@ For more information, see the [`ibmcloud resource` command reference](/docs/cli?
 
 ### Creating access management tags by using the API
 {: #create-access-api}
+{: api}
 
 You can programmatically create access management tags by calling the [Global Search and Tagging - Tagging API](https://{DomainName}/apidocs/tagging){: external} as shown in the following sample request. The example creates a tag that is called `project:myproject`.
 ```
@@ -114,6 +119,9 @@ curl -X POST -H "Authorization: {iam_token}" \
 {: #attach-detach}
 
 ### In the console
+{: #attach-detach-console}
+{: ui}
+
 1. From the {{site.data.keyword.cloud}} console, click the Menu icon ![Menu icon](../icons/icon_hamburger.svg) > **Resource list** to view your list of resources.
 2. Expand the resource type twistie that contains the resource you want to tag. For example, if you want to tag an instance of {{site.data.keyword.cos_full_notm}}, expand **Storage**.  
 3. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) to attach or update a tag for the resource.
@@ -129,9 +137,10 @@ When you detach an access management tag from a resource, any associated access 
 
 ### By using the CLI
 {: #attach-detach-cli}
+{: cli}
 
 Log in to [{{site.data.keyword.cloud}} CLI](/docs/cli?topic=cli-getting-started) and select your account to run the appropriate CLI command:
-* To attach a tag to a resource, use the `ibmcloud resource tag-attach` command.
+* To attach a tag to a resource, use the **`ibmcloud resource tag-attach`** command.
     The following example shows how to attach a user tag called `MyTag` to a resource named `MyResource`:
     ```
     ibmcloud resource tag-attach --tag-name MyTag --resource-name  'MyResource'
@@ -145,7 +154,7 @@ Log in to [{{site.data.keyword.cloud}} CLI](/docs/cli?topic=cli-getting-started)
     {: codeblock}    
 
     The allowed values for `tag-type` are `user` for user tags and `access` for access management tags. The default value is `user`.
-* To detach a tag from a resource, use the `ibmcloud resource tag-detach` command.
+* To detach a tag from a resource, use the **`ibmcloud resource tag-detach`** command.
     An example to detach a user tag called `MyTag` from a resource named `MyResource`:
     ```
     ibmcloud resource tag-detach --tag-names MyTag —resource-name 'MyResource'
@@ -158,10 +167,16 @@ Log in to [{{site.data.keyword.cloud}} CLI](/docs/cli?topic=cli-getting-started)
     ```
     {: codeblock}
  
-For more information, see the [`ibmcloud resource` command reference](/docs/cli?topic=cli-ibmcloud_commands_resource). 
+For more information, see the [`ibmcloud resource` command reference](/docs/cli?topic=cli-ibmcloud_commands_resource).
+
+To attach or detach an access management tag, appropriate permission is required. For more information, see [Granting users access to tag resources](/docs/account?topic=account-access).
+
+When you detach an access management tag from a resource, any associated access policies are also detached from that resource.
+{: note} 
 
 ### By using the API
 {: #attach-detach-api}
+{: api}
 
 You can programmatically attach or detach tags by calling the [Global Search and Tagging - Tagging API](https://{DomainName}/apidocs/tagging){: external} as shown in the following sample requests. The allowed values for the `tag_type` query parameter are: `user` for user tags and `access` for access management tags.
 * Attaching an access management tag called `project:myproject` to a service instance:
@@ -183,8 +198,14 @@ You can programmatically attach or detach tags by calling the [Global Search and
     ```
     {: codeblock}
 
+To attach or detach an access management tag, appropriate permission is required. For more information, see [Granting users access to tag resources](/docs/account?topic=account-access).
+
+When you detach an access management tag from a resource, any associated access policies are also detached from that resource.
+{: note}
+
 ## Searching for tags
 {: #search-tags}
+{: ui}
 
 You can search for tags by using any of the following methods:
 
@@ -217,13 +238,18 @@ If a reclaimed resource is blocking tag deletion, you can either completely dele
 When you delete an access management tag from the account, any associated IAM policies are also deleted with it.
 {: note}
 
+### In the console
+{: #delete-console}
+{: ui}
+
 1. To see the full list of tags in your account, go to **Manage** > **Account** in the {{site.data.keyword.cloud}} console, and select **Tags**.
 2. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) next to the unused tag and select **Delete**.
 
 ### By using the CLI
 {: #delete-cli}
+{: cli}
 
-Log in to [{{site.data.keyword.cloud}} CLI](/docs/cli?topic=cli-getting-started) and select your account to run the `ibmcloud resource tag-delete` command for deleting only one or all of the unused tags.
+Log in to [{{site.data.keyword.cloud}} CLI](/docs/cli?topic=cli-getting-started) and select your account to run the **`ibmcloud resource tag-delete`** command for deleting only one or all of the unused tags.
 * The following example deletes the `MyTag` user tag:
   ```
   ibmcloud resource tag-delete --tag-names MyTag
@@ -232,6 +258,7 @@ Log in to [{{site.data.keyword.cloud}} CLI](/docs/cli?topic=cli-getting-started)
 
 ### By using the API
 {: #delete-api}
+{: api}
 
 You can delete tags by calling the [Global Search and Tagging - Tagging API](https://{DomainName}/apidocs/tagging){: external} as shown in the following sample requests. The allowed values for the `tag_type` query parameter are: `user` for user tags and `access` for access management tags.
 * Deleting an access management tag called `project:myproject` from the account:
