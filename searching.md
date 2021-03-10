@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2020
-lastupdated: "2020-11-05"
+  years: 2015, 2021
+lastupdated: "2021-03-10"
 
 keywords: search, find, search for instance, search for resource
 
@@ -18,6 +18,9 @@ subcollection: account
 {:tip: .tip}
 {:note: .note}
 {:download: .download}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
 
 
 # Searching for resources
@@ -28,6 +31,7 @@ You can search for resources from anywhere in the {{site.data.keyword.cloud}} co
 
 ## Refining your search results
 {: #results}
+{: ui}
 
 <dl>
 <dt>View all resource results</dt>
@@ -45,6 +49,7 @@ Press the Forward Slash key (/) to navigate your cursor to the search field.
 
 ## Searching with the CLI
 {: #searching-cl}
+{: cli}
 
 You can also search across all your resources by using Lucene query syntax, with a single command by using the {{site.data.keyword.Bluemix_notm}} CLI, starting with version 0.6.7.
 
