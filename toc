@@ -109,6 +109,8 @@ Managing your account, resources, and access
         {: .topicgroup}
         Tagging resources
             tagging_resources.md
+            attach-detach-tags.md
+            delete-tags.md
             grant-tag-access.md
 
         service_in_other_regions.md
