@@ -4,8 +4,8 @@
 
 copyright:
 
-  years: 2019, 2020
-lastupdated: "2020-02-12"
+  years: 2019, 2021
+lastupdated: "2021-03-11"
 
 keywords: resource, account resources, create resource, access to create resources
 
@@ -19,6 +19,9 @@ subcollection: account
 {:tip: .tip}
 {:note: .note}
 {:term: .term}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
 
 # Creating resources 
 {: #manage_resource}
@@ -39,6 +42,7 @@ For users in your account to be able to create resources from the catalog and as
 
 ## Creating resources in the console
 {: #create-resource-console}
+{: ui}
 
 Use the following steps to create a resource in the console: 
 1. From your dashboard, click **View resources** within the Resources summary widget.
@@ -48,27 +52,52 @@ After you create the resource, it is displayed in your list of resources on the 
 
 ## Creating resources by using the CLI
 {: #create-resource-cli}
+{: cli}
 
-To create a resource by using the CLI, run the following command:
+You can create a resource by using the {{site.data.keyword.Bluemix}} Command Line Interface. For detailed information about working with resources, see [Working with resources and resource groups](/docs/cli?topic=cli-ibmcloud_commands_resource).
 
+1. Log in, and select the account.
+
+  ```
+  ibmcloud login
+  ```
+  {:codeblock}
+2. Create an organization by running the [`ibmcloud resource service-instance-create`](https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_create) command.
+In this command `NAME` is the name of the service instance, `SERVICE_NAME or SERVICE_ID` is the name or ID of the service, `SERVICE_PLAN_NAME or SERVICE_PLAN_ID`is the name or ID of the service plan, and ` LOCATION`is the target location or environment to create the service instance.
+
+  ```
+  ibmcloud resource service-instance-create NAME (SERVICE_NAME | SERVICE_ID) SERVICE_PLAN_NAME LOCATION [-d, --deployment DEPLOYMENT_NAME] [-p, --parameters @JSON_FILE | JSON_STRING ] [-g RESOURCE_GROUP] [--service-endpoints SERVICE_ENDPOINTS_TYPE] [--allow-cleanup] [--lock]
+  ```
+  {:codeblock}
+To list service offerings, use the [`ibmcloud catalog service marketplace`](/docs/cli/reference/ibmcloud?topic=cli-ibmcloud_catalog#ibmcloud_catalog_service_marketplace) command. 
+{: note}
+
+For example, the following command creates a service instance that is named `my-service-instance`, uses service plan `test-   service-plan` of service `test-service` on location `eu-gb`:
+
+  ```
+  ibmcloud resource service-instance-create my-service-instance test-service test-service-plan eu-gb
+  ```
+  {:codeblock}
+
+
+## Creating new resource instances by using the API
+{: #create-resource-instance-api} 
+{: api}
+
+You can programmatically create a new resource instance by calling the Resource Controller API as shown in the following sample request. For detailed information about the API, see [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#create-resource-instance){: external}.
 ```
-ibmcloud resource service-instance-create NAME (SERVICE_NAME | SERVICE_ID) SERVICE_PLAN_NAME LOCATION [-d, --deployment DEPLOYMENT_NAME] [-p, --parameters @JSON_FILE | JSON_STRING ] [-g RESOURCE_GROUP] [--service-endpoints SERVICE_ENDPOINTS_TYPE]
+curl -X POST \
+  https://resource-controller.cloud.ibm.com/v2/resource_instances \
+  -H 'Authorization: Bearer <>' \
+  -H 'Content-Type: application/json' \
+    -d '{
+    "name": "my-instance",
+    "target": "bluemix-global",
+    "resource_group": "5g9f447903254bb58972a2f3f5a4c711",
+    "resource_plan_id": "0be5ad401ae913d8ff665d92680664ed",
+    "tags": [
+      "my-tag"
+    ]
+  }'
 ```
 {: codeblock}
-
-Enter the following command options:
-  * **Name (required)**: The name of the service instance. 
-  * **SERVICE_NAME or SERVICE_ID (required)**: The name or ID of the service. To list service offerings, use the [`ibmcloud catalog service-marketplace` command](/docs/cli?topic=cli-ibmcloud_catalog#ibmcloud_catalog_service_marketplace).
-  * **SERVICE_PLAN_NAME or SERVICE_PLAN_ID (required)**: The name or ID of the service plan.
-  * **LOCATION (required)**: The target location or environment to create the service instance.
-  * **-d, --deployment DEPLOYMENT_NAME**: The name of the deployment. 
-  * **-p, --parameters @JSONFILE or JSON_STRING**: The JSON file or JSON string of parameters to create service instance.
-  * **-g RESOURCE_GROUP**: The resource group name. 
-  * **--service-endpoints SERVICE_ENDPOINTS_TYPE**: The types of the service endpoints. The possible values are `public`, `private`, `public-and-private`.
-
-The following example shows how to create a resource that is named `my-service-instance` that uses service plan `test-service-plan` of service `test-service` in the `eu-gb` location:
-
-```
-ibmcloud resource service-instance-create my-service-instance test-service test-service-plan eu-gb
-```
-
