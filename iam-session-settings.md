@@ -29,7 +29,7 @@ Improve the security of your account by requiring account users to enter their l
 
 If you have following access, you can update this setting for other users in your account:
 
-* Editor or higher role on the User management service
+* Account owners or users assigned the administrator role for the IAM Identity service
 * You are an ancestor in the classic infrastructure hierarchy for the user and you have the Manage users classic infrastructure permission assigned
 
 ## Setting duration of active sessions
