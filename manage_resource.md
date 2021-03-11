@@ -35,6 +35,7 @@ Not all services support the use of resource groups and IAM currently. All servi
 
 ## Required access for creating resources
 {: #creating-resources}
+
 For users in your account to be able to create resources from the catalog and assign them to a resource group, they must be assigned two access policies:
 
 * A policy with viewer role or higher on the resources group itself
@@ -62,13 +63,16 @@ You can create a resource by using the {{site.data.keyword.Bluemix}} Command Lin
   ibmcloud login
   ```
   {:codeblock}
+
 2. Create an organization by running the [`ibmcloud resource service-instance-create`](https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_create) command.
+
 In this command `NAME` is the name of the service instance, `SERVICE_NAME or SERVICE_ID` is the name or ID of the service, `SERVICE_PLAN_NAME or SERVICE_PLAN_ID`is the name or ID of the service plan, and ` LOCATION`is the target location or environment to create the service instance.
 
   ```
   ibmcloud resource service-instance-create NAME (SERVICE_NAME | SERVICE_ID) SERVICE_PLAN_NAME LOCATION [-d, --deployment DEPLOYMENT_NAME] [-p, --parameters @JSON_FILE | JSON_STRING ] [-g RESOURCE_GROUP] [--service-endpoints SERVICE_ENDPOINTS_TYPE] [--allow-cleanup] [--lock]
   ```
   {:codeblock}
+
 To list service offerings, use the [`ibmcloud catalog service marketplace`](/docs/cli/reference/ibmcloud?topic=cli-ibmcloud_catalog#ibmcloud_catalog_service_marketplace) command. 
 {: note}
 
@@ -85,6 +89,7 @@ For example, the following command creates a service instance that is named `my-
 {: api}
 
 You can programmatically create a new resource instance by calling the Resource Controller API as shown in the following sample request. For detailed information about the API, see [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#create-resource-instance){: external}.
+
 ```
 curl -X POST \
   https://resource-controller.cloud.ibm.com/v2/resource_instances \

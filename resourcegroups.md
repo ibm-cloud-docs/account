@@ -5,7 +5,7 @@
 copyright:
 
   years: 2017, 2021
-lastupdated: "2021-03-10"
+lastupdated: "2021-03-11"
 
 keywords: resource group, account resources, users access to resource groups, create resource group
 
@@ -29,10 +29,8 @@ A resource group is a way for you to organize your account resources in customiz
 
 To start managing your resource groups, in the {{site.data.keyword.cloud}} console, go to **Manage** > **Account** > **Account resources** > **Resource groups**. You can create, view, and rename your resource groups, add resources and manage access to your resource groups. You can also delete any resource group only if it doesn't contain any resources, and it isn't the default resource group. For more information about working with resource groups, see [Best practices for organizing resources and assigning access](/docs/account?topic=account-account_setup).
 
-
 ## Creating a resource group
 {: #create_rgs}
-{: ui}
 
 If you have a Pay-As-You-Go or Subscription account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. You can also group resources to make it easier for you to assign users access to more than one instance at a time.  
 
@@ -40,6 +38,10 @@ You must be assigned an IAM policy with the Administrator role on All Account Ma
 
 Connections between a resource group and a Cloud Foundry org or space are restricted by your quota. See [What is an alias?](/docs/account?topic=account-connect_app#what_is_alias) for more information.
 {: note}
+
+### Creating a resource group in the console 
+{: #rgs_ui}
+{: ui}
 
 1. In the console, go to **Manage** > **Account** > **Account resources** > **Resource groups**.
 2. Click **Create**.
@@ -50,15 +52,54 @@ Connections between a resource group and a Cloud Foundry org or space are restri
 {: #rgs_cli}
 {: cli}
 
-Run the [`ibmcloud resource group-create`](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_group_create) command to create a new resource group. For example, the following command creates a resource group that is named `group2`:
+1. Log in, and select the account.
+
+   ```
+   ibmcloud login
+   ```
+   {:codeblock}
+   
+2. Create a new resource group by running [`ibmcloud resource group-create`](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_group_create) command. For example, the following command creates a resource group that is named `group2`:
 
 ```
 ibmcloud resource group-create group2
 ```
 {:codeblock}
 
-### Adding resources to a resource group
+## Renaming a resource group
+{: #rename_rgs}
+
+Your first resource group is created and named `Default` for you. You can update the name of this group or any other groups that you create.
+
+### Renaming a resource group in the console 
+{: #renaming-rgs-ui}
+{: ui}
+
+1. In the console, go to **Manage** > **Account** > **Account resources** > **Resource groups**.
+2. Click the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, and select **Rename**.
+3. Enter a unique name and click **Save**.
+
+### Renaming a resource group by using the CLI
+{: #renaming-rgs-cli}
+{: cli}
+
+1. Log in, and select the account.
+
+   ```
+   ibmcloud login
+   ```
+   {:codeblock}
+   
+2. Rename a resource group by running the [`ibmcloud resource group-update`](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_group_update) command. For example, the following command renames the `Default` resource group to `Admin`:
+
+```
+ibmcloud resource group-update Default [-n, --name Admin]
+```
+{:codeblock}
+
+## Adding resources to a resource group
 {: #add_to_rgs}
+{: ui}
 
 Services that are managed with IAM belong to a resource group instead of a Cloud Foundry org or space. When you create an instance of one of these services from the catalog, you're prompted to assign the instance to a resource group. Your resource group selection at the time of creating the instance is final and can't be changed.
 
@@ -67,26 +108,10 @@ Users in your account must be assigned two access policies to create resources f
 * A policy with viewer role or higher on the resources group itself
 * A policy with editor role or higher on the service in the account
 
-## Renaming a resource group
-{: #rename_rgs}
-{: ui}
-
-Your first resource group is created and named `Default` for you. You can update the name of this group or any other groups that you create.
-
+To add the resources to a resource group, complete the following steps: 
 1. In the console, go to **Manage** > **Account** > **Account resources** > **Resource groups**.
-2. Click the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, and select **Rename**.
-3. Enter a unique name and click **Save**.
-
-## Renaming a resource group by using the CLI
-{: #renaming-rgs-cli}
-{: cli}
-
-Run the [`ibmcloud resource group-update`](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_group_update) command to update the name of a resource group. For example, the following command renames the `Default` resource group to `Admin`:
-
-```
-ibmcloud resource group-update Default [-n, --name Admin]
-```
-{:codeblock}
+2. Click the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, and select **Add resources**.
+3. From here, you are directed to the catalog. You can search the offerings or filter based on a specific category, provider, pricing plan, type of compliance, or release type. Examples of resources include apps, service instances, container clusters, storage volumes, virtual servers, and software.
 
 ## Viewing resources in a resource group
 {: #view_rg_resources}
@@ -98,14 +123,18 @@ To easily view the resources that are assigned to a resource group, go to the **
 {: #viewing-rgs-cli}
 {: cli}
 
-Run the [`ibmcloud resource service-instances`](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instances) to view the resources that are assigned to a specific resource group. For example, the following command lists all the resources that are in the `Default` resource group:
+1. Log in, and select the account.
+
+   ```
+   ibmcloud login
+   ```
+   {:codeblock}
+   
+2. View the resources that are assigned to a specific resource group by running the [`ibmcloud resource service-instances`](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instances) command. For example, the following command lists all the resources that are in the `Default` resource group:
 
 ```
 ibmcloud resource service-instances -g Default
 ```
 {:codeblock}
-
-
-
 
 
