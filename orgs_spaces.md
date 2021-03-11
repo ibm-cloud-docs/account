@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2020
-lastupdated: "2020-11-03"
+  years: 2015, 2021
+lastupdated: "2021-03-11"
 
 keywords: account, add orgs, add spaces, cloud foundry orgs
 
@@ -16,6 +16,9 @@ subcollection: account
 {:tip: .tip}
 {:help: data-hd-content-type='help'} 
 {:support: data-reuse='support'}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
 
 # Adding orgs and spaces
 {: #orgsspacesusers}
@@ -25,6 +28,7 @@ As an {{site.data.keyword.Bluemix}} account owner, you can add Cloud Foundry org
 
 ## Cloud Foundry org concepts
 {: #cf-org-concepts}
+{: ui}
 
 You can manage Cloud Foundry orgs and spaces by going to **Manage** > **Account** in the {{site.data.keyword.cloud_notm}} console, and selecting **Account resources > Cloud Foundry orgs**.
 
@@ -54,6 +58,7 @@ In a Subscription account, the quota is a user-defined limit that initiates spen
 {: #createorg}
 {: help} 
 {: support}
+{: ui}
 
 If you have a billable account, you can add as many orgs as you need. Lite accounts can have only one org, which is already created in your account. Orgs can't be deleted after you add them.
 
@@ -75,6 +80,7 @@ You can assign the following [Cloud Foundry roles](/docs/account?topic=account-c
 {: #spaceinfo}
 {: help} 
 {: support}
+{: ui}
 
 Within an organization, you can use spaces to group a set of applications, services, and users. Spaces are defined within a single {{site.data.keyword.Bluemix_notm}} region. You can create spaces in an org based on the delivery lifecycle. For example, you can create a `dev` space as a development environment, a `test` space as a testing environment, and a `production` space as a production environment. Then, you can associate your apps with spaces.
 
@@ -93,3 +99,55 @@ After you add users to an org, you can grant them permissions to the spaces. Sim
 
 A user must be assigned at least one of the permissions in the space.
 {: tip}
+
+## Creating orgs by using the CLI
+{: #create-org-cli}
+{: cli}
+
+You can create an organization by using the {{site.data.keyword.Bluemix}} Command Line Interface. For detailed information about managing accounts, users in an account, and the org, space, and roles of public Cloud Foundry environments, see [Managing accounts, users, and Cloud Foundry orgs](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_org).
+
+1. Log in, and select the account.
+
+   ```
+   ibmcloud login
+   ```
+   {:codeblock}
+2. Create an organization by running the [`ibmcloud account org-create`](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_org_create) command, where `ORG_NAME` is the name of the organization to be created, and `-r, --region REGION` is the region name. 
+
+   ```
+   ibmcloud account org-create ORG_NAME [-r, --region REGION]
+   ```
+   {:codeblock}
+
+
+   For example, the following command creates an organization that is named `IBM`.
+
+   ```
+   ibmcloud account org-create IBM
+   ```
+   {:codeblock}
+
+   * If `REGION` is not specified, the name is default to current region.
+
+   * This operation can be run only by the account owner. 
+   {: note}
+     
+## Creating spaces by using the CLI
+{: #create-space-cli}
+{: cli}
+
+You can also create spaces by using the {{site.data.keyword.Bluemix}} Command Line Interface.
+
+1. Log in, and select the account.
+
+   ```
+   ibmcloud login
+   ```
+   {:codeblock}
+2. Create an organization by running the [`ibmcloud account space-create`](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_space_create) command, where `-o` is the organization, and `-q` is the quota to assign to the newly created space. 
+
+   ```
+   ibmcloud account create-space SPACE [-o ORG] [-q SPACE_QUOTA]
+   ```
+   {:codeblock}
+
