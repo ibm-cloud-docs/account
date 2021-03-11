@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-03-10"
+lastupdated: "2021-03-11"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1030,7 +1030,27 @@ Review the available platform and service roles available and the actions mapped
 ## Direct Link
 Review the available platform and service roles available and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `directlink` for the service name.
 
-No supported roles.
+| Role | Description |
+| ----- | :----- |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+{: row-headers}
+{: caption="Table 22. Service roles - Direct Link" caption-side="top"}
+{: #service-roles-table22}
+{: tab-title="Service roles"}
+{: tab-group="directlink"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `directlink.config.read` | Configuration Information Point API access | Service Configuration Reader |
+{: caption="Table 22. Service actions - Direct Link" caption-side="top"}
+{: #actions-table22}
+{: tab-title="Actions"}
+{: tab-group="directlink"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+
 ## Direct Link Connect
 Review the available platform and service roles available and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `directlink.connect` for the service name.
 
