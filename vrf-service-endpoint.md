@@ -2,9 +2,9 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-03-10"
+lastupdated: "2021-03-11"
 
-keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network, services that support service endpoints, service endpoint support, using service endpoints
+keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network, services that support service endpoints, service endpoint support, using service endpoints, service endpoints ui, service endpoints cli
 
 subcollection: account
 
@@ -36,8 +36,9 @@ Before you begin, ensure that you meet the following criteria:
 * You need a billable account to enable virtual routing and forwarding and {{site.data.keyword.Bluemix_notm}} service endpoints.
 * You must have access to {{site.data.keyword.cloud_notm}} infrastructure in your account. Go to the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **Classic Infrastructure** to verify that you have access.
 
-## Enabling VRF
+## Enabling VRF in the console 
 {: #vrf}
+{: ui}
 
 VRF allows multiple instances of a routing table to exist in a router and to work simultaneously. When you enable VRF, a separate routing table is created for your account, and connections to and from your account's resources are routed separately on the {{site.data.keyword.Bluemix_notm}} network. VRF is enabled at the account level, so all resources are affected by this networking change. For more information about VRF technology and how it affects your account's network routing, see [Virtual routing and forwarding on {{site.data.keyword.Bluemix_notm}}](/docs/dl?topic=dl-overview-of-virtual-routing-and-forwarding-vrf-on-ibm-cloud).
 
@@ -64,7 +65,7 @@ When {{site.data.keyword.Bluemix_notm}} service endpoints are enabled in your ac
 Before you can enable service endpoints, VRF must be enabled for your account. Virtual Private Clouds (VPCs) are automatically enabled for VRF.
 {: note}
 
-### From the console
+### Enabling service endpoints in the console
 {: #service-endpoint-console}
 {: ui}
 
@@ -76,7 +77,7 @@ Before you can enable service endpoints, VRF must be enabled for your account. V
 
 It might take a few minutes for this change to take effect.
 
-### From the CLI
+### Enabling service endpoints from the CLI
 {: #service-endpoint-cli}
 {: cli}
 
@@ -129,8 +130,6 @@ After service endpoints are enabled, you can create resources that connect over 
 
 ## Using service endpoints
 {: #use-service-endpoint}
-{: ui}
-
 
 After you enable the VRF and service endpoint account settings, you can create resources from the catalog that support service endpoints. The following table lists the services that support using service endpoints.
 
