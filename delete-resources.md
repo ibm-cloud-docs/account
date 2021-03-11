@@ -4,8 +4,8 @@
 
 copyright:
 
-  years: 2020
-lastupdated: "2020-07-08"
+  years: 2020, 2021
+lastupdated: "2021-03-11"
 
 keywords: account resources, delete resource, delete instance
 
@@ -18,6 +18,9 @@ subcollection: account
 {:screen: .screen}
 {:tip: .tip}
 {:note: .note}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
 
 # Deleting resources 
 {: #delete-resource}
@@ -27,6 +30,7 @@ When you don't need a resource in your account anymore, or if a user in your acc
 
 ## Deleting resources in the console
 {: #delete-resource-console}
+{: ui}
 
 You can delete a resource in the console by using the following steps:
 
@@ -36,22 +40,38 @@ You can delete a resource in the console by using the following steps:
 
 ## Deleting resources by using the CLI
 {: #delete-resource-cli}
+{: cli}
 
-To delete a resource by using the CLI, run the following command:
+You can delete a resource by using the {{site.data.keyword.Bluemix}} Command Line Interface. For detailed information about managing IBM Cloud resources, see [Working with resources and resource groups](/docs/cli?topic=cli-ibmcloud_commands_resource).
 
+1. Log in, and select the account.
+
+  ```
+  ibmcloud login
+  ```
+  {:codeblock}
+2. Delete a service instance by running the [`ibmcloud resource service-instance-delete`](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_delete) command, where `NAME` is the name of the service instance, exclusive with ID, and `ID` is the ID of the service instance, exclusive with NAME.
+
+  ```
+  ibmcloud resource service-instance-delete (NAME|ID) [-f, --force] [--recursive]
+  ```
+  {:codeblock}
+
+  For example, the following command deletes a resource service-instance named `my-service-instance`:
+
+  ```
+  ibmcloud resource service-instance-delete my-service-instance
+  ```
+  {:codeblock}
+
+## Deleting resource instances by using the API
+{: #delete-resource-instance-api}
+{: api}
+
+You can programmatically delete a resource instance by calling the Resource Controller API as shown in the following sample request. For detailed information about the API, see [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#delete-resource-instance){: external}.
 ```
-ibmcloud resource service-instance-delete (NAME|ID) [-f, --force] [--recursive]
+curl -X DELETE \
+https://resource-controller.cloud.ibm.com/v2/resource_instances/8d7af921-b136-4078-9666-081bd8470d94 \
+  -H 'Authorization: Bearer <>'
 ```
 {: codeblock}
-
-Enter the following command options:
-  * **Name**: The name of the service instance, exclusive with ID. (Required)
-  * **ID**: The ID of the service instance, exclusive with NAME. (Required)
-  * **-f, --force**: Force deletion without confirmation. 
-  * **--recursive**: Delete all belonging resources. 
-
-The following example shows how to delete a resource service-instance that's named `my-service-instance`:
-
-```
-ibmcloud resource service-instance-delete my-service-instance
-```
