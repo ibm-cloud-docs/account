@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2021
 
-lastupdated: "2021-03-04"
+lastupdated: "2021-03-12"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, role management service, catalog management service, cloud shell service
 
@@ -30,7 +30,7 @@ As the account owner or the administrator of an account management service, you 
 ## Creating policies for account management service access
 {: #account-management-access}
 
-### Using the console to assign access
+### Assigning access in the console
 {: #console-acct-mgmt}
 {: ui}
 
@@ -46,7 +46,7 @@ To assign access to one or all account management services, complete the followi
 To grant another user full access to the account for the purposes of managing user access and all IAM-enabled account resources, you must assign two policies. To create the first policy, use the **IAM services** option, and select **All Identity and Access enabled services** in **Account** with the Administrator platform role and Manager service role. To create the second policy, use the **Account Management** option, and select **All Account Management Services** with the Administrator role assigned.
 {: tip}
 
-### Using the CLI to assign access
+### Assigning access by using the CLI
 {: cli}
 
 To assign access, run the `user-policy-create` command. For more information, see [ibmcloud iam user-policy-create](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_create). The following example command assigns a policy with the Administrator role for the Access groups account management service.
@@ -58,7 +58,7 @@ ibmcloud iam user-policy-create USER_NAME --roles administrator --service-name i
 For service names to use in the CLI command for each account management service, see the following table. However, for a policy on all account management services in the CLI, use `--account-management` instead of `--service-name SERVICE_NAME`.
 {: tip}
 
-### Using the API to assign access
+### Assigning access by using the API
 {: #api-acct-mgmt}
 {: api}
 
