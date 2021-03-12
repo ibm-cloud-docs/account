@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2021
-lastupdated: "2021-03-04"
+lastupdated: "2021-03-12"
 
 keywords: access groups, access group, create group, assign access to group
 
@@ -116,7 +116,7 @@ ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
 {: #create_ag_api}
 {: api}
 
-You can programmatically create access groups by calling the [{{site.data.keyword.iamlong}} (IAM) Access Groups API](https://{DomainName}/apidocs/tagging){: external} as shown in the following sample request. The example creates an access group for managers in the account:
+You can programmatically create access groups by calling the [{{site.data.keyword.iamlong}} (IAM) Access Groups API](https://{DomainName}/apidocs/iam-access-groups#create-access-group){: external} as shown in the following sample request. The example creates an access group for managers in the account:
 ```
 curl -X POST -H "Authorization: {iam_token}" \
 -H "Accept: application/json" \
@@ -161,7 +161,7 @@ ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --ro
 {: #access_ag_api}
 {: api}
 
-You can programmatically assign access to a group by calling the [{{site.data.keyword.iamlong}} (IAM) Policy Management API](https://{DomainName}/apidocs/iam-policy-management){: external} as shown in the following sample request. The example assigns an access group `Editor` role for an instance of a service:
+You can programmatically assign access to a group by calling the [{{site.data.keyword.iamlong}} (IAM) Policy Management API](https://{DomainName}/apidocs/iam-policy-management#create-policy){: external} as shown in the following sample request. The example assigns an access group `Editor` role for an instance of a service:
 
 ```
 curl -X POST 'https://iam.cloud.ibm.com/v1/policies' \
