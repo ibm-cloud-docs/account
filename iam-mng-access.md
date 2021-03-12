@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-03-05"
+lastupdated: "2021-03-12"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access 
 
@@ -42,7 +42,7 @@ You can assign access to resources by using two types of policies:
 If you delete or edit an existing policy for a service ID currently being used, it might cause service interruption.
 {: note}
 
-If you want to enable a user full administrator access to complete [account management tasks](/docs/account?topic=account-account-services#account-services), such as inviting and removing users, viewing billing and usage, managing service IDs, managing access groups, managing user access, and access to all account resources, you must assign a user the following access:
+If you want to enable a user full administrator access to complete [account management tasks](/docs/account?topic=account-account-services#account-management-access), such as inviting and removing users, viewing billing and usage, managing service IDs, managing access groups, managing user access, and access to all account resources, you must assign a user the following access:
 * A policy for **All Identity and Access enabled services** within the **Account** with the Administrator and Manager roles.
 * A policy with Administrator role on **All Account Management Services**.
 
@@ -95,7 +95,7 @@ If a user doesn't have a role on the resource group that contains the resources,
 {: #access-resources-api}
 {: api}
 
-You can assign access to an individual resource in the account or access to a list of resources in the account by calling the [{{site.data.keyword.iamlong}} (IAM) Policy Management API](https://{DomainName}/apidocs/iam-policy-management){: external} as shown in the following sample request. The sample request gives `Editor` role access for an instance of a service:
+You can assign access to an individual resource in the account or access to a list of resources in the account by calling the [{{site.data.keyword.iamlong}} (IAM) Policy Management API](https://{DomainName}/apidocs/iam-policy-management#create-policy){: external} as shown in the following sample request. The sample request gives `Editor` role access for an instance of a service:
 
    ```
     curl -X POST 'https://iam.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $TOKEN' \
@@ -214,7 +214,7 @@ To remove a service ID policy by using the CLI, you can use the [**`ibmcloud iam
 {: #remove-access-api}
 {: api}
 
-Delete a policy by providing a policy ID and calling the [{{site.data.keyword.iamlong}} (IAM) Policy Management API](https://{DomainName}/apidocs/iam-policy-management){: external} as shown in the following sample request:
+Delete a policy by providing a policy ID and calling the [{{site.data.keyword.iamlong}} (IAM) Policy Management API](https://{DomainName}/apidocs/iam-policy-management#delete-policy){: external} as shown in the following sample request:
 
   ```
   curl -X DELETE 'https://iam.cloud.ibm.com/v1/policies/$POLICY_ID' \
@@ -254,7 +254,7 @@ If you need to review your assigned access in an account that you've been added 
 {: #review-your-access-api}
 {: api}
 
-By using the API, you can only retrieve all policies in the account and filter by attribute values. You can check your assigned access in an account by going to **Manage** > **Users** > **your_name** > **Access policies** in the console. To retrieve policies, call the [{{site.data.keyword.iamlong}} (IAM) Policy Management API](https://{DomainName}/apidocs/iam-policy-management){: external} as shown in the following sample request:
+By using the API, you can only retrieve all policies in the account and filter by attribute values. You can check your assigned access in an account by going to **Manage** > **Users** > **your_name** > **Access policies** in the console. To retrieve policies, call the [{{site.data.keyword.iamlong}} (IAM) Policy Management API](https://{DomainName}/apidocs/iam-policy-management#list-policies){: external} as shown in the following sample request:
 
    ```
    curl -X GET 'https://iam.cloud.ibm.com/v1/policies?account_id=$ACCOUNT_ID' \
@@ -262,4 +262,3 @@ By using the API, you can only retrieve all policies in the account and filter b
    -H 'Content-Type: application/json'
    ```
    {: codeblock} 
-   
