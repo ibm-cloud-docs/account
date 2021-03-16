@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-02-01"
+lastupdated: "2021-03-16"
 
 keywords: account types, Lite, free account, trial account, paid account, buy account, account difference, compare account, subscription, Pay As You Go with Committed Use, PayGo with Commit
 
@@ -77,13 +77,13 @@ Check out the following list of key features that are available in a Lite accoun
 ## Pay-As-You-Go account
 {: #paygo}
 
-With a Pay-As-You-Go account, you can access the full {{site.data.keyword.Bluemix_notm}} catalog, including all free plans. You pay only for billable services that you use, with no long-term contracts or commitments. When you upgrade to a Pay-As-You-Go account, you receive a [$200 credit](#upgrade-lite-account) to help get you started.
+With a Pay-As-You-Go account, you can access the full {{site.data.keyword.Bluemix_notm}} catalog, including all free plans. You pay only for billable services that you use, with no long-term contracts or commitments. When you upgrade to a Pay-As-You-Go account, you receive a [$200 credit](/docs/account?topic=account-upgrading-account) to help get you started.
 
 You can create multiple resource groups to easily manage quota and view billing usage for a set of resources. Your charges are based on your use of {{site.data.keyword.Bluemix_notm}} computing and services. If you use more than the free runtime and service allowances, you receive a monthly invoice that provides details about your resource charges.
 
-Basic support is included with your {{site.data.keyword.Bluemix_notm}} Pay-As-You-Go. It is provided for non-production environments or workloads where traditional severities are not used and specific response times are not stipulated. Also, with a Pay-As-You-Go account, you can order Advanced or Premium support plans to get extra help with your production workloads. Learn more in [Support plans](/docs/get-support?topic=get-support-support-plans).
+Basic support is included with your {{site.data.keyword.Bluemix_notm}} Pay-As-You-Go. It is provided for non-production environments or workloads where traditional severities are not used and specific response times are not stipulated. Also, with a Pay-As-You-Go account, you can order Advanced or Premium support plans to get extra help with your production workloads. Learn more in [Basic, Advanced, and Premium Support plans](/docs/get-support?topic=get-support-support-plans).
 
-A subset of Pay-As-You-Go accounts are eligible for the new Pay-As-You-Go with Committed Use model. For more information, see [Pay as you go with Committed Use](/docs/account?topic=account-accounts#commitment-model)
+A subset of Pay-As-You-Go accounts are eligible for the new Pay-As-You-Go with Committed Use model. For more information, see [Pay as you go with Committed Use billing model](/docs/account?topic=account-accounts#commitment-model).
 
 ## Subscription account
 {: #subscription-account}
@@ -94,7 +94,7 @@ When you purchase a subscription, you commit to a minimum spending amount for a 
 
 Large organizations and other users with large cloud workloads can benefit from the savings and predictable billing that are provided by subscriptions. {{site.data.keyword.Bluemix_notm}} offers multiple types of subscriptions to fit your usage needs. 
 
-A subset of subscription accounts are eligible for the new Pay-As-You-Go with Committed Use model. For more information, see [Pay as you go with Committed Use billing model](/docs/account?topic=account-accounts#commitment-model)
+A subset of subscription accounts are eligible for the new Pay-As-You-Go with Committed Use model. For more information, see [Pay as you go with Committed Use billing model](/docs/account?topic=account-accounts#commitment-model).
 
 ### Platform subscriptions
 {: #platform-subscriptions}
@@ -117,12 +117,12 @@ Support subscription credit is separate from any platform or service subscriptio
 
 Service bundle subscriptions give you access and credit towards a set of services within a particular domain that are targeted for popular use cases. You can choose from service bundles that span AI, analytics, {{site.data.keyword.blockchainfull_notm}}, Internet of Things (IoT), and cloud-native services. If your needs cross-multiple domains, you can purchase multiple service bundle subscriptions.
 
-You can add services bundles to any type of existing account, including Lite accounts. Service bundle subscriptions are subject to the [{{site.data.keyword.Bluemix_notm}} Service Description](/docs/overview/terms-of-use?topic=overview-terms) terms.
+You can add services bundles to any type of existing account, including Lite accounts. Service bundle subscriptions are subject to the [{{site.data.keyword.Bluemix_notm}} Terms of Use](/docs/overview/terms-of-use?topic=overview-terms).
 
-Service bundle subscriptions aren't available through the {{site.data.keyword.Bluemix_notm}} console. To learn more and purchase a service bundle, contact [{{site.data.keyword.Bluemix_notm}} Sales)](https://cloud.ibm.com/catalog?contactmodule){: external}.
+Service bundle subscriptions aren't available through the {{site.data.keyword.Bluemix_notm}} console. To learn more and purchase a service bundle, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://cloud.ibm.com/catalog?contactmodule){: external}.
 {:tip}
 
-After you purchase a service bundle subscription, you'll receive an email with a subscription code that you apply to add the bundle to your account. For more information about how to apply subscription codes, see [Adding subscription credit](/docs/billing-usage?topic=billing-usage-subscriptions#subscription-codes). When your service bundle expires or you use all of the credit, you can continue to use any of the services, with usage charged at the Pay-As-You Go rate.
+After you purchase a service bundle subscription, you'll receive an email with a subscription code that you apply to add the bundle to your account. For more information about how to apply subscription codes, see [Subscription credit](/docs/billing-usage?topic=billing-usage-subscriptions#subscription-codes). When your service bundle expires or you use all of the credit, you can continue to use any of the services, with usage charged at the Pay-As-You Go rate.
 
 ### Expiring subscriptions 
 {: #expiring-subscription-account}
