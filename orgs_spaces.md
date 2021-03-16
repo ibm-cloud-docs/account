@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-03-11"
+lastupdated: "2021-03-16"
 
 keywords: account, add orgs, add spaces, cloud foundry orgs
 
@@ -14,13 +14,14 @@ subcollection: account
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
 {:help: data-hd-content-type='help'} 
 {:support: data-reuse='support'}
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
 {:api: .ph data-hd-interface='api'}
 
-# Adding orgs and spaces
+# Creating orgs and spaces
 {: #orgsspacesusers}
 
 As an {{site.data.keyword.Bluemix}} account owner, you can add Cloud Foundry orgs and spaces to your account. Only account owners can create new Cloud Found orgs. If you're an organization manager, you can manage the orgs in the account after they are created.
@@ -28,9 +29,6 @@ As an {{site.data.keyword.Bluemix}} account owner, you can add Cloud Foundry org
 
 ## Cloud Foundry org concepts
 {: #cf-org-concepts}
-{: ui}
-
-You can manage Cloud Foundry orgs and spaces by going to **Manage** > **Account** in the {{site.data.keyword.cloud_notm}} console, and selecting **Account resources > Cloud Foundry orgs**.
 
 Orgs enable collaboration among users and facilitate the logical grouping of project resources in the following ways:
 
@@ -54,7 +52,13 @@ Orgs can span multiple regions, and they are defined by the following items:
 In a Subscription account, the quota is a user-defined limit that initiates spending notifications.
 {: tip}
 
-## Adding orgs
+## Managing Cloud Foundry orgs and spaces 
+{: #manage-orgs-spaces}
+{: ui} 
+
+You can manage Cloud Foundry orgs and spaces by going to **Manage** > **Account** in the {{site.data.keyword.cloud_notm}} console, and selecting **Account resources > Cloud Foundry orgs**.
+
+## Creating orgs in the console
 {: #createorg}
 {: help} 
 {: support}
@@ -76,7 +80,7 @@ You can assign the following [Cloud Foundry roles](/docs/account?topic=account-c
    * Organization billing manager
    * Organization auditor
 
-## Adding spaces
+## Creating spaces in the console
 {: #spaceinfo}
 {: help} 
 {: support}
@@ -129,8 +133,8 @@ You can create an organization by using the {{site.data.keyword.Bluemix}} Comman
 
    * If `REGION` is not specified, the name is default to current region.
 
-   * This operation can be run only by the account owner. 
-   {: note}
+This operation can be run only by the account owner. 
+{: note}
      
 ## Creating spaces by using the CLI
 {: #create-space-cli}
@@ -150,4 +154,3 @@ You can also create spaces by using the {{site.data.keyword.Bluemix}} Command Li
    ibmcloud account create-space SPACE [-o ORG] [-q SPACE_QUOTA]
    ```
    {:codeblock}
-
