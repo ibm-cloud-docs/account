@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2021
-lastupdated: "2021-03-12"
+lastupdated: "2021-03-16"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, full list of tags, how to use tags
 
@@ -13,9 +13,16 @@ subcollection: account
 
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+{:pre: .pre}
 {:tip: .tip}
 {:note: .note}
 {:external: target="_blank" .external}
+{:curl: .ph data-hd-programlang='curl'}
+{:go: .ph data-hd-programlang='go'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
+{:ruby: .ph data-hd-programlang='ruby'}
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
 {:api: .ph data-hd-interface='api'}
@@ -116,7 +123,64 @@ curl -X POST -H "Authorization: {iam_token}" \
 -d '{ "tag_names": ["project:myproject"] }' \
 "{base_url}/v3/tags?tag_type=access"
 ```
+{: pre}
+{: curl}
+
+```java
+CreateTagOptions createTagOptions = new CreateTagOptions.Builder()
+    .addTagNames("project:myproject")
+    .tagType("access")
+    .build();
+
+Response<CreateTagResults> response = service.createTag(createTagOptions).execute();
+CreateTagResults createTagResults = response.getResult();
+System.out.println(createTagResults);
+```
 {: codeblock}
+{: java}
+
+```javascript
+const params = {
+  tagNames: ['project:myproject'],
+  tagType: 'access',
+};
+
+globalTaggingService.createTag(params)
+  .then(res => {
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err)
+  });
+```
+{: codeblock}
+{: javascript}
+
+```python
+create_tag_results = global_tagging_service.create_tag(
+  tag_names=['project:myproject'],
+  tag_type='access').get_result()
+
+print(json.dumps(create_tag_results, indent=2))
+```
+{: codeblock}
+{: python}
+
+```go
+createTagOptions := globalTaggingService.NewCreateTagOptions(
+  []string{"project:myproject"},
+)
+createTagOptions.SetTagType("access")
+
+createTagResults, response, err := globalTaggingService.CreateTag(createTagOptions)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(createTagResults, "", "  ")
+fmt.Println(string(b))
+```
+{: codeblock}
+{: go}
 
 ## Searching for tags in the console 
 {: #search-tags}
