@@ -5,7 +5,7 @@
 copyright:
 
   years: 2020, 2021
-lastupdated: "2021-03-11"
+lastupdated: "2021-03-16"
 
 keywords: account resources, delete resource, delete instance
 
@@ -15,9 +15,16 @@ subcollection: account
 
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+{:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
 {:note: .note}
+{:curl: .ph data-hd-programlang='curl'}
+{:go: .ph data-hd-programlang='go'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
+{:ruby: .ph data-hd-programlang='ruby'}
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
 {:api: .ph data-hd-interface='api'}
@@ -69,9 +76,69 @@ You can delete a resource by using the {{site.data.keyword.Bluemix}} Command Lin
 {: api}
 
 You can programmatically delete a resource instance by calling the Resource Controller API as shown in the following sample request. For detailed information about the API, see [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#delete-resource-instance){: external}.
-```
+
+```bash
 curl -X DELETE \
 https://resource-controller.cloud.ibm.com/v2/resource_instances/8d7af921-b136-4078-9666-081bd8470d94 \
   -H 'Authorization: Bearer <>'
 ```
+{: pre}
+{: curl}
+
+```java
+DeleteResourceInstanceOptions deleteResourceInstanceOptions = new DeleteResourceInstanceOptions.Builder()
+  .id(instanceGuid)
+  .recursive(false)
+  .build();
+
+Response<Void> response = service.deleteResourceInstance(deleteResourceInstanceOptions).execute();
+
+System.out.printf("deleteResourceInstance() response status code: %d\n", response.getStatusCode());
+```
 {: codeblock}
+{: java}
+
+```javascript
+const params = {
+  id: instanceGuid,
+  recursive: false,
+};
+
+resourceControllerService.deleteResourceInstance(params)
+  .then(res => {
+    console.log('deleteResourceInstance() response status code: ' + res.status);
+  })
+  .catch(err => {
+    console.warn(err)
+  });
+  ```
+{: codeblock}
+{: javascript}
+
+```python
+response = resource_controller_service.delete_resource_instance(
+    id=instance_guid,
+    recursive=False
+)
+
+print('\ndelete_resource_instance() response status code: ',
+      response.get_status_code())
+```
+{: codeblock}
+{: python}
+
+```go
+deleteResourceInstanceOptions := resourceControllerService.NewDeleteResourceInstanceOptions(
+  instanceGUID,
+)
+deleteResourceInstanceOptions.SetRecursive(false)
+
+response, err := resourceControllerService.DeleteResourceInstance(deleteResourceInstanceOptions)
+if err != nil {
+  panic(err)
+}
+fmt.Printf("\nDeleteResourceInstance() response status code: %d\n", response.StatusCode)
+```
+{: codeblock}
+{: go}
+
