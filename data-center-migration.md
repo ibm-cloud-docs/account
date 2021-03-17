@@ -28,7 +28,7 @@ Throughout the data center migration process, help is available. To take advanta
   * [Live chat](https://www.ibm.com/cloud/data-centers/?focusArea=WCP%20-%20Pooled%20CSM&contactmodule){: external}
   * Phone: (US) 866-597-9687; (EMEA) +31 20 308 0540; (APAC) +65 6622 2231
 
-For information about which data centers are closing, see [Withdrawal of support for some data centers](/docs/get-support?topic=get-support-dc-migrate). For a list of the data centers that are available, see [Locations for resource deployment](/docs/overview?topic=overview-locations).
+For information about which data centers are closing, see [Data center closures](/docs/get-support?topic=get-support-dc-closure). For a list of the data centers that are available, see [Locations for resource deployment](/docs/overview?topic=overview-locations).
 
 ## Migrating your resources
 {: #migrating-your-resources}
