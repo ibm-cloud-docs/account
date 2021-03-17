@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-08-13"
+  years: 2020, 2021
+lastupdated: "2021-03-17"
 
 keywords: catalog, private catalog, update, private catalog product, update version, versions
 
@@ -16,6 +16,13 @@ subcollection: account
 {:tip: .tip}
 {:note: .note}
 {:important: .important}
+{:go: .ph data-hd-programlang='go'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
 
 # Updating your software
 {: #update-private}
@@ -28,20 +35,25 @@ To update the software that's in your private catalog, you can add a new version
 
 To complete this task, you need to be assigned the editor role on the catalog management service. For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
 
-## Update an existing version by using the console
+## Update an existing version in the console
 {: #update-editor-offering}
+{: ui}
 
-When you make specific updates to a software product, such as updating the readme or adding a category, you're required to validate and republish it. Alternatively, you can create a draft of an existing version, update it, and publish the changes immediately. 
+The following steps walk through an example of making updates to a product's readme to show the complete process for updating an existing software version.
 
 1. Go to **Manage** > **Catalogs** > **Private catalogs**, and select your catalog from the list. 
 1. Click the name of your software product.
-1. Click **Create a draft version to make changes and then publish again** in the notification that's displayed on the page. 
+1. Select **Private products** to navigate to the list of products that are in your private catalog. 
+1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg), and select **Edit**.  
 1. Click the Edit readme tab.
-1. Click the **Edit** icon ![Edit icon](../icons/icon_write.svg) > **Update** to save your changes.
+1. Click the **Edit** icon ![Edit icon](../icons/icon_write.svg), add a new line of text to the Introduction section, and click **Update**.
+
+
 1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg), and select **Merge changes** to publish the updated version to your account.
 
 ## Update an existing version by using the CLI
 {: #update-version-cli}
+{: cli}
 
 Complete the following steps to create a draft version, update it, and merge the changes to the current version of your software.  
 
@@ -71,3 +83,61 @@ Complete the following steps to create a draft version, update it, and merge the
     ibmcloud catalog get --public | grep your-software
     ```
     {: codeblock}
+
+## Update an existing version by using the API
+{: #update-version-api}
+{: api}
+
+You can programmatically update a version by calling the Catalog Management API as shown in the following sample request. For detailed information about the API, see [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=python#replace-offering){: external}.
+
+```java
+String catalogID = "{catalogID}";
+String offeringID = "{offeringID}";
+String label = "{label}";
+String shortDesc = "{shortDesc}";
+ReplaceOfferingOptions replaceOptions = new ReplaceOfferingOptions.Builder().catalogIdentifier(catalogID).id(offeringID).offeringId(offeringID).label(label).shortDescription(shortDesc).rev(revision.rev()).build();
+Response<Catalog> response = service.replaceOffering(replaceOptions).execute();
+System.out.println(response.getResult());
+```
+{: codeblock}
+{: java}
+
+```javascript
+vcatalogID = "{catalogID}";
+offeringID = "{offeringID}";
+revision = "{revision}";
+label = "{label}";
+shortDesc = "{shortDesc}";
+response = await service.replaceOffering({'catalogIdentifier': catalogID, 'offeringId': offeringID, 'id': offeringID, 'rev': revision, 'label': label, 'shortDescription': shortDesc});
+console.log(response);
+```
+{: codeblock}
+{: javascript}
+
+```python
+catalogID = "{catalogID}"
+offeringID = "{offeringID}"
+revision = "{revision}"
+shortDesc = "{shortDesc}"
+response = self.service.replace_offering(catalog_identifier=catalogID, offering_id=offeringID, id=offeringID, rev=revision, label=label, short_description=shortDesc)
+print(response)
+```
+{: codeblock}
+{: python}
+
+```go
+catalogID := "{catalogID}"
+offeringID := "{offeringID}"
+label := "{label}"
+shortDesc := "{shortDesc}"
+revision := "{revision}"
+updateOptions := service.NewReplaceOfferingOptions(catalogID, offeringID)
+updateOptions.SetID(offeringID)
+updateOptions.SetLabel(label)
+updateOptions.SetShortDescription(shortDesc)
+updateOptions.SetRev(revision)
+_, response, _ := service.ReplaceOffering(updateOptions)
+fmt.Println(response)
+```
+{: codeblock}
+{: go}

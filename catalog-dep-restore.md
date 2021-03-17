@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-04-02"
+  years: 2020, 2021
+lastupdated: "2021-03-17"
 
 keywords: deprecate software, restore software, catalog, catalogs, software, private catalog
 
@@ -15,13 +15,20 @@ subcollection: account
 {:screen: .screen}
 {:tip: .tip}
 {:note: .note}
+{:go: .ph data-hd-programlang='go'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
 {:important: .important}
 {:external: target="_blank" .external}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
 
 # Deprecating and restoring software versions
 {: #dep-restore}
 
-In this tutorial, you deprecate a version of the apache-two-instances software instance. Then, you restore the version to the {{site.data.keyword.cloud}} catalog. 
+In this tutorial, you deprecate a version of the apache-two-instances software instance. Then, you restore the version to the {{site.data.keyword.cloud}} catalog.
 {: shortdesc}
 
 ## Before you begin
@@ -32,8 +39,9 @@ To complete this tutorial, you need to be assigned the editor role on the catalo
   If you don't see what you're expecting in the console based on your permissions, try refreshing your session by going to https://cloud.ibm.com/login.
   {: tip}
 
-## Deprecate a software version by using console
+## Deprecate a software version in the console
 {: #deprecate-editor}
+{: ui}
 
 When you deprecate a version, it is not displayed in the catalog for any user that hasn't installed it. All users who previously installed the software can still access it. 
 
@@ -50,8 +58,9 @@ When you deprecate a version, it is not displayed in the catalog for any user th
 1. Click the Private tab > **apache-two-instances**. 
 1. Verify that only version 2.4.41 is listed in the **Version** list.
 
-## Restore the deprecated version by using the console
+## Restore the deprecated version in the console
 {: #restore-editor}
+{: ui}
 
 When you restore a deprecated version, you are required to validate and publish the software again.
 
@@ -76,6 +85,7 @@ When you restore a deprecated version, you are required to validate and publish 
 
 ## Deprecate a software version by using the CLI
 {: #deprecate-cicd-editor}
+{: cli}
 
 You need the version locator for your software version. To find it, run the **`ibmcloud catalog offering list --catalog "My first catalog"`** command, and search for version 2.4.39.
 {: important}
@@ -93,6 +103,8 @@ You need the version locator for your software version. To find it, run the **`i
     {: codeblock}
     
 ## Restore a deprecated version by using the CLI
+{: #restore-cicd-editor}
+{: cli}
     
 When you restore a deprecated version, you are required to validate and publish the software again.
 
@@ -121,3 +133,49 @@ When you restore a deprecated version, you are required to validate and publish 
     ```
     {: codeblock}
 
+## Deprecate an existing version by using the API
+{: #deprecate-version-api}
+{: api}
+
+You can programmatically deprecate a version by calling the Catalog Management API as shown in the following sample request. For detailed information about the API, see [Catalog Management API](https://test.cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=python#deprecate-version){: external}.
+
+
+```java
+String versionLocator = "{versionLocator}";
+DeprecateVersionOptions depOptions = new DeprecateVersionOptions.Builder().versionLocId(versionLocator).build();
+Response<Void> response = service.deprecateVersion(depOptions).execute();
+System.out.println(response.getResult());
+```
+{: codeblock}
+{: java}
+
+```javascript
+versionLocator = "{versionLocator}";
+response = await service.deprecateVersion({ 'versionLocId': versionLocator});
+console.log(response);
+}).catch(err => {});
+```
+{: codeblock}
+{: javascript}
+
+```python
+versionLocator = "{versionLocator}"
+response = self.service.deprecate_version(version_loc_id=versionLocator)
+print(response)
+```
+{: codeblock}
+{: python}
+
+```go
+versionLocator := "{versionLocator}"
+depOptions := service.NewDeprecateVersionOptions(versionLocator)
+response, _ := service.DeprecateVersion(depOptions)
+fmt.Println(response)
+```
+{: codeblock}
+{: go}
+
+## Restore a deprecated version by using the API
+{: #restore-version-api}
+{: api}
+This action can be done only through the UI or CLI. To see the steps, switch to the UI or CLI instructions.
