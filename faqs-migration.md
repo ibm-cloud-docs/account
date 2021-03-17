@@ -30,7 +30,7 @@ FAQs about migrating resources between data centers might include questions abou
 {: #dc-required-move}
 {: faq}
 
-To continue bringing you the best service, hardware, and connectivity, data centers are continually evaluated to ensure that they meet networking, electrical, and other infrastructure standards. The [closing data centers](/docs/get-support?topic=get-support-dc-migrate) no longer meet the ongoing standards.
+To continue bringing you the best service, hardware, and connectivity, data centers are continually evaluated to ensure that they meet networking, electrical, and other infrastructure standards. The [closing data centers](/docs/get-support?topic=get-support-dc-closure) no longer meet the ongoing standards.
 
 
 ## Do I need to be fully migrated on the date my data center is closed?
