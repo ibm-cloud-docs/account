@@ -45,7 +45,7 @@ To delete a resource group that doesn't contain resources and is not your defaul
 2. Click the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, and select **Delete**.
 
 ## Deleting a resource group by using the CLI
-{: #delete-cli}
+{: #delete-rg-cli}
 {: cli}
 
 To delete a resource group that doesn't contain resources and is not your default, run the [`ibmcloud resource group-delete`](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_group_delete). For example, delete resource group `example-group`:
@@ -55,7 +55,7 @@ ibmcloud resource group-delete example-group -f
 ```
 
 ## Deleting a resource group by using the API
-{: #delete-api}
+{: #delete-rg-api}
 {: api}
 
 You can programmatically delete a resource group by calling the Resource Manager API as shown in the following sample request. For detailed information about the API, see [Resource Manager API](https://cloud.ibm.com/apidocs/resource-controller/resource-manager#delete-resource-group){: external}.
