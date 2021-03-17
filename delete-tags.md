@@ -31,14 +31,14 @@ When you delete an access management tag from the account, any associated IAM po
 {: note}
 
 ## Deleting unused tags in the console
-{: #delete-console}
+{: #delete-tag-console}
 {: ui}
 
 1. To see the full list of tags in your account, go to **Manage** > **Account** in the {{site.data.keyword.cloud}} console, and select **Tags**.
 2. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) next to the unused tag and select **Delete**.
 
 ## Deleting unused tags by using the CLI
-{: #delete-cli}
+{: #delete-tag-cli}
 {: cli}
 
 Log in to [{{site.data.keyword.cloud}} CLI](/docs/cli?topic=cli-getting-started) and select your account to run the **`ibmcloud resource tag-delete`** command for deleting only one or all of the unused tags.
@@ -49,7 +49,7 @@ Log in to [{{site.data.keyword.cloud}} CLI](/docs/cli?topic=cli-getting-started)
   {: codeblock}
 
 ## Deleting unused tags by using the API
-{: #delete-api}
+{: #delete-tag-api}
 {: api}
 
 You can delete tags by calling the [Global Search and Tagging - Tagging API](https://{DomainName}/apidocs/tagging#delete-tag-all){: external} as shown in the following sample requests. The allowed values for the `tag_type` query parameter are: `user` for user tags and `access` for access management tags.
