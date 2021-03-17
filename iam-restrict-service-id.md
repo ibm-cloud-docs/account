@@ -27,7 +27,7 @@ By default, all members of an account can create service IDs, but that access ca
 
 
 ## Enabling the restriction to create service IDs
-{: #allow-all-api-create}
+{: #enable-restrict-create-service-id}
 
 To enable the setting to restrict users from creating service IDs, you must have the following assigned access:
 
@@ -43,7 +43,7 @@ Now that the setting is enabled to restrict users from creating service IDs, you
 
 
 ## Assigning access to create service IDs with restrictions enabled
-{: #restrict-api-create-access}
+{: #assign-access-create-service-id-restrict}
 
 If the Restrict service ID creation setting is enabled, only users, including the account owner, assigned the `Service ID creator` role on the IAM Identity Service can create service IDs.
 
