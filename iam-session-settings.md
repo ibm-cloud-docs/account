@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-02-26"
+lastupdated: "2021-03-18"
 
 keywords: user session, inactivity, sign out
 
@@ -40,7 +40,7 @@ An active session is how long a user is continuously working on their account. H
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Settings**.
 1. From the Login session section, click the **Edit** icon ![Edit icon](../icons/icon_write.svg) from the Active sessions tile. 
-1. Enter the time limit. The longest a session can last is 24 hours. 
+1. Enter the time limit. The longest a session can last is 720 hours. 
 1. Click **Save**. 
 
 
@@ -51,7 +51,7 @@ An inactive session is one where the user hasn't done anything on their account 
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Settings**.
 1. From the Login session section, click the **Edit** icon ![Edit icon](../icons/icon_write.svg) from the Sign out due to inactivity tile. 
-1. Enter the time limit. The longest an inactive session can last is 2 hours. 
+1. Enter the time limit. The longest an inactive session can last is 24 hours. 
 1. Click **Save**. 
 
 
