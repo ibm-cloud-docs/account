@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-03-17"
+lastupdated: "2021-03-18"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1962,14 +1962,14 @@ Review the available platform and service roles available and the actions mapped
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
-## IBM Cloud Monitoring with Sysdig
+## IBM Cloud Monitoring
 Review the available platform and service roles available and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `sysdig-monitor` for the service name.
 
 | Role | Description |
 | ----- | :----- |
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 {: row-headers}
-{: caption="Table 43. Platform roles - IBM Cloud Monitoring with Sysdig" caption-side="top"}
+{: caption="Table 43. Platform roles - IBM Cloud Monitoring" caption-side="top"}
 {: #platform-roles-table43}
 {: tab-title="Platform roles"}
 {: tab-group="sysdig-monitor"}
@@ -1982,7 +1982,7 @@ Review the available platform and service roles available and the actions mapped
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 43. Service roles - IBM Cloud Monitoring with Sysdig" caption-side="top"}
+{: caption="Table 43. Service roles - IBM Cloud Monitoring" caption-side="top"}
 {: #service-roles-table43}
 {: tab-title="Service roles"}
 {: tab-group="sysdig-monitor"}
@@ -1994,7 +1994,7 @@ Review the available platform and service roles available and the actions mapped
 | `sysdig-monitor.launch.user` |  | Administrator, Manager, Writer |
 | `sysdig-monitor.launch.admin` |  | Administrator, Manager |
 | `sysdig-monitor.launch.viewer` |  | Administrator, Manager, Reader, Writer |
-{: caption="Table 43. Service actions - IBM Cloud Monitoring with Sysdig" caption-side="top"}
+{: caption="Table 43. Service actions - IBM Cloud Monitoring" caption-side="top"}
 {: #actions-table43}
 {: tab-title="Actions"}
 {: tab-group="sysdig-monitor"}
