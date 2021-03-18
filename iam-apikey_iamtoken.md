@@ -33,10 +33,15 @@ You can generate an IAM token by using either your [{{site.data.keyword.Bluemix_
 An access token is a temporary credential that expires after 1 hour at the latest. After the acquired token expires, you must generate a new token to continue calling {{site.data.keyword.Bluemix_notm}} or service APIs, and you can perform only actions that are allowed by your level of assigned access within all accounts. Use the response property `expires_in` in the API response to identify the length of time that your specific access token is valid.
 {: note}
 
+### ID token
+{: #post_id_token}
+
 Use the following `curl` command to generate an IAM token by using an API key.
 
-### POST https://iam.cloud.ibm.com/identity/token
-{: #post_id_token}
+```
+POST https://iam.cloud.ibm.com/identity/token
+```
+{: codeblock}
 
 ### Headers
 {: #header}
