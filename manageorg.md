@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2020
-lastupdated: "2020-07-27"
+  years: 2015, 2021
+lastupdated: "2021-03-19"
 
 keywords: update orgs, update spaces, quotas, Cloud Foundry orgs, domains
 
@@ -15,6 +15,9 @@ subcollection: account
 {:tip: .tip}
 {:note: .note}
 {:screen: .screen}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
 
 
 # Updating orgs and spaces
@@ -22,6 +25,10 @@ subcollection: account
 
 As an {{site.data.keyword.Bluemix}} account owner or Cloud Foundry organization manager, you can perform management tasks at the org level and the space level. These tasks include renaming an org or space, assigning or updating Cloud Foundry users' roles, managing domains, and viewing org quota details.
 {:shortdesc}
+
+## Updating orgs and spaces in the console
+{: #orgupdates-console}
+{: ui}
 
 Go to **Manage > Account** in the {{site.data.keyword.cloud_notm}} console, and select **Cloud Foundry orgs**.
 
@@ -39,8 +46,8 @@ You can view the resources of only one org at a time. If you are a member of mul
     
     You can delete spaces but not orgs.
     {: note}
-    
- * To repurpose an org, delete all spaces within the org and then rename it. Although you cannot delete orgs, you can simplify the list on the Cloud Foundry Orgs page by clearing and then re-using obsolete orgs rather than creating new ones.
+
+  * To repurpose an org, delete all spaces within the org and then rename it. Although you cannot delete orgs, you can simplify the list on the Cloud Foundry Orgs page by clearing and then re-using obsolete orgs rather than creating new ones.
 
   * To edit user roles at the org level, click the Actions icon ![Action icon](../icons/action-menu-icon.svg), and select **Users**.
     {: #listmembers}
@@ -66,3 +73,50 @@ You can view the resources of only one org at a time. If you are a member of mul
     To change the quota that is allocated to an org, you must create a support case. For more information, see [Working with support cases](/docs/get-support?topic=get-support-open-case).
 
     To view the quota details at the space level for each location, click the Actions icon ![Action icon](../icons/action-menu-icon.svg) for the respective org, and select **Quotas**. Then, expand each row accordingly.
+    
+## Updating orgs and spaces by using the CLI
+{: #orgupdates-cli}
+{: cli}
+
+### Renaming orgs
+{: #rename-org-cli}
+{: cli}
+
+1. Log in, and select the account.
+
+  ```
+  ibmcloud login
+  ```
+  {: codeblock}
+2. Rename an organization by running the [`ibmcloud account org-rename`](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_org_rename) command, where `OLD_ORG_NAME` is the old name of the org that is to be renamed, `NEW_ORG_NAME` is the new name of the org that is to be renamed, and `-r, --region REGION` is the region name. 
+
+  ```
+  ibmcloud account org-rename OLD_ORG_NAME NEW_ORG_NAME [-r, --region REGION]
+  ```
+  {: codeblock}
+
+
+This operation can be done only by an org manager.
+{: note}
+
+### Deleting spaces
+{: #delete-space-cli}
+{: cli}
+
+1. Log in, and select the account.
+
+  ```
+  ibmcloud login
+  ```
+  {: codeblock}
+2. Delete a space by using the [`ibmcloud account space-delete`](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_space_delete) command, where `-f` is forcing deletion without confirmation, and `-o` is deleting space within specified org.
+
+  ```
+  ibmcloud account space-delete SPACE [-o ORG] [-f]
+  ```
+  {: codeblock}
+
+For more information on managing accounts, users in an account by using the CLI, and the org, space, and roles of public Cloud Foundry environments, visit [Managing accounts, users, and Cloud Foundry orgs](https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_account).
+
+
+    
