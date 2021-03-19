@@ -2,9 +2,9 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-03-11"
+lastupdated: "2021-03-19"
 
-keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network, services that support service endpoints, service endpoint support, using service endpoints, service endpoints ui, service endpoints cli
+keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network, services that support service endpoints, service endpoint support, using service endpoints
 
 subcollection: account
 
@@ -36,7 +36,7 @@ Before you begin, ensure that you meet the following criteria:
 * You need a billable account to enable virtual routing and forwarding and {{site.data.keyword.Bluemix_notm}} service endpoints.
 * You must have access to {{site.data.keyword.cloud_notm}} infrastructure in your account. Go to the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **Classic Infrastructure** to verify that you have access.
 
-## Enabling VRF in the console 
+## Enabling VRF in the console
 {: #vrf}
 {: ui}
 
@@ -60,7 +60,7 @@ The {{site.data.keyword.Bluemix_notm}} network engineering team will reach out t
 ## Enabling service endpoints
 {: #service-endpoint}
 
-When {{site.data.keyword.Bluemix_notm}} service endpoints are enabled in your account, you can choose to expose a private network endpoint when you create a resource. You can then connect directly to this endpoint over the {{site.data.keyword.Bluemix_notm}} private network rather than the public network. Because resources that use private network endpoints don't have an internet-routable IP address, connections to these resources are more secure. For more information, see [Service endpoints for private network connections](/docs/account?topic=account-service-endpoints-overview).
+When {{site.data.keyword.Bluemix_notm}} service endpoints are enabled in your account, you can choose to expose a private network endpoint when you create a resource. You can then connect directly to this endpoint over the {{site.data.keyword.Bluemix_notm}} private network rather than the public network. Because resources that use private network endpoints don't have an internet-routable IP address, connections to these resources are more secure. For more information, see [Secure access to services using service endpoints](/docs/account?topic=account-service-endpoints-overview).
 
 Before you can enable service endpoints, VRF must be enabled for your account. Virtual Private Clouds (VPCs) are automatically enabled for VRF.
 {: note}
@@ -77,7 +77,7 @@ Before you can enable service endpoints, VRF must be enabled for your account. V
 
 It might take a few minutes for this change to take effect.
 
-### Enabling service endpoints from the CLI
+### Enabling service endpoints in the CLI
 {: #service-endpoint-cli}
 {: cli}
 
@@ -126,7 +126,7 @@ To enable service endpoints from the [{{site.data.keyword.Bluemix_notm}} CLI](/d
     {: screen}
   
 
-After service endpoints are enabled, you can create resources that connect over the {{site.data.keyword.Bluemix_notm}} private network. For a list of services that support service endpoints and more information, see [Setting up private network endpoints](/docs/account?topic=account-vrf-service-endpoint).
+After service endpoints are enabled, you can create resources that connect over the {{site.data.keyword.Bluemix_notm}} private network. For a list of services that support service endpoints and more information, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint).
 
 ## Using service endpoints
 {: #use-service-endpoint}
@@ -152,7 +152,7 @@ Refer to the documentation for the specific service for more information about u
 | {{site.data.keyword.hscrypto}} | [{{site.data.keyword.hscrypto}} service endpoints integration](/docs/services/hs-crypto?hs-crypto-private-endpoints=hs-crypto-private-endpoints)|
 | {{site.data.keyword.ihsdbaas_mongodb_full}} | [Securing your connection to {{site.data.keyword.ihsdbaas_mongodb_full}}](/docs/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-service-connection) |
 | {{site.data.keyword.ihsdbaas_postgresql_full}} | [Securing your connection to {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-service-connection) |
-| {{site.data.keyword.cloudant}}  |  [Available for all dedicated hardware plans deployed after 1 January 2019](//docs/Cloudant?topic=Cloudant-ibm-cloud-public#dedicated-hardware-plan) |
+| {{site.data.keyword.cloudant}}  |  [Available for all dedicated hardware plans deployed after 1 January 2019](/docs/Cloudant?topic=Cloudant-ibm-cloud-public#dedicated-hardware-plan) |
 | {{site.data.keyword.cfee_full}} | [{{site.data.keyword.cfee_full_notm}} service endpoints integration](/docs/cloud-foundry?topic=cloud-foundry-isolated-network#private-access)|
 | {{site.data.keyword.streaminganalyticsfull}} |  [Managing service endpoints for {{site.data.keyword.streaminganalyticsshort}}](/docs/services/StreamingAnalytics?topic=StreamingAnalytics-manage_endpoints#manage_endpoints) |
 | {{site.data.keyword.keymanagementserviceshort}} | [Connecting to {{site.data.keyword.keymanagementserviceshort}} on the {{site.data.keyword.cloud_notm}} private network](/docs/services/key-protect?topic=key-protect-private-endpoints) |
@@ -161,7 +161,7 @@ Refer to the documentation for the specific service for more information about u
 | {{site.data.keyword.la_full}} | [{{site.data.keyword.la_full_notm}} service endpoints integration](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-endpoints)|
 | {{site.data.keyword.messages-for-rabbitmq}} | [{{site.data.keyword.messages-for-rabbitmq}} service endpoints integration](/docs/services/messages-for-rabbitmq?topic=cloud-databases-service-endpoints)|
 | {{site.data.keyword.mon_full_notm}} | [{{site.data.keyword.mon_full_notm}} service endpoints integration](/docs/Monitoring-with-Sysdig?account=Monitoring-with-Sysdig-endpoints#endpoints_ingestion)|
-| {{site.data.keyword.cos_short}} | [{{site.data.keyword.cos_short}} endpoints and storage locations](/docs/cloud-object-storage-infrastructure?topic=cloud-object-storage-infrastructure-endpoints-iaas) |
+| {{site.data.keyword.cos_short}} | [{{site.data.keyword.cos_short}} endpoints and storage locations](/docs/cloud-object-storage?topic=cloud-object-storage-endpoints) |
 | {{site.data.keyword.bpshort}} | [Using private endpoints](/docs/schematics?topic=schematics-private-endpoints) |
 | {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.wh-acd_short}} | [Public and private network endpoints](/docs/watson?topic=watson-public-private-endpoints) with {{site.data.keyword.wh-acd_short}} |
 | {{site.data.keyword.conversationshort}} | [Protecting sensitive information](/docs/assistant?topic=assistant-security) with {{site.data.keyword.conversationshort}} |
@@ -176,6 +176,3 @@ Refer to the documentation for the specific service for more information about u
 | {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.texttospeechshort}} | [Public and private network endpoints](/docs/services/text-to-speech?topic=watson-public-private-endpoints) with {{site.data.keyword.texttospeechshort}} |
 | {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.toneanalyzershort}} | [Public and private network endpoints](/docs/services/tone-analyzer?topic=watson-public-private-endpoints) with {{site.data.keyword.toneanalyzershort}} |
 {: caption="Table 1. Services that support using service endpoints" caption-side="top"}
-
-
-
