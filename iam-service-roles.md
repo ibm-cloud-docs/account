@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-03-19"
+lastupdated: "2021-03-20"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1896,14 +1896,14 @@ Review the available platform and service roles available and the actions mapped
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
-## IBM Cloud Activity Tracker with LogDNA
+## IBM Cloud Activity Tracker
 Review the available platform and service roles available and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `logdnaat` for the service name.
 
 | Role | Description |
 | ----- | :----- |
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 {: row-headers}
-{: caption="Table 41. Platform roles - IBM Cloud Activity Tracker with LogDNA" caption-side="top"}
+{: caption="Table 41. Platform roles - IBM Cloud Activity Tracker" caption-side="top"}
 {: #platform-roles-table41}
 {: tab-title="Platform roles"}
 {: tab-group="logdnaat"}
@@ -1916,7 +1916,7 @@ Review the available platform and service roles available and the actions mapped
 | Reader | As a reader, you can perform read-only actions such as monitor data through views and dashboards. |
 | Standard member | As a member, you can configure views, dashboards and alerts, export data, search, filter, and view all data. |
 {: row-headers}
-{: caption="Table 41. Service roles - IBM Cloud Activity Tracker with LogDNA" caption-side="top"}
+{: caption="Table 41. Service roles - IBM Cloud Activity Tracker" caption-side="top"}
 {: #service-roles-table41}
 {: tab-title="Service roles"}
 {: tab-group="logdnaat"}
@@ -1929,7 +1929,7 @@ Review the available platform and service roles available and the actions mapped
 | `logdnaat.dashboard.read` | Access LogDNA dashboard without any edit permission | Reader |
 | `logdnaat.dashboard.member` | Access LogDNA dashboard with limited edit capabilities | Standard member |
 | `logdnaat.dashboard.manage` | Access and manage LogDNA dashboard without any limitation | Administrator, Manager |
-{: caption="Table 41. Service actions - IBM Cloud Activity Tracker with LogDNA" caption-side="top"}
+{: caption="Table 41. Service actions - IBM Cloud Activity Tracker" caption-side="top"}
 {: #actions-table41}
 {: tab-title="Actions"}
 {: tab-group="logdnaat"}
@@ -2067,14 +2067,14 @@ Review the available platform and service roles available and the actions mapped
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
-## IBM Log Analysis with LogDNA
+## IBM Log Analysis
 Review the available platform and service roles available and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `logdna` for the service name.
 
 | Role | Description |
 | ----- | :----- |
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 {: row-headers}
-{: caption="Table 46. Platform roles - IBM Log Analysis with LogDNA" caption-side="top"}
+{: caption="Table 46. Platform roles - IBM Log Analysis" caption-side="top"}
 {: #platform-roles-table46}
 {: tab-title="Platform roles"}
 {: tab-group="logdna"}
@@ -2087,7 +2087,7 @@ Review the available platform and service roles available and the actions mapped
 | Reader | As a reader, you can perform read-only actions such as monitor data through views and dashboards. |
 | Standard Member | As a member, you can configure views, dashboards and alerts, export data, search, filter, and view all data. |
 {: row-headers}
-{: caption="Table 46. Service roles - IBM Log Analysis with LogDNA" caption-side="top"}
+{: caption="Table 46. Service roles - IBM Log Analysis" caption-side="top"}
 {: #service-roles-table46}
 {: tab-title="Service roles"}
 {: tab-group="logdna"}
@@ -2100,7 +2100,7 @@ Review the available platform and service roles available and the actions mapped
 | `logdna.dashboard.read` | Access LogDNA dashboard without any edit permission | Reader |
 | `logdna.dashboard.member` | Access LogDNA dashboard with limited edit capabilities | Standard Member |
 | `logdna.dashboard.manage` | Access and manage LogDNA dashboard without any limitation | Administrator, Manager |
-{: caption="Table 46. Service actions - IBM Log Analysis with LogDNA" caption-side="top"}
+{: caption="Table 46. Service actions - IBM Log Analysis" caption-side="top"}
 {: #actions-table46}
 {: tab-title="Actions"}
 {: tab-group="logdna"}
