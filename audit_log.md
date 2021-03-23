@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2020
-lastupdated: "2020-06-10"
+  years: 2018, 2021
+lastupdated: "2021-03-23"
 
 keywords: audit log, user access, account log, system events, monitor system events, user access logs
 
@@ -31,7 +31,7 @@ To view your audit log, go to **Manage > Account** in the {{site.data.keyword.cl
 ### Viewing a user's access logs
 {: #view-access-logs}
 
-From the audit log page, you can also see data for each access attempt that is made by a specific user. The logs display a date and time stamp and IP address for each access attempt. Use the following steps to view a user's Access Logs.
+From the audit log page, you can also see data for each access attempt that is made by a specific user. The logs display a date and timestamp and IP address for each access attempt. Use the following steps to view a user's Access Logs.
 
 1. In the console, go to **Manage > Account**, and select **Audit log**.
 2. Then, filter for the user, select the timeframe that you want to view, and choose an object type.  
