@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-02-04"
+lastupdated: "2021-03-24"
 
 keywords: GDPR, HIPAA, data security, PHI, europe, ACS 
 
@@ -19,7 +19,7 @@ subcollection: account
 # Enabling EU and HIPAA supported settings
 {: #eu-hipaa-supported}
 
-If you're the account owner, you can enable your {{site.data.keyword.cloud}} account to be EU supported and HIPAA supported. You might choose to enable the EU Supported setting, for example, if you use resources to process personal data for European citizens. And you might choose to enable the HIPAA Supported setting if you plan to include Protected Health Information (PHI) in HIPAA-enabled services.
+If you're the account owner, you can enable your {{site.data.keyword.cloud}} account to be EU supported, Financial Services Validated designated, and HIPAA supported. You can enable the EU Supported setting, for example, if you use resources to process personal data for European citizens. You can enable the Financial Services Validated setting to include and manage regulated financial services information. And, you can enable the HIPAA Supported setting if you plan to include Protected Health Information (PHI) in HIPAA-enabled services.
 {:shortdesc}
 
 
@@ -36,6 +36,20 @@ By enabling this setting, EU supported services have strict access controls to e
   4. Click **On**.
 
    After you enable the setting, you can use the EU Supported filter option to search the catalog for products that have EU-supported pricing plans.
+
+## Enabling the Financial Services Validated setting
+{: #enabling-fs-validated}
+
+You can enable your account to use services designated as {{site.data.keyword.Bluemix_notm}} for Financial Services Validated, which leverage the industry’s highest levels of encryption certification and provides preventative and compensatory controls for financial services regulatory workloads, multi-architecture support and proactive, and automated security.
+
+When you enable this setting, you are indicating that your account stores regulated Financial Services information. You can then filter the {{site.data.keyword.Bluemix_notm}} catalog to display those services designated as Financial Services Validated. 
+
+1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage > Account**, and select **Account settings**.
+2. For the Financial Services Validated option, click **On**.
+3. Read the information about enabling the setting, and select **I understand and agree to these terms**.
+4. Click **On**.
+
+The Financial Services Validated label on a service can apply to all available plans or be limited to specific plans or configurations. 
 
 
 ## Enabling the HIPAA Supported setting
