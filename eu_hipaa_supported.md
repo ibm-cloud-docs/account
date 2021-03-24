@@ -42,14 +42,17 @@ By enabling this setting, EU supported services have strict access controls to e
 
 You can enable your account to use services designated as {{site.data.keyword.Bluemix_notm}} for Financial Services Validated, which leverage the industry’s highest levels of encryption certification and provides preventative and compensatory controls for financial services regulatory workloads, multi-architecture support and proactive, and automated security.
 
-When you enable this setting, you are indicating that your account stores regulated Financial Services information. You can then filter the {{site.data.keyword.Bluemix_notm}} catalog to display those services designated as Financial Services Validated. 
+The {{site.data.keyword.Bluemix_notm}} for Financial Services Validated designation is currently available for services operating in the Dallas (us-south) and Washington DC (us-east) [multizone regions](#x9774820){: term}. 
+{: note}
+
+When you enable this setting, you are indicating that your account stores regulated Financial Services information. 
 
 1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage > Account**, and select **Account settings**.
 2. For the Financial Services Validated option, click **On**.
 3. Read the information about enabling the setting, and select **I understand and agree to these terms**.
 4. Click **On**.
 
-The Financial Services Validated label on a service can apply to all available plans or be limited to specific plans or configurations. 
+After you enable the setting, you can filter the {{site.data.keyword.Bluemix_notm}} catalog to display services designated as Financial Services Validated. The Financial Services Validated label on a service can apply to all available plans or be limited to specific plans or configurations. 
 
 
 ## Enabling the HIPAA Supported setting
