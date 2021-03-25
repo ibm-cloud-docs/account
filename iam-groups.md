@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2021
-lastupdated: "2021-03-12"
+lastupdated: "2021-03-25"
 
 keywords: access groups, access group, create group, assign access to group
 
@@ -90,11 +90,11 @@ Additionally, an administrator or editor can be assigned access to manage an ind
 {: #create_ag}
 {: ui}
 
-To create an access group, complete the following steps:
+A unique name is required to differentiate access groups in the account. To create an access group, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Access Groups**.
 2. Click **Create**.
-3. Enter a name and optional description for your group, and click **Create**.
+3. Enter a unique name to identify your access group, an optional description, and click **Create**.
 
 Next, continue to set up your group by adding users or service IDs. Or, you can start assigning the group access, and decide who you want to add to the access group later.
 
@@ -112,6 +112,9 @@ ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
 ```
 {: codeblock}
 
+A unique name is required to differentiate access groups in the account.
+{: note}
+
 ## Creating an access group by using the API
 {: #create_ag_api}
 {: api}
@@ -125,6 +128,9 @@ curl -X POST -H "Authorization: {iam_token}" \
 "{base_url}/groups?account_id={account_id}"
 ```
 {: codeblock}
+
+A unique name is required to differentiate access groups in the account.
+{: note}
 
 ## Assigning access to a group in the console
 {: #access_ag}
