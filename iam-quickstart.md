@@ -59,7 +59,7 @@ To create an access group, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Access Groups**.
 2. Click **Create**.
-3. Enter a unique name to identify your access group and an optional description for your group.
+3. Enter a unique name to identify your access group and an optional description.
 4. Click **Create**.
 
 Next, continue to set up your group by adding users or service IDs:
