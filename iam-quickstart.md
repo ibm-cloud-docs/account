@@ -2,7 +2,7 @@
 
 copyright:
    years: 2020, 2021
-lastupdated: "2021-01-18"
+lastupdated: "2021-03-25"
 
 keywords: get started with IAM, getting started with Identity and Access Management tutorial, IAM tutorial, IAM quick start, resource group, access group, access policy, inviting users
 
@@ -39,15 +39,17 @@ This tutorial is for IAM-enabled resources. For services that don't support crea
 
 If you are new to using IAM, check out the following documentation to learn more about the features, concepts, and components of the access management system:
 
-* [IBM Cloud Identity and Access Management](/docs/account?topic=account-iamoverview) provides a quick overview of what IAM is in {{site.data.keyword.Bluemix_notm}}, the available features, and links to available CLI and API docs.
+* [What is IBM Cloud Identity and Access Management?](/docs/account?topic=account-iamoverview) provides a quick overview of what IAM is in {{site.data.keyword.Bluemix_notm}}, the available features, and links to available CLI and API docs.
 * [IAM access](/docs/account?topic=account-userroles) gives a more in-depth review of how access management works by using access policies.
-
 
 ## Create access groups
 {: #create-access-group}
 {: step}
 
 To streamline the process of assigning access to users in your account, you can create an access group. Access groups are a way to organize users and service IDs so that you can easily assign access by adding one or more policies for the entire group. Then, you can add or remove users and service IDs as needed instead of assigning individual access to each user.
+
+A unique name is required to differentiate access groups in the account.
+{: note}
 
 ### Set up your groups
 {: #group_setup}
@@ -57,7 +59,7 @@ To create an access group, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Access Groups**.
 2. Click **Create**.
-3. Enter a name and optional description for your group.
+3. Enter a unique name to identify your access group and an optional description for your group.
 4. Click **Create**.
 
 Next, continue to set up your group by adding users or service IDs:
@@ -126,7 +128,7 @@ To assign a new access policy, complete the following steps:
 2. From the row for the user that you want to assign access, select the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, and click **Assign access**.
 3. Click **Add** for each access group that you want the users to belong to.
 4. (Optional) If you want to assign additional access to Cloud Foundry roles, classic infrastructure permissions, individual IAM services, or account management services, expand the Assign users additional access section.
-5. Select any combination of roles or permissions to define the scope of access, and click **Add**. For more information, see [Cloud IAM roles](/docs/account?topic=account-userroles#iamusermanrol).
+5. Select any combination of roles or permissions to define the scope of access, and click **Add**. For more information, see [IAM roles](/docs/account?topic=account-userroles#iamusermanrol).
 7. Click **Assign** to assign all added access to the selected user. 
     
 Assign the viewer role or higher to the resource group that contains the resource to ensure that the user can access the resource from their list of resources.
