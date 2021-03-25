@@ -16,7 +16,7 @@ subcollection: account
 {:note: .note}
 {:external: target="_blank" .external}
 
-# Enabling EU and HIPAA supported settings
+# Enabling EU supported, Financial Services Validated, and HIPAA supported settings
 {: #eu-hipaa-supported}
 
 If you're the account owner, you can enable your {{site.data.keyword.cloud}} account to be EU supported, Financial Services Validated designated, and HIPAA supported. You can enable the EU Supported setting, for example, if you use resources to process personal data for European citizens. You can enable the Financial Services Validated setting to include and manage regulated financial services information. And, you can enable the HIPAA Supported setting if you plan to include Protected Health Information (PHI) in HIPAA-enabled services.
