@@ -82,7 +82,7 @@ First, create an access group to streamline the task of assigning access to mult
 
 1. Click **Manage** > **Access (IAM)**, and select **Access groups**.
 2. Click **Create**.
-3. Enter a name and optional description for your group, and click **Create**.
+3. Enter a unique name to identify your access group, an optional description, and click **Create**.
 
 Next, assign a policy to the group: 
 
