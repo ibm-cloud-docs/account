@@ -26,7 +26,7 @@ By default, all members of an account can create service IDs. However, access ca
 {:shortdesc}
 
 
-## Enabling the restriction to create service IDs
+## Enabling the restriction
 {: #enable-restrict-create-service-id}
 
 To turn on the setting to restrict users from creating service IDs, you must have the following assigned access:
