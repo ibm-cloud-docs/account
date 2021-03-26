@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-03-25"
+lastupdated: "2021-03-26"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -224,7 +224,6 @@ Review the available platform and service roles available and the actions mapped
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-| Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
 {: caption="Table 5. Platform roles - App Configuration" caption-side="top"}
 {: #platform-roles-table5}
@@ -235,9 +234,9 @@ Review the available platform and service roles available and the actions mapped
 
 | Role | Description |
 | ----- | :----- |
+| Config Operator | As a Config Operator, you can toggle the feature state. |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 5. Service roles - App Configuration" caption-side="top"}
@@ -249,19 +248,26 @@ Review the available platform and service roles available and the actions mapped
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `apprapp.dashboard.view` | Dashboard view | Administrator, Editor, Manager, Operator, Reader, Writer |
-| `apprapp.apps.list` | List Applications | Administrator, Editor, Manager, Operator, Reader, Service Configuration Reader, Viewer, Writer |
-| `apprapp.apps.create` | Create applications | Administrator, Editor, Manager, Operator, Reader, Service Configuration Reader, Viewer, Writer |
-| `apprapp.apps.update` | Update applications | Administrator, Editor, Manager, Operator, Reader, Service Configuration Reader, Viewer, Writer |
-| `apprapp.apps.delete` | Delete apps  | Manager, Reader, Service Configuration Reader, Writer |
-| `apprapp.features.list` | List features | Manager, Reader, Service Configuration Reader, Writer |
-| `apprapp.features.create` | Create Features | Manager, Reader, Service Configuration Reader, Writer |
-| `apprapp.features.update` | Update features | Manager, Reader, Service Configuration Reader, Writer |
-| `apprapp.features.delete` | Delete features | Manager, Reader, Service Configuration Reader, Writer |
-| `apprapp.segments.list` | List segments | Manager, Reader, Service Configuration Reader, Writer |
-| `apprapp.segments.update` | Update segments | Manager, Reader, Service Configuration Reader, Writer |
-| `apprapp.segments.create` | Create segments | Manager, Reader, Service Configuration Reader, Writer |
-| `apprapp.segments.delete` | Delete segments | Manager, Reader, Service Configuration Reader, Writer |
+| `apprapp.dashboard.view` | Dashboard view | Administrator, Config Operator, Editor, Manager, Operator, Reader, Writer |
+| `apprapp.collections.list` | List collections | Administrator, Config Operator, Manager, Reader, Writer |
+| `apprapp.collections.create` | Create collections | Administrator, Manager |
+| `apprapp.collections.update` | Update collections | Administrator, Manager |
+| `apprapp.collections.delete` | Delete collections  | Administrator, Manager |
+| `apprapp.features.list` | List features | Administrator, Config Operator, Manager, Reader, Writer |
+| `apprapp.features.create` | Create Features | Administrator, Manager |
+| `apprapp.features.update` | Update features | Administrator, Manager |
+| `apprapp.features.delete` | Delete features | Administrator, Manager |
+| `apprapp.segments.list` | List segments | Administrator, Config Operator, Manager, Reader, Writer |
+| `apprapp.segments.update` | Update segments | Administrator, Manager, Writer |
+| `apprapp.segments.create` | Create segments | Administrator, Manager, Writer |
+| `apprapp.segments.delete` | Delete segments | Administrator, Manager, Writer |
+| `apprapp.features.patch` | Patch features | Writer |
+| `apprapp.features.toggle` | Toggle feature | Administrator, Config Operator, Manager, Writer |
+| `apprapp.properties.list` | List properties | Config Operator, Manager, Reader, Writer |
+| `apprapp.properties.update` | Update properties | Administrator, Manager |
+| `apprapp.properties.create` | Create properties | Administrator, Manager |
+| `apprapp.properties.delete` | Delete properties | Administrator, Manager |
+| `apprapp.properties.patch` | Patch properties | Writer |
 {: caption="Table 5. Service actions - App Configuration" caption-side="top"}
 {: #actions-table5}
 {: tab-title="Actions"}
