@@ -1,6 +1,8 @@
 {
 	"create-account": [
 	  "creating an account",
+	  "account",
+	  "account creation",
 	  "lite account to test",
 	  "creating a cloud account",
 	  "sign up for a account",
@@ -666,6 +668,8 @@
 	  "change the language setting for my account",
 	  "change the language from spanish to english",
 	  "change language without changing browser settings",
+	  "page keeps displaying in spanish. I need it in english",
+	  "switch the interface in english",
 	  "change the language of IBM cloud web console",
 	  "language setting",
 	  "How to change language for cloud.ibm.com",
@@ -1713,6 +1717,7 @@
 	  "what kind of account I have",
 	  "what kind of account is this",
 	  "what is Account ID",
+	  "what is my accountid",
 	  "What type of account do i have",
 	  "what's the type of my account",
 	  "Where can I enter my account",
