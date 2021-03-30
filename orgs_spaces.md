@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-03-16"
+lastupdated: "2021-03-30"
 
 keywords: account, add orgs, add spaces, cloud foundry orgs
 
@@ -15,11 +15,17 @@ subcollection: account
 {:screen: .screen}
 {:tip: .tip}
 {:note: .note}
+{:external: target="_blank" .external}
 {:help: data-hd-content-type='help'} 
 {:support: data-reuse='support'}
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
 {:api: .ph data-hd-interface='api'}
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
+{:curl: .ph data-hd-programlang='curl'}
+{:go: .ph data-hd-programlang='go'}
+{:javascript: .ph data-hd-programlang='javascript'}
 
 # Creating orgs and spaces
 {: #orgsspacesusers}
@@ -154,3 +160,48 @@ You can also create spaces by using the {{site.data.keyword.Bluemix}} Command Li
    ibmcloud account create-space SPACE [-o ORG] [-q SPACE_QUOTA]
    ```
    {:codeblock}
+   
+## Creating orgs by using the Cloud Foundry API
+{: #create-org-api}
+{: api}
+
+You can create an organization by calling the Cloud Foundry API. For detailed information about how to use it, see [Create an Organization](http://v3-apidocs.cloudfoundry.org/version/3.97.0/index.html#create-an-organization){: external}. Check the following sample request, where `my-organization` is the name of your organization:
+
+```
+curl "https://api.example.org/v3/organizations" \
+  -X POST \
+  -H "Authorization: bearer [token]" \
+  -H "Content-Type: application/json" \
+  -d '{ "name": "my-organization" }'
+```
+{: codeblock}
+{: curl}
+
+## Creating spaces by using the Cloud Foundry API
+{: #create-space-api}
+{: api}
+
+You can also create spaces by calling the Cloud Foundry API. For detailed information about how to use it, see [Create a Space](http://v3-apidocs.cloudfoundry.org/version/3.97.0/index.html#create-a-space){: external}. Check the following sample request, where `my-space`is the name of your space:
+
+```
+curl "https://api.example.org/v3/spaces" \
+  -X POST \
+  -H "Authorization: bearer [token]" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "my-space",
+    "relationships": {
+      "organization": {
+        "data": {
+          "guid": "[org-guid]"
+        }
+      }
+    }
+  }'
+
+```
+{: codeblock}
+{: curl}
+
+
+
