@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-03-19"
+lastupdated: "2021-03-25"
 
 keywords: update orgs, update spaces, quotas, Cloud Foundry orgs, domains
 
@@ -14,6 +14,7 @@ subcollection: account
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:note: .note}
+{:external: target="_blank" .external}
 {:screen: .screen}
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
@@ -118,5 +119,37 @@ This operation can be done only by an org manager.
 
 For more information on managing accounts, users in an account by using the CLI, and the org, space, and roles of public Cloud Foundry environments, visit [Managing accounts, users, and Cloud Foundry orgs](https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_account).
 
+## Updating orgs and spaces by using the Cloud Foundry API
+{: #orgupdates-api}
+{: api}
 
+### Updating organizations
+{: #update-org-api}
+{: api}
+
+You can update organizations by calling the Cloud Foundry API. For detailed information about how to use it, see [Update an Organization](http://v3-apidocs.cloudfoundry.org/version/3.97.0/index.html#update-an-organization){: external}. Check the following sample request:
+
+```
+curl "https://api.example.org/v3/organizations/[guid]" \
+  -X PATCH \
+  -H "Authorization: bearer [token]" \
+  -H "Content-Type: application/json" \
+  -d '{ "name": "my-organization" }'
+```
+{: codeblock}
+{: curl}
+    
+### Deleting spaces
+{: #delete-space-api}
+{: api}
+
+You can delete spaces by calling the Cloud Foundry API. For detailed information about how to use it, see [Delete a space](http://v3-apidocs.cloudfoundry.org/version/3.97.0/index.html#delete-a-space){: external}. Check the following sample request:
+
+```
+curl "https://api.example.org/v3/spaces/[guid]" \
+  -X DELETE \
+  -H "Authorization: bearer [token]"
+```
+{: codeblock}
+{: curl}
     
