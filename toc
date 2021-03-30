@@ -26,6 +26,8 @@ Managing your account, resources, and access
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
+    iam-login_fedid.md
+
     {: .topicgroup}
     Securing your account
         iam-whatis.md
@@ -44,7 +46,6 @@ Managing your account, resources, and access
             iam-totp.md
             iam-external_mfa.md
             iam-securityquestions.md
-            iam-login_fedid.md
             iam-idp-integration.md
             iam-connect_dedicated_id.md
             iam-saml-federation.md
