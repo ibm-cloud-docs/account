@@ -154,49 +154,8 @@ if __name__ == "__main__":
 {: codeblock}
 {: python}
 
-```ruby
-# List all event logs.
-#
-# This assumes the SoftLayer API Ruby client
-# <https://github.com/softlayer/softlayer-ruby> is installed.
-#
-# Important manual pages:
-# http://sldn.softlayer.com/article/ruby
-# http://sldn.softlayer.com/reference/services/SoftLayer_Event_Log
-# http://sldn.softlayer.com/reference/services/SoftLayer_Event_Log/getAllObjects
-#
-# @license <http://sldn.softlayer.com/article/License>
-# @author SoftLayer Technologies, Inc. <sldn@softlayer.com>
-require 'softlayer_api'
-require 'pp'
-
-# Your SoftLayer API username and key.
-USERNAME = 'set me'
-API_KEY = 'set me'
-
-# Creating a SoftLayer API client object
-client = SoftLayer::Client.new(username: USERNAME, api_key: API_KEY)
-event_log_service = client['SoftLayer_Event_Log']
-
-# Calling the getAllObjects method
-objects = event_log_service.getAllObjects
-pp objects
-
-begin
-  # Calling the getAllObjects method
-  objects = event_log_service.getAllObjects
-  pp objects
-rescue StandardException => exception
-  puts "Unable to get the logs.  #{exception}"
-end
-```
-{: codeblock}
-{: ruby}
-
-This example deals with a few ways of pulling data from `SoftLayer_Event_Log`. There can ben quite a few Logs here, so it is recommended to use a filter, like the `recentLogs` function, to limit how far back you search for Events. See 
+This example deals with a few ways of pulling data from `SoftLayer_Event_Log`. There can ben quite a few Logs here, so it is recommended to use a filter, like the `recentLogs` function, to limit how far back you search for Events. 
 {: python}
-
-
 
 For more information about the {{site.data.keyword.slapi_short}} and virtual server APIs, see the following resources in the {{site.data.keyword.sldn_full}}:
 * [{{site.data.keyword.slapi_short}} Overview ![External link icon](../icons/launch-glyph.svg "External link icon")](https://sldn.softlayer.com/reference/softlayerapi/){: new_window}
