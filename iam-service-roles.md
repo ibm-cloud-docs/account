@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-03-30"
+lastupdated: "2021-03-31"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3017,30 +3017,30 @@ Review the available platform and service roles available and the actions mapped
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `imfpush.dashboard.view` |  | Administrator, Editor |
-| `imfpush.application.list` |  | Manager, Reader, Writer |
-| `imfpush.application.delete` |  | Manager |
-| `imfpush.device.list` |  | Manager, Reader, Writer |
-| `imfpush.application.update` |  | Manager |
-| `imfpush.device.create` |  | Manager, Writer |
-| `imfpush.device.update` |  | Manager, Writer |
-| `imfpush.device.delete` |  | Manager |
-| `imfpush.messages.send` |  | Manager, Writer |
-| `imfpush.messages.send` |  | Manager, Writer |
-| `imfpush.messages.delete` |  | Manager |
-| `imfpush.messages.list` |  | Manager, Reader, Writer |
-| `imfpush.subscriptions.create` |  | Manager, Writer |
-| `imfpush.subscriptions.delete` |  | Manager |
-| `imfpush.subscriptions.list` |  | Manager, Reader, Writer |
-| `imfpush.tags.create` |  | Manager, Writer |
-| `imfpush.tags.update` |  | Manager, Writer |
-| `imfpush.tags.delete` |  | Manager |
-| `imfpush.tags.list` |  | Manager, Reader, Writer |
-| `imfpush.webhooks.create` |  | Manager, Writer |
-| `imfpush.webhooks.update` |  | Manager, Writer |
-| `imfpush.webhooks.delete` |  | Manager |
-| `imfpush.webhooks.list` |  | Manager, Reader, Writer |
-| `imfpush.status.update` |  | Manager, Writer |
+| `imfpush.dashboard.view` | View Dashboard | Administrator, Editor |
+| `imfpush.application.list` | Application list | Manager, Reader, Writer |
+| `imfpush.application.delete` | Application delete | Manager |
+| `imfpush.device.list` | Device list | Manager, Reader, Writer |
+| `imfpush.application.update` | Application update | Manager |
+| `imfpush.device.create` | Device create | Manager, Writer |
+| `imfpush.device.update` | Device update | Manager, Writer |
+| `imfpush.device.delete` | Device delete | Manager |
+| `imfpush.messages.send` | Message send | Manager, Writer |
+| `imfpush.messages.send` | Message bulk send | Manager, Writer |
+| `imfpush.messages.delete` | Message delete | Manager |
+| `imfpush.messages.list` | Message list | Manager, Reader, Writer |
+| `imfpush.subscriptions.create` | Subscription create | Manager, Writer |
+| `imfpush.subscriptions.delete` | Subscription delete | Manager |
+| `imfpush.subscriptions.list` | Subscription list | Manager, Reader, Writer |
+| `imfpush.tags.create` | Tag create | Manager, Writer |
+| `imfpush.tags.update` | Tag update | Manager, Writer |
+| `imfpush.tags.delete` | Tag delete | Manager |
+| `imfpush.tags.list` | Tag list | Manager, Reader, Writer |
+| `imfpush.webhooks.create` | Webhook create | Manager, Writer |
+| `imfpush.webhooks.update` | Webhook update | Manager, Writer |
+| `imfpush.webhooks.delete` | Webhook delete | Manager |
+| `imfpush.webhooks.list` | Webhook list | Manager, Reader, Writer |
+| `imfpush.status.update` | Message delivery status update | Manager, Writer |
 | `imfpush.channels.create` | Channel creation | Manager, Writer |
 | `imfpush.channels.update` | Channel update | Manager, Writer |
 | `imfpush.channels.delete` | Channel delete | Manager |
