@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2020
-lastupdated: "2020-10-27"
+  years: 2019, 2021
+lastupdated: "2021-03-31"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -82,7 +82,7 @@ After you add your product to your catalog, you're ready to publish it to your a
 1. Select **Validate product**. 
 1. Select a cluster. 
 1. Click **Validate** to ensure that your product can be installed successfully. This step is required before you can make it available for users in your account, and the validation can take several minutes. In the Validation summary section, the status is displayed as Validated when the deployment is complete. 
-1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg), and select **Publish to account** to make your prooduct available to all users in your account through your private catalog.
+1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg), and select **Publish to account** to make your product available to all users in your account through your private catalog.
 
 
 ## Adding your product by using the CLI
@@ -90,19 +90,19 @@ After you add your product to your catalog, you're ready to publish it to your a
 
 Complete the following steps to add your software by using the CLI. You can use this task in a CI/CD process.
     
-1. Add software to your private catalog.  
+1. Add software to your private catalog. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#create-offering) for adding software to your private catalog.  
     ```
     ibmcloud catalog offering create --catalog "Name of catalog" --zipurl https://software.url.com.tgz
     ```
     {: codeblock}
     
-1. Add the **Developer Tools** category.  
+1. Add the **Developer Tools** category. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#add-category-offering) for adding a category.  
     ```
     ibmcloud catalog offering add-category --catalog "Name of catalog" --offering "software-offering" --category "Developer Tools"
     ```
     {: codeblock}
     
-1. Validate the software.  
+1. Validate the software. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#validate-offering) for validating the software. 
     
     You need the version locator for your software. To find it, run the **`ibmcloud catalog offering list --catalog "Name of catalog"`** command, and search for the particular version of your software. Also, use the cluster that you created when you set up the required resources. 
     {: important}
@@ -112,13 +112,13 @@ Complete the following steps to add your software by using the CLI. You can use 
     ```
     {: codeblock}
     
-    Deploying the software can take a few minutes. You can check the validation status by querying the product validation state. The validation is complete when the state is Valid. 
+    Deploying the software can take a few minutes. You can check the validation status by querying the product validation state. The validation is complete when the state is Valid. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#validate-status-offering) for validation status.
     ```
     ibmcloud catalog offering validate-status --version-locator <LOCATOR>
     ```
     {: codeblock}
     
-1. Publish your software to make it available to users in your account. 
+1. Publish your software to make it available to users in your account. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#publish-offering-to-account) for publishing to your account.
     ```
     ibmcloud catalog offering publish-to-account --version-locator <LOCATOR>
     ```
