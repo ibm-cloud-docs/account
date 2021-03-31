@@ -70,12 +70,16 @@ Managing your account, resources, and access
             iam-userinv.md
             iam-remove-users.md
             iam-serviceid.md
+        
+        {: .topicgroup}
+        Managing login sessions
+            sessions-settings.md
+            sessions-users.md        
 
         {: .topicgroup}
         Administering user settings
             iam-usersetting.md
             iam-update_status.md
-            iam-session-settings.md
             iam-specific_ip.md
             iam-restrict-api.md
             iam-restrict-service-id.md
