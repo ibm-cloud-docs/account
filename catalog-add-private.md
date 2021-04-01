@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-03-31"
+lastupdated: "2021-04-01"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -77,8 +77,9 @@ Complete the following steps to add a product to your catalog:
 ## Publishing your product 
 {: #validating-software}
 
-After you add your product to your catalog, you're ready to publish it to your account. First review the version details and readme and then validate your software. After you verify your product details, complete the following steps to validate it:
+After you add your product to your catalog, you're ready to publish it to your account. Complete the following steps to validate and publish your product:
 
+1. Review the product details by selecting **Configure product**, **Add license**, and **Edit readme**. 
 1. Select **Validate product**. 
 1. Select a cluster. 
 1. Click **Validate** to ensure that your product can be installed successfully. This step is required before you can make it available for users in your account, and the validation can take several minutes. In the Validation summary section, the status is displayed as Validated when the deployment is complete. 
