@@ -43,7 +43,7 @@ You must create an instance of the {{site.data.keyword.at_short}} service in the
 * Creating, updating, or deleting access policies
 * Logging in to {{site.data.keyword.Bluemix_notm}} by using an API key, authorization code, passcode, password, or an API key associated with a service ID
 
-To get started monitoring your user's actions, see [{{site.data.keyword.at_short}}](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-getting-started#getting-started). For more information about each of the event areas that you can track, see [IAM events](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-at_events_iam).
+To get started monitoring your user's actions, see [{{site.data.keyword.at_short}}](/docs/activity-tracker?topic=activity-tracker-getting-started#getting-started). For more information about each of the event areas that you can track, see [IAM events](/docs/activity-tracker?topic=activity-tracker-at_events_iam).
 
 ## Catalog management events
 {: #catalog-management-events}
@@ -59,4 +59,4 @@ You can track the following events:
 `unavailable` indicates when an update is made, but specific details about the update aren't included. 
 {: important}
 
-For more information about each of the event areas that you can track, see [Account management events](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-at_events_acc_mgt).
+For more information about each of the event areas that you can track, see [Account management events](/docs/activity-tracker?topic=activity-tracker-at_events_acc_mgt).
