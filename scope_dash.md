@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2020 
-lastupdated: "2020-11-25"
+  years: 2019, 2021
+lastupdated: "2020-04-02"
 
 keywords: dashboard, widgets display, manage visibility, customize, console, dashboard templates 
 
@@ -74,7 +74,7 @@ You can share dashboards with users in your account to give them access to view 
 ### Adding widgets to your dashboard 
 {: #add-widgets}
 
-Only the user that created the dashboard can edit it. A dashboard includes widgets that are configured to display specific information that is relevant to you and your team. To edit a dashboard, click the Actions icon ![More Actions icon](../icons/action-menu-icon.svg) > **Edit**. From here, you can use the dashboard pane to add and remove widgets, and adjust the scope of your resources. To view a list of the available widgets, see [Dashboard widgets]().
+Only the user that created the dashboard can edit it. A dashboard includes widgets that are configured to display specific information that is relevant to you and your team. To edit a dashboard, click **Edit dashboard**. From here, you can use the dashboard pane to add and remove widgets, and adjust the scope of your resources. To view a list of the available widgets, see [Dashboard widgets](/docs/account?topic=account-custom-dashboard#dashboard-widget).
 
 You can't directly edit the default console dashboard. When you click **Edit** on the default console dashboard, a duplicate version is created that you can edit. You can return to the original default console dashboard by selected the dashboard with the default label. {: note}
 
