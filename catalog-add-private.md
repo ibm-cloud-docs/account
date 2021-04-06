@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-04-01"
+lastupdated: "2021-04-06"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -28,6 +28,12 @@ You can use private catalogs to onboard your own products and centrally manage a
 ## Before you begin
 {: #prereq-create}
 
+* Review the list of supported software:
+  * Helm charts
+  * Terraform templates
+  * OVA images deployed on VMware vCenter Server
+  * Virtual server images with Terraform deployed on VPC infrastructure
+  * Operators deployed on Red Hat OpenShift
 * You need a [Kubernetes cluster](https://cloud.ibm.com/kubernetes/landing){: external} to validate your software.
 * Make sure you're assigned the following roles:
   * Editor role on the catalog management service
