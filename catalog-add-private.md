@@ -46,9 +46,6 @@ You can use private catalogs to onboard your own products and centrally manage a
 * If you're using a secret to add products from a private repository:
   * [Writer service role for Secrets Manager](/docs/secrets-manager?topic=secrets-manager-iam)
   * Additional access for [integrating with other services](/docs/secrets-manager?topic=secrets-manager-integrations).
-  
-  {{site.data.keyword.secrets-manager_full_notm}} is a beta service that is available for evaluation and testing purposes only. Beta services might be unstable or change frequently.
-  {: beta}
 
 ## Creating your private catalog
 {: #create-catalog}
