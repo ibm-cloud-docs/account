@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-03-31"
+lastupdated: "2021-04-07"
 
 keywords: audit log, user access, account log, system events, monitor system events, user access logs
 
@@ -58,6 +58,26 @@ You can use the SoftLayer API to view your audit log. The {{site.data.keyword.sl
 The {{site.data.keyword.slapi_short}} is a Remote Procedure Call system. Each call involves sending data towards an API endpoint and receiving structured data in return. The format used to send and receive data with the {{site.data.keyword.slapi_short}} depends on which implementation of the API you choose. The {{site.data.keyword.slapi_short}} currently uses SOAP, XML-RPC or REST for data transmission.
 
 To programmatically audit system events for classic infrastructure, call the {{site.data.keyword.slapi_short}} as shown in the following example: 
+
+```bash
+https://api.softlayer.com/rest/v3.1/SoftLayer_Event_Log/getAllObjects.json?
+                    resultLimit=0,50&
+                    objectMask=mask[eventName,eventCreateDate,userType]
+
+curl -g -u $SL_USER:$SL_APIKEY 'https://api.softlayer.com/rest/v3.1/SoftLayer_Event_Log/getAllObjects.json?objectMask=mask[eventName,eventCreateDate,userType]&resultLimit=0,50'
+
+The output will look something like this,in this case just the first event in the list:
+
+[
+    {
+        "eventCreateDate": "2021-03-29T14:41:55.444089-06:00",
+        "eventName": "Login Successful",
+        "userType": "CUSTOMER"
+    }
+  ]
+```
+{: codeblock}
+{: curl}
 
 ```python
 import datetime
@@ -153,6 +173,9 @@ if __name__ == "__main__":
 ```
 {: codeblock}
 {: python}
+
+To get all Events logs, use [SoftLayer_Event_Log::getAllObjects()](https://softlayer.github.io/reference/services/SoftLayer_Event_Log/getAllObjects/). In this case just the first 50 events are returned by using pagination limit `resultLimit=0,50`. See [Using Result Limits in the SoftLayer API](https://sldn.softlayer.com/article/using-result-limits-softlayer-api/) for more information. A mask is shown in this example, `mask[eventName,eventCreateDate,userType]`, that restricts other local fields and limits the amount of information returned.
+{: curl}
 
 This example deals with a few ways of pulling data from `SoftLayer_Event_Log`. There can ben quite a few Logs here, so it is recommended to use a filter, like the `recentLogs` function, to limit how far back you search for Events. 
 {: python}
