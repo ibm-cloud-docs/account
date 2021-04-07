@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-03-31"
+lastupdated: "2021-04-07"
 
 keywords: user session, inactivity, sign out, concurrent, login session
 
@@ -30,10 +30,9 @@ To review and end active sessions to help maintain the security of your account,
 ## Before you begin
 {: #work-sessions-access}
 
-If you have the following access, you can update the settings for login sessions:
-
 * Account owners 
-* Administrator role for the IAM Identity service
+* Editor or admin role on all account management services
+* Editor or admin role on IAM identity service
 
 A user can have several different restrictions if they are a member of multiple accounts.
 {: note}
