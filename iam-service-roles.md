@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-04-06"
+lastupdated: "2021-04-07"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -2809,9 +2809,9 @@ Review the available platform and service roles available and the actions mapped
 
 | Role | Description |
 | ----- | :----- |
-| Administrator | Administrator |
-| Editor | Editor |
-| Operator | Operator |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
 {: caption="Table 65. Platform roles - Natural Language Understanding" caption-side="top"}
 {: #platform-roles-table65}
@@ -2822,9 +2822,9 @@ Review the available platform and service roles available and the actions mapped
 
 | Role | Description |
 | ----- | :----- |
-| Manager | Manager |
-| Reader | Reader |
-| Writer | Writer |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 65. Service roles - Natural Language Understanding" caption-side="top"}
 {: #service-roles-table65}
@@ -2839,6 +2839,7 @@ Review the available platform and service roles available and the actions mapped
 | `GET /natural-language-understanding` |  | Manager, Reader, Writer |
 | `POST /natural-language-understanding` |  | Manager, Reader, Writer |
 | `DELETE /natural-language-understanding` |  | Manager, Reader, Writer |
+| `PUT /natural-language-understanding` | PUT /natural-language-understanding | Manager, Reader, Writer |
 {: caption="Table 65. Service actions - Natural Language Understanding" caption-side="top"}
 {: #actions-table65}
 {: tab-title="Actions"}
