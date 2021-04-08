@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-04-07"
+lastupdated: "2021-04-08"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1708,6 +1708,7 @@ Review the available platform and service roles available and the actions mapped
 | `hs-crypto.keyrings.list` | List key rings | Manager, Reader, Reader Plus, VMWare KMIP Manager, Writer |
 | `hs-crypto.secrets.createalias` | Create an alias for a key | Manager, Writer |
 | `hs-crypto.secrets.deletealias` | Delete an alias of a key | Manager, Writer |
+| `hs-crypto.secrets.sync` | Initiate a manual synchronization request to the associated resources of a key. | Manager, Writer |
 {: caption="Table 36. Service actions - Hyper Protect Crypto Services" caption-side="top"}
 {: #actions-table36}
 {: tab-title="Actions"}
