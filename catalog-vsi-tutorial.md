@@ -11,6 +11,7 @@ subcollection: account
 content-type: tutorial
 services: cloud-object-storage, vpc
 account-plan: paid 
+completion-time: 20m
 
 ---
 
@@ -24,16 +25,16 @@ account-plan: paid
 {:external: target="_blank" .external}
 {:step: data-tutorial-type='step'} 
 
-
 # Onboarding a sample virtual server image 
 {: #catalog-vsi-tutorial}
 {: toc-content-type="tutorial"}
 {: toc-services="cloud-object-storage, vpc"} 
+{: toc-completion-time="20m"}
 
-This tutorial walks you through how to onboard a sample virtual server image to a private catalog in your account. By completing this tutorial, you learn how to import a specific version, configure the  deployment details, validate that virtual server image can be installed on a deployment target, and share the virutal server image with users in your account. 
+This tutorial walks you through how to onboard and publish a sample virtual server image to your account. By completing this tutorial, you learn how to create a private catalog, import the sample, validate that it can be installed on a selected deployment target, and make the virtual server image available to users who have access to your account.
 {: shortdesc}
 
-This tutorial uses [sample Terraform code](https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample){: external} to create a virtual server image. As you complete the tutorial, adapt each step to match your product's desired structure. 
+This tutorial uses [sample Terraform code](https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample){: external} as part of the process to onboard a virtual server image. As you complete the tutorial, adapt each step to match your organization's desired goal. 
 
 ## Before you begin
 {: #catalog-vsi-prereqs}
