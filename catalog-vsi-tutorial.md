@@ -117,7 +117,7 @@ To monitor the progress of the validation process, click **View logs**.
 
 After you complete the validation process, you're ready to publish the virtual server image to your account. Click the **Actions** icon ![More Actions icon](../icons/action-menu-icon.svg), and select **Publish to account**.
 
-As a result, the virtual server image is available only to users with access to the `Sample virtual server image` private catalog. 
+As a result, the virtual server image is available only to users who have access to the `Sample virtual server image` private catalog in your account.
 
 
 
