@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-04-08"
+lastupdated: "2021-04-09"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -2157,6 +2157,84 @@ Review the available platform and service roles available and the actions mapped
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
+## IBM Match 360 with Watson
+Review the available platform and service roles available and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `mdm-oc` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 48. Platform roles - IBM Match 360 with Watson" caption-side="top"}
+{: #platform-roles-table48}
+{: tab-title="Platform roles"}
+{: tab-group="mdm-oc"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+
+| Role | Description |
+| ----- | :----- |
+| Configurator Manager | As a Configurator Manager, you can perform manage actions in the Configurator microservice. |
+| Configurator Reader | As a Configurator Reader, you can perform read actions in the Configurator microservice. |
+| Data Engineer | As a Data Engineer you have full access to all microservices. |
+| Data Manager | As a Data Manager, you can perform read, write and manage actions in the Data microservice. |
+| Data Reader | As a Data Reader, you can perform read only actions in the Data microservice. |
+| Data Steward | As a Data Steward, you can add or delete rules from the matching microservice. |
+| Data Writer | As a Data Writer, you can perform read and write actions in the Data microservice. |
+| Entity Viewer | As a Entity Viewer you can perform read actions in both the model and data microservice. |
+| Job Reader | As a Job Reader, you can perform read actions in the Job microservice. |
+| Job Writer | As a Job Writer, you can perform read and write actions in the Job microservice. |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Matching Manager | As a Matching Manager, you can perform read, write and manage actions in the Matching microservice. |
+| Matching Reader | As a Matching Reader, you can perform read actions in the Matching microservice. |
+| Matching Writer | As a Matching Writer, you can perform read and write actions in the Matching microservice. |
+| Model Manager | As a Model Manager, you can perform manage actions in the Model microservice. |
+| Model Reader | As a Model Reader, you can perform read actions in the Model microservice. |
+| Model Writer | As a Model Writer you can perform write actions in the Model microservice. |
+| Pair Analysis Reader | As a Pair Analysis Reader, you can perform read actions in the Pair Analysis microservice. |
+| Pair Analysis Writer | As a Pair Analysis Writer, you can perform read and write actions in the Pair Analysis microservice. |
+| Publisher User | As a Publisher User you can perform manage actions in the data and model service. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 48. Service roles - IBM Match 360 with Watson" caption-side="top"}
+{: #service-roles-table48}
+{: tab-title="Service roles"}
+{: tab-group="mdm-oc"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `mdm-oc.dashboard.view` | View Dashboard | Administrator, Configurator Manager, Configurator Reader, Data Engineer, Data Manager, Data Reader, Data Steward, Data Writer, Editor, Entity Viewer, Job Reader, Job Writer, Manager, Matching Manager, Matching Reader, Matching Writer, Model Manager, Model Reader, Model Writer, Operator, Pair Analysis Reader, Pair Analysis Writer, Publisher User, Reader, Viewer, Writer |
+| `mdm-oc.rest.read` | This service action is used to provide read access to the Operational Cache instance, such as retrieving records and running searches. | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
+| `mdm-oc.rest.write` | This service action is used to provide write access to the Operational Cache instance, such as performing bulk load of records. | Administrator, Manager, Writer |
+| `mdm-oc.rest.manage` | This service action is used to provide manage access to the Operational Cache instance, such as updating the model. | Administrator, Manager |
+| `mdm-oc.data.read` | Read access to the Master Data Management Data microservice. | Administrator, Data Engineer, Data Manager, Data Reader, Data Steward, Data Writer, Editor, Entity Viewer, Manager, Operator, Publisher User, Reader, Viewer, Writer |
+| `mdm-oc.data.write` | Write access to the Master Data Management Data microservice. | Administrator, Data Engineer, Data Manager, Data Steward, Data Writer, Manager, Publisher User, Writer |
+| `mdm-oc.data.manage` | Manage access to the Master Data Management Data microservice. | Administrator, Data Engineer, Data Manager, Manager, Publisher User |
+| `mdm-oc.matching.read` | Read access to the Master Data Management Matching microservice. | Administrator, Data Engineer, Data Steward, Editor, Entity Viewer, Manager, Matching Reader, Operator, Reader, Viewer, Writer |
+| `mdm-oc.matching.write` | Write access to the Master Data Management Matching microservice. | Administrator, Data Engineer, Data Steward, Manager, Matching Reader, Matching Writer, Writer |
+| `mdm-oc.matching.manage` | Manage access to the Master Data Management Matching microservice. | Administrator, Data Engineer, Manager, Matching Manager |
+| `mdm-oc.model.read` | Read access to the Master Data Management Model microservice. | Administrator, Data Engineer, Data Steward, Editor, Entity Viewer, Manager, Model Manager, Model Reader, Model Writer, Operator, Publisher User, Reader, Viewer, Writer |
+| `mdm-oc.model.write` | Write access to the Master Data Management Model microservice. | Administrator, Data Engineer, Data Reader, Manager, Model Manager, Model Writer, Publisher User, Writer |
+| `mdm-oc.configurator.read` | Read access to the Master Data Management Configurator microservice. | Administrator, Configurator Manager, Configurator Reader, Data Engineer, Editor, Manager, Operator, Viewer, Writer |
+| `mdm-oc.configurator.manage` | Manage access to the Master Data Management Configurator microservice. | Administrator, Configurator Manager, Data Engineer, Manager |
+| `mdm-oc.pairs-analysis.read` | Read access to the Master Data Management Pair Analysis microservice. | Administrator, Data Engineer, Data Steward, Editor, Entity Viewer, Manager, Operator, Pair Analysis Reader, Pair Analysis Writer, Reader, Viewer, Writer |
+| `mdm-oc.pairs-analysis.write` | Write access to the Master Data Management Pair Analysis microservice. | Administrator, Data Engineer, Manager, Pair Analysis Writer, Writer |
+| `mdm-oc.job.write` | Write access to the Master Data Management Job microservice. | Administrator, Data Engineer, Job Writer, Manager, Writer |
+| `mdm-oc.job.read` | Read access to the Master Data Management Job microservice. | Administrator, Data Engineer, Data Steward, Editor, Entity Viewer, Job Reader, Job Writer, Manager, Operator, Publisher User, Reader, Viewer, Writer |
+| `mdm-oc.model.manage` | Manage access to the Master Data Management Model microservice. | Administrator, Data Engineer, Manager, Model Manager, Publisher User |
+| `mdm-oc.matching.datasteward` | Data Steward access to the Master Data Management. | Data Engineer, Data Steward, Manager |
+{: caption="Table 48. Service actions - IBM Match 360 with Watson" caption-side="top"}
+{: #actions-table48}
+{: tab-title="Actions"}
+{: tab-group="mdm-oc"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+
 ## Identity and Access Management
 Review the available platform and service roles available and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `iam-svcs` for the service name.
 
@@ -2167,8 +2245,8 @@ Review the available platform and service roles available and the actions mapped
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 48. Platform roles - Identity and Access Management" caption-side="top"}
-{: #platform-roles-table48}
+{: caption="Table 49. Platform roles - Identity and Access Management" caption-side="top"}
+{: #platform-roles-table49}
 {: tab-title="Platform roles"}
 {: tab-group="iam-svcs"}
 {: class="simple-tab-table"}
@@ -2178,8 +2256,8 @@ Review the available platform and service roles available and the actions mapped
 | ----- | :----- |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
-{: caption="Table 48. Service roles - Identity and Access Management" caption-side="top"}
-{: #service-roles-table48}
+{: caption="Table 49. Service roles - Identity and Access Management" caption-side="top"}
+{: #service-roles-table49}
 {: tab-title="Service roles"}
 {: tab-group="iam-svcs"}
 {: class="simple-tab-table"}
@@ -2188,8 +2266,8 @@ Review the available platform and service roles available and the actions mapped
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `iam-svcs.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 48. Service actions - Identity and Access Management" caption-side="top"}
-{: #actions-table48}
+{: caption="Table 49. Service actions - Identity and Access Management" caption-side="top"}
+{: #actions-table49}
 {: tab-title="Actions"}
 {: tab-group="iam-svcs"}
 {: class="simple-tab-table"}
@@ -2205,8 +2283,8 @@ Review the available platform and service roles available and the actions mapped
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 49. Platform roles - Image Service for VPC" caption-side="top"}
-{: #platform-roles-table49}
+{: caption="Table 50. Platform roles - Image Service for VPC" caption-side="top"}
+{: #platform-roles-table50}
 {: tab-title="Platform roles"}
 {: tab-group="is.image"}
 {: class="simple-tab-table"}
@@ -2221,8 +2299,8 @@ Review the available platform and service roles available and the actions mapped
 | `is.image.image.delete` | Delete Images | Administrator, Editor |
 | `is.image.image.provision` | Provision Images | Administrator, Editor, Operator |
 | `is.image.image.operate` | Operate on Custom Images | Administrator, Editor, Operator |
-{: caption="Table 49. Service actions - Image Service for VPC" caption-side="top"}
-{: #actions-table49}
+{: caption="Table 50. Service actions - Image Service for VPC" caption-side="top"}
+{: #actions-table50}
 {: tab-title="Actions"}
 {: tab-group="is.image"}
 {: class="simple-tab-table"}
@@ -2237,8 +2315,8 @@ Review the available platform and service roles available and the actions mapped
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 50. Platform roles - Internet of Things Platform" caption-side="top"}
-{: #platform-roles-table50}
+{: caption="Table 51. Platform roles - Internet of Things Platform" caption-side="top"}
+{: #platform-roles-table51}
 {: tab-title="Platform roles"}
 {: tab-group="iotf-service"}
 {: class="simple-tab-table"}
@@ -2247,8 +2325,8 @@ Review the available platform and service roles available and the actions mapped
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `iotf-service.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 50. Service actions - Internet of Things Platform" caption-side="top"}
-{: #actions-table50}
+{: caption="Table 51. Service actions - Internet of Things Platform" caption-side="top"}
+{: #actions-table51}
 {: tab-title="Actions"}
 {: tab-group="iotf-service"}
 {: class="simple-tab-table"}
@@ -2264,8 +2342,8 @@ Review the available platform and service roles available and the actions mapped
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 51. Service roles - Internet Services" caption-side="top"}
-{: #service-roles-table51}
+{: caption="Table 52. Service roles - Internet Services" caption-side="top"}
+{: #service-roles-table52}
 {: tab-title="Service roles"}
 {: tab-group="internet-svcs"}
 {: class="simple-tab-table"}
@@ -2285,8 +2363,8 @@ Review the available platform and service roles available and the actions mapped
 | `internet-svcs.performance.read` | View all Performance settings but can't modify them. | Manager, Reader, Service Configuration Reader, Writer |
 | `internet-svcs.performance.update` | Modify all Performance settings but cannot create or delete. | Manager, Writer |
 | `internet-svcs.performance.manage` | View, Modify, Create, and Delete all Performance settings. | Manager |
-{: caption="Table 51. Service actions - Internet Services" caption-side="top"}
-{: #actions-table51}
+{: caption="Table 52. Service actions - Internet Services" caption-side="top"}
+{: #actions-table52}
 {: tab-title="Actions"}
 {: tab-group="internet-svcs"}
 {: class="simple-tab-table"}
@@ -2304,8 +2382,8 @@ Review the available platform and service roles available and the actions mapped
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 52. Service roles - Key Protect" caption-side="top"}
-{: #service-roles-table52}
+{: caption="Table 53. Service roles - Key Protect" caption-side="top"}
+{: #service-roles-table53}
 {: tab-title="Service roles"}
 {: tab-group="kms"}
 {: class="simple-tab-table"}
@@ -2357,8 +2435,8 @@ Review the available platform and service roles available and the actions mapped
 | `kms.keyrings.delete` | Delete a key ring in the instance. | Manager |
 | `kms.secrets.purge` | Purge an encryption key. | KeyPurge |
 | `kms.secrets.patch` | Patch attributes of an encryption key. | Manager |
-{: caption="Table 52. Service actions - Key Protect" caption-side="top"}
-{: #actions-table52}
+{: caption="Table 53. Service actions - Key Protect" caption-side="top"}
+{: #actions-table53}
 {: tab-title="Actions"}
 {: tab-group="kms"}
 {: class="simple-tab-table"}
@@ -2373,8 +2451,8 @@ Review the available platform and service roles available and the actions mapped
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 53. Platform roles - Knowledge Studio" caption-side="top"}
-{: #platform-roles-table53}
+{: caption="Table 54. Platform roles - Knowledge Studio" caption-side="top"}
+{: #platform-roles-table54}
 {: tab-title="Platform roles"}
 {: tab-group="knowledge-studio"}
 {: class="simple-tab-table"}
@@ -2386,8 +2464,8 @@ Review the available platform and service roles available and the actions mapped
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 53. Service roles - Knowledge Studio" caption-side="top"}
-{: #service-roles-table53}
+{: caption="Table 54. Service roles - Knowledge Studio" caption-side="top"}
+{: #service-roles-table54}
 {: tab-title="Service roles"}
 {: tab-group="knowledge-studio"}
 {: class="simple-tab-table"}
@@ -2396,8 +2474,8 @@ Review the available platform and service roles available and the actions mapped
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `knowledge-studio.dashboard.view` |  | Administrator, Editor, Manager, Reader, Viewer, Writer |
-{: caption="Table 53. Service actions - Knowledge Studio" caption-side="top"}
-{: #actions-table53}
+{: caption="Table 54. Service actions - Knowledge Studio" caption-side="top"}
+{: #actions-table54}
 {: tab-title="Actions"}
 {: tab-group="knowledge-studio"}
 {: class="simple-tab-table"}
@@ -2413,8 +2491,8 @@ Review the available platform and service roles available and the actions mapped
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 54. Platform roles - Kubernetes Service" caption-side="top"}
-{: #platform-roles-table54}
+{: caption="Table 55. Platform roles - Kubernetes Service" caption-side="top"}
+{: #platform-roles-table55}
 {: tab-title="Platform roles"}
 {: tab-group="containers-kubernetes"}
 {: class="simple-tab-table"}
@@ -2426,8 +2504,8 @@ Review the available platform and service roles available and the actions mapped
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 54. Service roles - Kubernetes Service" caption-side="top"}
-{: #service-roles-table54}
+{: caption="Table 55. Service roles - Kubernetes Service" caption-side="top"}
+{: #service-roles-table55}
 {: tab-title="Service roles"}
 {: tab-group="containers-kubernetes"}
 {: class="simple-tab-table"}
@@ -2442,8 +2520,8 @@ Review the available platform and service roles available and the actions mapped
 | `containers-kubernetes.kube.read` | Users get read access to most Kubernetes resources in the namespace, but not to certain resources like roles, role bindings, or secrets. Corresponds to the RBAC view cluster role, which can be scoped to a namespace. | Reader |
 | `containers-kubernetes.kube.write` | Users get read and write access to most Kubernetes resources in the namespace, but not to certain resources like roles or role bindings. Corresponds to the RBAC edit cluster role, which can be scoped to a namespace. | Writer |
 | `containers-kubernetes.kube.manage` | When scoped to one namespace: Users can read and write to all Kubernetes resources in the namespace, but not to objects that apply across namespaces, the namespace resource quota, or the namespace itself. Corresponds to the RBAC admin cluster role to that namespace. When scoped to all namespaces in the cluster (by leaving the previous namespace field empty): Users can read and write to all Kubernetes resources in all namespaces in the cluster and work with objects that apply across namespaces, like top pods, top nodes, or creating an Ingress resource to make apps publicly available. Corresponds to the RBAC cluster-admin cluster role. | Manager |
-{: caption="Table 54. Service actions - Kubernetes Service" caption-side="top"}
-{: #actions-table54}
+{: caption="Table 55. Service actions - Kubernetes Service" caption-side="top"}
+{: #actions-table55}
 {: tab-title="Actions"}
 {: tab-group="containers-kubernetes"}
 {: class="simple-tab-table"}
@@ -2458,8 +2536,8 @@ Review the available platform and service roles available and the actions mapped
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 55. Service roles - Language Translator" caption-side="top"}
-{: #service-roles-table55}
+{: caption="Table 56. Service roles - Language Translator" caption-side="top"}
+{: #service-roles-table56}
 {: tab-title="Service roles"}
 {: tab-group="language-translator"}
 {: class="simple-tab-table"}
@@ -2470,8 +2548,8 @@ Review the available platform and service roles available and the actions mapped
 | `GET /language-translator` |  | Manager, Reader, Writer |
 | `POST /language-translator` |  | Manager, Reader, Writer |
 | `DELETE /language-translator` |  | Manager, Writer |
-{: caption="Table 55. Service actions - Language Translator" caption-side="top"}
-{: #actions-table55}
+{: caption="Table 56. Service actions - Language Translator" caption-side="top"}
+{: #actions-table56}
 {: tab-title="Actions"}
 {: tab-group="language-translator"}
 {: class="simple-tab-table"}
@@ -2485,8 +2563,8 @@ Review the available platform and service roles available and the actions mapped
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 {: row-headers}
-{: caption="Table 56. Platform roles - License and Entitlement" caption-side="top"}
-{: #platform-roles-table56}
+{: caption="Table 57. Platform roles - License and Entitlement" caption-side="top"}
+{: #platform-roles-table57}
 {: tab-title="Platform roles"}
 {: tab-group="entitlement"}
 {: class="simple-tab-table"}
@@ -2496,8 +2574,8 @@ Review the available platform and service roles available and the actions mapped
 | ----- | :----- | :----- |
 | `entitlement.entitlement.write` |  | Administrator, Editor |
 | `entitlement.entitlement.write-admin` |  | Administrator |
-{: caption="Table 56. Service actions - License and Entitlement" caption-side="top"}
-{: #actions-table56}
+{: caption="Table 57. Service actions - License and Entitlement" caption-side="top"}
+{: #actions-table57}
 {: tab-title="Actions"}
 {: tab-group="entitlement"}
 {: class="simple-tab-table"}
@@ -2512,8 +2590,8 @@ Review the available platform and service roles available and the actions mapped
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 57. Platform roles - Load Balancer for VPC" caption-side="top"}
-{: #platform-roles-table57}
+{: caption="Table 58. Platform roles - Load Balancer for VPC" caption-side="top"}
+{: #platform-roles-table58}
 {: tab-title="Platform roles"}
 {: tab-group="is.load-balancer"}
 {: class="simple-tab-table"}
@@ -2523,8 +2601,8 @@ Review the available platform and service roles available and the actions mapped
 | ----- | :----- | :----- |
 | `is.load-balancer.load-balancer.view` |  | Administrator, Editor, Viewer |
 | `is.load-balancer.load-balancer.manage` |  | Administrator, Editor |
-{: caption="Table 57. Service actions - Load Balancer for VPC" caption-side="top"}
-{: #actions-table57}
+{: caption="Table 58. Service actions - Load Balancer for VPC" caption-side="top"}
+{: #actions-table58}
 {: tab-title="Actions"}
 {: tab-group="is.load-balancer"}
 {: class="simple-tab-table"}
@@ -2538,8 +2616,8 @@ Review the available platform and service roles available and the actions mapped
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 {: row-headers}
-{: caption="Table 58. Platform roles - Machine Learning" caption-side="top"}
-{: #platform-roles-table58}
+{: caption="Table 59. Platform roles - Machine Learning" caption-side="top"}
+{: #platform-roles-table59}
 {: tab-title="Platform roles"}
 {: tab-group="pm-20"}
 {: class="simple-tab-table"}
@@ -2550,8 +2628,8 @@ Review the available platform and service roles available and the actions mapped
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Writer | As a writer, you can perform all actions on the WML instance this role is being assigned. |
 {: row-headers}
-{: caption="Table 58. Service roles - Machine Learning" caption-side="top"}
-{: #service-roles-table58}
+{: caption="Table 59. Service roles - Machine Learning" caption-side="top"}
+{: #service-roles-table59}
 {: tab-title="Service roles"}
 {: tab-group="pm-20"}
 {: class="simple-tab-table"}
@@ -2561,8 +2639,8 @@ Review the available platform and service roles available and the actions mapped
 | ----- | :----- | :----- |
 | `pm-20.instances.admin` |  | Administrator |
 | `pm-20.instances.write` |  | Editor, Manager, Writer |
-{: caption="Table 58. Service actions - Machine Learning" caption-side="top"}
-{: #actions-table58}
+{: caption="Table 59. Service actions - Machine Learning" caption-side="top"}
+{: #actions-table59}
 {: tab-title="Actions"}
 {: tab-group="pm-20"}
 {: class="simple-tab-table"}
@@ -2577,8 +2655,8 @@ Review the available platform and service roles available and the actions mapped
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 59. Platform roles - Mass Data Migration" caption-side="top"}
-{: #platform-roles-table59}
+{: caption="Table 60. Platform roles - Mass Data Migration" caption-side="top"}
+{: #platform-roles-table60}
 {: tab-title="Platform roles"}
 {: tab-group="mass-data-migration"}
 {: class="simple-tab-table"}
@@ -2589,8 +2667,8 @@ Review the available platform and service roles available and the actions mapped
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 59. Service roles - Mass Data Migration" caption-side="top"}
-{: #service-roles-table59}
+{: caption="Table 60. Service roles - Mass Data Migration" caption-side="top"}
+{: #service-roles-table60}
 {: tab-title="Service roles"}
 {: tab-group="mass-data-migration"}
 {: class="simple-tab-table"}
@@ -2600,88 +2678,10 @@ Review the available platform and service roles available and the actions mapped
 | ----- | :----- | :----- |
 | `mass-data-migration.dashboard.view` |  | Administrator, Editor, Operator |
 | `mass-data-migration.order.place` | Can place order | Manager, Writer |
-{: caption="Table 59. Service actions - Mass Data Migration" caption-side="top"}
-{: #actions-table59}
-{: tab-title="Actions"}
-{: tab-group="mass-data-migration"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-
-## Master Data Management
-Review the available platform and service roles available and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `mdm-oc` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-| Viewer | As a viewer, you can view service instances, but you can't modify them. |
-{: row-headers}
-{: caption="Table 60. Platform roles - Master Data Management" caption-side="top"}
-{: #platform-roles-table60}
-{: tab-title="Platform roles"}
-{: tab-group="mdm-oc"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-
-| Role | Description |
-| ----- | :----- |
-| Configurator Manager | As a Configurator Manager, you can perform manage actions in the Configurator microservice. |
-| Configurator Reader | As a Configurator Reader, you can perform read actions in the Configurator microservice. |
-| Data Engineer | As a Data Engineer you have full access to all microservices. |
-| Data Manager | As a Data Manager, you can perform read, write and manage actions in the Data microservice. |
-| Data Reader | As a Data Reader, you can perform read only actions in the Data microservice. |
-| Data Steward | As a Data Steward, you can add or delete rules from the matching microservice. |
-| Data Writer | As a Data Writer, you can perform read and write actions in the Data microservice. |
-| Entity Viewer | As a Entity Viewer you can perform read actions in both the model and data microservice. |
-| Job Reader | As a Job Reader, you can perform read actions in the Job microservice. |
-| Job Writer | As a Job Writer, you can perform read and write actions in the Job microservice. |
-| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
-| Matching Manager | As a Matching Manager, you can perform read, write and manage actions in the Matching microservice. |
-| Matching Reader | As a Matching Reader, you can perform read actions in the Matching microservice. |
-| Matching Writer | As a Matching Writer, you can perform read and write actions in the Matching microservice. |
-| Model Manager | As a Model Manager, you can perform manage actions in the Model microservice. |
-| Model Reader | As a Model Reader, you can perform read actions in the Model microservice. |
-| Model Writer | As a Model Writer you can perform write actions in the Model microservice. |
-| Pair Analysis Reader | As a Pair Analysis Reader, you can perform read actions in the Pair Analysis microservice. |
-| Pair Analysis Writer | As a Pair Analysis Writer, you can perform read and write actions in the Pair Analysis microservice. |
-| Publisher User | As a Publisher User you can perform manage actions in the data and model service. |
-| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
-{: row-headers}
-{: caption="Table 60. Service roles - Master Data Management" caption-side="top"}
-{: #service-roles-table60}
-{: tab-title="Service roles"}
-{: tab-group="mdm-oc"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `mdm-oc.dashboard.view` | View Dashboard | Administrator, Configurator Manager, Configurator Reader, Data Engineer, Data Manager, Data Reader, Data Steward, Data Writer, Editor, Entity Viewer, Job Reader, Job Writer, Manager, Matching Manager, Matching Reader, Matching Writer, Model Manager, Model Reader, Model Writer, Operator, Pair Analysis Reader, Pair Analysis Writer, Publisher User, Reader, Viewer, Writer |
-| `mdm-oc.rest.read` | This service action is used to provide read access to the Operational Cache instance, such as retrieving records and running searches. | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
-| `mdm-oc.rest.write` | This service action is used to provide write access to the Operational Cache instance, such as performing bulk load of records. | Administrator, Manager, Writer |
-| `mdm-oc.rest.manage` | This service action is used to provide manage access to the Operational Cache instance, such as updating the model. | Administrator, Manager |
-| `mdm-oc.data.read` | Read access to the Master Data Management Data microservice. | Administrator, Data Engineer, Data Manager, Data Reader, Data Steward, Data Writer, Editor, Entity Viewer, Manager, Operator, Publisher User, Reader, Viewer, Writer |
-| `mdm-oc.data.write` | Write access to the Master Data Management Data microservice. | Administrator, Data Engineer, Data Manager, Data Steward, Data Writer, Manager, Publisher User, Writer |
-| `mdm-oc.data.manage` | Manage access to the Master Data Management Data microservice. | Administrator, Data Engineer, Data Manager, Manager, Publisher User |
-| `mdm-oc.matching.read` | Read access to the Master Data Management Matching microservice. | Administrator, Data Engineer, Data Steward, Editor, Entity Viewer, Manager, Matching Reader, Operator, Reader, Viewer, Writer |
-| `mdm-oc.matching.write` | Write access to the Master Data Management Matching microservice. | Administrator, Data Engineer, Data Steward, Manager, Matching Reader, Matching Writer, Writer |
-| `mdm-oc.matching.manage` | Manage access to the Master Data Management Matching microservice. | Administrator, Data Engineer, Manager, Matching Manager |
-| `mdm-oc.model.read` | Read access to the Master Data Management Model microservice. | Administrator, Data Engineer, Data Steward, Editor, Entity Viewer, Manager, Model Manager, Model Reader, Model Writer, Operator, Publisher User, Reader, Viewer, Writer |
-| `mdm-oc.model.write` | Write access to the Master Data Management Model microservice. | Administrator, Data Engineer, Data Reader, Manager, Model Manager, Model Writer, Publisher User, Writer |
-| `mdm-oc.configurator.read` | Read access to the Master Data Management Configurator microservice. | Administrator, Configurator Manager, Configurator Reader, Data Engineer, Editor, Manager, Operator, Viewer, Writer |
-| `mdm-oc.configurator.manage` | Manage access to the Master Data Management Configurator microservice. | Administrator, Configurator Manager, Data Engineer, Manager |
-| `mdm-oc.pairs-analysis.read` | Read access to the Master Data Management Pair Analysis microservice. | Administrator, Data Engineer, Data Steward, Editor, Entity Viewer, Manager, Operator, Pair Analysis Reader, Pair Analysis Writer, Reader, Viewer, Writer |
-| `mdm-oc.pairs-analysis.write` | Write access to the Master Data Management Pair Analysis microservice. | Administrator, Data Engineer, Manager, Pair Analysis Writer, Writer |
-| `mdm-oc.job.write` | Write access to the Master Data Management Job microservice. | Administrator, Data Engineer, Job Writer, Manager, Writer |
-| `mdm-oc.job.read` | Read access to the Master Data Management Job microservice. | Administrator, Data Engineer, Data Steward, Editor, Entity Viewer, Job Reader, Job Writer, Manager, Operator, Publisher User, Reader, Viewer, Writer |
-| `mdm-oc.model.manage` | Manage access to the Master Data Management Model microservice. | Administrator, Data Engineer, Manager, Model Manager, Publisher User |
-| `mdm-oc.matching.datasteward` | Data Steward access to the Master Data Management. | Data Engineer, Data Steward, Manager |
-{: caption="Table 60. Service actions - Master Data Management" caption-side="top"}
+{: caption="Table 60. Service actions - Mass Data Migration" caption-side="top"}
 {: #actions-table60}
 {: tab-title="Actions"}
-{: tab-group="mdm-oc"}
+{: tab-group="mass-data-migration"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
@@ -3991,6 +3991,7 @@ Review the available platform and service roles available and the actions mapped
 | Role | Description |
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
 {: caption="Table 92. Service roles - Transit Gateway" caption-side="top"}
 {: #service-roles-table92}
@@ -4002,6 +4003,7 @@ Review the available platform and service roles available and the actions mapped
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `transit.transit.manage` | Transit service manager | Manager |
+| `transit.config.read` | Configuration Information Point API Access | Service Configuration Reader |
 {: caption="Table 92. Service actions - Transit Gateway" caption-side="top"}
 {: #actions-table92}
 {: tab-title="Actions"}
@@ -4015,6 +4017,7 @@ Review the available platform and service roles available and the actions mapped
 | Role | Description |
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
 {: caption="Table 93. Service roles - Transit Gateway" caption-side="top"}
 {: #service-roles-table93}
@@ -4026,6 +4029,7 @@ Review the available platform and service roles available and the actions mapped
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `transit.transit.manage` | Transit service manager | Manager |
+| `transit.config.read` | Configuration Information Point API Access | Service Configuration Reader |
 {: caption="Table 93. Service actions - Transit Gateway" caption-side="top"}
 {: #actions-table93}
 {: tab-title="Actions"}
