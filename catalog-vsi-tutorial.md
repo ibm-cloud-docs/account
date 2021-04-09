@@ -112,7 +112,7 @@ If users are required to accept any license agreements beyond the {{site.data.ke
 {: #catalog-vsi-public}
 {: step}
 
-By default, the visibility of the virtual server image is private. After you validate it, you can use an API to make the image available for use. For more information, see [Update the visibility of your image](https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample/tree/v1.0#update-the-visibility-of-your-image-patch-api){: external}.
+By default, the visibility of the virtual server image is private. After you validate it and {{site.data.keyword.cloud_notm}} has granted you access to run the command, you can use an API to make the image available for use. For more information, see [Update the visibility of your image](https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample/tree/v1.0#update-the-visibility-of-your-image-patch-api){: external}.
 
 
 
