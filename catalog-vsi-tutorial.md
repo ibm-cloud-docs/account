@@ -97,22 +97,26 @@ If users are required to accept any license agreements beyond the {{site.data.ke
 1. From the Add license tab, click **Add**. 
 2. Enter the name and URL, and click **Update**.
 
-
 ## Validate the virtual server image
 {: #catalog-vsi-validate}
 {: step}
 
 1. In the Configure Schematics workspace section, accept the default value that's displayed in the **Name** field. 
-1. Enter the values for the parameters listed in the Deployment values section.
+1. Enter the values for your subnet ID, SSH key, and security group in the Deployment values section.
 1. Click **Update**.
 2. From the Validation summary panel, select **I have read and agree to the following license agreements**.
 3. Click **Validate**.
 
-## Update the visibility of the virtual server image to public 
-{: #catalog-vsi-public}
+To monitor the progress of the validation process, click **View logs**.
+{: tip}
+
+## Publish the virtual server image  
+{: #catalog-vsi-publish}
 {: step}
 
-By default, the visibility of the virtual server image is private. After you validate it and {{site.data.keyword.cloud_notm}} has granted you access to run the command, you can use an API to make the image available for use. For more information, see [Update the visibility of your image](https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample/tree/v1.0#update-the-visibility-of-your-image-patch-api){: external}.
+After you validate that the virtual server image can be successfully installed on the deployment target, you're ready to publish it to your account. By doing so, the virtual server image is available only to users with access to the `Sample virtual server image` private catalog. 
+
+Click the **Actions** icon ![More Actions icon](../icons/action-menu-icon.svg) > **Publish to account**. 
 
 
 
