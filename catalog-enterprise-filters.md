@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-07-10"
+  years: 2020, 2021
+lastupdated: "2021-04-09"
 
 keywords: catalog, private catalog, catalog management service, public catalog, enterprise account, child account, account group
 
@@ -18,7 +18,7 @@ subcollection: account
 {:important: .important}
 {:external: target="_blank" .external}
 
-# Managing products for an {{site.data.keyword.cloud_notm}} enterprise
+# Customizing the {{site.data.keyword.cloud_notm}} catalog for an enterprise
 {: #catalog-enterprise-restrict}
 
 As the account owner or administrator, you can manage which products in the {{site.data.keyword.cloud}} catalog are available for your enterprise. You can choose to include all products, a set of products, or only certain products. You can also specify what level of the enterprise hierarchy the filters apply to. And, you can further restrict which products are available for a specific account group or account. 

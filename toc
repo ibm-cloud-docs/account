@@ -23,6 +23,10 @@ Managing your account, resources, and access
     enterprise-tutorial.md
     iam-quickstart.md
     tagging-resources-tutorial.md
+
+    {: .topicgroup}
+    Sharing software with users in your account
+        catalog-vsi-tutorial.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -70,11 +74,11 @@ Managing your account, resources, and access
             iam-userinv.md
             iam-remove-users.md
             iam-serviceid.md
-        
+
         {: .topicgroup}
         Managing login sessions
             sessions-settings.md
-            sessions-users.md        
+            sessions-users.md
 
         {: .topicgroup}
         Administering user settings
@@ -162,17 +166,21 @@ Managing your account, resources, and access
         enterprise-settings.md
 
     {: .topicgroup}
-    Centrally managing products with private catalogs
-        catalog-custom-private.md
-        catalog-enterprise-filters.md
-        catalog-audit-logs.md
+    Centrally managing products with catalogs
 
         {: .topicgroup}
-        Managing software in your private catalogs
+        Sharing products
             catalog-add-private.md
+            catalog-custom-private.md
+            catalog-enterprise-filters.md
+
+        {: .topicgroup}
+        Managing catalogs
+            catalog-settings.md
+            catalog-audit-logs.md
             catalog-update-private.md
             catalog-dep-restore.md
-        catalog-settings.md
+
         catalog-access-reqs.md
 
     scope_dash.md

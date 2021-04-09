@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-07-10"
+  years: 2020, 2021
+lastupdated: "2021-04-09"
 
 keywords: catalog, restrict visibility, hide product, restrict by user, filter catalog, private catalog, catalog management service, public catalog
 
@@ -18,7 +18,7 @@ subcollection: account
 {:important: .important}
 {:external: target="_blank" .external}
 
-# Customizing what's available in your private catalogs
+# Customizing the {{site.data.keyword.cloud_notm}} catalog for your account
 {: #restrict-by-user}
 
 Private catalogs provide a way to centrally manage access to products in the {{site.data.keyword.cloud}} catalog and your own catalogs. You can customize your private catalogs to make specific solutions available to users in your account. By doing so, you can ensure that your catalogs are relevant to your business. 
