@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2021
-lastupdated: "2021-03-10"
+lastupdated: "2021-04-13"
 
 keywords: search, find, search for instance, search for resource
 
@@ -21,12 +21,17 @@ subcollection: account
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
 {:api: .ph data-hd-interface='api'}
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:curl: .ph data-hd-programlang='curl'}
+{:go: .ph data-hd-programlang='go'}
 
 
 # Searching for resources
 {: #searching-for-resources}
 
-You can search for resources from anywhere in the {{site.data.keyword.cloud}} console. Enter the resource or tag in the search field from the console menu bar. You can also use the {{site.data.keyword.Bluemix_notm}} command-line interface (CLI) to search across your resources. The CLI searches for distributed applications and service instances across locations and data centers.
+You can search for resources from anywhere in the {{site.data.keyword.cloud}} console. Enter the resource or tag in the search field from the console menu bar. You can also use the {{site.data.keyword.Bluemix_notm}} command-line interface (CLI) to search across your resources. The CLI searches for distributed applications and service instances across locations and data centers. [The Global Search and Tagging - Search API](https://cloud.ibm.com/apidocs/search) supports searching for resources as well. 
 {:shortdesc}
 
 ## Refining your search results
@@ -84,14 +89,14 @@ You can search for the following attributes:
 <dt>`_objectType:`</dt>
 <dd>The object type of the classic infrastructure resource. Allowed values are: `SoftLayer_Virtual_DedicatedHost`, `SoftLayer_Hardware`, `SoftLayer_Network_Application_Delivery_Controller`, `SoftLayer_Network_Subnet_IpAddress`, `SoftLayer_Network_Vlan`, `SoftLayer_Network_Vlan_Firewall`, `SoftLayer_Virtual_Guest`. Requires you to specify `-p classic-infrastructure` parameter. </dd> 
   
-  The usage of `-p classic-infrastructure` for _objectType `SoftLayer_Virtual_DedicatedHost`, `SoftLayer_Network_Vlan_Firewall`, `SoftLayer_Virtual_Guest` and `SoftLayer_Hardware` (for the classic infrastructure bare metal servers only) is deprecated since now they are searcheable as all other not classic infrastructure resources.
+  The usage of `-p classic-infrastructure` for _objectType `SoftLayer_Virtual_DedicatedHost`, `SoftLayer_Network_Vlan_Firewall`, `SoftLayer_Virtual_Guest` and `SoftLayer_Hardware` (for the classic infrastructure bare metal servers only) is deprecated since now they are searchable as all other not classic infrastructure resources.
   </dl>
 
 
 ### Searching for classic infrastructure resources
 To search for classic infrastructure resources, the string must be contained within double quotation marks (") in order for an exact match for the query string to be returned. 
 
-In addition, if you enter a search term that includes a hyphen (-) and you don't surround the string with a double quotation marks ("), the search will not return an exact match. Hyphens within the string are used to break the term into multiple strings.
+In addition, if you enter a search term that includes a hyphen (-) and you don't surround the string with a double quotation mark ("), the search will not return an exact match. Hyphens within the string are used to break the term into multiple strings.
 
 
 ### Search examples
@@ -99,46 +104,151 @@ In addition, if you enter a search term that includes a hyphen (-) and you don't
 
 The following examples can help you search for account resources.
 
-When the `-p classic-infrastucture` parameter is not specified search spans across all resources but classic infrastructure resources with `_objectType` `SoftLayer_Network_Application_Delivery_Controller`, `SoftLayer_Network_Subnet_IpAddress`, `SoftLayer_Network_Vlan` or `SoftLayer_Hardware` (excluding bare metal servers).
+When the `-p classic-infrastucture` parameter is not specified search spans across all resources but classic infrastructure resources with `_objectType` `SoftLayer_Network_Application_Delivery_Controller`, `SoftLayer_Network_Subnet_IpAddress`, or `SoftLayer_Hardware` (excluding bare metal servers).
 
 * To search for all your resources named `ABC`, enter the following command:
 
-    `ibmcloud resource search ‘name:ABC’`
+    ```
+    ibmcloud resource search ‘name:ABC’
+    ```
+    {: codeblock}
 
 * To search for all Cloud Foundry applications whose name starts with `my`, enter the following command:
 
-    `ibmcloud resource search 'name:my* AND type:cf-application'`
+    ```
+    ibmcloud resource search 'name:my* AND type:cf-application'
+    ```
+    {: codeblock}
 
 * To search for all service instances of Message Hub, enter the following command:
 
-    `ibmcloud resource search 'service_name:messagehub'`
+    ```
+    ibmcloud resource search 'service_name:messagehub'
+    ```
+    {: codeblock}
 
 * To search for all resources in either the `a07181ca-f917-4ee6-af22-b2c0c2a2d5d7` Cloud Foundry organization or the `c900d9671b235c00461c5e311a8aeced` resource group in the `us-south` region, enter the following command:
 
-    `ibmcloud resource search (organization_id:a07181ca-f917-4ee6-af22-b2c0c2a2d5d7 OR doc.resource_group_id:c900d9671b235c00461c5e311a8aeced) AND 'region:us-south'`
+    ```
+    ibmcloud resource search (organization_id:a07181ca-f917-4ee6-af22-b2c0c2a2d5d7 OR doc.resource_group_id:c900d9671b235c00461c5e311a8aeced) AND 'region:us-south'
+    ```
+    {: codeblock}
 
 * To search for resources that are not classic infrastructure that were created between 16 May 2020 and 20 May 2020, enter the following command:
 
-    `ibmcloud resource search "creation_date:[2020-05-16T00:00:00Z TO 2020-05-20T00:00:00Z]"`
+    ```
+    ibmcloud resource search "creation_date:[2020-05-16T00:00:00Z TO 2020-05-20T00:00:00Z]"```
+    {: codeblock}
      
 
 * To search for resources that are not classic infrastructure whose name starts with "my", ordered by type, enter the following command:
 
-    `ibmcloud resource search 'name:my*' -s type`
+    ```
+    ibmcloud resource search 'name:my*' -s type
+    ```
+    {: codeblock}
     
 * To search for resources that are not classic infrastructure and have been tagged with `MyTag`, enter the following command:
 
-    `ibmcloud resource search 'tags:MyTag'`
+    ```
+    ibmcloud resource search 'tags:MyTag'
+    ```
+    {: codeblock}
     
 * To search for all classic infrastructure virtual servers whose fully qualified domain name is `MyVM`, enter the following command:
 
-    `ibmcloud resource search “doc.fullyQualifiedDomainName:MyVM AND service_name:virtual-server”`
+    ```
+    ibmcloud resource search “doc.fullyQualifiedDomainName:MyVM AND service_name:virtual-server”
+    ```
+    {: codeblock}
 
 * To search for all classic infrastructure resources that have been tagged with `MyTag`, enter the following command:
 
-    `ibmcloud resource search 'tagReferences.tag.name:MyTag' -p classic-infrastructure`
+    ```
+    ibmcloud resource search 'tagReferences.tag.name:MyTag' -p classic-infrastructure
+    ```
+    {: codeblock}
     
 * To search for all classic infrastructure of type `SoftLayer_Network_Vlan`
 
-    `ibmcloud resource search '_objectType:SoftLayer_Network_Vlan' -p classic-infrastructure`
+    ```
+    ibmcloud resource search '_objectType:SoftLayer_Network_Vlan' -p classic-infrastructure
+    ```
+    {: codeblock}
   
+## Search by using the API
+{: #searching-api}
+{: api}
+
+To search for resources, call [The Global Search and Tagging - Search API](https://cloud.ibm.com/apidocs/search#search). The following example searches for all resources with tag "project:myproject" attached. 
+
+Use the `SearchOptions.Builder` to create a `SearchOptions` object that contains the parameter values for the `search` method.
+{: java}
+
+Instantiate the `SearchOptions` struct and set the fields to provide parameter values for the `Search` method.
+{: go}
+
+```bash
+curl -X POST -H "Authorization: {iam_token}" -H "Accept: application/json" -H "Content-Type: application/json" -d '{"query": "tags:project\\:myproject OR access_tags:project\\:myproject", "fields": ["*"]}' "api.global-search-tagging.cloud.ibm.com/v3/resources/search"
+```
+{: codeblock}
+{: curl}
+
+```java
+SearchOptions searchOptions = new SearchOptions.Builder()
+  .query("GST-sdk-*")
+  .fields(new java.util.ArrayList<String>(java.util.Arrays.asList("*")))
+  .searchCursor(searchCursor)
+  .build();
+
+Response<ScanResult> response = service.search(searchOptions).execute();
+ScanResult scanResult = response.getResult();
+
+System.out.println(scanResult);
+```
+{: codeblock}
+{: java}
+
+```javascript
+const params = {
+  query: 'GST-sdk-*',
+  fields: ['*'],
+  searchCursor: searchCursor,
+};
+
+globalSearchService.search(params)
+  .then(res => {
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err)
+  });
+```
+{: codeblock}
+{: javascript}
+
+```python
+response = global_search_service.search(query='GST-sdk-*',
+                    fields=['*'])
+scan_result = response.get_result()
+
+print(json.dumps(scan_result, indent=2))
+```
+{: codeblock}
+{: python}
+
+```go
+searchOptions := globalSearchService.NewSearchOptions()
+searchOptions.SetLimit(10)
+searchOptions.SetQuery("GST-sdk-*")
+searchOptions.SetFields([]string{"*"})
+
+scanResult, response, err := globalSearchService.Search(searchOptions)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(scanResult, "", "  ")
+fmt.Println(string(b))
+```
+{: codeblock}
+{: go}
