@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2021
-lastupdated: "2021-03-25"
+lastupdated: "2021-04-13"
 
 keywords: access groups, access group, create group, assign access to group
 
@@ -20,6 +20,11 @@ subcollection: account
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
 {:api: .ph data-hd-interface='api'}
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:curl: .ph data-hd-programlang='curl'}
+{:go: .ph data-hd-programlang='go'}
 
 # Setting up access groups
 {: #groups}
@@ -120,13 +125,74 @@ A unique name is required to differentiate access groups in the account.
 {: api}
 
 You can programmatically create access groups by calling the [{{site.data.keyword.iamlong}} (IAM) Access Groups API](https://{DomainName}/apidocs/iam-access-groups#create-access-group){: external} as shown in the following sample request. The example creates an access group for managers in the account:
-```
+
+```bash
 curl -X POST -H "Authorization: {iam_token}" \
 -H "Accept: application/json" \
 -H "Content-Type: application/json" \
 -d '{ "name": "Managers", "description": "Group for managers" }' \
 "{base_url}/groups?account_id={account_id}"
 ```
+{: curl}
+{: codeblock}
+
+```java
+CreateAccessGroupOptions createAccessGroupOptions = new CreateAccessGroupOptions.Builder()
+  .accountId(testAccountId)
+  .name("Managers")
+  .description("Group for managers")
+  .build();
+
+Response<Group> response = service.createAccessGroup(createAccessGroupOptions).execute();
+Group group = response.getResult();
+
+System.out.println(group);
+```
+{: java}
+{: codeblock}
+
+```javascript
+const params = {
+  accountId: testAccountId,
+  name: 'Managers',
+  description: 'Group for managers'
+};
+
+iamAccessGroupsService.createAccessGroup(params)
+  .then(res => {
+    testGroupId = res.result.id;
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err)
+  });
+```
+{: javascript}
+{: codeblock}
+
+```python
+group = iam_access_groups_service.create_access_group(
+  account_id=test_account_id,
+  name='Managers',
+  description='Group for managers'
+).get_result()
+
+print(json.dumps(group, indent=2))
+```
+{: python}
+{: codeblock}
+
+```go
+createAccessGroupOptions := iamAccessGroupsService.NewCreateAccessGroupOptions(testAccountID, "Managers")
+createAccessGroupOptions.SetDescription("Group for managers")
+group, response, err := iamAccessGroupsService.CreateAccessGroup(createAccessGroupOptions)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(group, "", "  ")
+fmt.Println(string(b))
+```
+{: go}
 {: codeblock}
 
 A unique name is required to differentiate access groups in the account.
@@ -169,7 +235,7 @@ ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --ro
 
 You can programmatically assign access to a group by calling the [{{site.data.keyword.iamlong}} (IAM) Policy Management API](https://{DomainName}/apidocs/iam-policy-management#create-policy){: external} as shown in the following sample request. The example assigns an access group `Editor` role for an instance of a service:
 
-```
+```bash
 curl -X POST 'https://iam.cloud.ibm.com/v1/policies' \
 -H 'Authorization: Bearer $TOKEN' \
 -H 'Content-Type: application/json' \
@@ -181,7 +247,7 @@ curl -X POST 'https://iam.cloud.ibm.com/v1/policies' \
       "attributes": [
         {
           "name": "access_group_id",
-          "value": "AccessGroupId-b9820a9e-9cf4-4920-908d-983f1560b128"
+          "value": "exampleAccessGroupId"
         }
       ]
     }'
@@ -212,4 +278,169 @@ curl -X POST 'https://iam.cloud.ibm.com/v1/policies' \
   ]
 }'
 ```
+{: curl}
+{: codeblock}
+
+```java
+SubjectAttribute subjectAttribute = new SubjectAttribute.Builder()
+        .name("access_group_id")
+        .value(exampleAccessGroupId)
+        .build();
+
+PolicySubject policySubjects = new PolicySubject.Builder()
+        .addAttributes(subjectAttribute)
+        .build();
+
+PolicyRole policyRoles = new PolicyRole.Builder()
+        .roleId("crn:v1:bluemix:public:iam::::role:Editor")
+        .build();
+
+ResourceAttribute accountIdResourceAttribute = new ResourceAttribute.Builder()
+        .name("accountId")
+        .value(exampleAccountId)
+        .operator("stringEquals")
+        .build();
+
+ResourceAttribute serviceNameResourceAttribute = new ResourceAttribute.Builder()
+        .name("serviceType")
+        .value("service")
+        .operator("stringEquals")
+        .build();
+
+PolicyResource policyResources = new PolicyResource.Builder()
+        .addAttributes(accountIdResourceAttribute)
+        .addAttributes(serviceNameResourceAttribute)
+        .build();
+
+CreatePolicyOptions options = new CreatePolicyOptions.Builder()
+        .type("access")
+        .subjects(Arrays.asList(policySubjects))
+        .roles(Arrays.asList(policyRoles))
+        .resources(Arrays.asList(policyResources))
+        .build();
+
+Response<Policy> response = service.createPolicy(options).execute();
+Policy policy = response.getResult();
+
+System.out.println(policy);
+```
+{: java}
+{: codeblock}
+
+```javascript
+const policySubjects = [
+  {
+    attributes: [
+      {
+        name: 'access_group_id',
+        value: exampleAccessGroupId,
+      },
+    ],
+  },
+];
+const policyRoles = [
+  {
+    role_id: 'crn:v1:bluemix:public:iam::::role:Editor',
+  },
+];
+const accountIdResourceAttribute = {
+  name: 'accountId',
+  value: exampleAccountId,
+  operator: 'stringEquals',
+};
+const serviceNameResourceAttribute = {
+  name: 'serviceType',
+  value: 'service',
+  operator: 'stringEquals',
+};
+const policyResources = [
+  {
+    attributes: [accountIdResourceAttribute, serviceNameResourceAttribute],
+  },
+];
+const params = {
+  type: 'access',
+  subjects: policySubjects,
+  roles: policyRoles,
+  resources: policyResources,
+};
+
+iamPolicyManagementService.createPolicy(params)
+  .then(res => {
+    examplePolicyId = res.result.id;
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err)
+  });
+```
+{: javascript}
+{: codeblock}
+
+```python
+policy_subjects = PolicySubject(
+  attributes=[SubjectAttribute(name='access_group_id', value=exampleAccessGroupId)])
+policy_roles = PolicyRole(
+  role_id='crn:v1:bluemix:public:iam::::role:Editor')
+account_id_resource_attribute = ResourceAttribute(
+  name='accountId', value=example_account_id)
+service_name_resource_attribute = ResourceAttribute(
+  name='serviceType', value='service')
+policy_resources = PolicyResource(
+  attributes=[account_id_resource_attribute,
+        service_name_resource_attribute]
+
+policy = iam_policy_management_service.create_policy(
+  type='access',
+  subjects=[policy_subjects],
+  roles=[policy_roles],
+  resources=[policy_resources]
+).get_result()
+
+print(json.dumps(policy, indent=2))
+```
+{: python}
+{: codeblock}
+
+```go
+subjectAttribute := &iampolicymanagementv1.SubjectAttribute{
+  Name:  core.StringPtr("access_group_id"),
+  Value: &exampleAccessGroupId,
+}
+policySubjects := &iampolicymanagementv1.PolicySubject{
+  Attributes: []iampolicymanagementv1.SubjectAttribute{*subjectAttribute},
+}
+policyRoles := &iampolicymanagementv1.PolicyRole{
+  RoleID: core.StringPtr("crn:v1:bluemix:public:iam::::role:Editor"),
+}
+accountIDResourceAttribute := &iampolicymanagementv1.ResourceAttribute{
+  Name:     core.StringPtr("accountId"),
+  Value:    core.StringPtr(exampleAccountID),
+  Operator: core.StringPtr("stringEquals"),
+}
+serviceNameResourceAttribute := &iampolicymanagementv1.ResourceAttribute{
+  Name:     core.StringPtr("serviceType"),
+  Value:    core.StringPtr("service"),
+  Operator: core.StringPtr("stringEquals"),
+}
+policyResources := &iampolicymanagementv1.PolicyResource{
+  Attributes: []iampolicymanagementv1.ResourceAttribute{
+    *accountIDResourceAttribute, *serviceNameResourceAttribute}
+}
+
+options := iamPolicyManagementService.NewCreatePolicyOptions(
+  "access",
+  []iampolicymanagementv1.PolicySubject{*policySubjects},
+  []iampolicymanagementv1.PolicyRole{*policyRoles},
+  []iampolicymanagementv1.PolicyResource{*policyResources},
+)
+
+policy, response, err := iamPolicyManagementService.CreatePolicy(options)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(policy, "", "  ")
+fmt.Println(string(b))
+```
+{: go}
 {: codeblock}
