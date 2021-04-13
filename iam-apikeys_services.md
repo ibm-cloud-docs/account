@@ -53,14 +53,111 @@ Review the following example:
 
   1.	Use the HTTP header Authorization
   2.	Prefix the IAM access token with the literal `Bearer: Bearer eyJhbGciOiJSUzI1Ng...`
-  3.	Add the prefixed IAM access token to the HTTP header: `Authorization: Bearer eyJhbGciOiJSUzI1Ng...`. When you use the curl command, you can pass this with the parameter -H:
+  3.	Add the prefixed IAM access token to the HTTP header: `Authorization: Bearer eyJhbGciOiJSUzI1Ng...`. 
 
-    ```
-    curl -H "Authorization: Bearer eyJhbGciOiJSUzI1Ng..."
-    ```
+  ```bash
+curl -H "Authorization: Bearer eyJhbGciOiJSUzI1Ng..."
+```
+{: codeblock}
+{: curl}
 
-  Use the same IAM access token for subsequent IBM Cloud service API calls to achieve the best performance and scalability.
-  {: tip}
+```java
+import com.ibm.cloud.sdk.core.security.BearerTokenAuthenticator;
+import <sdk_base_package>.ExampleService.v1.ExampleService;
+...
+String bearerToken = // ... obtain bearer token value ...
+
+// Create the authenticator.
+BearerTokenAuthenticator authenticator = new BearerTokenAuthenticator(bearerToken);
+
+// Create the service instance.
+ExampleService service = new ExampleService(authenticator);
+
+// 'service' can now be used to invoke operations.
+...
+// Later, if your bearer token value expires, you can set a new one like this:
+newToken = // ... obtain new bearer token value
+authenticator.setBearerToken(newToken);
+```
+{: codeblock}
+{: java}
+
+```javascript
+const ExampleServiceV1 = require('mysdk/example-service/v1');
+const { BearerTokenAuthenticator } = require('mysdk/auth');
+
+const authenticator = new BearerTokenAuthenticator({
+  bearerToken: '<access-token>',
+});
+
+const myService = new ExampleServiceV1({
+  authenticator,
+});
+...
+
+// Later when the access token expires, the application must acquire
+// a new access token, then set it on the authenticator.
+// Subsequent request invocations will include the new access token.
+authenticator.setBearerToken('<new-access-token>')
+```
+{: codeblock}
+{: javascript}
+
+```python
+from ibm_cloud_sdk_core.authenticators import BearerTokenAuthenticator
+
+authenticator = BearerTokenAuthenticator(<your_bearer_token>)
+service = ExampleService(authenticator=authenticator)
+
+# after getting a new access token...
+service.get_authenticator().set_bearer_token('54321');
+```
+{: codeblock}
+{: python}
+
+```go
+    import {
+    "github.com/IBM/go-sdk-core/v5/core"
+    "<appropriate-git-repo-url>/exampleservicev1"
+}
+...
+// Create the authenticator.
+bearerToken := // ... obtain bearer token value ...
+authenticator := &core.BearerTokenAuthenticator{
+    BearerToken: bearerToken,
+}
+
+// Create the service options struct.
+options := &exampleservicev1.ExampleServiceV1Options{
+    Authenticator: authenticator,
+}
+
+// Construct the service instance.
+service := exampleservicev1.NewExampleServiceV1(options)
+
+// 'service' can now be used to invoke operations.
+...
+// Later, if your bearer token value expires, you can set a new one like this:
+newToken := // ... obtain new bearer token value
+authenticator.BearerToken = newToken
+```
+{: codeblock}
+{: go}
+
+Use the same IAM access token for subsequent IBM Cloud service API calls to achieve the best performance and scalability.
+{: tip}
+
+[Java SDK reference](https://github.com/IBM/java-sdk-core/blob/main/Authentication.md#bearer-token-authentication){: external}
+{: java}
+
+[Node SDK reference](https://github.com/IBM/ibm-cloud-sdk-common/blob/main/README.md#3-create-a-bearer-token-authenticator-programmatically)
+{: javascript}
+
+[Python SDK reference](https://github.com/IBM/ibm-cloud-sdk-common/blob/main/README.md#3-create-a-bearer-token-authenticator-programmatically)
+{: python}
+
+[Go SDK reference](https://github.com/IBM/go-sdk-core/blob/main/Authentication.md#bearer-token-authentication)
+{: go}
   
 ## Passing an {{site.data.keyword.Bluemix_notm}} API key to authenticate with a service API
 {: #apikey_auth}
@@ -85,11 +182,70 @@ As an example, the following steps assume that the API key is 0a1A2b3B4c5C6d7D8e
 
   1.	Concatenate the user name `apikey` and the API key that is separated by a colon: `apikey:0a1A2b3B4c5C6d7D8e9E`
   2.	Base64 encode the string: `base64("apikey:0a1A2b3B4c5C6d7D8e9E") => YXBpa2V5OjBhMUEyYjNCNGM1QzZkN0Q4ZTlF`
-  3.	Set the HTTP header Authorization with schema Basic, for example `Authorization: Basic YXBpa2V5OjBhMUEyYjNCNGM1QzZkN0Q4ZTlF`. When you use the curl command, you can pass this with the parameter -u:
+  3.	Set the HTTP header Authorization with schema Basic, for example `Authorization: Basic YXBpa2V5OjBhMUEyYjNCNGM1QzZkN0Q4ZTlF`. 
 
-    ```
-    curl -u "apikey:<IBM Cloud API key value>"
-    ```
+  ```bash
+curl -u "apikey:<IBM Cloud API key value>"
+```
+{: codeblock}
+{: curl}
 
-  If you use other tools, you might have to specify these credentials differently.
-  {: tip}
+```java
+import com.ibm.cloud.sdk.core.security.BasicAuthenticator;
+import <sdk_base_package>.ExampleService.v1.ExampleService;
+...
+// Create the authenticator.
+BasicAuthenticator authenticator = new BasicAuthenticator.Builder()
+    .username("myuser")
+    .password("mypassword")
+    .build();
+
+// Create the service instance.
+ExampleService service = new ExampleService(authenticator);
+
+// 'service' can now be used to invoke operations.
+```
+{: codeblock}
+{: java}
+
+```javascript
+
+```
+{: codeblock}
+{: javascript}
+
+```python
+from ibm_cloud_sdk_core.authenticators import BasicAuthenticator
+
+authenticator = BasicAuthenticator(<your_username>, <your_password>)
+service = ExampleService(authenticator=authenticator)
+```
+{: codeblock}
+{: python}
+
+```go
+import {
+    "github.com/IBM/go-sdk-core/v5/core"
+    "<appropriate-git-repo-url>/exampleservicev1"
+}
+...
+// Create the authenticator.
+authenticator := &core.BasicAuthenticator{
+    Username: "myuser",
+    Password: "mypassword",
+}
+
+// Create the service options struct.
+options := &exampleservicev1.ExampleServiceV1Options{
+    Authenticator: authenticator,
+}
+
+// Construct the service instance.
+service := exampleservicev1.NewExampleServiceV1(options)
+
+// 'service' can now be used to invoke operations.
+```
+{: codeblock}
+{: go}
+
+The username is `apikey` and the password is the api key itself.
