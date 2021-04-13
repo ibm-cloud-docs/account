@@ -180,11 +180,11 @@ ibmcloud resource group-update Default [-n, --name Admin]
 ```
 {:codeblock}
 
-## Renaming a resource group by using the API
+### Renaming a resource group by using the API
 {: #rename_rgs-api}
 {: api}
 
-The variable `name` identifies the new name of the resource group. For m ore details, see the [API](https://cloud.ibm.com/apidocs/resource-controller/resource-manager#update-resource-group). 
+The variable `name` identifies the new name of the resource group. For more details, see the [API](https://cloud.ibm.com/apidocs/resource-controller/resource-manager#update-resource-group). 
 
 ```bash
 curl -X PATCH https://resource-controller.cloud.ibm.com/v2/resource_groups/09f8c1c0742c493f80baaf7835212345 -H 'Authorization: Bearer <IAM_TOKEN>'
