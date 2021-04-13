@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2021
-lastupdated: "2021-02-17"
+lastupdated: "2021-04-13"
 
 keywords: tagging, enabling others to tag, tagging permissions
 
@@ -14,7 +14,14 @@ subcollection: account
 {:shortdesc: .shortdesc}
 {:tip: .tip}
 {:note: .note}
-
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:curl: .ph data-hd-programlang='curl'}
+{:go: .ph data-hd-programlang='go'}
 
 # Granting users access to tag resources
 {: #access}
@@ -50,6 +57,7 @@ Any user in an account can view tags. When a resource is tagged, all users who h
 
 ## Granting users access to tag IAM-enabled resources
 {: #iam-managed}
+{: ui}
 
 Complete the following steps to assign the editor role for a user to tag IAM-enabled resources: 
 
@@ -63,8 +71,208 @@ Complete the following steps to assign the editor role for a user to tag IAM-ena
   8. Select **Editor** from the list of platform access roles, and click **Add**.
   9. Review your access summary, and click **Assign**. 
 
+## Granting users access to tag IAM-enabled resources by using the API
+{: #iam-managed-api}
+{: api}
+
+To assign the editor role for a user to tag IAM-enabled resources, call the [IAM Policy Management API](https://cloud.ibm.com/apidocs/iam-policy-management){: external} as shown in the following example request. Replace variables with your target service and resource name. 
+```bash
+curl -X POST 'https://iam.test.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
+  "type": "access",
+  "description": "Editor role for SERVICE_NAME's RESOURCE_NAME",
+  "subjects": [
+    {
+      "attributes": [
+        {
+          "name": "iam_id",
+          "value": "IBMid-123453user"
+        }
+      ]
+    }'
+  ],
+  "roles":[
+    {
+      "role_id": "crn:v1:bluemix:public:iam::::role:Editor"
+    }
+  ],
+  "resources":[
+    {
+      "attributes": [
+        {
+          "name": "accountId",
+          "value": "$ACCOUNT_ID"
+        },
+        {
+          "name": "serviceName",
+          "value": "$SERVICE_NAME"
+        },
+        {
+          "name": "resource",
+          "value": "$RESOURCE_NAME",
+          "operator": "stringEquals"
+        }
+      ]
+    }
+  ]
+}'
+```
+{: codeblock}
+{: curl}
+
+```java
+SubjectAttribute subjectAttribute = new SubjectAttribute.Builder()
+              .name("iam_id")
+              .value(EXAMPLE_USER_ID)
+              .build();
+      PolicySubject policySubjects = new PolicySubject.Builder()
+              .addAttributes(subjectAttribute)
+              .build();
+      PolicyRole policyRoles = new PolicyRole.Builder()
+              .roleId("crn:v1:bluemix:public:iam::::role:Editor")
+              .build();
+      ResourceAttribute accountIdResourceAttribute = new ResourceAttribute.Builder()
+              .name("accountId")
+              .value(exampleAccountId)
+              .operator("stringEquals")
+              .build();
+      ResourceAttribute serviceNameResourceAttribute = new ResourceAttribute.Builder()
+              .name("serviceType")
+              .value("service")
+              .operator("stringEquals")
+              .build();
+      PolicyResource policyResources = new PolicyResource.Builder()
+              .addAttributes(accountIdResourceAttribute)
+              .addAttributes(serviceNameResourceAttribute)
+              .build();
+      CreatePolicyOptions options = new CreatePolicyOptions.Builder()
+              .type("access")
+              .subjects(Arrays.asList(policySubjects))
+              .roles(Arrays.asList(policyRoles))
+              .resources(Arrays.asList(policyResources))
+              .build();
+      Response<Policy> response = service.createPolicy(options).execute();
+      Policy policy = response.getResult();
+      System.out.println(policy);
+```
+{: codeblock}
+{: java}
+
+```javascript
+const policySubjects = [
+      {
+        attributes: [
+          {
+            name: 'iam_id',
+            value: exampleUserId,
+          },
+        ],
+      },
+    ];
+    const policyRoles = [
+      {
+        role_id: 'crn:v1:bluemix:public:iam::::role:Editor',
+      },
+    ];
+    const accountIdResourceAttribute = {
+      name: 'accountId',
+      value: exampleAccountId,
+      operator: 'stringEquals',
+    };
+    const serviceNameResourceAttribute = {
+      name: 'serviceType',
+      value: 'service',
+      operator: 'stringEquals',
+    };
+    const policyResources = [
+      {
+        attributes: [accountIdResourceAttribute, serviceNameResourceAttribute],
+      },
+    ];
+    const params = {
+      type: 'access',
+      subjects: policySubjects,
+      roles: policyRoles,
+      resources: policyResources,
+    };
+    iamPolicyManagementService.createPolicy(params)
+      .then(res => {
+        examplePolicyId = res.result.id;
+        console.log(JSON.stringify(res.result, null, 2));
+      })
+      .catch(err => {
+        console.warn(err)
+      });
+```
+{: codeblock}
+{: javascript}
+
+```python
+policy_subjects = PolicySubject(
+                attributes=[SubjectAttribute(name='iam_id', value=example_user_id)])
+            policy_roles = PolicyRole(
+                role_id='crn:v1:bluemix:public:iam::::role:Editor')
+            account_id_resource_attribute = ResourceAttribute(
+                name='accountId', value=example_account_id)
+            service_name_resource_attribute = ResourceAttribute(
+                name='serviceType', value='service')
+            policy_resources = PolicyResource(
+                attributes=[account_id_resource_attribute,
+                            service_name_resource_attribute])
+            policy = iam_policy_management_service.create_policy(
+                type='access',
+                subjects=[policy_subjects],
+                roles=[policy_roles],
+                resources=[policy_resources]
+            ).get_result()
+            print(json.dumps(policy, indent=2))
+```
+{: codeblock}
+{: python}
+
+```go
+subjectAttribute := &iampolicymanagementv1.SubjectAttribute{
+				Name:  core.StringPtr("iam_id"),
+				Value: &exampleUserID,
+			}
+			policySubjects := &iampolicymanagementv1.PolicySubject{
+				Attributes: []iampolicymanagementv1.SubjectAttribute{*subjectAttribute},
+			}
+			policyRoles := &iampolicymanagementv1.PolicyRole{
+				RoleID: core.StringPtr("crn:v1:bluemix:public:iam::::role:Editor"),
+			}
+			accountIDResourceAttribute := &iampolicymanagementv1.ResourceAttribute{
+				Name:     core.StringPtr("accountId"),
+				Value:    core.StringPtr(exampleAccountID),
+				Operator: core.StringPtr("stringEquals"),
+			}
+			serviceNameResourceAttribute := &iampolicymanagementv1.ResourceAttribute{
+				Name:     core.StringPtr("serviceType"),
+				Value:    core.StringPtr("service"),
+				Operator: core.StringPtr("stringEquals"),
+			}
+			policyResources := &iampolicymanagementv1.PolicyResource{
+				Attributes: []iampolicymanagementv1.ResourceAttribute{
+					*accountIDResourceAttribute, *serviceNameResourceAttribute},
+			}
+			options := iamPolicyManagementService.NewCreatePolicyOptions(
+				"access",
+				[]iampolicymanagementv1.PolicySubject{*policySubjects},
+				[]iampolicymanagementv1.PolicyRole{*policyRoles},
+				[]iampolicymanagementv1.PolicyResource{*policyResources},
+			)
+			policy, response, err := iamPolicyManagementService.CreatePolicy(options)
+			if err != nil {
+				panic(err)
+			}
+			b, _ := json.MarshalIndent(policy, "", "  ")
+			fmt.Println(string(b))
+```
+{: codeblock}
+{: go}
+
 ## Granting users access to tag Cloud Foundry resources
 {: #cf_tag_access}
+{: ui}
 
 Complete the following steps to assign the developer space role for a user to tag Cloud Foundry resources:
 
@@ -78,6 +286,7 @@ Complete the following steps to assign the developer space role for a user to ta
 
 ## Granting users access to tag classic infrastructure resources
 {: #classic-infra}
+{: ui}
 
 The taggable resources for classic infrastructure are Virtual Guest, Virtual Dedicated Host, Network Application Delivery Controller, Gateway Member, Subnet, VLAN, and VLAN Firewall (Dedicated). Complete the following steps to assign the Manager service access role for a user to tag classic infrastructure services:
 
