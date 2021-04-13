@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2021
-lastupdated: "2021-03-16"
+lastupdated: "2021-04-13"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, full list of tags, how to use tags
 
@@ -116,12 +116,12 @@ For more information, see the [`ibmcloud resource` command reference](/docs/cli?
 
 You can programmatically create access management tags by calling the [Global Search and Tagging - Tagging API](https://{DomainName}/apidocs/tagging#create-tag){: external} as shown in the following sample request. The example creates a tag that is called `project:myproject`.
 
-```
+```bash
 curl -X POST -H "Authorization: {iam_token}" \
 -H "Accept: application/json" \
 -H "Content-Type: application/json" \
 -d '{ "tag_names": ["project:myproject"] }' \
-"{base_url}/v3/tags?tag_type=access"
+"tags.global-search-tagging.cloud.ibm.com/v3/tags?tag_type=access"
 ```
 {: pre}
 {: curl}
@@ -194,6 +194,18 @@ You can search for tags by using any of the following methods:
 
 The same tag can be attached to multiple resources by different users in the same billing account, and not all users have visibility on all resources on the account.
 {: note}
+
+## Searching for tags by using the CLI 
+{: #search-tags-cli-link}
+{: cli}
+
+To search for tags by using the CLI, see [Searching for resources](/docs/account?topic=account-searching-for-resources#searching-cl). 
+
+## Searching for tags by using the API 
+{: #search-tags-api-link}
+{: api}
+
+To search for tags by using the API, see [Searching for resources](/docs/account?topic=account-searching-for-resources#searching-api). 
 
 ## Tagging for resellers
 {: #resell}
