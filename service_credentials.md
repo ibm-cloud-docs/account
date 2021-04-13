@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2020
-lastupdated: "2020-05-28"
+  years: 2015, 2021
+lastupdated: "2021-04-13"
 
 keywords: service key, api key, bind, credential
 
@@ -14,21 +14,28 @@ subcollection: account
 {:shortdesc: .shortdesc}
 {:note: .note}
 {:tip: .tip}
-
+{:codeblock: .codeblock}
+{:external: target="_blank" .external}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:curl: .ph data-hd-programlang='curl'}
+{:go: .ph data-hd-programlang='go'}
 
 # Adding and viewing credentials
 {: #service_credentials}
 
-You can generate a new set of credentials for times when you want to manually connect an app or external consumer to an {{site.data.keyword.Bluemix}} service.
-{: shortdesc} 
-
-For example, if you're trying to bind an AWS app to a Watson service, you need to generate a new credential that can be used to bind them together. After your credential is created, you can [manually add](/docs/apps?topic=apps-credentials_overview) it to your {{site.data.keyword.Bluemix_notm}} app or other [external consumer](/docs/account?topic=account-externalapp) to connect your service.
+You can generate a new set of credentials for times when you want to manually connect an app or external consumer to an {{site.data.keyword.Bluemix}} service. For example, if you're trying to bind an AWS app to a Watson service, you need to generate a new credential that can be used to bind them together. After your credential is created, you can [manually add](/docs/apps?topic=apps-credentials_overview) it to your {{site.data.keyword.Bluemix_notm}} app or other [external consumer](/docs/account?topic=account-externalapp) to connect your service.
 
 To manually add credentials to your apps, refer to the documentation for the type of app or compute option that you are using.
 {: tip}
 
 ## Adding a credential when binding an IAM-enabled service
-{: #IAM}
+{: #IAM_credential-ui}
+{: ui}
 
 Services that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) can generate a resource key, also known as a credential. Credentials are service-specific and vary based on how each service defines the credentials they need to generate. A credential might contain a user name, password, host name, port, and a URL.
 
@@ -38,16 +45,114 @@ Complete the following steps to add a credential to a service that is managed by
 
 1. From the My resources page, select the name of the service to open the service details page. Then, select the Credentials tab, and click **New Credential +**.
 2. From the Add New Credential dialog, provide a **Name**.
-3. Specify the role. This value sets the IAM service access role. For more information, see: [IAM Access](/docs/account?topic=account-userroles)
-4. Optionally, you can provide a Service ID by either allowing IAM to generate a unique value for you, or by providing an existing Service ID. For more information, see: [Creating and working with service IDs](/docs/account?topic=account-serviceids)
+3. Specify the role. This value sets the IAM service access role. For more information, see [IAM Access](/docs/account?topic=account-userroles).
+4. Optionally, you can provide a Service ID by either allowing IAM to generate a unique value for you, or by providing an existing Service ID. For more information, see [Creating and working with service IDs](/docs/account?topic=account-serviceids).
 5. Optionally, you can provide more parameters as a valid JSON object that contains service-specific configuration parameters, provided either inline or in a file.
 
   Most services don't require extra parameters, and for services that do, each service defines its own unique list of parameters. For a list of supported configuration parameters, see the documentation for the particular service offering.
   {: note}
 6. Click **Add** to generate the new service credential.
 
+## Adding a credential when binding an IAM-enabled service by using the API
+{: #IAM_credential-api}
+{: api}
+
+Services that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) can generate a resource key, also known as a credential. Credentials are service-specific and vary based on how each service defines the credentials they need to generate. A credential might contain a user name, password, host name, port, and a URL.
+
+However, while the contents of each credential is unique to the service that generates it, all services managed by IAM require that new credentials include an IAM Service access role. Some services might generate more data that requires parameters to be passed in. For example, a service might require you to input a language parameter to set the default language that is returned in the resource key that is generated.
+
+To create a resource key, call the [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#create-resource-key) as shown in the following example:
+
+```bash
+curl -X POST https://resource-controller.cloud.ibm.com/v2/resource_keys -H 'Authorization: Bearer <IAM_TOKEN>' -H 'Content-Type: application/json' -d '{
+  "name": "my-instance-key-1",
+  "source": "267bf377-7fa2-43f6-94ec-09103a8e89d4",
+  "role": "Writer"
+}'
+```
+{: codeblock}
+{: curl}
+
+```java
+ResourceKeyPostParameters parameters = new ResourceKeyPostParameters.Builder()
+  .add("exampleParameter", "exampleValue")
+  .build();
+CreateResourceKeyOptions createResourceKeyOptions = new CreateResourceKeyOptions.Builder()
+  .name(keyName)
+  .source(instanceGuid)
+  .parameters(parameters)
+  .build();
+
+Response<ResourceKey> response = service.createResourceKey(createResourceKeyOptions).execute();
+ResourceKey resourceKey = response.getResult();
+
+System.out.printf("createResourceKey() response:\n%s\n", resourceKey.toString());
+```
+{: codeblock}
+{: java}
+
+```javascript
+const parameters = {
+  'exampleParameter': 'exampleValue'
+};
+
+const params = {
+  name: keyName,
+  source: instanceGuid,
+  parameters: parameters,
+};
+
+resourceControllerService.createResourceKey(params)
+  .then(res => {
+    instanceKeyGuid = res.result.guid;
+    console.log('createResourceKey() response:\n' + JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err)
+  });
+```
+{: codeblock}
+{: javascript}
+
+```python
+parameters = {
+    'exampleParameter': 'exampleValue'
+}
+resource_key = resource_controller_service.create_resource_key(
+    name=key_name,
+    source=instance_guid,
+    parameters=parameters
+).get_result()
+
+print('\ncreate_resource_key() response:\n',
+      json.dumps(resource_key, indent=2))
+```
+{: codeblock}
+{: python}
+
+```go
+createResourceKeyOptions := resourceControllerService.NewCreateResourceKeyOptions(
+  keyName,
+  instanceGUID,
+)
+
+parameters := &resourcecontrollerv2.ResourceKeyPostParameters{}
+parameters.SetProperty("exampleParameter", "exampleValue")
+createResourceKeyOptions.SetParameters(parameters)
+
+resourceKey, response, err := resourceControllerService.CreateResourceKey(createResourceKeyOptions)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(resourceKey, "", "  ")
+fmt.Printf("\nCreateResourceKey() response:\n%s\n", string(b))
+```
+{: codeblock}
+{: go}
+
 ## Adding a credential when binding a Cloud Foundry service
-{: #cf_credential}
+{: #cf_credential-ui}
+{: ui}
 
 Cloud Foundry services can generate a service key, also known as a credential. Credentials are service-specific and vary based on how each service defines the credentials they need to generate. A service credential might contain a user name, password, host name, port, and a URL.
 
@@ -64,7 +169,8 @@ Complete the following steps to add a Cloud Foundry credential:
 4. Click **Add** to generate the new service credential.
 
 ## Viewing a credential
-{: #viewing-credentials}
+{: #viewing-credentials-ui}
+{: ui}
 
 After a credential is created for a service, it can be viewed at any time for users that need the API key value. However, all users must have the correct level of access to see the details of a credential including the API key value. The access of the user must be equal to or greater than that of the service credential. For example, if the credential has the IAM service role `Writer`, then the user trying to view the credential must have the IAM service role `Writer` or `Manager` for that particular service assigned. When a user doesn't have the correct access, details such as the API key value are redacted.
 
@@ -74,4 +180,116 @@ To view an existing service credential for a service, complete the following ste
 2. Click **Service credentials**
 3. Expand **View credentials** on the row for an existing credential.
 
+## Viewing a credential by using the API
+{: #viewing-credentials-api}
+{: api}
 
+After a credential is created for a service, it can be viewed at any time for users that need the API key value. However, all users must have the correct level of access to see the details of a credential including the API key value. The access of the user must be equal to or greater than that of the service credential. For example, if the credential has the IAM service role `Writer`, then the user trying to view the credential must have the IAM service role `Writer` or `Manager` for that particular service assigned.
+
+To get a list of all of the resource keys, call the [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#list-resource-keys) as shown in the following example: 
+
+```bash
+curl -X GET https://resource-controller.cloud.ibm.com/v2/resource_keys -H 'Authorization: Bearer <IAM_TOKEN>'
+```
+{: codeblock}
+{: curl}
+
+```java
+ListResourceKeysOptions listResourceKeysOptions = new ListResourceKeysOptions.Builder()
+  .name(keyName)
+  .build();
+
+Response<ResourceKeysList> response = service.listResourceKeys(listResourceKeysOptions).execute();
+ResourceKeysList resourceKeysList = response.getResult();
+
+System.out.printf("listResourceKeys() response:\n%s\n", resourceKeysList.toString());
+```
+{: codeblock}
+{: java}
+
+```javascript
+const params = {
+  name: keyName,
+};
+
+resourceControllerService.listResourceKeys(params)
+  .then(res => {
+    console.log('listResourceKeys() response:\n' + JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err)
+  });
+```
+{: codeblock}
+{: javascript}
+
+```python
+resource_keys_list = resource_controller_service.list_resource_keys(
+    name=key_name
+).get_result()
+
+print('\nlist_resource_keys() response:\n',
+      json.dumps(resource_keys_list, indent=2))
+```
+{: codeblock}
+{: python}
+
+```go
+listResourceKeysOptions := resourceControllerService.NewListResourceKeysOptions()
+listResourceKeysOptions = listResourceKeysOptions.SetName(keyName)
+
+resourceKeysList, response, err := resourceControllerService.ListResourceKeys(listResourceKeysOptions)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(resourceKeysList, "", "  ")
+fmt.Printf("\nListResourceKeys() response:\n%s\n", string(b))
+```
+{: codeblock}
+{: go}
+
+Example response: 
+```
+{
+  "rows_count": 1,
+  "next_url": null,
+  "resources": [
+    {
+      "id": "crn:v1:bluemix:public:cloud-object-storage:global:a/4329073d16d2f3663f74bfa955259139:8d7af921-b136-4078-9666-081bd8470d94:resource-key:23693f48-aaa2-4079-b0c7-334846eff8d0",
+      "guid": "23693f48-aaa2-4079-b0c7-334846eff8d0",
+      "url": "/v2/resource_keys/23693f48-aaa2-4079-b0c7-334846eff8d0",
+      "created_at": "2018-07-02T22:03:43.837979455Z",
+      "updated_at": "2018-07-02T22:03:43.837979455Z",
+      "deleted_at": null,
+      "created_by": "IBMid-5500093BHN",
+      "updated_by": "IBMid-5500093BHN",
+      "deleted_by": "",
+      "source_crn": "crn:v1:bluemix:public:cloud-object-storage:global:a/4329073d16d2f3663f74bfa955259139:8d7af921-b136-4078-9666-081bd8470d94::",
+      "role": "crn:v1:bluemix:public:iam::::serviceRole:Writer",
+      "name": "my-instance-key-1",
+      "parameters": {
+        "role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Writer"
+      },
+      "crn": "crn:v1:bluemix:public:cloud-object-storage:global:a/4329073d16d2f3663f74bfa955259139:8d7af921-b136-4078-9666-081bd8470d94:resource-key:23693f48-aaa2-4079-b0c7-334846eff8d0",
+      "state": "active",
+      "account_id": "4329073d16d2f3663f74bfa955259139",
+      "resource_group_id": "0be5ad401ae913d8ff665d92680664ed",
+      "resource_id": "dff97f5c-bc5e-4455-b470-411c3edbe49c",
+      "credentials": {
+        "apikey": "XXXX-YYYY-ZZZZ\"",
+        "endpoints": "https://cos-service-armada-s.us-south.containers.mybluemix.net/endpoints",
+        "iam_apikey_description": "Auto generated apikey during resource-key operation for Instance - crn:v1:bluemix:public:cloud-object-storage:global:a/4329073d16d2f3663f74bfa955259139:8d7af921-b136-4078-9666-081bd8470d94::",
+        "iam_apikey_name": "auto-generated-apikey-23693f48-aaa2-4079-b0c7-334846eff8d0",
+        "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Writer",
+        "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/4329073d16d2f3663f74bfa955259139::serviceid:ServiceId-64c29e4f-422d-468c-a11b-1a8f671b5c89",
+        "resource_instance_id": "crn:v1:bluemix:public:cloud-object-storage:global:a/4329073d16d2f3663f74bfa955259139:8d7af921-b136-4078-9666-081bd8470d94::"
+      },
+      "iam_compatible": true,
+      "migrated": false,
+      "resource_instance_url": "/v2/resource_instances/8d7af921-b136-4078-9666-081bd8470d94",
+      "resource_alias_url": null
+    }
+  ]
+}
+```
+{: codeblock}
