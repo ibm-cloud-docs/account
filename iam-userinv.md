@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2021
 
-lastupdated: "2021-03-03"
+lastupdated: "2021-04-12"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -24,6 +24,12 @@ subcollection: account
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
 {:api: .ph data-hd-interface='api'}
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:curl: .ph data-hd-programlang='curl'}
+{:go: .ph data-hd-programlang='go'}
+
 
 # Inviting users to an account
 {: #iamuserinv}
@@ -118,7 +124,7 @@ By using the CLI, you can choose to assign Cloud Foundry access or no access and
 You can use the [API](https://cloud.ibm.com/apidocs/user-management#invite-users){: external} to invite users in bulk. All users that are included in a single invitation are assigned the same access. When you invite users by using the API, you enter emails in a comma-separated list with each entry that is surrounded by quotations. This example assigns access by adding the user to an access group.
 
 
-```
+```bash
 curl -X POST https://user-management.cloud.ibm.com/v2/accounts/987d4cfd77b04e9b9e1a6asdcc861234/users -H 'Authorization: Bearer <IAM_TOKEN>'
   -H 'Content-Type: application/json' -d '{
       "users": [
@@ -154,7 +160,181 @@ curl -X POST https://user-management.cloud.ibm.com/v2/accounts/987d4cfd77b04e9b9
     }'
 ```
 {: codeblock}
+{: curl}
 
+```java
+InviteUser inviteUserModel = new InviteUser.Builder()
+        .email(memberEmail)
+        .accountRole("Member")
+        .build();
+
+Role roleModel = new Role.Builder()
+        .roleId(viewerRoleId)
+        .build();
+
+Attribute attributeModel = new Attribute.Builder()
+        .name("accountId")
+        .value(accountId)
+        .build();
+
+Attribute attributeModel2 = new Attribute.Builder()
+        .name("resourceGroupId")
+        .value("*")
+        .build();
+
+Resource resourceModel = new Resource.Builder()
+        .addAttributes(attributeModel)
+        .addAttributes(attributeModel2)
+        .build();
+
+InviteUserIamPolicy inviteUserIamPolicyModel = new InviteUserIamPolicy.Builder()
+        .type("access")
+        .addRoles(roleModel)
+        .addResources(resourceModel)
+        .build();
+
+InviteUsersOptions inviteUsersOptions = new InviteUsersOptions.Builder()
+        .accountId(accountId)
+        .addUsers(inviteUserModel)
+        .addIamPolicy(inviteUserIamPolicyModel)
+        .addAccessGroups(accessGroupId)
+        .build();
+
+Response<InvitedUserList> response = adminService.inviteUsers(inviteUsersOptions).execute();
+InvitedUserList invitedUserList = response.getResult();
+
+System.out.println(invitedUserList);
+```
+{: codeblock}
+{: java}
+
+```javascript
+const inviteUserModel = {
+  email: memberEmail,
+  account_role: 'Member',
+};
+
+const roleModel = {
+  role_id: viewerRoleId,
+};
+
+const attributeModel = {
+  name: 'accountId',
+  value: accountId,
+};
+
+const attributeModel2 = {
+  name: 'resourceGroupId',
+  value: '*',
+};
+
+const resourceModel = {
+  attributes: [attributeModel, attributeModel2],
+};
+
+const inviteUserIamPolicyModel = {
+  type: 'access',
+  roles: [roleModel],
+  resources: [resourceModel],
+};
+
+const params = {
+  accountId: accountId,
+  users: [inviteUserModel],
+  iamPolicy: [inviteUserIamPolicyModel],
+  accessGroups: [accessGroupId],
+};
+
+userManagementAdminService.inviteUsers(params)
+  .then(res => {
+    deleteUserId = res.result.resources[0].id;
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err)
+  });
+```
+{: codeblock}
+{: javascript}
+
+```python
+invite_user_model = {
+  'email': member_email,
+  'account_role': 'Member'
+}
+
+role_model = {'role_id': viewer_role_id}
+
+attribute_model = {'name': 'accountId', 'value': account_id}
+
+attribute_model2 = {'name': 'resourceGroupId', 'value': '*'}
+
+resource_model = {'attributes': [attribute_model, attribute_model2]}
+
+invite_user_iam_policy_model = {
+  'type': 'access',
+  'roles': [role_model],
+  'resources': [resource_model]
+}
+
+invite_user_response = user_management_admin_service.invite_users(
+  account_id=account_id,
+  users=[invite_user_model],
+  iam_policy=[invite_user_iam_policy_model],
+  access_groups=[access_group_id]
+).get_result()
+
+print(json.dumps(invite_user_response, indent=2))
+```
+{: codeblock}
+{: python}
+
+```go
+inviteUserModel := &usermanagementv1.InviteUser{
+  Email:       &memberEmail,
+  AccountRole: core.StringPtr("Member"),
+}
+
+roleModel := &usermanagementv1.Role{
+  RoleID: &viewerRoleID,
+}
+
+attributeModel := &usermanagementv1.Attribute{
+  Name:  core.StringPtr("accountId"),
+  Value: &accountID,
+}
+
+attributeModel2 := &usermanagementv1.Attribute{
+  Name:  core.StringPtr("resourceGroupId"),
+  Value: core.StringPtr("*"),
+}
+
+resourceModel := &usermanagementv1.Resource{
+  Attributes: []usermanagementv1.Attribute{*attributeModel, *attributeModel2},
+}
+
+inviteUserIamPolicyModel := &usermanagementv1.InviteUserIamPolicy{
+  Type:      core.StringPtr("access"),
+  Roles:     []usermanagementv1.Role{*roleModel},
+  Resources: []usermanagementv1.Resource{*resourceModel},
+}
+
+inviteUsersOptions := &usermanagementv1.InviteUsersOptions{
+  AccountID:    &accountID,
+  Users:        []usermanagementv1.InviteUser{*inviteUserModel},
+  IamPolicy:    []usermanagementv1.InviteUserIamPolicy{*inviteUserIamPolicyModel},
+  AccessGroups: []string{accessGroupID},
+}
+
+invitedUserList, response, err := userManagementAdminService.InviteUsers(inviteUsersOptions)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(invitedUserList, "", "  ")
+fmt.Println(string(b))
+```
+{: codeblock}
+{: go}
 
 ## Adding VPN-only users
 {: #add-vpn-only}
