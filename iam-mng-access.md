@@ -253,7 +253,7 @@ service_name_resource_attribute = ResourceAttribute(
   name='serviceType', value='service')
 policy_resources = PolicyResource(
   attributes=[account_id_resource_attribute,
-        service_name_resource_attribute]
+        service_name_resource_attribute])
 
 policy = iam_policy_management_service.create_policy(
   type='access',
