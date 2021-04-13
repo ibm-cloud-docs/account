@@ -14,6 +14,7 @@ subcollection: account
 {:shortdesc: .shortdesc}
 {:tip: .tip}
 {:note: .note}
+{:codeblock: .codeblock}
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
 {:api: .ph data-hd-interface='api'}
