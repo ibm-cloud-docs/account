@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2021
-lastupdated: "2021-03-03"
+lastupdated: "2021-04-13"
 
 keywords: service ID, service ID API key, lock service ID API key, delete service ID API key
 
@@ -19,7 +19,11 @@ subcollection: account
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
 {:api: .ph data-hd-interface='api'}
-
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:curl: .ph data-hd-programlang='curl'}
+{:go: .ph data-hd-programlang='go'}
 
 # Managing service ID API keys
 {: #serviceidapikeys}
@@ -169,3 +173,341 @@ You can delete an API key that is associated with a service ID. However, deletin
 ibmcloud iam service-api-key-delete NAME SERVICE_ID [-f, --force]
 ```
 {: codeblock}
+
+<!---API--->
+
+## Creating an API key for a service ID using the API
+{: #create_service_key-api}
+{: api}
+
+To create a service ID API key, call the [IAM Identity Service API](https://cloud.ibm.com/apidocs/iam-identity-token-api?code=go#create-api-key){: external} as shown in the following example.
+
+```bash
+curl -X POST 'https://iam.cloud.ibm.com/v1/apikeys' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json' -d '{
+  "name": "Service-apikey",
+  "description": "my service key",
+  "iam_id": "IBMid-123WEREW",
+  "account_id": "ACCOUNT_ID"
+  "store_value": false
+}'
+```
+{: codeblock}
+{: curl}
+
+```java
+CreateApiKeyOptions createApiKeyOptions = new CreateApiKeyOptions.Builder()
+    .name(apiKeyName)
+    .iamId(iamId)
+    .description("Example ApiKey")
+    .build();
+
+Response<ApiKey> response = service.createApiKey(createApiKeyOptions).execute();
+ApiKey apiKey = response.getResult();
+apikeyId = apiKey.getId();
+System.out.println(apiKey.toString());
+```
+{: codeblock}
+{: java}
+
+```javascript
+const params = {
+  name: apikeyName,
+  iamId: iamId,
+  description: 'Example ApiKey',
+};
+
+iamIdentityService.createApiKey(params)
+  .then(res => {
+    apikeyId = res.result.id
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err);
+  });
+```
+{: codeblock}
+{: javascript}
+
+```python
+api_key = iam_identity_service.create_api_key(
+  name=apikey_name,
+  iam_id=iam_id
+).get_result()
+
+apikey_id = api_key['id']
+
+print(json.dumps(api_key, indent=2))
+```
+{: codeblock}
+{: python}
+
+```go
+createAPIKeyOptions := iamIdentityService.NewCreateAPIKeyOptions(apikeyName, iamID)
+createAPIKeyOptions.SetDescription("Example ApiKey")
+
+apiKey, response, err := iamIdentityService.CreateAPIKey(createAPIKeyOptions)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(apiKey, "", "  ")
+fmt.Println(string(b))
+apikeyID = *apiKey.ID
+```
+{: codeblock}
+{: go}
+
+## Updating an API key for a service ID using the API
+{: #update_service_key-api}
+{: api}
+
+To edit an API key for a service ID by using the API, call the [IAM Identity Service API](https://cloud.ibm.com/apidocs/iam-identity-token-api?code=go#update-api-key){: external} as shown in the following example: 
+
+```bash
+curl -X PUT 'https://iam.cloud.ibm.com/v1/apikeys/APIKEY_UNIQUE_ID' -H 'Authorization: Bearer TOKEN' -H 'If-Match: <value of etag header from GET request>' -H 'Content-Type: application/json' -d '{
+  "name": "Service-apikey",
+  "description": "my service key"
+}'
+```
+{: codeblock}
+{: curl}
+
+```java
+UpdateApiKeyOptions updateApiKeyOptions = new UpdateApiKeyOptions.Builder()
+    .id(apikeyId)
+    .ifMatch(apikeyEtag)
+    .description("This is an updated description")
+    .build();
+
+Response<ApiKey> response = service.updateApiKey(updateApiKeyOptions).execute();
+ApiKey apiKey = response.getResult();
+System.out.println(apiKey.toString());
+```
+{: codeblock}
+{: java}
+
+```javascript
+const params = {
+  id: apikeyId,
+  ifMatch: apikeyEtag,
+  description: 'This is an updated description',
+};
+
+iamIdentityService.updateApiKey(params)
+  .then(res => {
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err);
+  });
+```
+{: codeblock}
+{: javascript}
+
+```python
+api_key = iam_identity_service.update_api_key(
+  id=apikey_id,
+  if_match=apikey_etag,
+  description='This is an updated description'
+).get_result()
+
+print(json.dumps(api_key, indent=2))
+```
+{: codeblock}
+{: python}
+
+```go
+updateAPIKeyOptions := iamIdentityService.NewUpdateAPIKeyOptions(apikeyID, apikeyEtag)
+updateAPIKeyOptions.SetDescription("This is an updated description")
+
+apiKey, response, err := iamIdentityService.UpdateAPIKey(updateAPIKeyOptions)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(apiKey, "", "  ")
+fmt.Println(string(b))
+```
+{: codeblock}
+{: go}
+
+## Locking and unlocking an API key for a service ID by using the API
+{: #lock-unlock-serviceid-key-api}
+{: api}
+
+For API keys that represent the identity of the service ID, you can prevent the API key from being deleted by locking it.
+
+### Locking an API key
+{: #lock-service-key-api}
+{: api}
+
+To lock an API key for a service ID by using the API, call the [IAM Identity Service API](https://cloud.ibm.com/apidocs/iam-identity-token-api?code=go#lock-api-key){: external} as shown in the following example: 
+
+```bash
+curl -X POST 'https://iam.cloud.ibm.com/v1/apikeys/APIKEY_UNIQUE_ID/lock' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json'
+```
+{: codeblock}
+{: curl}
+
+```java
+LockApiKeyOptions lockApiKeyOptions = new LockApiKeyOptions.Builder()
+    .id(apikeyId)
+    .build();
+
+service.lockApiKey(lockApiKeyOptions).execute();
+```
+{: codeblock}
+{: java}
+
+```javascript
+const params = {
+  id: apikeyId,
+};
+
+iamIdentityService.lockApiKey(params)
+  .then(res => {
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err);
+  });
+```
+{: codeblock}
+{: javascript}
+
+```python
+response = iam_identity_service.lock_api_key(id=apikey_id)
+
+print(response)
+```
+{: codeblock}
+{: python}
+
+```go
+lockAPIKeyOptions := iamIdentityService.NewLockAPIKeyOptions(apikeyID)
+
+response, err := iamIdentityService.LockAPIKey(lockAPIKeyOptions)
+if err != nil {
+  panic(err)
+}
+```
+{: codeblock}
+{: go}
+
+### Unlocking an API key
+{: #unlock-service-key-api}
+{: api}
+
+To unlock an API key for a service ID by using the API, call the [IAM Identity Service API](https://cloud.ibm.com/apidocs/iam-identity-token-api?code=go#unlock-api-key){: external} as shown in the following example:
+
+```bash
+curl -X DELETE 'https://iam.cloud.ibm.com/v1/serviceids/SERVICE_ID_UNIQUE_ID/lock' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json'
+```
+{: codeblock}
+{: curl}
+
+```java
+UnlockServiceIdOptions unlockServiceIdOptions = new UnlockServiceIdOptions.Builder()
+    .id(svcId)
+    .build();
+
+service.unlockServiceId(unlockServiceIdOptions).execute();
+```
+{: codeblock}
+{: java}
+
+```javascript
+const params = {
+  id: svcId,
+};
+
+iamIdentityService.unlockServiceId(params)
+  .then(res => {
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err);
+    done(err);
+  });
+```
+{: codeblock}
+{: javascript}
+
+```python
+response = iam_identity_service.unlock_service_id(id=svc_id)
+
+print(response)
+```
+{: codeblock}
+{: python}
+
+```go
+unlockServiceIDOptions := iamIdentityService.NewUnlockServiceIDOptions(svcID)
+
+response, err := iamIdentityService.UnlockServiceID(unlockServiceIDOptions)
+if err != nil {
+  panic(err)
+}
+```
+{: codeblock}
+{: go}
+
+## Deleting an API key for a service ID using the API
+{: #delete_service_key-api}
+{: api}
+
+To delete an API key by for a service ID using the API, call the [IAM Identity Service API](https://cloud.ibm.com/apidocs/iam-identity-token-api#delete-api-key){: external} as shown in the following example: 
+
+```bash
+curl -X DELETE 'https://iam.cloud.ibm.com/v1/apikeys/APIKEY_UNIQUE_ID' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json'
+```
+{: codeblock}
+{: curl}
+
+```java
+DeleteApiKeyOptions deleteApiKeyOptions = new DeleteApiKeyOptions.Builder()
+    .id(apikeyId)
+    .build();
+
+service.deleteApiKey(deleteApiKeyOptions).execute();
+```
+{: codeblock}
+{: java}
+
+```javascript
+const params = {
+  id: apikeyId,
+};
+
+iamIdentityService.deleteApiKey(params)
+  .then(res => {
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err);
+  });
+```
+{: codeblock}
+{: javascript}
+
+```python
+delete_api_key(self,
+        id: str,
+        **kwargs
+    ) -> DetailedResponse
+
+response = iam_identity_service.delete_api_key(id=apikey_id)
+
+print(response)
+```
+{: codeblock}
+{: python}
+
+```go
+deleteAPIKeyOptions := iamIdentityService.NewDeleteAPIKeyOptions(apikeyID)
+
+response, err := iamIdentityService.DeleteAPIKey(deleteAPIKeyOptions)
+if err != nil {
+  panic(err)
+}
+```
+{: codeblock}
+{: go}
