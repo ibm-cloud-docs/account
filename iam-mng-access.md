@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-03-12"
+lastupdated: "2021-04-13"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access 
 
@@ -22,6 +22,11 @@ subcollection: account
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
 {:api: .ph data-hd-interface='api'}
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:curl: .ph data-hd-programlang='curl'}
+{:go: .ph data-hd-programlang='go'}
 
 # Managing access to resources
 {: #assign-access-resources}
@@ -95,50 +100,215 @@ If a user doesn't have a role on the resource group that contains the resources,
 {: #access-resources-api}
 {: api}
 
-You can assign access to an individual resource in the account or access to a list of resources in the account by calling the [{{site.data.keyword.iamlong}} (IAM) Policy Management API](https://{DomainName}/apidocs/iam-policy-management#create-policy){: external} as shown in the following sample request. The sample request gives `Editor` role access for an instance of a service:
+You can assign access to an individual resource in the account or access to a list of resources in the account by calling the [{{site.data.keyword.iamlong}} (IAM) Policy Management API](https://{DomainName}/apidocs/iam-policy-management#create-policy){: external} as shown in the following sample request. The sample request gives `Administrator` role access for an instance of a service:
 
-   ```
-    curl -X POST 'https://iam.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $TOKEN' \
-    -H 'Content-Type: application/json' -d '{
-      "type": "access",
-      "description": "Editor role for SERVICE_NAME's RESOURCE_NAME",
-      "subjects": [
+```bash
+curl -X POST 'https://iam.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $TOKEN' \
+-H 'Content-Type: application/json' -d '{
+  "type": "access",
+  "description": "Administrator role for SERVICE_NAME's RESOURCE_NAME",
+  "subjects": [
+    {
+      "attributes": [
         {
-          "attributes": [
-            {
-              "name": "iam_id",
-              "value": "IBMid-123453user"
-            }
-          ]
-        }'
-      ],
-      "roles":[
-        {
-          "role_id": "crn:v1:bluemix:public:iam::::role:Editor"
-        }
-      ],
-      "resources":[
-        {
-          "attributes": [
-            {
-              "name": "accountId",
-              "value": "$ACCOUNT_ID"
-            },
-            {
-              "name": "serviceName",
-              "value": "$SERVICE_NAME"
-            },
-            {
-              "name": "resource",
-              "value": "$RESOURCE_NAME",
-              "operator": "stringEquals"
-            }
-          ]
+          "name": "iam_id",
+          "value": "IBMid-123453user"
         }
       ]
     }'
-   ```
-   {: codeblock}
+  ],
+  "roles":[
+    {
+      "role_id": "crn:v1:bluemix:public:iam::::role:Administrator"
+    }
+  ],
+  "resources":[
+    {
+      "attributes": [
+        {
+          "name": "accountId",
+          "value": "$ACCOUNT_ID"
+        },
+        {
+          "name": "serviceName",
+          "value": "$SERVICE_NAME"
+        },
+        {
+          "name": "resource",
+          "value": "$RESOURCE_NAME",
+          "operator": "stringEquals"
+        }
+      ]
+    }
+  ]
+}'
+```
+{: curl}
+{: codeblock}
+   
+```java
+SubjectAttribute subjectAttribute = new SubjectAttribute.Builder()
+      .name("iam_id")
+      .value(EXAMPLE_USER_ID)
+      .build();
+
+PolicySubject policySubjects = new PolicySubject.Builder()
+      .addAttributes(subjectAttribute)
+      .build();
+
+PolicyRole policyRoles = new PolicyRole.Builder()
+      .roleId("crn:v1:bluemix:public:iam::::role:Administrator")
+      .build();
+
+ResourceAttribute accountIdResourceAttribute = new ResourceAttribute.Builder()
+      .name("accountId")
+      .value(exampleAccountId)
+      .operator("stringEquals")
+      .build();
+
+ResourceAttribute serviceNameResourceAttribute = new ResourceAttribute.Builder()
+      .name("serviceType")
+      .value("service")
+      .operator("stringEquals")
+      .build();
+
+PolicyResource policyResources = new PolicyResource.Builder()
+      .addAttributes(accountIdResourceAttribute)
+      .addAttributes(serviceNameResourceAttribute)
+      .build();
+
+CreatePolicyOptions options = new CreatePolicyOptions.Builder()
+      .type("access")
+      .subjects(Arrays.asList(policySubjects))
+      .roles(Arrays.asList(policyRoles))
+      .resources(Arrays.asList(policyResources))
+      .build();
+
+Response<Policy> response = service.createPolicy(options).execute();
+Policy policy = response.getResult();
+
+System.out.println(policy);
+```
+{: java}
+{: codeblock}
+   
+```javascript
+const policySubjects = [
+  {
+    attributes: [
+      {
+        name: 'iam_id',
+        value: exampleUserId,
+      },
+    ],
+  },
+];
+const policyRoles = [
+  {
+    role_id: 'crn:v1:bluemix:public:iam::::role:Administrator',
+  },
+];
+const accountIdResourceAttribute = {
+  name: 'accountId',
+  value: exampleAccountId,
+  operator: 'stringEquals',
+};
+const serviceNameResourceAttribute = {
+  name: 'serviceType',
+  value: 'service',
+  operator: 'stringEquals',
+};
+const policyResources = [
+  {
+    attributes: [accountIdResourceAttribute, serviceNameResourceAttribute]
+  },
+];
+const params = {
+  type: 'access',
+  subjects: policySubjects,
+  roles: policyRoles,
+  resources: policyResources,
+};
+
+iamPolicyManagementService.createPolicy(params)
+  .then(res => {
+    examplePolicyId = res.result.id;
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err)
+  });
+```
+{: javascript}
+{: codeblock}
+   
+```python
+policy_subjects = PolicySubject(
+  attributes=[SubjectAttribute(name='iam_id', value=example_user_id)])
+policy_roles = PolicyRole(
+  role_id='crn:v1:bluemix:public:iam::::role:Administrator')
+account_id_resource_attribute = ResourceAttribute(
+  name='accountId', value=example_account_id)
+service_name_resource_attribute = ResourceAttribute(
+  name='serviceType', value='service')
+policy_resources = PolicyResource(
+  attributes=[account_id_resource_attribute,
+        service_name_resource_attribute]
+
+policy = iam_policy_management_service.create_policy(
+  type='access',
+  subjects=[policy_subjects],
+  roles=[policy_roles],
+  resources=[policy_resources]
+).get_result()
+
+print(json.dumps(policy, indent=2))
+```
+{: python}
+{: codeblock}
+   
+```go
+subjectAttribute := &iampolicymanagementv1.SubjectAttribute{
+  Name:  core.StringPtr("iam_id"),
+  Value: &exampleUserID,
+}
+policySubjects := &iampolicymanagementv1.PolicySubject{
+  Attributes: []iampolicymanagementv1.SubjectAttribute{*subjectAttribute},
+}
+policyRoles := &iampolicymanagementv1.PolicyRole{
+  RoleID: core.StringPtr("crn:v1:bluemix:public:iam::::role:Administrator"),
+}
+accountIDResourceAttribute := &iampolicymanagementv1.ResourceAttribute{
+  Name:     core.StringPtr("accountId"),
+  Value:    core.StringPtr(exampleAccountID),
+  Operator: core.StringPtr("stringEquals"),
+}
+serviceNameResourceAttribute := &iampolicymanagementv1.ResourceAttribute{
+  Name:     core.StringPtr("serviceType"),
+  Value:    core.StringPtr("service"),
+  Operator: core.StringPtr("stringEquals"),
+}
+policyResources := &iampolicymanagementv1.PolicyResource{
+  Attributes: []iampolicymanagementv1.ResourceAttribute{
+    *accountIDResourceAttribute, *serviceNameResourceAttribute}
+}
+
+options := iamPolicyManagementService.NewCreatePolicyOptions(
+  "access",
+  []iampolicymanagementv1.PolicySubject{*policySubjects},
+  []iampolicymanagementv1.PolicyRole{*policyRoles},
+  []iampolicymanagementv1.PolicyResource{*policyResources},
+)
+
+policy, response, err := iamPolicyManagementService.CreatePolicy(options)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(policy, "", "  ")
+fmt.Println(string(b))
+```
+{: go}
+{: codeblock}
 
 ### Assigning access within a resource group in the console
 {: #access-to-resources-console}
@@ -216,12 +386,62 @@ To remove a service ID policy by using the CLI, you can use the [**`ibmcloud iam
 
 Delete a policy by providing a policy ID and calling the [{{site.data.keyword.iamlong}} (IAM) Policy Management API](https://{DomainName}/apidocs/iam-policy-management#delete-policy){: external} as shown in the following sample request:
 
-  ```
-  curl -X DELETE 'https://iam.cloud.ibm.com/v1/policies/$POLICY_ID' \
-  -H 'Authorization: Bearer $TOKEN' \
-  -H 'Content-Type: application/json'
-  ```
-  {: codeblock}
+```bash
+curl -X DELETE 'https://iam.cloud.ibm.com/v1/policies/$POLICY_ID' \
+-H 'Authorization: Bearer $TOKEN' \
+-H 'Content-Type: application/json'
+```
+{: curl}
+{: codeblock}
+
+```java
+DeletePolicyOptions options = new DeletePolicyOptions.Builder()
+      .policyId(examplePolicyId)
+      .build();
+
+service.deletePolicy(options).execute();
+```
+{: java}
+{: codeblock}
+
+```javascript
+const params = {
+  policyId: examplePolicyId,
+};
+
+iamPolicyManagementService.deletePolicy(params)
+.then(res => {
+  console.log(JSON.stringify(res, null, 2));
+})
+.catch(err => {
+  console.warn(err)
+});
+```
+{: javascript}
+{: codeblock}
+
+```python
+response = iam_policy_management_service.delete_policy(
+  policy_id=example_policy_id
+).get_result()
+
+print(json.dumps(response, indent=2))
+```
+{: python}
+{: codeblock}
+
+```go
+options := iamPolicyManagementService.NewDeletePolicyOptions(
+  examplePolicyID,
+)
+
+response, err := iamPolicyManagementService.DeletePolicy(options)
+if err != nil {
+  panic(err)
+}
+```
+{: go}
+{: codeblock}
 
 A policy cannot be deleted if the subject ID contains a locked service ID.
 {: note}
@@ -256,9 +476,67 @@ If you need to review your assigned access in an account that you've been added 
 
 By using the API, you can only retrieve all policies in the account and filter by attribute values. You can check your assigned access in an account by going to **Manage** > **Users** > **your_name** > **Access policies** in the console. To retrieve policies, call the [{{site.data.keyword.iamlong}} (IAM) Policy Management API](https://{DomainName}/apidocs/iam-policy-management#list-policies){: external} as shown in the following sample request:
 
-   ```
-   curl -X GET 'https://iam.cloud.ibm.com/v1/policies?account_id=$ACCOUNT_ID' \
-   -H 'Authorization: Bearer $TOKEN' \
-   -H 'Content-Type: application/json'
-   ```
-   {: codeblock} 
+```bash
+curl -X GET 'https://iam.cloud.ibm.com/v1/policies?account_id=$ACCOUNT_ID' \
+-H 'Authorization: Bearer $TOKEN' \
+-H 'Content-Type: application/json'
+```
+{: curl} 
+{: codeblock}
+
+```java
+ListPoliciesOptions options = new ListPoliciesOptions.Builder()
+    .accountId(exampleAccountId)
+    .iamId(EXAMPLE_USER_ID)
+    .build();
+
+Response<PolicyList> response = service.listPolicies(options).execute();
+PolicyList policyList = response.getResult();
+
+System.out.println(policyList);
+```
+{: java} 
+{: codeblock}
+
+```javascript
+const params = {
+  accountId: exampleAccountId,
+  iamId: exampleUserId
+};
+
+iamPolicyManagementService.listPolicies(params)
+ .then(res => {
+   console.log(JSON.stringify(res.result, null, 2));
+ })
+ .catch(err => {
+   console.warn(err)
+ });
+```
+{: javascript} 
+{: codeblock} 
+
+```python
+policy_list = iam_policy_management_service.list_policies(
+ account_id=example_account_id, iam_id=example_user_id
+).get_result()
+
+print(json.dumps(policy_list, indent=2))
+```
+{: python} 
+{: codeblock} 
+
+```go
+options := iamPolicyManagementService.NewListPoliciesOptions(
+ exampleAccountID,
+)
+options.SetIamID(exampleUserID)
+
+policyList, response, err := iamPolicyManagementService.ListPolicies(options)
+if err != nil {
+ panic(err)
+}
+b, _ := json.MarshalIndent(policyList, "", "  ")
+fmt.Println(string(b))
+```
+{: go} 
+{: codeblock}
