@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021
-lastupdated: "2021-03-29"
+lastupdated: "2021-04-13"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, attach tags ui, attach tags cli, attach tags api, detach tags ui, detach tags api, detach tags cli
 
@@ -19,6 +19,11 @@ subcollection: account
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
 {:api: .ph data-hd-interface='api'}
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:curl: .ph data-hd-programlang='curl'}
+{:go: .ph data-hd-programlang='go'}
 
 # Attaching and detaching tags on a resource
 
@@ -88,14 +93,97 @@ When you detach an access management tag from a resource, any associated access 
 
 You can programmatically attach tags by calling the [Global Search and Tagging - Tagging API](https://{DomainName}/apidocs/tagging#attach-tag){: external} as shown in the following sample requests. The allowed values for the `tag_type` query parameter are: `user` for user tags and `access` for access management tags. The following example shows how to attach an access management tag called `project:myproject` to a service instance:
 
-```
-curl -X POST -H "Authorization: {iam_token}" \
--H "Accept: application/json" \
--H "Content-Type: application/json" \
--d '{ "resources": [{ "resource_id": "crn:v1:bluemix:public:cloud-object-storage:global:a/59bcbfa6ea2f006b4ed7094c1a08dcdd:1a0ec336-f391-4091-a6fb-5e084a4c56f4::" }], "tag_names": ["project:myproject"] }' \
-"{base_url}/v3/tags/attach?tag_type=access"
-```
-{: codeblock}
+1. Find the unique identifier for your resource by calling the following cURL command:
+  ```bash
+  curl -v -X POST -k --header 'Content-Type: application/json' 
+  --header 'Accept: application/json' 
+  --header 'Authorization: bearer  <your IAM token>' 
+  -d '{"query": "name:myresource"}' 'https://api.global-search-tagging.cloud.ibm.com/v3/resources/search'
+  ```
+  {: codeblock}
+  {: curl}
+1. Extract the value of the crn field from the response.
+1. Call the following:
+  ```bash
+  curl -X POST -H "Authorization: {iam_token}" \
+  -H "Accept: application/json" \
+  -H "Content-Type: application/json" \
+  -d '{ "resources": [{ "resource_id": "crn:v1:bluemix:public:cloud-object-storage:global:a/59bcbfa6ea2f006b4ed7094c1a08dcdd:1a0ec336-f391-4091-a6fb-5e084a4c56f4::" }], "tag_names": ["project:myproject"] }' \
+  "https://tags.global-search-tagging.cloud.ibm.com/v3/tags/attach?tag_type=access"
+  ```
+  {: codeblock}
+  {: curl}
+
+  ```java
+  Resource resourceModel = new Resource.Builder().resourceId(resourceCRN).build();
+  AttachTagOptions attachTagOptions = new AttachTagOptions.Builder()
+  .addResources(resourceModel)
+  .addTagNames("project:myproject")
+  .tagType("access")
+  .build();
+
+  Response<TagResults> response = service.attachTag(attachTagOptions).execute();
+  TagResults tagResults = response.getResult();
+  System.out.println(tagResults.toString());
+  ```
+  {: codeblock}
+  {: java}
+
+  ```javascript
+  const resourceModel = {
+  resource_id: resourceCrn,
+  };
+
+  const params = {
+  resources: [resourceModel],
+  tagNames: ["project:myproject"],
+  tagType: 'access',
+  };
+
+  globalTaggingService.attachTag(params)
+  .then(res => {
+  console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+  console.warn(err)
+  });
+  ```
+  {: codeblock}
+  {: javascript}
+
+  ```python
+  resource_model = {'resource_id': resource_crn}
+
+  tag_results = global_tagging_service.attach_tag(
+  resources=[resource_model],
+  tag_names=['project:myproject'],
+  tag_type='access').get_result()
+
+  print(json.dumps(tag_results, indent=2))
+  ```
+  {: codeblock}
+  {: python}
+
+  ```go
+  resourceModel := &globaltaggingv1.Resource{
+  ResourceID: &resourceCRN,
+  }
+
+  attachTagOptions := globalTaggingService.NewAttachTagOptions(
+  []globaltaggingv1.Resource{*resourceModel},
+  )
+  attachTagOptions.SetTagNames([]string{"project:myproject"})
+  attachTagOptions.SetTagType("access")
+
+  tagResults, response, err := globalTaggingService.AttachTag(attachTagOptions)
+  if err != nil {
+  panic(err)
+  }
+  b, _ := json.MarshalIndent(tagResults, "", "  ")
+  fmt.Println(string(b))
+  ```
+  {: codeblock}
+  {: go}
 
 ## Detaching tags from a resource by using the API
 {: #detach-api}
@@ -103,14 +191,97 @@ curl -X POST -H "Authorization: {iam_token}" \
 
 You can programmatically detach tags by calling the [Global Search and Tagging - Tagging API](https://{DomainName}/apidocs/tagging#detach-tag){: external} as shown in the following sample requests. The allowed values for the `tag_type` query parameter are: `user` for user tags and `access` for access management tags. The following example shows how to detach an access management tag called `project:myproject` from a service instance:
 
-```
-curl -X POST -H "Authorization: {iam_token}" \
--H "Accept: application/json" \
--H "Content-Type: application/json" \
--d '{ "resources": [{ "resource_id": "crn:v1:bluemix:public:cloud-object-storage:global:a/59bcbfa6ea2f006b4ed7094c1a08dcdd:1a0ec336-f391-4091-a6fb-5e084a4c56f4::" }], "tag_names": ["project:myproject"] }' \
-"{base_url}/v3/tags/detach?tag_type=access"
-```
-{: codeblock}
+1. Find the unique identifier for your resource by calling the following cURL command:
+  ```bash
+  curl -v -X POST -k --header 'Content-Type: application/json' 
+  --header 'Accept: application/json' 
+  --header 'Authorization: bearer  <your IAM token>' 
+  -d '{"query": "name:myresource"}' 'https://api.global-search-tagging.cloud.ibm.com/v3/resources/search'
+  ```
+  {: codeblock}
+  {: curl}
+1. Extract the value of the crn field from the response.
+1. Call the following:
+  ```bash
+  curl -X POST -H "Authorization: {iam_token}" \
+  -H "Accept: application/json" \
+  -H "Content-Type: application/json" \
+  -d '{ "resources": [{ "resource_id": "crn:v1:bluemix:public:cloud-object-storage:global:a/59bcbfa6ea2f006b4ed7094c1a08dcdd:1a0ec336-f391-4091-a6fb-5e084a4c56f4::" }], "tag_names": ["project:myproject"] }' \
+  "https://tags.global-search-tagging.cloud.ibm.com/v3/tags/detach?tag_type=access"
+  ```
+  {: codeblock}
+  {: curl}
+
+  ```java
+  Resource resourceModel = new Resource.Builder().resourceId(resourceCRN).build();
+  DetachTagOptions detachTagOptions = new DetachTagOptions.Builder()
+  .addResources(resourceModel)
+  .addTagNames("project:myproject")
+  .tagType("access")
+  .build();
+
+  Response<TagResults> response = service.detachTag(detachTagOptions).execute();
+  TagResults tagResults = response.getResult();
+  System.out.println(tagResults.toString());
+  ```
+  {: codeblock}
+  {: java}
+
+  ```javascript
+  const resourceModel = {
+  resource_id: resourceCrn,
+  };
+
+  const params = {
+  resources: [resourceModel],
+  tagNames: ["project:myproject"],
+  tagType: 'access',
+  };
+
+  globalTaggingService.detachTag(params)
+  .then(res => {
+  console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+  console.warn(err)
+  });
+  ```
+  {: codeblock}
+  {: javascript}
+
+  ```python
+  resource_model = {'resource_id': resource_crn}
+
+  tag_results = global_tagging_service.detach_tag(
+  resources=[resource_model],
+  tag_names=['project:myproject'],
+  tag_type='access').get_result()
+
+  print(json.dumps(tag_results, indent=2))
+  ```
+  {: codeblock}
+  {: python}
+
+  ```go
+  resourceModel := &globaltaggingv1.Resource{
+  ResourceID: &resourceCRN,
+  }
+
+  detachTagOptions := globalTaggingService.NewDetachTagOptions(
+  []globaltaggingv1.Resource{*resourceModel},
+  )
+  detachTagOptions.SetTagNames([]string{"project:myproject"})
+  detachTagOptions.SetTagType("access")
+
+  tagResults, response, err := globalTaggingService.DetachTag(detachTagOptions)
+  if err != nil {
+  panic(err)
+  }
+  b, _ := json.MarshalIndent(tagResults, "", "  ")
+  fmt.Println(string(b))
+  ```
+  {: codeblock}
+  {: go}
 
 When you detach an access management tag from a resource, any associated access policies are also detached from that resource.
 {: note}
