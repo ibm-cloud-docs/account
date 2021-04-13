@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2021
 
-lastupdated: "2021-03-12"
+lastupdated: "2021-04-13"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, role management service, catalog management service, cloud shell service
 
@@ -20,6 +20,11 @@ subcollection: account
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
 {:api: .ph data-hd-interface='api'}
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:curl: .ph data-hd-programlang='curl'}
+{:go: .ph data-hd-programlang='go'}
 
 # Assigning access to account management services
 {: #account-services}
@@ -82,7 +87,7 @@ If you're using the [Policy management API](https://cloud.ibm.com/apidocs/iam-po
 
 The following example assigns a policy with the Administrator role on the IAM Access groups account management service.
 
-```
+```bash
 curl -X POST \
 'https://iam.cloud.ibm.com/v1/policies' \
 -H 'Authorization: $TOKEN'\
@@ -120,6 +125,172 @@ curl -X POST \
   ]
 }'
 ```
+{: curl}
+{: codeblock}
+
+```java
+SubjectAttribute subjectAttribute = new SubjectAttribute.Builder()
+        .name("iam_id")
+        .value(EXAMPLE_USER_ID)
+        .build();
+
+PolicySubject policySubjects = new PolicySubject.Builder()
+        .addAttributes(subjectAttribute)
+        .build();
+
+PolicyRole policyRoles = new PolicyRole.Builder()
+        .roleId("crn:v1:bluemix:public:iam::::role:Administrator")
+        .build();
+
+ResourceAttribute accountIdResourceAttribute = new ResourceAttribute.Builder()
+        .name("accountId")
+        .value(exampleAccountId)
+        .operator("stringEquals")
+        .build();
+
+ResourceAttribute serviceNameResourceAttribute = new ResourceAttribute.Builder()
+        .name("serviceName")
+        .value("iam-groups")
+        .operator("stringEquals")
+        .build();
+
+PolicyResource policyResources = new PolicyResource.Builder()
+        .addAttributes(accountIdResourceAttribute)
+        .addAttributes(serviceNameResourceAttribute)
+        .build();
+
+CreatePolicyOptions options = new CreatePolicyOptions.Builder()
+        .type("access")
+        .subjects(Arrays.asList(policySubjects))
+        .roles(Arrays.asList(policyRoles))
+        .resources(Arrays.asList(policyResources))
+        .build();
+
+Response<Policy> response = service.createPolicy(options).execute();
+Policy policy = response.getResult();
+
+System.out.println(policy);
+```
+{: java}
+{: codeblock}
+
+```javascript
+const policySubjects = [
+  {
+    attributes: [
+      {
+        name: 'iam_id',
+        value: exampleUserId,
+      },
+    ],
+  },
+];
+const policyRoles = [
+  {
+    role_id: 'crn:v1:bluemix:public:iam::::role:Administrator',
+  },
+];
+const accountIdResourceAttribute = {
+  name: 'accountId',
+  value: exampleAccountId,
+  operator: 'stringEquals',
+};
+const serviceNameResourceAttribute = {
+  name: 'serviceName',
+  value: 'iam-groups',
+  operator: 'stringEquals',
+};
+const policyResources = [
+  {
+    attributes: [accountIdResourceAttribute, serviceNameResourceAttribute]
+  },
+];
+const params = {
+  type: 'access',
+  subjects: policySubjects,
+  roles: policyRoles,
+  resources: policyResources,
+};
+
+iamPolicyManagementService.createPolicy(params)
+  .then(res => {
+    examplePolicyId = res.result.id;
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err)
+  });
+```
+{: javascript}
+{: codeblock}
+
+```python
+policy_subjects = PolicySubject(
+  attributes=[SubjectAttribute(name='iam_id', value=example_user_id)])
+policy_roles = PolicyRole(
+  role_id='crn:v1:bluemix:public:iam::::role:Administrator')
+account_id_resource_attribute = ResourceAttribute(
+  name='accountId', value=example_account_id)
+service_name_resource_attribute = ResourceAttribute(
+  name='serviceName', value='iam-groups')
+policy_resources = PolicyResource(
+  attributes=[account_id_resource_attribute,
+        service_name_resource_attribute])
+
+policy = iam_policy_management_service.create_policy(
+  type='access',
+  subjects=[policy_subjects],
+  roles=[policy_roles],
+  resources=[policy_resources]
+).get_result()
+
+print(json.dumps(policy, indent=2))
+```
+{: python}
+{: codeblock}
+
+```go
+subjectAttribute := &iampolicymanagementv1.SubjectAttribute{
+  Name:  core.StringPtr("iam_id"),
+  Value: &exampleUserID,
+}
+policySubjects := &iampolicymanagementv1.PolicySubject{
+  Attributes: []iampolicymanagementv1.SubjectAttribute{*subjectAttribute},
+}
+policyRoles := &iampolicymanagementv1.PolicyRole{
+  RoleID: core.StringPtr("crn:v1:bluemix:public:iam::::role:Administrator"),
+}
+accountIDResourceAttribute := &iampolicymanagementv1.ResourceAttribute{
+  Name:     core.StringPtr("accountId"),
+  Value:    core.StringPtr(exampleAccountID),
+  Operator: core.StringPtr("stringEquals"),
+}
+serviceNameResourceAttribute := &iampolicymanagementv1.ResourceAttribute{
+  Name:     core.StringPtr("serviceName"),
+  Value:    core.StringPtr("iam-groups"),
+  Operator: core.StringPtr("stringEquals"),
+}
+policyResources := &iampolicymanagementv1.PolicyResource{
+  Attributes: []iampolicymanagementv1.ResourceAttribute{
+    *accountIDResourceAttribute, *serviceNameResourceAttribute},
+}
+
+options := iamPolicyManagementService.NewCreatePolicyOptions(
+  "access",
+  []iampolicymanagementv1.PolicySubject{*policySubjects},
+  []iampolicymanagementv1.PolicyRole{*policyRoles},
+  []iampolicymanagementv1.PolicyResource{*policyResources},
+)
+
+policy, response, err := iamPolicyManagementService.CreatePolicy(options)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(policy, "", "  ")
+fmt.Println(string(b))
+```
+{: go}
+{: codeblock}
 
 ## Actions and roles for account management services
 {: #account-management-actions-roles}
