@@ -5,7 +5,7 @@
 copyright:
 
   years: 2017, 2021
-lastupdated: "2021-03-11"
+lastupdated: "2021-04-13"
 
 keywords: resource group, account resources, users access to resource groups, create resource group
 
@@ -21,6 +21,11 @@ subcollection: account
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
 {:api: .ph data-hd-interface='api'}
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:curl: .ph data-hd-programlang='curl'}
+{:go: .ph data-hd-programlang='go'}
 
 # Managing resource groups
 {: #rgs}
@@ -66,6 +71,84 @@ ibmcloud resource group-create group2
 ```
 {:codeblock}
 
+## Creating a resource group by using the API
+{: #rgs_api}
+{: api}
+
+If you have a Pay-As-You-Go or Subscription account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. You can also group resources to make it easier for you to assign users access to more than one instance at a time.
+
+You must be assigned an IAM policy with the Administrator role on All Account Management services to create additional resource groups. If you have a Lite account or 30-day trial, you can't create extra resource groups, but you can rename your default resource group.
+
+To create a resource group, call the [{{site.data.keyword.cloud}} Resource Manager API](https://cloud.ibm.com/apidocs/resource-controller/resource-manager?code=go#create-resource-group) as shown in the following example:
+
+```bash
+curl -X POST https://resource-controller.cloud.ibm.com/v2/resource_groups -H 'Authorization: Bearer <IAM_TOKEN>'
+  -H 'Content-Type: application/json' -d '{
+      "account_id": "987d4cfd77b04e9b9e1a6asdcc861234",
+      "name": "test"
+    }'
+```
+{: codeblock}
+{: curl}
+
+```java
+CreateResourceGroupOptions createResourceGroupOptions = new CreateResourceGroupOptions.Builder()
+        .accountId(exampleUserAccountId)
+        .name("ExampleGroup")
+        .build();
+
+Response<ResCreateResourceGroup> response = resourceManagerService.createResourceGroup(createResourceGroupOptions).execute();
+ResCreateResourceGroup resCreateResourceGroup = response.getResult();
+
+System.out.println(resCreateResourceGroup);
+```
+{: codeblock}
+{: java}
+
+```javascript
+const params = {
+  accountId: exampleUserAccountId,
+  name: "ExampleGroup"
+};
+
+resourceManagerService.createResourceGroup(params)
+  .then(res => {
+    resourceGroupId = res.result.id;
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err)
+  });
+```
+{: codeblock}
+{: javascript}
+
+```python
+res_create_resource_group = resource_manager_service.create_resource_group(
+  account_id=example_user_account_id,
+  name='ExampleGroup',
+).get_result()
+
+print(json.dumps(res_create_resource_group, indent=2))
+```
+{: codeblock}
+{: python}
+
+```go
+createResourceGroupOptions := resourceManagerService.NewCreateResourceGroupOptions()
+createResourceGroupOptions.SetAccountID(exampleUserAccountID)
+createResourceGroupOptions.SetName("ExampleGroup")
+
+resCreateResourceGroup, response, err := resourceManagerService.CreateResourceGroup(createResourceGroupOptions)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(resCreateResourceGroup, "", "  ")
+fmt.Println(string(b))
+```
+{: codeblock}
+{: go}
+
 ## Renaming a resource group
 {: #rename_rgs}
 
@@ -97,6 +180,83 @@ ibmcloud resource group-update Default [-n, --name Admin]
 ```
 {:codeblock}
 
+## Renaming a resource group by using the API
+{: #rename_rgs-api}
+{: api}
+
+The variable `name` identifies the new name of the resource group. For m ore details, see the [API](https://cloud.ibm.com/apidocs/resource-controller/resource-manager#update-resource-group). 
+
+```bash
+curl -X PATCH https://resource-controller.cloud.ibm.com/v2/resource_groups/09f8c1c0742c493f80baaf7835212345 -H 'Authorization: Bearer <IAM_TOKEN>'
+  -H 'Content-Type: application/json' -d '{
+      "name": "test1"
+    }'
+```
+{: codeblock}
+{: curl}
+
+```java
+UpdateResourceGroupOptions updateResourceGroupOptions = new UpdateResourceGroupOptions.Builder()
+  .id(resourceGroupId)
+  .name("RenamedExampleGroup")
+  .state("ACTIVE")
+  .build();
+
+Response<ResourceGroup> response = resourceManagerService.updateResourceGroup(updateResourceGroupOptions).execute();
+ResourceGroup resourceGroup = response.getResult();
+
+System.out.println(resourceGroup);
+```
+{: codeblock}
+{: java}
+
+```javascript
+const params = {
+  id: resourceGroupId,
+  state: 'ACTIVE',
+  name: 'RenamedExampleGroup'
+};
+
+resourceManagerService.updateResourceGroup(params)
+  .then(res => {
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err)
+  });
+```
+{: codeblock}
+{: javascript}
+
+```python
+resource_group = resource_manager_service.update_resource_group(
+  id=resource_group_id,
+  name='RenamedExampleGroup',
+  state='ACTIVE',
+).get_result()
+
+print(json.dumps(resource_group, indent=2))
+```
+{: codeblock}
+{: python}
+
+```go
+updateResourceGroupOptions := resourceManagerService.NewUpdateResourceGroupOptions(
+  resourceGroupID,
+)
+updateResourceGroupOptions.SetName("RenamedExampleGroup")
+updateResourceGroupOptions.SetState("ACTIVE")
+
+resourceGroup, response, err := resourceManagerService.UpdateResourceGroup(updateResourceGroupOptions)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(resourceGroup, "", "  ")
+fmt.Println(string(b))
+```
+{: codeblock}
+{: go}
+
 ## Adding resources to a resource group
 {: #add_to_rgs}
 {: ui}
@@ -112,6 +272,10 @@ To add the resources to a resource group, complete the following steps:
 1. In the console, go to **Manage** > **Account** > **Account resources** > **Resource groups**.
 2. Click the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, and select **Add resources**.
 3. From here, you are directed to the catalog. You can search the offerings or filter based on a specific category, provider, pricing plan, type of compliance, or release type. Examples of resources include apps, service instances, container clusters, storage volumes, virtual servers, and software.
+
+## Adding resources to a resource group by using the API
+
+See [Managing catalog settings](/docs/account?topic=account-filter-account#set-public-visibility-api) to set the visibility of the {{site.data.keyword.cloud}} catalog and to control access to products in the public catalog and private catalogs for users in your account.
 
 ## Viewing resources in a resource group
 {: #view_rg_resources}
@@ -137,4 +301,69 @@ ibmcloud resource service-instances -g Default
 ```
 {:codeblock}
 
+## Viewing resources in a resource group by using the API
+{: #viewing-rgs-api}
+{: api}
+
+To view resources in a resource group, call the [{{site.data.keyword.cloud}} Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#list-resource-instances) as shown in the following example:
+
+```bash
+curl -X GET https://resource-controller.cloud.ibm.com/v2/resource_instances -H 'Authorization: Bearer <>'
+```
+{: codeblock}
+{: curl}
+
+```java
+ListResourceInstancesOptions listResourceInstancesOptions = new ListResourceInstancesOptions.Builder()
+  .name(resourceInstanceName)
+  .build();
+
+Response<ResourceInstancesList> response = service.listResourceInstances(listResourceInstancesOptions).execute();
+ResourceInstancesList resourceInstancesList = response.getResult();
+
+System.out.printf("listResourceInstances() response:\n%s\n", resourceInstancesList.toString());
+```
+{: codeblock}
+{: java}
+
+```javascript
+const params = {
+  name: resourceInstanceName,
+};
+
+resourceControllerService.listResourceInstances(params)
+  .then(res => {
+    console.log('listResourceInstances() response:\n' + JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err)
+  });
+```
+{: codeblock}
+{: javascript}
+
+```python
+resource_instances_list = resource_controller_service.list_resource_instances(
+    name=resource_instance_name
+).get_result()
+
+print('\nlist_resource_instances() response:\n',
+      json.dumps(resource_instances_list, indent=2))
+```
+{: codeblock}
+{: python}
+
+```go
+listResourceInstancesOptions := resourceControllerService.NewListResourceInstancesOptions()
+listResourceInstancesOptions = listResourceInstancesOptions.SetName(resourceInstanceName)
+
+resourceInstancesList, response, err := resourceControllerService.ListResourceInstances(listResourceInstancesOptions)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(resourceInstancesList, "", "  ")
+fmt.Printf("\nListResourceInstances() response:\n%s\n", string(b))
+```
+{: codeblock}
+{: go}
 
