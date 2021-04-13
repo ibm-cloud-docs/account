@@ -265,9 +265,7 @@ For more information, see the [`ibmcloud resource reclamations` command referenc
 {: #restore-resource-api}
 {: api}
 
-You can restore a resource within 7 days after you delete it.
-
-Not all resources can be restored. [Get a list of all reclaimations](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#list-reclamations) to check the resources that you can restore.
+You can restore a resource within 7 days after you delete it. Not all resources can be restored. [Get a list of all reclaimations](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#list-reclamations) to check the resources that you can restore.
 {: important}
 
 To restore a resource by using the API, call the [{{site.data.keyword.cloud}} Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#run-reclamation-action) as shown in the following example. Specify `restore` to restore a resource. `id` is the reclamation ID and not the resource instance ID. 
