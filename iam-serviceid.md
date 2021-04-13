@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-03-03"
+lastupdated: "2021-04-13"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -21,6 +21,11 @@ subcollection: account
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
 {:api: .ph data-hd-interface='api'}
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:curl: .ph data-hd-programlang='curl'}
+{:go: .ph data-hd-programlang='go'}
 
 # Creating and working with service IDs
 {: #serviceids}
@@ -51,6 +56,87 @@ To create a service ID, complete the following steps:
 
 Then, hover on the row of a service ID to use the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu to manage your service ID. You can start by assigning a policy and creating API keys. For more information about working with API keys, see [Managing service ID API keys](/docs/account?topic=account-serviceidapikeys).
 
+## Creating a service ID by using the API
+{: #create_serviceid-api}
+{: api}
+
+To create a service ID, call the [IAM Identity Services API](https://cloud.ibm.com/apidocs/iam-identity-token-api#create-service-id) as shown in the following example:
+
+```bash
+curl -X POST 'https://iam.cloud.ibm.com/v1/serviceids' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json' -d '{
+  "name": "My-serviceID",
+  "description": "my special service ID",
+  "account_id": "ACCOUNT_ID"
+}'
+```
+{: codeblock}
+{: curl}
+
+```java
+CreateServiceIdOptions createServiceIdOptions = new CreateServiceIdOptions.Builder()
+    .accountId(accountId)
+    .name(serviceIdName)
+    .description("Example ServiceId")
+    .build();
+
+Response<ServiceId> response = service.createServiceId(createServiceIdOptions).execute();
+ServiceId serviceId = response.getResult();
+svcId = serviceId.getId();
+System.out.println(serviceId.toString());
+```
+{: codeblock}
+{: java}
+
+```javascript
+const params = {
+  accountId: accountId,
+  name: serviceIdName,
+  description: 'Example ServiceId',
+};
+
+iamIdentityService.createServiceId(params)
+  .then(res => {
+    svcId = res.result.id;
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err);
+  });
+```
+{: codeblock}
+{: javascript}
+
+```python
+service_id = iam_identity_service.create_service_id(
+  account_id=account_id,
+  name=serviceid_name,
+  description='Example ServiceId'
+).get_result()
+
+svc_id = service_id['id']
+
+print(json.dumps(service_id, indent=2))
+```
+{: codeblock}
+{: python}
+
+```go
+createServiceIDOptions := iamIdentityService.NewCreateServiceIDOptions(accountID, serviceIDName)
+createServiceIDOptions.SetDescription("Example ServiceId")
+
+serviceID, response, err := iamIdentityService.CreateServiceID(createServiceIDOptions)
+if err != nil {
+  panic(err)
+}
+svcID = *serviceID.ID
+b, _ := json.MarshalIndent(serviceID, "", "  ")
+fmt.Println(string(b))
+```
+{: codeblock}
+{: go}
+
+For more informatiion, see the [IAM Identity Services API](https://cloud.ibm.com/apidocs/iam-identity-token-api#create-service-id).
+
 ## Updating a service ID
 {: #update_serviceid}
 {: ui}
@@ -58,6 +144,81 @@ Then, hover on the row of a service ID to use the **Actions** ![List of actions 
 You can update a service ID by changing the name and description at any time. You can also delete and create new API keys as needed or update the assigned access policies. Hover on the row of a service ID to use the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu to manage your service ID.
 
 Any changes that you make to an existing service ID, such as changing the assigned policies or deleting an API key that is used, might cause service interruptions to applications that use that service ID.
+
+## Updating a service ID by using the API
+{: #update_serviceid-api}
+{: api}
+
+To update a service ID, call the [IAM Identity Services API](https://cloud.ibm.com/apidocs/iam-identity-token-api#update-service-id) as shown in the following example:
+
+```bash
+curl -X PUT 'https://iam.cloud.ibm.com/v1/serviceids/SERVICE_ID_UNIQUE_ID' -H 'Authorization: Bearer TOKEN' -H 'If-Match: <value of etag header from GET request>' -H 'Content-Type: application/json' -d '{
+  "name": "My-super-secret-serviceid",
+  "description": "super secret service ID"
+}'
+```
+{: codeblock}
+{: curl}
+
+```java
+UpdateServiceIdOptions updateServiceIdOptions = new UpdateServiceIdOptions.Builder()
+    .id(svcId)
+    .ifMatch(svcIdEtag)
+    .description("This is an updated description")
+    .build();
+
+Response<ServiceId> response = service.updateServiceId(updateServiceIdOptions).execute();
+ServiceId serviceId = response.getResult();
+System.out.println(serviceId.toString());
+```
+{: codeblock}
+{: java}
+
+```javascript
+const params = {
+  id: svcId,
+  ifMatch: svcIdEtag,
+  description: 'This is an updated description',
+};
+
+iamIdentityService.updateServiceId(params)
+  .then(res => {
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err);
+  });
+```
+{: codeblock}
+{: javascript}
+
+```python
+service_id = iam_identity_service.update_service_id(
+  id=svc_id,
+  if_match=svc_id_etag,
+  description='This is an updated description'
+).get_result()
+
+print(json.dumps(service_id, indent=2))
+```
+{: codeblock}
+{: python}
+
+```go
+updateServiceIDOptions := iamIdentityService.NewUpdateServiceIDOptions(svcID, svcIDEtag)
+updateServiceIDOptions.SetDescription("This is an updated description")
+
+serviceID, response, err := iamIdentityService.UpdateServiceID(updateServiceIDOptions)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(serviceID, "", "  ")
+fmt.Println(string(b))
+```
+{: codeblock}
+{: go}
+
+For more information, see the [IAM Identity Services API](https://cloud.ibm.com/apidocs/iam-identity-token-api#update-service-id).
 
 ## Locking a service ID
 {: #lock_serviceid}
@@ -167,6 +328,124 @@ Unlock service ID `ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976`
 ibmcloud iam service-id-unlock ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976
 ```
 
+### Locking a service ID by using the API
+{: #lock_serviceid_api}
+{: api}
+
+To lock a service ID, call the [IAM Identity Services API](https://cloud.ibm.com/apidocs/iam-identity-token-api#lock-service-id) as shown in the following example:
+
+```bash
+curl -X POST 'https://iam.cloud.ibm.com/v1/serviceids/SERVICE_ID_UNIQUE_ID/lock' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json'
+```
+{: codeblock}
+{: curl}
+
+```java
+LockServiceIdOptions lockServiceIdOptions = new LockServiceIdOptions.Builder()
+    .id(svcId)
+    .build();
+
+service.lockServiceId(lockServiceIdOptions).execute();
+```
+{: codeblock}
+{: java}
+
+```javascript
+const params = {
+  id: svcId,
+};
+
+iamIdentityService.lockServiceId(params)
+  .then(res => {
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err);
+  });
+```
+{: codeblock}
+{: javascript}
+
+```python
+response = iam_identity_service.lock_service_id(id=svc_id)
+
+print(response)
+```
+{: codeblock}
+{: python}
+
+```go
+lockServiceIDOptions := iamIdentityService.NewLockServiceIDOptions(svcID)
+
+response, err := iamIdentityService.LockServiceID(lockServiceIDOptions)
+if err != nil {
+  panic(err)
+}
+```
+{: codeblock}
+{: go}
+
+For more information, see the [IAM Identity Services API](https://cloud.ibm.com/apidocs/iam-identity-token-api#lock-service-id).
+
+### Unlocking a service ID by using the API
+{: #unlock_serviceid_api}
+{: api}
+
+To unlock a service ID, call the [IAM Identity Services API](https://cloud.ibm.com/apidocs/iam-identity-token-api#unlock-service-id) as shown in the following example:
+
+```bash
+curl -X DELETE 'https://iam.cloud.ibm.com/v1/serviceids/SERVICE_ID_UNIQUE_ID/lock' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json'
+```
+{: codeblock}
+{: curl}
+
+```java
+UnlockServiceIdOptions unlockServiceIdOptions = new UnlockServiceIdOptions.Builder()
+    .id(svcId)
+    .build();
+
+service.unlockServiceId(unlockServiceIdOptions).execute();
+```
+{: codeblock}
+{: java}
+
+```javascript
+const params = {
+  id: svcId,
+};
+
+iamIdentityService.unlockServiceId(params)
+  .then(res => {
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err);
+    done(err);
+  });
+```
+{: codeblock}
+{: javascript}
+
+```python
+response = iam_identity_service.unlock_service_id(id=svc_id)
+
+print(response)
+```
+{: codeblock}
+{: python}
+
+```go
+unlockServiceIDOptions := iamIdentityService.NewUnlockServiceIDOptions(svcID)
+
+response, err := iamIdentityService.UnlockServiceID(unlockServiceIDOptions)
+if err != nil {
+  panic(err)
+}
+```
+{: codeblock}
+{: go}
+
+For more information, see the [IAM Identity Services API](https://cloud.ibm.com/apidocs/iam-identity-token-api#unlock-service-id).
 
 ## Examples of how to use a service ID
 {: #examples_serviceid}
