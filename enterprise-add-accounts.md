@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-03-04"
+lastupdated: "2021-04-14"
 
 keywords: enterprise, add account, import account, create account
 
@@ -91,7 +91,7 @@ To import an existing account, complete the following steps:
 
 To import an existing account to the enterprise, call the [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#import-an-account-into-an-enterprise){: external} as shown in the following sample request. Replace the {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) token and ID variables with the values from your enterprise.
 
-```
+```bash
 curl -X PUT \
 "https://enterprise.cloud.ibm.com/v1/enterprises/$ENTERPRISE_ID/import/accounts/$ACCOUNT_ID" \
 -H "Authorization: Bearer <IAM_Token>" -H 'Content-Type: application/json' \
@@ -100,6 +100,58 @@ curl -X PUT \
 }'
 ```
 {: codeblock}
+{: curl}
+
+```java
+ImportAccountToEnterpriseOptions options = new ImportAccountToEnterpriseOptions.Builder()
+        .enterpriseId("ent-id-123")
+        .accountId("account-id-123")
+        .parent("'crn:v1:bluemix:public:enterprise::a/ent-account-id-123::enterprise:ent-id-123'")
+        .billing_unit_id("billing-unit")
+        .build();
+Response<Void> response = service.importAccountToEnterprise(options).execute();
+```
+{: codeblock}
+{: java}
+
+
+```javascript
+const params = {
+        enterpriseId:'ent-id-123', 
+        accountId: 'account-id-123', 
+        parent: 'crn:v1:bluemix:public:enterprise::a/ent-account-id-123::enterprise:ent-id-123', 
+        billingUnitId: 'billing-unit'
+};
+service.importAccountToEnterprise(params).then(response => {
+        console.log(response);
+}).catch(err => {});
+```
+{: codeblock}
+{: javascript}
+
+```python
+response = service.import_account_to_enterprise (
+        enterprise_id = 'ent-id-123', 
+        account_id = 'account-id-123', 
+        parent= 'crn:v1:bluemix:public:enterprise::a/ent-account-id-123::enterprise:ent-id-123', 
+        billing_unit_id = 'billing-unit'
+)
+```
+{: codeblock}
+{: python}
+
+```go
+importAccountToEnterpriseOptionsModel := service.NewImportAccountToEnterpriseOptions(
+         "ent-id-123",
+         "account-id-123")
+importAccountToEnterpriseOptionsModel.SetParent(
+         "crn:v1:bluemix:public:enterprise::a/ent-account-id-123::enterprise:ent-id-123")
+importAccountToEnterpriseOptionsModel.SetBillingUnitID(
+         "billing-unit")
+result, detailedResponse, err := service.ImportAccountToEnterprise(importAccountToEnterpriseOptionsModel)
+```
+{: codeblock}
+{: go}
 
 ## Creating new accounts
 {: #create-accounts}
@@ -143,7 +195,7 @@ After you create the account, the account owner can log in to the account to inv
 
 To create a new account in the enterprise, call the Enterprise Management API as shown in the following sample request, replacing the IAM token and ID variables with the values from your enterprise. For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-a-new-account-in-an-enterprise){: external}.
 
-```
+```bash
 curl -X POST \
 "https://enterprise.cloud.ibm.com/v1/accounts \
 -H "Authorization: Bearer <IAM_Token>" \
@@ -154,4 +206,50 @@ curl -X POST \
   "owner_iam_id": "IBMid-0123ABC"
 }'
 ```
- <!---{: codeblock}--->
+{: codeblock}
+{: curl}
+
+```java
+CreateAccountOptions options = new CreateAccountOptions.Builder()
+        .parent("crn:v1:bluemix:public:enterprise::a/ent-account-id-123::account-group:account-group-id-12")
+        .name("IBM")
+        .ownerIamId("IBMid-0123ABC")
+        .build();
+Response<CreateAccountResponse> response = service.createAccount(options).execute();
+```
+{: codeblock}
+{: java}
+
+```javascript
+const params = {
+        parent: 'crn:v1:bluemix:public:enterprise::a/ent-account-id-123::account-group:account-group-id-12', 
+        name: 'IBM',
+        ownerIamId: 'IBMid-0123ABC'
+};
+service.createAccount(params).then(response => {
+        console.log(response)
+}).catch(err => {});
+```
+{: codeblock}
+{: javascript}
+
+```python
+response = service.create_account(
+        parent = 'crn:v1:bluemix:public:enterprise::a/ent-account-id-123::account-group:account-group-id-12', 
+        name = 'IBM',
+        owner_iam_id = 'IBMid-0123ABC'
+)
+```
+{: codeblock}
+{: python}
+
+```go
+createAccountOptionsModel := service.NewCreateAccountOptions()
+createAccountOptionsModel.SetParent("crn:v1:bluemix:public:enterprise::a/ent-account-id-123::account-group:account-group-id-12"))
+createAccountOptionsModel.SetName("IBM")
+createAccountOptionsModel.SetOwnerIamID("IBMid-0123ABC")
+result, detailedResponse, err := service.CreateAccount(createAccountOptionsModel)
+```
+{: codeblock}
+{: go}
+
