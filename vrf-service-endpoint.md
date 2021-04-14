@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-03-19"
+lastupdated: "2021-04-14"
 
 keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network, services that support service endpoints, service endpoint support, using service endpoints
 
@@ -133,7 +133,7 @@ After service endpoints are enabled, you can create resources that connect over 
 
 After you enable the VRF and service endpoint account settings, you can create resources from the catalog that support service endpoints. The following table lists the services that support using service endpoints.
 
-Refer to the documentation for the specific service for more information about using service endpoints.
+Refer to the Endpoint URLs section of the API documentation for the specific service for the endpoint URLs.
 {: tip}
 
 | Service | Documentation |
