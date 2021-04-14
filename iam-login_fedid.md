@@ -2,11 +2,11 @@
 
 copyright:
 
-  years: 2015，2020
+  years: 2015，2021
 
-lastupdated: "2020-06-09"
+lastupdated: "2021-04-06"
 
-keywords: federated ID, enterprise SSO, single sign-on ID, API key login, one-time passcode login, temporary credential
+keywords: federated ID, password, enterprise SSO, single sign-on ID, API key login, one-time passcode login, temporary credential, to login, logging in
 
 subcollection: account
 
@@ -16,17 +16,50 @@ subcollection: account
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:curl: .ph data-hd-programlang='curl'}
+{:go: .ph data-hd-programlang='go'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
+{:ruby: .ph data-hd-programlang='ruby'}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
 
 # Logging in with a federated ID
 {: #federated_id}
 
-As a federated user that uses a corporate or enterprise single sign-on ID, you can log in to {{site.data.keyword.Bluemix}} from the command-line interface (CLI) by using either a one-time passcode or an API key.
+As a federated user that uses a corporate or enterprise single sign-on ID, you can log in to {{site.data.keyword.Bluemix}} from the console by using a federated ID and password. You can also log in from the command-line interface (CLI) by using a one-time passcode or an API key.
 {: shortdesc}
 
-By using federated IDs, you don't need to set up new login credentials specific to {{site.data.keyword.cloud_notm}}, for example by using IBMid. Instead, users in your organization can simply log in to {{site.data.keyword.cloud_notm}} with their organization credentials through your identity provider. When a user logs in, the user gets an IAM token, which is a temporary credential that expires after 1 hour. After that time, the token must be refreshed to secure the connection and to continue accessing account resources to which they are assigned access. For more information about using federated IDs, see [Signing up with a federated ID](/docs/account?topic=account-saml-federation).
+By using federated IDs, you don't need to set up new login credentials specific to {{site.data.keyword.cloud_notm}}, for example by using IBMid. Instead, users in your organization can easily log in to {{site.data.keyword.cloud_notm}} with their organization credentials through your identity provider. 
+
+When a user logs in, the user gets an IAM token, which is a temporary credential that expires after 1 hour. After that time, the token must be refreshed to secure the connection and to continue accessing account resources to which they are assigned access. For more information about using federated IDs, see [Setting up your IBM Cloud account](/docs/account?topic=account-account-getting-started).
+
+## Using the console to log in
+{: #login_console}
+{: ui}
+
+If you need to create an account, go to the [registration page](https://cloud.ibm.com/registration). 
+{: note}
+
+Use the following steps to log in to the {{site.data.keyword.cloud_notm}} console: 
+
+1. Go to the [{{site.data.keyword.cloud_notm}} login page](cloud.ibm.com/login).
+2. Enter your ID, and click **Continue**. 
+3. Enter your password.
+	
+Completing these steps takes you to the {{site.data.keyword.cloud_notm}} dashboard. 
+
+## Using the CLI to log in
+{: #usingthecli_login}
+{: cli} 
+
+You choose to use either a one-time passcode or an API key to log in by using the CLI. You can find details based on whether you're using the {{site.data.keyword.cloud_notm}}, Cloud Foundry, or OpenShift CLI in the following sections.
 
 
-## Using a one-time passcode
+### Using a one-time passcode to log in with the CLI
 {: #onetime_passcode}
 
 When you use the one-time passcode option to log in with a federated ID, you specify the single-sign on (SSO) parameter to get a one-time passcode, which you then enter at login.
@@ -34,10 +67,10 @@ When you use the one-time passcode option to log in with a federated ID, you spe
 Because a one-time passcode retrieves code from the {{site.data.keyword.Bluemix_notm}} console, it causes the use of a federated ID in your automation script to fail. Avoid trouble by using the API key option with an automated script.
 {: tip}
 
-### From the {{site.data.keyword.Bluemix_notm}} CLI
+#### From the {{site.data.keyword.Bluemix_notm}} CLI
 {: #login_cli}
 
-There are two different methods that you can use for logging in with the CLI. For the first method, use the following steps:
+You can use two different methods to log in with the CLI. For the first method, use the following steps:
 
 1. Specify the `--sso` option with the `ibmcloud login` command.
 2. Follow the URL in the prompt to get the one-time passcode.
@@ -60,10 +93,10 @@ If you're already logged in to the console, you can use the following steps:
 1. In the {{site.data.keyword.Bluemix_notm}} console, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Log in to CLI and API**. 
 2. Copy the information for the {{site.data.keyword.Bluemix_notm}} CLI into the CLI. 
 
-### From the Cloud Foundry CLI
+#### From the Cloud Foundry CLI
 {: #login_cf_cli}
 
-There are two different methods that you can use for logging the Cloud Foundry CLI. For the first method, use the following steps:
+You can use two different methods to log in with the Cloud Foundry CLI. For the first method, use the following steps:
 
 1. Specify the `--sso` option with the `cf login` command.
 2. Follow the URL in the prompt to get the one-time passcode.
@@ -85,15 +118,15 @@ If you're already logged in to the console, you can use the following steps:
 1. In the {{site.data.keyword.cloud_notm}} console, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Log in to CLI and API**. 
 2. Copy the information for the Cloud Foundry CLI and paste into the CLI. 
 
-### From the OpenShift CLI
+#### From the OpenShift CLI
 {: #openshift_cli}
 
-You can log in with a one time passcode by using the following steps:
+You can log in with a one-time passcode by using the following steps:
 
 1. Log in to the console, and from the console, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Log in to CLI and API**. 
 2. Copy the information for the OpenShift CLI and paste into the CLI.
 
-## Using an API key
+### Using an API key in the CLI for authentication
 {: #api_key}
 
 The required API key is the {{site.data.keyword.Bluemix_notm}} API key that is used to authenticate with the {{site.data.keyword.Bluemix_notm}} platform, not the classic infrastructure API key, or {{site.data.keyword.Bluemix_notm}} service API key.
@@ -142,3 +175,16 @@ The required API key is the {{site.data.keyword.Bluemix_notm}} API key that is u
     OK
 
     ```
+
+## Using an API key to get an IAM token for authentication
+{: #using_apikey}
+{: api} 
+
+You can use an API key to get an IAM token to access your {{site.data.keyword.Bluemix_notm}} services. For example, you can run the following curl command to use an API key named `MY_APIKEY` to get an IAM token: 
+
+     ```
+     curl -X POST 'https://iam.cloud.ibm.com/identity/token' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey=MY_APIKEY'
+
+     ```
+
+For more information, see [Creating an IAM access token for a user or service ID by using an API key](https://cloud.ibm.com/apidocs/iam-identity-token-api#gettoken-apikey). 
