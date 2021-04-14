@@ -133,7 +133,7 @@ After service endpoints are enabled, you can create resources that connect over 
 
 After you enable the VRF and service endpoint account settings, you can create resources from the catalog that support service endpoints. The following table lists the services that support using service endpoints.
 
-Refer to the Endpoint URLs section of the API documentation for the specific service for the endpoint URLs.
+To find the endpoints for each service, refer to the Endpoint URLs section of the API documentation for the specific service.
 {: tip}
 
 | Service | Documentation |
