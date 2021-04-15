@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-04-15"
 
 keywords: service key, api key, bind, credential
 
@@ -167,6 +167,91 @@ Complete the following steps to add a Cloud Foundry credential:
   Most services don't require extra parameters, and for services that do, each service defines its own unique list of parameters. For a list of supported configuration parameters, see the documentation for the particular service offering.
   {: note}
 4. Click **Add** to generate the new service credential.
+
+## Adding a credential when binding a Cloud Foundry service by using the API
+{: #cf_credential-api}
+{: api}
+
+Service credential bindings are used to make the details of the connection to a service instance available to an app or a developer. Service credential bindings can be of type `app` or `key`.
+
+A service credential binding is of type `app` when it is a binding between a [service instance](http://v3-apidocs.cloudfoundry.org/version/3.99.0/index.html#service-instances)[: external] and an [application](http://v3-apidocs.cloudfoundry.org/version/3.99.0/index.html#apps){: external}. Not all services support this binding, as some services deliver value to users directly without integration with an application. Field `broker_catalog.features.bindable` from [service plan](http://v3-apidocs.cloudfoundry.org/version/3.99.0/index.html#the-service-plan-object){: external} of the service instance can be used to determine if it is bindable.
+
+A service credential binding is of type `key` when it only retrieves the details of the service instance and makes them available to the developer.
+
+To create a service credential binding, call the [Cloud Foundry API](http://v3-apidocs.cloudfoundry.org/version/3.99.0/index.html#create-a-service-credential-binding){: external} as shown in the following examples.
+
+### Example Request to create an App Credential Binding
+{: #app-cred-binding-api}
+
+```bash
+curl "https://api.example.org/v3/service_credential_bindings" \
+  -X POST \
+  -H "Authorization: bearer [token]" \
+  -H "Content-type: application/json" \
+  -d '{
+    "type": "app",
+    "name": "some-binding-name",
+    "relationships": {
+      "service_instance": {
+        "data": {
+          "guid": "7304bc3c-7010-11ea-8840-48bf6bec2d78"
+        }
+      },
+      "app": {
+        "data": {
+          "guid": "e0e4417c-74ee-11ea-a604-48bf6bec2d78"
+        }
+      }
+    },
+    "parameters": {
+      "key1": "value1",
+      "key2": "value2"
+    },
+    "metadata": {
+      "labels": {
+        "foo": "bar"
+      },
+      "annotations": {
+        "baz": "qux"
+      }
+    }
+  }'
+```
+{: codeblock}
+
+### Example Request to create a Key Credential Binding
+{: #key-cred-binding-api}
+
+```bash 
+curl "https://api.example.org/v3/service_credential_bindings" \
+  -X POST \
+  -H "Authorization: bearer [token]" \
+  -H "Content-type: application/json" \
+  -d '{
+    "type": "key",
+    "name": "some-binding-name",
+    "relationships": {
+      "service_instance": {
+        "data": {
+          "guid": "7304bc3c-7010-11ea-8840-48bf6bec2d78"
+        }
+      }
+    },
+    "parameters": {
+      "key1": "value1",
+      "key2": "value2"
+    },
+    "metadata": {
+      "labels": {
+        "foo": "bar"
+      },
+      "annotations": {
+        "baz": "qux"
+      }
+    }
+  }'
+```
+{: codeblock}
 
 ## Viewing a credential
 {: #viewing-credentials-ui}
