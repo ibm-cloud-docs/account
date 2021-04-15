@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-04-15"
 
 keywords: tagging, enabling others to tag, tagging permissions
 
@@ -33,12 +33,12 @@ As the account owner, you might want to delegate some of the responsibility of t
 ## Tagging permissions
 {: #tagging-permissions}
 
-Any user in an account can view tags. When a resource is tagged, all users who have read access to the resource can view the tag. To attach or detach a tag on a resource, certain access roles or permissions are required depending on the resource type and tag type. See the following table to understand what role is required for each resource type.
+Any user in an account can view tags. When a resource is tagged, all users who have read access to the resource can view the tag. To attach or detach a tag on a resource, certain access roles or permissions are needed depending on the resource type and tag type. See the following table to understand what role is needed for each resource type.
 
 
 | Resource Type | Role |
 |--------|---------------|
-| IAM-enabled | To attach or detach user tags, editor or administrator on the resource <br> To attach or detach access management tags, administrator on the resource <br> To view the assigned policies on the resource that has an access management tag attached, viewer role |
+| IAM-enabled | To attach or detach user tags, editor or administrator on the resource <br> To attach or detach access management tags, administrator on the resource <br> To view the assigned policies on the resource that has an access management tag that is attached, viewer role |
 | Cloud Foundry | Developer on the space that the resource belongs to  |
 | Bare metal on classic infrastructure| View hardware details and access to a specific set of services or all bare metal servers |
 | Dedicated Hosts on classic infrastructure | View virtual dedicated host details and access to a specific set of services or all dedicated hosts |
@@ -285,6 +285,58 @@ Complete the following steps to assign the developer space role for a user to ta
 7. Select **Developer** as the space role.
 8. Click **Save role**.
 
+## Granting users access to tag Cloud Foundry resources by using the API
+{: #cf_tag_access-api}
+{: api}
+
+To assign the developer space role for a user to tag Cloud Foundry resources, call the [Cloud Controller API](http://v3-apidocs.cloudfoundry.org/version/3.97.0/index.html#create-a-role){: external} as shown in the following examples. 
+
+1. Add the target user to the organization if they are not in it already. 
+```bash
+curl “https://api.example.org/v3/roles” 
+  -X POST 
+  -H “Authorization: bearer <token>” 
+  -H “Content-type: application/json” 
+  -d ‘{
+   “type”: “organization_user”,
+   “relationships”: {
+    “user”: {
+     “data”: {
+      “guid”: “<user_guid>”
+     }
+    },
+    “organization”: {
+     “data”: {
+      “guid”: “<org_guid>”
+     }
+    }
+  }’
+```
+{: codeblock}
+1. Assign the target user the Space Developer role in the organizaiton.
+```bash
+curl “https://api.example.org/v3/roles” 
+  -X POST 
+  -H “Authorization: bearer <token>” 
+  -H “Content-type: application/json” 
+  -d ‘{
+   “type”: “space_developer”,
+   “relationships”: {
+    “user”: {
+     “data”: {
+      “guid”: “<user_guid>”
+     }
+    },
+    “space”: {
+     “data”: {
+      “guid”: “<space_guid>”
+     }
+    }
+   }
+  }’
+```
+{: codeblock}
+
 ## Granting users access to tag classic infrastructure resources
 {: #classic-infra}
 {: ui}
@@ -295,7 +347,7 @@ The taggable resources for classic infrastructure are Virtual Guest, Virtual Ded
   2. Click the user's name from the table.
   3. Click **Classic infrastructure**
   4. From the **Permissions** tab, expand the **Devices** category.
-  5. Select **View Hardware Details** and **View Virtual Server Details**. If you need to assign access to Cloud Object Storage S3, File Storage, or Evault Backup, assign the **Storage manage** permission. If you need to assign access to Content Delivery network, assign the **Manage CDN Account** permission.
+  5. Select **View Hardware Details** and **View Virtual Server Details**. If you need to assign access to Cloud Object Storage S3, File Storage, or Evault Backup, assign the **Storage manage** permission. If you need to assign access to Content Delivery Network, assign the **Manage CDN Account** permission.
   6. Click **Save**.
   7. Click the **Devices** tab.
-  8. Select **All bare metal servers** or **All virtual servers** depending on the resource that you want the user to be able to tag.
+  8. Select **All bare metal servers** or **All virtual servers**. Your selection depends on the resource that you want the user to be able to tag.
