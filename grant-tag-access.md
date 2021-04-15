@@ -292,50 +292,53 @@ Complete the following steps to assign the developer space role for a user to ta
 To assign the developer space role for a user to tag Cloud Foundry resources, call the [Cloud Controller API](http://v3-apidocs.cloudfoundry.org/version/3.97.0/index.html#create-a-role){: external} as shown in the following examples. 
 
 1. Add the target user to the organization if they are not in it already. 
-```bash
-curl “https://api.example.org/v3/roles” 
-  -X POST 
-  -H “Authorization: bearer <token>” 
-  -H “Content-type: application/json” 
-  -d ‘{
-   “type”: “organization_user”,
-   “relationships”: {
-    “user”: {
-     “data”: {
-      “guid”: “<user_guid>”
-     }
-    },
-    “organization”: {
-     “data”: {
-      “guid”: “<org_guid>”
-     }
-    }
-  }’
-```
-{: codeblock}
+  ```bash
+  curl “https://api.example.org/v3/roles” 
+    -X POST 
+    -H “Authorization: bearer <token>” 
+    -H “Content-type: application/json” 
+    -d ‘{
+    “type”: “organization_user”,
+    “relationships”: {
+      “user”: {
+      “data”: {
+        “guid”: “<user_guid>”
+      }
+      },
+      “organization”: {
+      “data”: {
+        “guid”: “<org_guid>”
+      }
+      }
+    }’
+  ```
+  {: codeblock}
+  {: curl}
+
 1. Assign the target user the Space Developer role in the organizaiton.
-```bash
-curl “https://api.example.org/v3/roles” 
-  -X POST 
-  -H “Authorization: bearer <token>” 
-  -H “Content-type: application/json” 
-  -d ‘{
-   “type”: “space_developer”,
-   “relationships”: {
-    “user”: {
-     “data”: {
-      “guid”: “<user_guid>”
-     }
-    },
-    “space”: {
-     “data”: {
-      “guid”: “<space_guid>”
-     }
+  ```bash
+  curl “https://api.example.org/v3/roles” 
+    -X POST 
+    -H “Authorization: bearer <token>” 
+    -H “Content-type: application/json” 
+    -d ‘{
+    “type”: “space_developer”,
+    “relationships”: {
+      “user”: {
+      “data”: {
+        “guid”: “<user_guid>”
+      }
+      },
+      “space”: {
+      “data”: {
+        “guid”: “<space_guid>”
+      }
+      }
     }
-   }
-  }’
-```
-{: codeblock}
+    }’
+  ```
+  {: codeblock}
+  {: curl}
 
 ## Granting users access to tag classic infrastructure resources
 {: #classic-infra}
