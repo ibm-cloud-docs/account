@@ -137,7 +137,8 @@ When the `-p classic-infrastucture` parameter is not specified search spans acro
 * To search for resources that are not classic infrastructure that were created between 16 May 2020 and 20 May 2020, enter the following command:
 
     ```
-    ibmcloud resource search "creation_date:[2020-05-16T00:00:00Z TO 2020-05-20T00:00:00Z]"```
+    ibmcloud resource search "creation_date:[2020-05-16T00:00:00Z TO 2020-05-20T00:00:00Z]"
+    ```
     {: codeblock}
      
 
