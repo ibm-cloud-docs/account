@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-02-23"
+lastupdated: "2021-04-19"
 
 keywords: platform notifications, email notifications, IBM Cloud notifications, notification preferences, email preferences, user notifications, infrastructure notifications
 
@@ -130,4 +130,103 @@ To add users to a distribution list, complete the following steps:
 ### Unsubscribing from the distribution list 
 
 To unsubscribe, use the unsubscribe link in the footer of any email that is sent from the distribution list. 
+
+## Adding webhooks to a distribution list 
+{: webhook-distribution-list}
+
+In addition to adding email addresses, you can also add up to 10 webhooks to a distribution list. You can manage the notification distribution list from the [Notification preferences page](https://cloud.ibm.com/user/notifications), under **Additional notification preferences** section, or from the {{site.data.keyword.Bluemix_notm}} console. Creating and using webhooks allow the administrator to configure an application to receive asynchronous notifications whenever an event occurs on the IBM Cloud Platform. The registered webhooks send the information to the specified URL in the form of an HTTP POST request with a JSON payload. The content-type of the request is `application/json`. 
+
+When you receive a notification through a webhook, a payload will be sent to your given webhook endpoint (URL). See the following example:
+
+```
+{
+	"notification": 
+		{
+			"body": [
+				{
+				"contentType": "text/html",
+				"language": "en",
+				"text": "On March 26, 2021, IBM Cloud users will no longer be allowed to create or update IAM access groups with duplicate names. As a result of this change, two access groups in the same account can not have the same name. A user will receive an error when an attempt to create an access group with a duplicate name is made. This change will not have an impact on existing access groups."
+				}
+			],
+			"category": "Announcement",
+			"severity": "Minor",
+			"state": "New issue",
+			"subCategory": "",
+			"startTime": 1618508861,
+			"endTime": 1618595261,
+			"title": [
+				{
+				"language": "en",
+				"text": "New restriction on duplicate IAM access group names"
+				}
+			]
+			"regions": [ 
+				"eu-de",    "eu-gb",
+		    	"us-south", "us-east",
+		    	"ca-tor",   "au-syd",
+		    	"jp-tok",   "jp-osa" 
+		    ],
+		  	"continentNames": [ "Europe", "North America", "Asia Pacific" ],
+		  	"regionNames": [ 
+		  		"Frankfurt",
+			    "London",
+			    "Dallas",
+			    "Washington DC",
+			    "Toronto",
+			    "Sydney",
+			    "Tokyo",
+			    "Osaka" 
+			],
+		  	"componentNames": "Cloud Platform",
+		}
+}
+```
+The payload that you receive informs you about all the details of an occurring event. 
+
+- `text`: This field describes the event that is happening on the platform and concerns you. 
+- `category`: The type of the event. This can be incident, maintenance, announcement, or security bulletins. 
+- `severity`: This refers to the severity of the event. This can be severity 1, 2, 3 or 4 for incidents, high, medium, or low for maintenance, and major or minor for announcements.
+- `startTime`, `endTime`: You can check when the event starts, and when it ends. 
+- `regions`: This field shows you the location of the event. 
+
+`startTime` and `endTime` fields show the start time and end time of the event in Unix UTC timestamps. 
+{: note}
+
+Fields that are sent in the payload can be either required or optional. Optional fields, for example `startTime` will be passed if the notification has this type of information, and will not be passed if the notification does not have it. Required fields, for example `category` will be passed in all cases. The optionality of each event is shown in the following table:
+
+|Type of field | Optionality |
+|--|--|
+|**account_id**: account_id|required|
+|**category**: notification.category |required|
+|**title**: notification.title |required|
+|**startTime**: notification.startTime |optional|
+|**endTime**: notification.endTime |optional|
+|**updateTime**: notification.updateTime |optional|
+|**body**: notification.body|required|
+|**state**: notification.state|optional|
+|**sourceID**: notification.sourceID |optional|
+|**regions**: notification.regions|optional|
+|**continentNames**: notification.continentNames|optional|
+|**regionNames**: notification.regionNames|optional|
+|**componentNames**: notification.componentNames |optional|
+|**subCategory**: notification.subCategory|optional|
+|**severity**: notification.severity|optional|
+{: caption="Table 1. Optionality of fields in a payload" caption-side="top"}
+
+
+To add webhooks to a distribution list, complete the following steps: 
+1. Using the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account**, > **Notification distribution list**. 
+2. Click **Add** and choose **Add webhook** from the drop down list. 
+3. Enter a name identifier for your webhook and an endpoint URL, where notifications about events will be sent to, once the webhook is triggered. Before this step you need to set up the URL that will be your own custom endpoint.
+
+   Custom header and secure header fields are also available to set. You can specify these by clicking **Add header +** or **Add secure header +**. If you choose to add a secure header for credentials, they are passed encrypted with the private data. This type of header can be deleted, but cannot be edited later. You can easily edit and delete custom headers later. 
+  {: tip}
+  
+  If you no longer want to receive notifications, you can easily delete your webhook from the distribution list by clicking the **Actions icon** ![More Actions icon](../icons/action-menu-icon.svg) > **Delete** in your webhook's row. The notifications will no longer be forwarded there.
+
+  You can add up to 10 webhooks to the distribution list. You can select which IBM Cloud account you use by clicking the account switcher on the {{site.data.keyword.Bluemix_notm}} console. Users in the selected account receive notifications about any events that affect the account. 
+  {: note}
+  
+
 
