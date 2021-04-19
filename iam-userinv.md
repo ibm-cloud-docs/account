@@ -19,6 +19,7 @@ subcollection: account
 {:support: data-reuse='support'}  
 {:tip: .tip}
 {:note: .note}
+{:important: .important}
 {:external: target="_blank" .external}
 {:video: .video}
 {:ui: .ph data-hd-interface='ui'}
