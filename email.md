@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-04-19"
+lastupdated: "2021-04-21"
 
 keywords: platform notifications, email notifications, IBM Cloud notifications, notification preferences, email preferences, user notifications, infrastructure notifications
 
@@ -129,14 +129,14 @@ To add users to a distribution list, complete the following steps:
 
 ### Unsubscribing from the distribution list 
 
-To unsubscribe, use the unsubscribe link in the footer of any email that is sent from the distribution list. 
+To unsubscribe, use the link in the footer of any email that is sent from the distribution list. 
 
 ## Adding webhooks to a distribution list 
 {: webhook-distribution-list}
 
-In addition to adding email addresses, you can also add up to 10 webhooks to a distribution list. You can manage the notification distribution list from the [Notification preferences page](https://cloud.ibm.com/user/notifications), under **Additional notification preferences** section, or from the {{site.data.keyword.Bluemix_notm}} console. Creating and using webhooks allow the administrator to configure an application to receive asynchronous notifications whenever an event occurs on the IBM Cloud Platform. The registered webhooks send the information to the specified URL in the form of an HTTP POST request with a JSON payload. The content-type of the request is `application/json`. 
+In addition to adding email addresses, you can also add up to 10 webhooks to a distribution list. Account administrators can create and use webhooks to configure an application to receive asynchronous notifications whenever a platform event occurs. The registered webhooks send the information to the specified URL in the form of an HTTP POST request with a JSON payload. The content-type of the request is `application/json`. 
 
-When you receive a notification through a webhook, a payload will be sent to your given webhook endpoint (URL). See the following example:
+When you receive a notification through a webhook, a payload is be sent to your given webhook endpoint (URL). See the following example:
 
 ```
 {
@@ -190,42 +190,42 @@ The payload that you receive informs you about all the details of an occurring e
 - `startTime`, `endTime`: You can check when the event starts, and when it ends. 
 - `regions`: This field shows you the location of the event. 
 
-`startTime` and `endTime` fields show the start time and end time of the event in Unix UTC timestamps. 
+The `startTime` and `endTime` fields show the start time and end time of the event in Unix UTC timestamps. 
 {: note}
 
-Fields that are sent in the payload can be either required or optional. Optional fields, for example `startTime` will be passed if the notification has this type of information, and will not be passed if the notification does not have it. Required fields, for example `category` will be passed in all cases. The optionality of each event is shown in the following table:
+Fields that are sent in the payload can be either required or optional. Optional fields, for example `startTime`, are passed if the notification has this type of information, and aren't be passed if the notification does not have it. Required fields, for example `category`, are passed in all cases. The following table lists which fields are required and which ones are optional:
 
-|Type of field | Optionality |
+| Field | Required or optional |
 |--|--|
-|**account_id**: account_id|required|
-|**category**: notification.category |required|
-|**title**: notification.title |required|
-|**startTime**: notification.startTime |optional|
-|**endTime**: notification.endTime |optional|
-|**updateTime**: notification.updateTime |optional|
-|**body**: notification.body|required|
-|**state**: notification.state|optional|
-|**sourceID**: notification.sourceID |optional|
-|**regions**: notification.regions|optional|
-|**continentNames**: notification.continentNames|optional|
-|**regionNames**: notification.regionNames|optional|
-|**componentNames**: notification.componentNames |optional|
-|**subCategory**: notification.subCategory|optional|
-|**severity**: notification.severity|optional|
-{: caption="Table 1. Optionality of fields in a payload" caption-side="top"}
+|**account_id**: account_id|Required|
+|**category**: notification.category |Required|
+|**title**: notification.title |Required|
+|**startTime**: notification.startTime |Optional|
+|**endTime**: notification.endTime |Optional|
+|**updateTime**: notification.updateTime |Optional|
+|**body**: notification.body|Required|
+|**state**: notification.state|Optional|
+|**sourceID**: notification.sourceID |Optional|
+|**regions**: notification.regions|Optional|
+|**continentNames**: notification.continentNames|Optional|
+|**regionNames**: notification.regionNames|Optional|
+|**componentNames**: notification.componentNames |Optional|
+|**subCategory**: notification.subCategory|Optional|
+|**severity**: notification.severity|Optional|
+{: caption="Table 1. Fields in a payload" caption-side="top"}
 
 
 To add webhooks to a distribution list, complete the following steps: 
-1. Using the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account**, > **Notification distribution list**. 
-2. Click **Add** and choose **Add webhook** from the drop down list. 
-3. Enter a name identifier for your webhook and an endpoint URL, where notifications about events will be sent to, once the webhook is triggered. Before this step you need to set up the URL that will be your own custom endpoint.
+1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account**, > **Notification distribution list**. 
+2. Click **Add**, and select **Add webhook**. 
+3. Enter a name identifier for your webhook and an endpoint URL, which is where notifications about events are sent, when the webhook is triggered. Before this step you need to set up the URL that will be your own custom endpoint.
 
-   Custom header and secure header fields are also available to set. You can specify these by clicking **Add header +** or **Add secure header +**. If you choose to add a secure header for credentials, they are passed encrypted with the private data. This type of header can be deleted, but cannot be edited later. You can easily edit and delete custom headers later. 
+   Custom header and secure header fields are also available to set. You can specify these by clicking **Add header** or **Add secure header**. If you choose to add a secure header for credentials, they are passed encrypted with the private data. This type of header can be deleted, but cannot be edited later. You can easily edit and delete custom headers later. 
   {: tip}
   
-  If you no longer want to receive notifications, you can easily delete your webhook from the distribution list by clicking the **Actions icon** ![More Actions icon](../icons/action-menu-icon.svg) > **Delete** in your webhook's row. The notifications will no longer be forwarded there.
+  If you no longer want to receive notifications, you can easily delete your webhook from the distribution list by clicking the **Actions icon** ![More Actions icon](../icons/action-menu-icon.svg) > **Delete** in your webhook's row. 
 
-  You can add up to 10 webhooks to the distribution list. You can select which IBM Cloud account you use by clicking the account switcher on the {{site.data.keyword.Bluemix_notm}} console. Users in the selected account receive notifications about any events that affect the account. 
+  You can select which {{site.data.keyword.cloud_notm}} account you use by clicking the account switcher in the console. Users in the selected account receive notifications about any events that affect the account. 
   {: note}
   
 
