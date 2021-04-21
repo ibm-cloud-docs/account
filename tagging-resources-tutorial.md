@@ -2,7 +2,7 @@
 
 copyright:
    years: 2021
-lastupdated: "2021-02-25"
+lastupdated: "2021-04-21"
 
 keywords: tagging resources, managing access, access management tags, create access management tags, get started with access management tags, IAM-enabled resources, tag your resource, access group, access group policy
 
@@ -69,11 +69,11 @@ Now that you created your tag, you can add it to your resource.
 2. Find your {{site.data.keyword.cos_full}} instance and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) > **Add tags**.
 3. Type `project:analysis` and press Enter.
 
-## Assign access to your resource
-{: #tagging-resources-assign}
+## Create an access group
+{: #tagging-create-access-group}
 {: step}
 
-Define the level of access that users have to your {{site.data.keyword.cos_short}} based on the tags that you previously created. See the following examples for each access level:
+You'll define the level of access that users have to your {{site.data.keyword.cos_short}} based on the tags that you previously created. See the following examples for each access level:
 * With reader role, users can list and download objects in buckets.
 * With writer role, users can create and delete buckets.
 * With manager role, users can control all aspects of data storage, like adding a retention policy and bucket firewall.
@@ -84,6 +84,10 @@ First, create an access group to streamline the task of assigning access to mult
 2. Click **Create**.
 3. Enter a unique name to identify your access group, an optional description, and click **Create**.
 
+## Assign a policy
+{: #tagging-assign-policy}
+{: step}
+
 Next, assign a policy to the group: 
 
 1. Click **Access policies** > **Assign access**. 
@@ -93,6 +97,10 @@ Next, assign a policy to the group:
 6. Select all roles that apply. To view a list of all actions that are mapped to a specific role, click the numbers listed next to each role.
 7. Click **Add** > **Assign**.
 
+## Add users to your access group
+{: #tagging-add-users-access-group}
+{: step}
+
 Then, add users to your access group:
 
 1. Click **Users** > **Add users**.
@@ -101,3 +109,7 @@ Then, add users to your access group:
 After you create the access policy, access to other resources can be granted or revoked by attaching and detaching the same access management tag to those resources.
 {: note}
 
+## Next steps
+{: #tagging-resources-next}
+
+To learn how you can perform the same actions by using CLI and API commands, see [Working with tags](/docs/account?topic=account-tag).
