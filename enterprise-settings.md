@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-03-04"
+lastupdated: "2021-04-22"
 
 keywords: enterprise, enterprise settings, manage enterprise, view enterprise, rename enterprise
 
