@@ -92,63 +92,63 @@ To import an existing account, complete the following steps:
 To import an existing account to the enterprise, call the [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#import-an-account-into-an-enterprise){: external} as shown in the following sample request. Replace the {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) token and ID variables with the values from your enterprise.
 
 ```bash
-curl -X PUT \
-"https://enterprise.cloud.ibm.com/v1/enterprises/$ENTERPRISE_ID/import/accounts/$ACCOUNT_ID" \
--H "Authorization: Bearer <IAM_Token>" -H 'Content-Type: application/json' \
--d '{
-  "parent": "crn:v1:bluemix:public:enterprise::a/$ENTERPRISE_ACCOUNT_ID::enterprise:$ENTERPRISE_ID"
+curl -X PUT "https://enterprise.cloud.ibm.com/v1/enterprises/$ENTERPRISE_ID/import/accounts/$ACCOUNT_ID" -H "Authorization: Bearer <IAM_Token>" -H 'Content-Type: application/json' -d '{
+  "parent": "crn:v1:bluemix:public:enterprise::a/$ENTERPRISE_ACCOUNT_ID::enterprise:$ENTERPRISE_ID",
+  "billing_unit_id": "$BILLING_UNIT_ID"
 }'
 ```
 {: codeblock}
 {: curl}
 
 ```java
-ImportAccountToEnterpriseOptions options = new ImportAccountToEnterpriseOptions.Builder()
-        .enterpriseId("ent-id-123")
-        .accountId("account-id-123")
-        .parent("'crn:v1:bluemix:public:enterprise::a/ent-account-id-123::enterprise:ent-id-123'")
-        .billing_unit_id("billing-unit")
-        .build();
-Response<Void> response = service.importAccountToEnterprise(options).execute();
+ImportAccountToEnterpriseOptions importAccountToEnterpriseOptions = new ImportAccountToEnterpriseOptions.Builder()
+    .enterpriseId(enterpriseId)
+    .accountId(importAccountId)
+    .build();
+
+Response<Void> response = service.importAccountToEnterprise(importAccountToEnterpriseOptions).execute();
 ```
 {: codeblock}
 {: java}
 
-
 ```javascript
 const params = {
-        enterpriseId:'ent-id-123', 
-        accountId: 'account-id-123', 
-        parent: 'crn:v1:bluemix:public:enterprise::a/ent-account-id-123::enterprise:ent-id-123', 
-        billingUnitId: 'billing-unit'
+  enterpriseId: enterpriseId,
+  accountId: importAccountId,
 };
-service.importAccountToEnterprise(params).then(response => {
-        console.log(response);
-}).catch(err => {});
+
+enterpriseManagementService.importAccountToEnterprise(params)
+  .then(res => {
+    done();
+  })
+  .catch(err => {
+    console.warn(err)
+  });
 ```
 {: codeblock}
 {: javascript}
 
 ```python
-response = service.import_account_to_enterprise (
-        enterprise_id = 'ent-id-123', 
-        account_id = 'account-id-123', 
-        parent= 'crn:v1:bluemix:public:enterprise::a/ent-account-id-123::enterprise:ent-id-123', 
-        billing_unit_id = 'billing-unit'
+response = enterprise_management_service.import_account_to_enterprise(
+  enterprise_id=enterprise_id,
+  account_id=import_account_id,
 )
+
+print(json.dumps(response, indent=2))
 ```
 {: codeblock}
 {: python}
 
 ```go
-importAccountToEnterpriseOptionsModel := service.NewImportAccountToEnterpriseOptions(
-         "ent-id-123",
-         "account-id-123")
-importAccountToEnterpriseOptionsModel.SetParent(
-         "crn:v1:bluemix:public:enterprise::a/ent-account-id-123::enterprise:ent-id-123")
-importAccountToEnterpriseOptionsModel.SetBillingUnitID(
-         "billing-unit")
-result, detailedResponse, err := service.ImportAccountToEnterprise(importAccountToEnterpriseOptionsModel)
+importAccountToEnterpriseOptions := enterpriseManagementService.NewImportAccountToEnterpriseOptions(
+  enterpriseID,
+  importAccountID,
+)
+
+response, err := enterpriseManagementService.ImportAccountToEnterprise(importAccountToEnterpriseOptions)
+if err != nil {
+  panic(err)
+}
 ```
 {: codeblock}
 {: go}
