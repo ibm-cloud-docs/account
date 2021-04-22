@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-04-14"
+lastupdated: "2021-04-22"
 
 keywords: enterprise, add account, import account, create account
 
@@ -196,60 +196,77 @@ After you create the account, the account owner can log in to the account to inv
 To create a new account in the enterprise, call the Enterprise Management API as shown in the following sample request, replacing the IAM token and ID variables with the values from your enterprise. For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-a-new-account-in-an-enterprise){: external}.
 
 ```bash
-curl -X POST \
-"https://enterprise.cloud.ibm.com/v1/accounts \
--H "Authorization: Bearer <IAM_Token>" \
--H 'Content-Type: application/json' \
+curl -X POST "https://enterprise.cloud.ibm.com/v1/accounts 
+-H "Authorization: Bearer <IAM_Token>" 
+-H 'Content-Type: application/json' 
 -d '{
-  "parent": "crn:v1:bluemix:public:enterprise::a/$ENTERPRISE_ACCOUNT_ID::account-group:$ACCOUNT_GROUP_ID",
-  "name": "Sample Account",
-  "owner_iam_id": "IBMid-0123ABC"
+  "parent": 
+  "crn:v1:bluemix:public:enterprise::a/$ENTERPRISE_ACCOUNT_ID::account-group:$ACCOUNT_GROUP_ID",
+  "name": "Example Account",
+  "owner_iam_id": "$OWNER_IAM_ID"
 }'
 ```
 {: codeblock}
 {: curl}
 
 ```java
-CreateAccountOptions options = new CreateAccountOptions.Builder()
-        .parent("crn:v1:bluemix:public:enterprise::a/ent-account-id-123::account-group:account-group-id-12")
-        .name("IBM")
-        .ownerIamId("IBMid-0123ABC")
-        .build();
-Response<CreateAccountResponse> response = service.createAccount(options).execute();
+CreateAccountOptions createAccountOptions = new CreateAccountOptions.Builder()
+    .parent(parentCRN)
+    .name("Example Account")
+    .ownerIamId(enterpriseAccountIamId)
+    .build();
+
+Response<CreateAccountResponse> response = service.createAccount(createAccountOptions).execute();
+CreateAccountResponse createAccountResponse = response.getResult();
+
+System.out.println(createAccountResponse);();
 ```
 {: codeblock}
 {: java}
 
 ```javascript
 const params = {
-        parent: 'crn:v1:bluemix:public:enterprise::a/ent-account-id-123::account-group:account-group-id-12', 
-        name: 'IBM',
-        ownerIamId: 'IBMid-0123ABC'
+  parent: parentCrn,
+  name: 'Example Account',
+  ownerIamId: enterpriseAccountIamId,
 };
-service.createAccount(params).then(response => {
-        console.log(response)
-}).catch(err => {});
+
+enterpriseManagementService.createAccount(params)
+  .then(res => {
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err)
+  });
 ```
 {: codeblock}
 {: javascript}
 
 ```python
-response = service.create_account(
-        parent = 'crn:v1:bluemix:public:enterprise::a/ent-account-id-123::account-group:account-group-id-12', 
-        name = 'IBM',
-        owner_iam_id = 'IBMid-0123ABC'
-)
+create_account_response = enterprise_management_service.create_account(
+  parent=parent_crn,
+  name='Example Account',
+  owner_iam_id=enterprise_account_iam_id,
+).get_result()
+
+print(json.dumps(create_account_response, indent=2))
 ```
 {: codeblock}
 {: python}
 
 ```go
-createAccountOptionsModel := service.NewCreateAccountOptions()
-createAccountOptionsModel.SetParent("crn:v1:bluemix:public:enterprise::a/ent-account-id-123::account-group:account-group-id-12"))
-createAccountOptionsModel.SetName("IBM")
-createAccountOptionsModel.SetOwnerIamID("IBMid-0123ABC")
-result, detailedResponse, err := service.CreateAccount(createAccountOptionsModel)
+createAccountOptions := enterpriseManagementService.NewCreateAccountOptions(
+  parentCRN,
+  "Example Account",
+  enterpriseAccountIamID,
+)
+
+createAccountResponse, response, err := enterpriseManagementService.CreateAccount(createAccountOptions)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(createAccountResponse, "", "  ")
+fmt.Println(string(b))
 ```
 {: codeblock}
 {: go}
-
