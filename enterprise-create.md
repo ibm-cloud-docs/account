@@ -113,16 +113,15 @@ The account that you used to create the enterprise is now a part of the enterpri
 {: #create-api}
 {: api}
 
-You can programmatically create an enterprise by calling the Enterprise Management API as shown in the following sample request. For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-enterprise){: external}.
+You can programmatically create an enterprise by calling the Enterprise Management API as shown in the following sample request. For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise){: external}.
 
 ```bash
-curl -X POST \
-"https://enterprise.cloud.ibm.com/v1/enterprises \
--H "Authorization: Bearer <Token>" \
--H 'Content-Type: application/json' \
+curl -X POST "https://enterprise.cloud.ibm.com/v1/enterprises 
+-H "Authorization: Bearer <IAM_Token>" 
+-H 'Content-Type: application/json' 
 -d '{
   "source_account_id": "a1b2c32a5ea94809a9840f5e23c362d",
-  "name": "Sample Enterprise",
+  "name": "Example Enterprise",
   "domain": "example.com",
   "primary_contact_iam_id": "IBMid-0123ABC"
 }'
@@ -131,49 +130,63 @@ curl -X POST \
 {: curl}
 
 ```java
-CreateEnterpriseOptions options = new CreateEnterpriseOptions.Builder()
-        .sourceAccountId("a1b2c32a5ea94809a9840f5e23c362d")
-        .name("IBM")
-        .primaryContactIamID("IBMid-0123ABC")
-        .domain("IBM.com")
-        .build();
-Response<CreateEnterpriseResponse> response = service.createEnterprise(options).execute();
+CreateEnterpriseOptions createEnterpriseOptions = new CreateEnterpriseOptions.Builder()
+    .sourceAccountId(srcAccountId)
+    .name("Example Enterprise")
+    .primaryContactIamId(contactIamId)
+    .build();
+
+Response<CreateEnterpriseResponse> response = service.createEnterprise(createEnterpriseOptions).execute();
+CreateEnterpriseResponse createEnterpriseResponse = response.getResult();
+
+System.out.println(createEnterpriseResponse);
 ```
 {: codeblock}
 {: java}
 
 ```javascript
 const params = {
-        sourceAccountId: 'a1b2c32a5ea94809a9840f5e23c362d'
-        name: 'IBM'
-        primaryContactIamId: 'IBMid-0123ABC'
-        domain: 'IBM.com'
+  sourceAccountId: srcAccountId,
+  name: 'Example Enterprise',
+  primaryContactIamId: contactIamId,
 };
-service.createEnterprise(params).then(response => {
-        console.log(response);
-}).catch(err => {});
+
+enterpriseManagementService.createEnterprise(params)
+  .then(res => {
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err)
+  });
 ```
 {: codeblock}
 {: javascript}
 
 ```python
-response = service.create_enterprise (
-        source_account_id = 'a1b2c32a5ea94809a9840f5e23c362d',
-        name = 'IBM',
-        primary_contact_iam_id = 'IBMid-0123ABC',
-        domain= 'IBM.com'
-)
+create_enterprise_response = enterprise_management_service.create_enterprise(
+  source_account_id=src_account_id,
+  name='Example Enterprise',
+  primary_contact_iam_id=contact_iam_id,
+).get_result()
+
+print(json.dumps(create_enterprise_response, indent=2))
 ```
 {: codeblock}
 {: python}
 
 ```go
-createEnterpriseOptionsModel := service.NewCreateEnterpriseOptions(
-        "a1b2c32a5ea94809a9840f5e23c362d",
-        "Sample Enterprise",
-        "example.com",
-        "IBMid-0123ABC")
-result, detailedResponse, err := service.createEnterprise(createEnterpriseOptionsModel)
+createEnterpriseOptions := enterpriseManagementService.NewCreateEnterpriseOptions(
+  srcAccountID,
+  "Example Enterprise",
+  contactIamID,
+)
+
+createEnterpriseResponse, response, err := enterpriseManagementService.CreateEnterprise(createEnterpriseOptions)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(createEnterpriseResponse, "", "  ")
+fmt.Println(string(b))
 ```
 {: codeblock}
 {: go}
