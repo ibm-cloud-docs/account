@@ -187,19 +187,22 @@ Managing your account, resources, and access
 
     {: .topicgroup}
     Managing your account
+        email.md
+        account_settings.md
         account-upgrade.md
         create-mult-accounts.md
         transfer.md
         profile.md
         contact_info.md
         feature_codes.md
+        signup-commit.md
+        shell-settings.md
 
         {: .topicgroup}
-        Updating account settings
-            account_settings.md
-            shell-settings.md
-            eu_hipaa_supported.md
-            email.md
+        Updating account settings for compliance
+            eu-supported.md
+            financial-services-validated.md
+            hipaa-supported.md
 
     {: .topicgroup}
     Managing orgs and spaces
