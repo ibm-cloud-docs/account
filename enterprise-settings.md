@@ -60,15 +60,67 @@ Also, you can rename your enterprise by clicking **Rename** in the Enterprise de
 {: #enterprise-manage-api}
 {: api}
 
-You can programmatically update an enterprise by calling the Enterprise Management API as shown in the following sample request. You can update the enterprise name or domain by passing the new values on the API call. For detailed information about the API, see the [Enterprise Management API documentation](https://{DomainName}/apidocs/enterprise-apis/enterprise#update-an-enterprise){: external}.
+You can programmatically update an enterprise by calling the Enterprise Management API as shown in the following sample request. You can update the enterprise name by passing the new values on the API call. For detailed information about the API, see the [Enterprise Management API documentation](https://{DomainName}/apidocs/enterprise-apis/enterprise#update-an-enterprise){: external}.
 
-```
-curl -X PATCH \
-"https://enterprise.cloud.ibm.com/v1/enterprises/$ENTERPRISE_ID" \
--H "Authorization: $IAM_TOKEN" \
--H 'Content-Type: application/json' \
+```bash
+curl -X PATCH "https://enterprise.cloud.ibm.com/v1/account-groups/$ACCOUNT_GROUP_ID" 
+-H "Authorization: Bearer <IAM_Token>" 
+-H 'Content-Type: application/json' 
 -d '{
-  "name": "Brand New Sample Enterprise",
-  "domain": "new.example.com"
+  "name": "Updated Example Account Group",
 }'
 ```
+{: codeblock}
+{: curl}
+
+```java
+UpdateAccountGroupOptions updateAccountGroupOptions = new UpdateAccountGroupOptions.Builder()
+    .accountGroupId(accountGroupId)
+    .name("Updated Example Account Group")
+    .build();
+
+Response<Void> response = service.updateAccountGroup(updateAccountGroupOptions).execute();
+```
+{: codeblock}
+{: java}
+
+```javascript
+const params = {
+  accountGroupId: accountGroupId,
+  name: 'Updated Example Account Group',
+};
+
+enterpriseManagementService.updateAccountGroup(params)
+  .then(res => {
+    done();
+  })
+  .catch(err => {
+    console.warn(err)
+  });
+```
+{: codeblock}
+{: javascript}
+
+```python
+response = enterprise_management_service.update_account_group(
+  account_group_id=account_group_id,
+  name='Updated Example Account Group',
+)
+```
+{: codeblock}
+{: python}
+
+```go
+uupdateAccountGroupOptions := enterpriseManagementService.NewUpdateAccountGroupOptions(
+  accountGroupID,
+)
+updateAccountGroupOptions.SetName("Updated Example Account Group")
+
+response, err := enterpriseManagementService.UpdateAccountGroup(updateAccountGroupOptions)
+if err != nil {
+  panic(err)
+}
+```
+{: codeblock}
+{: go}
+
