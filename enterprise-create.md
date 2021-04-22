@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-02-22"
+lastupdated: "2021-04-22"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, multiple account, video
 
