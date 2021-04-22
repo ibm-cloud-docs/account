@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-03-04"
+lastupdated: "2021-04-22"
 
 keywords: enterprise, create account group, organize accounts, move accounts, account group, change contact, account group contact 
 
@@ -82,67 +82,81 @@ You can programmatically create an account group in the enterprise by calling th
 The following sample request creates an account group directly under the enterprise level. When you call the API, replace the ID variables with the values from your enterprise. To nest the account group within another account group, specify the ID of the account group in the Cloud Resource Name (CRN) in the following format: `crn:v1:bluemix:public:enterprise::a/$ENTERPRISE_ACCOUNT_ID::account-group:$ACCOUNT_GROUP_ID`.
 
 ```bash
-curl -X POST \
-"https://enterprise.cloud.ibm.com/v1/account-groups \
--H "Authorization: Bearer <IAM_Token>" \
--H 'Content-Type: application/json' \
+curl -X POST "https://enterprise.test.cloud.ibm.com/v1/account-groups 
+-H "Authorization: Bearer <IAM_Token>" 
+-H 'Content-Type: application/json' 
 -d '{
   "parent": "crn:v1:bluemix:public:enterprise::a/$ENTERPRISE_ACCOUNT_ID::enterprise:$ENTERPRISE_ID",
-  "name": "Sample Account Group",
-  "primary_contact_iam_id": "IBMid-0123ABC"
+  "name": "Example Account Group",
+  "primary_contact_iam_id": "$PRIMARY_CONTACT_IAM_ID"
 }'
 ```
 {: codeblock}
 {: curl}
 
 ```java
-CreateAccountGroupOptions options = new CreateAccountGroupOptions.Builder()
-        .parent("'crn:v1:bluemix:public:enterprise::a/ent-account-id-123::enterprise:ent-id-123'")
-        .name("billing-unit")
-        .primary_contact_iam_id("IBMid-55ABC")
-        .build();
-Response<CreateAccountGroupResponse> response = service.createAccountGroup(options).execute();
+CreateAccountGroupOptions createAccountGroupOptions = new CreateAccountGroupOptions.Builder()
+    .parent(parentCRN)
+    .name("Example Account Group")
+    .primaryContactIamId(enterpriseAccountIamId)
+    .build();
+
+Response<CreateAccountGroupResponse> response = service.createAccountGroup(createAccountGroupOptions).execute();
+CreateAccountGroupResponse createAccountGroupResponse = response.getResult();
+
+System.out.println(createAccountGroupResponse);
 ```
 {: codeblock}
 {: java}
 
 ```javascript
 const params = {
-        parent: 'crn:v1:bluemix:public:enterprise::a/ent-account-id-123::enterprise:ent-id-123', 
-        name: 'Sample Account Group', 
-        primaryContactIamId: 'IBMid-55ABCD'
+  parent: parentCrn,
+  name: 'Example Account Group',
+  primaryContactIamId: enterpriseAccountIamId,
 };
-service.createAccountGroup(params).then(response => {
-        console.log(response);
-}).catch(err => {});
+
+enterpriseManagementService.createAccountGroup(params)
+  .then(res => {
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err)
+  });
 ```
 {: codeblock}
 {: javascript}
 
 ```python
-response = service.create_account_group (
-        parent = 'crn:v1:bluemix:public:enterprise::a/ent-account-id-123::enterprise:ent-id-123', 
-        name = 'Sample Account Group', 
-        primary_contact_iam_id = 'IBMid-55ABCD'
- )
+create_account_group_response = enterprise_management_service.create_account_group(
+  parent=parent_crn,
+  name='Example Account Group',
+  primary_contact_iam_id=enterprise_account_iam_id,
+).get_result()
+
+print(json.dumps(create_account_group_response, indent=2))
 ```
 {: codeblock}
 {: python}
 
 ```go
-createAccountGroupOptionsModel := service.NewCreateAccountGroupOptions(
-        "ent-id-123", 
-        "account-id-123")
-createAccountGroupOptionsModel.SetParent(
-        "crn:v1:bluemix:public:enterprise::a/ent-account-id-123::enterprise:ent-id-123")
-createAccountGroupOptionsModel.SetName("Sample Account Group")
-createAccountGroupOptionsModel.SetPrimaryContactIamID( "IBMid-55ABCD")
-result, detailedResponse, err := service.CreateAccountGroup(createAccountGroupOptionsModel)
+createAccountGroupOptions := enterpriseManagementService.NewCreateAccountGroupOptions(
+  parentCRN,
+  "Example Account Group",
+  enterpriseAccountIamID,
+)
+
+createAccountGroupResponse, response, err := enterpriseManagementService.CreateAccountGroup(createAccountGroupOptions)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(createAccountGroupResponse, "", "  ")
+fmt.Println(string(b))
 ```
 {: codeblock}
 {: go}
 
-For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#create-an-account-group){: external}.
+For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise){: external}.
 
 ## Moving accounts within the enterprise
 {: #move-accounts}
@@ -198,55 +212,65 @@ To move an account, you need the Administrator role on the Billing service in th
 You can move an account by calling the Enterprise Management API as shown in the following sample request. Replace the IAM token and ID variables with the values from your enterprise.
 
 ```bash
-curl -X PATCH \
-"https://enterprise.cloud.ibm.com/v1/accounts/$ACCOUNT_ID" \
--H "Authorization: Bearer <IAM_Token>" \
--H 'Content-Type: application/json' \
+curl -X PATCH "https://enterprise.cloud.ibm.com/v1/accounts/$ACCOUNT_ID" 
+-H "Authorization: Bearer <IAM_Token>" 
+-H 'Content-Type: application/json' 
 -d '{
-  "parent": crn:v1:bluemix:public:enterprise::a/$ENTERPRISE_ACCOUNT_ID::account-group:$ACCOUNT_GROUP_1"",
+  "parent": crn:v1:bluemix:public:enterprise::a/$ENTERPRISE_ACCOUNT_ID::account-group:$NEW_PARENT_ACCOUNT_GROUP"",
 }'
 ```
 {: codeblock}
 {: curl}
 
 ```java
-UpdateAccountOptions options = new UpdateAccountOptions.Builder()
-        .accountId("account-id-123")
-        .parent("crn:v1:bluemix:public:enterprise::a/ent-id-123::account-group:account-group-123")
-        .build();
-Response<Void> response = service.updateAccount(options).execute();
+UpdateAccountOptions updateAccountOptions = new UpdateAccountOptions.Builder()
+    .accountId(accountId)
+    .parent(newParentCRN)
+    .build();
+
+Response<Void> response = service.updateAccount(updateAccountOptions).execute();
 ```
 {: codeblock}
 {: java}
 
 ```javascript
 const params = {
-        accountId: 'account-id-123', 
-        parent: 'crn:v1:bluemix:public:enterprise::a/ent-id-123::account-group:account-group-123'
+  accountId: accountId,
+  parent: newParentCrn,
 };
-service.updateAccount(params).then(response => {
-        console.log(response)
-}).catch(err => {});
+
+enterpriseManagementService.updateAccount(params)
+  .then(res => {
+    done();
+  })
+  .catch(err => {
+    console.warn(err)
+  });
 ```
 {: codeblock}
 {: javascript}
 
 ```python
-response = service.update_account ( 
-        account_id = 'account-id-123', 
-        parent = 'crn:v1:bluemix:public:enterprise::a/ent-id-123::account-group:account-group-123'
+response = enterprise_management_service.update_account(
+  account_id=account_id,
+  parent=new_parent_crn,
 )
 ```
 {: codeblock}
 {: python}
 
 ```go
-updateAccountOptionsModel := service.NewUpdateAccountOptions()
-updateAccountOptionsModel.SetAccountID("account-id-123")
-updateAccountOptionsModel.SetParent("crn:v1:bluemix:public:enterprise::a/ent-id-123::account-group:account-group-123")
-result, detailedResponse, err := service.UpdateAccount(updateAccountOptionsModel)
+updateAccountOptions := enterpriseManagementService.NewUpdateAccountOptions(
+  accountID,
+  newParentCRN,
+)
+
+response, err := enterpriseManagementService.UpdateAccount(updateAccountOptions)
+if err != nil {
+  panic(err)
+}
 ```
 {: codeblock}
 {: go}
 
-For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#move-an-account-with-the-enterprise){: external}.
+For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise){: external}.
