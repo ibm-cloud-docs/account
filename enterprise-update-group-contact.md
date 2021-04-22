@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-03-04"
+lastupdated: "2021-04-22"
 
 keywords: enterprise, organize accounts, account group, change contact, account group contact 
 
@@ -57,56 +57,71 @@ To update the primary contact for the account group, call the [Enterprise Manage
 
 1. If a user that you want to assign as the contact isn't in the enterprise, first invite the user to the enterprise account. See [Inviting users](/docs/account?topic=account-iamuserinv) for more information.
 
-1. To find the IAM ID for the new contact, see [List accounts](https://cloud.ibm.com/apidocs/enterprise-apis/enterprise#list-accounts) in the Enterprise Management API. 
+1. Update the primary contact by passing the IAM ID of the user you want to be the new primary contact for the enterprise. 
 
-```
+```bash
   curl -X PATCH \
   "https://enterprise.cloud.ibm.com/v1/account-groups/$ACCOUNT_GROUP_ID" \
   -H "Authorization: Bearer <IAM_Token>" \
   -H 'Content-Type: application/json' \
   -d '{
-    "primary_contact_iam_id": "iam_id"
+    "primary_contact_iam_id": "enterpriseAccountIamId"
   }'
   ```
 {: codeblock}
 {: curl}
 
-```
-UpdateAccountGroupOptions options = new UpdateAccountGroupOptions.Builder()
-        .accountGroupId("ent-id-123")
-        .name("IBM")
-        .build();
-Response<Void> response = service.updateAccountGroup(options).execute();
+```java
+UpdateAccountGroupOptions updateAccountGroupOptions = new UpdateAccountGroupOptions.Builder()
+    .accountGroupId(accountGroupId)
+    .name("Updated Example Account Group")
+    .primaryContactIamId(enterpriseAccountIamId)
+    .build();
+
+Response<Void> response = service.updateAccountGroup(updateAccountGroupOptions).execute();
 ```
 {: codeblock}
 {: java}
 
-```
+```javascript
 const params = {
-        accountGroupId: 'account-group-id-12',
-        name: 'IBM'
+  accountGroupId: accountGroupId,
+  name: 'Updated Example Account Group',
+  primaryContactIamId: enterpriseAccountIamId,
 };
-service.updateAccountGroup(params).then(response => {
-        console.log(response)
-}).catch(err => {});
+
+enterpriseManagementService.updateAccountGroup(params)
+  .then(res => {
+    done();
+  })
+  .catch(err => {
+    console.warn(err)
+  });
 ```
 {: codeblock}
 {: javascript}
 
-```
-response = service.update_account_group ( 
-        account_group_id = 'account-group-id-12',
-        name = 'IBM'
+```python
+response = enterprise_management_service.update_account_group(
+  account_group_id=account_group_id,
+  name='Updated Example Account Group',
+  primary_contact_iam_id=enterprise_account_iam_id,
 )
 ```
 {: codeblock}
 {: python}
 
-```
-updateAccountGroupOptionsModel := service.NewUpdateAccountGroupOptions()
-updateAccountGroupOptionsModel.SetAccountGroupID("account-group-id-123")
-updateAccountGroupOptionsModel.SetName("IBM")
-result, detailedResponse, err := service.UpdateAccountGroup(updateAccountGroupOptionsModel)
+```go
+updateAccountGroupOptions := enterpriseManagementService.NewUpdateAccountGroupOptions(
+  accountGroupID,
+)
+updateAccountGroupOptions.SetName("Updated Example Account Group")
+updateAccountGroupOptions.SetPrimaryContactIamID(enterpriseAccountIamID)
+
+response, err := enterpriseManagementService.UpdateAccountGroup(updateAccountGroupOptions)
+if err != nil {
+  panic(err)
+}
 ```
 {: codeblock}
 {: go}
