@@ -195,7 +195,6 @@ Managing your account, resources, and access
         profile.md
         contact_info.md
         feature_codes.md
-        signup-commit.md
         shell-settings.md
 
         {: .topicgroup}
