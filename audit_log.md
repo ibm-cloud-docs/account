@@ -298,8 +298,8 @@ public class EventLogExample {
   }
 }
 ```
-{: codeblock
-{: java}}
+{: codeblock}
+{: java}
 
 To get all Events logs, use [SoftLayer_Event_Log::getAllObjects()](https://softlayer.github.io/reference/services/SoftLayer_Event_Log/getAllObjects/). In this case just the first 50 events are returned by using pagination limit `resultLimit=0,50`. See [Using Result Limits in the SoftLayer API](https://sldn.softlayer.com/article/using-result-limits-softlayer-api/) for more information. A mask is shown in this example, `mask[eventName,eventCreateDate,userType]`, that restricts other local fields and limits the amount of information returned.
 {: curl}
