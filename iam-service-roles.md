@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-04-23"
+lastupdated: "2021-04-24"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -270,7 +270,7 @@ Review the available platform and service roles available and the actions mapped
 | `apprapp.properties.patch` | Patch properties | Writer |
 | `apprapp.environments.create` | Create environments | Administrator, Manager |
 | `apprapp.environments.update` | Update environments | Administrator, Manager |
-| `apprapp.environements.delete` | Delete environments | Administrator, Manager |
+| `apprapp.environments.delete` | Delete environments | Administrator, Manager |
 | `apprapp.environments.list` | List environments | Administrator, Config Operator, Manager, Reader, Writer |
 | `apprapp.features.list` | List features | Administrator, Config Operator, Manager, Reader, Writer |
 | `apprapp.features.create` | Create Features | Administrator, Manager |
