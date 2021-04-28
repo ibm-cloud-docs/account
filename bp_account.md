@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2021
 lastupdated: "2021-04-28"
 
-keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources 
+keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, use cases
 
 subcollection: account
 
