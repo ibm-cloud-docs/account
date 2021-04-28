@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-03-18"
+lastupdated: "2021-04-28"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources 
 
@@ -17,7 +17,8 @@ subcollection: account
 {:note: .note}
 {:important: .important}
 {:term: .term}
-
+{:external: target="_blank" .external}
+{:video: .video}
 
 # Best practices for organizing resources and assigning access
 {: #account_setup}
@@ -103,7 +104,7 @@ You can assign administrator access to everything in an account by creating an a
 ### Sample access policies
 {: #sample_policies}
 
-Review the following sample access policies to help you determine how you might want to assign access to and access group for resources organized in resource groups.
+Review the following sample access policies to help you determine how you might want to assign access to and access group for resources that are organized in resource groups.
 
 * A policy that grants the access group a platform administrator role on the {{site.data.keyword.containerlong_notm}} across the entire account. The users in the access group can access all instances of this service and create instances of the service in any resource group that the they have at least a viewer role assigned. Access group members with an administrator role assigned on any resource can also grant access to that resource.
 * A policy that grants the access group a platform viewer role on a resource group, but not its member resources. The users in the access group have visibility to the resource group, which is required to create instances of any service in this resource group.
@@ -120,11 +121,58 @@ Review the following use cases to help you prepare a plan that works for your or
 
 Some of the users in your account need to manage the account and assign other users access. Some users need to create service instances that incur expenses. Other users are application developers who need to use only the service instances from their application components.
 
-I want to grant all users various roles in the account and the default resource group. I don't need to create more resource groups to separate resources or restrict some users from accessing some of the resources. I can grant the users the roles that are appropriate for their needs by creating an access group for each group of users:
+You want to grant all users various roles in the account and the default resource group. You don't need to create more resource groups to separate resources or restrict some users from accessing some of the resources. You can grant the users the roles that are appropriate for their needs by creating an access group for each group of users:
 
 * Create an access group and assign users to the group who need to manage the account and give others access. Then, assign a policy with an administrator role on the all IAM-enabled services and all account management services.
 * Create an access group and assign users to the group who need to create service instances. Then, assign a policy with an editor role on the default resource group and a policy with the editor role for any service the users need to create.
 * Create an access group and assign users to the group who need to use the service instances in a resource group. Then, assign a policy with a writer or reader role on the service instances that exist in the resource group.
+
+### Two teams working on two related projects
+{: #two-teams-projects}
+
+You have two functional projects in your account. Developers working on a project needs access to all of its resources. As an account administrator, you can grant access by creating access groups for each project and incorporating access management tags into each group's access policies.
+
+Flexibility is important, and with IAM, you can share resources between various groups. Let's say you notice that a resource might work well for both projects. You can share a resource between the two projects by tagging the resource and relying on the existing permissions to grant access to the developers. If a project doesn't require a resource anymore, you can simply revoke the developers' access by detaching the appropriate tag from the service instance. Check out the following video to gain a better understanding of how you can use access management tags to manage access to the resources in your account. 
+
+![Controlling access by using tags in {{site.data.keyword.cloud}}](https://video.ibm.com/embed/23952684){: video output="iframe" data-script="#video-transcript-tags" id="watsonmediaplayer" width="560" height="315" scrolling="no" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0" style="border: 0 none transparent;"}
+
+#### Video transcript
+{: #video-transcript-tags}
+{: notoc}
+
+As an account administrator, you can use tags to centrally manage access to the resources in your account at scale.
+
+For example, you have two functional projects: One is called soulmate which is used for Watson language services and storage, and the other one is called Soul-FAQ, which is a support for project soulmate. It uses Watson Assistant and Cloud Object Storage.
+
+To create access management tags as an account administrator, click Manage then Account in the IBM Cloud console. From the Tags page, click Access management tags. To create new tags, type the tag names separated by commas. We're creating two tags: one for the project soulmate and one for the project soul-faq.
+
+Jumping to the resource list you can see all resources on the account. You can tag project-related resources here and view them throughout the account by filtering by tags.
+
+At this point, the developer cannot view the resources because they don't have the correct permissions assigned yet.
+
+An account administrator can give the developer permissions to access the resources on their project using a combination of access-groups and tags. 
+
+As an account administrator, click Manage then Access and select Access groups. You have two access groups set up: one for the soulmate project, one for the FAQ. 
+
+There's one developer in the soulmate developer's group. There are no policies set up, so the account administrator needs to assign access. To do so, select all services in the account based on specific attributes. Select Access Management Tags to view all the tags that are available in the account. Since you're creating a policy for the project soulmate, select the corresponding tag. The console shows that the project soulmate tag is mapped to three distinct resources. 
+
+Next, select some roles. Give the whole group the viewer role so everyone can view the resources in the list as well as all the functional access to these services. Click Assign to create the policy.
+
+Now there are three services available for the developer. They have access to all three resources and any subresources that might exist.
+
+Flexibility is important, so we've made it easy to share resources between various groups. Let's say an account administrator notices that IBM Cloud Object Storage is great for backup purposes and works well with the FAQ project. The account administrator wants to leverage IBM Cloud Object Storage in the soulmate project. 
+
+Simply edit the Access management tags. Add the project soulmate tag and click Save. 
+
+In the resource list, you can confirm that there are two access management tags attached to the Cloud Object Storage instance.
+
+In addition to the original resources, the developer can now see the Cloud Object Storage resource. The instance is available to anyone who has access to project soulmate or project FAQ. 
+
+Let's say you don't want the Tone Analyzer service for the soulmate project anymore. Detaching the project soulmate tag from the Tone Analyzer service revokes the developer's access to that service instance. An account administrator can detach the tag by clicking Edit tags, and deleting the tag from the list. 
+
+The Tone Analyzer service instance is no longer included in the developer's list of resources.  
+
+When you use access management tags to control access, your team's projects can grow without requiring updates to IAM policies. 
 
 ### Three teams working on three projects
 {: #three-teams-projects}
@@ -151,4 +199,3 @@ I assign the user a writer role on Bucket A in the specific instance of {{site.d
 Now that you know how to set up your resource groups, organize your resources, and create access groups in your account, you can start [inviting users to your account](/docs/account?topic=account-iamuserinv) and assigning them access to your access groups. 
 
 If you already invited users to your account, you can go to your Users page and start [assigning access](/docs/account?topic=account-assign-access-resources#assign-access-resources).
-
