@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-04-28"
+lastupdated: "2021-04-29"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -470,6 +470,7 @@ Review the available platform and service roles available and the actions mapped
 | `is.volume.volume.update` |  | Administrator, Editor |
 | `is.volume.volume.delete` |  | Administrator, Editor |
 | `is.volume.volume.config.read` | Configuration Governance endpoint | Service Configuration Reader |
+| `is.volume.volume.operate` | Operate a volume | Administrator, Editor, Operator |
 {: caption="Table 9. Service actions - Block Storage for VPC" caption-side="top"}
 {: #actions-table9}
 {: tab-title="Actions"}
