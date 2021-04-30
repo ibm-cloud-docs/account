@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-04-29"
+lastupdated: "2021-04-30"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1696,6 +1696,7 @@ Review the available platform and service roles available and the actions mapped
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Reader Plus | As a reader plus, you can perform read-only actions within the service such as viewing service-specific resources. You can also access key material of standard keys. |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | VMWare KMIP Manager | Allow the VMWare Solutions service to configure KMIP (activate/deactivate KMIP endpoint, manage client certificates) |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
@@ -1778,6 +1779,7 @@ Review the available platform and service roles available and the actions mapped
 | `hs-crypto.secrets.createalias` | Create an alias for a key | Manager, Writer |
 | `hs-crypto.secrets.deletealias` | Delete an alias of a key | Manager, Writer |
 | `hs-crypto.secrets.sync` | Initiate a manual synchronization request to the associated resources of a key. | Manager, Writer |
+| `hs-crypto.config.read` | Configuration Information Point API access | Service Configuration Reader |
 {: caption="Table 38. Service actions - Hyper Protect Crypto Services" caption-side="top"}
 {: #actions-table38}
 {: tab-title="Actions"}
