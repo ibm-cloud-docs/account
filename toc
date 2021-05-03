@@ -23,6 +23,7 @@ Managing your account, resources, and access
     enterprise-tutorial.md
     iam-quickstart.md
     tagging-resources-tutorial.md
+    dash-tutorial.md
 
     {: .topicgroup}
     Sharing software with users in your account
@@ -183,7 +184,11 @@ Managing your account, resources, and access
 
         catalog-access-reqs.md
 
-    scope_dash.md
+    {: .topicgroup}
+    Working with scoped dashboards
+        scope-dash.md
+        scope-dash-edit.md
+        scope-dash-remove-delete.md
 
     {: .topicgroup}
     Managing your account
