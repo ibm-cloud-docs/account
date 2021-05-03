@@ -20,7 +20,7 @@ subcollection: account
 # Editing and duplicating a dashboard
 {: #edit-dupe-dash}
 
-You can edit a dashboard by adding, removing, and rearranging the widgets on your dashboard. Only the user that created the dashboard can edit it. You can duplicate a dashboard to include the same structure and layout without having to re-create the dashboard from scratch. All users with the dashboard link can duplicate the dashboard. 
+Only the user that created the dashboard can edit it by adding, removing, and rearranging the widgets on the dashboard. You can duplicate a dashboard to include the same structure and layout without having to re-create the dashboard from scratch. All users with the dashboard link can duplicate the dashboard. 
 
 ## Reorganizing widgets on your dashboard
 {: #dash-reorg}
