@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-05-03"
+lastupdated: "2021-05-04"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -536,6 +536,7 @@ Review the available platform and service roles available and the actions mapped
 | ----- | :----- |
 | IBMOperation | (Internal) - IBM Use only |
 | Publisher | You can publish offerings that are approved by IBM and that are in a private catalog to which you're assigned the viewer role. |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
 {: caption="Table 11. Service roles - Catalog Management" caption-side="top"}
 {: #service-roles-table11}
@@ -553,6 +554,8 @@ Review the available platform and service roles available and the actions mapped
 | `globalcatalog-collection.support.approveibm` | (Internal) - Approve publishing to IBM only | IBMOperation |
 | `globalcatalog-collection.support.approvepublic` | (Internal) Approve publishing to public | IBMOperation |
 | `globalcatalog-collection.support.approveshare` | (Internal) Approve publishing to Shared | IBMOperation |
+| `globalcatalog-collection.config.read` | Fortress compliance - read configuration | IBMOperation, Service Configuration Reader |
+| `globalcatalog-collection.restrictedtags.update` | Permission to set restricted tags in a product. | IBMOperation |
 {: caption="Table 11. Service actions - Catalog Management" caption-side="top"}
 {: #actions-table11}
 {: tab-title="Actions"}
