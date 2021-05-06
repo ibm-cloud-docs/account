@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2020
 
-lastupdated: "2020-04-16"
+lastupdated: "2020-05-06"
 
 keywords: access, users, service IDs, access group, IAM, policy, characters, wildcard, operators, asterisk, question mark, *, ?, JSON document, policy document
 
@@ -33,13 +33,13 @@ When you use the `stringEquals` operator, an exact string match is performed bet
 
 To assign access, you need the administrator role on the resource. For more information, see [IAM access](/docs/account?topic=account-userroles).
 
-Refer to the documentation for the specific service that you are assigning access for to get details about the supported operators for specific attributes for that service.
-{: note}
-
 ## JSON policy document
 {: #policy-js}
 
 Most access policies are stored in {{site.data.keyword.cloud}} as JSON documents. 
+
+Refer to the documentation for the specific service that you are assigning access to for details about the supported operators for specific attributes for that service.
+{: note}
 
 ### Using an asterisk (`*`) as a wildcard
 {: #policy-doc-asterisk} 
