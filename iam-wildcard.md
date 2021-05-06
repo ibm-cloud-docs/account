@@ -25,18 +25,16 @@ subcollection: account
 When you're assigning access to certain IAM-enabled services, you can use advanced operators in a [policy](#x2853407){: term} to grant access to resources that satisfy specific naming conventions. By using wildcard policies, you can reduce the number of policies that are required for managing access to some resources.
 {:shortdesc}
 
-When you use the `stringEquals` operator, an exact string match is performed between the query and the target string. When you use the `stringMatch` operator, a case-sensitive string match is performed between the pattern and the target string using either an asterisk (`*`), question mark (`?`), or both. An asterisk (`*`) represents any sequence of zero or more characters in the string, and a question mark (`?`) represents any single character. See the following examples:
-
-  * `*dev*` matches any string that contains `dev`
-  * `dev*` matches any string that begins with `dev`
-  * `*dev` matches any string that ends with `dev`
-
 To assign access, you need the administrator role on the resource. For more information, see [IAM access](/docs/account?topic=account-userroles).
 
 ## JSON policy document
 {: #policy-js}
 
-Most access policies are stored in {{site.data.keyword.cloud}} as JSON documents. 
+Most access policies are stored in {{site.data.keyword.cloud}} as JSON documents. When you use the `stringEquals` operator in a policy, an exact string match is performed between the query and the target string. When you use the `stringMatch` operator, a case-sensitive string match is performed between the pattern and the target string using either an asterisk (`*`), question mark (`?`), or both. An asterisk (`*`) represents any sequence of zero or more characters in the string, and a question mark (`?`) represents any single character. See the following examples:
+
+  * `*dev*` matches any string that contains `dev`
+  * `dev*` matches any string that begins with `dev`
+  * `*dev` matches any string that ends with `dev`
 
 Refer to the documentation for the specific service that you are assigning access to for details about the supported operators for specific attributes for that service.
 {: note}
