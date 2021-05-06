@@ -17,6 +17,11 @@ subcollection: account
 {:screen: .screen}
 {:external: target="_blank" .external}
 {:tip: .tip}
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:curl: .ph data-hd-programlang='curl'}
+{:go: .ph data-hd-programlang='go'}
 
 # Invoking {{site.data.keyword.cloud_notm}} service APIs
 {: #iamapikeysforservices}
