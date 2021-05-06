@@ -60,7 +60,7 @@ Review the following example:
   2.	Prefix the IAM access token with the literal `Bearer: Bearer eyJhbGciOiJSUzI1Ng...`
   3.	Add the prefixed IAM access token to the HTTP header: `Authorization: Bearer eyJhbGciOiJSUzI1Ng...`. 
 
-  ```bash
+```bash
 curl -H "Authorization: Bearer eyJhbGciOiJSUzI1Ng..."
 ```
 {: codeblock}
@@ -189,7 +189,7 @@ As an example, the following steps assume that the API key is 0a1A2b3B4c5C6d7D8e
   2.	Base64 encode the string: `base64("apikey:0a1A2b3B4c5C6d7D8e9E") => YXBpa2V5OjBhMUEyYjNCNGM1QzZkN0Q4ZTlF`
   3.	Set the HTTP header Authorization with schema Basic, for example `Authorization: Basic YXBpa2V5OjBhMUEyYjNCNGM1QzZkN0Q4ZTlF`. 
 
-  ```bash
+```bash
 curl -u "apikey:<IBM Cloud API key value>"
 ```
 {: codeblock}
