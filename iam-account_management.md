@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2021
 
-lastupdated: "2021-04-13"
+lastupdated: "2021-05-06"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, role management service, catalog management service, cloud shell service
 
@@ -297,6 +297,20 @@ fmt.Println(string(b))
 
 The following tables outline the actions that users can take when they are assigned a specific role for each account management service. Review the information to ensure that you are assigning the correct level of access to your users. 
 
+### All account management services option
+{: #all-account-management}
+
+To quickly give users a wide-ranging set of account management access, you can assign a policy on the all account management services option. Depending on the role that is selected, all applicable actions per the selected role for each account management service can be completed by the subject of the policy.
+
+
+| Roles         | Actions                                                                                                      |
+|---------------|--------------------------------------------------------------------------------------------------------------|
+| Viewer        | All viewer role actions for the account management services                                                  |
+| Operator      | All operator role actions for the account management services                                                |
+| Editor        | All editor role actions for the account management services and the ability to create resource groups        |
+| Administrator | All administrator role actions for the account management services and the ability to create resource groups |
+{: caption="Table 1. Roles and example actions for a policy on all identity and access services" caption-side="top"}
+
 ### Billing
 {: #billing-acct-mgmt}
 
@@ -458,18 +472,6 @@ You can give users access to view users in an account, invite and remove users, 
 The viewer role on the user management service is a role that is commonly assigned for users assigned a role to view or manage support cases. If an account owner restricts the visibility of the user list in the IAM settings, users can't see support cases that are opened by other users in the account. However, if they are assigned the viewer role for the user management service, the user list visibility setting doesn't affect the ability to view cases in the account.
 {: tip}
 
-### All account management services option
-{: #all-account-management}
 
-To quickly give users a wide-ranging set of account management access, you can assign a policy on the all account management services option. Depending on the role that is selected, all applicable actions per the selected role for each account management service can be completed by the subject of the policy.
-
-
-| Roles         | Actions                                                                                                      |
-|---------------|--------------------------------------------------------------------------------------------------------------|
-| Viewer        | All viewer role actions for the account management services                                                  |
-| Operator      | All operator role actions for the account management services                                                |
-| Editor        | All editor role actions for the account management services and the ability to create resource groups        |
-| Administrator | All administrator role actions for the account management services and the ability to create resource groups |
-{: caption="Table 13. Roles and example actions for a policy on all identity and access services" caption-side="top"}
 
 
