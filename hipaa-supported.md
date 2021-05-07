@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-04-22"
+lastupdated: "2021-04-27"
 
 keywords: HIPAA, PHI, HITECH
 
@@ -42,7 +42,7 @@ Accounts that enable the HIPAA Supported setting still have access to the full c
 3. Read the information about enabling this setting.
 
   You can't disable the setting after you enable it.
-  {: note}
+  {: important}
 
 4. Select **Accept**, and click **Submit**.
 
