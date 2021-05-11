@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2021
 
-lastupdated: "2021-03-24"
+lastupdated: "2021-05-11"
 
 keywords: specific IP addresses, IP addresses, restrict IP access, IP address access, allow IP access
 
@@ -68,7 +68,7 @@ To restrict all users to using only specific IP addresses, complete the followin
 1. From the Account restrictions section, turn on the **IP address access** setting. 
 1. Enter the IP addresses. The IP addresses listed are the only ones from which users in the account can log in to {{site.data.keyword.Bluemix}}.
   
-  You can enter a single IP address `192.168.0.0`, an IP address range `192.168.0.1 - 192.168.2.53`, or IP subnets `192.168.0.0/16`. Make sure to use IPv4 or IPv6 addresses, and to separate multiple values with a comma. 
+  You can enter a single IP address `192.168.0.0`, an IP address range `192.168.0.1 - 192.168.2.53`, or a CIDR block `192.168.0.0/16`. Make sure to use IPv4 or IPv6 addresses, and to separate multiple values with a comma. 
   {: note}
   
 1. Click **Save**. 
