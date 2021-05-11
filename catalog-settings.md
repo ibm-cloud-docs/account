@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-02-01"
+lastupdated: "2021-05-01"
 
 keywords: catalog, private catalogs, visibility, filter catalog, hide product, catalog filtering, enterprise, account group, child account, account, restrict
 
@@ -102,6 +102,7 @@ The following table lists the filters that you can use to customize which produc
 | Option | Description |
 |--------------|-------|
 | EU Supported | Support for the service is provided by {{site.data.keyword.cloud_notm}} support team members that are located in the European Union (EU) region. |
+| Financial Services Validated | Services are designated as Financial Services Validated when the {{site.data.keyword.cloud_notm}} service or SaaS, or independent software vendor (ISV) offering, evidences compliance to the {{site.data.keyword.cloud_notm}} Framework for Financial Services. |
 | HIPAA Enabled | The service is designated as HIPAA ready, meaning processing, storing, and handling Protected Health Information (PHI) in the service is supported. |
 | IAM-enabled | The service is enabled to use {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) for access control. Access policies are used to assign users and service IDs access to specific resources in an account.|
 | Service Endpoint Supported | The service can be connected to over the {{site.data.keyword.cloud_notm}} private network instead of the public network. Connecting directly to service endpoints doesn't require internet access, providing increased security. |
@@ -114,10 +115,22 @@ The following table lists the filters that you can use to customize which produc
 
 | Option | Description |
 |--------------|-------|
+| IBM Kubernetes Service | Used to create a Kubernetes cluster of compute hosts to deploy and manage containerized apps on {{site.data.keyword.cloud_notm}}. |
+| Red Hat OpenShift | Used to create a {{site.data.keyword.openshiftshort}} cluster of compute hosts to deploy and manage containerized apps on {{site.data.keyword.cloud_notm}}. |
+| VMware vCenter Server | Provides deployment and management of VMware virtualized environments. |
+{: caption="Table 3. Options for filtering by deployment target" caption-side="top"}
+{: #deploymenttarget-custom}
+{: tab-title="Deployment target"}
+{: tab-group="customcatalogfilters"}
+{: class="simple-tab-table"}
+{: summary="Use the buttons before the table to change the context of the table. The column headers identify the options for fitering based on filter type."} 
+
+| Option | Description |
+|--------------|-------|
 | Community | The product is provided by open source communities outside of {{site.data.keyword.IBM_notm}}. If the root cause analysis determines that the issue is a defect in the product, {{site.data.keyword.IBM_notm}} isn't required to provide a fix. |
 | {{site.data.keyword.IBM_notm}} | The lifecycle and operations of the product are the responsibility of {{site.data.keyword.IBM_notm}}. |
-| Third party | Support for the product is the responsibility of the third-party provider. If the root cause analysis determines that the issue is a defect in the product, {{site.data.keyword.IBM_notm}} isn't required to provide a fix. However, {{site.data.keyword.IBM_notm}} shares analysis with the third-party provider, if needed, and can work with the third-party provider to help solve the issue. |
-{: caption="Table 3. Options for filtering by provider" caption-side="top"}
+| Third Party | Support for the product is the responsibility of the third-party provider. If the root cause analysis determines that the issue is a defect in the product, {{site.data.keyword.IBM_notm}} isn't required to provide a fix. However, {{site.data.keyword.IBM_notm}} shares analysis with the third-party provider, if needed, and can work with the third-party provider to help solve the issue. |
+{: caption="Table 4. Options for filtering by provider" caption-side="top"}
 {: #provider-custom}
 {: tab-title="Provider"}
 {: tab-group="customcatalogfilters"}
@@ -129,7 +142,7 @@ The following table lists the filters that you can use to customize which produc
 | Beta | The product is available for evaluation and testing purposes. Beta products are not intended for production use. |
 | Experimental | The product is available for evaluation and testing purposes, and might be unstable or not compatible with previous versions. The product can be discontinued with short notice.
 | Deprecated | The product is supported but no longer recommended and that might become obsolete. |
-{: caption="Table 4. Options for filtering by release" caption-side="top"}
+{: caption="Table 5. Options for filtering by release" caption-side="top"}
 {: #release-custom}
 {: tab-title="Release"}
 {: tab-group="customcatalogfilters"}
@@ -138,17 +151,18 @@ The following table lists the filters that you can use to customize which produc
 
 | Option | Description |
 |--------------|-------|
-| Location | The general area for networking options. Each location has a region, one or more zones, and one or more data centers. For example, `Dallas` and `Osaka`. For more information, see [Locations for resource deployment](https://cloud.ibm.com/docs/overview?topic=overview-locations). |
-| Region | A defined geographic territory in which apps, services, and resources are deployed. For example, `us-south` and `jp-osa`. For more information, see [multizone regions](/docs/overview?topic=overview-locations#mzr-table) and [single-zone regions](/docs/overview?topic=overview-locations#szr-table). |
-| Zone | An isolated location within regions. For example, `us-south-2` and `jp-osa-3`. Each region can have one or more zones. |
-| Data center | The physical location of the servers that provide cloud services. For example, `DAL12` and `OSA23`. For more information, see [Data centers](/docs/overview?topic=overview-locations#data-centers). |
-{: caption="Table 5. Options for filtering by location" caption-side="top"}
-{: #location-custom}
-{: tab-title="Location"}
+| Cloud Paks | A cloud solution that integrates a container platform, containerized {{site.data.keyword.IBM_notm}} middleware and open source components, and common software services for development and management. |
+| Helm charts | A format for packaging a collection of files that describe specific configurations of infrastructure in the form of code.   |
+| Terraform |  Infrastructure as code to deploy your application. |
+| Operators | A method of packaging and deploying a Kubernetes-native application. |
+| OVAs | Open Virtual Appliance that contains a compressed installable version of a virtual machine. |
+| Virtual server images | A template that is used to create instances of virtual servers. |
+{: caption="Table 6. Options for filtering by software type" caption-side="top"}
+{: #software-custom}
+{: tab-title="Software"}
 {: tab-group="customcatalogfilters"}
 {: class="simple-tab-table"}
 {: summary="Use the buttons before the table to change the context of the table. The column headers identify the options for fitering based on filter type."}
-
 
 
 
