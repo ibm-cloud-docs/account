@@ -2,7 +2,7 @@
 {:topicgroup: .topicgroup}
 {:utterance .utterance}
 
-{:  .toc subcollection="account" category="platform_services" audience="platform" href="/docs/account?topic=account-account-getting-started" console-page="/" product-page="https://ibm.com/cloud" path="account"}
+{:  .toc subcollection="account" category="platform_services" audience="platform" href="/docs/account" console-page="/" product-page="https://ibm.com/cloud" path="account"}
 Managing your account, resources, and access
 
     {: .navgroup id="learn"}

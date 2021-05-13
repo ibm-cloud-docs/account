@@ -1,0 +1,80 @@
+{
+    "title": "IBM Cloud account docs",
+    "lastupdated": "2021-05-14",
+    "introduction": "Leverage the interacting components and systems in your account for resource, user, and access management. Get started by setting up your IBM cloud account, learn about setting up an enterprise, or explore assigning access to resources quickly with IBM Cloud Identity and Access Management (IAM).",
+    "section_devtools": {
+      "api": "/docs?tab=api-docs&subCategory=account&category=platform_services", 
+      "cli": "/docs/account?topic=cli-manage-catalogs-plugin", 
+      "terraform": "https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs"
+    },
+    "section_recommended": [
+      {
+        "title": "Setting up your IBM Cloud account",
+        "description": "Learn how to set up account authentication, manage your account settings, effectively organize resources in your account, and control access to resources.",
+        "href": "/docs/account?topic=account-account-getting-started"
+      },
+      {
+        "title": "Setting up an enterprise",
+        "description": "Learn how to create an enterprise, add accounts and organize them in account groups, invite users, and explore subscriptions.",
+        "href": "/docs/account?topic=account-enterprise-tutorial"
+      },
+      {
+        "title": "Assigning access to resources",
+        "description": "Get up and running quickly with IBM Cloud Identity and Access Management (IAM) by setting up access groups for quick access assignments, inviting users to your account, and managing their access.",
+        "href": "/docs/account?topic=account-access-getstarted"
+      }
+    ],
+    "section_videos": [
+      {
+        "title": "Introducing IBM Cloud enterprises",
+        "href": "/docs/account?topic=account-enterprise-video", 
+        "thumbnail": "/images/landing-Introducing-IBM-Cloud-enterprises.png" 
+      },
+      {
+        "title": "IBM Cloud Console Guide: Getting Access - Role Overview",
+        "href": "/docs/account?topic=account-cloudaccess#watch-iamaccess",
+        "thumbnail": "/images/landing-Getting-Access-Role-Overview.png"
+      },
+      {
+        "title": "IBM Cloud Console Guide: Inviting Users to an Account",
+        "href": "/docs/account?topic=account-iamuserinv#watch-iam-invite",
+        "thumbnail": "/images/landing-Inviting-Users-to-an-Account.png"
+      }, 
+      {
+        "title": "IBM Cloud Console Guide: Setting up Access Groups",
+        "href": "/docs/account?topic=account-groups#watch-accessgroups",
+        "thumbnail": "/images/landing-Setting-up-Access-Groups.png"
+      }, 
+      {
+        "title": "Controlling access by using tags in IBM Cloud",
+        "href": "/docs/account?topic=account-account_setup",
+        "thumbnail": "/images/landing-Controlling-access-by-using-tags.png"
+      }
+    ],
+    "section_learn": {
+      "developer": "https://developer.ibm.com/depmodels/cloud/gettingstarted/",
+      "architecture": "https://www.ibm.com/cloud/architecture/architectures/public-cloud",
+      "training": "https://www.ibm.com/training/cloud",
+      "community": "https://community.ibm.com/community/user/publiccloud/communities/communities/community-home?CommunityKey=dd1ee2bc-c83b-4afb-bd1c-9095ff0c3bc1"
+    },
+    "section_updates": {
+      "view_more": "/docs/overview?topic=overview-whatsnew",
+      "tiles": [
+        {
+          "date": "21 April 2021",
+          "title": "Delivering notifications by using webhooks",
+          "description": "You can now easily add webhooks to the notification distribution list in addition to adding email addresses. You can register a webhook with your account on the Notification distribution list page to receive all account notifications. Administrators can use webhooks to configure an application to receive asynchronous notifications whenever an event occurs on the IBM Cloud platform. Any registered webhook must support HTTP POST requests and accept the notification as a JSON."
+        },
+        {
+          "date": "19 April 2021",
+          "title": "Upcoming changes to the user invitation flow",
+          "description": "To enhance security and user protection, IBM Cloud® will require all users to accept an invitation in order to become an active user within a new account. The new invitation flow will have an impact only on inviting existing IBM Cloud® users. Existing users are currently being automatically onboarded to each new account as they are invited. After this change, these users will need to accept an invitation in their notifications, by email, or by using the CLI to onboard to a new account."
+        },
+        {
+          "date": "26 February 2021",
+          "title": "Managing user login sessions",
+          "description": "You can customize the duration of working sessions for user's on your account. Customize the duration of users active settings and select the amount of time a user can be inactive before they are signed out and need to enter their credentials again. Update your accounts Identity and Access (IAM) log in sessions from the Settings page."
+        }
+      ]
+    }
+  }
