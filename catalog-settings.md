@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-05-01"
+lastupdated: "2021-05-13"
 
 keywords: catalog, private catalogs, visibility, filter catalog, hide product, catalog filtering, enterprise, account group, child account, account, restrict
 
@@ -17,6 +17,14 @@ subcollection: account
 {:note: .note}
 {:important: .important}
 {:external: target="_blank" .external}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:curl: .ph data-hd-programlang='curl'}
+{:go: .ph data-hd-programlang='go'}
 
 # Managing catalog settings
 {: #filter-account}
@@ -26,20 +34,22 @@ As the account owner or administrator, you can manage the settings for all catal
 
 You need the [administrator role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management) to perform these tasks.
 
-## Updating the visibility of the {{site.data.keyword.cloud_notm}} catalog
+## Updating the visibility of the {{site.data.keyword.cloud_notm}} catalog in the console
 {: #set-public-visibility}
+{: ui}
 
 Users in your account have access to all products in the public catalog by default. To update what products are visible to users, go to **Manage** > **Catalogs** > **Settings** in the {{site.data.keyword.cloud_notm}} console. 
 
 If you don't have any private catalogs in your account and you turn off the visibility of the public catalog, users can't create instances of any products. Be sure to [create a private catalog](/docs/account?topic=account-restrict-by-user) before you update this setting. 
 {: note}
 
-## Managing access to products for all users
+## Managing access to products for all users in the console
 {: #set-account-filters}
+{: ui}
 
 You can use filters to manage which products in the public catalog are available to all users in your account. For example, you might want to restrict access to third-party products. Or, you might want users to work with a specific software type. 
 
-If your account is a parent account in an {{site.data.keyword.cloud_notm}} enterprise, the filters that you set apply to all child account groups and accounts. For more information, see [Managing products for an an {{site.data.keyword.cloud_notm}} enterprise](/docs/account?topic=account-catalog-enterprise-restrict).
+If your account is a parent account in an {{site.data.keyword.cloud_notm}} enterprise, the filters that you set apply to all child account groups and accounts. For more information, see [Managing products for {{site.data.keyword.cloud_notm}} enterprise](/docs/account?topic=account-catalog-enterprise-restrict). 
 {: tip}
 
 1. In the console, go to **Manage** > **Catalogs** > **Settings**. 
@@ -49,15 +59,16 @@ If your account is a parent account in an {{site.data.keyword.cloud_notm}} enter
 5. (Optional) Add exceptions to the filter rules that you set in the previous step. 
 6. Use the **Preview** table to confirm your selections, and click **Update**.
 
-## Managing access to products for specific users 
+## Managing access to products for specific users in the console
 {: #set-private-filters}
+{: ui}
 
 Set filters at a private catalog level for fine-grained control of which products in the public catalog are available only to the users you choose.   
 
 1. In the console, go to **Manage** > **Catalogs**, **Private catalogs**. 
 2. Select a catalog from the list to navigate to its details page. 
 
-  The **Products in the {{site.data.keyword.cloud_notm}} catalog** table that's displayed on the page shows the list of products that are available at the account level. The availability is based on the filters the account owner or administator set. Account-level filters apply to all the private catalogs in the account. 
+  The **Products in the {{site.data.keyword.cloud_notm}} catalog** table that's displayed on the page shows the list of products that are available at the account level. The availability is based on the filters the account owner or administrator set. Account-level filters apply to all the private catalogs in the account. 
   {: tip}
   
 3. Click **Manage filters**.
@@ -70,6 +81,106 @@ Set filters at a private catalog level for fine-grained control of which product
 <br>
 <br>
 For more detailed examples of how you can leverage filtering at the private catalog level, see [Customizing your private catalogs](/docs/account?topic=account-restrict-by-user).
+
+## Updating the visibility of the {{site.data.keyword.cloud_notm}} catalog by using the CLI
+{: #set-public-visibility-cli}
+{: cli}
+
+Users in your account have access to all products in the {{site.data.keyword.cloud_notm}} public catalog by default. You can make products available only to the users you choose by turning off visibility to the {{site.data.keyword.cloud_notm}} catalog and adding the products to your private catalogs. Use the following command to turn off visibility of the public catalog to all users in your account.
+```
+ibmcloud catalog filter hide-ibm-public-catalog
+```
+{: codeblock}
+
+## Managing access to products for all users by using the CLI
+{: #set-account-filters-cli}
+{: cli}
+
+You can use filters to manage which products in the public catalog are available to all users in your account. For example, you might want to restrict access to third-party products. Or, you might want users to work with a specific software type. 
+
+If your account is a parent account in an {{site.data.keyword.cloud_notm}} enterprise, the filters that you set apply to all child account groups and accounts. For more information, see [Managing products for {{site.data.keyword.cloud_notm}} enterprise](/docs/account?topic=account-catalog-enterprise-restrict). 
+{: tip}
+
+1. Create a new filter. 
+  ```
+  ibmcloud catalog filter create [--catalog CATALOG] [--category CATEGORY] [--compliance COMPLIANCE] [--deployment-target TARGET] [--exclude-list LIST] [--include-all ALL] [--include-list LIST] [--offering-format FORMAT] [--pricing-plan PLAN] [--provider PROVIDER] [--release RELEASE] [--type TYPE]
+  ```
+  {: codeblock}
+  When the `--catalog CATALOG` command is not specified, the filter is created at the account level.
+1. Target an account group by specifying the command option `--account-group ACCOUNT GROUP`.
+1. Update the filter to include or exclude a particular product or products. See the [Catalog management CLI](https://cloud.ibm.com/docs/cli?topic=cli-manage-catalogs-plugin#create-filter) guidance for command options or run the `ibmcloud catalog filter options` command to to retrieve the filter options for each filter category.
+
+## Managing access to products for specific users by using the CLI
+{: #set-private-filters-cli}
+{: cli}
+
+Set filters at a private catalog level for fine-grained control of which products in the public catalog are available only to the users you choose.
+
+1. Create a new filter. 
+  ```
+  ibmcloud catalog filter create [--catalog CATALOG] [--category CATEGORY] [--compliance COMPLIANCE] [--deployment-target TARGET] [--exclude-list LIST] [--include-all ALL] [--include-list LIST] [--offering-format FORMAT] [--pricing-plan PLAN] [--provider PROVIDER] [--release RELEASE] [--type TYPE]
+  ```
+  {: codeblock}
+  Make sure to specify the `--catalog CATALOG` command option. When `--catalog CATALOG` is not specified, the filter is created at the account level.
+1. Target an account group by specifying the command option `--account-group ACCOUNT GROUP`.
+1. Update the filter to include or exclude a particular product or products. See the [Catalog management CLI](https://cloud.ibm.com/docs/cli?topic=cli-manage-catalogs-plugin#create-filter) guidance for command options or run the `ibmcloud catalog filter options` command to to retrieve the filter options for each filter category.
+
+## Updating the visibility of the {{site.data.keyword.cloud_notm}} catalog by using the API
+{: #set-public-visibility-api}
+{: api}
+
+Users in your account have access to all products in the {{site.data.keyword.cloud_notm}} public catalog by default. You can make products available only to the users you choose by turning off visibility to the {{site.data.keyword.cloud_notm}} catalog and adding the products to your private catalogs. Use the following command to turn off visibility of the public catalog to all users in your account.
+
+```bash
+curl -X "PUT" "https://cm.globalcatalog.cloud.ibm.com/api/v1-beta/catalogaccount" 
+-H "accept: */*" 
+-H "Authorization: {iam-bearer-token}" 
+-d '{"id":"string","hide_IBM_cloud_catalog":true,"account_filters":{"include_all":true,"category_filters":{"additionalProp1":{"include":true,"filter":{"filter_terms":["string"]}},"additionalProp2":{"include":true,"filter":{"filter_terms":["string"]}},"additionalProp3":{"include":true,"filter":{"filter_terms":["string"]}}},"id_filters":{"include":{"filter_terms":["string"]},"exclude":{"filter_terms":["string"]}}}}'
+```
+{: codeblock}
+
+Make sure the `hide_IBM_cloud_catalog` field has a boolean value of `true` to hide the public catalog in this account. Alternatively, you can give the `include_all` field  a boolean value of `false` for each `account_filters` object to exclude all of the public catalog.
+
+See the [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=curl#update-catalog-account){: external} for more information.
+
+## Managing access to products for all users by using the API
+{: #set-account-filters-api}
+{: api}
+
+You can use filters to manage which products in the public catalog are available to all users in your account. For example, you might want to restrict access to third-party products. Or, you might want users to work with a specific software type. 
+
+If your account is a parent account in an {{site.data.keyword.cloud_notm}} enterprise, the filters that you set apply to all child account groups and accounts. For more information, see [Managing products for {{site.data.keyword.cloud_notm}} enterprise](/docs/account?topic=account-catalog-enterprise-restrict). 
+{: tip}
+
+```bash
+curl -X "PUT" "https://cm.globalcatalog.cloud.ibm.com/api/v1-beta/catalogaccount" 
+-H "accept: */*" 
+-H "Authorization: {iam-bearer-token}" 
+-d '{"id":"string","hide_IBM_cloud_catalog":true,"account_filters":{"include_all":true,"category_filters":{"additionalProp1":{"include":true,"filter":{"filter_terms":["string"]}},"additionalProp2":{"include":true,"filter":{"filter_terms":["string"]}},"additionalProp3":{"include":true,"filter":{"filter_terms":["string"]}}},"id_filters":{"include":{"filter_terms":["string"]},"exclude":{"filter_terms":["string"]}}}}'
+```
+{:codeblock}
+
+The options for `{accountFilters}` are: `include_all`, `category_filters`, and `id_filters`.
+
+See the [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=curl#update-catalog-account){: external} for more information.
+
+## Managing access to products for specific users by using the API
+{: #set-private-filters-api}
+{: api}
+
+Set filters at a private catalog level for fine-grained control of which products in the public catalog are available only to the users you choose. The following example applies the filter `id_filters` where `AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea` is an offering ID. 
+
+```bash
+curl -X 'PUT' \                                         
+'https://cm.globalcatalog.cloud.ibm.com/api/v1-beta/catalogs/<catalog-id>'
+ -H 'accept: application/json' \
+ -H 'Content-Type: application/json' \
+ -H "Authorization: ${IC_IAM_TOKEN}" \
+ -d '{"label": "testcurlcatalog4", "short_description": "testing creating a catalog through curl", "catalog_filters": { "include_all": false, "id_filters": { "include": { "filter_terms": [ "AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea" ] } } }}'
+```
+{: codeblock}
+
+See the [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=curl#replace-catalog){: external} for more information. 
 
 ## Catalog filters
 {: #catalog-filters-customize}
@@ -163,7 +274,6 @@ The following table lists the filters that you can use to customize which produc
 {: tab-group="customcatalogfilters"}
 {: class="simple-tab-table"}
 {: summary="Use the buttons before the table to change the context of the table. The column headers identify the options for fitering based on filter type."}
-
 
 
  
