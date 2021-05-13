@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-05-12"
+lastupdated: "2021-05-13"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -2191,6 +2191,7 @@ Review the available platform and service roles available and the actions mapped
 | Cloud Developer | As a cloud developer, you can create Cloud Shell environments to manage IBM Cloud resources and develop applications for IBM Cloud (Web Preview enabled). |
 | Cloud Operator | As a cloud operator, you can create Cloud Shell environments to manage IBM Cloud resources. |
 | File Manager | As a file manager, you can create Cloud Shell environments to manage IBM Cloud resources and manage files in your workspace (File Upload and File Download enabled). |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
 {: caption="Table 48. Service roles - IBM Cloud Shell" caption-side="top"}
 {: #service-roles-table48}
@@ -2205,6 +2206,7 @@ Review the available platform and service roles available and the actions mapped
 | `cloudshell.server.create` | The ability to create Cloud Shell environments. | Administrator, Cloud Developer, Cloud Operator, File Manager |
 | `cloudshell.server.preview-web` | The ability to preview web applications in Cloud Shell (Web Preview enabled). | Administrator, Cloud Developer |
 | `cloudshell.server.manage-file` | The ability to manage files in the Cloud Shell workspace (File Upload and File Download enabled). | Administrator, File Manager |
+| `cloudshell.config.read` | Configuration Information Point API access | Service Configuration Reader |
 {: caption="Table 48. Service actions - IBM Cloud Shell" caption-side="top"}
 {: #actions-table48}
 {: tab-title="Actions"}
