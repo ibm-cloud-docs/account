@@ -2,8 +2,7 @@
 
 copyright:
   years: 2015, 2021
-  
-lastupdated: "2021-05-12"
+lastupdated: "2021-05-17"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite
 
@@ -40,7 +39,7 @@ You can create an account by [registering](https://cloud.ibm.com/registration){:
 {: #account-error}
 {: faq}
 
-If you are able to log in to an {{site.data.keyword.Bluemix_notm}} account, go to the [Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} and choose one of the following options.
+If you are able to log in to an {{site.data.keyword.Bluemix_notm}} account, go to the [Support Center](https://{DomainName}/unifiedsupport/supportcenter){: external} and choose one of the following options.
 
 * If you have advanced or premium support, click **Live chat** to talk to an {{site.data.keyword.Bluemix_notm}} support representative.
 * Create a support case by clicking **Create a case** from the Need more help? section.
@@ -54,9 +53,19 @@ If you can't log in to an {{site.data.keyword.Bluemix_notm}} account, [create an
 {: faq}
 {: support}
 
-Updating your credit card is just like adding a new one. Go to [Payments](https://{DomainName}/billing/payments), and in the Add Payment Method section, enter the billing information for your new card, then click **Add credit card**.
+If you have a Pay-As-You-Go account type that is billed in US Dollars, complete the following steps:
+1. Go to the [Payments](https://{DomainName}/billing/payments) page.
+2. Click **Update card**, enter the new credit card information, and click **Save**. 
 
-To switch to a different payment method, select **Pay with Other** and then click **Submit change request**. A support case to change your payment method will be created for you.
+To switch to a different payment method, select Pay with Other and then click Submit change request. A support case to change your payment method is created for you.
+
+ Based on your account type, you might manage your credit card outside of the console. To manage your credit card outside of the console, complete the following steps: 
+  1. Go to [ibm.com](http://www.ibm.com){: external} and log in with the same IBMid and password that you use to log in to {{site.data.keyword.Bluemix_notm}}.
+  1. Click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg), and select **Billing**.
+  1. Click **Manage payment method**.
+  1. Enter your credit card information, and click **Register**.
+
+If your credit card requires a MasterCard SecureCode that is sent to a mobile phone, you might see an unexpected error message after you submit the code. Refresh the manage my wallet page to verify that your new credit card information is saved.  {: note}
 
 ## How do I upgrade my account?
 {: #changeacct}
@@ -80,13 +89,14 @@ Yes, when you upgrade to a Pay-As-You-Go or Subscription account, you can contin
 
 Yes, the following options are available depending on your account type:
 
-* You can convert your trial account to a Lite account by providing the email address that's associated with your IBMid at https://cloud.ibm.com/registration/startUpgradeToLite.
-   The risk of data or function loss is possible when you convert your trial account to a Lite account. Some specific data or function allocations in your trial account might not be availble for a Lite account. Any loss of data or function can't be recovered after the conversion process is complete. You can't convert your trial account to a Lite account if you have multiple organizations in your account. You must register for a new account using a different email address.
+* You can convert your trial account to a Lite account by providing the email address that's associated with your IBMid in the [Upgrade Tool](https://{DomainName}/registration/startUpgradeToLite){: external}.
+   The risk of data or function loss is possible when you convert your trial account to a Lite account. Some specific data or function allocations in your trial account might not be available for a Lite account. Any loss of data or function can't be recovered after the conversion process is complete. You can't convert your trial account to a Lite account if you have multiple organizations in your account. You must register for a new account using a different email address.
    {: note}
 * If you have a feature code from an online course or educational event, you can use it to convert your Lite account to a trial account. Go to the [Account settings](https://{DomainName}/account/settings){: external} page in the console to apply the code to your account.
-* To convert your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://cloud.ibm.com/catalog?contactmodule){: external}. 
+* To convert your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://{DomainName}/catalog?contactmodule){: external}. 
 
 If you upgrade your trial account to a Pay-As-You-Go account by entering a credit card, it can't be converted back to a trial account or converted to a Lite account.
+
 
 ## Can I sign up for a free trial?
 {: #freetrial}
@@ -99,10 +109,10 @@ If you upgrade your trial account to a Pay-As-You-Go account by entering a credi
 {: faq}
 {: support}
 
-We're sad to see you go! If there's any way we can assist you before you decide to cancel your account, [reach out to us](https://cloud.ibm.com/unifiedsupport/supportcenter){: external}.
+We're sad to see you go! If there's any way we can assist you before you decide to cancel your account, [reach out to us](https://{DomainName}/unifiedsupport/supportcenter){: external}.
 
-* To cancel a Pay-As-You-Go or Subscription account, contact us through [live chat](https://{DomainName}/unifiedsupport/supportcenter) or by calling 1-866-325-0045 and selecting the third option. Or, you can open a support case. After your Pay-As-You-Go account has been canceled, all usage is stopped across all services running in your account, and the usage accrued in the current billing period is sent in one final invoice at the close of the billing period. 
-* To cancel a Lite account, go to the [Account settings](https://cloud.ibm.com/account/settings) page, and click **Deactivate account**.
+* To cancel a Pay-As-You-Go or Subscription account, contact us through [live chat](https://{DomainName}/unifiedsupport/supportcenter) or by calling 1-866-325-0045 and selecting the third option. Or, you can open a support case. After your Pay-As-You-Go account has been canceled, all usage is stopped across all services running in your account, and the usage that is accrued in the current billing period is sent in one final invoice at the close of the billing period. 
+* To cancel a Lite account, go to the [Account settings](https://{DomainName}/account/settings) page, and click **Deactivate account**.
 
 ## Can I delete my account?
 {: #deleteaccount}
@@ -116,13 +126,13 @@ Data in deleted accounts is not recoverable.
 {: #slid}
 {: faq}
 
-Yes, you can use your SoftLayer ID to log in to the console. Go to the [login page](https://cloud.ibm.com/login){: external}, and click **Log in with SoftLayer ID**.  
+Yes, you can use your SoftLayer ID to log in to the console. Go to the [login page](https://{DomainName}/login){: external}, and click **Log in with SoftLayer ID**.  
 
 ## What's a Lite pricing plan for services?
 {: #whatisliteplan}
 {: faq}
 
-A Lite plan is a free quota-based service plan. You can use a service Lite plan to build an app without incurring any charges. A Lite plan might be offered on a monthly cycle that is renewed each month or on a one-off usage basis. You can have one instance per Lite plan service. Lite pricing plans are offered in all accounts. For more information about Lite accounts, see [Account types](/docs/account?topic=account-accounts).
+A Lite plan is a free quota-based service plan. You can use a service's Lite plan to build an app without incurring any charges. A Lite plan might be offered on a monthly cycle that is renewed each month or on a one-off usage basis. Lite pricing plans are available with all account types. You can have one instance of a Lite plan for each service. For more information about Lite accounts, see [Account types](/docs/account?topic=account-accounts). 
 
 ## How many apps can I build?
 {: #howmanyapps}
@@ -135,7 +145,7 @@ In a Lite account, your apps have up to 256 MB of instantaneous runtime memory. 
 {: faq}
 {: support}
 
-Reaching any quota limit for Lite plan instances suspends the service for that month. Quota limits are per org, not per instance. New instances that are created in the same org reflect any usage from previous instances. The quota limits reset on the first of every month.
+Reaching any quota limit for Lite plan instances suspends the service for that month. Quota limits are per org; not per instance. New instances that are created in the same org reflect any usage from previous instances. The quota limits reset on the first of every month.
 
 You can check your usage by going to **Manage > Billing and usage** in the console, and selecting **Usage**. For more information, see [Viewing your usage](/docs/billing-usage?topic=billing-usage-viewingusage).
 
@@ -144,15 +154,13 @@ You can check your usage by going to **Manage > Billing and usage** in the conso
 {: faq}
 {: support}
 
-If you have a Pay-As-You Go or Subscription account, there's no limit to the number of resource groups, orgs, or spaces that you can create. However, if you have a Lite account, you're limited to one org and one resource group.
+If you have a Pay-As-You-Go or Subscription account, there's no limit to the number of resource groups, orgs, or spaces that you can create. However, if you have a Lite account, you're limited to one org and one resource group.
 
 ## Can I change which notifications I receive?
 {: #change-email-prefs}
 {: faq}
 
 Yes, you can update your email preferences for receiving notifications from the Email preferences page in the console. Click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Profile** > **Email preferences**.
-
-For classic infrastructure services, account owners can also subscribe users to notifications for those services by going to **Manage** > **Account** > **Classic infrastructure** > **Subscriptions**. 
 
 For more information, see [Setting email preferences](/docs/account?topic=account-email-prefs).
 
@@ -182,7 +190,7 @@ To understand how {{site.data.keyword.IBM_notm}} handles your personal informati
 
 Your account might be deactivated for the following reasons:
 
-- For trial accounts, the trial period ended. To reactivate your account, log in to your account and upgrade it to a Pay-As-You-Go account.
+- For trial accounts, the trial period ended. To reactivate your account, log in to your account and upgrade it to a Pay-As-You-Go account. 
 - An authorized user canceled the account.
 - The account is suspended. At the discretion of {{site.data.keyword.IBM_notm}}, accounts that violate the acceptable usage behavior of the {{site.data.keyword.Bluemix_notm}} services can be disabled without notice. Some services can be restored if users correct their usage behaviors after they're notified of the offensive action.
 
@@ -192,21 +200,36 @@ If you believe that your account was deactivated in error, contact support by ca
 {: #contactsupport}
 {: faq}
 
-From the console menu bar, click **Support** to go to the Support Center and to view your current support plan. For more information, see [Getting support](/docs/get-support?topic=get-support-support-plans).
+From the console menu bar, click **Support** to go to the Support Center and to view your current support plan. Support is available for Premium, Advanced, and Basic Support tier accounts. For more information, see [Getting support](/docs/get-support?topic=get-support-support-plans).  
+
+Lite and Trial account support is limited to non-technical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the {{site.data.keyword.Bluemix_notm}} documentation, Chat with Watson, and the community forums. These resources are available in the [Support Center](https://{DomainName}/unifiedsupport/supportcenter){: external}.
 
 ## Can I view a list of accounts that I own?
 {: #accounts-owned}
 {: faq}
 
-The {{site.data.keyword.cloud_notm}} console menu bar lists all accounts that are affiliated with your login ID, including those you own. You can view your role in each account on the [Users](https://{DomainName}/iam/users) page. The 'owner' tag next to a user name indicates the account owner.
+The {{site.data.keyword.cloud_notm}} console menu bar lists all of the accounts that are affiliated with your IBMid, including the accounts that you own. Click the account listing in the console menu bar to see the other accounts that you own or are a member. 
 
-You can also find your accounts from the CLI by running the `ibmcloud account list` command.
+![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-faq.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.")
+
+You can view your role in each account on the [Users page](https://{DomainName}/iam/users). The 'owner' tag next to a user name indicates the account owner. If you are the owner of the account, the 'self' tag is also listed next to your name. If you only see your name that is listed and you are not the account owner, the account owner has restricted the user list. For more information, see [Controlling user visibility](/docs/account?topic=account-iam-user-setting).Contact [{{site.data.keyword.Bluemix_notm}} Support](https://{DomainName}/unifiedsupport/supportcenter){: external} to determine the account owner. 
+
+You can also find your accounts from the CLI by running the `ibmcloud account list` command. This command lists the account that you own and any other accounts that are affiliated with your IBMid. 
 
 ## Can I view my account ID and account type?
 {: #account-details}
 {: faq}
 
-Go to the [Account settings](https://{DomainName}/account/settings) page in the console to view your account ID and account type.
+Go to the [Account settings](https://{DomainName}/account/settings) page in the console to view your account ID and type.
+
+## How can I join accounts?
+{: #join-new-account}
+{: faq}
+
+The account owner, organization manager, or a user with the right permissions can invite you to join their account.
+
+* If you're new to {{site.data.keyword.cloud}}, you receive an email that contains all the information you need.
+* As an existing member of {{site.data.keyword.cloud}}, you can accept the invitation in your notifications, by email, or by using the CLI to onboard to the new account. To accept invitations in the CLI, use the [**`ibmcloud login`**](/docs/cli?topic=cli-ibmcloud_cli#accept-invitation-to-join-a-new-account-) command.
 
 ## Can I switch between multiple accounts?
 {: #switch-between-accounts}
@@ -250,15 +273,15 @@ You can change your personal information, such as name, email, or phone number, 
 {: faq}
 {: support}
 
-The language that is used is based on your web browser settings. To view content in your native language, update your browser's language settings. The language for specific pages must be the same language selected for the browser's settings. 
+The language that is used is based on your web browser settings. To view content in your native language, update your browser's language settings. The language for specific pages must be the same language that is selected for the browser's settings. 
 
 ## Does {{site.data.keyword.Bluemix_notm}} support batch registration of users?
 {: #batch-registration}
-{:faq}
+{: faq}
 
 When you register users for {{site.data.keyword.Bluemix_notm}}, you must register each user individually. {{site.data.keyword.Bluemix_notm}} doesn't support batch registration of users.
 
-Go to [{{site.data.keyword.Bluemix}}](https://cloud.ibm.com){: external}, and click **Create an {{site.data.keyword.Bluemix_notm}} account**. Then, complete the account registration form for each individual user.
+Go to [{{site.data.keyword.Bluemix}}](https://{DomainName}){: external}, and click **Create an {{site.data.keyword.Bluemix_notm}} account**. Then, complete the account registration form for each individual user.
 
 ## What are tags?
 {: #know-about-tags}
@@ -308,6 +331,12 @@ If you still can't delete it, the tag might be attached to a reclaimed resource.
 When you delete an access management tag from the account, any associated IAM policies are also deleted with it.
 {: note}
 
+## How do I view my dashboard role? 
+{: #view-dashboard}
+{: faq}
+
+You can view the role that you are assigned on a dashboard by going to **Manage** > **Account** > **Dashboards**. All users besides the dashboard owner have the viewer role on the dashboard. 
+
 ## Can I edit the default dashboard?
 {: #access-dashboard}
 {: faq}
@@ -338,7 +367,8 @@ Currently, you can't move an org to a different account. However, you can re-cre
 
 In a Lite account, you can work in only one region. In a Pay-As-You-Go or Subscription account, you can access all available regions.
 
+
 ## Why do I get logged out of my account?
 {: #user-session-log-out}
 
-The administrator of your account has customized the duration of active and inactive accounts which requires users to enter their credentials after a specific time. For more information, see [Managing user's log in session durations](/docs/account?topic=account-iam-work-sessions).
+The administrator of your account has customized the duration of active and inactive accounts, which requires users to enter their credentials after a specific time. For more information, see [Managing user's log in session durations](/docs/account?topic=account-iam-work-sessions). 
