@@ -2,9 +2,9 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-04-09"
+lastupdated: "2021-05-19"
 
-keywords: catalog, private catalogs, IAM access, roles, private catalog service, access groups, permissions
+keywords: catalog, private catalogs, IAM access, roles, private catalog service, access groups, permissions, IAM, catalog management, access group
 
 subcollection: account
 
@@ -16,6 +16,14 @@ subcollection: account
 {:tip: .tip}
 {:note: .note}
 {:important: .important}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:curl: .ph data-hd-programlang='curl'}
+{:go: .ph data-hd-programlang='go'}
 
 # Assigning access to catalogs
 {: #catalog-access}
@@ -27,11 +35,13 @@ For more details, see [Managing access in {{site.data.keyword.cloud_notm}}](/doc
 
 ## Setting up your access groups in the console
 {: #catalog-access-groups-console}
+{: ui}
 
 See the following sections for details about creating your access groups and assigning specific IAM policies to each one.
 
-### Administrator access
+### Administrator access in the console
 {: #catalog-access-console-admin}
+{: ui}
 
 Administrator access is required for setting account-level filters to the {{site.data.keyword.cloud_notm}} catalog.   
 
@@ -46,8 +56,9 @@ Administrator access is required for setting account-level filters to the {{site
 9. In the Platform access section, select the **Administrator** role.
 10. Click **Add** > **Assign**.
 
-### Editor access
+### Editor access in the console
 {: #catalog-access-console-editor}
+{: ui}
 
 Editor access is required for creating private catalogs, setting filters at the private catalog level, adding your software to your private catalog, and updating, deprecating, and restoring your software.    
 
@@ -66,8 +77,9 @@ Editor access is required for creating private catalogs, setting filters at the 
 15. Select the **Manager** role.
 16. Click **Add** > **Assign**.
 
-### Viewer access
+### Viewer access in the console
 {: #catalog-access-console-viewer}
+{: ui}
 
 Viewer access is required for viewing private catalogs, the filtered {{site.data.keyword.cloud_notm}} catalog, and the filter settings.  
 
@@ -91,43 +103,9 @@ To assign viewer access to your private catalog's resource group, use the follow
 1. In the Platform access section, select the **Viewer** role.
 1. Click **Add** > **Assign**.
 
-## Setting up your access groups by using the CLI
-{: #catalog-access-groups-cli}
-
-To assign access, run the [`ibmcloud iam user-policy-create`](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_create) command. 
-
-### Administrator access
-{: #catalog-access-cli-admin}
-
-Run the following command to assign administrator access:
-
-```
-ibmcloud iam user-policy-create USER_NAME --roles Administrator --service-name globalcatalog-collection
-```
-{: codeblock}
-
-### Editor access
-{: #catalog-access-cli-editor}
-
-Run the following command to assign editor access:
-
-```
-ibmcloud iam user-policy-create USER_NAME --roles Editor --service-name globalcatalog-collection
-```
-{: codeblock}
-
-### Viewer access
-{: #catalog-access-cli-viewer}
-
-Run the following command to set viewer access:
-
-```
-ibmcloud iam user-policy-create USER_NAME --roles Viewer --service-name globalcatalog-collection
-```
-{: codeblock}
-
 ## Add users to your access groups in the console
 {: #catalog-access-console-users}
+{: ui}
 
 After you set up your access groups, complete the following steps to add users to the groups:
 
@@ -136,8 +114,48 @@ After you set up your access groups, complete the following steps to add users t
 3. Select one of the three access groups you previously created, and click **Add** > **Invite**.
 4. Repeat the steps to add users to your other access groups. 
 
+## Setting up your access groups by using the CLI
+{: #catalog-access-groups-cli}
+{: cli}
+
+To assign access, run the [`ibmcloud iam user-policy-create`](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_create) command. 
+
+### Administrator access by using the CLI
+{: #catalog-access-cli-admin}
+{: cli}
+
+Run the following command to assign administrator access:
+
+```
+ibmcloud iam user-policy-create USER_NAME --roles Administrator --service-name globalcatalog-collection
+```
+{: codeblock}
+
+### Editor access by using the CLI
+{: #catalog-access-cli-editor}
+{: cli}
+
+Run the following command to assign editor access:
+
+```
+ibmcloud iam user-policy-create USER_NAME --roles Editor --service-name globalcatalog-collection
+```
+{: codeblock}
+
+### Viewer access by using the CLI
+{: #catalog-access-cli-viewer}
+{: cli}
+
+Run the following command to set viewer access:
+
+```
+ibmcloud iam user-policy-create USER_NAME --roles Viewer --service-name globalcatalog-collection
+```
+{: codeblock}
+
 ## Add users to your access groups by using the CLI
 {: #catalog-access-cli-users}
+{: cli}
 
 To add users to an access group by using the CLI, run the [`ibmcloud iam access-group-user-add`](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_access_group_user_add) command.
 
@@ -154,6 +172,780 @@ ibmcloud iam access-group-user-add example_group name@example.com
 {: codeblock}
 
 
+## Setting up your access groups by using the API
+{: #catalog-access-groups-api}
+{: api}
 
+To assign access, call the [IAM Policy Management API](https://cloud.ibm.com/apidocs/iam-policy-management?code=go#create-policy) as shown in the follwing example. Replace the `role_id` vaiable with the role you want to assign: `Viewer`, `Editor`, or `Administrator`. 
 
+```bash
+curl -X POST 'https://iam.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
+  "type": "access",
+  "description": "Editor role for SERVICE_NAME RESOURCE_NAME",
+  "subjects": [
+    {
+      "attributes": [
+        {
+          "name": "iam_id",
+          "value": "IBMid-123453user"
+        }
+      ]
+    }
+  ],
+  "roles":[
+    {
+      "role_id": "crn:v1:bluemix:public:iam::::role:Editor"
+    }
+  ],
+  "resources":[
+    {
+      "attributes": [
+        {
+          "name": "accountId",
+          "value": "$ACCOUNT_ID"
+        },
+        {
+          "name": "serviceName",
+          "value": "$SERVICE_NAME"
+        },
+        {
+          "name": "resource",
+          "value": "$RESOURCE_NAME",
+          "operator": "stringEquals"
+        }
+      ]
+    }
+  ]
+}'
+```
+{: codeblock}
+{: curl}
 
+```java
+SubjectAttribute subjectAttribute = new SubjectAttribute.Builder()
+        .name("iam_id")
+        .value(EXAMPLE_USER_ID)
+        .build();
+
+PolicySubject policySubjects = new PolicySubject.Builder()
+        .addAttributes(subjectAttribute)
+        .build();
+
+PolicyRole policyRoles = new PolicyRole.Builder()
+        .roleId("crn:v1:bluemix:public:iam::::role:Viewer")
+        .build();
+
+ResourceAttribute accountIdResourceAttribute = new ResourceAttribute.Builder()
+        .name("accountId")
+        .value(exampleAccountId)
+        .operator("stringEquals")
+        .build();
+
+ResourceAttribute serviceNameResourceAttribute = new ResourceAttribute.Builder()
+        .name("serviceType")
+        .value("service")
+        .operator("stringEquals")
+        .build();
+
+ResourceTag policyResourceTag = new ResourceTag.Builder()
+        .name("project")
+        .value("prototype")
+        .operator("stringEquals")
+        .build();
+
+PolicyResource policyResources = new PolicyResource.Builder()
+        .addAttributes(accountIdResourceAttribute)
+        .addAttributes(serviceNameResourceAttribute)
+        .addTags(policyResourceTag)
+        .build();
+
+CreatePolicyOptions options = new CreatePolicyOptions.Builder()
+        .type("access")
+        .subjects(Arrays.asList(policySubjects))
+        .roles(Arrays.asList(policyRoles))
+        .resources(Arrays.asList(policyResources))
+        .build();
+
+Response<Policy> response = service.createPolicy(options).execute();
+Policy policy = response.getResult();
+
+System.out.println(policy);
+```
+{: codeblock}
+{: java}
+
+```javascript
+const policySubjects = [
+  {
+    attributes: [
+      {
+        name: 'iam_id',
+        value: exampleUserId,
+      },
+    ],
+  },
+];
+const policyRoles = [
+  {
+    role_id: 'crn:v1:bluemix:public:iam::::role:Viewer',
+  },
+];
+const accountIdResourceAttribute = {
+  name: 'accountId',
+  value: exampleAccountId,
+  operator: 'stringEquals',
+};
+const serviceNameResourceAttribute = {
+  name: 'serviceType',
+  value: 'service',
+  operator: 'stringEquals',
+};
+const policyResourceTag = {
+  name: 'project',
+  operator: 'stringEquals',
+  value: 'prototype',
+};
+const policyResources = [
+  {
+    attributes: [accountIdResourceAttribute, serviceNameResourceAttribute],
+    tags: [policyResourceTag],
+  },
+];
+const params = {
+  type: 'access',
+  subjects: policySubjects,
+  roles: policyRoles,
+  resources: policyResources,
+};
+
+iamPolicyManagementService.createPolicy(params)
+  .then(res => {
+    examplePolicyId = res.result.id;
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err)
+  });
+```
+{: codeblock}
+{: javascript}
+
+```python
+policy_subjects = PolicySubject(
+  attributes=[SubjectAttribute(name='iam_id', value=example_user_id)])
+policy_roles = PolicyRole(
+  role_id='crn:v1:bluemix:public:iam::::role:Viewer')
+account_id_resource_attribute = ResourceAttribute(
+  name='accountId', value=example_account_id)
+service_name_resource_attribute = ResourceAttribute(
+  name='serviceType', value='service')
+policy_resource_tag = ResourceTag(
+  name='project', value='prototype')
+policy_resources = PolicyResource(
+  attributes=[account_id_resource_attribute,
+        service_name_resource_attribute],
+  tags=[policy_resource_tag])
+
+policy = iam_policy_management_service.create_policy(
+  type='access',
+  subjects=[policy_subjects],
+  roles=[policy_roles],
+  resources=[policy_resources]
+).get_result()
+
+print(json.dumps(policy, indent=2))
+```
+{: codeblock}
+{: python}
+
+```go
+subjectAttribute := &iampolicymanagementv1.SubjectAttribute{
+  Name:  core.StringPtr("iam_id"),
+  Value: &exampleUserID,
+}
+policySubjects := &iampolicymanagementv1.PolicySubject{
+  Attributes: []iampolicymanagementv1.SubjectAttribute{*subjectAttribute},
+}
+policyRoles := &iampolicymanagementv1.PolicyRole{
+  RoleID: core.StringPtr("crn:v1:bluemix:public:iam::::role:Viewer"),
+}
+accountIDResourceAttribute := &iampolicymanagementv1.ResourceAttribute{
+  Name:     core.StringPtr("accountId"),
+  Value:    core.StringPtr(exampleAccountID),
+  Operator: core.StringPtr("stringEquals"),
+}
+serviceNameResourceAttribute := &iampolicymanagementv1.ResourceAttribute{
+  Name:     core.StringPtr("serviceType"),
+  Value:    core.StringPtr("service"),
+  Operator: core.StringPtr("stringEquals"),
+}
+policyResourceTag := &iampolicymanagementv1.ResourceTag{
+  Name:     core.StringPtr("project"),
+  Value:    core.StringPtr("prototype"),
+  Operator: core.StringPtr("stringEquals"),
+}
+policyResources := &iampolicymanagementv1.PolicyResource{
+  Attributes: []iampolicymanagementv1.ResourceAttribute{
+    *accountIDResourceAttribute, *serviceNameResourceAttribute},
+  Tags: []iampolicymanagementv1.ResourceTag{*policyResourceTag},
+}
+
+options := iamPolicyManagementService.NewCreatePolicyOptions(
+  "access",
+  []iampolicymanagementv1.PolicySubject{*policySubjects},
+  []iampolicymanagementv1.PolicyRole{*policyRoles},
+  []iampolicymanagementv1.PolicyResource{*policyResources},
+)
+
+policy, response, err := iamPolicyManagementService.CreatePolicy(options)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(policy, "", "  ")
+fmt.Println(string(b))
+```
+{: codeblock}
+{: go}
+
+### Expected response
+
+```bash
+{
+  "id": "12345678-abcd-1a2b-a1b2-1234567890ab",
+  "type": "access",
+  "description": "Viewer role access for all instances of SERVICE_NAME in the account.",
+  "subjects": [
+    {
+      "attributes": [
+        {
+          "name": "iam_id",
+          "value": "IBMid-123453user"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "roles_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+    }
+  ],
+  "resources": [
+    {
+      "attributes": [
+        {
+          "name": "accountId",
+          "value": "ACCOUNT_ID",
+          "operator": "stringEquals"
+        },
+        {
+          "name": "serviceName",
+          "value": "SERVICE_NAME",
+          "operator": "stringEquals"
+        }
+      ]
+    },
+    {
+      "tags": [
+        {
+          "name": "project",
+          "value": "moonshot",
+          "operator": "stringEquals"
+        },
+        {
+          "name": "pipeline",
+          "value": "test",
+          "operator": "stringEquals"
+        }
+      ]
+    }
+  ],
+  "href": "https://iam.cloud.ibm.com/v1/policies/12345678-abcd-1a2b-a1b2-1234567890ab",
+  "created_at": "2018-08-30T14:09:09.907Z",
+  "created_by_id": "USER_ID",
+  "last_modified_at": "2018-08-30T14:09:09.907Z",
+  "last_modified_by_id": "USER_ID",
+  "state": "active"
+}
+```
+{: codeblock}
+{: curl}
+
+```java
+{
+  "id": "12345678-abcd-1a2b-a1b2-1234567890ab",
+  "type": "access",
+  "description": "Viewer role access for all instances of SERVICE_NAME in the account.",
+  "subjects": [
+    {
+      "attributes": [
+        {
+          "name": "iam_id",
+          "value": "IBMid-123453user"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "roles_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+    }
+  ],
+  "resources": [
+    {
+      "attributes": [
+        {
+          "name": "accountId",
+          "value": "ACCOUNT_ID",
+          "operator": "stringEquals"
+        },
+        {
+          "name": "serviceName",
+          "value": "SERVICE_NAME",
+          "operator": "stringEquals"
+        }
+      ]
+    },
+    {
+      "tags": [
+        {
+          "name": "project",
+          "value": "moonshot",
+          "operator": "stringEquals"
+        },
+        {
+          "name": "pipeline",
+          "value": "test",
+          "operator": "stringEquals"
+        }
+      ]
+    }
+  ],
+  "href": "https://iam.cloud.ibm.com/v1/policies/12345678-abcd-1a2b-a1b2-1234567890ab",
+  "created_at": "2018-08-30T14:09:09.907Z",
+  "created_by_id": "USER_ID",
+  "last_modified_at": "2018-08-30T14:09:09.907Z",
+  "last_modified_by_id": "USER_ID",
+  "state": "active"
+}
+```
+{: codeblock}
+{: java}
+
+```javascript
+{
+  "id": "12345678-abcd-1a2b-a1b2-1234567890ab",
+  "type": "access",
+  "description": "Viewer role access for all instances of SERVICE_NAME in the account.",
+  "subjects": [
+    {
+      "attributes": [
+        {
+          "name": "iam_id",
+          "value": "IBMid-123453user"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "roles_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+    }
+  ],
+  "resources": [
+    {
+      "attributes": [
+        {
+          "name": "accountId",
+          "value": "ACCOUNT_ID",
+          "operator": "stringEquals"
+        },
+        {
+          "name": "serviceName",
+          "value": "SERVICE_NAME",
+          "operator": "stringEquals"
+        }
+      ]
+    },
+    {
+      "tags": [
+        {
+          "name": "project",
+          "value": "moonshot",
+          "operator": "stringEquals"
+        },
+        {
+          "name": "pipeline",
+          "value": "test",
+          "operator": "stringEquals"
+        }
+      ]
+    }
+  ],
+  "href": "https://iam.cloud.ibm.com/v1/policies/12345678-abcd-1a2b-a1b2-1234567890ab",
+  "created_at": "2018-08-30T14:09:09.907Z",
+  "created_by_id": "USER_ID",
+  "last_modified_at": "2018-08-30T14:09:09.907Z",
+  "last_modified_by_id": "USER_ID",
+  "state": "active"
+}
+```
+{: codeblock}
+{: javascript}
+
+```python
+{
+  "id": "12345678-abcd-1a2b-a1b2-1234567890ab",
+  "type": "access",
+  "description": "Viewer role access for all instances of SERVICE_NAME in the account.",
+  "subjects": [
+    {
+      "attributes": [
+        {
+          "name": "iam_id",
+          "value": "IBMid-123453user"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "roles_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+    }
+  ],
+  "resources": [
+    {
+      "attributes": [
+        {
+          "name": "accountId",
+          "value": "ACCOUNT_ID",
+          "operator": "stringEquals"
+        },
+        {
+          "name": "serviceName",
+          "value": "SERVICE_NAME",
+          "operator": "stringEquals"
+        }
+      ]
+    },
+    {
+      "tags": [
+        {
+          "name": "project",
+          "value": "moonshot",
+          "operator": "stringEquals"
+        },
+        {
+          "name": "pipeline",
+          "value": "test",
+          "operator": "stringEquals"
+        }
+      ]
+    }
+  ],
+  "href": "https://iam.cloud.ibm.com/v1/policies/12345678-abcd-1a2b-a1b2-1234567890ab",
+  "created_at": "2018-08-30T14:09:09.907Z",
+  "created_by_id": "USER_ID",
+  "last_modified_at": "2018-08-30T14:09:09.907Z",
+  "last_modified_by_id": "USER_ID",
+  "state": "active"
+}
+```
+{: codeblock}
+{: python}
+
+```go
+{
+  "id": "12345678-abcd-1a2b-a1b2-1234567890ab",
+  "type": "access",
+  "description": "Viewer role access for all instances of SERVICE_NAME in the account.",
+  "subjects": [
+    {
+      "attributes": [
+        {
+          "name": "iam_id",
+          "value": "IBMid-123453user"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "roles_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+    }
+  ],
+  "resources": [
+    {
+      "attributes": [
+        {
+          "name": "accountId",
+          "value": "ACCOUNT_ID",
+          "operator": "stringEquals"
+        },
+        {
+          "name": "serviceName",
+          "value": "SERVICE_NAME",
+          "operator": "stringEquals"
+        }
+      ]
+    },
+    {
+      "tags": [
+        {
+          "name": "project",
+          "value": "moonshot",
+          "operator": "stringEquals"
+        },
+        {
+          "name": "pipeline",
+          "value": "test",
+          "operator": "stringEquals"
+        }
+      ]
+    }
+  ],
+  "href": "https://iam.cloud.ibm.com/v1/policies/12345678-abcd-1a2b-a1b2-1234567890ab",
+  "created_at": "2018-08-30T14:09:09.907Z",
+  "created_by_id": "USER_ID",
+  "last_modified_at": "2018-08-30T14:09:09.907Z",
+  "last_modified_by_id": "USER_ID",
+  "state": "active"
+}
+```
+{: codeblock}
+{: go}
+
+## Add users to your access groups by using the API
+{: #catalog-access-api-users}
+{: api}
+
+To add users to an access group by using the API, call the [IAM Access Groups API](https://cloud.ibm.com/apidocs/iam-access-groups#add-members-to-access-group) as shown in the following example.
+
+```bash
+curl -X PUT -H "Authorization: {iam_token}" -H "Accept: application/json" -H "Content-Type: application/json" -d '{"members": [ {"iam_id": "IBMid-user1", "type": "user"}, {"iam_id": "iam-ServiceId-123", "type": "service"} ]}' "{base_url}/groups/{access_group_id}/members"
+```
+{: codeblock}
+{: curl}
+
+```java
+AddGroupMembersRequestMembersItem member1 = new AddGroupMembersRequestMembersItem.Builder()
+  .iamId("IBMid-user1")
+  .type("user")
+  .build();
+AddGroupMembersRequestMembersItem member2 = new AddGroupMembersRequestMembersItem.Builder()
+  .iamId("iam-ServiceId-123")
+  .type("service")
+  .build();
+AddMembersToAccessGroupOptions addMembersToAccessGroupOptions = new AddMembersToAccessGroupOptions.Builder()
+  .accessGroupId(testGroupId)
+  .addMembers(member1)
+  .addMembers(member2)
+  .build();
+Response<AddGroupMembersResponse> response = service.addMembersToAccessGroup(addMembersToAccessGroupOptions).execute();
+AddGroupMembersResponse addGroupMembersResponse = response.getResult();
+
+System.out.println(addGroupMembersResponse);
+```
+{: codeblock}
+{: java}
+
+```javascript
+const groupMember1 = {
+  iam_id: 'IBMid-user1',
+  type: 'user',
+};
+const groupMember2 = {
+  iam_id: 'iam-ServiceId-123',
+  type: 'service',
+};
+const params = {
+  accessGroupId: testGroupId,
+  members: [groupMember1, groupMember2],
+};
+
+iamAccessGroupsService.addMembersToAccessGroup(params)
+  .then(res => {
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err)
+  });
+```
+{: codeblock}
+{: javascript}
+
+```python
+member1 = AddGroupMembersRequestMembersItem(
+  iam_id='IBMid-user1', type='user')
+member2 = AddGroupMembersRequestMembersItem(
+  iam_id='iam-ServiceId-123', type='service')
+members = [member1, member2]
+
+add_group_members_response = iam_access_groups_service.add_members_to_access_group(
+  access_group_id=test_group_id,
+  members=members
+).get_result()
+
+print(json.dumps(add_group_members_response, indent=2))
+```
+{: codeblock}
+{: python}
+
+```go
+groupMembers := []iamaccessgroupsv2.AddGroupMembersRequestMembersItem{
+  iamaccessgroupsv2.AddGroupMembersRequestMembersItem{
+    IamID: core.StringPtr("IBMid-user1"),
+    Type:  core.StringPtr("user"),
+  },
+  iamaccessgroupsv2.AddGroupMembersRequestMembersItem{
+    IamID: core.StringPtr("iam-ServiceId-123"),
+    Type:  core.StringPtr("service"),
+  },
+}
+addMembersToAccessGroupOptions := iamAccessGroupsService.NewAddMembersToAccessGroupOptions(testGroupID)
+addMembersToAccessGroupOptions.SetMembers(groupMembers)
+addGroupMembersResponse, response, err := iamAccessGroupsService.AddMembersToAccessGroup(addMembersToAccessGroupOptions)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(addGroupMembersResponse, "", "  ")
+fmt.Println(string(b))
+```
+{: codeblock}
+{: go}
+
+### Expected response
+
+```bash
+{
+  "members": [
+    {
+      "iam_id": "$IBM_ID",
+      "type": "user",
+      "created_at": "2019-01-01T01:01:00Z",
+      "created_by_id": "CREATOR_ID",
+      "status_code": 200
+    },
+    {
+      "iam_id": "$SERVICE_ID",
+      "status_code": 400,
+      "trace": "12345678-abcd-1a2b-a1b2-1234567890ab",
+      "errors": [
+        {
+          "code": "error_occurred",
+          "message": "The service id is missing or incorrect"
+        }
+      ]
+    }
+  ]
+}
+```
+{: codeblock}
+{: curl}
+
+```java
+{
+  "members": [
+    {
+      "iam_id": "$IBM_ID",
+      "type": "user",
+      "created_at": "2019-01-01T01:01:00Z",
+      "created_by_id": "CREATOR_ID",
+      "status_code": 200
+    },
+    {
+      "iam_id": "$SERVICE_ID",
+      "status_code": 400,
+      "trace": "12345678-abcd-1a2b-a1b2-1234567890ab",
+      "errors": [
+        {
+          "code": "error_occurred",
+          "message": "The service id is missing or incorrect"
+        }
+      ]
+    }
+  ]
+}
+```
+{: codeblock}
+{: java}
+
+```javascript
+{
+  "members": [
+    {
+      "iam_id": "$IBM_ID",
+      "type": "user",
+      "created_at": "2019-01-01T01:01:00Z",
+      "created_by_id": "CREATOR_ID",
+      "status_code": 200
+    },
+    {
+      "iam_id": "$SERVICE_ID",
+      "status_code": 400,
+      "trace": "12345678-abcd-1a2b-a1b2-1234567890ab",
+      "errors": [
+        {
+          "code": "error_occurred",
+          "message": "The service id is missing or incorrect"
+        }
+      ]
+    }
+  ]
+}
+```
+{: codeblock}
+{: javascript}
+
+```python
+{
+  "members": [
+    {
+      "iam_id": "$IBM_ID",
+      "type": "user",
+      "created_at": "2019-01-01T01:01:00Z",
+      "created_by_id": "CREATOR_ID",
+      "status_code": 200
+    },
+    {
+      "iam_id": "$SERVICE_ID",
+      "status_code": 400,
+      "trace": "12345678-abcd-1a2b-a1b2-1234567890ab",
+      "errors": [
+        {
+          "code": "error_occurred",
+          "message": "The service id is missing or incorrect"
+        }
+      ]
+    }
+  ]
+}
+```
+{: codeblock}
+{: python}
+
+```go
+{
+  "members": [
+    {
+      "iam_id": "$IBM_ID",
+      "type": "user",
+      "created_at": "2019-01-01T01:01:00Z",
+      "created_by_id": "CREATOR_ID",
+      "status_code": 200
+    },
+    {
+      "iam_id": "$SERVICE_ID",
+      "status_code": 400,
+      "trace": "12345678-abcd-1a2b-a1b2-1234567890ab",
+      "errors": [
+        {
+          "code": "error_occurred",
+          "message": "The service id is missing or incorrect"
+        }
+      ]
+    }
+  ]
+}
+```
+{: codeblock}
+{: go}
