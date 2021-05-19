@@ -316,6 +316,7 @@ Managing your account, resources, and access
         ts-rscs-migrate-all.md
         ts-rscs-migrate-rg.md
         ts-rscs-migrate-cf.md
+        ts-rscs-reactivate-upgrade-suspended.md
 
     known-issues.md
     {: .navgroup-end}

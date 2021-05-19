@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-05-12"
+lastupdated: "2021-05-19"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users, Cloud Foundry orgs
 
@@ -85,11 +85,4 @@ If you need to check the number of policies in your account or request an increa
 {: #access-tag-limits}
 
 Access management tags are only available when you create an access policy that is scoped for all IAM-enabled services. In this case, when you enable the access based on tags, no other attributes can be added. And, when you base your policy on a specific region or resource group, no tag can be added to the access policy.
-
-## Resource group is inactive with state: SUSPENDED
-{: #resource_inactive}
-
-When the process to reactivate or upgrade a suspended account does not complete successfully, you might see the following message when creating a new service: `The resource group <name> is inactive with state: SUSPENDED`.
- 
-To resolve the issue, [open a support case](/docs/get-support?topic=get-support-open-case) and include the group name from the error message in the case details.
 
