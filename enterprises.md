@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2020
-lastupdated: "2020-11-30"
+  years: 2019, 2021
+lastupdated: "2021-05-19"
 
 keywords: enterprise, enterprise account, multiple accounts, organization, hierarchy
 
@@ -84,7 +84,7 @@ The user lists for each account are only visible to the users who are invited to
 
 Similar to how user management is entirely separate in each account and the enterprise itself, so is access management. This separation means that users who manage your enterprise can't access account resources within the child accounts unless you specifically enable them to. For example, your financial officer can have the Administrator role on the Billing account management service within the enterprise account, which provides them access to billing and payment information and usage data down to the resource type. But, unless they are invited to a child account and are assigned access to the Billing account management service for that account, they can't view offers or update spending limits for the child account.
 
-For more information, see [User management for enterprises](/docs/account?topic=account-enterprise-access).
+For more information, see [User management for enterprises](/docs/account?topic=account-enterprise-access-management).
 
 ## How can I use an enterprise?
 {: #enterprise-use-cases}
