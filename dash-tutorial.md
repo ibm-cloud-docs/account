@@ -2,7 +2,7 @@
 
 copyright:
    years: 2021
-lastupdated: "2021-05-03"
+lastupdated: "2021-05-19"
 
 keywords: dashboard, custom dashboard
 
@@ -21,6 +21,7 @@ completion-time: 10m
 {:note: .note}
 {:external: target="_blank" .external}
 {:step: data-tutorial-type='step'}
+{:video: .video}
 
 
 # Customizing your {{site.data.keyword.Bluemix_notm}} dashboard 
@@ -31,13 +32,13 @@ completion-time: 10m
 This tutorial walks you through how to customize your dashboard in the {{site.data.keyword.Bluemix}} console to ensure that what is displayed is relevant to you. By completing this tutorial, you learn how to create a new dashboard, add and organize widgets, duplicate a dashboard, share a dashboard with other users, and delete unused dashboards.
 {: shortdesc}
 
-The tutorial uses a fictitious project manager who is named Cora. She wants to understand total resource usage over the past year and how her team's budget is used to build a new chat bot with specific {{site.data.keyword.Bluemix}} resources related to AI and machine learning. As you complete the tutorial, adapt each step to match your project's needs.
+The tutorial uses a fictitious project manager who is named Cora. She wants to understand total resource usage over the past year and how her team's budget is used to build a new chatbot with specific resources related to AI and machine learning. As you complete the tutorial, adapt each step to match your project's needs.
 
 ## Create a dashboard
 {: #tutorial-dash-new}
 {: step}
 
-First, you need to create a new dashboard and select a template. 
+First, create a new dashboard and select a template. 
 
 1. In the {{site.data.keyword.cloud_notm}} console, click the Actions icon ![Action icon](../icons/action-menu-icon.svg), and select **Create a dashboard**. 
 2. Select the Management template from the available options, and then click **Next**. 
@@ -46,21 +47,25 @@ First, you need to create a new dashboard and select a template.
   
 2. Enter your dashboard title in 30 characters or less. 
 3. Next, use the Dashboard settings panel to add relevant widgets to your dashboard. To add widgets, drag the widgets onto your dashboard. Add the **Notes** widget to your dashboard. This widget is where Cora can provide essential information that's custom for the team that she shares the dashboard with. 
-5. Click the **Scope** tab to select from the available resources in the account that you have access to. The scope determines the data that populates for the selected resources. You can filter the resource by group, tag, and location. Cora wants to select only resources that are related to AI and machine learning, so she filters by the resource group that exists for her team's chat bot project. 
-   Not all widgets can be scoped. If a widget can't be scoped, it displays data for all resources. 
+5. Click the **Scope** tab to select from the available resources in the account that you have access to. The scope determines the data that populates for the selected resources. You can filter the resource by group, tag, and location. Cora wants to select only resources that are related to AI and machine learning, so she filters by the resource group that exists for her team's chatbot project. 
+   Not all widgets can be scoped. If a widget can't be scoped, the data for all resources is displayed. 
    {: note}
-6. Reorganize the layout to fit your needs. Cora moves Notes to the first row, next to Resource summary. In the next row, she includes the Usage, User access, and {{site.data.keyword.cloud_notm}} status widgets. All other widgets remain below in her hierarchy. 
+6. Reorganize the layout to fit your needs. Cora moves Notes to the first row, next to Resource summary. In the next row, she includes the Usage, User access, and {{site.data.keyword.cloud_notm}} status widgets.  
 7. Click **Save dashboard**. 
+
+### Watch and learn
+The following video shows you the steps to create a custom dashboard: 
+![Create a custom dashboard in {{site.data.keyword.Bluemix_notm}}.](images/scope-dash-tutorial.mp4){: video width="800" height="450" controls loop}
 
 ## Share a dashboard with teammates
 {: #tutorial-dash-share}
 {: step}
 
-You can share dashboards with users in your account to give them access to view the dashboard. Cora wants to share her custom Management dashboard with her program director so they can talk about resource allocation and the budget for next year. 
+You can share dashboards with users in your account to give them access to view the dashboard. Cora wants to share her custom Management dashboard with her program director so they can talk about resource allocation and the budget for the next year. 
 
 To share a dashboard, click the Actions icon ![Action icon](../icons/action-menu-icon.svg), and select **Share**. After you share it with a user and they click the link, the dashboard is added to their account. 
 
-All users with the dashboard link can share the dashboard. When you share a dashboard, other users see the populated data that they have permission to view. If they don’t have the same permissions as the owner, for example, if they don’t have access to Cora’s chatbot resource group, they cannot view that data. Users without permissions to the scoped resources are able to view the dashboard layout, but not the populated data. A user with insufficient permissions might see a warning icon next to the dashboard that indicates a scoping error and that the data that's displayed might not be complete. Make sure that the users you share a dashboard with have access to the resources you scope the dashboard to.
+All users with the dashboard link can share the dashboard, which means other users can see the populated data that they have permission to view. If they don’t have the same permissions as the owner, for example, if they don’t have access to Cora’s chatbot resource group, they cannot view that data. Users without permissions to the scoped resources are able to view the dashboard layout, but not the populated data. A user with insufficient permissions might see a warning icon next to the dashboard that indicates a scoping error and that the data that's displayed might not be complete. Make sure that the users you share a dashboard with have access to the resources you scope the dashboard to.
 
 ## Duplicate a dashboard
 {: #tutorial-dash-dupe}
@@ -71,14 +76,14 @@ Cora decides that the team of developers she manages doesn't need to see the Usa
 You can duplicate a dashboard to include the same structure and layout without having to re-create the dashboard from scratch. 
 
 1.  To duplicate a dashboard, click the Actions icon ![More Actions icon](../icons/action-menu-icon.svg) > **Duplicate**.  
-2. Define the scope. The scope and assigned access is not saved from the dashboard that was duplicated. Cora applies the resource group filter for the chat bot project just like she did for the original dashboard.
+2. Define the scope. The scope and assigned access is not saved from the dashboard that was duplicated. Cora applies the resource group filter for the chatbot project just like she did for the original dashboard.
 3. Click **Save dashboard**. 
 4. Click the Actions icon ![Action icon](../icons/action-menu-icon.svg), and select **Share** to share the new dashboard with the right users. 
 
 ## Next steps
 {: #tutorial-dash-step-next}
 
-When the chat bot project is complete, Cora's team of developers might want to remove the dashboard from their view, even if Cora wants to keep it around to reference later. You can remove a dashboard only if it was shared with you.
+When the chatbot project is complete, Cora's team of developers might want to remove the dashboard from their view, even if Cora wants to keep it around to reference later. You can remove a dashboard only if it was shared with you.
 
 1. In the {{site.data.keyword.Bluemix_notm}} console go to **Manage** > **Account**, and select **Account resources** > **Dashboards**.
 2. Click the Actions icon ![Action icon](../icons/action-menu-icon.svg), and select **Remove**. 
