@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-12-01"
+  years: 2020, 2021
+lastupdated: "2021-05-24"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, MFA, authetication, TOTP, U2F, FIDO U2F, security key
 
@@ -150,7 +150,7 @@ Before you start working with resources in your account, familiarize yourself wi
 Complete the following steps to set your preferences for receiving various types of notifications: 
 
 1. To receive notifications about unplanned events, planned maintenance, announcements, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg)
- > **Profile and settings** > **Notifications**.
+ **Profile and settings** > **Notifications**.
    * Platform notifications are associated with the {{site.data.keyword.cloud_notm}} platform and don't apply to events related to {{site.data.keyword.cloud_notm}} services. By default, all platform notifications are turned off. 
    * Infrastructure notifications apply only to the account in which the preferences are set. By default, all infrastructure notifications are turned on. 
 2. To receive spending notifications, go to **Manage** > **Billing and usage** > **Spending notifications**. You receive notifications when you reach 80%, 90%, and 100% of the spending thresholds that you specify. 
