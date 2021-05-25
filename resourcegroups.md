@@ -5,7 +5,7 @@
 copyright:
 
   years: 2017, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-05-25"
 
 keywords: resource group, account resources, users access to resource groups, create resource group
 
@@ -274,6 +274,8 @@ To add the resources to a resource group, complete the following steps:
 3. From here, you are directed to the catalog. You can search the offerings or filter based on a specific category, provider, pricing plan, type of compliance, or release type. Examples of resources include apps, service instances, container clusters, storage volumes, virtual servers, and software.
 
 ## Adding resources to a resource group by using the API
+{: #add_to_rgs_api}
+{: api}
 
 See [Managing catalog settings](/docs/account?topic=account-filter-account#set-public-visibility-api) to set the visibility of the {{site.data.keyword.cloud}} catalog and to control access to products in the public catalog and private catalogs for users in your account.
 
