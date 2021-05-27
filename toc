@@ -69,6 +69,7 @@ Managing your account, resources, and access
             iam-mngcf.md
             iam-authorizations.md
             iam-policy-number.md
+            iam-audit-policies.md
 
         {: .topicgroup}
         Managing identities
