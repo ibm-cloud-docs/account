@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-05-24"
+lastupdated: "2021-05-27"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, MFA, authetication, TOTP, U2F, FIDO U2F, security key
 
@@ -208,6 +208,8 @@ Complete the following steps:
 3. Specify the email address of the user. If you are inviting more than one user, they are all assigned the same access.
 4. Add the user to one or more of the access groups that you created in the previous step. 
 5. Click **Invite**. 
+
+If you're looking for more details, see [Inviting users to an account](/docs/account?topic=account-iamuserinv).
 
 ## Explore your support options
 {: #account-gs-supportcenter}
