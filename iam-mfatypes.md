@@ -29,7 +29,7 @@ The following two types of MFA options might be enabled for your account:
 <dt>ID-based MFA</dt>
 <dd>An option that is enabled by an account owner or an administrator for the billing service in one of the accounts to which you are a member. This type of MFA is associated with your IBMid and authenticates you across all accounts to which you are a member, so you authenticate only one time.</dd>
 <dt>Account-based MFA</dt>
-<dd>Options such as security questions that use a time-based one-time passcode and external authentication option with Symantec. These types of MFA are specific per account. If you have a different type set up for each account that you belong to, you must authenticate in a different way each time you switch accounts. These legacy MFA options are available only with classic infrastructure accounts.</dd>
+<dd>Options including security questions that use a time-based one-time passcode and the external authentication option with Symantec. These types of MFA are specific per account. If you have a different type set up for each account that you belong to, you must authenticate in a different way each time you switch accounts. These legacy MFA options are available only with classic infrastructure accounts.</dd>
 </dl>
 
 IBMid MFA satisfies the authentication requirement so that you are not prompted for any other types of MFA even if they are enabled. So, if an account to which you are a member has this option turned on, this is the only type of MFA that you are prompted for at login. If you are a new user, use the ID-based IBMid MFA option to ensure that your login is easy and secure.
