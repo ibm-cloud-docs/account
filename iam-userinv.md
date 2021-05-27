@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2021
 
-lastupdated: "2021-05-04"
+lastupdated: "2021-05-27"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -31,14 +31,13 @@ subcollection: account
 {:curl: .ph data-hd-programlang='curl'}
 {:go: .ph data-hd-programlang='go'}
 
-
 # Inviting users to an account
 {: #iamuserinv}
 
 Use {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) to invite users, cancel invitations, or resend a pending invitation. You can invite a single user or multiple users.
 {:shortdesc}
 
-From June 1, 2021, to enhance security and user protection, {{site.data.keyword.Bluemix}} will require all users to accept an invitation in order to become an active user within a new account. To avoid any disruption to on-going workflows and automation, you need to update your scripts and notify your users of this upcoming change. [Learn more.](/docs/overview?topic=overview-whatsnew#upcoming-invitation-flow)
+From June 1, 2021, to enhance security and user protection, {{site.data.keyword.Bluemix}} requires all users to accept an invitation in order to become an active user within a new account. [Learn more.](/docs/overview?topic=overview-whatsnew#new-invitation-flow)
 {: important}
 
 ## Watch and learn
@@ -87,13 +86,13 @@ Depending on your access level, you can invite new users and assign all or just 
 
 To invite users, complete the following steps:
 
-1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Users**.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users**.
 2. Click **Invite users**.
 3. Specify the email addresses of the users. If you are inviting more than one user with a single invitation, they are all assigned the same access.
 4. Add one or more of the access options that you manage. You must assign at least one access option. For any access options that you don't add and configure, the default value of **No access** is assigned. Depending on the options that you are authorized to manage, you can assign the following types of access:
 
   * Add users to access groups. Click **Add** for each access group that you want the users to belong to. 
-  * Manually assign users access. Expand this section to assign individual IAM access policies, Cloud Foundry roles, or classic infrastructure permissions.
+  * Manually assign users access. Expand the section to assign individual IAM access policies, Cloud Foundry roles, or classic infrastructure permissions.
      * Select **Cloud Foundry**, choose an organization, then select a region to select a specific space, and assign a space role. An organization and space role are both required to add the access assignment to the invite.
      * Select **Classic infrastructure**, and then choose from the three permission sets.
      * Select **IAM services**, and then select the option for all services or just a specific service. Next, you can scope the access to the entire account or just one resource group. Then, select all roles that apply. To view what actions are mapped to each role, click the **Actions for role** option to view a list of all actions that are mapped to a specific role. <br><br> Some services support the use of advanced operators to grant access to resources that satisfy specific naming conventions. See [Assigning access by using wildcard policies](/docs/account?topic=account-wildcard) for more information. 
@@ -113,11 +112,12 @@ You can cancel an invitation for any users that are shown in a Processing or Pen
 {: #cli-invite}
 {: cli}
 
-To invite users by using the command-line interface (CLI), run the following command:
+To invite users by using the CLI, run the following command:
 
 ```
 ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE, --space-role SPACE_ROLE]]
 ```
+{: codeblock}
 
 By using the CLI, you can choose to assign Cloud Foundry access or no access and work on assigning access later. For more information about the command parameters, see [**`ibmcloud account user-invite`**](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_user_invite). 
 
@@ -128,7 +128,7 @@ By using the CLI, you can choose to assign Cloud Foundry access or no access and
 You can use the [API](https://cloud.ibm.com/apidocs/user-management#invite-users){: external} to invite users in bulk. All users that are included in a single invitation are assigned the same access. When you invite users by using the API, you enter emails in a comma-separated list with each entry that is surrounded by quotations. This example assigns access by adding the user to an access group.
 
 
-```bash
+``` bash
 curl -X POST https://user-management.cloud.ibm.com/v2/accounts/987d4cfd77b04e9b9e1a6asdcc861234/users -H 'Authorization: Bearer <IAM_TOKEN>'
   -H 'Content-Type: application/json' -d '{
       "users": [
@@ -339,6 +339,37 @@ fmt.Println(string(b))
 ```
 {: codeblock}
 {: go}
+
+## Pending invitations
+{: #pending-invitations}
+
+After inviting new users to join your account, {{site.data.keyword.cloud_notm}} requires all users to accept the invitation to become an active user in your account.
+
+The invitation expires after 30 days. New users to {{site.data.keyword.cloud_notm}} can only accept an invitation by using the invitation link they received through email.
+{: note}
+
+### Accepting invitations in the console
+{: #accepting-invitations-ui}
+{: ui}
+
+If the invited user is already a member of {{site.data.keyword.cloud_notm}}, they receive an invitation link in their notifications and by email. On the [Notifications page](https://cloud.ibm.com/user/notifications){: external}, users can use the search field to locate an invitation or filter by the notification type called account. For more information, see [Viewing notifications](/docs/get-support?topic=get-support-viewing-notifications).
+
+### Accepting invitations by using the CLI
+{: #cli-accepting}
+{: cli}
+
+If the invited user is already a member of {{site.data.keyword.cloud_notm}, they can accept invitations by using the CLI. In the following command, the `ACCOUNT_ID` is the ID of the targeted account that the user is invited to join.
+
+```
+ibmcloud login -c ACCOUNT_ID --accept
+```
+{: codeblock}
+
+### Accepting invitations by using the API
+{: #api-accepting}
+{: api}
+
+This action can be done only through the UI or CLI. To see the steps, switch to the UI or CLI instructions.
 
 ## Adding VPN-only users
 {: #add-vpn-only}
