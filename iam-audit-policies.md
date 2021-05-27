@@ -145,7 +145,7 @@ The format of the response is represented in JSON.
 ## Deleting unused policies
 {: #iam-audit-policies-delete}
 
-You identified one or more policies that have not been used to grant access in a while.
+You identified one or more policies that have not been used to grant access in a while. You can delete the unused policies as shown in the following examples.
 
 ```
 curl -X DELETE https://iam.cloud.ibm.com/v1/policies/{examplePolicyId} \
