@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-05-26"
+lastupdated: "2021-05-27"
 
 keywords: platform notifications, email notifications, IBM Cloud notifications, notification preferences, email preferences, user notifications, infrastructure notifications
 
@@ -108,6 +108,18 @@ To ensure that a user has the correct access, go to **Manage** > **Access (IAM)*
 {: caption="Table 1. Required classic infrastructure permissions for receiving user notifications" caption-side="top"}
 
 Then, go to **Devices** to assign a user access to the specific devices and device types. You can also enable future access to all devices of a certain type. For more information about setting classic infrastructure permissions, see [Managing classic infrastructure access](/docs/account?topic=account-mngclassicinfra).
+
+## Managing invitation notifications
+{: invite-notifications}
+
+Users can receive an invitation link in their notifications and by email to join an account, if they are already members of IBM Cloud. User managers can invite any user to the IBM Cloud platform if they have an email address to use for an invite. 
+
+On the {{site.data.keyword.Bluemix_notm}} [Notifications page](https://cloud.ibm.com/user/notifications){: external}, you can use the search field to locate an invitation or filter by the notification type called account. You cannot set email preferences for receiving account type notifications. 
+
+Users already present in IBM Cloud will receive an email and a notification with an invitation link. If an email address does not correspond to a known user in IBM Cloud, an invitation email gets sent to accept, but users can also choose not to accept the invitation. For more information, see [Viewing notifications](/docs/get-support?topic=get-support-viewing-notifications) and [Inviting users to an account](/docs/account?topic=account-iamuserinv).
+
+The invitations expire after 30 days. New users to {{site.data.keyword.cloud_notm}} can only accept an invitation by using the invitation link they received through email.
+{: note}
 
 ## Adding users to a distribution list 
 {: distribution-list}
