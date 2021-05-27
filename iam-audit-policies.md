@@ -26,7 +26,7 @@ subcollection: account
 # Auditing access policies
 {: #iam-audit-policies}
 
-You can reduce the number of infrequently used access policies to keep the minimum access that is required for each user in the account. IAM provides backup for deleted policies for a limited amount of time in case the policies need to be restored.
+To reduce the number of policies in the account and keep only the minimum access that is required for each user, you can identify the infrequently used access policies and remove them.
 {:shortdesc}
 
 IAM captures authorization information for each policy. This information includes the last time the policy was used to grant a permit and a running count of its use. Every access policy in {{site.data.keyword.cloud}} is soft deleted and kept in the system for up to 10 days. During this time period, you can list and restore them at any time.
@@ -105,7 +105,7 @@ fmt.Println(string(b))
 {: go}
 
 * `format=include_last_permit`: Include the last permit information for each policy.
-* `sort=-last_modified_at`: Sort in ascending ("-") date order. In other words, least used first.
+* `sort=-last_modified_at`: Sort in ascending ("-") date order. In other words, the policies with the least amount of permits are listed first.
 
 The format of the response is represented in JSON.
 
