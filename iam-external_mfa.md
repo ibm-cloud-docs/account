@@ -25,7 +25,7 @@ subcollection: account
 As a master user of a legacy classic infrastructure account, you can order external authentication and enable the multifactor authentication (MFA) option for a user's login. You are charged a monthly fee for the external authentication options. 
 {:shortdesc}
 
-Unlike ID-based MFA, MFA for a user's login is required only for the account where the setting is enabled. For more information, see [Types of multifactor authentication](/docs/account?topic=account-types).
+Unlike ID-based MFA, external authentication options are account-based and require MFA for the user's login only for the account where the setting is enabled. For more information, see [Types of multifactor authentication](/docs/account?topic=account-types).
 
 Phone-based authentication as an external authentication MFA is no longer supported. As of 27 May 2021, you can't configure your account to use this option and any related billing is automatically removed from all users on the account. {{site.data.keyword.cloud}} replaces this offering with Symantec. To cancel the phone-based authentication and set up your account to use Symantec, complete the following instructions.
 {: deprecated}
