@@ -272,6 +272,7 @@ Managing your account, resources, and access
         ts-account-activation.md
         ts-page-load.md
         ts-account-infra.md
+        ts-iam-join-account.md
 
     {: .topicgroup}
     Troubleshooting account management
