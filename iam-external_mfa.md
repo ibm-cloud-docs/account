@@ -4,9 +4,9 @@ copyright:
 
   years: 2018, 2021
 
-lastupdated: "2021-05-27"
+lastupdated: "2021-05-31"
 
-keywords: MFA, multifactor authentication, external authentication, order authentication, Symantec, phone-based authentication, cancel authentication order, classic infrastructure
+keywords: MFA, multifactor authentication, external authentication, order authentication, Symantec, cancel authentication order, classic infrastructure
 
 subcollection: account
 
@@ -25,7 +25,7 @@ subcollection: account
 As a master user of a legacy classic infrastructure account, you can order external authentication and enable the multifactor authentication (MFA) option for a user's login. You are charged a monthly fee for the external authentication option. 
 {:shortdesc}
 
-Unlike ID-based MFA, external authentication option is account-based and require MFA for the user's login only for the account where the setting is enabled. For more information, see [Types of multifactor authentication](/docs/account?topic=account-types).
+Unlike ID-based MFA, external authentication is account-based and require MFA for the user's login only for the account where the setting is enabled. For more information, see [Types of multifactor authentication](/docs/account?topic=account-types).
 
 As of 27 May 2021, phone-based authentication is deprecated. Any related billing for previously set up phone-based authentication is removed for all users in the account, and IBM Cloud replaces this offering with Symantec. To set up your account to use Symantec, complete the following steps.
 {: deprecated}
@@ -35,7 +35,7 @@ As of 27 May 2021, phone-based authentication is deprecated. Any related billing
 
 You can order external authentication for a user if you are the master user of the account. To order external authentication, complete the following steps:
 
-1. In the {{site.data.keyword.cloud}} console, click **Manage** &gt; **Access (IAM)**, and select **Users**.
+1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Access (IAM)**, and select **Users**.
 2. Select a user from the list.
 3. From the **User details** page, select **Order external authentication** in the Manage user's login section.
 4. Select **Symantec identity protection**.
@@ -60,16 +60,16 @@ If your account administrator chooses to order Symantec identity protection, you
 
 After your administrator orders and enables the option, you can use the app for login authentication.
 
-## Disabling external authentication option
+## Disabling external authentication
 {: #disable}
 
 You can disable Symantec or phone-based MFA for a user at any time.
 
 1. In the console, click **Manage** &gt; **Access (IAM)**, and select **Users**.
 2. Select a user from the list.
-3. From the **User details** page, set the **Symantec authentication** option to off.
+3. From the **User details** page, set the **Symantec authentication** to off.
 
-## Cancelling external authentication option
+## Cancelling external authentication
 {: #cancel}
 
 You can cancel your order for external authentication at any time, if you have the correct access. You can choose to cancel immediately without any refund, or you can choose to cancel it at the one year mark from when you ordered it.
@@ -82,7 +82,7 @@ To cancel an order for external authentication, you must be an account owner or 
 
 To cancel the external authentication order, complete the following steps:
 
-1. In the console, click **Manage** &gt; **Access (IAM)**, and select Users.
+1. In the console, click **Manage** > **Access (IAM)**, and select Users.
 2. Select a user from the list.
 3. From the **User details** page, click **Delete** ![Trash icon](../icons/icon_trash.svg) for the **Symantec authentication**.
 4. Select when to remove it.
