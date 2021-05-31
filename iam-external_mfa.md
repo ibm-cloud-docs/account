@@ -65,7 +65,7 @@ After your administrator orders and enables the option, you can use the app for 
 
 You can disable Symantec or phone-based MFA for a user at any time.
 
-1. In the console, click **Manage** &gt; **Access (IAM)**, and select **Users**.
+1. In the console, click **Manage** > **Access (IAM)**, and select **Users**.
 2. Select a user from the list.
 3. From the **User details** page, set the **Symantec authentication** to off.
 
