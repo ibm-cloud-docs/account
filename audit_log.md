@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-04-23"
+lastupdated: "2021-06-01"
 
-keywords: audit log, user access, account log, system events, monitor system events, user access logs
+keywords: audit log, user access, account log, system events, monitor system events, user access logs, logging for classic infrastructure
 
 subcollection: account
 
@@ -55,7 +55,7 @@ The Viewer role or higher on all account management services is required to view
 
 You can use the SoftLayer API to view your audit log. The {{site.data.keyword.slapi_full}} is the development interface that gives developers and system administrators direct interaction with {{site.data.keyword.cloud_notm}} backend system. The {{site.data.keyword.slapi_short}} powers many of the features in the {{site.data.keyword.cloud_notm}} console, which typically means if an interaction is possible in the {{site.data.keyword.cloud_notm}} console, it can also be run in the API. Because you can programmatically interact with all portions of the {{site.data.keyword.cloud_notm}} environment within the API, {{site.data.keyword.slapi_short}} enables you to automate tasks. 
 
-The {{site.data.keyword.slapi_short}} is a Remote Procedure Call system. Each call involves sending data towards an API endpoint and receiving structured data in return. The format used to send and receive data with the {{site.data.keyword.slapi_short}} depends on which implementation of the API you choose. The {{site.data.keyword.slapi_short}} currently uses SOAP, XML-RPC or REST for data transmission.
+The {{site.data.keyword.slapi_short}} is a Remote Procedure Call system. Each call involves sending data towards an API endpoint and receiving structured data in return. The format used to send and receive data with the {{site.data.keyword.slapi_short}} depends on which implementation of the API you choose. The {{site.data.keyword.slapi_short}} currently uses SOAP, XML-RPC, or REST for data transmission.
 
 To programmatically audit system events for classic infrastructure, call the {{site.data.keyword.slapi_short}} as shown in the following example: 
 
@@ -66,7 +66,7 @@ https://api.softlayer.com/rest/v3.1/SoftLayer_Event_Log/getAllObjects.json?
 
 curl -g -u $SL_USER:$SL_APIKEY 'https://api.softlayer.com/rest/v3.1/SoftLayer_Event_Log/getAllObjects.json?objectMask=mask[eventName,eventCreateDate,userType]&resultLimit=0,50'
 
-The output will look something like this,in this case just the first event in the list:
+The output looks something like this,in this case just the first event in the list:
 
 [
     {
