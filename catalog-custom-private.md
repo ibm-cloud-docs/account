@@ -27,7 +27,7 @@ subcollection: account
 {:go: .ph data-hd-programlang='go'}
 
 
-# Customizing the {{site.data.keyword.cloud_notm}} catalog and private catalog for users in your account
+# Customizing the {{site.data.keyword.cloud_notm}} catalog and private catalogs for users in your account
 {: #restrict-by-user}
 
 Private catalogs provide a way to centrally manage access to products in the {{site.data.keyword.cloud}} catalog and your own catalogs. You can customize the public catalog and your private catalogs to make specific solutions available to users in your account. By doing so, you can ensure that your catalogs are relevant to your business. 
