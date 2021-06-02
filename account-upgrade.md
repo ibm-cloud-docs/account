@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-01-27"
+lastupdated: "2021-06-02"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -47,7 +47,7 @@ After your payment information is processed, your account is upgraded and you ca
 If you're upgrading to reactivate a deactivated account, your account might take a few days to be fully available. If your account continues to be in a pending state, see [Why can't I upgrade my account?](/docs/account?topic=account-ts_upgrade_cc) for help.
 
 ### Promotional credit for upgrading your account 
-If your upgrade included a promotional credit, the credit might take a few hours to appear in your account. The following table lists the current upgrade promotional amounts for different currencies: 
+If your upgrade included a promotional credit, the credit might take a few hours to appear in your account. Any unused upgrade credit expires after the 30 day period ends. You can view the promotional credit on the [Promotions](https://{DomainName}/billing/promotions){:external} page or the [Invoices](https://{DomainName}/billing/invoices) page in the console. The following table lists the current upgrade promotional amounts for different currencies:
 
 
 | Country       | Currency   | Converted Promo Amount |
