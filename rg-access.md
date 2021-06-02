@@ -4,8 +4,8 @@
 
 copyright:
 
-  years: 2020
-lastupdated: "2020-07-08"
+  years: 2020, 2021
+lastupdated: "2021-06-02"
 
 keywords: resource group access, access to resource group, access to resource in resource group
 
@@ -30,7 +30,7 @@ You can assign the following types of access policies for users to work with res
 * Access to resources within a resource group. You can grant access to all resources in a group, or only selected services within a group.
 * Access to a resource group itself, which enables users to view and edit the resource group, assign access for others to manage the resource group, and most importantly create and add new service instances to a resource group. 
 
-Assigning a user access to manage a resource group, meaning a role on the resource group itself, then that user can view billing and usage information for resources that are contained in that resource group.
+Assign a user a role to manage a specific resource group. Then, the user can view billing and usage information for resources that are contained in that resource group.
 {: note}
 
 Review the following table for more information what each assigned platform IAM role provides a user the ability to do:
