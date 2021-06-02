@@ -202,47 +202,6 @@ curl -X "PUT" "https://cm.globalcatalog.cloud.ibm.com/api/v1-beta/catalogaccount
 ```
 {:codeblock}
 
-<!---
-```java
-String id = "{id}";
-Filters accountFilters = {accountFilters};
-UpdateCatalogAccountOptions updateOptions = new UpdateCatalogAccountOptions.Builder().id(id).accountFilters(accountFilters).build();
-Response<Void> response = service.updateCatalogAccount(updateOptions).execute();
-System.out.println(response.getResult());
-```
-{: codeblock}
-{: java}
-
-```javascript
-id = "{id}";
-accountFilters = {accountFilters};
-response = await service.updateCatalogAccount({ 'id': id, 'accountFilters': accountFilters });
-console.log(response);
-```
-{: codeblock}
-{: javascript}
-
-```python
-id="{id}"
-accountFilters={accountFilters}
-response = self.service.update_catalog_account(id=id, account_filters=accountFilters)
-print(response)
-```
-{: codeblock}
-{: python}
-
-```go
-id := "{id}"
-accountFilters := {accountFilters}
-updateOptions := service.NewUpdateCatalogAccountOptions()
-updateOptions.SetID(id)
-updateOptions.AccountFilters(accountFilters)
-response, _ := service.UpdateCatalogAccount(updateOptions)
-fmt.Println(response)
-```
-{: codeblock}
-{: go}
---->
 The options for `{accountFilters}` are: `include_all`, `category_filters`, and `id_filters`.
 
 See the [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=curl#update-catalog-account){: external} for more information.
@@ -360,7 +319,7 @@ The following table lists the filters that you can use to customize which produc
 
 | Option | Description |
 |--------------|-------|
-| Satellite Enabled | A service that is enabled for use with IBM Cloud Satellite. You can run apps consistently across on-premises, edge computing, and public cloud environments. |
+| Satellite Enabled | A service that is enabled for use with {{site.data.keyword.cloud_notm}} Satellite. You can run apps consistently across on-premises, edge computing, and public cloud environments. |
 {: caption="Table 4. Options for filtering by runtime environment" caption-side="top"}
 {: #works-with-custom}
 {: tab-title="Works with"}
