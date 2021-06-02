@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-05-13"
+lastupdated: "2021-06-01"
 
 keywords: catalog, private catalogs, visibility, filter catalog, hide product, catalog filtering, enterprise, account group, child account, account, restrict
 
@@ -108,7 +108,7 @@ If your account is a parent account in an {{site.data.keyword.cloud_notm}} enter
   {: codeblock}
   When the `--catalog CATALOG` command is not specified, the filter is created at the account level.
 1. Target an account group by specifying the command option `--account-group ACCOUNT GROUP`.
-1. Update the filter to include or exclude a particular product or products. See the [Catalog management CLI](https://cloud.ibm.com/docs/cli?topic=cli-manage-catalogs-plugin#create-filter) guidance for command options or run the `ibmcloud catalog filter options` command to to retrieve the filter options for each filter category.
+1. Update the filter to include or exclude a particular product or products. See the [Catalog management CLI](https://cloud.ibm.com/docs/cli?topic=cli-manage-catalogs-plugin#create-filter) guidance for command options or run the `ibmcloud catalog filter options` command to retrieve the filter options for each filter category.
 
 ## Managing access to products for specific users by using the CLI
 {: #set-private-filters-cli}
@@ -123,7 +123,7 @@ Set filters at a private catalog level for fine-grained control of which product
   {: codeblock}
   Make sure to specify the `--catalog CATALOG` command option. When `--catalog CATALOG` is not specified, the filter is created at the account level.
 1. Target an account group by specifying the command option `--account-group ACCOUNT GROUP`.
-1. Update the filter to include or exclude a particular product or products. See the [Catalog management CLI](https://cloud.ibm.com/docs/cli?topic=cli-manage-catalogs-plugin#create-filter) guidance for command options or run the `ibmcloud catalog filter options` command to to retrieve the filter options for each filter category.
+1. Update the filter to include or exclude a particular product or products. See the [Catalog management CLI](https://cloud.ibm.com/docs/cli?topic=cli-manage-catalogs-plugin#create-filter) guidance for command options or run the `ibmcloud catalog filter options` command to retrieve the filter options for each filter category.
 
 ## Updating the visibility of the {{site.data.keyword.cloud_notm}} catalog by using the API
 {: #set-public-visibility-api}
@@ -139,7 +139,7 @@ curl -X "PUT" "https://cm.globalcatalog.cloud.ibm.com/api/v1-beta/catalogaccount
 ```
 {: codeblock}
 
-Make sure the `hide_IBM_cloud_catalog` field has a boolean value of `true` to hide the public catalog in this account. Alternatively, you can give the `include_all` field  a boolean value of `false` for each `account_filters` object to exclude all of the public catalog.
+Make sure the `hide_IBM_cloud_catalog` field has a Boolean value of `true` to hide the public catalog in this account. Alternatively, you can give the `include_all` field a Boolean value of `false` for each `account_filters` object to exclude all of the public catalog.
 
 See the [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=curl#update-catalog-account){: external} for more information.
 
@@ -213,7 +213,7 @@ The following table lists the filters that you can use to customize which produc
 | Option | Description |
 |--------------|-------|
 | EU Supported | Support for the service is provided by {{site.data.keyword.cloud_notm}} support team members that are located in the European Union (EU) region. |
-| Financial Services Validated | Services are designated as Financial Services Validated when the {{site.data.keyword.cloud_notm}} service or SaaS, or independent software vendor (ISV) offering, evidences compliance to the {{site.data.keyword.cloud_notm}} Framework for Financial Services. |
+| Financial Services Validated | Services are designated as Financial Services Validated when the {{site.data.keyword.cloud_notm}} service or SaaS, or independent software vendor (ISV) offering, evidences compliance with the {{site.data.keyword.cloud_notm}} Framework for Financial Services. |
 | HIPAA Enabled | The service is designated as HIPAA ready, meaning processing, storing, and handling Protected Health Information (PHI) in the service is supported. |
 | IAM-enabled | The service is enabled to use {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) for access control. Access policies are used to assign users and service IDs access to specific resources in an account.|
 | Service Endpoint Supported | The service can be connected to over the {{site.data.keyword.cloud_notm}} private network instead of the public network. Connecting directly to service endpoints doesn't require internet access, providing increased security. |
@@ -223,18 +223,6 @@ The following table lists the filters that you can use to customize which produc
 {: tab-group="customcatalogfilters"}
 {: class="simple-tab-table"}
 {: summary="Use the buttons before the table to change the context of the table. The column headers identify the options for fitering based on filter type."}
-
-| Option | Description |
-|--------------|-------|
-| IBM Kubernetes Service | Used to create a Kubernetes cluster of compute hosts to deploy and manage containerized apps on {{site.data.keyword.cloud_notm}}. |
-| Red Hat OpenShift | Used to create a {{site.data.keyword.openshiftshort}} cluster of compute hosts to deploy and manage containerized apps on {{site.data.keyword.cloud_notm}}. |
-| VMware vCenter Server | Provides deployment and management of VMware virtualized environments. |
-{: caption="Table 3. Options for filtering by deployment target" caption-side="top"}
-{: #deploymenttarget-custom}
-{: tab-title="Deployment target"}
-{: tab-group="customcatalogfilters"}
-{: class="simple-tab-table"}
-{: summary="Use the buttons before the table to change the context of the table. The column headers identify the options for fitering based on filter type."} 
 
 | Option | Description |
 |--------------|-------|
@@ -262,21 +250,37 @@ The following table lists the filters that you can use to customize which produc
 
 | Option | Description |
 |--------------|-------|
+| IBM Kubernetes Service | Used to create a Kubernetes cluster of compute hosts to deploy and manage containerized apps on {{site.data.keyword.cloud_notm}}. |
+| Red Hat OpenShift | Used to create a {{site.data.keyword.openshiftshort}} cluster of compute hosts to deploy and manage containerized apps on {{site.data.keyword.cloud_notm}}. |
+| VMware vCenter Server | Provides deployment and management of VMware virtualized environments. |
+{: caption="Table 3. Options for filtering by deployment target" caption-side="top"}
+{: #deploymenttarget-custom}
+{: tab-title="Deployment target"}
+{: tab-group="customcatalogfilters"}
+{: class="simple-tab-table"}
+{: summary="Use the buttons before the table to change the context of the table. The column headers identify the options for fitering based on filter type."}
+
+| Option | Description |
+|--------------|-------|
 | Cloud Paks | A cloud solution that integrates a container platform, containerized {{site.data.keyword.IBM_notm}} middleware and open source components, and common software services for development and management. |
 | Helm charts | A format for packaging a collection of files that describe specific configurations of infrastructure in the form of code.   |
 | Terraform |  Infrastructure as code to deploy your application. |
 | Operators | A method of packaging and deploying a Kubernetes-native application. |
 | OVAs | Open Virtual Appliance that contains a compressed installable version of a virtual machine. |
 | Virtual server images | A template that is used to create instances of virtual servers. |
-{: caption="Table 6. Options for filtering by software type" caption-side="top"}
+{: caption="Table 6. Options for filtering by delivery method" caption-side="top"}
 {: #software-custom}
-{: tab-title="Software"}
+{: tab-title="Delivery method"}
 {: tab-group="customcatalogfilters"}
 {: class="simple-tab-table"}
 {: summary="Use the buttons before the table to change the context of the table. The column headers identify the options for fitering based on filter type."}
 
-
- 
-
-
-
+| Option | Description |
+|--------------|-------|
+| Satellite Enabled | A service that is enabled for use with {{site.data.keyword.cloud_notm}} Satellite. You can run apps consistently across on-premises, edge computing, and public cloud environments. |
+{: caption="Table 4. Options for filtering by runtime environment" caption-side="top"}
+{: #works-with-custom}
+{: tab-title="Works with"}
+{: tab-group="customcatalogfilters"}
+{: class="simple-tab-table"}
+{: summary="Use the buttons before the table to change the context of the table. The column headers identify the options for fitering based on filter type."}
