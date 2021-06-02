@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2021
 
-lastupdated: "2021-06-01"
+lastupdated: "2021-06-02"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -105,7 +105,7 @@ To invite users, complete the following steps:
 5. Select **Add** to save the access assignment to the invitation.
 6. After you add all the necessary access assignments, click **Invite**.
 
-You can cancel an invitation for any users that are shown in a Processing or Pending state in the Status column. If an invited user did not receive an invitation, you can resend the invitation to any user in a Pending state.
+You can cancel an invitation for any users that are shown in a Processing or Pending state in the Status column. If an invited user did not receive an invitation, you can resend the invitation to any user in a Pending state. You can only add more policies and permissions after users accepted the invitation.
 {: note}
 
 ## Inviting users by using the CLI
@@ -343,22 +343,22 @@ fmt.Println(string(b))
 ## Pending invitations
 {: #pending-invitations}
 
-After inviting new users to join your account, {{site.data.keyword.cloud_notm}} requires all users to accept the invitation to become an active user in your account.
+After inviting new users to join your account, {{site.data.keyword.cloud_notm}} requires all except VPN-only users to accept the invitation to become an active user in your account.
 
-The invitation expires after 30 days. New users to {{site.data.keyword.cloud_notm}} can only accept an invitation by using the invitation link they received through email.
+The invitation expires after 30 days. New users to {{site.data.keyword.cloud_notm}} can accept an invitation only by using the invitation link that they received through email.
 {: note}
 
 ### Accepting invitations in the console
 {: #accepting-invitations-ui}
 {: ui}
 
-If the invited user is already a member of {{site.data.keyword.cloud_notm}}, they receive an invitation link in their notifications and by email. On the [Notifications page](https://cloud.ibm.com/user/notifications){: external}, users can use the search field to locate an invitation or filter by the notification type called account. For more information, see [Viewing notifications](/docs/get-support?topic=get-support-viewing-notifications).
+If the invited user is already a member of {{site.data.keyword.cloud_notm}}, they receive an invitation link in their notifications and by email. On the [Notifications page](https://cloud.ibm.com/user/notifications){: external}, users can use the search field to locate an invitation or filter by the notification type called `account`. For more information, see [Viewing notifications](/docs/get-support?topic=get-support-viewing-notifications).
 
 ### Accepting invitations by using the CLI
 {: #cli-accepting}
 {: cli}
 
-If the invited user is already a member of {{site.data.keyword.cloud_notm}, they can accept invitations by using the CLI. In the following command, the `ACCOUNT_ID` is the ID of the targeted account that the user is invited to join.
+If the invited user is already a member of {{site.data.keyword.cloud_notm}, they can accept invitations by using the CLI. In the following [**`ibmcloud login`**](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login) command, the `ACCOUNT_ID` is the ID of the targeted account that the user is invited to join.
 
 ```
 ibmcloud login -c ACCOUNT_ID --accept
@@ -369,7 +369,18 @@ ibmcloud login -c ACCOUNT_ID --accept
 {: #api-accepting}
 {: api}
 
-This action can be done only through the UI or CLI. To see the steps, switch to the UI or CLI instructions.
+If the invited user is already a member of {{site.data.keyword.cloud_notm}, they can accept invitations by using the API. In the following example, the `ACCOUNT_ID` is the ID of the targeted account that the user is invited to join and the `IAM_TOKEN` belongs to the invitee.
+
+```
+curl --request POST \
+  'https://iam.test.cloud.ibm.com/v2/users/accept' \
+  --header 'Authorization: Bearer <IAM_TOKEN>' \
+  --header 'Content-Type: application/json' \
+  --data-raw '{
+    "account_id": "<ACCOUNT ID>"
+  }
+```
+{: codeblock}
 
 ## Adding VPN-only users
 {: #add-vpn-only}
