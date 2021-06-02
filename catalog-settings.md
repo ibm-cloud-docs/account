@@ -82,8 +82,6 @@ Set filters at a private catalog level for fine-grained control of which product
 <br>
 For more detailed examples of how you can leverage filtering at the private catalog level, see [Customizing your private catalogs](/docs/account?topic=account-restrict-by-user).
 
-<!---CLI--->
-
 ## Updating the visibility of the {{site.data.keyword.cloud_notm}} catalog by using the CLI
 {: #set-public-visibility-cli}
 {: cli}
@@ -126,8 +124,6 @@ Set filters at a private catalog level for fine-grained control of which product
   Make sure to specify the `--catalog CATALOG` command option. When `--catalog CATALOG` is not specified, the filter is created at the account level.
 1. Target an account group by specifying the command option `--account-group ACCOUNT GROUP`.
 1. Update the filter to include or exclude a particular product or products. See the [Catalog management CLI](https://cloud.ibm.com/docs/cli?topic=cli-manage-catalogs-plugin#create-filter) guidance for command options or run the `ibmcloud catalog filter options` command to retrieve the filter options for each filter category.
-
-<!---API--->
 
 ## Updating the visibility of the {{site.data.keyword.cloud_notm}} catalog by using the API
 {: #set-public-visibility-api}
@@ -300,8 +296,6 @@ The following table lists the filters that you can use to customize which produc
 | Option | Description |
 |--------------|-------|
 | EU Supported | Support for the service is provided by {{site.data.keyword.cloud_notm}} support team members that are located in the European Union (EU) region. |
-| FedRAMP boundary | The service is FedRAMP compliant and available for use within the US boundary. |
-| FedRAMP boundary pending | The service is currently undergoing a review to become FedRAMP compliant.    |
 | Financial Services Validated | Services are designated as Financial Services Validated when the {{site.data.keyword.cloud_notm}} service or SaaS, or independent software vendor (ISV) offering, evidences compliance with the {{site.data.keyword.cloud_notm}} Framework for Financial Services. |
 | HIPAA Enabled | The service is designated as HIPAA ready, meaning processing, storing, and handling Protected Health Information (PHI) in the service is supported. |
 | IAM-enabled | The service is enabled to use {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) for access control. Access policies are used to assign users and service IDs access to specific resources in an account.|
@@ -366,9 +360,7 @@ The following table lists the filters that you can use to customize which produc
 
 | Option | Description |
 |--------------|-------|
-| SAP Certified | An infrastructure service that is certified by SAP to run production SAP workloads. For more information on SAP-certified products, see [{{site.data.keyword.ibm_cloud_sap}}](/docs/sap).|
 | Satellite Enabled | A service that is enabled for use with IBM Cloud Satellite. You can run apps consistently across on-premises, edge computing, and public cloud environments. |
-| Quantum Technologies | A service that is compatible with quantum technologies. |
 {: caption="Table 4. Options for filtering by runtime environment" caption-side="top"}
 {: #works-with-custom}
 {: tab-title="Works with"}
