@@ -373,7 +373,7 @@ If the invited user is already a member of {{site.data.keyword.cloud_notm}, they
 
 ```
 curl --request POST \
-  'https://iam.test.cloud.ibm.com/v2/users/accept' \
+  'https://iam.cloud.ibm.com/v2/users/accept' \
   --header 'Authorization: Bearer <IAM_TOKEN>' \
   --header 'Content-Type: application/json' \
   --data-raw '{
