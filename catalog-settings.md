@@ -139,48 +139,6 @@ curl -X "PUT" "https://cm.globalcatalog.cloud.ibm.com/api/v1-beta/catalogaccount
 ```
 {: codeblock}
 
-<!---
-```java
-String id = "{id}";
-Filters accountFilters = {accountFilters};
-UpdateCatalogAccountOptions updateOptions = new UpdateCatalogAccountOptions.Builder().id(id).accountFilters(accountFilters).build();
-Response<Void> response = service.updateCatalogAccount(updateOptions).execute();
-System.out.println(response.getResult());
-```
-{: codeblock}
-{: java}
-
-```javascript
-id = "{id}";
-accountFilters = {accountFilters};
-response = await service.updateCatalogAccount({ 'id': id, 'accountFilters': accountFilters });
-console.log(response);
-```
-{: codeblock}
-{: javascript}
-
-```python
-id="{id}"
-accountFilters={accountFilters}
-response = self.service.update_catalog_account(id=id, account_filters=accountFilters)
-print(response)
-```
-{: codeblock}
-{: python}
-
-```go
-id := "{id}"
-accountFilters := {accountFilters}
-updateOptions := service.NewUpdateCatalogAccountOptions()
-updateOptions.SetID(id)
-updateOptions.AccountFilters(accountFilters)
-response, _ := service.UpdateCatalogAccount(updateOptions)
-fmt.Println(response)
-```
-{: codeblock}
-{: go}
--->
-
 Make sure the `hide_IBM_cloud_catalog` field has a Boolean value of `true` to hide the public catalog in this account. Alternatively, you can give the `include_all` field a Boolean value of `false` for each `account_filters` object to exclude all of the public catalog.
 
 See the [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=curl#update-catalog-account){: external} for more information.
