@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2021
 
-lastupdated: "2021-03-08"
+lastupdated: "2021-06-02"
 
 keywords: resource FAQs, resource frequently asked questions, resource group
 
@@ -59,7 +59,7 @@ If you need additional access in the account, contact the account owner that is 
 {: #create-resource}
 {: faq}
 
-You can create resource groups only if you're assigned the Administrator role on All Account Management services in the account.
+You can create resource groups only if you're assigned the Administrator role on All Account Management services in the account. For more information, see [Assigning access to account management services](docs/account?topic=account-account-services). 
 
 Lite accounts can have only the default resource group, so you can't create any additional resource groups even if you have the required access.
 
