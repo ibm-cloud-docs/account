@@ -1,12 +1,11 @@
 ---
 
 copyright:
-
   years: 2015, 2021
 
-lastupdated: "2021-06-02"
+lastupdated: "2021-06-03"
 
-keywords: resource FAQs, resource frequently asked questions, resource group
+keywords: resource FAQs, resource frequently asked questions, resource group, resource list, dashboard widget
 
 subcollection: account
 
@@ -20,14 +19,14 @@ content-type: faq
 {:screen: .screen}
 {:tip: .tip}
 {:external: target="_blank" .external}
+{:note: .note}
 {:faq: data-hd-content-type='faq'}
 
 
 # FAQs about managing resources
 {: #resources-faq}
 
-FAQs for managing {{site.data.keyword.cloud_notm}} resources might include questions about working with resource groups, migrating Cloud Foundry instances, and access for working with resources.
-{: shortdesc}
+FAQs for managing {{site.data.keyword.cloud_notm}} resources might include questions about working with resource groups, migrating Cloud Foundry instances, and access for working with resources. {: shortdesc}
 
 ## What is a resource group?
 {: #resource-group}
@@ -59,7 +58,7 @@ If you need additional access in the account, contact the account owner that is 
 {: #create-resource}
 {: faq}
 
-You can create resource groups only if you're assigned the Administrator role on All Account Management services in the account. For more information, see [Assigning access to account management services](docs/account?topic=account-account-services). 
+You can create resource groups only if you're assigned the Administrator role on All Account Management services in the account. For more information, see [Assigning access to account management services](/docs/account?topic=account-account-services). 
 
 Lite accounts can have only the default resource group, so you can't create any additional resource groups even if you have the required access.
 
@@ -68,6 +67,23 @@ Lite accounts can have only the default resource group, so you can't create any 
 {: faq}
 
 Yes, you can delete a resource group only if it doesn't contain any resources, and it's not the default resource group. See [Deleting a resource group](/docs/account?topic=account-delete_rgs) for more information. 
+
+## How do I add users to a resource group?
+{: #add-users-resource-group}
+{: faq}
+
+Resource groups are a method of organizing resources and are not directly associated with the management of users. For information on creating a resource group, see [Adding resources to a resource group](/docs/account?topic=account-rgs#add_to_rgs). After your resource group is created, an account administrator can grant access to a specific user. Or, an account administrator can create an access group to provide access to a resource group. For information, see [Creating an Access Group](/docs/account?topic=account-groups#create_ag) in the console. After an access group is created, complete the following steps to associate the access group with a resource group:
+ 
+1. Click **Manage > Access (IAM)** and click **Access groups**.
+2. Choose an access group. 
+3. From the **Access policies** tab, click **Assign access**.
+4. Click **IAM services**.  
+5. Select the type of access that you want to assign.
+5. Scope the access to all resources, or select resources based on specific resource groups as attributes. 
+6. Select the platform, service and resource group access for the resource group. 
+7. Click **Add** and **Assign**.
+
+You can't use access groups with infrastructure service resources or permissions. {: note} 
 
 ## Can I move service instances between resource groups?
 {: #instances-between-rgs}
@@ -91,11 +107,16 @@ You can delete a service instance by using the following steps:
 
 Yes, you can. To access your usage dashboard, go to **Manage** &gt; **Billing and usage** in the console. Select **Usage** to view a summary of the usage by resource group for the account. 
 
-## Who can add tags to a resource?
+## Who can attach tags to a resource?
 {: #tag-faq}
 {: faq}
 
-Any user assigned the correct access for the specific type of resource can add tags. When a resource is tagged, it is visible to all users who have read access to the resource. However, to add or remove a tag from a resource, certain access roles or permissions are required depending on the resource type. For example, for any resources that are managed by using IAM, you must be assigned the Editor or Administrator role on the resource. For more information about the required access for other resources types, see [Tagging permissions](/docs/account?topic=account-access#tagging-permissions).
+Any user assigned the correct access for the specific type of resource can attach tags. When a resource is tagged, it is visible to all users who have read access to the resource. However, to attach or detach a tag on a resource, certain access roles or permissions are required depending on the resource type and the tag type. For example, to attach user tags to any of the resources that are managed by using IAM, you must be assigned the Editor or Administrator role on the resource.
+
+You can attach access management tags to IAM-enabled resources only.
+{: note}
+
+For more information about the required access for other resources types, see [Tagging permissions](/docs/account?topic=account-access#tagging-permissions).
 
 ## Where can I find my resources in the {{site.data.keyword.Bluemix_notm}} console?
 {: #slitems}
@@ -110,5 +131,3 @@ To view just your classic infrastructure resources, select from the following op
 
 * Click the **Menu icon** ![Menu icon](../icons/icon_hamburger.svg) > **Classic Infrastructure**.
 * Click the **Menu icon** ![Menu icon](../icons/icon_hamburger.svg) > **Dashboard**, and click any of the links that are listed in the Classic infrastructure widget.
-
-
