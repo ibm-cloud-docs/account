@@ -26,7 +26,8 @@ content-type: faq
 # FAQs about managing resources
 {: #resources-faq}
 
-FAQs for managing {{site.data.keyword.cloud_notm}} resources might include questions about working with resource groups, migrating Cloud Foundry instances, and access for working with resources. {: shortdesc}
+FAQs for managing {{site.data.keyword.cloud_notm}} resources might include questions about working with resource groups, migrating Cloud Foundry instances, and access for working with resources.
+{: shortdesc}
 
 ## What is a resource group?
 {: #resource-group}
@@ -83,7 +84,8 @@ Resource groups are a method of organizing resources and are not directly associ
 6. Select the platform, service and resource group access for the resource group. 
 7. Click **Add** and **Assign**.
 
-You can't use access groups with infrastructure service resources or permissions. {: note} 
+You can't use access groups with infrastructure service resources or permissions.
+{: note} 
 
 ## Can I move service instances between resource groups?
 {: #instances-between-rgs}
