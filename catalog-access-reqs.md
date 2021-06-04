@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-05-19"
+lastupdated: "2021-06-04"
 
 keywords: catalog, private catalogs, IAM access, roles, private catalog service, access groups, permissions, IAM, catalog management, access group
 
@@ -408,6 +408,7 @@ fmt.Println(string(b))
 {: go}
 
 ### Expected response
+{: #expected-response-access}
 
 ```bash
 {
@@ -814,6 +815,7 @@ fmt.Println(string(b))
 {: go}
 
 ### Expected response
+{: #expected-response-api}
 
 ```bash
 {
