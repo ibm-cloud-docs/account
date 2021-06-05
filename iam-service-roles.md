@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-06-04"
+lastupdated: "2021-06-05"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -291,6 +291,8 @@ Review the available platform and service roles available and the actions mapped
 | `apprapp.properties.create` | Create properties | Administrator, Manager |
 | `apprapp.properties.delete` | Delete properties | Administrator, Manager |
 | `apprapp.properties.patch` | Patch properties | Writer |
+| `apprapp.instances.export` | Export instance resources to a JSON | Administrator, Manager |
+| `apprapp.instances.import` | Import instance resources from a JSON | Administrator, Manager |
 {: caption="Table 5. Service actions - App Configuration" caption-side="top"}
 {: #actions-table5}
 {: tab-title="Actions"}
