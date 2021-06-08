@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-04-09"
+lastupdated: "2021-06-07"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -151,3 +151,53 @@ Complete the following steps to add your software by using the CLI. You can use 
     ```
     {: codeblock}
 
+## Adding a product to your catalog by using the API
+{: create-product-api}
+{: api}
+
+You can programmatically add an offering to your catalog by calling the Catalog Management API as shown in the following sample request. For detailed information about the API, see [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=java#create-offering).
+
+```java
+String id = "{id}";
+String name = "{name}";
+String label = "{label}";
+CreateOfferingOptions offeringOptions = new CreateOfferingOptions.Builder().catalogIdentifier(id).name(name).label(label).build();
+Response<Offering> response = service.createOffering(offeringOptions).execute();
+System.out.println(response.getResult());
+```
+{: codeblock}
+{: java}
+
+```javascript
+id = "{id}";
+name = "{name}";
+label = "{label}";
+response = await service.createOffering({ 'catalogIdentifier': id, 'id': id, 'name': name, 'label': label });
+console.log(response);
+```
+{: codeblock}
+{: javascript}
+
+```python
+id = "{id}"
+name = "{name}"
+label = "{label}"
+response = self.service.create_offering(catalog_identifier=id, name=name, label=label)
+print(response)
+
+```
+{: codeblock}
+{: python}
+
+```go 
+id := "{id}"
+name := "{name}"
+label := "{label}"
+offeringOptions := service.NewCreateOfferingOptions(id)
+offeringOptions.SetName(name)
+offeringOptions.SetLabel(label)
+_, response, _ := service.CreateOffering(offeringOptions)
+fmt.Println(response)
+```
+{: codeblock}
+{: go}
