@@ -2,9 +2,9 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-04-09"
+lastupdated: "2021-06-07"
 
-keywords: catalog, private catalog, catalog management service, public catalog, enterprise account, child account, account group
+keywords: catalog, private catalog, catalog management service, public catalog, enterprise account, child account, account group, enterprise, IBM Cloud catalog
 
 subcollection: account
 
@@ -17,6 +17,15 @@ subcollection: account
 {:note: .note}
 {:important: .important}
 {:external: target="_blank" .external}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:curl: .ph data-hd-programlang='curl'}
+{:go: .ph data-hd-programlang='go'}
+
 
 # Customizing the {{site.data.keyword.cloud_notm}} catalog for an enterprise
 {: #catalog-enterprise-restrict}
@@ -32,6 +41,7 @@ As the account owner or administrator, you can manage which products in the {{si
 
 ## Managing products at the enterprise level
 {: #catalog-enterprise-filter}
+{: ui}
 
 Centrally manage what's available in the catalog for your entire enterprise hierarchy by setting filters at the enterprise level. The filters automatically apply to all child account groups and accounts. 
 
@@ -46,11 +56,13 @@ Let's say your organization is tasked with implementing a development and deploy
 4. Review the **Preview** table to confirm your selections, and click **Update**. 
 5. Verify your updates in the catalog by going to **Catalog** > **Services**.
 6. Expand the list of accounts in the console menu bar and select a child account to verify the catalog includes only the products you selected. 
+{: ui}
 
 ## Managing products for child account groups and accounts
 {: #catalog-enterprise-child}
+{: ui}
 
-To build on the example in the previous section, all account groups and accounts in your  enterprise have access to Developer Tools products provided by {{site.data.keyword.IBM_notm}}. You can further restrict access to a subset of products for child account groups and accounts. For example, you might want to limit a specific account group, and its child accounts, to work with only the products that support IAM for access control. 
+To build on the example in the previous section, all account groups and accounts in your enterprise have access to Developer Tools products provided by {{site.data.keyword.IBM_notm}}. You can further restrict access to a subset of products for child account groups and accounts. For example, you might want to limit a specific account group, and its child accounts, to work with only the products that support IAM for access control. 
 
 1. Go to **Manage** > **Catalogs** > **Settings**.
 2. Expand the enterprise hierarchy, and select the specific account group. 
@@ -59,19 +71,130 @@ To build on the example in the previous section, all account groups and accounts
 5. Review the **Preview** table to confirm your selections, and click **Update**. 
 6. Switch to a child account in the account group by selecting it from the list of accounts in console menu bar. 
 6. Verify your updates in the catalog by going to **Catalog** > **Services**.
+{: ui}
+
+## Managing products at the enterprise level by using the CLI
+{: #cli-catalog-enterprise-restrict}
+{: cli}
+
+This action can be done only in the console or through the API or SDKs. To see the steps, switch to the **UI** or **API** instructions.
+
+<!--- 
+Doesn't look like you can manage products at the enterprise level by using the CLI
+--->
+
+## Managing products for child account groups and accounts by using the CLI
+{: #cli-catalog-enterprise-restrict}
+{: cli}
+
+You can restrict access to a subset of products for child account groups and accounts. For example, within your enterprise you might want to limit a specific account group, and its child accounts, to work with only the products that support IAM for access control. 
+
+1. Create a new filter. 
+  ```
+  ibmcloud catalog filter create [--catalog CATALOG] [--category CATEGORY] [--compliance COMPLIANCE] [--deployment-target TARGET] [--exclude-list LIST] [--include-all ALL] [--include-list LIST] [--offering-format FORMAT] [--pricing-plan PLAN] [--provider PROVIDER] [--release RELEASE] [--type TYPE]
+  ```
+  {: codeblock}
+  When the `--catalog CATALOG` command is not specified, the filter is created at the account level.
+1. Target an account group by specifying the command option `--account-group ACCOUNT GROUP`.
+1. Update the filter to include or exclude a particular product or products. See the [Catalog management CLI](https://cloud.ibm.com/docs/cli?topic=cli-manage-catalogs-plugin#create-filter) guidance for command options or run the `ibmcloud catalog filter options` command to to retrieve the filter options for each filter category.
 
 
+## Managing products at the enterprise level by using the API
+{: #catalog-enterprise-filter-api}
+{: api}
 
+Centrally manage what's available in the catalog for your entire enterprise hierarchy by setting filters at the enterprise level. The filters automatically apply to all child account groups and accounts.
 
+```java
+String id = "{id}";
+String revision = "{revision}";
+String accountFilters = {accountFilters};
+ReplaceCatalogOptions replaceOptions = new ReplaceEnterpriseOptions.Builder().enterpriseId(id).id(id).rev(revision).accountFilters(accountFilters).build();
+Response<Catalog> response = service.replaceEnterprise(replaceOptions).execute();
+System.out.println(response.getResult());
+```
+{: codeblock}
+{: java}
 
+```javascript
+id = "{id}";
+revision = "{revision}";
+accountFilters = {accountFilters};
+response = await service.replaceEnterprise({ 'enterpriseId': id, 'id': id, 'rev': revision, 'accountFilters': accountFilters, });
+console.log(response);
+```
+{: codeblock}
+{: javascript}
 
+```python
+id = "{id}"
+revision = "{revision}"
+accountFilters = "{accountFilters}"
+response = self.service.replace_enterprise(enterprise_id=id, id=id, rev=revision, account_filters= accountFilters)
+print(response)
+```
+{: codeblock}
+{: python}
 
+```go
+id := "{id}"
+revision := "{revision}"
+accountFilters := {accountFilters}
+replaceOptions := {replaceOptions}
+replaceOptions := service.NewReplaceEnterpriseOptions(id)
+replaceOptions.SetID(id)
+replaceOptions.SetRev(revision)
+replaceOptions.SetAccountFilters(accountFilters)
+response, _ := service.ReplaceEnterprise(replaceOptions)
+fmt.Println(response)
+```
+{: codeblock}
+{: go}
 
+## Managing products for child account groups and accounts by using the API
+{: #api-catalog-enterprise-restrict}
+{: api}
 
+You can restrict access to a subset of products for child account groups and accounts. For example, within your enterprise you might want to limit a specific account group, and its child accounts, to work with only the products that support IAM for access control. 
 
+The following example request restricts the offerings for an account group and child accounts. When you call the API, replace the ID variables with the values that are specific to your target account group or account. The options for `{account_filters}` are: `inculde_all`, `category_filters`, and `id_filters`.
 
+```java
+String id = "{id}";
+Filters accountFilters = {accountFilters};
+UpdateCatalogAccountOptions updateOptions = new UpdateCatalogAccountOptions.Builder().id(id).accountFilters(accountFilters).build();
+Response<Void> response = service.updateCatalogAccount(updateOptions).execute();
+System.out.println(response.getResult());
+```
+{: codeblock}
+{: java}
 
+```javascript
+id = "{id}";
+accountFilters = {accountFilters};
+response = await service.updateCatalogAccount({ 'id': id, 'accountFilters': accountFilters });
+console.log(response);
+```
+{: codeblock}
+{: javascript}
 
+```python
+id="{id}"
+accountFilters={accountFilters}
+response = self.service.update_catalog_account(id=id, account_filters=accountFilters)
+print(response)
+```
+{: codeblock}
+{: python}
 
-
-
+```go
+id := "{id}"
+accountFilters := {accountFilters}
+updateOptions := service.NewUpdateCatalogAccountOptions()
+updateOptions.SetID(id)
+updateOptions.AccountFilters(accountFilters)
+response, _ := service.UpdateCatalogAccount(updateOptions)
+fmt.Println(response)
+```
+{: codeblock}
+{: go}
