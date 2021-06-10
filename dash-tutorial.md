@@ -78,7 +78,7 @@ You can duplicate a dashboard to include the same structure and layout without h
 1.  To duplicate a dashboard, click the Actions icon ![More Actions icon](../icons/action-menu-icon.svg) > **Duplicate**.  
 2. Define the scope. The scope and assigned access is not saved from the dashboard that was duplicated. Cora applies the resource group filter for the chatbot project just like she did for the original dashboard.
 3. Click **Save dashboard**. 
-4. Click the Actions icon ![Action icon](../icons/action-menu-icon.svg), and select **Share** to share the new dashboard with the right users. 
+4. Click the Actions icon ![Action icon](../icons/action-menu-icon.svg), and select **Share** to share the new dashboard with the correct users. 
 
 ## Next steps
 {: #tutorial-dash-step-next}
