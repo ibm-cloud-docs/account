@@ -89,7 +89,7 @@ Complete the following steps to create a catalog that includes a specific set of
 
 Now that you've created your private catalogs, complete the following steps to turn off visibility of the public catalog to all users in your account.
 
-1. Click **Catalogs** in the breadcrumb at the top of the page.
+1. Click **Catalogs** in the breadcrumb.
 2. Click **Settings**.
 3. Set **{{site.data.keyword.cloud_notm}} catalog** to **Off**. 
 4. Confirm that your filters and settings are correctly applied by going to the public catalog, and expanding the catalog switcher. Only the private catalogs in your account should be displayed in the list. 
