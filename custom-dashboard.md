@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020 
-lastupdated: "2020-06-15"
+lastupdated: "2021-06-10"
 
 keywords: dashboard, widgets display, manage visibility, customize, console
 
@@ -33,7 +33,7 @@ You can customize your dashboard in the {{site.data.keyword.cloud}} console to e
 ## Removing widgets
 {: #remove-widget}
 
-You can clean up your dashboard by clicking the Close icon ![Close icon](../icons/close-icon.svg) that is located in the upper-right section of each widget.
+You can clean up your dashboard by clicking the **Close** icon ![Close icon](../icons/close-icon.svg "Close") for each widget you want to remove.
 
 Removing a widget doesn't delete it. You can find it in the Widgets pane. 
 {: tip}
@@ -41,4 +41,4 @@ Removing a widget doesn't delete it. You can find it in the Widgets pane.
 ## Reorganizing your dashboard
 {: #reorg-dashboard}
 
-You can rearrange the widgets on your dashboard by grabbing a widget and moving it. For example, as an account owner, tracking who has access to your account might be a top priority for you. You want these details to be displayed first on your dashboard, but you must scroll to find the User access widget. Grab the widget to move it to the beginning of your dashboard.
+You can rearrange the widgets on your dashboard by grabbing a widget and moving it. For example, as an account owner, tracking who has access to your account might be a high priority for you. You want these details to be displayed first on your dashboard, but you must scroll to find the User access widget. Grab the widget to move it to the beginning of your dashboard.
