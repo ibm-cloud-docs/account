@@ -159,7 +159,7 @@ Complete the following steps to set your preferences for receiving various types
 {: #account-gs-resourcegroups}
 {: step}
 
-Resource groups provide a way for you to easily manage access to multiple resources and to view billage usage for a set of resources. With your Pay-As-You-Go account, you can create more resource groups in addition to the default resource group that's included when you first created your Lite account. 
+Resource groups provide a way for you to easily manage access to multiple resources and to view billing usage for a set of resources. With your Pay-As-You-Go account, you can create more resource groups in addition to the default resource group that's included when you first created your Lite account. 
 
 1. Go to **Manage** > **Account** > **Account resources** > **Resource groups**.
 2. Click **Create**.
@@ -209,7 +209,7 @@ Complete the following steps:
 4. Add the user to one or more of the access groups that you created in the previous step. 
 5. Click **Invite**. 
 
-If you're looking for more details, see [Inviting users to an account](/docs/account?topic=account-iamuserinv).
+To learn more about the invitation flow and how users can accept invitations, see [Inviting users to an account](/docs/account?topic=account-iamuserinv).
 
 ## Explore your support options
 {: #account-gs-supportcenter}
