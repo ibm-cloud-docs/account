@@ -226,7 +226,7 @@ Go to the [Account settings](https://{DomainName}/account/settings) page in the 
 {: #join-new-account}
 {: faq}
 
-The account owner, organization manager, or a user with the right permissions can invite you to join their account.
+The account owner, organization manager, or a user with the correct permissions can invite you to join their account.
 
 * If you're new to {{site.data.keyword.cloud}}, you receive an email that contains all the information you need.
 * As an existing member of {{site.data.keyword.cloud}}, you can accept the invitation in your notifications, by email, or by using the CLI to onboard to the new account. To accept invitations in the CLI, use the [**`ibmcloud login`**](/docs/cli?topic=cli-ibmcloud_cli#accept-invitation-to-join-a-new-account-) command.
