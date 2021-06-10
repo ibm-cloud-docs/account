@@ -163,7 +163,7 @@ The `service-instance` must be alphanumeric, lowercase, no spaces, or special ch
 
 For example, a DevOps tool that is used to track and plan work items can have a simple `GUID` instance ID ("1234-5678-9012-3456"). But, the policy component of an autoscale group service can use a hierarchical naming convention and have a `service-id` segment of:
 
->`c7a27f55-d35e-4153-b044-8ca9155fc467/my-test-asg1/my-scaleout-policy`
+`c7a27f55-d35e-4153-b044-8ca9155fc467/my-test-asg1/my-scaleout-policy`
 
 You can also obtain a CRN from an {{site.data.keyword.Bluemix_notm}} resource by using the following CLI command:
 ```
@@ -178,7 +178,7 @@ The values of the `resource-type` and `resource` segments vary by service. A ser
 
 As an example, an image in the customer receipts container in an Object Storage service can have a `resource-type` segment of  `object` and a `resource` value of `CustomerReceipts/clientdinner.png`.
 
-The `resource-type` segment must be alphanumeric, lowercase, and no spaces or special characters other than '-'. A service can decide that the `resource-type` segment is optional, in which case it is left blank.
+The `resource-type` segment must be alphanumeric, lowercase, and no spaces or special characters other than '-'. A service can decide that the `resource-type` segment is optional, in which case it remains blank.
 
 
 ## CRN examples
