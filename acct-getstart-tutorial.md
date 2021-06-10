@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-06-01"
+lastupdated: "2021-06-10"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, MFA, authetication, TOTP, U2F, FIDO U2F, security key
 
@@ -61,7 +61,7 @@ If you're not a part of a company that uses a federated ID, use your IBMid to cr
 
 A federated ID is an ID within a company's domain that is registered with {{site.data.keyword.IBM_notm}} so that the domain and user credentials can be used to access {{site.data.keyword.IBM_notm}} web applications. You can sign up for {{site.data.keyword.Bluemix_notm}} with a federated ID only if your company is already registered with {{site.data.keyword.IBM_notm}}. Registering a company's domain with {{site.data.keyword.IBM_notm}} enables users to log in to {{site.data.keyword.IBM_notm}} products and services by using their existing company user credentials. Authentication is then handled by your company's identity provider through single sign-on (SSO).
 
-{{site.data.keyword.IBM_notm}} uses the Security Assertion Markup Language 2.0 (SAML 2.0) for this identity federation. SAML 2.0 is a standard version for exchanging authentication data between security domains. It's an XML-based protocol that uses a security token that contains assertions to pass information between the organizations "Identity Provider", and the "{{site.data.keyword.IBM_notm}} Rely Party (RP)", otherwise known as the Service Provider.
+{{site.data.keyword.IBM_notm}} uses the Security Assertion Markup Language 2.0 (SAML 2.0) for this identity federation. SAML 2.0 is a standard version for exchanging authentication data between security domains. It's an XML-based protocol that uses a security token that contains assertions to pass information between the organizations Identity Provider, and the {{site.data.keyword.IBM_notm}} Rely Party (RP), otherwise known as the Service Provider.
 
 For information about how to register your company for a federated ID, see the [IBMid Enterprise Federation Adoption Guide](https://ibm.box.com/v/IBMid-Federation-Guide){: external}. An {{site.data.keyword.IBM_notm}} sponsor, such as an offering advocate or client advocate, is required when you request to register federated IDs.
 
@@ -217,18 +217,6 @@ To learn more about the invitation flow and how users can accept invitations, se
 
 You can use the Support Center to get help with any issues that you might encounter. To access the Support Center, click **Support** in the console menu bar. 
 
-* The "Help just for you" section features links to common tasks, troubleshooting, and FAQs specific to the resources in your account.
-* The "Featured FAQs" section provides FAQs related to platform tasks, for example, resetting your password, IAM, and upgrading your account.
-* The "Contact support" section provides the options for getting in touch with a support representative: start a live chat, contact by phone, or create a support case.
-
-
-
-
-
-
-
-
-
-
-
-
+* The Help just for you section features links to common tasks, troubleshooting, and FAQs specific to the resources in your account.
+* The Featured FAQs section provides FAQs related to platform tasks, for example, resetting your password, IAM, and upgrading your account.
+* The Contact support section provides the options for getting in touch with a support representative: start a live chat, contact by phone, or create a support case.

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2020
-lastupdated: "2020-11-05"
+  years: 2019, 2021
+lastupdated: "2021-06-10"
 
 keywords: change owner, transfer account, transfer account ownership, switch owner, transfer owner
 
@@ -47,7 +47,7 @@ In the support case to request an account transfer, you must attach an official 
 - A signature of an executive at your company
 - The account number of the account to transfer
 
-   When you're logged in to the account, you can find the account number in the {{site.data.keyword.cloud_notm}} menu bar next to the account name. For example, you might see "1234567 - IBM", where the account number is 1234567.
+   When you're logged in to the account, you can find the account number in the {{site.data.keyword.cloud_notm}} menu bar next to the account name. For example, you might see `1234567 - IBM`, where the account number is 1234567.
    {: tip}
 
    ![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-faq.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.")

@@ -5,7 +5,7 @@
 copyright:
 
   years: 2020, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-06-10"
 
 keywords: account resources, reclaim resource, restore resource
 
@@ -153,7 +153,7 @@ The following example shows how to delete a resource reclamation with ID `d9fend
 ibmcloud resource reclamation-delete "d9fendfwlw"
 ```
 
-The following example shows how to delete a resource reclamation with ID `d9fendfwlw` and leave a comment of "no longer needed" without confirmation:
+The following example shows how to delete a resource reclamation with ID `d9fendfwlw` and leave a comment of `no longer needed` without confirmation:
 
 ```
 ibmcloud resource reclamation-delete --id "d9fendfwlw" --comment "no longer needed" -f
