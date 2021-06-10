@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-06-01"
+lastupdated: "2021-06-10"
 
 keywords: platform notifications, email notifications, IBM Cloud notifications, notification preferences, email preferences, user notifications, infrastructure notifications
 
@@ -23,12 +23,12 @@ subcollection: account
 # Setting email preferences for notifications
 {: #email-prefs}
 
-Depending on your {{site.data.keyword.Bluemix_notm}} account type, you can choose to receive email notifications about {{site.data.keyword.Bluemix_notm}} platform-related items, such as announcements, billing and usage, additional notification preferences, and ordering. You can also update your preferences to receive email notifications about resource-related items, such as incidents, maintenance, security bulletins, or resource activity on the Notification preferences page. These notifications are for only the resources you use.
+{{site.data.keyword.Bluemix_notm}} users can choose to receive email notifications about {{site.data.keyword.Bluemix_notm}} platform-related items, such as announcements, billing and usage, additional notification preferences, and ordering. Users can also update their preferences to receive email notifications about resource-related items, such as incidents, maintenance, security bulletins, or resource activity on the Notification preferences page. These notifications are for only the resources in use.
 {: shortdesc}
 
 To view the Notifications preferences page, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) in the {{site.data.keyword.Bluemix_notm}} console, and then click **Profile** > **Notification preferences**.
 
-You can also visit the page if you click the **Notifications** icon ![Notification icon](../icons/Notification.svg) in the {{site.data.keyword.Bluemix_notm}} console. Then, click **Manage email preferences** in the upper-right corner of the page. 
+You can also visit the page if you click the **Notifications** icon ![Notification icon](../icons/Notification.svg) in the {{site.data.keyword.Bluemix_notm}} console, and then click **Manage email preferences**.
 
 If you set your email preferences but aren't receiving email notifications, make sure emails that are sent from `no_reply@cloud.ibm.com` aren't blocked or in your spam folder. See [Why am I not receiving email notifications?](/docs/account?topic=account-ts_email_notifications) for more information. 
 {: tip}
@@ -40,15 +40,18 @@ If you set your email preferences but aren't receiving email notifications, make
 
 You can choose to receive email notifications about {{site.data.keyword.Bluemix_notm}} platform-related items across your account. When you set {{site.data.keyword.Bluemix_notm}} platform notifications, you receive email notifications that are associated with only the platform. You do not receive email notifications about events that are associated with {{site.data.keyword.Bluemix_notm}} services.
 
-Your platform email notifications settings are tied to your profile, not the account. In other words, any changes to platform notification settings are shared across your profile in all accounts that you have access to.
+Your platform email notifications settings are tied to your account.
+{: note}
 
   * To stay up to date with changes to the {{site.data.keyword.Bluemix_notm}} platform and products, go to **Notification preferences** > **Announcements**. To select a subcategory, set **Emails** to the on position.
   * To receive notifications about invoices, payments, subscription and promo codes, or spending and usage warnings, select **Billing and usage**. Then, click **Manage** to set up spending notifications.
   * To receive updates about the status of your infrastructure orders, select **Ordering**.  
   * To manage the notification distribution list in regard to your account, subscriptions or security and compliance alerts, click **Additional notification preferences** > **Manage**.
+  * By default, all {{site.data.keyword.Bluemix_notm}} platform notifications are turned off.
 
-To quickly turn off emails for the selected account, or for all other accounts, click **Actions** in the upper-right corner of the page and select your preference.
+To quickly turn off emails for the selected account or for all other accounts, click **Actions**, and select your preference.
 {: tip}
+  
 
 ## Setting resource notifications
 {: #setting-resource-notifications}
@@ -59,14 +62,14 @@ You can set your preferences to receive resource-related notifications for incid
 
 1. In the console, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Profile**.
 2. Click **Notification preferences** > **Resource**.
-4. Select from the following options: 
-
+3. Select from the following options: 
   * Receive notifications about events that can cause an outage or restrict functionality. You can receive notifications for all incident severity levels (1, 2, 3, 4) or just a subset. 
   * Receive notifications about any important maintenance that keeps the platform operating at optimal status. You can receive notifications for all impact levels (high, medium, low), or just a subset.
   * Receive notifications about security vulnerabilities and the required actions to take.
   * Receive notifications about resource activity, such as status and service updates. 
-
-To quickly turn off emails for the selected account, or for all other accounts, click **Actions** in the upper-right corner of the page and select your preference.
+  * By default, all {{site.data.keyword.Bluemix_notm}} resource notifications are turned off.
+  
+To quickly turn off emails for the selected account or for all other accounts, click **Actions**, and select your preference.
 {: tip}
 
 ## Setting user notifications for classic infrastructure resources
@@ -142,6 +145,7 @@ To add users to a distribution list, complete the following steps:
 ### Unsubscribing from the distribution list 
 
 To unsubscribe, use the link in the footer of any email that is sent from the distribution list. 
+
 
 ## Adding webhooks to a distribution list 
 {: webhook-distribution-list}
@@ -239,6 +243,3 @@ To add webhooks to a distribution list, complete the following steps:
 
   You can select which {{site.data.keyword.cloud_notm}} account you use by clicking the account switcher in the console. Users in the selected account receive notifications about any events that affect the account. 
   {: note}
-  
-
-
