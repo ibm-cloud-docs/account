@@ -84,7 +84,7 @@ Doesn't look like you can manage products at the enterprise level by using the C
 --->
 
 ## Managing products for child account groups and accounts by using the CLI
-{: #cli-catalog-enterprise-restrict}
+{: #cli-child-account-groups}
 {: cli}
 
 You can restrict access to a subset of products for child account groups and accounts. For example, within your enterprise you might want to limit a specific account group, and its child accounts, to work with only the products that support IAM for access control. 
