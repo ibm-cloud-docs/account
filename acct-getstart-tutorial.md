@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-06-10"
+lastupdated: "2021-06-11"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, MFA, authetication, TOTP, U2F, FIDO U2F, security key
 
@@ -71,7 +71,7 @@ For information about how to register your company for a federated ID, see the [
 
 Upgrade your Lite account to a Pay-As-You-Go account to access the full {{site.data.keyword.cloud_notm}} catalog. 
 
-1. Click **Manage > Account**.
+1. Click **Manage** > **Account**.
 2. Select **Account settings**, and click **Add credit card**.
 1. Enter your credit card information.
 
@@ -134,7 +134,7 @@ Before you start working with resources in your account, familiarize yourself wi
 ### Managing your payment method
 {: #account-gs-paymentdetails}
 
-* To manage your payment method for an account that's billed in USD currency, go to **Manage > Billing and usage**, and select **Payments**.
+* To manage your payment method for an account that's billed in USD currency, go to **Manage** > **Billing and usage**, and select **Payments**.
 * To manage your payment method for an account that's billed in non-USD currency, go to [{{site.data.keyword.IBM_notm}} Billing](https://myibm.ibm.com/billing/){: external}.
 
 ### Accessing your invoices
@@ -149,7 +149,7 @@ Before you start working with resources in your account, familiarize yourself wi
 
 Complete the following steps to set your preferences for receiving various types of notifications: 
 
-1. To receive notifications about unplanned events, planned maintenance, announcements, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg)
+1. To receive notifications about unplanned events, planned maintenance, announcements, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar")
  **Profile and settings** > **Notifications**.
    * Platform notifications are associated with the {{site.data.keyword.cloud_notm}} platform and don't apply to events related to {{site.data.keyword.cloud_notm}} services. By default, all platform notifications are turned off. 
    * Infrastructure notifications apply only to the account in which the preferences are set. By default, all infrastructure notifications are turned on. 
