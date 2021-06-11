@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2020
-lastupdated: "2020-06-08"
+  years: 2018, 2021
+lastupdated: "2021-06-11"
 
 keywords: company information, company details, company account, company profile, company contact
 
@@ -27,7 +27,7 @@ Each {{site.data.keyword.Bluemix}} account includes a company profile that conta
 ## Updating your company profile
 {: #customer-profile}
 
-To request an update to the company profile details, go to **Manage > Account** in the {{site.data.keyword.Bluemix_notm}} console, and select **Company profile**. After you request an update to the company profile, a classic infrastructure team member reviews the request. If any additional information is needed, our team asks for updates by updating the case.
+To request an update to the company profile details, go to **Manage** > **Account** in the {{site.data.keyword.Bluemix_notm}} console, and select **Company profile**. After you request an update to the company profile, a classic infrastructure team member reviews the request. If any additional information is needed, our team asks for updates by updating the case.
 
 {{site.data.keyword.Bluemix_notm}} uses the information in the company profile to contact you. If your phone number or email changes, be sure to update them. The company profile information is entered when the account was created.
 
