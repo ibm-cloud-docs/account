@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2021
 
-lastupdated: "2021-05-31"
+lastupdated: "2021-06-11"
 
 keywords: MFA, multifactor authentication, external authentication, order authentication, Symantec, cancel authentication order, classic infrastructure
 
@@ -48,7 +48,7 @@ After Symantec authentication is ordered, you can turn on the option for the use
 ## Setting up external authentication
 {: #third-party-MFA}
 
-To find out whether external authentication is enabled, go to **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Profile**, and select **Login settings**. 
+To find out whether external authentication is enabled, go to **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Profile**, and select **Login settings**. 
 
 ### Setting up Symantec authentication
 
@@ -84,6 +84,6 @@ To cancel the external authentication order, complete the following steps:
 
 1. In the console, click **Manage** > **Access (IAM)**, and select Users.
 2. Select a user from the list.
-3. From the **User details** page, click **Delete** ![Trash icon](../icons/icon_trash.svg) for the **Symantec authentication**.
+3. From the **User details** page, click **Delete** icon ![Trash icon](../icons/icon_trash.svg "Delete") for the **Symantec authentication**.
 4. Select when to remove it.
 5. Click **Remove**.
