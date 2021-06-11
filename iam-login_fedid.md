@@ -4,7 +4,7 @@ copyright:
 
   years: 2015，2021
 
-lastupdated: "2021-04-06"
+lastupdated: "2021-06-11"
 
 keywords: federated ID, password, enterprise SSO, single sign-on ID, API key login, one-time passcode login, temporary credential, to login, logging in
 
@@ -90,7 +90,7 @@ You can use two different methods to log in with the CLI. For the first method, 
 
 If you're already logged in to the console, you can use the following steps:
 
-1. In the {{site.data.keyword.Bluemix_notm}} console, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Log in to CLI and API**. 
+1. In the {{site.data.keyword.Bluemix_notm}} console, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Log in to CLI and API**. 
 2. Copy the information for the {{site.data.keyword.Bluemix_notm}} CLI into the CLI. 
 
 #### From the Cloud Foundry CLI
@@ -115,7 +115,7 @@ You can use two different methods to log in with the Cloud Foundry CLI. For the 
 
 If you're already logged in to the console, you can use the following steps:
 
-1. In the {{site.data.keyword.cloud_notm}} console, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Log in to CLI and API**. 
+1. In the {{site.data.keyword.cloud_notm}} console, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Log in to CLI and API**. 
 2. Copy the information for the Cloud Foundry CLI and paste into the CLI. 
 
 #### From the OpenShift CLI
@@ -123,7 +123,7 @@ If you're already logged in to the console, you can use the following steps:
 
 You can log in with a one-time passcode by using the following steps:
 
-1. Log in to the console, and from the console, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Log in to CLI and API**. 
+1. Log in to the console, and from the console, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Log in to CLI and API**. 
 2. Copy the information for the OpenShift CLI and paste into the CLI.
 
 ### Using an API key in the CLI for authentication
