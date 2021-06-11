@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-03-08"
+lastupdated: "2021-06-11"
 
 keywords: migrate, migrating to a resource group, migrate Cloud Foundry
 
@@ -17,6 +17,7 @@ subcollection: account
 {:screen: .screen}
 {:gif: data-image-type='gif'}
 {:tip: .tip}
+{:external: target="_blank" .external}
 
 # Migrating Cloud Foundry service instances and apps to a resource group
 {: #migrate}
@@ -24,7 +25,7 @@ subcollection: account
 To make your experience with using {{site.data.keyword.Bluemix}} simpler and more flexible, we introduced [resource groups](/docs/account?topic=account-rgs), which are conceptually similar to Cloud Foundry spaces. However, resource groups include several extra benefits, such as finer-grained access control by using IBM Cloud Identity and Access Management (IAM), the ability to connect service instances to apps and service across different regions, and an easy way to view usage per group.
 {:shortdesc}
 
-We're starting to move services from Cloud Foundry to benefit from resource groups, which means when you see the ![Migrate this service instance to a resource group](images/migrate.svg "Migrate this service instance to a resource group") icon next to one of your services on the My resources page, you must start a migration plan for your service instances or apps that are created through the [{{site.data.keyword.Bluemix_notm}} {{site.data.keyword.dev_console}}](https://cloud.ibm.com/developer/appservice/dashboard) to move from their current Cloud Foundry org and space to a resource group. Until an {{site.data.keyword.Bluemix_notm}} service moves from using Cloud Foundry orgs, spaces, and roles to using IAM and resource groups, you can’t migrate your existing Cloud Foundry service instances to a resource group.
+We're starting to move services from Cloud Foundry to benefit from resource groups, which means when you see the **Migrate** icon ![Migrate this service instance to a resource group](images/migrate.svg "Migrate this service instance to a resource group") next to one of your services on the My resources page, you must start a migration plan for your service instances or apps that are created through the [{{site.data.keyword.Bluemix_notm}} {{site.data.keyword.dev_console}}](https://cloud.ibm.com/developer/appservice/dashboard){: external} to move from their current Cloud Foundry org and space to a resource group. Until an {{site.data.keyword.Bluemix_notm}} service moves from using Cloud Foundry orgs, spaces, and roles to using IAM and resource groups, you can’t migrate your existing Cloud Foundry service instances to a resource group.
 
 When you migrate existing Cloud Foundry service instances or {{site.data.keyword.dev_console}} apps to a resource group, the group that you choose can't be changed after the migration is complete. So, it's essential to plan how you want to organize resources in the account before you migrate. This might mean that you need to create one or more resource groups, if you have a billable account, before migrating. 
 
@@ -95,14 +96,14 @@ Before you start the migration process, review your service documentation to see
 4. Click **Migrate** and the instance is migrated for you.
 5. Since you can migrate only one instance at a time, you can continue migrating eligible instances after you migrate the first one.
 
-After you successfully migrate an instance, you see it in the Services section of the My resources page. The alias stays in the Cloud Foundry section of the My resources page. You can use the ![Link icon](images/link.svg "Link icon that represents an alias") in the Cloud Foundry section of the My resources page to identify the aliases.
+After you successfully migrate an instance, you see it in the Services section of the My resources page. The alias stays in the Cloud Foundry section of the My resources page. You can use the **Link** icon ![Link icon](images/link.svg "Link icon that represents an alias") in the Cloud Foundry section of the My resources page to identify the aliases.
 
 ### Migrating {{site.data.keyword.dev_console}} apps
 {: #migrate_apps}
 
 Apps are migrated one at a time by clicking the ![Migrate this service instance to a resource group](images/migrate.svg "Migrate this service instance to a resource group") icon associated with each entry in your App List view.
 
-1. Select the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg), and select the developer portal of interest such as Watson or App Development, for example.
+1. Select the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu"), and select the developer portal of interest such as Watson or App Development, for example.
 2. Select **Apps**, which displays the lists **Apps (Action required)** and **Apps (migrated)**.
 3. For each entry in the **Apps (Action required)** list, click the **Migrate** icon ![Migrate this service instance to a resource group](images/migrate.svg "Migrate this service instance to a resource group").
 4. Select or create a new resource group.
