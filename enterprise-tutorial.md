@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2020
-lastupdated: "2020-07-08"
+  years: 2019, 2021
+lastupdated: "2021-06-11"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, enterprise users, enterprise access, enterprise tutorial
 
@@ -145,7 +145,7 @@ In a large organization like Example Corp., there are likely other people who yo
 
 First, invite the department leads and assign them access.
 
-1. Go to the Enterprise dashboard by clicking **Manage > Enterprise**. In the Users section, click **Invite users**.
+1. Go to the Enterprise dashboard by clicking **Manage** > **Enterprise**. In the Users section, click **Invite users**.
 1. Enter the email address of the user you want to invite, such as `jsmith@example.com`.
 1. Expand the **Manually assign users access** section.
 1. Select **Account management**
@@ -178,7 +178,7 @@ Complete the following steps to assign the required access:
 
 1. In the console, go to **Manage** > **Access (IAM)**, and select **Users**.
 2. Click the user's name from the list.
-3. Click **Access policies > Assign access**.
+3. Click **Access policies** > **Assign access**.
 4. Select the service that you want to assign the user access to.
     * If you want the user to be able to create any service, select **All Identity and Access enabled services**.
     * If you want to assign the user access to a specific service, select it from the list. 
@@ -195,7 +195,7 @@ Complete the following steps to assign the required access:
 {: step}
 
 1. Log in to the Example Corp enterprise account.
-2. Go to **Manage > Billing and usage**, and select **Usage**.
+2. Go to **Manage** > **Billing and usage**, and select **Usage**.
 
    The Usage page displays the costs for all usage in your enterprise, which is broken down by account and account group. Usage information for classic infrastructure services is not included for the current billing period. For more information, see [Viewing usage for your classic infrastructure resources](/docs/billing-usage?topic=billing-usage-infra-usage).
 3. Click **Marketing** in the table to view usage within the account group. Similar to the enterprise level, usage is broken down by the account and account group.
