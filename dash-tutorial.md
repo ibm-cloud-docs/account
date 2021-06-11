@@ -40,7 +40,7 @@ The tutorial uses a fictitious project manager who is named Cora. She wants to u
 
 First, create a new dashboard and select a template. 
 
-1. In the {{site.data.keyword.cloud_notm}} console, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg), and select **Create a dashboard**. 
+1. In the {{site.data.keyword.cloud_notm}} console, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions"), and select **Create a dashboard**. 
 2. Select the Management template from the available options, and then click **Next**. 
 
   The Management template is optimized to provide a mix of billing, access management, and other administrative widgets that Cora needs.
@@ -63,7 +63,7 @@ The following video shows you the steps to create a custom dashboard:
 
 You can share dashboards with users in your account to give them access to view the dashboard. Cora wants to share her custom Management dashboard with her program director so they can talk about resource allocation and the budget for the next year. 
 
-To share a dashboard, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg), and select **Share**. After you share it with a user and they click the link, the dashboard is added to their account. 
+To share a dashboard, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions"), and select **Share**. After you share it with a user and they click the link, the dashboard is added to their account. 
 
 All users with the dashboard link can share the dashboard, which means other users can see the populated data that they have permission to view. If they don’t have the same permissions as the owner, for example, if they don’t have access to Cora’s chatbot resource group, they cannot view that data. Users without permissions to the scoped resources are able to view the dashboard layout, but not the populated data. A user with insufficient permissions might see a warning icon next to the dashboard that indicates a scoping error and that the data that's displayed might not be complete. Make sure that the users you share a dashboard with have access to the resources you scope the dashboard to.
 
@@ -75,10 +75,10 @@ Cora decides that the team of developers she manages doesn't need to see the Usa
 
 You can duplicate a dashboard to include the same structure and layout without having to re-create the dashboard from scratch. 
 
-1.  To duplicate a dashboard, click the **Actions** icon ![More Actions icon](../icons/action-menu-icon.svg) > **Duplicate**.  
+1.  To duplicate a dashboard, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Duplicate**.  
 2. Define the scope. The scope and assigned access is not saved from the dashboard that was duplicated. Cora applies the resource group filter for the chatbot project just like she did for the original dashboard.
 3. Click **Save dashboard**. 
-4. Click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg), and select **Share** to share the new dashboard with the correct users. 
+4. Click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions"), and select **Share** to share the new dashboard with the correct users. 
 
 ## Next steps
 {: #tutorial-dash-step-next}
@@ -86,10 +86,10 @@ You can duplicate a dashboard to include the same structure and layout without h
 When the chatbot project is complete, Cora's team of developers might want to remove the dashboard from their view, even if Cora wants to keep it around to reference later. You can remove a dashboard only if it was shared with you.
 
 1. In the {{site.data.keyword.Bluemix_notm}} console go to **Manage** > **Account**, and select **Account resources** > **Dashboards**.
-2. Click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg), and select **Remove**. 
+2. Click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions"), and select **Remove**. 
 
 Is your dashboard no longer in use? Delete the dashboard that you created as a part of this tutorial. After you delete a dashboard, you can't recover it and it is deleted for all users. Only the dashboard owner can delete a dashboard.
 
 To delete a dashboard, complete the following steps: 
-1. Expand the **Actions** icon ![Action icon](../icons/action-menu-icon.svg), and select **Delete**.
+1. Expand the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions"), and select **Delete**.
 2. Click **Delete**. 
