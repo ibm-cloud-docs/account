@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-04-07"
+lastupdated: "2021-06-11"
 
 keywords: user session, inactivity, sign out, concurrent, login session
 
@@ -30,6 +30,8 @@ To review and end active sessions to help maintain the security of your account,
 ## Before you begin
 {: #work-sessions-access}
 
+If you have the following access, you can update the settings for login sessions:
+
 * Account owners 
 * Editor or admin role on all account management services
 * Editor or admin role on IAM identity service
@@ -44,8 +46,8 @@ An active session is how long a user is continuously working in their account. H
 
 To update your user's active sessions settings, complete the following steps:
 
-1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Settings**.
-1. From the Login session section, click the **Edit** icon ![Edit icon](../icons/icon_write.svg) from the Active sessions tile. 
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Settings**.
+1. From the Login session section, click the **Edit** icon ![Edit icon](../icons/icon_write.svg "Edit") from the Active sessions tile. 
 1. Enter the time limit. The longest a session can last is 720 hours. 
 1. Click **Save**. 
 
@@ -55,7 +57,7 @@ To update your user's active sessions settings, complete the following steps:
 An inactive session is one where the user hasn't completed any requests that send a token for validation for the duration selected. If the sign out due to inactivity duration is 1 hour, then the user will be signed out after an hour if they haven't done anything on their account in that time. To update your user's sign out due to inactivity settings, complete the following steps.
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Settings**.
-1. From the Login session section, click the **Edit** icon ![Edit icon](../icons/icon_write.svg) from the Sign out due to inactivity tile. 
+1. From the Login session section, click the **Edit** icon ![Edit icon](../icons/icon_write.svg "Edit") from the Sign out due to inactivity tile. 
 1. Enter the time limit. The longest an inactive session can last is 24 hours. 
 1. Click **Save**. 
 
@@ -65,10 +67,7 @@ An inactive session is one where the user hasn't completed any requests that sen
 
 You can choose the maximum number of concurrent sessions that are allowed for your account users. Concurrent sessions are active sessions that the user is signed into at one time. Users can have multiple sessions open by using different browsers or several logins with the {{site.data.keyword.cloud_notm}} CLI. Multiple concurrent sessions are more beneficial for parallel workloads.
 
-1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Settings**.
-1. From the Concurrent sessions tile, click the **Edit** icon ![Edit icon](../icons/icon_write.svg), click the Unlimited dropdown > **Limit sessions**.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Settings**.
+1. From the Concurrent sessions tile, click the **Edit** icon ![Edit icon](../icons/icon_write.svg "Edit"), click the Unlimited dropdown > **Limit sessions**.
 1. Enter the limit. Users can have an unlimited number of concurrent sessions. 
 1. Click **Save**. 
-
-
-
