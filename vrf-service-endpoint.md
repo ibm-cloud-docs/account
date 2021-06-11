@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-04-14"
+lastupdated: "2021-06-11"
 
 keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network, services that support service endpoints, service endpoint support, using service endpoints
 
@@ -34,7 +34,7 @@ Virtual Private Clouds (VPCs) are automatically enabled for virtual routing and 
 Before you begin, ensure that you meet the following criteria:
 
 * You need a billable account to enable virtual routing and forwarding and {{site.data.keyword.Bluemix_notm}} service endpoints.
-* You must have access to {{site.data.keyword.cloud_notm}} infrastructure in your account. Go to the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **Classic Infrastructure** to verify that you have access.
+* You must have access to {{site.data.keyword.cloud_notm}} infrastructure in your account. Go to the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Classic Infrastructure** to verify that you have access.
 
 ## Enabling VRF in the console
 {: #vrf}
