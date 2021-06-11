@@ -2,7 +2,7 @@
 
 copyright:
    years: 2021
-lastupdated: "2021-04-28"
+lastupdated: "2021-06-11"
 
 keywords: tagging resources, managing access, access management tags, create access management tags, get started with access management tags, IAM-enabled resources, tag your resource, access group, access group policy
 
@@ -65,8 +65,8 @@ Because tags are visible account-wide, avoid using personal information, such as
 
 Now that you created your tag, you can add it to your resource. 
 
-1. Clicking the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **Resource List** to access the list of resources in your account. 
-2. Find your {{site.data.keyword.cos_full}} instance and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) > **Add tags**.
+1. Clicking the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource List** to access the list of resources in your account. 
+2. Find your {{site.data.keyword.cos_full}} instance and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Add tags**.
 3. Type `project:analysis` and press Enter.
 
 ## Create an access group
