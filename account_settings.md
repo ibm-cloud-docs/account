@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-06-011"
+lastupdated: "2021-06-11"
 
 keywords: account settings, edit account name, view account type
 
@@ -29,7 +29,7 @@ As an {{site.data.keyword.cloud}} account owner, you can change the account name
 ## Editing the account name
 {: #change-acct-name}
 
-To edit your account name, go to **Manage** > **Account**, and select **Account settings** in the {{site.data.keyword.cloud_notm}} console. In the Account section, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg), type your new account name, and click **Submit**.
+To edit your account name, go to **Manage** > **Account**, and select **Account settings** in the {{site.data.keyword.cloud_notm}} console. In the Account section, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit"), type your new account name, and click **Submit**.
 
 ## Viewing your account type
 {: #view-acct-type}
