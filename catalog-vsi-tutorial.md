@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-04-09"
+lastupdated: "2021-06-11"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog
 
@@ -115,7 +115,7 @@ To monitor the progress of the validation process, click **View logs**.
 {: #catalog-vsi-publish}
 {: step}
 
-After you complete the validation process, you're ready to publish the virtual server image to your account. Click the **Actions** icon ![More Actions icon](../icons/action-menu-icon.svg), and select **Publish to account**.
+After you complete the validation process, you're ready to publish the virtual server image to your account. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions"), and select **Publish to account**.
 
 As a result, the virtual server image is available only to users who have access to the `Sample virtual server image` private catalog in your account.
 
