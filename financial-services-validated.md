@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-04-27"
+lastupdated: "2021-06-11"
 
 keywords: data security, FS-ready, Financial Services, encryption
 
@@ -34,7 +34,7 @@ Accounts that enable the Financial Services Validated setting still have access 
 
 When you enable this setting, you are indicating that your account stores regulated Financial Services information. 
 
-1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage > Account**, and select **Account settings**.
+1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account**, and select **Account settings**.
 2. For the Financial Services Validated option, click **On**.
 3. Read the information about enabling the setting, and select **I understand and agree to these terms**.
 4. Click **On**.
