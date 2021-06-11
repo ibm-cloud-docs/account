@@ -36,12 +36,12 @@ Go to **Manage** > **Account** in the {{site.data.keyword.cloud_notm}} console, 
 You can view the resources of only one org at a time. If you are a member of multiple orgs, you can switch orgs from the user account preferences link in the console menu bar.
 {: tip}
 
-  * To rename an org, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg) for the org you want to rename, and select **Rename**.
+  * To rename an org, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions") for the org you want to rename, and select **Rename**.
     {: #orgrename}
 
     Any changes that you make apply to all users in the org.
 
-  * To delete a space, select the org in which the space is assigned. Then, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg), and select **Delete**.
+  * To delete a space, select the org in which the space is assigned. Then, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions"), and select **Delete**.
 
     When you delete a space, all included resources and users are also deleted. 
     
@@ -50,7 +50,7 @@ You can view the resources of only one org at a time. If you are a member of mul
 
   * To repurpose an org, delete all spaces within the org and then rename it. Although you cannot delete orgs, you can simplify the list on the Cloud Foundry Orgs page by clearing and then re-using obsolete orgs rather than creating new ones.
 
-  * To edit user roles at the org level, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg), and select **Users**.
+  * To edit user roles at the org level, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions"), and select **Users**.
     {: #listmembers}
 
     Depending on how you want to modify the user permissions, select or clear the checkbox for a specific role. The roles that you can assign at the organization level are Manager, Billing manager, and Auditor. For more information, see [Cloud Foundry roles](/docs/account?topic=account-cfaccess#cfroles).
@@ -59,21 +59,21 @@ You can view the resources of only one org at a time. If you are a member of mul
 
     Depending on how you want to modify the user permissions, select or clear the checkbox for a specific role. The roles that you can assign at the space level are Manager, Developer, and Auditor. For more information, see [Cloud Foundry roles](/docs/account?topic=account-cfaccess#cfroles).
 
-  * To manage your domains, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg) for the respective org, and select **Domains**.
+  * To manage your domains, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions") for the respective org, and select **Domains**.
     {: #managedomains}
 
     As an account owner or organization manager, you can view the system domain and add custom domains for applications that are built within an org and its spaces. If you're a space manager, this page displays read-only list of the domains that are assigned to the space.
 
     If you add a custom domain, you must configure your DNS server to resolve your custom domain to point to the {{site.data.keyword.Bluemix_notm}} system domain. In this way, when {{site.data.keyword.Bluemix_notm}} receives a request for your custom domain, it's properly routed to your app. The system domain is always available to a space, and custom domains might also be allocated to a space. Apps that are created in a space might use any of the domains that are listed for that space. For more information about creating and by using custom domains, see [Managing your domains](/docs/apps?topic=apps-update-domain).
 
-  * To manage the allocated quota for an org, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg) for the respective org, and select **Quotas**.
+  * To manage the allocated quota for an org, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions") for the respective org, and select **Quotas**.
     {: #managequota}
 
     From here, you can view the quota details for the number of apps, amount of memory, number of services, and plan details. The quota represents the resource limits for the org, which is assigned when the organization is created. The resources that are available to an org vary depending on whether you have a free account or a billable account. Any application or service that is included in a space within the org contributes to the usage of the allocated quota.
 
     To change the quota that is allocated to an org, you must create a support case. For more information, see [Working with support cases](/docs/get-support?topic=get-support-open-case).
 
-    To view the quota details at the space level for each location, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg) for the respective org, and select **Quotas**. Then, expand each row accordingly.
+    To view the quota details at the space level for each location, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions") for the respective org, and select **Quotas**. Then, expand each row accordingly.
     
 ## Updating orgs and spaces by using the CLI
 {: #orgupdates-cli}
