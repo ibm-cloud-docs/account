@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-04-22"
+lastupdated: "2021-06-11"
 
 keywords: enterprise, create account group, organize accounts, move accounts, account group, change contact, account group contact 
 
@@ -170,7 +170,7 @@ To move an account, you need the Administrator role on the Billing service in th
 {: ui}
 
 1. From the Enterprise dashboard in the console, click **Accounts**.
-1. In the Accounts section, click the Actions icon ![Actions icon](../icons/actions-icon-vertical.svg) in the row for the account, and select **Move account**.
+1. In the Accounts section, click the Actions icon ![Actions icon](../icons/actions-icon-vertical.svg "Actions") in the row for the account, and select **Move account**.
 1. Select the new parent for the account, and click **Save**.
 
 ### Moving an account by using the CLI
