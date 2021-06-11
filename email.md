@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-06-10"
+lastupdated: "2021-06-11"
 
 keywords: platform notifications, email notifications, IBM Cloud notifications, notification preferences, email preferences, user notifications, infrastructure notifications
 
@@ -239,7 +239,7 @@ To add webhooks to a distribution list, complete the following steps:
    Custom header and secure header fields are also available to set. You can specify these by clicking **Add header** or **Add secure header**. If you choose to add a secure header for credentials, they are passed encrypted with the private data. This type of header can be deleted, but cannot be edited later. You can easily edit and delete custom headers later. 
   {: tip}
   
-  If you no longer want to receive notifications, you can easily delete your webhook from the distribution list by clicking the **Actions icon** ![More Actions icon](../icons/action-menu-icon.svg) > **Delete** in your webhook's row. 
+  If you no longer want to receive notifications, you can easily delete your webhook from the distribution list by clicking the **Actions** icon ![More Actions icon](../icons/action-menu-icon.svg) > **Delete** in your webhook's row. 
 
   You can select which {{site.data.keyword.cloud_notm}} account you use by clicking the account switcher in the console. Users in the selected account receive notifications about any events that affect the account. 
   {: note}
