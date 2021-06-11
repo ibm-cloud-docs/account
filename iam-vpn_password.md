@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018, 2020
+  years: 2018, 2021
 
-lastupdated: "2020-04-16"
+lastupdated: "2021-06-11"
 
 keywords: VPN password, update VPN password, classic infrastructure VPN
 
@@ -30,8 +30,8 @@ If you have the following access, you can update the VPN password for another us
 
 To update the VPN password, complete the following steps:
 
-1. In the {{site.data.keyword.cloud}} console, click **Manage** &gt; **Access (IAM)**, and select **Users**.
+1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Access (IAM)**, and select **Users**.
 2. Select a user from the list.
 3. From the User details page, go to the **VPN password** section.
-4. Click the **Edit** icon ![Edit icon](../icons/icon_write.svg) to enter a new VPN password.
+4. Click the **Edit** icon ![Edit icon](../icons/icon_write.svg "Edit") to enter a new VPN password.
 5. Click **Update password**.
