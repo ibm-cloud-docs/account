@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-06-11"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, attach tags ui, attach tags cli, attach tags api, detach tags ui, detach tags api, detach tags cli
 
@@ -33,13 +33,13 @@ You can attach and detach tags on a resource through the console, CLI, or API. T
 {: #attach-detach-console}
 {: ui}
 
-1. From the {{site.data.keyword.cloud}} console, click the Menu icon ![Menu icon](../icons/icon_hamburger.svg) > **Resource list** to view your list of resources.
+1. From the {{site.data.keyword.cloud}} console, click the Menu icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list** to view your list of resources.
 2. Expand the resource type twistie that contains the resource you want to tag. For example, if you want to tag an instance of {{site.data.keyword.cos_full_notm}}, expand **Storage**.  
-3. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) to attach or update a tag for the resource.
-    * To attach tags, click the **Actions** menu ![Actions icon](../icons/action-menu-icon.svg) and select **Add Tags**.
-    * To update your tags, you can either select Edit tags from the **Actions** menu ![Actions icon](../icons/action-menu-icon.svg), or click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg) next to the displayed tags in the resource list.
+3. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") to attach or update a tag for the resource.
+    * To attach tags, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Add Tags**.
+    * To update your tags, you can either click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit tags**, or click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") next to the displayed tags in the resource list.
     * Type a name for your user or access management tag. Press Enter to continue adding tags.
-4. To remove a tag, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg). Then, click the **Remove** icon ![Remove icon](../icons/close-tagging.svg) next to the tag.
+4. To remove a tag, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit"). Then, click the **Remove** icon ![Remove icon](../icons/close-tagging.svg "Remove") next to the tag.
 
 When you detach an access management tag from a resource, any associated access policies are also detached from that resource.
 {: note}
@@ -91,7 +91,7 @@ When you detach an access management tag from a resource, any associated access 
 {: #attach-api}
 {: api}
 
-You can programmatically attach tags by calling the [Global Search and Tagging - Tagging API](https://{DomainName}/apidocs/tagging#attach-tag){: external} as shown in the following sample requests. The allowed values for the `tag_type` query parameter are: `user` for user tags and `access` for access management tags. The following example shows how to attach an access management tag called `project:myproject` to a service instance:
+You can programmatically attach tags by calling the [Global Search and Tagging - Tagging API](/apidocs/tagging#attach-tag){: external} as shown in the following sample requests. The allowed values for the `tag_type` query parameter are: `user` for user tags and `access` for access management tags. The following example shows how to attach an access management tag called `project:myproject` to a service instance. 
 
 1. Find the unique identifier for your resource by calling the following cURL command:
   ```bash
@@ -189,7 +189,7 @@ You can programmatically attach tags by calling the [Global Search and Tagging -
 {: #detach-api}
 {: api}
 
-You can programmatically detach tags by calling the [Global Search and Tagging - Tagging API](https://{DomainName}/apidocs/tagging#detach-tag){: external} as shown in the following sample requests. The allowed values for the `tag_type` query parameter are: `user` for user tags and `access` for access management tags. The following example shows how to detach an access management tag called `project:myproject` from a service instance:
+You can programmatically detach tags by calling the [Global Search and Tagging - Tagging API](/apidocs/tagging#detach-tag){: external} as shown in the following sample requests. The allowed values for the `tag_type` query parameter are: `user` for user tags and `access` for access management tags. The following example shows how to detach an access management tag called `project:myproject` from a service instance.
 
 1. Find the unique identifier for your resource by calling the following cURL command:
   ```bash
