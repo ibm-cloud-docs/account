@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-04-22"
+lastupdated: "2021-06-11"
 
 keywords: enterprise, organize accounts, account group, change contact, account group contact 
 
@@ -39,7 +39,7 @@ To update an account group contact, you need the Administrator or Editor role on
 To update the contact for an account group, complete the following steps. If a user that you want to assign as the contact isn't in the enterprise, first invite the user to the enterprise account. See [Inviting users](/docs/account?topic=account-iamuserinv) for more information.
 
 1. Click **Manage** > **Enterprise** > **Accounts**.
-1. In the **Account groups** section, click the Actions icon ![Actions icon](../icons/actions-icon-vertical.svg) in the row for the account group, and select **Edit**.
+1. In the **Account groups** section, click the Actions icon ![Actions icon](../icons/actions-icon-vertical.svg "Actions") in the row for the account group, and select **Edit**.
 1. Select the new contact for the account group, and click **Save**. 
 
 ## Updating the account group contact using the CLI
