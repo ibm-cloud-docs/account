@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2020
-lastupdated: "2020-06-18"
+  years: 2018, 2021
+lastupdated: "2021-06-11"
 
 keywords: resource access, access report, export user access, who has access, download access report, audit access
 
@@ -49,7 +49,7 @@ With the following extra access, you can view display names, access group member
 To export the report, complete the following steps:
 
 1. Go to the Resource list page.
-2. From the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu for the row of the resource that you want a report for, click **Export access report**.
+2. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Export access report** for the row of the resource that you want a report for.
 3. Click **Download JSON** or **Download CSV**.
 
 Depending on your assigned access, you might be able to view just the IDs, or you might have the full detailed view. Check the value that is set for the `fullReport` flag. If it is set to `false`, then you don't have full access to view all display names, memberships, or rules.
