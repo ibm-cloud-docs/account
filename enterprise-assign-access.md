@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2021
 
-lastupdated: "2021-04-22"
+lastupdated: "2021-06-11"
 
 keywords: enterprise policy, enterprise access, assign enterprise access, enterprise service
 
@@ -107,7 +107,7 @@ You can set the target of the policy to be for the entire enterprise, a specific
 {: tip}
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Users**.
-2. From the row for the user that you want to assign access, select the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, and click **Assign access**.
+2. From the row for the user that you want to assign access, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions"), and click **Assign access**.
 3. Select **Assign users additional access**.
 4. Select the **Account Management** tile.
 5. For the type of access to assign, select **Enterprise**.
