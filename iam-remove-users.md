@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2021
 
-lastupdated: "2021-04-13"
+lastupdated: "2021-06-11"
 
 keywords: remove user, delete user
 
@@ -46,8 +46,8 @@ Only users with the correct access can remove others. If you use a service ID to
 
 To remove a user from an account, complete the following steps:
 
-1. In the {{site.data.keyword.cloud}} console, click **Manage** &gt; **Access (IAM)**, and select **Users**.
-2. From the row of the user that you want to remove, select **Remove user** from the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu.
+1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Access (IAM)**, and select **Users**.
+2. From the row of the user that you want to remove, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Remove user**.
 
 Any resources that are created by the user remain in the account, but any {{site.data.keyword.cloud_notm}} API keys that the user created are removed. The user no longer has access to work with the resources they created. The account owner or an administrator for the service or service instance can assign other users to work with the resources, or delete them from the account.
 
