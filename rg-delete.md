@@ -5,7 +5,7 @@
 copyright:
 
   years: 2020, 2021
-lastupdated: "2021-03-16"
+lastupdated: "2021-06-11"
 
 keywords: delete resource group, resource group, manage resource groups
 
@@ -42,7 +42,7 @@ You can't delete the default resource group that's added to your account. Beside
 To delete a resource group that doesn't contain resources and is not your default, complete the following steps:
 
 1. In the console, go to **Manage** > **Account** > **Account resources** > **Resource groups**.
-2. Click the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, and select **Delete**.
+2. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Delete**.
 
 ## Deleting a resource group by using the CLI
 {: #delete-rg-cli}
@@ -106,7 +106,3 @@ detailedResponse, err := service.DeleteResourceGroup(deleteResourceGroupOptionsM
 {: codeblock}
 {: go}
     
-
-
-
-
