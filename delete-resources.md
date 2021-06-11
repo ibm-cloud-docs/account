@@ -5,7 +5,7 @@
 copyright:
 
   years: 2020, 2021
-lastupdated: "2021-03-16"
+lastupdated: "2021-06-11"
 
 keywords: account resources, delete resource, delete instance
 
@@ -43,7 +43,7 @@ You can delete a resource in the console by using the following steps:
 
 1. From your dashboard, click **View resources** in the Resources summary widget.
 2. Expand the sections to locate the service instance that you want to delete.
-3. Select the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu for the row, and click **Delete**.
+3. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) > **Delete** for the row.
 
 ## Deleting resources by using the CLI
 {: #delete-resource-cli}
