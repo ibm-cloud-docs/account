@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2020
+  years: 2020, 2021
 
-lastupdated: "2020-09-14"
+lastupdated: "2021-06-11"
 
 keywords: identity provider, IdP, App ID, IAM, integration, IdP SSO, third-party authentication, dynamic rules, external identity provider
 
@@ -103,7 +103,7 @@ After your {{site.data.keyword.appid_short}} instance is connected to your IdP, 
 
 However, since you can have only one set as the default, but you can have up to five set-up in your account, you might need to get the URL for another IdP reference: 
 
-1. From the Identity provider pages, click the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu for the row of the IdP reference you need a URL for.
+1. From the Identity provider pages, click the **Actions** icon ![List of actions icon](../icons/action-menu-icon.svg "Actions") menu for the row of the IdP reference you need a URL for.
 2. Select **View IDP URL**. 
 3. Copy the **IdP URL** link to give to users to log in. 
 
