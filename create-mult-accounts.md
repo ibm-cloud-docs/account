@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-11-18"
+  years: 2020, 2021
+lastupdated: "2021-06-11"
 
 keywords: creating accounts, multiple accounts 
 
@@ -31,7 +31,7 @@ Managing multiple accounts with a single IBMid is different from using an enterp
 
 To create multiple accounts associated with your IBMid, complete the following steps:
 
-1. In the console, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Log out**, and click **Log out**. 
+1. In the console, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Log out**, and click **Log out**. 
 2. From the login screen, click **Create an account**. 
 3. From the registration page, enter your email address, complete the necessary information, and click **Create account**. 
 
