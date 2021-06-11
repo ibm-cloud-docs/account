@@ -300,8 +300,16 @@
     "receiving many notifications about maintenance via email. How do I make this stop",
     "switch off email notifications",
     "cancel notifications by email",
-    "unsubcsribe from the mailing list",
-    "unsubscribe from email notifications"
+    "unsubscribe from the mailing list",
+    "unsubscribe from email notifications",
+    "how can update my subscription for incident events",
+    "updating my subscription for incident notices",
+    "get announcement of incidents",
+    "subscribed to incident notification",
+    "e-mail subscription for incidents",
+    "how to subscribe to security notification",
+    "turn off incident subscription",
+    "don't want to receive your e-mail about incidents"
   ],
   "reset-password": [
     "reset my password",
@@ -1026,12 +1034,11 @@
     "The page wasn't loaded because IBM Cloud didn't detect whether a session exists",
     "BXNUI0016E",
     "The apps and services weren't retrieved because an IBM Cloud page didn't load",
-    "500 Internal Server Error An internal error occurred while serving your request",
-	  "error 500 loading a page",
-	  "getting 500 internal server error",
-	  "what does 500 internal server error mean",
-	  "I have 500 Internal Server Error",
-	  "500 internal error"
+    "error 500 loading a page",
+    "getting 500 internal server error",
+    "what does 500 internal server error mean",
+    "I have 500 Internal Server Error",
+    "500 internal error"
   ],
   "troubleshoot-infrastructure-access": [
     "page can't be loaded because your infrastructure account is not fully configured",
