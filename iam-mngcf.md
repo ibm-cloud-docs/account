@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2020
+  years: 2017, 2021
 
-lastupdated: "2020-04-16"
+lastupdated: "2021-06-11"
 
 keywords: Cloud Foundry access, assign access, add user to organization, Cloud Foundry roles
 
@@ -40,7 +40,7 @@ To manage access to account organizations and spaces, you must be the account ow
 If you are the manager of an organization that the user is not yet a member of, you assign the user to that organization.
 
 1. In the console, click **Manage** > **Access (IAM)**, and select **Users**.
-2. From the row for the user that you want to assign access, select the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, and then click **Assign access**.
+2. From the row for the user that you want to assign access, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) > **Assign access**.
 3. Select **Assign users additional access**. 
 4. Select the **Cloud Foundry** tile. 
 5. Select the organization that you want to assign access to. 
@@ -58,7 +58,7 @@ If you are the manager of an organization that the user is not yet a member of, 
 
 If you need to review your assigned access in an account that you have been added to, complete the following steps:
 
-1. In the console, click **Manage** &gt; **Access (IAM)**, and select **Users**.
+1. In the console, click **Manage** > **Access (IAM)**, and select **Users**.
 2. Select your name.
 3. Click **Cloud Foundry access**.
 3. Expand the org row, and review your assigned roles.
