@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2021
 
-lastupdated: "2021-05-06"
+lastupdated: "2021-06-11"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, role management service, catalog management service, cloud shell service
 
@@ -42,7 +42,7 @@ As the account owner or the administrator of an account management service, you 
 To assign access to one or all account management services, complete the following steps:
 
 1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Access (IAM)**, and then select **Users**.
-2. From the row for the user that you want to assign access, select the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, and click **Assign access**.
+2. From the row for the user that you want to assign access, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) > **Assign access**.
 3. Select **Assign users additional access**, and select **Account Management**.
 4. For the access, select **All Account Management Services** or select a specific account management service.
 5. Select any combination of roles or permissions to define the scope of access, and click **Add**.
