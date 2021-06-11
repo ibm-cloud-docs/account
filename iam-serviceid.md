@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-04-13"
+lastupdated: "2021-06-11"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -49,12 +49,12 @@ If the Restrict service ID creation IAM account setting is enabled, then everyon
 
 To create a service ID, complete the following steps:
 
-1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** &gt; **Access (IAM)**, and select **Service IDs**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Service IDs**.
 2. Click **Create**.
 3. Follow the process to create a name and description for your service ID.
 4. Click **Create**.
 
-Then, hover on the row of a service ID to use the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu to manage your service ID. You can start by assigning a policy and creating API keys. For more information about working with API keys, see [Managing service ID API keys](/docs/account?topic=account-serviceidapikeys).
+Then, hover on the row of a service ID to click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") to manage your service ID. You can start by assigning a policy and creating API keys. For more information about working with API keys, see [Managing service ID API keys](/docs/account?topic=account-serviceidapikeys).
 
 ## Creating a service ID by using the API
 {: #create_serviceid-api}
@@ -141,7 +141,7 @@ For more informatiion, see the [IAM Identity Services API](https://cloud.ibm.com
 {: #update_serviceid}
 {: ui}
 
-You can update a service ID by changing the name and description at any time. You can also delete and create new API keys as needed or update the assigned access policies. Hover on the row of a service ID to use the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu to manage your service ID.
+You can update a service ID by changing the name and description at any time. You can also delete and create new API keys as needed or update the assigned access policies. Hover on the row of a service ID to click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") to manage your service ID.
 
 Any changes that you make to an existing service ID, such as changing the assigned policies or deleting an API key that is used, might cause service interruptions to applications that use that service ID.
 
@@ -253,12 +253,12 @@ To get the identifier of a specific service ID, go to **Manage** > **Access (IAM
 {: #lock_serviceid_ui}
 {: ui}
 
-A locked service ID is indicated by the ![Locked icon](images/locked.svg "Locked") icon.
+A locked service ID is indicated by the **Locked** icon ![Locked icon](images/locked.svg "Locked").
 
-1. In the console, click **Manage** &gt; **Access (IAM)** and then select **Service IDs**.
-2. Identify the row of the service ID that you want to lock, and select **Lock service ID** from the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu.
+1. In the console, click **Manage** > **Access (IAM)** and then select **Service IDs**.
+2. Identify the row of the service ID that you want to lock, and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Lock service ID**.
 
-To unlock a service ID, select the service ID from the table that you want to unlock and select **Unlock service ID** from the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu. You must have the appropriate level of access to unlock a service ID.
+To unlock a service ID, select the service ID from the table that you want to unlock and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Unlock service ID**. You must have the appropriate level of access to unlock a service ID.
 {: tip}
 
 
