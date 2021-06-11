@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-12-18"
+  years: 2020, 2021
+lastupdated: "2021-06-11"
 
 keywords: cloud shell settings, cloud shell service, enable cloud shell, disable cloud shell, cloud shell locations, cloud shell access, cloud shell iam, cloud shell role, cloud shell administrator, cloud shell service
 
@@ -46,7 +46,7 @@ For more information, see the IAM roles and actions for the [{{site.data.keyword
 
 By default, {{site.data.keyword.cloud-shell_short}} is enabled for an account. As an account owner or user with the correct access, you can enable or disable {{site.data.keyword.cloud-shell_short}} for users in the account.
 
-When the {{site.data.keyword.cloud-shell_short}} availability setting is enabled, {{site.data.keyword.cloud-shell_short}} is available to all users in the account. If the setting is disabled, no users in the account can access {{site.data.keyword.cloud-shell_short}}. The {{site.data.keyword.cloud-shell_notm}} icon ![{{site.data.keyword.cloud-shell_notm}} icon](../icons/terminal-cloud-shell.svg) is disabled in the {{site.data.keyword.cloud_notm}} console.
+When the {{site.data.keyword.cloud-shell_short}} availability setting is enabled, {{site.data.keyword.cloud-shell_short}} is available to all users in the account. If the setting is disabled, no users in the account can access {{site.data.keyword.cloud-shell_short}}. The **{{site.data.keyword.cloud-shell_notm}}** icon ![{{site.data.keyword.cloud-shell_notm}} icon](../icons/terminal-cloud-shell.svg) is disabled in the {{site.data.keyword.cloud_notm}} console.
 
 To enable or disable {{site.data.keyword.cloud-shell_short}} for the account, complete the following steps:
 
