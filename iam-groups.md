@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-06-11"
 
 keywords: access groups, access group, create group, assign access to group
 
@@ -97,7 +97,7 @@ Additionally, an administrator or editor can be assigned access to manage an ind
 
 A unique name is required to differentiate access groups in the account. To create an access group, complete the following steps:
 
-1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Access Groups**.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Access Groups**.
 2. Click **Create**.
 3. Enter a unique name to identify your access group, an optional description, and click **Create**.
 
@@ -204,8 +204,8 @@ A unique name is required to differentiate access groups in the account.
 
 After you set up your group with users and service IDs, you can assign a common access policy to the group. Remember, any policy that you set for the group applies to all entities within the group.
 
-1. In the console, click **Manage** &gt; **Access (IAM)**, and select **Access Groups**.
-2. From the row for the group that you want to assign access, select the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, and click **Assign access**. 
+1. In the console, click **Manage** > **Access (IAM)**, and select **Access Groups**.
+2. From the row for the group that you want to assign access, select the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions"), and click **Assign access**. 
 3. Add one or more of the access options that you manage. You must assign at least one access option. For any access options that you don't add and configure, the default value of **No access** is assigned. Depending on the options that you are authorized to manage, you can assign the following types of access:
 
      * Select **IAM services**, and then select the option for all services or just a specific service. Next, you can scope the access to the resources based on selected resource attributes like access management tags, region or resource group. Then, select all roles that apply. To view what actions are mapped to each role, click the **Actions for role** option to view a list of all actions that are mapped to a specific role. <br><br> Some services support the use of advanced operators to grant access to resources that satisfy specific naming conventions. See [Assigning access by using wildcard policies](/docs/account?topic=account-wildcard) for more information. 
