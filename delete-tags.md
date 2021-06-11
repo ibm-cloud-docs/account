@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-06-11"
 
 keywords: tags, delete tags, unused tags, delete tags in  the console, delete  tags cli, delete tags api
 
@@ -40,7 +40,7 @@ When you delete an access management tag from the account, any associated IAM po
 {: ui}
 
 1. To see the full list of tags in your account, go to **Manage** > **Account** in the {{site.data.keyword.cloud}} console, and select **Tags**.
-2. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) next to the unused tag and select **Delete**.
+2. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Delete** next to the unused tag.
 
 ## Deleting unused tags by using the CLI
 {: #delete-tag-cli}
