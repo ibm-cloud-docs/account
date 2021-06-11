@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2021
-lastupdated: "2021-03-04"
+lastupdated: "2021-06-11"
 
 keywords: API key, user API keys, IBM Cloud API keys, manage user keys, create API key
 
@@ -44,7 +44,7 @@ A functional ID is a user ID created to represent a program, application, or ser
 {: #manage-user-keys}
 {: ui}
 
-To manage the {{site.data.keyword.Bluemix_notm}} API keys that are associated with your user identity or the ones that you have access to manage for other users in the account, go to **Manage** &gt; **Access (IAM)** &gt; **API keys** in the console. On the API keys page, you can create, edit, or delete {{site.data.keyword.cloud_notm}} API keys for yourself, and you can manage all [classic infrastructure API keys](/docs/account?topic=account-classic_keys) for users that you are an ancestor of in the user hierarchy. In addition, if you are the account owner or a user assigned the required access to manage other user's API keys in the account, you can use the **View** filter to list and manage those API keys too.
+To manage the {{site.data.keyword.Bluemix_notm}} API keys that are associated with your user identity or the ones that you have access to manage for other users in the account, go to **Manage** > **Access (IAM)** > **API keys** in the console. On the API keys page, you can create, edit, or delete {{site.data.keyword.cloud_notm}} API keys for yourself, and you can manage all [classic infrastructure API keys](/docs/account?topic=account-classic_keys) for users that you are an ancestor of in the user hierarchy. In addition, if you are the account owner or a user assigned the required access to manage other user's API keys in the account, you can use the **View** filter to list and manage those API keys too.
 
 | Filter Options                                     | Displayed API Keys                                         | Required Access                            | Allowed Actions            |
 |----------------------------------------------------|------------------------------------------------------------|--------------------------------------------|----------------------------|
@@ -62,7 +62,7 @@ As an {{site.data.keyword.Bluemix_notm}} user you might want to use an API key w
 
 To create an API key for your user identity in the UI, complete the following steps:
 
-1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** &gt; **Access (IAM)** &gt; **API keys**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **API keys**.
 2. Click **Create an {{site.data.keyword.Bluemix_notm}} API key**.
 3. Enter a name and description for your API key.
 4. Click **Create**.
@@ -172,8 +172,8 @@ If you want to change the name or the description of an API key, complete the fo
 
 To edit an API key, complete the following steps:
 
-1. In the console, go to **Manage** &gt; **Access (IAM)** &gt; **API keys**.
-2. Identify the row of the API key that you want to update, and select **Edit** from the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu.
+1. In the console, go to **Manage** > **Access (IAM)** > **API keys**.
+2. Identify the row of the API key that you want to update, and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit**.
 3. Update the information for your API key.
 4. Click **Apply**.
 
@@ -269,16 +269,16 @@ fmt.Println(string(b))
 ## Locking an API key
 {: #lock_user_key}
 
-For platform API keys that represent your user identity you can prevent the API key from being deleted by locking it. A locked API key is indicated by the ![Locked icon](images/locked.svg "Locked") icon. 
+For platform API keys that represent your user identity you can prevent the API key from being deleted by locking it. A locked API key is indicated by the **Locked** icon ![Locked icon](images/locked.svg "Locked"). 
 
 ### Locking and unlocking an API key from the UI
 {: #lockui}
 {: ui}
 
-1. In the console, go to **Manage** &gt; **Access (IAM)** &gt; **API keys**.
-2. Identify the row of the API key that you want to lock, and select **Lock** from the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu.
+1. In the console, go to **Manage** > **Access (IAM)** > **API keys**.
+2. Identify the row of the API key that you want to lock, and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Lock**.
 
-You can unlock your API key at any time to update or remove the API key from your account. Select the API key from the table that you want to unlock and select **Unlock** from the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu.
+You can unlock your API key at any time to update or remove the API key from your account. Select the API key from the table that you want to unlock and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Unlock**.
 {: tip}
 
 ### Locking and unlocking an API key by using the CLI
@@ -470,7 +470,7 @@ If you are using a key rotation strategy, you might want to delete an older key 
 
 To delete an API key, complete the following steps:
 
-1. In the console, go to **Manage** &gt; **Access (IAM)** &gt; **API keys**.
+1. In the console, go to **Manage** > **Access (IAM)** > **API keys**.
 2. Identify the row of the API key that you want to delete, and select **Delete** from the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu.
 3. Then, confirm the deletion by clicking **Delete**.
 
