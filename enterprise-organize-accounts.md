@@ -170,7 +170,7 @@ To move an account, you need the Administrator role on the Billing service in th
 {: ui}
 
 1. From the Enterprise dashboard in the console, click **Accounts**.
-1. In the Accounts section, click the Actions icon ![Actions icon](../icons/actions-icon-vertical.svg "Actions") in the row for the account, and select **Move account**.
+1. In the Accounts section, click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg "Actions") in the row for the account, and select **Move account**.
 1. Select the new parent for the account, and click **Save**.
 
 ### Moving an account by using the CLI
