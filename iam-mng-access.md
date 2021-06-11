@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-04-13"
+lastupdated: "2021-06-11"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access 
 
@@ -58,7 +58,7 @@ If you want to enable a user full administrator access to complete [account mana
 To assign access to an individual resource in the account or access to all resources in the account, complete the following steps:
 
 1. In the console, click **Manage** > **Access (IAM)**, and select **Users** or **Manage** > **Access (IAM)**, and select **Service IDs**, depending on which identity you want to assign access.
-2. From the row for the user or service ID that you want to assign access, select the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu > **Assign access**.
+2. From the row for the user or service ID that you want to assign access, click the **Actions** icon ![List of actions icon](../icons/action-menu-icon.svg) > **Assign access**.
 3. Add the user or service ID to an access group. Click **Add** for the access group that you want the user or service ID to belong to.
 4. (Optional) Manually assign users access.
   1. Expand the Assign additional access section, and click **IAM services**.
@@ -317,7 +317,7 @@ fmt.Println(string(b))
 To assign access to all resources in a resource group or to just one service within a resource group, complete the following steps:
 
 1. In the console, click **Manage** > **Access (IAM)**, and select **Users** or **Manage** > **Access (IAM)**, and select **Service IDs**, depending on which identity you want to assign access.
-2. From the row for the user or service ID that you want to assign access, select the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, and click **Assign access**.
+2. From the row for the user or service ID that you want to assign access, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Assign access**.
 3. Add the user or service ID to an access group. Click **Add** for the access group that you want the user or service ID to belong to.
 4. (Optional) Manually assign additional access.
   1. Expand the Assign additional access section, and click **IAM services**.
@@ -356,7 +356,7 @@ Removing access for a user or service ID can take up to 10 minutes to take effec
 
 1. In the console, click **Manage** > **Access (IAM)**, and select **Users** or **Manage** > **Access (IAM)**, and select **Service IDs**, depending on which identity you want to assign access.
 2. Select the user's name or service ID that you want to remove access for.
-3. From the **Access policies** tab, select the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu on the row for the policy you want to remove, and click **Remove**.  
+3. From the **Access policies** tab, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Remove** on the row for the policy you want to remove.
 4. Review the policy details that you're about to remove, and confirm by clicking **Remove**.
 
 You can also remove users and service IDs from access groups by selecting the checkbox for the user or service ID that you want to remove, and click **Remove**. Then, click **Remove** again to approve the process. 
