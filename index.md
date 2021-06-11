@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-03-16"
+lastupdated: "2021-06-11"
 
 keywords: account types, Lite, free account, trial account, paid account, buy account, account difference, compare account, subscription, Pay As You Go with Committed Use, PayGo with Commit
 
@@ -53,7 +53,7 @@ The following table provides a comparison of Lite, Pay-As-You-Go, and Subscripti
 ## Lite account
 {: #liteaccount}
 
-Sign up for a Lite account to start building your apps and exploring services with select free Lite plans, which are displayed with a Lite tag ![Lite tag](../icons/Lite.svg) in the {{site.data.keyword.Bluemix_notm}} console. Your Lite account doesn't expire and your credit card isn't required.
+Sign up for a Lite account to start building your apps and exploring services with select free Lite plans, which are displayed with a **Lite** tag ![Lite tag](../icons/Lite.svg "Lite") in the {{site.data.keyword.Bluemix_notm}} console. Your Lite account doesn't expire and your credit card isn't required.
 
 You have access to a single resource group that's created for you and named `Default`. All of your service's instances that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) are automatically added to this resource group. You can update the name of this resource group at any time. See [Renaming a resource group](/docs/account?topic=account-rgs#rename_rgs) for the detailed steps.
 
