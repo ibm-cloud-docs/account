@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-04-16"
+lastupdated: "2021-06-11"
 
 keywords: authorizations, service to service access, access between services, dependent service, source service, target service, assigned access, access policies
 
@@ -49,7 +49,7 @@ The source service's dependent services might be in the source service's account
 
 You must have access to the target service to create an authorization between services. You can grant only the level of access that you have as a user of the target service. For example, if you have viewer access on the target service, you can assign only the viewer role for the authorization.
 
-1. In the {{site.data.keyword.Bluemix_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Authorizations**.
+1. In the {{site.data.keyword.Bluemix_notm}} console, click **Manage** > **Access (IAM)**, and select **Authorizations**.
 2. Click **Create**.
 3. Select a source service and specify whether you want the authorization to be for all instances or only a specific instance in the account or instances only in a certain resource group. 
 4. Select a target service and specify whether you want the authorization to be for all instances or only a specific instance in the account or instances only in a certain resource group.
@@ -418,7 +418,7 @@ You can remove any authorization between services in the account if you are assi
 
 1. In the console, click **Manage** &gt; **Access (IAM)**, and select **Authorizations**.
 2. Identify the row for the authorization that you want to remove from the account.
-3. From the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, select **Remove**.
+3. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Remove**.
 5. Select **Remove**.
 
 If the source service is removed from the account, any policies that are created by that service for its dependent services are deleted automatically. Similarly, if the dependent service is removed from the account, any access policies that are delegated to that service are also deleted.
