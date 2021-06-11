@@ -26,9 +26,9 @@ subcollection: account
 {{site.data.keyword.Bluemix_notm}} users can choose to receive email notifications about {{site.data.keyword.Bluemix_notm}} platform-related items, such as announcements, billing and usage, additional notification preferences, and ordering. Users can also update their preferences to receive email notifications about resource-related items, such as incidents, maintenance, security bulletins, or resource activity on the Notification preferences page. These notifications are for only the resources in use.
 {: shortdesc}
 
-To view the Notifications preferences page, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) in the {{site.data.keyword.Bluemix_notm}} console, and then click **Profile** > **Notification preferences**.
+To view the Notifications preferences page, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") in the {{site.data.keyword.Bluemix_notm}} console, and then click **Profile** > **Notification preferences**.
 
-You can also visit the page if you click the **Notifications** icon ![Notification icon](../icons/Notification.svg) in the {{site.data.keyword.Bluemix_notm}} console, and then click **Manage email preferences**.
+You can also visit the page if you click the **Notifications** icon ![Notification icon](../icons/Notification.svg "Notification") in the {{site.data.keyword.Bluemix_notm}} console, and then click **Manage email preferences**.
 
 If you set your email preferences but aren't receiving email notifications, make sure emails that are sent from `no_reply@cloud.ibm.com` aren't blocked or in your spam folder. See [Why am I not receiving email notifications?](/docs/account?topic=account-ts_email_notifications) for more information. 
 {: tip}
@@ -60,7 +60,7 @@ To quickly turn off emails for the selected account or for all other accounts, c
 
 You can set your preferences to receive resource-related notifications for incidents, maintenance, security bulletins, and resource activity updates.  
 
-1. In the console, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Profile**.
+1. In the console, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") &gt; **Profile**.
 2. Click **Notification preferences** > **Resource**.
 3. Select from the following options: 
   * Receive notifications about events that can cause an outage or restrict functionality. You can receive notifications for all incident severity levels (1, 2, 3, 4) or just a subset. 
