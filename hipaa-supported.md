@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-04-27"
+lastupdated: "2021-06-11"
 
 keywords: HIPAA, PHI, HITECH
 
@@ -37,7 +37,7 @@ Enable this setting only if you or your company is a covered entity as defined b
 
 Accounts that enable the HIPAA Supported setting still have access to the full catalog of services. {{site.data.keyword.Bluemix_notm}} services typically offer multiple plans. The HIPAA Enabled label on a service can apply to all available plans or be limited to specific plans or configurations. You as the client are solely responsible for limiting PHI to HIPAA Enabled product plans and architecting in accordance with HIPAA and HITECH.
 
-1. Go to **Manage > Account**, and select **Account setting** in the console.
+1. Go to **Manage** > **Account**, and select **Account setting** in the console.
 2. For the HIPAA Supported option, click **On**.
 3. Read the information about enabling this setting.
 
