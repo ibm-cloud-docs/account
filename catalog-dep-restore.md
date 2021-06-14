@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-03-17"
+lastupdated: "2021-06-14"
 
 keywords: deprecate software, restore software, catalog, catalogs, software, private catalog
 
@@ -48,7 +48,7 @@ When you deprecate a version, it is not displayed in the catalog for any user th
 1. Go **Manage** > **Catalogs** > **Private catalogs**, and select **My first catalog** from the list of private catalogs.
 1. Click **apache-two-instances**.
 1. From the **Version** list, select **2.4.39**. 
-1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg), and select **Deprecate**.
+1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg "Actions"), and select **Deprecate**.
 
 ### Validate the version is deprecated 
 {: #deprecate-validate-editor}
@@ -67,12 +67,12 @@ When you restore a deprecated version, you are required to validate and publish 
 1. Go to **Manage** > **Catalogs** > **Private catalogs**, and select **My first catalog**.
 1. Click **apache-two-instances**.
 1. Click the **Version** list, and select **2.4.39**. 
-1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg), and select **Restore**.
+1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg "Actions"), and select **Restore**.
 1. Confirm that you want to restore the deprecated version.
 1. Click the Validate offering tab.
 2. Select a cluster from the **Cluster** list, and select **apache-test-deployment** from the **Namespace** list.
 3. Click **Validate**.
-1. When the software is validated, click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg), and select **Merge changes**. 
+1. When the software is validated, click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg "Actions"), and select **Merge changes**. 
 
 ### Validate the version is restored
 {: #restore-validate-editor}
