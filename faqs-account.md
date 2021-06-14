@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-05-17"
+lastupdated: "2021-06-14"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite
 
@@ -61,7 +61,7 @@ To switch to a different payment method, select Pay with Other and then click Su
 
  Based on your account type, you might manage your credit card outside of the console. To manage your credit card outside of the console, complete the following steps: 
   1. Go to [ibm.com](http://www.ibm.com){: external} and log in with the same IBMid and password that you use to log in to {{site.data.keyword.Bluemix_notm}}.
-  1. Click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg), and select **Billing**.
+  1. Click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar"), and select **Billing**.
   1. Click **Manage payment method**.
   1. Enter your credit card information, and click **Register**.
 
@@ -147,7 +147,7 @@ In a Lite account, your apps have up to 256 MB of instantaneous runtime memory. 
 
 Reaching any quota limit for Lite plan instances suspends the service for that month. Quota limits are per org; not per instance. New instances that are created in the same org reflect any usage from previous instances. The quota limits reset on the first of every month.
 
-You can check your usage by going to **Manage > Billing and usage** in the console, and selecting **Usage**. For more information, see [Viewing your usage](/docs/billing-usage?topic=billing-usage-viewingusage).
+You can check your usage by going to **Manage** > **Billing and usage** in the console, and selecting **Usage**. For more information, see [Viewing your usage](/docs/billing-usage?topic=billing-usage-viewingusage).
 
 ## How many resource groups, orgs, or spaces can I create?
 {: #resourcelimit}
@@ -160,7 +160,7 @@ If you have a Pay-As-You-Go or Subscription account, there's no limit to the num
 {: #change-email-prefs}
 {: faq}
 
-Yes, you can update your email preferences for receiving notifications from the Email preferences page in the console. Click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) > **Profile** > **Email preferences**.
+Yes, you can update your email preferences for receiving notifications from the Email preferences page in the console. Click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Profile** > **Email preferences**.
 
 For more information, see [Setting email preferences](/docs/account?topic=account-email-prefs).
 
@@ -168,13 +168,13 @@ For more information, see [Setting email preferences](/docs/account?topic=accoun
 {: #reset-password}
 {: faq}
 
-To reset your account password, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) >  **Profile** in the console. Then, click **Edit** in the Account user information widget.
+To reset your account password, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Profile** in the console. Then, click **Edit** in the Account user information widget.
 
 To reset your VPN password, complete the following steps:
 
-  1. In the console, go to **Manage > Access (IAM)**, and select **Users**.
+  1. In the console, go to **Manage** > **Access (IAM)**, and select **Users**.
   2. Select the user.
-  3. From the VPN subnets section, click the Edit icon ![Edit icon](../icons/icon_write.svg) to enter a new VPN password.
+  3. From the VPN subnets section, click the **Edit** icon ![Edit icon](../icons/icon_write.svg "Edit") to enter a new VPN password.
   5. Click **Apply**.
 
 ## Can I remove my personal data from {{site.data.keyword.Bluemix_notm}}?
@@ -266,7 +266,7 @@ You can transfer ownership of your entire account, create a support case that re
 {: faq}
 {: support}
 
-You can change your personal information, such as name, email, or phone number, by going to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) **> Profile and settings** in the console. You can't change your IBMid, but you can create a new one if appropriate. The [IBMid worldwide help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html) is available to help with general ID questions that aren't specific to your {{site.data.keyword.Bluemix_notm}} account.
+You can change your personal information, such as name, email, or phone number, by going to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Profile and settings** in the console. You can't change your IBMid, but you can create a new one if appropriate. The [IBMid worldwide help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html) is available to help with general ID questions that aren't specific to your {{site.data.keyword.Bluemix_notm}} account.
 
 ## Can I change my account language?
 {: #switch-account-lang}
@@ -341,7 +341,7 @@ You can view the role that you are assigned on a dashboard by going to **Manage*
 {: #access-dashboard}
 {: faq}
 
-You can't edit the default dashboard directly. However, you can create a duplicate version of it that you can edit and personalize however you want by clicking the Actions icon ![Action icon](../icons/action-menu-icon.svg) > **Edit** in {{site.data.keyword.Bluemix_notm}} console. 
+You can't edit the default dashboard directly. However, you can create a duplicate version of it that you can edit and personalize however you want by clicking the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions") > **Edit** in {{site.data.keyword.Bluemix_notm}} console. 
 
 By maintaining the original version of the default dashboard, you can discover the latest widgets and functionalities, which get built and added over time. This way, you can always bring out the most of your workflow.
 
