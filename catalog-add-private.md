@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-06-07"
+lastupdated: "2021-06-14"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -108,7 +108,7 @@ After you add your product to your catalog, you're ready to publish it to your a
 1. Select **Validate product**. 
 1. Select a cluster. 
 1. Click **Validate** to ensure that your product can be installed successfully. This step is required before you can make it available for users in your account, and the validation can take several minutes. In the Validation summary section, the status is displayed as Validated when the deployment is complete. 
-1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg), and select **Publish to account** to make your product available to all users in your account through your private catalog.
+1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg "Actions"), and select **Publish to account** to make your product available to all users in your account through your private catalog.
 
 
 ## Adding a product to your catalog by using the CLI
