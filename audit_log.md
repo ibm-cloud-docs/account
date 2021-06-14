@@ -562,6 +562,7 @@ This example deals with a few ways of pulling data from [SoftLayer_Event_Log](ht
 {: java}
 
 This example deals with a few ways of pulling data from `SoftLayer_Event_Log`. There can be many Logs, so by using a filter, like the `getRecentLogs` function, you can limit how far back you search for Events. This example uses the `maxNumberOfEvents` value to limit the number of event logs that that are retrieved.
+{: go}
 
 For more information about the {{site.data.keyword.slapi_short}} and virtual server APIs, see the following resources in the {{site.data.keyword.sldn_full}}:
 * [{{site.data.keyword.slapi_short}} Overview ![External link icon](../icons/launch-glyph.svg "External link icon")](https://sldn.softlayer.com/reference/softlayerapi/){: new_window}
