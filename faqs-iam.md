@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2021
 
-lastupdated: "2021-05-12"
+lastupdated: "2021-06-14"
 
 keywords: frequently asked questions for iam, iam faq, iam questions, identity and access management questions
 
@@ -70,7 +70,7 @@ The access management systems are entirely different. IAM resources belong to a 
 {: faq}
 {: support}
 
-In the {{site.data.keyword.cloud_notm}} console, go to **Manage** &gt; **Access (IAM)**, and select your name on the Users page. Then, depending on the access you're looking for, open the different tabs:
+In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select your name on the Users page. Then, depending on the access you're looking for, open the different tabs:
 
 * To determine what access you have through the access groups you are assigned, select **Access groups**.
 * To see IAM access policies that are assigned to you, select the **Access policies**.
@@ -98,7 +98,7 @@ In the console, go to **Manage** > **Access (IAM)**, and select **Users**. Then,
 {: #iam-api-keys}
 {: faq}
 
-In the console, go to **Manage > Access (IAM) > API keys** to view and manage API keys that you have access to.
+In the console, go to **Manage** > **Access (IAM)** > **API keys** to view and manage API keys that you have access to.
 
 * For information about how to manage {{site.data.keyword.cloud_notm}} API keys that are associated with user identities, see [Managing user API keys](/docs/account?topic=account-userapikey).  
 * For information about how to manage API keys that are associated with a service ID, see [Managing service ID API keys](/docs/account?topic=account-serviceidapikeys).
@@ -108,7 +108,7 @@ In the console, go to **Manage > Access (IAM) > API keys** to view and manage AP
 {: #service-credentials}
 {: faq}
 
-To view an existing service credential for a service, go to your resource list by clicking the **Menu icon  ![Menu icon](../icons/icon_hamburger.svg)** > **Resource list**, then select the name of the service to open its details. Click **Service credentials** to view the details.
+To view an existing service credential for a service, go to your resource list by clicking the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list**, then select the name of the service to open its details. Click **Service credentials** to view the details.
 
   To save a copy of the service credentials, most services provide a download option or the option to copy to your clipboard.
   {: note}
@@ -191,7 +191,7 @@ The account owner can remove any users from the account, and any user with the f
 {: faq}
 {: support}
 
-1. In the console, go to **Manage** &gt; **Access (IAM)**, and select **Settings**.
+1. In the console, go to **Manage** > **Access (IAM)**, and select **Settings**.
 2. From the Account login section, select **Update** to select MFA for all users or non-federated users only.
 
 For more information, see [Requiring MFA for users in your account](/docs/account?topic=account-enablemfa).
@@ -219,7 +219,7 @@ Access control and account resource organization are the major differences betwe
 {: faq}
 {: support}
 
-To assign a user in your account full administrator access, go to **Manage > Access (IAM)** in the console, select the user's name, and assign the following access:
+To assign a user in your account full administrator access, go to **Manage** > **Access (IAM)** in the console, select the user's name, and assign the following access:
 
 * An IAM policy with Administrator and Manager roles on All Identity and Access enabled services, which enables a user to create service instances and assign users access to all resources in the account.
 * An IAM policy with Administrator role on All account management services, which enables a user to complete tasks like inviting and removing users, managing access groups, managing service IDs, managing private catalog offerings, and track billing and usage.
