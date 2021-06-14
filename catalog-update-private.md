@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-03-17"
+lastupdated: "2021-06-14"
 
 keywords: catalog, private catalog, update, private catalog product, update version, versions
 
@@ -44,12 +44,12 @@ The following steps walk through an example of making updates to a product's rea
 1. Go to **Manage** > **Catalogs** > **Private catalogs**, and select your catalog from the list. 
 1. Click the name of your software product.
 1. Select **Private products** to navigate to the list of products that are in your private catalog. 
-1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg), and select **Edit**.  
+1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg "Actions"), and select **Edit**.  
 1. Click the Edit readme tab.
-1. Click the **Edit** icon ![Edit icon](../icons/icon_write.svg), add a new line of text to the Introduction section, and click **Update**.
+1. Click the **Edit** icon ![Edit icon](../icons/icon_write.svg "Edit"), add a new line of text to the Introduction section, and click **Update**.
 
 
-1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg), and select **Merge changes** to publish the updated version to your account.
+1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg "Actions"), and select **Merge changes** to publish the updated version to your account.
 
 ## Update an existing version by using the CLI
 {: #update-version-cli}
