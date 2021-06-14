@@ -2,13 +2,14 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-02-25"
+lastupdated: "2021-06-14"
 
 keywords: troubleshoot account, account problem, create new organization, new  org, create org
 
 subcollection: account
 
 content-type: troubleshoot
+
 ---
 
 {:tsSymptoms: .tsSymptoms}
@@ -26,7 +27,7 @@ content-type: troubleshoot
 {: troubleshoot}
 
 You try to create more than one org, and you have a Lite account.
-{: shortdesc}  
+{: shortdesc}
 
 You receive an error message when you try to create a new organization.
 {: tsSymptoms}
@@ -34,5 +35,5 @@ You receive an error message when you try to create a new organization.
 You're likely seeing this error because you're using a Lite account, which supports development in one organization only. For more information about Lite account features, see [Lite account](/docs/account?topic=account-accounts#liteaccount).
 {: tsCauses}
 
-To create a new org, upgrade to a billable account. In the {{site.data.keyword.Bluemix}} console, go to **Manage > Billing and usage**, and select **Payments**.
+To create a new org, upgrade to a billable account. In the {{site.data.keyword.Bluemix}} console, go to **Manage** > **Billing and usage**, and select **Payments**.
 {: tsResolve}
