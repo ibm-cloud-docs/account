@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021 
-lastupdated: "2021-05-03"
+lastupdated: "2021-06-14"
 
 keywords: dashboard, widgets display, manage visibility, customize, console, dashboard templates 
 
@@ -21,7 +21,7 @@ If you don't want to view a dashboard, you can remove the dashboard from your li
 You can only remove a dashboard that was shared with you. After a dashboard is removed, a user with access to that dashboard must share the dashboard link with you if you'd like to view that dashboard again.
 
 1. In the {{site.data.keyword.Bluemix_notm}} console go to **Manage** > **Account**, and select **Account resources** > **Dashboards**.
-2. Click the Actions icon ![Action icon](../icons/action-menu-icon.svg), and select **Remove**. 
+2. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions"), and select **Remove**. 
 
 ## Deleting a dashboard
 {: #dash-delete}
@@ -29,5 +29,5 @@ You can only remove a dashboard that was shared with you. After a dashboard is r
 Only the dashoard owner can delete a dashboard for all users.
 
 To delete a dashboard: 
-1. Expand the Actions icon ![Action icon](../icons/action-menu-icon.svg), and select **Delete**.
+1. Expand the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions"), and select **Delete**.
 2. Click **Delete**. 
