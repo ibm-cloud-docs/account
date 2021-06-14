@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021 
-lastupdated: "2021-05-03"
+lastupdated: "2021-06-14"
 
 keywords: dashboard, widgets display, manage visibility, customize, console, dashboard templates 
 
@@ -31,7 +31,7 @@ Aside from being able to view dashboards, users can view resource details that a
 
 To begin creating a dashboard, complete the following steps:  
 
-1. In the {{site.data.keyword.cloud_notm}} console, click the Actions icon ![Action icon](../icons/action-menu-icon.svg), and select **Create a dashboard**. 
+1. In the {{site.data.keyword.cloud_notm}} console, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions"), and select **Create a dashboard**. 
 2. Select a template from the available options, and then click **Next**. 
   * Blank: Create a dashboard from scratch by adding widgets that align with your workflow.
   * Default: The default template offers a broad coverage of development, management, and infrastructure widgets.
@@ -50,7 +50,7 @@ Any dashboard that is shared with you appears on your dashboards page.
 ### Managing your dashbaord
 {: dash-manage}
 
-After you create a dashboard, you can manage your dashboard by in the {{site.data.keyword.Bluemix_notm}} console by going to **Manage** > **Account**, and selecting **Account resources** > **Dashboards**. Or, from your dashboard click the Actions icon ![Action icon](../icons/action-menu-icon.svg ) > **Manage my dashboards**.
+After you create a dashboard, you can manage your dashboard by in the {{site.data.keyword.Bluemix_notm}} console by going to **Manage** > **Account**, and selecting **Account resources** > **Dashboards**. Or, from your dashboard click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Manage my dashboards**.
 
 ## Sharing a dashboard
 {: #share-dash}
@@ -59,5 +59,5 @@ You can share dashboards with users in your account to give them access to view 
 
 To share a dashboard, complete the following steps:
 
-1. Click the Actions icon ![Action icon](../icons/action-menu-icon.svg). 
+1. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions"). 
 1. Select **Share**. After you share it with a user and they click the link, the dashboard is added to their account. 
