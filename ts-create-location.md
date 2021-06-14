@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2020
-lastupdated: "2020-04-06"
+  years: 2015, 2021
+lastupdated: "2021-06-14"
 
 keywords: troubleshoot account, account problem, IBM location, IBM Cloud location, create location
 
@@ -34,7 +34,7 @@ You receive an error message when you try to create a new {{site.data.keyword.Bl
 This error typically occurs because you're using a Lite account, which supports development in one public location only. For more information about Lite account features, see [Lite account](/docs/account?topic=account-accounts#liteaccount).
 {: tsCauses}
 
-To access more locations, upgrade to a billable account. Go to **Manage > Account** in the {{site.data.keyword.Bluemix_notm}} console, and select **Account settings**. In the Account upgrade section, select your upgrade option.
+To access more locations, upgrade to a billable account. Go to **Manage** > **Account** in the {{site.data.keyword.Bluemix_notm}} console, and select **Account settings**. In the Account upgrade section, select your upgrade option.
 {: tsResolve}
 
 To view information about using a different region for a service within the account, see [Cloud Foundry Regions and endpoints](/docs/cloud-foundry-public?topic=cloud-foundry-public-endpoints) or refer to [Using service endpoints](/docs/account?topic=account-vrf-service-endpoint#use-service-endpoint) for global or regional endpoints for a particular service offering.
