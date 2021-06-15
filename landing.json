@@ -1,6 +1,6 @@
 {
     "title": "Managing your account, resources, and access docs",
-    "lastupdated": "2021-05-14",
+    "lastupdated": "2021-05-15",
     "introduction": "Leverage the interacting components and systems in your account for resource, user, and access management. Get started by setting up your IBM cloud account, learn about setting up an enterprise, or explore assigning access to resources quickly with IBM Cloud Identity and Access Management (IAM).",
     "section_devtools": {
       "api": "/docs?tab=api-docs&subCategory=account&category=platform_services", 
@@ -61,6 +61,11 @@
       "view_more": "/docs/overview?topic=overview-whatsnew",
       "tiles": [
         {
+          "date": "01 June 2021",
+          "title": "New invitation flow for existing IBM Cloud users",
+          "description": "From June 1, 2021, to enhance security and user protection, IBM Cloud requires all users to accept an invitation in order to become an active user within a new account. Concerned about how this change impacts your automation? To avoid any disruption to on-going workflows, you need to check your scripts."
+        },
+        {
           "date": "21 April 2021",
           "title": "Delivering notifications by using webhooks",
           "description": "You can now easily add webhooks to the notification distribution list in addition to adding email addresses. You can register a webhook with your account on the Notification distribution list page to receive all account notifications. Administrators can use webhooks to configure an application to receive asynchronous notifications whenever an event occurs on the IBM Cloud platform. Any registered webhook must support HTTP POST requests and accept the notification as a JSON."
@@ -69,11 +74,6 @@
           "date": "19 April 2021",
           "title": "Upcoming changes to the user invitation flow",
           "description": "To enhance security and user protection, IBM Cloud® will require all users to accept an invitation in order to become an active user within a new account. The new invitation flow will have an impact only on inviting existing IBM Cloud® users. Existing users are currently being automatically onboarded to each new account as they are invited. After this change, these users will need to accept an invitation in their notifications, by email, or by using the CLI to onboard to a new account."
-        },
-        {
-          "date": "26 February 2021",
-          "title": "Managing user login sessions",
-          "description": "You can customize the duration of working sessions for user's on your account. Customize the duration of users active settings and select the amount of time a user can be inactive before they are signed out and need to enter their credentials again. Update your accounts Identity and Access (IAM) log in sessions from the Settings page."
         }
       ]
     }
