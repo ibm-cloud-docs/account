@@ -2,7 +2,7 @@
 
 copyright:
    years: 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-06-15"
 
 keywords: dashboard, custom dashboard
 
@@ -54,9 +54,30 @@ First, create a new dashboard and select a template.
 7. Click **Save dashboard**. 
 
 ### Watch and learn
-The following video shows you the steps to create a custom dashboard: 
-![Create a custom dashboard in {{site.data.keyword.Bluemix_notm}}.](images/scope-dash-tutorial.mp4){: video width="800" height="450" controls loop}
+{: dash-tutorial-video}
+The following video shows you the steps to create a custom dashboard: ![Create a custom dashboard in {{site.data.keyword.Bluemix_notm}}.](images/scope-dash-tutorial.mp4){: video data-script="#video-transcript-dash-tutorial" width="800" height="450" controls loop}
 
+#### Video transcript
+{: #video-transcript-dash-tutorial}
+{: notoc}
+
+First, create a new dashboard and select a template. 
+
+Then, in the {{site.data.keyword.cloud_notm}} console, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions"), and select **Create a dashboard**. 
+
+Next, select the Management template from the available options, and then click **Next**. 
+  
+Enter your dashboard title in 30 characters or less. 
+
+Next, use the Dashboard settings panel to add relevant widgets to your dashboard. To add widgets, drag the widgets onto your dashboard. Add the **Notes** widget to your dashboard. This widget is where Cora can provide essential information that's custom for the team that she shares the dashboard with. 
+
+Click the **Scope** tab to select from the available resources in the account that you have access to. The scope determines the data that populates for the selected resources. You can filter the resource by group, tag, and location. Cora wants to select only resources that are related to AI and machine learning, so she filters by the resource group that exists for her team's chatbot project. 
+
+Note that not all widgets can be scoped. If a widget can't be scoped, the data for all resources is displayed. 
+
+Reorganize the layout to fit your needs. Cora moves Notes to the first row, next to Resource summary. In the next row, she includes the Usage, User access, and {{site.data.keyword.cloud_notm}} status widgets.  
+
+Click **Save dashboard**.
 ## Share a dashboard with teammates
 {: #tutorial-dash-share}
 {: step}
