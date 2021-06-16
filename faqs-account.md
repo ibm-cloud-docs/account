@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-06-14"
+lastupdated: "2021-06-15"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite
 
@@ -65,7 +65,8 @@ To switch to a different payment method, select Pay with Other and then click Su
   1. Click **Manage payment method**.
   1. Enter your credit card information, and click **Register**.
 
-If your credit card requires a MasterCard SecureCode that is sent to a mobile phone, you might see an unexpected error message after you submit the code. Refresh the manage my wallet page to verify that your new credit card information is saved.  {: note}
+If your credit card requires a MasterCard SecureCode that is sent to a mobile phone, you might see an unexpected error message after you submit the code. Refresh the manage my wallet page to verify that your new credit card information is saved. 
+{: note}
 
 ## How do I upgrade my account?
 {: #changeacct}
@@ -80,7 +81,7 @@ See [Upgrading your account](/docs/account?topic=account-upgrading-account) for 
 {: #nochange}
 {: faq}
 
-Yes, when you upgrade to a Pay-As-You-Go or Subscription account, you can continue to use the instances you created with your Lite account.
+Yes, when you upgrade to a Pay-As-You-Go or Subscription account, you can continue to use the instances that you created with your Lite account.
 
 ## Can I convert my account?
 {: #convertacct}
@@ -90,13 +91,23 @@ Yes, when you upgrade to a Pay-As-You-Go or Subscription account, you can contin
 Yes, the following options are available depending on your account type:
 
 * You can convert your trial account to a Lite account by providing the email address that's associated with your IBMid in the [Upgrade Tool](https://{DomainName}/registration/startUpgradeToLite){: external}.
-   The risk of data or function loss is possible when you convert your trial account to a Lite account. Some specific data or function allocations in your trial account might not be available for a Lite account. Any loss of data or function can't be recovered after the conversion process is complete. You can't convert your trial account to a Lite account if you have multiple organizations in your account. You must register for a new account using a different email address.
+   The risk of data or function loss is possible when you convert your trial account to a Lite account. Some specific data or function allocations in your trial account might not be available for a Lite account. Any loss of data or function can't be recovered after the conversion process is complete. You can't convert your trial account to a Lite account if you have multiple organizations in your account. You must register for a new account by using a different email address.
    {: note}
 * If you have a feature code from an online course or educational event, you can use it to convert your Lite account to a trial account. Go to the [Account settings](https://{DomainName}/account/settings){: external} page in the console to apply the code to your account.
 * To convert your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://{DomainName}/catalog?contactmodule){: external}. 
 
+## Can I convert my Pay-As-You-Go account to a Lite or trial account?
+{: #convertpayg-litetrial}
+{: faq}
+
 If you upgrade your trial account to a Pay-As-You-Go account by entering a credit card, it can't be converted back to a trial account or converted to a Lite account.
 
+## Can I add an educational promotional code to an account after I have added a credit card?
+{: #convert-education}
+{: faq}
+
+When you add a credit card to your trial account, your account is upgraded to a Pay-As-You-Go account. Educational promotional codes can't be used in a Pay-As-You-Go account. In addition, a Pay-As-You-Go account can't be converted back to a trial account. For more information about educational trial accounts, see the [IBM Academic Initiative
+ FAQs](https://www.ibm.com/academic/faqs/faqs){: external}. 
 
 ## Can I sign up for a free trial?
 {: #freetrial}
@@ -111,7 +122,7 @@ If you upgrade your trial account to a Pay-As-You-Go account by entering a credi
 
 We're sad to see you go! If there's any way we can assist you before you decide to cancel your account, [reach out to us](https://{DomainName}/unifiedsupport/supportcenter){: external}.
 
-* To cancel a Pay-As-You-Go or Subscription account, contact us through [live chat](https://{DomainName}/unifiedsupport/supportcenter) or by calling 1-866-325-0045 and selecting the third option. Or, you can open a support case. After your Pay-As-You-Go account has been canceled, all usage is stopped across all services running in your account, and the usage that is accrued in the current billing period is sent in one final invoice at the close of the billing period. 
+* To cancel a Pay-As-You-Go or Subscription account, contact [Support](https://{DomainName}/unifiedsupport/supportcenter). A support case is required for account security and documentation purposes. After your Pay-As-You-Go account has been canceled, all usage is stopped across all services running in your account, and the usage that is accrued in the current billing period is sent in one final invoice at the close of the billing period. 
 * To cancel a Lite account, go to the [Account settings](https://{DomainName}/account/settings) page, and click **Deactivate account**.
 
 ## Can I delete my account?
@@ -190,9 +201,9 @@ To understand how {{site.data.keyword.IBM_notm}} handles your personal informati
 
 Your account might be deactivated for the following reasons:
 
-- For trial accounts, the trial period ended. To reactivate your account, log in to your account and upgrade it to a Pay-As-You-Go account. 
-- An authorized user canceled the account.
-- The account is suspended. At the discretion of {{site.data.keyword.IBM_notm}}, accounts that violate the acceptable usage behavior of the {{site.data.keyword.Bluemix_notm}} services can be disabled without notice. Some services can be restored if users correct their usage behaviors after they're notified of the offensive action.
+* For trial accounts, the trial period ended. To reactivate your account, log in to your account and upgrade it to a Pay-As-You-Go account. 
+* An authorized user canceled the account.
+* The account is suspended. At the discretion of {{site.data.keyword.IBM_notm}}, accounts that violate the acceptable usage behavior of the {{site.data.keyword.Bluemix_notm}} services can be disabled without notice. Some services can be restored if users correct their usage behaviors after they're notified of the offensive action. For more information, see [Acceptable Internet use policy for IBM services](https://www.ibm.com/services/us/imc/html/aup1.html){: external}.
 
 If you believe that your account was deactivated in error, contact support by calling 1-866-325-0045 and selecting the third option.
 
@@ -212,7 +223,7 @@ The {{site.data.keyword.cloud_notm}} console menu bar lists all of the accounts 
 
 ![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-faq.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.")
 
-You can view your role in each account on the [Users page](https://{DomainName}/iam/users). The 'owner' tag next to a user name indicates the account owner. If you are the owner of the account, the 'self' tag is also listed next to your name. If you only see your name that is listed and you are not the account owner, the account owner has restricted the user list. For more information, see [Controlling user visibility](/docs/account?topic=account-iam-user-setting).Contact [{{site.data.keyword.Bluemix_notm}} Support](https://{DomainName}/unifiedsupport/supportcenter){: external} to determine the account owner. 
+You can view your role in each account on the [Users page](https://{DomainName}/iam/users). The 'owner' tag next to a user name indicates the account owner. If you are the owner of the account, the 'self' tag is also listed next to your name. If you only see your name that is listed and you are not the account owner, the account owner has restricted the user list. For more information, see [Controlling user visibility](/docs/account?topic=account-iam-user-setting). Contact [{{site.data.keyword.Bluemix_notm}} Support](https://{DomainName}/unifiedsupport/supportcenter){: external} to determine the account owner. 
 
 You can also find your accounts from the CLI by running the `ibmcloud account list` command. This command lists the account that you own and any other accounts that are affiliated with your IBMid. 
 
@@ -341,7 +352,7 @@ You can view the role that you are assigned on a dashboard by going to **Manage*
 {: #access-dashboard}
 {: faq}
 
-You can't edit the default dashboard directly. However, you can create a duplicate version of it that you can edit and personalize however you want by clicking the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions") > **Edit** in {{site.data.keyword.Bluemix_notm}} console. 
+You can't edit the default dashboard directly. However, you can create a duplicate version of it that you can edit and personalize however you want by clicking the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** in {{site.data.keyword.Bluemix_notm}} console. 
 
 By maintaining the original version of the default dashboard, you can discover the latest widgets and functionalities, which get built and added over time. This way, you can always bring out the most of your workflow.
 
