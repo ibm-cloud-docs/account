@@ -94,6 +94,14 @@ The account owner can update your access to any resource in the account, or you 
 
 In the console, go to **Manage** > **Access (IAM)**, and select **Users**. Then, select your name or another user's name from the list. You can find the IAM ID for that user along with their email address on the User details page.
 
+## How do I identify platform management roles and service access roles for a user? 
+{: #iam-role}
+{: faq}
+
+1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Access (IAM)**, and then select **Users**.
+2. Select your name or another user's name from the list. 
+3. Click **Access policies** to view the permissions that are associated with the user.
+
 The `owner` tag is listed for the owner of the account. This user is assigned the administrator role on the service or service instance.  
 {: note} 
 
