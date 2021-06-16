@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2021
 
-lastupdated: "2021-06-14"
+lastupdated: "2021-06-16"
 
 keywords: frequently asked questions for iam, iam faq, iam questions, identity and access management questions
 
@@ -93,6 +93,9 @@ The account owner can update your access to any resource in the account, or you 
 {: faq}
 
 In the console, go to **Manage** > **Access (IAM)**, and select **Users**. Then, select your name or another user's name from the list. You can find the IAM ID for that user along with their email address on the User details page.
+
+The `owner` tag is listed for the owner of the account. This user is assigned the administrator role on the service or service instance.  
+{: note} 
 
 ## How do I find and manage API Keys for a user or myself?
 {: #iam-api-keys}
