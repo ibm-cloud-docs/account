@@ -2,7 +2,7 @@
 
 copyright:
    years: 2021
-lastupdated: "2021-06-16"
+lastupdated: "2021-06-17"
 
 keywords: dashboard, custom dashboard
 
@@ -55,7 +55,7 @@ First, create a new dashboard and select a template.
 
 ### Watch and learn
 {: dash-tutorial-video}
-The following video provides a demo of the process detailed in Step 1. [Create a dashboard](docs/account?topic=account-tutorial-custom-dash#tutorial-dash-new): ![Create a custom dashboard in {{site.data.keyword.Bluemix_notm}}.](images/scope-dash-tutorial.mp4){: video data-script="#video-transcript-dash-tutorial" width="800" height="450" controls loop}
+The following video provides a demo of the process detailed in the previous step: ![Create a custom dashboard in {{site.data.keyword.Bluemix_notm}}.](images/scope-dash-tutorial.mp4){: video width="800" height="450" controls loop}
 
 ## Share a dashboard with teammates
 {: #tutorial-dash-share}
