@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-06-16"
+lastupdated: "2021-06-17"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -993,7 +993,6 @@ Review the available platform and service roles available and the actions mapped
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-| Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
 {: caption="Table 21. Platform roles - DataStage" caption-side="top"}
 {: #platform-roles-table21}
@@ -1004,7 +1003,7 @@ Review the available platform and service roles available and the actions mapped
 
 | Role | Description |
 | ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 {: row-headers}
 {: caption="Table 21. Service roles - DataStage" caption-side="top"}
 {: #service-roles-table21}
@@ -1015,7 +1014,7 @@ Review the available platform and service roles available and the actions mapped
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `datastage.dashboard.view` |  | Administrator, Editor, Operator |
+| `datastage.dashboard.view` | DataStage dashboard view | Administrator, Editor, Operator, Reader |
 {: caption="Table 21. Service actions - DataStage" caption-side="top"}
 {: #actions-table21}
 {: tab-title="Actions"}
