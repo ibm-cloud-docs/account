@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2020
+  years: 2017, 2021
 
-lastupdated: "2020-09-23"
+lastupdated: "2021-06-18"
 
 keywords: what is IAM, IAM features, IAM API, how IAM works
 
@@ -167,7 +167,7 @@ A service ID identifies a service or application similar to how a user ID identi
 ### Multifactor authentication
 {: #mfa-feature}
 
-You can require multifactor authentication (MFA) for every user in the account or just users with non-federated IDs who do not use SSO. All users with an IBMid use a time-based one-time passcode (TOTP) MFA method, and any users with a different type of ID must be enabled to use the TOTP, security questions, or external authentication method separately. For more information, see [Types of multifactor authentication](/docs/account?topic=account-types).
+You can require multifactor authentication (MFA) for every user in the account or just users with non-federated IDs who do not use SSO. All users with an IBMid use a time-based one-time passcode (TOTP) MFA factor, and any users with a different type of ID must be enabled to use the TOTP, security questions, or external authentication factor separately. For more information, see [Types of multifactor authentication](/docs/account?topic=account-types).
 
 ### Service to service authorizations
 {: #service-authorizations-feature}
