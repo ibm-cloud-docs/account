@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2021
-lastupdated: "2021-05-27"
+lastupdated: "2021-06-18"
 
 keywords: MFA, multifactor authentication, two-factor authentication, U2F, FIDO U2F, security key
 
@@ -20,7 +20,7 @@ subcollection: account
 # Types of multifactor authentication
 {: #types}
 
-Multifactor authentication (MFA) adds an extra layer of security to your account by requiring all users to authenticate by using an additional authentication method beyond an ID and password. This is also commonly known as two-factor authentication (2FA).
+Multifactor authentication (MFA) adds an extra layer of security to your account by requiring all users to authenticate by using an additional authentication factor beyond an ID and password. This is also commonly known as two-factor authentication (2FA).
 {:shortdesc}
 
 The following two types of MFA options might be enabled for your account:
@@ -29,7 +29,7 @@ The following two types of MFA options might be enabled for your account:
 <dt>ID-based MFA</dt>
 <dd>An option that is enabled by an account owner or an administrator for the billing service in one of the accounts to which you are a member. This type of MFA is associated with your IBMid and authenticates you across all accounts to which you are a member, so you authenticate only one time.</dd>
 <dt>Account-based MFA</dt>
-<dd>Options including security questions that use a time-based one-time passcode and the external authentication option with Symantec. These types of MFA are specific per account. If you have a different type set up for each account that you belong to, you must authenticate in a different way each time you switch accounts. These legacy MFA options are available only with classic infrastructure accounts.</dd>
+<dd>Options such as security questions that use a time-based one-time passcode and external authentication option with Symantec. These types of MFA are specific per account. If you have a different type set up for each account that you belong to, you must authenticate in a different way each time you switch accounts. These legacy MFA options are available only with classic infrastructure accounts.</dd>
 </dl>
 
 IBMid MFA satisfies the authentication requirement so that you are not prompted for any other types of MFA even if they are enabled. So, if an account to which you are a member has this option turned on, this is the only type of MFA that you are prompted for at login. If you are a new user, use the ID-based IBMid MFA option to ensure that your login is easy and secure.
@@ -48,18 +48,18 @@ Authenticate by using an IBMid, password, and time-based one-time passcode (TOTP
 ### MFA for all users (IBMid & supported IdPs)
 {: #mfa-options-all-users}
 
-Authenticate by using one of the following MFA methods. This option applies to users who are using either an IBMid or an external identity provider (IdP). 
+Authenticate by using one of the following MFA factors. This option applies to users who are using either an IBMid or an external identity provider (IdP). 
   
   * Email-based MFA: Users authenticate by using a security passcode that's sent via email.
   * TOTP MFA: Users authenticate by using a TOTP.
-  * U2F MFA: Users authenticate by using a physical hardware-based security key that generates a six-digit numerical code. Based on the FIDO U2F standard, this method offers the highest level of security.
+  * U2F MFA: Users authenticate by using a physical hardware-based security key that generates a six-digit numerical code. Based on the FIDO U2F standard, this factor offers the highest level of security.
 
 ## Account-based MFA options
 {: #account-based}
 
 An account administrator must enable any of the following MFA options to be configured and used by a user in the account. These legacy MFA options are available only with classic infrastructure accounts.  This type of MFA is tied to a user's current account. If an administrator enables a different one of these MFA options for each account that a user is a member of, the user is prompted to authenticate a different way each time that they switch accounts.
 
-If an account requires IBMid MFA for all users in the account, that IBMid MFA method overrides any other MFA options that are enabled and set up in a user's account. Therefore, even if a user has other MFA options, such as the following set up, the user is not prompted for them at login.
+If an account requires IBMid MFA for all users in the account, that IBMid MFA factor overrides any other MFA options that are enabled and set up in a user's account. Therefore, even if a user has other MFA options, such as the following set up, the user is not prompted for them at login.
 
 <dl>
 <dt>Time-based one-time passcode authentication (TOTP)</dt>

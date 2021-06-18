@@ -2,9 +2,9 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-06-18"
 
-keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, MFA, authetication, TOTP, U2F, FIDO U2F, security key
+keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key
 
 subcollection: account
 
@@ -79,7 +79,7 @@ Upgrade your Lite account to a Pay-As-You-Go account to access the full {{site.d
 {: #account-gs-mfa}
 {: step}
 
-By default, users in your account authenticate themselves by logging in with a username and password. To require users to use more secure authentication methods, complete the following steps to set up multifactor authentication (MFA). 
+By default, users in your account verify themselves by logging in with a username and password. To require users to use more secure authentication factors, complete the following steps to set up multifactor authentication (MFA). 
 
 Setting up MFA in your account affects all members of the account. This means that if users of your account are members of multiple {{site.data.keyword.cloud_notm}} accounts, they must enroll for MFA at their next login even if they don't intend to use resources in the secured account. 
 {: important}
@@ -89,10 +89,10 @@ Setting up MFA in your account affects all members of the account. This means th
 3. Select the type of MFA to enable in your account.
 
  * **MFA for users with an IBMid**: Require users to authenticate by using an IBMid, password, and time-based one-time passcode (TOTP). You can enable this option for all users or just non-federated users. 
- * **MFA for all users (IBMid & supported IdPs)**: Require users to authenticate by using one of the following MFA methods. This option applies to users who are using either an IBMid or an external identity provider (IdP). 
+ * **MFA for all users (IBMid & supported IdPs)**: Require users to authenticate by using one of the following MFA factors. This option applies to users who are using either an IBMid or an external identity provider (IdP). 
      * **Email-based MFA**: Users authenticate by using a security passcode that's sent via email. 
      * **TOTP MFA**: Users authenticate by using a TOTP. 
-     * **U2F MFA**: Users authenticate by using a hardware security key that generates a six-digit numerical code. This method offers the highest level of security. 
+     * **U2F MFA**: Users authenticate by using a hardware security key that generates a six-digit numerical code. This factor offers the highest level of security. 
 
 4. Click **Update**.
 
@@ -207,7 +207,7 @@ Complete the following steps:
 2. Click **Invite users**.
 3. Specify the email address of the user. If you are inviting more than one user, they are all assigned the same access.
 4. Add the user to one or more of the access groups that you created in the previous step. 
-5. Click **Invite**. 
+5. Click **Invite**.
 
 To learn more about the invitation flow and how users can accept invitations, see [Inviting users to an account](/docs/account?topic=account-iamuserinv).
 

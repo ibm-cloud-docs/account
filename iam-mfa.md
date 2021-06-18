@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2021
-lastupdated: "2021-03-23"
+lastupdated: "2021-06-18"
 
 keywords: MFA, multifactor authentication, IBMid MFA, two-factor authentication, account MFA, time-based one-time passcode, TOTP, FIDO U2F, U2F, universal 2nd factor authentication, security key
 
@@ -39,7 +39,7 @@ Review the following considerations before you enable IBMid MFA for your account
   * Choose a date and time that you plan to enable MFA that results in the least impact to your business.
   * Notify your account users after you enable MFA with information on how to get set up.
 
-When the MFA setting is enabled, all IBMid users in your account are prompted for IBMid MFA authentication upon login. If you have other MFA methods set up for any IBMid users in your account, they are no longer prompted for those MFA methods. For example, if you previously enabled 2FA in the customer portal for your classic infrastructure resources, the MFA account setting overrides the 2FA option. 
+When the MFA setting is enabled, all IBMid users in your account are prompted for IBMid MFA authentication upon login. If you have other MFA factors set up for any IBMid users in your account, they are no longer prompted for those MFA factors. For example, if you previously enabled 2FA in the customer portal for your classic infrastructure resources, the MFA account setting overrides the 2FA option. 
 {: tip}
 
 ## Enabling MFA 
@@ -54,10 +54,10 @@ To enable MFA, you must be the account owner or an administrator for the billing
 3. Select the type of MFA to enable in your account.
 
  * **MFA for users with an IBMid**: Require users to authenticate by using an IBMid, password, and time-based one-time passcode (TOTP). You can enable this option for all users or  non-federated users. 
- * **MFA for all users (IBMid & supported IdPs)**: Require users to authenticate by using one of the following MFA methods. This option applies to users who are using either an IBMid or an external identity provider (IdP). 
+ * **MFA for all users (IBMid & supported IdPs)**: Require users to authenticate by using one of the following MFA factors. This option applies to users who are using either an IBMid or an external identity provider (IdP). 
      * **Email-based MFA**: Users authenticate by using a security passcode that's sent in an email. 
      * **TOTP MFA**: Users authenticate by using a TOTP. 
-     * **U2F MFA**: Users authenticate by using a physical hardware-based security key that generates a six-digit numerical code. Based on the FIDO U2F standard, this method offers the highest level of security.
+     * **U2F MFA**: Users authenticate by using a physical hardware-based security key that generates a six-digit numerical code. Based on the FIDO U2F standard, this factor offers the highest level of security.
 
 4. Click **Update**.
 
@@ -88,3 +88,4 @@ To disable MFA, you must be the account owner or an administrator for the accoun
 2. Click **Edit** in the Authentication section.
 3. Select **None**.
 4. Click **Update**.
+
