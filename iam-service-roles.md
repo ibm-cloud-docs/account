@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-06-17"
+lastupdated: "2021-06-18"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1992,6 +1992,7 @@ Review the available platform and service roles available and the actions mapped
 
 | Role | Description |
 | ----- | :----- |
+| Service Configuration Reader | A Config reader can view the settings of the account. |
 | Service ID creator | Can create service IDs when the account setting to restrict service ID creation is enabled. |
 | User API key creator | Can create API keys when the account setting to restrict API key creation is enabled. |
 {: row-headers}
@@ -2015,18 +2016,27 @@ Review the available platform and service roles available and the actions mapped
 | `iam-identity.apikey.update` | Update the details of an existing API key. | Administrator, Editor, Operator |
 | `iam-identity.apikey.delete` | Delete an API key. | Administrator, Operator |
 | `iam-identity.user-apikey.create` | Ability to create IBM Cloud API keys associated with a user identity. | User API key creator |
+| `iam-identity.profile.create` | Create a new Trusted Profile. | Administrator |
+| `iam-identity.profile.update` | Update the details of an existing Trusted Profile. | Administrator, Editor, Operator |
+| `iam-identity.profile.delete` | Delete a Trusted Profile. | Administrator, Operator |
+| `iam-identity.profile.get` | Get the details of an existing Trusted Profile. | Administrator, Editor, Operator, Viewer |
+| `iam-identity.profile.linkToResource` | actiondescription.iam-identity.profile.linkToResource | Administrator, Editor, Operator |
 | `iam-identity.idp.get` | Get the details of an existing Identity Provider configuration. | Administrator, Editor, Operator |
 | `iam-identity.idp.list` | List Identity Provider configurations. | Administrator, Editor, Operator |
 | `iam-identity.idp.create` | Create a new Identity Provider configuration. | Administrator, Operator |
 | `iam-identity.idp.update` | Update an existing Identity Provider configuration. | Administrator, Editor, Operator |
 | `iam-identity.idp.delete` | Delete an Identity Provider configuration. | Administrator, Operator |
 | `iam-identity.idp.test` | Test an Identity Provider configuration. | Administrator, Editor, Operator |
-| `iam-identity.account.get` | Get the account configuration. | Administrator, Editor, Operator, Viewer |
+| `iam-identity.account.get` | Get the account configuration. | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `iam-identity.account.create` | Create a new account configuration. | Administrator, Operator |
 | `iam-identity.account.update` | Update an existing account configuration. | Administrator, Editor, Operator |
 | `iam-identity.account.enable_idp` | Enable an Identity Provider configuration for the account. | Administrator, Editor, Operator |
 | `iam-identity.account.disable_idp` | Disable an Identity Provider configuration for the account. | Administrator, Editor, Operator |
 | `iam-identity.account.delete` | Delete an account configuration. | Administrator, Operator |
+| `iam-identity.ciprovider.create` | actiondescription.iam-identity.ciprovider.create | Administrator |
+| `iam-identity.ciprovider.update` | actiondescription.iam-identity.ciprovider.update | Administrator, Operator |
+| `iam-identity.ciprovider.delete` | actiondescription.iam-identity.ciprovider.delete | Administrator, Operator |
+| `iam-identity.ciprovider.get` | actiondescription.iam-identity.ciprovider.get | Administrator, Operator |
 | `iam-identity.session.manage` | Manage the user sessions of an account. | Administrator |
 {: caption="Table 42. Service actions - IAM Identity Service" caption-side="top"}
 {: #actions-table42}
