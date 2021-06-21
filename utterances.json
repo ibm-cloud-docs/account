@@ -249,17 +249,8 @@
     "upgrade to lite",
     "upgrade trial to lite",
     "Trial to Lite account",
-    "may I Switch back to Lite account",
     "change to a lite account instead of trial",
     "change my account type to trial instead of standard",
-    "convert back to a free account",
-    "change back to a free account",
-    "downgrade to lite account",
-    "change my account back to Lite setting",
-    "want to downgrade my account",
-    "Could I Downgrade to light account",
-    "Downgrade account to free Lite version",
-    "downgrade my account",
     "change to lite plan",
     "unable to change plus trial plan to LITE plan",
     "go from a Trial account to a Lite account",
@@ -351,7 +342,7 @@
     "How do I cancel my account",
     "cancelling an account",
     "cancel my account",
-    "need my account cancelled",
+    "need my account canceled",
     "suspend this account",
     "cancel my account with you",
     "how to deactivate the account",
@@ -400,7 +391,10 @@
     "How can I cancel my trial account",
     "Put my account on-hold",
     "place my account on hold",
-    "deactivate account"
+    "deactivate account",
+    "unregister the account", 
+    "do not want to be a member of the cloud",
+    "disable account"
   ],
   "deleteaccount": [
     "delete my account",
@@ -495,7 +489,7 @@
     "deactivated my account and I don't know how to reactivate it",
     "reactivate account",
     "deactivated an account, how to activate it again",
-    "account that was cancelled can be activated again",
+    "account that was canceled can be activated again",
     "account was deactivated by mistake",
     "remove my account from suspended",
     "How I activate my account?",
@@ -513,7 +507,11 @@
     "how to activate account",
     "reactivate",
     "I am looking to reactive my account",
-    "re-activate my account"
+    "re-activate my account",
+    "violated acceptable use policy", 
+    "violating the aup", 
+    "account has been deactivated", 
+    "ask about deactivate account"    
   ],
   "contactsupport": [
     "How do I contact support",
@@ -528,6 +526,12 @@
     "support phone",
     "phone support",
     "contact support by phone",
+    "call support",
+    "speak with support",
+    "need to speak with an agent",
+    "Can I speak to technical or billing support",
+    "live chat with support",
+    "I want to chat with a person",
     "how to get support",
     "what support plan do I have",
     "please provide me support link",
@@ -539,6 +543,7 @@
     "I want to contact IBM support",
     "talk to tech support",
     "customer support",
+    "need urgent support",
     "connect me with support"
   ],
   "freetrial": [
@@ -1858,5 +1863,28 @@
     "change the look and feel of the Cloud dashboard",
     "edit the Cloud console dashboard",
     "edit dashboard in the Cloud console"
-  ]
+  ],
+  "convertpayg-litetrial": [
+     "may I Switch back to Lite account",
+     "convert back to a free account",
+     "change back to a free account",
+     "downgrade to lite account",
+     "change my account back to Lite setting",
+     "want to downgrade my account",
+     "Could I Downgrade to light account",
+     "Downgrade account to free Lite version",
+     "downgrade my account"
+  ],
+   "convert-education": [
+     "adding a promo code to a trial account",
+     "cannot add an educational promotional code to my student account",
+     "can't use code for academic initiative",
+     "does not take promotional code for education",
+     "convert back to trial",
+     "converting back to academic trial account",
+     "added a credit card to my trial account",
+     "trouble applying education feature code",
+     "unable to apply education feature code",
+     "problem with my voucher"
+   ]
 }
