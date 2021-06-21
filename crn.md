@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2020
 
-lastupdated: "2020-06-29"
+lastupdated: "2020-06-21"
 
 keywords: crn, cloud resource name, resources, cloud catalog
 
@@ -72,72 +72,10 @@ For services that are registered into the {{site.data.keyword.Bluemix_notm}} cat
 
 The cloud geography/region/zone/data center that the resource resides.
 
-The `location` segment must be one of the following values:
-
-### Global
-{: #global-crn}
-
- * `global`
-
-### Geographies
-{: #geos-crn}
-
- * `us`
- * `eu`
- * `cn`
- * `ap`
-
-### Regions
-{: #regions-crn}
-
- * `us-south`
- * `us-east`
- * `au-syd`
- * `eu-gb`
- * `eu-de`
- * `jp-tok`
-
-### Data centers
-{: #dc-crn}
-
- * `AMS01`
- * `AMS03`
- * `CHE01`
- * `DAL01`
- * `DAL05`
- * `DAL06`
- * `DAL07`
- * `DAL09`
- * `DAL10`
- * `DAL12`
- * `DAL13`
- * `FRA02`
- * `HKG02`
- * `HOU02`
- * `LON02`
- * `MEL01`
- * `MEX01`
- * `MIL01`
- * `MON01`
- * `OSL01`
- * `PAR01`
- * `SJC01`
- * `SJC03`
- * `SAO01`
- * `SEA01`
- * `SEO01`
- * `SNG01`
- * `SYD01`
- * `TOK02`
- * `TOR01`
- * `WDC01`
- * `WDC04`
- * `WDC06`
- * `WDC07`
+The `location` segement must be one of the location names listed by the [`ibmcloud catalog locations`](/docs/cli?topic=cli-ibmcloud_catalog#ibmcloud_catalog_locations) CLI command.
 
 Some resources do not require a region, as they can be considered global. In this case, the `region` segment is set to `global`.
 {: tip}
-
 
 ## scope
 {: #scope-crn}
