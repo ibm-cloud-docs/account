@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-05-27"
+lastupdated: "2021-06-21"
 
 
 keywords: troubleshoot account login, accepting invitation
@@ -37,7 +37,7 @@ This problem can commonly occur by one of the following reasons:
 {: tsCauses}
 * You didn't accept the invitation to join the account.
 * The invitation expired. You have 30 days to accept an invitation.
-* The inviter cancelled your invitation.
+* The inviter canceled your invitation.
 
 Complete the following steps to accept the invitation. If your invitation expired, contact the inviter or the account owner. 
 {: tsResolve}
