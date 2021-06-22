@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2021
-lastupdated: "2021-05-06"
+lastupdated: "2021-06-22"
 
 keywords: search, find, search for instance, search for resource
 
@@ -69,7 +69,7 @@ You can search for the following attributes:
 <dt>`service_name`</dt>
 <dd>The name of the service as it appears in the Name column of the output of `ibmcloud catalog service-marketplace`.</dd>
 <dt>`family`</dt>
-<dd>The cloud component to which your resource belongs. The allowed values are `cloud_foundry`, `containers`, `vmware`, `resource_controller`, `is` or `ims`.</dd>
+<dd>The cloud component to which your resource belongs. The allowed values are `cloud_foundry`, `containers`, `container-registry`, `vmware`, `resource_controller`, `is`, `atracker` or `ims`.</dd>
 <dt>`organization_id`</dt>
 <dd>The Cloud Foundry organization GUID.</dd>
 <dt>`doc.space_id`</dt>
