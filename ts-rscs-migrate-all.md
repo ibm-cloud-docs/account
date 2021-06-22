@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2021
 
-lastupdated: "2021-06-11"
+lastupdated: "2021-06-22"
 
 keywords: troubleshooting services, troubleshooting resources, service problems, resource problems, migrate, migration error, migrate all services
 
@@ -37,7 +37,7 @@ You're unable to migrate certain services.
 Services that can't be added to resource groups and aren't managed by using Identity and Access Management (IAM) can't be migrated. If a service is not eligible, there isn't an option for migration. 
 {: tsCauses}
 
-Check the services to confirm they're eligible for migration. You receive a notification and a **Migrate** ![Migrate this service instance to a resource group](images/migrate.svg "Migrate this service instance to a resource group") icon is displayed to indicate if a service is eligible for migration.
+Check the services to confirm they're eligible for migration. You receive a notification and a **Migrate** icon ![Migrate icon](../icons/migrate.svg "Migrate this service instance to a resource group") is displayed to indicate if a service is eligible for migration.
 {: tsResolve}
 
 
