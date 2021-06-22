@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-06-15"
+lastupdated: "2021-06-22"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite
 
@@ -211,9 +211,12 @@ If you believe that your account was deactivated in error, contact support by ca
 {: #contactsupport}
 {: faq}
 
-From the console menu bar, click **Support** to go to the Support Center and to view your current support plan. Support is available for Premium, Advanced, and Basic Support tier accounts. For more information, see [Getting support](/docs/get-support?topic=get-support-support-plans).  
+In the {{site.data.keyword.Bluemix_notm}} console, go to **Support** from the console menu bar. The options that are available to you depend on your support plan. For more information, see [Getting support](/docs/get-support?topic=get-support-support-plans).  
 
-Lite and Trial account support is limited to non-technical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the {{site.data.keyword.Bluemix_notm}} documentation, Chat with Watson, and the community forums. These resources are available in the [Support Center](https://{DomainName}/unifiedsupport/supportcenter){: external}.
+To contact support, you can use the following methods:
+* If you have a valid pay-as-you-go or subscription account, you can click **Live chat with support** to chat with a support engineer.  
+* Pay-as-you-go or subscription accounts can also contact support by phone: +1-866-403-7638.
+* Lite and Trial account support is limited to non-technical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the [{{site.data.keyword.Bluemix_notm}} documentation](/docs/get-support?topic=get-support-using-avatar), Chat with Watson, and use [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external}.
 
 ## Can I view a list of accounts that I own?
 {: #accounts-owned}
