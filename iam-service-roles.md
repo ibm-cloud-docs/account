@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-06-21"
+lastupdated: "2021-06-22"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -502,6 +502,17 @@ Review the available platform and service roles available and the actions mapped
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 
+| Role | Description |
+| ----- | :----- |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+{: row-headers}
+{: caption="Table 9. Service roles - Block Storage Snapshots for VPC" caption-side="top"}
+{: #service-roles-table9}
+{: tab-title="Service roles"}
+{: tab-group="is.snapshot"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `is.snapshot.snapshot.create` | This action allows the user to create block storage snapshots. | Administrator, Editor |
@@ -511,6 +522,7 @@ Review the available platform and service roles available and the actions mapped
 | `is.snapshot.snapshot.delete` | This action allows the user to delete block storage snapshots. | Administrator, Editor |
 | `is.snapshot.snapshot.restore` | This action allows the user to restore block storage snapshots. | Administrator, Editor, Operator |
 | `is.snapshot.snapshot.operate` | Operate a snapshot | Administrator, Editor, Operator |
+| `is.snapshot.snapshot.config.read` | Configuration Governance endpoint | Service Configuration Reader |
 {: caption="Table 9. Service actions - Block Storage Snapshots for VPC" caption-side="top"}
 {: #actions-table9}
 {: tab-title="Actions"}
