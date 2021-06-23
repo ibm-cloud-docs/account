@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-06-22"
+lastupdated: "2021-06-23"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -753,7 +753,7 @@ Review the available platform and service roles available and the actions mapped
 | `cloudantnosqldb.account-deleted-dbs.restore` | Restore deleted database | Manager |
 | `cloudantnosqldb.account-deleted-dbs.delete` | Delete deleted database | Manager |
 | `cloudantnosqldb.account-meta-info.read` | View account metadata | Manager, Monitor, Reader, Writer |
-| `cloudantnosqldb.database-ensure-full-commit.execute` | Call _ensure_full_commit endpoint | Manager, Writer |
+| `cloudantnosqldb.database-ensure-full-commit.execute` | Call _ensure_full_commit endpoint | Checkpointer, Manager, Writer |
 | `cloudantnosqldb.account-search-analyze.execute` | Call _search_analyze endpoint | Manager, Reader, Writer |
 | `cloudantnosqldb.couchdbextension-instance.read` | View metadata of an Extension for Apache CouchDB instance | Manager |
 | `cloudantnosqldb.couchdbextension-instance.write` | Make changes to an Extension for Apache CouchDB instance | Manager |
