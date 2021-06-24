@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-06-23"
+lastupdated: "2021-06-24"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1756,6 +1756,22 @@ Review the available platform and service roles available and the actions mapped
 | `hs-crypto.crypto.unwrapkey` | hs-crypto.crypto.unwrapkey | Manager, Reader, Reader Plus, Writer |
 | `hs-crypto.crypto.verify` | hs-crypto.crypto.verify | Manager, Reader, Reader Plus, Writer |
 | `hs-crypto.crypto.wrapkey` | hs-crypto.crypto.wrapkey | Manager, Reader, Reader Plus, Writer |
+| `hs-crypto.crypto.login` | hs-crypto.crypto.login | Manager, Reader, Reader Plus, Writer |
+| `hs-crypto.crypto.logout` | hs-crypto.crypto.logout | Manager, Reader, Reader Plus, Writer |
+| `hs-crypto.discovery.listservers` | hs-crypto.discovery.listservers | Manager, Reader, Reader Plus, Writer |
+| `hs-crypto.voting.registertopic` | hs-crypto.voting.registertopic | Manager, Reader, Reader Plus, Writer |
+| `hs-crypto.voting.listtopicsbyids` | hs-crypto.voting.listtopicsbyids | Manager, Reader, Reader Plus, Writer |
+| `hs-crypto.voting.listtopicsbyattributes` | hs-crypto.voting.listtopicsbyattributes | Manager, Reader, Reader Plus, Writer |
+| `hs-crypto.voting.deletetopic` | hs-crypto.voting.deletetopic | Manager, Reader, Reader Plus, Writer |
+| `hs-crypto.voting.newpoll` | hs-crypto.voting.newpoll | Manager, Reader, Reader Plus, Writer |
+| `hs-crypto.voting.finishpoll` | hs-crypto.voting.finishpoll | Manager, Reader, Reader Plus, Writer |
+| `hs-crypto.voting.registerpermanentvoter` | hs-crypto.voting.registerpermanentvoter | Manager, Reader, Reader Plus, Writer |
+| `hs-crypto.voting.listvotersbyids` | hs-crypto.voting.listvotersbyids | Manager, Reader, Reader Plus, Writer |
+| `hs-crypto.voting.listvotersbyattributes` | hs-crypto.voting.listvotersbyattributes | Manager, Reader, Reader Plus, Writer |
+| `hs-crypto.voting.deletevoter` | hs-crypto.voting.deletevoter | Manager, Reader, Reader Plus, Writer |
+| `hs-crypto.voting.newvote` | hs-crypto.voting.newvote | Manager, Reader, Reader Plus, Writer |
+| `hs-crypto.voting.getpollresults` | hs-crypto.voting.getpollresults | Manager, Reader, Reader Plus, Writer |
+| `hs-crypto.voting.registerlivevoter` | hs-crypto.voting.registerlivevoter | Manager, Reader, Reader Plus, Writer |
 | `hs-crypto.keystore.createkeystore` | hs-crypto.keystore.createkeystore | Manager |
 | `hs-crypto.keystore.deletekey` | hs-crypto.keystore.deletekey | Manager, Writer |
 | `hs-crypto.keystore.deletekeystore` | hs-crypto.keystore.deletekeystore | Manager |
@@ -4171,6 +4187,17 @@ Review the available platform and service roles available and the actions mapped
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 
+| Role | Description |
+| ----- | :----- |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+{: row-headers}
+{: caption="Table 94. Service roles - Toolchain" caption-side="top"}
+{: #service-roles-table94}
+{: tab-title="Service roles"}
+{: tab-group="toolchain"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `toolchain.dashboard.view` | View instances of the Toolchain service. | Administrator, Editor, Operator |
@@ -4179,6 +4206,7 @@ Review the available platform and service roles available and the actions mapped
 | `toolchain.instance.create-bindings` | Add a tool integration to a toolchain within a resource group. | Administrator, Editor |
 | `toolchain.instance.delete-bindings` | Remove a tool integration from a toolchain within a resource group. | Administrator, Editor |
 | `toolchain.instance.list-bindings` | View the tool integrations that are contained in a toolchain within a resource group. | Administrator, Editor, Viewer |
+| `toolchain.config.read` | Configuration Information Point API access for Security and Compliance Center Integration (SCC) | Service Configuration Reader |
 {: caption="Table 94. Service actions - Toolchain" caption-side="top"}
 {: #actions-table94}
 {: tab-title="Actions"}
