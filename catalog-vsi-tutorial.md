@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-06-28"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog
 
@@ -34,7 +34,7 @@ completion-time: 20m
 This tutorial walks you through how to onboard and publish a sample virtual server image to your account. By completing this tutorial, you learn how to create a private catalog, import the sample, validate that it can be installed on a selected deployment target, and make the virtual server image available to users who have access to your account.
 {: shortdesc}
 
-This tutorial uses [sample Terraform code](https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample){: external} as part of the process to onboard a virtual server image. As you complete the tutorial, adapt each step to match your organization's desired goal. 
+This tutorial uses [sample Terraform code](https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample){: external} as part of the process to onboard a virtual server image. As you complete the tutorial, adapt each step to match your organization's goal. 
 
 ## Before you begin
 {: #catalog-vsi-prereqs}
@@ -115,7 +115,7 @@ To monitor the progress of the validation process, click **View logs**.
 {: #catalog-vsi-publish}
 {: step}
 
-After you complete the validation process, you're ready to publish the virtual server image to your account. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions"), and select **Publish to account**.
+After you complete the validation process, you're ready to publish the virtual server image to your account. Open the **Actions** menu and select **Publish to account**.
 
 As a result, the virtual server image is available only to users who have access to the `Sample virtual server image` private catalog in your account.
 
