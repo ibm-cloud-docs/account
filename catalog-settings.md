@@ -277,9 +277,9 @@ The following table lists the filters that you can use to customize which produc
 
 | Option | Description |
 |--------------|-------|
-| SAP Certified | An infrastructure service that is certified by SAP to run production SAP workloads. For more information on SAP-certified products, see [{{site.data.keyword.ibm_cloud_sap}}](/docs/sap).|
+| SAP Certified | An infrastructure service that is certified by SAP to run production SAP workloads. For more information, see [{{site.data.keyword.ibm_cloud_sap}}](/docs/sap).|
 | Satellite Enabled | A service that is enabled for use with {{site.data.keyword.cloud_notm}} Satellite. You can run apps consistently across on-premises, edge computing, and public cloud environments. |
-| Quantum Technologies | A service that is compatible with quantum technologies. Learn more at [{{site.data.keyword.IBM_notm}} Quantum services](http://cloud.ibm.com/quantum){: external}|
+| Quantum Technologies | A service that is compatible with quantum technologies. For more information, see [{{site.data.keyword.IBM_notm}} Quantum services](http://cloud.ibm.com/quantum){: external}.|
 {: caption="Table 4. Options for filtering by runtime environment" caption-side="top"}
 {: #works-with-custom}
 {: tab-title="Works with"}
