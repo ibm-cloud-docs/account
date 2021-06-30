@@ -1228,6 +1228,22 @@
     "need to remove a resource group",
     "no longer need this resource group"
   ],
+  "add-users-resource-group": [
+      "add users to resource group",
+      "add users to access group for a resource",
+      "grant access to resource group",
+      "grant authority to resource group",
+      "resource group user permissions",
+      "user permissions for resource group",
+      "adding a user to a resource group",
+      "adding another person to a resource group",
+      "How do I add someone to the Resource group?",
+      "how does my administrator grant me access to add to resource groups",
+      "How can I tell my administrator to allow me to update users of resource groups",
+      "need to know how to associate users to a resource group",
+      "how to add someone to a resource group",
+      "how to give a user access to a resource group"
+  ],
   "instance-migrated": [
     "migrate my Cloud Foundry instances to my resource group",
     "services to a resource group migration",
