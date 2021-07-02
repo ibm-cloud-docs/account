@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2021
-lastupdated: "2021-06-22"
+lastupdated: "2021-07-02"
 
 keywords: search, find, search for instance, search for resource
 
@@ -77,7 +77,7 @@ You can search for the following attributes:
 <dt>`doc.resource_group_id`</dt>
 <dd>The ID of the resource group.</dd>
 <dt>`type`</dt>
-<dd>The resource type. The allowed values are: `k8-cluster`, `k8-location`, `namespace`, `cf-service-instance`, `cf-user-provided-service-instance`, `cf-organization`, `cf-service-binding`, `cf-space`, `cf-application`, `resource-instance`, `resource-alias`, `resource-binding`, `resource-group`, `vmware-solutions`, `vpc`, `volume`, `vpn`, `load-balancer`, `security-group`, `key`, `image`, `subnet`, `public-gateway`, `floating-ip`, `network-acl`, `flow-log-collector`, `instance`, `instance-group`, `dedicated-host`, `endpoint-gateway`, `snapshot`, `share`, `cloud-object-storage-infrastructure`, `block-storage`, `file-storage`, `cloud-backup`, `cdn-powered-by-akamai`, `direct-link-cloud-exchange`, `direct-link-cloud-connect`, `direct-link-colocation`, `direct-link-network-service-provider`, `hardware-firewall`, `hardware-firewall-dedicated`, `fortigate-security-appliance-1gb`, `fortigate-security-appliance-10gb`,  `virtual-router-appliance-copy`, `network-gateway-byoa`, `network-gateway-juniper-vsrx`, `ibm-cloud-load-balancer`, `virtual-server`, `bare-metal`.</dd>
+<dd>The resource type. The allowed values are: `k8-cluster`, `k8-location`, `namespace`, `cf-service-instance`, `cf-user-provided-service-instance`, `cf-organization`, `cf-service-binding`, `cf-space`, `cf-application`, `resource-instance`, `resource-alias`, `resource-binding`, `resource-group`, `vmware-solutions`, `vpc`, `volume`, `vpn`, `load-balancer`, `security-group`, `key`, `image`, `subnet`, `public-gateway`, `floating-ip`, `network-acl`, `flow-log-collector`, `instance`, `instance-group`, `dedicated-host`, `endpoint-gateway`, `snapshot`, `share`, `vpn-server`, `placement-group`, `route`, `target`, `cloud-object-storage-infrastructure`, `block-storage`, `file-storage`, `cloud-backup`, `cdn-powered-by-akamai`, `direct-link-cloud-exchange`, `direct-link-cloud-connect`, `direct-link-colocation`, `direct-link-network-service-provider`, `hardware-firewall`, `hardware-firewall-dedicated`, `fortigate-security-appliance-1gb`, `fortigate-security-appliance-10gb`,  `virtual-router-appliance-copy`, `network-gateway-byoa`, `network-gateway-juniper-vsrx`, `ibm-cloud-load-balancer`, `virtual-server`, `bare-metal`.</dd>
 <dt>`creation_date`</dt>
 <dd>The date on which the resource is created.</dd>
 <dt>`modification_date`</dt>
