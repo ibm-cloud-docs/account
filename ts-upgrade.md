@@ -1,13 +1,14 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-02-25"
+  years: 2021
+lastupdated: "2021-07-02"
 
 keywords: troubleshoot account, upgrade account, upgrade issue
 subcollection: account
 
 content-type: troubleshoot
+
 ---
 
 {:tsSymptoms: .tsSymptoms}
@@ -25,15 +26,15 @@ content-type: troubleshoot
 {: troubleshoot}
 
 You can't upgrade to a Pay-As-You-Go account.
-{: shortdesc}
+{:shortdesc}
 
-When you go **Manage** > **Account** > **Account Settings** in the {{site.data.keyword.Bluemix_notm}} console, the following message is displayed:
+When you try to upgrade your account from the [Account settings](https://{DomainName}/account/settings) page in the {{site.data.keyword.Bluemix_notm}} console, the following message is displayed:
 {: tsSymptoms}
 
-`You do not have the permissions necessary to view this page. Contact your administrator.`
+`Looks like you don't have access to view this page. Contact the account owner for access.`
 
-To upgrade an account, you must have the correct access on all account management services. 
+To upgrade your account, you must have an access policy with the Editor role or higher on all account management services. 
 {: tsCauses}
 
-Contact the account owner to request an access policy with the Editor role or higher on all account management services. For more information, see [Upgrading your account](/docs/account?topic=account-upgrading-account). 
+Contact the account owner to request access to upgrade your account. For more information, see [Upgrading your account](/docs/account?topic=account-upgrading-account). 
 {: tsResolve}
