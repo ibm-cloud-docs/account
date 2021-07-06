@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-06-28"
+lastupdated: "2021-07-06"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -42,7 +42,8 @@ You can build and onboard software solutions to a private catalog to then share 
   * Terraform templates
   * OVA images deployed on VMware vCenter Server
   * Virtual server images with Terraform deployed on VPC infrastructure
-  * Operators deployed on Red Hat OpenShift
+  * Operators from GitHub repositories deployed on Red Hat OpenShift
+  * Operator bundles from Red Hat OpenShift registries
   
 1. Upload your soure code in a GitHub repository. For more information, see [Managing releases in a repository](https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository){: external}.
 1. Make sure you're assigned the following IAM access:
