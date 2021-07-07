@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-07-07"
 
 keywords: IAM token, token, API key, generate token, access token, temporary credential
 
@@ -73,21 +73,15 @@ ExampleService service = new ExampleService(authenticator);
 
 ```javascript
 const ExampleServiceV1 = require('mysdk/example-service/v1');
-const { BearerTokenAuthenticator } = require('mysdk/auth');
+const { IamAuthenticator } = require('mysdk/auth');
 
-const authenticator = new BearerTokenAuthenticator({
-  bearerToken: '<access-token>',
+const authenticator = new IamAuthenticator({
+  apikey: '<iam-api-key>',
 });
 
 const myService = new ExampleServiceV1({
   authenticator,
 });
-...
-
-// Later when the access token expires, the application must acquire
-// a new access token, then set it on the authenticator.
-// Subsequent request invocations will include the new access token.
-authenticator.setBearerToken('<new-access-token>')
 ```
 {: codeblock}
 {: javascript}
