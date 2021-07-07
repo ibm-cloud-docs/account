@@ -2,11 +2,11 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-07-06"
+lastupdated: "2021-07-07"
 
-keywords: onboard software, third-party software, sell on IBM Cloud, partner center, operator, validate, test, Red Hat OpenShift cluster, sample Node-RED Operator, CSV file, CSV, operator bundle
+keywords: onboard software, operator, validate, test, Red Hat OpenShift cluster, sample Node-RED Operator, CSV file, CSV, operator bundle
 
-subcollection: third-party
+subcollection: account
 
 content-type: tutorial
 services: Registry
@@ -60,7 +60,7 @@ This tutorial walks you through how to onboard a sample Operator to your account
 {: #catalog-operator-import}
 {: step}
 
-1. From the Private products page, click **Add**.
+1. On the Private products page, click **Add**.
 1. Select **Operator from GitHub repository** as your deployment method. 
 1. Confirm that **Public repository** is selected as the repository type.
 1. Enter `https://github.com/IBM-Cloud/isv-operator-product-deploy-sample/blob/main/bundle/1.0.0/manifests/node-red-operator.v1.0.0.clusterserviceversion.yaml` as your source URL. 
@@ -73,8 +73,8 @@ This tutorial walks you through how to onboard a sample Operator to your account
 
 When you create your {{site.data.keyword.openshiftlong}} cluster, the cluster includes an IAM service ID that is given reader access to {{site.data.keyword.registrylong_notm}}. The service ID credentials are authenticated in a non-expiring service ID API key that is stored in image pull secrets in your cluster. As part of configuring the deployment details, you set a pull secret that's used to access and pull your images from the private {{site.data.keyword.registrylong_notm}} respository. 
 
-1. From the Version list table, click the row that contains your Operator. 
-1. From the Set an image pull secret section, click **Add image pull secret**.
+1. In the Version list table, click the row that contains your Operator. 
+1. In the Set an image pull secret section, click **Add image pull secret**.
 1. Click **Add image pull secret**.
 1. Enter the name and value of the image pull secret. 
 1. Click **Update**.
