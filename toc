@@ -28,6 +28,7 @@ Managing your account, resources, and access
     {: .topicgroup}
     Sharing software with users in your account
         catalog-vsi-tutorial.md
+        catalog-operator-tutorial.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -144,10 +145,7 @@ Managing your account, resources, and access
             instance_migration.md
             data-center-migration.md
 
-        {: .topicgroup}
-        Working with software
-            software-license.md
-            catalog-install-private.md
+        sw-instance-details.md
 
     {: .topicgroup}
     Centrally managing multiple accounts with enterprises
@@ -169,6 +167,7 @@ Managing your account, resources, and access
 
     {: .topicgroup}
     Centrally managing products with catalogs
+        software-license.md
 
         {: .topicgroup}
         Sharing products

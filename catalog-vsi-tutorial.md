@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-07-07"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog
 
@@ -25,16 +25,16 @@ completion-time: 20m
 {:external: target="_blank" .external}
 {:step: data-tutorial-type='step'} 
 
-# Onboarding a sample virtual server image 
+# Onboarding a virtual server image 
 {: #catalog-vsi-tutorial}
 {: toc-content-type="tutorial"}
 {: toc-services="cloud-object-storage, vpc"} 
 {: toc-completion-time="20m"}
 
-This tutorial walks you through how to onboard and publish a sample virtual server image to your account. By completing this tutorial, you learn how to create a private catalog, import the sample, validate that it can be installed on a selected deployment target, and make the virtual server image available to users who have access to your account.
+This tutorial walks you through how to onboard a sample virtual server image to your account. By completing this tutorial, you learn how to create a private catalog, import the sample, validate that it can be installed on a selected deployment target, and make the virtual server image available to users who have access to your account.
 {: shortdesc}
 
-This tutorial uses [sample Terraform code](https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample){: external} as part of the process to onboard a virtual server image. As you complete the tutorial, adapt each step to match your organization's desired goal. 
+This tutorial uses [sample Terraform code](https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample){: external} as part of the process to onboard a virtual server image. As you complete the tutorial, adapt each step to match your organization's goal. 
 
 ## Before you begin
 {: #catalog-vsi-prereqs}
@@ -61,22 +61,20 @@ This tutorial uses [sample Terraform code](https://github.com/IBM-Cloud/isv-vsi-
 {: step}
 
 1. From the Private products page, click **Add**.
-4. Confirm that **Public repository** is selected as the repository type.
-5. Enter `https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample/releases/download/v1.0/isv-vsi-product-deploy-sample.tar.gz` as the URL of the public GitHub repository. 
-6. Select **Compute / Virtual Machines** as the category type.
-6. Accept the default value for **Version** field.
-7. Select the **This Terraform template is a virtual server image** checkbox. 
-8. Click **Add**.
+1. Select **Virtual server image with Terraform** as the deployment method.
+1. Confirm that **Public repository** is selected as the repository type.
+1. Enter `https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample/releases/download/v1.0/isv-vsi-product-deploy-sample.tar.gz` as your source URL.
+1. Enter `1.0.0` as the software version.
+1. Click **Add product**.
 
 ## Configure the deployment details
 {: #catalog-vsi-cfg-deployment}
 {: step}
 
-From the Configure product tab, configure the deployment values for the software installation.
-
+1. From the Version list table, click the row that contains your virtual server image. 
 1. Click **Add deployment values** in the Configure the deployment details section.
-2. Select **Parameter** to select all options, and click **Add deployment values**.
-3. Customize which parameters are required for users to specify during the installation and which ones are hidden from users altogether. For the purposes of this tutorial, configure each parameter as described in the following table.
+1. Select **Parameter** to select all options, and click **Add deployment values**.
+1. Customize which parameters are required for users to specify during the installation and which ones are hidden from users altogether. For the purposes of this tutorial, configure each parameter as described in the following table.
 
 | Parameter | Description | Required for users to specify? | Hidden from users? |
 | --- | ---------- | --- | --- | 
@@ -95,27 +93,30 @@ From the Configure product tab, configure the deployment values for the software
 
 If users are required to accept any license agreements beyond the {{site.data.keyword.cloud_notm}} Services Agreement, provide the URL to each agreement. Or, if users can bring their own licenses, you can provide that URL as well.  
 
-1. From the Add license tab, click **Add**. 
+1. Click **Add license agreements** > **Add**. 
 2. Enter the name and URL, and click **Update**.
 
 ## Validate the virtual server image
 {: #catalog-vsi-validate}
 {: step}
 
-1. In the Configure Schematics workspace section, accept the default value that's displayed in the **Name** field. 
-1. Enter the values for your subnet ID, SSH key, and security group in the Deployment values section.
-1. Click **Update**.
-2. From the Validation summary panel, select **I have read and agree to the following license agreements**.
-3. Click **Validate**.
+1. Click **Validate product**.
+1. In the Configure Schematics workspace section, enter the name of your workspace, select a resource group, and click **Next**.
+
+  In the **Tags** field, you can enter a name of a specific tag to attach to your virtual server image. Tags provide a way to organize, track usage costs, and manage access to the resources in your account.
+  {: tip}
+  
+1. In the Deployment values section, enter the values for your subnet ID, SSH key, and security group. Click **Next**.
+1. In the Validation product section, select **I have read and agree to the following license agreements**.
+1. Click **Validate**.
 
 To monitor the progress of the validation process, click **View logs**.
 {: tip}
 
-## Publish the virtual server image  
+## Next steps
 {: #catalog-vsi-publish}
-{: step}
 
-After you complete the validation process, you're ready to publish the virtual server image to your account. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions"), and select **Publish to account**.
+After you complete the validation process, you're ready to publish the virtual server image to your account. From the **Actions** menu, select **Publish to account**.
 
 As a result, the virtual server image is available only to users who have access to the `Sample virtual server image` private catalog in your account.
 
