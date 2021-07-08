@@ -25,7 +25,7 @@ completion-time: 20m
 {:external: target="_blank" .external}
 {:step: data-tutorial-type='step'} 
 
-# Onboarding a sample virtual server image 
+# Onboarding a virtual server image 
 {: #catalog-vsi-tutorial}
 {: toc-content-type="tutorial"}
 {: toc-services="cloud-object-storage, vpc"} 
