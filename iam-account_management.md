@@ -6,7 +6,7 @@ copyright:
 
 lastupdated: "2021-07-08"
 
-keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, role management service, catalog management service, cloud shell service
+keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, role management service, catalog management service, cloud shell service, software instance service
 
 subcollection: account
 
@@ -443,14 +443,14 @@ You can give users access to create, update, and delete custom roles for service
 ### Software instance
 {: #sw-instance-account-management}
 
-You can give users access to create, delete, or update a software instance, and to view the details page for the software instance. 
+You can give users access to create, delete, or update a software instance. And, you can give users access to view the details page and the logs for the software instance. 
 
-| Roles         | Actions                                                                                                                                                    |
+| Roles         | Actions                            |
 |---------------|------------------------------------|
-| Viewer        | View the software instance details page        |
-| Operator      | View the software instance details page. Create, delete, update a software instance.              |
-| Editor        | View the software instance details page. Create, delete, update a software instance.          |
-| Administrator | View the software instance details page. Create, delete, update a software instance.  |
+| Viewer        | View the software instance details page |
+| Operator      | Update a software instance <br><br> View the details page for the software instance |
+| Editor        | Create, delete, update a software instance <br><br> View the details page for the software instance |
+| Administrator | Create, delete, update a software instance <br><br> View the details page for the software instance <br><br> View the logs for the software instance <br><br> Assign IAM permissions |
 {: caption="Table 11. Roles and example actions for the Software instance service" caption-side="top"}
 
 ### Support center
