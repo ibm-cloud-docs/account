@@ -25,13 +25,13 @@ completion-time: 45m
 {:external: target="_blank" .external}
 {:step: data-tutorial-type='step'} 
 
-# Onboarding a sample Operator from a GitHub repository
+# Onboarding an Operator from a GitHub repository
 {: #catalog-operator-gh}
 {: toc-content-type="tutorial"} 
 {: toc-services="Registry"}
 {: toc-completion-time="45m"} 
 
-This tutorial walks you through how to onboard a sample Operator to your account. By completing this tutorial, you learn how to create a private catalog, import the ClusterServiceVersion (CSV) YAML file, validate that it can be installed on a Red Hat Openshift cluster, and make the Operator available to users who have access to your account. 
+This tutorial walks you through how to onboard a sample Operator from a GitHub repository to your account. By completing this tutorial, you learn how to create a private catalog, import the ClusterServiceVersion (CSV) YAML file, validate that it can be installed on a Red Hat Openshift cluster, and make the Operator available to users who have access to your account. 
 {: shortdesc}
 
 ## Before you begin
