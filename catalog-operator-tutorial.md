@@ -119,6 +119,4 @@ To publish the Operator to your account, you're required to validate that it can
 ## Next steps
 {: #catalog-operator-next}
 
-After you complete the validation process, you're ready to publish the Operator to your account. From the **Actions** menu, select **Publish to account**.
-
-As a result, the Operator is available only to users who have access to the `Sample Operator` private catalog in your account.
+After you onboard and validate your Operator, you're ready to publish it to your account. From the **Actions** menu, select **Publish to account**. As a result, the Operator is available only to users who have access to the `Sample Operator` private catalog in your account.
