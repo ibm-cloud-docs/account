@@ -116,9 +116,7 @@ To monitor the progress of the validation process, click **View logs**.
 ## Next steps
 {: #catalog-vsi-publish}
 
-After you complete the validation process, you're ready to publish the virtual server image to your account. From the **Actions** menu, select **Publish to account**.
-
-As a result, the virtual server image is available only to users who have access to the `Sample virtual server image` private catalog in your account.
+After you onboard and validate your virtual server image, you're ready to publish it to your account. From the **Actions** menu, select **Publish to account**. As a result, the virtual server image is available only to users who have access to the `Sample virtual server image` private catalog in your account.
 
 
 
