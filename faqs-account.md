@@ -35,7 +35,7 @@ FAQs for your {{site.data.keyword.cloud}} account might include questions about 
 
 You can create an account by [registering](https://cloud.ibm.com/registration){: external} your email address.
 
-## How do I resolve errors that occur when creating my account?
+## How do I get help with issues with creating an account?
 {: #account-error}
 {: faq}
 
