@@ -295,8 +295,6 @@ The language that is used is based on your web browser settings. To view content
 
 When you register users for {{site.data.keyword.Bluemix_notm}}, you must register each user individually. {{site.data.keyword.Bluemix_notm}} doesn't support batch registration of users.
 
-Go to [{{site.data.keyword.Bluemix}}](https://{DomainName}){: external}, and click **Create an {{site.data.keyword.Bluemix_notm}} account**. Then, complete the account registration form for each individual user.
-
 ## What are tags?
 {: #know-about-tags}
 {: faq}
