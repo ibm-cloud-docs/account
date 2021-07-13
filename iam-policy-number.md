@@ -104,6 +104,7 @@ If you meet all of the listed criteria, you can request a policy limit increase 
 * Account ID
 * Note how many extra policies in the account are required
 * If you are requesting an increase per subject, note how many extra policies per subject are required
+* If you are requesting an increase of policies with access management tags, note how many extra policies with access management tags are required
 * An estimate of when you expect or plan to create extra policies
 
 You are notified of the update to your policy limits through the case.
