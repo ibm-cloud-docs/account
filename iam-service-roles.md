@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-07-13"
+lastupdated: "2021-07-14"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1160,6 +1160,7 @@ Review the available platform and service roles available and the actions mapped
 | `dashdb-for-transactions.console.access` | Allows users to view the Db2 Console. | Manager |
 | `dashdb-for-transactions.console.manage-users` | Allows management of users for database access such as creating new users or assign and IAM user or service id to a database user. | Administrator, Manager |
 | `dashdb-for-transactions.console.monitor` | Allows viewing of metrics and information that allow you to understand the resources your database is using or workload it is running. | Administrator, Editor, Operator, Viewer |
+| `dashdb-for-transactions.console.clone` | clone operation | Administrator, Editor |
 | `dashdb-for-transactions.console.scale` | scale operation | Administrator, Editor, Operator |
 | `dashdb-for-transactions.console.backup` | backup operation | Administrator, Editor, Operator |
 | `dashdb-for-transactions.console.restore` | restore operation | Administrator, Editor, Operator |
