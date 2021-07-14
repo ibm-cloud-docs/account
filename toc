@@ -194,6 +194,7 @@ Managing your account, resources, and access
     {: .topicgroup}
     Managing your account
         email.md
+        distribution_list.md
         account_settings.md
         account-upgrade.md
         create-mult-accounts.md
