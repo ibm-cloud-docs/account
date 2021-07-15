@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-07-14"
+lastupdated: "2021-07-15"
 
 keywords: IBM Cloud notifications, notification preferences, email preferences, user notifications, distribution list, webhooks, Slack webhooks
 
@@ -151,3 +151,17 @@ To add webhooks to a distribution list, complete the following steps:
 
   You can select which {{site.data.keyword.cloud_notm}} account you use by clicking the account switcher in the console. Users in the selected account receive notifications about any events that affect the account. 
   {: note}
+  
+## Adding Slack webhooks to a distribution list 
+{: add-slack-webhook}
+
+You can now add Slack webhooks to your distribution list and receive account-wide {{site.data.keyword.Bluemix_notm}} notifications through them. In order to create a webhook, you need to set up a Slack app, and a URL. You will receive the notifications in a selected Slack channel that your app was installed into. 
+
+To add a Slack webhook, complete the following steps: 
+1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account** > **Notification distribution list**. 
+2. Click **Add**, and select **Slack**. 
+3. Enter a name identifier for your webhook and a Slack webhook URL. The notifications are sent to this unique URL. 
+
+To add a URL, you need to set up an app in Slack and create an Incoming Webhook beforehand. If you create an Incoming Webhook, it gives you the unique URL where you can send the notification message text in the form of a JSON payload. You can get more information on how to create Incoming Webhooks in the following Slack documentation: [Sending messages using Incoming Webhooks](https://api.slack.com/messaging/webhooks){: external}.
+
+
