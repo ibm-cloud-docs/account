@@ -155,13 +155,16 @@ To add webhooks to a distribution list, complete the following steps:
 ## Adding Slack webhooks to a distribution list 
 {: add-slack-webhook}
 
-You can now add Slack webhooks to your distribution list and receive account-wide {{site.data.keyword.Bluemix_notm}} notifications through them. In order to create a webhook, you need to set up a Slack app, and a URL. You will receive the notifications in a selected Slack channel that your app was installed into. 
+You can now add Slack webhooks to your distribution list and receive account-wide {{site.data.keyword.Bluemix_notm}} notifications through them. 
 
-To add a Slack webhook, complete the following steps: 
+To create a webhook, first set up an app in Slack and create the incoming webhook, which provides the unique URL where you can send the notification message text in the form of a JSON payload. You will receive the notifications in the selected Slack channel in which you installed your app. For more information, see [Sending messages using Incoming Webhooks](https://api.slack.com/messaging/webhooks){: external}. 
+
+To add a Slack webhook in the {{site.data.keyword.Bluemix_notm}} console, complete the following steps: 
+
 1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account** > **Notification distribution list**. 
 2. Click **Add**, and select **Slack**. 
-3. Enter a name identifier for your webhook and a Slack webhook URL. The notifications are sent to this unique URL. 
+3. Enter a name for your webhook and a Slack webhook URL. The notifications are sent to this unique URL. 
 
-To add a URL, you need to set up an app in Slack and create an Incoming Webhook beforehand. If you create an Incoming Webhook, it gives you the unique URL where you can send the notification message text in the form of a JSON payload. You can get more information on how to create Incoming Webhooks in the following Slack documentation: [Sending messages using Incoming Webhooks](https://api.slack.com/messaging/webhooks){: external}.
+
 
 
