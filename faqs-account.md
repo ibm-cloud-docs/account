@@ -90,11 +90,12 @@ Yes, when you upgrade to a Pay-As-You-Go or Subscription account, you can contin
 
 Yes, the following options are available depending on your account type:
 
-* You can convert your trial account to a Lite account by providing the email address that's associated with your IBMid in the [Upgrade Tool](https://{DomainName}/registration/startUpgradeToLite){: external}.
-   The risk of data or function loss is possible when you convert your trial account to a Lite account. Some specific data or function allocations in your trial account might not be available for a Lite account. Any loss of data or function can't be recovered after the conversion process is complete. You can't convert your trial account to a Lite account if you have multiple organizations in your account. You must register for a new account by using a different email address.
-   {: note}
 * If you have a feature code from an online course or educational event, you can use it to convert your Lite account to a trial account. Go to the [Account settings](https://{DomainName}/account/settings){: external} page in the console to apply the code to your account.
 * To convert your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://{DomainName}/catalog?contactmodule){: external}. 
+* You can convert your trial account to a Lite account by providing the email address that's associated with your IBMid in the [Upgrade Tool](https://{DomainName}/registration/startUpgradeToLite){: external}. If your trial account is expired, [open a support case](https://{DomainName}/unifiedsupport/cases/form) and request to have it reactivated for one week. During that week, you can convert it to a Lite account.
+
+  The risk of data or function loss is possible when you convert your trial account to a Lite account. Some specific data or function allocations in your trial account might not be available for a Lite account. Any loss of data or function can't be recovered after the conversion process is complete. You can't convert your trial account to a Lite account if you have multiple organizations in your account. You must register for a new account using a different email address.
+  {: note} 
 
 ## Can I convert my Pay-As-You-Go account to a Lite or trial account?
 {: #convertpayg-litetrial}
