@@ -143,7 +143,7 @@ When users install the software, they can view installation instructions from th
 ## Validating the software 
 {: #catalog-validate-product}
 
-When you validate your software, you're confirming that the current version can be successfully installed on the deployment target. The validation steps to vary based on your deployment method. 
+When you validate your software, you're confirming that the current version can be successfully installed on the deployment target. The validation steps vary based on your deployment method. 
 
 To monitor the progress of the validation process, click **View logs**.
 {: tip}
