@@ -191,7 +191,7 @@ To monitor the progress of the validation process, click **View logs**.
 1. If applicable, review the license agreements, and select **I have read and agree to the following license agreements:**. 
 1. Click **Validate**.
 
-### Operator from GitHub repository
+### Operator from Red Hat repository
 {: #catalog-validate-oprh}
 
 1. From the Validate product tab, select an update channel.
