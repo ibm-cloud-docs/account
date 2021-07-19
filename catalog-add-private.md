@@ -151,8 +151,8 @@ To monitor the progress of the validation process, click **View logs**.
 ### Helm chart
 {: #catalog-validate-helm}
 
-1. From the Validate product tab, select your Kubernetes cluster.
-1. Select a namespace or create a new one. 
+1. From the Validate product tab, select your cluster.
+1. If the deployment target is a Kubernetes cluster, select a namespace or create a new one. If the deployment target is a Red Hat OpenShift cluster, select a project or create a new one. 
 1. Click **Next**.
 1. Configure your {{site.data.keyword.bplong_notm}} workspace.
 1. Click **Next**.
