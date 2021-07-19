@@ -180,6 +180,10 @@ Managing your account, resources, and access
         Managing catalogs
             catalog-settings.md
             catalog-audit-logs.md
+
+        {: .topicgroup}
+        Managing product versions
+            catalog-reload-version.md
             catalog-update-private.md
             catalog-dep-restore.md
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-07-06"
+lastupdated: "2021-07-19"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -30,13 +30,13 @@ subcollection: account
 # Onboarding software to your account
 {: #create-private-catalog}
 
-You can build and onboard software solutions to a private catalog to then share them with your organization.
+The process to onboard software to your account includes importing a version to a private catalog, and validating that the version can be successfully installed on the target infrastructure that you require. The software is then available to users in your account. 
 {: shortdesc} 
 
 ## Before you begin
 {: #prereq-create}
 
-1. Review the list of supported software that you can onboard:
+1. Review the list of software that you can onboard:
 
   * Helm charts
   * Terraform templates
@@ -46,13 +46,13 @@ You can build and onboard software solutions to a private catalog to then share 
   * Operator bundles from Red Hat OpenShift registries
   
 1. Upload your soure code in a GitHub repository. For more information, see [Managing releases in a repository](https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository){: external}.
-1. Make sure you're assigned the following IAM access:
+1. Make sure you're assigned the following [IAM access](/docs/account?topic=account-groups):
 
   * Editor role on the catalog management service
   * Viewer role on all resource groups in your account
   * Writer role on the {{site.data.keyword.secrets-manager_short}} service
 
-1. Install the IBM Cloud CLI and the IBM Cloud Schematics plug-in. See [Setting up the CLI](/docs/schematics?topic=schematics-setup-cli) for more information.
+1. Install the {{site.data.keyword.cloud_notm}} CLI and the {{site.data.keyword.bplong_notm}} plug-in. See [Setting up the CLI](/docs/schematics?topic=schematics-setup-cli) for more information.
 
 For containerized apps, complete the following prerequisites:
 
@@ -67,28 +67,28 @@ For virtual server images, complete the following prerequisites:
   3. Create an instance of [{{site.data.keyword.cloud_notm}} Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage) and add your image to a bucket.
  
 
-## Creating your private catalog
+## Creating a private catalog
 {: #create-catalog}
 {: ui}
 
-1. Go to **Manage** > **Catalogs**, and select **Private catalogs**. 
-2. Click **Create**.
-3. Select **Product default** as the catalog type. 
-4. Enter a name and description of your catalog.
-5. Select whether to exclude all products in the {{site.data.keyword.cloud}} catalog from your catalog.
-6. Click **Create**.
+Private catalogs provide a way for you to manage access to products for users in your account. 
 
-## Adding a product to your catalog in the console
+1. Go to **Manage** > **Catalogs** in the {{site.data.keyword.cloud_notm}} console, and click **Create a catalog**. 
+1. Enter a name and description of your catalog.
+1. Select to exclude or include all products in the {{site.data.keyword.cloud_notm}} catalog in your private catalog.
+1. Click **Create**.
+
+## Adding a product to your private catalog
 {: #add-public-repo}
 {: ui}
 
-Complete the following steps to add a product to your catalog:
+Complete the following steps to add software to your private catalog:
 
-1. Click **Private catalogs**, and select your private catalog from the list.
-1. Click **Private products** > **Add**.
-1. Select whether you are adding your product from a private or public repository. 
-1. Enter your repository's URL or TGZ archive. 
-1. If you're adding your product from a private repository, you can choose to provide a personal access token or you can use a secret. Instead of giving users a personal access token, you can give them access to a secret and add the token to a secret and centrally manage all tokens and access the secret allows.
+1. From the Private products page, click **Add**.
+1. Select your deployment method. 
+1. Select whether you are adding your product from a private or public repository. Or, if you're onboarding an Operator from a Red Hat registry, select your Red Hat repository type: **Certified**, **Marketplace**, **Community**.
+
+  If you're adding your product from a private repository, you can provide a personal access token or you can use a secret. Instead of giving users a personal access token, you can give them access to a secret, add the token to a secret, and centrally manage all tokens and access the secret allows.
 
   * If you're using a personal access token, select **No** to indicate you aren't using a secret and provide your personal access token.
   * If you're using a secret, select **Yes** and click **Select from Secrets Manager**. Select your service instance, secret group, and secret. If you don't see your secret, make sure you're using the correct secret group and service instance. 
@@ -96,23 +96,136 @@ Complete the following steps to add a product to your catalog:
     The message `No service instance available` might be displayed if you haven't created a secret or if you don't have the correct access to use secrets, even if you have service instances that are created. 
     {: note}
 
-1. Select a category and your deployment target.
-1. Click **Add**. 
+1. Enter your source URL. If you're importing a version from a public repository, you can review the following list of supported formats per software type:
 
-## Publishing your product in the console
+  * Helm chart: `https://charts.bitnami.com/ibm/apache-8.3.2.tgz`
+  * Node-RED Operator: `https://github.com/IBM-Cloud/isv-operator-product-deploy-sample/blob/main/bundle/1.0.0/manifests/node-red-operator.v1.0.0.clusterserviceversion.yaml`
+  * OVA image: `https://github.com/gcatalog/OVA-sample/blob/main/ova-sample.yaml`
+  * Terraform template: `https://github.com/Cloud-Schematics/2-zone-vpc/releases/download/v1.0.9/terraform-2-zone-vpc-1.0.9.tgz`
+  * Virtual server image with Terraform: `https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample/releases/download/v1.0/isv-vsi-product-deploy-sample.tar.gz`
+
+1. If applicable, enter the version of the software in the format of major version, minor version, and revision.   
+1. Select a catalog category for the product. Categories are used to organize products in the {{site.data.keyword.cloud_notm}} catalog based on function, use, or common solutions.
+1. Click **Add product**. 
+
+## Configuring a product
+{: #catalog-configure-details}
+
+1. From the version list that's displayed on the product details page, click the row that contains your software. 
+1. Review the version details, and click **Next**.
+1. Depending on the deployment method that you previously selected, the additional configuration steps vary.
+
+  * Helm chart: Configure the preinstallation and deployment details. 
+  * Terraform: Configure the deployment details.
+  * Operator from GitHub repository: Set an image pull secret, which is used to access and pull the image from a private container registry. An image pull secret is not required if the image is in a public container registry.
+  * Virtual server image with Terraform: Configure the deployment details. 
+
+1. Click **Next**. 
+
+## Adding license agreements
+{: #catalog-add-license}
+
+If users are required to accept any license agreements beyond the {{site.data.keyword.cloud_notm}} Services Agreement when they install the software, provide the URL to each agreement. 
+
+1. Click **Add license agreements** > **Add license**. 
+1. Enter the name and URL, and click **Update**.
+1. After you enter all additional license agreements, click **Next**.
+
+## Editing your readme file
+{: #catalog-readme-edit}
+
+When users install the software, they can view installation instructions from the Readme tab of your product's catalog details page. The information on the Readme tab is generated from the readme file that you uploaded to your GitHub repository. 
+
+1. From the Edit readme tab, preview how the information in the readme file will be displayed to users when they install the software.
+1. To make updates, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") next to the Readme section title.
+1. Click **Next**.
+
+## Validating a product 
+{: #catalog-validate-product}
+
+When you validate your software, you're confirming that the current version can be successfully installed on the deployment target. The validation steps to vary based on your deployment method. 
+
+To monitor the progress of the validation process, click **View logs**.
+{: tip}
+
+### Helm chart
+{: #catalog-validate-helm}
+
+1. From the Validate product tab, select your Kubernetes cluster.
+1. Select a namespace or create a new one. 
+1. Click **Next**.
+1. Configure your {{site.data.keyword.bplong_notm}} workspace.
+1. Click **Next**.
+1. If applicable, review the license agreements, and select **I have read and agree to the following license agreements:**. 
+1. Click **Validate**.
+
+### Cloud Pak
+{: #catalog-validate-pak}
+
+1. From the Validate product tab, select your Red Hat OpenShift cluster.
+1. Select a project or create a new one. A project is similar to a Kubernetes cluster namespace, and the list is populated from your Red Hat OpenShift environment.
+1. Click **Next**.
+1. Run the preinstallation script. 
+1. Click **Next**.
+1. Configure your {{site.data.keyword.bplong_notm}} workspace.
+1. Click **Next**.
+1. If applicable, review the license agreements, and select **I have read and agree to the following license agreements:**. 
+1. Click **Validate**.
+
+### Terraform
+{: #catalog-validate-tf}
+
+1. From the Validate product tab, configure your {{site.data.keyword.bplong_notm}} workspace.
+1. Click **Next**.
+1. If applicable, review the license agreements, and select **I have read and agree to the following license agreements:**. 
+1. Click **Validate**.
+
+### Operator from GitHub repository
+{: #catalog-validate-opgh}
+
+1. From the Validate product tab, select your Red Hat OpenShift cluster.
+1. Select a project or create a new one. A project is similar to a Kubernetes cluster namespace, and the list is populated from your Red Hat OpenShift environment.
+1. Click **Next**.
+1. Configure your {{site.data.keyword.bplong_notm}} workspace.
+1. Click **Next**.
+1. If applicable, review the license agreements, and select **I have read and agree to the following license agreements:**. 
+1. Click **Validate**.
+
+### Operator from GitHub repository
+{: #catalog-validate-oprh}
+
+1. From the Validate product tab, select an update channel.
+1. Select an approval strategy. 
+1. Select your Red Hat OpenShift cluster.
+1. Select a project or create a new one. A project is similar to a Kubernetes cluster namespace, and the list is populated from your Red Hat OpenShift environment.
+1. Click **Next**.
+1. Configure your {{site.data.keyword.bplong_notm}} workspace.
+1. Click **Next**.
+1. If applicable, review the license agreements, and select **I have read and agree to the following license agreements:**. 
+1. Click **Validate**.
+
+### OVA image
+{: #catalog-validate-ova}
+
+1. From the Validate product tab, review the license agreements, and select **I have read and agree to the following license agreements:**.
+1. Click **Validate**. 
+
+### Virtual server image with Terraform
+{: #catalog-validate-vsi}
+
+1. From the Validate product tab, configure your {{site.data.keyword.bplong_notm}} workspace.
+1. Click **Next**.
+1. If applicable, review the license agreements, and select **I have read and agree to the following license agreements:**. 
+1. Click **Validate**.
+
+## Publishing a product
 {: #validating-software}
 {: ui}
 
-After you add your product to your catalog, you're ready to publish it to your account. Complete the following steps to validate and publish your product:
-
-1. Review the product details by selecting **Configure product**, **Add license**, and **Edit readme**. 
-1. Select **Validate product**. 
-1. Select a cluster. 
-1. Click **Validate** to ensure that your product can be installed successfully. This step is required before you can make it available for users in your account, and the validation can take several minutes. In the Validation summary section, the status is displayed as Validated when the deployment is complete. 
-1. Open the **Actions** menu and select **Publish to account** to make your product available to all users in your account through your private catalog.
+After you validate your software, you're ready to make it available to all users who have access to your private catalog. Open the **Actions** menu, and select **Publish to account**.
 
 
-## Adding a product to your catalog by using the CLI
+## Adding a product to your private catalog
 {: #create-cicd-product}
 {: cli}
 
@@ -152,7 +265,7 @@ Complete the following steps to add your software by using the CLI. You can use 
     ```
     {: codeblock}
 
-## Adding a product to your catalog by using the API
+## Adding a product to your private catalog
 {: create-product-api}
 {: api}
 
