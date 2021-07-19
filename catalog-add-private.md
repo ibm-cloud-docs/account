@@ -30,7 +30,7 @@ subcollection: account
 # Onboarding software to your account
 {: #create-private-catalog}
 
-The process to onboard software to your account includes importing a version to a private catalog, and validating that the version can be successfully installed on the target infrastructure that you require. The software is then available to users in your account. 
+The process to onboard software to your account includes importing a version to a private catalog, and validating that the version can be successfully installed on the deployment target. The software is then available to users in your account. 
 {: shortdesc} 
 
 ## Before you begin
@@ -78,11 +78,11 @@ Private catalogs provide a way for you to manage access to products for users in
 1. Select to exclude or include all products in the {{site.data.keyword.cloud_notm}} catalog in your private catalog.
 1. Click **Create**.
 
-## Adding a product to your private catalog
+## Importing software to your private catalog
 {: #add-public-repo}
 {: ui}
 
-Complete the following steps to add software to your private catalog:
+Complete the following steps to import software to your private catalog:
 
 1. From the Private products page, click **Add**.
 1. Select your deployment method. 
@@ -106,9 +106,9 @@ Complete the following steps to add software to your private catalog:
 
 1. If applicable, enter the version of the software in the format of major version, minor version, and revision.   
 1. Select a catalog category for the product. Categories are used to organize products in the {{site.data.keyword.cloud_notm}} catalog based on function, use, or common solutions.
-1. Click **Add product**. 
+1. Click **Add version**. 
 
-## Configuring a product
+## Configuring the software
 {: #catalog-configure-details}
 
 1. From the version list that's displayed on the product details page, click the row that contains your software. 
@@ -140,7 +140,7 @@ When users install the software, they can view installation instructions from th
 1. To make updates, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") next to the Readme section title.
 1. Click **Next**.
 
-## Validating a product 
+## Validating the software 
 {: #catalog-validate-product}
 
 When you validate your software, you're confirming that the current version can be successfully installed on the deployment target. The validation steps to vary based on your deployment method. 
@@ -191,7 +191,7 @@ To monitor the progress of the validation process, click **View logs**.
 1. If applicable, review the license agreements, and select **I have read and agree to the following license agreements:**. 
 1. Click **Validate**.
 
-### Operator from Red Hat repository
+### Operator from Red Hat registry
 {: #catalog-validate-oprh}
 
 1. From the Validate product tab, select an update channel.
@@ -218,14 +218,14 @@ To monitor the progress of the validation process, click **View logs**.
 1. If applicable, review the license agreements, and select **I have read and agree to the following license agreements:**. 
 1. Click **Validate**.
 
-## Publishing a product
+## Publishing the software
 {: #validating-software}
 {: ui}
 
 After you validate your software, you're ready to make it available to all users who have access to your private catalog. Open the **Actions** menu, and select **Publish to account**.
 
 
-## Adding a product to your private catalog
+## Importing software to your private catalog
 {: #create-cicd-product}
 {: cli}
 
@@ -265,7 +265,7 @@ Complete the following steps to add your software by using the CLI. You can use 
     ```
     {: codeblock}
 
-## Adding a product to your private catalog
+## Importing software to your private catalog
 {: create-product-api}
 {: api}
 
