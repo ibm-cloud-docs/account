@@ -247,6 +247,14 @@ Managing your account, resources, and access
         /cli/cli-ibmcloud_catalog
         /cli/cli-ibmcloud_commands_resource
 
+    {: .topicgroup}
+    Terraform reference
+        [Catalog Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/cm_catalog){: external}
+        [Enterprise Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/enterprise){: external}
+        [Global Tagging](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_tag){: external}
+        [Identity & Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_access_group){: external}
+        [Resource Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_group){: external}
+
     crn.md
     iam-service-roles.md
     iam-login-flows.md
