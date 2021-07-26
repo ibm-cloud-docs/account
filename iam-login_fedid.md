@@ -4,9 +4,9 @@ copyright:
 
   years: 2015，2021
 
-lastupdated: "2021-06-11"
+lastupdated: "2021-07-26"
 
-keywords: federated ID, password, enterprise SSO, single sign-on ID, API key login, one-time passcode login, temporary credential, to login, logging in
+keywords: federated ID, password, enterprise SSO, single sign-on ID, API key login, one-time passcode login, temporary credential, to login, logging in, trusted profiles
 
 subcollection: account
 
@@ -33,16 +33,13 @@ subcollection: account
 As a federated user that uses a corporate or enterprise single sign-on ID, you can log in to {{site.data.keyword.Bluemix}} from the console by using a federated ID and password. You can also log in from the command-line interface (CLI) by using a one-time passcode or an API key.
 {: shortdesc}
 
-By using federated IDs, you don't need to set up new login credentials specific to {{site.data.keyword.cloud_notm}}, for example by using IBMid. Instead, users in your organization can easily log in to {{site.data.keyword.cloud_notm}} with their organization credentials through your identity provider. 
+By using federated IDs, you don't need to set up new login credentials specific to {{site.data.keyword.cloud_notm}}, for example, by using IBMid. Instead, users in your organization can easily log in to {{site.data.keyword.cloud_notm}} with their organization credentials through your identity provider. 
 
-When a user logs in, the user gets an IAM token, which is a temporary credential that expires after 1 hour. After that time, the token must be refreshed to secure the connection and to continue accessing account resources to which they are assigned access. For more information about using federated IDs, see [Setting up your IBM Cloud account](/docs/account?topic=account-account-getting-started).
+When a user logs in, the user gets an IAM token, which is a temporary credential that expires after 1 hour. After that time, the token must be refreshed to secure the connection and to continue accessing account resources to which they are assigned access. For more information about using federated IDs, see [Setting up your {{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-account-getting-started).
 
 ## Using the console to log in
 {: #login_console}
 {: ui}
-
-If you need to create an account, go to the [registration page](https://cloud.ibm.com/registration). 
-{: note}
 
 Use the following steps to log in to the {{site.data.keyword.cloud_notm}} console: 
 
@@ -50,7 +47,20 @@ Use the following steps to log in to the {{site.data.keyword.cloud_notm}} consol
 2. Enter your ID, and click **Continue**. 
 3. Enter your password.
 	
-Completing these steps takes you to the {{site.data.keyword.cloud_notm}} dashboard. 
+After you log in, you are directed to the {{site.data.keyword.cloud_notm}} dashboard, which provides a variety of development, account management, and infrastructure widgets.
+
+## Using trusted profiles to log in to the console
+{: #login_console_trustedprofile}
+{: ui}
+
+Account administrators use trusted profiles to manage specific access for account users. Each profile includes a different set of access policies that map to the roles or actions that you need to be productive. For example a developer may use access group membership to do their daily work, but at some point during the week they may need to do some operations work in production environments. In this case the developer would authenticate themselves and then take explicit action to assume a trusted profile that has the access policies they need to do operations work in production.
+
+Complete the following steps to log in by using a trusted profile:
+
+1. Go to the [{{site.data.keyword.cloud_notm}} login page](cloud.ibm.com/login).
+2. Enter your IBMid, or if you are using single sign-on (SSO), enter your company email address, and click **Continue**. 
+3. Enter your password.
+4. Click **Select** to select the trusted profile that your account administrator created for you.
 
 ## Using the CLI to log in
 {: #usingthecli_login}

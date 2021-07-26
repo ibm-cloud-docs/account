@@ -4,9 +4,9 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-06-11"
+lastupdated: "2021-07-26"
 
-keywords: user session, inactivity, sign out, concurrent, login session
+keywords: user session, inactivity, sign out, concurrent, login session, trusted profiles
 
 subcollection: account
 
@@ -50,6 +50,11 @@ To update your user's active sessions settings, complete the following steps:
 1. From the Login session section, click the **Edit** icon ![Edit icon](../icons/icon_write.svg "Edit") from the Active sessions tile. 
 1. Enter the time limit. The longest a session can last is 720 hours. 
 1. Click **Save**. 
+
+### Setting session duration for trusted profiles
+{: #sessions-active-tp}
+
+For more information, see [Updating trusted profiles](/docs/account?topic=account-trusted-profile-update#session-limit-tp).
 
 ## Setting the sign out due to inactivity duration
 {: #sessions-inactivity}

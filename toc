@@ -58,6 +58,13 @@ Managing your account, resources, and access
             iam-saml-federation.md
 
         {: .topicgroup}
+        Managing trusted profiles
+            trustedprofile-create.md
+            trustedprofile-update.md
+            trustedprofile-remove.md
+            trustedprofile-iam-token.md
+
+        {: .topicgroup}
         Managing access
             iam-groups.md
             iam-roles-management.md
