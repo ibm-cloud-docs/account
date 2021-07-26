@@ -311,6 +311,8 @@ Managing your account, resources, and access
         ts-upgrade.md
         ts-email-issue.md
         ts-dash-access.md
+        ts-trusted-profile-classic.md
+
 
     {: .topicgroup}
     Troubleshooting enterprises

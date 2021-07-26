@@ -64,7 +64,7 @@ Complete the following steps to define which federated users can access specific
   1. Based on your level of access, you can assign IAM policies and classic infrastructure permissions. Select **IAM services** or **Account management** to continue.
   1. For **IAM services** and **Account management**, select the option for all resources or only specific resources based on attributes. Select any combination of roles and permissions to define the scope of access, and click **Add** > **Create**.
   
-Trusted profiles are not currently supported in accounts with Classic Infrastructure permissions. For more information, see [FAQs about IAM](). 
+The Classic Infrastructure and Softlayer API is not currently enabled for users that log in to {{site.data.keyword.cloud_notm}} by applying a trusted profile. For more information, see [Troubleshooting account management](/docs/account?topic=account-troubleshoot-trusted-profile-classic). 
 {: important}
     
 ## Establishing trust with compute resources
@@ -89,6 +89,3 @@ Complete the following steps to set up better control over granting access to co
 5. (Optional) Create an access policy. 
   1. Based on your level of access, you can assign IAM policies and classic infrastructure permissions. Select **IAM services** or **Account management** to continue.
   2. For IAM services and account management services, select the option for all resources or only specific resources based on attributes. Select any combination of roles and permissions to define the scope of access, and click **Add** > **Create**.
-
-Trusted profiles are not currently supported in accounts with Classic Infrastructure permissions. For more information, see [FAQs about IAM](). 
-{: important}
