@@ -61,8 +61,11 @@ Complete the following steps to define which federated users can access specific
     * Click **View identity provider (IdP) data** to search attribute names and values in your own personal data from your identity provider. For more information, see [Using IdP data to build trusted profiles](/docs/account?topic=account-idp-integration#trusted-profiles-idp-data).
   1. Define the session duration for how long a user can apply the profile before they must reauthenticate, and click **Continue**.
 1. (Optional) Create access policy. 
-  1. Based on your level of access, you can assign IAM policies and classic infrastructure permissions. Select **IAM services**, **Account management**, or **Classic infrastructure** to continue.
+  1. Based on your level of access, you can assign IAM policies and classic infrastructure permissions. Select **IAM services** or **Account management** to continue.
   1. For **IAM services** and **Account management**, select the option for all resources or only specific resources based on attributes. Select any combination of roles and permissions to define the scope of access, and click **Add** > **Create**.
+  
+Trusted profiles are not currently supported in accounts with Classic Infrastructure permissions. For more information, see [FAQs about IAM](). 
+{: important}
     
 ## Establishing trust with compute resources
 {: #create-profile-compute}
@@ -84,6 +87,8 @@ Complete the following steps to set up better control over granting access to co
 
   3. If you select **Specific resources**, you can establish trust with one or more existing compute resource instances. For example, a Kubernetes cluster. 
 5. (Optional) Create an access policy. 
-  1. Based on your level of access, you can assign IAM policies and classic infrastructure permissions. Select **IAM services**, **Account management**, or **Classic infrastructure** to continue.
+  1. Based on your level of access, you can assign IAM policies and classic infrastructure permissions. Select **IAM services** or **Account management** to continue.
   2. For IAM services and account management services, select the option for all resources or only specific resources based on attributes. Select any combination of roles and permissions to define the scope of access, and click **Add** > **Create**.
- 
+
+Trusted profiles are not currently supported in accounts with Classic Infrastructure permissions. For more information, see [FAQs about IAM](). 
+{: important}
