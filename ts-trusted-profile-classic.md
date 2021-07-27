@@ -27,16 +27,15 @@ content-type: troubleshoot
 {: #troubleshoot-trusted-profile-classic}
 {: troubleshoot}
 
-You need to log in to an account without applying a trusted profile.
+You need to log in to an account without selecting a trusted profile.
 {: shortdesc}
 
-When I try to log in by applying a trusted profile, the following error message is displayed:
+I'm unable to use Classic Infrastructure and the Softlayer API when I log in to {site.data.keyword.cloud_notm}} by selecting a trusted profile. 
 {: tsSymptoms}
 
-`The Classic Infrastructure and Softlayer API is not available.`
    
-The Classic Infrastructure and Softlayer API is not currently enabled for users that log in to {{site.data.keyword.cloud_notm}} by applying a trusted profile. 
+The Classic Infrastructure and Softlayer API is not currently enabled for users that log in to {{site.data.keyword.cloud_notm}} by selecting a trusted profile. 
 {: tsCauses}
 
-If you need to use Classic Infrastructure or Softlayer permissions, log out and log back in without applying a trusted profile by clicking **Continue** on the trusted profiles landing page.
+If you need to use Classic Infrastructure or Softlayer permissions, log out and log back in without selecting a trusted profile by clicking **Continue** on the trusted profiles landing page. 
 {: tsResolve}
