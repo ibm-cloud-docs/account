@@ -24,6 +24,7 @@ Managing your account, resources, and access
     iam-quickstart.md
     tagging-resources-tutorial.md
     dash-tutorial.md
+    trustedprofiles-compute-tutorial.md
 
     {: .topicgroup}
     Sharing software with users in your account
@@ -56,6 +57,13 @@ Managing your account, resources, and access
             iam-idp-integration.md
             iam-connect_dedicated_id.md
             iam-saml-federation.md
+
+        {: .topicgroup}
+        Managing trusted profiles
+            trustedprofile-create.md
+            trustedprofile-update.md
+            trustedprofile-remove.md
+            trustedprofile-iam-token.md
 
         {: .topicgroup}
         Managing access
@@ -303,6 +311,8 @@ Managing your account, resources, and access
         ts-upgrade.md
         ts-email-issue.md
         ts-dash-access.md
+        ts-trusted-profile-classic.md
+
 
     {: .topicgroup}
     Troubleshooting enterprises

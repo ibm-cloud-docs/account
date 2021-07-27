@@ -4,7 +4,7 @@ copyright:
 
   years: 2020, 2021
 
-lastupdated: "2021-06-11"
+lastupdated: "2021-07-26"
 
 keywords: identity provider, IdP, App ID, IAM, integration, IdP SSO, third-party authentication, dynamic rules, external identity provider
 
@@ -30,12 +30,13 @@ A more commonly used authentication method in {{site.data.keyword.cloud_notm}} t
 
 If you choose to use an external IdP reference through IAM, each account can have up to five IdP references added through the Identity providers page in the Access (IAM) section of the console. You set up your IdP reference by selecting which {{site.data.keyword.appid_short}} instance to integrate with IAM. Then, the IdP reference is given a random realm ID that is the unique prefix for users of that {{site.data.keyword.appid_short}} service instance. 
 
-Setting up the integration between your {{site.data.keyword.appid_short}} instance, which is already configured with your IdP, and your {{site.data.keyword.cloud_notm}} account makes it so you can continue to manage all users externally in your IdP. It also simplifies the log in process to your cloud account for users in your enterprise. After the integration is complete, you must provide your users with a custom URL that they use to login each time. There is no need to invite anyone to your account because if they exist as a user in your connected IdP's user repository, they can log in with their credentials through the custom URL.
+Setting up the integration between your {{site.data.keyword.appid_short}} instance, which is already configured with your IdP, and your {{site.data.keyword.cloud_notm}} account makes it so you can continue to manage all users externally in your IdP. It also simplifies the log in process to your cloud account for users in your enterprise. After the integration is complete, you must provide your users with a custom URL that they use to log in each time. There is no need to invite anyone to your account because if they exist as a user in your connected IdP's user repository, they can log in with their credentials through the custom URL.
 
 ## Before you begin
 {: #idp-prereqs}
 
-* Create an instance of {{site.data.keyword.appid_short}} from the {{site.data.keyword.cloud_notm}} catalog. For more information, see the [Getting started tutorial](/docs/appid?topic=appid-managing-idp).
+* To decide which is the right federation option for you, check the [IBM Cloud SAML Federation Guide](https://www.ibm.com/cloud/blog/ibm-cloud-saml-federation-guide){: external}.
+* Create an instance of {{site.data.keyword.appid_short}} from the {{site.data.keyword.cloud_notm}} catalog. For more information, see the [Getting started tutorial](/docs/appid?topic=appid-getting-started).
 * Configure your {{site.data.keyword.appid_short}} instance. For more information about how to do this depending on your use case, see the {{site.data.keyword.appid_short}} documentation about [managing authentication](/docs/appid?topic=appid-managing-idp).
 * Make sure you have the required access to view and manage IdP references, if you aren't the account owner. You must be assigned the operator role or higher on the {{site.data.keyword.appid_short}} instance and the operator or administration role on the [IAM Identity Service](/docs/account?topic=account-account-services#identity-service-account-management). 
 
@@ -59,11 +60,11 @@ If you decide to use Cloud Directory as an authentication method, disable the op
 ### Setting IAM-specific attributes in {{site.data.keyword.appid_short}} tokens
 {: #iam-idp-attributes}
 
-For IAM to work correctly with your external identity provider, you must ensure that the {{site.data.keyword.appid_short}}  instance provides all of the required attributes. See the following table for the required attributes:
+For IAM to work correctly with your external identity provider, you must ensure that the {{site.data.keyword.appid_short}} instance provides all of the required attributes. See the following table for the required attributes:
 
 | Attribute          | {{site.data.keyword.appid_short}} ID Token Claim            | Source             | Description      |
 |--------------------|------------------------------------------------------|--------------------------|-------------------|
-| identifier (required)   | id        | {{site.data.keyword.appid_short}} generated     | A unique identifier that identifies a user. It can't be changed during the life time of that user. {{site.data.keyword.appid_short}} creates this identifier. |
+| identifier (required)   | ID        | {{site.data.keyword.appid_short}} generated     | A unique identifier that identifies a user. It can't be changed during the life time of that user. {{site.data.keyword.appid_short}} creates this identifier. |
 | email (required)        | email    | Mapped from SAML assertion "email", which is mandatory for Cloud Directory and SAML configurations. | The user's email address. |
 | username (recommended)  | preferred_username if present, otherwise sub    | Mapped from SAML assertion "preferred_username", "username", "user_name" or "userName" if available. Otherwise, the {{site.data.keyword.appid_short}} generated "sub" claim is used | When you work with the CLI, APIs, or the {{site.data.keyword.containerlong_notm}}, the username displays. A username is often an email address, but can also be a different value. If the username is not provided by {{site.data.keyword.appid_short}}, IAM uses the identifier instead. |
 | firstname (recommended) | given_name if available, otherwise "notset" as default  | Mapped from SAML assertion "given_name", "givenname", "givenName", "first_name", "firstname" or "firstName" if available, otherwise IAM uses the constant "notset" | The first name of the user that logs in. |
@@ -101,9 +102,9 @@ Your IdP reference is now available on the Identity providers list and the realm
 
 After your {{site.data.keyword.appid_short}} instance is connected to your IdP, and your {{site.data.keyword.appid_short}} instance is integrated with IAM, your users can start logging in to your account. If the IdP reference is set as the default, then you can share the **Default ID URL** for your account. 
 
-However, since you can have only one set as the default, but you can have up to five set-up in your account, you might need to get the URL for another IdP reference: 
+However, since you can have only one set as the default, but you can have up to five set up in your account, you might need to get the URL for another IdP reference: 
 
-1. From the Identity provider pages, click the **Actions** icon ![List of actions icon](../icons/action-menu-icon.svg "Actions") menu for the row of the IdP reference you need a URL for.
+1. From the Identity provider pages, click the **Actions** icon ![List of actions icon](../icons/action-menu-icon.svg "Actions") for the row of the IdP reference you need a URL for.
 2. Select **View IDP URL**. 
 3. Copy the **IdP URL** link to give to users to log in. 
 
@@ -127,3 +128,18 @@ If you are working with an external identity provider, it is recommended that yo
 Don't invite users by using the {{site.data.keyword.cloud_notm}} invite process since this works only for users with IBMids. If you used {{site.data.keyword.cloud_notm}} invites for your account, you would end up with a mixture of users coming from IBMid and users being automatically onboarded from your external identity provider. This can easily lead to confusion because IBMid users log in through the {{site.data.keyword.cloud_notm}} website while users from your external identity provider must log in with a special URL. This can lead to duplicate usernames in one account, which is strongly discouraged due to limitations in the {{site.data.keyword.containershort}} as previously mentioned.
 {: tip}
 
+## Using IdP data to build trusted profiles
+{: #trusted-profiles-idp-data}
+
+After you have enabled and connected your identity provider, you can start [creating trusted profiles](/docs/account?topic=account-create-trusted-profile). To build trust with federated users, you can use the personal data from your identity provider to search attribute names and values that exist in your organization.
+
+The conditions that you create filter out or allow federated users to apply the trusted profile depending on which attributes the federated users are assigned in your corporate user directory. When you create a trusted profile, you can view identity provider (IdP) data to see your own user claims from your organizations corporate user directory. 
+
+Let's say there is an attribute that is called `groups` that identifies departments, teams, and more granular internal organizations within your company. If there are developers in the US on the finance team that need the same level of access for a project, you might create a trusted profile the following conditions:
+  * Allow users when `groups` equals `finance-dev`
+  * Allow users when `country` equals `us`
+
+To make sure that your conditions allow only the federated users you intend to grant access to, contact your corporate directory architect for more information on available attributes. 
+
+It is recommended to create narrow conditions. You share the same identity provider URL as everyone in your organization, so if a claim rule is too open, you might let users apply a trusted profile with access to your account unintentionally.
+{: important}

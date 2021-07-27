@@ -2,7 +2,7 @@
 
 copyright:
    years: 2020, 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-07-26"
 
 keywords: get started with IAM, getting started with Identity and Access Management tutorial, IAM tutorial, IAM quick start, resource group, access group, access policy, inviting users
 
@@ -23,7 +23,7 @@ completion-time: 10m
 {:step: data-tutorial-type='step'}
 {:step-next: data-tutorial-type='step-next'}
 
-# Assigning access to resources
+# Assigning access to resources by using access groups
 {: #access-getstarted}
 {: toc-content-type="tutorial"} 
 {: toc-completion-time="10m"}
