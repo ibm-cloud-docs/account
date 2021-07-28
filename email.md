@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-07-15"
+lastupdated: "2021-07-28"
 
 keywords: platform notifications, email notifications, IBM Cloud notifications, notification preferences, email preferences, user notifications, infrastructure notifications
 
@@ -46,7 +46,7 @@ Your platform email notifications settings are tied to your account.
   * To stay up to date with changes to the {{site.data.keyword.Bluemix_notm}} platform and products, go to **Notification preferences** > **Announcements**. To select a subcategory, set **Emails** to the on position.
   * To receive notifications about invoices, payments, subscription and promo codes, or spending and usage warnings, select **Billing and usage**. Then, click **Manage** to set up spending notifications.
   * To receive updates about the status of your infrastructure orders, select **Ordering**.  
-  * To manage the notification distribution list in regard to your account, subscriptions or security and compliance alerts, click **Additional notification preferences** > **Manage**.
+  * To manage the notification distribution list in regard to your account, subscriptions, security and compliance alerts or marketing communications, click **Additional notification preferences** > **Manage**.
   * By default, all {{site.data.keyword.Bluemix_notm}} platform notifications are turned off.
 
 To quickly turn off emails for the selected account or for all other accounts, click **Actions**, and select your preference.
