@@ -249,6 +249,19 @@ If you have more than one account, you can click your account name in the consol
 
 ![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-faq.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.")
 
+
+## Can I move data between {{site.data.keyword.Bluemix_notm}} accounts?
+{: #move-between-accounts}
+{: faq}
+
+Data can't be directly migrated from one {{site.data.keyword.Bluemix_notm}} account to another. But, you might be able to re-create configurations and add them to another account. Consider the following approaches:
+
+* Save your applications and replicate them in different accounts by using GitHub or another code repository. 
+* Review the applicable documentation to determine if your infrastructure services can be backed up and re-created in different accounts.
+* Use manifests and other documented methods to rebuild your applications and services by using documented methods to back up and restore your data.
+
+Users with a Basic, Advanced, or Premium support plan can open a [Support case](https://{DomainName}/unifiedsupport/supportcenter){: external}  for assistance with data migration questions.
+
 ## Can I bookmark a console page for a specific account?
 {: #bookmark-page-account}
 {: faq}
