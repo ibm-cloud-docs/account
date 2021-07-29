@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-06-22"
+lastupdated: "2021-07-29"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite
 
@@ -182,6 +182,12 @@ To reset your VPN password, complete the following steps:
   2. Select the user.
   3. From the VPN subnets section, click the **Edit** icon ![Edit icon](../icons/icon_write.svg "Edit") to enter a new VPN password.
   5. Click **Apply**.
+
+## What can I do if I forget my password?
+{: #forgot-password}
+{: faq}
+
+If you don't remember your password for your IBMid and can't log in to {{site.data.keyword.Bluemix_notm}}, you can reset your password using our [automated system](https://www.ibm.com/account/reg/us-en/reset-password){: external}. 
 
 ## Can I remove my personal data from {{site.data.keyword.Bluemix_notm}}?
 {: #remove-pi}
