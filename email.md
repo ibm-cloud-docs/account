@@ -123,3 +123,16 @@ Users already present in IBM Cloud will receive an email and a notification with
 The invitations expire after 30 days. New users to {{site.data.keyword.cloud_notm}} can only accept an invitation by using the invitation link they received through email.
 {: note}
 
+
+## Managing marketing communications
+{: #marcom-notifications}
+{: faq}
+
+You might receive notifications about significant technical enhancements, changes to the terms of service, plan changes, pricing changes, and the future removal of a product from the {{site.data.keyword.Bluemix_notm}} catalog. With a few exceptions, these announcements are published to the [{{site.data.keyword.Bluemix_notm}} blog](https://www.ibm.com/cloud/blog/announcements){: external}. 
+
+Use the following steps to update your preferences: 
+
+1. Log in to the [{{site.data.keyword.IBM_notm}} Privacy Preference Center](https://myibm.ibm.com/profile/dataprivacypreferences/consent/us-en){: external}  by using your {{site.data.keyword.Bluemix_notm}} credentials. The toggle indicates if your entered credential is your preferred method of contact. 
+1. Click **Next**.
+1. Deselect **Public cloud** to stop marketing communications. 
+1. Click **Save**.
