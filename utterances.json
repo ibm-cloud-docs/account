@@ -394,9 +394,7 @@
     "deactivate account",
     "unregister the account", 
     "do not want to be a member of the cloud",
-    "disable account"
-  ],
-  "deleteaccount": [
+    "disable account",
     "delete my account",
     "account delete",
     "how can I delete",
