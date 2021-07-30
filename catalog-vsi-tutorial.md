@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-07-07"
+lastupdated: "2021-07-30"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog
 
@@ -25,13 +25,13 @@ completion-time: 20m
 {:external: target="_blank" .external}
 {:step: data-tutorial-type='step'} 
 
-# Onboarding a virtual server image 
+# Onboarding a virtual server image with Terraform
 {: #catalog-vsi-tutorial}
 {: toc-content-type="tutorial"}
 {: toc-services="cloud-object-storage, vpc"} 
 {: toc-completion-time="20m"}
 
-This tutorial walks you through how to onboard a sample virtual server image to your account. By completing this tutorial, you learn how to create a private catalog, import the sample, validate that it can be installed on a selected deployment target, and make the virtual server image available to users who have access to your account.
+This tutorial walks you through how to onboard a sample virtual server image with Terraform to your account. By completing this tutorial, you learn how to create a private catalog, import the sample, validate that it can be installed on a selected deployment target, and make the virtual server image available to users who have access to your account.
 {: shortdesc}
 
 This tutorial uses [sample Terraform code](https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample){: external} as part of the process to onboard a virtual server image. As you complete the tutorial, adapt each step to match your organization's goal. 
@@ -52,7 +52,7 @@ This tutorial uses [sample Terraform code](https://github.com/IBM-Cloud/isv-vsi-
 
 1. Go to **Manage** > **Catalogs**, and click **Create a catalog**. 
 1. Select **Product default** as the catalog type. 
-1. Enter the name of your catalog, for example, `Sample virtual server image catalog`.
+1. Enter the name of your catalog, for example, `Sample virtual server image`.
 1. Select **No products** to exclude all products in the {{site.data.keyword.cloud}} catalog from your catalog.
 1. Click **Create**.
 
@@ -66,6 +66,13 @@ This tutorial uses [sample Terraform code](https://github.com/IBM-Cloud/isv-vsi-
 1. Enter `https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample/releases/download/v1.0/isv-vsi-product-deploy-sample.tar.gz` as your source URL.
 1. Enter `1.0.0` as the software version.
 1. Click **Add product**.
+
+## Review the version details
+{: #catalog-vsi-review-version}
+{: step}
+
+1. From the Version list table, click the row that contains your virtual server image.
+1. Review your version details from the Review the version details section. There are no actions that you need to take. When you are ready to move on, click **Next**.
 
 ## Configure the deployment details
 {: #catalog-vsi-cfg-deployment}
@@ -86,6 +93,8 @@ This tutorial uses [sample Terraform code](https://github.com/IBM-Cloud/isv-vsi-
 | `vsi_instance_name` | The name of the virtual server instance. | Yes | No |
 | `vsi_profile` | The profile of compute CPU and memory resources to use when creating the virtual server instance. | No | No |
 | `vsi_security_group` | The name of the security group that is created. | Yes | No |
+
+1. Click **Next**.
   
 ## Set the license requirements
 {: #catalog-vsi-cfg-license}
@@ -95,28 +104,37 @@ If users are required to accept any license agreements beyond the {{site.data.ke
 
 1. Click **Add license agreements** > **Add**. 
 2. Enter the name and URL, and click **Update**.
+3. Click **Next**.
+
+## Review your readme file 
+{: #catalog-vsimage-onboard-readme}
+{: step}
+
+The TGZ file that you imported to your private catalog includes a readme file that provides instructions for installing the virtual server image. If you want to make updates to the readme file, you can edit it directly from your private catalog. For the purposes of this tutorial, the following steps describe how to edit the description of the readme file.
+
+1. Click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit"), and update the description with the following sentence:
+
+  `Create and deploy a virtual server with ease by using a custom image.`
+
+1. Click **Next**. 
 
 ## Validate the virtual server image
 {: #catalog-vsi-validate}
 {: step}
 
-1. Click **Validate product**.
-1. In the Configure Schematics workspace section, enter the name of your workspace, select a resource group, and click **Next**.
+1. From the Validate product tab, enter the name of your Schematics workspace, select a resource group, and click **Next**.
 
   In the **Tags** field, you can enter a name of a specific tag to attach to your virtual server image. Tags provide a way to organize, track usage costs, and manage access to the resources in your account.
   {: tip}
   
-1. In the Deployment values section, enter the values for your subnet ID, SSH key, and security group. Click **Next**.
+1. From the Deployment values section, review your parameter values, and click **Next**.
 1. In the Validation product section, select **I have read and agree to the following license agreements**.
 1. Click **Validate**.
 
-To monitor the progress of the validation process, click **View logs**.
-{: tip}
+  To monitor the progress of the validation process, click **View logs**.
+  {: tip}
 
-## Next steps
+## Next steps  
 {: #catalog-vsi-publish}
 
 After you onboard and validate your virtual server image, you're ready to publish it to your account. From the **Actions** menu, select **Publish to account**. As a result, the virtual server image is available only to users who have access to the `Sample virtual server image` private catalog in your account.
-
-
-

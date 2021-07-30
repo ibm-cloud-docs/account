@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-07-19"
+lastupdated: "2021-07-30"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -30,7 +30,7 @@ subcollection: account
 # Onboarding software to your account
 {: #create-private-catalog}
 
-The process to onboard software to your account includes importing a version to a private catalog, and validating that the version can be successfully installed on the deployment target. The software is then available to users in your account. 
+The process to onboard software to your account includes importing a version to a private catalog, validating that the version can be successfully installed on the target infrastructure that you require, and publishing the software to your account. The software is then available to users in your account. 
 {: shortdesc} 
 
 ## Before you begin
@@ -38,14 +38,14 @@ The process to onboard software to your account includes importing a version to 
 
 1. Review the list of software that you can onboard:
 
-  * Helm charts
+  * Helm charts on Kubernetes and {{site.data.keyword.redhat_notm}} {{site.data.keyword.openshiftshort}} clusters
   * Terraform templates
   * OVA images deployed on VMware vCenter Server
   * Virtual server images with Terraform deployed on VPC infrastructure
-  * Operators from GitHub repositories deployed on Red Hat OpenShift
+  * Operators with a CSV file or Operator bundles with a TGZ file from GitHub repositories that are deployed on Red Hat OpenShift
   * Operator bundles from Red Hat OpenShift registries
   
-1. Upload your soure code in a GitHub repository. For more information, see [Managing releases in a repository](https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository){: external}.
+1. Upload your source code in a GitHub repository. For more information, see [Managing releases in a repository](https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository){: external}.
 1. Make sure you're assigned the following [IAM access](/docs/account?topic=account-groups):
 
   * Editor role on the catalog management service
@@ -75,7 +75,7 @@ Private catalogs provide a way for you to manage access to products for users in
 
 1. Go to **Manage** > **Catalogs** in the {{site.data.keyword.cloud_notm}} console, and click **Create a catalog**. 
 1. Enter a name and description of your catalog.
-1. Select to exclude or include all products in the {{site.data.keyword.cloud_notm}} catalog in your private catalog.
+1. Select to exclude or include all products in the {{site.data.keyword.cloud_notm}} catalog in your private catalog. For more information about how this affects what products are visible in the catalog, see [Managing catalog settings](/docs/account?topic=account-filter-account&interface=ui).
 1. Click **Create**.
 
 ## Importing software to your private catalog
@@ -90,7 +90,7 @@ Complete the following steps to import software to your private catalog:
 
   If you're adding your product from a private repository, you can provide a personal access token or you can use a secret. Instead of giving users a personal access token, you can give them access to a secret, add the token to a secret, and centrally manage all tokens and access the secret allows.
 
-  * If you're using a personal access token, select **No** to indicate you aren't using a secret and provide your personal access token.
+  * If you're using a personal access token, select **No** to indicate that you aren't using a secret and provide your personal access token.
   * If you're using a secret, select **Yes** and click **Select from Secrets Manager**. Select your service instance, secret group, and secret. If you don't see your secret, make sure you're using the correct secret group and service instance. 
     
     The message `No service instance available` might be displayed if you haven't created a secret or if you don't have the correct access to use secrets, even if you have service instances that are created. 
@@ -99,28 +99,59 @@ Complete the following steps to import software to your private catalog:
 1. Enter your source URL. If you're importing a version from a public repository, you can review the following list of supported formats per software type:
 
   * Helm chart: `https://charts.bitnami.com/ibm/apache-8.3.2.tgz`
-  * Node-RED Operator: `https://github.com/IBM-Cloud/isv-operator-product-deploy-sample/blob/main/bundle/1.0.0/manifests/node-red-operator.v1.0.0.clusterserviceversion.yaml`
+  * Node-RED Operator: `https://github.com/IBM-Cloud/operator-bundle-sample/archive/refs/tags/v0.0.3.tar.gz`
+  * Operator bundle from a {{site.data.keyword.redhat_notm}} {{site.data.keyword.openshiftshort}} registry: For an example, select the `Akka Cluster Operator` from the list of available Operators in the Certified repository. 
   * OVA image: `https://github.com/gcatalog/OVA-sample/blob/main/ova-sample.yaml`
   * Terraform template: `https://github.com/Cloud-Schematics/2-zone-vpc/releases/download/v1.0.9/terraform-2-zone-vpc-1.0.9.tgz`
   * Virtual server image with Terraform: `https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample/releases/download/v1.0/isv-vsi-product-deploy-sample.tar.gz`
 
-1. If applicable, enter the version of the software in the format of major version, minor version, and revision.   
+1. If applicable, enter the version of the software in the format of major version, minor version, and revision. For example. enter version 1.1.2.    
 1. Select a catalog category for the product. Categories are used to organize products in the {{site.data.keyword.cloud_notm}} catalog based on function, use, or common solutions.
 1. Click **Add version**. 
 
 ## Configuring the software
 {: #catalog-configure-details}
 
+### Helm chart
+{: #catalog-config-helm}
+
 1. From the version list that's displayed on the product details page, click the row that contains your software. 
 1. Review the version details, and click **Next**.
-1. Depending on the deployment method that you previously selected, the additional configuration steps vary.
+1. Configure the preinstallation, and click **Next**.
+1. Configure the deployment details by setting the access that's required to run the installation script and setting the deployment values, and click **Next**. 
 
-  * Helm chart: Configure the preinstallation and deployment details. 
-  * Terraform: Configure the deployment details.
-  * Operator from GitHub repository: Set an image pull secret, which is used to access and pull the image from a private container registry. An image pull secret is not required if the image is in a public container registry.
-  * Virtual server image with Terraform: Configure the deployment details. 
+### Terraform
+{: #catalog-config-tf}
 
-1. Click **Next**. 
+1. From the version list that's displayed on the product details page, click the row that contains your software.
+1. Review the version details, and click **Next**.
+1. Configure the deployment values, and click **Next**. 
+
+### Operator from GitHub repository
+{: #catalog-config-opgh}
+
+1. From the version list that's displayed on the product details page, click the row that contains your software.
+1. Review the version details, and click **Next**.
+1. (Optional) Set an image pull secret, which is used to access and pull the image from a private container registry, and click **Next**. An image pull secret is not required if the image is in a public container registry.
+
+### Operator from Red Hat registry
+{: #catalog-config-oprh}
+
+1. From the version list that's displayed on the product details page, click the row that contains your software.
+1. Review the version details, and click **Next**.
+
+### OVA image
+{: #catalog-config-ova}
+
+1. From the version list that's displayed on the product details page, click the row that contains your software.
+1. Review the version details, and click **Next**.
+
+### Virtual server image with Terraform
+{: #catalog-config-vsi}
+
+1. From the version list that's displayed on the product details page, click the row that contains your software.
+1. Review the version details, and click **Next**.
+1. Configure the deployment values, and click **Next**.
 
 ## Adding license agreements
 {: #catalog-add-license}
@@ -153,19 +184,6 @@ To monitor the progress of the validation process, click **View logs**.
 
 1. From the Validate product tab, select your cluster.
 1. If the deployment target is a Kubernetes cluster, select a namespace or create a new one. If the deployment target is a Red Hat OpenShift cluster, select a project or create a new one. 
-1. Click **Next**.
-1. Configure your {{site.data.keyword.bplong_notm}} workspace.
-1. Click **Next**.
-1. If applicable, review the license agreements, and select **I have read and agree to the following license agreements:**. 
-1. Click **Validate**.
-
-### Cloud Pak
-{: #catalog-validate-pak}
-
-1. From the Validate product tab, select your Red Hat OpenShift cluster.
-1. Select a project or create a new one. A project is similar to a Kubernetes cluster namespace, and the list is populated from your Red Hat OpenShift environment.
-1. Click **Next**.
-1. Run the preinstallation script. 
 1. Click **Next**.
 1. Configure your {{site.data.keyword.bplong_notm}} workspace.
 1. Click **Next**.
@@ -225,7 +243,7 @@ To monitor the progress of the validation process, click **View logs**.
 After you validate your software, you're ready to make it available to all users who have access to your private catalog. Open the **Actions** menu, and select **Publish to account**.
 
 
-## Importing software to your private catalog
+## Importing software to your catalog
 {: #create-cicd-product}
 {: cli}
 
