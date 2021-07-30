@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-07-29"
+lastupdated: "2021-07-30"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1817,6 +1817,7 @@ Review the available platform and service roles available and the actions mapped
 
 | Role | Description |
 | ----- | :----- |
+| Certificate Manager | Managing client certificates to configure mutual TLS for EP11 workloads |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Reader Plus | As a reader plus, you can perform read-only actions within the service such as viewing service-specific resources. You can also access key material of standard keys. |
@@ -1920,6 +1921,14 @@ Review the available platform and service roles available and the actions mapped
 | `hs-crypto.secrets.deletealias` | Delete an alias of a key | Manager, Writer |
 | `hs-crypto.secrets.sync` | Initiate a manual synchronization request to the associated resources of a key. | Manager, Writer |
 | `hs-crypto.config.read` | Configuration Information Point API access | Service Configuration Reader |
+| `hs-crypto.mtlscert-admin-key.create` | Create the administrator signature key for the certificate administrator | Certificate Manager |
+| `hs-crypto.mtlscert-admin-key.update` | Update the administrator signature key for the certificate administrator | Certificate Manager |
+| `hs-crypto.mtlscert-admin-key.delete` | Delete the administrator signature key of the certificate administrator | Certificate Manager |
+| `hs-crypto.mtlscert-admin-key.read` | Get the administrator signature key of the certificate administrator | Certificate Manager |
+| `hs-crypto.mtlscert-cert.set` | Create or update certificates by the certificate administrator | Certificate Manager |
+| `hs-crypto.mtlscert-cert.list` | List all certificates that are managed by the certificate administrator | Certificate Manager |
+| `hs-crypto.mtlscert-cert.read` | Get certificates by the certificate administrator | Certificate Manager |
+| `hs-crypto.mtlscert-cert.delete` | Delete certificates by the certificate administrator | Certificate Manager |
 {: caption="Table 38. Service actions - Hyper Protect Crypto Services" caption-side="top"}
 {: #actions-table38}
 {: tab-title="Actions"}
