@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-07-07"
+lastupdated: "2021-07-30"
 
 keywords: private catalog, software, onboard, operator, validate, test, Red Hat OpenShift operator, operator bundle
 
@@ -84,6 +84,7 @@ If users are required to accept any license agreements beyond the {{site.data.ke
 1. In the Version list table, click the row that contains your Operator bundle. 
 1. Click **Add license agreements** > **Add**. 
 1. Enter the name and URL of the license agreement, and click **Update**.
+1. After entering all additional license agreements, click **Next**.
 
 ## Review your readme file 
 {: #catalog-opbundle-readme}
@@ -91,9 +92,10 @@ If users are required to accept any license agreements beyond the {{site.data.ke
 
 Users can view installation instructions from the Readme tab of the Operator bundle details page in your private catalog. 
 
-1. Click **Edit readme** > **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit").
-1. Preview how the information in the readme file will be displayed to users.
-1. If you need to make changes, edit the information in the source file and import the updated Operator bundle to your private catalog. 
+1. From the Edit readme tab, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit").
+2. Preview how the information in the readme file will be displayed to users when they are installing the Operator bundle.
+3. If you need to make changes, edit the information in the source file and import the updated Operator bundle to your private catalog. 
+4. Click **Next**.
 
 ## Validate your Operator bundle
 {: #catalog-opbundle-validate}
