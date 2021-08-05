@@ -33,9 +33,6 @@ subcollection: account
 Private catalogs provide a way to centrally manage access to products in the {{site.data.keyword.cloud}} catalog and your own catalogs. You can customize the public catalog and your private catalogs to make specific solutions available to users in your account. By doing so, you can ensure that your catalogs are relevant to your business. 
 {: shortdesc}
 
-To create catalogs to centrally manage your objects, such as Virtual Private Endpoints, see [Create objects for your private catalog](/docs/account?topic=account-object-onboard-catalog).
-{: note}
-
 Let's say you're an account administrator for your team, and you require access to all products in the {{site.data.keyword.cloud_notm}} catalog. A member of your team is tasked with a specific project, for example, building a voice-enabled chatbot by using {{site.data.keyword.conversationshort}}, {{site.data.keyword.speechtotextshort}}, and {{site.data.keyword.texttospeechshort}}. And, you want them to access only those products in the {{site.data.keyword.cloud_notm}} catalog.  
 
 To achieve this, you create one catalog that includes all products in the {{site.data.keyword.cloud_notm}} catalog. Then, you create another catalog that includes only the required products, and you give the team member viewer access to the catalog. 
