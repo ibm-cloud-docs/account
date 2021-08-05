@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-08-04"
 
 keywords: GDPR, europe, ACS, EU, EU Supported
 
@@ -28,10 +28,10 @@ Turning on the EU supported setting limits Advanced Customer Support (ACS) that 
 
  If {{site.data.keyword.Bluemix_notm}} experts that are outside of the EU region need access to this data, an EU support team member reviews the access request. Then, the EU support team member provides necessary access to the requested system for a specific timeframe. When that timeframe is over, access is revoked. Throughout this process, your data is always protected.
 
-  1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account**, and select **Account settings**.
-  2. Scroll to the EU Supported section, and click **On**.
-  3. Read the information about enabling the setting, and select **I understand and agree to these terms**.
-  4. Click **On**.
+1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account**, and select **Account settings**.
+2. Scroll to the EU Supported section, and click **On**.
+3. Read the information about enabling the setting, and select **I understand and agree to these terms**.
+4. Click **On**.
 
-   After you enable the setting at the account level, you can use the EU Supported filter option to search the catalog for products that have EU-supported pricing plans. 
+   After you enable the setting at the account level, you can use the EU Supported filter to find products that have EU-supported pricing plans. In the {{site.data.keyword.Bluemix_notm}} catalog, expand the **Compliance** section and select **EU Supported**.  
 
