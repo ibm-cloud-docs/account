@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-08-06"
+lastupdated: "2021-08-07"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -4834,7 +4834,7 @@ Review the available platform and service roles available and the actions mapped
 
 | Role | Description |
 | ----- | :----- |
-| Administrator | Administrator |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 {: row-headers}
 {: caption="Table 110. Platform roles - Watson Knowledge Catalog" caption-side="top"}
 {: #platform-roles-table110}
@@ -4845,8 +4845,8 @@ Review the available platform and service roles available and the actions mapped
 
 | Role | Description |
 | ----- | :----- |
-| Manager | Manager |
-| Writer | Writer |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 110. Service roles - Watson Knowledge Catalog" caption-side="top"}
 {: #service-roles-table110}
