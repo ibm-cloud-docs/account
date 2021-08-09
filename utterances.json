@@ -179,7 +179,8 @@
     "what are the lite plan quotas",
     "are quotas per instance",
     "are quotas reset per month",
-    "lite plan monthly quotas"
+    "lite plan monthly quotas",
+    "I can't use discovery in my lite plan"
   ],
   "resourcelimit": [
     "how many resource groups",
@@ -530,6 +531,8 @@
     "Can I speak to technical or billing support",
     "live chat with support",
     "I want to chat with a person",
+    "I need a human assistant now",
+    "Can I get a human assistant",
     "how to get support",
     "what support plan do I have",
     "please provide me support link",
