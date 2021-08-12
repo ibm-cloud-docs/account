@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-08-11"
+lastupdated: "2021-08-12"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -4358,9 +4358,9 @@ Review the available platform and service roles available and the actions mapped
 
 | Role | Description |
 | ----- | :----- |
-| Administrator | Administrator |
-| Editor | Editor |
-| Operator | Operator |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
 {: caption="Table 96. Platform roles - Text to Speech" caption-side="top"}
 {: #platform-roles-table96}
@@ -4371,9 +4371,9 @@ Review the available platform and service roles available and the actions mapped
 
 | Role | Description |
 | ----- | :----- |
-| Manager | Manager |
-| Reader | Reader |
-| Writer | Writer |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 96. Service roles - Text to Speech" caption-side="top"}
 {: #service-roles-table96}
