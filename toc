@@ -321,6 +321,7 @@ Managing your account, resources, and access
         ts-create-enterprise-acct.md
         ts-subscriptions-enterprise.md
         ts-enterprise-apply.md
+        ts-create-enterprise.md
 
     {: .topicgroup}
     Troubleshooting IAM
