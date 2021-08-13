@@ -23,14 +23,14 @@ content-type: troubleshoot
 {:note: .note}
 {:troubleshoot: data-hd-content-type='troubleshoot'}
 
-# Why can't I use Classic Infrastructure or the Softlayer API when I log in to {{site.data.keyword.cloud}} by applying a trusted profile?
+# Why can't I use Classic Infrastructure or the Softlayer API when I log in to {{site.data.keyword.cloud_notm}} by applying a trusted profile?
 {: #troubleshoot-trusted-profile-classic}
 {: troubleshoot}
 
 You need to log in to an account without selecting a trusted profile.
 {: shortdesc}
 
-I'm unable to use Classic Infrastructure and the Softlayer API when I log in to {site.data.keyword.cloud_notm}} by selecting a trusted profile. 
+I'm unable to use Classic Infrastructure and the Softlayer API when I log in to {{site.data.keyword.cloud_notm}} by selecting a trusted profile. 
 {: tsSymptoms}
 
    
