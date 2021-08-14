@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-08-13"
+lastupdated: "2021-08-14"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -2367,10 +2367,23 @@ Review the available platform and service roles available and the actions mapped
 
 | Role | Description |
 | ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+{: row-headers}
+{: caption="Table 48. Platform roles - IBM Cloud Pak for Data" caption-side="top"}
+{: #platform-roles-table48}
+{: tab-title="Platform roles"}
+{: tab-group="cp4d"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+
+| Role | Description |
+| ----- | :----- |
 | CloudPak Data Engineer | CloudPak Data Engineer |
 | CloudPak Data Scientist | CloudPak Data Scientist |
 | CloudPak Data Steward | CloudPak Data Steward |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reporting Administrator | Reporting Administrator |
 {: row-headers}
 {: caption="Table 48. Service roles - IBM Cloud Pak for Data" caption-side="top"}
 {: #service-roles-table48}
@@ -2381,18 +2394,16 @@ Review the available platform and service roles available and the actions mapped
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `cp4d.data-protection-rules.manage` | Manage data projection rules
- | CloudPak Data Engineer, CloudPak Data Scientist, CloudPak Data Steward, Manager |
 | `cp4d.catalog.manage` | Manage catalogs
- | Manager |
-| `cp4d.governance-artifacts.access` | Access governance artifacts
- | CloudPak Data Engineer, CloudPak Data Steward |
+ | Administrator, Editor, Manager |
 | `cp4d.governance-categories.manage` | Manage governance categories
  | Manager |
 | `cp4d.governance-workflows.manage` | Manage governance workflows
  | Manager |
-| `cp4d.catalog.access` | Access catalogs
- | CloudPak Data Scientist, CloudPak Data Steward, Manager |
+| `cp4d.wkc.reporting.manage` | Manage reporting | Reporting Administrator |
+| `cp4d.governance-artifacts.access` | Access governance artifacts | CloudPak Data Engineer, CloudPak Data Steward |
+| `cp4d.catalog.access` | Access catalogs | CloudPak Data Scientist, CloudPak Data Steward, Manager |
+| `cp4d.data-protection-rules.manage` | Manage data protection rules | CloudPak Data Engineer, CloudPak Data Scientist, CloudPak Data Steward, Manager |
 {: caption="Table 48. Service actions - IBM Cloud Pak for Data" caption-side="top"}
 {: #actions-table48}
 {: tab-title="Actions"}
