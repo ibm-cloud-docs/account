@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-07-15"
+lastupdated: "2021-08-16"
 
 keywords: IBM Cloud notifications, notification preferences, email preferences, user notifications, distribution list, webhooks, Slack webhooks
 
@@ -73,14 +73,14 @@ When you receive a notification through a webhook, a payload is being sent to yo
 }
 ```
 
-### Headers
+## Headers
 {: header-payload}
 
 You receive the payload with a header that you configured in the UI when you added a new webhook, and with an additional version header that has semantic version number. This version header can be used to determine the expected format of the webhook payload.
 
 The current version header is `"IBM-Notifications-API-Version": "v2.0.0"`. 
 
-### Field values
+## Field values
 {: field-value-payload}
 
 The following descriptions provide information about the field values that are being sent inside the payload:
