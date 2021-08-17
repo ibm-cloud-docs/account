@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-08-16"
+lastupdated: "2021-08-17"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -303,20 +303,11 @@ Review the available platform and service roles available and the actions mapped
 | `apprapp.collections.create` | Create collections | Administrator, Manager |
 | `apprapp.collections.update` | Update collections | Administrator, Manager |
 | `apprapp.collections.delete` | Delete collections  | Administrator, Manager |
-| `apprapp.features.list` | List features | Administrator, Config Operator, Manager, Reader, Writer |
-| `apprapp.features.create` | Create Features | Administrator, Manager |
-| `apprapp.features.update` | Update features | Administrator, Manager |
-| `apprapp.features.delete` | Delete features | Administrator, Manager |
 | `apprapp.segments.list` | List segments | Administrator, Config Operator, Manager, Reader, Writer |
 | `apprapp.segments.update` | Update segments | Administrator, Manager, Writer |
 | `apprapp.segments.create` | Create segments | Administrator, Manager, Writer |
 | `apprapp.segments.delete` | Delete segments | Administrator, Manager, Writer |
-| `apprapp.features.patch` | Patch features | Writer |
 | `apprapp.features.toggle` | Toggle feature | Administrator, Config Operator, Manager, Writer |
-| `apprapp.properties.list` | List properties | Config Operator, Manager, Reader, Writer |
-| `apprapp.properties.update` | Update properties | Administrator, Manager |
-| `apprapp.properties.create` | Create properties | Administrator, Manager |
-| `apprapp.properties.delete` | Delete properties | Administrator, Manager |
 | `apprapp.properties.patch` | Patch properties | Writer |
 | `apprapp.environments.create` | Create environments | Administrator, Manager |
 | `apprapp.environments.update` | Update environments | Administrator, Manager |
