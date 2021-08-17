@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-07-20"
+lastupdated: "2021-08-17"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key
 
@@ -59,9 +59,9 @@ If you're not a part of a company that uses a federated ID, use your IBMid to cr
 ### Using a federated ID
 {: #signup-federated}
 
-A federated ID is an ID within a company's domain that is registered with {{site.data.keyword.IBM_notm}} so that the domain and user credentials can be used to access {{site.data.keyword.IBM_notm}} web applications. You can sign up for {{site.data.keyword.Bluemix_notm}} with a federated ID only if your company is already registered with {{site.data.keyword.IBM_notm}}. Registering a company's domain with {{site.data.keyword.IBM_notm}} enables users to log in to {{site.data.keyword.IBM_notm}} products and services by using their existing company user credentials. Authentication is then handled by your company's identity provider through single sign-on (SSO).
+A federated ID is an ID within a company's domain that is registered with {{site.data.keyword.IBM_notm}} so that the domain and user credentials can be used to access {{site.data.keyword.IBM_notm}} web applications. You can sign up for {{site.data.keyword.Bluemix_notm}} with a federated ID only if your company is already registered with {{site.data.keyword.IBM_notm}}. Registering a company's domain with {{site.data.keyword.IBM_notm}} enables users to log in to {{site.data.keyword.IBM_notm}} products and services by using their existing company user credentials. Authentication is then handled by your company's identity provider (IdP) through single sign-on (SSO).
 
-{{site.data.keyword.IBM_notm}} uses the Security Assertion Markup Language 2.0 (SAML 2.0) for this identity federation. SAML 2.0 is a standard version for exchanging authentication data between security domains. It's an XML-based protocol that uses a security token that contains assertions to pass information between the organizations Identity Provider, and the {{site.data.keyword.IBM_notm}} Rely Party (RP), otherwise known as the Service Provider.
+{{site.data.keyword.IBM_notm}} uses the Security Assertion Markup Language 2.0 (SAML 2.0) for this identity federation. SAML 2.0 is a standard version for exchanging authentication data between security domains. It's an XML-based protocol that uses a security token that contains assertions to pass information between the organizations IdP, and the {{site.data.keyword.IBM_notm}} Rely Party (RP), otherwise known as the Service Provider.
 
 For information about how to register your company for a federated ID, see the [IBMid Enterprise Federation Adoption Guide](https://ibm.box.com/v/IBMid-Federation-Guide){: external}. An {{site.data.keyword.IBM_notm}} sponsor, such as an offering advocate or client advocate, is required when you request to register federated IDs.
 
@@ -88,7 +88,7 @@ Setting up MFA in your account affects all members of the account. This means th
 1. Update the current authentication setting by clicking **Edit** in the Authentication section.
 1. Select the type of MFA to enable in your account.
   * **MFA for users with an IBMid**: Require users to authenticate by using an IBMid, password, and time-based one-time passcode (TOTP). You can enable this option for all users or non-federated users. 
-  * **MFA for all users (IBMid & supported IdPs)**: Require users to authenticate by using one of the following MFA factors. This option applies to users who are using either an IBMid or an external identity provider (IdP). 
+  * **MFA for all users (IBMid & supported IdPs)**: Require users to authenticate by using one of the following MFA factors. This option applies to users who are using either an IBMid or an external IdP. 
     * **Email-based MFA**: Users authenticate by using a security passcode that's sent via email. 
     * **TOTP MFA**: Users authenticate by using a time-based one-time passcode (TOTP) with an authenticator app, such as {{site.data.keyword.IBM_notm}} Security Verify or Google Authenticator. 
     * **U2F MFA**: Users authenticate by using a hardware security key that generates a six-digit numerical code. This factor offers the highest level of security. 
