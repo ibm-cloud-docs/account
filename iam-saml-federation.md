@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2019, 2020
+  years: 2019, 2021
 
-lastupdated: "2020-04-16"
+lastupdated: "2021-08-18"
 
 keywords: federated ID, enterprise SSO, SAML federation
 
@@ -21,7 +21,7 @@ subcollection: account
 # Managing deprecated SAML federation
 {: #saml-federation}
 
-If you previously set up federation by using a SAML identity provider in the SoftLayer customer portal, you can edit the identity provider configuration data or delete it from the Identity providers page in the {{site.data.keyword.Bluemix}} console. 
+If you previously set up federation by using a SAML identity provider (IdP) in the SoftLayer customer portal, you can edit the IdP configuration data or delete it from the Identity providers page in the {{site.data.keyword.Bluemix}} console. 
 {: shortdesc}
 
 This type of federation is deprecated. If you delete this configuration, it is permanent and you can't set it up again. You can now take advantage of federation with IBMid. For more information, see [Signing up with a federated ID](/docs/account?topic=account-account-getting-started).
