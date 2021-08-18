@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021 
-lastupdated: "2021-06-14"
+lastupdated: "2021-08-18"
 
 keywords: dashboard, widgets display, manage visibility, customize, console, dashboard templates 
 
@@ -33,10 +33,10 @@ To begin creating a dashboard, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions"), and select **Create a dashboard**. 
 2. Select a template from the available options, and then click **Next**. 
-  * Blank: Create a dashboard from scratch by adding widgets that align with your workflow.
-  * Default: The default template offers a broad coverage of development, management, and infrastructure widgets.
-  * Development team: This template promotes team alignment and resource monitoring by prioritizing a development or DevOps workflow.
-  * Management: Optimized to provide a mix of billing, access management, and other administrative widgets.
+   * Blank: Create a dashboard from scratch by adding widgets that align with your workflow.
+   * Default: The default template offers a broad coverage of development, management, and infrastructure widgets.
+   * Development team: This template promotes team alignment and resource monitoring by prioritizing a development or DevOps workflow.
+   * Management: Optimized to provide a mix of billing, access management, and other administrative widgets.
 2. Enter dashboard title. The title must be 30 characters or less. 
 3. Next, use the Dashboard settings pane to add relevant widgets to your dashboard. To add widgets, drag the widgets onto your dashboard. 
 4. Click the Scope tab to select from the available resources in the account that you have access to. The scope determines the data that populates for the selected resources. You can filter the resource by group, tag, and location. 
