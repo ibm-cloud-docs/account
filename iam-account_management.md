@@ -384,7 +384,7 @@ You can give users access to view, create, edit, and delete access groups in the
 ### IAM identity service
 {: #identity-service-account-management}
 
-You can give users access to manage service IDs and Identity providers (IdPs) by using the IAM identity service. For the IAM identity service, these actions apply to service IDs and IdPs within the account that the user didn't create. All users can create service IDs. They are the administrator for those IDs, and they can create the associated API key and access policies, but only users with the Operator and Administrator role can create IdPs. This account management service applies to the ability to view, update, delete, and assign access to service IDs in the account created by other users.
+You can give users access to manage service IDs and identity providers (IdPs) by using the IAM identity service. For the IAM identity service, these actions apply to service IDs and IdPs within the account that the user didn't create. All users can create service IDs. They are the administrator for those IDs, and they can create the associated API key and access policies, but only users with the Operator and Administrator role can create IdPs. This account management service applies to the ability to view, update, delete, and assign access to service IDs in the account created by other users.
 
 | Roles         | Actions                                                                                           |
 |---------------|----------------------------------------------------------------------------------------------------|
