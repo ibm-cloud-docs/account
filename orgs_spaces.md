@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-08-23"
 
 keywords: account, add orgs, add spaces, cloud foundry orgs
 
@@ -157,7 +157,7 @@ You can also create spaces by using the {{site.data.keyword.Bluemix}} Command Li
 2. Create an organization by running the [`ibmcloud account space-create`](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_space_create) command, where `-o` is the organization, and `-q` is the quota to assign to the newly created space. 
 
    ```
-   ibmcloud account create-space SPACE [-o ORG] [-q SPACE_QUOTA]
+   ibmcloud account space-create SPACE [-o ORG] [-q SPACE_QUOTA]
    ```
    {:codeblock}
    
