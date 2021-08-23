@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-04-22"
+lastupdated: "2021-08-23"
 
 keywords: enterprise, add account, import account, create account
 
@@ -18,12 +18,18 @@ subcollection: account
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
 {:api: .ph data-hd-interface='api'}
+{:terraform: .ph data-hd-interface='terraform'}
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:curl: .ph data-hd-programlang='curl'}
+{:go: .ph data-hd-programlang='go'}
 
 # Adding accounts to an enterprise
 {: #enterprise-add}
 
 You can build out your enterprise by adding more {{site.data.keyword.Bluemix}} accounts to it. To add accounts, you can import existing accounts that aren't in another enterprise, or you can create new accounts within your enterprise.
-{:shortdesc}
+{: shortdesc}
 
 After your enterprise has multiple accounts, you can organize related accounts by using account groups. For more information, see in [Organizing accounts in an enterprise](/docs/account?topic=account-enterprise-organize).
 
@@ -153,6 +159,49 @@ if err != nil {
 {: codeblock}
 {: go}
 
+### Importing accounts by using Terraform
+{: #add-account-terraform}
+{: terraform}
+
+You can import an existing account in an enterprise resource by using Terraform.
+
+1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+
+2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to import accounts by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
+   The following example imports an account by using the `ibm_enterprise_account` resource, where `enterprise_id` is where the account is imported. You must have an existing IAM ID of an enterprise primary contact in order to complete the task. 
+
+   ```terraform
+   resource "ibm_enterprise_account" "enterprise_import_account"{
+    parent = "parent"
+    enterprise_id = "enterprise_id"
+    account_id = "account_id"
+    }
+    ```
+   {: codeblock}
+
+   You can specify the ID of an account that needs to be imported on the `account_id` option. For more information, see the argument reference details on the [Terraform Enterprise Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/enterprise_account){: external} page.
+  
+3. Initialize the Terraform CLI.
+
+   ```
+   terraform init
+   ```
+   {: pre}
+   
+4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to import the account.
+
+   ```
+   terraform plan
+   ```
+   {: pre}
+
+5. Import the account.
+
+   ```
+   terraform apply
+   ```
+   
 ## Creating new accounts
 {: #create-accounts}
 
@@ -270,3 +319,48 @@ fmt.Println(string(b))
 ```
 {: codeblock}
 {: go}
+
+### Creating accounts by using Terraform
+{: #create-account-terraform}
+{: terraform}
+
+You can create new accounts within your enterprise by using Terraform.
+
+1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+
+2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create accounts by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
+   The following example creates an account by using the `ibm_enterprise_account` resource, where `name` is a unique name to identify the enterprise. You must have an existing IAM ID of an enterprise primary contact in order to complete the task. 
+
+   ```terraform
+   resource "ibm_enterprise_account" "enterprise_account" {
+    parent = "parent"
+    name = "name"
+    owner_iam_id = "owner_iam_id"
+    }
+   ```
+   {: codeblock}
+
+   You can specify the ID of an account owner on the `owner_iam_id` option. For more information, see the argument reference details on the [Terraform Enterprise Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/enterprise_account){: external} page.
+  
+3. Initialize the Terraform CLI.
+
+   ```
+   terraform init
+   ```
+   {: pre}
+   
+4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the account.
+
+   ```
+   terraform plan
+   ```
+   {: pre}
+
+5. Create the account.
+
+   ```
+   terraform apply
+   ```
+
+
