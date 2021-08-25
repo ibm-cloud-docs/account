@@ -1922,5 +1922,12 @@
      "trouble applying education feature code",
      "unable to apply education feature code",
      "problem with my voucher"
+   ],
+  "move-between-accounts": [
+     "Can I move resources to another account",
+     "Is it possible to move devices to another account",
+     "I want to merge 2 cloud accounts",
+     "how to migrate database from one cloud account to another",
+     "how can I transfer my services to another account"
    ]
 }
