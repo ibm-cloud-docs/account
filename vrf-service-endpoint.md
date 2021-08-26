@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-08-26"
 
 keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network, services that support service endpoints, service endpoint support, using service endpoints
 
@@ -170,6 +170,7 @@ To find the endpoints for each service, refer to the Endpoint URLs section of th
 | {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.wh-iml_short}} | [Public and private network endpoints](/docs/wh-iml?topic=watson-public-private-endpoints) with {{site.data.keyword.wh-iml_short}} |
 | {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.knowledgestudioshort}} | [Public and private network endpoints](/docs/services/watson-knowledge-studio?topic=watson-public-private-endpoints) with {{site.data.keyword.knowledgestudioshort}} |
 | {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.languagetranslatorshort}} | [Public and private network endpoints](/docs/services/language-translator?topic=watson-public-private-endpoints) with {{site.data.keyword.languagetranslatorshort}} |
+| {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.pm_short}} | [Public and private network endpoints](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-service-endpoint.html?audience=wdp){: external} with {{site.data.keyword.pm_short}} |
 | {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.nlushort}} | [Public and private network endpoints](/docs/services/natural-language-understanding?topic=watson-public-private-endpoints) with {{site.data.keyword.nlushort}} |
 | {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.personalityinsightsshort}} | [Public and private network endpoints](/docs/services/personality-insights?topic=watson-public-private-endpoints) with {{site.data.keyword.personalityinsightsshort}} |
 | {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.speechtotextshort}} | [Public and private network endpoints](/docs/services/speech-to-text?topic=watson-public-private-endpoints) with {{site.data.keyword.speechtotextshort}} |
