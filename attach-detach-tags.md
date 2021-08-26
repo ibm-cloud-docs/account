@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-08-26"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, attach tags ui, attach tags cli, attach tags api, detach tags ui, detach tags api, detach tags cli
 
@@ -34,12 +34,10 @@ You can attach and detach tags on a resource through the console, CLI, or API. T
 {: ui}
 
 1. From the {{site.data.keyword.cloud}} console, click the Menu icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list** to view your list of resources.
-2. Expand the resource type twistie that contains the resource you want to tag. For example, if you want to tag an instance of {{site.data.keyword.cos_full_notm}}, expand **Storage**.  
-3. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") to attach or update a tag for the resource.
-    * To attach tags, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Add Tags**.
-    * To update your tags, you can either click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit tags**, or click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") next to the displayed tags in the resource list.
-    * Type a name for your user or access management tag. Press Enter to continue adding tags.
-4. To remove a tag, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit"). Then, click the **Remove** icon ![Remove icon](../icons/close-tagging.svg "Remove") next to the tag.
+1. Locate the specific resource in the list. 
+1. To attach a tag to the resource, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions")  > **Add tags**.
+1. Enter the name of the tag, and click **Save**. 
+1. To detach the tag from the resource, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") next to the tag in your resource list. 
 
 When you detach an access management tag from a resource, any associated access policies are also detached from that resource.
 {: note}
