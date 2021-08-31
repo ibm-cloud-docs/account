@@ -170,17 +170,18 @@ You can update an existing version of your software by using Terraform.
    ```
    terraform init
    ```
-   {: pre}
+   {: codeblock}
    
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to update the version.
 
    ```
    terraform plan
    ```
-   {: pre}
+   {: codeblock}
 
 5. Update the version.
 
    ```
    terraform apply
    ```
+   {: codeblock}
