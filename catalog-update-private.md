@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-06-14"
+lastupdated: "2021-08-31"
 
 keywords: catalog, private catalog, update, private catalog product, update version, versions
 
@@ -23,6 +23,8 @@ subcollection: account
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
 {:api: .ph data-hd-interface='api'}
+{:terraform: .ph data-hd-interface='terraform'}
+{:external: target="_blank" .external}
 
 # Updating your software
 {: #update-private}
@@ -35,7 +37,7 @@ To update the software that's in your private catalog, you can add a new version
 
 To complete this task, you need to be assigned the editor role on the catalog management service. For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
 
-## Update an existing version in the console
+## Update an existing version by using the console
 {: #update-editor-offering}
 {: ui}
 
@@ -47,8 +49,6 @@ The following steps walk through an example of making updates to a product's rea
 1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg "Actions"), and select **Edit**.  
 1. Click the Edit readme tab.
 1. Click the **Edit** icon ![Edit icon](../icons/icon_write.svg "Edit"), add a new line of text to the Introduction section, and click **Update**.
-
-
 1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg "Actions"), and select **Merge changes** to publish the updated version to your account.
 
 ## Update an existing version by using the CLI
@@ -57,8 +57,8 @@ The following steps walk through an example of making updates to a product's rea
 
 Complete the following steps to create a draft version, update it, and merge the changes to the current version of your software.  
 
-  You need the version locator for your software. To find it, run the **`ibmcloud catalog offering list --catalog "your-private-catalog"`** command and search for the existing version number.
-  {: important}
+   You need the version locator for your software. To find it, run the **`ibmcloud catalog offering list --catalog "your-private-catalog"`** command and search for the existing version number.
+   {: important}
     
 1. Create a draft version of your software.
     ```
@@ -141,3 +141,46 @@ fmt.Println(response)
 ```
 {: codeblock}
 {: go}
+
+## Update an existing version by using Terraform
+{: #update-editor-terraform}
+{: terraform}
+
+You can update an existing version of your software by using Terraform. 
+
+1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+
+2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to update your software version by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
+   The following example accesses the software version by using the `cm_version` resource, where `offering_id` identifies the software. 
+
+   ```terraform
+   resource "cm_version" "cm_version" {
+   catalog_identifier = "catalog_identifier"
+   offering_id = "offering_id"
+   zipurl = "zipurl"
+   }
+   ```
+   {: codeblock}
+
+   For more information, see the argument reference details on the [Terraform Catalog Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/cm_version){: external} page.
+  
+3. Initialize the Terraform CLI.
+
+   ```
+   terraform init
+   ```
+   {: pre}
+   
+4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to update the version.
+
+   ```
+   terraform plan
+   ```
+   {: pre}
+
+5. Update the version.
+
+   ```
+   terraform apply
+   ```
