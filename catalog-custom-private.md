@@ -298,20 +298,21 @@ You cannot customize the public catalog and your private catalogs to make specif
    ```
    terraform init
    ```
-   {: pre}
+   {: codeblock}
    
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the catalog.
 
    ```
    terraform plan
    ```
-   {: pre}
+   {: codeblock}
 
 5. Create the catalog.
 
    ```
    terraform apply
    ```
+   {: codeblock}
 
 ## Authorizing access to private catalogs by using Terraform
 {: #customcatalog-access-terraform}
