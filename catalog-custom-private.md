@@ -62,7 +62,7 @@ Complete the following steps to create a catalog that includes all products in t
 1. In the console, go to **Manage** > **Catalogs**, and click **Create a catalog**.
 1. Select the Product (default) catalog type.
 1. Enter a name and description.
-1. Make sure the **All products** option is selected, and click **Create**. The availability is based on the filters set at the account level on the [Settings page](https://test.cloud.ibm.com/content-mgmt/catalog-settings){: external}. 
+1. Make sure the **All products** option is selected, and click **Create**. The availability is based on the filters set at the account level on the [Settings page](https://cloud.ibm.com/content-mgmt/catalog-settings){: external}. 
 1. Confirm that the catalog includes all products by clicking the catalog name > **Manage filters**. Then, check that **Include all products in the {{site.data.keyword.cloud_notm}} catalog** is selected in **Step 1: Select to include or exclude all products in the {{site.data.keyword.cloud_notm}} catalog**.
 
 ## Creating a private catalog with select products included by using the console
@@ -108,12 +108,12 @@ Complete the following steps to create a catalog that includes all products in t
 1. Target a resource group to create a catalog. You can run the `ibmcloud resource groups` command, and then the `ibmcloud target -g "resource group"` command.
 1. Use the following command to create a new private catalog in your account.
 
-   ```
-   ibmcloud catalog create --name CATALOG [--catalog-description "DESCRIPTION"]
-   ```
-   {: codeblock}
+  ```
+  ibmcloud catalog create --name CATALOG [--catalog-description "DESCRIPTION"]
+  ```
+  {: codeblock}
 
-All the {{site.data.keyword.cloud_notm}} catalog offerings are visible by default when you create a new private catalog. See the [Catalogs management CLI](https://test.cloud.ibm.com/docs/cli?topic=cli-manage-catalogs-plugin#prereqs-managecatalogs) for more information.
+All the {{site.data.keyword.cloud_notm}} catalog offerings are visible by default when you create a new private catalog. See the [Catalogs management CLI](https://cloud.ibm.com/docs/cli?topic=cli-manage-catalogs-plugin#prereqs-managecatalogs) for more information.
 
 
 ## Creating a private catalog with select products included by using the CLI
@@ -123,16 +123,16 @@ All the {{site.data.keyword.cloud_notm}} catalog offerings are visible by defaul
 Complete the following steps to create a catalog that includes a specific set of products in the {{site.data.keyword.cloud_notm}} catalog:
 1. Target a resource group to create a catalog. You can run the `ibmcloud resource groups` command, and then the `ibmcloud target -g "resource group"` command.
 1. Create a new private catalog in your account using the following command.
-   ```
-   ibmcloud catalog create --name CATALOG [--catalog-description "DESCRIPTION"]
-   ```
-   {: codeblock}
+  ```
+  ibmcloud catalog create --name CATALOG [--catalog-description "DESCRIPTION"]
+  ```
+  {: codeblock}
 
 1. Update the filter to include or exclude a particular product or products and any applicable pricing plans. Make sure to specify your catalog, or the filter will default to the account level. See [Catalogs management CLI](https://cloud.ibm.com/docs/cli?topic=cli-manage-catalogs-plugin#offering-filter) for more command options. 
-   ```
-   ibmcloud catalog filter offering --offering PRODUCT-NAME
-   ```
-   {: codeblock}
+  ```
+  ibmcloud catalog filter offering --offering PRODUCT-NAME
+  ```
+  {: codeblock}
 
 ## Setting the visibility of the {{site.data.keyword.cloud_notm}} catalog by using the CLI
 {: #catalog-off-cli}
@@ -158,7 +158,7 @@ To create a catalog that includes all products in the {{site.data.keyword.cloud_
 
 ```bash
 curl -X 'POST' \
-'https://dev-cm.globalcatalog.test.cloud.ibm.com/api/v1-beta/catalogs' \
+'https://cm.globalcatalog.cloud.ibm.com/api/v1-beta/catalogs' \
 -H 'accept: application/json' \
 -H 'Content-Type: application/json' \
 -H "Authorization: ${IC_IAM_TOKEN}" \
@@ -233,7 +233,7 @@ To create a catalog that includes a specific set of products in the {{site.data.
 
 ```bash
 curl -X 'POST' \                                         
-'https://dev-cm.globalcatalog.test.cloud.ibm.com/api/v1-beta/catalogs' \
+'https://cm.globalcatalog.cloud.ibm.com/api/v1-beta/catalogs' \
 -H 'accept: application/json' \
 -H 'Content-Type: application/json' \
 -H "Authorization: ${IC_IAM_TOKEN}" \
