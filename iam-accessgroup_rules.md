@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018, 2020
+  years: 2018, 2021
 
-lastupdated: "2020-04-16"
+lastupdated: "2021-08-18"
 
 keywords: dynamic rules,access groups,specific identity attributes,identity provider,federated ID,
 
@@ -22,10 +22,10 @@ subcollection: account
 # Creating dynamic rules for access groups
 {: #rules}
 
-You can create dynamic rules to automatically add federated users to access groups based on specific identity attributes. When your users log in with a federated ID, the data from the identity provider dynamically maps your users to an access group based on the rules that you set.
+You can create dynamic rules to automatically add federated users to access groups based on specific identity attributes. When your users log in with a federated ID, the data from the identity provider (IdP) dynamically maps your users to an access group based on the rules that you set.
 {:shortdesc}
 
-Users already have specific identity information within your company's domain, and when they log in with a federated ID, this data can be passed through by using SAML assertions. The SAML assertions or attribute statements that are configured within the identity provider provide the data that is used to create each rule. For example, you might have a true or false attribute statement that defines users as a manager. This information can be used to add all users who are managers to a specific access group for managers that you created in your {{site.data.keyword.Bluemix}} account. For more information, see the tutorial about how to [Control access to cloud resources](https://developer.ibm.com/tutorials/use-iam-access-groups-to-effectively-manage-access-to-your-cloud-resources/){: external} and an [Example rule](/docs/account?topic=account-rules#example).
+Users already have specific identity information within your company's domain, and when they log in with a federated ID, this data can be passed through by using SAML assertions. The SAML assertions or attribute statements that are configured within the IdP provide the data that is used to create each rule. For example, you might have a true or false attribute statement that defines users as a manager. This information can be used to add all users who are managers to a specific access group for managers that you created in your {{site.data.keyword.Bluemix}} account. For more information, see the tutorial about how to [Control access to cloud resources](https://developer.ibm.com/tutorials/use-iam-access-groups-to-effectively-manage-access-to-your-cloud-resources/){: external} and an [Example rule](/docs/account?topic=account-rules#example).
 
 Only users who are already invited to the account can be mapped to access groups by using dynamic rules.
 {: note}
@@ -33,7 +33,7 @@ Only users who are already invited to the account can be mapped to access groups
 ## Setting up rules
 {: #setup_rules}
 
-Dynamic rules are created by setting conditions that must be matched by the data that is configured within the identity provider and passed in with a user's federated ID during login. You can add more than one condition for a rule. All conditions set in the rule must be met for a user to be added to an access group. 
+Dynamic rules are created by setting conditions that must be matched by the data that is configured within the IdP and passed in with a user's federated ID during login. You can add more than one condition for a rule. All conditions set in the rule must be met for a user to be added to an access group. 
 
 To create a rule, follow these steps:
 
@@ -41,7 +41,7 @@ To create a rule, follow these steps:
 2. Select the name of the access group that you want to create a rule for to open the group details page.
 3. Select the **Dynamic rules** tab.
 4. Click **Add rule**.
-5. Enter the information from your identity provider that is dynamically provided for you on the Add rule page. The following list provides details for each required field.
+5. Enter the information from your IdP that is dynamically provided for you on the Add rule page. The following list provides details for each required field.
 
 You can think of an access group rule as a key:value pair. The key is what you add in the `Add users when` field, and the value is what you enter in the `Values` field. 
 {: tip}
@@ -50,11 +50,11 @@ You can think of an access group rule as a key:value pair. The key is what you a
 <dt>Name</dt>
 <dd>Enter a custom name for your rule that helps you remember what type of users that you are adding to an access group.</dd>
 <dt>Identity provider</dt>
-<dd>Enter the URI for your identity provider. This is the SAML "entityId" field, which is sometimes referred to as the issuer ID, for the identity provider as part of the federation configuration for onboarding with IBMid.</dd>
+<dd>Enter the URI for your IdP. This is the SAML "entityId" field, which is sometimes referred to as the issuer ID, for the IdP as part of the federation configuration for onboarding with IBMid.</dd>
 <dt>Expiration (in hours)</dt>
 <dd>You can use this option to provide extra security by setting a time limit for the assigned access. Each user must log in every 24 hours to refresh their access, but you can set the access to expire in as little as an hour's time. Group membership is revoked after this time period expires.</dd>
 <dt>Add users when</dt>
-<dd>The attribute statement name must be entered in this field. This value is specific to your identity provider.</dd>
+<dd>The attribute statement name must be entered in this field. This value is specific to your IdP.</dd>
 <dt>Comparator</dt>
 <dd>You can choose from Equals, Not Equals, Equals Ignore Case, Not Equals Ignore Case, In, and Contains. Use the Contains option when the attribute statement has an array type. And, you can enter more than one value to be matched by using the In option.</dd>
 <dt>Value</dt>
@@ -67,7 +67,7 @@ Users added to access groups by using dynamic rules don't display as group membe
 ## Example rule
 {: #example}
 
-The following example includes values for each of the fields on the **Add rule** page. In this rule, users who are identified as managers within the federated identity provider are mapped to an {{site.data.keyword.Bluemix_notm}} access group that has specific access set for only managers.
+The following example includes values for each of the fields on the **Add rule** page. In this rule, users who are identified as managers within the federated IdP are mapped to an {{site.data.keyword.Bluemix_notm}} access group that has specific access set for only managers.
 
 | Field                           | Value                           |
 |---------------------------------|---------------------------------|

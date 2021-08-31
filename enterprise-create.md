@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-04-22"
+lastupdated: "2021-08-23"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, multiple account, video
 
@@ -26,13 +26,14 @@ subcollection: account
 {:api: .ph data-hd-interface='api'}
 {:cli: .ph data-hd-interface='cli'}
 {:ui: .ph data-hd-interface='ui'}
+{:terraform: .ph data-hd-interface='terraform'}
 
 
 # Creating an enterprise
 {: #create-enterprise}
 
 You create an {{site.data.keyword.Bluemix}} enterprise from an existing Subscription account. When an existing subscription account is used, an enterprise and an enterprise account are created. The account that you use to create the enterprise and the new enterprise account are permanently added to the enterprise, but this account does not become the parent account.
-{:shortdesc}
+{: shortdesc}
 
 ## Before you begin
 {: #create-prereqs}
@@ -74,20 +75,20 @@ Click **Accounts** to view your enterprise hierarchy, which contains two account
    ```
    ibmcloud login
    ```
-   {:codeblock}
+   {: codeblock}
 1. Create the enterprise by running the [`ibmcloud enterprise create`](/docs/account?topic=cli-ibmcloud_enterprise#ibmcloud_enterprise_create) command, where `NAME` is a unique name to identify the enterprise.
 
    ```
    ibmcloud enterprise create NAME [-d, --domain DOMAIN_NAME] [--primary-contact-id PRIMARY_CONTACT_USER_ID]
    ```
-   {:codeblock}
+   {: codeblock}
 
    For example, the following command creates an enterprise that is named `Example Corp Enterprise` with the `examplecorp.com` domain.
 
    ```
    ibmcloud enterprise create "Example Corp Enterprise" -d examplecorp.com
    ```
-   {:codeblock}
+   {: codeblock}
 
    By default, the enterprise is created with the currently logged-in user in the following roles:
       * The contact for the enterprise, which identifies a focal person to notify with enterprise-related concerns
@@ -190,6 +191,49 @@ fmt.Println(string(b))
 ```
 {: codeblock}
 {: go}
+
+## Creating an enterprise by using Terraform
+{: #create-terraform}
+{: terraform}
+
+You can create an enterprise by using Terraform. 
+
+1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+
+2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create an enterprise by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
+   The following example creates an enterprise by using the `ibm_enterprise` resource, where `name` is a unique name to identify the enterprise. You must have an existing IAM ID of an enterprise primary contact in order to complete the task. 
+
+   ```terraform
+   resource "ibm_enterprise" "enterprise" {
+    source_account_id = <source_account_id>
+    name = <name>
+    primary_contact_iam_id = <primary_contact_iam_id>
+   }
+   ```
+   {: codeblock}
+
+   You can specify the ID of an account that is used to create the enterprise on the `source_account_id` option. For more information, see the argument reference details on the [Terraform Enterprise Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/enterprise){: external} page.
+  
+3. Initialize the Terraform CLI.
+
+   ```
+   terraform init
+   ```
+   {: pre}
+   
+4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the enterprise.
+
+   ```
+   terraform plan
+   ```
+   {: pre}
+
+5. Create the enterprise.
+
+   ```
+   terraform apply
+   ```
 
 ## Next steps
 {: #create-next-steps}

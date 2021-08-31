@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2021
 
-lastupdated: "2021-07-08"
+lastupdated: "2021-08-17"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, role management service, catalog management service, cloud shell service, software instance service
 
@@ -384,14 +384,14 @@ You can give users access to view, create, edit, and delete access groups in the
 ### IAM identity service
 {: #identity-service-account-management}
 
-You can give users access to manage service IDs and Identity Providers (IDPs) by using the IAM identity service. For the IAM identity service, these actions apply to service IDs and IDPs within the account that the user didn't create. All users can create service IDs. They are the administrator for those IDs, and they can create the associated API key and access policies, but only users with the Operator and Administrator role can create IDPs. This account management service applies to the ability to view, update, delete, and assign access to service IDs in the account created by other users.
+You can give users access to manage service IDs and identity providers (IdPs) by using the IAM identity service. For the IAM identity service, these actions apply to service IDs and IdPs within the account that the user didn't create. All users can create service IDs. They are the administrator for those IDs, and they can create the associated API key and access policies, but only users with the Operator and Administrator role can create IdPs. This account management service applies to the ability to view, update, delete, and assign access to service IDs in the account created by other users.
 
 | Roles         | Actions                                                                                           |
 |---------------|----------------------------------------------------------------------------------------------------|
 | Viewer        | View IDs              |
-| Operator      | Create and delete IDs and API keys <br><br> View, create, update, and delete IDPs <br><br> Update IAM account setting for service IDs and user API key creation         |
-| Editor        | Create, update, and delete IDs and API keys <br><br> View and update IDPs <br><br> Update IAM account setting for service IDs and user API key creation      |
-| Administrator | Create, update, and delete IDs and API keys <br><br> Assign access policies to IDs <br><br> View, create, update, and delete IDPs <br><br> Update IAM account setting for service IDs and user API key creation |
+| Operator      | Create and delete IDs and API keys <br><br> View, create, update, and delete IdPs <br><br> Update IAM account setting for service IDs and user API key creation         |
+| Editor        | Create, update, and delete IDs and API keys <br><br> View and update IdPs <br><br> Update IAM account setting for service IDs and user API key creation      |
+| Administrator | Create, update, and delete IDs and API keys <br><br> Assign access policies to IDs <br><br> View, create, update, and delete IdPs <br><br> Update IAM account setting for service IDs and user API key creation |
 | User API key creator | Can create API keys when the account setting to restrict API key creation is enabled. |
 | Service ID creator | Can create service IDs when the account setting to restrict service ID creation is enabled. |
 {: caption="Table 7. Roles and example actions for the IAM Identity service" caption-side="top"}

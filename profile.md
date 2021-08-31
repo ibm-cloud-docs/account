@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-08-17"
 
 keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy, set up profile
 
@@ -37,7 +37,7 @@ You can change your profile photo. In the {{site.data.keyword.cloud_notm}} conso
 
 If you log in with an IBMid, it is the single ID that you use to log in to your {{site.data.keyword.Bluemix_notm}} account for infrastructure, services, and application features. You can't change your IBMid, but you can edit your associated profile information, such as your name, email, phone number, password, or company name. In the console, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Profile**. If you log in with a SoftLayer ID, you can also change your profile information from the Profile page.
 
-If you log in with an ID from an external identity provider, then your information from your identity provider is displayed. However, you can't update it on the Profile page. You must update your user information with your identity provider.
+If you log in with an ID from an external identity provider (IdP), then your information from your IdP is displayed. However, you can't update it on the Profile page. You must update your user information with your IdP.
 {: note}
 
 ## Changing your cookie settings

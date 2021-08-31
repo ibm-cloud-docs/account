@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2021
-lastupdated: "2021-04-15"
+lastupdated: "2021-08-23"
 
 keywords: service key, api key, bind, credential
 
@@ -19,6 +19,7 @@ subcollection: account
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
 {:api: .ph data-hd-interface='api'}
+{:terraform: .ph data-hd-interface='terraform'}
 {:java: .ph data-hd-programlang='java'}
 {:python: .ph data-hd-programlang='python'}
 {:javascript: .ph data-hd-programlang='javascript'}
@@ -149,6 +150,62 @@ fmt.Printf("\nCreateResourceKey() response:\n%s\n", string(b))
 ```
 {: codeblock}
 {: go}
+
+## Adding a credential when binding an IAM-enabled service by using Terraform
+{: #iam-credential-terraform}
+{: terraform}
+
+You can add credentials for an IAM-enabled service by using Terraform. 
+
+1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+
+2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to add a credential by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
+   The following example creates credentials for a resource without a service ID by using the `ibm_resource_instance` resource, where `name` is a unique name to identify the credential. 
+   
+   ```terraform
+   data "ibm_resource_instance" "resource_instance" {
+    name = "myobjectsotrage"
+   }
+
+   resource "ibm_resource_key" "resourceKey" {
+    name                 = "myobjectkey"
+    role                 = "Viewer"
+    resource_instance_id = data.ibm_resource_instance.resource_instance.id
+
+    //User can increase timeouts
+    timeouts {
+      create = "15m"
+     delete = "15m"
+    }
+   }
+   ```
+   {: codeblock}
+  
+   By default, the `ibm_resource_key` resource creates service credentials that use the public service endpoint of a service 
+   {: note}
+
+   You can specify `tags` associated with the resource group instance. For more information, see the argument reference details on the [Terraform Resource Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_key){: external} page.
+  
+3. Initialize the Terraform CLI.
+
+   ```
+   terraform init
+   ```
+   {: pre}
+   
+4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the credentials.
+
+   ```
+   terraform plan
+   ```
+   {: pre}
+
+5. Create the credentials.
+
+   ```
+   terraform apply
+   ```
 
 ## Adding a credential when binding a Cloud Foundry service
 {: #cf_credential-ui}

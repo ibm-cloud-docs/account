@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-07-26"
+lastupdated: "2021-08-18"
 
 keywords: trusted profile, identity and access management, federated users, compute resources
 
@@ -56,9 +56,9 @@ Complete the following steps to define which federated users can access specific
 1. (Optional) Establish trust.
   1. Select **Federated users** as a trusted entity type from the list.
   1. Select **Users federated by IBMid** or **Users federated by IBM Cloud AppID** as the authentication method and input the default identity prodiver (IdP) URL.
-  1. Add conditions based on your identity provider (IdP) data to define how and when federated users can apply the profile.
+  1. Add conditions based on your IdP data to define how and when federated users can apply the profile.
     * By clicking **Add a condition**, you can define multiple conditions. Federated users must meet all the conditions to be included in the trusted profile.
-    * Click **View identity provider (IdP) data** to search attribute names and values in your own personal data from your identity provider. For more information, see [Using IdP data to build trusted profiles](/docs/account?topic=account-idp-integration#trusted-profiles-idp-data).
+    * Click **View identity provider (IdP) data** to search attribute names and values in your own personal data from your IdP. For more information, see [Using IdP data to build trusted profiles](/docs/account?topic=account-idp-integration#trusted-profiles-idp-data).
   1. Define the session duration for how long a user can apply the profile before they must reauthenticate, and click **Continue**.
 1. (Optional) Create access policy. 
   1. Based on your level of access, you can assign IAM policies and classic infrastructure permissions. Select **IAM services** or **Account management** to continue.
