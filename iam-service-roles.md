@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-08-30"
+lastupdated: "2021-08-31"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3884,6 +3884,10 @@ Review the available platform and service roles available and the actions mapped
 | `schematics.settings-kms.discover` | Discover KMS instances for Schematics settings | Administrator |
 | `schematics.settings-kms.read` | Read the Schematics KMS settings | Administrator, Editor, Manager, Operator, Reader, Service Configuration Reader, Viewer, Writer |
 | `schematics.settings-kms.update` | Update the Schematics KMS settings | Administrator |
+| `schematics.environment.create` | Create an Environment | Manager |
+| `schematics.environment.update` | Update the Environment | Manager, Writer |
+| `schematics.environment.delete` | Delete an Environment | Manager |
+| `schematics.environment.read` | Read the Environment details | Manager, Reader, Writer |
 {: caption="Table 85. Service actions - Schematics" caption-side="top"}
 {: #actions-table85}
 {: tab-title="Actions"}
