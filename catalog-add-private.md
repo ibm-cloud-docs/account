@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-08-02"
+lastupdated: "2021-08-31"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -21,6 +21,7 @@ subcollection: account
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
 {:api: .ph data-hd-interface='api'}
+{:terraform: .ph data-hd-interface='terraform'}
 {:java: .ph data-hd-programlang='java'}
 {:python: .ph data-hd-programlang='python'}
 {:javascript: .ph data-hd-programlang='javascript'}
@@ -58,7 +59,7 @@ For containerized apps, complete the following prerequisites:
 
   1. Create your [Kubernetes cluster](/docs/containers?topic=containers-getting-started) or [Red Hat OpenShift cluster](/docs/openshift?topic=openshift-getting-started).
   2. For deployments to {{site.data.keyword.cloud_notm}} Kubernetes Service, [set up your Helm chart](/docs/containers?topic=containers-helm). 
-  3. For deployments to Red Hat OpenShift, set up your [Helm chart](/docs/openshift?topic=openshift-helm) or [operator](/docs/openshift?topic=openshift-operators).
+  3. For deployments to Red Hat OpenShift, set up your [Helm chart](/docs/openshift?topic=openshift-helm) or [Operator](/docs/openshift?topic=openshift-operators).
 
 For virtual server images, complete the following prerequisites:
 
@@ -66,8 +67,7 @@ For virtual server images, complete the following prerequisites:
   2. Create your [Terraform template](/docs/schematics?topic=schematics-getting-started).
   3. Create an instance of [{{site.data.keyword.cloud_notm}} Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage) and add your image to a bucket.
  
-
-## Creating a private catalog
+## Creating a private catalog by using the console
 {: #create-catalog}
 {: ui}
 
@@ -78,7 +78,7 @@ Private catalogs provide a way for you to manage access to products for users in
 1. Select to exclude or include all products in the {{site.data.keyword.cloud_notm}} catalog in your private catalog. For more information about how this affects what products are visible in the catalog, see [Managing catalog settings](/docs/account?topic=account-filter-account&interface=ui).
 1. Click **Create**.
 
-## Importing software to your private catalog
+## Importing software to your private catalog by using the console
 {: #add-public-repo}
 {: ui}
 
@@ -102,18 +102,20 @@ Complete the following steps to import software to your private catalog:
   * Node-RED Operator: `https://github.com/IBM-Cloud/operator-bundle-sample/archive/refs/tags/v0.0.3.tar.gz`
   * Operator bundle from a {{site.data.keyword.redhat_notm}} {{site.data.keyword.openshiftshort}} registry: For an example, select the `Akka Cluster Operator` from the list of available Operators in the Certified repository. 
   * OVA image: `https://github.com/gcatalog/OVA-sample/blob/main/ova-sample.yaml`
-  * Terraform template: `https://github.com/Cloud-Schematics/2-zone-vpc/releases/download/v1.0.9/terraform-2-zone-vpc-1.0.9.tgz`
+  * Terraform template: `https://github.com/IBM-Cloud/terraform-sample/archive/refs/tags/v1.0.0.tar.gz`
   * Virtual server image with Terraform: `https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample/releases/download/v1.0/isv-vsi-product-deploy-sample.tar.gz`
 
 1. If applicable, enter the version of the software in the format of major version, minor version, and revision. For example. enter version 1.1.2.    
 1. Select a catalog category for the product. Categories are used to organize products in the {{site.data.keyword.cloud_notm}} catalog based on function, use, or common solutions.
 1. Click **Add version**. 
 
-## Configuring the software
+## Configuring the software by using the console
 {: #catalog-configure-details}
+{: ui}
 
 ### Helm chart
 {: #catalog-config-helm}
+{: ui}
 
 1. From the version list that's displayed on the product details page, click the row that contains your software. 
 1. Review the version details, and click **Next**.
@@ -122,6 +124,7 @@ Complete the following steps to import software to your private catalog:
 
 ### Terraform
 {: #catalog-config-tf}
+{: ui}
 
 1. From the version list that's displayed on the product details page, click the row that contains your software.
 1. Review the version details, and click **Next**.
@@ -129,6 +132,7 @@ Complete the following steps to import software to your private catalog:
 
 ### Operator from GitHub repository
 {: #catalog-config-opgh}
+{: ui}
 
 1. From the version list that's displayed on the product details page, click the row that contains your software.
 1. Review the version details, and click **Next**.
@@ -136,18 +140,21 @@ Complete the following steps to import software to your private catalog:
 
 ### Operator from Red Hat registry
 {: #catalog-config-oprh}
+{: ui}
 
 1. From the version list that's displayed on the product details page, click the row that contains your software.
 1. Review the version details, and click **Next**.
 
 ### OVA image
 {: #catalog-config-ova}
+{: ui}
 
 1. From the version list that's displayed on the product details page, click the row that contains your software.
 1. Review the version details, and click **Next**.
 
 ### Virtual server image with Terraform
 {: #catalog-config-vsi}
+{: ui}
 
 1. From the version list that's displayed on the product details page, click the row that contains your software.
 1. Review the version details, and click **Next**.
@@ -155,6 +162,7 @@ Complete the following steps to import software to your private catalog:
 
 ## Adding license agreements
 {: #catalog-add-license}
+{: ui}
 
 If users are required to accept any license agreements beyond the {{site.data.keyword.cloud_notm}} Services Agreement when they install the software, provide the URL to each agreement. 
 
@@ -164,6 +172,7 @@ If users are required to accept any license agreements beyond the {{site.data.ke
 
 ## Editing your readme file
 {: #catalog-readme-edit}
+{: ui}
 
 When users install the software, they can view installation instructions from the Readme tab of your product's catalog details page. The information on the Readme tab is generated from the readme file that you uploaded to your GitHub repository. 
 
@@ -174,6 +183,7 @@ When users install the software, they can view installation instructions from th
 
 ## Validating the software 
 {: #catalog-validate-product}
+{: ui}
 
 When you validate your software, you're confirming that the current version can be successfully installed on the deployment target. The validation steps vary based on your deployment method. 
 
@@ -182,6 +192,7 @@ To monitor the progress of the validation process, click **View logs**.
 
 ### Helm chart
 {: #catalog-validate-helm}
+{: ui}
 
 1. From the Validate product tab, select your cluster.
 1. If the deployment target is a Kubernetes cluster, select a namespace or create a new one. If the deployment target is a Red Hat OpenShift cluster, select a project or create a new one. 
@@ -193,6 +204,7 @@ To monitor the progress of the validation process, click **View logs**.
 
 ### Terraform
 {: #catalog-validate-tf}
+{: ui}
 
 1. From the Validate product tab, configure your {{site.data.keyword.bplong_notm}} workspace.
 1. Click **Next**.
@@ -201,6 +213,7 @@ To monitor the progress of the validation process, click **View logs**.
 
 ### Operator from GitHub repository
 {: #catalog-validate-opgh}
+{: ui}
 
 1. From the Validate product tab, select your Red Hat OpenShift cluster.
 1. Select a project or create a new one. A project is similar to a Kubernetes cluster namespace, and the list is populated from your Red Hat OpenShift environment.
@@ -212,6 +225,7 @@ To monitor the progress of the validation process, click **View logs**.
 
 ### Operator from Red Hat registry
 {: #catalog-validate-oprh}
+{: ui}
 
 1. From the Validate product tab, select an update channel.
 1. Select an approval strategy. 
@@ -225,26 +239,27 @@ To monitor the progress of the validation process, click **View logs**.
 
 ### OVA image
 {: #catalog-validate-ova}
+{: ui}
 
 1. From the Validate product tab, review the license agreements, and select **I have read and agree to the following license agreements:**.
 1. Click **Validate**. 
 
 ### Virtual server image with Terraform
 {: #catalog-validate-vsi}
+{: ui}
 
 1. From the Validate product tab, configure your {{site.data.keyword.bplong_notm}} workspace.
 1. Click **Next**.
 1. If applicable, review the license agreements, and select **I have read and agree to the following license agreements:**. 
 1. Click **Validate**.
 
-## Publishing the software
+## Publishing the software by using the console
 {: #validating-software}
 {: ui}
 
 After you validate your software, you're ready to make it available to all users who have access to your private catalog. Open the **Actions** menu, and select **Publish to account**.
 
-
-## Importing software to your catalog
+## Importing software to your catalog by using the CLI
 {: #create-cicd-product}
 {: cli}
 
@@ -284,7 +299,7 @@ Complete the following steps to add your software by using the CLI. You can use 
     ```
     {: codeblock}
 
-## Importing software to your private catalog
+## Importing software to your private catalog by using the API
 {: create-product-api}
 {: api}
 
@@ -334,3 +349,132 @@ fmt.Println(response)
 ```
 {: codeblock}
 {: go}
+
+## Creating a private catalog by using Terraform
+{: #create-catalog-terraform}
+{: terraform}
+
+You can create a private catalog by using Terraform.
+
+1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+
+2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create a private catalog by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
+   The following example creates a private catalog by using the `ibm_cm_catalog` resource, where `label` is a display name to identify the catalog. 
+
+   ```terraform
+   resource "ibm_cm_catalog" "cm_catalog" {
+   label = "label"
+   short_description = "short_description"
+   }
+   ```
+   {: codeblock}
+
+   For more information, see the argument reference details on the [Terraform Catalog Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/cm_catalog){: external} page.
+  
+3. Initialize the Terraform CLI.
+
+   ```
+   terraform init
+   ```
+   {: pre}
+   
+4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the catalog.
+
+   ```
+   terraform plan
+   ```
+   {: pre}
+
+5. Create the catalog.
+
+   ```
+   terraform apply
+   ```
+
+## Importing a product to your catalog by using Terraform
+{: #create-cicd-product-terraform}
+{: terraform}
+
+You can import a product to your private catalog by using Terraform.
+
+1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud_notm}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+
+2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to add your product by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
+   The following example adds your product by using the `ibm_cm_offering` resource, where `label` is a display name to identify the product. 
+
+   ```terraform
+   resource "ibm_cm_offering" "cm_offering" {
+   catalog_id = "catalog_id"
+   label = "label"
+   tags = [ "tags" ]
+   }   
+   ```
+   {: codeblock}
+
+   For more information, see the argument reference details on the [Terraform Catalog Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/cm_offering){: external} page.
+  
+3. Initialize the Terraform CLI.
+
+   ```
+   terraform init
+   ```
+   {: pre}
+   
+4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to add your product.
+
+   ```
+   terraform plan
+   ```
+   {: pre}
+
+5. Add your product.
+
+   ```
+   terraform apply
+   ```
+
+## Importing a version of your software by using Terraform
+{: #create-cicd-version-terraform}
+{: terraform}
+
+After adding your product, you can add a version of your software by using Terraform. 
+
+1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud_notm}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+
+2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to add your software version by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
+   The following example accesses the software version by using the `cm_version` resource, where `offering_id` identifies the software. 
+
+   ```terraform
+   resource "cm_version" "cm_version" {
+   catalog_identifier = "catalog_identifier"
+   offering_id = "offering_id"
+   zipurl = "zipurl"
+   }
+   ```
+   {: codeblock}
+
+   For more information, see the argument reference details on the [Terraform Catalog Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/cm_version){: external} page.
+  
+3. Initialize the Terraform CLI.
+
+   ```
+   terraform init
+   ```
+   {: codeblock}
+   
+4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to add a version.
+
+   ```
+   terraform plan
+   ```
+   {: codeblock}
+
+5. Add the version.
+
+   ```
+   terraform apply
+   ```
+   {: codeblock}
