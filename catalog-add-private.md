@@ -463,17 +463,18 @@ After adding your product, you can add a version of your software by using Terra
    ```
    terraform init
    ```
-   {: pre}
+   {: codeblock}
    
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to add a version.
 
    ```
    terraform plan
    ```
-   {: pre}
+   {: codeblock}
 
 5. Add the version.
 
    ```
    terraform apply
    ```
+   {: codeblock}
