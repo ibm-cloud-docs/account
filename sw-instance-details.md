@@ -153,18 +153,19 @@ You can delete your software instance by using Terraform.
    ```
    terraform init
    ```
-   {: pre}
+   {: codeblock}
    
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to delete the software instance.
 
    ```
    terraform plan
    ```
-   {: pre}
+   {: codeblock}
 
 5. Delete the software instance.
 
    ```
    terraform apply
    ```
+   {: codeblock}
    
