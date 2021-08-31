@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-08-16"
+lastupdated: "2021-08-31"
 
 keywords: IBM Cloud notifications, notification preferences, email preferences, user notifications, distribution list, webhooks, Slack webhooks
 
@@ -165,6 +165,16 @@ To add a Slack webhook in the {{site.data.keyword.Bluemix_notm}} console, comple
 2. Click **Add**, and select **Slack**. 
 3. Enter a name for your webhook and a Slack webhook URL. The notifications are sent to this unique URL. 
 
+## Adding Microsoft Teams webhooks to a distribution list 
+{: add-microsoft-teams-webhook}
 
+Adding Microsoft Teams webhooks to your distribution list is also available for you to receive account-wide {{site.data.keyword.Bluemix_notm}} notifications. 
 
+To create a webhook in the {{site.data.keyword.Bluemix_notm}} console, first create the incoming webhook in Microsoft Teams. This allows external apps to share content in Teams channels and provides the unique URL where you can send the notification message text in the form of a JSON payload. You receive the notifications in the selected Teams channel in which you added the incoming webhook. For more information, see [Create Incoming Webhook](https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook){: external}. 
+
+To add a Microsoft Teams webhook in the {{site.data.keyword.Bluemix_notm}} console, complete the following steps: 
+
+1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account** > **Notification distribution list**. 
+2. Click **Add**, and select **Microsoft Teams**. 
+3. Enter a name for your webhook and a Microsoft Teams webhook URL. The notifications are sent to this unique URL. 
 
