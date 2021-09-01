@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-08-31"
+lastupdated: "2021-09-01"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1668,7 +1668,7 @@ Review the available platform and service roles available and the actions mapped
 | `messagehub.schema.write` | Create a schema/schema version | Manager, Writer |
 | `messagehub.schema.manage` | Delete a schema/schema version | Manager |
 | `messagehub.cluster.manage` | Manage the configuration of an Event Streams instance | Manager |
-| `messagehub.config.read` | Configuration Information Point API access | Reader, Service Configuration Reader |
+| `messagehub.config.read` | Configuration Information Point API access | Manager, Reader, Service Configuration Reader, Writer |
 {: caption="Table 33. Service actions - Event Streams" caption-side="top"}
 {: #actions-table33}
 {: tab-title="Actions"}
