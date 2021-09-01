@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-08-17"
+lastupdated: "2021-09-31"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources 
 
@@ -155,6 +155,8 @@ Using trusted profiles is a best practice for applications running on {{site.dat
 
 ## Compare access groups and trusted profiles
 {: #compare-accessgroups-trustedprofiles}
+
+Access groups are best used for granting access for a users' day-to-day work, while trusted profiles are suited for granting federated users the level of access they need to complete a specialized and specific set of tasks within a limited time-period. These are usually critical tasks that you would want to avoid doing unintentionally in daily work. With trusted profiles, federated users don't need to onboard to {{site.data.keyword.Bluemix_notm}}, they are granted access to {{site.data.keyword.Bluemix_notm}} resources in an account by way of the trust relationship. If a federated user leaves your company, you can simply delete their corporate identity in your directory, which then also removes access to {{site.data.keyword.Bluemix_notm}}. Time-based access with trusted profiles allows frequent authentication checks for reduced security risks.
 
 Use the following table to understand the differences between using access groups and trusted profiles to make the best decision for your use case.
 
