@@ -4,9 +4,9 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-08-18"
+lastupdated: "2021-09-01"
 
-keywords: trusted profile, identity and access management, federated users, compute resources
+keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
 subcollection: account
 

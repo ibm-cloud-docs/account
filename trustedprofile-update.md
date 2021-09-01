@@ -4,9 +4,9 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-07-26"
+lastupdated: "2021-09-01"
 
-keywords: trusted profile, federated users, granting access, update trusted profile, compute resource
+keywords: trusted profile, federated users, granting access, update trusted profile, compute resource, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
 subcollection: account
 
