@@ -304,6 +304,7 @@ Managing your account, resources, and access
         ts-lite-instance.md
         ts-runtime.md
         ts-inactive-account.md
+        ts-rscs-reactivate-upgrade-suspended.md
         ts-add-usersorg.md
         ts-space-org.md
         ts-admin-org.md
@@ -343,7 +344,8 @@ Managing your account, resources, and access
         ts-rscs-migrate-all.md
         ts-rscs-migrate-rg.md
         ts-rscs-migrate-cf.md
-        ts-rscs-reactivate-upgrade-suspended.md
+        ts-swinstance-unavail.md
+        ts-unsupported-registry.md
 
     known-issues.md
     {: .navgroup-end}
