@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021
-lastupdated: "2021-08-26"
+lastupdated: "2021-09-01"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, attach tags ui, attach tags cli, attach tags api, detach tags ui, detach tags api, detach tags cli
 
@@ -91,17 +91,92 @@ When you detach an access management tag from a resource, any associated access 
 
 You can programmatically attach tags by calling the [Global Search and Tagging - Tagging API](/apidocs/tagging#attach-tag){: external} as shown in the following sample requests. The allowed values for the `tag_type` query parameter are: `user` for user tags and `access` for access management tags. The following example shows how to attach an access management tag called `project:myproject` to a service instance. 
 
-1. Find the unique identifier for your resource by calling the following cURL command:
-  ```bash
-  curl -v -X POST -k --header 'Content-Type: application/json' 
-  --header 'Accept: application/json' 
-  --header 'Authorization: bearer  <your IAM token>' 
-  -d '{"query": "name:myresource"}' 'https://api.global-search-tagging.cloud.ibm.com/v3/resources/search'
-  ```
-  {: codeblock}
-  {: curl}
-1. Extract the value of the crn field from the response.
-1. Call the following:
+1. Find the unique identifier for your resource by calling the following command:
+
+   ```bash
+   curl -v -X POST -k --header 'Content-Type: application/json' 
+   --header 'Accept: application/json' 
+   --header 'Authorization: bearer  <your IAM token>' 
+   -d '{"query": "name:myresource"}' 'https://api.global-search-tagging.cloud.ibm.com/v3/resources/search'
+   ```
+   {: codeblock}
+   {: curl}
+
+   ```java
+   SearchOptions searchOptions = new SearchOptions.Builder()
+    .query("GST-sdk-*")
+    .fields(new java.util.ArrayList<String>(java.util.Arrays.asList("crn")))
+    .searchCursor(searchCursor)
+    .build();
+
+   Response<ScanResult> response = service.search(searchOptions).execute();
+   ScanResult scanResult = response.getResult();
+
+   System.out.println(scanResult);
+   ```
+   {: codeblock}
+   {: java}
+
+   ```javascript
+   const params = {
+   query: 'GST-sdk-*',
+   fields: ['crn'],
+   searchCursor: searchCursor,
+   };
+
+   globalSearchService.search(params)
+   .then(res => {
+    console.log(JSON.stringify(res.result, null, 2));
+   })
+   .catch(err => {
+    console.warn(err)
+   });
+   ```
+   {: codeblock}
+   {: javascript}
+
+   ```python
+   response = global_search_service.search(query='GST-sdk-*',
+                      fields=['crn'])
+   scan_result = response.get_result()
+
+   print(json.dumps(scan_result, indent=2))
+   ```
+   {: codeblock}
+   {: python}
+
+   ```go
+   searchOptions := globalSearchService.NewSearchOptions()
+   searchOptions.SetLimit(10)
+   searchOptions.SetQuery("GST-sdk-*")
+   searchOptions.SetFields([]string{"crn"})
+
+   scanResult, response, err := globalSearchService.Search(searchOptions)
+   if err != nil {
+    panic(err)
+   }
+   b, _ := json.MarshalIndent(scanResult, "", "  ")
+   fmt.Println(string(b))
+   ```
+   {: codeblock}
+   {: go}
+
+2. Extract the value of the CRN field from the response.
+
+   ```bash
+      {
+      "items": [
+        {
+          "crn": "crn:v1:bluemix:public:cf:au-syd:a/000af2ea12345aabb1234567801fffab::cf-organization:aaaf4100-0011-2233-1111-11aaffee0011"
+        }
+      ],
+      "limit": 1,
+      "search_cursor": "e34535305339jg0rntt39nt3nu5tt9yn3u5ntt329nutt92u4ntt92u4t9u5gt2u5gt92u4n5g982458hg2t45hg9u42rg9t2u49gh285ght28h5t2835th85ht318h4tg9138h4tg91u3hgt931hg45918h34tg18h43hgt31hgt3rng0fnefvodnfvpojdpbojarfdbpojeafrbeafbjeqpnrqngrpqgrhbHNlIiwiY2FuVGFnIjoiZmFsc2UiLCJsdfshfksdhfkshfdkshfdkhkhewrkfehrkhkwhfkwrhkfhrgk3h5k3h45k3hk45hgk3hgk3hfk3h4k3hfkrfh3rkgh3krghk3rgh3kghk3hgk3hgk3rhgdWJsaWM6Y2Y6YXUtwriretoeiroteito4i5ot4i5oyti45ito4tio45ito45io5ogno5iogn5oin5oingoi5o5ngogo4ngo4ngro3jrong3gor3g3gno3jrgo3jrngo3ngro3g32ODQiXX0t"
+    }
+   ```
+   {: codeblock}
+
+3. Call the following:
   ```bash
   curl -X POST -H "Authorization: {iam_token}" \
   -H "Accept: application/json" \
@@ -189,17 +264,92 @@ You can programmatically attach tags by calling the [Global Search and Tagging -
 
 You can programmatically detach tags by calling the [Global Search and Tagging - Tagging API](/apidocs/tagging#detach-tag){: external} as shown in the following sample requests. The allowed values for the `tag_type` query parameter are: `user` for user tags and `access` for access management tags. The following example shows how to detach an access management tag called `project:myproject` from a service instance.
 
-1. Find the unique identifier for your resource by calling the following cURL command:
-  ```bash
-  curl -v -X POST -k --header 'Content-Type: application/json' 
-  --header 'Accept: application/json' 
-  --header 'Authorization: bearer  <your IAM token>' 
-  -d '{"query": "name:myresource"}' 'https://api.global-search-tagging.cloud.ibm.com/v3/resources/search'
-  ```
-  {: codeblock}
-  {: curl}
-1. Extract the value of the crn field from the response.
-1. Call the following:
+1. Find the unique identifier for your resource by calling the following command:
+
+   ```bash
+   curl -v -X POST -k --header 'Content-Type: application/json' 
+   --header 'Accept: application/json' 
+   --header 'Authorization: bearer  <your IAM token>' 
+   -d '{"query": "name:myresource"}' 'https://api.global-search-tagging.cloud.ibm.com/v3/resources/search'
+   ```
+   {: codeblock}
+   {: curl}
+
+   ```java
+   SearchOptions searchOptions = new SearchOptions.Builder()
+    .query("GST-sdk-*")
+    .fields(new java.util.ArrayList<String>(java.util.Arrays.asList("crn")))
+    .searchCursor(searchCursor)
+    .build();
+
+   Response<ScanResult> response = service.search(searchOptions).execute();
+   ScanResult scanResult = response.getResult();
+
+   System.out.println(scanResult);
+   ```
+   {: codeblock}
+   {: java}
+
+   ```javascript
+   const params = {
+   query: 'GST-sdk-*',
+   fields: ['crn'],
+   searchCursor: searchCursor,
+   };
+
+   globalSearchService.search(params)
+   .then(res => {
+    console.log(JSON.stringify(res.result, null, 2));
+   })
+   .catch(err => {
+    console.warn(err)
+   });
+   ```
+   {: codeblock}
+   {: javascript}
+
+   ```python
+   response = global_search_service.search(query='GST-sdk-*',
+                      fields=['crn'])
+   scan_result = response.get_result()
+
+   print(json.dumps(scan_result, indent=2))
+   ```
+   {: codeblock}
+   {: python}
+
+   ```go
+   searchOptions := globalSearchService.NewSearchOptions()
+   searchOptions.SetLimit(10)
+   searchOptions.SetQuery("GST-sdk-*")
+   searchOptions.SetFields([]string{"crn"})
+
+   scanResult, response, err := globalSearchService.Search(searchOptions)
+   if err != nil {
+    panic(err)
+   }
+   b, _ := json.MarshalIndent(scanResult, "", "  ")
+   fmt.Println(string(b))
+   ```
+   {: codeblock}
+   {: go}
+
+2. Extract the value of the CRN field from the response.
+
+   ```bash
+      {
+      "items": [
+        {
+          "crn": "crn:v1:bluemix:public:cf:au-syd:a/000af2ea12345aabb1234567801fffab::cf-organization:aaaf4100-0011-2233-1111-11aaffee0011"
+        }
+      ],
+      "limit": 1,
+      "search_cursor": "e34535305339jg0rntt39nt3nu5tt9yn3u5ntt329nutt92u4ntt92u4t9u5gt2u5gt92u4n5g982458hg2t45hg9u42rg9t2u49gh285ght28h5t2835th85ht318h4tg9138h4tg91u3hgt931hg45918h34tg18h43hgt31hgt3rng0fnefvodnfvpojdpbojarfdbpojeafrbeafbjeqpnrqngrpqgrhbHNlIiwiY2FuVGFnIjoiZmFsc2UiLCJsdfshfksdhfkshfdkshfdkhkhewrkfehrkhkwhfkwrhkfhrgk3h5k3h45k3hk45hgk3hgk3hfk3h4k3hfkrfh3rkgh3krghk3rgh3kghk3hgk3hgk3rhgdWJsaWM6Y2Y6YXUtwriretoeiroteito4i5ot4i5oyti45ito4tio45ito45io5ogno5iogn5oin5oingoi5o5ngogo4ngo4ngro3jrong3gor3g3gno3jrgo3jrngo3ngro3g32ODQiXX0t"
+    }
+   ```
+   {: codeblock}
+
+3. Call the following:
   ```bash
   curl -X POST -H "Authorization: {iam_token}" \
   -H "Accept: application/json" \
