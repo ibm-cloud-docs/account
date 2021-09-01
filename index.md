@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-08-31"
 
 keywords: account types, Lite, free account, trial account, paid account, buy account, account difference, compare account, subscription, Pay As You Go with Committed Use, PayGo with Commit
 
@@ -77,7 +77,7 @@ Check out the following list of key features that are available in a Lite accoun
 ## Pay-As-You-Go account
 {: #paygo}
 
-With a Pay-As-You-Go account, you can access the full {{site.data.keyword.Bluemix_notm}} catalog, including all free plans. You pay only for billable services that you use, with no long-term contracts or commitments. When you upgrade to a Pay-As-You-Go account, you receive a [$200 credit](/docs/account?topic=account-upgrading-account) to help get you started.
+With a Pay-As-You-Go account, you can access the full {{site.data.keyword.Bluemix_notm}} catalog, including all free plans. You pay only for billable services that you use, with no long-term contracts or commitments. When you upgrade to a Pay-As-You-Go account, you receive a [$200 credit](/docs/account?topic=account-upgrading-account) to help get you started. You can use the $200 credit on {{site.data.keyword.Bluemix_notm}} products.
 
 You can create multiple resource groups to easily manage quota and view billing usage for a set of resources. Your charges are based on your use of {{site.data.keyword.Bluemix_notm}} computing and services. If you use more than the free runtime and service allowances, you receive a monthly invoice that provides details about your resource charges.
 
