@@ -25,9 +25,9 @@ subcollection: account
 It is important to understand how to effectively assign access for users to work with products and take specific account management actions within your account to follow the principle of least privilege and minimize the number of policies that you have to manage. The following tables provide information about the access roles and the actions mapped to each by the {{site.data.keyword.cloud}} services. 
 {: shortdesc}
 
-The following tables provide data from the individual Identity and access enabled services that are available from the {{site.data.keyword.cloud_notm}} catalog as well as the available account management services that enable you to assign others the ability to work with users, access groups, support cases, and more in the account. If you don't see a platform roles or service roles table, then that means that particular service doesn't use those types of roles.
+The following tables provide data from the individual IAM-enabled services that are available from the {{site.data.keyword.cloud_notm}} catalog as well as the  account management services that enable you to assign others the ability to work with users, access groups, support cases, and more in the account. If you don't see a platform roles or service roles table, then that means that particular service doesn't use those types of roles.
 
-Each service has custom actions that they define and map to platform and service roles that you can use to assign access by creating an Identity and Access Management (IAM) access policy. If you are trying to assign access and an existing role doesn't fit your needs, you can create a [custom role](/docs/account?topic=account-custom-roles) combining any number of actions available for a given service.
+Each service has custom actions that they define and map to platform and service roles that you can use to assign access by creating an IAM access policy. If you are trying to assign access and an existing role doesn't fit your needs, you can create a [custom role](/docs/account?topic=account-custom-roles) that combines any number of actions that are available for a given service.
 
 For more information about assigning access for each service, check out the documentation for the service that you're using.
 
