@@ -25,6 +25,7 @@ Managing your account, resources, and access
     tagging-resources-tutorial.md
     dash-tutorial.md
     trustedprofile-compute-tutorial.md
+    trustedprofile-fed-tutorial.md
 
     {: .topicgroup}
     Sharing software with users in your account
