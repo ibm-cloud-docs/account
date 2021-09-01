@@ -24,7 +24,7 @@ Managing your account, resources, and access
     iam-quickstart.md
     tagging-resources-tutorial.md
     dash-tutorial.md
-    trustedprofiles-compute-tutorial.md
+    trustedprofiles-fedusers-tutorial.md
 
     {: .topicgroup}
     Sharing software with users in your account
