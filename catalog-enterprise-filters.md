@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-06-07"
+lastupdated: "2021-08-31"
 
 keywords: catalog, private catalog, catalog management service, public catalog, enterprise account, child account, account group, enterprise, IBM Cloud catalog
 
@@ -51,8 +51,8 @@ Let's say your organization is tasked with implementing a development and deploy
 2. Select **Exclude all products in the {{site.data.keyword.cloud_notm}} catalog**.
 3. Select one or more filters to customize which products are available. In the case of our example, select the following filters: 
 
-  * **Category** > **Developer Tools**
-  * **Provider** > **{{site.data.keyword.IBM_notm}}**
+   * **Category** > **Developer Tools**
+   * **Provider** > **{{site.data.keyword.IBM_notm}}**
 4. Review the **Preview** table to confirm your selections, and click **Update**. 
 5. Verify your updates in the catalog by going to **Catalog** > **Services**.
 6. Expand the list of accounts in the console menu bar and select a child account to verify the catalog includes only the products you selected. 
@@ -79,24 +79,24 @@ To build on the example in the previous section, all account groups and accounts
 
 This action can be done only in the console or through the API or SDKs. To see the steps, switch to the **UI** or **API** instructions.
 
-<!--- 
-Doesn't look like you can manage products at the enterprise level by using the CLI
---->
-
 ## Managing products for child account groups and accounts by using the CLI
 {: #cli-child-account-groups}
 {: cli}
 
 You can restrict access to a subset of products for child account groups and accounts. For example, within your enterprise you might want to limit a specific account group, and its child accounts, to work with only the products that support IAM for access control. 
 
-1. Create a new filter. 
-  ```
-  ibmcloud catalog filter create [--catalog CATALOG] [--category CATEGORY] [--compliance COMPLIANCE] [--deployment-target TARGET] [--exclude-list LIST] [--include-all ALL] [--include-list LIST] [--offering-format FORMAT] [--pricing-plan PLAN] [--provider PROVIDER] [--release RELEASE] [--type TYPE]
-  ```
-  {: codeblock}
-  When the `--catalog CATALOG` command is not specified, the filter is created at the account level.
+1. Create a new filter.
+
+   ```
+   ibmcloud catalog filter create [--catalog CATALOG] [--category CATEGORY] [--compliance COMPLIANCE] [--deployment-target TARGET] [--exclude-list LIST] [--include-all ALL] [--include-list LIST] [--offering-format FORMAT] [--pricing-plan PLAN] [--provider PROVIDER] [--release RELEASE] [--type TYPE]
+   ```
+   {: codeblock}
+
+   If you don't specify the `--catalog CATALOG` command, the filter is created at the account level.
+   {: note}
+
 1. Target an account group by specifying the command option `--account-group ACCOUNT GROUP`.
-1. Update the filter to include or exclude a particular product or products. See the [Catalog management CLI](https://cloud.ibm.com/docs/cli?topic=cli-manage-catalogs-plugin#create-filter) guidance for command options or run the `ibmcloud catalog filter options` command to to retrieve the filter options for each filter category.
+1. Update the filter to include or exclude a particular product or products. See the [Catalog management CLI](https://cloud.ibm.com/docs/cli?topic=cli-manage-catalogs-plugin#create-filter) guidance for command options or run the `ibmcloud catalog filter options` command to retrieve the filter options for each filter category.
 
 
 ## Managing products at the enterprise level by using the API

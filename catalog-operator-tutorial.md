@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-07-30"
+lastupdated: "2021-08-31"
 
 keywords: onboard software, operator, validate, test, Red Hat OpenShift cluster, sample Node-RED Operator, CSV file, CSV, operator bundle, TGZ file
 
@@ -22,10 +22,9 @@ completion-time: 45m
 {:tip: .tip}
 {:note: .note}
 {:beta: .beta}
+{:important: .important}
 {:external: target="_blank" .external}
 {:step: data-tutorial-type='step'} 
-
-<!-- Staging only: addition of bundles with tgz files goes live with July milestone-->
 
 # Onboarding an Operator from a GitHub repository
 {: #catalog-operator-gh}
@@ -43,8 +42,8 @@ This tutorial walks you through how to onboard a sample Operator from a GitHub r
 1. [Create your Red Hat OpenShift cluster](/docs/openshift?topic=openshift-getting-started). 
 1. Upload your source code to your GitHub repository. 
 
-  Use the [latest release of the sample Node-RED Operator](https://github.com/IBM-Cloud/operator-bundle-sample/releases){: external} as an example of how to set up your directory structure. 
-  {: tip} 
+   Use the [latest release of the sample Node-RED Operator](https://github.com/IBM-Cloud/operator-bundle-sample/releases){: external} as an example of how to set up your directory structure. 
+   {: tip} 
   
 1. Make sure you're assigned the {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) editor role on the catalog management service. See [Assigning access to account management services](/docs/account?topic=account-account-services) for more information. 
 
@@ -129,8 +128,8 @@ To publish the Operator to your account, you're required to validate that it can
 1. From the Validate product tab, select the target cluster and project, and click **Next**. 
 1. Enter the name of your Schematics workspace, select a resource group, and click **Next**. 
 
-  In the **Tags** field, you can enter a name of a specific tag to attach to your Operator. Tags provide a way to organize, track usage costs, and manage access to the resources in your account.
-  {: tip}
+   In the **Tags** field, you can enter a name of a specific tag to attach to your Operator. Tags provide a way to organize, track usage costs, and manage access to the resources in your account.
+   {: tip}
   
 1. Click **Validate**.
 

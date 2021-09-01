@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-06-29"
+lastupdated: "2021-08-31"
 
 keywords: catalog, private catalogs, visibility, filter catalog, hide product, catalog filtering, enterprise, account group, child account, account, restrict
 
@@ -68,8 +68,8 @@ Set filters at a private catalog level for fine-grained control of which product
 1. In the console, go to **Manage** > **Catalogs**, **Private catalogs**. 
 2. Select a catalog from the list to navigate to its details page. 
 
-  The **Products in the {{site.data.keyword.cloud_notm}} catalog** table that's displayed on the page shows the list of products that are available at the account level. The availability is based on the filters the account owner or administrator set. Account-level filters apply to all the private catalogs in the account. 
-  {: tip}
+   The **Products in the {{site.data.keyword.cloud_notm}} catalog** table that's displayed on the page shows the list of products that are available at the account level. The availability is based on the filters the account owner or administrator set. Account-level filters apply to all the private catalogs in the account. 
+   {: tip}
   
 3. Click **Manage filters**.
 3. Select to include or exclude all products in the public catalog. 
@@ -77,16 +77,16 @@ Set filters at a private catalog level for fine-grained control of which product
 5. (Optional) Add exceptions to the filter rules that you set in the previous step. 
 6. Click **Update**. 
 7. Go to the Settings page and turn off the visibility of the public catalog.  
-7. To give users access to work with the products in the private catalog, assign them the [viewer role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management).  
-<br>
-<br>
-For more detailed examples of how you can leverage filtering at the private catalog level, see [Customizing your private catalogs](/docs/account?topic=account-restrict-by-user).
+7. To give users access to work with the products in the private catalog, assign them the [viewer role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management).
+
+   For more detailed examples of how you can leverage filtering at the private catalog level, see [Customizing your private catalogs](/docs/account?topic=account-restrict-by-user).
 
 ## Updating the visibility of the {{site.data.keyword.cloud_notm}} catalog by using the CLI
 {: #set-public-visibility-cli}
 {: cli}
 
 Users in your account have access to all products in the {{site.data.keyword.cloud_notm}} public catalog by default. You can make products available only to the users you choose by turning off visibility to the {{site.data.keyword.cloud_notm}} catalog and adding the products to your private catalogs. Use the following command to turn off visibility of the public catalog to all users in your account.
+
 ```
 ibmcloud catalog filter hide-ibm-public-catalog
 ```
@@ -102,11 +102,14 @@ If your account is a parent account in an {{site.data.keyword.cloud_notm}} enter
 {: tip}
 
 1. Create a new filter. 
-  ```
-  ibmcloud catalog filter create [--catalog CATALOG] [--category CATEGORY] [--compliance COMPLIANCE] [--deployment-target TARGET] [--exclude-list LIST] [--include-all ALL] [--include-list LIST] [--offering-format FORMAT] [--pricing-plan PLAN] [--provider PROVIDER] [--release RELEASE] [--type TYPE]
-  ```
-  {: codeblock}
-  When the `--catalog CATALOG` command is not specified, the filter is created at the account level.
+
+   ```
+   ibmcloud catalog filter create [--catalog CATALOG] [--category CATEGORY] [--compliance COMPLIANCE] [--deployment-target TARGET] [--exclude-list LIST] [--include-all ALL] [--include-list LIST] [--offering-format FORMAT] [--pricing-plan PLAN] [--provider PROVIDER] [--release RELEASE] [--type TYPE]
+   ```
+   {: codeblock}
+
+   If you don't specify the `--catalog CATALOG` command, the filter is created at the account level.
+
 1. Target an account group by specifying the command option `--account-group ACCOUNT GROUP`.
 1. Update the filter to include or exclude a particular product or products. See the [Catalog management CLI](https://cloud.ibm.com/docs/cli?topic=cli-manage-catalogs-plugin#create-filter) guidance for command options or run the `ibmcloud catalog filter options` command to retrieve the filter options for each filter category.
 
@@ -117,11 +120,14 @@ If your account is a parent account in an {{site.data.keyword.cloud_notm}} enter
 Set filters at a private catalog level for fine-grained control of which products in the public catalog are available only to the users you choose.
 
 1. Create a new filter. 
-  ```
-  ibmcloud catalog filter create [--catalog CATALOG] [--category CATEGORY] [--compliance COMPLIANCE] [--deployment-target TARGET] [--exclude-list LIST] [--include-all ALL] [--include-list LIST] [--offering-format FORMAT] [--pricing-plan PLAN] [--provider PROVIDER] [--release RELEASE] [--type TYPE]
-  ```
-  {: codeblock}
-  Make sure to specify the `--catalog CATALOG` command option. When `--catalog CATALOG` is not specified, the filter is created at the account level.
+
+   ```
+   ibmcloud catalog filter create [--catalog CATALOG] [--category CATEGORY] [--compliance COMPLIANCE] [--deployment-target TARGET] [--exclude-list LIST] [--include-all ALL] [--include-list LIST] [--offering-format FORMAT] [--pricing-plan PLAN] [--provider PROVIDER] [--release RELEASE] [--type TYPE]
+   ```
+   {: codeblock}
+
+   If you don't specify the `--catalog CATALOG` command, the filter is created at the account level.
+
 1. Target an account group by specifying the command option `--account-group ACCOUNT GROUP`.
 1. Update the filter to include or exclude a particular product or products. See the [Catalog management CLI](https://cloud.ibm.com/docs/cli?topic=cli-manage-catalogs-plugin#create-filter) guidance for command options or run the `ibmcloud catalog filter options` command to retrieve the filter options for each filter category.
 

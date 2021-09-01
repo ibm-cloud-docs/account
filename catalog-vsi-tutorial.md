@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-08-10"
+lastupdated: "2021-08-31"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog
 
@@ -81,23 +81,22 @@ The tutorial includes steps for deploying a virtual server image to a target {{s
 {: #catalog-vsi-cfg-deployment}
 {: step}
 
-1. From the Version list table, click the row that contains your virtual server image. 
-1. Click **Add deployment values** in the Configure the deployment details section.
-1. Select **Parameter** to select all options, and click **Add deployment values**.
-1. Customize which parameters are required for users to specify during the installation and which ones are hidden from users altogether. For the purposes of this tutorial, configure each parameter as described in the following table.
+1. From the Configure the deployment details section, click **Add deployment values**. 
+1. Select **Parameter** to select all options, and click **Add**.
+1. To customize which parameters are required for users to specify during the installation and which ones are hidden altogether, select a parameter and click **Edit**. For the purposes of this tutorial, configure each parameter as described in the following table.
 
-| Parameter | Description | Required for users to specify? | Hidden from users? |
-| --- | ---------- | --- | --- | 
-| `TF_VERSION` | The version of the Terraform engine that's used in the Schematics workspace. | No | Yes |
-| `image_name` | The name, with version specified, of the OS image that runs the virtual server instance. | No | Yes | 
-| `region` | The region in which the VPC instance is located. | Yes | No |
-| `ssh_key_name` | The name of the public SSH key to use when creating the virtual server instance. | Yes | No |
-| `subnet_id` | The ID of the subnet within the VPC that the virtual server instance uses. | Yes | No |
-| `vsi_instance_name` | The name of the virtual server instance. | Yes | No |
-| `vsi_profile` | The profile of compute CPU and memory resources to use when creating the virtual server instance. | No | No |
-| `vsi_security_group` | The name of the security group that is created. | Yes | No |
+   | Parameter | Description | Required for users to specify? | Hidden from users? |
+   | --- | ---------- | --- | --- | 
+   | `TF_VERSION` | The version of the Terraform engine that's used in the Schematics workspace. | False | True |
+   | `region` | The region in which the VPC instance is located. | True | False |
+   | `ssh_key_name` | The name of the public SSH key to use when creating the virtual server instance. | True | False |
+   | `subnet_id` | The ID of the subnet within the VPC that the virtual server instance uses. | True | False |
+   | `vsi_instance_name` | The name of the virtual server instance. | True | False |
+   | `vsi_profile` | The profile of compute CPU and memory resources to use when creating the virtual server instance. | False | False |
+   | `vsi_security_group` | The name of the security group that is created. | True | False |
+   {: caption="Table 1. Parameters that you need to configure" caption-side="bottom"}
 
-1. Click **Next**.
+1. Click **Save** > **Next**.
   
 ## Set the license requirements
 {: #catalog-vsi-cfg-license}
@@ -119,8 +118,7 @@ The TGZ file that you imported to your private catalog includes a readme file th
 
   `Create and deploy a virtual server with ease by using a custom image.`
 
-1. Click **Save**.
-1. Click **Next**. 
+1. Click **Save** > **Next**.
 
 ## Validate the virtual server image
 {: #catalog-vsi-validate}
@@ -128,15 +126,15 @@ The TGZ file that you imported to your private catalog includes a readme file th
 
 1. From the Validate product tab, enter the name of your Schematics workspace, select a resource group, and click **Next**.
 
-  In the **Tags** field, you can enter a name of a specific tag to attach to your virtual server image. Tags provide a way to organize, track usage costs, and manage access to the resources in your account.
-  {: tip}
+   In the **Tags** field, you can enter a name of a specific tag to attach to your virtual server image. Tags provide a way to organize, track usage costs, and manage access to the resources in your account.
+   {: tip}
   
 1. From the Deployment values section, review your parameter values, and click **Next**.
 1. In the Validation product section, select **I have read and agree to the following license agreements**.
 1. Click **Validate**.
 
-  To monitor the progress of the validation process, click **View logs**.
-  {: tip}
+   To monitor the progress of the validation process, click **View logs**.
+   {: tip}
 
 ## Next steps  
 {: #catalog-vsi-publish}

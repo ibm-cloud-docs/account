@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-07-30"
+lastupdated: "2021-08-31"
 
 keywords: private catalog, software, onboard, operator, validate, test, Red Hat OpenShift operator, operator bundle
 
@@ -109,8 +109,8 @@ Validate that the Operator bundle can be successfully installed on the target {{
 1. Select the target cluster and project, and click **Next**.
 1. Enter the name of your Schematics workspace, select a resource group, and click **Next**.  
 
-  In the **Tags** field, you can enter a name of a specific tag to attach to your Operator. Tags provide a way to organize, track usage costs, and manage access to the resources in your account.
-  {: tip}
+   In the **Tags** field, you can enter a name of a specific tag to attach to your Operator. Tags provide a way to organize, track usage costs, and manage access to the resources in your account.
+   {: tip}
 
 1. Click **Validate**. 
 
