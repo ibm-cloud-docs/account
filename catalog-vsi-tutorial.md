@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-08-31"
+lastupdated: "2021-09-01"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog
 
@@ -85,18 +85,16 @@ The tutorial includes steps for deploying a virtual server image to a target {{s
 1. Select **Parameter** to select all options, and click **Add**.
 1. To customize which parameters are required for users to specify during the installation and which ones are hidden altogether, select a parameter and click **Edit**. For the purposes of this tutorial, configure each parameter as described in the following table.
 
-   | Parameter | Description | Required for users to specify? | Hidden from users? |
-   | --- | ---------- | --- | --- | 
-   | `TF_VERSION` | The version of the Terraform engine that's used in the Schematics workspace. | False | True |
-   | `region` | The region in which the VPC instance is located. | True | False |
-   | `ssh_key_name` | The name of the public SSH key to use when creating the virtual server instance. | True | False |
-   | `subnet_id` | The ID of the subnet within the VPC that the virtual server instance uses. | True | False |
-   | `vsi_instance_name` | The name of the virtual server instance. | True | False |
-   | `vsi_profile` | The profile of compute CPU and memory resources to use when creating the virtual server instance. | False | False |
-   | `vsi_security_group` | The name of the security group that is created. | True | False |
-   {: caption="Table 1. Parameters that you need to configure" caption-side="bottom"}
-
-1. Click **Save** > **Next**.
+| Parameter | Description | Required for users to specify? | Hidden from users? |
+| --- | --- | --- | --- | 
+| `TF_VERSION` | The version of the Terraform engine that's used in the Schematics workspace. | False | True |
+| `region` | The region in which the VPC instance is located. | True | False |
+| `ssh_key_name` | The name of the public SSH key to use when creating the virtual server instance. | True | False |
+| `subnet_id` | The ID of the subnet within the VPC that the virtual server instance uses. | True | False |
+| `vsi_instance_name` | The name of the virtual server instance. | True | False |
+| `vsi_profile` | The profile of compute CPU and memory resources to use when creating the virtual server instance. | False | False |
+| `vsi_security_group` | The name of the security group that is created. | True | False |
+{: caption="Table 1. Parameters that you need to configure" caption-side="bottom"}
   
 ## Set the license requirements
 {: #catalog-vsi-cfg-license}
