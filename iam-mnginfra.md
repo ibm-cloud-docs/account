@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2020
 
-lastupdated: "2020-06-09"
+lastupdated: "2020-09-02"
 
 
 keywords: classic infrastructure access, VPN subnet access, classic infrastructure permissions, device access
@@ -33,7 +33,7 @@ When a classic infrastructure user invites another user to the account, the clas
 
 Support center account management access is recommended for users that are working with classic infrastructure resources. To perform many tasks with classic infrastructure resources, such as creating or deleting a virtual server instance, users must have access to work with support cases. For more information about assigning this type of access, see [Assigning access to account management services](/docs/account?topic=account-account-services).
 
-  1. Select **Permissions** to update the user's permissions. You can select from four types of permissions: account, devices, network, and services. Individually select permissions from each category, or use a permission set option to assign permissions in bulk.
+  1. Select **Permissions** to update the user's permissions. You can select from four types of permissions: account, devices, network, and services. Individually select permissions from each category, or use a permission set option to assign permissions in bulk. For more information, see [Classic infrastructure permissions](https://cloud.ibm.com/docs/account?topic=account-infrapermission).
 
     The account management and support permissions that you previously assigned to users in your account are now migrated from classic infrastructure permissions to migrated IAM access groups. For more information, see [Migrated SoftLayer account permissions](/docs/account?topic=account-migrated_permissions).
 
