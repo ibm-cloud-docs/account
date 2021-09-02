@@ -112,9 +112,9 @@ You can assign administrator access to everything in an account by creating an a
 For more best practices from IBM Garage for Cloud, see [Managing access to resources in {{site.data.keyword.cloud_notm}}](https://cloudnativetoolkit.dev/toolkit-resources/resource-mgmt/){: external}.
 
 ### Sample access policies
-{: #sample_policies}
+{: #sample_policies_ag}
 
-Review the following sample access policies to help you determine how you might want to assign access to and access group for resources that are organized in resource groups.
+Review the following sample access policies to help you determine how you might want to assign access to an access group for resources that are organized in resource groups.
 
 * A policy that grants the access group a platform administrator role on the {{site.data.keyword.containerlong_notm}} across the entire account. The users in the access group can access all instances of this service and create instances of the service in any resource group that they have at least a viewer role assigned. Access group members with an administrator role that is assigned on any resource can also grant access to that resource.
 * A policy that grants the access group a platform viewer role on a resource group, but not its member resources. The users in the access group have visibility to the resource group, which is required to create instances of any service in this resource group.
@@ -142,7 +142,7 @@ You can assign administrator access to everything in an account by creating a tr
 {: tip}
 
 ### Sample access policies
-{: #sample_policies}
+{: #sample_policies_tp}
 
 Review the following sample access policies to help you determine how you might want to assign trusted profiles access to resources that are organized in resource groups.
 

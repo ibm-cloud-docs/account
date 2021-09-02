@@ -20,7 +20,7 @@ subcollection: account
 {:external: target="_blank" .external}
 
 # Adding webhooks to a distribution list 
-{: webhook-distribution-list}
+{: #webhook-distribution-list}
 
 In addition to adding email addresses, you can also add up to 10 webhooks to a distribution list. Account administrators can create and use webhooks to configure an application to receive asynchronous notifications whenever a platform event occurs. The registered webhooks send the information to the specified URL in the form of an HTTP POST request with a JSON payload. The content-type of the request is `application/json`. 
 {: shortdesc}
@@ -137,7 +137,7 @@ There might be extra fields added in the future without a major version change. 
 {: note}
 
 ## Adding webhooks to a distribution list 
-{: add-webhook-distribution-list}
+{: #add-webhook-distribution-list}
 
 To add webhooks to a distribution list, complete the following steps: 
 1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account** > **Notification distribution list**. 
