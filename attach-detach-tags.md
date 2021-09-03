@@ -24,6 +24,7 @@ subcollection: account
 {:javascript: .ph data-hd-programlang='javascript'}
 {:curl: .ph data-hd-programlang='curl'}
 {:go: .ph data-hd-programlang='go'}
+{:terraform: .ph data-hd-interface='terraform'}
 
 # Attaching and detaching tags on a resource
 
@@ -433,3 +434,45 @@ You can programmatically detach tags by calling the [Global Search and Tagging -
 
 When you detach an access management tag from a resource, any associated access policies are also detached from that resource.
 {: note}
+
+## Attaching tags to a resource by using Terraform
+{: #attach-terraform}
+{: terraform}
+
+You can attach tags by using Terraform. 
+
+1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+1. Attach a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to attach access management tags by by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}. The following example attaches the `imb_tag` tag to the `ibm` resource for the resource ID `ibm_satellite_location.location.crn`.
+
+   ```terraform
+   data "ibm_satellite_location" "location" {
+   location  = var.location
+   }
+   resource "ibm_resource" "ibm" {
+   resource_id = ibm_satellite_location.location.crn
+   tags        = [ "ibm_tag" ]
+   }
+   ```
+   {: codeblock}
+ 
+1. Initialize the Terraform CLI.
+
+   ```
+   terraform init
+   ```
+   {: pre}
+
+1. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to attach tags.
+
+   ```
+   terraform plan
+   ```
+   {: pre}
+
+1. Attach the tags.
+
+   ```
+   terraform apply
+   ```
+   {: pre}
+   
