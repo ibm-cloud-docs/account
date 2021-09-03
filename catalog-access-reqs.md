@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-06-04"
+lastupdated: "2021-09-03"
 
 keywords: catalog, private catalogs, IAM access, roles, private catalog service, access groups, permissions, IAM, catalog management, access group
 
@@ -19,6 +19,7 @@ subcollection: account
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
 {:api: .ph data-hd-interface='api'}
+{:terraform: .ph data-hd-interface='terraform'}
 {:java: .ph data-hd-programlang='java'}
 {:python: .ph data-hd-programlang='python'}
 {:javascript: .ph data-hd-programlang='javascript'}
@@ -951,3 +952,41 @@ fmt.Println(string(b))
 ```
 {: codeblock}
 {: go}
+
+## Add users to your access groups by using Terraform
+{: #catalog-access-terra-users}
+{: terraform}
+
+To add users to an access group by using Terraform, follow these steps:
+
+1. In your Terraform configuration file, find the Terraform code that you used to [create the access group](/docs/account?topic=account-groups&interface=terraform#create-ag-terraform) and note the `access_group_id` assigned to your access group.
+2. Add a member to the access group.
+   ```terraform
+   resource "ibm_iam_access_group_members" "accgroupmem" {
+   access_group_id = ibm_iam_access_group.accgroup.id
+   ibm_ids = ["test@in.ibm.com"]
+   }
+   ```
+   {: codeblock}
+   
+   For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_access_group_members){: external} page.
+   
+3. Initialize the Terraform CLI.
+   ```
+   terraform init
+   ```
+   {: pre}
+   
+4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to update the access group.
+   ```
+   terraform plan
+   ```
+   {: pre}
+
+5. Update the access group.
+   ```
+   terraform apply
+   ```
+   {: pre}
+
+   
