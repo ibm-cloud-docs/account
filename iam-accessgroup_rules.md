@@ -18,6 +18,8 @@ subcollection: account
 {:tip: .tip}
 {:note: .note}
 {:external: target="_blank" .external}
+{:terraform: .ph data-hd-interface='terraform'} 
+{:ui: .ph data-hd-interface='ui'}
 
 # Creating dynamic rules for access groups
 {: #rules}
@@ -30,8 +32,9 @@ Users already have specific identity information within your company's domain, a
 Only users who are already invited to the account can be mapped to access groups by using dynamic rules.
 {: note}
 
-## Setting up rules
+## Setting up rules by using the console
 {: #setup_rules}
+{: ui}
 
 Dynamic rules are created by setting conditions that must be matched by the data that is configured within the IdP and passed in with a user's federated ID during login. You can add more than one condition for a rule. All conditions set in the rule must be met for a user to be added to an access group. 
 
@@ -63,6 +66,57 @@ You can think of an access group rule as a key:value pair. The key is what you a
 
 Users added to access groups by using dynamic rules don't display as group members on the users list for the access group. To check a specific user's membership to an access group, you can select that user's name from the account **Users** page, and then click **Access groups**.
 {: note}
+
+## Setting up rules by using Terraform
+{: #setup_rules_terraform}
+{: terraform}
+
+Dynamic rules are created by setting conditions that must be matched by the data that is configured within the IdP and passed in with a user's federated ID during login. You can add more than one condition for a rule. All conditions set in the rule must be met for a user to be added to an access group. 
+
+To create a rule by using Terraform, follow these steps:
+
+1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+
+2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create dynamic rules for access groups by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
+   The following example creates a new dynamic rule for an access group by using the `ibm_iam_access_group_dynamic_rule` resource, where `name` is a unique name to identify the dynamic rule. 
+
+   ```terraform
+    resource "ibm_iam_access_group_dynamic_rule" "rule1" {
+      name              = "newrule"
+      access_group_id   = "AccessGroupId-dsnd4bvsaf"
+      expiration        = 4
+      identity_provider = "test-idp.com"
+      conditions {
+        claim    = "blueGroups"
+        operator = "CONTAINS"
+        value    = "\"test-bluegroup-saml\""
+      }
+    }
+   ```
+   {: codeblock}
+   
+   For more information, see the argument reference details in the [Terraform documentation](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_access_group_dynamic_rule) page.
+3. Initialize the Terraform CLI.
+
+   ```
+   terraform init
+   ```
+   {: pre}
+   
+4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the dynamic rule.
+
+   ```
+   terraform plan
+   ```
+   {: pre}
+
+5. Create the dynamic rule.
+
+   ```
+   terraform apply
+   ```
+   {: pre}
 
 ## Example rule
 {: #example}
