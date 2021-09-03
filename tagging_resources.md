@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-08-24"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, full list of tags, how to use tags
 
@@ -26,6 +26,7 @@ subcollection: account
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
 {:api: .ph data-hd-interface='api'}
+{:terraform: .ph data-hd-interface='terraform'}
 
 # Working with tags
 {: #tag}
@@ -58,7 +59,7 @@ You can apply tags to help you organize and manage your resources and access pol
 | `project:lw-wizard`, `app:poc-app` | Use to identify or even manage access to a project |
 | `dataresidency:germany`, `compliance:hipaa`, `compliance:pii` | Use to define compliance requirements |
 | `schedule:24x7`, `maxruntime:12days` | Use to help you automate optimization |
-{:caption="Table 1. Tag syntax" caption-side="top"}
+{: caption="Table 1. Tag syntax" caption-side="top"}
 
 Because tags are visible account-wide, avoid using personal information, such as your name, address, phone number, email address, or other identifying or proprietary information.
 {: note}
@@ -182,15 +183,56 @@ fmt.Println(string(b))
 {: codeblock}
 {: go}
 
+### Creating access management tags by using Terraform
+{: #create-access-terraform}
+{: terraform}
+
+You can create access management tags by using Terraform. 
+
+1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create access management tags by by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}. The following example creates the access management tag `ibm_tag` to the `ibm` resource for the resource ID `ibm_satellite_location.location.crn`. 
+    
+   ```terraform
+   data "ibm_satellite_location" "location" {
+   location  = var.location
+   }
+   resource "ibm_resource" "ibm" {
+   resource_id = ibm_satellite_location.location.crn
+   tags        = [ "ibm_tag" ]
+   }
+   ```
+    {: codeblock}
+
+1. Initialize the Terraform CLI.
+   
+   ```
+   terraform init
+   ```
+   {: pre}
+
+1. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create access management tags.
+   
+   ```
+   terraform plan
+   ```
+   {: pre}
+
+1. Create the access management tags.
+
+   ```
+   terraform apply
+   ```
+   {: pre}
+
 ## Searching for tags in the console 
 {: #search-tags}
 {: ui}
 
 You can search for tags by using any of the following methods:
 
-  * Try the search bar that is located in the {{site.data.keyword.cloud}} console menu bar.
-  * You can filter your resource list by the tag you are searching for.
-  * From the application detail page, you can locate the tags that are associated with that resource.
+* Try the search bar that is located in the {{site.data.keyword.cloud}} console menu bar.
+* You can filter your resource list by the tag you are searching for.
+* From the application detail page, you can locate the tags that are associated with that resource.
 
 The same tag can be attached to multiple resources by different users in the same billing account, and not all users have visibility on all resources on the account.
 {: note}
@@ -206,6 +248,7 @@ To search for tags by using the CLI, see [Searching for resources](/docs/account
 {: api}
 
 To search for tags by using the API, see [Searching for resources](/docs/account?topic=account-searching-for-resources#searching-api). 
+
 
 ## Tagging for resellers
 {: #resell}
