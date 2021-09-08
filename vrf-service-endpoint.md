@@ -23,7 +23,7 @@ subcollection: account
 {: #vrf-service-endpoint}
 
 When using the classic infrastructure, you connect to resources in your account over the {{site.data.keyword.Bluemix}} public network by default. You can enable virtual routing and forwarding (VRF) to move IP routing for your account and all of its resources into a separate routing table. If VRF is enabled, you can then enable {{site.data.keyword.Bluemix_notm}} service endpoints to connect directly to resources without using the public network.
-{:shortdesc}
+{: shortdesc}
 
 Virtual Private Clouds (VPCs) are automatically enabled for virtual routing and forwarding (VRF). To enable service endpoints for your VPC, continue to [Enabling service endpoints](#service-endpoint).
 {: note}
