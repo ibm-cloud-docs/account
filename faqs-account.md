@@ -178,10 +178,10 @@ To reset your account password, click the **{{site.data.keyword.avatar}}** icon 
 
 To reset your VPN password, complete the following steps:
 
-  1. In the console, go to **Manage** > **Access (IAM)**, and select **Users**.
-  2. Select the user.
-  3. From the VPN subnets section, click the **Edit** icon ![Edit icon](../icons/icon_write.svg "Edit") to enter a new VPN password.
-  5. Click **Apply**.
+   1. In the console, go to **Manage** > **Access (IAM)**, and select **Users**.
+   2. Select the user.
+   3. From the VPN subnets section, click the **Edit** icon ![Edit icon](../icons/icon_write.svg "Edit") to enter a new VPN password.
+   4. Click **Apply**.
 
 ## What can I do if I forget my password?
 {: #forgot-password}
