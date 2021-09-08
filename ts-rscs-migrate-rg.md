@@ -29,7 +29,7 @@ content-type: troubleshoot
 {: troubleshoot}
 
 You can't reassign an {{site.data.keyword.Bluemix}} resource to a different resource group after it has already been created.
-{:shortdesc}
+{: shortdesc}
 
 You don't have the option to move a resource from one resource group to another.
 {: tsSymptoms}

@@ -68,7 +68,7 @@ You can create a resource by using the {{site.data.keyword.Bluemix}} Command Lin
   ```
   ibmcloud login
   ```
-  {:codeblock}
+  {: codeblock}
   
 2. Create an organization by running the [`ibmcloud resource service-instance-create`](https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_create) command.
 In this command `NAME` is the name of the service instance, `SERVICE_NAME or SERVICE_ID` is the name or ID of the service, `SERVICE_PLAN_NAME or SERVICE_PLAN_ID`is the name or ID of the service plan, and ` LOCATION`is the target location or environment to create the service instance.
@@ -76,7 +76,7 @@ In this command `NAME` is the name of the service instance, `SERVICE_NAME or SER
   ```
   ibmcloud resource service-instance-create NAME (SERVICE_NAME | SERVICE_ID) SERVICE_PLAN_NAME LOCATION [-d, --deployment DEPLOYMENT_NAME] [-p, --parameters @JSON_FILE | JSON_STRING ] [-g RESOURCE_GROUP] [--service-endpoints SERVICE_ENDPOINTS_TYPE] [--allow-cleanup] [--lock]
   ```
-  {:codeblock}
+  {: codeblock}
   
 To list service offerings, use the [`ibmcloud catalog service marketplace`](/docs/cli/reference/ibmcloud?topic=cli-ibmcloud_catalog#ibmcloud_catalog_service_marketplace) command. 
 {: note}
@@ -86,7 +86,7 @@ For example, the following command creates a service instance that is named `my-
   ```
   ibmcloud resource service-instance-create my-service-instance test-service test-service-plan eu-gb
   ```
-  {:codeblock}
+  {: codeblock}
 
 
 ## Creating new resource instances by using the API

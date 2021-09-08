@@ -55,6 +55,7 @@ To connect a service to your Cloud Foundry app, call the [Cloud Foundy API](http
 
 1. Open the manifest YAML file for for applying bulk configurations to apps and their underlying processes.
 1. Create a new service bindings between the app and a service instance as shown in the following manifest example. In the service-level configuration, `name` is the name of the service instance to be bound to. `binding_name` is the name of the service binding to be created. `parameters` is a map of arbitrary key/value pairs to send to the service broker during binding. 
+
   ```bash
   ---
   version: 1
@@ -119,7 +120,9 @@ To connect a service to your Cloud Foundry app, call the [Cloud Foundy API](http
       memory: 2G
   ```
   {: codeblock}
+
 1. Apply changes specified in the manifest to the named app as shown in the following example request.
+
   ```curl 
   curl "https://api.example.org/v3/spaces/[guid]/actions/apply_manifest" \
     -X POST \

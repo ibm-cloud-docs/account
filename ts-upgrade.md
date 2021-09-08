@@ -26,7 +26,7 @@ content-type: troubleshoot
 {: troubleshoot}
 
 You can't upgrade to a Pay-As-You-Go account.
-{:shortdesc}
+{: shortdesc}
 
 When you try to upgrade your account from the [Account settings](https://{DomainName}/account/settings) page in the {{site.data.keyword.Bluemix_notm}} console, the following message is displayed:
 {: tsSymptoms}

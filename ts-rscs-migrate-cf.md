@@ -29,7 +29,7 @@ content-type: troubleshoot
 {: troubleshoot}
 
 As a user in the {{site.data.keyword.Bluemix}} account, you're having trouble when you try migrate a service instance to a resource group.
-{:shortdesc}
+{: shortdesc}
 
 You can't migrate an eligible Cloud Foundry instance. 
 {: tsSymptoms}

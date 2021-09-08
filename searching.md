@@ -32,7 +32,7 @@ subcollection: account
 {: #searching-for-resources}
 
 You can search for resources from anywhere in the {{site.data.keyword.cloud}} console. Enter the resource or tag in the search field from the console menu bar. You can also use the {{site.data.keyword.Bluemix_notm}} command-line interface (CLI) to search across your resources. The CLI searches for distributed applications and service instances across locations and data centers. [The Global Search and Tagging - Search API](https://cloud.ibm.com/apidocs/search) supports searching for resources as well. 
-{:shortdesc}
+{: shortdesc}
 
 ## Refining your search results
 {: #results}

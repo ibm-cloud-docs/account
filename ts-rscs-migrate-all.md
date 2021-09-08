@@ -29,7 +29,7 @@ content-type: troubleshoot
 {: troubleshoot}
 
 Not all {{site.data.keyword.Bluemix}} services are eligible for migration. 
-{:shortdesc}
+{: shortdesc}
 
 You're unable to migrate certain services.  
 {: tsSymptoms}

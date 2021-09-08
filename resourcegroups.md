@@ -64,14 +64,14 @@ Connections between a resource group and a Cloud Foundry org or space are restri
    ```
    ibmcloud login
    ```
-   {:codeblock}
+   {: codeblock}
    
 2. Create a new resource group by running [`ibmcloud resource group-create`](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_group_create) command. For example, the following command creates a resource group that is named `group2`:
 
 ```
 ibmcloud resource group-create group2
 ```
-{:codeblock}
+{: codeblock}
 
 ## Creating a resource group by using the API
 {: #rgs_api}
@@ -214,14 +214,14 @@ Your first resource group is created and named `Default` for you. You can update
    ```
    ibmcloud login
    ```
-   {:codeblock}
+   {: codeblock}
    
 2. Rename a resource group by running the [`ibmcloud resource group-update`](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_group_update) command. For example, the following command renames the `Default` resource group to `Admin`:
 
 ```
 ibmcloud resource group-update Default [-n, --name Admin]
 ```
-{:codeblock}
+{: codeblock}
 
 ### Renaming a resource group by using the API
 {: #rename_rgs-api}
@@ -378,14 +378,14 @@ To easily view the resources that are assigned to a resource group, go to the **
    ```
    ibmcloud login
    ```
-   {:codeblock}
+   {: codeblock}
    
 2. View the resources that are assigned to a specific resource group by running the [`ibmcloud resource service-instances`](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instances) command. For example, the following command lists all the resources that are in the `Default` resource group:
 
 ```
 ibmcloud resource service-instances -g Default
 ```
-{:codeblock}
+{: codeblock}
 
 ## Viewing resources in a resource group by using the API
 {: #viewing-rgs-api}

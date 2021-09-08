@@ -26,7 +26,7 @@ content-type: troubleshoot
 {: troubleshoot}
 
 When you try to reactivate or upgrade a suspended account, the process does not complete successfully.
-{:shortdesc}
+{: shortdesc}
 
 The following error message might be displayed when create a new service instance: `The resource group <name> is inactive with state: SUSPENDED`.
 {: tsSymptoms}

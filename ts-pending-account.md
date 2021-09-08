@@ -43,7 +43,7 @@ The confirmation email is sent to the email address that is associated with your
 To complete your registration, check your email.
 Can't find the email? Resend.
 ```
-{:screen}
+{: screen}
 
 Click **Resend** to send another confirmation email to the email address that is associated with your IBMid. 
 

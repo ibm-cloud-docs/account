@@ -21,7 +21,7 @@ subcollection: account
 {: #known-issues}
 
 Known issues and limitations include not being able to restrict access to some products in the {{site.data.keyword.cloud}} catalog, the maximum limits for creating {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) resources, and not being able to delete users from accounts that have too many Cloud Foundry orgs. 
-{:shortdesc}
+{: shortdesc}
 
 ## Catalog management settings don't apply to some {{site.data.keyword.IBM_notm}} products
 {: #settings-noapply}
@@ -60,7 +60,6 @@ Turning off {{site.data.keyword.cloud_notm}} catalog visibility or excluding all
 {: #iam_limits}
 
 The following table lists the maximum limits for IAM resources. These limits apply to any user who can create IAM resources. If a limit is exceeded, you receive an exception and are not allowed to create any new resources beyond that limit.
-{:shortdesc}
 
 | Resource                               | Max  |
 |----------------------------------------|------|
@@ -75,7 +74,7 @@ The following table lists the maximum limits for IAM resources. These limits app
 | Policies per subject within an account | 500  |
 | Policies with access management tags within an account | 25 |
 | Service IDs per account                | 2000 |
-{:caption="Table 1. IAM account limits" caption-side="top"}
+{: caption="Table 1. IAM account limits" caption-side="top"}
 
 A maximum of 1,000 policies and service to service authorizations within one account is recommended to ensure optimal performance within your account. For more information about limiting the number of policies in your account, see the [Best practices for organizing resources and assigning access](/docs/account?topic=account-account_setup).
 {: tip}

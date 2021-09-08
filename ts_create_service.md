@@ -26,7 +26,7 @@ content-type: troubleshoot
 {: troubleshoot}
 
 You are unable to create or add a new service instance.
-{:shortdesc}
+{: shortdesc}
 
 You might receive one of the following error messages when you create a service:
 {: tsSymptoms}

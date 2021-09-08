@@ -29,7 +29,7 @@ content-type: troubleshoot
 {: troubleshoot}
 
 You might receive an error message if you try to delete a service instance that is already deleted from the cloud controller.
-{:shortdesc}
+{: shortdesc}
 
 When you try to delete a service instance, the following error message is displayed:
 {: tsSymptoms}

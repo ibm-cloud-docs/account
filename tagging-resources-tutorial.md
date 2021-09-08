@@ -29,7 +29,7 @@ completion-time: 10m
 {: toc-completion-time="10m"}
 
 This tutorial guides you through the steps to centrally manage access to the resources in your account at scale. By completing this tutorial, you learn how to create an access management tag, add the tag to selected resources, and define a policy to assign access to resources based on the tags on those resources.
-{:shortdesc}
+{: shortdesc}
 
 Access management tags are metadata that are added to resources to help organize access control relationships. They create flexible and easy to administer resource groupings. When you use tags to control access to your resources, your team's projects can grow without requiring updates to IAM policies.
 

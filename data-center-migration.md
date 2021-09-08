@@ -22,7 +22,7 @@ subcollection: account
 {: #migrate-data-center}
 
 {{site.data.keyword.IBM}} continually updates and modernizes data centers to give you higher levels of performance. Some data centers aren't able to be upgraded, so they must be closed and you must migrate your resources to a different data center.
-{:shortdesc}
+{: shortdesc}
 
 Throughout the data center migration process, help is available. To take advantage of special offers, or learn about recommended configurations, use one of the following options to contact the {{site.data.keyword.IBM_notm}} 24x7 Client Success team: 
   * [Live chat](https://www.ibm.com/cloud/data-centers/?focusArea=WCP%20-%20Pooled%20CSM&contactmodule){: external}
