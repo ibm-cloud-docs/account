@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2021-05-26"
+lastupdated: "2021-05-27"
 
 keywords: IBM Cloud account, account differences, account overview, account components, resource, Cloud Foundry, API key, users
 
