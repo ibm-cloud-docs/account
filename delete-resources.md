@@ -5,7 +5,7 @@
 copyright:
 
   years: 2020, 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-09-09"
 
 keywords: account resources, delete resource, delete instance
 
@@ -28,6 +28,7 @@ subcollection: account
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
 {:api: .ph data-hd-interface='api'}
+{:terraform: .ph data-hd-interface='terraform'}
 
 # Deleting resources 
 {: #delete-resource}
@@ -49,7 +50,7 @@ You can delete a resource in the console by using the following steps:
 {: #delete-resource-cli}
 {: cli}
 
-You can delete a resource by using the {{site.data.keyword.Bluemix}} Command Line Interface. For detailed information about managing IBM Cloud resources, see [Working with resources and resource groups](/docs/cli?topic=cli-ibmcloud_commands_resource).
+You can delete a resource by using the {{site.data.keyword.Bluemix}} Command Line Interface. For more information, see [Working with resources and resource groups](/docs/cli?topic=cli-ibmcloud_commands_resource).
 
 1. Log in, and select the account.
 
@@ -143,4 +144,67 @@ fmt.Printf("\nDeleteResourceInstance() response status code: %d\n", response.Sta
 ```
 {: codeblock}
 {: go}
+
+## Deleting resource instances by using Terraform
+{: #delete-resource-instance-terraform}
+{: terraform}
+
+You can delete a resource instance by using Terraform. 
+
+1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+
+2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to delete a resource instance by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
+3. You can delete a resource instance by removing the following code block from your terraform file. You must have provisioned the `resource_instance` using the terraform file.
+
+   ```terraform
+   data "ibm_resource_group" "group" {
+   name = "test"
+   }
+
+   resource "ibm_resource_instance" "resource_instance" {
+    name              = "test"
+    service           = "cloud-object-storage"
+    plan              = "lite"
+    location          = "global"
+    resource_group_id = data.ibm_resource_group.group.id
+    tags              = ["tag1", "tag2"]
+
+    //User can increase timeouts
+    timeouts {
+    create = "15m"
+    update = "15m"
+    delete = "15m"
+    }
+   }
+   ```
+   {: codeblock}
+
+   For more information, see the argument reference details on the [Terraform Resource Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_instance){: external} page.
+  
+4. Initialize the Terraform CLI.
+
+   ```
+   terraform init
+   ```
+   {: pre}
+   
+5. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to delete a resource instance.
+
+   ```
+   terraform plan
+   ```
+   {: pre}
+
+6. Delete the resource instance.
+
+   ```
+   terraform apply
+   ```
+    
+You can also delete a resource instance by running the following `terraform destroy` command.
+
+```
+terraform destroy -target RESOURCE_TYPE.NAME -target RESOURCE_TYPE2.NAME
+```
 
