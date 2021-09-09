@@ -5,7 +5,7 @@
 copyright:
 
   years: 2019, 2021
-lastupdated: "2021-03-16"
+lastupdated: "2021-09-09"
 
 keywords: resource, account resources, create resource, access to create resources
 
@@ -29,6 +29,7 @@ subcollection: account
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
 {:api: .ph data-hd-interface='api'}
+{:terraform: .ph data-hd-interface='terraform'}
 
 # Creating resources 
 {: #manage_resource}
@@ -61,39 +62,38 @@ After you create the resource, it is displayed in your list of resources on the 
 {: #create-resource-cli}
 {: cli}
 
-You can create a resource by using the {{site.data.keyword.Bluemix}} Command Line Interface. For detailed information about working with resources, see [Working with resources and resource groups](/docs/cli?topic=cli-ibmcloud_commands_resource).
+You can create a resource by using the {{site.data.keyword.Bluemix}} Command Line Interface. For more information, see [Working with resources and resource groups](/docs/cli?topic=cli-ibmcloud_commands_resource).
 
 1. Log in, and select the account.
 
-  ```
-  ibmcloud login
-  ```
-  {: codeblock}
-  
+   ```
+   ibmcloud login
+   ```
+   {: codeblock}
+
 2. Create an organization by running the [`ibmcloud resource service-instance-create`](https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_create) command.
 In this command `NAME` is the name of the service instance, `SERVICE_NAME or SERVICE_ID` is the name or ID of the service, `SERVICE_PLAN_NAME or SERVICE_PLAN_ID`is the name or ID of the service plan, and ` LOCATION`is the target location or environment to create the service instance.
 
-  ```
-  ibmcloud resource service-instance-create NAME (SERVICE_NAME | SERVICE_ID) SERVICE_PLAN_NAME LOCATION [-d, --deployment DEPLOYMENT_NAME] [-p, --parameters @JSON_FILE | JSON_STRING ] [-g RESOURCE_GROUP] [--service-endpoints SERVICE_ENDPOINTS_TYPE] [--allow-cleanup] [--lock]
-  ```
-  {: codeblock}
-  
-To list service offerings, use the [`ibmcloud catalog service marketplace`](/docs/cli/reference/ibmcloud?topic=cli-ibmcloud_catalog#ibmcloud_catalog_service_marketplace) command. 
-{: note}
+   ```
+   ibmcloud resource service-instance-create NAME (SERVICE_NAME | SERVICE_ID) SERVICE_PLAN_NAME LOCATION [-d, --deployment DEPLOYMENT_NAME] [-p, --parameters @JSON_FILE | JSON_STRING ] [-g RESOURCE_GROUP] [--service-endpoints SERVICE_ENDPOINTS_TYPE] [--allow-cleanup] [--lock]
+   ```
+   {: codeblock}
+
+   To list services, use the [`ibmcloud catalog service marketplace`](/docs/cli/reference/ibmcloud?topic=cli-ibmcloud_catalog#ibmcloud_catalog_service_marketplace) command. 
+   {: note}
 
 For example, the following command creates a service instance that is named `my-service-instance`, uses service plan `test-   service-plan` of service `test-service` on location `eu-gb`:
 
-  ```
-  ibmcloud resource service-instance-create my-service-instance test-service test-service-plan eu-gb
-  ```
-  {: codeblock}
-
+   ```
+   ibmcloud resource service-instance-create my-service-instance test-service test-service-plan eu-gb
+   ```
+   {: codeblock}
 
 ## Creating new resource instances by using the API
 {: #create-resource-instance-api} 
 {: api}
 
-You can programmatically create a new resource instance by calling the Resource Controller API as shown in the following sample request. For detailed information about the API, see [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#create-resource-instance){: external}.
+You can programmatically create a new resource instance by calling the Resource Controller API as shown in the following sample request. For more information, see [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#create-resource-instance){: external}.
 
 ```bash
 curl -X POST \
@@ -181,3 +181,61 @@ fmt.Printf("\nCreateResourceInstance() response:\n%s\n", string(b))
 ```
 {: codeblock}
 {: go}
+
+## Creating new resource instances by using Terraform
+{: #create-resource-instance-terraform}
+{: terraform}
+
+You can create new resource instances by using Terraform. 
+
+1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+
+2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create new resource instances by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
+   The following example creates a new resource instance by using the `ibm_resource_instance` resource, where `name` is a unique, descriptive name to identify the resource instance.  
+  
+   ```terraform
+   data "ibm_resource_group" "group" {
+   name = "test"
+   }
+
+   resource "ibm_resource_instance" "resource_instance" {
+    name              = "test"
+    service           = "cloud-object-storage"
+    plan              = "lite"
+    location          = "global"
+    resource_group_id = data.ibm_resource_group.group.id
+    tags              = ["tag1", "tag2"]
+
+    //User can increase timeouts
+    timeouts {
+    create = "15m"
+    update = "15m"
+    delete = "15m"
+    }
+   }
+   ```
+   {: codeblock}
+
+   You can specify `tags` associated with the resource instance. For more information, see the argument reference details on the [Terraform Resource Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_instance){: external} page.
+  
+3. Initialize the Terraform CLI.
+
+   ```
+   terraform init
+   ```
+   {: pre}
+   
+4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create a resource instance.
+
+   ```
+   terraform plan
+   ```
+   {: pre}
+
+5. Create the resource instance.
+
+   ```
+   terraform apply
+   ```
+
