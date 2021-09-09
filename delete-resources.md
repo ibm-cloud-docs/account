@@ -5,7 +5,7 @@
 copyright:
 
   years: 2020, 2021
-lastupdated: "2021-09-09"
+lastupdated: "2021-08-31"
 
 keywords: account resources, delete resource, delete instance
 
@@ -50,29 +50,28 @@ You can delete a resource in the console by using the following steps:
 {: #delete-resource-cli}
 {: cli}
 
-You can delete a resource by using the {{site.data.keyword.Bluemix}} Command Line Interface. For more information, see [Working with resources and resource groups](/docs/cli?topic=cli-ibmcloud_commands_resource).
+You can delete a resource by using the {{site.data.keyword.Bluemix}} Command Line Interface. For detailed information about managing IBM Cloud resources, see [Working with resources and resource groups](/docs/cli?topic=cli-ibmcloud_commands_resource).
 
 1. Log in, and select the account.
 
    ```
    ibmcloud login
    ```
-   {:codeblock}
+   {: codeblock}
 
 2. Delete a service instance by running the [`ibmcloud resource service-instance-delete`](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_delete) command, where `NAME` is the name of the service instance, exclusive with ID, and `ID` is the ID of the service instance, exclusive with NAME.
 
    ```
    ibmcloud resource service-instance-delete (NAME|ID) [-f, --force] [--recursive]
    ```
-   {:codeblock}
-
-   For example, the following command deletes a resource service-instance named `my-service-instance`:
-
+   {: codeblock}
+   
+   For example, the following command deletes a resource service-instance that's named `my-service-instance`:
+   
    ```
    ibmcloud resource service-instance-delete my-service-instance
    ```
-   {:codeblock}
-   
+   {: codeblock}
 
 ## Deleting resource instances by using the API
 {: #delete-resource-instance-api}
