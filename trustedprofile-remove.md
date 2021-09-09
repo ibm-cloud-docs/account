@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-09-01"
+lastupdated: "2021-09-09"
 
 keywords: trusted profile, federated users, compute resources, granting access, remove trusted profile, IAM trusted profile, trust relationship, establish trust
 
@@ -41,6 +41,18 @@ When you remove trusted profiles, you revoke all active sessions. Users are imme
 
 ## Removing trusted profiles in the console
 {: #remove-tp-console}
+{: ui}
 
 1. To see the full list of trusted profiles in your account, go to **Manage** > **Access (IAM)** in the {{site.data.keyword.cloud_notm}} console, and select **Trusted profiles**.
 2. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) next to the trusted profile you want to remove, and select **Remove**.
+
+## Removing trusted profiles by using the API
+{: #remove-tp-api}
+{: api}
+
+To remove a trusted profile from your account, call the following:
+
+```bash
+curl -X DELETE 'https://iam.cloud.ibm.com/v1/profiles/PROFILE_ID' -H 'Authorization: Bearer TOKEN'
+```
+{: codeblock}

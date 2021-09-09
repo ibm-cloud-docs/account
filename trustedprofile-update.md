@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-09-01"
+lastupdated: "2021-09-09"
 
 keywords: trusted profile, federated users, granting access, update trusted profile, compute resource, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
@@ -38,6 +38,7 @@ To update trusted profiles, you must be assigned the administrator, operator, or
 
 ## Updating trusted profiles in the console
 {: #updating-tp-console}
+{: ui}
 
 To see the full list of trusted profiles in your account, go to **Manage** > **Access (IAM)** in the {{site.data.keyword.cloud}} console, and select **Trusted profiles**.
 
@@ -67,11 +68,126 @@ After the trusted profile is created, you can build trust with both federated us
   * Click **Add** and repeat as needed to add more access.
   * Click **Assign** to assign all added access to your trusted profile.
 
-### Update session limits
-{: #session-limit-tp}
+### Update session duration
+{: #session-duration-tp}
 
 1. Click the name of the trusted profile that you want to update.
 2. In the federated users section, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") next to the identity provider (IdP) row that you want to update.
 3. In hours, add or subtract how long federated users can use this profile before their session expires.
 4. Click **Save**. 
 
+## Updating trusted profiles by using the API
+{: #updating-tp-api}
+{: api}
+
+### Update the name or description
+{: update-tp-desc-api}
+
+To update the name or description of an existing trusted profile, call the following. Enter your updated `name` and `description` attributes. 
+   ```bash
+   curl -X PUT 'https://iam.test.cloud.ibm.com/v1/profiles/PROFILE_ID' -H 'Authorization: Bearer TOKEN' -H 'If-Match: <value of etag header from GET request>' -H 'Content-Type: application/json' -H 'Accept: application/json' -d '{
+     "name": "My Profile updated",
+     "description": "My updated desc"
+   }'
+   ```
+   {: codeblock}
+
+### Update the conditions of the trust relationship
+{: #trust-api}
+
+After the trusted profile is created, you can build trust with both federated users and compute resources in the same trusted profile.
+
+   ```bash
+   curl -X PUT 'https://iam.test.cloud.ibm.com/v1/profiles/PROFILE_ID/rules/CLAIM_RULE_ID' 
+   -H 'Authorization: Bearer TOKEN' 
+   -H 'If-Match: <value of etag header from GET request>' 
+   -H 'Content-Type: application/json' 
+   -H 'Accept: application/json' 
+   -d '{
+      "type": "Profile-SAML",
+      "realm_name": "https://w3id.sso.ibm.com/auth/sps/samlidp2/saml20",
+      "expiration": 10000,
+      "conditions": [
+     {
+   "claim": "groups",
+   "operator": "CONTAINS",
+   "value": "\"cloud-docs-ops\""
+     }
+     ] 
+   }'
+   ```
+   {: codeblock}
+
+### Assign access policies
+{: #access-policies-api}
+
+To assign new access policies, call the following:
+
+   ```bash
+   curl -X PUT 'https://iam.test.cloud.ibm.com/v1/policies' 
+   -H 'Authorization: Bearer $TOKEN' 
+   -H 'Content-Type: application/json' 
+   -H 'If-Match: $ETAG' 
+   -d '{
+   "type": "access",
+   "description": "Viewer role for for all instances of SERVICE_NAME in the account.",
+   "subjects": [
+      {
+         "attributes": [
+         {
+            "name": "iam_id",
+            "value": "IBMid-123453user"
+         }
+         ]
+      }'
+   ],
+   "roles":[
+      {
+         "role_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+      }
+   ],
+   "resources":[
+      {
+         "attributes": [
+         {
+            "name": "accountId",
+            "value": "$ACCOUNT_ID"
+         },
+         {
+            "name": "serviceName",
+            "value": "$SERVICE_NAME"
+         }
+         ]
+      }
+   ]
+   }'
+   ```
+   {: codeblock}
+
+For more information, see the [IAM Policy Management](https://test.cloud.ibm.com/apidocs/iam-policy-management#update-policy) API.
+
+### Update session duration
+{: #session-duration-tp-api}
+
+To update the session duration for federated users, call the following:
+   ```bash
+   curl -X PUT 'https://iam.test.cloud.ibm.com/v1/profiles/PROFILE_ID/rules/CLAIM_RULE_ID' 
+   -H 'Authorization: Bearer TOKEN' 
+   -H 'If-Match: <value of etag header from GET request>' 
+   -H 'Content-Type: application/json' 
+   -H 'Accept: application/json' 
+   -d '{
+      "type": "Profile-SAML",
+      "realm_name": "https://w3id.sso.ibm.com/auth/sps/samlidp2/saml20",
+      "expiration": 10000,
+      "conditions": [
+     {
+   "claim": "groups",
+   "operator": "CONTAINS",
+   "value": "\"cloud-docs-ops\""
+     }
+     ] 
+   }'
+   ```
+   {: codeblock}
+   

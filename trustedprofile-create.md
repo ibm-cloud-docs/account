@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-09-01"
+lastupdated: "2021-09-09"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
@@ -37,11 +37,12 @@ You can use a trusted profile to automatically grant federated users access to y
 
 When you initially create a trusted profile, you can build trust only with either federated users or compute resources. After you created the trusted profile, you can add more conditions for federated users and compute resources in the same trusted profile.
 
-You must be an administrator the IAM Identity Service in the account. For more information, see [IAM access](https://test.cloud.ibm.com/docs/account?topic=account-userroles). 
+You must be an administrator the IAM Identity Service in the account. For more information, see [IAM access](/docs/account?topic=account-userroles). 
 {: note}
 
 ## Establishing trust with federated users
-{: #create-profile-federated-users}
+{: #create-profile-federated-ui}
+{: ui}
 
 Complete the following steps to define which federated users can access specific resources.
 
@@ -68,7 +69,8 @@ The Classic Infrastructure and Softlayer API is not currently enabled for users 
 {: important}
     
 ## Establishing trust with compute resources
-{: #create-profile-compute}
+{: #create-profile-compute-ui}
+{: ui}
 
 Complete the following steps to set up better control over granting access to compute resources.
 
@@ -89,3 +91,193 @@ Complete the following steps to set up better control over granting access to co
 5. (Optional) Create an access policy. 
   1. Based on your level of access, you can assign IAM policies and classic infrastructure permissions. Select **IAM services** or **Account management** to continue.
   2. For IAM services and account management services, select the option for all resources or only specific resources based on attributes. Select any combination of roles and permissions to define the scope of access, and click **Add** > **Create**.
+
+## Establishing trust with federated users by using the API
+{: #create-profile-federated-api}
+{: api}
+
+Complete the following steps to define which federated users can access specific resources:
+
+1. [Enable authentication from an external identity provider](/docs/account?topic=account-idp-integration). 
+2. Create a trusted profile by specifying your account ID.
+
+   ```bash
+   curl -X POST 'https://iam.cloud.ibm.com/v1/profiles' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json' -H 'Accept: application/json' -d '{
+   "name": "My Nice Profile",
+   "description": "My Nice Profile - desc",
+   "account_id": "ACCOUNT_ID"
+   }'
+   ```
+   {: codeblock}
+
+   In the description, provide a list of actions available for this trusted profile.
+   {: tip}
+
+3. Create conditions for your trusted profile. For federated users, set the `type` attribute to `Profile-SAML`. The `realm-name` is the IdP URL. For more information, see the [IAM Identity Services API](apidocs/iam-identity-token-api#create-claim-rule-request). 
+
+   ```bash
+   curl -X POST 'https://iam.cloud.ibm.com/v1/profiles/PROFILE_ID/rules' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json' -H 'Accept: application/json' -d '{
+   "type": "Profile-SAML",
+   "realm_name": "https://www.example.org/my-nice-idp",
+   "expiration": 43200,
+   "conditions": [
+   {
+   "claim": "groups",
+   "operator": "EQUALS",
+   "value": "\"cloud-docs-dev\""
+      }
+      ] 
+   }'
+   ```
+   {: codeblock}
+
+   There is a limit of 20 claim rules per trusted profile.
+   {: note}
+
+4. Create an access policy. For more information, see [IAM Policy Management API?](/apidocs/iam-policy-management). **@reviewer, can we update this policy for a trusted profile specifically?**
+
+   ```bash
+   curl -X POST 'https://iam.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
+   "type": "access",
+   "description": "Editor role for SERVICE_NAME's RESOURCE_NAME",
+   "subjects": [
+      {
+         "attributes": [
+         {
+            "name": "iam_id",
+            "value": "IBMid-123453user"
+         }
+         ]
+      }'
+   ],
+   "roles":[
+      {
+         "role_id": "crn:v1:bluemix:public:iam::::role:Editor"
+      }
+   ],
+   "resources":[
+      {
+         "attributes": [
+         {
+            "name": "accountId",
+            "value": "$ACCOUNT_ID"
+         },
+         {
+            "name": "serviceName",
+            "value": "$SERVICE_NAME"
+         },
+         {
+            "name": "resource",
+            "value": "$RESOURCE_NAME",
+            "operator": "stringEquals"
+         }
+         ]
+      }
+   ]
+   }'
+   ```
+   {: codeblock}
+
+## Establishing trust with compute resources
+{: #create-profile-compute-api}
+{: api}
+
+Complete the following steps to set up better control over granting access to compute resources.
+
+{{site.data.keyword.containerlong_notm}} supports only trusted profiles for versions 1.21 and newer. Free {{site.data.keyword.containerlong_notm}} clusters create only earlier versions. You have the choice to create clusters with an earlier version with the standard plan, so be sure to select version 1.21 or newer.
+{: important}
+
+1. Create a trusted profile by specifying your account ID.
+
+   ```bash
+   curl -X POST 'https://iam.cloud.ibm.com/v1/profiles' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json' -H 'Accept: application/json' -d '{
+   "name": "My Nice Profile",
+   "description": "My Nice Profile - desc",
+   "account_id": "ACCOUNT_ID"
+   }'
+   ```
+   {: codeblock}
+
+   In the description, provide a list of actions available for this trusted profile.
+   {: tip}
+
+2. Create a claim rule for your trusted profile that follows the principle of least privilage by specifying conditions that target only the resources that need access. Conditions apply to all existing a future resources. You can also create a direct link with specific, existing resources. 
+
+**Create conditions**
+For compute resources, set the `type` attribute to `Profile-CR`. For more information, see the [IAM Identity Services API](/apidocs/iam-identity-token-api#create-claim-rule-request). 
+
+   ```bash
+   curl -X POST 'https://iam.cloud.ibm.com/v1/profiles/PROFILE_ID/rules' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json' -H 'Accept: application/json' -d '{
+   "type": "Profile-CR",
+   "conditions": [
+   {
+   "claim": "namespace",
+   "operator": "EQUALS",
+   "value": "\"default123\""
+      }
+      ] 
+   }'
+   ```
+   {: codeblock}
+
+   There is a limit of 20 claim rules per trusted profile.
+   {: note}
+
+   **Create a direct link**
+   ```bash
+   curl -X POST 'https://iam.cloud.ibm.com/v1/profiles/PROFILE_ID/links' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json' -H 'Accept: application/json' -d '{
+      "name": "my link",
+      "cr_type": "VSI",
+      "link": {
+   "crn": "crn:v1:staging:public:iam-identity::a/18e3020749ce4744b0b472466d61fdb4::computeresource:Fake-Compute-Resource",
+   "namespace": "default",
+   "name": "my compute resource name"
+      }
+   }'
+   ```
+   {: codeblock}
+
+3. Create an access policy. For more information, see [IAM Policy Management API?](/apidocs/iam-policy-management). **@reviewer, can we update this policy for a trusted profile specifically?**
+
+   ```bash
+   curl -X POST 'https://iam.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
+   "type": "access",
+   "description": "Editor role for SERVICE_NAME's RESOURCE_NAME",
+   "subjects": [
+      {
+         "attributes": [
+         {
+            "name": "iam_id",
+            "value": "IBMid-123453user"
+         }
+         ]
+      }'
+   ],
+   "roles":[
+      {
+         "role_id": "crn:v1:bluemix:public:iam::::role:Editor"
+      }
+   ],
+   "resources":[
+      {
+         "attributes": [
+         {
+            "name": "accountId",
+            "value": "$ACCOUNT_ID"
+         },
+         {
+            "name": "serviceName",
+            "value": "$SERVICE_NAME"
+         },
+         {
+            "name": "resource",
+            "value": "$RESOURCE_NAME",
+            "operator": "stringEquals"
+         }
+         ]
+      }
+   ]
+   }'
+   ```
+   {: codeblock}
+   
