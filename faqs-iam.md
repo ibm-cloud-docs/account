@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2021
 
-lastupdated: "2021-06-16"
+lastupdated: "2021-09-10"
 
 keywords: frequently asked questions for iam, iam faq, iam questions, identity and access management questions
 
@@ -115,14 +115,14 @@ In the console, go to **Manage** > **Access (IAM)** > **API keys** to view and m
 * For information about how to manage API keys that are associated with a service ID, see [Managing service ID API keys](/docs/account?topic=account-serviceidapikeys).
 * For information about how to manage classic infrastructure API keys, see [Managing classic infrastructure API keys](/docs/account?topic=account-classic_keys).
 
-## Where do I find service credentials?
+## Where do I find or add service credentials?
 {: #service-credentials}
 {: faq}
 
-To view an existing service credential for a service, go to your resource list by clicking the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list**, then select the name of the service to open its details. Click **Service credentials** to view the details.
+To view an existing service credential for a service or to add a new credential, go to your resource list by clicking the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list**, then select the name of the service to open its details. Click **Service credentials** to view the details or to select **New Credential**.  
 
-  To save a copy of the service credentials, most services provide a download option or the option to copy to your clipboard.
-  {: note}
+To save a copy of the service credentials, most services provide a  download option or the option to copy to your clipboard.
+{: note}
 
 ## Why use resource groups and access groups?
 {: #resource-groups}
@@ -288,4 +288,4 @@ You can [check the number of policies in an account](/docs/account?topic=account
 
 A user who is list as `Pending` is a user who has been invited to {{site.data.keyword.cloud_notm}} but who hasn't accepted their invitation. On the Users page, the management actions for these users include resending the invitation or cancelling the invitation. 
 
-When inspecting access group memberships or access policies in your account, you might see memberships or policies related to pending users that were created as part of the invite. These display with an IAM ID that uses the `BSS-`. This IAM ID is a placeholder for the memberships and policies until the user accepts the invitation. And, since the user hasn't registered with {{site.data.keyword.cloud_notm}}, they can't retrieve an IAM access token to leverage the assigned acccess.  When the user accepts the invitation and registers with {{site.data.keyword.cloud_notm}}, the ID in these memberships and policies is replaced with their assigned IAM ID.
+When inspecting access group memberships or access policies in your account, you might see memberships or policies that are related to pending users that were created as part of the invite. These display with an IAM ID that uses the `BSS-`. This IAM ID is a placeholder for the memberships and policies until the user accepts the invitation. And, since the user hasn't registered with {{site.data.keyword.cloud_notm}}, they can't retrieve an IAM access token to leverage the assigned access.  When the user accepts the invitation and registers with {{site.data.keyword.cloud_notm}}, the ID in these memberships and policies is replaced with their assigned IAM ID.
