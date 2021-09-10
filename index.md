@@ -29,20 +29,19 @@ subcollection: account
 
 The following table provides a comparison of Lite, Pay-As-You-Go, and Subscription accounts. For more details about each account, see the sections that follow.
 
-|                                         | Lite               | Pay-As-You-Go      | Subscription       | PayGo with Committed Use billing model   |
-|-----------------------------------------|--------------------|--------------------|--------------------|--------------------|
-| **Free Cloud Foundry memory** | 256 MB <br> Not available for Lite accounts created after 12 August 2021             |             |              |              |
-| **[Free community buildpacks](/docs/cloud-foundry-public?topic=cloud-foundry-public-available_buildpacks)** | 186 GBH             |   186 GBH       |    186 GBH          |      186 GBH        |
-| **Access to [Lite service plans](https://{DomainName}/catalog/?search=label:lite){: external}** | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |![Feature available](../icons/icon_enabled.svg) |
-| **Access to all free plans**            |                    | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |   ![Feature available](../icons/icon_enabled.svg) |         |
-| **Access to the full {{site.data.keyword.Bluemix_notm}} catalog** |  | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |        ![Feature available](../icons/icon_enabled.svg) |    |
-| **Access to multiple Cloud Foundry regions** |               | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |      ![Feature available](../icons/icon_enabled.svg) |        |             |
-| **Guaranteed zero cost**                | ![Feature available](../icons/icon_enabled.svg) |  |         |              |
-| **Discounted pricing**                  |                    |                    | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |         |            |
-| **Fit for production use cases**        |                    | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |   ![Feature available](../icons/icon_enabled.svg) |      |
-| **Available for enterprise account hierarchy **        |                    |  | ![Feature available](../icons/icon_enabled.svg) |   ![Feature available](../icons/icon_enabled.svg)           |
-| **Invoiced on monthly consumption**        |                    | ![Feature available](../icons/icon_enabled.svg) |  | ![Feature available](../icons/icon_enabled.svg) |
-| **No overages[^tabletext]**        |                    | |  |![Feature available](../icons/icon_enabled.svg) |
+|                                         | Lite               | Pay-As-You-Go      | Subscription       |
+|-----------------------------------------|--------------------|--------------------|--------------------|
+| **Free Cloud Foundry memory** | 256 MB <br> Not available for Lite accounts created after 12 August 2021             |             |              |
+| **[Free community buildpacks](/docs/cloud-foundry-public?topic=cloud-foundry-public-available_buildpacks)** | 186 GBH             |   186 GBH       |    186 GBH          |
+| **Access to [Lite service plans](https://{DomainName}/catalog/?search=label:lite){: external}** | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
+| **Access to all free plans**            |                    | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |   ![Feature available](../icons/icon_enabled.svg) |
+| **Access to the full {{site.data.keyword.Bluemix_notm}} catalog** |  | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |        ![Feature available](../icons/icon_enabled.svg) |
+| **Access to multiple Cloud Foundry regions** |               | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |      ![Feature available](../icons/icon_enabled.svg) |        |
+| **Guaranteed zero cost**                | ![Feature available](../icons/icon_enabled.svg) |  |         |
+| **Discounted pricing**                  |                    |                    | ![Feature available](../icons/icon_enabled.svg) | 
+| **Fit for production use cases**        |                    | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
+| **Available for enterprise account hierarchy**        |                    |  | ![Feature available](../icons/icon_enabled.svg) |
+| **Invoiced on monthly consumption**        |                    | ![Feature available](../icons/icon_enabled.svg) |  | 
 {: row-headers}
 {: class="comparison-table"}
 {: caption="Table 1. Comparison of {{site.data.keyword.Bluemix_notm}} accounts" caption-side="top"}
@@ -132,11 +131,3 @@ After you purchase a service bundle subscription, you'll receive an email with a
 When your subscription is about to expire, you are notified by email 60, 30, 14, and 1 day before the expiration date of the last subscription on the account. After your subscription expires, your account is converted to a Pay-As-You-Go account, which means you pay only for billable services that you use with no contracts or commitments. In addition, the discounts that are associated with your subscription account won't apply to the Pay-As-You-Go account. Go to the [Subscriptions](https://{DomainName}/billing/subscriptions) page to check whether any of your subscriptions are approaching their expiration date.
 
 You can work with [{{site.data.keyword.Bluemix_notm}} Sales](https://cloud.ibm.com/catalog?contactmodule){: external} to renew your subscription account. 
-
-## Pay as you go with Committed Use billing model
-{: #commitment-model}
-
-{{site.data.keyword.cloud_notm}} customers can sign up for the Pay as you go with Committed Use billing model. With this billing model, you commit to spend a certain amount on {{site.data.keyword.Bluemix_notm}} and you also receive discounts across the platform. You are billed monthly based on your usage and you continue to receive a discount even after you reach your committed amount. For more information about the billing model, see [Pay as you go with Committed Use billing model](/docs/billing-usage?topic=billing-usage-committed-use). 
-
-The billing model will continue to roll out to new customers worldwide throughout 2021. For more information about the availability of the billing model in your location, contact [{{site.data.keyword.cloud_notm}} Sales](https://cloud.ibm.com/catalog?contactmodule){: external}. 
-{: note}
