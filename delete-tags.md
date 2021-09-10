@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-09-09"
 
 keywords: tags, delete tags, unused tags, delete tags in  the console, delete  tags cli, delete tags api
 
@@ -189,3 +189,43 @@ fmt.Println(string(b))
 {: codeblock}
 {: go}
 
+
+## Deleting tags by using Terraform
+{: #delete-terraform}
+{: terraform}
+
+You can delete tags by using Terraform. 
+
+1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started witTerraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+
+1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to delete tags by by using HashiCorp Configuration LanguageFor more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}. The following example deletes the `ibm_tag` from the resource `ibm`, which is attached to resource ID `ibm_satellite_location.location.crn`.
+
+   ```terraform
+   resource "ibm_resource" "ibm" {
+   resource_id = ibm_satellite_location.location.crn
+   tags        = [ "ibm_tag" ]
+   }
+   ```
+   {: codeblock}
+
+1. Initialize the Terraform CLI.
+
+   ```
+   terraform init
+   ```
+   {: pre}
+
+1. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to delete tags.
+
+   ```
+   terraform plan
+   ```
+   {: pre}
+
+1. Delete the tags.
+
+   ```
+   terraform destroy
+   ```
+   {: pre}
+   
