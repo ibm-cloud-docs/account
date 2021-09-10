@@ -193,9 +193,6 @@ You can create access management tags by using Terraform.
 1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create access management tags by by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}. The following example creates the access management tag `ibm_tag` to the `ibm` resource for the resource ID `ibm_satellite_location.location.crn`. 
     
    ```terraform
-   data "ibm_satellite_location" "location" {
-   location  = var.location
-   }
    resource "ibm_resource" "ibm" {
    resource_id = ibm_satellite_location.location.crn
    tags        = [ "ibm_tag" ]
