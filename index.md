@@ -21,33 +21,33 @@ subcollection: account
 # Account types
 {: #accounts}
 
-{{site.data.keyword.Bluemix}} has three different account types: Lite, Pay-As-You-Go, and Subscription. You get a free Lite account as soon as you sign up. Pay-As-You-Go and Subscription are billable account options and each offer different features. Compare each account and choose the one that best suits your needs.
-{:shortdesc}
+{{site.data.keyword.Bluemix}} has three different account types: Lite, Pay-As-You-Go, and Subscription. You get a free Lite account as soon as you sign up. Pay-As-You-Go and Subscription are billable account types and each offers different features. The PayGo with Committed Use billing model is available for the Pay-As-You-Go and Subscription account types. Compare each type of account and billing model to choose the one that best suits your needs.
+{: shortdesc}
 
 ## Comparing accounts
 {: #compare}
 
 The following table provides a comparison of Lite, Pay-As-You-Go, and Subscription accounts. For more details about each account, see the sections that follow.
 
-|                                         | Lite               | Pay-As-You-Go      | Subscription       |
+|                                         | Lite               | Pay-As-You-Go      | Subscription       | 
 |-----------------------------------------|--------------------|--------------------|--------------------|
-| **Free Cloud Foundry memory** | 256 MB <br> Not available for Lite accounts created after 12 August 2021             |             |              |
+| **Free Cloud Foundry memory [^tabletext]** | 256 MB            |             |              |              |
 | **[Free community buildpacks](/docs/cloud-foundry-public?topic=cloud-foundry-public-available_buildpacks)** | 186 GBH             |   186 GBH       |    186 GBH          |
 | **Access to [Lite service plans](https://{DomainName}/catalog/?search=label:lite){: external}** | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
-| **Access to all free plans**            |                    | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |   ![Feature available](../icons/icon_enabled.svg) |
-| **Access to the full {{site.data.keyword.Bluemix_notm}} catalog** |  | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |        ![Feature available](../icons/icon_enabled.svg) |
-| **Access to multiple Cloud Foundry regions** |               | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |      ![Feature available](../icons/icon_enabled.svg) |        |
+| **Access to all free plans**            |                    | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |  
+| **Access to the full {{site.data.keyword.Bluemix_notm}} catalog** |  | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
+| **Access to multiple Cloud Foundry regions** |               | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | **Guaranteed zero cost**                | ![Feature available](../icons/icon_enabled.svg) |  |         |
-| **Discounted pricing**                  |                    |                    | ![Feature available](../icons/icon_enabled.svg) | 
-| **Fit for production use cases**        |                    | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
-| **Available for enterprise account hierarchy**        |                    |  | ![Feature available](../icons/icon_enabled.svg) |
-| **Invoiced on monthly consumption**        |                    | ![Feature available](../icons/icon_enabled.svg) |  | 
+| **Discounted pricing**                  |                    |                    | ![Feature available](../icons/icon_enabled.svg) |
+| **Fit for production use cases**        |                    | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg)|
+| **Available for enterprise account hierarchy**         |                    |  | ![Feature available](../icons/icon_enabled.svg) |
+| **Invoiced on monthly consumption**        |                    | ![Feature available](../icons/icon_enabled.svg) |                     | 
 {: row-headers}
 {: class="comparison-table"}
 {: caption="Table 1. Comparison of {{site.data.keyword.Bluemix_notm}} accounts" caption-side="top"}
 {: summary="This table has row and column headers. The row headers identify the feature. The column headers identify the account type. To understand which features apply to the account types, navigate to the row, and find the feature that you're interested in."}
 
-[^tabletext]: If you spend more than the amount you committed to, you will continue to receive the same discounts. Discounted charges will be reflected in on your monthly invoice.  
+[^tabletext]: Not available for Lite accounts created after 12 August 2021.  
 
 ## Lite account
 {: #liteaccount}
@@ -56,7 +56,7 @@ Sign up for a Lite account to start building your apps and exploring services wi
 
 You have access to a single resource group that's created for you and named `Default`. All of your service's instances that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) are automatically added to this resource group. You can update the name of this resource group at any time. See [Renaming a resource group](/docs/account?topic=account-rgs#rename_rgs) for the detailed steps.
 
-Each resource group is free. When you create a connection between a service that is managed by IAM and a Cloud Foundry app, you create an alias, which is a service instance, that counts toward your quota. See [Managing connections](/docs/account?topic=account-connect_app).
+Each resource group is free. When you create a connection between a service that is managed by IAM and an app, you create an alias, which is a service instance, that counts toward your quota. See [Managing connections](/docs/account?topic=account-connect_app).
 {: tip}
 
 ### What's available?
@@ -66,13 +66,12 @@ Check out the following list of key features that are available in a Lite accoun
 
    * The account is free - no credit card required.
    * The account never expires.
-   * You can use one org in one {{site.data.keyword.Bluemix_notm}} region.
    * You receive email notifications about your account status and quota limits.
    * You can provision one instance of any service in the [{{site.data.keyword.Bluemix_notm}} catalog](https://cloud.ibm.com/catalog/?search=label:lite%20lite){: external} that has a Lite plan.
    * After 10 days of no development activity, your apps go to sleep. You can wake up your apps by continuing to work on them.
    * After 30 days of no development activity, your service instances with Lite plans are deleted.
-   
-   Only Lite accounts created before 12 August 2021 can have Cloud Foundry apps that can access up to 256 MB of free, instantaneous runtime memory per month. 
+
+   Only Lite accounts created before 12 August 2021 can use Cloud Foundry apps that can access up to 256 MB of free, instantaneous runtime memory per month. You can use one org in one {{site.data.keyword.Bluemix_notm}} region.
    {: note}
 
 ## Pay-As-You-Go account
@@ -82,7 +81,7 @@ With a Pay-As-You-Go account, you can access the full {{site.data.keyword.Bluemi
 
 You can create multiple resource groups to easily manage quota and view billing usage for a set of resources. Your charges are based on your use of {{site.data.keyword.Bluemix_notm}} computing and services. If you use more than the free runtime and service allowances, you receive a monthly invoice that provides details about your resource charges.
 
-Basic support is included with your {{site.data.keyword.Bluemix_notm}} Pay-As-You-Go. It is provided for non-production environments or workloads where traditional severities are not used and specific response times are not stipulated. Also, with a Pay-As-You-Go account, you can order Advanced or Premium support plans to get extra help with your production workloads. Learn more in [Basic, Advanced, and Premium Support plans](/docs/get-support?topic=get-support-support-plans).
+Basic support is included with your {{site.data.keyword.Bluemix_notm}} Pay-As-You-Go. It is provided for non-production environments or workloads where traditional severities are not used and specific response times are not stipulated. Also, with a Pay-As-You-Go account, you can order Advanced or Premium support plans to get extra help with your production workloads. Learn more in [Support plans](/docs/get-support?topic=get-support-support-plans).
 
 A subset of Pay-As-You-Go accounts are eligible for the new Pay-As-You-Go with Committed Use model. For more information, see [Pay as you go with Committed Use billing model](/docs/account?topic=account-accounts#commitment-model).
 
@@ -100,7 +99,7 @@ A subset of subscription accounts are eligible for the new Pay-As-You-Go with Co
 ### Platform subscriptions
 {: #platform-subscriptions}
 
-When you purchase a subscription for the {{site.data.keyword.Bluemix_notm}} platform, you get discounted credit that pays for services and other resources that you create from the [{{site.data.keyword.Bluemix_notm}} catalog](https://{DomainName}/catalog){: external}.
+When you purchase a subscription for the {{site.data.keyword.Bluemix_notm}} platform, you get discounted credit that pays for services and other resources that you create from the [{{site.data.keyword.Bluemix_notm}} catalog](/catalog){: external}.
 
 Your resource usage is deducted from your total subscription amount. Even if your usage varies from month to month, you get predictable, consistent billing. If your usage exceeds your total subscription amount, you're charged the non-discounted rate for the overage. For more information about tracking your subscription usage, see [Managing subscriptions](/docs/billing-usage?topic=billing-usage-subscriptions).
 
@@ -121,13 +120,13 @@ Service bundle subscriptions give you access and credit towards a set of service
 You can add services bundles to any type of existing account, including Lite accounts. Service bundle subscriptions are subject to the [{{site.data.keyword.Bluemix_notm}} Terms of Use](/docs/overview/terms-of-use?topic=overview-terms).
 
 Service bundle subscriptions aren't available through the {{site.data.keyword.Bluemix_notm}} console. To learn more and purchase a service bundle, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://cloud.ibm.com/catalog?contactmodule){: external}.
-{:tip}
+{: tip}
 
 After you purchase a service bundle subscription, you'll receive an email with a subscription code that you apply to add the bundle to your account. For more information about how to apply subscription codes, see [Subscription credit](/docs/billing-usage?topic=billing-usage-subscriptions#subscription-codes). When your service bundle expires or you use all of the credit, you can continue to use any of the services, with usage charged at the Pay-As-You Go rate.
 
 ### Expiring subscriptions 
 {: #expiring-subscription-account}
 
-When your subscription is about to expire, you are notified by email 60, 30, 14, and 1 day before the expiration date of the last subscription on the account. After your subscription expires, your account is converted to a Pay-As-You-Go account, which means you pay only for billable services that you use with no contracts or commitments. In addition, the discounts that are associated with your subscription account won't apply to the Pay-As-You-Go account. Go to the [Subscriptions](https://{DomainName}/billing/subscriptions) page to check whether any of your subscriptions are approaching their expiration date.
+When your subscription is about to expire, you are notified by email 60, 30, 14, and 1 day before the expiration date of the last subscription on the account. After your subscription expires, your account is converted to a Pay-As-You-Go account, which means you pay only for billable services that you use with no contracts or commitments. In addition, the discounts that are associated with your subscription account won't apply to the Pay-As-You-Go account. Go to the [Subscriptions](/billing/subscriptions) page to check whether any of your subscriptions are approaching their expiration date.
 
 You can work with [{{site.data.keyword.Bluemix_notm}} Sales](https://cloud.ibm.com/catalog?contactmodule){: external} to renew your subscription account. 
