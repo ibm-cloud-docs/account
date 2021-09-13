@@ -21,7 +21,7 @@ subcollection: account
 # Account types
 {: #accounts}
 
-{{site.data.keyword.Bluemix}} has three different account types: Lite, Pay-As-You-Go, and Subscription. You get a free Lite account as soon as you sign up. Pay-As-You-Go and Subscription are billable account types and each offers different features. The PayGo with Committed Use billing model is available for the Pay-As-You-Go and Subscription account types. Compare each type of account and billing model to choose the one that best suits your needs.
+{{site.data.keyword.Bluemix}} has three different account types: Lite, Pay-As-You-Go, and Subscription. You get a free Lite account as soon as you sign up. Pay-As-You-Go and Subscription are billable account types and each offers different features. The PayGo with Committed Use billing model is available for the Pay-As-You-Go and Subscription account types. Compare each type of account to choose the one that best suits your needs.
 {: shortdesc}
 
 ## Comparing accounts
