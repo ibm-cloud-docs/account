@@ -134,7 +134,7 @@ Complete the following steps to define which federated users can access specific
    There is a limit of 20 claim rules per trusted profile.
    {: note}
 
-4. Create an access policy. For more information, see [IAM Policy Management API?](/apidocs/iam-policy-management). **@reviewer, can we update this policy for a trusted profile specifically?**
+4. Create an access policy. For more information, see [IAM Policy Management API?](/apidocs/iam-policy-management) 
 
    ```bash
    curl -X POST 'https://iam.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
@@ -201,7 +201,7 @@ Complete the following steps to set up better control over granting access to co
    In the description, provide a list of actions available for this trusted profile.
    {: tip}
 
-2. Create a claim rule for your trusted profile that follows the principle of least privilage by specifying conditions that target only the resources that need access. Conditions apply to all existing a future resources. You can also create a direct link with specific, existing resources. 
+2. Create a claim rule for your trusted profile that follows the principle of least privilege by specifying conditions that target only the resources that need access. Conditions apply to all existing future resources. You can also create a direct link with specific, existing resources. 
 
 **Create conditions**
 For compute resources, set the `type` attribute to `Profile-CR`. For more information, see the [IAM Identity Services API](/apidocs/iam-identity-token-api#create-claim-rule-request). 
@@ -237,7 +237,7 @@ For compute resources, set the `type` attribute to `Profile-CR`. For more inform
    ```
    {: codeblock}
 
-3. Create an access policy. For more information, see [IAM Policy Management API?](/apidocs/iam-policy-management). **@reviewer, can we update this policy for a trusted profile specifically?**
+3. Create an access policy. For more information, see [IAM Policy Management API?](/apidocs/iam-policy-management) **@reviewer, can we update this policy for a trusted profile specifically?**
 
    ```bash
    curl -X POST 'https://iam.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
