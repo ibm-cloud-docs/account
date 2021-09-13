@@ -21,7 +21,7 @@ subcollection: account
 # Account types
 {: #accounts}
 
-{{site.data.keyword.Bluemix}} has three different account types: Lite, Pay-As-You-Go, and Subscription. You get a free Lite account as soon as you sign up. Pay-As-You-Go and Subscription are billable account types and each offers different features. The PayGo with Committed Use billing model is available for the Pay-As-You-Go and Subscription account types. Compare each type of account to choose the one that best suits your needs.
+{{site.data.keyword.Bluemix}} has three different account types: Lite, Pay-As-You-Go, and Subscription. You get a free Lite account as soon as you sign up. Pay-As-You-Go and Subscription are billable account types and each offers different features. The PayGo with Committed Use billing model is available for the Pay-As-You-Go and Subscription account types. Compare each type of account and billing model to choose the one that best suits your needs.
 {: shortdesc}
 
 ## Comparing accounts
@@ -31,8 +31,8 @@ The following table provides a comparison of Lite, Pay-As-You-Go, and Subscripti
 
 |                                         | Lite               | Pay-As-You-Go      | Subscription       | 
 |-----------------------------------------|--------------------|--------------------|--------------------|
-| **Free Cloud Foundry memory [^tabletext]** | 256 MB            |             |              |              |
-| **[Free community buildpacks](/docs/cloud-foundry-public?topic=cloud-foundry-public-available_buildpacks)** | 186 GBH             |   186 GBH       |    186 GBH          |
+| **Free Cloud Foundry memory [^1]** | 256 MB            |             |              |              |
+| **[Free community buildpacks](/docs/cloud-foundry-public?topic=cloud-foundry-public-available_buildpacks) [^2]** | 186 GBH             |   186 GBH       |    186 GBH          |
 | **Access to [Lite service plans](https://{DomainName}/catalog/?search=label:lite){: external}** | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | **Access to all free plans**            |                    | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |  
 | **Access to the full {{site.data.keyword.Bluemix_notm}} catalog** |  | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
@@ -47,7 +47,9 @@ The following table provides a comparison of Lite, Pay-As-You-Go, and Subscripti
 {: caption="Table 1. Comparison of {{site.data.keyword.Bluemix_notm}} accounts" caption-side="top"}
 {: summary="This table has row and column headers. The row headers identify the feature. The column headers identify the account type. To understand which features apply to the account types, navigate to the row, and find the feature that you're interested in."}
 
-[^tabletext]: Not available for Lite accounts created after 12 August 2021.  
+[^1]: Not available for Lite accounts created after 12 August 2021.
+
+[^2]: Not available for Lite accounts created after 12 August 2021.
 
 ## Lite account
 {: #liteaccount}
