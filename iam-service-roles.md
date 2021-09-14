@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-09-13"
+lastupdated: "2021-09-14"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -49,6 +49,17 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 
+| Role | Description |
+| ----- | :----- |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 1. Service roles - Activity Tracker event routing" caption-side="top"}
+{: #service-roles-table1}
+{: tab-title="Service roles"}
+{: tab-group="atracker"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `atracker.target.read` | read target | Administrator, Editor, Operator, Viewer |
@@ -63,6 +74,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `atracker.route.list` | List atracker routes | Administrator, Editor, Operator, Viewer |
 | `atracker.endpoint.set` | Set atacker endpoint properties | Administrator |
 | `atracker.endpoint.get` | Read atracker endpoint properties | Administrator, Editor, Operator, Viewer |
+| `atracker.service.ingest` | Send events to atracker | Writer |
 {: caption="Table 1. Service actions - Activity Tracker event routing" caption-side="top"}
 {: #actions-table1}
 {: tab-title="Actions"}
