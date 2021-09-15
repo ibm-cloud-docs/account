@@ -201,7 +201,7 @@ The following table lists the filters that you can use to customize which produc
 | Compute | Infrastructure resources that serve as the basis for building apps in the cloud. |
 | Containers | A standard unit of software that packages up code and all its dependencies so the app runs quickly and reliably from one computing environment to another. |
 | Databases | Products that provide some form of access to a database without the need for setting up physical hardware, installing software, or configuring for performance. |
-| Developer Tools | Products that support developing, testing, and debugging software. |
+| Developer tools | Products that support developing, testing, and debugging software. |
 | Integration | Products that facilitate the connection of data, apps, APIs, and devices across an organization to be more efficient, productive, and agile. |
 | Internet of Things | Products that support receiving and transferring data over wireless networks without human intervention. |
 | Logging and Monitoring | Products that support receiving and transferring data over wireless networks without human intervention. |

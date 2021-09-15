@@ -51,7 +51,7 @@ Let's say your organization is tasked with implementing a development and deploy
 2. Select **Exclude all products in the {{site.data.keyword.cloud_notm}} catalog**.
 3. Select one or more filters to customize which products are available. In the case of our example, select the following filters: 
 
-   * **Category** > **Developer Tools**
+   * **Category** > **Developer tools**
    * **Provider** > **{{site.data.keyword.IBM_notm}}**
 4. Review the **Preview** table to confirm your selections, and click **Update**. 
 5. Verify your updates in the catalog by going to **Catalog** > **Services**.
@@ -62,7 +62,7 @@ Let's say your organization is tasked with implementing a development and deploy
 {: #catalog-enterprise-child}
 {: ui}
 
-To build on the example in the previous section, all account groups and accounts in your enterprise have access to Developer Tools products provided by {{site.data.keyword.IBM_notm}}. You can further restrict access to a subset of products for child account groups and accounts. For example, you might want to limit a specific account group, and its child accounts, to work with only the products that support IAM for access control. 
+To build on the example in the previous section, all account groups and accounts in your enterprise have access to Developer tools products provided by {{site.data.keyword.IBM_notm}}. You can further restrict access to a subset of products for child account groups and accounts. For example, you might want to limit a specific account group, and its child accounts, to work with only the products that support IAM for access control. 
 
 1. Go to **Manage** > **Catalogs** > **Settings**.
 2. Expand the enterprise hierarchy, and select the specific account group. 

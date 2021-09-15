@@ -271,9 +271,9 @@ Complete the following steps to add your software by using the CLI. You can use 
     ```
     {: codeblock}
     
-1. Add the **Developer Tools** category. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#add-category-offering) for adding a category. 
+1. Add the **Developer tools** category. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#add-category-offering) for adding a category. 
     ```
-    ibmcloud catalog offering add-category --catalog "Name of catalog" --offering "software-offering" --category "Developer Tools"
+    ibmcloud catalog offering add-category --catalog "Name of catalog" --offering "software-offering" --category "Developer tools"
     ```
     {: codeblock}
     
