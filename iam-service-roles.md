@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-09-14"
+lastupdated: "2021-09-15"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1413,6 +1413,7 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
+| `is.dedicated-host.dashboard.view` | View Dashboard | Administrator, Editor, Operator, Viewer |
 | `is.dedicated-host.dedicated-host.list` | List Dedicated Hosts | Administrator, Editor, Operator, Viewer |
 | `is.dedicated-host.dedicated-host.create` | Create a Dedicated Host | Administrator, Editor |
 | `is.dedicated-host.dedicated-host.update` | Update a Dedicated Host | Administrator, Editor |
@@ -1425,9 +1426,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.dedicated-host.dedicated-host-group.delete` | Delete a Dedicated Host Group | Administrator, Editor |
 | `is.dedicated-host.dedicated-host-group.append` | Add a Dedicated Host to a Dedicated Host Group | Administrator, Editor |
 | `is.dedicated-host.dedicated-host-group.provision` | Provision an Instance to a Dedicated Host Group | Administrator, Editor, Operator |
-| `is.dedicated-host.dedicated-host-group.list` | List Dedicated Host Groups | Administrator, Editor, Operator, Viewer |
 | `is.dedicated-host.dedicated-host.operate` | Operate on a Dedicated Host | Administrator, Editor, Operator |
-| `is.dedicated-host.dedicated-host-group.operate` | Operate on a Dedicated Host | Administrator, Editor, Operator |
+| `is.dedicated-host.dedicated-host-group.operate` | Operate on a Dedicated Host Group | Administrator, Editor, Operator |
+| `is.dedicated-host.dedicated-host-group.list` | List Dedicated Host Groups | Administrator, Editor, Operator, Viewer |
 {: caption="Table 27. Service actions - Dedicated Host for VPC" caption-side="top"}
 {: #actions-table27}
 {: tab-title="Actions"}
@@ -3959,6 +3960,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `secrets-manager.secret-engine-config.get` | Get secret engine configuration. | Manager |
 | `secrets-manager.endpoints.view` | Get service instance endpoints. | Manager, Reader, SecretsReader, Writer |
 | `secrets-manager.secret-versions.list` | List secret versions. | Manager, Reader, SecretsReader, Writer |
+| `secrets-manager.vault-token.create` | Create a Vault token. | Manager |
 {: caption="Table 86. Service actions - Secrets Manager" caption-side="top"}
 {: #actions-table86}
 {: tab-title="Actions"}
