@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-08-09"
+lastupdated: "2021-09-17"
 
 keywords: data security, FS-ready, Financial Services, encryption
 
@@ -22,11 +22,11 @@ subcollection: account
 {: #enabling-fs-validated}
 
 If you're the account owner, you can enable your {{site.data.keyword.cloud}} account to be Financial Services Validated designated, which means your account stores and manages regulated financial services information.
-{:shortdesc}
+{: shortdesc}
 
 Services that are designated as {{site.data.keyword.Bluemix_notm}} for Financial Services Validated leverage the industry’s highest levels of encryption certification, provides preventive and compensatory controls for financial services regulatory workloads, multi-architecture support and proactive, and automated security.
 
-The {{site.data.keyword.Bluemix_notm}} for Financial Services Validated designation is available for services that are operating in the Dallas (us-south) and Washington DC (us-east) [multizone regions](#x9774820){: term}. 
+The {{site.data.keyword.Bluemix_notm}} for Financial Services Validated designation is available for services that are operating in the Dallas (us-south), Washington DC (us-east), Frankfurt (eu-de) and London (eu-gb) [multizone regions](#x9774820){: term}. 
 {: note}
 
 Accounts that enable the Financial Services Validated setting can filter the catalog to view the services that adhere to this compliance standard and still have access to the full catalog of services. However, if anyone in the account chooses to create a service that isn't Financial Services Validated, a message displays with a reminder that this setting is enabled in the account and the selected service isn't Financial Services Validated.
