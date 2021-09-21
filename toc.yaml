@@ -34,8 +34,8 @@ toc:
       - iam-quickstart.md
       - tagging-resources-tutorial.md
       - dash-tutorial.md
-      - trustedprofiles-compute-tutorial.md
-      - trustedprofiles-fed-tutorial.md
+      - trustedprofile-compute-tutorial.md
+      - trustedprofile-fed-tutorial.md
       - topicgroup:
           label: Sharing software with users in your account
           topics:

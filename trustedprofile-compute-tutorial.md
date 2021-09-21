@@ -4,10 +4,9 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-09-01"
+lastupdated: "2021-09-10"
 
 keywords: trusted profile, compute resource, granting access, tutorial, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
-
 
 subcollection: account
 
@@ -49,7 +48,7 @@ Let's say that you are the lead developer on a project for your team that is pla
 ## Before you begin
 {: #trusted-profile-compute-prereqs}
 
-* This tutorial might incur costs. Use the [Cost Estimator](https://{DomainName}/estimator/review) to generate a cost estimate based on your projected usage.
+* This tutorial might incur costs. Use the [Cost Estimator](/estimator/review) to generate a cost estimate based on your projected usage.
 * Make sure you have the following access:
    * Administrator role in the account to create a trusted profile
    * Administrator role on the specific resources to which you are assigning access
