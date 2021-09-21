@@ -98,6 +98,7 @@ toc:
               - iam-userinv.md
               - iam-remove-users.md
               - iam-serviceid.md
+              - iam-ibmid-change.md
           - topicgroup:
               label: Managing login sessions
               topics:
