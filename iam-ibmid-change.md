@@ -22,7 +22,7 @@ subcollection: account
 {: #change-ibm-id}
 
 
-As an account owner or administrator on the User management account management service, you can update a user's IBMid. The new IBMid that you use to replace the current IBMid must already exist.
+As an account owner, you can update a user's IBMid. The new IBMid that you use to replace the current IBMid must already exist.
 {: shortdesc}
 
 The IBMid you're replacing is removed from the account. If you need the existing IBMid to continue to be a member of the account, you must invite the user again and reestablish their access.
