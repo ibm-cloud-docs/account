@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-09-10"
+lastupdated: "2021-09-23"
 
 keywords: trusted profile, compute resource, granting access, tutorial, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
@@ -38,7 +38,7 @@ subcollection: account
 This tutorial guides you through the steps to centrally manage fine-grained authorization for all applications that are running in a compute resource without creating service IDs or managing the API key lifecycle for applications. By completing this tutorial, you learn how to create a trusted profile, establish trust with compute resources based on specific attributes, and define a policy to assign access to resources.
 {: shortdesc}
 
-By using trusted profiles, you can establish a flexible, secure way for apps that are running on a compute resource to access other {{site.data.keyword.cloud}} resources. All compute resource instances that share certain attributes, such as name, namespace, tags, or region, are mapped to a common profile and can share access to {{site.data.keyword.cloud_notm}} resources. This common identity makes it possible to give the applications within various compute resources access to an external resource one time, rather than cluster-by-cluster.
+By using trusted profiles, you can establish a flexible, secure way for apps that are running on a compute resource to access other {{site.data.keyword.cloud}} resources. All compute resource instances that share certain attributes, such as name, namespace, tags, or location, are mapped to a common profile and can share access to {{site.data.keyword.cloud_notm}} resources. This common identity makes it possible to give the applications within various compute resources access to an external resource one time, rather than cluster-by-cluster.
 
 You must enable the "Service Account Token Volume Projection" on the Kubernetes cluster to apply the trusted profile identity. For more information, see [Authorizing pods in your cluster to IBM Cloud services with IAM trusted profiles](/docs/containers?topic=containers-pod-iam-identity&interface=ui)
 {: note}
@@ -87,7 +87,7 @@ Now that you created your trusted profile, you want to establish trust with the 
    A service account in {{site.data.keyword.containerlong_notm}} is identified by the namespace and service account name. For more information, see [Kubernetes service account token volume projection](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#service-account-token-volume-projection){: external} and [Kubernetes namespace](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/){: external}. 
    {: note}
 
-5. Click **Continue**.
+7. Click **Continue**.
 
 ## Assign access to other {{site.data.keyword.cloud_notm}} services
 {: #trusted-profile-compute-access}
