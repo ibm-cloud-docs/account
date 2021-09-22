@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-09-21"
+lastupdated: "2021-09-22"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -116,7 +116,7 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- | :----- |
 | `ibmae.applications.create` |  | Manager, Writer |
 | `ibmae.applications.delete` |  | Manager, Writer |
-| `ibmae.applications.read` |  | Manager, Writer |
+| `ibmae.applications.read` |  | Manager, Reader, Writer |
 | `ibmae.cluster.createlogconfig` |  | Administrator, Editor, Manager, Writer |
 | `ibmae.cluster.customize` |  | Administrator, Editor, Manager, Writer |
 | `ibmae.cluster.deletelogconfig` |  | Administrator, Editor, Manager, Writer |
@@ -136,7 +136,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `ibmae.instances.update` |  | Manager, Writer |
 | `ibmae.kernels.create` |  | Manager, Writer |
 | `ibmae.kernels.delete` |  | Manager, Writer |
-| `ibmae.kernels.read` |  | Manager, Writer |
+| `ibmae.kernels.read` |  | Manager, Reader, Writer |
 | `ibmae.livybatch.create` |  | Manager, Writer |
 | `ibmae.livybatch.delete` |  | Manager, Writer |
 | `ibmae.livybatch.read` |  | Manager, Reader, Writer |
