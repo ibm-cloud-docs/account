@@ -53,6 +53,7 @@ Complete the following steps to add a credential to a service that is managed by
 
    Most services don't require extra parameters, and for services that do, each service defines its own unique list of parameters. For a list of supported configuration parameters, see the documentation for the particular service offering.
    {: note}
+
 6. Click **Add** to generate the new service credential.
 
 ## Adding a credential when binding an IAM-enabled service by using the API

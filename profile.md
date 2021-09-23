@@ -51,4 +51,5 @@ To change your settings from the {{site.data.keyword.IBM_notm}} standard default
 
    You can click **Advanced settings** to view the exact company and domain for the cookies in each level. Then, click **Basic settings** to return to cookie preference selection.
    {: tip}
+
 1. Click **Agree and save custom settings**.

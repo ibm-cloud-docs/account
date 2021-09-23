@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-02-25"
+lastupdated: "2021-09-22"
 
 keywords: troubleshoot enterprise, enterprise problem, enterprise access, new enterprise account
 
@@ -37,5 +37,6 @@ You aren't assigned the correct access.
 
 To create an account in the enterprise, you must have the following access.
 {: tsResolve}
+
 1. Administrator role on the Billing service of the enterprise.
 2. Administrator or Editor role on the Enterprise service for the targeted parent enterprise or account group.

@@ -28,6 +28,7 @@ Learn about what IBM Cloud Identity and Access Management (IAM) is, how IAM work
 {: shortdesc}
 
 {: #what_is_IAM}
+
 IAM enables you to securely authenticate users for platform services and control access to resources consistently across {{site.data.keyword.cloud_notm}}. A set of {{site.data.keyword.cloud_notm}} services is enabled to use {{site.data.keyword.cloud_notm}} IAM for access control, and are organized into [resource groups](/docs/account?topic=account-rgs) within your account so you can give users access quickly to more than one resource at a time. Each of these services is labeled as "IAM-enabled" in the catalog. You can use IAM access policies to assign users and service IDs access to resources within your account. And, you can group users and service IDs into an [access group](/docs/account?topic=account-groups) to easily give all members of the group the same level of access.
 
 ![IAM access control in an account by using access groups](images/IAM-access-groups-diagram.svg "How IAM access works in an account by using access groups"){: caption="Figure 1. How IAM access works in an account by using access groups" caption-side="bottom"}

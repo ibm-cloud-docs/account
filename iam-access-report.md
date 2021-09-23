@@ -72,6 +72,7 @@ Each type of report does include the following information:
 * Subjects who have access to the resource, including the roles and actions mapped to each role by the service and the platform. 
    Actions that are mapped to the role by the specific service are separated from the platform-specific actions that are mapped to the role in the JSON report only.
    {: note}
+
 * The IDs of the policies that provide the access. Each ID is a link so that you can go directly to editing that specific policy in case you want to change the assigned access.
 
 ### JSON report example

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-02-17"
+lastupdated: "2021-09-22"
 
 keywords: troubleshoot permission to delete access management tags
 
@@ -35,6 +35,7 @@ If you can't delete an access management tag within an {{site.data.keyword.Bluem
 
 The action might be blocked by one of the following reasons:
 {: tsCauses}
+
 * You might not be assigned the appropriate access to complete the action. You must have the Administrator role on the Tagging Service that is listed under the Account management services or Administrator role on all Account management services.
 * The access management tag you're trying to delete is still attached to an active or a reclaimed resource.
 

@@ -72,8 +72,10 @@ To restrict all users to using only specific IP addresses, complete the followin
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Settings**.
 1. From the Account restrictions section, turn on the **IP address access** setting. 
 1. Enter the IP addresses. The IP addresses listed are the only ones from which users in the account can log in to {{site.data.keyword.Bluemix}}.
+
    You can enter a single IP address `192.168.0.0`, an IP address range `192.168.0.1 - 192.168.2.53`, or a CIDR block `192.168.0.0/16`. Make sure to use IPv4 or IPv6 addresses, and to separate multiple values with a comma.
    {: note}
+
 1. Click **Save**. 
 
 ## Allowing specific IP addresses for an account by using Terraform

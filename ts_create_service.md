@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-02-25"
+lastupdated: "2021-09-22"
 
 keywords: troubleshoot create service, create service error
 
@@ -30,6 +30,7 @@ You are unable to create or add a new service instance.
 
 You might receive one of the following error messages when you create a service:
 {: tsSymptoms}
+
 * Create service error.
 * Create Service [500, Internal Server Error]. An error occurred while trying to create the service. Please try again later.
 

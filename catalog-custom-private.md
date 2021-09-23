@@ -47,6 +47,7 @@ Make sure you have the [administrator role on the catalog management service](/d
 
 Run the following command to install the catalogs management plug-in:
 {: cli}
+
 ```
 ibmcloud plugin install catalogs-management
 ```
