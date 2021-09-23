@@ -45,10 +45,10 @@ Also, you can rename your enterprise by clicking **Rename** in the Enterprise de
 
 * View enterprise information such as the name, domain, owner, and creation and update dates.
 
-  ```
-  ibmcloud enterprise show
-  ```
-  {: codeblock}
+   ```
+   ibmcloud enterprise show
+   ```
+   {: codeblock}
   
 * Rename the enterprise by specifying the new name on the `-n` option in the following command.
 

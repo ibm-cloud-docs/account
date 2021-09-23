@@ -83,17 +83,17 @@ You can view the resources of only one org at a time. If you are a member of mul
 
 1. Log in, and select the account.
 
-  ```
-  ibmcloud login
-  ```
-  {: codeblock}
+   ```
+   ibmcloud login
+   ```
+   {: codeblock}
 
 2. Rename an organization by running the [`ibmcloud account org-rename`](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_org_rename) command, where `OLD_ORG_NAME` is the old name of the org that is to be renamed, `NEW_ORG_NAME` is the new name of the org that is to be renamed, and `-r, --region REGION` is the region name. 
 
-  ```
-  ibmcloud account org-rename OLD_ORG_NAME NEW_ORG_NAME [-r, --region REGION]
-  ```
-  {: codeblock}
+   ```
+   ibmcloud account org-rename OLD_ORG_NAME NEW_ORG_NAME [-r, --region REGION]
+   ```
+   {: codeblock}
 
 
 This operation can be done only by an org manager.
@@ -105,17 +105,17 @@ This operation can be done only by an org manager.
 
 1. Log in, and select the account.
 
-  ```
-  ibmcloud login
-  ```
-  {: codeblock}
+   ```
+   ibmcloud login
+   ```
+   {: codeblock}
 
 2. Delete a space by using the [`ibmcloud account space-delete`](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_space_delete) command, where `-f` is forcing deletion without confirmation, and `-o` is deleting space within specified org.
 
-  ```
-  ibmcloud account space-delete SPACE [-o ORG] [-f]
-  ```
-  {: codeblock}
+   ```
+   ibmcloud account space-delete SPACE [-o ORG] [-f]
+   ```
+   {: codeblock}
 
 For more information on managing accounts, users in an account by using the CLI, and the org, space, and roles of public Cloud Foundry environments, visit [Managing accounts, users, and Cloud Foundry orgs](https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_account).
 

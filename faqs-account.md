@@ -280,6 +280,7 @@ You can target URLs for any {{site.data.keyword.Bluemix_notm}} console page to a
    https://{DomainName}/billing/usage?bss_account=a1b2c3d4e5f61234567890fedcba4321
    ```
    {: screen}
+
 1. Bookmark the URL in your browser.
 
 ## Can I make someone else the account owner?
