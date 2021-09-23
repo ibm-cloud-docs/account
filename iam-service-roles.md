@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-23"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -475,13 +475,25 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 
+| Role | Description |
+| ----- | :----- |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+{: row-headers}
+{: caption="Table 8. Service roles - Auto Scale for VPC" caption-side="top"}
+{: #service-roles-table8}
+{: tab-title="Service roles"}
+{: tab-group="is.instance-group"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `is.instance-group.instance-group.read` | Read an Instance Group | Administrator, Editor, Operator, Viewer |
+| `is.instance-group.instance-group.read` | Read an Instance Group | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `is.instance-group.instance-group.create` | Create an Instance Group | Administrator, Editor |
 | `is.instance-group.instance-group.update` | Update an Instance Group | Administrator, Editor |
 | `is.instance-group.instance-group.delete` | Delete an Instance Group | Administrator, Editor |
 | `is.instance-group.instance-group.list` | List Instance Groups | Administrator, Editor, Operator, Viewer |
+| `is.instance-group.instance-group.config.read` | Configuration Information Point API access | Service Configuration Reader |
 {: caption="Table 8. Service actions - Auto Scale for VPC" caption-side="top"}
 {: #actions-table8}
 {: tab-title="Actions"}
