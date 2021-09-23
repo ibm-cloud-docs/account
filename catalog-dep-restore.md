@@ -178,4 +178,5 @@ fmt.Println(response)
 ## Restore a deprecated version by using the API
 {: #restore-version-api}
 {: api}
+
 This action can be done only through the UI or CLI. To see the steps, switch to the UI or CLI instructions.

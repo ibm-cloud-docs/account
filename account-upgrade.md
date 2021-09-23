@@ -86,6 +86,7 @@ To upgrade from a Lite account to a Subscription account, complete the following
 
    If you're not sure how much your typical usage might cost, you can estimate it by using the [cost estimator](https://{DomainName}/estimator/review){: external}.
    {: tip}
+   
 1. Review your subscription details, and then enter your payment information.
 
    After your payment information is processed, your subscription credit is added to your account. You can monitor your subscription usage on this same Subscriptions page. See [Managing subscriptions](/docs/billing-usage?topic=billing-usage-subscriptions) for more information.

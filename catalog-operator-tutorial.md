@@ -78,6 +78,7 @@ Make sure that you use the same account to access {{site.data.keyword.registrylo
 
    Enter the version of your software and not the version of your Operator. For example, you might be using Operator version 1.3.0 to install software version 3.1.1. 
    {: important}
+   
 1. Click **Add product**.
 
 ## Review the version details
