@@ -2,7 +2,7 @@
 
 copyright:
    years: 2021
-lastupdated: "2021-06-17"
+lastupdated: "2021-09-22"
 
 keywords: dashboard, custom dashboard
 
@@ -43,7 +43,7 @@ First, create a new dashboard and select a template.
 1. In the {{site.data.keyword.cloud_notm}} console, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions"), and select **Create a dashboard**. 
 2. Select the Management template from the available options, and then click **Create**. 
 
-  The Management template is optimized to provide a mix of billing, access management, and other administrative widgets that Cora needs.
+   The Management template is optimized to provide a mix of billing, access management, and other administrative widgets that Cora needs.
   
 2. Enter your dashboard title in 30 characters or less. 
 3. Next, use the Dashboard settings panel to add relevant widgets to your dashboard. To add widgets, drag the widgets onto your dashboard. Add the **Notes** widget to your dashboard. This widget is where Cora can provide essential information that's custom for the team that she shares the dashboard with. 

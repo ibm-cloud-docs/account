@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-09-22"
 
 keywords: feature code, subscription code, subscription credit, support credit, promo code
 
@@ -13,7 +13,6 @@ subcollection: account
 {:shortdesc: .shortdesc}
 {:external: target="_blank" .external}
 {:tip: .tip}
-{:note .note}
 {:important: .important}
 {:note: .note}
 
@@ -24,16 +23,16 @@ If you have a Lite account, you can apply feature codes to take advantage of ext
 {: shortdesc}
 
 Are you looking for details about adding subscription credit to your account? See [Managing subscriptions](/docs/billing-usage?topic=billing-usage-subscriptions) for more information.
-{:tip}
+{: tip}
 
 You must have an Editor role or higher on all account management services to apply a feature code. The extra resources or capabilities that are provided vary depending on the particular code but include one or more of the following items in general:
 
-  * Increase the memory quota to a number of GB that is specified by the code
-  * Add one organization with a memory quota that is specified by the code
-  * Add an unlimited number of organizations
-  * Upload an extra number of SSL certificates, as specified by the code
-  * Use premium service plans
-  * Convert a Lite account to a trial account, which provides access to more services but only within a limited trial period
+* Increase the memory quota to a number of GB that is specified by the code
+* Add one organization with a memory quota that is specified by the code
+* Add an unlimited number of organizations
+* Upload an extra number of SSL certificates, as specified by the code
+* Use premium service plans
+* Convert a Lite account to a trial account, which provides access to more services but only within a limited trial period
 
 Complete the following steps to apply a feature code to your account:
 

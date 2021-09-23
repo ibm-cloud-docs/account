@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2019, 2020
+  years: 2019, 2021
 
-lastupdated: "2020-06-10"
+lastupdated: "2021-09-22"
 
 keywords: enterprise access, user access, roles, permissions, IAM, child account, invite users
 
@@ -22,7 +22,7 @@ subcollection: account
 {: #enterprise-access-management}
 
 {{site.data.keyword.cloud}} enterprises are valuable for large companies or organizations that need to group a set of accounts while still maintaining a separation and isolation between the accounts for different departments or teams. The management of users and their access to resources in each account remains entirely separate even when the accounts are added and organized in an enterprise. 
-{:shortdesc}
+{: shortdesc}
 
 See [What is an enterprise?](/docs/account?topic=account-what-is-enterprise) for more information about enterprises.
 

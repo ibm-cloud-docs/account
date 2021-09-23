@@ -2,7 +2,7 @@
 
 copyright:
    years: 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-09-22"
 
 keywords: tagging resources, managing access, access management tags, create access management tags, get started with access management tags, IAM-enabled resources, tag your resource, access group, access group policy
 
@@ -57,7 +57,7 @@ Before you can add an access management tag to your {{site.data.keyword.cos_shor
 3. Enter the name of your tag `project:analysis`, and click **Create tags**. See [Tagging rules](/docs/account?topic=account-tag#limits) for syntax and limitations.
 
 Because tags are visible account-wide, avoid using personal information, such as your name, address, phone number, email address, or other identifying or proprietary information.
-  {: note}
+{: note}
 
 ## Attach your access management tag to a resource
 {: #tagging-resources-add}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-09-22"
 
 keywords: enterprise, create account group, organize accounts, move accounts, account group, change contact, account group contact 
 
@@ -28,7 +28,7 @@ subcollection: account
 {: #enterprise-organize}
 
 Use account groups to organize related accounts in your {{site.data.keyword.Bluemix}} enterprise. You can create a multitiered enterprise hierarchy by nesting account groups within an account group. If you need to, you can reorganize by moving accounts between account groups.
-{:shortdesc}
+{: shortdesc}
 
 For example, the following diagram depicts a four-tier enterprise that you can set up by nesting account groups. First, you create two account groups that have the enterprise as the parent. Then, you can create two additional account groups that have one of those account groups as a parent. You can move accounts freely within the account groups, no matter what tier they're in. However, account groups cannot be moved.
 
@@ -55,8 +55,8 @@ To create an account group, you need the Administrator or Editor role on the Ent
 
 1. If you want the account group to be in a different part of your enterprise hierarchy, select a different parent.
 
-  Account groups can't be deleted or moved from where you create them.
-  {: note}
+   Account groups can't be deleted or moved from where you create them.
+   {: note}
 1. Click **Create**.
 
 To create a new tier in your enterprise hierarchy, create new account groups within the account group. You can move accounts that are already in the enterprise into the account group, or you can import or create accounts within it. See [Adding accounts to an enterprise](/docs/account?topic=account-enterprise-add) for more information about importing and creating accounts.
@@ -72,6 +72,7 @@ ibmcloud enterprise account-group-create NAME
 [--parent-account-group ACCOUNT_GROUP_NAME] [--primary-contact-id USER_ID]
 ```
 {: codeblock}
+
 
 ### Creating account groups by using the API
 {: #create-account-groups-api}
@@ -94,6 +95,7 @@ curl -X POST "https://enterprise.test.cloud.ibm.com/v1/account-groups
 {: codeblock}
 {: curl}
 
+
 ```java
 CreateAccountGroupOptions createAccountGroupOptions = new CreateAccountGroupOptions.Builder()
     .parent(parentCRN)
@@ -108,6 +110,7 @@ System.out.println(createAccountGroupResponse);
 ```
 {: codeblock}
 {: java}
+
 
 ```javascript
 const params = {
@@ -127,6 +130,7 @@ enterpriseManagementService.createAccountGroup(params)
 {: codeblock}
 {: javascript}
 
+
 ```python
 create_account_group_response = enterprise_management_service.create_account_group(
   parent=parent_crn,
@@ -138,6 +142,7 @@ print(json.dumps(create_account_group_response, indent=2))
 ```
 {: codeblock}
 {: python}
+
 
 ```go
 createAccountGroupOptions := enterpriseManagementService.NewCreateAccountGroupOptions(
@@ -155,6 +160,7 @@ fmt.Println(string(b))
 ```
 {: codeblock}
 {: go}
+
 
 For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise){: external}.
 
@@ -222,6 +228,7 @@ curl -X PATCH "https://enterprise.cloud.ibm.com/v1/accounts/$ACCOUNT_ID"
 {: codeblock}
 {: curl}
 
+
 ```java
 UpdateAccountOptions updateAccountOptions = new UpdateAccountOptions.Builder()
     .accountId(accountId)
@@ -232,6 +239,7 @@ Response<Void> response = service.updateAccount(updateAccountOptions).execute();
 ```
 {: codeblock}
 {: java}
+
 
 ```javascript
 const params = {
@@ -250,6 +258,7 @@ enterpriseManagementService.updateAccount(params)
 {: codeblock}
 {: javascript}
 
+
 ```python
 response = enterprise_management_service.update_account(
   account_id=account_id,
@@ -258,6 +267,7 @@ response = enterprise_management_service.update_account(
 ```
 {: codeblock}
 {: python}
+
 
 ```go
 updateAccountOptions := enterpriseManagementService.NewUpdateAccountOptions(
@@ -272,5 +282,6 @@ if err != nil {
 ```
 {: codeblock}
 {: go}
+
 
 For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise){: external}.

@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2021
 
-lastupdated: "2021-06-11"
+lastupdated: "2021-09-22"
 
 keywords: VPN password, update VPN password, classic infrastructure VPN
 
@@ -21,12 +21,12 @@ subcollection: account
 {: #vpnpassword}
 
 You can update your own VPN password, or in the case where a user forgets their password and can't reset it themselves, another user with correct access can update that user's VPN password.
-{:shortdesc}
+{: shortdesc}
 
 If you have the following access, you can update the VPN password for another user:
 
-  * An IAM policy with the Editor or higher role on the User management service.
-  * You are an ancestor in the classic infrastructure hierarchy for the user and you have the Manage users classic infrastructure permission assigned
+* An IAM policy with the Editor or higher role on the User management service.
+* You are an ancestor in the classic infrastructure hierarchy for the user and you have the Manage users classic infrastructure permission assigned
 
 To update the VPN password, complete the following steps:
 

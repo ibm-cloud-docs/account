@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-02-25"
+lastupdated: "2021-09-22"
 
 keywords: troubleshoot account, account problem, inactive account
 subcollection: account
@@ -38,5 +38,5 @@ Your account becomes inactive when it is canceled or suspended.
 Make sure you have selected the correct account in the {{site.data.keyword.Bluemix_notm}} console. You can [switch accounts](/docs/account?topic=account-accountfaqs&locale=dk#switch-between-accounts) if needed.  Check with the account owner to make sure you are invited to the account with the appropriate access.  To reactivate your account, contact {{site.data.keyword.Bluemix_notm}} Support by calling 1 (866) 325-0045 and selecting option 3. Include the following information so the support team can help restore the correct account:
 {: tsResolve}
 
-  * The IBMid that you use to log in to {{site.data.keyword.Bluemix_notm}}.
-  * The name of the organization in which your app is being created. This information can help the support team determine whether you're assigned the correct roles or membership in your organization.
+* The IBMid that you use to log in to {{site.data.keyword.Bluemix_notm}}.
+* The name of the organization in which your app is being created. This information can help the support team determine whether you're assigned the correct roles or membership in your organization.

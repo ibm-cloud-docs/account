@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-07-19"
+lastupdated: "2021-09-22"
 
 keywords: private catalog, account catalogs, software, reload, version
 
@@ -46,8 +46,8 @@ To update an unpublished version of software, you must reload the version from y
 1. Click **Reload version**. 
 1. Configure and validate your software. 
 
-  The configuration and validation steps vary based on the deployment method. 
-  {: note}
+   The configuration and validation steps vary based on the deployment method. 
+   {: note}
 
 ## Reloading a published version
 {: #catalog-reload-published}

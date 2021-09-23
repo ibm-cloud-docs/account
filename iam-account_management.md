@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2021
 
-lastupdated: "2021-08-17"
+lastupdated: "2021-09-22"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, role management service, catalog management service, cloud shell service, software instance service
 
@@ -30,7 +30,7 @@ subcollection: account
 {: #account-services}
 
 As the account owner or the administrator of an account management service, you can grant users access to invite users to the account, track billing and usage, and work with support cases. Users with account management access policies can also manage service IDs, access policies, catalog entries, and access groups.
-{:shortdesc}
+{: shortdesc}
 
 ## Creating policies for account management service access
 {: #account-management-access}
@@ -318,10 +318,10 @@ You can give users access to update account settings, view subscriptions, view o
 
 | Roles         | Actions                                                                                                    |
 |---------------|------------------------------------------------------------------------------------------------------------|
-| Viewer        | View account feature settings <br><br> View subscriptions in account <br><br> View account name <br><br> View subscription balances and track usage           |
-| Operator      | View account feature settings <br><br> View subscriptions in account <br><br> View and change account name |
-| Editor        | View and update account feature settings <br><br> View subscriptions in account <br><br> View offers in account <br><br> View and apply subscription and feature codes <br><br> View and change account name <br><br> View and update spending limits <br><br> Set spending notifications <br><br> View subscription balances and track usage |
-| Administrator | View and update account feature settings <br><br> View subscriptions in account <br><br> View offers in account <br><br> View and apply subscription and feature codes <br><br> View and change account name <br><br> View and update spending limits <br><br> Set spending notifications <br><br> View subscription balances and track usage <br><br> Create an enterprise |
+| Viewer        | View account feature settings \n  \n View subscriptions in account \n  \n View account name \n  \n View subscription balances and track usage           |
+| Operator      | View account feature settings \n  \n View subscriptions in account \n  \n View and change account name |
+| Editor        | View and update account feature settings \n  \n View subscriptions in account \n  \n View offers in account \n  \n View and apply subscription and feature codes \n  \n View and change account name \n  \n View and update spending limits \n  \n Set spending notifications \n  \n View subscription balances and track usage |
+| Administrator | View and update account feature settings \n  \n View subscriptions in account \n  \n View offers in account \n  \n View and apply subscription and feature codes \n  \n View and change account name \n  \n View and update spending limits \n  \n Set spending notifications \n  \n View subscription balances and track usage \n  \n Create an enterprise |
 {: caption="Table 2. Roles and example actions for the Billing service" caption-side="top"}
 
 It's possible to view subscription balances and usage from the Account settings page, but you can't view the Account settings page with the Viewer or Operator roles. To access the Account settings page and your subscription information from that page, you need the Editor role or higher. 
@@ -334,10 +334,10 @@ You can give users access to view private catalogs and catalog filters, create p
 
 | Roles         | Actions                                                                                                |
 |---------------|--------------------------------------------------------------------------------------------------------|
-| Viewer        | View account-level filters set for the {{site.data.keyword.cloud_notm}} catalog <br><br> View private catalogs                                          |
-| Operator      | Create private catalogs <br><br> Set filters for private catalogs <br><br> Add and update software <br><br> View account-level filters    |
-| Editor        | Create private catalogs <br><br> Set filters for private catalogs <br><br> Add and update software <br><br> View account-level filters |
-| Administrator | Set account-level filters for the {{site.data.keyword.cloud_notm}} catalog <br><br> Create, update, and delete private catalogs <br><br> Publish {{site.data.keyword.IBM_notm}}-approved products <br><br> Assign access policies |
+| Viewer        | View account-level filters set for the {{site.data.keyword.cloud_notm}} catalog \n  \n View private catalogs                                          |
+| Operator      | Create private catalogs \n  \n Set filters for private catalogs \n  \n Add and update software \n  \n View account-level filters    |
+| Editor        | Create private catalogs \n  \n Set filters for private catalogs \n  \n Add and update software \n  \n View account-level filters |
+| Administrator | Set account-level filters for the {{site.data.keyword.cloud_notm}} catalog \n  \n Create, update, and delete private catalogs \n  \n Publish {{site.data.keyword.IBM_notm}}-approved products \n  \n Assign access policies |
 | Publisher     | Publish products that are approved by {{site.data.keyword.IBM_notm}} from a private catalog |
 {: caption="Table 3. Roles and example actions for the catalog management service" caption-side="top"}
 
@@ -377,8 +377,8 @@ You can give users access to view, create, edit, and delete access groups in the
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Viewer        | View access groups and members                                                                                                                             |
 | Operator      | Not applicable                                                                                                                                             |
-| Editor        | View, create, edit, and delete groups <br><br> Add or remove users from groups                                                                             |
-| Administrator | View, create, edit, and delete groups <br><br> Add or remove users <br><br> Assign access to a group <br><br> Manage access for working with access groups <br><br> Enable or disable public access to resources at the account level |
+| Editor        | View, create, edit, and delete groups \n  \n Add or remove users from groups                                                                             |
+| Administrator | View, create, edit, and delete groups \n  \n Add or remove users \n  \n Assign access to a group \n  \n Manage access for working with access groups \n  \n Enable or disable public access to resources at the account level |
 {: caption="Table 6. Roles and example actions for the IAM access groups service" caption-side="top"}
 
 ### IAM identity service
@@ -389,9 +389,9 @@ You can give users access to manage service IDs and identity providers (IdPs) by
 | Roles         | Actions                                                                                           |
 |---------------|----------------------------------------------------------------------------------------------------|
 | Viewer        | View IDs              |
-| Operator      | Create and delete IDs and API keys <br><br> View, create, update, and delete IdPs <br><br> Update IAM account setting for service IDs and user API key creation         |
-| Editor        | Create, update, and delete IDs and API keys <br><br> View and update IdPs <br><br> Update IAM account setting for service IDs and user API key creation      |
-| Administrator | Create, update, and delete IDs and API keys <br><br> Assign access policies to IDs <br><br> View, create, update, and delete IdPs <br><br> Update IAM account setting for service IDs and user API key creation |
+| Operator      | Create and delete IDs and API keys \n  \n View, create, update, and delete IdPs \n  \n Update IAM account setting for service IDs and user API key creation         |
+| Editor        | Create, update, and delete IDs and API keys \n  \n View and update IdPs \n  \n Update IAM account setting for service IDs and user API key creation      |
+| Administrator | Create, update, and delete IDs and API keys \n  \n Assign access policies to IDs \n  \n View, create, update, and delete IdPs \n  \n Update IAM account setting for service IDs and user API key creation |
 | User API key creator | Can create API keys when the account setting to restrict API key creation is enabled. |
 | Service ID creator | Can create service IDs when the account setting to restrict service ID creation is enabled. |
 {: caption="Table 7. Roles and example actions for the IAM Identity service" caption-side="top"}
@@ -448,9 +448,9 @@ You can give users access to create, delete, or update a software instance. And,
 | Roles         | Actions                            |
 |---------------|------------------------------------|
 | Viewer        | View the software instance details page |
-| Operator      | Update a software instance <br><br> View the details page for the software instance |
-| Editor        | Create, delete, update a software instance <br><br> View the details page for the software instance |
-| Administrator | Create, delete, update a software instance <br><br> View the details page for the software instance <br><br> View the logs for the software instance <br><br> Assign IAM permissions |
+| Operator      | Update a software instance \n  \n View the details page for the software instance |
+| Editor        | Create, delete, update a software instance \n  \n View the details page for the software instance |
+| Administrator | Create, delete, update a software instance \n  \n View the details page for the software instance \n  \n View the logs for the software instance \n  \n Assign IAM permissions |
 {: caption="Table 11. Roles and example actions for the Software instance service" caption-side="top"}
 
 ### Support center
@@ -460,10 +460,10 @@ You can give users access to manage support cases by using the support center se
 
 | Roles         | Actions                                                                       |
 |---------------|-------------------------------------------------------------------------------|
-| Viewer        |  View cases <br><br> Search cases                                             |
+| Viewer        |  View cases \n  \n Search cases                                             |
 | Operator      |  Not applicable                                                               |
-| Editor        |  View cases <br><br> Search cases <br><br> Update cases <br><br> Create cases |
-| Administrator |  View cases <br><br> Search cases <br><br> Update cases <br><br> Create cases |
+| Editor        |  View cases \n  \n Search cases \n  \n Update cases \n  \n Create cases |
+| Administrator |  View cases \n  \n Search cases \n  \n Update cases \n  \n Create cases |
 {: caption="Table 12. Roles and example actions for the Support Center service" caption-side="top"}
 
 Assign users the viewer role on the user management service in addition to a support center access policy so the user can see all cases in the account regardless of user list visibility settings. If the user list visibility is set to restricted, this can limit a user's ability to view, search, and manage support cases in an account that they didn't open themselves.
@@ -476,10 +476,10 @@ You can give users access to view users in an account, invite and remove users, 
 
 | Roles         | Actions                                                                                                |
 |---------------|--------------------------------------------------------------------------------------------------------|
-| Viewer        | View users in the account <br><br> View user profile settings                                          |
-| Operator      | View users in the account <br><br> View user profile settings                                          |
-| Editor        | View, invite, remove, and update users from the account <br><br> View and update user profile settings |
-| Administrator | View, invite, remove, and update users from the account <br><br> View and update user profile settings |
+| Viewer        | View users in the account \n  \n View user profile settings                                          |
+| Operator      | View users in the account \n  \n View user profile settings                                          |
+| Editor        | View, invite, remove, and update users from the account \n  \n View and update user profile settings |
+| Administrator | View, invite, remove, and update users from the account \n  \n View and update user profile settings |
 {: caption="Table 13. Roles and example actions for the User Management service" caption-side="top"}
 
 The viewer role on the user management service is a role that is commonly assigned for users assigned a role to view or manage support cases. If an account owner restricts the visibility of the user list in the IAM settings, users can't see support cases that are opened by other users in the account. However, if they are assigned the viewer role for the user management service, the user list visibility setting doesn't affect the ability to view cases in the account.

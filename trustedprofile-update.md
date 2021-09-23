@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-09-09"
+lastupdated: "2021-09-22"
 
 keywords: trusted profile, federated users, granting access, update trusted profile, compute resource, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
@@ -30,7 +30,7 @@ subcollection: account
 # Updating trusted profiles
 {: #trusted-profile-update}
 
-You can update the permissions or redefine the trust relationship of the trusted profiles at any time. To update trusted profiles, go to **Manage** > **Access (IAM)** in the console and select **Trusted profiles**. Then, select the name of the trusted profile that you want to update. 
+You can update the permissions or redefine the trust relationship of the trusted profiles at any time. To update trusted profiles, go to **Manage** > **Access (IAM)** in the console and select **Trusted profiles**. Then, select the name of the trusted profile that you want to update.
 {: shortdesc}
 
 To update trusted profiles, you must be assigned the administrator, operator, or editor role within the account.
@@ -42,33 +42,33 @@ To update trusted profiles, you must be assigned the administrator, operator, or
 
 To see the full list of trusted profiles in your account, go to **Manage** > **Access (IAM)** in the {{site.data.keyword.cloud}} console, and select **Trusted profiles**.
 
-### Describe your profile better
+### Updating the description of your profile
 {: #description}
 
 Click the name of the trusted profile that you want to update, and select **Actions** > **Edit**. Enter the new name and description, and click **Apply**.
 
-### Redefine the trust relationship
+### Redefining the trust relationship
 {: #trust}
 
 After the trusted profile is created, you can build trust with both federated users and compute resources in the same trusted profile.
 
 1. Click the name of the trusted profile that you want to update.
 2. Click **Add** to add new condition to the existing trust relationship. To edit an existing condition, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** next to the trust relationship you want to update.
-  * Click **Add new condition** and repeat as needed to add more conditions.
-  * To remove a condition, click the **Close** icon ![Close icon](../icons/close-icon.svg "Close") next to the existing condition.
+   * Click **Add new condition** and repeat as needed to add more conditions.
+   * To remove a condition, click the **Close** icon ![Close icon](../icons/close-icon.svg "Close") next to the existing condition.
 3. Click **Save** to apply all added conditions to your trusted profile.
-  
-### Assign access policies
+
+### Assigning access policies
 {: #access-policies}
 
 1. Click the name of the trusted profile that you want to update.
 2. Click the **Access policies** tab.
-3. To assign new access policies, click **Assign access**. To edit existing access policies, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** next to the access policy you want to update.
-  * You can select your resources based on resource attributes and any combination of roles to assign.
-  * Click **Add** and repeat as needed to add more access.
-  * Click **Assign** to assign all added access to your trusted profile.
+3. To assign new access policies, click **Assign access**. To edit existing access policies, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** next to the access policy you want to update. 
 
-### Update session duration
+   You can select your resources based on resource attributes and any combination of roles to assign.
+
+
+### Updating session duration
 {: #session-duration-tp}
 
 1. Click the name of the trusted profile that you want to update.
@@ -80,10 +80,11 @@ After the trusted profile is created, you can build trust with both federated us
 {: #updating-tp-api}
 {: api}
 
-### Update the name or description
+### Updating the name or description
 {: update-tp-desc-api}
 
-To update the name or description of an existing trusted profile, call the following. Enter your updated `name` and `description` attributes. 
+To update the name or description of an existing trusted profile, call the following. Enter your updated `name` and `description` attributes.
+
    ```bash
    curl -X PUT 'https://iam.test.cloud.ibm.com/v1/profiles/PROFILE_ID' -H 'Authorization: Bearer TOKEN' -H 'If-Match: <value of etag header from GET request>' -H 'Content-Type: application/json' -H 'Accept: application/json' -d '{
      "name": "My Profile updated",
@@ -92,7 +93,7 @@ To update the name or description of an existing trusted profile, call the follo
    ```
    {: codeblock}
 
-### Update the conditions of the trust relationship
+### Updating the conditions of the trust relationship
 {: #trust-api}
 
 After the trusted profile is created, you can build trust with both federated users and compute resources in the same trusted profile.
@@ -118,7 +119,7 @@ After the trusted profile is created, you can build trust with both federated us
    ```
    {: codeblock}
 
-### Assign access policies
+### Assigning access policies
 {: #access-policies-api}
 
 To assign new access policies, call the following:
@@ -166,10 +167,11 @@ To assign new access policies, call the following:
 
 For more information, see the [IAM Policy Management](https://test.cloud.ibm.com/apidocs/iam-policy-management#update-policy) API.
 
-### Update session duration
+### Updating session duration
 {: #session-duration-tp-api}
 
 To update the session duration for federated users, call the following:
+
    ```bash
    curl -X PUT 'https://iam.test.cloud.ibm.com/v1/profiles/PROFILE_ID/rules/CLAIM_RULE_ID' 
    -H 'Authorization: Bearer TOKEN' 

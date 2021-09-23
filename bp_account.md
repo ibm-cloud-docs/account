@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-09-31"
+lastupdated: "2021-09-22"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources 
 
@@ -25,7 +25,7 @@ subcollection: account
 {: #account_setup}
 
 After you set up your {{site.data.keyword.cloud}} account, you're ready to start planning how you want to organize resources and assign access to identities in your account. These best practices provide you with the basic building blocks to enable successful and secure app development in {{site.data.keyword.cloud_notm}}. 
-{:shortdesc}
+{: shortdesc}
 
 The following best practices focus on resources that are enabled for {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) and that are assigned to resource groups. Cloud Foundry and classic infrastructure services aren't IAM-enabled, which means that they can't be assigned to resource groups.  
 {: note}
@@ -63,8 +63,8 @@ For more information, see [Working with tags](/docs/account?topic=account-tag).
 
 After you set up and organize resource groups in your account, you can take advantage of a couple of strategies to streamline the access management process:
 
-  * Access groups: You can minimally manage the number of assigned policies by giving the same access to all identities in an access group instead of assigning the same access multiple times per individual user or service ID. Users must be invited to your account before you can add them to an access group.
-  * Trusted profiles: If your organization has an enterprise directory, trusted profiles can reduce the time and effort to manage access. It also simplifies the login process to your {{site.data.keyword.cloud_notm}} account for users in your enterprise. You can automatically grant federated users or compute resources access to your account by creating trusted profiles. For federated users, add conditions based on SAML attributes to define which federated users can apply a profile. For compute resources, specify specific resources, or add conditions based on resource attributes to define which compute resources can apply a profile. For both entity types, the level of access that is granted is determined by the access policies that are specified within each trusted profile. However, trusted profiles don't require users to be invited to an account, and only users that are federated by an external identity provider (IdP) can apply a trusted profile. 
+* Access groups: You can minimally manage the number of assigned policies by giving the same access to all identities in an access group instead of assigning the same access multiple times per individual user or service ID. Users must be invited to your account before you can add them to an access group.
+* Trusted profiles: If your organization has an enterprise directory, trusted profiles can reduce the time and effort to manage access. It also simplifies the login process to your {{site.data.keyword.cloud_notm}} account for users in your enterprise. You can automatically grant federated users or compute resources access to your account by creating trusted profiles. For federated users, add conditions based on SAML attributes to define which federated users can apply a profile. For compute resources, specify specific resources, or add conditions based on resource attributes to define which compute resources can apply a profile. For both entity types, the level of access that is granted is determined by the access policies that are specified within each trusted profile. However, trusted profiles don't require users to be invited to an account, and only users that are federated by an external identity provider (IdP) can apply a trusted profile. 
   
 When you're a member of multiple access groups, all policies apply at once when you access an account. As a federated user, you might have the option to apply different trusted profiles, but you select just one profile to apply when you log in. For example, if you want to complete developer-related tasks, select the `Developer` profile when logging in. If you want to complete an administrator-related task, you select the`Admin` profile that has privileged permissions. This way, you reduce the risk of taking privileged actions by mistake. 
 {: tip}
@@ -176,9 +176,9 @@ Access groups and trusted profiles can be used separately or hand-in-hand for us
 
 For example, for the `CustApp` project, you might choose to create an `IAM Admin` trusted profile with the following policies:
 
-  * `Administrator` for access groups CustApp-Dev/Test/Prod. This way, the administrator can grant and revoke access to users by adding them to and removing them from access groups. 
-  * `Administrator` for IAM Identity account management service. This way, the administrator can manage service IDs, trusted profiles, rules, and so on. 
-  * `Editor` for User Management account management service. This way, the administrator can invite users to the account, view users in account, and so on.
+   * `Administrator` for access groups CustApp-Dev/Test/Prod. This way, the administrator can grant and revoke access to users by adding them to and removing them from access groups. 
+   * `Administrator` for IAM Identity account management service. This way, the administrator can manage service IDs, trusted profiles, rules, and so on. 
+   * `Editor` for User Management account management service. This way, the administrator can invite users to the account, view users in account, and so on.
 
 With this trusted profile, the administrator can add developers to an access group with broad access policies to complete day-to-day actions and tasks in the development and test environments. Access for operations on the production environment can be set up in a trusted profile named `Operator-Profile`. This way, the developer can change "hats" by logging in and applying the `Operator-Profile` when they need to take any operation actions on the `CustApp` in production.
 

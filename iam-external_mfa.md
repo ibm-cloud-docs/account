@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2021
 
-lastupdated: "2021-06-11"
+lastupdated: "2021-09-22"
 
 keywords: MFA, multifactor authentication, external authentication, order authentication, Symantec, cancel authentication order, classic infrastructure
 
@@ -17,13 +17,14 @@ subcollection: account
 {:screen: .screen}
 {:external: target="_blank" .external}
 {:tip: .tip}
+{:important: .important}
 {:deprecated: .deprecated}
 
 # Ordering external authentication MFA for a user
 {: #external}
 
 As a master user of a legacy classic infrastructure account, you can order external authentication and enable the multifactor authentication (MFA) option for a user's login. You are charged a monthly fee for the external authentication option. 
-{:shortdesc}
+{: shortdesc}
 
 Unlike ID-based MFA, external authentication is account-based and require MFA for the user's login only for the account where the setting is enabled. For more information, see [Types of multifactor authentication](/docs/account?topic=account-types).
 
@@ -39,7 +40,10 @@ You can order external authentication for a user if you are the master user of t
 2. Select a user from the list.
 3. From the **User details** page, select **Order external authentication** in the Manage user's login section.
 4. Select **Symantec identity protection**.
-    * The user must download the [Symantec VIP](https://vip.symantec.com/){: external} app and obtain a credential ID to continue with the ordering process.
+
+   The user must download the [Symantec VIP](https://vip.symantec.com/){: external} app and obtain a credential ID to continue with the ordering process.
+   {: important}
+
 5. Follow the prompts to review the price and terms before you place the order.
 6. Click **Order** to finalize your selection.
 

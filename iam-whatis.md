@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-08-18"
+lastupdated: "2021-09-22"
 
 keywords: what is IAM, IAM features, IAM API, how IAM works
 
@@ -25,7 +25,7 @@ subcollection: account
 {: #iamoverview}
 
 Learn about what IBM Cloud Identity and Access Management (IAM) is, how IAM works, what features are available, and how to access the console, CLI, and APIs to work with IAM in your account.
-{:shortdesc}
+{: shortdesc}
 
 {: #what_is_IAM}
 IAM enables you to securely authenticate users for platform services and control access to resources consistently across {{site.data.keyword.cloud_notm}}. A set of {{site.data.keyword.cloud_notm}} services is enabled to use {{site.data.keyword.cloud_notm}} IAM for access control, and are organized into [resource groups](/docs/account?topic=account-rgs) within your account so you can give users access quickly to more than one resource at a time. Each of these services is labeled as "IAM-enabled" in the catalog. You can use IAM access policies to assign users and service IDs access to resources within your account. And, you can group users and service IDs into an [access group](/docs/account?topic=account-groups) to easily give all members of the group the same level of access.
@@ -127,18 +127,14 @@ There are two common types of IAM systems in cloud providers and understanding e
 
 {{site.data.keyword.cloud_notm}} IAM uses an ABAC model by using identity and resource attributes. {{site.data.keyword.cloud_notm}} IAM uses access policies to store the attribute information that is needed by the IAM access decision engine. And, the access policies tell the IAM decision engine, which attributes the author of the policy requires to grant access to a resource. 
 
-Supported attributes for identities are:
-  * iam_id 
-  * access group ID
-
-Supported attributes for resources belong to one of the following categories:
-  * Fields defined in the resource [CRN](/docs/account?topic=account-crn), for example the service name.
-  * System-wide defined resource attributes, such as resource groups.
-  * Service-specific resource attributes such as namespaces or buckets.
+The supported attributes for identities are iam_id and access group ID. The supported attributes for resources belong to one of the following categories:
+* Fields defined in the resource [CRN](/docs/account?topic=account-crn), for example the service name.
+* System-wide defined resource attributes, such as resource groups.
+* Service-specific resource attributes such as namespaces or buckets.
 
 Each service defines the supported attributes for resources it manages. For more information, see the documentation for the service you're using.
 {: note}
- 
+
 A best practice in {{site.data.keyword.cloud_notm}} IAM is to use access groups to manage access for identities. After the access group access policies are defined, granting, and revoking access is simply a matter of adding and removing identities to or from access groups. A user or service ID can belong to as many access groups as the administrator wants, and the members of the group inherit all access that is assigned to the access group. This approach provides the fine-grained access benefits of ABAC with the simplicity of RBAC.
 
 IAM administrators familiar with RBAC might use access groups to mimic an RBAC model. Conceptually an access group is similar to an RBAC role. If you're more familiar with using traditional RBAC roles like system administrator, network administrator, or storage administrator, these can be defined in {{site.data.keyword.cloud_notm}} IAM by using access groups with specific access policies that are assigned to each. For more information about using access groups and the best practices for assigning access, see [Best practices for organizing resources and assigning access](/docs/account?topic=account-account_setup). 
@@ -185,9 +181,9 @@ Your users might already have identities outside of {{site.data.keyword.cloud_no
 
 By using trusted profiles, you can define fine-grained authorization for all applications that are running in a compute resource without creating service IDs or managing the API key lifecycle for applications. The trusted profiles provide better control for granting access to compute resources.
 
-*  Application developers can programmatically retrieve a token that is associated with the compute resource identity that they are running on. That token is used to get the trusted profile identity token, which is used to access services and resources on {{site.data.keyword.cloud_notm}}.
-*  Applications running on a compute resource can have a flexible, but secure way to access other {{site.data.keyword.cloud_notm}} services from within compute resources. For example, it's more secure not having to store API keys.
-*  All compute resource instances that share certain conditions such as name, namespace, tags, or region, their identities are mapped to a common profile and can share access to {{site.data.keyword.cloud_notm}} resources. This common identity makes it possible to give the applications within various compute resources access to an external resource one time rather than cluster-by-cluster.
+* Application developers can programmatically retrieve a token that is associated with the compute resource identity that they are running on. That token is used to get the trusted profile identity token, which is used to access services and resources on {{site.data.keyword.cloud_notm}}.
+* Applications running on a compute resource can have a flexible, but secure way to access other {{site.data.keyword.cloud_notm}} services from within compute resources. For example, it's more secure not having to store API keys.
+* All compute resource instances that share certain conditions such as name, namespace, tags, or region, their identities are mapped to a common profile and can share access to {{site.data.keyword.cloud_notm}} resources. This common identity makes it possible to give the applications within various compute resources access to an external resource one time rather than cluster-by-cluster.
 
 You can monitor which federated users and compute resources apply a trusted profile by looking at {{site.data.keyword.at_short}}. The fields `Initiator.authnId` and `Initiator.authnName` hold the details for the authenticated user that applies a profile, while `Initiator.id` and `Initiatior.name` hold the details of the profile that is applied. For compute resources the `authn` fields hold the CRN that uniquely identifies the resource that applies a profile. For more information, see [Required AT field events](https://test.cloud.ibm.com/docs/observability?topic=observability-at_req_fields#initiator.authnId).
 {: note}
@@ -219,7 +215,7 @@ You can access and use {{site.data.keyword.cloud_notm}} IAM through the Access (
 
 * To access {{site.data.keyword.cloud_notm}} IAM by using the console, go to **Manage** > **Access (IAM)**.
 * Go to [Managing IAM access, API keys, service IDs, and access groups](/docs/cli?topic=cli-ibmcloud_commands_iam) to review the available CLI commands.
-* Go to the following API docs to review the available APIs:
+* Review the available APIs:
     * [IAM Identity Services API](https://{DomainName}/apidocs/iam-identity-token-api){: external} 
     * [IAM Access Groups API](https://{DomainName}/apidocs/iam-access-groups){: external} 
     * [IAM Policy Management API](https://{DomainName}/apidocs/iam-policy-management){: external} 

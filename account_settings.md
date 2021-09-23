@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-09-22"
 
 keywords: account settings, edit account name, view account type
 
@@ -24,7 +24,7 @@ subcollection: account
 {: support}
 
 As an {{site.data.keyword.cloud}} account owner, you can change the account name and view your account type. If you have an access policy with the Operator role or higher on all account management services, you can view and update the account name.  
-{:shortdesc}
+{: shortdesc}
 
 ## Editing the account name
 {: #change-acct-name}

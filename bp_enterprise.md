@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2020
-lastupdated: "2020-06-10"
+  years: 2019, 2021
+lastupdated: "2021-09-22"
 
 keywords: enterprise, enterprise resources, enterprise account, best practices, setting up an enterprise
 
@@ -22,7 +22,7 @@ subcollection: account
 {: #enterprise-best-practices}
 
 These best practices provide you with the basic building blocks for setting up an {{site.data.keyword.cloud}} enterprise.
-{:shortdesc}
+{: shortdesc}
 
 ## Organizing accounts according to how you want to track billing
 {: #organize-enterprise-usage}
@@ -32,7 +32,7 @@ A key benefit of {{site.data.keyword.cloud_notm}} enterprises is that they enabl
 The enterprise administrator or your financial officer might not be familiar with each individual account or account group. To make it easier to identify their purpose, give each account and account group a human-readable name. If your company uses billing codes, you can also incorporate them into the name. For example, instead of a `devteam` account group with `fed ui` and `be api` accounts, create the `Development - A2B3` account group with `Front-end UI team` and `Back-end API team` accounts.
 
 An enterprise user with Administrator or Editor access can edit the enterprise and account group names, but they can't change account names. To edit an account name, a user must be in the account itself.
-{:tip}
+{: tip}
 
 Because you have a unified view of all usage that's organized by your account groups and accounts, you can charge back usage costs to the associated teams. For more information, see [Recovering costs for enterprise usage](/docs/billing-usage?topic=billing-usage-enterprise-usage#enterprise-cost-recovery).
 
@@ -62,8 +62,9 @@ Access groups are a useful tool for assigning access to a group of users and ser
 {: #child-resources-enterprise}
 
 Create resources only in child accounts that you import or create within the enterprise. Although it's possible to create resources within the enterprise account, it's not a best practice for the following reasons:
- - The enterprise account is always a direct child of the enterprise and can't be moved, so you won't have the flexibility to change how usage is reported for the resources.
- - The enterprise account contains the users and access for managing the enterprise and its billing, so only users with those responsibilities should be added to the account.
+
+- The enterprise account is always a direct child of the enterprise and can't be moved, so you won't have the flexibility to change how usage is reported for the resources.
+- The enterprise account contains the users and access for managing the enterprise and its billing, so only users with those responsibilities should be added to the account.
 
 Users within each account in the enterprise can create, use, and collaborate on resources just as you can in a stand-alone account. For details, see [Managing resources](/docs/account?topic=account-manage_resource). Enterprise users can't directly work with resources within child accounts, but they can monitor the resource types and plans that are used in each account by viewing their usage. For more information, see [Viewing usage in an enterprise](/docs/billing-usage?topic=billing-usage-enterprise-usage).
 

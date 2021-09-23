@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-07-29"
+lastupdated: "2021-09-22"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite
 
@@ -59,11 +59,11 @@ If you have a Pay-As-You-Go account type that is billed in US Dollars, complete 
 
 To switch to a different payment method, select Pay with Other and then click Submit change request. A support case to change your payment method is created for you.
 
- Based on your account type, you might manage your credit card outside of the console. To manage your credit card outside of the console, complete the following steps: 
-  1. Go to [ibm.com](http://www.ibm.com){: external} and log in with the same IBMid and password that you use to log in to {{site.data.keyword.Bluemix_notm}}.
-  1. Click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar"), and select **Billing**.
-  1. Click **Manage payment method**.
-  1. Enter your credit card information, and click **Register**.
+Based on your account type, you might manage your credit card outside of the console. To manage your credit card outside of the console, complete the following steps: 
+   1. Go to [ibm.com](http://www.ibm.com){: external} and log in with the same IBMid and password that you use to log in to {{site.data.keyword.Bluemix_notm}}.
+   1. Click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar"), and select **Billing**.
+   1. Click **Manage payment method**.
+   1. Enter your credit card information, and click **Register**.
 
 If your credit card requires a MasterCard SecureCode that is sent to a mobile phone, you might see an unexpected error message after you submit the code. Refresh the manage my wallet page to verify that your new credit card information is saved. 
 {: note}
@@ -94,8 +94,8 @@ Yes, the following options are available depending on your account type:
 * To convert your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://{DomainName}/catalog?contactmodule){: external}. 
 * You can convert your trial account to a Lite account by providing the email address that's associated with your IBMid in the [Upgrade Tool](https://{DomainName}/registration/startUpgradeToLite){: external}. If your trial account is expired, [open a support case](https://{DomainName}/unifiedsupport/cases/form) and request to have it reactivated for one week. During that week, you can convert it to a Lite account.
 
-  The risk of data or function loss is possible when you convert your trial account to a Lite account. Some specific data or function allocations in your trial account might not be available for a Lite account. Any loss of data or function can't be recovered after the conversion process is complete. You can't convert your trial account to a Lite account if you have multiple organizations in your account. You must register for a new account using a different email address.
-  {: note} 
+   The risk of data or function loss is possible when you convert your trial account to a Lite account. Some specific data or function allocations in your trial account might not be available for a Lite account. Any loss of data or function can't be recovered after the conversion process is complete. You can't convert your trial account to a Lite account if you have multiple organizations in your account. You must register for a new account using a different email address.
+   {: note} 
 
 ## Can I convert my Pay-As-You-Go account to a Lite or trial account?
 {: #convertpayg-litetrial}

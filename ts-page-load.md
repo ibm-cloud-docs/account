@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-02-25"
+lastupdated: "2021-09-22"
 
 keywords: troubleshoot account, page load, page error, console page error
 
@@ -44,11 +44,10 @@ An issue with the browser is causing a console page to not load. Or, there might
 Complete one or more of the following actions, as necessary:
 {: tsResolve}
 
-  * Refresh or restart your browser.
-  * Log out of the console and log in again.
-  * Use the private browsing mode of your browser.
-  * Clear the cookies and the cache of the browser.
-  * Use a different browser. For more information about browsers that are supported by {{site.data.keyword.Bluemix_notm}}, see [{{site.data.keyword.Bluemix_notm}} prerequisites](/docs/overview?topic=overview-prereqs-platform).
-  * If you installed the Cloud Foundry CLI, enter the `ibmcloud cf apps` command to see whether your app is running.
-  * Try again later.
-  * If the problem persists, go to the [{{site.data.keyword.Bluemix_notm}} Status page](https://cloud.ibm.com/status){: external} to check whether a service or component has an issue.
+* Refresh or restart your browser.
+* Log out of the console and log in again.
+* Use the private browsing mode of your browser.
+* Clear the cookies and the cache of the browser.
+* Use a different browser. For the list of supported browsers, see [{{site.data.keyword.Bluemix_notm}} prerequisites](/docs/overview?topic=overview-prereqs-platform).
+* If you installed the Cloud Foundry CLI, enter the `ibmcloud cf apps` command to confirm that your app is running.
+* If the problem persists, go to the [{{site.data.keyword.Bluemix_notm}} Status page](https://cloud.ibm.com/status){: external} to check if a service or component has an issue.
