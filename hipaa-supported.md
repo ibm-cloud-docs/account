@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-08-04"
+lastupdated: "2021-09-22"
 
 keywords: HIPAA, PHI, HITECH
 
@@ -22,7 +22,7 @@ subcollection: account
 {: #enabling-hipaa}
 
 If you're the account owner, you can enable your {{site.data.keyword.cloud}} account to be HIPAA supported. HIPAA support can be useful if you plan to include Protected Health Information (PHI) in HIPAA-enabled services.
-{:shortdesc}
+{: shortdesc}
 
 The US Health Insurance Portability and Accountability Act (HIPAA) and the Health Information Technology for Economic and Clinical Health (HITECH) Act define standards for handling electronic healthcare transactions and information. If you or your company is a covered entity as defined by HIPAA, you must enable the HIPAA Supported setting if you run sensitive workloads that are regulated under HIPAA and the HITECH Act. Learn more about {{site.data.keyword.Bluemix_notm}} compliance in [Compliance on the {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/cloud/compliance){: external}.
 
@@ -41,8 +41,8 @@ Accounts that enable the HIPAA Supported setting still have access to the full c
 2. For the HIPAA Supported option, click **On**.
 3. Read the information about enabling this setting.
 
-  You can't disable the setting after you enable it.
-  {: important}
+   You can't disable the setting after you enable it.
+   {: important}
 
 4. Select **Accept**, and click **Submit**.
 

@@ -4,9 +4,9 @@
 
 copyright:
 
-  years: 2015，2019
+  years: 2015，2021
 
-lastupdated: "2019-09-12"
+lastupdated: "2021-09-22"
 
 keywords: dedicated ID, public IBMid, IBMid, public IAM service
 
@@ -23,8 +23,8 @@ subcollection: account
 # Connecting a dedicated ID to your public IBMid
 {: #connect_dedicated_id}
 
-To log in to a dedicated cloud where public IAM service is available, you must log in to the {{site.data.keyword.Bluemix_notm}} CLI with your public IBMid instead of the dedicated ID.
-{:shortdesc}
+To log in to a dedicated cloud where a public IAM service is available, you must log in to the {{site.data.keyword.Bluemix_notm}} CLI with your public IBMid instead of the dedicated ID.
+{: shortdesc}
 
 ```
   $ ibmcloud login -a https://api.{dedicated_env}.cloud.ibm.com

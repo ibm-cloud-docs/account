@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2021
 
-lastupdated: "2021-06-11"
+lastupdated: "2021-09-22"
 
 keywords: security questions, MFA, multifactor authentication, login security
 
@@ -21,8 +21,10 @@ subcollection: account
 # Enabling MFA security questions for a user
 {: #questions}
 
-As an administrator with the correct access, you can enable the option for a user to be prompted for security questions and answers at login. This type of multifactor authentication (MFA) is required only for the account where the setting is enabled. This type of multifactor authentication (MFA) is required only for the account where the setting is enabled unlike ID-based MFA. For more information, see [Types of multifactor authentication](/docs/account?topic=account-types).
-{:shortdesc}
+As an administrator with the correct access, you can enable the option for a user to be prompted for security questions and answers at login. This type of multifactor authentication (MFA) is required only for the account where the setting is enabled. 
+{: shortdesc}
+
+For more information about your MFA options, see [Types of multifactor authentication](/docs/account?topic=account-types).
 
 ## Before you begin
 {: #security-question-access}

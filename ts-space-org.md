@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-02-25"
+lastupdated: "2021-09-22"
 
 keywords: troubleshoot account, account problem, spaces in an org, create app
 subcollection: account
@@ -38,8 +38,7 @@ Apps must be created in a space under your organization.
 To create a space, use one of the following methods:
 {: tsResolve}
 
-  * From the console menu bar, click **Manage > Account**. Expand **Account resources** and click **Cloud Foundry orgs**.
-  Then, select the organization in which you want to create the space, and click **Add a space**.
-  * In the {{site.data.keyword.Bluemix_notm}} command-line interface, enter `ibmcloud account space-create <space_name> -o <organization_name>`.
+* From the console menu bar, click **Manage > Account**. Expand **Account resources** and click **Cloud Foundry orgs**. Then, select the organization in which you want to create the space, and click **Add a space**.
+* From the {{site.data.keyword.Bluemix_notm}} CLI, enter `ibmcloud account space-create <space_name> -o <organization_name>`.
   
   

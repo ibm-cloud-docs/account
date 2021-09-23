@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-09-22"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -22,7 +22,7 @@ subcollection: account
 {: #upgrading-account}
 
 Lite accounts make it easy to get started with {{site.data.keyword.Bluemix}} and try out services. When you are ready for more, you can upgrade your account to a Pay-As-You-Go or Subscription account to unlock the entire catalog of production-ready services.
-{:shortdesc}
+{: shortdesc}
 
 You can check your current account type by going to **Manage** > **Account** > **Account settings** in the {{site.data.keyword.Bluemix_notm}} console and looking in the Account Type section.
 
@@ -47,7 +47,8 @@ After your payment information is processed, your account is upgraded and you ca
 If you're upgrading to reactivate a deactivated account, your account might take a few days to be fully available. If your account continues to be in a pending state, see [Why can't I upgrade my account?](/docs/account?topic=account-ts_upgrade_cc) for help.
 
 ### Promotional credit for upgrading your account 
-If your upgrade included a promotional credit, the credit might take a few hours to appear in your account. Any unused upgrade credit expires after the 30 day period ends. You are invoiced for any usage that exceeds the promotional credit. You can view the promotional credit on the [Promotions](https://{DomainName}/billing/promotions){:external} page or the [Invoices](https://{DomainName}/billing/invoices) page in the console. The following table lists the current upgrade promotional amounts for different currencies:
+
+If your upgrade included a promotional credit, the credit might take a few hours to appear in your account. Any unused upgrade credit expires after the 30 day period ends. You are invoiced for any usage that exceeds the promotional credit. You can view the promotional credit on the [Promotions](https://{DomainName}/billing/promotions){: external} page or the [Invoices](https://{DomainName}/billing/invoices){: external} page in the console. The following table lists the current upgrade promotional amounts for different currencies:
 
 
 | Country       | Currency   | Converted Promo Amount |
@@ -69,7 +70,7 @@ If your upgrade included a promotional credit, the credit might take a few hours
 | New Zealand   | NZD        | 302.40                 |
 | Sweden        | SEK        | 1,781.34               |
 | South Africa  | ZAR        | 3,563.88               |
-{:caption="Table 1. Promo price for different currencies" caption-side="top"}
+{: caption="Table 1. Promo price for different currencies" caption-side="top"}
 
 
 ## Upgrading to a Subscription account
@@ -83,8 +84,8 @@ To upgrade from a Lite account to a Subscription account, complete the following
 1. In the console, go to **Manage** > **Account**, and select **Account settings**. Then, click **Upgrade**, which takes you to the Subscriptions page.
 1. Select your monthly spending commitment and subscription term, and click **Get started**.
 
-   If you're not sure how much your typical usage might cost, you can estimate it by using the [cost estimator](https://{DomainName}/estimator/review){:external}.
-   {:tip}
+   If you're not sure how much your typical usage might cost, you can estimate it by using the [cost estimator](https://{DomainName}/estimator/review){: external}.
+   {: tip}
 1. Review your subscription details, and then enter your payment information.
 
    After your payment information is processed, your subscription credit is added to your account. You can monitor your subscription usage on this same Subscriptions page. See [Managing subscriptions](/docs/billing-usage?topic=billing-usage-subscriptions) for more information.

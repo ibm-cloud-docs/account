@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-05-27"
+lastupdated: "2021-09-22"
 
 keywords: auditing IAM policies, last permit information, restore policies
 
@@ -27,7 +27,7 @@ subcollection: account
 {: #iam-audit-policies}
 
 To reduce the number of policies in the account and keep only the minimum access that is required for each user, you can identify the infrequently used access policies and remove them.
-{:shortdesc}
+{: shortdesc}
 
 IAM captures authorization information for each policy. This information includes the last time the policy was used to grant a permit and a running count of its use. Every access policy in {{site.data.keyword.cloud}} is soft deleted and kept in the system for up to 10 days. During this time period, you can list and restore them at any time.
 

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-09-22"
 
 keywords: API key, user API keys, IBM Cloud API keys, manage user keys, create API key
 
@@ -291,21 +291,22 @@ To lock an API key, use the following command:
 ibmcloud iam api-key-lock (NAME|UUID) [-f, --force]
 ```
 
-<strong>Prerequisites</strong>:  Endpoint, Login
+**Prerequisites**:  Endpoint, Login
 
-<strong>Command options</strong>:
-<dl>
-<dt>NAME (required)</dt>
-<dd>Name of the API key to be locked, exclusive with UUID.</dd>
-<dt>UUID (required)</dt>
-<dd>UUID of the API key to be locked, exclusive with NAME.</dd>
-<dt>-f, --force</dt>
-<dd>Forces lock without confirmation.</dd>
-</dl>
+**Command options**:
 
-<strong>Example</strong>:
+NAME
+:   The name of the API key to be locked, exclusive with the UUID option.
 
-Lock API key `test-api-key`
+UUID
+:   The UUID of the API key to be locked, exclusive with the NAME option.
+
+-f, --force
+:   Force lock without confirmation.
+
+**Examples**:
+
+Lock the API key named `test-api-key`:
 
 ```
 ibmcloud iam api-key-lock test-api-key
@@ -317,21 +318,22 @@ To unlock an API key, run the following command:
 ibmcloud iam api-key-unlock (NAME|UUID) [-f, --force]
 ```
 
-<strong>Prerequisites</strong>:  Endpoint, Login
+**Prerequisites**:  Endpoint, Login
 
-<strong>Command options</strong>:
-<dl>
-<dt>NAME (required)</dt>
-<dd>Name of the API key to be unlocked, exclusive with UUID.</dd>
-<dt>UUID (required)</dt>
-<dd>UUID of the API key to be unlocked, exclusive with NAME.</dd>
-<dt>-f, --force</dt>
-<dd>Forces unlock without confirmation.</dd>
-</dl>
+**Command options**:
 
-<strong>Example</strong>:
+NAME
+:   The name of the API key to be unlocked, exclusive with the UUID option.
 
-Unlock API key `test-api-key`
+UUID
+:   The UUID of the API key to be unlocked, exclusive with the NAME option.
+
+-f, --force
+:   Force unlock without confirmation. 
+
+**Example**:
+
+Unlock the API key named `test-api-key`:
 
 ```
 ibmcloud iam api-key-unlock test-api-key
@@ -472,7 +474,7 @@ To delete an API key, complete the following steps:
 
 1. In the console, go to **Manage** > **Access (IAM)** > **API keys**.
 2. Identify the row of the API key that you want to delete, and select **Delete** from the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu.
-3. Then, confirm the deletion by clicking **Delete**.
+3. Confirm the deletion by clicking **Delete**.
 
 To delete an API key that is not your own, but you have access to manage, go to the API keys page. Then, select the **All user {{site.data.keyword.cloud_notm}} API keys** option from the **View** menu to find the API key.
 {: tip}

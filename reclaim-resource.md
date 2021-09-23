@@ -5,7 +5,7 @@
 copyright:
 
   years: 2020, 2021
-lastupdated: "2021-06-10"
+lastupdated: "2021-09-22"
 
 keywords: account resources, reclaim resource, restore resource
 
@@ -45,7 +45,8 @@ ibmcloud resource reclamations [--resource-instance-id INSTANCE_ID]
 {: codeblock}
 
 Enter the following command option:
-  * **--resource-instance-id**: The globally unique ID (GUID) of the resource instance.
+
+**--resource-instance-id**: The globally unique ID (GUID) of the resource instance.
 
 The following example shows how to list the reclamations of a particular service instance:
 
@@ -143,9 +144,10 @@ ibmcloud resource reclamation-delete ID [--comment COMMENT] [--f, --force]
 {: codeblock}
 
 Enter the following command options:
-  * **ID**: The ID of the resource reclamation. This is the reclamation ID and not the resource instance ID. (Required).
-  * **--comment**: Comments about the action.
-  * **-f, --force**: Force deletion without confirmation.
+
+* **ID**: The ID of the resource reclamation. This is the reclamation ID and not the resource instance ID. (Required)
+* **--comment**: Comments about the action.
+* **-f, --force**: Force deletion without confirmation.
 
 The following example shows how to delete a resource reclamation with ID `d9fendfwlw`:
 
@@ -250,8 +252,9 @@ ibmcloud resource reclamation-restore ID [--comment COMMENT]
 {: codeblock}
 
 Enter the following command options:
-  * **ID**: The ID of the resource reclamation. This is the reclamation ID and not the resource instance ID.  (Required) 
-  * **--comment**: Comments about the action.  
+
+* **ID**: The ID of the resource reclamation. This is the reclamation ID and not the resource instance ID. (Required)
+* **--comment**: Comments about the action.  
 
 The following example shows how to restore a resource with the `d9fendfwlw` ID:
 

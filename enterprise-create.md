@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-08-23"
+lastupdated: "2021-09-22"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, multiple account, video
 
@@ -130,6 +130,7 @@ curl -X POST "https://enterprise.cloud.ibm.com/v1/enterprises
 {: pre}
 {: curl}
 
+
 ```java
 CreateEnterpriseOptions createEnterpriseOptions = new CreateEnterpriseOptions.Builder()
     .sourceAccountId(srcAccountId)
@@ -144,6 +145,7 @@ System.out.println(createEnterpriseResponse);
 ```
 {: codeblock}
 {: java}
+
 
 ```javascript
 const params = {
@@ -163,6 +165,7 @@ enterpriseManagementService.createEnterprise(params)
 {: codeblock}
 {: javascript}
 
+
 ```python
 create_enterprise_response = enterprise_management_service.create_enterprise(
   source_account_id=src_account_id,
@@ -174,6 +177,7 @@ print(json.dumps(create_enterprise_response, indent=2))
 ```
 {: codeblock}
 {: python}
+
 
 ```go
 createEnterpriseOptions := enterpriseManagementService.NewCreateEnterpriseOptions(
@@ -191,6 +195,7 @@ fmt.Println(string(b))
 ```
 {: codeblock}
 {: go}
+
 
 ## Creating an enterprise by using Terraform
 {: #create-terraform}

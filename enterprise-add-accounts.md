@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-08-23"
+lastupdated: "2021-09-22"
 
 keywords: enterprise, add account, import account, create account
 
@@ -99,12 +99,13 @@ To import an existing account to the enterprise, call the [Enterprise Management
 
 ```bash
 curl -X PUT "https://enterprise.cloud.ibm.com/v1/enterprises/$ENTERPRISE_ID/import/accounts/$ACCOUNT_ID" -H "Authorization: Bearer <IAM_Token>" -H 'Content-Type: application/json' -d '{
-  "parent": "crn:v1:bluemix:public:enterprise::a/$ENTERPRISE_ACCOUNT_ID::enterprise:$ENTERPRISE_ID",
-  "billing_unit_id": "$BILLING_UNIT_ID"
+   "parent": "crn:v1:bluemix:public:enterprise::a/$ENTERPRISE_ACCOUNT_ID::enterprise:$ENTERPRISE_ID",
+   "billing_unit_id": "$BILLING_UNIT_ID"
 }'
 ```
 {: codeblock}
 {: curl}
+
 
 ```java
 ImportAccountToEnterpriseOptions importAccountToEnterpriseOptions = new ImportAccountToEnterpriseOptions.Builder()
@@ -117,27 +118,29 @@ Response<Void> response = service.importAccountToEnterprise(importAccountToEnter
 {: codeblock}
 {: java}
 
+
 ```javascript
 const params = {
-  enterpriseId: enterpriseId,
-  accountId: importAccountId,
+   enterpriseId: enterpriseId,
+   accountId: importAccountId,
 };
 
 enterpriseManagementService.importAccountToEnterprise(params)
-  .then(res => {
+   .then(res => {
     done();
-  })
-  .catch(err => {
+   })
+   .catch(err => {
     console.warn(err)
-  });
+   });
 ```
 {: codeblock}
 {: javascript}
 
+
 ```python
 response = enterprise_management_service.import_account_to_enterprise(
-  enterprise_id=enterprise_id,
-  account_id=import_account_id,
+   enterprise_id=enterprise_id,
+   account_id=import_account_id,
 )
 
 print(json.dumps(response, indent=2))
@@ -145,19 +148,21 @@ print(json.dumps(response, indent=2))
 {: codeblock}
 {: python}
 
+
 ```go
 importAccountToEnterpriseOptions := enterpriseManagementService.NewImportAccountToEnterpriseOptions(
-  enterpriseID,
-  importAccountID,
+   enterpriseID,
+   importAccountID,
 )
 
 response, err := enterpriseManagementService.ImportAccountToEnterprise(importAccountToEnterpriseOptions)
 if err != nil {
-  panic(err)
+   panic(err)
 }
 ```
 {: codeblock}
 {: go}
+
 
 ### Importing accounts by using Terraform
 {: #add-account-terraform}

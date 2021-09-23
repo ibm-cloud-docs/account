@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2021
 
-lastupdated: "2021-05-06"
+lastupdated: "2021-09-22"
 
 keywords: IBM Cloud service APIs, IAM token, API key, authenticate with service API
 
@@ -27,7 +27,7 @@ subcollection: account
 {: #iamapikeysforservices}
 
 To invoke an {{site.data.keyword.Bluemix}} service through an API, pass your credentials to the service's API to authenticate your user identity and your access to perform actions within the context of the service.
-{:shortdesc}
+{: shortdesc}
 
 You can identify the caller in one of the following ways:
 
@@ -49,16 +49,16 @@ To retrieve an IAM access token, the API client must first invoke an {{site.data
 
 To authenticate with a service's API by using an access token, complete the following steps:
 
-  1. First, [create an {{site.data.keyword.Bluemix_notm}} API key](/docs/account?topic=account-userapikey#manage-user-keys) if you have not already.
-  2. The next step for the API client is the retrieval of an IAM access token, as described in [Getting an IAM token from an API key](/docs/account?topic=account-iamtoken_from_apikey).
-  3. From the response, extract the property `access_token` to get the IAM access token. `expires_in` indicates the seconds until the IAM access token `access_token` expires. Either use this relative value or the absolute time stamp `expiration` based in [UNIX time](https://en.wikipedia.org/wiki/Unix_time){: external}.
-  4. Send the IAM access token as described in [RFC 6750, section 2.1. Authorization Request Header Field](https://tools.ietf.org/html/rfc6750#page-5){: external}:
+1. First, [create an {{site.data.keyword.Bluemix_notm}} API key](/docs/account?topic=account-userapikey#manage-user-keys) if you have not already.
+2. The next step for the API client is the retrieval of an IAM access token, as described in [Getting an IAM token from an API key](/docs/account?topic=account-iamtoken_from_apikey).
+3. From the response, extract the property `access_token` to get the IAM access token. `expires_in` indicates the seconds until the IAM access token `access_token` expires. Either use this relative value or the absolute time stamp `expiration` based in [UNIX time](https://en.wikipedia.org/wiki/Unix_time){: external}.
+4. Send the IAM access token as described in [RFC 6750, section 2.1. Authorization Request Header Field](https://tools.ietf.org/html/rfc6750#page-5){: external}:
 
 Review the following example:
 
-  1.	Use the HTTP header Authorization
-  2.	Prefix the IAM access token with the literal `Bearer: Bearer eyJhbGciOiJSUzI1Ng...`
-  3.	Add the prefixed IAM access token to the HTTP header: `Authorization: Bearer eyJhbGciOiJSUzI1Ng...`. 
+1. Use the HTTP header Authorization.
+2. Prefix the IAM access token with the literal `Bearer: Bearer eyJhbGciOiJSUzI1Ng...`.
+3. Add the prefixed IAM access token to the HTTP header: `Authorization: Bearer eyJhbGciOiJSUzI1Ng...`. 
 
 ```bash
 curl -H "Authorization: Bearer eyJhbGciOiJSUzI1Ng..."
@@ -180,14 +180,14 @@ Using an {{site.data.keyword.Bluemix_notm}} API key is convenient, and it makes 
 
 To authenticate with a service's API by using an API key, complete the following steps:
 
-  1. First, [create an {{site.data.keyword.Bluemix_notm}} API key](/docs/account?topic=account-userapikey#manage-user-keys) if you have not already.
-  2. Send the {{site.data.keyword.Bluemix_notm}} API key as defined in [RFC 7617](https://tools.ietf.org/html/rfc7617){: external} as HTTP header “Authorization”. Use `apikey` as the user name, and the API key value as the password.
+1. First, [create an {{site.data.keyword.Bluemix_notm}} API key](/docs/account?topic=account-userapikey#manage-user-keys) if you have not already.
+2. Send the {{site.data.keyword.Bluemix_notm}} API key as defined in [RFC 7617](https://tools.ietf.org/html/rfc7617){: external} as HTTP header “Authorization”. Use `apikey` as the user name, and the API key value as the password.
 
 As an example, the following steps assume that the API key is 0a1A2b3B4c5C6d7D8e9E:
 
-  1.	Concatenate the user name `apikey` and the API key that is separated by a colon: `apikey:0a1A2b3B4c5C6d7D8e9E`
-  2.	Base64 encode the string: `base64("apikey:0a1A2b3B4c5C6d7D8e9E") => YXBpa2V5OjBhMUEyYjNCNGM1QzZkN0Q4ZTlF`
-  3.	Set the HTTP header Authorization with schema Basic, for example `Authorization: Basic YXBpa2V5OjBhMUEyYjNCNGM1QzZkN0Q4ZTlF`. 
+1. Concatenate the user name `apikey` and the API key that is separated by a colon: `apikey:0a1A2b3B4c5C6d7D8e9E`
+2. Base64 encode the string: `base64("apikey:0a1A2b3B4c5C6d7D8e9E") => YXBpa2V5OjBhMUEyYjNCNGM1QzZkN0Q4ZTlF`
+3. Set the HTTP header Authorization with schema Basic, for example `Authorization: Basic YXBpa2V5OjBhMUEyYjNCNGM1QzZkN0Q4ZTlF`. 
 
 ```bash
 curl -u "apikey:<IBM Cloud API key value>"

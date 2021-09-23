@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-09-22"
 
 keywords: classic infrastructure API keys, classic infrastructure API, SoftLayer API key
 
@@ -22,7 +22,7 @@ subcollection: account
 {: #classic_keys}
 
 You can use classic infrastructure API keys to access classic infrastructure APIs. You can have only one classic infrastructure API key per user, and each user can create, delete, and view the details for their API key. If you are an ancestor in the classic infrastructure hierarchy for a user, you can also edit or delete those user's API keys.
-{:shortdesc}
+{: shortdesc}
 
 {{site.data.keyword.cloud}} [API keys](/docs/account?topic=account-userapikey#create_user_key-api) can also be used to access classic infrastructure APIs.
 {: tip}
@@ -36,9 +36,11 @@ When you create a classic infrastructure API key, you can use the IP address res
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **API keys**, and select **Classic infrastructure API keys**. 
 1. Click **Create a classic infrastructure key**.
+
    If you don't see this option, check to see if you already have a classic infrastructure API key that is created because you're only allowed to have one in the account per user.
    {: note}
-3. Copy or download the API key, and save it in a safe place. You can retrieve the details of the API key later.
+
+1. Copy or download the API key, and save it in a safe place. You can retrieve the details of the API key later.
 
 To get the details of a classic infrastructure API key after you create it, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **View details**. You can copy the API key value.
 

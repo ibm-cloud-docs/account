@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-06-11"
+lastupdated: "2021-09-22"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -30,10 +30,10 @@ subcollection: account
 # Creating and working with service IDs
 {: #serviceids}
 
-A service ID identifies a service or application similar to how a user ID identifies a user. A service ID that you create can be used to enable an application outside of {{site.data.keyword.Bluemix_notm}} access to your {{site.data.keyword.Bluemix_notm}} services. You can assign specific access policies to the service ID that restrict permissions for using specific services, or even combine permissions for accessing different services. Since service IDs are not tied to a specific user, if a user happens to leave an organization and is deleted from the account, the service ID remains ensuring that your application or service stays up and running.
-{:shortdesc}
+A service ID identifies a service or application similar to how a user ID identifies a user. You can create a service ID and use it to enable an application outside of {{site.data.keyword.Bluemix_notm}} access to your {{site.data.keyword.Bluemix_notm}} services. You can assign specific access policies to the service ID that restrict permissions for using specific services, or even combine permissions for accessing different services. Since service IDs are not tied to a specific user, if a user leaves an organization and is deleted from the account, the service ID remains, ensuring that your application or service stays up and running.
+{: shortdesc}
 
-When you create a service ID, you create a unique name and description that is easy for you to identify and work with in the UI. After you create your service ID, you can [create API keys](/docs/account?topic=account-serviceidapikeys#create_service_key) specific to each service ID that your application can use to authenticate with your {{site.data.keyword.Bluemix_notm}} services. The API key can be set for one-time use or unlimited use. To ensure that your application has the appropriate access for authenticating with your {{site.data.keyword.Bluemix_notm}} services, you use access policies that are assigned to each service ID that you create.
+When you create a service ID, you create a unique name and description that is easy for you to identify and work with in the UI. Then, you can [create API keys](/docs/account?topic=account-serviceidapikeys#create_service_key) specific to each service ID that your application can use to authenticate with your {{site.data.keyword.Bluemix_notm}} services. The API key can be set for one-time use or unlimited use. To ensure that your application has the appropriate access for authenticating with your {{site.data.keyword.Bluemix_notm}} services, you use access policies that are assigned to each service ID that you create.
 
 The access policies that are associated with a service ID enable specific actions that can be taken when that service ID is used to access a specific service. A single service ID can have multiple policies assigned that define the level of access that is allowed when accessing multiple Identity and access-enabled services, and even different instances of a single service. For example, you have two services with two service instances each. For example, you might assign the Viewer role for all available instances of one service and assign the Editor role for only one instance of a second service. This way you can customize access to multiple services, but use a single API key for authentication to all.
 
@@ -272,57 +272,57 @@ To lock a service ID, use the following command:
 ibmcloud iam service-id-lock (NAME|UUID) [-f, --force]
 ```
 
-Command Options:
+Command options:
 
-<dl>
-  <dt>NAME (required)</dt>
-  <dd>Name of the service, exclusive with UUID</dd>
-  <dt>UUID (required)</dt>
-  <dd>UUID of the service, exclusive with NAME</dd>
-  <dt>-f, --force</dt>
-  <dd>Lock without confirmation</dd>
-</dl>
+NAME
+:   The name of the service, exclusive with the UUID option. Required.
 
-<strong>Examples</strong>:
+UUID
+:   The UUID of the service, exclusive with the NAME option. Required.
 
-Lock service ID `sample-test` without confirmation
+-f, --force
+:   Lock without confirmation.
+
+**Examples**:
+
+Lock service ID `sample-test` without confirmation:
 
 ```
 ibmcloud iam service-id-lock sample-test -f
 ```
 
-Lock service ID `ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976`
+Lock service ID `ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976`:
 
 ```
 ibmcloud iam service-id-lock ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976
 ```
 
-To unlock a service ID, use the following command:
+To unlock a service ID, run the following command:
 
  ```
 ibmcloud iam service-id-unlock (NAME|UUID) [-f, --force]
 ```
 
-Command Options:
+Command options:
 
-<dl>
-  <dt>NAME (required)</dt>
-  <dd>Name of the service, exclusive with UUID</dd>
-  <dt>UUID (required)</dt>
-  <dd>UUID of the service, exclusive with NAME</dd>
-  <dt>-f, --force</dt>
-  <dd>Unlock without confirmation</dd>
-</dl>
+NAME
+:   The name of the service, exclusive with the UUID option. Required.
 
-<strong>Examples</strong>:
+UUID
+:   The UUID of the service, exclusive with the NAME option. Required.
 
-Unlock service ID `sample-test` without confirmation
+-f, --force
+:   Lock without confirmation.
+
+**Examples**:
+
+Unlock service ID `sample-test` without confirmation:
 
 ```
 ibmcloud iam service-id-unlock sample-test -f
 ```
 
-Unlock service ID `ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976`
+Unlock service ID `ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976`:
 
 ```
 ibmcloud iam service-id-unlock ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976

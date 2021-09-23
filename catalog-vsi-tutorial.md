@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-09-01"
+lastupdated: "2021-09-22"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog
 
@@ -114,7 +114,7 @@ The TGZ file that you imported to your private catalog includes a readme file th
 
 1. Click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit"), and update the description with the following sentence:
 
-  `Create and deploy a virtual server with ease by using a custom image.`
+   `Create and deploy a virtual server with ease by using a custom image.`
 
 1. Click **Save** > **Next**.
 

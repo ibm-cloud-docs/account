@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-09-22"
 
 keywords: company information, company details, company account, company profile, company contact
 
@@ -22,7 +22,7 @@ subcollection: account
 {: #contact-info}
 
 Each {{site.data.keyword.Bluemix}} account includes a company profile that contains company information and details about the primary account holder. You can use data from the company profile when you set up contacts and user profiles. You can have various account-specific contacts that are used in association with services available in the account. If you have administrative access or higher, you can update your company contact information.
-{:shortdesc}
+{: shortdesc}
 
 ## Updating your company profile
 {: #customer-profile}
@@ -38,5 +38,5 @@ Company contacts are created when certain products or services are ordered. For 
 
 Ensure that the company contacts are the appropriate people to be contacted for each type of request. You might have multiple contact entries for each account, but only one contact for each type of service. Company-specific contact information doesn't include the account profile, which is the primary contact information that is associated with an account.
 
-  Verify the information before you make the update. After you submit the new contact information, the company contacts are updated immediately.
-  {: important}
+Verify the information before you make the update. After you submit the new contact information, the company contacts are updated immediately.
+{: important}

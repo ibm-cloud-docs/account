@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-04-15"
+lastupdated: "2021-09-22"
 
 keywords: service authorization, service instance's access, connect service to app
 
@@ -56,11 +56,11 @@ To connect a service to your Cloud Foundry app, call the [Cloud Foundy API](http
 1. Open the manifest YAML file for for applying bulk configurations to apps and their underlying processes.
 1. Create a new service bindings between the app and a service instance as shown in the following manifest example. In the service-level configuration, `name` is the name of the service instance to be bound to. `binding_name` is the name of the service binding to be created. `parameters` is a map of arbitrary key/value pairs to send to the service broker during binding. 
 
-  ```bash
-  ---
-  version: 1
-  applications:
-  - name: app1
+   ```bash
+   ---
+   version: 1
+   applications:
+   - name: app1
     buildpacks:
     - ruby_buildpack
     - java_buildpack
@@ -101,7 +101,7 @@ To connect a service to your Cloud Foundry app, call the [Cloud Foundy API](http
       instances: 2
       memory: 256M
       timeout: 15
-  - name: app2
+   - name: app2
     env:
       VAR1: value1
     processes:
@@ -118,16 +118,16 @@ To connect a service to your Cloud Foundry app, call the [Cloud Foundy API](http
       process_types: [ 'worker' ]
       command: ./tr-server
       memory: 2G
-  ```
-  {: codeblock}
+   ```
+   {: codeblock}
 
 1. Apply changes specified in the manifest to the named app as shown in the following example request.
 
-  ```curl 
-  curl "https://api.example.org/v3/spaces/[guid]/actions/apply_manifest" \
+   ```curl
+   curl "https://api.example.org/v3/spaces/[guid]/actions/apply_manifest" \
     -X POST \
     -H "Authorization: bearer [token]" \
     -H "Content-type: application/x-yaml" \
     --data-binary @/path/to/manifest.yml
-  ```
-  {: codeblock}
+   ```
+   {: codeblock}

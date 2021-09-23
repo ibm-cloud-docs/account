@@ -4,7 +4,7 @@ copyright:
 
   years: 2020, 2021
 
-lastupdated: "2021-02-25"
+lastupdated: "2021-09-22"
 
 keywords: migration FAQs, data centers
 
@@ -134,5 +134,5 @@ Most likely, your networking needs to change to work with the new servers and si
 
 Your new servers come with new primary IP subnets. Your current IP addresses cannot be transferred. If you need additional IP addresses, you can request those directly from the console. Specify that you're migrating your resources to a new data center.
 
-  * For more information about VPC subnets, see [Bring your own subnet](/docs/vpc?topic=vpc-configuring-address-prefixes). 
-  * For more information about classic infrastructure subnets, see [Getting started with subnets and IPs](/docs/subnets?topic=subnets-getting-started). 
+* For more information about VPC subnets, see [Bring your own subnet](/docs/vpc?topic=vpc-configuring-address-prefixes). 
+* For more information about classic infrastructure subnets, see [Getting started with subnets and IPs](/docs/subnets?topic=subnets-getting-started). 

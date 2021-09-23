@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-08-17"
+lastupdated: "2021-09-22"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key
 
@@ -28,7 +28,7 @@ completion-time: 60m
 {: toc-completion-time="60m"}
 
 This tutorial walks you through the steps for setting up an account in {{site.data.keyword.cloud}}. By completing this tutorial, you learn how to set up account authentication, manage your account settings, effectively organize resources in your account, and control access to resources.
-{:shortdesc}
+{: shortdesc}
 
 This tutorial focuses on how to set up a Pay-As-You-Go account. If you're looking for details about setting up accounts in an enterprise hierarchy, see [Setting up an enterprise](/docs/account?topic=account-enterprise-tutorial).
 {: tip}
@@ -44,7 +44,7 @@ First, create a Lite account by using your existing IBMid or a new IBMid. If you
 |Existing IBMid   | If you already have an IBMid, sign up for {{site.data.keyword.Bluemix_notm}} with your existing credentials that you use for other {{site.data.keyword.IBM}} products and services. |
 |New IBMid        | If you don't yet have an IBMid, you'll create one when you sign up. With an IBMid, you can use one username to log in to all {{site.data.keyword.IBM_notm}} products and services, including {{site.data.keyword.Bluemix_notm}}. |
 |Federated ID     | If your company already requested to register the user credentials from your company's domain with {{site.data.keyword.IBM_notm}}, you can sign up for {{site.data.keyword.Bluemix_notm}} by using the credentials that you already use for your company's login. You must enter a phone number when you sign up. |
-{:caption="Table 1. ID options for creating a Lite account" caption-side="top"}
+{: caption="Table 1. ID options for creating a Lite account" caption-side="top"}
 
 ### Using your IBMid
 {: #signup-ibmid}
@@ -87,8 +87,9 @@ Setting up MFA in your account affects all members of the account. This means th
 1. Go to **Manage** > **Access (IAM)** > **Settings**.
 1. Update the current authentication setting by clicking **Edit** in the Authentication section.
 1. Select the type of MFA to enable in your account.
-  * **MFA for users with an IBMid**: Require users to authenticate by using an IBMid, password, and time-based one-time passcode (TOTP). You can enable this option for all users or non-federated users. 
-  * **MFA for all users (IBMid & supported IdPs)**: Require users to authenticate by using one of the following MFA factors. This option applies to users who are using either an IBMid or an external IdP. 
+
+   * **MFA for users with an IBMid**: Require users to authenticate by using an IBMid, password, and time-based one-time passcode (TOTP). You can enable this option for all users or non-federated users. 
+   * **MFA for all users (IBMid & supported IdPs)**: Require users to authenticate by using one of the following MFA factors. This option applies to users who are using either an IBMid or an external IdP. 
     * **Email-based MFA**: Users authenticate by using a security passcode that's sent via email. 
     * **TOTP MFA**: Users authenticate by using a time-based one-time passcode (TOTP) with an authenticator app, such as {{site.data.keyword.IBM_notm}} Security Verify or Google Authenticator. 
     * **U2F MFA**: Users authenticate by using a hardware security key that generates a six-digit numerical code. This factor offers the highest level of security. 
@@ -107,13 +108,13 @@ Complete the following steps to get an estimate of how much your usage might cos
 2. Select a service that you're interested in.
 3. Select a pricing plan, enter other configuration details if needed, and click **Add to estimate**.
 
-  By default, the estimator shows the pricing and billing currency for your location. Pricing can vary by region. If you're estimating costs for a different location, select the correct region to view accurate pricing.
+   By default, the estimator shows the pricing and billing currency for your location. Pricing can vary by region. If you're estimating costs for a different location, select the correct region to view accurate pricing.
   
 4. Add the calculated cost to your estimate by clicking **Save**. 
 5. When you're done adding products to your estimate, click **Review estimate** to a detailed view of your estimate. 
 
   You can download a CSV, XSLX, or PDF of the estimate by clicking **Download**.
-  {: tip}
+   {: tip}
 
 ## Manage your invoices and payment methods
 {: #account-gs-invoicepayment}
@@ -165,20 +166,20 @@ IAM access groups provide a way for you to quickly and easily assign access to m
 
 1. Create an access group.
 
-  1. Go to **Manage** > **Access (IAM)** > **Access Groups**.
-  2. Click **Create**.
-  3. Enter a name for your group, and click **Create**. For example, if you know multiple users in your account will need to be able to apply subscription codes, track usage, or perform other billed-related tasks, you might name your group `Billing-Editor-Access`. 
+   1. Go to **Manage** > **Access (IAM)** > **Access Groups**.
+   2. Click **Create**.
+   3. Enter a name for your group, and click **Create**. For example, if you know multiple users in your account will need to be able to apply subscription codes, track usage, or perform other billed-related tasks, you might name your group `Billing-Editor-Access`. 
 
 2. Assign access to the group. 
 
-  1. Click **Access policies** > **Assign access**.
-  2. Select the type of access to assign: 
+   1. Click **Access policies** > **Assign access**.
+   2. Select the type of access to assign: 
     
     * **IAM services**: Assigns access to IAM-enabled services, which are services that are managed by using IAM access control and assigned to a resource group.
     * **Account management services**: Assigns access to manage platform services, such as billing, license and entitlements, and enterprises.
 
-  3. Select all roles that apply.
-  4. Click **Add** > **Assign**.
+   3. Select all roles that apply.
+   4. Click **Add** > **Assign**.
   
 See [What is a good access group strategy?](/docs/account?topic=account-account_setup#resource-group-strategy) for details about how to best set up your access groups. 
   
@@ -188,8 +189,8 @@ See [What is a good access group strategy?](/docs/account?topic=account-account_
 
 You're ready to invite users to your account and grant them access based on the resources they will work with and the tasks they'll perform. If you want users to create resources from the catalog and assign the resources to a resource group, the following access is required:
 
-  * Viewer role or higher on the resource group.
-  * Editor or administrator role on the service. 
+* Viewer role or higher on the resource group.
+* Editor or administrator role on the service. 
 
 Complete the following steps:
 

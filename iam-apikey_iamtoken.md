@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-07-07"
+lastupdated: "2021-09-22"
 
 keywords: IAM token, token, API key, generate token, access token, temporary credential
 
@@ -34,7 +34,7 @@ subcollection: account
 {: support}
 
 Generate an {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) token by using either your IAM API key or a service ID's API key. {{site.data.keyword.Bluemix_notm}} APIs can be accessed only by users who are authorized by an assigned IAM role. Each user who is calling the API must pass credentials for the API to authenticate.
-{:shortdesc}
+{: shortdesc}
 
 You can generate an IAM token by using either your [{{site.data.keyword.Bluemix_notm}} API key](/docs/account?topic=account-userapikey#userapikey) or a [service ID's API key](/docs/account?topic=account-serviceidapikeys). The API key is a permanent credential that can be reused if you don't lose the API key value or delete the API key in the account. This process is also used if you are developing an application that needs to work with other {{site.data.keyword.Bluemix_notm}} services. You must use a service ID API key to get an access token to be passed to each of the {{site.data.keyword.Bluemix_notm}} services.
 
