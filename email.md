@@ -104,7 +104,7 @@ To ensure that a user has the correct access, go to **Manage** > **Access (IAM)*
 
 | Permission Category | Required Permissions |
 | ------------------- | -------------------- |
-| Device              | View Hardware Details <br/> View Virtual Server Details |
+| Device              | View Hardware Details  \n View Virtual Server Details |
 | Network             | Manage Network Gateways |
 | Services            | Storage Manage |
 {: caption="Table 1. Required classic infrastructure permissions for receiving user notifications" caption-side="top"}
