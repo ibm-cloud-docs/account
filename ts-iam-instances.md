@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-02-17"
+lastupdated: "2021-09-22"
 
 keywords: troubleshoot accessing all instances of a service
 
@@ -34,6 +34,7 @@ A user has an access policy on a specific service in the account, but they can't
    
 The access policy might not be set up correctly. This problem can be commonly caused by the following reasons:
 {: tsCauses}
+
 * The user is not in the expected access group.
 * The assigned role to the user is not correct.
 * The service is not using the correct access management tag. The tag in your IAM policy must be the same tag that is attached to the instances of the service.

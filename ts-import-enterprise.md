@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-02-25"
+lastupdated: "2021-09-22"
 
 keywords: troubleshoot enterprise, enterprise problem, import enterprise, existing enterprise
 
@@ -31,6 +31,7 @@ To import an existing enterprise, you must have the correct access roles assigne
 
 When you try to import an existing account to enterprise, one of the following issues occurs:
 {: tsSymptoms}
+
 * When you click **Add existing account** in the Account section in the console, the account that you want to add is not listed.
 * You don't have the option to click **Import account**.
 

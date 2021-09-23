@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-02-25"
+lastupdated: "2021-09-22"
 
 keywords: troubleshoot account, account password, incorrect password, password help
 
@@ -40,6 +40,7 @@ The password that you used to log in to {{site.data.keyword.Bluemix_notm}} isn't
 
 Use one of the following options:
 {: tsResolve}
+
  * Go to the [My IBM profile page](https://myibm.ibm.com/dashboard/){: external} to confirm that you're using a valid password.
  * If you forgot your password, click **Forgot your password** to reset your password.
  * If you forgot your IBMid or continue to have problems with your password, contact the Worldwide IBM Registration Help Desk for help.

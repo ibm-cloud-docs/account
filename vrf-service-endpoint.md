@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-08-26"
+lastupdated: "2021-09-22"
 
 keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network, services that support service endpoints, service endpoint support, using service endpoints
 
@@ -102,6 +102,7 @@ To enable service endpoints from the [{{site.data.keyword.Bluemix_notm}} CLI](/d
     Service Endpoint Enabled:     false  
     ```
     {: screen}
+
 1. Enable service endpoints by running the following command.
 
    ```

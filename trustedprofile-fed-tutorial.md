@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-09-01"
+lastupdated: "2021-09-22"
 
 keywords: trusted profile, federated users, granting access, tutorial, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
@@ -77,8 +77,10 @@ Now that Marla created a trusted profile, she wants to establish criteria for th
     * These are the attributes available from personal data.
 7. Set **Qualifier** to `Equals`.
 8. For the **Value**, click **Add manually** and enter `us`.
+
     This way, Marla can enter attribute values that she isn't assigned in the personal identity provider data.
     {: note}
+
 9. Click **Add a condition** and repeat steps 6-8. Instead of `us`, enter `ire`.
 10. Click **Add a condition** again and click **Add manually**. 
     1. Let's say there's an attribute that is called `team` in the corporate user directory that identifies an employee's team by manager. Enter the condition `team` equals `marla`.
