@@ -21,7 +21,7 @@ subcollection: account
 {: #status}
 
 The status for a user depends on if the user accepted their invitation to join the account, if they're a VPN-only user, or if the administrator set the user as a disabled classic infrastructure user.
-{:shortdesc}
+{: shortdesc}
 
 If you have the following access, you can update the status of another user:
 

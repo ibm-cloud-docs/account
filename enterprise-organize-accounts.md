@@ -57,6 +57,7 @@ To create an account group, you need the Administrator or Editor role on the Ent
 
    Account groups can't be deleted or moved from where you create them.
    {: note}
+
 1. Click **Create**.
 
 To create a new tier in your enterprise hierarchy, create new account groups within the account group. You can move accounts that are already in the enterprise into the account group, or you can import or create accounts within it. See [Adding accounts to an enterprise](/docs/account?topic=account-enterprise-add) for more information about importing and creating accounts.
@@ -189,12 +190,14 @@ To move an account, you need the Administrator role on the Billing service in th
    ibmcloud enterprise accounts --recursive
    ```
    {: codeblock}
+
 1. If you're moving the account to an account group, find the account group name and ID.
 
    ```
    ibmcloud enterprise account-groups
    ```
    {: codeblock}
+
 1. Move the account by specifying the new parent on the related option.
 
    To move the account to an account group, specify the account group name on the `--parent-account-group` option.

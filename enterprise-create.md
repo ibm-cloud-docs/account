@@ -76,6 +76,7 @@ Click **Accounts** to view your enterprise hierarchy, which contains two account
    ibmcloud login
    ```
    {: codeblock}
+
 1. Create the enterprise by running the [`ibmcloud enterprise create`](/docs/account?topic=cli-ibmcloud_enterprise#ibmcloud_enterprise_create) command, where `NAME` is a unique name to identify the enterprise.
 
    ```
@@ -96,6 +97,7 @@ Click **Accounts** to view your enterprise hierarchy, which contains two account
 
    You can specify the IBMid for a different user on the `--primary-contact-id` option. The same user is assigned to both roles.
 1. Review the impact to your account, and confirm that you want to continue by entering `y`.
+
    ```
    Account abcde12345fghij67890 will be incorporated into enterprise My new enterprise
    (which cannot be undone). Do you want to proceed? [y/N]> y
@@ -239,6 +241,7 @@ You can create an enterprise by using Terraform.
    ```
    terraform apply
    ```
+   {: pre}
 
 ## Next steps
 {: #create-next-steps}

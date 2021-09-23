@@ -22,7 +22,7 @@ subcollection: account
 {: #eu-supported}
 
 If you're the account owner, you can add an extra layer of protection to your data in the European Union. Turning on EU support for your account ensures that any support ticket you create is sent to {{site.data.keyword.IBM}} support teams in Europe. An EU supported account is useful if, for example, you use resources to process personal data for European citizens. 
-{:shortdesc}
+{: shortdesc}
 
 Turning on the EU supported setting limits Advanced Customer Support (ACS) that is provided by {{site.data.keyword.cloud}} to team members in the European Union region. However, {{site.data.keyword.Bluemix_notm}} processing activities might be performed by teams that are outside of the EU region. Global teams might be contacted when support tickets aren't resolved by the ACS teams in the EU region. The global teams are always contacted at the instruction of the EU support team and only when there's no impact to the security or privacy of your data.
 
