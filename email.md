@@ -86,14 +86,14 @@ The timing of the notification varies depending on whether the event is unplanne
 
 To set up subscription notifications for your users, complete the following steps:
 
-   1. In the console, go to **Manage > Account**, and select **Subscriptions**.
-   2. Select a service from the table.
-   3. In the Subscribed column, select **Yes** for the user who wants to receive notifications.
+1. In the console, go to **Manage > Account**, and select **Subscriptions**.
+2. Select a service from the table.
+3. In the Subscribed column, select **Yes** for the user who wants to receive notifications.
 
-    You can also set up subscriptions under **Additional notification preferences** category.
+You can also set up subscriptions under **Additional notification preferences** category.
 
-    To easily find the user you're looking for, click **Filter** and filter by given name, surname, or user name.
-    {: tip}
+To easily find the user you're looking for, click **Filter** and filter by given name, surname, or user name.
+{: tip}
 
 ### Assigning required access to receive notifications
 {: #required-user-notification-access}
