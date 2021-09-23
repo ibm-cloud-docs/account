@@ -25,8 +25,8 @@ The status for a user depends on if the user accepted their invitation to join t
 
 If you have the following access, you can update the status of another user:
 
-  * An Identity and access management (IAM) policy with Editor or higher role on the User management service.
-  * You are an ancestor in the classic infrastructure hierarchy for the user and you have the Manage users classic infrastructure permission assigned.
+   * An Identity and access management (IAM) policy with Editor or higher role on the User management service.
+   * You are an ancestor in the classic infrastructure hierarchy for the user and you have the Manage users classic infrastructure permission assigned.
 
 All account users are assigned a status that describes their user state. A user's status is displayed on the User details page.
 

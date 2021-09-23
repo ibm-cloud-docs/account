@@ -113,7 +113,7 @@ Complete the following steps to get an estimate of how much your usage might cos
 4. Add the calculated cost to your estimate by clicking **Save**. 
 5. When you're done adding products to your estimate, click **Review estimate** to a detailed view of your estimate. 
 
-  You can download a CSV, XSLX, or PDF of the estimate by clicking **Download**.
+   You can download a CSV, XSLX, or PDF of the estimate by clicking **Download**.
    {: tip}
 
 ## Manage your invoices and payment methods
