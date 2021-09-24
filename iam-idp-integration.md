@@ -4,7 +4,7 @@ copyright:
 
   years: 2020, 2021
 
-lastupdated: "2021-08-17"
+lastupdated: "2021-09-22"
 
 keywords: identity provider, IdP, App ID, IAM, integration, IdP SSO, third-party authentication, dynamic rules, external identity provider
 
@@ -24,7 +24,7 @@ subcollection: account
 {: #idp-integration}
 
 You can integrate with your external identity provider (IdP) to securely authenticate external users to your {{site.data.keyword.cloud}} account. By using your IdP, you can provide a way for users in your company to use single sign-on (SSO). Connecting your cloud account with an {{site.data.keyword.appid_full_notm}} instance of your choice makes it all possible.
-{:shortdesc}
+{: shortdesc}
 
 A more commonly used authentication method in {{site.data.keyword.cloud_notm}} that federates you for all {{site.data.keyword.IBM_notm}} products and has no usage charges is IBMid federation by registering your company's domain. Registering a company's domain with {{site.data.keyword.IBM_notm}} enables users to log in to {{site.data.keyword.IBM_notm}} products and services by using their existing company user credentials. Authentication is then handled by your company's IdP through single sign-on (SSO). For information about how to register your company for a federated ID, see the [IBMid Enterprise Federation Adoption Guide](https://ibm.box.com/v/IBMid-Federation-Guide){: external}. An {{site.data.keyword.IBM_notm}} sponsor, such as an offering advocate or client advocate, is required when you request to register federated IDs.
 
@@ -62,7 +62,7 @@ If you decide to use Cloud Directory as an authentication method, disable the op
 
 For IAM to work correctly with your external IdP, you must ensure that the {{site.data.keyword.appid_short}} instance provides all of the required attributes. See the following table for the required attributes:
 
-| Attribute          | {{site.data.keyword.appid_short}} ID Token Claim            | Source             | Description      |
+| Attribute          | {{site.data.keyword.appid_short}} ID token claim            | Source             | Description      |
 |--------------------|------------------------------------------------------|--------------------------|-------------------|
 | identifier (required)   | ID        | {{site.data.keyword.appid_short}} generated     | A unique identifier that identifies a user. It can't be changed during the life time of that user. {{site.data.keyword.appid_short}} creates this identifier. |
 | email (required)        | email    | Mapped from SAML assertion "email", which is mandatory for Cloud Directory and SAML configurations. | The user's email address. |
@@ -70,6 +70,7 @@ For IAM to work correctly with your external IdP, you must ensure that the {{sit
 | firstname (recommended) | given_name if available, otherwise "notset" as default  | Mapped from SAML assertion "given_name", "givenname", "givenName", "first_name", "firstname" or "firstName" if available, otherwise IAM uses the constant "notset" | The first name of the user that logs in. |
 | lastname (recommended)  | family_name if available, otherwise "notset" as default | Mapped from SAML assertion "family_name", "familyname", "familyName", "last_name", "lastname" or "lastName" if available, otherwise IAM uses the constant "notset" | The last name of the user that logs in. |
 | name (optional)         | name if present, otherwise built by the firstname, a space, and the last name | There is no automatic mapping from SAML | Full name, including middle initial, title, or anything that is not covered by first name and last name |
+{: caption="Table 1. Required attributes for {{site.data.keyword.appid_short}} tokens" caption-side="top"}
 
 When a user authenticates successfully by using the {{site.data.keyword.appid_short}} service instance in the {{site.data.keyword.cloud_notm}} account, the user is automatically added to the account. Added users don't get any access policies assigned by default. However, by using [access groups](/docs/account?topic=account-groups) and [dynamic rules](/docs/account?topic=account-rules), you can set up automatically assigned access policies.
 
@@ -80,8 +81,8 @@ When a user authenticates successfully by using the {{site.data.keyword.appid_sh
 If you haven't configured any IAM IdP references before in your account, you must enable the login setting for your account first.
 
 1. Enable the login settings for your account. You can skip this step if you've already enabled this setting.
-  1. Go to **Manage** > **Access (IAM)** > **Identity providers**, and click **Enable**. 
-  2. Enter an alias for the default account URL, which you provide to users to log in to your account. 
+   1. Go to **Manage** > **Access (IAM)** > **Identity providers**, and click **Enable**. 
+   2. Enter an alias for the default account URL, which you provide to users to log in to your account. 
   
     Since you're sharing the URL with external users, make sure the alias is unique and simple. A common format might be to use your company name or a variation of it.
     {: tip}
@@ -89,8 +90,8 @@ If you haven't configured any IAM IdP references before in your account, you mus
 2. Click **Create** to create your IdP reference. 
 3. Enter a name for the IdP reference, and select the {{site.data.keyword.appid_short}} instance that you want to connect. Then, select the following options:
 
-  * **Enable for account login?**: Enable your IdP references to be used for users to log in to your account. This option is set by default when you first create an IdP reference. 
-  * **Set as the default?**: When selected, users can use the default IdP reference URL that you created when you enabled this feature to log in to your account. You can have only one default IdP reference. For all other IdP references that you create, users must use the realm IDs to log in.
+   * **Enable for account login?**: Enable your IdP references to be used for users to log in to your account. This option is set by default when you first create an IdP reference. 
+   * **Set as the default?**: When selected, users can use the default IdP reference URL that you created when you enabled this feature to log in to your account. You can have only one default IdP reference. For all other IdP references that you create, users must use the realm IDs to log in.
  
 4. Click **Create**.
 
@@ -136,8 +137,9 @@ After you have enabled and connected your IdP, you can start [creating trusted p
 The conditions that you create filter out or allow federated users to apply the trusted profile depending on which attributes the federated users are assigned in your corporate user directory. When you create a trusted profile, you can view IdP data to see your own user claims from your organizations corporate user directory. 
 
 Let's say there is an attribute that is called `groups` that identifies departments, teams, and more granular internal organizations within your company. If there are developers in the US on the finance team that need the same level of access for a project, you might create a trusted profile the following conditions:
-  * Allow users when `groups` equals `finance-dev`
-  * Allow users when `country` equals `us`
+
+* Allow users when `groups` equals `finance-dev`
+* Allow users when `country` equals `us`
 
 To make sure that your conditions allow only the federated users you intend to grant access to, contact your corporate directory architect for more information on available attributes. 
 

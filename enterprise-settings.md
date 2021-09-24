@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-04-22"
+lastupdated: "2021-09-22"
 
 keywords: enterprise, enterprise settings, manage enterprise, view enterprise, rename enterprise
 
@@ -23,7 +23,7 @@ subcollection: account
 {: #enterprise-settings}
 
 From the dashboard of your {{site.data.keyword.Bluemix}} enterprise, you can view enterprise details, take common actions such as adding accounts and inviting users, and view billing information. You can also rename your enterprise on the dashboard or by using the CLI or API.
-{:shortdesc}
+{: shortdesc}
 
 To manage enterprise settings, you need the Administrator or Editor role on the Enterprise service in the enterprise account.
 {: tip}
@@ -45,16 +45,17 @@ Also, you can rename your enterprise by clicking **Rename** in the Enterprise de
 
 * View enterprise information such as the name, domain, owner, and creation and update dates.
 
-  ```
-  ibmcloud enterprise show
-  ```
-  {: codeblock}
+   ```
+   ibmcloud enterprise show
+   ```
+   {: codeblock}
+  
 * Rename the enterprise by specifying the new name on the `-n` option in the following command.
 
    ```
    ibmcloud enterprise update -n NEW_NAME
    ```
-   {:codeblock}
+   {: codeblock}
 
 ## Managing your enterprise by using the API
 {: #enterprise-manage-api}

@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-09-23"
+lastupdated: "2021-09-24"
 
 keywords: what is IAM, IAM features, IAM API, how IAM works
 
@@ -126,18 +126,15 @@ There are two common types of IAM systems in cloud providers and understanding e
 
 {{site.data.keyword.cloud_notm}} IAM uses an ABAC model by using identity and resource attributes. {{site.data.keyword.cloud_notm}} IAM uses access policies to store the attribute information that is needed by the IAM access decision engine. And, the access policies tell the IAM decision engine, which attributes the author of the policy requires to grant access to a resource. 
 
-Supported attributes for identities are:
-* iam_id 
-* access group ID
+The supported attributes for identities are iam_id and access group ID. The supported attributes for resources belong to one of the following categories:
 
-Supported attributes for resources belong to one of the following categories:
 * Fields defined in the resource [CRN](/docs/account?topic=account-crn), for example the service name.
 * System-wide defined resource attributes, such as resource groups.
 * Service-specific resource attributes such as namespaces or buckets.
 
 Each service defines the supported attributes for resources it manages. For more information, see the documentation for the service you're using.
 {: note}
- 
+
 A best practice in {{site.data.keyword.cloud_notm}} IAM is to use access groups to manage access for identities. After the access group access policies are defined, granting, and revoking access is simply a matter of adding and removing identities to or from access groups. A user or service ID can belong to as many access groups as the administrator wants, and the members of the group inherit all access that is assigned to the access group. This approach provides the fine-grained access benefits of ABAC with the simplicity of RBAC.
 
 IAM administrators familiar with RBAC might use access groups to mimic an RBAC model. Conceptually an access group is similar to an RBAC role. If you're more familiar with using traditional RBAC roles like system administrator, network administrator, or storage administrator, these can be defined in {{site.data.keyword.cloud_notm}} IAM by using access groups with specific access policies that are assigned to each. For more information about using access groups and the best practices for assigning access, see [Best practices for organizing resources and assigning access](/docs/account?topic=account-account_setup). 
@@ -218,11 +215,10 @@ You can access and use {{site.data.keyword.cloud_notm}} IAM through the Access (
 
 * To access {{site.data.keyword.cloud_notm}} IAM by using the console, go to **Manage** > **Access (IAM)**.
 * Go to [Managing IAM access, API keys, service IDs, and access groups](/docs/cli?topic=cli-ibmcloud_commands_iam) to review the available CLI commands.
-* Go to the following API docs to review the available APIs:
-    * [IAM Identity Services API](/apidocs/iam-identity-token-api){: external} 
-    * [IAM Access Groups API](/apidocs/iam-access-groups){: external} 
-    * [IAM Policy Management API](/apidocs/iam-policy-management){: external} 
-
+* Review the available APIs:
+    * [IAM Identity Services API](https://{DomainName}/apidocs/iam-identity-token-api){: external} 
+    * [IAM Access Groups API](https://{DomainName}/apidocs/iam-access-groups){: external} 
+    * [IAM Policy Management API](https://{DomainName}/apidocs/iam-policy-management){: external} 
 
 ## Mapping {{site.data.keyword.cloud_notm}} IAM concepts to other cloud providers
 {: #iam-compare}

@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-07-26"
+lastupdated: "2021-09-22"
 
 keywords: trusted profile, generating IAM token, compute resource, kubernetes cluster, virtual server
 
@@ -38,15 +38,17 @@ For Kubernetes, you don't need to take steps to exchange a compute resource (CR)
 To generate IAM tokens for your compute resources, you must be at least an administrator on all Identity and Access enabled services within the account.
 {: note}
 
-## Exchange your tokens
+## Exchanging your tokens
 {: #token-exchange}
 
 1. Set up a trusted profile where you establish trust with compute resources. Select **Virtual server for VPC** as a compute service type. To complete this step, follow the instructions of [Setting up trusted profiles](/docs/account?topic=account-create-trusted-profile#create-profile-compute).
-2. Retrieve a compute resource token (CR-token), which is specific to the resource. For example, a virtual server instance. 
-  *  For Virtual server for VPC, see [Acquire a JSON web token](/docs/vpc?topic=vpc-imd-configure-service#imd-json-token).
-3. To retrieve an IAM access token that represents the trusted profile, provide the CR-token for IAM. One CR-token might resolve to multiple trusted profiles, therefore you must pass either `profile_id` or `profile_name` as a parameter. If both parameters are specified, they must resolve to the same compute resource, otherwise the API call fails.
+1. Retrieve a compute resource token (CR-token), which is specific to the resource. For example, a virtual server instance. 
 
-  ```
+   For Virtual server for VPC, see [Acquire a JSON web token](/docs/vpc?topic=vpc-imd-configure-service#imd-json-token).
+
+1. To retrieve an IAM access token that represents the trusted profile, provide the CR-token for IAM. One CR-token might resolve to multiple trusted profiles, therefore you must pass either `profile_id` or `profile_name` as a parameter. If both parameters are specified, they must resolve to the same compute resource, otherwise the API call fails.
+
+   ```
     $ curl -X POST \
         -H "Content-Type: application/x-www-form-urlencoded"   
         -H "Accept: application/json"                          
@@ -54,8 +56,8 @@ To generate IAM tokens for your compute resources, you must be at least an admin
         -d cr_token=$(CRTOKEN)                                 
         -d profile_name=TestProfile                            
         https://iam.test.cloud.ibm.com/identity/token
-  ```
-  {: codeblock}
-    
-  The compute resource and the trusted profile must be in the same account. Trusted profiles from another account that would have matching rules are not considered.
-  {: note}
+   ```
+   {: codeblock}
+
+   The compute resource and the trusted profile must be in the same account. Trusted profiles from another account that would have matching rules are not considered.
+   {: note}

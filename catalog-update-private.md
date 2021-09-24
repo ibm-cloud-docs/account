@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-08-31"
+lastupdated: "2021-09-22"
 
 keywords: catalog, private catalog, update, private catalog product, update version, versions
 
@@ -57,8 +57,8 @@ The following steps walk through an example of making updates to a product's rea
 
 Complete the following steps to create a draft version, update it, and merge the changes to the current version of your software.  
 
-  You need the version locator for your software. To find it, run the **`ibmcloud catalog offering list --catalog "your-private-catalog"`** command and search for the existing version number.
-  {: important}
+   You need the version locator for your software. To find it, run the **`ibmcloud catalog offering list --catalog "your-private-catalog"`** command and search for the existing version number.
+   {: important}
     
 1. Create a draft version of your software.
     ```

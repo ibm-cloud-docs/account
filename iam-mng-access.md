@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-06-11"
+lastupdated: "2021-09-22"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access 
 
@@ -32,7 +32,7 @@ subcollection: account
 {: #assign-access-resources}
 
 To manage access for users or service IDs by using IAM policies, you must be the account owner or have the correct access assigned. To assign user's access to resources you must be an administrator on all services in the account, or the assigned administrator for the particular service or service instance. To assign access to a service ID, you must be administrator on the identity service or the specific service ID.
-{:shortdesc}
+{: shortdesc}
 
 ## Assigning access to resources
 {: #assign-new-access}
@@ -48,6 +48,7 @@ If you delete or edit an existing policy for a service ID currently being used, 
 {: note}
 
 If you want to enable a user full administrator access to complete [account management tasks](/docs/account?topic=account-account-services#account-management-access), such as inviting and removing users, viewing billing and usage, managing service IDs, managing access groups, managing user access, and access to all account resources, you must assign a user the following access:
+
 * A policy for **All Identity and Access enabled services** within the **Account** with the Administrator and Manager roles.
 * A policy with Administrator role on **All Account Management Services**.
 
@@ -61,9 +62,9 @@ To assign access to an individual resource in the account or access to all resou
 2. From the row for the user or service ID that you want to assign access, click the **Actions** icon ![List of actions icon](../icons/action-menu-icon.svg) > **Assign access**.
 3. Add the user or service ID to an access group. Click **Add** for the access group that you want the user or service ID to belong to.
 4. (Optional) Manually assign users access.
-  1. Expand the Assign additional access section, and click **IAM services**.
-  2. Select the option for all services or just a specific service.
-  3. Select any combination of roles to assign the user or service ID, and click **Add** > **Assign**.
+   1. Expand the Assign additional access section, and click **IAM services**.
+   2. Select the option for all services or just a specific service.
+   3. Select any combination of roles to assign the user or service ID, and click **Add** > **Assign**.
 
 If a user doesn't have a role on the resource group that contains the resources, they can see the resources, but can't access the resources by going to the Resource list page in the account to start working with them. Assign the Viewer role or higher on the resource group itself to ensure that a user can access the resource.
 {: note}
@@ -90,6 +91,7 @@ If a user doesn't have a role on the resource group that contains the resources,
     ibmcloud iam user-policy-create name@example.com --roles Administrator --service-name sample-service
     ```
     {: codeblock}
+
  * To assign access to a service ID or to more services in the account, enter the [**`ibmcloud iam service-policy-create`**](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_service_policy_create) command. This example grants service `test` the `Administrator` role for all account management services:
     ```
     ibmcloud iam service-policy-create test --roles Administrator --account-management
@@ -320,9 +322,9 @@ To assign access to all resources in a resource group or to just one service wit
 2. From the row for the user or service ID that you want to assign access, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Assign access**.
 3. Add the user or service ID to an access group. Click **Add** for the access group that you want the user or service ID to belong to.
 4. (Optional) Manually assign additional access.
-  1. Expand the Assign additional access section, and click **IAM services**.
-  2. Select the option for all services or just a specific service, and then specify if the access is in the **Account**, which means the user or service ID doesn't get access to the resource group that contains the resource, or select a specific resource group. By selecting a resource group, you can select roles for access to manage the resource group as well.
-  3. Select any combination of roles to assign, and click **Add** > **Assign**.
+   1. Expand the Assign additional access section, and click **IAM services**.
+   2. Select the option for all services or just a specific service, and then specify if the access is in the **Account**, which means the user or service ID doesn't get access to the resource group that contains the resource, or select a specific resource group. By selecting a resource group, you can select roles for access to manage the resource group as well.
+   3. Select any combination of roles to assign, and click **Add** > **Assign**.
 
 ### Assigning access within a resource group by using the CLI
 {: #access-resourcegroups-cli}
@@ -330,18 +332,19 @@ To assign access to all resources in a resource group or to just one service wit
 
 Enter the [**`ibmcloud user-policy-create`**](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_create) command to assign access to all resources in a resource group or to just one service within a resource group. This example gives `name@example.com` `Operator` role for resource group with ID `dda27e49d2a1efca58083a01dfde18f6`:
 
-  ```
-  ibmcloud iam user-policy-create name@example.com --roles Operator --resource-type resource-group --resource dda27e49d2a1efca58083a01dfde18f6
-  ```
-  {: codeblock}
+   ```
+   ibmcloud iam user-policy-create name@example.com --roles Operator --resource-type resource-group --resource dda27e49d2a1efca58083a01dfde18f6
+   ```
+   {: codeblock}
 
 Enter the [**`ibmcloud iam service-policy-create`**](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_service_policy_create) command to assign access to all resources in a resource group or to just one service within a resource group. This example gives service `test` `Administrator` role for resource group called `sample-resource-group`:
 
-  ```
-  ibmcloud iam service-policy-create test --roles Administrator --resource-group-name sample-resource-group
-  ```
-  {: codeblock}
-  
+   ```
+   ibmcloud iam service-policy-create test --roles Administrator --resource-group-name sample-resource-group
+   ```
+   {: codeblock}
+
+
 ### Assigning access within a resource group by using the API
 {: #access-resourcegroups-api}
 {: api}
@@ -368,17 +371,17 @@ You can also remove users and service IDs from access groups by selecting the ch
 
 To remove a user policy by using the CLI, you can use the [**`ibmcloud iam user-policy-delete`**](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_delete) command.
 
-  ```
-  ibmcloud iam user-policy-delete USER_ID POLICY_ID [-f, --force]
-  ```
-  {: codeblock}
+   ```
+   ibmcloud iam user-policy-delete USER_ID POLICY_ID [-f, --force]
+   ```
+   {: codeblock}
 
 To remove a service ID policy by using the CLI, you can use the [**`ibmcloud iam service-policy-delete`**](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_service_policy_delete) command.
 
-  ```
-  ibmcloud iam service-policy-delete SERVICE_ID POLICY_ID [-f, --force]
-  ```
-  {: codeblock}
+   ```
+   ibmcloud iam service-policy-delete SERVICE_ID POLICY_ID [-f, --force]
+   ```
+   {: codeblock}
 
 ## Removing access by using the API
 {: #remove-access-api}
@@ -465,10 +468,10 @@ If you need more access, you must contact the account owner to update your acces
 
 If you need to review your assigned access in an account that you've been added to, you can use the [**`ibmcloud iam user-policies`**](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_user_policies) command. This example lists policies of user `name@example.com`:
 
-  ```
-  ibmcloud iam user-policies name@example.com
-  ```
-  {: codeblock} 
+   ```
+   ibmcloud iam user-policies name@example.com
+   ```
+   {: codeblock} 
 
 ## Reviewing assigned access by using the API
 {: #review-your-access-api}

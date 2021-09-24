@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2020
+  years: 2017, 2021
 
-lastupdated: "2020-06-21"
+lastupdated: "2021-09-22"
 
 keywords: crn, cloud resource name, resources, cloud catalog
 
@@ -51,10 +51,10 @@ The `cname` segment identifies the cloud instance and is an alphanumeric identif
 
 The `ctype` segment identifies the type of cloud instance that is represented by the specified `cname` segment.
 
- Valid values:
-  - `public`: All services that are available from the public catalog
-  - `dedicated`: Only for current {{site.data.keyword.Bluemix_notm}} dedicated environments
-  - `local`: All services that are deployed locally in your own environment
+Valid values:
+   - `public`: All services that are available from the public catalog
+   - `dedicated`: Only for current {{site.data.keyword.Bluemix_notm}} dedicated environments
+   - `local`: All services that are deployed locally in your own environment
 
 
 ## service-name

@@ -4,7 +4,7 @@ copyright:
 
   years: 2015，2021
 
-lastupdated: "2021-08-18"
+lastupdated: "2021-09-22"
 
 keywords: federated ID, password, enterprise SSO, single sign-on ID, API key login, one-time passcode login, temporary credential, to login, logging in, trusted profiles
 
@@ -46,7 +46,7 @@ Use the following steps to log in to the {{site.data.keyword.cloud_notm}} consol
 1. Go to the [{{site.data.keyword.cloud_notm}} login page](cloud.ibm.com/login).
 2. Enter your ID, and click **Continue**. 
 3. Enter your password.
-	
+
 After you log in, you are directed to the {{site.data.keyword.cloud_notm}} dashboard, which provides a variety of development, account management, and infrastructure widgets.
 
 ## Using trusted profiles to log in to the console
@@ -148,9 +148,7 @@ The required API key is the {{site.data.keyword.Bluemix_notm}} API key that is u
 
    ```
 
-2. Log in with the API key.
-
-  You can use the API key with the {{site.data.keyword.Bluemix_notm}} CLI in any of the following ways:
+2. Log in with the API key. You can use the API key with the {{site.data.keyword.Bluemix_notm}} CLI in any of the following ways:
 
     * Call the API key directly:
 
@@ -171,7 +169,7 @@ The required API key is the {{site.data.keyword.Bluemix_notm}} API key that is u
    For Windows 10 PowerShell, you want to use `'@key_file_name'` with single quotation marks around the key file name.
    {: tip}
 
-  To log in by using the Cloud Foundry CLI, specify `apikey` as the username and the API key string as the password:
+   To log in by using the Cloud Foundry CLI, specify `apikey` as the username and the API key string as the password:
 
     ```
     cf login -a https://api.us-south.cf.cloud.ibm.com

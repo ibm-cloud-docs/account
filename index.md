@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-09-14"
+lastupdated: "2021-09-22"
 
 keywords: account types, Lite, free account, trial account, paid account, buy account, account difference, compare account, subscription, Pay As You Go with Committed Use, PayGo with Commit
 
@@ -31,8 +31,8 @@ The following table provides a comparison of Lite, Pay-As-You-Go, and Subscripti
 
 |                                         | Lite               | Pay-As-You-Go      | Subscription       | 
 |-----------------------------------------|--------------------|--------------------|--------------------|
-| **Free Cloud Foundry memory** | 256 MB <br> Not available for Lite accounts created after 12 August 2021            |             |              |              |
-| **[Free community buildpacks](/docs/cloud-foundry-public?topic=cloud-foundry-public-available_buildpacks)** | 186 GBH <br> Not available for Lite accounts created after 12 August 2021             |   186 GBH       |    186 GBH          |
+| **Free Cloud Foundry memory** | 256 MB [^1]            |             |              |              |
+| **[Free community buildpacks](/docs/cloud-foundry-public?topic=cloud-foundry-public-available_buildpacks)** | 186 GBH [^2]              |   186 GBH       |    186 GBH          |
 | **Access to [Lite service plans](https://{DomainName}/catalog/?search=label:lite){: external}** | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | **Access to all free plans**            |                    | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |  
 | **Access to the full {{site.data.keyword.Bluemix_notm}} catalog** |  | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
@@ -46,6 +46,10 @@ The following table provides a comparison of Lite, Pay-As-You-Go, and Subscripti
 {: class="comparison-table"}
 {: caption="Table 1. Comparison of {{site.data.keyword.Bluemix_notm}} accounts" caption-side="top"}
 {: summary="This table has row and column headers. The row headers identify the feature. The column headers identify the account type. To understand which features apply to the account types, navigate to the row, and find the feature that you're interested in."}
+
+[^1]: Not available for Lite accounts created after 12 August 2021. 
+
+[^2]: Not available for Lite accounts created after 12 August 2021.
 
 ## Lite account
 {: #liteaccount}

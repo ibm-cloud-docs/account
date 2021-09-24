@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-08-23"
+lastupdated: "2021-09-22"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, multiple account, video
 
@@ -76,6 +76,7 @@ Click **Accounts** to view your enterprise hierarchy, which contains two account
    ibmcloud login
    ```
    {: codeblock}
+
 1. Create the enterprise by running the [`ibmcloud enterprise create`](/docs/account?topic=cli-ibmcloud_enterprise#ibmcloud_enterprise_create) command, where `NAME` is a unique name to identify the enterprise.
 
    ```
@@ -96,6 +97,7 @@ Click **Accounts** to view your enterprise hierarchy, which contains two account
 
    You can specify the IBMid for a different user on the `--primary-contact-id` option. The same user is assigned to both roles.
 1. Review the impact to your account, and confirm that you want to continue by entering `y`.
+
    ```
    Account abcde12345fghij67890 will be incorporated into enterprise My new enterprise
    (which cannot be undone). Do you want to proceed? [y/N]> y
@@ -130,6 +132,7 @@ curl -X POST "https://enterprise.cloud.ibm.com/v1/enterprises
 {: pre}
 {: curl}
 
+
 ```java
 CreateEnterpriseOptions createEnterpriseOptions = new CreateEnterpriseOptions.Builder()
     .sourceAccountId(srcAccountId)
@@ -144,6 +147,7 @@ System.out.println(createEnterpriseResponse);
 ```
 {: codeblock}
 {: java}
+
 
 ```javascript
 const params = {
@@ -163,6 +167,7 @@ enterpriseManagementService.createEnterprise(params)
 {: codeblock}
 {: javascript}
 
+
 ```python
 create_enterprise_response = enterprise_management_service.create_enterprise(
   source_account_id=src_account_id,
@@ -174,6 +179,7 @@ print(json.dumps(create_enterprise_response, indent=2))
 ```
 {: codeblock}
 {: python}
+
 
 ```go
 createEnterpriseOptions := enterpriseManagementService.NewCreateEnterpriseOptions(
@@ -191,6 +197,7 @@ fmt.Println(string(b))
 ```
 {: codeblock}
 {: go}
+
 
 ## Creating an enterprise by using Terraform
 {: #create-terraform}
@@ -234,6 +241,7 @@ You can create an enterprise by using Terraform.
    ```
    terraform apply
    ```
+   {: pre}
 
 ## Next steps
 {: #create-next-steps}

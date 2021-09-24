@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-09-22"
 
 keywords: create connection, connect a service, bind, alias
 
@@ -33,7 +33,6 @@ You can connect a service to an existing or new {{site.data.keyword.Bluemix}} ap
 {: shortdesc}
 
 However, when you connect a service instance that is managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) to an application, an alias of the service that is managed by IAM is automatically created in the corresponding space with the connection information that you specified. This alias is represented as a service instance of your IAM-managed service.
-{:shortdesc}
 
 ## What is an alias?
 {: #what_is_alias}

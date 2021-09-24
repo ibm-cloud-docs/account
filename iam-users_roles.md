@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2015, 2020
+  years: 2015, 2021
 
-lastupdated: "2020-11-30"
+lastupdated: "2021-09-22"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -71,13 +71,13 @@ You can manage and define access based on specific roles for users and resources
 
 * Service access roles define a user or service’s ability to perform actions on a service instance, such as accessing the console or performing API calls. The most common service access roles are manager, writer, and reader. Each service maps particular actions for working with the service to each of these roles.
 
-  You might not see all of the roles that are listed here as options when you assign policies in the UI because only the roles available for the service that you chose are displayed. For more information on what roles are enabled and what actions each access role allows for each service, see the documentation for that service.
-  {: note}
+   You might not see all of the roles that are listed here as options when you assign policies in the UI because only the roles available for the service that you chose are displayed. For more information on what roles are enabled and what actions each access role allows for each service, see the documentation for that service.
+   {: note}
 
 * Custom roles for a service can be created on the IAM Roles page by the account owner or a user assigned the administrator role on the role management service. 
 
-  You can review the available roles and associated actions for a particular service by going to the [Roles](https://cloud.ibm.com/iam/roles){: external} page, and selecting the service that you want to learn more about. This is the same page where you can create a custom role in the console.
-  {: note}
+   You can review the available roles and associated actions for a particular service by going to the [Roles](https://cloud.ibm.com/iam/roles){: external} page, and selecting the service that you want to learn more about. This is the same page where you can create a custom role in the console.
+   {: note}
 
 ### Platform management roles
 {: #platformroles}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-06-14"
+lastupdated: "2021-09-22"
 
 keywords: deprecate software, restore software, catalog, catalogs, software, private catalog
 
@@ -36,8 +36,8 @@ In this tutorial, you deprecate a version of the apache-two-instances software i
 
 To complete this tutorial, you need to be assigned the editor role on the catalog management service. For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
 
-  If you don't see what you're expecting in the console based on your permissions, try refreshing your session by going to https://cloud.ibm.com/login.
-  {: tip}
+   If you don't see what you're expecting in the console based on your permissions, try refreshing your session by going to https://cloud.ibm.com/login.
+   {: tip}
 
 ## Deprecate a software version in the console
 {: #deprecate-editor}
@@ -178,4 +178,5 @@ fmt.Println(response)
 ## Restore a deprecated version by using the API
 {: #restore-version-api}
 {: api}
+
 This action can be done only through the UI or CLI. To see the steps, switch to the UI or CLI instructions.

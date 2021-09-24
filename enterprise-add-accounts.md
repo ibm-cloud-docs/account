@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-08-23"
+lastupdated: "2021-09-22"
 
 keywords: enterprise, add account, import account, create account
 
@@ -61,6 +61,7 @@ To import an existing account, complete the following steps:
 
    If no accounts are displayed, you likely don't have the correct access in any existing accounts.
    {: tip}
+
 1. If you want to add the account to an account group, select the account group to be its parent. The parent that you select determines where in the enterprise hierarchy the account exists.
 1. Review the information about impacts to your account, and select **I understand the impact to my account**. Then, click **Import**.
 
@@ -77,12 +78,14 @@ To import an existing account, complete the following steps:
    ibmcloud account list
    ```
    {: codeblock}
+
 1. If you want to add the account to an account group, find the names and IDs of existing account groups in the enterprise.
 
    ```
    ibmcloud enterprise account-groups --recursive
    ```
    {: codeblock}
+
 1. Import the account into the enterprise, specifying the account ID for the `--account ID` parameter. If you don't specify a parent account group, the account is added directly under the enterprise.
 
    ```
@@ -99,12 +102,13 @@ To import an existing account to the enterprise, call the [Enterprise Management
 
 ```bash
 curl -X PUT "https://enterprise.cloud.ibm.com/v1/enterprises/$ENTERPRISE_ID/import/accounts/$ACCOUNT_ID" -H "Authorization: Bearer <IAM_Token>" -H 'Content-Type: application/json' -d '{
-  "parent": "crn:v1:bluemix:public:enterprise::a/$ENTERPRISE_ACCOUNT_ID::enterprise:$ENTERPRISE_ID",
-  "billing_unit_id": "$BILLING_UNIT_ID"
+   "parent": "crn:v1:bluemix:public:enterprise::a/$ENTERPRISE_ACCOUNT_ID::enterprise:$ENTERPRISE_ID",
+   "billing_unit_id": "$BILLING_UNIT_ID"
 }'
 ```
 {: codeblock}
 {: curl}
+
 
 ```java
 ImportAccountToEnterpriseOptions importAccountToEnterpriseOptions = new ImportAccountToEnterpriseOptions.Builder()
@@ -117,27 +121,29 @@ Response<Void> response = service.importAccountToEnterprise(importAccountToEnter
 {: codeblock}
 {: java}
 
+
 ```javascript
 const params = {
-  enterpriseId: enterpriseId,
-  accountId: importAccountId,
+   enterpriseId: enterpriseId,
+   accountId: importAccountId,
 };
 
 enterpriseManagementService.importAccountToEnterprise(params)
-  .then(res => {
+   .then(res => {
     done();
-  })
-  .catch(err => {
+   })
+   .catch(err => {
     console.warn(err)
-  });
+   });
 ```
 {: codeblock}
 {: javascript}
 
+
 ```python
 response = enterprise_management_service.import_account_to_enterprise(
-  enterprise_id=enterprise_id,
-  account_id=import_account_id,
+   enterprise_id=enterprise_id,
+   account_id=import_account_id,
 )
 
 print(json.dumps(response, indent=2))
@@ -145,19 +151,21 @@ print(json.dumps(response, indent=2))
 {: codeblock}
 {: python}
 
+
 ```go
 importAccountToEnterpriseOptions := enterpriseManagementService.NewImportAccountToEnterpriseOptions(
-  enterpriseID,
-  importAccountID,
+   enterpriseID,
+   importAccountID,
 )
 
 response, err := enterpriseManagementService.ImportAccountToEnterprise(importAccountToEnterpriseOptions)
 if err != nil {
-  panic(err)
+   panic(err)
 }
 ```
 {: codeblock}
 {: go}
+
 
 ### Importing accounts by using Terraform
 {: #add-account-terraform}
@@ -181,14 +189,14 @@ You can import an existing account in an enterprise resource by using Terraform.
    {: codeblock}
 
    You can specify the ID of an account that needs to be imported on the `account_id` option. For more information, see the argument reference details on the [Terraform Enterprise Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/enterprise_account){: external} page.
-  
+
 3. Initialize the Terraform CLI.
 
    ```
    terraform init
    ```
    {: pre}
-   
+
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to import the account.
 
    ```
@@ -201,7 +209,7 @@ You can import an existing account in an enterprise resource by using Terraform.
    ```
    terraform apply
    ```
-   
+
 ## Creating new accounts
 {: #create-accounts}
 
@@ -230,6 +238,7 @@ After you create the account, the account owner can log in to the account to inv
    ibmcloud enterprise account-groups --recursive
    ```
    {: codeblock}
+
 1. Create the account by running the following command. If you don't specify a parent account group, the account is added directly under the enterprise. To make a different user the account owner, specify their IBMid on the `--owner` option.
 
    ```
@@ -349,7 +358,7 @@ You can create new accounts within your enterprise by using Terraform.
    terraform init
    ```
    {: pre}
-   
+
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the account.
 
    ```
@@ -362,5 +371,6 @@ You can create new accounts within your enterprise by using Terraform.
    ```
    terraform apply
    ```
+   {: pre}
 
 

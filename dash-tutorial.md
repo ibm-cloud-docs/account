@@ -2,7 +2,7 @@
 
 copyright:
    years: 2021
-lastupdated: "2021-06-17"
+lastupdated: "2021-09-22"
 
 keywords: dashboard, custom dashboard
 
@@ -43,18 +43,20 @@ First, create a new dashboard and select a template.
 1. In the {{site.data.keyword.cloud_notm}} console, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions"), and select **Create a dashboard**. 
 2. Select the Management template from the available options, and then click **Create**. 
 
-  The Management template is optimized to provide a mix of billing, access management, and other administrative widgets that Cora needs.
+   The Management template is optimized to provide a mix of billing, access management, and other administrative widgets that Cora needs.
   
 2. Enter your dashboard title in 30 characters or less. 
 3. Next, use the Dashboard settings panel to add relevant widgets to your dashboard. To add widgets, drag the widgets onto your dashboard. Add the **Notes** widget to your dashboard. This widget is where Cora can provide essential information that's custom for the team that she shares the dashboard with. 
 5. Click the **Scope** tab to select from the available resources in the account that you have access to. The scope determines the data that populates for the selected resources. You can filter the resource by group, tag, and location. Cora wants to select only resources that are related to AI and machine learning, so she filters by the resource group that exists for her team's chatbot project. 
    Not all widgets can be scoped. If a widget can't be scoped, the data for all resources is displayed. 
    {: note}
+
 6. Reorganize the layout to fit your needs. Cora moves Notes to the first row, next to Resource summary. In the next row, she includes the Usage, User access, and {{site.data.keyword.cloud_notm}} status widgets.  
 7. Click **Save dashboard**. 
 
 ### Watch and learn
 {: dash-tutorial-video}
+
 The following video provides a demo of the process detailed in the previous step: ![Create a custom dashboard in {{site.data.keyword.Bluemix_notm}}.](images/scope-dash-tutorial.mp4){: video width="800" height="450" controls loop}
 
 ## Share a dashboard with teammates

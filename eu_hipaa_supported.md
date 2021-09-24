@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-03-24"
+lastupdated: "2021-09-22"
 
 keywords: GDPR, HIPAA, data security, PHI, europe, ACS 
 
@@ -20,7 +20,7 @@ subcollection: account
 {: #eu-hipaa-supported}
 
 If you're the account owner, you can enable your {{site.data.keyword.cloud}} account to be EU supported, Financial Services Validated designated, and HIPAA supported. You can enable the EU Supported setting, for example, if you use resources to process personal data for European citizens. You can enable the Financial Services Validated setting to include and manage regulated financial services information. And, you can enable the HIPAA Supported setting if you plan to include Protected Health Information (PHI) in HIPAA-enabled services.
-{:shortdesc}
+{: shortdesc}
 
 
 ## Enabling the EU Supported setting
@@ -30,10 +30,10 @@ Enabling the EU supported setting limits Advanced Customer Support (ACS) that is
 
 By enabling this setting, EU supported services have strict access controls to ensure the data you store and process is restricted and controlled by the IBM support team in the EU region. If {{site.data.keyword.Bluemix_notm}} experts that are outside of the European region need access to this data, an EU support team member reviews the access request. The EU support team member provides necessary access to the global cloud expert only to the requested system, and only for a specific timeframe after which access is revoked. Throughout this process, your data is always protected.
 
-  1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage > Account**, and select **Account settings**.
-  2. Click **On**.
-  3. Read the information about enabling the setting, and select **I understand and agree to these terms**.
-  4. Click **On**.
+   1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage > Account**, and select **Account settings**.
+   2. Click **On**.
+   3. Read the information about enabling the setting, and select **I understand and agree to these terms**.
+   4. Click **On**.
 
    After you enable the setting, you can use the EU Supported filter option to search the catalog for products that have EU-supported pricing plans.
 
@@ -75,9 +75,9 @@ Accounts that enable the HIPAA Supported setting still have access to the full c
 2. For the HIPAA Supported option, click **On**.
 3. Read the information about enabling this setting.
 
-  You can't disable the setting after you enable it.
-  {: note}
+   You can't disable the setting after you enable it.
+   {: note}
 
 4. Select **Accept**, and click **Submit**.
 
-  After you enable the setting, you can use the HIPAA Enabled tag to search the catalog for products that are HIPAA enabled.
+   After you enable the setting, you can use the HIPAA Enabled tag to search the catalog for products that are HIPAA enabled.

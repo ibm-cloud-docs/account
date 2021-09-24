@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-06-10"
+lastupdated: "2021-09-22"
 
 keywords: change owner, transfer account, transfer account ownership, switch owner, transfer owner
 
@@ -20,8 +20,8 @@ subcollection: account
 # Transferring ownership of your account
 {: #transfer}
 
-You can transfer your {{site.data.keyword.cloud}} account to a different owner by creating a support case with information about the new owner. Only Pay-As-You-Go or Subscription accounts can be transferred.
-{:shortdesc}
+You can transfer your {{site.data.keyword.cloud}} account to a different owner by creating a support case with information about the new owner. You can transfer only Pay-As-You-Go or Subscription accounts.
+{: shortdesc}
 
 ## Transferring an account that you own
 {: #transfer-own}
@@ -52,4 +52,4 @@ In the support case to request an account transfer, you must attach an official 
 
    ![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-faq.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.")
 
-To create the support case, go to **Support**, and click **Create a case** in the console. Attach the official request document to the case before you submit it.
+To create the support case, go to **Support**, and click **Create a case**. Attach the official request document to the case before you submit it.

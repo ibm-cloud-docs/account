@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2020
-lastupdated: "2020-06-09"
+  years: 2015, 2021
+lastupdated: "2021-09-22"
 
 keywords: application programming interface key, API key, API, classic infrastructure API key, IBM Cloud API key
 
@@ -21,7 +21,7 @@ subcollection: account
 {: #manapikey}
 
 An application programming interface key (API key) is a unique code that is passed in to an API to identify the calling application or user. API keys are used to track and control how the API is being used, for example to prevent malicious use or abuse of the API. The API key often acts as both a unique identifier and a secret token for authentication, and is assigned a set of access that is specific to the identity that is associated with it.
-{:shortdesc}
+{: shortdesc}
 
 To view your API keys, go to **Manage** > **Access (IAM)** > **API keys**. 
 
@@ -61,7 +61,7 @@ Some services in {{site.data.keyword.Bluemix_notm}} might provide an API key whe
 
 ## Working with API keys
 
-To manage the {{site.data.keyword.Bluemix_notm}} API keys that are associated with your user identity or the ones that you have access to manage for other users in the account, go to **Manage** &gt; **Access (IAM)** &gt; **API keys**. 
+To manage the {{site.data.keyword.Bluemix_notm}} API keys that are associated with your user identity or the ones that you have access to manage for other users in the account, go to **Manage** > **Access (IAM)** > **API keys**. 
 
 On the {{site.data.keyword.cloud_notm}} API keys page, you can create, edit, or delete {{site.data.keyword.cloud_notm}} API keys for yourself, and you can manage all classic infrastructure API keys for users to which you are an ancestor in the user hierarchy. This means you can manage API keys for all users you invited to the account, or your child users invited to the account, and so on. In addition, if you are the account owner or a user with the required access to manage other user's API keys in the account, you can use the **View** filter to list and manage those API keys.
 
@@ -70,12 +70,12 @@ On the {{site.data.keyword.cloud_notm}} API keys page, you can create, edit, or 
 
 By default, you always have access to create your own API keys, and then update and delete them as needed. You also can manage your own classic infrastructure API key and any users' classic infrastructure API keys who you are an ancestor of in the classic infrastructure user hierarchy, meaning you invited the user or someone you invited to the account invited the user, and so on.
 
-If the Restrict API key creation IAM account setting is enabled, then everyone in the account is blocked from creating API keys, including the account owner, unless they are assigned explicit access. For more information, see [Restricting users from creating API keys](/docs/account?topic=account-allow-api-create).
+If the **Restrict API key creation IAM account setting** is enabled, everyone in the account is blocked from creating API keys, including the account owner, unless they are assigned explicit access. For more information, see [Restricting users from creating API keys](/docs/account?topic=account-allow-api-create).
 {: important}
 
 If you are the account owner or a user with the required access, you can access other user's API keys or service ID API keys by using the **View** filter on the API keys page. You can edit or delete the API keys depending on your assigned access. You see only the filter options for the type of API keys that you have access to view and manage.
 
-| Filter Options | Displayed API Keys | Required Access | Allowed Actions |
+| Filter options | Displayed API keys | Required access | Allowed actions |
 |-------------------|------------------|------------------|-------------|
 | My {{site.data.keyword.cloud_notm}} API keys      | Your {{site.data.keyword.cloud_notm}} API keys | No access required | View, create, edit, delete |
 | All {{site.data.keyword.cloud_notm}} user API keys | All {{site.data.keyword.cloud_notm}} API keys created by all users in the account | Administrator role on the IAM Identity service | View, edit, and delete |

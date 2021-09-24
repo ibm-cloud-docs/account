@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-02-25"
+lastupdated: "2021-09-22"
 
 keywords: troubleshoot account, upgrade account, upgrade issue
 subcollection: account
@@ -36,8 +36,8 @@ Your email client or email server might be blocking the emails sent from `no_rep
 Check your inbox and your spam folder for the email.
 {: tsResolve}
 
-  * Check for filters or settings in your email program that delete email or route email to a location other than your inbox. 
-  * Make sure that your spam filter or security software is allowing emails with links through to your email address.
-  * Contact your email provider or administrator to ask them to check for any configuration that blocks email from `no_reply@cloud.ibm.com`.
+* Check for filters or settings in your email program that delete email or route email to a location other than your inbox. 
+* Make sure that your spam filter or security software is allowing emails with links through to your email address.
+* Contact your email provider or administrator to ask them to check for any configuration that blocks email from `no_reply@cloud.ibm.com`.
 
 

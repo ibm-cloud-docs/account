@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-02-21"
+lastupdated: "2021-09-22"
 
 keywords: troubleshoot account, browser issue, console error 
 
@@ -38,5 +38,6 @@ An issue with the browser is causing you to not return to the {{site.data.keywor
 
 Use one of the following options:
 {: tsResolve}
- * Close your browser, clear the cache and cookies, then try to log in again.
- * Log in from the [{{site.data.keyword.Bluemix_notm}} console](https://{DomainName}){: external}.
+
+* Close your browser, clear the cache and cookies, then try to log in again.
+* Log in from the [{{site.data.keyword.Bluemix_notm}} console](https://{DomainName}){: external}.

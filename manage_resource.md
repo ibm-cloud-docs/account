@@ -43,6 +43,7 @@ Not all services support the use of resource groups and IAM currently. All servi
 
 ## Required access for creating resources
 {: #creating-resources}
+
 For users in your account to be able to create resources from the catalog and assign them to a resource group, they must be assigned two access policies:
 
 * A policy with viewer role or higher on the resources group itself

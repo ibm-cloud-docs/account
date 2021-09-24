@@ -2,7 +2,8 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-09-23"
+  
+lastupdated: "2021-09-24"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, enterprise users, enterprise access, enterprise tutorial
 
@@ -55,6 +56,7 @@ Enterprises are created from an existing Subscription account. When you create t
 4. Review the information about the impact to your account, and select **I understand the impact to my account**. Then, click **Create**. The account is now permanently part of the enterprise and can't be removed.
 
 After your enterprise is created, you are directed to the enterprise dashboard. From here, you can view the enterprise details, accounts, users, and billing information. Go to the **Accounts** page to view your enterprise structure, where you see the following accounts:
+
 * An enterprise account with the same name as your enterprise. This account is used for enterprise management.
 * The account that you created the enterprise from. Users can continue working with resources in the account unaffected.
 
