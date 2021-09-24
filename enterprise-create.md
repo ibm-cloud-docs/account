@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, multiple account, video
 
@@ -72,21 +72,21 @@ Click **Accounts** to view your enterprise hierarchy, which contains two account
 
 1. Log in, and select the account.
 
-   ```
+   ```bash
    ibmcloud login
    ```
    {: codeblock}
 
 1. Create the enterprise by running the [`ibmcloud enterprise create`](/docs/account?topic=cli-ibmcloud_enterprise#ibmcloud_enterprise_create) command, where `NAME` is a unique name to identify the enterprise.
 
-   ```
+   ```bash
    ibmcloud enterprise create NAME [-d, --domain DOMAIN_NAME] [--primary-contact-id PRIMARY_CONTACT_USER_ID]
    ```
    {: codeblock}
 
    For example, the following command creates an enterprise that is named `Example Corp Enterprise` with the `examplecorp.com` domain.
 
-   ```
+   ```bash
    ibmcloud enterprise create "Example Corp Enterprise" -d examplecorp.com
    ```
    {: codeblock}
@@ -98,14 +98,14 @@ Click **Accounts** to view your enterprise hierarchy, which contains two account
    You can specify the IBMid for a different user on the `--primary-contact-id` option. The same user is assigned to both roles.
 1. Review the impact to your account, and confirm that you want to continue by entering `y`.
 
-   ```
+   ```text
    Account abcde12345fghij67890 will be incorporated into enterprise My new enterprise
    (which cannot be undone). Do you want to proceed? [y/N]> y
    ```
 
 After the enterprise is created, two new IDs are displayed. The first ID is associated with the enterprise, and the second ID identifies the enterprise account, which you use to manage the enterprise.
 
-```
+```text
 ID:                      09876jihgf54321edcba   
 Enterprise Account ID:   edcba12345jihgf67890
 ```
@@ -224,21 +224,21 @@ You can create an enterprise by using Terraform.
   
 3. Initialize the Terraform CLI.
 
-   ```
+   ```terraform
    terraform init
    ```
    {: pre}
    
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the enterprise.
 
-   ```
+   ```terraform
    terraform plan
    ```
    {: pre}
 
 5. Create the enterprise.
 
-   ```
+   ```terraform
    terraform apply
    ```
    {: pre}

@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: authorizations, service to service access, access between services, dependent service, source service, target service, assigned access, access policies
 
@@ -53,9 +53,9 @@ You must have access to the target service to create an authorization between se
 2. Click **Create**.
 3. Select a source service and specify whether you want the authorization to be for all instances or only a specific instance in the account or instances only in a certain resource group. 
 4. Select a target service and specify whether you want the authorization to be for all instances or only a specific instance in the account or instances only in a certain resource group.
-4. Optional: Select **Enable authorization to be delegated** to allow the source service to delegate its access to any dependent services. This option is displayed only if the source service has dependent services. By selecting this option, policies are automatically created by the source service for the dependent services.
-5. Select a role to assign access to the source service that accesses the target service.
-6. Click **Authorize**.
+5. Optional: Select **Enable authorization to be delegated** to allow the source service to delegate its access to any dependent services. This option is displayed only if the source service has dependent services. By selecting this option, policies are automatically created by the source service for the dependent services.
+6. Select a role to assign access to the source service that accesses the target service.
+7. Click **Authorize**.
 
 ## Creating an authorization by using the CLI
 {: #auth-cli}
@@ -65,7 +65,7 @@ To authorize a source service access a target service, run the `ibmcloud iam aut
 
 The following sample uses mock data to create a policy where a specific source service instance of {{site.data.keyword.cos_full_notm}} is authorized to access a specific target service instance of {{site.data.keyword.keymanagementservicelong_notm}}:
 
-```
+```bash
 ibmcloud iam authorization-policy-create cloud-object-storage kms Reader --source-service-instance-id 123123 --target-service-instance-id 456456
 ```
 {: codeblock}
@@ -419,7 +419,7 @@ You can remove any authorization between services in the account if you are assi
 1. In the console, click **Manage** &gt; **Access (IAM)**, and select **Authorizations**.
 2. Identify the row for the authorization that you want to remove from the account.
 3. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Remove**.
-5. Select **Remove**.
+4. Select **Remove**.
 
 If the source service is removed from the account, any policies that are created by that service for its dependent services are deleted automatically. Similarly, if the dependent service is removed from the account, any access policies that are delegated to that service are also deleted.
 {: note}
@@ -433,7 +433,7 @@ You can remove any authorization between services in the account if you are assi
 To authorize a source service access a target service, run the `ibmcloud iam authorization-policy-create` command. 
 
 The following sample deletes an authorization policy:
-```
+```bash
 ibmcloud iam authorization-policy-delete 12345678-abcd-1a2b-a1b2-1234567890ab
 ```
 {: codeblock}

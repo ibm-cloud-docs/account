@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2021
 
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: migrated permissions, SoftLayer account permissions, migrated permission access group, migrated classic infrastructure permissions
 
@@ -61,7 +61,7 @@ To create an access group, complete the following steps:
 2. Click **Create**.
 3. Enter a name and an optional description for your group, and click **Create**.
 4. Click **Add users** on the **Users** tab.
-3. Select the users that you want to add from the list, and click **Add to group**. You can complete the same action from the **Service IDs** tab if you want to add any service IDs to the group.
+5. Select the users that you want to add from the list, and click **Add to group**. You can complete the same action from the **Service IDs** tab if you want to add any service IDs to the group.
 
 After you set up your group with users and service IDs, assign access to the group. Remember, any policy that you set for the group applies to all members of the group.
 
@@ -72,12 +72,12 @@ After you set up your group with users and service IDs, assign access to the gro
 5. Select the **Viewer** role.
 6. Click **Add**.
 7. To assign a second access policy for the ability to view support cases, select the **Support Center** service.
-10. Select the **Viewer** role.
-11. Click **Add**.
-12. To assign a third access policy for the ability to view all support cases regardless of how the account owner has set the account user visibility setting, select the **User Management** service.
-15. Select the **Viewer** role.
-16. Click **Add**.
-17. Click **Assign**. 
+8. Select the **Viewer** role.
+9. Click **Add**.
+10. To assign a third access policy for the ability to view all support cases regardless of how the account owner has set the account user visibility setting, select the **User Management** service.
+11. Select the **Viewer** role.
+12. Click **Add**.
+13. Click **Assign**. 
 
 Three policies are now assigned to your group:
 

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: tags, delete tags, unused tags, delete tags in  the console, delete  tags cli, delete tags api
 
@@ -48,7 +48,7 @@ When you delete an access management tag from the account, any associated IAM po
 
 Log in to [{{site.data.keyword.cloud}} CLI](/docs/cli?topic=cli-getting-started) and select your account to run the **`ibmcloud resource tag-delete`** command for deleting only one or all of the unused tags. The following example deletes the `MyTag` user tag:
 
-```
+```bash
 ibmcloud resource tag-delete --tag-names MyTag
 ```
 {: codeblock}
@@ -210,21 +210,21 @@ You can delete tags by using Terraform.
 
 1. Initialize the Terraform CLI.
 
-   ```
+   ```terraform
    terraform init
    ```
    {: pre}
 
 1. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to delete tags.
 
-   ```
+   ```terraform
    terraform plan
    ```
    {: pre}
 
 1. Delete the tags.
 
-   ```
+   ```terraform
    terraform destroy
    ```
    {: pre}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-08-31"
+lastupdated: "2021-09-24"
 
 keywords: catalog, private catalog, catalog management service, public catalog, enterprise account, child account, account group, enterprise, IBM Cloud catalog
 
@@ -70,7 +70,7 @@ To build on the example in the previous section, all account groups and accounts
 4. Select **Compliance** > **IAM-enabled**. 
 5. Review the **Preview** table to confirm your selections, and click **Update**. 
 6. Switch to a child account in the account group by selecting it from the list of accounts in console menu bar. 
-6. Verify your updates in the catalog by going to **Catalog** > **Services**.
+7. Verify your updates in the catalog by going to **Catalog** > **Services**.
 {: ui}
 
 ## Managing products at the enterprise level by using the CLI
@@ -87,7 +87,7 @@ You can restrict access to a subset of products for child account groups and acc
 
 1. Create a new filter.
 
-   ```
+   ```bash
    ibmcloud catalog filter create [--catalog CATALOG] [--category CATEGORY] [--compliance COMPLIANCE] [--deployment-target TARGET] [--exclude-list LIST] [--include-all ALL] [--include-list LIST] [--offering-format FORMAT] [--pricing-plan PLAN] [--provider PROVIDER] [--release RELEASE] [--type TYPE]
    ```
    {: codeblock}

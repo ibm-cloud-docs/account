@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: enterprise, add account, import account, create account
 
@@ -74,21 +74,21 @@ To import an existing account, complete the following steps:
 
 1. Find the ID of the account that you want to import to the enterprise.
 
-   ```
+   ```bash
    ibmcloud account list
    ```
    {: codeblock}
 
 1. If you want to add the account to an account group, find the names and IDs of existing account groups in the enterprise.
 
-   ```
+   ```bash
    ibmcloud enterprise account-groups --recursive
    ```
    {: codeblock}
 
 1. Import the account into the enterprise, specifying the account ID for the `--account ID` parameter. If you don't specify a parent account group, the account is added directly under the enterprise.
 
-   ```
+   ```bash
    ibmcloud enterprise account-import --account-id ID
    [--parent-account-group ACCOUNT_GROUP_NAME | --parent-account-group-id ACCOUNT_GROUP_ID]
    ```
@@ -192,21 +192,21 @@ You can import an existing account in an enterprise resource by using Terraform.
 
 3. Initialize the Terraform CLI.
 
-   ```
+   ```terraform
    terraform init
    ```
    {: pre}
 
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to import the account.
 
-   ```
+   ```terraform
    terraform plan
    ```
    {: pre}
 
 5. Import the account.
 
-   ```
+   ```terraform
    terraform apply
    ```
 
@@ -234,14 +234,14 @@ After you create the account, the account owner can log in to the account to inv
 
 1. If you want to add the account to an account group, find the names and IDs of existing account groups.
 
-   ```
+   ```bash
    ibmcloud enterprise account-groups --recursive
    ```
    {: codeblock}
 
 1. Create the account by running the following command. If you don't specify a parent account group, the account is added directly under the enterprise. To make a different user the account owner, specify their IBMid on the `--owner` option.
 
-   ```
+   ```bash
    ibmcloud enterprise account-create NAME
    [--parent-account-group ACCOUNT_GROUP_NAME] [--owner USER_ID]
    ```
@@ -354,21 +354,21 @@ You can create new accounts within your enterprise by using Terraform.
   
 3. Initialize the Terraform CLI.
 
-   ```
+   ```terraform
    terraform init
    ```
    {: pre}
 
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the account.
 
-   ```
+   ```terraform
    terraform plan
    ```
    {: pre}
 
 5. Create the account.
 
-   ```
+   ```terraform
    terraform apply
    ```
    {: pre}

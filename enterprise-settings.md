@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: enterprise, enterprise settings, manage enterprise, view enterprise, rename enterprise
 
@@ -33,9 +33,9 @@ To manage enterprise settings, you need the Administrator or Editor role on the 
 {: ui}
 
 To view your enterprise dashboard, go to **Manage > Enterprise** in the {{site.data.keyword.Bluemix_notm}} console. The dashboard provides an overview of accounts, users, and subscription credit in your enterprise. The dashboard has quick links so that you can perform the following common actions:
-   * [Add new or existing accounts to your enterprise](/docs/account?topic=account-enterprise-add)
-   * [Invite users to the enterprise account](/docs/account?topic=account-iamuserinv)
-   * [View and manage subscription credit](/docs/billing-usage?topic=billing-usage-subscriptions)
+* [Add new or existing accounts to your enterprise](/docs/account?topic=account-enterprise-add)
+* [Invite users to the enterprise account](/docs/account?topic=account-iamuserinv)
+* [View and manage subscription credit](/docs/billing-usage?topic=billing-usage-subscriptions)
 
 Also, you can rename your enterprise by clicking **Rename** in the Enterprise details section.
 
@@ -45,14 +45,14 @@ Also, you can rename your enterprise by clicking **Rename** in the Enterprise de
 
 * View enterprise information such as the name, domain, owner, and creation and update dates.
 
-   ```
+   ```bash
    ibmcloud enterprise show
    ```
    {: codeblock}
   
 * Rename the enterprise by specifying the new name on the `-n` option in the following command.
 
-   ```
+   ```bash
    ibmcloud enterprise update -n NEW_NAME
    ```
    {: codeblock}

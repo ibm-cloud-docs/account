@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: IBM Cloud notifications, notification preferences, email preferences, user notifications, distribution list, webhooks, Slack webhooks
 
@@ -27,7 +27,7 @@ In addition to adding email addresses, you can also add up to 10 webhooks to a d
 
 When you receive a notification through a webhook, a payload is being sent to your given webhook endpoint (URL), and informs you about all the details of an occurring event. See the following example:
 
-```
+```json
 {
   "accountId": "2dd2d2de4add4a098ebd0999be5cc555",
   "body": [

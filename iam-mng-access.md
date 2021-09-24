@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access 
 
@@ -74,7 +74,7 @@ If a user doesn't have a role on the resource group that contains the resources,
 {: cli}
 
 1. Log in to {{site.data.keyword.cloud}} CLI. If you have multiple accounts, you are prompted to select which account to use. If you do not specify a region with the `-r` flag, you must also select a region.
-    ```
+    ```bash
     ibmcloud login
     ```
     {: codeblock}
@@ -87,13 +87,13 @@ If a user doesn't have a role on the resource group that contains the resources,
 2. Create an access policy and assign it to a user or a service ID.
 
  * To assign access to an individual resource in the account or access to all resources in the account, enter the [**`ibmcloud iam user-policy-create`**](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_create) command. This example gives `name@example.com` `Administrator` role for all instances of `sample-service` service:
-    ```
+    ```bash
     ibmcloud iam user-policy-create name@example.com --roles Administrator --service-name sample-service
     ```
     {: codeblock}
 
  * To assign access to a service ID or to more services in the account, enter the [**`ibmcloud iam service-policy-create`**](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_service_policy_create) command. This example grants service `test` the `Administrator` role for all account management services:
-    ```
+    ```bash
     ibmcloud iam service-policy-create test --roles Administrator --account-management
     ```
     {: codeblock}
@@ -332,17 +332,17 @@ To assign access to all resources in a resource group or to just one service wit
 
 Enter the [**`ibmcloud user-policy-create`**](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_create) command to assign access to all resources in a resource group or to just one service within a resource group. This example gives `name@example.com` `Operator` role for resource group with ID `dda27e49d2a1efca58083a01dfde18f6`:
 
-   ```
+   ```bash
    ibmcloud iam user-policy-create name@example.com --roles Operator --resource-type resource-group --resource dda27e49d2a1efca58083a01dfde18f6
    ```
    {: codeblock}
 
 Enter the [**`ibmcloud iam service-policy-create`**](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_service_policy_create) command to assign access to all resources in a resource group or to just one service within a resource group. This example gives service `test` `Administrator` role for resource group called `sample-resource-group`:
 
-   ```
-   ibmcloud iam service-policy-create test --roles Administrator --resource-group-name sample-resource-group
-   ```
-   {: codeblock}
+```bash
+ibmcloud iam service-policy-create test --roles Administrator --resource-group-name sample-resource-group
+```
+{: codeblock}
 
 
 ### Assigning access within a resource group by using the API
@@ -371,17 +371,17 @@ You can also remove users and service IDs from access groups by selecting the ch
 
 To remove a user policy by using the CLI, you can use the [**`ibmcloud iam user-policy-delete`**](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_delete) command.
 
-   ```
-   ibmcloud iam user-policy-delete USER_ID POLICY_ID [-f, --force]
-   ```
-   {: codeblock}
+```bash
+ibmcloud iam user-policy-delete USER_ID POLICY_ID [-f, --force]
+```
+{: codeblock}
 
 To remove a service ID policy by using the CLI, you can use the [**`ibmcloud iam service-policy-delete`**](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_service_policy_delete) command.
 
-   ```
-   ibmcloud iam service-policy-delete SERVICE_ID POLICY_ID [-f, --force]
-   ```
-   {: codeblock}
+```bash
+ibmcloud iam service-policy-delete SERVICE_ID POLICY_ID [-f, --force]
+```
+{: codeblock}
 
 ## Removing access by using the API
 {: #remove-access-api}
@@ -468,10 +468,10 @@ If you need more access, you must contact the account owner to update your acces
 
 If you need to review your assigned access in an account that you've been added to, you can use the [**`ibmcloud iam user-policies`**](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_user_policies) command. This example lists policies of user `name@example.com`:
 
-   ```
-   ibmcloud iam user-policies name@example.com
-   ```
-   {: codeblock} 
+```bash
+ibmcloud iam user-policies name@example.com
+```
+{: codeblock} 
 
 ## Reviewing assigned access by using the API
 {: #review-your-access-api}

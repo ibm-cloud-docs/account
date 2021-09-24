@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-08-31"
+lastupdated: "2021-09-24"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -57,15 +57,15 @@ The process to onboard software to your account includes importing a version to 
 
 For containerized apps, complete the following prerequisites:
 
-   1. Create your [Kubernetes cluster](/docs/containers?topic=containers-getting-started) or [Red Hat OpenShift cluster](/docs/openshift?topic=openshift-getting-started).
-   2. For deployments to {{site.data.keyword.cloud_notm}} Kubernetes Service, [set up your Helm chart](/docs/containers?topic=containers-helm). 
-   3. For deployments to Red Hat OpenShift, set up your [Helm chart](/docs/openshift?topic=openshift-helm) or [Operator](/docs/openshift?topic=openshift-operators).
+1. Create your [Kubernetes cluster](/docs/containers?topic=containers-getting-started) or [Red Hat OpenShift cluster](/docs/openshift?topic=openshift-getting-started).
+2. For deployments to {{site.data.keyword.cloud_notm}} Kubernetes Service, [set up your Helm chart](/docs/containers?topic=containers-helm). 
+3. For deployments to Red Hat OpenShift, set up your [Helm chart](/docs/openshift?topic=openshift-helm) or [Operator](/docs/openshift?topic=openshift-operators).
 
 For virtual server images, complete the following prerequisites:
 
-   1. Review the list of [supported images](/docs/vpc?topic=vpc-about-images).
-   2. Create your [Terraform template](/docs/schematics?topic=schematics-getting-started).
-   3. Create an instance of [{{site.data.keyword.cloud_notm}} Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage) and add your image to a bucket.
+1. Review the list of [supported images](/docs/vpc?topic=vpc-about-images).
+2. Create your [Terraform template](/docs/schematics?topic=schematics-getting-started).
+3. Create an instance of [{{site.data.keyword.cloud_notm}} Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage) and add your image to a bucket.
  
 ## Creating a private catalog
 {: #create-catalog}
@@ -266,13 +266,13 @@ After you validate your software, you're ready to make it available to all users
 Complete the following steps to add your software by using the CLI. You can use this task in a CI/CD process.
     
 1. Add software to your private catalog. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#create-offering) for adding software to your private catalog. 
-    ```
+    ```bash
     ibmcloud catalog offering create --catalog "Name of catalog" --zipurl https://software.url.com.tgz
     ```
     {: codeblock}
     
 1. Add the **Developer tools** category. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#add-category-offering) for adding a category. 
-    ```
+    ```bash
     ibmcloud catalog offering add-category --catalog "Name of catalog" --offering "software-offering" --category "Developer tools"
     ```
     {: codeblock}
@@ -282,19 +282,19 @@ Complete the following steps to add your software by using the CLI. You can use 
     You need the version locator for your software. To find it, run the **`ibmcloud catalog offering list --catalog "Name of catalog"`** command, and search for the particular version of your software. Also, use the cluster that you created when you set up the required resources. 
     {: important}
     
-    ```
+    ```bash
     ibmcloud catalog offering validate --version-locator <LOCATOR> --cluster <CLUSTER> --namespace "software-offering"
     ```
     {: codeblock}
     
     Deploying the software can take a few minutes. You can check the validation status by querying the product validation state. The validation is complete when the state is Valid. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#validate-status-offering) for validation status.
-    ```
+    ```bash
     ibmcloud catalog offering validate-status --version-locator <LOCATOR>
     ```
     {: codeblock}
     
 1. Publish your software to make it available to users in your account. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#publish-offering-to-account) for publishing to your account.
-    ```
+    ```bash
     ibmcloud catalog offering publish-to-account --version-locator <LOCATOR>
     ```
     {: codeblock}
@@ -374,23 +374,24 @@ You can create a private catalog by using Terraform.
   
 3. Initialize the Terraform CLI.
 
-   ```
+   ```bash
    terraform init
    ```
    {: pre}
    
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the catalog.
 
-   ```
+   ```bash
    terraform plan
    ```
    {: pre}
 
 5. Create the catalog.
 
-   ```
+   ```bash
    terraform apply
    ```
+   {: pre}
 
 ## Importing a product to your catalog by using Terraform
 {: #create-cicd-product-terraform}
@@ -417,21 +418,21 @@ You can import a product to your private catalog by using Terraform.
   
 3. Initialize the Terraform CLI.
 
-   ```
+   ```terraform
    terraform init
    ```
    {: pre}
    
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to add your product.
 
-   ```
+   ```terraform
    terraform plan
    ```
    {: pre}
 
 5. Add your product.
 
-   ```
+   ```terraform
    terraform apply
    ```
 
@@ -460,21 +461,21 @@ After adding your product, you can add a version of your software by using Terra
   
 3. Initialize the Terraform CLI.
 
-   ```
+   ```terraform
    terraform init
    ```
    {: codeblock}
    
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to add a version.
 
-   ```
+   ```terraform
    terraform plan
    ```
    {: codeblock}
 
 5. Add the version.
 
-   ```
+   ```terraform
    terraform apply
    ```
    {: codeblock}

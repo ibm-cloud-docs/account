@@ -61,25 +61,25 @@ Complete the following steps to create a draft version, update it, and merge the
    {: important}
     
 1. Create a draft version of your software.
-    ```
+    ```bash
     ibmcloud catalog offering create-draft --version-locator <VERSION_LOCATOR>
     ```
     {: codeblock}
     
 1. Set another category.
-    ```
+    ```bash
     ibmcloud catalog offering add-category --catalog "your-private-catalog" --offering "your-software" --category "category-type"
     ```
     {: codeblock}
     
 1. Merge the draft update to your software. This action merges the update to the version of your software that's published in your account.   
-    ```
+    ```bash
     ibmcloud catalog offering merge-draft --version-locator **<VERSION_LOCATOR_OF_DRAFT_VERSION>**
     ```
     {: codeblock}
     
 1.  Search for the software in the {{site.data.keyword.cloud_notm}} catalog.
-    ```
+    ```bash
     ibmcloud catalog get --public | grep your-software
     ```
     {: codeblock}
@@ -167,21 +167,21 @@ You can update an existing version of your software by using Terraform.
   
 3. Initialize the Terraform CLI.
 
-   ```
+   ```terraform
    terraform init
    ```
    {: codeblock}
    
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to update the version.
 
-   ```
+   ```terraform
    terraform plan
    ```
    {: codeblock}
 
 5. Update the version.
 
-   ```
+   ```terraform
    terraform apply
    ```
    {: codeblock}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: deprecate software, restore software, catalog, catalogs, software, private catalog
 
@@ -70,8 +70,8 @@ When you restore a deprecated version, you are required to validate and publish 
 1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg "Actions"), and select **Restore**.
 1. Confirm that you want to restore the deprecated version.
 1. Click the Validate offering tab.
-2. Select a cluster from the **Cluster** list, and select **apache-test-deployment** from the **Namespace** list.
-3. Click **Validate**.
+1. Select a cluster from the **Cluster** list, and select **apache-test-deployment** from the **Namespace** list.
+1. Click **Validate**.
 1. When the software is validated, click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg "Actions"), and select **Merge changes**. 
 
 ### Validate the version is restored
@@ -91,13 +91,13 @@ You need the version locator for your software version. To find it, run the **`i
 {: important}
 
 1. Deprecate the existing software version.
-    ```
+    ```bash
     ibmcloud catalog offering deprecate --version-locator <VERSION_LOCATOR>
     ```
     {: codeblock}
     
 1. Search the catalog and verify that apache 2.4.39 is deprecated:
-    ```
+    ```bash
     ibmcloud catalog offering search --catalog "My first catalog"
     ```
     {: codeblock}
@@ -109,26 +109,26 @@ You need the version locator for your software version. To find it, run the **`i
 When you restore a deprecated version, you are required to validate and publish the software again.
 
 1. Restore the deprecated version. This action creates a draft version.
-    ```
+    ```bash
     ibmcloud catalog offering restore --version-locator <VERSION_LOCATOR>
     ```
     {: codeblock}
         
 1. Validate the software:
-    ```
+    ```bash
     ibmcloud catalog offering validate --version-locator **<VERSION_LOCATOR_OF_DRAFT_VERSION>** --cluster <CLUSTER> --namespace "apache-test-deployment"
     ```
     {: codeblock}
         
 1. Merge the draft version. This action automatically makes version 2.4.39 available in the catalog.  
       
-    ```
+    ```bash
     ibmcloud catalog offering merge-draft --version-locator **<VERSION_LOCATOR_OF_DRAFT_VERSION>**
     ```
     {: codeblock}
         
 1. Search the catalog and verify that apache 2.4.39 is listed.
-    ```
+    ```bash
     ibmcloud catalog offering get --catalog "My first catalog" --offering "apache"
     ```
     {: codeblock}

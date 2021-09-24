@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: Cloud Foundry access, assign access, add user to organization, Cloud Foundry roles
 
@@ -62,6 +62,6 @@ If you need to review your assigned access in an account that you have been adde
 1. In the console, click **Manage** > **Access (IAM)**, and select **Users**.
 2. Select your name.
 3. Click **Cloud Foundry access**.
-3. Expand the org row, and review your assigned roles.
+4. Expand the org row, and review your assigned roles.
 
 If you need additional access, you must contact the organization manager or account owner to update your assigned Cloud Foundry role.

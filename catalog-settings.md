@@ -66,18 +66,18 @@ If your account is a parent account in an {{site.data.keyword.cloud_notm}} enter
 Set filters at a private catalog level for fine-grained control of which products in the public catalog are available only to the users you choose.   
 
 1. In the console, go to **Manage** > **Catalogs**, **Private catalogs**. 
-2. Select a catalog from the list to navigate to its details page. 
+1. Select a catalog from the list to navigate to its details page. 
 
    The **Products in the {{site.data.keyword.cloud_notm}} catalog** table that's displayed on the page shows the list of products that are available at the account level. The availability is based on the filters the account owner or administrator set. Account-level filters apply to all the private catalogs in the account. 
    {: tip}
   
-3. Click **Manage filters**.
-3. Select to include or exclude all products in the public catalog. 
-4. Set one or more [filters](#catalog-filters-customize) to customize what products are available by category. 
-5. (Optional) Add exceptions to the filter rules that you set in the previous step. 
-6. Click **Update**. 
-7. Go to the Settings page and turn off the visibility of the public catalog.  
-7. To give users access to work with the products in the private catalog, assign them the [viewer role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management).
+1. Click **Manage filters**.
+1. Select to include or exclude all products in the public catalog. 
+1. Set one or more [filters](#catalog-filters-customize) to customize what products are available by category. 
+1. (Optional) Add exceptions to the filter rules that you set in the previous step. 
+1. Click **Update**. 
+1. Go to the Settings page and turn off the visibility of the public catalog.  
+1. To give users access to work with the products in the private catalog, assign them the [viewer role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management).
 
    For more detailed examples of how you can leverage filtering at the private catalog level, see [Customizing your private catalogs](/docs/account?topic=account-restrict-by-user).
 
@@ -87,7 +87,7 @@ Set filters at a private catalog level for fine-grained control of which product
 
 Users in your account have access to all products in the {{site.data.keyword.cloud_notm}} public catalog by default. You can make products available only to the users you choose by turning off visibility to the {{site.data.keyword.cloud_notm}} catalog and adding the products to your private catalogs. Use the following command to turn off visibility of the public catalog to all users in your account.
 
-```
+```bash
 ibmcloud catalog filter hide-ibm-public-catalog
 ```
 {: codeblock}
@@ -103,7 +103,7 @@ If your account is a parent account in an {{site.data.keyword.cloud_notm}} enter
 
 1. Create a new filter. 
 
-   ```
+   ```bash
    ibmcloud catalog filter create [--catalog CATALOG] [--category CATEGORY] [--compliance COMPLIANCE] [--deployment-target TARGET] [--exclude-list LIST] [--include-all ALL] [--include-list LIST] [--offering-format FORMAT] [--pricing-plan PLAN] [--provider PROVIDER] [--release RELEASE] [--type TYPE]
    ```
    {: codeblock}
@@ -121,7 +121,7 @@ Set filters at a private catalog level for fine-grained control of which product
 
 1. Create a new filter. 
 
-   ```
+   ```bash
    ibmcloud catalog filter create [--catalog CATALOG] [--category CATEGORY] [--compliance COMPLIANCE] [--deployment-target TARGET] [--exclude-list LIST] [--include-all ALL] [--include-list LIST] [--offering-format FORMAT] [--pricing-plan PLAN] [--provider PROVIDER] [--release RELEASE] [--type TYPE]
    ```
    {: codeblock}

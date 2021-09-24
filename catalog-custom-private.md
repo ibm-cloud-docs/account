@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: catalog, restrict visibility, hide product, restrict by user, filter catalog, private catalog, catalog management service, public catalog
 
@@ -48,7 +48,7 @@ Make sure you have the [administrator role on the catalog management service](/d
 Run the following command to install the catalogs management plug-in:
 {: cli}
 
-```
+```bash
 ibmcloud plugin install catalogs-management
 ```
 {: codeblock}
@@ -109,7 +109,7 @@ Complete the following steps to create a catalog that includes all products in t
 1. Target a resource group to create a catalog. You can run the `ibmcloud resource groups` command, and then the `ibmcloud target -g "resource group"` command.
 1. Use the following command to create a new private catalog in your account.
 
-   ```
+   ```bash
    ibmcloud catalog create --name CATALOG [--catalog-description "DESCRIPTION"]
    ```
    {: codeblock}
@@ -125,14 +125,14 @@ Complete the following steps to create a catalog that includes a specific set of
 1. Target a resource group to create a catalog. You can run the `ibmcloud resource groups` command, and then the `ibmcloud target -g "resource group"` command.
 1. Create a new private catalog in your account using the following command.
 
-   ```
+   ```bash
    ibmcloud catalog create --name CATALOG [--catalog-description "DESCRIPTION"]
    ```
    {: codeblock}
 
 1. Update the filter to include or exclude a particular product or products and any applicable pricing plans. Make sure to specify your catalog, or the filter will default to the account level. See [Catalogs management CLI](https://cloud.ibm.com/docs/cli?topic=cli-manage-catalogs-plugin#offering-filter) for more command options.
 
-   ```
+   ```bash
    ibmcloud catalog filter offering --offering PRODUCT-NAME
    ```
    {: codeblock}
@@ -142,7 +142,7 @@ Complete the following steps to create a catalog that includes a specific set of
 {: cli}
 
 By default, the {{site.data.keyword.cloud_notm}} public catalog is visible to all users in the account. You can make products available only to the users you choose by turning off visibility to the {{site.data.keyword.cloud_notm}} catalog and adding the products to your private catalogs. Use the following command to turn off visibility of the public catalog to all users in your account.
-```
+```bash
 ibmcloud catalog filter hide-ibm-public-catalog
 ```
 {: codeblock}
@@ -298,21 +298,21 @@ You cannot customize the public catalog and your private catalogs to make specif
   
 3. Initialize the Terraform CLI.
 
-   ```
+   ```terraform
    terraform init
    ```
    {: codeblock}
    
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the catalog.
 
-   ```
+   ```terraform
    terraform plan
    ```
    {: codeblock}
 
 5. Create the catalog.
 
-   ```
+   ```terraform
    terraform apply
    ```
    {: codeblock}

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, attach tags ui, attach tags cli, attach tags api, detach tags ui, detach tags api, detach tags cli
 
@@ -51,14 +51,14 @@ Log in to [{{site.data.keyword.cloud}} CLI](/docs/cli?topic=cli-getting-started)
 
 To attach a tag to a resource, use the [**`ibmcloud resource tag-attach`**](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_tag_attach) command. The allowed values for `tag-type` are `user` for user tags and `access` for access management tags. The default value is `user`. The following example shows how to attach a user tag called `MyTag` to a resource named `MyResource`:
 
-```
+```bash
 ibmcloud resource tag-attach --tag-name MyTag --resource-name  'MyResource'
 ```
 {: codeblock}
 
 An example for attaching an access management tag called `project:myproject` to a resource named `MyResource`:
 
-```
+```bash
 ibmcloud resource tag-attach --tag-names project:myproject --resource-name  'MyResource' --tag-type access 
 ```
 {: codeblock}    
@@ -69,14 +69,14 @@ ibmcloud resource tag-attach --tag-names project:myproject --resource-name  'MyR
 
 To detach a tag from a resource, use the [**`ibmcloud resource tag-detach`**](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_tag_detach) command. An example to detach a user tag called `MyTag` from a resource named `MyResource`:
 
-```
+```bash
 ibmcloud resource tag-detach --tag-names MyTag —resource-name 'MyResource'
 ```
 {: codeblock}
 
 An example to detach an access management tag called `project:myproject` from a resource named `MyResource`:
 
-```
+```bash
 ibmcloud resource tag-detach --tag-names project:myproject —resource-name 'MyResource' --tag-type access
 ```
 {: codeblock}
@@ -457,21 +457,21 @@ You can attach tags by using Terraform.
  
 1. Initialize the Terraform CLI.
 
-   ```
+   ```terraform
    terraform init
    ```
    {: pre}
 
 1. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to attach tags.
 
-   ```
+   ```terraform
    terraform plan
    ```
    {: pre}
 
 1. Attach the tags.
 
-   ```
+   ```terraform
    terraform apply
    ```
    {: pre}

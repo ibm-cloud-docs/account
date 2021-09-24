@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-09-24"
 
 keywords: enterprise, organize accounts, account group, change contact, account group contact 
 
@@ -67,7 +67,7 @@ To update the primary contact for the account group, call the [Enterprise Manage
   -d '{
     "primary_contact_iam_id": "enterpriseAccountIamId"
   }'
-  ```
+```
 {: codeblock}
 {: curl}
 

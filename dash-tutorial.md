@@ -2,7 +2,7 @@
 
 copyright:
    years: 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: dashboard, custom dashboard
 
@@ -45,8 +45,8 @@ First, create a new dashboard and select a template.
 
    The Management template is optimized to provide a mix of billing, access management, and other administrative widgets that Cora needs.
   
-2. Enter your dashboard title in 30 characters or less. 
-3. Next, use the Dashboard settings panel to add relevant widgets to your dashboard. To add widgets, drag the widgets onto your dashboard. Add the **Notes** widget to your dashboard. This widget is where Cora can provide essential information that's custom for the team that she shares the dashboard with. 
+3. Enter your dashboard title in 30 characters or less. 
+4. Next, use the Dashboard settings panel to add relevant widgets to your dashboard. To add widgets, drag the widgets onto your dashboard. Add the **Notes** widget to your dashboard. This widget is where Cora can provide essential information that's custom for the team that she shares the dashboard with. 
 5. Click the **Scope** tab to select from the available resources in the account that you have access to. The scope determines the data that populates for the selected resources. You can filter the resource by group, tag, and location. Cora wants to select only resources that are related to AI and machine learning, so she filters by the resource group that exists for her team's chatbot project. 
    Not all widgets can be scoped. If a widget can't be scoped, the data for all resources is displayed. 
    {: note}

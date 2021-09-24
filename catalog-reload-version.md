@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: private catalog, account catalogs, software, reload, version
 
@@ -66,5 +66,5 @@ To update a published version of your software, you must create a draft, reload 
    The configuration and validation steps vary based on the deployment method.
    {: note}
 
-9. Open the **Actions** menu, and select **Merge changes**.
-10. Click **Merge** to update your original version.
+1. Open the **Actions** menu, and select **Merge changes**.
+1. Click **Merge** to update your original version.

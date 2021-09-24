@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: SoftLayer permissions, classic infrastructure access, classic infrastructure permission, migrated SoftLayer permissions, migrated permission access group
 
@@ -37,24 +37,24 @@ The following graphic shows how classic infrastructure permissions are assigned 
 
 There are four main categories of permissions to choose from: account, devices, network, and services. The following lists provide examples from each category highlighting some of the commonly assigned permissions from each. To view all of the available permissions from each category, go to **Manage** > **Access (IAM)** > **Users**. Then, select a user's name from the list that you can manage access for, then click **Classic infrastructure**. 
 
-**Account**
+Account
 - Add and upgrade storage
 - Manage users
 - Add and upgrade services
 - Add server
 
-**Devices**
+Devices
 - Upgrade server
 - Manage load balancers
 - Manage Firewalls 
 
-**Network**
+Network
 - Add IP addresses
 - VPN administration 
 - Network gateways
 - Security groups
 
-**Services**
+Services
 - Upgrade services
 - Manage DNS
 - Manage SSH keys

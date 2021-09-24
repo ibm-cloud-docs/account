@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key
 
@@ -73,7 +73,7 @@ Upgrade your Lite account to a Pay-As-You-Go account to access the full {{site.d
 
 1. Click **Manage** > **Account**.
 2. Select **Account settings**, and click **Add credit card**.
-1. Enter your credit card information.
+3. Enter your credit card information.
 
 ## Set up account MFA settings
 {: #account-gs-mfa}
@@ -90,9 +90,9 @@ Setting up MFA in your account affects all members of the account. This means th
 
    * **MFA for users with an IBMid**: Require users to authenticate by using an IBMid, password, and time-based one-time passcode (TOTP). You can enable this option for all users or non-federated users. 
    * **MFA for all users (IBMid & supported IdPs)**: Require users to authenticate by using one of the following MFA factors. This option applies to users who are using either an IBMid or an external IdP. 
-    * **Email-based MFA**: Users authenticate by using a security passcode that's sent via email. 
-    * **TOTP MFA**: Users authenticate by using a time-based one-time passcode (TOTP) with an authenticator app, such as {{site.data.keyword.IBM_notm}} Security Verify or Google Authenticator. 
-    * **U2F MFA**: Users authenticate by using a hardware security key that generates a six-digit numerical code. This factor offers the highest level of security. 
+      * **Email-based MFA**: Users authenticate by using a security passcode that's sent via email. 
+      * **TOTP MFA**: Users authenticate by using a time-based one-time passcode (TOTP) with an authenticator app, such as {{site.data.keyword.IBM_notm}} Security Verify or Google Authenticator. 
+      * **U2F MFA**: Users authenticate by using a hardware security key that generates a six-digit numerical code. This factor offers the highest level of security. 
 1. Click **Update**.
 
 The first time that you log in to your account after updating your MFA settings, you need to verify your identity by using two different verification methods. Methods for verification include email, text, or phone call, and you can use any combination of those options to verify your identity. After you verify your identity, you set up and provide details for your authentication factor. 
@@ -174,10 +174,8 @@ IAM access groups provide a way for you to quickly and easily assign access to m
 
    1. Click **Access policies** > **Assign access**.
    2. Select the type of access to assign: 
-    
-    * **IAM services**: Assigns access to IAM-enabled services, which are services that are managed by using IAM access control and assigned to a resource group.
-    * **Account management services**: Assigns access to manage platform services, such as billing, license and entitlements, and enterprises.
-
+      * **IAM services**: Assigns access to IAM-enabled services, which are services that are managed by using IAM access control and assigned to a resource group.
+      * **Account management services**: Assigns access to manage platform services, such as billing, license and entitlements, and enterprises.
    3. Select all roles that apply.
    4. Click **Add** > **Assign**.
   

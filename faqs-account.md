@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite
 
@@ -276,7 +276,7 @@ You can target URLs for any {{site.data.keyword.Bluemix_notm}} console page to a
 
 1. Switch to the account that you want to target, and go to the [Account settings](https://{DomainName}/account/settings) page in the console. In the Account section, find the account ID, such as `a1b2c3d4e5f61234567890fedcba4321`.
 1. Go to the console page that you want to bookmark, and add `?bss_account=<account-id>` to the URL, replacing `<account-id>` with the ID from your account. For example:
-   ```
+   ```text
    https://{DomainName}/billing/usage?bss_account=a1b2c3d4e5f61234567890fedcba4321
    ```
    {: screen}

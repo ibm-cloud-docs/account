@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: enterprise, create account group, organize accounts, move accounts, account group, change contact, account group contact 
 
@@ -68,7 +68,7 @@ To create a new tier in your enterprise hierarchy, create new account groups wit
 
 Create an account group by running the following command. To nest an account group within another account group, specify the name of the account group on the `--parent-account-group` option. If you want a different user to be the contact for the account group, specify their IBMid on the `--primary-contact-id` option.
 
-```
+```bash
 ibmcloud enterprise account-group-create NAME
 [--parent-account-group ACCOUNT_GROUP_NAME] [--primary-contact-id USER_ID]
 ```
@@ -186,14 +186,14 @@ To move an account, you need the Administrator role on the Billing service in th
 
 1. Find the account name and ID by listing all accounts in your enterprise.
 
-   ```
+   ```bash
    ibmcloud enterprise accounts --recursive
    ```
    {: codeblock}
 
 1. If you're moving the account to an account group, find the account group name and ID.
 
-   ```
+   ```bash
    ibmcloud enterprise account-groups
    ```
    {: codeblock}
@@ -202,14 +202,14 @@ To move an account, you need the Administrator role on the Billing service in th
 
    To move the account to an account group, specify the account group name on the `--parent-account-group` option.
 
-   ```
+   ```bash
    ibmcloud enterprise account-move -n NAME --parent-account-group ACCOUNT_GROUP_NAME
    ```
    {: codeblock}
 
    To move the account directly under the enterprise, specify the `--parent-enterprise` option.
 
-   ```
+   ```bash
    ibmcloud enterprise account-move -n NAME --parent-enterprise
    ```
    {: codeblock}

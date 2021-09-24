@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: crn, cloud resource name, resources, cloud catalog
 
@@ -52,9 +52,9 @@ The `cname` segment identifies the cloud instance and is an alphanumeric identif
 The `ctype` segment identifies the type of cloud instance that is represented by the specified `cname` segment.
 
 Valid values:
-   - `public`: All services that are available from the public catalog
-   - `dedicated`: Only for current {{site.data.keyword.Bluemix_notm}} dedicated environments
-   - `local`: All services that are deployed locally in your own environment
+- `public`: All services that are available from the public catalog
+- `dedicated`: Only for current {{site.data.keyword.Bluemix_notm}} dedicated environments
+- `local`: All services that are deployed locally in your own environment
 
 
 ## service-name
@@ -104,7 +104,7 @@ For example, a DevOps tool that is used to track and plan work items can have a 
 `c7a27f55-d35e-4153-b044-8ca9155fc467/my-test-asg1/my-scaleout-policy`
 
 You can also obtain a CRN from an {{site.data.keyword.Bluemix_notm}} resource by using the following CLI command:
-```
+```bash
 ibmcloud resource service-instance
 ```
 {: codeblock}
