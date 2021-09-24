@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources 
 
@@ -180,7 +180,7 @@ For example, for the `CustApp` project, you might choose to create an `IAM Admin
    * `Administrator` for IAM Identity account management service. This way, the administrator can manage service IDs, trusted profiles, rules, and so on. 
    * `Editor` for User Management account management service. This way, the administrator can invite users to the account, view users in account, and so on.
 
-With this trusted profile, the administrator can add developers to an access group with broad access policies to complete day-to-day actions and tasks in the development and test environments. Access for operations on the production environment can be set up in a trusted profile named `Operator-Profile`. This way, the developer can change "hats" by logging in and applying the `Operator-Profile` when they need to take any operation actions on the `CustApp` in production.
+With this trusted profile, the administrator can add developers to an access group with broad access policies to complete day-to-day actions and tasks in the development and test environments. Access for operations on the production environment can be set up in a trusted profile named `Operator-Profile`. This way, the developer can change job roles by logging in and applying the `Operator-Profile` when they need to take any operation actions on the `CustApp` in production.
 
 If you have administrator access through a trusted profile, it is not recommended to invite users to an account while the profile is applied. Users should be invited by true account owners or administrators, or an error might occur. 
 {: important}
