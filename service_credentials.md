@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: service key, api key, bind, credential
 
@@ -191,23 +191,24 @@ You can add credentials for an IAM-enabled service by using Terraform.
   
 3. Initialize the Terraform CLI.
 
-   ```
+   ```terraform
    terraform init
    ```
    {: pre}
    
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the credentials.
 
-   ```
+   ```terraform
    terraform plan
    ```
    {: pre}
 
 5. Create the credentials.
 
-   ```
+   ```terraform
    terraform apply
    ```
+   {: pre}
 
 ## Adding a credential when binding a Cloud Foundry service
 {: #cf_credential-ui}
@@ -225,6 +226,7 @@ Complete the following steps to add a Cloud Foundry credential:
 
    Most services don't require extra parameters, and for services that do, each service defines its own unique list of parameters. For a list of supported configuration parameters, see the documentation for the particular service offering.
    {: note}
+   
 4. Click **Add** to generate the new service credential.
 
 ## Adding a credential when binding a Cloud Foundry service by using the API

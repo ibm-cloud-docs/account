@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2021
 
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: remove user, delete user
 
@@ -62,7 +62,7 @@ As an alternative to removing a user from your account, you can move the user to
 
 To remove a user from an account, run the following command:
 
-```
+```bash
 ibmcloud account user-remove USER_ID [-c ACCOUNT_ID] [-f, --force]
 ```
 {: codeblock}

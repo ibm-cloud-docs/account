@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: service availability, service location, using services across regions
 
@@ -35,6 +35,7 @@ To use a service instance that exists in another region, complete the following 
 
 5. Bind the user-provided service instance to your app by using the following command:
 
-   ```
+   ```bash
    ibmcloud service bind myapp user-provided_service_instance
    ```
+   {: pre}

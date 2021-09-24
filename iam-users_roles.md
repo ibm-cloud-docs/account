@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2021
 
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -108,10 +108,10 @@ Some services might map specific actions to the platform management roles that a
 
 | Platform management role | Actions                                                                                                    | Example actions for {{site.data.keyword.containershort_notm}} |
 |--------------------------|------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| Viewer                   | Can view service instances, but can't modify them                                                          | <ul><li>List clusters</li><li>View details for a cluster</li></ul>|
-| Editor                   | Perform all platform actions except for managing the account and assigning access policies                 |<ul><li>Bind a service to a cluster</li><li>Create a webhook</li></ul> |
-| Operator                 | Perform platform actions required to configure and operate service instances, such as viewing a service's dashboard | <ul><li>Add or remove worker nodes</li><li>Restart or reload worker nodes</li><li>Bind a service to a cluster</li></ul> |
-| Administrator            | Perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users |<ul><li>Remove a cluster</li><li>Create a cluster</li><li>Update user access policies</li><li>All actions a viewer, editor, and operator can perform</li></ul>|
+| Viewer                   | Can view service instances, but can't modify them                                                          | - List clusters  \n - View details for a cluster|
+| Editor                   | Perform all platform actions except for managing the account and assigning access policies                 |- Bind a service to a cluster  \n - Create a webhook|
+| Operator                 | Perform platform actions required to configure and operate service instances, such as viewing a service's dashboard | - Add or remove worker nodes  \n - Restart or reload worker nodes  \n - Bind a service to a cluster |
+| Administrator            | Perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users | - Remove a cluster  \n - Create a cluster  \n - Update user access policies  \n - All actions a viewer, editor, and operator can perform |
 {: caption="Table 3. Example platform management roles and actions for {{site.data.keyword.containershort_notm}} service" caption-side="top"}
 
 ### Service access roles

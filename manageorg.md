@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: update orgs, update spaces, quotas, Cloud Foundry orgs, domains
 
@@ -83,14 +83,14 @@ You can view the resources of only one org at a time. If you are a member of mul
 
 1. Log in, and select the account.
 
-   ```
+   ```bash
    ibmcloud login
    ```
    {: codeblock}
 
 2. Rename an organization by running the [`ibmcloud account org-rename`](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_org_rename) command, where `OLD_ORG_NAME` is the old name of the org that is to be renamed, `NEW_ORG_NAME` is the new name of the org that is to be renamed, and `-r, --region REGION` is the region name. 
 
-   ```
+   ```bash
    ibmcloud account org-rename OLD_ORG_NAME NEW_ORG_NAME [-r, --region REGION]
    ```
    {: codeblock}
@@ -105,14 +105,14 @@ This operation can be done only by an org manager.
 
 1. Log in, and select the account.
 
-   ```
+   ```bash
    ibmcloud login
    ```
    {: codeblock}
 
 2. Delete a space by using the [`ibmcloud account space-delete`](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_space_delete) command, where `-f` is forcing deletion without confirmation, and `-o` is deleting space within specified org.
 
-   ```
+   ```bash
    ibmcloud account space-delete SPACE [-o ORG] [-f]
    ```
    {: codeblock}
@@ -129,7 +129,7 @@ For more information on managing accounts, users in an account by using the CLI,
 
 You can update organizations by calling the Cloud Foundry API. For detailed information about how to use it, see [Update an Organization](http://v3-apidocs.cloudfoundry.org/version/3.97.0/index.html#update-an-organization){: external}. Check the following sample request:
 
-```
+```curl
 curl "https://api.example.org/v3/organizations/[guid]" \
   -X PATCH \
   -H "Authorization: bearer [token]" \
@@ -145,7 +145,7 @@ curl "https://api.example.org/v3/organizations/[guid]" \
 
 You can delete spaces by calling the Cloud Foundry API. For detailed information about how to use it, see [Delete a space](http://v3-apidocs.cloudfoundry.org/version/3.97.0/index.html#delete-a-space){: external}. Check the following sample request:
 
-```
+```curl
 curl "https://api.example.org/v3/spaces/[guid]" \
   -X DELETE \
   -H "Authorization: bearer [token]"

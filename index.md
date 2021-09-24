@@ -66,15 +66,15 @@ Each resource group is free. When you create a connection between a service that
 
 Check out the following list of key features that are available in a Lite account:
 
-   * The account is free - no credit card required.
-   * The account never expires.
-   * You receive email notifications about your account status and quota limits.
-   * You can provision one instance of any service in the [{{site.data.keyword.Bluemix_notm}} catalog](https://cloud.ibm.com/catalog/?search=label:lite%20lite){: external} that has a Lite plan.
-   * After 10 days of no development activity, your apps go to sleep. You can wake up your apps by continuing to work on them.
-   * After 30 days of no development activity, your service instances with Lite plans are deleted.
+* The account is free - no credit card required.
+* The account never expires.
+* You receive email notifications about your account status and quota limits.
+* You can provision one instance of any service in the [{{site.data.keyword.Bluemix_notm}} catalog](https://cloud.ibm.com/catalog/?search=label:lite%20lite){: external} that has a Lite plan.
+* After 10 days of no development activity, your apps go to sleep. You can wake up your apps by continuing to work on them.
+* After 30 days of no development activity, your service instances with Lite plans are deleted.
 
-   Only Lite accounts created before 12 August 2021 can use Cloud Foundry apps that can access up to 256 MB of free, instantaneous runtime memory per month. You can use one org in one {{site.data.keyword.Bluemix_notm}} region.
-   {: note}
+Only Lite accounts created before 12 August 2021 can use Cloud Foundry apps that can access up to 256 MB of free, instantaneous runtime memory per month. You can use one org in one {{site.data.keyword.Bluemix_notm}} region.
+{: note}
 
 ## Pay-As-You-Go account
 {: #paygo}

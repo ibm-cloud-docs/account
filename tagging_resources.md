@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2021
-lastupdated: "2021-08-24"
+lastupdated: "2021-09-24"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, full list of tags, how to use tags
 
@@ -91,7 +91,7 @@ Before you can attach your access management tags to individual resources, you n
 
 1. Log in to {{site.data.keyword.Bluemix_notm}} CLI. If you have multiple accounts, you are prompted to select which account to use. If you do not specify a region with the `-r` flag, you must also select a region.
 
-    ```
+    ```bash
     ibmcloud login
     ```
     {: codeblock}
@@ -103,7 +103,7 @@ Before you can attach your access management tags to individual resources, you n
 
 2. Enter the **`ibmcloud resource tag-create`** command to create an access management tag in your account. This example creates a tag that is called `project:myproject`: 
 
-    ```
+    ```bash
     ibmcloud resource tag-create --tag-names project:myproject
     ```
     {: codeblock} 
@@ -202,21 +202,21 @@ You can create access management tags by using Terraform.
 
 1. Initialize the Terraform CLI.
    
-   ```
+   ```terraform
    terraform init
    ```
    {: pre}
 
 1. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create access management tags.
    
-   ```
+   ```terraform
    terraform plan
    ```
    {: pre}
 
 1. Create the access management tags.
 
-   ```
+   ```terraform
    terraform apply
    ```
    {: pre}

@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-09-08"
+lastupdated: "2021-09-24"
 
 keywords: user session, inactivity, sign out, concurrent, login session, trusted profiles
 
@@ -75,13 +75,13 @@ To update your user's active sessions settings by using terraform, complete the 
    {: pre}
 
 1. Create a Terraform execution plan.
-   ```
+   ```terraform
    terraform plan
    ```
    {: codeblock}
 
 1. Update the duration of active sessions. This process might take a few minutes to complete.
-   ```
+   ```terraform
    terraform apply
    ```
    {: codeblock}
@@ -128,13 +128,13 @@ To update your user's sign out due to inactivity duration by using terraform, co
    {: codeblock}
 
 1. Create a Terraform execution plan.
-   ```
+   ```terraform
    terraform plan
    ```
    {: pre}
 
 1. Update sign out due to inactivity duration. This process might take a few minutes to complete.
-   ```
+   ```terraform
    terraform apply
    ```
    {: pre}
@@ -172,13 +172,13 @@ To update your user's allowed number of concurrent sessions by using terraform, 
    {: codeblock}
 
 3. Create a Terraform execution plan.
-   ```
+   ```terraform
    terraform plan
    ```
    {: pre}
 
 4. Update the number of allowed concurrent sessions. Note that this process might take a few minutes to complete.
-   ```
+   ```terraform
    terraform apply
    ```
    {: pre}

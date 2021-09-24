@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: search, find, search for instance, search for resource
 
@@ -115,35 +115,35 @@ When the `-p classic-infrastucture` parameter is not specified search spans acro
 
 * To search for all your resources named `ABC`, enter the following command:
 
-    ```
+    ```bash
     ibmcloud resource search ‘name:ABC’
     ```
     {: codeblock}
 
 * To search for all Cloud Foundry applications whose name starts with `my`, enter the following command:
 
-    ```
+    ```bash
     ibmcloud resource search 'name:my* AND type:cf-application'
     ```
     {: codeblock}
 
 * To search for all service instances of Message Hub, enter the following command:
 
-    ```
+    ```bash
     ibmcloud resource search 'service_name:messagehub'
     ```
     {: codeblock}
 
 * To search for all resources in either the `a07181ca-f917-4ee6-af22-b2c0c2a2d5d7` Cloud Foundry organization or the `c900d9671b235c00461c5e311a8aeced` resource group in the `us-south` region, enter the following command:
 
-    ```
+    ```bash
     ibmcloud resource search (organization_id:a07181ca-f917-4ee6-af22-b2c0c2a2d5d7 OR doc.resource_group_id:c900d9671b235c00461c5e311a8aeced) AND 'region:us-south'
     ```
     {: codeblock}
 
 * To search for resources that are not classic infrastructure that were created between 16 May 2020 and 20 May 2020, enter the following command:
 
-    ```
+    ```bash
     ibmcloud resource search "creation_date:[2020-05-16T00:00:00Z TO 2020-05-20T00:00:00Z]"
     ```
     {: codeblock}
@@ -151,35 +151,35 @@ When the `-p classic-infrastucture` parameter is not specified search spans acro
 
 * To search for resources that are not classic infrastructure whose name starts with "my", ordered by type, enter the following command:
 
-    ```
+    ```bash
     ibmcloud resource search 'name:my*' -s type
     ```
     {: codeblock}
     
 * To search for resources that are not classic infrastructure and have been tagged with `MyTag`, enter the following command:
 
-    ```
+    ```bash
     ibmcloud resource search 'tags:MyTag'
     ```
     {: codeblock}
     
 * To search for all classic infrastructure virtual servers whose fully qualified domain name is `MyVM`, enter the following command:
 
-    ```
+    ```bash
     ibmcloud resource search “doc.fullyQualifiedDomainName:MyVM AND service_name:virtual-server”
     ```
     {: codeblock}
 
 * To search for all classic infrastructure resources that have been tagged with `MyTag`, enter the following command:
 
-    ```
+    ```bash
     ibmcloud resource search 'tagReferences.tag.name:MyTag' -p classic-infrastructure
     ```
     {: codeblock}
     
 * To search for all classic infrastructure of type `SoftLayer_Network_Vlan`
 
-    ```
+    ```bash
     ibmcloud resource search '_objectType:SoftLayer_Network_Vlan' -p classic-infrastructure
     ```
     {: codeblock}

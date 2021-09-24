@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: account, add orgs, add spaces, cloud foundry orgs
 
@@ -118,14 +118,14 @@ You can create an organization by using the {{site.data.keyword.Bluemix}} Comman
 
 1. Log in, and select the account.
 
-   ```
+   ```bash
    ibmcloud login
    ```
    {: codeblock}
 
 2. Create an organization by running the [`ibmcloud account org-create`](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_org_create) command, where `ORG_NAME` is the name of the organization to be created, and `-r, --region REGION` is the region name. 
 
-   ```
+   ```bash
    ibmcloud account org-create ORG_NAME [-r, --region REGION]
    ```
    {: codeblock}
@@ -133,7 +133,7 @@ You can create an organization by using the {{site.data.keyword.Bluemix}} Comman
 
    For example, the following command creates an organization that is named `IBM`.
 
-   ```
+   ```bash
    ibmcloud account org-create IBM
    ```
    {: codeblock}
@@ -151,14 +151,14 @@ You can also create spaces by using the {{site.data.keyword.Bluemix}} CLI.
 
 1. Log in, and select the account.
 
-   ```
+   ```bash
    ibmcloud login
    ```
    {: codeblock}
 
 2. Create an organization by running the [`ibmcloud account space-create`](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_space_create) command, where `-o` is the organization, and `-q` is the quota to assign to the newly created space. 
 
-   ```
+   ```bash
    ibmcloud account space-create SPACE [-o ORG] [-q SPACE_QUOTA]
    ```
    {: codeblock}
@@ -169,7 +169,7 @@ You can also create spaces by using the {{site.data.keyword.Bluemix}} CLI.
 
 You can create an organization by calling the Cloud Foundry API. For detailed information about how to use it, see [Create an Organization](http://v3-apidocs.cloudfoundry.org/version/3.97.0/index.html#create-an-organization){: external}. Check the following sample request, where `my-organization` is the name of your organization:
 
-```
+```curl
 curl "https://api.example.org/v3/organizations" \
   -X POST \
   -H "Authorization: bearer [token]" \
@@ -185,7 +185,7 @@ curl "https://api.example.org/v3/organizations" \
 
 You can also create spaces by calling the Cloud Foundry API. For detailed information about how to use it, see [Create a Space](http://v3-apidocs.cloudfoundry.org/version/3.97.0/index.html#create-a-space){: external}. Check the following sample request, where `my-space`is the name of your space:
 
-```
+```curl
 curl "https://api.example.org/v3/spaces" \
   -X POST \
   -H "Authorization: bearer [token]" \

@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2021
 
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: access, users, service IDs, access group, IAM, policy, characters, wildcard, operators, asterisk, question mark, *, ?, JSON document, policy document
 
@@ -44,7 +44,7 @@ Refer to the documentation for the specific service that you are assigning acces
 
 The following example shows how you might create a policy that gives a user access to manage all {{site.data.keyword.messagehub}} topics that start with `dev` in a particular account. 
 
-```
+```json
 {
     "type": "access",
     "subjects": [
@@ -94,7 +94,7 @@ The following example shows how you might create a policy that gives a user acce
 
 The following example shows how you can create a policy that gives a user access to edit any {{site.data.keyword.messagehub}} topic that ends in `81` with two characters before the numerical characters in a particular account. 
 
-```
+```json
 {
     "type": "access",
     "subjects": [

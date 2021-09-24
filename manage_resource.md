@@ -5,7 +5,7 @@
 copyright:
 
   years: 2019, 2021
-lastupdated: "2021-09-09"
+lastupdated: "2021-09-24"
 
 keywords: resource, account resources, create resource, access to create resources
 
@@ -67,7 +67,7 @@ You can create a resource by using the {{site.data.keyword.Bluemix}} Command Lin
 
 1. Log in, and select the account.
 
-   ```
+   ```bash
    ibmcloud login
    ```
    {: codeblock}
@@ -75,7 +75,7 @@ You can create a resource by using the {{site.data.keyword.Bluemix}} Command Lin
 2. Create an organization by running the [`ibmcloud resource service-instance-create`](https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_create) command.
 In this command `NAME` is the name of the service instance, `SERVICE_NAME or SERVICE_ID` is the name or ID of the service, `SERVICE_PLAN_NAME or SERVICE_PLAN_ID`is the name or ID of the service plan, and ` LOCATION`is the target location or environment to create the service instance.
 
-   ```
+   ```bash
    ibmcloud resource service-instance-create NAME (SERVICE_NAME | SERVICE_ID) SERVICE_PLAN_NAME LOCATION [-d, --deployment DEPLOYMENT_NAME] [-p, --parameters @JSON_FILE | JSON_STRING ] [-g RESOURCE_GROUP] [--service-endpoints SERVICE_ENDPOINTS_TYPE] [--allow-cleanup] [--lock]
    ```
    {: codeblock}
@@ -85,7 +85,7 @@ In this command `NAME` is the name of the service instance, `SERVICE_NAME or SER
 
 For example, the following command creates a service instance that is named `my-service-instance`, uses service plan `test-   service-plan` of service `test-service` on location `eu-gb`:
 
-   ```
+   ```bash
    ibmcloud resource service-instance-create my-service-instance test-service test-service-plan eu-gb
    ```
    {: codeblock}
@@ -146,7 +146,7 @@ resourceControllerService.createResourceInstance(params)
   .catch(err => {
     console.warn(err)
   });
-  ```
+```
 {: codeblock}
 {: javascript}
 
@@ -222,21 +222,21 @@ You can create new resource instances by using Terraform.
   
 3. Initialize the Terraform CLI.
 
-   ```
+   ```terraform
    terraform init
    ```
    {: pre}
    
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create a resource instance.
 
-   ```
+   ```terraform
    terraform plan
    ```
    {: pre}
 
 5. Create the resource instance.
 
-   ```
+   ```terraform
    terraform apply
    ```
 

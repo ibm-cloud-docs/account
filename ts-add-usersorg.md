@@ -35,8 +35,8 @@ You can't see the **Invite a New User** link in your **Manage Organizations** se
 Only the following {{site.data.keyword.Bluemix_notm}} users can invite users to an organization:
 {: tsCauses}
 
-   * The account owner of the organization
-   * Organization managers who are also members, not collaborators, of the organization
+* The account owner of the organization
+* Organization managers who are also members, not collaborators, of the organization
 
 In {{site.data.keyword.Bluemix_notm}}, you can be either a member or a collaborator of an organization:
 

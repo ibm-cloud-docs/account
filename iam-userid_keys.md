@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: API key, user API keys, IBM Cloud API keys, manage user keys, create API key
 
@@ -80,9 +80,10 @@ To create an API key by using the CLI, use the following command:
 
 1. Enter `ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]` in your command prompt, and specify a name, description, and file for saving your key. See the following example:
 
-```
+```bash
 ibmcloud iam api-key-create MyKey -d "this is my API key" --file key_file
 ```
+{: codeblock}
 
 ## Creating an API key by using the API
 {: #create_user_key-api}
@@ -189,9 +190,10 @@ To edit an API key by using the CLI, enter the following command:
 
 1. Enter `ibmcloud iam api-key-update NAME [-n NAME] [-d DESCRIPTION]` in your command prompt, specifying the old name, new name, and new description for the key. For example:
 
-```
+```bash
 ibmcloud iam api-key-update MyCurrentName -n MyNewName -d "the new description of my key"
 ```
+{: codeblock}
 
 ## Updating an API key by using the API
 {: #update_user_key-api}
@@ -287,9 +289,10 @@ You can unlock your API key at any time to update or remove the API key from you
 
 To lock an API key, use the following command:
 
-```
+```bash
 ibmcloud iam api-key-lock (NAME|UUID) [-f, --force]
 ```
+{: codeblock}
 
 **Prerequisites**:  Endpoint, Login
 
@@ -308,15 +311,17 @@ UUID
 
 Lock the API key named `test-api-key`:
 
-```
+```bash
 ibmcloud iam api-key-lock test-api-key
 ```
+{: codeblock}
 
 To unlock an API key, run the following command:
 
-```
+```bash
 ibmcloud iam api-key-unlock (NAME|UUID) [-f, --force]
 ```
+{: codeblock}
 
 **Prerequisites**:  Endpoint, Login
 
@@ -335,9 +340,10 @@ UUID
 
 Unlock the API key named `test-api-key`:
 
-```
+```bash
 ibmcloud iam api-key-unlock test-api-key
 ```
+{: codeblock}
 
 ## Locking and unlocking an API key by using the API
 {: #lock-user-key-api}

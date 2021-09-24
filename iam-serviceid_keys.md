@@ -86,7 +86,7 @@ If you didn't create the service ID, but you are the account owner or an adminis
 
 To update an API key for a service ID by using the CLI, you can use the [ibmcloud iam service-api-key-update](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_service_api_key_update) command.
 
-```
+```bash
 ibmcloud iam service-api-key-update NAME SERVICE_ID [-n, --name NEW_sNAME] [-d, --description DESCRIPTION] [-v, --version VERSION] [-f, --force]
 ```
 {: codeblock}
@@ -113,9 +113,10 @@ You can unlock your API key at any time to update, delete, or add an access poli
 
 For API keys that represent the identity of the service ID, you can prevent the API key from being deleted by locking it. A locked API key is indicated by the **Locked** icon ![Locked icon](images/locked.svg "Locked") in the UI. To lock a service ID API key, use the following command:
 
-```
+```bash
 ibmcloud iam service-api-key-lock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|SERVICE_ID_UUID) [-f, --force]
 ```
+{: codeblock}
 
 **Prerequisites**: Endpoint, Login, Target
 
@@ -140,16 +141,17 @@ SERVICE_ID_UUID
 
 Lock the service API key `sample-key` of service ID `sample-service`:
 
-```
+```bash
 ibmcloud iam service-api-key-lock sample-key sample-service
 ```
+{: codeblock}
 
 To unlock a service ID API key, use the following command:
 
-```
+```bash
 ibmcloud iam service-api-key-unlock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|SERVICE_ID_UUID) [-f, --force]
 ```
-
+{: codeblock}
 
 ## Deleting an API key for a service ID
 {: #delete_service_key}
@@ -173,7 +175,7 @@ If you didn't create the service ID, but you are the account owner or an adminis
 
 You can delete an API key that is associated with a service ID. However, deleting an API key that is used by an application removes the ability for that application to authenticate with your services. To delete an API key for a service ID by using the CLI, you can use the [ibmcloud iam service-api-key-delete](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_service_api_key_delete) command.
 
-```
+```bash
 ibmcloud iam service-api-key-delete NAME SERVICE_ID [-f, --force]
 ```
 {: codeblock}

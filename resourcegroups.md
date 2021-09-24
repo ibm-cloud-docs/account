@@ -5,7 +5,7 @@
 copyright:
 
   years: 2017, 2021
-lastupdated: "2021-08-23"
+lastupdated: "2021-09-24"
 
 keywords: resource group, account resources, users access to resource groups, create resource group, create resource group in the console, create resource group CLI, create resource group API, create resource group Terraform
 
@@ -61,14 +61,14 @@ Connections between a resource group and a Cloud Foundry org or space are restri
 
 1. Log in, and select the account.
 
-   ```
+   ```bash
    ibmcloud login
    ```
    {: codeblock}
    
 2. Create a new resource group by running [`ibmcloud resource group-create`](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_group_create) command. For example, the following command creates a resource group that is named `group2`:
 
-```
+```bash
 ibmcloud resource group-create group2
 ```
 {: codeblock}
@@ -174,23 +174,24 @@ You can create a resource group by using Terraform.
   
 3. Initialize the Terraform CLI.
 
-   ```
+   ```terraform
    terraform init
    ```
    {: pre}
    
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the resource group.
 
-   ```
+   ```terraform
    terraform plan
    ```
    {: pre}
 
 5. Create the resource group.
 
-   ```
+   ```terraform
    terraform apply
    ```
+   {: pre}
 
 ## Renaming a resource group
 {: #rename_rgs}
@@ -211,14 +212,14 @@ Your first resource group is created and named `Default` for you. You can update
 
 1. Log in, and select the account.
 
-   ```
+   ```bash
    ibmcloud login
    ```
    {: codeblock}
    
 2. Rename a resource group by running the [`ibmcloud resource group-update`](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_group_update) command. For example, the following command renames the `Default` resource group to `Admin`:
 
-```
+```bash
 ibmcloud resource group-update Default [-n, --name Admin]
 ```
 {: codeblock}
@@ -323,23 +324,24 @@ You can rename a resource group by using Terraform.
   
 3. Initialize the Terraform CLI.
 
-   ```
+   ```bash
    terraform init
    ```
    {: pre}
    
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to rename the resource group.
 
-   ```
+   ```bash
    terraform plan
    ```
    {: pre}
 
 5. Rename the resource group.
 
-   ```
+   ```bash
    terraform apply
    ```
+   {: pre}
    
 ## Adding resources to a resource group
 {: #add_to_rgs}
@@ -375,14 +377,14 @@ To easily view the resources that are assigned to a resource group, go to the **
 
 1. Log in, and select the account.
 
-   ```
+   ```bash
    ibmcloud login
    ```
    {: codeblock}
    
 2. View the resources that are assigned to a specific resource group by running the [`ibmcloud resource service-instances`](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instances) command. For example, the following command lists all the resources that are in the `Default` resource group:
 
-```
+```bash
 ibmcloud resource service-instances -g Default
 ```
 {: codeblock}

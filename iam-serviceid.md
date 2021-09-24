@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -268,9 +268,10 @@ To unlock a service ID, select the service ID from the table that you want to un
 
 To lock a service ID, use the following command:
 
-```
+```bash
 ibmcloud iam service-id-lock (NAME|UUID) [-f, --force]
 ```
+{: codeblock}
 
 Command options:
 
@@ -287,21 +288,24 @@ UUID
 
 Lock service ID `sample-test` without confirmation:
 
-```
+```bash
 ibmcloud iam service-id-lock sample-test -f
 ```
+{: codeblock}
 
 Lock service ID `ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976`:
 
-```
+```bash
 ibmcloud iam service-id-lock ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976
 ```
+{: codeblock}
 
 To unlock a service ID, run the following command:
 
- ```
+ ```bash
 ibmcloud iam service-id-unlock (NAME|UUID) [-f, --force]
 ```
+{: codeblock}
 
 Command options:
 
@@ -318,15 +322,17 @@ UUID
 
 Unlock service ID `sample-test` without confirmation:
 
-```
+```bash
 ibmcloud iam service-id-unlock sample-test -f
 ```
+{: codeblock}
 
 Unlock service ID `ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976`:
 
-```
+```bash
 ibmcloud iam service-id-unlock ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976
 ```
+{: codeblock}
 
 ### Locking a service ID by using the API
 {: #lock_serviceid_api}

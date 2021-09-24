@@ -5,7 +5,7 @@
 copyright:
 
   years: 2020, 2021
-lastupdated: "2021-08-23"
+lastupdated: "2021-09-24"
 
 keywords: delete resource group, resource group, manage resource groups
 
@@ -51,9 +51,10 @@ To delete a resource group that doesn't contain resources and is not your defaul
 
 To delete a resource group that doesn't contain resources and is not your default, run the [`ibmcloud resource group-delete`](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_group_delete). For example, delete resource group `example-group`:
 
-```
+```bash
 ibmcloud resource group-delete example-group -f
 ```
+{: codeblock}
 
 ## Deleting a resource group by using the API
 {: #delete-rg-api}
@@ -133,28 +134,28 @@ You can delete a resource group by using Terraform.
   
 4. Initialize the Terraform CLI.
 
-   ```
+   ```terraform
    terraform init
    ```
    {: pre}
    
 5. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to delete the resource group.
 
-   ```
+   ```terraform
    terraform plan
    ```
    {: pre}
 
 6. Delete the resource group.
 
-   ```
+   ```terraform
    terraform apply
    ```
+   {: pre}
     
 You can also delete a resource group by running the following `terraform destroy` command.
 
-```
+```terraform
 terraform destroy -target RESOURCE_TYPE.NAME -target RESOURCE_TYPE2.NAME
 ```
-
-
+{: pre}

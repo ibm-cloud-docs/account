@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2021
 
-lastupdated: "2021-09-21"
+lastupdated: "2021-09-24"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -114,7 +114,7 @@ You can cancel an invitation for any users that are shown in a Processing or Pen
 
 To invite users by using the CLI, run the following command:
 
-```
+```bash
 ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE, --space-role SPACE_ROLE]]
 ```
 {: codeblock}
@@ -360,7 +360,7 @@ If the invited user is already a member of {{site.data.keyword.cloud_notm}}, the
 
 If the invited user is already a member of {{site.data.keyword.cloud_notm}, they can accept invitations by using the CLI. In the following [**`ibmcloud login`**](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login) command, the `ACCOUNT_ID` is the ID of the targeted account that the user is invited to join.
 
-```
+```bash
 ibmcloud login -c ACCOUNT_ID --accept
 ```
 {: codeblock}
@@ -371,7 +371,7 @@ ibmcloud login -c ACCOUNT_ID --accept
 
 If the invited user is already a member of {{site.data.keyword.cloud_notm}, they can accept invitations by using the API. In the following example, the `ACCOUNT_ID` is the ID of the targeted account that the user is invited to join and the `IAM_TOKEN` belongs to the invitee.
 
-```
+```curl
 curl --request POST \
   'https://iam.cloud.ibm.com/v2/users/accept' \
   --header 'Authorization: Bearer <IAM_TOKEN>' \
