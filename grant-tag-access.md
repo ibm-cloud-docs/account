@@ -3,7 +3,8 @@
 copyright:
 
   years: 2018, 2021
-lastupdated: "2021-09-22"
+
+lastupdated: "2021-09-24"
 
 keywords: tagging, enabling others to tag, tagging permissions
 
@@ -280,10 +281,10 @@ Complete the following steps to assign the developer space role for a user to ta
 1. Click **Manage > Access (IAM)**, and select **Users**.
 2. Click the user's name from the table.
 3. Click **Cloud Foundry access** > **Assign organization**.
-5. Select the organization that contains the service instance you want to provide the user access to.
-6. Select a specific region or accept the default **All current regions** option. 
-7. Select **Developer** as the space role.
-8. Click **Save role**.
+4. Select the organization that contains the service instance you want to provide the user access to.
+5. Select a specific location. 
+6. Select **Developer** as the space role.
+7. Click **Save role**.
 
 ## Granting users access to tag Cloud Foundry resources by using the API
 {: #cf_tag_access-api}
@@ -292,6 +293,7 @@ Complete the following steps to assign the developer space role for a user to ta
 To assign the developer space role for a user to tag Cloud Foundry resources, call the [Cloud Controller API](http://v3-apidocs.cloudfoundry.org/version/3.97.0/index.html#create-a-role){: external} as shown in the following examples. 
 
 1. Add the target user to the organization if they are not in it already. 
+
    ```bash
    curl “https://api.example.org/v3/roles” 
     -X POST 
@@ -316,6 +318,7 @@ To assign the developer space role for a user to tag Cloud Foundry resources, ca
    {: curl}
 
 1. Assign the target user the Space Developer role in the organizaiton.
+
    ```bash
    curl “https://api.example.org/v3/roles” 
     -X POST 

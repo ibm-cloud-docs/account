@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-24"
 
 keywords: what is IAM, IAM features, IAM API, how IAM works
 
@@ -26,8 +26,6 @@ subcollection: account
 
 Learn about what IBM Cloud Identity and Access Management (IAM) is, how IAM works, what features are available, and how to access the console, CLI, and APIs to work with IAM in your account.
 {: shortdesc}
-
-{: #what_is_IAM}
 
 IAM enables you to securely authenticate users for platform services and control access to resources consistently across {{site.data.keyword.cloud_notm}}. A set of {{site.data.keyword.cloud_notm}} services is enabled to use {{site.data.keyword.cloud_notm}} IAM for access control, and are organized into [resource groups](/docs/account?topic=account-rgs) within your account so you can give users access quickly to more than one resource at a time. Each of these services is labeled as "IAM-enabled" in the catalog. You can use IAM access policies to assign users and service IDs access to resources within your account. And, you can group users and service IDs into an [access group](/docs/account?topic=account-groups) to easily give all members of the group the same level of access.
 
@@ -87,9 +85,9 @@ IAM access management enables fine-grained access, which means that a policy can
 
 Access policies are how users, [service IDs](/docs/account?topic=account-serviceids), access groups, and trusted profiles in the account are given permission to access and take actions on account resources. Policies include a subject, target, and role. The subject is the user, service ID, or access group that you are providing access. The target of the policy is the resource to which you want to provide access. And, the IAM roles define the level of access or allowed actions on the target of the policy. 
 
-A policy assigns the subject one or more roles that define the level of access and one or more attributes that define the target that the policy allows access to. The policy can provide access to a single service at the instance level, to a set of resources that are organized together in a resource group or to any set of resources that can be defined by a set of attributes such as region or resource type. A policy can also provide access to account management services. Depending on the IAM roles that you assign, the subject is allowed varying levels of access for completing account management tasks, working with service instances, or accessing a service by using the console or completing API calls.
+A policy assigns the subject one or more roles that define the level of access and one or more attributes that define the target that the policy allows access to. The policy can provide access to a single service at the instance level, to a set of resources that are organized together in a resource group or to any set of resources that can be defined by a set of attributes such as location or resource type. A policy can also provide access to account management services. Depending on the IAM roles that you assign, the subject is allowed varying levels of access for completing account management tasks, working with service instances, or accessing a service by using the console or completing API calls.
 
-There are different types of policies that allow access to account resources for users and service IDs: a resource group policy, a resource instance policy, an account-wide policy for access to all IAM-enabled services or all instances of a specified service, and a policy on all or one account management services. Depending on your selections, custom configuration options, such as defining access to resources in a specific region or defining access to the granular level of a service-specific resource within an instance, might be available.
+There are different types of policies that allow access to account resources for users and service IDs: a resource group policy, a resource instance policy, an account-wide policy for access to all IAM-enabled services or all instances of a specified service, and a policy on all or one account management services. Depending on your selections, custom configuration options, such as defining access to resources in a specific location or defining access to the granular level of a service-specific resource within an instance, might be available.
 
 In addition to access policies for users and service IDs, there is a policy type that is called an authorization that allows specific services or instances of services access to other services. You can learn more about assigning access between services in the [Using authorizations to grant access between services](/docs/account?topic=account-serviceauth) documentation.
 
@@ -129,6 +127,7 @@ There are two common types of IAM systems in cloud providers and understanding e
 {{site.data.keyword.cloud_notm}} IAM uses an ABAC model by using identity and resource attributes. {{site.data.keyword.cloud_notm}} IAM uses access policies to store the attribute information that is needed by the IAM access decision engine. And, the access policies tell the IAM decision engine, which attributes the author of the policy requires to grant access to a resource. 
 
 The supported attributes for identities are iam_id and access group ID. The supported attributes for resources belong to one of the following categories:
+
 * Fields defined in the resource [CRN](/docs/account?topic=account-crn), for example the service name.
 * System-wide defined resource attributes, such as resource groups.
 * Service-specific resource attributes such as namespaces or buckets.
@@ -182,9 +181,9 @@ Your users might already have identities outside of {{site.data.keyword.cloud_no
 
 By using trusted profiles, you can define fine-grained authorization for all applications that are running in a compute resource without creating service IDs or managing the API key lifecycle for applications. The trusted profiles provide better control for granting access to compute resources.
 
-* Application developers can programmatically retrieve a token that is associated with the compute resource identity that they are running on. That token is used to get the trusted profile identity token, which is used to access services and resources on {{site.data.keyword.cloud_notm}}.
-* Applications running on a compute resource can have a flexible, but secure way to access other {{site.data.keyword.cloud_notm}} services from within compute resources. For example, it's more secure not having to store API keys.
-* All compute resource instances that share certain conditions such as name, namespace, tags, or region, their identities are mapped to a common profile and can share access to {{site.data.keyword.cloud_notm}} resources. This common identity makes it possible to give the applications within various compute resources access to an external resource one time rather than cluster-by-cluster.
+*  Application developers can programmatically retrieve a token that is associated with the compute resource identity that they are running on. That token is used to get the trusted profile identity token, which is used to access services and resources on {{site.data.keyword.cloud_notm}}.
+*  Applications running on a compute resource can have a flexible, but secure way to access other {{site.data.keyword.cloud_notm}} services from within compute resources. For example, it's more secure not having to store API keys.
+*  All compute resource instances that share certain conditions such as name, namespace, tags, or location, their identities are mapped to a common profile and can share access to {{site.data.keyword.cloud_notm}} resources. This common identity makes it possible to give the applications within various compute resources access to an external resource one time rather than cluster-by-cluster.
 
 You can monitor which federated users and compute resources apply a trusted profile by looking at {{site.data.keyword.at_short}}. The fields `Initiator.authnId` and `Initiator.authnName` hold the details for the authenticated user that applies a profile, while `Initiator.id` and `Initiatior.name` hold the details of the profile that is applied. For compute resources the `authn` fields hold the CRN that uniquely identifies the resource that applies a profile. For more information, see [Required AT field events](https://test.cloud.ibm.com/docs/observability?topic=observability-at_req_fields#initiator.authnId).
 {: note}
@@ -220,7 +219,6 @@ You can access and use {{site.data.keyword.cloud_notm}} IAM through the Access (
     * [IAM Identity Services API](https://{DomainName}/apidocs/iam-identity-token-api){: external} 
     * [IAM Access Groups API](https://{DomainName}/apidocs/iam-access-groups){: external} 
     * [IAM Policy Management API](https://{DomainName}/apidocs/iam-policy-management){: external} 
-
 
 ## Mapping {{site.data.keyword.cloud_notm}} IAM concepts to other cloud providers
 {: #iam-compare}
@@ -282,7 +280,7 @@ This policy example gives access to all service resources that belong to a resou
 Access groups are not identities like a user or service ID; however, they are a grouping mechanism for identities. An access group can be defined as a subject of an access policy, and the assigned access on the group applies to all members added to it.
 {: note}
 
-```
+```bash
 {
   "type": "access",
   "subjects": [
@@ -324,9 +322,8 @@ In addition to an access policy for a user, service ID, or access group that can
 ### Federating users to {{site.data.keyword.cloud_notm}} 
 {: #federation-iam}
 
-{{site.data.keyword.cloud_notm}} offers two ways for you to federate your corporate IdP, which simplifies login by giving your employees access to {{site.data.keyword.cloud_notm}} with their company username and password. The first option is to [federate with IBMid](https://ibm.box.com/v/IBMid-Federation-Guide){: external}, and the other option is to create an {{site.data.keyword.appid_full_notm}} service instance and use that as a way to federate users into an {{site.data.keyword.cloud_notm}} account. For more information, see [Enabling authentication from an external identity provider](/docs/account?topic=account-idp-integration).
+{{site.data.keyword.cloud_notm}} offers two ways for you to federate your corporate identity provider (IdP), which simplifies login by giving your employees access to {{site.data.keyword.cloud_notm}} with their company username and password. The first option is to [federate with IBMid](https://ibm.box.com/v/IBMid-Federation-Guide){: external}, and the other option is to create an {{site.data.keyword.appid_full_notm}} service instance and use that as a way to federate users into an {{site.data.keyword.cloud_notm}} account. For more information, see [Enabling authentication from an external identity provider](/docs/account?topic=account-idp-integration).
 
 In both types of federation, the user must be a member of the account, or have access to the account by a trusted profile to be able to complete operations. If trusted profiles are not configured, the account owner or administrator must invite individual IBMids into the {{site.data.keyword.cloud_notm}} account. Only if the invited IBMid accepts the invitation is the user added the account as an active user. In the case of {{site.data.keyword.appid_short}}, the user is automatically onboarded to {{site.data.keyword.cloud_notm}} without a need to invite each user to the account. In both types of federation, the users are active {{site.data.keyword.cloud_notm}} account users that can access the platform, including IAM-enabled resources, Cloud Foundry, and classic infrastructure all depending on their assigned access.
 
-Trusted profiles deal with federated users differently. If the customer federates their corporate IdP, users from that IdP aren't added to an account as what we might consider a normal user. Instead, users' SAML-based IdP attributes are evaluated at login and if they meet all of the conditions for a trusted profile, they are prompted to apply one or more trusted profiles. Trusted profiles grant users the level of acces they need to complete a specialized and specific set of tasks in a limited time-period, for example, 1-4 hours. These are usually critical tasks that you would want to avoid doing unintentionally in daily work. Users don't need to onboard to {{site.data.keyword.cloud_notm}}, they're automatically added by way of the trust relationship. If a user leaves your company, you can simply delete the user's corporate identity in your directory, which then also revokes access to {{site.data.keyword.cloud_notm}}. Time-based access allows frequent authentication checks for reduced security risks.
-
+Trusted profiles deal with federated users differently. If the customer federates their corporate IdP, users from that IdP aren't added to an account as what we might consider a normal user. Instead, users' SAML-based IdP attributes are evaluated at login and if they meet all of the conditions for a trusted profile, they are prompted to apply one or more trusted profiles. Trusted profiles grant users the level of access they need to complete a specialized and specific set of tasks in a limited time-period, for example, 1-4 hours. These are usually critical tasks that you would want to avoid doing unintentionally in daily work. Users don't need to onboard to {{site.data.keyword.cloud_notm}}, they're automatically added by way of the trust relationship. If a user leaves your company, you can simply delete the user's corporate identity in your directory, which then also revokes access to {{site.data.keyword.cloud_notm}}. Time-based access allows frequent authentication checks for reduced security risks.

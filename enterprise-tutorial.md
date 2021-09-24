@@ -2,7 +2,8 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-09-22"
+  
+lastupdated: "2021-09-24"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, enterprise users, enterprise access, enterprise tutorial
 
@@ -55,8 +56,9 @@ Enterprises are created from an existing Subscription account. When you create t
 4. Review the information about the impact to your account, and select **I understand the impact to my account**. Then, click **Create**. The account is now permanently part of the enterprise and can't be removed.
 
 After your enterprise is created, you are directed to the enterprise dashboard. From here, you can view the enterprise details, accounts, users, and billing information. Go to the **Accounts** page to view your enterprise structure, where you see the following accounts:
-   * An enterprise account with the same name as your enterprise. This account is used for enterprise management.
-   * The account that you created the enterprise from. Users can continue working with resources in the account unaffected.
+
+* An enterprise account with the same name as your enterprise. This account is used for enterprise management.
+* The account that you created the enterprise from. Users can continue working with resources in the account unaffected.
 
 ## Create an enterprise structure with account groups
 {: #account_groups_tutorial}
@@ -183,12 +185,12 @@ Complete the following steps to assign the required access:
     * If you want the user to be able to create any service, select **All Identity and Access enabled services**.
     * If you want to assign the user access to a specific service, select it from the list. 
 5. Select the resource group that you want to assign the user access to.
-6. Select the region.
+6. Select the location.
 7. Select the viewer role or higher from the list of platform access roles. 
 8. (Optional) Select the reader role or higher from the list of service access roles. 
-6. Select the viewer role or higher from the list of resource group access roles.
-7. Click **Add**.
-8. Review the access summary, and click **Assign**. 
+9. Select the viewer role or higher from the list of resource group access roles.
+10. Click **Add**.
+11. Review the access summary, and click **Assign**. 
 
 ## View usage from all accounts
 {: #usage_tutorial}
