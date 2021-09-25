@@ -32,7 +32,11 @@ toc:
       topics:
       - acct-getstart-tutorial.md
       - enterprise-tutorial.md
-      - iam-quickstart.md
+      - topicgroup:
+            label: Securing access to resources
+            topics:
+            - iam-quickstart.md
+            - context-restrictions-tutorial.md
       - tagging-resources-tutorial.md
       - dash-tutorial.md
       - trustedprofile-compute-tutorial.md
@@ -52,6 +56,7 @@ toc:
           label: Securing your account
           topics:
           - iam-whatis.md
+          - context-restrictions-what-is.md
           - topicgroup:
               label: Understanding access roles and permissions
               topics:
@@ -124,6 +129,12 @@ toc:
               - iam-classic_infra_keys.md
               - iam-apikey_iamtoken.md
               - iam-apikeys_services.md
+          - topicgroup:
+              label: Controlling context-based restrictions
+              topics:
+              - context-restrictions-create.md
+              - context-restrictions-update.md
+              - context-restrictions-remove.md
       - topicgroup:
           label: Working with resources
           topics:
