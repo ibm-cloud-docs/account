@@ -41,9 +41,9 @@ The password that you used to log in to {{site.data.keyword.Bluemix_notm}} isn't
 Use one of the following options:
 {: tsResolve}
 
- * Go to the [My IBM profile page](https://myibm.ibm.com/dashboard/){: external} to confirm that you're using a valid password.
- * If you forgot your password, click **Forgot your password** to reset your password.
- * If you forgot your IBMid or continue to have problems with your password, contact the Worldwide IBM Registration Help Desk for help.
+* Go to the [My IBM profile page](https://myibm.ibm.com/dashboard/){: external} to confirm that you're using a valid password.
+* If you forgot your password, click **Forgot your password** to reset your password.
+* If you forgot your IBMid or continue to have problems with your password, contact the Worldwide IBM Registration Help Desk for help.
 
 If you sign in to {{site.data.keyword.Bluemix_notm}} and the log in process is disrupted for any reason, like resetting your password, return to the console and start the log in process again.
 {: tip}
