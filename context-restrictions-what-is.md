@@ -132,12 +132,12 @@ Some endpoint types might not be supported by the selected service.
 You can create context-based restrictions for the following services if you have the right permissions on the service:
 
 | Service       |
-|---------------|         
+|---------------|
 | IAM Users  | 
 | IAM Groups |
 | IAM Access Policy Management|
 | IAM Custom roles  |
 {: caption="Table 3. Services compatible with context-based restrictions." caption-side="top"}
 
-Check back regularly to see what services are added more services adopt context-based resources. 
+Check back regularly to see what services are added as more services adopt context-based restrictions. 
 {: note}
