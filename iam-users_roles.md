@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2015, 2020
+  years: 2015, 2021
 
-lastupdated: "2020-11-30"
+lastupdated: "2021-09-24"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -71,13 +71,13 @@ You can manage and define access based on specific roles for users and resources
 
 * Service access roles define a user or service’s ability to perform actions on a service instance, such as accessing the console or performing API calls. The most common service access roles are manager, writer, and reader. Each service maps particular actions for working with the service to each of these roles.
 
-  You might not see all of the roles that are listed here as options when you assign policies in the UI because only the roles available for the service that you chose are displayed. For more information on what roles are enabled and what actions each access role allows for each service, see the documentation for that service.
-  {: note}
+   You might not see all of the roles that are listed here as options when you assign policies in the UI because only the roles available for the service that you chose are displayed. For more information on what roles are enabled and what actions each access role allows for each service, see the documentation for that service.
+   {: note}
 
 * Custom roles for a service can be created on the IAM Roles page by the account owner or a user assigned the administrator role on the role management service. 
 
-  You can review the available roles and associated actions for a particular service by going to the [Roles](https://cloud.ibm.com/iam/roles){: external} page, and selecting the service that you want to learn more about. This is the same page where you can create a custom role in the console.
-  {: note}
+   You can review the available roles and associated actions for a particular service by going to the [Roles](https://cloud.ibm.com/iam/roles){: external} page, and selecting the service that you want to learn more about. This is the same page where you can create a custom role in the console.
+   {: note}
 
 ### Platform management roles
 {: #platformroles}
@@ -108,10 +108,10 @@ Some services might map specific actions to the platform management roles that a
 
 | Platform management role | Actions                                                                                                    | Example actions for {{site.data.keyword.containershort_notm}} |
 |--------------------------|------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| Viewer                   | Can view service instances, but can't modify them                                                          | <ul><li>List clusters</li><li>View details for a cluster</li></ul>|
-| Editor                   | Perform all platform actions except for managing the account and assigning access policies                 |<ul><li>Bind a service to a cluster</li><li>Create a webhook</li></ul> |
-| Operator                 | Perform platform actions required to configure and operate service instances, such as viewing a service's dashboard | <ul><li>Add or remove worker nodes</li><li>Restart or reload worker nodes</li><li>Bind a service to a cluster</li></ul> |
-| Administrator            | Perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users |<ul><li>Remove a cluster</li><li>Create a cluster</li><li>Update user access policies</li><li>All actions a viewer, editor, and operator can perform</li></ul>|
+| Viewer                   | Can view service instances, but can't modify them                                                          | - List clusters  \n - View details for a cluster|
+| Editor                   | Perform all platform actions except for managing the account and assigning access policies                 |- Bind a service to a cluster  \n - Create a webhook|
+| Operator                 | Perform platform actions required to configure and operate service instances, such as viewing a service's dashboard | - Add or remove worker nodes  \n - Restart or reload worker nodes  \n - Bind a service to a cluster |
+| Administrator            | Perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users | - Remove a cluster  \n - Create a cluster  \n - Update user access policies  \n - All actions a viewer, editor, and operator can perform |
 {: caption="Table 3. Example platform management roles and actions for {{site.data.keyword.containershort_notm}} service" caption-side="top"}
 
 ### Service access roles

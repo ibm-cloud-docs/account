@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-08-23"
+lastupdated: "2021-09-24"
 
 keywords: account, add orgs, add spaces, cloud foundry orgs
 
@@ -31,7 +31,7 @@ subcollection: account
 {: #orgsspacesusers}
 
 As an {{site.data.keyword.Bluemix}} account owner, you can add Cloud Foundry orgs and spaces to your account. Only account owners can create new Cloud Found orgs. If you're an organization manager, you can manage the orgs in the account after they are created.
-{:shortdesc}
+{: shortdesc}
 
 ## Cloud Foundry org concepts
 {: #cf-org-concepts}
@@ -43,17 +43,17 @@ Orgs enable collaboration among users and facilitate the logical grouping of pro
 
 Orgs can span multiple regions, and they are defined by the following items:
 
-<dl>
-<dt>Spaces</dt>
-<dd>A subgroup within an org that you can use to organize applications, services, and users. Spaces are tied to a specific region in {{site.data.keyword.Bluemix_notm}}. </dd>
-<dt>Users</dt>
-<dd>The role with basic permission in orgs and spaces. You must be assigned to an org before you can be granted other permissions to the spaces within the org. For more details, see [Cloud Foundry access](/docs/account?topic=account-cfaccess).</dd>
-<dt>Domains</dt>
-<dd>Provide the route on the internet that is allocated to the org. A route has a subdomain and a domain. A subdomain is typically the application name. A domain might be a system domain or a custom domain that you registered for your application.<br/>
-<p>If you add a custom domain, you must configure your DNS server to resolve your custom domain to point to the {{site.data.keyword.Bluemix_notm}} system domain. In this way, when {{site.data.keyword.Bluemix_notm}} receives a request for your custom domain, it can properly route it to your application.</p></dd>
-<dt>Quota</dt>
-<dd>Represents the resources that are available to an org, including the number of services and the amount of memory that can be allocated for use by the org. Quotas are assigned when orgs are created. Any application or service in a space within an org contributes to the usage of the quota. With Pay-As-You-Go or Subscription accounts, you can adjust your quota for Cloud Foundry applications and containers as the needs of your org change.</dd>
-</dl>
+Spaces
+:   A subgroup within an org that you can use to organize applications, services, and users. Spaces are tied to a specific region in {{site.data.keyword.Bluemix_notm}}.
+
+Users
+:   The role with basic permission in orgs and spaces. You must be assigned to an org before you can be granted other permissions to the spaces within the org. For more details, see [Cloud Foundry access](/docs/account?topic=account-cfaccess).
+
+Domains
+:   Provide the route on the internet that is allocated to the org. A route has a subdomain and a domain. A subdomain is typically the application name. A domain might be a system domain or a custom domain that you registered for your application. If you add a custom domain, you must configure your DNS server to resolve your custom domain to point to the {{site.data.keyword.Bluemix_notm}} system domain. In this way, when {{site.data.keyword.Bluemix_notm}} receives a request for your custom domain, it can properly route it to your application.
+
+Quota
+:   Represents the resources that are available to an org, including the number of services and the amount of memory that can be allocated for use by the org. Quotas are assigned when orgs are created. Any application or service in a space within an org contributes to the usage of the quota. With Pay-As-You-Go or Subscription accounts, you can adjust your quota for Cloud Foundry applications and containers as the needs of your org change.
 
 In a Subscription account, the quota is a user-defined limit that initiates spending notifications.
 {: tip}
@@ -82,9 +82,9 @@ After you add the org, you're automatically assigned the Organization Manager pe
 
 You can assign the following [Cloud Foundry roles](/docs/account?topic=account-cfaccess#cfroles) to users in an org. All users who are invited to the account are assigned the auditor role by default.
 
-   * Organization manager
-   * Organization billing manager
-   * Organization auditor
+* Organization manager
+* Organization billing manager
+* Organization auditor
 
 ## Creating spaces in the console
 {: #spaceinfo}
@@ -103,9 +103,9 @@ To add a space to an org, complete the following steps.
 
 After you add users to an org, you can grant them permissions to the spaces. Similar to orgs, spaces also have a set of [Cloud Foundry roles](/docs/account?topic=account-cfaccess#cfroles) with specific permissions that are assigned to team members:
 
-  * Space manager
-  * Space developer
-  * Space auditor
+* Space manager
+* Space developer
+* Space auditor
 
 A user must be assigned at least one of the permissions in the space.
 {: tip}
@@ -118,26 +118,27 @@ You can create an organization by using the {{site.data.keyword.Bluemix}} Comman
 
 1. Log in, and select the account.
 
-   ```
+   ```bash
    ibmcloud login
    ```
-   {:codeblock}
+   {: codeblock}
+
 2. Create an organization by running the [`ibmcloud account org-create`](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_org_create) command, where `ORG_NAME` is the name of the organization to be created, and `-r, --region REGION` is the region name. 
 
-   ```
+   ```bash
    ibmcloud account org-create ORG_NAME [-r, --region REGION]
    ```
-   {:codeblock}
+   {: codeblock}
 
 
    For example, the following command creates an organization that is named `IBM`.
 
-   ```
+   ```bash
    ibmcloud account org-create IBM
    ```
-   {:codeblock}
+   {: codeblock}
 
-   * If `REGION` is not specified, the name is default to current region.
+   If `REGION` is not specified, the name is default to current region.
 
 This operation can be run only by the account owner. 
 {: note}
@@ -146,20 +147,21 @@ This operation can be run only by the account owner.
 {: #create-space-cli}
 {: cli}
 
-You can also create spaces by using the {{site.data.keyword.Bluemix}} Command Line Interface.
+You can also create spaces by using the {{site.data.keyword.Bluemix}} CLI.
 
 1. Log in, and select the account.
 
-   ```
+   ```bash
    ibmcloud login
    ```
-   {:codeblock}
+   {: codeblock}
+
 2. Create an organization by running the [`ibmcloud account space-create`](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_space_create) command, where `-o` is the organization, and `-q` is the quota to assign to the newly created space. 
 
-   ```
+   ```bash
    ibmcloud account space-create SPACE [-o ORG] [-q SPACE_QUOTA]
    ```
-   {:codeblock}
+   {: codeblock}
    
 ## Creating orgs by using the Cloud Foundry API
 {: #create-org-api}
@@ -167,7 +169,7 @@ You can also create spaces by using the {{site.data.keyword.Bluemix}} Command Li
 
 You can create an organization by calling the Cloud Foundry API. For detailed information about how to use it, see [Create an Organization](http://v3-apidocs.cloudfoundry.org/version/3.97.0/index.html#create-an-organization){: external}. Check the following sample request, where `my-organization` is the name of your organization:
 
-```
+```curl
 curl "https://api.example.org/v3/organizations" \
   -X POST \
   -H "Authorization: bearer [token]" \
@@ -183,7 +185,7 @@ curl "https://api.example.org/v3/organizations" \
 
 You can also create spaces by calling the Cloud Foundry API. For detailed information about how to use it, see [Create a Space](http://v3-apidocs.cloudfoundry.org/version/3.97.0/index.html#create-a-space){: external}. Check the following sample request, where `my-space`is the name of your space:
 
-```
+```curl
 curl "https://api.example.org/v3/spaces" \
   -X POST \
   -H "Authorization: bearer [token]" \

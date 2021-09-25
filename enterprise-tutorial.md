@@ -2,7 +2,8 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-06-11"
+  
+lastupdated: "2021-09-24"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, enterprise users, enterprise access, enterprise tutorial
 
@@ -27,7 +28,7 @@ completion-time: 10m
 {: toc-completion-time="10m"}
 
 This tutorial walks you through how to set up an enterprise by department so you can manage and track usage costs for multiple {{site.data.keyword.Bluemix}} accounts. By completing this tutorial, you learn how to create an enterprise, add accounts and organize them in account groups, invite users, and explore subscriptions.
-{:shortdesc}
+{: shortdesc}
 
 The tutorial uses a fictitious company that is called *Example Corp* that wants to create an enterprise with the following structure. As you complete the tutorial, adapt each step to match your organization's accounts and desired structure.
 
@@ -41,7 +42,7 @@ Read [What is an enterprise?](/docs/account?topic=account-what-is-enterprise) to
 Verify that you have the required access in a Subscription account, which serves as the base account from which you create the enterprise. To create an enterprise, you must be the account owner or have the Administrator role on the Billing account management service.
 
 Creating an enterprise from an account and importing existing accounts cannot be undone. This tutorial is provided as an example of the steps you can follow to set up an enterprise by department, but you should carefully plan your enterprise structure around your organization's needs.
-{:important}
+{: important}
 
 ## Create the enterprise
 {: #create_enterprise_tutorial}
@@ -55,8 +56,9 @@ Enterprises are created from an existing Subscription account. When you create t
 4. Review the information about the impact to your account, and select **I understand the impact to my account**. Then, click **Create**. The account is now permanently part of the enterprise and can't be removed.
 
 After your enterprise is created, you are directed to the enterprise dashboard. From here, you can view the enterprise details, accounts, users, and billing information. Go to the **Accounts** page to view your enterprise structure, where you see the following accounts:
-  * An enterprise account with the same name as your enterprise. This account is used for enterprise management.
-  * The account that you created the enterprise from. Users can continue working with resources in the account unaffected.
+
+* An enterprise account with the same name as your enterprise. This account is used for enterprise management.
+* The account that you created the enterprise from. Users can continue working with resources in the account unaffected.
 
 ## Create an enterprise structure with account groups
 {: #account_groups_tutorial}
@@ -89,8 +91,8 @@ Complete the following steps to import the example UX-UI account to the Design a
 2. In the Accounts section, click **Add** > **Import account**.
 3. Select **UX-UI** from the **Account** list.
 
-  If no accounts are displayed, you likely don't have the correct access in any existing accounts.
-  {: tip}
+   If no accounts are displayed, you likely don't have the correct access in any existing accounts.
+   {: tip}
 
 4. Select **Design** as the parent of the UX-UI account. This determines where in the enterprise hierarchy the account exists.
 5. Review the information about the impacts to your account, and select **I understand the impact to my account**. Then, click **Import**.
@@ -124,7 +126,7 @@ Repeat the steps to create more accounts. As an example, the Example Corp enterp
 | Direct | Sales |
 | Online | Sales |
 | Enablement | Sales |
-{:caption="Table 1. Child account and parent account group hierarchy" caption-side="top"}
+{: caption="Table 1. Child account and parent account group hierarchy" caption-side="top"}
 
 ## Explore subscriptions
 {: #explore-sub_tutorial}
@@ -183,12 +185,12 @@ Complete the following steps to assign the required access:
     * If you want the user to be able to create any service, select **All Identity and Access enabled services**.
     * If you want to assign the user access to a specific service, select it from the list. 
 5. Select the resource group that you want to assign the user access to.
-6. Select the region.
+6. Select the location.
 7. Select the viewer role or higher from the list of platform access roles. 
 8. (Optional) Select the reader role or higher from the list of service access roles. 
-6. Select the viewer role or higher from the list of resource group access roles.
-7. Click **Add**.
-8. Review the access summary, and click **Assign**. 
+9. Select the viewer role or higher from the list of resource group access roles.
+10. Click **Add**.
+11. Review the access summary, and click **Assign**. 
 
 ## View usage from all accounts
 {: #usage_tutorial}

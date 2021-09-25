@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-08-17"
+lastupdated: "2021-09-22"
 
 keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy, set up profile
 
@@ -20,17 +20,17 @@ subcollection: account
 {: #usersettings}
 
 In your {{site.data.keyword.cloud}} profile, you can add a photo and personal information, manage notifications, and monitor your privacy. Setting it up helps your teammates know who you are and how you can help.
-{:shortdesc}
+{: shortdesc}
 
-Your profile is connected to your log in ID, and it's shared across all {{site.data.keyword.cloud_notm}} accounts that you can access. 
+Your profile is connected to your log in ID, and it's shared across all {{site.data.keyword.cloud_notm}} accounts that you can access.
 
 ## Changing your profile photo
 {: #profile-photo}
 
 You can change your profile photo. In the {{site.data.keyword.cloud_notm}} console, to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Profile**.
 
-  * To add a photo or replace an existing photo, click **Upload**.
-  * To remove your photo, click **Delete picture**.
+* To add a photo or replace an existing photo, click **Upload**.
+* To remove your photo, click **Delete picture**.
 
 ## Editing your information
 {: #ibmid}
@@ -51,4 +51,5 @@ To change your settings from the {{site.data.keyword.IBM_notm}} standard default
 
    You can click **Advanced settings** to view the exact company and domain for the cookies in each level. Then, click **Basic settings** to return to cookie preference selection.
    {: tip}
+
 1. Click **Agree and save custom settings**.

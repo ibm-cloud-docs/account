@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2021
 
-lastupdated: "2021-06-14"
+lastupdated: "2021-09-24"
 
 keywords: resource FAQs, resource frequently asked questions, resource group, resource list, dashboard widget
 
@@ -80,9 +80,9 @@ Resource groups are a method of organizing resources and are not directly associ
 3. From the **Access policies** tab, click **Assign access**.
 4. Click **IAM services**.  
 5. Select the type of access that you want to assign.
-5. Scope the access to all resources, or select resources based on specific resource groups as attributes. 
-6. Select the platform, service and resource group access for the resource group. 
-7. Click **Add** and **Assign**.
+6. Scope the access to all resources, or select resources based on specific resource groups as attributes. 
+7. Select the platform, service and resource group access for the resource group. 
+8. Click **Add** and **Assign**.
 
 You can't use access groups with infrastructure service resources or permissions.
 {: note} 

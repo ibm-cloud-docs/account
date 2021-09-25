@@ -4,7 +4,7 @@ copyright:
 
   years: 2015，2021
 
-lastupdated: "2021-08-18"
+lastupdated: "2021-09-24"
 
 keywords: federated ID, password, enterprise SSO, single sign-on ID, API key login, one-time passcode login, temporary credential, to login, logging in, trusted profiles
 
@@ -46,7 +46,7 @@ Use the following steps to log in to the {{site.data.keyword.cloud_notm}} consol
 1. Go to the [{{site.data.keyword.cloud_notm}} login page](cloud.ibm.com/login).
 2. Enter your ID, and click **Continue**. 
 3. Enter your password.
-	
+
 After you log in, you are directed to the {{site.data.keyword.cloud_notm}} dashboard, which provides a variety of development, account management, and infrastructure widgets.
 
 ## Using trusted profiles to log in to the console
@@ -86,17 +86,18 @@ You can use two different methods to log in with the CLI. For the first method, 
 2. Follow the URL in the prompt to get the one-time passcode.
 3. Copy and paste the passcode value in the CLI as your input.
 
-  ```
-  ibmcloud login --sso
-  API endpoint: https://cloud.ibm.com
+```bash
+ibmcloud login --sso
+API endpoint: https://cloud.ibm.com
 
-  Get One Time Code from https://identity-2.us-south.iam.cloud.ibm.com/identity/passcode to proceed.
-  Open the URL in the default browser? [Y/n]>
-  One Time Code >
-  Authenticating...
-  OK
+Get One Time Code from https://identity-2.us-south.iam.cloud.ibm.com/identity/passcode to proceed.
+Open the URL in the default browser? [Y/n]>
+One Time Code >
+Authenticating...
+OK
 
-  ```
+```
+{: codeblock}
 
 If you're already logged in to the console, you can use the following steps:
 
@@ -112,16 +113,17 @@ You can use two different methods to log in with the Cloud Foundry CLI. For the 
 2. Follow the URL in the prompt to get the one-time passcode.
 3. Copy and paste the passcode value in the CLI as your input.
 
-  ```
-  cf login -a https://api.us-south.cf.cloud.ibm.com --sso
+```bash
+cf login -a https://api.us-south.cf.cloud.ibm.com --sso
 
-  API endpoint: https://api.us-south.cf.cloud.ibm.com
+API endpoint: https://api.us-south.cf.cloud.ibm.com
 
-  One Time Code (Get one at https://login.us-south.cf.cloud.ibm.com/UAALoginServerWAR/passcode)>
-  Authenticating...
-  OK
+One Time Code (Get one at https://login.us-south.cf.cloud.ibm.com/UAALoginServerWAR/passcode)>
+Authenticating...
+OK
 
-  ```
+```
+{: codeblock}
 
 If you're already logged in to the console, you can use the following steps:
 
@@ -143,37 +145,38 @@ The required API key is the {{site.data.keyword.Bluemix_notm}} API key that is u
 
 1. Create an API key with the [`ibmcloud iam api-key-create` command](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_api_key_create). Use the `--file` option to generate an API key file instead of showing the key in the command window:
 
-   ```
+   ```bash
    ibmcloud iam api-key-create NAME [-d DESCRIPTION] [--file FILE]
 
    ```
+   {: codeblock}
 
-2. Log in with the API key.
-
-  You can use the API key with the {{site.data.keyword.Bluemix_notm}} CLI in any of the following ways:
+2. Log in with the API key. You can use the API key with the {{site.data.keyword.Bluemix_notm}} CLI in any of the following ways:
 
     * Call the API key directly:
 
-      ```
+      ```bash
       ibmcloud login --apikey <api_key_string>
 
       ```
+      {: codeblock}
 
     * Call the API key with the key file:
 
-      ```
+      ```bash
       ibmcloud login --apikey @key_file_name
 
       ```
+      {: codeblock}
 
     * Set an environment variable. Additionally, you can also set an environment variable on your system. For example, IBMCLOUD_API_KEY=api_key_string, where `api_key_string` is the custom value of the API key. After the environment variable is set, you can simply specify `ibmcloud login` from the CLI.
 
    For Windows 10 PowerShell, you want to use `'@key_file_name'` with single quotation marks around the key file name.
    {: tip}
 
-  To log in by using the Cloud Foundry CLI, specify `apikey` as the username and the API key string as the password:
+   To log in by using the Cloud Foundry CLI, specify `apikey` as the username and the API key string as the password:
 
-    ```
+    ```bash
     cf login -a https://api.us-south.cf.cloud.ibm.com
 
     API endpoint: https://api.us-south.cf.cloud.ibm.com
@@ -185,6 +188,7 @@ The required API key is the {{site.data.keyword.Bluemix_notm}} API key that is u
     OK
 
     ```
+    {: codeblock}
 
 ## Using an API key to get an IAM token for authentication
 {: #using_apikey}
@@ -192,9 +196,10 @@ The required API key is the {{site.data.keyword.Bluemix_notm}} API key that is u
 
 You can use an API key to get an IAM token to access your {{site.data.keyword.Bluemix_notm}} services. For example, you can run the following curl command to use an API key named `MY_APIKEY` to get an IAM token: 
 
-     ```
-     curl -X POST 'https://iam.cloud.ibm.com/identity/token' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey=MY_APIKEY'
+```bash
+curl -X POST 'https://iam.cloud.ibm.com/identity/token' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey=MY_APIKEY'
 
-     ```
+```
+{: codeblock}
 
 For more information, see [Creating an IAM access token for a user or service ID by using an API key](https://cloud.ibm.com/apidocs/iam-identity-token-api#gettoken-apikey). 

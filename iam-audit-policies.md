@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-05-27"
+lastupdated: "2021-09-24"
 
 keywords: auditing IAM policies, last permit information, restore policies
 
@@ -27,7 +27,7 @@ subcollection: account
 {: #iam-audit-policies}
 
 To reduce the number of policies in the account and keep only the minimum access that is required for each user, you can identify the infrequently used access policies and remove them.
-{:shortdesc}
+{: shortdesc}
 
 IAM captures authorization information for each policy. This information includes the last time the policy was used to grant a permit and a running count of its use. Every access policy in {{site.data.keyword.cloud}} is soft deleted and kept in the system for up to 10 days. During this time period, you can list and restore them at any time.
 
@@ -36,7 +36,7 @@ IAM captures authorization information for each policy. This information include
 
 List all account policies including last permit information that is sorted by count or last used. The policy metadata can be retrieved by using the [IAM Policy Management API](/apidocs/iam-policy-management#policy-data-enrichment).
 
-```
+```curl
 curl -X GET https://iam.cloud.ibm.com/v1/policies?account_id=<>&format=include_last_permit&sort=-last_modified_at \
   -H 'Authorization: Bearer $TOKEN' \
   -H 'Content-Type: application/json'
@@ -44,7 +44,7 @@ curl -X GET https://iam.cloud.ibm.com/v1/policies?account_id=<>&format=include_l
 {: codeblock}
 {: curl}
 
-```
+```java
 ListPoliciesOptions options = new ListPoliciesOptions.Builder()
     .accountId(exampleAccountId)
     .iamId(exampleUserId)
@@ -59,7 +59,7 @@ System.out.println(policyList);
 {: codeblock}
 {: java}
 
-```
+```javascript
 const params = {
   accountId: exampleAccountId,
   iamId: exampleUserId,
@@ -77,7 +77,7 @@ iamPolicyManagementService.listPolicies(params)
 {: codeblock}
 {: javascript}
 
-```
+```python
 policy_list = iam_policy_management_service.list_policies(
   account_id=example_account_id, iam_id=example_user_id, format='include_last_permit'
 ).get_result()
@@ -87,7 +87,7 @@ print(json.dumps(policy_list, indent=2))
 {: codeblock}
 {: python}
 
-```
+```go
 options := iamPolicyManagementService.NewListPoliciesOptions(
   exampleAccountID,
 )
@@ -109,7 +109,7 @@ fmt.Println(string(b))
 
 The format of the response is represented in JSON.
 
-```
+```json
 {
     "policies": [
         {
@@ -147,14 +147,14 @@ The format of the response is represented in JSON.
 
 You identified one or more policies that have not been used to grant access in a while. You can delete the unused policies as shown in the following examples.
 
-```
+```curl
 curl -X DELETE https://iam.cloud.ibm.com/v1/policies/{examplePolicyId} \
     -H 'Authorization: Bearer $TOKEN'
 ```
 {: codeblock}
 {: curl}
 
-```
+```java
 DeletePolicyOptions options = new DeletePolicyOptions.Builder()
     .policyId(examplePolicyId)
     .build();
@@ -164,7 +164,7 @@ service.deletePolicy(options).execute();
 {: codeblock}
 {: java}
 
-```
+```javascript
 const params = {
   policyId: examplePolicyId,
 };
@@ -180,7 +180,7 @@ iamPolicyManagementService.deletePolicy(params)
 {: codeblock}
 {: javascript}
 
-```
+```python
 response = iam_policy_management_service.delete_policy(
   policy_id=example_policy_id
 ).get_result()
@@ -190,7 +190,7 @@ print(json.dumps(response, indent=2))
 {: codeblock}
 {: python}
 
-```
+```go
 options := iamPolicyManagementService.NewDeletePolicyOptions(
   examplePolicyID,
 )
@@ -215,7 +215,7 @@ You found out that a policy that was recently deleted is needed. In that case, y
 
 1. List deleted policies in the account and sort by the last modified time.
 
-    ```
+    ```curl
     curl -X GET https://iam.cloud.ibm.com/v1/policies?account_id=<>&state=deleted&sort=last_modified_at \
       -H 'Authorization: Bearer $TOKEN' \
       -H 'Content-Type: application/json'
@@ -223,7 +223,7 @@ You found out that a policy that was recently deleted is needed. In that case, y
     {: codeblock}
     {: curl}
 
-    ```
+    ```java
     ListPoliciesOptions options = new ListPoliciesOptions.Builder()
           .accountId(exampleAccountId)
           .iamId(exampleUserId)
@@ -239,7 +239,7 @@ You found out that a policy that was recently deleted is needed. In that case, y
     {: codeblock}
     {: java}
 
-    ```
+    ```javascript
     const params = {
       accountId: exampleAccountId,
       iamId: exampleUserId,
@@ -258,7 +258,7 @@ You found out that a policy that was recently deleted is needed. In that case, y
     {: codeblock}
     {: javascript}
 
-    ```
+    ```python
     policy_list = iam_policy_management_service.list_policies(
       account_id=example_account_id, iam_id=example_user_id, state='deleted', sort='last_modified_at'
     ).get_result()
@@ -268,7 +268,7 @@ You found out that a policy that was recently deleted is needed. In that case, y
     {: codeblock}
     {: python}
 
-    ```
+    ```go
     options := iamPolicyManagementService.NewListPoliciesOptions(
       exampleAccountID,
     )
@@ -288,7 +288,7 @@ You found out that a policy that was recently deleted is needed. In that case, y
 
     The format of the response is represented in JSON.
 
-    ```
+    ```json
     {
         "policies": [
             {
@@ -323,7 +323,7 @@ You found out that a policy that was recently deleted is needed. In that case, y
 
 2. With the previously retrieved policy ID, you can restore the policy:
 
-    ```
+    ```curl
     curl -X PATCH 'https://iam.cloud.ibm.com/v1/policies/{examplePolicyId}' \
       -H 'Authorization: Bearer $TOKEN' \
       -H 'Content-Type: application/json' \
@@ -333,7 +333,7 @@ You found out that a policy that was recently deleted is needed. In that case, y
     {: codeblock}
     {: curl}
 
-    ```
+    ```java
     PatchPolicyOptions patchPolicyOptions = new PatchPolicyOptions.Builder()
             .policyId(examplePolicyId)
             .ifMatch(examplePolicyEtag)
@@ -348,7 +348,7 @@ You found out that a policy that was recently deleted is needed. In that case, y
     {: codeblock}
     {: java}
 
-    ```
+    ```javascript
     const params = {
       policyId: examplePolicyId,
       ifMatch: examplePolicyETag,
@@ -366,7 +366,7 @@ You found out that a policy that was recently deleted is needed. In that case, y
     {: codeblock}
     {: javascript}
 
-    ```
+    ```python
     policy = iam_policy_management_service.patch_policy(
       policy_id=example_policy_id,
       if_match=example_updated_policy_etag,
@@ -378,7 +378,7 @@ You found out that a policy that was recently deleted is needed. In that case, y
     {: codeblock}
     {: python}
 
-    ```
+    ```go
     options := iamPolicyManagementService.NewPatchPolicyOptions(
       examplePolicyID,
       examplePolicyETag,
@@ -398,7 +398,7 @@ You found out that a policy that was recently deleted is needed. In that case, y
 
     The format of the response is represented in JSON.
 
-    ```
+    ```json
     {
         "id": examplePolicyId,
         "type": "access",

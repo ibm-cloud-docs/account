@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-09-14"
+lastupdated: "2021-09-22"
 
 keywords: enterprise, enterprise account, multiple accounts, organization, hierarchy
 
@@ -21,7 +21,7 @@ subcollection: account
 {: #what-is-enterprise}
 
 {{site.data.keyword.Bluemix}} enterprises provide a way to centrally manage billing and resource usage across multiple accounts. Within an enterprise, you create a multitiered hierarchy of accounts, with billing and payments for all accounts managed at the enterprise level.
-{:shortdesc}
+{: shortdesc}
 
 When compared to using multiple stand-alone accounts, enterprises offer the following key benefits:
 - Centralized account management: View your entire enterprise hierarchy at a glance, without needing to switch accounts. You can add existing accounts or create new accounts directly within the enterprise.
@@ -92,7 +92,7 @@ For more information, see [User management for enterprises](/docs/account?topic=
 Enterprises can help simplify account and billing management for otherwise complex scenarios. Enterprises can be beneficial for managing any large organization, but two primary use cases where you might want to create them are large companies and educational institutions.
 
 How you structure your enterprise depends on how you want to analyze usage and costs, such as to charge back usage to a particular group. Organize your enterprise according to how you want to track and manage billing and usage.
-{:tip}
+{: tip}
 
 ### Large companies or organizations
 {: #enterprise-orgs}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-02-25"
+lastupdated: "2021-09-24"
 
 keywords: troubleshoot account, pending account, login issue 
 
@@ -39,7 +39,7 @@ When you sign up for an {{site.data.keyword.Bluemix_notm}} account, you receive 
 The confirmation email is sent to the email address that is associated with your IBMid. If you cannot find the confirmation email, go to the [{{site.data.keyword.Bluemix_notm}} login page](https://cloud.ibm.com/){: external} and try to log in. The following message is displayed:
 {: tsResolve}
 
-```
+```text
 To complete your registration, check your email.
 Can't find the email? Resend.
 ```

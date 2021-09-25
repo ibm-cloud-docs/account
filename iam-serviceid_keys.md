@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-09-22"
 
 keywords: service ID, service ID API key, lock service ID API key, delete service ID API key
 
@@ -29,7 +29,7 @@ subcollection: account
 {: #serviceidapikeys}
 
 Service IDs are created to enable access to your {{site.data.keyword.Bluemix}} services by applications hosted both inside and outside of {{site.data.keyword.Bluemix_notm}}. API keys are used by an application to authenticate as a particular service ID and are granted the access that is associated with that specific service ID.
-{:shortdesc}
+{: shortdesc}
 
 After you create a service ID, you can start creating API keys and assigning service policies. Each policy specifies the level of access that is allowed when the API key is used to authenticate with your services. For more information about creating a service ID and assigning policies, see [Creating and working with service IDs](/docs/account?topic=account-serviceids). For more information about the CLI commands that are used to manage service ID API keys, see [Managing IAM access, API keys, service IDs, and access groups](/docs/cli?topic=cli-ibmcloud_commands_iam).
 
@@ -86,7 +86,7 @@ If you didn't create the service ID, but you are the account owner or an adminis
 
 To update an API key for a service ID by using the CLI, you can use the [ibmcloud iam service-api-key-update](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_service_api_key_update) command.
 
-```
+```bash
 ibmcloud iam service-api-key-update NAME SERVICE_ID [-n, --name NEW_sNAME] [-d, --description DESCRIPTION] [-v, --version VERSION] [-f, --force]
 ```
 {: codeblock}
@@ -113,40 +113,45 @@ You can unlock your API key at any time to update, delete, or add an access poli
 
 For API keys that represent the identity of the service ID, you can prevent the API key from being deleted by locking it. A locked API key is indicated by the **Locked** icon ![Locked icon](images/locked.svg "Locked") in the UI. To lock a service ID API key, use the following command:
 
-```
+```bash
 ibmcloud iam service-api-key-lock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|SERVICE_ID_UUID) [-f, --force]
 ```
+{: codeblock}
 
-<strong>Prerequisites</strong>: Endpoint, Login, Target
+**Prerequisites**: Endpoint, Login, Target
 
-<strong>Command Options</strong>:
-<dl>
-  <dt>APIKEY_NAME (required)</dt>
-  <dd>Name of the API key, exclusive with APIKEY_UUID</dd>
-  <dt>APIKEY_UUID (required)</dt>
-  <dd>UUID of the API key, exclusive with APIKEY_NAME</dd>
-  <dt>SERVICE_ID_NAME (required)</dt>
-  <dd>Name of the service ID, exclusive with SERVICE_ID_UUID</dd>
-  <dt>SERVICE_ID_UUID (required)</dt>
-  <dd>UUID of the service ID, exclusive with SERVICE_ID_NAME</dd>
-  <dt>-f, --force</dt>
-  <dd>Lock without confirmation</dd>
-</dl>
+**Command options**:
 
-<strong>Examples</strong>:
+APIKEY_NAME
+:   The name of the API key, exclusive with the APIKEY_UUID option. Required. 
 
-Lock service API key `sample-key` of service ID `sample-service`:
+APIKEY_UUID
+:   The UUID of the API key, exclusive with the APIKEY_NAME option. Required.
 
-```
+SERVICE_ID_NAME
+:   The name of the service ID, exclusive with the SERVICE_ID_UUID option. Required.
+
+SERVICE_ID_UUID
+:   The UUID of the service, exclusive with the SERVICE_ID_NAME option. Required. 
+
+-f, --force
+:   Lock without confirmation. 
+
+**Examples**:
+
+Lock the service API key `sample-key` of service ID `sample-service`:
+
+```bash
 ibmcloud iam service-api-key-lock sample-key sample-service
 ```
+{: codeblock}
 
 To unlock a service ID API key, use the following command:
 
-```
+```bash
 ibmcloud iam service-api-key-unlock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|SERVICE_ID_UUID) [-f, --force]
 ```
-
+{: codeblock}
 
 ## Deleting an API key for a service ID
 {: #delete_service_key}
@@ -170,12 +175,12 @@ If you didn't create the service ID, but you are the account owner or an adminis
 
 You can delete an API key that is associated with a service ID. However, deleting an API key that is used by an application removes the ability for that application to authenticate with your services. To delete an API key for a service ID by using the CLI, you can use the [ibmcloud iam service-api-key-delete](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_service_api_key_delete) command.
 
-```
+```bash
 ibmcloud iam service-api-key-delete NAME SERVICE_ID [-f, --force]
 ```
 {: codeblock}
 
-<!---API--->
+
 
 ## Creating an API key for a service ID using the API
 {: #create_service_key-api}

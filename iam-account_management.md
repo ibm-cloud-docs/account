@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2021
 
-lastupdated: "2021-09-23"
+lastupdated: "2021-09-24"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, role management service, catalog management service, cloud shell service, software instance service
 
@@ -322,6 +322,7 @@ You can give users access to update account settings, view subscriptions, view o
 | Operator      | View account feature settings   \n  \n View subscriptions in account   \n  \n View and change account name |
 | Editor        | View and update account feature settings   \n  \n View subscriptions in account   \n  \n View offers in account   \n  \n View and apply subscription and feature codes   \n  \n View and change account name   \n  \n View and update spending limits   \n  \n Set spending notifications   \n  \n View subscription balances and track usage |
 | Administrator | View and update account feature settings   \n  \n View subscriptions in account   \n  \n View offers in account   \n  \n View and apply subscription and feature codes   \n  \n View and change account name   \n  \n View and update spending limits   \n  \n Set spending notifications   \n  \n View subscription balances and track usage   \n  \n Create an enterprise |
+
 {: caption="Table 2. Roles and example actions for the Billing service" caption-side="top"}
 
 It's possible to view subscription balances and usage from the Account settings page, but you can't view the Account settings page with the Viewer or Operator roles. To access the Account settings page and your subscription information from that page, you need the Editor role or higher. 
@@ -394,6 +395,7 @@ You can give users access to view, create, edit, and delete access groups in the
 | Editor        | View, create, edit, and delete groups   \n  \n Add or remove users from groups                                                                             |
 | Administrator | View, create, edit, and delete groups   \n  \n Add or remove users   \n  \n Assign access to a group   \n  \n Manage access for working with access groups   \n  \n Enable or disable public access to resources at the account level |
 {: caption="Table 7. Roles and example actions for the IAM access groups service" caption-side="top"}
+
 
 ### IAM identity service
 {: #identity-service-account-management}

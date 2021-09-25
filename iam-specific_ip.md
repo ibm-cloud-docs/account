@@ -4,7 +4,8 @@ copyright:
 
   years: 2018, 2021
 
-lastupdated: "2021-09-23"
+
+lastupdated: "2021-09-24"
 
 keywords: specific IP addresses, IP addresses, restrict IP access, IP address access, allow IP access
 
@@ -95,13 +96,15 @@ To restrict all users to using only specific IP addresses, complete the followin
    {: pre}
 
 3. Create a Terraform execution plan.
-   ```bash
+
+   ```terraform
    terraform plan
    ```
    {: pre}
 
 4. Update the allowed IP addressees in the account. Note that this process might take a few minutes to complete.
-   ```bash
+
+   ```terraform
    terraform apply
    ```
    {: pre}

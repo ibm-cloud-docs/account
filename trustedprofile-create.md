@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-09-16"
+lastupdated: "2021-09-24"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
@@ -89,6 +89,7 @@ Complete the following steps to set up better control over granting access to co
    {: note}
 
    3. If you select **Specific resources**, you can establish trust with one or more existing compute resource instances. For example, a Kubernetes cluster. 
+   
 5. (Optional) Create an access policy. 
    1. Based on your level of access, you can assign IAM policies and classic infrastructure permissions. Select **IAM services** or **Account management** to continue.
    2. For IAM services and account management services, select the option for all resources or only specific resources based on attributes. Select any combination of roles and permissions to define the scope of access, and click **Add** > **Create**.

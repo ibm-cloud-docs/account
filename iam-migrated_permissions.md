@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2019, 2020
+  years: 2019, 2021
 
-lastupdated: "2020-06-09"
+lastupdated: "2021-09-24"
 
 keywords: migrated permissions, SoftLayer account permissions, migrated permission access group, migrated classic infrastructure permissions
 
@@ -23,7 +23,7 @@ subcollection: account
 {: #migrated_permissions}
 
 You can use migrated permission access groups to manage a set of classic infrastructure (SoftLayer) permissions for managing billing information and working with support cases. Access groups contain a set of users and service IDs that have the same access. The users in your SoftLayer account who were previously assigned account and support permissions are now assigned to the respective migrated permission access group. As a result, the permissions can be directly managed by using IAM access groups.
-{:shortdesc}
+{: shortdesc}
 
 These special access groups include all of the appropriate IAM policies to preserve the original behavior of the SoftLayer account permissions. For example, for a user to continue to view all updates from all users on a support case, the migrated permission access groups for the ticketing SoftLayer account permissions include an extra IAM policy on the User Management service with the viewer role assigned. For more information, see [Assigning user access for working with support cases](/docs/get-support?topic=get-support-access#access).
 
@@ -32,17 +32,16 @@ After your classic infrastructure permissions are migrated, you must discontinue
 
 You can continue to manage these migrated classic infrastructure permissions for users directly through IAM by adding and removing users from the access groups. The access group policies are locked to preserve the access behavior for their members. However, you might find it helpful to create new access groups that include a combination of access policies for the [account management services](/docs/account?topic=account-account-services#account-management-access). The following table outlines the details of an IAM access policy that includes the permission from the migrated permission access group so that you can re-create and even combine these permissions with others in a new access group.
 
-| Migrated Permission Access Group Name | Description                                                                                    | Account Management Service         | IAM Role       |
-|---------------------------------------|------------------------------------------------------------------------------------------------|------------------------------------|----------------|
-| View account summary                  | View the account summary page and invoices and payments.                                       | Billing                            | Viewer         |
-| Get compliance reports                | Request compliance reports.                                                                    | Billing                            | Viewer         |
-| Edit company profile                  | Edit the company profile information.                                                          | Billing                            | Editor         |
-| Update payment details                | Update the recurring monthly payment information.                                              | Billing                            | Editor         |
-| Limit EU case restriction             | Enable or disable the EU Supported option to restrict support case data to the European Union. | Billing                            | Not applicable |
-| Add cases and view orders             | Create support cases and view all orders.                                                      | Support Center                     | Editor         |
-| Edit cases                            | Edit any support case.                                                                         | Support Center                     | Editor         |
-| Search cases                          | Search all support cases if the view cases permission is also assigned.                        | Support Center                     | Viewer         |
-| View cases                            | View all support cases.                                                                        | Support Center and User Management | Viewer, Viewer |
+| Migrated permission access group name | Description | Account management service | IAM role | 
+|---------------------------------------|-------------|----------------------------|----------|
+| View account summary | View the account summary page, invoices, and payments | Billing | Viewer |
+| Get compliance reports | Request compliance reports | Billing | Viewer |
+| Edit company profile | Edit the company profile information | Billing | Editor |
+| Update payment details | Update the recurring monthly payment information | Billing | Editor |
+| Limit EU case restriction | Enable or disable the EU Supported option to restrict support case data to the European Union | Billing | Not applicable |
+| Add cases and view orders | Create support cases and view all orders | Support Center | Editor |
+| View cases | View all support cases | Support Center and User Management | Viewer |
+| Search cases | Search all support cases if permission to view cases is assigned | Support Center | Viewer |
 {: caption="Table 1. Migrated infrastructure permissions that are mapped to IAM roles" caption-side="top"}
 
 For the view cases access, create two separate policies with the viewer role for the Support Center and User Management services. The policy on the User Management service ensures that the user views all cases in the account regardless of who opened them. Without the policy on the User Management service, if the account owner has restricted users' ability to view other users in the account, the user's view of cases might be limited to only the ones they opened themselves.
@@ -62,7 +61,7 @@ To create an access group, complete the following steps:
 2. Click **Create**.
 3. Enter a name and an optional description for your group, and click **Create**.
 4. Click **Add users** on the **Users** tab.
-3. Select the users that you want to add from the list, and click **Add to group**. You can complete the same action from the **Service IDs** tab if you want to add any service IDs to the group.
+5. Select the users that you want to add from the list, and click **Add to group**. You can complete the same action from the **Service IDs** tab if you want to add any service IDs to the group.
 
 After you set up your group with users and service IDs, assign access to the group. Remember, any policy that you set for the group applies to all members of the group.
 
@@ -73,12 +72,12 @@ After you set up your group with users and service IDs, assign access to the gro
 5. Select the **Viewer** role.
 6. Click **Add**.
 7. To assign a second access policy for the ability to view support cases, select the **Support Center** service.
-10. Select the **Viewer** role.
-11. Click **Add**.
-12. To assign a third access policy for the ability to view all support cases regardless of how the account owner has set the account user visibility setting, select the **User Management** service.
-15. Select the **Viewer** role.
-16. Click **Add**.
-17. Click **Assign**. 
+8. Select the **Viewer** role.
+9. Click **Add**.
+10. To assign a third access policy for the ability to view all support cases regardless of how the account owner has set the account user visibility setting, select the **User Management** service.
+11. Select the **Viewer** role.
+12. Click **Add**.
+13. Click **Assign**. 
 
 Three policies are now assigned to your group:
 

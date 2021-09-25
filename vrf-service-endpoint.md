@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-08-26"
+lastupdated: "2021-09-24"
 
 keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network, services that support service endpoints, service endpoint support, using service endpoints
 
@@ -85,14 +85,14 @@ To enable service endpoints from the [{{site.data.keyword.Bluemix_notm}} CLI](/d
 
 1.  Check whether service endpoints are already enabled in your account.
 
-    ```
+    ```bash
     ibmcloud account show
     ```
     {: codeblock}
 
     If `Service Endpoint Enabled` is `false` as shown in the following example, service endpoints are not enabled.
 
-    ```
+    ```text
     Retrieving account Mia Example's Account of m.example@example.com...
     OK
 
@@ -102,9 +102,10 @@ To enable service endpoints from the [{{site.data.keyword.Bluemix_notm}} CLI](/d
     Service Endpoint Enabled:     false  
     ```
     {: screen}
+
 1. Enable service endpoints by running the following command.
 
-   ```
+   ```bash
    ibmcloud account update --service-endpoint-enable true
    ```
    {: codeblock}
@@ -113,7 +114,7 @@ To enable service endpoints from the [{{site.data.keyword.Bluemix_notm}} CLI](/d
    
     If VRF isn't enabled for your account, running this command prompts you to create a case to enable it. Enter `y` to create the support case. After VRF is enabled in the account, run the command again to enable service endpoint connectivity in your account. 
     
-    ```
+    ```text
     Service Endpoint is not available in linked Softlayer Account 1008967.
     Enable VRF(Virtual Routing and Forwarding) first to proceed.
     Learn more about VRF here - https://cloud.ibm.com/docs/infrastructure/direct-link/vrf-on-ibm-cloud.html.

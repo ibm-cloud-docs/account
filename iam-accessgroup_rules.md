@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2021
 
-lastupdated: "2021-09-03"
+lastupdated: "2021-09-24"
 
 keywords: dynamic rules,access groups,specific identity attributes,identity provider,federated ID,
 
@@ -25,7 +25,7 @@ subcollection: account
 {: #rules}
 
 You can create dynamic rules to automatically add federated users to access groups based on specific identity attributes. When your users log in with a federated ID, the data from the identity provider (IdP) dynamically maps your users to an access group based on the rules that you set.
-{:shortdesc}
+{: shortdesc}
 
 Users already have specific identity information within your company's domain, and when they log in with a federated ID, this data can be passed through by using SAML assertions. The SAML assertions or attribute statements that are configured within the IdP provide the data that is used to create each rule. For example, you might have a true or false attribute statement that defines users as a manager. This information can be used to add all users who are managers to a specific access group for managers that you created in your {{site.data.keyword.Bluemix}} account. For more information, see the tutorial about how to [Control access to cloud resources](https://developer.ibm.com/tutorials/use-iam-access-groups-to-effectively-manage-access-to-your-cloud-resources/){: external} and an [Example rule](/docs/account?topic=account-rules#example).
 
@@ -40,29 +40,32 @@ Dynamic rules are created by setting conditions that must be matched by the data
 
 To create a rule, follow these steps:
 
-1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Access Groups**.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Access Groups**.
 2. Select the name of the access group that you want to create a rule for to open the group details page.
-3. Select the **Dynamic rules** tab.
+3. Select **Dynamic rules**.
 4. Click **Add rule**.
 5. Enter the information from your IdP that is dynamically provided for you on the Add rule page. The following list provides details for each required field.
 
-You can think of an access group rule as a key:value pair. The key is what you add in the `Add users when` field, and the value is what you enter in the `Values` field. 
+You can think of an access group rule as a key:value pair. The key is what you add in the **`**Add users when** field, and the value is what you enter in the **Values** field. 
 {: tip}
 
-<dl>
-<dt>Name</dt>
-<dd>Enter a custom name for your rule that helps you remember what type of users that you are adding to an access group.</dd>
-<dt>Identity provider</dt>
-<dd>Enter the URI for your IdP. This is the SAML "entityId" field, which is sometimes referred to as the issuer ID, for the IdP as part of the federation configuration for onboarding with IBMid.</dd>
-<dt>Expiration (in hours)</dt>
-<dd>You can use this option to provide extra security by setting a time limit for the assigned access. Each user must log in every 24 hours to refresh their access, but you can set the access to expire in as little as an hour's time. Group membership is revoked after this time period expires.</dd>
-<dt>Add users when</dt>
-<dd>The attribute statement name must be entered in this field. This value is specific to your IdP.</dd>
-<dt>Comparator</dt>
-<dd>You can choose from Equals, Not Equals, Equals Ignore Case, Not Equals Ignore Case, In, and Contains. Use the Contains option when the attribute statement has an array type. And, you can enter more than one value to be matched by using the In option.</dd>
-<dt>Value</dt>
-<dd>Enter the attribute value for the attribute statement that the rule is comparing against.</dd>
-</dl>
+Name
+:   Enter a custom name for your rule that helps you remember what type of users that you are adding to an access group.
+
+Identity provider
+:   Enter the URI for your IdP. This is the SAML "entityId" field, which is sometimes referred to as the issuer ID, for the IdP as part of the federation configuration for onboarding with IBMid.
+
+Expiration (in hours)
+:   Use this option to provide extra security by setting a time limit for the assigned access. Each user must log in every 24 hours to refresh their access, but you can set the access to expire in as little as an hour's time. Group membership is revoked after this time period expires.
+
+Add users when
+:   The attribute statement name must be entered in this field. This value is specific to your IdP.
+
+Comparator
+:   Use the **Contains** option when the attribute statement has an array type. And, you can enter more than one value to be matched by using the **In** option.
+
+Value
+:   Enter the attribute value for the attribute statement that the rule is comparing against.
 
 Users added to access groups by using dynamic rules don't display as group members on the users list for the access group. To check a specific user's membership to an access group, you can select that user's name from the account **Users** page, and then click **Access groups**.
 {: note}
@@ -99,21 +102,21 @@ To create a rule by using Terraform, follow these steps:
    For more information, see the argument reference details in the [Terraform documentation](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_access_group_dynamic_rule) page.
 3. Initialize the Terraform CLI.
 
-   ```
+   ```terraform
    terraform init
    ```
    {: pre}
    
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the dynamic rule.
 
-   ```
+   ```terraform
    terraform plan
    ```
    {: pre}
 
 5. Create the dynamic rule.
 
-   ```
+   ```terraform
    terraform apply
    ```
    {: pre}

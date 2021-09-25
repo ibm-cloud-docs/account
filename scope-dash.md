@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021 
-lastupdated: "2021-08-18"
+lastupdated: "2021-09-24"
 
 keywords: dashboard, widgets display, manage visibility, customize, console, dashboard templates 
 
@@ -37,12 +37,14 @@ To begin creating a dashboard, complete the following steps:
    * Default: The default template offers a broad coverage of development, management, and infrastructure widgets.
    * Development team: This template promotes team alignment and resource monitoring by prioritizing a development or DevOps workflow.
    * Management: Optimized to provide a mix of billing, access management, and other administrative widgets.
-2. Enter dashboard title. The title must be 30 characters or less. 
-3. Next, use the Dashboard settings pane to add relevant widgets to your dashboard. To add widgets, drag the widgets onto your dashboard. 
-4. Click the Scope tab to select from the available resources in the account that you have access to. The scope determines the data that populates for the selected resources. You can filter the resource by group, tag, and location. 
+3. Enter dashboard title. The title must be 30 characters or less. 
+4. Next, use the Dashboard settings pane to add relevant widgets to your dashboard. To add widgets, drag the widgets onto your dashboard. 
+5. Click the Scope tab to select from the available resources in the account that you have access to. The scope determines the data that populates for the selected resources. You can filter the resource by group, tag, and location.
+ 
    Not all widgets can be scoped. If a widget can't be scoped, it displays data for all resources. 
    {: note}
-5. Click **Save dashboard**. 
+
+6. Click **Save dashboard**. 
 
 Any dashboard that is shared with you appears on your dashboards page. 
 {: note}

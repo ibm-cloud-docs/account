@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2021
 
-lastupdated: "2021-06-11"
+lastupdated: "2021-09-24"
 
 keywords: enterprise policy, enterprise access, assign enterprise access, enterprise service
 
@@ -26,7 +26,7 @@ subcollection: account
 {: #assign-access-enterprise}
 
 To assign a user access to manage an {{site.data.keyword.Bluemix}} enterprise, you must invite them to the enterprise account, and assign access for the enterprise account management service.
-{:shortdesc}
+{: shortdesc}
 
 Access to manage the [enterprise](/docs/account?topic=account-what-is-enterprise) requires an access policy within the enterprise account. When you assign a user an Enterprise account management service policy within a child account in an enterprise, the user can't manage the enterprise to which the account belongs. Depending on the assigned role for the Enterprise account management service in the enterprise account, the user can perform specific actions:
 
@@ -124,9 +124,10 @@ For more information about roles and actions to assign access in an enterprise a
 To create a new access policy for a user, run the **`ibmcloud iam user-policy-create`** command. In the command example, a JSON file is used to specify the policy details. Review the example in the [Assigning access by using the API](#enterprise-api-policy) section for an example of what to include in the JSON file.
 
 Create a user policy:
+```bash
+ibmcloud iam user-policy-create name@example.com -f policy.json
 ```
-$ ibmcloud iam user-policy-create name@example.com -f policy.json
-```
+{: pre}
 
 For more information, see [ibmcloud iam user-policy-create](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_create).
 

@@ -3,7 +3,8 @@
 copyright:
 
   years: 2018, 2021
-lastupdated: "2021-04-15"
+
+lastupdated: "2021-09-24"
 
 keywords: tagging, enabling others to tag, tagging permissions
 
@@ -36,9 +37,9 @@ As the account owner, you might want to delegate some of the responsibility of t
 Any user in an account can view tags. When a resource is tagged, all users who have read access to the resource can view the tag. To attach or detach a tag on a resource, certain access roles or permissions are needed depending on the resource type and tag type. See the following table to understand what role is needed for each resource type.
 
 
-| Resource Type | Role |
+| Resource type | Role |
 |--------|---------------|
-| IAM-enabled | To attach or detach user tags, editor or administrator on the resource <br> To attach or detach access management tags, administrator on the resource <br> To view the assigned policies on the resource that has an access management tag that is attached, viewer role |
+| IAM-enabled | To attach or detach user tags, editor or administrator on the resource \n To attach or detach access management tags, administrator on the resource \n To view the assigned policies on the resource that has an access management tag that is attached, viewer role |
 | Cloud Foundry | Developer on the space that the resource belongs to  |
 | Bare metal on classic infrastructure| View hardware details and access to a specific set of services or all bare metal servers |
 | Dedicated Hosts on classic infrastructure | View virtual dedicated host details and access to a specific set of services or all dedicated hosts |
@@ -62,15 +63,15 @@ Any user in an account can view tags. When a resource is tagged, all users who h
 
 Complete the following steps to assign the editor role for a user to tag IAM-enabled resources: 
 
-  1. From the {{site.data.keyword.Bluemix_notm}} console, click **Manage > Access (IAM)**, and select **Access groups**.
-  2. Click **Create**.
-  3. Enter a group name and description, and click **Create**.
-  4. Add users to the access group by clicking **Add users**, selecting one or more users from the table, and clicking **Add to group**.
-  5. Click **Access policies** > **Assign access**.
-  6. Select **All Identity and Access enabled services** or a specific service as the type of access to assign.
-  7. Select a specific region or accept the default **All regions** option. 
-  8. Select **Editor** from the list of platform access roles, and click **Add**.
-  9. Review your access summary, and click **Assign**. 
+1. From the {{site.data.keyword.Bluemix_notm}} console, click **Manage > Access (IAM)**, and select **Access groups**.
+2. Click **Create**.
+3. Enter a group name and description, and click **Create**.
+4. Add users to the access group by clicking **Add users**, selecting one or more users from the table, and clicking **Add to group**.
+5. Click **Access policies** > **Assign access**.
+6. Select **All Identity and Access enabled services** or a specific service as the type of access to assign.
+7. Select a specific region or accept the default **All regions** option. 
+8. Select **Editor** from the list of platform access roles, and click **Add**.
+9. Review your access summary, and click **Assign**. 
 
 ## Granting users access to tag IAM-enabled resources by using the API
 {: #iam-managed-api}
@@ -280,10 +281,10 @@ Complete the following steps to assign the developer space role for a user to ta
 1. Click **Manage > Access (IAM)**, and select **Users**.
 2. Click the user's name from the table.
 3. Click **Cloud Foundry access** > **Assign organization**.
-5. Select the organization that contains the service instance you want to provide the user access to.
-6. Select a specific region or accept the default **All current regions** option. 
-7. Select **Developer** as the space role.
-8. Click **Save role**.
+4. Select the organization that contains the service instance you want to provide the user access to.
+5. Select a specific location. 
+6. Select **Developer** as the space role.
+7. Click **Save role**.
 
 ## Granting users access to tag Cloud Foundry resources by using the API
 {: #cf_tag_access-api}
@@ -292,8 +293,9 @@ Complete the following steps to assign the developer space role for a user to ta
 To assign the developer space role for a user to tag Cloud Foundry resources, call the [Cloud Controller API](http://v3-apidocs.cloudfoundry.org/version/3.97.0/index.html#create-a-role){: external} as shown in the following examples. 
 
 1. Add the target user to the organization if they are not in it already. 
-  ```bash
-  curl “https://api.example.org/v3/roles” 
+
+   ```bash
+   curl “https://api.example.org/v3/roles” 
     -X POST 
     -H “Authorization: bearer <token>” 
     -H “Content-type: application/json” 
@@ -311,13 +313,14 @@ To assign the developer space role for a user to tag Cloud Foundry resources, ca
       }
       }
     }’
-  ```
-  {: codeblock}
-  {: curl}
+   ```
+   {: codeblock}
+   {: curl}
 
 1. Assign the target user the Space Developer role in the organizaiton.
-  ```bash
-  curl “https://api.example.org/v3/roles” 
+
+   ```bash
+   curl “https://api.example.org/v3/roles” 
     -X POST 
     -H “Authorization: bearer <token>” 
     -H “Content-type: application/json” 
@@ -336,9 +339,9 @@ To assign the developer space role for a user to tag Cloud Foundry resources, ca
       }
     }
     }’
-  ```
-  {: codeblock}
-  {: curl}
+   ```
+   {: codeblock}
+   {: curl}
 
 ## Granting users access to tag classic infrastructure resources
 {: #classic-infra}
@@ -346,11 +349,11 @@ To assign the developer space role for a user to tag Cloud Foundry resources, ca
 
 The taggable resources for classic infrastructure are Virtual Guest, Virtual Dedicated Host, Network Application Delivery Controller, Gateway Member, Subnet, VLAN, and VLAN Firewall (Dedicated). Complete the following steps to assign the Manager service access role for a user to tag classic infrastructure services:
 
-  1. Click **Manage > Access (IAM)**, and select **Users**.
-  2. Click the user's name from the table.
-  3. Click **Classic infrastructure**
-  4. From the **Permissions** tab, expand the **Devices** category.
-  5. Select **View Hardware Details** and **View Virtual Server Details**. If you need to assign access to Cloud Object Storage S3, File Storage, or Evault Backup, assign the **Storage manage** permission. If you need to assign access to Content Delivery Network, assign the **Manage CDN Account** permission.
-  6. Click **Save**.
-  7. Click the **Devices** tab.
-  8. Select **All bare metal servers** or **All virtual servers**. Your selection depends on the resource that you want the user to be able to tag.
+1. Click **Manage > Access (IAM)**, and select **Users**.
+2. Click the user's name from the table.
+3. Click **Classic infrastructure**
+4. From the **Permissions** tab, expand the **Devices** category.
+5. Select **View Hardware Details** and **View Virtual Server Details**. If you need to assign access to Cloud Object Storage S3, File Storage, or Evault Backup, assign the **Storage manage** permission. If you need to assign access to Content Delivery Network, assign the **Manage CDN Account** permission.
+6. Click **Save**.
+7. Click the **Devices** tab.
+8. Select **All bare metal servers** or **All virtual servers**. Your selection depends on the resource that you want the user to be able to tag.

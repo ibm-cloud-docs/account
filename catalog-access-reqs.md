@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-09-03"
+lastupdated: "2021-09-24"
 
 keywords: catalog, private catalogs, IAM access, roles, private catalog service, access groups, permissions, IAM, catalog management, access group
 
@@ -48,12 +48,12 @@ Administrator access is required for setting account-level filters to the {{site
 
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
 2. Go to **Manage** > **Access (IAM)** > **Access groups**.
-4. Click **Create**.
-5. Enter `private-catalog-admins` as the group name, and click **Create**.
-6. Click **Access policies** > **Assign access**.
-7. Select **Account management**.
-8. Select **Catalog Management** from the **What type of access do you want to assign?** list.
-9. Select the catalog that you want users to access.
+3. Click **Create**.
+4. Enter `private-catalog-admins` as the group name, and click **Create**. 
+5. Click **Access policies** > **Assign access**.
+6. Select **Account management**.
+7. Select **Catalog Management** from the **What type of access do you want to assign?** list.
+8. Select the catalog that you want users to access.
 9. In the Platform access section, select the **Administrator** role.
 10. Click **Add** > **Assign**.
 
@@ -65,18 +65,18 @@ Editor access is required for creating private catalogs, setting filters at the 
 
 1. Go to **Access groups**, and click **Create**.
 2. Enter `private-catalog-editors` as the group name, and click **Create**.
-6. Click **Access policies** > **Assign access**.
-7. Select **Account management**.
-8. Select **Catalog Management** from the **What type of access do you want to assign?** list.
-9. Select the catalog that you want users to access.
-9. In the Platform access section, select the **Editor** role.
-10. Click **Add**.
-11. Select **IAM services** > **Kubernetes Service**.
-12. Select your cluster, and then select the **Administrator** and **Manager** roles.
-13. Click **Add**.
-14. Select **IAM services** > **Schematics**.
-15. Select the **Manager** role.
-16. Click **Add** > **Assign**.
+3. Click **Access policies** > **Assign access**.
+4. Select **Account management**.
+5. Select **Catalog Management** from the **What type of access do you want to assign?** list.
+6. Select the catalog that you want users to access.
+7. In the Platform access section, select the **Editor** role.
+8. Click **Add**.
+9. Select **IAM services** > **Kubernetes Service**.
+10. Select your cluster, and then select the **Administrator** and **Manager** roles.
+11. Click **Add**.
+12. Select **IAM services** > **Schematics**.
+13. Select the **Manager** role.
+14. Click **Add** > **Assign**.
 
 ### Viewer access in the console
 {: #catalog-access-console-viewer}
@@ -86,12 +86,12 @@ Viewer access is required for viewing private catalogs, the filtered {{site.data
 
 1. Go to **Access groups**, and click **Create**.
 2. Enter `private-catalog-viewers` as the group name, and click **Create**.
-6. Click **Access policies** > **Assign access**.
-7. Select **Account management**.
-8. Select **Catalog Management** from the **What type of access do you want to assign?** list.
-9. Select the catalog that you want users to access.
-9. In the Platform access section, select the **Viewer** role.
-10. Click **Add** > **Assign**.
+3. Click **Access policies** > **Assign access**.
+4. Select **Account management**.
+5. Select **Catalog Management** from the **What type of access do you want to assign?** list.
+6. Select the catalog that you want users to access.
+7. In the Platform access section, select the **Viewer** role.
+8. Click **Add** > **Assign**.
 
 You also need to have viewer access on the resource group to which your private catalog is assigned. You can assign your private catalog to a resource group when you complete the steps for creating your private catalog. For more information, see [Customizing the IBM Cloud catalog for all account users](/docs/account?topic=account-filter-account). 
 
@@ -127,7 +127,7 @@ To assign access, run the [`ibmcloud iam user-policy-create`](/docs/cli?topic=cl
 
 Run the following command to assign administrator access:
 
-```
+```bash
 ibmcloud iam user-policy-create USER_NAME --roles Administrator --service-name globalcatalog-collection
 ```
 {: codeblock}
@@ -138,7 +138,7 @@ ibmcloud iam user-policy-create USER_NAME --roles Administrator --service-name g
 
 Run the following command to assign editor access:
 
-```
+```bash
 ibmcloud iam user-policy-create USER_NAME --roles Editor --service-name globalcatalog-collection
 ```
 {: codeblock}
@@ -149,7 +149,7 @@ ibmcloud iam user-policy-create USER_NAME --roles Editor --service-name globalca
 
 Run the following command to set viewer access:
 
-```
+```bash
 ibmcloud iam user-policy-create USER_NAME --roles Viewer --service-name globalcatalog-collection
 ```
 {: codeblock}
@@ -160,14 +160,14 @@ ibmcloud iam user-policy-create USER_NAME --roles Viewer --service-name globalca
 
 To add users to an access group by using the CLI, run the [`ibmcloud iam access-group-user-add`](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_access_group_user_add) command.
 
-```
+```bash
 ibmcloud iam access-group-user-add GROUP_NAME USER_NAME [USER_NAME2...]
 ```
 {: codeblock}
 
 For example the following command adds user `name@example.com` to the `example_group` access group.
 
-```
+```bash
 ibmcloud iam access-group-user-add example_group name@example.com
 ```
 {: codeblock}
@@ -972,19 +972,19 @@ To add users to an access group by using Terraform, follow these steps:
    For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_access_group_members){: external} page.
    
 3. Initialize the Terraform CLI.
-   ```
+   ```terraform
    terraform init
    ```
    {: pre}
    
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to update the access group.
-   ```
+   ```terraform
    terraform plan
    ```
    {: pre}
 
 5. Update the access group.
-   ```
+   ```terraform
    terraform apply
    ```
    {: pre}

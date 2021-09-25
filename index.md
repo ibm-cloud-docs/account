@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-09-14"
+lastupdated: "2021-09-22"
 
 keywords: account types, Lite, free account, trial account, paid account, buy account, account difference, compare account, subscription, Pay As You Go with Committed Use, PayGo with Commit
 
@@ -31,8 +31,8 @@ The following table provides a comparison of Lite, Pay-As-You-Go, and Subscripti
 
 |                                         | Lite               | Pay-As-You-Go      | Subscription       | 
 |-----------------------------------------|--------------------|--------------------|--------------------|
-| **Free Cloud Foundry memory** | 256 MB <br> Not available for Lite accounts created after 12 August 2021            |             |              |              |
-| **[Free community buildpacks](/docs/cloud-foundry-public?topic=cloud-foundry-public-available_buildpacks)** | 186 GBH <br> Not available for Lite accounts created after 12 August 2021             |   186 GBH       |    186 GBH          |
+| **Free Cloud Foundry memory** | 256 MB [^1]            |             |              |              |
+| **[Free community buildpacks](/docs/cloud-foundry-public?topic=cloud-foundry-public-available_buildpacks)** | 186 GBH [^2]              |   186 GBH       |    186 GBH          |
 | **Access to [Lite service plans](https://{DomainName}/catalog/?search=label:lite){: external}** | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | **Access to all free plans**            |                    | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |  
 | **Access to the full {{site.data.keyword.Bluemix_notm}} catalog** |  | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
@@ -46,6 +46,10 @@ The following table provides a comparison of Lite, Pay-As-You-Go, and Subscripti
 {: class="comparison-table"}
 {: caption="Table 1. Comparison of {{site.data.keyword.Bluemix_notm}} accounts" caption-side="top"}
 {: summary="This table has row and column headers. The row headers identify the feature. The column headers identify the account type. To understand which features apply to the account types, navigate to the row, and find the feature that you're interested in."}
+
+[^1]: Not available for Lite accounts created after 12 August 2021. 
+
+[^2]: Not available for Lite accounts created after 12 August 2021.
 
 ## Lite account
 {: #liteaccount}
@@ -62,15 +66,15 @@ Each resource group is free. When you create a connection between a service that
 
 Check out the following list of key features that are available in a Lite account:
 
-   * The account is free - no credit card required.
-   * The account never expires.
-   * You receive email notifications about your account status and quota limits.
-   * You can provision one instance of any service in the [{{site.data.keyword.Bluemix_notm}} catalog](https://cloud.ibm.com/catalog/?search=label:lite%20lite){: external} that has a Lite plan.
-   * After 10 days of no development activity, your apps go to sleep. You can wake up your apps by continuing to work on them.
-   * After 30 days of no development activity, your service instances with Lite plans are deleted.
+* The account is free - no credit card required.
+* The account never expires.
+* You receive email notifications about your account status and quota limits.
+* You can provision one instance of any service in the [{{site.data.keyword.Bluemix_notm}} catalog](https://cloud.ibm.com/catalog/?search=label:lite%20lite){: external} that has a Lite plan.
+* After 10 days of no development activity, your apps go to sleep. You can wake up your apps by continuing to work on them.
+* After 30 days of no development activity, your service instances with Lite plans are deleted.
 
-   Only Lite accounts created before 12 August 2021 can use Cloud Foundry apps that can access up to 256 MB of free, instantaneous runtime memory per month. You can use one org in one {{site.data.keyword.Bluemix_notm}} region.
-   {: note}
+Only Lite accounts created before 12 August 2021 can use Cloud Foundry apps that can access up to 256 MB of free, instantaneous runtime memory per month. You can use one org in one {{site.data.keyword.Bluemix_notm}} region.
+{: note}
 
 ## Pay-As-You-Go account
 {: #paygo}

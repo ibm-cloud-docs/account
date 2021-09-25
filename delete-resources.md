@@ -5,7 +5,7 @@
 copyright:
 
   years: 2020, 2021
-lastupdated: "2021-08-31"
+lastupdated: "2021-09-24"
 
 keywords: account resources, delete resource, delete instance
 
@@ -54,21 +54,21 @@ You can delete a resource by using the {{site.data.keyword.Bluemix}} Command Lin
 
 1. Log in, and select the account.
 
-   ```
+   ```bash
    ibmcloud login
    ```
    {: codeblock}
 
 2. Delete a service instance by running the [`ibmcloud resource service-instance-delete`](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_delete) command, where `NAME` is the name of the service instance, exclusive with ID, and `ID` is the ID of the service instance, exclusive with NAME.
 
-   ```
+   ```bash
    ibmcloud resource service-instance-delete (NAME|ID) [-f, --force] [--recursive]
    ```
    {: codeblock}
    
    For example, the following command deletes a resource service-instance that's named `my-service-instance`:
    
-   ```
+   ```bash
    ibmcloud resource service-instance-delete my-service-instance
    ```
    {: codeblock}
@@ -113,7 +113,7 @@ resourceControllerService.deleteResourceInstance(params)
   .catch(err => {
     console.warn(err)
   });
-  ```
+```
 {: codeblock}
 {: javascript}
 
@@ -183,27 +183,28 @@ You can delete a resource instance by using Terraform.
   
 4. Initialize the Terraform CLI.
 
-   ```
+   ```terraform
    terraform init
    ```
    {: pre}
    
 5. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to delete a resource instance.
 
-   ```
+   ```terraform
    terraform plan
    ```
    {: pre}
 
 6. Delete the resource instance.
 
-   ```
+   ```terraform
    terraform apply
    ```
+   {: pre}
     
 You can also delete a resource instance by running the following `terraform destroy` command.
 
-```
+```terraform
 terraform destroy -target RESOURCE_TYPE.NAME -target RESOURCE_TYPE2.NAME
 ```
-
+{: pre}

@@ -5,7 +5,7 @@
 copyright:
 
   years: 2020, 2021
-lastupdated: "2021-06-10"
+lastupdated: "2021-09-24"
 
 keywords: account resources, reclaim resource, restore resource
 
@@ -39,19 +39,21 @@ You can use the {{site.data.keyword.cloud}} CLI or the [{{site.data.keyword.clou
 
 To list reclaimed resources that can be restored or deleted by using the CLI, run the following command: 
 
-```
+```bash
 ibmcloud resource reclamations [--resource-instance-id INSTANCE_ID]
 ```
 {: codeblock}
 
 Enter the following command option:
-  * **--resource-instance-id**: The globally unique ID (GUID) of the resource instance.
+
+**--resource-instance-id**: The globally unique ID (GUID) of the resource instance.
 
 The following example shows how to list the reclamations of a particular service instance:
 
-```
+```bash
 ibmcloud resource reclamations --resource-instance-id abcd1234-ef56-486e-b293-22d6c7eb6699
 ```
+{: codeblock}
 
 ## Listing reclaimed resources by using the API
 {: #list-reclaimed-api}
@@ -137,27 +139,30 @@ fmt.Printf("\nListReclamations() response:\n%s\n", string(b))
 
 To delete a reclaimed resource by using the CLI, run the following command: 
 
-```
+```bash
 ibmcloud resource reclamation-delete ID [--comment COMMENT] [--f, --force]
 ```
 {: codeblock}
 
 Enter the following command options:
-  * **ID**: The ID of the resource reclamation. This is the reclamation ID and not the resource instance ID. (Required).
-  * **--comment**: Comments about the action.
-  * **-f, --force**: Force deletion without confirmation.
+
+* **ID**: The ID of the resource reclamation. This is the reclamation ID and not the resource instance ID. (Required)
+* **--comment**: Comments about the action.
+* **-f, --force**: Force deletion without confirmation.
 
 The following example shows how to delete a resource reclamation with ID `d9fendfwlw`:
 
-```
+```bash
 ibmcloud resource reclamation-delete "d9fendfwlw"
 ```
+{: codeblock}
 
 The following example shows how to delete a resource reclamation with ID `d9fendfwlw` and leave a comment of `no longer needed` without confirmation:
 
-```
+```bash
 ibmcloud resource reclamation-delete --id "d9fendfwlw" --comment "no longer needed" -f
 ```
+{: codeblock}
 
 ## Deleting resource by using the API
 {: #delete-reclaimed-api}
@@ -244,20 +249,22 @@ Not all resources can be restored. You can run the **`ibmcloud resource reclamat
 
 To restore a resource by using the CLI, run the following command:
 
-```
+```bash
 ibmcloud resource reclamation-restore ID [--comment COMMENT]
 ```
 {: codeblock}
 
 Enter the following command options:
-  * **ID**: The ID of the resource reclamation. This is the reclamation ID and not the resource instance ID.  (Required) 
-  * **--comment**: Comments about the action.  
+
+* **ID**: The ID of the resource reclamation. This is the reclamation ID and not the resource instance ID. (Required)
+* **--comment**: Comments about the action.  
 
 The following example shows how to restore a resource with the `d9fendfwlw` ID:
 
-```
+```bash
 ibmcloud resource reclamation-restore "d9fendfwlw"
 ```
+{: codeblock}
 
 For more information, see the [`ibmcloud resource reclamations` command reference](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_reclamations).
 

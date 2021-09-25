@@ -3,7 +3,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-08-31"
+lastupdated: "2021-09-24"
 
 keywords: software instance, logs, delete, resource list, operator, operator bundle
 
@@ -102,21 +102,21 @@ You can rename your software instance by using Terraform.
   
 3. Initialize the Terraform CLI.
 
-   ```
+   ```terraform
    terraform init
    ```
    {: pre}
    
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to rename the software instance.
 
-   ```
+   ```terraform
    terraform plan
    ```
    {: pre}
 
 5. Rename the software instance.
 
-   ```
+   ```terraform
    terraform apply
    ```
 
@@ -148,23 +148,23 @@ You can delete your software instance by using Terraform.
 
    You can specify a `delete` timeout for the `ibm_cm_offering_instance` resource. For more information, see the timeout reference details on the [Terraform Catalog Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/cm_offering_instance#timeouts){: external} page.
   
-3. Initialize the Terraform CLI.
+4. Initialize the Terraform CLI.
 
-   ```
+   ```terraform
    terraform init
    ```
    {: codeblock}
    
-4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to delete the software instance.
+5. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to delete the software instance.
 
-   ```
+   ```terraform
    terraform plan
    ```
    {: codeblock}
 
-5. Delete the software instance.
+4. Delete the software instance.
 
-   ```
+   ```terraform
    terraform apply
    ```
    {: codeblock}

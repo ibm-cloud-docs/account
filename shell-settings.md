@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-09-23"
 
 keywords: cloud shell settings, cloud shell service, enable cloud shell, disable cloud shell, cloud shell locations, cloud shell access, cloud shell iam, cloud shell role, cloud shell administrator, cloud shell service
 
@@ -94,7 +94,7 @@ To assign {{site.data.keyword.cloud-shell_short}} access to a particular user, c
 3. On the individual user's page, click the **Access policies** tab, and then click **Assign access**.
 4. On the Assign access page, select **Account management**.
 5. For the type of access, select **{{site.data.keyword.cloud-shell_notm}}**.
-6. Select a region to enable the features in.
+6. Select a location to enable the features in.
 7. In the **Service access** section, select one or more roles to assign to the user. For example, if you want to enable the **File Upload** and **File Download** features for the user, select the **File Manager** role.
 8. Click **Add**.
 9. In the Access summary pane, click **Assign**.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-07-14"
+lastupdated: "2021-09-22"
 
 keywords: IBM Cloud notifications, notification preferences, user notifications, distribution list, notification distribution list
 
@@ -36,8 +36,8 @@ To add users to a distribution list, complete the following steps:
 2. Select **Add**. 
 3. Enter a name identifier and an email address. 
 
-  You can add up to 10 email addresses to the distribution list. Users that are added don't need be IBM Cloud users. You can add any email address to the distribution list. 
-  {: note}
+   You can add up to 10 email addresses to the distribution list. Users that are added don't need be IBM Cloud users. You can add any email address to the distribution list. 
+   {: note}
   
 4. Click **Add**. 
 

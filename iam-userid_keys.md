@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-09-24"
 
 keywords: API key, user API keys, IBM Cloud API keys, manage user keys, create API key
 
@@ -80,9 +80,10 @@ To create an API key by using the CLI, use the following command:
 
 1. Enter `ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]` in your command prompt, and specify a name, description, and file for saving your key. See the following example:
 
-```
+```bash
 ibmcloud iam api-key-create MyKey -d "this is my API key" --file key_file
 ```
+{: codeblock}
 
 ## Creating an API key by using the API
 {: #create_user_key-api}
@@ -189,9 +190,10 @@ To edit an API key by using the CLI, enter the following command:
 
 1. Enter `ibmcloud iam api-key-update NAME [-n NAME] [-d DESCRIPTION]` in your command prompt, specifying the old name, new name, and new description for the key. For example:
 
-```
+```bash
 ibmcloud iam api-key-update MyCurrentName -n MyNewName -d "the new description of my key"
 ```
+{: codeblock}
 
 ## Updating an API key by using the API
 {: #update_user_key-api}
@@ -287,55 +289,61 @@ You can unlock your API key at any time to update or remove the API key from you
 
 To lock an API key, use the following command:
 
-```
+```bash
 ibmcloud iam api-key-lock (NAME|UUID) [-f, --force]
 ```
+{: codeblock}
 
-<strong>Prerequisites</strong>:  Endpoint, Login
+**Prerequisites**:  Endpoint, Login
 
-<strong>Command options</strong>:
-<dl>
-<dt>NAME (required)</dt>
-<dd>Name of the API key to be locked, exclusive with UUID.</dd>
-<dt>UUID (required)</dt>
-<dd>UUID of the API key to be locked, exclusive with NAME.</dd>
-<dt>-f, --force</dt>
-<dd>Forces lock without confirmation.</dd>
-</dl>
+**Command options**:
 
-<strong>Example</strong>:
+NAME
+:   The name of the API key to be locked, exclusive with the UUID option.
 
-Lock API key `test-api-key`
+UUID
+:   The UUID of the API key to be locked, exclusive with the NAME option.
 
-```
+-f, --force
+:   Force lock without confirmation.
+
+**Examples**:
+
+Lock the API key named `test-api-key`:
+
+```bash
 ibmcloud iam api-key-lock test-api-key
 ```
+{: codeblock}
 
 To unlock an API key, run the following command:
 
-```
+```bash
 ibmcloud iam api-key-unlock (NAME|UUID) [-f, --force]
 ```
+{: codeblock}
 
-<strong>Prerequisites</strong>:  Endpoint, Login
+**Prerequisites**:  Endpoint, Login
 
-<strong>Command options</strong>:
-<dl>
-<dt>NAME (required)</dt>
-<dd>Name of the API key to be unlocked, exclusive with UUID.</dd>
-<dt>UUID (required)</dt>
-<dd>UUID of the API key to be unlocked, exclusive with NAME.</dd>
-<dt>-f, --force</dt>
-<dd>Forces unlock without confirmation.</dd>
-</dl>
+**Command options**:
 
-<strong>Example</strong>:
+NAME
+:   The name of the API key to be unlocked, exclusive with the UUID option.
 
-Unlock API key `test-api-key`
+UUID
+:   The UUID of the API key to be unlocked, exclusive with the NAME option.
 
-```
+-f, --force
+:   Force unlock without confirmation. 
+
+**Example**:
+
+Unlock the API key named `test-api-key`:
+
+```bash
 ibmcloud iam api-key-unlock test-api-key
 ```
+{: codeblock}
 
 ## Locking and unlocking an API key by using the API
 {: #lock-user-key-api}
@@ -472,7 +480,7 @@ To delete an API key, complete the following steps:
 
 1. In the console, go to **Manage** > **Access (IAM)** > **API keys**.
 2. Identify the row of the API key that you want to delete, and select **Delete** from the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu.
-3. Then, confirm the deletion by clicking **Delete**.
+3. Confirm the deletion by clicking **Delete**.
 
 To delete an API key that is not your own, but you have access to manage, go to the API keys page. Then, select the **All user {{site.data.keyword.cloud_notm}} API keys** option from the **View** menu to find the API key.
 {: tip}
