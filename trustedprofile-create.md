@@ -84,7 +84,7 @@ Complete the following steps to set up better control over granting access to co
 4. (Optional) Establish trust.
    1. Select **Compute resources** and select a compute service type from the list.
    2. If you select the option for **Any service resource**, you can define multiple conditions to filter resources for the selected compute service type by clicking **Add a condition**. These conditions are based on attributes, such as resource groups or location, and apply to all existing and future resources. Resources must meet all the conditions to be included in the trusted profile.
-
+   
    The Kubernetes namespace and service account names that you enter do not have to exist already. Any future namespaces or service accounts with these names can establish trust. To list existing namespaces, log in to your cluster and run `kubectl get ns`. To list existing service accounts, log in to your cluster and run `kubectl get sa -n <namespace>`.
    {: note}
 
@@ -209,25 +209,25 @@ Complete the following steps to set up better control over granting access to co
 
 2. Create a claim rule for your trusted profile that follows the principle of least privilege by specifying conditions that target only the resources that need access. Conditions apply to all existing future resources. You can also create a direct link with specific, existing resources. 
 
-**Create conditions**
-For compute resources, set the `type` attribute to `Profile-CR`. For more information, see the [IAM Identity Services API](/apidocs/iam-identity-token-api#create-claim-rule-request). 
+   **Create conditions**
+   For compute resources, set the `type` attribute to `Profile-CR`. For more information, see the [IAM Identity Services API](/apidocs/iam-identity-token-api#create-claim-rule-request). 
 
-   ```bash
-   curl -X POST 'https://iam.cloud.ibm.com/v1/profiles/PROFILE_ID/rules' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json' -H 'Accept: application/json' -d '{
-   "type": "Profile-CR",
-   "conditions": [
-   {
-   "claim": "namespace",
-   "operator": "EQUALS",
-   "value": "\"default123\""
-      }
-      ] 
-   }'
-   ```
-   {: codeblock}
+      ```bash
+      curl -X POST 'https://iam.cloud.ibm.com/v1/profiles/PROFILE_ID/rules' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json' -H 'Accept: application/json' -d '{
+      "type": "Profile-CR",
+      "conditions": [
+      {
+      "claim": "namespace",
+      "operator": "EQUALS",
+      "value": "\"default123\""
+         }
+         ] 
+      }'
+      ```
+      {: codeblock}
 
-   There is a limit of 20 claim rules per trusted profile.
-   {: note}
+      There is a limit of 20 claim rules per trusted profile.
+      {: note}
 
    **Create a direct link**
    ```bash
@@ -243,7 +243,7 @@ For compute resources, set the `type` attribute to `Profile-CR`. For more inform
    ```
    {: codeblock}
 
-3. Create an access policy. For more information, see [IAM Policy Management API?](/apidocs/iam-policy-management) **@reviewer, can we update this policy for a trusted profile specifically?**
+3. Create an access policy. For more information, see [IAM Policy Management API?](/apidocs/iam-policy-management)
 
    ```bash
    curl -X POST 'https://iam.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
