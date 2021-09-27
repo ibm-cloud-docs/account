@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-09-24"
+lastupdated: "2021-09-27"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, Cloud Foundry, endpoint type
 
@@ -46,7 +46,7 @@ A rule associates a {{site.data.keyword.cloud}} resource with a set of contexts:
 
 The contexts that you configure define the restrictions for the associated resources.
 
-The required resource attributes in network-based access rules are `accountId` and `serviceName`. Rules must be scoped to an account and a specific service.
+The required resource attributes in context-based restrictions rules are `accountId` and `serviceName`. Rules must be scoped to an account and a specific service.
 {: note}
 
 Context-based restriction rules are applied by the following logic:
@@ -93,12 +93,12 @@ Customers can specify the IP addresses they know that they want to be able to se
 #### VPCs
 {: #vpc-attribute}
 
-If you have apps deployed in a VPC that need access to a context-based restricted resource, you can include the VPC IP addresses in your network zone by selecting the target VPC, and adding that network zone to your rule. This way, you don’t have to find the IP addresses that the VPC uses, and resources being contacted will see the request is coming from a set of allowed IP addresses.
+If you have apps that are deployed in a VPC that need access to a context-based restricted resource, you can include the VPC IP addresses in your network zone. To do so, you can select the target VPC in your network zone, and add that network zone to your rule. This way, you don’t have to find the IP addresses that the VPC uses. Resources that are contacted see that the request is coming from a set of allowed IP addresses.
 
 #### Service references
 {: #service-attribute}
 
-A service reference represents the network locations of a service or service-instance. Including a service reference to a network zone adds the IP addresses associated with the service to your allow list without requiring you to know their underlying IP addresses. This is helpful since the network locations of cloud services are unknown to the context-based restriction administrator, and can change over time.
+A service reference represents the network locations of a service or service-instance. Including a service reference to a network zone adds the IP addresses associated with the service to your allowlist without requiring you to know their underlying IP addresses. This is helpful since the network locations of cloud services are unknown to the context-based restriction administrator, and can change over time.
 
 To manage network zones, you must be assigned a specific role for the context-based restriction account management service: 
 | Roles         | Actions                                                                                                |
@@ -116,9 +116,9 @@ You can also use network zones to restrict access at the account level. To set a
 ### Endpoint types
 {: #context-restrictions-endpint-type}
 
-An endpoint type represents the connection over which an access request is received. It corresponds to the endpoint that receives the connection. You can allow access from all endpoint types supported by the service or specific service endpoint types.
+An endpoint type represents the connection over which an access request is received. It corresponds to the endpoint that receives the connection. You can allow access from all endpoint types that are supported by the service or specific service endpoint types.
 
-There are three common endpoint types:
+The three common endpoint types are as follows:
 * Public endpoints can accept requests from anywhere.
 * Private endpoints are available for most requests, that originate from within {{site.data.keyword.cloud}}.
 * Direct endpoints are used in Bring-Your-Own-IP scenarios, generally for requests, that originate from resources within VPCs.
