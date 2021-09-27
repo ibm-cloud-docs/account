@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-09-24"
+lastupdated: "2021-09-27"
 
 keywords: IBM Cloud notifications, notification preferences, email preferences, user notifications, distribution list, webhooks, Slack webhooks
 
@@ -136,7 +136,7 @@ Fields that are sent inside the payload can be either required or optional. Opti
 There might be extra fields added in the future without a major version change. This means that any code that is processing notifications should be prepared to ignore the fields that it does not recognize.
 {: note}
 
-## Adding webhooks to a distribution list 
+## Add webhooks to a distribution list 
 {: #add-webhook-distribution-list}
 
 To add webhooks to a distribution list, complete the following steps: 
@@ -152,7 +152,7 @@ To add webhooks to a distribution list, complete the following steps:
    You can select which {{site.data.keyword.cloud_notm}} account you use by clicking the account switcher in the console. Users in the selected account receive notifications about any events that affect the account. 
    {: note}
   
-## Adding Slack webhooks to a distribution list 
+## Add Slack webhooks to a distribution list 
 {: add-slack-webhook}
 
 You can now add Slack webhooks to your distribution list and receive account-wide {{site.data.keyword.Bluemix_notm}} notifications through them. 
@@ -165,7 +165,7 @@ To add a Slack webhook in the {{site.data.keyword.Bluemix_notm}} console, comple
 2. Click **Add**, and select **Slack**. 
 3. Enter a name for your webhook and a Slack webhook URL. The notifications are sent to this unique URL. 
 
-## Adding Microsoft Teams webhooks to a distribution list 
+## Add Microsoft Teams webhooks to a distribution list 
 {: add-microsoft-teams-webhook}
 
 Adding Microsoft Teams webhooks to your distribution list is also available for you to receive account-wide {{site.data.keyword.Bluemix_notm}} notifications. 
