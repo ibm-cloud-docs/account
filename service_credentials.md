@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2021
-lastupdated: "2021-09-24"
+lastupdated: "2021-09-27"
 
 keywords: service key, api key, bind, credential
 
@@ -395,7 +395,7 @@ fmt.Printf("\nListResourceKeys() response:\n%s\n", string(b))
 {: go}
 
 Example response: 
-```
+```bash
 {
   "rows_count": 1,
   "next_url": null,
