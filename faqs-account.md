@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-09-24"
+lastupdated: "2021-09-27"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite
 
@@ -26,7 +26,7 @@ content-type: faq
 # FAQs about accounts
 {: #accountfaqs}
 
-FAQs for your {{site.data.keyword.cloud}} account might include questions about upgrading an account, reassigning users, resolving account errors, or tagging resources in an account. To find all FAQs for {{site.data.keyword.cloud_notm}}, see our [FAQ library](https://{DomainName}/docs/faqs).
+FAQs for your {{site.data.keyword.cloud}} account might include questions about upgrading an account, reassigning users, resolving account errors, or tagging resources in an account. To find all FAQs for {{site.data.keyword.cloud_notm}}, see our [FAQ library](/docs/faqs).
 {: shortdesc}
 
 ## How do I create an {{site.data.keyword.Bluemix_notm}} account?
@@ -39,7 +39,7 @@ You can create an account by [registering](https://cloud.ibm.com/registration){:
 {: #account-error}
 {: faq}
 
-If you are able to log in to an {{site.data.keyword.Bluemix_notm}} account, go to the [Support Center](https://{DomainName}/unifiedsupport/supportcenter){: external} and choose one of the following options.
+If you are able to log in to an {{site.data.keyword.Bluemix_notm}} account, go to the [Support Center](/unifiedsupport/supportcenter){: external} and choose one of the following options.
 
 * If you have advanced or premium support, click **Live chat** to talk to an {{site.data.keyword.Bluemix_notm}} support representative.
 * Create a support case by clicking **Create a case** from the Need more help? section.
@@ -54,7 +54,7 @@ If you can't log in to an {{site.data.keyword.Bluemix_notm}} account, [create an
 {: support}
 
 If you have a Pay-As-You-Go account type that is billed in US Dollars, complete the following steps:
-1. Go to the [Payments](https://{DomainName}/billing/payments) page.
+1. Go to the [Payments](/billing/payments) page.
 2. Click **Update card**, enter the new credit card information, and click **Save**. 
 
 To switch to a different payment method, select Pay with Other and then click Submit change request. A support case to change your payment method is created for you.
@@ -73,7 +73,7 @@ If your credit card requires a MasterCard SecureCode that is sent to a mobile ph
 {: faq}
 {: support}
 
-To upgrade your Lite account, go to your [account settings](https://{DomainName}/account/settings). In the Account Upgrade section, click **Add credit card** to upgrade to a Pay-As-You-Go account, or click **Upgrade** for a Subscription account. 
+To upgrade your Lite account, go to your [account settings](/account/settings). In the Account Upgrade section, click **Add credit card** to upgrade to a Pay-As-You-Go account, or click **Upgrade** for a Subscription account. 
 
 See [Upgrading your account](/docs/account?topic=account-upgrading-account) for more information.
 
@@ -90,9 +90,9 @@ Yes, when you upgrade to a Pay-As-You-Go or Subscription account, you can contin
 
 Yes, the following options are available depending on your account type:
 
-* If you have a feature code from an online course or educational event, you can use it to convert your Lite account to a trial account. Go to the [Account settings](https://{DomainName}/account/settings){: external} page in the console to apply the code to your account.
-* To convert your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://{DomainName}/catalog?contactmodule){: external}. 
-* You can convert your trial account to a Lite account by providing the email address that's associated with your IBMid in the [Upgrade Tool](https://{DomainName}/registration/startUpgradeToLite){: external}. If your trial account is expired, [open a support case](https://{DomainName}/unifiedsupport/cases/form) and request to have it reactivated for one week. During that week, you can convert it to a Lite account.
+* If you have a feature code from an online course or educational event, you can use it to convert your Lite account to a trial account. Go to the [Account settings](/account/settings){: external} page in the console to apply the code to your account.
+* To convert your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales](/catalog?contactmodule){: external}. 
+* You can convert your trial account to a Lite account by providing the email address that's associated with your IBMid in the [Upgrade Tool](/registration/startUpgradeToLite){: external}. If your trial account is expired, [open a support case](/unifiedsupport/cases/form) and request to have it reactivated for one week. During that week, you can convert it to a Lite account.
 
    The risk of data or function loss is possible when you convert your trial account to a Lite account. Some specific data or function allocations in your trial account might not be available for a Lite account. Any loss of data or function can't be recovered after the conversion process is complete. You can't convert your trial account to a Lite account if you have multiple organizations in your account. You must register for a new account using a different email address.
    {: note} 
@@ -107,8 +107,7 @@ If you upgrade your trial account to a Pay-As-You-Go account by entering a credi
 {: #convert-education}
 {: faq}
 
-When you add a credit card to your trial account, your account is upgraded to a Pay-As-You-Go account. Educational promotional codes can't be used in a Pay-As-You-Go account. In addition, a Pay-As-You-Go account can't be converted back to a trial account. For more information about educational trial accounts, see the [IBM Academic Initiative
- FAQs](https://www.ibm.com/academic/faqs/faqs){: external}. 
+When you add a credit card to your trial account, your account is upgraded to a Pay-As-You-Go account. Educational promotional codes can't be used in a Pay-As-You-Go account. In addition, a Pay-As-You-Go account can't be converted back to a trial account. For more information about educational trial accounts, see the [IBM Academic Initiative FAQs](https://www.ibm.com/academic/faqs/faqs){: external}. 
 
 ## Can I sign up for a free trial?
 {: #freetrial}
@@ -121,18 +120,18 @@ When you add a credit card to your trial account, your account is upgraded to a 
 {: faq}
 {: support}
 
-We're sad to see you go! If there's any way we can assist you before you decide to cancel your account, [reach out to us](https://{DomainName}/unifiedsupport/supportcenter){: external}.
+We're sad to see you go! If there's any way we can assist you before you decide to cancel your account, [reach out to us](/unifiedsupport/supportcenter){: external}.
 
-* To cancel a Pay-As-You-Go or Subscription account, contact [Support](https://{DomainName}/unifiedsupport/supportcenter). A  support case is required for account security and documentation purposes. After your Pay-As-You-Go account has been canceled, all usage is stopped across all services running in your account, and the usage that is accrued in the current billing period is sent in one final invoice at the close of the billing period. 
-* To cancel a Lite account, go to the [Account settings](https://{DomainName}/account/settings) page, and click **Deactivate account**.
+* To cancel a Pay-As-You-Go or Subscription account, contact [Support](/unifiedsupport/supportcenter). A  support case is required for account security and documentation purposes. After your Pay-As-You-Go account has been canceled, all usage is stopped across all services running in your account, and the usage that is accrued in the current billing period is sent in one final invoice at the close of the billing period. 
+* To cancel a Lite account, go to the [Account settings](/account/settings) page, and click **Deactivate account**.
 
-You can contact [{{site.data.keyword.Bluemix_notm}} Support](https://{DomainName}/unifiedsupport/supportcenter){: external}  to open a support case and request to delete your account. Data in deleted accounts is not recoverable. If you want your information removed from {{site.data.keyword.IBM_notm}} systems, submit a data rights request through the [{{site.data.keyword.IBM_notm}} Privacy Portal](https://www.ibm.com/privacy/portal/){: external}. 
+You can contact [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}  to open a support case and request to delete your account. Data in deleted accounts is not recoverable. If you want your information removed from {{site.data.keyword.IBM_notm}} systems, submit a data rights request through the [{{site.data.keyword.IBM_notm}} Privacy Portal](https://www.ibm.com/privacy/portal/){: external}. 
 
 ## Can I log in to the console with my SoftLayer ID?
 {: #slid}
 {: faq}
 
-Yes, you can use your SoftLayer ID to log in to the console. Go to the [login page](https://{DomainName}/login){: external}, and click **Log in with SoftLayer ID**.  
+Yes, you can use your SoftLayer ID to log in to the console. Go to the [login page](/login){: external}, and click **Log in with SoftLayer ID**.  
 
 ## What's a Lite pricing plan for services?
 {: #whatisliteplan}
@@ -227,7 +226,7 @@ The {{site.data.keyword.cloud_notm}} console menu bar lists all of the accounts 
 
 ![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-faq.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.")
 
-You can view your role in each account on the [Users page](https://{DomainName}/iam/users). The 'owner' tag next to a user name indicates the account owner. If you are the owner of the account, the 'self' tag is also listed next to your name. If you only see your name that is listed and you are not the account owner, the account owner has restricted the user list. For more information, see [Controlling user visibility](/docs/account?topic=account-iam-user-setting). Contact [{{site.data.keyword.Bluemix_notm}} Support](https://{DomainName}/unifiedsupport/supportcenter){: external} to determine the account owner. 
+You can view your role in each account on the [Users page](/iam/users). The 'owner' tag next to a user name indicates the account owner. If you are the owner of the account, the 'self' tag is also listed next to your name. If you only see your name that is listed and you are not the account owner, the account owner has restricted the user list. For more information, see [Controlling user visibility](/docs/account?topic=account-iam-user-setting). Contact [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external} to determine the account owner. 
 
 You can also find your accounts from the CLI by running the `ibmcloud account list` command. This command lists the account that you own and any other accounts that are affiliated with your IBMid. 
 
@@ -235,7 +234,7 @@ You can also find your accounts from the CLI by running the `ibmcloud account li
 {: #account-details}
 {: faq}
 
-Go to the [Account settings](https://{DomainName}/account/settings) page in the console to view your account ID and type.
+Go to the [Account settings](/account/settings) page in the console to view your account ID and type.
 
 ## How can I join accounts?
 {: #join-new-account}
@@ -266,7 +265,7 @@ Data can't be directly migrated from one {{site.data.keyword.Bluemix_notm}} acco
 * Review the applicable documentation to determine if your infrastructure services can be backed up and re-created in different accounts.
 * Use manifests and other documented methods to rebuild your applications and services by using documented methods to back up and restore your data.
 
-Users with a Basic, Advanced, or Premium support plan can open a [Support case](https://{DomainName}/unifiedsupport/supportcenter){: external}  for assistance with data migration questions.
+Users with a Basic, Advanced, or Premium support plan can open a [Support case](/unifiedsupport/supportcenter){: external}  for assistance with data migration questions.
 
 ## Can I bookmark a console page for a specific account?
 {: #bookmark-page-account}
@@ -274,7 +273,7 @@ Users with a Basic, Advanced, or Premium support plan can open a [Support case](
 
 You can target URLs for any {{site.data.keyword.Bluemix_notm}} console page to a specific account. If you have multiple accounts, you can bookmark the account-specific URLs to easily access resources in different accounts without having to manually switch between them.
 
-1. Switch to the account that you want to target, and go to the [Account settings](https://{DomainName}/account/settings) page in the console. In the Account section, find the account ID, such as `a1b2c3d4e5f61234567890fedcba4321`.
+1. Switch to the account that you want to target, and go to the [Account settings](/account/settings) page in the console. In the Account section, find the account ID, such as `a1b2c3d4e5f61234567890fedcba4321`.
 1. Go to the console page that you want to bookmark, and add `?bss_account=<account-id>` to the URL, replacing `<account-id>` with the ID from your account. For example:
    ```text
    https://{DomainName}/billing/usage?bss_account=a1b2c3d4e5f61234567890fedcba4321
