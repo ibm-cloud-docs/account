@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-09-23"
+lastupdated: "2021-09-27"
 
 keywords: remove restrictions, delete restrictions, delete network access, delete context based restrictions, remove network access, rule, context, network access rule, network zone
 
@@ -43,8 +43,7 @@ You can remove a rule on your cloud resources by completing the following steps:
 ## Removing a network zone
 {: #network-zones-remove}
 
-Removing a network zone removes the set of allowed network locations from which an access request is created. If a network zone is added to a rule, you can't remove it. 
+Removing a network zone removes the set of allowed network locations from which an access request is created. If a network zone is added to a rule, you first have to remove the zone from the rule. See [Updating context-based restrictions](/docs/account?topic=account-context-restrictions-update) for more information about removing a zone from a rule. Then, complete the following steps: 
 
-To remove a network zone, complete the following steps: 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Network-based access**, and select **Network zones**.
 2. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") in the row that contains the network zone, and click **Remove**.
