@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-09-23"
+lastupdated: "2021-09-27"
 
 keywords: create network access, network access rule, network zone
 
@@ -17,6 +17,7 @@ subcollection: account
 {:screen: .screen}
 {:tip: .tip}
 {:note: .note}
+{:important: .important}
 {:pre: .pre}
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
@@ -51,10 +52,10 @@ To create a network zone, complete the following steps.
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Context-based restrictions**, and select **Network zones**.
 1. Click **Create**.  
 1. Enter a unique name and a description.
-1. Enter the allowed client IP addresses from which an access request originates. Include IP address exceptions in the deny list, if necessary.
-1. Enter the allowed VPC IDs. 
-1. Reference a service. Select a service to associate its IP addresses with your network zone.
-1. Click **Next** to review your context.
+1. Enter the allowed IP addresses where an access request can originate. Include IP address exceptions in the deny list, if necessary.
+1. Enter the allowed VPCs. 
+1. Reference a service. Select a service and click **Add** to associate its IP addresses with your network zone.
+1. Click **Next** to review your network zone.
 1. Click **Create**.
 
 You can continue by creating more network zones, or by creating rules.
@@ -75,9 +76,9 @@ To create a rule, complete the following steps.
     When you create context-based restriction for the IAM Access Groups service, users who don't satisfy the rule will not be able to view any groups in the account, including the public access group. 
     {: note}
 
-5. Next, add your context. Select endpoint types and network zones, and click **Add**. 
-    * Allow access from all service supported or specific service endpoint types. If the toggle is set to Yes, all service supported endpoint types are added to the rule.
-    * Add existing network zones or create new zones for your access rule. For more information, [Creating network zones](/docs/account?topic=network-zones-create).
+5. Next, add one or more contexts. Select endpoint types and network zones, and click **Add**. 
+    * You can allow access from all service supported or specific service endpoint types. If the toggle is set to Yes, all service supported endpoint types are added to the rule. 
+    * You can add existing network zones to your rule or create new zones to add to your rule. For more information, [Creating network zones](/docs/account?topic=network-zones-create).
 6. Click **Create**.
 
 If you create a context-based restriction for the **IAM Access Groups** or **IAM Users** services, the rule must allow the two services to still communicate. To do this, create a network zone with a service reference to the other service. For example, if you create a context-based restriction around the IAM Access Groups service, create a network zone with a service reference to the IAM Users service. Then, add this network zone to the rule you create around the IAM Access Groups service. This way, the IP addresses associated with the IAM Users service is included in the rule’s allowed context. If you don't do this, the services might produce unexpected behavior.
