@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-06-11"
+lastupdated: "2021-09-28"
 
 keywords: migrate, migrating to a resource group, migrate Cloud Foundry
 
@@ -16,6 +16,7 @@ subcollection: account
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:gif: data-image-type='gif'}
+{:video: .video}
 {:tip: .tip}
 {:external: target="_blank" .external}
 
@@ -83,7 +84,7 @@ Any user who can access an {{site.data.keyword.dev_console}} app can migrate it.
 
 When you migrate a service instance from a Cloud Foundry org and space to a resource group, a new linked service instance is created in the resource group. The original instance in the Cloud Foundry org and space becomes an [alias](/docs/account?topic=account-connect_app#what_is_alias). The alias counts towards the quota for your organization, but you're billed for your usage of the service instance in the resource group.
 
-![Migration of a Cloud Foundry service instance to a resource group](images/migration.gif){: gif}
+![Migration of a Cloud Foundry service instance to a resource group](images/migration.mp4){: video controls loop height="300"}
 
 Service instances are migrated one at a time when you're notified on the My resources page by the ![Migrate this service instance to a resource group](images/migrate.svg "Migrate this service instance to a resource group") icon that is associated with your Cloud Foundry service instance.
 
