@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2021
-lastupdated: "2021-09-24"
+lastupdated: "2021-09-28"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, full list of tags, how to use tags
 
@@ -115,7 +115,7 @@ For more information, see the [`ibmcloud resource` command reference](/docs/cli?
 {: #create-access-api}
 {: api}
 
-You can programmatically create access management tags by calling the [Global Search and Tagging - Tagging API](https://{DomainName}/apidocs/tagging#create-tag){: external} as shown in the following sample request. The example creates a tag that is called `project:myproject`.
+You can programmatically create access management tags by calling the [Global Search and Tagging - Tagging API](/apidocs/tagging#create-tag){: external} as shown in the following sample request. The example creates a tag that is called `project:myproject`.
 
 ```bash
 curl -X POST -H "Authorization: {iam_token}" \

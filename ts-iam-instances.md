@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-28"
 
 keywords: troubleshoot accessing all instances of a service
 
@@ -50,4 +50,4 @@ Go to **Manage** &gt; **Access (IAM)** in the console, and select the user's nam
 To view the allowed actions for each role that has been assigned to them, click **Actions for role**.
 {: tip}
 
-Make sure that the service is using the correct access management tag on your [resource list](https://{DomainName}/account/tags).
+Make sure that the service is using the correct access management tag on your [resource list](/account/tags).

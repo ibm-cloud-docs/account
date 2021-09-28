@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-28"
 
 keywords: account types, Lite, free account, trial account, paid account, buy account, account difference, compare account, subscription, Pay As You Go with Committed Use, PayGo with Commit
 
@@ -44,6 +44,7 @@ The following table provides a comparison of Lite, Pay-As-You-Go, and Subscripti
 | **Invoiced on monthly consumption**        |                    | ![Feature available](../icons/icon_enabled.svg) |                     | 
 {: row-headers}
 {: class="comparison-table"}
+
 {: caption="Table 1. Comparison of {{site.data.keyword.Bluemix_notm}} accounts" caption-side="top"}
 {: summary="This table has row and column headers. The row headers identify the feature. The column headers identify the account type. To understand which features apply to the account types, navigate to the row, and find the feature that you're interested in."}
 

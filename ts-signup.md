@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-02-25"
+lastupdated: "2021-09-28"
 
 keywords: troubleshoot account, authentication, IBMid accounts, sign-up error 
 
@@ -35,7 +35,7 @@ When you log in to {{site.data.keyword.Bluemix_notm}}, the following message is 
 
 `You have reached this page because your authentication was successful, however, this IBMid is not associated with any {{site.data.keyword.Bluemix_notm}} accounts.`
 
-You logged in from the [{{site.data.keyword.Bluemix_notm}} console](https://{DomainName}){: external}  with a valid IBMid, but you don't have an {{site.data.keyword.Bluemix_notm}} account.
+You logged in from the [{{site.data.keyword.Bluemix_notm}} console](/){: external}  with a valid IBMid, but you don't have an {{site.data.keyword.Bluemix_notm}} account.
 {: tsCauses}
 
 Create an {{site.data.keyword.Bluemix_notm}} account by following the sign-up process.

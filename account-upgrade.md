@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-28"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -48,7 +48,7 @@ If you're upgrading to reactivate a deactivated account, your account might take
 
 ### Promotional credit for upgrading your account 
 
-If your upgrade included a promotional credit, the credit might take a few hours to appear in your account. Any unused upgrade credit expires after the 30 day period ends. You are invoiced for any usage that exceeds the promotional credit. You can view the promotional credit on the [Promotions](https://{DomainName}/billing/promotions){: external} page or the [Invoices](https://{DomainName}/billing/invoices){: external} page in the console. The following table lists the current upgrade promotional amounts for different currencies:
+If your upgrade included a promotional credit, the credit might take a few hours to appear in your account. Any unused upgrade credit expires after the 30 day period ends. You are invoiced for any usage that exceeds the promotional credit. You can view the promotional credit on the [Promotions](/billing/promotions){: external} page or the [Invoices](/billing/invoices){: external} page in the console. The following table lists the current upgrade promotional amounts for different currencies:
 
 
 | Country       | Currency   | Converted Promo Amount |
@@ -84,14 +84,14 @@ To upgrade from a Lite account to a Subscription account, complete the following
 1. In the console, go to **Manage** > **Account**, and select **Account settings**. Then, click **Upgrade**, which takes you to the Subscriptions page.
 1. Select your monthly spending commitment and subscription term, and click **Get started**.
 
-   If you're not sure how much your typical usage might cost, you can estimate it by using the [cost estimator](https://{DomainName}/estimator/review){: external}.
+   If you're not sure how much your typical usage might cost, you can estimate it by using the [cost estimator](/estimator/review){: external}.
    {: tip}
    
 1. Review your subscription details, and then enter your payment information.
 
    After your payment information is processed, your subscription credit is added to your account. You can monitor your subscription usage on this same Subscriptions page. See [Managing subscriptions](/docs/billing-usage?topic=billing-usage-subscriptions) for more information.
 
-Your subscription renews automatically. If you want to discontinue your subscription renewal, [contact support](https://{DomainName}/unifiedsupport/supportcenter).
+Your subscription renews automatically. If you want to discontinue your subscription renewal, [contact support](/unifiedsupport/supportcenter).
 {: note}
 
 ### Converting a Pay-As-You-Go account to a Subscription account

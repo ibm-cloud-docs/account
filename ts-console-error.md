@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-28"
 
 keywords: troubleshoot account, browser issue, console error 
 
@@ -40,4 +40,4 @@ Use one of the following options:
 {: tsResolve}
 
 * Close your browser, clear the cache and cookies, then try to log in again.
-* Log in from the [{{site.data.keyword.Bluemix_notm}} console](https://{DomainName}){: external}.
+* Log in from the [{{site.data.keyword.Bluemix_notm}} console](/){: external}.

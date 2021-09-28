@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-28"
 
 keywords: troubleshoot permission to delete access management tags
 
@@ -51,7 +51,7 @@ To view the allowed actions for each role that has been assigned to you, click *
 {: tip}
 
 Before you try to delete an access management tag, make sure it's not attached to any of your resources.
-* Filter by tag name on your [resource list](https://{DomainName}/account/tags). If you don't have a viewer permission for all existing resources, contact the account owner to verify.
+* Filter by tag name on your [resource list](/account/tags). If you don't have a viewer permission for all existing resources, contact the account owner to verify.
 * Use the **`ibmcloud resource reclamation`** command in the {{site.data.keyword.Bluemix}} CLI to list out resources in reclamation state and delete the resource that had the tag you were trying to delete. For more information, see [Using resource reclamations](/docs/account?topic=account-resource-reclamation).
 
 When you delete an access management tag from the account, any associated IAM policies are also deleted with it.

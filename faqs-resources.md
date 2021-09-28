@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2021
 
-lastupdated: "2021-09-24"
+lastupdated: "2021-09-28"
 
 keywords: resource FAQs, resource frequently asked questions, resource group, resource list, dashboard widget
 
@@ -53,7 +53,7 @@ Most likely you're dealing with an access issue. You must have at least the View
 
 For more information about how to check your assigned access, see [Managing access to resources](/docs/account?topic=account-assign-access-resources#assign-access-resources).
 
-If you need additional access in the account, contact the account owner that is listed on the [Users](https://{DomainName}/iam#/users) page. 
+If you need additional access in the account, contact the account owner that is listed on the [Users](/iam/users) page. 
 
 ## Who can create resource groups?
 {: #create-resource}

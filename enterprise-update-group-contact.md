@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-09-24"
+lastupdated: "2021-09-28"
 
 keywords: enterprise, organize accounts, account group, change contact, account group contact 
 
@@ -53,7 +53,7 @@ This action can be done only through the UI, API, or SDKs. To see the steps, swi
 {: #update-account-group-contact-api}
 {: api}
 
-To update the primary contact for the account group, call the [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#import-an-account-into-an-enterprise){: external} as shown in the following sample request. Replace the IAM token and ID variables with the values from your enterprise.
+To update the primary contact for the account group, call the [Enterprise Management API](/apidocs/enterprise-apis/enterprise#import-an-account-into-an-enterprise){: external} as shown in the following sample request. Replace the IAM token and ID variables with the values from your enterprise.
 
 1. If a user that you want to assign as the contact isn't in the enterprise, first invite the user to the enterprise account. See [Inviting users](/docs/account?topic=account-iamuserinv) for more information.
 

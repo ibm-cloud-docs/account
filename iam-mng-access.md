@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-09-24"
+lastupdated: "2021-09-28"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access 
 
@@ -102,7 +102,7 @@ If a user doesn't have a role on the resource group that contains the resources,
 {: #access-resources-api}
 {: api}
 
-You can assign access to an individual resource in the account or access to a list of resources in the account by calling the [{{site.data.keyword.iamlong}} (IAM) Policy Management API](https://{DomainName}/apidocs/iam-policy-management#create-policy){: external} as shown in the following sample request. The sample request gives `Administrator` role access for an instance of a service:
+You can assign access to an individual resource in the account or access to a list of resources in the account by calling the [{{site.data.keyword.iamlong}} (IAM) Policy Management API](/apidocs/iam-policy-management#create-policy){: external} as shown in the following sample request. The sample request gives `Administrator` role access for an instance of a service:
 
 ```bash
 curl -X POST 'https://iam.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $TOKEN' \
@@ -387,7 +387,7 @@ ibmcloud iam service-policy-delete SERVICE_ID POLICY_ID [-f, --force]
 {: #remove-access-api}
 {: api}
 
-Delete a policy by providing a policy ID and calling the [{{site.data.keyword.iamlong}} (IAM) Policy Management API](https://{DomainName}/apidocs/iam-policy-management#delete-policy){: external} as shown in the following sample request:
+Delete a policy by providing a policy ID and calling the [{{site.data.keyword.iamlong}} (IAM) Policy Management API](/apidocs/iam-policy-management#delete-policy){: external} as shown in the following sample request:
 
 ```bash
 curl -X DELETE 'https://iam.cloud.ibm.com/v1/policies/$POLICY_ID' \
@@ -477,7 +477,7 @@ ibmcloud iam user-policies name@example.com
 {: #review-your-access-api}
 {: api}
 
-By using the API, you can only retrieve all policies in the account and filter by attribute values. You can check your assigned access in an account by going to **Manage** > **Users** > **your_name** > **Access policies** in the console. To retrieve policies, call the [{{site.data.keyword.iamlong}} (IAM) Policy Management API](https://{DomainName}/apidocs/iam-policy-management#list-policies){: external} as shown in the following sample request:
+By using the API, you can only retrieve all policies in the account and filter by attribute values. You can check your assigned access in an account by going to **Manage** > **Users** > **your_name** > **Access policies** in the console. To retrieve policies, call the [{{site.data.keyword.iamlong}} (IAM) Policy Management API](/apidocs/iam-policy-management#list-policies){: external} as shown in the following sample request:
 
 ```bash
 curl -X GET 'https://iam.cloud.ibm.com/v1/policies?account_id=$ACCOUNT_ID' \

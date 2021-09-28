@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-09-24"
+lastupdated: "2021-09-28"
 
 keywords: what is IAM, IAM features, IAM API, how IAM works
 
@@ -216,9 +216,9 @@ You can access and use {{site.data.keyword.cloud_notm}} IAM through the Access (
 * To access {{site.data.keyword.cloud_notm}} IAM by using the console, go to **Manage** > **Access (IAM)**.
 * Go to [Managing IAM access, API keys, service IDs, and access groups](/docs/cli?topic=cli-ibmcloud_commands_iam) to review the available CLI commands.
 * Review the available APIs:
-    * [IAM Identity Services API](https://{DomainName}/apidocs/iam-identity-token-api){: external} 
-    * [IAM Access Groups API](https://{DomainName}/apidocs/iam-access-groups){: external} 
-    * [IAM Policy Management API](https://{DomainName}/apidocs/iam-policy-management){: external} 
+    * [IAM Identity Services API](/apidocs/iam-identity-token-api){: external} 
+    * [IAM Access Groups API](/apidocs/iam-access-groups){: external} 
+    * [IAM Policy Management API](/apidocs/iam-policy-management){: external} 
 
 ## Mapping {{site.data.keyword.cloud_notm}} IAM concepts to other cloud providers
 {: #iam-compare}
@@ -247,6 +247,7 @@ The following mappings of {{site.data.keyword.cloud_notm}} IAM concepts to those
 | Public access | Public access to specific resources is enabled through a default access group called Public Access. This feature can be disabled on each account. | Feature of Amazon S3 that can be enabled for specific resources, and can be disabled at the account or bucket level. | Public read access can be enabled for specific account types or resources. It can be disabled at the storage account or container level. | Google has an identifier for allAuthenticatedUsers that represents all service accounts and all users who are authenticated with a Google Account, which can also be granted access. |
 | Auditing | Audit with Activity Tracker | Audit with AWS CloudTrail | Azure Logging and Auditing Activity logs | Audit with Audit logging | 
 {: row-headers}
+
 {: caption="Table 1. {{site.data.keyword.cloud_notm}} IAM concept comparison" caption-side="top"}
 {: summary="The rows are read from left to right. The first column is {{site.data.keyword.cloud_notm}} IAM concept. Then, each of the following columns has details as that concept relates the specific cloud provider that is listed in the column header."}
 

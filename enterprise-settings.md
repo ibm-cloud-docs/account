@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-09-24"
+lastupdated: "2021-09-28"
 
 keywords: enterprise, enterprise settings, manage enterprise, view enterprise, rename enterprise
 
@@ -61,7 +61,7 @@ Also, you can rename your enterprise by clicking **Rename** in the Enterprise de
 {: #enterprise-manage-api}
 {: api}
 
-You can programmatically update an enterprise by calling the Enterprise Management API as shown in the following sample request. You can update the enterprise name by passing the new values on the API call. For detailed information about the API, see the [Enterprise Management API documentation](https://{DomainName}/apidocs/enterprise-apis/enterprise#update-an-enterprise){: external}.
+You can programmatically update an enterprise by calling the Enterprise Management API as shown in the following sample request. You can update the enterprise name by passing the new values on the API call. For detailed information about the API, see the [Enterprise Management API documentation](/apidocs/enterprise-apis/enterprise#update-an-enterprise){: external}.
 
 ```bash
 curl -X PATCH "https://enterprise.cloud.ibm.com/v1/account-groups/$ACCOUNT_GROUP_ID" 

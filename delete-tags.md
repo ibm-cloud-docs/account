@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021
-lastupdated: "2021-09-24"
+lastupdated: "2021-09-28"
 
 keywords: tags, delete tags, unused tags, delete tags in  the console, delete  tags cli, delete tags api
 
@@ -57,7 +57,7 @@ ibmcloud resource tag-delete --tag-names MyTag
 {: #delete-tag-api}
 {: api}
 
-You can delete tags by calling the [Global Search and Tagging - Tagging API](https://{DomainName}/apidocs/tagging#delete-tag-all){: external} as shown in the following sample requests. The allowed values for the `tag_type` query parameter are: `user` for user tags and `access` for access management tags.
+You can delete tags by calling the [Global Search and Tagging - Tagging API](/apidocs/tagging#delete-tag-all){: external} as shown in the following sample requests. The allowed values for the `tag_type` query parameter are: `user` for user tags and `access` for access management tags.
 
 ### Deleting a tag 
 {: #delete-a-tag-api}

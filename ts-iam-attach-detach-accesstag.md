@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-09-28"
 
 keywords: troubleshoot permission to attach and detach access management tags
 
@@ -38,7 +38,7 @@ You can't attach or detach access management tags on a resource, which you have 
 This problem can be commonly caused by the following reasons:
 {: tsCauses}
 
-* You're trying to attach an access management tag that doesn't exist yet in the account, which you are a member of. You need to [create the access management tag](https://{DomainName}/account/tags) first.
+* You're trying to attach an access management tag that doesn't exist yet in the account, which you are a member of. You need to [create the access management tag](/account/tags) first.
 * You might not be assigned the appropriate access to complete the actions. You must have the Administrator role on the resource.
 * The resource is not an IAM-enabled resource. Only a set of {{site.data.keyword.Bluemix}} services is enabled to use {{site.data.keyword.Bluemix}} IAM for access control. These services need to be labeled as "IAM-enabled" in the catalog.
 * Some services don't have full support for access management tags on their UI, so when you're creating an instance of those services, you can only attach user tags. To learn how you can work with access management tags, see the tutorial about [controlling access to resources by using tags](/docs/account?topic=account-access-tags-tutorial).
