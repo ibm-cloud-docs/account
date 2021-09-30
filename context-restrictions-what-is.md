@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-09-27"
+lastupdated: "2021-09-30"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, Cloud Foundry, endpoint type
 
@@ -66,7 +66,7 @@ To manage rules, you must be assigned a specific role for the context-based rest
 | Administrator | View rules   \n  \n Create rules   \n  \n Update rules   \n  \n Remove rules  |
 {: caption="Table 1. Roles and example actions for rules" caption-side="top"}
 
-For more information, see [Actions and roles for account management services](/docs/account-working?topic=account-working-account-services&interface=ui#account-management-actions-roles).
+For more information, see [Actions and roles for account management services](/docs/account?topic=account-account-services&interface=ui).
 
 ## Contexts 
 {: #restriction-context}
