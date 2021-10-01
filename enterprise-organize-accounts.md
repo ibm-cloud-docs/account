@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-09-28"
+lastupdated: "2021-10-01"
 
 keywords: enterprise, create account group, organize accounts, move accounts, account group, change contact, account group contact 
 
@@ -287,4 +287,4 @@ if err != nil {
 {: go}
 
 
-For detailed information about the API, see [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise){: external}.
+For detailed information about the API, see [Enterprise Management API](/apidocs/enterprise-apis/enterprise){: external}.
