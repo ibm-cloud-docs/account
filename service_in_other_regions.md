@@ -29,7 +29,7 @@ To use a service instance that exists in another region, complete the following 
    1. In the {{site.data.keyword.Bluemix_notm}} Dashboard, click **View all** on your apps tile. The Overview page is displayed.
    2. In the navigation pane, click **Credentials**. The *VCAP_SERVICES* environment variable details are displayed. Record the JSON content for the service instance.
 
-3. Switch to the region where you want to use the service instance. lick the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **My resources**. Then, expand the **LOCATION** menu and select the region where you want to use the service instance.
+3. Switch to the region where you want to use the service instance. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **My resources**. Then, expand the **LOCATION** menu and select the region where you want to use the service instance.
 
 4. Create a user-provided service instance by using the credentials and connection parameters that you recorded from the *VCAP_SERVICES* environment variable. 
 
