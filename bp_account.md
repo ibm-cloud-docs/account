@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-09-24"
+lastupdated: "2021-10-04"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources 
 
@@ -10,16 +10,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:term: .term}
-{:external: target="_blank" .external}
-{:video: .video}
-
+{{site.data.keyword.attribute-definition-list}}
 
 # Best practices for organizing resources and assigning access
 {: #account_setup}
@@ -48,7 +39,7 @@ In this scenario, you might assign a developer fairly wide-ranging access to the
 
 All resources that are managed by using IAM access control belong to a resource group. You assign a resource to its resource group when you create it from the catalog. It's important to [create your resource groups](/docs/account?topic=account-rgs#create_rgs) first because you can't change the assignment of resources after you set it. If you accidentally assign a resource to the wrong resource group, delete the resource and create a new one.
 
-A default resource group is created for you when you create a Lite account, and you're limited to the use of one resource group. If you want to create multiple resource groups, [upgrade](/docs/account?topic=account-upgrading-account) to a Pay-As-You-Go or Subscription account. 
+A default resource group is created for your account. If you have a Lite account, you're limited to the use of one resource group. If you want to create multiple resource groups, [upgrade](/docs/account?topic=account-upgrading-account) to a Pay-As-You-Go or Subscription account. 
 {: tip}
 
 ### Searching for resources
@@ -63,8 +54,11 @@ For more information, see [Working with tags](/docs/account?topic=account-tag).
 
 After you set up and organize resource groups in your account, you can take advantage of a couple of strategies to streamline the access management process:
 
-* Access groups: You can minimally manage the number of assigned policies by giving the same access to all identities in an access group instead of assigning the same access multiple times per individual user or service ID. Users must be invited to your account before you can add them to an access group.
-* Trusted profiles: If your organization has an enterprise directory, trusted profiles can reduce the time and effort to manage access. It also simplifies the login process to your {{site.data.keyword.cloud_notm}} account for users in your enterprise. You can automatically grant federated users or compute resources access to your account by creating trusted profiles. For federated users, add conditions based on SAML attributes to define which federated users can apply a profile. For compute resources, specify specific resources, or add conditions based on resource attributes to define which compute resources can apply a profile. For both entity types, the level of access that is granted is determined by the access policies that are specified within each trusted profile. However, trusted profiles don't require users to be invited to an account, and only users that are federated by an external identity provider (IdP) can apply a trusted profile. 
+Access groups
+:   You can minimally manage the number of assigned policies by giving the same access to all identities in an access group instead of assigning the same access multiple times per individual user or service ID. Users must be invited to your account before you can add them to an access group.
+
+Trusted profiles
+:   If your organization has an enterprise directory, trusted profiles can reduce the time and effort to manage access. It also simplifies the login process to your {{site.data.keyword.cloud_notm}} account for federated users in your enterprise. You can automatically grant federated users or compute resources access to your account by creating trusted profiles. For federated users, add conditions based on SAML attributes to define which federated users can apply a profile. For compute resources, specify specific resources, or add conditions based on resource attributes to define which compute resources can apply a profile. For both entity types, the level of access that is granted is determined by the access policies that are specified within each trusted profile. However, trusted profiles don't require federated users to be invited to an account, and only users that are federated by an external identity provider (IdP) can apply a trusted profile. 
   
 When you're a member of multiple access groups, all policies apply at once when you access an account. As a federated user, you might have the option to apply different trusted profiles, but you select just one profile to apply when you log in. For example, if you want to complete developer-related tasks, select the `Developer` profile when logging in. If you want to complete an administrator-related task, you select the`Admin` profile that has privileged permissions. This way, you reduce the risk of taking privileged actions by mistake. 
 {: tip}
@@ -124,7 +118,7 @@ Review the following sample access policies to help you determine how you might 
 ## What makes a good trusted profiles strategy?
 {: #trustedprofiles_strategy}
 
-A trusted profile is a grouping of users or compute resources to which the same IAM access can be granted. All identities that are allowed to apply a single profile inherit the same access. To reduce the number of policies in an account, you can add compute resources and federated users to the same trusted profile if their access needs are the same. 
+A trusted profile is a grouping of federated users or compute resources to which the same IAM access can be granted. All identities that are allowed to apply a single profile inherit the same access. To reduce the number of policies in an account, you can add compute resources and federated users to the same trusted profile if their access needs are the same. 
 
 A logical way to assign access to your resource groups and the included resources is by [creating one trusted profile](/docs/account?topic=account-create-trusted-profile) per required level of access. Then, you can map each trusted profile to the previously created resource groups. For example, to control access to the `CustApp` project, you might create the following trusted profiles:
 
@@ -132,7 +126,7 @@ A logical way to assign access to your resource groups and the included resource
 * Developer-Profile
 * Admin-Profile
 
-For the `Auditor-Profile`, specify conditions based on SAML attributes for the federated users that you want to be able to apply this profile. These SAML attributes are defined in your corporate user directory. This way, managing users, granting access, and revoking access is primarily done in the corporate user directory. Next, assign two access policies that grant viewer access to the `CustApp-Test` and `CustApp-Prod` resources and resource groups. 
+For the `Auditor-Profile`, specify conditions based on SAML attributes for the federated users that you want to be able to apply this profile. These SAML attributes are defined in your corporate user directory. This way, managing federated users, granting access, and revoking access is primarily done in the corporate user directory. Next, assign two access policies that grant viewer access to the `CustApp-Test` and `CustApp-Prod` resources and resource groups. 
 
 For the `Developer-Profile`, specify conditions based on SAML attributes for the federated users that you want to be able to apply this profile. Assign two access policies that grant editor access to the `CustApp-Dev` and `CustApp-Test` resources and resource groups. For the `Admin-Profile`, specify conditions based on SAML attributes for the federated users that you want to be able to apply this profile. Then, assign three access policies that grant administrator access to all three `CustApp` resource groups and their resources.
 
@@ -146,7 +140,7 @@ You can assign administrator access to everything in an account by creating a tr
 
 Review the following sample access policies to help you determine how you might want to assign trusted profiles access to resources that are organized in resource groups.
 
-* A policy that grants federated users a platform administrator role on the {{site.data.keyword.containerlong_notm}} across the entire account. Federated users are allowed to apply this profile when the user's external IdP attributes fulfill the conditions of the trust relationship. For example, if your corporate user directory has a `jobrole` attribute that identifies administrators by the value `admin`, then you can create a condition that dynamically adds users with that attribute to the trusted profile, along with other conditions. The federated users that are allowed to apply the trusted profile can access all instances of this service and create instances of the service in any resource group that they have at least a viewer role assigned. Trusted profiles with an administrator role for a resource can also grant access to that resource. Conditions can be specified so that only users that require the highest privileges can apply this trusted profile. All other federated users can be filtered out based on their SAML attributes.
+* A policy that grants federated users a platform administrator role on the {{site.data.keyword.containerlong_notm}} across the entire account. Federated users are allowed to apply this profile when the federated user's external IdP attributes fulfill the conditions of the trust relationship. For example, if your corporate user directory has a `jobrole` attribute that identifies administrators by the value `admin`, then you can create a condition that dynamically adds federated users with that attribute to the trusted profile, along with other conditions. The federated users that are allowed to apply the trusted profile can access all instances of this service and create instances of the service in any resource group that they have at least a viewer role assigned. Trusted profiles with an administrator role for a resource can also grant access to that resource. Conditions can be specified so that only federated users that require the highest privileges can apply this trusted profile. All other federated users can be filtered out based on their SAML attributes.
 * A policy that grants compute resources `Reader` and `Writer` roles on a resource group. When compute resources authenticate and fulfill the conditions that are specified in the trusted profile, such as `location` or `resource type` the trusted profile is automatically applied. This way, any existing or future resources that meet these conditions can have the profile automatically applied when authenticated. 
 * You can also establish trust with specific compute resources, like a single Kubernetes cluster. For example, you might have an application that is running on {{site.data.keyword.containershort_notm}} where the application needs to read and write from {{site.data.keyword.cloudant}} and read and write to a {{site.data.keyword.cosdimshort_notm}} bucket. Both the {{site.data.keyword.cloudant}} and {{site.data.keyword.cosdimshort_notm}} instances would be in the same resource group and the trusted profile would be assigned `Reader` or `Writer` roles.
 
@@ -231,35 +225,35 @@ As an account administrator, you can use tags to centrally manage access to the 
 
 For example, you have two functional projects: One is called soulmate, which is used for Watson language services and storage, and the other one is called Soul-FAQ, which is a support for project soulmate. It uses Watson Assistant and Cloud Object Storage.
 
-To create access management tags as an account administrator, click Manage then Account in the IBM Cloud console. From the Tags page, click Access management tags. To create new tags, type the tag names separated by commas. We're creating two tags: one for the project soulmate and one for the project soul-faq.
+To create access management tags as an account administrator, click Manage then Account in the IBM Cloud console. From the Tags page, click Access management tags. To create new tags, type the tag names that are separated by commas. We're creating two tags: one for the project soulmate and one for the project soul-faq.
 
 Jumping to the resource list you can see all resources on the account. You can tag project-related resources here and view them throughout the account by filtering by tags.
 
 At this point, the developer cannot view the resources because they don't have the correct permissions that are assigned yet.
 
-An account administrator can give the developer permissions to access the resources on their project by using a combination of access-groups and tags. 
+An account administrator can give the developer permissions to access the resources on their project by using a combination of access-groups and tags.
 
-As an account administrator, click Manage then Access and select Access groups. You have two access groups set up: one for the soulmate project, one for the FAQ. 
+As an account administrator, click Manage then Access and select Access groups. You have two access groups set up: one for the soulmate project, one for the FAQ.
 
-There's one developer in the soulmate developer's group. There are no policies set up, so the account administrator needs to assign access. To do so, select all services in the account based on specific attributes. Select Access Management Tags to view all the tags that are available in the account. Since you're creating a policy for the project soulmate, select the corresponding tag. The console shows that the project soulmate tag is mapped to three distinct resources. 
+There's one developer in the soulmate developer's group. There are no policies set up, so the account administrator needs to assign access. To do so, select all services in the account based on specific attributes. Select Access Management Tags to view all the tags that are available in the account. Since you're creating a policy for the project soulmate, select the corresponding tag. The console shows that the project soulmate tag is mapped to three distinct resources.
 
 Next, select some roles. Give the whole group the viewer role so everyone can view the resources in the list as well as all the functional access to these services. Click Assign to create the policy.
 
 Now there are three services available for the developer. They have access to all three resources and any subresources that might exist.
 
-Flexibility is important, so we've made it easy to share resources between various groups. Let's say an account administrator notices that IBM Cloud Object Storage is great for backup purposes and works well with the FAQ project. The account administrator wants to use IBM Cloud Object Storage in the soulmate project. 
+Flexibility is important, so we've made it easy to share resources between various groups. Let's say an account administrator notices that IBM Cloud Object Storage is great for backup purposes and works well with the FAQ project. The account administrator wants to use IBM Cloud Object Storage in the soulmate project.
 
-Simply edit the Access management tags. Add the project soulmate tag and click Save. 
+Simply edit the Access management tags. Add the project soulmate tag and click Save.
 
 In the resource list, you can confirm that there are two access management tags attached to the Cloud Object Storage instance.
 
-In addition to the original resources, the developer can now see the Cloud Object Storage resource. The instance is available to anyone who has access to project soulmate or project FAQ. 
+In addition to the original resources, the developer can now see the Cloud Object Storage resource. The instance is available to anyone who has access to project soulmate or project FAQ.
 
-Let's say you don't want the Tone Analyzer service for the soulmate project anymore. Detaching the project soulmate tag from the Tone Analyzer service revokes the developer's access to that service instance. An account administrator can detach the tag by clicking Edit tags, and deleting the tag from the list. 
+Let's say you don't want the Tone Analyzer service for the soulmate project anymore. Detaching the project soulmate tag from the Tone Analyzer service revokes the developer's access to that service instance. An account administrator can detach the tag by clicking Edit tags, and deleting the tag from the list.
 
-The Tone Analyzer service instance is no longer included in the developer's list of resources.  
+The Tone Analyzer service instance is no longer included in the developer's list of resources.
 
-When you use access management tags to control access, your team's projects can grow without requiring updates to IAM policies. 
+When you use access management tags to control access, your team's projects can grow without requiring updates to IAM policies.
 
 ### Three teams working on three projects
 {: #three-teams-projects}

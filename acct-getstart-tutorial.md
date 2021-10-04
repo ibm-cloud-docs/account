@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-09-24"
+lastupdated: "2021-10-04"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key
 
@@ -13,14 +13,7 @@ completion-time: 60m
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:external: target="_blank" .external}
-{:step: data-tutorial-type='step'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Setting up your {{site.data.keyword.cloud_notm}} account
 {: #account-getting-started}
@@ -34,26 +27,31 @@ This tutorial focuses on how to set up a Pay-As-You-Go account. If you're lookin
 {: tip}
 
 ## Create your account
-{: #account-gs-createlite}
+{: #account-gs-create}
 {: step}
 
-First, create a Lite account by using your existing IBMid or a new IBMid. If your company is registered to use a federated ID for single sign-on (SSO), you can use your federated ID instead.
+First, create an account by using your existing IBMid or a new IBMid. If your company is registered to use a federated ID for single sign-on (SSO), you can use your federated ID instead.
 
 | Login ID | Details |    
 |-----------------|---------|
 |Existing IBMid   | If you already have an IBMid, sign up for {{site.data.keyword.Bluemix_notm}} with your existing credentials that you use for other {{site.data.keyword.IBM}} products and services. |
 |New IBMid        | If you don't yet have an IBMid, you'll create one when you sign up. With an IBMid, you can use one username to log in to all {{site.data.keyword.IBM_notm}} products and services, including {{site.data.keyword.Bluemix_notm}}. |
 |Federated ID     | If your company already requested to register the user credentials from your company's domain with {{site.data.keyword.IBM_notm}}, you can sign up for {{site.data.keyword.Bluemix_notm}} by using the credentials that you already use for your company's login. You must enter a phone number when you sign up. |
-{: caption="Table 1. ID options for creating a Lite account" caption-side="top"}
+{: caption="Table 1. ID options for creating an account" caption-side="top"}
 
 ### Using your IBMid
 {: #signup-ibmid}
 
-If you're not a part of a company that uses a federated ID, use your IBMid to create your Lite account.
+If you're not a part of a company that uses a federated ID, use your IBMid to create your account.
 
 1. Go to the [{{site.data.keyword.Bluemix_notm}} login page](https://cloud.ibm.com/){: external}, and click **Create an {{site.data.keyword.Bluemix_notm}} account**.
 1. Enter your IBMid email address. If you don't have an existing IBMid, an ID is created based on the email that you enter.
-1. Complete the remaining fields with your information, and click **Create account**.
+1. Complete the remaining fields with your information.
+
+   You are prompted for your credit card information to verify your identity and secure your account. You can [try out {{site.data.keyword.Bluemix_notm}} for free](/docs/overview?topic=overview-tutorial-try-for-free) and only pay for billable services that you choose to use, with no long-term contracts or commitments. 
+   {: note}
+
+1. Click **Create account**.
 1. Confirm your account by clicking the link in the confirmation email that's sent to your provided email address.
 
 ### Using a federated ID
@@ -69,11 +67,11 @@ For information about how to register your company for a federated ID, see the [
 {: #account-gs-upgrade}
 {: step}
 
-Upgrade your Lite account to a Pay-As-You-Go account to access the full {{site.data.keyword.cloud_notm}} catalog. 
+If you have a Lite account, you can upgrade to a Pay-As-You-Go account to access the full {{site.data.keyword.cloud_notm}} catalog and to create private catalogs.
 
 1. Click **Manage** > **Account**.
-2. Select **Account settings**, and click **Add credit card**.
-3. Enter your credit card information.
+1. Select **Account settings**, and click **Add credit card**.
+1. Enter your credit card information.
 
 ## Set up account MFA settings
 {: #account-gs-mfa}
@@ -87,7 +85,6 @@ Setting up MFA in your account affects all members of the account. This means th
 1. Go to **Manage** > **Access (IAM)** > **Settings**.
 1. Update the current authentication setting by clicking **Edit** in the Authentication section.
 1. Select the type of MFA to enable in your account.
-
    * **MFA for users with an IBMid**: Require users to authenticate by using an IBMid, password, and time-based one-time passcode (TOTP). You can enable this option for all users or non-federated users. 
    * **MFA for all users (IBMid & supported IdPs)**: Require users to authenticate by using one of the following MFA factors. This option applies to users who are using either an IBMid or an external IdP. 
       * **Email-based MFA**: Users authenticate by using a security passcode that's sent via email. 
@@ -97,6 +94,7 @@ Setting up MFA in your account affects all members of the account. This means th
 
 The first time that you log in to your account after updating your MFA settings, you need to verify your identity by using two different verification methods. Methods for verification include email, text, or phone call, and you can use any combination of those options to verify your identity. After you verify your identity, you set up and provide details for your authentication factor. 
 {: note}
+
 
 ## Estimate your costs
 {: #account-gs-estimate}
@@ -140,17 +138,20 @@ Before you start working with resources in your account, familiarize yourself wi
 
 Complete the following steps to set your preferences for receiving various types of notifications: 
 
-1. To receive notifications about unplanned events, planned maintenance, announcements, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar")
- **Profile and settings** > **Notifications**.
-   * Platform notifications are associated with the {{site.data.keyword.cloud_notm}} platform and don't apply to events related to {{site.data.keyword.cloud_notm}} services. By default, all platform notifications are turned off. 
-   * Infrastructure notifications apply only to the account in which the preferences are set. By default, all infrastructure notifications are turned on. 
-2. To receive spending notifications, go to **Manage** > **Billing and usage** > **Spending notifications**. You receive notifications when you reach 80%, 90%, and 100% of the spending thresholds that you specify. 
+1. To receive notifications about {{site.data.keyword.cloud_notm}} platform-related, or resource-related items, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar")
+   **Profile** > **Notification preferences**.
+   * When you set {{site.data.keyword.cloud_notm}} platform notifications, you receive email notifications that are associated with only the platform. You do not receive notifications about events that are associated with {{site.data.keyword.cloud_notm}} services. By default, all platform notifications are turned off. 
+   *  If you update your preferences on resource activity, such as incidents, maintenance, security bulletins, or infrastructure service updates, the notifications are for only the services you use or the devices that you have provisioned. By default, all infrastructure notifications are turned off. 
+
+
+2. To receive spending notifications, go to **Manage** > **Billing and usage** > **Spending notifications**. Or, you can access it directly from the [Notification preferences](https://cloud.ibm.com/user/notifications) page by scrolling down to **Billing and Usage** and clicking **Manage**.
+You receive notifications when you reach 80%, 90%, and 100% of the spending thresholds that you specify. 
 
 ## Create your resource groups
 {: #account-gs-resourcegroups}
 {: step}
 
-Resource groups provide a way for you to easily manage access to multiple resources and to view billing usage for a set of resources. With your Pay-As-You-Go account, you can create more resource groups in addition to the default resource group that's included when you first created your Lite account. 
+Resource groups provide a way for you to easily manage access to multiple resources and to view billing usage for a set of resources. With your Pay-As-You-Go account, you can create more resource groups in addition to the default resource group that's created for you. 
 
 1. Go to **Manage** > **Account** > **Account resources** > **Resource groups**.
 2. Click **Create**.
@@ -174,12 +175,14 @@ IAM access groups provide a way for you to quickly and easily assign access to m
 
    1. Click **Access policies** > **Assign access**.
    2. Select the type of access to assign: 
+    
       * **IAM services**: Assigns access to IAM-enabled services, which are services that are managed by using IAM access control and assigned to a resource group.
       * **Account management services**: Assigns access to manage platform services, such as billing, license and entitlements, and enterprises.
+
    3. Select all roles that apply.
    4. Click **Add** > **Assign**.
   
-See [What is a good access group strategy?](/docs/account?topic=account-account_setup#resource-group-strategy) for details about how to best set up your access groups. 
+See [What makes a good resource group strategy?](/docs/account?topic=account-account_setup#resource-group-strategy) for details about how to best set up your access groups. 
   
 ## Invite users to your account
 {: #account-gs-inviteusers}
@@ -187,8 +190,8 @@ See [What is a good access group strategy?](/docs/account?topic=account-account_
 
 You're ready to invite users to your account and grant them access based on the resources they will work with and the tasks they'll perform. If you want users to create resources from the catalog and assign the resources to a resource group, the following access is required:
 
-* Viewer role or higher on the resource group.
-* Editor or administrator role on the service. 
+   * Viewer role or higher on the resource group.
+   * Editor or administrator role on the service. 
 
 Complete the following steps:
 
