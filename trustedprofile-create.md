@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-09-24"
+lastupdated: "2021-10-04"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
@@ -83,7 +83,7 @@ Complete the following steps to set up better control over granting access to co
 3. Describe your profile by providing a name and a description, and click **Continue**.
 4. (Optional) Establish trust.
    1. Select **Compute resources** and select a compute service type from the list.
-   2. If you select the option for **Any service resource**, you can define multiple conditions to filter resources for the selected compute service type by clicking **Add a condition**. These conditions are based on attributes, such as resource groups or location, and apply to all existing and future resources. Resources must meet all the conditions to be included in the trusted profile.
+   2. If you select the option for **All service resources**, you can define multiple conditions to filter resources for the selected compute service type by clicking **Add a condition**. These conditions are based on attributes, such as resource groups or location, and apply to all existing and future resources. Resources must meet all the conditions to be included in the trusted profile.
    
    The Kubernetes namespace and service account names that you enter do not have to exist already. Any future namespaces or service accounts with these names can establish trust. To list existing namespaces, log in to your cluster and run `kubectl get ns`. To list existing service accounts, log in to your cluster and run `kubectl get sa -n <namespace>`.
    {: note}
