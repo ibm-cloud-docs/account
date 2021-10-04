@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-09-28"
+lastupdated: "2021-10-04"
 
 keywords: account types, Lite, free account, trial account, paid account, buy account, account difference, compare account, subscription, Pay As You Go with Committed Use, PayGo with Commit
 
@@ -70,7 +70,7 @@ Check out the following list of key features that are available in a Lite accoun
 * The account is free - no credit card required.
 * The account never expires.
 * You receive email notifications about your account status and quota limits.
-* You can provision one instance of any service in the [{{site.data.keyword.Bluemix_notm}} catalog](https://cloud.ibm.com/catalog/?search=label:lite%20lite){: external} that has a Lite plan.
+* You can provision one instance of any service in the [{{site.data.keyword.Bluemix_notm}} catalog](/catalog/?search=label:lite%20lite){: external} that has a Lite plan.
 * After 10 days of no development activity, your apps go to sleep. You can wake up your apps by continuing to work on them.
 * After 30 days of no development activity, your service instances with Lite plans are deleted.
 
