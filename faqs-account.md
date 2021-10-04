@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-09-27"
+lastupdated: "2021-10-04"
 
-keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite
+keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
 subcollection: account
 
@@ -115,15 +115,15 @@ When you add a credit card to your trial account, your account is upgraded to a 
 
 {{site.data.keyword.Bluemix_notm}} trial accounts are available for faculty and students at accredited academic institutions. To qualify for a trial account, go to [Harness the Power of IBM](https://ibm.biz/academic){: external} and validate your institution credentials. Unlike Lite accounts, trial accounts expire after 30 days.
 
-## Can I cancel my account?
+## Can I close my account?
 {: #cancelaccount}
 {: faq}
 {: support}
 
-We're sad to see you go! If there's any way we can assist you before you decide to cancel your account, [reach out to us](/unifiedsupport/supportcenter){: external}.
+We're sad to see you go! If there's any way we can assist you before you decide to close your account, [reach out to us](https://{DomainName}/unifiedsupport/supportcenter){: external}.
 
-* To cancel a Pay-As-You-Go or Subscription account, contact [Support](/unifiedsupport/supportcenter). A  support case is required for account security and documentation purposes. After your Pay-As-You-Go account has been canceled, all usage is stopped across all services running in your account, and the usage that is accrued in the current billing period is sent in one final invoice at the close of the billing period. 
-* To cancel a Lite account, go to the [Account settings](/account/settings) page, and click **Deactivate account**.
+* To close a Pay-As-You-Go or Subscription account, contact [Support](https://{DomainName}/unifiedsupport/supportcenter). A  support case is required for account security and documentation purposes. After your Pay-As-You-Go account has been closed, all usage is stopped across all services running in your account, and the usage that is accrued in the current billing period is sent in one final invoice at the close of the billing period. Closing your account can't be undone and your data is unrecoverable.
+* To close a Lite account, go to the [Account settings](https://{DomainName}/account/settings) page, and click **Close account**. You can reactivate your account if you upgrade to a Pay-As-You-Go or Subscription account. After an account is closed for 30 days, all data is deleted and all services are removed. 
 
 You can contact [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}  to open a support case and request to delete your account. Data in deleted accounts is not recoverable. If you want your information removed from {{site.data.keyword.IBM_notm}} systems, submit a data rights request through the [{{site.data.keyword.IBM_notm}} Privacy Portal](https://www.ibm.com/privacy/portal/){: external}. 
 
@@ -202,8 +202,8 @@ To understand how {{site.data.keyword.IBM_notm}} handles your personal informati
 Your account might be deactivated for the following reasons:
 
 * For trial accounts, the trial period ended. To reactivate your account, log in to your account and upgrade it to a Pay-As-You-Go account. 
-* An authorized user canceled the account.
-* The account is suspended. At the discretion of {{site.data.keyword.IBM_notm}}, accounts that violate the acceptable usage behavior of the {{site.data.keyword.Bluemix_notm}} services can be disabled without notice. Some services can be restored if users correct their usage behaviors after they're notified of the offensive action. For more information, see [Acceptable Internet use policy for IBM services](https://www.ibm.com/services/us/imc/html/aup1.html){: external}.
+* An authorized user closed the account.
+* At the discretion of {{site.data.keyword.IBM_notm}}, accounts that violate the acceptable usage behavior of the {{site.data.keyword.Bluemix_notm}} services can be disabled without notice. Some services can be restored if users correct their usage behaviors after they're notified of the offensive action. For more information, see [Acceptable Internet use policy for IBM services](https://www.ibm.com/services/us/imc/html/aup1.html){: external}.
 
 If you believe that your account was deactivated in error, contact support by calling 1-866-325-0045 and selecting the third option.
 
