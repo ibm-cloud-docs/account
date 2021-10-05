@@ -2,7 +2,6 @@
 
 copyright:
   years: 2015, 2021
- 
 lastupdated: "2021-10-04"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
@@ -114,11 +113,10 @@ When you add a credit card to your trial account, your account is upgraded to a 
 {: faq}
 {: support}
 
-We're sad to see you go! If there's any way we can assist you before you decide to close your account, [reach out to us](/unifiedsupport/supportcenter){: external}.
+We're sad to see you go! If there's any way we can assist you before you decide to close your account, [reach out to us](https://{DomainName}/unifiedsupport/supportcenter){: external}.
 
-* To close a Pay-As-You-Go or Subscription account, contact [Support](/unifiedsupport/supportcenter). A  support case is required for account security and documentation purposes. After your Pay-As-You-Go account has been closed, all usage is stopped across all services running in your account, and the usage that is accrued in the current billing period is sent in one final invoice at the close of the billing period. Closing your account can't be undone and your data is unrecoverable.
-* To close a Lite account, go to the [Account settings](/account/settings) page, and click **Close account**. You can reactivate your account if you upgrade to a Pay-As-You-Go or Subscription account. After an account is closed for 30 days, all data is deleted and all services are removed. 
-
+* To close a Pay-As-You-Go or Subscription account, contact [Support](https://{DomainName}/unifiedsupport/supportcenter). A  support case is required for account security and documentation purposes. After your Pay-As-You-Go account has been closed, all usage is stopped across all services running in your account, and the usage that is accrued in the current billing period is sent in one final invoice at the close of the billing period. Closing your account can't be undone and your data is unrecoverable.
+* To close a Lite account, go to the [Account settings](https://{DomainName}/account/settings) page, and click **Close account**. You can reactivate your account if you upgrade to a Pay-As-You-Go or Subscription account. After an account is closed for 30 days, all data is deleted and all services are removed. 
 
 ## Can I log in to the console with my SoftLayer ID?
 {: #slid}
@@ -198,14 +196,8 @@ To understand how {{site.data.keyword.IBM_notm}} handles your personal informati
 
 Your account might be deactivated for the following reasons:
 
-* For trial accounts and education trial accounts, the trial period ended over 30 days ago. When a trial expires, the account and associated data is deleted 30 days after the expiration date. The data cannot be recovered. To reactivate your account, log in to your account and [upgrade](/docs/account?topic=account-upgrading-account) it to a Pay-As-You-Go account.
-* An authorized user closed the Lite account.
-* An authorized user [closed](/docs/account?topic=account-accountfaqs#cancelaccount) the Pay-As-You-Go or Subscription account. 
-* Non-payment. To reactivate your account, contact [Support](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: external} to make payment arrangements.
-* Accounts might be deactivated after 60 days for inactivity. 
-* If you recently placed a subscription order and did not apply the feature code for the subscription, your account might be deactivated. Contact {site.data.keyword.cloud_notm}} Sales{: external} for your subscription information.
-* If you are missing account information when you attempt to upgrade your account to a Pay-As-You-Go account and request that you are billed in a currency other than US Dollars, your account may be deactivated. Contact [{site.data.keyword.cloud_notm}} Support] (https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: external} to provide the missing information.
-* Account information cannot be verified. If the information is not provided or the information cannot be validated, your account might be deactivated.
+* For trial accounts, the trial period ended. To reactivate your account, log in to your account and upgrade it to a Pay-As-You-Go account. 
+* An authorized user closed the account.
 * At the discretion of {{site.data.keyword.IBM_notm}}, accounts that violate the acceptable usage behavior of the {{site.data.keyword.Bluemix_notm}} services can be disabled without notice. Some services can be restored if users correct their usage behaviors after they're notified of the offensive action. For more information, see [Acceptable Internet use policy for IBM services](https://www.ibm.com/services/us/imc/html/aup1.html){: external}.
 
 If you believe that your account was deactivated in error, contact support by calling 1-866-325-0045 and selecting the third option. 
