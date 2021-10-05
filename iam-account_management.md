@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2021
 
-lastupdated: "2021-10-04"
+lastupdated: "2021-10-05"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, role management service, catalog management service, cloud shell service, software instance service
 
@@ -73,6 +73,7 @@ If you're using the [Policy management API](https://cloud.ibm.com/apidocs/iam-po
 |---------------|---------------------------------|
 | Billing | serviceName=billing |
 | Catalog management | serviceName=globalcatalog-collection |
+| Context-based restrictions | serviceName=context-based-restrictions|
 | Enterprise | serviceName=enterprise |
 | Global catalog | serviceName=globalcatalog |
 | IAM Access groups service | serviceName=iam-groups |
