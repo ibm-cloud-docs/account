@@ -61,6 +61,11 @@
       "view_more": "/docs/overview?topic=overview-whatsnew",
       "tiles": [
         {
+          "date": "05 October 2021",
+          "title": "Deprecating and suspending private products",
+          "description": "Private catalog owners can now suspend or deprecate private software. When you suspend a version of software, it's immediately removed from your private catalog. When you deprecate software from your private catalog, it remains available to users with access to the private catalog for 90 days. After 90 days, it's permanently removed. For more information, see [Suspending a version of a private product](/docs/account?topic=account-suspend-product) and [Deprecating a private product](/docs/account?topic=account-deprecate-product)."
+        },
+        {
           "date": "27 September 2021",
           "title": "Securing your resources with context-based restrictions",
           "description": "You can now use context-based restrictions to configure and enforce access restrictions for {{site.data.keyword.Bluemix_notm}} resources. The access restrictions are based on the network location where an access request is created. These restrictions work in tandem with traditional IAM access policies, which are based on identity, to provide an extra layer of protection. Since both IAM access and context-based restrictions must enforce access, context-based restrictions offer protection even in the face of compromised or mismanaged credentials. You can create context-based restrictions by defining one or more network zones, which contain allowed network locations, and then associating the zones with the cloud resource through a context-based restrictions rule. Network zones can be defined in terms of IP address constructs, VPCs, and service references, which grant access to a resource from another cloud service. For more information, see [What are context-based restrictions?](https://test.cloud.ibm.com/docs/account?topic=account-context-restrictions-whatis) "
@@ -69,11 +74,6 @@
           "date": "24 September 2021",
           "title": "Assigning access policies based on resource location",
           "description": "For supporting services, like {{site.data.keyword.registrylong_notm}}, you can now scope access to more granular locations in your access group policies, such as geography, country, metro, or a specific {{site.data.keyword.satelliteshort}} location. For more information about assigning access based on location, see [Setting up access groups](/docs/account?topic=account-groups)."
-        },
-        {
-          "date": "5 August 2021",
-          "title": "Delivering notifications by using Microsoft Teams webhooks",
-          "description": "Adding Microsoft Teams webhooks to your distribution list is available for receiving account-related {{site.data.keyword.cloud_notm}} notifications. To create a webhook, you need to add an incoming webhook to a Teams channel and a unique URL thats maps to the selected channel. With this webhook integration, you can easily receive the notifications in a selected Microsoft Teams channel in which you added the incoming webhook. For more information, see [Adding Microsoft Teams webhooks to a distribution list](/docs/account?topic=account-adding-webhooks-to-a-distribution-list#add-microsoft-teams-webhooks-to-a-distribution-list)."
         }
       ]
     }
