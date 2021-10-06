@@ -216,9 +216,9 @@ toc:
               topics:
               - catalog-reload-version.md
               - catalog-update-private.md
-              - catalog-suspend.md
               - catalog-deprecate.md
               - catalog-restore.md
+              - catalog-suspend-version.md
           - catalog-access-reqs.md
       - topicgroup:
           label: Working with scoped dashboards
