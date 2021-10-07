@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-10-07"
 
 keywords: catalog, private catalogs, visibility, filter catalog, hide product, catalog filtering, enterprise, account group, child account, account, restrict
 
@@ -232,18 +232,6 @@ The following table lists the filters that you can use to customize which produc
 
 | Option | Description |
 |--------------|-------|
-| Community | The product is provided by open source communities outside of {{site.data.keyword.IBM_notm}}. If the root cause analysis determines that the issue is a defect in the product, {{site.data.keyword.IBM_notm}} isn't required to provide a fix. |
-| {{site.data.keyword.IBM_notm}} | The lifecycle and operations of the product are the responsibility of {{site.data.keyword.IBM_notm}}. |
-| Third Party | Support for the product is the responsibility of the third-party provider. If the root cause analysis determines that the issue is a defect in the product, {{site.data.keyword.IBM_notm}} isn't required to provide a fix. However, {{site.data.keyword.IBM_notm}} shares analysis with the third-party provider, if needed, and can work with the third-party provider to help solve the issue. |
-{: caption="Table 4. Options for filtering by provider" caption-side="top"}
-{: #provider-custom}
-{: tab-title="Provider"}
-{: tab-group="customcatalogfilters"}
-{: class="simple-tab-table"}
-{: summary="Use the buttons before the table to change the context of the table. The column headers identify the options for fitering based on filter type."} 
-
-| Option | Description |
-|--------------|-------|
 | Beta | The product is available for evaluation and testing purposes. Beta products are not intended for production use. |
 | Experimental | The product is available for evaluation and testing purposes, and might be unstable or not compatible with previous versions. The product can be discontinued with short notice.
 | Deprecated | The product is supported but no longer recommended and that might become obsolete. |
@@ -292,3 +280,6 @@ The following table lists the filters that you can use to customize which produc
 {: tab-group="customcatalogfilters"}
 {: class="simple-tab-table"}
 {: summary="Use the buttons before the table to change the context of the table. The column headers identify the options for fitering based on filter type."}
+
+Want to scope your view of the catalog to only products from a specific provider? Use the **Provider** filter to browse by individual providers.
+{: tip}
