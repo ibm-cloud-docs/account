@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-10-04"
+lastupdated: "2021-10-07"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
@@ -98,6 +98,71 @@ Complete the following steps to set up better control over granting access to co
 You can assign only classic infrastructure access if your account is linked to a Softlayer account.
 {: note}
 
+## Establishing trust with federated users by using the CLI
+{: #create-profile-federated-cli}
+{: cli}
+
+Complete the following steps to define which federated users can access specific resources:
+
+1. [Enable authentication from an external identity provider](/docs/account?topic=account-idp-integration). 
+2. Create a trusted profile by running the following command:
+
+   ```bash
+   ibmcloud iam trusted-profile-create
+   ```
+   {: codeblock}
+
+3. To create conditions for your trusted profile, run the `ibmcloud iam trusted-profile-rule-create` command:
+
+   ```bash
+   ibmcloud iam trusted-profile-rule-create
+   ```
+   {: codeblock}
+   
+4. Create an access policy by running the following command:
+
+   ```bash
+   ibmcloud iam trusted-profile-policy-create
+   ```
+   {: codeblock}
+   
+## Establishing trust with compute resources by using the CLI
+{: #create-profile-compute-cli}
+{: cli}
+
+Complete the following steps to set up better control over granting access to compute resources.
+ 
+{{site.data.keyword.containerlong_notm}} supports only trusted profiles for versions 1.21 and newer. Free {{site.data.keyword.containerlong_notm}} clusters create only earlier versions. You have the choice to create clusters with an earlier version with the standard plan, so be sure to select version 1.21 or newer.
+{: important}
+  
+1. Create a trusted profile by running the following command:
+
+   ```bash
+   ibmcloud iam trusted-profile-create
+   ```
+   {: codeblock}
+   
+2. Create conditions for your trusted profile by using the `ibmcloud iam trusted-profile-rule-create` command:
+
+   ```bash
+   ibmcloud iam trusted-profile-rule-create
+   ```
+   {: codeblock}
+   
+   * You can also create a direct link:
+   
+   ```bash
+   ibmcloud iam trusted-profile-link-create
+   ```
+   {: codeblock}
+   
+3. Create an access policy by running the following command:
+
+   ```bash
+   ibmcloud iam trusted-profile-policy-create
+   ```
+   {: codeblock}   
+
 ## Establishing trust with federated users by using the API
 {: #create-profile-federated-api}
 {: api}
@@ -140,7 +205,7 @@ Complete the following steps to define which federated users can access specific
    There is a limit of 20 claim rules per trusted profile.
    {: note}
 
-4. Create an access policy. For more information, see [IAM Policy Management API?](/apidocs/iam-policy-management) 
+4. Create an access policy. For more information, see [IAM Policy Management API](/apidocs/iam-policy-management). 
 
    ```bash
    curl -X POST 'https://iam.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
@@ -184,7 +249,7 @@ Complete the following steps to define which federated users can access specific
    ```
    {: codeblock}
 
-## Establishing trust with compute resources
+## Establishing trust with compute resources by using the API
 {: #create-profile-compute-api}
 {: api}
 
@@ -243,7 +308,7 @@ Complete the following steps to set up better control over granting access to co
    ```
    {: codeblock}
 
-3. Create an access policy. For more information, see [IAM Policy Management API?](/apidocs/iam-policy-management)
+3. Create an access policy. For more information, see [IAM Policy Management API](/apidocs/iam-policy-management).
 
    ```bash
    curl -X POST 'https://iam.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
