@@ -4,11 +4,9 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-09-09"
+lastupdated: "2021-10-07"
 
 keywords: trusted profile, federated users, compute resources, granting access, remove trusted profile, IAM trusted profile, trust relationship, establish trust
-
-
 subcollection: account
 
 ---
@@ -34,9 +32,9 @@ subcollection: account
 When you remove trusted profiles, compute resources and federated users are unlinked from the profile and can no longer apply the trusted profile identity.
 {: shortdesc}
 
-To remove trusted profiles, you must be assigned the administrator or operator role within the account.
+To remove trusted profiles, you must be assigned the administrator or operator role within the account, or on the IAM Identity Service. 
 
-When you remove trusted profiles, you revoke all active sessions. Users are immediately logged out and the removed profiles are no longer available to connect to the target account.
+When you remove trusted profiles, you revoke all active sessions. Users are immediately logged out and the removed profiles are no longer available to connect to the target account. API calls that use access tokens might be successful until the access token expires. 
 {: note}
 
 ## Removing trusted profiles in the console
@@ -46,6 +44,40 @@ When you remove trusted profiles, you revoke all active sessions. Users are imme
 1. To see the full list of trusted profiles in your account, go to **Manage** > **Access (IAM)** in the {{site.data.keyword.cloud_notm}} console, and select **Trusted profiles**.
 2. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) next to the trusted profile you want to remove, and select **Remove**.
 
+## Removing trusted profiles by using the CLI
+{: #remove-tp-cli}
+{: cli}
+
+You can remove a trusted profile from your account by using the CLI.
+
+1. Log in, and select the account.
+
+   ```bash
+   ibmcloud login
+   ```
+   {: codeblock}
+   
+1. Check the list of trusted profiles for the current account and select the one that you want to remove. The following command shows the list of trusted profiles for your {{site.data.keyword.Bluemix_notm}} account:
+
+   ```bash
+   ibmcloud iam trusted-profiles
+   ```
+   {: codeblock}  
+   
+1. Remove the trusted profile from your account by running the following command. Specify the ID or the name of the trusted profile that you would like to remove.
+
+   ```bash
+   ibmcloud iam trusted-profile-delete <IDorName>
+   ```
+   {: codeblock}
+   
+For example, the following command removes a trusted profile that is named `Test trusted profile`. 
+
+   ```bash
+   ibmcloud iam trusted-profile-delete <Test trusted profile>
+   ```
+   {: codeblock}
+   
 ## Removing trusted profiles by using the API
 {: #remove-tp-api}
 {: api}
