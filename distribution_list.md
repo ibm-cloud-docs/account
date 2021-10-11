@@ -29,20 +29,20 @@ You can manage the notification distribution list by using the {{site.data.keywo
 
 For more information about webhooks and how to add them to the distribution list, see [Adding webhooks to a distribution list](/docs/account?topic=account-webhook-distribution-list).
 
-Adding users to the distribution list is different than updating your notification preferences. Users added to the distribution list by the account owner receive any incident, maintenance, announcement, or security bulletin that appears on the account owners [{{site.data.keyword.Bluemix_notm}} - Notifications](https://cloud.ibm.com/notifications){: external} page. 
+Adding users to the distribution list is different than updating your notification preferences. Users added to the distribution list by the account owner receive notifications about any incident, maintenance, announcement, or security bulletin that appears on the account owner's [{{site.data.keyword.Bluemix_notm}} - Notifications](/notifications){: external} page. 
 {: note}
 
-## Adding users to a distribution list in the console
+## Adding email addresses to a distribution list in the console
 {: #add-users-console}
 
-To add users to a distribution list, complete the following steps: 
+To add emails to a distribution list, complete the following steps: 
 1. Using the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account** > **Notification distribution list**. 
-2. Select **Add**. 
-3. Enter a name identifier and an email address. 
+2. Select **Add** > **Email**. 
+3. Enter a name and an email address. 
 
-   You can add up to 10 email addresses to the distribution list. Users that are added don't need be {{site.data.keyword.Bluemix_notm}} users. You can add any email address to the distribution list. 
-   {: note}
-  
+    You can add up to 10 email addresses to the distribution list. Email addresses don't need to correspond to known users in {{site.data.keyword.Bluemix_notm}}, you can add any type.
+    {: note}
+
 4. Click **Add**. 
 
 ## Unsubscribing from the distribution list
