@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-09-27"
+lastupdated: "2021-10-10"
 
 keywords: create network access, network access rule, network zone
 
@@ -50,7 +50,11 @@ By creating network zones, you can create a list of allowed locations where an a
 
 To create a network zone, complete the following steps. 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Context-based restrictions**, and select **Network zones**.
-1. Click **Create**.  
+1. Click **Create**. 
+
+    Instead of creating a zone by using UI inputs, you can use the JSON code form to directly enter JSON to create a zone by clicking **Enter as JSON code**.
+    {: note}
+
 1. Enter a unique name and a description.
 1. Enter the allowed IP addresses where an access request can originate. Include IP address exceptions in the deny list, if necessary.
 1. Enter the allowed VPCs. 
@@ -70,8 +74,8 @@ To create a rule, complete the following steps.
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Context-based restrictions**, and select **Rules**.
 2. Click **Create**.  
 3. Provide a unique description, then click **Continue**. 
-4. Select the resources you want to target in your rule. Select all resources or select resources based on attributes such as location or resource groups, then click **Continue**.
-    1. Select **Account management** to rescrict access to services like user management and policy management. 
+4. Select the resources that you want to target in your rule. Select all resources or select resources based on attributes such as location or resource groups, then click **Continue**.
+    1. Select **Account management** to restrict access to services like user management and policy management. 
 
     When you create context-based restriction for the IAM Access Groups service, users who don't satisfy the rule will not be able to view any groups in the account, including the public access group. 
     {: note}
