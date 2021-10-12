@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-10-06"
+lastupdated: "2021-10-12"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -398,6 +398,6 @@ The administrator of your account has customized the duration of active and inac
 {: #lite-account-create}
 {: faq}
 
-An update to {{site.data.keyword.cloud_notm}} registration is being released incrementally across different geographies starting on 07 October 2021. This update requires credit card information to verify your identity when you sign up for an {{site.data.keyword.cloud_notm}} account. After you register, you are equipped with a Pay-As-You-Go account, and you can access the full {{site.data.keyword.cloud_notm}} catalog, including all Free and Lite plans. You receive a $200 credit to help get you started. You can use the $200 credit on {{site.data.keyword.cloud_notm}} products used in the first 30 days. You pay only for billable services that you use, with no long-term contracts or commitments. 
+An update to {{site.data.keyword.cloud_notm}} registration is being released incrementally across different geographies starting on 12 October 2021. This update requires credit card information to verify your identity when you sign up for an {{site.data.keyword.cloud_notm}} account. After you register, you are equipped with a Pay-As-You-Go account, and you can access the full {{site.data.keyword.cloud_notm}} catalog, including all Free and Lite plans. You receive a $200 credit to help get you started. You can use the $200 credit on {{site.data.keyword.cloud_notm}} products used in the first 30 days. You pay only for billable services that you use, with no long-term contracts or commitments. 
 
 If you created a Lite account before this date, you can continue using {{site.data.keyword.cloud_notm}} as you always have. However, you can go ahead and [upgrade to a Pay-As-You-Go account](/docs/account?topic=account-accountfaqs#changeacct) by adding your credit card information. This way you can gain access to all free service plans in the catalog.
