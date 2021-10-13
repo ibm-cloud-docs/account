@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-10-12"
+lastupdated: "2021-10-14"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -392,12 +392,12 @@ In a Lite account, you can work in only one region. In a Pay-As-You-Go or Subscr
 ## Why do I get logged out of my account?
 {: #user-session-log-out}
 
-The administrator of your account has customized the duration of active and inactive accounts, which requires users to enter their credentials after a specific time. For more information, see [Managing user's log in session durations](/docs/account?topic=account-iam-work-sessions). 
+The administrator of your account has customized the duration of active and inactive accounts, which requires users to enter their credentials after a specific time. For more information, see [Managing user's login session durations](/docs/account?topic=account-iam-work-sessions). 
 
 ## Why can't I create a Lite account?
 {: #lite-account-create}
 {: faq}
 
-An update to {{site.data.keyword.cloud_notm}} registration is being released incrementally across different geographies starting on 12 October 2021. This update requires credit card information to verify your identity when you sign up for an {{site.data.keyword.cloud_notm}} account. After you register, you are equipped with a Pay-As-You-Go account, and you can access the full {{site.data.keyword.cloud_notm}} catalog, including all Free and Lite plans. You receive a $200 credit to help get you started. You can use the $200 credit on {{site.data.keyword.cloud_notm}} products used in the first 30 days. You pay only for billable services that you use, with no long-term contracts or commitments. 
+An update to {{site.data.keyword.cloud_notm}} registration is being released incrementally starting on 14 October 2021. This update requires credit card information to verify your identity when you sign up for an {{site.data.keyword.cloud_notm}} account. After you register, you are equipped with a Pay-As-You-Go account, and you can access the full {{site.data.keyword.cloud_notm}} catalog, including all Free and Lite plans. You receive a $200 credit to help get you started. You can use the $200 credit on {{site.data.keyword.cloud_notm}} products that are used in the first 30 days. You pay only for billable services that you use, with no long-term contracts or commitments. 
 
-If you created a Lite account before this date, you can continue using {{site.data.keyword.cloud_notm}} as you always have. However, you can go ahead and [upgrade to a Pay-As-You-Go account](/docs/account?topic=account-accountfaqs#changeacct) by adding your credit card information. This way you can gain access to all free service plans in the catalog.
+If you created a Lite account before this date, you can continue using {{site.data.keyword.cloud_notm}} as you always have. However, you can go ahead and [upgrade to a Pay-As-You-Go account](/docs/account?topic=account-accountfaqs#changeacct) by adding your credit card information. This way, you can gain access to all Free service plans in the catalog.
