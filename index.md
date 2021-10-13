@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-10-"
+lastupdated: "2021-10-14"
 
 keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription
 
