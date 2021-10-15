@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-10-14"
 
 keywords: change owner, transfer account, transfer account ownership, switch owner, transfer owner
 
@@ -22,6 +22,9 @@ subcollection: account
 
 You can transfer your {{site.data.keyword.cloud}} account to a different owner by creating a support case with information about the new owner. You can transfer only Pay-As-You-Go or Subscription accounts.
 {: shortdesc}
+
+Every {{site.data.keyword.cloud_notm}} account must have a valid account owner. Accounts without a valid account owner are subject to suspension and possible termination.
+{: note}
 
 ## Transferring an account that you own
 {: #transfer-own}
