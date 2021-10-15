@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-10-14"
+lastupdated: "2021-10-15"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
@@ -125,6 +125,8 @@ Complete the following steps to define which federated users can access specific
    ibmcloud iam trusted-profile-policy-create
    ```
    {: codeblock}
+
+For more information, see the [IBM Cloud CLI](https://github.com/IBM-Cloud/ibm-cloud-cli-release/releases). 
    
 ## Establishing trust with compute resources by using the CLI
 {: #create-profile-compute-cli}
@@ -149,7 +151,7 @@ Complete the following steps to set up better control over granting access to co
    ```
    {: codeblock}
    
-   * You can also create a direct link:
+   You can also create a direct link:
    
    ```bash
    ibmcloud iam trusted-profile-link-create
@@ -162,6 +164,8 @@ Complete the following steps to set up better control over granting access to co
    ibmcloud iam trusted-profile-policy-create
    ```
    {: codeblock}   
+
+For more information, see the [IBM Cloud CLI](https://github.com/IBM-Cloud/ibm-cloud-cli-release/releases).
 
 ## Establishing trust with federated users by using the API
 {: #create-profile-federated-api}
