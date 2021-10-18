@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-10-14"
+lastupdated: "2021-10-18"
 
 keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription
 
@@ -40,7 +40,7 @@ The following table provides a comparison of Pay-As-You-Go and Subscription acco
 {: caption="Table 1. Comparison of {{site.data.keyword.Bluemix_notm}} accounts" caption-side="top"}
 {: summary="This table has row and column headers. The row headers identify the feature. The column headers identify the account type. To understand which features apply to the account types, navigate to the row, and find the feature that you're interested in."} 
 
-An update for {{site.data.keyword.cloud_notm}} account registration is being released incrementally beginning on 14 October 2021 that requires credit card information when you sign up, which creates a Pay-As-You-Go account. If you created an account before this date, you might be using a [Lite account](#liteaccount) that didn't require a credit card. Nothing has changed with existing Lite accounts or the available Lite service plans. Additionally, only Lite accounts created before 12 August 2021 can use the 186 GBH of free buildpacks and Cloud Foundry apps with up to 256 MB of free, instantaneous runtime memory per month. The use of one org in one {{site.data.keyword.Bluemix_notm}} region is supported for Lite accounts.
+An update for {{site.data.keyword.cloud_notm}} account registration is being released incrementally beginning on 21 October 2021. Credit card information is required when you sign up, which creates a Pay-As-You-Go account. If you created an account before this date, you might be using a [Lite account](#liteaccount) that didn't require a credit card. Nothing has changed with existing Lite accounts or the available Lite service plans. Additionally, only Lite accounts created before 12 August 2021 can use the 186 GBH of free buildpacks and Cloud Foundry apps with up to 256 MB of free, instantaneous runtime memory per month. The use of one org in one {{site.data.keyword.Bluemix_notm}} region is supported for Lite accounts.
 {: note}
 
 ## Pay-As-You-Go account
@@ -103,7 +103,7 @@ You can work with [{{site.data.keyword.Bluemix_notm}} Sales](https://cloud.ibm.c
 ## Lite account
 {: #liteaccount}
 
-An update for {{site.data.keyword.cloud_notm}} account registration is being released incrementally beginning on 14 October 2021 that requires credit card information when you sign up, which creates a Pay-As-You-Go account. If you created a Lite account before this date, you can continue using {{site.data.keyword.cloud_notm}} as you always have However, you can go ahead and [upgrade to a Pay-As-You-Go account](/docs/account?topic=account-accountfaqs#changeacct) by adding your credit card information. This way, you can gain access to all Free service plans in the catalog.
+An update for {{site.data.keyword.cloud_notm}} account registration is being released incrementally beginning on 21 October 2021. Credit card information is required when you sign up, which creates a Pay-As-You-Go account. If you created a Lite account before this date, you can continue using {{site.data.keyword.cloud_notm}} as you always have. However, you can go ahead and [upgrade to a Pay-As-You-Go account](/docs/account?topic=account-accountfaqs#changeacct) by adding your credit card information. This way, you can gain access to all Free service plans in the catalog.
 {: important}
 
 Your Lite account doesn't expire and your credit card isn't required. You can start building your apps and exploring services with select free Lite plans, which are displayed with a **Lite** tag ![Lite tag](../icons/Lite.svg "Lite") in the {{site.data.keyword.Bluemix_notm}} catalog. 
