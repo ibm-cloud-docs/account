@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-10-07"
+lastupdated: "2021-10-20"
 
 keywords: trusted profile, federated users, compute resources, granting access, remove trusted profile, IAM trusted profile, trust relationship, establish trust
 subcollection: account
@@ -48,7 +48,7 @@ When you remove trusted profiles, you revoke all active sessions. Users are imme
 {: #remove-tp-cli}
 {: cli}
 
-You can remove a trusted profile from your account by using the CLI.
+You can remove a trusted profile from your account by using the CLI. For more information, see the [IBM Cloud CLI](https://github.com/IBM-Cloud/ibm-cloud-cli-release/releases). 
 
 1. Log in, and select the account.
 
@@ -88,3 +88,5 @@ To remove a trusted profile from your account, call the following:
 curl -X DELETE 'https://iam.cloud.ibm.com/v1/profiles/PROFILE_ID' -H 'Authorization: Bearer TOKEN'
 ```
 {: codeblock}
+
+For more information, see the [IAM Identity Services API](/apidocs/iam-identity-token-api).

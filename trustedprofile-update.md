@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-10-07"
+lastupdated: "2021-10-20"
 
 keywords: trusted profile, federated users, granting access, update trusted profile, compute resource, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
@@ -79,7 +79,7 @@ After the trusted profile is created, you can build trust with both federated us
 {: #updating-tp-cli}
 {: cli}
 
-You can update a trusted profile from your account by using the CLI.
+You can update a trusted profile from your account by using the CLI. For more information, see the [IBM Cloud CLI](https://github.com/IBM-Cloud/ibm-cloud-cli-release/releases). 
 
 1. Log in, and select the account.
 
@@ -181,6 +181,8 @@ If you'd like to remove an access policy for a trusted profile, you can use the 
 ## Updating trusted profiles by using the API
 {: #updating-tp-api}
 {: api}
+
+For more information, see the [IAM Identity Services API](/apidocs/iam-identity-token-api). 
 
 ### Updating the name or description
 {: update-tp-desc-api}
