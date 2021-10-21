@@ -397,7 +397,7 @@ The administrator of your account has customized the duration of active and inac
 ## Why can't I create a Lite account?
 {: #lite-account-create}
 {: faq}
-
-All new accounts are created as Pay-As-You-Go based on an update to our account registration process that's being released incrementally starting 21 October 2021. As part of this update, you're asked to provide credit card information for identify verification. After you register and create your new account, you can access the full {{site.data.keyword.cloud_notm}} catalog, including all Free and Lite plans. And, you get a $200 credit that you can use on products in the first 30 days. You pay only for billable services that you use, with no long-term contracts or commitments. 
+ 
+Based on an update to our account registration process that's being released incrementally starting 21 October 2021, all new accounts are created as Pay-As-You-Go. As part of this update, you're asked to provide credit card information for identify verification. After you register and create your new account, you can access the full {{site.data.keyword.cloud_notm}} catalog, including all Free and Lite plans. And, you get a $200 credit that you can use on products in the first 30 days. You pay only for billable services that you use, with no long-term contracts or commitments. 
 
 If you created a Lite account before 21 October 2021, you can continue working as you always have. However, you can go ahead and [upgrade to a Pay-As-You-Go account](/docs/account?topic=account-accountfaqs#changeacct) by adding your credit card information. This way, you can gain access to all Free service plans in the catalog.
