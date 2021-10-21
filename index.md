@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-10-18"
+lastupdated: "2021-10-21"
 
 keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription
 
@@ -15,7 +15,7 @@ subcollection: account
 # Account types
 {: #accounts}
 
-When you register with {{site.data.keyword.Bluemix}}, you are set up with a Pay-As-You-Go account. Even though you provide your credit card information for account security and identity verification purposes, you can still use {{site.data.keyword.cloud_notm}} for free by selecting services in the catalog that offer Free and Lite pricing plans. A second account type that is called a Subscription account is available. With a Subscription account, you get many of the same features of a Pay-As-You-Go account, and you get discounts for platform services and support with a more consistent billing structure by using subscriptions. 
+When you register with {{site.data.keyword.Bluemix}}, you are set up with a Pay-As-You-Go account. Even though you provide your credit card information for account security and identity verification purposes, you can still use {{site.data.keyword.cloud_notm}} for free by selecting products in the catalog that offer Free and Lite pricing plans. Another account type, called a Subscription account, is also available. With a Subscription account, you get many of the same features of a Pay-As-You-Go account, plus discounts for platform services and support with a more consistent billing structure that uses subscriptions. 
 {: shortdesc}
 
 
