@@ -48,7 +48,7 @@ If you're not a part of a company that uses a federated ID, use your IBMid to cr
 1. Enter your IBMid email address. If you don't have an existing IBMid, an ID is created based on the email that you enter.
 1. Complete the remaining fields with your information.
 
-   You are prompted for your credit card information to verify your identity and secure your account. You can [try out {{site.data.keyword.Bluemix_notm}} for free](/docs/overview?topic=overview-tutorial-try-for-free) and only pay for billable services that you choose to use, with no long-term contracts or commitments. 
+   You are prompted for your credit card information to verify your identity and secure your account. You can [try out {{site.data.keyword.Bluemix_notm}} for free](/docs/overview?topic=overview-tutorial-try-for-free) and pay only for the billable services that you choose to use, with no long-term contracts or commitments. 
    {: note}
 
 1. Click **Create account**.
