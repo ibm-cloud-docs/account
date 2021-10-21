@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-10-18"
+lastupdated: "2021-10-21"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -136,7 +136,7 @@ A Lite plan is a free quota-based service plan. You can use a service's Lite pla
 
 There's no limit to the number of apps you can build in a Pay-As-You-Go or Subscription account.
 
-In Lite accounts created before 12 August 2021, your apps have up to 256 MB of instantaneous runtime memory. You can deploy apps until you use the available Lite account allowance. If you need more memory, upgrade to a billable account to get 512 MB of free instantaneous runtime memory and pay only for what you use over that limit.
+For Lite accounts that were created before 12 August 2021, you can build and deploy apps with 256 MB of instantaneous runtime memory. To get 512 MB of free instantaneous runtime memory, upgrade to a Pay-As-You-Go or Subscription account and pay only for what you use over that limit.
 
 
 ## What happens when my Lite plan instance reaches the monthly quota?
@@ -144,7 +144,7 @@ In Lite accounts created before 12 August 2021, your apps have up to 256 MB of i
 {: faq}
 {: support}
 
-Reaching any quota limit for Lite plan instances suspends the service for that month. Quota limits are per org; not per instance. New instances that are created in the same org reflect any usage from previous instances. The quota limits reset on the first of every month.
+Reaching any quota limit for Lite plan instances suspends the service for that month. Quota limits are per org, not instance. New instances that you create in the same org reflect any usage from previous instances. The quota limits reset on the first of every month.
 
 You can check your usage by going to **Manage** > **Billing and usage** in the console, and selecting **Usage**. For more information, see [Viewing your usage](/docs/billing-usage?topic=billing-usage-viewingusage).
 
