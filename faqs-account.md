@@ -245,7 +245,7 @@ The account owner, organization manager, or a user with the correct permissions 
 {: faq}
 {: support}
 
-If you have more than one account, you can click your account name in the console menu bar to select another account that you have access to.
+If you have access to more than one account, you can click your account name in the console menu bar to switch to another account.
 
 ![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-faq.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.")
 
