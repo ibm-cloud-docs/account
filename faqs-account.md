@@ -136,7 +136,7 @@ A Lite plan is a free quota-based service plan. You can use a service's Lite pla
 
 There's no limit to the number of apps you can build in a Pay-As-You-Go or Subscription account.
 
-For Lite accounts that were created before 12 August 2021, you can build and deploy apps with 256 MB of instantaneous runtime memory. To get 512 MB of free instantaneous runtime memory, upgrade to a Pay-As-You-Go or Subscription account and pay only for what you use over that limit.
+If you created a Lite account before 12 August 2021, you can build and deploy apps with 256 MB of instantaneous runtime memory. To get 512 MB of free instantaneous runtime memory, upgrade to a Pay-As-You-Go or Subscription account and pay only for what you use over that limit.
 
 
 ## What happens when my Lite plan instance reaches the monthly quota?
