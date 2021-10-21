@@ -103,15 +103,12 @@ You can work with [{{site.data.keyword.Bluemix_notm}} Sales](https://cloud.ibm.c
 ## Lite account
 {: #liteaccount}
 
-An update for {{site.data.keyword.cloud_notm}} account registration is being released incrementally beginning on 21 October 2021. Credit card information is required when you sign up, which creates a Pay-As-You-Go account. If you created a Lite account before this date, you can continue using {{site.data.keyword.cloud_notm}} as you always have. However, you can go ahead and [upgrade to a Pay-As-You-Go account](/docs/account?topic=account-accountfaqs#changeacct) by adding your credit card information. This way, you can gain access to all Free service plans in the catalog.
-{: important}
+If you created a Lite account before 21 October 2021, your account doesn't expire and you can work in {{site.data.keyword.cloud_notm}} for free by accessing services with select Lite plans, which are displayed with a **Lite** tag ![Lite tag](../icons/Lite.svg "Lite") in the catalog. To gain access to all Free plans, you can go ahead and [upgrade to a Pay-As-You-Go account](/docs/account?topic=account-accountfaqs#changeacct) by adding your credit card information. 
 
-Your Lite account doesn't expire and your credit card isn't required. You can start building your apps and exploring services with select free Lite plans, which are displayed with a **Lite** tag ![Lite tag](../icons/Lite.svg "Lite") in the {{site.data.keyword.Bluemix_notm}} catalog. 
+Starting 21 October 2021, all new accounts are created as Pay-As-You-Go based on an update to our account registration process that's being released incrementally. As part of this update, you're asked to provide credit card information for identify verification. You have full access to the catalog, including all Free and Lite plans, and you get a $200 credit that you can apply in your first 30 days. You pay only for billable services that you use, with no long-term contracts or commitments. 
+{: note}
 
-You have access to a single resource group that's created for you with the name `Default`. All of your service's instances are automatically added to this resource group. You can update the name of this resource group at any time. See [Renaming a resource group](/docs/account?topic=account-rgs#rename_rgs) for the detailed steps.
-
-The resource group is free. When you create a connection between a service that is managed by IAM and an app, you create an alias, which is a service instance, that counts toward your quota. See [Managing connections](/docs/account?topic=account-connect_app).
-{: tip}
+Lite accounts have access to a single resource group that's created for you with the name `Default`. All of your service's instances are automatically added to this resource group. You can update the name of this resource group at any time. See [Renaming a resource group](/docs/account?topic=account-rgs#rename_rgs) for the detailed steps.
 
 ### What's available in a lite account?
 {: #lite-account-features}
@@ -121,7 +118,7 @@ Check out the following list of key features that are available in a Lite accoun
    * The account is free - no credit card required.
    * The account never expires.
    * You receive email notifications about your account status and quota limits.
-   * You can provision one instance of any service in the [{{site.data.keyword.Bluemix_notm}} catalog](/catalog/?search=label:lite%20lite){: external} that has a Lite plan.
+   * You can create one instance of any service in the [{{site.data.keyword.Bluemix_notm}} catalog](/catalog/?search=label:lite%20lite){: external} that has a Lite plan.
    * After 10 days of no development activity, your apps go to sleep. You can wake up your apps by continuing to work on them.
    * After 30 days of no development activity, your service instances with Lite plans are deleted.
 
