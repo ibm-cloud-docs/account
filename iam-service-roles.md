@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-10-21"
+lastupdated: "2021-10-22"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -925,6 +925,7 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 19. Service roles - Code Engine" caption-side="top"}
@@ -942,6 +943,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `codeengine.tenant.entities.update` | Modify existing items already contained by a project, such as applications, jobs, or job definitions.  This does not include the ability to create or delete these items. | Manager, Writer |
 | `codeengine.tenant.entities.delete` | Delete existing items from within a project | Manager, Writer |
 | `codeengine.tenant.entities.read` | List and view existing items within a project | Manager, Reader, Writer |
+| `codeengine.config.read` | Configuration Information Point API access | Service Configuration Reader |
 {: caption="Table 19. Service actions - Code Engine" caption-side="top"}
 {: #actions-table19}
 {: tab-title="Actions"}
@@ -2157,6 +2159,7 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 43. Service roles - Hyper Protect DBaaS for MongoDB" caption-side="top"}
@@ -2181,6 +2184,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `hyperp-dbaas-mongodb.clusters.tasks.read` | Get the detailed information about a task | Manager, Reader, Writer |
 | `hyperp-dbaas-mongodb.clusters.configuration.update` | Update the database configuration of your cluster | Manager |
 | `hyperp-dbaas-mongodb.clusters.configuration.read` | Show the database configuration of your cluster | Manager, Reader, Writer |
+| `hyperp-dbaas-mongodb.config.read` | Configuration Information Point API access | Service Configuration Reader |
 {: caption="Table 43. Service actions - Hyper Protect DBaaS for MongoDB" caption-side="top"}
 {: #actions-table43}
 {: tab-title="Actions"}
