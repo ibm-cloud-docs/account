@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-10-22"
+lastupdated: "2021-10-23"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -2537,6 +2537,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `cp4d.governance-artifacts.access` | Access governance artifacts | CloudPak Data Engineer, CloudPak Data Steward |
 | `cp4d.catalog.access` | Access catalogs | CloudPak Data Scientist, CloudPak Data Steward, Manager |
 | `cp4d.data-protection-rules.manage` | Manage data protection rules | CloudPak Data Engineer, CloudPak Data Scientist, CloudPak Data Steward, Manager |
+| `cp4d.glossary.manage` | Perform business glossary administrative tasks | Manager |
 {: caption="Table 51. Service actions - IBM Cloud Pak for Data" caption-side="top"}
 {: #actions-table51}
 {: tab-title="Actions"}
