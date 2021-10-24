@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-10-21"
+lastupdated: "2021-10-25"
 
 keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription
 
@@ -40,7 +40,7 @@ The following table provides a comparison of Pay-As-You-Go and Subscription acco
 {: caption="Table 1. Comparison of {{site.data.keyword.Bluemix_notm}} accounts" caption-side="top"}
 {: summary="This table has row and column headers. The row headers identify the feature. The column headers identify the account type. To understand which features apply to the account types, navigate to the row, and find the feature that you're interested in."} 
 
-Based on an update to our account registration process that's being released incrementally starting 21 October 2021, all new accounts are created as Pay-As-You-Go. As part of this update, you're asked to provide credit card information for identify verification. If you created an account before this date, you might be using a [Lite account](#liteaccount) and Lite pricing plans, which aren't affected by the recent account registraton update. You still have 186 GBH of free buildpacks and Cloud Foundry apps with up to 256 MB of free, instantaneous runtime memory per month. Also, the use of one org in one {{site.data.keyword.Bluemix_notm}} region still applies to Lite accounts.
+Based on an update to our account registration process that's being released incrementally starting 25 October 2021, all new accounts are created as Pay-As-You-Go. As part of this update, you're asked to provide credit card information for identity verification. If you created an account before this date, you might be using a [Lite account](#liteaccount) and Lite pricing plans, which aren't affected by the recent account registraton update.
 {: note}
 
 ## Pay-As-You-Go account
@@ -103,9 +103,9 @@ You can work with [{{site.data.keyword.Bluemix_notm}} Sales](https://cloud.ibm.c
 ## Lite account
 {: #liteaccount}
 
-If you created a Lite account before 21 October 2021, your account doesn't expire and you can work in {{site.data.keyword.cloud_notm}} for free by accessing services with select Lite plans, which are displayed with a **Lite** tag ![Lite tag](../icons/Lite.svg "Lite") in the catalog. To gain access to all Free plans, you can go ahead and [upgrade to a Pay-As-You-Go account](/docs/account?topic=account-accountfaqs#changeacct) by adding your credit card information. 
+If you created a Lite account before 25 October 2021, your account doesn't expire and you can work in {{site.data.keyword.cloud_notm}} for free by accessing services with select Lite plans, which are displayed with a **Lite** tag ![Lite tag](../icons/Lite.svg "Lite") in the catalog. To gain access to all Free plans, you can go ahead and [upgrade to a Pay-As-You-Go account](/docs/account?topic=account-accountfaqs#changeacct) by adding your credit card information. 
 
-Starting 21 October 2021, all new accounts are created as Pay-As-You-Go based on an update to our account registration process that's being released incrementally. As part of this update, you're asked to provide credit card information for identify verification. You have full access to the catalog, including all Free and Lite plans, and you get a $200 credit that you can apply in your first 30 days. You pay only for billable services that you use, with no long-term contracts or commitments. 
+Starting 25 October 2021, all new accounts are created as Pay-As-You-Go based on an update to our account registration process that's being released incrementally. As part of this update, you're asked to provide credit card information for identity verification. You have full access to the catalog, including all Free and Lite plans, and you get a $200 credit that you can apply in your first 30 days. You pay only for billable services that you use, with no long-term contracts or commitments. 
 {: note}
 
 Lite accounts have access to a single resource group that's created for you with the name `Default`. All of your service's instances are automatically added to this resource group. You can update the name of this resource group at any time. See [Renaming a resource group](/docs/account?topic=account-rgs#rename_rgs) for the detailed steps.
