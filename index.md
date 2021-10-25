@@ -2,96 +2,62 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-10-04"
+lastupdated: "2021-10-25"
 
-keywords: account types, Lite, free account, trial account, paid account, buy account, account difference, compare account, subscription, Pay As You Go with Committed Use, PayGo with Commit
+keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription
 
 subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:external: target="_blank" .external}
-{:row-headers: .row-headers}
+{{site.data.keyword.attribute-definition-list}}
 
 # Account types
 {: #accounts}
 
-{{site.data.keyword.Bluemix}} has three different account types: Lite, Pay-As-You-Go, and Subscription. You get a free Lite account as soon as you sign up. Pay-As-You-Go and Subscription are billable account types and each offers different features. The PayGo with Committed Use billing model is available for the Pay-As-You-Go and Subscription account types. Compare each type of account and billing model to choose the one that best suits your needs.
+When you register with {{site.data.keyword.Bluemix}}, you are set up with a Pay-As-You-Go account. Even though you provide your credit card information for account security and identity verification purposes, you can still use {{site.data.keyword.cloud_notm}} for free by selecting products in the catalog that offer Free and Lite pricing plans. Another account type, called a Subscription account, is also available. With a Subscription account, you get many of the same features of a Pay-As-You-Go account, plus discounts for platform services and support with a more consistent billing structure that uses subscriptions. 
 {: shortdesc}
+
 
 ## Comparing accounts
 {: #compare}
 
-The following table provides a comparison of Lite, Pay-As-You-Go, and Subscription accounts. For more details about each account, see the sections that follow.
+The following table provides a comparison of Pay-As-You-Go and Subscription accounts. For more details about each account, see the sections that follow.
 
-|                                         | Lite               | Pay-As-You-Go      | Subscription       | 
-|-----------------------------------------|--------------------|--------------------|--------------------|
-| **Free Cloud Foundry memory** | 256 MB [^1]            |             |              |              |
-| **[Free community buildpacks](/docs/cloud-foundry-public?topic=cloud-foundry-public-available_buildpacks)** | 186 GBH [^2]              |   186 GBH       |    186 GBH          |
-| **Access to [Lite service plans](https://{DomainName}/catalog/?search=label:lite){: external}** | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
-| **Access to all free plans**            |                    | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |  
-| **Access to the full {{site.data.keyword.Bluemix_notm}} catalog** |  | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
-| **Access to multiple Cloud Foundry regions** |               | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
-| **Guaranteed zero cost**                | ![Feature available](../icons/icon_enabled.svg) |  |         |
-| **Discounted pricing**                  |                    |                    | ![Feature available](../icons/icon_enabled.svg) |
-| **Fit for production use cases**        |                    | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg)|
-| **Available for enterprise account hierarchy**         |                    |  | ![Feature available](../icons/icon_enabled.svg) |
-| **Invoiced on monthly consumption**        |                    | ![Feature available](../icons/icon_enabled.svg) |                     | 
+|                                         | Pay-As-You-Go      | Subscription       | 
+|-----------------------------------------|--------------------|--------------------|
+| [Free community buildpacks](/docs/cloud-foundry-public?topic=cloud-foundry-public-available_buildpacks) |    186 GBH       |    186 GBH          |
+| Access to [Lite service plans](/catalog/?search=label:lite){: external} | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
+| Access to all Free plans           |   ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |  
+| Access to the full {{site.data.keyword.Bluemix_notm}} catalog | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
+| Access to multiple Cloud Foundry regions |  ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
+| Discounted pricing                  |                      | ![Feature available](../icons/icon_enabled.svg) |
+| Fit for production use cases      |     ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg)|
+| Available for enterprise account hierarchy        |        | ![Feature available](../icons/icon_enabled.svg) |
+| Invoiced on monthly consumption       |     ![Feature available](../icons/icon_enabled.svg) |                     | 
 {: row-headers}
 {: class="comparison-table"}
-
 {: caption="Table 1. Comparison of {{site.data.keyword.Bluemix_notm}} accounts" caption-side="top"}
-{: summary="This table has row and column headers. The row headers identify the feature. The column headers identify the account type. To understand which features apply to the account types, navigate to the row, and find the feature that you're interested in."}
+{: summary="This table has row and column headers. The row headers identify the feature. The column headers identify the account type. To understand which features apply to the account types, navigate to the row, and find the feature that you're interested in."} 
 
-[^1]: Not available for Lite accounts created after 12 August 2021. 
-
-[^2]: Not available for Lite accounts created after 12 August 2021.
-
-## Lite account
-{: #liteaccount}
-
-Sign up for a Lite account to start building your apps and exploring services with select free Lite plans, which are displayed with a **Lite** tag ![Lite tag](../icons/Lite.svg "Lite") in the {{site.data.keyword.Bluemix_notm}} console. Your Lite account doesn't expire and your credit card isn't required.
-
-You have access to a single resource group that's created for you and named `Default`. All of your service's instances that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) are automatically added to this resource group. You can update the name of this resource group at any time. See [Renaming a resource group](/docs/account?topic=account-rgs#rename_rgs) for the detailed steps.
-
-Each resource group is free. When you create a connection between a service that is managed by IAM and an app, you create an alias, which is a service instance, that counts toward your quota. See [Managing connections](/docs/account?topic=account-connect_app).
-{: tip}
-
-### What's available?
-{: #lite-account-features}
-
-Check out the following list of key features that are available in a Lite account:
-
-* The account is free - no credit card required.
-* The account never expires.
-* You receive email notifications about your account status and quota limits.
-* You can provision one instance of any service in the [{{site.data.keyword.Bluemix_notm}} catalog](/catalog/?search=label:lite%20lite){: external} that has a Lite plan.
-* After 10 days of no development activity, your apps go to sleep. You can wake up your apps by continuing to work on them.
-* After 30 days of no development activity, your service instances with Lite plans are deleted.
-
-Only Lite accounts created before 12 August 2021 can use Cloud Foundry apps that can access up to 256 MB of free, instantaneous runtime memory per month. You can use one org in one {{site.data.keyword.Bluemix_notm}} region.
+Based on an update to our account registration process that's being released incrementally starting 25 October 2021, all new accounts are created as Pay-As-You-Go. As part of this update, you're asked to provide credit card information for identity verification. If you created an account before this date, you might be using a [Lite account](#liteaccount) and Lite pricing plans, which aren't affected by the recent account registraton update.
 {: note}
 
 ## Pay-As-You-Go account
 {: #paygo}
 
-With a Pay-As-You-Go account, you can access the full {{site.data.keyword.Bluemix_notm}} catalog, including all free plans. You pay only for billable services that you use, with no long-term contracts or commitments. When you upgrade to a Pay-As-You-Go account, you receive a [$200 credit](/docs/account?topic=account-upgrading-account) to help get you started. You can use the $200 credit on {{site.data.keyword.Bluemix_notm}} products.
+With a Pay-As-You-Go account, you can access the full {{site.data.keyword.Bluemix_notm}} catalog, including all Free and Lite plans. You pay only for billable services that you use, with no long-term contracts or commitments. When you register with {{site.data.keyword.cloud_notm}}, you get a Pay-As-You-Go account, and you receive a [$200 credit](/docs/account?topic=account-upgrading-account) to help get you started. You can use the $200 credit on {{site.data.keyword.Bluemix_notm}} products.
 
-You can create multiple resource groups to easily manage quota and view billing usage for a set of resources. Your charges are based on your use of {{site.data.keyword.Bluemix_notm}} computing and services. If you use more than the free runtime and service allowances, you receive a monthly invoice that provides details about your resource charges.
+You can create multiple resource groups to easily manage quota and view billing usage for a set of resources. Your charges are based on your use of {{site.data.keyword.Bluemix_notm}} computing and services. If you use more than the free runtime and service allowances, you receive a monthly invoice that provides details about your resource charges. You can [set up spending notifications](/docs/billing-usage?topic=billing-usage-spending) to get notified when your account or a particular service reaches a specific spending threshold that you set.
 
-Basic support is included with your {{site.data.keyword.Bluemix_notm}} Pay-As-You-Go. It is provided for non-production environments or workloads where traditional severities are not used and specific response times are not stipulated. Also, with a Pay-As-You-Go account, you can order Advanced or Premium support plans to get extra help with your production workloads. Learn more in [Support plans](/docs/get-support?topic=get-support-support-plans).
+Basic support is included with your {{site.data.keyword.Bluemix_notm}} Pay-As-You-Go. It is provided for non-production environments or workloads where traditional severities are not used and specific response times are not stipulated. Also, with a Pay-As-You-Go account, you can order Advanced or Premium support plans to get extra help with your production workloads. Learn more in [Basic, Advanced, and Premium Support plans](/docs/get-support?topic=get-support-support-plans).
 
 A subset of Pay-As-You-Go accounts are eligible for the new Pay-As-You-Go with Committed Use model. For more information, see [Pay as you go with Committed Use billing model](/docs/account?topic=account-accounts#commitment-model).
 
 ## Subscription account
 {: #subscription-account}
 
-Subscription accounts offer many of the same benefits as Pay-As-You-Go accounts, including access to the full {{site.data.keyword.Bluemix_notm}} catalog and the ability to create multiple resource groups. In addition, Subscription accounts provide discounts for platform services and support and more consistent billing through subscriptions.
+Subscription accounts offer many of the same benefits as Pay-As-You-Go accounts, including access to the full {{site.data.keyword.Bluemix_notm}} catalog and the ability to create multiple resource groups. In addition, Subscription accounts provide discounts for platform services and support and more consistent billing through subscriptions. You can also [set up spending notifications](/docs/billing-usage?topic=billing-usage-spending) to get notified when your account or a particular service reaches a specific spending threshold that you set.
 
 When you purchase a subscription, you commit to a minimum spending amount for a certain period of time and receive a discount on the overall cost. For example, if you commit to spend $1,000 a month for 6 months, you might get a 5% discount. For the duration of the subscription, you get $6,000 of usage but pay only $5,700 for it. The larger the subscription, the better the discount. 
 
@@ -118,7 +84,7 @@ Support subscription credit is separate from any platform or service subscriptio
 ### Service bundle subscriptions
 {: #service-subscriptions}
 
-Service bundle subscriptions give you access and credit towards a set of services within a particular domain that are targeted for popular use cases. You can choose from service bundles that span AI, analytics, {{site.data.keyword.blockchainfull_notm}}, Internet of Things (IoT), and cloud-native services. If your needs cross-multiple domains, you can purchase multiple service bundle subscriptions.
+Service bundle subscriptions give you access and credit toward a set of services within a particular domain that are targeted for popular use cases. You can choose from service bundles that span AI, analytics, {{site.data.keyword.blockchainfull_notm}}, Internet of Things (IoT), and cloud-native services. If your needs cross multiple domains, you can purchase multiple service bundle subscriptions.
 
 You can add services bundles to any type of existing account, including Lite accounts. Service bundle subscriptions are subject to the [{{site.data.keyword.Bluemix_notm}} Terms of Use](/docs/overview/terms-of-use?topic=overview-terms).
 
@@ -133,3 +99,28 @@ After you purchase a service bundle subscription, you'll receive an email with a
 When your subscription is about to expire, you are notified by email 60, 30, 14, and 1 day before the expiration date of the last subscription on the account. After your subscription expires, your account is converted to a Pay-As-You-Go account, which means you pay only for billable services that you use with no contracts or commitments. In addition, the discounts that are associated with your subscription account won't apply to the Pay-As-You-Go account. Go to the [Subscriptions](/billing/subscriptions) page to check whether any of your subscriptions are approaching their expiration date.
 
 You can work with [{{site.data.keyword.Bluemix_notm}} Sales](https://cloud.ibm.com/catalog?contactmodule){: external} to renew your subscription account. 
+
+## Lite account
+{: #liteaccount}
+
+If you created a Lite account before 25 October 2021, your account doesn't expire and you can work in {{site.data.keyword.cloud_notm}} for free by accessing services with select Lite plans, which are displayed with a **Lite** tag ![Lite tag](../icons/Lite.svg "Lite") in the catalog. To gain access to all Free plans, you can go ahead and [upgrade to a Pay-As-You-Go account](/docs/account?topic=account-accountfaqs#changeacct) by adding your credit card information. 
+
+Starting 25 October 2021, all new accounts are created as Pay-As-You-Go based on an update to our account registration process that's being released incrementally. As part of this update, you're asked to provide credit card information for identity verification. You have full access to the catalog, including all Free and Lite plans, and you get a $200 credit that you can apply in your first 30 days. You pay only for billable services that you use, with no long-term contracts or commitments. 
+{: note}
+
+Lite accounts have access to a single resource group that's created for you with the name `Default`. All of your service's instances are automatically added to this resource group. You can update the name of this resource group at any time. See [Renaming a resource group](/docs/account?topic=account-rgs#rename_rgs) for the detailed steps.
+
+### What's available in a lite account?
+{: #lite-account-features}
+
+Check out the following list of key features that are available in a Lite account:
+
+   * The account is free - no credit card required.
+   * The account never expires.
+   * You receive email notifications about your account status and quota limits.
+   * You can create one instance of any service in the [{{site.data.keyword.Bluemix_notm}} catalog](/catalog/?search=label:lite%20lite){: external} that has a Lite plan.
+   * After 10 days of no development activity, your apps go to sleep. You can wake up your apps by continuing to work on them.
+   * After 30 days of no development activity, your service instances with Lite plans are deleted.
+
+   Only Lite accounts created before 12 August 2021 can use 186 GBH of free buildpacks and Cloud Foundry apps with up to 256 MB of free, instantaneous runtime memory per month. The use of one org in one {{site.data.keyword.Bluemix_notm}} region is supported.
+   {: note}
