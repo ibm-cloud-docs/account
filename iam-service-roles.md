@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-10-25"
+lastupdated: "2021-10-26"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -2199,6 +2199,7 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 44. Service roles - Hyper Protect DBaaS for PostgreSQL" caption-side="top"}
@@ -2223,6 +2224,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `hyperp-dbaas-postgresql.clusters.tasks.read` | Get the detailed information about a task | Manager, Reader, Writer |
 | `hyperp-dbaas-postgresql.clusters.configuration.update` | Update the database configuration of your cluster | Manager |
 | `hyperp-dbaas-postgresql.clusters.configuration.read` | Show the database configuration of your cluster | Manager, Reader, Writer |
+| `hyperp-dbaas-postgresql.config.read` | Configuration Information Point API access | Service Configuration Reader |
 {: caption="Table 44. Service actions - Hyper Protect DBaaS for PostgreSQL" caption-side="top"}
 {: #actions-table44}
 {: tab-title="Actions"}
