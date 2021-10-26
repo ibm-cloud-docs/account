@@ -145,6 +145,19 @@
     "what is the cost of a free account",
     "lite plan for services"
   ],
+  "lite-account-create": [
+    "Why can't I create a Lite account?",
+    "why do I have to enter a credit card to sign up",
+    "where did lite accounts go",
+    "can't register for Lite account",
+    "I have a workshop and my users don't want to enter a credit card",
+    "i cant create a lite",
+    "need a new lite account",
+    "creating lite account",
+    "is a credit card required",
+    "asked to add credit card information when registering",
+    "asked for credit card when signing up for account"
+  ],
   "howmanyapps": [
     "number of apps I can build",
     "apps can I make",
@@ -242,7 +255,6 @@
     "convert trial",
     "convert this account",
     "convert Lite account",
-    "how to convert Lite account",
     "how to change account plan to lite",
     "i'd like to change to the free plan",
     "convert trial account to Lite",
@@ -804,7 +816,6 @@
     "[409  Conflict] The account already has an instance created with the Lite plan",
     "can't create new lite service",
     "Unable to provision new Lite instance",
-    "i cant create a lite",
     "more than one lite plan instance"
   ],
   "ts_accnt_inactive": [
