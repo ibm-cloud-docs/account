@@ -69,6 +69,7 @@ toc:
               topics:
               - iam-mfatypes.md
               - iam-mfa.md
+              - iam-ver-auth.md
               - iam-totp.md
               - iam-external_mfa.md
               - iam-securityquestions.md
@@ -240,6 +241,7 @@ toc:
           - contact_info.md
           - feature_codes.md
           - shell-settings.md
+          - iam-leave-account.md
           - topicgroup:
               label: Updating account settings for compliance
               topics:
@@ -356,6 +358,7 @@ toc:
           - ts-page-load.md
           - ts-account-infra.md
           - ts-iam-join-account.md
+          - ts-iam-mfa.md
       - topicgroup:
           label: Troubleshooting account management
           topics:

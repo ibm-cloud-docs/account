@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2021
 
-lastupdated: "2021-09-10"
+lastupdated: "2021-10-29"
 
 keywords: frequently asked questions for iam, iam faq, iam questions, identity and access management questions
 
@@ -289,3 +289,17 @@ You can [check the number of policies in an account](/docs/account?topic=account
 A user who is list as `Pending` is a user who has been invited to {{site.data.keyword.cloud_notm}} but who hasn't accepted their invitation. On the Users page, the management actions for these users include resending the invitation or cancelling the invitation. 
 
 When inspecting access group memberships or access policies in your account, you might see memberships or policies that are related to pending users that were created as part of the invite. These display with an IAM ID that uses the `BSS-`. This IAM ID is a placeholder for the memberships and policies until the user accepts the invitation. And, since the user hasn't registered with {{site.data.keyword.cloud_notm}}, they can't retrieve an IAM access token to leverage the assigned access.  When the user accepts the invitation and registers with {{site.data.keyword.cloud_notm}}, the ID in these memberships and policies is replaced with their assigned IAM ID.
+
+## What are verification methods and what they are used for?
+{: #verification-methods}
+{: faq}
+
+Verification methods are used to prove your identity and access the Verification methods and authentication factors page. 
+
+The first time that you log in to your account after MFA settings are updated, you also need to verify your identity by using two different verification methods. Verification methods include email, text, or phone call, and you can use any combination of those options to verify your identity. After you verify your identity, you set up and provide details for your authentication factor on the [Verification methods and authentication factors](https://iam.cloud.ibm.com/mysecurity){: external} page.
+
+## What are authentication factors and what are they used for?
+{: #authenticaiton-factors}
+{: faq}
+
+These factors can be something that you have, like a U2F security key, or that you receive, like a time-based one time passcode (TOTP), or OTP. If an administrator enables MFA in at least one of the accounts you are a member of, you must provide two or more factors each time you log in. If you are a member in multiple accounts and at least one of the accounts uses MFA, MFA is required each time that you log in, regardless of the account that you are trying to access. For more information, see [Managing verification methods and MFA factors](/docs/account?topic=account-verification-authentication). 

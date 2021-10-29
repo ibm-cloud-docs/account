@@ -4,9 +4,9 @@ copyright:
 
   years: 2018, 2021
   
-lastupdated: "2021-09-22"
+lastupdated: "2021-10-29"
 
-keywords: MFA, multifactor authentication, IBMid MFA, two-factor authentication, account MFA, time-based one-time passcode, TOTP, FIDO U2F, U2F, universal 2nd factor authentication, security key
+keywords: MFA, multifactor authentication, IBMid MFA, two-factor authentication, account MFA, time-based one-time passcode, TOTP, FIDO U2F, U2F, universal 2nd factor authentication, security key, verification method
 
 subcollection: account
 
@@ -44,6 +44,8 @@ Review the following considerations before you enable IBMid MFA for your account
 When the MFA setting is enabled, all IBMid users in your account are prompted for IBMid MFA authentication upon login. If you have other MFA factors set up for any IBMid users in your account, they are no longer prompted for those MFA factors. For example, if you previously enabled 2FA in the customer portal for your classic infrastructure resources, the MFA account setting overrides the 2FA option. 
 {: tip}
 
+You can also enable and disable MFA in your account on the [Verification methods and authentication factors](https://iam.cloud.ibm.com/mysecurity){: external} page by clicking **Show accounts** > **Manage your own account**. 
+{: note}
 
 ## Enabling MFA 
 {: #enabling}
@@ -62,7 +64,7 @@ To enable MFA, you must be the account owner or an administrator for the billing
       * **U2F MFA**: Users authenticate by using a physical hardware-based security key that generates a six-digit numerical code. Based on the FIDO U2F standard, this factor offers the highest level of security.
 1. Click **Update**.
 
-The first time that you log in to your account after MFA settings are updated, you need to verify your identity by using two different verification methods. Methods for verification include email, text, or phone call, and you can use any combination of those options to verify your identity. After you verify your identity, you set up and provide details for your authentication factor. 
+The first time that you log in to your account after MFA settings are updated, you need to verify your identity by using two different verification methods. Methods for verification include email, text, or phone call, and you can use any combination of those options to verify your identity. After you verify your identity, you set up your authentication factors. If you need to update your verificaiton methods or authentication factors later, see [Managing verification methods and MFA factors](/docs/account?topic=account-mysecurity){: external}.
 {: note}
 
 
