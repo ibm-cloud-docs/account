@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-09-23"
+lastupdated: "2021-10-29"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users, Cloud Foundry orgs
 
@@ -74,6 +74,8 @@ The following table lists the maximum limits for IAM resources. These limits app
 | Policies per subject within an account | 500  |
 | Policies with access management tags within an account | 25 |
 | Service IDs per account                | 2000 |
+| Users per trial account                | 100  |
+| Users per billable account             | 7500 |
 {: caption="Table 1. IAM account limits" caption-side="top"}
 
 A maximum of 1,000 policies and service to service authorizations within one account is recommended to ensure optimal performance within your account. For more information about limiting the number of policies in your account, see the [Best practices for organizing resources and assigning access](/docs/account?topic=account-account_setup).
