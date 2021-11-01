@@ -19,7 +19,7 @@ content-type: troubleshoot
 {: #troubleshoot-MFA}
 {: troubleshoot}
 
-If at least one account that you are a member of enables MFA, you must use an authentication factor, in addition to your username and password, to securely log in to {{site.data.keyword.cloud}}. You might want to update or reset your authentication methods if the email address or phone number that you use to authenticate to the {{site.data.keyword.Bluemix}} console changes or becomes inaccessible. 
+If at least one account that you are a member of enables MFA, you must use an authentication factor, in addition to your username and password, to securely log in to {{site.data.keyword.cloud}}. You might want to update or reset your authentication methods if the email address or phone number that you use to authenticate to the {{site.data.keyword.cloud_notm}} console changes or becomes inaccessible. 
 {: shortdesc}
 
 I can't log in because I'm prompted to enter an authentication factor that I can't access. 
