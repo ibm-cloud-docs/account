@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-09-24"
+lastupdated: "2021-11-01"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -37,6 +37,8 @@ The process to onboard software to your account includes importing a version to 
 ## Before you begin
 {: #prereq-create}
 
+1. Verify that you're using a Pay-As-You-Go or Subscription account. See [Viewing your account type](/docs/account?topic=account-account_settings#view-acct-type) for more details.
+
 1. Review the list of software that you can onboard:
 
    * Helm charts on Kubernetes and {{site.data.keyword.redhat_notm}} {{site.data.keyword.openshiftshort}} clusters
@@ -57,16 +59,16 @@ The process to onboard software to your account includes importing a version to 
 
 For containerized apps, complete the following prerequisites:
 
-1. Create your [Kubernetes cluster](/docs/containers?topic=containers-getting-started) or [Red Hat OpenShift cluster](/docs/openshift?topic=openshift-getting-started).
-2. For deployments to {{site.data.keyword.cloud_notm}} Kubernetes Service, [set up your Helm chart](/docs/containers?topic=containers-helm). 
-3. For deployments to Red Hat OpenShift, set up your [Helm chart](/docs/openshift?topic=openshift-helm) or [Operator](/docs/openshift?topic=openshift-operators).
+   1. Create your [Kubernetes cluster](/docs/containers?topic=containers-getting-started) or [Red Hat OpenShift cluster](/docs/openshift?topic=openshift-getting-started).
+   2. For deployments to {{site.data.keyword.cloud_notm}} Kubernetes Service, [set up your Helm chart](/docs/containers?topic=containers-helm). 
+   3. For deployments to Red Hat OpenShift, set up your [Helm chart](/docs/openshift?topic=openshift-helm) or [Operator](/docs/openshift?topic=openshift-operators).
 
 For virtual server images, complete the following prerequisites:
 
-1. Review the list of [supported images](/docs/vpc?topic=vpc-about-images).
-2. Create your [Terraform template](/docs/schematics?topic=schematics-getting-started).
-3. Create an instance of [{{site.data.keyword.cloud_notm}} Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage) and add your image to a bucket.
- 
+   1. Review the list of [supported images](/docs/vpc?topic=vpc-about-images).
+   2. Create your [Terraform template](/docs/schematics?topic=schematics-getting-started).
+   3. Create an instance of [{{site.data.keyword.cloud_notm}} Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage) and add your image to a bucket.
+
 ## Creating a private catalog
 {: #create-catalog}
 {: ui}
@@ -253,7 +255,7 @@ To monitor the progress of the validation process, click **View logs**.
 1. If applicable, review the license agreements, and select **I have read and agree to the following license agreements:**. 
 1. Click **Validate**.
 
-## Publishing the software by using the console
+## Publishing the software
 {: #validating-software}
 {: ui}
 
@@ -270,10 +272,13 @@ Complete the following steps to add your software by using the CLI. You can use 
     ibmcloud catalog offering create --catalog "Name of catalog" --zipurl https://software.url.com.tgz
     ```
     {: codeblock}
+
+    If you want to import software from a private repository, you can use a personal access token by adding [--token TOKEN] to your command.
+    {: important}
     
-1. Add the **Developer tools** category. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#add-category-offering) for adding a category. 
+1. Add a category. By default, the **Developer tools** category is added to your product. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#add-category-offering) for adding a category. 
     ```bash
-    ibmcloud catalog offering add-category --catalog "Name of catalog" --offering "software-offering" --category "Developer tools"
+    ibmcloud catalog offering add-category --catalog "Name of catalog" --offering "software-offering" --category "category"
     ```
     {: codeblock}
     
@@ -300,7 +305,7 @@ Complete the following steps to add your software by using the CLI. You can use 
     {: codeblock}
 
 ## Importing software to your private catalog by using the API
-{: create-product-api}
+{: #create-product-api}
 {: api}
 
 You can programmatically add an offering to your catalog by calling the Catalog Management API as shown in the following sample request. For detailed information about the API, see [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=java#create-offering).
@@ -374,24 +379,24 @@ You can create a private catalog by using Terraform.
   
 3. Initialize the Terraform CLI.
 
-   ```bash
+   ```terraform
    terraform init
    ```
-   {: pre}
+   {: codeblock}
    
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the catalog.
 
-   ```bash
+   ```terraform
    terraform plan
    ```
-   {: pre}
+   {: codeblock}
 
 5. Create the catalog.
 
-   ```bash
+   ```terraform
    terraform apply
    ```
-   {: pre}
+   {: codeblock}
 
 ## Importing a product to your catalog by using Terraform
 {: #create-cicd-product-terraform}
@@ -421,20 +426,21 @@ You can import a product to your private catalog by using Terraform.
    ```terraform
    terraform init
    ```
-   {: pre}
+   {: codeblock}
    
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to add your product.
 
    ```terraform
    terraform plan
    ```
-   {: pre}
+   {: codeblock}
 
 5. Add your product.
 
    ```terraform
    terraform apply
    ```
+   {: codeblock}
 
 ## Importing a version of your software by using Terraform
 {: #create-cicd-version-terraform}
@@ -479,3 +485,4 @@ After adding your product, you can add a version of your software by using Terra
    terraform apply
    ```
    {: codeblock}
+   
