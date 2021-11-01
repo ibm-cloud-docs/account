@@ -43,7 +43,7 @@ The process to onboard software to your account includes importing a version to 
 
    * Helm charts on Kubernetes and {{site.data.keyword.redhat_notm}} {{site.data.keyword.openshiftshort}} clusters
    * Terraform templates
-   * OVA images deployed on VMware vCenter Server
+   * OVA images deployed on VMware Solutions Dedicated - vCenter Server
    * Virtual server images with Terraform deployed on VPC infrastructure
    * Operators with a CSV file or Operator bundles with a TGZ file from GitHub repositories that are deployed on Red Hat OpenShift
    * Operator bundles from Red Hat OpenShift registries
@@ -166,7 +166,7 @@ Complete the following steps to import software to your private catalog:
 {: #catalog-add-license}
 {: ui}
 
-Provide the URLs to the license agreements that users are required to accept when they install the product. The license agreements are in addition to the {{site.data.keyword.cloud_notm}} Services Agreement. 
+Provide the URLs to the license agreements that users are required to accept when they install the product. The license agreements are in addition to the {{site.data.keyword.cloud_notm}} Services Agreement.
 
 1. Click **Add license agreements** > **Add license**. 
 1. Enter the name and URL, and click **Update**.
