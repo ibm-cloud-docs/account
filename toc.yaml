@@ -179,6 +179,7 @@ toc:
               topics:
               - instance_migration.md
               - data-center-migration.md
+          - catalog-scans.md
           - sw-instance-details.md
       - topicgroup:
           label: Centrally managing multiple accounts with enterprises
