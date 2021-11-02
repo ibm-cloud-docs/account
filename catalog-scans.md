@@ -21,7 +21,7 @@ subcollection: account
 {:important: .important}
 {:download: .download}
 
-# Testing software for vulnerabilities
+# Scanning software for vulnerabilities
 {: #scans}
 
 Before you install instances of software from the {{site.data.keyword.cloud}} catalog, you might want to complete a vulnerability assessment on the software. By doing so, you can reduce the probability of security threats and unauthorized access of systems. 
