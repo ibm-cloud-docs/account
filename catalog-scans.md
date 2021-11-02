@@ -39,7 +39,7 @@ Before you install instances of software from the {{site.data.keyword.cloud}} ca
    ```
    {: pre}
 
-   If you're logging in with a federated ID, run the `ibmcloud login --sso` command. For more inforamation, see [Logging in with a federated ID](/docs/account?topic=account-federated_id&interface=cli).
+   If you're logging in with a federated ID, run the `ibmcloud login --sso` command. For more information, see [Logging in with a federated ID](/docs/account?topic=account-federated_id&interface=cli).
    {: note}
 
    2. Specify the region and resource group in which to create an instance of the software:
@@ -71,7 +71,7 @@ Before you install instances of software from the {{site.data.keyword.cloud}} ca
    ```
    {: pre}
 
-   If you're logging in with a federated ID, run the `ibmcloud login --sso` command. For more inforamation, see [Logging in with a federated ID](/docs/account?topic=account-federated_id&interface=cli).
+   If you're logging in with a federated ID, run the `ibmcloud login --sso` command. For more information, see [Logging in with a federated ID](/docs/account?topic=account-federated_id&interface=cli).
    {: note}
 
    2. Specify the region and resource group in which to create an instance of the software:
