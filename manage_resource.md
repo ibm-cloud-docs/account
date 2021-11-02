@@ -5,7 +5,7 @@
 copyright:
 
   years: 2019, 2021
-lastupdated: "2021-09-27"
+lastupdated: "2021-11-01"
 
 keywords: resource, account resources, create resource, access to create resources
 
@@ -65,6 +65,8 @@ After you create the resource, it is displayed in your list of resources on the 
 
 You can create a resource by using the {{site.data.keyword.Bluemix}} Command Line Interface. For more information, see [Working with resources and resource groups](/docs/cli?topic=cli-ibmcloud_commands_resource).
 
+To install software, see [Installing software by using the CLI](#install-software-cli). 
+
 1. Log in, and select the account.
 
    ```bash
@@ -73,7 +75,8 @@ You can create a resource by using the {{site.data.keyword.Bluemix}} Command Lin
    {: codeblock}
 
 2. Create an organization by running the [`ibmcloud resource service-instance-create`](https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_create) command.
-In this command `NAME` is the name of the service instance, `SERVICE_NAME or SERVICE_ID` is the name or ID of the service, `SERVICE_PLAN_NAME or SERVICE_PLAN_ID`is the name or ID of the service plan, and `LOCATION`is the target location or environment to create the service instance.
+
+In this command,`NAME` is the name of the service instance, `SERVICE_NAME or SERVICE_ID` is the name or ID of the service, `SERVICE_PLAN_NAME or SERVICE_PLAN_ID`is the name or ID of the service plan, and `LOCATION`is the target location or environment to create the service instance.
 
    ```bash
    ibmcloud resource service-instance-create NAME (SERVICE_NAME | SERVICE_ID) SERVICE_PLAN_NAME LOCATION [-d, --deployment DEPLOYMENT_NAME] [-p, --parameters @JSON_FILE | JSON_STRING ] [-g RESOURCE_GROUP] [--service-endpoints SERVICE_ENDPOINTS_TYPE] [--allow-cleanup] [--lock]
@@ -90,6 +93,37 @@ For example, the following command creates a service instance that is named `my-
    ```
    {: codeblock}
 
+## Installing software by using the CLI
+{: #install-software-cli}
+{: cli}
+
+You can install software by using the {{site.data.keyword.cloud_notm}} Command Line Interface. For more information, see [Working with resources and resource groups](/docs/cli?topic=cli-ibmcloud_commands_resource).
+
+1. Log in, and select the account.
+
+   ```bash
+   ibmcloud login
+   ```
+   {: codeblock}
+
+
+2. Find the version locator value of the software by running the following command and searching for the version that you would like to install. 
+
+   ```bash
+   ibmcloud catalog offering list [--catalog <NAME or ID>]
+   ```
+   {: codeblock}
+
+3. Create an organization by running the [`ibmcloud catalog install`](/docs/cli?topic=cli-manage-catalogs-plugin#install-software-version) command.
+
+   In this command, `CLUSTER` is the cluster that you would like to link your software to, `NAMESPACE` is your Kubernetes namespace, and `LOCATOR` is the version of the software that you found in the previous step.`VALUES` are any values that you would like to override by using a JSON file, txt file, or in line JSON. Optionally, you can include `[--workspace-name NAME]` and `[--workspace-tags TAGS]`.
+
+
+   ```bash
+   ibmcloud catalog install [--cluster CLUSTER] [--namespace NAMESPACE] [--override-values VALUES] [--version-locator LOCATOR] [--timeout TIMEOUT] [--wait WAIT]
+   ```
+   {: codeblock}
+   
 ## Creating new resource instances by using the API
 {: #create-resource-instance-api} 
 {: api}
@@ -182,6 +216,12 @@ fmt.Printf("\nCreateResourceInstance() response:\n%s\n", string(b))
 ```
 {: codeblock}
 {: go}
+
+## Installing software by using the API
+{: #install-software-api}
+{: api}
+
+You can install software only through the console or CLI. To see the steps, switch to the UI or CLI instructions.
 
 ## Creating new resource instances by using Terraform
 {: #create-resource-instance-terraform}
