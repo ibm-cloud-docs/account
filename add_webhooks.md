@@ -29,7 +29,7 @@ When you receive a notification through a webhook, a payload is being sent to yo
 
 ```json
 {
-  "accountId": "2dd2d2de4add4a098ebd0999be5cc555",
+  "account_id": "2dd2d2de4add4a098ebd0999be5cc555",
   "body": [
     {
       "language": "en",
@@ -60,7 +60,7 @@ When you receive a notification through a webhook, a payload is being sent to yo
     "eu-de"
   ],
   "severity": "Severity 1",
-  "sourceId": "INC3918600",
+  "sourceID": "INC3918600",
   "startTime": 1621949594,
   "state": "Investigating",
   "title": [
