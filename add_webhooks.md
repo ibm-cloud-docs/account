@@ -2,9 +2,9 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-09-27"
+lastupdated: "2021-11-03"
 
-keywords: IBM Cloud notifications, notification preferences, email preferences, user notifications, distribution list, webhooks, Slack webhooks
+keywords: IBM Cloud notifications, notification preferences, email preferences, user notifications, distribution list, webhooks, Slack webhooks, Microsoft Teams webhooks, test webhooks
 
 subcollection: account
 
@@ -151,6 +151,17 @@ To add webhooks to a distribution list, complete the following steps:
 
    You can select which {{site.data.keyword.cloud_notm}} account you use by clicking the account switcher in the console. Users in the selected account receive notifications about any events that affect the account. 
    {: note}
+   
+### Send test notifications to a webhook
+{: test-webhook}
+
+If you are ready with the previous steps and have a configured webhook, you can test it out easily. Send a test notification to your webhook and make sure that your webhook integration is working correctly and receives the notification. 
+
+Complete the following steps to send a test notification to a webhook:
+1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account** > **Notification distribution list**. 
+2. Select the webhook that you would like to send a test notification to, and click the **Actions** icon ![Actions](../icons/action-menu-icon.svg "Actions").
+3. Click **Test** > **Send test**.
+4. To resend the test notification, click **Resend test**.   
   
 ## Add Slack webhooks to a distribution list 
 {: add-slack-webhook}
