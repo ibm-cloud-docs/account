@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-11-02"
+lastupdated: "2021-11-03"
 
 keywords: vulnerabilities, scanning, scans, images, software, catalog
 
@@ -24,7 +24,7 @@ subcollection: account
 # Scanning software for vulnerabilities
 {: #scans}
 
-Before you install instances of software from the {{site.data.keyword.cloud}} catalog, you might want to complete a vulnerability assessment on the software. By doing so, you can reduce the probability of security threats and unauthorized access of systems. 
+Before you install instances of software from the {{site.data.keyword.cloud}} catalog, you might want to complete a vulnerability assessment on the contents of the software and its associated images. By doing so, you can reduce the probability of security threats and unauthorized access of systems. 
 {: shortdesc}
 
 1. Select the software from the catalog in the {{site.data.keyword.cloud_notm}} console. 
@@ -101,6 +101,6 @@ Before you install instances of software from the {{site.data.keyword.cloud}} ca
 
 1. Enter the source URL that you copied in the previous step in the GET request. If you're working with OVA images, you can skip this step. 
 1. Press Enter to download the source package. 
-1. Use a vulnerability scanning tool of your choice to validate the software. 
+1. Use a vulnerability scanning tool of your choice to review the contents of the software and associated images for any issues. 
 
-After you run the scan and address any issues, you can return to the console and install the software. 
+After you run the scan and address any reported issues, you can return to the console and install the software. 
