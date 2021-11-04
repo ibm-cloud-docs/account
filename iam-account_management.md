@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2021
 
-lastupdated: "2021-10-05"
+lastupdated: "2021-11-04"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, role management service, catalog management service, cloud shell service, software instance service
 
@@ -299,10 +299,10 @@ fmt.Println(string(b))
 
 The following tables outline the actions that users can take when they are assigned a specific role for each account management service. Review the information to ensure that you are assigning the correct level of access to your users. 
 
-### All account management services option
+### All account management services 
 {: #all-account-management}
 
-To quickly give users a wide-ranging set of account management access, you can assign a policy on the all account management services option. Depending on the role that is selected, all applicable actions per the selected role for each account management service can be completed by the subject of the policy.
+To quickly give users a wide-ranging set of account management access, you can assign a policy on all account management services. Depending on the role that is selected, all applicable actions per the selected role for each account management service can be completed by the subject of the policy.
 
 
 | Roles         | Actions                                                                                                      |
@@ -316,7 +316,7 @@ To quickly give users a wide-ranging set of account management access, you can a
 ### Billing
 {: #billing-acct-mgmt}
 
-You can give users access to update account settings, view subscriptions, view offers, apply subscription and feature codes, update spending limits, and track usage by using the billing service.
+You can give users access to update account settings, view subscriptions, view offers, apply subscription and feature codes, update spending limits, and track usage by using the Billing service.
 
 | Roles         | Actions                                                                                                    |
 |---------------|------------------------------------------------------------------------------------------------------------|
@@ -361,7 +361,7 @@ You can give users access to view, create, update, and remove context-based rest
 ### Enterprise
 {: #enterprise-account-management}
 
-You can use the enterprise service to assign users access to manage an enterprise by creating accounts within the enterprise, assigning accounts to account groups, naming account groups, and more. This type of policy works only if it is assigned within the enterprise account. 
+You can use the Enterprise service to assign users access to manage an enterprise by creating accounts within the enterprise, assigning accounts to account groups, naming account groups, and more. This type of policy works only if it is assigned within the enterprise account. 
 
 | Roles               | Actions                                                                                                                                    |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
@@ -375,7 +375,7 @@ You can use the enterprise service to assign users access to manage an enterpris
 ### Global catalog
 {: #global-catalog-account-management}
 
-You can give users access to view private services in the catalog or change the visibility for others users for private services by using the global catalog service.
+You can give users access to view private products in the catalog or change the visibility of private products for other users in the account.
 
 | Roles         | Actions                                                                                                |
 |---------------|--------------------------------------------------------------------------------------------------------|
@@ -385,10 +385,10 @@ You can give users access to view private services in the catalog or change the 
 | Administrator | Change object metadata or visibility for private services, and restrict visibility of a public service |
 {: caption="Table 6. Roles and example actions for the Global Catalog service" caption-side="top"}
 
-### IAM access groups service
+### IAM access groups
 {: #access-groups-account-management}
 
-You can give users access to view, create, edit, and delete access groups in the account by using the access groups account management service.
+You can give users access to view, create, edit, and delete access groups in the account by using the IAM Access Groups service.
 
 | Roles         | Actions                                                                                                                                                    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -399,10 +399,10 @@ You can give users access to view, create, edit, and delete access groups in the
 {: caption="Table 7. Roles and example actions for the IAM access groups service" caption-side="top"}
 
 
-### IAM identity service
+### IAM Identity service
 {: #identity-service-account-management}
 
-You can give users access to manage service IDs and identity providers (IdPs) by using the IAM identity service. For the IAM identity service, these actions apply to service IDs and IdPs within the account that the user didn't create. All users can create service IDs. They are the administrator for those IDs, and they can create the associated API key and access policies, but only users with the Operator and Administrator role can create IdPs. This account management service applies to the ability to view, update, delete, and assign access to service IDs in the account created by other users.
+You can give users access to manage service IDs and identity providers (IdPs) by using the IAM Identity service. These actions apply to service IDs and IdPs within the account that the user didn't create. All users can create service IDs. They are the administrator for those IDs, and they can create the associated API key and access policies, but only users with the operator and administrator role can create IdPs. This account management service applies to the ability to view, update, delete, and assign access to service IDs in the account created by other users.
 
 | Roles         | Actions                                                                                           |
 |---------------|----------------------------------------------------------------------------------------------------|
@@ -435,7 +435,7 @@ You can assign users access to view and update {{site.data.keyword.cloud-shell_n
 ### License and entitlement 
 {: #license-entitlement-management}
 
-You can use the license and entitlement service to assign users access to manage licenses and entitlements within an account. Any member of an account can view and use an account’s entitlement.  
+You can assign users access to manage licenses and entitlements within an account. Any member of an account can view and use an account’s entitlement.
  
 | Roles         | Actions                                                                                                    |
 |---------------|------------------------------------------------------------------------------------------------------------|
@@ -501,7 +501,7 @@ You can give users access to create, delete, or update a software instance. And,
 ### Support center
 {: #support-center-account-management}
 
-You can give users access to manage support cases by using the support center service.
+You can give users access to manage support cases.
 
 | Roles         | Actions                                                                       |
 |---------------|-------------------------------------------------------------------------------|
@@ -517,7 +517,7 @@ Assign users the viewer role on the user management service in addition to a sup
 ### User management
 {: #user-management-account-management}
 
-You can give users access to view users in an account, invite and remove users, and view and update user profile settings with the user management account management service. 
+You can give users access to view users in an account, invite and remove users, and view and update user profile settings. 
 
 | Roles         | Actions                                                                                                |
 |---------------|--------------------------------------------------------------------------------------------------------|
