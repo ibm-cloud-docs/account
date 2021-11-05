@@ -4,11 +4,15 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-09-23"
+lastupdated: "2021-11-05"
 
 keywords: trusted profile, compute resource, granting access, tutorial, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
 subcollection: account
+content-type: tutorial
+account-plan: lite 
+completion-time: 15m
+services: containers
 
 ---
 

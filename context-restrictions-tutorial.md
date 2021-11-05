@@ -2,11 +2,14 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-09-23"
+lastupdated: "2021-11-05"
 
 keywords: network-level access, network security strategy
 
 subcollection: account
+content-type: tutorial
+account-plan: lite 
+completion-time: 20m
 
 ---
 

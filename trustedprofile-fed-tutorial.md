@@ -4,11 +4,14 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-09-24"
+lastupdated: "2021-11-05"
 
 keywords: trusted profile, federated users, granting access, tutorial, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
 subcollection: account
+content-type: tutorial
+account-plan: lite 
+completion-time: 20m
 
 ---
 
@@ -29,6 +32,8 @@ subcollection: account
 
 # Managing access for federated users by using trusted profiles
 {: #trustedprofile-fedusers-tutorial}
+{: toc-content-type="tutorial"} 
+{: toc-completion-time="20m"}
 
 This tutorial guides you through the steps to automatically grant federated users access to your account based on external identity provider specifications. By completing this tutorial, you learn how to create a trusted profile, establish trust with federated users based on attributes that are defined in your corporate user directory, and define a policy to assign access to resources.
 {: shortdesc}
