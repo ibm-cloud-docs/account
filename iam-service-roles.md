@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-11-04"
+lastupdated: "2021-11-05"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -356,6 +356,7 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 7. Service roles - App ID" caption-side="top"}
@@ -451,6 +452,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `appid.mgmt.del.totp.channel` | appid-mgmt-del-totp-channel | Manager, Writer |
 | `appid.mgmt.get.application.roles` | Get application roles | Manager, Reader, Writer |
 | `appid.mgmt.update.application.roles` | Update application roles | Manager, Writer |
+| `appid.config.read` | Read configuration information | Service Configuration Reader |
 {: caption="Table 7. Service actions - App ID" caption-side="top"}
 {: #actions-table7}
 {: tab-title="Actions"}
