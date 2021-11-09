@@ -2,9 +2,9 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-11-03"
+lastupdated: "2021-11-09"
 
-keywords: IBM Cloud notifications, notification preferences, email preferences, user notifications, distribution list, webhooks, Slack webhooks, Microsoft Teams webhooks, test webhooks
+keywords: IBM Cloud notifications, notification preferences, email preferences, user notifications, distribution list, webhooks, Slack webhooks, Microsoft Teams webhooks, test webhooks, ServiceNow webhooks, SNOW
 
 subcollection: account
 
@@ -188,4 +188,15 @@ To add a Microsoft Teams webhook in the {{site.data.keyword.Bluemix_notm}} conso
 1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account** > **Notification distribution list**. 
 2. Click **Add**, and select **Microsoft Teams**. 
 3. Enter a name for your webhook and a Microsoft Teams webhook URL. The notifications are sent to this unique URL. 
+
+## Set up ServiceNow webhooks 
+{: set-snow-webhook}
+
+Unlike Microsoft Teams and Slack webhook integrations, setting up a ServiceNow webhook requires configuration to be done on the webhook destination side.
+
+First, you need to create a Scripted REST API on the ServiceNow website. After the Scripted REST API is configured, you also need to create a Scripted REST API Resource. The request method needs to be set to HTTP POST. Then, you need to provide a code for the resource to run.
+
+When you are ready with the process and have the URL for your Scripted REST API, you can start to use it on the **{{site.data.keyword.Bluemix_notm}} Notification distribution list** page and create webhooks. 
+
+To get to know the complete ServiceNow webhook integration process, follow the instructions on the [How to Integrate Webhooks Into ServiceNow](https://community.servicenow.com/community?id=community_blog&sys_id=886d2a29dbd0dbc01dcaf3231f9619b0){: external} blog post. This blog walks you through the steps in detail. 
 
