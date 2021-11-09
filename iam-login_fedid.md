@@ -4,7 +4,7 @@ copyright:
 
   years: 2015，2021
 
-lastupdated: "2021-09-24"
+lastupdated: "2021-11-09"
 
 keywords: federated ID, password, enterprise SSO, single sign-on ID, API key login, one-time passcode login, temporary credential, to login, logging in, trusted profiles
 
@@ -43,7 +43,7 @@ When a user logs in, the user gets an IAM token, which is a temporary credential
 
 Use the following steps to log in to the {{site.data.keyword.cloud_notm}} console: 
 
-1. Go to the [{{site.data.keyword.cloud_notm}} login page](cloud.ibm.com/login).
+1. Go to the [{{site.data.keyword.cloud_notm}} login page](/login).
 2. Enter your ID, and click **Continue**. 
 3. Enter your password.
 
@@ -57,7 +57,7 @@ Account administrators use trusted profiles to manage specific access for accoun
 
 Complete the following steps to log in by using a trusted profile:
 
-1. Go to the [{{site.data.keyword.cloud_notm}} login page](cloud.ibm.com/login).
+1. Go to the [{{site.data.keyword.cloud_notm}} login page](/login).
 2. Enter your IBMid, or if you are using single sign-on (SSO), enter your company email address, and click **Continue**. 
 3. Enter your password.
 4. Click **Select** to select the trusted profile that your account administrator created for you.
