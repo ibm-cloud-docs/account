@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-09-24"
+lastupdated: "2021-11-11"
 
 keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network, services that support service endpoints, service endpoint support, using service endpoints
 
@@ -45,7 +45,7 @@ VRF allows multiple instances of a routing table to exist in a router and to wor
 Enabling VRF permanently alters networking for your account. Be sure that you understand the impact to your account and resources. After you enable VRF, it cannot be disabled.
 {: important}
 
-To enable VRF, create a support case with your request.
+To enable VRF, create a support case with your request. This option applies only to billable accounts.
 
 1. In the console, go to **Manage > Account**, then click **Account settings**.
 1. In the Virtual routing and forwarding section, click **Create case**.
