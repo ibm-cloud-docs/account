@@ -3,9 +3,9 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-10-01"
+lastupdated: "2021-11-04"
 
-keywords: onboard software, suspend, support, software, sellers, catalog, product lifecycle, remove, delete, deprecate, catalogs, private catalogs
+keywords: onboard software, suspend, support, software, sellers, catalog, Partner Center - Sell, remove, delete, deprecate, catalogs, private catalogs
 
 subcollection: account
 
