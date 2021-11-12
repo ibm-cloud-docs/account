@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-11-11"
+lastupdated: "2021-11-12"
 
 keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network, services that support service endpoints, service endpoint support, using service endpoints
 
@@ -54,8 +54,13 @@ To enable VRF, create a support case with your request. This option applies only
    Don't change the rest of the prefilled support case information. The information is tailored to make sure that your request is handled as quickly as possible.
    {: tip}
 
-The {{site.data.keyword.Bluemix_notm}} network engineering team will reach out to the case owner to schedule a time for your account's networking to be converted to VRF. During the conversion process, connections to resources in your account might be unstable due to packet loss. The conversion takes roughly 15 - 30 minutes, depending on the complexity of your account. If your account has legacy {{site.data.keyword.BluDirectLink}} connections, it might take more time.
+The {{site.data.keyword.Bluemix_notm}} network engineering team will contact the case owner to schedule a time for your account's networking to be converted to VRF. During the conversion process, connections to resources in your account might be unstable due to packet loss. The conversion takes roughly 15 - 30 minutes, depending on the complexity of your account. If your account has legacy {{site.data.keyword.BluDirectLink}} connections, it might take more time.
 
+Changing an empty account to VRF modifies the behavior of the future resources with no interruption. A short intermittent connectivity loss can occur between your *existing* servers on the private network during the migration process, which is scheduled at a convenient time for you.
+
+The migration does not make any changes to the public network configuration of your VLANs or subnetworks. However, if you have any web or application servers that provide a public-facing service that relies on a private network connection to reach a database, application, or other type of server, be aware that the public-facing service might be disrupted.
+
+VRF is not compatible with IPSec VPN services and limits SSL VPN connections to the resources in the data center of the connection. Alternatively, you can purchase {{site.data.keyword.BluDirectLink}} offerings for management of your servers, or run your own VPN solution that can be configured with different types of VPNs.
 
 ## Enabling service endpoints
 {: #service-endpoint}
