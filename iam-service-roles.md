@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-11-12"
+lastupdated: "2021-11-13"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -938,6 +938,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloudantnosqldb.account-search-analyze.execute` | Call _search_analyze endpoint | Manager, Reader, Writer |
 | `cloudantnosqldb.couchdbextension-instance.read` | View metadata of an Extension for Apache CouchDB instance | Manager |
 | `cloudantnosqldb.couchdbextension-instance.write` | Make changes to an Extension for Apache CouchDB instance | Manager |
+| `cloudantnosqldb.legacy-root-credential.revoke` | Revoke legacy credential tied to your instance URL | Administrator, Manager |
 {: caption="Table 19. Service actions - Cloudant" caption-side="top"}
 {: #actions-table19}
 {: tab-title="Actions"}
