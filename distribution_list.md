@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-10-12"
+lastupdated: "2021-11-16"
 
 keywords: IBM Cloud notifications, notification preferences, user notifications, distribution list, notification distribution list
 
@@ -29,8 +29,7 @@ You can manage the notification distribution list by using the {{site.data.keywo
 
 For more information about webhooks and how to add them to the distribution list, see [Adding webhooks to a distribution list](/docs/account?topic=account-webhook-distribution-list).
 
-Adding users to the distribution list is different than updating notification preferences. Users added to the distribution list by the account owner receive notifications about any incident, maintenance, announcement, or security bulletin that appears on the account owner's [Notifications](/notifications){: external} page. 
-{: note}
+Email addresses that are added to the distribution list by the account owner receive notifications about any incident, maintenance, announcement, or security bulletin that appears on the account owner's [Notifications](/notifications){: external} page. 
 
 ## Adding email addresses to a distribution list in the console
 {: #add-users-console}
