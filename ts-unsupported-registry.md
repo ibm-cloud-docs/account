@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-08-31"
+lastupdated: "2021-11-15"
 
 keywords: troubleshooting software, troubleshooting resources, software, operator, private registry, Red Hat, Quay
 
@@ -39,5 +39,5 @@ When you try to pull an Operator bundle from a private registry, the following e
 This problem occurs if the Operator bundle is in a private registry that {{site.data.keyword.cloud}} cannot contact.
 {: tsCauses}
 
-Move your Operator bundle to a support registry and try to pull the bundle again. The supported registries are [Red Hat Quay.io](https://quay.io/){: external} and [Red Hat registry](registry.connect.redhat.com){: external}.
+Move your Operator bundle to a support registry and try to pull the bundle again. The supported registries are [Red Hat Quay.io](https://quay.io/){: external} and [Red Hat registry](https://registry.connect.redhat.com){: external}.
 {: tsResolve}
