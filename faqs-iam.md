@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2021
 
-lastupdated: "2021-10-29"
+lastupdated: "2021-11-17"
 
 keywords: frequently asked questions for iam, iam faq, iam questions, identity and access management questions
 
@@ -288,7 +288,7 @@ You can [check the number of policies in an account](/docs/account?topic=account
 
 A user who is list as `Pending` is a user who has been invited to {{site.data.keyword.cloud_notm}} but who hasn't accepted their invitation. On the Users page, the management actions for these users include resending the invitation or cancelling the invitation. 
 
-When inspecting access group memberships or access policies in your account, you might see memberships or policies that are related to pending users that were created as part of the invite. These display with an IAM ID that uses the `BSS-`. This IAM ID is a placeholder for the memberships and policies until the user accepts the invitation. And, since the user hasn't registered with {{site.data.keyword.cloud_notm}}, they can't retrieve an IAM access token to leverage the assigned access.  When the user accepts the invitation and registers with {{site.data.keyword.cloud_notm}}, the ID in these memberships and policies is replaced with their assigned IAM ID.
+When inspecting access group memberships or access policies in your account, you might see memberships or policies that are related to pending users that were created as part of the invite. These display with an IAM ID that uses the `BSS-`. This IAM ID is a placeholder for the memberships and policies until the user accepts the invitation. And, since the user hasn't registered with {{site.data.keyword.cloud_notm}}, they can't retrieve an IAM access token to leverage the assigned access. When the user accepts the invitation and registers with {{site.data.keyword.cloud_notm}}, the ID in these memberships and policies is replaced with their assigned IAM ID.
 
 ## What are verification methods and what they are used for?
 {: #verification-methods}
@@ -323,3 +323,10 @@ To get a new QR code for MFA setup, go to the [Verification methods and authenti
 
 You can update the email address that is used for MFA on the [Verification methods and authentication factors](https://iam.cloud.ibm.com/mysecurity){: external} page. From the Authentication factors section, click **Show authentication factors** > **Add**. Select **Email-based** and enter the email address where you want to receive OTPs as an authentication factor. Then, enter the OTP you receive to confirm your choice. Next, click **Complete**. After you add the new factor, select the old email address, and click **Remove**. 
 
+## Can trusted profiles create user API keys?
+{: #tp-apikey}
+{: faq}
+
+If you use a trusted profile, you can't create a user API key. You can still create and manage all other API keys. For example, service ID API keys.
+
+To create a user API key, your IAM ID and the IAM ID of the user that's requesting the user API key must be the same. When you apply a trusted profile, you take on the IAM ID of that profile. To create a user API key for your identity, log out of IBM Cloud and log back in without applying a trusted profile.
