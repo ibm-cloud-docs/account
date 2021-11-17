@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-11-02"
+lastupdated: "2021-11-17"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users, Cloud Foundry orgs
 
@@ -71,6 +71,7 @@ The following table lists the maximum limits for IAM resources. These limits app
 | Context-based restriction rules per account | 1000 |
 | Custom roles per account               | 40   |
 | Dynamic rules per access group         | 5    |
+| Identity providers (IdPs) per account  | 5    |
 | Network zones per account              | 500  |
 | Policies per account                   | 2010 |
 | Policies per subject within an account | 500  |
