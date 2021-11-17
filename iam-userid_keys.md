@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2021
-lastupdated: "2021-09-24"
+lastupdated: "2021-11-18"
 
 keywords: API key, user API keys, IBM Cloud API keys, manage user keys, create API key
 
@@ -33,11 +33,14 @@ subcollection: account
 A federated user or non-federated user can create an API key to use in the CLI or as part of automation to log in as your user identity. You can use the console, CLI, or API to manage your {{site.data.keyword.cloud}} API keys by listing your keys, creating keys, updating keys, or deleting keys. 
 {: shortdesc}
 
-The API key inherits all assigned access for the user identity for which it is created, and the access is not limited to just the account where the API key is created because it inherits any policies assigned to the user. So, if the user has access to resources from multiple accounts, then the API key inherits the access from all accounts. Therefore, it is possible that a user's API key can be used to generate a token and access resources that a user has access to outside of the account where the API key was created. 
+The API key inherits all assigned access for the user identity for which it is created, and the access is not limited to just the account where the API key is created because it inherits any policies that are assigned to the user. So, if the user has access to resources from multiple accounts, then the API key inherits the access from all accounts. Therefore, it is possible that a user's API key can be used to generate a token and access resources that a user has access to outside of the account where the API key was created. 
 
-Because the API key associated with your user identity has all of the access you're entitled to across any account that you are a member of, you must be cautious with how you use your API key. For example, an {{site.data.keyword.cloud_notm}} service might need to act on behalf of a user or access services that are not IAM-enabled, so the service might request a user API key. In these cases, it is recommended that you create an API key associated with a functional ID that is assigned the minimum level of access that is required to work with the service. 
+Because the API key that is associated with your user identity has all of the access you're entitled to across any account that you are a member of, you must be cautious with how you use your API key. For example, an {{site.data.keyword.cloud_notm}} service might need to act on behalf of a user or access services that are not IAM-enabled, so the service might request a user API key. In these cases, it is recommended that you create an API key that is associated with a functional ID that is assigned the minimum level of access that is required to work with the service. 
 
-A functional ID is a user ID created to represent a program, application, or service. The functional ID can be invited to an account and assigned only the access for a particular purpose, such as interacting with a specific resource or application. The functional ID should be granted only the minimum level access in a single account that is needed for the specific function which it was created.
+A functional ID is a user ID created to represent a program, application, or service. The functional ID can be invited to an account and assigned only the access for a particular purpose, such as interacting with a specific resource or application. The functional ID should be granted only the minimum level access in a single account that is needed for the specific function, which it was created.
+
+If you are applying a trusted profile, you can't create a user API key. You can still create and manage all other API keys. For example, service ID API keys. For more information, see [FAQs about IAM](/docs/account?topic=account-iamfaq#tp-apikey). 
+{: note}
 
 
 ## Managing user API keys
@@ -72,7 +75,7 @@ For security reasons, the API key is only available to be copied or downloaded a
 {: tip}
 
 
-## Creating an API key using the CLI
+## Creating an API key by using the CLI
 {: #create_user_key-cli}
 {: cli}
 
@@ -188,7 +191,7 @@ To edit an API key that is not your own, but you have access to manage, go to th
 
 To edit an API key by using the CLI, enter the following command:
 
-1. Enter `ibmcloud iam api-key-update NAME [-n NAME] [-d DESCRIPTION]` in your command prompt, specifying the old name, new name, and new description for the key. For example:
+1. Enter `ibmcloud iam api-key-update NAME [-n NAME] [-d DESCRIPTION]` in your command prompt, specifying the old name, new name, and new description for the key. For example,:
 
 ```bash
 ibmcloud iam api-key-update MyCurrentName -n MyNewName -d "the new description of my key"
@@ -485,7 +488,7 @@ To delete an API key, complete the following steps:
 To delete an API key that is not your own, but you have access to manage, go to the API keys page. Then, select the **All user {{site.data.keyword.cloud_notm}} API keys** option from the **View** menu to find the API key.
 {: tip}
 
-## Deleting an API key using the CLI
+## Deleting an API key by using the CLI
 {: #delete_user_key-cli}
 {: cli}
 
@@ -493,7 +496,7 @@ To delete an API key by using the CLI:
 
 Enter `ibmcloud iam api-key-delete NAME` in your command prompt, specifying the name of the key to delete.
 
-## Deleting an API key using the API
+## Deleting an API key by using the API
 {: #delete_user_key-api}
 {: api}
 
