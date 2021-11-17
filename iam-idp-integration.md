@@ -4,7 +4,7 @@ copyright:
 
   years: 2020, 2021
 
-lastupdated: "2021-09-22"
+lastupdated: "2021-11-17"
 
 keywords: identity provider, IdP, App ID, IAM, integration, IdP SSO, third-party authentication, dynamic rules, external identity provider
 
@@ -101,7 +101,7 @@ Your IdP reference is now available on the Identity providers list and the realm
 ## Logging in with external identity provider credentials
 {: #log-in-external-idp}
 
-After your {{site.data.keyword.appid_short}} instance is connected to your IdP, and your {{site.data.keyword.appid_short}} instance is integrated with IAM, your users can start logging in to your account. If the IdP reference is set as the default, then you can share the **Default ID URL** for your account. 
+After your {{site.data.keyword.appid_short}} instance is connected to your IdP, and your {{site.data.keyword.appid_short}} instance is integrated with IAM, your users can start logging in to your account. If the IdP reference is set as the default, then you can share the **Default IdP URL** for your account. 
 
 However, since you can have only one set as the default, but you can have up to five set up in your account, you might need to get the URL for another IdP reference: 
 
