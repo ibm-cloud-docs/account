@@ -109,4 +109,4 @@ You can update or reset your authentication methods if the email address or phon
 3. Click **Show accounts**.
 4. Take note of the Authentication setting for each account. 
    1. If the account uses MFA for **IBMid users**, work with the [IBMid help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: external} to reset your authentication factors. 
-   1. If the account uses MFA for **All users**, you can reset your authentication factors on the Verification methods and authentication factors page. 
+   1. If the account uses MFA for **All users**, you can add new authentication factors on the Verification methods and authentication factors page and remove the old ones. 
