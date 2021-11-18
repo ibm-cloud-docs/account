@@ -2,9 +2,9 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-10-29"
+lastupdated: "2021-11-17"
 
-keywords: troubleshoot MFA, multifactor authentication, verification method, authentication factor, reset MFA
+keywords: troubleshoot MFA, multifactor authentication, verification method, authentication factor
 
 subcollection: account
 
@@ -15,17 +15,19 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# How can I reset my MFA factors?
+# Why can't I log in with my MFA factors?
 {: #troubleshoot-MFA}
 {: troubleshoot}
 
-If at least one account that you are a member of enables MFA, you must use an authentication factor, in addition to your username and password, to securely log in to {{site.data.keyword.cloud}}. You might want to update or reset your authentication methods if the email address or phone number that you use to authenticate to the {{site.data.keyword.cloud_notm}} console changes or becomes inaccessible. 
+You are required to use an authentication factor, in addition to your username and password, to securely log in to {{site.data.keyword.cloud}} if at least one account that you are a member of enables MFA. You can update or reset your authentication methods if the email address or phone number that you use to authenticate changes or becomes inaccessible by going to the [Verification methods and authentication factors](https://iam.cloud.ibm.com/mysecurity){: external} page.
 {: shortdesc}
 
-I can't log in because I'm prompted to enter an authentication factor that I can't access. 
+When I try to log in with an authentication factor, the following error message is displayed:
 {: tsSymptoms}
 
-One or more of the authentication factors that you use are inaccessible. For example, if one of your authentication factors sends you an one-time passcode by way of SMS, but your phone number has changed, then you need to reset your MFA factors. 
+`Error: Incorrect validation code.`
+
+One or more of the authentication factors that you use are inaccessible. For example, if one of your authentication factors sends you a one-time passcode by way of SMS, but you changed your, then you need to reset your MFA factors. 
 {: tsCauses}
 
 1. Go to the [Verification methods and authentication factors](https://iam.cloud.ibm.com/mysecurity){: external} page. 
