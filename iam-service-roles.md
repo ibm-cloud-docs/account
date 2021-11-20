@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-11-19"
+lastupdated: "2021-11-20"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -4945,17 +4945,27 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `user-management.user.create` | Add a user to the account | Administrator, Editor |
-| `user-management.user.update` | Update a user in the account | Administrator, Editor |
-| `user-management.user.state-change` | Change the state of a user in the account | Administrator, Editor |
-| `user-management.user.delete` | Remove a user from the account | Administrator, Editor |
-| `user-management.user.retrieve` | Retrieve users from the account | Administrator, Editor, Operator, Viewer |
-| `user-management.invitation-email.create` | Resend email invitation | Administrator, Editor |
-| `user-management.preference.update` | Update user preferences | Administrator, Editor |
-| `user-management.preference.retrieve` | Retrieve user preferences | Administrator, Editor, Operator, Viewer |
-| `user-management.user-linkage.retrieve` | Retrieve user linkages | Administrator, Editor, Operator, Viewer |
-| `user-management.user-setting.update` | Update user settings | Administrator, Editor |
-| `user-management.user-setting.retrieve` | Retrieve user settings | Administrator, Editor, Operator, Viewer |
+| `user-management.email.retrieve` |  |  |
+| `user-management.user.create` |  | Administrator, Editor |
+| `user-management.user.update` |  | Administrator, Editor |
+| `user-management.user.system-update` |  |  |
+| `user-management.user.state-change` |  | Administrator, Editor |
+| `user-management.user.system-state-change` |  |  |
+| `user-management.user.register` |  |  |
+| `user-management.user.verify` |  |  |
+| `user-management.user.delete` | Remove user from account | Administrator, Editor |
+| `user-management.user.retrieve` |  | Administrator, Editor, Operator, Viewer |
+| `user-management.invitation-email.create` |  | Administrator, Editor |
+| `user-management.preference.update` |  | Administrator, Editor |
+| `user-management.preference.retrieve` |  | Administrator, Editor, Operator, Viewer |
+| `user-management.user-linkage.create` |  |  |
+| `user-management.user-linkage.update` |  |  |
+| `user-management.user-linkage.delete` |  |  |
+| `user-management.user-linkage.retrieve` |  | Administrator, Editor, Operator, Viewer |
+| `user-management.user-setting.update` |  | Administrator, Editor |
+| `user-management.user-setting.retrieve` |  | Administrator, Editor, Operator, Viewer |
+| `user-management.user.replace-iam-id` |  | Administrator, Editor |
+| `user-management.users-internal.pulsar` | Pulsar - for all events |  |
 {: caption="Table 109. Service actions - User Management" caption-side="top"}
 {: #actions-table109}
 {: tab-title="Actions"}
