@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-10-14"
+lastupdated: "2021-11-22"
 
 keywords: change owner, transfer account, transfer account ownership, switch owner, transfer owner
 
@@ -32,6 +32,8 @@ Every {{site.data.keyword.cloud_notm}} account must have a valid account owner. 
 As the account owner, you can transfer your account to a new owner by creating a support case. The new owner must be an existing user within the account. If the person that you want to own the account isn't an existing user, [invite them to the account](/docs/account?topic=account-iamuserinv) before you create the support case.
 
 To create the support case, go to **Support**, and click **Create a case** in the {{site.data.keyword.cloud_notm}} console. In the case description, include the full name and IBMid of the user that is to be the new account owner. 
+
+When you transfer your account to a new owner, be aware that you as the previous account owner will be automatically removed from that account. The new owner needs to invite the account's previous owner back to the transferred account to keep them within it. 
 
 ## Transferring an account from another owner
 {: #transfer-lost}
