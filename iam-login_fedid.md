@@ -52,10 +52,10 @@ If you are an IMBid user, complete the following steps to log in to the {{site.d
 3. Enter your password.
 4. Click **Select** to choose the trusted profile that your account administrator created for you.
 
-### Applying trusted profiles as an App ID user
+### Applying trusted profiles as an {{site.data.keyword.appid_short}} user
 {: #login-appid-users}
 
-If you are an {{site.data.keyword.app_id}} user, complete the following steps to log in to the {{site.data.keyword.cloud_notm}} console by using a trusted profile:
+If you are an {{site.data.keyword.appid_short}} user, complete the following steps to log in to the {{site.data.keyword.cloud_notm}} console by using a trusted profile:
 
 1. Go to the `<DefaultIdPURL>` for your organization.
 
