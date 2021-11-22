@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2021
-lastupdated: "2021-10-04"
+lastupdated: "2021-11-22"
 
 keywords: search, find, search for instance, search for resource
 
@@ -101,6 +101,8 @@ You can also search across all your resources by using Lucene query syntax, with
 
 
 ### Searching for classic infrastructure resources
+{: #search-classic-infra-resources}
+
 To search for classic infrastructure resources, the string must be contained within double quotation marks (") in order for an exact match for the query string to be returned. 
 
 In addition, if you enter a search term that includes a hyphen (-) and you don't surround the string with a double quotation mark ("), the search will not return an exact match. Hyphens within the string are used to break the term into multiple strings.

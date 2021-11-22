@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2021
-lastupdated: "2021-06-11"
+lastupdated: "2021-11-22"
 
 keywords: resource access, access report, export user access, who has access, download access report, audit access
 
@@ -76,8 +76,8 @@ Each type of report does include the following information:
 * The IDs of the policies that provide the access. Each ID is a link so that you can go directly to editing that specific policy in case you want to change the assigned access.
 
 ### JSON report example
+{: #json-report-ex}
 
 For a simplified preview, see the following JSON example with comments added to help you understand the structure of the report.
 
-![Report example](images/json-report.svg "Report example")
-
+![Report example](images/json-report.svg "Report example"){: caption="Figure 1. JSON report example" caption-side="bottom"}
