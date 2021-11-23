@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-10-10"
+lastupdated: "2021-11-23"
 
 keywords: create network access, network access rule, network zone
 
@@ -84,6 +84,3 @@ To create a rule, complete the following steps.
     * You can allow access from all service supported or specific service endpoint types. If the toggle is set to Yes, all service supported endpoint types are added to the rule. 
     * You can add existing network zones to your rule or create new zones to add to your rule. For more information, [Creating network zones](/docs/account?topic=network-zones-create).
 6. Click **Create**.
-
-If you create a context-based restriction for the **IAM Access Groups** or **IAM Users** services, the rule must allow the two services to still communicate. To do this, create a network zone with a service reference to the other service. For example, if you create a context-based restriction around the IAM Access Groups service, create a network zone with a service reference to the IAM Users service. Then, add this network zone to the rule you create around the IAM Access Groups service. This way, the IP addresses associated with the IAM Users service is included in the rule’s allowed context. If you don't do this, the services might produce unexpected behavior.
-{: tip}
