@@ -2,7 +2,8 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-10-25"
+lastupdated: "2021-11-23"
+
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -73,7 +74,7 @@ See [Upgrading your account](/docs/account?topic=account-upgrading-account) for 
 {: #nochange}
 {: faq}
 
-Yes, when you upgrade to a Pay-As-You-Go or Subscription account, you can continue to use the instances that you created with your Lite account.
+Yes, when you upgrade to a Pay-As-You-Go or Subscription account, you can continue to use the instances that you created with your Lite account. However, if you want to use the capabilities that are not available in a service's Lite plan, you must [upgrade the plan](/docs/billing-usage?topic=billing-usage-changing) for the specific service. After you change a service plan, it might be necessary to restage your application.
 
 ## Can I convert my account?
 {: #convertacct}
