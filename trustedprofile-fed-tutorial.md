@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-11-05"
+lastupdated: "2021-11-23"
 
 keywords: trusted profile, federated users, granting access, tutorial, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
@@ -15,20 +15,7 @@ completion-time: 20m
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:pre: .pre}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Managing access for federated users by using trusted profiles
 {: #trustedprofile-fedusers-tutorial}
@@ -74,7 +61,7 @@ First, Marla creates the trusted profile for the test environment:
 Now that Marla created a trusted profile, she wants to establish criteria for the federated users that can apply this profile. To do this, she creates conditions based on the attributes in her company's corporate user directory. Marla and half of the team members are based in the Ireland, and the other half are based in the United States. 
 
 1. For trusted entity type, select **Federated users**.
-2. For authentication method, select **Users federated by [{{site.data.keyword.cloud_notm}} App ID** from the list.
+2. For authentication method, select **Users federated by {{site.data.keyword.appid_full_notmm}}** from the list.
 3. Select the default identity provider (IdP) URL associated with the identity provider you created.
 4. Click **View your identity provider (IdP) data**. Marla uses this in the following steps to see which attributes she can leverage to create conditions.
 5. Click **Add a condition**.
