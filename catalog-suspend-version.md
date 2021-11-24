@@ -33,9 +33,6 @@ Suspending your product will not permanently delete it from the {{site.data.keyw
 
 Complete the following steps to suspend your version: 
 
-<!-- STAGING ONLY: Link to PC in step 1. Confirming that the menu entry isn't available. If not the case, need to revert to original.
-Original: In the {{site.data.keyword.cloud_notm}} console, click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Partner Center** > **Sell** > **Team**. -->
-
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Catalogs** > **Private catalogs**.
 1. Select the private catalog where your product is located.
 1. Select your product. 
