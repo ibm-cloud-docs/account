@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-11-09"
+lastupdated: "2021-11-24"
 
 keywords: IBM Cloud notifications, notification preferences, email preferences, user notifications, distribution list, webhooks, Slack webhooks, Microsoft Teams webhooks, test webhooks, ServiceNow webhooks, SNOW
 
@@ -10,14 +10,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:note: .note}
-{:screen: .screen}
-{:help: data-hd-content-type='help'} 
-{:support: data-reuse='support'} 
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 # Adding webhooks to a distribution list 
 {: #webhook-distribution-list}
@@ -85,29 +78,35 @@ The current version header is `"IBM-Notifications-API-Version": "v2.0.0"`.
 
 The following descriptions provide information about the field values that are being sent inside the payload:
 
-* `body`: This field describes the event that is happening on the platform and concerns you. This field contains a detailed, human readable description of the notification and can be several paragraphs long. It can also contain html formatting. This field is configured to support more languages, although only english is supported currently.
-* `category`: The type of the event. This can be incident, maintenance, announcement, or security bulletins. 
-* `componentNames`: If there is an impacted service, this field represents it. This also can be a global value like `Component: IBM Cloud`, not only a specific service. See the services on the [{{site.data.keyword.Bluemix_notm}} catalog page](https://cloud.ibm.com/catalog#services){: external}.
-* `regions`: This field shows you the location of the event. 
-* `severity`: This field refers to the severity of the event. This can be severity 1, 2, 3 or 4 for incidents, high, medium, or low for maintenance, and major or minor for announcements. See the following detailed severity level descriptions:
-   * **Incidents** 
-   * `Severity 1`: Business critical functionality is inoperable or critical interference failed. This severity usually applies to the production environment and the inability to access services is causing a critical impact on operations.
-   * `Severity 2`: Core functionality is impacted. Service is operational but causing major impact on usage.
-   * `Severity 3`: Partial or non-critical disruption to functionality with minimal or isolated impact.
-   * `Severity 4`: A minor issue that requires action, but does not impact functionality or usage.
-   * **Maintenance** 
-   * `High impact`: Maintenance will, or is likely to, cause service outages and disruptions.
-   * `Medium impact`: Maintenance will, or is likely to, cause measurable service degradation but not an actual outage.
-   * `Low impact`: Maintenance will cause no service disruption during or after the maintenance window.
-   * **Announcements**
-   * `Major`: Important incidents such as legal notices, service deprecation, or security patches.
-   * `Minor`: Informative announcements such as product enhancements.
+`body`: This field describes the event that is happening on the platform and concerns you. This field contains a detailed, human readable description of the notification and can be several paragraphs long. It can also contain html formatting. This field is configured to support more languages, although only english is supported currently.
 
-* `state`: This field is only for maintenance and notifications. See the following possible values:
-   * Values for Maintenance states: Planned, In progress, Completed, Canceled, Failed
-   * Values for Incident states: New issue, Investigating, Resolved 
-* `title`: The title field tells you what the notification is about. This field is configured to support more languages, although only english is supported currently.
-* `startTime`, `endTime`: You can check when the event starts, and when it ends. 
+`category`: The type of the event. This can be incident, maintenance, announcement, or security bulletins. 
+
+`componentNames`: If there is an impacted service, this field represents it. This also can be a global value like `Component: IBM Cloud`, not only a specific service. See the services on the [{{site.data.keyword.Bluemix_notm}} catalog page](/catalog#services){: external}.
+
+`regions`: This field shows you the location of the event. 
+
+`severity`: This field refers to the severity of the event. This can be severity 1, 2, 3 or 4 for incidents, high, medium, or low for maintenance, and major or minor for announcements. See the following detailed severity level descriptions:
+   * **Incidents** 
+     * `Severity 1`: Business critical functionality is inoperable or critical interference failed. This severity usually applies to the production environment and the inability to access services is causing a critical impact on operations.
+     * `Severity 2`: Core functionality is impacted. Service is operational but causing major impact on usage.
+     * `Severity 3`: Partial or non-critical disruption to functionality with minimal or isolated impact.
+     * `Severity 4`: A minor issue that requires action, but does not impact functionality or usage.
+   * **Maintenance** 
+     * `High impact`: Maintenance will, or is likely to, cause service outages and disruptions.
+     * `Medium impact`: Maintenance will, or is likely to, cause measurable service degradation but not an actual outage.
+     * `Low impact`: Maintenance will cause no service disruption during or after the maintenance window.
+   * **Announcements**
+     * `Major`: Important incidents such as legal notices, service deprecation, or security patches.
+     * `Minor`: Informative announcements such as product enhancements.
+
+`state`: This field is only for maintenance and notifications. See the following possible values:
+   * Values for *Maintenance* states: Planned, In progress, Completed, Canceled, Failed
+   * Values for *Incident* states: New issue, Investigating, Resolved 
+
+`title`: The title field tells you what the notification is about. This field is configured to support more languages, although only english is supported currently.
+
+`startTime`, `endTime`: You can check when the event starts, and when it ends. 
 
 The `startTime` and `endTime` fields show the start time and end time of the event in Unix Coordinated Universal Time timestamps. 
 {: note}
