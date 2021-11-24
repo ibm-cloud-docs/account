@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-09-28"
+lastupdated: "2021-11-22"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access 
 
@@ -74,6 +74,7 @@ If a user doesn't have a role on the resource group that contains the resources,
 {: cli}
 
 1. Log in to {{site.data.keyword.cloud}} CLI. If you have multiple accounts, you are prompted to select which account to use. If you do not specify a region with the `-r` flag, you must also select a region.
+
     ```bash
     ibmcloud login
     ```
@@ -86,13 +87,15 @@ If a user doesn't have a role on the resource group that contains the resources,
 
 2. Create an access policy and assign it to a user or a service ID.
 
- * To assign access to an individual resource in the account or access to all resources in the account, enter the [**`ibmcloud iam user-policy-create`**](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_create) command. This example gives `name@example.com` `Administrator` role for all instances of `sample-service` service:
+   * To assign access to an individual resource in the account or access to all resources in the account, enter the [**`ibmcloud iam user-policy-create`**](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_create) command. This example gives `name@example.com` `Administrator` role for all instances of `sample-service` service:
+   
     ```bash
     ibmcloud iam user-policy-create name@example.com --roles Administrator --service-name sample-service
     ```
     {: codeblock}
 
- * To assign access to a service ID or to more services in the account, enter the [**`ibmcloud iam service-policy-create`**](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_service_policy_create) command. This example grants service `test` the `Administrator` role for all account management services:
+   * To assign access to a service ID or to more services in the account, enter the [**`ibmcloud iam service-policy-create`**](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_service_policy_create) command. This example grants service `test` the `Administrator` role for all account management services:
+   
     ```bash
     ibmcloud iam service-policy-create test --roles Administrator --account-management
     ```

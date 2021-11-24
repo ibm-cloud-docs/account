@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-10-25"
+lastupdated: "2021-11-22"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources 
 
@@ -170,9 +170,9 @@ Access groups and trusted profiles can be used separately or hand-in-hand for us
 
 For example, for the `CustApp` project, you might choose to create an `IAM Admin` trusted profile with the following policies:
 
-   * `Administrator` for access groups CustApp-Dev/Test/Prod. This way, the administrator can grant and revoke access to users by adding them to and removing them from access groups. 
-   * `Administrator` for IAM Identity account management service. This way, the administrator can manage service IDs, trusted profiles, rules, and so on. 
-   * `Editor` for User Management account management service. This way, the administrator can invite users to the account, view users in account, and so on.
+* `Administrator` for access groups CustApp-Dev/Test/Prod. This way, the administrator can grant and revoke access to users by adding them to and removing them from access groups. 
+* `Administrator` for IAM Identity account management service. This way, the administrator can manage service IDs, trusted profiles, rules, and so on. 
+* `Editor` for User Management account management service. This way, the administrator can invite users to the account, view users in account, and so on.
 
 With this trusted profile, the administrator can add developers to an access group with broad access policies to complete day-to-day actions and tasks in the development and test environments. Access for operations on the production environment can be set up in a trusted profile named `Operator-Profile`. This way, the developer can change job roles by logging in and applying the `Operator-Profile` when they need to take any operation actions on the `CustApp` in production.
 
