@@ -1,9 +1,7 @@
 ---
 
 copyright:
-
-years: 2019, 2021
-
+  years: 2019, 2021
 lastupdated: "2021-10-29"
 
 keywords: leaving an account, account membership, remove myself from an account

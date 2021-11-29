@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-09-22"
+lastupdated: "2021-11-29"
 
 keywords: trusted profile, generating IAM token, compute resource, kubernetes cluster, virtual server
 
@@ -12,20 +12,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:pre: .pre}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Generating an IAM token for a compute resource
 {: #trusted-profile-iam-token}
@@ -48,7 +35,7 @@ To generate IAM tokens for your compute resources, you must be at least an admin
 
 1. To retrieve an IAM access token that represents the trusted profile, provide the CR-token for IAM. One CR-token might resolve to multiple trusted profiles, therefore you must pass either `profile_id` or `profile_name` as a parameter. If both parameters are specified, they must resolve to the same compute resource, otherwise the API call fails.
 
-   ```
+   ```curl
     $ curl -X POST \
         -H "Content-Type: application/x-www-form-urlencoded"   
         -H "Accept: application/json"                          

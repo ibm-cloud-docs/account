@@ -1,10 +1,8 @@
 ---
 
 copyright:
-
   years: 2019, 2021
-
-lastupdated: "2021-11-04"
+lastupdated: "2021-11-29"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, role management service, catalog management service, cloud shell service, software instance service
 
@@ -52,13 +50,16 @@ To grant another user full access to the account for the purposes of managing us
 {: tip}
 
 ### Assigning access by using the CLI
+{: #cli-acct-mgmt}
 {: cli}
 
 To assign access, run the `user-policy-create` command. For more information, see [ibmcloud iam user-policy-create](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_create). The following example command assigns a policy with the Administrator role for the Access groups account management service.
 
-```
+
+```curl
 ibmcloud iam user-policy-create USER_NAME --roles administrator --service-name iam-groups
 ```
+
 
 For service names to use in the CLI command for each account management service, see the following table. However, for a policy on all account management services in the CLI, use `--account-management` instead of `--service-name SERVICE_NAME`.
 {: tip}
@@ -324,7 +325,6 @@ You can give users access to update account settings, view subscriptions, view o
 | Operator      | View account feature settings   \n  \n View subscriptions in account   \n  \n View and change account name |
 | Editor        | View and update account feature settings   \n  \n View subscriptions in account   \n  \n View offers in account   \n  \n View and apply subscription and feature codes   \n  \n View and change account name   \n  \n View and update spending limits   \n  \n Set spending notifications   \n  \n View subscription balances and track usage |
 | Administrator | View and update account feature settings   \n  \n View subscriptions in account   \n  \n View offers in account   \n  \n View and apply subscription and feature codes   \n  \n View and change account name   \n  \n View and update spending limits   \n  \n Set spending notifications   \n  \n View subscription balances and track usage   \n  \n Create an enterprise |
-
 {: caption="Table 2. Roles and example actions for the Billing service" caption-side="top"}
 
 It's possible to view subscription balances and usage from the Account settings page, but you can't view the Account settings page with the Viewer or Operator roles. To access the Account settings page and your subscription information from that page, you need the Editor role or higher. 
@@ -473,6 +473,7 @@ You can give users access to create, update, and delete custom roles for service
 
 ### {{site.data.keyword.compliance_short}}
 {: #security-compliance-account-management}
+
 You can give users access to create, update, and delete resources for the {{site.data.keyword.compliance_short}} service in the account that you are assigned access. 
 | Roles         | Actions                                                                                                                                                    |
 |---------------|------------------------------------|

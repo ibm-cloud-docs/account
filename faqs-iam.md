@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2021
 
-lastupdated: "2021-11-17"
+lastupdated: "2021-11-29"
 
 keywords: frequently asked questions for iam, iam faq, iam questions, identity and access management questions
 
@@ -55,7 +55,7 @@ An IAM access policy is how users, services IDs, and access groups in an account
 
 A subject is a user, service ID, or access group. A target can be a service in the account, a resource group in the account, a specific resource instance or type, or an account management service. And, the roles that are provided as choices depend on your selected target. Some services have service-specific roles that are defined, and some use platform roles only. To understand this concept visually, check out the following graphic with an outline of the options for creating an IAM policy:
 
-![Creating IAM policies](images/IAM.svg "How IAM access policies are created by using a subject, target, and role")
+![Creating IAM policies](images/IAM.svg "How IAM access policies are created by using a subject, target, and role"){: caption="Figure 1. How IAM access policies are created by using a subject, target, and role" caption-side="bottom"}
 
 ## Are IAM and Cloud Foundry related?
 {: #iam-cloudfoundry}

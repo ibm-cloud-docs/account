@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-11-29"
 
 keywords: service ID, service ID API key, lock service ID API key, delete service ID API key
 
@@ -65,7 +65,7 @@ For security reasons, the API key is only available to be copied or downloaded a
 {: note}
 
 
-## Updating an API key for a service ID
+## Updating an API key for a service ID by using the cosole
 {: #update_service_key}
 {: ui}
 
@@ -80,7 +80,7 @@ If you didn't create the service ID, but you are the account owner or an adminis
 {: tip}
 
 
-## Updating an API key for a service ID
+## Updating an API key for a service ID by using the CLI
 {: #update_service_key-cli}
 {: cli}
 

@@ -1,10 +1,8 @@
 ---
 
 copyright:
-
   years: 2018, 2021
-
-lastupdated: "2021-09-22"
+lastupdated: "2021-11-29"
 
 keywords: MFA, multifactor authentication, external authentication, order authentication, Symantec, cancel authentication order, classic infrastructure
 
@@ -55,6 +53,7 @@ After Symantec authentication is ordered, you can turn on the option for the use
 To find out whether external authentication is enabled, go to **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Profile**, and select **Login settings**. 
 
 ### Setting up Symantec authentication
+{: #symantec-auth}
 
 If your account administrator chooses to order Symantec identity protection, you must work with your administrator to help them complete the order by providing your credential ID:
 

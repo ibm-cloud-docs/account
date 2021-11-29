@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-09-23"
+lastupdated: "2021-0911-29"
 
 keywords: maximum limits, limits, maximum policies, check for limits, check policy number, increase policy limit, total number of account policies
 
@@ -24,7 +24,7 @@ If you aren't sure how many policies are in your account, and you want to ensure
 {: shortdesc}
 
 ## Getting the total number of policies per account
-{:# total-number-policies}
+{: #total-number-policies}
 
 To get the total number of policies per account, you can use the [IAM Policy Management API](/apidocs/iam-policy-management#get-policies-by-attributes):
 

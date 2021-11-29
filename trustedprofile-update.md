@@ -4,7 +4,7 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-10-20"
+lastupdated: "2021-11-29"
 
 keywords: trusted profile, federated users, granting access, update trusted profile, compute resource, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
@@ -12,20 +12,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:pre: .pre}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Updating trusted profiles
 {: #trusted-profile-update}
@@ -185,7 +172,7 @@ If you'd like to remove an access policy for a trusted profile, you can use the 
 For more information, see the [IAM Identity Services API](/apidocs/iam-identity-token-api). 
 
 ### Updating the name or description
-{: update-tp-desc-api}
+{: #update-tp-desc-api}
 
 To update the name or description of an existing trusted profile, call the following. Enter your updated `name` and `description` attributes. 
    ```bash

@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2021
 
-lastupdated: "2021-09-24"
+lastupdated: "2021-11-29"
 
 keywords: remove user, delete user
 
@@ -41,7 +41,7 @@ Only users with the correct access can remove others. If you use a service ID to
 {: note}
 
 ## Removing a user from an account in the console
-{: remove-user-acount-ui}
+{: #remove-user-acount-ui}
 {: ui}
 
 To remove a user from an account, complete the following steps:
@@ -57,7 +57,7 @@ If you get an error message that states a classic infrastructure user can't be r
 As an alternative to removing a user from your account, you can move the user to a suspended state. The suspended state is used as a temporary way of restricting access to account resources. The user can log in to the console and view the account in their account list, but can no longer access resources in the account. All information and access policies that are associated with the account are saved. For more information, see [Updating a user's status](/docs/account?topic=account-status).
 
 ## Removing a user from an account by using the CLI
-{: remove-user-acount-cli}
+{: #remove-user-acount-cli}
 {: cli}
 
 To remove a user from an account, run the following command:
@@ -70,7 +70,7 @@ ibmcloud account user-remove USER_ID [-c ACCOUNT_ID] [-f, --force]
 For command options, see [Managing accounts, users, and Cloud Foundry orgs](https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_user_remove) CLI commands. 
 
 ## Removing a user from an account by using the API
-{: remove-user-acount-api}
+{: #remove-user-acount-api}
 {: api}
 
 To remove a user from an account, call the [User Management API](https://cloud.ibm.com/apidocs/user-management?code=java#remove-user) as shown in the following sample request. Replace variables with the user's IAM ID. You must use a user token for authorization. Service IDs can't remove users from an account.

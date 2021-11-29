@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2021
-lastupdated: "2021-11-18"
+lastupdated: "2021-11-29"
 
 keywords: API key, user API keys, IBM Cloud API keys, manage user keys, create API key
 
@@ -355,7 +355,7 @@ ibmcloud iam api-key-unlock test-api-key
 For platform API keys that represent your user identity you can prevent the API key from being deleted by locking it. 
 
 ### Locking an API key
-{: lock-keyapi}
+{: #lock-keyapi}
 {: api}
 
 To lock an API key by using the API, call the [IAM Identity Service API](https://cloud.ibm.com/apidocs/iam-identity-token-api?code=go#lock-api-key){: external} as shown in the following example: 
