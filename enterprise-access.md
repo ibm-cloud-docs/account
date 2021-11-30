@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2021
 
-lastupdated: "2021-09-22"
+lastupdated: "2021-11-30"
 
 keywords: enterprise access, user access, roles, permissions, IAM, child account, invite users
 
@@ -12,11 +12,8 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # User management for enterprises
 {: #enterprise-access-management}

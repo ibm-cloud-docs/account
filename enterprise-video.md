@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-11-30"
 
 keywords: enterprise, enterprise account, video, what is an enterprise, introduction, intro
 
@@ -10,12 +10,8 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:important: .important}
-{:tip: .tip}
-{:note: .note}
-{:video: .video}
+{{site.data.keyword.attribute-definition-list}}
+
 
 
 # Video - Introducing {{site.data.keyword.Bluemix_notm}} enterprises

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-09-28"
+lastupdated: "2021-11-30"
 
 keywords: enterprise, enterprise settings, manage enterprise, view enterprise, rename enterprise
 
@@ -10,14 +10,8 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:important: .important}
-{:tip: .tip}
-{:note: .note}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Managing your enterprise
 {: #enterprise-settings}

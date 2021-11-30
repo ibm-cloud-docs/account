@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-11-30"
 
 keywords: enterprise, enterprise resources, enterprise account, best practices, setting up an enterprise
 
@@ -10,12 +10,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
+{{site.data.keyword.attribute-definition-list}}
 
 
 # Best practices for setting up an enterprise

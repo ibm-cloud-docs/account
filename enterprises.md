@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2021-11-30"
 
 keywords: enterprise, enterprise account, multiple accounts, organization, hierarchy
 
@@ -10,12 +10,8 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:important: .important}
-{:tip: .tip}
-{:note: .note}
-{:term: .term}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # What is an enterprise?
 {: #what-is-enterprise}

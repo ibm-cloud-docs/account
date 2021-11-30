@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-02-25"
+lastupdated: "2021-11-30"
 
 keywords: troubleshoot enterprise, enterprise problem,apply subscription, enterprise subscription
 
@@ -11,15 +11,8 @@ subcollection: account
 content-type: troubleshoot
 ---
 
-{:tsSymptoms: .tsSymptoms}
-{:tsCauses: .tsCauses}
-{:tsResolve: .tsResolve}
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:troubleshoot: data-hd-content-type='troubleshoot'}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Why can't I apply a subscription code to my account?  
 {: #troubleshoot-promo-enterprise}

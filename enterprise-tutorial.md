@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2021
   
-lastupdated: "2021-09-24"
+lastupdated: "2021-11-30"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, enterprise users, enterprise access, enterprise tutorial
 
@@ -14,13 +14,8 @@ completion-time: 10m
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:important: .important}
-{:tip: .tip}
-{:note: .note}
-{:tutorial: .tutorial}
-{:step: data-tutorial-type='step'}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Setting up an enterprise
 {: #enterprise-tutorial}
