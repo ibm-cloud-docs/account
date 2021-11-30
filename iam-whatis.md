@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-09-28"
+lastupdated: "2021-11-29"
 
 keywords: what is IAM, IAM features, IAM API, how IAM works
 
@@ -33,7 +33,7 @@ IAM enables you to securely authenticate users for platform services and control
 
 You can also use [trusted profiles](/docs/account?topic=account-create-trusted-profile) to group and grant access to users, service, and app identities. By specifying conditions based on SAML attributes for users whose identity is federated from your external identity provider (IdP), users can be granted access to resources without having to be invited to the account if they meet those conditions. For service and app identities, you can define fine-grained authorization for all applications that are running in a compute resource without creating service IDs or manage the API key lifecycle for applications.
 
-![IAM access control in an account by using trusted profiles](images/IAM-trusted-profiles-diagram.svg "How IAM access works in an account by using trusted profiles"){: caption="Figure 2. How IAM access works in an account by using trusted profiles" caption-side="bottom"}
+![IAM access control in an account by using trusted profiles](images/IAM-trusted-profiles-diagram-2.svg "How IAM access works in an account by using trusted profiles"){: caption="Figure 2. How IAM access works in an account by using trusted profiles" caption-side="bottom"}
 
 For services that don't support the use of {{site.data.keyword.cloud_notm}} IAM policies for managing access, you can use [Cloud Foundry access](/docs/account?topic=account-cfaccess) or [classic infrastructure permissions](/docs/account?topic=account-infrapermission).
 {: note}
