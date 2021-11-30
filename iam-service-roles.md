@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-11-29"
+lastupdated: "2021-11-30"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -33,8 +33,6 @@ For more information about assigning access for each service, check out the docu
 
 <!-- Everything is deleted after this line. -->
 ## Activity Tracker event routing
-{: #at-event-route-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `atracker` for the service name.
 
 | Role | Description |
@@ -85,8 +83,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Analytics Engine
-{: #analytics-engine-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `ibmanalyticsengine` for the service name.
 
 | Role | Description |
@@ -152,8 +148,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Annotator for Clinical Data
-{: #annotator-clinical-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `wh-acd` for the service name.
 
 | Role | Description |
@@ -201,8 +195,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## AnonTech ViziVault Platform
-{: #anontech-vizivault-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `3p-anontech-xaas-vizivault` for the service name.
 
 | Role | Description |
@@ -241,8 +233,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## API Connect
-{: #api-connect-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `apiconnect` for the service name.
 
 | Role | Description |
@@ -288,8 +278,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## API Gateway
-{: #api-gateway-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `api-gateway` for the service name.
 
 | Role | Description |
@@ -334,8 +322,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## App Configuration
-{: #app-config-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `apprapp` for the service name.
 
 | Role | Description |
@@ -402,8 +388,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## App ID
-{: #app-id-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `appid` for the service name.
 
 | Role | Description |
@@ -515,8 +499,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Auto Scale for VPC
-{: #autoscale-vpc-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.instance-group` for the service name.
 
 | Role | Description |
@@ -560,8 +542,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Block Storage for VPC
-{: #blockstorage-vpc-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.volume` for the service name.
 
 | Role | Description |
@@ -607,8 +587,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Block Storage Snapshots for VPC
-{: #block-snap-vpc-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.snapshot` for the service name.
 
 | Role | Description |
@@ -657,8 +635,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Blockchain Platform
-{: #blockchain-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `blockchain` for the service name.
 
 | Role | Description |
@@ -699,8 +675,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Catalog Management
-{: #catalog-management-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `globalcatalog-collection` for the service name.
 
 | Role | Description |
@@ -746,8 +720,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Certificate Manager
-{: #certificate-manager-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `cloudcerts` for the service name.
 
 | Role | Description |
@@ -788,8 +760,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Client VPN for VPC
-{: #vpn-vpc-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.vpn-server` for the service name.
 
 | Role | Description |
@@ -841,22 +811,14 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Cloud for Education
-{: #cloud-edu-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `education` for the service name.
 
 No supported roles.
-
 ## Cloud Foundry Enterprise Environment
-{: #cf-enterprise-env}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `cfaas` for the service name.
 
 No supported roles.
-
 ## Cloud Migration
-{: #cf-migration-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `migration-offering4` for the service name.
 
 | Role | Description |
@@ -883,8 +845,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Cloud Native Storage and Data Service
-{: #cloud-native-store-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `robin-storage` for the service name.
 
 | Role | Description |
@@ -923,8 +883,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Cloudant
-{: #cloudant-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `cloudantnosqldb` for the service name.
 
 | Role | Description |
@@ -1027,8 +985,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Code Engine
-{: #code-engine-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `codeengine` for the service name.
 
 | Role | Description |
@@ -1075,8 +1031,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Compare and Comply
-{: #compare-comply-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `compare-comply` for the service name.
 
 | Role | Description |
@@ -1120,8 +1074,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Consult with IBM Garage
-{: #consult-ibm-garage-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `consult-with-icg-wes` for the service name.
 
 | Role | Description |
@@ -1162,8 +1114,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Container Registry
-{: #container-reg-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `container-registry` for the service name.
 
 | Role | Description |
@@ -1230,8 +1180,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Context-Based Restrictions
-{: #cbr-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `context-based-restrictions` for the service name.
 
 | Role | Description |
@@ -1263,8 +1211,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Continuous Delivery
-{: #continuous-delivery-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `continuous-delivery` for the service name.
 
 | Role | Description |
@@ -1306,8 +1252,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Data Virtualization
-{: #data-vis-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `data-virtualization` for the service name.
 
 | Role | Description |
@@ -1395,8 +1339,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## DataStage
-{: #datastage-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `datastage` for the service name.
 
 | Role | Description |
@@ -1434,8 +1376,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Db2
-{: #db2-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `dashdb-for-transactions` for the service name.
 
 | Role | Description |
@@ -1581,8 +1521,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Db2 Warehouse
-{: #db2-warehouse-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `dashdb` for the service name.
 
 | Role | Description |
@@ -1608,8 +1546,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Dedicated Host for VPC
-{: #dedicated-host-vpc-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.dedicated-host` for the service name.
 
 | Role | Description |
@@ -1652,8 +1588,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Direct Link Connect
-{: #direct-link-connect-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `directlink.connect` for the service name.
 
 | Role | Description |
@@ -1682,8 +1616,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Direct Link Dedicated (2.0)
-{: #direct-link-2-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `directlink.dedicated` for the service name.
 
 | Role | Description |
@@ -1712,8 +1644,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Dizzion DaaS
-{: #dizzion-daas-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `dizziondaas` for the service name.
 
 | Role | Description |
@@ -1752,8 +1682,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## DNS Services
-{: #dns-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `dns-svcs` for the service name.
 
 | Role | Description |
@@ -1805,8 +1733,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Enterprise
-{: #enterprise-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `enterprise` for the service name.
 
 | Role | Description |
@@ -1877,8 +1803,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Event Notifications
-{: #event-noti-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `event-notifications` for the service name.
 
 | Role | Description |
@@ -1961,8 +1885,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Event Streams
-{: #event-streams-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `messagehub` for the service name.
 
 | Role | Description |
@@ -2001,8 +1923,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Floating IP for VPC
-{: #floating-ip-vpc-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.floating-ip` for the service name.
 
 | Role | Description |
@@ -2035,8 +1955,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Flow Logs for VPC
-{: #flow-logs-vpc-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.flow-log-collector` for the service name.
 
 | Role | Description |
@@ -2069,8 +1987,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Functions
-{: #fucntions-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `functions` for the service name.
 
 | Role | Description |
@@ -2104,8 +2020,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Global Resource Catalog
-{: #global-resource-cat-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `globalcatalog` for the service name.
 
 | Role | Description |
@@ -2135,8 +2049,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Globalization Pipeline
-{: #glob-pipeline-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `g11n-pipeline` for the service name.
 
 | Role | Description |
@@ -2265,8 +2177,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Hyper Protect Crypto Services
-{: #hyper-crypto-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `hs-crypto` for the service name.
 
 | Role | Description |
@@ -2405,8 +2315,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Hyper Protect DBaaS for MongoDB
-{: #hyper-dbaas-mongodb-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `hyperp-dbaas-mongodb` for the service name.
 
 | Role | Description |
@@ -2447,8 +2355,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Hyper Protect DBaaS for PostgreSQL
-{: #hyper-dbaas-postgresql-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `hyperp-dbaas-postgresql` for the service name.
 
 | Role | Description |
@@ -2489,8 +2395,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Hyper Protect Virtual Server
-{: #hyper-virtual-server-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `hpvs` for the service name.
 
 | Role | Description |
@@ -2530,8 +2434,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## IAM Access Groups Service
-{: #iam-ag-service-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `iam-groups` for the service name.
 
 | Role | Description |
@@ -2585,8 +2487,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## IAM Identity Service
-{: #iam-id-service-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `iam-identity` for the service name.
 
 | Role | Description |
@@ -2655,8 +2555,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## IBM Cloud Activity Tracker
-{: #ibm-at-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `logdnaat` for the service name.
 
 | Role | Description |
@@ -2697,8 +2595,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## IBM Cloud Data Shield
-{: #ibm-data-shield-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `data-shield` for the service name.
 
 | Role | Description |
@@ -2725,8 +2621,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## IBM Cloud Monitoring
-{: #ibm-monitoring-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `sysdig-monitor` for the service name.
 
 | Role | Description |
@@ -2766,8 +2660,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## IBM Cloud Pak for Data
-{: #ibm-cloudpak-data-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `cp4d` for the service name.
 
 | Role | Description |
@@ -2818,8 +2710,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## IBM Cloud Shell
-{: #ibm-cloud-shell-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `cloudshell` for the service name.
 
 | Role | Description |
@@ -2862,8 +2752,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## IBM Cognos Dashboard Embedded
-{: #ibm-congos-dash-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `dynamic-dashboard-embedded` for the service name.
 
 | Role | Description |
@@ -2890,8 +2778,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## IBM Log Analysis
-{: #ibm-log-analysis-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `logdna` for the service name.
 
 | Role | Description |
@@ -2932,8 +2818,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## IBM Match 360 with Watson
-{: #ibm-match360-watson-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `mdm-oc` for the service name.
 
 | Role | Description |
@@ -3012,8 +2896,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Identity and Access Management
-{: #identity-access-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `iam-svcs` for the service name.
 
 | Role | Description |
@@ -3052,8 +2934,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Image Service for VPC
-{: #image-vpc-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.image` for the service name.
 
 | Role | Description |
@@ -3087,8 +2967,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Internet of Things Platform
-{: #iot-platform-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `iotf-service` for the service name.
 
 | Role | Description |
@@ -3115,8 +2993,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Internet Services
-{: #internet-services-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `internet-svcs` for the service name.
 
 | Role | Description |
@@ -3155,8 +3031,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Key Protect
-{: #key-protect-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `kms` for the service name.
 
 | Role | Description |
@@ -3229,8 +3103,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Knowledge Studio
-{: #knowledge-studio-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `knowledge-studio` for the service name.
 
 | Role | Description |
@@ -3270,8 +3142,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Kubernetes Service
-{: #kubernetes-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `containers-kubernetes` for the service name.
 
 | Role | Description |
@@ -3318,8 +3188,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Language Translator
-{: #lang-translator-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `language-translator` for the service name.
 
 | Role | Description |
@@ -3348,8 +3216,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## License and Entitlement
-{: #license-entitlement-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `entitlement` for the service name.
 
 | Role | Description |
@@ -3376,8 +3242,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Load Balancer for VPC
-{: #load-balancer-vpc-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.load-balancer` for the service name.
 
 | Role | Description |
@@ -3417,8 +3281,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Machine Learning
-{: #machine-learning-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `pm-20` for the service name.
 
 | Role | Description |
@@ -3457,8 +3319,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Mass Data Migration
-{: #mass-data-mig-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `mass-data-migration` for the service name.
 
 | Role | Description |
@@ -3498,15 +3358,10 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Mobile Foundation
-{: #mobile-foundation-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `mobile-foundation` for the service name.
 
 No supported roles.
-
 ## Monitoring
-{: #monitoring-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `monitoring` for the service name.
 
 | Role | Description |
@@ -3544,8 +3399,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## MQ
-{: #mq-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `mqcloud` for the service name.
 
 | Role | Description |
@@ -3584,8 +3437,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Natural Language Classifier
-{: #natural-lang-class-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `natural-language-classifier` for the service name.
 
 | Role | Description |
@@ -3627,8 +3478,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Natural Language Understanding
-{: #natural-lang-understand-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `natural-language-understanding` for the service name.
 
 | Role | Description |
@@ -3672,8 +3521,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Netezza Performance Server
-{: #netezza-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `data-warehouse` for the service name.
 
 | Role | Description |
@@ -3716,8 +3563,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Network ACL
-{: #network-acl-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.network-acl` for the service name.
 
 | Role | Description |
@@ -3750,8 +3595,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## NeuVector Container Security Platform
-{: #neuvector-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `neuvector-container-security` for the service name.
 
 | Role | Description |
@@ -3790,8 +3633,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Partner Center
-{: #partner-center-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `partner-portal` for the service name.
 
 | Role | Description |
@@ -3819,8 +3660,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Partner Center - Sell
-{: #partner-center-sell-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `product-lifecycle` for the service name.
 
 | Role | Description |
@@ -3864,8 +3703,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Personality Insights
-{: #personality-insights-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `personality-insights` for the service name.
 
 | Role | Description |
@@ -3907,8 +3744,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Placement Groups for VPC
-{: #placement-groups-vpc-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.placement-group` for the service name.
 
 | Role | Description |
@@ -3942,8 +3777,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Portworx Enterprise
-{: #portworx-enterprise-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `portworx` for the service name.
 
 | Role | Description |
@@ -3970,8 +3803,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Power Systems Virtual Server
-{: #power-systems-virtual-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `power-iaas` for the service name.
 
 | Role | Description |
@@ -3999,8 +3830,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## PowerAI
-{: #powerai-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `power-ai` for the service name.
 
 | Role | Description |
@@ -4027,8 +3856,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Public Gateway
-{: #public-gateway-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.public-gateway` for the service name.
 
 | Role | Description |
@@ -4061,8 +3888,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Push Notifications
-{: #push-noti-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `imfpush` for the service name.
 
 | Role | Description |
@@ -4132,8 +3957,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## PX-Backup for Kubernetes
-{: #px-backup-kube-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `px-backup` for the service name.
 
 | Role | Description |
@@ -4172,8 +3995,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Raxak Protect
-{: #raxak-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `raxak-protect` for the service name.
 
 | Role | Description |
@@ -4200,8 +4021,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Role management
-{: #role-mng-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `iam-access-management` for the service name.
 
 | Role | Description |
@@ -4231,8 +4050,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Satellite
-{: #satellite-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `satellite` for the service name.
 
 | Role | Description |
@@ -4326,8 +4143,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Satellite Infrastructure Service
-{: #satellite-infra-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `satellite-iaas` for the service name.
 
 | Role | Description |
@@ -4385,8 +4200,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Schematics
-{: #schematics-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `schematics` for the service name.
 
 | Role | Description |
@@ -4446,8 +4259,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Secrets Manager
-{: #secrets-manager-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `secrets-manager` for the service name.
 
 | Role | Description |
@@ -4508,8 +4319,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Security Advisor
-{: #security-advisor-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `security-advisor` for the service name.
 
 | Role | Description |
@@ -4592,8 +4401,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Security and Compliance Center
-{: #scc-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `compliance` for the service name.
 
 | Role | Description |
@@ -4708,8 +4515,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Security Group for VPC
-{: #security-group-vpc-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.security-group` for the service name.
 
 | Role | Description |
@@ -4741,8 +4546,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Skytap On IBM Cloud
-{: #skytap-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `skytap` for the service name.
 
 | Role | Description |
@@ -4769,8 +4572,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Software Instance
-{: #software-instance-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `globalcatalog-instance` for the service name.
 
 | Role | Description |
@@ -4798,8 +4599,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Speech to Text
-{: #speech-to-text-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `speech-to-text` for the service name.
 
 | Role | Description |
@@ -4844,8 +4643,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## SQL Query
-{: #sql-query-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `sql-query` for the service name.
 
 | Role | Description |
@@ -4876,8 +4673,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## SSH Key for VPC
-{: #ssh-key-vpc-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.key` for the service name.
 
 | Role | Description |
@@ -4918,8 +4713,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Streaming Analytics
-{: #streaming-analytic-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `streaming-analytics` for the service name.
 
 | Role | Description |
@@ -4959,8 +4752,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Subnet
-{: #subnet-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.subnet` for the service name.
 
 | Role | Description |
@@ -4993,8 +4784,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Support Center
-{: #support-center-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `support` for the service name.
 
 | Role | Description |
@@ -5024,8 +4813,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Text to Speech
-{: #text-to-speech-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `text-to-speech` for the service name.
 
 | Role | Description |
@@ -5070,8 +4857,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Tone Analyzer
-{: #tone-analyzer-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `tone-analyzer` for the service name.
 
 | Role | Description |
@@ -5113,8 +4898,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Toolchain
-{: #toolchain-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `toolchain` for the service name.
 
 | Role | Description |
@@ -5159,8 +4942,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Transit Gateway
-{: #transit-gateway-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `transit.gateway` for the service name.
 
 | Role | Description |
@@ -5189,8 +4970,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## User Management
-{: #user-management-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `user-management` for the service name.
 
 | Role | Description |
@@ -5238,8 +5017,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Virtual Private Cloud
-{: #virtual-private-cloud-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.vpc` for the service name.
 
 | Role | Description |
@@ -5272,8 +5049,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Virtual Private Endpoint for VPC
-{: #virtual-private-endpoint-vpc-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.endpoint-gateway` for the service name.
 
 | Role | Description |
@@ -5306,8 +5081,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Virtual Server for VPC
-{: #virtual-server-vpc-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.instance` for the service name.
 
 | Role | Description |
@@ -5358,8 +5131,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Visual Recognition
-{: #visual-recognition-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `watson-vision-combined` for the service name.
 
 | Role | Description |
@@ -5388,8 +5159,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## VMware Solutions
-{: #vmware-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `vmware-solutions` for the service name.
 
 | Role | Description |
@@ -5421,8 +5190,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Voice Agent with Watson
-{: #voice-agent-watson-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `voiceagent` for the service name.
 
 | Role | Description |
@@ -5468,8 +5235,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## VPC+ Cloud Migration
-{: #vpcplus-cloud-mig-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `migrationtool-from-wanclds` for the service name.
 
 | Role | Description |
@@ -5508,8 +5273,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## VPN for VPC
-{: #vpn-vpc-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.vpn` for the service name.
 
 | Role | Description |
@@ -5542,8 +5305,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Watson Assistant
-{: #watson-assistant-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `conversation` for the service name.
 
 | Role | Description |
@@ -5593,8 +5354,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Watson Discovery
-{: #watson-discovery-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `discovery` for the service name.
 
 | Role | Description |
@@ -5625,8 +5384,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Watson Knowledge Catalog
-{: #watson-know-cat-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `datacatalog` for the service name.
 
 | Role | Description |
@@ -5664,8 +5421,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Watson OpenScale
-{: #watson-openscale-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `aiopenscale` for the service name.
 
 | Role | Description |
@@ -5693,15 +5448,10 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
 ## Watson Studio
-{: #watson-studio-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `data-science-experience` for the service name.
 
 No supported roles.
-
 ## WebSphere Application Server
-{: #websphere-app-roles}
-
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `websphereappsvr` for the service name.
 
 | Role | Description |
