@@ -64,7 +64,7 @@ To enable MFA, you must be the account owner or an administrator for the billing
       * **U2F MFA**: Users authenticate by using a physical hardware-based security key that generates a six-digit numerical code. Based on the FIDO U2F standard, this factor offers the highest level of security.
 1. Click **Update**.
 
-The first time that you log in to your account after MFA settings are updated, you need to verify your identity by using two different verification methods. Methods for verification include email, text, or phone call, and you can use any combination of those options to verify your identity. After you verify your identity, you set up your authentication factors. If you need to update your verificaiton methods or authentication factors later, see [Managing verification methods and MFA factors](/docs/account?topic=account-mysecurity){: external}.
+The first time that you log in to your account after MFA settings are updated, you need to verify your identity by using two different verification methods. Methods for verification include email, text, or phone call, and you can use any combination of those options to verify your identity. After you verify your identity, you set up your authentication factors. If you need to update your verificaiton methods or authentication factors later, see [Managing verification methods and MFA factors](/docs/account?topic=account-verification-authentication).
 {: note}
 
 
