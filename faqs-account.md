@@ -188,7 +188,7 @@ If you don't remember your password for your IBMid and can't log in to {{site.da
 {: #remove-pi}
 {: faq}
 
-To understand how {{site.data.keyword.IBM_notm}} handles your personal information, see the [{{site.data.keyword.IBM_notm}} Privacy Statement](https://www.ibm.com/privacy/){: external}. In the Your Rights section, review the information about what you can request to remove. Click the link in the section to submit a request to remove your personal information.
+To understand how {{site.data.keyword.IBM_notm}} handles your personal information, see the [{{site.data.keyword.IBM_notm}} Privacy Statement](https://www.ibm.com/privacy){: external}. In the Your Rights section, review the information about what you can request to remove. Click the link in the section to submit a request to remove your personal information.
 
 ## Why is my account deactivated?
 {: #account-deactivated}
