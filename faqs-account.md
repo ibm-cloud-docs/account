@@ -114,10 +114,10 @@ When you add a credit card to your trial account, your account is upgraded to a 
 {: faq}
 {: support}
 
-We're sad to see you go! If there's any way we can assist you before you decide to close your account, [reach out to us](https://{DomainName}/unifiedsupport/supportcenter){: external}.
+We're sad to see you go! If there's any way we can assist you before you decide to close your account, [reach out to us](/unifiedsupport/supportcenter){: external}.
 
 * To close a Pay-As-You-Go or Subscription account, contact [Support](/unifiedsupport/supportcenter). A  support case is required for account security and documentation purposes. After your Pay-As-You-Go account has been closed, all usage is stopped across all services running in your account, and the usage that is accrued in the current billing period is sent in one final invoice at the close of the billing period. Closing your account can't be undone and your data is unrecoverable.
-* To close a Lite account, go to the [Account settings][Account settings](/account/settings) page, and click **Close account**. You can reactivate your account if you upgrade to a Pay-As-You-Go or Subscription account. After an account is closed for 30 days, all data is deleted and all services are removed. 
+* To close a Lite account, go to the [Account settings](/account/settings) page, and click **Close account**. You can reactivate your account if you upgrade to a Pay-As-You-Go or Subscription account. After an account is closed for 30 days, all data is deleted and all services are removed. 
 
 ## Can I log in to the console with my SoftLayer ID?
 {: #slid}
