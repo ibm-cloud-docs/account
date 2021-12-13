@@ -410,4 +410,5 @@ toc:
           - ts-rscs-migrate-cf.md
           - ts-swinstance-unavail.md
           - ts-unsupported-registry.md
+          - /sell/sell-ts-validate-terraform
       - known-issues.md
