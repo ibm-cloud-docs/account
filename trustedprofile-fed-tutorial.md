@@ -101,4 +101,4 @@ Marla created narrow conditions that authenticate only the developers on the tea
 ## Next steps
 {: #iam-federated-next}
 
-Now that you learned the basics of how to create a trusted profile, you can create the `Chatbot Ops (prod)` trusted profile that gives employees who need broader privileges more access. To do so, repeat step 1. In step 2.11.1, enter the condition `job-role` equals `dev-lead`. Assign this profile Editor and Writer access. For more information, see [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile&interface=ui).
+Now that you learned the basics of how to create a trusted profile, you can create the `Chatbot Ops (prod)` trusted profile that gives employees who need broader privileges more access. To do so, repeat step 1. In step 2.11.a, enter the condition `job-role` equals `dev-lead`. Assign this profile Editor and Writer access. For more information, see [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile&interface=ui).
