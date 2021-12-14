@@ -4,7 +4,7 @@ copyright:
 
   years: 2020, 2021
 
-lastupdated: "2021-09-22"
+lastupdated: "2021-12-14"
 
 keywords: migration FAQs, data centers
 
@@ -70,7 +70,7 @@ You can use any worldwide {{site.data.keyword.cloud_notm}} data center during yo
 {: #dc-free-months}
 {: faq}
 
-Yes. You can [contact an appropriate support representative](https://www.ibm.com/cloud/data-centers/?focusArea=WCP%20-%20Pooled%20CSM&contactmodule){: external} to help you through the process of acquiring your transition period servers.
+Yes. You can [contact an appropriate support representative](https://www.ibm.com/cloud/data-centers?contactmodule=undefined){: external} to help you through the process of acquiring your transition period servers.
 
 
 ## How do I determine my current hardware configuration?
