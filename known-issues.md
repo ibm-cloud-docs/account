@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-11-17"
+lastupdated: "2021-12-15"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users, Cloud Foundry orgs
 
@@ -10,12 +10,8 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:faq: data-hd-content-type='faq'}
-{:support: data-reuse='support'}
-{:tip: .tip}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Known issues and limitations
 {: #known-issues}
@@ -61,6 +57,9 @@ Turning off {{site.data.keyword.cloud_notm}} catalog visibility or excluding all
 
 The following table lists the maximum limits for IAM resources. These limits apply to any user who can create IAM resources. If a limit is exceeded, you receive an exception and are not allowed to create any new resources beyond that limit.
 
+If you have a specific use case that requires an extended limit, you can request an increase. For more information, see [Increasing account limits](/docs/account?topic=account-account-limits).
+{: note}
+
 | Resource                               | Max  |
 |----------------------------------------|------|
 | Access groups per account              | 500  |
@@ -81,7 +80,7 @@ The following table lists the maximum limits for IAM resources. These limits app
 | Users per billable account             | 7500 |
 {: caption="Table 1. IAM account limits" caption-side="top"}
 
-A maximum of 1,000 policies and service to service authorizations within one account is recommended to ensure optimal performance within your account. For more information about limiting the number of policies in your account, see the [Best practices for organizing resources and assigning access](/docs/account?topic=account-account_setup).
+A maximum of 1,000 policies and service to service authorizations within one account is recommended to ensure optimal performance within your account. For more information about limiting the number of policies in your account, see the [Best practices for organizing resources and assigning access](/docs/account?topic=account-account_setup). If you need to check the number of policies in your account or request an increase in the account limit, see [Managing policy limits](/docs/account?topic=account-account-limits#policy-limits).
 {: tip}
 
 If you need to check the number of policies in your account or request an increase in the account limit, see [Managing policy limits](/docs/account?topic=account-policy-limits).
