@@ -97,7 +97,6 @@ toc:
               - iam-migrated_permissions.md
               - iam-mngcf.md
               - iam-authorizations.md
-              - iam-policy-number.md
               - iam-audit-policies.md
           - topicgroup:
               label: Managing identities
@@ -242,13 +241,14 @@ toc:
           - contact_info.md
           - feature_codes.md
           - shell-settings.md
-          - iam-leave-account.md
           - topicgroup:
               label: Updating account settings for compliance
               topics:
               - eu-supported.md
               - financial-services-validated.md
               - hipaa-supported.md
+          - iam-policy-number.md
+          - iam-leave-account.md
       - topicgroup:
           label: Managing orgs and spaces
           topics:
