@@ -62,7 +62,7 @@ Now that Marla created a trusted profile, she wants to establish criteria for th
 
 1. For trusted entity type, select **Federated users**.
 2. For authentication method, select **Users federated by {{site.data.keyword.appid_full_notm}}** from the list.
-3. Select the default identity provider (IdP) URL associated with the identity provider you created.
+3. Select the default identity provider (IdP) you created.
 4. Click **View your identity provider (IdP) data**. Marla uses this in the following steps to see which attributes she can leverage to create conditions.
 5. Click **Add a condition**.
 6. Click **Filter attributes** and select `country`.

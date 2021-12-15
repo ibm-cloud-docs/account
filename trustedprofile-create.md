@@ -41,7 +41,7 @@ Complete the following steps to define which federated users can access specific
   
 1. (Optional) Establish trust.
    1. Select **Federated users** as a trusted entity type from the list.
-   1. Select **Users federated by IBMid** or **Users federated by IBM Cloud AppID** as the authentication method and input the default identity prodiver (IdP) URL.
+   1. Select **Users federated by IBMid** or **Users federated by IBM Cloud AppID** as the authentication method and input the default identity prodiver (IdP) you enabled in step 1.
    1. Add conditions based on your IdP data to define how and when federated users can apply the profile.
     * By clicking **Add a condition**, you can define multiple conditions. Federated users must meet all the conditions to be included in the trusted profile.
     * Click **View identity provider (IdP) data** to search attribute names and values in your own personal data from your IdP. For more information, see [Using IdP data to build trusted profiles](/docs/account?topic=account-idp-integration#trusted-profiles-idp-data).
