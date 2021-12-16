@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2021
-lastupdated: "2021-09-28"
+lastupdated: "2021-12-16"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, full list of tags, how to use tags
 
@@ -78,7 +78,7 @@ You don't need to create user tags to attach them to resources. Go to the [Attac
 
 Before you can attach your access management tags to individual resources, you need to create them first. To create access management tags, you need to have administrator role on either the Tagging Service that is listed under the Account management services or on all Account management services.
 
-{{site.data.keyword.cloud}} allows up to 30 access management tags per account.
+{{site.data.keyword.cloud}} allows up to 250 access management tags per account.
 {: note}
 
 1. Go to **Manage** > **Account** in the {{site.data.keyword.cloud}} console, and select **Tags**.

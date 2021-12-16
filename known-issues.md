@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-12-15"
+lastupdated: "2021-12-16"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users, Cloud Foundry orgs
 
@@ -64,7 +64,7 @@ If you have a specific use case that requires an extended limit, you can request
 |----------------------------------------|------|
 | Access groups per account              | 500  |
 | Access groups per user                 | 50   |
-| Access management tags per account     | 30   |
+| Access management tags per account     | 250  |
 | API Keys per identity                  | 20   |
 | Cloud Foundry orgs                     | 500  |
 | Context-based restriction rules per account | 1000 |
