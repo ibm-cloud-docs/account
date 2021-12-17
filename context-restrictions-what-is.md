@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-09-30"
+lastupdated: "2021-12-16"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, Cloud Foundry, endpoint type
 
@@ -131,13 +131,17 @@ Some endpoint types might not be supported by the selected service.
 
 You can create context-based restrictions for the following services if you have the right permissions on the service:
 
-| Service       |
-|---------------|
-| IAM Users  | 
-| IAM Groups |
-| IAM Access Policy Management|
-| IAM Custom roles  |
+| Service       | Service type |
+|---------------|---------------|
+| IAM Users  | Account Management |
+| IAM Groups | Account Management |
+| IAM Access Policy Management| Account Management |
+| IAM Custom roles  | Account Management |
+| {{site.data.keyword.keymanagementserviceshort}} | IAM Service |
 {: caption="Table 3. Services compatible with context-based restrictions." caption-side="top"}
 
-Check back regularly to see what services are added as more services adopt context-based restrictions. 
-{: note}
+Context-based restrictions defined for IAM Services do not apply to platform actions like provision or deprovision actions. For more information, see [IAM roles and actions](/docs/account?topic=account-iam-service-roles-actions). 
+{: important}
+
+Check back regularly to see what services are added as more services adopt context-based restrictions.
+{: note} 
