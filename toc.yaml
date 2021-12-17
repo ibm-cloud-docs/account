@@ -118,6 +118,7 @@ toc:
               - iam-session-settings.md
               - iam-specific_ip.md
               - iam-restrict-api.md
+              - iam-restrict-domain.md
               - iam-restrict-service-id.md
               - iam-vpn_password.md
           - topicgroup:
