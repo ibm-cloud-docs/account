@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2021
 
-lastupdated: "2021-09-24"
+lastupdated: "2021-12-17"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -89,6 +89,10 @@ To invite users, complete the following steps:
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users**.
 2. Click **Invite users**.
 3. Specify the email addresses of the users. If you are inviting more than one user with a single invitation, they are all assigned the same access.
+
+   You can restrict membership to your account based on the domain of the users that are invited. This way, only users from a specific domains can be invited to the account. For more information, see [Restricting user domains for account invitations](/docs/account?topic=account-restrict-acct-invite).
+   {: note}
+
 4. Add one or more of the access options that you manage. You must assign at least one access option. For any access options that you don't add and configure, the default value of **No access** is assigned. Depending on the options that you are authorized to manage, you can assign the following types of access:
 
    * Add users to access groups. Click **Add** for each access group that you want the users to belong to. 
