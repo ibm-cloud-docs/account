@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2021-12-21"
+lastupdated: "2021-12-22"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -5170,6 +5170,44 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
+## VPC+ DRaaS (VPC+ Disaster Recovery as a Service)
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `3p-wanclds-draas-vpcplus` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 117. Platform roles - VPC+ DRaaS (VPC+ Disaster Recovery as a Service)" caption-side="top"}
+{: #platform-roles-table117}
+{: tab-title="Platform roles"}
+{: tab-group="3p-wanclds-draas-vpcplus"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+
+| Role | Description |
+| ----- | :----- |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+{: row-headers}
+{: caption="Table 117. Service roles - VPC+ DRaaS (VPC+ Disaster Recovery as a Service)" caption-side="top"}
+{: #service-roles-table117}
+{: tab-title="Service roles"}
+{: tab-group="3p-wanclds-draas-vpcplus"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `3p-wanclds-draas-vpcplus.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 117. Service actions - VPC+ DRaaS (VPC+ Disaster Recovery as a Service)" caption-side="top"}
+{: #actions-table117}
+{: tab-title="Actions"}
+{: tab-group="3p-wanclds-draas-vpcplus"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+
 ## VPN for VPC
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.vpn` for the service name.
 
@@ -5180,8 +5218,8 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 117. Platform roles - VPN for VPC" caption-side="top"}
-{: #platform-roles-table117}
+{: caption="Table 118. Platform roles - VPN for VPC" caption-side="top"}
+{: #platform-roles-table118}
 {: tab-title="Platform roles"}
 {: tab-group="is.vpn"}
 {: class="simple-tab-table"}
@@ -5195,8 +5233,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.vpn.vpn.read` |  | Administrator, Editor, Operator, Viewer |
 | `is.vpn.vpn.list` |  | Administrator, Editor, Operator, Viewer |
 | `is.vpn.dashboard.view` |  | Administrator, Editor, Operator, Viewer |
-{: caption="Table 117. Service actions - VPN for VPC" caption-side="top"}
-{: #actions-table117}
+{: caption="Table 118. Service actions - VPN for VPC" caption-side="top"}
+{: #actions-table118}
 {: tab-title="Actions"}
 {: tab-group="is.vpn"}
 {: class="simple-tab-table"}
@@ -5209,8 +5247,8 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 118. Platform roles - Watson Assistant" caption-side="top"}
-{: #platform-roles-table118}
+{: caption="Table 119. Platform roles - Watson Assistant" caption-side="top"}
+{: #platform-roles-table119}
 {: tab-title="Platform roles"}
 {: tab-group="conversation"}
 {: class="simple-tab-table"}
@@ -5222,8 +5260,8 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 118. Service roles - Watson Assistant" caption-side="top"}
-{: #service-roles-table118}
+{: caption="Table 119. Service roles - Watson Assistant" caption-side="top"}
+{: #service-roles-table119}
 {: tab-title="Service roles"}
 {: tab-group="conversation"}
 {: class="simple-tab-table"}
@@ -5244,8 +5282,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `conversation.logs.read` | Can view skill analytics and access user conversation logs. | Manager |
 | `conversation.assistant.list` | Can list assistant or skill | Manager, Reader, Viewer, Writer |
 | `conversation.assistant.default` | Default access for Assistant | Manager, Reader, Viewer, Writer |
-{: caption="Table 118. Service actions - Watson Assistant" caption-side="top"}
-{: #actions-table118}
+{: caption="Table 119. Service actions - Watson Assistant" caption-side="top"}
+{: #actions-table119}
 {: tab-title="Actions"}
 {: tab-group="conversation"}
 {: class="simple-tab-table"}
@@ -5260,8 +5298,8 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 119. Service roles - Watson Discovery" caption-side="top"}
-{: #service-roles-table119}
+{: caption="Table 120. Service roles - Watson Discovery" caption-side="top"}
+{: #service-roles-table120}
 {: tab-title="Service roles"}
 {: tab-group="discovery"}
 {: class="simple-tab-table"}
@@ -5274,8 +5312,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `DELETE /discovery` | Delete resources | Manager, Writer |
 | `PATCH /discovery` | Make partial update to resources | Manager, Writer |
 | `GET /discovery` | Retrieve resources | Manager, Reader, Writer |
-{: caption="Table 119. Service actions - Watson Discovery" caption-side="top"}
-{: #actions-table119}
+{: caption="Table 120. Service actions - Watson Discovery" caption-side="top"}
+{: #actions-table120}
 {: tab-title="Actions"}
 {: tab-group="discovery"}
 {: class="simple-tab-table"}
@@ -5288,8 +5326,8 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 {: row-headers}
-{: caption="Table 120. Platform roles - Watson Knowledge Catalog" caption-side="top"}
-{: #platform-roles-table120}
+{: caption="Table 121. Platform roles - Watson Knowledge Catalog" caption-side="top"}
+{: #platform-roles-table121}
 {: tab-title="Platform roles"}
 {: tab-group="datacatalog"}
 {: class="simple-tab-table"}
@@ -5300,8 +5338,8 @@ Review the available platform and service roles and the actions mapped to each t
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 120. Service roles - Watson Knowledge Catalog" caption-side="top"}
-{: #service-roles-table120}
+{: caption="Table 121. Service roles - Watson Knowledge Catalog" caption-side="top"}
+{: #service-roles-table121}
 {: tab-title="Service roles"}
 {: tab-group="datacatalog"}
 {: class="simple-tab-table"}
@@ -5311,8 +5349,8 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- | :----- |
 | `datacatalog` |  | Administrator |
 | `datacatalog.catalog.create` |  | Administrator, Manager, Writer |
-{: caption="Table 120. Service actions - Watson Knowledge Catalog" caption-side="top"}
-{: #actions-table120}
+{: caption="Table 121. Service actions - Watson Knowledge Catalog" caption-side="top"}
+{: #actions-table121}
 {: tab-title="Actions"}
 {: tab-group="datacatalog"}
 {: class="simple-tab-table"}
@@ -5328,8 +5366,8 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 121. Platform roles - Watson OpenScale" caption-side="top"}
-{: #platform-roles-table121}
+{: caption="Table 122. Platform roles - Watson OpenScale" caption-side="top"}
+{: #platform-roles-table122}
 {: tab-title="Platform roles"}
 {: tab-group="aiopenscale"}
 {: class="simple-tab-table"}
@@ -5338,8 +5376,8 @@ Review the available platform and service roles and the actions mapped to each t
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `aiopenscale.dashboard.view` |  | Administrator, Editor, Operator, Viewer |
-{: caption="Table 121. Service actions - Watson OpenScale" caption-side="top"}
-{: #actions-table121}
+{: caption="Table 122. Service actions - Watson OpenScale" caption-side="top"}
+{: #actions-table122}
 {: tab-title="Actions"}
 {: tab-group="aiopenscale"}
 {: class="simple-tab-table"}
@@ -5355,8 +5393,8 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 122. Platform roles - Watson Query" caption-side="top"}
-{: #platform-roles-table122}
+{: caption="Table 123. Platform roles - Watson Query" caption-side="top"}
+{: #platform-roles-table123}
 {: tab-title="Platform roles"}
 {: tab-group="data-virtualization"}
 {: class="simple-tab-table"}
@@ -5367,8 +5405,8 @@ Review the available platform and service roles and the actions mapped to each t
 | DataAccess (For Service to Service Authorization Only) | Used for Service to Service authorization.  Do not choose this role for service credential generation. |
 | Manager (For generated service credentials only) | This role is only enabled for generated service credentials.  Using this role will grant the generated Service ID Manager access. |
 {: row-headers}
-{: caption="Table 122. Service roles - Watson Query" caption-side="top"}
-{: #service-roles-table122}
+{: caption="Table 123. Service roles - Watson Query" caption-side="top"}
+{: #service-roles-table123}
 {: tab-title="Service roles"}
 {: tab-group="data-virtualization"}
 {: class="simple-tab-table"}
@@ -5425,8 +5463,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `POST /v4/:platform/deployments/:deployment_id/describe_updates` | Get db updates | Administrator, Editor, Operator, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/db_updates` | Create db update | Administrator, Editor, Operator |
 | `GET /v4/:platform/deployments/:deployment_id/check_updates` | Check deployment for available updates | Administrator, Editor, Operator, Viewer |
-{: caption="Table 122. Service actions - Watson Query" caption-side="top"}
-{: #actions-table122}
+{: caption="Table 123. Service actions - Watson Query" caption-side="top"}
+{: #actions-table123}
 {: tab-title="Actions"}
 {: tab-group="data-virtualization"}
 {: class="simple-tab-table"}
@@ -5445,8 +5483,8 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 124. Platform roles - WebSphere Application Server" caption-side="top"}
-{: #platform-roles-table124}
+{: caption="Table 125. Platform roles - WebSphere Application Server" caption-side="top"}
+{: #platform-roles-table125}
 {: tab-title="Platform roles"}
 {: tab-group="websphereappsvr"}
 {: class="simple-tab-table"}
@@ -5455,8 +5493,8 @@ Review the available platform and service roles and the actions mapped to each t
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `websphereappsvr.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 124. Service actions - WebSphere Application Server" caption-side="top"}
-{: #actions-table124}
+{: caption="Table 125. Service actions - WebSphere Application Server" caption-side="top"}
+{: #actions-table125}
 {: tab-title="Actions"}
 {: tab-group="websphereappsvr"}
 {: class="simple-tab-table"}
