@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2021
-lastupdated: "2021-09-23"
+lastupdated: "2021-12-23"
 
 keywords: access groups, access group, create group, assign access to group
 
@@ -259,7 +259,10 @@ After you set up your group with users and service IDs, you can assign a common 
      * Select **Account management**, and then choose from the all account management services option or select a specific service. Then, select all roles that apply.
 
    
-4. Click **Add** > **Assign**.  
+4. Click **Add** > **Assign**. 
+
+You can also assign access by using access management tags. For more information, see [Controlling access to resources by using tags](/docs/account?topic=account-access-tags-tutorial).
+{: tip}
 
 ## Assigning access to a group by using the CLI
 {: #access_ag_cli}

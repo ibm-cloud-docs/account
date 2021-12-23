@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2021
 
-lastupdated: "2021-11-22"
+lastupdated: "2021-12-23"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access 
 
@@ -51,6 +51,9 @@ If you want to enable a user full administrator access to complete [account mana
 
 * A policy for **All Identity and Access enabled services** within the **Account** with the Administrator and Manager roles.
 * A policy with Administrator role on **All Account Management Services**.
+
+You can also set access management tags to manage access. For more information, see [Controlling access to resources by using tags](/docs/account?topic=account-access-tags-tutorial).
+{: tip}
 
 ### Assigning access to resources in the console
 {: #access-resources-console}

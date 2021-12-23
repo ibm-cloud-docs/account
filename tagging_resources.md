@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2021
-lastupdated: "2021-12-16"
+lastupdated: "2021-12-23"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, full list of tags, how to use tags
 
@@ -84,6 +84,8 @@ Before you can attach your access management tags to individual resources, you n
 1. Go to **Manage** > **Account** in the {{site.data.keyword.cloud}} console, and select **Tags**.
 2. Click **Access management tags**.
 3. Type the names of your tags, and click **Create Tags**. These tags are now ready to be attached to resources and to be written to access policies.
+
+For a full tutorial, see [Controlling access to resources by using tags](/docs/account?topic=account-access-tags-tutorial).
 
 ### Creating access management tags by using the CLI
 {: #create-access-cli}
@@ -190,7 +192,7 @@ fmt.Println(string(b))
 You can create access management tags by using Terraform. 
 
 1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create access management tags by by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}. The following example creates the access management tag `ibm_tag` to the `ibm` resource for the resource ID `ibm_satellite_location.location.crn`. 
+1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create access management tags by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}. The following example creates the access management tag `ibm_tag` to the `ibm` resource for the resource ID `ibm_satellite_location.location.crn`. 
     
    ```terraform
    resource "ibm_resource" "ibm" {
