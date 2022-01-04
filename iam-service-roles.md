@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-01-03"
+lastupdated: "2022-01-04"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3544,7 +3544,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
-## Partner Center
+## Partner Center - Build and Grow
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `partner-portal` for the service name.
 
 | Role | Description |
@@ -3553,7 +3553,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 78. Platform roles - Partner Center" caption-side="top"}
+{: caption="Table 78. Platform roles - Partner Center - Build and Grow" caption-side="top"}
 {: #platform-roles-table78}
 {: tab-title="Platform roles"}
 {: tab-group="partner-portal"}
@@ -3564,7 +3564,7 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- | :----- |
 | `partner-portal.dashboard.view` | View Dashboard | Administrator, Editor, Viewer |
 | `partner-portal.dashboard.edit` | Enabled for testing only | Administrator, Editor |
-{: caption="Table 78. Service actions - Partner Center" caption-side="top"}
+{: caption="Table 78. Service actions - Partner Center - Build and Grow" caption-side="top"}
 {: #actions-table78}
 {: tab-title="Actions"}
 {: tab-group="partner-portal"}
