@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-01-05"
+lastupdated: "2022-01-06"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1113,17 +1113,6 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-{: row-headers}
-{: caption="Table 24. Platform roles - Container Registry" caption-side="top"}
-{: #platform-roles-table24}
-{: tab-title="Platform roles"}
-{: tab-group="container-registry"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-
-| Role | Description |
-| ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
@@ -1148,15 +1137,11 @@ Review the available platform and service roles and the actions mapped to each t
 | `container-registry.image.list` | List your container images. Display the container images that are in the trash. | Manager, Reader, Service Configuration Reader |
 | `container-registry.image.vulnerabilities` | View a vulnerability assessment report for your container image. | Manager, Reader, Service Configuration Reader |
 | `container-registry.image.inspect` | Display details about a specific container image. | Manager, Reader |
-| `container-registry.image.build` | Build a container image. | Manager, Writer |
 | `container-registry.quota.get` | Display your current quotas for traffic and storage, and usage information against those quotas. | Manager, Reader, Writer |
 | `container-registry.quota.set` | Modify the specified quota. | Manager |
 | `container-registry.plan.get` | Display your pricing plan. | Manager |
 | `container-registry.plan.set` | Upgrade to the standard plan. | Manager |
-| `container-registry.registrytoken.get` | Retrieve the specified token from the registry. | Administrator |
-| `container-registry.registrytoken.delete` | Remove one or more specified tokens. | Administrator |
-| `container-registry.registrytoken.bulkdelete` | Delete multiple registry tokens. | Administrator |
-| `container-registry.registrytoken.list` | Display all tokens that exist for your IBM Cloud account. | Administrator |
+| `container-registry.auth.get` | Get Auth Configuration, such as whether IAM policy enforcement is enabled | Manager, Reader, Writer |
 | `container-registry.auth.set` | Enable IAM policy enforcement. | Manager |
 | `container-registry.retention.analyze` | Clean up your namespaces by retaining only container images that meet your criteria. Set a policy to clean up your namespaces by retaining only container images that meet your criteria. | Manager, Reader |
 | `container-registry.retention.get` | Get an image retention policy. | Manager, Reader |
