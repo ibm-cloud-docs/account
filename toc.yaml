@@ -231,9 +231,12 @@ toc:
       - topicgroup:
           label: Managing your account
           topics:
-          - email.md
-          - distribution_list.md
-          - add_webhooks.md
+          - topicgroup:
+              label: Managing notifications
+              topics:
+              - email.md
+              - distribution_list.md
+              - add_webhooks.md
           - account_settings.md
           - account-upgrade.md
           - create-mult-accounts.md
