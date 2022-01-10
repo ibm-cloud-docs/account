@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2021
-lastupdated: "2021-12-02"
-
+  years: 2015, 2022
+lastupdated: "2022-01-07"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -85,17 +84,12 @@ Yes, the following options are available depending on your account type:
 
 * If you have a feature code from an online course or educational event, you can use it to convert your Lite account to a trial account. Go to the [Account settings](/account/settings){: external} page in the console to apply the code to your account.
 * To convert your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales](/catalog?contactmodule){: external}. 
-* You can convert your trial account to a Lite account by providing the email address that's associated with your IBMid in the [Upgrade Tool](/registration/startUpgradeToLite){: external}. If your trial account is expired, [open a support case](/unifiedsupport/cases/form) and request to have it reactivated for one week. During that week, you can convert it to a Lite account.
 
-
-The risk of data or function loss is possible when you convert your trial account to a Lite account. Some specific data or function allocations in your trial account might not be available for a Lite account. Any loss of data or function can't be recovered after the conversion process is complete. You can't convert your trial account to a Lite account if you have multiple organizations in your account. You must register for a new account using a different email address.
-{: note} 
-
-## Can I convert my Pay-As-You-Go account to a Lite or trial account?
+## Can I convert my Pay-As-You-Go account to a trial account?
 {: #convertpayg-litetrial}
 {: faq}
 
-If you upgrade your trial account to a Pay-As-You-Go account by entering a credit card, it can't be converted back to a trial account or converted to a Lite account.
+If you upgrade your trial account to a Pay-As-You-Go account by entering a credit card, it can't be converted back to a trial account.
 
 ## Can I add an educational promotional code to an account after I have added a credit card?
 {: #convert-education}
