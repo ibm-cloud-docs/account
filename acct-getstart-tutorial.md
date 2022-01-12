@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-10-25"
+  years: 2020, 2022
+lastupdated: "2022-01-12"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key
 
@@ -61,7 +61,7 @@ A federated ID is an ID within a company's domain that is registered with {{site
 
 {{site.data.keyword.IBM_notm}} uses the Security Assertion Markup Language 2.0 (SAML 2.0) for this identity federation. SAML 2.0 is a standard version for exchanging authentication data between security domains. It's an XML-based protocol that uses a security token that contains assertions to pass information between the organizations IdP, and the {{site.data.keyword.IBM_notm}} Rely Party (RP), otherwise known as the Service Provider.
 
-For information about how to register your company for a federated ID, see the [IBMid Enterprise Federation Adoption Guide](https://ibm.box.com/v/IBMid-Federation-Guide){: external}. An {{site.data.keyword.IBM_notm}} sponsor, such as an offering advocate or client advocate, is required when you request to register federated IDs.
+For information about how to register your company for a federated ID, see the [IBMid Enterprise Federation Adoption Guide](https://ibm.ent.box.com/notes/78040808400?v=IBMid-Federation-Guide){: external}. An {{site.data.keyword.IBM_notm}} sponsor, such as an offering advocate or client advocate, is required when you request to register federated IDs.
 
 ## Upgrade to a Pay-As-You-Go account
 {: #account-gs-upgrade}
