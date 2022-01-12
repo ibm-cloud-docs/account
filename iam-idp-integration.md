@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2020, 2021
+  years: 2020, 2022
 
-lastupdated: "2021-11-17"
+lastupdated: "2022-01-12"
 
 keywords: identity provider, IdP, App ID, IAM, integration, IdP SSO, third-party authentication, dynamic rules, external identity provider
 
@@ -133,6 +133,9 @@ Don't invite users by using the {{site.data.keyword.cloud_notm}} invite process 
 {: #trusted-profiles-idp-data}
 
 After you have enabled and connected your IdP, you can start [creating trusted profiles](/docs/account?topic=account-create-trusted-profile). To build trust with federated users, you can use the personal data from your IdP to search attribute names and values that exist in your organization.
+
+If the users that you are creating a trusted profile for use {{site.data.keyword.appid_full_notm}}, you should create the trusted profile as an {{site.data.keyword.appid_full_notm}} user, and likewise for IBMid. This way, your own SAML attributes can give you an idea of how to structure the trusted profile conditions. Other users with the same IdP can have different SAML attributes and you should use your own only as a hint. To use attributes in a claim that are different than your own, input them manually. 
+{: tip}
 
 The conditions that you create filter out or allow federated users to apply the trusted profile depending on which attributes the federated users are assigned in your corporate user directory. When you create a trusted profile, you can view IdP data to see your own user claims from your organizations corporate user directory. 
 

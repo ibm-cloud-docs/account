@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2021
+  years: 2021, 2022
 
-lastupdated: "2021-11-23"
+lastupdated: "2022-01-12"
 
 keywords: trusted profile, federated users, granting access, tutorial, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
@@ -62,6 +62,10 @@ Now that Marla created a trusted profile, she wants to establish criteria for th
 
 1. For trusted entity type, select **Federated users**.
 2. For authentication method, select **Users federated by {{site.data.keyword.appid_full_notm}}** from the list.
+
+   If the users that you are creating a trusted profile for use {{site.data.keyword.appid_full_notm}}, you should create the trusted profile as an {{site.data.keyword.appid_full_notm}} user, and likewise for IBMid. This way, your own SAML attributes can give you an idea of how to structure the trusted profile conditions. Other users with the same IdP can have different SAML attributes and you should use your own only as a hint. To use attributes in a claim that are different than your own, input them manually. 
+   {: tip}
+
 3. Select the default identity provider (IdP) you created.
 4. Click **View your identity provider (IdP) data**. Marla uses this in the following steps to see which attributes she can leverage to create conditions.
 5. Click **Add a condition**.
