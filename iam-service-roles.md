@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-01-14"
+lastupdated: "2022-01-15"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
