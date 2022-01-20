@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-01-12"
+lastupdated: "2022-01-20"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key
 
@@ -136,16 +136,16 @@ Before you start working with resources in your account, familiarize yourself wi
 {: #account-gs-notifications}
 {: step}
 
-Complete the following steps to set your preferences for receiving various types of notifications: 
+To set your preferences for receiving various types of notifications, use the following: 
 
-1. To receive notifications about {{site.data.keyword.cloud_notm}} platform-related, or resource-related items, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar")
-   **Profile** > **Notification preferences**.
+* To receive notifications about {{site.data.keyword.cloud_notm}} platform-related, or resource-related items, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Profile** > **Notification preferences**.
+
    * When you set {{site.data.keyword.cloud_notm}} platform notifications, you receive email notifications that are associated with only the platform. You do not receive notifications about events that are associated with {{site.data.keyword.cloud_notm}} services. By default, all platform notifications are turned off. 
-   *  If you update your preferences on resource activity, such as incidents, maintenance, security bulletins, or infrastructure service updates, the notifications are for only the services you use or the devices that you have provisioned. By default, all infrastructure notifications are turned off. 
+   *  If you update your preferences on resource activity, such as incidents, maintenance, security bulletins, or infrastructure service updates, the notifications are for only the services you use or the devices that you have provisioned. By default, all infrastructure notifications are turned off.
 
+* To receive spending notifications, go to **Manage** > **Billing and usage** > **Spending notifications**. Or, you can access it directly from the [Notification preferences](https://cloud.ibm.com/user/notifications) page by scrolling down to **Billing and Usage** and clicking **Manage**. 
 
-2. To receive spending notifications, go to **Manage** > **Billing and usage** > **Spending notifications**. Or, you can access it directly from the [Notification preferences](https://cloud.ibm.com/user/notifications) page by scrolling down to **Billing and Usage** and clicking **Manage**.
-You receive notifications when you reach 80%, 90%, and 100% of the spending thresholds that you specify. 
+   * You receive notifications when you reach 80%, 90%, and 100% of the spending thresholds that you specify. 
 
 ## Create your resource groups
 {: #account-gs-resourcegroups}
@@ -190,8 +190,8 @@ See [What makes a good resource group strategy?](/docs/account?topic=account-acc
 
 You're ready to invite users to your account and grant them access based on the resources they will work with and the tasks they'll perform. If you want users to create resources from the catalog and assign the resources to a resource group, the following access is required:
 
-   * Viewer role or higher on the resource group.
-   * Editor or administrator role on the service. 
+* Viewer role or higher on the resource group.
+* Editor or administrator role on the service. 
 
 Complete the following steps:
 
