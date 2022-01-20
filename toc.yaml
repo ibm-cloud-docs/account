@@ -415,4 +415,5 @@ toc:
           - ts-swinstance-unavail.md
           - ts-unsupported-registry.md
           - /sell/sell-ts-validate-terraform
+      - getting-help.md 
       - known-issues.md
