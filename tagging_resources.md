@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2021
-lastupdated: "2021-12-23"
+  years: 2018, 2022
+lastupdated: "2022-01-20"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, full list of tags, how to use tags
 
@@ -43,10 +43,10 @@ By creating **access management tags**, you can control access to your resources
 ## Tagging rules
 {: #limits}
 
-Tags are not case-sensitive, and the maximum length of a tag is 128 characters. The permitted characters are A-Z, 0-9, spaces, underscore, hyphen, period, and colon. The use of a colon formats the tag into a string that isolates two logical parts, like a `key:value` pair. A comma separates multiple tags and can't be used within the tag name itself.
+Tags are not case-sensitive, and the maximum length of a tag is 128 characters. The permitted characters are A-Z, 0-9, spaces, underscore, hyphen, period, and colon. The only supported format for access management tags is `key:value`. The use of a colon formats the tag into a string that isolates two logical parts, like a `env:dev` pair. A comma separates multiple tags and can't be used within the tag name itself.
 
-The only supported format for access management tags is `key:value`.
-{: note}
+Tags are visible account-wide and can be replicated across geographic regions. Since tags are not regulated information, avoid creating tags that use personal information, such as your name, address, phone number, email address, or other identifying or proprietary information.
+{: important}
 
 ### Sample tags and syntax
 {: #sample-and-syntax}
@@ -61,8 +61,6 @@ You can apply tags to help you organize and manage your resources and access pol
 | `schedule:24x7`, `maxruntime:12days` | Use to help you automate optimization |
 {: caption="Table 1. Tag syntax" caption-side="top"}
 
-Because tags are visible account-wide, avoid using personal information, such as your name, address, phone number, email address, or other identifying or proprietary information.
-{: note}
 
 ## Creating tags
 {: #create}

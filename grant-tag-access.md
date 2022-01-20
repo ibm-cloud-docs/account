@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018, 2021
+  years: 2018, 2022
 
-lastupdated: "2021-09-24"
+lastupdated: "2022-01-20"
 
 keywords: tagging, enabling others to tag, tagging permissions
 
@@ -30,6 +30,9 @@ subcollection: account
 
 As the account owner, you might want to delegate some of the responsibility of tagging resources. For users to attach tags to a resource, you must grant them the appropriate access. Use {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) access policies to grant users access to resources in a resource group. Use Cloud Foundry roles to grant users access to resources in a Cloud Foundry org and space.
 {: shortdesc}
+
+Tags are visible account-wide and can be replicated across geographic regions. Since tags are not regulated information, avoid creating tags that use personal information, such as your name, address, phone number, email address, or other identifying or proprietary information.
+{: important}
 
 ## Tagging permissions
 {: #tagging-permissions}
