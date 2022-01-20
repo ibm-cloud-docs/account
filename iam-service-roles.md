@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-01-19"
+lastupdated: "2022-01-20"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -2206,6 +2206,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `hs-crypto.mtlscert-cert.read` | Get certificates by the certificate administrator | Certificate Manager |
 | `hs-crypto.mtlscert-cert.delete` | Delete certificates by the certificate administrator | Certificate Manager |
 | `hs-crypto.secrets.purge` | IPurge a destroyed encryption key. | KMS Key Purge |
+| `hs-crypto.secrets.patch` | Update encryption key. | Manager |
 {: caption="Table 44. Service actions - Hyper Protect Crypto Services" caption-side="top"}
 {: #actions-table44}
 {: tab-title="Actions"}
