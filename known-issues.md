@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-01-21"
+lastupdated: "2022-01-20"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users, Cloud Foundry orgs
 
@@ -83,7 +83,7 @@ If you have a specific use case that requires an extended limit, you can request
 A maximum of 1,000 policies and service to service authorizations within one account is recommended to ensure optimal performance within your account. For more information about limiting the number of policies in your account, see the [Best practices for organizing resources and assigning access](/docs/account?topic=account-account_setup). If you need to check the number of policies in your account or request an increase in the account limit, see [Increasing account limits](/docs/account?topic=account-account-limits).
 {: tip}
 
-If you need to check the number of policies in your account or request an increase in the account limit, see [Managing policy limits](/docs/account?topic=account-account-limits#policy-limits).
+If you need to check the number of policies in your account or request an increase in the account limit, see [Managing policy limits](https://cloud.ibm.com/docs/account?topic=account-account-limits#policy-limits).
 
 ### Policy limitations based on attributes
 {: #access-tag-limits}
