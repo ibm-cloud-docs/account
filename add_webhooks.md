@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-11-24"
+  years: 2021, 2022
+lastupdated: "2022-01-25"
 
 keywords: IBM Cloud notifications, notification preferences, email preferences, user notifications, distribution list, webhooks, Slack webhooks, Microsoft Teams webhooks, test webhooks, ServiceNow webhooks, SNOW
 
@@ -15,7 +15,7 @@ subcollection: account
 # Adding webhooks to a distribution list 
 {: #webhook-distribution-list}
 
-In addition to adding email addresses, you can also add up to 10 webhooks to a distribution list. Account administrators can create and use webhooks to configure an application to receive asynchronous notifications whenever a platform event occurs. The registered webhooks send the information to the specified URL in the form of an HTTP POST request with a JSON payload. The content-type of the request is `application/json`. 
+In addition to adding email addresses, you can also add up to 10 webhooks to a [distribution list](/account/notifications-distribution-list){: external}. Account administrators can create and use webhooks to configure an application to receive asynchronous notifications whenever a platform event occurs. The registered webhooks send the information to the specified URL in the form of an HTTP POST request with a JSON payload. The content-type of the request is `application/json`. 
 {: shortdesc}
 
 When you receive a notification through a webhook, a payload is being sent to your given webhook endpoint (URL), and informs you about all the details of an occurring event. See the following example:
