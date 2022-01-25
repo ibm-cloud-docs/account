@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-01-20"
+lastupdated: "2022-01-25"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users, Cloud Foundry orgs
 
@@ -67,11 +67,9 @@ If you have a specific use case that requires an extended limit, you can request
 | Access management tags per account     | 250  |
 | API Keys per identity                  | 20   |
 | Cloud Foundry orgs                     | 500  |
-| Context-based restriction rules per account | 1000 |
 | Custom roles per account               | 40   |
 | Dynamic rules per access group         | 5    |
 | Identity providers (IdPs) per account  | 5    |
-| Network zones per account              | 500  |
 | Policies per account                   | 2010 |
 | Policies per subject within an account | 500  |
 | Policies with access management tags within an account | 25 |
@@ -90,3 +88,20 @@ If you need to check the number of policies in your account or request an increa
 
 Access management tags are only available when you create an access policy that is scoped for all IAM-enabled services. In this case, when you enable the access based on tags, no other attributes can be added. And, when you base your policy on a specific location or resource group, no tag can be added to the access policy.
 
+## Context-based restrictions limits
+
+The following table lists the maximum limits for context-based restrictions. These limits apply to any user who can create context-based restrictions rules or network zones. For more information, see [What are context-based restrictions?](/docs/account?topic=account-context-restrictions-whatis).
+
+If you have a specific use case that requires an extended limit, you can request an increase. For more information, see [Increasing account limits](/docs/account?topic=account-account-limits).
+{: note}
+
+| Resource                               | Max  |
+|----------------------------------------|------|
+| Context-based restriction rules per account | 1000 |
+| Network zones per account              | 500 |
+| IP addresses per network zone              | 1000 |
+| IP addresses per rule             | 1000 |
+{: caption="Table 2. Context-based restrictions limits" caption-side="top"}
+
+A context-based restriction rule that includes multiple network zones can have a maximum of 1000 IP addresses indirectly associated with it. For example, in a rule that includes two network zones, one of the zones could have 800 IP addresses and the other could have a maximum of 200 IP addresses.
+{: note}
