@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-01-24"
+lastupdated: "2022-01-25"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1718,6 +1718,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Role | Description |
 | ----- | :----- |
 | Channel Editor | Custom role to handle subscription activities |
+| Device Manager | Custom role to handle push device registration with the event-noitifications service |
 | Event Notification Publisher | Custom role to send notifications |
 | Event Source Manager | Custom role to handle source integration with the event-notifications service |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
@@ -1774,6 +1775,25 @@ Review the available platform and service roles and the actions mapped to each t
 | `event-notifications.email-status.create` | The API is used for callback from messaging service | Status Reporter |
 | `event-notifications.sms-status.create` | The API is used for callback from messaging service | Status Reporter |
 | `event-notifications.webhook-status.create` | The API is used for callback from messaging service | Status Reporter |
+| `event-notifications.devices.create` | This API is used to register new device for push destination | Administrator, Device Manager, Manager |
+| `event-notifications.devices.read` | This API is used to get registered push destination device by device_id | Administrator, Device Manager, Manager |
+| `event-notifications.devices.update` | This API is used to update the push registered device for push destination | Administrator, Device Manager, Manager |
+| `event-notifications.devices.delete` | This API is used to delete registered push device for push destination | Administrator, Device Manager, Manager |
+| `event-notifications.devices.list` | This API is used to get all registered devices for push destination | Administrator, Manager |
+| `event-notifications.tag-subscriptions.list` | The API is get subscriptions for push destination | Administrator, Manager |
+| `event-notifications.tag-subscriptions.devices.list` | This Api is used to get subscriptions by device for push destination | Administrator, Device Manager, Manager |
+| `event-notifications.tag-subscriptions.create` | The API is create subscription for push destination | Administrator, Device Manager, Manager |
+| `event-notifications.tag-subscriptions.delete` | The API is delete subscription for push destination | Administrator, Device Manager, Manager |
+| `event-notifications.channel-groups.create` | This action is to integrate a new channel group | Administrator, Device Manager, Manager |
+| `event-notifications.channel-groups.read` | This action is to read a channel group | Administrator, Device Manager, Manager, Reader |
+| `event-notifications.channel-groups.list` | This action is to get all channel groups | Administrator, Device Manager, Manager, Reader |
+| `event-notifications.channel-groups.update` | This action is to update a channel group | Administrator, Device Manager, Manager |
+| `event-notifications.channel-groups.delete` | This action is to delete a channel group | Administrator, Manager |
+| `event-notifications.channels.create` | This action is to create fcm channel | Administrator, Device Manager, Manager |
+| `event-notifications.channels.read` | This action is to read a channel | Administrator, Device Manager, Manager, Reader |
+| `event-notifications.channels.list` | This action is to read all fcm channels | Administrator, Device Manager, Manager, Reader |
+| `event-notifications.channels.update` | This action is to update fcm channel | Administrator, Device Manager, Manager |
+| `event-notifications.channels.delete` | This action is to delete a fcm channel | Administrator, Manager |
 {: caption="Table 36. Service actions - Event Notifications" caption-side="top"}
 {: #actions-table36}
 {: tab-title="Actions"}
