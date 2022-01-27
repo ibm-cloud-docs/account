@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2022
-lastupdated: "2022-01-10"
+lastupdated: "2022-01-27"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -24,7 +24,7 @@ FAQs for your {{site.data.keyword.cloud}} account might include questions about 
 {: #create-account}
 {: faq}
 
-You can create an account by [registering](https://cloud.ibm.com/registration){: external} your email address.
+You can create an account by [registering](https://cloud.ibm.com/registration){: external} your email address. For identity verification, a credit card is required when you create a new account. New accounts are created as Pay-As-You-Go accounts, except purchased subscriptions. For more information, see [Account types](docs/account?topic=account-accounts).
 
 ## How do I get help with issues with creating an account?
 {: #account-error}
