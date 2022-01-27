@@ -24,7 +24,7 @@ FAQs for your {{site.data.keyword.cloud}} account might include questions about 
 {: #create-account}
 {: faq}
 
-You can create an account by [registering](https://cloud.ibm.com/registration){: external} your email address. For identity verification, a credit card is required when you create a new account. New accounts are created as Pay-As-You-Go accounts, except purchased subscriptions. For more information, see [Account types](docs/account?topic=account-accounts).
+You can create an account by [registering](/registration){: external} your email address. For identity verification, a credit card is required when you create a new account. New accounts are created as Pay-As-You-Go accounts, except purchased subscriptions. For more information, see [Account types](/docs/account?topic=account-accounts).
 
 ## How do I get help with issues with creating an account?
 {: #account-error}
