@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2015, 2021
+  years: 2015, 2022
 
-lastupdated: "2021-12-17"
+lastupdated: "2022-01-27"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -12,24 +12,8 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:help: data-hd-content-type='help'}
-{:support: data-reuse='support'}  
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:external: target="_blank" .external}
-{:video: .video}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Inviting users to an account
 {: #iamuserinv}
@@ -37,7 +21,7 @@ subcollection: account
 Use {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) to invite users, cancel invitations, or resend a pending invitation. You can invite a single user or multiple users.
 {: shortdesc}
 
-From June 1, 2021, to enhance security and user protection, {{site.data.keyword.Bluemix}} requires all users to accept an invitation in order to become an active user within a new account. [Learn more.](#pending-invitations)
+All users must accept an invitation to become an active user within a new account. [Learn more.](#pending-invitations)
 {: important}
 
 ## Watch and learn
@@ -78,7 +62,7 @@ To invite users and manage outstanding invitations, you must have at least one o
 Depending on your access level, you can invite new users and assign all or just some types of access. For example, if you're not the account owner, but you're a Cloud Foundry organization manager, you can invite users and assign only Cloud Foundry access.
 {: note}
 
-## Setting up an invitation
+## Inviting users in the console
 {: #invitations}
 {: help} 
 {: support}
@@ -90,27 +74,42 @@ To invite users, complete the following steps:
 2. Click **Invite users**.
 3. Specify the email addresses of the users. If you are inviting more than one user with a single invitation, they are all assigned the same access.
 
-   You can restrict membership to your account based on the domain of the users that are invited. This way, only users from a specific domains can be invited to the account. For more information, see [Restricting user domains for account invitations](/docs/account?topic=account-restrict-acct-invite).
+   You can restrict membership to your account based on the domain of the users that are invited. This way, only users from a specific domain can be invited to the account. For more information, see [Restrict user domains for account invitations](/docs/account?topic=account-restrict-acct-invite).
    {: note}
 
 4. Add one or more of the access options that you manage. You must assign at least one access option. For any access options that you don't add and configure, the default value of **No access** is assigned. Depending on the options that you are authorized to manage, you can assign the following types of access:
 
    * Add users to access groups. Click **Add** for each access group that you want the users to belong to. 
    * Manually assign users access. Expand the section to assign individual IAM access policies, Cloud Foundry roles, or classic infrastructure permissions.
-     * Select **Cloud Foundry**, choose an organization, then select a region to select a specific space, and assign a space role. An organization and space role are both required to add the access assignment to the invite.
-     * Select **Classic infrastructure**, and then choose from the three permission sets.
-     * Select **IAM services**, and then select the option for all services or just a specific service. Next, you can scope the access to the entire account or just one resource group. Then, select all roles that apply. To view what actions are mapped to each role, click the **Actions for role** option to view a list of all actions that are mapped to a specific role. \n  \n Some services support the use of advanced operators to grant access to resources that satisfy specific naming conventions. See [Assigning access by using wildcard policies](/docs/account?topic=account-wildcard) for more information. 
-     
-         If you select the **Account** scope for the access policy, the user must already have the Viewer role or higher on the resource group or groups that contain the resources you want the user to have access to. Without a role on a resource group, the user can't work with the resource from the Resource list page in the console.
-         {: tip}
-     
-     * Select **Account management**, and then choose from the all account management services option or select a specific service. Then, select all roles that apply.
-     
+      * Select **Cloud Foundry**, choose an organization, then select a region to select a specific space, and assign a space role. An organization and space role are both required to add the access assignment to the invite.
+      * Select **Classic infrastructure**, and then choose from the three permission sets.
+      * Select **IAM services**, and then select the option for all services or just a specific service. Next, you can scope the access to the entire account or just one resource group. Then, select all roles that apply. To view what actions are mapped to each role, click the **Actions for role** option to view a list of all actions that are mapped to a specific role.   \n  \n Some services support the use of advanced operators to grant access to resources that satisfy specific naming conventions. See [Assigning access by using wildcard policies](/docs/account?topic=account-wildcard) for more information. 
+
+      If you select the **Account** scope for the access policy, the user must already have the Viewer role or higher on the resource group or groups that contain the resources you want the user to have access to. Without a role on a resource group, the user can't work with the resource from the Resource list page in the console.
+      {: tip}
+
+      * Select **Account management**, and then choose from the all account management services option or select a specific service. Then, select all roles that apply.
 5. Select **Add** to save the access assignment to the invitation.
 6. After you add all the necessary access assignments, click **Invite**.
 
-You can cancel an invitation for any users that are shown in a Processing or Pending state in the Status column. If an invited user did not receive an invitation, you can resend the invitation to any user in a Pending state. You can only add more policies and permissions after users accepted the invitation.
+You can cancel an invitation for any users that are shown in a Processing or Pending state in the Status column of the [Users page](/iam/users). If an invited user did not receive an invitation, you can resend the invitation to any user in a Pending state. You can add more policies and permissions only after a user accepts the invitation.
 {: note}
+
+### Adding VPN-only users
+{: #add-vpn-only}
+{: ui}
+
+Any user with the following permissions can add a VPN-only user:
+
+- For Cloud Foundry, you must have the Manager organization role. 
+- For classic infrastructure, you must have the Manage Users permission on the account.
+- For IAM access, you must have the Administrator or Editor role on the user management account management service. 
+
+To add a VPN-only user, use the following steps:
+
+1. On the Users page, click **Add VPN-only user**.
+2. Enter the personal information details for the user.
+3. Click **Save**.   
 
 ## Inviting users by using the CLI
 {: #cli-invite}
@@ -118,7 +117,7 @@ You can cancel an invitation for any users that are shown in a Processing or Pen
 
 To invite users by using the CLI, run the following command:
 
-```bash
+```sh
 ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE, --space-role SPACE_ROLE]]
 ```
 {: codeblock}
@@ -130,7 +129,6 @@ By using the CLI, you can choose to assign Cloud Foundry access or no access and
 {: api}
 
 You can use the [API](https://cloud.ibm.com/apidocs/user-management#invite-users){: external} to invite users in bulk. All users that are included in a single invitation are assigned the same access. When you invite users by using the API, you enter emails in a comma-separated list with each entry that is surrounded by quotations. This example assigns access by adding the user to an access group.
-
 
 ``` bash
 curl -X POST https://user-management.cloud.ibm.com/v2/accounts/987d4cfd77b04e9b9e1a6asdcc861234/users -H 'Authorization: Bearer <IAM_TOKEN>'
@@ -344,7 +342,8 @@ fmt.Println(string(b))
 {: codeblock}
 {: go}
 
-## Pending invitations
+
+## Canceling or resending pending invitations
 {: #pending-invitations}
 
 After inviting new users to join your account, {{site.data.keyword.cloud_notm}} requires all except VPN-only users to accept the invitation to become an active user in your account.
@@ -352,24 +351,30 @@ After inviting new users to join your account, {{site.data.keyword.cloud_notm}} 
 The invitation expires after 30 days. New users to {{site.data.keyword.cloud_notm}} can accept an invitation only by using the invitation link that they received through email.
 {: note}
 
-### Accepting invitations in the console
+You can cancel an invitation for any users that are shown in a Processing or Pending state in the Status column of the [Users page](/iam/users). If an invited user did not receive an invitation, you can resend the invitation to any user in a Pending state. 
+
+1. Go to the [Users page](/iam/users).
+2. Locate the row for the user in `Processing` or `Pending` state.
+3. Click the **Actions** icon ![More Actions icon](../icons/action-menu-icon.svg "Actions"), then choose to **Resend invite** or **Cancel invite**.
+
+## Accepting invitations in the console
 {: #accepting-invitations-ui}
 {: ui}
 
-If the invited user is already a member of {{site.data.keyword.cloud_notm}}, they receive an invitation link in their notifications and by email. On the [Notifications page](https://cloud.ibm.com/user/notifications){: external}, users can use the search field to locate an invitation or filter by the notification type called `account`. For more information, see [Viewing notifications](/docs/get-support?topic=get-support-viewing-notifications).
+If the invited user is already a member of {{site.data.keyword.cloud_notm}}, they receive an invitation link in their notifications and by email. On the [Notifications page](https://cloud.ibm.com/user/notifications){: external}, users can use the search field to locate an invitation or filter by the notification type called `account`. For more information, see [Managing invitation notifications](/docs/account?topic=account-email-prefs#managing-invitation-notifications) and [Viewing notifications](/docs/get-support?topic=get-support-viewing-notifications).
 
-### Accepting invitations by using the CLI
+## Accepting invitations by using the CLI
 {: #cli-accepting}
 {: cli}
 
 If the invited user is already a member of {{site.data.keyword.cloud_notm}, they can accept invitations by using the CLI. In the following [**`ibmcloud login`**](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login) command, the `ACCOUNT_ID` is the ID of the targeted account that the user is invited to join.
 
-```bash
+```sh
 ibmcloud login -c ACCOUNT_ID --accept
 ```
 {: codeblock}
 
-### Accepting invitations by using the API
+## Accepting invitations by using the API
 {: #api-accepting}
 {: api}
 
@@ -385,19 +390,3 @@ curl --request POST \
   }
 ```
 {: codeblock}
-
-## Adding VPN-only users
-{: #add-vpn-only}
-{: ui}
-
-Any user with the following permissions can add a VPN-only user:
-
-- For Cloud Foundry, you must have the Manager organization role. 
-- For classic infrastructure, you must have the Manage Users permission on the account.
-- For IAM access, you must have the Administrator or Editor role on the user management account management service. 
-
-To add a VPN-only user, use the following steps:
-
-1. On the Users page, click **Add VPN-only user**.
-2. Enter the personal information details for the user.
-3. Click **Save**.
