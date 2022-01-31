@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-09-24"
+  years: 2020, 2022
+lastupdated: "2022-01-31"
 
 keywords: deprecate software, restore software, catalog, catalogs, software, private catalog
 
@@ -92,7 +92,7 @@ You need the version locator for your software version. To find it, run the **`i
 
 1. Deprecate the existing software version.
     ```bash
-    ibmcloud catalog offering deprecate --version-locator <VERSION_LOCATOR>
+    ibmcloud catalog offering version deprecate-version --version-locator <VERSION_LOCATOR>
     ```
     {: codeblock}
     
@@ -110,20 +110,20 @@ When you restore a deprecated version, you are required to validate and publish 
 
 1. Restore the deprecated version. This action creates a draft version.
     ```bash
-    ibmcloud catalog offering restore --version-locator <VERSION_LOCATOR>
+    ibmcloud catalog offering version restore-version --version-locator <VERSION_LOCATOR>
     ```
     {: codeblock}
         
 1. Validate the software:
     ```bash
-    ibmcloud catalog offering validate --version-locator **<VERSION_LOCATOR_OF_DRAFT_VERSION>** --cluster <CLUSTER> --namespace "apache-test-deployment"
+    ibmcloud catalog offering version validate --version-locator **<VERSION_LOCATOR_OF_DRAFT_VERSION>** --cluster <CLUSTER> --namespace "apache-test-deployment"
     ```
     {: codeblock}
         
 1. Merge the draft version. This action automatically makes version 2.4.39 available in the catalog.  
       
     ```bash
-    ibmcloud catalog offering merge-draft --version-locator **<VERSION_LOCATOR_OF_DRAFT_VERSION>**
+    ibmcloud catalog offering version merge-draft --version-locator **<VERSION_LOCATOR_OF_DRAFT_VERSION>**
     ```
     {: codeblock}
         

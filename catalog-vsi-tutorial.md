@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-09-22"
+  years: 2021, 2022
+lastupdated: "2022-01-26"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog
 
@@ -81,6 +81,7 @@ The tutorial includes steps for deploying a virtual server image to a target {{s
 {: #catalog-vsi-cfg-deployment}
 {: step}
 
+1. If you need to specify the Terraform runtime version that you want Schematics to use, click the **Override the default Terraform runtime version** checkbox and enter a version.
 1. From the Configure the deployment details section, click **Add deployment values**. 
 1. Select **Parameter** to select all options, and click **Add**.
 1. To customize which parameters are required for users to specify during the installation and which ones are hidden altogether, select a parameter and click **Edit**. For the purposes of this tutorial, configure each parameter as described in the following table.
@@ -122,16 +123,16 @@ The TGZ file that you imported to your private catalog includes a readme file th
 {: #catalog-vsi-validate}
 {: step}
 
-1. From the Validate product tab, enter the name of your Schematics workspace, select a resource group, and click **Next**.
+1. From the Validate product tab, enter the name of your Schematics workspace, select a resource group, select a Schematics region, and click **Next**.
 
    In the **Tags** field, you can enter a name of a specific tag to attach to your virtual server image. Tags provide a way to organize, track usage costs, and manage access to the resources in your account.
    {: tip}
-  
+
 1. From the Deployment values section, review your parameter values, and click **Next**.
 1. In the Validation product section, select **I have read and agree to the following license agreements**.
 1. Click **Validate**.
 
-   To monitor the progress of the validation process, click **View logs**.
+   To monitor the progress of the validation process, click **View logs**. 
    {: tip}
 
 ## Next steps  
