@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2022
 
-lastupdated: "2022-01-27"
+lastupdated: "2022-01-31"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -342,6 +342,47 @@ fmt.Println(string(b))
 {: codeblock}
 {: go}
 
+## Inviting users by using Terraform
+{: #terraform-invite}
+{: terraform}
+
+You can invite users to your {{site.data.keyword.cloud_notm}} account by using Terraform. 
+
+1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+
+2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to invite users by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
+   The following example invites users by using the `ibm_iam_user_invite` resource, where `users` are the list of user email IDs to invite. 
+
+   ```terraform
+   resource "ibm_iam_user_invite" "invite_user" {
+    users = ["test@in.ibm.com"]
+   }
+   ```
+   {: codeblock}
+
+   For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_user_invite){: external} page.
+  
+3. Initialize the Terraform CLI.
+
+   ```terraform
+   terraform init
+   ```
+   {: pre}
+   
+4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to invite users.
+
+   ```terraform
+   terraform plan
+   ```
+   {: pre}
+
+5. Invite the users.
+
+   ```terraform
+   terraform apply
+   ```
+
 
 ## Canceling or resending pending invitations
 {: #pending-invitations}
@@ -382,7 +423,7 @@ If the invited user is already a member of {{site.data.keyword.cloud_notm}, they
 
 ```curl
 curl --request POST \
-  'https://iam.cloud.ibm.com/v2/users/accept' \
+  'https://iam.test.cloud.ibm.com/v2/users/accept' \
   --header 'Authorization: Bearer <IAM_TOKEN>' \
   --header 'Content-Type: application/json' \
   --data-raw '{
