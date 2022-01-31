@@ -22,6 +22,20 @@ toc:
           - account_overview.md
           - enterprise-video.md
       - topicgroup:
+          label: Learning about access management
+          topics:
+          - iam-manageaccess.md
+          - topicgroup:
+              label: What is IBM Cloud Identity and Access Management?
+              topics:
+              - iam-whatis.md
+              - iam-identities.md
+              - iam-access-concepts.md
+              - iam-policies-overview.md 
+              - iam-roles-overview.md 
+              - iam-mappings.md
+          - context-restrictions-what-is.md
+      - topicgroup:
           label: Best practices
           topics:
           - bp_account.md
@@ -55,15 +69,6 @@ toc:
       - topicgroup:
           label: Securing your account
           topics:
-          - iam-whatis.md
-          - context-restrictions-what-is.md
-          - topicgroup:
-              label: Understanding access roles and permissions
-              topics:
-              - iam-manageaccess.md
-              - iam-users_roles.md
-              - iam-infrastructureaccess.md
-              - iam-cfaccess.md
           - topicgroup:
               label: Setting up authentication
               topics:
@@ -76,13 +81,6 @@ toc:
               - iam-idp-integration.md
               - iam-connect_dedicated_id.md
               - iam-saml-federation.md
-          - topicgroup:
-              label: Managing trusted profiles
-              topics:
-              - trustedprofile-create.md
-              - trustedprofile-update.md
-              - trustedprofile-remove.md
-              - trustedprofile-iam-token.md
           - topicgroup:
               label: Managing access
               topics:
@@ -98,6 +96,19 @@ toc:
               - iam-mngcf.md
               - iam-authorizations.md
               - iam-audit-policies.md
+          - topicgroup:
+              label: Administering trusted profiles
+              topics:
+              - trustedprofile-create.md
+              - trustedprofile-update.md
+              - trustedprofile-remove.md
+              - trustedprofile-iam-token.md
+          - topicgroup:
+              label: Controlling context-based restrictions
+              topics:
+              - context-restrictions-create.md
+              - context-restrictions-update.md
+              - context-restrictions-remove.md
           - topicgroup:
               label: Managing identities
               topics:
@@ -130,12 +141,6 @@ toc:
               - iam-classic_infra_keys.md
               - iam-apikey_iamtoken.md
               - iam-apikeys_services.md
-          - topicgroup:
-              label: Controlling context-based restrictions
-              topics:
-              - context-restrictions-create.md
-              - context-restrictions-update.md
-              - context-restrictions-remove.md
       - topicgroup:
           label: Working with resources
           topics:
