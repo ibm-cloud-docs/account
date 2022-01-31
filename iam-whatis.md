@@ -29,7 +29,7 @@ You can also use [trusted profiles](/docs/account?topic=account-create-trusted-p
 
 ![IAM access control in an account by using trusted profiles](images/IAM-trusted-profiles-diagram-2.svg "How IAM access works in an account by using trusted profiles"){: caption="Figure 2. How IAM access works in an account by using trusted profiles" caption-side="bottom"}
 
-For services that don't support the use of {{site.data.keyword.cloud_notm}} IAM policies for managing access, you can use [Cloud Foundry access](/docs/account?topic=account-cfaccess) or [classic infrastructure permissions](/docs/account?topic=account-infrapermission).
+For services that don't support the use of {{site.data.keyword.cloud_notm}} IAM policies for managing access, you can use [Cloud Foundry access](/docs/account?topic=account-mngcf) or [classic infrastructure permissions](/docs/account?topic=account-mngclassicinfra).
 {: note}
 
 ## What features are provided?

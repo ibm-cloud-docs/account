@@ -4,8 +4,8 @@
 
 copyright:
 
-  years: 2019, 2021
-lastupdated: "2021-11-01"
+  years: 2019, 2022
+lastupdated: "2022-01-31"
 
 keywords: resource, account resources, create resource, access to create resources
 
@@ -39,7 +39,7 @@ A [resource](x2004267){: term} is anything that you can create from the catalog 
 
 Services that are managed by using {{site.data.keyword.Bluemix_notm}} [Identity and Access Management (IAM) access control](/docs/account?topic=account-userroles) and belong to a resource group have several benefits. Some of the benefits include the ability to connect to apps and services in any Cloud Foundry space, which means you can connect apps and services from different locations. Because resource groups are not scoped by location, you can provision apps and services from different locations into the same resource group. You can also use fine-grained access control down to an individual instance within a resource group.
 
-Not all services support the use of resource groups and IAM currently. All service instances that are added to Cloud Foundry orgs and spaces when they're created from the catalog are distinctly different from IAM-enabled services. These services are called Cloud Foundry services. Cloud Foundry services have no connection to resource groups and use [Cloud Foundry roles for access management](/docs/account?topic=account-cfaccess). As services enable support for IAM and resource groups, you're notified about the ability to [migrate existing Cloud Foundry instances to a resource group](/docs/account?topic=account-migrate).
+Not all services support the use of resource groups and IAM currently. All service instances that are added to Cloud Foundry orgs and spaces when they're created from the catalog are distinctly different from IAM-enabled services. These services are called Cloud Foundry services. Cloud Foundry services have no connection to resource groups and use [Cloud Foundry roles for access management](/docs/account?topic=account-mngcf). As services enable support for IAM and resource groups, you're notified about the ability to [migrate existing Cloud Foundry instances to a resource group](/docs/account?topic=account-migrate).
 
 ## Required access for creating resources
 {: #creating-resources}

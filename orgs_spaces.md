@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2021
-lastupdated: "2021-09-24"
+  years: 2015, 2022
+lastupdated: "2022-01-31"
 
 keywords: account, add orgs, add spaces, cloud foundry orgs
 
@@ -47,7 +47,7 @@ Spaces
 :   A subgroup within an org that you can use to organize applications, services, and users. Spaces are tied to a specific region in {{site.data.keyword.Bluemix_notm}}.
 
 Users
-:   The role with basic permission in orgs and spaces. You must be assigned to an org before you can be granted other permissions to the spaces within the org. For more details, see [Cloud Foundry access](/docs/account?topic=account-cfaccess).
+:   The role with basic permission in orgs and spaces. You must be assigned to an org before you can be granted other permissions to the spaces within the org. For more details, see [Cloud Foundry access](/docs/account?topic=account-mngcf).
 
 Domains
 :   Provide the route on the internet that is allocated to the org. A route has a subdomain and a domain. A subdomain is typically the application name. A domain might be a system domain or a custom domain that you registered for your application. If you add a custom domain, you must configure your DNS server to resolve your custom domain to point to the {{site.data.keyword.Bluemix_notm}} system domain. In this way, when {{site.data.keyword.Bluemix_notm}} receives a request for your custom domain, it can properly route it to your application.
@@ -80,7 +80,7 @@ If you have a billable account, you can add as many orgs as you need. Lite accou
 
 After you add the org, you're automatically assigned the Organization Manager permission, so you can edit the org name, add users, and create or delete spaces in the org.
 
-You can assign the following [Cloud Foundry roles](/docs/account?topic=account-cfaccess#cfroles) to users in an org. All users who are invited to the account are assigned the auditor role by default.
+You can assign the following [Cloud Foundry roles](/docs/account?topic=account-mngcf#cfroles) to users in an org. All users who are invited to the account are assigned the auditor role by default.
 
 * Organization manager
 * Organization billing manager
@@ -101,7 +101,7 @@ To add a space to an org, complete the following steps.
 3. Select a region and enter a name.
 4. Click **Save**.
 
-After you add users to an org, you can grant them permissions to the spaces. Similar to orgs, spaces also have a set of [Cloud Foundry roles](/docs/account?topic=account-cfaccess#cfroles) with specific permissions that are assigned to team members:
+After you add users to an org, you can grant them permissions to the spaces. Similar to orgs, spaces also have a set of [Cloud Foundry roles](/docs/account?topic=account-mngcf#cfroles) with specific permissions that are assigned to team members:
 
 * Space manager
 * Space developer
