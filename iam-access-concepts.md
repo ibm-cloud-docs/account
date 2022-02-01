@@ -4,7 +4,7 @@ copyright:
 
   years: 2022
 
-lastupdated: "2022-01-31"
+lastupdated: "2022-02-01"
 
 keywords: users level of access, user control, access control, permissions, manage access, access management, platform management tasks, assign roles
 
@@ -14,7 +14,7 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Access management concepts
+# IAM access concepts
 {: #access-management-overview}
 
 The concept of access management consists of a few interrelated components, including users, service IDs, access groups, trusted profiles, resources, policies, roles, actions, and the {{site.data.keyword.cloud_notm}} IAM control system, which allows users to take actions on resources within an account.
