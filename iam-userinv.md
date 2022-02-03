@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2022
 
-lastupdated: "2022-01-31"
+lastupdated: "2022-02-02"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -83,7 +83,9 @@ To invite users, complete the following steps:
    * Manually assign users access. Expand the section to assign individual IAM access policies, Cloud Foundry roles, or classic infrastructure permissions.
       * Select **Cloud Foundry**, choose an organization, then select a region to select a specific space, and assign a space role. An organization and space role are both required to add the access assignment to the invite.
       * Select **Classic infrastructure**, and then choose from the three permission sets.
-      * Select **IAM services**, and then select the option for all services or just a specific service. Next, you can scope the access to the entire account or just one resource group. Then, select all roles that apply. To view what actions are mapped to each role, click the **Actions for role** option to view a list of all actions that are mapped to a specific role.   \n  \n Some services support the use of advanced operators to grant access to resources that satisfy specific naming conventions. See [Assigning access by using wildcard policies](/docs/account?topic=account-wildcard) for more information. 
+      * Select **IAM services**, and then select the option for all services or just a specific service. Next, you can scope the access to the entire account or just one resource group. Then, select all roles that apply. To view what actions are mapped to each role, click the **Actions for role** option to view a list of all actions that are mapped to a specific role.
+      
+         Some services support the use of advanced operators to grant access to resources that satisfy specific naming conventions. See [Assigning access by using wildcard policies](/docs/account?topic=account-wildcard) for more information. 
 
       If you select the **Account** scope for the access policy, the user must already have the Viewer role or higher on the resource group or groups that contain the resources you want the user to have access to. Without a role on a resource group, the user can't work with the resource from the Resource list page in the console.
       {: tip}
@@ -95,9 +97,8 @@ To invite users, complete the following steps:
 You can cancel an invitation for any users that are shown in a Processing or Pending state in the Status column of the [Users page](/iam/users). If an invited user did not receive an invitation, you can resend the invitation to any user in a Pending state. You can add more policies and permissions only after a user accepts the invitation.
 {: note}
 
-### Adding VPN-only users
+## Adding VPN-only users
 {: #add-vpn-only}
-{: ui}
 
 Any user with the following permissions can add a VPN-only user:
 
