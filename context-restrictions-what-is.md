@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-02-02"
+lastupdated: "2022-02-03"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, Cloud Foundry, endpoint type
 
@@ -34,7 +34,7 @@ Context-based restrictions give account owners and administrators the ability to
 
 For an example scenario on creating context-based restrictions, follow the tutorial for [Leveraging context-based restrictions to secure your resources](/docs/account?topic=account-context-restrictions-tutorial).
 
-![A diagram that shows how context-based restrictions work.](images/context-based-restriction.png){: caption="Figure 1. A diagram that shows how context-based restrictions work." caption-side="bottom"}
+![A diagram that shows how context-based restrictions work.](images/CBR-diagram.svg){: caption="Figure 1. A diagram that shows how context-based restrictions work." caption-side="bottom"}
 
 ## Rules
 {: #restriction-rules}
