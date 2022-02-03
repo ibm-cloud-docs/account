@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-02-02"
+lastupdated: "2022-02-03"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -4276,14 +4276,15 @@ Review the available platform and service roles and the actions mapped to each t
 | `secrets-manager.secret-metadata.read` | View the metadata of a secret. | Manager, Reader, SecretsReader, Writer |
 | `secrets-manager.secret-policies.set` | Set secret policies. | Manager |
 | `secrets-manager.secret-policies.get` | Get secret policies. | Manager |
-| `secrets-manager.secret-engine-config.set` | Set secret engine configuration. | Manager |
-| `secrets-manager.secret-engine-config.get` | Get secret engine configuration. | Manager |
+| `secrets-manager.secret-engine-config.set` | Set secrets engine configuration. | Manager |
+| `secrets-manager.secret-engine-config.get` | Get secrets engine configuration. | Manager |
 | `secrets-manager.endpoints.view` | Get service instance endpoints. | Manager, Reader, SecretsReader, Writer |
 | `secrets-manager.secret-versions.list` | List secret versions. | Manager, Reader, SecretsReader, Writer |
 | `secrets-manager.vault-token.create` | Create a Vault token. | Manager |
-| `secrets-manager.notifications.registration.create` | Register a Secrets Manager instance as a source in Event Notifications. | Manager |
-| `secrets-manager.notifications.registration.read` | Get the registration details between a Secrets Manager and Event Notifications instance. | Manager, Reader, SecretsReader, Writer |
-| `secrets-manager.notifications.registration.delete` | Unregister or remove a Secrets Manager instance as a source in Event Notifications. | Manager |
+| `secrets-manager.notifications-registration.create` | Register a Secrets Manager instance as a source in Event Notifications. | Manager |
+| `secrets-manager.notifications-registration.read` | Get the registration details between a Secrets Manager and Event Notifications instance. | Manager, Reader, SecretsReader, Writer |
+| `secrets-manager.notifications-registration.delete` | Unregister or remove a Secrets Manager instance as a source in Event Notifications. | Manager |
+| `secrets-manager.notifications-registration.test` | Send a test event to the registered Event Notifications service instance. | Manager, Reader, SecretsReader, Writer |
 {: caption="Table 94. Service actions - Secrets Manager" caption-side="top"}
 {: #actions-table94}
 {: tab-title="Actions"}
