@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-02-01"
+lastupdated: "2022-02-02"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, Cloud Foundry, endpoint type
 
@@ -40,7 +40,7 @@ For an example scenario on creating context-based restrictions, follow the tutor
 {: #restriction-rules}
 {: #context-restrictions-rule-whatis}
 
-A rule associates a {{site.data.keyword.cloud}} resource with a set of contexts: 
+A rule associates an {{site.data.keyword.cloud}} resource with a set of contexts: 
 * The cloud resource is specified by resource attributes similar to IAM access policies.
 * A context is a combination of network zones and endpoint types.
 
