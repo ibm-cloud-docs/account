@@ -99,6 +99,7 @@ You can cancel an invitation for any users that are shown in a Processing or Pen
 
 ## Adding VPN-only users
 {: #add-vpn-only}
+{: ui}
 
 Any user with the following permissions can add a VPN-only user:
 
@@ -387,6 +388,7 @@ You can invite users to your {{site.data.keyword.cloud_notm}} account by using T
 
 ## Canceling or resending pending invitations
 {: #pending-invitations}
+{: ui}
 
 After inviting new users to join your account, {{site.data.keyword.cloud_notm}} requires all except VPN-only users to accept the invitation to become an active user in your account.
 
@@ -424,7 +426,7 @@ If the invited user is already a member of {{site.data.keyword.cloud_notm}, they
 
 ```curl
 curl --request POST \
-  'https://iam.test.cloud.ibm.com/v2/users/accept' \
+  'https://iam.cloud.ibm.com/v2/users/accept' \
   --header 'Authorization: Bearer <IAM_TOKEN>' \
   --header 'Content-Type: application/json' \
   --data-raw '{
@@ -432,3 +434,4 @@ curl --request POST \
   }
 ```
 {: codeblock}
+
