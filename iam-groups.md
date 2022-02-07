@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2021
-lastupdated: "2021-12-23"
+  years: 2018, 2022
+lastupdated: "2022-02-07"
 
 keywords: access groups, access group, create group, assign access to group
 
@@ -32,6 +32,8 @@ subcollection: account
 
 An access group can be created to organize a set of users and service IDs into a single entity that makes it easy for you to assign access. You can assign a single policy to the group instead of assigning the same access multiple times per individual user or service ID.
 {: shortdesc}
+
+Access groups are assigned policies that grant roles and permissions to the members of that group. Members of an access group can include both users and service IDs. The members inherit the policies, roles, and permissions that are assigned to the access group, and also keep the roles that they are assigned individually.
 
 To make assigning and managing access even easier, you can set up resource groups to organize a set of resources that you want a group of users to have access to. When your resource group is set up, you can assign a policy that gives access to all resources within that group instead of creating access policies for individual service instances within your account.
 {: tip}
