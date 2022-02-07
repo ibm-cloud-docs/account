@@ -4,7 +4,7 @@ copyright:
 
   years: 2021, 2022
 
-lastupdated: "2022-01-12"
+lastupdated: "2022-02-07"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
@@ -17,10 +17,10 @@ subcollection: account
 # Creating trusted profiles
 {: #create-trusted-profile}
 
-You can use a trusted profile to automatically grant federated users access to your account with conditions based on SAML attributes from your corporate directory. And, you can use trusted profile to set up fine-grained authorization for applications that are running in compute resources. As a result, you aren't required to create service IDs or API keys for the compute resources. 
+You can use trusted profiles to automatically grant federated users access to your account with conditions based on SAML attributes from your corporate directory. Trusted profiles can also be used to set up fine-grained authorization for applications that are running in compute resources. This way, you aren't required to create service IDs or API keys for the compute resources.
 {: shortdesc}
 
-When you initially create a trusted profile, you can build trust only with either federated users or compute resources. After you created the trusted profile, you can add more conditions for federated users and compute resources in the same trusted profile.
+When you initially create a trusted profile, you can build trust with either federated users *or* compute resources. After the trusted profile is created, you can add more conditions for federated users and compute resources in the same trusted profile.
 
 You must be an administrator the IAM Identity Service in the account. For more information, see [IAM access](/docs/account?topic=account-userroles). 
 {: note}
