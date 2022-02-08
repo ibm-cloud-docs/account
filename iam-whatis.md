@@ -4,7 +4,8 @@ copyright:
 
   years: 2017, 2022
 
-lastupdated: "2022-01-31"
+lastupdated: "2022-02-07"
+
 
 keywords: what is IAM, IAM features, IAM API, how IAM works
 
@@ -84,7 +85,7 @@ You can create multiple API keys for a user to support key rotation scenarios, a
 
 A service ID identifies a service or application similar to how a user ID identifies a user. These are IDs that can be used by applications to authenticate with an {{site.data.keyword.cloud_notm}} service. Policies can be assigned to each service ID to control the level of access that is allowed by an application that uses the service ID, and an API key can be created to enable the authentication. For more information, see [Creating and working with service IDs](/docs/account?topic=account-serviceids).
 
-Infrastructure-as-a-Service (IaaS) doesn't support operations made by service IDs. If an account includes IaaS and PaaS, administrative functions done by a service ID might not work as intended if the operation is dependent on API calls to IaaS. In an account that includes IaaS, be sure that account admins complete administrative functions. For example, functional IDs can be used for administrative functions. In some cases, IBM support may be able to assist with some administrative functions that will span both IaaS and PaaS.
+Infrastructure-as-a-Service (IaaS) doesn't support operations that are made by service IDs. If an account includes IaaS and PaaS, administrative functions that are made by a service ID might not work as intended if the operation depends on API calls to IaaS. In an account that includes IaaS, be sure that account administrators complete the administrative functions. For example, functional IDs can be used for administrative functions. In some cases, IBM support might be able to assist with some administrative functions that span both IaaS and PaaS.
 {: note}
 
 ### Multifactor authentication

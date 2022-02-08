@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-12-16"
+  years: 2021, 2022
+lastupdated: "2022-02-03"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, Cloud Foundry, endpoint type
 
@@ -34,13 +34,13 @@ Context-based restrictions give account owners and administrators the ability to
 
 For an example scenario on creating context-based restrictions, follow the tutorial for [Leveraging context-based restrictions to secure your resources](/docs/account?topic=account-context-restrictions-tutorial).
 
-![A diagram that shows how context-based restrictions work.](images/context-based-restriction.png){: caption="Figure 1. A diagram that shows how context-based restrictions work." caption-side="bottom"}
+![A diagram that shows how context-based restrictions work.](images/CBR-diagram.svg){: caption="Figure 1. A diagram that shows how context-based restrictions work." caption-side="bottom"}
 
 ## Rules
 {: #restriction-rules}
 {: #context-restrictions-rule-whatis}
 
-A rule associates a {{site.data.keyword.cloud}} resource with a set of contexts: 
+A rule associates an {{site.data.keyword.cloud}} resource with a set of contexts: 
 * The cloud resource is specified by resource attributes similar to IAM access policies.
 * A context is a combination of network zones and endpoint types.
 
@@ -108,7 +108,7 @@ To manage network zones, you must be assigned a specific role for the context-ba
 | Administrator | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones  |
 {: caption="Table 2. Roles and example actions for network zones" caption-side="top"}
 
-For more information, see [Actions and roles for account management services](/docs/account-working?topic=account-working-account-services&interface=ui#account-management-actions-roles).
+For more information, see [Actions and roles for account management services](/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles).
 
 You can also use network zones to restrict access at the account level. To set account level restrictions by using network zones, go to **Manage** > **IAM** > **Settings** and enter the name of your network zone.
 {: note}

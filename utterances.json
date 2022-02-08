@@ -467,6 +467,8 @@
     "i want delete my account ...tell me how to proceed",
     "don't need this account. how can I delete it",
     "delete or deactivate my IBM cloud account",
+    "I just want to delete the account and my credit card information",
+    "I don't want a Pay-As-You-Go account",
     "close this account"
   ],
   "remove-pi": [
@@ -676,6 +678,7 @@
     "switching accounts",
     "How do I switch between several accounts",
     "change to another account",
+    "Why does a second account appear in my account list",
     "switch to a different account"
   ],
   "bookmark-page-account": [
@@ -1330,7 +1333,6 @@
     "who can provide me the access",
     "who can provide me access",
     "upgrade my access rights",
-    "I don't have access to Account Settings",
     "who can give me access",
     "need access to my company account",
     "I have no access to my resource",

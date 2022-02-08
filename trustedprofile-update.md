@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2021
+  years: 2021, 2022
 
-lastupdated: "2021-11-29"
+lastupdated: "2022-02-07"
 
 keywords: trusted profile, federated users, granting access, update trusted profile, compute resource, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
