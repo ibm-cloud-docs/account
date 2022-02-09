@@ -73,7 +73,7 @@ Yes, you can delete a resource group only if it doesn't contain any resources, a
 {: #add-users-resource-group}
 {: faq}
 
-Resource groups are a method of organizing resources and are not directly associated with the management of users. For information on creating a resource group, see [Adding resources to a resource group](/docs/account?topic=account-rgs#add_to_rgs). After your resource group is created, an account administrator can grant access to a specific user. Or, an account administrator can create an access group to provide access to a resource group. For information, see [Creating an Access Group](/docs/account?topic=account-groups#create_ag) in the console. After an access group is created, complete the following steps to associate the access group with a resource group:
+Resource groups are a method of organizing resources and are not directly associated with the management of users. For information on creating a resource group, see [Adding resources to a resource group](/docs/account?topic=account-rgs#add_to_rgs). After your resource group is created, an account administrator can grant access to a specific user. Or, an account administrator can create an access group to provide access to a resource group. For more information, see [Creating an Access Group](/docs/account?topic=account-groups#create_ag) in the console. After an access group is created, complete the following steps to associate the access group with a resource group:
  
 1. Click **Manage** > **Access (IAM)** and click **Access groups**.
 2. Choose an access group. 
@@ -81,7 +81,7 @@ Resource groups are a method of organizing resources and are not directly associ
 4. Click **IAM services**.  
 5. Select the type of access that you want to assign.
 6. Scope the access to all resources, or select resources based on specific resource groups as attributes. 
-7. Select the platform, service and resource group access for the resource group. 
+7. Select the platform, service, and resource group access for the resource group. 
 8. Click **Add** and **Assign**.
 
 You can't use access groups with infrastructure service resources or permissions.
@@ -91,7 +91,7 @@ You can't use access groups with infrastructure service resources or permissions
 {: #instances-between-rgs}
 {: faq}
 
-You can't move service instances between resource groups. If you assign a service instance incorrectly, you must delete and recreate the instance to assign it to another resource group.  
+You can't move service instances between resource groups. If you assign a service instance incorrectly, you must delete and re-create the instance to assign it to another resource group.  
 
 ## How do I delete a service from my account?
 {: #service-removal}
@@ -133,3 +133,21 @@ To view just your classic infrastructure resources, select from the following op
 
 * Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Classic Infrastructure**.
 * Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Dashboard**, and click any of the links that are listed in the Classic infrastructure widget.
+
+## What causes resource restorations to fail?
+{: #reclamation-fail}
+{: faq}
+
+A resource restoration can fail if you try to restore a resource in a deleted resource group or the resource restoration request isn't submitted in time. Most requests must be submitted within 7 days. 
+
+## How do I retrieve details on a resource that is scheduled for reclamation?
+{: #reclamation-list}
+{: faq}
+
+After the instance is deleted from the console, you can view it in your account by using the CLI in the SCHEDULED state. The SCHEDULED state indicates that this instance is scheduled for reclamation. For more information, see [Working with resources and resource groups](/docs/account?topic=cli-ibmcloud_commands_resource#command-options-37).
+
+## Can you restore a resource that is in a deleted resource group?
+{: #reclamation-delete}
+{: faq}
+
+You can restore a resource from a deleted resource group. [Create a support case](/unifiedsupport/cases/add){: external} in the {{site.data.keyword.Bluemix_notm}} Support Center and specify in the description of the case that you want to restore the resource that's in a deleted resource group.
