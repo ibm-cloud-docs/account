@@ -1,8 +1,10 @@
 ---
 
 copyright:
-  years: 2018, 2021
-lastupdated: "2021-08-24"
+
+  years: 2018, 2022
+
+lastupdated: "2022-02-09"
 
 keywords: account settings, edit account name, view account type, cancel account, delete account, terminate account
 
@@ -10,21 +12,20 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:help: data-hd-content-type='help'}
-{:support: data-reuse='support'}
-{:tip: .tip}
-{:important: .important}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
-
-# Viewing your account settings
+# Managing your account settings
 {: #account_settings}
+
+As an {{site.data.keyword.cloud}} account owner, you can change the account name and view your account type. If you have an access policy with the Operator role or higher on all account management services, you can view and update the account name.
+{: shortdesc}
+
+## Viewing your account settings
+{: #view-acct-settings}
 {: help} 
 {: support}
 
-As an {{site.data.keyword.cloud}} account owner, you can change the account name and view your account type. If you have an access policy with the Operator role or higher on all account management services, you can view and update the account name.  
-{: shortdesc}
+To view your account settings, go to **Manage** > **Account**, and select **Account settings** in the {{site.data.keyword.cloud_notm}} console. 
 
 ## Editing the account name
 {: #change-acct-name}
@@ -41,8 +42,7 @@ You can change your account to a different type by upgrading or converting your 
 ## Closing an account 
 {: #cancel-account}
 
-We're sad to see you go! If there's any way we can assist you before you decide to close your account, [reach out to us](https://{DomainName}/unifiedsupport/supportcenter){: external}.
+We're sad to see you go! If there's any way we can assist you before you decide to close your account, [reach out to us](/unifiedsupport/supportcenter){: external}.
 
-To close a Lite account, go to **Manage** > **Account**, select **Account settings**. From the account settings page, click **Close account**. You can reactivate your account if you upgrade to a Pay-As-You-Go or Subscription account. After an account is closed for 30 days, all data is deleted and all services are removed. 
-
-If you want to close a Pay-As-You-Go or Subscription account, contact [Support](https://{DomainName}/unifiedsupport/supportcenter). A support case is required for account security and documentation purposes. After your Pay-As-You-Go account is closed, all usage is stopped across all services running in your account, and the usage that is accrued in the current billing period is sent in one final invoice at the close of the billing period. Closing your account can't be undone and your data is unrecoverable.  
+* To close a Lite account, go to **Manage** > **Account**, select **Account settings**. From the account settings page, click **Close account**. You can reactivate your account if you upgrade to a Pay-As-You-Go or Subscription account. After an account is closed for 30 days, all data is deleted and all services are removed. 
+* If you want to close a Pay-As-You-Go or Subscription account, contact [Support](/unifiedsupport/supportcenter). A support case is required for account security and documentation purposes. After your Pay-As-You-Go account is closed, all usage is stopped across all services running in your account, and the usage that is accrued in the current billing period is sent in one final invoice at the close of the billing period. Closing your account can't be undone and your data is unrecoverable.  
