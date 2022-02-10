@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-02-09"
+lastupdated: "2022-02-10"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -5378,6 +5378,17 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 
+| Role | Description |
+| ----- | :----- |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+{: row-headers}
+{: caption="Table 121. Service roles - VPN for VPC" caption-side="top"}
+{: #service-roles-table121}
+{: tab-title="Service roles"}
+{: tab-group="is.vpn"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `is.vpn.vpn.create` |  | Administrator, Editor |
@@ -5386,6 +5397,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.vpn.vpn.read` |  | Administrator, Editor, Operator, Viewer |
 | `is.vpn.vpn.list` |  | Administrator, Editor, Operator, Viewer |
 | `is.vpn.dashboard.view` |  | Administrator, Editor, Operator, Viewer |
+| `is.vpn.config.read` | Configuration Information Point API access | Service Configuration Reader |
 {: caption="Table 121. Service actions - VPN for VPC" caption-side="top"}
 {: #actions-table121}
 {: tab-title="Actions"}
