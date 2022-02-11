@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2022
 
-lastupdated: "2022-02-02"
+lastupdated: "2022-02-11"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -411,7 +411,7 @@ If the invited user is already a member of {{site.data.keyword.cloud_notm}}, the
 {: #cli-accepting}
 {: cli}
 
-If the invited user is already a member of {{site.data.keyword.cloud_notm}, they can accept invitations by using the CLI. In the following [**`ibmcloud login`**](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login) command, the `ACCOUNT_ID` is the ID of the targeted account that the user is invited to join.
+If the invited user is already a member of {{site.data.keyword.cloud_notm}}, they can accept invitations by using the CLI. In the following [**`ibmcloud login`**](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login) command, the `ACCOUNT_ID` is the ID of the targeted account that the user is invited to join.
 
 ```sh
 ibmcloud login -c ACCOUNT_ID --accept
@@ -422,7 +422,7 @@ ibmcloud login -c ACCOUNT_ID --accept
 {: #api-accepting}
 {: api}
 
-If the invited user is already a member of {{site.data.keyword.cloud_notm}, they can accept invitations by using the API. In the following example, the `ACCOUNT_ID` is the ID of the targeted account that the user is invited to join and the `IAM_TOKEN` belongs to the invitee.
+If the invited user is already a member of {{site.data.keyword.cloud_notm}}, they can accept invitations by using the API. In the following example, the `ACCOUNT_ID` is the ID of the targeted account that the user is invited to join and the `IAM_TOKEN` belongs to the invitee.
 
 ```curl
 curl --request POST \
