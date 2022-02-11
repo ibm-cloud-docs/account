@@ -208,6 +208,7 @@ toc:
               - catalog-add-private.md
               - catalog-custom-private.md
               - catalog-enterprise-filters.md
+              - catalog-enterprise-share.md
           - topicgroup:
               label: Managing catalogs
               topics:
