@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-02-10"
+lastupdated: "2022-02-11"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -2553,7 +2553,10 @@ Review the available platform and service roles and the actions mapped to each t
 | `iam-identity.idp.update` | Update an existing Identity Provider configuration. | Administrator, Editor, Operator |
 | `iam-identity.idp.delete` | Delete an Identity Provider configuration. | Administrator, Operator |
 | `iam-identity.idp.test` | Test an Identity Provider configuration. | Administrator, Editor, Operator |
+| `iam-identity.idp.metadata` | actiondescription.iam-identity.idp.metadata | Administrator, Editor, Operator |
 | `iam-identity.account.get` | Get the account configuration. | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
+| `iam-identity.account.create` | Create a new account configuration. | Administrator, Operator |
+| `iam-identity.account.update` | Update an existing account configuration. | Administrator, Editor, Operator |
 | `iam-identity.account.create` | Create a new account configuration. | Administrator, Operator |
 | `iam-identity.account.update` | Update an existing account configuration. | Administrator, Editor, Operator |
 | `iam-identity.account.enable_idp` | Enable an Identity Provider configuration for the account. | Administrator, Editor, Operator |
