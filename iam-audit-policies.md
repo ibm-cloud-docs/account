@@ -96,7 +96,7 @@ fmt.Println(string(b))
 {: go}
 
 * `format=include_last_permit`: Include the last permit information for each policy.
-* `sort=-last_permit_at`: Sort by date in ascending order. The policies that have not been used for any permits and the oldest permits are listed first.
+* `sort=last_permit_at`: Sort by date in ascending order. The policies that have not been used for any permits and the oldest permits are listed first.
 
 The format of the response is represented in JSON.
 
