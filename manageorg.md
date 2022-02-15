@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2021
-lastupdated: "2021-09-24"
+  years: 2015, 2022
+lastupdated: "2021-01-31"
 
 keywords: update orgs, update spaces, quotas, Cloud Foundry orgs, domains
 
@@ -51,11 +51,11 @@ You can view the resources of only one org at a time. If you are a member of mul
 * To edit user roles at the org level, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions"), and select **Users**.
 {: #listmembers}
 
-   Depending on how you want to modify the user permissions, select or clear the checkbox for a specific role. The roles that you can assign at the organization level are Manager, Billing manager, and Auditor. For more information, see [Cloud Foundry roles](/docs/account?topic=account-cfaccess#cfroles).
+   Depending on how you want to modify the user permissions, select or clear the checkbox for a specific role. The roles that you can assign at the organization level are Manager, Billing manager, and Auditor. For more information, see [Cloud Foundry roles](/docs/account?topic=account-mngcf#cfroles).
 
 * To edit user roles for a specific space, click the org in which the space is assigned. Then, click the name of the space.
 
-   Depending on how you want to modify the user permissions, select or clear the checkbox for a specific role. The roles that you can assign at the space level are Manager, Developer, and Auditor. For more information, see [Cloud Foundry roles](/docs/account?topic=account-cfaccess#cfroles).
+   Depending on how you want to modify the user permissions, select or clear the checkbox for a specific role. The roles that you can assign at the space level are Manager, Developer, and Auditor. For more information, see [Cloud Foundry roles](/docs/account?topic=account-mngcf#cfroles).
 
 * To manage your domains, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions") for the respective org, and select **Domains**.
 {: #managedomains}

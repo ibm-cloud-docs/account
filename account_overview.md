@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2021
-lastupdated: "2021-09-23"
+  years: 2019, 2022
+lastupdated: "2022-01-31"
 
 keywords: IBM Cloud account, account differences, account overview, account components, resource, Cloud Foundry, API key, users
 
@@ -54,5 +54,5 @@ Cloud Foundry spaces
 Another important aspect of the previous diagram is the depiction of the three types of access management systems that you can use to provide account users access to resources within the account.
 
 * You can use IAM [access roles](/docs/account?topic=account-userroles) to provide users access to all resources that belong to a resource group. You can also give users access to manage resource groups and create new service instances that are assigned to a resource group.
-* You can use Cloud Foundry [organization and space roles](/docs/account?topic=account-cfaccess) to provide users access to any service instances that are in a Cloud Foundry space.
-* You can use [classic infrastructure permissions](/docs/account?topic=account-infrapermission) to grant users more granular permissions for classic infrastructure resources. You assign device access and VPN subnet access separately.
+* You can use Cloud Foundry [organization and space roles](/docs/account?topic=account-mngcf) to provide users access to any service instances that are in a Cloud Foundry space.
+* You can use [classic infrastructure permissions](/docs/account?topic=account-mngclassicinfra) to grant users more granular permissions for classic infrastructure resources. You assign device access and VPN subnet access separately.
