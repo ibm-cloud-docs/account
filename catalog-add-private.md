@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2021
-lastupdated: "2021-11-01"
+  years: 2019, 2022
+lastupdated: "2022-01-31"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -300,7 +300,7 @@ Complete the following steps to add your software by using the CLI. You can use 
     
 1. Publish your software to make it available to users in your account. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#publish-offering-to-account) for publishing to your account.
     ```bash
-    ibmcloud catalog offering publish-to-account --version-locator <LOCATOR>
+    ibmcloud catalog offering publish account --version-locator <LOCATOR>
     ```
     {: codeblock}
 

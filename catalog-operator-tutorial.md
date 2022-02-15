@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-08-31"
+  years: 2021, 2022
+lastupdated: "2022-01-31"
 
 keywords: onboard software, operator, validate, test, Red Hat OpenShift cluster, sample Node-RED Operator, CSV file, CSV, operator bundle, TGZ file
 
@@ -78,7 +78,7 @@ Make sure that you use the same account to access {{site.data.keyword.registrylo
 
    Enter the version of your software and not the version of your Operator. For example, you might be using Operator version 1.3.0 to install software version 3.1.1. 
    {: important}
-   
+
 1. Click **Add product**.
 
 ## Review the version details
@@ -127,7 +127,7 @@ When users access your Operator from your account, they can view installation in
 To publish the Operator to your account, you're required to validate that it can be successfully installed on the target Red Hat OpenShift cluster.  
 
 1. From the Validate product tab, select the target cluster and project, and click **Next**. 
-1. Enter the name of your Schematics workspace, select a resource group, and click **Next**. 
+1. Enter the name of your Schematics workspace, select a resource group, select a Schematics region, and click **Next**. 
 
    In the **Tags** field, you can enter a name of a specific tag to attach to your Operator. Tags provide a way to organize, track usage costs, and manage access to the resources in your account.
    {: tip}

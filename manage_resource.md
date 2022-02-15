@@ -5,7 +5,8 @@
 copyright:
 
   years: 2019, 2022
-lastupdated: "2022-01-31"
+  
+lastupdated: "2022-02-11"
 
 keywords: resource, account resources, create resource, access to create resources
 
@@ -83,7 +84,7 @@ In this command,`NAME` is the name of the service instance, `SERVICE_NAME or SER
    ```
    {: codeblock}
 
-   To list services, use the [`ibmcloud catalog service marketplace`](/docs/cli/reference/ibmcloud?topic=cli-ibmcloud_catalog#ibmcloud_catalog_service_marketplace) command. 
+   To list services, use the [`ibmcloud catalog service-marketplace`](/docs/cli/reference/ibmcloud?topic=cli-ibmcloud_catalog#ibmcloud_catalog_service_marketplace) command. 
    {: note}
 
 For example, the following command creates a service instance that is named `my-service-instance`, uses service plan `test-   service-plan` of service `test-service` on location `eu-gb`:

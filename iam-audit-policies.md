@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2021
+  years: 2021, 2022
 
-lastupdated: "2021-09-24"
+lastupdated: "2022-02-14"
 
 keywords: auditing IAM policies, last permit information, restore policies
 
@@ -12,16 +12,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Auditing access policies
 {: #iam-audit-policies}
@@ -104,8 +95,8 @@ fmt.Println(string(b))
 {: codeblock}
 {: go}
 
-* `format=include_last_permit`: Include the last permit information for each policy.
-* `sort=-last_modified_at`: Sort in ascending ("-") date order. In other words, the policies with the least amount of permits are listed first.
+* `format=include_last_permit`: Include the last permit information for each policy.
+* `sort=last_permit_at`: Sort by date in ascending order. The policies that have not been used for any permits and the oldest permits are listed first.
 
 The format of the response is represented in JSON.
 
@@ -121,7 +112,7 @@ The format of the response is represented in JSON.
             ...
             "last_modified_at": "2021-04-09T14:36:30.505Z",
             "last_modified_by_id": "IBMid-310000JVN5",
-            "last_permit_at": null,       <-- IAM has no record of this policy ever granting a permit decision 
+            "last_permit_at": null,       <-- IAM has no record of this policy ever granting a permit decision 
             "last_permit_frequency": 0,
             "state": "active"
         },
@@ -135,7 +126,7 @@ The format of the response is represented in JSON.
             "last_modified_at": "2019-05-09T15:28:07.045Z",
             "last_modified_by_id": "IAM",
             "last_permit_at": "2021-04-20T19:45:44.058Z",
-            "last_permit_frequency": 137,  <-- it has been used this many times since IAM started keeping track
+            "last_permit_frequency": 137,  <-- it has been used this many times since IAM started keeping track
             "state": "active"
         },
 ...

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2021
+  years: 2017, 2022
 
-lastupdated: "2021-12-23"
+lastupdated: "2022-02-09"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access 
 
@@ -12,21 +12,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:help: data-hd-content-type='help'}
-{:support: data-reuse='support'}
-{:tip: .tip}
-{:note: .note}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Managing access to resources
 {: #assign-access-resources}
@@ -36,8 +22,6 @@ To manage access for users or service IDs by using IAM policies, you must be the
 
 ## Assigning access to resources
 {: #assign-new-access}
-{: help}
-{: support}
 
 You can assign access to resources by using two types of policies:
 
@@ -58,6 +42,8 @@ You can also set access management tags to manage access. For more information, 
 ### Assigning access to resources in the console
 {: #access-resources-console}
 {: ui}
+{: help}
+{: support}
 
 To assign access to an individual resource in the account or access to all resources in the account, complete the following steps:
 
