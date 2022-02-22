@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-01-12"
+  years: 2020, 2022
+lastupdated: "2022-02-21"
 
 keywords: commitment model, pay as you go with committed use, commit, commitment, pricing plan 
 
@@ -24,6 +24,11 @@ content-type: faq
 
 # FAQs about Pay-As-You-Go with Committed Use
 {: #commitfaqs}
+
+FAQs about {{site.data.keyword.cloud}} Pay-As-You-Go with Commited use might include questions about the difference between a Pay-As-You-Go with Commited use and a Subscription account, signing up for Pay-As-You-Go with Commited use, or how to view existing commitments. 
+{: shortdesc}
+
+To find all FAQs for {{site.data.keyword.cloud_notm}}, see our [FAQ library](/docs/faqs).
 
 ## What is the difference between Pay-As-You-Go with Committed use and a Subscription account? 
 {: #commitment-subscription}
