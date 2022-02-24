@@ -66,7 +66,7 @@ For containerized apps, complete the following prerequisites:
 For virtual server images, complete the following prerequisites:
 
    1. Review the list of [supported images](/docs/vpc?topic=vpc-about-images).
-   2. Create your [Terraform template](/docs/schematics?topic=schematics-getting-started).
+   2. Create your [Terraform template](/docs/schematics?topic=schematics-create-tf-config).
    3. Create an instance of [{{site.data.keyword.cloud_notm}} Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage) and add your image to a bucket.
 
 ## Creating a private catalog
