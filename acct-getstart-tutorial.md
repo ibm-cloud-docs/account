@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-01-12"
+lastupdated: "2022-02-18"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key
 
@@ -69,7 +69,7 @@ For information about how to register your company for a federated ID, see the [
 
 If you have a Lite account, you can upgrade to a Pay-As-You-Go account to access the full {{site.data.keyword.cloud_notm}} catalog and to create private catalogs.
 
-1. Click **Manage** > **Account**.
+1. Click **Manage** > **Account** in the {{site.data.keyword.cloud_notm}} console.
 1. Select **Account settings**, and click **Add credit card**.
 1. Enter your credit card information.
 
@@ -82,7 +82,7 @@ By default, users in your account verify themselves by logging in with a usernam
 Setting up MFA in your account affects all members of the account. This means that if users of your account are members of multiple {{site.data.keyword.cloud_notm}} accounts, they must enroll for MFA at their next login even if they don't intend to use resources in the secured account. 
 {: important}
 
-1. Go to **Manage** > **Access (IAM)** > **Settings**.
+1. Go to **Manage** > **Access (IAM)** > **Settings** in the {{site.data.keyword.cloud_notm}} console.
 1. Update the current authentication setting by clicking **Edit** in the Authentication section.
 1. Select the type of MFA to enable in your account.
    * **MFA for users with an IBMid**: Require users to authenticate by using an IBMid, password, and time-based one-time passcode (TOTP). You can enable this option for all users or non-federated users. 
@@ -123,14 +123,14 @@ Before you start working with resources in your account, familiarize yourself wi
 ### Managing your payment method
 {: #account-gs-paymentdetails}
 
-* To manage your payment method for an account that's billed in USD currency, go to **Manage** > **Billing and usage**, and select **Payments**.
+* To manage your payment method for an account that's billed in USD currency, go to **Manage** > **Billing and usage** in the {{site.data.keyword.cloud_notm}} console, and select **Payments**.
 * To manage your payment method for an account that's billed in non-USD currency, go to [{{site.data.keyword.IBM_notm}} Billing](https://myibm.ibm.com/billing/){: external}.
 
 ### Accessing your invoices
 {: #account-gs-invoicedetails}
 
-* To access an invoice for an account that's billed in USD currency, go to **Manage** > **Billing and usage**, and select **Invoices**. 
-* To access an invoice for an account that's billed in non-USD currency, go to **Manage** > **Billing and usage**, and select **Invoices**. Then, click **{{site.data.keyword.IBM_notm}} Invoices**. 
+* To access an invoice for an account that's billed in USD currency, go to **Manage** > **Billing and usage** in the {{site.data.keyword.cloud_notm}} console, and select **Invoices**. 
+* To access an invoice for an account that's billed in non-USD currency, go to **Manage** > **Billing and usage** in the {{site.data.keyword.cloud_notm}} console, and select **Invoices**. Then, click **{{site.data.keyword.IBM_notm}} Invoices**. 
 
 ## Set preferences for receiving notifications
 {: #account-gs-notifications}
@@ -144,8 +144,7 @@ Complete the following steps to set your preferences for receiving various types
    *  If you update your preferences on resource activity, such as incidents, maintenance, security bulletins, or infrastructure service updates, the notifications are for only the services you use or the devices that you have provisioned. By default, all infrastructure notifications are turned off. 
 
 
-2. To receive spending notifications, go to **Manage** > **Billing and usage** > **Spending notifications**. Or, you can access it directly from the [Notification preferences](https://cloud.ibm.com/user/notifications) page by scrolling down to **Billing and Usage** and clicking **Manage**.
-You receive notifications when you reach 80%, 90%, and 100% of the spending thresholds that you specify. 
+2. To receive spending notifications, go to **Manage** > **Billing and usage** > **Spending notifications** in the {{site.data.keyword.cloud_notm}} console. Or, you can access it directly from the [Notification preferences](https://cloud.ibm.com/user/notifications) page by scrolling down to **Billing and Usage** and clicking **Manage** in the {{site.data.keyword.cloud_notm}} console. You receive notifications when you reach 80%, 90%, and 100% of the spending thresholds that you specify. 
 
 ## Create your resource groups
 {: #account-gs-resourcegroups}
@@ -153,7 +152,7 @@ You receive notifications when you reach 80%, 90%, and 100% of the spending thre
 
 Resource groups provide a way for you to easily manage access to multiple resources and to view billing usage for a set of resources. With your Pay-As-You-Go account, you can create more resource groups in addition to the default resource group that's created for you. 
 
-1. Go to **Manage** > **Account** > **Account resources** > **Resource groups**.
+1. Go to **Manage** > **Account** > **Account resources** > **Resource groups** in the {{site.data.keyword.cloud_notm}} console.
 2. Click **Create**.
 3. Enter a name for your resource group, and click **Add**.
 
@@ -167,7 +166,7 @@ IAM access groups provide a way for you to quickly and easily assign access to m
 
 1. Create an access group.
 
-   1. Go to **Manage** > **Access (IAM)** > **Access Groups**.
+   1. Go to **Manage** > **Access (IAM)** > **Access Groups** in the {{site.data.keyword.cloud_notm}} console.
    2. Click **Create**.
    3. Enter a name for your group, and click **Create**. For example, if you know multiple users in your account will need to be able to apply subscription codes, track usage, or perform other billed-related tasks, you might name your group `Billing-Editor-Access`. 
 
@@ -195,7 +194,7 @@ You're ready to invite users to your account and grant them access based on the 
 
 Complete the following steps:
 
-1. Go to **Manage** > **Access (IAM)** > **Users**.
+1. Go to **Manage** > **Access (IAM)** > **Users** in the {{site.data.keyword.cloud_notm}} console.
 2. Click **Invite users**.
 3. Specify the email address of the user. If you are inviting more than one user, they are all assigned the same access.
 4. Add the user to one or more of the access groups that you created in the previous step. 

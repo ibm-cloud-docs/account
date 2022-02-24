@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2022
 
-lastupdated: "2022-01-31"
+lastupdated: "2022-02-21"
 
 keywords: Cloud Foundry access, assign access, add user to organization, Cloud Foundry roles
 
@@ -60,7 +60,7 @@ Users that are assigned the manager or developer space role can access the VCAP_
 ## Updating Cloud Foundry access
 {: #update_cf_access}
 
-1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Access (IAM)**, and select **Users**.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users**.
 2. Select the name of the user that you want to assign access. 
 3. Select **Cloud Foundry access**.
 4. From the row for the organization that you want to manage access, select the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu and you can click one of three choices:
@@ -74,7 +74,7 @@ Users that are assigned the manager or developer space role can access the VCAP_
 
 If you are the manager of an organization that the user is not yet a member of, you assign the user to that organization.
 
-1. In the console, click **Manage** > **Access (IAM)**, and select **Users**.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users**.
 2. From the row for the user that you want to assign access, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) > **Assign access**.
 3. Select **Assign users additional access**. 
 4. Select the **Cloud Foundry** tile. 
@@ -93,7 +93,7 @@ If you are the manager of an organization that the user is not yet a member of, 
 
 If you need to review your assigned access in an account that you have been added to, complete the following steps:
 
-1. In the console, click **Manage** > **Access (IAM)**, and select **Users**.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users**.
 2. Select your name.
 3. Click **Cloud Foundry access**.
 4. Expand the org row, and review your assigned roles.

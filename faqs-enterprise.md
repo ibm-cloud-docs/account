@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2021
-lastupdated: "2021-11-30"
+  years: 2015, 2022
+lastupdated: "2022-02-18"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -73,7 +73,7 @@ No, it’s not possible to move an account group within the enterprise.
 {: #rename-enterprise-account}
 {: faq}
 
-No, you can't edit the name of an account from within your enterprise. To edit the name of an account, go to **Manage** > **Account** in the console, and select **Account settings**. In the Account section, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit"), enter your new account name, and click **Submit**.
+No, you can't edit the name of an account from within your enterprise. To edit the name of an account, go to **Manage** > **Account** in the {{site.data.keyword.cloud_notm}} console, and select **Account settings**. In the Account section, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit"), enter your new account name, and click **Submit**.
 
 ## Can I invite users to an enterprise?
 {: #enterprise-invite-users}

@@ -4,7 +4,7 @@ copyright:
 
   years: 2021, 2022
 
-lastupdated: "2022-02-07"
+lastupdated: "2022-02-21"
 
 keywords: trusted profile, federated users, granting access, update trusted profile, compute resource, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
@@ -27,7 +27,7 @@ To update trusted profiles, you must be assigned the administrator, operator, or
 {: #updating-tp-console}
 {: ui}
 
-To update trusted profiles, go to **Manage** > **Access (IAM)** in the console and select **Trusted profiles**. Then, select the name of the trusted profile that you want to update. 
+To update trusted profiles, go to **Manage** > **Access (IAM)** in the {{site.data.keyword.cloud_notm}} console, and select **Trusted profiles**. Then, select the name of the trusted profile that you want to update. 
 
 ### Updating the description of your profile
 {: #description}

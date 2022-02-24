@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2021
-lastupdated: "2021-10-07"
+  years: 2019, 2022
+lastupdated: "2022-02-18"
 
 keywords: catalog, private catalogs, visibility, filter catalog, hide product, catalog filtering, enterprise, account group, child account, account, restrict
 
@@ -52,7 +52,7 @@ You can use filters to manage which products in the public catalog are available
 If your account is a parent account in an {{site.data.keyword.cloud_notm}} enterprise, the filters that you set apply to all child account groups and accounts. For more information, see [Managing products for {{site.data.keyword.cloud_notm}} enterprise](/docs/account?topic=account-catalog-enterprise-restrict). 
 {: tip}
 
-1. In the console, go to **Manage** > **Catalogs** > **Settings**. 
+1. Go to **Manage** > **Catalogs** > **Settings** in the {{site.data.keyword.cloud_notm}} console. 
 2. Confirm that the visibility of the public catalog is set to **On**.
 3. In the What products are available? section, select **Exclude all products in the {{site.data.keyword.cloud_notm}} catalog**.
 4. Set one or more [filters](#catalog-filters-customize) to customize what products are available by category.
@@ -65,7 +65,7 @@ If your account is a parent account in an {{site.data.keyword.cloud_notm}} enter
 
 Set filters at a private catalog level for fine-grained control of which products in the public catalog are available only to the users you choose.   
 
-1. In the console, go to **Manage** > **Catalogs**, **Private catalogs**. 
+1. Go to **Manage** > **Catalogs**, **Private catalogs** in the {{site.data.keyword.cloud_notm}} console. 
 1. Select a catalog from the list to navigate to its details page. 
 
    The **Products in the {{site.data.keyword.cloud_notm}} catalog** table that's displayed on the page shows the list of products that are available at the account level. The availability is based on the filters the account owner or administrator set. Account-level filters apply to all the private catalogs in the account. 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2022-01-11"
+  years: 2021,2022
+lastupdated: "2022-02-21"
 
 keywords: troubleshoot accessing all instances of a service
 
@@ -43,7 +43,7 @@ You might need to update the access policy. The issue can be caused by the follo
 Check the user's level of access.
 {: tsResolve}
 
-1. Go to **Manage** > **Access (IAM)** in the console, and select the user from the list on the **Users** page.
+1. Go to **Manage** > **Access (IAM)** in the {{site.data.keyword.cloud_notm}} console, and select the user from the list on the **Users** page.
 2. To view the level of access that's defined in a specific policy, click **Access policies**.
 3. To view the policies that are assigned to an access group the user is a member of, click **Access groups** > **_group-name_** > **Access policies**.
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2020, 2022
 
-lastupdated: "2022-02-08"
+lastupdated: "2022-02-21"
 
 keywords: identity provider, IdP, App ID, IAM, integration, IdP SSO, third-party authentication, dynamic rules, external identity provider
 
@@ -84,7 +84,7 @@ When a user authenticates successfully by using the {{site.data.keyword.appid_sh
 If you haven't configured any IAM IdP references before in your account, you must enable the login setting for your account first.
 
 1. Enable the login settings for your account. You can skip this step if you've already enabled this setting.
-   1. Go to **Manage** > **Access (IAM)** > **Identity providers**, and click **Enable**. 
+   1. Go to **Manage** > **Access (IAM)** > **Identity providers** in the {{site.data.keyword.cloud_notm}} console, and click **Enable**. 
    2. Enter an alias for the default account URL, which you provide to users to log in to your account. 
   
     Since you're sharing the URL with external users, make sure the alias is unique and simple. A common format might be to use your company name or a variation of it.

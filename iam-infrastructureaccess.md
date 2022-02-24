@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2021
+  years: 2017, 2022
 
-lastupdated: "2021-09-24"
+lastupdated: "2022-02-21"
 
 keywords: SoftLayer permissions, classic infrastructure access, classic infrastructure permission, migrated SoftLayer permissions, migrated permission access group
 
@@ -35,7 +35,7 @@ The following graphic shows how classic infrastructure permissions are assigned 
 
 ![Classic infrastructure access](images/ClassicIaaS.svg "Assigning classic infrastructure access by selecting a user, device, or service, then any combination of granular permissions"){: caption="Figure 1. Assigning classic infrastructure access by selecting a user, device, or service, then any combination of granular permissions" caption-side="bottom"}
 
-There are four main categories of permissions to choose from: account, devices, network, and services. The following lists provide examples from each category highlighting some of the commonly assigned permissions from each. To view all of the available permissions from each category, go to **Manage** > **Access (IAM)** > **Users**. Then, select a user's name from the list that you can manage access for, then click **Classic infrastructure**. 
+There are four main categories of permissions to choose from: account, devices, network, and services. The following lists provide examples from each category highlighting some of the commonly assigned permissions from each. To view all of the available permissions from each category, go to **Manage** > **Access (IAM)** > **Users** in the {{site.data.keyword.cloud}} console. Then, select a user's name from the list that you can manage access for, then click **Classic infrastructure**. 
 
 Account
 - Add and upgrade storage

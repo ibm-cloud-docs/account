@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2021
-lastupdated: "2021-11-29"
+  years: 2015, 2022
+lastupdated: "2022-02-18"
 
 keywords: application programming interface key, API key, API, classic infrastructure API key, IBM Cloud API key
 
@@ -22,7 +22,7 @@ subcollection: account
 An application programming interface key (API key) is a unique code that is passed in to an API to identify the calling application or user. API keys are used to track and control how the API is being used, for example to prevent malicious use or abuse of the API. The API key often acts as both a unique identifier and a secret token for authentication, and is assigned a set of access that is specific to the identity that is associated with it.
 {: shortdesc}
 
-To view your API keys, go to **Manage** > **Access (IAM)** > **API keys**. 
+To view your API keys, go to **Manage** > **Access (IAM)** > **API keys** in the {{site.data.keyword.cloud_notm}} console. 
 
 ## {{site.data.keyword.cloud_notm}} API keys for users
 {: #ibm-cloud-api-keys}
@@ -61,7 +61,7 @@ Some services in {{site.data.keyword.Bluemix_notm}} might provide an API key whe
 ## Working with API keys
 {: #work-with-apikeys}
 
-To manage the {{site.data.keyword.Bluemix_notm}} API keys that are associated with your user identity or the ones that you have access to manage for other users in the account, go to **Manage** > **Access (IAM)** > **API keys**. 
+To manage the {{site.data.keyword.Bluemix_notm}} API keys that are associated with your user identity or the ones that you have access to manage for other users in the account, go to **Manage** &gt; **Access (IAM)** &gt; **API keys** in the {{site.data.keyword.cloud_notm}} console. 
 
 On the {{site.data.keyword.cloud_notm}} API keys page, you can create, edit, or delete {{site.data.keyword.cloud_notm}} API keys for yourself, and you can manage all classic infrastructure API keys for users to which you are an ancestor in the user hierarchy. This means you can manage API keys for all users you invited to the account, or your child users invited to the account, and so on. In addition, if you are the account owner or a user with the required access to manage other user's API keys in the account, you can use the **View** filter to list and manage those API keys.
 

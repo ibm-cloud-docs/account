@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-09-24"
+lastupdated: "2022-02-18"
 
 keywords: catalog, private catalogs, IAM access, roles, private catalog service, access groups, permissions, IAM, catalog management, access group
 
@@ -47,7 +47,7 @@ See the following sections for details about creating your access groups and ass
 Administrator access is required for setting account-level filters to the {{site.data.keyword.cloud_notm}} catalog.   
 
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
-2. Go to **Manage** > **Access (IAM)** > **Access groups**.
+2. Go to **Manage** > **Access (IAM)** > **Access groups** in the {{site.data.keyword.cloud_notm}} console.
 3. Click **Create**.
 4. Enter `private-catalog-admins` as the group name, and click **Create**. 
 5. Click **Access policies** > **Assign access**.

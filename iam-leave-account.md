@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2021
-lastupdated: "2021-10-29"
+  years: 2019, 2022
+lastupdated: "2022-02-21"
 
 keywords: leaving an account, account membership, remove myself from an account
 
@@ -23,7 +23,7 @@ When you leave an account, all of your account-related data like IAM policies an
 To leave an account, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, switch to the account that you want to leave from the console menu bar.
-1. Go to **Manage** > **Access (IAM)** > **Users**.
+1. Go to **Manage** > **Access (IAM)** > **Users** in the {{site.data.keyword.cloud_notm}} console, .
 1. Find your name in the users list. 
 1. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) > **Remove user**. 
 1. Click **Remove**.

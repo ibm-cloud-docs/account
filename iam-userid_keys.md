@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2021
-lastupdated: "2021-11-29"
+  years: 2015, 2022
+lastupdated: "2022-02-21"
 
 keywords: API key, user API keys, IBM Cloud API keys, manage user keys, create API key
 
@@ -47,7 +47,7 @@ If you are applying a trusted profile, you can't create a user API key. You can 
 {: #manage-user-keys}
 {: ui}
 
-To manage the {{site.data.keyword.Bluemix_notm}} API keys that are associated with your user identity or the ones that you have access to manage for other users in the account, go to **Manage** > **Access (IAM)** > **API keys** in the console. On the API keys page, you can create, edit, or delete {{site.data.keyword.cloud_notm}} API keys for yourself, and you can manage all [classic infrastructure API keys](/docs/account?topic=account-classic_keys) for users that you are an ancestor of in the user hierarchy. In addition, if you are the account owner or a user assigned the required access to manage other user's API keys in the account, you can use the **View** filter to list and manage those API keys too.
+To manage the {{site.data.keyword.Bluemix_notm}} API keys that are associated with your user identity or the ones that you have access to manage for other users in the account, go to **Manage** > **Access (IAM)** > **API keys** in the {{site.data.keyword.cloud_notm}} console. On the API keys page, you can create, edit, or delete {{site.data.keyword.cloud_notm}} API keys for yourself, and you can manage all [classic infrastructure API keys](/docs/account?topic=account-classic_keys) for users that you are an ancestor of in the user hierarchy. In addition, if you are the account owner or a user assigned the required access to manage other user's API keys in the account, you can use the **View** filter to list and manage those API keys too.
 
 | Filter Options                                     | Displayed API Keys                                         | Required Access                            | Allowed Actions            |
 |----------------------------------------------------|------------------------------------------------------------|--------------------------------------------|----------------------------|
@@ -176,7 +176,7 @@ If you want to change the name or the description of an API key, complete the fo
 
 To edit an API key, complete the following steps:
 
-1. In the console, go to **Manage** > **Access (IAM)** > **API keys**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **API keys**.
 2. Identify the row of the API key that you want to update, and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit**.
 3. Update the information for your API key.
 4. Click **Apply**.
@@ -280,7 +280,7 @@ For platform API keys that represent your user identity you can prevent the API 
 {: #lockui}
 {: ui}
 
-1. In the console, go to **Manage** > **Access (IAM)** > **API keys**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **API keys**.
 2. Identify the row of the API key that you want to lock, and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Lock**.
 
 You can unlock your API key at any time to update or remove the API key from your account. Select the API key from the table that you want to unlock and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Unlock**.
@@ -481,7 +481,7 @@ If you are using a key rotation strategy, you might want to delete an older key 
 
 To delete an API key, complete the following steps:
 
-1. In the console, go to **Manage** > **Access (IAM)** > **API keys**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **API keys**.
 2. Identify the row of the API key that you want to delete, and select **Delete** from the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu.
 3. Confirm the deletion by clicking **Delete**.
 

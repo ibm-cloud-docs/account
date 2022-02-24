@@ -4,8 +4,8 @@
 
 copyright:
 
-  years: 2020, 2021
-lastupdated: "2021-09-24"
+  years: 2020, 2022
+lastupdated: "2022-02-21"
 
 keywords: delete resource group, resource group, manage resource groups
 
@@ -42,7 +42,7 @@ You can't delete the default resource group that's added to your account. Beside
 
 To delete a resource group that doesn't contain resources and is not your default, complete the following steps:
 
-1. In the console, go to **Manage** > **Account** > **Account resources** > **Resource groups**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account** > **Account resources** > **Resource groups**.
 2. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Delete**.
 
 ## Deleting a resource group by using the CLI

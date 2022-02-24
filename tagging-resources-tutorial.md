@@ -1,8 +1,8 @@
 ---
 
 copyright:
-   years: 2021
-lastupdated: "2021-12-23"
+   years: 2021, 2022
+lastupdated: "2022-02-21"
 
 keywords: tagging resources, managing access, access management tags, create access management tags, get started with access management tags, IAM-enabled resources, tag your resource, access group, access group policy
 
@@ -81,7 +81,7 @@ You'll define the level of access that users have to your {{site.data.keyword.co
 
 First, create an access group to streamline the task of assigning access to multiple users:
 
-1. Click **Manage** > **Access (IAM)**, and select **Access groups**.
+1. Click **Manage** > **Access (IAM)** in the {{site.data.keyword.cloud_notm}} console, and select **Access groups**.
 2. Click **Create**.
 3. Enter a unique name to identify your access group, an optional description, and click **Create**.
 

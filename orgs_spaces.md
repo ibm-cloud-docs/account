@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2022
-lastupdated: "2022-01-31"
+lastupdated: "2022-02-21"
 
 keywords: account, add orgs, add spaces, cloud foundry orgs
 
@@ -72,7 +72,7 @@ You can manage Cloud Foundry orgs and spaces by going to **Manage** > **Account*
 
 If you have a billable account, you can add as many orgs as you need. Lite accounts can have only one org, which is already created in your account. Orgs can't be deleted after you add them.
 
-1. In the console, go to **Manage** > **Account**, and select **Account resources** > **Cloud Foundry orgs**. Click **Create**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account**, and select **Account resources** > **Cloud Foundry orgs**. Click **Create**.
 2. Enter an org name. The name must be unique in {{site.data.keyword.Bluemix_notm}}.
 
    If the org name is already in use by another {{site.data.keyword.Bluemix_notm}} Public, Dedicated, or Local user, you must specify a different name.

@@ -4,8 +4,8 @@
 
 copyright:
 
-  years: 2017, 2021
-lastupdated: "2021-09-24"
+  years: 2017, 2022
+lastupdated: "2022-02-21"
 
 keywords: resource group, account resources, users access to resource groups, create resource group, create resource group in the console, create resource group CLI, create resource group API, create resource group Terraform
 
@@ -50,7 +50,7 @@ Connections between a resource group and a Cloud Foundry org or space are restri
 {: #rgs_ui}
 {: ui}
 
-1. In the console, go to **Manage** > **Account** > **Account resources** > **Resource groups**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account** > **Account resources** > **Resource groups**.
 2. Click **Create**.
 3. Enter a name for your resource group. 
 4. Click **Create**.
@@ -202,7 +202,7 @@ Your first resource group is created and named `Default` for you. You can update
 {: #renaming-rgs-ui}
 {: ui}
 
-1. In the console, go to **Manage** > **Account** > **Account resources** > **Resource groups**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account** > **Account resources** > **Resource groups**.
 2. Click the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, and select **Rename**.
 3. Enter a unique name and click **Save**.
 
@@ -355,7 +355,7 @@ Users in your account must be assigned two access policies to create resources f
 * A policy with editor role or higher on the service in the account
 
 To add the resources to a resource group, complete the following steps: 
-1. In the console, go to **Manage** > **Account** > **Account resources** > **Resource groups**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account** > **Account resources** > **Resource groups**.
 2. Click the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, and select **Add resources**.
 3. From here, you are directed to the catalog. You can search the offerings or filter based on a specific category, provider, pricing plan, type of compliance, or release type. Examples of resources include apps, service instances, container clusters, storage volumes, virtual servers, and software.
 

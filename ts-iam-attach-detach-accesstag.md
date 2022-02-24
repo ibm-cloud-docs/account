@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-09-28"
+  years: 2021, 2022
+lastupdated: "2022-02-21"
 
 keywords: troubleshoot permission to attach and detach access management tags
 
@@ -46,7 +46,7 @@ This problem can be commonly caused by the following reasons:
 Complete the following steps to check your level of access. If you need to request access, contact the account owner.
 {: tsResolve}
 
-Go to **Manage** > **Access (IAM)** in the console, and select your name on the **Users** page.
+Go to **Manage** > **Access (IAM)** in the {{site.data.keyword.cloud_notm}} console, and select your name on the **Users** page.
 
 * To see IAM access policies that are assigned to you, select the **Access policies**. 
 * To determine what access you have through the access groups you are assigned, select **Access groups** and check the access policies on the access groups.

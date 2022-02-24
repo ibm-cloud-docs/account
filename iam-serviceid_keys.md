@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2021
-lastupdated: "2021-11-29"
+  years: 2015, 2022
+lastupdated: "2022-02-21"
 
 keywords: service ID, service ID API key, lock service ID API key, delete service ID API key
 
@@ -71,7 +71,7 @@ For security reasons, the API key is only available to be copied or downloaded a
 
 You can update an API key by editing the name or description that is used to identify the key in the UI.
 
-1. In the console, go to **Manage** > **Access (IAM)**, and select **Service IDs**.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Service IDs**.
 2. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Manage service ID**.
 3. Click **API keys**.
 4. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit name & description**.
@@ -98,7 +98,7 @@ ibmcloud iam service-api-key-update NAME SERVICE_ID [-n, --name NEW_sNAME] [-d, 
 
 For API keys that represent the identity of the service ID, you can prevent the API key from being deleted by locking it. A locked API key is indicated by the **Locked** icon ![Locked icon](images/locked.svg "Locked") in the UI.
 
-1. In the console, click **Manage** > **Access (IAM)**, and select **Service IDs**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Service IDs**.
 2. Identify the row of the service ID that you want to select an API key for, and select the name of the service ID.
 3. Click **API keys**.
 4. Hover on the row of the API key that you want to lock, and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") to open a list of options.

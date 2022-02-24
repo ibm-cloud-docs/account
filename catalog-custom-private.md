@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-09-24"
+  years: 2020, 2022
+lastupdated: "2022-02-18"
 
 keywords: catalog, restrict visibility, hide product, restrict by user, filter catalog, private catalog, catalog management service, public catalog
 
@@ -60,7 +60,7 @@ ibmcloud plugin install catalogs-management
 
 Complete the following steps to create a catalog that includes all products in the {{site.data.keyword.cloud_notm}} catalog:
 
-1. In the console, go to **Manage** > **Catalogs**, and click **Create a catalog**.
+1. Go to **Manage** > **Catalogs**, in the {{site.data.keyword.cloud_notm}} console, and click **Create a catalog**.
 1. Select the Product (default) catalog type.
 1. Enter a name and description.
 1. Make sure the **All products** option is selected, and click **Create**. The availability is based on the filters set at the account level on the [Settings page](https://cloud.ibm.com/content-mgmt/catalog-settings){: external}. 
@@ -72,7 +72,7 @@ Complete the following steps to create a catalog that includes all products in t
 
 Complete the following steps to create a catalog that includes a specific set of products in the {{site.data.keyword.cloud_notm}} catalog:
 
-1. Go to **Manage** > **Catalogs**, and click **Create a catalog**.
+1. Go to **Manage** > **Catalogs**, in the {{site.data.keyword.cloud_notm}} console, and click **Create a catalog**.
 1. Select the Product (default) catalog type.
 1. Enter a name and description.
 1. Click **Create**.

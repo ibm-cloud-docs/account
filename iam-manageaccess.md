@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2022
 
-lastupdated: "2022-01-31"
+lastupdated: "2022-02-21"
 
 keywords: users level of access, user control, access control, permissions, manage access, access management, platform management tasks, assign roles
 
@@ -28,7 +28,7 @@ The way that you manage access in {{site.data.keyword.Bluemix}} depends on the t
 
 If you have a combination of resource types, you manage each type separately:
 
-* For [IAM resources](/docs/account?topic=account-userroles), go to **Manage** &gt; **Access (IAM)** in the console, and then select **Users**, **Access groups**, **Trusted profiles**, or **Service IDs** to get started.
+* For [IAM resources](/docs/account?topic=account-userroles), go to **Manage** &gt; **Access (IAM)** in the {{site.data.keyword.cloud_notm}} console, and then select **Users**, **Access groups**, **Trusted profiles**, or **Service IDs** to get started.
 * For assigning access to your [classic infrastructure resources](/docs/account?topic=account-mngclassicinfra), you set permissions within **Manage** > **Access (IAM)** on the Classic infrastructure tab for the user that you want to assign access.
 * For assigning access to [Cloud Foundry resources](/docs/account?topic=account-mngcf), you assign users to orgs and set Cloud Foundry org and space access roles within **Manage** > **Access (IAM)** on the Cloud Foundry tab for the user.
 

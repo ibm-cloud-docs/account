@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2021
+  years: 2017, 2022
 
-lastupdated: "2021-09-24"
+lastupdated: "2022-02-18"
 
 keywords: authorizations, service to service access, access between services, dependent service, source service, target service, assigned access, access policies
 
@@ -416,7 +416,7 @@ Not all services support policies at the `resourceType` and individual `resource
 
 You can remove any authorization between services in the account if you are assigned the Administrator role on the target service. If you remove any access policies created by the source service for its dependent services, the source service is unable to complete the workflow or access the target service.
 
-1. In the console, click **Manage** &gt; **Access (IAM)**, and select **Authorizations**.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Authorizations**.
 2. Identify the row for the authorization that you want to remove from the account.
 3. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Remove**.
 4. Select **Remove**.

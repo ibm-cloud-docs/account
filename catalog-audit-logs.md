@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-05-12"
+  years: 2020, 2022
+lastupdated: "2022-02-21"
 
 keywords: audit log
 
@@ -39,7 +39,7 @@ To view the audit logs, you need to be a manager of the account the catalog is i
 {: #audit-logs-table}
 {: ui}
 
-1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Catalogs** from the console menu bar.
+1. In the {{site.data.keyword.Bluemix}} console, go to **Manage** > **Catalogs** from the console menu bar.
 2. Select **Audit logs**. 
 3. Filter for the scope you want to see in the table. 
 

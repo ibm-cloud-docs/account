@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2015, 2021
+  years: 2015, 2022
 
-lastupdated: "2021-02-25"
+lastupdated: "2022-02-21"
 
 keywords: troubleshooting services, troubleshooting resources, service problems, resource problems, Cloud Foundry instance, migrate, resource group, migration error, Cloud Foundry access, Cloud Foundry roles
 
@@ -37,7 +37,7 @@ You can't migrate an eligible Cloud Foundry instance.
 If you're unable to migrate an eligible instance, you might not have the correct access. 
 {: tsCauses}
 
-You must have specific access to migrate an instance. To check out what access you have, click **Manage** &gt; **Access (IAM)** from the console menu bar, and then click **Users**. Click your name and review your access policies for assigned IAM roles and Cloud Foundry access to view which orgs you have access to and your assigned Cloud Foundry roles. 
+You must have specific access to migrate an instance. To check out what access you have, click **Manage** &gt; **Access (IAM)** from the {site.data.keyword.cloud_notm}} console menu bar, and then click **Users**. Click your name and review your access policies for assigned IAM roles and Cloud Foundry access to view which orgs you have access to and your assigned Cloud Foundry roles. 
 {: tsResolve}
 
 

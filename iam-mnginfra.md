@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2022
 
-lastupdated: "2022-01-31"
+lastupdated: "2022-02-21"
 
 
 keywords: classic infrastructure access, VPN subnet access, classic infrastructure permissions, device access
@@ -18,7 +18,7 @@ subcollection: account
 # Managing classic infrastructure access
 {: #mngclassicinfra}
 
-When you invite a user to your account, you can select from three classic infrastructure permission sets that assign bulk access: View only, Basic user, Super user. You can update permissions for classic infrastructure services or add device and VPN subnet access for a user at any time. To access the classic infrastructure permissions, go to **Manage** &gt; **Access (IAM)** in the console, select **Users**. Then, select the user's name that you want to update access for, and click **Classic infrastructure**.
+When you invite a user to your account, you can select from three classic infrastructure permission sets that assign bulk access: View only, Basic user, Super user. You can update permissions for classic infrastructure services or add device and VPN subnet access for a user at any time. To access the classic infrastructure permissions, go to **Manage** &gt; **Access (IAM)** in the {{site.data.keyword.cloud}} console, select **Users**. Then, select the user's name that you want to update access for, and click **Classic infrastructure**.
 {: shortdesc}
 
 ## Classic infrastructure permissions
@@ -35,7 +35,7 @@ The following graphic shows how classic infrastructure permissions are assigned 
 
 ![Classic infrastructure access](images/ClassicIaaS.svg "Assigning classic infrastructure access by selecting a user, device, or service, then any combination of granular permissions"){: caption="Figure 1. Assigning classic infrastructure access by selecting a user, device, or service, then any combination of granular permissions" caption-side="bottom"}
 
-There are four main categories of permissions to choose from: account, devices, network, and services. The following lists provide examples from each category highlighting some of the commonly assigned permissions from each. To view all of the available permissions from each category, go to **Manage** > **Access (IAM)** > **Users**. Then, select a user's name from the list that you can manage access for, then click **Classic infrastructure**. 
+There are four main categories of permissions to choose from: account, devices, network, and services. The following lists provide examples from each category highlighting some of the commonly assigned permissions from each. To view all of the available permissions from each category, go to **Manage** > **Access (IAM)** > **Users** in the {{site.data.keyword.cloud_notm}} console. Then, select a user's name from the list that you can manage access for, then click **Classic infrastructure**. 
 
 Account
 - Add and upgrade storage

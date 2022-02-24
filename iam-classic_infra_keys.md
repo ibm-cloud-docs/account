@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2021
-lastupdated: "2021-09-22"
+  years: 2018, 2022
+lastupdated: "2022-02-18"
 
 keywords: classic infrastructure API keys, classic infrastructure API, SoftLayer API key
 
@@ -44,7 +44,7 @@ When you create a classic infrastructure API key, you can use the IP address res
 
 To get the details of a classic infrastructure API key after you create it, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **View details**. You can copy the API key value.
 
-To get the details of a classic infrastructure API key after you create it, go to **Manage** > **Access (IAM)** > **Users**, then select the user's name. From the API keys section, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **View details** in the row for the classic infrastructure API key row. You can copy the API key value.
+To get the details of a classic infrastructure API key after you create it, go to **Manage** > **Access (IAM)** > **Users** in the {{site.data.keyword.cloud_notm}} console, then select the user's name. From the API keys section, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **View details** in the row for the classic infrastructure API key row. You can copy the API key value.
 
 In most cases, the username of your classic infrastructure API key will be your `<account_ID>_<email_address>`. It is the same as your VPN username displayed on your User details page in the VPN password section.
 {: tip}

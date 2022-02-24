@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2021-02-03"
+  years: 2020. 2022
+lastupdated: "2021-02-21"
 
 
 keywords: troubleshoot invite users, access to invite users, access to add users
@@ -43,7 +43,7 @@ To invite users and manage outstanding invitations, you must be an account owner
 
 To review your assigned access in the account, complete the following steps: 
 
-1. In the console, click **Manage** > **Access (IAM)**, and select **Users**. 
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users**. 
 2. Select your name. 
 3. Review the assigned access in the **Access policies** section.
 
