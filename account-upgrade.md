@@ -81,7 +81,7 @@ With a Subscription account, you commit to a minimum spending amount each month 
 Subscriptions that you purchase through the console are limited to $5,000 United States dollars (USD) or the equivalent in your billing currency. If you want to purchase a larger subscription, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://cloud.ibm.com/catalog?contactmodule){: external}.
 
 To upgrade from a Lite account to a Subscription account, complete the following steps.
-1. Go to **Manage** > **Account**, and select **Account settings** in the {{site.data.keyword.cloud_notm}} console. Then, click **Upgrade**, which takes you to the Subscriptions page.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account**, and select **Account settings**. Then, click **Upgrade**, which takes you to the Subscriptions page.
 1. Select your monthly spending commitment and subscription term, and click **Get started**.
 
    If you're not sure how much your typical usage might cost, you can estimate it by using the [cost estimator](/estimator/review){: external}.
