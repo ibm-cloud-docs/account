@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2022
 
-lastupdated: "2022-02-09"
+lastupdated: "2022-02-21"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access 
 
@@ -47,7 +47,7 @@ You can also set access management tags to manage access. For more information, 
 
 To assign access to an individual resource in the account or access to all resources in the account, complete the following steps:
 
-1. In the console, click **Manage** > **Access (IAM)**, and select **Users** or **Manage** > **Access (IAM)**, and select **Service IDs**, depending on which identity you want to assign access.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users** or **Manage** > **Access (IAM)**, and select **Service IDs**, depending on which identity you want to assign access.
 2. From the row for the user or service ID that you want to assign access, click the **Actions** icon ![List of actions icon](../icons/action-menu-icon.svg) > **Assign access**.
 3. Add the user or service ID to an access group. Click **Add** for the access group that you want the user or service ID to belong to.
 4. (Optional) Manually assign users access.
@@ -349,7 +349,7 @@ This action can be done only through the UI or CLI. To see the steps, switch to 
 
 Removing access for a user or service ID can take up to 10 minutes to take effect.
 
-1. In the console, click **Manage** > **Access (IAM)**, and select **Users** or **Manage** > **Access (IAM)**, and select **Service IDs**, depending on which identity you want to assign access.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users** or **Manage** > **Access (IAM)**, and select **Service IDs**, depending on which identity you want to assign access.
 2. Select the user's name or service ID that you want to remove access for.
 3. From the **Access policies** tab, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Remove** on the row for the policy you want to remove.
 4. Review the policy details that you're about to remove, and confirm by clicking **Remove**.
@@ -447,7 +447,7 @@ A policy cannot be deleted if the subject ID contains a locked service ID.
 
 If you need to review your assigned access in an account that you've been added to, complete the following steps:
 
-1. In the console, click **Manage** > **Access (IAM)**, and select **Users** or **Service IDs**, depending on which identity you want to review.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users** or **Manage** > **Access (IAM)**, and select **Service IDs**, depending on which identity you want to assign access.
 2. Select your name or the service ID.
 3. Review the assigned access in the **Access policies** section.
 

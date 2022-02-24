@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2021
-lastupdated: "2021-11-15"
+  years: 2021, 2022
+lastupdated: "2022-02-21"
 
 keywords: IBMid change, credentials, ID, new ID
 
@@ -37,7 +37,7 @@ To change an IBMid, the replacement ID must already exist. If you're not sure if
 
 After the user ensures that the new IBMid exists, complete the following steps:  
 
-1. Go to **Manage** > **Access (IAM)** > **Users**, and select the user whose IBMid you want to update. 
+1. Go to **Manage** > **Access (IAM)** > **Users** in the {{site.data.keyword.cloud}} console, and select the user whose IBMid you want to update. 
 2. Click **Details**, and select **Update IBMid**.
 3. Enter the new IBMid, and click **Update**. 
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2022
-lastupdated: "2022-01-31"
+lastupdated: "2022-02-18"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -141,7 +141,7 @@ If you created a Lite account before 12 August 2021, you can build and deploy ap
 
 Reaching any quota limit for Lite plan instances suspends the service for that month. Quota limits are per org, not instance. New instances that you create in the same org reflect any usage from previous instances. The quota limits reset on the first of every month.
 
-You can check your usage by going to **Manage** > **Billing and usage** in the console, and selecting **Usage**. For more information, see [Viewing your usage](/docs/billing-usage?topic=billing-usage-viewingusage).
+You can check your usage by going to **Manage** > **Billing and usage** in the {{site.data.keyword.cloud_notm}} console, and selecting **Usage**. For more information, see [Viewing your usage](/docs/billing-usage?topic=billing-usage-viewingusage).
 
 ## How many resource groups, orgs, or spaces can I create?
 {: #resourcelimit}
@@ -166,7 +166,7 @@ To reset your account password, click the **{{site.data.keyword.avatar}}** icon 
 
 To reset your VPN password, complete the following steps:
 
-1. In the console, go to **Manage** > **Access (IAM)**, and select **Users**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Users**.
 2. Select the user.
 3. From the VPN subnets section, click the **Edit** icon ![Edit icon](../icons/icon_write.svg "Edit") to enter a new VPN password.
 4. Click **Apply**.
@@ -352,7 +352,7 @@ When you delete an access management tag from the account, any associated IAM po
 {: #view-dashboard}
 {: faq}
 
-You can view the role that you are assigned on a dashboard by going to **Manage** > **Account** > **Dashboards**. All users besides the dashboard owner have the viewer role on the dashboard. 
+You can view the role that you are assigned on a dashboard by going to **Manage** > **Account** > **Dashboards** in the {{site.data.keyword.cloud_notm}} console. All users besides the dashboard owner have the viewer role on the dashboard. 
 
 ## Can I edit the default dashboard?
 {: #access-dashboard}

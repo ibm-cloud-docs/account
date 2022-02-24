@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-09-22"
+  years: 2020, 2022
+lastupdated: "2022-02-21"
 
 keywords: catalog, private catalog, update, private catalog product, update version, versions
 
@@ -43,7 +43,7 @@ To complete this task, you need to be assigned the editor role on the catalog ma
 
 The following steps walk through an example of making updates to a product's readme to show the complete process for updating an existing software version.
 
-1. Go to **Manage** > **Catalogs** > **Private catalogs**, and select your catalog from the list. 
+1. In the {{site.data.keyword.cloud}} console, go to **Manage** > **Catalogs** > **Private catalogs**, and select your catalog from the list. 
 1. Click the name of your software product.
 1. Select **Private products** to navigate to the list of products that are in your private catalog. 
 1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg "Actions"), and select **Edit**.  

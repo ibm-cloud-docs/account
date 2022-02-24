@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2015, 2021
+  years: 2015, 2022
 
-lastupdated: "2021-09-28"
+lastupdated: "2022-02-18"
 
 keywords: resource FAQs, resource frequently asked questions, resource group, resource list, dashboard widget
 
@@ -75,7 +75,7 @@ Yes, you can delete a resource group only if it doesn't contain any resources, a
 
 Resource groups are a method of organizing resources and are not directly associated with the management of users. For information on creating a resource group, see [Adding resources to a resource group](/docs/account?topic=account-rgs#add_to_rgs). After your resource group is created, an account administrator can grant access to a specific user. Or, an account administrator can create an access group to provide access to a resource group. For more information, see [Creating an Access Group](/docs/account?topic=account-groups#create_ag) in the console. After an access group is created, complete the following steps to associate the access group with a resource group:
  
-1. Click **Manage** > **Access (IAM)** and click **Access groups**.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)** and click **Access groups**.
 2. Choose an access group. 
 3. From the **Access policies** tab, click **Assign access**.
 4. Click **IAM services**.  
@@ -107,7 +107,7 @@ You can delete a service instance by using the following steps:
 {: #view-usage}
 {: faq}
 
-Yes, you can. To access your usage dashboard, go to **Manage** > **Billing and usage** in the console. Select **Usage** to view a summary of the usage by resource group for the account. 
+Yes, you can. To access your usage dashboard, go to **Manage** > **Billing and usage** in the {{site.data.keyword.cloud_notm}} console. Select **Usage** to view a summary of the usage by resource group for the account. 
 
 ## Who can attach tags to a resource?
 {: #tag-faq}

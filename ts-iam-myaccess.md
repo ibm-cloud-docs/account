@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-11-29"
+  years: 2020, 2022
+lastupdated: "2022-02-21"
 
 keywords: troubleshoot my access, what do I have acces to
 
@@ -40,7 +40,7 @@ You might not be assigned the correct access.
 
 To check what you have access to and the level of access, complete the following steps. If you need to request access, contact the account owner.
 
-Go to **Manage** &gt; **Access (IAM)** in the console, and select your name on the **Users** page. Then, depending on the access you're looking for, select the different tabs:
+Go to **Manage** &gt; **Access (IAM)** in the {{site.data.keyword.cloud_notm}} console, and select your name on the **Users** page. Then, depending on the access you're looking for, select the different tabs:
 {: tsResolve}
 
 * To determine what access you have through the access groups you are assigned, select **Access groups**.

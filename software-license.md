@@ -2,8 +2,8 @@
 
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-09-24"
+  years: 2020, 2022
+lastupdated: "2022-02-22"
 
 keywords: license, entitlement, software, passport advantage, cloud pak, binding a license, PPA, part number
 
@@ -48,7 +48,7 @@ In most cases, someone in a procurement or financial role in your organization w
 When you assign licenses to your account, all users with access to your account can use them to install the software to which the licenses apply. If the procurement focal is not the owner of the account to which the license must be assigned, they must be assigned the administrator role on the [License and entitlement account management service](/docs/account?topic=account-account-services#license-entitlement-management). 
 
 Complete the following steps to assign a license to an account:
-1. Log in to the console and go to **Manage** > **Account**.
+1. Log in to the {{site.data.keyword.cloud_notm}} console and go to **Manage** > **Account**.
 2. Click **Licenses**. 
 3. If you don't have any licenses assigned to the account, click **Check {{site.data.keyword.IBM_notm}} Passport Advantage** to find all the licenses that are tied to your IBMid. If you have existing licenses, click **Assign** to assign more licenses to the account.
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2021
+  years: 2017, 2022
 
-lastupdated: "2021-09-24"
+lastupdated: "2022-02-21"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -245,7 +245,7 @@ To assign access to a specific service ID in the account, set an access policy f
 * Specify "serviceid" in the Resource type field
 * Specify the service ID identifier in the Resource ID field
 
-To get the identifier of a specific service ID, go to **Manage** > **Access (IAM)**, and select **Service IDs**. Select the service ID that you want to view details for, and copy the ID value.
+To get the identifier of a specific service ID, go to **Manage** > **Access (IAM)** in the {{site.data.keyword.cloud_notm}} console, and select **Service IDs**. Select the service ID that you want to view details for, and copy the ID value.
 {: ui}
 
 
@@ -255,7 +255,7 @@ To get the identifier of a specific service ID, go to **Manage** > **Access (IAM
 
 A locked service ID is indicated by the **Locked** icon ![Locked icon](images/locked.svg "Locked").
 
-1. In the console, click **Manage** > **Access (IAM)** and then select **Service IDs**.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)** and then select **Service IDs**.
 2. Identify the row of the service ID that you want to lock, and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Lock service ID**.
 
 To unlock a service ID, select the service ID from the table that you want to unlock and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Unlock service ID**. You must have the appropriate level of access to unlock a service ID.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-01-26"
+lastupdated: "2022-02-18"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog
 
@@ -53,7 +53,7 @@ The tutorial includes steps for deploying a virtual server image to a target {{s
 {: #catalog-vsi-create}
 {: step}
 
-1. Go to **Manage** > **Catalogs**, and click **Create a catalog**. 
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Catalogs**, and click **Create a catalog**. 
 1. Select **Product default** as the catalog type. 
 1. Enter the name of your catalog, for example, `Sample virtual server image`.
 1. Select **No products** to exclude all products in the {{site.data.keyword.cloud}} catalog from your catalog.

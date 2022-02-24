@@ -2,8 +2,8 @@
 
 
 copyright:
-  years: 2021
-lastupdated: "2021-11-04"
+  years: 2021, 2022
+lastupdated: "2022-02-21"
 
 keywords: onboard software, third-party software, suspend, support, software, sellers, catalog, Partner Center - Sell, remove, delete, deprecate, restore, private catalog, catalogs
 
@@ -33,7 +33,7 @@ The process to sell third-party software is still under development. With the cu
 
 Complete the following steps to restore your product or version: 
 
-1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Catalogs** > **Private catalogs**.
+1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Catalogs** > **Private catalogs**.
 1. Select the private catalog where your product is located.
 1. Select your product. 
 1. Optionally, if you want to restore a specific version of your software, select that version from the list.

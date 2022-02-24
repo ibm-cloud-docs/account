@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2021
-  
-lastupdated: "2021-11-30"
+  years: 2019, 2022
+lastupdated: "2022-02-18"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, enterprise users, enterprise access, enterprise tutorial
 
@@ -45,7 +44,7 @@ Creating an enterprise from an account and importing existing accounts cannot be
 
 Enterprises are created from an existing Subscription account. When you create the enterprise, the account is added to the enterprise hierarchy. Billing transitions to being managed by the enterprise, but its users and resources remain the same and are completely unaffected. For a complete description of account impacts, see [Creating an enterprise](/docs/account?topic=account-create-enterprise).
 
-1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Enterprise**, and click **Create**.
+1. In the {{site.data.keyword.cloud}} console, go to **Manage** > **Enterprise**, and click **Create**.
 2. Enter the name of your company, such as Example Corp, to identify your enterprise.
 3. Enter your company's domain, such as `examplecorp.com`.
 4. Review the information about the impact to your account, and select **I understand the impact to my account**. Then, click **Create**. The account is now permanently part of the enterprise and can't be removed.
@@ -142,7 +141,7 @@ In a large organization like Example Corp., there are likely other people who yo
 
 First, invite the department leads and assign them access.
 
-1. Go to the Enterprise dashboard by clicking **Manage** > **Enterprise**. In the Users section, click **Invite users**.
+1. Go to the Enterprise dashboard by clicking **Manage** > **Enterprise** in the {{site.data.keyword.cloud_notm}} console. In the Users section, click **Invite users**.
 1. Enter the email address of the user you want to invite, such as `jsmith@example.com`.
 1. Expand the **Manually assign users access** section.
 1. Select **Account management**
@@ -173,7 +172,7 @@ Before you begin, make sure that you switch to the account where you want to cre
 
 Complete the following steps to assign the required access:
 
-1. In the console, go to **Manage** > **Access (IAM)**, and select **Users**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Users**.
 2. Click the user's name from the list.
 3. Click **Access policies** > **Assign access**.
 4. Select the service that you want to assign the user access to.
@@ -192,7 +191,7 @@ Complete the following steps to assign the required access:
 {: step}
 
 1. Log in to the Example Corp enterprise account.
-2. Go to **Manage** > **Billing and usage**, and select **Usage**.
+2. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Billing and usage**, and select **Usage**.
 
    The Usage page displays the costs for all usage in your enterprise, which is broken down by account and account group. Usage information for classic infrastructure services is not included for the current billing period. For more information, see [Viewing usage for your classic infrastructure resources](/docs/billing-usage?topic=billing-usage-infra-usage).
 3. Click **Marketing** in the table to view usage within the account group. Similar to the enterprise level, usage is broken down by the account and account group.

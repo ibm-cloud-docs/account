@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-01-25"
+lastupdated: "2022-02-21"
 
 keywords: IBM Cloud notifications, notification preferences, email preferences, user notifications, distribution list, webhooks, Slack webhooks, Microsoft Teams webhooks, test webhooks, ServiceNow webhooks, SNOW
 
@@ -139,7 +139,7 @@ There might be extra fields added in the future without a major version change. 
 {: #add-webhook-distribution-list}
 
 To add webhooks to a distribution list, complete the following steps: 
-1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account** > **Notification distribution list**. 
+1. Go to **Manage** > **Account** > **Notification distribution list** in the {{site.data.keyword.cloud}} console. 
 2. Click **Add**, and select **Add webhook**. 
 3. Enter a name identifier for your webhook and an endpoint URL, where the notifications about events are being sent, when the webhook is triggered. Set up the URL that will be your own custom endpoint.
 
@@ -157,7 +157,7 @@ To add webhooks to a distribution list, complete the following steps:
 If you are ready with the previous steps and have a configured webhook, you can test it out easily. Send a test notification to your webhook and make sure that your webhook integration is working correctly and receives the notification. 
 
 Complete the following steps to send a test notification to a webhook:
-1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account** > **Notification distribution list**. 
+1. Go to **Manage** > **Account** > **Notification distribution list** in the {{site.data.keyword.cloud_notm}} console. 
 2. Select the webhook that you would like to send a test notification to, and click the **Actions** icon ![Actions](../icons/action-menu-icon.svg "Actions").
 3. Click **Test** > **Send test**.
 4. To resend the test notification, click **Resend test**.   
@@ -171,7 +171,7 @@ To create a webhook, first set up an app in Slack and create the incoming webhoo
 
 To add a Slack webhook in the {{site.data.keyword.Bluemix_notm}} console, complete the following steps: 
 
-1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account** > **Notification distribution list**. 
+1. Go to **Manage** > **Account** > **Notification distribution list** in the {{site.data.keyword.cloud_notm}} console. 
 2. Click **Add**, and select **Slack**. 
 3. Enter a name for your webhook and a Slack webhook URL. The notifications are sent to this unique URL. 
 
@@ -184,7 +184,7 @@ To create a webhook in the {{site.data.keyword.Bluemix_notm}} console, first cre
 
 To add a Microsoft Teams webhook in the {{site.data.keyword.Bluemix_notm}} console, complete the following steps: 
 
-1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account** > **Notification distribution list**. 
+1. Go to **Manage** > **Account** > **Notification distribution list** in the {{site.data.keyword.cloud_notm}} console. 
 2. Click **Add**, and select **Microsoft Teams**. 
 3. Enter a name for your webhook and a Microsoft Teams webhook URL. The notifications are sent to this unique URL. 
 

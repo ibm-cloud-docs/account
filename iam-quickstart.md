@@ -2,7 +2,7 @@
 
 copyright:
    years: 2020, 2022
-lastupdated: "2022-01-31"
+lastupdated: "2022-02-21"
 
 keywords: get started with IAM, getting started with Identity and Access Management tutorial, IAM tutorial, IAM quick start, resource group, access group, access policy, inviting users
 
@@ -140,7 +140,7 @@ You can create access groups by using Terraform.
 
 You can invite one or multiple users in a single invite. If you invite multiple users in one invitation, the same access is assigned to each user. However, you can invite users to your account with no access, and assign them access later.
 
-1. In the console, go to **Manage** > **Access (IAM)**, and select **Users**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Users**.
 2. Click **Invite users**. Specify the email addresses of the users. If you are inviting more than one user with a single invitation, they are all assigned the same access.
 3. Add one or more of the access options that you manage. You must assign at least one access option. For any access options that you don't add and configure, the default value of **No access** is assigned. Depending on the options that you are authorized to manage, you can assign the following types of access:
 
@@ -216,7 +216,7 @@ After you invite users, you might want to assign more access or edit the existin
 
 To assign a new access policy, complete the following steps:
 
-1. In the console, click **Manage** > **Access (IAM)**, and select **Users**.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users**.
 2. From the row for the user that you want to assign access, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Assign access**.
 3. Click **Add** for each access group that you want the users to belong to.
 4. (Optional) If you want to assign additional access to Cloud Foundry roles, classic infrastructure permissions, individual IAM services, or account management services, expand the Assign users additional access section.
@@ -232,7 +232,7 @@ Assign the viewer role or higher to the resource group that contains the resourc
 
 You can update existing access by editing the assigned roles for a user.
 
-1. In the console, click **Manage** > **Access (IAM)**, and select **Users**.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users**.
 2. Select the name of the user that you want to edit access for.
 3. Click **Access policies**.
 4. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** on the row for the policy that you want to edit.

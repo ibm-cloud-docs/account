@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018, 2021
+  years: 2018, 2022
   
-lastupdated: "2021-10-29"
+lastupdated: "2022-02-21"
 
 keywords: MFA, multifactor authentication, IBMid MFA, two-factor authentication, account MFA, time-based one-time passcode, TOTP, FIDO U2F, U2F, universal 2nd factor authentication, security key, verification method
 
@@ -73,7 +73,7 @@ The first time that you log in to your account after MFA settings are updated, y
 
 To disable MFA, you must be the account owner or an administrator for the account management billing service. Disabling MFA does not affect users that are already logged in. The action takes effect at all new logins.
 
-1. Go to **Manage** > **Access (IAM)** > **Settings**.
+1. Go to **Manage** > **Access (IAM)** > **Settings** in the {{site.data.keyword.cloud_notm}} console.
 1. Click **Edit** in the Authentication section.
 1. Select **None**.
 1. Click **Update**.

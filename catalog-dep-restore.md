@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-01-31"
+lastupdated: "2022-02-18"
 
 keywords: deprecate software, restore software, catalog, catalogs, software, private catalog
 
@@ -45,7 +45,7 @@ To complete this tutorial, you need to be assigned the editor role on the catalo
 
 When you deprecate a version, it is not displayed in the catalog for any user that hasn't installed it. All users who previously installed the software can still access it. 
 
-1. Go **Manage** > **Catalogs** > **Private catalogs**, and select **My first catalog** from the list of private catalogs.
+1. Go **Manage** > **Catalogs** > **Private catalogs** in the {{site.data.keyword.cloud_notm}} console, and select **My first catalog** from the list of private catalogs.
 1. Click **apache-two-instances**.
 1. From the **Version** list, select **2.4.39**. 
 1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg "Actions"), and select **Deprecate**.
@@ -64,7 +64,7 @@ When you deprecate a version, it is not displayed in the catalog for any user th
 
 When you restore a deprecated version, you are required to validate and publish the software again.
 
-1. Go to **Manage** > **Catalogs** > **Private catalogs**, and select **My first catalog**.
+1. Go to **Manage** > **Catalogs** > **Private catalogs** in the {{site.data.keyword.cloud_notm}} console, and select **My first catalog**.
 1. Click **apache-two-instances**.
 1. Click the **Version** list, and select **2.4.39**. 
 1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg "Actions"), and select **Restore**.

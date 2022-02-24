@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2021
-lastupdated: "2021-11-24"
+  years: 2015, 2022
+lastupdated: "2022-02-18"
 
 keywords: platform notifications, email notifications, IBM Cloud notifications, notification preferences, email preferences, user notifications, infrastructure notifications
 
@@ -37,9 +37,9 @@ Your platform email notifications settings are tied to your account.
 {: note}
 
 * To stay up to date with changes to the {{site.data.keyword.Bluemix_notm}} platform and products, go to **Notification preferences** > **Announcements**. To select a subcategory, set **Emails** to the on position.
-* To receive notifications about invoices, payments, subscription and promo codes, or spending and usage warnings, select **Billing and usage**. Then, click **Manage** to set up spending notifications.
+* To receive notifications about invoices, payments, subscription and promo codes, or spending and usage warnings, see **Billing and usage**. Then, click **Manage** in the {{site.data.keyword.cloud_notm}} console to set up spending notifications.
 * To receive updates about the status of your infrastructure orders, select **Ordering**.  
-* To manage the notification distribution list in regard to your account, subscriptions, security and compliance alerts or marketing communications, click **Additional notification preferences** > **Manage**.
+* To manage the notification distribution list in regard to your account, subscriptions, security and compliance alerts or marketing communications, click **Additional notification preferences** > **Manage** in the {{site.data.keyword.cloud_notm}} console.
 * By default, all {{site.data.keyword.Bluemix_notm}} platform notifications are turned off.
 
 To quickly turn off emails for the selected account or for all other accounts, click **Actions**, and select your preference.
@@ -93,7 +93,7 @@ To easily find the user you're looking for, click **Filter** and filter by given
 
 Users that you set up for classic infrastructure notifications must also have access to the devices, network, and services that send the notifications.
 
-To ensure that a user has the correct access, go to **Manage** > **Access (IAM)** > **Users** in the console, select their name, and then select **Classic infrastructure**. From the **Permissions** option, assign users the following classic infrastructure permissions.
+To ensure that a user has the correct access, go to **Manage** > **Access (IAM)** > **Users** in the {{site.data.keyword.cloud_notm}} console, select their name, and then select **Classic infrastructure**. From the **Permissions** option, assign users the following classic infrastructure permissions.
 
 | Permission Category | Required Permissions |
 | ------------------- | -------------------- |

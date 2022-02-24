@@ -4,9 +4,8 @@
 
 copyright:
 
-  years: 2018, 2021
-
-lastupdated: "2021-11-29"
+  years: 2018, 2022
+lastupdated: "2022-02-22"
 
 keywords: frequently asked questions for iam, iam faq, iam questions, identity and access management questions
 
@@ -92,7 +91,7 @@ The account owner can update your access to any resource in the account, or you 
 {: #iam-id}
 {: faq}
 
-In the console, go to **Manage** > **Access (IAM)**, and select **Users**. Then, select your name or another user's name from the list. You can find the IAM ID for that user along with their email address on the User details page.
+In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Users**. Then, select your name or another user's name from the list. You can find the IAM ID for that user along with their email address on the User details page.
 
 ## How do I identify platform management roles and service access roles for a user? 
 {: #iam-role}
@@ -109,7 +108,7 @@ The `owner` tag is listed for the owner of the account. This user is assigned th
 {: #iam-api-keys}
 {: faq}
 
-In the console, go to **Manage** > **Access (IAM)** > **API keys** to view and manage API keys that you have access to.
+In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **API keys** to view and manage API keys that you have access to.
 
 * For information about how to manage {{site.data.keyword.cloud_notm}} API keys that are associated with user identities, see [Managing user API keys](/docs/account?topic=account-userapikey).  
 * For information about how to manage API keys that are associated with a service ID, see [Managing service ID API keys](/docs/account?topic=account-serviceidapikeys).
@@ -202,7 +201,7 @@ The account owner can remove any users from the account, and any user with the f
 {: faq}
 {: support}
 
-1. In the console, go to **Manage** > **Access (IAM)**, and select **Settings**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Settings**.
 2. From the Account login section, select **Update** to select MFA for all users or non-federated users only.
 
 For more information, see [Requiring MFA for users in your account](/docs/account?topic=account-enablemfa).

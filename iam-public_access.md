@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2019, 2021
+  years: 2019, 2022
 
-lastupdated: "2021-09-22"
+lastupdated: "2022-02-21"
 
 keywords: public access, anonymous access, users, service IDs, public access group, enable, disable, manage, IAM
 
@@ -47,7 +47,7 @@ When public access is enabled in the account, you can create a policy to define 
 {: #public-access-console}
 {: ui}
 
-1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Access groups**.
+1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Access (IAM)**, and select **Access groups**.
 2. Click the name of the public access group > **Assign access**.  
 3. Select **{{site.data.keyword.cos_short}}** from the **Services** list.
 4. Select the specific instance from the **Service instance** list.
@@ -291,7 +291,7 @@ When you disable public access, all existing policies for the Public Access grou
 {: #disable-public-ui}
 {: ui}
 
-To disable public access for the account, go to **Manage** > **Access (IAM)** > **Settings** in the console, and set the Public access setting to **Disable public access**.
+To disable public access for the account, go to **Manage** > **Access (IAM)** > **Settings** in the {{site.data.keyword.cloud_notm}} console, and set the Public access setting to **Disable public access**.
 
 ### Disabling access by using the CLI
 {: #disable-public-cli}

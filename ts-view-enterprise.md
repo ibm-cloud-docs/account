@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2021
-lastupdated: "2021-11-30"
+  years: 2015, 2022
+lastupdated: "2022-02-21"
 
 keywords: troubleshoot enterprise, enterprise problem, can't view enterprise, access to enterprise
 
@@ -37,7 +37,7 @@ To check what access you are assigned, complete the following steps:
 Contact the enterprise owner to request the correct access.
 
 If you're the owner of the enterprise, complete the following steps to assign a user access to the entire enterprise:
-1. Go to **Manage** > **Access (IAM)** > **Users** in the console.
+1. Go to **Manage** > **Access (IAM)** > **Users** in the {{site.data.keyword.cloud_notm}} console.
 2. Select the name of the user.
 3. Click the **Access policies** tab > **Assign access** > **Assign access to account management services**.
 4. Select **Enterprise** as the service, and select the name of your enterprise.

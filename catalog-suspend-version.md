@@ -2,8 +2,8 @@
 
 
 copyright:
-  years: 2021
-lastupdated: "2021-11-22"
+  years: 2021, 2022
+lastupdated: "2022-02-21"
 
 keywords: onboard software, suspend, support, software, sellers, catalog, Partner Center - Sell, remove, delete, deprecate, catalogs, private catalogs
 
@@ -28,7 +28,7 @@ subcollection: account
 If you need to remove a version of your software that's published to your account, you can suspend it for a short time without permanently deleting or deprecating it. Suspending a product can be useful if, for example, you discover a bug or a vulnerability in your product that must be investigated before more users install it. 
 {: shortdesc}
 
-Suspending your product will not permanently delete it from the {{site.data.keyword.cloud_notm}} catalog. If you need to permanently delete your product, deprecate it instead. 
+Suspending your product will not permanently delete it from the {{site.data.keyword.cloud}} catalog. If you need to permanently delete your product, deprecate it instead.
 {: note}
 
 Complete the following steps to suspend your version: 

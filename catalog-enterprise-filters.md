@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-11-30"
+  years: 2020, 2022
+lastupdated: "2022-02-18"
 
 keywords: catalog, private catalog, catalog management service, public catalog, enterprise account, child account, account group, enterprise, IBM Cloud catalog
 
@@ -33,7 +33,7 @@ Centrally manage what's available in the catalog for your entire enterprise hier
 
 Let's say your organization is tasked with implementing a development and deployment model that's focused on improved speed, quality, and control. You might choose to restrict the catalog to only {{site.data.keyword.IBM_notm}} products that are related to DevOps technologies for all members in your enterprise. 
 
-1. In the console, go to **Manage** > **Catalogs** > **Settings**.
+1. Go to **Manage** > **Catalogs** > **Settings** in the {{site.data.keyword.cloud_notm}} console.
 2. Select **Exclude all products in the {{site.data.keyword.cloud_notm}} catalog**.
 3. Select one or more filters to customize which products are available. In the case of our example, select the following filters: 
 
@@ -50,7 +50,7 @@ Let's say your organization is tasked with implementing a development and deploy
 
 To build on the example in the previous section, all account groups and accounts in your enterprise have access to Developer tools products provided by {{site.data.keyword.IBM_notm}}. You can further restrict access to a subset of products for child account groups and accounts. For example, you might want to limit a specific account group, and its child accounts, to work with only the products that support IAM for access control. 
 
-1. Go to **Manage** > **Catalogs** > **Settings**.
+1. Go to **Manage** > **Catalogs** > **Settings** in the {{site.data.keyword.cloud_notm}} console.
 2. Expand the enterprise hierarchy, and select the specific account group. 
 3. Select **Exclude all products in the {{site.data.keyword.cloud_notm}} catalog**.
 4. Select **Compliance** > **IAM-enabled**. 

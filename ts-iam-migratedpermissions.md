@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-09-22"
+  years: 2020, 2022
+lastupdated: "2022-02-21"
 
 
 keywords: troubleshoot migrated softlayer permissions, migrated billing permission, migrated support permission
@@ -39,5 +39,5 @@ Users don't seem to have the same managing billing and support case permissions 
 Your migrated permissions access groups might not be assigned the correct access policies when the users were initially migrated.
 {: tsCauses}
 
-As of 20 May 2019, all [migrated permission access groups](/docs/account?topic=account-migrated_permissions) have the correct policies that are assigned for managing billing information and support cases. If you tried to use these groups before this date, the access groups that are missing equivalent IAM access policies might have caused a mismatch in the assigned access between the SoftLayer permissions and IAM access. This is resolved. You can go to **Manage** > **Access (IAM)** in the console, and then select **Access groups** to review the users and policies that are assigned to each access group.
+As of 20 May 2019, all [migrated permission access groups](/docs/account?topic=account-migrated_permissions) have the correct policies that are assigned for managing billing information and support cases. If you tried to use these groups before this date, the access groups that are missing equivalent IAM access policies might have caused a mismatch in the assigned access between the SoftLayer permissions and IAM access. This is resolved. You can go to **Manage** > **Access (IAM)** in the {{site.data.keyword.cloud_notm}} console, and then select **Access groups** to review the users and policies that are assigned to each access group.
 {: tsResolve}

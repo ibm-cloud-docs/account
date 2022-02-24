@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2021
-lastupdated: "2021-09-24"
+  years: 2019, 2022
+lastupdated: "2022-02-21"
 
 keywords: private catalog, account catalogs, software, reload, version
 
@@ -38,7 +38,7 @@ You can reload a version of software in your private catalog to update the versi
 
 To update an unpublished version of software, you must reload the version from your source repository and validate it.  
 
-1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Catalogs** > **Private catalogs**. 
+1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Catalogs** > **Private catalogs**. 
 1. Select the private catalog where your product is located. 
 1. Select your product. 
 1. Select the version of the software that you want to reload.

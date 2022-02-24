@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-02-03"
+lastupdated: "2022-02-18"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, Cloud Foundry, endpoint type
 
@@ -110,7 +110,7 @@ To manage network zones, you must be assigned a specific role for the context-ba
 
 For more information, see [Actions and roles for account management services](/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles).
 
-You can also use network zones to restrict access at the account level. To set account level restrictions by using network zones, go to **Manage** > **IAM** > **Settings** and enter the name of your network zone.
+You can also use network zones to restrict access at the account level. To set account level restrictions by using network zones, go to **Manage** > **IAM** > **Settings** in the {{site.data.keyword.cloud_notm}} console and enter the name of your network zone.
 {: note}
 
 ### Endpoint types
