@@ -46,7 +46,8 @@ After your payment information is processed, your account is upgraded and you ca
 
 If you're upgrading to reactivate a deactivated account, your account might take a few days to be fully available. If your account continues to be in a pending state, see [Why can't I upgrade my account?](/docs/account?topic=account-ts_upgrade_cc) for help.
 
-### Promotional credit for upgrading your account 
+### Promotional credit for upgrading your account
+{: #promotional-credit-for-upgrading-your-account} 
 
 If your upgrade included a promotional credit, the credit might take a few hours to appear in your account. Any unused upgrade credit expires after the 30 day period ends. You are invoiced for any usage that exceeds the promotional credit. You can view the promotional credit on the [Promotions](/billing/promotions){: external} page or the [Invoices](/billing/invoices){: external} page in the console. The following table lists the current upgrade promotional amounts for different currencies:
 

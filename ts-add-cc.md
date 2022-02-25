@@ -1,13 +1,15 @@
 ---
 
 copyright:
-  years: 2015, 2021
-lastupdated: "2021-09-22"
+  years: 2015, 2022
+lastupdated: "2022-02-28"
 
 keywords: troubleshoot account, account problem, view all orgs 
+
 subcollection: account
 
 content-type: troubleshoot
+
 ---
 
 {:tsSymptoms: .tsSymptoms}
@@ -25,16 +27,19 @@ content-type: troubleshoot
 {: troubleshoot}
 
 You can't submit your credit card information to upgrade your Lite account to a billable account.
-{: shortdesc}
 
-The **Submit** button on the Add credit card page is disabled.
+The **Upgrade account** button is disabled.
 {: tsSymptoms}
 
-This problem happens when your information isn't completed correctly on the Add credit card page.
+This problem happens when your information isn't entered correctly.
 {: tsCauses}
 
 Complete the following steps:
 {: tsResolve}
 
-1. On the Add credit card page in the {{site.data.keyword.Bluemix_notm}} console, complete all the required fields.
-1. Select **I have read and agree to IBM's Terms and Conditions**, then click **Submit**.
+1. Complete all of the required fields to add your credit card and billing information in the {{site.data.keyword.Bluemix_notm}} console.
+
+   Ensure that you specified a business account and not a personal account type, if you are providing a VAT ID or tax identification number.
+   {: note}
+   
+1. Click **Upgrade account**.

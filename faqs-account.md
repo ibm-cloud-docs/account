@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2022
-lastupdated: "2022-02-18"
+lastupdated: "2022-02-28"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -91,11 +91,11 @@ Yes, the following options are available depending on your account type:
 
 If you upgrade your trial account to a Pay-As-You-Go account by entering a credit card, it can't be converted back to a trial account.
 
-## Can I add an educational promotional code to an account after I have added a credit card?
+## Can I add an educational feature code to an account after I have added a credit card?
 {: #convert-education}
 {: faq}
 
-When you add a credit card to your trial account, your account is upgraded to a Pay-As-You-Go account. Educational promotional codes can't be used in a Pay-As-You-Go account. In addition, a Pay-As-You-Go account can't be converted back to a trial account. For more information about educational trial accounts, see the [IBM Academic Initiative FAQs](https://www.ibm.com/academic/faqs/faqs){: external}. 
+When you add a credit card to your trial account, your account is upgraded to a Pay-As-You-Go account. Educational feature codes can't be used in a Pay-As-You-Go account. In addition, a Pay-As-You-Go account can't be converted back to a trial account. For more information about educational trial accounts, see the [IBM Academic Initiative FAQs](https://www.ibm.com/academic/faqs/faqs){: external}. 
 
 ## Can I sign up for a free trial?
 {: #freetrial}
@@ -176,7 +176,7 @@ To reset your VPN password, complete the following steps:
 {: #forgot-password}
 {: faq}
 
-If you don't remember your password for your IBMid and can't log in to {{site.data.keyword.Bluemix_notm}}, you can reset your password using our [automated system](https://www.ibm.com/account/reg/us-en/reset-password){: external}. 
+If you don't remember your password for your IBMid and can't log in to {{site.data.keyword.Bluemix_notm}}, you can reset your password by using our [automated system](https://www.ibm.com/account/reg/us-en/reset-password){: external}. 
 
 ## Can I remove my personal data from {{site.data.keyword.Bluemix_notm}}?
 {: #remove-pi}
@@ -205,9 +205,9 @@ If you believe that your account was deactivated in error, contact support by ca
 In the {{site.data.keyword.Bluemix_notm}} console, go to **Support** from the console menu bar. The options that are available to you depend on your support plan. For more information, see [Getting support](/docs/get-support?topic=get-support-support-plans).  
 
 To contact support, you can use the following methods:
-* If you have a valid pay-as-you-go or subscription account, you can click **Live chat with support** to chat with a support engineer.  
-* Pay-as-you-go or subscription accounts can also contact support by phone: +1-866-403-7638.
-* Lite and Trial account support is limited to non-technical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the [{{site.data.keyword.Bluemix_notm}} documentation](/docs/get-support?topic=get-support-using-avatar), Chat with Watson, and use [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external}.
+* If you have a valid Pay-As-You-Go or Subscription account, you can click **Live chat with support** to chat with a support engineer.  
+* Pay-As-You-Go or Subscription accounts can also contact support by phone: +1-866-403-7638.
+* Lite and Trial account support is limited to nontechnical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the [{{site.data.keyword.Bluemix_notm}} documentation](/docs/get-support?topic=get-support-using-avatar), Chat with Watson, and use [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external}.
 
 ## Can I view a list of accounts that I own?
 {: #accounts-owned}
@@ -217,7 +217,7 @@ The {{site.data.keyword.cloud_notm}} console menu bar lists all of the accounts 
 
 ![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-faq.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.")
 
-You can view your role in each account on the [Users page](/iam/users). The 'owner' tag next to a user name indicates the account owner. If you are the owner of the account, the 'self' tag is also listed next to your name. If you only see your name that is listed and you are not the account owner, the account owner has restricted the user list. For more information, see [Controlling user visibility](/docs/account?topic=account-iam-user-setting).Contact [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external} to determine the account owner. 
+You can view your role in each account on the [Users page](/iam/users). The 'owner' tag next to a user name indicates the account owner. If you are the owner of the account, the 'self' tag is also listed next to your name. If you see only your name that is listed and you are not the account owner, the account owner has restricted the user list. For more information, see [Controlling user visibility](/docs/account?topic=account-iam-user-setting).Contact [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external} to determine the account owner. 
 
 You can also find your accounts from the CLI by running the `ibmcloud account list` command. This command lists the account that you own and any other accounts that are affiliated with your IBMid. 
 
@@ -252,7 +252,7 @@ If you have access to more than one account, you can click your account name in 
 Data can't be directly migrated from one {{site.data.keyword.Bluemix_notm}} account to another. But, you might be able to re-create configurations and add them to another account. Consider the following approaches:
 
 * Save your applications and replicate them in different accounts by using GitHub or another code repository. 
-* Review the applicable documentation to determine if your infrastructure services can be backed up and re-created in different accounts.
+* Review the applicable documentation to determine whether your infrastructure services can be backed up and re-created in different accounts.
 * Use manifests and other documented methods to rebuild your applications and services by using documented methods to back up and restore your data.
 
 Users with a Basic, Advanced, or Premium support plan can open a [Support case](/unifiedsupport/supportcenter){: external}  for assistance with data migration questions.
@@ -266,7 +266,7 @@ You can target URLs for any {{site.data.keyword.Bluemix_notm}} console page to a
 1. Switch to the account that you want to target, and go to the [Account settings](/account/settings) page in the console. In the Account section, find the account ID, such as `a1b2c3d4e5f61234567890fedcba4321`.
 1. Go to the console page that you want to bookmark, and add `?bss_account=<account-id>` to the URL, replacing `<account-id>` with the ID from your account. For example,:
 
-   ```
+   ```text
    /billing/usage?bss_account=a1b2c3d4e5f61234567890fedcba4321
    ```
    {: screen}
@@ -358,7 +358,7 @@ You can view the role that you are assigned on a dashboard by going to **Manage*
 {: #access-dashboard}
 {: faq}
 
-You can't edit the default dashboard directly. However, you can create a duplicate version of it that you can edit and personalize however you want by clicking the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** in {{site.data.keyword.Bluemix_notm}} console. 
+You can't edit the default dashboard directly. However, you can create a duplicate version that you can edit and personalize however you want by clicking the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** in {{site.data.keyword.Bluemix_notm}} console. 
 
 By maintaining the original version of the default dashboard, you can discover the latest widgets and functionalities, which get built and added over time. This way, you can always bring out the most of your workflow.
 
@@ -378,13 +378,6 @@ For more information about managing orgs and spaces, see [Adding orgs and spaces
 
 Currently, you can't move an org to a different account. However, you can re-create the org with the same credentials in a different account to mimic this functionality. For more information, see [Adding orgs and spaces](/docs/account?topic=account-orgsspacesusers#createorg).
 
-## Which Cloud Foundry regions can I use?
-{: #whichregions}
-{: faq}
-
-In a Lite account, you can work in only one region. In a Pay-As-You-Go or Subscription account, you can access all available regions.
-
-
 ## Why do I get logged out of my account?
 {: #user-session-log-out}
 
@@ -394,6 +387,6 @@ The administrator of your account has customized the duration of active and inac
 {: #lite-account-create}
 {: faq}
  
-Based on an update to our account registration process that's being released incrementally starting 25 October 2021, new accounts are created as Pay-As-You-Go. As part of this update, you're asked to provide credit card information for identity verification. After you register and create your new account, you can access the full {{site.data.keyword.cloud_notm}} catalog, including all Free and Lite plans. And, you get a $200 credit that you can use on products in the first 30 days. You pay only for billable services that you use, with no long-term contracts or commitments. 
+Based on an update to our account registration that released starting 25 October 2021, new accounts are created as Pay-As-You-Go. As part of this update, you're asked to provide credit card information for identity verification. After you register and create your new account, you can access the full {{site.data.keyword.cloud_notm}} catalog, including all Free and Lite plans. And, you get a $200 credit that you can use on products in the first 30 days. You pay only for billable services that you use, with no long-term contracts or commitments. 
 
 If you created a Lite account before 25 October 2021, you can continue working as you always have. However, you can go ahead and [upgrade to a Pay-As-You-Go account](/docs/account?topic=account-accountfaqs#changeacct) by adding your credit card information. This way, you can gain access to all Free service plans in the catalog.

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2021
-lastupdated: "2022-02-09"
+  years: 2015, 2022
+lastupdated: "2022-02-14"
 
 keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription
 
@@ -40,7 +40,7 @@ The following table provides a comparison of Pay-As-You-Go and Subscription acco
 {: caption="Table 1. Comparison of {{site.data.keyword.Bluemix_notm}} accounts" caption-side="top"}
 {: summary="This table has row and column headers. The row headers identify the feature. The column headers identify the account type. To understand which features apply to the account types, navigate to the row, and find the feature that you're interested in."} 
 
-Based on an update to our account registration process that's being released incrementally starting 25 October 2021, all new accounts are created as Pay-As-You-Go. As part of this update, you're asked to provide credit card information for identity verification. If you created an account before this date, you might be using a [Lite account](#liteaccount) and Lite pricing plans, which aren't affected by the recent account registraton update.
+New accounts as of 25 October 2021 are created as Pay-As-You-Go or Subscription accounts. You're asked to provide credit card information for identity verification or a code for a purchased subscription. If you created an account before this date, you might be using a [Lite account](#liteaccount) and Lite pricing plans, which aren't affected by the recent account registraton update.
 {: note}
 
 ## Pay-As-You-Go account
@@ -105,7 +105,7 @@ You can work with [{{site.data.keyword.Bluemix_notm}} Sales](https://cloud.ibm.c
 
 If you created a Lite account before 25 October 2021, your account doesn't expire and you can work in {{site.data.keyword.cloud_notm}} for free by accessing services with select Lite plans, which are displayed with a **Lite** tag ![Lite tag](../icons/Lite.svg "Lite") in the catalog. To gain access to all Free plans, you can go ahead and [upgrade to a Pay-As-You-Go account](/docs/account?topic=account-accountfaqs#changeacct) by adding your credit card information. 
 
-Starting 25 October 2021, all new accounts are created as Pay-As-You-Go based on an update to our account registration process that's being released incrementally. As part of this update, you're asked to provide credit card information for identity verification. You have full access to the catalog, including all Free and Lite plans, and you get a $200 credit that you can apply in your first 30 days. You pay only for billable services that you use, with no long-term contracts or commitments. 
+Starting 25 October 2021, all new accounts are created as Pay-As-You-Go based on an update to our account registration process. As part of this update, you're asked to provide credit card information for identity verification. You have full access to the catalog, including all Free and Lite plans, and you get a $200 credit that you can apply in your first 30 days. You pay only for billable services that you use, with no long-term contracts or commitments. 
 {: note}
 
 Lite accounts have access to a single resource group that's created for you with the name `Default`. All of your service's instances are automatically added to this resource group. You can update the name of this resource group at any time. See [Renaming a resource group](/docs/account?topic=account-rgs#rename_rgs) for the detailed steps.
@@ -115,12 +115,12 @@ Lite accounts have access to a single resource group that's created for you with
 
 Check out the following list of key features that are available in a Lite account:
 
-   * The account is free - no credit card required.
-   * The account never expires.
-   * You receive email notifications about your account status and quota limits.
-   * You can create one instance of any service in the [{{site.data.keyword.Bluemix_notm}} catalog](/catalog/?search=label:lite%20lite){: external} that has a Lite plan.
-   * After 10 days of no development activity, your apps go to sleep. You can wake up your apps by continuing to work on them.
-   * After 30 days of no development activity, your service instances with Lite plans are deleted.
+* The account is free - no credit card required.
+* The account never expires.
+* You receive email notifications about your account status and quota limits.
+* You can create one instance of any service in the [{{site.data.keyword.Bluemix_notm}} catalog](/catalog/?search=label:lite%20lite){external} that has a Lite plan.
+* After 10 days of no development activity, your apps go to sleep. You can wake up your apps by continuing to work on them.
+* After 30 days of no development activity, your service instances with Lite plans are deleted
 
-   Only Lite accounts created before 12 August 2021 can use 186 GBH of free buildpacks and Cloud Foundry apps with up to 256 MB of free, instantaneous runtime memory per month. The use of one org in one {{site.data.keyword.Bluemix_notm}} region is supported.
-   {: note}
+Only Lite accounts created before 12 August 2021 can use 186 GBH of free buildpacks and Cloud Foundry apps with up to 256 MB of free instantaneous runtime memory per month. The use of one org in one {{site.data.keyword.Bluemix_notm}} region is supported.
+{: note}
