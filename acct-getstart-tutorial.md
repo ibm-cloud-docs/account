@@ -77,7 +77,7 @@ Setting up MFA in your account affects all members of the account. This means th
 1. Go to **Manage** > **Access (IAM)** > **Settings** in the {{site.data.keyword.cloud_notm}} console.
 1. Update the current authentication setting by clicking **Edit** in the Authentication section.
 1. Select the type of MFA to enable in your account.
-   * **MFA for users with an IBMid**: Require users to authenticate by using an IBMid, password, and time-based one-time passcode (TOTP). You can enable this option for all users or nonfederated users. 
+   * **MFA for users with an IBMid**: Require users to authenticate by using an IBMid, password, and time-based one-time passcode (TOTP). You can enable this option for all users or non-federated users. 
    * **MFA for all users (IBMid & supported IdPs)**: Require users to authenticate by using one of the following MFA factors. This option applies to users who are using either an IBMid or an external IdP. 
       * **Email-based MFA**: Users authenticate by using a security passcode that's sent by email. 
       * **TOTP MFA**: Users authenticate by using a time-based one-time passcode (TOTP) with an authenticator app, such as {{site.data.keyword.IBM_notm}} Security Verify or Google Authenticator. 
