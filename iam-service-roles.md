@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-02-25"
+lastupdated: "2022-02-26"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3777,12 +3777,15 @@ Review the available platform and service roles and the actions mapped to each t
 | Role | Description |
 | ----- | :----- |
 | Certificate Manager | Managing client certificates to configure mutual TLS for EP11 workloads |
-| KMS Key Purge | As a KMS Key Purge, the user is allowed to purge encryption keys. |
+| KMS Key Purge Role | As a KMS Key Purge, the user is allowed to purge encryption keys. |
+| Key Custodian - Creator | Manages Keys. For a complete key lifecycle both Creator and Deployer roles are needed. To implement separaton of duties assign Creator and Deployer role to different people. Can create keys |
+| Key Custodian - Deployer | Manages Keys. For a complete key lifecycle both Creator and Deployer roles are needed. To implement separaton of duties assign Creator and Deployer role to different people. Can deploy keys |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Reader Plus | As a reader plus, you can perform read-only actions within the service such as viewing service-specific resources. You can also access key material of standard keys. |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 | VMWare KMIP Manager | Allow the VMWare Solutions service to configure KMIP (activate/deactivate KMIP endpoint, manage client certificates) |
+| Vault Administrator | Can manage vaults, keystores (incl. cost implications), templates, and can perform destructive lifecycle actions on managed keys. Different vaults can be used to e.g. separate teams, lines of business, or customers. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 66. Service roles - Hyper Protect Crypto Services" caption-side="top"}
@@ -3837,15 +3840,15 @@ Review the available platform and service roles and the actions mapped to each t
 | `hs-crypto.keystore.storenewkey` | hs-crypto.keystore.storenewkey | Manager, Writer |
 | `hs-crypto.keystore.updatekey` | hs-crypto.keystore.updatekey | Manager, Writer |
 | `hs-crypto.dashboard.view` | View the dashboard | Administrator, Editor, Operator |
-| `hs-crypto.instances.read` | Get Instance API endpoint info | Administrator, Editor, Manager, Reader, Reader Plus, VMWare KMIP Manager, Viewer, Writer |
-| `hs-crypto.secrets.list` | Retrieve a list of encryption keys. | Administrator, Editor, Manager, Reader, Reader Plus, VMWare KMIP Manager, Viewer, Writer |
-| `hs-crypto.secrets.wrap` | Retrieve a list of encryption keys. | Administrator, Editor, Manager, Reader, Reader Plus, Viewer, Writer |
-| `hs-crypto.secrets.unwrap` | Unwrap an encryption key. | Administrator, Editor, Manager, Reader, Reader Plus, Viewer, Writer |
-| `hs-crypto.secrets.create` | Create an encryption key. | Administrator, Editor, Manager, Writer |
-| `hs-crypto.secrets.read` | Retrieve an encryption key. | Administrator, Editor, Manager, Reader Plus, Writer |
-| `hs-crypto.secrets.delete` | Delete an encryption key. | Administrator, Manager |
-| `hs-crypto.secrets.rotate` | Rotate an encryption key. | Administrator, Editor, Manager, Writer |
-| `hs-crypto.instances.manage` | Manage instance via TKE. | Administrator, Manager |
+| `hs-crypto.instances.read` | Get Instance API endpoint info | Administrator, Editor, Key Custodian - Creator, Key Custodian - Deployer, Manager, Reader, VMWare KMIP Manager, Vault Administrator, Viewer, Writer |
+| `hs-crypto.secrets.list` | Retrieve a list of encryption keys. | Manager, Reader, Reader Plus, VMWare KMIP Manager, Writer |
+| `hs-crypto.secrets.wrap` | Wrap an encryption key. | Manager, Reader, Reader Plus, Writer |
+| `hs-crypto.secrets.unwrap` | Unwrap an encryption key. | Manager, Reader, Reader Plus, Writer |
+| `hs-crypto.secrets.create` | Create an encryption key. | Manager, Writer |
+| `hs-crypto.secrets.read` | Retrieve an encryption key. | Manager, Reader Plus, Writer |
+| `hs-crypto.secrets.delete` | Delete an encryption key. | Manager |
+| `hs-crypto.secrets.rotate` | Rotate an encryption key. | Manager, Writer |
+| `hs-crypto.instances.manage` | Manage instance via TKE. | Manager |
 | `hs-crypto.ep11.use` | Use the GREP11 Interface for Hyper Protect Crypto Services | Administrator, Editor, Manager, Reader, Reader Plus, Viewer, Writer |
 | `hs-crypto.importtoken.create` | Allow creation of secure import tokens | Manager, Writer |
 | `hs-crypto.importtoken.read` | Allow retrieval of secure import tokens | Manager, Writer |
@@ -3874,13 +3877,15 @@ Review the available platform and service roles and the actions mapped to each t
 | `hs-crypto.kmip.status` | Get Status of KMIP endpoint | VMWare KMIP Manager |
 | `hs-crypto.kmip.certadd` | Add Client Certificates to KMIP endpoint for usage of mutual TLS | VMWare KMIP Manager |
 | `hs-crypto.kmip.certdel` | Delete Client Certificates from KMIP endpoint for usage of mutual TLS | VMWare KMIP Manager |
-| `hs-crypto.keyrings.create` | Create Key Rings | Manager, Writer |
-| `hs-crypto.keyrings.delete` | Delete key rings | Manager, Writer |
-| `hs-crypto.keyrings.list` | List key rings | Manager, Reader, Reader Plus, VMWare KMIP Manager, Writer |
-| `hs-crypto.secrets.createalias` | Create an alias for a key | Manager, Writer |
-| `hs-crypto.secrets.deletealias` | Delete an alias of a key | Manager, Writer |
-| `hs-crypto.secrets.sync` | Initiate a manual synchronization request to the associated resources of a key. | Manager, Writer |
+| `hs-crypto.keyrings.create` | Create key rings | Manager, Writer |
+| `hs-crypto.keyrings.delete` | Delete key rings | Manager |
+| `hs-crypto.keyrings.list` | List key rings | Manager, Reader, Reader Plus, Writer |
+| `hs-crypto.secrets.createalias` | Create key alias | Manager, Writer |
+| `hs-crypto.secrets.deletealias` | Delete key alias | Manager, Writer |
 | `hs-crypto.config.read` | Configuration Information Point API access | Service Configuration Reader |
+| `hs-crypto.secrets.sync` | Initiate a manual synchronization request to the associated resources of a key. | Manager, Writer |
+| `hs-crypto.secrets.purge` | Purge a destroyed encryption key. | KMS Key Purge Role |
+| `hs-crypto.secrets.patch` | Update an encryption key | Manager |
 | `hs-crypto.mtlscert-admin-key.create` | Create the administrator signature key for the certificate administrator | Certificate Manager |
 | `hs-crypto.mtlscert-admin-key.update` | Update the administrator signature key for the certificate administrator | Certificate Manager |
 | `hs-crypto.mtlscert-admin-key.delete` | Delete the administrator signature key of the certificate administrator | Certificate Manager |
@@ -3889,8 +3894,38 @@ Review the available platform and service roles and the actions mapped to each t
 | `hs-crypto.mtlscert-cert.list` | List all certificates that are managed by the certificate administrator | Certificate Manager |
 | `hs-crypto.mtlscert-cert.read` | Get certificates by the certificate administrator | Certificate Manager |
 | `hs-crypto.mtlscert-cert.delete` | Delete certificates by the certificate administrator | Certificate Manager |
-| `hs-crypto.secrets.purge` | IPurge a destroyed encryption key. | KMS Key Purge |
-| `hs-crypto.secrets.patch` | Update encryption key. | Manager |
+| `hs-crypto.vault-keys.active-deactivate` | Deactivate an ACTIVE key | Key Custodian - Deployer |
+| `hs-crypto.vault-keys.active-install` | Install an ACTIVE key | Key Custodian - Deployer, Vault Administrator |
+| `hs-crypto.vault-keys.active-uninstall` | Uninstall an ACTIVE key | Key Custodian - Creator, Key Custodian - Deployer |
+| `hs-crypto.vault-keys.deactivated-destroy` | Destroy a DEACTIVATED key | Vault Administrator |
+| `hs-crypto.vault-keys.deactivated-install` | Install a DEACTIVATED key | Key Custodian - Creator, Key Custodian - Deployer |
+| `hs-crypto.vault-keys.deactivated-reactivate` | Reactivate a DEACTIVATED key | Key Custodian - Deployer |
+| `hs-crypto.vault-keys.deactivated-uninstall` | Uninstall a DEACTIVATED key | Key Custodian - Creator, Key Custodian - Deployer |
+| `hs-crypto.vault-keys.destroyed-remove` | Remove a DESTROYED key from Vault | Vault Administrator |
+| `hs-crypto.vault-keys.distribute` | Distribute key into assigned keystores | Key Custodian - Creator, Key Custodian - Deployer |
+| `hs-crypto.vault-keys.generate` | Generate new key material | Key Custodian - Creator |
+| `hs-crypto.vault-keys.preactivation-activate` | Activate a PREACTIVE key | Key Custodian - Deployer |
+| `hs-crypto.vault-keys.preactivation-destroy` | Destroy a PREACTIVE key | Key Custodian - Creator, Key Custodian - Deployer |
+| `hs-crypto.vault-keys.read` | Read managed key details | Key Custodian - Creator, Key Custodian - Deployer, Reader, Vault Administrator |
+| `hs-crypto.vault-keys.list` | List managed keys | Administrator, Editor, Key Custodian - Creator, Key Custodian - Deployer, Manager, Reader, Vault Administrator, Viewer, Writer |
+| `hs-crypto.vault-keys.write` | Write/edit managed key details | Key Custodian - Creator, Key Custodian - Deployer |
+| `hs-crypto.vault-keys.delete` | Delete a managed key | Vault Administrator |
+| `hs-crypto.vault-keys.write-dates` | Write key activation/expiration dates | Key Custodian - Creator, Key Custodian - Deployer |
+| `hs-crypto.vault-keys.write-tags` | Write key tags | Key Custodian - Creator, Key Custodian - Deployer |
+| `hs-crypto.vault-keystores.read` | Read target keystore details | Key Custodian - Creator, Key Custodian - Deployer, Reader, Vault Administrator |
+| `hs-crypto.vault-keystores.list` | List target keystores | Administrator, Editor, Key Custodian - Creator, Key Custodian - Deployer, Manager, Reader, Vault Administrator, Viewer, Writer |
+| `hs-crypto.vault-keystores.write` | Write/edit target keystore details | Vault Administrator |
+| `hs-crypto.vault-keystores.delete` | Delete a keystore (internal) / Disconnect a keystore (external) | Vault Administrator |
+| `hs-crypto.vault-key-templates.read` | Read key template details | Key Custodian - Creator, Key Custodian - Deployer, Reader, Vault Administrator |
+| `hs-crypto.vault-key-templates.list` | List key templates | Administrator, Editor, Key Custodian - Creator, Key Custodian - Deployer, Manager, Reader, Vault Administrator, Viewer, Writer |
+| `hs-crypto.vault-key-templates.write` | Write/Edit key templates | Key Custodian - Creator, Vault Administrator |
+| `hs-crypto.vault-key-templates.delete` | Delete key templates | Vault Administrator |
+| `hs-crypto.vaults.read` | Read Vault details | Key Custodian - Creator, Key Custodian - Deployer, Reader, Vault Administrator |
+| `hs-crypto.vaults.list` | List Vaults | Administrator, Editor, Key Custodian - Creator, Key Custodian - Deployer, Manager, Reader, Vault Administrator, Viewer, Writer |
+| `hs-crypto.vaults.write` | Write/Edit Vault details | Vault Administrator |
+| `hs-crypto.vaults.delete` | Delete a Vault | Vault Administrator |
+| `hs-crypto.uko.initiate-paid-upgrade` | Start billing of UKO base price (by using external keystores) | Vault Administrator |
+| `hs-crypto.uko.add-paid-keystore` | Create a paid keystore (beyond free amount) | Vault Administrator |
 {: caption="Table 66. Service actions - Hyper Protect Crypto Services" caption-side="top"}
 {: #actions-table66}
 {: tab-title="Actions"}
