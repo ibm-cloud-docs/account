@@ -137,7 +137,6 @@ If you created a Lite account before 12 August 2021, you can build and deploy ap
 ## What happens when my Lite plan instance reaches the monthly quota?
 {: #monthlyquota}
 {: faq}
-{: support}
 
 Reaching any quota limit for Lite plan instances suspends the service for that month. Quota limits are per org, not instance. New instances that you create in the same org reflect any usage from previous instances. The quota limits reset on the first of every month.
 
@@ -146,7 +145,6 @@ You can check your usage by going to **Manage** > **Billing and usage** in the {
 ## How many resource groups, orgs, or spaces can I create?
 {: #resourcelimit}
 {: faq}
-{: support}
 
 If you have a Pay-As-You-Go or Subscription account, there's no limit to the number of resource groups, orgs, or spaces that you can create. However, if you have a Lite account, you're limited to one org and one resource group.
 
