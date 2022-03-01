@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2022
 
-lastupdated: "2022-02-21"
+lastupdated: "2022-03-01"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -12,20 +12,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:external: target="_blank" .external}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Creating and working with service IDs
 {: #serviceids}
@@ -219,6 +206,122 @@ fmt.Println(string(b))
 {: go}
 
 For more information, see the [IAM Identity Services API](https://cloud.ibm.com/apidocs/iam-identity-token-api#update-service-id).
+
+## Deleting a service ID in the console
+{: #delete_serviceid}
+{: ui}
+
+To delete a service ID, complete the following steps: 
+
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Service IDs**.
+2. Identify the row of the service ID that you want to remove, and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Remove**. 
+3. Click **Remove**.
+
+Deleting a service ID also deletes all associated API keys and assigned policies. This action can't be undone, and might cause disruptions between dependent services.
+{: note}
+
+## Deleting a service ID by using the CLI
+{: #delete_serviceid-cli}
+{: cli}
+
+To delete a service ID, use the following command:
+```bash
+ibmcloud iam service-id-delete (NAME|UUID) [-f, --force]
+```
+{: codeblock}
+
+Deleting a service ID also deletes all associated API keys and assigned policies. This action can't be undone, and might cause disruptions between dependent services.
+{: note}
+
+### Command options
+
+NAME (required)
+:   Name of the service, exclusive with UUID.
+
+UUID (required)
+:   UUID of the service, exclusive with NAME.
+
+-f, --force
+:   Delete without confirmation.
+
+Either `NAME` or `UUID` are required, but you don't need to provide both. 
+{: note}
+
+### Examples
+
+Delete service ID `sample-teset` without confirmation:
+```bash
+ibmcloud iam service-id-delete sample-teset -f
+```
+{: codeblock}
+
+Delete service ID `ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976`:
+```bash
+ibmcloud iam service-id-delete ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976
+```
+{: codeblock}
+
+For more information about managing API keys by using the CLI, see [Managing IAM access](/docs/account?topic=cli-ibmcloud_commands_iam&interface=cli#ibmcloud_iam_service_id_delete).
+
+## Deleting a service ID by using the API
+{: #delete_serviceid-api}
+{: api}
+
+To delete a service ID, call the [IAM Identity Services API](/apidocs/iam-identity-token-api#delete-service-id) as shown in the following example:
+
+```bash
+curl -X DELETE 'https://iam.cloud.ibm.com/v1/serviceids/SERVICE_ID_UNIQUE_ID' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json'
+```
+{: codeblock}
+{: curl}
+
+```java
+DeleteServiceIdOptions deleteServiceIdOptions = new DeleteServiceIdOptions.Builder()
+    .id(svcId)
+    .build();
+
+Response<Void> response = service.deleteServiceId(deleteServiceIdOptions).execute();
+```
+{: codeblock}
+{: java}
+
+```javascript
+const params = {
+  id: svcId,
+};
+
+iamIdentityService.deleteServiceId(params)
+  .then(res => {
+    done();
+  })
+  .catch(err => {
+    console.warn(err);
+  });
+```
+{: codeblock}
+{: javascript}
+
+```python
+response = iam_identity_service.delete_service_id(id=svc_id)
+```
+{: codeblock}
+{: python}
+
+```go
+deleteServiceIDOptions := iamIdentityService.NewDeleteServiceIDOptions(svcID)
+
+response, err := iamIdentityService.DeleteServiceID(deleteServiceIDOptions)
+if err != nil {
+  panic(err)
+}
+```
+{: codeblock}
+{: go}
+
+Deleting a service ID also deletes all associated API keys and assigned policies. This action can't be undone, and might cause disruptions between dependent services.
+{: note}
+
+For more information, see the [IAM Identity Services API](https://cloud.ibm.com/apidocs/iam-identity-token-api#delete-service-id).
 
 ## Locking a service ID
 {: #lock_serviceid}
