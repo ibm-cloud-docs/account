@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-02-18"
+lastupdated: "2022-03-01"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog
 
@@ -36,7 +36,7 @@ This tutorial walks you through how to onboard a sample virtual server image wit
 
 This tutorial uses [sample Terraform code](https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample){: external} as part of the process to onboard a virtual server image. As you complete the tutorial, adapt each step to match your organization's goal. 
 
-The tutorial includes steps for deploying a virtual server image to a target {{site.data.keyword.cloud_notm}} Virtual Private Cloud (VPC). As a result, you will incur associated infrastructure charges.
+The tutorial includes steps for deploying a virtual server image to a target {{site.data.keyword.cloud_notm}} Virtual Private Cloud (VPC). As a result, you incur associated infrastructure charges.
 {: note}
 
 ## Before you begin
@@ -96,6 +96,18 @@ The tutorial includes steps for deploying a virtual server image to a target {{s
 | `vsi_profile` | The profile of compute CPU and memory resources to use when creating the virtual server instance. | False | False |
 | `vsi_security_group` | The name of the security group that is created. | True | False |
 {: caption="Table 1. Parameters that you need to configure" caption-side="bottom"}
+
+## Add security and compliance controls
+{: #catalog-vsi-controls}
+{: step}
+
+Controls are safeguards that are used to meet security and compliance requirements. Any applicable controls that are included in your readme file are listed in the Security and compliance controls table. You can add controls that are not included in your readme file. 
+
+1. Click **Add controls**. 
+1. Choose a profile. 
+1. Select the controls that you want to add to your version.  
+1. Click **Add** 
+1. Click **Next**. 
   
 ## Set the license requirements
 {: #catalog-vsi-cfg-license}
@@ -139,3 +151,4 @@ The TGZ file that you imported to your private catalog includes a readme file th
 {: #catalog-vsi-publish}
 
 After you onboard and validate your virtual server image, you're ready to publish it to your account. From the **Actions** menu, select **Publish to account**. As a result, the virtual server image is available only to users who have access to the `Sample virtual server image` private catalog in your account.
+

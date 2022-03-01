@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-01-31"
+lastupdated: "2022-03-01"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -43,7 +43,7 @@ The process to onboard software to your account includes importing a version to 
 
    * Helm charts on Kubernetes and {{site.data.keyword.redhat_notm}} {{site.data.keyword.openshiftshort}} clusters
    * Terraform templates
-   * OVA images deployed on VMware Solutions Dedicated - vCenter Server
+   * OVA images that are deployed on VMware Solutions Dedicated - vCenter Server
    * Virtual server images with Terraform deployed on VPC infrastructure
    * Operators with a CSV file or Operator bundles with a TGZ file from GitHub repositories that are deployed on Red Hat OpenShift
    * Operator bundles from Red Hat OpenShift registries
@@ -77,10 +77,10 @@ Private catalogs provide a way for you to manage access to products for users in
 
 1. Go to **Manage** > **Catalogs** in the {{site.data.keyword.cloud_notm}} console, and click **Create a catalog**. 
 1. Enter a name and description of your catalog.
-1. Select to exclude or include all products in the {{site.data.keyword.cloud_notm}} catalog in your private catalog. For more information about how this affects what products are visible in the catalog, see [Managing catalog settings](/docs/account?topic=account-filter-account&interface=ui).
+1. Select to exclude or include all products in the {{site.data.keyword.cloud_notm}} catalog in your private catalog. For more information about how this affects visibility in the catalog, see [Managing catalog settings](/docs/account?topic=account-filter-account&interface=ui).
 1. Click **Create**.
 
-## Importing software to your private catalog
+## Importing software to your private catalog 
 {: #add-public-repo}
 {: ui}
 
@@ -107,7 +107,7 @@ Complete the following steps to import software to your private catalog:
    * Terraform template: `https://github.com/IBM-Cloud/terraform-sample/releases/tag/v1.0.0`
    * Virtual server image with Terraform: `https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample/releases/download/v1.0/isv-vsi-product-deploy-sample.tar.gz`
 
-1. If applicable, enter the version of the software in the format of major version, minor version, and revision. For example. enter version 1.1.2.    
+1. If applicable, enter the version of the software in the format of major version, minor version, and revision. For example, enter version 1.1.2.    
 1. Select a catalog category for the product. Categories are used to organize products in the {{site.data.keyword.cloud_notm}} catalog based on function, use, or common solutions.
 1. Click **Add version**. 
 
@@ -123,6 +123,7 @@ Complete the following steps to import software to your private catalog:
 1. Review the version details, and click **Next**.
 1. Configure the preinstallation, and click **Next**.
 1. Configure the deployment details by setting the access that's required to run the installation script and setting the deployment values, and click **Next**. 
+1. Review and add security and compliance controls, and click **Next**.
 
 ### Terraform
 {: #catalog-config-tf}
@@ -131,6 +132,7 @@ Complete the following steps to import software to your private catalog:
 1. From the version list that's displayed on the product details page, click the row that contains your software.
 1. Review the version details, and click **Next**.
 1. Configure the deployment values, and click **Next**. 
+1. Review and add security and compliance controls, and click **Next**.
 
 ### Operator from GitHub repository
 {: #catalog-config-opgh}
@@ -139,6 +141,7 @@ Complete the following steps to import software to your private catalog:
 1. From the version list that's displayed on the product details page, click the row that contains your software.
 1. Review the version details, and click **Next**.
 1. (Optional) Set an image pull secret, which is used to access and pull the image from a private container registry, and click **Next**. An image pull secret is not required if the image is in a public container registry.
+1. Review and add security and compliance controls, and click **Next**.
 
 ### Operator from Red Hat registry
 {: #catalog-config-oprh}
@@ -146,6 +149,7 @@ Complete the following steps to import software to your private catalog:
 
 1. From the version list that's displayed on the product details page, click the row that contains your software.
 1. Review the version details, and click **Next**.
+1. Review and add security and compliance controls, and click **Next**.
 
 ### OVA image
 {: #catalog-config-ova}
@@ -153,6 +157,7 @@ Complete the following steps to import software to your private catalog:
 
 1. From the version list that's displayed on the product details page, click the row that contains your software.
 1. Review the version details, and click **Next**.
+1. Review and add security and compliance controls, and click **Next**.
 
 ### Virtual server image with Terraform
 {: #catalog-config-vsi}
@@ -161,6 +166,7 @@ Complete the following steps to import software to your private catalog:
 1. From the version list that's displayed on the product details page, click the row that contains your software.
 1. Review the version details, and click **Next**.
 1. Configure the deployment values, and click **Next**.
+1. Review and add security and compliance controls, and click **Next**.
 
 ## Adding license agreements
 {: #catalog-add-license}
@@ -446,7 +452,7 @@ You can import a product to your private catalog by using Terraform.
 {: #create-cicd-version-terraform}
 {: terraform}
 
-After adding your product, you can add a version of your software by using Terraform. 
+After you add your product, you can add a version of your software by using Terraform. 
 
 1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud_notm}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
 
