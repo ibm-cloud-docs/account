@@ -79,7 +79,7 @@ Private catalogs provide a way for you to make your own products available to us
 {: #catalog-opbundle-review-version}
 {: step}
 
-1. From the Version list table, click the row that contains your virtual server image.
+1. From the Version list table, click the row that contains your operator.
 1. Review your version details from the Review the version details section. There are no actions that you need to take. When you are ready to move on, click **Next**.
 
 ## Add security and compliance controls
