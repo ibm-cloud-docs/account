@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-01-31"
+lastupdated: "2022-03-01"
 
 keywords: private catalog, software, onboard, operator, validate, test, Red Hat OpenShift operator, operator bundle
 
@@ -74,6 +74,25 @@ Private catalogs provide a way for you to make your own products available to us
 1. Select the Operator bundle version that you would like to import.
 1. Enter the software version that the Operator bundle installs in the format of major version, minor version, and revision. For example, you can use Operator version `1.0.0` to install software version `2.0.0`. 
 1. Click **Add version**.
+
+## Review the version details
+{: #catalog-opbundle-review-version}
+{: step}
+
+1. From the Version list table, click the row that contains your virtual server image.
+1. Review your version details from the Review the version details section. There are no actions that you need to take. When you are ready to move on, click **Next**.
+
+## Add security and compliance controls
+{: #catalog-opbundle-controls}
+{: step}
+
+Controls are safeguards that are used to meet security and compliance requirements. Any applicable controls that are included in your readme file are listed in the Security and compliance controls table. You can add controls that are not included in your readme file. 
+
+1. Click **Add controls**. 
+1. Choose a profile. 
+1. Select the controls that you want to add to your version. 
+1. Click **Add** 
+1. Click **Next**.
 
 ## Add end user license agreements
 {: #catalog-opbundle-license}
