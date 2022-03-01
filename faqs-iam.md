@@ -5,7 +5,7 @@
 copyright:
 
   years: 2018, 2022
-lastupdated: "2022-02-22"
+lastupdated: "2022-03-01"
 
 keywords: frequently asked questions for iam, iam faq, iam questions, identity and access management questions
 
@@ -15,13 +15,7 @@ content-type: faq
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:faq: data-hd-content-type='faq'}
-{:support: data-reuse='support'}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
 # FAQs about IAM
 {: #iamfaq}
@@ -329,3 +323,29 @@ You can update the email address that is used for MFA on the [Verification metho
 If you use a trusted profile, you can't create a user API key. You can still create and manage all other API keys. For example, service ID API keys.
 
 To create a user API key, your IAM ID and the IAM ID of the user that's requesting the user API key must be the same. When you apply a trusted profile, you take on the IAM ID of that profile. To create a user API key for your identity, log out of IBM Cloud and log back in without applying a trusted profile.
+
+## How can I check whether a user can apply a trusted profile?
+{: #tp-check}
+{: faq}
+
+To check whether a user qualifies to apply a trusted profile by using the IBMid identity provider (IdP), the user and the administrator must complete specific steps.
+
+1. The user must go to [{{site.data.keyword.cloud_notm}} User Claims](https://iam.cloud.ibm.com/identity/claims).  
+1. From here, the claims are displayed. 
+1. The user must provide the claims to the administrator. 
+1. As the administrator, compare the claims of the user with the conditions set for the trusted profile. To view the conditions for a trusted profile, go to **Manage** > **Access (IAM)** > **Trusted profiles** in the {{site.data.keyword.cloud_notm}} console. 
+1. Click the profile and view the **Conditions** column. 
+1. If the user's claims satisfy all of the conditions, the user can apply the profile. 
+
+If you are using a different IdP, check the user's claims in your corporate directory. Then, compare the claims of the user with the conditions set for the trusted profile. If the claims and the rules match, the user can apply the profile.
+{: note}
+
+## How do I establish trust with the Kubernetes service in a trusted profile?
+{: #tp-kub-trust}
+{: faq}
+
+In Kubernetes, a service account provides an identity for processes that run in a Pod, and namespaces provide a mechanism for isolating groups of resources within a single cluster. All Kubernetes clusters have a `default` namespace, and each namespace has a `default` account.
+
+When you establish trust with the Kubernetes service in a trusted profile, you are required to enter information in the `namespace` and `service account` fields. You can enter `default` for both.
+
+For more information, see [Kubernetes service account token volume projection](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#service-account-token-volume-projection){: external} and [Kubernetes namespace](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/){: external}. 
