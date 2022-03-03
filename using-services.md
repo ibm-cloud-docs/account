@@ -50,7 +50,7 @@ For example, do you want to add cognitive capabilities from Watson to your apps 
 
 For example, do you want to add cognitive capabilities from Watson to your apps that are running on classic infrastructure bare metal servers? You can add a service such as {{site.data.keyword.personalityinsightsshort}} to help understand your app's user by completing the following steps:
 
-1. Create an instance of the service by calling [Resource Controller API](https://test.cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#create-resource-instance){: external} as shown in the following example request:
+1. Create an instance of the service by calling [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#create-resource-instance){: external} as shown in the following example request:
 
    ```bash
    curl -X POST https://resource-controller.cloud.ibm.com/v2/resource_instances -H 'Authorization: Bearer <>' -H 'Content-Type: application/json' -d '{
@@ -135,7 +135,7 @@ For example, do you want to add cognitive capabilities from Watson to your apps 
    {: codeblock}
    {: go}
 
-1. Retrieve the credentials (resource key). Call the [Resource Controller API](https://test.cloud.ibm.com/apidocs/resource-controller/resource-controller#get-resource-key) as shown in the following example request and pass the ID associated with the instance.
+1. Retrieve the credentials (resource key). Call the [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#get-resource-key) as shown in the following example request and pass the ID associated with the instance.
 
    ```bash
    curl -X GET https://resource-controller.cloud.ibm.com/v2/resource_keys/23693f48-aaa2-4079-b0c7-334846eff8d0 -H 'Authorization: Bearer <IAM_TOKEN>'

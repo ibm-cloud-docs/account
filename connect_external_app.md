@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2022-03-03"
 
 keywords: service keys, api keys, using services outside IBM cloud, external apps
 
@@ -55,7 +55,7 @@ If you want to delete service instances or check the billing information, you mu
 {: #externalapp-api}
 {: api}
 
-1. Create an instance of the service by calling [Resource Controller API](https://test.cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#create-resource-instance){: external} as shown in the following example request: 
+1. Create an instance of the service by calling [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#create-resource-instance){: external} as shown in the following example request: 
 
    ```bash
    curl -X POST https://resource-controller.cloud.ibm.com/v2/resource_instances -H 'Authorization: Bearer <>' -H 'Content-Type: application/json' -d '{
@@ -141,7 +141,7 @@ If you want to delete service instances or check the billing information, you mu
    {: go} 
 
 2. Retrieve or create credentials (resource key).
-   * To create new credentials, call the [Resource Controller API](https://test.cloud.ibm.com/apidocs/resource-controller/resource-controller#create-resource-key) as shown in the following example.
+   * To create new credentials, call the [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#create-resource-key) as shown in the following example.
 
    ```bash
    curl -X POST https://resource-controller.cloud.ibm.com/v2/resource_keys -H 'Authorization: Bearer <IAM_TOKEN>' -H 'Content-Type: application/json' -d '{
@@ -230,7 +230,7 @@ If you want to delete service instances or check the billing information, you mu
    {: codeblock}
    {: go}
 
-   * To retrieve service credentials, call the [Resource Controller API](https://test.cloud.ibm.com/apidocs/resource-controller/resource-controller#get-resource-key) as shown in the following example request and pass the ID associated with the instance.
+   * To retrieve service credentials, call the [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#get-resource-key) as shown in the following example request and pass the ID associated with the instance.
 
    ```bash
    curl -X GET https://resource-controller.cloud.ibm.com/v2/resource_keys/23693f48-aaa2-4079-b0c7-334846eff8d0 -H 'Authorization: Bearer <IAM_TOKEN>'

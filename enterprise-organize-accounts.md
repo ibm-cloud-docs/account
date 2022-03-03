@@ -73,7 +73,7 @@ You can programmatically create an account group in the enterprise by calling th
 The following sample request creates an account group directly under the enterprise level. When you call the API, replace the ID variables with the values from your enterprise. To nest the account group within another account group, specify the ID of the account group in the Cloud Resource Name (CRN) in the following format: `crn:v1:bluemix:public:enterprise::a/$ENTERPRISE_ACCOUNT_ID::account-group:$ACCOUNT_GROUP_ID`.
 
 ```bash
-curl -X POST "https://enterprise.test.cloud.ibm.com/v1/account-groups 
+curl -X POST "https://enterprise.cloud.ibm.com/v1/account-groups 
 -H "Authorization: Bearer <IAM_Token>" 
 -H 'Content-Type: application/json' 
 -d '{
