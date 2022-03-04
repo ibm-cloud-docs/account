@@ -61,6 +61,7 @@ toc:
           - catalog-vsi-tutorial.md
           - catalog-operator-tutorial.md
           - catalog-opbundle-tutorial.md
+          - catalog-terraform-template-tutorial.md
 
   - navgroup:
       id: howto
