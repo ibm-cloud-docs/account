@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2019, 2021
+  years: 2019, 2022
 
-lastupdated: "2021-11-29"
+lastupdated: "2022-03-03"
 
 keywords: access, users, service IDs, access group, IAM, policy, characters, wildcard, operators, asterisk, question mark, *, ?, JSON document, policy document
 
@@ -12,12 +12,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:term: .term}
+{{site.data.keyword.attribute-definition-list}}
 
 # Assigning access by using wildcard policies
 {: #wildcard}
@@ -92,7 +87,9 @@ The following example shows how you might create a policy that gives a user acce
 ### Using a question mark (`?`) as a wildcard
 {: #policy-doc-multiwildcards} 
 
-The following example shows how you can create a policy that gives a user access to edit any {{site.data.keyword.messagehub}} topic that ends in `81` with two characters before the numerical characters in a particular account. 
+The following example shows how you can create a policy that gives a user access to edit any {{site.data.keyword.messagehub}} topic that ends in a particular pattern. 
+
+On the line `"value": "*??81"`, the `*` indicates zero or more characters and matches any string that ends with `??81`. The `?` represents a single character. Since there are two `??`, the resulting pattern matches a string of four or more characters that end in `81`. 
 
 ```json
 {
