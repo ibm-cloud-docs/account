@@ -15,16 +15,7 @@ completion-time: 20m
 
 ---
 
-{:shortdesc: .shortdesc}
-{:screen: .screen}  
-{:codeblock: .codeblock}  
-{:pre: .pre}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:beta: .beta}
-{:external: target="_blank" .external}
-{:step: data-tutorial-type='step'} 
+{{site.data.keyword.attribute-definition-list}}
 
 # Onboarding a Terraform template
 {: #catalog-terraform-template-tutorial}
@@ -48,7 +39,7 @@ This tutorial walks you through how to onboard a Terraform template to your acco
    * Editor on the software instance service
    * Required permission to complete a specific task 
    
-1. Create your [Terraform template](https://test.cloud.ibm.com/docs/schematics?topic=schematics-create-tf-config).
+1. Create your [Terraform template](https://cloud.ibm.com/docs/schematics?topic=schematics-create-tf-config).
 1. To test your Terraform template, run the following commands from the Terraform CLI:
 
    * `terraform init`

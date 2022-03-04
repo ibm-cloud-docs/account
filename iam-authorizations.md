@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2022
 
-lastupdated: "2022-02-18"
+lastupdated: "2022-03-04"
 
 keywords: authorizations, service to service access, access between services, dependent service, source service, target service, assigned access, access policies
 
@@ -12,20 +12,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:new_window: target="_blank"}
-{:tip: .tip}
-{:note: .note}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Using authorizations to grant access between services
 {: #serviceauth}
@@ -83,7 +70,7 @@ The supported attributes for creating an authorization policy depend on what eac
 
 ```bash
 curl --request POST \
-  --url https://iam.test.cloud.ibm.com/v1/policies \
+  --url https://iam.cloud.ibm.com/v1/policies \
   --header 'Authorization: Bearer <token>' \
   --header 'Content-Type: application/json' \
   --data '{
@@ -452,7 +439,7 @@ You can remove any authorization between services in the account if you are assi
 To delete an authorization policy, use the [IAM Policy Management API](/apidocs/iam-policy-management#delete-policy) as in the following sample request:
 
 ```bash
-curl -X DELETE 'https://iam.test.cloud.ibm.com/v1/policies/$POLICY_ID' \
+curl -X DELETE 'https://iam.cloud.ibm.com/v1/policies/$POLICY_ID' \
 -H 'Authorization: Bearer $TOKEN' \
 -H 'Content-Type: application/json'
 ```

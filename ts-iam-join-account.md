@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-09-22"
+  years: 2021, 2022
+lastupdated: "2022-03-04"
 
 
 keywords: troubleshoot account login, accepting invitation
@@ -46,4 +46,4 @@ Complete the following steps to accept the invitation. If your invitation expire
 * If you're new to {{site.data.keyword.cloud}}, you receive an email that contains all the information you need. Click the invitation link to join the account.
 * As an existing member of {{site.data.keyword.cloud}}, you can accept the invitation in your notifications, by email, or by using the CLI to onboard to the new account. To accept invitations in the CLI, use the [**`ibmcloud login`**](/docs/cli?topic=cli-ibmcloud_cli#accept-invitation-to-join-a-new-account-) command.
 
-After you completed all the steps and you still get an error, contact [IBM Cloud Support](https://test.cloud.ibm.com/unifiedsupport/supportcenter){: external}.
+After you completed all the steps and you still get an error, contact [IBM Cloud Support](https://cloud.ibm.com/unifiedsupport/supportcenter){: external}.

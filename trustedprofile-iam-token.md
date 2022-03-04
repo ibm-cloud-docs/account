@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2021
+  years: 2021, 2022
 
-lastupdated: "2021-11-29"
+lastupdated: "2022-03-04"
 
 keywords: trusted profile, generating IAM token, compute resource, kubernetes cluster, virtual server
 
@@ -42,7 +42,7 @@ To generate IAM tokens for your compute resources, you must be at least an admin
         -d grant_type=urn:ibm:params:oauth:grant-type:cr-token 
         -d cr_token=$(CRTOKEN)                                 
         -d profile_name=TestProfile                            
-        https://iam.test.cloud.ibm.com/identity/token
+        https://iam.cloud.ibm.com/identity/token
    ```
    {: codeblock}
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2022
 
-lastupdated: "2022-01-20"
+lastupdated: "2022-03-04"
 
 keywords: tagging, enabling others to tag, tagging permissions
 
@@ -71,7 +71,7 @@ Complete the following steps to assign the editor role for a user to tag IAM-ena
 
 To assign the editor role for a user to tag IAM-enabled resources, call the [IAM Policy Management API](https://cloud.ibm.com/apidocs/iam-policy-management){: external} as shown in the following example request. Replace variables with your target service and resource name. 
 ```bash
-curl -X POST 'https://iam.test.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
+curl -X POST 'https://iam.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
   "type": "access",
   "description": "Editor role for SERVICE_NAME's RESOURCE_NAME",
   "subjects": [

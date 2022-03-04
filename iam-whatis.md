@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2022
 
-lastupdated: "2022-02-07"
+lastupdated: "2022-03-04"
 
 
 keywords: what is IAM, IAM features, IAM API, how IAM works
@@ -72,7 +72,7 @@ By using trusted profiles, you can define fine-grained authorization for all app
 *  Applications running on a compute resource can have a flexible, but secure way to access other {{site.data.keyword.cloud_notm}} services from within compute resources. For example, it's more secure not having to store API keys.
 *  All compute resource instances that share certain conditions such as name, namespace, tags, or location, their identities are mapped to a common profile and can share access to {{site.data.keyword.cloud_notm}} resources. This common identity makes it possible to give the applications within various compute resources access to an external resource one time rather than cluster-by-cluster.
 
-You can monitor which federated users and compute resources apply a trusted profile by looking at {{site.data.keyword.at_short}}. The fields `Initiator.authnId` and `Initiator.authnName` hold the details for the authenticated user that applies a profile, while `Initiator.id` and `Initiatior.name` hold the details of the profile that is applied. For compute resources the `authn` fields hold the CRN that uniquely identifies the resource that applies a profile. For more information, see [Required AT field events](https://test.cloud.ibm.com/docs/observability?topic=observability-at_req_fields#initiator.authnId).
+You can monitor which federated users and compute resources apply a trusted profile by looking at {{site.data.keyword.at_short}}. The fields `Initiator.authnId` and `Initiator.authnName` hold the details for the authenticated user that applies a profile, while `Initiator.id` and `Initiatior.name` hold the details of the profile that is applied. For compute resources the `authn` fields hold the CRN that uniquely identifies the resource that applies a profile. For more information, see [Required AT field events](https://cloud.ibm.com/docs/observability?topic=observability-at_req_fields#initiator.authnId).
 {: note}
 
 ### API keys for user authentication
