@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-02-18"
+lastupdated: "2022-03-03"
 
 keywords: deprecate software, restore software, catalog, catalogs, software, private catalog
 
@@ -137,7 +137,7 @@ When you restore a deprecated version, you are required to validate and publish 
 {: #deprecate-version-api}
 {: api}
 
-You can programmatically deprecate a version by calling the Catalog Management API as shown in the following sample request. For detailed information about the API, see [Catalog Management API](https://test.cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=python#deprecate-version){: external}.
+You can programmatically deprecate a version by calling the Catalog Management API as shown in the following sample request. For detailed information about the API, see [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=python#deprecate-version){: external}.
 
 
 ```java
