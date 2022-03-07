@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2022
 
-lastupdated: "2022-01-26"
+lastupdated: "2022-03-07"
 
 keywords: crn, cloud resource name, resources, cloud catalog
 
@@ -132,5 +132,5 @@ The following table provides a list of CRN examples.
 | Resource group    | `crn:v1:bluemix:public:resource-controller:global:a/59bcbfa6ea2f006b4ed7094c1a08dcdd:resource-group:59bcbfa6ea2f006b4ed7094c1a08dcdd` |
 | Service instance  | `crn:v1:bluemix:public:cloud-object-storage:global:a/59bcbfa6ea2f006b4ed7094c1a08dcdd:1a0ec336-f391-4091-a6fb-5e084a4c56f4::` |
 | Bucket            | `crn:v1:bluemix:public:cloud-object-storage:global:a/59bcbfa6ea2f006b4ed7094c1a08dcdd:1a0ec336-f391-4091-a6fb-5e084a4c56f4:bucket:mybucket` |
-| Child service     | `crn:v1:staging:public:resource-catalog::a/9d67f37fdf745e1b3cbef0ee4e6f2eda::composite:is.vpn` |
+| Child service     | `crn:v1:bluemix:public:resource-catalog::a/9d67f37fdf745e1b3cbef0ee4e6f2eda::composite:is.vpn` |
 {: caption="Table 2. CRN examples" caption-side="top"}
