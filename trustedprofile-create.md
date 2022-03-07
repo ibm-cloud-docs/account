@@ -4,7 +4,7 @@ copyright:
 
   years: 2021, 2022
 
-lastupdated: "2022-02-07"
+lastupdated: "2022-03-07"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
@@ -293,7 +293,7 @@ Complete the following steps to set up better control over granting access to co
       "name": "my link",
       "cr_type": "VSI",
       "link": {
-   "crn": "crn:v1:staging:public:iam-identity::a/18e3020749ce4744b0b472466d61fdb4::computeresource:Fake-Compute-Resource",
+   "crn": "crn:v1:bluemix:public:iam-identity::a/18e3020749ce4744b0b472466d61fdb4::computeresource:Fake-Compute-Resource",
    "namespace": "default",
    "name": "my compute resource name"
       }
