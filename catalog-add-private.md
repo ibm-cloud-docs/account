@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-03-01"
+lastupdated: "2022-03-09"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -10,23 +10,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:external: target="_blank" .external}
-{:beta: .beta}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:terraform: .ph data-hd-interface='terraform'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Onboarding software to your account
 {: #create-private-catalog}
@@ -69,8 +53,12 @@ For virtual server images, complete the following prerequisites:
    2. Create your [Terraform template](/docs/schematics?topic=schematics-create-tf-config).
    3. Create an instance of [{{site.data.keyword.cloud_notm}} Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage) and add your image to a bucket.
 
+To share software with other accounts, your software must be approved in Partner Center. For more information, see [Getting set up to sell software](/docs/sell?topic=sell-sw-getting-started).
+{: important}
+
+
 ## Creating a private catalog
-{: #create-catalog}
+{: #create-catalog-ui}
 {: ui}
 
 Private catalogs provide a way for you to manage access to products for users in your account. 
@@ -81,7 +69,7 @@ Private catalogs provide a way for you to manage access to products for users in
 1. Click **Create**.
 
 ## Importing software to your private catalog 
-{: #add-public-repo}
+{: #add-public-repo-ui}
 {: ui}
 
 Complete the following steps to import software to your private catalog:
@@ -140,8 +128,8 @@ Complete the following steps to import software to your private catalog:
 
 1. From the version list that's displayed on the product details page, click the row that contains your software.
 1. Review the version details, and click **Next**.
-1. (Optional) Set an image pull secret, which is used to access and pull the image from a private container registry, and click **Next**. An image pull secret is not required if the image is in a public container registry.
 1. Review and add security and compliance controls, and click **Next**.
+
 
 ### Operator from Red Hat registry
 {: #catalog-config-oprh}
@@ -267,11 +255,18 @@ To monitor the progress of the validation process, click **View logs**.
 
 After you validate your software, you're ready to make it available to all users who have access to your private catalog. Open the **Actions** menu, and select **Publish to account**.
 
-## Importing software to your catalog by using the CLI
+
+## Onboarding software to your catalog by using the CLI
 {: #create-cicd-product}
 {: cli}
 
 Complete the following steps to add your software by using the CLI. You can use this task in a CI/CD process.
+
+1. Create a private catalog. Private catalogs provide a way for you to manage access to products for users in your account. For more information, see the [cli documentation](/docs/account?topic=cli-manage-catalogs-plugin#create-catalog) for creating a private catalog. 
+    ```bash
+    ibmcloud catalog create --name CATALOG [--catalog-description "DESCRIPTION"]
+    ```
+    {: codeblock}
     
 1. Add software to your private catalog. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#create-offering) for adding software to your private catalog. 
     ```bash
@@ -287,34 +282,93 @@ Complete the following steps to add your software by using the CLI. You can use 
     ibmcloud catalog offering add-category --catalog "Name of catalog" --offering "software-offering" --category "category"
     ```
     {: codeblock}
+
+1. Import the software version that you want in your catalog.
+    ```bash
+    ibmcloud catalog offering import-version -c <CATALOGID> -o <OFFERINGID> --zipurl <TGZ> --target-version <VERSION>
+    ```
+    {: codeblock}
+
+    The following shows the list of supported formats per software type:
+
+    * Helm chart: `https://charts.bitnami.com/ibm/apache-8.3.2.tgz`
+    * Node-RED Operator: `https://github.com/IBM-Cloud/operator-bundle-sample/archive/refs/tags/v0.0.3.tar.gz`
+    * Operator bundle from a {{site.data.keyword.redhat_notm}} {{site.data.keyword.openshiftshort}} registry: For an example, select the `Akka Cluster Operator` from the list of available Operators in the Certified repository. 
+    * OVA image: `https://github.com/gcatalog/OVA-sample/blob/main/ova-sample.yaml`
+    * Terraform template: `https://github.com/IBM-Cloud/terraform-sample/releases/tag/v1.0.0`
+    * Virtual server image with Terraform: `https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample/releases/download/v1.0/isv-vsi-product-deploy-sample.tar.gz`
     
 1. Validate the software. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#validate-offering) for validating the software.
-    
-    You need the version locator for your software. To find it, run the **`ibmcloud catalog offering list --catalog "Name of catalog"`** command, and search for the particular version of your software. Also, use the cluster that you created when you set up the required resources. 
-    {: important}
-    
     ```bash
-    ibmcloud catalog offering validate --version-locator <LOCATOR> --cluster <CLUSTER> --namespace "software-offering"
+    ibmcloud catalog offering version validate --version-locator VERSION_NUMBER --cluster CLUSTER_ID --namespace NAME [--timeout TIMEOUT] [--wait WAIT] [--override-values VALUES|FILENAME]
     ```
     {: codeblock}
     
     Deploying the software can take a few minutes. You can check the validation status by querying the product validation state. The validation is complete when the state is Valid. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#validate-status-offering) for validation status.
     ```bash
-    ibmcloud catalog offering validate-status --version-locator <LOCATOR>
+    ibmcloud catalog offering version validate-status --version-locator VERSION_NUMBER [--output FORMAT]
     ```
     {: codeblock}
     
 1. Publish your software to make it available to users in your account. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#publish-offering-to-account) for publishing to your account.
     ```bash
-    ibmcloud catalog offering publish account --version-locator <LOCATOR>
+    ibmcloud catalog offering publish account [--catalog CATALOG][--offering OFFERING]
     ```
     {: codeblock}
 
-## Importing software to your private catalog by using the API
+
+## Creating a private catalog by using the API
+{: #create-catalog-api}
+{: api}
+
+Private catalogs provide a way for you to manage access to products for users in your account. You can programmatically create a private catalog by calling the Catalog Management API as shown in the following sample request. For more information, see the [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=java#create-catalog) for creating a catalog.
+
+```java
+String label = "{label}";
+String shortDesc = "{shortDesc}";
+CreateCatalogOptions createOptions = new CreateCatalogOptions.Builder().label(label).shortDescription(shortDesc).build();
+Response<Catalog> response = service.createCatalog(createOptions).execute();
+System.out.println(response.getResult());
+```
+{: codeblock}
+{: java}
+
+```javascript
+label = "{label}";
+shortDesc = "{shortDesc}";
+response = await service.createCatalog({ 'label': label, 'shortDescription': shortDesc });
+console.log(response);
+```
+{: codeblock}
+{: javascript}
+
+```python
+label = "{label}"
+shortDesc = "{shortDesc}"
+response = self.service.create_catalog(label=label, short_description=shortDesc)
+print(response)
+```
+{: codeblock}
+{: python}
+
+```go 
+label := "{label}"
+shortDesc := "{shortDesc}"
+createOptions := service.NewCreateCatalogOptions()
+createOptions.SetLabel(label)
+createOptions.SetShortDescription(shortDesc)
+_, response, _ := service.CreateCatalog(createOptions)
+fmt.Println(response)
+```
+{: codeblock}
+{: go}
+
+
+## Creating software for your private catalog by using the API
 {: #create-product-api}
 {: api}
 
-You can programmatically add an offering to your catalog by calling the Catalog Management API as shown in the following sample request. For detailed information about the API, see [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=java#create-offering).
+You can programmatically add software to your catalog by calling the Catalog Management API as shown in the following sample request. For detailed information about the API, see [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=java#create-offering).
 
 ```java
 String id = "{id}";
@@ -361,6 +415,135 @@ fmt.Println(response)
 {: codeblock}
 {: go}
 
+
+## Importing software to your private catalog by using the API
+{: #import-product-api}
+{: api}
+
+You can programmatically import software to your catalog by calling the Catalog Management API as shown in the following sample request. For detailed information about the API, see [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=go#import-offering).
+
+```java
+id = "{id}";
+offeringURL = "{offeringURL}";
+ImportOfferingOptions offeringOptions = new ImportOfferingOptions.Builder().catalogIdentifier(id).zipurl(offeringURL).build();
+Response<Offering> response = service.importOffering(offeringOptions).execute();
+System.out.println(response.getResult());
+```
+{: codeblock}
+{: java}
+
+```javascript
+id = "{id}";
+offeringURL = "{offeringURL}";
+response = await service.importOffering({ 'catalogIdentifier': id, 'zipurl': offeringURL });
+console.log(response);
+```
+{: codeblock}
+{: javascript}
+
+```python
+id = "{id}"
+offeringURL = "{offeringURL}"
+response = self.service.import_offering(catalog_identifier=id, zipurl=offeringURL)
+print(response)
+```
+{: codeblock}
+{: python}
+
+```go 
+id := "{id}"
+offeringURL := "{offeringURL}"
+offeringOptions := service.NewImportOfferingOptions(id, offeringURL)
+_, response, _ := service.ImportOffering(offeringOptions)
+fmt.Println(response)
+```
+{: codeblock}
+{: go}
+
+## Validating your software by using the API
+{: #validate-product-api}
+{: api}
+
+You can programmatically validate your product to by calling the Catalog Management API as shown in the following sample request. This process can take several minutes. For detailed information about the API, see [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=java#validate-install).
+
+```java
+String authRefreshToken = "{authRefreshToken}";
+String versionLocator = "{versionLocator}";
+ValidationInstallOptions installOptions = new ValidationInstallOptions.Builder().xAuthRefreshToken(authRefreshToken).versionLocId(versionLocator).build();
+Response<Void> response = service.validationInstall(installOptions).execute();
+System.out.println(response.getResult());
+```
+{: codeblock}
+{: java}
+
+```javascript
+versionLocator = "{versionLocator}";
+authRefreshToken = "{authRefreshToken}";
+response = await service.validationInstall({ 'versionLocatorId': versionLocator, 'xAuthRefreshToken': authRefreshToken });
+console.log(response);
+```
+{: codeblock}
+{: javascript}
+
+```python
+authRefreshToken="{authRefreshToken}"
+versionLocator = "{versionLocator}"
+response = self.service.validation_install(version_locator_id=versionLocator, x_auth_refresh_token=authRefreshToken)
+print(response)
+```
+{: codeblock}
+{: python}
+
+```go 
+versionLocator := "{versionLocator}"
+authRefreshToken := "{authRefreshToken}"
+installOptions := service.NewValidationInstallOptions(versionLocator, authRefreshToken)
+response, _ := service.ValidationInstall(installOptions)
+fmt.Println(response)
+```
+{: codeblock}
+{: go}
+
+## Publishing your software to your account by using the API
+{: #publish-product-api}
+{: api}
+
+You can programmatically publish your software to your account by calling the Catalog Management API as shown in the following sample request. For detailed information about the API, see [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=java#account-publish-version).
+
+```java
+String versionLocator = "{versionLocator}";
+AccountPublishVersionOptions publishOption = new AccountPublishVersionOptions.Builder().versionLocId(versionLocator).build();
+Response<Void> response = service.accountPublishVersion(publishOption).execute();
+System.out.println(response.getResult());
+```
+{: codeblock}
+{: java}
+
+```javascript
+versionLocator = "{versionLocator}";
+response = await service.accountPublishVersion({ 'versionLocId': versionLocator});
+console.log(response);
+```
+{: codeblock}
+{: javascript}
+
+```python
+versionLocator = "{versionLocator}"
+response = self.service.account_publish_version(version_loc_id=versionLocator)
+print(response)
+```
+{: codeblock}
+{: python}
+
+```go 
+versionLocator := "{versionLocator}"
+publishOptions := service.NewAccountPublishVersionOptions(versionLocator)
+response, _ := service.AccountPublishVersion(publishOptions)
+fmt.Println(response)
+```
+{: codeblock}
+{: go}
+
 ## Creating a private catalog by using Terraform
 {: #create-catalog-terraform}
 {: terraform}
@@ -388,21 +571,21 @@ You can create a private catalog by using Terraform.
    ```terraform
    terraform init
    ```
-   {: codeblock}
+   {: pre}
    
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the catalog.
 
    ```terraform
    terraform plan
    ```
-   {: codeblock}
+   {: pre}
 
 5. Create the catalog.
 
    ```terraform
    terraform apply
    ```
-   {: codeblock}
+   {: pre}
 
 ## Importing a product to your catalog by using Terraform
 {: #create-cicd-product-terraform}
@@ -432,21 +615,21 @@ You can import a product to your private catalog by using Terraform.
    ```terraform
    terraform init
    ```
-   {: codeblock}
+   {: pre}
    
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to add your product.
 
    ```terraform
    terraform plan
    ```
-   {: codeblock}
+   {: pre}
 
 5. Add your product.
 
    ```terraform
    terraform apply
    ```
-   {: codeblock}
+   {: pre}
 
 ## Importing a version of your software by using Terraform
 {: #create-cicd-version-terraform}
@@ -476,19 +659,19 @@ After you add your product, you can add a version of your software by using Terr
    ```terraform
    terraform init
    ```
-   {: codeblock}
+   {: pre}
    
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to add a version.
 
    ```terraform
    terraform plan
    ```
-   {: codeblock}
+   {: pre}
 
 5. Add the version.
 
    ```terraform
    terraform apply
    ```
-   {: codeblock}
+   {: pre}
    
