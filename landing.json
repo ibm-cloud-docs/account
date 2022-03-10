@@ -1,6 +1,6 @@
 {
     "title": "Managing your account, resources, and access docs",
-    "lastupdated": "2022-03-01",
+    "lastupdated": "2022-03-09",
     "introduction": "Leverage the interacting components and systems in your account for resource, user, and access management. Get started by setting up your IBM cloud account, learn about setting up an enterprise, or explore assigning access to resources quickly with IBM Cloud Identity and Access Management (IAM).",
     "section_devtools": {
       "api": "/docs?tab=api-docs&subCategory=account&category=platform_services", 
@@ -66,14 +66,14 @@
           "description": "When you register for a new IBM Cloud account, you can use a feature code that you received from participating in a special event or a subscription code that you received by email. Instead of verifying your identity by entering your credit card information, click the option to Register with a code to complete the set up of your new account." 
         },
         {
-          "date": "05 October 2021",
-          "title": "Filtering the IBM Cloud catalog by specific providers",
-          "description": "The latest enhancements to IBM Cloud catalog include support for filtering products by provider name. If you're looking for a specific provider's products or curious about how many products that a provider offers, you can use the Provider filter to narrow down your search."
+          "date": "17 December 2021",
+          "title": "Restricting domains for account invitations",
+          "description": "You can now restrict membership to your account based on the domain of the users by creating an allowlist. This way, only users with a specific domain or domains can be invited to the account."
         },
         {
           "date": "05 October 2021",
-          "title": "Suspending and deprecating private products",
-          "description": "Private catalog owners can now suspend or deprecate private software. When you suspend a version of software, it's immediately removed from your private catalog. When you deprecate software from your private catalog, it remains available to users with access to the private catalog for 90 days. After 90 days, it's permanently removed."
+          "title": "Filtering the IBM Cloud catalog by specific providers",
+          "description": "The latest enhancements to IBM Cloud catalog include support for filtering products by provider name. If you're looking for a specific provider's products or curious about how many products that a provider offers, you can use the Provider filter to narrow down your search."
         }
       ]
     }
