@@ -339,6 +339,7 @@ toc:
       - crn.md
       - iam-service-roles.md
       - iam-login-flows.md
+      - iam-condition-properties.md
       - topicgroup:
           label: Tracking events
           topics:

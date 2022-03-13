@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2022
   
-lastupdated: "2022-02-18"
+lastupdated: "2022-03-13"
 
 keywords: dynamic rules,access groups,specific identity attributes,identity provider,federated ID,
 
@@ -12,14 +12,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:external: target="_blank" .external}
-{:terraform: .ph data-hd-interface='terraform'} 
-{:ui: .ph data-hd-interface='ui'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Creating dynamic rules for access groups
 {: #rules}
@@ -49,23 +42,7 @@ To create a rule, follow these steps:
 You can think of an access group rule as a key:value pair. The key is what you add in the **`**Add users when** field, and the value is what you enter in the **Values** field. 
 {: tip}
 
-Name
-:   Enter a custom name for your rule that helps you remember what type of users that you are adding to an access group.
-
-Identity provider
-:   Enter the URI for your IdP. This is the SAML "entityId" field, which is sometimes referred to as the issuer ID, for the IdP as part of the federation configuration for onboarding with IBMid.
-
-Expiration (in hours)
-:   Use this option to provide extra security by setting a time limit for the assigned access. Each user must log in every 24 hours to refresh their access, but you can set the access to expire in as little as an hour's time. Group membership is revoked after this time period expires.
-
-Add users when
-:   The attribute statement name must be entered in this field. This value is specific to your IdP.
-
-Comparator
-:   Use the **Contains** option when the attribute statement has an array type. And, you can enter more than one value to be matched by using the **In** option.
-
-Value
-:   Enter the attribute value for the attribute statement that the rule is comparing against.
+For more information about the fields that are used to create dynamic rules, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
 
 Users added to access groups by using dynamic rules don't display as group members on the users list for the access group. To check a specific user's membership to an access group, you can select that user's name from the account **Users** page, and then click **Access groups**.
 {: note}

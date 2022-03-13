@@ -4,7 +4,7 @@ copyright:
 
   years: 2021, 2022
 
-lastupdated: "2022-03-09"
+lastupdated: "2022-03-13"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
@@ -47,7 +47,7 @@ Complete the following steps to define which federated users can access specific
     {: tip}
 
    1. Add conditions based on your IdP data to define how and when federated users can apply the profile.
-    * By clicking **Add a condition**, you can define multiple conditions. Federated users must meet all the conditions to be included in the trusted profile.
+    * By clicking **Add a condition**, you can define multiple conditions. Federated users must meet all the conditions to be included in the trusted profile. For more information about the fields that are used to create conditions, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
     * Click **View identity provider (IdP) data** to search attribute names and values in your own personal data from your IdP. For more information, see [Using IdP data to build trusted profiles](/docs/account?topic=account-idp-integration#trusted-profiles-idp-data).
    1. Define the session duration for how long a user can apply the profile before they must reauthenticate, and click **Continue**.
 1. (Optional) Create access policy. 

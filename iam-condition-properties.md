@@ -4,9 +4,9 @@ copyright:
 
   years: 2022
 
-lastupdated: "2022-03-04"
+lastupdated: "2022-03-13"
 
-keywords: trusted profile, dynamic rule, operators, rules, conditions, properties
+keywords: trusted profile, dynamic rule, operators, rules, conditions, properties, IAM
 
 subcollection: account
 
@@ -18,35 +18,38 @@ subcollection: account
 # IAM condition properties
 {: #iam-condition-properties}
 
-The two types of conditional IAM statements that automatically grant [IAM policy subjects](/docs/account?topic=account-cloudaccess) access to targets are dynamic rules and trusted profiles. Dynamic rules automatically add federated users in your account to access groups based on specific identity attributes. Trusted profiles use the same conditional statement format to automatically grant federated users access to your account. For more information, see [Creating dynamic rules for access groups](/docs/account?topic=account-rules) and [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile). 
+Dynamic rules and trusted profiles both use conditional IAM statememnts that you specify to automatically add federated users to access groups or trusted profiles. When your users log in with a federated ID, the data from the identity provider (IdP) dynamically maps your users to an access group based or trusted profile based on the rules or conditions that you set. For more information, see [Creating dynamic rules for access groups](/docs/account?topic=account-rules) and [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile). 
 
+## Rule and profile details
+{: #general-details}
+
+Each dynamic rule and trusted profile has the following properties:
+
+Name
+:   Enter a custom name that helps you remember what type of users you are adding to an access group or trusted profile.
+
+Identity provider (IdP)
+:   The dynamic rule or trusted profile is evaluated only if the user who is logging in authenticates by using the enterprise IdP with this issuer URI. Your IdP URL is displayed in the console for you to copy and paste when you create a dynamic rule or trusted profile. For example, `https://w3id.sso.ibm.com/auth/sps/samlidp2/saml20`. You can also view this by clicking `View identity provider (IdP) data`. For IBMid, the IdP is the SAML "entityId" field, sometimes referred to as the issuer ID, and is part of the federation configuration when you are onboarding with IBMid. For AppID, equivalent syntax is the "realm ID". For more information, see [Enabling authentication from an external identity provider](/docs/account?topic=account-idp-integration)
+
+Session duration
+:   The dynamic access group or trusted profile session expires after the number of hours that are specified in this property. For example, if the property is set to 24 hours, the user’s dynamic or trusted profile session ends one day (24 hours) after they log in.
 
 ## Condition statement properties
 {: #condition-properties}
 
-Each dynamic rule and trusted profile condition has the following properties:
-
-Name
-:   Enter a custom name for that helps you remember what type of users that you are adding to an access group or trusted profile.
-
-Identity provider (IdP)
-:   The dynamic rule or trusted profile is evaluated only if the user who is logging in authenticates by way of the enterprise IdP with this issuer URI. For IBMid, the IdP is the SAML "entityId" field, sometimes referred to as the issuer ID, and is part of the federation configuration when you are onboarding with IBMid. For AppID, equivalent syntax is the "realm ID". For more information, see [Enabling authentication from an external identity provider](https://cloud.ibm.com/docs/account?topic=account-idp-integration)
-
-Expiration
-:   The dynamic access group or trusted profile session expires after the number of hours that are specified in this property. For example, if the property is set to 24, the user’s dynamic or trusted profile session ends one day (24 hours) after they log in.
-
-
-
-Additionally, each dynamic rule and trusted profile has one or more conditions that consist of the following properties. All properties need to apply for the overall dynamic rule evaluate to true:
+Additionally, each dynamic rule and trusted profile has one or more conditions that consist of the following properties. Users ned to satisfy all conditions for the overall dynamic rule or trusted profile authentication to evaluate to true:
 
 Add users when
-:   References an attribute name that is part of the login message that is sent from your identity provider to IBM Cloud. To learn more about how attribute names are propagated from your enterprise identity provider to the condition evaluation, see [Mapping of enterprise identity provider attributes](https://developer.ibm.com/tutorials/use-iam-access-groups-to-effectively-manage-access-to-your-cloud-resources/#mapping-of-enterprise-identity-provider-attributes){: external}.
+:   An attribute name that is part your identity provider data. To learn more about how attribute names are created from your enterprise identity provider to the condition evaluation, see [Mapping of enterprise identity provider attributes](https://developer.ibm.com/tutorials/use-iam-access-groups-to-effectively-manage-access-to-your-cloud-resources/#mapping-of-enterprise-identity-provider-attributes){: external}.
 
 Comparator
-:   Compares the attribute that is specified in the `Add users when` field with `Values` property. You can choose from Equals, Not Equals, Equals Ignore Case, Not Equals Ignore Case, In, and Contains. Use the Contains option when the attribute statement has an array type. And, you can enter more than one value to be matched by using the In option.
+:   Compares the attribute that is specified in the `Add users when` field with the `Values` property. You can choose from Equals, Not Equals, Equals Ignore Case, Not Equals Ignore Case, In, and Contains. Use the Contains option when the attribute statement has an array type. You can enter more than one value to be matched by using the In option.
 
 Values
-:   Enter an attribute value that is used by the comparator to evaluate against the `Add users when` attribute name.
+:   An attribute value that is used by the comparator to evaluate against the `Add users when` attribute name.
+
+You can think of a dynamic rule or trusted profile condition as a key:value pair. The key is what you add in the `Add users when` field, and the value is what you enter in the `Values` field. 
+{: tip}
 
 ## Available comparators for conditions
 {: #comparators}
@@ -57,8 +60,8 @@ Values
 | Not Equals             | Negated case-sensitive string comparison. Boolean or number values are converted into a string before comparison. | primaryGroup NotEquals “Admins” |
 | Equals Ignore Case     | Case-insensitive string comparison. Boolean or number values are converted into a string before comparison. | isManager EqualsIgnoreCase “tRuE” |
 | Not Equals Ignore Case | Negated case-insensitive string comparison. Boolean or number values are converted into a string before comparison.	 | is_teamlead NotEqualsIgnoreCase “TrUe” |
-| Contains               | Determines by using the comparator Equals if the value that is provided is part of the attribute in the login message. Can be applied only on attributes that contain arrays of strings, numbers, or Booleans. | `group` contains “Admins” |
-| In                     | Short notation for multiple Equal operators. Compares the value in the login message attribute with the list of potential values in this rule. Again, Boolean or numbers are converted to a string before comparison. | jobRole in [“Manager”,”Director”,”Team-Lead”] |
+| Contains               | Determines by using the comparator Equals if the value that is provided is part of the attribute in the login message. `Contains` can be applied only on attributes that contain arrays of strings, numbers, or Booleans. | `group` contains “Admins” |
+| In                     | Short notation for multiple Equal operators. Compares the value in the login message attribute with the list of potential values in this rule. Boolean or numbers are converted to a string before comparison. | jobRole in [“Manager”,”Director”,”Team-Lead”] |
 {: caption="Table 1. Available comparators for conditions" caption-side="top"}
 
 ## Example

@@ -4,7 +4,7 @@ copyright:
 
   years: 2021, 2022
 
-lastupdated: "2022-01-12"
+lastupdated: "2022-03-13"
 
 keywords: trusted profile, federated users, granting access, tutorial, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
@@ -84,6 +84,8 @@ Now that Marla created a trusted profile, she wants to establish criteria for th
     1. Let's say there's an attribute that is called `job-role` in the corporate user directory that identifies an employee's job role. Enter the condition `job-role` equals `dev`.
 12. Set the session duration to 8 hours.
 13. Click **Continue**.
+
+For more information about the fields that are used to create conditions, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
 
 ## Assign access
 {: #trusted-profile-federated-access}

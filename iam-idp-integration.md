@@ -4,7 +4,7 @@ copyright:
 
   years: 2020, 2022
 
-lastupdated: "2022-02-21"
+lastupdated: "2022-03-13"
 
 keywords: identity provider, IdP, App ID, IAM, integration, IdP SSO, third-party authentication, dynamic rules, external identity provider
 
@@ -12,13 +12,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 # Enabling authentication from an external identity provider
 {: #idp-integration}
@@ -148,6 +142,8 @@ Let's say there is an attribute that is called `groups` that identifies departme
 * Allow users when `country` equals `us`
 
 To make sure that your conditions allow only the federated users you intend to grant access to, contact your corporate directory architect for more information on available attributes. 
+
+For more information about the fields that are used to create conditions, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
 
 It is recommended to create narrow conditions. You share the same IdP URL as everyone in your organization, so if a claim rule is too open, you might let users apply a trusted profile with access to your account unintentionally.
 {: important}
