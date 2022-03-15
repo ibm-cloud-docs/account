@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2021
-lastupdated: "2021-12-23"
+  years: 2018, 2022
+lastupdated: "2022-03-15"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources 
 
@@ -182,8 +182,6 @@ If you have administrator access through a trusted profile, it is not recommende
 ## Use cases for organizing resources and assigning access
 {: #usecase_examples}
 
-<!---Review the following use cases to help you prepare a plan that works for your organization. For each use case, it is recommended to use access groups to provide access to a group of users with a minimal number of access policies. By using access groups, you can simply add or remove users from the access groups to assign or revoke access as needed.--->
-
 Review the following use cases to help you prepare a plan that works for your organization. For each use case, it is recommended to use either access groups or trusted profiles to provide access to a group of users while maintaining a minimal number of access policies. By using access groups, you can simply add or remove users in your account from the access groups to assign or revoke access as needed. By using trusted profiles, you can easily update the conditions by which federated users from your corporate user directory are allowed to apply trusted profiles without having to invite them to the account or assign individual access to each user.
 
 ### Multiple users working together on a single project by using access groups
@@ -215,7 +213,7 @@ You have two functional projects in your account. Developers working on a projec
 
 Flexibility is important, and with IAM, you can share resources between various groups. Let's say you notice that a resource might work well for both projects. You can share a resource between the two projects by tagging the resource and relying on the existing permissions to grant access to the developers. If a project doesn't require a resource anymore, you can simply revoke the developers' access by detaching the appropriate tag from the service instance. Check out the following video to gain a better understanding of how you can use access management tags to manage access to the resources in your account. 
 
-![Controlling access by using tags in {{site.data.keyword.cloud}}](https://video.ibm.com/embed/23952684){: video output="iframe" data-script="#video-transcript-tags" id="watsonmediaplayer" width="560" height="315" scrolling="no" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0" style="border: 0 none transparent;"}
+![Controlling access by using tags in {{site.data.keyword.cloud}}](https://video.ibm.com/embed/recorded/129754389){: video output="iframe" data-script="#video-transcript-tags" id="watsonmediaplayer" width="560" height="315" scrolling="no" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0" style="border: 0 none transparent;"}
 
 #### Video transcript
 {: #video-transcript-tags}
