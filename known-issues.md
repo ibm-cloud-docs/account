@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-01-25"
+lastupdated: "2022-03-15"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users, Cloud Foundry orgs
 
@@ -44,7 +44,6 @@ Turning off {{site.data.keyword.cloud_notm}} catalog visibility or excluding all
 * {{site.data.keyword.cos_full_notm}}
 * {{site.data.keyword.bplong_notm}}
 * {{site.data.keyword.cloud_notm}} {{site.data.keyword.BluVirtServers_short}}
-* Load Balancer for VPC
 * Subnets and IPs
 * Virtual Private Cloud
 * Virtual Server for VPC
