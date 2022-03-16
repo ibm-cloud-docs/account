@@ -4,7 +4,7 @@ copyright:
 
   years: 2021, 2022
 
-lastupdated: "2022-03-13"
+lastupdated: "2022-03-16"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
@@ -41,15 +41,16 @@ Complete the following steps to define which federated users can access specific
   
 1. (Optional) Establish trust.
    1. Select **Federated users** as a trusted entity type from the list.
-   1. Select **Users federated by IBMid** or **Users federated by IBM Cloud AppID** as the authentication method and input the default identity prodiver (IdP) you enabled in step 1.
+   2. Select **Users federated by IBMid** or **Users federated by IBM Cloud AppID** as the authentication method and input the default identity prodiver (IdP) you enabled in step 1.
 
     If the users that you are creating a trusted profile for use {{site.data.keyword.appid_full_notm}}, you should create the trusted profile as an {{site.data.keyword.appid_full_notm}} user, and likewise for IBMid. This way, your own SAML attributes can give you an idea of how to structure the trusted profile conditions. Other users with the same IdP can have different SAML attributes and you should use your own only as a hint. To use attributes in a claim that are different than your own, input them manually. 
     {: tip}
 
-   1. Add conditions based on your IdP data to define how and when federated users can apply the profile.
+   3. Add conditions based on your IdP data to define how and when federated users can apply the profile.
     * By clicking **Add a condition**, you can define multiple conditions. Federated users must meet all the conditions to be included in the trusted profile. For more information about the fields that are used to create conditions, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
     * Click **View identity provider (IdP) data** to search attribute names and values in your own personal data from your IdP. For more information, see [Using IdP data to build trusted profiles](/docs/account?topic=account-idp-integration#trusted-profiles-idp-data).
-   1. Define the session duration for how long a user can apply the profile before they must reauthenticate, and click **Continue**.
+1. Define the session duration for how long a user can apply the profile before they must reauthenticate.
+1. Click **Continue**.
 1. (Optional) Create access policy. 
    1. Based on your level of access, you can assign IAM policies and classic infrastructure permissions. Select **IAM services** or **Account management** to continue.
    1. For **IAM services** and **Account management**, select the option for all resources or only specific resources based on attributes. Select any combination of roles and permissions to define the scope of access, and click **Add** > **Create**.
