@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2022
-lastupdated: "2022-02-28"
+lastupdated: "2022-03-16"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -110,7 +110,9 @@ When you add a credit card to your trial account, your account is upgraded to a 
 
 We're sad to see you go! If there's any way we can assist you before you decide to close your account, [reach out to us](/unifiedsupport/supportcenter){: external}.
 
-* To close a Pay-As-You-Go or Subscription account, contact [Support](/unifiedsupport/supportcenter). A  support case is required for account security and documentation purposes. After your Pay-As-You-Go account has been closed, all usage is stopped across all services running in your account, and the usage that is accrued in the current billing period is sent in one final invoice at the close of the billing period. Closing your account can't be undone and your data is unrecoverable.
+
+* To close a Pay-As-You-Go or Subscription account, go to the [Support Center](/unifiedsupport/supportcenter), and click **Create a case** in the Contact Support center. Click **Account**, and select the **Cancel/close/suspend** subtopic. A support case is required for account security and documentation purposes. After your account is closed, all usage is stopped across all services running in your account, and the usage that is accrued in the current billing period is sent in one final invoice at the close of the billing period. Closing your account can't be undone and your data is unrecoverable.
+
 * To close a Lite account, go to the [Account settings](/account/settings) page, and click **Close account**. You can reactivate your account if you upgrade to a Pay-As-You-Go or Subscription account. After an account is closed for 30 days, all data is deleted and all services are removed. 
 
 ## Can I log in to the console with my SoftLayer ID?
@@ -205,7 +207,7 @@ In the {{site.data.keyword.Bluemix_notm}} console, go to **Support** from the co
 To contact support, you can use the following methods:
 * If you have a valid Pay-As-You-Go or Subscription account, you can click **Live chat with support** to chat with a support engineer.  
 * Pay-As-You-Go or Subscription accounts can also contact support by phone: +1-866-403-7638.
-* Lite and Trial account support is limited to non-technical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the [{{site.data.keyword.Bluemix_notm}} documentation](/docs/get-support?topic=get-support-using-avatar), Chat with Watson, and use [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external}.
+* Lite and Trial account support is limited to nontechnical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the [{{site.data.keyword.Bluemix_notm}} documentation](/docs/get-support?topic=get-support-using-avatar), Chat with Watson, and use [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external}.
 
 ## Can I view a list of accounts that I own?
 {: #accounts-owned}
@@ -388,3 +390,11 @@ The administrator of your account has customized the duration of active and inac
 Based on an update to our account registration that released starting 25 October 2021, new accounts are created as Pay-As-You-Go. As part of this update, you're asked to provide credit card information for identity verification. After you register and create your new account, you can access the full {{site.data.keyword.cloud_notm}} catalog, including all Free and Lite plans. And, you get a $200 credit that you can use on products in the first 30 days. You pay only for billable services that you use, with no long-term contracts or commitments. 
 
 If you created a Lite account before 25 October 2021, you can continue working as you always have. However, you can go ahead and [upgrade to a Pay-As-You-Go account](/docs/account?topic=account-accountfaqs#changeacct) by adding your credit card information. This way, you can gain access to all Free service plans in the catalog.
+
+## How do I see who created a service instance and when?
+{: #instance-create}
+{: faq}
+
+From the [Resource list](/resources), expand the appropriate section, and click the row for the instance that you want more details about. Additional details about the resource display including when the resource was created and by whom.
+
+For classic infrastructure services, you can get similar information by using the [Audit log](/docs/account?topic=account-audit-log).
