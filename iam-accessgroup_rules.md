@@ -33,7 +33,7 @@ Dynamic rules are created by setting conditions that must be matched by the data
 
 To create a rule, follow these steps:
 
-1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Access Groups**.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Access Groups**.
 2. Select the name of the access group that you want to create a rule for. This action opens the group **Details** page.
 3. Select **Dynamic rules**.
 4. Click **Add rule**.
