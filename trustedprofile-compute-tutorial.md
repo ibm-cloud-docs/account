@@ -4,7 +4,7 @@ copyright:
 
   years: 2021, 2022
 
-lastupdated: "2022-03-09"
+lastupdated: "2022-03-17"
 
 keywords: trusted profile, compute resource, granting access, tutorial, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 
@@ -72,8 +72,8 @@ Now that you created your trusted profile, you want to establish trust with the 
 5. Select the cluster that you created for this tutorial. 
 6. Enter the value `default` in the namespace and service account fields. 
 
-   The {{site.data.keyword.containerlong_notm}} namespace and service account names that you enter do not have to exist already. Any future namespaces or service accounts with these names can establish trust. To list existing namespaces, log in to your cluster and run `kubectl get ns`. To list existing service accounts, log in to your cluster and run `kubectl get sa -n <namespace>`. You can also enter `default` for both. For more information, see [How do I establish trust with the {{site.data.keyword.containerlong_notm}} service in a trusted profile?](/docs/account?topic=account-iamfaq#tp-kub-trust)
-   {: note}
+   The Kubernetes namespace and service account names that you enter do not have to exist already. Any future namespaces or service accounts with these names can establish trust. To list existing namespaces, log in to your cluster and run `kubectl get ns`. To list existing service accounts, log in to your cluster and run `kubectl get sa -n <namespace>`. You can also enter `default` for both. For more information, see [Using Trusted Profiles in your Kubernetes and OpenShift Clusters](https://www.ibm.com/cloud/blog/using-trusted-profiles-in-your-kubernetes-and-openshift-clusters).
+   {: tip}
 
 7. Click **Continue**.
 

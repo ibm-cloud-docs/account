@@ -5,7 +5,7 @@
 copyright:
 
   years: 2018, 2022
-lastupdated: "2022-03-01"
+lastupdated: "2022-03-17"
 
 keywords: frequently asked questions for iam, iam faq, iam questions, identity and access management questions
 
@@ -348,4 +348,5 @@ In Kubernetes, a service account provides an identity for processes that run in 
 
 When you establish trust with the Kubernetes service in a trusted profile, you are required to enter information in the `namespace` and `service account` fields. You can enter `default` for both.
 
-For more information, see [Kubernetes service account token volume projection](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#service-account-token-volume-projection){: external} and [Kubernetes namespace](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/){: external}. 
+For more information, see [Using Trusted Profiles in your Kubernetes and OpenShift Clusters](https://www.ibm.com/cloud/blog/using-trusted-profiles-in-your-kubernetes-and-openshift-clusters) and [Kubernetes namespace](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/){: external}.
+
