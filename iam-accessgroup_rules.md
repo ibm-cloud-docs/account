@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2022
 
-lastupdated: "2022-03-18"
+lastupdated: "2022-03-22"
 
 keywords: dynamic rules,access groups,specific identity attributes,identity provider,federated ID,
 
@@ -106,9 +106,9 @@ You can view the users that are added to an access group by using dynamic rules.
 
 The following users will not appear in the table: 
 - Dynamically added users who are not logged in yet
-- Dynamically added users whose membership expired
+- Dynamically added users whose session expired
 
-Dynamic users that are logged out but whose memberships are still valid continue to appear in the table until their memberships expire.
+Dynamic users that are logged out but whose sessions are still valid continue to appear in the table until their sessions expire.
 
 You can't remove a dynamic user manually. To remove a dynamic user, adjust your dynamic rules. 
 {: note}
