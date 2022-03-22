@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2022
 
-lastupdated: "2022-03-04"
+lastupdated: "2022-03-22"
 
 
 keywords: what is IAM, IAM features, IAM API, how IAM works
@@ -55,6 +55,8 @@ Quickly and easily assign access for a group or users or service IDs organized i
 
 ### Trusted profiles for eliminating the need to manage credentials
 {: #trusted-profiles-feature}
+{: support}
+{: help}
 
 Quickly and easily assign access for a group of federated users or compute resources that are organized in a trusted profile. You assign access to the profile, and then add or remove conditions as needed to grant or deny access to account resources. By using trusted profiles, you can centrally manage the access lifecycle to multiple {{site.data.keyword.cloud_notm}} assets. For more information, see [Setting up trusted profiles](/docs/account?topic=account-create-trusted-profile).
 

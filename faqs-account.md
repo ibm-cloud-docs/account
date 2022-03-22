@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2022
-lastupdated: "2022-03-16"
+lastupdated: "2022-03-22"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -42,7 +42,6 @@ If you can't log in to an {{site.data.keyword.Bluemix_notm}} account, [create an
 ## How do I update my credit card?
 {: #updatepayment}
 {: faq}
-{: support}
 
 If you have a Pay-As-You-Go account type that is billed in US Dollars, complete the following steps:
 1. Go to the [Payments](/billing/payments) page.
@@ -63,7 +62,6 @@ If your credit card requires a MasterCard SecureCode that is sent to a mobile ph
 ## How do I upgrade my account?
 {: #changeacct}
 {: faq}
-{: support}
 
 To upgrade your Lite account, go to your [account settings](/account/settings). In the Account Upgrade section, click **Add credit card** to upgrade to a Pay-As-You-Go account, or click **Upgrade** for a Subscription account. 
 
@@ -78,7 +76,6 @@ Yes, when you upgrade to a Pay-As-You-Go or Subscription account, you can contin
 ## Can I convert my account?
 {: #convertacct}
 {: faq}
-{: support}
 
 Yes, the following options are available depending on your account type:
 
@@ -303,6 +300,7 @@ When you register users for {{site.data.keyword.Bluemix_notm}}, you must registe
 ## What are tags?
 {: #know-about-tags}
 {: faq}
+{: support}
 
 Tags are `key:value` pairs that you use to organize your resources or control access to them.
 
