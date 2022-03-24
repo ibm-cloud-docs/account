@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2022
-lastupdated: "2022-02-18"
+lastupdated: "2022-03-22"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -24,6 +24,7 @@ FAQs for your {{site.data.keyword.cloud}} enterprise might include questions abo
 ## How do I set up an enterprise account? 
 {: #enterprise-setup}
 {: faq}
+{: support}
 
 To set up an enterprise, you must be the account owner or an administrator on the Billing account management service. You use the {{site.data.keyword.cloud_notm}} console to create an enterprise account, enter the name of your company, provide your company's domain, create your enterprise structure, and more. For more information, see [Setting up an enterprise](/docs/account?topic=account-enterprise-tutorial). 
 

@@ -5,7 +5,7 @@
 copyright:
 
   years: 2017, 2022
-lastupdated: "2022-02-21"
+lastupdated: "2022-03-22"
 
 keywords: resource group, account resources, users access to resource groups, create resource group, create resource group in the console, create resource group CLI, create resource group API, create resource group Terraform
 
@@ -346,6 +346,8 @@ You can rename a resource group by using Terraform.
 ## Adding resources to a resource group
 {: #add_to_rgs}
 {: ui}
+{: support}
+{: help}
 
 Services that are managed with IAM belong to a resource group instead of a Cloud Foundry org or space. When you create an instance of one of these services from the catalog, you're prompted to assign the instance to a resource group. Your resource group selection at the time of creating the instance is final and can't be changed.
 
@@ -454,4 +456,3 @@ fmt.Printf("\nListResourceInstances() response:\n%s\n", string(b))
 ```
 {: codeblock}
 {: go}
-

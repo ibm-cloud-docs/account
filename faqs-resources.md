@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2022
 
-lastupdated: "2022-02-18"
+lastupdated: "2022-03-22"
 
 keywords: resource FAQs, resource frequently asked questions, resource group, resource list, dashboard widget
 
@@ -48,6 +48,7 @@ When you have Cloud Foundry services that can be migrated to a resource group, y
 ## Why can't I add a resource to a resource group?
 {: #create-add-resource}
 {: faq}
+{: support}
 
 Most likely you're dealing with an access issue. You must have at least the Viewer role on the resource group itself and at least the Editor role on the service in the account. Learn more in [Adding resources to a resource group](/docs/account?topic=account-rgs#add_to_rgs).
 

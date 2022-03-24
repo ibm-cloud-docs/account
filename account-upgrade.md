@@ -2,6 +2,7 @@
 
 copyright:
   years: 2015, 2022
+
 lastupdated: "2022-03-24"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
@@ -33,6 +34,8 @@ To upgrade your account, you must have an access policy with the Editor role or 
 
 ## Upgrading to a Pay-As-You-Go account
 {: #upgrade-paygo}
+{: support}
+{: help}
 
 With a Pay-As-You-Go account, you pay for only what you use beyond the free runtime and service allowances. After you upgrade, you can continue to use any instances that you created with your Lite account.
 
