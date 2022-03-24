@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2022
 
-lastupdated: "2022-03-04"
+lastupdated: "2022-03-23"
 
 
 keywords: what is IAM, IAM features, IAM API, how IAM works
@@ -15,20 +15,17 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-
 # How {{site.data.keyword.cloud_notm}} IAM works
 {: #iamoverview}
 
 Learn about what {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) is, how IAM works, what features are available, and how to access the console, CLI, and APIs to work with IAM in your account.
 {: shortdesc}
 
-IAM enables you to securely authenticate users for platform services and control access to resources consistently across {{site.data.keyword.cloud_notm}}. A set of {{site.data.keyword.cloud_notm}} services is enabled to use {{site.data.keyword.cloud_notm}} IAM for access control, and are organized into [resource groups](/docs/account?topic=account-rgs) within your account so you can give users access quickly to more than one resource at a time. Each of these services is labeled as "IAM-enabled" in the catalog. You can use IAM access policies to assign users and service IDs access to resources within your account. And, you can group users and service IDs into an [access group](/docs/account?topic=account-groups) to easily give all members of the group the same level of access.
+IAM enables you to securely authenticate users for platform services and control access to resources consistently across {{site.data.keyword.cloud_notm}}. A set of {{site.data.keyword.cloud_notm}} services is enabled to use {{site.data.keyword.cloud_notm}} IAM for access control, and are organized into [resource groups](/docs/account?topic=account-rgs) within your account so you can give users access quickly to more than one resource at a time. Each of these services is labeled as "IAM-enabled" in the catalog. You can use IAM access policies to assign users, service IDs, and trusted profiles access to resources within your account. And, you can group users, service IDs, and trusted profiles into an [access group](/docs/account?topic=account-groups) to easily give all members of the group the same level of access.
 
-![IAM access control in an account by using access groups](images/IAM-access-groups-diagram.svg "How IAM access works in an account by using access groups"){: caption="Figure 1. How IAM access works in an account by using access groups" caption-side="bottom"}
+You can use [trusted profiles](/docs/account?topic=account-create-trusted-profile) to automate the grouping and granting of access to users, services, and app identities. By specifying conditions based on SAML attributes for users whose identity is federated from your external identity provider (IdP), users can be granted access to resources without having to be invited to the account if they meet those conditions. For service and app identities, you can define fine-grained authorization for all applications that are running in a compute resource without creating service IDs or managing the API key lifecycle for applications.
 
-You can also use [trusted profiles](/docs/account?topic=account-create-trusted-profile) to group and grant access to users, service, and app identities. By specifying conditions based on SAML attributes for users whose identity is federated from your external identity provider (IdP), users can be granted access to resources without having to be invited to the account if they meet those conditions. For service and app identities, you can define fine-grained authorization for all applications that are running in a compute resource without creating service IDs or manage the API key lifecycle for applications.
-
-![IAM access control in an account by using trusted profiles](images/IAM-trusted-profiles-diagram-2.svg "How IAM access works in an account by using trusted profiles"){: caption="Figure 2. How IAM access works in an account by using trusted profiles" caption-side="bottom"}
+![IAM access control in an account](images/tp-in-ag-access-diagram.svg "How IAM access works in an account by using access groups"){: caption="Figure 1. How IAM access works in an account by using access groups" caption-side="bottom"}
 
 For services that don't support the use of {{site.data.keyword.cloud_notm}} IAM policies for managing access, you can use [Cloud Foundry access](/docs/account?topic=account-mngcf) or [classic infrastructure permissions](/docs/account?topic=account-mngclassicinfra).
 {: note}
@@ -51,17 +48,19 @@ Access for users, service IDs, access groups, and trusted profiles are defined b
 ### Access groups for streamlined access management
 {: #access-groups-quick-access}
 
-Quickly and easily assign access for a group or users or service IDs organized in an access group by assigning access to the group, and then add or remove users or service IDs as needed to grant or deny access to account resources. Access groups enable you to manage a minimal number of policies in the account. For more information, see [Setting up access groups](/docs/account?topic=account-groups).
+Quickly and easily assign access for a group of users, service IDs, or trusted profiles that are organized in an access group by assigning access to the group, and then add or remove identities as needed to grant or deny access to account resources. Access groups enable you to manage a minimal number of policies in the account. For more information, see [Setting up access groups](/docs/account?topic=account-groups).
 
 ### Trusted profiles for eliminating the need to manage credentials
 {: #trusted-profiles-feature}
+{: support}
+{: help}
 
-Quickly and easily assign access for a group of federated users or compute resources that are organized in a trusted profile. You assign access to the profile, and then add or remove conditions as needed to grant or deny access to account resources. By using trusted profiles, you can centrally manage the access lifecycle to multiple {{site.data.keyword.cloud_notm}} assets. For more information, see [Setting up trusted profiles](/docs/account?topic=account-create-trusted-profile).
+Automatically grant federated users access to your account with conditions based on SAML attributes from your corporate directory. Trusted profiles can also be used to set up fine-grained authorization for applications that are running in compute resources. This way, you aren't required to create service IDs or API keys for the compute resources. Assign access to the profile by adding it to an access group or by assigning individual policies, and then add or remove conditions as needed to grant or deny access to account resources. By using trusted profiles, you can centrally manage the access lifecycle to multiple {{site.data.keyword.cloud_notm}} assets. For more information, see [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile).
 
 #### Federated users
 {: #trusted-profiles-feature-fedusers}
 
-Your users might already have identities outside of {{site.data.keyword.cloud_notm}}, in your corporate directory. If your users need to work with {{site.data.keyword.cloud_notm}} resources or work with applications that access those resources, then those users also need {{site.data.keyword.cloud_notm}} credentials. You can use a trusted profile to specify permissions for users whose identity is federated from your organization or an external IdP. By using your IdP, you can provide a way for users in your company to use single sign-on (SSO). To connect your federated users with {{site.data.keyword.cloud_notm}} resources, see [Federating users to {{site.data.keyword.cloud_notm}}](#federation-iam).
+Your users might already have identities outside of {{site.data.keyword.cloud_notm}} in your corporate directory. If your users need to work with {{site.data.keyword.cloud_notm}} resources or work with applications that access those resources, then those users also need {{site.data.keyword.cloud_notm}} credentials. You can use a trusted profile to specify permissions for users whose identity is federated from your organization or an external IdP. By using your IdP, you can provide a way for users in your company to use single sign-on (SSO). To connect your federated users with {{site.data.keyword.cloud_notm}} resources, see [Federating users to {{site.data.keyword.cloud_notm}}](#federation-iam).
 
 #### Compute resources
 {: #trusted-profiles-feature-resources}
@@ -71,9 +70,6 @@ By using trusted profiles, you can define fine-grained authorization for all app
 *  Application developers can programmatically retrieve a token that is associated with the compute resource identity that they are running on. That token is used to get the trusted profile identity token, which is used to access services and resources on {{site.data.keyword.cloud_notm}}.
 *  Applications running on a compute resource can have a flexible, but secure way to access other {{site.data.keyword.cloud_notm}} services from within compute resources. For example, it's more secure not having to store API keys.
 *  All compute resource instances that share certain conditions such as name, namespace, tags, or location, their identities are mapped to a common profile and can share access to {{site.data.keyword.cloud_notm}} resources. This common identity makes it possible to give the applications within various compute resources access to an external resource one time rather than cluster-by-cluster.
-
-You can monitor which federated users and compute resources apply a trusted profile by looking at {{site.data.keyword.at_short}}. The fields `Initiator.authnId` and `Initiator.authnName` hold the details for the authenticated user that applies a profile, while `Initiator.id` and `Initiatior.name` hold the details of the profile that is applied. For compute resources the `authn` fields hold the CRN that uniquely identifies the resource that applies a profile. For more information, see [Required AT field events](https://cloud.ibm.com/docs/observability?topic=observability-at_req_fields#initiator.authnId).
-{: note}
 
 ### API keys for user authentication
 {: #apikey-feature}
@@ -85,7 +81,7 @@ You can create multiple API keys for a user to support key rotation scenarios, a
 
 A service ID identifies a service or application similar to how a user ID identifies a user. These are IDs that can be used by applications to authenticate with an {{site.data.keyword.cloud_notm}} service. Policies can be assigned to each service ID to control the level of access that is allowed by an application that uses the service ID, and an API key can be created to enable the authentication. For more information, see [Creating and working with service IDs](/docs/account?topic=account-serviceids).
 
-Infrastructure-as-a-Service (IaaS) doesn't support operations that are made by service IDs. If an account includes IaaS and PaaS, administrative functions that are made by a service ID might not work as intended if the operation depends on API calls to IaaS. In an account that includes IaaS, be sure that account administrators complete the administrative functions. For example, functional IDs can be used for administrative functions. In some cases, IBM support might be able to assist with some administrative functions that span both IaaS and PaaS.
+Infrastructure-as-a-Service (IaaS) doesn't support operations that are made by service IDs. If an account includes IaaS and PaaS, administrative functions that are made by a service ID might not work as intended if the operation depends on API calls to IaaS. In an account that includes IaaS, be sure that account administrators complete the administrative functions. For example, functional IDs can be used for administrative functions. In some cases, 	{{site.data.keyword.IBM_notm}} support might be able to assist with some administrative functions that span both IaaS and PaaS.
 {: note}
 
 ### Multifactor authentication

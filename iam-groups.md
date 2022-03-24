@@ -3,7 +3,9 @@
 copyright:
 
   years: 2018, 2022
-lastupdated: "2022-02-21"
+
+lastupdated: "2022-03-23"
+
 
 keywords: access groups, access group, create group, assign access to group
 
@@ -11,29 +13,17 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:video: .video}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:terraform: .ph data-hd-interface='terraform'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Setting up access groups
 {: #groups}
 
-An access group can be created to organize a set of users and service IDs into a single entity that makes it easy for you to assign access. You can assign a single policy to the group instead of assigning the same access multiple times per individual user or service ID.
+An access group can be created to organize a set of users, service IDs, and trusted profiles into a single entity that makes it easy for you to assign access. You can assign a single policy to the group instead of assigning the same access multiple times for an individual user or service ID.
 {: shortdesc}
 
-Access groups are assigned policies that grant roles and permissions to the members of that group. Members of an access group can include both users and service IDs. The members inherit the policies, roles, and permissions that are assigned to the access group, and also keep the roles that they are assigned individually.
+Access groups are assigned policies that grant roles and permissions to the members of that group. Members of an access group can include multiple identity types, like users, service IDs, and trusted profiles. The members inherit the policies, roles, and permissions that are assigned to the access group, and also keep the roles that they are assigned individually.
+
+For example, if a user is assigned the `viewer` role on the billing service and they are added to an access group that has the `publisher` role on the catalog management service, they keep their `viewer` role even though that isn't part of the access group permissions.
 
 To make assigning and managing access even easier, you can set up resource groups to organize a set of resources that you want a group of users to have access to. When your resource group is set up, you can assign a policy that gives access to all resources within that group instead of creating access policies for individual service instances within your account.
 {: tip}
@@ -77,7 +67,7 @@ Then, select the name of the access group that you want to assign access.
 
 Select the “Access policies” tab, and then click “Assign access.”
 
-Now you will select the type of access that you want to assign (clicks IAM services, selects All identity and access enabled services, selects Administrator platform role, selects Reader service role). Then click “Add” and “Assign.” (Then, clicks "Invite" button.) 
+Now you will select the type of access that you want to assign (clicks IAM services, selects All identity and access-enabled services, selects Administrator platform role, selects Reader service role). Then, click “Add” and “Assign.” (Then, clicks "Invite" button.) 
 
 Inviting users to the access group is easy. You can add users directly to each access group by clicking on “Users” and the blue “Invite Users” button.
 
@@ -104,7 +94,7 @@ A unique name is required to differentiate access groups in the account. To crea
 2. Click **Create**.
 3. Enter a unique name to identify your access group, an optional description, and click **Create**.
 
-Next, continue to set up your group by adding users or service IDs. Or, you can start assigning the group access, and decide who you want to add to the access group later.
+Next, continue to set up your groups by adding users, service IDs, or trusted profiles. You can add users manually or by [creating dynamic rules](/docs/account?topic=account-rules&interface=ui). Or, you can start assigning the group access, and decide who you want to add to the access group later. 
 
 You can delete a group by selecting the **Remove group** option. When you remove a group from the account, you are removing all users and service IDs from the group and all access that is assigned to the group.
 {: note}
@@ -253,7 +243,7 @@ After you set up your group with users and service IDs, you can assign a common 
 2. From the row for the group that you want to assign access, select the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions"), and click **Assign access**. 
 3. Add one or more of the access options that you manage. You must assign at least one access option. For any access options that you don't add and configure, the default value of **No access** is assigned. Depending on the options that you are authorized to manage, you can assign the following types of access:
 
-     * Select **IAM services**, and then select the option for all services or just a specific service. Next, you can scope the access to the resources based on selected resource attributes like access management tags, location or resource group. Then, select all roles that apply. To view what actions are mapped to each role, click the **Actions for role** option to view a list of all actions that are mapped to a specific role. Some services support the use of advanced operators to grant access to resources that satisfy specific naming conventions. See [Assigning access by using wildcard policies](/docs/account?topic=account-wildcard) for more information. 
+     * Select **IAM services**, and then select the option for all services or just a specific service. Next, you can scope the access to the resources based on selected resource attributes like access management tags, location or resource group. Then, select all roles that apply. To view what actions are mapped to each role, click the **Actions for role** option to view a list of all actions that are mapped to a specific role.    \n \n Some services support the use of advanced operators to grant access to resources that satisfy specific naming conventions. See [Assigning access by using wildcard policies](/docs/account?topic=account-wildcard) for more information. 
      
          If you select the **Account** scope for the access policy, the user must already have the Viewer role or higher on the resource group or groups that contain the resources you want the user to have access to. Without a role on a resource group, the user can't work with the resource from the Resource list page in the console.
          {: tip}
@@ -261,7 +251,7 @@ After you set up your group with users and service IDs, you can assign a common 
      * Select **Account management**, and then choose from the all account management services option or select a specific service. Then, select all roles that apply.
 
    
-4. Click **Add** > **Assign**. 
+4. Click **Add** > **Assign**.  
 
 You can also assign access by using access management tags. For more information, see [Controlling access to resources by using tags](/docs/account?topic=account-access-tags-tutorial).
 {: tip}

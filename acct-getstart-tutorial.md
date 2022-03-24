@@ -3,7 +3,7 @@
 copyright:
   years: 2020, 2022
 
-lastupdated: "2022-03-21"
+lastupdated: "2022-03-23"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key
 
@@ -152,7 +152,7 @@ Complete the following steps to set your preferences for receiving various types
 
 2. To receive spending notifications, go to **Manage** > **Billing and usage** > **Spending notifications** in the {{site.data.keyword.cloud_notm}} console. Or, you can access it directly from the [Notification preferences](/user/notifications) page by clicking **Manage** in the **Billing and Usage** section.
 
-   You receive notifications when you reach 80%, 90%, and 100% of the spending thresholds that you specify. Enter the dollar amount to set a spending threshold when setting up your spending notification. For more information, see [Setting spending notifications](/docs/billing-usage?topic=billing-usage-spending). 
+   You receive notifications when you reach 80%, 90%, and 100% of the spending thresholds that you specify. Enter the dollar amount to set a spending threshold when set up your spending notification. For more information, see [Setting spending notifications](/docs/billing-usage?topic=billing-usage-spending). 
 
 
 ## Create your resource groups
@@ -190,7 +190,7 @@ IAM access groups provide a way for you to quickly and easily assign access to m
    3. Select all roles that apply.
    4. Click **Add** > **Assign**.
   
-See [What makes a good access group strategy?](/docs/account?topic=account-account_setup#resource-group-strategy) for details about how to best set up your access groups. 
+See [What makes a good access group strategy?](/docs/account?topic=account-account_setup#resource-group-strategy) for details about how to best set-up your access groups. 
   
 ## Invite users to your account
 {: #account-gs-inviteusers}
@@ -210,6 +210,8 @@ Complete the following steps:
 5. Click **Invite**.
 
 To learn more about the invitation flow and how users can accept invitations, see [Inviting users to an account](/docs/account?topic=account-iamuserinv).
+
+You can also give users access to your account by using trusted profiles. For more information, see [What makes a good trusted profiles strategy?](/docs/account?topic=account-account_setup#trustedprofiles_strategy).
 
 ## Explore your support options
 {: #account-gs-supportcenter}

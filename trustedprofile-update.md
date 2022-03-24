@@ -4,9 +4,10 @@ copyright:
 
   years: 2021, 2022
 
-lastupdated: "2022-02-21"
 
-keywords: trusted profile, federated users, granting access, update trusted profile, compute resource, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
+lastupdated: "2022-03-23"
+
+keywords: trusted profile, federated users, granting access, update trusted profile, compute resource, IAM trusted profile, trust relationship, establish trust,  trust policy, trusted entity, assume access, apply access
 
 subcollection: account
 
@@ -14,10 +15,11 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
+
 # Updating trusted profiles
 {: #trusted-profile-update}
 
-You can update the permissions or redefine the trust relationship of the trusted profiles at any time by using either the console or the [IAM Identity Services](/apidocs/iam-identity-token-api#create-claim-rule-request) API. 
+You can update the permissions or redefine trust relationships for trusted profiles at any time by using either the console or the [IAM Identity Services](/apidocs/iam-identity-token-api#create-claim-rule-request){: external} API. 
 {: shortdesc}
 
 To update trusted profiles, you must be assigned the administrator, operator, or editor role within the account, or on the IAM Identity Service.
@@ -40,27 +42,42 @@ Click the name of the trusted profile that you want to update, and select **Acti
 After the trusted profile is created, you can build trust with both federated users and compute resources in the same trusted profile.
 
 1. Click the name of the trusted profile that you want to update.
-2. Click **Add** to add new condition to the existing trust relationship. To edit an existing condition, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** next to the trust relationship you want to update.
-   * Click **Add new condition** and repeat as needed to add more conditions.
-   * To remove a condition, click the **Close** icon ![Close icon](../icons/close-icon.svg "Close") next to the existing condition.
-3. Click **Save** to apply all added conditions to your trusted profile.
+2. Click **Add** to add a condition to the existing trust relationship. To edit an existing condition, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** next to the trust relationship you want to update.
+   * Click **Add a condition** and repeat as needed to add more conditions.
+   * To remove a condition, click the **Remove** icon ![Remove icon](../icons/close-icon.svg "Remove") next to the existing condition.
+3. Click **Save** to apply all added or removed conditions to your trusted profile.
   
-### Assigning access policies
-{: #access-policies}
+### Assigning access 
+{: #update-tp-access}
+
+You can assign access to a trusted profile by assigning individual access policies, or by adding the trusted profiles to an existing access group. 
+
+#### Assigning access policies
+{: #update-tp-policy}
 
 1. Click the name of the trusted profile that you want to update.
-2. Click the **Access policies** tab.
+2. Click **Access policies**.
 3. To assign new access policies, click **Assign access**. To edit existing access policies, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** next to the access policy you want to update.
+4. To add the trusted profile to an access group, click **Add**. To edit existing access group membership, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** next to the access group you want to update.
 
-   You can select your resources based on resource attributes and any combination of roles to assign.
+You can select your resources based on resource attributes and any combination of roles to assign.
+
+#### Assigning access groups
+{: #update-tp-group}
+
+1. Click the name of the trusted profile that you want to update.
+2. Click **Access groups** > **Add**. 
+3. Select the access groups to which you want to add the trusted profile and click **Add**. You can assign users to only the access groups that you have access to manage.
+4. Click **Assign**. 
 
 ### Updating session duration
 {: #session-duration-tp}
 
 1. Click the name of the trusted profile that you want to update.
-2. In the federated users section, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") next to the identity provider (IdP) row that you want to update.
-3. In hours, add or subtract how long federated users can use this profile before their session expires.
-4. Click **Save**. 
+2. In the federated users section, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") for the identity provider (IdP) that you want to update. 
+3. Select **Edit** 
+4. In hours, enter how long federated users can use this profile before their session expires.
+5. Click **Save**. 
 
 ## Updating trusted profiles by using the CLI
 {: #updating-tp-cli}
