@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2022
-lastupdated: "2022-02-21"
+lastupdated: "2022-03-22"
 
 keywords: account, add orgs, add spaces, cloud foundry orgs
 
@@ -66,8 +66,6 @@ You can manage Cloud Foundry orgs and spaces by going to **Manage** > **Account*
 
 ## Creating orgs in the console
 {: #createorg}
-{: help} 
-{: support}
 {: ui}
 
 If you have a billable account, you can add as many orgs as you need. Lite accounts can have only one org, which is already created in your account. Orgs can't be deleted after you add them.
@@ -88,8 +86,6 @@ You can assign the following [Cloud Foundry roles](/docs/account?topic=account-m
 
 ## Creating spaces in the console
 {: #spaceinfo}
-{: help} 
-{: support}
 {: ui}
 
 Within an organization, you can use spaces to group a set of applications, services, and users. Spaces are defined within a single {{site.data.keyword.Bluemix_notm}} region. You can create spaces in an org based on the delivery lifecycle. For example, you can create a `dev` space as a development environment, a `test` space as a testing environment, and a `production` space as a production environment. Then, you can associate your apps with spaces.
@@ -204,6 +200,3 @@ curl "https://api.example.org/v3/spaces" \
 ```
 {: codeblock}
 {: curl}
-
-
-

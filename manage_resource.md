@@ -6,7 +6,7 @@ copyright:
 
   years: 2019, 2022
   
-lastupdated: "2022-02-11"
+lastupdated: "2022-03-22"
 
 keywords: resource, account resources, create resource, access to create resources
 
@@ -53,6 +53,8 @@ For users in your account to be able to create resources from the catalog and as
 ## Creating resources in the console
 {: #create-resource-console}
 {: ui}
+{: support}
+{: help}
 
 Use the following steps to create a resource in the console: 
 1. From your dashboard, click **View resources** within the Resources summary widget.
@@ -280,4 +282,3 @@ You can create new resource instances by using Terraform.
    ```terraform
    terraform apply
    ```
-
