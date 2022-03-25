@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2022
 
-lastupdated: "2022-03-22"
+lastupdated: "2022-03-25"
 
 keywords: dynamic rules,access groups,specific identity attributes,identity provider,federated ID,
 
