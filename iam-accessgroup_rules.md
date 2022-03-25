@@ -3,8 +3,8 @@
 copyright:
 
   years: 2018, 2022
-  
-lastupdated: "2022-03-13"
+
+lastupdated: "2022-03-25"
 
 keywords: dynamic rules,access groups,specific identity attributes,identity provider,federated ID,
 
@@ -34,18 +34,15 @@ Dynamic rules are created by setting conditions that must be matched by the data
 To create a rule, follow these steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Access Groups**.
-2. Select the name of the access group that you want to create a rule for to open the group details page.
+2. Select the name of the access group that you want to create a rule for. This action opens the group **Details** page.
 3. Select **Dynamic rules**.
 4. Click **Add rule**.
 5. Enter the information from your IdP that is dynamically provided for you on the Add rule page. The following list provides details for each required field.
 
-You can think of an access group rule as a key:value pair. The key is what you add in the **`**Add users when** field, and the value is what you enter in the **Values** field. 
+You can think of an access group rule as a key:value pair. The key is what you add in the `Add users when` field, and the value is what you enter in the `Values` field. 
 {: tip}
 
 For more information about the fields that are used to create dynamic rules, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
-
-Users added to access groups by using dynamic rules don't display as group members on the users list for the access group. To check a specific user's membership to an access group, you can select that user's name from the account **Users** page, and then click **Access groups**.
-{: note}
 
 ## Setting up rules by using Terraform
 {: #setup_rules_terraform}
@@ -98,17 +95,31 @@ To create a rule by using Terraform, follow these steps:
    ```
    {: pre}
 
-## Example rule
-{: #example}
+For more information about the fields that are used to create dynamic rules, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
 
-The following example includes values for each of the fields on the **Add rule** page. In this rule, users who are identified as managers within the federated IdP are mapped to an {{site.data.keyword.Bluemix_notm}} access group that has specific access set for only managers.
 
-| Field                           | Value                           |
-|---------------------------------|---------------------------------|
-| Name                            | Manager group rule              |
-| Identity provider               | `https://idp.example.org/SAML2` |
-| Expiration (in hours)           | 12                              |
-| Add users when (attribute name) | isManager                       |
-| Comparator                      | Equals                          |
-| Value                           | true                            |
-{: caption="Table 1. Example dynamic rule for access groups" caption-side="top"}
+## Viewing dynamic members of access groups
+{: #view-dynamic-users}
+{: ui}
+
+You can view the users that are added to an access group by using dynamic rules. To view dynamic members of access groups, go to **Manage** > **Access (IAM)** > **Access groups** in the {{site.data.keyword.cloud_notm}} console. Select an access group and click **Users**. Dynamically added users are indicated by the type `Dynamic`.
+
+The following users will not appear in the table: 
+- Dynamically added users who are not logged in yet
+- Dynamically added users whose session expired
+
+Dynamic users that are logged out but whose sessions are still valid continue to appear in the table until their sessions expire.
+
+You can't remove a dynamic user manually. To remove a dynamic user, adjust your dynamic rules. 
+{: note}
+
+### Viewing a user's dynamic membership
+{: #view-dynamic-ag}
+
+You can also view a list of access groups that a user is added to based on dynamic rules by completing the following steps:
+
+1. Go to **Manage** > **Access (IAM)** > **Users** in the {{site.data.keyword.cloud_notm}} console. 
+1. Click on a user. 
+1. Click **Access groups**. 
+1. The access groups that a user is a dynamic member of is indicated by the type `Dynamic`. 
+
