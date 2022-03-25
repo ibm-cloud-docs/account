@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-09-22"
+lastupdated: "2022-03-25"
 
 keywords: manage account, account events, track events, account tracking, monitoring, catalog tracking, catalog management
 
@@ -10,12 +10,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:external: target="_blank" .external}
-{:tip: .tip}
-{:deprecated: .deprecated}
+{{site.data.keyword.attribute-definition-list}}
 
 # Auditing events for account, IAM, catalog management
 {: #acct_iam_tracking}
@@ -43,7 +38,9 @@ You must create an instance of the {{site.data.keyword.at_short}} service in the
 * Creating, updating, or deleting service IDs
 * Creating, updating, or deleting API keys
 * Creating, updating, or deleting access policies
+* Creating, updating, or deleting trusted profiles
 * Logging in to {{site.data.keyword.Bluemix_notm}} by using an API key, authorization code, passcode, password, or an API key associated with a service ID
+* Logging in to {{site.data.keyword.Bluemix_notm}} by using a trusted profile
 
 For more information, see [IAM events](/docs/activity-tracker?topic=activity-tracker-at_events_iam).
 
@@ -62,3 +59,13 @@ You can track the following events:
 {: important}
 
 For more information, see [Account management events](/docs/activity-tracker?topic=activity-tracker-at_events_acc_mgt).
+
+## Context-based restrictions events
+{: #cbr-events}
+
+You can track the following events:
+
+* Creating, updating, or deleting rules
+* Creating, updating, or deleting network zones
+
+For more information, see [Context-based restrictions events](/docs/activity-tracker?topic=activity-tracker-auditing-events-for-context-based-restrictions).
