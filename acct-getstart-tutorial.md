@@ -3,7 +3,7 @@
 copyright:
   years: 2020, 2022
 
-lastupdated: "2022-02-28"
+lastupdated: "2022-03-21"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key
 
@@ -55,12 +55,27 @@ If you're not a part of a company that uses a federated ID, use your IBMid to cr
 1. Click **Create account**.
 1. Confirm your account by clicking the link in the confirmation email that's sent to your provided email address.
 
+### Personal use availability 
+{: #signup-personalaccts}
+
+Personal use of our platform that is not related to business, trade, craft, or professional purposes are not supported for the following countries or regions:
+
+```text
+Albania, Algeria, Armenia, Bahrain, Belarus, Cameroon, Canary Islands, Egypt, Ghana, Ivory Coast, Kazakstan, Kenya, Kingdom of Saudi Arabia, Mauritania, Moldova, Nigeria, Norway, Saudi Arabia, Serbia, Seychelles, Switzerland, Taiwan, Tanzania, Turkey, UAE, Uganda, Ukraine, United Arab Emirates, Uzbekistan, Vietnam
+```
+{: screen}
+
+{{site.data.keyword.IBM}} Norway and {{site.data.keyword.IBM}} Switzerland are able to contract with local customers to offer personal use accounts. 
+{: note}
+
+To work with a local Business Partner, go to the [IBM Business Partner Directory](https://www.ibm.com/partnerworld/bpdirectory/). Customers are not required to have a VAT ID to work with a local Business Partner.
+
 ### Using a federated ID
 {: #signup-federated}
 
 A federated ID is an ID within a company's domain that is registered with {{site.data.keyword.IBM_notm}} so that the domain and user credentials can be used to access {{site.data.keyword.IBM_notm}} web applications. You can sign up for {{site.data.keyword.Bluemix_notm}} with a federated ID only if your company is already registered with {{site.data.keyword.IBM_notm}}. Registering a company's domain with {{site.data.keyword.IBM_notm}} enables users to log in to {{site.data.keyword.IBM_notm}} products and services by using their existing company user credentials. Authentication is then handled by your company's identity provider (IdP) through single sign-on (SSO).
 
-{{site.data.keyword.IBM_notm}} uses the Security Assertion Markup Language 2.0 (SAML 2.0) for this identity federation. SAML 2.0 is a standard version for exchanging authentication data between security domains. It’s an XML-based protocol using a security token that contains assertions to pass information between the organization's IdP, and the {{site.data.keyword.IBM_notm}} Rely Party (RP), otherwise known as the Service Provider.
+{{site.data.keyword.IBM_notm}} uses the Security Assertion Markup Language 2.0 (SAML 2.0) for this identity federation. SAML 2.0 is a standard version for exchanging authentication data between security domains. It’s an XML-based protocol that uses a security token that contains assertions to pass information between the organization's IdP, and the {{site.data.keyword.IBM_notm}} Rely Party (RP), otherwise known as the Service Provider.
 
 For information about how to register your company for a federated ID, see the [IBMid Enterprise Federation Adoption Guide](https://ibm.ent.box.com/notes/78040808400?v=IBMid-Federation-Guide){: external}. An {{site.data.keyword.IBM_notm}} sponsor, such as an offering advocate or client advocate, is required when you request to register federated IDs.
 

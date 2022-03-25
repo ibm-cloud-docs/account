@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-03-18"
+lastupdated: "2022-03-25"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -49,17 +49,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 1. Service roles - Statum KPI" caption-side="top"}
-{: #service-roles-table1}
-{: tab-title="Service roles"}
-{: tab-group="3p-amberoon-xaas-statumkpi"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `3p-amberoon-xaas-statumkpi.dashboard.view` |  | Administrator, Editor, Operator |
@@ -86,17 +75,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="3p-anontech-xaas-vizivault"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 2. Service roles - ViziVault Platform" caption-side="top"}
-{: #service-roles-table2}
-{: tab-title="Service roles"}
-{: tab-group="3p-anontech-xaas-vizivault"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -125,17 +103,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 3. Service roles - Cognitive View" caption-side="top"}
-{: #service-roles-table3}
-{: tab-title="Service roles"}
-{: tab-group="3p-cognitiveview-xaas-cognitiveview"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `3p-cognitiveview-xaas-cognitiveview.dashboard.view` |  | Administrator, Editor, Operator |
@@ -163,17 +130,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 4. Service roles - SimpleCloud" caption-side="top"}
-{: #service-roles-table4}
-{: tab-title="Service roles"}
-{: tab-group="3p-summusrender-xaas-simplecl0ud"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `3p-summusrender-xaas-simplecl0ud.dashboard.view` |  | Administrator, Editor, Operator |
@@ -200,17 +156,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="3p-wanclds-draas-vpcplus"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 5. Service roles - VPC+ DRaaS (VPC+ Disaster Recovery as a Service)" caption-side="top"}
-{: #service-roles-table5}
-{: tab-title="Service roles"}
-{: tab-group="3p-wanclds-draas-vpcplus"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -345,7 +290,6 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 9. Service roles - App ID" caption-side="top"}
@@ -441,7 +385,6 @@ Review the available platform and service roles and the actions mapped to each t
 | `appid.mgmt.del.totp.channel` | appid-mgmt-del-totp-channel | Manager, Writer |
 | `appid.mgmt.get.application.roles` | Get application roles | Manager, Reader, Writer |
 | `appid.mgmt.update.application.roles` | Update application roles | Manager, Writer |
-| `appid.config.read` | Read configuration information | Service Configuration Reader |
 {: caption="Table 9. Service actions - App ID" caption-side="top"}
 {: #actions-table9}
 {: tab-title="Actions"}
@@ -829,7 +772,6 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 17. Service roles - Certificate Manager" caption-side="top"}
@@ -854,7 +796,6 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloudcerts.notifications-channel.delete` | Delete a notification channel | Manager |
 | `cloudcerts.notifications-channel.test` | Test a notification channel | Manager, Reader, Writer |
 | `cloudcerts.notifications-channel.create` | Create a new notification channel. | Manager |
-| `cloudcerts.config.read` | Read configuration information | Service Configuration Reader |
 {: caption="Table 17. Service actions - Certificate Manager" caption-side="top"}
 {: #actions-table17}
 {: tab-title="Actions"}
@@ -881,7 +822,6 @@ Review the available platform and service roles and the actions mapped to each t
 | Cloud Developer | As a cloud developer, you can create Cloud Shell environments to manage IBM Cloud resources and develop applications for IBM Cloud (Web Preview enabled). |
 | Cloud Operator | As a cloud operator, you can create Cloud Shell environments to manage IBM Cloud resources. |
 | File Manager | As a file manager, you can create Cloud Shell environments to manage IBM Cloud resources and manage files in your workspace (File Upload and File Download enabled). |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
 {: caption="Table 18. Service roles - IBM Cloud Shell" caption-side="top"}
 {: #service-roles-table18}
@@ -896,7 +836,6 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloudshell.server.create` | The ability to create Cloud Shell environments. | Administrator, Cloud Developer, Cloud Operator, File Manager |
 | `cloudshell.server.preview-web` | The ability to preview web applications in Cloud Shell (Web Preview enabled). | Administrator, Cloud Developer |
 | `cloudshell.server.manage-file` | The ability to manage files in the Cloud Shell workspace (File Upload and File Download enabled). | Administrator, File Manager |
-| `cloudshell.config.read` | Configuration Information Point API access | Service Configuration Reader |
 {: caption="Table 18. Service actions - IBM Cloud Shell" caption-side="top"}
 {: #actions-table18}
 {: tab-title="Actions"}
@@ -924,7 +863,6 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 19. Service roles - Code Engine" caption-side="top"}
@@ -942,7 +880,6 @@ Review the available platform and service roles and the actions mapped to each t
 | `codeengine.tenant.entities.update` | Modify existing items already contained by a project, such as applications, jobs, or job definitions.  This does not include the ability to create or delete these items. | Manager, Writer |
 | `codeengine.tenant.entities.delete` | Delete existing items from within a project | Manager, Writer |
 | `codeengine.tenant.entities.read` | List and view existing items within a project | Manager, Reader, Writer |
-| `codeengine.config.read` | Configuration Information Point API access | Service Configuration Reader |
 {: caption="Table 19. Service actions - Code Engine" caption-side="top"}
 {: #actions-table19}
 {: tab-title="Actions"}
@@ -1094,7 +1031,6 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 22. Service roles - Container Registry" caption-side="top"}
@@ -1113,8 +1049,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `container-registry.namespace.delete` | Remove a namespace. | Manager |
 | `container-registry.image.delete` | Delete one or more container images. Remove a tag, or tags, from each specified container image in IBM Cloud Container Registry. Delete the signature for a container image. Clean up your namespaces by retaining only images that meet your criteria. Set a policy to clean up your namespaces by retaining only container images that meet your criteria. | Manager, Writer |
 | `container-registry.namespace.list` | List your namespaces. | Manager, Reader |
-| `container-registry.image.list` | List your container images. Display the container images that are in the trash. | Manager, Reader, Service Configuration Reader |
-| `container-registry.image.vulnerabilities` | View a vulnerability assessment report for your container image. | Manager, Reader, Service Configuration Reader |
+| `container-registry.image.list` | List your container images. Display the container images that are in the trash. | Manager, Reader |
+| `container-registry.image.vulnerabilities` | View a vulnerability assessment report for your container image. | Manager, Reader |
 | `container-registry.image.inspect` | Display details about a specific container image. | Manager, Reader |
 | `container-registry.quota.get` | Display your current quotas for traffic and storage, and usage information against those quotas. | Manager, Reader, Writer |
 | `container-registry.quota.set` | Modify the specified quota. | Manager |
@@ -1129,7 +1065,6 @@ Review the available platform and service roles and the actions mapped to each t
 | `container-registry.exemption.list` | List your exemptions for security issues.  List the types of security issues that you can exempt. | Manager, Reader |
 | `container-registry.settings.get` | Get Account Settings, such as whether platform metrics are enabled | Manager, Reader, Writer |
 | `container-registry.settings.set` | Set Account Settings, such as whether platform metrics are enabled | Manager |
-| `container-registry.config.read` | Configuration Information Point API access | Service Configuration Reader |
 {: caption="Table 22. Service actions - Container Registry" caption-side="top"}
 {: #actions-table22}
 {: tab-title="Actions"}
@@ -1345,7 +1280,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `cp4d.wkc.reporting.manage` | Manage reporting | Reporting Administrator |
 | `cp4d.governance-artifacts.access` | Access governance artifacts | CloudPak Data Engineer, CloudPak Data Scientist, CloudPak Data Steward |
 | `cp4d.catalog.access` | Access catalogs | CloudPak Data Scientist, CloudPak Data Steward, Manager |
-| `cp4d.data-protection-rules.manage` | Manage data protection rules | CloudPak Data Engineer, CloudPak Data Scientist, CloudPak Data Steward, Manager |
+| `cp4d.data-protection-rules.manage` | Manage data protection rules | CloudPak Data Engineer, CloudPak Data Steward, Manager |
 | `cp4d.glossary.manage` | Perform business glossary administrative tasks | Manager |
 {: caption="Table 27. Service actions - IBM Cloud Pak for Data" caption-side="top"}
 {: #actions-table27}
@@ -3004,27 +2939,7 @@ Review the available platform and service roles and the actions mapped to each t
 ## Direct Link
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `directlink` for the service name.
 
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 46. Service roles - Direct Link" caption-side="top"}
-{: #service-roles-table46}
-{: tab-title="Service roles"}
-{: tab-group="directlink"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `directlink.config.read` | Configuration Information Point API access | Service Configuration Reader |
-{: caption="Table 46. Service actions - Direct Link" caption-side="top"}
-{: #actions-table46}
-{: tab-title="Actions"}
-{: tab-group="directlink"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-
+No supported roles.
 ## Direct Link Connect
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `directlink.connect` for the service name.
 
@@ -3127,17 +3042,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="dizziondaas"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 50. Service roles - Dizzion DaaS" caption-side="top"}
-{: #service-roles-table50}
-{: tab-title="Service roles"}
-{: tab-group="dizziondaas"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -3638,7 +3542,6 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | IBMOperation | (Internal) - IBM Use only |
 | Publisher | You can publish offerings that are approved by IBM and that are in a private catalog to which you're assigned the viewer role. |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
 {: caption="Table 62. Service roles - Personal Catalog" caption-side="top"}
 {: #service-roles-table62}
@@ -3656,7 +3559,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `globalcatalog-collection.support.approveibm` | (Internal) - Approve publishing to IBM only | IBMOperation |
 | `globalcatalog-collection.support.approvepublic` | (Internal) Approve publishing to public | IBMOperation |
 | `globalcatalog-collection.support.approveshare` | (Internal) Approve publishing to Shared | IBMOperation |
-| `globalcatalog-collection.config.read` | Fortress compliance - read configuration | IBMOperation, Service Configuration Reader |
+| `globalcatalog-collection.config.read` | Fortress compliance - read configuration | IBMOperation |
 | `globalcatalog-collection.restrictedtags.update` | Permission to set restricted tags in a product. | IBMOperation |
 {: caption="Table 62. Service actions - Personal Catalog" caption-side="top"}
 {: #actions-table62}
@@ -3783,7 +3686,6 @@ Review the available platform and service roles and the actions mapped to each t
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Reader Plus | As a reader plus, you can perform read-only actions within the service such as viewing service-specific resources. You can also access key material of standard keys. |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | VMWare KMIP Manager | Allow the VMWare Solutions service to configure KMIP (activate/deactivate KMIP endpoint, manage client certificates) |
 | Vault Administrator | Can manage vaults, keystores (incl. cost implications), templates, and can perform destructive lifecycle actions on managed keys. Different vaults can be used to e.g. separate teams, lines of business, or customers. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
@@ -3882,7 +3784,6 @@ Review the available platform and service roles and the actions mapped to each t
 | `hs-crypto.keyrings.list` | List key rings | Manager, Reader, Reader Plus, Writer |
 | `hs-crypto.secrets.createalias` | Create key alias | Manager, Writer |
 | `hs-crypto.secrets.deletealias` | Delete key alias | Manager, Writer |
-| `hs-crypto.config.read` | Configuration Information Point API access | Service Configuration Reader |
 | `hs-crypto.secrets.sync` | Initiate a manual synchronization request to the associated resources of a key. | Manager, Writer |
 | `hs-crypto.secrets.purge` | Purge a destroyed encryption key. | KMS Key Purge Role |
 | `hs-crypto.secrets.patch` | Update an encryption key | Manager |
@@ -3940,7 +3841,6 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 67. Service roles - Hyper Protect DBaaS for MongoDB " caption-side="top"}
@@ -3965,7 +3865,6 @@ Review the available platform and service roles and the actions mapped to each t
 | `hyperp-dbaas-mongodb.clusters.tasks.read` | Get the detailed information about a task | Manager, Reader, Writer |
 | `hyperp-dbaas-mongodb.clusters.configuration.update` | Update the database configuration of your cluster | Manager |
 | `hyperp-dbaas-mongodb.clusters.configuration.read` | Show the database configuration of your cluster | Manager, Reader, Writer |
-| `hyperp-dbaas-mongodb.config.read` | Configuration Information Point API access | Service Configuration Reader |
 {: caption="Table 67. Service actions - Hyper Protect DBaaS for MongoDB " caption-side="top"}
 {: #actions-table67}
 {: tab-title="Actions"}
@@ -3980,7 +3879,6 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 68. Service roles - Hyper Protect DBaaS for PostgreSQL" caption-side="top"}
@@ -4005,7 +3903,6 @@ Review the available platform and service roles and the actions mapped to each t
 | `hyperp-dbaas-postgresql.clusters.tasks.read` | Get the detailed information about a task | Manager, Reader, Writer |
 | `hyperp-dbaas-postgresql.clusters.configuration.update` | Update the database configuration of your cluster | Manager |
 | `hyperp-dbaas-postgresql.clusters.configuration.read` | Show the database configuration of your cluster | Manager, Reader, Writer |
-| `hyperp-dbaas-postgresql.config.read` | Configuration Information Point API access | Service Configuration Reader |
 {: caption="Table 68. Service actions - Hyper Protect DBaaS for PostgreSQL" caption-side="top"}
 {: #actions-table68}
 {: tab-title="Actions"}
@@ -4086,17 +3983,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 71. Service roles - IAM Access Groups" caption-side="top"}
-{: #service-roles-table71}
-{: tab-title="Service roles"}
-{: tab-group="iam-groups"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `iam-groups.groups.create` | Create an access group | Administrator, Editor |
@@ -4142,7 +4028,6 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
-| Service Configuration Reader | A Config reader can view the settings of the account. |
 | Service ID creator | Can create service IDs when the account setting to restrict service ID creation is enabled. |
 | User API key creator | Can create API keys when the account setting to restrict API key creation is enabled. |
 {: row-headers}
@@ -4178,7 +4063,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `iam-identity.idp.delete` | Delete an Identity Provider configuration. | Administrator, Operator |
 | `iam-identity.idp.test` | Test an Identity Provider configuration. | Administrator, Editor, Operator |
 | `iam-identity.idp.metadata` | actiondescription.iam-identity.idp.metadata | Administrator, Editor, Operator |
-| `iam-identity.account.get` | Get the account configuration. | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
+| `iam-identity.account.get` | Get the account configuration. | Administrator, Editor, Operator, Viewer |
 | `iam-identity.account.create` | Create a new account configuration. | Administrator, Operator |
 | `iam-identity.account.update` | Update an existing account configuration. | Administrator, Editor, Operator |
 | `iam-identity.account.create` | Create a new account configuration. | Administrator, Operator |
@@ -4210,17 +4095,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="iam-svcs"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 73. Service roles - Identity and Access Management" caption-side="top"}
-{: #service-roles-table73}
-{: tab-title="Service roles"}
-{: tab-group="iam-svcs"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4290,6 +4164,10 @@ Review the available platform and service roles and the actions mapped to each t
 | `ibmae.livybatch.create` |  | Manager, Writer |
 | `ibmae.livybatch.delete` |  | Manager, Writer |
 | `ibmae.livybatch.read` |  | Manager, Reader, Writer |
+| `ibmae.sparkhistoryserver.create` |  | Manager, Writer |
+| `ibmae.sparkhistoryserver.delete` |  | Manager, Writer |
+| `ibmae.sparkhistoryserver.read` |  | Manager, Reader, Writer |
+| `ibmae.sparkhistoryui.read` |  | Manager, Reader, Writer |
 {: caption="Table 74. Service actions - Analytics Engine" caption-side="top"}
 {: #actions-table74}
 {: tab-title="Actions"}
@@ -4403,7 +4281,6 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 77. Service roles - Cloud Internet Services" caption-side="top"}
@@ -4415,16 +4292,16 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `internet-svcs.zones.read` | View all zone settings but can't modify them. | Manager, Reader, Service Configuration Reader, Writer |
+| `internet-svcs.zones.read` | View all zone settings but can't modify them. | Manager, Reader, Writer |
 | `internet-svcs.zones.update` | Modify all zone settings but can't create or delete them. | Manager, Writer |
 | `internet-svcs.zones.manage` | View, Modify, Create, and Delete all zone settings. | Manager |
-| `internet-svcs.reliability.read` | View all Reliability settings but can't modify them. | Manager, Reader, Service Configuration Reader, Writer |
+| `internet-svcs.reliability.read` | View all Reliability settings but can't modify them. | Manager, Reader, Writer |
 | `internet-svcs.reliability.update` | Modify all Reliability settings except for pools and monitors. | Manager, Writer |
 | `internet-svcs.reliability.manage` | View, Modify, Create, and Delete all Reliability settings except for pools and monitors. | Manager |
-| `internet-svcs.security.read` | View all Security settings except for instance level firewall rules. | Manager, Reader, Service Configuration Reader, Writer |
+| `internet-svcs.security.read` | View all Security settings except for instance level firewall rules. | Manager, Reader, Writer |
 | `internet-svcs.security.update` | Modify all Security settings except for instance level firewall rules. | Manager, Writer |
 | `internet-svcs.security.manage` | View, Modify, Create, and Delete all Security settings except for instance level firewall rules. | Manager |
-| `internet-svcs.performance.read` | View all Performance settings but can't modify them. | Manager, Reader, Service Configuration Reader, Writer |
+| `internet-svcs.performance.read` | View all Performance settings but can't modify them. | Manager, Reader, Writer |
 | `internet-svcs.performance.update` | Modify all Performance settings but cannot create or delete. | Manager, Writer |
 | `internet-svcs.performance.manage` | View, Modify, Create, and Delete all Performance settings. | Manager |
 {: caption="Table 77. Service actions - Cloud Internet Services" caption-side="top"}
@@ -4750,25 +4627,13 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 87. Service roles - Auto Scale for VPC" caption-side="top"}
-{: #service-roles-table87}
-{: tab-title="Service roles"}
-{: tab-group="is.instance-group"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `is.instance-group.instance-group.read` | Read an Instance Group | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
+| `is.instance-group.instance-group.read` | Read an Instance Group | Administrator, Editor, Operator, Viewer |
 | `is.instance-group.instance-group.create` | Create an Instance Group | Administrator, Editor |
 | `is.instance-group.instance-group.update` | Update an Instance Group | Administrator, Editor |
 | `is.instance-group.instance-group.delete` | Delete an Instance Group | Administrator, Editor |
 | `is.instance-group.instance-group.list` | List Instance Groups | Administrator, Editor, Operator, Viewer |
-| `is.instance-group.instance-group.config.read` | Configuration Information Point API access | Service Configuration Reader |
 {: caption="Table 87. Service actions - Auto Scale for VPC" caption-side="top"}
 {: #actions-table87}
 {: tab-title="Actions"}
@@ -4832,22 +4697,10 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 89. Service roles - Load Balancer for VPC" caption-side="top"}
-{: #service-roles-table89}
-{: tab-title="Service roles"}
-{: tab-group="is.load-balancer"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `is.load-balancer.load-balancer.view` |  | Administrator, Editor, Viewer |
 | `is.load-balancer.load-balancer.manage` |  | Administrator, Editor |
-| `is.load-balancer.config.read` | Configuration Information Point API access | Service Configuration Reader |
 {: caption="Table 89. Service actions - Load Balancer for VPC" caption-side="top"}
 {: #actions-table89}
 {: tab-title="Actions"}
@@ -5000,17 +4853,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 94. Service roles - Block Storage Snapshots for VPC" caption-side="top"}
-{: #service-roles-table94}
-{: tab-title="Service roles"}
-{: tab-group="is.snapshot"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `is.snapshot.snapshot.create` | This action allows the user to create block storage snapshots. | Administrator, Editor |
@@ -5020,7 +4862,6 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.snapshot.snapshot.delete` | This action allows the user to delete block storage snapshots. | Administrator, Editor |
 | `is.snapshot.snapshot.restore` | This action allows the user to restore block storage snapshots. | Administrator, Editor, Operator |
 | `is.snapshot.snapshot.operate` | Operate a snapshot | Administrator, Editor, Operator |
-| `is.snapshot.snapshot.config.read` | Configuration Governance endpoint | Service Configuration Reader |
 | `is.snapshot.clone.create` | Create clones of block storage snapshots for fast restoration | Administrator, Editor |
 | `is.snapshot.clone.read` | View the clones of block storage snapshots | Administrator, Editor, Operator, Viewer |
 | `is.snapshot.clone.delete` | Delete clones of block storage snapshots | Administrator, Editor |
@@ -5080,17 +4921,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 96. Service roles - Block Storage for VPC" caption-side="top"}
-{: #service-roles-table96}
-{: tab-title="Service roles"}
-{: tab-group="is.volume"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `is.volume.profile.view` |  | Administrator, Editor, Operator, Viewer |
@@ -5099,7 +4929,6 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.volume.volume.read` |  | Administrator, Editor, Operator, Viewer |
 | `is.volume.volume.update` |  | Administrator, Editor |
 | `is.volume.volume.delete` |  | Administrator, Editor |
-| `is.volume.volume.config.read` | Configuration Governance endpoint | Service Configuration Reader |
 | `is.volume.volume.operate` | Operate a volume | Administrator, Editor, Operator |
 {: caption="Table 96. Service actions - Block Storage for VPC" caption-side="top"}
 {: #actions-table96}
@@ -5157,17 +4986,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 98. Service roles - VPN for VPC" caption-side="top"}
-{: #service-roles-table98}
-{: tab-title="Service roles"}
-{: tab-group="is.vpn"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `is.vpn.vpn.create` |  | Administrator, Editor |
@@ -5176,7 +4994,6 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.vpn.vpn.read` |  | Administrator, Editor, Operator, Viewer |
 | `is.vpn.vpn.list` |  | Administrator, Editor, Operator, Viewer |
 | `is.vpn.dashboard.view` |  | Administrator, Editor, Operator, Viewer |
-| `is.vpn.config.read` | Configuration Information Point API access | Service Configuration Reader |
 {: caption="Table 98. Service actions - VPN for VPC" caption-side="top"}
 {: #actions-table98}
 {: tab-title="Actions"}
@@ -5203,7 +5020,6 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | VPN Client | Users of the VPN server need this role to connect to the VPN server |
 {: row-headers}
 {: caption="Table 99. Service roles - VPN Server for VPC" caption-side="top"}
@@ -5227,7 +5043,6 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.vpn-server.vpn-server.update` | Update VPN server
  | Administrator, Editor |
 | `is.vpn-server.vpn-server.connect` | Connect to VPN server | VPN Client |
-| `is.vpn-server.config.read` | Configuration Information Point API access | Service Configuration Reader |
 {: caption="Table 99. Service actions - VPN Server for VPC" caption-side="top"}
 {: #actions-table99}
 {: tab-title="Actions"}
@@ -5244,7 +5059,6 @@ Review the available platform and service roles and the actions mapped to each t
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | ReaderPlus | As a reader plus, you can perform read-only actions within Key Protect such as viewing service-specific resources. You can also access key material for standard keys. |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 100. Service roles - IBM Key Protect" caption-side="top"}
@@ -5294,7 +5108,6 @@ Review the available platform and service roles and the actions mapped to each t
 | `kms.secrets.sync` | Initiate a manual data synchronization request to the associated resources of a key. | Manager, Writer |
 | `kms.secrets.createalias` | Create an alias for an encryption key. | Manager, Writer |
 | `kms.secrets.deletealias` |  Delete an alias for an encryption key. | Manager, Writer |
-| `kms.governance.configread` | Retrieve current configuration of the queried resources. | Service Configuration Reader |
 | `kms.keyrings.list` | Retrieve a list of key rings in the instance. | Manager, Reader, ReaderPlus, Writer |
 | `kms.keyrings.create` | Create a key ring in the instance. | Manager, Writer |
 | `kms.keyrings.delete` | Delete a key ring in the instance. | Manager |
@@ -5640,7 +5453,6 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 108. Service roles - Event Streams" caption-side="top"}
@@ -5663,7 +5475,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `messagehub.schema.write` | Create a schema/schema version | Manager, Writer |
 | `messagehub.schema.manage` | Delete a schema/schema version | Manager |
 | `messagehub.cluster.manage` | Manage the configuration of an Event Streams instance | Manager |
-| `messagehub.config.read` | Configuration Information Point API access | Manager, Reader, Service Configuration Reader, Writer |
+| `messagehub.config.read` | Configuration Information Point API access | Manager, Reader, Writer |
 {: caption="Table 108. Service actions - Event Streams" caption-side="top"}
 {: #actions-table108}
 {: tab-title="Actions"}
@@ -5857,17 +5669,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 111. Service roles - Migration Services for IBM Cloud" caption-side="top"}
-{: #service-roles-table111}
-{: tab-title="Service roles"}
-{: tab-group="migrationtool-from-wanclds"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `migrationtool-from-wanclds.dashboard.view` |  | Administrator, Editor, Operator |
@@ -6057,17 +5858,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="neuvector-container-security"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 117. Service roles - NeuVector Container Security Platform" caption-side="top"}
-{: #service-roles-table117}
-{: tab-title="Service roles"}
-{: tab-group="neuvector-container-security"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6328,17 +6118,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 126. Service roles - PX-Backup By Portworx" caption-side="top"}
-{: #service-roles-table126}
-{: tab-title="Service roles"}
-{: tab-group="px-backup"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `px-backup.dashboard.view` |  | Administrator, Editor, Operator |
@@ -6425,17 +6204,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="robin-storage"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 129. Service roles - Robin CNS" caption-side="top"}
-{: #service-roles-table129}
-{: tab-title="Service roles"}
-{: tab-group="robin-storage"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6602,7 +6370,6 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 132. Service roles - Schematics" caption-side="top"}
@@ -6627,7 +6394,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `schematics.action.read` | Read the Action definition | Manager, Reader, Writer |
 | `schematics.action.delete` | Delete the Action definition | Manager |
 | `schematics.settings-kms.discover` | Discover KMS instances for Schematics settings | Administrator |
-| `schematics.settings-kms.read` | Read the Schematics KMS settings | Administrator, Editor, Manager, Operator, Reader, Service Configuration Reader, Viewer, Writer |
+| `schematics.settings-kms.read` | Read the Schematics KMS settings | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
 | `schematics.settings-kms.update` | Update the Schematics KMS settings | Administrator |
 | `schematics.environment.create` | Create an Environment | Manager |
 | `schematics.environment.update` | Update the Environment | Manager, Writer |
@@ -6779,6 +6546,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `security-advisor.keys.delete` | Delete BYOK configurations | Manager |
 | `security-advisor.keys.read` | Read BYOK/KYOK configurations | Manager, Reader, Writer |
 | `security-advisor.keys.write` | Create BYOK configuration | Manager |
+| `security-advisor.activity-insights-cos.read` | Read cos bucket details for activity insights | Manager, Reader, Writer |
+| `security-advisor.network-insights-cos.read` | Read cos bucket details for network insights | Manager, Reader, Writer |
+| `security-advisor.activity-insights-configuration.read` | Read configuration details for activity insights | Manager, Reader, Writer |
+| `security-advisor.network-insights-configuration.read` | Read configuration details for network insights | Manager, Reader, Writer |
+| `security-advisor.activity-insights-configuration.udpate` | Update configuration details for activity insights | Manager |
+| `security-advisor.network-insights-configuration.udpate` | Update configuration details for network insights | Manager |
 {: caption="Table 134. Service actions - Security Advisor" caption-side="top"}
 {: #actions-table134}
 {: tab-title="Actions"}
@@ -7133,17 +6906,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 144. Service roles - Toolchain" caption-side="top"}
-{: #service-roles-table144}
-{: tab-title="Service roles"}
-{: tab-group="toolchain"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `toolchain.dashboard.view` | View instances of the Toolchain service. | Administrator, Editor, Operator |
@@ -7152,7 +6914,6 @@ Review the available platform and service roles and the actions mapped to each t
 | `toolchain.instance.create-bindings` | Add a tool integration to a toolchain within a resource group. | Administrator, Editor |
 | `toolchain.instance.delete-bindings` | Remove a tool integration from a toolchain within a resource group. | Administrator, Editor |
 | `toolchain.instance.list-bindings` | View the tool integrations that are contained in a toolchain within a resource group. | Administrator, Editor, Viewer |
-| `toolchain.config.read` | Configuration Information Point API access for Security and Compliance Center Integration (SCC) | Service Configuration Reader |
 {: caption="Table 144. Service actions - Toolchain" caption-side="top"}
 {: #actions-table144}
 {: tab-title="Actions"}
@@ -7166,7 +6927,6 @@ Review the available platform and service roles and the actions mapped to each t
 | Role | Description |
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
 {: caption="Table 145. Service roles - Transit Gateway" caption-side="top"}
 {: #service-roles-table145}
@@ -7178,7 +6938,6 @@ Review the available platform and service roles and the actions mapped to each t
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `transit.transit.manage` | Transit service manager | Manager |
-| `transit.config.read` | Configuration Information Point API Access | Service Configuration Reader |
 {: caption="Table 145. Service actions - Transit Gateway" caption-side="top"}
 {: #actions-table145}
 {: tab-title="Actions"}

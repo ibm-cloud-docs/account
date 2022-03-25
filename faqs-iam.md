@@ -5,7 +5,8 @@
 copyright:
 
   years: 2018, 2022
-lastupdated: "2022-03-18"
+lastupdated: "2022-03-25"
+
 
 keywords: frequently asked questions for iam, iam faq, iam questions, identity and access management questions
 
@@ -193,7 +194,6 @@ The account owner can remove any users from the account, and any user with the f
 ## How do I require IBMid multifactor authentication for my account?
 {: #multi-factor}
 {: faq}
-{: support}
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Settings**.
 2. From the Account login section, select **Update** to select MFA for all users or non-federated users only.
@@ -355,3 +355,4 @@ For more information, see [Using Trusted Profiles in your Kubernetes and OpenShi
 {: faq}
 
 To view a list of dynamic members in an access group, go to **Manage** > **Access (IAM)** > **Access groups** in the {{site.data.keyword.cloud_notm}} console. Select an access group and click **Users**. Dynamically added users are indicated by the type `Dynamic`. For more information, see [Viewing dynamic members of access groups](/docs/account?topic=account-rules&interface=ui#view-dynamic-users)
+

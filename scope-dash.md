@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021 
-lastupdated: "2021-09-24"
+  years: 2021, 2022 
+lastupdated: "2022-03-23"
 
 keywords: dashboard, widgets display, manage visibility, customize, console, dashboard templates 
 
@@ -49,7 +49,7 @@ To begin creating a dashboard, complete the following steps:
 Any dashboard that is shared with you appears on your dashboards page. 
 {: note}
 
-### Managing your dashbaord
+### Managing your dashboard
 {: dash-manage}
 
 After you create a dashboard, you can manage your dashboard by in the {{site.data.keyword.Bluemix_notm}} console by going to **Manage** > **Account**, and selecting **Account resources** > **Dashboards**. Or, from your dashboard click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Manage my dashboards**.
