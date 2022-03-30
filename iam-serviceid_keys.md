@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2022
-lastupdated: "2022-02-21"
+lastupdated: "2022-03-30"
 
 keywords: service ID, service ID API key, lock service ID API key, delete service ID API key
 
@@ -11,19 +11,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Managing service ID API keys
 {: #serviceidapikeys}
@@ -64,6 +52,16 @@ Create an API key to associate with a service ID in the console:
 For security reasons, the API key is only available to be copied or downloaded at the time of creation. If the API key is lost, you must create a new API key.
 {: note}
 
+## Creating an API key for a service ID by using the CLI
+{: #create_service_key_cli}
+{: cli}
+
+To create an API key for a service ID by using the CLI, you can use the [ibmcloud iam service-api-key-create](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_service_api_key_create) command.
+
+```bash
+ibmcloud iam service-api-key-create NAME (SERVICE_ID_NAME|SERVICE_ID_UUID) [-d, --description DESCRIPTION] [--file FILE] [-f, --force] [--lock]
+```
+{: codeblock}
 
 ## Updating an API key for a service ID by using the cosole
 {: #update_service_key}
