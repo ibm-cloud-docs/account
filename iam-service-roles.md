@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-03-28"
+lastupdated: "2022-03-30"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1456,6 +1456,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `POST /v5/:platform/deployments/:deployment_id/configure_sets` | Configures db2set parameters | Administrator, Editor, Operator, Viewer |
 | `GET /v4/:platform/deployments/:deployment_id/configure_sets` | Retrieves configured parameters | Administrator, Editor, Operator, Viewer |
 | `GET /v5/:platform/deployments/:deployment_id/configure_sets` | Retrieves configured parameters | Administrator, Editor, Operator, Viewer |
+| `GET /v4/:platform/deployments/:deployment_id/task_infos` | Read all deployment tasks metadata | Administrator, Editor, Operator, Viewer |
+| `GET /v4/:platform/task_infos/:task_id` | Read a Task metadata
+ | Administrator, Editor, Operator, Viewer |
 {: caption="Table 29. Service actions - Db2 on Cloud" caption-side="top"}
 {: #actions-table29}
 {: tab-title="Actions"}
