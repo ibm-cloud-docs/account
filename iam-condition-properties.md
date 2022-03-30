@@ -4,7 +4,7 @@ copyright:
 
   years: 2022
 
-lastupdated: "2022-03-13"
+lastupdated: "2022-03-30"
 
 keywords: trusted profile, dynamic rule, operators, rules, conditions, properties, IAM
 
@@ -60,7 +60,7 @@ You can think of a dynamic rule or trusted profile condition as a key:value pair
 | Not Equals             | Negated case-sensitive string comparison. Boolean or number values are converted into a string before comparison. | primaryGroup NotEquals “Admins” |
 | Equals Ignore Case     | Case-insensitive string comparison. Boolean or number values are converted into a string before comparison. | isManager EqualsIgnoreCase “tRuE” |
 | Not Equals Ignore Case | Negated case-insensitive string comparison. Boolean or number values are converted into a string before comparison.	 | is_teamlead NotEqualsIgnoreCase “TrUe” |
-| Contains               | Determines by using the comparator Equals if the value that is provided is part of the attribute in the login message. `Contains` can be applied only on attributes that contain arrays of strings, numbers, or Booleans. | `group` contains “Admins” |
+| Contains               | If the attribute is an array of strings, numbers, or Booleans, `Contains` will determine by using the comparator Equals if the value that is provided is part of the array in the login message. If the attribute is a single string instead, `Contains` will determine if the value that is provided is contained in the string attribute in the login message. | `group` contains “Admins” |
 | In                     | Short notation for multiple Equal operators. Compares the value in the login message attribute with the list of potential values in this rule. Boolean or numbers are converted to a string before comparison. | jobRole in [“Manager”,”Director”,”Team-Lead”] |
 {: caption="Table 1. Available comparators for conditions" caption-side="top"}
 
