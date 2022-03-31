@@ -2,10 +2,9 @@
 
 copyright:
 
-  years: 2018, 2021
+  years: 2018, 2022
 
-
-lastupdated: "2021-09-24"
+lastupdated: "2022-03-31"
 
 keywords: specific IP addresses, IP addresses, restrict IP access, IP address access, allow IP access
 
@@ -13,19 +12,12 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:ui: .ph data-hd-interface='ui'}
-{:terraform: .ph data-hd-interface='terraform'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Allowing specific IP addresses 
 {: #ips}
 
-By default, all IP addresses can be used to log in to the {{site.data.keyword.cloud}} console and access classic infrastructure APIs. You can specify which IP addresses have access and all other IP addresses are restricted. You can specify this access at the user level or at the account level. 
+By default, all IP addresses can be used to log in to the {{site.data.keyword.cloud}} console and access classic infrastructure APIs. You can specify which IP addresses have access and all other IP addresses are restricted. You can specify this access at the user level or at the account level. Currently, only public IP addresses are supported. 
 {: shortdesc}
 
 If an IP address restriction is defined for both the account and the user, the IP address needs to match both specifications to be able to generate an IAM token.
@@ -50,7 +42,7 @@ To restrict a user to using only specific IP addresses, complete the following s
 4. For **Cloud platform**, enter the IP addresses. The IP addresses listed are the only ones from which this user can log in to {{site.data.keyword.Bluemix}}.
 5. For **Classic infrastructure**, enter the IP addresses. The IP addresses listed are the only ones from which the user can call a classic infrastructure API.
 
-      You can enter a single IP address `192.168.0.0`, an IP address range `192.168.0.1 - 192.168.2.53`, or IP subnets `192.168.0.0/16`. Make sure to use IPv4 or IPv6 addresses, and to separate multiple values with a comma.
+      You can enter a single IP address `17.5.7.8`, an IP address range `17.5.7.8 - 17.5.9.5`, or IP subnets `17.5.7.8.0/16`, or a [network zone](/docs/account?topic=account-context-restrictions-whatis#network-zones-whatis) `networkZoneName`. Make sure to use IPv4 or IPv6 addresses, and to separate multiple values with a comma. If there is already an IP address restriction that exists, the resource overrides the restriction.
       {: note}
 
 6. Click **Save**. 
@@ -71,7 +63,7 @@ To restrict all users to using only specific IP addresses, complete the followin
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Settings**.
 1. From the Account restrictions section, turn on the **IP address access** setting. 
 1. Enter the IP addresses. The IP addresses listed are the only ones from which users in the account can log in to {{site.data.keyword.Bluemix}}.
-   You can enter a single IP address `192.168.0.0`, an IP address range `192.168.0.1 - 192.168.2.53`, a CIDR block `192.168.0.0/16`, or a [network zone](/docs/account?topic=account-context-restrictions-whatis#network-zones-whatis) `networkZoneName`. Make sure to use IPv4 or IPv6 addresses, and to separate multiple values with a comma.
+   You can enter a single IP address `17.5.7.8`, an IP address range `17.5.7.8 - 17.5.9.5`, or IP subnets `17.5.7.8.0/16`, or a [network zone](/docs/account?topic=account-context-restrictions-whatis#network-zones-whatis) `networkZoneName`. Make sure to use IPv4 or IPv6 addresses, and to separate multiple values with a comma. If there is already an IP address restriction that exists, the resource overrides the restriction.
    {: note}
 
 1. Click **Save**. 
@@ -90,29 +82,25 @@ To restrict all users to using only specific IP addresses, complete the followin
 2. Enter the IP addresses that you want to restrict all users to using. The IP addresses listed are the only ones from which users in the account can log in to {{site.data.keyword.Bluemix}}.
    ```terraform
     resource "ibm_iam_account_settings" "iam_account_settings_instance" {
-      allowed_ip_addresses = "192.168.0.0, 192.168.0.1 - 192.168.2.53, 192.168.0.0/16"
+      allowed_ip_addresses = "17.5.7.8, 17.5.7.8 - 17.5.9.5, 17.5.7.8.0/16"
    }
    ```
    {: pre}
 
 3. Create a Terraform execution plan.
-
-   ```terraform
+   ```bash
    terraform plan
    ```
    {: pre}
 
 4. Update the allowed IP addressees in the account. Note that this process might take a few minutes to complete.
-
-   ```terraform
+   ```bash
    terraform apply
    ```
    {: pre}
 
 For more information, see the [Terraform documentation](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_account_settings#allowed_ip_addresses). 
 
-You can enter a single IP address `192.168.0.0`, an IP address range `192.168.0.1 - 192.168.2.53`, a CIDR block `192.168.0.0/16`, or a [network zone](/docs/account?topic=account-context-restrictions-whatis#network-zones-whatis) `networkZoneName`. Make sure to use IPv4 or IPv6 addresses, and to separate multiple values with a comma. If there is already an IP address restriction that exists, the resource overrides the restriction. 
+You can enter a single IP address `17.5.7.8`, an IP address range `17.5.7.8 - 17.5.9.5`, or IP subnets `17.5.7.8.0/16`, or a [network zone](/docs/account?topic=account-context-restrictions-whatis#network-zones-whatis) `networkZoneName`. Make sure to use IPv4 or IPv6 addresses, and to separate multiple values with a comma. If there is already an IP address restriction that exists, the resource overrides the restriction. 
 {: note}
-
-
 
