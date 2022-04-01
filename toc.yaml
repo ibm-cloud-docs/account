@@ -212,6 +212,9 @@ toc:
               label: Sharing products
               topics:
               - catalog-add-private.md
+              - catalog-product-details.md
+              - catalog-translate-details.md
+              - catalog-control-format.md
               - catalog-custom-private.md
               - catalog-enterprise-filters.md
               - catalog-enterprise-share.md
