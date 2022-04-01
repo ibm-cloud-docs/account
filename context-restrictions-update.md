@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2021
+  years: 2021, 2022
 
-lastupdated: "2021-09-27"
+lastupdated: "2022-04-01"
 
 keywords: update network access, network access rule, network zone
 
@@ -12,20 +12,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:pre: .pre}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Updating context-based restrictions
 {: #context-restrictions-update}
@@ -35,7 +22,7 @@ You can update context rules at any time by providing a new description, which h
 
 To update a context-based restrictions rule, you must be assigned the administrator role on the account management service.
 
-## Updating context-based restrictions
+## Updating rules
 {: #context-restrictions-update-rules}
 
 To edit the context-based restrictions on your cloud resources, complete the following steps.

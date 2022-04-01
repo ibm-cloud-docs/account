@@ -15,16 +15,8 @@ completion-time: 45m
 
 ---
 
-{:shortdesc: .shortdesc}
-{:screen: .screen}  
-{:codeblock: .codeblock}  
-{:pre: .pre}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:beta: .beta}
-{:external: target="_blank" .external}
-{:step: data-tutorial-type='step'} 
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Onboarding a Certified Operator from a {{site.data.keyword.redhat_notm}} registry 
 {: #catalog-opbundle-tutorial}

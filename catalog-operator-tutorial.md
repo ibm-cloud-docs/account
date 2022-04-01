@@ -15,16 +15,7 @@ completion-time: 45m
 
 ---
 
-{:shortdesc: .shortdesc}
-{:screen: .screen}  
-{:codeblock: .codeblock}  
-{:pre: .pre}
-{:tip: .tip}
-{:note: .note}
-{:beta: .beta}
-{:important: .important}
-{:external: target="_blank" .external}
-{:step: data-tutorial-type='step'} 
+{{site.data.keyword.attribute-definition-list}}
 
 # Onboarding an Operator from a GitHub repository
 {: #catalog-operator-gh}

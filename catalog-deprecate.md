@@ -11,16 +11,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:beta: .beta}
-{:important: .important}
-{:download: .download}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 # Deprecating a private product
 {: #deprecate-product}

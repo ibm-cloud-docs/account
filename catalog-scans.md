@@ -10,16 +10,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:external: target="_blank" .external}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:beta: .beta}
-{:important: .important}
-{:download: .download}
+{{site.data.keyword.attribute-definition-list}}
 
 # Scanning software for vulnerabilities
 {: #scans}

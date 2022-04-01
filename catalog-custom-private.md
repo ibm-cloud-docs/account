@@ -10,22 +10,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:external: target="_blank" .external}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:terraform: .ph data-hd-interface='terraform'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Customizing the {{site.data.keyword.cloud_notm}} catalog and private catalogs for users in your account
 {: #restrict-by-user}

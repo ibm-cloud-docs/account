@@ -13,16 +13,7 @@ completion-time: 20m
 
 ---
 
-{:shortdesc: .shortdesc}
-{:screen: .screen}  
-{:codeblock: .codeblock}  
-{:pre: .pre}
-{:tip: .tip}
-{:note: .note}
-{:external: target="_blank" .external}
-{:step: data-tutorial-type='step'}
-{:video: .video}
-
+{{site.data.keyword.attribute-definition-list}}
 
 # Leveraging context-based restrictions to secure your resources
 {: #context-restrictions-tutorial}

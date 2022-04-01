@@ -10,21 +10,8 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:go: .ph data-hd-programlang='go'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:terraform: .ph data-hd-interface='terraform'}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Updating your software
 {: #update-private}
