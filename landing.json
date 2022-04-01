@@ -61,6 +61,11 @@
       "view_more": "/docs/overview?topic=overview-whatsnew",
       "tiles": [
         {
+          "date": "25 March 2022",
+          "title": "Trusted profiles are now members of access groups",
+          "description": "You can now add trusted profiles as members of access groups like other IAM identities, such as users and service IDs." 
+        },
+        {
           "date": "01 March 2022",
           "title": "Use feature and subscription codes to create new accounts",
           "description": "When you register for a new IBM Cloud account, you can use a feature code that you received from participating in a special event or a subscription code that you received by email. Instead of verifying your identity by entering your credit card information, click the option to Register with a code to complete the set up of your new account." 
@@ -69,11 +74,6 @@
           "date": "17 December 2021",
           "title": "Restricting domains for account invitations",
           "description": "You can now restrict membership to your account based on the domain of the users by creating an allowlist. This way, only users with a specific domain or domains can be invited to the account."
-        },
-        {
-          "date": "05 October 2021",
-          "title": "Filtering the IBM Cloud catalog by specific providers",
-          "description": "The latest enhancements to IBM Cloud catalog include support for filtering products by provider name. If you're looking for a specific provider's products or curious about how many products that a provider offers, you can use the Provider filter to narrow down your search."
         }
       ]
     }
