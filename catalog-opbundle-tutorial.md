@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-03-01"
+lastupdated: "2022-04-01"
 
 keywords: private catalog, software, onboard, operator, validate, test, Red Hat OpenShift operator, operator bundle
 
@@ -115,6 +115,18 @@ Users can view installation instructions from the Readme tab of the Operator bun
 2. Preview how the information in the readme file will be displayed to users when they are installing the Operator bundle.
 3. If you need to make changes, edit the information in the source file and import the updated Operator bundle to your private catalog. 
 4. Click **Next**.
+
+## Manage security and compliance controls
+{: #catalog-opbundle-controls}
+{: step}
+
+Controls are safeguards that are used to meet security and compliance requirements. Any applicable controls that are included in your readme file are listed in the Security and compliance controls table. You can add controls that are not included in your readme file. 
+
+1. Click **Add controls**. 
+1. Choose a profile. 
+1. Select the controls that you want to add to your version. 
+1. Click **Add**.
+1. Click **Next**.
 
 ## Validate your Operator bundle
 {: #catalog-opbundle-validate}

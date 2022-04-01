@@ -130,7 +130,19 @@ When users access your Operator from your account, they can view installation in
 1. From the Edit readme tab, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit").
 2. Preview how the information in the readme file will be displayed to users when they are installing the Operator.
 3. If you need to make changes, edit the information in your source and import the updated software to your private catalog. 
-4. Click **Next**.  
+4. Click **Next**.
+
+## Manage security and compliance controls
+{: #catalog-operator-controls}
+{: step}
+
+Controls are safeguards that are used to meet security and compliance requirements. Any applicable controls that are included in your readme file are listed in the Security and compliance controls table. You can add controls that are not included in your readme file. 
+
+1. Click **Add controls**. 
+1. Choose a profile. 
+1. Select the controls that you want to add to your version. 
+1. Click **Add**.
+1. Click **Next**.
 
 ## Validate the Operator
 {: #catalog-operator-validate}

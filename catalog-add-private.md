@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-03-09"
+lastupdated: "2022-04-01"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -175,6 +175,19 @@ When users install the software, they can view installation instructions from th
 1. From the Edit readme tab, preview how the information in the readme file will be displayed to users when they install the software.
 1. To make updates, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") next to the Readme section title.
 1. Click **Save**.
+1. Click **Next**.
+
+
+## Manage security and compliance controls
+{: #catalog-manage-controls}
+{: ui}
+
+Controls are safeguards that are used to meet security and compliance requirements. Any applicable controls that are included in your readme file are listed in the Security and compliance controls table. You can add controls that are not included in your readme file. 
+
+1. Click **Add controls**. 
+1. Choose a profile. 
+1. Select the controls that you want to add to your version. 
+1. Click **Add**.
 1. Click **Next**.
 
 ## Validating the software 

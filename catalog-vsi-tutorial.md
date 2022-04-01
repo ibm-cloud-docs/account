@@ -131,6 +131,18 @@ The TGZ file that you imported to your private catalog includes a readme file th
 
 1. Click **Save** > **Next**.
 
+## Manage security and compliance controls
+{: #catalog-vsi-controls}
+{: step}
+
+Controls are safeguards that are used to meet security and compliance requirements. Any applicable controls that are included in your readme file are listed in the Security and compliance controls table. You can add controls that are not included in your readme file. 
+
+1. Click **Add controls**. 
+1. Choose a profile. 
+1. Select the controls that you want to add to your version.  
+1. Click **Add**.
+1. Click **Next**.
+
 ## Validate the virtual server image
 {: #catalog-vsi-validate}
 {: step}
