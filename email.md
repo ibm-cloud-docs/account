@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2022
-lastupdated: "2022-02-18"
+lastupdated: "2022-04-01"
 
 keywords: platform notifications, email notifications, IBM Cloud notifications, notification preferences, email preferences, user notifications, infrastructure notifications
 
@@ -16,7 +16,7 @@ subcollection: account
 # Setting email preferences for notifications
 {: #email-prefs}
 
-{{site.data.keyword.Bluemix_notm}} users can choose to receive email notifications about {{site.data.keyword.Bluemix_notm}} platform-related items, such as announcements, billing and usage, additional notification preferences, and ordering. Users can also update their preferences to receive email notifications about resource-related items, such as incidents, maintenance, security bulletins, or resource activity on the Notification preferences page. These notifications are for only the resources in use.
+{{site.data.keyword.Bluemix_notm}} users can choose to receive email notifications about {{site.data.keyword.Bluemix_notm}} platform-related items, such as announcements, billing and usage, additional notification preferences, and ordering. Users can also update their preferences to receive email notifications about resource-related items, such as incidents, maintenance, security bulletins, or resource activity on the [Notification preferences page](/user/notifications){: external}. These notifications are for only the resources in use.
 {: shortdesc}
 
 To view the Notifications preferences page, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") in the {{site.data.keyword.Bluemix_notm}} console, and then click **Profile** > **Notification preferences**.
@@ -109,7 +109,7 @@ Then, go to **Devices** to assign a user access to the specific devices and devi
 
 Users can receive an invitation link in their notifications and by email to join an account, if they are already members of IBM Cloud. User managers can invite any user to the IBM Cloud platform if they have an email address to use for an invite. 
 
-On the {{site.data.keyword.Bluemix_notm}} [Notifications page](https://cloud.ibm.com/user/notifications){: external}, you can use the search field to locate an invitation or filter by the notification type called account. You cannot set email preferences for receiving account type notifications. 
+On the {{site.data.keyword.Bluemix_notm}} [Notifications page](/notifications){: external}, you can use the search field to locate an invitation or filter by the notification type called account. You cannot set email preferences for receiving account type notifications. 
 
 Users already present in IBM Cloud will receive an email and a notification with an invitation link. If an email address does not correspond to a known user in IBM Cloud, an invitation email gets sent to accept, but users can also choose not to accept the invitation. For more information, see [Viewing notifications](/docs/get-support?topic=get-support-viewing-notifications) and [Inviting users to an account](/docs/account?topic=account-iamuserinv).
 
