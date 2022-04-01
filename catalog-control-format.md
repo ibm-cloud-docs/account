@@ -6,7 +6,9 @@ copyright:
 
 lastupdated: "2022-04-01"
 
-keywords: software onboarding, controls, requirements, security, compliance, partners, 
+keywords: software onboarding, controls, requirements, security, compliance, partners 
+
+subcollection: account
 
 ---
 
