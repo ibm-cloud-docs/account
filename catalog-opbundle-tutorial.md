@@ -70,7 +70,7 @@ Private catalogs provide a way for you to make your own products available to us
 1. On the Private products page, click **Add**.
 1. Select **Operator from {{site.data.keyword.redhat_notm}} registry** as your deployment method. 
 1. Select **Certified** as your {{site.data.keyword.redhat_notm}} repository. 
-1. Select your Operator bundle. For example, for the purposes of this tutorial, you can select **Akka Cluster Operator** as your Operator.
+1. Select your Operator bundle. For example, for the purposes of this tutorial, you can select **Add a Cluster Operator** as your Operator.
 1. Select the Operator bundle version that you would like to import.
 1. Enter the software version that the Operator bundle installs in the format of major version, minor version, and revision. For example, you can use Operator version `1.0.0` to install software version `2.0.0`. 
 1. Click **Add version**.
@@ -81,18 +81,6 @@ Private catalogs provide a way for you to make your own products available to us
 
 1. From the Version list table, click the row that contains your operator.
 1. Review your version details from the Review the version details section. There are no actions that you need to take. When you are ready to move on, click **Next**.
-
-## Add security and compliance controls
-{: #catalog-opbundle-controls}
-{: step}
-
-Controls are safeguards that are used to meet security and compliance requirements. Any applicable controls that are included in your readme file are listed in the Security and compliance controls table. You can add controls that are not included in your readme file. 
-
-1. Click **Add controls**. 
-1. Choose a profile. 
-1. Select the controls that you want to add to your version. 
-1. Click **Add** 
-1. Click **Next**.
 
 ## Add end user license agreements
 {: #catalog-opbundle-license}
