@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-03-31"
+lastupdated: "2022-04-03"
 
 keywords: catalog, private catalogs, visibility, filter catalog, hide product, catalog filtering, enterprise, account group, child account, account, restrict
 
@@ -241,7 +241,7 @@ The following table lists the filters that you can use to customize which produc
 | Red Hat OpenShift | Used to create a {{site.data.keyword.openshiftshort}} cluster of compute hosts to deploy and manage containerized apps on {{site.data.keyword.cloud_notm}}. |
 | vCenter Server | Provides deployment and management of VMware virtualized environments. |
 {: caption="Table 1. Options for filtering by deployment target" caption-side="top"}
-{: #swdeploymenttargetfilters}
+{: #deploymenttarget-custom}
 {: tab-title="Deployment target"}
 {: tab-group="customcatalogfilters"}
 {: class="simple-tab-table"}
