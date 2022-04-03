@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-03-01"
+lastupdated: "2022-04-01"
 
 keywords: onboard software, operator, validate, test, Red Hat OpenShift cluster, sample Node-RED Operator, CSV file, CSV, operator bundle, TGZ file
 
@@ -97,18 +97,6 @@ When you create your {{site.data.keyword.openshiftlong}} cluster, the cluster in
 1. Enter the name and value of the image pull secret. 
 1. Click **Update**.
 1. From the **Image pull secret name** list, select the image pull secret that you just added. 
-1. Click **Next**.
-
-## Add security and compliance controls
-{: #catalog-operator-controls}
-{: step}
-
-Controls are safeguards that are used to meet security and compliance requirements. Any applicable controls that are included in your readme file are listed in the Security and compliance controls table. You can add controls that are not included in your readme file. 
-
-1. Click **Add controls**. 
-1. Choose a profile. 
-1. Select the controls that you want to add to your version. 
-1. Click **Add** 
 1. Click **Next**.
 
 ## Set the license requirements
