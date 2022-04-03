@@ -91,7 +91,7 @@ From the Configure product tab, you can review your version details. There are n
 {: #catalog-operator-secret}
 {: step}
 
-When you create your {{site.data.keyword.openshiftlong}} cluster, the cluster includes an IAM service ID that is given reader access to {{site.data.keyword.registrylong_notm}}. The service ID credentials are authenticated in a non-expiring service ID API key that is stored in image pull secrets in your cluster. As part of configuring the deployment details, you set a pull secret that's used to access and pull your images from the private {{site.data.keyword.registrylong_notm}} repository. 
+When you create your {{site.data.keyword.openshiftlong}} cluster, the cluster includes an IAM service ID that is given reader access to {{site.data.keyword.registrylong_notm}}. The service ID credentials are authenticated in a nonexpiring service ID API key that is stored in image pull secrets in your cluster. As part of configuring the deployment details, you set a pull secret that's used to access and pull your images from the private {{site.data.keyword.registrylong_notm}} repository. 
 
 1. From the Set an image pull secret section, click **Add image pull secret**.
 1. Enter the name and value of the image pull secret. 
@@ -113,7 +113,7 @@ If users are required to accept any license agreements beyond the {{site.data.ke
 {: #catalog-operator-readme}
 {: step}
 
-When users access your Operator from your account, they can view installation instructions from the Readme tab of Operator's details page in your private catalog. The readme information is automatically generated from the details in your TGZ or CSV file. 
+When users access your Operator from your account, they can view installation instructions from the Readme tab of Operator's details page in your private catalog. The readme file information is automatically generated from the details in your TGZ or CSV file. 
 
 1. From the Edit readme tab, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit").
 2. Preview how the information in the readme file will be displayed to users when they are installing the Operator.
