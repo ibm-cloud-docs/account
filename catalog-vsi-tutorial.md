@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-03-01"
+lastupdated: "2022-04-01"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog
 
@@ -97,18 +97,6 @@ The tutorial includes steps for deploying a virtual server image to a target {{s
 | `vsi_security_group` | The name of the security group that is created. | True | False |
 {: caption="Table 1. Parameters that you need to configure" caption-side="bottom"}
 
-## Add security and compliance controls
-{: #catalog-vsi-controls}
-{: step}
-
-Controls are safeguards that are used to meet security and compliance requirements. Any applicable controls that are included in your readme file are listed in the Security and compliance controls table. You can add controls that are not included in your readme file. 
-
-1. Click **Add controls**. 
-1. Choose a profile. 
-1. Select the controls that you want to add to your version.  
-1. Click **Add** 
-1. Click **Next**. 
-  
 ## Set the license requirements
 {: #catalog-vsi-cfg-license}
 {: step}
