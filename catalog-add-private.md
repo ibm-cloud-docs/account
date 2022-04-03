@@ -111,7 +111,6 @@ Complete the following steps to import software to your private catalog:
 1. Review the version details, and click **Next**.
 1. Configure the preinstallation, and click **Next**.
 1. Configure the deployment details by setting the access that's required to run the installation script and setting the deployment values, and click **Next**. 
-1. Review and add security and compliance controls, and click **Next**.
 
 ### Terraform
 {: #catalog-config-tf}
@@ -120,7 +119,6 @@ Complete the following steps to import software to your private catalog:
 1. From the version list that's displayed on the product details page, click the row that contains your software.
 1. Review the version details, and click **Next**.
 1. Configure the deployment values, and click **Next**. 
-1. Review and add security and compliance controls, and click **Next**.
 
 ### Operator from GitHub repository
 {: #catalog-config-opgh}
@@ -128,7 +126,6 @@ Complete the following steps to import software to your private catalog:
 
 1. From the version list that's displayed on the product details page, click the row that contains your software.
 1. Review the version details, and click **Next**.
-1. Review and add security and compliance controls, and click **Next**.
 
 
 ### Operator from Red Hat registry
@@ -137,7 +134,6 @@ Complete the following steps to import software to your private catalog:
 
 1. From the version list that's displayed on the product details page, click the row that contains your software.
 1. Review the version details, and click **Next**.
-1. Review and add security and compliance controls, and click **Next**.
 
 ### OVA image
 {: #catalog-config-ova}
@@ -145,7 +141,6 @@ Complete the following steps to import software to your private catalog:
 
 1. From the version list that's displayed on the product details page, click the row that contains your software.
 1. Review the version details, and click **Next**.
-1. Review and add security and compliance controls, and click **Next**.
 
 ### Virtual server image with Terraform
 {: #catalog-config-vsi}
@@ -154,7 +149,6 @@ Complete the following steps to import software to your private catalog:
 1. From the version list that's displayed on the product details page, click the row that contains your software.
 1. Review the version details, and click **Next**.
 1. Configure the deployment values, and click **Next**.
-1. Review and add security and compliance controls, and click **Next**.
 
 ## Adding license agreements
 {: #catalog-add-license}
