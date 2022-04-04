@@ -59,6 +59,7 @@ toc:
           label: Sharing software with users in your account
           topics:
           - catalog-vsi-tutorial.md
+          - catalog-vsipower-tutorial.md
           - catalog-operator-tutorial.md
           - catalog-opbundle-tutorial.md
           - catalog-terraform-template-tutorial.md
