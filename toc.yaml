@@ -104,6 +104,7 @@ toc:
               - trustedprofile-update.md
               - trustedprofile-remove.md
               - trustedprofile-iam-token.md
+              - trustedprofile-monitor.md
           - topicgroup:
               label: Controlling context-based restrictions
               topics:

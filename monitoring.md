@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2022-03-25"
+lastupdated: "2022-04-04"
 
 keywords: manage account, account events, track events, account tracking, monitoring, catalog tracking, catalog management
 
@@ -40,7 +40,7 @@ You must create an instance of the {{site.data.keyword.at_short}} service in the
 * Creating, updating, or deleting access policies
 * Creating, updating, or deleting trusted profiles
 * Logging in to {{site.data.keyword.Bluemix_notm}} by using an API key, authorization code, passcode, password, or an API key associated with a service ID
-* Logging in to {{site.data.keyword.Bluemix_notm}} by using a trusted profile
+* Logging in to {{site.data.keyword.Bluemix_notm}} by using a trusted profile. For more information, see [Monitoring login sessions for trusted profiles](/docs/account?topic=account-trusted-profile-monitor).
 
 For more information, see [IAM events](/docs/activity-tracker?topic=activity-tracker-at_events_iam).
 

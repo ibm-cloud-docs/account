@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-06-11"
+  years: 2020, 2022
+lastupdated: "2022-04-04"
 
 keywords: user session, end user session, terminate user login, manage account logins, revoke login
 
@@ -10,13 +10,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 # Monitoring login sessions
 {: #end-user-sessions}
@@ -28,6 +22,8 @@ If you are the account owner or assigned the administrator role for the IAM Iden
 
 You can review and end your own user sessions from your Profile page. In the {{site.data.keyword.cloud_notm}} console, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Profile** > **Sessions**.
 {: tip}
+
+You can also monitor logins for trusted profiles. For more information, see [Monitoring login sessions for trusted profiles](/docs/account?topic=account-trusted-profile-monitor).
 
 ## Reviewing user login sessions
 {: #review-sessions}
