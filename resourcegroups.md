@@ -371,7 +371,7 @@ See [Managing catalog settings](/docs/account?topic=account-filter-account#set-p
 {: #view_rg_resources}
 {: ui}
 
-To easily view the resources that are assigned to a resource group, go to the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **My resources**. Then, filter by resource group from the My resources page. 
+To easily view the resources that are assigned to a resource group, go to the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **Resource list**. Then, filter by resource group. 
 
 ## Viewing resources by using the CLI
 {: #viewing-rgs-cli}

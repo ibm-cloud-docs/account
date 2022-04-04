@@ -31,10 +31,10 @@ To use a service in a Cloud Foundry app, you must create a connection or bind th
 
 To connect a service to your app by starting from the details page for a specific service, complete the following steps:
 
-You can also create connections from your app to the service. Select your app from the My resources page, go to the **Connections** menu, and select the service.
+You can also create connections from your app to the service. Select your app from the Resource list page, go to the **Connections** menu, and select the service.
 {: note}
 
-1. On the My resources page, click **Services** and select the service that you want to access. The service details page is displayed.
+1. On the Resource list page, click **Services** and select the service that you want to access. The service details page is displayed.
 2. Click **Connections** in the navigation.
 3. Click **Create connection**.
 4. Click **Connect** for the row of the app that you want to create the connection for.

@@ -45,7 +45,7 @@ However, while the contents of each credential is unique to the service that gen
 
 Complete the following steps to add a credential to a service that is managed by IAM:
 
-1. From the My resources page, select the name of the service to open the service details page. Then, select the Credentials tab, and click **New Credential**.
+1. From the Resource list page, select the name of the service to open the service details page. Then, select the Credentials tab, and click **New Credential**.
 2. From the Add New Credential dialog, provide a **Name**.
 3. Specify the role. This value sets the IAM service access role. For more information, see [IAM Access](/docs/account?topic=account-userroles).
 4. Optionally, you can provide a Service ID by either allowing IAM to generate a unique value for you, or by providing an existing Service ID. For more information, see [Creating and working with service IDs](/docs/account?topic=account-serviceids).
@@ -322,7 +322,7 @@ After a credential is created for a service, it can be viewed at any time for us
 
 To view an existing service credential for a service, complete the following steps:
 
-1. From the My resources page, select the name of the service to open the service details page. 
+1. From the Resource list page, select the name of the service to open the service details page. 
 2. Click **Service credentials**
 3. Expand **View credentials** on the row for an existing credential.
 

@@ -43,7 +43,7 @@ For more information about creating and working with resource groups, see [Manag
 
 Migrating your Cloud Foundry services to a resource group means that the services you're using are now available for use with IAM access control and resource groups. You can take advantage of fine-grained access control by using IAM roles. You can also view usage per resource group in your account. 
 
-When you have Cloud Foundry services that can be migrated to a resource group, you receive a notification on the My resources page. For more information about the migration process, see [Migrating Cloud Foundry service instances and apps to a resource group](/docs/account?topic=account-migrate).
+When you have Cloud Foundry services that can be migrated to a resource group, you receive a notification on the Resource list page. For more information about the migration process, see [Migrating Cloud Foundry service instances and apps to a resource group](/docs/account?topic=account-migrate).
 
 ## Why can't I add a resource to a resource group?
 {: #create-add-resource}

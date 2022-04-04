@@ -56,7 +56,7 @@ You can also use API keys that are associated with service IDs that you create. 
 {{site.data.keyword.cloud_notm}} API keys can also be used to access classic infrastructure APIs.
 {: tip}
 
-Some services in {{site.data.keyword.Bluemix_notm}} might provide an API key when you work with the service that is an auto-generated API key associated with a service ID. For example, if you are viewing the offering details of a Watson service by going to the My resources page, you can create a credential that includes an API key and secret that is specific to that service on the Service credentials page.
+Some services in {{site.data.keyword.Bluemix_notm}} might provide an API key when you work with the service that is an auto-generated API key associated with a service ID. For example, if you are viewing the offering details of a Watson service by going to the Resource list page, you can create a credential that includes an API key and secret that is specific to that service on the Service credentials page.
 
 ## Working with API keys
 {: #work-with-apikeys}

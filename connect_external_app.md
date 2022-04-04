@@ -38,7 +38,7 @@ Most services don't require extra parameters, and for services that do, each ser
 
 Your application that runs outside of {{site.data.keyword.Bluemix_notm}} can now access the {{site.data.keyword.Bluemix_notm}} service.
 
-If you want to delete service instances or check the billing information, you must go back to the My resources page in the user interface to manage the service instances.
+If you want to delete service instances or check the billing information, you must go back to the Resource list page in the user interface to manage the service instances.
 {: tip}
 
 ## Connect a service to an external app by using the API
