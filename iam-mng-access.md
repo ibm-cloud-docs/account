@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2022
 
-lastupdated: "2022-03-29"
+lastupdated: "2022-04-05"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access 
 
@@ -31,7 +31,7 @@ You can assign access to resources by using two types of policies:
 If you delete or edit an existing policy for a service ID currently being used, it might cause service interruption.
 {: note}
 
-If you want to enable a user full administrator access to complete [account management tasks](/docs/account?topic=account-account-services#account-management-access), such as inviting and removing users, viewing billing and usage, managing service IDs, managing access groups, managing user access, and access to all account resources, you must assign a user the following access:
+If you want to enable a user full administrator access to complete [account management tasks](/docs/account?topic=account-account-services#account-management-access), such as inviting and removing users, viewing billing and usage, managing service IDs, managing access groups, managing user access, and access to all IAM-enabled resources, you must assign a user the following access:
 * A policy for **All Identity and Access enabled services** within the **Account** with the Administrator and Manager roles.
 * A policy with Administrator role on **All Account Management Services**.
 
