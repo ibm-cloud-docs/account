@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-03-01"
+lastupdated: "2022-04-01"
 
 keywords: onboard software, operator, validate, test, Red Hat OpenShift cluster, sample Node-RED Operator, CSV file, CSV, operator bundle, TGZ file
 
@@ -82,24 +82,12 @@ From the Configure product tab, you can review your version details. There are n
 {: #catalog-operator-secret}
 {: step}
 
-When you create your {{site.data.keyword.openshiftlong}} cluster, the cluster includes an IAM service ID that is given reader access to {{site.data.keyword.registrylong_notm}}. The service ID credentials are authenticated in a non-expiring service ID API key that is stored in image pull secrets in your cluster. As part of configuring the deployment details, you set a pull secret that's used to access and pull your images from the private {{site.data.keyword.registrylong_notm}} repository. 
+When you create your {{site.data.keyword.openshiftlong}} cluster, the cluster includes an IAM service ID that is given reader access to {{site.data.keyword.registrylong_notm}}. The service ID credentials are authenticated in a nonexpiring service ID API key that is stored in image pull secrets in your cluster. As part of configuring the deployment details, you set a pull secret that's used to access and pull your images from the private {{site.data.keyword.registrylong_notm}} repository. 
 
 1. From the Set an image pull secret section, click **Add image pull secret**.
 1. Enter the name and value of the image pull secret. 
 1. Click **Update**.
 1. From the **Image pull secret name** list, select the image pull secret that you just added. 
-1. Click **Next**.
-
-## Add security and compliance controls
-{: #catalog-operator-controls}
-{: step}
-
-Controls are safeguards that are used to meet security and compliance requirements. Any applicable controls that are included in your readme file are listed in the Security and compliance controls table. You can add controls that are not included in your readme file. 
-
-1. Click **Add controls**. 
-1. Choose a profile. 
-1. Select the controls that you want to add to your version. 
-1. Click **Add** 
 1. Click **Next**.
 
 ## Set the license requirements
@@ -116,12 +104,24 @@ If users are required to accept any license agreements beyond the {{site.data.ke
 {: #catalog-operator-readme}
 {: step}
 
-When users access your Operator from your account, they can view installation instructions from the Readme tab of Operator's details page in your private catalog. The readme information is automatically generated from the details in your TGZ or CSV file. 
+When users access your Operator from your account, they can view installation instructions from the Readme tab of Operator's details page in your private catalog. The readme file information is automatically generated from the details in your TGZ or CSV file. 
 
 1. From the Edit readme tab, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit").
 2. Preview how the information in the readme file will be displayed to users when they are installing the Operator.
 3. If you need to make changes, edit the information in your source and import the updated software to your private catalog. 
-4. Click **Next**.  
+4. Click **Next**.
+
+## Manage security and compliance controls
+{: #catalog-operator-controls}
+{: step}
+
+Controls are safeguards that are used to meet security and compliance requirements. Any applicable controls that are included in your readme file are listed in the Security and compliance controls table. You can add controls that are not included in your readme file. 
+
+1. Click **Add controls**. 
+1. Choose a profile. 
+1. Select the controls that you want to add to your version. 
+1. Click **Add**.
+1. Click **Next**.
 
 ## Validate the Operator
 {: #catalog-operator-validate}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-02-18"
+lastupdated: "2022-04-03"
 
 keywords: catalog, private catalogs, visibility, filter catalog, hide product, catalog filtering, enterprise, account group, child account, account, restrict
 
@@ -18,7 +18,12 @@ subcollection: account
 As the account owner or administrator, you can manage the settings for all catalogs across your account. Management tasks include setting the visibility of the {{site.data.keyword.cloud}} catalog and controlling access to products in the public catalog and private catalogs for users in your account.
 {: shortdesc}
 
-You need the [administrator role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management) to perform these tasks.
+## Before you begin
+{: #set-before-begin}
+
+1. Verify that you're using a Pay-As-You-Go or Subscription account. See [Viewing your account type](/docs/account?topic=account-account_settings#view-acct-type) for more details.
+
+1. Verify that you have the [administrator role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management).
 
 ## Updating the visibility of the {{site.data.keyword.cloud_notm}} catalog in the console
 {: #set-public-visibility}
@@ -52,20 +57,20 @@ If your account is a parent account in an {{site.data.keyword.cloud_notm}} enter
 Set filters at a private catalog level for fine-grained control of which products in the public catalog are available only to the users you choose.   
 
 1. Go to **Manage** > **Catalogs**, **Private catalogs** in the {{site.data.keyword.cloud_notm}} console. 
-1. Select a catalog from the list to navigate to its details page. 
+2. Select a catalog from the list to navigate to its details page. 
 
    The **Products in the {{site.data.keyword.cloud_notm}} catalog** table that's displayed on the page shows the list of products that are available at the account level. The availability is based on the filters the account owner or administrator set. Account-level filters apply to all the private catalogs in the account. 
    {: tip}
   
-1. Click **Manage filters**.
-1. Select to include or exclude all products in the public catalog. 
-1. Set one or more [filters](#catalog-filters-customize) to customize what products are available by category. 
-1. (Optional) Add exceptions to the filter rules that you set in the previous step. 
-1. Click **Update**. 
-1. Go to the Settings page and turn off the visibility of the public catalog.  
-1. To give users access to work with the products in the private catalog, assign them the [viewer role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management).
+3. Click **Manage filters**.
+4. Select to include or exclude all products in the public catalog. 
+5. Set one or more [filters](#catalog-filters-customize) to customize what products are available by category. 
+6. (Optional) Add exceptions to the filter rules that you set in the previous step. 
+7. Click **Update**. 
+8. Go to the Settings page and turn off the visibility of the public catalog.  
+9. To give users access to work with the products in the private catalog, assign them the [viewer role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management).  
 
-   For more detailed examples of how you can leverage filtering at the private catalog level, see [Customizing your private catalogs](/docs/account?topic=account-restrict-by-user).
+For more detailed examples of how you can leverage filtering at the private catalog level, see [Customizing your private catalogs](/docs/account?topic=account-restrict-by-user).
 
 ## Updating the visibility of the {{site.data.keyword.cloud_notm}} catalog by using the CLI
 {: #set-public-visibility-cli}
@@ -88,16 +93,14 @@ If your account is a parent account in an {{site.data.keyword.cloud_notm}} enter
 {: tip}
 
 1. Create a new filter. 
-
    ```bash
    ibmcloud catalog filter create [--catalog CATALOG] [--category CATEGORY] [--compliance COMPLIANCE] [--deployment-target TARGET] [--exclude-list LIST] [--include-all ALL] [--include-list LIST] [--offering-format FORMAT] [--pricing-plan PLAN] [--provider PROVIDER] [--release RELEASE] [--type TYPE]
    ```
    {: codeblock}
 
-   If you don't specify the `--catalog CATALOG` command, the filter is created at the account level.
-
+   When the `--catalog CATALOG` command is not specified, the filter is created at the account level.
 1. Target an account group by specifying the command option `--account-group ACCOUNT GROUP`.
-1. Update the filter to include or exclude a particular product or products. See the [Catalog management CLI](https://cloud.ibm.com/docs/cli?topic=cli-manage-catalogs-plugin#create-filter) guidance for command options or run the `ibmcloud catalog filter options` command to retrieve the filter options for each filter category.
+1. Update the filter to include or exclude a particular product or products. See the [Catalog management CLI](/docs/cli?topic=cli-manage-catalogs-plugin#create-filter) guidance for command options or run the `ibmcloud catalog filter options` command to retrieve the filter options for each filter category.
 
 ## Managing access to products for specific users by using the CLI
 {: #set-private-filters-cli}
@@ -106,16 +109,14 @@ If your account is a parent account in an {{site.data.keyword.cloud_notm}} enter
 Set filters at a private catalog level for fine-grained control of which products in the public catalog are available only to the users you choose.
 
 1. Create a new filter. 
-
    ```bash
    ibmcloud catalog filter create [--catalog CATALOG] [--category CATEGORY] [--compliance COMPLIANCE] [--deployment-target TARGET] [--exclude-list LIST] [--include-all ALL] [--include-list LIST] [--offering-format FORMAT] [--pricing-plan PLAN] [--provider PROVIDER] [--release RELEASE] [--type TYPE]
    ```
    {: codeblock}
 
-   If you don't specify the `--catalog CATALOG` command, the filter is created at the account level.
-
+   Make sure to specify the `--catalog CATALOG` command option. When `--catalog CATALOG` is not specified, the filter is created at the account level.
 1. Target an account group by specifying the command option `--account-group ACCOUNT GROUP`.
-1. Update the filter to include or exclude a particular product or products. See the [Catalog management CLI](https://cloud.ibm.com/docs/cli?topic=cli-manage-catalogs-plugin#create-filter) guidance for command options or run the `ibmcloud catalog filter options` command to retrieve the filter options for each filter category.
+1. Update the filter to include or exclude a particular product or products. See the [Catalog management CLI](/docs/cli?topic=cli-manage-catalogs-plugin#create-filter) guidance for command options or run the `ibmcloud catalog filter options` command to retrieve the filter options for each filter category.
 
 ## Updating the visibility of the {{site.data.keyword.cloud_notm}} catalog by using the API
 {: #set-public-visibility-api}
@@ -133,7 +134,7 @@ curl -X "PUT" "https://cm.globalcatalog.cloud.ibm.com/api/v1-beta/catalogaccount
 
 Make sure the `hide_IBM_cloud_catalog` field has a Boolean value of `true` to hide the public catalog in this account. Alternatively, you can give the `include_all` field a Boolean value of `false` for each `account_filters` object to exclude all of the public catalog.
 
-See the [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=curl#update-catalog-account){: external} for more information.
+See the [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=curl#update-catalog-account){: external} for more information.
 
 ## Managing access to products for all users by using the API
 {: #set-account-filters-api}
@@ -154,7 +155,7 @@ curl -X "PUT" "https://cm.globalcatalog.cloud.ibm.com/api/v1-beta/catalogaccount
 
 The options for `{accountFilters}` are: `include_all`, `category_filters`, and `id_filters`.
 
-See the [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=curl#update-catalog-account){: external} for more information.
+See the [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=curl#update-catalog-account){: external} for more information.
 
 ## Managing access to products for specific users by using the API
 {: #set-private-filters-api}
@@ -190,7 +191,7 @@ The following table lists the filters that you can use to customize which produc
 | Developer tools | Products that support developing, testing, and debugging software. |
 | Integration | Products that facilitate the connection of data, apps, APIs, and devices across an organization to be more efficient, productive, and agile. |
 | Internet of Things | Products that support receiving and transferring data over wireless networks without human intervention. |
-| Logging and Monitoring | Products that support receiving and transferring data over wireless networks without human intervention. |
+| Logging and monitoring | Products that support receiving and transferring data over wireless networks without human intervention. |
 | Mobile | Products with specific or special utility for users creatings things to be used on mobile devices. |
 | Networking | Products that support or augment the linking of computers so they can operate interactively. |
 | Security | Products that provide the protection of stored data from theft, leakage, and deletion. |
@@ -209,7 +210,7 @@ The following table lists the filters that you can use to customize which produc
 | HIPAA Enabled | The service is designated as HIPAA ready, meaning processing, storing, and handling Protected Health Information (PHI) in the service is supported. |
 | IAM-enabled | The service is enabled to use {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) for access control. Access policies are used to assign users and service IDs access to specific resources in an account.|
 | Service Endpoint Supported | The service can be connected to over the {{site.data.keyword.cloud_notm}} private network instead of the public network. Connecting directly to service endpoints doesn't require internet access, providing increased security. |
-{: caption="Table 2. Options for filtering by compliance" caption-side="top"}
+{: caption="Table 1. Options for filtering by compliance" caption-side="top"}
 {: #compliance-custom}
 {: tab-title="Compliance"}
 {: tab-group="customcatalogfilters"}
@@ -218,37 +219,14 @@ The following table lists the filters that you can use to customize which produc
 
 | Option | Description |
 |--------------|-------|
-| Beta | The product is available for evaluation and testing purposes. Beta products are not intended for production use. |
-| Experimental | The product is available for evaluation and testing purposes, and might be unstable or not compatible with previous versions. The product can be discontinued with short notice.
-| Deprecated | The product is supported but no longer recommended and that might become obsolete. |
-{: caption="Table 5. Options for filtering by release" caption-side="top"}
-{: #release-custom}
-{: tab-title="Release"}
-{: tab-group="customcatalogfilters"}
-{: class="simple-tab-table"}
-{: summary="Use the buttons before the table to change the context of the table. The column headers identify the options for fitering based on filter type."}
-
-| Option | Description |
-|--------------|-------|
-| IBM Kubernetes Service | Used to create a Kubernetes cluster of compute hosts to deploy and manage containerized apps on {{site.data.keyword.cloud_notm}}. |
-| Red Hat OpenShift | Used to create a {{site.data.keyword.openshiftshort}} cluster of compute hosts to deploy and manage containerized apps on {{site.data.keyword.cloud_notm}}. |
-| VMware vCenter Server | Provides deployment and management of VMware virtualized environments. |
-{: caption="Table 3. Options for filtering by deployment target" caption-side="top"}
-{: #deploymenttarget-custom}
-{: tab-title="Deployment target"}
-{: tab-group="customcatalogfilters"}
-{: class="simple-tab-table"}
-{: summary="Use the buttons before the table to change the context of the table. The column headers identify the options for fitering based on filter type."}
-
-| Option | Description |
-|--------------|-------|
 | Cloud Paks | A cloud solution that integrates a container platform, containerized {{site.data.keyword.IBM_notm}} middleware and open source components, and common software services for development and management. |
 | Helm charts | A format for packaging a collection of files that describe specific configurations of infrastructure in the form of code.   |
-| Terraform |  Infrastructure as code to deploy your application. |
 | Operators | A method of packaging and deploying a Kubernetes-native application. |
-| OVAs | Open Virtual Appliance that contains a compressed installable version of a virtual machine. |
-| Virtual server images | A template that is used to create instances of virtual servers. |
-{: caption="Table 6. Options for filtering by delivery method" caption-side="top"}
+| OVA Images | Open Virtual Appliance that contains a compressed installable version of a virtual machine. |
+| Starter kits | An application pattern that can be integrated with services to generate a production-ready asset, which can be deployed directly into a DevOps pipeline and a Kubernetes cluster. |
+| Terraform |  Infrastructure as code to deploy your application. |
+| VSI Images | A template that is used to create instances of virtual servers. |
+{: caption="Table 1. Options for filtering by delivery method" caption-side="top"}
 {: #software-custom}
 {: tab-title="Delivery method"}
 {: tab-group="customcatalogfilters"}
@@ -257,10 +235,48 @@ The following table lists the filters that you can use to customize which produc
 
 | Option | Description |
 |--------------|-------|
+| IBM {{site.data.keyword.containershort}} | Used to create a Kubernetes cluster of compute hosts to deploy and manage containerized apps on {{site.data.keyword.cloud_notm}}. |
+| {{site.data.keyword.bplong_notm}} | Used for infrastructure as code automation by using terraform templates. |
+| {{site.data.keyword.powerSys_notm}} | Used to create a Power server that is distinct from the {{site.data.keyword.cloud_notm}} servers with separate networks and direct-attached storage. The internal networks are fenced but offer connectivity options to {{site.data.keyword.cloud_notm}} infrastructure or on-premises environments. |
+| Red Hat OpenShift | Used to create a {{site.data.keyword.openshiftshort}} cluster of compute hosts to deploy and manage containerized apps on {{site.data.keyword.cloud_notm}}. |
+| vCenter Server | Provides deployment and management of VMware virtualized environments. |
+{: caption="Table 1. Options for filtering by deployment target" caption-side="top"}
+{: #deploymenttarget-custom}
+{: tab-title="Deployment target"}
+{: tab-group="customcatalogfilters"}
+{: class="simple-tab-table"}
+{: summary="Use the buttons before the table to change the context of the table. The column headers identify the options for fitering based on filter type."}
+
+| Option | Description |
+|--------------|-------|
+| Free | The service includes monthly free allowances for only Pay-As-You-Go or Subscription accounts. |
+| Lite | The pricing plan for the service is structured as a free quota. The quota might operate for a specific time period, for example, a month or on a one-off usage basis. |
+{: caption="Table 1. Options for filtering by pricing plan" caption-side="top"}
+{: #pricingplan-svc}
+{: tab-title="Pricing plan"}
+{: tab-group="customcatalogfilters"}
+{: class="simple-tab-table"}
+{: summary="Use the buttons before the table to change the context of the table. The column headers identify the options for fitering based on filter type."} 
+
+| Option | Description |
+|--------------|-------|
+| Beta | The product is available for evaluation and testing purposes. Beta products are not intended for production use. |
+| Deprecated | The product is supported but no longer recommended and that might become obsolete. |
+{: caption="Table 1. Options for filtering by release" caption-side="top"}
+{: #release-custom}
+{: tab-title="Release"}
+{: tab-group="customcatalogfilters"}
+{: class="simple-tab-table"}
+{: summary="Use the buttons before the table to change the context of the table. The column headers identify the options for fitering based on filter type."}
+
+
+| Option | Description |
+|--------------|-------|
+| HPC | Products that enable High Performance Computing (HPC) workloads on {{site.data.keyword.cloud_notm}}. For more information, see [High-performance computing on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/cloud/hpc){: external} |
 | SAP Certified | An infrastructure service that is certified by SAP to run production SAP workloads. For more information, see [{{site.data.keyword.ibm_cloud_sap}}](/docs/sap).|
-| Satellite Enabled | A service that is enabled for use with {{site.data.keyword.cloud_notm}} Satellite. You can run apps consistently across on-premises, edge computing, and public cloud environments. |
-| Quantum Technologies | A service that is compatible with quantum technologies. For more information, see [{{site.data.keyword.IBM_notm}} Quantum services](http://cloud.ibm.com/quantum){: external}.|
-{: caption="Table 4. Options for filtering by runtime environment" caption-side="top"}
+| Satellite Enabled | A service that is enabled for use with {{site.data.keyword.cloud_notm}} Satellite. You can run apps consistently across on-premises, edge computing, and public cloud environments. For more information, see [{{site.data.keyword.cloud_notm}} {{site.data.keyword.satelliteshort}}](https://www.ibm.com/cloud/satellite){: external}. |
+| Quantum Technologies | A service that is compatible with quantum technologies. For more information, see [{{site.data.keyword.IBM_notm}} Quantum services](http://cloud.ibm.com/quantum){: external}. |
+{: caption="Table 1. Options for filtering by runtime environment" caption-side="top"}
 {: #works-with-custom}
 {: tab-title="Works with"}
 {: tab-group="customcatalogfilters"}
