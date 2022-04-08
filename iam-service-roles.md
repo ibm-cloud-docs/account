@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-04-07"
+lastupdated: "2022-04-08"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -500,7 +500,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `atracker.route.list` | List atracker routes | Administrator, Editor, Operator, Viewer |
 | `atracker.endpoint.set` | Set atracker endpoint properties | Administrator |
 | `atracker.endpoint.get` | Read atracker endpoint properties | Administrator, Editor, Operator, Viewer |
-| `atracker.service.ingest` | Send events to atracker | Writer |
+| `atracker.service.ingest` | Send events to Atracker | Writer |
+| `atracker.setting.get` | Get Atracker setting | Administrator, Editor, Operator, Viewer |
+| `atracker.setting.update` | Update Atracker setting | Administrator |
+| `atracker.migration.post` | Post atracker migration | Administrator |
+| `atracker.migration.get` | Get atracker migration | Administrator, Editor, Operator, Viewer |
+| `atracker.migration.delete` | Delete Atracker migration | Administrator |
 {: caption="Table 11. Service actions - Activity Tracker" caption-side="top"}
 {: #actions-table11}
 {: tab-title="Actions"}
