@@ -51,7 +51,7 @@ toc:
             topics:
             - iam-quickstart.md
             - context-restrictions-tutorial.md
-      - tagging-resources-tutorial.md
+            - tagging-resources-tutorial.md
       - dash-tutorial.md
       - trustedprofile-compute-tutorial.md
       - trustedprofile-fed-tutorial.md
