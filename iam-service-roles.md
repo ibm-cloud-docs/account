@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-04-13"
+lastupdated: "2022-04-14"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -4094,6 +4094,11 @@ Review the available platform and service roles and the actions mapped to each t
 | `iam-identity.account.disable_idp` | Disable an Identity Provider configuration for the account. | Administrator, Editor, Operator |
 | `iam-identity.account.delete` | Delete an account configuration. | Administrator, Operator |
 | `iam-identity.session.manage` | Manage the user sessions of an account. | Administrator |
+| `iam-identity.crnmapping.create` | actiondescription.iam-identity.crnmapping.create | Administrator |
+| `iam-identity.crnmapping.read` | actiondescription.iam-identity.crnmapping.read | Administrator |
+| `iam-identity.crnmapping.delete` | actiondescription.iam-identity.crnmapping.delete | Administrator |
+| `iam-identity.activity.get` | actiondescription.iam-identity.activity.get | Administrator |
+| `iam-identity.report.get` | actiondescription.iam-identity.report.get | Administrator |
 {: caption="Table 72. Service actions - IAM Identity Service" caption-side="top"}
 {: #actions-table72}
 {: tab-title="Actions"}
