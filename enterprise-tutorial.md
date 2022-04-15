@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-02-18"
+lastupdated: "2022-04-14"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, enterprise users, enterprise access, enterprise tutorial
 
@@ -143,7 +143,7 @@ First, invite the department leads and assign them access.
 
 1. Go to the Enterprise dashboard by clicking **Manage** > **Enterprise** in the {{site.data.keyword.cloud_notm}} console. In the Users section, click **Invite users**.
 1. Enter the email address of the user you want to invite, such as `jsmith@example.com`.
-1. Expand the **Manually assign users access** section.
+1. Expand the **Assign access to the users** section.
 1. Select **Account management**
 1. Select **Enterprise**. 
 1. Select the **Example Corp** enterprise.
