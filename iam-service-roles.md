@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-04-19"
+lastupdated: "2022-04-20"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3887,6 +3887,10 @@ Review the available platform and service roles and the actions mapped to each t
 | `hyperp-dbaas-mongodb.clusters.tasks.read` | Get the detailed information about a task | Manager, Reader, Writer |
 | `hyperp-dbaas-mongodb.clusters.configuration.update` | Update the database configuration of your cluster | Manager |
 | `hyperp-dbaas-mongodb.clusters.configuration.read` | Show the database configuration of your cluster | Manager, Reader, Writer |
+| `hyperp-dbaas-mongodb.backups.cos.enable` | Enable backups to COS | Manager |
+| `hyperp-dbaas-mongodb.backups.cos.disable` | Disable backups to COS | Manager |
+| `hyperp-dbaas-mongodb.backups.restore` | Restore DB from backup | Manager |
+| `hyperp-dbaas-mongodb.backups.cos.read` | Show COS configuration | Manager, Reader, Writer |
 {: caption="Table 67. Service actions - Hyper Protect DBaaS for MongoDB " caption-side="top"}
 {: #actions-table67}
 {: tab-title="Actions"}
@@ -3925,6 +3929,10 @@ Review the available platform and service roles and the actions mapped to each t
 | `hyperp-dbaas-postgresql.clusters.tasks.read` | Get the detailed information about a task | Manager, Reader, Writer |
 | `hyperp-dbaas-postgresql.clusters.configuration.update` | Update the database configuration of your cluster | Manager |
 | `hyperp-dbaas-postgresql.clusters.configuration.read` | Show the database configuration of your cluster | Manager, Reader, Writer |
+| `hyperp-dbaas-postgresql.backups.cos.enable` | Enable backups to COS | Manager |
+| `hyperp-dbaas-postgresql.backups.cos.disable` | Disable backups to COS | Manager |
+| `hyperp-dbaas-postgresql.backups.restore` | Restore DB from backup | Manager |
+| `hyperp-dbaas-postgresql.backups.cos.read` | Show COS configuration | Manager, Reader, Writer |
 {: caption="Table 68. Service actions - Hyper Protect DBaaS for PostgreSQL" caption-side="top"}
 {: #actions-table68}
 {: tab-title="Actions"}
@@ -4097,7 +4105,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `iam-identity.crnmapping.create` | actiondescription.iam-identity.crnmapping.create | Administrator |
 | `iam-identity.crnmapping.read` | actiondescription.iam-identity.crnmapping.read | Administrator |
 | `iam-identity.crnmapping.delete` | actiondescription.iam-identity.crnmapping.delete | Administrator |
-| `iam-identity.activity.get` | actiondescription.iam-identity.activity.get | Administrator |
+| `iam-identity.activity.get` | actiondescription.iam-identity.activity.get | Administrator, Editor, Operator, Viewer |
 | `iam-identity.report.get` | actiondescription.iam-identity.report.get | Administrator |
 {: caption="Table 72. Service actions - IAM Identity Service" caption-side="top"}
 {: #actions-table72}
