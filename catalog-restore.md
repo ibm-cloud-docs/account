@@ -3,7 +3,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-02-21"
+lastupdated: "2022-04-20"
 
 keywords: onboard software, third-party software, suspend, support, software, sellers, catalog, Partner Center - Sell, remove, delete, deprecate, restore, private catalog, catalogs
 
@@ -13,15 +13,11 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-
 # Restoring a deprecated private product or version
 {: #restore-deprecated-product}
 
-After you deprecate your product or version, your software enters a 90-day deprecation period before it is removed from users. During this 90-day deprecation period, you can restore your product or version to its last published state. Your software cannot be restored after the 90-day deprecation period. 
+After you deprecate your product or version, your software enters a 90-day deprecation period before it is removed from users. During this 90-day deprecation period, you can't make changes to your product or version, but you can restore your product or version to its last published state. Your software cannot be restored after the 90-day deprecation period. 
 {: shortdesc}
-
-The process to sell third-party software is still under development. With the current release, you can bring your own licenses or deliver your third-party software for free. If you have questions, contact us at cloud.onboarding@us.ibm.com.
-{: beta}
 
 Complete the following steps to restore your product or version: 
 
