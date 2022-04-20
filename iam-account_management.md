@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-03-16"
+lastupdated: "2022-04-20"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, role management service, catalog management service, cloud shell service, software instance service
 
@@ -455,7 +455,19 @@ You can give users access to view, create, update, and remove network zones.
 | Viewer        | View network zones                                               |
 | Editor        | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones  |
 | Administrator | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones  |
-{: caption="Table 12. Roles and example actions for the context-based restrictions service" caption-side="top"}
+{: caption="Table 11. Roles and example actions for the context-based restrictions service" caption-side="top"}
+
+### Partner Center
+{: #pc-buildgrow-account-management}
+
+You can give users access to view and edit partner profile details, offers, fast tracks, and to create and view support cases.
+
+| Roles         | Actions                                                 |
+|---------------|---------------------------------------------------------|
+| Viewer        | View details about partner profile, offers, fast tracks, support cases. |
+| Editor        | View and edit partner profile, offers, and fast tracks. Create, edit, and view support cases. |
+| Administrator | View and edit partner profile, offers, and fast tracks. Create, edit, and view support cases. |
+{: caption="Table 12. Roles and example actions for the Partner Center service" caption-side="top"}
 
 
 ### Role management
