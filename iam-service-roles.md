@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-04-20"
+lastupdated: "2022-04-21"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -686,7 +686,7 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
-| Checkpointer | As a Checkpointer, you have permissions to write _local documents enabling checkpoint writes. checkpoints are local documents optionally creaded during replicaton recording their state. |
+| Checkpointer | As a Checkpointer, you have permissions to write _local documents enabling checkpoint writes. checkpoints are local documents optionally created during replication recording their state. |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Monitor | As a Monitor, you have permissions to get information about specified databases, list databases, monitor indexing and replication, view data volume usage and view provisioned and current throughput. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
