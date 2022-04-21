@@ -46,9 +46,12 @@ New accounts as of 25 October 2021 are created as Pay-As-You-Go or Subscription 
 ## Trial account
 {: #trial}
 
-Trial accounts offer timed access to a limited range of service plans and allow you to test out the platform without financial committment. You can access Lite service plans and all Free plans for a limited time with a trial account. To qualify for a trial account, go to [Harness the Power of IBM](https://ibm.biz/academic){: external} and validate your institution credentials or reach out to your educational program or course leader.  If you don't have an account, select 'Register with a Code' during IBM Cloud registration to apply a code. If you have an account, go to the [Account settings](/account/settings) page in the console to apply the code.
+Trial accounts offer timed access to a limited range of service plans and allow you to test out the platform without financial commitment. You can access Lite service plans and Free plans for a limited time with a trial account. To qualify for a trial account, go to [Harness the Power of IBM](https://ibm.biz/academic){: external} and validate your institution credentials or reach out to your educational program or course leader. If you don't have an account, select 'Register with a Code' during {{site.data.keyword.Bluemix_notm}} registration to apply a code. If you have an account, go to the [Account settings](/account/settings) page in the console to apply the code.
 
-If you upgrade your trial account to a Pay-As-You-Go account by entering a credit card, it can't be converted back to a trial account. {{site.data.keyword.Bluemix_notm}} trial accounts are available for faculty and students at accredited academic institutions. Your account is deactivated when the trial period ends. To reactivate your account, log in to your account and upgrade it to a Pay-As-You-Go account. If you import a trial account into an enterprise, it's automatically upgraded to a [Pay-As-You-Go account](/docs/account?topic=account-accounts).
+If you upgrade your trial account to a Pay-As-You-Go account by entering a credit card, it can't be converted back to a trial account. {{site.data.keyword.Bluemix_notm}} trial accounts are available for faculty and students at accredited academic institutions. Your account is deactivated when the trial period ends. To reactivate your account, log in to your account and upgrade it to a Pay-As-You-Go account. 
+
+If you import a trial account into an enterprise, it's automatically upgraded to a [Pay-As-You-Go account](/docs/account?topic=account-accounts).
+{: note}
 
 Support for a trial account is limited to nontechnical support issues that are related to account access and billing. Users with trial accounts can view the [{{site.data.keyword.cloud_notm}} documentation](/docs/get-support?topic=get-support-using-avatar), Chat with Watson, and use [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external}.
 
