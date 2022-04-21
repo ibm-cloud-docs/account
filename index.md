@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2022
-lastupdated: "2022-02-14"
+lastupdated: "2022-04-21"
 
 keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription
 
@@ -22,19 +22,19 @@ When you register with {{site.data.keyword.Bluemix}}, you are set up with a Pay-
 ## Comparing accounts
 {: #compare}
 
-The following table provides a comparison of Pay-As-You-Go and Subscription accounts. For more details about each account, see the sections that follow.
+The following table provides a comparison of Trial, Pay-As-You-Go, and Subscription accounts. For more details about each account, see the sections that follow.
 
-|                                         | Pay-As-You-Go      | Subscription       | 
-|-----------------------------------------|--------------------|--------------------|
-| [Free community buildpacks](/docs/cloud-foundry-public?topic=cloud-foundry-public-available_buildpacks) |    186 GBH       |    186 GBH          |
-| Access to [Lite service plans](/catalog/?search=label:lite){: external} | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
-| Access to all Free plans           |   ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |  
-| Access to the full {{site.data.keyword.Bluemix_notm}} catalog | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
-| Access to multiple Cloud Foundry regions |  ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
-| Discounted pricing                  |                      | ![Feature available](../icons/icon_enabled.svg) |
-| Fit for production use cases      |     ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg)|
-| Available for enterprise account hierarchy        |        | ![Feature available](../icons/icon_enabled.svg) |
-| Invoiced on monthly consumption       |     ![Feature available](../icons/icon_enabled.svg) |                     | 
+|                                         | Trial              | Pay-As-You-Go      | Subscription       | 
+|-----------------------------------------|--------------------|--------------------|--------------------|
+| [Free community buildpacks](/docs/cloud-foundry-public?topic=cloud-foundry-public-available_buildpacks) |    186 GBH       |    186 GBH       |    186 GBH          |
+| Access to [Lite service plans](/catalog/?search=label:lite){: external} | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
+| Access to all Free plans           | ![Feature available](../icons/icon_enabled.svg) |   ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |  
+| Access to the full {{site.data.keyword.Bluemix_notm}} catalog |        | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
+| Access to multiple Cloud Foundry regions | ![Feature available](../icons/icon_enabled.svg) |  ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
+| Discounted pricing                  |        |                      | ![Feature available](../icons/icon_enabled.svg) |
+| Fit for production use cases      |        |     ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg)|
+| Available for enterprise account hierarchy        |        |        | ![Feature available](../icons/icon_enabled.svg) |
+| Invoiced on monthly consumption       |        |     ![Feature available](../icons/icon_enabled.svg) |                     | 
 {: row-headers}
 {: class="comparison-table"}
 {: caption="Table 1. Comparison of {{site.data.keyword.Bluemix_notm}} accounts" caption-side="top"}
@@ -42,6 +42,18 @@ The following table provides a comparison of Pay-As-You-Go and Subscription acco
 
 New accounts as of 25 October 2021 are created as Pay-As-You-Go or Subscription accounts. You're asked to provide credit card information for identity verification or a code for a purchased subscription. If you created an account before this date, you might be using a [Lite account](#liteaccount) and Lite pricing plans, which aren't affected by the recent account registraton update.
 {: note}
+
+## Trial account
+{: #trial}
+
+Trial accounts offer timed access to a limited range of service plans and allow you to test out the platform without financial commitment. You can access Lite service plans and Free plans for a limited time with a trial account. To qualify for a trial account, go to [Harness the Power of IBM](https://ibm.biz/academic){: external} and validate your institution credentials or reach out to your educational program or course leader. If you don't have an account, select 'Register with a Code' during {{site.data.keyword.Bluemix_notm}} registration to apply a code. If you have an account, go to the [Account settings](/account/settings) page in the console to apply the code.
+
+If you upgrade your trial account to a Pay-As-You-Go account by entering a credit card, it can't be converted back to a trial account. {{site.data.keyword.Bluemix_notm}} trial accounts are available for faculty and students at accredited academic institutions. Your account is deactivated when the trial period ends. To reactivate your account, log in to your account and upgrade it to a Pay-As-You-Go account. 
+
+If you import a trial account into an enterprise, it's automatically upgraded to a [Pay-As-You-Go account](/docs/account?topic=account-accounts).
+{: note}
+
+Support for a trial account is limited to nontechnical support issues that are related to account access and billing. Users with trial accounts can view the [{{site.data.keyword.cloud_notm}} documentation](/docs/get-support?topic=get-support-using-avatar), Chat with Watson, and use [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external}.
 
 ## Pay-As-You-Go account
 {: #paygo}
