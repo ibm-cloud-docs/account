@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-04-20"
+lastupdated: "2022-04-22"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, role management service, catalog management service, cloud shell service, software instance service
 
@@ -10,19 +10,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Assigning access to account management services
 {: #account-services}
@@ -469,6 +457,18 @@ You can give users access to view and edit partner profile details, offers, fast
 | Administrator | View and edit partner profile, offers, and fast tracks. Create, edit, and view support cases. |
 {: caption="Table 12. Roles and example actions for the Partner Center service" caption-side="top"}
 
+### Partner Center - Sell
+{: #prod-lifecycle-account-management}
+
+You can give users access to onboard, validate, and publish software. 
+
+| Roles         | Actions                                                                                                             |
+|---------------|---------------------------------------------------------------------------------------------------------------------|
+| Administrator | Create, edit, validate, and publish products |
+| Editor        | Validate and edit products |
+| Approver      | Approves or rejects a workflow instance's task |
+{: caption="Table 13. Roles and example actions for the Partner Center - Sell service" caption-side="top"}
+
 
 ### Role management
 {: #custom-roles-account-management}
@@ -481,7 +481,7 @@ You can give users access to create, update, and delete custom roles for service
 | Operator      | Not applicable             |
 | Editor        | Edit and update custom roles in an account          |
 | Administrator | Create, edit, update, and delete custom roles in an account  |
-{: caption="Table 13. Roles and example actions for the Role management service" caption-side="top"}
+{: caption="Table 14. Roles and example actions for the Role management service" caption-side="top"}
 
 ### {{site.data.keyword.compliance_short}}
 {: #security-compliance-account-management}
@@ -493,7 +493,7 @@ You can give users access to create, update, and delete resources for the {{site
 | Operator      | Create an audit log for monitoring compliance activity |
 | Editor        | Create, update, or delete a objects such as scopes, credentials, and collectors   \n  \n Update the parameter settings of a goal   \n  \n Create, update, or delete rules and templates   \n  \n Edit global admin settings for the service |
 | Administrator |   |
-{: caption="Table 14. Roles and example actions for the {{site.data.keyword.compliance_short}} service" caption-side="top"}
+{: caption="Table 15. Roles and example actions for the {{site.data.keyword.compliance_short}} service" caption-side="top"}
 To access all of the {{site.data.keyword.compliance_short}}, you must also assign permissions for the Security Advisor service. For more information, see [Assigning access for the Security and Compliance Center](/docs/security-compliance?topic=security-compliance-access-management).
 {: note}
 
@@ -509,7 +509,7 @@ You can give users access to create, delete, or update a software instance. And,
 | Operator      | Update a software instance   \n  \n View the details page for the software instance |
 | Editor        | Create, delete, update a software instance   \n  \n View the details page for the software instance |
 | Administrator | Create, delete, update a software instance   \n  \n View the details page for the software instance   \n  \n View the logs for the software instance   \n  \n Assign IAM permissions |
-{: caption="Table 15. Roles and example actions for the Software instance service" caption-side="top"}
+{: caption="Table 16. Roles and example actions for the Software instance service" caption-side="top"}
 
 ### Support center
 {: #support-center-account-management}
@@ -522,7 +522,7 @@ You can give users access to manage support cases.
 | Operator      |  Not applicable                                                               |
 | Editor        |  View cases   \n  \n Search cases   \n  \n Update cases   \n  \n Create cases |
 | Administrator |  View cases   \n  \n Search cases   \n  \n Update cases   \n  \n Create cases |
-{: caption="Table 16. Roles and example actions for the Support Center service" caption-side="top"}
+{: caption="Table 17. Roles and example actions for the Support Center service" caption-side="top"}
 
 Assign users the viewer role on the user management service in addition to a support center access policy so the user can see all cases in the account regardless of user list visibility settings. If the user list visibility is set to restricted, this can limit a user's ability to view, search, and manage support cases in an account that they didn't open themselves.
 {: tip}
@@ -538,7 +538,7 @@ You can give users access to view users in an account, invite and remove users, 
 | Operator      | View users in the account   \n  \n View user profile settings                                          |
 | Editor        | View, invite, remove, and update users from the account   \n  \n View and update user profile settings |
 | Administrator | View, invite, remove, and update users from the account   \n  \n View and update user profile settings |
-{: caption="Table 17. Roles and example actions for the User Management service" caption-side="top"}
+{: caption="Table 18. Roles and example actions for the User Management service" caption-side="top"}
 
 The viewer role on the user management service is a role that is commonly assigned for users assigned a role to view or manage support cases. If an account owner restricts the visibility of the user list in the IAM settings, users can't see support cases that are opened by other users in the account. However, if they are assigned the viewer role for the user management service, the user list visibility setting doesn't affect the ability to view cases in the account.
 {: tip}
