@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2022
-lastupdated: "2022-03-22"
+lastupdated: "2022-04-20"
 
 keywords: account, add orgs, add spaces, cloud foundry orgs
 
@@ -10,22 +10,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:external: target="_blank" .external}
-{:help: data-hd-content-type='help'} 
-{:support: data-reuse='support'}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
-{:javascript: .ph data-hd-programlang='javascript'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Creating orgs and spaces
 {: #orgsspacesusers}
@@ -63,6 +48,8 @@ In a Subscription account, the quota is a user-defined limit that initiates spen
 {: ui} 
 
 You can manage Cloud Foundry orgs and spaces by going to **Manage** > **Account** in the {{site.data.keyword.cloud_notm}} console, and selecting **Account resources** > **Cloud Foundry orgs**.
+
+When Cloud Foundry services become IAM-enabled, they are eligible to migrate to a resource group. You're notified when your Cloud Foundry services become eligible, and you're in control of the migration. Your services can't be moved from one org to another.
 
 ## Creating orgs in the console
 {: #createorg}
