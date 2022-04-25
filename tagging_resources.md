@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2022
-lastupdated: "2022-01-20"
+lastupdated: "2022-04-25"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, full list of tags, how to use tags
 
@@ -210,7 +210,7 @@ You can create access management tags by using Terraform.
 {: #search-tags}
 {: ui}
 
-You can search for tags by using any of the following methods:
+You can search for tags and you can tag related resources by using any of the following methods:
 
 * Try the search bar that is located in the {{site.data.keyword.cloud}} console menu bar.
 * You can filter your resource list by the tag you are searching for.
