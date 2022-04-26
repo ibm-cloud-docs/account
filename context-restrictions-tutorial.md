@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-11-05"
+  years: 2021, 2022
+lastupdated: "2022-04-26"
 
 keywords: network-level access, network security strategy
 
@@ -65,4 +65,4 @@ Xander is now restricting policy management requests to the IP addresses and end
 ## Next steps
 {: #tutorial-context-step-next}
 
- You can also use network zones to restrict access at the account level. For more information, see [Allowing specific IP addresses](/docs/account?topic=account-ips&interface=ui).
+ You can also use network zones to restrict access at the account level and user level. For more information, see [Allowing specific IP addresses](/docs/account?topic=account-ips&interface=ui).
