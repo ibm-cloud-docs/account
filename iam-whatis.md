@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2022
-lastupdated: "2022-03-25"
+lastupdated: "2022-04-26"
 
 keywords: what is IAM, IAM features, IAM API, how IAM works
 
@@ -59,6 +59,30 @@ Automatically grant federated users access to your account with conditions based
 {: #trusted-profiles-feature-fedusers}
 
 Your users might already have identities outside of {{site.data.keyword.cloud_notm}} in your corporate directory. If your users need to work with {{site.data.keyword.cloud_notm}} resources or work with applications that access those resources, then those users also need {{site.data.keyword.cloud_notm}} credentials. You can use a trusted profile to specify permissions for users whose identity is federated from your organization or an external IdP. By using your IdP, you can provide a way for users in your company to use single sign-on (SSO). To connect your federated users with {{site.data.keyword.cloud_notm}} resources, see [Federating users to {{site.data.keyword.cloud_notm}}](#federation-iam).
+
+![Introducing IBM Cloud trusted profiles](https://www.youtube.com/embed/O4JRWi9P5Xo){: video output="iframe" data-script="#video-transcript-tp" id="youtubeplayer" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
+
+#### Video transcript
+{: #video-transcript-tp}
+{: notoc}
+
+We are excited to introduce the latest and greatest identity type: IBM Cloud trusted profiles. You expect the most reliable and efficient way to manage access to your account, so let’s learn about how you can use trusted profiles.
+
+Previously, organizing identities and assigning access was limited to access groups, where each user is added to the account manually.
+
+As an account owner, you can save time and automatically grant federated users access to your accounts by leveraging the attributes that already exist in your corporate directory. 
+
+Simply add conditions based on SAML attributes to define which federated users can apply a profile. This way, changes in your directory immediately affect access to resources.
+
+As a federated user, you might have the option to apply one of many trusted profiles. After you log in, you can apply a profile, or continue to the console. 
+
+Imagine a scenario where you want to complete developer-related tasks, like working with the service instances from your application components. You can select the Developer profile when logging in to ensure that you have the access you need.
+
+Similarly, if you want to complete an administrator-related task, you can select the Admin profile that has privileged permissions. This way, you reduce the risk of taking privileged actions by mistake.
+
+You also have the option to log in to the account without applying a profile by continuing to the console. 
+
+To learn more about how trusted profiles work check out our IBM Cloud Identity and Access Management documentation which includes tutorials and other helpful resources to get started!
 
 #### Compute resources
 {: #trusted-profiles-feature-resources}
