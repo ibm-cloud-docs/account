@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2022
 
-lastupdated: "2022-04-05"
+lastupdated: "2022-04-27"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access 
 
@@ -46,13 +46,14 @@ You can also set access management tags to manage access. For more information, 
 
 To assign access to an individual resource in the account or access to all resources in the account, complete the following steps:
 
-1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users** or **Manage** > **Access (IAM)**, and select **Service IDs**, depending on which identity you want to assign access.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)** and select **Users** or **Service IDs**, depending on which identity you want to assign access.
 2. From the row for the user or service ID that you want to assign access, click the **Actions** icon ![List of actions icon](../icons/action-menu-icon.svg) > **Assign access**.
-3. Add the user or service ID to an access group. Click **Add** for the access group that you want the user or service ID to belong to.
-4. (Optional) Manually assign users access.
-    1. Expand the Assign additional access section, and click **IAM services**.
-    2. Select the option for all services or just a specific service.
-    3. Select any combination of roles to assign the user or service ID, and click **Add** > **Assign**.
+3. Add the user or service ID to an access group by selecting **Access groups**. 
+4. Select the access group or groups that you want the user or service ID to belong to and click **Add**.
+5. (Optional) Assign access by using an individual access policy.
+    1. Select **Access policy**.
+    2. Select group of services or a specific service, then click **Next**. 
+    3. Select any combination of roles to assign the user or service ID, and click **Finish** > **Add** > **Assign**.
 
 If a user doesn't have a role on the resource group that contains the resources, they can see the resources, but can't access the resources by going to the Resource list page in the account to start working with them. Assign the Viewer role or higher on the resource group itself to ensure that a user can access the resource.
 {: note}
@@ -63,13 +64,15 @@ If a user doesn't have a role on the resource group that contains the resources,
 
 To assign access to all resources in a resource group or to just one service within a resource group, complete the following steps:
 
-1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users** or **Manage** > **Access (IAM)**, and select **Service IDs**, depending on which identity you want to assign access.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)** and select **Users** or **Service IDs**, depending on which identity you want to assign access.
 2. From the row for the user or service ID that you want to assign access, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Assign access**.
-3. Add the user or service ID to an access group. Click **Add** for the access group that you want the user or service ID to belong to.
-4. (Optional) Manually assign additional access.
-    1. Expand the Assign additional access section, and click **IAM services**.
-    2. Select the option for all services or just a specific service, and then specify if the access is in the **Account**, which means the user or service ID doesn't get access to the resource group that contains the resource, or select a specific resource group. By selecting a resource group, you can select roles for access to manage the resource group as well.
-    3. Select any combination of roles to assign, and click **Add** > **Assign**.
+3. Add the user or service ID to an access group by selecting **Access groups**. 
+4. Select the access group or groups that you want the user or service ID to belong to and click **Add**.
+5. (Optional) Assign access by using an individual access policy.
+    1. Select **Access policy**.
+    2. Select group of services or a specific service, then click **Next**. 
+    3. Scope the acccess to **Resources based on selected attributes**, then select the **Resource group** attribute. By selecting a resource group, you can select roles for access to manage the resource group as well.
+    4. Select any combination of roles to assign, and click **Add** > **Assign**.
 
 ### Assigning access to resources by using the CLI
 {: #access-resources-cli}
@@ -442,10 +445,10 @@ You can assign access within a resource group by using Terraform.
 
 Removing access for a user or service ID can take up to 10 minutes to take effect.
 
-1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users** or **Manage** > **Access (IAM)**, and select **Service IDs**, depending on which identity you want to assign access.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users** or **Service IDs**, depending on which identity you want to assign access.
 2. Select the user's name or service ID that you want to remove access for.
-3. From the **Access policies** tab, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Remove** on the row for the policy you want to remove.
-4. Review the policy details that you're about to remove, and confirm by clicking **Remove**.
+3. Go to **Access** and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Remove** on the row for the policy you want to remove.
+4. Review the policy details that you're removing, and confirm by clicking **Remove**.
 
 You can also remove users and service IDs from access groups by selecting the checkbox for the user or service ID that you want to remove, and click **Remove**. Then, click **Remove** again to approve the process. 
 {: tip}
