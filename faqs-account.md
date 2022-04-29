@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2022
-lastupdated: "2022-03-22"
+lastupdated: "2022-04-29"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -38,6 +38,12 @@ If you are able to log in to an {{site.data.keyword.Bluemix_notm}} account, go t
    After you open the case, an email notification is sent to you. Follow the instructions for further communication.
 
 If you can't log in to an {{site.data.keyword.Bluemix_notm}} account, [create an account request](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: external}.
+
+## Why is a VAT ID required when I create an account?
+{: #vat-id}
+{: faq}
+
+A tax identification number, such as a VAT ID or GST number, is required to create a new personal use account with an address in specific countries and regions. For information about these requirements, see [Personal use availability](/docs/account?topic=account-account-getting-started#signup-personalaccts).
 
 ## How do I update my credit card?
 {: #updatepayment}
