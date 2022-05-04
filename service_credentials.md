@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2021
-lastupdated: "2021-09-27"
+lastupdated: "2022-05-04"
 
 keywords: service key, api key, bind, credential
 
@@ -237,7 +237,7 @@ Service credential bindings are used to make the details of the connection to a 
 
 A service credential binding is of type `app` when it is a binding between a [service instance](http://v3-apidocs.cloudfoundry.org/version/3.99.0/index.html#service-instances)[: external] and an [application](http://v3-apidocs.cloudfoundry.org/version/3.99.0/index.html#apps){: external}. Not all services support this binding, as some services deliver value to users directly without integration with an application. Field `broker_catalog.features.bindable` from [service plan](http://v3-apidocs.cloudfoundry.org/version/3.99.0/index.html#the-service-plan-object){: external} of the service instance can be used to determine if it is bindable.
 
-A service credential binding is of type `key` when it only retrieves the details of the service instance and makes them available to the developer.
+A service credential binding is of type `key` when it retrieves only the details of the service instance and makes them available to the developer.
 
 To create a service credential binding, call the [Cloud Foundry API](http://v3-apidocs.cloudfoundry.org/version/3.99.0/index.html#create-a-service-credential-binding){: external} as shown in the following examples.
 
@@ -318,13 +318,36 @@ curl "https://api.example.org/v3/service_credential_bindings" \
 {: #viewing-credentials-ui}
 {: ui}
 
-After a credential is created for a service, it can be viewed at any time for users that need the API key value. However, all users must have the correct level of access to see the details of a credential including the API key value. The access of the user must be equal to or greater than that of the service credential. For example, if the credential has the IAM service writer, the user trying to view the credential must have the IAM service writer or manager role for that particular service assigned. When a user doesn't have the correct access, details such as the API key value are redacted.
+After a credential is created for a service, it can be viewed at any time for users that need the API key value. However, all users must have the correct level of access to see the details of a credential that includes the API key value. 
 
 To view an existing service credential for a service, complete the following steps:
 
 1. From the Resource list page, select the name of the service to open the service details page. 
 2. Click **Service credentials**
 3. Expand **View credentials** on the row for an existing credential.
+
+### Credential level access
+{: #access-credentials-ui}
+{: ui}
+
+The access of the user must be equal to or greater than the access of the service credential. For example, if the credential has the IAM service role `Writer`, then the user trying to view the credential must have the IAM service role `Writer` or `Manager` for that particular service assigned. When a user doesn't have the correct access, details such as the API key value are redacted:
+```
+    "credentials": {
+        "REDACTED": "REDACTED"
+    },
+```
+### IAM level access
+{: #iam-access-credentials-ui}
+{: ui}
+
+When the credential level access can't be determined by comparing the access of the user and the credential, the credential is redacted: 
+```
+    "credentials": {
+        "REDACTED": "REDACTED_EXPLICIT"
+    },
+```
+
+To view the credential, the user must have the IAM level access action `resource-controller.credential.retrieve_all`. This action is given with the Administrator role, and overrides any credential level access enabling the user to view the credential.
 
 ## Viewing a credential by using the API
 {: #viewing-credentials-api}
@@ -439,3 +462,27 @@ Example response:
 }
 ```
 {: codeblock}
+
+### Credential level access
+{: #access-credentials-api}
+{: api}
+
+The access of the user must be equal to or greater than the access of the service credential. For example, if the credential has the IAM service role `Writer`, then the user that is trying to view the credential must have the IAM service role `Writer` or `Manager` for that particular service assigned. When a user doesn't have the correct access, details such as the API key value are redacted:
+```
+    "credentials": {
+        "REDACTED": "REDACTED"
+    },
+```
+
+### IAM level access
+{: #iam-access-credentials-api}
+{: api}
+
+When the credential level access can't be determined by comparing the access of the user and the credential, the credential is redacted: 
+```
+    "credentials": {
+        "REDACTED": "REDACTED_EXPLICIT"
+    },
+```
+
+To view the credential, the user must have the IAM level access action `resource-controller.credential.retrieve_all`. This action is given with the Administrator role, and overrides any credential level access enabling the user to view the credential.
