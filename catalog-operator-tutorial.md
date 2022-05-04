@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-04-01"
+lastupdated: "2022-05-04"
 
 keywords: onboard software, operator, validate, test, Red Hat OpenShift cluster, sample Node-RED Operator, CSV file, CSV, operator bundle, TGZ file
 
@@ -76,13 +76,13 @@ Make sure that you use the same account to access {{site.data.keyword.registrylo
 {: #catalog-operator-review-version}
 {: step}
 
-From the Configure product tab, you can review your version details. There are no actions that you need to take. When you are ready to move on, click **Next**.
+From the Configure version tab, you can review your version details. After you review your version details, click **Next**.
 
 ## Set an image pull secret
 {: #catalog-operator-secret}
 {: step}
 
-When you create your {{site.data.keyword.openshiftlong}} cluster, the cluster includes an IAM service ID that is given reader access to {{site.data.keyword.registrylong_notm}}. The service ID credentials are authenticated in a nonexpiring service ID API key that is stored in image pull secrets in your cluster. As part of configuring the deployment details, you set a pull secret that's used to access and pull your images from the private {{site.data.keyword.registrylong_notm}} repository. 
+When you create your {{site.data.keyword.openshiftlong}} cluster, the cluster includes an IAM service ID that is given reader access to {{site.data.keyword.registrylong_notm}}. The service ID credentials are authenticated in a non-expiring service ID API key that is stored in image pull secrets in your cluster. As part of configuring the deployment details, you set a pull secret that's used to access and pull your images from the private {{site.data.keyword.registrylong_notm}} repository. 
 
 1. From the Set an image pull secret section, click **Add image pull secret**.
 1. Enter the name and value of the image pull secret. 
@@ -104,24 +104,12 @@ If users are required to accept any license agreements beyond the {{site.data.ke
 {: #catalog-operator-readme}
 {: step}
 
-When users access your Operator from your account, they can view installation instructions from the Readme tab of Operator's details page in your private catalog. The readme file information is automatically generated from the details in your TGZ or CSV file. 
+When users access your Operator from your account, they can select the link to your readme file in your private catalog to view installation instructions. The readme information is automatically generated from the details in your TGZ or CSV file. 
 
 1. From the Edit readme tab, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit").
-2. Preview how the information in the readme file will be displayed to users when they are installing the Operator.
+2. Preview how the information in the readme file will be displayed to users when they install the Operator.
 3. If you need to make changes, edit the information in your source and import the updated software to your private catalog. 
-4. Click **Next**.
-
-## Manage security and compliance controls
-{: #catalog-operator-controls}
-{: step}
-
-Controls are safeguards that are used to meet security and compliance requirements. Any applicable controls that are included in your readme file are listed in the Security and compliance controls table. You can add controls that are not included in your readme file. 
-
-1. Click **Add controls**. 
-1. Choose a profile. 
-1. Select the controls that you want to add to your version. 
-1. Click **Add**.
-1. Click **Next**.
+4. Click **Next**.  
 
 ## Validate the Operator
 {: #catalog-operator-validate}
@@ -137,8 +125,50 @@ To publish the Operator to your account, you're required to validate that it can
   
 1. Click **Validate**.
 
+## Manage compliance
+{: #catalog-operator-controls}
+{: step}
+
+Controls are safeguards that are used to meet security and compliance requirements. Only controls that are supported by Security and Compliance Center, formatted correctly, and validated by Code Risk Analysis and Security and Compliance Center scans appear in the catalog. For more information, see [Adding compliance details](/docs/account?topic=account-catalog-format-controls).
+
+### Manage compliance controls
+{: #catalog-operator-add-controls}
+
+You can review the controls that were added from your readme file and add additional controls.
+
+1. Click **Add controls**. 
+1. Choose a profile. 
+1. Select the controls that you want to add to your version. 
+1. Click **Add** > **Next**.
+
+### Run Code Risk Analyzer scan
+{: #catalog-operator-cra-scan}
+
+Scan your source code with Code Risk Analyzer to identify any security vulnerabilities that you need to assess.
+
+1. Click **Run scan**. 
+2. Wait for the scan to finish. 
+3. Click **Next**.
+
+### Add Security and Compliance Center scan
+{: #catalog-operator-scc-scan}
+
+Add the scans that you previously ran in the Security and Compliance Center. Security and Compliance Center determine adherence to regulatory controls. For more information, see [Scheduling a scan](/docs/security-compliance?topic=security-compliance-schedule-scan).
+
+1. Select the profile that you scanned. 
+1. Select the Security and Compliance Center scan. 
+1. Click **Apply scan**.
+1. Click **Next**.
+
+## Review requirements
+{: #operator-review-reqs}
+
+You must complete validation and any other requirements to publish to your account. 
 
 ## Next steps
 {: #catalog-operator-next}
 
 After you onboard and validate your Operator, you're ready to publish it to your account. From the **Actions** menu, select **Publish to account**. As a result, the Operator is available only to users who have access to the `Sample Operator` private catalog in your account.
+
+
+

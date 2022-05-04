@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022
-lastupdated: "2022-04-01"
+lastupdated: "2022-05-04"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, power, power systems, power systems virtual server
 
@@ -78,7 +78,7 @@ The tutorial includes steps for deploying a virtual server image to a target {{s
 {: step}
 
 1. From the Version list table, click the row that contains your virtual server image.
-1. Review your version details from the Review the version details section. There are no actions that you need to take. When you are ready to move on, click **Next**.
+1. Review your version details from the Review the version details section. After you review your version details, click **Next**.
 
 ## Configure the deployment details
 {: #catalog-vsipower-cfg-deployment}
@@ -132,18 +132,6 @@ The TGZ file that you imported to your private catalog includes a readme file th
 
 1. Click **Save** > **Next**.
 
-## Manage security and compliance controls
-{: #catalog-vsipower-controls}
-{: step}
-
-Controls are safeguards that are used to meet security and compliance requirements. Any applicable controls that are included in your readme file are listed in the Security and compliance controls table. You can add controls that are not included in your readme file. 
-
-1. Click **Add controls**. 
-1. Choose a profile. 
-1. Select the controls that you want to add to your version.  
-1. Click **Add**.
-1. Click **Next**.
-
 ## Validate the virtual server image
 {: #catalog-vsipower-validate}
 {: step}
@@ -161,6 +149,46 @@ Validate that you can deploy the virtual server image to your {{site.data.keywor
 
    To monitor the progress of the validation process, click **View logs**. 
    {: tip}
+
+## Manage compliance
+{: #catalog-vsipower-controls}
+{: step}
+
+Controls are safeguards that are used to meet security and compliance requirements. Only controls that are supported by Security and Compliance Center, formatted correctly, and validated by Code Risk Analysis and Security and Compliance Center scans appear in the catalog. For more information, see [Adding compliance details](/docs/account?topic=account-catalog-format-controls).
+
+### Manage compliance controls
+{: #catalog-vsipower-add-controls}
+
+You can review the controls that were added from your readme file and add additional controls.
+
+1. Click **Add controls**. 
+1. Choose a profile. 
+1. Select the controls that you want to add to your version. 
+1. Click **Add** > **Next**.
+
+### Run Code Risk Analyzer scan
+{: #catalog-vsipower-cra-scan}
+
+Scan your source code with Code Risk Analyzer to identify any security vulnerabilities that you need to assess.
+
+1. Click **Run scan**. 
+2. Wait for the scan to finish. 
+3. Click **Next**.
+
+### Add Security and Compliance Center scan
+{: #catalog-vsipower-scc-scan}
+
+Add the scans that you previously ran in the Security and Compliance Center. Security and Compliance Center determine adherence to regulatory controls. For more information, see [Scheduling a scan](/docs/security-compliance?topic=security-compliance-schedule-scan).
+
+1. Select the profile that you scanned. 
+1. Select the Security and Compliance Center scan. 
+1. Click **Apply scan**.
+1. Click **Next**.
+
+## Review requirements
+{: #catalog-vsipower-review-reqs}
+
+You must complete validation and any other requirements to publish your product to your account. 
 
 ## Next steps  
 {: #catalog-vsipower-publish}

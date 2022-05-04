@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-04-01"
+lastupdated: "2022-05-04"
 
 keywords: private catalog, software, onboard, operator, validate, test, Red Hat OpenShift operator, operator bundle
 
@@ -16,7 +16,6 @@ completion-time: 45m
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # Onboarding a Certified Operator from a {{site.data.keyword.redhat_notm}} registry 
 {: #catalog-opbundle-tutorial}
@@ -89,24 +88,12 @@ If users are required to accept any license agreements beyond the {{site.data.ke
 {: #catalog-opbundle-readme}
 {: step}
 
-Users can view installation instructions from the Readme tab of the Operator bundle details page in your private catalog. 
+When users install the software, they can select the link to your readme file to view installation instructions. The information in the Readme link is generated from the readme information in the Edit readme tab. 
 
 1. From the Edit readme tab, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit").
-2. Preview how the information in the readme file will be displayed to users when they are installing the Operator bundle.
+2. Preview how the information in the readme file will be displayed to users when they install the Operator bundle.
 3. If you need to make changes, edit the information in the source file and import the updated Operator bundle to your private catalog. 
 4. Click **Next**.
-
-## Manage security and compliance controls
-{: #catalog-opbundle-controls}
-{: step}
-
-Controls are safeguards that are used to meet security and compliance requirements. Any applicable controls that are included in your readme file are listed in the Security and compliance controls table. You can add controls that are not included in your readme file. 
-
-1. Click **Add controls**. 
-1. Choose a profile. 
-1. Select the controls that you want to add to your version. 
-1. Click **Add**.
-1. Click **Next**.
 
 ## Validate your Operator bundle
 {: #catalog-opbundle-validate}
@@ -116,7 +103,7 @@ Validate that the Operator bundle can be successfully installed on the target {{
 
 1. Click **Validate product**
 1. Select the Update channel to receive version updates from. 
-1. Select whether you want the updates to be applied automatically or manually. 
+1. Select whether you want to apply updates automatically or manually.
 1. Select the target cluster and project, and click **Next**.
 1. Enter the name of your Schematics workspace, select a resource group, select a Schematics region, and click **Next**.  
 
@@ -124,6 +111,46 @@ Validate that the Operator bundle can be successfully installed on the target {{
    {: tip}
 
 1. Click **Validate**. 
+
+## Manage compliance
+{: #catalog-opbundle-controls}
+{: step}
+
+Controls are safeguards that are used to meet security and compliance requirements. Only controls that are supported by Security and Compliance Center, formatted correctly, and validated by Code Risk Analysis and Security and Compliance Center scans appear in the catalog. For more information, see [Adding compliance details](/docs/account?topic=account-catalog-format-controls).
+
+### Manage compliance controls
+{: #catalog-opbundle-add-controls}
+
+You can review the controls that were added from your readme file and add additional controls.
+
+1. Click **Add controls**. 
+1. Choose a profile. 
+1. Select the controls that you want to add to your version. 
+1. Click **Add** > **Next**.
+
+### Run Code Risk Analyzer scan
+{: #catalog-opbundle-cra-scan}
+
+Scan your source code with Code Risk Analyzer to identify any security vulnerabilities that you need to assess.
+
+1. Click **Run scan**. 
+2. Wait for the scan to finish. 
+3. Click **Next**.
+
+### Add Security and Compliance Center scan
+{: #catalog-opbundle-scc-scan}
+
+Add the scans that you previously ran in the Security and Compliance Center. Security and Compliance Center determine adherence to regulatory controls. For more information, see [Scheduling a scan](/docs/security-compliance?topic=security-compliance-schedule-scan).
+
+1. Select the profile that you scanned. 
+1. Select the Security and Compliance Center scan. 
+1. Click **Apply scan**.
+1. Click **Next**.
+
+## Review requirements
+{: #catalog-opbundle-review-reqs}
+
+You must complete validation and any other requirements to publish to your account. 
 
 ## Next steps
 {: #catalog-opbundle-next}
