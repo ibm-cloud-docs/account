@@ -218,6 +218,7 @@ toc:
               - catalog-custom-private.md
               - catalog-enterprise-filters.md
               - catalog-enterprise-share.md
+              - catalog-control-format.md
           - topicgroup:
               label: Managing catalogs
               topics:

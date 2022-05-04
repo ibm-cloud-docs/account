@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-03-04"
+lastupdated: "2022-05-04"
 
 keywords: private catalog, software, onboard, Terraform, terraform template
 
@@ -39,7 +39,7 @@ This tutorial walks you through how to onboard a Terraform template to your acco
    * Editor on the software instance service
    * Required permission to complete a specific task 
    
-1. Create your [Terraform template](https://cloud.ibm.com/docs/schematics?topic=schematics-create-tf-config).
+1. Create your [Terraform template](/docs/schematics?topic=schematics-create-tf-config).
 1. To test your Terraform template, run the following commands from the Terraform CLI:
 
    * `terraform init`
@@ -77,19 +77,7 @@ Private catalogs provide a way for you to make your own products available to us
 {: #catalog-terraform-review-version}
 {: step}
 
-From the Configure product tab, you can review your version details. There are no actions that you need to take. When you're ready, click **Next**.
-
-## Add security and compliance controls
-{: #catalog-terraform-controls}
-{: step}
-
-Controls are safeguards that are used to meet security and compliance requirements. Any applicable controls that are included in your readme file are listed in the Security and compliance controls table. You can add controls that are not included in your readme file. 
-
-1. Click **Add controls**. 
-1. Choose a profile. 
-1. Select the controls that you want to add to your version. 
-1. Click **Add** 
-1. Click **Next**.
+From the Configure version tab, you can review your version details. After you review your version details, click **Next**.
 
 ## Configure the deployment values
 {: #catalog-terraform-cfgdeploy}
@@ -127,6 +115,46 @@ If users are required to accept any license agreements beyond the {{site.data.ke
 
    To monitor the progress of the validation process, click **View logs**. 
    {: tip}
+
+## Manage compliance
+{: #catalog-terraform-controls}
+{: step}
+
+Controls are safeguards that are used to meet security and compliance requirements. Only controls that are supported by Security and Compliance Center, formatted correctly, and validated by Code Risk Analysis and Security and Compliance Center scans appear in the catalog. For more information, see [Adding compliance details](/docs/account?topic=account-catalog-format-controls).
+
+### Manage compliance controls
+{: #catalog-terraform-add-controls}
+
+You can review the controls that were added from your readme file and add additional controls.
+
+1. Click **Add controls**. 
+1. Choose a profile. 
+1. Select the controls that you want to add to your version. 
+1. Click **Add** > **Next**.
+
+### Run Code Risk Analyzer scan
+{: #catalog-terraform-cra-scan}
+
+Scan your source code with Code Risk Analyzer to identify any security vulnerabilities that you need to assess.
+
+1. Click **Run scan**. 
+2. Wait for the scan to finish. 
+3. Click **Next**.
+
+### Add Security and Compliance Center scan
+{: #catalog-terraform-scc-scan}
+
+Add the scans that you previously ran in the Security and Compliance Center. Security and Compliance Center determine adherence to regulatory controls. For more information, see [Scheduling a scan](/docs/security-compliance?topic=security-compliance-schedule-scan).
+
+1. Select the profile that you scanned. 
+1. Select the Security and Compliance Center scan. 
+1. Click **Apply scan**.
+1. Click **Next**.
+
+## Review requirements
+{: #catalog-terraform-review-reqs}
+
+You must complete validation and any other requirements to publish to your account.  
 
 ## Next steps
 {: #catalog-terraform-next}

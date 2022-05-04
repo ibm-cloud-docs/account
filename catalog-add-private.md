@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-04-01"
+lastupdated: "2022-05-04"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -55,8 +55,7 @@ For virtual server images, complete the following prerequisites:
 
 To share software with other accounts, your software must be approved in Partner Center. For more information, see [Getting set up to sell software](/docs/sell?topic=sell-sw-getting-started).
 {: important}
-
-
+ 
 ## Creating a private catalog
 {: #create-catalog-ui}
 {: ui}
@@ -127,7 +126,6 @@ Complete the following steps to import software to your private catalog:
 1. From the version list that's displayed on the product details page, click the row that contains your software.
 1. Review the version details, and click **Next**.
 
-
 ### Operator from Red Hat registry
 {: #catalog-config-oprh}
 {: ui}
@@ -157,31 +155,17 @@ Complete the following steps to import software to your private catalog:
 Provide the URLs to the license agreements that users are required to accept when they install the product. The license agreements are in addition to the {{site.data.keyword.cloud_notm}} Services Agreement.
 
 1. Click **Add license agreements** > **Add license**. 
-1. Enter the name and URL, and click **Update**.
-1. After you enter all additional license agreements, click **Next**.
+1. Enter the name and URL, and click **Update** > **Next**.
 
 ## Editing your readme file
 {: #catalog-readme-edit}
 {: ui}
 
-When users install the software, they can view installation instructions from the Readme tab of your product's catalog details page. The information on the Readme tab is generated from the readme file that you uploaded to your GitHub repository. 
+When users install the software, they can select the link to your readme file to view installation instructions. The information in the Readme link is generated from the readme file that you uploaded to your GitHub repository. 
 
 1. From the Edit readme tab, preview how the information in the readme file will be displayed to users when they install the software.
 1. To make updates, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") next to the Readme section title.
 1. Click **Save**.
-1. Click **Next**.
-
-
-## Manage security and compliance controls
-{: #catalog-manage-controls}
-{: ui}
-
-Controls are safeguards that are used to meet security and compliance requirements. Any applicable controls that are included in your readme file are listed in the Security and compliance controls table. You can add controls that are not included in your readme file. 
-
-1. Click **Add controls**. 
-1. Choose a profile. 
-1. Select the controls that you want to add to your version. 
-1. Click **Add**.
 1. Click **Next**.
 
 ## Validating the software 
@@ -255,6 +239,29 @@ To monitor the progress of the validation process, click **View logs**.
 1. Click **Next**.
 1. If applicable, review the license agreements, and select **I have read and agree to the following license agreements:**. 
 1. Click **Validate**.
+
+## Manage compliance 
+{: #catalog-manage-controls}
+{: ui}
+
+Controls are safeguards that are used to meet security and compliance requirements. Only controls that are supported by Security and Compliance Center, formatted correctly, and validated by Code Risk Analysis and Security and Compliance Center scans appear in the catalog. For more information, see [Adding compliance details](/docs/account?topic=account-catalog-format-controls).
+
+1. Click **Add controls**. 
+1. Choose a profile. 
+1. Select the controls that you want to add to your version. 
+1. Click **Add** > **Next**.
+1. Click **Run scan**. 
+1. Wait for the scan to finish. 
+1. Click **Next**.
+1. Select the profile that you scanned. 
+1. Select the Security and Compliance Center scan. 
+1. Click **Apply scan**.
+1. Click **Next**.
+
+## Review requirements
+{: #catalog-manage-review-reqs}
+
+You must complete validation and any other requirements to publish to your account. 
 
 ## Publishing the software
 {: #validating-software}
