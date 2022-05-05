@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-05-04"
+lastupdated: "2022-05-05"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -6335,6 +6335,14 @@ Review the available platform and service roles and the actions mapped to each t
 | `schematics.environment.delete` | Delete an Environment | Manager |
 | `schematics.environment.read` | Read the Environment details | Manager, Reader, Writer |
 | `schematics.agents.read` | Work with agent jobs | Operator |
+| `schematics.settings-connection.read` | Read the connection settings for external data or template | Manager, Reader, Writer |
+| `schematics.settings-connection.create` | Create connection settings for external data and template | Manager |
+| `schematics.settings-connection.update` | Update connection settings for external data and template | Manager, Writer |
+| `schematics.settings-connection.delete` | Delete the connection settings for external data and template | Manager |
+| `schematics.datasets.create` | Create new datasets for the Account | Manager |
+| `schematics.datasets.update` | Update the dataset values | Manager, Writer |
+| `schematics.datasets.delete` | Delete the dataset from Account | Manager |
+| `schematics.datasets.read` | Read the dataset variable, value and metadata | Manager, Reader, Writer |
 {: caption="Table 130. Service actions - Schematics" caption-side="top"}
 {: #actions-table130}
 {: tab-title="Actions"}
