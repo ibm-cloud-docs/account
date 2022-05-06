@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2022
 
-lastupdated: "2022-03-31"
+lastupdated: "2022-05-06"
 
 keywords: specific IP addresses, IP addresses, restrict IP access, IP address access, allow IP access
 
@@ -42,7 +42,7 @@ To restrict a user to using only specific IP addresses, complete the following s
 4. For **Cloud platform**, enter the IP addresses. The IP addresses listed are the only ones from which this user can log in to {{site.data.keyword.Bluemix}}.
 5. For **Classic infrastructure**, enter the IP addresses. The IP addresses listed are the only ones from which the user can call a classic infrastructure API.
 
-      You can enter a single IP address `17.5.7.8`, an IP address range `17.5.7.8 - 17.5.9.5`, or IP subnets `17.5.7.8.0/16`, or a [network zone](/docs/account?topic=account-context-restrictions-whatis#network-zones-whatis) `networkZoneName`. Make sure to use IPv4 or IPv6 addresses, and to separate multiple values with a comma. If there is already an IP address restriction that exists, the resource overrides the restriction.
+      You can enter a single IP address `17.5.7.8`, an IP address range `17.5.7.8 - 17.5.9.5`, or IP subnets `17.5.7.8.0/16`. Make sure to use IPv4 or IPv6 addresses, and to separate multiple values with a comma. If there is already an IP address restriction that exists, the resource overrides the restriction.
       {: note}
 
 6. Click **Save**. 
