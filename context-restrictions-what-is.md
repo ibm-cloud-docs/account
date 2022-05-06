@@ -128,7 +128,7 @@ You can create context-based restrictions for the following services if you have
 | Cloud Object Storage | IAM-enabled |
 {: caption="Table 3. Services compatible with context-based restrictions." caption-side="top"}
 
-Context-based restrictions defined for IAM Services do not apply to platform actions like provision or deprovision actions. For more information, see [IAM roles and actions](/docs/account?topic=account-iam-service-roles-actions). 
+Context-based restrictions defined for IAM-enabled services do not apply to platform actions like provision or deprovision actions. For more information, see [IAM roles and actions](/docs/account?topic=account-iam-service-roles-actions). 
 {: important}
 
 Check back regularly to see what services are added as more services adopt context-based restrictions.
