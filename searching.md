@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2021
-lastupdated: "2021-11-22"
+  years: 2015, 2022
+lastupdated: "2022-05-09"
 
 keywords: search, find, search for instance, search for resource
 
@@ -11,22 +11,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:download: .download}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
-
+{{site.data.keyword.attribute-definition-list}}
 
 # Searching for resources
 {: #searching-for-resources}
@@ -38,14 +23,17 @@ You can search for resources from anywhere in the {{site.data.keyword.cloud}} co
 {: #results}
 {: ui}
 
+View all resource results
+
 View all catalog results
 :   Use this option to view a filtered catalog search. The first five results are displayed by name. If you want a more detailed search criteria for catalog entries, such as searching the description, you can click this link and get a filtered catalog results view. This option helps you find the offerings that you want to create faster. This appears if it matches to a catalog result. This field doesn't appear if your search query starts with `tag:`.
 
 Search support cases
 :   Use this option to filter by your open support cases across the platform, including infrastructure resources. This shows up at the end of the search if you search for anything, including if you search by `tag:`.
 
-Search in {{site.data.keyword.cloud_notm}} Docs
+Search in {{site.data.keyword.cloud_notm}} docs
 :   Use this option to get a filtered search of the documentation. This shows up at the end of any search, including if you search by `tag:`.
+
 
 Press the Forward Slash key (/) to navigate your cursor to the search field.
 {: tip}
@@ -55,7 +43,11 @@ Press the Forward Slash key (/) to navigate your cursor to the search field.
 {: #searching-cl}
 {: cli}
 
-You can also search across all your resources by using Lucene query syntax, with a single command by using the {{site.data.keyword.Bluemix_notm}} CLI, starting with version 0.6.7. You can search for the following attributes:
+You can also search across all your resources by using Lucene query syntax, with a single command by using the {{site.data.keyword.Bluemix_notm}} CLI, starting with version 0.6.7.
+
+
+You can search for the following attributes:
+
 
 `name`
 :   The user-defined name of the resource.
@@ -67,7 +59,7 @@ You can also search across all your resources by using Lucene query syntax, with
 :   The name of the service as it appears in the Name column of the output of `ibmcloud catalog service-marketplace`.
 
 `family`
-:   The cloud component to which your resource belongs. The allowed values are `cloud_foundry`, `containers`, `container-registry`, `vmware`, `resource_controller`, `is`, `atracker` or `ims`.
+:   The cloud component to which your resource belongs. The allowed values are: `cloud_foundry`, `containers`, `container-registry`, `vmware`, `resource_controller`, `is`, `atracker`, `ims`, `iam`.
 
 `organization_id`
 :   The Cloud Foundry organization GUID.
@@ -79,7 +71,7 @@ You can also search across all your resources by using Lucene query syntax, with
 :   The ID of the resource group.
 
 `type`
-:   The resource type. The allowed values are: `k8-cluster`, `k8-location`, `namespace`, `cf-service-instance`, `cf-user-provided-service-instance`, `cf-organization`, `cf-service-binding`, `cf-space`, `cf-application`, `resource-instance`, `resource-alias`, `resource-binding`, `resource-group`, `vmware-solutions`, `vpc`, `volume`, `vpn`, `load-balancer`, `security-group`, `key`, `image`, `subnet`, `public-gateway`, `floating-ip`, `network-acl`, `flow-log-collector`, `instance`, `instance-group`, `dedicated-host`, `endpoint-gateway`, `snapshot`, `share`, `backup-policy`, `vpn-server`, `placement-group`, `route`, `target`, `cloud-object-storage-infrastructure`, `block-storage`, `file-storage`, `cloud-backup`, `cdn-powered-by-akamai`, `direct-link-cloud-exchange`, `direct-link-cloud-connect`, `direct-link-colocation`, `direct-link-network-service-provider`, `hardware-firewall`, `hardware-firewall-dedicated`, `fortigate-security-appliance-1gb`, `fortigate-security-appliance-10gb`,  `virtual-router-appliance-copy`, `network-gateway-byoa`, `network-gateway-juniper-vsrx`, `ibm-cloud-load-balancer`, `virtual-server`, `bare-metal`, and `bare-metal-server`.
+:   The resource type. The allowed values are: `k8-cluster`, `k8-location`, `namespace`, `cf-service-instance`, `cf-user-provided-service-instance`, `cf-organization`, `cf-service-binding`, `cf-space`, `cf-application`, `resource-instance`, `resource-alias`, `resource-binding`, `resource-group`, `vmware-solutions`, `vpc`, `volume`, `vpn`, `load-balancer`, `security-group`, `key`, `image`, `subnet`, `public-gateway`, `floating-ip`, `network-acl`, `flow-log-collector`, `instance`, `instance-group`, `dedicated-host`, `endpoint-gateway`, `snapshot`, `share`, `backup-policy`, `vpn-server`, `placement-group`, `route`, `target`, `cloud-object-storage-infrastructure`, `block-storage`, `file-storage`, `cloud-backup`, `cdn-powered-by-akamai`, `direct-link-cloud-exchange`, `direct-link-cloud-connect`, `direct-link-colocation`, `direct-link-network-service-provider`, `hardware-firewall`, `hardware-firewall-dedicated`, `fortigate-security-appliance-1gb`, `fortigate-security-appliance-10gb`,  `virtual-router-appliance-copy`, `network-gateway-byoa`, `network-gateway-juniper-vsrx`, `ibm-cloud-load-balancer`, `virtual-server`, `bare-metal`, `citrix-virtual-app-desktop`, `bare-metal-server`, `serviceid`.
 
 `creation_date`
 :   The date on which the resource is created.
@@ -96,8 +88,9 @@ You can also search across all your resources by using Lucene query syntax, with
 `_objectType:`
 :   The object type of the classic infrastructure resource. Allowed values are: `SoftLayer_Virtual_DedicatedHost`, `SoftLayer_Hardware`, `SoftLayer_Network_Application_Delivery_Controller`, `SoftLayer_Network_Subnet_IpAddress`, `SoftLayer_Network_Vlan`, `SoftLayer_Network_Vlan_Firewall`, `SoftLayer_Virtual_Guest`. Requires you to specify `-p classic-infrastructure` parameter.
 
-   The usage of `-p classic-infrastructure` for _objectType `SoftLayer_Virtual_DedicatedHost`, `SoftLayer_Network_Vlan_Firewall`, `SoftLayer_Virtual_Guest` and `SoftLayer_Hardware` (for the classic infrastructure bare metal servers only) is deprecated since now they are searchable as all other resources.
-   {: note}
+
+The usage of `-p classic-infrastructure` for _objectType `SoftLayer_Virtual_DedicatedHost`, `SoftLayer_Network_Vlan_Firewall`, `SoftLayer_Virtual_Guest` and `SoftLayer_Hardware` (for the classic infrastructure bare metal servers only) is deprecated since now they are searchable as all other not classic infrastructure resources.
+{: note}
 
 
 ### Searching for classic infrastructure resources
