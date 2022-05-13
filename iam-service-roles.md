@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-05-12"
+lastupdated: "2022-05-13"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -660,6 +660,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloud-object-storage.object.copy_get_version` | Copy (read) a version of an object from one bucket to another. | Content Reader, Manager, Object Reader, Reader, Writer |
 | `cloud-object-storage.object.copy_part_get_version` | Copy (read) a version of an object as a part. | Content Reader, Manager, Object Reader, Reader, Writer |
 | `cloud-object-storage.object.restore_version` | Temporarily restore an archived version of an object. | Manager, Writer |
+| `cloud-object-storage.bucket.get_replication` | Read replication configuration of an bucket. | Manager, Reader, Writer |
+| `cloud-object-storage.bucket.put_replication` | Add replication configuration to a bucket. | Manager, Writer |
+| `cloud-object-storage.bucket.delete_replication` | Delete replication configuration of an bucket. | Manager, Writer |
 {: caption="Table 15. Service actions - Cloud Object Storage" caption-side="top"}
 {: #actions-table15}
 {: tab-title="Actions"}
