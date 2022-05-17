@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-05-16"
+lastupdated: "2022-05-17"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -999,9 +999,10 @@ Review the available platform and service roles and the actions mapped to each t
 | `compliance.admin.settings-update` | Edit Admin Settings | Administrator |
 | `compliance.admin.test-event-send` | Send test events | Administrator |
 | `compliance.platform.notifications.write` | To send platform notifications  | Manager, Reader, Writer |
-| `compliance.partner-solution.read` | Read the partner solutions | Manager, Reader, Writer |
-| `compliance.partner-solution.write` | Write the partner solutions | Manager, Writer |
-| `compliance.partner-solution.delete` | Delete the partner solutions | Manager |
+| `compliance.posture-management.integrations-read` | Read compliance posture management integrations | Manager, Reader, Writer |
+| `compliance.posture-management.integrations-create` | Create compliance posture management integrations | Manager, Reader, Writer |
+| `compliance.posture-management.integrations-update` | Update compliance posture management integrations | Manager, Writer |
+| `compliance.posture-management.integrations-delete` | Delete compliance posture management integrations | Manager |
 {: caption="Table 20. Service actions - IBM Cloud Compliance and Security Center" caption-side="top"}
 {: #actions-table20}
 {: tab-title="Actions"}
