@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022
-lastupdated: "2022-05-04"
+lastupdated: "2022-05-19"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, power, power systems, power systems virtual server
 
@@ -44,7 +44,10 @@ The tutorial includes steps for deploying a virtual server image to a target {{s
 
 1. Verify that you're using a Pay-As-You-Go or Subscription account. See [Viewing your account type](/docs/account?topic=account-account_settings#view-acct-type) for more details.
 1. Create a [{{site.data.keyword.powerSys_notm}} instance](/docs/power-iaas?topic=power-iaas-creating-power-virtual-server).
-1. Create your [Terraform template](/docs/schematics?topic=schematics-create-tf-config). 
+1. Create an instance of [{{site.data.keyword.cloud_notm}} Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage) and upload your image to a bucket.
+1. Create your [HMAC credentials](/docs/cloud-object-storage?topic=cloud-object-storage-uhc-hmac-credentials-main).
+1. [Open a support case](/docs/power-iaas?topic=power-iaas-getting-help-and-support) so the {{site.data.keyword.powerSys_notm}} product management team can convert your image into a stock image. Include your HMAC credentials and bucket details in the support case. 
+1. After the {{site.data.keyword.powerSys_notm}} product management team converts your image into a stock image, create your [Terraform template](/docs/schematics?topic=schematics-create-tf-config). 
 1. [Upload your Terraform template and readme file to your GitHub repository](https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample/tree/main#upload-your-terraform-template-to-a-github-release){: external}. 
 
    Use the [latest release of the sample code](https://github.com/IBM-Cloud/isv-power-vsi-product-deploy-sample ){: external} as an example of how to set up your repository.
@@ -95,9 +98,9 @@ The tutorial includes steps for deploying a virtual server image to a target {{s
 | **`instance_name`** | The name of the virtual server instance. | True | False |
 | **`memory`** | The amount of memory that you want to assign to your instance in gigabytes. | False | False |
 | **`network_name`** | The network ID or name to assign to the instance, as defined for the selected {{site.data.keyword.powerSys_notm}} CRN. | True | False |
-| **`processor_type`** | The type of processor mode in which the VM will run. Specify `shared`, `capped`, or `dedicated`. | False | False |
+| **`processor_type`** | The type of processor mode in which the VM runs. Specify `shared`, `capped`, or `dedicated`. | False | False |
 | **`processors`** | The number of vCPUs to assign to the VM as visible within the guest OS. | False | False |
-| **`ssh_key_name`** | The name of the public SSH RSA key to use when creating the instance, as defined for the selected {{site.data.keyword.powerSys_notm}} CRN. | True | False |
+| **`ssh_key_name`** | The name of the public SSH RSA key to use when you create the instance, as defined for the selected {{site.data.keyword.powerSys_notm}} CRN. | True | False |
 | **`sys_type`** | The type of system on which to create the VM: `s922`, `e880`, `e980`, `e1080`, or `s1022`. | False | False |
 {: caption="Table 1. Deployment values for a virtual server image" caption-side="top"} 
 
@@ -107,7 +110,7 @@ Next, update the configuration type of the **`crn`** and **`processors`** parame
 1. Open the **Value details** menu and select **Power Systems Virtual Server**.
 1. Click **Save**.
 1. From the Deployment values table, select the **`processors`** parameter and click **Edit**.
-1. Open the **Value details** menu and select **float**.
+1. Open the **Value details** menu and select **Float**.
 1. Click **Next**. 
   
 ## Set the license requirements
@@ -172,8 +175,7 @@ You can review the controls that were added from your readme file and add additi
 Scan your source code with Code Risk Analyzer to identify any security vulnerabilities that you need to assess.
 
 1. Click **Run scan**. 
-2. Wait for the scan to finish. 
-3. Click **Next**.
+1. After the scan is complete, click **Next**.
 
 ### Add Security and Compliance Center scan
 {: #catalog-vsipower-scc-scan}
