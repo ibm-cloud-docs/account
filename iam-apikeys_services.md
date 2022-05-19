@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018, 2021
+  years: 2018, 2022
 
-lastupdated: "2021-09-22"
+lastupdated: "2022-05-19"
 
 keywords: IBM Cloud service APIs, IAM token, API key, authenticate with service API
 
@@ -12,16 +12,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:external: target="_blank" .external}
-{:tip: .tip}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Invoking {{site.data.keyword.cloud_notm}} service APIs
 {: #iamapikeysforservices}
@@ -57,7 +48,7 @@ To authenticate with a service's API by using an access token, complete the foll
 Review the following example:
 
 1. Use the HTTP header Authorization.
-2. Prefix the IAM access token with the literal `Bearer: Bearer eyJhbGciOiJSUzI1Ng...`.
+2. Prefix the IAM access token with the literal `Bearer eyJhbGciOiJSUzI1Ng...`.
 3. Add the prefixed IAM access token to the HTTP header: `Authorization: Bearer eyJhbGciOiJSUzI1Ng...`. 
 
 ```bash
