@@ -559,7 +559,7 @@ For more information, see the [IAM Identity Services API](https://cloud.ibm.com/
 ## Examples of how to use a service ID
 {: #examples_serviceid}
 
-The following are examples of how a Service ID is used with the {{site.data.keyword.objectstorageshort}} and Cloud SQL Query services.
+The following are examples of how a Service ID is used with the {{site.data.keyword.objectstorageshort}} and {{site.data.keyword.sqlquery_notm}} services.
 
 - {{site.data.keyword.objectstorageshort}} - [Use the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cloud-object-storage?topic=cloud-object-storage-uhc-hmac-credentials-main).
-- Cloud SQL Query - [How to use the SQL Query REST API](https://www.youtube.com/watch?v=jDZKF0CnUvU){: external}.
+- {{site.data.keyword.sqlquery_notm}} - [How to use the {{site.data.keyword.sqlquery_notm}} REST API](https://www.youtube.com/watch?v=jDZKF0CnUvU){: external}.
