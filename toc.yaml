@@ -120,11 +120,6 @@ toc:
               - iam-serviceid.md
               - iam-ibmid-change.md
           - topicgroup:
-              label: Managing login sessions
-              topics:
-              - sessions-settings.md
-              - sessions-users.md
-          - topicgroup:
               label: Administering user settings
               topics:
               - iam-usersetting.md
@@ -135,6 +130,8 @@ toc:
               - iam-restrict-domain.md
               - iam-restrict-service-id.md
               - iam-vpn_password.md
+              - sessions-settings.md
+              - iam-token-exp.md
           - topicgroup:
               label: Using API keys
               topics:
@@ -269,6 +266,13 @@ toc:
           topics:
           - orgs_spaces.md
           - manageorg.md
+      - topicgroup:
+          label: Logging and monitoring
+          topics:
+          - monitoring.md
+          - audit_log.md
+          - sessions-users.md
+          - trustedprofile-monitor.md
 
   - navgroup:
       id: reference
@@ -344,11 +348,6 @@ toc:
       - iam-service-roles.md
       - iam-login-flows.md
       - iam-condition-properties.md
-      - topicgroup:
-          label: Tracking events
-          topics:
-          - monitoring.md
-          - audit_log.md
 
   - navgroup:
       id: help
