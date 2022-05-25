@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2022
-lastupdated: "2022-02-09"
+lastupdated: "2022-05-25"
 
 keywords: IAM token, token, API key, generate token, access token, temporary credential
 
@@ -75,12 +75,15 @@ const myService = new ExampleServiceV1({
 
 ```python
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
+from <sdk-package-name>.example_service_v1 import *
 
-authenticator = IAMAuthenticator('my_apikey')
-authenticator.set_client_id_and_secret('my-client-id', 'my-client-secret');
-service = ExampleService(authenticator=authenticator)
+# Create the authenticator.
+authenticator = IAMAuthenticator('myapikey')
 
-service.get_authenticator.set_disable_ssl_verification(true);
+# Construct the service instance.
+service = ExampleServiceV1(authenticator=authenticator)
+
+# 'service' can now be used to invoke operations.
 ```
 {: codeblock}
 {: python}
