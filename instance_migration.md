@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2022
 
-lastupdated: "2022-01-31"
+lastupdated: "2022-05-31"
 
 keywords: migrate, migrating to a resource group, migrate Cloud Foundry
 
@@ -12,13 +12,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:gif: data-image-type='gif'}
-{:video: .video}
-{:tip: .tip}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 # Migrating Cloud Foundry service instances and apps to a resource group
 {: #migrate}
@@ -68,7 +62,7 @@ Users must have specific access to migrate Cloud Foundry service instances to a 
 
 For more information about assigning the correct access, see [Cloud Foundry access](/docs/account?topic=account-mngcf) and [IAM access](/docs/account?topic=account-userroles).
 
-To check out what access you have, in the {{site.data.keyword.cloud}} console, go to **Manage** &gt; **Access (IAM)** from the console menu bar, and then click **Users**. Click your name and review your **Access policies** for assigned IAM roles and **Cloud Foundry access** to see which orgs you have access to and your assigned Cloud Foundry roles.
+To check out what access you have, in the {{site.data.keyword.cloud}} console, go to **Manage** > **Access (IAM)** from the console menu bar, and then click **Users**. Click your name and review your **Access policies** and **Access groups** for assigned IAM roles and **Cloud Foundry access** to see which orgs you have access to and your assigned Cloud Foundry roles.
 {: tip}
 
 ### Required access for {{site.data.keyword.dev_console}} apps

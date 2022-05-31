@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2022
 
-lastupdated: "2022-03-23"
+lastupdated: "2022-05-31"
 
 
 keywords: access groups, access group, create group, assign access to group
@@ -240,18 +240,21 @@ You can create access groups by using Terraform.
 After you set up your group with users and service IDs, you can assign a common access policy to the group. Remember, any policy that you set for the group applies to all entities within the group.
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Access Groups**.
-2. From the row for the group that you want to assign access, select the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions"), and click **Assign access**. 
-3. Add one or more of the access options that you manage. You must assign at least one access option. For any access options that you don't add and configure, the default value of **No access** is assigned. Depending on the options that you are authorized to manage, you can assign the following types of access:
+2. For the group that you want to assign access, select the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions"), and click **Assign access**. 
+3. You can assign access to only resources that you manage. You must assign at least one access option. For any access options that you don't add and configure, the default value of **No access** is assigned. Depending on the options that you are authorized to manage, you can assign the following types of access:
 
-     * Select **IAM services**, and then select the option for all services or just a specific service. Next, you can scope the access to the resources based on selected resource attributes like access management tags, location or resource group. Then, select all roles that apply. To view what actions are mapped to each role, click the **Actions for role** option to view a list of all actions that are mapped to a specific role.    \n \n Some services support the use of advanced operators to grant access to resources that satisfy specific naming conventions. See [Assigning access by using wildcard policies](/docs/account?topic=account-wildcard) for more information. 
-     
+     * **All Identity and Access enabled services** 
+     * **All Account Management Services** 
+     * A specfic service
+
          If you select the **Account** scope for the access policy, the user must already have the Viewer role or higher on the resource group or groups that contain the resources you want the user to have access to. Without a role on a resource group, the user can't work with the resource from the Resource list page in the console.
          {: tip}
-     
-     * Select **Account management**, and then choose from the all account management services option or select a specific service. Then, select all roles that apply.
 
-   
-4. Click **Add** > **Assign**.  
+4. Next, you can scope the access to all resources or specific resources based on selected resource attributes like access management tags, location, or resource group. 
+5. Select all roles that apply. To view what actions are mapped to each role, click the numbers listed next to each role. Some services support the use of advanced operators to grant access to resources that satisfy specific naming conventions. See [Assigning access by using wildcard policies](/docs/account?topic=account-wildcard) for more information.    
+6. Click **Review**. 
+7. Click **Add** to add your policy configuration to your policy summary.
+8. Click **Assign**.  
 
 You can also assign access by using access management tags. For more information, see [Controlling access to resources by using tags](/docs/account?topic=account-access-tags-tutorial).
 {: tip}
@@ -532,4 +535,4 @@ After you set up your group, you can assign access to it by using Terraform.
    terraform apply
    ```
    {: codeblock}
-
+   

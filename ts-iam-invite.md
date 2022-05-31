@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020. 2022
-lastupdated: "2021-02-21"
+lastupdated: "2021-05-31"
 
 
 keywords: troubleshoot invite users, access to invite users, access to add users
@@ -13,15 +13,7 @@ content-type: troubleshoot
 
 ---
 
-{:tsSymptoms: .tsSymptoms}
-{:tsCauses: .tsCauses}
-{:tsResolve: .tsResolve}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:note:.deprecated}
-{:troubleshoot: data-hd-content-type='troubleshoot'}
+{{site.data.keyword.attribute-definition-list}}
 
 # How can I get access to invite users to the account? 
 {: #troubleshoot-invite}
@@ -45,7 +37,7 @@ To review your assigned access in the account, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users**. 
 2. Select your name. 
-3. Review the assigned access in the **Access policies** section.
+3. Review the assigned access in the **Access policies** and **Access groups** section.
 
 If you aren't assigned the correct access, contact the account owner. After you have the correct access, go to **Manage > Access (IAM)**, then select **Users**, and click **Invite users** to add users to the account.
 

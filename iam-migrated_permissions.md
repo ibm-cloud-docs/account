@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2019, 2021
+  years: 2019, 2022
 
-lastupdated: "2021-09-24"
+lastupdated: "2022-05-31"
 
 keywords: migrated permissions, SoftLayer account permissions, migrated permission access group, migrated classic infrastructure permissions
 
@@ -12,12 +12,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:important: .important}
-{:note: .note}
-
+{{site.data.keyword.attribute-definition-list}}
 
 # Managing migrated SoftLayer account permissions
 {: #migrated_permissions}
@@ -57,27 +52,26 @@ Re-creating these permissions by assigning new IAM access policies for the accou
 
 To create an access group, complete the following steps:
 
-1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Access Groups**.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Access groups**.
 2. Click **Create**.
 3. Enter a name and an optional description for your group, and click **Create**.
-4. Click **Add users** on the **Users** tab.
+4. Click **Add users**.
 5. Select the users that you want to add from the list, and click **Add to group**. You can complete the same action from the **Service IDs** tab if you want to add any service IDs to the group.
 
 After you set up your group with users and service IDs, assign access to the group. Remember, any policy that you set for the group applies to all members of the group.
 
 1. Click the **Access policies** tab.
 2. Click **Assign access**.
-3. Select the **Account management** tile. 
-4. For the type of service you want to assign, select **Billing**.
-5. Select the **Viewer** role.
-6. Click **Add**.
-7. To assign a second access policy for the ability to view support cases, select the **Support Center** service.
-8. Select the **Viewer** role.
-9. Click **Add**.
-10. To assign a third access policy for the ability to view all support cases regardless of how the account owner has set the account user visibility setting, select the **User Management** service.
-11. Select the **Viewer** role.
-12. Click **Add**.
-13. Click **Assign**. 
+3. From the services, select **Billing** and click **Next**. 
+4. Select the **Viewer** role and click **Review**. 
+5. Click **Add**.
+6. To assign a second access policy for the ability to view support cases, select the **Support Center** service.
+7. Select the **Viewer** role and click **Review**. 
+8. Click **Add**.
+9. To assign a third access policy for the ability to view all support cases regardless of how the account owner has set the account user visibility setting, select the **User Management** service.
+10. Select the **Viewer** role and click **Review**. 
+11. Click **Add** to add your policy configuration to your policy summary.
+12. Click **Assign**. 
 
 Three policies are now assigned to your group:
 

@@ -2,7 +2,7 @@
 
 copyright:
    years: 2021, 2022
-lastupdated: "2022-02-21"
+lastupdated: "2022-05-31"
 
 keywords: tagging resources, managing access, access management tags, create access management tags, get started with access management tags, IAM-enabled resources, tag your resource, access group, access group policy
 
@@ -13,15 +13,7 @@ completion-time: 10m
 
 ---
 
-{:shortdesc: .shortdesc}
-{:screen: .screen}  
-{:codeblock: .codeblock}  
-{:pre: .pre}
-{:tip: .tip}
-{:note: .note}
-{:external: target="_blank" .external}
-{:step: data-tutorial-type='step'}
-{:step-next: data-tutorial-type='step-next'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Controlling access to resources by using tags
 {: #access-tags-tutorial}
@@ -53,7 +45,7 @@ If you are new to using IAM, check out the following resources to learn more abo
 
 Before you can add an access management tag to your {{site.data.keyword.cos_short}}, you need to create it first. 
 
-1. Go to **Manage** > **Account** in the {{site.data.keyword.cloud}} console, and select **Tags**.
+1. Go to **Manage** > **Account** in the {{site.data.keyword.cloud_notm}} console, and select **Tags**.
 2. Click **Access management tags**.
 3. Enter the name of your tag `project:analysis`, and click **Create tags**. See [Tagging rules](/docs/account?topic=account-tag#limits) for syntax and limitations.
 
@@ -66,7 +58,7 @@ Because tags are visible account-wide, avoid using personal information, such as
 
 Now that you created your tag, you can add it to your resource. 
 
-1. Clicking the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource List** to access the list of resources in your account. 
+1. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource List** to access the list of resources in your account. 
 2. Find your {{site.data.keyword.cos_full}} instance and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Add tags**.
 3. Type `project:analysis` and press Enter.
 
@@ -92,11 +84,14 @@ First, create an access group to streamline the task of assigning access to mult
 Next, assign a policy to the group: 
 
 1. Click **Access policies** > **Assign access**. 
-2. Select **IAM services** > **All Identity and Access enabled services** to scope your access.
-3. Select **Services based on attributes** > **Access management tags** to grant access based on the attached access management tag.
-4. Type `project:analysis` or select it from the list of options, and click **Add**. 
-5. Select all roles that apply. To view a list of all actions that are mapped to a specific role, click the numbers listed next to each role.
-6. Click **Add** > **Assign**.
+1. Select **All Identity and Access enabled services** as the service. 
+1. Scope the access to **Specific resources** > **Access management tags** to grant access based on the attached access management tag.
+1. Type `project:analysis` or select it from the list of options. 
+1. Select the resource group access.
+1. Select all roles that apply. To view a list of all actions that are mapped to a specific role, click the numbers listed next to each role.
+1. Click **Review**. 
+1. Click **Add** to add your policy configuration to your policy summary.
+1. Click **Assign**.
 
 ## Add users to your access group
 {: #tagging-add-users-access-group}

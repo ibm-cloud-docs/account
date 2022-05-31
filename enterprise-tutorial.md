@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-04-14"
+lastupdated: "2022-05-31"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, enterprise users, enterprise access, enterprise tutorial
 
@@ -50,9 +50,8 @@ Enterprises are created from an existing Subscription account. When you create t
 4. Review the information about the impact to your account, and select **I understand the impact to my account**. Then, click **Create**. The account is now permanently part of the enterprise and can't be removed.
 
 After your enterprise is created, you are directed to the enterprise dashboard. From here, you can view the enterprise details, accounts, users, and billing information. Go to the **Accounts** page to view your enterprise structure, where you see the following accounts:
-
-* An enterprise account with the same name as your enterprise. This account is used for enterprise management.
-* The account that you created the enterprise from. Users can continue working with resources in the account unaffected.
+   * An enterprise account with the same name as your enterprise. This account is used for enterprise management.
+   * The account that you created the enterprise from. Users can continue working with resources in the account unaffected.
 
 ## Create an enterprise structure with account groups
 {: #account_groups_tutorial}
@@ -157,10 +156,11 @@ Invite the other two department leads by clicking **Invite users** again and ass
 With the Usage Report Viewer role, the financial officer can see usage from all accounts but can't create, import, or otherwise organize accounts. You then need to provide them access to billing in the enterprise.
 
 1. From the Users page, click the name of the user from the list.
-1. Click the **Access policies** tab, and then **Assign access**.
-1. Click **Assign access to account management services**.
+1. Click **Access policies** > **Assign access**.
 1. Select the Billing service, and then select the Administrator role.
-1. Click **Assign**.
+1. Click **Review**. 
+1. Click **Add** to add your policy configuration to your policy summary.
+1. Click **Assign**. 
 
 ## Assign users in child accounts access to create resources
 {: #users_create_resources}
@@ -176,15 +176,16 @@ Complete the following steps to assign the required access:
 2. Click the user's name from the list.
 3. Click **Access policies** > **Assign access**.
 4. Select the service that you want to assign the user access to.
-    * If you want the user to be able to create any service, select **All Identity and Access enabled services**.
+    * If you want the user to be able to create any service, select **All Identity and Access enabled services**.
     * If you want to assign the user access to a specific service, select it from the list. 
 5. Select the resource group that you want to assign the user access to.
 6. Select the location.
 7. Select the viewer role or higher from the list of platform access roles. 
 8. (Optional) Select the reader role or higher from the list of service access roles. 
 9. Select the viewer role or higher from the list of resource group access roles.
-10. Click **Add**.
-11. Review the access summary, and click **Assign**. 
+10. Click **Review**. 
+11. Click **Add** to add your policy configuration to your policy summary.
+12. Click **Assign**. 
 
 ## View usage from all accounts
 {: #usage_tutorial}

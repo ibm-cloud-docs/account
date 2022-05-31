@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2022
 
-lastupdated: "2022-02-21"
+lastupdated: "2022-03-27"
 
 keywords: Cloud Foundry access, assign access, add user to organization, Cloud Foundry roles
 
@@ -17,7 +17,7 @@ subcollection: account
 # Managing Cloud Foundry access
 {: #mngcf}
 
-To manage access to account organizations and spaces, you must be the account owner, organization manager, or space manager. Currently, not all services can be managed by using Cloud IAM. You can continue to use Cloud Foundry roles for access to these service instances. Users are added to the org and space to which the instance belongs with a Cloud Foundry role assigned.
+To manage access to account organizations and spaces, you must be the account owner, organization manager, or space manager. Currently, not all services can be managed by using Cloud IAM. You can continue to use Cloud Foundry roles for access to these service instances. Users are added to the org and space to which the instance belongs with a Cloud Foundry role assigned. When Cloud Foundry services become IAM-enabled, they are eligible to be migrated to a resource group.
 {: shortdesc}
 
 The following graphic outlines how Cloud Foundry orgs, spaces, and roles relate within an account. An account can have many users, orgs, and spaces. Each user can be assigned to as many orgs and spaces as necessary. You can set the level of access to work within each org and space by assigning a Cloud Foundry role.
@@ -62,11 +62,11 @@ Users that are assigned the manager or developer space role can access the VCAP_
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users**.
 2. Select the name of the user that you want to assign access. 
-3. Select **Cloud Foundry access**.
-4. From the row for the organization that you want to manage access, select the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu and you can click one of three choices:
-    * Remove the user from the organization
-    * Edit organization role
-    * View organization details
+3. Select **Cloud Foundry**.
+4. From the row for the organization that you want to manage access for, select the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu and you can click one of three choices:
+    * **Remove user** from the organization
+    * **Edit** organization role
+    * **View** organization details
 
 
 ## Adding a user to an organization
@@ -76,17 +76,17 @@ If you are the manager of an organization that the user is not yet a member of, 
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users**.
 2. From the row for the user that you want to assign access, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) > **Assign access**.
-3. Select **Assign users additional access**. 
-4. Select the **Cloud Foundry** tile. 
-5. Select the organization that you want to assign access to. 
-6. Assign the user access:
+3. Select the **Cloud Foundry** as the service. 
+4. Select the organization that you want to assign access to. 
+5. Assign the user access:
    * Choose an organization to add the user to
    * Assign an organization role
    * Choose a region
    * Choose a space
    * Assign a space role
-7. Click **Add**. Repeat as needed to add more access.
-8. Click **Assign** to assign all added access to your access group. 
+6. Click **Review**.
+7. Click **Add** to add your policy configuration to your access summary. Repeat as needed to add more access.
+8. Click **Assign**. 
 
 ## Reviewing your assigned access
 {: #review_my_access}
@@ -99,3 +99,8 @@ If you need to review your assigned access in an account that you have been adde
 4. Expand the org row, and review your assigned roles.
 
 If you need additional access, you must contact the organization manager or account owner to update your assigned Cloud Foundry role.
+
+## Migrating Cloud Foundry services to a resource group
+{: #migrate_cf_services}
+
+When Cloud Foundry services become IAM-enabled, they are eligible to be migrated to a resource group. You're notified when your Cloud Foundry services become eligible, and you're in control of the migration. Your services can't be moved from one org to another.

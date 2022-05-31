@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2022
 
-lastupdated: "2022-03-22"
+lastupdated: "2022-05-31"
 
 keywords: resource FAQs, resource frequently asked questions, resource group, resource list, dashboard widget
 
@@ -14,13 +14,7 @@ content-type: faq
 ---
 
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:external: target="_blank" .external}
-{:note: .note}
-{:faq: data-hd-content-type='faq'}
+{{site.data.keyword.attribute-definition-list}}
 
 
 # FAQs about managing resources
@@ -74,25 +68,26 @@ Yes, you can delete a resource group only if it doesn't contain any resources, a
 {: #add-users-resource-group}
 {: faq}
 
-Resource groups are a method of organizing resources and are not directly associated with the management of users. For information on creating a resource group, see [Adding resources to a resource group](/docs/account?topic=account-rgs#add_to_rgs). After your resource group is created, an account administrator can grant access to a specific user. Or, an account administrator can create an access group to provide access to a resource group. For more information, see [Creating an Access Group](/docs/account?topic=account-groups#create_ag) in the console. After an access group is created, complete the following steps to associate the access group with a resource group:
+Resource groups are a method of organizing resources and are not directly associated with the management of users. For information on creating a resource group, see [Adding resources to a resource group](/docs/account?topic=account-rgs#add_to_rgs). After your resource group is created, an account administrator can grant access to a specific user. Or, an account administrator can create an access group to provide access to a resource group. For information, see [Creating an Access Group](/docs/account?topic=account-groups#create_ag) in the console. After an access group is created, complete the following steps to associate the access group with a resource group:
  
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)** and click **Access groups**.
-2. Choose an access group. 
-3. From the **Access policies** tab, click **Assign access**.
-4. Click **IAM services**.  
-5. Select the type of access that you want to assign.
-6. Scope the access to all resources, or select resources based on specific resource groups as attributes. 
-7. Select the platform, service, and resource group access for the resource group. 
-8. Click **Add** and **Assign**.
+2. Select an access group. 
+3. Click **Access policies** > **Assign access**.
+4. Select a service, or group of services.  
+5. Click **Next**.
+6. Scope the access to all resources, or select specific resources and select the resource groups attribute. Then, click **Next**.
+7. Select the platform, service and resource group access for the resource group. 
+8. Click **Review**. 
+9. Click **Add** to add your policy configuration to your policy summary.
+10. Click **Assign**. 
 
-You can't use access groups with infrastructure service resources or permissions.
-{: note} 
+You can't use access groups with infrastructure service resources or permissions. {: note} 
 
 ## Can I move service instances between resource groups?
 {: #instances-between-rgs}
 {: faq}
 
-You can't move service instances between resource groups. If you assign a service instance incorrectly, you must delete and re-create the instance to assign it to another resource group.  
+You can't move service instances between resource groups. If you assign a service instance incorrectly, you must delete and recreate the instance to assign it to another resource group.  
 
 ## How do I delete a service from my account?
 {: #service-removal}
@@ -102,7 +97,7 @@ You can delete a service instance by using the following steps:
 
 1. From your dashboard in the {{site.data.keyword.cloud_notm}} console, click **View resources** within the Resources summary widget.
 2. Expand the sections to locate the service instance that you want to delete.
-3. Select the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Delete** for the row.
+3. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Delete** for the row.
 
 ## Can I view usage per resource group?
 {: #view-usage}

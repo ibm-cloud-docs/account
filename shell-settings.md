@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-09-23"
+  years: 2020, 2022
+lastupdated: "2021-05-31"
 
 keywords: cloud shell settings, cloud shell service, enable cloud shell, disable cloud shell, cloud shell locations, cloud shell access, cloud shell iam, cloud shell role, cloud shell administrator, cloud shell service
 
@@ -10,13 +10,7 @@ subcollection: cloud-shell
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:important: .important}
-{:note: .note}
-{:support: data-reuse='support'}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 # Updating {{site.data.keyword.cloud-shell_short}} settings
 {: #shell-settings}
@@ -34,10 +28,11 @@ Only account owners, users assigned the Administrator role for the {{site.data.k
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Users**.
 2. On the Users page, select the user that you want to assign the role to.
 3. On the individual user's page, click the **Access policies** tab, and then click **Assign access**.
-4. On the Assign access page, select **Account management**.
-5. For the type of access, select **{{site.data.keyword.cloud-shell_notm}}**.
-6. Select **Administrator**, and then click **Add**.
-7. In the Access summary pane, click **Assign**.
+4. Select the service **{{site.data.keyword.cloud-shell_notm}}**.
+5. For the role, select **Administrator**, and then click **Review**. For more information, see [IAM roles](/docs/account?topic=account-userroles#iamusermanrol).
+6. Click **Review**.
+7. Click **Add** to add your policy configuration to your policy summary.
+8. Click **Assign**.
 
 For more information, see the IAM roles and actions for the [{{site.data.keyword.cloud-shell_notm}}](/docs/account?topic=account-account-services#account-management-actions-roles) account management service.
 
@@ -91,12 +86,12 @@ To assign {{site.data.keyword.cloud-shell_short}} access to a particular user, c
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Users**.
 2. On the Users page, select the user that you want to assign the role to.
-3. On the individual user's page, click the **Access policies** tab, and then click **Assign access**.
-4. On the Assign access page, select **Account management**.
-5. For the type of access, select **{{site.data.keyword.cloud-shell_notm}}**.
-6. Select a location to enable the features in.
-7. In the **Service access** section, select one or more roles to assign to the user. For example, if you want to enable the **File Upload** and **File Download** features for the user, select the **File Manager** role.
-8. Click **Add**.
-9. In the Access summary pane, click **Assign**.
+3. On the individual user's page, click the **Access polcies** tab, and then click **Assign access**.
+4. For the service, select **{{site.data.keyword.cloud-shell_notm}}**. Then, click **Next**.
+5. Scope the access to **Specific resources**. Select a location to enable the features in. Then, click **Next**.
+6. Select one or more roles to assign to the user. For example, if you want to enable the **File Upload** and **File Download** features for the user, select the **File Manager** role. For more information, see [IAM roles](/docs/account?topic=account-userroles#iamusermanrol).
+7. Click **Review**. 
+8. Click **Add** to add your policy configuration to your policy summary.
+9. Click **Assign**.
 
 When the user logs in to their {{site.data.keyword.cloud_notm}} account, the user now has access to {{site.data.keyword.cloud-shell_short}} and the file management features within {{site.data.keyword.cloud-shell_short}}.

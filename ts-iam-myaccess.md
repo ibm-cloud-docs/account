@@ -2,14 +2,13 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-02-21"
+lastupdated: "2022-05-31"
 
 keywords: troubleshoot my access, what do I have acces to
 
 subcollection: account
 
 content-type: troubleshoot
-
 
 ---
 
@@ -43,6 +42,7 @@ To check what you have access to and the level of access, complete the following
 Go to **Manage** &gt; **Access (IAM)** in the {{site.data.keyword.cloud_notm}} console, and select your name on the **Users** page. Then, depending on the access you're looking for, select the different tabs:
 {: tsResolve}
 
-* To determine what access you have through the access groups you are assigned, select **Access groups**.
-* To see IAM access policies that are assigned to you, select the **Access policies**.
-* To see your Cloud Foundry access for all orgs and spaces, select **Cloud Foundry access**.
+
+* To view IAM access policies that are assigned to you, select **Access policies** and view the Access policies table. 
+* To determine what access you have through the access groups you are assigned, select **Access groups** and view the Access groups table. Check the access policies for each of the access groups.
+* To view your Cloud Foundry access for all orgs and spaces, select **Cloud Foundry**.

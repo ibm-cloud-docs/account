@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2022
 
-lastupdated: "2022-05-16"
+lastupdated: "2022-05-31"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, access management service, catalog management service, cloud shell service, software instance service
 
@@ -29,11 +29,12 @@ As the account owner or the administrator of an account management service, you 
 To assign access to one or all account management services, complete the following steps:
 
 1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Access (IAM)**, and then select **Users**.
-2. From the row for the user that you want to assign access, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) > **Assign access**.
-3. Select **Assign users additional access**, and select **Account Management**.
-4. For the access, select **All Account Management Services** or select a specific account management service.
-5. Select any combination of roles or permissions to define the scope of access, and click **Add**.
-6. Click **Assign**. 
+1. Click the user that you want to assign access, then go to **Access policies** > **Assign access**.
+1. For the service, select **All Account Management Services** or select a specific account management service. Then, click **Next**.
+1. Scope the access to **All resources** or specific resources. Then, click **Next**.
+1. Select any combination of roles or permissions, and click **Review**.
+1. Click **Add** to add your policy configuration to your policy summary. 
+1. Click **Assign**. 
 
 To grant another user full access to the account for the purposes of managing user access and all IAM-enabled account resources, you must assign two policies. To create the first policy, use the **IAM services** option, and select **All Identity and Access enabled services** in **Account** with the Administrator platform role and Manager service role. To create the second policy, use the **Account Management** option, and select **All Account Management Services** with the Administrator role assigned.
 {: tip}

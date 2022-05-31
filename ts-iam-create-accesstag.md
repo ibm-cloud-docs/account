@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-02-21"
+lastupdated: "2022-05-31"
 
 keywords: troubleshoot permission to create access management tags
 
@@ -12,15 +12,8 @@ content-type: troubleshoot
 
 ---
 
-{:tsSymptoms: .tsSymptoms}
-{:tsCauses: .tsCauses}
-{:tsResolve: .tsResolve}
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:troubleshoot: data-hd-content-type='troubleshoot'}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Why can't I create access management tags?
 {: #troubleshoot-create-accesstag}
@@ -42,10 +35,10 @@ This problem can commonly occur by one of the following reasons:
 Complete the following steps to check your level of access. If you need to request access, contact the account owner.
 {: tsResolve}
 
-Go to **Manage** &gt; **Access (IAM)** in the {{site.data.keyword.cloud_notm}} console, and select your name on the **Users** page. 
+Go to **Manage** > **Access (IAM)** in the {{site.data.keyword.cloud_notm}} console, and select your name on the **Users** page. 
 
-1. To view the IAM access policies that are assigned to you, click **Access policies**. 
-2. To view the policies that are included in an access group that you might be assigned to, click **Access groups** > **access_group_name** > **Access policies**.
+* To view IAM access policies that are assigned to you, select **Access policies** and view the Access policies table. 
+* To determine what access you have through the access groups you are assigned, select **Access grups** and view the Access groups table. Check the access policies for each of the access groups.
 
-To view the allowed actions for each role that has been assigned to you, click **Actions for role**.
+To view what actions are mapped to each role, click the numbers listed next to each role.
 {: tip}

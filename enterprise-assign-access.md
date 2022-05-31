@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2019, 2021
+  years: 2019, 2022
 
-lastupdated: "2021-11-30"
+lastupdated: "2022-05-31"
 
 keywords: enterprise policy, enterprise access, assign enterprise access, enterprise service
 
@@ -99,14 +99,15 @@ To assign an access policy to an existing user in the enterprise account, comple
 You can set the target of the policy to be for the entire enterprise, a specific account group, which can include access to all accounts within it, or even a specific account in an account group.
 {: tip}
 
-1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Users**.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users**.
 2. From the row for the user that you want to assign access, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions"), and click **Assign access**.
-3. Select **Assign users additional access**.
-4. Select the **Account Management** tile.
-5. For the type of access to assign, select **Enterprise**.
-6. Select any combination of roles or permissions to define the scope of access, and click **Add**.
-7. (Optional) Repeat steps to add additional access. 
-8. Click **Assign** to assign all added access. 
+3. From the services, select **Enterprise**.
+4. Click **Next**.
+5. Scope the access to a resource group with specific child accounts, or all accounts in the enterprise. Then, click **Next**.
+6. Select any combination of roles or permissions, and click **Review**. 
+7. Click **Add** to add your policy configuration to your policy summary.
+8. (Optional) Repeat steps to add additional access. 
+9. Click **Assign**. 
 
 For more information about roles and actions to assign access in an enterprise account, see [Assigning access to account management service](https://cloud.ibm.com/docs/account?topic=account-account-services#enterprise-account-management).
 
@@ -117,10 +118,10 @@ For more information about roles and actions to assign access in an enterprise a
 To create a new access policy for a user, run the **`ibmcloud iam user-policy-create`** command. In the command example, a JSON file is used to specify the policy details. Review the example in the [Assigning access by using the API](#enterprise-api-policy) section for an example of what to include in the JSON file.
 
 Create a user policy:
+
 ```bash
 ibmcloud iam user-policy-create name@example.com -f policy.json
 ```
-{: pre}
 
 For more information, see [ibmcloud iam user-policy-create](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_create).
 
@@ -360,7 +361,5 @@ fmt.Println(string(b))
 {: go}
 
 For more information, see [Create a policy](https://cloud.ibm.com/apidocs/iam-policy-management){: external}.
-
-
 
 
