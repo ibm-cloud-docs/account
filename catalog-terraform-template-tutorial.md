@@ -147,7 +147,7 @@ Add the scans that you previously ran in the Security and Compliance Center. Sec
 
 1. Select the profile that you scanned. 
 1. Select the Security and Compliance Center scan. 
-1. Click **Apply scan**.
+1. Click **Add scan**.
 1. Click **Next**.
 
 ## Review requirements

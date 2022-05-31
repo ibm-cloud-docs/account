@@ -254,7 +254,7 @@ Controls are safeguards that are used to meet security and compliance requiremen
 1. Wait for the scan to finish. 
 1. In the Security and Compliance Center scan section, select the profile that you scanned. 
 1. Select the Security and Compliance Center scan. 
-1. Click **Apply scan**.
+1. Click **Add scan**.
 1. Click **Next**.
 
 ## Review requirements
