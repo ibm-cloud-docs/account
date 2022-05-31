@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-05-19"
+lastupdated: "2022-05-31"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -249,11 +249,10 @@ Controls are safeguards that are used to meet security and compliance requiremen
 1. Click **Add controls**. 
 1. Choose a profile. 
 1. Select the controls that you want to add to your version. 
-1. Click **Add** > **Next**.
-1. Click **Run scan**. 
+1. Click **Add**.
+1. In the Code Risk Analyzer scan section, click **Run scan**. 
 1. Wait for the scan to finish. 
-1. Click **Next**.
-1. Select the profile that you scanned. 
+1. In the Security and Compliance Center scan section, select the profile that you scanned. 
 1. Select the Security and Compliance Center scan. 
 1. Click **Apply scan**.
 1. Click **Next**.

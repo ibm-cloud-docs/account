@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-05-04"
+lastupdated: "2022-05-31"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog
 
@@ -88,7 +88,7 @@ The tutorial includes steps for deploying a virtual server image to a target {{s
 | `vsi_profile` | The profile of compute CPU and memory resources to use when creating the virtual server instance. | False | False |
 | `vsi_security_group` | The name of the security group that is created. | True | False |
 {: caption="Table 1. Parameters that you need to configure" caption-side="bottom"}
-
+  
 ## Set the license requirements
 {: #catalog-vsi-cfg-license}
 {: step}
@@ -141,7 +141,7 @@ You can review the controls that were added from your readme file and add additi
 1. Click **Add controls**. 
 1. Choose a profile. 
 1. Select the controls that you want to add to your version. 
-1. Click **Add** > **Next**.
+1. Click **Add**.
 
 ### Run Code Risk Analyzer scan
 {: #catalog-vsi-cra-scan}
@@ -150,12 +150,11 @@ Scan your source code with Code Risk Analyzer to identify any security vulnerabi
 
 1. Click **Run scan**. 
 2. Wait for the scan to finish. 
-3. Click **Next**.
 
 ### Add Security and Compliance Center scan
 {: #catalog-vsi-scc-scan}
 
-Add the scans that you previously ran in the Security and Compliance Center. Security and Compliance Center determine adherence to regulatory controls. For more information, see [Scheduling a scan](/docs/security-compliance?topic=security-compliance-schedule-scan).
+Add the scans that you previously ran in the Security and Compliance Center. Security and Compliance Center scans determine adherence to regulatory controls. For more information, see [Scheduling a scan](/docs/security-compliance?topic=security-compliance-schedule-scan).
 
 1. Select the profile that you scanned. 
 1. Select the Security and Compliance Center scan. 
