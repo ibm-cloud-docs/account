@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-05-30"
+lastupdated: "2022-05-31"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -6373,6 +6373,10 @@ Review the available platform and service roles and the actions mapped to each t
 | `schematics.datasets.update` | Update the dataset values | Manager, Writer |
 | `schematics.datasets.delete` | Delete the dataset from Account | Manager |
 | `schematics.datasets.read` | Read the dataset variable, value and metadata | Manager, Reader, Writer |
+| `schematics.settings-agent.delete` | Unregister the Schematics Agent configuration setting | Manager |
+| `schematics.settings-agent.update` | Update the Schematics Agent configuration setting | Manager, Writer |
+| `schematics.settings-agent.read` | Read Schematics Agent configuration setting | Manager, Reader, Writer |
+| `schematics.settings-agent.register` | Register the schematics agent instance | Manager |
 {: caption="Table 130. Service actions - Schematics" caption-side="top"}
 {: #actions-table130}
 {: tab-title="Actions"}
