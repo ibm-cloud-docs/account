@@ -4,14 +4,14 @@ copyright:
 
   years: 2021, 2022
 
-lastupdated: "2022-03-13"
+lastupdated: "2022-05-27"
 
 keywords: trusted profile, federated users, granting access, tutorial, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
-
 subcollection: account
 content-type: tutorial
 account-plan: lite 
 completion-time: 20m
+services: containers
 
 ---
 
@@ -20,6 +20,7 @@ completion-time: 20m
 # Managing access for federated users by using trusted profiles
 {: #trustedprofile-fedusers-tutorial}
 {: toc-content-type="tutorial"} 
+{: toc-services="containers"}
 {: toc-completion-time="20m"}
 
 This tutorial guides you through the steps to automatically grant federated users access to your account based on external identity provider specifications. By completing this tutorial, you learn how to create a trusted profile, establish trust with federated users based on attributes that are defined in your corporate user directory, and define a policy to assign access to resources.
@@ -61,31 +62,30 @@ First, Marla creates the trusted profile for the test environment:
 Now that Marla created a trusted profile, she wants to establish criteria for the federated users that can apply this profile. To do this, she creates conditions based on the attributes in her company's corporate user directory. Marla and half of the team members are based in the Ireland, and the other half are based in the United States. 
 
 1. For trusted entity type, select **Federated users**.
-2. For authentication method, select **Users federated by {{site.data.keyword.appid_full_notm}}** from the list.
+1. For authentication method, select **Users federated by {{site.data.keyword.appid_full_notm}}** from the list.
 
-   If the users that you are creating a trusted profile for use {{site.data.keyword.appid_full_notm}}, you should create the trusted profile as an {{site.data.keyword.appid_full_notm}} user, and likewise for IBMid. This way, your own SAML attributes can give you an idea of how to structure the trusted profile conditions. Other users with the same IdP can have different SAML attributes and you should use your own only as a hint. To use attributes in a claim that are different than your own, input them manually. 
+   If the users that you are creating a trusted profile for use {{site.data.keyword.appid_full_notm}}, you should create the trusted profile as an App ID user, and likewise for IBMid. This way, your own SAML attributes can give you an idea of how to structure the trusted profile conditions. Other users with the same IdP can have different SAML attributes and you should use your own only as a hint. To use attributes in a claim that are different than your own, input them manually. 
    {: tip}
 
-3. Select the default identity provider (IdP) you created.
-4. Click **View your identity provider (IdP) data**. Marla uses this in the following steps to see which attributes she can leverage to create conditions.
-5. Click **Add a condition**.
-6. Click **Filter attributes** and select `country`.
+1. Select the default identity provider (IdP) you created.
+1. Click **View your identity provider (IdP) data**. Marla uses this in the following steps to see which attributes she can leverage to create conditions.
+1. Click **Add a condition**.
+1. Click **Filter attributes** and select `country`.
     * These are the attributes available from personal data.
-7. Set **Qualifier** to `Equals`.
-8. For the **Value**, click **Add manually** and enter `us`.
-
+1. Set **Qualifier** to `Equals`.
+1. For the **Value**, click **Add manually** and enter `us`.
     This way, Marla can enter attribute values that she isn't assigned in the personal identity provider data.
     {: note}
 
-9. Click **Add a condition** and repeat steps 6-8. Instead of `us`, enter `ire`.
-10. Click **Add a condition** again and click **Add manually**. 
+1. Click **Add a condition** and repeat steps 6-8. Instead of `us`, enter `ire`.
+1. Click **Add a condition** again and click **Add manually**. 
     1. Let's say there's an attribute that is called `team` in the corporate user directory that identifies an employee's team by manager. Enter the condition `team` equals `marla`.
-11. Click **Add a condition** again and click **Add manually**. 
+1. Click **Add a condition** again and click **Add manually**. 
     1. Let's say there's an attribute that is called `job-role` in the corporate user directory that identifies an employee's job role. Enter the condition `job-role` equals `dev`.
-12. Set the session duration to 8 hours.
-13. Click **Continue**.
+1. Set the session duration to 8 hours.
+1. Click **Continue**.
 
-For more information about the fields that are used to create conditions, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
+For more information about the fields that are used to create conditions for trusted profiles, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
 
 ## Assign access
 {: #trusted-profile-federated-access}
@@ -93,18 +93,22 @@ For more information about the fields that are used to create conditions, see [I
 
 Marla created narrow conditions that authenticate only the developers on the team that are working in the chatbot test environment. Now she can create a policy to give them the [{{site.data.keyword.cloud_notm}} service and platform access they need for the project. 
 
-1. Select **IAM services**.
-2. Select **{{site.data.keyword.containershort}}** from the list of services. 
-3. Scope the access to the option **Resources based on selected attributes**. 
-4. Select **Resource group**. Marla can select or input the name of the resource group that's created for the chatbot project.
-5. Select Viewer and Reader roles to define the scope of access, and click **Add**.
-6. Select **{{site.data.keyword.toneanalyzerfull}}** from the list of services. 
-7. Scope the access to the option **Resources based on selected attributes**. 
-8. Select **Resource group**. Marla can select or input the name of the resource group that's created for the chatbot project.
-9. Select Viewer and Reader roles to define the scope of access, and click **Add**.
-10. Review the profile summary and click **Create**.  
+1. Select **Access policy**
+1. Select **{{site.data.keyword.containershort}}** from the list of services. Click **Next**.
+1. Scope the access to **Specific resources** based on selected attributes. 
+1. Select **Resource group**. Marla can select or input the name of the resource group that's created for the chatbot project.
+1. Select Viewer and Reader roles to define the scope of access, and click **Review**. 
+1. Click **Add** to add your policy configuration to your policy summary.
+1. Select **{{site.data.keyword.toneanalyzerfull}}** from the list of services. 
+1. Scope the access to **Specific resources** based on selected attributes. 
+1. Select **Resource group**. Marla can select or input the name of the resource group that's created for the chatbot project.
+1. Select Viewer and Reader roles to define the scope of access, and click **Review**. 
+1. Click **Add** to add your policy configuration to your policy summary.
+1. Review the profile summary and click **Create**.  
 
 ## Next steps
 {: #iam-federated-next}
 
 Now that you learned the basics of how to create a trusted profile, you can create the `Chatbot Ops (prod)` trusted profile that gives employees who need broader privileges more access. To do so, repeat step 1. In step 2.11.a, enter the condition `job-role` equals `dev-lead`. Assign this profile Editor and Writer access. For more information, see [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile&interface=ui).
+
+You can also use {{site.data.keyword.cloudaccesstrailshort}} to monitor which federated users and compute resources apply a trusted profile. For more information, see [Monitoring login sessions for trusted profiles](/docs/account?topic=account-trusted-profile-monitor).

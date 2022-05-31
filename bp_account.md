@@ -100,7 +100,7 @@ A logical way to assign access to your resource groups and the included resource
 
 For the Auditor-Group, assign two access policies that grant viewer access to the `CustApp-Test` and the `CustApp-Prod` resources and resource groups. For the Developer-Group, assign two access policies that grant editor access to the `CustApp-Dev` and `CustApp-Test` resources and resource groups. For the Admin-Group, assign three access policies that grant administrator access to all three `CustApp` resource groups and their resources.
 
-You can assign administrator access to everything in an account by creating an access group and assigning two policies to it. To create the first policy, use the **IAM services** option, and select **All Identity and Access enabled services** in **Account** with the Administrator platform role and Manager service role. To create the second policy, use the **Account Management** option, and select **All Account Management Services** with the Administrator role assigned.
+You can assign administrator access to everything in an account by creating an access group and assigning two policies to it. To create the first policy, select **All Identity and Access enabled services** in **Account** with the Administrator platform role and Manager service role. To create the second policy, select **All Account Management Services** with the Administrator role assigned.
 {: tip}
 
 For more best practices from IBM Garage for Cloud, see [Managing access to resources in {{site.data.keyword.cloud_notm}}](https://cloudnativetoolkit.dev/resources/ibm-cloud/access-control/){: external}.
@@ -135,7 +135,7 @@ A trusted profile, like other IAM identities, can be granted access by using a p
 
 You can select only one trusted entity type when you first create a trusted profile. You can [update trusted profiles](/docs/account?topic=account-trusted-profile-update) at any time to add trust relationships with compute resources.
 
-You can assign administrator access to everything in an account by creating a trusted profile and assigning two policies to it. To create the first policy, use the **IAM services** option, and select **All Identity and Access enabled services** in **Account** with the Administrator platform role and Manager service role. For the second policy, use the **Account Management** option, and select **All Account Management Services** with the Administrator role assigned.
+You can assign administrator access to everything in an account by creating an access group and assigning two policies to it. To create the first policy, select **All Identity and Access enabled services** in **Account** with the Administrator platform role and Manager service role. To create the second policy, select **All Account Management Services** with the Administrator role assigned.
 {: tip}
 
 ### Sample access policies

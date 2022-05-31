@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2022
 
-lastupdated: "2022-02-11"
+lastupdated: "2022-05-31"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -79,11 +79,11 @@ To invite users, complete the following steps:
 
 4. Add one or more of the access options that you manage. You must assign at least one access option. For any access options that you don't add and configure, the default value of **No access** is assigned. Depending on the options that you are authorized to manage, you can assign the following types of access:
 
-   * Add users to access groups. Click **Add** for each access group that you want the users to belong to. 
-   * Manually assign users access. Expand the section to assign individual IAM access policies, Cloud Foundry roles, or classic infrastructure permissions.
+   * Access groups: Click **Add** for each access group that you want the users to belong to. 
+   * Access policy: Assign individual IAM access policies, Cloud Foundry roles, or classic infrastructure permissions.
       * Select **Cloud Foundry**, choose an organization, then select a region to select a specific space, and assign a space role. An organization and space role are both required to add the access assignment to the invite.
       * Select **Classic infrastructure**, and then choose from the three permission sets.
-      * Select **IAM services**, and then select the option for all services or just a specific service. Next, you can scope the access to the entire account or just one resource group. Then, select all roles that apply. To view what actions are mapped to each role, click the **Actions for role** option to view a list of all actions that are mapped to a specific role.
+      * Select **All Identity and Access enabled services**, or just a specific service. Next, you can scope the access to the entire account or just one resource group. Then, select all roles that apply. To view what actions are mapped to each role, click the numbers listed next to each role.
       
          Some services support the use of advanced operators to grant access to resources that satisfy specific naming conventions. See [Assigning access by using wildcard policies](/docs/account?topic=account-wildcard) for more information. 
 

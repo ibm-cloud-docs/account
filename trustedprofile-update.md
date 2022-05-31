@@ -5,7 +5,7 @@ copyright:
   years: 2021, 2022
 
 
-lastupdated: "2022-03-23"
+lastupdated: "2022-05-31"
 
 keywords: trusted profile, federated users, granting access, update trusted profile, compute resource, IAM trusted profile, trust relationship, establish trust,  trust policy, trusted entity, assume access, apply access
 
@@ -24,6 +24,9 @@ You can update the permissions or redefine trust relationships for trusted profi
 
 To update trusted profiles, you must be assigned the administrator, operator, or editor role within the account, or on the IAM Identity Service.
 {: note}
+
+You can use {{site.data.keyword.cloudaccesstrailshort}} to monitor which federated users and compute resources apply a trusted profile. For more information, see [Monitoring login sessions for trusted profiles](/docs/account?topic=account-trusted-profile-monitor).
+{: tip}
 
 ## Updating trusted profiles in the console
 {: #updating-tp-console}
@@ -57,18 +60,21 @@ You can assign access to a trusted profile by assigning individual access polici
 
 1. Click the name of the trusted profile that you want to update.
 2. Click **Access policies**.
-3. To assign new access policies, click **Assign access**. To edit existing access policies, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** next to the access policy you want to update.
-4. To add the trusted profile to an access group, click **Add**. To edit existing access group membership, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** next to the access group you want to update.
+3. To edit existing access policies, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** next to the access policy you want to update.
+4. To assign new access policies, click **Assign**. 
 
-You can select your resources based on resource attributes and any combination of roles to assign.
+You can select your resources based on resource attributes and assign any combination of roles.
+{: tip}
 
 #### Assigning access groups
 {: #update-tp-group}
 
 1. Click the name of the trusted profile that you want to update.
-2. Click **Access groups** > **Add**. 
-3. Select the access groups to which you want to add the trusted profile and click **Add**. You can assign users to only the access groups that you have access to manage.
-4. Click **Assign**. 
+2. Click **Access groups** 
+3. To edit existing access group membership, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** next to the access group you want to update.
+4. To add the trusted profile to a new access group, click **Assign group**. 
+5. Select the access groups to which you want to add the trusted profile and click **Add**. You can assign users to only the access groups that you have access to manage.
+6. Click **Assign**. 
 
 ### Updating session duration
 {: #session-duration-tp}
@@ -272,7 +278,7 @@ To assign new access policies, call the following:
    ```
    {: codeblock}
 
-For more information, see the [IAM Policy Management API](/apidocs/iam-policy-management#update-policy).
+For more information, see the [IAM Policy Management](/apidocs/iam-policy-management#update-policy) API.
 
 ### Updating session duration
 {: #session-duration-tp-api}

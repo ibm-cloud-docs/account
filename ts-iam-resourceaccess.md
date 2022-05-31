@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-06-14"
+  years: 2020, 2022
+lastupdated: "2022-05-31"
 
 keywords: troubleshoot access to a resource, why can't user access resource
 
@@ -10,18 +10,9 @@ subcollection: account
 
 content-type: troubleshoot
 
-
 ---
 
-{:tsSymptoms: .tsSymptoms}
-{:tsCauses: .tsCauses}
-{:tsResolve: .tsResolve}
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:troubleshoot: data-hd-content-type='troubleshoot'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Why can't a user I gave access work with a resource from the Resource list page?
 {: #troubleshoot-serviceaccess}
@@ -42,10 +33,12 @@ In addition to access to the type of service or specific resource, the user must
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** &gt; **Access (IAM)**, and select the user's name from **Users** page. 
 1. From the row for the user that you want to assign access, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions"), and click **Assign access**.
-1. Select **Assign users additional access**.
-1. Select the **IAM services** tile. 
-    1. Select the type of access you want to assign, then select the specific resource group to which you want to allow access.
-1. Next, select the role that you want the user to have. The Viewer role is sufficient to enable the user to access the resource. 
+1. Select the service. Then, click, **Next**.
+1. Scope the access to a specific resource group to which you want to allow access. Then, click, **Next**.
+1. Select the resource group access. The Viewer role is sufficient to enable the user to access the resource. Then, click, **Next**.
+1. Select the roles that you want the user to have.
+1. Click **Review**. 
 1. Click **Add** to add the access to the access summary. 
 1. Click **Assign**. 
 {: tsResolve}
+

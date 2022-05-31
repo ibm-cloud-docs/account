@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2022-02-18"
+  years: 2020, 2022
+lastupdated: "2022-05-31"
 
 keywords: catalog, private catalogs, IAM access, roles, private catalog service, access groups, permissions, IAM, catalog management, access group
 
@@ -33,15 +33,16 @@ See the following sections for details about creating your access groups and ass
 Administrator access is required for setting account-level filters to the {{site.data.keyword.cloud_notm}} catalog.   
 
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
-2. Go to **Manage** > **Access (IAM)** > **Access groups** in the {{site.data.keyword.cloud_notm}} console.
-3. Click **Create**.
-4. Enter `private-catalog-admins` as the group name, and click **Create**. 
-5. Click **Access policies** > **Assign access**.
-6. Select **Account management**.
-7. Select **Catalog Management** from the **What type of access do you want to assign?** list.
-8. Select the catalog that you want users to access.
-9. In the Platform access section, select the **Administrator** role.
-10. Click **Add** > **Assign**.
+1. Go to **Manage** > **Access (IAM)** > **Access groups** in the {{site.data.keyword.cloud_notm}} console.
+1. Click **Create**.
+1. Enter `private-catalog-admins` as the group name, and click **Create**.
+1. Click **Access policies** > **Assign access**.
+1. Select **Catalog Management** from the list of services.
+1. Select the catalog that you want users to access.
+1. In the Platform access section, select the **Administrator** role.
+1. Click **Review**. 
+1. Click **Add** to add your policy configuration to your policy summary.
+1. **Assign**.
 
 ### Editor access in the console
 {: #catalog-access-console-editor}
@@ -50,19 +51,19 @@ Administrator access is required for setting account-level filters to the {{site
 Editor access is required for creating private catalogs, setting filters at the private catalog level, adding your software to your private catalog, and updating, deprecating, and restoring your software.    
 
 1. Go to **Access groups**, and click **Create**.
-2. Enter `private-catalog-editors` as the group name, and click **Create**.
-3. Click **Access policies** > **Assign access**.
-4. Select **Account management**.
-5. Select **Catalog Management** from the **What type of access do you want to assign?** list.
-6. Select the catalog that you want users to access.
-7. In the Platform access section, select the **Editor** role.
-8. Click **Add**.
-9. Select **IAM services** > **Kubernetes Service**.
-10. Select your cluster, and then select the **Administrator** and **Manager** roles.
-11. Click **Add**.
-12. Select **IAM services** > **Schematics**.
-13. Select the **Manager** role.
-14. Click **Add** > **Assign**.
+1. Enter `private-catalog-editors` as the group name, and click **Create**.
+1. Click **Access policies** > **Assign access**.
+1. Select **Catalog Management** from the list of services.
+1. Select the catalog that you want users to access.
+1. In the Platform access section, select the **Editor** role.
+1. Click **Add** to add your policy configuration to your policy summary.
+1. Select **Kubernetes Service** from the list of services.
+1. Select your cluster, and then select the **Administrator** and **Manager** roles.
+1. Click **Add**.
+1. Select **Schematics** from the list of services.
+1. Select the **Manager** role.
+1. Click **Review**. 
+1. Click **Add** > **Assign**.
 
 ### Viewer access in the console
 {: #catalog-access-console-viewer}
@@ -71,13 +72,14 @@ Editor access is required for creating private catalogs, setting filters at the 
 Viewer access is required for viewing private catalogs, the filtered {{site.data.keyword.cloud_notm}} catalog, and the filter settings.  
 
 1. Go to **Access groups**, and click **Create**.
-2. Enter `private-catalog-viewers` as the group name, and click **Create**.
-3. Click **Access policies** > **Assign access**.
-4. Select **Account management**.
-5. Select **Catalog Management** from the **What type of access do you want to assign?** list.
-6. Select the catalog that you want users to access.
-7. In the Platform access section, select the **Viewer** role.
-8. Click **Add** > **Assign**.
+1. Enter `private-catalog-viewers` as the group name, and click **Create**.
+1. Click **Access policies** > **Assign access**.
+1. Select **Catalog Management** from the list of services.
+1. Select the catalog that you want users to access.
+1. In the Platform access section, select the **Viewer** role.
+1. Click **Review**.
+1. Click **Add** to add your policy configuration to your policy summary.
+1. Click **Assign**.
 
 You also need to have viewer access on the resource group to which your private catalog is assigned. You can assign your private catalog to a resource group when you complete the steps for creating your private catalog. For more information, see [Customizing the IBM Cloud catalog for all account users](/docs/account?topic=account-filter-account). 
 
@@ -85,9 +87,9 @@ To assign viewer access to your private catalog's resource group, use the follow
 
 1. Go to **Users** and select the user. 
 1. Select **Access policies** > **Assign access**. 
-1. From the **Assign users additional access** section, select **IAM services**.  
-1. Select **All Identity and Access enabled services** and your private catalogs resource group from the **What type of access do you want to assign?** list.
-1. In the Platform access section, select the **Viewer** role.
+1. Select **All Identity and Access enabled services** from the list of services.
+1. Scope the access to **Specific resources** based on selected attributes, and select your private catalogs resource group. 
+1. For Platform access, select the **Viewer** role.
 1. Click **Add** > **Assign**.
 
 ## Add users to your access groups in the console
@@ -100,6 +102,8 @@ After you set up your access groups, complete the following steps to add users t
 2. Specify the email addresses of the users. If you are inviting more than one user with a single invitation, they are all assigned the same access.
 3. Select one of the three access groups you previously created, and click **Add** > **Invite**.
 4. Repeat the steps to add users to your other access groups. 
+
+Or, you can give users access by adding trusted profiles to your access groups. For more information, see [What makes a good trusted profiles strategy?](/docs/account?topic=account-account_setup#trustedprofiles_strategy) and [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile).
 
 ## Setting up your access groups by using the CLI
 {: #catalog-access-groups-cli}
@@ -158,6 +162,7 @@ ibmcloud iam access-group-user-add example_group name@example.com
 ```
 {: codeblock}
 
+Or, you can give users access by adding trusted profiles to your access groups. For more information, see [What makes a good trusted profiles strategy?](/docs/account?topic=account-account_setup#trustedprofiles_strategy) and [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile&interface=cli).
 
 ## Setting up your access groups by using the API
 {: #catalog-access-groups-api}
@@ -394,7 +399,7 @@ fmt.Println(string(b))
 {: codeblock}
 {: go}
 
-### Expected response
+### Setting up access expected response
 {: #expected-response-access}
 
 ```bash
@@ -706,7 +711,7 @@ fmt.Println(string(b))
 {: #catalog-access-api-users}
 {: api}
 
-To add users to an access group by using the API, call the [IAM Access Groups API](https://cloud.ibm.com/apidocs/iam-access-groups#add-members-to-access-group) as shown in the following example.
+To add users to an access group by using the API, call the [IAM Access Groups API](/apidocs/iam-access-groups#add-members-to-access-group){: external} as shown in the following example.
 
 ```bash
 curl -X PUT -H "Authorization: {iam_token}" -H "Accept: application/json" -H "Content-Type: application/json" -d '{"members": [ {"iam_id": "IBMid-user1", "type": "user"}, {"iam_id": "iam-ServiceId-123", "type": "service"} ]}' "{base_url}/groups/{access_group_id}/members"
@@ -801,7 +806,9 @@ fmt.Println(string(b))
 {: codeblock}
 {: go}
 
-### Expected response
+Or, you can give users access by adding trusted profiles to your access groups. For more information, see [What makes a good trusted profiles strategy?](/docs/account?topic=account-account_setup#trustedprofiles_strategy) and [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile&interface=api).
+
+### Adding users expected response 
 {: #expected-response-api}
 
 ```bash
@@ -975,4 +982,3 @@ To add users to an access group by using Terraform, follow these steps:
    ```
    {: pre}
 
-   

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021,2022
-lastupdated: "2022-02-21"
+lastupdated: "2022-05-31"
 
 keywords: troubleshoot accessing all instances of a service
 
@@ -12,15 +12,7 @@ content-type: troubleshoot
 
 ---
 
-{:tsSymptoms: .tsSymptoms}
-{:tsCauses: .tsCauses}
-{:tsResolve: .tsResolve}
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:troubleshoot: data-hd-content-type='troubleshoot'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Why can't a user in my account access all instances of a service?
 {: #troubleshoot-instances}
@@ -44,10 +36,10 @@ Check the user's level of access.
 {: tsResolve}
 
 1. Go to **Manage** > **Access (IAM)** in the {{site.data.keyword.cloud_notm}} console, and select the user from the list on the **Users** page.
-2. To view the level of access that's defined in a specific policy, click **Access policies**.
-3. To view the policies that are assigned to an access group the user is a member of, click **Access groups** > **_group-name_** > **Access policies**.
+2. To view IAM access policies that are assigned to you, select **Access policies** and view the Access policies table. 
+3. To determine what access you have through the access groups you are assigned, select **Access groups** and view the Access groups table. Check the access policies for each of the access groups.
 
-To view the allowed actions for each role, click **Actions for role**.
+To view what actions are mapped to each role, click the numbers listed next to each role.
 {: tip}
 
 To check the name of the access management tag that's attached to the service, complete the following steps: 
