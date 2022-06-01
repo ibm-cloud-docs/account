@@ -99,10 +99,9 @@ You can invite one or multiple users in a single invite. If you invite multiple 
          If you select the **Account** scope for the access policy, the user must already have the Viewer role or higher on the resource group or groups that contain the resources you want the user to have access to. Without a role on a resource group, the user can't work with the resource from the Resource list page in the console.
          {: tip}
      
-     * Select **Account management**, and then choose from the all account management services option or select a specific service. Then, select all roles that apply.
-  
-4. Select **Add** to save the access assignment to the invitation.
-5. After you add all the necessary access assignments, click **Invite**.
+4. Then, select all roles that apply.
+5. Select **Add** to save the access assignment to the invitation.
+6. After you add all the necessary access assignments, click **Invite**.
 
 For more information, see [Inviting users to an account](/docs/account?topic=account-iamuserinv).
 
