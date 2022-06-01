@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2021
+  years: 2021, 2022
 
-lastupdated: "2021-11-23"
+lastupdated: "2022-06-01"
 
 keywords: create network access, network access rule, network zone
 
@@ -60,13 +60,14 @@ To create a rule, complete the following steps.
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Context-based restrictions**, and select **Rules**.
 2. Click **Create**.  
 3. Provide a unique description, then click **Continue**. 
-4. Select the resources that you want to target in your rule. Select all resources or select resources based on attributes such as location or resource groups, then click **Continue**.
-    1. Select **Account management** to restrict access to services like user management and policy management. 
+4. Select the service that you want to target in your rule. Then, click **Next**. 
 
     When you create context-based restriction for the IAM Access Groups service, users who don't satisfy the rule will not be able to view any groups in the account, including the public access group. 
     {: note}
 
-5. Next, add one or more contexts. Select endpoint types and network zones, and click **Add**. 
+5. Scope the restriciton to **All resources** or **Specific resources** based on selected atttributes. 
+6. Click **Review** > **Continue**. 
+7. Next, add one or more contexts. Select endpoint types and network zones, and click **Add**. 
     * You can allow access from all service supported or specific service endpoint types. If the toggle is set to Yes, all service supported endpoint types are added to the rule. 
     * You can add existing network zones to your rule or create new zones to add to your rule. For more information, [Creating network zones](/docs/account?topic=network-zones-create).
-6. Click **Create**.
+8. Click **Create**.
