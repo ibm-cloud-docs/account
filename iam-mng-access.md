@@ -49,7 +49,7 @@ To assign access to an individual resource in the account or access to all resou
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users** o **Service IDs**, depending on which identity you want to assign access.
 2. Click the **Actions** icon ![List of actions icon](../icons/action-menu-icon.svg) > **Assign access** for the user or service ID that you want to assign access.
 3. Select a group of services or a sinlge service. Then, click **Next**.
-4. Scope the access to the all resources in the account, or select specific resources based on attributes. B
+4. Scope the access to the all resources in the account, or select specific resources based on attributes.
 5. Click **Next**. 
 6. Select any combination of roles to assign, and click **Review**. 
 7. Click **Add** to add your policy configuration to your policy summary.
