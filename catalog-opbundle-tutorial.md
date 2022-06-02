@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-05-04"
+lastupdated: "2022-05-31"
 
 keywords: private catalog, software, onboard, operator, validate, test, Red Hat OpenShift operator, operator bundle
 
@@ -33,7 +33,7 @@ This tutorial walks you through how to onboard a sample Operator bundle from a {
 1. [Create your {{site.data.keyword.redhat_notm}} {{site.data.keyword.openshiftshort}} cluster](/docs/openshift?topic=openshift-getting-started). 
 1. [Upload your Operator bundle and application images to {{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-getting-started).
 1. Verify that you're assigned the following {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM). See [Assigning access to account management services](/docs/account?topic=account-account-services) and [Managing access to resources](/docs/account?topic=account-assign-access-resources) for more information.
-   * Administrator on all account management services and all IAM services
+   * Administrator on all account management services and all IAM-enabled services
    * Editor on the catalog management service
    * Editor on the software instance service
    * Editor on the {{site.data.keyword.registrylong_notm}} service
@@ -126,7 +126,7 @@ You can review the controls that were added from your readme file and add additi
 1. Click **Add controls**. 
 1. Choose a profile. 
 1. Select the controls that you want to add to your version. 
-1. Click **Add** > **Next**.
+1. Click **Add**.
 
 ### Run Code Risk Analyzer scan
 {: #catalog-opbundle-cra-scan}
@@ -135,16 +135,15 @@ Scan your source code with Code Risk Analyzer to identify any security vulnerabi
 
 1. Click **Run scan**. 
 2. Wait for the scan to finish. 
-3. Click **Next**.
 
 ### Add Security and Compliance Center scan
 {: #catalog-opbundle-scc-scan}
 
-Add the scans that you previously ran in the Security and Compliance Center. Security and Compliance Center determine adherence to regulatory controls. For more information, see [Scheduling a scan](/docs/security-compliance?topic=security-compliance-schedule-scan).
+Add the scans that you previously ran in the Security and Compliance Center. Security and Compliance Center scans determine adherence to regulatory controls. For more information, see [Scheduling a scan](/docs/security-compliance?topic=security-compliance-schedule-scan).
 
 1. Select the profile that you scanned. 
 1. Select the Security and Compliance Center scan. 
-1. Click **Apply scan**.
+1. Click **Add scan**.
 1. Click **Next**.
 
 ## Review requirements

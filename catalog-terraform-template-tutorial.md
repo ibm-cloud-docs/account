@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-05-04"
+lastupdated: "2022-05-31"
 
 keywords: private catalog, software, onboard, Terraform, terraform template
 
@@ -32,7 +32,7 @@ This tutorial walks you through how to onboard a Terraform template to your acco
 1. Verify that you're using a Pay-As-You-Go or Subscription account. See [Viewing your account type](https://cloud.ibm.com/docs/account?topic=account-account_settings#view-acct-type) for more details.
 1. Verify that you're assigned the following roles. For more information, see [Assigning access to account management services](https://cloud.ibm.com/docs/account?topic=account-account-services) and [Managing access to resources](https://cloud.ibm.com/docs/account?topic=account-assign-access-resources).
 
-   * Administrator on all account management services and all IAM services
+   * Administrator on all account management services and all IAM-enabled services
    * Editor on the catalog management service
    * Manager service access role for IBM Cloud Schematics
    * Operator platform role for VPC Infrastructure
@@ -130,7 +130,7 @@ You can review the controls that were added from your readme file and add additi
 1. Click **Add controls**. 
 1. Choose a profile. 
 1. Select the controls that you want to add to your version. 
-1. Click **Add** > **Next**.
+1. Click **Add**.
 
 ### Run Code Risk Analyzer scan
 {: #catalog-terraform-cra-scan}
@@ -139,16 +139,15 @@ Scan your source code with Code Risk Analyzer to identify any security vulnerabi
 
 1. Click **Run scan**. 
 2. Wait for the scan to finish. 
-3. Click **Next**.
 
 ### Add Security and Compliance Center scan
 {: #catalog-terraform-scc-scan}
 
-Add the scans that you previously ran in the Security and Compliance Center. Security and Compliance Center determine adherence to regulatory controls. For more information, see [Scheduling a scan](/docs/security-compliance?topic=security-compliance-schedule-scan).
+Add the scans that you previously ran in the Security and Compliance Center. Security and Compliance Center scans determine adherence to regulatory controls. For more information, see [Scheduling a scan](/docs/security-compliance?topic=security-compliance-schedule-scan).
 
 1. Select the profile that you scanned. 
 1. Select the Security and Compliance Center scan. 
-1. Click **Apply scan**.
+1. Click **Add scan**.
 1. Click **Next**.
 
 ## Review requirements

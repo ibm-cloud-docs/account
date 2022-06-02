@@ -4,7 +4,7 @@ copyright:
 
   years: 2022
 
-lastupdated: "2022-05-04"
+lastupdated: "2022-05-31"
 
 keywords: software onboarding, controls, requirements, security, compliance, partners
 
@@ -66,7 +66,6 @@ Scan your source code with Code Risk Analyzer to identify any security vulnerabi
 
 1. Click **Run scan**.
 2. Wait for scan to finish. 
-3. Click **Next**.
 
 ### Adding a {{site.data.keyword.compliance_short}} scan
 {: #submit-scc-scan}
@@ -76,8 +75,7 @@ To include controls with your product, you must add scans that you previously ra
 1. On the Manage compliance page go to **Add Security and Compliance Center scan** and select a profile that you previously scanned. 
 1. Select a Security and Compliance Center scan. 
    If you don't see any scans, you need to run a scan in Security and Compliance Center. For more information, see [Scheduling a scan](/docs/security-compliance?topic=security-compliance-schedule-scan).
-1. Click **Apply scan**.
-1. View the results on the Manage compliance page.
+1. Click **Add scan**.
 
 
 These results are displayed on your About page for your product as evidence that the controls that you listed for your product are validated as compliant.
