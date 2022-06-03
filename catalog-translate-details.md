@@ -3,7 +3,7 @@
 
 copyright:
   years: 2022
-lastupdated: "2022-03-31"
+lastupdated: "2022-06-03"
 
 keywords: onboard software, catalog details, software, catalog entry, about, product page, catalog listing, translation, internationalization, localization, CLI
 
@@ -16,7 +16,7 @@ subcollection: account
 # Translating product details by using the CLI
 {: #translate-product-details}
 
-When you onboard software, certain details about your product can be translated by using the [{{site.data.keyword.cloud}} CLI plug-in](/docs/cli?topic=cli-manage-catalogs-plugin). Run the `get-translations` command to download the language files. Then, edit those files to include your specific translations and upload them using the `upload-translations` command. 
+When you onboard software, you can translate certain details about your product by using the [{{site.data.keyword.cloud}} CLI plug-in](/docs/cli?topic=cli-manage-catalogs-plugin). Run the `get-translations` command to download the language files. Then, edit those files to include your specific translations and upload them using the `upload-translations` command. For more information, see [Getting started with the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-getting-started).
 {: shortdesc}
 
 ## What product details can you translate? 
@@ -36,7 +36,7 @@ The following information about your product can be translated:
 Run the `get-translations` command to download the language `.json` files. 
 
    ```bash
-   ibmcloud catalog offering get-translations
+   ibmcloud catalog offering get-translations -c CATALOG_NAME -o PRODUCT_NAME --languages en,de,ja
    ```
    {: codeblock}
 
@@ -62,8 +62,11 @@ Edit the default values in each translation file with your specific translations
 
 Run the `upload-translations` command to upload your translation files. 
 
+An English translation is required to upload other translations.
+{: note}
+
    ```bash
-   ibmcloud catalog offering upload-translations
+   ibmcloud catalog offering upload-translations -c CATALOG_NAME -o PRODUCT_NAME --language-files en.json,de.json,ja.json
    ```
    {: codeblock}
 
@@ -78,4 +81,3 @@ Run the `upload-translations` command to upload your translation files.
 
 --language-files
 :   Provide a comma-separated list of language files to upload. If no languages are specified, all of the available language files are uploaded. Valid options are `de.json`, `en.json`, `es.json`, `fr.json`, `it.json`, `ja.json`, `ko.json`, `pt-BR.json`, `zh-Hans.json`, and `zh-Hant.json`. 
-
