@@ -105,7 +105,7 @@ To ensure that a user has the correct access, go to **Manage** > **Access (IAM)*
 Then, go to **Devices** to assign a user access to the specific devices and device types. You can also enable future access to all devices of a certain type. For more information about setting classic infrastructure permissions, see [Managing classic infrastructure access](/docs/account?topic=account-mngclassicinfra).
 
 ## Managing invitation notifications
-{: invite-notifications}
+{: #invite-notifications}
 
 Users can receive an invitation link in their notifications and by email to join an account, if they are already members of IBM Cloud. User managers can invite any user to the IBM Cloud platform if they have an email address to use for an invite. 
 

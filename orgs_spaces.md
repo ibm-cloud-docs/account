@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2022
-lastupdated: "2022-04-20"
+lastupdated: "2022-06-03"
 
 keywords: account, add orgs, add spaces, cloud foundry orgs
 
@@ -18,13 +18,17 @@ subcollection: account
 As an {{site.data.keyword.Bluemix}} account owner, you can add Cloud Foundry orgs and spaces to your account. Only account owners can create new Cloud Found orgs. If you're an organization manager, you can manage the orgs in the account after they are created.
 {: shortdesc}
 
+IBM Cloud Foundry Public is deprecated. For more information, see the [Deprecation of IBM Cloud Foundry](/docs/cloud-foundry-public?topic=cloud-foundry-public-deprecation).
+{: deprecated}
+
+
 ## Cloud Foundry org concepts
 {: #cf-org-concepts}
 
 Orgs enable collaboration among users and facilitate the logical grouping of project resources in the following ways:
 
-   * You can group a set of spaces, apps, services, domains, routes, and users together in orgs.
-   * You can manage the user access to the orgs and spaces on an individual basis.
+* You can group a set of spaces, apps, services, domains, routes, and users together in orgs.
+* You can manage the user access to the orgs and spaces on an individual basis.
 
 Orgs can span multiple regions, and they are defined by the following items:
 

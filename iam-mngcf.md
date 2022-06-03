@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2022
 
-lastupdated: "2022-03-27"
+lastupdated: "2022-06-03"
 
 keywords: Cloud Foundry access, assign access, add user to organization, Cloud Foundry roles
 
@@ -19,6 +19,9 @@ subcollection: account
 
 To manage access to account organizations and spaces, you must be the account owner, organization manager, or space manager. Currently, not all services can be managed by using Cloud IAM. You can continue to use Cloud Foundry roles for access to these service instances. Users are added to the org and space to which the instance belongs with a Cloud Foundry role assigned. When Cloud Foundry services become IAM-enabled, they are eligible to be migrated to a resource group.
 {: shortdesc}
+
+IBM Cloud Foundry Public is deprecated. For more information, see the [Deprecation of IBM Cloud Foundry](/docs/cloud-foundry-public?topic=cloud-foundry-public-deprecation).
+{: deprecated}
 
 The following graphic outlines how Cloud Foundry orgs, spaces, and roles relate within an account. An account can have many users, orgs, and spaces. Each user can be assigned to as many orgs and spaces as necessary. You can set the level of access to work within each org and space by assigning a Cloud Foundry role.
 

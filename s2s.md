@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2021
-lastupdated: "2021-09-22"
+  years: 2015, 2022
+lastupdated: "2022-06-03"
 
 keywords: service authorization, service instance's access, connect service to app
 
@@ -10,20 +10,16 @@ subcollection: account
 
 ---
  
-{:shortdesc: .shortdesc}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:curl: .ph data-hd-programlang='curl'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Connecting services to a Cloud Foundry app
 {: #s2s_binding}
 
 To use a service in a Cloud Foundry app, you must create a connection or bind that service to the app.
 {: shortdesc}
+
+IBM Cloud Foundry Public is deprecated. For more information, see the [Deprecation of IBM Cloud Foundry](/docs/cloud-foundry-public?topic=cloud-foundry-public-deprecation).
+{: deprecated}
 
 ## Connect a service to your Cloud Foundry app in the console
 {: #s2s_binding-ui}
