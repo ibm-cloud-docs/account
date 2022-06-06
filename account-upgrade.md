@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2022
 
-lastupdated: "2022-03-24"
+lastupdated: "2022-06-06"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -11,13 +11,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 # Upgrading your account
 {: #upgrading-account}
@@ -52,8 +46,11 @@ If you're upgrading to reactivate a deactivated account, your account might take
 ## Promotional credit for upgrading your account
 {: #promotional-credit-for-upgrading-your-account} 
 
-If your upgrade included a promotional credit, the credit might take a few hours to appear in your account. Any unused upgrade credit expires after the 30 day period ends. You are invoiced for any usage that exceeds the promotional credit. You can view the promotional credit on the [Promotions and credits](/billing/promotions){: external} page or the [Invoices](/billing/invoices){: external} page in the console. The following table lists the current upgrade promotional amounts for different currencies:
+After you sign up for a new Pay-As-You-Go account or upgrade your free account, you'll receive a promotional credit to use on any	{{site.data.keyword.IBM_notm}} product. To view the list of eligible products, go to the {{site.data.keyword.cloud_notm}} console and select **Catalog** > **Provider** > **{{site.data.keyword.IBM_notm}}**. 
 
+The credit might take a few hours to appear in your account. Any unused upgrade credit expires after the 30 day period ends. You are invoiced for any usage that exceeds the promotional credit. To view the promotional credit, go to the [Promotions and credits](/billing/promotions){: external} page or the [Invoices](/billing/invoices) page in the console. 
+
+The following table lists the current upgrade promotional amounts for different currencies:
 
 | Country       | Currency   | Converted Promo Amount |
 |---------------|------------|------------------------|
