@@ -52,7 +52,7 @@ If you're upgrading to reactivate a deactivated account, your account might take
 ## Promotional credit for upgrading your account
 {: #promotional-credit-for-upgrading-your-account} 
 
-If your upgrade included a promotional credit, the credit might take a few hours to appear in your account. Any unused upgrade credit expires after the 30 day period ends. You are invoiced for any usage that exceeds the promotional credit. You can view the promotional credit on the [Promotions](/billing/promotions){: external} page or the [Invoices](/billing/invoices){: external} page in the console. The following table lists the current upgrade promotional amounts for different currencies:
+If your upgrade included a promotional credit, the credit might take a few hours to appear in your account. Any unused upgrade credit expires after the 30 day period ends. You are invoiced for any usage that exceeds the promotional credit. You can view the promotional credit on the [Promotions and credits](/billing/promotions){: external} page or the [Invoices](/billing/invoices){: external} page in the console. The following table lists the current upgrade promotional amounts for different currencies:
 
 
 | Country       | Currency   | Converted Promo Amount |
