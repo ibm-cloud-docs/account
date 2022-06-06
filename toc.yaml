@@ -319,7 +319,6 @@ toc:
           label: Command reference
           topics:
           - /cli/cli-manage-catalogs-plugin
-          - /cli/cli-ibmcloud_commands_services
           - /cli/cli-ibmcloud_commands_account
           - /cli/cli-ibmcloud_enterprise
           - /cli/cli-ibmcloud_commands_iam
