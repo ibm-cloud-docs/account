@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-06-07"
+lastupdated: "2022-06-08"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -429,28 +429,32 @@ Review the available platform and service roles and the actions mapped to each t
 | `apprapp.collections.create` | Create collections | Administrator, Manager |
 | `apprapp.collections.update` | Update collections | Administrator, Manager |
 | `apprapp.collections.delete` | Delete collections  | Administrator, Manager |
-| `apprapp.segments.list` | List segments | Administrator, Config Operator, Manager, Reader, Writer |
-| `apprapp.segments.update` | Update segments | Administrator, Manager, Writer |
-| `apprapp.segments.create` | Create segments | Administrator, Manager, Writer |
-| `apprapp.segments.delete` | Delete segments | Administrator, Manager, Writer |
-| `apprapp.features.toggle` | Toggle feature | Administrator, Config Operator, Manager, Writer |
-| `apprapp.properties.patch` | Patch properties | Writer |
-| `apprapp.environments.create` | Create environments | Administrator, Manager |
-| `apprapp.environments.update` | Update environments | Administrator, Manager |
-| `apprapp.environments.delete` | Delete environments | Administrator, Manager |
-| `apprapp.environments.list` | List environments | Administrator, Config Operator, Manager, Reader, Writer |
 | `apprapp.features.list` | List features | Administrator, Config Operator, Manager, Reader, Writer |
 | `apprapp.features.create` | Create Features | Administrator, Manager |
 | `apprapp.features.update` | Update features | Administrator, Manager |
 | `apprapp.features.delete` | Delete features | Administrator, Manager |
+| `apprapp.segments.list` | List segments | Administrator, Config Operator, Manager, Reader, Writer |
+| `apprapp.segments.update` | Update segments | Administrator, Manager, Writer |
+| `apprapp.segments.create` | Create segments | Administrator, Manager, Writer |
+| `apprapp.segments.delete` | Delete segments | Administrator, Manager, Writer |
 | `apprapp.features.patch` | Patch features | Administrator, Writer |
+| `apprapp.features.toggle` | Toggle feature | Administrator, Config Operator, Manager, Writer |
 | `apprapp.properties.list` | List properties | Config Operator, Manager, Reader, Writer |
 | `apprapp.properties.update` | Update properties | Administrator, Manager |
 | `apprapp.properties.create` | Create properties | Administrator, Manager |
 | `apprapp.properties.delete` | Delete properties | Administrator, Manager |
 | `apprapp.properties.patch` | Patch properties | Administrator, Writer |
+| `apprapp.environments.create` | Create environments | Administrator, Manager |
+| `apprapp.environments.update` | Update environments | Administrator, Manager |
+| `apprapp.environments.delete` | Delete environments | Administrator, Manager |
+| `apprapp.environments.list` | List environments | Administrator, Config Operator, Manager, Reader, Writer |
 | `apprapp.instances.export` | Export instance resources to a JSON | Administrator, Manager |
 | `apprapp.instances.import` | Import instance resources from a JSON | Administrator, Manager |
+| `apprapp.gitconfigs.create` | Create git configuration | Administrator, Manager |
+| `apprapp.gitconfigs.update` | Update git configurations | Administrator, Manager |
+| `apprapp.gitconfigs.delete` | Delete GIT configuration | Administrator, Manager |
+| `apprapp.gitconfigs.view` | GET a GIT configuration | Administrator, Config Operator, Manager, Reader, Writer |
+| `apprapp.gitconfigs.promote` | Promote configuration | Manager |
 {: caption="Table 10. Service actions - App Configuration" caption-side="top"}
 {: #actions-table10}
 {: tab-title="Actions"}
