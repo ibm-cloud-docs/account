@@ -2,9 +2,11 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-02-21"
+  
+lastupdated: "2022-06-08"
 
-keywords: IBM Cloud notifications, notification preferences, email preferences, user notifications, distribution list, webhooks, Slack webhooks, Microsoft Teams webhooks, test webhooks, ServiceNow webhooks, SNOW
+
+keywords: IBM Cloud notifications, notification preferences, email preferences, user notifications, distribution list, webhooks, Slack webhooks, Microsoft Teams webhooks, ServiceNow webhooks, SNOW
 
 subcollection: account
 
@@ -13,7 +15,7 @@ subcollection: account
 {{site.data.keyword.attribute-definition-list}}
 
 # Adding webhooks to a distribution list 
-{: #webhook-distribution-list}
+{: webhook-distribution-list}
 
 In addition to adding email addresses, you can also add up to 10 webhooks to a [distribution list](/account/notifications-distribution-list){: external}. Account administrators can create and use webhooks to configure an application to receive asynchronous notifications whenever a platform event occurs. The registered webhooks send the information to the specified URL in the form of an HTTP POST request with a JSON payload. The content-type of the request is `application/json`. 
 {: shortdesc}
@@ -82,13 +84,13 @@ The following descriptions provide information about the field values that are b
 
 `category`: The type of the event. This can be incident, maintenance, announcement, or security bulletins. 
 
-`componentNames`: If there is an impacted service, this field represents it. This also can be a global value like `Component: IBM Cloud`, not only a specific service. See the services on the [{{site.data.keyword.Bluemix_notm}} catalog page](/catalog#services){: external}.
+`componentNames`: If a service is impacted, this field represents it. This also can be a global value like `Component: IBM Cloud`, not only a specific service. See the services on the [{{site.data.keyword.Bluemix_notm}} catalog page](/catalog#services){: external}.
 
 `regions`: This field shows you the location of the event. 
 
-`severity`: This field refers to the severity of the event. This can be severity 1, 2, 3 or 4 for incidents, high, medium, or low for maintenance, and major or minor for announcements. See the following detailed severity level descriptions:
+`severity`: This field refers to the severity of the event. This can be Severity 1, 2, 3 or 4 for incidents, high, medium, or low for maintenance, and major or minor for announcements. See the following detailed severity level descriptions:
    * **Incidents** 
-     * `Severity 1`: Business critical functionality is inoperable or critical interference failed. This severity usually applies to the production environment and the inability to access services is causing a critical impact on operations.
+     * `Severity 1`: Business-critical functionality is inoperable or critical interference failed. This severity usually applies to the production environment and the inability to access services is causing a critical impact on operations.
      * `Severity 2`: Core functionality is impacted. Service is operational but causing major impact on usage.
      * `Severity 3`: Partial or non-critical disruption to functionality with minimal or isolated impact.
      * `Severity 4`: A minor issue that requires action, but does not impact functionality or usage.
@@ -136,7 +138,7 @@ There might be extra fields added in the future without a major version change. 
 {: note}
 
 ## Add webhooks to a distribution list 
-{: #add-webhook-distribution-list}
+{: add-webhook-distribution-list}
 
 To add webhooks to a distribution list, complete the following steps: 
 1. Go to **Manage** > **Account** > **Notification distribution list** in the {{site.data.keyword.cloud}} console. 
@@ -146,11 +148,11 @@ To add webhooks to a distribution list, complete the following steps:
    Custom header and secure header fields are also available to set. You can specify these by clicking **Add header** or **Add secure header**. If you choose to add a secure header for credentials, they are passed encrypted with the private data. This type of header can be deleted, but cannot be edited later. You can easily edit and delete custom headers later. 
    {: tip}
   
-   If you no longer want to receive notifications, you can easily delete your webhook from the distribution list by clicking the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Delete** in your webhook's row. 
+    If you no longer want to receive notifications, you can easily delete your webhook from the distribution list by clicking the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Delete** in your webhook's row. 
 
-   You can select which {{site.data.keyword.cloud_notm}} account you use by clicking the account switcher in the console. Users in the selected account receive notifications about any events that affect the account. 
-   {: note}
-   
+    You can select which {{site.data.keyword.cloud_notm}} account you use by clicking the account switcher in the console. Users in the selected account receive notifications about any events that affect the account. 
+    {: note}
+    
 ### Send test notifications to a webhook
 {: test-webhook}
 
@@ -160,10 +162,10 @@ Complete the following steps to send a test notification to a webhook:
 1. Go to **Manage** > **Account** > **Notification distribution list** in the {{site.data.keyword.cloud_notm}} console. 
 2. Select the webhook that you would like to send a test notification to, and click the **Actions** icon ![Actions](../icons/action-menu-icon.svg "Actions").
 3. Click **Test** > **Send test**.
-4. To resend the test notification, click **Resend test**.   
-  
+4. To resend the test notification, click **Resend test**.
+
 ## Add Slack webhooks to a distribution list 
-{: add-slack-webhook}
+{: #add-slack-webhook}
 
 You can now add Slack webhooks to your distribution list and receive account-wide {{site.data.keyword.Bluemix_notm}} notifications through them. 
 
@@ -180,7 +182,7 @@ To add a Slack webhook in the {{site.data.keyword.Bluemix_notm}} console, comple
 
 Adding Microsoft Teams webhooks to your distribution list is also available for you to receive account-wide {{site.data.keyword.Bluemix_notm}} notifications. 
 
-To create a webhook in the {{site.data.keyword.Bluemix_notm}} console, first create the incoming webhook in Microsoft Teams. This allows external apps to share content in Teams channels and provides the unique URL where you can send the notification message text in the form of a JSON payload. You receive the notifications in the selected Teams channel in which you added the incoming webhook. For more information, see [Create Incoming Webhook](https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook){: external}. 
+To create a webhook in the {{site.data.keyword.Bluemix_notm}} console, first create the incoming webhook in Microsoft Teams. This allows external apps to share content in Teams channels, and provides the unique URL where you can send the notification message text in the form of a JSON payload. You receive the notifications in the selected Teams channel in which you added the incoming webhook. For more information, see [Create Incoming Webhook](https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook){: external}. 
 
 To add a Microsoft Teams webhook in the {{site.data.keyword.Bluemix_notm}} console, complete the following steps: 
 
