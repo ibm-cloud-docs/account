@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022
-lastupdated: "2022-05-31"
+lastupdated: "2022-06-09"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, power, power systems, power systems virtual server
 
@@ -43,11 +43,8 @@ The tutorial includes steps for deploying a virtual server image to a target {{s
 {: #catalog-vsipower-prereqs}
 
 1. Verify that you're using a Pay-As-You-Go or Subscription account. See [Viewing your account type](/docs/account?topic=account-account_settings#view-acct-type) for more details.
-1. Create a [{{site.data.keyword.powerSys_notm}} instance](/docs/power-iaas?topic=power-iaas-creating-power-virtual-server).
-1. Create an instance of [{{site.data.keyword.cloud_notm}} Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage) and upload your image to a bucket.
-1. Create your [HMAC credentials](/docs/cloud-object-storage?topic=cloud-object-storage-uhc-hmac-credentials-main).
-1. [Open a support case](/docs/power-iaas?topic=power-iaas-getting-help-and-support) so the {{site.data.keyword.powerSys_notm}} product management team can convert your image into a stock image. Include your HMAC credentials and bucket details in the support case. 
-1. After the {{site.data.keyword.powerSys_notm}} product management team converts your image into a stock image, create your [Terraform template](/docs/schematics?topic=schematics-create-tf-config). 
+1. Create your {{site.data.keyword.powerSys_notm}} instance [and convert it into a public image](/docs/power-iaas?topic=power-iaas-virtual-appliances#onboard-vsi).
+1. After your image is converted into a public image, create your [Terraform template](/docs/schematics?topic=schematics-create-tf-config).
 1. [Upload your Terraform template and readme file to your GitHub repository](https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample/tree/main#upload-your-terraform-template-to-a-github-release){: external}. 
 
    Use the [latest release of the sample code](https://github.com/IBM-Cloud/isv-power-vsi-product-deploy-sample ){: external} as an example of how to set up your repository.
