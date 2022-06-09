@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-05-31"
+lastupdated: "2022-06-09"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -97,6 +97,18 @@ Complete the following steps to import software to your private catalog:
 1. If applicable, enter the version of the software in the format of major version, minor version, and revision. For example, enter version 1.1.2.    
 1. Select a catalog category for the product. Categories are used to organize products in the {{site.data.keyword.cloud_notm}} catalog based on function, use, or common solutions.
 1. Click **Add version**. 
+
+## Adding catalog entry details
+{: #catalog-tile}
+{: ui}
+
+When you publish your product to the catalog for users with access to your private catalog, they see a tile with the product name and other details that add during onboarding. In addition to the category that you set when you import your software, you can add other filters that are related to industry, compliance, technologies it works with, and more. Each of these filters is used in the catalog for users to find software that fits their needs. In the catalog entry details section, you can also evaluate and make updates to the short descriptions, documentation URL, and even keywords to help user search and find your product quickly.
+
+1. From the Catalog entry details section, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit").
+2. Review the information that was imported with your product, and make edits as needed.
+3. Review the filters and industry options to select catalog filters that apply. You can select up to five industry filters.
+4. Check your catalog entry preview to see how your catalog tile displays to users who are evaluating your software in the catalog.
+5. Click **Save** when you're happy with your changes.
 
 ## Configuring the software
 {: #catalog-configure-details}
