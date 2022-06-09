@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-06-08"
+lastupdated: "2022-06-09"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -4096,14 +4096,14 @@ Review the available platform and service roles and the actions mapped to each t
 | `iam-identity.profile.update` | Update the details of an existing Trusted Profile. | Administrator, Editor, Operator |
 | `iam-identity.profile.delete` | Delete a Trusted Profile. | Administrator, Operator |
 | `iam-identity.profile.get` | Get the details of an existing Trusted Profile. | Administrator, Editor, Operator, Viewer |
-| `iam-identity.profile.linkToResource` | actiondescription.iam-identity.profile.linkToResource | Administrator, Editor, Operator |
+| `iam-identity.profile.linkToResource` | Link a trusted profile to a resource | Administrator, Editor, Operator |
 | `iam-identity.idp.get` | Get the details of an existing Identity Provider configuration. | Administrator, Editor, Operator |
 | `iam-identity.idp.list` | List Identity Provider configurations. | Administrator, Editor, Operator |
 | `iam-identity.idp.create` | Create a new Identity Provider configuration. | Administrator, Operator |
 | `iam-identity.idp.update` | Update an existing Identity Provider configuration. | Administrator, Editor, Operator |
 | `iam-identity.idp.delete` | Delete an Identity Provider configuration. | Administrator, Operator |
 | `iam-identity.idp.test` | Test an Identity Provider configuration. | Administrator, Editor, Operator |
-| `iam-identity.idp.metadata` | actiondescription.iam-identity.idp.metadata | Administrator, Editor, Operator |
+| `iam-identity.idp.metadata` | Get the metadata of an identity provider | Administrator, Editor, Operator |
 | `iam-identity.account.get` | Get the account configuration. | Administrator, Editor, Operator, Viewer |
 | `iam-identity.account.create` | Create a new account configuration. | Administrator, Operator |
 | `iam-identity.account.update` | Update an existing account configuration. | Administrator, Editor, Operator |
@@ -4113,11 +4113,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `iam-identity.account.disable_idp` | Disable an Identity Provider configuration for the account. | Administrator, Editor, Operator |
 | `iam-identity.account.delete` | Delete an account configuration. | Administrator, Operator |
 | `iam-identity.session.manage` | Manage the user sessions of an account. | Administrator |
-| `iam-identity.crnmapping.create` | actiondescription.iam-identity.crnmapping.create | Administrator |
-| `iam-identity.crnmapping.read` | actiondescription.iam-identity.crnmapping.read | Administrator |
-| `iam-identity.crnmapping.delete` | actiondescription.iam-identity.crnmapping.delete | Administrator |
-| `iam-identity.activity.get` | actiondescription.iam-identity.activity.get | Administrator, Editor, Operator, Viewer |
-| `iam-identity.report.get` | actiondescription.iam-identity.report.get | Administrator |
+| `iam-identity.crnmapping.create` | Create a CRN mapping for an account | Administrator |
+| `iam-identity.crnmapping.read` | Read CRN mappings of an account | Administrator |
+| `iam-identity.crnmapping.delete` | Delete a CRN mapping for an account | Administrator |
+| `iam-identity.activity.get` | Get authentication activity information | Administrator, Editor, Operator, Viewer |
+| `iam-identity.report.create` | actiondescription.iam-identity.report.create | Administrator |
+| `iam-identity.report.get` | Create and get a report for the account | Administrator |
 {: caption="Table 72. Service actions - IAM Identity Service" caption-side="top"}
 {: #actions-table72}
 {: tab-title="Actions"}
