@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2022
 
-lastupdated: "2022-05-31"
+lastupdated: "2022-06-13"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access 
 
@@ -68,7 +68,7 @@ If a user doesn't have a role on the resource group that contains the resources,
 To assign access to all resources in a resource group or to just one service within a resource group, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users** or **Service IDs**, depending on which identity you want to assign access.
-2. Click on the user or service ID that you want to assign access, then click **Access policies** > **Assign access**.
+2. Click on the user or service ID that you want to assign access, then click **Access** > **Assign access**.
 3. Select a group of services or a sinlge service. Then, click **Next**.
 4. Scope the access to **Specific resources**, then select the **Resource group** attribute. By selecting a resource group, you can select roles for access to manage the resource group as well.
 5. Click **Next**. 
@@ -449,7 +449,7 @@ Removing access for a user or service ID can take up to 10 minutes to take effec
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users** or **Service IDs**, depending on which identity you want to manage.
 2. Select the user's name or service ID that you want to remove access for.
-3. Go to **Access policies** and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Remove** on the row for the policy you want to remove.
+3. Go to **Access** and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Remove** on the row for the policy you want to remove.
 4. Review the policy details that you're removing, and confirm by clicking **Remove**.
 
 You can also remove users and service IDs from access groups by selecting the checkbox for the user or service ID that you want to remove, and click **Remove**. Then, click **Remove** again to approve the process. 
@@ -547,7 +547,7 @@ If you need to review your assigned access in an account that you've been added 
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users** or **Service IDs**, depending on which identity you want to review.
 2. Select your name or the service ID.
-3. Review the assigned access in the **Access policies** and **Access groups** sections.
+3. Review the assigned access in the **Access** tab**.
 
 If you need more access, you must contact the account owner to update your access or contact the administrator for the service or service instance to update the access policy.
 {: tip}
@@ -567,7 +567,7 @@ ibmcloud iam user-policies name@example.com
 {: #review-your-access-api}
 {: api}
 
-By using the API, you can only retrieve all policies in the account and filter by attribute values. You can check your assigned access in an account by going to **Manage** > **Users** > **your_name** > **Access policies** in the {{site.data.keyword.cloud_notm}} console. To retrieve policies, call the [{{site.data.keyword.iamlong}} (IAM) Policy Management API](/apidocs/iam-policy-management#list-policies){: external} as shown in the following sample request:
+By using the API, you can only retrieve all policies in the account and filter by attribute values. You can check your assigned access in an account by going to **Manage** > **Users** > **your_name** > **Access** in the {{site.data.keyword.cloud_notm}} console. To retrieve policies, call the [{{site.data.keyword.iamlong}} (IAM) Policy Management API](/apidocs/iam-policy-management#list-policies){: external} as shown in the following sample request:
 
 ```bash
 curl -X GET 'https://iam.cloud.ibm.com/v1/policies?account_id=$ACCOUNT_ID' \

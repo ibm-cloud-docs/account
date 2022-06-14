@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-05-31"
+lastupdated: "2022-06-13"
 
 keywords: troubleshoot my access, what do I have acces to
 
@@ -12,15 +12,7 @@ content-type: troubleshoot
 
 ---
 
-{:tsSymptoms: .tsSymptoms}
-{:tsCauses: .tsCauses}
-{:tsResolve: .tsResolve}
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:troubleshoot: data-hd-content-type='troubleshoot'}
+{{site.data.keyword.attribute-definition-list}}
 
 # How do I know what access I am assigned?
 {: #troubleshoot-myaccess}
@@ -43,6 +35,6 @@ Go to **Manage** &gt; **Access (IAM)** in the {{site.data.keyword.cloud_notm}} c
 {: tsResolve}
 
 
-* To view IAM access policies that are assigned to you, select **Access policies** and view the Access policies table. 
-* To determine what access you have through the access groups you are assigned, select **Access groups** and view the Access groups table. Check the access policies for each of the access groups.
+* To view IAM access policies that are assigned to you, select **Access** and view the Access policies table. 
+* To determine what access you have through the access groups you are assigned, select **Access** and view the Access groups table. Check the access policies for each of the access groups.
 * To view your Cloud Foundry access for all orgs and spaces, select **Cloud Foundry**.

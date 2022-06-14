@@ -3,7 +3,7 @@
 copyright:
   years: 2020, 2022
 
-lastupdated: "2022-05-31"
+lastupdated: "2022-06-13"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key
 
@@ -181,7 +181,7 @@ IAM access groups provide a way for you to quickly and easily assign access to m
 
 2. Assign access to the group. 
 
-   1. Click **Access policies** > **Assign access**.
+   1. Click **Access** > **Assign access**.
    2. Select individual services or a group of services: 
     
       * **All Identity and Access enabled services**: Assigns access to IAM-enabled services, which are services that are managed by using IAM access control and assigned to a resource group.

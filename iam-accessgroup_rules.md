@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2022
 
-lastupdated: "2022-03-25"
+lastupdated: "2022-06-13"
 
 keywords: dynamic rules,access groups,specific identity attributes,identity provider,federated ID,
 
@@ -120,6 +120,6 @@ You can also view a list of access groups that a user is added to based on dynam
 
 1. Go to **Manage** > **Access (IAM)** > **Users** in the {{site.data.keyword.cloud_notm}} console. 
 1. Click on a user. 
-1. Click **Access groups**. 
+1. Click **Access**. 
 1. The access groups that a user is a dynamic member of is indicated by the type `Dynamic`. 
 

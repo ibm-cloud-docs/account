@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2022
 
 
-lastupdated: "2022-05-31"
+lastupdated: "2022-06-13"
 
 keywords: frequently asked questions, iam faqs
 
@@ -64,8 +64,8 @@ The access management systems are entirely different. IAM resources belong to a 
 
 In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select your name on the Users page. Then, depending on the access you're looking for, open the different tabs:
 
-* To determine what access you have through the access groups you are assigned, select **Access groups** and view the table.
-* To see IAM access policies that are assigned to you, select **Access policies** and view the table.
+* To determine what access you have through the access groups you are assigned, select **Access** and view the Access goups table.
+* To see IAM access policies that are assigned to you, select **Access** and view the Access policies table.
 * To see your Cloud Foundry access for all orgs and spaces, select **Cloud Foundry**.
 
 ## What actions are mapped to each IAM role?
@@ -92,7 +92,7 @@ In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IA
 
 1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Access (IAM)**, and then select **Users**.
 2. Select your name or another user's name from the list. 
-3. Click **Access policies** and **Access groups** to view the permissions that are associated with the user.
+3. Click **Access** to view the permissions that are associated with the user.
 
 The `owner` tag is listed for the owner of the account. This user is assigned the administrator role on the service or service instance.  
 {: note} 
@@ -270,7 +270,7 @@ If you need to assign access to IAM-enabled infrastructure services, such as {{s
 
 1. Click **Manage** > **Access (IAM)** > **Users** 
 1. Select the user. 
-1. Click **Access policies** or **Access groups**.
+1. Click **Access**.
 
 ## How do I manage access for users previously assigned billing and support permissions in my SoftLayer account?
 {: #migrated-permissions-faq}

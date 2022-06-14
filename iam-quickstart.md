@@ -2,7 +2,7 @@
 
 copyright:
    years: 2020, 2022
-lastupdated: "2022-05-31"
+lastupdated: "2022-06-13"
 
 keywords: get started with IAM, getting started with Identity and Access Management tutorial, IAM tutorial, IAM quick start, resource group, access group, access policy, inviting users
 
@@ -66,7 +66,7 @@ Next, continue to set up your group by adding users or service IDs:
 
 After you create your access groups, you can assign access to all members of the group with one or more policies. By assigning a group of users access to a group of resources with a single policy, you reduce the overall number of policies that you need to manage.
 
-1. Click **Access policies** > **Assign access**. 
+1. Click **Access** > **Assign access**. 
 2. Select a sinlge service or group of services. Then, click **Next**.
 3. Scope the access to all resource or specific resources based on attributes. Then, click **Next**.
 4. Select the level of access that you want to assign.
@@ -134,7 +134,7 @@ You can update existing access by editing the assigned roles for a user.
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users**.
 2. Select the name of the user that you want to edit access for.
-3. Click **Access policies**.
+3. Click **Access**.
 4. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** on the row for the policy that you want to edit.
 5. Edit the policy by updating the assigned roles.
 6. Click **Save**.

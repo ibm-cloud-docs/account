@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-05-31"
+lastupdated: "2022-06-13"
 
 keywords: catalog, private catalogs, IAM access, roles, private catalog service, access groups, permissions, IAM, catalog management, access group
 
@@ -36,7 +36,7 @@ Administrator access is required for setting account-level filters to the {{site
 1. Go to **Manage** > **Access (IAM)** > **Access groups** in the {{site.data.keyword.cloud_notm}} console.
 1. Click **Create**.
 1. Enter `private-catalog-admins` as the group name, and click **Create**.
-1. Click **Access policies** > **Assign access**.
+1. Click **Access** > **Assign access**.
 1. Select **Catalog Management** from the list of services.
 1. Select the catalog that you want users to access.
 1. In the Platform access section, select the **Administrator** role.
@@ -52,7 +52,7 @@ Editor access is required for creating private catalogs, setting filters at the 
 
 1. Go to **Access groups**, and click **Create**.
 1. Enter `private-catalog-editors` as the group name, and click **Create**.
-1. Click **Access policies** > **Assign access**.
+1. Click **Access** > **Assign access**.
 1. Select **Catalog Management** from the list of services.
 1. Select the catalog that you want users to access.
 1. In the Platform access section, select the **Editor** role.
@@ -73,7 +73,7 @@ Viewer access is required for viewing private catalogs, the filtered {{site.data
 
 1. Go to **Access groups**, and click **Create**.
 1. Enter `private-catalog-viewers` as the group name, and click **Create**.
-1. Click **Access policies** > **Assign access**.
+1. Click **Access** > **Assign access**.
 1. Select **Catalog Management** from the list of services.
 1. Select the catalog that you want users to access.
 1. In the Platform access section, select the **Viewer** role.
@@ -86,7 +86,7 @@ You also need to have viewer access on the resource group to which your private 
 To assign viewer access to your private catalog's resource group, use the following steps:
 
 1. Go to **Users** and select the user. 
-1. Select **Access policies** > **Assign access**. 
+1. Select **Access** > **Assign access**. 
 1. Select **All Identity and Access enabled services** from the list of services.
 1. Scope the access to **Specific resources** based on selected attributes, and select your private catalogs resource group. 
 1. For Platform access, select the **Viewer** role.
