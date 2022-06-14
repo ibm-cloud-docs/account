@@ -5,7 +5,7 @@ copyright:
   years: 2021, 2022
 
 
-lastupdated: "2022-05-27"
+lastupdated: "2022-06-14"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access, access group
 
@@ -69,7 +69,7 @@ Complete the following steps to define which federated users can access specific
       1. Click **Add**. 
    * Assign access to the trusted profile with an access policy.  
       1. Select **Access policy**. Based on your level of access, you can assign IAM policies and classic infrastructure permissions.
-      1. Select a single service or a group of services, like **All Identity and Access enabled services**, **All Account Management services**, or **IAM services**. Then, click **Next**. 
+      1. Select a single service or a group of services, like **All Identity and Access enabled services**, or **All Account Management services**. Then, click **Next**. 
       1. Scope the acccess to **All resources** or **Specific resources** based on selected attributes. Then, click **Next**. 
       1. Select any combination of roles and permissions to define the scope of access, and click **Review**. 
       1. Click **Add** to add your policy configuration to your summary.
@@ -108,7 +108,7 @@ Complete the following steps to set up better control over granting access to co
       1. Click **Add**. 
    * Assign access to the trusted profile with an access policy.  
       1. Select **Access policy**. Based on your level of access, you can assign IAM policies and classic infrastructure permissions.
-      1. Select a single service or a group of services, like **All Identity and Access enabled services**, **All Account Management services**, or **IAM services**. Then, click **Next**. 
+      1. Select a single service or a group of services, like **All Identity and Access enabled services**, or **All Account Management services**. Then, click **Next**. 
       1. Scope the acccess to **All resources** or **Specific resources** based on selected attributes. Then, click **Next**. 
       1. Select any combination of roles and permissions to define the scope of access, and click **Review**. 
       1. Click **Add** to add your policy configuration to your summary.
