@@ -4,7 +4,7 @@ copyright:
 
   years: 2022
 
-lastupdated: "2022-06-01"
+lastupdated: "2022-06-17"
 
 keywords: what is IAM, IAM features, IAM API, how IAM works
 
