@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2022
 
-lastupdated: "2022-05-31"
+lastupdated: "2022-06-19"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -425,7 +425,7 @@ ibmcloud login -c ACCOUNT_ID --accept
 If the invited user is already a member of {{site.data.keyword.cloud_notm}}, they can accept invitations by using the API. In the following example, the `ACCOUNT_ID` is the ID of the targeted account that the user is invited to join and the `IAM_TOKEN` belongs to the invitee.
 
 ```curl
-curl --request POST \
+curl -X POST \
   'https://iam.cloud.ibm.com/v2/users/accept' \
   --header 'Authorization: Bearer <IAM_TOKEN>' \
   --header 'Content-Type: application/json' \
