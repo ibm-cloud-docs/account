@@ -54,7 +54,7 @@ An account owner can invite as many users as they would like to their IBM Cloud 
 
 The way that you manage access in IBM Cloud depends on the type of resource that you want to assign access to. The user access policy for available resources and services within the cloud catalog is managed by either Classic infrastructure and/or IAM or Cloud Foundry.
 
-As the account owner or the administrator of an account management service, you can use these services to grant users access to All Account Management Services, Billing, Global Resource Catalog, IAM Access Groups Service, IAM Identity Service, Support Center, and User Management. Account Management roles include Administrator, Editor, Operator, or Viewer. 
+As the account owner or the administrator of an account management service, you can use these services to grant users access to All Account Management services, Billing, Global Resource Catalog, IAM Access Groups Service, IAM Identity Service, Support Center, and User Management. Account Management roles include Administrator, Editor, Operator, or Viewer. 
 
 With Classic Infrastructure, you can select from three permission sets that will assign bulk access: View Only, Basic User, and Super User. You can give users access to Classic Infrastructure service or Classic Infrastructure device with specific permissions for Account, Network, Devices, and Services.
 

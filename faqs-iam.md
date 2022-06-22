@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2022
 
 
-lastupdated: "2022-06-13"
+lastupdated: "2022-06-22"
 
 keywords: frequently asked questions, iam faqs
 
@@ -143,10 +143,10 @@ So, minimally the user must have the following access:
 ## How do I assign access to all resource groups?
 {: #all-rgs}
 
-To assign a user, service ID, or access group a policy on all resource groups, you have a couple of options:
+To assign a user, service ID, or access group a policy on all resource groups,you must assign the following:
 
-* A policy for **All Identity and Access enabled services** in the **Account** with the **Viewer** resource group access role selected. However, you must also assign at least one platform or service role to assign this type of policy.
-* A policy for **All Account Management Services** with the **Viewer** role or higher provides access to view all resource groups. However, be aware that this type of policy also assigns the role that you choose for each account management service, so it can be a powerful policy that enables a user to manage users, account settings, billing information, and more.
+* A policy for **All Identity and Access enabled services** with the **Viewer** resource group access role selected. However, you must also assign at least one platform or service role to assign this type of policy.
+* A policy for **All Account Management services** with the **Viewer** role or higher provides access to view all resource groups. However, be aware that this type of policy also assigns the role that you choose for each account management service, so it can be a powerful policy that enables a user to manage users, account settings, billing information, and more.
 * A policy with **No service access** and a particular resource group that is selected as well as a resource group access role assigned. You can repeat this type of policy as needed for each available resource group in the account.
 
 You can also assign access to individual resource groups with a policy on a service as long as you select a targeted resource group by name and assign a resource group access role.
@@ -164,7 +164,7 @@ A user must be assigned an access policy on the specific resource with at least 
 {: faq}
 {: support}
 
-For IAM-enabled services, you must have Administrator role on the service or resource that you want to assign users access to. If you want to assign access to all services or resources in the account, you need a policy on all Identity and Access enabled services with the Administrator role. And, to assign users access to account management services, you must be assigned the Administrator role on the specific service or all account management services.
+For IAM-enabled services, you must have Administrator role on the service or resource that you want to assign users access to. If you want to assign access to all services or resources in the account, you need a policy on **All Identity and Access enabled services** with the Administrator role. And, to assign users access to account management services, you must be assigned the Administrator role on the specific service or all account management services.
 
 For Cloud Foundry services, you must have Cloud Foundry org and space manager roles to give access to Cloud Foundry resources.
 
@@ -221,10 +221,10 @@ Access control and account resource organization are the major differences betwe
 {: faq}
 {: support}
 
-To assign a user in your account full administrator access, go to **Manage** > **Access (IAM)** in the console, select the user's name, and assign the following access:
+To assign a user in your account full administrator access, go to **Manage > Access (IAM)** in the console, select the user's name, and assign the following access:
 
-* An IAM policy with Administrator and Manager roles on All Identity and Access enabled services, which enables a user to create service instances and assign users access to all resources in the account.
-* An IAM policy with Administrator role on All account management services, which enables a user to complete tasks like inviting and removing users, managing access groups, managing service IDs, managing private catalog offerings, and track billing and usage.
+* An IAM policy with Administrator and Manager roles on **All Identity and Access enabled services**, which enable a user to create service instances and assign users access to all resources in the account.
+* An IAM policy with Administrator role on **All Account Management services**, which enables a user to complete tasks like inviting and removing users, managing access groups, managing service IDs, managing private catalog offerings, and track billing and usage.
 * The Super user permission set for classic infrastructure, which includes all of the available classic infrastructure permissions
 * Cloud Foundry manager for all orgs, but only account owners can create the orgs.
 
@@ -248,9 +248,9 @@ No. You can invite users, and then assign access later.
 {: #pending-user}
 {: faq}
 
-A user who is list as `Pending` is a user who has been invited to {{site.data.keyword.cloud_notm}} but who hasn't accepted their invitation. On the Users page, the management actions for these users include resending the invitation or cancelling the invitation. 
+A user who is list as `Pending` is a user who has been invited to {{site.data.keyword.cloud_notm}} but who hasn't accepted their invitation. On the Users page, the management actions for these users include resending the invitation or cancelling the invitation. 
 
-When inspecting access group memberships or access policies in your account, you might see memberships or policies that are related to pending users that were created as part of the invite. These display with an IAM ID that uses the `BSS-`. This IAM ID is a placeholder for the memberships and policies until the user accepts the invitation. And, since the user hasn't registered with {{site.data.keyword.cloud_notm}}, they can't retrieve an IAM access token to leverage the assigned access. When the user accepts the invitation and registers with {{site.data.keyword.cloud_notm}}, the ID in these memberships and policies is replaced with their assigned IAM ID.
+When inspecting access group memberships or access policies in your account, you might see memberships or policies that are related to pending users that were created as part of the invite. These display with an IAM ID that uses the `BSS-`. This IAM ID is a placeholder for the memberships and policies until the user accepts the invitation. And, since the user hasn't registered with {{site.data.keyword.cloud_notm}}, they can't retrieve an IAM access token to leverage the assigned access. When the user accepts the invitation and registers with {{site.data.keyword.cloud_notm}}, the ID in these memberships and policies is replaced with their assigned IAM ID.
 
 
 ## How do I add authentication into my web and mobile apps?

@@ -2,7 +2,7 @@
 
 copyright:
    years: 2020, 2022
-lastupdated: "2022-06-13"
+lastupdated: "2022-06-22"
 
 keywords: get started with IAM, getting started with Identity and Access Management tutorial, IAM tutorial, IAM quick start, resource group, access group, access policy, inviting users
 
@@ -49,34 +49,34 @@ A unique name is required to differentiate access groups in the account.
 To create an access group, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Access Groups**.
-2. Click **Create**.
-3. Enter a unique name to identify your access group and an optional description.
-4. Click **Create**.
+1. Click **Create**.
+1. Enter a unique name to identify your access group and an optional description.
+1. Click **Create**.
 
 Next, continue to set up your group by adding users or service IDs:
 
 1. Select the name of the group that you want to update.
-2. Click **Add users**.
-3. Select the users that you want to add from the list, and click **Add to group**.
-4. To add service IDs to the group, click **Service IDs**.
-5. Select the IDs that you want to add from the list, and click **Add to group**.
+1. Click **Add users**.
+1. Select the users that you want to add from the list, and click **Add to group**.
+1. To add service IDs to the group, click **Service IDs**.
+1. Select the IDs that you want to add from the list, and click **Add to group**.
 
 ### Assign access to your groups
 {: #group_access}
 
 After you create your access groups, you can assign access to all members of the group with one or more policies. By assigning a group of users access to a group of resources with a single policy, you reduce the overall number of policies that you need to manage.
 
-1. Click **Access** > **Assign access**. 
-2. Select a sinlge service or group of services. Then, click **Next**.
-3. Scope the access to all resource or specific resources based on attributes. Then, click **Next**.
-4. Select the level of access that you want to assign.
+1. Click **Access** > **Assign access**.
+1. Select a single service or group of services. Then, click **Next**.
+1. Scope the access to all resource or specific resources based on attributes. Then, click **Next**.
+1. Select the level of access that you want to assign.
 
    If you're assigning access to IAM-enabled services, some services support the use of advanced operators to grant access to resources that satisfy specific naming conventions. See [Assigning access by using wildcard policies](/docs/account?topic=account-wildcard) for more information. 
    {: note}
   
-5. Click **Review**. 
-6. Click **Add** to add your policy configuration to your policy summary.
-7. Click **Assign** to assign all added access to your access group. 
+1. Click **Review**. 
+1. Click **Add** to add your policy configuration to your policy summary.
+1. Click **Assign** to assign all added access to your access group. 
 
 ## Invite users 
 {: #invite-user}
@@ -85,23 +85,20 @@ After you create your access groups, you can assign access to all members of the
 You can invite one or multiple users in a single invite. If you invite multiple users in one invitation, the same access is assigned to each user. However, you can invite users to your account with no access, and assign them access later.
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Users**.
-2. Click **Invite users**. Specify the email addresses of the users. If you are inviting more than one user with a single invitation, they are all assigned the same access.
-3. Add one or more of the access options that you manage. You must assign at least one access option. For any access options that you don't add and configure, the default value of **No access** is assigned. Depending on the options that you are authorized to manage, you can assign the following types of access:
+1. Click **Invite users**. Specify the email addresses of the users. If you are inviting more than one user with a single invitation, they are all assigned the same access.
+1. Add one or more of the access options that you manage. You must assign at least one access option. For any access options that you don't add and configure, the default value of **No access** is assigned. Depending on the options that you are authorized to manage, you can assign the following types of access:
 
    * Access groups: Click **Add** for each access group that you want the users to belong to. 
    * Access policy: Assign individual IAM access policies, Cloud Foundry roles, or classic infrastructure permissions.
      * Select **Cloud Foundry** and specify an organization and a region to select a specific space. Then, assign a space role. An organization and space role are both required to add the access assignment to the invite.
      * Select **Classic infrastructure**, and then select from the three permission sets.
-     * Select a group of services like **All Identity and Access enabled services** or **All Account management services**, or select a specific service. Next, you can scope the access to the entire account or just one resource group. Then, select all roles that apply. To view what actions are mapped to each role, click the numbers listed next to each role.
+     * Select a group of services like **All Identity and Access enabled services**, **All Account Management services**, and **All IAM Account Management services**, or select a specific service. Next, you can scope the access to the entire account or just one resource group. Then, select all roles that apply. To view what actions are mapped to each role, click the numbers listed next to each role.
      
          Some services support the use of advanced operators to grant access to resources that satisfy specific naming conventions. See [Assigning access by using wildcard policies](/docs/account?topic=account-wildcard) for more information. 
-     
-         If you select the **Account** scope for the access policy, the user must already have the Viewer role or higher on the resource group or groups that contain the resources you want the user to have access to. Without a role on a resource group, the user can't work with the resource from the Resource list page in the console.
-         {: tip}
-     
-4. Then, select all roles that apply.
-5. Select **Add** to save the access assignment to the invitation.
-6. After you add all the necessary access assignments, click **Invite**.
+
+1. Then, select all roles that apply.
+1. Select **Add** to save the access assignment to the invitation.
+1. After you add all the necessary access assignments, click **Invite**.
 
 For more information, see [Inviting users to an account](/docs/account?topic=account-iamuserinv).
 
@@ -117,12 +114,12 @@ After you invite users, you might want to assign more access or edit the existin
 To assign a new access policy, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users**.
-2. From the row for the user that you want to assign access, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Assign access**.
-3. Select a service or group of services. Then, click **Next**.
-4. Scope the access to all resources or specific resources based on selected attributes. Then, click **Next**.
-5. Select any combination of roles or permissions to define the scope of access, and click **Review**. For more information, see [IAM roles](/docs/account?topic=account-userroles#iamusermanrol).
-6. Click **Add** to add your policy configuration to your policy summary. 
-7. Click **Assign** to assign all added access to the selected user. 
+1. From the row for the user that you want to assign access, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Assign access**.
+1. Select a service or group of services. Then, click **Next**.
+1. Scope the access to all resources or specific resources based on selected attributes. Then, click **Next**.
+1. Select any combination of roles or permissions to define the scope of access, and click **Review**. For more information, see [IAM roles](/docs/account?topic=account-userroles#iamusermanrol).
+1. Click **Add** to add your policy configuration to your policy summary. 
+1. Click **Assign** to assign all added access to the selected user. 
     
 Assign the viewer role or higher to the resource group that contains the resource to ensure that the user can access the resource from their list of resources.
 {: tip}
@@ -133,11 +130,11 @@ Assign the viewer role or higher to the resource group that contains the resourc
 You can update existing access by editing the assigned roles for a user.
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users**.
-2. Select the name of the user that you want to edit access for.
-3. Click **Access**.
-4. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** on the row for the policy that you want to edit.
-5. Edit the policy by updating the assigned roles.
-6. Click **Save**.
+1. Select the name of the user that you want to edit access for.
+1. Click **Access**.
+1. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** on the row for the policy that you want to edit.
+1. Edit the policy by updating the assigned roles.
+1. Click **Save**.
 
 ## Next steps
 {: #iam-user-next}

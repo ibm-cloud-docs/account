@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2022
 
-lastupdated: "2022-06-13"
+lastupdated: "2022-06-22"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access 
 
@@ -32,8 +32,8 @@ If you delete or edit an existing policy for a service ID currently being used, 
 {: note}
 
 If you want to enable a user full administrator access to complete [account management tasks](/docs/account?topic=account-account-services#account-management-access), such as inviting and removing users, viewing billing and usage, managing service IDs, managing access groups, managing user access, and access to all IAM-enabled resources, you must assign a user the following access:
-* A policy for **All Identity and Access enabled services** within the **Account** with the Administrator and Manager roles.
-* A policy with Administrator role on **All Account Management Services**.
+* A policy for **All Identity and Access enabled services** with the Administrator and Manager roles.
+* A policy with Administrator role on **All Account Management services**.
 
 You can also set access management tags to manage access. For more information, see [Controlling access to resources by using tags](/docs/account?topic=account-access-tags-tutorial).
 {: tip}
@@ -46,17 +46,17 @@ You can also set access management tags to manage access. For more information, 
 
 To assign access to an individual resource in the account or access to all resources in the account, complete the following steps:
 
-1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users** o **Service IDs**, depending on which identity you want to assign access.
-2. Click the **Actions** icon ![List of actions icon](../icons/action-menu-icon.svg) > **Assign access** for the user or service ID that you want to assign access.
-3. Select a group of services or a sinlge service. Then, click **Next**.
-4. Scope the access to the all resources in the account, or select specific resources based on attributes.
-5. Click **Next**. 
-6. Select any combination of roles to assign, and click **Review**. 
-7. Click **Add** to add your policy configuration to your policy summary.
-8. (Optional) Add users or service IDs to **Access groups**.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users** or **Service IDs**, depending on which identity you want to assign access.
+1. Click the **Actions** icon ![List of actions icon](../icons/action-menu-icon.svg) > **Assign access** for the user or service ID that you want to assign access.
+1. Select a group of services or a sinlge service. Then, click **Next**.
+1. Scope the access to the all resources in the account, or select specific resources based on attributes.
+1. Click **Next**. 
+1. Select any combination of roles to assign, and click **Review**. 
+1. Click **Add** to add your policy configuration to your policy summary.
+1. (Optional) Add users or service IDs to **Access groups**.
    1. Select the access groups that you want the user or service ID to belong to.
    1. Click **Add**
-9. Click **Assign**. 
+1. Click **Assign**. 
 
 If a user doesn't have a role on the resource group that contains the resources, they can see the resources, but can't access the resources by going to the Resource list page in the account to start working with them. Assign the Viewer role or higher on the resource group itself to ensure that a user can access the resource.
 {: note}
@@ -68,13 +68,13 @@ If a user doesn't have a role on the resource group that contains the resources,
 To assign access to all resources in a resource group or to just one service within a resource group, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users** or **Service IDs**, depending on which identity you want to assign access.
-2. Click on the user or service ID that you want to assign access, then click **Access** > **Assign access**.
-3. Select a group of services or a sinlge service. Then, click **Next**.
-4. Scope the access to **Specific resources**, then select the **Resource group** attribute. By selecting a resource group, you can select roles for access to manage the resource group as well.
-5. Click **Next**. 
-6. Select any combination of roles to assign, and click **Review**. 
-7. Click **Add** to add your policy configuration to your policy summary.
-8. Click **Assign**.
+1. Click on the user or service ID that you want to assign access, then click **Access** > **Assign access**.
+1. Select a group of services or a sinlge service. Then, click **Next**.
+1.  Scope the access to **Specific resources**, then select the **Resource group** attribute. By selecting a resource group, you can select roles for access to manage the resource group as well.
+1. Click **Next**. 
+1. Select any combination of roles to assign, and click **Review**. 
+1. Click **Add** to add your policy configuration to your policy summary.
+1. Click **Assign**.
 
 ### Assigning access to resources by using the CLI
 {: #access-resources-cli}
@@ -91,16 +91,28 @@ To assign access to all resources in a resource group or to just one service wit
     
    If it's your first time using the {{site.data.keyword.cloud_notm}} CLI, check out the [getting started tutorial](/docs/cli?topic=cli-getting-started).
 
-2. Create an access policy and assign it to a user or a service ID.
-   * To assign access to an individual resource in the account or access to all resources in the account, enter the [**`ibmcloud iam user-policy-create`**](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_create) command. This example gives `name@example.com` `Administrator` role for all instances of `sample-service` service:
+1. Create an access policy and assign it to a user or a service ID by using the command [**`ibmcloud iam user-policy-create`**](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_create). 
+   * This example assigns access to an individual resource in the account with the `Administrator` role for all instances of `sample-service` service:
     ```bash
    ibmcloud iam user-policy-create name@example.com --roles Administrator --service-name sample-service
    ```
    {: codeblock}
 
-   * To assign access to a service ID or to more services in the account, enter the [**`ibmcloud iam service-policy-create`**](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_service_policy_create) command. This example grants service `test` the `Administrator` role for all account management services:
+   * This example assigns access to **All Account Management services** with the `Administrator` role:
     ```bash
-    ibmcloud iam service-policy-create test --roles Administrator --account-management
+    ibmcloud iam service-policy-create name@example.com --roles Administrator --account-management
+    ```
+    {: codeblock}
+
+    * This example assigns access to **All Identity and Access enabled services** with the `Administrator` role:
+    ```bash
+    ibmcloud iam service-policy-create name@example.com --roles Administrator --attributes serviceType=service
+    ```
+    {: codeblock}
+
+    * This example assigns access to **All IAM Account Management services** with the `Administrator` role:
+    ```bash
+    ibmcloud iam service-policy-create name@example.com --roles Administrator --attributes service_group_id=IAM
     ```
     {: codeblock}
 
@@ -336,6 +348,9 @@ fmt.Println(string(b))
 {: go}
 {: codeblock}
 
+You can assign access to a group of services. To assign access to **All Identity and Access enabled services**, specify `serviceType` for the `name` attribute, and use the `value` `service`. To assign access to **All Account Management services**, specify `serviceType` for the `name` attribute, and use the `value` `platform_service`. To assign access to the subset of account management services **All IAM Account Management services**, specify `service_group_id` for the `name` attribute, and use the `value` `IAM`.
+{: tip}
+
 ### Assigning access within a resource group by using the API
 {: #access-resourcegroups-api}
 {: api}
@@ -350,7 +365,7 @@ You can assign access to resources by using Terraform.
 
 1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
 
-2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to assign access to resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to assign access to resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
 
       The following example gives `test@in.ibm.com` `Viewer` role for all instances of `kms` service. 
     
@@ -368,21 +383,21 @@ You can assign access to resources by using Terraform.
 
    You can specify the name of the service for which you want to assign access to on the `service` option. For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_user_policy){: external} page.
   
-3. Initialize the Terraform CLI.
+1. Initialize the Terraform CLI.
 
    ```bash
    terraform init
    ```
    {: pre}
    
-4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to assign access to a resource.
+1. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to assign access to a resource.
 
    ```bash
    terraform plan
    ```
    {: pre}
 
-5. Assign access to the resource.
+1. Assign access to the resource.
 
    ```bash
    terraform apply
@@ -397,7 +412,7 @@ You can assign access within a resource group by using Terraform.
 
 1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
 
-2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to assign access within a resource group by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to assign access within a resource group by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
 
       The following example gives `test@in.ibm.com` `Viewer` role for resource group with ID `data.ibm_resource_group.group.id`.
           
@@ -420,21 +435,21 @@ You can assign access within a resource group by using Terraform.
 
    You can specify the ID of the resource group within you want to assign access to on the `resource_group_id` option. For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_user_policy){: external} page.
   
-3. Initialize the Terraform CLI.
+1. Initialize the Terraform CLI.
 
    ```bash
    terraform init
    ```
    {: pre}
    
-4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to assign access within a resource group.
+1. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to assign access within a resource group.
 
    ```bash
    terraform plan
    ```
    {: pre}
 
-5. Assign access within the resource group.
+1. Assign access within the resource group.
 
    ```bash
    terraform apply
@@ -448,9 +463,9 @@ You can assign access within a resource group by using Terraform.
 Removing access for a user or service ID can take up to 10 minutes to take effect.
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users** or **Service IDs**, depending on which identity you want to manage.
-2. Select the user's name or service ID that you want to remove access for.
-3. Go to **Access** and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Remove** on the row for the policy you want to remove.
-4. Review the policy details that you're removing, and confirm by clicking **Remove**.
+1. Select the user's name or service ID that you want to remove access for.
+1. Go to **Access** and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Remove** on the row for the policy you want to remove.
+1. Review the policy details that you're about to remove, and confirm by clicking **Remove**.
 
 You can also remove users and service IDs from access groups by selecting the checkbox for the user or service ID that you want to remove, and click **Remove**. Then, click **Remove** again to approve the process. 
 {: tip}
@@ -546,8 +561,8 @@ A policy cannot be deleted if the subject ID contains a locked service ID.
 If you need to review your assigned access in an account that you've been added to, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users** or **Service IDs**, depending on which identity you want to review.
-2. Select your name or the service ID.
-3. Review the assigned access in the **Access** tab**.
+1. Select your name or the service ID.
+1. Review the assigned access in the **Access** tab.
 
 If you need more access, you must contact the account owner to update your access or contact the administrator for the service or service instance to update the access policy.
 {: tip}

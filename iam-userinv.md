@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2022
 
-lastupdated: "2022-06-19"
+lastupdated: "2022-06-22"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -43,7 +43,7 @@ Once you are on the “Invite Users” page, you can invite users to your accoun
 
 On this page, you can also add users to access groups. In the “Add users to access groups” section, you will see the access groups that you have created. To add a user to one or more access groups, click the “Add” button to the right of the appropriate access group.
 
-If you need to assign access to classic infrastructure permissions or Cloud Foundry resources, you can do this in the “Assign users additional access section” which is found just below the access group section. Click on the additional access you would like to assign (clicks Classic infrastructure tile, selects Super user radio button), and then click on the blue “Add” button (then, clicks "Invite" button).
+If you need to assign access to classic infrastructure permissions or Cloud Foundry resources, you can do this in the “Assign users additional access section”, which is found just below the access group section. Click on the additional access you would like to assign (clicks Classic infrastructure tile, selects Super user radio button), and then click on the blue “Add” button (then, clicks "Invite" button).
 
 You can manage existing users and their access from the users menu. Click on “Users” in the Access (IAM) left menu. From here, you can see all of the users in your account. 
 
@@ -71,28 +71,25 @@ Depending on your access level, you can invite new users and assign all or just 
 To invite users, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users**.
-2. Click **Invite users**.
-3. Specify the email addresses of the users. If you are inviting more than one user with a single invitation, they are all assigned the same access.
+1. Click **Invite users**.
+1. Specify the email addresses of the users. If you are inviting more than one user with a single invitation, they are all assigned the same access.
 
    You can restrict membership to your account based on the domain of the users that are invited. This way, only users from a specific domain can be invited to the account. For more information, see [Restrict user domains for account invitations](/docs/account?topic=account-restrict-acct-invite).
    {: note}
 
-4. Add one or more of the access options that you manage. You must assign at least one access option. For any access options that you don't add and configure, the default value of **No access** is assigned. Depending on the options that you are authorized to manage, you can assign the following types of access:
+1. Add one or more of the access options that you manage. You must assign at least one access option. For any access options that you don't add and configure, the default value of **No access** is assigned. Depending on the options that you are authorized to manage, you can assign the following types of access:
 
-   * Access groups: Click **Add** for each access group that you want the users to belong to. 
-   * Access policy: Assign individual IAM access policies, Cloud Foundry roles, or classic infrastructure permissions.
+   * Add users to access groups. Click **Add** for each access group that you want the users to belong to. 
+   * Assign users individual IAM access policies, Cloud Foundry roles, or classic infrastructure permissions.
       * Select **Cloud Foundry**, choose an organization, then select a region to select a specific space, and assign a space role. An organization and space role are both required to add the access assignment to the invite.
       * Select **Classic infrastructure**, and then choose from the three permission sets.
-      * Select **All Identity and Access enabled services**, or just a specific service. Next, you can scope the access to the entire account or just one resource group. Then, select all roles that apply. To view what actions are mapped to each role, click the numbers listed next to each role.
+      * Select a group of services like **All Identity and Access enabled services**, **All Account management services**, and **All IAM Account Management services**, or a specific service. Next, you can scope the access to the entire account or just one resource group. Then, select all roles that apply. To view what actions are mapped to each role, click the numbers listed next to each role.
       
          Some services support the use of advanced operators to grant access to resources that satisfy specific naming conventions. See [Assigning access by using wildcard policies](/docs/account?topic=account-wildcard) for more information. 
 
-      If you select the **Account** scope for the access policy, the user must already have the Viewer role or higher on the resource group or groups that contain the resources you want the user to have access to. Without a role on a resource group, the user can't work with the resource from the Resource list page in the console.
-      {: tip}
-
       * Select **Account management**, and then choose from the all account management services option or select a specific service. Then, select all roles that apply.
-5. Select **Add** to save the access assignment to the invitation.
-6. After you add all the necessary access assignments, click **Invite**.
+1. Select **Add** to save the access assignment to the invitation.
+1. After you add all the necessary access assignments, click **Invite**.
 
 You can cancel an invitation for any users that are shown in a Processing or Pending state in the Status column of the [Users page](/iam/users). If an invited user did not receive an invitation, you can resend the invitation to any user in a Pending state. You can add more policies and permissions only after a user accepts the invitation.
 {: note}
@@ -110,8 +107,8 @@ Any user with the following permissions can add a VPN-only user:
 To add a VPN-only user, use the following steps:
 
 1. On the Users page, click **Add VPN-only user**.
-2. Enter the personal information details for the user.
-3. Click **Save**.   
+1. Enter the personal information details for the user.
+1. Click **Save**.   
 
 ## Inviting users by using the CLI
 {: #cli-invite}
@@ -344,6 +341,9 @@ fmt.Println(string(b))
 {: codeblock}
 {: go}
 
+You can assign access to a group of services. To assign access to **All Identity and Access enabled services**, specify `serviceType` for the `name` attribute, and use the `value` `service`. To assign access to **All Account Management services**, specify `serviceType` for the `name` attribute, and use the `value` `platform_service`. To assign access to the subset of account management services **All IAM Account Management services**, specify `service_group_id` for the `name` attribute, and use the `value` `IAM`.
+{: tip}
+
 ## Inviting users by using Terraform
 {: #terraform-invite}
 {: terraform}
@@ -352,7 +352,7 @@ You can invite users to your {{site.data.keyword.cloud_notm}} account by using T
 
 1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
 
-2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to invite users by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to invite users by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
 
    The following example invites users by using the `ibm_iam_user_invite` resource, where `users` are the list of user email IDs to invite. 
 
@@ -365,21 +365,21 @@ You can invite users to your {{site.data.keyword.cloud_notm}} account by using T
 
    For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_user_invite){: external} page.
   
-3. Initialize the Terraform CLI.
+1. Initialize the Terraform CLI.
 
    ```terraform
    terraform init
    ```
    {: pre}
    
-4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to invite users.
+1. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to invite users.
 
    ```terraform
    terraform plan
    ```
    {: pre}
 
-5. Invite the users.
+1. Invite the users.
 
    ```terraform
    terraform apply
@@ -398,8 +398,8 @@ The invitation expires after 30 days. New users to {{site.data.keyword.cloud_not
 You can cancel an invitation for any users that are shown in a Processing or Pending state in the Status column of the [Users page](/iam/users). If an invited user did not receive an invitation, you can resend the invitation to any user in a Pending state. 
 
 1. Go to the [Users page](/iam/users).
-2. Locate the row for the user in `Processing` or `Pending` state.
-3. Click the **Actions** icon ![More Actions icon](../icons/action-menu-icon.svg "Actions"), then choose to **Resend invite** or **Cancel invite**.
+1. Locate the row for the user in `Processing` or `Pending` state.
+1. Click the **Actions** icon ![More Actions icon](../icons/action-menu-icon.svg "Actions"), then choose to **Resend invite** or **Cancel invite**.
 
 ## Accepting invitations in the console
 {: #accepting-invitations-ui}
