@@ -130,7 +130,7 @@ Check out the following list of key features that are available in a Lite accoun
 * The account is free - no credit card required.
 * The account never expires.
 * You receive email notifications about your account status and quota limits.
-* You can create one instance of any service in the [{{site.data.keyword.Bluemix_notm}} catalog](/catalog/?search=label:lite%20lite){external} that has a Lite plan.
+* You can create one instance of any service in the [{{site.data.keyword.Bluemix_notm}} catalog](/catalog/?search=label:lite%20lite){: external} that has a Lite plan.
 * After 10 days of no development activity, your apps go to sleep. You can wake up your apps by continuing to work on them.
 * After 30 days of no development activity, your service instances with Lite plans are deleted
 
