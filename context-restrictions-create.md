@@ -1,10 +1,9 @@
 ---
 
 copyright:
-
   years: 2021, 2022
 
-lastupdated: "2022-06-01"
+lastupdated: "2022-06-22"
 
 keywords: create network access, network access rule, network zone
 
@@ -21,7 +20,7 @@ subcollection: account
 Context-based restrictions allow you to manage user and service access to specific cloud resources. You can define restrictions to the resources based on contexts, such as network zones and endpoint types. For more information, see [What are context-based restrictions](/docs/account?topic=account-context-restrictions-whatis&interface=ui).
 {: shortdesc}
 
-User and account level IP address restrictions can also affect users' ability to access resources. To view account level IP address restrictions, go to [Settings](/iam/settings). To view individual user settings, go to [Users](/iam/users) and view each user's IP address restrictions in the details tab. 
+User and account-level IP address restrictions can also affect users' ability to access resources. To view account-level IP address restrictions, go to [Settings](/iam/settings). To view individual user settings, go to [Users](/iam/users) and view each user's IP address restrictions in the details tab. 
 {: note}
 
 ## Before you begin
@@ -36,7 +35,7 @@ By creating network zones, you can create a list of allowed locations where an a
 
 To create a network zone, complete the following steps. 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Context-based restrictions**, and select **Network zones**.
-1. Click **Create**. 
+1. Click **Create**.  
 
     Instead of creating a zone by using UI inputs, you can use the JSON code form to directly enter JSON to create a zone by clicking **Enter as JSON code**.
     {: note}
@@ -58,16 +57,22 @@ Define restrictions to your cloud resources by creating rules.
 
 To create a rule, complete the following steps. 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Context-based restrictions**, and select **Rules**.
-2. Click **Create**.  
-3. Provide a unique description, then click **Continue**. 
-4. Select the service that you want to target in your rule. Then, click **Next**. 
+1. Click **Create**.  
+1. Provide a unique description. 
+1. Select how you want to enforce the rule. You can decide how you want to enforce a rule upon creation and update the rule enforcement at any time.
+    * **Enable**: Enforce the rule. Denied access attempts are reported in {{site.data.keyword.at_short}}.
+    * **Disable**: Don't enforce the rule. Restrictions don't apply to your account resources. Select this option if you're not ready to enable the rule.
+    * **Report-only**: Monitor how the rule affects users without enforcing it. All attempts to access resources in the account are logged in {{site.data.keyword.at_short}}. Monitoring is recommended for 30 days before you enforce the rule.
+1. Click **Continue**. 
+1. Select the service that you want to target in your rule. Then, click **Next**. 
 
-    When you create context-based restriction for the IAM Access Groups service, users who don't satisfy the rule will not be able to view any groups in the account, including the public access group. 
+    When you create context-based restriction for the IAM Access Groups service, users who don't satisfy the rule can't view any groups in the account, including the public access group. 
     {: note}
 
-5. Scope the restriciton to **All resources** or **Specific resources** based on selected atttributes. 
-6. Click **Review** > **Continue**. 
-7. Next, add one or more contexts. Select endpoint types and network zones, and click **Add**. 
-    * You can allow access from all service supported or specific service endpoint types. If the toggle is set to Yes, all service supported endpoint types are added to the rule. 
-    * You can add existing network zones to your rule or create new zones to add to your rule. For more information, [Creating network zones](/docs/account?topic=network-zones-create).
-8. Click **Create**.
+1. Scope the restriction to **All resources** or **Specific resources** based on selected attributes. 
+1. Click **Review** > **Continue**. 
+1. Add one or more contexts. Select endpoint types and network zones, and click **Add**. 
+    * You can allow access from all service-supported or specific service endpoint types. If the toggle is set to Yes, all service supported endpoint types are added to the rule. 
+    * You can add existing network zones to your rule or create new zones to add to your rule. For more information, see [Creating network zones](/docs/account?topic=network-zones-create).
+1. Click **Create**.
+
