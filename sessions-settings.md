@@ -177,7 +177,7 @@ To update your user's allowed number of concurrent sessions by using terraform, 
 For more information, see the [Terraform documentation](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_account_settings#allowed_ip_addresses). 
 
 ## Sessions vs. non-sessions
-{: #sessions-nonsessions}
+{: #sessions-and-nonsessions}
 
 Login session settings apply only when there is connected login session. If no login session is created, then [limits for IAM tokens](/docs/account?topic=account-token-limit) apply. Use the following table to help you understand when each setting applies. 
 
