@@ -3,7 +3,7 @@
 copyright:
   years: 2020, 2022
 
-lastupdated: "2022-05-31"
+lastupdated: "2022-06-22"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key
 
@@ -115,8 +115,8 @@ Complete the following steps to get an estimate of how much your usage might cos
 
    By default, the estimator shows the pricing and billing currency for your location. Pricing can vary by region. If you're estimating costs for a different location, select the correct region to view accurate pricing.
   
-4. Add the calculated cost to your estimate by clicking **Save**. 
-5. When you're done adding products to your estimate, click **Review estimate** to a detailed view of your estimate. 
+1. Add the calculated cost to your estimate by clicking **Save**. 
+1. When you're done adding products to your estimate, click **Review estimate** to a detailed view of your estimate. 
 
    You can download a CSV, XSLX, or PDF of the estimate by clicking **Download**.
    {: tip}
@@ -150,7 +150,7 @@ Complete the following steps to set your preferences for receiving various types
    * When you set {{site.data.keyword.cloud_notm}} platform notifications, you receive email notifications that are associated with only the platform. You do not receive notifications about events that are associated with {{site.data.keyword.cloud_notm}} services. By default, all platform notifications are turned off. 
    *  If you update your preferences on resource activity, such as incidents, maintenance, security bulletins, or infrastructure service updates, the notifications are for only the services you use or the devices that you have provisioned. By default, all infrastructure notifications are turned off. 
 
-2. To receive spending notifications, go to **Manage** > **Billing and usage** > **Spending notifications** in the {{site.data.keyword.cloud_notm}} console. Or, you can access it directly from the [Notification preferences](/user/notifications) page by clicking **Manage** in the **Billing and Usage** section.
+1. To receive spending notifications, go to **Manage** > **Billing and usage** > **Spending notifications** in the {{site.data.keyword.cloud_notm}} console. Or, you can access it directly from the [Notification preferences](/user/notifications) page by clicking **Manage** in the **Billing and Usage** section.
 
    You receive notifications when you reach 80%, 90%, and 100% of the spending thresholds that you specify. Enter the dollar amount to set a spending threshold when set up your spending notification. For more information, see [Setting spending notifications](/docs/billing-usage?topic=billing-usage-spending). 
 
@@ -162,8 +162,8 @@ Complete the following steps to set your preferences for receiving various types
 Resource groups provide a way for you to easily manage access to multiple resources and to view billing usage for a set of resources. With your Pay-As-You-Go account, you can create more resource groups in addition to the default resource group that's created for you. 
 
 1. Go to **Manage** > **Account** > **Account resources** > **Resource groups** in the {{site.data.keyword.cloud_notm}} console.
-2. Click **Create**.
-3. Enter a name for your resource group, and click **Add**.
+1. Click **Create**.
+1. Enter a name for your resource group, and click **Add**.
 
 See [What makes a good resource group strategy?](/docs/account?topic=account-account_setup#resource-group-strategy) for details about how to optimally organize resources in your resource groups. 
 
@@ -176,21 +176,22 @@ IAM access groups provide a way for you to quickly and easily assign access to m
 1. Create an access group.
 
    1. Go to **Manage** > **Access (IAM)** > **Access Groups** in the {{site.data.keyword.cloud_notm}} console.
-   2. Click **Create**.
-   3. Enter a name for your group, and click **Create**. For example, if you know multiple users in your account need to be able to apply subscription codes, track usage, or perform other billed-related tasks, you might name your group `Billing-Editor-Access`. 
+   1. Click **Create**.
+   1. Enter a name for your group, and click **Create**. For example, if you know multiple users in your account need to be able to apply subscription codes, track usage, or perform other billed-related tasks, you might name your group `Billing-Editor-Access`. 
 
-2. Assign access to the group. 
+1. Assign access to the group. 
 
    1. Click **Access policies** > **Assign access**.
-   2. Select individual services or a group of services: 
+   1. Select a single service or a group of services: 
     
-      * **All Identity and Access enabled services**: Assigns access to IAM-enabled services, which are services that are managed by using IAM access control and assigned to a resource group.
-      * **All Account management services**: Assigns access to manage platform services, such as billing, license and entitlements, and enterprises.
+      * **All Identity and Access enabled services**: Assigns access to all catalog services that use IAM for access management.
+      * **All Account Management services**: Assigns access to manage platform services, such as billing, license and entitlements, and enterprises. For more information, see [Assigning access to account management services](https://cloud.ibm.com/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles). 
+      * **All IAM Account Management services**: Assigns access to a subset of account management services that includes the IAM platform services IAM Identity, IAM Access Management, IAM User Management, IAM Groups, and future IAM services.
       
-   3. Click **Next**. 
-   4. Select all roles that apply, then click **Next**. 
-   5. Click **Add** and repeat as needed. 
-   6. Click **Assign**.
+   1. Click **Next**. 
+   1. Select all roles that apply, then click **Next**. 
+   1. Click **Add** and repeat as needed. 
+   1. Click **Assign**.
   
 See [What makes a good access group strategy?](/docs/account?topic=account-account_setup#resource-group-strategy) for details about how to best set-up your access groups. 
   
@@ -206,10 +207,10 @@ You're ready to invite users to your account and grant them access based on the 
 Complete the following steps:
 
 1. Go to **Manage** > **Access (IAM)** > **Users** in the {{site.data.keyword.cloud_notm}} console.
-2. Click **Invite users**.
-3. Specify the email address of the user. If you are inviting more than one user, they are all assigned the same access.
-4. Add the user to one or more of the access groups that you created in the previous step. 
-5. Click **Invite**.
+1. Click **Invite users**.
+1. Specify the email address of the user. If you are inviting more than one user, they are all assigned the same access.
+1. Add the user to one or more of the access groups that you created in the previous step. 
+1. Click **Invite**.
 
 To learn more about the invitation flow and how users can accept invitations, see [Inviting users to an account](/docs/account?topic=account-iamuserinv).
 

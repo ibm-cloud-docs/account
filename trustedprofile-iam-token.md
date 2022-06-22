@@ -4,7 +4,7 @@ copyright:
 
   years: 2021, 2022
 
-lastupdated: "2022-06-19"
+lastupdated: "2022-06-22"
 
 keywords: trusted profile, generating IAM token, compute resource, kubernetes cluster, virtual server
 
@@ -22,7 +22,7 @@ You can request an Identity and Access Management (IAM) token for Virtual server
 
 For Kubernetes, you don't need to take steps to generate an IAM token from a compute resource (CR) token; this is done automatically by the service for new clusters that run Kubernetes version 1.21 or later. Trusted profiles are not supported for earlier versions of Kubernetes. See [Authorizing pods in your cluster to IBM Cloud services with IAM trusted profiles](/docs/containers?topic=containers-pod-iam-identity) for more information.
 
-To generate IAM tokens for your compute resources, you must be at least an administrator on all Identity and Access enabled services within the account.
+To generate IAM tokens for your compute resources, you must be at least an administrator on **All Identity and Access enabled services** within the account.
 {: note}
 
 ## Generate your tokens
