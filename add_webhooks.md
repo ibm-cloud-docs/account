@@ -3,7 +3,7 @@
 copyright:
   years: 2021, 2022
   
-lastupdated: "2022-06-08"
+lastupdated: "2022-06-23"
 
 
 keywords: IBM Cloud notifications, notification preferences, email preferences, user notifications, distribution list, webhooks, Slack webhooks, Microsoft Teams webhooks, ServiceNow webhooks, SNOW
@@ -15,7 +15,7 @@ subcollection: account
 {{site.data.keyword.attribute-definition-list}}
 
 # Adding webhooks to a distribution list 
-{: webhook-distribution-list}
+{: #webhook-distribution-list}
 
 In addition to adding email addresses, you can also add up to 10 webhooks to a [distribution list](/account/notifications-distribution-list){: external}. Account administrators can create and use webhooks to configure an application to receive asynchronous notifications whenever a platform event occurs. The registered webhooks send the information to the specified URL in the form of an HTTP POST request with a JSON payload. The content-type of the request is `application/json`. 
 {: shortdesc}
@@ -69,14 +69,14 @@ When you receive a notification through a webhook, a payload is being sent to yo
 ```
 
 ## Headers
-{: header-payload}
+{: #header-payload}
 
 You receive the payload with a header that you configured in the UI when you added a new webhook, and with an additional version header that has semantic version number. This version header can be used to determine the expected format of the webhook payload.
 
 The current version header is `"IBM-Notifications-API-Version": "v2.0.0"`. 
 
 ## Field values
-{: field-value-payload}
+{: #field-value-payload}
 
 The following descriptions provide information about the field values that are being sent inside the payload:
 
@@ -138,7 +138,7 @@ There might be extra fields added in the future without a major version change. 
 {: note}
 
 ## Add webhooks to a distribution list 
-{: add-webhook-distribution-list}
+{: #add-webhook-distribution-list}
 
 To add webhooks to a distribution list, complete the following steps: 
 1. Go to **Manage** > **Account** > **Notification distribution list** in the {{site.data.keyword.cloud}} console. 
@@ -154,7 +154,7 @@ To add webhooks to a distribution list, complete the following steps:
     {: note}
     
 ### Send test notifications to a webhook
-{: test-webhook}
+{: #test-webhook}
 
 If you are ready with the previous steps and have a configured webhook, you can test it out easily. Send a test notification to your webhook and make sure that your webhook integration is working correctly and receives the notification. 
 
@@ -178,7 +178,7 @@ To add a Slack webhook in the {{site.data.keyword.Bluemix_notm}} console, comple
 3. Enter a name for your webhook and a Slack webhook URL. The notifications are sent to this unique URL. 
 
 ## Add Microsoft Teams webhooks to a distribution list 
-{: add-microsoft-teams-webhook}
+{: #add-microsoft-teams-webhook}
 
 Adding Microsoft Teams webhooks to your distribution list is also available for you to receive account-wide {{site.data.keyword.Bluemix_notm}} notifications. 
 
@@ -191,7 +191,7 @@ To add a Microsoft Teams webhook in the {{site.data.keyword.Bluemix_notm}} conso
 3. Enter a name for your webhook and a Microsoft Teams webhook URL. The notifications are sent to this unique URL. 
 
 ## Set up ServiceNow webhooks 
-{: set-snow-webhook}
+{: #set-snow-webhook}
 
 Unlike Microsoft Teams and Slack webhook integrations, setting up a ServiceNow webhook requires configuration to be done on the webhook destination side.
 
