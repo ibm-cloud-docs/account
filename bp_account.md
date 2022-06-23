@@ -91,6 +91,9 @@ There is a [limit](/docs/account?topic=account-known-issues#iam_limits) on the t
    * **All Account Management services**: Platform services, such as billing and usage, license and entitlements, enterprises, and more. For more information, see [Assigning access to account management services](https://cloud.ibm.com/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles). 
    * **All IAM Account Management services**: A subset of account management services that includes the IAM platform services IAM Identity, IAM Access Management, IAM Users, IAM Groups, and future IAM services.
 
+Removing access for inactive identities can reduce the risk of unauthorized access to your {{site.data.keyword.cloud_notm}} resource and help you manage access more efficiently. For more information, see [Identifying inactive identities](/docs/account?topic=account-id-inactive-identities). 
+{: tip}
+
 ## What makes a good access group strategy?
 {: #accessgroup_strategy}
 

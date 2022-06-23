@@ -117,6 +117,7 @@ toc:
               - iam-userinv.md
               - iam-remove-users.md
               - iam-serviceid.md
+              - iam-identify-inactive.md
               - iam-ibmid-change.md
           - topicgroup:
               label: Administering user settings

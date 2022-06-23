@@ -2,8 +2,6 @@
 
 copyright:
   years: 2018, 2022
-
-
 lastupdated: "2022-06-22"
 
 keywords: frequently asked questions, iam faqs
@@ -358,3 +356,9 @@ For more information, see [Using Trusted Profiles in your Kubernetes and OpenShi
 {: faq}
 
 To view a list of dynamic members in an access group, go to **Manage** > **Access (IAM)** > **Access groups** in the {{site.data.keyword.cloud_notm}} console. Select an access group and click **Users**. Dynamically added users are indicated by the type `Dynamic`. For more information, see [Viewing dynamic members of access groups](/docs/account?topic=account-rules&interface=ui#view-dynamic-users)
+
+## How do I find inactive users, service IDs, trusted profiles, and API keys in my account?
+{: #unused-identities}
+{: faq}
+
+To view a list of the inactive identities in your account, go to **Manage** > **Access (IAM)** > **Inactive identities**. You might want to remove inactive identities if they are no longer needed. For more information, see [Identifying inactive identities](/docs/account?topic=account-id-inactive-identities). 
