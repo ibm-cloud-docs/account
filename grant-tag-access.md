@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2022
-lastupdated: "2022-05-31"
+lastupdated: "2022-06-13"
 
 keywords: tagging, enabling others to tag, tagging permissions
 
@@ -58,7 +58,7 @@ Complete the following steps to assign the editor role for a user to tag IAM-ena
 1. Click **Create**.
 1. Enter a group name and description, and click **Create**.
 1. Add users to the access group by clicking **Add users**, selecting one or more users from the table, and clicking **Add to group**.
-1. Click **Access policies** > **Assign access**.
+1. Click **Access** > **Assign access**.
 1. Select **All Identity and Access enabled services** or a specific service.
 1. Select a specific location or accept the default **All regions** option. 
 1. Select **Editor** from the list of platform access roles, and click **Review**.

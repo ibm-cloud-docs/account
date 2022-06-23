@@ -66,7 +66,7 @@ Next, continue to set up your group by adding users or service IDs:
 
 After you create your access groups, you can assign access to all members of the group with one or more policies. By assigning a group of users access to a group of resources with a single policy, you reduce the overall number of policies that you need to manage.
 
-1. From the **Access** tab, click **Assign access**. 
+1. Click **Access** > **Assign access**.
 1. Select a single service or group of services. Then, click **Next**.
 1. Scope the access to all resource or specific resources based on attributes. Then, click **Next**.
 1. Select the level of access that you want to assign.

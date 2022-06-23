@@ -2,7 +2,7 @@
 
 copyright:
    years: 2021, 2022
-lastupdated: "2022-05-31"
+lastupdated: "2022-06-13"
 
 keywords: tagging resources, managing access, access management tags, create access management tags, get started with access management tags, IAM-enabled resources, tag your resource, access group, access group policy
 
@@ -83,7 +83,7 @@ First, create an access group to streamline the task of assigning access to mult
 
 Next, assign a policy to the group: 
 
-1. Click **Access policies** > **Assign access**. 
+1. Click **Access** > **Assign access**. 
 1. Select **All Identity and Access enabled services** as the service. 
 1. Scope the access to **Specific resources** > **Access management tags** to grant access based on the attached access management tag.
 1. Type `project:analysis` or select it from the list of options. 

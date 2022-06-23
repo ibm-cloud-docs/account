@@ -68,7 +68,7 @@ If a user doesn't have a role on the resource group that contains the resources,
 To assign access to all resources in a resource group or to just one service within a resource group, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users** or **Service IDs**, depending on which identity you want to assign access.
-1. Click on the user or service ID that you want to assign access, then click **Access policies** > **Assign access**.
+1. Click on the user or service ID that you want to assign access, then click **Access** > **Assign access**.
 1. Select a group of services or a sinlge service. Then, click **Next**.
 1.  Scope the access to **Specific resources**, then select the **Resource group** attribute. By selecting a resource group, you can select roles for access to manage the resource group as well.
 1. Click **Next**. 
@@ -464,7 +464,7 @@ Removing access for a user or service ID can take up to 10 minutes to take effec
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users** or **Service IDs**, depending on which identity you want to manage.
 1. Select the user's name or service ID that you want to remove access for.
-1. From the **Access policies** tab, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Remove** on the row for the policy you want to remove.
+1. Go to **Access** and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Remove** on the row for the policy you want to remove.
 1. Review the policy details that you're about to remove, and confirm by clicking **Remove**.
 
 You can also remove users and service IDs from access groups by selecting the checkbox for the user or service ID that you want to remove, and click **Remove**. Then, click **Remove** again to approve the process. 

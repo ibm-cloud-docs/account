@@ -29,8 +29,8 @@ As the account owner or the administrator of an account management service, you 
 To assign access to one or all account management services, complete the following steps:
 
 1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Access (IAM)**, and then select **Users**.
-1. Click the user that you want to assign access, then go to **Access policies** > **Assign access**.
-1. For the service, select **All Account Management services** or select a specific account management service. Then, click **Next**.
+1. Click the user that you want to assign access, then go to **Access** > **Assign access**.
+1. For the service, select **All Account Management Services** or select a specific account management service. Then, click **Next**.
 1. Scope the access to **All resources** or **Specific resources**. Then, click **Next**.
 1. Select any combination of roles or permissions, and click **Review**.
 1. Click **Add** to add your policy configuration to your policy summary. 

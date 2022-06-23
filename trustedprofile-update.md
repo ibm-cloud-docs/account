@@ -5,7 +5,7 @@ copyright:
   years: 2021, 2022
 
 
-lastupdated: "2022-05-31"
+lastupdated: "2022-06-13"
 
 keywords: trusted profile, federated users, granting access, update trusted profile, compute resource, IAM trusted profile, trust relationship, establish trust,  trust policy, trusted entity, assume access, apply access
 
@@ -59,7 +59,7 @@ You can assign access to a trusted profile by assigning individual access polici
 {: #update-tp-policy}
 
 1. Click the name of the trusted profile that you want to update.
-2. Click **Access policies**.
+2. Click **Access**.
 3. To edit existing access policies, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** next to the access policy you want to update.
 4. To assign new access policies, click **Assign**. 
 
@@ -70,7 +70,7 @@ You can select your resources based on resource attributes and assign any combin
 {: #update-tp-group}
 
 1. Click the name of the trusted profile that you want to update.
-2. Click **Access groups** 
+2. Click **Access** 
 3. To edit existing access group membership, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** next to the access group you want to update.
 4. To add the trusted profile to a new access group, click **Assign group**. 
 5. Select the access groups to which you want to add the trusted profile and click **Add**. You can assign users to only the access groups that you have access to manage.

@@ -64,7 +64,7 @@ The access management systems are entirely different. IAM resources belong to a 
 
 In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select your name on the Users page. Then, depending on the access you're looking for, open the different tabs:
 
-* To determine what access you have through the access groups you are assigned, select **Access** and view the Access groups table.
+* To determine what access you have through the access groups you are assigned, select **Access** and view the Access goups table.
 * To see IAM access policies that are assigned to you, select **Access** and view the Access policies table.
 * To see your Cloud Foundry access for all orgs and spaces, select **Cloud Foundry**.
 

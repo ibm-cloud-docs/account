@@ -181,8 +181,8 @@ IAM access groups provide a way for you to quickly and easily assign access to m
 
 1. Assign access to the group. 
 
-   1. Click **Access policies** > **Assign access**.
-   1. Select a single service or a group of services: 
+   1. Click **Access** > **Assign access**.
+   2. Select individual services or a group of services: 
     
       * **All Identity and Access enabled services**: Assigns access to all catalog services that use IAM for access management.
       * **All Account Management services**: Assigns access to manage platform services, such as billing, license and entitlements, and enterprises. For more information, see [Assigning access to account management services](https://cloud.ibm.com/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles). 
