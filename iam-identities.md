@@ -78,7 +78,7 @@ Similar to other identities within IAM, trusted profiles are treated as a subjec
 
 Usually, for a user to take an action on a resource within an account, that identity must explicitly be added to the account. With trusted profiles, it is possible for a user to complete the actions without being invited to an account. Instead, they are automatically granted access to resources when they apply the trusted profile identity during login. Only users federated by an external IdP can be mapped to trusted profiles during login by evaluating SAML-based attributes to determine which profiles their identity can apply. 
 
-Similarly, instead of creating a service ID, generating an API key, and getting the application to store and validate that key, you can create [trusted profiles for compute resources](docs/account?topic=account-create-trusted-profile) to define fine-grained authorization for all applications that are running in a compute resource. Compute resources become identities when used as part of a trusted profile. Trust with compute resources is established by conditions based on resource attributes, or creating a direct link to a specific resource. 
+Similarly, instead of creating a service ID, generating an API key, and getting the application to store and validate that key, you can create [trusted profiles for compute resources](/docs/account?topic=account-create-trusted-profile) to define fine-grained authorization for all applications that are running in a compute resource. Compute resources become identities when used as part of a trusted profile. Trust with compute resources is established by conditions based on resource attributes, or creating a direct link to a specific resource. 
 
 ## Resource identities
 {: #resources-bestpract}

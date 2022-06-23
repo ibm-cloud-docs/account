@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2022
-lastupdated: "2022-06-17"
+lastupdated: "2022-06-22"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources 
 
@@ -86,6 +86,10 @@ There is a [limit](/docs/account?topic=account-known-issues#iam_limits) on the t
 * Use access groups to streamline managing access for identities that require the same level of access. You can set up an access group with a specific policy defined, and then add those identities to the group. If the group members need more access later on, you simply define a new policy for the access group.
 * Use access management tags to control access to the resources in your account at scale. By assigning access only to resources that have specific tags that are attached to them, you can avoid multiple updates to your defined policies. For more information, see [Controlling access to resources by using tags](/docs/account?topic=account-access-tags-tutorial).
 * Use trusted profiles to automatically grant federated users and compute resources access to your account. This way, federated users can be mapped to one or more trusted profiles during login by evaluating SAML-based attributes to determine which profiles they can apply. Using trusted profiles for compute resources helps you avoid storing credentials to run applications and the management and rotation of credentials. You can also add trusted profiles to access groups to leverage the set of policies you have already created. 
+* Assign access by using a group of services so that you need only a single policy to assign access to multiple services. This way, you decrease the number of policies in your account and reduce the time and effort to manage access.
+   * **All Identity and Access enabled services**: All catalog services that use IAM for access management.
+   * **All Account Management services**: Platform services, such as billing and usage, license and entitlements, enterprises, and more. For more information, see [Assigning access to account management services](https://cloud.ibm.com/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles). 
+   * **All IAM Account Management services**: A subset of account management services that includes the IAM platform services IAM Identity, IAM Access Management, IAM Users, IAM Groups, and future IAM services.
 
 Removing access for inactive identities can reduce the risk of unauthorized access to your {{site.data.keyword.cloud_notm}} resource and help you manage access more efficiently. For more information, see [Identifying inactive identities](/docs/account?topic=account-id-inactive-identities). 
 {: tip}
@@ -103,7 +107,7 @@ A logical way to assign access to your resource groups and the included resource
 
 For the Auditor-Group, assign two access policies that grant viewer access to the `CustApp-Test` and the `CustApp-Prod` resources and resource groups. For the Developer-Group, assign two access policies that grant editor access to the `CustApp-Dev` and `CustApp-Test` resources and resource groups. For the Admin-Group, assign three access policies that grant administrator access to all three `CustApp` resource groups and their resources.
 
-You can assign administrator access to everything in an account by creating an access group and assigning two policies to it. To create the first policy, select **All Identity and Access enabled services** in **Account** with the Administrator platform role and Manager service role. To create the second policy, select **All Account Management Services** with the Administrator role assigned.
+You can assign administrator access to everything in an account by creating an access group and assigning two policies to it. To create the first policy, select **All Identity and Access enabled services** with the Administrator platform role and Manager service role. To create the second policy, select **All Account Management services** with the Administrator role assigned.
 {: tip}
 
 For more best practices from IBM Garage for Cloud, see [Managing access to resources in {{site.data.keyword.cloud_notm}}](https://cloudnativetoolkit.dev/resources/ibm-cloud/access-control/){: external}.
@@ -138,7 +142,7 @@ A trusted profile, like other IAM identities, can be granted access by using a p
 
 You can select only one trusted entity type when you first create a trusted profile. You can [update trusted profiles](/docs/account?topic=account-trusted-profile-update) at any time to add trust relationships with compute resources.
 
-You can assign administrator access to everything in an account by creating an access group and assigning two policies to it. To create the first policy, select **All Identity and Access enabled services** in **Account** with the Administrator platform role and Manager service role. To create the second policy, select **All Account Management Services** with the Administrator role assigned.
+You can assign administrator access to everything in an account by creating a trusted profile and assigning two policies to it. To create the first policy, select **All Identity and Access enabled services** with the Administrator platform role and Manager service role. For the second policy, select **All Account Management services** with the Administrator role assigned.
 {: tip}
 
 ### Sample access policies

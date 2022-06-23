@@ -5,7 +5,7 @@ copyright:
   years: 2021, 2022
 
 
-lastupdated: "2022-06-14"
+lastupdated: "2022-06-22"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access, access group
 
@@ -52,12 +52,12 @@ Complete the following steps to define which federated users can access specific
 
 1. (Optional) Establish trust.
    1. Select **Federated users** as a trusted entity type from the list.
-   2. Select **Users federated by IBMid** or **Users federated by IBM Cloud AppID** as the authentication method and input the default identity prodiver (IdP) you enabled in step 1.
+   1. Select **Users federated by IBMid** or **Users federated by IBM Cloud AppID** as the authentication method and input the default identity prodiver (IdP) you enabled in step 1.
 
    If the users that you are creating a trusted profile for use {{site.data.keyword.appid_full_notm}}, create the trusted profile as an App ID user, and likewise for IBMid. This way, your own SAML attributes can give you an idea of how to structure the trusted profile conditions. Other users with the same IdP can have different SAML attributes. Use your own attributes only as a hint. To use attributes in a claim that are different than your own, input them manually. 
    {: tip}
 
-   3. Add conditions based on your IdP data to define how and when federated users can apply the profile.
+   1. Add conditions based on your IdP data to define how and when federated users can apply the profile.
       * By clicking **Add a condition**, you can define multiple conditions. Federated users must meet all the conditions to be included in the trusted profile. For more information about the fields that are used to create conditions, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
       * Click **View identity provider (IdP) data** to search attribute names and values in your own personal data from your IdP. For more information, see [Using IdP data to build trusted profiles](/docs/account?topic=account-idp-integration#trusted-profiles-idp-data).
 
@@ -65,12 +65,12 @@ Complete the following steps to define which federated users can access specific
 1. Click **Continue**.
 1. (Optional) Assign access. 
    * Assign access to the trusted profile by adding it to one or more access groups. This way, you can use the policies that exist in the access groups you've created. 
-      1. Select **Access groups** and select all the groups you want to add the trusted profile to. You can assign users to only the access groups that you have access to manage.  
+      1. Select **Access groups** and select all the groups that you want to add the trusted profile to. You can assign users to only the access groups that you have access to manage.  
       1. Click **Add**. 
    * Assign access to the trusted profile with an access policy.  
       1. Select **Access policy**. Based on your level of access, you can assign IAM policies and classic infrastructure permissions.
-      1. Select a single service or a group of services, like **All Identity and Access enabled services**, or **All Account Management services**. Then, click **Next**. 
-      1. Scope the acccess to **All resources** or **Specific resources** based on selected attributes. Then, click **Next**. 
+      1. Select a single service or a group of services, such as **All Identity and Access enabled services**, **All Account Management services**, or **All IAM Account Management services**. Then, click **Next**. 
+      1. Scope the access to **All resources** or **Specific resources** based on selected attributes. Then, click **Next**. 
       1. Select any combination of roles and permissions to define the scope of access, and click **Review**. 
       1. Click **Add** to add your policy configuration to your summary.
       1. You can assign **Classic infrastructure** access by selecting a user, device, or service, then any combination of granular permissions.
@@ -91,9 +91,9 @@ Complete the following steps to set up better control over granting access to co
 {: important}
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Trusted profiles**.
-2. Click **Create profile**.
-3. Describe your profile by providing a name and a description, and click **Continue**.
-4. (Optional) Establish trust.
+1. Click **Create profile**.
+1. Describe your profile by providing a name and a description, and click **Continue**.
+1. (Optional) Establish trust.
    1. Select **Compute resources** and select a compute service type from the list.
    1. If you select the option for **All service resources**, you can define multiple conditions to filter resources for the selected compute service type by clicking **Add a condition**. These conditions are based on attributes, such as resource groups or location, and apply to all existing and future resources. Resources must meet all the conditions to be included in the trusted profile.
 
@@ -102,18 +102,18 @@ Complete the following steps to set up better control over granting access to co
 
    1. If you select **Specific resources**, you can establish trust with one or more existing compute resource instances. For example, a Kubernetes cluster. 
 
-5. (Optional) Assign access. 
+1. (Optional) Assign access. 
    * Assign access to the trusted profile by adding it to one or more access groups. This way, you can use the policies that exist in the access groups you've created. 
-      1. Select **Access groups** and select all the groups you want to add the trusted profile to. You can assign users to only the access groups that you have access to manage.  
+      1. Select **Access groups** and select all the groups that you want to add the trusted profile to. You can assign users to only the access groups that you have access to manage.  
       1. Click **Add**. 
    * Assign access to the trusted profile with an access policy.  
       1. Select **Access policy**. Based on your level of access, you can assign IAM policies and classic infrastructure permissions.
-      1. Select a single service or a group of services, like **All Identity and Access enabled services**, or **All Account Management services**. Then, click **Next**. 
-      1. Scope the acccess to **All resources** or **Specific resources** based on selected attributes. Then, click **Next**. 
+      1. Select a single service or a group of services, like **All Identity and Access enabled services**, **All Account Management services**, or **All IAM Account Management services**. Then, click **Next**. 
+      1. Scope the access to **All resources** or **Specific resources** based on selected attributes. Then, click **Next**. 
       1. Select any combination of roles and permissions to define the scope of access, and click **Review**. 
       1. Click **Add** to add your policy configuration to your summary.
       1. You can assign **Classic infrastructure** access by selecting a user, device, or service, then any combination of granular permissions.
-6. Click **Create**. 
+1. Click **Create**. 
 
 You can assign only classic infrastructure access if your account is linked to a Softlayer account.
 {: note}
@@ -126,7 +126,7 @@ You can assign only classic infrastructure access if your account is linked to a
 Complete the following steps to define which federated users can access specific resources:
 
 1. [Enable authentication from an external identity provider](/docs/account?topic=account-idp-integration). 
-2. Create a trusted profile by running the following command:
+1. Create a trusted profile by running the following command:
 
    ```bash
    ibmcloud iam trusted-profile-create my-profile -d "sample trusted profile" 
@@ -135,7 +135,7 @@ Complete the following steps to define which federated users can access specific
    
    For more information, see the [CLI reference](/docs/account?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_create). 
 
-3. To create conditions for your trusted profile, run the `ibmcloud iam trusted-profile-rule-create` command:
+1. To create conditions for your trusted profile, run the `ibmcloud iam trusted-profile-rule-create` command:
 
    ```bash
    ibmcloud iam trusted-profile-rule-create my-profile --name my-rule --type Profile-SAML --conditions claim:cn,operator:EQUALS,value:my_user --realm-name https://w3id.sso.ibm.com/auth/sps/samlidp2/saml20 --expiration 1200
@@ -144,7 +144,7 @@ Complete the following steps to define which federated users can access specific
 
    For more information, see the [CLI reference](/docs/account?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_rule_create). 
    
-4. Create an access policy with the `Viewer` role for all resources in the account by running the following command:
+1. Create an access policy with the `Viewer` role for all resources in the account by running the following command:
 
    ```bash
    ibmcloud iam trusted-profile-policy-create --roles Viewer
@@ -172,7 +172,7 @@ Complete the following steps to set up better control over granting access to co
 
    For more information, see the [CLI reference](/docs/account?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_create). 
    
-2. Create conditions for your trusted profile by using the `ibmcloud iam trusted-profile-rule-create` command:
+1. Create conditions for your trusted profile by using the `ibmcloud iam trusted-profile-rule-create` command:
 
    ```bash
    ibmcloud iam trusted-profile-rule-create sample-compute-profile --name cr-rule --type Profile-CR --conditions claim:namespace,operator:EQUALS,value:default --conditions claim:crn,operator:EQUALS,value:crn:test:bluemix:public:containers-kubernetes:us-south:a/test:: --cr-type IKS_SA
@@ -190,7 +190,7 @@ Complete the following steps to set up better control over granting access to co
 
    For more information, see the [CLI reference](/docs/account?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_link_create). 
    
-3. Create an access policy by running the following command:
+1. Create an access policy by running the following command:
 
    ```bash
    ibmcloud iam trusted-profile-policy-create --roles Viewer
@@ -206,7 +206,7 @@ Complete the following steps to set up better control over granting access to co
 Complete the following steps to define which federated users can access specific resources:
 
 1. [Enable authentication from an external identity provider](/docs/account?topic=account-idp-integration). 
-2. Create a trusted profile by specifying your account ID.
+1. Create a trusted profile by specifying your account ID.
 
    ```bash
    curl -X POST 'https://iam.cloud.ibm.com/v1/profiles' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json' -H 'Accept: application/json' -d '{
@@ -220,7 +220,7 @@ Complete the following steps to define which federated users can access specific
    In the description, provide a list of actions available for this trusted profile.
    {: tip}
 
-3. Create conditions for your trusted profile. For federated users, set the `type` attribute to `Profile-SAML`. The `realm-name` is the IdP URL. For more information, see the [IAM Identity Services API](/apidocs/iam-identity-token-api). 
+1. Create conditions for your trusted profile. For federated users, set the `type` attribute to `Profile-SAML`. The `realm-name` is the IdP URL. For more information, see the [IAM Identity Services API](/apidocs/iam-identity-token-api). 
 
    ```bash
    curl -X POST 'https://iam.cloud.ibm.com/v1/profiles/PROFILE_ID/rules' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json' -H 'Accept: application/json' -d '{
@@ -241,7 +241,7 @@ Complete the following steps to define which federated users can access specific
    There is a limit of 20 claim rules per trusted profile.
    {: note}
 
-4. Create an access policy. For more information, see [IAM Policy Management API](/apidocs/iam-policy-management).
+1. Create an access policy. For more information, see [IAM Policy Management API?](/apidocs/iam-policy-management).
 
    ```bash
    curl -X POST 'https://iam.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
@@ -308,7 +308,7 @@ Complete the following steps to set up better control over granting access to co
    In the description, provide a list of actions available for this trusted profile.
    {: tip}
 
-2. Create a claim rule for your trusted profile that follows the principle of least privilege by specifying conditions that target only the resources that need access. Conditions apply to all existing future resources. You can also create a direct link with specific, existing resources. 
+1. Create a claim rule for your trusted profile that follows the principle of least privilege by specifying conditions that target only the resources that need access. Conditions apply to all existing future resources. You can also create a direct link with specific, existing resources. 
 
       **Create conditions**
       For compute resources, set the `type` attribute to `Profile-CR`. For more information, see the [IAM Identity Services API](/apidocs/iam-identity-token-api#create-claim-rule-request). 
@@ -344,7 +344,7 @@ Complete the following steps to set up better control over granting access to co
       ```
       {: codeblock}
 
-3. Create an access policy. For more information, see [IAM Policy Management API](/apidocs/iam-policy-management).
+1. Create an access policy. For more information, see [IAM Policy Management API?](/apidocs/iam-policy-management).
 
    ```bash
    curl -X POST 'https://iam.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{

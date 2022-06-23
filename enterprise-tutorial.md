@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-05-31"
+lastupdated: "2022-06-13"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, enterprise users, enterprise access, enterprise tutorial
 
@@ -156,7 +156,7 @@ Invite the other two department leads by clicking **Invite users** again and ass
 With the Usage Report Viewer role, the financial officer can see usage from all accounts but can't create, import, or otherwise organize accounts. You then need to provide them access to billing in the enterprise.
 
 1. From the Users page, click the name of the user from the list.
-1. Click **Access policies** > **Assign access**.
+1. Click **Access** > **Assign access**.
 1. Select the Billing service, and then select the Administrator role.
 1. Click **Review**. 
 1. Click **Add** to add your policy configuration to your policy summary.
@@ -174,7 +174,7 @@ Complete the following steps to assign the required access:
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Users**.
 2. Click the user's name from the list.
-3. Click **Access policies** > **Assign access**.
+3. Click **Access** > **Assign access**.
 4. Select the service that you want to assign the user access to.
     * If you want the user to be able to create any service, select **All Identity and Access enabled services**.
     * If you want to assign the user access to a specific service, select it from the list. 

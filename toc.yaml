@@ -274,6 +274,7 @@ toc:
           - audit_log.md
           - sessions-users.md
           - trustedprofile-monitor.md
+          - cbr-monitor.md
 
   - navgroup:
       id: reference
@@ -361,6 +362,7 @@ toc:
           - faqs-resources.md
           - faqs-migration.md
           - faqs-commit.md
+          - faqs-cbr.md
       - topicgroup:
           label: Troubleshooting accessing IBM Cloud
           topics:

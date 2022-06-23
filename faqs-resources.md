@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2022
 
-lastupdated: "2022-05-31"
+lastupdated: "2022-06-13"
 
 keywords: resource FAQs, resource frequently asked questions, resource group, resource list, dashboard widget
 
@@ -72,7 +72,7 @@ Resource groups are a method of organizing resources and are not directly associ
  
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)** and click **Access groups**.
 2. Select an access group. 
-3. Click **Access policies** > **Assign access**.
+3. Click **Access** > **Assign access**.
 4. Select a service, or group of services.  
 5. Click **Next**.
 6. Scope the access to all resources, or select specific resources and select the resource groups attribute. Then, click **Next**.

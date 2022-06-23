@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-06-17"
+lastupdated: "2022-06-22"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -6548,14 +6548,18 @@ Review the available platform and service roles and the actions mapped to each t
 | `secrets-manager.secret-policies.get` | Get secret policies. | Manager |
 | `secrets-manager.secret-engine-config.set` | Set secrets engine configuration. | Manager |
 | `secrets-manager.secret-engine-config.get` | Get secrets engine configuration. | Manager |
-| `secrets-manager.endpoints.view` | Get service instance endpoints. | Manager, Reader, SecretsReader, Writer |
 | `secrets-manager.secret-versions.list` | List secret versions. | Manager, Reader, SecretsReader, Writer |
+| `secrets-manager.endpoints.view` | Get service instance endpoints. | Manager, Reader, SecretsReader, Writer |
 | `secrets-manager.vault-token.create` | Create a Vault token. | Manager |
 | `secrets-manager.notifications-registration.create` | Register a Secrets Manager instance as a source in Event Notifications. | Manager |
 | `secrets-manager.notifications-registration.read` | Get the registration details between a Secrets Manager and Event Notifications instance. | Manager, Reader, SecretsReader, Writer |
 | `secrets-manager.notifications-registration.delete` | Unregister or remove a Secrets Manager instance as a source in Event Notifications. | Manager |
 | `secrets-manager.notifications-registration.test` | Send a test event to the registered Event Notifications service instance. | Manager, Reader, SecretsReader, Writer |
 | `secrets-manager.secret.revoke` | Revoke a secret | Manager |
+| `secrets-manager.secret-lock.create` | Create a lock on a secret version to prevent it from being updated or deleted. | Manager, Writer |
+| `secrets-manager.secret-lock.delete` | Delete a secret lock. | Manager |
+| `secrets-manager.secret-locks.list` | List the locks that exist for secret and its versions. | Manager, Reader, SecretsReader, Writer |
+| `secrets-manager.locks.list` | List the locks that are exist in your service instance. | Manager, Reader, SecretsReader, Writer |
 {: caption="Table 133. Service actions - Secrets Manager" caption-side="top"}
 {: #actions-table133}
 {: tab-title="Actions"}
@@ -7120,13 +7124,49 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 
+| Role | Description |
+| ----- | :----- |
+| Director Backup User | As a backup user within the vCloud Director console, you can manage Veeam backup jobs. |
+| Director Catalog Author | As a catalog author within the vCloud Director console, you can create and publish catalogs. |
+| Director Console User | As a console user within the vCloud Director console, you can view the VM state, properties, and use the Guest OS. |
+| Director Full Viewer | As a full viewer within the vCloud Director console, you have All View Access to every component in vCloud Director. |
+| Director Network Admin | As a network administrator within the vCloud Director console, you can create, view, edit, delete the subnet, the static route, and troubleshoot routing. |
+| Director Security Admin | As a security administrator within the vCloud Director console, you can view and edit the edge firewall or view and edit the distributed firewall. |
+| Director vApp Author | As a vApp author within the vCloud Director console, you can use catalogs and create vApps. |
+| Director vApp User | As a vApp user within the vCloud Director console, you can use existing vApps. |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 148. Service roles - VMware Solutions" caption-side="top"}
+{: #service-roles-table148}
+{: tab-title="Service roles"}
+{: tab-group="vmware-solutions"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `vmware-solutions.instances.create` | Create IBM Cloud for VMware Solutions instances | Administrator |
-| `vmware-solutions.instances.delete` | Delete IBM Cloud for VMware Solutions instances | Administrator |
-| `vmware-solutions.instances.view` | List or view IBM Cloud for VMware Solutions instances | Administrator, Editor, Operator, Viewer |
-| `vmware-solutions.instances.update` | Update IBM Cloud for VMware Solutions instances | Administrator, Editor |
-| `vmware-solutions.account.update` | Update account settings for IBM Cloud for VMware Solutions | Administrator |
+| `vmware-solutions.instances.create` | Create IBM Cloud for VMware Solutions instances | Administrator, Manager |
+| `vmware-solutions.instances.delete` | Delete IBM Cloud for VMware Solutions instances | Administrator, Manager |
+| `vmware-solutions.instances.view` | List or view IBM Cloud for VMware Solutions instances | Administrator, Director Backup User, Director Catalog Author, Director Console User, Director Full Viewer, Director Network Admin, Director Security Admin, Director vApp Author, Director vApp User, Editor, Manager, Operator, Reader, Viewer, Writer |
+| `vmware-solutions.instances.update` | Update IBM Cloud for VMware Solutions instances | Administrator, Editor, Manager, Writer |
+| `vmware-solutions.account.update` | Update account settings for IBM Cloud for VMware Solutions | Administrator, Manager |
+| `vmware-solutions.directorsite.administrator` | Director Administrator | Administrator |
+| `vmware-solutions.directorsite.vappauthor` | Director vApp Author | Director vApp Author |
+| `vmware-solutions.directorsite.vappuser` | Director vApp User | Director vApp User |
+| `vmware-solutions.directorsite.fullviewer` | Director Full Viewer | Director Full Viewer |
+| `vmware-solutions.directorsite.catalogauthor` | Director Catalog Author | Director Catalog Author |
+| `vmware-solutions.directorsite.writer` | Director Writer | Writer |
+| `vmware-solutions.directorsite.manager` | Director Manager | Manager |
+| `vmware-solutions.directorsite.reader` | Director Reader | Reader |
+| `vmware-solutions.directorsite.networkadmin` | Director Network Admin | Director Network Admin |
+| `vmware-solutions.directorsite.consoleuser` | Director Console User | Director Console User |
+| `vmware-solutions.directorsite.securityadmin` | Director Security Admin | Director Security Admin |
+| `vmware-solutions.directorsite.backupuser` | Director Backup User | Director Backup User |
+| `vmware-solutions.directorsite.editor` | Director Editor | Editor |
+| `vmware-solutions.directorsite.viewer` | Viewer in Director | Viewer |
+| `vmware-solutions.directorsite.operator` | Director Operator | Operator |
 {: caption="Table 148. Service actions - VMware Solutions" caption-side="top"}
 {: #actions-table148}
 {: tab-title="Actions"}
