@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2021-05-31"
+lastupdated: "2022-06-13"
 
 keywords: cloud shell settings, cloud shell service, enable cloud shell, disable cloud shell, cloud shell locations, cloud shell access, cloud shell iam, cloud shell role, cloud shell administrator, cloud shell service
 
@@ -27,7 +27,7 @@ Only account owners, users assigned the Administrator role for the {{site.data.k
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Users**.
 2. On the Users page, select the user that you want to assign the role to.
-3. On the individual user's page, click the **Access policies** tab, and then click **Assign access**.
+3. On the individual user's page, click the **Access** tab, and then click **Assign access**.
 4. Select the service **{{site.data.keyword.cloud-shell_notm}}**.
 5. For the role, select **Administrator**, and then click **Review**. For more information, see [IAM roles](/docs/account?topic=account-userroles#iamusermanrol).
 6. Click **Review**.

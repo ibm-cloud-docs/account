@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2022
 
-lastupdated: "2022-06-14"
+lastupdated: "2022-06-22"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, access management service, catalog management service, cloud shell service, software instance service
 
@@ -29,15 +29,33 @@ As the account owner or the administrator of an account management service, you 
 To assign access to one or all account management services, complete the following steps:
 
 1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Access (IAM)**, and then select **Users**.
-1. Click the user that you want to assign access, then go to **Access policies** > **Assign access**.
+1. Click the user that you want to assign access, then go to **Access** > **Assign access**.
 1. For the service, select **All Account Management Services** or select a specific account management service. Then, click **Next**.
 1. Scope the access to **All resources** or **Specific resources**. Then, click **Next**.
 1. Select any combination of roles or permissions, and click **Review**.
 1. Click **Add** to add your policy configuration to your policy summary. 
 1. Click **Assign**. 
 
-To grant another user full access to the account for the purposes of managing user access and all IAM-enabled account resources, you must assign two policies. To create the first policy, select **All Identity and Access enabled services** in **Account** with the Administrator platform role and Manager service role. To create the second policy, select **All Account Management Services** with the Administrator role assigned.
+To grant another user full access to the account for the purposes of managing user access and all IAM-enabled account resources, you must assign two policies. To create the first policy, select **All Identity and Access enabled services** with the Administrator platform role and Manager service role. To create the second policy, select **All Account Management services** with the Administrator role assigned.
 {: tip}
+
+### Assigning access to IAM account management services in the console
+{: #console-iam-services}
+{: ui}
+
+You can assign access to All IAM Account Management services, which is a subset of account management services that includes IAM Identity, IAM Access Management, IAM User Management, IAM Groups, and future IAM services. To assign access to this group of services, you must be the account owner, or a user that's assigned the administrator role on All IAM Account Management services or All Account Management services.
+
+Some roles that you might assign on a policy for **All IAM Account Management services** affect only certain resources. For example, the role Service ID Creator is relevant to only the IAM Identity service. 
+{: note}
+
+To assign access to All IAM Account Management services, complete the following steps:
+
+1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Access (IAM)**, and then select **Users**.
+1. Click the user that you want to assign access, then go to **Access policies** > **Assign access**.
+1. For the service, select **All IAM Account Management services**. Then, click **Next**.
+1. Select any combination of roles or permissions, and click **Review**.
+1. Click **Add** to add your policy configuration to your policy summary. 
+1. Click **Assign**. 
 
 ## Actions and roles for account management services
 {: #account-management-actions-roles}
@@ -48,7 +66,7 @@ The following tables outline the actions that users can take when they are assig
 ### All account management services
 {: #all-account-management}
 
-To quickly give users a wide-ranging set of account management access, you can assign a policy on all account management services. Depending on the role that is selected, all applicable actions per the selected role for each account management service can be completed by the subject of the policy.
+To quickly give users a wide range of account management access, you can assign a policy on all account management services. Depending on the role that you select, all applicable actions per the selected role for each account management service can be completed by the subject of the policy.
 
 | Roles         | Actions                                                                                                      |
 |---------------|--------------------------------------------------------------------------------------------------------------|
@@ -56,7 +74,7 @@ To quickly give users a wide-ranging set of account management access, you can a
 | Operator      | All operator role actions for the account management services                                                |
 | Editor        | All editor role actions for the account management services and the ability to create resource groups        |
 | Administrator | All administrator role actions for the account management services and the ability to create resource groups |
-{: caption="Table 1. Roles and example actions for a policy on all identity and access services" caption-side="top"}
+{: caption="Table 1. Roles and example actions for a policy on all account management services" caption-side="top"}
 
 ### Billing
 {: #billing-acct-mgmt}
@@ -311,7 +329,8 @@ If you are assigning access by using the CLI or API, the account management serv
 | {{site.data.keyword.compliance_short}} | serviceName=security-compliance |
 | Support center| serviceName=support |
 | User management | serviceName=user-management |
-| All account management services | serviceType=platform_service | 
+| All Account Management services | serviceType=platform_service | 
+| All IAM Account Management services | service_group_id=IAM | 
 {: caption="Table 1. Account management service names" caption-side="top"}
 
 ## Assigning access by using the API
@@ -525,6 +544,430 @@ fmt.Println(string(b))
 {: go}
 {: codeblock}
 
+The following example assigns a policy with the Administrator role on **All Account Management services**.
+
+```bash
+curl -X POST \
+'https://iam.cloud.ibm.com/v1/policies' \
+-H 'Authorization: $TOKEN'\
+-H 'Content-Type: application/json'\
+-d '{
+  "type": "access",
+  "subjects": [
+    {
+      "attributes": [
+        {
+          "name": "iam_id",
+          "value": "IBMid-123453user"
+        }
+      ]
+    }'
+  ],
+  "roles":[
+    {
+      "role_id": "crn:v1:bluemix:public:iam::::role:Administrator"
+    }
+  ],
+  "resources":[
+    {
+      "attributes": [
+        {
+          "name": "accountId",
+          "value": "$ACCOUNT_ID"
+        },
+        {
+          "name": "serviceType",
+          "value": "platform-service"
+        }
+      ]
+    }
+  ]
+}'
+```
+{: curl}
+{: codeblock}
+
+```java
+SubjectAttribute subjectAttribute = new SubjectAttribute.Builder()
+        .name("iam_id")
+        .value("EXAMPLE_USER_ID")
+        .build();
+
+PolicySubject policySubjects = new PolicySubject.Builder()
+        .addAttributes(subjectAttribute)
+        .build();
+
+PolicyRole policyRoles = new PolicyRole.Builder()
+        .roleId("crn:v1:bluemix:public:iam::::role:Administrator")
+        .build();
+
+ResourceAttribute accountIdResourceAttribute = new ResourceAttribute.Builder()
+        .name("accountId")
+        .value("exampleAccountId")
+        .operator("stringEquals")
+        .build();
+
+ResourceAttribute serviceTypeResourceAttribute = new ResourceAttribute.Builder()
+        .name("serviceType")
+        .value("platform-service")
+        .operator("stringEquals")
+        .build();
+
+PolicyResource policyResources = new PolicyResource.Builder()
+        .addAttributes(accountIdResourceAttribute)
+        .addAttributes(serviceTypeResourceAttribute)
+        .build();
+
+CreatePolicyOptions options = new CreatePolicyOptions.Builder()
+        .type("access")
+        .subjects(Arrays.asList(policySubjects))
+        .roles(Arrays.asList(policyRoles))
+        .resources(Arrays.asList(policyResources))
+        .build();
+
+Response<Policy> response = service.createPolicy(options).execute();
+Policy policy = response.getResult();
+
+System.out.println(policy);
+```
+{: java}
+{: codeblock}
+
+```javascript
+const policySubjects = [
+  {
+    attributes: [
+      {
+        name: 'iam_id',
+        value: "exampleUserId",
+      },
+    ],
+  },
+];
+const policyRoles = [
+  {
+    role_id: 'crn:v1:bluemix:public:iam::::role:Administrator',
+  },
+];
+const accountIdResourceAttribute = {
+  name: 'accountId',
+  value: 'exampleAccountId',
+  operator: 'stringEquals',
+};
+const serviceTypeResourceAttribute = {
+  name: 'serviceType',
+  value: 'platform-service',
+  operator: 'stringEquals',
+};
+const policyResources = [
+  {
+    attributes: [accountIdResourceAttribute, serviceTypeResourceAttribute]
+  },
+];
+const params = {
+  type: 'access',
+  subjects: policySubjects,
+  roles: policyRoles,
+  resources: policyResources,
+};
+
+iamPolicyManagementService.createPolicy(params)
+  .then(res => {
+    examplePolicyId = res.result.id;
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err)
+  });
+```
+{: javascript}
+{: codeblock}
+
+```python
+policy_subjects = PolicySubject(
+  attributes=[SubjectAttribute(name='iam_id', value='example_user_id')])
+policy_roles = PolicyRole(
+  role_id='crn:v1:bluemix:public:iam::::role:Administrator')
+account_id_resource_attribute = ResourceAttribute(
+  name='accountId', value=example_account_id)
+service_name_resource_attribute = ResourceAttribute(
+  name='serviceType', value='platform-service')
+policy_resources = PolicyResource(
+  attributes=[account_id_resource_attribute,
+        service_type_resource_attribute])
+
+policy = iam_policy_management_service.create_policy(
+  type='access',
+  subjects=[policy_subjects],
+  roles=[policy_roles],
+  resources=[policy_resources]
+).get_result()
+
+print(json.dumps(policy, indent=2))
+```
+{: python}
+{: codeblock}
+
+```go
+subjectAttribute := &iampolicymanagementv1.SubjectAttribute{
+  Name:  core.StringPtr("iam_id"),
+  Value: core.StringPtr("exampleUserID"),
+}
+policySubjects := &iampolicymanagementv1.PolicySubject{
+  Attributes: []iampolicymanagementv1.SubjectAttribute{*subjectAttribute},
+}
+policyRoles := &iampolicymanagementv1.PolicyRole{
+  RoleID: core.StringPtr("crn:v1:bluemix:public:iam::::role:Administrator"),
+}
+accountIDResourceAttribute := &iampolicymanagementv1.ResourceAttribute{
+  Name:     core.StringPtr("accountId"),
+  Value:    core.StringPtr("ACCOUNT_ID"),
+  Operator: core.StringPtr("stringEquals"),
+}
+serviceTypeResourceAttribute := &iampolicymanagementv1.ResourceAttribute{
+  Name:     core.StringPtr("serviceType"),
+  Value:    core.StringPtr("platform-service"),
+  Operator: core.StringPtr("stringEquals"),
+}
+policyResources := &iampolicymanagementv1.PolicyResource{
+  Attributes: []iampolicymanagementv1.ResourceAttribute{
+    *accountIDResourceAttribute, *serviceTypeResourceAttribute},
+}
+
+options := iamPolicyManagementService.NewCreatePolicyOptions(
+  "access",
+  []iampolicymanagementv1.PolicySubject{*policySubjects},
+  []iampolicymanagementv1.PolicyRole{*policyRoles},
+  []iampolicymanagementv1.PolicyResource{*policyResources},
+)
+
+policy, response, err := iamPolicyManagementService.CreatePolicy(options)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(policy, "", "  ")
+fmt.Println(string(b))
+```
+{: go}
+{: codeblock}
+
+### Assigning access to IAM services by using the API
+{: #api-iam-services}
+{: api}
+
+You can assign access to All IAM Account Management services, which is a subset of account management services that includes IAM Identity, IAM Access Management, IAM User Management, IAM Groups, and future IAM services. To assign access to this group of services, you must be the account owner, or a user that's assigned the administrator role on All IAM Account Management services or All Account Management services.
+
+Some roles that you might assign on a policy for **All IAM Account Management services** affect only certain resources. For example, the role Service ID Creator (`crn:v1:bluemix:public:iam-identity::::serviceRole:ServiceIdCreator`) is relevant to only the IAM Identity service. 
+{: note}
+
+The following example assigns a policy with the Administrator role on All IAM Account Management services:
+
+```bash
+curl -X POST \
+'https://iam.cloud.ibm.com/v1/policies' \
+-H 'Authorization: $TOKEN'\
+-H 'Content-Type: application/json'\
+-d '{
+  "type": "access",
+  "subjects": [
+    {
+      "attributes": [
+        {
+          "name": "iam_id",
+          "value": "IBMid-123453user"
+        }
+      ]
+    }'
+  ],
+  "roles":[
+    {
+      "role_id": "crn:v1:bluemix:public:iam::::role:Administrator"
+    }
+  ],
+  "resources":[
+    {
+      "attributes": [
+        {
+          "name": "accountId",
+          "value": "$ACCOUNT_ID"
+        },
+        {
+          "name": "service_group_id",
+          "value": "IAM"
+        }
+      ]
+    }
+  ]
+}'
+```
+{: curl}
+{: codeblock}
+
+```java
+SubjectAttribute subjectAttribute = new SubjectAttribute.Builder()
+        .name("iam_id")
+        .value("EXAMPLE_USER_ID")
+        .build();
+
+PolicySubject policySubjects = new PolicySubject.Builder()
+        .addAttributes(subjectAttribute)
+        .build();
+
+PolicyRole policyRoles = new PolicyRole.Builder()
+        .roleId("crn:v1:bluemix:public:iam::::role:Administrator")
+        .build();
+
+ResourceAttribute accountIdResourceAttribute = new ResourceAttribute.Builder()
+        .name("accountId")
+        .value("exampleAccountId")
+        .operator("stringEquals")
+        .build();
+
+ResourceAttribute serviceNameResourceAttribute = new ResourceAttribute.Builder()
+        .name("service_group_id")
+        .value("IAM")
+        .operator("stringEquals")
+        .build();
+
+PolicyResource policyResources = new PolicyResource.Builder()
+        .addAttributes(accountIdResourceAttribute)
+        .addAttributes(service_group_idResourceAttribute)
+        .build();
+
+CreatePolicyOptions options = new CreatePolicyOptions.Builder()
+        .type("access")
+        .subjects(Arrays.asList(policySubjects))
+        .roles(Arrays.asList(policyRoles))
+        .resources(Arrays.asList(policyResources))
+        .build();
+
+Response<Policy> response = service.createPolicy(options).execute();
+Policy policy = response.getResult();
+
+System.out.println(policy);
+```
+{: java}
+{: codeblock}
+
+```javascript
+const policySubjects = [
+  {
+    attributes: [
+      {
+        name: 'iam_id',
+        value: "exampleUserId",
+      },
+    ],
+  },
+];
+const policyRoles = [
+  {
+    role_id: 'crn:v1:bluemix:public:iam::::role:Administrator',
+  },
+];
+const accountIdResourceAttribute = {
+  name: 'accountId',
+  value: 'exampleAccountId',
+  operator: 'stringEquals',
+};
+const serviceNameResourceAttribute = {
+  name: 'service_group_id',
+  value: 'IAM',
+  operator: 'stringEquals',
+};
+const policyResources = [
+  {
+    attributes: [accountIdResourceAttribute, service_group_idResourceAttribute]
+  },
+];
+const params = {
+  type: 'access',
+  subjects: policySubjects,
+  roles: policyRoles,
+  resources: policyResources,
+};
+
+iamPolicyManagementService.createPolicy(params)
+  .then(res => {
+    examplePolicyId = res.result.id;
+    console.log(JSON.stringify(res.result, null, 2));
+  })
+  .catch(err => {
+    console.warn(err)
+  });
+```
+{: javascript}
+{: codeblock}
+
+```python
+policy_subjects = PolicySubject(
+  attributes=[SubjectAttribute(name='iam_id', value='example_user_id')])
+policy_roles = PolicyRole(
+  role_id='crn:v1:bluemix:public:iam::::role:Administrator')
+account_id_resource_attribute = ResourceAttribute(
+  name='accountId', value=example_account_id)
+service_name_resource_attribute = ResourceAttribute(
+  name='service_group_id', value='IAM')
+policy_resources = PolicyResource(
+  attributes=[account_id_resource_attribute,
+        service_group_id_resource_attribute])
+
+policy = iam_policy_management_service.create_policy(
+  type='access',
+  subjects=[policy_subjects],
+  roles=[policy_roles],
+  resources=[policy_resources]
+).get_result()
+
+print(json.dumps(policy, indent=2))
+```
+{: python}
+{: codeblock}
+
+```go
+subjectAttribute := &iampolicymanagementv1.SubjectAttribute{
+  Name:  core.StringPtr("iam_id"),
+  Value: core.StringPtr("exampleUserID"),
+}
+policySubjects := &iampolicymanagementv1.PolicySubject{
+  Attributes: []iampolicymanagementv1.SubjectAttribute{*subjectAttribute},
+}
+policyRoles := &iampolicymanagementv1.PolicyRole{
+  RoleID: core.StringPtr("crn:v1:bluemix:public:iam::::role:Administrator"),
+}
+accountIDResourceAttribute := &iampolicymanagementv1.ResourceAttribute{
+  Name:     core.StringPtr("accountId"),
+  Value:    core.StringPtr("ACCOUNT_ID"),
+  Operator: core.StringPtr("stringEquals"),
+}
+serviceNameResourceAttribute := &iampolicymanagementv1.ResourceAttribute{
+  Name:     core.StringPtr("service_group_id"),
+  Value:    core.StringPtr("IAM"),
+  Operator: core.StringPtr("stringEquals"),
+}
+policyResources := &iampolicymanagementv1.PolicyResource{
+  Attributes: []iampolicymanagementv1.ResourceAttribute{
+    *accountIDResourceAttribute, *service_group_idResourceAttribute},
+}
+
+options := iamPolicyManagementService.NewCreatePolicyOptions(
+  "access",
+  []iampolicymanagementv1.PolicySubject{*policySubjects},
+  []iampolicymanagementv1.PolicyRole{*policyRoles},
+  []iampolicymanagementv1.PolicyResource{*policyResources},
+)
+
+policy, response, err := iamPolicyManagementService.CreatePolicy(options)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(policy, "", "  ")
+fmt.Println(string(b))
+```
+{: go}
+{: codeblock}
+
+
 ## Actions and roles for account management services
 {: #account-management-actions-roles-api}
 {: api}
@@ -534,7 +977,7 @@ The following tables outline the actions that users can take when they are assig
 ### All account management services
 {: #all-account-management-api}
 
-To quickly give users a wide-ranging set of account management access, you can assign a policy on all account management services. Depending on the role that is selected, all applicable actions per the selected role for each account management service can be completed by the subject of the policy.
+To quickly give users a wide range of account management access, you can assign a policy on all account management services. Depending on the role that you select, all applicable actions per the selected role for each account management service can be completed by the subject of the policy.
 
 | Roles         | Actions                                                                                                      | role_ID value                                  |
 |---------------|--------------------------------------------------------------------------------------------------------------|------------------------------------------|
@@ -542,7 +985,7 @@ To quickly give users a wide-ranging set of account management access, you can a
 | Operator      | All operator role actions for the account management services                                                | `crn:v1:bluemix:public:iam::::role:Operator` |
 | Editor        | All editor role actions for the account management services and the ability to create resource groups        | `crn:v1:bluemix:public:iam::::role:Editor` |
 | Administrator | All administrator role actions for the account management services and the ability to create resource groups | `crn:v1:bluemix:public:iam::::role:Administrator` |
-{: caption="Table 2. Roles and example actions for a policy on all identity and access services" caption-side="top"}
+{: caption="Table 2. Roles and example actions for a policy on all account management services" caption-side="top"}
 
 ### Billing
 {: #billing-acct-mgmt-api}
@@ -720,7 +1163,7 @@ You can give users access to create, update, and delete resources for the {{site
 |---------------|---------------------------------------------------------------------------------------------------------------------------|------------|
 | Viewer        | Access the {{site.data.keyword.compliance_short}} dashboard to view current posture and results   \n  \n View created resources such as scopes, credentials, or rules   \n  \n View global settings for the service | `crn:v1:bluemix:public:iam::::role:Viewer` |
 | Operator      | Create an audit log for monitoring compliance activity | `crn:v1:bluemix:public:iam::::role:Operator` |
-| Editor        | Create, update, or delete a objects such as scopes, credentials, and collectors   \n  \n Update the parameter settings of a goal   \n  \n Create, update, or delete rules and templates   \n  \n Edit global admin settings for the service | `crn:v1:bluemix:public:iam::::role:Editor` |
+| Editor        | Create, update, or delete objects such as scopes, credentials, and collectors   \n  \n Update the parameter settings of a goal   \n  \n Create, update, or delete rules and templates   \n  \n Edit global admin settings for the service | `crn:v1:bluemix:public:iam::::role:Editor` |
 | Administrator | Perform all platform actions based on the resource that this role is being assigned, including assigning access policies to other users. | `crn:v1:bluemix:public:iam::::role:Administrator` |
 | Manager       | Permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |`crn:v1:bluemix:public:iam::::serviceRole:Manager` |
 | Reader        | Perform read-only actions within a service such as viewing service-specific resources. | `crn:v1:bluemix:public:iam::::serviceRole:Reader` |
@@ -770,7 +1213,7 @@ You can give users access to view users in an account, invite and remove users, 
 | Operator      | View users in the account   \n  \n View user profile settings                                          | `crn:v1:bluemix:public:iam::::role:Operator` |
 | Editor        | View, invite, remove, and update users from the account   \n  \n View and update user profile settings | `crn:v1:bluemix:public:iam::::role:Editor` |
 | Administrator | View, invite, remove, and update users from the account   \n  \n View and update user profile settings | `crn:v1:bluemix:public:iam::::role:Administrator` |
-{: caption="Table 19. Roles and example actions for the User Management service" caption-side="top"}
+{: caption="Table 18. Roles and example actions for the User Management service" caption-side="top"}
 
 The viewer role on the user management service is a role that is commonly assigned for users assigned a role to view or manage support cases. If an account owner restricts the visibility of the user list in the IAM settings, users can't see support cases that are opened by other users in the account. However, if they are assigned the viewer role for the user management service, the user list visibility setting doesn't affect the ability to view cases in the account.
 {: tip}
@@ -798,9 +1241,9 @@ If you are assigning access by using the CLI or API, the account management serv
 | {{site.data.keyword.compliance_short}} | serviceName=security-compliance |
 | Support center| serviceName=support |
 | User management | serviceName=user-management |
-| All account management services | serviceType=platform_service | 
+| All Account Management services | serviceType=platform_service | 
+| All IAM Account Management services | service_group_id=IAM | 
 {: caption="Table 1. Account management service names" caption-side="top"}
-
 
 ## Assigning access by using the CLI
 {: #cli-acct-mgmt}
@@ -815,6 +1258,29 @@ ibmcloud iam user-policy-create name@example.com --roles "User API key creator" 
 
 For service names to use in the CLI command for each account management service, see Table 1. However, for a policy on all account management services in the CLI, use `--account-management` instead of `--service-name SERVICE_NAME`. For roles that are more than one word, use the display name with quotations. 
 {: tip}
+
+The following example command assigns a policy with the Administrator role for All Account Management services.
+
+```sh
+ibmcloud iam user-policy-create name.example.com --roles Administrator --attributes serviceType=service
+```
+{: pre}
+
+### Assigning access to IAM services by using the CLI
+{: #cli-iam-services}
+{: cli}
+
+You can assign access to All IAM Account Management services, which is a subset of account management services that includes IAM Identity, IAM Access Management, User Management, IAM Groups, and future IAM services. To assign access to this group of services, you must be the account owner, or a user assigned the administrator role on All IAM Account Management services or All Account Management services.
+
+Some roles that you might assign on a policy for **All IAM Account Management services** affect only certain resources. For example, the role Service ID Creator is relevant to only the IAM Identity Service. 
+{: note}
+
+The following example command assigns a policy with the Administrator role on All IAM Account Management services:
+
+```sh
+ibmcloud iam user-policy-create jeanned@us.ibm.com --roles Administrator --attributes service_group_id=IAM
+```
+{: pre}
 
 ## Actions and roles for account management services
 {: #account-management-actions-roles-cli}
@@ -833,7 +1299,7 @@ To quickly give users a wide-ranging set of account management access, you can a
 | Operator      | All operator role actions for the account management services                                                |
 | Editor        | All editor role actions for the account management services and the ability to create resource groups        |
 | Administrator | All administrator role actions for the account management services and the ability to create resource groups |
-{: caption="Table 2. Roles and example actions for a policy on all identity and access services" caption-side="top"}
+{: caption="Table 2. Roles and example actions for a policy on all account management services" caption-side="top"}
 
 ### Billing
 {: #billing-acct-mgmt-cli}
@@ -1010,7 +1476,7 @@ You can give users access to create, update, and delete resources for the {{site
 |---------------|------------------------------------|
 | Viewer        | Access the {{site.data.keyword.compliance_short}} dashboard to view current posture and results   \n  \n View created resources such as scopes, credentials, or rules   \n  \n View global settings for the service |
 | Operator      | Create an audit log for monitoring compliance activity |
-| Editor        | Create, update, or delete a objects such as scopes, credentials, and collectors   \n  \n Update the parameter settings of a goal   \n  \n Create, update, or delete rules and templates   \n  \n Edit global admin settings for the service |
+| Editor        | Create, update, or delete objects such as scopes, credentials, and collectors   \n  \n Update the parameter settings of a goal   \n  \n Create, update, or delete rules and templates   \n  \n Edit global admin settings for the service |
 | Administrator | Perform all platform actions based on the resource that this role is being assigned, including assigning access policies to other users. |
 | Manager       | Permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader        | Perform read-only actions within a service such as viewing service-specific resources. |
@@ -1131,7 +1597,7 @@ To quickly give users a wide-ranging set of account management access, you can a
 | Operator      | All operator role actions for the account management services                                                |
 | Editor        | All editor role actions for the account management services and the ability to create resource groups        |
 | Administrator | All administrator role actions for the account management services and the ability to create resource groups |
-{: caption="Table 1. Roles and example actions for a policy on all identity and access services" caption-side="top"}
+{: caption="Table 1. Roles and example actions for a policy on account management services" caption-side="top"}
 
 ### Billing
 {: #billing-acct-mgmt-terra}
@@ -1308,7 +1774,7 @@ You can give users access to create, update, and delete resources for the {{site
 |---------------|------------------------------------|
 | Viewer        | Access the {{site.data.keyword.compliance_short}} dashboard to view current posture and results   \n  \n View created resources such as scopes, credentials, or rules   \n  \n View global settings for the service |
 | Operator      | Create an audit log for monitoring compliance activity |
-| Editor        | Create, update, or delete a objects such as scopes, credentials, and collectors   \n  \n Update the parameter settings of a goal   \n  \n Create, update, or delete rules and templates   \n  \n Edit global admin settings for the service |
+| Editor        | Create, update, or delete objects such as scopes, credentials, and collectors   \n  \n Update the parameter settings of a goal   \n  \n Create, update, or delete rules and templates   \n  \n Edit global admin settings for the service |
 | Administrator | Perform all platform actions based on the resource that this role is being assigned, including assigning access policies to other users. |
 | Manager       | Permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader        | Perform read-only actions within a service such as viewing service-specific resources. |
