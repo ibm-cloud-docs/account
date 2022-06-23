@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021,2022
-lastupdated: "2022-05-31"
+lastupdated: "2022-06-13"
 
 keywords: troubleshoot accessing all instances of a service
 
@@ -36,8 +36,8 @@ Check the user's level of access.
 {: tsResolve}
 
 1. Go to **Manage** > **Access (IAM)** in the {{site.data.keyword.cloud_notm}} console, and select the user from the list on the **Users** page.
-2. To view IAM access policies that are assigned to you, select **Access policies** and view the Access policies table. 
-3. To determine what access you have through the access groups you are assigned, select **Access groups** and view the Access groups table. Check the access policies for each of the access groups.
+2. To view IAM access policies that are assigned to you, select **Access** and view the Access policies table. 
+3. To determine what access you have through the access groups you are assigned, select **Access** and view the Access groups table. Check the access policies for each of the access groups.
 
 To view what actions are mapped to each role, click the numbers listed next to each role.
 {: tip}

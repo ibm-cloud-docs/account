@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020. 2022
-lastupdated: "2021-05-31"
+lastupdated: "2022-06-13"
 
 
 keywords: troubleshoot invite users, access to invite users, access to add users
@@ -37,7 +37,7 @@ To review your assigned access in the account, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users**. 
 2. Select your name. 
-3. Review the assigned access in the **Access policies** and **Access groups** section.
+3. Review the assigned access in the **Access** tab.
 
 If you aren't assigned the correct access, contact the account owner. After you have the correct access, go to **Manage > Access (IAM)**, then select **Users**, and click **Invite users** to add users to the account.
 

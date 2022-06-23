@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2022
 
-lastupdated: "2022-05-31"
+lastupdated: "2022-06-13"
 
 keywords: migrated permissions, SoftLayer account permissions, migrated permission access group, migrated classic infrastructure permissions
 
@@ -60,7 +60,7 @@ To create an access group, complete the following steps:
 
 After you set up your group with users and service IDs, assign access to the group. Remember, any policy that you set for the group applies to all members of the group.
 
-1. Click the **Access policies** tab.
+1. Click the **Access** tab.
 2. Click **Assign access**.
 3. From the services, select **Billing** and click **Next**. 
 4. Select the **Viewer** role and click **Review**. 
