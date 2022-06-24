@@ -55,18 +55,6 @@ To manage rules, you must be assigned a specific role for the context-based rest
 
 For more information, see [Actions and roles for account management services](/docs/account?topic=account-account-services&interface=ui).
 
-<!--per Chris Hatko (@chatko). UI changes have been reverted for now - June 24, 2022. Will go live soon though. - Kent Hall
-### Rule enforcement 
-
-You can decide how you want to enforce a rule upon creation and update the rule enforcement at any time.
-* **Enable**: Enforce the rule. Denied access attempts are reported in {{site.data.keyword.at_short}}.
-* **Disable**: No restrictions apply to your account resources. Select this option if you're not ready to enable the rule. 
-* **Report-only**: Monitor how the rule affects users without enforcing it. All attemptes to access resources in the account are logged in {{site.data.keyword.at_short}}. Monitoring is recommended for 30 days before you enforce the rule.
-
-You can monitor the impact of your enabled and report-only rules. For more information, see [Monitoring context-based restrictions](/docs/account?topic=account-cbr-monitor). 
-{: tip}
--->
-
 ### Defining the scope of a rule
 {: #rule-scope}
 
