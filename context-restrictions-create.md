@@ -2,8 +2,8 @@
 
 copyright:
   years: 2021, 2022
+lastupdated: "2022-06-24"
 
-lastupdated: "2022-06-22"
 
 keywords: create network access, network access rule, network zone
 
@@ -43,6 +43,10 @@ To create a network zone, complete the following steps.
 1. Enter a unique name and a description.
 1. Enter the allowed IP addresses where an access request can originate. Include IP address exceptions in the deny list, if necessary.
 1. Enter the allowed VPCs. 
+
+    If you want to allow access from the VPC to public endpoints in your rule, include any public gateway IP addresses in the zone definition along with the VPC.
+    {: important}
+
 1. Reference a service. Select a service and click **Add** to associate its IP addresses with your network zone.
 1. Click **Next** to review your network zone.
 1. Click **Create**.
@@ -59,20 +63,33 @@ To create a rule, complete the following steps.
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Context-based restrictions**, and select **Rules**.
 1. Click **Create**.  
 1. Provide a unique description. 
-1. Select how you want to enforce the rule. You can decide how you want to enforce a rule upon creation and update the rule enforcement at any time.
-    * **Enable**: Enforce the rule. Denied access attempts are reported in {{site.data.keyword.at_short}}.
-    * **Disable**: Don't enforce the rule. Restrictions don't apply to your account resources. Select this option if you're not ready to enable the rule.
-    * **Report-only**: Monitor how the rule affects users without enforcing it. All attempts to access resources in the account are logged in {{site.data.keyword.at_short}}. Monitoring is recommended for 30 days before you enforce the rule.
 1. Click **Continue**. 
 1. Select the service that you want to target in your rule. Then, click **Next**. 
+    * Select a single service
+    * Select **All IAM Account Management services**, which restrict access to the IAM platform services IAM Identity, IAM Access Management, User Management, and IAM Access Groups.
 
     When you create context-based restriction for the IAM Access Groups service, users who don't satisfy the rule can't view any groups in the account, including the public access group. 
     {: note}
 
 1. Scope the restriction to **All resources** or **Specific resources** based on selected attributes. 
+1. (Optional) Select the scope of APIs whose operations are restricted by your rule. For more information, see [Defining the scope of a rule](/docs/account?topic=account-context-restrictions-whatis&interface=ui#rule-scope).
+
+    Not all services support the ability to scope a rule by API.
+    {: note}
+
 1. Click **Review** > **Continue**. 
 1. Add one or more contexts. Select endpoint types and network zones, and click **Add**. 
     * You can allow access from all service-supported or specific service endpoint types. If the toggle is set to Yes, all service supported endpoint types are added to the rule. 
+
+    If you want to allow access from a VPC to public endpoints in your rule, include any public gateway IP addresses in the zone definition along with the VPC.
+    {: important}
+
     * You can add existing network zones to your rule or create new zones to add to your rule. For more information, see [Creating network zones](/docs/account?topic=network-zones-create).
 1. Click **Create**.
 
+<!--- The steps in the tip below are correct but don't work as intended. This is a bug that dev needs to fix before we can expose this. When we do bring it back, also consider making this step-by-step with its own H2 (Siggested by Dimitri Prosper). --Addison
+
+
+If you create a context-based restriction for the **IAM Access Groups** or **IAM Users** services, the rule must allow the two services to still communicate. To do this, create a network zone with a service reference to the other service. For example, if you create a context-based restriction around the IAM Access Groups service, create a network zone with a service reference to the IAM Users service. Then, add this network zone to the rule you create around the IAM Access Groups service. This way, the IP addresses associated with the IAM Users service is included in the rule’s allowed context. If you don't do this, the services might produce unexpected behavior.
+{: tip}
+--->

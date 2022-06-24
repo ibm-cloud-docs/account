@@ -4,7 +4,7 @@ copyright:
 
   years: 2021, 2022
 
-lastupdated: "2022-06-22"
+lastupdated: "2022-06-24"
 
 keywords: update network access, network access rule, network zone
 
@@ -30,7 +30,6 @@ To edit the context-based restrictions on your cloud resources, complete the fol
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Context-based restrictions**, and select **Rules**.
 2. Select the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") on the rule you want to update, and select **Edit**.
 3. Provide a new description for your rule. Click **Apply** to update the description, or click **Continue**.
-4. To update the enforcement of a rule, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit"). You can **Enable**, **Disable**, or set the rule to **Report-only**. 
 5. To update the scope of resources for the restriction, you can select **All resources** or **Specific resources** based on the available attributes, such as resource group or location. Then, click **Apply** or **Continue**.
 6. Click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") in the the summary panel to update an existing context.
 7. Click the **Remove** icon ![Remove icon](../icons/delete.svg "Remove") in the summary panel to remove network zones.

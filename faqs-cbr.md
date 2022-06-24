@@ -3,7 +3,7 @@
 copyright:
   years: 2021, 2022
 
-lastupdated: "2022-06-22"
+lastupdated: "2022-06-20"
 
 keywords: frequently asked questions, cbr faqs, cbr and iam, context-based restrictions, access restrictions
 
@@ -45,8 +45,10 @@ Unlike IAM policies, context-based restrictions don't assign access. Context-bas
 
  Context-based restrictions enforce access restrictions at the individual service level and access is evaluated when a user attempts to access a resource. Allowed IP address restrict access at the account level, which is evaluated at login.
 
+<!--per Chris Hatko (@chatko). UI changes have been reverted for now - June 24, 2022. Will go live soon though. - Kent Hall 
 ## How can I make sure that my rule doesn't break an access flow?
 {: #monitor-cbr-faq}
 {: faq}
 
 As an administrator, you manage users, applications, and workflows that depend on having the right access when they need it. To make sure that your context-based restrictions rules don't brake an access flow, set the rule to report-only mode for at least 30 days before you enable the rule. This way, you can monitor the impact of the rule on your access flows, such as when access is denied or allowed and for which identities. For more information, see [Monitoring context-based restrictions](/docs/account?topic=account-cbr-monitor). 
+-->
