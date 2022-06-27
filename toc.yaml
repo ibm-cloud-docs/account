@@ -356,7 +356,7 @@
               - /cli/cli-ibmcloud_commands_iam
               - /cli/cli-ibmcloud_catalog
               - /cli/cli-ibmcloud_commands_resource
-              - /cli/plugins/cbr/cbr-plugin
+              - /cli/cli-cbr-plugin
           - topicgroup:
               label: Terraform reference
               links:
