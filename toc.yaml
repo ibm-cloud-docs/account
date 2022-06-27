@@ -459,7 +459,6 @@
               - ts-swinstance-unavail.md
               - ts-unsupported-registry.md
               - /sell/sell-repo-upload-error
-              - /sell/sell-cluster-error
               - /sell/sell-ts-validate-terraform
           - topicgroup:
               label: Troubleshooting context-based restrictions 
