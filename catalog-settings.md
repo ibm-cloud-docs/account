@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-04-03"
+lastupdated: "2022-07-06"
 
 keywords: catalog, private catalogs, visibility, filter catalog, hide product, catalog filtering, enterprise, account group, child account, account, restrict
 
@@ -283,5 +283,17 @@ The following table lists the filters that you can use to customize which produc
 {: class="simple-tab-table"}
 {: summary="Use the buttons before the table to change the context of the table. The column headers identify the options for fitering based on filter type."}
 
-Want to scope your view of the catalog to only products from a specific provider? Use the **Provider** filter to browse by individual providers.
+| Option | Description |
+|--------------|-------|
+| {{site.data.keyword.IBM_notm}} supported | Products that are supported by {{site.data.keyword.cloud_notm}}. |
+| Third party supported | Products that are provided by individual service entities. |
+| Community supported | Products that are provided by open source communities. |
+{: caption="Table 1. Options for filtering by support type" caption-side="top"}
+{: #support-type-custom}
+{: tab-title="Support"}
+{: tab-group="customcatalogfilters"}
+{: class="simple-tab-table"}
+{: summary="Use the buttons before the table to change the context of the table. The column headers identify the options for fitering based on filter type."}
+
+You can also scope your view of the catalog by using the **Provider** filter to browse by individual providers, and the **Location** filter to view products available in specific regions. 
 {: tip}
