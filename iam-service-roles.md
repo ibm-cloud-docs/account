@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-07-05"
+lastupdated: "2022-07-06"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -400,6 +400,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
 {: caption="Table 10. Platform roles - App Configuration" caption-side="top"}
 {: #platform-roles-table10}
@@ -410,6 +411,7 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
+| Client SDK | Role to manage Client SDK |
 | Config Operator | As a Config Operator, you can toggle the feature state. |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
@@ -425,7 +427,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `apprapp.dashboard.view` | Dashboard view | Administrator, Config Operator, Editor, Manager, Operator, Reader, Writer |
-| `apprapp.collections.list` | List collections | Administrator, Config Operator, Manager, Reader, Writer |
+| `apprapp.collections.list` | List collections | Administrator, Client SDK, Config Operator, Manager, Reader, Writer |
 | `apprapp.collections.create` | Create collections | Administrator, Manager |
 | `apprapp.collections.update` | Update collections | Administrator, Manager |
 | `apprapp.collections.delete` | Delete collections  | Administrator, Manager |
@@ -455,6 +457,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `apprapp.gitconfigs.delete` | Delete GIT configuration | Administrator, Manager |
 | `apprapp.gitconfigs.view` | GET a GIT configuration | Administrator, Config Operator, Manager, Reader, Writer |
 | `apprapp.gitconfigs.promote` | Promote configuration | Manager |
+| `apprapp.usage.create` | Usage posting | Administrator, Client SDK, Config Operator, Manager, Reader, Viewer, Writer |
+| `apprapp.sse.view` | SSE connect | Client SDK, Config Operator, Manager, Reader, Writer |
 {: caption="Table 10. Service actions - App Configuration" caption-side="top"}
 {: #actions-table10}
 {: tab-title="Actions"}
