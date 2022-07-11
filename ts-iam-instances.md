@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2021,2022
+  years: 2021, 2022
 lastupdated: "2022-06-13"
 
 keywords: troubleshoot accessing all instances of a service

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2015，2021
+  years: 2015, 2022
 lastupdated: "2021-09-24"
 
 keywords: dedicated ID, public IBMid, IBMid, public IAM service
@@ -10,11 +10,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-
+{{site.data.keyword.attribute-definition-list}}
 
 # Connecting a dedicated ID to your public IBMid
 {: #connect_dedicated_id}

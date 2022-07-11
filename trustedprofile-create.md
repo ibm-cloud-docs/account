@@ -81,7 +81,7 @@ For more information about the fields that are used to create conditions for tru
 You can assign only classic infrastructure access if your account is linked to a Softlayer account.
 {: note}
 
-## Establishing trust with compute resources
+## Establishing trust with compute resources in the console
 {: #create-profile-compute}
 {: ui}
 
@@ -285,7 +285,7 @@ Complete the following steps to define which federated users can access specific
    ```
    {: codeblock}
 
-## Establishing trust with compute resources
+## Establishing trust with compute resources by using the API
 {: #create-profile-compute-api}
 {: api}
 

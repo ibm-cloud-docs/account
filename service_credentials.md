@@ -11,20 +11,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:note: .note}
-{:tip: .tip}
-{:codeblock: .codeblock}
-{:external: target="_blank" .external}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:terraform: .ph data-hd-interface='terraform'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Adding and viewing credentials
 {: #service_credentials}
@@ -235,7 +222,7 @@ Complete the following steps to add a Cloud Foundry credential:
 
 Service credential bindings are used to make the details of the connection to a service instance available to an app or a developer. Service credential bindings can be of type `app` or `key`.
 
-A service credential binding is of type `app` when it is a binding between a [service instance](http://v3-apidocs.cloudfoundry.org/version/3.99.0/index.html#service-instances)[: external] and an [application](http://v3-apidocs.cloudfoundry.org/version/3.99.0/index.html#apps){: external}. Not all services support this binding, as some services deliver value to users directly without integration with an application. Field `broker_catalog.features.bindable` from [service plan](http://v3-apidocs.cloudfoundry.org/version/3.99.0/index.html#the-service-plan-object){: external} of the service instance can be used to determine if it is bindable.
+A service credential binding is of type `app` when it is a binding between a [service instance](http://v3-apidocs.cloudfoundry.org/version/3.99.0/index.html#service-instances){}: external} and an [application](http://v3-apidocs.cloudfoundry.org/version/3.99.0/index.html#apps){: external}. Not all services support this binding, as some services deliver value to users directly without integration with an application. Field `broker_catalog.features.bindable` from [service plan](http://v3-apidocs.cloudfoundry.org/version/3.99.0/index.html#the-service-plan-object){: external} of the service instance can be used to determine if it is bindable.
 
 A service credential binding is of type `key` when it retrieves only the details of the service instance and makes them available to the developer.
 
@@ -331,17 +318,20 @@ To view an existing service credential for a service, complete the following ste
 {: ui}
 
 The access of the user must be equal to or greater than the access of the service credential. For example, if the credential has the IAM service role `Writer`, then the user trying to view the credential must have the IAM service role `Writer` or `Manager` for that particular service assigned. When a user doesn't have the correct access, details such as the API key value are redacted:
-```
+
+```text
     "credentials": {
         "REDACTED": "REDACTED"
     },
 ```
+
 ### IAM level access
 {: #iam-access-credentials-ui}
 {: ui}
 
 When the credential level access can't be determined by comparing the access of the user and the credential, the credential is redacted: 
-```
+
+```text
     "credentials": {
         "REDACTED": "REDACTED_EXPLICIT"
     },
@@ -468,7 +458,8 @@ Example response:
 {: api}
 
 The access of the user must be equal to or greater than the access of the service credential. For example, if the credential has the IAM service role `Writer`, then the user that is trying to view the credential must have the IAM service role `Writer` or `Manager` for that particular service assigned. When a user doesn't have the correct access, details such as the API key value are redacted:
-```
+
+```text
     "credentials": {
         "REDACTED": "REDACTED"
     },
@@ -479,7 +470,8 @@ The access of the user must be equal to or greater than the access of the servic
 {: api}
 
 When the credential level access can't be determined by comparing the access of the user and the credential, the credential is redacted: 
-```
+
+```text
     "credentials": {
         "REDACTED": "REDACTED_EXPLICIT"
     },
