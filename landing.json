@@ -1,6 +1,6 @@
 {
     "title": "Managing your account, resources, and access docs",
-    "lastupdated": "2022-03-09",
+    "lastupdated": "2022-07-12",
     "introduction": "Leverage the interacting components and systems in your account for resource, user, and access management. Get started by setting up your IBM cloud account, learn about setting up an enterprise, or explore assigning access to resources quickly with IBM Cloud Identity and Access Management (IAM).",
     "section_devtools": {
       "api": "/docs?tab=api-docs&subCategory=account&category=platform_services", 
@@ -61,19 +61,19 @@
       "view_more": "/docs/overview?topic=overview-whatsnew",
       "tiles": [
         {
-          "date": "25 March 2022",
-          "title": "Trusted profiles are now members of access groups",
-          "description": "You can now add trusted profiles as members of access groups like other IAM identities, such as users and service IDs." 
+          "date": "22 June 2022",
+          "title": "Identify inactive identities",
+          "description": "You can create a report in the{{site.data.keyword.cloud}} console to identify which users, service IDs, trusted profiles, and API keys in your account are inactive. Removing access for inactive identities can reduce the risk of unauthorized access to your {{site.data.keyword.cloud}} resources and help you manage access more efficiently." 
         },
         {
-          "date": "01 March 2022",
-          "title": "Use feature and subscription codes to create new accounts",
-          "description": "When you register for a new IBM Cloud account, you can use a feature code that you received from participating in a special event or a subscription code that you received by email. Instead of verifying your identity by entering your credit card information, click the option to Register with a code to complete the set up of your new account." 
+          "date": "22 June 2022",
+          "title": "Updated process for assigning access",
+          "description": "Assigning IAM, Classic Infrastructure, and {{site.data.keyword.ibmcf_notm}} access just got more streamlined. When assigning access, each service that you select has an in-context description. You can also find all IAM access policy and access group information for an identity under a single tab. Check out the updated process by assigning access to any user, service ID, or trusted profile." 
         },
         {
-          "date": "17 December 2021",
-          "title": "Restricting domains for account invitations",
-          "description": "You can now restrict membership to your account based on the domain of the users by creating an allowlist. This way, only users with a specific domain or domains can be invited to the account."
+          "date": "22 June 2022",
+          "title": "Assign a policy for All IAM Account Management services",
+          "description": "You can now assign an access policy for All IAM Account Management services, which includes the IAM Identity service, IAM Access Management service, IAM User Management service, IAM Access Groups service, and future IAM services. By assigning an access policy for a group of services, you decrease the number of policies in your account and reduce the time and effort to manage access."
         }
       ]
     }
