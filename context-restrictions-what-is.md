@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-07-11"
+lastupdated: "2022-07-12"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, Cloud Foundry, endpoint type
 
@@ -113,24 +113,27 @@ The three common endpoint types are as follows:
 Some endpoint types might not be supported by the selected service.
 {: note}
 
-## Adopting services
+## Services integrated with context-based restrictions
 {: #cbr-adopters}
 
-You can create context-based restrictions for the following services if you have the right permissions on the service:
+Specific {{site.data.keyword.Bluemix_notm}} services are integrated with context-based restrictions, and only these services can apply rules to their resources. The way that rules apply to individual services is determined by the service, so be sure to review the documentation for each service to understand how context-based restrictions apply.
+
+You can create context-based restrictions for the following services if you are granted the correct access on the service:
 
 | Service       | Service type |
 |---------------|---------------|
-| IAM Users  | Account Management |
-| IAM Groups | Account Management |
-| IAM Access Policy Management| Account Management |
-| IAM Custom roles  | Account Management |
-| IAM Identity  | Account Management |
+| IAM Access Groups Service  | Account Management |
+| IAM Access Management Service | Account Management |
+| IAM Identity Service  | Account Management |
+| IAM User Management | Account Management |
+| {{site.data.keyword.cos_full_notm}} | IAM-enabled |
+| {{site.data.keyword.codeengineshort}} | IAM-enabled |
+| {{site.data.keyword.registryshort}} | IAM-enabled |
 | {{site.data.keyword.keymanagementserviceshort}} | IAM-enabled |
-| Cloud Object Storage | IAM-enabled |
-{: caption="Table 3. Services compatible with context-based restrictions." caption-side="top"}
+{: caption="Table 3. Services that are compatible with context-based restrictions." caption-side="top"}
 
 Context-based restrictions defined for IAM-enabled services do not apply to platform actions like provision or deprovision actions. For more information, see [IAM roles and actions](/docs/account?topic=account-iam-service-roles-actions). 
 {: important}
 
-Check back regularly to see what services are added as more services adopt context-based restrictions.
+Check back regularly to see what services are added as more services integrate with context-based restrictions.
 {: note} 
