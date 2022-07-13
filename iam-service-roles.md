@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-07-12"
+lastupdated: "2022-07-13"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1280,6 +1280,7 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
+| Logs Reader | As a logs reader, you can view user conversations and analytics. |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
@@ -1303,7 +1304,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `conversation.skill.read` | Can open and view a skill. | Manager, Reader, Writer |
 | `conversation.assistant.write` | Can rename, edit, or delete an assistant. | Manager, Writer |
 | `conversation.assistant.read` | Can open and view an assistant. | Manager, Reader, Writer |
-| `conversation.logs.read` | Can view skill analytics and access user conversation logs. | Manager |
+| `conversation.logs.read` | Can view skill analytics and access user conversation logs. | Logs Reader, Manager |
 | `conversation.assistant.list` | Can list assistant or skill | Manager, Reader, Viewer, Writer |
 | `conversation.assistant.default` | Default access for Assistant | Manager, Reader, Viewer, Writer |
 {: caption="Table 27. Service actions - Watson Assistant" caption-side="top"}
