@@ -65,6 +65,10 @@ When you're a member of multiple access groups, all policies apply at once when 
 
 A policy consists of a subject, target, and role. The subject in this case is the access group or trusted profile. The target is what you want the subject to access, such as a set of resources in a resource group, a service instance, all services in the account, or all instances of a service. The role defines the level of access that is granted.
 
+The following diagram shows how an access policy works: 
+
+![What is an Access Policy](images/Access-Policy.svg "What is an Access Policy"){: caption="Figure 1. What is an Access Policy" caption-side="bottom"} 
+
 The most commonly used roles are viewer, editor, operator, and administrator platform roles. 
 
 * The viewer role provides the least amount of access for viewing instances and resource groups in an account. 
@@ -110,6 +114,10 @@ For the Auditor-Group, assign two access policies that grant viewer access to th
 You can assign administrator access to everything in an account by creating an access group and assigning two policies to it. To create the first policy, select **All Identity and Access enabled services** with the Administrator platform role and Manager service role. To create the second policy, select **All Account Management services** with the Administrator role assigned.
 {: tip}
 
+The following diagram shows how access is assigned to resource groups:
+
+![Assigning Access to Resource Groups](images/Access-and-Resource-Groups.svg "Assigning Access to Resource Groups"){: caption="Figure 2. Assigning Access to Resource Groups" caption-side="bottom"} 
+
 For more best practices from IBM Garage for Cloud, see [Managing access to resources in {{site.data.keyword.cloud_notm}}](https://cloudnativetoolkit.dev/resources/ibm-cloud/access-control/){: external}.
 
 ### Sample access policies
@@ -139,6 +147,10 @@ For the `Developer-Profile`, specify conditions based on SAML attributes for the
 
 A trusted profile, like other IAM identities, can be granted access by using a policy or by adding it to an access group. If you have access groups that have the same level of access that a trusted profile needs, then the trusted profile can be added to that access group.
 {: note}
+
+The following diagram shows how access is assigned to trusted profiles:
+
+![Assigning Access to Trusted Profiles](images/trusted-profiles.svg "Assigning Access to Trusted Profiles"){: caption="Figure 3. Assigning Access to Trusted Profiles" caption-side="bottom"} 
 
 You can select only one trusted entity type when you first create a trusted profile. You can [update trusted profiles](/docs/account?topic=account-trusted-profile-update) at any time to add trust relationships with compute resources.
 
