@@ -118,7 +118,7 @@ The following diagram shows how access is assigned to resource groups:
 
 ![Assigning Access to Resource Groups](images/Access-and-Resource-Groups.svg "Assigning Access to Resource Groups"){: caption="Figure 2. Assigning access to resource groups" caption-side="bottom"} 
 
-For more best practices from IBM Garage for Cloud, see [Managing access to resources in {{site.data.keyword.cloud_notm}}](https://cloudnativetoolkit.dev/resources/ibm-cloud/access-control/){: external}.
+For more best practices from IBM Garage for Cloud, see [Managing access to resources in {{site.data.keyword.cloud_notm}}](https://develop.cloudnativetoolkit.dev/resources/ibm-cloud/access-control/){: external}.
 
 ### Sample access policies
 {: #sample_policies_ag}
