@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2022
-lastupdated: "2022-06-03"
+lastupdated: "2022-07-18"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -43,7 +43,7 @@ If you can't log in to an {{site.data.keyword.Bluemix_notm}} account, [create an
 {: #vat-id}
 {: faq}
 
-A tax identification number, such as a VAT ID or GST number, is required to create a new personal use account with an address in specific countries and regions. For information about these requirements, see [Personal use availability](/docs/account?topic=account-account-getting-started#signup-personalaccts).
+A tax identification number, such as a VAT ID, GST number, or TIN, is required to create a new personal use account with an address in specific countries or regions. For information about these requirements or where personal use accounts are not permitted, see [Personal use availability](/docs/account?topic=account-account-getting-started#signup-personalaccts). A tax identification number is also required for company accounts depending on your location. Some countries where the local government requires it, taxes are charged directly instead.
 
 ## How do I update my credit card?
 {: #updatepayment}
@@ -218,7 +218,7 @@ To contact support, you can use the following methods:
 
 The {{site.data.keyword.cloud_notm}} console menu bar lists all of the accounts that are affiliated with your IBMid, including the accounts that you own. Click the account listing in the console menu bar to see the other accounts that you own or are a member. The account name begins with the account number for Pay-As-You-Go and Subscription accounts.
 
-![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-faq.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.")
+![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-faq.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access."){: caption="Figure 1. Account selector" caption-side="bottom"}
 
 You can view your role in each account on the [Users page](/iam/users). The 'owner' tag next to a user name indicates the account owner. If you are the owner of the account, the 'self' tag is also listed next to your name. If you see only your name that is listed and you are not the account owner, the account owner has restricted the user list. For more information, see [Controlling user visibility](/docs/account?topic=account-iam-user-setting).Contact [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external} to determine the account owner. 
 
@@ -246,7 +246,7 @@ The account owner, organization manager, or a user with the correct permissions 
 
 If you have access to more than one account, you can click your account name in the console menu bar to switch to another account.
 
-![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-faq.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.")
+![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-faq.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access."){: caption="Figure 2. Account selector displays all accounts to which you have access" caption-side="bottom"}
 
 ## Can I move data between {{site.data.keyword.Bluemix_notm}} accounts?
 {: #move-between-accounts}
