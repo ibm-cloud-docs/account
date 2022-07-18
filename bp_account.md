@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2022
-lastupdated: "2022-06-22"
+lastupdated: "2022-07-18"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources 
 
@@ -67,7 +67,7 @@ A policy consists of a subject, target, and role. The subject in this case is th
 
 The following diagram shows how an access policy works: 
 
-![What is an Access Policy](images/Access-Policy.svg "What is an Access Policy"){: caption="Figure 1. What is an Access Policy" caption-side="bottom"} 
+![What is an access policy](images/Access-Policy.svg "What is an Access Policy"){: caption="Figure 1. What is an access policy" caption-side="bottom"} 
 
 The most commonly used roles are viewer, editor, operator, and administrator platform roles. 
 
@@ -116,7 +116,7 @@ You can assign administrator access to everything in an account by creating an a
 
 The following diagram shows how access is assigned to resource groups:
 
-![Assigning Access to Resource Groups](images/Access-and-Resource-Groups.svg "Assigning Access to Resource Groups"){: caption="Figure 2. Assigning Access to Resource Groups" caption-side="bottom"} 
+![Assigning Access to Resource Groups](images/Access-and-Resource-Groups.svg "Assigning Access to Resource Groups"){: caption="Figure 2. Assigning access to resource groups" caption-side="bottom"} 
 
 For more best practices from IBM Garage for Cloud, see [Managing access to resources in {{site.data.keyword.cloud_notm}}](https://cloudnativetoolkit.dev/resources/ibm-cloud/access-control/){: external}.
 
@@ -150,7 +150,7 @@ A trusted profile, like other IAM identities, can be granted access by using a p
 
 The following diagram shows how access is assigned to trusted profiles:
 
-![Assigning Access to Trusted Profiles](images/trusted-profiles.svg "Assigning Access to Trusted Profiles"){: caption="Figure 3. Assigning Access to Trusted Profiles" caption-side="bottom"} 
+![Assigning Access to Trusted Profiles](images/trusted-profiles.svg "Assigning Access to Trusted Profiles"){: caption="Figure 3. Assigning access to trusted profiles" caption-side="bottom"} 
 
 You can select only one trusted entity type when you first create a trusted profile. You can [update trusted profiles](/docs/account?topic=account-trusted-profile-update) at any time to add trust relationships with compute resources.
 
