@@ -61,9 +61,9 @@
       "view_more": "/docs/overview?topic=overview-whatsnew",
       "tiles": [
         {
-          "date": "22 June 2022",
-          "title": "Identify inactive identities",
-          "description": "You can create a report in the{{site.data.keyword.cloud}} console to identify which users, service IDs, trusted profiles, and API keys in your account are inactive. Removing access for inactive identities can reduce the risk of unauthorized access to your {{site.data.keyword.cloud}} resources and help you manage access more efficiently." 
+          "date": "21 July 2022",
+          "title": "Monitoring context-based restrictions",
+          "description": "To help you predict how context-based restrictions might affect users, applications, and workflows, {{site.data.keyword.cloud_notm}} is excited to release report-only mode for rules. You can enable context-based restrictions during creation, or choose to set the rule to report-only mode. Using {{site.data.keyword.cloudaccesstrailshort}}, you can monitor the impact of enabled rules, or view report-only rules to see how they will affect your users, applications, and workflows without enforcing the rule." 
         },
         {
           "date": "22 June 2022",
