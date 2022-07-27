@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-06-09"
+lastupdated: "2022-07-27"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -55,7 +55,7 @@ For virtual server images, complete the following prerequisites:
 
 To share software with other accounts, your software must be approved in Partner Center. For more information, see [Getting set up to sell software](/docs/sell?topic=sell-sw-getting-started).
 {: important}
- 
+
 ## Creating a private catalog
 {: #create-catalog-ui}
 {: ui}
@@ -96,7 +96,7 @@ Complete the following steps to import software to your private catalog:
 
 1. If applicable, enter the version of the software in the format of major version, minor version, and revision. For example, enter version 1.1.2.    
 1. Select a catalog category for the product. Categories are used to organize products in the {{site.data.keyword.cloud_notm}} catalog based on function, use, or common solutions.
-1. Click **Add version**. 
+1. Click **Add product**. 
 
 ## Adding catalog entry details
 {: #catalog-tile}
@@ -129,7 +129,9 @@ When you publish your product to the catalog for users with access to your priva
 
 1. From the version list that's displayed on the product details page, click the row that contains your software.
 1. Review the version details, and click **Next**.
-1. Configure the deployment values, and click **Next**. 
+1. Configure the deployment values.
+1. If applicable, edit the output value descriptions, and click **Next**.
+1. Define the required IAM access, and click **Next**.
 
 ### Operator from GitHub repository
 {: #catalog-config-opgh}
@@ -158,7 +160,9 @@ When you publish your product to the catalog for users with access to your priva
 
 1. From the version list that's displayed on the product details page, click the row that contains your software.
 1. Review the version details, and click **Next**.
-1. Configure the deployment values, and click **Next**.
+1. Configure the deployment values.
+1. If applicable, edit the output value descriptions, and click **Next**.
+1. Define the required IAM access, and click **Next**. 
 
 ## Adding license agreements
 {: #catalog-add-license}
