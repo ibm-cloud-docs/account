@@ -60,7 +60,7 @@ Changing an empty account to VRF modifies the behavior of the future resources w
 
 The migration does not make any changes to the public network configuration of your VLANs or subnetworks. However, if you have any web or application servers that provide a public-facing service that relies on a private network connection to reach a database, application, or other type of server, be aware that the public-facing service might be disrupted.
 
-VRF is not compatible with IPSec VPN services and limits SSL VPN connections to the resources in the data center of the connection. Alternatively, you can purchase {{site.data.keyword.BluDirectLink}} offerings for management of your servers, or run your own VPN solution that can be configured with different types of VPNs.
+VRF is not compatible with IPSec VPN services and limits SSL VPN connections to the resources in the data center of the connection. Alternatively, you can purchase {{site.data.keyword.BluDirectLink}} products for management of your servers, or run your own VPN solution that can be configured with different types of VPNs.
 
 ## Enabling service endpoints
 {: #service-endpoint}

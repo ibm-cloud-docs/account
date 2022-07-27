@@ -143,7 +143,7 @@ fmt.Println(response)
 
 You can restrict access to a subset of products for child account groups and accounts. For example, within your enterprise you might want to limit a specific account group, and its child accounts, to work with only the products that support IAM for access control. 
 
-The following example request restricts the offerings for an account group and child accounts. When you call the API, replace the ID variables with the values that are specific to your target account group or account. The options for `{account_filters}` are: `inculde_all`, `category_filters`, and `id_filters`.
+The following example request restricts the products for an account group and child accounts. When you call the API, replace the ID variables with the values that are specific to your target account group or account. The options for `{account_filters}` are: `inculde_all`, `category_filters`, and `id_filters`.
 
 ```java
 String id = "{id}";

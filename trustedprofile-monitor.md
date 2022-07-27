@@ -25,7 +25,7 @@ You can also monitor active user login sessions. For more information, see [Moni
 
 ## Before you begin
 
-You must provision an instance of the {{site.data.keyword.cloudaccesstrailshort}} service in the Frankfurt (eu-de) region to monitor events for IAM trusted profiles. For more information, see [Provisioning an instance](/docs/activity-tracker?topic=activity-tracker-provision).
+You must create an instance of the {{site.data.keyword.cloudaccesstrailshort}} service in the Frankfurt (eu-de) region to monitor events for IAM trusted profiles. For more information, see [Provisioning an instance](/docs/activity-tracker?topic=activity-tracker-provision).
 
 ## Reviewing login sessions by using {{site.data.keyword.cloudaccesstrailshort}}
 {: #trusted-profile-review-at}

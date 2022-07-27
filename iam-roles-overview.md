@@ -46,7 +46,7 @@ With platform management roles, users can be assigned varying levels of permissi
 Select all roles that apply when you create a policy. Each role allows separate actions to be completed and doesn't inherit the actions of the lesser roles.
 {: tip}
 
-The following table provides examples for some of the platform management actions that users can take within the context of catalog resources and resource groups. See the documentation for each catalog offering to understand how the roles apply to users within the context of the service that is being used.
+The following table provides examples for some of the platform management actions that users can take within the context of catalog resources and resource groups. See the documentation for each catalog product to understand how the roles apply to users within the context of the service that is being used.
 
 
 |                    | One or all IAM-enabled services                                                      | Selected service in a resource group                | Resource group access |

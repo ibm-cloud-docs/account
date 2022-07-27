@@ -4,7 +4,7 @@ copyright:
   years: 2020, 2022
 
 
-lastupdated: "2022-06-23"
+lastupdated: "2022-07-27"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key
 
@@ -80,7 +80,7 @@ A federated ID is an ID within a company's domain that is registered with {{site
 
 {{site.data.keyword.IBM_notm}} uses the Security Assertion Markup Language 2.0 (SAML 2.0) for this identity federation. SAML 2.0 is a standard version for exchanging authentication data between security domains. It’s an XML-based protocol that uses a security token that contains assertions to pass information between the organization's IdP, and the {{site.data.keyword.IBM_notm}} Rely Party (RP), otherwise known as the Service Provider.
 
-For information about how to register your company for a federated ID, see the [IBMid Enterprise Federation Adoption Guide](https://ibm.ent.box.com/notes/78040808400?v=IBMid-Federation-Guide){: external}. An {{site.data.keyword.IBM_notm}} sponsor, such as an offering advocate or client advocate, is required when you request to register federated IDs.
+For information about how to register your company for a federated ID, see the [IBMid Enterprise Federation Adoption Guide](https://ibm.ent.box.com/notes/78040808400?v=IBMid-Federation-Guide){: external}. An {{site.data.keyword.IBM_notm}} sponsor, such as an product advocate or client advocate, is required when you request to register federated IDs.
 
 
 ## Set up account MFA settings
@@ -151,7 +151,7 @@ Complete the following steps to set your preferences for receiving various types
 1. To receive notifications about {{site.data.keyword.cloud_notm}} platform-related, or resource-related items, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar")
    **Profile** > **Notification preferences**.
    * When you set {{site.data.keyword.cloud_notm}} platform notifications, you receive email notifications that are associated with only the platform. You do not receive notifications about events that are associated with {{site.data.keyword.cloud_notm}} services. By default, all platform notifications are turned off. 
-   *  If you update your preferences on resource activity, such as incidents, maintenance, security bulletins, or infrastructure service updates, the notifications are for only the services you use or the devices that you have provisioned. By default, all infrastructure notifications are turned off. 
+   *  If you update your preferences on resource activity, such as incidents, maintenance, security bulletins, or infrastructure service updates, the notifications are for only the services you use or the devices that you have created. By default, all infrastructure notifications are turned off. 
 
 1. To receive spending notifications, go to **Manage** > **Billing and usage** > **Spending notifications** in the {{site.data.keyword.cloud_notm}} console. Or, you can access it directly from the [Notification preferences](/user/notifications) page by clicking **Manage** in the **Billing and Usage** section.
 

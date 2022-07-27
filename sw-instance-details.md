@@ -130,7 +130,7 @@ You can delete your software instance by using Terraform.
 
 2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to delete your software instance by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
 
-3. You can delete the software instance by removing the following code block from your Terraform file. You must have provisioned the `cm_offering_instance` using the Terraform file.
+3. You can delete the software instance by removing the following code block from your Terraform file. You must have created the `cm_offering_instance` using the Terraform file.
 
    ```terraform
    resource "ibm_cm_offering_instance" "cm_offering_instance" {

@@ -99,7 +99,7 @@ Complete the following steps to create a catalog that includes all products in t
    ```
    {: codeblock}
 
-All the {{site.data.keyword.cloud_notm}} catalog offerings are visible by default when you create a new private catalog. See the [Catalogs management CLI](https://cloud.ibm.com/docs/cli?topic=cli-manage-catalogs-plugin#prereqs-managecatalogs) for more information.
+All the {{site.data.keyword.cloud_notm}} catalog products are visible by default when you create a new private catalog. See the [Catalogs management CLI](https://cloud.ibm.com/docs/cli?topic=cli-manage-catalogs-plugin#prereqs-managecatalogs) for more information.
 
 
 ## Creating a private catalog with select products included by using the CLI
@@ -229,7 +229,7 @@ curl -X 'POST' \
 ```
 {: codeblock}
   
-Make sure to exclude all public catalog offerings by setting the `include_all` field has a boolean value of `false` for each `catalog_filters` object. To specify the offerings you want to include you can filter by `category_filters` or `id_filters`. Give `filter_terms` the offering property or offering ID you want to include. In this example, `AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea` is an offering ID. 
+Make sure to exclude all public catalog products by setting the `include_all` field has a boolean value of `false` for each `catalog_filters` object. To specify the products you want to include you can filter by `category_filters` or `id_filters`. Give `filter_terms` the product property or product ID you want to include. In this example, `AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea` is a product ID. 
 
 See the [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=node#replace-catalog) for more command options.
 

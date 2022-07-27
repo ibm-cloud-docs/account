@@ -23,7 +23,7 @@ Context-based restrictions protect your resources by denying access to identitie
 ## Before you begin
 {: #before-monitor-cbr}
 
-You must provision an instance of the {{site.data.keyword.cloudaccesstrailshort}} service in the Frankfurt (eu-de) region to monitor events for context-based restrictions. For more information, see [Provisioning an instance](/docs/activity-tracker?topic=activity-tracker-provision).
+You must create an instance of the {{site.data.keyword.cloudaccesstrailshort}} service in the Frankfurt (eu-de) region to monitor events for context-based restrictions. For more information, see [Provisioning an instance](/docs/activity-tracker?topic=activity-tracker-provision).
 
 ## Determining how rules would affect access by using report-only mode
 {: #report-only-access}

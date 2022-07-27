@@ -154,7 +154,7 @@ You can delete a resource instance by using Terraform.
 
 2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to delete a resource instance by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
 
-3. You can delete a resource instance by removing the following code block from your terraform file. You must have provisioned the `resource_instance` using the terraform file.
+3. You can delete a resource instance by removing the following code block from your terraform file. You must have created the `resource_instance` using the terraform file.
 
    ```terraform
    data "ibm_resource_group" "group" {

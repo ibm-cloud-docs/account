@@ -121,7 +121,7 @@ You can delete a resource group by using Terraform.
    The resource group can be deleted only, if there are no resources in it.
    {: note}
   
-3. You can delete the resource group by removing the following code block from your terraform file. You must have provisioned the `resourceGroup` using the terraform file.
+3. You can delete the resource group by removing the following code block from your Terraform file. You must have created the `resourceGroup` using the Terraform file.
 
    ```terraform
    resource "ibm_resource_group" "resourceGroup" {

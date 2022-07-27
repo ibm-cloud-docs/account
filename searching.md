@@ -53,7 +53,7 @@ You can search for the following attributes:
 :   The user-defined name of the resource.
 
 `region`
-:   The geographical location where the resource is provisioned. The allowed values are, for example, `us-south`, `us-east`, `au-syd`, `eu-gb`, `eu-de`, and `jp-tok`.
+:   The geographical location where the resource is created. The allowed values are, for example, `us-south`, `us-east`, `au-syd`, `eu-gb`, `eu-de`, and `jp-tok`.
 
 `service_name`
 :   The name of the service as it appears in the Name column of the output of `ibmcloud catalog service-marketplace`.

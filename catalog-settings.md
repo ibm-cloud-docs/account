@@ -161,7 +161,7 @@ See the [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=
 {: #set-private-filters-api}
 {: api}
 
-Set filters at a private catalog level for fine-grained control of which products in the public catalog are available only to the users you choose. The following example applies the filter `id_filters` where `AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea` is an offering ID. 
+Set filters at a private catalog level for fine-grained control of which products in the public catalog are available only to the users you choose. The following example applies the filter `id_filters` where `AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea` is an product ID. 
 
 ```bash
 curl -X 'PUT' \                                         

@@ -37,4 +37,4 @@ This error typically occurs because you're using a Lite account, which supports 
 To access more locations, upgrade to a billable account. Go to **Manage** > **Account** in the {{site.data.keyword.Bluemix_notm}} console, and select **Account settings**. In the Account upgrade section, select your upgrade option.
 {: tsResolve}
 
-To view information about using a different region for a service within the account, see [Cloud Foundry Regions and endpoints](/docs/cloud-foundry-public?topic=cloud-foundry-public-endpoints) or refer to [Using service endpoints](/docs/account?topic=account-vrf-service-endpoint#use-service-endpoint) for global or regional endpoints for a particular service offering.
+To view information about using a different region for a service within the account, see [Cloud Foundry Regions and endpoints](/docs/cloud-foundry-public?topic=cloud-foundry-public-endpoints) or refer to [Using service endpoints](/docs/account?topic=account-vrf-service-endpoint#use-service-endpoint) for global or regional endpoints for a particular service instance.

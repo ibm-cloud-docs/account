@@ -26,7 +26,7 @@ As a master user of a legacy classic infrastructure account, you can order exter
 
 Unlike ID-based MFA, external authentication is account-based and require MFA for the user's login only for the account where the setting is enabled. For more information, see [Types of multifactor authentication](/docs/account?topic=account-types).
 
-As of 27 May 2021, phone-based authentication is deprecated. Any related billing for previously set up phone-based authentication is removed for all users in the account, and {{site.data.keyword.cloud_notm}} replaces this offering with Symantec. To set up your account to use Symantec, complete the following steps.
+As of 27 May 2021, phone-based authentication is deprecated. Any related billing for previously set up phone-based authentication is removed for all users in the account, and {{site.data.keyword.cloud_notm}} replaces this feature with Symantec. To set up your account to use Symantec, complete the following steps.
 {: deprecated}
 
 ## Ordering external authentication

@@ -143,7 +143,7 @@ You can create context-based restrictions for the following services if you are 
 | {{site.data.keyword.keymanagementserviceshort}} | IAM-enabled |
 {: caption="Table 3. Services that are compatible with context-based restrictions." caption-side="top"}
 
-Context-based restrictions defined for IAM-enabled services do not apply to platform actions like provision or deprovision actions. For more information, see [IAM roles and actions](/docs/account?topic=account-iam-service-roles-actions). 
+Context-based restrictions defined for IAM-enabled services do not apply to platform actions like create or delete. For more information, see [IAM roles and actions](/docs/account?topic=account-iam-service-roles-actions). 
 {: important}
 
 Check back regularly to see what services are added as more services integrate with context-based restrictions.

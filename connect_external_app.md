@@ -20,7 +20,7 @@ You might have applications that were created and run outside of {{site.data.key
 
 To enable an external app or third-party tool to use an {{site.data.keyword.Bluemix_notm}} service, complete the following steps:
 
-Most services don't require extra parameters, and for services that do, each service defines its own unique list of parameters. For a list of supported configuration parameters, see the documentation for the particular service offering.
+Most services don't require extra parameters, and for services that do, each service defines its own unique list of parameters. For a list of supported configuration parameters, see the documentation for the particular service.
 {: tip}
 
 ## Connect a service to an external app in the console

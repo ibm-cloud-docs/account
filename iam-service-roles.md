@@ -543,7 +543,7 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `blockchain.components.create` | Can create (provision) Orderes/CAs/Peers | Manager |
+| `blockchain.components.create` | Can create Orderes/CAs/Peers | Manager |
 | `blockchain.components.remove` | Can remove imported Orderes/CAs/Peers | Manager, Writer |
 | `blockchain.components.import` | Can import external Orderes/CAs/Peers | Manager, Writer |
 | `blockchain.components.export` | Can export any Orderes/CAs/Peers | Manager, Reader, Writer |
@@ -551,7 +551,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `blockchain.optools.logs` | Can change logging settings of the UI | Manager |
 | `blockchain.optools.view` | Can view the UI & logs as well as run any GET api | Manager, Reader, Writer |
 | `blockchain.notifications.manage` | Can add/remove UI notifications | Manager, Writer |
-| `blockchain.components.delete` | Can remove provisioned Orderes/CAs/Peers | Manager |
+| `blockchain.components.delete` | Can remove created Orderes/CAs/Peers | Manager |
 | `blockchain.signaturecollection.manage` | Can add/remove signature collections | Manager, Writer |
 | `blockchain.optools.settings` | Can change UI settings | Manager |
 | `blockchain.components.manage` | Can manage admin certs on Peers/Orderers as well as enroll ids on CAs | Manager, Writer |
@@ -699,7 +699,7 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Checkpointer | As a Checkpointer, you have permissions to write _local documents enabling checkpoint writes. checkpoints are local documents optionally created during replication recording their state. |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
-| Monitor | As a Monitor, you have permissions to get information about specified databases, list databases, monitor indexing and replication, view data volume usage and view provisioned and current throughput. |
+| Monitor | As a Monitor, you have permissions to get information about specified databases, list databases, monitor indexing and replication, view data volume usage and view past and current throughput. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
@@ -759,8 +759,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloudantnosqldb.database-security.read` | Read database security definitions | Manager |
 | `cloudantnosqldb.database-security.write` | Write database security definitions | Manager |
 | `cloudantnosqldb.database-shards.read` | View database shard metadata | Manager, Monitor |
-| `cloudantnosqldb.capacity-throughput.read` | Read current provisioned throughput | Administrator, Editor, Manager, Monitor, Operator, Viewer |
-| `cloudantnosqldb.capacity-throughput.write` | Update provisioned throughput capacity | Administrator, Editor, Manager |
+| `cloudantnosqldb.capacity-throughput.read` | Read current  throughput | Administrator, Editor, Manager, Monitor, Operator, Viewer |
+| `cloudantnosqldb.capacity-throughput.write` | Update throughput capacity | Administrator, Editor, Manager |
 | `cloudantnosqldb.current-throughput.read` | Read current request throughput | Manager, Monitor |
 | `cloudantnosqldb.limits-throughput.read` | Read throughput limits for current Plan | Manager |
 | `cloudantnosqldb.account-all-dbs.read` | List all databases | Manager, Monitor, Reader, Writer |
@@ -1090,7 +1090,7 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `consult-with-icg-wes.dashboard.view` | The ability to view your provisioned Consult with IBM Garage services in the dashboard. | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
+| `consult-with-icg-wes.dashboard.view` | The ability to view your created Consult with IBM Garage services in the dashboard. | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
 {: caption="Table 22. Service actions - Consult with IBM Cloud Garage" caption-side="top"}
 {: #actions-table22}
 {: tab-title="Actions"}
@@ -3619,7 +3619,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Role | Description |
 | ----- | :----- |
 | IBMOperation | (Internal) - IBM Use only |
-| Publisher | You can publish offerings that are approved by IBM and that are in a private catalog to which you're assigned the viewer role. |
+| Publisher | You can publish services that are approved by IBM and that are in a private catalog to which you're assigned the viewer role. |
 {: row-headers}
 {: caption="Table 63. Service roles - Personal Catalog" caption-side="top"}
 {: #service-roles-table63}
@@ -4538,13 +4538,13 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.dedicated-host.dedicated-host.update` | Update a Dedicated Host | Administrator, Editor |
 | `is.dedicated-host.dedicated-host.delete` | Delete a Dedicated Host | Administrator, Editor |
 | `is.dedicated-host.dedicated-host.read` | View a Dedicated Host | Administrator, Editor, Operator, Viewer |
-| `is.dedicated-host.dedicated-host.provision` | Provision an Instance on a Dedicated Host | Administrator, Editor, Operator |
+| `is.dedicated-host.dedicated-host.provision` | Create an Instance on a Dedicated Host | Administrator, Editor, Operator |
 | `is.dedicated-host.dedicated-host-group.create` | Create a Dedicated Host Group | Administrator, Editor |
 | `is.dedicated-host.dedicated-host-group.read` | View a Dedicated Host Group | Administrator, Editor, Operator, Viewer |
 | `is.dedicated-host.dedicated-host-group.update` | Update a Dedicated Host Group | Administrator, Editor |
 | `is.dedicated-host.dedicated-host-group.delete` | Delete a Dedicated Host Group | Administrator, Editor |
 | `is.dedicated-host.dedicated-host-group.append` | Add a Dedicated Host to a Dedicated Host Group | Administrator, Editor |
-| `is.dedicated-host.dedicated-host-group.provision` | Provision an Instance to a Dedicated Host Group | Administrator, Editor, Operator |
+| `is.dedicated-host.dedicated-host-group.provision` | Create an Instance to a Dedicated Host Group | Administrator, Editor, Operator |
 | `is.dedicated-host.dedicated-host.operate` | Operate on a Dedicated Host | Administrator, Editor, Operator |
 | `is.dedicated-host.dedicated-host-group.operate` | Operate on a Dedicated Host Group | Administrator, Editor, Operator |
 | `is.dedicated-host.dedicated-host-group.list` | List Dedicated Host Groups | Administrator, Editor, Operator, Viewer |
@@ -4675,7 +4675,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.image.image.create` | Create Images | Administrator, Editor |
 | `is.image.image.update` | Update Images | Administrator, Editor |
 | `is.image.image.delete` | Delete Images | Administrator, Editor |
-| `is.image.image.provision` | Provision Images | Administrator, Editor, Operator |
+| `is.image.image.provision` | Create Images | Administrator, Editor, Operator |
 | `is.image.image.operate` | Operate on Custom Images | Administrator, Editor, Operator |
 {: caption="Table 87. Service actions - Image Service for VPC" caption-side="top"}
 {: #actions-table87}
@@ -6210,10 +6210,10 @@ Review the available platform and service roles and the actions mapped to each t
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `product-lifecycle.dashboard.view` |  | Administrator, Editor, Operator |
-| `product-lifecycle.offering.create` | Create an onboarding offering in the account | Administrator, Editor |
-| `product-lifecycle.offering.edit` | Edit an onboarding offering in the account. | Administrator, Editor |
+| `product-lifecycle.offering.create` | Create an onboarding product in the account | Administrator, Editor |
+| `product-lifecycle.offering.edit` | Edit an onboarding product in the account. | Administrator, Editor |
 | `product-lifecycle.review.complete` | Complete (accept or reject) a review | Lifecycle Approver |
-| `product-lifecycle.offering.read` | Read values of an offering | Administrator, Editor, Lifecycle Approver |
+| `product-lifecycle.offering.read` | Read values of an product | Administrator, Editor, Lifecycle Approver |
 | `product-lifecycle.registration.read` | Read onboarding registration | Administrator, Editor, Lifecycle Approver |
 | `product-lifecycle.registration.create` | Create onboarding registration | Administrator, Editor |
 {: caption="Table 126. Service actions - Product Lifecycle" caption-side="top"}
