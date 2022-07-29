@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2022
-lastupdated: "2022-06-23"
+lastupdated: "2022-07-29"
 
-keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription
+keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, commitment, commit model
 
 subcollection: account
 
@@ -113,6 +113,11 @@ After you purchase a service bundle subscription, you'll receive an email with a
 When your subscription is about to expire, you are notified by email 60, 30, 14, and 1 day before the expiration date of the last subscription on the account. After your subscription expires, your account is converted to a Pay-As-You-Go account, which means you pay only for billable services that you use with no contracts or commitments. In addition, the discounts that are associated with your subscription account won't apply to the Pay-As-You-Go account. Go to the [Subscriptions](/billing/subscriptions) page to check whether any of your subscriptions are approaching their expiration date.
 
 You can work with [{{site.data.keyword.Bluemix_notm}} Sales](https://cloud.ibm.com/catalog?contactmodule){: external} to renew your subscription account. 
+
+## Pay as you go with Committed Use billing model 
+{: #commit-model-account}
+
+{{site.data.keyword.cloud_notm}} customers can sign up for the Pay as you go with Committed Use billing model. With this billing model, you commit to spend a certain amount on {{site.data.keyword.Bluemix_notm}} and you also receive discounts across the platform. You are billed monthly based on your usage and you continue to receive a discount even after you reach your committed amount. For more information about the billing model, see [Pay as you go with Committed Use pricing model](/docs/billing-usage?topic=billing-usage-committed-use).
 
 ## Lite account
 {: #liteaccount}
