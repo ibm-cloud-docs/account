@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-07-21"
+lastupdated: "2022-08-01"
 
 
 keywords: create network access, network access rule, network zone
@@ -81,5 +81,5 @@ To create a rule, complete the following steps.
     If you want to allow access from a VPC to public endpoints in your rule, include any public gateway IP addresses in the zone definition along with the VPC.
     {: important}
 
-    * You can add existing network zones to your rule or create new zones to add to your rule. For more information, see [Creating network zones](/docs/account?topic=network-zones-create).
+    * You can add existing network zones to your rule or create new zones to add to your rule. For more information, see [Creating network zones](/docs/account?topic=account-context-restrictions-create#network-zones-create).
 1. Click **Create**.
