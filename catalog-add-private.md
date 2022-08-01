@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-07-29"
+lastupdated: "2022-08-01"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -30,8 +30,10 @@ The process to onboard software to your account includes importing a version to 
    * OVA images that are deployed on VMware Solutions Dedicated - vCenter Server
    * Virtual server images with Terraform deployed on VPC infrastructure or {{site.data.keyword.powerSys_notm}}
    * Virtual server images for VPC
+
    Virtual server images for VPC onboarding is a Beta feature that is available for evaluation and testing purposes for customers with special approval to preview this feature.
    {: beta}
+
    * Operators with a CSV file or Operator bundles with a TGZ file from GitHub repositories that are deployed on Red Hat OpenShift
    * Operator bundles from Red Hat OpenShift registries
   
@@ -53,7 +55,11 @@ For containerized apps, complete the following prerequisites:
 For virtual server images, complete the following prerequisites:
 
    1. Review the list of [supported images](/docs/vpc?topic=vpc-about-images).
-   2. Create your [Terraform template](/docs/schematics?topic=schematics-create-tf-config).
+   2. If required, create your [Terraform template](/docs/schematics?topic=schematics-create-tf-config).
+
+    Virtual server image for VPC does not require a Terraform template.
+    {: note}
+    
    3. Create an instance of [{{site.data.keyword.cloud_notm}} Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage) and add your image to a bucket.
 
 To share software with other accounts, your software must be approved in Partner Center. For more information, see [Getting set up to sell software](/docs/sell?topic=sell-sw-getting-started).
