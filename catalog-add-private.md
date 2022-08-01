@@ -57,8 +57,8 @@ For virtual server images, complete the following prerequisites:
    1. Review the list of [supported images](/docs/vpc?topic=vpc-about-images).
    2. If required, create your [Terraform template](/docs/schematics?topic=schematics-create-tf-config).
 
-    Virtual server image for VPC does not require a Terraform template.
-    {: note}
+   Virtual server image for VPC does not require a Terraform template.
+   {: note}
     
    3. Create an instance of [{{site.data.keyword.cloud_notm}} Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage) and add your image to a bucket.
 
