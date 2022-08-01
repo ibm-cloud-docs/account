@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-07-27"
+lastupdated: "2022-07-29"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -15,7 +15,7 @@ subcollection: account
 # Onboarding software to your account
 {: #create-private-catalog}
 
-The process to onboard software to your account includes importing a version to a private catalog, validating that the version can be successfully installed on the target infrastructure that you require, and publishing the software to your account. The software is then available to users in your account. 
+The process to onboard software to your account includes importing a version to a private catalog, validating that the version can be successfully installed on the target infrastructure that you require, and sharing the software to your account. The software is then available to users in your account. 
 {: shortdesc} 
 
 ## Before you begin
@@ -29,6 +29,9 @@ The process to onboard software to your account includes importing a version to 
    * Terraform templates
    * OVA images that are deployed on VMware Solutions Dedicated - vCenter Server
    * Virtual server images with Terraform deployed on VPC infrastructure or {{site.data.keyword.powerSys_notm}}
+   * Virtual server images for VPC
+   Virtual server images for VPC onboarding is a Beta feature that is available for evaluation and testing purposes for customers with special approval to preview this feature.
+   {: beta}
    * Operators with a CSV file or Operator bundles with a TGZ file from GitHub repositories that are deployed on Red Hat OpenShift
    * Operator bundles from Red Hat OpenShift registries
   
@@ -93,6 +96,7 @@ Complete the following steps to import software to your private catalog:
    * OVA image: `https://github.com/gcatalog/OVA-sample/blob/main/ova-sample.yaml`
    * Terraform template: `https://github.com/IBM-Cloud/terraform-sample/releases/tag/v1.0.0`
    * Virtual server image with Terraform: `https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample/releases/download/v1.0/isv-vsi-product-deploy-sample.tar.gz`
+   * Virtual server image for VPC: Select an image from the list of available images, or import a new image to onboard it. 
 
 1. If applicable, enter the version of the software in the format of major version, minor version, and revision. For example, enter version 1.1.2.    
 1. Select a catalog category for the product. Categories are used to organize products in the {{site.data.keyword.cloud_notm}} catalog based on function, use, or common solutions.
@@ -164,6 +168,14 @@ When you publish your product to the catalog for users with access to your priva
 1. If applicable, edit the output value descriptions, and click **Next**.
 1. Define the required IAM access, and click **Next**. 
 
+### Virtual server image for VPC
+{: #catalog-config-vsivpc}
+{: ui}
+
+1. From the version list that's displayed on the product details page, click the row that contains your software. 
+1. Review the list of images, and click **Next**. 
+1. Review the version details, and click **Next**. 
+
 ## Adding license agreements
 {: #catalog-add-license}
 {: ui}
@@ -183,6 +195,9 @@ When users install the software, they can select the link to your readme file to
 1. To make updates, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") next to the Readme section title.
 1. Click **Save**.
 1. Click **Next**.
+
+If you are importing a virtual server image for VPC, the readme file is not automatically generated. Copy and paste the contents of the [readme file template](/media/docs/downloads/software/sw-readme-tab-template.md){: external} and make updates as needed. 
+{: note}
 
 ## Validating the software 
 {: #catalog-validate-product}
@@ -256,6 +271,15 @@ To monitor the progress of the validation process, click **View logs**.
 1. If applicable, review the license agreements, and select **I have read and agree to the following license agreements:**. 
 1. Click **Validate**.
 
+### Virtual server image for VPC
+{: #catalog-validate-vsivpc}
+{: ui}
+
+1. From the validate version tab, configure the validation target, and click **Next**. 
+1. Optionally, configure your Schematics workspace, and click **Next**. 
+1. If applicable, review the license agreements, and select **I have read and agree to the following license agreements:**. 
+1. Click **Validate**. 
+
 ## Manage compliance 
 {: #catalog-manage-controls}
 {: ui}
@@ -276,13 +300,13 @@ Controls are safeguards that are used to meet security and compliance requiremen
 ## Review requirements
 {: #catalog-manage-review-reqs}
 
-You must complete validation and any other requirements to publish to your account. 
+You must complete validation and any other requirements to share to your account. When you're ready to make your product available to all users who have access to your private catalog, click **Ready to share**. 
 
-## Publishing the software
+## Sharing the software
 {: #validating-software}
 {: ui}
 
-After you validate your software, you're ready to make it available to all users who have access to your private catalog. Open the **Actions** menu, and select **Publish to account**.
+If you want to share your product to your account or enterprise, click the name of the product in the navigation to go to the product details page. From the **Actions** menu, click **Share**. Select where you want to share your product, and click **Share**.
 
 
 ## Onboarding software to your catalog by using the CLI
