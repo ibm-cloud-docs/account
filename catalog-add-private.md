@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-08-01"
+lastupdated: "2022-08-02"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -55,11 +55,7 @@ For containerized apps, complete the following prerequisites:
 For virtual server images, complete the following prerequisites:
 
    1. Review the list of [supported images](/docs/vpc?topic=vpc-about-images).
-   2. If required, create your [Terraform template](/docs/schematics?topic=schematics-create-tf-config).
-
-   Virtual server image for VPC does not require a Terraform template.
-   {: note}
-    
+   2. If required, create your [Terraform template](/docs/schematics?topic=schematics-create-tf-config). Virtual server image for VPC does not require a Terraform template. 
    3. Create an instance of [{{site.data.keyword.cloud_notm}} Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage) and add your image to a bucket.
 
 To share software with other accounts, your software must be approved in Partner Center. For more information, see [Getting set up to sell software](/docs/sell?topic=sell-sw-getting-started).
