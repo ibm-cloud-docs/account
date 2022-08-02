@@ -191,7 +191,7 @@ Provide the URLs to the license agreements that users are required to accept whe
 {: #catalog-readme-edit}
 {: ui}
 
-When users install the software, they can select the link to your readme file to view installation instructions. The information in the Readme link is generated from the readme file that you uploaded to your GitHub repository. 
+When users install the software, they can select the link to your readme file to view product information. The information in the Readme link is generated from the readme file that you uploaded to your GitHub repository. 
 
 1. From the Edit readme tab, preview how the information in the readme file will be displayed to users when they install the software.
 1. To make updates, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") next to the Readme section title.

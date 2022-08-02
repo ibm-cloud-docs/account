@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-05-31"
+lastupdated: "2022-08-02"
 
 keywords: private catalog, software, onboard, operator, validate, test, Red Hat OpenShift operator, operator bundle
 
@@ -88,7 +88,7 @@ If users are required to accept any license agreements beyond the {{site.data.ke
 {: #catalog-opbundle-readme}
 {: step}
 
-When users install the software, they can select the link to your readme file to view installation instructions. The information in the Readme link is generated from the readme information in the Edit readme tab. 
+When users install the software, they can select the link to your readme file to view product information. The information in the Readme link is generated from the readme information in the Edit readme tab. 
 
 1. From the Edit readme tab, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit").
 2. Preview how the information in the readme file will be displayed to users when they install the Operator bundle.
