@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-08-01"
+lastupdated: "2022-08-02"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -723,10 +723,10 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
-| Checkpointer | As a Checkpointer, you have permissions to write _local documents enabling checkpoint writes. checkpoints are local documents optionally created during replication recording their state. |
+| Checkpointer | As a checkpointer, you have permissions to write local documents enabling checkpoint writes. Checkpoints are local documents optionally created during replication recording their state. |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
-| Monitor | As a Monitor, you have permissions to get information about specified databases, list databases, monitor indexing and replication, view data volume usage and view provisioned and current throughput. |
-| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Monitor | As a monitor, you have permissions to get information about specified databases, list databases, monitor indexing and replication, view data volume usage and view provisioned and current throughput. |
+| Reader | As a reader, you can perform read-only actions within a service, such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 17. Service roles - Cloudant" caption-side="top"}
@@ -748,11 +748,11 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloudantnosqldb.sapi.supportattachments` | View attachments on support tickets for user | Manager |
 | `cloudantnosqldb.sapi.supporttickets` | View support tickets for user | Manager |
 | `cloudantnosqldb.sapi.userinfo` | Retrieve basic user infomation for this user | Administrator, Editor, Manager, Operator, Viewer |
-| `cloudantnosqldb.users-database-info.read` | Read _users database info | Manager |
-| `cloudantnosqldb.users-database.create` | Create users databases | Manager |
-| `cloudantnosqldb.users-database.delete` | Delete users databases | Manager |
-| `cloudantnosqldb.users.read` | Read from users databases | Manager |
-| `cloudantnosqldb.users.write` | Write to users databases | Manager |
+| `cloudantnosqldb.users-database-info.read` | Read users' database info | Manager |
+| `cloudantnosqldb.users-database.create` | Create users' databases | Manager |
+| `cloudantnosqldb.users-database.delete` | Delete users' databases | Manager |
+| `cloudantnosqldb.users.read` | Read from users' databases | Manager |
+| `cloudantnosqldb.users.write` | Write to users' databases | Manager |
 | `cloudantnosqldb.database.create` | Create databases | Manager |
 | `cloudantnosqldb.database.delete` | Delete databases | Manager |
 | `cloudantnosqldb.sapi.userplan` | Retrieve and update instance plan settings | Administrator, Editor, Manager, Operator, Viewer |
@@ -778,7 +778,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloudantnosqldb.replication-scheduler.read` | Read from replication _scheduler endpoints | Manager, Monitor |
 | `cloudantnosqldb.account-up.read` | View _up | Manager, Monitor |
 | `cloudantnosqldb.account-uuids.read` | Generate doc ID UUIDs | Manager, Writer |
-| `cloudantnosqldb.data-document.write` | Create, update and delete normal documents in a database | Manager, Writer |
+| `cloudantnosqldb.data-document.write` | Create, update, and delete normal documents in a database | Manager, Writer |
 | `cloudantnosqldb.local-document.write` | Write _local documents | Checkpointer, Manager, Writer |
 | `cloudantnosqldb.design-document.write` | Write _design documents | Manager |
 | `cloudantnosqldb.cluster-membership.read` | View cluster membership | Manager |
