@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-07-21"
+lastupdated: "2022-08-04"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, Cloud Foundry, endpoint type
 
@@ -59,8 +59,8 @@ For more information, see [Actions and roles for account management services](/d
 {: #rule-enforcement}
 
 You can decide how you want to enforce a rule upon creation and update the rule enforcement at any time.
-* **Enable**: Enforce the rule. Denied access attempts are reported in {{site.data.keyword.at_short}}.
-* **Disable**: No restrictions apply to your account resources. Select this option if you're not ready to enable the rule. 
+* **Enabled**: Enforce the rule. Denied access attempts are reported in {{site.data.keyword.at_short}}.
+* **Disabled**: No restrictions apply to your account resources. Select this option if you're not ready to enable the rule. 
 * **Report-only**: Monitor how the rule affects users without enforcing it. All attempts to access resources in the account are logged in {{site.data.keyword.at_short}}. Monitoring is recommended for 30 days before you enforce the rule.
 
 You can monitor the impact of your enabled and report-only rules. For more information, see [Monitoring context-based restrictions](/docs/account?topic=account-cbr-monitor). 
