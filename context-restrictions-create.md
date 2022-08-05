@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-08-01"
+lastupdated: "2022-08-05"
 
 
 keywords: create network access, network access rule, network zone
@@ -54,6 +54,246 @@ To create a network zone, complete the following steps.
 You can continue by creating more network zones, or by creating rules.
 {: tip}
 
+## Creating network zones by using the CLI
+{: #network-zones-create-cli}
+{: cli}
+
+By creating network zones, you establish a list of allowed locations where an access request originates. A set of one or more network locations can be specified by IP addresses such as individual addresses, ranges or subnets, and VPC IDs. After you create a network zone, you can add it to a rule. 
+
+1. Install the [Context-based restrictions CLI plug-in](/docs/account?topic=cli-cbr-plugin#install-cbr-plugin) by running the following command: 
+
+   ```sh
+   ibmcloud plugin install cbr
+   ```
+   {: pre}
+
+1. To create a network zone, use the [cbr-zone-create](/docs/account?topic=cli-cbr-plugin#cbr-zones-cli) command. 
+
+   The following example creates a network zone with a list of allowed network locations. 
+
+   ```sh
+   ibmcloud cbr zone-create --name example-zone --description "Example zone description" --addresses 192.0.2.1,192.2.3.5-192.2.3.10
+   ```
+   {: pre}
+
+   The following example creates a network zone with a service reference. For more information, see [Service references](https://test.cloud.ibm.com/docs/account?topic=account-context-restrictions-whatis&interface=cli#service-attribute). 
+
+    ```sh
+    ibmcloud cbr zone-create --name example-zone-1 --description "Kube zone" --service-ref service_name=containers-kubernetes
+    ```
+    {: pre}
+
+    To find a list of available service references, run the [ibmcloud cbr service-ref-targets](/docs/account?topic=cli-cbr-plugin#cbr-cli-service-ref-targets-command) command.
+    {: tip}
+
+
+## Creating network zones by using the API
+{: #network-zones-create-api}
+{: api}
+
+By creating network zones, you establish a list of allowed locations where an access request originates. A set of one or more network locations can be specified by IP addresses such as individual addresses, ranges or subnets, VPC IDs, and service references. After you create a network zone, you can add it to a rule. 
+
+To create a network zone, call the [Context-based restrictions API](/apidocs/context-based-restrictions#create-zone) as shown in the following example:
+
+```sh
+curl -X POST --location --header "Authorization: Bearer {iam_token}" --header "Accept: application/json" --header "Content-Type: application/json" --data '{ "name": "an example of zone", "description": "this is an example of zone", "account_id": "12ab34cd56ef78ab90cd12ef34ab56cd", "addresses": [ { "type": "ipAddress", "value": "169.23.56.234" }, { "type": "ipRange", "value": "169.23.22.0-169.23.22.255" }, { "type": "subnet", "value": "192.0.2.0/24" }, { "type": "vpc", "value": "crn:v1:bluemix:public:is:us-south:a/12ab34cd56ef78ab90cd12ef34ab56cd::vpc:r134-d98a1702-b39a-449a-86d4-ef8dbacf281e" }, { "type": "serviceRef", "ref": { "account_id": "12ab34cd56ef78ab90cd12ef34ab56cd", "service_name": "cloud-object-storage" } } ], "excluded": [ { "type": "ipAddress", "value": "169.23.22.127" } ] }' "{base_url}/v1/zones"
+```
+{: codeblock} 
+{: curl}
+
+```java
+AddressIPAddress ipAddressModel = new AddressIPAddress.Builder()
+  .type("ipAddress")
+  .value("169.23.56.234")
+  .build();
+AddressIPAddressRange ipRangeAddressModel = new AddressIPAddressRange.Builder()
+  .type("ipRange")
+  .value("169.23.22.0-169.23.22.255")
+  .build();
+AddressSubnet subnetAddressModel = new AddressSubnet.Builder()
+  .type("subnet")
+  .value("192.0.2.0/24")
+  .build();
+AddressVPC vpcAddressModel = new AddressVPC.Builder()
+  .type("vpc")
+  .value(vpcCRN)
+  .build();
+ServiceRefValue serviceRefValueModel = new ServiceRefValue.Builder()
+  .accountId(accountID)
+  .serviceName("cloud-object-storage")
+  .build();
+AddressServiceRef serviceRefAddressModel = new AddressServiceRef.Builder()
+  .type("serviceRef")
+  .ref(serviceRefValueModel)
+  .build();
+AddressIPAddress excludedIPAddressModel = new AddressIPAddress.Builder()
+  .type("ipAddress")
+  .value("169.23.22.127")
+  .build();
+CreateZoneOptions createZoneOptions = new CreateZoneOptions.Builder()
+  .name("an example of zone")
+  .accountId(accountID)
+  .description("this is an example of zone")
+  .addresses(java.util.Arrays.asList(ipAddressModel, ipRangeAddressModel, subnetAddressModel, vpcAddressModel, serviceRefAddressModel))
+  .excluded(java.util.Arrays.asList(excludedIPAddressModel))
+  .build();
+
+Response<Zone> response = contextBasedRestrictionsService.createZone(createZoneOptions).execute();
+Zone zone = response.getResult();
+
+System.out.println(zone);
+```
+{: codeblock}
+{: java}
+
+```javascript
+// Request models needed by this operation.
+
+// AddressIPAddress
+const ipAddressModel = {
+  type: 'ipAddress',
+  value: '169.23.56.234',
+};
+// AddressIPAddressRange
+const ipRangeAddressModel = {
+  type: 'ipRange',
+  value: '169.23.22.0-169.23.22.255',
+};
+// AddressSubnet
+const subnetAddressModel = {
+  type: 'subnet',
+  value: '192.0.2.0/24',
+};
+// AddressVPC
+const vpcAddressModel = {
+  type: 'vpc',
+  value: vpcCRN,
+};
+// AddressServiceRef
+const serviceRefAddressModel = {
+  type: 'serviceRef',
+  ref: {
+    account_id: accountId,
+    service_name: 'cloud-object-storage',
+  },
+};
+// AddressIPAddress
+const excludedIPAddressModel = {
+  type: 'ipAddress',
+  value: '169.23.22.127',
+};
+
+const params = {
+  name: 'an example of zone',
+  accountId,
+  addresses: [ipAddressModel, ipRangeAddressModel, subnetAddressModel, vpcAddressModel, serviceRefAddressModel],
+  excluded: [excludedIPAddressModel],
+  description: 'this is an example of zone',
+};
+
+try {
+  const res = await contextBasedRestrictionsService.createZone(params);
+  zoneId = res.result.id;
+  zoneRev = res.headers.etag;
+  console.log(JSON.stringify(res.result, null, 2));
+} catch (err) {
+  console.warn(err);
+}
+```
+{: codeblock}
+{: javascript}
+
+```python
+ip_address_model = {
+  'type': 'ipAddress',
+  'value': '169.23.56.234',
+}
+ip_range_address_model = {
+  'type': 'ipRange',
+  'value': '169.23.22.0-169.23.22.255',
+}
+subnet_address_model = {
+  'type': 'subnet',
+  'value': '192.0.2.0/24',
+}
+vpc_address_model = {
+  'type': 'vpc',
+  'value': vpc_crn,
+}
+service_ref_address_model = {
+  'type': 'serviceRef',
+  'ref': {
+    'account_id': account_id,
+    'service_name': 'cloud-object-storage',
+  }
+}
+excluded_ip_address_model = {
+  'type': 'ipAddress',
+  'value': '169.23.22.127',
+}
+
+zone = context_based_restrictions_service.create_zone(
+  name='an example of zone',
+  account_id=account_id,
+  addresses=[ip_address_model, ip_range_address_model, subnet_address_model, vpc_address_model, service_ref_address_model],
+  excluded=[excluded_ip_address_model],
+  description='this is an example of zone',
+).get_result()
+
+print(json.dumps(zone, indent=2))
+```
+{: codeblock}
+{: python}
+
+```go
+ipAddressModel := &contextbasedrestrictionsv1.AddressIPAddress{
+  Type:  core.StringPtr("ipAddress"),
+  Value: core.StringPtr("169.23.56.234"),
+}
+ipRangeAddressModel := &contextbasedrestrictionsv1.AddressIPAddressRange{
+  Type:  core.StringPtr("ipRange"),
+  Value: core.StringPtr("169.23.22.0-169.23.22.255"),
+}
+subnetAddressModel := &contextbasedrestrictionsv1.AddressSubnet{
+  Type:  core.StringPtr("subnet"),
+  Value: core.StringPtr("192.0.2.0/24"),
+}
+vpcAddressModel := &contextbasedrestrictionsv1.AddressVPC{
+  Type:  core.StringPtr("vpc"),
+  Value: core.StringPtr(vpcCRN),
+}
+serviceRefAddressModel := &contextbasedrestrictionsv1.AddressServiceRef{
+  Type: core.StringPtr("serviceRef"),
+  Ref: &contextbasedrestrictionsv1.ServiceRefValue{
+    AccountID:   core.StringPtr(accountID),
+    ServiceName: core.StringPtr("cloud-object-storage"),
+  },
+}
+excludedIPAddressModel := &contextbasedrestrictionsv1.AddressIPAddress{
+  Type:  core.StringPtr("ipAddress"),
+  Value: core.StringPtr("169.23.22.127"),
+}
+
+createZoneOptions := contextBasedRestrictionsService.NewCreateZoneOptions()
+createZoneOptions.SetName("an example of zone")
+createZoneOptions.SetAccountID(accountID)
+createZoneOptions.SetDescription("this is an example of zone")
+createZoneOptions.SetAddresses([]contextbasedrestrictionsv1.AddressIntf{ipAddressModel, ipRangeAddressModel, subnetAddressModel, vpcAddressModel, serviceRefAddressModel})
+createZoneOptions.SetExcluded([]contextbasedrestrictionsv1.AddressIntf{excludedIPAddressModel})
+
+zone, response, err := contextBasedRestrictionsService.CreateZone(createZoneOptions)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(zone, "", "  ")
+fmt.Println(string(b))
+```
+{: codeblock}
+{: go}
+
+To find a list of available service references, call the [ListAvailableServicerefTargets](/apidocs/context-based-restrictions?code=go#list-available-serviceref-targets) method.
+{: tip} 
+
 ## Creating rules
 {: #context-restrictions-create-rules}
 
@@ -83,3 +323,202 @@ To create a rule, complete the following steps.
 
     * You can add existing network zones to your rule or create new zones to add to your rule. For more information, see [Creating network zones](/docs/account?topic=account-context-restrictions-create#network-zones-create).
 1. Click **Create**.
+
+## Creating rules by using the CLI
+{: #context-restrictions-create-rules-cli}
+{: cli}
+
+To define restrictions to your cloud resources by creating rules, use the [ibmcloud cbr rule-create](/docs/account?topic=cli-cbr-plugin&interface=cli#cbr-cli-rule-create-command) command. The following example creates a rule that targets the {{site.data.keyword.containershort}} and allows only private endpoints from the specified network zone to access the service.
+
+```sh
+ibmcloud cbr rule-create --description 'Example Rule Description' --service-name kms --context-attributes endpointType=private --zone-id 93de8d3f588ab2c457ff576c364d1145 --enforcement-mode report
+```
+{: pre}
+
+For the `enforcement-mode` option, the CLI accepts the values `enabled`, `disabled`, and `report`. If no enforcement is specified, the rule is enabled by default. For more informaiton, see [Rule enforcement](/docs/account?topic=account-context-restrictions-whatis#rule-enforcement).
+{: tip}
+
+## Creating rules by using the API
+{: #context-restrictions-create-rules-api}
+{: api}
+
+To create restrictions to your cloud resources by creating rules, call the [Context-based restrictions API](/apidocs/context-based-restrictions#create-rule). The following example creates an enabled rule that targets the {{site.data.keyword.containershort}} and allows requests only from the specified network zone to access the service.
+
+```sh
+curl -X POST --location --header "Authorization: Bearer {iam_token}" --header "Accept: application/json" --header "Content-Type: application/json" --data '{ "description": "this is an example of rule", "resources": [ { "attributes": [ { "name": "accountId", "value": "12ab34cd56ef78ab90cd12ef34ab56cd" }, { "name": "serviceName", "value": "kms" } ] } ], "contexts": [ { "attributes": [ { "name": "networkZoneId", "value": "65810ac762004f22ac19f8f8edf70a34" } ] } ], "enforcement_mode": "enabled" }' "{base_url}/v1/rules"
+```
+{: codeblock}
+{: curl}
+
+```java
+RuleContextAttribute ruleContextAttributeModel = new RuleContextAttribute.Builder()
+  .name("networkZoneId")
+  .value(zoneID)
+  .build();
+RuleContext ruleContextModel = new RuleContext.Builder()
+  .attributes(java.util.Arrays.asList(ruleContextAttributeModel))
+  .build();
+ResourceAttribute resourceAttributeModelAccountID = new ResourceAttribute.Builder()
+  .name("accountId")
+  .value(accountID)
+  .build();
+ResourceAttribute resourceAttributeModelServiceName = new ResourceAttribute.Builder()
+  .name("serviceName")
+  .value(serviceName)
+  .build();
+ResourceTagAttribute resourceTagAttributeModel = new ResourceTagAttribute.Builder()
+  .name("tagName")
+  .value("tagValue")
+  .build();
+Resource resourceModel = new Resource.Builder()
+  .addAttributes(resourceAttributeModelAccountID)
+  .addAttributes(resourceAttributeModelServiceName)
+  .tags(java.util.Arrays.asList(resourceTagAttributeModel))
+  .build();
+CreateRuleOptions createRuleOptions = new CreateRuleOptions.Builder()
+  .description("this is an example of rule")
+  .addContexts(ruleContextModel)
+  .addResources(resourceModel)
+  .enforcementMode("enabled")
+  .build();
+
+Response<Rule> response = contextBasedRestrictionsService.createRule(createRuleOptions).execute();
+Rule rule = response.getResult();
+
+System.out.println(rule);
+ruleID = rule.getId();
+ruleRev = response.getHeaders().values("Etag").get(0);
+```
+{: codeblock}
+{: java}
+
+```javascript
+// Request models needed by this operation.
+
+// RuleContextAttribute
+const ruleContextAttributeModel = {
+  name: 'networkZoneId',
+  value: zoneId,
+};
+
+// RuleContext
+const ruleContextModel = {
+  attributes: [ruleContextAttributeModel],
+};
+
+// ResourceAttribute
+const resourceAttributeAccountIdModel = {
+  name: 'accountId',
+  value: accountId,
+};
+
+// Resource Attribute
+const resourceAttributeServiceNameModel = {
+  name: 'serviceName',
+  value: serviceName,
+  operator: 'stringEquals',
+};
+
+// Resource
+const resourceModel = {
+  attributes: [resourceAttributeAccountIdModel, resourceAttributeServiceNameModel],
+};
+
+const params = {
+  contexts: [ruleContextModel],
+  resources: [resourceModel],
+  description: 'this is an example of rule',
+  enforcementMode: 'enabled',
+};
+
+try {
+  const res = await contextBasedRestrictionsService.createRule(params);
+  ruleId = res.result.id;
+  ruleRev = res.headers.etag;
+  console.log(JSON.stringify(res.result, null, 2));
+} catch (err) {
+  console.warn(err);
+}
+```
+{: codeblock}
+{: javascript}
+
+```python
+rule_context_attribute_model = {
+  'name': 'networkZoneId',
+  'value': zone_id,
+}
+
+rule_context_model = {
+  'attributes': [rule_context_attribute_model],
+}
+
+resource_attribute_account_id_model = {
+  'name': 'accountId',
+  'value': account_id,
+}
+
+resource_attribute_service_name_model = {
+  'name': 'serviceName',
+  'value': service_name,
+}
+
+resource_model = {
+  'attributes': [resource_attribute_account_id_model, resource_attribute_service_name_model],
+}
+
+rule = context_based_restrictions_service.create_rule(
+  contexts=[rule_context_model],
+  resources=[resource_model],
+  description='this is an example of rule',
+  enforcement_mode='enabled'
+).get_result()
+
+print(json.dumps(rule, indent=2))
+```
+{: codeblock}
+{: python}
+
+```go
+ruleContextAttributeModel := &contextbasedrestrictionsv1.RuleContextAttribute{
+  Name:  core.StringPtr("networkZoneId"),
+  Value: core.StringPtr(zoneID),
+}
+
+ruleContextModel := &contextbasedrestrictionsv1.RuleContext{
+  Attributes: []contextbasedrestrictionsv1.RuleContextAttribute{*ruleContextAttributeModel},
+}
+
+resourceModel := &contextbasedrestrictionsv1.Resource{
+  Attributes: []contextbasedrestrictionsv1.ResourceAttribute{
+    {
+      Name:  core.StringPtr("accountId"),
+      Value: core.StringPtr(accountID),
+    },
+    {
+      Name:  core.StringPtr("serviceName"),
+      Value: core.StringPtr(serviceName),
+    },
+  },
+  Tags: []contextbasedrestrictionsv1.ResourceTagAttribute{
+    {
+      Name:  core.StringPtr("tagName"),
+      Value: core.StringPtr("tagValue"),
+    },
+  },
+}
+
+createRuleOptions := contextBasedRestrictionsService.NewCreateRuleOptions()
+createRuleOptions.SetDescription("this is an example of rule")
+createRuleOptions.SetContexts([]contextbasedrestrictionsv1.RuleContext{*ruleContextModel})
+createRuleOptions.SetResources([]contextbasedrestrictionsv1.Resource{*resourceModel})
+createRuleOptions.SetEnforcementMode(contextbasedrestrictionsv1.CreateRuleOptionsEnforcementModeEnabledConst)
+rule, response, err := contextBasedRestrictionsService.CreateRule(createRuleOptions)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(rule, "", "  ")
+fmt.Println(string(b))
+```
+{: codeblock}
+{: go}
