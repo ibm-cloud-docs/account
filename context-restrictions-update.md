@@ -24,6 +24,7 @@ To update a context-based restrictions rule, you must be assigned the administra
 
 ## Updating rules
 {: #context-restrictions-update-rules}
+{: ui}
 
 To edit the context-based restrictions on your cloud resources, complete the following steps.
 
@@ -210,6 +211,7 @@ fmt.Println(string(b))
 
 ## Updating network zones
 {: #network-zones-update}
+{: ui}
 
 You can modify the list of allowed locations where an access request can originate. A set of one or more network locations can be specified by IP addresses (individual addresses, ranges, or subnets), VPCs, or service references. You can update a network zone that is used in a rule, or integrate the new updated network zones into your rules later.
 

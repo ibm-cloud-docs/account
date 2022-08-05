@@ -30,6 +30,7 @@ To set up context-based restrictions, you must be the account owner or have an a
 
 ## Creating network zones
 {: #network-zones-create}
+{: ui}
 
 By creating network zones, you can create a list of allowed locations where an access request originates. A set of one or more network locations can be specified by IP addresses such as individual addresses, ranges or subnets, and VPC IDs. After you create a network zone, you can add it to a rule. 
 
@@ -296,6 +297,7 @@ To find a list of available service references, call the [ListAvailableServicere
 
 ## Creating rules
 {: #context-restrictions-create-rules}
+{: ui}
 
 Define restrictions to your cloud resources by creating rules.
 

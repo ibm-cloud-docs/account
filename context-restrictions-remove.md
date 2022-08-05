@@ -22,6 +22,7 @@ By removing context-based restrictions, you delete restrictions that are defined
 
 ## Removing a rule
 {: #context-restrictions-remove-rules}
+{: ui}
 
 You can remove a rule on your cloud resources by completing the following steps: 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Context-based restrictions**, and select **Rules**.
@@ -175,6 +176,7 @@ You can remove a rule on your cloud resources by completing the following steps:
 
 ## Removing a network zone
 {: #network-zones-remove}
+{: ui}
 
 Removing a network zone removes the set of allowed network locations from which an access request is created. If a network zone is added to a rule, you first have to remove the zone from the rule. See [Updating context-based restrictions](/docs/account?topic=account-context-restrictions-update) for more information about removing a zone from a rule. Then, complete the following steps: 
 
