@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2021
-lastupdated: "2021-09-22"
+  years: 2018, 2022
+lastupdated: "2022-08-05"
 
 keywords: MFA, multifactor authentication, two-factor authentication, U2F, FIDO U2F, security key
 
@@ -31,8 +31,8 @@ ID-based MFA
 Account-based MFA
 :   Options such as security questions that use a time-based one-time passcode and external authentication option with Symantec. These types of MFA are specific per account. If you have a different type set up for each account that you belong to, you must authenticate in a different way each time you switch accounts. These legacy MFA options are available only with classic infrastructure accounts.
 
-IBMid MFA satisfies the authentication requirement so that you are not prompted for any other types of MFA even if they are enabled. So, if an account to which you are a member has this option turned on, this is the only type of MFA that you are prompted for at login. If you are a new user, use the ID-based IBMid MFA option to ensure that your login is easy and secure.
-{: tip}
+For users that are members of multiple accounts, the most restrictive MFA option enabled in any of the accounts is the only MFA that you must satisfy. ID-based MFA is more restrictive than account-based MFA, and satisfies the authentication requirement. If an account that you are a member of has this option turned on, this is the only type of MFA that you are prompted with at login.
+{: note}
 
 ## ID-based MFA options
 {: #id-based}
