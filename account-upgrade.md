@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2022
 
-lastupdated: "2022-06-06"
+lastupdated: "2022-08-08"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -16,7 +16,7 @@ subcollection: account
 # Upgrading your account
 {: #upgrading-account}
 
-Lite accounts make it easy to get started with {{site.data.keyword.Bluemix}} and try out services. When you are ready for more, you can upgrade your account to a Pay-As-You-Go or Subscription account to unlock the entire catalog of production-ready services.
+Lite accounts make it easy to get started with {{site.data.keyword.Bluemix}} and try out services. When you are ready for more, you can upgrade your account to a Pay-As-You-Go, or Subscription account to unlock the entire catalog of production-ready services.
 {: shortdesc}
 
 You can check your current account type by going to **Manage** > **Account** > **Account settings** in the {{site.data.keyword.Bluemix_notm}} console and looking in the Account Type section.
@@ -39,9 +39,12 @@ To upgrade to a Pay-As-You-Go account, complete the following steps.
 1. Enter your payment information, click **Next**, and submit your information.
 
 
-After your payment information is processed, your account is upgraded and you can explore and access the full {{site.data.keyword.Bluemix_notm}} catalog. For any billable services that you use beyond any free allowances, you receive a monthly invoice. 
+After your payment information is processed, your account is upgraded, and you can explore and access the full {{site.data.keyword.Bluemix_notm}} catalog. For any billable services that you use beyond any free allowances, you receive a monthly invoice. 
 
 If you're upgrading to reactivate a deactivated account, your account might take a few days to be fully available. If your account continues to be in a pending state, see [Why can't I upgrade my account?](/docs/account?topic=account-ts_upgrade_cc) for help.
+
+If you can't upgrade your account because of an issue with your credit card, see [Troubleshooting credit card error messages](/docs/billing-usage?topic=billing-usage-cc-error-messages) for more information.
+{: tip} 
 
 ## Promotional credit for upgrading your account
 {: #promotional-credit-for-upgrading-your-account} 
@@ -77,7 +80,7 @@ The following table lists the current upgrade promotional amounts for different 
 ## Upgrading to a Subscription account
 {: #upgrade-subscription}
 
-With a Subscription account, you commit to a minimum spending amount each month and receive a subscription discount that is applied to that minimum charge. If your usage exceeds your total subscription amount, you're charged the regular non-discounted rate only on the overage.
+With a Subscription account, you commit to a minimum spending amount each month and receive a subscription discount that is applied to that minimum charge. If your usage exceeds your total subscription amount, you're charged the regular nondiscounted rate only on the overage.
 
 Subscriptions that you purchase through the console are limited to $5,000 United States dollars (USD) or the equivalent in your billing currency. If you want to purchase a larger subscription, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://cloud.ibm.com/catalog?contactmodule){: external}.
 
