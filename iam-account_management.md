@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2022
 
-lastupdated: "2022-06-22"
+lastupdated: "2022-08-15"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, access management service, catalog management service, cloud shell service, software instance service
 
@@ -109,13 +109,16 @@ You can give users access to view private catalogs and catalog filters, create p
 ### Context-Based Restrictions
 {: #cbr-account-management}
 
-You can give users access to view, create, update, and remove context-based restrictions and network zones. 
+You can give users access to view, create, update, and remove network zones. To create a context-based restriction rule for a service, you must be assigned an IAM policy with the Administrator role the service you are creating a rule against. For example, if you want to create a rule to protect a **Key Protect** instance, you must be assigned the Administrator role on the **Key Protect** service and the Viewer role or higher on the  **Context-based restrictions** service. 
+
+The Viewer role on the Context-based restrictions service allows you to add network zones to your rule.
+{: note}
 
 | Roles         | Actions                                                                                                |
 |---------------|--------------------------------------------------------------------------------------------------------|
-| Viewer        | View rules   \n  \n View network zones|
-| Editor        | View rules   \n  \n View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones  |
-| Administrator | View rules   \n  \n Create rules   \n  \n Update rules   \n  \n Remove rules   \n  \n View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones |
+| Viewer        | View network zones|
+| Editor        | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones  |
+| Administrator | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones |
 {: caption="Table 4. Roles and example actions for the context-based restrictions service" caption-side="top"}
 
 ### Enterprise
@@ -1020,13 +1023,16 @@ You can give users access to view private catalogs and catalog filters, create p
 ### Context-based restrictions
 {: #cbr-account-management-api}
 
-You can give users access to view, create, update, and remove context-based restrictions. 
+You can give users access to view, create, update, and remove network zones. To create a context-based restriction rule for a service, you must be assigned an IAM policy with the Administrator role the service you are creating a rule against. For example, if you want to create a rule to protect a **Key Protect** instance, you must be assigned the Administrator role on the **Key Protect** service and the Viewer role or higher on the  **Context-based restrictions** service. 
+
+The Viewer role on the Context-based restrictions service allows you to add network zones to your rule.
+{: note}
 
 | Roles         | Actions                                                                                                | role_ID value    |
 |---------------|--------------------------------------------------------------------------------------------------------|------------|
-| Viewer        | View rules   \n  \n View network zones|                                  `crn:v1:bluemix:public:iam::::role:Viewer` |
-| Editor        | View rules   \n  \n View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones  | `crn:v1:bluemix:public:iam::::role:Editor` |
-| Administrator | View rules   \n  \n Create rules   \n  \n Update rules   \n  \n Remove rules   \n  \n View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones | `crn:v1:bluemix:public:iam::::role:Administrator` |
+| Viewer        |  View network zones |                                  `crn:v1:bluemix:public:iam::::role:Viewer` |
+| Editor        |  View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones  | `crn:v1:bluemix:public:iam::::role:Editor` |
+| Administrator | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones | `crn:v1:bluemix:public:iam::::role:Administrator` |
 {: caption="Table 5. Roles and example actions for the context-based restrictions service" caption-side="top"}
 
 You can give users access to view, create, update, and remove context-based restrictions and network zones. 
@@ -1334,13 +1340,16 @@ You can give users access to view private catalogs and catalog filters, create p
 ### Context-based restrictions
 {: #cbr-account-management-cli}
 
-You can give users access to view, create, update, and remove context-based restrictions and network zones. 
+You can give users access to view, create, update, and remove network zones. To create a context-based restriction rule for a service, you must be assigned an IAM policy with the Administrator role the service you are creating a rule against. For example, if you want to create a rule to protect a **Key Protect** instance, you must be assigned the Administrator role on the **Key Protect** service and the Viewer role or higher on the  **Context-based restrictions** service. 
+
+The Viewer role on the Context-based restrictions service allows you to add network zones to your rule.
+{: note}
 
 | Roles         | Actions                                                                                                |
 |---------------|--------------------------------------------------------------------------------------------------------|
-| Viewer        | View rules   \n  \n View network zones|
-| Editor        | View rules   \n  \n View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones  |
-| Administrator | View rules   \n  \n Create rules   \n  \n Update rules   \n  \n Remove rules   \n  \n View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones |
+| Viewer        | View network zones|
+| Editor        | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones  |
+| Administrator | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones |
 {: caption="Table 5. Roles and example actions for the context-based restrictions service" caption-side="top"}
 
 
@@ -1632,13 +1641,16 @@ You can give users access to view private catalogs and catalog filters, create p
 ### Context-based restrictions
 {: #cbr-account-management-terra}
 
-You can give users access to view, create, update, and remove context-based restrictions and network zones. 
+You can give users access to view, create, update, and remove network zones. To create a context-based restriction rule for a service, you must be assigned an IAM policy with the Administrator role the service you are creating a rule against. For example, if you want to create a rule to protect a **Key Protect** instance, you must be assigned the Administrator role on the **Key Protect** service and the Viewer role or higher on the  **Context-based restrictions** service. 
+
+The Viewer role on the Context-based restrictions service allows you to add network zones to your rule.
+{: note}
 
 | Roles         | Actions                                                                                                |
 |---------------|--------------------------------------------------------------------------------------------------------|
-| Viewer        | View rules   \n  \n View network zones|
-| Editor        | View rules   \n  \n View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones  |
-| Administrator | View rules   \n  \n Create rules   \n  \n Update rules   \n  \n Remove rules   \n  \n View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones |
+| Viewer        | View network zones|
+| Editor        | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones  |
+| Administrator | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones |
 {: caption="Table 4. Roles and example actions for the context-based restrictions service" caption-side="top"}
 
 
