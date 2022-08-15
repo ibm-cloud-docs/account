@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-08-04"
+lastupdated: "2022-08-15"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, Cloud Foundry, endpoint type
 
@@ -44,17 +44,6 @@ Context-based restriction rules are applied by the following logic:
 Unlike IAM policies, context-based restrictions don't assign access. Context-based restrictions check that an access request comes from an allowed context that you configure. 
 {: note}
 
-To manage rules, you must be assigned a specific role for the context-based restriction account management service: 
-| Roles         | Actions                                                                                                |
-|---------------|--------------------------------------------------------------------------------------------------------|
-| Viewer        | View rules   |
-| Editor        | View rules   |
-| Operator      | View rules   |
-| Administrator | View rules   \n  \n Create rules   \n  \n Update rules   \n  \n Remove rules  |
-{: caption="Table 1. Roles and example actions for rules" caption-side="top"}
-
-For more information, see [Actions and roles for account management services](/docs/account?topic=account-account-services&interface=ui).
-
 ### Rule enforcement 
 {: #rule-enforcement}
 
@@ -91,12 +80,12 @@ Customers can specify the IP addresses they know that they want to be able to se
 #### VPCs
 {: #vpc-attribute}
 
-If you have apps that are deployed in a VPC that need access to a context-based restricted resource, you can include the VPC IP addresses in your network zone. To do so, you can select the target VPC in your network zone, and add that network zone to your rule. This way, you don’t have to find the IP addresses that the VPC uses. Resources that are contacted see that the request is coming from a set of allowed IP addresses.
+If you have apps that are deployed in a VPC that need access to a context-based restricted resource, you can include the VPC IP addresses in your network zone. To do so, select the target VPC in your network zone and add that network zone to your rule. This way, you don’t have to find the IP addresses that the VPC uses. Resources that are contacted see that the request is coming from a set of allowed IP addresses.
 
 #### Service references
 {: #service-attribute}
 
-A service reference represents the network locations of a service or service-instance. Including a service reference to a network zone adds the IP addresses associated with the service to your allowlist without requiring you to know their underlying IP addresses. This is helpful since the network locations of cloud services are unknown to the context-based restriction administrator, and can change over time.
+A service reference represents the network locations of a service or service-instance. Including a service reference to a network zone adds the IP addresses associated with the service to your allowlist without requiring you to know their underlying IP addresses. Service references are helpful since the network locations of cloud services are unknown to the context-based restriction administrator, and can change over time.
 
 To manage network zones, you must be assigned a specific role for the context-based restriction account management service: 
 | Roles         | Actions                                                                                                |
@@ -108,7 +97,7 @@ To manage network zones, you must be assigned a specific role for the context-ba
 
 For more information, see [Actions and roles for account management services](/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles).
 
-You can also use network zones to restrict access at the account level. To set account level restrictions by using network zones, go to **Manage** > **IAM** > **Settings** in the {{site.data.keyword.cloud_notm}} console and enter the name of your network zone.
+You can also use network zones to restrict access at the account level. To set account-level restrictions by using network zones, go to **Manage** > **IAM** > **Settings** in the {{site.data.keyword.cloud_notm}} console and enter the name of your network zone.
 {: note}
 
 ### Endpoint types
@@ -123,6 +112,43 @@ The three common endpoint types are as follows:
 
 Some endpoint types might not be supported by the selected service.
 {: note}
+
+## Access requirements
+{: cbr-access-reqs}
+
+To complete rule actions, you must be assigned an IAM policy on the target service. To complete network zone actions, you must be assigned an IAM policy on the context-based restrictions service. 
+
+To create a context-based restriction for a service, you must be assigned an IAM policy with the Administrator role the service you are creating a rule against. For example, if you want to create a rule to protect a **Key Protect** instance, you must be assigned the Administrator role on the **Key Protect** service and the Viewer role or higher on the  **Context-based restrictions** service. 
+
+The Viewer role on the Context-based restrictions service allows you to add network zones to your rule.
+{: tip}
+
+### Context-based restrictions roles and actions
+{: cbr-access-reqs-cbr-restrict}
+
+To manage network zones, you must be assigned an IAM policy with a specific role for the Context-based restrictions account management service. The following table shows the possible access roles and actions for account management.
+
+| Roles         | Actions                                                                                                |
+|---------------|--------------------------------------------------------------------------------------------------------|
+| Viewer        | View network zones|
+| Editor        | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones  |
+| Administrator | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones |
+{: caption="Table 1. Roles and actions for the Context-based restrictions service" caption-side="top"}
+
+For more information, see [Actions and roles for account management services](/docs/account?topic=account-account-services&interface=ui).
+
+### Target service roles and actions
+{: cbr-access-reqs-target-service}
+
+To manage rules, you must be assigned an IAM policy with the Administrator role for the service that you are creating the rule against. The following table shows the possible access roles and actions for services.
+
+| Roles         | Actions                                                                                                |
+|---------------|--------------------------------------------------------------------------------------------------------|
+| Viewer        | View rules |
+| Editor        | View rules |
+| Administrator | View rules   \n  \n Create rules   \n  \n Update rules   \n  \n Remove rules |
+{: caption="Table 2. Roles and example actions for target service" caption-side="top"}
+
 
 ## Services integrated with context-based restrictions
 {: #cbr-adopters}
@@ -143,7 +169,8 @@ You can create context-based restrictions for the following services if you are 
 | {{site.data.keyword.keymanagementserviceshort}} | IAM-enabled |
 {: caption="Table 3. Services that are compatible with context-based restrictions." caption-side="top"}
 
-Context-based restrictions defined for IAM-enabled services do not apply to platform actions like create or delete. For more information, see [IAM roles and actions](/docs/account?topic=account-iam-service-roles-actions). 
+
+Context-based restrictions that are defined for IAM-enabled services do not apply to platform actions like create or delete. For more information, see [IAM roles and actions](/docs/account?topic=account-iam-service-roles-actions). 
 {: important}
 
 Check back regularly to see what services are added as more services integrate with context-based restrictions.
