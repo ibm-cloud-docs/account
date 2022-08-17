@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-08-16"
+lastupdated: "2022-08-17"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -742,7 +742,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloudantnosqldb.activity-tracker-event-types.read` | Access list of configured activity tracker event types for a service instance | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
 | `cloudantnosqldb.activity-tracker-event-types.write` | Update list of configured activity tracker event types for a service instance | Administrator, Manager, Operator |
 | `cloudantnosqldb.sapi.lastactivity` | Access last activity time for account | Manager |
-| `cloudantnosqldb.sapi.usercors` | Update CORS settings for a service instance | Manager |
+| `cloudantnosqldb.sapi.usercors` | Update CORS settings for a service instance | Administrator, Manager |
 | `cloudantnosqldb.sapi.apikeys` | Generate Cloudant API keys for a service instance | Manager |
 | `cloudantnosqldb.sapi.userccmdiagnostics` | Access current and maximum allowed throughput values | Manager |
 | `cloudantnosqldb.sapi.supportattachments` | View attachments on support tickets for user | Manager |
