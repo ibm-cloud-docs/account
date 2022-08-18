@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-08-17"
+lastupdated: "2022-08-18"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -4043,6 +4043,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `iam-access-management.settings.read` | Read Access Management account settings | Administrator, Editor, Viewer |
+| `iam-access-management.user-access-list.read` | Read User Access list | Administrator, Editor |
 | `iam-access-management.settings.update` | Update Access Management account settings | Administrator |
 {: caption="Table 71. Service actions - IAM Access Management" caption-side="top"}
 {: #actions-table71}
