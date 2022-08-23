@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2021
-lastupdated: "2021-11-22"
+  years: 2019, 2022
+lastupdated: "2022-08-23"
 
 keywords: change owner, transfer account, transfer account ownership, switch owner, transfer owner
 
@@ -33,7 +33,8 @@ As the account owner, you can transfer your account to a new owner by creating a
 
 To create the support case, go to **Support**, and click **Create a case** in the {{site.data.keyword.cloud_notm}} console. In the case description, include the full name and IBMid of the user that is to be the new account owner. 
 
-When you transfer your account to a new owner, be aware that you as the previous account owner will be automatically removed from that account. The new owner needs to invite the account's previous owner back to the transferred account to keep them within it. 
+When you transfer your account to a new owner, be aware that you as the previous account owner will be automatically removed from that account. The new owner needs to invite the account's previous owner back to the transferred account to keep them within it.
+{: note}
 
 ## Transferring an account from another owner
 {: #transfer-lost}
