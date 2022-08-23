@@ -2,10 +2,9 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-04-26"
+lastupdated: "2022-08-23"
 
 keywords: network-level access, network security strategy
-
 subcollection: account
 content-type: tutorial
 account-plan: lite 
@@ -20,12 +19,12 @@ completion-time: 20m
 {: toc-content-type="tutorial"}
 {: toc-completion-time="20m"}
 
-This tutorial walks you through how to use context-based restrictions as an extra layer of protection to your resources. By completing this tutorial, you learn how to create network zones and rules that define access restrictions to specific resources based on context in addition to IAM identity.
+This tutorial walks you through how to use context-based restrictions as an extra layer of protection to your resources. By completing this tutorial, you learn how to create network zones and rules that define access restrictions to specific resources based on context in addition to IAM identity. For more information, see [What are context-based restrictions?](/docs/account?topic=account-context-restrictions-whatis)
 {: shortdesc}
 
-The tutorial uses a fictitious account owner named Xander. Xander has already set-up access for managers that need the `administrator` role on account management services by using IAM policies. 
+The tutorial uses a fictitious account owner named Xander. Xander previously set up access for managers that need the `administrator` role on account management services by using IAM policies. 
 
-Xander trusts his team to manage their personal and service credentials properly, but he wants to make sure they are protected even if credentials are mismanaged. Because Xander knows the IP addresses that the team uses, Xander can restrict access to the policy management service based on the network location of the access requests. This way, policy creation is restricted to the IP addresses he defines. Since both IAM access and context-based restrictions must allow access, context-based restrictions offer protection even in the face of compromised or mismanaged credentials.
+Xander trusts his team to manage their personal and service credentials properly, but he wants to make sure they are protected even if credentials are mismanaged. Because Xander knows the IP addresses that the team uses, Xander can restrict access to the access management service based on the network location of the access requests. This way, access policy creation is restricted to the IP addresses he defines. Since both IAM access and context-based restrictions must allow access, context-based restrictions offer protection even in the face of compromised or mismanaged credentials.
 
 ## Create a network zone
 {: #tutorial-networkzone-new}
@@ -65,4 +64,6 @@ Xander is now restricting policy management requests to the IP addresses and end
 ## Next steps
 {: #tutorial-context-step-next}
 
- You can also use network zones to restrict access at the account level and user level. For more information, see [Allowing specific IP addresses](/docs/account?topic=account-ips&interface=ui).
+You can also use network zones to restrict access at the account level and user level. For more information, see [Allowing specific IP addresses](/docs/account?topic=account-ips&interface=ui).
+
+To create context-based restrictions programmatically, see the [Context-based Restrictions API](/apidocs/context-based-restrictions) and the [Context-based restrictions CLI plug-in](/docs/account?topic=cli-cbr-plugin).
