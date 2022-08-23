@@ -42,9 +42,9 @@ This tutorial walks you through how to onboard a sample Operator from a GitHub r
    * Administrator on all account management services and all IAM-enabled services
    * Editor on the software instance service
    * Editor on the {{site.data.keyword.registrylong_notm}} service
-   * Administrator on the {{site.data.keyword.redhat_notm}} {{site.data.keyword.openshiftshort}} cluster
+   * Administrator on the {{site.data.keyword.openshiftshort}} cluster
 
-Make sure that you use the same account to access {{site.data.keyword.registrylong_notm}} and to create the {{site.data.keyword.redhat_notm}} {{site.data.keyword.openshiftshort}} cluster.
+Make sure that you use the same account to access {{site.data.keyword.registrylong_notm}} and to create the {{site.data.keyword.openshiftshort}} cluster.
 {: important}
 
 ## Create a private catalog

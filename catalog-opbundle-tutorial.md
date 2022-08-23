@@ -23,23 +23,23 @@ completion-time: 45m
 {: toc-services="Registry"}
 {: toc-completion-time="45m"} 
 
-This tutorial walks you through how to onboard a sample Operator bundle from a {{site.data.keyword.redhat_full}} registry to your account. By completing this tutorial, you learn how to create a private catalog in your account, import the Operator bundle, and validate that it can be installed on a {{site.data.keyword.redhat_notm}} {{site.data.keyword.openshiftshort}} cluster.
+This tutorial walks you through how to onboard a sample Operator bundle from a {{site.data.keyword.redhat_full}} registry to your account. By completing this tutorial, you learn how to create a private catalog in your account, import the Operator bundle, and validate that it can be installed on a {{site.data.keyword.openshiftshort}} cluster.
 {: shortdesc}
 
 ## Before you begin
 {: #catalog-opbundle-prereqs}
 
 1. Go to the {{site.data.keyword.redhat_notm}} OperatorHub to confirm that your Operator bundle exists in the {{site.data.keyword.redhat_notm}} Certified registry.
-1. [Create your {{site.data.keyword.redhat_notm}} {{site.data.keyword.openshiftshort}} cluster](/docs/openshift?topic=openshift-getting-started). 
+1. [Create your {{site.data.keyword.openshiftshort}} cluster](/docs/openshift?topic=openshift-getting-started). 
 1. [Upload your Operator bundle and application images to {{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-getting-started).
 1. Verify that you're assigned the following {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM). See [Assigning access to account management services](/docs/account?topic=account-account-services) and [Managing access to resources](/docs/account?topic=account-assign-access-resources) for more information.
    * Administrator on all account management services and all IAM-enabled services
    * Editor on the catalog management service
    * Editor on the software instance service
    * Editor on the {{site.data.keyword.registrylong_notm}} service
-   * Administrator on the {{site.data.keyword.redhat_notm}} {{site.data.keyword.openshiftshort}} cluster
+   * Administrator on the {{site.data.keyword.openshiftshort}} cluster
 
-Make sure that you use the same account to access {{site.data.keyword.registrylong_notm}} and to create the {{site.data.keyword.redhat_notm}} {{site.data.keyword.openshiftshort}} cluster.
+Make sure that you use the same account to access {{site.data.keyword.registrylong_notm}} and to create the {{site.data.keyword.openshiftshort}} cluster.
 {: important}
 
 ## Create a private catalog
@@ -99,7 +99,7 @@ When users install the software, they can select the link to your readme file to
 {: #catalog-opbundle-validate}
 {: step}
 
-Validate that the Operator bundle can be successfully installed on the target {{site.data.keyword.redhat_notm}} {{site.data.keyword.openshiftshort}} cluster.  
+Validate that the Operator bundle can be successfully installed on the target {{site.data.keyword.openshiftshort}} cluster.  
 
 1. Click **Validate product**
 1. Select the Update channel to receive version updates from. 

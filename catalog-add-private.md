@@ -25,7 +25,7 @@ The process to onboard software to your account includes importing a version to 
 
 1. Review the list of software that you can onboard:
 
-   * Helm charts on Kubernetes and {{site.data.keyword.redhat_notm}} {{site.data.keyword.openshiftshort}} clusters
+   * Helm charts on Kubernetes and {{site.data.keyword.openshiftshort}} clusters
    * Terraform templates
    * OVA images that are deployed on VMware Solutions Dedicated - vCenter Server
    * Virtual server images with Terraform deployed on VPC infrastructure or {{site.data.keyword.powerSys_notm}}
@@ -94,7 +94,7 @@ Complete the following steps to import software to your private catalog:
 
    * Helm chart: `https://charts.bitnami.com/ibm/apache-8.3.2.tgz`
    * Node-RED Operator: `https://github.com/IBM-Cloud/operator-bundle-sample/archive/refs/tags/v0.0.3.tar.gz`
-   * Operator bundle from a {{site.data.keyword.redhat_notm}} {{site.data.keyword.openshiftshort}} registry: For an example, select the `Akka Cluster Operator` from the list of available Operators in the Certified repository. 
+   * Operator bundle from a {{site.data.keyword.openshiftshort}} registry: For an example, select the `Akka Cluster Operator` from the list of available Operators in the Certified repository. 
    * OVA image: `https://github.com/gcatalog/OVA-sample/blob/main/ova-sample.yaml`
    * Terraform template: `https://github.com/IBM-Cloud/terraform-sample/releases/tag/v1.0.0`
    * Virtual server image with Terraform: `https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample/releases/download/v1.0/isv-vsi-product-deploy-sample.tar.gz`
@@ -348,7 +348,7 @@ Complete the following steps to add your software by using the CLI. You can use 
 
     * Helm chart: `https://charts.bitnami.com/ibm/apache-8.3.2.tgz`
     * Node-RED Operator: `https://github.com/IBM-Cloud/operator-bundle-sample/archive/refs/tags/v0.0.3.tar.gz`
-    * Operator bundle from a {{site.data.keyword.redhat_notm}} {{site.data.keyword.openshiftshort}} registry: For an example, select the `Akka Cluster Operator` from the list of available Operators in the Certified repository. 
+    * Operator bundle from a {{site.data.keyword.openshiftshort}} registry: For an example, select the `Akka Cluster Operator` from the list of available Operators in the Certified repository. 
     * OVA image: `https://github.com/gcatalog/OVA-sample/blob/main/ova-sample.yaml`
     * Terraform template: `https://github.com/IBM-Cloud/terraform-sample/releases/tag/v1.0.0`
     * Virtual server image with Terraform: `https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample/releases/download/v1.0/isv-vsi-product-deploy-sample.tar.gz`
