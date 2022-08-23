@@ -26,6 +26,11 @@ The tutorial uses a fictitious account owner named Xander. Xander previously set
 
 Xander trusts his team to manage their personal and service credentials properly, but he wants to make sure they are protected even if credentials are mismanaged. Because Xander knows the IP addresses that the team uses, Xander can restrict access to the access management service based on the network location of the access requests. This way, access policy creation is restricted to the IP addresses he defines. Since both IAM access and context-based restrictions must allow access, context-based restrictions offer protection even in the face of compromised or mismanaged credentials.
 
+## Before you begin
+{: #cbr-tutorial-before-you-begin}
+
+Set up {{site.data.keyword.cloudaccesstrailshort}} to monitor your enabled and report-only rules. For more information, see [Monitoring context-based restrictions](/docs/account?topic=account-cbr-monitor).
+
 ## Create a network zone
 {: #tutorial-networkzone-new}
 {: step}
@@ -51,18 +56,25 @@ First, create a new network zone for the team.
 Now, Xander can use the network zone that he created in a rule. 
 
 1. Go to **Rules** and click **Create**. 
-2. Name the rule `Management team context` and click **Continue**. 
-3. To restrict access to the creation of IAM access management policies, select **Account management** and then select **IAM AM Policy**. 
-4. Click **Continue**.
-5. Xander has specified public endpoints in his network zone, so he keeps the endpoint type toggle switch set to **Yes**, which allows requests from any endpoint type. 
-6. Select the network zone `management-team-zone`.
-7. Click **Add** to include your context configuration in the rule.
-8. Then, click **Create**.
+1. Name the rule `Management team context` and click **Continue**. 
+1. Set the enforcement to **Report-only** so that you can monitor the impact of the rule before you enable it.
 
-Xander is now restricting policy management requests to the IP addresses and endpoint type his management team uses. Since the management team has the right access policies, and they use allowed IP addresses, they are authenticated to execute policy management operations. All policy management requests that come from IP addresses and endpoint types that do not match the conext Xander defined are denied.
+   You can update the enforcement at any time after you create the rule. For more information, see [Updating context-based restrictions](/docs/account?topic=account-context-restrictions-update&interface=ui). 
+   {: note}
+
+1. To restrict access to the creation of IAM access management policies, select **IAM Access Management Service**. 
+1. Click **Continue**.
+1. Xander has public endpoints in his network zone, so he keeps the endpoint type toggle switch set to **Yes**, which allows requests from any endpoint type. 
+1. Select the network zone `management-team-zone`.
+1. Click **Add** to include your context configuration in the rule.
+1. Then, click **Create**.
+
+Xander is logging and monitoring policy management requests by using report-only mode. Since the management team has the right access policies and use allowed IP addresses, they are authorized to execute policy management operations. All policy management requests that come from IP addresses that don't match the conext that Xander defined are denied when the rule is enabled.
 
 ## Next steps
 {: #tutorial-context-step-next}
+
+After 30 days of monitoring, update the rule to **Enabled** to begin enforcing your restrictions. 
 
 You can also use network zones to restrict access at the account level and user level. For more information, see [Allowing specific IP addresses](/docs/account?topic=account-ips&interface=ui).
 
