@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-08-23"
+lastupdated: "2022-08-24"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -903,6 +903,7 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
+| Compute Environment Administrator | Can manage Code Engine Compute Environments. |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
@@ -922,6 +923,10 @@ Review the available platform and service roles and the actions mapped to each t
 | `codeengine.tenant.entities.update` | Modify existing items already contained by a project, such as applications, jobs, or job definitions.  This does not include the ability to create or delete these items. | Manager, Writer |
 | `codeengine.tenant.entities.delete` | Delete existing items from within a project | Manager, Writer |
 | `codeengine.tenant.entities.read` | List and view existing items within a project | Manager, Reader, Writer |
+| `codeengine.computeenvironment.create` | Allows you to create a Code Engine Compute Environment. | Compute Environment Administrator |
+| `codeengine.computeenvironment.delete` | Allows you to delete compute environments. | Compute Environment Administrator |
+| `codeengine.computeenvironment.projects.create` | Allows you to create projects in this compute environment. | Manager, Writer |
+| `codeengine.computeenvironment.projects.delete` | Allows you to delete projects in this compute environment. | Manager, Writer |
 {: caption="Table 20. Service actions - Code Engine" caption-side="top"}
 {: #actions-table20}
 {: tab-title="Actions"}
