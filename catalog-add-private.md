@@ -417,64 +417,11 @@ fmt.Println(response)
 {: codeblock}
 {: go}
 
-
-## Creating software for your private catalog by using the API
-{: #create-product-api}
-{: api}
-
-You can programmatically add software to your catalog by calling the Catalog Management API as shown in the following sample request. For detailed information about the API, see [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=java#create-offering).
-
-```java
-String id = "{id}";
-String name = "{name}";
-String label = "{label}";
-CreateOfferingOptions offeringOptions = new CreateOfferingOptions.Builder().catalogIdentifier(id).name(name).label(label).build();
-Response<Offering> response = service.createOffering(offeringOptions).execute();
-System.out.println(response.getResult());
-```
-{: codeblock}
-{: java}
-
-```javascript
-id = "{id}";
-name = "{name}";
-label = "{label}";
-response = await service.createOffering({ 'catalogIdentifier': id, 'id': id, 'name': name, 'label': label });
-console.log(response);
-```
-{: codeblock}
-{: javascript}
-
-```python
-id = "{id}"
-name = "{name}"
-label = "{label}"
-response = self.service.create_offering(catalog_identifier=id, name=name, label=label)
-print(response)
-
-```
-{: codeblock}
-{: python}
-
-```go 
-id := "{id}"
-name := "{name}"
-label := "{label}"
-offeringOptions := service.NewCreateOfferingOptions(id)
-offeringOptions.SetName(name)
-offeringOptions.SetLabel(label)
-_, response, _ := service.CreateOffering(offeringOptions)
-fmt.Println(response)
-```
-{: codeblock}
-{: go}
-
-
 ## Importing software to your private catalog by using the API
 {: #import-product-api}
 {: api}
 
-You can programmatically import software to your catalog by calling the Catalog Management API as shown in the following sample request. For detailed information about the API, see [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=go#import-offering).
+You can programmatically import software to your catalog by calling the Catalog Management API as shown in the following sample request. This API creates the software and imports it as well. For detailed information about the API, see [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=go#import-offering).
 
 ```java
 id = "{id}";
