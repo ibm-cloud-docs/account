@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-01-25"
+lastupdated: "2022-08-29"
 
 keywords: IBM Cloud notifications, notification preferences, user notifications, distribution list, notification distribution list
 
@@ -14,7 +14,7 @@ subcollection: account
 
 
 # Adding users to a distribution list 
-{: add-users-distribution-list}
+{: #add-users-distribution-list}
 
 The {{site.data.keyword.Bluemix_notm}} [notification distribution list page](/account/notifications-distribution-list){: external} provides a way for you to specify a set of email addresses or webhooks to set suitable destinations for notifications about account-wide events.
 {: shortdesc}
