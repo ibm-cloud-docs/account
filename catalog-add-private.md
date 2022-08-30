@@ -96,7 +96,7 @@ Complete the following steps to import software to your private catalog:
    * Virtual server image with Terraform: `https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample/releases/download/v1.0/isv-vsi-product-deploy-sample.tar.gz`
    * Virtual server image for VPC: Select an image from the list of available images, or import a new image to onboard it. 
     
-    A virtual server image for VPC can only be added to one product within one private catalog at a time. If the virtual server image you want to import is already imported into another product, you must remove the image from that product, delete the product, or delete the private catalog that contains the other product before you add the virtual server image to a new product. 
+    A virtual server image for VPC can only be added to one product within one private catalog at a time. If the virtual server image you want to import is already imported into another product, you must remove the image from that product or delete the product before you add the virtual server image to a new product. 
     {: note}
 
 1. If applicable, enter the version of the software in the format of major version, minor version, and revision. For example, enter version 1.1.2.    
