@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-08-05"
+lastupdated: "2022-08-30"
 
 
 keywords: create network access, network access rule, network zone
@@ -48,7 +48,11 @@ To create a network zone, complete the following steps.
     If you want to allow access from the VPC to public endpoints in your rule, include any public gateway IP addresses in the zone definition along with the VPC.
     {: important}
 
-1. Reference a service. Select a service and click **Add** to associate its IP addresses with your network zone.
+1. Reference a service. Select the service type and then select a service. Click **Add** to associate the service's IP addresses with your network zone. 
+    
+    If you're not sure what the service type is, view the table [Services integrated with context-based restrictions](docs/account?topic=account-context-restrictions-whatis#cbr-adopters). 
+    {: tip}
+
 1. Click **Next** to review your network zone.
 1. Click **Create**.
 
