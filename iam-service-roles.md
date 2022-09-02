@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-09-01"
+lastupdated: "2022-09-02"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1567,7 +1567,8 @@ Review the available platform and service roles and the actions mapped to each t
  | Administrator, Editor, Operator, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/rebalance` | rebalance tablespaces | Administrator, Editor, Operator, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/reducemax` | reclaim disk space | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/hardware` | Configure bare metal and dedicated virtual machine | Administrator, Editor, Operator, Viewer |
+| `POST /v4/:platform/deployments/:deployment_id/configure_iks_worker` | Configure bare metal and dedicated virtual machine | Administrator, Editor, Operator, Viewer |
+| `DELETE /v4/:platform/deployments/:deployment_id/disablements/:id` | Remove a disablement from an instance | Administrator, Editor, Operator |
 {: caption="Table 31. Service actions - Db2 on Cloud" caption-side="top"}
 {: #actions-table31}
 {: tab-title="Actions"}
