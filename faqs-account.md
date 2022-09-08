@@ -26,6 +26,16 @@ FAQs for your {{site.data.keyword.cloud}} account might include questions about 
 
 You can create an account by [registering](/registration){: external} your email address. For identity verification, a credit card is required when you create a new account. New accounts are created as Pay-As-You-Go accounts, except purchased subscriptions. For more information, see [Account types](/docs/account?topic=account-accounts).
 
+Feature codes aren't supported in some countries. For more information, see [personal use availability](/docs/account?topic=account-account-getting-started#signup-personalaccts).
+{: note}
+
+## Why is my credit card not authorized when I am creating an account?
+{: #authorize-account}
+{: faq}
+
+A credit card is required to create a new {{site.data.keyword.Bluemix_notm}} account unless you have a subscription or feature code. In many cases, a credit card isn't accepted because your credit card issuer didn't authorize it. For more information about issues with credit card authorization, see [Credit Card error messages](/docs/billing-usage?topic=billing-usage-cc-error-messages).
+
+
 ## How do I get help with issues with creating an account?
 {: #account-error}
 {: faq}
@@ -118,7 +128,7 @@ We're sad to see you go! If there's any way we can assist you before you decide 
 
 * To close a Lite account, go to the [Account settings](/account/settings) page, and click **Close account**. You can reactivate your account if you upgrade to a Pay-As-You-Go or Subscription account. After an account is closed for 30 days, all data is deleted and all services are removed.
 
-* You might recieve a final invoice after you close your account due to incurred charges from the month before the account was closed.
+* You might receive a final invoice after you close your account due to incurred charges from the month before the account was closed.
 
 ## Can I log in to the console with my SoftLayer ID?
 {: #slid}
