@@ -90,7 +90,7 @@ The value of the `scope` segment must be formatted as `{scopePrefix}`/`{id}`. Th
 | Account      | a/`{account id}` | The account that the resource was created in.                                           | `a/292558`                               |
 | Organization | o/`{org guid}`   | The {{site.data.keyword.Bluemix_notm}} Organization to which the resource was assigned. | `o/4716e2d1-35b7-431f-891a-b552bf0b3c66` |
 | Space        | s/`{space guid}` | The {{site.data.keyword.Bluemix_notm}} Space to which the resource was assigned.        | `s/48b3cdcd-e804-4398-9032-73065863ad7c` |
-{: caption="Table 1. `scope` usage" caption-side="top"}
+{: caption="Table 1. Scope usage" caption-side="top"}
 
 
 ## service-instance
