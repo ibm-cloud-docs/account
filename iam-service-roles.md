@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-09-09"
+lastupdated: "2022-09-10"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3982,6 +3982,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `hyperp-dbaas-mongodb.backups.cos.disable` | Disable backups to COS | Manager |
 | `hyperp-dbaas-mongodb.backups.restore` | Restore DB from backup | Manager |
 | `hyperp-dbaas-mongodb.backups.cos.read` | Show COS configuration | Manager, Reader, Writer |
+| `hyperp-dbaas-mongodb.backup.list` | List backup files | Manager, Reader, Writer |
+| `hyperp-dbaas-mongodb.backup.configuration.update` | Update backup configuration | Manager |
+| `hyperp-dbaas-mongodb.backup.configuration.read` | Show backup configuration | Manager, Reader, Writer |
 {: caption="Table 69. Service actions - Hyper Protect DBaaS for MongoDB " caption-side="top"}
 {: #actions-table69}
 {: tab-title="Actions"}
@@ -4024,6 +4027,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `hyperp-dbaas-postgresql.backups.cos.disable` | Disable backups to COS | Manager |
 | `hyperp-dbaas-postgresql.backups.restore` | Restore DB from backup | Manager |
 | `hyperp-dbaas-postgresql.backups.cos.read` | Show COS configuration | Manager, Reader, Writer |
+| `hyperp-dbaas-postgresql.backup.list` | List backup files | Manager, Reader, Writer |
+| `hyperp-dbaas-postgresql.backup.configuration.update` | Update backup configuration | Manager |
+| `hyperp-dbaas-postgresql.backup.configuration.read` | Show backup configuration | Manager, Reader, Writer |
 {: caption="Table 70. Service actions - Hyper Protect DBaaS for PostgreSQL" caption-side="top"}
 {: #actions-table70}
 {: tab-title="Actions"}
