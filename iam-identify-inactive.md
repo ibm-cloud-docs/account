@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022
-lastupdated: "2022-09-09"
+lastupdated: "2022-09-12"
 
 keywords: inactive identity, inactive identities, inactive, inactive users, inactive service IDs, inactive trusted profiles, inactive API keys
 
@@ -29,7 +29,7 @@ To view inactive identities in the console, complete the following steps:
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Inactive identities**.
 2. Click **Update report** to view the most recent report of the inactive identities in your account.
 
-   Only the most recent report is available. Reports older than a day are deleted.
+   Only the most recent report is available. Reports older than a day are deleted when generating a new report.
    {: note}
 
 3. Select a tab to review a list of inactive identities.
