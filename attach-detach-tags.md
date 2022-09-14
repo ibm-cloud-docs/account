@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2021
-lastupdated: "2021-09-24"
+  years: 2021, 2022
+lastupdated: "2022-09-15"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, attach tags ui, attach tags cli, attach tags api, detach tags ui, detach tags api, detach tags cli
 
@@ -11,37 +11,29 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:note: .note}
-{:external: target="_blank" .external}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
-{:terraform: .ph data-hd-interface='terraform'}
+{{site.data.keyword.attribute-definition-list}}
 
-# Attaching and detaching tags on a resource
+# Attaching and detaching tags
+{: #attaching-and-detaching-tags-on-a-resource}
 
-You can attach and detach tags on a resource through the console, CLI, or API. To attach or detach a tag on a resource, appropriate permission is required. For more information, see [Granting users access to tag resources](/docs/account?topic=account-access).
+You can attach and detach tags on a resource or service ID through the console, CLI, or API. To attach or detach a tag on a resource or service ID, users must be assigned the appropriate permission. For more information, see [Granting users access to tag resources](/docs/account?topic=account-access).
+{: shortdesc}
 
-## Attaching and detaching tags on a resource in the console 
+A resource can have a maximum of 1000 user tags, 1000 service tags, and 250 access tags.
+{: note}
+
+## Attaching and detaching tags on a resource in the console
 {: #attach-detach-console}
 {: ui}
 
-1. From the {{site.data.keyword.cloud}} console, click the Menu icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list** to view your list of resources.
-1. Locate the specific resource in the list. 
+1. From the {{site.data.keyword.cloud}} console, click the menu icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list** to view your list of resources.
+1. Locate the specific resource in the list.
 1. To attach a tag to the resource, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions")  > **Add tags**.
-1. Enter the name of the tag, and click **Save**. 
-1. To detach the tag from the resource, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") next to the tag in your resource list. 
+1. Enter the name of the tag, and click **Save**.
+1. To detach the tag from the resource, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") next to the tag in your resource list.
 
-When you detach an access management tag from a resource, any associated access policies are also detached from that resource.
-{: note}
+   When you detach an access management tag from a resource, any associated access policies are also detached from that resource.
+   {: note}
 
 ## Attaching tags to a resource by using the CLI
 {: #attach-cli}
@@ -49,10 +41,10 @@ When you detach an access management tag from a resource, any associated access 
 
 Log in to [{{site.data.keyword.cloud}} CLI](/docs/cli?topic=cli-getting-started) and select your account to run the appropriate CLI command.
 
-To attach a tag to a resource, use the [**`ibmcloud resource tag-attach`**](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_tag_attach) command. The allowed values for `tag-type` are `user` for user tags and `access` for access management tags. The default value is `user`. The following example shows how to attach a user tag called `MyTag` to a resource named `MyResource`:
+To attach a tag to a resource, use the [**`ibmcloud resource tag-attach`**](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_tag_attach) command. The allowed values for `tag-type` are `user` for user tags and `access` for access management tags. The default value is `user`. The following example shows how to attach a user tag that is called `MyTag` to a resource named `MyResource`:
 
 ```bash
-ibmcloud resource tag-attach --tag-name MyTag --resource-name  'MyResource'
+ibmcloud resource tag-attach --tag-names MyTag --resource-name  'MyResource'
 ```
 {: codeblock}
 
@@ -61,8 +53,8 @@ An example for attaching an access management tag called `project:myproject` to 
 ```bash
 ibmcloud resource tag-attach --tag-names project:myproject --resource-name  'MyResource' --tag-type access 
 ```
-{: codeblock}    
-    
+{: codeblock}
+
 ## Detaching tags from a resource by using the CLI
 {: #detach-cli}
 {: cli}
@@ -84,20 +76,20 @@ ibmcloud resource tag-detach --tag-names project:myproject —resource-name 'MyR
 For more information, see the [`ibmcloud resource` command reference](/docs/cli?topic=cli-ibmcloud_commands_resource).
 
 When you detach an access management tag from a resource, any associated access policies are also detached from that resource.
-{: note} 
+{: note}
 
 ## Attaching tags to a resource by using the API
 {: #attach-api}
 {: api}
 
-You can programmatically attach tags by calling the [Global Search and Tagging - Tagging API](/apidocs/tagging#attach-tag){: external} as shown in the following sample requests. The allowed values for the `tag_type` query parameter are: `user` for user tags and `access` for access management tags. The following example shows how to attach an access management tag called `project:myproject` to a service instance. 
+You can programmatically attach tags by calling the [Global Search and Tagging - Tagging API](/apidocs/tagging#attach-tag){: external} as shown in the following sample requests. The allowed values for the `tag_type` query parameter are: `user` for user tags and `access` for access management tags. The following example shows how to attach an access management tag that is called `project:myproject` to a service instance.
 
 1. Find the unique identifier for your resource by calling the following command:
 
    ```bash
-   curl -v -X POST -k --header 'Content-Type: application/json' 
-   --header 'Accept: application/json' 
-   --header 'Authorization: bearer  <your IAM token>' 
+   curl -v -X POST -k --header 'Content-Type: application/json'
+   --header 'Accept: application/json'
+   --header 'Authorization: bearer  <your IAM token>'
    -d '{"query": "name:myresource"}' 'https://api.global-search-tagging.cloud.ibm.com/v3/resources/search'
    ```
    {: codeblock}
@@ -177,7 +169,8 @@ You can programmatically attach tags by calling the [Global Search and Tagging -
    ```
    {: codeblock}
 
-3. Call the following:
+3. Call the following command:
+
    ```bash
    curl -X POST -H "Authorization: {iam_token}" \
    -H "Accept: application/json" \
@@ -233,6 +226,7 @@ You can programmatically attach tags by calling the [Global Search and Tagging -
    tag_names=['project:myproject'],
    tag_type='access').get_result()
 
+
    print(json.dumps(tag_results, indent=2))
    ```
    {: codeblock}
@@ -263,14 +257,14 @@ You can programmatically attach tags by calling the [Global Search and Tagging -
 {: #detach-api}
 {: api}
 
-You can programmatically detach tags by calling the [Global Search and Tagging - Tagging API](/apidocs/tagging#detach-tag){: external} as shown in the following sample requests. The allowed values for the `tag_type` query parameter are: `user` for user tags and `access` for access management tags. The following example shows how to detach an access management tag called `project:myproject` from a service instance.
+You can programmatically detach tags by calling the [Global Search and Tagging - Tagging API](/apidocs/tagging#detach-tag){: external} as shown in the following sample requests. The allowed values for the `tag_type` query parameter are: `user` for user tags and `access` for access management tags. The following example shows how to detach an access management tag that's called `project:myproject` from a service instance:
 
 1. Find the unique identifier for your resource by calling the following command:
 
    ```bash
-   curl -v -X POST -k --header 'Content-Type: application/json' 
-   --header 'Accept: application/json' 
-   --header 'Authorization: bearer  <your IAM token>' 
+   curl -v -X POST -k --header 'Content-Type: application/json'
+   --header 'Accept: application/json'
+   --header 'Authorization: bearer  <your IAM token>'
    -d '{"query": "name:myresource"}' 'https://api.global-search-tagging.cloud.ibm.com/v3/resources/search'
    ```
    {: codeblock}
@@ -350,7 +344,8 @@ You can programmatically detach tags by calling the [Global Search and Tagging -
    ```
    {: codeblock}
 
-3. Call the following:
+3. Call the following command:
+
    ```bash
    curl -X POST -H "Authorization: {iam_token}" \
    -H "Accept: application/json" \
@@ -432,29 +427,26 @@ You can programmatically detach tags by calling the [Global Search and Tagging -
    {: codeblock}
    {: go}
 
-When you detach an access management tag from a resource, any associated access policies are also detached from that resource.
-{: note}
+   When you detach an access management tag from a resource, any associated access policies are also detached from that resource.
+   {: note}
 
 ## Attaching tags to a resource by using Terraform
 {: #attach-terraform}
 {: terraform}
 
-You can attach tags by using Terraform. 
+You can attach tags by using Terraform.
 
 1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-1. Attach a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to attach access management tags by by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}. The following example attaches the `imb_tag` tag to the `ibm` resource for the resource ID `ibm_satellite_location.location.crn`.
+1. Attach a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to attach access management tags by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}. The following example attaches the `imb_tag` tag to the `ibm` resource for the resource ID `ibm_satellite_location.location.crn`.
 
    ```terraform
-   data "ibm_satellite_location" "location" {
-   location  = var.location
-   }
    resource "ibm_resource" "ibm" {
    resource_id = ibm_satellite_location.location.crn
    tags        = [ "ibm_tag" ]
    }
    ```
    {: codeblock}
- 
+
 1. Initialize the Terraform CLI.
 
    ```terraform
@@ -475,4 +467,468 @@ You can attach tags by using Terraform.
    terraform apply
    ```
    {: pre}
-   
+
+
+## Attaching tags to a service ID in the console
+{: #am-tags-serviceid-ui}
+{: ui}
+
+To add a tag to a service ID, complete the following steps:
+
+1. Choose to attach an access management tag or a user tag.
+   - If you want to attach an access management tag, you must first create the tag. For more information, see [Creating tags](/docs/account?topic=account-tag&interface=ui#create).
+   - If you want to attach a user tag, you don't need to create the user tag to attach it to resources or service IDs. Attaching the tag also creates it.
+1. Go to **Manage** > **Access (IAM)** > **Service IDs**.
+1. Select the service ID that you want to tag.
+1. Click **Add tag** ![Edit icon](../icons/edit-tagging.svg "Edit").
+1. Enter the name of the tag, and press Enter.
+1. Click **Save**.
+
+When you tag a service ID, all policies that have resources that are scoped to your access management tag include access to this service ID.
+{: note}
+
+## Attaching tags to a service ID by using the CLI
+{: #am-tags-serviceid-cli}
+{: cli}
+
+The allowed values for the `tag_type` query parameter are: `user` for user tags and `access` for access management tags. The following example shows how to attach an access management tag that is called project:myproject to a service ID.
+
+To add a tag to a service ID, complete the following steps:
+
+1. Choose to attach an access management tag or a user tag.
+   - If you want to attach an access management tag, you must first create the tag. For more information, see [Creating tags](/docs/account?topic=account-tag&interface=cli#create).
+   - If you want to attach a user tag, you don't need to create the user tag to attach it to resources or service IDs. Attaching the tag also creates it.
+1. To attach the tag to your service ID, use the `tag-attach` command. For more information, see the [CLI command reference](/docs/cli?topic=cli-ibmcloud_commands_resource).
+
+    ```bash
+    ibmcloud resource tag-attach --tag-names project:myproject --resource-name 'ServiceIdName' --tag-type access
+    ```
+    {: codeblock}
+
+When you tag a service ID, all policies that have resources that are scoped to your access management tag include access to this service ID.
+{: note}
+
+## Attaching tags to a service ID by using the API
+{: #am-tags-serviceid-api}
+{: api}
+
+To add a tag to a service ID, complete the following steps:
+
+1. Choose to attach an access management tag or a user tag.
+   - If you want to attach an access management tag, you must first create the tag. For more information, see [Creating tags](/docs/account?topic=account-tag&interface=cli#create).
+   - If you want to attach a user tag, you don't need to create the user tag to attach it to resources or service IDs. Attaching the tag also creates it.
+1. Find the unique identifier for your service ID by calling the [IAM Identity Services](/apidocs/iam-identity-token-api#list-service-ids) with the following command:
+
+   ```bash
+   curl -X GET 'https://iam.cloud.ibm.com/v1/serviceids?account_id=ACCOUNT_ID&name=My-serviceID' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json'
+   ```
+   {: codeblock}
+   {: curl}
+
+   ```java
+   ListServiceIdsOptions listServiceIdsOptions = new ListServiceIdsOptions.Builder()
+      .accountId(accountId)
+      .name(serviceIdName)
+      .build();
+
+   Response<ServiceIdList> response = service.listServiceIds(listServiceIdsOptions).execute();
+   ServiceIdList serviceIdList = response.getResult();
+
+   System.out.println(serviceIdList);
+   ```
+   {: codeblock}
+   {: java}
+
+   ```javascript
+   const params = {
+   accountId: accountId,
+   name: serviceIdName,
+   };
+
+   try {
+   const res = await iamIdentityService.listServiceIds(params)
+   console.log(JSON.stringify(res.result, null, 2));
+   } catch (err) {
+   console.warn(err);
+   }
+   ```
+   {: codeblock}
+   {: javascript}
+
+   ```python
+   service_id_list = iam_identity_service.list_service_ids(
+   account_id=account_id,
+   name=serviceid_name
+   ).get_result()
+
+   print(json.dumps(service_id_list, indent=2))
+   ```
+   {: codeblock}
+   {: python}
+
+   ```go
+   listServiceIdsOptions := iamIdentityService.NewListServiceIdsOptions()
+   listServiceIdsOptions.SetAccountID(accountID)
+   listServiceIdsOptions.SetName(serviceIDName)
+
+   serviceIDList, response, err := iamIdentityService.ListServiceIds(listServiceIdsOptions)
+   if err != nil {
+   panic(err)
+   }
+   b, _ := json.MarshalIndent(serviceIDList, "", "  ")
+   fmt.Println(string(b))
+   ```
+   {: codeblock}
+   {: go}
+
+1. Extract the value of the `crn` field from the response.
+
+   ```bash
+      {
+   "offset": 0,
+   "limit": 1,
+   "first": {
+      "href": "https://iam.cloud.ibm.com/v1/serviceids?account_id=accountId"
+   },
+   "next": {
+      "href": "https://iam.cloud.ibm.com/v1/serviceids?pagetoken=pageToken"
+   },
+   "serviceids": {
+      "id": "ServiceId-ee1103f8-e03b-4d02-a977-e540ebdffb16",
+      "iam_id": "iam-ServiceId-ee1103f8-e03b-4d02-a977-e540ebdffb16",
+      "entity_tag": "3-c46d2fd21b701adf7eb67cfd1a498fde",
+      "crn": "crn:v1:bluemix:public:iam-identity::a/100abcde100a41abc100aza678abc0zz::serviceid:ServiceId-ee1103f8-e03b-4d02-a977-e540ebdffb16",
+      "locked": false,
+      "created_at": "2020-10-16T10:36+0000",
+      "modified_at": "2020-10-16T10:36+0000",
+      "account_id": "100abcde100a41abc100aza678abc0zz",
+      "name": "serviceId-test",
+      "description": "serviceId-test",
+      "unique_instance_crns": []
+   }
+   }
+   ```
+   {: codeblock}
+
+1. To attach the tag to your service ID, call the [Global Search and Tagging - Tagging API](/apidocs/tagging#detach-tag){: external} with the following command.
+
+   Replace `{SERVICEID_CRN}` with the value that you extracted in the previous step.
+   {: curl}
+
+   Replace `(serviceidCRN)` with the value that you extracted in the previous step.
+   {: java}
+
+   Replace `serviceidCrn` with the value that you extracted in the previous step.
+   {: javascript}
+
+   Replace `serviceid_crn` with the value that you extracted in the previous step.
+   {: python}
+
+   Replace `&serviceidCRN` with the value that you extracted in the previous step.
+   {: go}
+
+   ```bash
+   curl -X POST --header "Authorization: Bearer {iam_token}" --header "Accept: application/json" --header "Content-Type: application/json" -d '{ "resources": [{ "resource_id": "{SERVICEID_CRN}" }], "tag_names": ["tag_test_1", "tag_test_2"] }' "{base_url}/v3/tags/attach?tag_type=user"
+   ```
+   {: codeblock}
+   {: curl}
+
+   ```java
+   Resource resourceModel = new Resource.Builder().resourceId(serviceidCRN).build();
+   AttachTagOptions attachTagOptions = new AttachTagOptions.Builder()
+      .addResources(resourceModel)
+      .addTagNames("tag_test_1")
+      .addTagNames("tag_test_2")
+      .build();
+
+   Response<TagResults> response = service.attachTag(attachTagOptions).execute();
+   TagResults tagResults = response.getResult();
+   System.out.println(tagResults.toString());
+   ```
+   {: codeblock}
+   {: java}
+
+   ```javascript
+   const resourceModel = {
+   resource_id: serviceidCrn,
+   };
+
+   const params = {
+   resources: [resourceModel],
+   tagNames: ["tag_test_1", "tag_test_2"],
+   tagType: 'user',
+   };
+
+   globalTaggingService.attachTag(params)
+   .then(res => {
+      console.log(JSON.stringify(res.result, null, 2));
+   })
+   .catch(err => {
+      console.warn(err)
+   });
+   ```
+   {: codeblock}
+   {: javascript}
+
+   ```python
+   resource_model = {'resource_id': serviceid_crn}
+
+   tag_results = global_tagging_service.attach_tag(
+   resources=[resource_model],
+   tag_names=['tag_test_1', 'tag_test_2'],
+   tag_type='user').get_result()
+
+   print(json.dumps(tag_results, indent=2))
+   ```
+   {: codeblock}
+   {: python}
+
+   ```go
+   resourceModel := &globaltaggingv1.Resource{
+   ResourceID: &serviceidCRN,
+   }
+
+   attachTagOptions := globalTaggingService.NewAttachTagOptions(
+   []globaltaggingv1.Resource{*resourceModel},
+   )
+   attachTagOptions.SetTagNames([]string{"tag_test_1", "tag_test_2"})
+   attachTagOptions.SetTagType("user")
+
+   tagResults, response, err := globalTaggingService.AttachTag(attachTagOptions)
+   if err != nil {
+   panic(err)
+   }
+   b, _ := json.MarshalIndent(tagResults, "", "  ")
+   fmt.Println(string(b))
+   ```
+   {: codeblock}
+   {: go}
+
+
+When you tag a service ID, all policies that have resources that are scoped to your access management tag include access to this service ID.
+{: note}
+
+## Detaching tags on a service ID in the console
+{: #detach-tag-service-id-ui}
+{: ui}
+
+To detach a tag from a service ID, complete the following steps:
+
+1. Go to **Manage** > **Access (IAM)** > **Service IDs**.
+1. Click the  **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") in the Tags column.
+1. Click the **Remove** icon ![Remove icon](../icons/delete.svg "Remove") on the tag that you want to detach from the service ID..
+1. Click **Save**.
+
+When you detach an access management tag from a service ID, any policies that are scoped that that tag no longer includes access the service ID.
+{: note}
+
+## Detaching tags on a service ID by using the CLI
+{: #detach-tag-service-id-cli}
+{: cli}
+
+To detach a tag on your service ID, use the `tag-detach` command. For more information, see the [CLI command reference](/docs/cli?topic=cli-ibmcloud_commands_resource).
+
+```bash
+ibmcloud resource tag-detach --tag-names project:myproject --resource-id  'ServiceIdName' --tag-type access
+```
+{: codeblock}
+
+When you detach an access management tag from a service ID, any policies that are scoped that that tag no longer includes access the service ID.
+{: note}
+
+## Detaching tags on a service ID by using the API
+{: #detach-tag-service-id-api}
+{: api}
+
+To detach a tag from a service ID, complete the following steps:
+
+1. Find the unique identifier for your service ID by calling the [IAM Identity Services](/apidocs/iam-identity-token-api#list-service-ids) with the following command:
+
+   ```bash
+   curl -X GET 'https://iam.cloud.ibm.com/v1/serviceids?account_id=ACCOUNT_ID&name=My-serviceID' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json'
+   ```
+   {: codeblock}
+   {: curl}
+
+   ```java
+   ListServiceIdsOptions listServiceIdsOptions = new ListServiceIdsOptions.Builder()
+      .accountId(accountId)
+      .name(serviceIdName)
+      .build();
+
+   Response<ServiceIdList> response = service.listServiceIds(listServiceIdsOptions).execute();
+   ServiceIdList serviceIdList = response.getResult();
+
+   System.out.println(serviceIdList);
+   ```
+   {: codeblock}
+   {: java}
+
+   ```javascript
+   const params = {
+   accountId: accountId,
+   name: serviceIdName,
+   };
+
+   try {
+   const res = await iamIdentityService.listServiceIds(params)
+   console.log(JSON.stringify(res.result, null, 2));
+   } catch (err) {
+   console.warn(err);
+   }
+   ```
+   {: codeblock}
+   {: javascript}
+
+   ```python
+   service_id_list = iam_identity_service.list_service_ids(
+   account_id=account_id,
+   name=serviceid_name
+   ).get_result()
+
+   print(json.dumps(service_id_list, indent=2))
+   ```
+   {: codeblock}
+   {: python}
+
+   ```go
+   listServiceIdsOptions := iamIdentityService.NewListServiceIdsOptions()
+   listServiceIdsOptions.SetAccountID(accountID)
+   listServiceIdsOptions.SetName(serviceIDName)
+
+   serviceIDList, response, err := iamIdentityService.ListServiceIds(listServiceIdsOptions)
+   if err != nil {
+   panic(err)
+   }
+   b, _ := json.MarshalIndent(serviceIDList, "", "  ")
+   fmt.Println(string(b))
+   ```
+   {: codeblock}
+   {: go}
+
+1. Extract the value of the `crn` field from the response.
+
+   ```bash
+      {
+   "offset": 0,
+   "limit": 1,
+   "first": {
+      "href": "https://iam.cloud.ibm.com/v1/serviceids?account_id=accountId"
+   },
+   "next": {
+      "href": "https://iam.cloud.ibm.com/v1/serviceids?pagetoken=pageToken"
+   },
+   "serviceids": {
+      "id": "ServiceId-ee1103f8-e03b-4d02-a977-e540ebdffb16",
+      "iam_id": "iam-ServiceId-ee1103f8-e03b-4d02-a977-e540ebdffb16",
+      "entity_tag": "3-c46d2fd21b701adf7eb67cfd1a498fde",
+      "crn": "crn:v1:bluemix:public:iam-identity::a/100abcde100a41abc100aza678abc0zz::serviceid:ServiceId-ee1103f8-e03b-4d02-a977-e540ebdffb16",
+      "locked": false,
+      "created_at": "2020-10-16T10:36+0000",
+      "modified_at": "2020-10-16T10:36+0000",
+      "account_id": "100abcde100a41abc100aza678abc0zz",
+      "name": "serviceId-test",
+      "description": "serviceId-test",
+      "unique_instance_crns": []
+   }
+   }
+   ```
+   {: codeblock}
+
+1. To detach the tag on your service ID, call the [Global Search and Tagging - Tagging API](/apidocs/tagging#detach-tag){: external} with the following command.
+
+   Replace `{SERVICEID_CRN}` with the value that you extracted in the previous step.
+   {: curl}
+
+   Replace `(serviceidCRN)` with the value that you extracted in the previous step.
+   {: java}
+
+   Replace `serviceidCrn` with the value that you extracted in the previous step.
+   {: javascript}
+
+   Replace `serviceid_crn` with the value that you extracted in the previous step.
+   {: python}
+
+   Replace `&serviceidCRN` with the value that you extracted in the previous step.
+   {: go}
+
+   ```bash
+   curl -X POST --header "Authorization: Bearer {iam_token}" --header "Accept: application/json" --header "Content-Type: application/json" -d '{ "resources": [{ "resource_id": "{SERVICEID_CRN}" }], "tag_names": ["tag_test_1", "tag_test_2"] }' "{base_url}/v3/tags/detach?tag_type=user"
+   ```
+   {: codeblock}
+   {: curl}
+
+   ```java
+   Resource resourceModel = new Resource.Builder().resourceId(serviceidCRN).build();
+   DetachTagOptions detachTagOptions = new DetachTagOptions.Builder()
+      .addResources(resourceModel)
+      .addTagNames("tag_test_1")
+      .addTagNames("tag_test_2")
+      .tagType("user")
+      .build();
+
+   Response<TagResults> response = service.detachTag(detachTagOptions).execute();
+   TagResults tagResults = response.getResult();
+   System.out.println(tagResults.toString());
+   ```
+   {: codeblock}
+   {: java}
+
+   ```javascript
+   const resourceModel = {
+   resource_id: serviceidCrn,
+   };
+
+   const params = {
+   resources: [resourceModel],
+   tagNames: ["tag_test_1", "tag_test_2"],
+   tagType: 'user',
+   };
+
+   globalTaggingService.detachTag(params)
+   .then(res => {
+      console.log(JSON.stringify(res.result, null, 2));
+   })
+   .catch(err => {
+      console.warn(err)
+   });
+   ```
+   {: codeblock}
+   {: javascript}
+
+   ```python
+   resource_model = {'resource_id': serviceid_crn}
+
+   tag_results = global_tagging_service.detach_tag(
+   resources=[resource_model],
+   tag_names=['tag_test_1', 'tag_test_2'],
+   tag_type='user').get_result()
+
+   print(json.dumps(tag_results, indent=2))
+   ```
+   {: codeblock}
+   {: python}
+
+   ```go
+   resourceModel := &globaltaggingv1.Resource{
+   ResourceID: &serviceidCRN,
+   }
+
+   detachTagOptions := globalTaggingService.NewDetachTagOptions(
+   []globaltaggingv1.Resource{*resourceModel},
+   )
+   detachTagOptions.SetTagNames([]string{"tag_test_1", "tag_test_2"})
+   detachTagOptions.SetTagType("user")
+
+   tagResults, response, err := globalTaggingService.DetachTag(detachTagOptions)
+   if err != nil {
+   panic(err)
+   }
+   b, _ := json.MarshalIndent(tagResults, "", "  ")
+   fmt.Println(string(b))
+   ```
+   {: codeblock}
+   {: go}
+
+When you detach an access management tag from a service ID, any policies that are scoped that that tag no longer includes access the service ID.
+{: note}
