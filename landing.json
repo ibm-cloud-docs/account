@@ -3,8 +3,8 @@
     "lastupdated": "2022-08-24",
     "introduction": "Leverage the interacting components and systems in your account for resource, user, and access management. Get started by setting up your IBM cloud account, learn about setting up an enterprise, or explore assigning access to resources quickly with IBM Cloud Identity and Access Management (IAM).",
     "section_devtools": {
-      "api": "/docs?tab=api-docs&subCategory=account&category=platform_services", 
-      "cli": "/docs/account?topic=cli-manage-catalogs-plugin", 
+      "api": "/docs?tab=api-docs&subCategory=account&category=platform_services",
+      "cli": "/docs/account?topic=cli-manage-catalogs-plugin",
       "terraform": "https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs"
     },
     "section_recommended": [
@@ -27,8 +27,8 @@
     "section_videos": [
       {
         "title": "Introducing IBM Cloud enterprises",
-        "href": "/docs/account?topic=account-enterprise-video", 
-        "thumbnail": "/images/landing-Introducing-IBM-Cloud-enterprises.png" 
+        "href": "/docs/account?topic=account-enterprise-video",
+        "thumbnail": "/images/landing-Introducing-IBM-Cloud-enterprises.png"
       },
       {
         "title": "IBM Cloud Console Guide: Getting Access - Role Overview",
@@ -39,16 +39,21 @@
         "title": "IBM Cloud Console Guide: Inviting Users to an Account",
         "href": "/docs/account?topic=account-iamuserinv#watch-iam-invite",
         "thumbnail": "/images/landing-Inviting-Users-to-an-Account.png"
-      }, 
+      },
       {
         "title": "IBM Cloud Console Guide: Setting up Access Groups",
         "href": "/docs/account?topic=account-groups#watch-accessgroups",
         "thumbnail": "/images/landing-Setting-up-Access-Groups.png"
-      }, 
+      },
       {
         "title": "Controlling access by using tags in IBM Cloud",
         "href": "/docs/account?topic=account-account_setup",
         "thumbnail": "/images/landing-Controlling-access-by-using-tags.png"
+      },
+      {
+        "title": "Introducing IBM Cloud trusted profiles",
+        "href": "/docs/account?topic=account-iamoverview&interface=ui#trusted-profiles-feature-fedusers",
+        "thumbnail": "/images/landing-Trusted-profiles.png"
       }
     ],
     "section_learn": {
@@ -63,12 +68,12 @@
         {
           "date": "21 July 2022",
           "title": "Monitoring context-based restrictions",
-          "description": "To help you predict how context-based restrictions might affect users, applications, and workflows, IBM Cloud is excited to release report-only mode for rules. You can enable context-based restrictions during creation, or choose to set the rule to report-only mode. Using Activity Tracker, you can monitor the impact of enabled rules, or view report-only rules to see how they will affect your users, applications, and workflows without enforcing the rule." 
+          "description": "To help you predict how context-based restrictions might affect users, applications, and workflows, IBM Cloud is excited to release report-only mode for rules. You can enable context-based restrictions during creation, or choose to set the rule to report-only mode. Using Activity Tracker, you can monitor the impact of enabled rules, or view report-only rules to see how they will affect your users, applications, and workflows without enforcing the rule."
         },
         {
           "date": "22 June 2022",
           "title": "Updated process for assigning access",
-          "description": "Assigning IAM, Classic Infrastructure, and IBM Cloud Foundry access just got more streamlined. When assigning access, each service that you select has an in-context description. You can also find all IAM access policy and access group information for an identity under a single tab. Check out the updated process by assigning access to any user, service ID, or trusted profile." 
+          "description": "Assigning IAM, Classic Infrastructure, and IBM Cloud Foundry access just got more streamlined. When assigning access, each service that you select has an in-context description. You can also find all IAM access policy and access group information for an identity under a single tab. Check out the updated process by assigning access to any user, service ID, or trusted profile."
         },
         {
           "date": "22 June 2022",
