@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2022
 
-lastupdated: "2022-03-01"
+lastupdated: "2022-09-14"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -26,6 +26,8 @@ The access policies that are associated with a service ID enable specific action
 
 All users have access to create a service ID in an account to which they are a member. However, to allow a user in an account access to view or manage a service ID that they did not personally create, they are required to have access with a role on the IAM identity service account management service. For more information, see [IAM identity service](/docs/account?topic=account-account-services#identity-service-account-management).
 
+You can assign any identity access to view or manage a service ID by using access management tags. For more information, see [Attaching tags to a service ID](/docs/account?topic=account-attaching-and-detaching-tags-on-a-resource&interface=ui#am-tags-serviceid-ui).
+{: tip}
 
 If the Restrict service ID creation IAM account setting is enabled, then everyone in the account, including account owners, is blocked from creating service IDs unless they are assigned explicit access. For more information, see [Restricting users from creating service IDs](/docs/account?topic=account-restrict-service-id-create).
 {: important}
@@ -244,7 +246,7 @@ UUID (required)
 -f, --force
 :   Delete without confirmation.
 
-Either `NAME` or `UUID` are required, but you don't need to provide both. 
+Either `NAME` or `UUID` are required, but you don't need to provide both.
 {: note}
 
 ### Examples

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2022
-lastupdated: "2022-09-08"
+lastupdated: "2022-09-15"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -320,10 +320,10 @@ When you register users for {{site.data.keyword.Bluemix_notm}}, you must registe
 {: faq}
 {: support}
 
-Tags are `key:value` pairs that you use to organize your resources or control access to them.
+Tags are `key:value` pairs that you use to organize your resources and service IDs or control access to them.
 
-* You can use user tags to organize and view resources across your account and help you track usage costs.
-* You can limit access to specific resources in your account by using access management tags.
+* You can use user tags to organize and view resources and service IDs across your account and help you track usage costs.
+* You can limit access to specific resources and service IDs in your account by using access management tags.
 
 For more information, see [Working with tags](/docs/account?topic=account-tag).
 
@@ -343,7 +343,9 @@ For more information, see [Granting users access to tag resources](/docs/account
 {: faq}
 
 * To manage user tags on a resource, you must have at least the editor role for IAM-enabled resources or the developer role in a Cloud Foundry space.
+* To manage user tags on a service ID, you must have at least the editor role on the IAM Identity service.
 * To manage access management tags, you must have the administrator role on the targeted resource.
+* To manage access management tags on service IDs, you must have the administrator role on the IAM Identity service.
 
 For more information, see [Granting users access to tag resources](/docs/account?topic=account-access).
 

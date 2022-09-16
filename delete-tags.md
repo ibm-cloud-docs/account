@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2021
-lastupdated: "2021-09-28"
+  years: 2021, 2022
+lastupdated: "2022-09-15"
 
 keywords: tags, delete tags, unused tags, delete tags in  the console, delete  tags cli, delete tags api
 
@@ -11,24 +11,12 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:note: .note}
-{:external: target="_blank" .external}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Deleting unused tags from the account
 {: #delete}
 
-Before you can delete a tag, you must remove it from all resources. If you still can't delete it, the tag might be attached to a resource that you don't have permission to view or was reclaimed. The same tag can be attached to several resources by different users in the same billing account.
+Before you can delete a tag, you must remove it from all resources and service IDs. If you still can't delete it, the tag might be attached to a resource that you don't have permission to view or was reclaimed. The same tag can be attached to several resources and service IDs by different users in the same billing account.
 
 If a reclaimed resource is blocking tag deletion, you can either completely delete that reclaimed resource or restore it within 7 days after you delete it. Not all resources can be restored. You can use the {{site.data.keyword.Bluemix}} CLI to manage the reclamation process of specific resources. For more information, see [Using resource reclamations](/docs/account?topic=account-resource-reclamation).
 
@@ -40,18 +28,20 @@ When you delete an access management tag from the account, any associated IAM po
 {: ui}
 
 1. To see the full list of tags in your account, go to **Manage** > **Account** in the {{site.data.keyword.cloud}} console, and select **Tags**.
-2. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Delete** next to the unused tag.
+1. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Delete** next to the unused tag.
 
 ## Deleting unused tags by using the CLI
 {: #delete-tag-cli}
 {: cli}
 
-Log in to [{{site.data.keyword.cloud}} CLI](/docs/cli?topic=cli-getting-started) and select your account to run the **`ibmcloud resource tag-delete`** command for deleting only one or all of the unused tags. The following example deletes the `MyTag` user tag:
+Log in to [{{site.data.keyword.cloud}} CLI](/docs/cli?topic=cli-getting-started) and select your account to run the **`ibmcloud resource tag-delete`** command for deleting only one or all of the unused tags.
 
-```bash
-ibmcloud resource tag-delete --tag-names MyTag
-```
-{: codeblock}
+The following example deletes the `MyTag` user tag:
+
+   ```bash
+   ibmcloud resource tag-delete --tag-names MyTag
+   ```
+   {: codeblock}
 
 ## Deleting unused tags by using the API
 {: #delete-tag-api}
@@ -59,7 +49,7 @@ ibmcloud resource tag-delete --tag-names MyTag
 
 You can delete tags by calling the [Global Search and Tagging - Tagging API](/apidocs/tagging#delete-tag-all){: external} as shown in the following sample requests. The allowed values for the `tag_type` query parameter are: `user` for user tags and `access` for access management tags.
 
-### Deleting a tag 
+### Deleting a tag
 {: #delete-a-tag-api}
 
 Deleting an access management tag called `project:myproject` from the account:
@@ -124,8 +114,8 @@ fmt.Println(string(b))
 ```
 {: codeblock}
 {: go}
-    
-### Deleting all unused tags 
+
+### Deleting all unused tags
 {: #delete-all-tags-api}
 
 Deleting all unused access management tags from the account:
@@ -194,11 +184,11 @@ fmt.Println(string(b))
 {: #delete-terraform}
 {: terraform}
 
-You can delete tags by using Terraform. 
+You can delete tags by using Terraform.
 
 1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started witTerraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
 
-1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to delete tags by by using HashiCorp Configuration LanguageFor more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}. The following example deletes the `ibm_tag` from the resource `ibm`, which is attached to resource ID `ibm_satellite_location.location.crn`.
+1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to delete tags by using HashiCorp Configuration LanguageFor more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}. The following example deletes the `ibm_tag` from the resource `ibm`, which is attached to resource ID `ibm_satellite_location.location.crn`.
 
    ```terraform
    resource "ibm_resource" "ibm" {
@@ -228,4 +218,3 @@ You can delete tags by using Terraform.
    terraform destroy
    ```
    {: pre}
-   
