@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-09-16"
+lastupdated: "2022-09-17"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -4184,6 +4184,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `iam-identity.profile.update` | Update the details of an existing Trusted Profile. | Administrator, Editor, Operator |
 | `iam-identity.profile.delete` | Delete a Trusted Profile. | Administrator, Operator |
 | `iam-identity.profile.get` | Get the details of an existing Trusted Profile. | Administrator, Editor, Operator, Viewer |
+| `iam-identity.profile.get_session` | Get sessions associated to a Trusted Profile. | Administrator, Operator |
+| `iam-identity.profile.revoke_session` | Revoke sessions associated to Trusted Profile | Administrator, Operator |
 | `iam-identity.profile.linkToResource` | Link a trusted profile to a resource | Administrator, Editor, Operator |
 | `iam-identity.idp.get` | Get the details of an existing Identity Provider configuration. | Administrator, Editor, Operator |
 | `iam-identity.idp.list` | List Identity Provider configurations. | Administrator, Editor, Operator |
@@ -4205,8 +4207,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `iam-identity.crnmapping.read` | Read CRN mappings of an account | Administrator |
 | `iam-identity.crnmapping.delete` | Delete a CRN mapping for an account | Administrator |
 | `iam-identity.activity.get` | Get authentication activity information | Administrator, Editor, Operator, Viewer |
-| `iam-identity.report.create` | actiondescription.iam-identity.report.create | Administrator |
-| `iam-identity.report.get` | Create and get a report for the account | Administrator |
+| `iam-identity.report.create` | Trigger report creation for an account | Administrator |
+| `iam-identity.report.get` | Get a report for an account | Administrator |
 {: caption="Table 74. Service actions - IAM Identity Service" caption-side="top"}
 {: #actions-table74}
 {: tab-title="Actions"}
