@@ -216,8 +216,6 @@
           - topicgroup:
               label: Centrally managing products with catalogs
               topics:
-              - catalog-run-local.md
-              - catalog-embed-code.md
               - topicgroup:
                   label: Onboarding products
                   topics:
