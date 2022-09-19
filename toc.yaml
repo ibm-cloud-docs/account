@@ -192,7 +192,7 @@
               - topicgroup:
                   label: Working with software
                   topics:
-                  - catalog-emebed-code.md
+                  - catalog-embed-code.md
                   - catalog-scans.md
                   - sw-instance-details.md
           - topicgroup:
