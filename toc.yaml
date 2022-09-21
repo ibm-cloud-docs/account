@@ -9,7 +9,7 @@
         product-page: https://ibm.com/cloud
         path: account
         label: Managing your account, resources, and access
-    
+
       entries:
       - navgroup:
           id: learn
@@ -31,8 +31,8 @@
                   - iam-whatis.md
                   - iam-identities.md
                   - iam-access-concepts.md
-                  - iam-policies-overview.md 
-                  - iam-roles-overview.md 
+                  - iam-policies-overview.md
+                  - iam-roles-overview.md
                   - iam-mappings.md
               - context-restrictions-what-is.md
           - topicgroup:
@@ -40,7 +40,7 @@
               topics:
               - bp_account.md
               - bp_enterprise.md
-    
+
       - navgroup:
           id: tutorial
           topics:
@@ -65,7 +65,7 @@
               - catalog-opbundle-tutorial.md
               - catalog-terraform-template-tutorial.md
               - catalog-terraform-template-cli.md
-    
+
       - navgroup:
           id: howto
           topics:
@@ -189,8 +189,12 @@
                   topics:
                   - instance_migration.md
                   - data-center-migration.md
-              - catalog-scans.md
-              - sw-instance-details.md
+              - topicgroup:
+                  label: Working with software
+                  topics:
+                  - catalog-embed-code.md
+                  - catalog-scans.md
+                  - sw-instance-details.md
           - topicgroup:
               label: Centrally managing multiple accounts with enterprises
               topics:
@@ -212,8 +216,6 @@
           - topicgroup:
               label: Centrally managing products with catalogs
               topics:
-              - catalog-run-local.md
-              - catalog-embed-code.md
               - topicgroup:
                   label: Onboarding products
                   topics:
@@ -302,7 +304,7 @@
               - sessions-users.md
               - trustedprofile-monitor.md
               - cbr-monitor.md
-    
+
       - navgroup:
           id: reference
           topics:
@@ -312,7 +314,7 @@
               - link:
                   label: Catalog Management
                   href: https://{DomainName}/apidocs/resource-catalog/private-catalog
-              - link: 
+              - link:
                    label: Context-based restrictions
                    href: https://{DomainName}/apidocs/context-based-restrictions
               - link:
@@ -380,7 +382,7 @@
           - iam-service-roles.md
           - iam-login-flows.md
           - iam-condition-properties.md
-    
+
       - navgroup:
           id: help
           topics:
@@ -462,9 +464,8 @@
               - /sell/sell-repo-upload-error
               - /sell/sell-ts-validate-terraform
           - topicgroup:
-              label: Troubleshooting context-based restrictions 
+              label: Troubleshooting context-based restrictions
               topics:
               - ts-iam-public-vpc-endpoint.md
           - getting-help.md
           - known-issues.md
-    
