@@ -2,7 +2,8 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-09-07"
+
+lastupdated: "2022-08-25"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -30,10 +31,6 @@ The process to onboard software to your account includes importing a version to 
    * OVA images that are deployed on VMware Solutions Dedicated - vCenter Server
    * Virtual server images with Terraform deployed on VPC infrastructure or {{site.data.keyword.powerSys_notm}}
    * Virtual server images for VPC
-
-   Virtual server images for VPC onboarding is a Beta feature that is available for evaluation and testing purposes for customers with special approval to preview this feature.
-   {: beta}
-
    * Operators with a CSV file or Operator bundles with a TGZ file from GitHub repositories that are deployed on Red Hat OpenShift
    * Operator bundles from Red Hat OpenShift registries
 
@@ -98,7 +95,11 @@ Complete the following steps to import software to your private catalog:
    * OVA image: `https://github.com/gcatalog/OVA-sample/blob/main/ova-sample.yaml`
    * Terraform template: `https://github.com/IBM-Cloud/terraform-sample/releases/tag/v1.0.0`
    * Virtual server image with Terraform: `https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample/releases/download/v1.0/isv-vsi-product-deploy-sample.tar.gz`
-   * Virtual server image for VPC: Select an image from the list of available images, or import a new image to onboard it.
+
+   * Virtual server image for VPC: Select an image from the list of available images, or import a new image to onboard it. 
+    
+    A virtual server image for VPC can only be added to one product within one private catalog at a time. If the virtual server image you want to import is already imported into another product, you must remove the image from that product or delete the product before you add the virtual server image to a new product. 
+    {: note}
 
 1. If applicable, enter the version of the software in the format of major version, minor version, and revision. For example, enter version 1.1.2.
 1. Select a catalog category for the product. Categories are used to organize products in the {{site.data.keyword.cloud_notm}} catalog based on function, use, or common solutions.
@@ -422,7 +423,7 @@ fmt.Println(response)
 {: #import-product-api}
 {: api}
 
-You can programmatically import software to your catalog by calling the Catalog Management API as shown in the following sample request. For detailed information about the API, see [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=go#import-offering).
+You can programmatically import software to your catalog by calling the Catalog Management API as shown in the following sample request. This API creates the software and imports it as well. For detailed information about the API, see [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=go#import-offering).
 
 ```java
 id = "{id}";

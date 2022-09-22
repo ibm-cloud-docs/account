@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022
-lastupdated: "2022-07-27"
+lastupdated: "2022-08-25"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, vpc, virtual private cloud
 
@@ -28,9 +28,6 @@ This tutorial walks you through how to onboard a sample virtual server image for
 
 The tutorial includes steps for deploying a virtual server image to a target {{site.data.keyword.cloud_notm}} Virtual Private Cloud (VPC). As a result, you incur associated infrastructure charges.
 {: note}
-
-This is a Beta feature that is available for evaluation and testing purposes for customers with special approval to preview this feature.
-{: beta}
 
 ## Before you begin
 {: #catalog-vsivpc-prereqs}
@@ -61,7 +58,7 @@ This is a Beta feature that is available for evaluation and testing purposes for
 1. Select **Software** as the kind of product that you're adding. 
 1. Select the image you'd like to onboard. 
 
-   If the virtual server image you want to add is not included in the list of available images, click **Import a new image** to import it. Your image must be imported into IBM Cloud VPC, in an available status, with an x86 architecture in order for you to onboard it to a private catalog. Also, your image can't be used with a bare metal profile or instance groups, or encrypted.
+   If the virtual server image you want to add is not included in the list of available images, click **Import a new image** to import it. Your image must be imported into IBM Cloud VPC, in an available status, with an x86 architecture in order for you to onboard it to a private catalog. Also, your image can't be used with a bare metal profile or instance groups, or encrypted. An image can only be added to one product within one private catalog at a time. If the image you want to import is already imported into another product, you must remove the image from that product or delete the product before you add the image to a new product.
    {: tip}
 
 1. Enter the software version, for example, `1.0.0`.
