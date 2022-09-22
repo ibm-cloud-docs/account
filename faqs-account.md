@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2022
-lastupdated: "2022-09-15"
+lastupdated: "2022-09-21"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -217,7 +217,7 @@ If you believe that your account was deactivated in error, contact support by ca
 {: #contactsupport}
 {: faq}
 
-In the {{site.data.keyword.Bluemix_notm}} console, go to **Support** from the console menu bar. The options that are available to you depend on your support plan. For more information, see [Getting support](/docs/get-support?topic=get-support-support-plans).
+From the {{site.data.keyword.Bluemix_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center**. The options that are available to you depend on your support plan. For more information, see [Getting support](/docs/get-support?topic=get-support-support-plans).
 
 To contact support, you can use the following methods:
 * If you have a valid Pay-As-You-Go or Subscription account, you can click **Live chat with support** to chat with a support engineer.
