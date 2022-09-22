@@ -29,6 +29,7 @@ To update a context-based restrictions rule, you must be assigned the administra
 To edit the context-based restrictions on your cloud resources, complete the following steps.
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Context-based restrictions**, and select **Rules**.
+1. Select the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") on the rule you want to update, and select **Edit**.
 1. To update the scope of resources for the restriction, you can select **All resources** or **Specific resources** based on the available attributes, such as resource group or location. Then, click **Apply** or **Continue**.
 1. Click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") in the summary panel to update an existing context.
    1. Update the allowed endpoint types.
