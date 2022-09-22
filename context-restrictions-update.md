@@ -4,7 +4,7 @@ copyright:
 
   years: 2021, 2022
 
-lastupdated: "2022-08-05"
+lastupdated: "2022-09-22"
 
 keywords: update network access, network access rule, network zone
 
@@ -29,20 +29,27 @@ To update a context-based restrictions rule, you must be assigned the administra
 To edit the context-based restrictions on your cloud resources, complete the following steps.
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Context-based restrictions**, and select **Rules**.
-2. Select the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") on the rule you want to update, and select **Edit**.
-3. Provide a new description for your rule. Click **Apply** to update the description, or click **Continue**.
-4. To update the enforcement of a rule, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit"). You can **Enable**, **Disable**, or set the rule to **Report-only**. 
-5. To update the scope of resources for the restriction, you can select **All resources** or **Specific resources** based on the available attributes, such as resource group or location. Then, click **Apply** or **Continue**.
-6. Click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") in the the summary panel to update an existing context.
-7. Click the **Remove** icon ![Remove icon](../icons/delete.svg "Remove") in the summary panel to remove network zones.
-8. Configure a new context by selecting all endpoints or a specific endpoint, and by selecting your network zones. Then, click **Add**. 
-9. Click **Apply** to finish.
+1. To update the scope of resources for the restriction, you can select **All resources** or **Specific resources** based on the available attributes, such as resource group or location. Then, click **Apply** or **Continue**.
+1. Click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") in the summary panel to update an existing context.
+   1. Update the allowed endpoint types.
+      - Set the toggle to No to allow all service supported endpoint types.
+      - Set the toggle to Yes to allow only specific endpoint types.
+   1. Update the nework zones.
+      - Select new network zones.
+      - Deselct network zones to remove them.
+1. Then, click **Apply**.
+1. Click the **Remove** icon ![Remove icon](../icons/delete.svg "Remove") in the summary panel to remove a context.
+1. Configure a new context by selecting all endpoints or a specific endpoint, and by selecting your network zones. Then, click **Add**.
+1. Click **Apply** or **Continue**.
+1. Provide a new description for your rule. Click **Apply** to update the description, or click **Continue**.
+1. To update the enforcement of a rule, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit"). You can **Enable**, **Disable**, or set the rule to **Report-only**.
+1. Click **Apply** to finish.
 
 ## Updating rules by using the CLI
 {: #context-restrictions-update-rules-cli}
 {: cli}
 
-To update the context-based restrictions on your cloud resources, use the [ibmcloud cbr rule-update](/docs/account?topic=cli-cbr-plugin&interface=cli#cbr-cli-rule-update-command) command. The following example updates description, allowed endpoint type, and network zone for a rule with the ID `30fd58c9b75f40e854b89c432318b4a2`. 
+To update the context-based restrictions on your cloud resources, use the [ibmcloud cbr rule-update](/docs/account?topic=cli-cbr-plugin&interface=cli#cbr-cli-rule-update-command) command. The following example updates description, allowed endpoint type, and network zone for a rule with the ID `30fd58c9b75f40e854b89c432318b4a2`.
 
 ```sh
 ibmcloud cbr rule-update 30fd58c9b75f40e854b89c432318b4a2 --description 'Example rule description' --service-name kms --context-attributes endpointType=private --zone-id 93de8d3f588ab2c457ff576c364d1145
@@ -53,7 +60,7 @@ ibmcloud cbr rule-update 30fd58c9b75f40e854b89c432318b4a2 --description 'Example
 {: #context-restrictions-update-rules-api}
 {: api}
 
-To update restrictions to your cloud resources by creating rules, call the [Context-based restrictions API](/apidocs/context-based-restrictions?code=node#replace-rule). The following example replaces a rule with an updated version. 
+To update restrictions to your cloud resources by creating rules, call the [Context-based restrictions API](/apidocs/context-based-restrictions?code=node#replace-rule). The following example replaces a rule with an updated version.
 
 ```sh
 curl -X PUT --location --header "Authorization: Bearer {iam_token}" --header "Accept: application/json" --header "If-Match: {if_match}" --header "Content-Type: application/json" --data '{ "description": "this is an example of rule", "resources": [ { "attributes": [ { "name": "accountId", "value": "12ab34cd56ef78ab90cd12ef34ab56cd" }, { "name": "serviceName", "value": "kms" } ] } ], "contexts": [ { "attributes": [ { "name": "networkZoneId", "value": "76921bd873115033bd2a0909fe081b45" } ] } ], "enforcement_mode": "disabled" }' "{base_url}/v1/rules/{rule_id}"
@@ -216,10 +223,10 @@ fmt.Println(string(b))
 You can modify the list of allowed locations where an access request can originate. A set of one or more network locations can be specified by IP addresses (individual addresses, ranges, or subnets), VPCs, or service references. You can update a network zone that is used in a rule, or integrate the new updated network zones into your rules later.
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Context-based restrictions**, and select **Network zones**.
-1. Select the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") on the network zone you want to update, and select **Edit**.
+1. Select the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") on the network zone that you want to update, and select **Edit**.
 1. You can update your zone name and description.
 1. You can edit the list of allowed IP addresses where an access request can originate. Include exceptions in the deny list, if necessary.
-1. You can add or remove allowed VPCs. 
+1. You can add or remove allowed VPCs.
 1. You can add or remove service references. Select a service to associate its IP addresses with your network zone.
 1. Click **Next** to review your new configuration.
 1. To apply changes, click **Update**.
@@ -230,14 +237,14 @@ You can modify the list of allowed locations where an access request can origina
 
 To update a network zone, complete the following steps.
 
-1. Retrieve the zone ID for the network zone that you want to update by using the [ibmcloud cbr zones](/docs/account?topic=cli-cbr-plugin&interface=cli#cbr-cli-zones-command) command to list all zones in the account. 
+1. Retrieve the zone ID for the network zone that you want to update by using the [ibmcloud cbr zones](/docs/account?topic=cli-cbr-plugin&interface=cli#cbr-cli-zones-command) command to list all zones in the account.
 
-    ```sh 
+    ```sh
     ibmcloud cbr zones
     ```
     {: pre}
 
-1. Update the network zone by using the [ibmcloud cbr zone-update](/docs/account?topic=cli-cbr-plugin&interface=cli#cbr-cli-zone-update-command) command. The following example updates the zone name, allowed addresses, and excluded addresses for a network zone with the ID `65810ac762004f22ac19f8f8edf70a34`. 
+1. Update the network zone by using the [ibmcloud cbr zone-update](/docs/account?topic=cli-cbr-plugin&interface=cli#cbr-cli-zone-update-command) command. The following example updates the zone name, allowed addresses, and excluded addresses for a network zone with the ID `65810ac762004f22ac19f8f8edf70a34`.
     ```sh
     ibmcloud cbr zone-update 65810ac762004f22ac19f8f8edf70a34 --name 'Example Zone Name' --addresses 166.22.23.0-166.22.23.108 --excluded 166.22.23.100
     ```
@@ -249,14 +256,14 @@ To update a network zone, complete the following steps.
 
 To update a network zone, complete the following steps.
 
-1. Retrieve the zone ID for the network zone that you want to update by listing the network zones in the account. 
+1. Retrieve the zone ID for the network zone that you want to update by listing the network zones in the account.
 
     ```sh
     curl -X GET --location --header "Authorization: Bearer {iam_token}" --header "Accept: application/json" "{base_url}/v1/zones?account_id={account_id}"
     ```
     {: codeblock}
     {: curl}
-    
+
     ```java
     ListZonesOptions listZonesOptions = new ListZonesOptions.Builder()
       .accountId("testString")
@@ -319,7 +326,7 @@ To update a network zone, complete the following steps.
     ```
     {: codeblock}
     {: curl}
-    
+
     ```java
     AddressIPAddress addressModel = new AddressIPAddress.Builder()
       .type("ipAddress")

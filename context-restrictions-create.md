@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-08-30"
+lastupdated: "2022-09-22"
 
 
 keywords: create network access, network access rule, network zone
@@ -20,7 +20,7 @@ subcollection: account
 Context-based restrictions allow you to manage user and service access to specific cloud resources. You can define restrictions to the resources based on contexts, such as network zones and endpoint types. For more information, see [What are context-based restrictions](/docs/account?topic=account-context-restrictions-whatis&interface=ui).
 {: shortdesc}
 
-User and account-level IP address restrictions can also affect users' ability to access resources. To view account-level IP address restrictions, go to [Settings](/iam/settings). To view individual user settings, go to [Users](/iam/users) and view each user's IP address restrictions in the details tab. 
+User and account-level IP address restrictions can also affect users' ability to access resources. To view account-level IP address restrictions, go to [Settings](/iam/settings). To view individual user settings, go to [Users](/iam/users) and view each user's IP address restrictions in the details tab.
 {: note}
 
 ## Before you begin
@@ -32,56 +32,56 @@ To set up context-based restrictions, you must be the account owner or have an a
 {: #network-zones-create}
 {: ui}
 
-By creating network zones, you can create a list of allowed locations where an access request originates. A set of one or more network locations can be specified by IP addresses such as individual addresses, ranges or subnets, and VPC IDs. After you create a network zone, you can add it to a rule. 
+By creating network zones, you establish a list of allowed locations where an access request originates. A set of one or more network locations can be specified by IP addresses such as individual addresses, ranges or subnets, and VPC IDs. After you create a network zone, you can add it to a rule.
 
-To create a network zone, complete the following steps. 
+To create a network zone, complete the following steps.
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Context-based restrictions**, and select **Network zones**.
-1. Click **Create**.  
+1. Click **Create**.
 
     Instead of creating a zone by using UI inputs, you can use the JSON code form to directly enter JSON to create a zone by clicking **Enter as JSON code**.
     {: note}
 
 1. Enter a unique name and a description.
 1. Enter the allowed IP addresses where an access request can originate. Include IP address exceptions in the deny list, if necessary.
-1. Enter the allowed VPCs. 
+1. Enter the allowed VPCs.
 
     If you want to allow access from the VPC to public endpoints in your rule, include any public gateway IP addresses in the zone definition along with the VPC.
     {: important}
 
-1. Reference a service. Select the service type and then select a service. Click **Add** to associate the service's IP addresses with your network zone. 
-    
-    If you're not sure what the service type is, view the table [Services integrated with context-based restrictions](docs/account?topic=account-context-restrictions-whatis#cbr-adopters). 
+1. Reference a service. Select the service type and then select a service. Click **Add** to associate the service's IP addresses with your network zone.
+
+    If you're not sure what the service type is, view the table [Services integrated with context-based restrictions](docs/account?topic=account-context-restrictions-whatis#cbr-adopters).
     {: tip}
 
 1. Click **Next** to review your network zone.
 1. Click **Create**.
 
 You can continue by creating more network zones, or by creating rules.
-{: tip}
+
 
 ## Creating network zones by using the CLI
 {: #network-zones-create-cli}
 {: cli}
 
-By creating network zones, you establish a list of allowed locations where an access request originates. A set of one or more network locations can be specified by IP addresses such as individual addresses, ranges or subnets, and VPC IDs. After you create a network zone, you can add it to a rule. 
+By creating network zones, you establish a list of allowed locations where an access request originates. A set of one or more network locations can be specified by IP addresses such as individual addresses, ranges or subnets, and VPC IDs. After you create a network zone, you can add it to a rule.
 
-1. Install the [Context-based restrictions CLI plug-in](/docs/account?topic=cli-cbr-plugin#install-cbr-plugin) by running the following command: 
+1. Install the [Context-based restrictions CLI plug-in](/docs/account?topic=cli-cbr-plugin#install-cbr-plugin) by running the following command:
 
    ```sh
    ibmcloud plugin install cbr
    ```
    {: pre}
 
-1. To create a network zone, use the [cbr-zone-create](/docs/account?topic=cli-cbr-plugin#cbr-zones-cli) command. 
+1. To create a network zone, use the [cbr-zone-create](/docs/account?topic=cli-cbr-plugin#cbr-zones-cli) command.
 
-   The following example creates a network zone with a list of allowed network locations. 
+   The following example creates a network zone with a list of allowed network locations.
 
    ```sh
    ibmcloud cbr zone-create --name example-zone --description "Example zone description" --addresses 192.0.2.1,192.2.3.5-192.2.3.10
    ```
    {: pre}
 
-   The following example creates a network zone with a service reference. For more information, see [Service references](https://test.cloud.ibm.com/docs/account?topic=account-context-restrictions-whatis&interface=cli#service-attribute). 
+   The following example creates a network zone with a service reference. For more information, see [Service references](https://test.cloud.ibm.com/docs/account?topic=account-context-restrictions-whatis&interface=cli#service-attribute).
 
     ```sh
     ibmcloud cbr zone-create --name example-zone-1 --description "Kube zone" --service-ref service_name=containers-kubernetes
@@ -96,14 +96,14 @@ By creating network zones, you establish a list of allowed locations where an ac
 {: #network-zones-create-api}
 {: api}
 
-By creating network zones, you establish a list of allowed locations where an access request originates. A set of one or more network locations can be specified by IP addresses such as individual addresses, ranges or subnets, VPC IDs, and service references. After you create a network zone, you can add it to a rule. 
+By creating network zones, you establish a list of allowed locations where an access request originates. A set of one or more network locations can be specified by IP addresses such as individual addresses, ranges or subnets, VPC IDs, and service references. After you create a network zone, you can add it to a rule.
 
 To create a network zone, call the [Context-based restrictions API](/apidocs/context-based-restrictions#create-zone) as shown in the following example:
 
 ```sh
 curl -X POST --location --header "Authorization: Bearer {iam_token}" --header "Accept: application/json" --header "Content-Type: application/json" --data '{ "name": "an example of zone", "description": "this is an example of zone", "account_id": "12ab34cd56ef78ab90cd12ef34ab56cd", "addresses": [ { "type": "ipAddress", "value": "169.23.56.234" }, { "type": "ipRange", "value": "169.23.22.0-169.23.22.255" }, { "type": "subnet", "value": "192.0.2.0/24" }, { "type": "vpc", "value": "crn:v1:bluemix:public:is:us-south:a/12ab34cd56ef78ab90cd12ef34ab56cd::vpc:r134-d98a1702-b39a-449a-86d4-ef8dbacf281e" }, { "type": "serviceRef", "ref": { "account_id": "12ab34cd56ef78ab90cd12ef34ab56cd", "service_name": "cloud-object-storage" } } ], "excluded": [ { "type": "ipAddress", "value": "169.23.22.127" } ] }' "{base_url}/v1/zones"
 ```
-{: codeblock} 
+{: codeblock}
 {: curl}
 
 ```java
@@ -297,7 +297,7 @@ fmt.Println(string(b))
 {: go}
 
 To find a list of available service references, call the [ListAvailableServicerefTargets](/apidocs/context-based-restrictions?code=go#list-available-serviceref-targets) method.
-{: tip} 
+{: tip}
 
 ## Creating rules
 {: #context-restrictions-create-rules}
@@ -305,29 +305,29 @@ To find a list of available service references, call the [ListAvailableServicere
 
 Define restrictions to your cloud resources by creating rules.
 
-To create a rule, complete the following steps. 
+To create a rule, complete the following steps.
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Context-based restrictions**, and select **Rules**.
-1. Click **Create**.  
-1. Provide a unique description. 
-1. Select how you want to enforce the rule. You can decide how you want to enforce a rule upon creation and update the rule enforcement at any time.
-    * **Enable**: Enforce the rule. Denied access attempts are reported in {{site.data.keyword.at_short}}.
-    * **Disable**: Don't enforce the rule. Restrictions don't apply to your account resources. Select this option if you're not ready to enable the rule.
-    * **Report-only**: Monitor how the rule affects users without enforcing it. All attempts to access resources in the account are logged in {{site.data.keyword.at_short}}. Monitoring is recommended for 30 days before you enforce the rule.
-1. Click **Continue**. 
-1. Select the service that you want to target in your rule. Then, click **Next**. 
+1. Click **Create**.
+1. Select the service that you want to target in your rule. Then, click **Next**.
 
-    When you create context-based restriction for the IAM Access Groups service, users who don't satisfy the rule can't view any groups in the account, including the public access group. 
+    When you create context-based restriction for the IAM Access Groups service, users who don't satisfy the rule can't view any groups in the account, including the public access group.
     {: note}
 
-1. Scope the restriction to **All resources** or **Specific resources** based on selected attributes. 
-1. Click **Review** > **Continue**. 
-1. Add one or more contexts. Select endpoint types and network zones, and click **Add**. 
-    * You can allow access from all service-supported or specific service endpoint types. If the toggle is set to Yes, all service supported endpoint types are added to the rule. 
+1. Scope the restriction to **All resources** or **Specific resources** based on selected attributes.
+1. Click **Review** > **Continue**.
+1. Add one or more contexts. Select endpoint types and network zones, and click **Add**.
+    * By default, access is allowed from all service-supported endpoint types when the toggle is set to No. Set the toggle to Yes to allow only specific endpoint types.
 
     If you want to allow access from a VPC to public endpoints in your rule, include any public gateway IP addresses in the zone definition along with the VPC.
     {: important}
 
     * You can add existing network zones to your rule or create new zones to add to your rule. For more information, see [Creating network zones](/docs/account?topic=account-context-restrictions-create#network-zones-create).
+1. Click **Continue**.
+1. Provide a unique description.
+1. Select how you want to enforce the rule. You can decide how you want to enforce a rule upon creation and update the rule enforcement at any time.
+    * **Enable**: Enforce the rule. Denied access attempts are reported in {{site.data.keyword.at_short}}.
+    * **Disable**: Don't enforce the rule. Restrictions don't apply to your account resources. Select this option if you're not ready to enable the rule.
+    * **Report-only**: Monitor how the rule affects users without enforcing it. All attempts to access resources in the account are logged in {{site.data.keyword.at_short}}. Monitoring is recommended for 30 days before you enforce the rule.
 1. Click **Create**.
 
 ## Creating rules by using the CLI
