@@ -4,9 +4,9 @@ copyright:
 
   years: 2021, 2022
 
-lastupdated: "2022-02-14"
+lastupdated: "2022-09-23"
 
-keywords: auditing IAM policies, last permit information, restore policies
+keywords: auditing IAM policies, last permit information, restore policies, inactive policies
 
 subcollection: account
 
@@ -17,13 +17,45 @@ subcollection: account
 # Auditing access policies
 {: #iam-audit-policies}
 
-To reduce the number of policies in the account and keep only the minimum access that is required for each user, you can identify the infrequently used access policies and remove them.
+To reduce the number of policies in the account and keep only the minimum access that is necessary for each user, you can identify the infrequently used access policies. You can determine whether to remove them, or in some cases, you might expect an infrequently used policy.
 {: shortdesc}
 
-IAM captures authorization information for each policy. This information includes the last time the policy was used to grant a permit and a running count of its use. Every access policy in {{site.data.keyword.cloud}} is soft deleted and kept in the system for up to 10 days. During this time period, you can list and restore them at any time.
+IAM captures authorization information for each policy. This information includes the last time that the policy was used to grant a permit and a running count of its use.
 
-## Listing policies with last permit information
+## Managing inactive policies in the console
 {: #iam-audit-policies-list}
+{: ui}
+
+The inactive policies report shows policies that haven't permitted access in the last 30 days or longer. Policies that have never permitted access are not included.
+
+To view inactive policies, you need the Editor role or higher on the AM Insight service, the IAM Access Management service, or on All Account Management services.
+
+To manage inactive policies in the console, complete the following steps:
+
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Inactive policies**.
+1. Determine whether you can remove the inactive policies in the report.
+1. To delete inactive policies, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Remove**.
+
+When you delete a policy, it's no longer included for authorization evaluations. IAM keeps a copy of all deleted policies for 10 days. During this time period, you can list and restore them at any time. To restore a deleted policy, see [Restoring deleted policies by using the API](/docs/account?topic=account-iam-audit-policies&interface=api#iam-audit-policies-restore).
+{: note}
+
+## Exporting user access policy reports
+{: #audit-user-access}
+{: ui}
+
+You can export an access policy report for each user in your account if you are the account owner, have the Editor role or higher on the User Management service, or have the Editor role or higher on the IAM Access Management service. The access policy report lists all of the access policies that the user has, including the policies that are associated with access groups that the user is a member of.
+
+Auditing user's access policies ensures that you're using the principle of least privilege. Use the report to determine whether the user is assigned to the appropriate access policies, and take the needed action to reduce the number of access policies.
+
+To export the report, complete the following steps:
+
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access(IAM)**, and select **Users**.
+1. Determine the user that you want to audit and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) > **Access report**.
+1. Click **Download JSON** or **Download CSV**.
+
+## Listing policies with last permit information by using the API
+{: #iam-audit-policies-list-api}
+{: api}
 
 List all account policies including last permit information that is sorted by count or last used. The policy metadata can be retrieved by using the [IAM Policy Management API](/apidocs/iam-policy-management#policy-data-enrichment).
 
@@ -112,7 +144,7 @@ The format of the response is represented in JSON.
             ...
             "last_modified_at": "2021-04-09T14:36:30.505Z",
             "last_modified_by_id": "IBMid-310000JVN5",
-            "last_permit_at": null,       <-- IAM has no record of this policy ever granting a permit decision 
+            "last_permit_at": null,       <-- IAM has no record of this policy ever granting a permit decision
             "last_permit_frequency": 0,
             "state": "active"
         },
@@ -133,8 +165,9 @@ The format of the response is represented in JSON.
 ```
 {: codeblock}
 
-## Deleting unused policies
+## Deleting unused policies by using the API
 {: #iam-audit-policies-delete}
+{: api}
 
 You identified one or more policies that have not been used to grant access in a while. You can delete the unused policies as shown in the following examples.
 
@@ -199,8 +232,9 @@ For more information, see [Delete a policy by ID](/apidocs/iam-policy-management
 The policy is deleted and no longer included for authorization evaluations. IAM keeps a copy of all deleted policies for 10 days.
 {: note}
 
-## Restoring deleted policies
+## Restoring deleted policies by using the API
 {: #iam-audit-policies-restore}
+{: api}
 
 You found out that a policy that was recently deleted is needed. In that case, you can follow these steps to restore the policies.
 
@@ -407,3 +441,8 @@ You found out that a policy that was recently deleted is needed. In that case, y
     {: codeblock}
 
     For more information, see [Restore a deleted policy by ID](/apidocs/iam-policy-management#patch-policy).
+
+## Next steps
+{: #audit-policies-next-steps}
+
+Gain insight on the access assignments in your account from different perspectives. View [Auditing access to resources](/docs/account?topic=account-access-report) to learn what identities and services can access a specific resource.
