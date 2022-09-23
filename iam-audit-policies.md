@@ -28,6 +28,8 @@ IAM captures authorization information for each policy. This information include
 
 The inactive policies report shows policies that haven't permitted access in the last 30 days or longer. Policies that have never permitted access are not included.
 
+To view inactive policies, you need the Editor role or higher on the AM Insight service, the IAM Access Management service, or on All Account Management services.
+
 To manage inactive policies in the console, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Inactive policies**.
