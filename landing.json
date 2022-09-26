@@ -66,19 +66,19 @@
       "view_more": "/docs/overview?topic=overview-whatsnew",
       "tiles": [
         {
+          "date": "26 September 2022",
+          "title": "Identifying inactive policies",
+          "description": "To reduce the number of policies in your account and keep only the minimum access that is necessary for each user, you can now identify the infrequently used access policies on the Inactive policies page in the console. You can determine whether to remove the inactive policies, or in some cases, you might expect an infrequently used policy."
+        },
+        {
+          "date": "26 September 2022",
+          "title": "Exporting user access reports",
+          "description": "Make sure that users have only the access that they need. Export an access policy report for any user in your account to view all of the access policies that they are assigned."
+        },
+        {
           "date": "16 September 2022",
           "title": "Attaching tags on service IDs",
           "description": "In addition to tagging resources, you can now attach user tags and access management tags on service IDs. User tags help you group service IDs for usage reports, and you can use access management tags to control access to your service IDs."
-        },
-        {
-          "date": "16 September 2022",
-          "title": "Specifying a user onboarding strategy",
-          "description": "If you're enabling and connecting your identity provider, you can now specify how you want to onboard users to the account upon first-time login. This way, you can add each user to your account when they log in the first time, add users to your account only if they log in and don't select a trusted profile, or never add users to your account and provide access only by using trusted profiles."
-        },
-        {
-          "date": "02 September 2022",
-          "title": "Increased policy limit",
-          "description": "The shared limit for IAM policies and context-based restrictions has increased from 2010 to 4020 so that you don't need to request an increase to the limit in your account as you grow your organizational capacity."
         }
       ]
     }
