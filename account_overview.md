@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-03-23"
+lastupdated: "2022-09-26"
 
 keywords: IBM Cloud account, account differences, account overview, account components, resource, Cloud Foundry, API key, users
 
@@ -42,7 +42,7 @@ Access groups
 :   You can create an access group to organize a set of users, service IDs, and trusted profiles into a single entity and easily assign permissions. You can assign a single policy to the group instead of assigning the same access multiple times per individual user or service ID. For more information, see [Setting up access groups](/docs/account?topic=account-groups).
 
 Resource groups
-:   You can use a resource group to organize your account resources in customizable groupings so that you can quickly assign users access to more than one resource at a time. Any account resource that is managed by using IAM access control belongs to a resource group within your account. Users are not added to resource groups, but users are provided access to the resources within or can manage the resource group. Users given access to manage the resource group can create new instances within the group, manage other user's access to work with the group, or edit the group name based on the assigned IAM role. For more information, see [Best practices for organizing resources and assigning access](/docs/account?topic=account-account_setup).
+:   You can use a resource group to organize your account resources in customizable groupings so that you can quickly assign users access to more than one resource at a time. Any account resource that is managed by using IAM access control belongs to a resource group within your account. Users are not added to resource groups, but users are provided access to the resources within or can manage the resource group. Users given access to manage the resource group can create new instances within the group, manage other user's access to work with the group, or edit the group name based on the assigned IAM role. You can have a maximum of 1000 resource groups per account. For more information, see [Best practices for organizing resources and assigning access](/docs/account?topic=account-account_setup).
 
 Cloud Foundry orgs
 :   As an account owner or organization manager, you can add orgs and spaces from the Cloud Foundry Organizations page in the console. Services that support the use of Cloud Foundry orgs and spaces are added to an org and space when you create them from the catalog. Orgs contain users, domains, and quotas. Within each org, spaces are added, which contain the service instances. For more information, see [Adding orgs and spaces](/docs/account?topic=account-orgsspacesusers).

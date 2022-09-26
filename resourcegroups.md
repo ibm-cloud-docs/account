@@ -5,7 +5,7 @@
 copyright:
 
   years: 2017, 2022
-lastupdated: "2022-04-18"
+lastupdated: "2022-09-26"
 
 keywords: resource group, account resources, users access to resource groups, create resource group, create resource group in the console, create resource group CLI, create resource group API, create resource group Terraform
 
@@ -41,20 +41,20 @@ For more information about working with resource groups, see [Best practices for
 ## Creating a resource group
 {: #create_rgs}
 
-If you have a Pay-As-You-Go or Subscription account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. You can also group resources to make it easier for you to assign users access to more than one instance at a time.  
+If you have a Pay-As-You-Go or Subscription account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. You can also group resources to make it easier for you to assign users access to more than one instance at a time. You can have a maximum of 1000 resource groups per account.
 
 You must be assigned an IAM policy with the Administrator role on All Account Management services to create additional resource groups. If you have a Lite account or 30-day trial, you can't create extra resource groups, but you can rename your default resource group.
 
 Connections between a resource group and a Cloud Foundry org or space are restricted by your quota. See [What is an alias?](/docs/account?topic=account-connect_app#what_is_alias) for more information.
 {: note}
 
-## Creating a resource group in the console 
+## Creating a resource group in the console
 {: #rgs_ui}
 {: ui}
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account** > **Account resources** > **Resource groups**.
 2. Click **Create**.
-3. Enter a name for your resource group. 
+3. Enter a name for your resource group.
 4. Click **Create**.
 
 ## Creating a resource group by using the CLI
@@ -67,7 +67,7 @@ Connections between a resource group and a Cloud Foundry org or space are restri
    ibmcloud login
    ```
    {: codeblock}
-   
+
 2. Create a new resource group by running [`ibmcloud resource group-create`](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_group_create) command. For example, the following command creates a resource group that is named `group2`:
 
 ```bash
@@ -157,14 +157,14 @@ fmt.Println(string(b))
 {: #rgs_terraform}
 {: terraform}
 
-You can create a resource group by using Terraform. 
+You can create a resource group by using Terraform.
 
 1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
 
 2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create a resource group by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
 
    The following example creates a resource group by using the `ibm_resource_group` resource, where `name` is a unique name to identify the resource group.
-  
+
    ```terraform
    resource "ibm_resource_group" "resourceGroup" {
     name     = "prod"
@@ -173,14 +173,14 @@ You can create a resource group by using Terraform.
    {: codeblock}
 
    You can specify `tags` associated with the resource group instance. For more information, see the argument reference details on the [Terraform Resource Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_group){: external} page.
-  
+
 3. Initialize the Terraform CLI.
 
    ```terraform
    terraform init
    ```
    {: pre}
-   
+
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the resource group.
 
    ```terraform
@@ -200,7 +200,7 @@ You can create a resource group by using Terraform.
 
 Your first resource group is created and named `Default` for you. You can update the name of this group or any other groups that you create.
 
-### Renaming a resource group in the console 
+### Renaming a resource group in the console
 {: #renaming-rgs-ui}
 {: ui}
 
@@ -218,7 +218,7 @@ Your first resource group is created and named `Default` for you. You can update
    ibmcloud login
    ```
    {: codeblock}
-   
+
 2. Rename a resource group by running the [`ibmcloud resource group-update`](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_group_update) command. For example, the following command renames the `Default` resource group to `Admin`:
 
 ```bash
@@ -230,7 +230,7 @@ ibmcloud resource group-update Default [-n, --name Admin]
 {: #rename_rgs-api}
 {: api}
 
-The variable `name` identifies the new name of the resource group. For more details, see the [API](https://cloud.ibm.com/apidocs/resource-controller/resource-manager#update-resource-group). 
+The variable `name` identifies the new name of the resource group. For more details, see the [API](https://cloud.ibm.com/apidocs/resource-controller/resource-manager#update-resource-group).
 
 ```bash
 curl -X PATCH https://resource-controller.cloud.ibm.com/v2/resource_groups/09f8c1c0742c493f80baaf7835212345 -H 'Authorization: Bearer <IAM_TOKEN>'
@@ -307,14 +307,14 @@ fmt.Println(string(b))
 {: #rename_rgs-terraform}
 {: terraform}
 
-You can rename a resource group by using Terraform. 
+You can rename a resource group by using Terraform.
 
 1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
 
 2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to rename a resource group by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
 
-   You can rename the resource group by updating `name` with a new value in the following example. 
-  
+   You can rename the resource group by updating `name` with a new value in the following example.
+
    ```terraform
    resource "ibm_resource_group" "resourceGroup" {
     name     = "prod"
@@ -323,14 +323,14 @@ You can rename a resource group by using Terraform.
    {: codeblock}
 
    For more information, see the argument reference details on the [Terraform Resource Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_group){: external} page.
-  
+
 3. Initialize the Terraform CLI.
 
    ```bash
    terraform init
    ```
    {: pre}
-   
+
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to rename the resource group.
 
    ```bash
@@ -344,7 +344,7 @@ You can rename a resource group by using Terraform.
    terraform apply
    ```
    {: pre}
-   
+
 ## Adding resources to a resource group
 {: #add_to_rgs}
 {: ui}
@@ -361,7 +361,7 @@ Users in your account must be assigned two access policies to create resources f
 * A policy with viewer role or higher on the resources group itself
 * A policy with editor role or higher on the service in the account
 
-To add the resources to a resource group, complete the following steps: 
+To add the resources to a resource group, complete the following steps:
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account** > **Account resources** > **Resource groups**.
 2. Click the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, and select **Add resources**.
 3. From here, you are directed to the catalog. You can search the products or filter based on a specific category, provider, pricing plan, type of compliance, or release type. Examples of resources include apps, service instances, container clusters, storage volumes, virtual servers, and software.
@@ -376,7 +376,7 @@ See [Managing catalog settings](/docs/account?topic=account-filter-account#set-p
 {: #view_rg_resources}
 {: ui}
 
-To easily view the resources that are assigned to a resource group, go to the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **Resource list**. Then, filter by resource group. 
+To easily view the resources that are assigned to a resource group, go to the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **Resource list**. Then, filter by resource group.
 
 ## Viewing resources by using the CLI
 {: #viewing-rgs-cli}
@@ -388,7 +388,7 @@ To easily view the resources that are assigned to a resource group, go to the **
    ibmcloud login
    ```
    {: codeblock}
-   
+
 2. View the resources that are assigned to a specific resource group by running the [`ibmcloud resource service-instances`](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instances) command. For example, the following command lists all the resources that are in the `Default` resource group:
 
 ```bash
