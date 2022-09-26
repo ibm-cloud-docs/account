@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2022
 
-lastupdated: "2022-06-22"
+lastupdated: "2022-09-26"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -63,12 +63,15 @@ To help you further understand how access is assigned by using access policies i
 
 In {{site.data.keyword.cloud_notm}}, a user, service ID, or the members of an access group don't have any access by default. The {{site.data.keyword.cloud_notm}} access model is simple when it comes to understanding how you get permitted or denied completing specific actions. It isn't until an administrator assigns an access policy with a particular access role that access is granted. The IAM system doesn't have to evaluate permit and deny policies to determine what actions are allowed, instead the system just evaluates what resources you have policies for and what level of access is allowed by your assigned roles.
 
+To reduce the number of policies in the account and keep only the minimum access that is required for each user, you can identify and remove the infrequently used access policies. For more information, see [Managing inactive policies](/docs/account?topic=account-iam-audit-policies#iam-audit-policies-list).
+{: tip}
+
 When you specify a resource in a policy because {{site.data.keyword.cloud_notm}} is [attribute-based](#how-iam-works), you can specify a broad set of resources for a user to have access to, for example all resources in a resource group. Or, you can narrow the user's access to a specific instance of a single service or even a subresource type, such as a {{site.data.keyword.cos_short}} bucket. {{site.data.keyword.cloud_notm}} IAM provides a high level of flexibility and granularity to help you assign only the type of access that is required. A few examples of the different levels of access that you can assign by using attributes in an access policy are the following:
 
 * All Account Management services
 * A specific account management service
 * All Identity and Access Enabled services within the account, which includes all catalog services that use IAM for access management
-* All resources that belong to a resource group 
+* All resources that belong to a resource group
 * All resource types of a single service across the entire account, regardless of resource group assignment
 * A specific instance of a service in the account
 * A single subresource type within an instance, for example, a bucket in an {{site.data.keyword.cos_short}} instance
