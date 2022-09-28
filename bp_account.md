@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2022
-lastupdated: "2022-09-26"
+lastupdated: "2022-09-28"
 
-keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources
+keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources, administrator, administrator role
 
 subcollection: account
 
@@ -112,7 +112,9 @@ A logical way to assign access to your resource groups and the included resource
 For the Auditor-Group, assign two access policies that grant viewer access to the `CustApp-Test` and the `CustApp-Prod` resources and resource groups. For the Developer-Group, assign two access policies that grant editor access to the `CustApp-Dev` and `CustApp-Test` resources and resource groups. For the Admin-Group, assign three access policies that grant administrator access to all three `CustApp` resource groups and their resources.
 
 You can assign administrator access to everything in an account by creating an access group and assigning two policies to it. To create the first policy, select **All Identity and Access enabled services** with the Administrator platform role and Manager service role. To create the second policy, select **All Account Management services** with the Administrator role assigned.
-{: tip}
+
+Users with the Administrator role on access groups can grant or revoke access by adding or removing users from an access group. By creating an access group with administrator access, you are delegating the granting and revoking of administrator access of the account to the added administrators of the access group. Administrator access to everything in the account includes the ability to revoke access for other users with the administrator role.
+{: important}
 
 The following diagram shows how access is assigned to resource groups:
 
@@ -155,7 +157,9 @@ The following diagram shows how access is assigned to trusted profiles:
 You can select only one trusted entity type when you first create a trusted profile. You can [update trusted profiles](/docs/account?topic=account-trusted-profile-update) at any time to add trust relationships with compute resources.
 
 You can assign administrator access to everything in an account by creating a trusted profile and assigning two policies to it. To create the first policy, select **All Identity and Access enabled services** with the Administrator platform role and Manager service role. For the second policy, select **All Account Management services** with the Administrator role assigned.
-{: tip}
+
+Users with the Administrator role on trusted profiles can grant or revoke access by adding or removing rules from trusted profiles. By creating a trusted profile with administrator access, you are delegating the granting and revoking of administrator access of the account to the added administrators of the trusted profile. Administrator access to everything in the account includes the ability to revoke access for other users with the administrator role.
+{: important}
 
 ### Sample access policies
 {: #sample_policies_tp}
