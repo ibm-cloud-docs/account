@@ -4,9 +4,9 @@ copyright:
 
   years: 2017, 2022
 
-lastupdated: "2022-06-22"
+lastupdated: "2022-09-28"
 
-keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access 
+keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access, administrator, administrator role
 
 subcollection: account
 
@@ -36,7 +36,9 @@ If you want to enable a user full administrator access to complete [account mana
 * A policy with Administrator role on **All Account Management services**.
 
 You can also set access management tags to manage access. For more information, see [Controlling access to resources by using tags](/docs/account?topic=account-access-tags-tutorial).
-{: tip}
+
+Users with the Administrator role for account management services can change the access of other users and remove users from the resource, including other users with the administrator role.
+{: important}
 
 ### Assigning access to resources in the console
 {: #access-resources-console}
@@ -50,13 +52,13 @@ To assign access to an individual resource in the account or access to all resou
 1. Click the **Actions** icon ![List of actions icon](../icons/action-menu-icon.svg) > **Assign access** for the user or service ID that you want to assign access.
 1. Select a group of services or a sinlge service. Then, click **Next**.
 1. Scope the access to the all resources in the account, or select specific resources based on attributes.
-1. Click **Next**. 
-1. Select any combination of roles to assign, and click **Review**. 
+1. Click **Next**.
+1. Select any combination of roles to assign, and click **Review**.
 1. Click **Add** to add your policy configuration to your policy summary.
 1. (Optional) Add users or service IDs to **Access groups**.
    1. Select the access groups that you want the user or service ID to belong to.
    1. Click **Add**
-1. Click **Assign**. 
+1. Click **Assign**.
 
 If a user doesn't have a role on the resource group that contains the resources, they can see the resources, but can't access the resources by going to the Resource list page in the account to start working with them. Assign the Viewer role or higher on the resource group itself to ensure that a user can access the resource.
 {: note}
@@ -71,8 +73,8 @@ To assign access to all resources in a resource group or to just one service wit
 1. Click on the user or service ID that you want to assign access, then click **Access** > **Assign access**.
 1. Select a group of services or a sinlge service. Then, click **Next**.
 1.  Scope the access to **Specific resources**, then select the **Resource group** attribute. By selecting a resource group, you can select roles for access to manage the resource group as well.
-1. Click **Next**. 
-1. Select any combination of roles to assign, and click **Review**. 
+1. Click **Next**.
+1. Select any combination of roles to assign, and click **Review**.
 1. Click **Add** to add your policy configuration to your policy summary.
 1. Click **Assign**.
 
@@ -88,10 +90,10 @@ To assign access to all resources in a resource group or to just one service wit
 
    If your credentials are rejected, you might be using a federated ID. To log in with a federated ID, use the `--sso` flag. See [Logging in with a federated ID](/docs/account?topic=account-federated_id) for more details.
    {: tip}
-    
+
    If it's your first time using the {{site.data.keyword.cloud_notm}} CLI, check out the [getting started tutorial](/docs/cli?topic=cli-getting-started).
 
-1. Create an access policy and assign it to a user or a service ID by using the command [**`ibmcloud iam user-policy-create`**](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_create). 
+1. Create an access policy and assign it to a user or a service ID by using the command [**`ibmcloud iam user-policy-create`**](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_create).
    * This example assigns access to an individual resource in the account with the `Administrator` role for all instances of `sample-service` service:
     ```bash
    ibmcloud iam user-policy-create name@example.com --roles Administrator --service-name sample-service
@@ -183,7 +185,7 @@ curl -X POST 'https://iam.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $
 ```
 {: curl}
 {: codeblock}
-   
+
 ```java
 SubjectAttribute subjectAttribute = new SubjectAttribute.Builder()
       .name("iam_id")
@@ -229,7 +231,7 @@ System.out.println(policy);
 ```
 {: java}
 {: codeblock}
-   
+
 ```javascript
 const policySubjects = [
   {
@@ -279,7 +281,7 @@ iamPolicyManagementService.createPolicy(params)
 ```
 {: javascript}
 {: codeblock}
-   
+
 ```python
 policy_subjects = PolicySubject(
   attributes=[SubjectAttribute(name='iam_id', value='example_user_id')])
@@ -304,7 +306,7 @@ print(json.dumps(policy, indent=2))
 ```
 {: python}
 {: codeblock}
-   
+
 ```go
 subjectAttribute := &iampolicymanagementv1.SubjectAttribute{
   Name:  core.StringPtr("iam_id"),
@@ -361,14 +363,14 @@ This action can be done only through the UI or CLI. To see the steps, switch to 
 {: #access-resources-terraform}
 {: terraform}
 
-You can assign access to resources by using Terraform. 
+You can assign access to resources by using Terraform.
 
 1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
 
 1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to assign access to resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
 
-      The following example gives `test@in.ibm.com` `Viewer` role for all instances of `kms` service. 
-    
+      The following example gives `test@in.ibm.com` `Viewer` role for all instances of `kms` service.
+
    ```terraform
    resource "ibm_iam_user_policy" "policy" {
     ibm_id = "test@in.ibm.com"
@@ -382,14 +384,14 @@ You can assign access to resources by using Terraform.
    {: codeblock}
 
    You can specify the name of the service for which you want to assign access to on the `service` option. For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_user_policy){: external} page.
-  
+
 1. Initialize the Terraform CLI.
 
    ```bash
    terraform init
    ```
    {: pre}
-   
+
 1. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to assign access to a resource.
 
    ```bash
@@ -408,14 +410,14 @@ You can assign access to resources by using Terraform.
 {: #access-to-resources-terraform}
 {: terraform}
 
-You can assign access within a resource group by using Terraform. 
+You can assign access within a resource group by using Terraform.
 
 1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
 
 1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to assign access within a resource group by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
 
       The following example gives `test@in.ibm.com` `Viewer` role for resource group with ID `data.ibm_resource_group.group.id`.
-          
+
    ```terraform
    data "ibm_resource_group" "group" {
     name = "default"
@@ -434,14 +436,14 @@ You can assign access within a resource group by using Terraform.
    {: codeblock}
 
    You can specify the ID of the resource group within you want to assign access to on the `resource_group_id` option. For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_user_policy){: external} page.
-  
+
 1. Initialize the Terraform CLI.
 
    ```bash
    terraform init
    ```
    {: pre}
-   
+
 1. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to assign access within a resource group.
 
    ```bash
@@ -455,7 +457,7 @@ You can assign access within a resource group by using Terraform.
    terraform apply
    ```
    {: pre}
-   
+
 ## Removing access in the console
 {: #removing-access-console}
 {: ui}
@@ -467,7 +469,7 @@ Removing access for a user or service ID can take up to 10 minutes to take effec
 1. Go to **Access** and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Remove** on the row for the policy you want to remove.
 1. Review the policy details that you're about to remove, and confirm by clicking **Remove**.
 
-You can also remove users and service IDs from access groups by selecting the checkbox for the user or service ID that you want to remove, and click **Remove**. Then, click **Remove** again to approve the process. 
+You can also remove users and service IDs from access groups by selecting the checkbox for the user or service ID that you want to remove, and click **Remove**. Then, click **Remove** again to approve the process.
 {: tip}
 
 ## Removing access by using the CLI
@@ -576,7 +578,7 @@ If you need to review your assigned access in an account that you've been added 
 ```bash
 ibmcloud iam user-policies name@example.com
 ```
-{: codeblock} 
+{: codeblock}
 
 ## Reviewing assigned access by using the API
 {: #review-your-access-api}
@@ -589,7 +591,7 @@ curl -X GET 'https://iam.cloud.ibm.com/v1/policies?account_id=$ACCOUNT_ID' \
 -H 'Authorization: Bearer $TOKEN' \
 -H 'Content-Type: application/json'
 ```
-{: curl} 
+{: curl}
 {: codeblock}
 
 ```java
@@ -603,7 +605,7 @@ PolicyList policyList = response.getResult();
 
 System.out.println(policyList);
 ```
-{: java} 
+{: java}
 {: codeblock}
 
 ```javascript
@@ -620,8 +622,8 @@ iamPolicyManagementService.listPolicies(params)
    console.warn(err)
  });
 ```
-{: javascript} 
-{: codeblock} 
+{: javascript}
+{: codeblock}
 
 ```python
 policy_list = iam_policy_management_service.list_policies(
@@ -630,8 +632,8 @@ policy_list = iam_policy_management_service.list_policies(
 
 print(json.dumps(policy_list, indent=2))
 ```
-{: python} 
-{: codeblock} 
+{: python}
+{: codeblock}
 
 ```go
 options := iamPolicyManagementService.NewListPoliciesOptions(
@@ -646,5 +648,5 @@ if err != nil {
 b, _ := json.MarshalIndent(policyList, "", "  ")
 fmt.Println(string(b))
 ```
-{: go} 
+{: go}
 {: codeblock}
