@@ -113,7 +113,7 @@ For the Auditor-Group, assign two access policies that grant viewer access to th
 
 You can assign administrator access to everything in an account by creating an access group and assigning two policies to it. To create the first policy, select **All Identity and Access enabled services** with the Administrator platform role and Manager service role. To create the second policy, select **All Account Management services** with the Administrator role assigned. Users in this access group can grant and revoke administrator access within the group and across the account.
 
-Users with the Administrator role on the IAM Access Groups service can grant or revoke access by adding or removing users from an access group. By creating an access group with administrator access, users can grant and revoke access. Administrator access applies to everything in the account including the ability to revoke access for other users with the administrator role.
+Users with the Administrator role on the IAM Access Groups service can grant or revoke access to all resources and identities in the account by adding or removing users from an access group.
 {: important}
 
 The following diagram shows how access is assigned to resource groups:
@@ -158,7 +158,7 @@ You can select only one trusted entity type when you first create a trusted prof
 
 You can assign administrator access to everything in an account by creating a trusted profile and assigning two policies to it. To create the first policy, select **All Identity and Access enabled services** with the Administrator platform role and Manager service role. For the second policy, select **All Account Management services** with the Administrator role assigned. Users that apply this trusted profile can grant and revoke administrator access to the trusted profile and across the account.
 
-Users with the Administrator role on trusted profiles can grant or revoke access by adding or removing rules from trusted profiles. By creating a trusted profile with administrator access, have the ability to grante and revoke of access of the account. Administrator access applies to everything in the account including the ability to revoke access for other users with the administrator role.
+Users with the Administrator role on trusted profiles can grant or revoke access to all resources and identities in the account by adding or removing rules from trusted profiles.
 {: important}
 
 ### Sample access policies

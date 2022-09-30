@@ -37,7 +37,7 @@ If you want to enable a user full administrator access to complete [account mana
 
 You can also set access management tags to manage access. For more information, see [Controlling access to resources by using tags](/docs/account?topic=account-access-tags-tutorial).
 
-Users with the Administrator role for account management services can change the access of other users and remove users from the resource, including other users with the administrator role.
+Users with the Administrator role for account management services can change the access of other users for any account management service. They can also invite and remove users from the account, including other users with the administrator role.
 {: important}
 
 ### Assigning access to resources in the console
