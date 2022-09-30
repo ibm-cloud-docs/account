@@ -1,6 +1,6 @@
 {
     "title": "Managing your account, resources, and access docs",
-    "lastupdated": "2022-09-21",
+    "lastupdated": "2022-09-30",
     "introduction": "Leverage the interacting components and systems in your account for resource, user, and access management. Get started by setting up your IBM cloud account, learn about setting up an enterprise, or explore assigning access to resources quickly with IBM Cloud Identity and Access Management (IAM).",
     "section_devtools": {
       "api": "/docs?tab=api-docs&subCategory=account&category=platform_services",
@@ -66,6 +66,11 @@
       "view_more": "/docs/overview?topic=overview-whatsnew",
       "tiles": [
         {
+          "date": "29 September 2022",
+          "title": "Enabling IBM Cloud Event Notifications for the notification distribution list",
+          "description": "You can now easily add Event Notifications instances to the notification distribution list and receive account-wide IBM Cloud notifications. With Event Notifications, you can choose to deliver your notifications to different destinations, including email, SMS, or webhooks. When an event of interest occurs on the IBM Cloud platform and an event is generated, the notification distribution list communicates with a connected Event Notifications instance to forward a notification to the supported destination."
+        },
+        {
           "date": "26 September 2022",
           "title": "Identifying inactive policies",
           "description": "To reduce the number of policies in your account and keep only the minimum access that is necessary for each user, you can now identify the infrequently used access policies on the Inactive policies page in the console. You can determine whether to remove the inactive policies, or in some cases, you might expect an infrequently used policy."
@@ -74,11 +79,6 @@
           "date": "26 September 2022",
           "title": "Exporting user access reports",
           "description": "Make sure that users have only the access that they need. Export an access policy report for any user in your account to view all of the access policies that they are assigned."
-        },
-        {
-          "date": "16 September 2022",
-          "title": "Attaching tags on service IDs",
-          "description": "In addition to tagging resources, you can now attach user tags and access management tags on service IDs. User tags help you group service IDs for usage reports, and you can use access management tags to control access to your service IDs."
         }
       ]
     }
