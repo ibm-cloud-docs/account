@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2021
-lastupdated: "2021-11-12"
+  years: 2019, 2022
+lastupdated: "2022-09-22"
 
 keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network, services that support service endpoints, service endpoint support, using service endpoints
 
@@ -10,14 +10,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:important: .important}
-{:tip: .tip}
-{:note: .note}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Enabling VRF and service endpoints
 {: #vrf-service-endpoint}
@@ -97,7 +90,7 @@ To enable service endpoints from the [{{site.data.keyword.Bluemix_notm}} CLI](/d
 
     If `Service Endpoint Enabled` is `false` as shown in the following example, service endpoints are not enabled.
 
-    ```text
+    ```bash
     Retrieving account Mia Example's Account of m.example@example.com...
     OK
 
@@ -107,7 +100,7 @@ To enable service endpoints from the [{{site.data.keyword.Bluemix_notm}} CLI](/d
     Service Endpoint Enabled:     false  
     ```
     {: screen}
-
+    
 1. Enable service endpoints by running the following command.
 
    ```bash
@@ -119,7 +112,7 @@ To enable service endpoints from the [{{site.data.keyword.Bluemix_notm}} CLI](/d
    
     If VRF isn't enabled for your account, running this command prompts you to create a case to enable it. Enter `y` to create the support case. After VRF is enabled in the account, run the command again to enable service endpoint connectivity in your account. 
     
-    ```text
+    ```bash
     Service Endpoint is not available in linked Softlayer Account 1008967.
     Enable VRF(Virtual Routing and Forwarding) first to proceed.
     Learn more about VRF here - https://cloud.ibm.com/docs/infrastructure/direct-link/vrf-on-ibm-cloud.html.
@@ -145,6 +138,7 @@ To find the endpoints for each service, refer to the Endpoint URLs section of th
 | Service | Documentation |
 |-------------------|-------------------------------|
 | {{site.data.keyword.iae_short}} | [{{site.data.keyword.iae_short}} cloud service endpoints integration](/docs/services/AnalyticsEngine?topic=AnalyticsEngine-service-endpoint-integration) |
+| {{site.data.keyword.appconfig_short}} | [Regions and endpoints](/docs/app-configuration?topic=app-configuration-ac-regions-endpoints) |
 | {{site.data.keyword.cloudcerts_short}} | [Regions and endpoints](/docs/certificate-manager?topic=certificate-manager-regions-endpoints#endpoints) |
 | {{site.data.keyword.registryshort_notm}} | {{site.data.keyword.containershort}} clusters with [private service endpoints only](/docs/containers?topic=containers-plan_clusters#workeruser-master) pull container images by using the [{{site.data.keyword.registryshort_notm}}](/docs/Registry?topic=Registry-registry_overview) service endpoint. |
 | {{site.data.keyword.databases-for-elasticsearch}} | [{{site.data.keyword.databases-for-elasticsearch}} service endpoints integration](/docs/services/databases-for-elasticsearch?topic=cloud-databases-service-endpoints) |
@@ -154,6 +148,7 @@ To find the endpoints for each service, refer to the Endpoint URLs section of th
 | {{site.data.keyword.databases-for-redis}} | [{{site.data.keyword.databases-for-redis}} service endpoints integration](/docs/services/databases-for-redis?topic=cloud-databases-service-endpoints)|
 | {{site.data.keyword.Db2_on_Cloud_short}} | [Connectivity options](/docs/services/Db2onCloud?topic=Db2onCloud-connect_options) |
 | {{site.data.keyword.dashdbshort}} | [Connecting to a private endpoint](/docs/services/Db2whc?topic=Db2whc-connect_options#priv_endpt) |
+| {{site.data.keyword.en_short}} | [Regions and endpoints](/docs/event-notifications?topic=event-notifications-en-regions-endpoints) |
 |{{site.data.keyword.messagehub}} | [Restricting network access using the Enterprise plan](/docs/EventStreams?topic=EventStreams-restrict_access) |
 | {{site.data.keyword.hscrypto}} | [{{site.data.keyword.hscrypto}} service endpoints integration](/docs/services/hs-crypto?hs-crypto-private-endpoints=hs-crypto-private-endpoints)|
 | {{site.data.keyword.ihsdbaas_mongodb_full}} | [Securing your connection to {{site.data.keyword.ihsdbaas_mongodb_full}}](/docs/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-service-connection) |
