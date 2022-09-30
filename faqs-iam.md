@@ -162,7 +162,7 @@ A user must be assigned an access policy on the specific resource with at least 
 {: faq}
 {: support}
 
-For IAM-enabled services, you must have Administrator role on the service or resource that you want to assign users access to. If you want to assign access to all services or resources in the account, you need a policy on **All Identity and Access enabled services** with the Administrator role. And, to assign users access to account management services, you must be assigned the Administrator role on the specific service or all account management services. Assigning users the Administrator role delegates the granting and revoking of administrator access of the account, including the ability to revoke access for other users with the administrator role.
+For IAM-enabled services, you must have Administrator role on the service or resource that you want to assign users access to. If you want to assign access to all services or resources in the account, you need a policy on **All Identity and Access enabled services** with the Administrator role. And, to assign users access to account management services, you must be assigned the Administrator role on the specific service or all account management services.  Assigning users the Administrator role gives them the ability to grant and revoke other users administrator access across the account.
 
 For Cloud Foundry services, you must have Cloud Foundry org and space manager roles to give access to Cloud Foundry resources.
 
