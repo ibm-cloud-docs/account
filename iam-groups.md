@@ -237,7 +237,7 @@ You can create access groups by using Terraform.
 {: #access_ag}
 {: ui}
 
-After you set up your group with users and service IDs, you can assign a common access policy to the group. Remember, any policy that you set for the group applies to all entities within the group. For example, assigning access policies to an access group delegates the ability to grant or revoke access to users, service-ids, or trusted profiles to the administrators of that access group.
+After you set up your group with users and service IDs, you can assign a common access policy to the group. Remember, any policy that you set for the group applies to all entities within the group.
 
 Assigning an access group Administrator access on **All Identity and Access enabled services** and **All Account Management services** includes the ability to revoke access for other users with the administrator role by removing them from the group.
 {: important}
