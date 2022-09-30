@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2022
-lastupdated: "2022-06-22"
+lastupdated: "2022-09-28"
 
-keywords: frequently asked questions, iam faqs
+keywords: frequently asked questions, iam faqs, administrator, administrator role
 
 subcollection: account
 
@@ -17,7 +17,7 @@ content-type: faq
 # FAQs about IAM
 {: #iamfaq}
 
-FAQs for {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) might include questions about access control for resources, resource groups, account management, classic infrastructure resources, and access groups. 
+FAQs for {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) might include questions about access control for resources, resource groups, account management, classic infrastructure resources, and access groups.
 {: shortdesc}
 
 To find all FAQs for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
@@ -41,7 +41,7 @@ An IAM-enabled service must be in a resource group and access to the service is 
 {: #iam-policies}
 {: faq}
 
-An IAM access policy is how users, services IDs, trusted profiles, and access groups in an account are given permission to work with a specific IAM-enabled service or resource instance, manage a resource group, or complete account management tasks. Each IAM access policy is made of a subject, target, and role. A subject is the who that has the access. The target is what the subject can have access to. And, the role, whether it is a platform or service role depending on the context of the selected target, defines what level of access the subject has on the target. 
+An IAM access policy is how users, services IDs, trusted profiles, and access groups in an account are given permission to work with a specific IAM-enabled service or resource instance, manage a resource group, or complete account management tasks. Each IAM access policy is made of a subject, target, and role. A subject is the who that has the access. The target is what the subject can have access to. And, the role, whether it is a platform or service role depending on the context of the selected target, defines what level of access the subject has on the target.
 
 A subject is a user, service ID, trusted profile, or access group. A target can be a service in the account, a resource group in the account, a specific resource instance or type, or an account management service. And, the roles that are provided as choices depend on your selected target. Some services have service-specific roles that are defined, and some use platform roles only. To understand this concept visually, check out the following graphic with an outline of the options for creating an IAM policy:
 
@@ -68,9 +68,9 @@ In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IA
 
 ## What actions are mapped to each IAM role?
 {: #action-mapping}
-{: faq} 
+{: faq}
 
-When you invite a new user or assign a user IAM access, you can view the actions that are associated with each role. Click the numbers listed next to each role to view a list of all actions that are mapped to a specific role. By reviewing the mapping of actions to roles, you can confidently know what access you're assigning. 
+When you invite a new user or assign a user IAM access, you can view the actions that are associated with each role. Click the numbers listed next to each role to view a list of all actions that are mapped to a specific role. By reviewing the mapping of actions to roles, you can confidently know what access you're assigning.
 
 ## How do I request access to a resource?
 {: #request-access}
@@ -84,16 +84,16 @@ The account owner can update your access to any resource in the account, or you 
 
 In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Users**. Then, select your name or another user's name from the list. You can find the IAM ID for that user along with their email address on the User details page.
 
-## How do I identify platform management roles and service access roles for a user? 
+## How do I identify platform management roles and service access roles for a user?
 {: #iam-role}
 {: faq}
 
 1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Access (IAM)**, and then select **Users**.
-2. Select your name or another user's name from the list. 
+2. Select your name or another user's name from the list.
 3. Click **Access** to view the permissions that are associated with the user.
 
-The `owner` tag is listed for the owner of the account. This user is assigned the administrator role on the service or service instance.  
-{: note} 
+The `owner` tag is listed for the owner of the account. This user is assigned the administrator role on the service or service instance.
+{: note}
 
 ## How do I find and manage API Keys for a user or myself?
 {: #iam-api-keys}
@@ -101,7 +101,7 @@ The `owner` tag is listed for the owner of the account. This user is assigned th
 
 In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **API keys** to view and manage API keys that you have access to.
 
-* For information about how to manage {{site.data.keyword.cloud_notm}} API keys that are associated with user identities, see [Managing user API keys](/docs/account?topic=account-userapikey).  
+* For information about how to manage {{site.data.keyword.cloud_notm}} API keys that are associated with user identities, see [Managing user API keys](/docs/account?topic=account-userapikey).
 * For information about how to manage API keys that are associated with a service ID, see [Managing service ID API keys](/docs/account?topic=account-serviceidapikeys).
 * For information about how to manage classic infrastructure API keys, see [Managing classic infrastructure API keys](/docs/account?topic=account-classic_keys).
 
@@ -109,7 +109,7 @@ In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IA
 {: #service-credentials}
 {: faq}
 
-To view an existing service credential for a service or to add a new credential, go to your resource list by clicking the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list**, then select the name of the service to open its details. Click **Service credentials** to view the details or to select **New Credential**.  
+To view an existing service credential for a service or to add a new credential, go to your resource list by clicking the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list**, then select the name of the service to open its details. Click **Service credentials** to view the details or to select **New Credential**.
 
 To save a copy of the service credentials, most services provide a  download option or the option to copy to your clipboard.
 {: note}
@@ -162,7 +162,7 @@ A user must be assigned an access policy on the specific resource with at least 
 {: faq}
 {: support}
 
-For IAM-enabled services, you must have Administrator role on the service or resource that you want to assign users access to. If you want to assign access to all services or resources in the account, you need a policy on **All Identity and Access enabled services** with the Administrator role. And, to assign users access to account management services, you must be assigned the Administrator role on the specific service or all account management services.
+For IAM-enabled services, you must have Administrator role on the service or resource that you want to assign users access to. If you want to assign access to all services or resources in the account, you need a policy on **All Identity and Access enabled services** with the Administrator role. And, to assign users access to account management services, you must be assigned the Administrator role on the specific service or **All Account Management services**. Assigning users the Administrator role gives them the ability to grant and revoke other users administrator access across the account.
 
 For Cloud Foundry services, you must have Cloud Foundry org and space manager roles to give access to Cloud Foundry resources.
 
@@ -214,7 +214,7 @@ With the start of {{site.data.keyword.Bluemix_notm}}, an open source platform se
 
 Access control and account resource organization are the major differences between resource groups and Cloud Foundry orgs and spaces. Resource groups organize IAM-enabled services in an account that are access that is controlled by using IAM policies. Orgs and spaces are managed by using Cloud Foundry roles for access control, and Cloud Foundry resources are assigned to spaces. Orgs and spaces can be used to organize and control access to resources only within the Cloud Foundry realm, while resource groups and IAM can be used for multiple types of resources across {{site.data.keyword.Bluemix_notm}}.
 
-## How do I assign a user full access as an account administrator?  
+## How do I assign a user full access as an account administrator?
 {: #account-administrator}
 {: faq}
 {: support}
@@ -257,7 +257,7 @@ When inspecting access group memberships or access policies in your account, you
 
 IAM is used to manage access to your {{site.data.keyword.cloud_notm}} services and resources. With {{site.data.keyword.appid_full_notm}}, you can take cloud security one step further by adding authentication into your web and mobile apps. With just a few lines of code, you can easily secure your Cloud-native apps and services that run on {{site.data.keyword.cloud_notm}}. Ready to get started? [Check out the docs](/docs/services/appid?topic=appid-getting-started#getting-started).
 
-## Where do I manage a user's access to infrastructure? 
+## Where do I manage a user's access to infrastructure?
 {: #infrastructure-devices}
 {: faq}
 {: support}
@@ -266,8 +266,8 @@ Access for classic infrastructure starts with the user. For more information, se
 
 If you need to assign access to IAM-enabled infrastructure services, such as {{site.data.keyword.vpc_full}}, you assign access to a user by completing the following steps:
 
-1. Click **Manage** > **Access (IAM)** > **Users** 
-1. Select the user. 
+1. Click **Manage** > **Access (IAM)** > **Users**
+1. Select the user.
 1. Click **Access**.
 
 ## How do I manage access for users previously assigned billing and support permissions in my SoftLayer account?
@@ -281,13 +281,13 @@ All permissions that were previously assigned in your SoftLayer account can be m
 {: #total-policies}
 {: faq}
 
-You can [check the number of policies in an account](/docs/account?topic=account-policy-limits) by using the CLI to ensure that you don't exceed the limit for your account. 
+You can [check the number of policies in an account](/docs/account?topic=account-policy-limits) by using the CLI to ensure that you don't exceed the limit for your account.
 
 ## What are verification methods and what they are used for?
 {: #verification-methods}
 {: faq}
 
-Verification methods are used to prove your identity and access the Verification methods and authentication factors page. 
+Verification methods are used to prove your identity and access the Verification methods and authentication factors page.
 
 The first time that you log in to your account after MFA settings are updated, you also need to verify your identity by using two different verification methods. Verification methods include email, text, or phone call, and you can use any combination of those options to verify your identity. After you verify your identity, you set up and provide details for your authentication factor on the [Verification methods and authentication factors](https://iam.cloud.ibm.com/mysecurity){: external} page.
 
@@ -295,13 +295,13 @@ The first time that you log in to your account after MFA settings are updated, y
 {: #authenticaiton-factors}
 {: faq}
 
-These factors can be something that you have, like a U2F security key, or that you receive, like a time-based one time passcode (TOTP) or OTP. If an administrator enables MFA in at least one of the accounts you are a member of, you must provide two or more factors each time you log in. If you are a member in multiple accounts and at least one of the accounts uses MFA, MFA is required each time that you log in. This applies regardless of the account that you are trying to access. For more information, see [Managing verification methods and MFA factors](/docs/account?topic=account-verification-authentication). 
+These factors can be something that you have, like a U2F security key, or that you receive, like a time-based one time passcode (TOTP) or OTP. If an administrator enables MFA in at least one of the accounts you are a member of, you must provide two or more factors each time you log in. If you are a member in multiple accounts and at least one of the accounts uses MFA, MFA is required each time that you log in. This applies regardless of the account that you are trying to access. For more information, see [Managing verification methods and MFA factors](/docs/account?topic=account-verification-authentication).
 
-## How do I reset a verification method? 
+## How do I reset a verification method?
 {: #reset-verification}
 {: faq}
 
-A verification method becomes inaccessible if a phone number or email address that's associated with your identity changes or you no longer have access to it. To reset a verification method, [open a support case](/unifiedsupport/cases/form) and add a verification method that you can use to access the Verification methods and authentication factors page. 
+A verification method becomes inaccessible if a phone number or email address that's associated with your identity changes or you no longer have access to it. To reset a verification method, [open a support case](/unifiedsupport/cases/form) and add a verification method that you can use to access the Verification methods and authentication factors page.
 
 ## How can I get a new QR code for MFA setup?
 {: #qr-code}
@@ -314,7 +314,7 @@ To get a new QR code for MFA setup, go to the [Verification methods and authenti
 {: #method-update}
 {: faq}
 
-You can update the email address that is used for MFA on the [Verification methods and authentication factors](https://iam.cloud.ibm.com/mysecurity){: external} page. From the Authentication factors section, click **Show authentication factors** > **Add**. Select **Email-based** and enter the email address where you want to receive OTPs as an authentication factor. Then, enter the OTP you receive to confirm your choice. Next, click **Complete**. After you add the new factor, select the old email address, and click **Remove**. 
+You can update the email address that is used for MFA on the [Verification methods and authentication factors](https://iam.cloud.ibm.com/mysecurity){: external} page. From the Authentication factors section, click **Show authentication factors** > **Add**. Select **Email-based** and enter the email address where you want to receive OTPs as an authentication factor. Then, enter the OTP you receive to confirm your choice. Next, click **Complete**. After you add the new factor, select the old email address, and click **Remove**.
 
 ## Can trusted profiles create user API keys?
 {: #tp-apikey}
@@ -328,15 +328,15 @@ To create a user API key, your IAM ID and the IAM ID of the user that's requesti
 {: #tp-check}
 {: faq}
 
-To check whether a user qualifies to apply a trusted profile by using the IBMid identity provider (IdP), the user and the administrator must complete specific steps.  
+To check whether a user qualifies to apply a trusted profile by using the IBMid identity provider (IdP), the user and the administrator must complete specific steps.
 
 
-1. The user must go to [{{site.data.keyword.cloud_notm}} User Claims](https://iam.cloud.ibm.com/identity/claims).  
-1. From here, the claims are displayed. 
-1. The user must provide the claims to the administrator. 
-1. As the administrator, compare the claims of the user with the conditions set for the trusted profile. To view the conditions for a trusted profile, go to **Manage** > **Access (IAM)** > **Trusted profiles** in the {{site.data.keyword.cloud_notm}} console. 
-1. Click the profile and view the **Conditions** column. 
-1. If the user's claims satisfy all of the conditions, the user can apply the profile. 
+1. The user must go to [{{site.data.keyword.cloud_notm}} User Claims](https://iam.cloud.ibm.com/identity/claims).
+1. From here, the claims are displayed.
+1. The user must provide the claims to the administrator.
+1. As the administrator, compare the claims of the user with the conditions set for the trusted profile. To view the conditions for a trusted profile, go to **Manage** > **Access (IAM)** > **Trusted profiles** in the {{site.data.keyword.cloud_notm}} console.
+1. Click the profile and view the **Conditions** column.
+1. If the user's claims satisfy all of the conditions, the user can apply the profile.
 
 If you are using a different IdP, check the user's claims in your corporate directory. Then, compare the claims of the user with the conditions set for the trusted profile. If the claims and the rules match, the user can apply the profile.
 {: note}
@@ -349,7 +349,7 @@ In Kubernetes, a service account provides an identity for processes that run in 
 
 When you establish trust with the Kubernetes service in a trusted profile, you are required to enter information in the `namespace` and `service account` fields. You can enter `default` for both.
 
-For more information, see [Using Trusted Profiles in your Kubernetes and OpenShift Clusters](https://www.ibm.com/cloud/blog/using-trusted-profiles-in-your-kubernetes-and-openshift-clusters) and [Kubernetes namespace](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/){: external}. 
+For more information, see [Using Trusted Profiles in your Kubernetes and OpenShift Clusters](https://www.ibm.com/cloud/blog/using-trusted-profiles-in-your-kubernetes-and-openshift-clusters) and [Kubernetes namespace](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/){: external}.
 
 ## How can I view dynamic members of access groups?
 {: #dynamic-members}
@@ -361,4 +361,4 @@ To view a list of dynamic members in an access group, go to **Manage** > **Acces
 {: #unused-identities}
 {: faq}
 
-To view a list of the inactive identities in your account, go to **Manage** > **Access (IAM)** > **Inactive identities**. You might want to remove inactive identities if they are no longer needed. For more information, see [Identifying inactive identities](/docs/account?topic=account-id-inactive-identities). 
+To view a list of the inactive identities in your account, go to **Manage** > **Access (IAM)** > **Inactive identities**. You might want to remove inactive identities if they are no longer needed. For more information, see [Identifying inactive identities](/docs/account?topic=account-id-inactive-identities).

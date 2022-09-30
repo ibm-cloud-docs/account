@@ -4,10 +4,10 @@ copyright:
 
   years: 2018, 2022
 
-lastupdated: "2022-06-22"
+lastupdated: "2022-09-28"
 
 
-keywords: access groups, access group, create group, assign access to group
+keywords: access groups, access group, create group, assign access to group, administrator, administrator role
 
 subcollection: account
 
@@ -37,7 +37,7 @@ To make assigning and managing access even easier, you can set up resource group
 {: #groups-transcript}
 {: notoc}
 
-Welcome back to another installment of the IBM Cloud Console Guide. In this video, we will be showing you how to set up an access group. 
+Welcome back to another installment of the IBM Cloud Console Guide. In this video, we will be showing you how to set up an access group.
 
 Assigning access to users in IBM Cloud individually can be time consuming, especially if you have a large organization. That’s where access groups come in to play.
 
@@ -47,13 +47,13 @@ The best practice for setting up access groups is to create one access group per
 
 Now that you know what access groups are and why they’re important, let’s go over how to create an access group.
 
-In the IBM Cloud console, click “Manage” and then “Access (IAM).” Then, select “Access Groups” and click “Create.” 
+In the IBM Cloud console, click “Manage” and then “Access (IAM).” Then, select “Access Groups” and click “Create.”
 
-Here you will enter the name and description for the group. Then, click “Create. 
+Here you will enter the name and description for the group. Then, click “Create.
 
 After you create an access group, you can then add users and service IDs to the group (clicks Users and Service ID tabs within the UI for managing the created access group).
 
-Before we dive into how to assign access to the access groups, you need to understand how IAM access policies provide access. A policy consists of a subject, target, and role (clicks Access policies tab). The subject is the access group. The target will be what you want the subject to access. This could be a set of resources, a service instance, all services in the account, or all instances of a service. 
+Before we dive into how to assign access to the access groups, you need to understand how IAM access policies provide access. A policy consists of a subject, target, and role (clicks Access policies tab). The subject is the access group. The target will be what you want the subject to access. This could be a set of resources, a service instance, all services in the account, or all instances of a service.
 
 Access policies can only be set for IAM-enabled services and account management services (clicks "Assign access" button on the Access policies tab for the created access group, then highlights two tiles for IAM-enabled services and Account management services). Cloud Foundry and Classic Infrastructure are separate.
 
@@ -67,11 +67,11 @@ Then, select the name of the access group that you want to assign access.
 
 Select the “Access policies” tab, and then click “Assign access.”
 
-Now you will select the type of access that you want to assign (clicks IAM services, selects All identity and access-enabled services, selects Administrator platform role, selects Reader service role). Then, click “Add” and “Assign.” (Then, clicks "Invite" button.) 
+Now you will select the type of access that you want to assign (clicks IAM services, selects All identity and access-enabled services, selects Administrator platform role, selects Reader service role). Then, click “Add” and “Assign.” (Then, clicks "Invite" button.)
 
 Inviting users to the access group is easy. You can add users directly to each access group by clicking on “Users” and the blue “Invite Users” button.
 
-Thank you for watching this installment of the IBM Cloud Console Guide. 
+Thank you for watching this installment of the IBM Cloud Console Guide.
 
 ## Before you begin
 {: #prereq-create-groups}
@@ -94,7 +94,7 @@ A unique name is required to differentiate access groups in the account. To crea
 1. Click **Create**.
 1. Enter a unique name to identify your access group, an optional description, and click **Create**.
 
-Next, continue to set up your groups by adding users, service IDs, or trusted profiles. You can add users manually or by [creating dynamic rules](/docs/account?topic=account-rules&interface=ui). Or, you can start assigning the group access, and decide who you want to add to the access group later. 
+Next, continue to set up your groups by adding users, service IDs, or trusted profiles. You can add users manually or by [creating dynamic rules](/docs/account?topic=account-rules&interface=ui). Or, you can start assigning the group access, and decide who you want to add to the access group later.
 
 You can delete a group by selecting the **Remove group** option. When you remove a group from the account, you are removing all users and service IDs from the group and all access that is assigned to the group.
 {: note}
@@ -201,7 +201,7 @@ You can create access groups by using Terraform.
 
 1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create access groups by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
 
-   The following example creates an access group by using the `ibm_iam_access_group` resource, where `name` is a unique name to identify the access group. 
+   The following example creates an access group by using the `ibm_iam_access_group` resource, where `name` is a unique name to identify the access group.
 
    ```terraform
    resource "ibm_iam_access_group" "accgrp" {
@@ -212,14 +212,14 @@ You can create access groups by using Terraform.
    {: codeblock}
 
    You can also specify the description of the access group on the `description` option. For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_access_group){: external} page.
-  
+
 1. Initialize the Terraform CLI.
 
    ```bash
    terraform init
    ```
    {: pre}
-   
+
 1. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the access group.
 
    ```bash
@@ -239,18 +239,23 @@ You can create access groups by using Terraform.
 
 After you set up your group with users and service IDs, you can assign a common access policy to the group. Remember, any policy that you set for the group applies to all entities within the group.
 
+Assigning an access group Administrator access on **All Identity and Access enabled services** and **All Account Management services** includes the ability to revoke access for other users with the administrator role by removing them from the group.
+{: important}
+
+Use the following steps to assign access to a group in the console:
+
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Access Groups**.
-1. For the group that you want to assign access, select the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions"), and click **Assign access**. 
+1. For the group that you want to assign access, select the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions"), and click **Assign access**.
 1. You can assign access to only resources that you manage. You must assign at least one access option. For any access options that you don't add and configure, the default value of **No access** is assigned. Depending on the options that you are authorized to manage, you can assign the following types of access:
 
-     * A group of services, like **All Identity and Access enabled services**, **All Account Management services**, or **All IAM Account Management services**. 
+     * A group of services, like **All Identity and Access enabled services**, **All Account Management services**, or **All IAM Account Management services**.
      * A specific service
 
-1. Next, you can scope the access to all resources or specific resources based on selected resource attributes like access management tags, location, or resource group. 
-1. Select all roles that apply. To view what actions are mapped to each role, click the numbers listed next to each role. Some services support the use of advanced operators to grant access to resources that satisfy specific naming conventions. See [Assigning access by using wildcard policies](/docs/account?topic=account-wildcard) for more information.    
-1. Click **Review**. 
+1. Next, you can scope the access to all resources or specific resources based on selected resource attributes like access management tags, location, or resource group.
+1. Select all roles that apply. To view what actions are mapped to each role, click the numbers listed next to each role. Some services support the use of advanced operators to grant access to resources that satisfy specific naming conventions. See [Assigning access by using wildcard policies](/docs/account?topic=account-wildcard) for more information.
+1. Click **Review**.
 1. Click **Add** to add your policy configuration to your policy summary.
-1. Click **Assign**.  
+1. Click **Assign**.
 
 You can also assign access by using access management tags. For more information, see [Controlling access to resources by using tags](/docs/account?topic=account-access-tags-tutorial).
 {: tip}
@@ -489,13 +494,13 @@ You can assign access to a group of services. To assign access to **All Identity
 {: #access_ag_terraform}
 {: terraform}
 
-After you set up your group, you can assign access to it by using Terraform. 
+After you set up your group, you can assign access to it by using Terraform.
 
 1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
 
 1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to assign access to a group by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
 
-   The following examples create an IAM policy that grants members of the access group the IAM `Viewer` platform role to all IAM-enabled services by using the `ibm_iam_access_group_policy` resource. You must have an existing IAM ID of an access group in order to complete the task. 
+   The following examples create an IAM policy that grants members of the access group the IAM `Viewer` platform role to all IAM-enabled services by using the `ibm_iam_access_group_policy` resource. You must have an existing IAM ID of an access group in order to complete the task.
 
    ```terraform
    resource "ibm_iam_access_group" "accgrp" {
@@ -513,14 +518,14 @@ After you set up your group, you can assign access to it by using Terraform.
    {: codeblock}
 
    For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_access_group_policy){: external} page.
-  
+
 1. Initialize the Terraform CLI.
 
    ```bash
    terraform init
    ```
    {: pre}
-   
+
 1. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to assign access to the group.
 
    ```bash
