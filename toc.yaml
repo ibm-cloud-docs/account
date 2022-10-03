@@ -236,7 +236,6 @@
                   label: Managing product versions
                   topics:
                   - catalog-reload-version.md
-                  - catalog-helm-targets.md**
                   - catalog-update-private.md
                   - catalog-deprecate.md
                   - catalog-restore.md
