@@ -227,7 +227,6 @@
                   label: Sharing products
                   topics:
                   - catalog-enterprise-share.md
-                  - catalog-other-share.md
               - topicgroup:
                   label: Customizing access to products
                   topics:
