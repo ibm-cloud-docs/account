@@ -232,14 +232,12 @@
                   topics:
                   - catalog-custom-private.md
                   - catalog-enterprise-filters.md
-                  - catalog-custom-private-object.md
               - topicgroup:
                   label: Managing product versions
                   topics:
                   - catalog-reload-version.md
-                  - catalog-helm-targets.md
+                  - catalog-helm-targets.md**
                   - catalog-update-private.md
-                  - catalog-dep-restore.md
                   - catalog-deprecate.md
                   - catalog-restore.md
                   - catalog-suspend-version.md
@@ -248,14 +246,6 @@
                   topics:
                   - catalog-settings.md
                   - catalog-audit-logs.md
-              - topicgroup:
-                  label: Managing objects in your private catalogs
-                  topics:
-                  - object-onboard-catalog.md
-                  - object-publish.md
-                  - sharing-products-objects.md
-                  - object-deprecate.md
-                  - object-manage.md
               - software-license.md
               - catalog-access-reqs.md
           - topicgroup:
