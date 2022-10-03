@@ -24,6 +24,7 @@ Trusted profiles are used to automatically grant federated users access to your 
 You can also monitor active user login sessions. For more information, see [Monitoring login sessions](/docs/account?topic=account-end-user-sessions).
 
 ## Before you begin
+{: #before-monitor}
 
 You must create an instance of the {{site.data.keyword.cloudaccesstrailshort}} service in the Frankfurt (eu-de) region to monitor events for IAM trusted profiles. For more information, see [Provisioning an instance](/docs/activity-tracker?topic=activity-tracker-provision).
 
@@ -32,20 +33,20 @@ You must create an instance of the {{site.data.keyword.cloudaccesstrailshort}} s
 
 Complete the following steps to review login sessions by using {{site.data.keyword.cloudaccesstrailshort}}:
 
-1. In the {{site.data.keyword.cloud_notm}} console, go to the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Observability** > **{{site.data.keyword.cloudaccesstrailshort}}**. 
-1. Click **Open dashboard** on the dashboard that you use to monitor trusted profiles. 
-1. Click **Sources** and select **iam-identity** to filter the results and view only IAM Identity login events. 
+1. In the {{site.data.keyword.cloud_notm}} console, go to the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Observability** > **{{site.data.keyword.cloudaccesstrailshort}}**.
+1. Click **Open dashboard** on the dashboard that you use to monitor trusted profiles.
+1. Click **Sources** and select **iam-identity** to filter the results and view only IAM Identity login events.
 1. Use the search field to view trusted profiles login events for users or to view trusted profiles login events for compute resources.
-   1. For users, search `action:iam-identity.user-authcode OR action:iam-identity.user-identitycookie.login`. 
-      * `action:iam-identity.user-authcode` indicates a login that is initiated by the user. 
-      * `action:iam-identity.user-identitycookie.login` indicates an authentication that is based on a browser cookie. 
+   1. For users, search `action:iam-identity.user-authcode OR action:iam-identity.user-identitycookie.login`.
+      * `action:iam-identity.user-authcode` indicates a login that is initiated by the user.
+      * `action:iam-identity.user-identitycookie.login` indicates an authentication that is based on a browser cookie.
    1. For compute resources, search `action:iam-identity.computeresource-token.login`.
-1. Select an event to view the fields that have identifying information: 
-   * The `Initiator.authnId` and `Initiator.authnName` attributes contain the details for the authenticated user that applies a profile. 
+1. Select an event to view the fields that have identifying information:
+   * The `Initiator.authnId` and `Initiator.authnName` attributes contain the details for the authenticated user that applies a profile.
    * The `Initiator.id` and `Initiatior.name` attributes contain the details of the profile that is applied.
 
 
-### Examples 
+### Examples
 {: #trusted-profile-monitor-example}
 
 A compute resource that's applying trusted profile `compute-profile-1` has the following identifying attributes:
