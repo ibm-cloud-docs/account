@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2022
 
-lastupdated: "2022-09-28"
+lastupdated: "2022-10-04"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, access management service, catalog management service, cloud shell service, software instance service
 
@@ -172,7 +172,7 @@ You can give users access to manage service IDs and identity providers (IdPs) by
 |---------------|----------------------------------------------------------------------------------------------------|
 | Viewer        | View IDs              |
 | Operator      | Create and delete IDs and API keys   \n  \n View, create, update, and delete IdPs   \n  \n Update IAM account setting for service IDs and user API key creation   \n  \n Delete trusted profiles         |
-| Editor        | Create, update, and delete IDs and API keys   \n  \n View and update IdPs   \n  \n Update IAM account setting for service IDs and user API key creation   \n  \n Update trusted profiles      |
+| Editor        | Create and update IDs and API keys   \n  \n View and update IdPs   \n  \n Update IAM account setting for service IDs and user API key creation   \n  \n Update trusted profiles      |
 | Administrator | Create, update, and delete IDs and API keys   \n  \n Assign access policies to IDs   \n  \n View, create, update, and delete IdPs   \n  \n Update IAM account setting for service IDs and user API key creation   \n  \n Create trusted profiles |
 | User API Key Creator | Can create API keys when the account setting to restrict API key creation is enabled. |
 | Service ID Creator | Can create service IDs when the account setting to restrict service ID creation is enabled. |
@@ -1088,7 +1088,7 @@ You can give users access to manage service IDs and identity providers (IdPs) by
 |---------------|---------------------------------------------------------------------------------------------------|------------|
 | Viewer        | View IDs              | `crn:v1:bluemix:public:iam::::role:Viewer` |
 | Operator      | Create and delete IDs and API keys   \n  \n View, create, update, and delete IdPs   \n  \n Update IAM account setting for service IDs and user API key creation   \n  \n Delete trusted profiles         | `crn:v1:bluemix:public:iam::::role:Operator` |
-| Editor        | Create, update, and delete IDs and API keys   \n  \n View and update IdPs   \n  \n Update IAM account setting for service IDs and user API key creation   \n  \n Update trusted profiles | `crn:v1:bluemix:public:iam::::role:Editor` |
+| Editor        | Create and update IDs and API keys   \n  \n View and update IdPs   \n  \n Update IAM account setting for service IDs and user API key creation   \n  \n Update trusted profiles | `crn:v1:bluemix:public:iam::::role:Editor` |
 | Administrator | Create, update, and delete IDs and API keys   \n  \n Assign access policies to IDs   \n  \n View, create, update, and delete IdPs   \n  \n Update IAM account setting for service IDs and user API key creation   \n  \n Create trusted profiles | `crn:v1:bluemix:public:iam::::role:Administrator` |
 | User API Key Creator | Can create API keys when the account setting to restrict API key creation is enabled. | `crn:v1:bluemix:public:iam-identity::::serviceRole:UserApiKeyCreator` |
 | Service ID Creator | Can create service IDs when the account setting to restrict service ID creation is enabled. | `crn:v1:bluemix:public:iam-identity::::serviceRole:ServiceIdCreator` |
@@ -1404,7 +1404,7 @@ You can give users access to manage service IDs and identity providers (IdPs) by
 |---------------|----------------------------------------------------------------------------------------------------|
 | Viewer        | View IDs              |
 | Operator      | Create and delete IDs and API keys   \n  \n View, create, update, and delete IdPs   \n  \n Update IAM account setting for service IDs and user API key creation   \n  \n Delete trusted profiles         |
-| Editor        | Create, update, and delete IDs and API keys   \n  \n View and update IdPs   \n  \n Update IAM account setting for service IDs and user API key creation   \n  \n Update trusted profiles      |
+| Editor        | Create and update IDs and API keys   \n  \n View and update IdPs   \n  \n Update IAM account setting for service IDs and user API key creation   \n  \n Update trusted profiles      |
 | Administrator | Create, update, and delete IDs and API keys   \n  \n Assign access policies to IDs   \n  \n View, create, update, and delete IdPs   \n  \n Update IAM account setting for service IDs and user API key creation   \n  \n Create trusted profiles |
 | User API Key Creator | Can create API keys when the account setting to restrict API key creation is enabled. |
 | Service ID Creator | Can create service IDs when the account setting to restrict service ID creation is enabled. |
@@ -1705,7 +1705,7 @@ You can give users access to manage service IDs and identity providers (IdPs) by
 |---------------|----------------------------------------------------------------------------------------------------|
 | Viewer        | View IDs              |
 | Operator      | Create and delete IDs and API keys   \n  \n View, create, update, and delete IdPs   \n  \n Update IAM account setting for service IDs and user API key creation   \n  \n Delete trusted profiles         |
-| Editor        | Create, update, and delete IDs and API keys   \n  \n View and update IdPs   \n  \n Update IAM account setting for service IDs and user API key creation   \n  \n Update trusted profiles      |
+| Editor        | Create and update IDs and API keys   \n  \n View and update IdPs   \n  \n Update IAM account setting for service IDs and user API key creation   \n  \n Update trusted profiles      |
 | Administrator | Create, update, and delete IDs and API keys   \n  \n Assign access policies to IDs   \n  \n View, create, update, and delete IdPs   \n  \n Update IAM account setting for service IDs and user API key creation   \n  \n Create trusted profiles |
 | User API Key Creator | Can create API keys when the account setting to restrict API key creation is enabled. |
 | Service ID Creator | Can create service IDs when the account setting to restrict service ID creation is enabled. |
