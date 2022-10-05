@@ -5,7 +5,7 @@
 copyright:
 
   years: 2017, 2022
-lastupdated: "2022-09-26"
+lastupdated: "2022-10-05"
 
 keywords: resource group, account resources, users access to resource groups, create resource group, create resource group in the console, create resource group CLI, create resource group API, create resource group Terraform
 
@@ -14,20 +14,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:terraform: .ph data-hd-interface='terraform'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Managing resource groups
 {: #rgs}
@@ -377,6 +364,9 @@ See [Managing catalog settings](/docs/account?topic=account-filter-account#set-p
 {: ui}
 
 To easily view the resources that are assigned to a resource group, go to the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **Resource list**. Then, filter by resource group.
+
+If you can't find your classic infrastructure resource on the Resource list page, check the Device list by clicking **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **Classic infrastructure** > **Device list**.
+{: tip}
 
 ## Viewing resources by using the CLI
 {: #viewing-rgs-cli}
