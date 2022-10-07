@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2022
-lastupdated: "2022-09-28"
+lastupdated: "2022-10-07"
 
 keywords: frequently asked questions, iam faqs, administrator, administrator role
 
@@ -225,6 +225,7 @@ To assign a user in your account full administrator access, go to **Manage > Acc
 * An IAM policy with Administrator role on **All Account Management services**, which enables a user to complete tasks like inviting and removing users, managing access groups, managing service IDs, managing private catalog offerings, and track billing and usage.
 * The Super user permission set for classic infrastructure, which includes all of the available classic infrastructure permissions
 * Cloud Foundry manager for all orgs, but only account owners can create the orgs.
+* A trusted profile set as the alternative account owner has the highest level of classic infrastructure permissions and has both IAM policies that grant full access. For more information, see [Setting an alternative account owner](/docs/account?topic=account-classic-infra-owner&interface=ui).
 
 ## Can every user in my account see all the other users?
 {: #users}

@@ -266,7 +266,11 @@
               - account_settings.md
               - account-upgrade.md
               - create-mult-accounts.md
-              - transfer.md
+              - topicgroup:
+                  label: Updating account ownership
+                  topics:
+                    - transfer.md
+                    - owner-classic.md
               - profile.md
               - contact_info.md
               - feature_codes.md

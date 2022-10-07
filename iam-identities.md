@@ -4,7 +4,7 @@ copyright:
 
   years: 2022
 
-lastupdated: "2022-06-17"
+lastupdated: "2022-10-07"
 
 keywords: what is IAM, IAM features, IAM API, how IAM works
 
@@ -29,13 +29,13 @@ Removing access for inactive identities can reduce the risk of unauthorized acce
 ## Users
 {: #users-bestpract}
 
-User IDs are best used when a person needs a digital identity in an account. Users are invited to the account and given access to the resources in the account. Users log in by using their IBMid, SoftLayer ID, {{site.data.keyword.appid_short}} user ID, or federated user ID. Each user is also identified by a generated ID called an IAM ID. 
+User IDs are best used when a person needs a digital identity in an account. Users are invited to the account and given access to the resources in the account. Users log in by using their IBMid, SoftLayer ID, {{site.data.keyword.appid_short}} user ID, or federated user ID. Each user is also identified by a generated ID called an IAM ID.
 
 IAM IDs always include a realm to identify the provider of the user, such as IBMid or an external identity provider. In the IAM ID, the realm is followed by a series of numbers that is a unique identifier. For example, the IAM ID for a user with an IBMid would look like `IBMid-20000AB1C`.
 
 IAM IDs are most commonly used when you assign access to others by using the API. They are used to identify a user, service ID, trusted profile, or resource. The IAM ID is included in the token when used in the console, CLI, or API. Access policies are defined by using IAM IDs since it is the identity that can be verified in the IAM token.
 
-To find your IAM ID, go to **Manage** >  **Access (IAM)**. You can see your IAM ID in the My user details section. To view other users' IAM IDs, go to **Manage** > **Access (IAM)** > **Users**, then select a user's name from the list and click **Details**. 
+To find your IAM ID, go to **Manage** >  **Access (IAM)**. You can see your IAM ID in the My user details section. To view other users' IAM IDs, go to **Manage** > **Access (IAM)** > **Users**, then select a user's name from the list and click **Details**.
 
 ### User API keys
 {: #user-api-key}
@@ -44,7 +44,7 @@ To find your IAM ID, go to **Manage** >  **Access (IAM)**. You can see your IAM 
 
 For more information about using an API key associated with your user identity, see [Managing user API keys](/docs/account?topic=account-userapikey).
 
-### Federating users to {{site.data.keyword.cloud_notm}} 
+### Federating users to {{site.data.keyword.cloud_notm}}
 {: #federation-iam}
 
 {{site.data.keyword.cloud_notm}} offers two ways for you to federate your corporate identity provider (IdP), which simplifies login by giving your employees access to {{site.data.keyword.cloud_notm}} with their company username and password. You can [federate with IBMid](https://ibm.box.com/v/IBMid-Federation-Guide){: external}, or you have the option to create an {{site.data.keyword.appid_full_notm}} service instance and use that as a way to federate users into an {{site.data.keyword.cloud_notm}} account. For more information, see [Enabling authentication from an external identity provider](/docs/account?topic=account-idp-integration).
@@ -64,21 +64,24 @@ The functional ID is used to create service instances, like {{site.data.keyword.
 
 {{site.data.keyword.cloud_notm}} API keys for users can be created and associated with a functional ID. If a service requires a user API key for interacting with other services or applications, use the functional ID API key. By using the API key that is associated with the functional ID, you can provide only the access that is needed for that service.
 
-## Service IDs 
+If you're using a functional ID as the account owner, instead consider [Setting an alternative account owner](/docs/account?topic=account-classic-infra-owner&interface=ui). This is available only for classic infrastructure accounts.
+{: tip}
+
+## Service IDs
 {: #serviceid-bestpract}
 
-Service IDs are another type of identity that is used in an account. Service IDs are used to provide a separate identity for services and applications. Service IDs are best used when an application or service needs a digital identity and needs access to only IAM-enabled resources. You can create a service ID to be used by an application that needs access to your {{site.data.keyword.cloud_notm}} services so that individual user credentials don't need to be used. 
+Service IDs are another type of identity that is used in an account. Service IDs are used to provide a separate identity for services and applications. Service IDs are best used when an application or service needs a digital identity and needs access to only IAM-enabled resources. You can create a service ID to be used by an application that needs access to your {{site.data.keyword.cloud_notm}} services so that individual user credentials don't need to be used.
 
 You can also use API keys that are associated with service IDs that you create. Service ID API key credentials can be used to make API and CLI calls. For more information about creating API keys associated with a service ID, see [Managing service ID API keys](/docs/account?topic=account-serviceidapikeys#serviceidapikeys).
 
 ## Trusted profiles
 {: #trustedprofiles-bestpract}
 
-Similar to other identities within IAM, trusted profiles are treated as a subject that is granted access in IAM policies. 
+Similar to other identities within IAM, trusted profiles are treated as a subject that is granted access in IAM policies.
 
-Usually, for a user to take an action on a resource within an account, that identity must explicitly be added to the account. With trusted profiles, it is possible for a user to complete the actions without being invited to an account. Instead, they are automatically granted access to resources when they apply the trusted profile identity during login. Only users federated by an external IdP can be mapped to trusted profiles during login by evaluating SAML-based attributes to determine which profiles their identity can apply. 
+Usually, for a user to take an action on a resource within an account, that identity must explicitly be added to the account. With trusted profiles, it is possible for a user to complete the actions without being invited to an account. Instead, they are automatically granted access to resources when they apply the trusted profile identity during login. Only users federated by an external IdP can be mapped to trusted profiles during login by evaluating SAML-based attributes to determine which profiles their identity can apply.
 
-Similarly, instead of creating a service ID, generating an API key, and getting the application to store and validate that key, you can create [trusted profiles for compute resources](/docs/account?topic=account-create-trusted-profile) to define fine-grained authorization for all applications that are running in a compute resource. Compute resources become identities when used as part of a trusted profile. Trust with compute resources is established by conditions based on resource attributes, or creating a direct link to a specific resource. 
+Similarly, instead of creating a service ID, generating an API key, and getting the application to store and validate that key, you can create [trusted profiles for compute resources](/docs/account?topic=account-create-trusted-profile) to define fine-grained authorization for all applications that are running in a compute resource. Compute resources become identities when used as part of a trusted profile. Trust with compute resources is established by conditions based on resource attributes, or creating a direct link to a specific resource.
 
 ## Resource identities
 {: #resources-bestpract}
@@ -87,4 +90,3 @@ The final piece of the identity concept in IAM is {{site.data.keyword.cloud_notm
 
 
 For more information, see [Cloud Resource Names](/docs/account?topic=account-crn) and [Using authorizations to grant access between services](/docs/account?topic=account-serviceauth).
-
