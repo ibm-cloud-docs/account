@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-08-15"
+lastupdated: "2022-10-10"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, Cloud Foundry, endpoint type
 
@@ -93,7 +93,7 @@ To manage network zones, you must be assigned a specific role for the context-ba
 | Viewer        | View network zones                                               |
 | Editor        | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones  |
 | Administrator | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones  |
-{: caption="Table 2. Roles and example actions for network zones" caption-side="top"}
+{: caption="Table 1. Roles and example actions for network zones" caption-side="top"}
 
 For more information, see [Actions and roles for account management services](/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles).
 
@@ -133,7 +133,7 @@ To manage network zones, you must be assigned an IAM policy with a specific role
 | Viewer        | View network zones|
 | Editor        | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones  |
 | Administrator | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones |
-{: caption="Table 1. Roles and actions for the Context-based restrictions service" caption-side="top"}
+{: caption="Table 2. Roles and actions for the Context-based restrictions service" caption-side="top"}
 
 For more information, see [Actions and roles for account management services](/docs/account?topic=account-account-services&interface=ui).
 
@@ -147,7 +147,7 @@ To manage rules, you must be assigned an IAM policy with the Administrator role 
 | Viewer        | View rules |
 | Editor        | View rules |
 | Administrator | View rules   \n  \n Create rules   \n  \n Update rules   \n  \n Remove rules |
-{: caption="Table 2. Roles and example actions for target service" caption-side="top"}
+{: caption="Table 3. Roles and example actions for target service" caption-side="top"}
 
 
 ## Services integrated with context-based restrictions
@@ -167,7 +167,7 @@ You can create context-based restrictions for the following services if you are 
 | {{site.data.keyword.codeengineshort}} | IAM-enabled |
 | {{site.data.keyword.registryshort}} | IAM-enabled |
 | {{site.data.keyword.keymanagementserviceshort}} | IAM-enabled |
-{: caption="Table 3. Services that are compatible with context-based restrictions." caption-side="top"}
+{: caption="Table 4. Services that are compatible with context-based restrictions." caption-side="top"}
 
 
 Context-based restrictions that are defined for IAM-enabled services do not apply to platform actions like create or delete. For more information, see [IAM roles and actions](/docs/account?topic=account-iam-service-roles-actions). 
