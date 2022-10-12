@@ -71,6 +71,11 @@
           "description": "As the owner of an account with classic infrastructure, you can set a trusted profile as the alternative account owner. An alternative account owner ensures that you always have a secure way to manage account ownership if your account owner leaves your organization or isn't available."
         },
         {
+          "date": "04 October 2022",
+          "title": "Catalog integration with Virtual Private Cloud custom images",
+          "description": "ISV Partners and IBM Cloud customers can now import custom VPC images directly to their account or enterprise, or sell on the IBM Cloud catalog without depending on Terraform."
+        },
+        {
           "date": "29 September 2022",
           "title": "Enabling IBM Cloud Event Notifications for the notification distribution list",
           "description": "You can now easily add Event Notifications instances to the notification distribution list and receive account-wide IBM Cloud notifications. With Event Notifications, you can choose to deliver your notifications to different destinations, including email, SMS, or webhooks. When an event of interest occurs on the IBM Cloud platform and an event is generated, the notification distribution list communicates with a connected Event Notifications instance to forward a notification to the supported destination."
