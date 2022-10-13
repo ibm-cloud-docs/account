@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-10-10"
+lastupdated: "2022-10-13"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, Cloud Foundry, endpoint type
 
@@ -27,7 +27,7 @@ For an example scenario on creating context-based restrictions, follow the tutor
 {: #restriction-rules}
 {: #context-restrictions-rule-whatis}
 
-A rule associates an {{site.data.keyword.cloud}} resource with a set of contexts: 
+A rule associates an {{site.data.keyword.cloud}} resource with a set of contexts:
 * The cloud resource is specified by resource attributes similar to IAM access policies.
 * A context is a combination of network zones and endpoint types.
 
@@ -41,24 +41,24 @@ Context-based restriction rules are applied by the following logic:
 * If multiple rules are applicable to a particular resource, access is granted only when all applicable rules allow access.
 * If no rules are applicable to a particular resource, access is determined exclusively by IAM policies.
 
-Unlike IAM policies, context-based restrictions don't assign access. Context-based restrictions check that an access request comes from an allowed context that you configure. 
+Unlike IAM policies, context-based restrictions don't assign access. Context-based restrictions check that an access request comes from an allowed context that you configure.
 {: note}
 
-### Rule enforcement 
+### Rule enforcement
 {: #rule-enforcement}
 
 You can decide how you want to enforce a rule upon creation and update the rule enforcement at any time.
 * **Enabled**: Enforce the rule. Denied access attempts are reported in {{site.data.keyword.at_short}}.
-* **Disabled**: No restrictions apply to your account resources. Select this option if you're not ready to enable the rule. 
+* **Disabled**: No restrictions apply to your account resources. Select this option if you're not ready to enable the rule.
 * **Report-only**: Monitor how the rule affects users without enforcing it. All attempts to access resources in the account are logged in {{site.data.keyword.at_short}}. Monitoring is recommended for 30 days before you enforce the rule.
 
-You can monitor the impact of your enabled and report-only rules. For more information, see [Monitoring context-based restrictions](/docs/account?topic=account-cbr-monitor). 
+You can monitor the impact of your enabled and report-only rules. For more information, see [Monitoring context-based restrictions](/docs/account?topic=account-cbr-monitor).
 {: tip}
 
-## Contexts 
+## Contexts
 {: #restriction-context}
 
-Contexts define where your resource can be accessed. A context is made up of the allowed endpoint types and network zones that you configure. 
+Contexts define where your resource can be accessed. A context is made up of the allowed endpoint types and network zones that you configure.
 
 * If a context includes network zones, then access is granted only when the request is created from within one of those zones.
 * If a context includes service endpoint types, then access is granted only when the request is received over a connection that matches one of those types.
@@ -70,12 +70,12 @@ Contexts define where your resource can be accessed. A context is made up of the
 A network zone represents an allowlist of IP addresses where an access request is created. It defines a set of one or more network locations that are specified by the following attributes:
 * IP addresses, which include individual addresses, ranges, or subnets.
 * VPCs
-* Service references, which allow access from other {{site.data.keyword.cloud}} services. 
+* Service references, which allow access from other {{site.data.keyword.cloud}} services.
 
 #### IP addresses
 {: #ip-attribute}
 
-Customers can specify the IP addresses they know that they want to be able to send traffic from. Anything outside of the specified IP addresses is denied. 
+Customers can specify the IP addresses they know that they want to be able to send traffic from. Anything outside of the specified IP addresses is denied.
 
 #### VPCs
 {: #vpc-attribute}
@@ -87,7 +87,7 @@ If you have apps that are deployed in a VPC that need access to a context-based 
 
 A service reference represents the network locations of a service or service-instance. Including a service reference to a network zone adds the IP addresses associated with the service to your allowlist without requiring you to know their underlying IP addresses. Service references are helpful since the network locations of cloud services are unknown to the context-based restriction administrator, and can change over time.
 
-To manage network zones, you must be assigned a specific role for the context-based restriction account management service: 
+To manage network zones, you must be assigned a specific role for the context-based restriction account management service:
 | Roles         | Actions                                                                                                |
 |---------------|--------------------------------------------------------------------------------------------------------|
 | Viewer        | View network zones                                               |
@@ -116,9 +116,9 @@ Some endpoint types might not be supported by the selected service.
 ## Access requirements
 {: cbr-access-reqs}
 
-To complete rule actions, you must be assigned an IAM policy on the target service. To complete network zone actions, you must be assigned an IAM policy on the context-based restrictions service. 
+To complete rule actions, you must be assigned an IAM policy on the target service. To complete network zone actions, you must be assigned an IAM policy on the context-based restrictions service.
 
-To create a context-based restriction for a service, you must be assigned an IAM policy with the Administrator role the service you are creating a rule against. For example, if you want to create a rule to protect a **Key Protect** instance, you must be assigned the Administrator role on the **Key Protect** service and the Viewer role or higher on the  **Context-based restrictions** service. 
+To create a context-based restriction for a service, you must be assigned an IAM policy with the Administrator role the service you are creating a rule against. For example, if you want to create a rule to protect a **Key Protect** instance, you must be assigned the Administrator role on the **Key Protect** service and the Viewer role or higher on the  **Context-based restrictions** service.
 
 The Viewer role on the Context-based restrictions service allows you to add network zones to your rule.
 {: tip}
@@ -166,12 +166,22 @@ You can create context-based restrictions for the following services if you are 
 | {{site.data.keyword.cos_full_notm}} | IAM-enabled |
 | {{site.data.keyword.codeengineshort}} | IAM-enabled |
 | {{site.data.keyword.registryshort}} | IAM-enabled |
+| {{site.data.keyword.databases-for-cassandra}} | IAM-enabled |
+| {{site.data.keyword.databases-for-enterprisedb}} | IAM-enabled |
+| {{site.data.keyword.databases-for-elasticsearch}} | IAM-enabled |
+| {{site.data.keyword.databases-for-etcd}} | IAM-enabled |
+| {{site.data.keyword.databases-for-mongodb}} | IAM-enabled |
+| {{site.data.keyword.databases-for-mysql}} | IAM-enabled |
+| {{site.data.keyword.databases-for-postgresql}} | IAM-enabled |
+| {{site.data.keyword.databases-for-redis}} | IAM-enabled |
+| {{site.data.keyword.messagehub}} | IAM-enabled |
 | {{site.data.keyword.keymanagementserviceshort}} | IAM-enabled |
+| {{site.data.keyword.messages-for-rabbitmq}} | IAM-enabled |
 {: caption="Table 4. Services that are compatible with context-based restrictions." caption-side="top"}
 
 
-Context-based restrictions that are defined for IAM-enabled services do not apply to platform actions like create or delete. For more information, see [IAM roles and actions](/docs/account?topic=account-iam-service-roles-actions). 
+Context-based restrictions that are defined for IAM-enabled services do not apply to platform actions like create or delete. For more information, see [IAM roles and actions](/docs/account?topic=account-iam-service-roles-actions).
 {: important}
 
 Check back regularly to see what services are added as more services integrate with context-based restrictions.
-{: note} 
+{: note}
