@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2022-04-04"
+lastupdated: "2022-10-14"
 
 keywords: manage account, account events, track events, account tracking, monitoring, catalog tracking, catalog management
 
@@ -18,7 +18,7 @@ subcollection: account
 As a security officer, auditor, or manager, you can use the {{site.data.keyword.at_full}} service to track how users and applications interact with an {{site.data.keyword.Bluemix}} account, the {{site.data.keyword.Bluemix_notm}} catalog, private catalogs, and with {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM).
 {: shortdesc}
 
-To get started with monitoring your user's actions, see [{{site.data.keyword.at_short}}](/docs/activity-tracker?topic=activity-tracker-getting-started#getting-started). 
+To get started with monitoring your user's actions, see [{{site.data.keyword.at_short}}](/docs/activity-tracker?topic=activity-tracker-getting-started#getting-started).
 
 ## Account management events
 {: #account-management-events}
@@ -32,7 +32,7 @@ You can track the following events:
 ## IAM events
 {: #tracking-iam}
 
-You must create an instance of the {{site.data.keyword.at_short}} service in the `eu-de` region to start tracking IAM events. When you create the instance, you can track the following events:
+You must create an instance of the {{site.data.keyword.at_short}} service in the `Frankfurt (eu-de)` region to start tracking IAM events. When you create the instance, you can track the following events:
 
 * Managing access groups by creating and deleting groups or adding and removing users
 * Creating, updating, or deleting service IDs
@@ -55,7 +55,7 @@ You can track the following events:
 * Listing all products in an account
 * Creating, updating, viewing, or deleting a product
 
-`unavailable` indicates when an update is made, but specific details about the update aren't included. 
+`unavailable` indicates when an update is made, but specific details about the update aren't included.
 {: important}
 
 For more information, see [Account management events](/docs/activity-tracker?topic=activity-tracker-at_events_acc_mgt).
