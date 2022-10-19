@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-10-18"
+lastupdated: "2022-10-19"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3296,7 +3296,7 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
-| Usage Reports Viewer | As a usage reports viewer, you can view usage reports of entities under the enterprise hierarchy |
+| Usage Report Viewer | Usage report viewers can view the usage reports for the entire enterprise, an account group and its accounts, or a specific account. |
 {: row-headers}
 {: caption="Table 57. Service roles - IBM Cloud Platform Enterprise Service" caption-side="top"}
 {: #service-roles-table57}
@@ -3309,36 +3309,38 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- | :----- |
 | `enterprise.enterprise.create` |  | Administrator |
 | `enterprise.enterprise.update` |  | Administrator, Editor |
-| `enterprise.enterprise.retrieve` | Retrieve an enterprise in IBM Cloud. | Administrator, Editor, Operator, Usage Reports Viewer, Viewer |
+| `enterprise.enterprise.retrieve` |  | Administrator, Editor, Operator, Usage Report Viewer, Viewer |
 | `enterprise.enterprise.import` |  | Administrator, Editor |
-| `enterprise.enterprise.retrieve-usage-report` |  | Administrator, Editor, Usage Reports Viewer |
+| `enterprise.enterprise.retrieve-usage-report` |  | Administrator, Editor, Usage Report Viewer |
+| `enterprise.enterprise.attach-config-rules` |  | Administrator |
+| `enterprise.enterprise.detach-config-rules` |  | Administrator |
+| `enterprise.enterprise.update-config-rules` |  | Administrator |
+| `enterprise.enterprise.attach-templates` |  | Administrator |
+| `enterprise.enterprise.detach-templates` |  | Administrator |
+| `enterprise.enterprise.update-templates` |  | Administrator |
 | `enterprise.account-group.create` |  | Administrator, Editor |
 | `enterprise.account-group.update` |  | Administrator, Editor |
-| `enterprise.account-group.retrieve` | Retrieve account groups within an enterprise. | Administrator, Editor, Operator, Usage Reports Viewer, Viewer |
-| `enterprise.account-group.retrieve-usage-report` | Retrieve resource usage reports of the resources in the account-group | Administrator, Editor, Usage Reports Viewer |
+| `enterprise.account-group.delete` |  | Administrator, Editor |
+| `enterprise.account-group.retrieve` |  | Administrator, Editor, Operator, Usage Report Viewer, Viewer |
+| `enterprise.account-group.retrieve-usage-report` |  | Administrator, Editor, Usage Report Viewer |
+| `enterprise.account-group.attach-config-rules` |  | Administrator |
+| `enterprise.account-group.detach-config-rules` |  | Administrator |
+| `enterprise.account-group.update-config-rules` |  | Administrator |
+| `enterprise.account-group.attach-templates` |  | Administrator |
+| `enterprise.account-group.detach-templates` |  | Administrator |
+| `enterprise.account-group.update-templates` |  | Administrator |
 | `enterprise.account.create` |  | Administrator, Editor |
 | `enterprise.account.update` |  | Administrator, Editor |
 | `enterprise.account.move` |  | Administrator |
-| `enterprise.account.retrieve` | Retrieve accounts within an enterprise. | Administrator, Editor, Operator, Usage Reports Viewer, Viewer |
-| `enterprise.account.retrieve-usage-report` | Retrieve resource usage reports of the resources in the account | Administrator, Editor, Usage Reports Viewer |
-| `enterprise.enterprise.attach-config-rules` | Attach config rules to an enterprise. | Administrator |
-| `enterprise.enterprise.detach-config-rules` | Detach config rules from an enterprise. | Administrator |
-| `enterprise.enterprise.update-config-rules` | Update config rules attached to an enterprise. | Administrator |
-| `enterprise.account-group.attach-config-rules` | Attach config rules to an account group. | Administrator |
-| `enterprise.account-group.detach-config-rules` | Detach config rules from an account group. | Administrator |
-| `enterprise.account-group.update-config-rules` | Update config rules attached to an account group. | Administrator |
-| `enterprise.account.attach-config-rules` | Attach config rules to an account within an enterprise. | Administrator |
-| `enterprise.account.detach-config-rules` | Detach config rules from an account within an enterprise. | Administrator |
-| `enterprise.account.update-config-rules` | Update config rules attached to an account within an enterprise. | Administrator |
-| `enterprise.enterprise.attach-templates` | Attach templates to an enterprise. | Administrator |
-| `enterprise.enterprise.detach-templates` | Detach templates from an enterprise. | Administrator |
-| `enterprise.enterprise.update-templates` | Update templates attached to an enterprise. | Administrator |
-| `enterprise.account-group.attach-templates` | Attach templates to an account group. | Administrator |
-| `enterprise.account-group.detach-templates` | Detach templates from an account group. | Administrator |
-| `enterprise.account-group.update-templates` | Update templates attached to an account group. | Administrator |
-| `enterprise.account.attach-templates` | Attach templates to an account within an enterprise. | Administrator |
-| `enterprise.account.detach-templates` | Detach templates from an account within an enterprise. | Administrator |
-| `enterprise.account.update-templates` | Update templates attached to an account within an enterprise. | Administrator |
+| `enterprise.account.delete` |  | Administrator, Editor |
+| `enterprise.account.retrieve` |  | Administrator, Editor, Operator, Usage Report Viewer, Viewer |
+| `enterprise.account.retrieve-usage-report` |  | Administrator, Editor, Usage Report Viewer |
+| `enterprise.account.attach-config-rules` |  | Administrator |
+| `enterprise.account.detach-config-rules` |  | Administrator |
+| `enterprise.account.update-config-rules` |  | Administrator |
+| `enterprise.account.attach-templates` |  | Administrator |
+| `enterprise.account.detach-templates` |  | Administrator |
+| `enterprise.account.update-templates` |  | Administrator |
 {: caption="Table 57. Service actions - IBM Cloud Platform Enterprise Service" caption-side="top"}
 {: #actions-table57}
 {: tab-title="Actions"}
