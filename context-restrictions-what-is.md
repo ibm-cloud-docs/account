@@ -163,7 +163,6 @@ You can create context-based restrictions for the following services if you are 
 | IAM Access Management Service | Account Management |
 | IAM Identity Service  | Account Management |
 | IAM User Management | Account Management |
-| [{{site.data.keyword.cos_full_notm}}](/docs/cloud-object-storage?topic=cloud-object-storage-setting-a-firewall) | IAM-enabled |
 | {{site.data.keyword.codeengineshort}} | IAM-enabled |
 | {{site.data.keyword.registryshort}} | IAM-enabled |
 | [{{site.data.keyword.databases-for-cassandra}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
@@ -178,6 +177,7 @@ You can create context-based restrictions for the following services if you are 
 | [{{site.data.keyword.keymanagementserviceshort}}](/docs/key-protect?topic=key-protect-access-control-with-cbr) | IAM-enabled |
 | [{{site.data.keyword.containershort}}](/docs/containers?topic=containers-cbr&interface=ui) | IAM-enabled |
 | [{{site.data.keyword.messages-for-rabbitmq}}](/docs/cloud-databases?topic=cloud-databases-cbr)  | IAM-enabled |
+| [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-setting-a-firewall) | IAM-enabled |
 {: caption="Table 4. Services that are compatible with context-based restrictions." caption-side="top"}
 
 
