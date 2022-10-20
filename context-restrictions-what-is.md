@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-10-13"
+lastupdated: "2022-10-20"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, Cloud Foundry, endpoint type
 
@@ -163,20 +163,21 @@ You can create context-based restrictions for the following services if you are 
 | IAM Access Management Service | Account Management |
 | IAM Identity Service  | Account Management |
 | IAM User Management | Account Management |
-| {{site.data.keyword.cos_full_notm}} | IAM-enabled |
+| [{{site.data.keyword.cos_full_notm}}](/docs/cloud-object-storage?topic=cloud-object-storage-setting-a-firewall) | IAM-enabled |
 | {{site.data.keyword.codeengineshort}} | IAM-enabled |
 | {{site.data.keyword.registryshort}} | IAM-enabled |
-| {{site.data.keyword.databases-for-cassandra}} | IAM-enabled |
-| {{site.data.keyword.databases-for-enterprisedb}} | IAM-enabled |
-| {{site.data.keyword.databases-for-elasticsearch}} | IAM-enabled |
-| {{site.data.keyword.databases-for-etcd}} | IAM-enabled |
-| {{site.data.keyword.databases-for-mongodb}} | IAM-enabled |
-| {{site.data.keyword.databases-for-mysql}} | IAM-enabled |
-| {{site.data.keyword.databases-for-postgresql}} | IAM-enabled |
-| {{site.data.keyword.databases-for-redis}} | IAM-enabled |
+| [{{site.data.keyword.databases-for-cassandra}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
+| [{{site.data.keyword.databases-for-enterprisedb}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
+| [{{site.data.keyword.databases-for-elasticsearch}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
+| [{{site.data.keyword.databases-for-etcd}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
+| [{{site.data.keyword.databases-for-mongodb}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
+| [{{site.data.keyword.databases-for-mysql}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
+| [{{site.data.keyword.databases-for-postgresql}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
+| [{{site.data.keyword.databases-for-redis}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
 | {{site.data.keyword.messagehub}} | IAM-enabled |
-| {{site.data.keyword.keymanagementserviceshort}} | IAM-enabled |
-| {{site.data.keyword.messages-for-rabbitmq}} | IAM-enabled |
+| [{{site.data.keyword.keymanagementserviceshort}}](/docs/key-protect?topic=key-protect-access-control-with-cbr) | IAM-enabled |
+| [{{site.data.keyword.containershort}}](/docs/containers?topic=containers-cbr&interface=ui) | IAM-enabled |
+| [{{site.data.keyword.messages-for-rabbitmq}}](/docs/cloud-databases?topic=cloud-databases-cbr)  | IAM-enabled |
 {: caption="Table 4. Services that are compatible with context-based restrictions." caption-side="top"}
 
 
