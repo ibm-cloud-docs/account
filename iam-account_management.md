@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2022
 
-lastupdated: "2022-10-04"
+lastupdated: "2022-10-25"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, access management service, catalog management service, cloud shell service, software instance service
 
@@ -177,7 +177,7 @@ You can give users access to manage service IDs and identity providers (IdPs) by
 | User API Key Creator | Can create API keys when the account setting to restrict API key creation is enabled. |
 | Service ID Creator | Can create service IDs when the account setting to restrict service ID creation is enabled. |
 {: caption="Table 8. Roles and example actions for the IAM Identity service" caption-side="top"}
-{: #identity-service-acct-mgmt}
+{: #identity-service-acct-mgmt-ui}
 
 ### {{site.data.keyword.cloud-shell_notm}} settings
 {: #shell-service-account-management}
@@ -1093,7 +1093,7 @@ You can give users access to manage service IDs and identity providers (IdPs) by
 | User API Key Creator | Can create API keys when the account setting to restrict API key creation is enabled. | `crn:v1:bluemix:public:iam-identity::::serviceRole:UserApiKeyCreator` |
 | Service ID Creator | Can create service IDs when the account setting to restrict service ID creation is enabled. | `crn:v1:bluemix:public:iam-identity::::serviceRole:ServiceIdCreator` |
 {: caption="Table 9. Roles and example actions for the IAM Identity service" caption-side="top"}
-{: #identity-service-acct-mgmt}
+{: #identity-service-acct-mgmt-api}
 
 ### {{site.data.keyword.cloud-shell_notm}} settings
 {: #shell-service-account-management-api}
@@ -1409,7 +1409,7 @@ You can give users access to manage service IDs and identity providers (IdPs) by
 | User API Key Creator | Can create API keys when the account setting to restrict API key creation is enabled. |
 | Service ID Creator | Can create service IDs when the account setting to restrict service ID creation is enabled. |
 {: caption="Table 9. Roles and example actions for the IAM Identity service" caption-side="top"}
-{: #identity-service-acct-mgmt}
+{: #identity-service-acct-mgmt-cli}
 
 ### {{site.data.keyword.cloud-shell_notm}} settings
 {: #shell-service-account-management-cli}
@@ -1710,7 +1710,7 @@ You can give users access to manage service IDs and identity providers (IdPs) by
 | User API Key Creator | Can create API keys when the account setting to restrict API key creation is enabled. |
 | Service ID Creator | Can create service IDs when the account setting to restrict service ID creation is enabled. |
 {: caption="Table 8. Roles and example actions for the IAM Identity service" caption-side="top"}
-{: #identity-service-acct-mgmt}
+{: #identity-service-acct-mgmt-terra}
 
 ### {{site.data.keyword.cloud-shell_notm}} settings
 {: #shell-service-account-management-terra}
