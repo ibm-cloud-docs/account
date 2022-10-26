@@ -22,7 +22,7 @@ To make your experience with using {{site.data.keyword.Bluemix}} simpler and mor
 
 We're starting to move services from Cloud Foundry to benefit from resource groups, which means when you see the **Migrate** icon ![Migrate this service instance to a resource group](images/migrate.svg "Migrate this service instance to a resource group") next to one of your services on the Resource list page, you must start a migration plan for your service instances or apps that are created through the [{{site.data.keyword.Bluemix_notm}} {{site.data.keyword.dev_console}}](https://cloud.ibm.com/developer/appservice/dashboard){: external} to move from their current Cloud Foundry org and space to a resource group. Until an {{site.data.keyword.Bluemix_notm}} service moves from using Cloud Foundry orgs, spaces, and roles to using IAM and resource groups, you can’t migrate your existing Cloud Foundry service instances to a resource group.
 
-When you migrate existing Cloud Foundry service instances or {{site.data.keyword.dev_console}} apps to a resource group, the group that you choose can't be changed after the migration is complete. So, it's essential to plan how you want to organize resources in the account before you migrate. This might mean that you need to create one or more resource groups, if you have a billable account, before migrating. 
+When you migrate existing Cloud Foundry service instances or {{site.data.keyword.dev_console}} apps to a resource group, the group that you choose can't be changed after the migration is complete. So, it's essential to plan how you want to organize resources in the account before you migrate. This might mean that you need to create one or more resource groups, if you have a billable account, before migrating.
 
 You can try organizing your resources in resource groups the same way you organized resources in Cloud Foundry spaces. For more information about using resource groups, see [Best practices for organizing resources and assigning access](/docs/account?topic=account-account_setup).
 {: tip}
@@ -36,7 +36,7 @@ You can try organizing your resources in resource groups the same way you organi
 
 Services that support Cloud IAM access control and organization within resource groups have several benefits:
 
-* By using fine-grained access control, you can set access to individual service instances or a group of resources that are organized in a resource group. 
+* By using fine-grained access control, you can set access to individual service instances or a group of resources that are organized in a resource group.
 * By using access groups and resource groups to organize users and resources, you set only the minimum number of access policies. For example, if you have a set of developers that you want to all have access to resources for a development environment, you can organize all of those users into a developers access group and then add all the resources that they need access to into a single resource group. Then, you can set a single policy for the access group to have access to all resources in the resource group.
 * You can view usage by resource group similar to the way you might view usage by Cloud Foundry orgs.
 * You can connect to apps and services in any Cloud Foundry space, which allows connections for apps and services from different regions. When you migrate, the connection is done automatically when you turn your original Cloud Foundry service instance into an alias and creating a linked instance in a resource group of your choice. The following graphic shows how the connection by using an alias works.
@@ -46,12 +46,12 @@ Services that support Cloud IAM access control and organization within resource 
 ### {{site.data.keyword.dev_console}} apps
 {: #app_services}
 
-Previously, {{site.data.keyword.dev_console}} apps might be associated only with Cloud Foundry service instances. Now, if you migrate your apps to a resource group, you can associate your apps with service instances that belong to a resource group and support Cloud IAM access control. 
+Previously, {{site.data.keyword.dev_console}} apps might be associated only with Cloud Foundry service instances. Now, if you migrate your apps to a resource group, you can associate your apps with service instances that belong to a resource group and support Cloud IAM access control.
 
 ## Who can migrate?
 {: #whocanmigrate}
 
-### Required access for service instances 
+### Required access for service instances
 {: #required_access_instances}
 
 Users must have specific access to migrate Cloud Foundry service instances to a resource group:
@@ -98,7 +98,7 @@ After you successfully migrate an instance, you see it in the Services section o
 
 Apps are migrated one at a time by clicking the ![Migrate this service instance to a resource group](images/migrate.svg "Migrate this service instance to a resource group") icon associated with each entry in your App List view.
 
-1. Select the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu"), and select the developer portal of interest such as Watson or App Development, for example.
+1. Select the **Navigation menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu"), and select the developer portal of interest such as Watson or App Development, for example.
 2. Select **Apps**, which displays the lists **Apps (Action required)** and **Apps (migrated)**.
 3. For each entry in the **Apps (Action required)** list, click the **Migrate** icon ![Migrate this service instance to a resource group](images/migrate.svg "Migrate this service instance to a resource group").
 4. Select or create a new resource group.
@@ -114,7 +114,7 @@ After you migrate your Cloud Foundry service instances to a resource group, you 
 
 For more information about assigning access to resources in your resource groups, see [Managing access to resources](/docs/account?topic=account-assign-access-resources#assign-access-resources).
 
-Also, make sure to review the documentation for your service to see whether any updates for your existing apps must be made after the migration is complete. 
+Also, make sure to review the documentation for your service to see whether any updates for your existing apps must be made after the migration is complete.
 
 
 ## Troubleshooting

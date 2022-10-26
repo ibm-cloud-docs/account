@@ -17,7 +17,7 @@ completion-time: 10m
 
 # Controlling access to resources by using tags
 {: #access-tags-tutorial}
-{: toc-content-type="tutorial"} 
+{: toc-content-type="tutorial"}
 {: toc-completion-time="10m"}
 
 This tutorial guides you through the steps to centrally manage access to the resources in your account at scale. By completing this tutorial, you learn how to create an access management tag, add the tag to selected resources, and define a policy to assign access to resources based on the tags on those resources.
@@ -43,7 +43,7 @@ If you are new to using IAM, check out the following resources to learn more abo
 {: #tagging-resources-create}
 {: step}
 
-Before you can add an access management tag to your {{site.data.keyword.cos_short}}, you need to create it first. 
+Before you can add an access management tag to your {{site.data.keyword.cos_short}}, you need to create it first.
 
 1. Go to **Manage** > **Account** in the {{site.data.keyword.cloud_notm}} console, and select **Tags**.
 2. Click **Access management tags**.
@@ -56,9 +56,9 @@ Because tags are visible account-wide, avoid using personal information, such as
 {: #tagging-resources-add}
 {: step}
 
-Now that you created your tag, you can add it to your resource. 
+Now that you created your tag, you can add it to your resource.
 
-1. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource List** to access the list of resources in your account. 
+1. Click the **Navigation menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource List** to access the list of resources in your account.
 2. Find your {{site.data.keyword.cos_full}} instance and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Add tags**.
 3. Type `project:analysis` and press Enter.
 
@@ -81,15 +81,15 @@ First, create an access group to streamline the task of assigning access to mult
 {: #tagging-assign-policy}
 {: step}
 
-Next, assign a policy to the group: 
+Next, assign a policy to the group:
 
-1. Click **Access** > **Assign access**. 
-1. Select **All Identity and Access enabled services** as the service. 
+1. Click **Access** > **Assign access**.
+1. Select **All Identity and Access enabled services** as the service.
 1. Scope the access to **Specific resources** > **Access management tags** to grant access based on the attached access management tag.
-1. Type `project:analysis` or select it from the list of options. 
+1. Type `project:analysis` or select it from the list of options.
 1. Select the resource group access.
 1. Select all roles that apply. To view a list of all actions that are mapped to a specific role, click the numbers listed next to each role.
-1. Click **Review**. 
+1. Click **Review**.
 1. Click **Add** to add your policy configuration to your policy summary.
 1. Click **Assign**.
 

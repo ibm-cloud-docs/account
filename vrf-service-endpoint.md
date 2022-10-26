@@ -27,7 +27,7 @@ Virtual Private Clouds (VPCs) are automatically enabled for virtual routing and 
 Before you begin, ensure that you meet the following criteria:
 
 * You need a billable account to enable virtual routing and forwarding and {{site.data.keyword.Bluemix_notm}} service endpoints.
-* You must have access to {{site.data.keyword.cloud_notm}} infrastructure in your account. Go to the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Classic Infrastructure** to verify that you have access.
+* You must have access to {{site.data.keyword.cloud_notm}} infrastructure in your account. Go to the **Navigation menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Classic Infrastructure** to verify that you have access.
 
 ## Enabling VRF in the console
 {: #vrf}
@@ -94,13 +94,13 @@ To enable service endpoints from the [{{site.data.keyword.Bluemix_notm}} CLI](/d
     Retrieving account Mia Example's Account of m.example@example.com...
     OK
 
-    Account ID:                   abc123d0bc2edefthyufffc9b5ca318   
-    Currently Targeted Account:   true   
-    Linked Softlayer Account:     0123456   
-    Service Endpoint Enabled:     false  
+    Account ID:                   abc123d0bc2edefthyufffc9b5ca318
+    Currently Targeted Account:   true
+    Linked Softlayer Account:     0123456
+    Service Endpoint Enabled:     false
     ```
     {: screen}
-    
+
 1. Enable service endpoints by running the following command.
 
    ```bash
@@ -109,9 +109,9 @@ To enable service endpoints from the [{{site.data.keyword.Bluemix_notm}} CLI](/d
    {: codeblock}
 
    It might take a few minutes for this change to take affect. After the command completes, you can run the `ibmcloud account show` command again to verify.
-   
-    If VRF isn't enabled for your account, running this command prompts you to create a case to enable it. Enter `y` to create the support case. After VRF is enabled in the account, run the command again to enable service endpoint connectivity in your account. 
-    
+
+    If VRF isn't enabled for your account, running this command prompts you to create a case to enable it. Enter `y` to create the support case. After VRF is enabled in the account, run the command again to enable service endpoint connectivity in your account.
+
     ```bash
     Service Endpoint is not available in linked Softlayer Account 1008967.
     Enable VRF(Virtual Routing and Forwarding) first to proceed.
@@ -123,7 +123,7 @@ To enable service endpoints from the [{{site.data.keyword.Bluemix_notm}} CLI](/d
     Ticket:        Private Network Question
     ```
     {: screen}
-  
+
 
 After service endpoints are enabled, you can create resources that connect over the {{site.data.keyword.Bluemix_notm}} private network. For a list of services that support service endpoints and more information, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint).
 
