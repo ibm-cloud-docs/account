@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-08-02"
+lastupdated: "2022-10-26"
 
 keywords: private catalog, software, onboard, operator, validate, test, Red Hat OpenShift operator, operator bundle
 
@@ -11,17 +11,17 @@ subcollection: account
 content-type: tutorial
 services: Registry
 account-plan: paid
-completion-time: 45m 
+completion-time: 45m
 
 ---
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Onboarding a Certified Operator from a {{site.data.keyword.redhat_notm}} registry 
+# Onboarding a Certified Operator from a {{site.data.keyword.redhat_notm}} registry
 {: #catalog-opbundle-tutorial}
-{: toc-content-type="tutorial"} 
+{: toc-content-type="tutorial"}
 {: toc-services="Registry"}
-{: toc-completion-time="45m"} 
+{: toc-completion-time="45m"}
 
 This tutorial walks you through how to onboard a sample Operator bundle from a {{site.data.keyword.redhat_full}} registry to your account. By completing this tutorial, you learn how to create a private catalog in your account, import the Operator bundle, and validate that it can be installed on a {{site.data.keyword.openshiftshort}} cluster.
 {: shortdesc}
@@ -30,7 +30,7 @@ This tutorial walks you through how to onboard a sample Operator bundle from a {
 {: #catalog-opbundle-prereqs}
 
 1. Go to the {{site.data.keyword.redhat_notm}} OperatorHub to confirm that your Operator bundle exists in the {{site.data.keyword.redhat_notm}} Certified registry.
-1. [Create your {{site.data.keyword.openshiftshort}} cluster](/docs/openshift?topic=openshift-getting-started). 
+1. [Create your {{site.data.keyword.openshiftshort}} cluster](/docs/openshift?topic=openshift-getting-started).
 1. [Upload your Operator bundle and application images to {{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-getting-started).
 1. Verify that you're assigned the following {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM). See [Assigning access to account management services](/docs/account?topic=account-account-services) and [Managing access to resources](/docs/account?topic=account-assign-access-resources) for more information.
    * Administrator on all account management services and all IAM-enabled services
@@ -46,10 +46,10 @@ Make sure that you use the same account to access {{site.data.keyword.registrylo
 {: #catalog-opbundle-private}
 {: step}
 
-Private catalogs provide a way for you to make your own products available to users in your account. 
+Private catalogs provide a way for you to make your own products available to users in your account.
 
-1. Go to **Manage** > **Catalogs** in the {{site.data.keyword.cloud_notm}} console, and click **Create a catalog**. 
-1. Select **Product default** as the catalog type. 
+1. Go to **Manage** > **Catalogs** in the {{site.data.keyword.cloud_notm}} console, and click **Create a catalog**.
+1. Select **Product default** as the catalog type.
 1. Enter the name of your catalog, for example, `Sample Operator Bundle`.
 1. Select **No products** to exclude all products in the {{site.data.keyword.cloud}} catalog from your catalog.
 1. Click **Create**.
@@ -59,11 +59,11 @@ Private catalogs provide a way for you to make your own products available to us
 {: step}
 
 1. On the Private products page, click **Add**.
-1. Select **Operator from {{site.data.keyword.redhat_notm}} registry** as your deployment method. 
-1. Select **Certified** as your {{site.data.keyword.redhat_notm}} repository. 
+1. Select **Operator from {{site.data.keyword.redhat_notm}} registry** as your deployment method.
+1. Select **Certified** as your {{site.data.keyword.redhat_notm}} repository.
 1. Select your Operator bundle. For example, for the purposes of this tutorial, you can select **Add a Cluster Operator** as your Operator.
 1. Select the Operator bundle version that you would like to import.
-1. Enter the software version that the Operator bundle installs in the format of major version, minor version, and revision. For example, you can use Operator version `1.0.0` to install software version `2.0.0`. 
+1. Enter the software version that the Operator bundle installs in the format of major version, minor version, and revision. For example, you can use Operator version `1.0.0` to install software version `2.0.0`.
 1. Click **Add version**.
 
 ## Review the version details
@@ -77,40 +77,40 @@ Private catalogs provide a way for you to make your own products available to us
 {: #catalog-opbundle-license}
 {: step}
 
-If users are required to accept any license agreements beyond the {{site.data.keyword.cloud_notm}} Services Agreement, provide the URL to each agreement.   
+If users are required to accept any license agreements beyond the {{site.data.keyword.cloud_notm}} Services Agreement, provide the URL to each agreement.
 
-1. In the Version list table, click the row that contains your Operator bundle. 
-1. Click **Add license agreements** > **Add**. 
+1. In the Version list table, click the row that contains your Operator bundle.
+1. Click **Add license agreements** > **Add**.
 1. Enter the name and URL of the license agreement, and click **Update**.
 1. After entering all additional license agreements, click **Next**.
 
-## Review your readme file 
+## Review your readme file
 {: #catalog-opbundle-readme}
 {: step}
 
-When users install the software, they can select the link to your readme file to view product information. The information in the Readme link is generated from the readme information in the Edit readme tab. 
+When users install the software, they can select the link to your readme file to view product information. The information in the Readme link is generated from the readme file information in the Edit readme tab.
 
 1. From the Edit readme tab, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit").
 2. Preview how the information in the readme file will be displayed to users when they install the Operator bundle.
-3. If you need to make changes, edit the information in the source file and import the updated Operator bundle to your private catalog. 
+3. If you need to make changes, edit the information in the source file and import the updated Operator bundle to your private catalog.
 4. Click **Next**.
 
 ## Validate your Operator bundle
 {: #catalog-opbundle-validate}
 {: step}
 
-Validate that the Operator bundle can be successfully installed on the target {{site.data.keyword.openshiftshort}} cluster.  
+Validate that the Operator bundle can be successfully installed on the target {{site.data.keyword.openshiftshort}} cluster.
 
 1. Click **Validate product**
-1. Select the Update channel to receive version updates from. 
+1. Select the Update channel to receive version updates from.
 1. Select whether you want to apply updates automatically or manually.
 1. Select the target cluster and project, and click **Next**.
-1. Enter the name of your Schematics workspace, select a resource group, select a Schematics region, and click **Next**.  
+1. Enter the name of your Schematics workspace, select a resource group, select a Schematics region, and click **Next**.
 
    In the **Tags** field, you can enter a name of a specific tag to attach to your Operator. Tags provide a way to organize, track usage costs, and manage access to the resources in your account.
    {: tip}
 
-1. Click **Validate**. 
+1. Click **Validate**.
 
 ## Manage compliance
 {: #catalog-opbundle-controls}
@@ -123,9 +123,9 @@ Controls are safeguards that are used to meet security and compliance requiremen
 
 You can review the controls that were added from your readme file and add additional controls.
 
-1. Click **Add controls**. 
-1. Choose a profile. 
-1. Select the controls that you want to add to your version. 
+1. Click **Add controls**.
+1. Choose a profile.
+1. Select the controls that you want to add to your version.
 1. Click **Add**.
 
 ### Run Code Risk Analyzer scan
@@ -133,23 +133,23 @@ You can review the controls that were added from your readme file and add additi
 
 Scan your source code with Code Risk Analyzer to identify any security vulnerabilities that you need to assess.
 
-1. Click **Run scan**. 
-2. Wait for the scan to finish. 
+1. Click **Run scan**.
+2. Wait for the scan to finish.
 
 ### Add Security and Compliance Center scan
 {: #catalog-opbundle-scc-scan}
 
 Add the scans that you previously ran in the Security and Compliance Center. Security and Compliance Center scans determine adherence to regulatory controls. For more information, see [Scheduling a scan](/docs/security-compliance?topic=security-compliance-schedule-scan).
 
-1. Select the profile that you scanned. 
-1. Select the Security and Compliance Center scan. 
+1. Select the profile that you scanned.
+1. Select the Security and Compliance Center scan.
 1. Click **Add scan**.
 1. Click **Next**.
 
 ## Review requirements
 {: #catalog-opbundle-review-reqs}
 
-You must complete validation and any other requirements to publish to your account. 
+You must complete validation and any other requirements to publish to your account.
 
 ## Next steps
 {: #catalog-opbundle-next}
