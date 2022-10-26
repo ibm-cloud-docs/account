@@ -58,7 +58,7 @@ Because tags are visible account-wide, avoid using personal information, such as
 
 Now that you created your tag, you can add it to your resource.
 
-1. Click the **Navigation menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource List** to access the list of resources in your account.
+1. Click the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource List** to access the list of resources in your account.
 2. Find your {{site.data.keyword.cos_full}} instance and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Add tags**.
 3. Type `project:analysis` and press Enter.
 

@@ -38,7 +38,7 @@ After you install an Operator from the {{site.data.keyword.cloud}} catalog, you 
 
 The details page for your software instance includes information about the installed version, deployment target, pricing plan, and so on. To view details about your software instance, complete the following steps:
 
-1. Go to the **Navigation menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list**.
+1. Go to the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list**.
 1. Expand **Services and software**.
 1. Click the name of your software instance.
 

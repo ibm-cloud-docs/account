@@ -27,7 +27,7 @@ Virtual Private Clouds (VPCs) are automatically enabled for virtual routing and 
 Before you begin, ensure that you meet the following criteria:
 
 * You need a billable account to enable virtual routing and forwarding and {{site.data.keyword.Bluemix_notm}} service endpoints.
-* You must have access to {{site.data.keyword.cloud_notm}} infrastructure in your account. Go to the **Navigation menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Classic Infrastructure** to verify that you have access.
+* You must have access to {{site.data.keyword.cloud_notm}} infrastructure in your account. Go to the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Classic Infrastructure** to verify that you have access.
 
 ## Enabling VRF in the console
 {: #vrf}

@@ -33,7 +33,7 @@ You must create an instance of the {{site.data.keyword.cloudaccesstrailshort}} s
 
 Complete the following steps to review login sessions by using {{site.data.keyword.cloudaccesstrailshort}}:
 
-1. In the {{site.data.keyword.cloud_notm}} console, go to the **Navigation menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Observability** > **{{site.data.keyword.cloudaccesstrailshort}}**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Observability** > **{{site.data.keyword.cloudaccesstrailshort}}**.
 1. Click **Open dashboard** on the dashboard that you use to monitor trusted profiles.
 1. Click **Sources** and select **iam-identity** to filter the results and view only IAM Identity login events.
 1. Use the search field to view trusted profiles login events for users or to view trusted profiles login events for compute resources.

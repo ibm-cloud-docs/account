@@ -98,7 +98,7 @@ After you successfully migrate an instance, you see it in the Services section o
 
 Apps are migrated one at a time by clicking the ![Migrate this service instance to a resource group](images/migrate.svg "Migrate this service instance to a resource group") icon associated with each entry in your App List view.
 
-1. Select the **Navigation menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu"), and select the developer portal of interest such as Watson or App Development, for example.
+1. Select the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu"), and select the developer portal of interest such as Watson or App Development, for example.
 2. Select **Apps**, which displays the lists **Apps (Action required)** and **Apps (migrated)**.
 3. For each entry in the **Apps (Action required)** list, click the **Migrate** icon ![Migrate this service instance to a resource group](images/migrate.svg "Migrate this service instance to a resource group").
 4. Select or create a new resource group.

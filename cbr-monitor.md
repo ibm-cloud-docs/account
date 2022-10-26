@@ -32,7 +32,7 @@ It can be difficult to predict exactly how your rules might affect users, applic
 
 Complete the following steps to view how rules affect your users' and applications' access in report-only mode by using {{site.data.keyword.cloudaccesstrailshort}}:
 
-1. In the {{site.data.keyword.cloud_notm}} console, go to the **Navigation menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Observability** > **{{site.data.keyword.cloudaccesstrailshort}}**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Observability** > **{{site.data.keyword.cloudaccesstrailshort}}**.
 1. Click **Open dashboard** on the dashboard that you use to monitor context-based restrictions.
 1. Use the search field to narrow the results to report-only context-based restrictions events.
    1. To view potentially blocked access requests, search for `action:context-based-restrictions.policy.eval responseData.isEnforced:==false responseData.decision:Deny`.
@@ -56,7 +56,7 @@ When you enable a rule, some users, applications, and workflows might be affecte
 
 Complete the following steps to view how enabled rules affect your users' and applications' access by using {{site.data.keyword.cloudaccesstrailshort}}:
 
-1. In the {{site.data.keyword.cloud_notm}} console, go to the **Navigation menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Observability** > **{{site.data.keyword.cloudaccesstrailshort}}**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Observability** > **{{site.data.keyword.cloudaccesstrailshort}}**.
 1. Click **Open dashboard** on the dashboard that you use to monitor context-based restrictions.
 1. Use the search field to narrow the results to enabled context-based restrictions events.
    1. To view blocked access request, search for `action:context-based-restrictions.policy.eval responseData.isEnforced:==true responseData.decision:Deny`.

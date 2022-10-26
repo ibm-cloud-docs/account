@@ -122,13 +122,13 @@ For more information about the required access for other resources types, see [T
 
 To view all of your resources, select from the following options:
 
-* Click the **Navigation menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource List**.
-* Click the **Navigation menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Dashboard**, and click any of the links that are listed in the Resource summary widget.
+* Click the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource List**.
+* Click the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Dashboard**, and click any of the links that are listed in the Resource summary widget.
 
 To view just your classic infrastructure resources, select from the following options:
 
-* Click the **Navigation menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Classic Infrastructure**.
-* Click the **Navigation menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Dashboard**, and click any of the links that are listed in the Classic infrastructure widget.
+* Click the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Classic Infrastructure**.
+* Click the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Dashboard**, and click any of the links that are listed in the Classic infrastructure widget.
 
 ## What causes resource restorations to fail?
 {: #reclamation-fail}
