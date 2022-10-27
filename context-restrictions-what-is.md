@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-10-20"
+lastupdated: "2022-10-27"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, Cloud Foundry, endpoint type
 
@@ -27,13 +27,13 @@ For an example scenario on creating context-based restrictions, follow the tutor
 {: #restriction-rules}
 {: #context-restrictions-rule-whatis}
 
-A rule associates an {{site.data.keyword.cloud}} resource with a set of contexts:
+A rule associates an {{site.data.keyword.cloud_notm}} resource with a set of contexts:
 * The cloud resource is specified by resource attributes similar to IAM access policies.
 * A context is a combination of network zones and endpoint types.
 
 The contexts that you configure define the restrictions for the associated resources.
 
-The required resource attributes in context-based restrictions rules are `accountId` and `serviceName`. Rules must be scoped to an account and a specific service.
+The necessary resource attributes in context-based restrictions rules are `accountId` and `serviceName`. Rules must be scoped to an account and a specific service.
 {: note}
 
 Context-based restriction rules are applied by the following logic:
@@ -48,12 +48,34 @@ Unlike IAM policies, context-based restrictions don't assign access. Context-bas
 {: #rule-enforcement}
 
 You can decide how you want to enforce a rule upon creation and update the rule enforcement at any time.
-* **Enabled**: Enforce the rule. Denied access attempts are reported in {{site.data.keyword.at_short}}.
-* **Disabled**: No restrictions apply to your account resources. Select this option if you're not ready to enable the rule.
-* **Report-only**: Monitor how the rule affects users without enforcing it. All attempts to access resources in the account are logged in {{site.data.keyword.at_short}}. Monitoring is recommended for 30 days before you enforce the rule.
+
+Enabled
+:   Enforce the rule. Depending on the service that you select, monitoring denied access attempts through {{site.data.keyword.at_short}} might be available. Review each service's documentation to learn about how they integrate with context-based restrictions.
+
+Disabled
+:   No restrictions apply to your account resources. Select this option if you're not ready to enable the rule.
+
+Report-only
+:   Depending on the service that you select, you can monitor how the rule affects access without enforcing it. With report-only mode, all attempts to access resources in the account are logged in {{site.data.keyword.at_short}}. Monitoring is recommended for 30 days before you enforce the rule. Review each service's documentation to learn about how they integrate with context-based restrictions.
 
 You can monitor the impact of your enabled and report-only rules. For more information, see [Monitoring context-based restrictions](/docs/account?topic=account-cbr-monitor).
 {: tip}
+
+### Defining the scope of a rule
+{: #rule-scope}
+
+Define the APIs that you want to protect to narrow the scope of a rule's restrictions. This way, you can specify granular protections for different APIs that have distinct access requirements.
+
+For example, you might create a rule that targets a data plane API so that it is only accessible from a Kubernetes cluster, or wherever your compute infrastructure exists. Then, you can create a rule that targets your control plane API that interacts with the cloud console so that it is only accessible from behind your organization's VPN.
+
+Only some services support the ability to scope a rule by API.
+{: preview}
+
+With some services, you can restrict the actions of all APIs on your resources by default, which includes all current and future APIs that the service might support. Or, select specific APIs. For example, [Kubernetes](/docs/containers?topic=containers-cbr&interface=ui#cbr-overview) has custom service APIs that you can restrict access to based on the context of the request. Review each service's documentation to learn more about how they integrate with context-based restrictions.
+
+You can also skip APIs to restrict all operations on the service that you select.
+{: tip}
+
 
 ## Contexts
 {: #restriction-context}
@@ -118,9 +140,9 @@ Some endpoint types might not be supported by the selected service.
 
 To complete rule actions, you must be assigned an IAM policy on the target service. To complete network zone actions, you must be assigned an IAM policy on the context-based restrictions service.
 
-To create a context-based restriction for a service, you must be assigned an IAM policy with the Administrator role the service you are creating a rule against. For example, if you want to create a rule to protect a **Key Protect** instance, you must be assigned the Administrator role on the **Key Protect** service and the Viewer role or higher on the  **Context-based restrictions** service.
+To create a context-based restriction for a service, you must be assigned an IAM policy with the Administrator role the service you are creating a rule against. For example, if you want to create a rule to protect a **Key Protect** instance, you must be assigned the Administrator role on the **Key Protect** service and the Viewer role or higher on the Context-based restrictions** service.
 
-The Viewer role on the Context-based restrictions service allows you to add network zones to your rule.
+The Viewer role on the Context-based restrictions service authorizes you to add network zones to your rule.
 {: tip}
 
 ### Context-based restrictions roles and actions
@@ -138,7 +160,7 @@ To manage network zones, you must be assigned an IAM policy with a specific role
 For more information, see [Actions and roles for account management services](/docs/account?topic=account-account-services&interface=ui).
 
 ### Target service roles and actions
-{: cbr-access-reqs-target-service}
+{: #cbr-access-reqs-target-service}
 
 To manage rules, you must be assigned an IAM policy with the Administrator role for the service that you are creating the rule against. The following table shows the possible access roles and actions for services.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-09-22"
+lastupdated: "2022-10-27"
 
 
 keywords: create network access, network access rule, network zone
@@ -81,7 +81,7 @@ By creating network zones, you establish a list of allowed locations where an ac
    ```
    {: pre}
 
-   The following example creates a network zone with a service reference. For more information, see [Service references](https://test.cloud.ibm.com/docs/account?topic=account-context-restrictions-whatis&interface=cli#service-attribute).
+   The following example creates a network zone with a service reference. For more information, see [Service references](/docs/account?topic=account-context-restrictions-whatis&interface=cli#service-attribute).
 
     ```sh
     ibmcloud cbr zone-create --name example-zone-1 --description "Kube zone" --service-ref service_name=containers-kubernetes
@@ -311,6 +311,11 @@ To create a rule, complete the following steps.
 1. Select the service that you want to target in your rule. Then, click **Next**.
 
     When you create context-based restriction for the IAM Access Groups service, users who don't satisfy the rule can't view any groups in the account, including the public access group.
+    {: note}
+
+1. (Optional) Select the scope of APIs whose operations are restricted by your rule. For more information, see [Defining the scope of a rule](/docs/account?topic=account-context-restrictions-whatis&interface=ui#rule-scope).
+
+    Not all services support the ability to scope a rule by API.
     {: note}
 
 1. Scope the restriction to **All resources** or **Specific resources** based on selected attributes.
