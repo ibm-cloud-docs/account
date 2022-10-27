@@ -363,9 +363,9 @@ See [Managing catalog settings](/docs/account?topic=account-filter-account#set-p
 {: #view_rg_resources}
 {: ui}
 
-To easily view the resources that are assigned to a resource group, go to the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **Resource list**. Then, filter by resource group.
+To easily view the resources that are assigned to a resource group, go to the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg) > **Resource list**. Then, filter by resource group.
 
-If you can't find your classic infrastructure resource on the Resource list page, check the Device list by clicking **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **Classic infrastructure** > **Device list**.
+If you can't find your classic infrastructure resource on the Resource list page, check the Device list by clicking **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg) > **Classic infrastructure** > **Device list**.
 {: tip}
 
 ## Viewing resources by using the CLI

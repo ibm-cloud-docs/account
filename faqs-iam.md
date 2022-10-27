@@ -109,7 +109,7 @@ In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IA
 {: #service-credentials}
 {: faq}
 
-To view an existing service credential for a service or to add a new credential, go to your resource list by clicking the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list**, then select the name of the service to open its details. Click **Service credentials** to view the details or to select **New Credential**.
+To view an existing service credential for a service or to add a new credential, go to your resource list by clicking the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list**, then select the name of the service to open its details. Click **Service credentials** to view the details or to select **New Credential**.
 
 To save a copy of the service credentials, most services provide a  download option or the option to copy to your clipboard.
 {: note}

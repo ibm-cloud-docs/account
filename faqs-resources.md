@@ -29,13 +29,13 @@ FAQs for managing {{site.data.keyword.cloud_notm}} resources might include quest
 
 A resource group is a way for you to organize your account resources in customizable groupings. Any account resource that is managed by using {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) access control belongs to a resource group within your account. You assign resources to a resource group when you create them from the catalog. You can then view usage per resource group in your account, and easily assign users access to all resources in a resource group or just to a single resource in a resource group.
 
-For more information about creating and working with resource groups, see [Managing resource groups](/docs/account?topic=account-rgs).  
+For more information about creating and working with resource groups, see [Managing resource groups](/docs/account?topic=account-rgs).
 
 ## Why should I migrate my Cloud Foundry service instances to a resource group?
 {: #instance-migrated}
 {: faq}
 
-Migrating your Cloud Foundry services to a resource group means that the services you're using are now available for use with IAM access control and resource groups. You can take advantage of fine-grained access control by using IAM roles. You can also view usage per resource group in your account. 
+Migrating your Cloud Foundry services to a resource group means that the services you're using are now available for use with IAM access control and resource groups. You can take advantage of fine-grained access control by using IAM roles. You can also view usage per resource group in your account.
 
 When you have Cloud Foundry services that can be migrated to a resource group, you receive a notification on the Resource list page. For more information about the migration process, see [Migrating Cloud Foundry service instances and apps to a resource group](/docs/account?topic=account-migrate).
 
@@ -48,13 +48,13 @@ Most likely you're dealing with an access issue. You must have at least the View
 
 For more information about how to check your assigned access, see [Managing access to resources](/docs/account?topic=account-assign-access-resources#assign-access-resources).
 
-If you need additional access in the account, contact the account owner that is listed on the [Users](/iam/users) page. 
+If you need additional access in the account, contact the account owner that is listed on the [Users](/iam/users) page.
 
 ## Who can create resource groups?
 {: #create-resource}
 {: faq}
 
-You can create resource groups only if you're assigned the Administrator role on All Account Management services in the account. For more information, see [Assigning access to account management services](/docs/account?topic=account-account-services). 
+You can create resource groups only if you're assigned the Administrator role on All Account Management services in the account. For more information, see [Assigning access to account management services](/docs/account?topic=account-account-services).
 
 Lite accounts can have only the default resource group, so you can't create any additional resource groups even if you have the required access.
 
@@ -62,32 +62,32 @@ Lite accounts can have only the default resource group, so you can't create any 
 {: #delete-resource-group}
 {: faq}
 
-Yes, you can delete a resource group only if it doesn't contain any resources, and it's not the default resource group. See [Deleting a resource group](/docs/account?topic=account-delete_rgs) for more information. 
+Yes, you can delete a resource group only if it doesn't contain any resources, and it's not the default resource group. See [Deleting a resource group](/docs/account?topic=account-delete_rgs) for more information.
 
 ## How do I add users to a resource group?
 {: #add-users-resource-group}
 {: faq}
 
 Resource groups are a method of organizing resources and are not directly associated with the management of users. For information on creating a resource group, see [Adding resources to a resource group](/docs/account?topic=account-rgs#add_to_rgs). After your resource group is created, an account administrator can grant access to a specific user. Or, an account administrator can create an access group to provide access to a resource group. For information, see [Creating an Access Group](/docs/account?topic=account-groups#create_ag) in the console. After an access group is created, complete the following steps to associate the access group with a resource group:
- 
+
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)** and click **Access groups**.
-2. Select an access group. 
+2. Select an access group.
 3. Click **Access** > **Assign access**.
-4. Select a service, or group of services.  
+4. Select a service, or group of services.
 5. Click **Next**.
 6. Scope the access to all resources, or select specific resources and select the resource groups attribute. Then, click **Next**.
-7. Select the platform, service and resource group access for the resource group. 
-8. Click **Review**. 
+7. Select the platform, service and resource group access for the resource group.
+8. Click **Review**.
 9. Click **Add** to add your policy configuration to your policy summary.
-10. Click **Assign**. 
+10. Click **Assign**.
 
-You can't use access groups with infrastructure service resources or permissions. {: note} 
+You can't use access groups with infrastructure service resources or permissions. {: note}
 
 ## Can I move service instances between resource groups?
 {: #instances-between-rgs}
 {: faq}
 
-You can't move service instances between resource groups. If you assign a service instance incorrectly, you must delete and recreate the instance to assign it to another resource group.  
+You can't move service instances between resource groups. If you assign a service instance incorrectly, you must delete and recreate the instance to assign it to another resource group.
 
 ## How do I delete a service from my account?
 {: #service-removal}
@@ -103,7 +103,7 @@ You can delete a service instance by using the following steps:
 {: #view-usage}
 {: faq}
 
-Yes, you can. To access your usage dashboard, go to **Manage** > **Billing and usage** in the {{site.data.keyword.cloud_notm}} console. Select **Usage** to view a summary of the usage by resource group for the account. 
+Yes, you can. To access your usage dashboard, go to **Manage** > **Billing and usage** in the {{site.data.keyword.cloud_notm}} console. Select **Usage** to view a summary of the usage by resource group for the account.
 
 ## Who can attach tags to a resource?
 {: #tag-faq}
@@ -122,19 +122,19 @@ For more information about the required access for other resources types, see [T
 
 To view all of your resources, select from the following options:
 
-* Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource List**.
-* Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Dashboard**, and click any of the links that are listed in the Resource summary widget.
-  
+* Click the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource List**.
+* Click the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Dashboard**, and click any of the links that are listed in the Resource summary widget.
+
 To view just your classic infrastructure resources, select from the following options:
 
-* Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Classic Infrastructure**.
-* Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg "Menu") > **Dashboard**, and click any of the links that are listed in the Classic infrastructure widget.
+* Click the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Classic Infrastructure**.
+* Click the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Dashboard**, and click any of the links that are listed in the Classic infrastructure widget.
 
 ## What causes resource restorations to fail?
 {: #reclamation-fail}
 {: faq}
 
-A resource restoration can fail if you try to restore a resource in a deleted resource group or the resource restoration request isn't submitted in time. Most requests must be submitted within 7 days. 
+A resource restoration can fail if you try to restore a resource in a deleted resource group or the resource restoration request isn't submitted in time. Most requests must be submitted within 7 days.
 
 ## How do I retrieve details on a resource that is scheduled for reclamation?
 {: #reclamation-list}
