@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-09-23"
+lastupdated: "2022-10-27"
 
 keywords: IBM Cloud notifications, notification preferences, user notifications, distribution list, notification distribution list
 
@@ -15,7 +15,7 @@ subcollection: account
 # Adding users to a notification distribution list
 {: #add-users-distribution-list}
 
-The {{site.data.keyword.Bluemix_notm}} [notification distribution list page](/account/notifications-distribution-list){: external} provides a way for you to specify a set of email addresses or webhooks to set suitable destinations for notifications about account-wide events.
+The {{site.data.keyword.Bluemix_notm}} [Notification distribution list page](/account/notifications-distribution-list){: external} provides a way for you to specify a set of email addresses or webhooks to set suitable destinations for notifications about account-wide events.
 {: shortdesc}
 
 You can manage the notification distribution list by using the {{site.data.keyword.Bluemix_notm}} console. You can create a list of up to 10 email addresses and up to 10 webhooks that can receive notifications. Emails that are added to the distribution list are notified about any event that is affecting the account. You must have the editor role or higher on the account management service to add email addresses to the distribution list. For more information, see [Assigning access to account management services](/docs/account?topic=account-account-services).
@@ -67,6 +67,7 @@ You cannot add an {{site.data.keyword.en_short}} service instance to the notific
 {: note}
 
 ## Deleting an {{site.data.keyword.en_short}} instance
+{: #event-notifications-delete}
 
 You can delete any {{site.data.keyword.en_short}} instance that you added to the notification distribution list by completing the following steps:
 
