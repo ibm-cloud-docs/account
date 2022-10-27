@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2022
 
-lastupdated: "2022-05-25"
+lastupdated: "2022-10-26"
 
 keywords: token, token expiration, settings, access token, refresh token, IAM
 
@@ -43,7 +43,7 @@ IAM access tokens can be used to invoke various {{site.data.keyword.cloud_notm}}
 To update your access token expiration setting, complete the following steps:
 
 1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Access (IAM)**, and select **Settings**.
-1. Click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") on the Access token tile.
+1. From the Login session section, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") on the Access token tile.
 1. Enter the time limit in minutes. An access token can be valid for up to 60 minutes.
 1. Click **Save**.
 
@@ -56,7 +56,7 @@ When available, this credential is used to get a new access token without reauth
 To update your refresh token expiration setting, complete the following steps:
 
 1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Access (IAM)**, and select **Settings**.
-1. Click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") on the Refresh token tile.
+1. From the Login session section, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") on the Refresh token tile.
 1. Enter the time limit in hours. A refresh token can be valid for up to 720 hours (30 days).
 1. Click **Save**.
 
@@ -64,7 +64,7 @@ To update your refresh token expiration setting, complete the following steps:
 ## Determining when sessions are created
 {: #sessions-nonsessions}
 
-Sessions are created when a user logs in to the {{site.data.keyword.cloud}} CLI or {{site.data.keyword.cloud}} console. For example, if you create a user API key and use it for the {{site.data.keyword.cloud}} CLI, this generates a login session. However, if you use the same API key to create a token for API calls, like [creating an IAM access token for a user or service ID](/apidocs/iam-identity-token-api#gettoken-apikey), this does not generate a session.
+Sessions are created when a user logs in to the {{site.data.keyword.cloud}} CLI or {{site.data.keyword.cloud}} console. For example, if you create a user API key and use it for the {{site.data.keyword.cloud}} CLI, this generates a login session. However, if you use the same API key to create a token for API calls, like [creating an IAM access token for a user or service ID](https://cloud.ibm.com/apidocs/iam-identity-token-api#gettoken-apikey), this does not generate a session.
 
 Tokens expiration settings apply only if there is no connected login session. If a login session is created, then [limits for login sessions](/docs/account?topic=account-iam-work-sessions) apply. Use the following table to help you understand when each setting applies.
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2022
 
-lastupdated: "2022-02-21"
+lastupdated: "2022-10-26"
 
 keywords: public access, anonymous access, users, service IDs, public access group, enable, disable, manage, IAM
 
@@ -12,25 +12,12 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:pre: .pre}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Managing public access to resources
 {: #public}
 
-By default, all users and service IDs in an account are members of the Public Access group in your account. Assigning an access policy to the access group opens access to that resource to anyone whether they're a member of your account or not because authentication is no longer required. However, in some cases you might want to ensure that there is never public access that is allowed to your account resources, which you control by disabling public access at the account level. 
+By default, all users and service IDs in an account are members of the Public Access group in your account. Assigning an access policy to the access group opens access to that resource to anyone whether they're a member of your account or not because authentication is no longer required. However, in some cases you might want to ensure that there is never public access that is allowed to your account resources, which you control by disabling public access at the account level.
 {: shortdesc}
 
 To manage public access, you must be an administrator of the [IAM Access Groups service](/docs/account?topic=account-account-services#access-groups-account-management) in the account.
@@ -38,22 +25,28 @@ To manage public access, you must be an administrator of the [IAM Access Groups 
 ## Assigning public access to resources
 {: #public_policy}
 
-When public access is enabled in the account, you can create a policy to define the resources that all members of the Public Access group can access. To create a policy, you must have administrator access on the resource. 
+When public access is enabled in the account, you can create a policy to define the resources that all members of the Public Access group can access.
 
-{{site.data.keyword.cos_full}} is used as the example as it is the only supported resource type for public access at this time. As an example, the following section describes how to assign public access to an {{site.data.keyword.cos_short}} bucket that is named `mybucket123`.
-{: ui}
+To enable public access, complete the following steps:
+1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Access (IAM)** >**Settings** > **Public access**.
+1. Enable the **Public access group**.
+1. Click **Yes** to confirm.
 
 ### Assigning access in the console
 {: #public-access-console}
 {: ui}
 
+To create a policy, you must have administrator access on the resource.
+
+{{site.data.keyword.cos_full}} is used as the example as it is the only supported resource type for public access at this time. As an example, the following section describes how to assign public access to an {{site.data.keyword.cos_short}} bucket that is named `mybucket123`.
+
 1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Access (IAM)**, and select **Access groups**.
-2. Click the name of the public access group > **Assign access**.  
+2. Click the name of the public access group > **Assign access**.
 3. Select **{{site.data.keyword.cos_short}}** from the **Services** list.
 4. Select the specific instance from the **Service instance** list.
 5. Enter `bucket` for the resource type.
 6. Enter `mybucket123` for the resource ID.
-7. Select the service access role, and click **Assign**. 
+7. Select the service access role, and click **Assign**.
 8. Confirm that you want to assign the public access policy to the resource, and click **Assign**.
 
 ### Assigning access by using the CLI
@@ -72,8 +65,8 @@ For more information about the command options, see [`ibmcloud iam access-group-
 ### Assigning access by using the API
 {: #public-access-api}
 {: api}
- 
-The following request example creates a policy for the Public Access group. 
+
+The following request example creates a policy for the Public Access group.
 
 ```bash
 curl -X POST \
@@ -280,18 +273,20 @@ fmt.Println(string(b))
 {: go}
 {: codeblock}
 
-For more information, see [Create a policy](https://cloud.ibm.com/apidocs/iam-policy-management?code=go#create-policy){: external}.
+For more information, see [Create a policy](/apidocs/iam-policy-management?code=go#create-policy){: external}.
 
 ## Disabling public access to resources
 {: #disable-public-access}
 
-When you disable public access, all existing policies for the Public Access group are deleted, which revokes the previously allowed access. You also can't create or modify any policies for the Public Access group. 
+When you disable public access, all existing policies for the Public Access group are deleted, which revokes the previously allowed access. You also can't create or modify any policies for the Public Access group.
 
 ### Disabling access in the console
 {: #disable-public-ui}
 {: ui}
 
-To disable public access for the account, go to **Manage** > **Access (IAM)** > **Settings** in the {{site.data.keyword.cloud_notm}} console, and set the Public access setting to **Disable public access**.
+To disable public access for the account, complete the following steps:
+1. Go to **Manage** > **Access (IAM)** > **Settings** in the {{site.data.keyword.cloud_notm}} console.
+1. Click Public access and disble the **Public access group**.
 
 ### Disabling access by using the CLI
 {: #disable-public-cli}
@@ -303,7 +298,7 @@ This action can be done only through the UI or API. To see the steps, switch to 
 {: #disable-public-api}
 {: api}
 
-The following request example disables public access for the account. 
+The following request example disables public access for the account.
 
 ```bash
 curl -X PATCH \
