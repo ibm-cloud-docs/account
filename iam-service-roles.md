@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-10-27"
+lastupdated: "2022-10-28"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -462,6 +462,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `apprapp.gitconfigs.promote` | Promote configuration | Manager |
 | `apprapp.usage.create` | Usage posting | Administrator, Client SDK, Config Operator, Manager, Reader, Viewer, Writer |
 | `apprapp.sse.view` | SSE connect | Client SDK, Config Operator, Manager, Reader, Writer |
+| `apprapp.encryptionconfigs.create` | Create Encryption configuration for data encryption using key management services | Administrator, Manager |
+| `apprapp.encryptionconfigs.list` | List Encryption configurations for data encryption using key management services | Administrator, Config Operator, Editor, Manager, Reader, Viewer, Writer |
 {: caption="Table 10. Service actions - App Configuration" caption-side="top"}
 {: #actions-table10}
 {: tab-title="Actions"}
