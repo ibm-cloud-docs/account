@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2022
-lastupdated: "2022-09-21"
+lastupdated: "2022-10-31"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -129,6 +129,8 @@ We're sad to see you go! If there's any way we can assist you before you decide 
 * To close a Lite account, go to the [Account settings](/account/settings) page, and click **Close account**. You can reactivate your account if you upgrade to a Pay-As-You-Go or Subscription account. After an account is closed for 30 days, all data is deleted and all services are removed.
 
 * You might receive a final invoice after you close your account due to incurred charges from the month before the account was closed.
+* Before you request to close an account, cancel all services and resources within the account. Make sure to state that you want all services and data to be deleted immediately and that you understand all services and data are unrecoverable within the account closure case.
+
 
 ## Can I log in to the console with my SoftLayer ID?
 {: #slid}
