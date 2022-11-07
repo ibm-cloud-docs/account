@@ -2,7 +2,9 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-07-06"
+
+lastupdated: "2022-11-07"
+
 
 keywords: catalog, private catalogs, visibility, filter catalog, hide product, catalog filtering, enterprise, account group, child account, account, restrict
 
@@ -132,6 +134,48 @@ curl -X "PUT" "https://cm.globalcatalog.cloud.ibm.com/api/v1-beta/catalogaccount
 ```
 {: codeblock}
 
+<!---
+```java
+String id = "{id}";
+Filters accountFilters = {accountFilters};
+UpdateCatalogAccountOptions updateOptions = new UpdateCatalogAccountOptions.Builder().id(id).accountFilters(accountFilters).build();
+Response<Void> response = service.updateCatalogAccount(updateOptions).execute();
+System.out.println(response.getResult());
+```
+{: codeblock}
+{: java}
+
+```javascript
+id = "{id}";
+accountFilters = {accountFilters};
+response = await service.updateCatalogAccount({ 'id': id, 'accountFilters': accountFilters });
+console.log(response);
+```
+{: codeblock}
+{: javascript}
+
+```python
+id="{id}"
+accountFilters={accountFilters}
+response = self.service.update_catalog_account(id=id, account_filters=accountFilters)
+print(response)
+```
+{: codeblock}
+{: python}
+
+```go
+id := "{id}"
+accountFilters := {accountFilters}
+updateOptions := service.NewUpdateCatalogAccountOptions()
+updateOptions.SetID(id)
+updateOptions.AccountFilters(accountFilters)
+response, _ := service.UpdateCatalogAccount(updateOptions)
+fmt.Println(response)
+```
+{: codeblock}
+{: go}
+-->
+
 Make sure the `hide_IBM_cloud_catalog` field has a Boolean value of `true` to hide the public catalog in this account. Alternatively, you can give the `include_all` field a Boolean value of `false` for each `account_filters` object to exclude all of the public catalog.
 
 See the [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=curl#update-catalog-account){: external} for more information.
@@ -153,6 +197,48 @@ curl -X "PUT" "https://cm.globalcatalog.cloud.ibm.com/api/v1-beta/catalogaccount
 ```
 {: codeblock}
 
+<!---
+```java
+String id = "{id}";
+Filters accountFilters = {accountFilters};
+UpdateCatalogAccountOptions updateOptions = new UpdateCatalogAccountOptions.Builder().id(id).accountFilters(accountFilters).build();
+Response<Void> response = service.updateCatalogAccount(updateOptions).execute();
+System.out.println(response.getResult());
+```
+{: codeblock}
+{: java}
+
+```javascript
+id = "{id}";
+accountFilters = {accountFilters};
+response = await service.updateCatalogAccount({ 'id': id, 'accountFilters': accountFilters });
+console.log(response);
+```
+{: codeblock}
+{: javascript}
+
+```python
+id="{id}"
+accountFilters={accountFilters}
+response = self.service.update_catalog_account(id=id, account_filters=accountFilters)
+print(response)
+```
+{: codeblock}
+{: python}
+
+```go
+id := "{id}"
+accountFilters := {accountFilters}
+updateOptions := service.NewUpdateCatalogAccountOptions()
+updateOptions.SetID(id)
+updateOptions.AccountFilters(accountFilters)
+response, _ := service.UpdateCatalogAccount(updateOptions)
+fmt.Println(response)
+```
+{: codeblock}
+{: go}
+
+--->
 The options for `{accountFilters}` are: `include_all`, `category_filters`, and `id_filters`.
 
 See the [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=curl#update-catalog-account){: external} for more information.
@@ -161,7 +247,7 @@ See the [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=
 {: #set-private-filters-api}
 {: api}
 
-Set filters at a private catalog level for fine-grained control of which products in the public catalog are available only to the users you choose. The following example applies the filter `id_filters` where `AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea` is an product ID. 
+Set filters at a private catalog level for fine-grained control of which products in the public catalog are available only to the users you choose. The following example applies the filter `id_filters` where `AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea` is a product ID. 
 
 ```bash
 curl -X 'PUT' \                                         
@@ -223,9 +309,9 @@ The following table lists the filters that you can use to customize which produc
 | Helm charts | A format for packaging a collection of files that describe specific configurations of infrastructure in the form of code.   |
 | Operators | A method of packaging and deploying a Kubernetes-native application. |
 | OVA Images | Open Virtual Appliance that contains a compressed installable version of a virtual machine. |
+| Server Images | A template that is used to create instances of virtual servers. |
 | Starter kits | An application pattern that can be integrated with services to generate a production-ready asset, which can be deployed directly into a DevOps pipeline and a Kubernetes cluster. |
 | Terraform |  Infrastructure as code to deploy your application. |
-| VSI Images | A template that is used to create instances of virtual servers. |
 {: caption="Table 1. Options for filtering by delivery method" caption-side="top"}
 {: #software-custom}
 {: tab-title="Delivery method"}
@@ -237,11 +323,11 @@ The following table lists the filters that you can use to customize which produc
 |--------------|-------|
 | IBM {{site.data.keyword.containershort}} | Used to create a Kubernetes cluster of compute hosts to deploy and manage containerized apps on {{site.data.keyword.cloud_notm}}. |
 | {{site.data.keyword.bplong_notm}} | Used for infrastructure as code automation by using terraform templates. |
-| {{site.data.keyword.powerSys_notm}} | Used to create a Power server that is distinct from the {{site.data.keyword.cloud_notm}} servers with separate networks and direct-attached storage. The internal networks are fenced but offer connectivity options to {{site.data.keyword.cloud_notm}} infrastructure or on-premises environments. |
+| {{site.data.keyword.powerSys_notm}} | Used to create a Power server that is distinct from the {{site.data.keyword.cloud_notm}} servers with separate networks and direct-attached storage. The internal networks are fenced but offer connectivity options to  {{site.data.keyword.cloud_notm}} infrastructure or on-premises environments. |
 | Red Hat OpenShift | Used to create a {{site.data.keyword.openshiftshort}} cluster of compute hosts to deploy and manage containerized apps on {{site.data.keyword.cloud_notm}}. |
-| vCenter Server | Provides deployment and management of VMware virtualized environments. |
+| VMware vCenter Server | Provides deployment and management of VMware virtualized environments. |
 {: caption="Table 1. Options for filtering by deployment target" caption-side="top"}
-{: #deploymenttarget-custom}
+{: #swdeploymenttargetfilters}
 {: tab-title="Deployment target"}
 {: tab-group="customcatalogfilters"}
 {: class="simple-tab-table"}
@@ -282,6 +368,7 @@ The following table lists the filters that you can use to customize which produc
 {: tab-group="customcatalogfilters"}
 {: class="simple-tab-table"}
 {: summary="Use the buttons before the table to change the context of the table. The column headers identify the options for fitering based on filter type."}
+
 
 | Option | Description |
 |--------------|-------|
