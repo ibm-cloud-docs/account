@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2022-08-25"
+lastupdated: "2022-11-08"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -89,16 +89,16 @@ Complete the following steps to import software to your private catalog:
 
 1. Enter your source URL. If you're importing a version from a public repository, you can review the following list of supported formats per software type:
 
-   * Helm chart: `https://charts.bitnami.com/ibm/apache-8.3.2.tgz`
+   * Helm chart: `https://raw.githubusercontent.com/IBM/charts/master/repo/ibm-helm`
    * Node-RED Operator: `https://github.com/IBM-Cloud/operator-bundle-sample/archive/refs/tags/v0.0.3.tar.gz`
    * Operator bundle from a {{site.data.keyword.openshiftshort}} registry: For an example, select the `Akka Cluster Operator` from the list of available Operators in the Certified repository.
    * OVA image: `https://github.com/gcatalog/OVA-sample/blob/main/ova-sample.yaml`
    * Terraform template: `https://github.com/IBM-Cloud/terraform-sample/releases/tag/v1.0.0`
    * Virtual server image with Terraform: `https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample/releases/download/v1.0/isv-vsi-product-deploy-sample.tar.gz`
 
-   * Virtual server image for VPC: Select an image from the list of available images, or import a new image to onboard it. 
-    
-    A virtual server image for VPC can only be added to one product within one private catalog at a time. If the virtual server image you want to import is already imported into another product, you must remove the image from that product or delete the product before you add the virtual server image to a new product. 
+   * Virtual server image for VPC: Select an image from the list of available images, or import a new image to onboard it.
+
+    A virtual server image for VPC can only be added to one product within one private catalog at a time. If the virtual server image you want to import is already imported into another product, you must remove the image from that product or delete the product before you add the virtual server image to a new product.
     {: note}
 
 1. If applicable, enter the version of the software in the format of major version, minor version, and revision. For example, enter version 1.1.2.
@@ -347,7 +347,7 @@ Complete the following steps to add your software by using the CLI. You can use 
 
     The following shows the list of supported formats per software type:
 
-    * Helm chart: `https://charts.bitnami.com/ibm/apache-8.3.2.tgz`
+    * Helm chart: `https://raw.githubusercontent.com/IBM/charts/master/repo/ibm-helm`
     * Node-RED Operator: `https://github.com/IBM-Cloud/operator-bundle-sample/archive/refs/tags/v0.0.3.tar.gz`
     * Operator bundle from a {{site.data.keyword.openshiftshort}} registry: For an example, select the `Akka Cluster Operator` from the list of available Operators in the Certified repository.
     * OVA image: `https://github.com/gcatalog/OVA-sample/blob/main/ova-sample.yaml`
