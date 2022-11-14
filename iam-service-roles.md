@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-11-12"
+lastupdated: "2022-11-14"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -7234,6 +7234,10 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
+## VMware Solutions on VPC
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `vmware` for the service name.
+
+No supported roles.
 ## VMware Solutions
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `vmware-solutions` for the service name.
 
@@ -7244,8 +7248,8 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 153. Platform roles - VMware Solutions" caption-side="top"}
-{: #platform-roles-table153}
+{: caption="Table 154. Platform roles - VMware Solutions" caption-side="top"}
+{: #platform-roles-table154}
 {: tab-title="Platform roles"}
 {: tab-group="vmware-solutions"}
 {: class="simple-tab-table"}
@@ -7265,8 +7269,8 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 153. Service roles - VMware Solutions" caption-side="top"}
-{: #service-roles-table153}
+{: caption="Table 154. Service roles - VMware Solutions" caption-side="top"}
+{: #service-roles-table154}
 {: tab-title="Service roles"}
 {: tab-group="vmware-solutions"}
 {: class="simple-tab-table"}
@@ -7294,13 +7298,65 @@ Review the available platform and service roles and the actions mapped to each t
 | `vmware-solutions.directorsite.editor` | Director Editor | Editor |
 | `vmware-solutions.directorsite.viewer` | Viewer in Director | Viewer |
 | `vmware-solutions.directorsite.operator` | Director Operator | Operator |
-{: caption="Table 153. Service actions - VMware Solutions" caption-side="top"}
-{: #actions-table153}
+{: caption="Table 154. Service actions - VMware Solutions" caption-side="top"}
+{: #actions-table154}
 {: tab-title="Actions"}
 {: tab-group="vmware-solutions"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
+## VMware Cloud Director
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `vmware.directorsite` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 155. Platform roles - VMware Cloud Director" caption-side="top"}
+{: #platform-roles-table155}
+{: tab-title="Platform roles"}
+{: tab-group="vmware.directorsite"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 155. Service roles - VMware Cloud Director" caption-side="top"}
+{: #service-roles-table155}
+{: tab-title="Service roles"}
+{: tab-group="vmware.directorsite"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `vmware.directorsite.infrastructure.create` | Create vCloud Director | Administrator, Editor |
+| `vmware.directorsite.infrastructure.delete` | Delete a single-tenant VMware Director instance | Administrator, Editor |
+| `vmware.directorsite.infrastructure.view` | View a single-tenant VMware Director instance | Administrator, Editor, Operator, Viewer |
+| `vmware.directorsite.infrastructure.update` | Update a single-tenant VMware Director instance | Administrator, Editor, Operator |
+| `vmware.directorsite.director.create` | Create Director virtual datacenters | Administrator, Editor, Manager |
+| `vmware.directorsite.director.delete` | Delete Director virtual datacenters | Administrator, Editor, Manager |
+| `vmware.directorsite.director.update` | Edit Director virtual datacenters | Administrator, Editor, Manager, Operator, Writer |
+| `vmware.directorsite.director.view` | View Director virtual datacenters | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
+| `vmware.directorsite.director.account` | Reset the Director Admin password | Administrator, Manager |
+{: caption="Table 155. Service actions - VMware Cloud Director" caption-side="top"}
+{: #actions-table155}
+{: tab-title="Actions"}
+{: tab-group="vmware.directorsite"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+
+## Organization Virtual Data Center
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `vmware.vdc` for the service name.
+
+No supported roles.
 ## Voice Agent with Watson
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `voiceagent` for the service name.
 
@@ -7310,8 +7366,8 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 154. Platform roles - Voice Agent with Watson" caption-side="top"}
-{: #platform-roles-table154}
+{: caption="Table 157. Platform roles - Voice Agent with Watson" caption-side="top"}
+{: #platform-roles-table157}
 {: tab-title="Platform roles"}
 {: tab-group="voiceagent"}
 {: class="simple-tab-table"}
@@ -7323,8 +7379,8 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 154. Service roles - Voice Agent with Watson" caption-side="top"}
-{: #service-roles-table154}
+{: caption="Table 157. Service roles - Voice Agent with Watson" caption-side="top"}
+{: #service-roles-table157}
 {: tab-title="Service roles"}
 {: tab-group="voiceagent"}
 {: class="simple-tab-table"}
@@ -7339,8 +7395,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `voiceagent.sms.send` | Use the SMS gateway API to send SMS messages for a Voice Agent with Watson instance. | Administrator, Editor, Manager, Operator, Writer |
 | `voiceagent.voice.inbound` | Authenticate inbound calls for a Voice Agent with Watson instance using SIPS. | Manager, Writer |
 | `voiceagent.voice.outbound` | Use the outbound calling API to start outbound calls for a Voice Agent with Watson instance. | Manager, Writer |
-{: caption="Table 154. Service actions - Voice Agent with Watson" caption-side="top"}
-{: #actions-table154}
+{: caption="Table 157. Service actions - Voice Agent with Watson" caption-side="top"}
+{: #actions-table157}
 {: tab-title="Actions"}
 {: tab-group="voiceagent"}
 {: class="simple-tab-table"}
@@ -7355,8 +7411,8 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 155. Platform roles - WebSphere Application Server" caption-side="top"}
-{: #platform-roles-table155}
+{: caption="Table 158. Platform roles - WebSphere Application Server" caption-side="top"}
+{: #platform-roles-table158}
 {: tab-title="Platform roles"}
 {: tab-group="websphereappsvr"}
 {: class="simple-tab-table"}
@@ -7365,8 +7421,8 @@ Review the available platform and service roles and the actions mapped to each t
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `websphereappsvr.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 155. Service actions - WebSphere Application Server" caption-side="top"}
-{: #actions-table155}
+{: caption="Table 158. Service actions - WebSphere Application Server" caption-side="top"}
+{: #actions-table158}
 {: tab-title="Actions"}
 {: tab-group="websphereappsvr"}
 {: class="simple-tab-table"}
@@ -7381,8 +7437,8 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 156. Platform roles - Annotator for Clinical Data" caption-side="top"}
-{: #platform-roles-table156}
+{: caption="Table 159. Platform roles - Annotator for Clinical Data" caption-side="top"}
+{: #platform-roles-table159}
 {: tab-title="Platform roles"}
 {: tab-group="wh-acd"}
 {: class="simple-tab-table"}
@@ -7394,8 +7450,8 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 156. Service roles - Annotator for Clinical Data" caption-side="top"}
-{: #service-roles-table156}
+{: caption="Table 159. Service roles - Annotator for Clinical Data" caption-side="top"}
+{: #service-roles-table159}
 {: tab-title="Service roles"}
 {: tab-group="wh-acd"}
 {: class="simple-tab-table"}
@@ -7412,8 +7468,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `wh-acd.flows.manage` | Manage flows | Manager, Writer |
 | `wh-acd.profiles.manage` | Manage profiles | Manager, Writer |
 | `wh-acd.analyze` | Analyze | Manager, Reader, Writer |
-{: caption="Table 156. Service actions - Annotator for Clinical Data" caption-side="top"}
-{: #actions-table156}
+{: caption="Table 159. Service actions - Annotator for Clinical Data" caption-side="top"}
+{: #actions-table159}
 {: tab-title="Actions"}
 {: tab-group="wh-acd"}
 {: class="simple-tab-table"}
