@@ -445,6 +445,7 @@
               - ts-iam-attach-detach-accesstag.md
               - ts-iam-delete-accesstag.md
               - ts-iam-instances.md
+              - ts-alt-owner.md
           - topicgroup:
               label: Troubleshooting resources
               topics:
