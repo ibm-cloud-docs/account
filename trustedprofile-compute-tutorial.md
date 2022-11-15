@@ -4,12 +4,12 @@ copyright:
 
   years: 2021, 2022
 
-lastupdated: "2022-05-31"
+lastupdated: "2022-11-15"
 
 keywords: trusted profile, compute resource, granting access, tutorial, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 subcollection: account
 content-type: tutorial
-account-plan: lite 
+account-plan: lite
 completion-time: 15m
 services: containers
 
@@ -19,7 +19,7 @@ services: containers
 
 # Managing access for apps in compute resources
 {: #trustedprofile-compute-tutorial}
-{: toc-content-type="tutorial"} 
+{: toc-content-type="tutorial"}
 {: toc-services="containers"}
 {: toc-completion-time="15m"}
 
@@ -52,14 +52,14 @@ First, create your trusted profile:
 2. Click **Create profile**.
 3. Name the profile `Chatbot Project`.
 4. In the description, list the level of access you want to assign to the profile. This helps you quickly identify different profiles from the list of trusted profiles. In this case:
-   1. Writer 
+   1. Writer
    2. Manager
 5. Click **Continue**.
 
 Make sure that your profile name is short and human readable. For compute resources, the name of the profile is required to get the compute resource token, so a simple name is easier for developers to use in the program.
 {: note}
 
-## Establish trust with the Kubernetes cluster 
+## Establish trust with the Kubernetes cluster
 {: #trusted-profile-compute-trust}
 {: step}
 
@@ -69,8 +69,8 @@ Now that you created your trusted profile, you want to establish trust with the 
 2. For compute service, select **Kubernetes** from the list.
 3. Select **Specific resources** to establish trust with one or more existing compute resource instances.
 4. Click **Add another resource**.
-5. Select the cluster that you created for this tutorial. 
-6. Enter the values for the `namespace` and `service account` fields. 
+5. Select the cluster that you created for this tutorial.
+6. Enter the values for the `namespace` and `service account` fields.
 
    The Kubernetes namespace and service account names that you enter do not have to exist already. Any future namespaces or service accounts with these names can establish trust. To list existing namespaces, log in to your cluster and run `kubectl get ns`. To list existing service accounts, log in to your cluster and run `kubectl get sa -n <namespace>`. You can also enter `default` for both.
    {: tip}
@@ -81,11 +81,11 @@ Now that you created your trusted profile, you want to establish trust with the 
 {: #trusted-profile-compute-access}
 {: step}
 
-Now, you can create an access policy to give your compute resource instance access to other IBM Cloud services you need for your team's chatbot project. 
+Now, you can create an access policy to give your compute resource instance access to other IBM Cloud services you need for your team's chatbot project.
 
 1. Select **Access policy**.
 2. Select **Watson Assistant** from the list of services. Make sure you have access on the service you want to give access to in this profile.Click **Next**.
-3. Scope the access to **Specific resources** based on selected attributes. 
+3. Scope the access to **Specific resources** based on selected attributes.
 4. Select **Service Instance** and input the service instance name to give permission to a specific instance. Click **Next**.
 5. Select Writer and Manager roles to define the scope of access, and click **Review**.
 6. Click **Add** to add your policy configuration to your policy summary.
@@ -94,6 +94,8 @@ Now, you can create an access policy to give your compute resource instance acce
 ## Next steps
 {: #iam-compute-next}
 
-To learn more about establishing trust with a Kubernetes cluster, see [Using Trusted Profiles in your Kubernetes and OpenShift Clusters](https://www.ibm.com/cloud/blog/using-trusted-profiles-in-your-kubernetes-and-openshift-clusters). Now that you learned the basics of how to create a trusted profile, you can continue to establish trust with additional compute resources. For more information, see [Updating trusted profiles](/docs/account?topic=account-trusted-profile-update).
+To learn more about establishing trust with a Kubernetes cluster, see [Using Trusted Profiles in your Kubernetes and OpenShift Clusters](https://www.ibm.com/cloud/blog/using-trusted-profiles-in-your-kubernetes-and-openshift-clusters). To learn how to use trusted profiles with VPC virtual server instances, see [Introducing Trusted Profiles for VPC Virtual Server Instances](https://www.ibm.com/cloud/blog/introducing-trusted-profiles-for-vpc-virtual-server-instances).
+
+Now that you learned the basics of how to create a trusted profile, you can continue to establish trust with additional compute resources. For more information, see [Updating trusted profiles](/docs/account?topic=account-trusted-profile-update).
 
 You can also use {{site.data.keyword.cloudaccesstrailshort}} to monitor which federated users and compute resources apply a trusted profile. For more information, see [Monitoring login sessions for trusted profiles](/docs/account?topic=account-trusted-profile-monitor).
