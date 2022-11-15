@@ -19,7 +19,7 @@
               topics:
               - index.md
               - account_overview.md
-              - /billing-usage/billing-usage-committed-use
+              - include: ../billing-usage/paygo_committed_use.md
               - enterprise-video.md
           - topicgroup:
               label: Learning about access management
@@ -346,13 +346,13 @@
           - topicgroup:
               label: Command reference
               topics:
-              - /cli/cli-manage-catalogs-plugin
-              - /cli/cli-ibmcloud_commands_account
-              - /cli/cli-ibmcloud_enterprise
-              - /cli/cli-ibmcloud_commands_iam
-              - /cli/cli-ibmcloud_catalog
-              - /cli/cli-ibmcloud_commands_resource
-              - /cli/cli-cbr-plugin
+              - include: ../cli/plugins/catalogs/manage-catalogs.md
+              - include: ../cli/reference/ibmcloud/cli_acct_org_role.md
+              - include: ../cli/reference/ibmcloud/cli_enterprise.md
+              - include: ../cli/reference/ibmcloud/cli_api_policy.md
+              - include: ../cli/reference/ibmcloud/cli_catalog.md
+              - include: ../cli/reference/ibmcloud/cli_resource_group.md
+              - include: ../cli/plugins/cbr/context-based-restrictions.md
           - topicgroup:
               label: Terraform reference
               links:
@@ -454,8 +454,8 @@
               - ts-rscs-migrate-cf.md
               - ts-swinstance-unavail.md
               - ts-unsupported-registry.md
-              - /sell/sell-repo-upload-error
-              - /sell/sell-ts-validate-terraform
+              - include: ../sell/ts-repo-upload.md
+              - include: ../sell/ts-validate-terraform.md
           - topicgroup:
               label: Troubleshooting context-based restrictions
               topics:

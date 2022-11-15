@@ -1,0 +1,9 @@
+includes:
+  - https://github.ibm.com/cloud-docs/billing-usage
+  - https://github.ibm.com/cloud-docs/cli
+  - https://github.ibm.com/cloud-docs/sell
+translation:
+  exclude:
+    byFilePath:
+      - file-dont-translate.md
+      - folder-dont-translate/
