@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-11-14"
+lastupdated: "2022-11-15"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3471,6 +3471,10 @@ Review the available platform and service roles and the actions mapped to each t
 | `event-notifications.channels.list` | This action is to read all fcm channels | Administrator, Device Manager, Manager, Reader |
 | `event-notifications.channels.update` | This action is to update fcm channel | Administrator, Device Manager, Manager |
 | `event-notifications.channels.delete` | This action is to delete a fcm channel | Administrator, Manager |
+| `event-notifications.integrations.create` | This action is to create an integration. For example BYOK integration with EN. | Administrator, Event Source Manager, Manager |
+| `event-notifications.integrations.update` | This action is to update an already  created integration with EN | Administrator, Event Source Manager, Manager |
+| `event-notifications.integrations.read` | This action is to get an already-created integration | Administrator, Event Source Manager, Manager |
+| `event-notifications.integrations.list` | This action is to list all integrations with EN | Administrator, Event Source Manager, Manager |
 {: caption="Table 59. Service actions - Event Notifications" caption-side="top"}
 {: #actions-table59}
 {: tab-title="Actions"}
