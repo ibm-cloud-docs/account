@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-11-15"
+lastupdated: "2022-11-16"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3652,7 +3652,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Role | Description |
 | ----- | :----- |
 | Administrator | Administrators can change object metadata or visibility for private services added to the account and can restrict the visibility of a public service. |
-| Editor | Editors can change object metadata, but can?t change visibility for private services added to the account. |
+| Editor | Editors can change object metadata, but can’t change visibility for private services added to the account. |
 | Operator | Operators can view private services added to the account. |
 | Viewer | Viewers can view private services added to the account. |
 {: row-headers}
