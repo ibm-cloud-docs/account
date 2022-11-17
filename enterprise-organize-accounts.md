@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2021
-lastupdated: "2021-11-30"
+  years: 2019, 2022
+lastupdated: "2022-11-16"
 
-keywords: enterprise, create account group, organize accounts, move accounts, account group, change contact, account group contact 
+keywords: enterprise, create account group, organize accounts, move accounts, account group, change contact, account group contact
 
 subcollection: account
 
@@ -73,9 +73,9 @@ You can programmatically create an account group in the enterprise by calling th
 The following sample request creates an account group directly under the enterprise level. When you call the API, replace the ID variables with the values from your enterprise. To nest the account group within another account group, specify the ID of the account group in the Cloud Resource Name (CRN) in the following format: `crn:v1:bluemix:public:enterprise::a/$ENTERPRISE_ACCOUNT_ID::account-group:$ACCOUNT_GROUP_ID`.
 
 ```bash
-curl -X POST "https://enterprise.cloud.ibm.com/v1/account-groups 
--H "Authorization: Bearer <IAM_Token>" 
--H 'Content-Type: application/json' 
+curl -X POST "https://enterprise.cloud.ibm.com/v1/account-groups
+-H "Authorization: Bearer <IAM_Token>"
+-H 'Content-Type: application/json'
 -d '{
   "parent": "crn:v1:bluemix:public:enterprise::a/$ENTERPRISE_ACCOUNT_ID::enterprise:$ENTERPRISE_ID",
   "name": "Example Account Group",
@@ -157,7 +157,7 @@ For detailed information about the API, see [Enterprise Management API](/apidocs
 ## Moving accounts within the enterprise
 {: #move-accounts}
 
-You can move accounts anywhere within your enterprise. For example, you can move an account from a lower account group into its parent account group, or you can move it directly under the enterprise. Accounts can be moved only within the enterprise. They can't be moved to a different enterprise or removed from the enterprise to be a stand-alone account.
+You can move accounts anywhere within your enterprise. For example, you can move an account from a child account group into its parent account group, or you can move it directly under the enterprise. Accounts can be moved only within the enterprise. They can't be moved to a different enterprise or removed from the enterprise to be a stand-alone account.
 
 To move an account, you need the Administrator role on the Billing service in the enterprise account and the Editor or Administrator role on either the entire enterprise or both the current and target account groups.
 
@@ -210,9 +210,9 @@ To move an account, you need the Administrator role on the Billing service in th
 You can move an account by calling the Enterprise Management API as shown in the following sample request. Replace the IAM token and ID variables with the values from your enterprise.
 
 ```bash
-curl -X PATCH "https://enterprise.cloud.ibm.com/v1/accounts/$ACCOUNT_ID" 
--H "Authorization: Bearer <IAM_Token>" 
--H 'Content-Type: application/json' 
+curl -X PATCH "https://enterprise.cloud.ibm.com/v1/accounts/$ACCOUNT_ID"
+-H "Authorization: Bearer <IAM_Token>"
+-H 'Content-Type: application/json'
 -d '{
   "parent": crn:v1:bluemix:public:enterprise::a/$ENTERPRISE_ACCOUNT_ID::account-group:$NEW_PARENT_ACCOUNT_GROUP"",
 }'
