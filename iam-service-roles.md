@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-11-16"
+lastupdated: "2022-11-17"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1087,6 +1087,19 @@ Review the available platform and service roles and the actions mapped to each t
 | `compliance.posture-management.integrations-create` | Create compliance posture management integrations | Administrator, Editor, Operator |
 | `compliance.posture-management.integrations-update` | Update compliance posture management integrations | Administrator, Editor, Operator |
 | `compliance.posture-management.integrations-delete` | Delete compliance posture management integrations | Administrator, Editor |
+| `compliance.posture-management.attachments-create` | Create Attachments | Administrator, Editor |
+| `compliance.posture-management.attachments-update` | Update Attachments | Administrator, Editor |
+| `compliance.posture-management.attachments-read` | Read Attachments | Administrator, Editor, Operator, Viewer |
+| `compliance.posture-management.attachments-delete` | Delete Attachments | Administrator, Editor |
+| `compliance.posture-management.control-libraries-create` | Add New Control Libraries | Administrator, Editor |
+| `compliance.posture-management.control-libraries-read` | Read Control Libraries | Administrator, Editor, Operator, Viewer |
+| `compliance.posture-management.control-libraries-update` | Update Control Libraries | Administrator, Editor |
+| `compliance.posture-management.control-libraries-delete` | Delete Control Libraries | Administrator, Editor |
+| `compliance.posture-management.scans-create` | Add New Scans | Administrator, Editor |
+| `compliance.posture-management.scans-read` | Read Scans | Administrator, Editor, Operator, Viewer |
+| `compliance.posture-management.scans-update` | Update Scans | Administrator, Editor |
+| `compliance.posture-management.scans-delete` | Delete Scans | Administrator, Editor |
+| `compliance.posture-management.reports-read` | Read reports | Administrator, Editor, Operator, Viewer |
 {: caption="Table 22. Service actions - IBM Cloud Compliance and Security Center" caption-side="top"}
 {: #actions-table22}
 {: tab-title="Actions"}
