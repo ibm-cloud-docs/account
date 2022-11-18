@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-11-17"
+lastupdated: "2022-11-18"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -464,6 +464,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `apprapp.sse.view` | SSE connect | Client SDK, Config Operator, Manager, Reader, Writer |
 | `apprapp.encryptionconfigs.create` | Create Encryption configuration for data encryption using key management services | Administrator, Manager |
 | `apprapp.encryptionconfigs.list` | List Encryption configurations for data encryption using key management services | Administrator, Config Operator, Editor, Manager, Reader, Viewer, Writer |
+| `apprapp.originconfigs.update` | Update origin configuration for allowlisting CORS policy for Browser clients SDKs | Administrator, Manager |
+| `apprapp.originconfigs.list` | List origin configuration for allowlisting CORS policy for Browser clients SDKs | Administrator, Config Operator, Editor, Manager, Reader, Viewer, Writer |
 {: caption="Table 10. Service actions - App Configuration" caption-side="top"}
 {: #actions-table10}
 {: tab-title="Actions"}
