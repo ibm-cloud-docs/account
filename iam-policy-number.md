@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-9-02"
+lastupdated: "2022-11-22"
 
 keywords: maximum limits, limits, maximum policies, check for limits, check policy number, increase policy limit, total number of account policies, increase account limit
 
@@ -36,6 +36,7 @@ A limit increase can be requested for the following types of entities:
 * Service IDs
 * Identity providers (IdPs)
 * Trusted profiles
+* Dynamic rules
 
 You can request a limit increase for the chosen entities only if the following criteria is met:
 
