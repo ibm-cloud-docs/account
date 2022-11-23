@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-11-22"
+lastupdated: "2022-11-23"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users from account, context-based restrictions
 
@@ -76,6 +76,7 @@ If you have a specific use case that requires an extended limit, you can request
 | Policies per subject within an account | 1000  |
 | Policies with access management tags within an account   | 25   |
 | Service IDs per account                | 2000 |
+| Trusted profiles per account           | 2000 |
 | Users per trial account                | 100  |
 | Users per billable account             | 7500 |
 {: caption="Table 1. IAM account limits" caption-side="top"}
