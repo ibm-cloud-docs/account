@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-11-23"
+lastupdated: "2022-11-29"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users from account, context-based restrictions
 
@@ -23,7 +23,16 @@ Known issues and limitations include not being able to restrict access to some p
 ## Catalog management settings don't apply to some {{site.data.keyword.IBM_notm}} products
 {: #settings-noapply}
 
-Turning off {{site.data.keyword.cloud_notm}} catalog visibility or excluding all {{site.data.keyword.IBM}} products from the catalog or your private catalogs doesn't apply to the following products. Users in your account can still create instances of them by using an API or the CLI.
+Some products are not affected by the following catalog visibility settings:
+
+- Turning off the the visibility of the {{site.data.keyword.Bluemix_notm}} catalog
+- Excluding all {{site.data.keyword.Bluemix_notm}} products from the catalog
+- Excluding all {{site.data.keyword.Bluemix_notm}} products from your private catalogs
+
+You can view and manage catalog visibility settings by going to **Manage > Catalogs > Settings** in the {{site.data.keyword.Bluemix_notm}} console.
+{: note}
+
+Users can still create instances of the following products by using an API or the CLI, regardless of the catalog visibility setting in the account or private catalog:
 
 * {{site.data.keyword.block_storage_is_short}}
 * {{site.data.keyword.vpx_full}}
