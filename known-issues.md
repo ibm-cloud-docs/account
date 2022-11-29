@@ -102,6 +102,11 @@ If you want to check the number of policies in your account, see [Viewing the to
 
 Access management tags are only available when you create an access policy that is scoped for all IAM-enabled services. In this case, when you enable the access based on tags, no other attributes can be added. And, when you base your policy on a specific location or resource group, no tag can be added to the access policy.
 
+### Trusted profile limitations
+{: #tp-limits}
+
+Users can't use the Support Center when they log in to {{site.data.keyword.cloud_notm}} by applying a trusted profile.
+
 ## Context-based restrictions limits
 
 The following table lists the maximum limits for context-based restrictions. These limits apply to any user who can create context-based restrictions rules or network zones. For more information, see [What are context-based restrictions?](/docs/account?topic=account-context-restrictions-whatis).
