@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-11-14"
+lastupdated: "2022-11-30"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, Cloud Foundry, endpoint type
 
@@ -146,7 +146,7 @@ The Viewer role on the Context-based restrictions service authorizes you to add 
 {: tip}
 
 ### Context-based restrictions roles and actions
-{: cbr-access-reqs-cbr-restrict}
+{: #cbr-access-reqs-cbr-restrict}
 
 To manage network zones, you must be assigned an IAM policy with a specific role for the Context-based restrictions account management service. The following table shows the possible access roles and actions for account management.
 
@@ -186,7 +186,7 @@ You can create context-based restrictions for the following services if you are 
 | IAM Identity Service  | Account Management |
 | IAM User Management | Account Management |
 | {{site.data.keyword.codeengineshort}} | IAM-enabled |
-| {{site.data.keyword.registryshort}} | IAM-enabled |
+| [{{site.data.keyword.registryshort}}](/docs/Registry?topic=Registry-iam&interface=ui#iam_cbr) | IAM-enabled |
 | [{{site.data.keyword.databases-for-cassandra}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
 | [{{site.data.keyword.databases-for-enterprisedb}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
 | [{{site.data.keyword.databases-for-elasticsearch}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
