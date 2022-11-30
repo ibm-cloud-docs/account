@@ -12,16 +12,13 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Enabling one-time passcode MFA for a user
 {: #totp}
 
-As an administrator with the correct access, you can enable the option for a user to be prompted for a time-based one-time passcode (TOTP) at login from the User details page in the {{site.data.keyword.Bluemix}} console. This type of multifactor authentication (MFA) is required only for the account where the setting is enabled unlike ID-based MFA. 
+As an administrator with the correct access, you can enable the option for a user to be prompted for a time-based one-time passcode (TOTP) at login from the User details page in the {{site.data.keyword.Bluemix}} console. This type of multifactor authentication (MFA) is required only for the account where the setting is enabled unlike ID-based MFA.
 {: shortdesc}
 
 For more information about your MFA options, see [Types of multifactor authentication](/docs/account?topic=account-types).
@@ -48,4 +45,3 @@ To turn on this MFA option for a user, he or she must first [set up TOTP](#totp-
 
 You can manage this setting for yourself if you have the User-managed login setting enabled on your User details page.
 {: tip}
-

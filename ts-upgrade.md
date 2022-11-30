@@ -11,17 +11,10 @@ content-type: troubleshoot
 
 ---
 
-{:tsSymptoms: .tsSymptoms}
-{:tsCauses: .tsCauses}
-{:tsResolve: .tsResolve}
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:troubleshoot: data-hd-content-type='troubleshoot'}
+{{site.data.keyword.attribute-definition-list}}
 
-# Why can't I upgrade my {{site.data.keyword.Bluemix_notm}} account? 
+
+# Why can't I upgrade my {{site.data.keyword.Bluemix_notm}} account?
 {: #ts_upgrade_cc}
 {: troubleshoot}
 
@@ -33,8 +26,8 @@ When you try to upgrade your account from the [Account settings](/account/settin
 
 `Looks like you don't have access to view this page. Contact the account owner for access.`
 
-To upgrade your account, you must have an access policy with the Editor role or higher on all account management services. 
+To upgrade your account, you must have an access policy with the Editor role or higher on all account management services.
 {: tsCauses}
 
-Contact the account owner to request access to upgrade your account. For more information, see [Upgrading your account](/docs/account?topic=account-upgrading-account). 
+Contact the account owner to request access to upgrade your account. For more information, see [Upgrading your account](/docs/account?topic=account-upgrading-account).
 {: tsResolve}

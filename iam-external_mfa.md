@@ -10,18 +10,13 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:external: target="_blank" .external}
-{:tip: .tip}
-{:important: .important}
-{:deprecated: .deprecated}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Ordering external authentication MFA for a user
 {: #external}
 
-As a master user of a legacy classic infrastructure account, you can order external authentication and enable the multifactor authentication (MFA) option for a user's login. You are charged a monthly fee for the external authentication option. 
+As a master user of a legacy classic infrastructure account, you can order external authentication and enable the multifactor authentication (MFA) option for a user's login. You are charged a monthly fee for the external authentication option.
 {: shortdesc}
 
 Unlike ID-based MFA, external authentication is account-based and require MFA for the user's login only for the account where the setting is enabled. For more information, see [Types of multifactor authentication](/docs/account?topic=account-types).
@@ -50,7 +45,7 @@ After Symantec authentication is ordered, you can turn on the option for the use
 ## Setting up external authentication
 {: #third-party-MFA}
 
-To find out whether external authentication is enabled, go to **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Profile**, and select **Login settings**. 
+To find out whether external authentication is enabled, go to **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Profile**, and select **Login settings**.
 
 ### Setting up Symantec authentication
 {: #symantec-auth}

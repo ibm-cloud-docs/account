@@ -13,22 +13,19 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Giving access to resources in resource groups
 {: #rgs_manage_access}
 
-With {{site.data.keyword.Bluemix_notm}} IAM, you have the flexibility to provide fine-grained user access to the resources and resource groups in your account. 
+With {{site.data.keyword.Bluemix_notm}} IAM, you have the flexibility to provide fine-grained user access to the resources and resource groups in your account.
 {: shortdesc}
 
 You can assign the following types of access policies for users to work with resources in resource groups:
 
 * Access to resources within a resource group. You can grant access to all resources in a group, or only selected services within a group.
-* Access to a resource group itself, which enables users to view and edit the resource group, assign access for others to manage the resource group, and most importantly create and add new service instances to a resource group. 
+* Access to a resource group itself, which enables users to view and edit the resource group, assign access for others to manage the resource group, and most importantly create and add new service instances to a resource group.
 
 Assign a user a role to manage a specific resource group. Then, the user can view billing and usage information for resources that are contained in that resource group.
 {: note}

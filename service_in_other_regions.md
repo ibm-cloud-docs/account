@@ -10,7 +10,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
+{{site.data.keyword.attribute-definition-list}}
 
 # Using services in another region
 {: #cross_region_service}

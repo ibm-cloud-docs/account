@@ -4,7 +4,7 @@ copyright:
   years: 2015, 2021
 lastupdated: "2021-09-28"
 
-keywords: troubleshoot account, browser issue, console error 
+keywords: troubleshoot account, browser issue, console error
 
 subcollection: account
 
@@ -12,16 +12,8 @@ content-type: troubleshoot
 
 ---
 
-{:tsSymptoms: .tsSymptoms}
-{:tsCauses: .tsCauses}
-{:tsResolve: .tsResolve}
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:external: target="_blank" .external}
-{:troubleshoot: data-hd-content-type='troubleshoot'}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Why doesn't the console open when I log in with my IBMid?
 {: #ts_login_stalls}

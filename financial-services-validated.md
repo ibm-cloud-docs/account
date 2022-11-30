@@ -10,12 +10,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:external: target="_blank" .external}
-{:important: .important}
-{:tip: .tip}
-{:note: .note}
-{:term: .term}
+{{site.data.keyword.attribute-definition-list}}
 
 
 # Enabling your account to use Financial Services Validated products

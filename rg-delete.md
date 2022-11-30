@@ -13,27 +13,13 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:ruby: .ph data-hd-programlang='ruby'}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:terraform: .ph data-hd-interface='terraform'}
+{{site.data.keyword.attribute-definition-list}}
 
-# Deleting a resource group 
+
+# Deleting a resource group
 {: #delete_rgs}
 
-You can't delete the default resource group that's added to your account. Besides the default one, you can only delete a resource group if it doesn't contain any resources. 
+You can't delete the default resource group that's added to your account. Besides the default one, you can only delete a resource group if it doesn't contain any resources.
 {: shortdesc}
 
 ## Deleting a resource group in the console
@@ -112,7 +98,7 @@ detailedResponse, err := service.DeleteResourceGroup(deleteResourceGroupOptionsM
 {: #delete-rg-terraform}
 {: terraform}
 
-You can delete a resource group by using Terraform. 
+You can delete a resource group by using Terraform.
 
 1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
 
@@ -120,7 +106,7 @@ You can delete a resource group by using Terraform.
 
    The resource group can be deleted only, if there are no resources in it.
    {: note}
-  
+
 3. You can delete the resource group by removing the following code block from your Terraform file. You must have created the `resourceGroup` using the Terraform file.
 
    ```terraform
@@ -131,14 +117,14 @@ You can delete a resource group by using Terraform.
    {: codeblock}
 
    For more information, see the argument reference details on the [Terraform Resource Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_group){: external} page.
-  
+
 4. Initialize the Terraform CLI.
 
    ```terraform
    terraform init
    ```
    {: pre}
-   
+
 5. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to delete the resource group.
 
    ```terraform
@@ -152,7 +138,7 @@ You can delete a resource group by using Terraform.
    terraform apply
    ```
    {: pre}
-    
+
 You can also delete a resource group by running the following `terraform destroy` command.
 
 ```terraform

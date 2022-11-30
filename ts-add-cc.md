@@ -4,7 +4,7 @@ copyright:
   years: 2015, 2022
 lastupdated: "2022-02-28"
 
-keywords: troubleshoot account, account problem, view all orgs 
+keywords: troubleshoot account, account problem, view all orgs
 
 subcollection: account
 
@@ -12,15 +12,7 @@ content-type: troubleshoot
 
 ---
 
-{:tsSymptoms: .tsSymptoms}
-{:tsCauses: .tsCauses}
-{:tsResolve: .tsResolve}
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:troubleshoot: data-hd-content-type='troubleshoot'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Why can't I submit the form to add my credit card information?
 {: #ts_addcc}
@@ -41,5 +33,5 @@ Complete the following steps:
 
    Ensure that you specified a business account and not a personal account type, if you are providing a VAT ID or tax identification number.
    {: note}
-   
+
 1. Click **Upgrade account**.

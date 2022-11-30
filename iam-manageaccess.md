@@ -12,10 +12,8 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:video: .video}
+{{site.data.keyword.attribute-definition-list}}
+
 
 
 # Access management in {{site.data.keyword.Bluemix_notm}}
@@ -24,7 +22,7 @@ subcollection: account
 Access management enables you to control which users see, create, use, and manage resources in your account. To grant access, you can assign roles that allow users levels of access for completing platform management tasks and accessing account resources.
 {: shortdesc}
 
-The way that you manage access in {{site.data.keyword.Bluemix}} depends on the type of resource that you want to assign access to. {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) is the access management system that is used for consistently managing resources that are organized in a resource group across the {{site.data.keyword.Bluemix_notm}} platform. Classic infrastructure and Cloud Foundry resources are not managed by using Cloud IAM. These resource types have their own access management systems. 
+The way that you manage access in {{site.data.keyword.Bluemix}} depends on the type of resource that you want to assign access to. {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) is the access management system that is used for consistently managing resources that are organized in a resource group across the {{site.data.keyword.Bluemix_notm}} platform. Classic infrastructure and Cloud Foundry resources are not managed by using Cloud IAM. These resource types have their own access management systems.
 
 If you have a combination of resource types, you manage each type separately:
 
@@ -50,19 +48,19 @@ For IAM policies, the subject can be an access group, user, service ID, or trust
 
 Welcome back to another installment of the IBM Cloud Console Guide. In this video, we will talk about the different roles you can assign within the console.
 
-An account owner can invite as many users as they would like to their IBM Cloud account. Access management enables you to control which users are able to see, create, use, and manage resources in the account. 
+An account owner can invite as many users as they would like to their IBM Cloud account. Access management enables you to control which users are able to see, create, use, and manage resources in the account.
 
 The way that you manage access in IBM Cloud depends on the type of resource that you want to assign access to. The user access policy for available resources and services within the cloud catalog is managed by either Classic infrastructure and/or IAM or Cloud Foundry.
 
-As the account owner or the administrator of an account management service, you can use these services to grant users access to All Account Management services, Billing, Global Resource Catalog, IAM Access Groups Service, IAM Identity Service, Support Center, and User Management. Account Management roles include Administrator, Editor, Operator, or Viewer. 
+As the account owner or the administrator of an account management service, you can use these services to grant users access to All Account Management services, Billing, Global Resource Catalog, IAM Access Groups Service, IAM Identity Service, Support Center, and User Management. Account Management roles include Administrator, Editor, Operator, or Viewer.
 
 With Classic Infrastructure, you can select from three permission sets that will assign bulk access: View Only, Basic User, and Super User. You can give users access to Classic Infrastructure service or Classic Infrastructure device with specific permissions for Account, Network, Devices, and Services.
 
-Cloud Foundry roles grant access to organizations and spaces within the account. Cloud Foundry roles do not enable user permissions for completing actions within the context of a service across the account. 
+Cloud Foundry roles grant access to organizations and spaces within the account. Cloud Foundry roles do not enable user permissions for completing actions within the context of a service across the account.
 
-You can assign users to as many organizations and spaces as necessary. When the user is assigned to an org or space, you can set the level of access within each by assigning Cloud Foundry roles. 
+You can assign users to as many organizations and spaces as necessary. When the user is assigned to an org or space, you can set the level of access within each by assigning Cloud Foundry roles.
 
-Cloud Foundry organization roles include Manager, Billing Manager, and Auditor. And Cloud Foundry space roles include Manager, Developer, and Auditor. 
+Cloud Foundry organization roles include Manager, Billing Manager, and Auditor. And Cloud Foundry space roles include Manager, Developer, and Auditor.
 
 With Cloud Identity and Access Management, or IAM, you can assign and manage access to resources in your account. Within IBM Cloud, there are two types of roles: platform roles and service roles.
 

@@ -11,17 +11,13 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Auditing access to resources
 {: #access-report}
 
-If you want to determine which users, access groups, service IDs, and services can access a specific resource, you can download a report from the Resource list in your account. 
+If you want to determine which users, access groups, service IDs, and services can access a specific resource, you can download a report from the Resource list in your account.
 {: shortdesc}
 
 The report includes details about the selected resource. It doesn't include details about its subresources. However, the access that is listed in the report might extend to the subresources.
@@ -44,7 +40,7 @@ With the following extra access, you can view display names, access group member
 
 
 ## Exporting a report
-{: #export-report} 
+{: #export-report}
 
 To export the report, complete the following steps:
 
@@ -69,7 +65,7 @@ Each type of report does include the following information:
 * Resource display name
 * The information for the user who exported the report
 * A flag called `fullReport` that indicates if you have access to view the full detailed report. When this attribute is set to `true`, the user who downloaded the report has all of the required access.
-* Subjects who have access to the resource, including the roles and actions mapped to each role by the service and the platform. 
+* Subjects who have access to the resource, including the roles and actions mapped to each role by the service and the platform.
    Actions that are mapped to the role by the specific service are separated from the platform-specific actions that are mapped to the role in the JSON report only.
    {: note}
 

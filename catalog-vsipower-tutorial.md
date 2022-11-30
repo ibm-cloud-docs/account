@@ -10,31 +10,23 @@ subcollection: account
 
 content-type: tutorial
 services: cloud-object-storage, vpc
-account-plan: paid 
+account-plan: paid
 completion-time: 20m
 
 ---
 
-{:shortdesc: .shortdesc}
-{:screen: .screen}  
-{:codeblock: .codeblock}  
-{:pre: .pre}
-{:tip: .tip}
-{:note: .note}
-{:beta: .beta}
-{:external: target="_blank" .external}
-{:step: data-tutorial-type='step'} 
+{{site.data.keyword.attribute-definition-list}}
 
 # Onboarding a virtual server image for {{site.data.keyword.powerSys_notm}}
 {: #catalog-vsipower-tutorial}
 {: toc-content-type="tutorial"}
-{: toc-services="cloud-object-storage, vpc"} 
+{: toc-services="cloud-object-storage, vpc"}
 {: toc-completion-time="20m"}
 
-This tutorial walks you through how to onboard a sample virtual server image for {{site.data.keyword.powerSys_notm}} to your account. By completing this tutorial, you learn how to create a private catalog, import the sample, validate that it can be installed on a selected deployment target, and make the virtual server image available to users who have access to your account. 
+This tutorial walks you through how to onboard a sample virtual server image for {{site.data.keyword.powerSys_notm}} to your account. By completing this tutorial, you learn how to create a private catalog, import the sample, validate that it can be installed on a selected deployment target, and make the virtual server image available to users who have access to your account.
 {: shortdesc}
 
-This tutorial uses a [sample virtual server image for Power Systems Virtual Server](https://github.com/IBM-Cloud/isv-power-vsi-product-deploy-sample){: external} as part of the process to onboard a virtual server image. As you complete the tutorial, adapt each step to match your organization's goal. 
+This tutorial uses a [sample virtual server image for Power Systems Virtual Server](https://github.com/IBM-Cloud/isv-power-vsi-product-deploy-sample){: external} as part of the process to onboard a virtual server image. As you complete the tutorial, adapt each step to match your organization's goal.
 
 The tutorial includes steps for deploying a virtual server image to a target {{site.data.keyword.powerSys_notm}}. As a result, you incur associated infrastructure charges.
 {: note}
@@ -45,7 +37,7 @@ The tutorial includes steps for deploying a virtual server image to a target {{s
 1. Verify that you're using a Pay-As-You-Go or Subscription account. See [Viewing your account type](/docs/account?topic=account-account_settings#view-acct-type) for more details.
 1. Create your {{site.data.keyword.powerSys_notm}} instance [and convert it into a public image](/docs/power-iaas?topic=power-iaas-virtual-appliances#onboard-vsi).
 1. After your image is converted into a public image, create your [Terraform template](/docs/schematics?topic=schematics-create-tf-config).
-1. [Upload your Terraform template and readme file to your GitHub repository](https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample/tree/main#upload-your-terraform-template-to-a-github-release){: external}. 
+1. [Upload your Terraform template and readme file to your GitHub repository](https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample/tree/main#upload-your-terraform-template-to-a-github-release){: external}.
 
    Use the [latest release of the sample code](https://github.com/IBM-Cloud/isv-power-vsi-product-deploy-sample ){: external} as an example of how to set up your repository.
    {: tip}
@@ -56,8 +48,8 @@ The tutorial includes steps for deploying a virtual server image to a target {{s
 {: #catalog-vsipower-create}
 {: step}
 
-1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Catalogs**, and click **Create a catalog**. 
-1. Select **Product default** as the catalog type. 
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Catalogs**, and click **Create a catalog**.
+1. Select **Product default** as the catalog type.
 1. Enter the name of your catalog, for example, `Sample virtual server image`.
 1. Select **No products** to exclude all products in the {{site.data.keyword.cloud}} catalog from your catalog.
 1. Click **Create**.
@@ -85,12 +77,12 @@ The tutorial includes steps for deploying a virtual server image to a target {{s
 {: step}
 
 1. If you need to specify the Terraform runtime version that you want Schematics to use, click the **Override the default Terraform runtime version** checkbox and enter a version.
-1. From the Configure the deployment details section, click **Add deployment values**. 
+1. From the Configure the deployment details section, click **Add deployment values**.
 1. Select **Parameter** to select all options, and click **Add**.
 1. To customize which parameters are required for users to specify during the installation and which ones are hidden altogether, select a parameter and click **Edit**. For the purposes of this tutorial, configure each parameter as described in the following table.
 
 | Parameter | Description | Required for users to specify? | Hidden from users? |
-| --- | ---------- | --- | --- | 
+| --- | ---------- | --- | --- |
 | **`crn`** | The {{site.data.keyword.powerSys_notm}} CRN | True | False |
 | **`instance_name`** | The name of the virtual server instance. | True | False |
 | **`memory`** | The amount of memory that you want to assign to your instance in gigabytes. | False | False |
@@ -99,7 +91,7 @@ The tutorial includes steps for deploying a virtual server image to a target {{s
 | **`processors`** | The number of vCPUs to assign to the VM as visible within the guest OS. | False | False |
 | **`ssh_key_name`** | The name of the public SSH RSA key to use when you create the instance, as defined for the selected {{site.data.keyword.powerSys_notm}} CRN. | True | False |
 | **`sys_type`** | The type of system on which to create the VM: `s922`, `e880`, `e980`, `e1080`, or `s1022`. | False | False |
-{: caption="Table 1. Deployment values for a virtual server image" caption-side="top"} 
+{: caption="Table 1. Deployment values for a virtual server image" caption-side="top"}
 
 Next, update the configuration type of the **`crn`** and **`processors`** parameters:
 
@@ -109,21 +101,21 @@ Next, update the configuration type of the **`crn`** and **`processors`** parame
 1. From the Deployment values table, select the **`processors`** parameter and click **Edit**.
 1. Open the **Value details** menu and select **Float**.
 
-{{site.data.content.output-values}} 
+{{site.data.content.output-values}}
 
-{{site.data.content.define-IAM-access}} 
-  
+{{site.data.content.define-IAM-access}}
+
 ## Set the license requirements
 {: #catalog-vsipower-cfg-license}
 {: step}
 
-If users are required to accept any license agreements beyond the {{site.data.keyword.cloud_notm}} Services Agreement, provide the URL to each agreement. Or, if users can bring their own licenses, you can provide that URL as well.  
+If users are required to accept any license agreements beyond the {{site.data.keyword.cloud_notm}} Services Agreement, provide the URL to each agreement. Or, if users can bring their own licenses, you can provide that URL as well.
 
-1. Click **Add license agreements** > **Add**. 
+1. Click **Add license agreements** > **Add**.
 2. Enter the name and URL, and click **Update**.
 3. Click **Next**.
 
-## Review your readme file 
+## Review your readme file
 {: #catalog-vsipower-onboard-readme}
 {: step}
 
@@ -143,14 +135,14 @@ Validate that you can deploy the virtual server image to your {{site.data.keywor
 
 1. From the Validate product tab, enter the name of your Schematics workspace, select a resource group, select a Schematics region, and click **Next**.
 
-   In the **Tags** field, you can enter a name of a specific tag to attach to your virtual server image. Tags provide a way to organize, track usage costs, and manage access to the resources in your account. 
+   In the **Tags** field, you can enter a name of a specific tag to attach to your virtual server image. Tags provide a way to organize, track usage costs, and manage access to the resources in your account.
    {: tip}
 
 1. From the Deployment values section, review your parameter values, and click **Next**.
 1. In the Validation product section, select **I have read and agree to the following license agreements**.
 1. Click **Validate**.
 
-   To monitor the progress of the validation process, click **View logs**. 
+   To monitor the progress of the validation process, click **View logs**.
    {: tip}
 
 ## Manage compliance
@@ -164,9 +156,9 @@ Controls are safeguards that are used to meet security and compliance requiremen
 
 You can review the controls that were added from your readme file and add additional controls.
 
-1. Click **Add controls**. 
-1. Choose a profile. 
-1. Select the controls that you want to add to your version. 
+1. Click **Add controls**.
+1. Choose a profile.
+1. Select the controls that you want to add to your version.
 1. Click **Add**.
 
 ### Run Code Risk Analyzer scan
@@ -174,7 +166,7 @@ You can review the controls that were added from your readme file and add additi
 
 Scan your source code with Code Risk Analyzer to identify any security vulnerabilities that you need to assess.
 
-1. Click **Run scan**. 
+1. Click **Run scan**.
 2. Wait for the scan to finish.
 
 ### Add Security and Compliance Center scan
@@ -182,18 +174,17 @@ Scan your source code with Code Risk Analyzer to identify any security vulnerabi
 
 Add the scans that you previously ran in the Security and Compliance Center. Security and Compliance Center scans determine adherence to regulatory controls. For more information, see [Scheduling a scan](/docs/security-compliance?topic=security-compliance-schedule-scan).
 
-1. Select the profile that you scanned. 
-1. Select the Security and Compliance Center scan. 
+1. Select the profile that you scanned.
+1. Select the Security and Compliance Center scan.
 1. Click **Add scan**.
 1. Click **Next**.
 
 ## Review requirements
 {: #catalog-vsipower-review-reqs}
 
-You must complete validation and any other requirements to publish your product to your account. 
+You must complete validation and any other requirements to publish your product to your account.
 
-## Next steps  
+## Next steps
 {: #catalog-vsipower-publish}
 
 After you onboard and validate your virtual server image, you're ready to publish it to your account. From the **Actions** menu, select **Publish to account**. As a result, the virtual server image for Power Systems is available only to users who have access to the `Sample virtual server image` private catalog in your account.
-

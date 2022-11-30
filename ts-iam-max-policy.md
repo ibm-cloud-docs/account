@@ -13,15 +13,8 @@ content-type: troubleshoot
 
 ---
 
-{:tsSymptoms: .tsSymptoms}
-{:tsCauses: .tsCauses}
-{:tsResolve: .tsResolve}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:note:.deprecated}
-{:troubleshoot: data-hd-content-type='troubleshoot'}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Why is a policy limit blocking me from assigning access?
 {: #troubleshoot-policy-limit}
@@ -34,7 +27,7 @@ You tried to assign access, but received an error message that you reached the l
 
 A new policy can't be created to assign access, and you receive an error message that states `422: Exceeded maximum policies quota error`.
 {: tsSymptoms}
-   
+
 The account is at the [limit of total number of policies allowed](/docs/account?topic=account-known-issues).
 {: tsCauses}
 

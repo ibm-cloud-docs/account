@@ -12,21 +12,14 @@ content-type: troubleshoot
 
 ---
 
-{:tsSymptoms: .tsSymptoms}
-{:tsCauses: .tsCauses}
-{:tsResolve: .tsResolve}
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:troubleshoot: data-hd-content-type='troubleshoot'}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Why do I encounter console pages that don't load?
 {: #ts_err}
 {: troubleshoot}
 
-A page in the {{site.data.keyword.Bluemix}} console might not load properly, and an error message is displayed. 
+A page in the {{site.data.keyword.Bluemix}} console might not load properly, and an error message is displayed.
 {: .shortdesc}
 
 One of the following error messages might be displayed:

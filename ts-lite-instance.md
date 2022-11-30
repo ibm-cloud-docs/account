@@ -12,15 +12,8 @@ content-type: troubleshoot
 
 ---
 
-{:tsSymptoms: .tsSymptoms}
-{:tsCauses: .tsCauses}
-{:tsResolve: .tsResolve}
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:troubleshoot: data-hd-content-type='troubleshoot'}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Why can't I create a new Lite plan instance?
 {: #nosecondlite}
@@ -39,4 +32,4 @@ There's a limit of one instance per Lite plan to ensure that these plans stay fr
 You can create more instances of the service by selecting one of the billable service plans, which are available in the billable accounts. To upgrade to a billable account from the console, go to **Manage** > **Account** in the {{site.data.keyword.cloud_notm}} console, and select **Account settings**.
 {: tsResolve}
 
-If you don't want to upgrade from a Lite account and are no longer using your existing Lite service instance, you can delete the existing Lite plan instance from the dashboard and then create a new instance. When you delete the Lite plan instance, all of the data that is associated with that instance is deleted and isn't recoverable. 
+If you don't want to upgrade from a Lite account and are no longer using your existing Lite service instance, you can delete the existing Lite plan instance from the dashboard and then create a new instance. When you delete the Lite plan instance, all of the data that is associated with that instance is deleted and isn't recoverable.

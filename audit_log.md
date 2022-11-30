@@ -10,20 +10,9 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:screen: .screen}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:curl: .ph data-hd-programlang='curl'}
-{:python: .ph data-hd-programlang='python'}
-{:ruby: .ph data-hd-programlang='ruby'}
-{:java: .ph data-hd-programlang='java'}
-{:go: .ph data-hd-programlang='go'}
+{{site.data.keyword.attribute-definition-list}}
 
-# Auditing system events for classic infrastructure 
+# Auditing system events for classic infrastructure
 {: #audit-log}
 
 If you have a classic infrastructure account, you can monitor storage replication events by viewing audit logs. Audit logs track the interactions of each user, like login attempts, port speed updates, power restarts, and interactions made by {{site.data.keyword.BluSoftlayer_notm}} infrastructure support staff.
@@ -41,24 +30,24 @@ To view your audit log, go to **Manage** > **Account** in the {{site.data.keywor
 From the audit log page, you can also see data for each access attempt that is made by a specific user. The logs display a date and timestamp and IP address for each access attempt. Use the following steps to view a user's Access Logs.
 
 1. Go to **Manage** > **Account** in the {{site.data.keyword.cloud_notm}} console, and select **Audit log**.
-2. Then, filter for the user, select the timeframe that you want to view, and choose an object type.  
+2. Then, filter for the user, select the timeframe that you want to view, and choose an object type.
 
 The access log for each user displays the access attempts that were made by that user by date, along with the IP address from which the access attempt was made. Information within the access log is read-only.
 
 ### Granting access to the audit log
 {: #grant-access-logs}
 
-The Viewer role or higher on all account management services is required to view the audit log. For classic infrastructure permissions, a user must be assigned the Super user role. 
+The Viewer role or higher on all account management services is required to view the audit log. For classic infrastructure permissions, a user must be assigned the Super user role.
 
 ## Viewing your audit log by using the SoftLayer API
 {: #view-audit-log-api}
 {: api}
 
-You can use the SoftLayer API to view your audit log. The {{site.data.keyword.slapi_full}} is the development interface that gives developers and system administrators direct interaction with {{site.data.keyword.cloud_notm}} backend system. The {{site.data.keyword.slapi_short}} powers many of the features in the {{site.data.keyword.cloud_notm}} console, which typically means if an interaction is possible in the {{site.data.keyword.cloud_notm}} console, it can also be run in the API. Because you can programmatically interact with all portions of the {{site.data.keyword.cloud_notm}} environment within the API, you can automate tasks with {{site.data.keyword.slapi_short}}. 
+You can use the SoftLayer API to view your audit log. The {{site.data.keyword.slapi_full}} is the development interface that gives developers and system administrators direct interaction with {{site.data.keyword.cloud_notm}} backend system. The {{site.data.keyword.slapi_short}} powers many of the features in the {{site.data.keyword.cloud_notm}} console, which typically means if an interaction is possible in the {{site.data.keyword.cloud_notm}} console, it can also be run in the API. Because you can programmatically interact with all portions of the {{site.data.keyword.cloud_notm}} environment within the API, you can automate tasks with {{site.data.keyword.slapi_short}}.
 
 The {{site.data.keyword.slapi_short}} is a Remote Procedure Call system. Each call involves sending data toward an API endpoint and receiving structured data in return. The format used to send and receive data with the {{site.data.keyword.slapi_short}} depends on which implementation of the API you choose. The {{site.data.keyword.slapi_short}} currently uses SOAP, XML-RPC, or REST for data transmission.
 
-To programmatically audit system events for classic infrastructure, call the {{site.data.keyword.slapi_short}} as shown in the following example: 
+To programmatically audit system events for classic infrastructure, call the {{site.data.keyword.slapi_short}} as shown in the following example:
 
 ```bash
 https://api.softlayer.com/rest/v3.1/SoftLayer_Event_Log/getAllObjects.json?
@@ -99,8 +88,8 @@ class example():
             objectFilter={"eventCreateDate":{"operation":"greaterThanDate","options":[{"name":"date","value":["2018-04-18T00:00:00.0000-06:00"]}]}}'
         """
         _filter = {
-            'eventCreateDate': { 
-                'operation': 'greaterThanDate', 
+            'eventCreateDate': {
+                'operation': 'greaterThanDate',
                 'options': [
                     {'name': 'date', 'value': [getDateString(30)]}
                 ]
@@ -139,7 +128,7 @@ class example():
         """
         for event in self.getAllObjects(None):
             printLogs(event)
-        
+
 
     def getAllObjects(self, _filter, limit=50, offset=0):
         """Pages through all results from the Event_Log. This might take long time."""
@@ -554,7 +543,7 @@ func printLogs(logs []datatypes.Event_Log){
 To get all Events logs, use [SoftLayer_Event_Log::getAllObjects()](https://softlayer.github.io/reference/services/SoftLayer_Event_Log/getAllObjects/). In this case, just the first 50 events are returned by using pagination limit `resultLimit=0,50`. For more information, see [Using Result Limits in the SoftLayer API](https://sldn.softlayer.com/article/using-result-limits-softlayer-api/). A mask is shown in this example, `mask[eventName,eventCreateDate,userType]`, that restricts other local fields and limits the amount of information returned.
 {: curl}
 
-This example deals with a few ways of pulling data from `SoftLayer_Event_Log`. There can be many Logs, so by using a filter, like the `recentLogs` function, you can limit how far back you search for Events. 
+This example deals with a few ways of pulling data from `SoftLayer_Event_Log`. There can be many Logs, so by using a filter, like the `recentLogs` function, you can limit how far back you search for Events.
 {: python}
 
 This example deals with a few ways of pulling data from [SoftLayer_Event_Log](https://sldn.softlayer.com/reference/services/SoftLayer_Event_Log/). The latest version of the SoftLayer API Client for Java (`v0.3.2` at the time of publishing this example) does not support object filters in the SoftLayer API, so programmatic filters are used instead.

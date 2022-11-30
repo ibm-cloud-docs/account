@@ -10,15 +10,8 @@ subcollection: account
 content-type: troubleshoot
 ---
 
-{:tsSymptoms: .tsSymptoms}
-{:tsCauses: .tsCauses}
-{:tsResolve: .tsResolve}
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:troubleshoot: data-hd-content-type='troubleshoot'}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Why are no spaces associated with my current org?
 {: #ts_no_space}
@@ -40,5 +33,3 @@ To create a space, use one of the following methods:
 
 * From the console menu bar, click **Manage > Account**. Expand **Account resources** and click **Cloud Foundry orgs**. Then, select the organization in which you want to create the space, and click **Add a space**.
 * From the {{site.data.keyword.Bluemix_notm}} CLI, enter `ibmcloud account space-create <space_name> -o <organization_name>`.
-  
-  

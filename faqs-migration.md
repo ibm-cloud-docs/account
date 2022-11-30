@@ -14,11 +14,8 @@ content-type: faq
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:faq: data-hd-content-type='faq'}
+{{site.data.keyword.attribute-definition-list}}
+
 
 #  FAQs about migrating resources to a different data center
 {: #faqs-dc-closure}
@@ -37,7 +34,7 @@ To continue bringing you the best service, hardware, and connectivity, data cent
 {: #dc-fully-migrated}
 {: faq}
 
-Yes. To ensure that you have no interruption in service, we try to allow as much lead time as possible to make the transition easier. 
+Yes. To ensure that you have no interruption in service, we try to allow as much lead time as possible to make the transition easier.
 
 
 ## Will I need to migrate my resources in the future?
@@ -77,15 +74,15 @@ Yes. You can [contact an appropriate support representative](https://www.ibm.com
 {: #dc-determine-config}
 {: faq}
 
-You can find your system configuration details by selecting your device from your [list of resources](https://cloud.ibm.com/resources){: external} in the {{site.data.keyword.cloud_notm}} console. 
+You can find your system configuration details by selecting your device from your [list of resources](https://cloud.ibm.com/resources){: external} in the {{site.data.keyword.cloud_notm}} console.
 
 ## How do I determine the utilization of my current hardware?
-{: #dc-determine-utilization} 
+{: #dc-determine-utilization}
 {: faq}
 
 In general, you need to understand which specific resources within the system are required regarding things like the processor, memory, disk, and network. Having this information can help you better size your new system. For example, a system where memory capacity is frequently overcommitted is likely to benefit from larger memory sizes in the target system that you migrate to.
 
-Most operating systems provide tools that you can use to understand the utilization of your system, for example, vmstat and iostat on Linux or Windows System Performance Monitor. Performance monitoring and tuning is something that you might invest significant time and effort in. 
+Most operating systems provide tools that you can use to understand the utilization of your system, for example, vmstat and iostat on Linux or Windows System Performance Monitor. Performance monitoring and tuning is something that you might invest significant time and effort in.
 
 For more information, contact the [Client Success team](https://www.ibm.com/cloud/data-centers/?focusArea=WCP%20-%20Pooled%20CSM&contactmodule){: external}.
 
@@ -94,7 +91,7 @@ For more information, contact the [Client Success team](https://www.ibm.com/clou
 {: #dc-compare-processor}
 {: faq}
 
-To compare the specifications of old and new Intel processors, go to [Intel processors product specifications page](https://ark.intel.com/content/www/us/en/ark.html#@Processors){: external}. Newer processors tend to have more processor cores and typically run at slower clock speeds than older variants. 
+To compare the specifications of old and new Intel processors, go to [Intel processors product specifications page](https://ark.intel.com/content/www/us/en/ark.html#@Processors){: external}. Newer processors tend to have more processor cores and typically run at slower clock speeds than older variants.
 
 If you have a workload that is processor-bound, meaning that the performance is limited by the speed of the processor, choose a processor that has fewer cores and a higher clock speed. If you run many workloads that aren't constrained by processor speed, choose a processor with more cores and a similar, or slower, clock speed.
 
@@ -134,5 +131,5 @@ Most likely, your networking needs to change to work with the new servers and si
 
 Your new servers come with new primary IP subnets. Your current IP addresses cannot be transferred. If you need additional IP addresses, you can request those directly from the console. Specify that you're migrating your resources to a new data center.
 
-* For more information about VPC subnets, see [Bring your own subnet](/docs/vpc?topic=vpc-configuring-address-prefixes). 
-* For more information about classic infrastructure subnets, see [Getting started with subnets and IPs](/docs/subnets?topic=subnets-getting-started). 
+* For more information about VPC subnets, see [Bring your own subnet](/docs/vpc?topic=vpc-configuring-address-prefixes).
+* For more information about classic infrastructure subnets, see [Getting started with subnets and IPs](/docs/subnets?topic=subnets-getting-started).

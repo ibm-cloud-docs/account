@@ -4,7 +4,7 @@ copyright:
   years: 2015, 2021
 lastupdated: "2021-09-24"
 
-keywords: troubleshoot account, pending account, login issue 
+keywords: troubleshoot account, pending account, login issue
 
 subcollection: account
 
@@ -12,16 +12,7 @@ content-type: troubleshoot
 
 ---
 
-{:tsSymptoms: .tsSymptoms}
-{:tsCauses: .tsCauses}
-{:tsResolve: .tsResolve}
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:external: target="_blank" .external}
-{:troubleshoot: data-hd-content-type='troubleshoot'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Why can't I log in immediately after I create an account?
 {: #ts_accntpding}
@@ -45,6 +36,6 @@ Can't find the email? Resend.
 ```
 {: screen}
 
-Click **Resend** to send another confirmation email to the email address that is associated with your IBMid. 
+Click **Resend** to send another confirmation email to the email address that is associated with your IBMid.
 
 If you receive the email but the confirmation link doesn't work, it might be a problem with your web browser. You can troubleshoot potential browser problems by clearing cache and cookies in the browser, by using a private or incognito window, or by using a browser on a different computer or device.

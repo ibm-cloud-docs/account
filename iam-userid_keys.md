@@ -11,35 +11,22 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:support: data-reuse='support'}
-{:help: data-hd-content-type='help'}
-{:note: .note}
-{:tip: .tip}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Managing user API keys
 {: #userapikey}
 
-A federated user or non-federated user can create an API key to use in the CLI or as part of automation to log in as your user identity. You can use the console, CLI, or API to manage your {{site.data.keyword.cloud}} API keys by listing your keys, creating keys, updating keys, or deleting keys. 
+A federated user or non-federated user can create an API key to use in the CLI or as part of automation to log in as your user identity. You can use the console, CLI, or API to manage your {{site.data.keyword.cloud}} API keys by listing your keys, creating keys, updating keys, or deleting keys.
 {: shortdesc}
 
-The API key inherits all assigned access for the user identity for which it is created, and the access is not limited to just the account where the API key is created because it inherits any policies that are assigned to the user. So, if the user has access to resources from multiple accounts, then the API key inherits the access from all accounts. Therefore, it is possible that a user's API key can be used to generate a token and access resources that a user has access to outside of the account where the API key was created. 
+The API key inherits all assigned access for the user identity for which it is created, and the access is not limited to just the account where the API key is created because it inherits any policies that are assigned to the user. So, if the user has access to resources from multiple accounts, then the API key inherits the access from all accounts. Therefore, it is possible that a user's API key can be used to generate a token and access resources that a user has access to outside of the account where the API key was created.
 
-Because the API key that is associated with your user identity has all of the access you're entitled to across any account that you are a member of, you must be cautious with how you use your API key. For example, an {{site.data.keyword.cloud_notm}} service might need to act on behalf of a user or access services that are not IAM-enabled, so the service might request a user API key. In these cases, it is recommended that you create an API key that is associated with a functional ID that is assigned the minimum level of access that is required to work with the service. 
+Because the API key that is associated with your user identity has all of the access you're entitled to across any account that you are a member of, you must be cautious with how you use your API key. For example, an {{site.data.keyword.cloud_notm}} service might need to act on behalf of a user or access services that are not IAM-enabled, so the service might request a user API key. In these cases, it is recommended that you create an API key that is associated with a functional ID that is assigned the minimum level of access that is required to work with the service.
 
 A functional ID is a user ID created to represent a program, application, or service. The functional ID can be invited to an account and assigned only the access for a particular purpose, such as interacting with a specific resource or application. The functional ID should be granted only the minimum level access in a single account that is needed for the specific function, which it was created.
 
-If you are applying a trusted profile, you can't create a user API key. You can still create and manage all other API keys. For example, service ID API keys. For more information, see [FAQs about IAM](/docs/account?topic=account-iamfaq#tp-apikey). 
+If you are applying a trusted profile, you can't create a user API key. You can still create and manage all other API keys. For example, service ID API keys. For more information, see [FAQs about IAM](/docs/account?topic=account-iamfaq#tp-apikey).
 {: note}
 
 
@@ -92,7 +79,7 @@ ibmcloud iam api-key-create MyKey -d "this is my API key" --file key_file
 {: #create_user_key-api}
 {: api}
 
-To create an API key, call the [IAM Identity Service API](https://cloud.ibm.com/apidocs/iam-identity-token-api?code=go#create-api-key){: external} as shown in the following example: 
+To create an API key, call the [IAM Identity Service API](https://cloud.ibm.com/apidocs/iam-identity-token-api?code=go#create-api-key){: external} as shown in the following example:
 
 ```bash
 curl -X POST 'https://iam.cloud.ibm.com/v1/apikeys' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json' -d '{
@@ -202,7 +189,7 @@ ibmcloud iam api-key-update MyCurrentName -n MyNewName -d "the new description o
 {: #update_user_key-api}
 {: api}
 
-To edit an API key by using the API, call the [IAM Identity Service API](https://cloud.ibm.com/apidocs/iam-identity-token-api?code=go#update-api-key){: external} as shown in the following example: 
+To edit an API key by using the API, call the [IAM Identity Service API](https://cloud.ibm.com/apidocs/iam-identity-token-api?code=go#update-api-key){: external} as shown in the following example:
 
 ```bash
 curl -X PUT 'https://iam.cloud.ibm.com/v1/apikeys/APIKEY_UNIQUE_ID' -H 'Authorization: Bearer TOKEN' -H 'If-Match: <value of etag header from GET request>' -H 'Content-Type: application/json' -d '{
@@ -274,7 +261,7 @@ fmt.Println(string(b))
 ## Locking an API key
 {: #lock_user_key}
 
-For platform API keys that represent your user identity you can prevent the API key from being deleted by locking it. A locked API key is indicated by the **Locked** icon ![Locked icon](images/locked.svg "Locked"). 
+For platform API keys that represent your user identity you can prevent the API key from being deleted by locking it. A locked API key is indicated by the **Locked** icon ![Locked icon](images/locked.svg "Locked").
 
 ### Locking and unlocking an API key from the UI
 {: #lockui}
@@ -337,7 +324,7 @@ UUID
 :   The UUID of the API key to be unlocked, exclusive with the NAME option.
 
 -f, --force
-:   Force unlock without confirmation. 
+:   Force unlock without confirmation.
 
 **Example**:
 
@@ -352,13 +339,13 @@ ibmcloud iam api-key-unlock test-api-key
 {: #lock-user-key-api}
 {: api}
 
-For platform API keys that represent your user identity you can prevent the API key from being deleted by locking it. 
+For platform API keys that represent your user identity you can prevent the API key from being deleted by locking it.
 
 ### Locking an API key
 {: #lock-keyapi}
 {: api}
 
-To lock an API key by using the API, call the [IAM Identity Service API](https://cloud.ibm.com/apidocs/iam-identity-token-api?code=go#lock-api-key){: external} as shown in the following example: 
+To lock an API key by using the API, call the [IAM Identity Service API](https://cloud.ibm.com/apidocs/iam-identity-token-api?code=go#lock-api-key){: external} as shown in the following example:
 
 ```bash
 curl -X POST 'https://iam.cloud.ibm.com/v1/apikeys/APIKEY_UNIQUE_ID/lock' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json'
@@ -420,7 +407,7 @@ if err != nil {
 {: unlock-keyapi}
 {: api}
 
-To unlock an API key by using the API, call the [IAM Identity Service API](https://cloud.ibm.com/apidocs/iam-identity-token-api?code=go#unlock-api-key){: external} as shown in the following example: 
+To unlock an API key by using the API, call the [IAM Identity Service API](https://cloud.ibm.com/apidocs/iam-identity-token-api?code=go#unlock-api-key){: external} as shown in the following example:
 
 ```bash
 curl -X DELETE 'https://iam.cloud.ibm.com/v1/apikeys/APIKEY_UNIQUE_ID/lock' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json'
@@ -500,7 +487,7 @@ Enter `ibmcloud iam api-key-delete NAME` in your command prompt, specifying the 
 {: #delete_user_key-api}
 {: api}
 
-To delete an API key by using the API, call the [IAM Identity Service API](https://cloud.ibm.com/apidocs/iam-identity-token-api#delete-api-key){: external} as shown in the following example: 
+To delete an API key by using the API, call the [IAM Identity Service API](https://cloud.ibm.com/apidocs/iam-identity-token-api#delete-api-key){: external} as shown in the following example:
 
 ```bash
 curl -X DELETE 'https://iam.cloud.ibm.com/v1/apikeys/APIKEY_UNIQUE_ID' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json'

@@ -15,16 +15,10 @@ content-type: troubleshoot
 ---
 
 
-{:tsSymptoms: .tsSymptoms}
-{:tsCauses: .tsCauses}
-{:tsResolve: .tsResolve}
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:troubleshoot: data-hd-content-type='troubleshoot'}
+{{site.data.keyword.attribute-definition-list}}
 
-# Why can't I assign my resource to a new resource group? 
+
+# Why can't I assign my resource to a new resource group?
 {: #ts_service_instance}
 {: troubleshoot}
 
@@ -39,4 +33,3 @@ Resources can't be moved after they are assigned to a resource group.
 
 To correct this issue, you can try to delete the resource and create a new instance of it from the catalog. This way, you can be sure to assign the new instance to the correct resource group.
 {: tsResolve}
-

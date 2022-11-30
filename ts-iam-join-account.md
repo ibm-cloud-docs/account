@@ -12,16 +12,8 @@ content-type: troubleshoot
 
 ---
 
-{:tsSymptoms: .tsSymptoms}
-{:tsCauses: .tsCauses}
-{:tsResolve: .tsResolve}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:note:.deprecated}
-{:troubleshoot: data-hd-content-type='troubleshoot'}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Why can't I log in to an account I was recently added to?
 {: #troubleshoot-join-account}
@@ -40,7 +32,7 @@ This problem can commonly occur by one of the following reasons:
 * The invitation expired. You have 30 days to accept an invitation.
 * The inviter canceled your invitation.
 
-Complete the following steps to accept the invitation. If your invitation expired, contact the inviter or the account owner. 
+Complete the following steps to accept the invitation. If your invitation expired, contact the inviter or the account owner.
 {: tsResolve}
 
 * If you're new to {{site.data.keyword.cloud}}, you receive an email that contains all the information you need. Click the invitation link to join the account.

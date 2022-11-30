@@ -12,13 +12,8 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:external: target="_blank" .external}
-{:note: .note}
-{:important: .important}
-{:tip: .tip}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # {{site.data.keyword.Bluemix_notm}} login sequences
 {: #login-sequence}
@@ -58,7 +53,7 @@ IBMid allows enterprise customers to federate their user authentication and auth
 4. With the help of the username, IAM is able to determine the identity provider (IdP) that should be used to run the login sequence. Therefore, IAM is sending back a redirect request to the user's browser.
 5. The browser is completing the redirect and displays the enterprise customer's login page. For this interaction, a SAML request is sent to the enterprise customer's user authentication and authorization system.
 6. After validating the user's credentials, the enterprise customer's system sends a redirect instruction to the user's browser. Part of this redirect is the SAML response containing assertions that describe the user and the additional attributes of that user.
-7. The browser completes the redirect and sends the SAML response with assertions to IBMid. 
+7. The browser completes the redirect and sends the SAML response with assertions to IBMid.
 8. IBMid validates the SAML response and maps the user to an IBMid.
 9. IBMid sends a redirect to the user's browser with an authorization code to continue the authentication flow according to the OpenID Connect standard.
 10. The browser contacts IAM and provides the authorization code, so that IAM can retrieve the required tokens from IBMid using the OpenID Connect standard.
@@ -70,7 +65,7 @@ IBMid allows enterprise customers to federate their user authentication and auth
 ## Login sequence for {{site.data.keyword.appid_short}} with a connected SAML partner
 {: #appid-saml-login}
 
-If you choose to integrate with your external IdP to securely authenticate external users to your account by using an {{site.data.keyword.appid_short}} instance, the login sequence works according to the following sequence. For more information about this type of authentication, see [Enabling authentication from an external identity provider](/docs/account?topic=account-idp-integration). 
+If you choose to integrate with your external IdP to securely authenticate external users to your account by using an {{site.data.keyword.appid_short}} instance, the login sequence works according to the following sequence. For more information about this type of authentication, see [Enabling authentication from an external identity provider](/docs/account?topic=account-idp-integration).
 
 ![Login process for users who are connected from an App ID instance connected with a SAML partner](images/login-appid-saml.svg "Login process for users who are connected from an App ID instance connected with a SAML partner"){: caption="Figure 3. Login process for users who areconnected from an App ID instance connected with a SAML partner" caption-side="bottom"}
 
@@ -84,7 +79,7 @@ If you choose to integrate with your external IdP to securely authenticate exter
 4. The browser completes the redirect and ends on an {{site.data.keyword.appid_short}} provided page. This page immediately returns a redirect to the browser containing a SAML request.
 5. The SAML request is sent to the enterprise customer's user authentication and authorization system.
 6. After validating the user's credentials, the enterprise customer's system sends a redirect instruction to the user's browser. Part of this redirect is the SAML response containing assertions that describe the user and the additional attributes of that user.
-7. The browser completes the redirect and sends the SAML response with assertions to the {{site.data.keyword.appid_short}} instance. 
+7. The browser completes the redirect and sends the SAML response with assertions to the {{site.data.keyword.appid_short}} instance.
 8. After validating the SAML response, {{site.data.keyword.appid_short}} now sends a redirect to the browser that contains an authorization code to continue the authentication flow according to the OpenID Connect standard.
 9. The browser contacts IAM and provides the authorization code so that IAM can retrieve the required tokens from {{site.data.keyword.appid_short}} using the OpenID Connect standard.
 10. After {{site.data.keyword.appid_short}} has provided the required tokens, IAM is now finishing its authentication flow with the console by sending an OAuth2 compliant redirect with an authorization code to the browser.

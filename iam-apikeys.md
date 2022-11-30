@@ -10,11 +10,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:external: target="_blank" .external}
-{:tip: .tip}
+{{site.data.keyword.attribute-definition-list}}
 
 # Understanding API keys
 {: #manapikey}
@@ -22,12 +18,12 @@ subcollection: account
 An application programming interface key (API key) is a unique code that is passed in to an API to identify the calling application or user. API keys are used to track and control how the API is being used, for example to prevent malicious use or abuse of the API. The API key often acts as both a unique identifier and a secret token for authentication, and is assigned a set of access that is specific to the identity that is associated with it.
 {: shortdesc}
 
-To view your API keys, go to **Manage** > **Access (IAM)** > **API keys** in the {{site.data.keyword.cloud_notm}} console. 
+To view your API keys, go to **Manage** > **Access (IAM)** > **API keys** in the {{site.data.keyword.cloud_notm}} console.
 
 ## {{site.data.keyword.cloud_notm}} API keys for users
 {: #ibm-cloud-api-keys}
 
-{{site.data.keyword.cloud}} API keys are associated with a user's identity, and each API key that is created by the user has the same access that the user is assigned. The access that the user is assigned can be from policies across multiple accounts that the user is a member of. Therefore, it is possible that a user's API key can be used to generate a token and access resources that a user has access to outside of the account where the API key was created. 
+{{site.data.keyword.cloud}} API keys are associated with a user's identity, and each API key that is created by the user has the same access that the user is assigned. The access that the user is assigned can be from policies across multiple accounts that the user is a member of. Therefore, it is possible that a user's API key can be used to generate a token and access resources that a user has access to outside of the account where the API key was created.
 
 The user API key can be used directly or used to generate a token. Because users can be members of multiple accounts and have access to many resources across multiple accounts, and the API key is used to identify the user, it can provide the ability to gain access to almost any resource, in any account, that the user has access to. For this reason, the user API key should be treated similar to a username and password and should never be shared. 
 
@@ -35,7 +31,7 @@ The user API key can be used directly or used to generate a token. Because users
 
 If a service requires a user API key for interacting with other services or applications, use the functional ID user API key. By using the API key that is associated with the functional ID, you can provide only the access that is needed for that service. Sharing a real user ID API key with a service allows the service to access any resources that the user can access across multiple accounts. Sharing a real user ID API key is highly discouraged.
 
-Only the user for which the API key is associated and an Administrator for the Identity Service can delete it. You can use the {{site.data.keyword.cloud_notm}} API keys in the command-line interface (CLI) or as part of automation to log in as your user identity. You can also use {{site.data.keyword.cloud_notm}} API keys to access classic infrastructure APIs. 
+Only the user for which the API key is associated and an Administrator for the Identity Service can delete it. You can use the {{site.data.keyword.cloud_notm}} API keys in the command-line interface (CLI) or as part of automation to log in as your user identity. You can also use {{site.data.keyword.cloud_notm}} API keys to access classic infrastructure APIs.
 
 For more information about using an API key associated with your user identity, see [Managing user API keys](/docs/account?topic=account-userapikey#manage-user-keys).
 
@@ -61,7 +57,7 @@ Some services in {{site.data.keyword.Bluemix_notm}} might provide an API key whe
 ## Working with API keys
 {: #work-with-apikeys}
 
-To manage the {{site.data.keyword.Bluemix_notm}} API keys that are associated with your user identity or the ones that you have access to manage for other users in the account, go to **Manage** &gt; **Access (IAM)** &gt; **API keys** in the {{site.data.keyword.cloud_notm}} console. 
+To manage the {{site.data.keyword.Bluemix_notm}} API keys that are associated with your user identity or the ones that you have access to manage for other users in the account, go to **Manage** &gt; **Access (IAM)** &gt; **API keys** in the {{site.data.keyword.cloud_notm}} console.
 
 On the {{site.data.keyword.cloud_notm}} API keys page, you can create, edit, or delete {{site.data.keyword.cloud_notm}} API keys for yourself, and you can manage all classic infrastructure API keys for users to which you are an ancestor in the user hierarchy. This means you can manage API keys for all users you invited to the account, or your child users invited to the account, and so on. In addition, if you are the account owner or a user with the required access to manage other user's API keys in the account, you can use the **View** filter to list and manage those API keys.
 
@@ -80,5 +76,5 @@ If you are the account owner or a user with the required access, you can access 
 | My {{site.data.keyword.cloud_notm}} API keys      | Your {{site.data.keyword.cloud_notm}} API keys | No access required | View, create, edit, delete |
 | All {{site.data.keyword.cloud_notm}} user API keys | All {{site.data.keyword.cloud_notm}} API keys created by all users in the account | Administrator role on the IAM Identity service | View, edit, and delete |
 | All service ID API keys | All API keys created for service IDs in the account | Administrator role on the IAM Identity service | View, edit, and delete |
-| Classic infrastructure API keys | Your classic infrastructure API key and any classic infrastructure API keys for users who you are ancestor of in the user hierarchy | No access required other than being an ancestor in the user hierarchy | View details and delete | 
+| Classic infrastructure API keys | Your classic infrastructure API key and any classic infrastructure API keys for users who you are ancestor of in the user hierarchy | No access required other than being an ancestor in the user hierarchy | View details and delete |
 {: caption="Table 1. Required access for API key management on the API keys page" caption-side="top"}

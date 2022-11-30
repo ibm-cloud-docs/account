@@ -12,16 +12,13 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Enabling MFA security questions for a user
 {: #questions}
 
-As an administrator with the correct access, you can enable the option for a user to be prompted for security questions and answers at login. This type of multifactor authentication (MFA) is required only for the account where the setting is enabled. 
+As an administrator with the correct access, you can enable the option for a user to be prompted for security questions and answers at login. This type of multifactor authentication (MFA) is required only for the account where the setting is enabled.
 {: shortdesc}
 
 For more information about your MFA options, see [Types of multifactor authentication](/docs/account?topic=account-types).
@@ -58,8 +55,8 @@ To set up your security questions:
 
    If you previously set up security questions, click **Edit**.
 3. Select the questions that you want to have and answer them. You must use three security question options.
-4. Click **Save** when you're finished.  
-5. Select the **Yes** checkbox for the security questions to be enabled. Selecting this option might prompt you to sign in to your account again.  
+4. Click **Save** when you're finished.
+5. Select the **Yes** checkbox for the security questions to be enabled. Selecting this option might prompt you to sign in to your account again.
 
    If this option isn't selected, you don't have access to turn on security questions. You must be the account owner or have the User-managed login setting that is enabled for you by your account administrator to turn security questions on and off. Contact your account owner or administrator to get access.
    {: note}

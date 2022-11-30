@@ -5,7 +5,7 @@
 copyright:
 
   years: 2019, 2022
-  
+
 lastupdated: "2022-03-22"
 
 keywords: resource, account resources, create resource, access to create resources
@@ -14,25 +14,10 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:term: .term}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:ruby: .ph data-hd-programlang='ruby'}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:terraform: .ph data-hd-interface='terraform'}
+{{site.data.keyword.attribute-definition-list}}
 
-# Creating resources 
+
+# Creating resources
 {: #manage_resource}
 
 A [resource](x2004267){: term} is anything that you can create from the catalog that is managed by and contained within a resource group. You can create and manage resources by going to your [resource list](https://cloud.ibm.com/resources) in the {{site.data.keyword.cloud}} console or by using the command-line interface (CLI).
@@ -56,9 +41,9 @@ For users in your account to be able to create resources from the catalog and as
 {: support}
 {: help}
 
-Use the following steps to create a resource in the console: 
+Use the following steps to create a resource in the console:
 1. From your dashboard, click **View resources** within the Resources summary widget.
-2. Click **Create resource**. From here, you are directed to the catalog. You can search the products or filter based on a specific category, provider, pricing plan, type of compliance, or release type. Examples of resources include apps, service instances, container clusters, storage volumes, virtual servers, and software. 
+2. Click **Create resource**. From here, you are directed to the catalog. You can search the products or filter based on a specific category, provider, pricing plan, type of compliance, or release type. Examples of resources include apps, service instances, container clusters, storage volumes, virtual servers, and software.
 
 After you create the resource, it is displayed in your list of resources on the Resource list page.
 
@@ -68,7 +53,7 @@ After you create the resource, it is displayed in your list of resources on the 
 
 You can create a resource by using the {{site.data.keyword.Bluemix}} Command Line Interface. For more information, see [Working with resources and resource groups](/docs/cli?topic=cli-ibmcloud_commands_resource).
 
-To install software, see [Installing software by using the CLI](#install-software-cli). 
+To install software, see [Installing software by using the CLI](#install-software-cli).
 
 1. Log in, and select the account.
 
@@ -86,7 +71,7 @@ In this command,`NAME` is the name of the service instance, `SERVICE_NAME or SER
    ```
    {: codeblock}
 
-   To list services, use the [`ibmcloud catalog service-marketplace`](/docs/cli/reference/ibmcloud?topic=cli-ibmcloud_catalog#ibmcloud_catalog_service_marketplace) command. 
+   To list services, use the [`ibmcloud catalog service-marketplace`](/docs/cli/reference/ibmcloud?topic=cli-ibmcloud_catalog#ibmcloud_catalog_service_marketplace) command.
    {: note}
 
 For example, the following command creates a service instance that is named `my-service-instance`, uses service plan `test-   service-plan` of service `test-service` on location `eu-gb`:
@@ -110,7 +95,7 @@ You can install software by using the {{site.data.keyword.cloud_notm}} Command L
    {: codeblock}
 
 
-2. Find the version locator value of the software by running the following command and searching for the version that you would like to install. 
+2. Find the version locator value of the software by running the following command and searching for the version that you would like to install.
 
    ```bash
    ibmcloud catalog offering list [--catalog <NAME or ID>]
@@ -126,9 +111,9 @@ You can install software by using the {{site.data.keyword.cloud_notm}} Command L
    ibmcloud catalog install [--cluster CLUSTER] [--namespace NAMESPACE] [--override-values VALUES] [--version-locator LOCATOR] [--timeout TIMEOUT] [--wait WAIT]
    ```
    {: codeblock}
-   
+
 ## Creating new resource instances by using the API
-{: #create-resource-instance-api} 
+{: #create-resource-instance-api}
 {: api}
 
 You can programmatically create a new resource instance by calling the Resource Controller API as shown in the following sample request. For more information, see [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#create-resource-instance){: external}.
@@ -230,14 +215,14 @@ You can install software only through the console or CLI. To see the steps, swit
 {: #create-resource-instance-terraform}
 {: terraform}
 
-You can create new resource instances by using Terraform. 
+You can create new resource instances by using Terraform.
 
 1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
 
 2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create new resource instances by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
 
-   The following example creates a new resource instance by using the `ibm_resource_instance` resource, where `name` is a unique, descriptive name to identify the resource instance.  
-  
+   The following example creates a new resource instance by using the `ibm_resource_instance` resource, where `name` is a unique, descriptive name to identify the resource instance.
+
    ```terraform
    data "ibm_resource_group" "group" {
    name = "test"
@@ -262,14 +247,14 @@ You can create new resource instances by using Terraform.
    {: codeblock}
 
    You can specify `tags` associated with the resource instance. For more information, see the argument reference details on the [Terraform Resource Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_instance){: external} page.
-  
+
 3. Initialize the Terraform CLI.
 
    ```terraform
    terraform init
    ```
    {: pre}
-   
+
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create a resource instance.
 
    ```terraform

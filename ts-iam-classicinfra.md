@@ -13,15 +13,8 @@ content-type: troubleshoot
 
 ---
 
-{:tsSymptoms: .tsSymptoms}
-{:tsCauses: .tsCauses}
-{:tsResolve: .tsResolve}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:note:.deprecated}
-{:troubleshoot: data-hd-content-type='troubleshoot'}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # How can I view classic infrastructure permissions for other users?
 {: #troubleshoot-classicinfra}
@@ -34,7 +27,7 @@ Account owners have full access to the {{site.data.keyword.Bluemix}} account, so
 
 You see a message that states that you can't view another user's classic infrastructure permissions.
 {: tsSymptoms}
-   
+
 You might not be assigned the correct access.
 {: tsCauses}
 

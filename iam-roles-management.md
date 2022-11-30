@@ -12,14 +12,8 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:help: data-hd-content-type='help'}
-{:support: data-reuse='support'}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Creating custom roles
 {: #custom-roles}
@@ -40,7 +34,7 @@ Anyone can view the available roles in the account on Roles page, but to create,
 | Role | Actions |
 |------|---------|
 | Editor |  Can edit and update the role display name, description, and the actions mapped to it.   |
-| Administrator | Create, edit, update, and delete custom roles and assign other users in the account access to the Role management service | 
+| Administrator | Create, edit, update, and delete custom roles and assign other users in the account access to the Role management service |
 {: caption="Table 1. Actions for Role management service" caption-side="top"}
 
 ## Creating custom roles
@@ -48,7 +42,7 @@ Anyone can view the available roles in the account on Roles page, but to create,
 
 You can create new roles that are scoped to single services. This means that you can't combine actions for two different services in a custom role, but you can combine as many actions that you want into a new role for a single service. After you create a custom role with a name of your choosing, anyone in the account who can assign access to a particular service can use that role when assigning access.
 
-Custom roles can be created only for individual IAM-enabled services. A custom role can't be created for the options of all account management services or all IAM-enabled services. 
+Custom roles can be created only for individual IAM-enabled services. A custom role can't be created for the options of all account management services or all IAM-enabled services.
 {: note}
 
 1. In the {{site.data.keyword.cloud}} console, go to **Manage** > **Access (IAM)**, and select **Roles**.
@@ -61,7 +55,7 @@ Custom roles can be created only for individual IAM-enabled services. A custom r
 
    You must add at least one service-defined action to successfully create the new role. If you aren't sure which actions are defined by the service, look in the Type column.
    {: important}
-   
+
 1. Click **Create** when you're done adding actions.
 
 
@@ -69,4 +63,3 @@ If a service removes an action that you use in a custom role, the custom role is
 {: note}
 
 If you plan to delete a custom role because it is no longer needed, you must be assigned the Administrator role on the Role management service. Deleting a custom role automatically updates access for any users, access groups, or service IDs assigned access by using that role to remove it from any existing policies.
-

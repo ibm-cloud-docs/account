@@ -12,15 +12,7 @@ content-type: troubleshoot
 
 ---
 
-{:tsSymptoms: .tsSymptoms}
-{:tsCauses: .tsCauses}
-{:tsResolve: .tsResolve}
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:troubleshoot: data-hd-content-type='troubleshoot'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Why is my IBMid or email not recognized when I try to log in to the console?
 {: #ts_old_username}
@@ -39,4 +31,3 @@ You tried to log in to the console, but didn't use a valid IBMid. For example, y
 
 You must have a valid IBMid and password to log in to {{site.data.keyword.Bluemix_notm}}. Enter a fully qualified email address for the IBMid.
 {: tsResolve}
-

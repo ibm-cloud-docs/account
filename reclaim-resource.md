@@ -13,31 +13,20 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
+{{site.data.keyword.attribute-definition-list}}
 
-# Using resource reclamations 
+
+# Using resource reclamations
 {: #resource-reclamation}
 
-You can use the {{site.data.keyword.cloud}} CLI or the [{{site.data.keyword.cloud}} Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#run-reclamation-action) to manage the reclamation process of specific resources. 
+You can use the {{site.data.keyword.cloud}} CLI or the [{{site.data.keyword.cloud}} Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#run-reclamation-action) to manage the reclamation process of specific resources.
 {: shortdesc}
 
 ## Listing reclaimed resources by using the CLI
 {: #list-reclaimed-cli}
 {: cli}
 
-To list reclaimed resources that can be restored or deleted by using the CLI, run the following command: 
+To list reclaimed resources that can be restored or deleted by using the CLI, run the following command:
 
 ```bash
 ibmcloud resource reclamations [--resource-instance-id INSTANCE_ID]
@@ -137,7 +126,7 @@ fmt.Printf("\nListReclamations() response:\n%s\n", string(b))
 {: #delete-reclaimed-cli}
 {: cli}
 
-To delete a reclaimed resource by using the CLI, run the following command: 
+To delete a reclaimed resource by using the CLI, run the following command:
 
 ```bash
 ibmcloud resource reclamation-delete ID [--comment COMMENT] [--f, --force]
@@ -242,7 +231,7 @@ fmt.Printf("\nRunReclamationAction() response:\n%s\n", string(b))
 {: #restore-resource-cli}
 {: cli}
 
-You can restore a resource within 7 days after you delete it. 
+You can restore a resource within 7 days after you delete it.
 
 Not all resources can be restored. You can run the **`ibmcloud resource reclamations`** command to check the resources that you can restore.
 {: important}
@@ -257,7 +246,7 @@ ibmcloud resource reclamation-restore ID [--comment COMMENT]
 Enter the following command options:
 
 * **ID**: The ID of the resource reclamation. This is the reclamation ID and not the resource instance ID. (Required)
-* **--comment**: Comments about the action.  
+* **--comment**: Comments about the action.
 
 The following example shows how to restore a resource with the `d9fendfwlw` ID:
 

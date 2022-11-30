@@ -11,11 +11,8 @@ subcollection: account
 ---
 
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Updating a user's status
 {: #status}
