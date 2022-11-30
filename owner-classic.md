@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022
-lastupdated: "2022-10-07"
+lastupdated: "2022-11-30"
 
 keywords: classic infrastructure, account owner, second account owner, two account owners, alternative account owner, trusted profile
 
@@ -30,7 +30,8 @@ Alternative account owner access grants the following assignments:
 - Administrator role on All Account Management services
 - A classic infrastructure flag that indicates the trusted profile is the alternative account owner
 
-You can set only one trusted profile as the alternative account owner. A trusted profile with alternative account owner access can't be modified after creation.
+You can set only one trusted profile as the alternative account owner. A trusted profile with alternative account owner access can't be modified after creation. If you create an additional alternative account owner, an error occurs. For more informaiton, see [troubleshooting](/docs/account?topic=account-ts_alt-owner).
+{: important}
 
 To set a trusted profile as the alternative account owner, complete the following steps.
 
