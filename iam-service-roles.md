@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-11-30"
+lastupdated: "2022-12-01"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -462,6 +462,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `apprapp.encryptionconfigs.list` | List Encryption configurations for data encryption using key management services | Administrator, Config Operator, Editor, Manager, Reader, Viewer, Writer |
 | `apprapp.originconfigs.update` | Update origin configuration for allowlisting CORS policy for Browser clients SDKs | Administrator, Manager |
 | `apprapp.originconfigs.list` | List origin configuration for allowlisting CORS policy for Browser clients SDKs | Administrator, Config Operator, Editor, Manager, Reader, Viewer, Writer |
+| `apprapp.gitconfigs.restore` | Restore configuration | Manager |
 {: caption="Table 10. Service actions - App Configuration" caption-side="top"}
 {: #actions-table10}
 {: tab-title="Actions"}
@@ -3996,7 +3997,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
-## Hyper Protect DBaaS for MongoDB
+## Hyper Protect DBaaS for MongoDB 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `hyperp-dbaas-mongodb` for the service name.
 
 | Role | Description |
@@ -6616,7 +6617,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 
-## Satellite Infrastructure Services
+## Satellite Infrastructure Services 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `satellite-iaas` for the service name.
 
 | Role | Description |
@@ -7489,3 +7490,4 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="wh-acd"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+
