@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-12-06"
+lastupdated: "2022-12-07"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -7241,10 +7241,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `user-management.invitation-email.create` |  | Administrator, Editor |
 | `user-management.preference.update` |  | Administrator, Editor |
 | `user-management.preference.retrieve` |  | Administrator, Editor, Operator, Viewer |
-| `user-management.user-linkage.retrieve` |  | Administrator, Editor, Operator, Viewer |
 | `user-management.user-setting.update` |  | Administrator, Editor |
 | `user-management.user-setting.retrieve` |  | Administrator, Editor, Operator, Viewer |
-| `user-management.user.replace-iam-id` |  | Administrator, Editor |
 {: caption="Table 152. Service actions - IBM Cloud Platform User Management Service" caption-side="top"}
 {: #actions-table152}
 {: tab-title="Actions"}
