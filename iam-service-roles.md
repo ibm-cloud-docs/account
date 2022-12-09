@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-12-08"
+lastupdated: "2022-12-09"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -6418,7 +6418,6 @@ Review the available platform and service roles and the actions mapped to each t
 | Role | Description |
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
-| PulsarWebhook | This service role is for project actions executed by webhooks. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
@@ -6442,7 +6441,6 @@ Review the available platform and service roles and the actions mapped to each t
 | `project.status.pr-update` | The ability to update a pull request. | Manager |
 | `project.computed-status.write` | The ability to update project computed statuses. | Manager, Writer |
 | `project.status.pr-plan` | The ability to run plan for a pull request. | Manager |
-| `project.webhook.pulsar` | The ability to call project webhooks. | PulsarWebhook |
 | `project.notifications.delete` | The ability to delete project notifications. | Manager |
 {: caption="Table 132. Service actions - Project" caption-side="top"}
 {: #actions-table132}
