@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-12-09"
+lastupdated: "2022-12-12"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -6830,6 +6830,23 @@ Review the available platform and service roles and the actions mapped to each t
 | `secrets-manager.secret-lock.delete` | Delete a secret lock. | Manager |
 | `secrets-manager.secret-locks.list` | List the locks that exist for secret and its versions. | Manager, Reader, SecretsReader, Writer |
 | `secrets-manager.locks.list` | List the locks that are exist in your service instance. | Manager, Reader, SecretsReader, Writer |
+| `secrets-manager.secret-action.create` | Create a secret action | Manager, Writer |
+| `secrets-manager.secret-version.create` | Create a new secret version.	 | Manager, Writer |
+| `secrets-manager.secret-version.read` | View the details of a secret version.	 | Manager, SecretsReader, Writer |
+| `secrets-manager.secret-version-metadata.read` | View the metadata of a secret version.	 | Manager, Reader, SecretsReader, Writer |
+| `secrets-manager.secret-version-action.create` | Create a secret version action.	 | Manager, Writer |
+| `secrets-manager.configuration.create` | Create a new configuration	 | Manager |
+| `secrets-manager.configuration-action.create` | Create a new configuration action	 | Manager |
+| `secrets-manager.configurations.list` | List configurations	 | Manager, Reader, Writer |
+| `secrets-manager.configuration.read` | View the details of a configuration.	 | Manager |
+| `secrets-manager.configuration.update` | Update a configuration | Manager |
+| `secrets-manager.configuration.delete` | Delete a configuration | Manager |
+| `secrets-manager.secret-locks.create` | Create secret locks. | Manager, Writer |
+| `secrets-manager.secret-locks.delete` | Delete secret locks. | Manager |
+| `secrets-manager.secret-version-locks.create` | Create secret version locks.	 | Manager, Writer |
+| `secrets-manager.secret-version-locks.list` | List secret version locks | Manager, Reader, SecretsReader, Writer |
+| `secrets-manager.secret-version-locks.delete` | Delete secret version locks. | Manager |
+| `secrets-manager.secrets-locks.list` | List secrets locks. | Manager, Reader, SecretsReader, Writer |
 {: caption="Table 140. Service actions - Secrets Manager" caption-side="top"}
 {: #actions-table140}
 {: tab-title="Actions"}
