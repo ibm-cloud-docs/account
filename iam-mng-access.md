@@ -419,17 +419,24 @@ You can assign access to a group of services. To assign access to **All Identity
 
 This action can be done only through the UI or CLI. To see the steps, switch to the UI or CLI instructions.
 
+### Before you begin
+{: #access-resources-terraform-prereq}
+{: terraform}
+
+Before you can assign access to resources by using Terraform, ensure that you've completed the following:
+
+- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create an authorization between services by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
 ### Assigning access to resources by using Terraform
 {: #access-resources-terraform}
 {: terraform}
 
-You can assign access to resources by using Terraform.
+To assign access to resources by using Terraform, use the following steps:
 
-1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+1. Assign access to resources by using the `ibm_iam_user_policy` resource argument in your `main.tf` file.
 
-1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to assign access to resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
-
-      The following example gives `test@in.ibm.com` `Viewer` role for all instances of `kms` service by using [ibm_iam_user_policy](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_user_policy).
+   The following example gives `test@in.ibm.com` `Viewer` role for all instances of `kms` service by using [ibm_iam_user_policy](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_user_policy).
 
    ```terraform
    resource "ibm_iam_user_policy" "policy" {
@@ -445,37 +452,38 @@ You can assign access to resources by using Terraform.
 
    You can specify the name of the service for which you want to assign access to on the `service` option. For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_user_policy){: external} page.
 
-1. Initialize the Terraform CLI.
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
 
    ```bash
    terraform init
    ```
    {: pre}
 
-1. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to assign access to a resource.
+1. Provision your `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
 
-   ```bash
-   terraform plan
-   ```
-   {: pre}
+   1. Create a Terraform execution plan.
 
-1. Assign access to the resource.
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
 
-   ```bash
-   terraform apply
-   ```
-   {: pre}
+   1. Create the authorization between services.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}
 
 ### Assigning access within a resource group by using Terraform
 {: #access-to-resources-terraform}
 {: terraform}
 
-You can assign access within a resource group by using Terraform.
+To assign access within a resource group by using Terraform, use the following steps.
 
-1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to assign access within a resource group by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+1. Assign access within a resource group by using the `ibm_iam_user_policy` resource in your `main.tf` file.
 
-   The following example gives `test@in.ibm.com` `Viewer` role for resource group with ID `data.ibm_resource_group.group.id`.
+   The following example gives `test@in.ibm.com` `Viewer` role for resource group with ID `data.ibm_resource_group.group.id` by using [ibm_iam_user_policy](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_user_policy#user-policy-using-resource-group).
 
    ```terraform
    data "ibm_resource_group" "group" {
@@ -494,28 +502,30 @@ You can assign access within a resource group by using Terraform.
    ```
    {: codeblock}
 
-   You can specify the ID of the resource group within you want to assign access to on the `resource_group_id` option. For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_user_policy){: external} page.
+   You can specify the ID of the resource group that you want to assign access to on the `resource_group_id` option. For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_user_policy){: external} page.
 
-1. Initialize the Terraform CLI.
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
 
    ```bash
    terraform init
    ```
    {: pre}
 
-1. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to assign access within a resource group.
+1. Provision your `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
 
-   ```bash
-   terraform plan
-   ```
-   {: pre}
+   1. Create a Terraform execution plan.
 
-1. Assign access within the resource group.
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
 
-   ```bash
-   terraform apply
-   ```
-   {: pre}
+   1. Create the authorization between services.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}
 
 ## Removing access in the console
 {: #removing-access-console}
