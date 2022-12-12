@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2022
 
-lastupdated: "2022-07-18"
+lastupdated: "2022-12-12"
 
 keywords: authorizations, service to service access, access between services, dependent service, source service, target service, assigned access, access policies
 
@@ -22,9 +22,9 @@ Use {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) to create
 
 Many of the capabilities of the IAM system are focused on managing and enforcing user and application access to {{site.data.keyword.Bluemix_notm}} resources. However, you might encounter other scenarios in which you need to provide one service with access to a user's resource in another service. This type of access is called an authorization.
 
-In an authorization, the source service is the service that is granted access to the target service. The roles that you select define the level of access for the source service. The target service is the service that you are granting permission to be accessed by the source service based on the roles that you assign. A source service can be in the same account where the authorization is created or in another account. The target service is always in the account where the authorization is created. You can view whether the source service is located in the current account or another account by viewing the Source account column for the specific authorization on the [Authorizations](/iam/authorizations) page in the {{site.data.keyword.Bluemix}} console. 
+In an authorization, the source service is the service that is granted access to the target service. The roles that you select define the level of access for the source service. The target service is the service that you are granting permission to be accessed by the source service based on the roles that you assign. A source service can be in the same account where the authorization is created or in another account. The target service is always in the account where the authorization is created. You can view whether the source service is located in the current account or another account by viewing the Source account column for the specific authorization on the [Authorizations](/iam/authorizations) page in the {{site.data.keyword.Bluemix}} console.
 
-In some cases, you can authorize dependent services in addition to the source service. The source service that is enabled to access the target service depends on another service. The dependent service must be assigned access to complete the workflow. The following diagram illustrates the process of delegating access between source, target, and dependent services: 
+In some cases, you can authorize dependent services in addition to the source service. The source service that is enabled to access the target service depends on another service. The dependent service must be assigned access to complete the workflow. The following diagram illustrates the process of delegating access between source, target, and dependent services:
 
 ![S2S authorizations with dependent services.](images/dependent-services.svg "S2S authorizations with dependent services"){: caption="Figure 1. How S2S authorizations work with dependent services" caption-side="bottom"}
 
@@ -46,8 +46,8 @@ You must have access to the target service to create an authorization between se
 2. Click **Create**.
 3. Select a source account.
    * If the source service that needs access to the target service is in this account, select **This account**.
-   * If the source service that needs access to the target service is in a different account, select **Other account**. Then, enter the account ID of the source account. 
-4. Specify whether you want the authorization to be for all instances, only a specific instance in the account, or instances only in a certain resource group. 
+   * If the source service that needs access to the target service is in a different account, select **Other account**. Then, enter the account ID of the source account.
+4. Specify whether you want the authorization to be for all instances, only a specific instance in the account, or instances only in a certain resource group.
 5. Select a target service and specify whether you want the authorization to be for all instances, only a specific instance in the account, or instances only in a certain resource group.
 6. Optional: Select **Enable authorization to be delegated** to allow the source service to delegate its access to any dependent services. This option is displayed only if the source service has dependent services. By selecting this option, policies are automatically created by the source service for the dependent services.
 7. Select a role to assign access to the source service that accesses the target service.
@@ -60,7 +60,7 @@ If you create an authorization between a service in another account and a target
 {: #auth-cli}
 {: cli}
 
-To authorize a source service access a target service, run the `ibmcloud iam authorization-policy-create` command. 
+To authorize a source service access a target service, run the `ibmcloud iam authorization-policy-create` command.
 
 The following sample uses mock data to create a policy where a specific source service instance of {{site.data.keyword.cos_full_notm}} is authorized to access a specific target service instance of {{site.data.keyword.keymanagementservicelong_notm}}:
 
@@ -93,14 +93,14 @@ Use the following steps to create an authorization between services by using Ter
    }
    ```
    {: codeblock}
-  
+
 3. Initialize the Terraform CLI.
 
    ```terraform
    terraform init
    ```
    {: pre}
-   
+
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the authorization between services.
 
    ```terraform
@@ -474,7 +474,7 @@ If the source service is removed from the account, any policies that are created
 
 You can remove any authorization between services in the account if you are assigned the Administrator role on the target service. If you remove any access policies created by the source service for its dependent services, the source service is unable to complete the workflow or access the target service.
 
-To authorize a source service to access a target service, run the `ibmcloud iam authorization-policy-create` command. 
+To authorize a source service to access a target service, run the `ibmcloud iam authorization-policy-create` command.
 
 The following sample deletes an authorization policy:
 ```sh
@@ -554,3 +554,23 @@ if err != nil {
 
 If the source service is removed from the account, any policies that are created by that service for its dependent services are deleted automatically. Similarly, if the dependent service is removed from the account, any access policies that are delegated to that service are also deleted.
 {: note}
+
+## Removing an authorization by using Terraform
+{: #remove-auth-tf}
+{: terraform}
+
+If you want to remove an authorization by using Terraform, you need to delete the argument from the `main.tf` file. After you delete the argument, provision your file by using the following steps:
+
+   1. Create a Terraform execution plan.
+
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
+
+   1. Create the authorization between services.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}
