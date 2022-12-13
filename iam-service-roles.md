@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-12-12"
+lastupdated: "2022-12-13"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1098,7 +1098,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `compliance.posture-management.scans-read` | Read Scans | Administrator, Editor, Operator, Viewer |
 | `compliance.posture-management.scans-update` | Update Scans | Administrator, Editor |
 | `compliance.posture-management.scans-delete` | Delete Scans | Administrator, Editor |
-| `compliance.posture-management.reports-read` | Read reports | Administrator, Editor, Operator, Viewer |
+| `compliance.posture-management.reports-read` | View results | Administrator, Editor, Operator |
 {: caption="Table 22. Service actions - IBM Cloud Compliance and Security Center" caption-side="top"}
 {: #actions-table22}
 {: tab-title="Actions"}
@@ -4801,6 +4801,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.image.image.delete` | Delete Images | Administrator, Editor |
 | `is.image.image.provision` | Provision Images | Administrator, Editor, Operator |
 | `is.image.image.operate` | Operate on Custom Images | Administrator, Editor, Operator |
+| `is.image.image.export` | Export on Custom Images | Administrator, Editor |
 {: caption="Table 90. Service actions - Image Service for VPC" caption-side="top"}
 {: #actions-table90}
 {: tab-title="Actions"}
@@ -6362,6 +6363,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `privileged-access-gateway.ssh.login` | ssh login | ssh user |
 | `privileged-access-gateway.kube.login` | kube login action that allows users to get kube config details of a cluster  | kube user |
 | `privileged-access-gateway.rdp.login` | privileged-access-gateway.ssh.login | rdp user |
+| `privileged-access-gateway.session.list.all` | List All  Active Sessions | Access Request Manager, Gateway Administrator , Gateway Operator, Gateway Viewer |
 {: caption="Table 130. Service actions - Privileged Access Gateway" caption-side="top"}
 {: #actions-table130}
 {: tab-title="Actions"}
