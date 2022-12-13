@@ -3,7 +3,7 @@
 copyright:
   years: 2021, 2022
   
-lastupdated: "2022-06-23"
+lastupdated: "2022-12-13"
 
 
 keywords: IBM Cloud notifications, notification preferences, email preferences, user notifications, distribution list, webhooks, Slack webhooks, Microsoft Teams webhooks, ServiceNow webhooks, SNOW
@@ -71,7 +71,7 @@ When you receive a notification through a webhook, a payload is being sent to yo
 ## Headers
 {: #header-payload}
 
-You receive the payload with a header that you configured in the UI when you added a new webhook, and with an additional version header that has semantic version number. This version header can be used to determine the expected format of the webhook payload.
+You receive the payload with a header that you configured in the UI when you added a webhook, and with an additional version header that has semantic version number. This version header can be used to determine the expected format of the webhook payload.
 
 The current version header is `"IBM-Notifications-API-Version": "v2.0.0"`. 
 
@@ -80,7 +80,7 @@ The current version header is `"IBM-Notifications-API-Version": "v2.0.0"`.
 
 The following descriptions provide information about the field values that are being sent inside the payload:
 
-`body`: This field describes the event that is happening on the platform and concerns you. This field contains a detailed, human readable description of the notification and can be several paragraphs long. It can also contain html formatting. This field is configured to support more languages, although only english is supported currently.
+`body`: This field describes the event that is happening on the platform and concerns you. This field contains a detailed, human readable description of the notification and can be several paragraphs long. It can also contain html formatting. This field is configured to support more languages, although only English is supported currently.
 
 `category`: The type of the event. This can be incident, maintenance, announcement, or security bulletins. 
 
@@ -92,7 +92,7 @@ The following descriptions provide information about the field values that are b
    * **Incidents** 
      * `Severity 1`: Business-critical functionality is inoperable or critical interference failed. This severity usually applies to the production environment and the inability to access services is causing a critical impact on operations.
      * `Severity 2`: Core functionality is impacted. Service is operational but causing major impact on usage.
-     * `Severity 3`: Partial or non-critical disruption to functionality with minimal or isolated impact.
+     * `Severity 3`: Partial or noncritical disruption to functionality with minimal or isolated impact.
      * `Severity 4`: A minor issue that requires action, but does not impact functionality or usage.
    * **Maintenance** 
      * `High impact`: Maintenance will, or is likely to, cause service outages and disruptions.
@@ -106,7 +106,7 @@ The following descriptions provide information about the field values that are b
    * Values for *Maintenance* states: Planned, In progress, Completed, Canceled, Failed
    * Values for *Incident* states: New issue, Investigating, Resolved 
 
-`title`: The title field tells you what the notification is about. This field is configured to support more languages, although only english is supported currently.
+`title`: The title field tells you what the notification is about. This field is configured to support more languages, although only English is supported currently.
 
 `startTime`, `endTime`: You can check when the event starts, and when it ends. 
 
@@ -137,7 +137,7 @@ Fields that are sent inside the payload can be either required or optional. Opti
 There might be extra fields added in the future without a major version change. This means that any code that is processing notifications should be prepared to ignore the fields that it does not recognize.
 {: note}
 
-## Add webhooks to a distribution list 
+## Adding webhooks to a distribution list 
 {: #add-webhook-distribution-list}
 
 To add webhooks to a distribution list, complete the following steps: 
@@ -153,7 +153,7 @@ To add webhooks to a distribution list, complete the following steps:
     You can select which {{site.data.keyword.cloud_notm}} account you use by clicking the account switcher in the console. Users in the selected account receive notifications about any events that affect the account. 
     {: note}
     
-### Send test notifications to a webhook
+### Sending test notifications to a webhook
 {: #test-webhook}
 
 If you are ready with the previous steps and have a configured webhook, you can test it out easily. Send a test notification to your webhook and make sure that your webhook integration is working correctly and receives the notification. 
@@ -164,7 +164,7 @@ Complete the following steps to send a test notification to a webhook:
 3. Click **Test** > **Send test**.
 4. To resend the test notification, click **Resend test**.
 
-## Add Slack webhooks to a distribution list 
+## Adding Slack webhooks to a distribution list 
 {: #add-slack-webhook}
 
 You can now add Slack webhooks to your distribution list and receive account-wide {{site.data.keyword.Bluemix_notm}} notifications through them. 
@@ -177,7 +177,7 @@ To add a Slack webhook in the {{site.data.keyword.Bluemix_notm}} console, comple
 2. Click **Add**, and select **Slack**. 
 3. Enter a name for your webhook and a Slack webhook URL. The notifications are sent to this unique URL. 
 
-## Add Microsoft Teams webhooks to a distribution list 
+## Adding Microsoft Teams webhooks to a distribution list 
 {: #add-microsoft-teams-webhook}
 
 Adding Microsoft Teams webhooks to your distribution list is also available for you to receive account-wide {{site.data.keyword.Bluemix_notm}} notifications. 
@@ -190,7 +190,7 @@ To add a Microsoft Teams webhook in the {{site.data.keyword.Bluemix_notm}} conso
 2. Click **Add**, and select **Microsoft Teams**. 
 3. Enter a name for your webhook and a Microsoft Teams webhook URL. The notifications are sent to this unique URL. 
 
-## Set up ServiceNow webhooks 
+## Setting up ServiceNow webhooks 
 {: #set-snow-webhook}
 
 Unlike Microsoft Teams and Slack webhook integrations, setting up a ServiceNow webhook requires configuration to be done on the webhook destination side.
