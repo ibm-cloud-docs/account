@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2021
-lastupdated: "2021-06-14"
+  years: 2015, 2022
+lastupdated: "2022-12-14"
 
 keywords: troubleshoot account, account problem, create new organization, new  org, create org
 
@@ -30,3 +30,5 @@ You're likely seeing this error because you're using a Lite account, which suppo
 
 To create a new org, upgrade to a billable account. In the {{site.data.keyword.Bluemix}} console, go to **Manage** > **Billing and usage**, and select **Payments**.
 {: tsResolve}
+
+For more information, see [Creating orgs and spaces](/docs/account?topic=account-orgsspacesusers&interface=ui).
