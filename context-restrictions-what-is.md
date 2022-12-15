@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-11-30"
+lastupdated: "2022-12-15"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, Cloud Foundry, endpoint type
 
@@ -179,27 +179,28 @@ Specific {{site.data.keyword.Bluemix_notm}} services are integrated with context
 
 You can create context-based restrictions for the following services if you are granted the correct access on the service:
 
-| Service       | Service type |
-|---------------|---------------|
-| IAM Access Groups Service  | Account Management |
-| IAM Access Management Service | Account Management |
-| IAM Identity Service  | Account Management |
-| IAM User Management | Account Management |
-| {{site.data.keyword.codeengineshort}} | IAM-enabled |
-| [{{site.data.keyword.registryshort}}](/docs/Registry?topic=Registry-iam&interface=ui#iam_cbr) | IAM-enabled |
-| [{{site.data.keyword.databases-for-cassandra}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
-| [{{site.data.keyword.databases-for-enterprisedb}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
-| [{{site.data.keyword.databases-for-elasticsearch}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
-| [{{site.data.keyword.databases-for-etcd}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
-| [{{site.data.keyword.databases-for-mongodb}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
-| [{{site.data.keyword.databases-for-mysql}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
-| [{{site.data.keyword.databases-for-postgresql}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
-| [{{site.data.keyword.databases-for-redis}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
-| {{site.data.keyword.messagehub}} | IAM-enabled |
-| [{{site.data.keyword.keymanagementserviceshort}}](/docs/key-protect?topic=key-protect-access-control-with-cbr) | IAM-enabled |
-| [{{site.data.keyword.containershort}}](/docs/containers?topic=containers-cbr&interface=ui) | IAM-enabled |
-| [{{site.data.keyword.messages-for-rabbitmq}}](/docs/cloud-databases?topic=cloud-databases-cbr)  | IAM-enabled |
-| [{{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-setting-a-firewall) | IAM-enabled |
+| Service       | Service type | Scope to APIs | `service_name` |
+|---------------|--------------|---------------|----------------|
+| IAM Access Groups Service  | Account Management | No | `iam-groups` |
+| IAM Access Management Service | Account Management | No | `iam-access-management` |
+| IAM Identity Service  | Account Management | No | `iam-identity`|
+| IAM User Management | Account Management | No | `user-management` |
+| [Cloud {{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-setting-a-firewall) | IAM-enabled | No | `cloud-object-storage` |
+| [{{site.data.keyword.codeengineshort}}](/docs/codeengine?topic=codeengine-cbr) | IAM-enabled | No | `codeengine` |
+| [{{site.data.keyword.registryshort}}](/docs/Registry?topic=Registry-iam&interface=ui#iam_cbr) | IAM-enabled | No | `container-registry` |
+| [{{site.data.keyword.databases-for-cassandra}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | Yes | `databases-for-cassandra` |
+| [{{site.data.keyword.databases-for-enterprisedb}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | Yes | `databases-for-enterprisedb` |
+| [{{site.data.keyword.databases-for-elasticsearch}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | Yes | `databases-for-elasticsearch` |
+| [{{site.data.keyword.databases-for-etcd}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | Yes | `databases-for-etcd` |
+| [{{site.data.keyword.databases-for-mongodb}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | Yes | `databases-for-mongodb` |
+| [{{site.data.keyword.databases-for-mysql}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | Yes | `databases-for-mysql` |
+| [{{site.data.keyword.databases-for-postgresql}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | Yes | `databases-for-postgresql` |
+| [{{site.data.keyword.databases-for-redis}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | Yes | `databases-for-redis` |
+| [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-restrict_access#configuring_cbr) | IAM-enabled | No | `messagehub` |
+| [{{site.data.keyword.keymanagementserviceshort}}](/docs/key-protect?topic=key-protect-access-control-with-cbr) | IAM-enabled | No | `kms` |
+| [{{site.data.keyword.containershort}}](/docs/containers?topic=containers-cbr&interface=ui) | IAM-enabled | Yes | `containers-kubernetes` |
+| [{{site.data.keyword.messages-for-rabbitmq}}](/docs/cloud-databases?topic=cloud-databases-cbr)  | IAM-enabled | Yes | `messages-for-rabbitmq` |
+| [{{site.data.keyword.secrets-manager_short}}](/docs/secrets-manager?topic=secrets-manager-access-control-cbr) | IAM-enabled | No | `secrets-manager` |
 {: caption="Table 4. Services that are compatible with context-based restrictions." caption-side="top"}
 
 
