@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-12-14"
+lastupdated: "2022-12-15"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -6334,13 +6334,9 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
-| Access Request Manager | Ability to approve and delete resource access requests. |
-| Gateway Administrator  | Can configure gateway and delete sessions. |
-| Gateway Operator | Able to log into resources through PAG. |
-| Gateway Viewer | Able to view active sessions and certificate information on the gateway. |
-| kube user | kube user |
-| rdp user | rdp user |
-| ssh user | ssh user |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 130. Service roles - Privileged Access Gateway" caption-side="top"}
 {: #service-roles-table130}
@@ -6352,18 +6348,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `privileged-access-gateway.dashboard.view` |  | Administrator, Editor, Operator |
-| `privileged-access-gateway.session.list` | Ability to list active PAG sessions on a gateway. | Access Request Manager, Gateway Administrator , Gateway Operator, Gateway Viewer |
-| `privileged-access-gateway.session.get` | Get details of active PAG sessions. | Access Request Manager, Gateway Administrator , Gateway Operator, Gateway Viewer |
-| `privileged-access-gateway.certificate.list` | List active PAG certificates delivered. | Gateway Administrator , Gateway Operator, Gateway Viewer |
-| `privileged-access-gateway.session.create` | Ability to login and start an active session to a resource through PAG. | Gateway Operator |
-| `privileged-access-gateway.session.delete` | Ability to terminate an active session through PAG. | Gateway Administrator  |
-| `privileged-access-gateway.certificate.create` | this action is going to create a user certificate for the user that is needed to login to the session | Gateway Viewer |
-| `privileged-access-gateway.certificate.revoke` | revokes the user certificate that the user will not be able to use it to login | Gateway Administrator , Gateway Operator, Gateway Viewer |
-| `privileged-access-gateway.public.ca.key` | retrieves the public CA key  | Gateway Administrator , Gateway Operator, Gateway Viewer |
-| `privileged-access-gateway.ssh.login` | ssh login | ssh user |
-| `privileged-access-gateway.kube.login` | kube login action that allows users to get kube config details of a cluster  | kube user |
-| `privileged-access-gateway.rdp.login` | privileged-access-gateway.ssh.login | rdp user |
-| `privileged-access-gateway.session.list.all` | List All  Active Sessions | Access Request Manager, Gateway Administrator , Gateway Operator, Gateway Viewer |
+| `privileged-access-gateway.certificate.create` | this action is going to create a user certificate for the user that is needed to login to the session | Writer |
+| `privileged-access-gateway.public.ca.key` | retrieves the public CA key  | Manager, Reader, Writer |
+| `privileged-access-gateway.ssh.login` | ssh login | Writer |
+| `privileged-access-gateway.kube.login` | kube login action that allows users to get kube config details of a cluster  | Writer |
+| `privileged-access-gateway.rdp.login` | privileged-access-gateway.ssh.login | Writer |
+| `privileged-access-gateway.session.list.all` | List All  Active Sessions | Manager |
 {: caption="Table 130. Service actions - Privileged Access Gateway" caption-side="top"}
 {: #actions-table130}
 {: tab-title="Actions"}
