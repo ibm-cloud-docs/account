@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-12-19"
+lastupdated: "2022-12-20"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1617,6 +1617,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `POST /v4/:platform/deployments/:deployment_id/reducemax` | reclaim disk space | Administrator, Editor, Operator, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/configure_iks_worker` | Configure bare metal and dedicated virtual machine | Administrator, Editor, Operator, Viewer |
 | `POST /hyperwarp_messages` | hyperwarp subscriber endpoint | Administrator, Editor, Operator |
+| `POST /v4/:platform/deployments/:deployment_id/hibernate` | Hibernate the target instance | Administrator, Editor, Operator |
+| `DELETE /v4/:platform/deployments/:deployment_id/hibernate` | Reactivate the target hibernating instance. | Administrator, Editor, Operator |
 {: caption="Table 32. Service actions - Db2 on Cloud" caption-side="top"}
 {: #actions-table32}
 {: tab-title="Actions"}
