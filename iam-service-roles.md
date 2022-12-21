@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-12-20"
+lastupdated: "2022-12-21"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -5115,9 +5115,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.snapshot.snapshot.delete` | This action allows the user to delete block storage snapshots. | Administrator, Editor |
 | `is.snapshot.snapshot.restore` | This action allows the user to restore block storage snapshots. | Administrator, Editor, Operator |
 | `is.snapshot.snapshot.operate` | Operate a snapshot | Administrator, Editor, Operator |
-| `is.snapshot.clone.create` | Create clones of block storage snapshots for fast restoration | Administrator, Editor |
+| `is.snapshot.snapshot-clone.create` | Create clones of block storage snapshots for fast restoration | Administrator, Editor |
 | `is.snapshot.clone.read` | View the clones of block storage snapshots | Administrator, Editor, Operator, Viewer |
-| `is.snapshot.clone.delete` | Delete clones of block storage snapshots | Administrator, Editor |
+| `is.snapshot.snapshot-clone.delete` | Delete clones of block storage snapshots | Administrator, Editor |
 {: caption="Table 99. Service actions - Block Storage Snapshots for VPC" caption-side="top"}
 {: #actions-table99}
 {: tab-title="Actions"}
