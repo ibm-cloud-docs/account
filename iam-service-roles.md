@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2022-12-21"
+lastupdated: "2022-12-22"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -6428,7 +6428,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `project.config.uninstall` | The ability to uninstall a project config. | Manager |
 | `project.config.plan` | The ability to plan a project config. | Manager, Writer |
 | `project.notifications.write` | The ability to send project notifications. | Manager, Writer |
-| `project.notifications.read` | The ability to read project specifications. | Manager, Reader, Writer |
+| `project.notifications.read` | The ability to read project notifications. | Manager, Reader, Writer |
 | `project.status.pr-register` | The ability to register a pull request on a project. | Manager |
 | `project.status.write` | The ability to update project status. | Manager, Writer |
 | `project.status.pr-deregister` | The ability to deregister a pull request. | Manager |
