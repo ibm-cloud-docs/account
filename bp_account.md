@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2022
-lastupdated: "2022-09-30"
+lastupdated: "2022-12-27"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources, administrator, administrator role
 
@@ -285,7 +285,7 @@ The remaining users need access to only the resource group that's associated wit
 ### Multiple resource groups in my account
 {: #multi-rgs}
 
-Some of the users in my account are the administrators for a service, `Service A`, across my entire account, and they need access to all instances of that service and to create instances. These users don’t need access to other resources in the account. I create an access group and assign an administrator role on Service A at the account level, and a policy with the viewer role for any resource groups in the account that they need to be able to create instances in. You can do this by selecting **No service access**, then select the resource group, and at least viewer role for that resource group. Then, repeat for each resource group that they need access to.
+Some of the users in my account are the administrators for a service, `Service A`, across my entire account, and they need access to all instances of that service and to create instances. These users don’t need access to other resources in the account. I create an access group and assign an administrator role on Service A at the account level, and a policy with the viewer role for any resource groups in the account that they need to be able to create instances in. You can do this by selecting **Resource group only**, then select the resource group, and at least viewer role for that resource group. Then, repeat for each resource group that they need access to.
 
 ### A user that requires access to a specific resource
 {: #user-specific-resource}

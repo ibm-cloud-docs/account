@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2022
-lastupdated: "2022-10-07"
+lastupdated: "2022-12-27"
 
 keywords: frequently asked questions, iam faqs, administrator, administrator role
 
@@ -145,7 +145,7 @@ To assign a user, service ID, or access group a policy on all resource groups,yo
 
 * A policy for **All Identity and Access enabled services** with the **Viewer** resource group access role selected. However, you must also assign at least one platform or service role to assign this type of policy.
 * A policy for **All Account Management services** with the **Viewer** role or higher provides access to view all resource groups. However, be aware that this type of policy also assigns the role that you choose for each account management service, so it can be a powerful policy that enables a user to manage users, account settings, billing information, and more.
-* A policy with **No service access** and a particular resource group that is selected as well as a resource group access role assigned. You can repeat this type of policy as needed for each available resource group in the account.
+* A policy with **Resource group only** and a particular resource group that is selected as well as a resource group access role assigned. You can repeat this type of policy as needed for each available resource group in the account.
 
 You can also assign access to individual resource groups with a policy on a service as long as you select a targeted resource group by name and assign a resource group access role.
 {: tip}

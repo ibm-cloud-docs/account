@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2022
 
-lastupdated: "2022-10-27"
+lastupdated: "2022-12-27"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access, administrator, administrator role
 
@@ -91,7 +91,7 @@ As an administrator, you might want to create an access group with the Viewer ro
 To assign access to a resource group without assigning service access, complete the following steps:
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users** or **Service IDs**, depending on which identity you want to assign access.
 1. Click on the user or service ID that you want to assign access, then click **Access** > **Assign access**.
-1. Select **No service access**.
+1. Select **Resource group only**.
 1. Select **Add a condition**.
 1. Select the **Resource group** attribute type and enter a resource group.
 1. Click **Next**.
