@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2021
-lastupdated: "2021-09-22"
+  years: 2015, 2022
+lastupdated: "2022-12-27"
 
 keywords: troubleshoot account, account problem, inactive account
 subcollection: account
@@ -23,7 +23,7 @@ You can't create an app in {{site.data.keyword.Bluemix_notm}} if your account is
 When you try to create an app in {{site.data.keyword.Bluemix_notm}}, the following error message is displayed:
 {: tsSymptoms}
 
-`BXNUI0096E: The app wasn't created. Your account is inactive because it was canceled or suspended.`
+> BXNUI0096E: The app wasn't created. Your account is inactive because it was canceled or suspended.
 
 Your account becomes inactive when it is canceled or suspended.
 {: tsCauses}

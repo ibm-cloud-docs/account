@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-09-22"
+  years: 2020, 2022
+lastupdated: "2022-12-27"
 
 
 keywords: troubleshoot maximum policies, what do I do when I reach too many policies, exceed policies count
@@ -25,8 +25,10 @@ You might encounter an error when you're assigning access if you already have th
 
 You tried to assign access, but received an error message that you reached the limit of access policies in the  account.
 
-A new policy can't be created to assign access, and you receive an error message that states `422: Exceeded maximum policies quota error`.
+A new policy can't be created to assign access, and you receive an error message that states:
 {: tsSymptoms}
+
+> 422: Exceeded maximum policies quota error.
 
 The account is at the [limit of total number of policies allowed](/docs/account?topic=account-known-issues).
 {: tsCauses}

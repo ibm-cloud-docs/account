@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2021
+  years: 2021, 2022
 
-lastupdated: "2021-08-31"
+lastupdated: "2022-12-27"
 
 keywords: troubleshooting software, troubleshooting resources, software instance, suspended, removed, deleted
 
@@ -28,7 +28,7 @@ When a software product is removed or temporarily suspended from the {{site.data
 When you access your software instance from your resource list, the following error message is displayed:
 {: tsSymptoms}
 
-`The instance is not usable.`
+> The instance is not usable.
 
 This problem happens if the software product that is used to create the instance is removed or suspended from the {{site.data.keyword.cloud_notm}} catalog. Suspension is a temporary state while removal is permanent. In both states, the software instance cannot retrieve necessary information from the product, including updates for new features and fixes for vulnerabilities.
 {: tsCauses}
