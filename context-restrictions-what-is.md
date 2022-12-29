@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-12-15"
+lastupdated: "2022-12-14"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, Cloud Foundry, endpoint type
 
@@ -92,7 +92,7 @@ Contexts define where your resource can be accessed. A context is made up of the
 A network zone represents an allowlist of IP addresses where an access request is created. It defines a set of one or more network locations that are specified by the following attributes:
 * IP addresses, which include individual addresses, ranges, or subnets.
 * VPCs
-* Service references, which allow access from other {{site.data.keyword.cloud}} services.
+* Service references, which allow access from other {{site.data.keyword.Bluemix}} services.
 
 #### IP addresses
 {: #ip-attribute}
@@ -107,20 +107,26 @@ If you have apps that are deployed in a VPC that need access to a context-based 
 #### Service references
 {: #service-attribute}
 
-A service reference represents the network locations of a service or service-instance. Including a service reference to a network zone adds the IP addresses associated with the service to your allowlist without requiring you to know their underlying IP addresses. Service references are helpful since the network locations of cloud services are unknown to the context-based restriction administrator, and can change over time.
+A service reference represents the network locations of a service or service instance. Including a service reference in a network zone adds the IP addresses associated with the service to your allowlist without requiring you to know the service's underlying IP addresses. Service references are helpful since the network locations of cloud services are unknown to the context-based restriction administrator and can change over time.
 
-To manage network zones, you must be assigned a specific role for the context-based restriction account management service:
-| Roles         | Actions                                                                                                |
-|---------------|--------------------------------------------------------------------------------------------------------|
-| Viewer        | View network zones                                               |
-| Editor        | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones  |
-| Administrator | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones  |
-{: caption="Table 1. Roles and example actions for network zones" caption-side="top"}
+The following is a list of services that you can add to a network zone as a service reference:
+| Service       | Service type |
+|---------------|--------------|
+| All Account Management services | Account Management |
+| IAM Access Groups Service  | Account Management |
+| IAM User Management | Account Management |
+| Cloud {{site.data.keyword.block_storage_is_short}} | IAM-enabled |
+| [Cloud {{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-setting-a-firewall) | IAM-enabled |
+| [{{site.data.keyword.codeengineshort}}](/docs/codeengine?topic=codeengine-cbr) | IAM-enabled |
+| {{site.data.keyword.dl_short}} | IAM-enabled |
+| [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-restrict_access#configuring_cbr) | IAM-enabled |
+| [{{site.data.keyword.containershort}}](/docs/containers?topic=containers-cbr&interface=ui) | IAM-enabled |
+| [VPC Infrastructure Services](/docs/vpc?topic=vpc-cbr&interface=cli#network-zone) | IAM-enabled |
+{: caption="Table 1. Services that are compatible with service references." caption-side="top"}
 
-For more information, see [Actions and roles for account management services](/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles).
+Refer to each service offering's documentation for more information about which services to add as a service reference for the service offering that you target in a rule.
+{: important}
 
-You can also use network zones to restrict access at the account level. To set account-level restrictions by using network zones, go to **Manage** > **IAM** > **Settings** in the {{site.data.keyword.cloud_notm}} console and enter the name of your network zone.
-{: note}
 
 ### Endpoint types
 {: #context-restrictions-endpint-type}
@@ -146,7 +152,7 @@ The Viewer role on the Context-based restrictions service authorizes you to add 
 {: tip}
 
 ### Context-based restrictions roles and actions
-{: #cbr-access-reqs-cbr-restrict}
+{: cbr-access-reqs-cbr-restrict}
 
 To manage network zones, you must be assigned an IAM policy with a specific role for the Context-based restrictions account management service. The following table shows the possible access roles and actions for account management.
 
@@ -158,6 +164,9 @@ To manage network zones, you must be assigned an IAM policy with a specific role
 {: caption="Table 2. Roles and actions for the Context-based restrictions service" caption-side="top"}
 
 For more information, see [Actions and roles for account management services](/docs/account?topic=account-account-services&interface=ui).
+
+You can also use network zones to restrict access at the account level. To set account-level restrictions by using network zones, go to **Manage** > **IAM** > **Settings** in the {{site.data.keyword.cloud_notm}} console and enter the name of your network zone.
+{: note}
 
 ### Target service roles and actions
 {: #cbr-access-reqs-target-service}
