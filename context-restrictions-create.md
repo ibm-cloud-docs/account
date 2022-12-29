@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-11-21"
+lastupdated: "2022-12-29"
 
 
 keywords: create network access, network access rule, network zone
@@ -299,6 +299,36 @@ fmt.Println(string(b))
 To find a list of available service references, call the [ListAvailableServicerefTargets](/apidocs/context-based-restrictions?code=go#list-available-serviceref-targets) method.
 {: tip}
 
+## Creating network zones by using Terraform
+{: #network-zones-create-terra}
+{: terraform}
+
+By creating network zones, you establish a list of allowed locations where an access request originates. A set of one or more network locations can be specified by IP addresses such as individual addresses, ranges or subnets, VPC IDs, and service references. After you create a network zone, you can add it to a rule.
+
+To create a network zone, use the Terraform resource [cbr_zone](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/cbr_zone).
+
+1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create a network zone by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
+    The following example creates a network zone that allows a single IP address and explicitly excludes a signle IP address.
+
+    ```terraform
+    resource "ibm_cbr_zone" "cbr_zone" {
+      account_id = "12ab34cd56ef78ab90cd12ef34ab56cd"
+      addresses {
+            type = "ipAddress"
+            value = "169.23.56.234"
+      }
+      description = "this is an example of zone"
+      excluded {
+            type = "ipAddress"
+            value = "202.38.89.897"
+      }
+      name = "an example of zone"
+    }
+    ```
+    {: codeblock}
+
 ## Creating rules
 {: #context-restrictions-create-rules}
 {: ui}
@@ -533,3 +563,41 @@ fmt.Println(string(b))
 ```
 {: codeblock}
 {: go}
+
+
+## Creating rules by using Terraform
+{: #context-restrictions-create-rules-terra}
+{: terraform}
+
+To define restrictions to your cloud resources by creating rules, use the Terraform resource [cbr_rule](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/cbr_rule).
+
+1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create a context-based restrictions rule by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
+    The following example creates a rule that targets a specific {{site.data.keyword.containershort}} API and allows only private endpoints from the specified network zone to call the operations associated with that API.
+
+    ```terraform
+    resource "ibm_cbr_rule" "cbr_rule" {
+      contexts {
+            attributes {
+                name = "endpointType"
+                value = "private"
+            }
+      }
+      description = "this is an example of rule"
+      enforcement_mode = "enabled"
+      operations {
+            api_types {
+                api_type_id = "api_type_id"
+            }
+      }
+      resources {
+            attributes {
+                name = "serviceName"
+                value = "containers-kubernetes"
+                operator = "equals"
+            }
+      }
+    }
+    ```
+    {: codeblock}
