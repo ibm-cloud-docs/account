@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-12-14"
+lastupdated: "2022-12-30"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, Cloud Foundry, endpoint type
 
@@ -142,7 +142,7 @@ Some endpoint types might not be supported by the selected service.
 {: note}
 
 ## Access requirements
-{: cbr-access-reqs}
+{: #cbr-access-reqs}
 
 To complete rule actions, you must be assigned an IAM policy on the target service. To complete network zone actions, you must be assigned an IAM policy on the context-based restrictions service.
 
@@ -152,7 +152,7 @@ The Viewer role on the Context-based restrictions service authorizes you to add 
 {: tip}
 
 ### Context-based restrictions roles and actions
-{: cbr-access-reqs-cbr-restrict}
+{: #cbr-access-reqs-cbr-restrict}
 
 To manage network zones, you must be assigned an IAM policy with a specific role for the Context-based restrictions account management service. The following table shows the possible access roles and actions for account management.
 
