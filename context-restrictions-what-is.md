@@ -124,6 +124,9 @@ The following is a list of services that you can add to a network zone as a serv
 | [VPC Infrastructure Services](/docs/vpc?topic=vpc-cbr&interface=cli#network-zone) | IAM-enabled |
 {: caption="Table 1. Services that are compatible with service references." caption-side="top"}
 
+In table 1, **All Account Management services** refers to the grouping of Account Management type services that are listed in the table. For example, if there are two Account Management services listed in table 1, **All Account Management services** includes those two services. As more Account Management services become available as service references, network zones that specify **All Account Management services** as a service reference automatically include the newly added account management services.
+{: note}
+
 Refer to each service offering's documentation for more information about which services to add as a service reference for the service offering that you target in a rule.
 {: important}
 
