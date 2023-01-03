@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2021
-lastupdated: "2022-05-04"
+  years: 2015, 2023
+lastupdated: "2023-01-03"
 
 keywords: service key, api key, bind, credential
 
@@ -42,6 +42,17 @@ Complete the following steps to add a credential to a service that is managed by
    {: note}
 
 6. Click **Add** to generate the new service credential.
+
+### Creating a service credential without an IAM service role
+{: #no-service-role}
+
+Services managed by IAM that generate new credentials can assign an IAM Service access role. This role grants access to the entire service instance. For services with fine-grained resource access, you might want to grant access only to a subresource, such as a Cloud {{site.data.keyword.cos_short}} bucket. In this case, you can choose to continue without selecting a role so that the new credential is created without an IAM Service role. This way, you can manage the fine-grained access by creating an IAM policy that you scope to a specific resource, like a bucket. To create the credential without an IAM service role, complete the following steps:
+
+1. From the Resource list page, select the name of the service to open the service details page. Then, click **Service credentials > New Credential+**.
+1. Provide a **Name**.
+2. Select **None** as the role so that the new credential is created without an IAM Service role.
+3. Next, go to **Manage > Access (IAM) > Service IDs**.
+4. Select the service ID with the same name as the service credential key, and click **Assign access**.
 
 ## Adding a credential when binding an IAM-enabled service by using the API
 {: #IAM_credential-api}
@@ -144,14 +155,14 @@ fmt.Printf("\nCreateResourceKey() response:\n%s\n", string(b))
 {: #iam-credential-terraform}
 {: terraform}
 
-You can add credentials for an IAM-enabled service by using Terraform. 
+You can add credentials for an IAM-enabled service by using Terraform.
 
 1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
 
 2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to add a credential by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
 
-   The following example creates credentials for a resource without a service ID by using the `ibm_resource_instance` resource, where `name` is a unique name to identify the credential. 
-   
+   The following example creates credentials for a resource without a service ID by using the `ibm_resource_instance` resource, where `name` is a unique name to identify the credential.
+
    ```terraform
    data "ibm_resource_instance" "resource_instance" {
     name = "myobjectsotrage"
@@ -170,19 +181,19 @@ You can add credentials for an IAM-enabled service by using Terraform.
    }
    ```
    {: codeblock}
-  
-   By default, the `ibm_resource_key` resource creates service credentials that use the public service endpoint of a service 
+
+   By default, the `ibm_resource_key` resource creates service credentials that use the public service endpoint of a service
    {: note}
 
    You can specify `tags` associated with the resource group instance. For more information, see the argument reference details on the [Terraform Resource Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_key){: external} page.
-  
+
 3. Initialize the Terraform CLI.
 
    ```terraform
    terraform init
    ```
    {: pre}
-   
+
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the credentials.
 
    ```terraform
@@ -213,7 +224,7 @@ Complete the following steps to add a Cloud Foundry credential:
 
    Most services don't require extra parameters, and for services that do, each service defines its own unique list of parameters. For a list of supported configuration parameters, see the documentation for the particular service offering.
    {: note}
-   
+
 4. Click **Add** to generate the new service credential.
 
 ## Adding a credential when binding a Cloud Foundry service by using the API
@@ -270,7 +281,7 @@ curl "https://api.example.org/v3/service_credential_bindings" \
 ### Example request to create a key credential binding
 {: #key-cred-binding-api}
 
-```bash 
+```bash
 curl "https://api.example.org/v3/service_credential_bindings" \
   -X POST \
   -H "Authorization: bearer [token]" \
@@ -305,11 +316,11 @@ curl "https://api.example.org/v3/service_credential_bindings" \
 {: #viewing-credentials-ui}
 {: ui}
 
-After a credential is created for a service, it can be viewed at any time for users that need the API key value. However, all users must have the correct level of access to see the details of a credential that includes the API key value. 
+After a credential is created for a service, it can be viewed at any time for users that need the API key value. However, all users must have the correct level of access to see the details of a credential that includes the API key value.
 
 To view an existing service credential for a service, complete the following steps:
 
-1. From the Resource list page, select the name of the service to open the service details page. 
+1. From the Resource list page, select the name of the service to open the service details page.
 2. Click **Service credentials**
 3. Expand **View credentials** on the row for an existing credential.
 
@@ -329,7 +340,7 @@ The access of the user must be equal to or greater than the access of the servic
 {: #iam-access-credentials-ui}
 {: ui}
 
-When the credential level access can't be determined by comparing the access of the user and the credential, the credential is redacted: 
+When the credential level access can't be determined by comparing the access of the user and the credential, the credential is redacted:
 
 ```text
     "credentials": {
@@ -345,7 +356,7 @@ To view the credential, the user must have the IAM level access action `resource
 
 After a credential is created for a service, it can be viewed at any time for users that need the API key value. However, all users must have the correct level of access to see the details of a credential including the API key value. The access of the user must be equal to or greater than that of the service credential. For example, if the credential has the IAM service role `Writer`, then the user trying to view the credential must have the IAM service role `Writer` or `Manager` for that particular service assigned.
 
-To get a list of all of the resource keys, call the [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#list-resource-keys) as shown in the following example: 
+To get a list of all of the resource keys, call the [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#list-resource-keys) as shown in the following example:
 
 ```bash
 curl -X GET https://resource-controller.cloud.ibm.com/v2/resource_keys -H 'Authorization: Bearer <IAM_TOKEN>'
@@ -407,7 +418,7 @@ fmt.Printf("\nListResourceKeys() response:\n%s\n", string(b))
 {: codeblock}
 {: go}
 
-Example response: 
+Example response:
 ```bash
 {
   "rows_count": 1,
@@ -469,7 +480,7 @@ The access of the user must be equal to or greater than the access of the servic
 {: #iam-access-credentials-api}
 {: api}
 
-When the credential level access can't be determined by comparing the access of the user and the credential, the credential is redacted: 
+When the credential level access can't be determined by comparing the access of the user and the credential, the credential is redacted:
 
 ```text
     "credentials": {
