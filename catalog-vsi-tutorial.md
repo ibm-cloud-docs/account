@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2022
-lastupdated: "2022-08-02"
+  years: 2022, 2023
+lastupdated: "2023-01-03"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog
 
@@ -60,6 +60,7 @@ The tutorial includes steps for deploying a virtual server image to a target {{s
 1. Confirm that **Public repository** is selected as the repository type.
 1. Enter `https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample/releases/download/v1.0/isv-vsi-product-deploy-sample.tar.gz` as your source URL.
 1. Enter `1.0.0` as the software version.
+1. Select **Developer tools** as the category.  
 1. Click **Add product**.
 
 ## Review the version details
