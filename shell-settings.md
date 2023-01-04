@@ -1,12 +1,12 @@
 ---
 
 copyright:
-  years: 2020, 2022
+  years: 2020, 2023
 lastupdated: "2022-06-13"
 
 keywords: cloud shell settings, cloud shell service, enable cloud shell, disable cloud shell, cloud shell locations, cloud shell access, cloud shell iam, cloud shell role, cloud shell administrator, cloud shell service
 
-subcollection: cloud-shell
+subcollection: account
 
 ---
 
