@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2022
-lastupdated: "2022-08-12"
+  years: 2015, 2023
+lastupdated: "2023-01-05"
 
 keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, commitment, commit model
 
@@ -15,7 +15,7 @@ subcollection: account
 # Account types
 {: #accounts}
 
-When you register with {{site.data.keyword.Bluemix}}, you are set up with a Pay-As-You-Go account. Even though you provide your credit card information for account security and identity verification purposes, you can still use {{site.data.keyword.cloud_notm}} for free by selecting products in the catalog that offer Free and Lite pricing plans. Another account type, called a Subscription account, is also available. With a Subscription account, you get many of the same features of a Pay-As-You-Go account, plus discounts for platform services and support with a more consistent billing structure that uses subscriptions. 
+When you register with {{site.data.keyword.Bluemix}}, you are set up with a Pay-As-You-Go account. Even though you provide your credit card information for account security and identity verification purposes, you can still use {{site.data.keyword.cloud_notm}} for free by selecting products in the catalog that offer Free and Lite pricing plans. Another account type, called a Subscription account, is also available. With a Subscription account, you get many of the same features of a Pay-As-You-Go account, plus discounts for platform services and support with a more consistent billing structure that uses subscriptions.
 {: shortdesc}
 
 
@@ -24,21 +24,20 @@ When you register with {{site.data.keyword.Bluemix}}, you are set up with a Pay-
 
 The following table provides a comparison of Trial, Pay-As-You-Go, and Subscription accounts. For more details about each account, see the sections that follow.
 
-|                                         | Trial              | Pay-As-You-Go      | Subscription       | 
+|                                         | Trial              | Pay-As-You-Go      | Subscription       |
 |-----------------------------------------|--------------------|--------------------|--------------------|
 | [Free community buildpacks](/docs/cloud-foundry-public?topic=cloud-foundry-public-available_buildpacks) |    186 GBH       |    186 GBH       |    186 GBH          |
 | Access to [Lite service plans](/catalog/?search=label:lite){: external} | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
-| Access to all Free plans           | ![Feature available](../icons/icon_enabled.svg) |   ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |  
+| Access to all Free plans           | ![Feature available](../icons/icon_enabled.svg) |   ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | Access to the full {{site.data.keyword.Bluemix_notm}} catalog |        | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | Access to multiple Cloud Foundry regions | ![Feature available](../icons/icon_enabled.svg) |  ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
-| Discounted pricing                  |        |                      | ![Feature available](../icons/icon_enabled.svg) |
 | Fit for production use cases      |        |     ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg)|
 | Available for enterprise account hierarchy        |        |        | ![Feature available](../icons/icon_enabled.svg) |
-| Invoiced on monthly consumption       |        |     ![Feature available](../icons/icon_enabled.svg) |                     | 
+| Invoiced on monthly consumption       |        |     ![Feature available](../icons/icon_enabled.svg) |                     |
 {: row-headers}
 {: class="comparison-table"}
 {: caption="Table 1. Comparison of {{site.data.keyword.Bluemix_notm}} accounts" caption-side="top"}
-{: summary="This table has row and column headers. The row headers identify the feature. The column headers identify the account type. To understand which features apply to the account types, navigate to the row, and find the feature that you're interested in."} 
+{: summary="This table has row and column headers. The row headers identify the feature. The column headers identify the account type. To understand which features apply to the account types, navigate to the row, and find the feature that you're interested in."}
 
 New accounts as of 25 October 2021 are created as Pay-As-You-Go or Subscription accounts. You're asked to provide credit card information for identity verification or a code for a purchased subscription. If you created an account before this date, you might be using a [Lite account](#liteaccount) and Lite pricing plans, which aren't affected by the recent account registraton update.
 {: note}
@@ -48,7 +47,7 @@ New accounts as of 25 October 2021 are created as Pay-As-You-Go or Subscription 
 
 Trial accounts offer timed access to a limited range of service plans and allow you to test out the platform without financial commitment. You can access Lite service plans and Free plans for a limited time with a trial account. To qualify for a trial account, go to [Harness the Power of IBM](https://ibm.biz/academic){: external} and validate your institution credentials or reach out to your educational program or course leader. If you don't have an account, select 'Register with a Code' during {{site.data.keyword.Bluemix_notm}} registration to apply a code. If you have an account, go to the [Account settings](/account/settings) page in the console to apply the code.
 
-If you upgrade your trial account to a Pay-As-You-Go account by entering a credit card, it can't be converted back to a trial account. {{site.data.keyword.Bluemix_notm}} trial accounts are available for faculty and students at accredited academic institutions. Your account is deactivated when the trial period ends. To reactivate your account, log in to your account and upgrade it to a Pay-As-You-Go account. 
+If you upgrade your trial account to a Pay-As-You-Go account by entering a credit card, it can't be converted back to a trial account. {{site.data.keyword.Bluemix_notm}} trial accounts are available for faculty and students at accredited academic institutions. Your account is deactivated when the trial period ends. To reactivate your account, log in to your account and upgrade it to a Pay-As-You-Go account.
 
 If you import a trial account into an enterprise, it's automatically upgraded to a [Pay-As-You-Go account](/docs/account?topic=account-accounts).
 {: note}
@@ -60,7 +59,7 @@ Support for a trial account is limited to nontechnical support issues that are r
 
 With a Pay-As-You-Go account, you can access the full {{site.data.keyword.Bluemix_notm}} catalog, including all Free and Lite plans. You pay only for billable services that you use and monthly commitments, with no long-term contracts or commitments. When you register with {{site.data.keyword.cloud_notm}}, you get a Pay-As-You-Go account, and you receive a [$200 credit](/docs/account?topic=account-upgrading-account) to help get you started. You can use the $200 credit on {{site.data.keyword.Bluemix_notm}} products.
 
-Your resource usage consists of recurring and fluctuating costs. If you purchase classic infrastructure services, you're billed on an hourly or monthly recurring basis in advance of use, like a rent bill. If you purchase platform services, your invoice fluctuates as your resource usage fluctuates, similar to a utility bill. You will receive invoices for recurring resources in your account until you cancel them. Turning a resource "off" does not cancel the resource in your account. See [Cancelling your billing items](/docs/billing-usage?topic=billing-usage-cancel-billing-items) for more information. 
+Your resource usage consists of recurring and fluctuating costs. If you purchase classic infrastructure services, you're billed on an hourly or monthly recurring basis in advance of use, like a rent bill. If you purchase platform services, your invoice fluctuates as your resource usage fluctuates, similar to a utility bill. You will receive invoices for recurring resources in your account until you cancel them. Turning a resource "off" does not cancel the resource in your account. See [Cancelling your billing items](/docs/billing-usage?topic=billing-usage-cancel-billing-items) for more information.
 
 You can create multiple resource groups to easily manage quota and view billing usage for a set of resources. Your charges are based on your use of {{site.data.keyword.Bluemix_notm}} computing and services. If you use more than the free runtime and service allowances, you receive a monthly invoice that provides details about your resource charges. You can [set up spending notifications](/docs/billing-usage?topic=billing-usage-spending) to get notified when your account or a particular service reaches a specific spending threshold that you set.
 
@@ -73,9 +72,9 @@ A subset of Pay-As-You-Go accounts are eligible for the new Pay-As-You-Go with C
 
 Subscription accounts offer many of the same benefits as Pay-As-You-Go accounts, including access to the full {{site.data.keyword.Bluemix_notm}} catalog and the ability to create multiple resource groups. In addition, Subscription accounts provide discounts for platform services and support and more consistent billing through subscriptions. You can also [set up spending notifications](/docs/billing-usage?topic=billing-usage-spending) to get notified when your account or a particular service reaches a specific spending threshold that you set.
 
-When you purchase a subscription, you commit to a minimum spending amount for a certain period of time and receive a discount on the overall cost. For example, if you commit to spend $1,000 a month for 6 months, you might get a 5% discount. For the duration of the subscription, you get $6,000 of usage but pay only $5,700 for it. The larger the subscription, the better the discount. 
+When you purchase a subscription, you commit to a minimum spending amount for a certain period of time and receive a discount on the overall cost. For example, if you commit to spend $1,000 a month for 6 months, you might get a 5% discount. For the duration of the subscription, you get $6,000 of usage but pay only $5,700 for it. The larger the subscription, the better the discount.
 
-Large organizations and other users with large cloud workloads can benefit from the savings and predictable billing that are provided by subscriptions. {{site.data.keyword.Bluemix_notm}} offers multiple types of subscriptions to fit your usage needs. 
+Large organizations and other users with large cloud workloads can benefit from the savings and predictable billing that are provided by subscriptions. {{site.data.keyword.Bluemix_notm}} offers multiple types of subscriptions to fit your usage needs.
 
 A subset of subscription accounts are eligible for the new Pay-As-You-Go with Committed Use model. For more information, see [Pay as you go with Committed Use billing model](/docs/account?topic=account-accounts#commitment-model).
 
@@ -91,7 +90,7 @@ Your subscription applies to most services in the catalog. However, some service
 ### Support subscriptions
 {: #support-subscriptions}
 
-Basic support is included with your Subscription account. If you want to enhance your support experience for production-critical resources, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} to purchase a support subscription for an Advanced or Premium support plan. With a support subscription, you commit to a monthly spending amount that goes towards your support costs. 
+Basic support is included with your Subscription account. If you want to enhance your support experience for production-critical resources, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} to purchase a support subscription for an Advanced or Premium support plan. With a support subscription, you commit to a monthly spending amount that goes towards your support costs.
 
 Support subscription credit is separate from any platform or service subscription credit in your account and can't be spent on resource usage. For more information, see [How subscription credit is spent](/docs/billing-usage?topic=billing-usage-subscriptions#subscription-basics).
 
@@ -107,14 +106,14 @@ Service bundle subscriptions aren't available through the {{site.data.keyword.Bl
 
 After you purchase a service bundle subscription, you'll receive an email with a subscription code that you apply to add the bundle to your account. For more information about how to apply subscription codes, see [Subscription credit](/docs/billing-usage?topic=billing-usage-subscriptions#subscription-codes). When your service bundle expires or you use all of the credit, you can continue to use any of the services, with usage charged at the Pay-As-You Go rate.
 
-### Expiring subscriptions 
+### Expiring subscriptions
 {: #expiring-subscription-account}
 
 When your subscription is about to expire, you are notified by email 60, 30, 14, and 1 day before the expiration date of the last subscription on the account. After your subscription expires, your account is converted to a Pay-As-You-Go account, which means you pay only for billable services that you use with no contracts or commitments. In addition, the discounts that are associated with your subscription account won't apply to the Pay-As-You-Go account. Go to the [Subscriptions](/billing/subscriptions) page to check whether any of your subscriptions are approaching their expiration date.
 
-You can work with [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} to renew your subscription account. 
+You can work with [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} to renew your subscription account.
 
-## Pay as you go with Committed Use billing model 
+## Pay as you go with Committed Use billing model
 {: #commit-model-account}
 
 {{site.data.keyword.cloud_notm}} customers can sign up for the Pay as you go with Committed Use billing model. With this billing model, you commit to spend a certain amount on {{site.data.keyword.Bluemix_notm}} and you also receive discounts across the platform. You are billed monthly based on your usage and you continue to receive a discount even after you reach your committed amount. For more information about the billing model, see [Pay as you go with Committed Use pricing model](/docs/billing-usage?topic=billing-usage-committed-use).
@@ -122,9 +121,9 @@ You can work with [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com
 ## Lite account
 {: #liteaccount}
 
-If you created a Lite account before 25 October 2021, your account doesn't expire and you can work in {{site.data.keyword.cloud_notm}} for free by accessing services with select Lite plans, which are displayed with a **Lite** tag ![Lite tag](../icons/Lite.svg "Lite") in the catalog. To gain access to all Free plans, you can go ahead and [upgrade to a Pay-As-You-Go account](/docs/account?topic=account-accountfaqs#changeacct) by adding your credit card information. 
+If you created a Lite account before 25 October 2021, your account doesn't expire and you can work in {{site.data.keyword.cloud_notm}} for free by accessing services with select Lite plans, which are displayed with a **Lite** tag ![Lite tag](../icons/Lite.svg "Lite") in the catalog. To gain access to all Free plans, you can go ahead and [upgrade to a Pay-As-You-Go account](/docs/account?topic=account-accountfaqs#changeacct) by adding your credit card information.
 
-Starting 25 October 2021, all new accounts are created as Pay-As-You-Go based on an update to our account registration process. As part of this update, you're asked to provide credit card information for identity verification. You have full access to the catalog, including all Free and Lite plans, and you get a $200 credit that you can apply in your first 30 days. You pay only for billable services that you use, with no long-term contracts or commitments. 
+Starting 25 October 2021, all new accounts are created as Pay-As-You-Go based on an update to our account registration process. As part of this update, you're asked to provide credit card information for identity verification. You have full access to the catalog, including all Free and Lite plans, and you get a $200 credit that you can apply in your first 30 days. You pay only for billable services that you use, with no long-term contracts or commitments.
 {: note}
 
 Lite accounts have access to a single resource group that's created for you with the name `Default`. All of your service's instances are automatically added to this resource group. You can update the name of this resource group at any time. See [Renaming a resource group](/docs/account?topic=account-rgs#rename_rgs) for the detailed steps.
