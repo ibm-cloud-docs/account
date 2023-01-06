@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2022
 
-lastupdated: "2022-12-12"
+lastupdated: "2022-12-07"
 
 keywords: authorizations, service to service access, access between services, dependent service, source service, target service, assigned access, access policies
 
@@ -20,7 +20,7 @@ subcollection: account
 Use {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) to create or remove an authorization that grants one service access to another service. Use authorization delegation to automatically create access policies that grant access to dependent services.
 {: shortdesc}
 
-Many of the capabilities of the IAM system are focused on managing and enforcing user and application access to {{site.data.keyword.Bluemix_notm}} resources. However, you might encounter other scenarios in which you need to provide one service with access to a user's resource in another service. This type of access is called an authorization.
+Many of the capabilities of IAM are focused on managing and enforcing user and application access to {{site.data.keyword.Bluemix_notm}} resources. However, you might encounter other scenarios in which you need to provide one service with access to a user's resource in another service. This type of access is called an authorization.
 
 In an authorization, the source service is the service that is granted access to the target service. The roles that you select define the level of access for the source service. The target service is the service that you are granting permission to be accessed by the source service based on the roles that you assign. A source service can be in the same account where the authorization is created or in another account. The target service is always in the account where the authorization is created. You can view whether the source service is located in the current account or another account by viewing the Source account column for the specific authorization on the [Authorizations](/iam/authorizations) page in the {{site.data.keyword.Bluemix}} console.
 
@@ -28,9 +28,9 @@ In some cases, you can authorize dependent services in addition to the source se
 
 ![S2S authorizations with dependent services.](images/dependent-services.svg "S2S authorizations with dependent services"){: caption="Figure 1. How S2S authorizations work with dependent services" caption-side="bottom"}
 
-Review the following example to understand how the relationship between the source, target, and dependent services works.
+For more information about roles, see [Service access roles](/docs/account?topic=account-userroles#service_access_roles).
 
-As an example, you might have an {{site.data.keyword.ibmwatson}} service that relies on an instance of {{site.data.keyword.cos_full_notm}} to store data. When you enable an authorization between your {{site.data.keyword.ibmwatson_notm}} service and {{site.data.keyword.keymanagementservicelong}} service, you might need the {{site.data.keyword.cos_short}} instance to access a key in the user's {{site.data.keyword.keymanagementserviceshort}} instance. So, while the authorization is between your {{site.data.keyword.ibmwatson_notm}} service and {{site.data.keyword.keymanagementserviceshort}} service, the {{site.data.keyword.cos_short}} service is also given access as a dependent service of the {{site.data.keyword.ibmwatson_notm}} service. By selecting the option to enable authorizations for dependent services, you don't need to take any additional action because the policies are automatically created for the dependent services.
+The following example explains how the relationship between the source, target, and dependent services works. Let's say you have an {{site.data.keyword.ibmwatson}} service that relies on an instance of {{site.data.keyword.cos_full_notm}} to store data. When you enable an authorization between your {{site.data.keyword.ibmwatson_notm}} service and {{site.data.keyword.keymanagementservicelong}} service, you might need the {{site.data.keyword.cos_short}} instance to access a key in the user's {{site.data.keyword.keymanagementserviceshort}} instance. So, while the authorization is between your {{site.data.keyword.ibmwatson_notm}} service and {{site.data.keyword.keymanagementserviceshort}} service, the {{site.data.keyword.cos_short}} service is also given access as a dependent service of the {{site.data.keyword.ibmwatson_notm}} service. By selecting the option to enable authorizations for dependent services, you don't need to take any additional action because the policies are automatically created for the dependent services.
 
 The source service's dependent services might be in the source service's account, which means that they are not visible to you in your account. However, any access policies that are created by the source service for its dependent services are always visible to you. You can tell which authorizations a user created or a source service that is created by checking the Type column for the specific authorization on the Authorizations page.
 {: tip}
@@ -43,15 +43,15 @@ The source service's dependent services might be in the source service's account
 You must have access to the target service to create an authorization between services. You can grant only the level of access that you have as a user of the target service. For example, if you have viewer access on the target service, you can assign only the viewer role for the authorization.
 
 1. In the {{site.data.keyword.Bluemix_notm}} console, click **Manage** > **Access (IAM)**, and select **Authorizations**.
-2. Click **Create**.
-3. Select a source account.
+1. Click **Create**.
+1. Select a source account.
    * If the source service that needs access to the target service is in this account, select **This account**.
    * If the source service that needs access to the target service is in a different account, select **Other account**. Then, enter the account ID of the source account.
-4. Specify whether you want the authorization to be for all instances, only a specific instance in the account, or instances only in a certain resource group.
-5. Select a target service and specify whether you want the authorization to be for all instances, only a specific instance in the account, or instances only in a certain resource group.
-6. Optional: Select **Enable authorization to be delegated** to allow the source service to delegate its access to any dependent services. This option is displayed only if the source service has dependent services. By selecting this option, policies are automatically created by the source service for the dependent services.
-7. Select a role to assign access to the source service that accesses the target service.
-8. Click **Authorize**.
+1. Specify whether you want the authorization to be for all instances, only a specific instance in the account, or instances only in a certain resource group.
+1. Select a target service and specify whether you want the authorization to be for all instances, only a specific instance in the account, or instances only in a certain resource group.
+1. Optional: Select **Enable authorization to be delegated** to allow the source service to delegate its access to any dependent services. This option is displayed only if the source service has dependent services. By selecting this option, policies are automatically created by the source service for the dependent services.
+1. Select a role to assign access to the source service that accesses the target service.
+1. Click **Authorize**.
 
 If you create an authorization between a service in another account and a target service in your current account, you need to have access only to the target resource. For the source account, you need only the account number. 
 {: note}
@@ -77,44 +77,54 @@ For more information about all of the parameters that are available for this com
 
 You must have access to the target service to create an authorization between services. You can grant only the level of access that you have as a user of the target service. For example, if you have viewer access on the target service, you can assign only the viewer role for the authorization.
 
-Use the following steps to create an authorization between services by using Terraform.
+Before you can create an authorization by using Terraform, make sure that you have completed the following:
 
-1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create an authorization between services by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
 
-2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create an authorization between services by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+Use the following steps to create an authorization by using Terraform:
 
-   The following example creates an authorization between services by using the `ibm_iam_authorization_policy` resource.
+1. Create an authorization policy between services by using the `ibm_iam_authorization_policy` resource argument in your `main.tf` file.
 
+   The following example creates an authorization between services:
    ```terraform
    resource "ibm_iam_authorization_policy" "policy" {
    source_service_name = "cloud-object-storage"
    target_service_name = "kms"
    roles               = ["Reader"]
+   description         = "Authorization Policy"
+   transaction_id     = "terraformAuthorizationPolicy"
    }
    ```
    {: codeblock}
 
-3. Initialize the Terraform CLI.
+   The `ibm_iam_authorization_policy` resource requires the source service, target service, and role. The source service is granted access to the target service, and the role is the level of permission that the access allows. Optionally, you can add a description for the authorization and a transaction ID.
+   {: note}
+
+   For more examples, see the [Terraform documentation for authorization resources](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_authorization_policy){: external}.
+
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
 
    ```terraform
    terraform init
    ```
    {: pre}
 
-4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the authorization between services.
+1. Provision your `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
 
-   ```terraform
-   terraform plan
-   ```
-   {: pre}
+   1. Create a Terraform execution plan.
 
-5. Create the authorization between services.
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
 
-   ```terraform
-   terraform apply
-   ```
-   {: pre}
+   1. Create the authorization between services.
 
+      ```terraform
+      terraform apply
+      ```
+      {: pre}
 
 ## Creating an authorization by using the API
 {: #auth-api}
