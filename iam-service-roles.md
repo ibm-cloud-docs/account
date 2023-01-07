@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-01-06"
+lastupdated: "2023-01-07"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -384,6 +384,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `appid.mgmt.del.totp.channel` | appid-mgmt-del-totp-channel | Manager, Writer |
 | `appid.mgmt.get.application.roles` | Get application roles | Manager, Reader, Writer |
 | `appid.mgmt.update.application.roles` | Update application roles | Manager, Writer |
+| `appid.mgmt.get.settings` | Retrieve instance settings | Manager, Reader, Writer |
+| `appid.mgmt.set.settings` | Set instance settings | Manager, Writer |
 {: caption="Table 9. Service actions - App ID" caption-side="top"}
 {: #actions-table9}
 {: tab-title="Actions"}
