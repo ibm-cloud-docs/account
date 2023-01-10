@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2022
-lastupdated: "2022-12-30"
+  years: 2021, 2023
+lastupdated: "2023-01-10"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, Cloud Foundry, endpoint type
 
@@ -121,6 +121,7 @@ The following is a list of services that you can add to a network zone as a serv
 | {{site.data.keyword.dl_short}} | IAM-enabled |
 | [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-restrict_access#configuring_cbr) | IAM-enabled |
 | [{{site.data.keyword.containershort}}](/docs/containers?topic=containers-cbr&interface=ui) | IAM-enabled |
+| {{site.data.keyword.secrets-manager_short}} | IAM-enabled |
 | [VPC Infrastructure Services](/docs/vpc?topic=vpc-cbr&interface=cli#network-zone) | IAM-enabled |
 {: caption="Table 1. Services that are compatible with service references." caption-side="top"}
 
