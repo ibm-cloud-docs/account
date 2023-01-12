@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2022
-lastupdated: "2022-12-27"
+  years: 2015, 2023
+lastupdated: "2023-01-12"
 
 keywords: troubleshoot account, authentication, IBMid accounts, sign-up error
 
