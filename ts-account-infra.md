@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2021
-lastupdated: "2021-02-25"
+  years: 2015, 2023
+lastupdated: "2023-01-12"
 
 keywords: troubleshoot account, infrastructure access, infrastructure services
 
@@ -25,7 +25,7 @@ You can't view all infrastructure sections of the console because of an account 
 When you attempt to access infrastructure sections of the IBM Cloud console, the following message might be displayed:
 {: tsSymptoms}
 
-`This page can't be loaded because your infrastructure account is not fully configured as an IBM Cloud account.`
+> This page can't be loaded because your infrastructure account is not fully configured as an IBM Cloud account.
 
 There are multiple reasons why the message is displayed:
 {: tsCauses}

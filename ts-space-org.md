@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2021
-lastupdated: "2021-09-22"
+  years: 2015, 2022
+lastupdated: "2022-12-27"
 
 keywords: troubleshoot account, account problem, spaces in an org, create app
 subcollection: account
@@ -23,7 +23,7 @@ You can't create an app if no space is associated with your current organization
 When you try to create an app the following error message is displayed:
 {: tsSymptoms}
 
-`BXNUI0097E: Before you can add an app, at least one space must be associated with your organization and region. On the Dashboard, click Create a Space. When the space is created, try again.`
+> BXNUI0097E: Before you can add an app, at least one space must be associated with your organization and region. On the Dashboard, click Create a Space. When the space is created, try again.
 
 Apps must be created in a space under your organization.
 {: tsCauses}

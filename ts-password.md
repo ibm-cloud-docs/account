@@ -25,7 +25,7 @@ You must have a valid password that's associated with your IBMid or SoftLayer ID
 When you try to log in to {{site.data.keyword.Bluemix_notm}}, the following error message is displayed:
 {: tsSymptoms}
 
-`The password that you entered is not correct.`
+> The password that you entered is not correct.
 
 The password that you used to log in to {{site.data.keyword.Bluemix_notm}} isn't valid.
 {: tsCauses}

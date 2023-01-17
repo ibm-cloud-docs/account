@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-09-22"
+  years: 2020, 2022
+lastupdated: "2022-12-27"
 
 keywords: troubleshoot create service, create service error
 
@@ -24,8 +24,11 @@ You are unable to create or add a new service instance.
 You might receive one of the following error messages when you create a service:
 {: tsSymptoms}
 
-* Create service error.
-* Create Service [500, Internal Server Error]. An error occurred while trying to create the service. Please try again later.
+> Create service error.
+
+or
+
+> Create Service [500, Internal Server Error]. An error occurred while trying to create the service. Please try again later.
 
 Creating a service instance can fail when you don't have access, exceed a plan limit, or experience a problem with your web browser. An active incident or planned maintenance might also affect your ability to create a service instance.
 {: tsCauses}
