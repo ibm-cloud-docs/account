@@ -12,7 +12,7 @@ content-type: troubleshoot
 
 ---
 
-{{{site.data.keyword.attribute-definition-list}}
+{{site.data.keyword.attribute-definition-list}}
 
 
 # Why didn't my IBMid login complete?
