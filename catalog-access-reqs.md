@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-06-13"
+  years: 2020, 2023
+lastupdated: "2023-01-18"
 
 keywords: catalog, private catalogs, IAM access, roles, private catalog service, access groups, permissions, IAM, catalog management, access group
 
@@ -15,7 +15,7 @@ subcollection: account
 # Assigning access to catalogs
 {: #catalog-access}
 
-As the account owner, you assign users specific catalog management access depending on what tasks they are performing. To streamline the process of assigning access, you can use access groups to organize a set of users into a single entity. That way, you can assign a single policy to the group one time, and then add or remove users from the group as needed. 
+As the account owner, you assign users specific catalog management access depending on what tasks they are performing. To streamline the process of assigning access, you can use access groups to organize a set of users into a single entity. That way, you can assign a single policy to the group one time, and then add or remove users from the group as needed.
 {: shortdesc}
 
 For more details, see [Managing access in {{site.data.keyword.cloud_notm}}](/docs/account?topic=account-cloudaccess).
@@ -30,7 +30,7 @@ See the following sections for details about creating your access groups and ass
 {: #catalog-access-console-admin}
 {: ui}
 
-Administrator access is required for setting account-level filters to the {{site.data.keyword.cloud_notm}} catalog.   
+Administrator access is required for setting account-level filters to the {{site.data.keyword.cloud_notm}} catalog.
 
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
 1. Go to **Manage** > **Access (IAM)** > **Access groups** in the {{site.data.keyword.cloud_notm}} console.
@@ -40,7 +40,7 @@ Administrator access is required for setting account-level filters to the {{site
 1. Select **Catalog Management** from the list of services.
 1. Select the catalog that you want users to access.
 1. In the Platform access section, select the **Administrator** role.
-1. Click **Review**. 
+1. Click **Review**.
 1. Click **Add** to add your policy configuration to your policy summary.
 1. **Assign**.
 
@@ -48,7 +48,7 @@ Administrator access is required for setting account-level filters to the {{site
 {: #catalog-access-console-editor}
 {: ui}
 
-Editor access is required for creating private catalogs, setting filters at the private catalog level, adding your software to your private catalog, and updating, deprecating, and restoring your software.    
+Editor access is required for creating private catalogs, setting filters at the private catalog level, adding your software to your private catalog, and updating, deprecating, and restoring your software.
 
 1. Go to **Access groups**, and click **Create**.
 1. Enter `private-catalog-editors` as the group name, and click **Create**.
@@ -62,14 +62,14 @@ Editor access is required for creating private catalogs, setting filters at the 
 1. Click **Add**.
 1. Select **Schematics** from the list of services.
 1. Select the **Manager** role.
-1. Click **Review**. 
+1. Click **Review**.
 1. Click **Add** > **Assign**.
 
 ### Viewer access in the console
 {: #catalog-access-console-viewer}
 {: ui}
 
-Viewer access is required for viewing private catalogs, the filtered {{site.data.keyword.cloud_notm}} catalog, and the filter settings.  
+Viewer access is required for viewing private catalogs, the filtered {{site.data.keyword.cloud_notm}} catalog, and the filter settings.
 
 1. Go to **Access groups**, and click **Create**.
 1. Enter `private-catalog-viewers` as the group name, and click **Create**.
@@ -81,14 +81,14 @@ Viewer access is required for viewing private catalogs, the filtered {{site.data
 1. Click **Add** to add your policy configuration to your policy summary.
 1. Click **Assign**.
 
-You also need to have viewer access on the resource group to which your private catalog is assigned. You can assign your private catalog to a resource group when you complete the steps for creating your private catalog. For more information, see [Customizing the IBM Cloud catalog for all account users](/docs/account?topic=account-filter-account). 
+You also need to have viewer access on the resource group to which your private catalog is assigned. You can assign your private catalog to a resource group when you complete the steps for creating your private catalog. For more information, see [Customizing the IBM Cloud catalog for all account users](/docs/account?topic=account-filter-account).
 
 To assign viewer access to your private catalog's resource group, use the following steps:
 
-1. Go to **Users** and select the user. 
-1. Select **Access** > **Assign access**. 
+1. Go to **Users** and select the user.
+1. Select **Access** > **Assign access**.
 1. Select **All Identity and Access enabled services** from the list of services.
-1. Scope the access to **Specific resources** based on selected attributes, and select your private catalogs resource group. 
+1. Scope the access to **Specific resources** based on selected attributes, and select your private catalogs resource group.
 1. For Platform access, select the **Viewer** role.
 1. Click **Add** > **Assign**.
 
@@ -101,7 +101,7 @@ After you set up your access groups, complete the following steps to add users t
 1. Go to **Users**, and click **Invite users**.
 2. Specify the email addresses of the users. If you are inviting more than one user with a single invitation, they are all assigned the same access.
 3. Select one of the three access groups you previously created, and click **Add** > **Invite**.
-4. Repeat the steps to add users to your other access groups. 
+4. Repeat the steps to add users to your other access groups.
 
 Or, you can give users access by adding trusted profiles to your access groups. For more information, see [What makes a good trusted profiles strategy?](/docs/account?topic=account-account_setup#trustedprofiles_strategy) and [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile).
 
@@ -109,7 +109,7 @@ Or, you can give users access by adding trusted profiles to your access groups. 
 {: #catalog-access-groups-cli}
 {: cli}
 
-To assign access, run the [`ibmcloud iam user-policy-create`](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_create) command. 
+To assign access, run the [`ibmcloud iam user-policy-create`](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_create) command.
 
 ### Administrator access by using the CLI
 {: #catalog-access-cli-admin}
@@ -168,7 +168,7 @@ Or, you can give users access by adding trusted profiles to your access groups. 
 {: #catalog-access-groups-api}
 {: api}
 
-To assign access, call the [IAM Policy Management API](https://cloud.ibm.com/apidocs/iam-policy-management?code=go#create-policy) as shown in the follwing example. Replace the `role_id` vaiable with the role you want to assign: `Viewer`, `Editor`, or `Administrator`. 
+To assign access, call the [IAM Policy Management API](https://cloud.ibm.com/apidocs/iam-policy-management?code=go#create-policy) as shown in the follwing example. Replace the `role_id` vaiable with the role you want to assign: `Viewer`, `Editor`, or `Administrator`.
 
 ```bash
 curl -X POST 'https://iam.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
@@ -808,7 +808,7 @@ fmt.Println(string(b))
 
 Or, you can give users access by adding trusted profiles to your access groups. For more information, see [What makes a good trusted profiles strategy?](/docs/account?topic=account-account_setup#trustedprofiles_strategy) and [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile&interface=api).
 
-### Adding users expected response 
+### Adding users expected response
 {: #expected-response-api}
 
 ```bash
@@ -950,10 +950,15 @@ Or, you can give users access by adding trusted profiles to your access groups. 
 {: #catalog-access-terra-users}
 {: terraform}
 
-To add users to an access group by using Terraform, follow these steps:
+Before you can add users to your access groups by using Terraform, make sure that you have completed the following:
+
+- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create an authorization between services by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
+Use the following steps to add users to your access groups
 
 1. In your Terraform configuration file, find the Terraform code that you used to [create the access group](/docs/account?topic=account-groups&interface=terraform#create-ag-terraform) and note the `access_group_id` assigned to your access group.
-2. Add a member to the access group.
+1. Add a member to the access group.
    ```terraform
    resource "ibm_iam_access_group_members" "accgroupmem" {
    access_group_id = ibm_iam_access_group.accgroup.id
@@ -961,24 +966,27 @@ To add users to an access group by using Terraform, follow these steps:
    }
    ```
    {: codeblock}
-   
+
    For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_access_group_members){: external} page.
-   
-3. Initialize the Terraform CLI.
+
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
    ```terraform
    terraform init
    ```
    {: pre}
-   
-4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to update the access group.
-   ```terraform
-   terraform plan
-   ```
-   {: pre}
 
-5. Update the access group.
-   ```terraform
-   terraform apply
-   ```
-   {: pre}
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
 
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
+
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
+
+   1. Run `terraform apply` to create the resources that are defined in the plan.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}
