@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2022
+  years: 2017, 2023
 
-lastupdated: "2022-12-27"
+lastupdated: "2023-01-18"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access, administrator, administrator role
 
@@ -459,16 +459,16 @@ To assign access to resources by using Terraform, use the following steps:
    ```
    {: pre}
 
-1. Provision your `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
 
-   1. Create a Terraform execution plan.
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
 
       ```terraform
       terraform plan
       ```
       {: pre}
 
-   1. Create the authorization between services.
+   1. Run `terraform apply` to create the resources that are defined in the plan.
 
       ```terraform
       terraform apply
@@ -511,16 +511,16 @@ To assign access within a resource group by using Terraform, use the following s
    ```
    {: pre}
 
-1. Provision your `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
 
-   1. Create a Terraform execution plan.
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
 
       ```terraform
       terraform plan
       ```
       {: pre}
 
-   1. Create the authorization between services.
+   1. Run `terraform apply` to create the resources that are defined in the plan.
 
       ```terraform
       terraform apply

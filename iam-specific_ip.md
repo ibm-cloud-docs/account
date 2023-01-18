@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018, 2022
+  years: 2018, 2023
 
-lastupdated: "2022-10-26"
+lastupdated: "2023-01-18"
 
 keywords: specific IP addresses, IP addresses, restrict IP access, IP address access, allow IP access
 
@@ -78,7 +78,7 @@ If you are assigned the following access, you can update the restricted IP addre
 To restrict all users to using only specific IP addresses, complete the following steps:
 
 1. In your Terraform configuration file, find the Terraform code that you used to create the `iam_account_settings_instance`.
-2. Enter the IP addresses that you want to restrict all users to using. The IP addresses listed are the only ones from which users in the account can log in to {{site.data.keyword.Bluemix}}.
+1. Enter the IP addresses that you want to restrict all users to using. The IP addresses listed are the only ones from which users in the account can log in to {{site.data.keyword.Bluemix}}.
    ```terraform
     resource "ibm_iam_account_settings" "iam_account_settings_instance" {
       allowed_ip_addresses = "17.5.7.8, 17.5.7.8 - 17.5.9.5, 17.5.7.8.0/16"
@@ -86,17 +86,21 @@ To restrict all users to using only specific IP addresses, complete the followin
    ```
    {: pre}
 
-3. Create a Terraform execution plan.
-   ```bash
-   terraform plan
-   ```
-   {: pre}
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
 
-4. Update the allowed IP addressees in the account. Note that this process might take a few minutes to complete.
-   ```bash
-   terraform apply
-   ```
-   {: pre}
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
+
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
+
+   1. Run `terraform apply` to create the resources that are defined in the plan.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}
 
 For more information, see the [Terraform documentation](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_account_settings#allowed_ip_addresses).
 

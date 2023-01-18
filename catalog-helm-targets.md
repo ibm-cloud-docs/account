@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-02-21"
+  years: 2020, 2023
+lastupdated: "2023-01-18"
 
 keywords: onboard software, Helm chart, software, private catalog, target, deployment target
 
@@ -11,7 +11,6 @@ subcollection: account
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # Deploying a Helm chart to a new target
 {: #helm-targets}
@@ -22,7 +21,6 @@ You can copy the configuration of an existing version of a Helm chart and deploy
 ## Deploying a Helm chart to a new target using the console
 {: #helm-targets-ui}
 {: ui}
-
 
 1. Go to the **Manage** > **Catalogs** in the {{site.data.keyword.cloud}} console, and click **Private catalogs**.
 1. Select the private catalog that contains the current Helm chart version.
@@ -38,13 +36,14 @@ Your copied version is displayed in your version list as a separate entry from y
 {: #helm-targets-tf}
 {: terraform}
 
-You can deploy your Helm chart to a new target by using Terraform.
+Before you can deploy a Helm chart to a new target by using Terraform, make sure that you have completed the following:
 
-1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create an authorization between services by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
 
-2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to update your deployment target by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+Use the following steps to deploy your Helm chart to a new target by using Terraform:
 
-   The following example shows the software version details by using the `cm_version` resource, where `offering_id` is used to identify the Helm chart.
+1. Create an argument in your `main.tf` file. The following example shows the software version details by using the `cm_version` resource, where `offering_id` is used to identify the Helm chart.
 
    ```terraform
    resource "cm_version" "cm_version" {
@@ -57,23 +56,25 @@ You can deploy your Helm chart to a new target by using Terraform.
 
     You can specify `target_kinds` for the `cm_version` resource. For more information, see the argument details on the [Terraform Catalog Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/cm_version){: external} page.
 
-3. Initialize the Terraform CLI.
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
 
    ```terraform
    terraform init
    ```
    {: pre}
 
-4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to update the deployment target.
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
 
-   ```terraform
-   terraform plan
-   ```
-   {: pre}
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
 
-5. Update the deployment target.
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
 
-   ```terraform
-   terraform apply
-   ```
-   {: pre}
+   1. Run `terraform apply` to create the resources that are defined in the plan.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}

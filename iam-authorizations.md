@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2022
+  years: 2017, 2023
 
-lastupdated: "2022-12-07"
+lastupdated: "2023-01-18"
 
 keywords: authorizations, service to service access, access between services, dependent service, source service, target service, assigned access, access policies
 
@@ -110,16 +110,16 @@ Use the following steps to create an authorization by using Terraform:
    ```
    {: pre}
 
-1. Provision your `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
 
-   1. Create a Terraform execution plan.
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
 
       ```terraform
       terraform plan
       ```
       {: pre}
 
-   1. Create the authorization between services.
+   1. Run `terraform apply` to create the resources that are defined in the plan.
 
       ```terraform
       terraform apply
@@ -571,14 +571,14 @@ If the source service is removed from the account, any policies that are created
 
 If you want to remove an authorization by using Terraform, you need to delete the argument from the `main.tf` file. After you delete the argument, provision your file by using the following steps:
 
-   1. Create a Terraform execution plan.
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
 
       ```terraform
       terraform plan
       ```
       {: pre}
 
-   1. Create the authorization between services.
+   1. Run `terraform apply` to create the resources that are defined in the plan.
 
       ```terraform
       terraform apply

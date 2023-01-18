@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018, 2022
+  years: 2018, 2023
 
-lastupdated: "2022-09-28"
+lastupdated: "2023-01-18"
 
 
 keywords: access groups, access group, create group, assign access to group, administrator, administrator role
@@ -83,6 +83,13 @@ To manage or create new access groups, you must have the following type of acces
 * Administrator or editor for the All Account Management services
 
 Additionally, an administrator or editor can be assigned access to manage an individual group by creating an access policy where the resource is the Access group ID. For more information about access policies and roles for the IAM Access Groups service, see [IAM access](/docs/account?topic=account-userroles#userroles).
+
+Before you can set up access groups by using Terraform, make sure that you have completed the following:
+{: terraform}
+
+- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create an authorization between services by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+{: terraform}
 
 ## Creating an access group in the console
 {: #create_ag}
@@ -195,13 +202,9 @@ A unique name is required to differentiate access groups in the account.
 {: #create-ag-terraform}
 {: terraform}
 
-You can create access groups by using Terraform.
+Use the following steps to create access groups by using Terraform:
 
-1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-
-1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create access groups by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
-
-   The following example creates an access group by using the `ibm_iam_access_group` resource, where `name` is a unique name to identify the access group.
+1. Create an argument in your `main.tf` file. The following example creates an access group by using the `ibm_iam_access_group` resource, where `name` is a unique name to identify the access group.
 
    ```terraform
    resource "ibm_iam_access_group" "accgrp" {
@@ -213,25 +216,28 @@ You can create access groups by using Terraform.
 
    You can also specify the description of the access group on the `description` option. For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_access_group){: external} page.
 
-1. Initialize the Terraform CLI.
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
 
-   ```bash
+   ```terraform
    terraform init
    ```
    {: pre}
 
-1. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the access group.
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
 
-   ```bash
-   terraform plan
-   ```
-   {: pre}
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
 
-1. Create the access group.
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
 
-   ```bash
-   terraform apply
-   ```
+   1. Run `terraform apply` to create the resources that are defined in the plan.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}
 
 ## Assigning access to a group in the console
 {: #access_ag}
@@ -494,13 +500,9 @@ You can assign access to a group of services. To assign access to **All Identity
 {: #access_ag_terraform}
 {: terraform}
 
-After you set up your group, you can assign access to it by using Terraform.
+After you set up your group, use the following steps to assign access to it by using Terraform.
 
-1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-
-1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to assign access to a group by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
-
-   The following examples create an IAM policy that grants members of the access group the IAM `Viewer` platform role to all IAM-enabled services by using the `ibm_iam_access_group_policy` resource. You must have an existing IAM ID of an access group in order to complete the task.
+1. Create an argument in your `main.tf` file. The following examples create an IAM policy that grants members of the access group the IAM `Viewer` platform role to all IAM-enabled services by using the `ibm_iam_access_group_policy` resource. You must have an existing IAM ID of an access group in order to complete the task.
 
    ```terraform
    resource "ibm_iam_access_group" "accgrp" {
@@ -519,23 +521,25 @@ After you set up your group, you can assign access to it by using Terraform.
 
    For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_access_group_policy){: external} page.
 
-1. Initialize the Terraform CLI.
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
 
-   ```bash
+   ```terraform
    terraform init
    ```
    {: pre}
 
-1. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to assign access to the group.
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
 
-   ```bash
-   terraform plan
-   ```
-   {: pre}
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
 
-1. Assign access to the group.
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
 
-   ```bash
-   terraform apply
-   ```
-   {: codeblock}
+   1. Run `terraform apply` to create the resources that are defined in the plan.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}

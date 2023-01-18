@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-11-30"
+  years: 2020, 2023
+lastupdated: "2023-01-18"
 
 keywords: enterprise, add account, import account, create account
 
@@ -155,17 +155,22 @@ if err != nil {
 {: go}
 
 
+## Before you begin
+{: add-account-terraform-prereq}
+{: terraform}
+
+Before you can add accounts to an enterprise by using Terraform, make sure that you have completed the following:
+
+- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create an authorization between services by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
 ### Importing accounts by using Terraform
 {: #add-account-terraform}
 {: terraform}
 
-You can import an existing account in an enterprise resource by using Terraform.
+Use the following steps to import an existing account in an enterprise resource by using Terraform.
 
-1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-
-2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to import accounts by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
-
-   The following example imports an account by using the `ibm_enterprise_account` resource, where `enterprise_id` is where the account is imported. You must have an existing IAM ID of an enterprise primary contact in order to complete the task. 
+1. Create an argument in your `main.tf` file. The following example imports an account by using the `ibm_enterprise_account` resource, where `enterprise_id` is where the account is imported. You must have an existing IAM ID of an enterprise primary contact in order to complete the task.
 
    ```terraform
    resource "ibm_enterprise_account" "enterprise_import_account"{
@@ -178,25 +183,28 @@ You can import an existing account in an enterprise resource by using Terraform.
 
    You can specify the ID of an account that needs to be imported on the `account_id` option. For more information, see the argument reference details on the [Terraform Enterprise Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/enterprise_account){: external} page.
 
-3. Initialize the Terraform CLI.
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
 
    ```terraform
    terraform init
    ```
    {: pre}
 
-4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to import the account.
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
 
-   ```terraform
-   terraform plan
-   ```
-   {: pre}
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
 
-5. Import the account.
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
 
-   ```terraform
-   terraform apply
-   ```
+   1. Run `terraform apply` to create the resources that are defined in the plan.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}
 
 ## Creating new accounts
 {: #create-accounts}
@@ -242,11 +250,11 @@ After you create the account, the account owner can log in to the account to inv
 To create a new account in the enterprise, call the Enterprise Management API as shown in the following sample request, replacing the IAM token and ID variables with the values from your enterprise. For detailed information about the API, see [Enterprise Management API](/apidocs/enterprise-apis/enterprise#create-a-new-account-in-an-enterprise){: external}.
 
 ```bash
-curl -X POST "https://enterprise.cloud.ibm.com/v1/accounts 
--H "Authorization: Bearer <IAM_Token>" 
--H 'Content-Type: application/json' 
+curl -X POST "https://enterprise.cloud.ibm.com/v1/accounts
+-H "Authorization: Bearer <IAM_Token>"
+-H 'Content-Type: application/json'
 -d '{
-  "parent": 
+  "parent":
   "crn:v1:bluemix:public:enterprise::a/$ENTERPRISE_ACCOUNT_ID::account-group:$ACCOUNT_GROUP_ID",
   "name": "Example Account",
   "owner_iam_id": "$OWNER_IAM_ID"
@@ -321,13 +329,9 @@ fmt.Println(string(b))
 {: #create-account-terraform}
 {: terraform}
 
-You can create new accounts within your enterprise by using Terraform.
+Use the following steps to create accounts by using Terraform:
 
-1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-
-2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create accounts by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
-
-   The following example creates an account by using the `ibm_enterprise_account` resource, where `name` is a unique name to identify the enterprise. You must have an existing IAM ID of an enterprise primary contact in order to complete the task. 
+1. Create an argument in your `main.tf` file. The following example creates an account by using the `ibm_enterprise_account` resource, where `name` is a unique name to identify the enterprise. You must have an existing IAM ID of an enterprise primary contact in order to complete the task.
 
    ```terraform
    resource "ibm_enterprise_account" "enterprise_account" {
@@ -339,26 +343,26 @@ You can create new accounts within your enterprise by using Terraform.
    {: codeblock}
 
    You can specify the ID of an account owner on the `owner_iam_id` option. For more information, see the argument reference details on the [Terraform Enterprise Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/enterprise_account){: external} page.
-  
-3. Initialize the Terraform CLI.
+
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
 
    ```terraform
    terraform init
    ```
    {: pre}
 
-4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the account.
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
 
-   ```terraform
-   terraform plan
-   ```
-   {: pre}
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
 
-5. Create the account.
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
 
-   ```terraform
-   terraform apply
-   ```
-   {: pre}
+   1. Run `terraform apply` to create the resources that are defined in the plan.
 
-
+      ```terraform
+      terraform apply
+      ```
+      {: pre}

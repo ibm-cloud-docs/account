@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2021
-lastupdated: "2021-11-30"
+  years: 2019, 2023
+lastupdated: "2023-01-18"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, multiple account, video
 
@@ -90,7 +90,7 @@ Click **Accounts** to view your enterprise hierarchy, which contains two account
 After the enterprise is created, two new IDs are displayed. The first ID is associated with the enterprise, and the second ID identifies the enterprise account, which you use to manage the enterprise.
 
 ```text
-ID:                      09876jihgf54321edcba   
+ID:                      09876jihgf54321edcba
 Enterprise Account ID:   edcba12345jihgf67890
 ```
 
@@ -103,9 +103,9 @@ The account that you used to create the enterprise is now a part of the enterpri
 You can programmatically create an enterprise by calling the Enterprise Management API as shown in the following sample request. For detailed information about the API, see [Enterprise Management API](/apidocs/enterprise-apis/enterprise){: external}.
 
 ```bash
-curl -X POST "https://enterprise.cloud.ibm.com/v1/enterprises 
--H "Authorization: Bearer <IAM_Token>" 
--H 'Content-Type: application/json' 
+curl -X POST "https://enterprise.cloud.ibm.com/v1/enterprises
+-H "Authorization: Bearer <IAM_Token>"
+-H 'Content-Type: application/json'
 -d '{
   "source_account_id": "a1b2c32a5ea94809a9840f5e23c362d",
   "name": "Example Enterprise",
@@ -187,13 +187,14 @@ fmt.Println(string(b))
 {: #create-terraform}
 {: terraform}
 
-You can create an enterprise by using Terraform. 
+Before you can create an enterprise by using Terraform, make sure that you have completed the following:
 
-1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create an authorization between services by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
 
-2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create an enterprise by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+Use the following steps to create an enterprise:
 
-   The following example creates an enterprise by using the `ibm_enterprise` resource, where `name` is a unique name to identify the enterprise. You must have an existing IAM ID of an enterprise primary contact in order to complete the task. 
+1. Create an argument in your `main.tf` file. The following example creates an enterprise by using the `ibm_enterprise` resource, where `name` is a unique name to identify the enterprise. You must have an existing IAM ID of an enterprise primary contact in order to complete the task.
 
    ```terraform
    resource "ibm_enterprise" "enterprise" {
@@ -205,27 +206,29 @@ You can create an enterprise by using Terraform.
    {: codeblock}
 
    You can specify the ID of an account that is used to create the enterprise on the `source_account_id` option. For more information, see the argument reference details on the [Terraform Enterprise Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/enterprise){: external} page.
-  
-3. Initialize the Terraform CLI.
+
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
 
    ```terraform
    terraform init
    ```
    {: pre}
-   
-4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the enterprise.
 
-   ```terraform
-   terraform plan
-   ```
-   {: pre}
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
 
-5. Create the enterprise.
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
 
-   ```terraform
-   terraform apply
-   ```
-   {: pre}
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
+
+   1. Run `terraform apply` to create the resources that are defined in the plan.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}
 
 ## Next steps
 {: #create-next-steps}
