@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2023
 
-lastupdated: "2023-01-17"
+lastupdated: "2023-01-18"
 
 
 keywords: catalog, private catalogs, visibility, filter catalog, hide product, catalog filtering, enterprise, account group, child account, account, restrict
@@ -37,7 +37,7 @@ Users in your account have access to all products in the public catalog by defau
 
 To update what products are visible to users, go to **Manage** > **Catalogs** > **Settings** in the {{site.data.keyword.cloud_notm}} console.
 
-Some products aren't affected by catalog visibility settings. Users can create instances of these products by using an API or the CLI. For more information, see [Known issues and limitations](https://test.cloud.ibm.com/docs/account?topic=account-known-issues).
+Some products aren't affected by catalog visibility settings. Users can create instances of these products by using an API or the CLI. For more information, see [Known issues and limitations](/docs/account?topic=account-known-issues).
 {: important}
 
 ## Managing access to products for all users in the console
