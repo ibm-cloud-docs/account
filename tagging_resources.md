@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018, 2022
+  years: 2018, 2023
 
-lastupdated: "2022-09-15"
+lastupdated: "2023-01-18"
 
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, full list of tags, how to use tags
@@ -186,15 +186,18 @@ Next, see [Attaching and detaching tags](/docs/account?topic=account-attaching-a
 {: #create-access-terraform}
 {: terraform}
 
-Before you can attach your access management tags to individual resources or service IDs, you need to create them first. To create access management tags, you need to have administrator role on either the Tagging Service that is listed under the Account management services or on all Account management services.
+Before you can create access management tags by using Terraform, make sure that you have completed the following:
+
+- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create an authorization between services by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+- Before you can attach your access management tags to individual resources or service IDs, you need to create them first. To create access management tags, you need to have administrator role on either the Tagging Service that is listed under the Account management services or on all Account management services.
 
 {{site.data.keyword.cloud}} allows up to 250 access management tags per account.
 {: note}
 
-To create access management tags by using Terraform, complete the following steps.
+Use the following steps to create access management tags by using Terraform:
 
-1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create access management tags by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}. The following example creates the access management tag `ibm_tag` to the `ibm` resource for the resource ID `ibm_satellite_location.location.crn`.
+1. Create an argument in your `main.tf` file. The following example creates the access management tag `ibm_tag` to the `ibm` resource for the resource ID `ibm_satellite_location.location.crn`.
 
    ```terraform
    resource "ibm_resource" "ibm" {
@@ -204,26 +207,29 @@ To create access management tags by using Terraform, complete the following step
    ```
     {: codeblock}
 
-1. Initialize the Terraform CLI.
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
 
    ```terraform
    terraform init
    ```
    {: pre}
 
-1. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create access management tags.
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
 
-   ```terraform
-   terraform plan
-   ```
-   {: pre}
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
 
-1. Create the access management tags.
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
 
-   ```terraform
-   terraform apply
-   ```
-   {: pre}
+   1. Run `terraform apply` to create the resources that are defined in the plan.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}
+
 
 ## Searching for tags in the console
 {: #search-tags}

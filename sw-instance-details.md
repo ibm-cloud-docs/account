@@ -1,9 +1,8 @@
 ---
 
-
 copyright:
-  years: 2021
-lastupdated: "2021-09-24"
+  years: 2021, 2023
+lastupdated: "2023-01-18"
 
 keywords: software instance, logs, delete, resource list, operator, operator bundle
 
@@ -12,7 +11,6 @@ subcollection: account
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # Managing software instances
 {: #sw-instance-details}
@@ -64,13 +62,14 @@ You can't view logs for your software instance by using Terraform. To view the l
 {: #sw-rename-terraform}
 {: terraform}
 
+Before you can rename your software instance by using Terraform, make sure that you have completed the following:
+
+- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create an authorization between services by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
 You can rename your software instance by using Terraform.
 
-1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud_notm}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-
-2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to rename your software instance by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
-
-   The following example shows the software instance details by using the `ibm_cm_offering_instance` resource, where `label` is a display name to identify the instance. To rename your software instance, update `label`.
+1. Create an argument in your `main.tf` file. The following example shows the software instance details by using the `ibm_cm_offering_instance` resource, where `label` is a display name to identify the instance. To rename your software instance, update `label`.
 
    ```terraform
    resource "ibm_cm_offering_instance" "cm_offering_instance" {
@@ -88,25 +87,28 @@ You can rename your software instance by using Terraform.
 
     You can specify an `update` timeout for the `ibm_cm_offering_instance` resource. For more information, see the timeout reference details on the [Terraform Catalog Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/cm_offering_instance#timeouts){: external} page.
 
-3. Initialize the Terraform CLI.
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
 
    ```terraform
    terraform init
    ```
    {: pre}
 
-4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to rename the software instance.
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
 
-   ```terraform
-   terraform plan
-   ```
-   {: pre}
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
 
-5. Rename the software instance.
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
 
-   ```terraform
-   terraform apply
-   ```
+   1. Run `terraform apply` to create the resources that are defined in the plan.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}
 
 ## Deleting your software instance by using Terraform
 {: #sw-delete-terraform}
@@ -141,18 +143,18 @@ You can delete your software instance by using Terraform.
    ```terraform
    terraform init
    ```
-   {: codeblock}
+   {: pre}
 
-5. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to delete the software instance.
+5. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions. The Terraform execution plan summarizes all the actions that need to be run to delete the software instance.
 
    ```terraform
    terraform plan
    ```
-   {: codeblock}
+   {: pre}
 
-4. Delete the software instance.
+6. Delete the software instance.
 
    ```terraform
    terraform apply
    ```
-   {: codeblock}
+   {: pre}
