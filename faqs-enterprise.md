@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2022
-lastupdated: "2022-03-22"
+  years: 2015, 2023
+lastupdated: "2023-01-18"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -21,20 +21,20 @@ content-type: faq
 FAQs for your {{site.data.keyword.cloud}} enterprise might include questions about importing accounts, moving accounts and account groups, and inviting users to your enterprise. To find all FAQs for {{site.data.keyword.cloud_notm}}, see our [FAQ library](/docs/faqs).
 {: shortdesc}
 
-## How do I set up an enterprise account? 
+## How do I set up an enterprise account?
 {: #enterprise-setup}
 {: faq}
 {: support}
 
-To set up an enterprise, you must be the account owner or an administrator on the Billing account management service. You use the {{site.data.keyword.cloud_notm}} console to create an enterprise account, enter the name of your company, provide your company's domain, create your enterprise structure, and more. For more information, see [Setting up an enterprise](/docs/account?topic=account-enterprise-tutorial). 
+To set up an enterprise, you must be the account owner or an administrator on the Billing account management service. You use the {{site.data.keyword.cloud_notm}} console to create an enterprise account, enter the name of your company, provide your company's domain, create your enterprise structure, and more. For more information, see [Setting up an enterprise](/docs/account?topic=account-enterprise-tutorial).
 
-## When I create an enterprise, does my {{site.data.keyword.cloud_notm}} account become the enterprise account? 
-{: #enterprise-account-switch} 
+## When I create an enterprise, does my {{site.data.keyword.cloud_notm}} account become the enterprise account?
+{: #enterprise-account-switch}
 {: faq}
 
 No, your {{site.data.keyword.cloud_notm}} account does not become the enterprise account. Your account is added to the enterprise hierarchy. For more information, see [Enterprise hierarchy](/docs/account?topic=account-what-is-enterprise#enterprise-hierarchy).
 
-## Can I use my {{site.data.keyword.cloud_notm}} account to create multiple enterprise accounts? 
+## Can I use my {{site.data.keyword.cloud_notm}} account to create multiple enterprise accounts?
 {: #enterprise-cloud-account}
 {: faq}
 
@@ -56,7 +56,7 @@ Yes, but your Lite account is automatically upgraded to a Pay-As-You-Go account.
 {: #remove-enterprise}
 {: faq}
 
-After you import your account into an enterprise, you can't remove it.  
+After you import your account into an enterprise, you can't remove it.
 
 ## Can I move an account within an enterprise?
 {: #move-enterprise-account}
@@ -82,7 +82,7 @@ No, you can't edit the name of an account from within your enterprise. To edit t
 
 To invite users to an enterprise, you must have an {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) access policy with the Editor or higher role on the User Management service. For more information, see [Inviting users](/docs/account?topic=account-iamuserinv#invitations).
 
-## Can my child account have a different subscription currency than my enterprise account? 
+## Can my child account have a different subscription currency than my enterprise account?
 {: #enterprise-currency}
 {: faq}
 
@@ -94,27 +94,27 @@ No, billing and subscriptions are managed at the enterprise level rather than at
 
 Yes, domains can be updated. You can use the [Enterprise Management API](https://cloud.ibm.com/apidocs/enterprise-apis/enterprise#update-enterprise){: external} to update your domain.
 
-## Do individual child accounts receive separate invoices if they are in an enterprise account? 
+## Do individual child accounts receive separate invoices if they are in an enterprise account?
 {: #enterprise-invoice}
 {: faq}
 
-You can view usage for individual child accounts, but they are not individually invoiced. For more information about enterprise usage, see [Viewing usage in an enterprise](/docs/billing-usage?topic=billing-usage-enterprise-usage&interface=ui). 
+You can view usage for individual child accounts, but they are not individually invoiced. For more information about enterprise usage, see [Viewing usage in an enterprise](/docs/billing-usage?topic=billing-usage-enterprise-usage&interface=ui).
 
 For more information about enterprise billing, see [Centrally managing billing and usage with enterprises](/docs/billing-usage?topic=billing-usage-enterprise).
 
-## What account type do I need to create an enterprise account? 
+## What account type do I need to create an enterprise account?
 {: #enterprise-account-type}
-{: faq} 
+{: faq}
 
-Only Subscription accounts can create an enterprise account. 
+Only Subscription accounts can create an enterprise account.
 
-## How many child accounts can I have in an enterprise account? 
+## How many child accounts can I have in an enterprise account?
 {: #enterprise-account-number}
 {: faq}
 
-You can have a maximum of 300 child accounts that can be distributed across a maximum of 200 account groups. An enterprise can contain up to five tiers of accounts and account groups. For more information, see [Enterprise hierarchy](/docs/account?topic=account-what-is-enterprise&interface=ui#enterprise-hierarchy)
+You can have a maximum of 300 child accounts that can be distributed across a maximum of 300 account groups. An enterprise can contain up to five tiers of accounts and account groups. For more information, see [Enterprise hierarchy](/docs/account?topic=account-what-is-enterprise&interface=ui#enterprise-hierarchy)
 
-## Can I create common resources for all of my child accounts? 
+## Can I create common resources for all of my child accounts?
 {: #enterprise-common-resources}
 {: faq}
 
@@ -122,7 +122,7 @@ Although you can create resources at the enterprise account level, this method i
 
 For more information, see [Working with resources in an enterprise](/docs/account?topic=account-enterprise-best-practices&interface=ui#child-resources-enterprise), [Resource management](/docs/account?topic=account-what-is-enterprise#enterprise-resources), and [Best practices for organizing resources and assigning access](/docs/account?topic=account-account_setup).
 
-## How do I know how many child accounts are in the enterprise as an enterprise account owner? 
+## How do I know how many child accounts are in the enterprise as an enterprise account owner?
 {: #enterprise-account-count}
 {: faq}
 
@@ -138,6 +138,6 @@ No, you do not automatically have access to child accounts and their resources. 
 {: #enterprise-admin-invite}
 {: faq}
 
-No, you cannot add users to child accounts. 
+No, you cannot add users to child accounts.
 
 You need to be invited to the child account and assigned the editor or administrator role for the User management service to add users to a child account.
