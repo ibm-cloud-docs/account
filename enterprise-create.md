@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2023-01-18"
+lastupdated: "2023-01-20"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, multiple account, video
 
@@ -28,6 +28,13 @@ The Subscription account that you use to create the enterprise is permanently mo
 * Billing for the account transitions to being [managed by the enterprise](/docs/billing-usage?topic=billing-usage-enterprise). After the transition, users in the account can't access billing and payment information, such as invoices, payments, or subscriptions, for future billing periods. To view or manage billing, users need to be invited to the enterprise account and be given access to the Billing service in that account.
 * Users and access permissions within the account are not changed. Access within the account is separate from the enterprise, and users don't automatically get access within the enterprise when the account is added. However, billing information is no longer available within the account regardless of access permissions.
 * Resources within the account are not changed. Users with the correct access permissions can continue to view usage information for resources in the account.
+
+Before you can create an enterprise by using Terraform, make sure that you have completed the following:
+{: terraform}
+
+- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create an authorization between services by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+{: terraform}
 
 If you don't have a Subscription account, you can upgrade your account as described in [Upgrading your account](/docs/account?topic=account-upgrading-account).
 
@@ -186,11 +193,6 @@ fmt.Println(string(b))
 ## Creating an enterprise by using Terraform
 {: #create-terraform}
 {: terraform}
-
-Before you can create an enterprise by using Terraform, make sure that you have completed the following:
-
-- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-- Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create an authorization between services by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
 
 Use the following steps to create an enterprise:
 

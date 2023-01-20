@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-01-18"
+lastupdated: "2023-01-20"
 
 keywords: catalog, private catalog, update, private catalog product, update version, versions
 
@@ -22,6 +22,13 @@ To update the software that's in your private catalog, you can add a new version
 {: #prereq-update}
 
 To complete this task, you need to be assigned the editor role on the catalog management service. For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
+
+To update your software by using Terraform, make sure that you have completed the following:
+{: terraform}
+
+- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create an authorization between services by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+{: terraform}
 
 ## Update an existing version by using the console
 {: #update-editor-offering}
@@ -131,11 +138,6 @@ fmt.Println(response)
 ## Update an existing version by using Terraform
 {: #update-editor-terraform}
 {: terraform}
-
-Before you can update an existing version by using Terraform, make sure that you have completed the following:
-
-- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-- Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create an authorization between services by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
 
 Use the following steps to update an existing version of your software by using Terraform.
 

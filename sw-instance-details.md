@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2023-01-18"
+lastupdated: "2023-01-20"
 
 keywords: software instance, logs, delete, resource list, operator, operator bundle
 
@@ -46,6 +46,15 @@ To rename your software instance, click **Actions** > **Rename instance**.
 
 Deleting a software instance removes the software from the cluster to which it is deployed. To delete your software instance, click **Actions** > **Delete instance**.
 
+## Before you begin
+{: #sw-instance-details-tf}
+{: terraform}
+
+Before you can rename your software instance by using Terraform, make sure that you have completed the following:
+
+- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create an authorization between services by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
 ## Viewing details about your software instance by using Terraform
 {: #viewing-sw-instance-terraform}
 {: terraform}
@@ -61,11 +70,6 @@ You can't view logs for your software instance by using Terraform. To view the l
 ## Renaming your software instance by using Terraform
 {: #sw-rename-terraform}
 {: terraform}
-
-Before you can rename your software instance by using Terraform, make sure that you have completed the following:
-
-- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-- Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create an authorization between services by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
 
 You can rename your software instance by using Terraform.
 
@@ -116,11 +120,7 @@ You can rename your software instance by using Terraform.
 
 You can delete your software instance by using Terraform.
 
-1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud_notm}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-
-2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to delete your software instance by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
-
-3. You can delete the software instance by removing the following code block from your Terraform file. You must have created the `cm_offering_instance` using the Terraform file.
+1. You can delete the software instance by removing the following code block from your Terraform file. You must have created the `cm_offering_instance` using the Terraform file.
 
    ```terraform
    resource "ibm_cm_offering_instance" "cm_offering_instance" {
@@ -138,21 +138,21 @@ You can delete your software instance by using Terraform.
 
    You can specify a `delete` timeout for the `ibm_cm_offering_instance` resource. For more information, see the timeout reference details on the [Terraform Catalog Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/cm_offering_instance#timeouts){: external} page.
 
-4. Initialize the Terraform CLI.
+1. Initialize the Terraform CLI.
 
    ```terraform
    terraform init
    ```
    {: pre}
 
-5. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions. The Terraform execution plan summarizes all the actions that need to be run to delete the software instance.
+1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions. The Terraform execution plan summarizes all the actions that need to be run to delete the software instance.
 
    ```terraform
    terraform plan
    ```
    {: pre}
 
-6. Delete the software instance.
+1. Delete the software instance.
 
    ```terraform
    terraform apply

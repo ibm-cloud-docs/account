@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2023
 
-lastupdated: "2023-01-18"
+lastupdated: "2023-01-20"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -54,6 +54,13 @@ For virtual server images, complete the following prerequisites:
    1. Review the list of [supported images](/docs/vpc?topic=vpc-about-images).
    2. If required, create your [Terraform template](/docs/schematics?topic=schematics-create-tf-config). Virtual server image for VPC does not require a Terraform template.
    3. Create an instance of [{{site.data.keyword.cloud_notm}} Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage) and add your image to a bucket.
+
+Before you can onboard software to your account by using Terraform, make sure that you have completed the following:
+{: terraform}
+
+- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create an authorization between services by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+{: terraform}
 
 To share software with other accounts, your software must be approved in Partner Center. For more information, see [Getting set up to sell software](/docs/sell?topic=sell-sw-getting-started).
 {: important}
@@ -547,16 +554,8 @@ fmt.Println(response)
 {: codeblock}
 {: go}
 
-## Before you begin
-{: #onboard-software-terraform-prereq}
-{: terraform}
 
-Before you can onboard software to your account by using Terraform, make sure that you have completed the following:
-
-- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-- Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create an authorization between services by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
-
-### Creating a private catalog by using Terraform
+## Creating a private catalog by using Terraform
 {: #create-catalog-terraform}
 {: terraform}
 
@@ -597,7 +596,7 @@ Use the following steps to create a private catalog by using Terraform.
       ```
       {: pre}
 
-### Importing a product to your catalog by using Terraform
+## Importing a product to your catalog by using Terraform
 {: #create-cicd-product-terraform}
 {: terraform}
 
@@ -639,7 +638,7 @@ Use the following steps to import a product to your private catalog by using Ter
       ```
       {: pre}
 
-### Importing a version of your software by using Terraform
+## Importing a version of your software by using Terraform
 {: #create-cicd-version-terraform}
 {: terraform}
 

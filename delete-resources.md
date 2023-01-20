@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2023
-lastupdated: "2023-01-18"
+lastupdated: "2023-01-20"
 
 keywords: account resources, delete resource, delete instance
 
@@ -131,7 +131,7 @@ fmt.Printf("\nDeleteResourceInstance() response status code: %d\n", response.Sta
 {: #delete-resource-instance-terraform}
 {: terraform}
 
-Use the following steps to delete resource instances by using Terraform. Before you can delete resource instances by using Terraform, make sure that you have completed the following:
+Use the following steps to delete resource instances by using Terraform.
 
 1. You can delete a resource instance by removing the following code block from your terraform file. You must have created the `resource_instance` using the terraform file.
 

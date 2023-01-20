@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-01-18"
+lastupdated: "2023-01-20"
 
 keywords: catalog, restrict visibility, hide product, restrict by user, filter catalog, private catalog, catalog management service, public catalog
 
@@ -38,6 +38,13 @@ ibmcloud plugin install catalogs-management
 ```
 {: codeblock}
 {: cli}
+
+To customize catalogs by using Terraform, make sure that you have completed the following:
+{: terraform}
+
+- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create an authorization between services by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+{: terraform}
 
 ## Creating a private catalog with all products included by using the console
 {: #catalog-all-ui}
@@ -302,14 +309,6 @@ You can [restore a private catalog](/docs/account?topic=account-resource-reclama
 ## Creating a private catalog by using Terraform
 {: #catalog-all-terraform}
 {: terraform}
-
-Before you can create a private catalog by using Terraform by using Terraform, make sure that you have completed the following:
-
-- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-- Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create an authorization between services by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
-
-You cannot customize the public catalog and your private catalogs to make specific solutions available to users in your account by using Terraform. To customize the public catalog and your private catalogs, switch to the UI, CLI, or API steps.
-{: important}
 
 Use the following steps to create a private catalog:
 
