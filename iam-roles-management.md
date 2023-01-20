@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2020, 2021
+  years: 2020, 2023
 
-lastupdated: "2021-09-22"
+lastupdated: "2023-01-20"
 
 keywords: custom access, custom role, create a role, combine actions
 
@@ -63,3 +63,52 @@ If a service removes an action that you use in a custom role, the custom role is
 {: note}
 
 If you plan to delete a custom role because it is no longer needed, you must be assigned the Administrator role on the Role management service. Deleting a custom role automatically updates access for any users, access groups, or service IDs assigned access by using that role to remove it from any existing policies.
+
+## Creating custom roles by using Terraform
+{: #custom-access-roles-terraform}
+{: terraform}
+
+Before you can create custom roles by using Terraform, make sure that you have completed the following:
+
+- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create an authorization between services by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
+Use the following steps to create custom roles:
+
+1. Create an argument in your `main.tf` file. The following example creates a custom role by using the `ibm_iam_custom_role` resource, where `name` is a unique name to identify the custom role. You must add at least one service-defined `action` to successfully create the new role.
+
+   ```terraform
+   resource "ibm_iam_custom_role" "customrole" {
+    name         = "Role1"
+    display_name = "Role1"
+    description  = "This is a custom role"
+    service = "kms"
+    actions      = ["kms.secrets.rotate"]
+   }
+   ```
+   {: codeblock}
+
+   You can specify the name of the service for which you want to create the custom role on the `service` option. For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_custom_role){: external} page.
+
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
+
+   ```terraform
+   terraform init
+   ```
+   {: pre}
+
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
+
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
+
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
+
+   1. Run `terraform apply` to create the resources that are defined in the plan.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}

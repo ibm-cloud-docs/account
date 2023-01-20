@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2022
-lastupdated: "2022-03-30"
+  years: 2015, 2023
+lastupdated: "2023-01-20"
 
 keywords: service ID, service ID API key, lock service ID API key, delete service ID API key
 
@@ -121,7 +121,7 @@ ibmcloud iam service-api-key-lock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|SER
 **Command options**:
 
 APIKEY_NAME
-:   The name of the API key, exclusive with the APIKEY_UUID option. Required. 
+:   The name of the API key, exclusive with the APIKEY_UUID option. Required.
 
 APIKEY_UUID
 :   The UUID of the API key, exclusive with the APIKEY_NAME option. Required.
@@ -130,10 +130,10 @@ SERVICE_ID_NAME
 :   The name of the service ID, exclusive with the SERVICE_ID_UUID option. Required.
 
 SERVICE_ID_UUID
-:   The UUID of the service, exclusive with the SERVICE_ID_NAME option. Required. 
+:   The UUID of the service, exclusive with the SERVICE_ID_NAME option. Required.
 
 -f, --force
-:   Lock without confirmation. 
+:   Lock without confirmation.
 
 **Examples**:
 
@@ -264,7 +264,7 @@ apikeyID = *apiKey.ID
 {: #update_service_key-api}
 {: api}
 
-To edit an API key for a service ID by using the API, call the [IAM Identity Service API](https://cloud.ibm.com/apidocs/iam-identity-token-api?code=go#update-api-key){: external} as shown in the following example: 
+To edit an API key for a service ID by using the API, call the [IAM Identity Service API](https://cloud.ibm.com/apidocs/iam-identity-token-api?code=go#update-api-key){: external} as shown in the following example:
 
 ```bash
 curl -X PUT 'https://iam.cloud.ibm.com/v1/apikeys/APIKEY_UNIQUE_ID' -H 'Authorization: Bearer TOKEN' -H 'If-Match: <value of etag header from GET request>' -H 'Content-Type: application/json' -d '{
@@ -343,7 +343,7 @@ For API keys that represent the identity of the service ID, you can prevent the 
 {: #lock-service-key-api}
 {: api}
 
-To lock an API key for a service ID by using the API, call the [IAM Identity Service API](https://cloud.ibm.com/apidocs/iam-identity-token-api?code=go#lock-api-key){: external} as shown in the following example: 
+To lock an API key for a service ID by using the API, call the [IAM Identity Service API](https://cloud.ibm.com/apidocs/iam-identity-token-api?code=go#lock-api-key){: external} as shown in the following example:
 
 ```bash
 curl -X POST 'https://iam.cloud.ibm.com/v1/apikeys/APIKEY_UNIQUE_ID/lock' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json'
@@ -458,7 +458,7 @@ if err != nil {
 {: #delete_service_key-api}
 {: api}
 
-To delete an API key by for a service ID using the API, call the [IAM Identity Service API](https://cloud.ibm.com/apidocs/iam-identity-token-api#delete-api-key){: external} as shown in the following example: 
+To delete an API key by for a service ID using the API, call the [IAM Identity Service API](https://cloud.ibm.com/apidocs/iam-identity-token-api#delete-api-key){: external} as shown in the following example:
 
 ```bash
 curl -X DELETE 'https://iam.cloud.ibm.com/v1/apikeys/APIKEY_UNIQUE_ID' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json'
@@ -515,3 +515,147 @@ if err != nil {
 ```
 {: codeblock}
 {: go}
+
+## Before you begin
+{: #create_service_key-terraform-prereq}
+{: terraform}
+
+Before you can manage service ID API keys by using Terraform, make sure that you have completed the following:
+
+- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create an authorization between services by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
+## Creating an API key for a service ID by using Terraform
+{: #create_service_key-terraform}
+{: terraform}
+
+Use the following steps to create an API key for a service ID by using Terraform.
+
+1. Create an argument in your `main.tf` file. The following example creates an API key for a service ID by using the `ibm_iam_service_api_key` resource, where `name` is a unique name to identify the service API key. You must need an IAM ID of the service in order to complete the task.
+
+   ```terraform
+   resource "ibm_iam_service_id" "serviceID" {
+    name = "servicetest"
+   }
+
+   resource "ibm_iam_service_api_key" "testacc_apiKey" {
+    name = "testapikey"
+    iam_service_id = ibm_iam_service_id.serviceID.iam_id
+   }
+   ```
+   {: codeblock}
+
+   For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_service_api_key){: external} page.
+
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
+
+   ```terraform
+   terraform init
+   ```
+   {: pre}
+
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
+
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
+
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
+
+   1. Run `terraform apply` to create the resources that are defined in the plan.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}
+
+## Updating an API key for a service ID by using Terraform
+{: #update_service_key-terraform}
+{: terraform}
+
+Use the following steps to update an API key for a service ID by using Terraform:
+
+1. Create an argument in your `main.tf` file. You can update the API key for a service ID by adding new values to the `name` and `iam_service_id` options in the following example.
+
+   ```terraform
+   resource "ibm_iam_service_id" "serviceID" {
+    name = "servicetest"
+   }
+
+   resource "ibm_iam_service_api_key" "testacc_apiKey" {
+    name = "testapikey"
+    iam_service_id = ibm_iam_service_id.serviceID.iam_id
+   }
+   ```
+   {: codeblock}
+
+   For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_service_api_key){: external} page.
+
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
+
+   ```terraform
+   terraform init
+   ```
+   {: pre}
+
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
+
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
+
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
+
+   1. Run `terraform apply` to create the resources that are defined in the plan.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}
+
+## Deleting an API key for a service ID by using Terraform
+{: #delete_service_key-terraform}
+{: terraform}
+
+You must have created the API key for a service ID using the Terraform file. Use the following steps to delete an API key for a service ID by using Terraform.
+
+1. The following example shows how to delete the API key for a service ID.
+
+   ```terraform
+   resource "ibm_iam_service_id" "serviceID" {
+    name = "servicetest"
+   }
+
+   resource "ibm_iam_service_api_key" "testacc_apiKey" {
+    name = "testapikey"
+    iam_service_id = ibm_iam_service_id.serviceID.iam_id
+   }
+   ```
+   {: codeblock}
+
+   For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_service_api_key){: external} page.
+
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
+
+   ```terraform
+   terraform init
+   ```
+   {: pre}
+
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
+
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
+
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
+
+   1. Run `terraform apply` to create the resources that are defined in the plan.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}
