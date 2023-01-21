@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-01-20"
+lastupdated: "2023-01-21"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -6330,31 +6330,33 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
-| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
-| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 130. Service roles - Project" caption-side="top"}
-{: #service-roles-table130}
-{: tab-title="Service roles"}
+{: caption="Table 130. Platform roles - Project" caption-side="top"}
+{: #platform-roles-table130}
+{: tab-title="Platform roles"}
 {: tab-group="project"}
 {: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `project.config.install` | The ability to install a project config. | Manager |
-| `project.config.uninstall` | The ability to uninstall a project config. | Manager |
-| `project.config.plan` | The ability to plan a project config. | Manager, Writer |
-| `project.notifications.write` | The ability to send project notifications. | Manager, Writer |
-| `project.notifications.read` | The ability to read project notifications. | Manager, Reader, Writer |
-| `project.status.pr-register` | The ability to register a pull request on a project. | Manager |
-| `project.status.write` | The ability to update project status. | Manager, Writer |
-| `project.status.pr-deregister` | The ability to deregister a pull request. | Manager |
-| `project.status.pr-update` | The ability to update a pull request. | Manager |
-| `project.computed-status.write` | The ability to update project computed statuses. | Manager, Writer |
-| `project.status.pr-plan` | The ability to run plan for a pull request. | Manager |
-| `project.notifications.delete` | The ability to delete project notifications. | Manager |
+| `project.config.install` | The ability to install a project config. | Administrator, Editor |
+| `project.config.uninstall` | The ability to uninstall a project config. | Administrator, Editor |
+| `project.config.plan` | The ability to plan a project config. | Administrator, Editor, Operator |
+| `project.notifications.write` | The ability to send project notifications. | Administrator |
+| `project.notifications.read` | The ability to read project notifications. | Administrator, Editor, Operator, Viewer |
+| `project.status.pr-register` | The ability to register a pull request on a project. | Administrator, Editor, Operator |
+| `project.status.write` | The ability to update project status. | Administrator |
+| `project.status.pr-deregister` | The ability to deregister a pull request. | Administrator, Editor, Operator |
+| `project.status.pr-update` | The ability to update a pull request. | Administrator, Editor, Operator |
+| `project.computed-status.write` | The ability to update project computed statuses. | Administrator |
+| `project.status.pr-plan` | The ability to run plan for a pull request. | Administrator |
+| `project.webhook.pulsar` | The ability to call project webhooks. | Administrator |
+| `project.notifications.delete` | The ability to delete project notifications. | Administrator |
 {: caption="Table 130. Service actions - Project" caption-side="top"}
 {: #actions-table130}
 {: tab-title="Actions"}
