@@ -25,6 +25,7 @@ Restricting the ability to create API keys makes sense if you want users in your
 
 ## Enabling the API key creation setting
 {: #allow-all-api-create}
+{: ui}
 
 To turn on the setting to restrict users from creating user API keys, you must have the following assigned access:
 
@@ -100,6 +101,7 @@ Now that the setting is enabled to restrict users from creating API keys, you ca
 
 ## Assigning access to create API keys with restrictions enabled
 {: #restrict-api-create-access}
+{: ui}
 
 If the API key creation setting is enabled, only users, including the account owner, assigned the `User API key creator` role on the IAM Identity Service can create API keys.
 

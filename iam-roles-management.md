@@ -4,7 +4,7 @@ copyright:
 
   years: 2020, 2023
 
-lastupdated: "2023-01-20"
+lastupdated: "2023-01-24"
 
 keywords: custom access, custom role, create a role, combine actions
 
@@ -39,6 +39,7 @@ Anyone can view the available roles in the account on Roles page, but to create,
 
 ## Creating custom roles
 {: #custom-access-roles}
+{: ui}
 
 You can create new roles that are scoped to single services. This means that you can't combine actions for two different services in a custom role, but you can combine as many actions that you want into a new role for a single service. After you create a custom role with a name of your choosing, anyone in the account who can assign access to a particular service can use that role when assigning access.
 

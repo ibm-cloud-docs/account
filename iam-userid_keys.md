@@ -260,6 +260,7 @@ fmt.Println(string(b))
 
 ## Locking an API key
 {: #lock_user_key}
+{: ui}
 
 For platform API keys that represent your user identity you can prevent the API key from being deleted by locking it. A locked API key is indicated by the **Locked** icon ![Locked icon](images/locked.svg "Locked").
 
