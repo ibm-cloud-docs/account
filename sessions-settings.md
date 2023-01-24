@@ -4,7 +4,7 @@ copyright:
 
   years: 2021, 2023
 
-lastupdated: "2023-01-18"
+lastupdated: "2023-01-24"
 
 keywords: user session, inactivity, sign out, concurrent, login session, trusted profiles
 
@@ -64,7 +64,7 @@ An active session is how long a user is continuously working in their account. H
 
 To update your user's active sessions settings by using terraform, complete the following steps:
 
-1. In your Terraform configuration `main.tf` file, find the Terraform code that you used to create the `iam_account_settings_instance`.
+1. Create an argument in your `main.tf` file. The following example sets the duration of an active session by using the `ibm_iam_account_settings` and `iam_account_settings_instance` resources.
 1. Enter the period of time in seconds in which you want a session to invalidate due to inactivity. Supported valid values are
    * Any whole number between between 900 and 7200.
    * Use `NOT_SET` to unset account setting and use service default.
@@ -91,6 +91,7 @@ To update your user's active sessions settings by using terraform, complete the 
       terraform apply
       ```
       {: pre}
+
 
 For more information, see the [Terraform documentation](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_account_settings#allowed_ip_addresses).
 
@@ -119,7 +120,7 @@ An inactive session is when the user hasn't completed any requests that send a t
 
 To update your user's sign out due to inactivity duration by using terraform, complete the following steps:
 
-1. In your Terraform configuration file, find the Terraform code that you used to create the `iam_account_settings_instance`.
+1. Create an argument in your `main.tf` file. The following example sets the inactive sign out by using the `ibm_iam_account_settings` and `iam_account_settings_instance` resources.
 1. Enter the period of time in seconds in which you want a session to invalidate due to inactivity. Supported valid values are
    * Any whole number between between 900 and 7200.
    * Use `NOT_SET` to unset account setting and use service default.
@@ -168,7 +169,7 @@ You can choose the maximum number of concurrent sessions that are allowed for yo
 
 To update your user's allowed number of concurrent sessions by using terraform, complete the following steps:
 
-1. In your Terraform configuration file, find the Terraform code that you used to create the `iam_account_settings_instance`.
+1. Create an argument in your `main.tf` file. The following example sets the number of allowed concurrent sessions by using the `ibm_iam_account_settings` and `iam_account_settings_instance` resources.
 2. Enter the period of time in seconds in which you want a session to invalidate due to inactivity. Supported valid values are
    * Any whole number greater than '0'.
    * Use `NOT_SET` to unset account setting and use service default.
