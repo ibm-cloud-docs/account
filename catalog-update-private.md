@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-08-02"
+  years: 2020, 2023
+lastupdated: "2023-01-20"
 
 keywords: catalog, private catalog, update, private catalog product, update version, versions
 
@@ -12,11 +12,10 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-
 # Updating your software
 {: #update-private}
 
-To update the software that's in your private catalog, you can add a new version or update and republish an existing version. 
+To update the software that's in your private catalog, you can add a new version or update and republish an existing version.
 {: shortdesc}
 
 ## Before you begin
@@ -24,16 +23,23 @@ To update the software that's in your private catalog, you can add a new version
 
 To complete this task, you need to be assigned the editor role on the catalog management service. For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
 
+To update your software by using Terraform, make sure that you have completed the following:
+{: terraform}
+
+- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you add arguments by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+{: terraform}
+
 ## Update an existing version by using the console
 {: #update-editor-offering}
 {: ui}
 
 The following steps walk through an example of making updates to a product's readme file to show the complete process for updating an existing software version.
 
-1. In the {{site.data.keyword.cloud}} console, go to **Manage** > **Catalogs** > **Private catalogs**, and select your catalog from the list. 
+1. In the {{site.data.keyword.cloud}} console, go to **Manage** > **Catalogs** > **Private catalogs**, and select your catalog from the list.
 1. Click the name of your software product.
-1. Select **Private products** to navigate to the list of products that are in your private catalog. 
-1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg "Actions"), and select **Edit**.  
+1. Select **Private products** to navigate to the list of products that are in your private catalog.
+1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg "Actions"), and select **Edit**.
 1. Click the Edit readme tab.
 1. Click the **Edit** icon ![Edit icon](../icons/icon_write.svg "Edit"), add a new line of text to the Introduction section, and click **Update**.
 1. Click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg "Actions"), and select **Merge changes** to publish the updated version to your account.
@@ -42,29 +48,29 @@ The following steps walk through an example of making updates to a product's rea
 {: #update-version-cli}
 {: cli}
 
-Complete the following steps to create a draft version, update it, and merge the changes to the current version of your software.  
+Complete the following steps to create a draft version, update it, and merge the changes to the current version of your software.
 
    You need the version locator for your software. To find it, run the **`ibmcloud catalog offering list --catalog "your-private-catalog"`** command and search for the existing version number.
    {: important}
-    
+
 1. Create a draft version of your software.
     ```bash
     ibmcloud catalog offering create-draft --version-locator <VERSION_LOCATOR>
     ```
     {: codeblock}
-    
+
 1. Set another category.
     ```bash
     ibmcloud catalog offering add-category --catalog "your-private-catalog" --offering "your-software" --category "category-type"
     ```
     {: codeblock}
-    
-1. Merge the draft update to your software. This action merges the update to the version of your software that's published in your account.   
+
+1. Merge the draft update to your software. This action merges the update to the version of your software that's published in your account.
     ```bash
     ibmcloud catalog offering merge-draft --version-locator **<VERSION_LOCATOR_OF_DRAFT_VERSION>**
     ```
     {: codeblock}
-    
+
 1.  Search for the software in the {{site.data.keyword.cloud_notm}} catalog.
     ```bash
     ibmcloud catalog get --public | grep your-software
@@ -133,13 +139,9 @@ fmt.Println(response)
 {: #update-editor-terraform}
 {: terraform}
 
-You can update an existing version of your software by using Terraform. 
+Use the following steps to update an existing version of your software by using Terraform.
 
-1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-
-2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to update your software version by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
-
-   The following example accesses the software version by using the `cm_version` resource, where `offering_id` identifies the software. 
+1. Create an argument in your `main.tf` file. The following example accesses the software version by using the `cm_version` resource, where `offering_id` identifies the software.
 
    ```terraform
    resource "cm_version" "cm_version" {
@@ -151,24 +153,26 @@ You can update an existing version of your software by using Terraform.
    {: codeblock}
 
    For more information, see the argument reference details on the [Terraform Catalog Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/cm_version){: external} page.
-  
-3. Initialize the Terraform CLI.
+
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
 
    ```terraform
    terraform init
    ```
-   {: codeblock}
-   
-4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to update the version.
+   {: pre}
 
-   ```terraform
-   terraform plan
-   ```
-   {: codeblock}
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
 
-5. Update the version.
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
 
-   ```terraform
-   terraform apply
-   ```
-   {: codeblock}
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
+
+   1. Run `terraform apply` to create the resources that are defined in the plan.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}

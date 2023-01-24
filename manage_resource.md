@@ -4,9 +4,9 @@
 
 copyright:
 
-  years: 2019, 2022
+  years: 2019, 2023
 
-lastupdated: "2022-03-22"
+lastupdated: "2023-01-18"
 
 keywords: resource, account resources, create resource, access to create resources
 
@@ -215,13 +215,14 @@ You can install software only through the console or CLI. To see the steps, swit
 {: #create-resource-instance-terraform}
 {: terraform}
 
+Before you can create new resource instances by using Terraform, make sure that you have completed the following:
+
+- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you add arguments by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
 You can create new resource instances by using Terraform.
 
-1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-
-2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create new resource instances by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
-
-   The following example creates a new resource instance by using the `ibm_resource_instance` resource, where `name` is a unique, descriptive name to identify the resource instance.
+1. Create an argument in your `main.tf` file. The following example creates a new resource instance by using the `ibm_resource_instance` resource, where `name` is a unique, descriptive name to identify the resource instance.
 
    ```terraform
    data "ibm_resource_group" "group" {
@@ -248,22 +249,25 @@ You can create new resource instances by using Terraform.
 
    You can specify `tags` associated with the resource instance. For more information, see the argument reference details on the [Terraform Resource Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_instance){: external} page.
 
-3. Initialize the Terraform CLI.
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
 
    ```terraform
    terraform init
    ```
    {: pre}
 
-4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create a resource instance.
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
 
-   ```terraform
-   terraform plan
-   ```
-   {: pre}
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
 
-5. Create the resource instance.
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
 
-   ```terraform
-   terraform apply
-   ```
+   1. Run `terraform apply` to create the resources that are defined in the plan.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}

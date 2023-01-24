@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018, 2022
+  years: 2018, 2023
 
-lastupdated: "2022-06-13"
+lastupdated: "2023-01-18"
 
 keywords: dynamic rules,access groups,specific identity attributes,identity provider,federated ID,
 
@@ -29,7 +29,7 @@ Only users who are already invited to the account can be mapped to access groups
 {: #setup_rules}
 {: ui}
 
-Dynamic rules are created by setting conditions that must be matched by the data that is configured within the IdP and passed in with a user's federated ID during login. You can add more than one condition for a rule. All conditions set in the rule must be met for a user to be added to an access group. 
+Dynamic rules are created by setting conditions that must be matched by the data that is configured within the IdP and passed in with a user's federated ID during login. You can add more than one condition for a rule. All conditions set in the rule must be met for a user to be added to an access group.
 
 To create a rule, follow these steps:
 
@@ -39,7 +39,7 @@ To create a rule, follow these steps:
 4. Click **Add rule**.
 5. Enter the information from your IdP that is dynamically provided for you on the Add rule page. The following list provides details for each required field.
 
-You can think of an access group rule as a key:value pair. The key is what you add in the `Add users when` field, and the value is what you enter in the `Values` field. 
+You can think of an access group rule as a key:value pair. The key is what you add in the `Add users when` field, and the value is what you enter in the `Values` field.
 {: tip}
 
 For more information about the fields that are used to create dynamic rules, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
@@ -48,15 +48,16 @@ For more information about the fields that are used to create dynamic rules, see
 {: #setup_rules_terraform}
 {: terraform}
 
-Dynamic rules are created by setting conditions that must be matched by the data that is configured within the IdP and passed in with a user's federated ID during login. You can add more than one condition for a rule. All conditions set in the rule must be met for a user to be added to an access group. 
+Before you can set up rules by using Terraform, make sure that you have completed the following:
+
+- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you add arguments by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
+Dynamic rules are created by setting conditions that must be matched by the data that is configured within the IdP and passed in with a user's federated ID during login. You can add more than one condition for a rule. All conditions set in the rule must be met for a user to be added to an access group.
 
 To create a rule by using Terraform, follow these steps:
 
-1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-
-2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create dynamic rules for access groups by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
-
-   The following example creates a new dynamic rule for an access group by using the `ibm_iam_access_group_dynamic_rule` resource, where `name` is a unique name to identify the dynamic rule. 
+1. Create an argument in your `main.tf` file. The following example creates a new dynamic rule for an access group by using the `ibm_iam_access_group_dynamic_rule` resource, where `name` is a unique name to identify the dynamic rule.
 
    ```terraform
     resource "ibm_iam_access_group_dynamic_rule" "rule1" {
@@ -72,28 +73,31 @@ To create a rule by using Terraform, follow these steps:
     }
    ```
    {: codeblock}
-   
+
    For more information, see the argument reference details in the [Terraform documentation](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_access_group_dynamic_rule) page.
-3. Initialize the Terraform CLI.
+
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
 
    ```terraform
    terraform init
    ```
    {: pre}
-   
-4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the dynamic rule.
 
-   ```terraform
-   terraform plan
-   ```
-   {: pre}
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
 
-5. Create the dynamic rule.
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
 
-   ```terraform
-   terraform apply
-   ```
-   {: pre}
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
+
+   1. Run `terraform apply` to create the resources that are defined in the plan.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}
 
 For more information about the fields that are used to create dynamic rules, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
 
@@ -104,13 +108,13 @@ For more information about the fields that are used to create dynamic rules, see
 
 You can view the users that are added to an access group by using dynamic rules. To view dynamic members of access groups, go to **Manage** > **Access (IAM)** > **Access groups** in the {{site.data.keyword.cloud_notm}} console. Select an access group and click **Users**. Dynamically added users are indicated by the type `Dynamic`.
 
-The following users will not appear in the table: 
+The following users will not appear in the table:
 - Dynamically added users who are not logged in yet
 - Dynamically added users whose session expired
 
 Dynamic users that are logged out but whose sessions are still valid continue to appear in the table until their sessions expire.
 
-You can't remove a dynamic user manually. To remove a dynamic user, adjust your dynamic rules. 
+You can't remove a dynamic user manually. To remove a dynamic user, adjust your dynamic rules.
 {: note}
 
 ### Viewing a user's dynamic membership
@@ -118,8 +122,7 @@ You can't remove a dynamic user manually. To remove a dynamic user, adjust your 
 
 You can also view a list of access groups that a user is added to based on dynamic rules by completing the following steps:
 
-1. Go to **Manage** > **Access (IAM)** > **Users** in the {{site.data.keyword.cloud_notm}} console. 
-1. Click on a user. 
-1. Click **Access**. 
-1. The access groups that a user is a dynamic member of is indicated by the type `Dynamic`. 
-
+1. Go to **Manage** > **Access (IAM)** > **Users** in the {{site.data.keyword.cloud_notm}} console.
+1. Click on a user.
+1. Click **Access**.
+1. The access groups that a user is a dynamic member of is indicated by the type `Dynamic`.

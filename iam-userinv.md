@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2015, 2022
+  years: 2015, 2023
 
-lastupdated: "2022-06-22"
+lastupdated: "2023-01-20"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -45,7 +45,7 @@ On this page, you can also add users to access groups. In the “Add users to ac
 
 If you need to assign access to classic infrastructure permissions or Cloud Foundry resources, you can do this in the “Assign users additional access section”, which is found just below the access group section. Click on the additional access you would like to assign (clicks Classic infrastructure tile, selects Super user radio button), and then click on the blue “Add” button (then, clicks "Invite" button).
 
-You can manage existing users and their access from the users menu. Click on “Users” in the Access (IAM) left menu. From here, you can see all of the users in your account. 
+You can manage existing users and their access from the users menu. Click on “Users” in the Access (IAM) left menu. From here, you can see all of the users in your account.
 
 To manage access for existing users, simply click on the user’s name and you will have access to their user details, access groups, access policies, classic infrastructure, and Cloud Foundry access. From here, you can make changes to access permissions as needed (Clicks "Assign access" button from the Access policies tab to show how additional IAM access can be assigned for the selected user).
 
@@ -62,9 +62,17 @@ To invite users and manage outstanding invitations, you must have at least one o
 Depending on your access level, you can invite new users and assign all or just some types of access. For example, if you're not the account owner, but you're a Cloud Foundry organization manager, you can invite users and assign only Cloud Foundry access.
 {: note}
 
+Before you can invite users by using Terraform, make sure that you have completed the following:
+{: terraform}
+
+- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you add arguments by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+{: terraform}
+
+
 ## Inviting users in the console
 {: #invitations}
-{: help} 
+{: help}
 {: support}
 {: ui}
 
@@ -79,13 +87,13 @@ To invite users, complete the following steps:
 
 1. Add one or more of the access options that you manage. You must assign at least one access option. For any access options that you don't add and configure, the default value of **No access** is assigned. Depending on the options that you are authorized to manage, you can assign the following types of access:
 
-   * Add users to access groups. Click **Add** for each access group that you want the users to belong to. 
+   * Add users to access groups. Click **Add** for each access group that you want the users to belong to.
    * Assign users individual IAM access policies, Cloud Foundry roles, or classic infrastructure permissions.
       * Select **Cloud Foundry**, choose an organization, then select a region to select a specific space, and assign a space role. An organization and space role are both required to add the access assignment to the invite.
       * Select **Classic infrastructure**, and then choose from the three permission sets.
       * Select a group of services like **All Identity and Access enabled services**, **All Account management services**, and **All IAM Account Management services**, or a specific service. Next, you can scope the access to the entire account or just one resource group. Then, select all roles that apply. To view what actions are mapped to each role, click the numbers listed next to each role.
-      
-         Some services support the use of advanced operators to grant access to resources that satisfy specific naming conventions. See [Assigning access by using wildcard policies](/docs/account?topic=account-wildcard) for more information. 
+
+         Some services support the use of advanced operators to grant access to resources that satisfy specific naming conventions. See [Assigning access by using wildcard policies](/docs/account?topic=account-wildcard) for more information.
 
       * Select **Account management**, and then choose from the all account management services option or select a specific service. Then, select all roles that apply.
 1. Select **Add** to save the access assignment to the invitation.
@@ -100,15 +108,15 @@ You can cancel an invitation for any users that are shown in a Processing or Pen
 
 Any user with the following permissions can add a VPN-only user:
 
-- For Cloud Foundry, you must have the Manager organization role. 
+- For Cloud Foundry, you must have the Manager organization role.
 - For classic infrastructure, you must have the Manage Users permission on the account.
-- For IAM access, you must have the Administrator or Editor role on the user management account management service. 
+- For IAM access, you must have the Administrator or Editor role on the user management account management service.
 
 To add a VPN-only user, use the following steps:
 
 1. On the Users page, click **Add VPN-only user**.
 1. Enter the personal information details for the user.
-1. Click **Save**.   
+1. Click **Save**.
 
 ## Inviting users by using the CLI
 {: #cli-invite}
@@ -121,7 +129,7 @@ ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE,
 ```
 {: codeblock}
 
-By using the CLI, you can choose to assign Cloud Foundry access or no access and work on assigning access later. For more information about the command parameters, see [**`ibmcloud account user-invite`**](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_user_invite). 
+By using the CLI, you can choose to assign Cloud Foundry access or no access and work on assigning access later. For more information about the command parameters, see [**`ibmcloud account user-invite`**](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_user_invite).
 
 ## Inviting users by using the API
 {: #api-invite}
@@ -348,13 +356,9 @@ You can assign access to a group of services. To assign access to **All Identity
 {: #terraform-invite}
 {: terraform}
 
-You can invite users to your {{site.data.keyword.cloud_notm}} account by using Terraform. 
+You can invite users to your {{site.data.keyword.cloud_notm}} account by using Terraform.
 
-1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-
-1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to invite users by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
-
-   The following example invites users by using the `ibm_iam_user_invite` resource, where `users` are the list of user email IDs to invite. 
+1. Create an argument in your `main.tf` file. The following example invites users by using the `ibm_iam_user_invite` resource, where `users` are the list of user email IDs to invite.
 
    ```terraform
    resource "ibm_iam_user_invite" "invite_user" {
@@ -364,26 +368,22 @@ You can invite users to your {{site.data.keyword.cloud_notm}} account by using T
    {: codeblock}
 
    For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_user_invite){: external} page.
-  
-1. Initialize the Terraform CLI.
 
-   ```terraform
-   terraform init
-   ```
-   {: pre}
-   
-1. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to invite users.
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
 
-   ```terraform
-   terraform plan
-   ```
-   {: pre}
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
 
-1. Invite the users.
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
 
-   ```terraform
-   terraform apply
-   ```
+   1. Run `terraform apply` to create the resources that are defined in the plan.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}
 
 
 ## Canceling or resending pending invitations
@@ -395,7 +395,7 @@ After inviting new users to join your account, {{site.data.keyword.cloud_notm}} 
 The invitation expires after 30 days. New users to {{site.data.keyword.cloud_notm}} can accept an invitation only by using the invitation link that they received through email.
 {: note}
 
-You can cancel an invitation for any users that are shown in a Processing or Pending state in the Status column of the [Users page](/iam/users). If an invited user did not receive an invitation, you can resend the invitation to any user in a Pending state. 
+You can cancel an invitation for any users that are shown in a Processing or Pending state in the Status column of the [Users page](/iam/users). If an invited user did not receive an invitation, you can resend the invitation to any user in a Pending state.
 
 1. Go to the [Users page](/iam/users).
 1. Locate the row for the user in `Processing` or `Pending` state.
@@ -434,4 +434,3 @@ curl -X POST \
   }
 ```
 {: codeblock}
-

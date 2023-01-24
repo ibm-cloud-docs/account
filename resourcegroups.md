@@ -1,11 +1,9 @@
 ---
 
-
-
 copyright:
 
-  years: 2017, 2022
-lastupdated: "2022-10-05"
+  years: 2017, 2023
+lastupdated: "2023-01-18"
 
 keywords: resource group, account resources, users access to resource groups, create resource group, create resource group in the console, create resource group CLI, create resource group API, create resource group Terraform
 
@@ -140,17 +138,23 @@ fmt.Println(string(b))
 {: codeblock}
 {: go}
 
+## Before you begin
+{: #rgs-terraform-prereq}
+{: terraform}
+
+Before you can manage resource groups by using Terraform, make sure that you have completed the following:
+
+- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you add arguments by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
+
 ## Creating a resource group by using Terraform
 {: #rgs_terraform}
 {: terraform}
 
-You can create a resource group by using Terraform.
+Use the following steps to create a resource group by using Terraform:
 
-1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-
-2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create a resource group by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
-
-   The following example creates a resource group by using the `ibm_resource_group` resource, where `name` is a unique name to identify the resource group.
+1. Create an argument in your `main.tf` file. The following example creates a resource group by using the `ibm_resource_group` resource, where `name` is a unique name to identify the resource group.
 
    ```terraform
    resource "ibm_resource_group" "resourceGroup" {
@@ -161,26 +165,29 @@ You can create a resource group by using Terraform.
 
    You can specify `tags` associated with the resource group instance. For more information, see the argument reference details on the [Terraform Resource Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_group){: external} page.
 
-3. Initialize the Terraform CLI.
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
 
    ```terraform
    terraform init
    ```
    {: pre}
 
-4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the resource group.
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
 
-   ```terraform
-   terraform plan
-   ```
-   {: pre}
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
 
-5. Create the resource group.
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
 
-   ```terraform
-   terraform apply
-   ```
-   {: pre}
+   1. Run `terraform apply` to create the resources that are defined in the plan.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}
+
 
 ## Renaming a resource group
 {: #rename_rgs}
@@ -313,21 +320,21 @@ You can rename a resource group by using Terraform.
 
 3. Initialize the Terraform CLI.
 
-   ```bash
+   ```terraform
    terraform init
    ```
    {: pre}
 
-4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to rename the resource group.
+4. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions. The Terraform execution plan summarizes all the actions that need to be run to rename the resource group.
 
-   ```bash
+   ```terraform
    terraform plan
    ```
    {: pre}
 
-5. Rename the resource group.
+5. Run `terraform apply` to create the resources that are defined in the plan.
 
-   ```bash
+   ```terraform
    terraform apply
    ```
    {: pre}
