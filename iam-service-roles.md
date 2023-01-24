@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-01-23"
+lastupdated: "2023-01-24"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -642,6 +642,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloud-object-storage.bucket.delete_website` | Delete bucket website configuration. | Manager, Writer |
 | `cloud-object-storage.bucket.get_versioning` | Unsupported operation - used for S3 API compatibility only. | Manager, Reader, Writer |
 | `cloud-object-storage.bucket.put_versioning` | Unsupported operation - used for S3 API compatibility only. | Manager, Writer |
+| `cloud-object-storage.bucket.get_object_lock_configuration` | Get Object Lock Configuration from the bucket. | Manager, Reader, Writer |
 | `cloud-object-storage.bucket.get_fasp_connection_info` | View Aspera FASP connection information. | Manager, Reader, Writer |
 | `cloud-object-storage.account.delete_fasp_connection_info` | Delete Aspera FASP connection information. | Manager, Writer |
 | `cloud-object-storage.bucket.get_location` | View the location and storage class of a bucket. | Content Reader, Manager, Notifications Manager, Reader, Writer |
