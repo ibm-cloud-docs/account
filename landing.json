@@ -1,6 +1,6 @@
 {
     "title": "Managing your account, resources, and access docs",
-    "lastupdated": "2022-10-07",
+    "lastupdated": "2023-01-25",
     "introduction": "Leverage the interacting components and systems in your account for resource, user, and access management. Get started by setting up your IBM cloud account, learn about setting up an enterprise, or explore assigning access to resources quickly with IBM Cloud Identity and Access Management (IAM).",
     "section_devtools": {
       "api": "/docs?tab=api-docs&subCategory=account&category=platform_services",
@@ -66,24 +66,19 @@
       "view_more": "/docs/overview?topic=overview-whatsnew",
       "tiles": [
         {
+          "date": "25 January 2023",
+          "title": "Time-based conditions in IAM access policies",
+          "description": "{{site.data.keyword.Bluemix_notm}} IAM is excited to give customers the ability to set access controls based on a specified time and date. You can now create policies that grant employees access to a resource during only their working hours, or grant automated processes temporary access for a specified duration. Implementing such limitations helps you to apply the principle of least privilege for assigning access and reduces the opportunity for attack in the event of a security breach."
+        },
+        {
+          "date": "25 January 2023",
+          "title": "IAM Policy Management API V2 release",
+          "description": "A new version (v2) of the IAM Policy Management API is now available. This version adds a new JSON schema to support a conditional policy construct and several time-based comparison operators. These operators provide the capability to restrict access based on time and date. With time-based access control, customers can establish granular policy enforcement based on a specified time period."
+        },
+        {
           "date": "07 October 2022",
           "title": "Setting an alternative account owner",
           "description": "As the owner of an account with classic infrastructure, you can set a trusted profile as the alternative account owner. An alternative account owner ensures that you always have a secure way to manage account ownership if your account owner leaves your organization or isn't available."
-        },
-        {
-          "date": "04 October 2022",
-          "title": "Catalog integration with Virtual Private Cloud custom images",
-          "description": "ISV Partners and IBM Cloud customers can now import custom VPC images directly to their account or enterprise, or sell on the IBM Cloud catalog without depending on Terraform."
-        },
-        {
-          "date": "29 September 2022",
-          "title": "Enabling IBM Cloud Event Notifications for the notification distribution list",
-          "description": "You can now easily add Event Notifications instances to the notification distribution list and receive account-wide IBM Cloud notifications. With Event Notifications, you can choose to deliver your notifications to different destinations, including email, SMS, or webhooks. When an event of interest occurs on the IBM Cloud platform and an event is generated, the notification distribution list communicates with a connected Event Notifications instance to forward a notification to the supported destination."
-        },
-        {
-          "date": "26 September 2022",
-          "title": "Identifying inactive policies",
-          "description": "To reduce the number of policies in your account and keep only the minimum access that is necessary for each user, you can now identify the infrequently used access policies on the Inactive policies page in the console. You can determine whether to remove the inactive policies, or in some cases, you might expect an infrequently used policy."
         }
       ]
     }

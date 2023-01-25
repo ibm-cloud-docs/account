@@ -96,6 +96,7 @@
                   - iam-cross-acct-restriction.md
                   - iam-account_management.md
                   - iam-wildcard.md
+                  - iam-time-based.md
                   - iam-public_access.md
                   - iam-mnginfra.md
                   - iam-migrated_permissions.md
@@ -331,6 +332,7 @@
               - link:
                   label: IAM Policy Management
                   href: https://{DomainName}/apidocs/iam-policy-management
+              - iam-policies-change-log.md
               - link:
                   label: IBM Clouod Open Service Broker
                   href: https://{DomainName}/apidocs/resource-controller/ibm-cloud-osb-api
