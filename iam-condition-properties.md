@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022
+  years: 2022, 2023
 
-lastupdated: "2022-05-12"
+lastupdated: "2023-01-25"
 
 keywords: trusted profile, dynamic rule, operators, rules, conditions, properties
 
@@ -18,7 +18,9 @@ subcollection: account
 # IAM condition properties
 {: #iam-condition-properties}
 
-Dynamic rules and trusted profiles both use conditional IAM statements that you specify to automatically add federated users to access groups or trusted profiles. When users log in with a federated ID, the data from the identity provider (IdP) dynamically maps them to an access group based on conditions that you set. For more information, see [Creating dynamic rules for access groups](/docs/account?topic=account-rules) and [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile). 
+Dynamic rules and trusted profiles both use conditional IAM statements that you specify to automatically add federated users to access groups or trusted profiles. When users log in with a federated ID, the data from the identity provider (IdP) dynamically maps them to an access group based on conditions that you set. For more information, see [Creating dynamic rules for access groups](/docs/account?topic=account-rules) and [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile).
+
+You can also assign conditional IAM access policies to designate temporary access to resources in your account or allow access to resources during specific time windows. For more information, see [Limiting access with time-based conditions](/docs/account?topic=account-iam-time-based) and review the section [Conditions in `/v2/policies` access policies](/docs/account?topic=account-iam-condition-properties&interface=ui#policy-condition-properties).
 
 ## Rule and profile details
 {: #general-details}
@@ -48,7 +50,7 @@ Comparator
 Values
 :   An attribute value that is used by the comparator to evaluate against the `Allow users when` attribute name.
 
-You can think of a dynamic rule or trusted profile condition as a key:value pair. The key is what you add in the `Allow users when` field, and the value is what you enter in the `Values` field. 
+You can think of a dynamic rule or trusted profile condition as a key:value pair. The key is what you add in the `Allow users when` field, and the value is what you enter in the `Values` field.
 {: tip}
 
 ## Available comparators for conditions
@@ -88,7 +90,7 @@ To establish trust with a compute resource in a trusted profile, you can use the
 {: #cr-kub-rhos}
 
 | {{site.data.keyword.cloud_notm}} console name | CLI and API name | Description         |
-|---------------------------------|---------------------------------|---------------------| 
+|---------------------------------|---------------------------------|---------------------|
 | Resource group ID      | `resource_group_id` | The ID of the resource group that contains this cluster. You can identify the resource group of a cluster by using its overview page in the IBM Cloud Console. |
 | Resource group name    | `resource_group_name` | The name of the resource group that contains this cluster. |
 | Service instance       | `service_instance`    | The ID of this cluster. You can retrieve this value from the cluster's overview page in the IBM Cloud Console as "Cluster ID" or using the IBM Cloud CLI. |
@@ -102,7 +104,7 @@ To establish trust with a compute resource in a trusted profile, you can use the
 {: #cr-vpc}
 
 | {{site.data.keyword.cloud_notm}} console name | CLI and API name | Description         |
-|---------------------------------|---------------------------------|---------------------| 
+|---------------------------------|---------------------------------|---------------------|
 | Resource group ID      | `resource_group_id`   | The ID of the resource group that contains this cluster. You can identify the resource group of a cluster by using its overview page in the IBM Cloud Console. |
 | Resource group name    | `resource_group_name` | The name of the resource group that contains this cluster. |
 | Resource ID            | `resource`            | The ID of the virtual server for VPC. |
@@ -117,9 +119,9 @@ To establish trust with a compute resource in a trusted profile, you can use the
 ### {{site.data.keyword.cloud_notm}} CLI command examples
 {: #cr-rule-cli-examples}
 
-The following examples show how you can use the attribute names in the CLI to build trusted profile links and conditions. 
+The following examples show how you can use the attribute names in the CLI to build trusted profile links and conditions.
 
-#### Linking a trusted profile to Kubernetes a cluster 
+#### Linking a trusted profile to Kubernetes a cluster
 {: #tp-link-cluster}
 
 To link the trusted profile `Test` to the Kubernetes cluster `c0pigdctkkc07fs7pm06` in the account `444aebb0657c7f0f3aae8e7bdc78709a` and service account `my-service-account` in the namespace `my-namespace`, specify the following command:
@@ -157,3 +159,90 @@ ibmcloud iam trusted-profile-rule-create Profile-b2f13064-2b8c-4e4b-9181-c1973a4
                --conditions "claim:vpc_id,operator:EQUALS,value:r206-1db73eed-b0fb-b04f-bb57-4d3a3c2dff9d"
 ```
 {: pre}
+
+## Conditions in `v2` access policies
+{: #policy-condition-properties}
+
+Time-based conditions for IAM access policies use `/v2/policies` syntax. Policies that use `/v1/policies` syntax aren't eligible to add time-based conditions. For more information, see [Access policy version limitations](/docs/account?topic=account-known-issues#policy-version-limit).
+
+To view the new schema for policies, see [/v2/policies](/docs/account?topic=account-known-issues&interface=ui#v2-policies).
+
+### Time-based conditions
+{: #time-based-conditions}
+
+The following table lists the operators available for creating time-based conditions for access policies.
+
+| Operator   | Description  | Example |
+|------------|--------------|---------|
+| `dayOfWeekAnyOf` | The days of the week that the client can use the policy.   \n 1 - Monday   \n 2 - Tuesday   \n 3 - Wednesday   \n 4- Thursday   \n 5 - Friday   \n 6 - Saturday   \n 7 - Sunday | See [example](/docs/account?topic=account-iam-condition-properties&interface=ui#dayOfWeekAnyOf-timeGreaterThanOrEquals-timeLessThanOrEquals). |
+| `timeGreaterThanOrEquals` | The time that the condition begins granting access. Time is calculated by `<time>±<time_zone_offset>`. | See [example](/docs/account?topic=account-iam-condition-properties&interface=ui#dayOfWeekAnyOf-timeGreaterThanOrEquals-timeLessThanOrEquals). |
+| `timeLessThanOrEquals` | The time that the condition terminates access. Time is calculated by `<time>±<time_zone_offset>`. | See [example](/docs/account?topic=account-iam-condition-properties&interface=ui#dayOfWeekAnyOf-timeGreaterThanOrEquals-timeLessThanOrEquals). |
+| `dateTimeGreaterThanOrEquals` | The date and time that the condition begins granting access. Date is calculated by `<datetime>±<time_zone_offset>`. |  See [example](/docs/account?topic=account-iam-condition-properties&interface=ui#dateTimeGreaterThanOrEquals). |
+| `dateTimeLessThanOrEquals` | The date and time that the condition terminates access. Date is calculated by `<datetime>±<time_zone_offset>`. | See [example](/docs/account?topic=account-iam-condition-properties&interface=ui#dateTimeLessThanOrEquals). |
+{: caption="Table 6. The operators available to time-based conditions for access policies." caption-side="top"}
+
+When you define a condition with a `GreaterThanOrEquals` operator, always include a condition with a `LessThanOrEquals` operator. This way, there is a clearly defined duration, whether it is temporary, recurring all day, or recurring with custom hours. For more information, see [Condition patterns](/docs/account?topic=account-iam-time-based&interface=ui#condition-patterns).
+
+For date and time operators, policies support the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format `hh:mm:ss±hh:mm`. The time zone offset refers to Coordinated Universal Time.
+{: note}
+
+Use the following variables to represent the `key` that specifies the client’s environment attribute, which the policy evaluates against. Each `key` supports a discrete set of operators.
+
+| Variable name | Description | Supported operations |
+|---------------|-------------|----------------------|
+| `environment.attributes.current_time` | The client's current time. | `timeGreaterThanOrEquals`, `timeLessThanOrEquals` |
+| `environment.attributes.current_date_time` | The client's current date and time. | `dateTimeGreaterThanOrEquals`, `dateTimeLessThanOrEquals` |
+| `environment.attributes.day_of_week` | The client's current day of the week. | `dayOfWeekAnyOf` |
+{: caption="Table 7. Variable notation for time-based conditions." caption-side="top"}
+
+#### Example: dayOfWeekAnyOf, timeGreaterThanOrEquals, and timeLessThanOrEquals
+{: #dayOfWeekAnyOf-timeGreaterThanOrEquals-timeLessThanOrEquals}
+
+The days of the week that are specified in this example map to Monday, Tuesday, Wednesday, and Thursday. The `timeGreaterThanOrEquals` value indicates that the condition begins granting access at 9 AM in the time zone UTC-5. The `timeLessThanOrEquals` value indicates that the condition terminates access at 5 PM in the time zone UTC-5.`environment.attributes.current_time` and `environment.attributes.day_of_week` indicate that it is a [recurring time-based condition](/docs/account?topic=account-iam-time-based&interface=ui#iam-time-based-recur-ui). Always include `time` conditions with a `dayOfWeek` condition.
+
+```json
+"conditions": [
+			{
+				"key": "{{environment.attributes.day_of_week}}",
+				"operator": "dayOfWeekAnyOf",
+				"value": [
+					1,
+					2,
+					3,
+					4
+				]
+			},
+			{
+				"key": "{{environment.attributes.current_time}}",
+				"operator": "timeGreaterThanOrEquals",
+				"value": "09:00:00-05:00"
+			},
+			{
+				"key": "{{environment.attributes.current_time}}",
+				"operator": "timeLessThanOrEquals",
+				"value": "17:00:00-05:00"
+			}
+		]
+```
+{: codeblock}
+
+#### Example: dateTimeGreaterThanOrEquals and dateTimeLessThanOrEquals
+{: #dateTimeGreaterThanOrEquals-dateTimeLessThanOrEquals}
+
+In this example, the `dateTimeGreaterThanOrEquals` value indicates that the condition begins granting access on 26 December 2022 at 9 AM in the UTC-5 time zone. The `dateTimeLessThanOrEquals` value indicates that the condition terminates access on 27 December 2022 at 5 PM in the UTC-5 time zone. `environment.attributes.current_date_time` indicates that it is a [temporary time-based condition](/docs/account?topic=account-iam-time-based&interface=ui#iam-time-based-recur-ui).
+
+```json
+"conditions": [
+			{
+				"key": "{{environment.attributes.current_date_time}}",
+				"operator": "dateTimeGreaterThanOrEquals",
+				"value": "2022-12-26T09:00:00-05:00"
+			},
+			{
+				"key": "{{environment.attributes.current_date_time}}",
+				"operator": "dateTimeLessThanOrEquals",
+				"value": "2022-12-27T17:00:00-05:00"
+			}
+		]
+```
+{: codeblock}
