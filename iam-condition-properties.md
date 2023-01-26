@@ -192,7 +192,7 @@ Use the following variables to represent the `key` that specifies the client’s
 |---------------|-------------|----------------------|
 | `environment.attributes.current_time` | The client's current time. | `timeGreaterThanOrEquals`, `timeLessThanOrEquals` |
 | `environment.attributes.current_date_time` | The client's current date and time. | `dateTimeGreaterThanOrEquals`, `dateTimeLessThanOrEquals` |
-| `environment.attributes.day_of_week` | The client's current day of the week. | `dayOfWeekAnyOf` |
+| `environment.attributes.day_of_week` | The client's current day of the week. | `dayOfWeekAnyOf`, `dayOfWeekEquals` |
 {: caption="Table 7. Variable notation for time-based conditions." caption-side="top"}
 
 #### Example: dayOfWeekAnyOf, timeGreaterThanOrEquals, and timeLessThanOrEquals
@@ -223,6 +223,19 @@ The days of the week that are specified in this example map to Monday, Tuesday, 
 				"value": "17:00:00-05:00"
 			}
 		]
+```
+{: codeblock}
+
+#### Example: dayOfWeekEquals
+{: #dayOfWeekEquals}
+
+The day of the week in this example is represented by `3` in the `value` string, which maps to Wednesday. In that same string, `+6:00` represents the time zone `UTC+6:00`. There's only one condition, so it's nested under `"rule"`.
+```json
+"rule": {
+		"key": "{{environment.attributes.day_of_week}}",
+		"operator": "dayOfWeekEquals",
+		"value": "3+06:00"
+},
 ```
 {: codeblock}
 

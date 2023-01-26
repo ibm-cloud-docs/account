@@ -534,7 +534,7 @@ The following example shows you how to create a recurring time-based condition f
 			}
 		]
 	},
-  "pattern": "time-based-restrictions:weekly",
+  "pattern": "time-based-conditions:weekly",
 	"rule": {
 		"operator": "and",
 		"conditions": [
@@ -644,7 +644,7 @@ subjectAttribute := &iampolicymanagementv1.V2PolicyAttribute{
 			options.SetSubject(policySubject)
 			options.SetResource(policyResource)
 			options.SetRule(policyRule)
-			options.SetPattern(*core.StringPtr("time-based-restrictions:weekly"))
+			options.SetPattern(*core.StringPtr("time-based-conditions:weekly"))
 
 			policy, response, err := iamPolicyManagementService.V2CreatePolicy(options)
 			if err != nil {
@@ -725,7 +725,7 @@ V2PolicyAttribute subjectAttribute = new V2PolicyAttribute.Builder()
               .control(policyControl)
               .resource(policyResource)
               .rule(policyRule)
-              .pattern("time-based-restrictions:weekly")
+              .pattern("time-based-conditions:weekly")
               .build();
 
       Response<V2Policy> response = service.v2CreatePolicy(options).execute();
@@ -786,7 +786,7 @@ const policySubject = {
           },
       ],
     }
-    const policyPattern = 'time-based-restrictions:weekly'
+    const policyPattern = 'time-based-conditions:weekly'
     const params = {
       type: 'access',
       subject: policySubject,
@@ -840,7 +840,7 @@ policy_subject = V2PolicyBaseSubject(
                     ),
                 ],
             )
-            policy_pattern = 'time-based-restrictions:weekly'
+            policy_pattern = 'time-based-conditions:weekly'
 
             policy = iam_policy_management_service.v2_create_policy(
                 type='access',

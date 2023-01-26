@@ -287,11 +287,12 @@ When you list polices with `/v1/policies` the API returns `/v1/` and a placehold
 			}
 		]
 	},
-	"pattern": "time-based-restrictions:once",
+	"pattern": "time-based-conditions:once",
 	"subject": {
 		"attributes": [
 			{
 				"key": "iam_id",
+				"operator": "stringEquals",
 				"value": "IBMid-00000AV0S0"
 			}
 		]
