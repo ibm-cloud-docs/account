@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2022
-lastupdated: "2022-04-01"
+  years: 2015, 2023
+lastupdated: "2023-01-26"
 
 keywords: platform notifications, email notifications, IBM Cloud notifications, notification preferences, email preferences, user notifications, infrastructure notifications
 
@@ -23,12 +23,12 @@ To view the Notifications preferences page, go to the **{{site.data.keyword.avat
 
 You can also visit the page if you click the **Notifications** icon ![Notification icon](../icons/Notification.svg "Notification") in the {{site.data.keyword.Bluemix_notm}} console, and then click **Manage email preferences**.
 
-If you set your email preferences but aren't receiving email notifications, make sure emails that are sent from `no_reply@cloud.ibm.com` aren't blocked or in your spam folder. See [Why am I not receiving email notifications?](/docs/account?topic=account-ts_email_notifications) for more information. 
+If you set your email preferences but aren't receiving email notifications, make sure emails that are sent from `no_reply@cloud.ibm.com` aren't blocked or in your spam folder. See [Why am I not receiving email notifications?](/docs/account?topic=account-ts_email_notifications) for more information.
 {: tip}
 
 ## Setting platform notifications
 {: #setting-platform-notifications}
-{: help} 
+{: help}
 {: support}
 
 You can choose to receive email notifications about {{site.data.keyword.Bluemix_notm}} platform-related items across your account. When you set {{site.data.keyword.Bluemix_notm}} platform notifications, you receive email notifications that are associated with only the platform. You do not receive email notifications about events that are associated with {{site.data.keyword.Bluemix_notm}} services.
@@ -38,29 +38,29 @@ Your platform email notifications settings are tied to your account.
 
 * To stay up to date with changes to the {{site.data.keyword.Bluemix_notm}} platform and products, go to **Notification preferences** > **Announcements**. To select a subcategory, set **Emails** to the on position.
 * To receive notifications about invoices, payments, subscription and promo codes, or spending and usage warnings, see **Billing and usage**. Then, click **Manage** in the {{site.data.keyword.cloud_notm}} console to set up spending notifications.
-* To receive updates about the status of your infrastructure orders, select **Ordering**.  
+* To receive updates about the status of your infrastructure orders, select **Ordering**.
 * To manage the notification distribution list in regard to your account, subscriptions, security and compliance alerts or marketing communications, click **Additional notification preferences** > **Manage** in the {{site.data.keyword.cloud_notm}} console.
 * By default, all {{site.data.keyword.Bluemix_notm}} platform notifications are turned off.
 
 To quickly turn off emails for the selected account or for all other accounts, click **Actions**, and select your preference.
 {: tip}
-  
+
 ## Setting resource notifications
 {: #setting-resource-notifications}
-{: help} 
+{: help}
 {: support}
 
-You can set your preferences to receive resource-related notifications for incidents, maintenance, security bulletins, and resource activity updates.  
+You can set your preferences to receive resource-related notifications for incidents, maintenance, security bulletins, and resource activity updates.
 
 1. In the console, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") &gt; **Profile**.
 2. Click **Notification preferences** > **Resource**.
-3. Select from the following options: 
-   * Receive notifications about events that can cause an outage or restrict functionality. You can receive notifications for all incident severity levels (1, 2, 3, 4) or just a subset. 
+3. Select from the following options:
+   * Receive notifications about events that can cause an outage or restrict functionality. You can receive notifications for all incident severity levels (1, 2, 3, 4) or just a subset.
    * Receive notifications about any important maintenance that keeps the platform operating at optimal status. You can receive notifications for all impact levels (high, medium, low), or just a subset.
    * Receive notifications about security vulnerabilities and the required actions to take.
-   * Receive notifications about resource activity, such as status and service updates. 
+   * Receive notifications about resource activity, such as status and service updates.
    * By default, all {{site.data.keyword.Bluemix_notm}} resource notifications are turned off.
-  
+
 To quickly turn off emails for the selected account or for all other accounts, click **Actions**, and select your preference.
 {: tip}
 
@@ -107,9 +107,9 @@ Then, go to **Devices** to assign a user access to the specific devices and devi
 ## Managing invitation notifications
 {: #invite-notifications}
 
-Users can receive an invitation link in their notifications and by email to join an account, if they are already members of IBM Cloud. User managers can invite any user to the IBM Cloud platform if they have an email address to use for an invite. 
+Users can receive an invitation link in their notifications and by email to join an account, if they are already members of IBM Cloud. User managers can invite any user to the IBM Cloud platform if they have an email address to use for an invite.
 
-On the {{site.data.keyword.Bluemix_notm}} [Notifications page](/notifications){: external}, you can use the search field to locate an invitation or filter by the notification type called account. You cannot set email preferences for receiving account type notifications. 
+On the {{site.data.keyword.Bluemix_notm}} [Notifications page](/notifications){: external}, you can use the search field to locate an invitation or filter by the notification type called account. You cannot set email preferences for receiving account type notifications.
 
 Users already present in IBM Cloud will receive an email and a notification with an invitation link. If an email address does not correspond to a known user in IBM Cloud, an invitation email gets sent to accept, but users can also choose not to accept the invitation. For more information, see [Viewing notifications](/docs/get-support?topic=get-support-viewing-notifications) and [Inviting users to an account](/docs/account?topic=account-iamuserinv).
 
@@ -119,13 +119,12 @@ The invitations expire after 30 days. New users to {{site.data.keyword.cloud_not
 
 ## Managing marketing communications
 {: #marcom-notifications}
-{: faq}
 
-You might receive notifications about significant technical enhancements, changes to the terms of service, plan changes, pricing changes, and the future removal of a product from the {{site.data.keyword.Bluemix_notm}} catalog. With a few exceptions, these announcements are published to the [{{site.data.keyword.Bluemix_notm}} blog](https://www.ibm.com/cloud/blog/announcements){: external}. 
+You might receive notifications about significant technical enhancements, changes to the terms of service, plan changes, pricing changes, and the future removal of a product from the {{site.data.keyword.Bluemix_notm}} catalog. With a few exceptions, these announcements are published to the [{{site.data.keyword.Bluemix_notm}} blog](https://www.ibm.com/cloud/blog/announcements){: external}.
 
-Use the following steps to update your preferences: 
+Use the following steps to update your preferences:
 
-1. Log in to the [{{site.data.keyword.IBM_notm}} Privacy Preference Center](https://myibm.ibm.com/profile/dataprivacypreferences/consent/us-en){: external}  by using your {{site.data.keyword.Bluemix_notm}} credentials. The toggle indicates if your entered credential is your preferred method of contact. 
+1. Log in to the [{{site.data.keyword.IBM_notm}} Privacy Preference Center](https://myibm.ibm.com/profile/dataprivacypreferences/consent/us-en){: external}  by using your {{site.data.keyword.Bluemix_notm}} credentials. The toggle indicates if your entered credential is your preferred method of contact.
 1. Click **Next**.
-1. Deselect **Public cloud** to stop marketing communications. 
+1. Deselect **Public cloud** to stop marketing communications.
 1. Click **Save**.
