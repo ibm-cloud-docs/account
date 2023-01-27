@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-01-26"
+lastupdated: "2023-01-27"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -6983,7 +6983,7 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Administrator | As an administrator, you can perform all platform actions according to the resource for which this role is assigned, including assigning access policies to other users and managing Sysdig team membership. |
 {: row-headers}
 {: caption="Table 145. Platform roles - IBM Cloud Monitoring with Sysdig" caption-side="top"}
 {: #platform-roles-table145}
@@ -6994,9 +6994,10 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
-| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
-| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+| Manager | As a manager, you have permissions beyond the writer role.  You are a member of every Sysdig Team with administrative permissions and are able to create, delete and configure all team definitions. |
+| Reader | As a reader, you have read access to the environment within the defined Sysdig Team scope, but cannot create, edit or delete dashboards, alerts or other content. |
+| Supertenant Metrics Publisher | This role permits IBM services to publish platform metrics to Sysdig |
+| Writer | As a writer, you have read and write access to the environment within the defined Sysdig Team scope and can create, edit and delete dashboards, alerts and other content. |
 {: row-headers}
 {: caption="Table 145. Service roles - IBM Cloud Monitoring with Sysdig" caption-side="top"}
 {: #service-roles-table145}
@@ -7007,9 +7008,10 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `sysdig-monitor.launch.user` |  | Administrator, Manager, Writer |
-| `sysdig-monitor.launch.admin` |  | Administrator, Manager |
-| `sysdig-monitor.launch.viewer` |  | Administrator, Manager, Reader, Writer |
+| `sysdig-monitor.launch.user` | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. | Administrator, Manager, Writer |
+| `sysdig-monitor.launch.admin` | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. | Administrator, Manager |
+| `sysdig-monitor.launch.viewer` | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. | Administrator, Manager, Reader, Writer |
+| `sysdig-monitor.platform-metrics.publish` | Permit publishing of platform metrics to Sysdig | Supertenant Metrics Publisher |
 {: caption="Table 145. Service actions - IBM Cloud Monitoring with Sysdig" caption-side="top"}
 {: #actions-table145}
 {: tab-title="Actions"}
