@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2021
-lastupdated: "2021-09-22"
+  years: 2015, 2023
+lastupdated: "2023-01-30"
 
 keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy, set up profile
 
@@ -28,6 +28,9 @@ You can change your profile photo. In the {{site.data.keyword.cloud_notm}} conso
 
 * To add a photo or replace an existing photo, click **Upload**.
 * To remove your photo, click **Delete picture**.
+
+The maximum file size for a profile picture is 100 KB. Use only PNG or JPG files.
+{: note}
 
 ## Editing your information
 {: #ibmid}
