@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-01-30"
+lastupdated: "2023-01-31"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -465,6 +465,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `apprapp.originconfigs.update` | Update origin configuration for allowlisting CORS policy for Browser clients SDKs | Administrator, Manager |
 | `apprapp.originconfigs.list` | List origin configuration for allowlisting CORS policy for Browser clients SDKs | Administrator, Config Operator, Editor, Manager, Reader, Viewer, Writer |
 | `apprapp.gitconfigs.restore` | Restore configuration | Manager |
+| `apprapp.integrations.create` | Create a integration between App Configuration and an external service | Administrator, Manager |
+| `apprapp.integrations.list` | List integrations between App Configuration and external services | Administrator, Config Operator, Editor, Manager, Reader, Viewer, Writer |
+| `apprapp.integrations.delete` | Delete the integration between App Configuration and an external service | Administrator, Manager |
 {: caption="Table 10. Service actions - App Configuration" caption-side="top"}
 {: #actions-table10}
 {: tab-title="Actions"}
