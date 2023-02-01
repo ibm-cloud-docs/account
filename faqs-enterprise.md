@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2023
-lastupdated: "2023-01-18"
+lastupdated: "2023-02-01"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -141,3 +141,8 @@ No, you do not automatically have access to child accounts and their resources. 
 No, you cannot add users to child accounts.
 
 You need to be invited to the child account and assigned the editor or administrator role for the User management service to add users to a child account.
+
+## Do all accounts within an enterprise require the same level of support?
+{: #enterprise-acct-support}
+
+Yes, all accounts within an {{site.data.keyword.Bluemix_notm}} enterprise are assigned the same level of support. The level of support that is assigned to an enterprise defaults to the highest support plan within the enterprise. All child accounts within the enterprise also default to the highest support plan.
