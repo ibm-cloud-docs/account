@@ -210,6 +210,7 @@ You can create context-based restrictions for the following services if you are 
 | [{{site.data.keyword.databases-for-postgresql}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | Yes | `databases-for-postgresql` |
 | [{{site.data.keyword.databases-for-redis}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | Yes | `databases-for-redis` |
 | [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-cbr) | IAM-enabled | No | `directlink` |
+| [{{site.data.keyword.dns_short}}](/docs/dns-svcs?topic=dns-svcs-cbr) | IAM-enabled | No | `dns-svcs`|
 | [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-restrict_access#configuring_cbr) | IAM-enabled | No | `messagehub` |
 | [{{site.data.keyword.keymanagementserviceshort}}](/docs/key-protect?topic=key-protect-access-control-with-cbr) | IAM-enabled | No | `kms` |
 | [{{site.data.keyword.containershort}}](/docs/containers?topic=containers-cbr&interface=ui) | IAM-enabled | Yes | `containers-kubernetes` |
