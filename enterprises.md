@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2022
-lastupdated: "2022-11-16"
+  years: 2019, 2023
+lastupdated: "2023-02-01"
 
 keywords: enterprise, enterprise account, multiple accounts, organization, hierarchy
 
@@ -52,6 +52,11 @@ Because billing is consolidated, enterprises make managing invoicing and payment
 * A single place to manage payment methods, so you can update once for all accounts
 
 Learn more in [Centrally manage billing and usage with enterprises](/docs/billing-usage?topic=billing-usage-enterprise).
+
+## Enterprise support
+{: #enterprise-support-model}
+
+The level of support that is assigned to an {{site.data.keyword.Bluemix_notm}} enterprise defaults to the highest support plan within the enterprise. All child accounts within the enterprise also default to the highest support plan. For more information about the support experience, see [Basic, Advanced, and Premium Support plans](/docs/get-support?topic=get-support-support-plans#support_level_enterprise).
 
 ## Resource management
 {: #enterprise-resources}
