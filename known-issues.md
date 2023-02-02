@@ -138,7 +138,7 @@ Context-based restrictions follow an [eventually consistent](https://en.wikipedi
 ## Access policy version limitations
 {: #policy-version-limit}
 
-As of [date], IAM supports two versions of the IAM Policy Management API: `/v2/policies` and `/v1/policies`. `v1/polices` allows for string comparisons against attributes in the subject and resources of a policy. `v2/polices` introduces a new schema that provides backwards functional compatibility while allowing for more complex comparisons and operators.
+As of 25 January, 2023, IAM supports two versions of the IAM Policy Management API: `/v2/policies` and `/v1/policies`. `v1/polices` allows for string comparisons against attributes in the subject and resources of a policy. `v2/polices` introduces a new schema that provides backwards functional compatibility while allowing for more complex comparisons and operators.
 
 ### String comparisons
 {: #policy-string-comparison}
