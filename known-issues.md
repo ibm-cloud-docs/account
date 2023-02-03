@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-01-25"
+lastupdated: "2023-02-03"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users from account, context-based restrictions
 
@@ -77,7 +77,7 @@ If you have a specific use case that requires an extended limit, you can request
 | API Keys per identity                  | 20   |
 | Cloud Foundry orgs                     | 500  |
 | Custom roles per account               | 40   |
-| Dynamic rules per access group         | 100  |
+| Dynamic rules per access group         | 5  |
 | Dynamic rules per trusted profile      | 20   |
 | Dynamic rules per Identity provider (IdP) | 2000 |
 | IdPs per account  | 5    |
