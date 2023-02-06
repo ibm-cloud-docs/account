@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2023
-lastupdated: "2023-01-24"
+lastupdated: "2023-02-06"
 
 keywords: API key, user API keys, IBM Cloud API keys, manage user keys, create API key
 
@@ -547,7 +547,7 @@ if err != nil {
 {: go}
 
 ## Before you begin
-{: #userapikey}
+{: #before-you-begin-userapikey}
 {: terraform}
 
 Before you can manage user API keys by using Terraform, make sure that you have completed the following:
