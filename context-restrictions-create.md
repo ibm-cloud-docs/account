@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2022
-lastupdated: "2022-12-29"
+  years: 2021, 2023
+lastupdated: "2023-02-06"
 
 
 keywords: create network access, network access rule, network zone
@@ -65,14 +65,14 @@ You can continue by creating more network zones, or by creating rules.
 
 By creating network zones, you establish a list of allowed locations where an access request originates. A set of one or more network locations can be specified by IP addresses such as individual addresses, ranges or subnets, and VPC IDs. After you create a network zone, you can add it to a rule.
 
-1. Install the [Context-based restrictions CLI plug-in](/docs/account?topic=cli-cbr-plugin#install-cbr-plugin) by running the following command:
+1. Install the [Context-based restrictions CLI plug-in](/docs/account?topic=account-cbr-plugin) by running the following command:
 
    ```sh
    ibmcloud plugin install cbr
    ```
    {: pre}
 
-1. To create a network zone, use the [cbr-zone-create](/docs/account?topic=cli-cbr-plugin#cbr-zones-cli) command.
+1. To create a network zone, use the [cbr zone-create](/docs/account?topic=account-cbr-plugin#cbr-cli-zone-create-command) command.
 
    The following example creates a network zone with a list of allowed network locations.
 
@@ -81,14 +81,14 @@ By creating network zones, you establish a list of allowed locations where an ac
    ```
    {: pre}
 
-   The following example creates a network zone with a service reference. For more information, see [Service references](/docs/account?topic=account-context-restrictions-whatis&interface=cli#service-attribute).
+   The following example creates a network zone with a service reference. For more information, see [Service references](https://test.cloud.ibm.com/docs/account?topic=account-context-restrictions-whatis&interface=cli#service-attribute).
 
     ```sh
     ibmcloud cbr zone-create --name example-zone-1 --description "Kube zone" --service-ref service_name=containers-kubernetes
     ```
     {: pre}
 
-    To find a list of available service references, run the [ibmcloud cbr service-ref-targets](/docs/account?topic=cli-cbr-plugin#cbr-cli-service-ref-targets-command) command.
+    To find a list of available service references, run the [ibmcloud cbr service-ref-targets](/docs/account?topic=account-cbr-plugin#cbr-cli-service-ref-targets-command) command.
     {: tip}
 
 
