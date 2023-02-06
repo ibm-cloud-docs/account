@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023
-lastupdated: "2023-01-25"
+lastupdated: "2023-02-06"
 keywords: access policy, access, policy, restriction, time based restriction, time based, time based conditions, conditions
 
 subcollection: account
@@ -107,7 +107,7 @@ The following example shows you how to create a one-time time-based condition fo
 1. Use the following JSON to create your time-based condition:
 
 ### Example of time-based temporary access policy JSON
-{: #iam-time-based-recur-cli-ex}
+{: #iam-time-based-temp-cli-ex}
 {: cli}
 
 ```json
