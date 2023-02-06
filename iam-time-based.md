@@ -36,7 +36,7 @@ The following patterns represent the allowed condition permutations:
 |---------|---------|
 | time-based-conditions:once | Temporary access on a specific day from 9 AM to 5 PM UTC-5. |
 | time-based-conditions:weekly:all-day | Recurring access Mon-Fri UTC-5 all day. |
-| time-based-conditions:weekly:custom-hours | Recurring access Mon-Fri 9-5 UTC-5. |
+| time-based-conditions:weekly:custom-hours | Recurring access Mon-Fri 9 AM to 5 PM UTC-5. |
 {: caption="Table 1. Allowed condition patterns for time-based conditions." caption-side="top"}
 
 IAM prevents combining one-time temporary conditions with weekly recurring conditions in the same policy definition.
@@ -176,8 +176,6 @@ For more information about time-based conditions for access policies, see [Condi
 {: api}
 
 You can assign access for a finite duration by specifying a date and time range that determines when the condition grants and terminates access. For example, you might have a user that needs to present a demonstration on your account for a few hours or a contractor that needs temporary access to a service over a couple days.
-
-For more information about time-based conditions for access policies, see [Conditions in access policies](/docs/account?topic=account-iam-condition-properties&interface=ui#policy-condition-properties).
 
 The following examples show you how to create a one-time time-based condition for you account by granting the user temporary access as an Operator for all Account Management Services.
 
