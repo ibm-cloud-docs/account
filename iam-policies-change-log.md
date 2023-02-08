@@ -49,4 +49,4 @@ To get started, see [Limiting access with time-based conditions](/docs/account?t
 
 For detailed operator descriptions and examples, see: [Conditions in `v2` access policies](/docs/account?topic=account-iam-condition-properties#policy-condition-properties)
 
-The new `v2/polices` schema provides backwards functional compatibility and allows for more complex comparisons and operators. The `v1/polices` schema remains supported and available. For more information, see [Comparing `/v1/policies` and `/v2/policies` syntax](https://test.cloud.ibm.com/docs/account?topic=account-known-issues#compare-syntax).
+The new `v2/polices` schema provides backwards functional compatibility and allows for more complex comparisons and operators. The `v1/polices` schema remains supported and available. For more information, see [Comparing `/v1/policies` and `/v2/policies` syntax](/docs/account?topic=account-known-issues#compare-syntax).
