@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-02-03"
+lastupdated: "2023-02-08"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users from account, context-based restrictions
 
@@ -25,7 +25,7 @@ Known issues and limitations include not being able to restrict access to some p
 
 Some products are not affected by the following catalog visibility settings:
 
-- Turning off the the visibility of the {{site.data.keyword.Bluemix_notm}} catalog
+- Turning off the visibility of the {{site.data.keyword.Bluemix_notm}} catalog
 - Excluding all {{site.data.keyword.Bluemix_notm}} products from the catalog
 - Excluding all {{site.data.keyword.Bluemix_notm}} products from your private catalogs
 
@@ -138,7 +138,7 @@ Context-based restrictions follow an [eventually consistent](https://en.wikipedi
 ## Access policy version limitations
 {: #policy-version-limit}
 
-As of 25 January, 2023, IAM supports two versions of the IAM Policy Management API: `/v2/policies` and `/v1/policies`. `v1/polices` allows for string comparisons against attributes in the subject and resources of a policy. `v2/polices` introduces a new schema that provides backwards functional compatibility while allowing for more complex comparisons and operators.
+As of 25 January 2023, IAM supports two versions of the IAM Policy Management API: `/v2/policies` and `/v1/policies`. `v1/polices` allows for string comparisons against attributes in the subject and resources of a policy. `v2/polices` introduces a new schema that provides backwards functional compatibility while allowing for more complex comparisons and operators.
 
 ### String comparisons
 {: #policy-string-comparison}
@@ -177,7 +177,7 @@ For example, the following statement contains an `operator` element that uses `s
 ```
 {: codeblock}
 
-[Authorization polices](/docs/account?topic=account-serviceauth) are currenly only supported in `/v1/policies`.
+[Authorization policies](/docs/account?topic=account-serviceauth) are currently only supported in `/v1/policies`.
 {: note}
 
 ### Checking a policy version in the console
@@ -186,8 +186,8 @@ For example, the following statement contains an `operator` element that uses `s
 Time-based conditions for IAM access policies use `/v2/policies` syntax. Policies that use `/v1/policies` syntax aren't eligible to add time-based conditions. To check whether you can add time-based conditions to an existing policy in the console, complete the following steps.
 
 1. Go to **Manage > Access (IAM)**.
-1. Click on **Users**, **Trusted profiles**, **Service IDs**, or **Access groups**, depending on the policy you want to check.
-1. Click on a specific users, trusted profile, service ID, or access group.
+1. Select **Users**, **Trusted profiles**, **Service IDs**, or **Access groups**, depending on the policy you want to check.
+1. Select a specific users, trusted profile, service ID, or access group.
 1. Go to **Access** > **Access policies**.
 1. View the **Conditions** column. **Unsupported** indicates that the policy uses /v1/policies syntax.
 1. (Optional) To add conditions to a policy that uses /v1/policies syntax, delete the original policy and create a new one. In the console, new policies use /v2/policies syntax.
@@ -197,7 +197,7 @@ Time-based conditions for IAM access policies use `/v2/policies` syntax. Policie
 
 The policy in each example grants a user access to the Billing service with the Editor role. The `/v2/policies` example includes temporary time-based conditions, indicated by the `"conditions"` parameter.
 
-When editing, creating and deleting policies, use the corresponding API version.
+When editing, creating, and deleting policies, use the corresponding API version.
 {: tip}
 
 #### `/v1/policies`
@@ -239,7 +239,7 @@ When editing, creating and deleting policies, use the corresponding API version.
 ```
 {: codeblock}
 
-When you list polices with `/v1/policies` the API returns `/v1/` and a placeholder policy for each `/v2/` policy that's in the account. For more information, see [`/v1/policies` returns a placeholder for `/v2/` policies the account](/docs/account?topic=account-known-issues#placeholder-v2)
+When you list policies with `/v1/policies` the API returns `/v1/` and a placeholder policy for each `/v2/` policy that's in the account. For more information, see [`/v1/policies` returns a placeholder for `/v2/` policies the account](/docs/account?topic=account-known-issues#placeholder-v2)
 {: note}
 
 
@@ -304,7 +304,7 @@ When you list polices with `/v1/policies` the API returns `/v1/` and a placehold
 #### `/v1/policies` returns a placeholder for `/v2/` policies
 {: #placeholder-v2}
 
-When you list polices with `/v1/policies` the API returns `/v1/` and a placeholder policy for each `/v2/` policy that's in the account. The placeholders indicate the existance of additional policies in the account while abiding by the `/v1/` schema. To see the full content of a `/v2/` policy, list polices by using `/v2/policies` or retrieve the individual policy using `GET: v2/policies/<ID>`. For example, see the following plceholder policy:
+When you list policies with `/v1/policies` the API returns `/v1/` and a placeholder policy for each `/v2/` policy that's in the account. The placeholders indicate the existence of additional policies in the account while abiding by the `/v1/` schema. To see the full content of a `/v2/` policy, list policies by using `/v2/policies` or retrieve the individual policy by using `GET: v2/policies/<ID>`. For example, see the following placeholder policy:
 
 ```json
 {
