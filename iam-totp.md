@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018, 2022
+  years: 2018, 2023
 
-lastupdated: "2022-12-16"
+lastupdated: "2023-02-09"
 
 keywords: MFA, multifactor authentication, time-based one-time passcode, TOTP
 
@@ -17,7 +17,7 @@ subcollection: account
 # Enabling one-time passcode MFA for a user
 {: #totp}
 
-As an administrator or editor on the User Management service, you can enable the multifactor authentication (MFA) option that prompts a user for a time-based one-time passcode (TOTP) at login. This type of legacy account-based MFA is required only for the account where the setting is enabled and is available only for accounts with classic infrastructure.
+As an Administrator on the IAM Identity Service or All IAM Account Management service, you can enable the multifactor authentication (MFA) option that prompts a user for a time-based one-time passcode (TOTP) at login. This type of legacy account-based MFA is required only for the account where the setting is enabled and is available only for accounts with classic infrastructure.
 {: shortdesc}
 
 For more information about your MFA options, see [Types of multifactor authentication](/docs/account?topic=account-types).
@@ -27,7 +27,7 @@ For more information about your MFA options, see [Types of multifactor authentic
 
 If you have any of the following access, you can update this setting for other users in your account:
 
-* Editor or higher role on the User management service
+* Administrator on the IAM Identity Service or All IAM Account Management services
 * You are an ancestor in the classic infrastructure hierarchy for the user and you have the Manage users classic infrastructure permission assigned
 
 To turn on this MFA option for a user, they must first set up TOTP. For more information, see [Setting up TOTP](/docs/account?topic=account-totp#totp-setup).
