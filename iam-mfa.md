@@ -17,7 +17,7 @@ subcollection: account
 # Enabling MFA in your account
 {: #enablemfa}
 
-As an IAM Administrator, you can choose to require multifactor authentication (MFA) for every user in the account, just users with IBMids who do not use single sign-on (SSO), or individual users.
+As an Administrator on the IAM Identity Service or All IAM Account Management services, you can choose to require multifactor authentication (MFA) for every user in the account, just users with IBMids who do not use single sign-on (SSO), or individual users.
 {: shortdesc}
 
 This document covers how to work with [ID-based MFA](/docs/account?topic=account-types#id-based), which is the recomended MFA method.
