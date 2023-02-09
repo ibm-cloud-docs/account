@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2022
-lastupdated: "2022-12-16"
+lastupdated: "2022-02-09"
 
 keywords: MFA, multifactor authentication, two-factor authentication, U2F, FIDO U2F, security key
 
@@ -33,7 +33,7 @@ For users that are members of multiple accounts, the most restrictive MFA option
 ## ID-based MFA options
 {: #id-based}
 
-An IAM administrator can enable ID-based MFA for the account or a specific user, and it applies to all account resources.
+As an Administrator on the IAM Identity Service or All IAM Account Management services, you can enable ID-based MFA for the account or a specific user, and it applies to all account resources.
 - You can update the MFA setting for your account by going to **Manage** > **Access (IAM)** > **Settings** > **Authentication** in the {{site.data.keyword.Bluemix}} console.  If you are a new user, use the ID-based MFA option to ensure that your login is secure. For more information, see [Enabling MFA for an account](/docs/account?topic=account-enablemfa#enabling-account).
 - You can update the MFA setting for a specific user in your account by going to **Manage** > **Access (IAM)** > **Users** and clicking the user whose MFA you want to update. For more information, see [Enabling MFA for an individual user](/docs/account?topic=account-enablemfa#enabling-user).
 
@@ -53,7 +53,7 @@ Users authenticate by using one of the following MFA factors. This option applie
 ## Account-based MFA options
 {: #account-based}
 
-An account administrator can enable any of the following legacy MFA options to be configured and used by a user in the account. These legacy MFA options are available only with classic infrastructure accounts. This type of MFA is tied to the account. If an administrator enables a different legacy MFA option for each account that a user is a member of, the user is prompted to authenticate a different way each time that they switch accounts.
+As an Administrator on the IAM Identity Service or All IAM Account Management services, you can enable any of the following legacy MFA options to be configured and used by a user in the account. These legacy MFA options are available only with classic infrastructure accounts. This type of MFA is tied to the account. If an administrator enables a different legacy MFA option for each account that a user is a member of, the user is prompted to authenticate a different way each time that they switch accounts.
 
 If an account requires any ID-based MFA, that factor overrides any legacy account-based MFA options that are enabled and set up in a user's account. Therefore, even if a user has other MFA options, such as the following set up, the user is not prompted for them at login.
 {: note}
