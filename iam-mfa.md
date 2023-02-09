@@ -64,7 +64,7 @@ The first time that you log in to your account after MFA settings are updated, y
 {: #enabling-user}
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **Users** and select the user whose MFA you want to update.
-1. Go to the Multifactor authentication section and click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit").
+1. Go to the **MFA** section and click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit").
 1. Select the type of MFA to enable for the user.
 
    By default, **Use account default** is selected. The account default is the MFA option that is enabled at the account level. To view the account default, go to **Manage > Access (IAM) > Settings > Authentication**.
@@ -88,6 +88,6 @@ Disabling MFA does not affect users that are already logged in. The action impac
 {: #disabling-user}
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **Users** and select the user whose MFA you want to update.
-1. Go to the Multifactor authentication section and click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit").
+1. Go to the **MFA** section and click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit").
 1. Select **None**.
 1. Click **Save**.
