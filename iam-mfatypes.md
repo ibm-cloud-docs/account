@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2022
-lastupdated: "2022-02-09"
+  years: 2018, 2023
+lastupdated: "2023-02-09"
 
 keywords: MFA, multifactor authentication, two-factor authentication, U2F, FIDO U2F, security key
 
