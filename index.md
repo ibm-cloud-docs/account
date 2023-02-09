@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2023
-lastupdated: "2023-01-05"
+lastupdated: "2023-02-09"
 
-keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, commitment, commit model
+keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, commitment, commit model, savings plan, enterprise savings plan
 
 subcollection: account
 
@@ -65,7 +65,7 @@ You can create multiple resource groups to easily manage quota and view billing 
 
 Basic support is included with your {{site.data.keyword.Bluemix_notm}} Pay-As-You-Go. It is provided for non-production environments or workloads where traditional severities are not used and specific response times are not stipulated. Also, with a Pay-As-You-Go account, you can order Advanced or Premium support plans to get extra help with your production workloads. Learn more in [Basic, Advanced, and Premium Support plans](/docs/get-support?topic=get-support-support-plans).
 
-A subset of Pay-As-You-Go accounts are eligible for the new Pay-As-You-Go with Committed Use model. For more information, see [Pay as you go with Committed Use billing model](/docs/billing-usage?topic=billing-usage-committed-use).
+A subset of Pay-As-You-Go accounts are eligible for the new Enterprise Savings Plan model. For more information, see [Enterprise Savings Plan billing model](/docs/billing-usage?topic=billing-usage-committed-use).
 
 ## Subscription account
 {: #subscription-account}
@@ -76,7 +76,7 @@ When you purchase a subscription, you commit to a minimum spending amount for a 
 
 Large organizations and other users with large cloud workloads can benefit from the savings and predictable billing that are provided by subscriptions. {{site.data.keyword.Bluemix_notm}} offers multiple types of subscriptions to fit your usage needs.
 
-A subset of subscription accounts are eligible for the new Pay-As-You-Go with Committed Use model. For more information, see [Pay as you go with Committed Use billing model](/docs/account?topic=account-accounts#commitment-model).
+A subset of subscription accounts are eligible for the new Enterprise Savings Plan model. For more information, see [Enterprise Savings Plan billing model](/docs/account?topic=account-accounts#commitment-model).
 
 ### Platform subscriptions
 {: #platform-subscriptions}
@@ -113,10 +113,10 @@ When your subscription is about to expire, you are notified by email 60, 30, 14,
 
 You can work with [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} to renew your subscription account.
 
-## Pay as you go with Committed Use billing model
+## Enterprise Savings Plan billing model
 {: #commit-model-account}
 
-{{site.data.keyword.cloud_notm}} customers can sign up for the Pay as you go with Committed Use billing model. With this billing model, you commit to spend a certain amount on {{site.data.keyword.Bluemix_notm}} and you also receive discounts across the platform. You are billed monthly based on your usage and you continue to receive a discount even after you reach your committed amount. For more information about the billing model, see [Pay as you go with Committed Use pricing model](/docs/billing-usage?topic=billing-usage-committed-use).
+{{site.data.keyword.cloud_notm}} customers can sign up for the Enterprise Savings Plan billing model. With this billing model, you commit to spend a certain amount on {{site.data.keyword.Bluemix_notm}} and you also receive discounts across the platform. You are billed monthly based on your usage and you continue to receive a discount even after you reach your committed amount. For more information about the billing model, see [Enterprise Savings Plan pricing model](/docs/billing-usage?topic=billing-usage-committed-use).
 
 ## Lite account
 {: #liteaccount}

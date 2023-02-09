@@ -2,9 +2,9 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2023-02-01"
+lastupdated: "2023-02-09"
 
-keywords: enterprise, enterprise account, multiple accounts, organization, hierarchy
+keywords: enterprise, enterprise account, multiple accounts, organization, hierarchy, savings plan, enterprise savings plan
 
 subcollection: account
 
@@ -42,7 +42,7 @@ Your enterprise structure is flexible and can grow and change as your needs do. 
 ## Consolidated billing
 {: #enterprise-billing}
 
-In an enterprise, all billing is managed through the enterprise account. Enterprises require [subscription billing](/docs/account?topic=account-accounts#subscription-account) or an account with the [Pay as you go with Committed Use billing model](/docs/account?topic=billing-usage-committed-use). Subscription billing means that you purchase a subscription for an amount of credit to spend during the subscription term, and usage is deducted from the subscription credit at a discounted rate. Subscription credit, as well as credit from any promotions, is added to the enterprise credit pool, which is shared across all accounts in the enterprise. As accounts use resources, credit is spent from the credit pool. The Pay as you go with Committed Use billing model is similar to the billing model for Subscription accounts. You commit to spend a certain amount on {{site.data.keyword.Bluemix_notm}} and receive discounts across the platform. You are billed monthly based on your usage and you continue to receive a discount even after you reach your committed amount.
+In an enterprise, all billing is managed through the enterprise account. Enterprises require [subscription billing](/docs/account?topic=account-accounts#subscription-account) or an account with the [Enterprise Savings Plan](/docs/account?topic=billing-usage-committed-use). Subscription billing means that you purchase a subscription for an amount of credit to spend during the subscription term, and usage is deducted from the subscription credit at a discounted rate. Subscription credit, as well as credit from any promotions, is added to the enterprise credit pool, which is shared across all accounts in the enterprise. As accounts use resources, credit is spent from the credit pool. The Enterprise Savings Plan billing model is similar to the billing model for Subscription accounts, you commit to spend a certain amount on {{site.data.keyword.Bluemix_notm}} and receive discounts across the platform. You are billed monthly based on your usage and you continue to receive a discount even after you reach your committed amount.
 
 ![A diagram that shows that credit from accounts is added to the enterprise credit pool, which is managed by the billing administrator in the enterprise account.](images/enterprise-billing.svg "Billing for all accounts is managed by the billing administrator in the enterprise account."){: caption="Figure 2. Enterprise billing management" caption-side="bottom"}
 
