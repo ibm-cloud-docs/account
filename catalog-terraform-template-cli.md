@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-01-18"
+lastupdated: "2023-02-10"
 
 keywords: private catalog, software, onboard, Terraform, terraform template, cli
 
@@ -19,7 +19,6 @@ completion-time: 20m
 
 {{site.data.keyword.attribute-definition-list}}
 
-<!--Keep in staging -Kent Hall-->
 # Onboarding a Terraform template by using the CLI
 {: #catalog-terraform-template-cli}
 {: toc-content-type="tutorial"}
@@ -139,26 +138,6 @@ Deploying the software can take a few minutes. You can check the validation stat
 ibmcloud catalog offering version validate-status --version-locator VERSION_NUMBER [--output FORMAT]
 ```
 {: codeblock}
-
-<!--
-## Configure compliance controls
-{: #tutorial-terraform-template-cli-catalog-configure}
-{: step}
-
-Need info
-
-## Validate again
-{: #tutorial-terraform-template-cli-catalog-compliance}
-{: step}
-
-Need info
-
-## Clean up validation resources
-{: #tutorial-terraform-template-cli-catalog-resource}
-{: step}
-
-Need info
--->
 
 ## Mark a version as ready
 {: #mark-version-ready}
