@@ -108,7 +108,7 @@ If you upgrade your trial account to a Pay-As-You-Go account by entering a credi
 {: #convert-education}
 {: faq}
 
-When you add a credit card to your trial account, your account is upgraded to a Pay-As-You-Go account. Educational feature codes can't be used in a Pay-As-You-Go account. In addition, a Pay-As-You-Go account can't be converted back to a trial account. For more information about educational trial accounts, see the [IBM Academic Initiative FAQs](https://www.ibm.com/academic/faqs/faqs){: external}.
+When you add a credit card to your trial account, your account is upgraded to a Pay-As-You-Go account. Educational feature codes can't be used in a Pay-As-You-Go account. In addition, a Pay-As-You-Go account can't be converted back to a trial account. For more information about educational trial accounts, see the [IBM SkillsBuild Software Downloads FAQs](https://www.ibm.com/academic/faqs/faqs){: external}.
 
 ## Can I sign up for a free trial?
 {: #freetrial}
