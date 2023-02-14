@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-02-13"
+lastupdated: "2023-02-14"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -646,6 +646,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloud-object-storage.bucket.get_versioning` | Unsupported operation - used for S3 API compatibility only. | Manager, Reader, Writer |
 | `cloud-object-storage.bucket.put_versioning` | Unsupported operation - used for S3 API compatibility only. | Manager, Writer |
 | `cloud-object-storage.bucket.get_object_lock_configuration` | Get Object Lock Configuration from the bucket. | Manager, Reader, Writer |
+| `cloud-object-storage.bucket.put_object_lock_configuration` | Set Object Lock Configuration from the bucket. | Manager, Writer |
 | `cloud-object-storage.bucket.get_fasp_connection_info` | View Aspera FASP connection information. | Manager, Reader, Writer |
 | `cloud-object-storage.account.delete_fasp_connection_info` | Delete Aspera FASP connection information. | Manager, Writer |
 | `cloud-object-storage.bucket.get_location` | View the location and storage class of a bucket. | Content Reader, Manager, Notifications Manager, Reader, Writer |
@@ -669,6 +670,14 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloud-object-storage.object.get` | View and download objects. | Content Reader, Manager, Object Reader, Reader, Writer |
 | `cloud-object-storage.object.head` | Read an object's metadata. | Content Reader, Manager, Object Reader, Reader, Writer |
 | `cloud-object-storage.object.get_version` | Unsupported operation - used for S3 API compatibility only. | Content Reader, Manager, Object Reader, Reader, Writer |
+| `cloud-object-storage.object.get_object_lock_retention` | Get object lock retention settings on the object. | Manager, Reader, Writer |
+| `cloud-object-storage.object.put_object_lock_retention_version` | Set object lock retention version settings on the object. | Manager, Object Writer, Writer |
+| `cloud-object-storage.object.get_object_lock_retention_version` | Get object lock retention version settings on the object. | Manager, Reader, Writer |
+| `cloud-object-storage.object.get_object_lock_legal_hold` | Get object lock legal hold state on the object. | Manager, Reader, Writer |
+| `cloud-object-storage.object.put_object_lock_retention` | Set object lock retention settings on the object. | Manager, Object Writer, Writer |
+| `cloud-object-storage.object.put_object_lock_legal_hold` | Set object lock legal hold state on the object. | Manager, Object Writer, Writer |
+| `cloud-object-storage.object.put_object_lock_legal_hold_version` | Set object lock legal hold version state on the object. | Manager, Object Writer, Writer |
+| `cloud-object-storage.object.get_object_lock_legal_hold_version` | Get object lock legal hold version state on the object. | Manager, Reader, Writer |
 | `cloud-object-storage.object.head_version` | Unsupported operation - used for S3 API compatibility only. | Content Reader, Manager, Object Reader, Reader, Writer |
 | `cloud-object-storage.object.put` | Write and upload objects. | Manager, Object Writer, Writer |
 | `cloud-object-storage.object.post` | Upload an object using HTML forms [deprecated]. | Manager, Object Writer, Writer |
