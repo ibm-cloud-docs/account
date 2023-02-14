@@ -2,7 +2,7 @@
 
 copyright:
   years:  2023
-lastupdated: "2023-01-25"
+lastupdated: "2023-02-14"
 
 keywords: change log for access-management polices, updates to access-management polices, IAM Policy Management API change log, policies change log, access management change log
 
@@ -39,6 +39,9 @@ The following table shows the behavior changes for each version.
 |`v2`| New schema to support conditions and advanced operators dealing with date and time|
 |`v1`| Initial version of IAM Policy Management API |
 {: caption="Table 1. IAM Policy Management API versions" caption-side="top"}
+
+The `v1` API is not forwards compatible with the `v2` API. You can't add conditions to a policy that is created with the `v1` API. To add conditions, you must delete the `v1` policy and replace it with a new access policy that includes conditions.
+{: important}
 
 ## 25 January 2023
 {: #25-jan-2023}
