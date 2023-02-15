@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-02-14"
+lastupdated: "2023-02-15"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -6301,11 +6301,11 @@ Review the available platform and service roles and the actions mapped to each t
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `privileged-access-gateway.dashboard.view` |  | Administrator, Editor, Operator |
-| `privileged-access-gateway.certificate.create` | this action is going to create a user certificate for the user that is needed to login to the session | Writer |
+| `privileged-access-gateway.certificate.create` | this action is going to create a user certificate for the user that is needed to login to the session | Manager, Writer |
 | `privileged-access-gateway.public.ca.key` | retrieves the public CA key  | Manager, Reader, Writer |
-| `privileged-access-gateway.ssh.login` | ssh login | Writer |
-| `privileged-access-gateway.kube.login` | kube login action that allows users to get kube config details of a cluster  | Writer |
-| `privileged-access-gateway.rdp.login` | privileged-access-gateway.ssh.login | Writer |
+| `privileged-access-gateway.ssh.login` | ssh login | Manager, Writer |
+| `privileged-access-gateway.kube.login` | kube login action that allows users to get kube config details of a cluster  | Manager, Writer |
+| `privileged-access-gateway.rdp.login` | privileged-access-gateway.ssh.login | Manager, Writer |
 | `privileged-access-gateway.session.list.all` | List All  Active Sessions | Manager |
 | `privileged-access-gateway.instance.upgrade` | Perform a software update of the gateway associated an instance. | Administrator, Editor, Operator |
 {: caption="Table 128. Service actions - Privileged Access Gateway" caption-side="top"}
