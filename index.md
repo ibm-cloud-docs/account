@@ -65,7 +65,7 @@ You can create multiple resource groups to easily manage quota and view billing 
 
 Basic support is included with your {{site.data.keyword.Bluemix_notm}} Pay-As-You-Go. It is provided for non-production environments or workloads where traditional severities are not used and specific response times are not stipulated. Also, with a Pay-As-You-Go account, you can order Advanced or Premium support plans to get extra help with your production workloads. Learn more in [Basic, Advanced, and Premium Support plans](/docs/get-support?topic=get-support-support-plans).
 
-A subset of Pay-As-You-Go accounts are eligible for the new Enterprise Savings Plan model. For more information, see [Enterprise Savings Plan billing model](/docs/billing-usage?topic=billing-usage-committed-use).
+A subset of Pay-As-You-Go accounts are eligible for the new Enterprise Savings Plan billing model. For more information, see [Enterprise Savings Plan billing model](/docs/billing-usage?topic=billing-usage-committed-use).
 
 ## Subscription account
 {: #subscription-account}
@@ -76,7 +76,7 @@ When you purchase a subscription, you commit to a minimum spending amount for a 
 
 Large organizations and other users with large cloud workloads can benefit from the savings and predictable billing that are provided by subscriptions. {{site.data.keyword.Bluemix_notm}} offers multiple types of subscriptions to fit your usage needs.
 
-A subset of subscription accounts are eligible for the new Enterprise Savings Plan model. For more information, see [Enterprise Savings Plan billing model](/docs/account?topic=account-accounts#commitment-model).
+A subset of subscription accounts are eligible for the new Enterprise Savings Plan billing model. For more information, see [Enterprise Savings Plan billing model](/docs/account?topic=account-accounts#commitment-model).
 
 ### Platform subscriptions
 {: #platform-subscriptions}
