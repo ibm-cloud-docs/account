@@ -2,8 +2,8 @@
 
 
 copyright:
-  years: 2021, 2022
-lastupdated: "2022-06-09"
+  years: 2021, 2023
+lastupdated: "2023-02-17"
 
 keywords: onboard software, catalog details, software, catalog entry, about, product page, catalog listing
 
@@ -40,7 +40,7 @@ Complete the following steps to define or update your catalog entry details. A c
    :   Provide a short description to help users learn about and evaluate your product quickly from the tile in the catalog.
    
    Category
-   :   Select a category. This is a required field that you set during initial onboarding, but can change if needed.
+   :   Select a category. This is a required field that you set during initial onboarding, but can change if needed. You can find all of the available category values by using the [`ibmcloud catalog offering category-options`](/docs/cli?topic=cli-manage-catalogs-plugin#category-options-offering) command.
    
    Filters
    :   Choose from the set of filters on compliance, delivery method, deployment target, pricing plan, and more. These filters are used to help users quickly find products relevant to their business needs.
