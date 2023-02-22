@@ -45,7 +45,8 @@
     "couldn't create my cloud account",
     "have issues with Cloud account",
     "we are having issues with Cloud account",
-    "Error when creating my account"
+    "Error when creating my account",
+    "account support"
   ],
   "cloud-foundry": [
     "what is Cloud Foundry",
