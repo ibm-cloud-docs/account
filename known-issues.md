@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-02-08"
+lastupdated: "2023-02-22"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users from account, context-based restrictions
 
@@ -189,7 +189,10 @@ Time-based conditions for IAM access policies use `/v2/policies` syntax. Policie
 1. Select **Users**, **Trusted profiles**, **Service IDs**, or **Access groups**, depending on the policy you want to check.
 1. Select a specific users, trusted profile, service ID, or access group.
 1. Go to **Access** > **Access policies**.
-1. View the **Conditions** column. **Unsupported** indicates that the policy uses /v1/policies syntax.
+1. Click on a policy. `/v1/policies` are indicated by the following notification:
+
+   > Conditions unavailable for v1 policies
+
 1. (Optional) To add conditions to a policy that uses /v1/policies syntax, delete the original policy and create a new one. In the console, new policies use /v2/policies syntax.
 
 ### Comparing `/v1/policies` and `/v2/policies` syntax
