@@ -1,6 +1,6 @@
 {
     "title": "Managing your account, resources, and access docs",
-    "lastupdated": "2023-01-27",
+    "lastupdated": "2023-02-22",
     "introduction": "Leverage the interacting components and systems in your account for resource, user, and access management. Get started by setting up your IBM cloud account, learn about setting up an enterprise, or explore assigning access to resources quickly with IBM Cloud Identity and Access Management (IAM).",
     "section_devtools": {
       "api": "/docs?tab=api-docs&subCategory=account&category=platform_services",
@@ -66,6 +66,11 @@
       "view_more": "/docs/overview?topic=overview-whatsnew",
       "tiles": [
         {
+          "date": "22 February 2023",
+          "title": "User-specific MFA",
+          "description": "You can now enforce user-specific multifactor authentication (MFA) requirements. These requirements differ from the account default MFA setting. After you update the MFA requirement for an individual user, view a list of users that have unique MFA requirements in the account by going to Manage > Access (IAM) > Settings > Authentication."
+        },
+        {
           "date": "27 January 2023",
           "title": "New services integrating with context-based restrictions",
           "description": "Services continue to integrate with the {{site.data.keyword.Bluemix_notm}} platform's context-based restrictions feature, including {{site.data.keyword.vpc_full}} (VPC) Infrastructure Services."
@@ -74,11 +79,6 @@
           "date": "25 January 2023",
           "title": "Time-based conditions in IAM access policies",
           "description": "{{site.data.keyword.Bluemix_notm}} IAM is excited to give customers the ability to set access controls based on a specified time and date. You can now create policies that grant employees access to a resource during only their working hours, or grant automated processes temporary access for a specified duration. Implementing such limitations helps you to apply the principle of least privilege for assigning access and reduces the opportunity for attack in the event of a security breach."
-        },
-        {
-          "date": "25 January 2023",
-          "title": "IAM Policy Management API V2 release",
-          "description": "A new version (v2) of the IAM Policy Management API is now available. This version adds a new JSON schema to support a conditional policy construct and several time-based comparison operators. These operators provide the capability to restrict access based on time and date. With time-based access control, customers can establish granular policy enforcement based on a specified time period."
         }
       ]
     }
