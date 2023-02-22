@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023
-lastupdated: "2023-02-14"
+lastupdated: "2023-02-22"
 keywords: access policy, access, policy, restriction, time based restriction, time based, time based conditions, conditions
 
 subcollection: account
@@ -146,69 +146,65 @@ The following example shows you how to create a one-time time-based condition fo
    ```
    {: codeblock}
 
-1. Use the following JSON to create your time-based condition:
+1. Use the following example of a temporary time-based access policy in JSON schema to create your own conditions:
 
-### Example of time-based temporary access policy JSON
-{: #iam-time-based-temp-cli-ex}
-{: cli}
+    ```json
+    {
+      "type": "access",
+      "description": "time-based conditions policy example restricting access to the full day of 2022-12-23 UTC",
+      "control": {
+        "grant": {
+          "roles": [
+            {
+              "role_id": "crn:v1:bluemix:public:iam::::role:Operator"
+            }
+          ]
+        }
+      },
+      "resource": {
+        "attributes": [
+          {
+            "operator": "stringEquals",
+            "value": "d4b763ad0cbd4dca8dd1edb427d7a77e",
+            "key": "accountId"
+          },
+          {
+            "value": "platform_service",
+            "operator": "stringEquals",
+            "key": "serviceType"
+          }
+        ]
+      },
+      "pattern": "time-based-conditions:once",
+      "rule": {
+        "operator": "and",
+        "conditions": [
+          {
+            "key": "{{environment.attributes.current_date_time}}",
+            "operator": "dateTimeGreaterThanOrEquals",
+            "value": "2022-12-23T00:00:00+00:00"
+          },
+          {
+            "key": "{{environment.attributes.current_date_time}}",
+            "operator": "dateTimeLessThanOrEquals",
+            "value": "2022-12-23T23:59:59+00:00"
+          }
+        ]
+      },
+      "subject": {
+        "attributes": [
+          {
+            "key": "iam_id",
+            "operator": "stringEquals",
+            "value": "IBMid-550000HFVV"
+          }
+        ]
+      }
+    }
+    ```
+    {: codeblock}
 
-```json
-{
-	"type": "access",
-  "description": "time-based conditions policy example restricting access to the full day of 2022-12-23 UTC",
-	"control": {
-		"grant": {
-			"roles": [
-				{
-					"role_id": "crn:v1:bluemix:public:iam::::role:Operator"
-				}
-			]
-		}
-	},
-	"resource": {
-		"attributes": [
-			{
-				"operator": "stringEquals",
-				"value": "d4b763ad0cbd4dca8dd1edb427d7a77e",
-				"key": "accountId"
-			},
-			{
-				"value": "platform_service",
-				"operator": "stringEquals",
-				"key": "serviceType"
-			}
-		]
-	},
-  "pattern": "time-based-conditions:once",
-	"rule": {
-		"operator": "and",
-		"conditions": [
-			{
-				"key": "{{environment.attributes.current_date_time}}",
-				"operator": "dateTimeGreaterThanOrEquals",
-				"value": "2022-12-23T00:00:00+00:00"
-			},
-			{
-				"key": "{{environment.attributes.current_date_time}}",
-				"operator": "dateTimeLessThanOrEquals",
-				"value": "2022-12-23T23:59:59+00:00"
-			}
-		]
-	},
-	"subject": {
-		"attributes": [
-			{
-				"key": "iam_id",
-        "operator": "stringEquals",
-				"value": "IBMid-550000HFVV"
-			}
-		]
-	}
-}
-```
-{: codeblock}
-
-Temporary policies, which use the pattern `time-based-conditions:once`, aren't automatically removed. To avoid reaching the policy limit in the account, administrators can remove the policy manually after it expires.
+Temporary policies, which use the pattern `time-based-conditions:once`, aren't automatically removed when they expire. To avoid reaching the policy limit in the account, administrators can remove the policy manually after it expires.
 {: note}
 
 For more information about time-based conditions for access policies, see [Conditions in access policies](/docs/account?topic=account-iam-condition-properties&interface=ui#policy-condition-properties).
@@ -540,79 +536,74 @@ The following example shows you how to create a recurring time-based condition f
    ```
    {: codeblock}
 
-1. Use the following JSON to create a weekly condition:
+1. Use the following example of a recurring weelky time-based policy in JSON schema to create your own conditions:
 
-
-### Example of time-based weekly access policy JSON
-{: #iam-time-based-recur-cli-ex}
-{: cli}
-
-```json
-{
-	"type": "access",
-  "description": "time-based conditions policy example restricting access to the full day of 2022-12-23 UTC",
-	"control": {
-		"grant": {
-			"roles": [
-				{
-					"role_id": "crn:v1:bluemix:public:iam::::role:Editor"
-				}
-			]
-		}
-	},
-	"resource": {
-		"attributes": [
-			{
-				"operator": "stringEquals",
-				"value": "d4b763ad0cbd4dca8dd1edb427d7a77e",
-				"key": "accountId"
-			},
-			{
-				"value": "platform_service",
-				"operator": "stringEquals",
-				"key": "serviceType"
-			}
-		]
-	},
-  "pattern": "time-based-conditions:weekly",
-	"rule": {
-		"operator": "and",
-		"conditions": [
-			{
-				"key": "{{environment.attributes.day_of_week}}",
-				"operator": "dayOfWeekAnyOf",
-				"value": [
-					1,
-					2,
-					3,
-					4,
-					5
-				]
-			},
-			{
-				"key": "{{environment.attributes.current_time}}",
-				"operator": "timeGreaterThanOrEquals",
-				"value": "00:00:00+00:00"
-			},
-			{
-				"key": "{{environment.attributes.current_time}}",
-				"operator": "timeLessThanOrEquals",
-				"value": "23:59:59+00:00"
-			}
-		]
-	},
-	"subject": {
-		"attributes": [
-			{
-				"key": "iam_id",
-        "operator": "stringEquals",
-				"value": "IBMid-550000HFVV"
-			}
-		]
-	}
-}
-```
-{: codeblock}
+    ```json
+    {
+      "type": "access",
+      "description": "time-based conditions policy example restricting access to the full day of 2022-12-23 UTC",
+      "control": {
+        "grant": {
+          "roles": [
+            {
+              "role_id": "crn:v1:bluemix:public:iam::::role:Editor"
+            }
+          ]
+        }
+      },
+      "resource": {
+        "attributes": [
+          {
+            "operator": "stringEquals",
+            "value": "d4b763ad0cbd4dca8dd1edb427d7a77e",
+            "key": "accountId"
+          },
+          {
+            "value": "platform_service",
+            "operator": "stringEquals",
+            "key": "serviceType"
+          }
+        ]
+      },
+      "pattern": "time-based-conditions:weekly",
+      "rule": {
+        "operator": "and",
+        "conditions": [
+          {
+            "key": "{{environment.attributes.day_of_week}}",
+            "operator": "dayOfWeekAnyOf",
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "key": "{{environment.attributes.current_time}}",
+            "operator": "timeGreaterThanOrEquals",
+            "value": "00:00:00+00:00"
+          },
+          {
+            "key": "{{environment.attributes.current_time}}",
+            "operator": "timeLessThanOrEquals",
+            "value": "23:59:59+00:00"
+          }
+        ]
+      },
+      "subject": {
+        "attributes": [
+          {
+            "key": "iam_id",
+            "operator": "stringEquals",
+            "value": "IBMid-550000HFVV"
+          }
+        ]
+      }
+    }
+    ```
+    {: codeblock}
 
 For more information about time-based conditions for access policies, see [Conditions in access policies](/docs/account?topic=account-iam-condition-properties&interface=ui#policy-condition-properties).
 
