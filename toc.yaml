@@ -217,6 +217,17 @@
           - topicgroup:
               label: Centrally managing products with catalogs
               topics:
+              - cm-video.md
+              - topicgroup:
+                  label: Customizing access to products
+                  topics:
+                  - catalog-custom-private.md
+                  - catalog-enterprise-filters.md
+              - topicgroup:
+                  label: Managing catalogs
+                  topics:
+                  - catalog-settings.md
+                  - catalog-audit-logs.md
               - topicgroup:
                   label: Onboarding products
                   topics:
@@ -229,11 +240,6 @@
                   topics:
                   - catalog-enterprise-share.md
               - topicgroup:
-                  label: Customizing access to products
-                  topics:
-                  - catalog-custom-private.md
-                  - catalog-enterprise-filters.md
-              - topicgroup:
                   label: Managing product versions
                   topics:
                   - catalog-reload-version.md
@@ -242,11 +248,6 @@
                   - catalog-deprecate.md
                   - catalog-restore.md
                   - catalog-suspend-version.md
-              - topicgroup:
-                  label: Managing catalogs
-                  topics:
-                  - catalog-settings.md
-                  - catalog-audit-logs.md
               - software-license.md
               - catalog-access-reqs.md
           - topicgroup:
