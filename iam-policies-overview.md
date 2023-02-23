@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2015, 2022
+  years: 2015, 2023
 
-lastupdated: "2022-09-26"
+lastupdated: "2023-02-23"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -66,7 +66,7 @@ In {{site.data.keyword.cloud_notm}}, a user, service ID, or the members of an ac
 To reduce the number of policies in the account and keep only the minimum access that is required for each user, you can identify and remove the infrequently used access policies. For more information, see [Managing inactive policies](/docs/account?topic=account-iam-audit-policies#iam-audit-policies-list).
 {: tip}
 
-When you specify a resource in a policy because {{site.data.keyword.cloud_notm}} is [attribute-based](#how-iam-works), you can specify a broad set of resources for a user to have access to, for example all resources in a resource group. Or, you can narrow the user's access to a specific instance of a single service or even a subresource type, such as a {{site.data.keyword.cos_short}} bucket. {{site.data.keyword.cloud_notm}} IAM provides a high level of flexibility and granularity to help you assign only the type of access that is required. A few examples of the different levels of access that you can assign by using attributes in an access policy are the following:
+When you specify a resource in a policy because {{site.data.keyword.cloud_notm}} is [attribute-based](/docs/account?topic=account-iamusermanpol#how-iam-works), you can specify a broad set of resources for a user to have access to, for example all resources in a resource group. Or, you can narrow the user's access to a specific instance of a single service or even a subresource type, such as a {{site.data.keyword.cos_short}} bucket. {{site.data.keyword.cloud_notm}} IAM provides a high level of flexibility and granularity to help you assign only the type of access that is required. A few examples of the different levels of access that you can assign by using attributes in an access policy are the following:
 
 * All Account Management services
 * A specific account management service
