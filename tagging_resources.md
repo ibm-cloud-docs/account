@@ -4,8 +4,7 @@ copyright:
 
   years: 2018, 2023
 
-lastupdated: "2023-01-18"
-
+lastupdated: "2023-02-23"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, full list of tags, how to use tags
 
@@ -60,7 +59,7 @@ You don't need to create user tags to attach them to resources or service IDs. F
 {: #create-access-console}
 {: ui}
 
-Before you can attach your access management tags to individual resources or service IDs, you need to create them first. To create access management tags, you must have the administrator role on either the Tagging Service or on All Account management services.
+Before you can attach your access management tags to individual resources or service IDs, you need to create them first. To create access management tags, you must have the administrator role on either the **Tagging Service** or on **All Account management services**.
 
 {{site.data.keyword.cloud}} allows up to 250 access management tags per account.
 {: note}
@@ -92,7 +91,7 @@ Before you can attach your access management tags to individual resources or ser
 
     If it's your first time using the {{site.data.keyword.cloud_notm}} CLI, check out the [getting started tutorial](/docs/cli?topic=cli-getting-started).
 
-2. Enter the **`ibmcloud resource tag-create`** command to create an access management tag in your account. This example creates a tag that is called `project:myproject`:
+1. Enter the **`ibmcloud resource tag-create`** command to create an access management tag in your account. This example creates a tag that is called `project:myproject`:
 
     ```bash
     ibmcloud resource tag-create --tag-names project:myproject
@@ -230,7 +229,6 @@ Use the following steps to create access management tags by using Terraform:
       ```
       {: pre}
 
-
 ## Searching for tags in the console
 {: #search-tags}
 {: ui}
@@ -256,6 +254,55 @@ To search for tags by using the CLI, see [Searching for resources](/docs/account
 
 To search for tags by using the API, see [Searching for resources](/docs/account?topic=account-searching-for-resources#searching-api).
 
+A common use case for searching for tags by using the API is retrieving the tags that are attached to a resource. There are a couple of options for doing that.
+
+The preferred option is the [Search API](/apidocs/doc_search){: external}, as shown in the following example.
+
+```bash
+curl -s -H'Content-type:application/json' -H'Accept:application/json' -H"Authorization:Bearer $IAM_TOKEN" \
+-X POST 'https://api.global-search-tagging.cloud.ibm.com/v3/resources/search' \
+-d'{"query":"crn:\"crn:v1:bluemix:public:codeengine:us-south:a/aabbccddeeff00112233445566778899:aabbccdd-1234-4321-aaaa-001122334455::\"", \
+"fields":["crn","name","tags", "access_tags", "service_tags"]}'
+```
+{: codeblock}
+
+If the resource with the given CRN exists and you can read it, then you get the following example output, which includes all of the tag types attached to the resource:
+
+```JSON
+{
+  "items": [
+    {
+      "name": "my-codeengine-instance",
+      "crn": "crn:v1:bluemix:public:codeengine:us-south:a/aabbccddeeff00112233445566778899:aabbccdd-1234-4321-aaaa-001122334455::",
+      "tags": ["one", "two"],
+      "access_tags": ["atag:one", "another-tag:two"],
+       "service_tags": ["service-tag:one", "service-tag:two"]
+     }
+  ],
+  "limit": 10,
+  "search_cursor": "..."
+}
+```
+{: codeblock}
+
+You can also use the [Get tags](https://cloud.ibm.com/apidocs/tagging#list-tags) API with the `attached_to` query parameter to obtain the same result. However, the Get tags API is strictly rate limited and doesn't return all of the tag types in a single call as the `/v3/resources/search` does which is the reason it's not the suggested method.
+
+If you need to accomplish the task by using the `ibmcloud` command line, then use the `resource search` command. By default, it outputs all of the tags that are attached to the resources.
+
+For example, if you use the command `ibmcloud resource search name:my-codeengine-instance`, you get the following output:
+
+```bash
+Name:                my-codeengine-instance
+Location:            us-south
+Family:              resource_controller
+Resource Type:       resource-instance
+Resource Group ID:   a58ebff30cab4b30bc67de9fec9cfda5
+CRN:                 crn:v1:staging:public:codeengine:us-south:a/aa00ffbccdb34a6fbe7a6499ce091aaa:0a01030b-1234-1234-aaaa-002245318e88::
+Tags:                one,two
+Service Tags:        service-tag:one,service-tag:two
+Access Tags:         atag:one,another-tag:two
+```
+{: codeblock}
 
 ## Tagging for resellers
 {: #resell}
