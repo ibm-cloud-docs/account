@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023
-lastupdated: "2023-02-22"
+lastupdated: "2023-02-23"
 keywords: access policy, access, policy, restriction, time based restriction, time based, time based conditions, conditions
 
 subcollection: account
@@ -17,7 +17,8 @@ subcollection: account
 Set up time-based conditions to designate temporary access to resources in your account or allow access to resources during specific time windows. You can create time-based conditions that grant one-time temporary access for a specific time and date range, or you can set up recurring weekly access. For example, you might want to give a user access to account resources during only their working hours by specifying recurring access, or you might have a contractor or a user that needs to demo features of a service and they only need temporary access.
 {: shortdesc}
 
-Time-based conditions don't account for Daylight Saving Time (DST) changes for time zones that observe DST. Administrators can update the policies according to DST changes to accurately enforce time-based conditions. For example, the Eastern time zone is UTC-4 hours during Daylight Saving Time rather than -5 hours as it is during standard time. Standard time begins in November and ends in March, when DST begins.
+Time-based conditions don't account for Daylight Saving Time (DST) changes for time zones that observe DST. Administrators must update the policies according to DST changes to accurately enforce time-based conditions. For example, the Eastern time zone is UTC-4 hours during Daylight Saving Time rather than -5 hours as it is during standard time. Standard time begins in November and ends in March, when DST begins.
+{: important}
 
 The {{site.data.keyword.containershort}} doesn't adhere to time-based conditions. For example, a policy with a time-based condition that grants access to All Identity and Access enabled services includes access to {{site.data.keyword.containershort}} resources. The subject of the policy has access to some {{site.data.keyword.containershort}} resources outside of the specified time-based condition.
 {: preview}
