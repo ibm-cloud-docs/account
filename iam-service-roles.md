@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-02-22"
+lastupdated: "2023-02-23"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1362,6 +1362,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Logs Reader | As a logs reader, you can view user conversations and analytics. |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Version Maker | As a Version Maker, you will be able to create or delete versions of your assistant. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 29. Service roles - Watson Assistant" caption-side="top"}
@@ -1386,6 +1387,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `conversation.logs.read` | Can view skill analytics and access user conversation logs. | Logs Reader, Manager |
 | `conversation.assistant.list` | Can list assistant or skill | Manager, Reader, Viewer, Writer |
 | `conversation.assistant.default` | Default access for Assistant | Manager, Reader, Viewer, Writer |
+| `conversation.environment.write` | Can rename, edit, or delete an environment | Manager, Writer |
+| `conversation.environment.read` | Can open and view an environment | Manager, Reader, Writer |
+| `conversation.release.write` | Can create or delete a Release for an Assistant | Manager, Version Maker, Writer |
 {: caption="Table 29. Service actions - Watson Assistant" caption-side="top"}
 {: #actions-table29}
 {: tab-title="Actions"}
