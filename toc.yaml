@@ -82,6 +82,7 @@
                   - iam-totp.md
                   - iam-external_mfa.md
                   - iam-securityquestions.md
+                  - iam-federation-guide.md
                   - iam-idp-integration.md
                   - iam-ent-idp-ibmid.md
                   - iam-connect_dedicated_id.md
