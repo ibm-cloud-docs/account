@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2023
 
-lastupdated: "2023-02-23"
+lastupdated: "2023-02-27"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, full list of tags, how to use tags
 
@@ -256,7 +256,7 @@ To search for tags by using the API, see [Searching for resources](/docs/account
 
 A common use case for searching for tags by using the API is retrieving the tags that are attached to a resource. There are a couple of options for doing that.
 
-The preferred option is the [Search API](/apidocs/doc_search){: external}, as shown in the following example.
+The preferred option is the [Search API](/apidocs/search){: external}, as shown in the following example.
 
 ```bash
 curl -s -H'Content-type:application/json' -H'Accept:application/json' -H"Authorization:Bearer $IAM_TOKEN" \
