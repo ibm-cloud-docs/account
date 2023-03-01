@@ -204,7 +204,6 @@
               - topicgroup:
                   label: Setting up an enterprise
                   topics:
-                  - enterprise-using-account.md
                   - enterprise-create.md
                   - enterprise-add-accounts.md
                   - enterprise-organize-accounts.md
