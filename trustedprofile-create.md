@@ -2,10 +2,10 @@
 
 copyright:
 
-  years: 2021, 2022
+  years: 2021, 2023
 
 
-lastupdated: "2022-11-28"
+lastupdated: "2023-03-01"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access, access group
 
@@ -133,7 +133,7 @@ Complete the following steps to define which federated users can access specific
    ```
    {: codeblock}
 
-   For more information, see the [CLI reference](/docs/account?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_create).
+   For more information, see the [CLI reference](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_create).
 
 1. To create conditions for your trusted profile, run the `ibmcloud iam trusted-profile-rule-create` command:
 
@@ -142,7 +142,7 @@ Complete the following steps to define which federated users can access specific
    ```
    {: codeblock}
 
-   For more information, see the [CLI reference](/docs/account?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_rule_create).
+   For more information, see the [CLI reference](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_rule_create).
 
 1. Create an access policy with the `Viewer` role for all resources in the account by running the following command:
 
@@ -151,7 +151,7 @@ Complete the following steps to define which federated users can access specific
    ```
    {: codeblock}
 
-   For more information, see the [CLI reference](/docs/account?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_policy_create).
+   For more information, see the [CLI reference](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_policy_create).
 
 
 ## Establishing trust with compute resources by using the CLI
