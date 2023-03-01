@@ -73,12 +73,12 @@
         {
           "date": "27 January 2023",
           "title": "New services integrating with context-based restrictions",
-          "description": "Services continue to integrate with the {{site.data.keyword.Bluemix_notm}} platform's context-based restrictions feature, including {{site.data.keyword.vpc_full}} (VPC) Infrastructure Services."
+          "description": "Services continue to integrate with the IBM Cloud platform's context-based restrictions feature, including Virtual Private Cloud (VPC) Infrastructure Services."
         },
         {
           "date": "25 January 2023",
           "title": "Time-based conditions in IAM access policies",
-          "description": "{{site.data.keyword.Bluemix_notm}} IAM is excited to give customers the ability to set access controls based on a specified time and date. You can now create policies that grant employees access to a resource during only their working hours, or grant automated processes temporary access for a specified duration. Implementing such limitations helps you to apply the principle of least privilege for assigning access and reduces the opportunity for attack in the event of a security breach."
+          "description": "IBM Cloud IAM is excited to give customers the ability to set access controls based on a specified time and date. You can now create policies that grant employees access to a resource during only their working hours, or grant automated processes temporary access for a specified duration. Implementing such limitations helps you to apply the principle of least privilege for assigning access and reduces the opportunity for attack in the event of a security breach."
         }
       ]
     }
