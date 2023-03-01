@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2021
-lastupdated: "2021-11-29"
+  years: 2018, 2023
+lastupdated: "2023-03-01"
 
 keywords: user state, user status, change user status, update user status
 
@@ -13,7 +13,6 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-
 # Updating a user's status
 {: #status}
 
@@ -23,20 +22,23 @@ The status for a user depends on if the user accepted their invitation to join t
 If you have the following access, you can update the status of another user:
 
 * An Identity and access management (IAM) policy with Editor or higher role on the User management service.
-* You are an ancestor in the classic infrastructure hierarchy for the user and you have the Manage users classic infrastructure permission assigned.
+* You are an ancestor in the classic infrastructure hierarchy for the user and you have the Manage users classic infrastructure permission assigned
 
 All account users are assigned a status that describes their user state. A user's status is displayed on the User details page.
 
-| User state | Description |
-|------------|-------------|
-| Active | The user accepted the invitation and has the assigned access to work within the account. |
+| User state                      | Description                                                                                                                                                   |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Active                          | The user accepted the invitation and has the assigned access to work within the account.                                                                      |
 | Disabled classic infrastructure | The account owner or a user with sufficient permissions can set another user as disabled so that the user can no longer access classic infrastructure resources. The user can continue to log in to the console and access platform resources or support cases. |
-| Invalid | A user's IAMid is deleted, and they can't access IAM-enabled resources. The user retains VPN access and can still use their classic infrastructure API key, but can't log in to the console. |
-| Pending | A state in which a user is invited but hasn't accepted the invitation or joined the account by creating an {{site.data.keyword.Bluemix_notm}} account. |
-| Processing | A rarely viewed state in which the user is added to an invite, the system creates the first instance of the user, but the invite hasn't been sent. |
-| Suspended | The account owner or a user with sufficient permissions can set another user as suspended so that the user can no longer access resources in the {{site.data.keyword.Bluemix_notm}} account. This is a temporary alternative to removing a user. No information or policies that are associated with the account are removed. |
-| VPN-only | A user that is created in the account, but is restricted to VPN access only for devices. This type of user doesn't have access to log in to the console. |
+| Invalid                   | A user's IAMid is deleted, and they can't access IAM-enabled resources. The user retains VPN access and can still use their classic infrastructure API key, but can't log in to the console. |
+| Pending                         | A state in which a user is invited but hasn't accepted the invitation or joined the account by creating an {{site.data.keyword.Bluemix_notm}} account. |
+| Processing                      | A rarely viewed state in which the user is added to an invite, the system creates the first instance of the user, but the invite hasn't been sent.    |
+| Suspended                       |  The account owner or a user with sufficient permissions can set another user as suspended, which is a temporary alternative to removing a user. Access grants that are associated with the user through policies, access groups, or trusted profiles are not removed. Suspended users can't log in to the console or use the CLI to access the account. They might still be able to access resources in your account.|
+| VPN-only                        | A user that is created in the account, but is restricted to VPN access only for devices. This type of user doesn't have access to log in to the console.      |
 {: caption="Table 1. User status" caption-side="top"}
+
+A suspended user in your account might generate an IAM token by using an API key that exists in a different account where the user isn't suspended. Because an IAM token authenticates a user's identity across all accounts that they're a member of, a suspended user in your account might use a token from another account to continue accessing resources in your account. To revoke all access for a user, remove them from the account or delete all access grants. For more information, see [Removing users from an account](/docs/account?topic=account-remove) and [Managing user API keys](/docs/account?topic=account-userapikey).
+{: important}
 
 ## Updating a user's status
 {: #update_user_status}
@@ -60,7 +62,7 @@ Disabled classic infrastructure
 :   The user can no longer access classic infrastructure resources, but can continue to log in to the console and access platform resources.
 
 Suspended
-:   The user can log in to the console and view the account in their account list, but can no longer access resources in the account. All information and access policies that are associated with the account are saved.
+:   The user can't log in to the console, view the account in their account list, or use the CLI. All information and access policies that are associated with the user are saved.
 
 VPN-only
 :   The user can't log in to the console, but they can access the devices and VPN subnets that you assign for classic infrastructure by logging in directly to the appliance.
