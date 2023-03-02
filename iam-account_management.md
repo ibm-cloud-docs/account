@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2023
 
-lastupdated: "2023-01-18"
+lastupdated: "2023-03-02"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, access management service, catalog management service, cloud shell service, software instance service
 
@@ -30,7 +30,7 @@ To assign access to one or all account management services, complete the followi
 
 1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Access (IAM)**, and then select **Users**.
 1. Click the user that you want to assign access, then go to **Access** > **Assign access**.
-1. For the service, select **All Account Management Services** or select a specific account management service. Then, click **Next**.
+1. For the service, select **All Account Management services** or select a specific account management service. Then, click **Next**.
 1. Scope the access to **All resources** or **Specific resources**. Then, click **Next**.
 1. Select any combination of roles or permissions, and click **Review**.
 1. Click **Add** to add your policy configuration to your policy summary.
@@ -41,34 +41,35 @@ To grant another user full access to the account for the purposes of managing us
 Users with the Administrator role for account management services can change the access of other users and remove users from the account, including other users with the administrator role.
 {: important}
 
-### Assigning access to IAM account management services in the console
-{: #console-iam-services}
-{: ui}
-
-You can assign access to All IAM Account Management services, which is a subset of account management services that includes IAM Identity, IAM Access Management, IAM User Management, IAM Groups, and future IAM services. To assign access to this group of services, you must be the account owner, or a user that's assigned the administrator role on All IAM Account Management services or All Account Management services.
-
-Some roles that you might assign on a policy for **All IAM Account Management services** affect only certain resources. For example, the role Service ID Creator is relevant to only the IAM Identity service.
-{: note}
-
-To assign access to All IAM Account Management services, complete the following steps:
-
-1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Access (IAM)**, and then select **Users**.
-1. Click the user that you want to assign access, then go to **Access policies** > **Assign access**.
-1. For the service, select **All IAM Account Management services**. Then, click **Next**.
-1. Select any combination of roles or permissions, and click **Review**.
-1. Click **Add** to add your policy configuration to your policy summary.
-1. Click **Assign**.
-
 ## Actions and roles for account management services
 {: #account-management-actions-roles}
 {: ui}
 
 The following tables outline the actions that users can take when they are assigned a specific role for each account management service. Review the information to ensure that you are assigning the correct level of access to your users.
 
-### All account management services
+### All Account Management services
 {: #all-account-management}
 
-To quickly give users a wide range of account management access, you can assign a policy on all account management services. Depending on the role that you select, all applicable actions per the selected role for each account management service can be completed by the subject of the policy.
+To quickly give users a wide range of account management access, you can assign a policy on all account management services. When a user is assigned a role on **All Account Management services**, they can complete all of the actions that are associated with that role for each individual service.
+
+Give users access to the group of **All Account Management services** so that they can work with the following services:
+- IAM Access Groups
+- IAM Identity service
+- IAM Access Management
+   - Role management
+- User Management
+- Billing
+- Catalog management
+- Context-based restrictions
+- Enterprise
+- Global catalog
+- IBM Cloud shell settings
+- License and entitlement
+- Partner Center
+- Partner Center - Sell
+- Security and Compliance Center
+- Software instance
+- Support center
 
 | Roles         | Actions                                                                                                      |
 |---------------|--------------------------------------------------------------------------------------------------------------|
@@ -77,6 +78,32 @@ To quickly give users a wide range of account management access, you can assign 
 | Editor        | All editor role actions for the account management services and the ability to create resource groups        |
 | Administrator | All administrator role actions for the account management services and the ability to create resource groups |
 {: caption="Table 1. Roles and example actions for a policy on all account management services" caption-side="top"}
+
+
+### All IAM Account Management services
+{: #all-iam}
+
+Identity and Access Management (IAM) services make up a subset of all account management services. Give users access to the group of **All IAM Account Management services** so that they can work with the following services:
+
+- IAM Access Groups
+- IAM Identity service
+- IAM Access Management
+   - Role Management
+- User Management
+
+
+| Roles         | Actions                                                                                                      |
+|---------------|--------------------------------------------------------------------------------------------------------------|
+| Viewer        | All viewer role actions for IAM services                                                  |
+| Operator      | All operator role actions for IAM services                                                |
+| Editor        | All editor role actions for IAM services and the ability to create resource groups        |
+| Administrator | All administrator role actions for IAM services and the ability to create resource groups |
+| User API key creator | Create API keys when the account setting to restrict API key creation is enabled |
+| Service ID creator | Create service IDs when the account setting to restrict service ID creation is enabled |
+{: caption="Table 2. Roles and example actions for a policy on all IAM account management services" caption-side="top"}
+
+Some roles that you might assign on a policy for **All IAM Account Management services** affect only certain resources. For example, the role Service ID Creator is relevant to only the IAM Identity service.
+{: note}
 
 ### Billing
 {: #billing-acct-mgmt}
@@ -89,7 +116,7 @@ You can give users access to update account settings, view subscriptions, view o
 | Operator      | View account feature settings   \n  \n View subscriptions in account   \n  \n View and change account name |
 | Editor        | View and update account feature settings   \n  \n View subscriptions in account   \n  \n View offers in account   \n  \n View and apply subscription and feature codes   \n  \n View and change account name   \n  \n View and update spending limits   \n  \n Set spending notifications   \n  \n View subscription balances and track usage |
 | Administrator | View and update account feature settings   \n  \n View subscriptions in account   \n  \n View offers in account   \n  \n View and apply subscription and feature codes   \n  \n View and change account name   \n  \n View and update spending limits   \n  \n Set spending notifications   \n  \n View subscription balances and track usage   \n  \n Create an enterprise |
-{: caption="Table 2. Roles and example actions for the Billing service" caption-side="top"}
+{: caption="Table 3. Roles and example actions for the Billing service" caption-side="top"}
 
 It's possible to view subscription balances and usage from the Account settings page, but you can't view the Account settings page with the Viewer or Operator roles. To access the Account settings page and your subscription information from that page, you need the Editor role or higher.
 {: note}
@@ -106,12 +133,12 @@ You can give users access to view private catalogs and catalog filters, create p
 | Editor        | Create private catalogs   \n  \n Set filters for private catalogs   \n  \n Add and update software   \n  \n View account-level filters |
 | Administrator | Set account-level filters for the {{site.data.keyword.cloud_notm}} catalog   \n  \n Create, update, and delete private catalogs   \n  \n Publish {{site.data.keyword.IBM_notm}}-approved products   \n  \n Assign access policies |
 | Publisher     | Publish products that are approved by {{site.data.keyword.IBM_notm}} from a private catalog |
-{: caption="Table 3. Roles and example actions for the catalog management service" caption-side="top"}
+{: caption="Table 4. Roles and example actions for the catalog management service" caption-side="top"}
 
 ### Context-Based Restrictions
 {: #cbr-account-management}
 
-You can give users access to view, create, update, and remove network zones. To create a context-based restriction rule for a service, you must be assigned an IAM policy with the Administrator role the service you are creating a rule against. For example, if you want to create a rule to protect a **Key Protect** instance, you must be assigned the Administrator role on the **Key Protect** service and the Viewer role or higher on the  **Context-based restrictions** service.
+You can give users access to view, create, update, and remove network zones. To create a context-based restriction rule for a service, you must be assigned an IAM policy with the Administrator role the service you are creating a rule against. For example, if you want to create a rule to protect a **Key Protect** instance, you must be assigned the Administrator role on the **Key Protect** service and the Viewer role or higher on the **Context-based restrictions** service.
 
 The Viewer role on the Context-based restrictions service allows you to add network zones to your rule.
 {: note}
@@ -121,7 +148,7 @@ The Viewer role on the Context-based restrictions service allows you to add netw
 | Viewer        | View network zones|
 | Editor        | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones  |
 | Administrator | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones |
-{: caption="Table 4. Roles and example actions for the context-based restrictions service" caption-side="top"}
+{: caption="Table 5. Roles and example actions for the context-based restrictions service" caption-side="top"}
 
 ### Enterprise
 {: #enterprise-account-management}
@@ -135,7 +162,7 @@ You can use the Enterprise service to assign users access to manage an enterpris
 | Editor              | View and update the enterprise name and domain, create accounts and account groups, view usage reports, and import accounts. |
 | Administrator       | View and update the enterprise name and domain, create accounts and account groups, move accounts between account groups, import existing accounts, and view usage reports |
 | Usage report viewer | View the enterprise, accounts, and account groups and view usage reports for all accounts in the enterprise.                               |
-{: caption="Table 5. Roles and example actions for the Enterprise service" caption-side="top"}
+{: caption="Table 6. Roles and example actions for the Enterprise service" caption-side="top"}
 
 ### Global catalog
 {: #global-catalog-account-management}
@@ -148,7 +175,7 @@ You can give users access to view private products in the catalog or change the 
 | Operator      | View private services                                                                                  |
 | Editor        | Change object metadata but can't change visibility for private services                                |
 | Administrator | Change object metadata or visibility for private services, and restrict visibility of a public service |
-{: caption="Table 6. Roles and example actions for the Global Catalog service" caption-side="top"}
+{: caption="Table 7. Roles and example actions for the Global Catalog service" caption-side="top"}
 
 ### IAM Access Groups
 {: #access-groups-account-management}
@@ -160,8 +187,37 @@ You can give users access to view, create, edit, and delete access groups in the
 | Viewer        | View access groups and members                                                                                                                             |
 | Operator      | Not applicable                                                                                                                                             |
 | Editor        | View, create, edit, and delete groups   \n  \n Add or remove users from groups                                                                             |
-| Administrator | View, create, edit, and delete groups   \n  \n Add or remove users including other administrators   \n  \n Assign access to a group   \n  \n Manage access for working with access groups   \n  \n Enable or disable public access to resources at the account level |
-{: caption="Table 7. Roles and example actions for the IAM access groups service" caption-side="top"}
+| Administrator | View, create, edit, and delete groups   \n  \n Add or remove users including other administators  \n  \n Assign access to a group   \n  \n Manage access for working with access groups   \n  \n Enable or disable public access to resources at the account level |
+{: caption="Table 8. Roles and example actions for the IAM access groups service" caption-side="top"}
+
+
+### IAM Access Management service
+{: #access-management}
+
+You can give users access to manage access policies and custom roles.
+
+| Roles         | Actions                         |
+|---------------|---------------|
+| Viewer        | View access policies and custom roles   |
+| Operator      | View access policies and custom roles   |
+| Editor        | View and edit custom roles   \n  \n View IAM insights, policies, and settings |
+| Administrator | View, create, edit, and delete custom roles   \n  \n View and update IAM settings  \n  \n Assign access to a group   \n  \n View, create, edit, and delete access policies |
+{: caption="Table 9. Roles and example actions for the IAM Access Management service" caption-side="top"}
+
+#### Role Management
+{: #custom-roles-account-management}
+
+You can give users access to create, update, and delete custom roles for services in the account.
+Child service of the IAM Access Management service.
+
+| Roles         | Actions                            |
+|---------------|------------------------------------|
+| Viewer        | View custom roles         |
+| Operator      | Not applicable         |
+| Editor        | Edit and update custom roles in an account |
+| Administrator | Create, edit, update, and delete custom roles in an account  |
+{: caption="Table 10. Roles and example actions for the Role Management service" caption-side="top"}
+
 
 ### IAM Identity service
 {: #identity-service-account-management}
@@ -176,7 +232,7 @@ You can give users access to manage service IDs and identity providers (IdPs) by
 | Administrator | Create, update, and delete IDs and API keys   \n  \n Assign access policies to IDs   \n  \n View, create, update, and delete IdPs   \n  \n Update IAM account setting for service IDs and user API key creation   \n  \n Create trusted profiles |
 | User API Key Creator | Can create API keys when the account setting to restrict API key creation is enabled. |
 | Service ID Creator | Can create service IDs when the account setting to restrict service ID creation is enabled. |
-{: caption="Table 8. Roles and example actions for the IAM Identity service" caption-side="top"}
+{: caption="Table 11. Roles and example actions for the IAM Identity service" caption-side="top"}
 {: #identity-service-acct-mgmt-ui}
 
 ### {{site.data.keyword.cloud-shell_notm}} settings
@@ -193,7 +249,7 @@ You can assign users access to view and update {{site.data.keyword.cloud-shell_n
 | Cloud Operator | Create {{site.data.keyword.cloud-shell_short}} environments to manage {{site.data.keyword.cloud_notm}} resources. |
 | Cloud Developer | Create {{site.data.keyword.cloud-shell_short}} environments to manage {{site.data.keyword.cloud_notm}} resources and develop applications for {{site.data.keyword.cloud_notm}} (Web Preview enabled). |
 | File Manager | Create {{site.data.keyword.cloud-shell_short}} environments to manage {{site.data.keyword.cloud_notm}}resources and manage files in your workspace (File Upload and File Download enabled). |
-{: caption="Table 9. Roles and example actions for the {{site.data.keyword.cloud-shell_notm}} service" caption-side="top"}
+{: caption="Table 12. Roles and example actions for the {{site.data.keyword.cloud-shell_notm}} service" caption-side="top"}
 
 ### License and entitlement
 {: #license-entitlement-management}
@@ -206,7 +262,8 @@ You can assign users access to manage licenses and entitlements within an accoun
 | Operator      |  Not applicable                                                                                            |
 | Editor        |  Editors can create entitlements and view, update, bind, or delete only the entitlements they acquired.    |
 | Administrator |  Administrators can create entitlements and view, update, bind, or delete any entitlements in the account. |
-{: caption="Table 10. Roles and example actions for the license and entitlement service" caption-side="top"}
+{: caption="Table 13. Roles and example actions for the license and entitlement service" caption-side="top"}
+
 
 ### Partner Center
 {: #pc-buildgrow-account-management}
@@ -219,7 +276,7 @@ You can give users access to view and edit partner profile details, offers, fast
 | Editor        | View and edit partner profile, offers, and fast tracks. Create, edit, and view support cases. |
 | Operator      |  |
 | Administrator | View and edit partner profile, offers, and fast tracks. Create, edit, and view support cases. |
-{: caption="Table 11. Roles and example actions for the Partner Center service" caption-side="top"}
+{: caption="Table 14. Roles and example actions for the Partner Center service" caption-side="top"}
 
 ### Partner Center - Sell
 {: #prod-lifecycle-account-management}
@@ -231,20 +288,8 @@ You can give users access to onboard, validate, and publish software.
 | Administrator | Create, edit, validate, and publish products |
 | Editor        | Validate and edit products |
 | Approver      | Approves or rejects a workflow instance's task |
-{: caption="Table 12. Roles and example actions for the Partner Center - Sell service" caption-side="top"}
+{: caption="Table 15. Roles and example actions for the Partner Center - Sell service" caption-side="top"}
 
-### Role Management
-{: #custom-roles-account-management}
-
-You can give users access to create, update, and delete custom roles for services in the account.
-
-| Roles         | Actions                            |
-|---------------|------------------------------------|
-| Viewer        | View custom roles         |
-| Operator      | Not applicable         |
-| Editor        | Edit and update custom roles in an account |
-| Administrator | Create, edit, update, and delete custom roles in an account  |
-{: caption="Table 13. Roles and example actions for the Access management service" caption-side="top"}
 
 ### {{site.data.keyword.compliance_short}}
 {: #security-compliance-account-management}
@@ -260,7 +305,7 @@ You can give users access to create, update, and delete resources for the {{site
 | Manager       | Permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader        | Perform read-only actions within a service such as viewing service-specific resources. |
 | Writer        | Permissions beyond the reader role, including creating and editing service-specific resources. |
-{: caption="Table 14. Roles and example actions for the {{site.data.keyword.compliance_short}} service" caption-side="top"}
+{: caption="Table 16. Roles and example actions for the {{site.data.keyword.compliance_short}} service" caption-side="top"}
 
 To access all of the {{site.data.keyword.compliance_short}}, you must also assign permissions for the Security Advisor service. For more information, see [Assigning access for the Security and Compliance Center](/docs/security-compliance?topic=security-compliance-access-management).
 {: note}
@@ -276,7 +321,7 @@ You can give users access to create, delete, or update a software instance. And,
 | Operator      | Update a software instance   \n  \n View the details page for the software instance |
 | Editor        | Create, delete, update a software instance   \n  \n View the details page for the software instance |
 | Administrator | Create, delete, update a software instance   \n  \n View the details page for the software instance   \n  \n View the logs for the software instance   \n  \n Assign IAM permissions |
-{: caption="Table 15. Roles and example actions for the Software instance service" caption-side="top"}
+{: caption="Table 17. Roles and example actions for the Software instance service" caption-side="top"}
 
 ### Support center
 {: #support-center-account-management}
@@ -289,7 +334,7 @@ You can give users access to manage support cases.
 | Operator      |  Not applicable                                                               |
 | Editor        |  View cases   \n  \n Search cases   \n  \n Update cases   \n  \n Create cases |
 | Administrator |  View cases   \n  \n Search cases   \n  \n Update cases   \n  \n Create cases |
-{: caption="Table 16. Roles and example actions for the Support Center service" caption-side="top"}
+{: caption="Table 18. Roles and example actions for the Support Center service" caption-side="top"}
 
 Assign users the viewer role on the user management service in addition to a support center access policy so the user can see all cases in the account regardless of user list visibility settings. If the user list visibility is set to be restricted, this can limit a user's ability to view, search, and manage support cases in an account that they didn't open themselves.
 {: tip}
@@ -305,11 +350,23 @@ You can give users access to view users in an account, invite and remove users, 
 | Operator      | View users in the account   \n  \n View user profile settings                                          |
 | Editor        | View, invite, remove, and update users from the account   \n  \n View and update user profile settings |
 | Administrator | View, invite, remove, and update users from the account   \n  \n View and update user profile settings |
-{: caption="Table 17. Roles and example actions for the User Management service" caption-side="top"}
+{: caption="Table 19. Roles and example actions for the User Management service" caption-side="top"}
 
 The viewer role on the user management service is a role that is commonly assigned for users assigned a role to view or manage support cases. If an account owner restricts the visibility of the user list in the IAM settings, users can't see support cases that are opened by other users in the account. However, if they are assigned the viewer role for the user management service, the user list visibility setting doesn't affect the ability to view cases in the account.
 {: tip}
 
+### {{site.data.keyword.atracker_short}} Event Routing
+{: #activty-tracker-account-management}
+
+You can give users access to run platform actions.
+
+| Roles         | Actions                                                                                                |
+|---------------|--------------------------------------------------------------------------------------------------------|
+| Viewer        | View {{site.data.keyword.atracker_short}} configuration resources such as routes and targets. |
+| Operator      | View {{site.data.keyword.atracker_short}} configuration resources such as routes and targets. |
+| Editor        | View, create, update, and delete {{site.data.keyword.atracker_short}} resources. |
+| Administrator | View, create, update, and delete {{site.data.keyword.atracker_short}} resources.   \n  \n Assign access policies to manage {{site.data.keyword.atracker_short}} resources to other users in the account. |
+{: caption="Table 20. Roles and example actions for the {{site.data.keyword.atracker_short}} Event Routing service" caption-side="top"}
 
 <!--- API --->
 
@@ -321,6 +378,8 @@ If you are assigning access by using the CLI or API, the account management serv
 
 | Account management service         | Attribute and value   |
 |---------------|---------------------------------|
+| All Account Management services | serviceType=platform_service |
+| All IAM Account Management services | service_group_id=IAM |
 | Billing | serviceName=billing |
 | Catalog management | serviceName=globalcatalog-collection |
 | Context-based restrictions | serviceName=context-based-restrictions|
@@ -334,8 +393,6 @@ If you are assigning access by using the CLI or API, the account management serv
 | {{site.data.keyword.compliance_short}} | serviceName=security-compliance |
 | Support center| serviceName=support |
 | User management | serviceName=user-management |
-| All Account Management services | serviceType=platform_service |
-| All IAM Account Management services | service_group_id=IAM |
 {: caption="Table 1. Account management service names" caption-side="top"}
 
 ## Assigning access by using the API
@@ -756,241 +813,67 @@ fmt.Println(string(b))
 {: go}
 {: codeblock}
 
-### Assigning access to IAM services by using the API
-{: #api-iam-services}
-{: api}
-
-You can assign access to All IAM Account Management services, which is a subset of account management services that includes IAM Identity, IAM Access Management, IAM User Management, IAM Groups, and future IAM services. To assign access to this group of services, you must be the account owner, or a user that's assigned the administrator role on All IAM Account Management services or All Account Management services.
-
-Some roles that you might assign on a policy for **All IAM Account Management services** affect only certain resources. For example, the role Service ID Creator (`crn:v1:bluemix:public:iam-identity::::serviceRole:ServiceIdCreator`) is relevant to only the IAM Identity service.
-{: note}
-
-The following example assigns a policy with the Administrator role on All IAM Account Management services:
-
-```bash
-curl -X POST \
-'https://iam.cloud.ibm.com/v1/policies' \
--H 'Authorization: $TOKEN'\
--H 'Content-Type: application/json'\
--d '{
-  "type": "access",
-  "subjects": [
-    {
-      "attributes": [
-        {
-          "name": "iam_id",
-          "value": "IBMid-123453user"
-        }
-      ]
-    }'
-  ],
-  "roles":[
-    {
-      "role_id": "crn:v1:bluemix:public:iam::::role:Administrator"
-    }
-  ],
-  "resources":[
-    {
-      "attributes": [
-        {
-          "name": "accountId",
-          "value": "$ACCOUNT_ID"
-        },
-        {
-          "name": "service_group_id",
-          "value": "IAM"
-        }
-      ]
-    }
-  ]
-}'
-```
-{: curl}
-{: codeblock}
-
-```java
-SubjectAttribute subjectAttribute = new SubjectAttribute.Builder()
-        .name("iam_id")
-        .value("EXAMPLE_USER_ID")
-        .build();
-
-PolicySubject policySubjects = new PolicySubject.Builder()
-        .addAttributes(subjectAttribute)
-        .build();
-
-PolicyRole policyRoles = new PolicyRole.Builder()
-        .roleId("crn:v1:bluemix:public:iam::::role:Administrator")
-        .build();
-
-ResourceAttribute accountIdResourceAttribute = new ResourceAttribute.Builder()
-        .name("accountId")
-        .value("exampleAccountId")
-        .operator("stringEquals")
-        .build();
-
-ResourceAttribute serviceNameResourceAttribute = new ResourceAttribute.Builder()
-        .name("service_group_id")
-        .value("IAM")
-        .operator("stringEquals")
-        .build();
-
-PolicyResource policyResources = new PolicyResource.Builder()
-        .addAttributes(accountIdResourceAttribute)
-        .addAttributes(service_group_idResourceAttribute)
-        .build();
-
-CreatePolicyOptions options = new CreatePolicyOptions.Builder()
-        .type("access")
-        .subjects(Arrays.asList(policySubjects))
-        .roles(Arrays.asList(policyRoles))
-        .resources(Arrays.asList(policyResources))
-        .build();
-
-Response<Policy> response = service.createPolicy(options).execute();
-Policy policy = response.getResult();
-
-System.out.println(policy);
-```
-{: java}
-{: codeblock}
-
-```javascript
-const policySubjects = [
-  {
-    attributes: [
-      {
-        name: 'iam_id',
-        value: "exampleUserId",
-      },
-    ],
-  },
-];
-const policyRoles = [
-  {
-    role_id: 'crn:v1:bluemix:public:iam::::role:Administrator',
-  },
-];
-const accountIdResourceAttribute = {
-  name: 'accountId',
-  value: 'exampleAccountId',
-  operator: 'stringEquals',
-};
-const serviceNameResourceAttribute = {
-  name: 'service_group_id',
-  value: 'IAM',
-  operator: 'stringEquals',
-};
-const policyResources = [
-  {
-    attributes: [accountIdResourceAttribute, service_group_idResourceAttribute]
-  },
-];
-const params = {
-  type: 'access',
-  subjects: policySubjects,
-  roles: policyRoles,
-  resources: policyResources,
-};
-
-iamPolicyManagementService.createPolicy(params)
-  .then(res => {
-    examplePolicyId = res.result.id;
-    console.log(JSON.stringify(res.result, null, 2));
-  })
-  .catch(err => {
-    console.warn(err)
-  });
-```
-{: javascript}
-{: codeblock}
-
-```python
-policy_subjects = PolicySubject(
-  attributes=[SubjectAttribute(name='iam_id', value='example_user_id')])
-policy_roles = PolicyRole(
-  role_id='crn:v1:bluemix:public:iam::::role:Administrator')
-account_id_resource_attribute = ResourceAttribute(
-  name='accountId', value=example_account_id)
-service_name_resource_attribute = ResourceAttribute(
-  name='service_group_id', value='IAM')
-policy_resources = PolicyResource(
-  attributes=[account_id_resource_attribute,
-        service_group_id_resource_attribute])
-
-policy = iam_policy_management_service.create_policy(
-  type='access',
-  subjects=[policy_subjects],
-  roles=[policy_roles],
-  resources=[policy_resources]
-).get_result()
-
-print(json.dumps(policy, indent=2))
-```
-{: python}
-{: codeblock}
-
-```go
-subjectAttribute := &iampolicymanagementv1.SubjectAttribute{
-  Name:  core.StringPtr("iam_id"),
-  Value: core.StringPtr("exampleUserID"),
-}
-policySubjects := &iampolicymanagementv1.PolicySubject{
-  Attributes: []iampolicymanagementv1.SubjectAttribute{*subjectAttribute},
-}
-policyRoles := &iampolicymanagementv1.PolicyRole{
-  RoleID: core.StringPtr("crn:v1:bluemix:public:iam::::role:Administrator"),
-}
-accountIDResourceAttribute := &iampolicymanagementv1.ResourceAttribute{
-  Name:     core.StringPtr("accountId"),
-  Value:    core.StringPtr("ACCOUNT_ID"),
-  Operator: core.StringPtr("stringEquals"),
-}
-serviceNameResourceAttribute := &iampolicymanagementv1.ResourceAttribute{
-  Name:     core.StringPtr("service_group_id"),
-  Value:    core.StringPtr("IAM"),
-  Operator: core.StringPtr("stringEquals"),
-}
-policyResources := &iampolicymanagementv1.PolicyResource{
-  Attributes: []iampolicymanagementv1.ResourceAttribute{
-    *accountIDResourceAttribute, *service_group_idResourceAttribute},
-}
-
-options := iamPolicyManagementService.NewCreatePolicyOptions(
-  "access",
-  []iampolicymanagementv1.PolicySubject{*policySubjects},
-  []iampolicymanagementv1.PolicyRole{*policyRoles},
-  []iampolicymanagementv1.PolicyResource{*policyResources},
-)
-
-policy, response, err := iamPolicyManagementService.CreatePolicy(options)
-if err != nil {
-  panic(err)
-}
-b, _ := json.MarshalIndent(policy, "", "  ")
-fmt.Println(string(b))
-```
-{: go}
-{: codeblock}
-
-
 ## Actions and roles for account management services
 {: #account-management-actions-roles-api}
 {: api}
 
 The following tables outline the actions that users can take when they are assigned a specific role for each account management service. Review the information to ensure that you are assigning the correct level of access to your users.
 
-### All account management services
+### All Account Management services
 {: #all-account-management-api}
 
-To quickly give users a wide range of account management access, you can assign a policy on all account management services. Depending on the role that you select, all applicable actions per the selected role for each account management service can be completed by the subject of the policy.
+To quickly give users a wide range of account management access, you can assign a policy on all account management services. When a user is assigned a role on **All Account Management services**, they can complete all of the actions that are associated with that role for each individual service.
 
-| Roles         | Actions                                                                                                      | role_ID value                                  |
-|---------------|--------------------------------------------------------------------------------------------------------------|------------------------------------------|
+The group of **All Account Management services** includes the following services:
+- IAM Access Groups
+- IAM Identity service
+- IAM Access Management
+   - Role management
+- User Management
+- Billing
+- Catalog management
+- Context-based restrictions
+- Enterprise
+- Global catalog
+- IBM Cloud shell settings
+- License and entitlement
+- Partner Center
+- Partner Center - Sell
+- Security and Compliance Center
+- Software instance
+- Support center
+
+| Roles         | Actions | role_ID value |
+|---------------|---------|---------------|
 | Viewer        | All viewer role actions for the account management services                                                  | `crn:v1:bluemix:public:iam::::role:Viewer` |
-| Operator      | All operator role actions for the account management services                                                | `crn:v1:bluemix:public:iam::::role:Operator` |
+| Operator      | All operator role actions for the account management services  | `crn:v1:bluemix:public:iam::::role:Operator` |
 | Editor        | All editor role actions for the account management services and the ability to create resource groups        | `crn:v1:bluemix:public:iam::::role:Editor` |
 | Administrator | All administrator role actions for the account management services and the ability to create resource groups | `crn:v1:bluemix:public:iam::::role:Administrator` |
 {: caption="Table 2. Roles and example actions for a policy on all account management services" caption-side="top"}
+
+### All IAM Account Management services
+{: #all-iam-api}
+
+Identity and Access Management (IAM) services make up a subset of all account management services. Give users access to all IAM account management services so that they can work with the following services:
+
+- IAM Access Groups
+- IAM Identity service
+- IAM Access Management
+   - Role Management
+- User Management
+
+| Roles         | Actions | role_ID value |
+|---------------|---------|---------------|
+| Viewer        | All viewer role actions for IAM services | `crn:v1:bluemix:public:iam::::role:Viewer` |
+| Operator      | All operator role actions for IAM services | `crn:v1:bluemix:public:iam::::role:Operator` |
+| Editor        | All editor role actions for IAM services and the ability to create resource groups        |  `crn:v1:bluemix:public:iam::::role:Editor` |
+| Administrator | All administrator role actions for IAM services and the ability to create resource groups | `crn:v1:bluemix:public:iam::::role:Administrator` |
+| User API key creator | Create API keys when the account setting to restrict API key creation is enabled | `crn:v1:bluemix:public:iam-identity::::serviceRole:UserApiKeyCreator` |
+| Service ID creator | Create service IDs when the account setting to restrict service ID creation is enabled | `crn:v1:bluemix:public:iam-identity::::serviceRole:ServiceIdCreator`
+{: caption="Table 3. Roles and example actions for a policy on all IAM account management services" caption-side="top"}
+
+Some roles that you might assign on a policy for **All IAM Account Management services** affect only certain resources. For example, the role Service ID Creator is relevant to only the IAM Identity service.
+{: note}
 
 ### Billing
 {: #billing-acct-mgmt-api}
@@ -1003,7 +886,7 @@ You can give users access to update account settings, view subscriptions, view o
 | Operator      | View account feature settings   \n  \n View subscriptions in account   \n  \n View and change account name | `crn:v1:bluemix:public:iam::::role:Operator` |
 | Editor        | View and update account feature settings   \n  \n View subscriptions in account   \n  \n View offers in account   \n  \n View and apply subscription and feature codes   \n  \n View and change account name   \n  \n View and update spending limits   \n  \n Set spending notifications   \n  \n View subscription balances and track usage | `crn:v1:bluemix:public:iam::::role:Editor` |
 | Administrator | View and update account feature settings   \n  \n View subscriptions in account   \n  \n View offers in account   \n  \n View and apply subscription and feature codes   \n  \n View and change account name   \n  \n View and update spending limits   \n  \n Set spending notifications   \n  \n View subscription balances and track usage   \n  \n Create an enterprise | `crn:v1:bluemix:public:iam::::role:Administrator` |
-{: caption="Table 3. Roles and example actions for the Billing service" caption-side="top"}
+{: caption="Table 4. Roles and example actions for the Billing service" caption-side="top"}
 
 It's possible to view subscription balances and usage from the Account settings page, but you can't view the Account settings page with the Viewer or Operator roles. To access the Account settings page and your subscription information from that page, you need the Editor role or higher.
 {: note}
@@ -1020,22 +903,22 @@ You can give users access to view private catalogs and catalog filters, create p
 | Editor        | Create private catalogs   \n  \n Set filters for private catalogs   \n  \n Add and update software   \n  \n View account-level filters | `crn:v1:bluemix:public:iam::::role:Editor` |
 | Administrator | Set account-level filters for the {{site.data.keyword.cloud_notm}} catalog   \n  \n Create, update, and delete private catalogs   \n  \n Publish {{site.data.keyword.IBM_notm}}-approved products   \n  \n Assign access policies | `crn:v1:bluemix:public:iam::::role:Administrator` |
 | Publisher     | Publish products that are approved by {{site.data.keyword.IBM_notm}} from a private catalog | `crn:v1:bluemix:public:globalcatalog-collection::::serviceRole:Promoter`
-{: caption="Table 4. Roles and example actions for the catalog management service" caption-side="top"}
+{: caption="Table 5. Roles and example actions for the catalog management service" caption-side="top"}
 
 ### Context-based restrictions
 {: #cbr-account-management-api}
 
-You can give users access to view, create, update, and remove network zones. To create a context-based restriction rule for a service, you must be assigned an IAM policy with the Administrator role the service you are creating a rule against. For example, if you want to create a rule to protect a **Key Protect** instance, you must be assigned the Administrator role on the **Key Protect** service and the Viewer role or higher on the  **Context-based restrictions** service.
+You can give users access to view, create, update, and remove network zones. To create a context-based restriction rule for a service, you must be assigned an IAM policy with the Administrator role the service you are creating a rule against. For example, if you want to create a rule to protect a **Key Protect** instance, you must be assigned the Administrator role on the **Key Protect** service and the Viewer role or higher on the **Context-based restrictions** service.
 
 The Viewer role on the Context-based restrictions service allows you to add network zones to your rule.
 {: note}
 
 | Roles         | Actions                                                                                                | role_ID value    |
 |---------------|--------------------------------------------------------------------------------------------------------|------------|
-| Viewer        |  View network zones |                                  `crn:v1:bluemix:public:iam::::role:Viewer` |
-| Editor        |  View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones  | `crn:v1:bluemix:public:iam::::role:Editor` |
+| Viewer        | View network zones|                                  `crn:v1:bluemix:public:iam::::role:Viewer` |
+| Editor        | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones  | `crn:v1:bluemix:public:iam::::role:Editor` |
 | Administrator | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones | `crn:v1:bluemix:public:iam::::role:Administrator` |
-{: caption="Table 5. Roles and example actions for the context-based restrictions service" caption-side="top"}
+{: caption="Table 6. Roles and example actions for the context-based restrictions service" caption-side="top"}
 
 You can give users access to view, create, update, and remove context-based restrictions and network zones.
 
@@ -1051,7 +934,7 @@ You can use the Enterprise service to assign users access to manage an enterpris
 | Editor              | View and update the enterprise name and domain, create accounts and account groups, view usage reports, and import accounts. | `crn:v1:bluemix:public:iam::::role:Editor` |
 | Administrator       | View and update the enterprise name and domain, create accounts and account groups, move accounts between account groups, import existing accounts, and view usage reports | `crn:v1:bluemix:public:iam::::role:Administrator` |
 | Usage report viewer | View the enterprise, accounts, and account groups and view usage reports for all accounts in the enterprise.                               | `crn:v1:bluemix:public:enterprise::::serviceRole:UsageReportsViewer` |
-{: caption="Table 6. Roles and example actions for the Enterprise service" caption-side="top"}
+{: caption="Table 7. Roles and example actions for the Enterprise service" caption-side="top"}
 
 ### Global catalog
 {: #global-catalog-account-management-api}
@@ -1064,7 +947,7 @@ You can give users access to view private products in the catalog or change the 
 | Operator      | Not applicable                                                                                         | `crn:v1:bluemix:public:iam::::role:Operator` |
 | Editor        | Change object metadata but can't change visibility for private services                                | `crn:v1:bluemix:public:iam::::role:Editor` |
 | Administrator | Change object metadata or visibility for private services, and restrict visibility of a public service | `crn:v1:bluemix:public:iam::::role:Administrator` |
-{: caption="Table 7. Roles and example actions for the Global Catalog service" caption-side="top"}
+{: caption="Table 8. Roles and example actions for the Global Catalog service" caption-side="top"}
 
 ### IAM Access Groups
 {: #access-groups-account-management-api}
@@ -1077,7 +960,34 @@ You can give users access to view, create, edit, and delete access groups in the
 | Operator      | Not applicable                                                                                                                                             |  |
 | Editor        | View, create, edit, and delete groups   \n  \n Add or remove users from groups                                                                             | `crn:v1:bluemix:public:iam::::role:Editor` |
 | Administrator | View, create, edit, and delete groups   \n  \n Add or remove users   \n  \n Assign access to a group   \n  \n Manage access for working with access groups   \n  \n Enable or disable public access to resources at the account level | `crn:v1:bluemix:public:iam::::role:Administrator` |
-{: caption="Table 8. Roles and example actions for the IAM access groups service" caption-side="top"}
+{: caption="Table 9. Roles and example actions for the IAM access groups service" caption-side="top"}
+
+### IAM Access Management service
+{: #access-management-api}
+
+You can give users access to manage access policies and custom roles.
+
+| Roles         | Actions       | role_ID value    |
+|---------------|---------------|---------------|
+| Viewer        | View access policies and custom roles   | `crn:v1:bluemix:public:iam::::role:Viewer` |
+| Operator      | View access policies and custom roles   | `crn:v1:bluemix:public:iam::::role:Operator` |
+| Editor        | View and edit custom roles   \n  \n View IAM insights, policies, and settings | `crn:v1:bluemix:public:iam::::role:Editor` |
+| Administrator | View, create, edit, and delete custom roles   \n  \n View and update IAM settings  \n  \n Assign access to a group   \n  \n View, create, edit, and delete access policies | `crn:v1:bluemix:public:iam::::role:Administrator` |
+{: caption="Table 10. Roles and example actions for the IAM Access Management service" caption-side="top"}
+
+
+#### Role Management
+{: #custom-roles-account-management-api}
+
+You can give users access to create, update, and delete custom roles for services in the account.
+
+| Roles         | Actions                            | role_ID value    |
+|---------------|------------------------------------|------------|
+| Viewer        | View custom roles         | `crn:v1:bluemix:public:iam::::role:Viewer` |
+| Operator      | Not applicable             | |
+| Editor        | Edit and update custom roles in an account          | `crn:v1:bluemix:public:iam::::role:Editor` |
+| Administrator | Create, edit, update, and delete custom roles in an account  | `crn:v1:bluemix:public:iam::::role:Administrator` |
+{: caption="Table 11. Roles and example actions for the Access management service" caption-side="top"}
 
 ### IAM Identity service
 {: #identity-service-account-management-api}
@@ -1092,7 +1002,7 @@ You can give users access to manage service IDs and identity providers (IdPs) by
 | Administrator | Create, update, and delete IDs and API keys   \n  \n Assign access policies to IDs   \n  \n View, create, update, and delete IdPs   \n  \n Update IAM account setting for service IDs and user API key creation   \n  \n Create trusted profiles | `crn:v1:bluemix:public:iam::::role:Administrator` |
 | User API Key Creator | Can create API keys when the account setting to restrict API key creation is enabled. | `crn:v1:bluemix:public:iam-identity::::serviceRole:UserApiKeyCreator` |
 | Service ID Creator | Can create service IDs when the account setting to restrict service ID creation is enabled. | `crn:v1:bluemix:public:iam-identity::::serviceRole:ServiceIdCreator` |
-{: caption="Table 9. Roles and example actions for the IAM Identity service" caption-side="top"}
+{: caption="Table 12. Roles and example actions for the IAM Identity service" caption-side="top"}
 {: #identity-service-acct-mgmt-api}
 
 ### {{site.data.keyword.cloud-shell_notm}} settings
@@ -1109,7 +1019,7 @@ You can assign users access to view and update {{site.data.keyword.cloud-shell_n
 | Cloud Operator | Create {{site.data.keyword.cloud-shell_short}} environments to manage {{site.data.keyword.cloud_notm}} resources. | `crn:v1:bluemix:public:cloudshell::::serviceRole:CloudOperator` |
 | Cloud Developer | Create {{site.data.keyword.cloud-shell_short}} environments to manage {{site.data.keyword.cloud_notm}} resources and develop applications for {{site.data.keyword.cloud_notm}} (Web Preview enabled). | `crn:v1:bluemix:public:cloudshell::::serviceRole:CloudDeveloper` |
 | File Manager | Create {{site.data.keyword.cloud-shell_short}} environments to manage {{site.data.keyword.cloud_notm}}resources and manage files in your workspace (File Upload and File Download enabled). | `crn:v1:bluemix:public:cloudshell::::serviceRole:FileManager` |
-{: caption="Table 10. Roles and example actions for the {{site.data.keyword.cloud-shell_notm}} service" caption-side="top"}
+{: caption="Table 13. Roles and example actions for the {{site.data.keyword.cloud-shell_notm}} service" caption-side="top"}
 
 ### License and entitlement
 {: #license-entitlement-management-api}
@@ -1122,7 +1032,7 @@ You can assign users access to manage licenses and entitlements within an accoun
 | Operator      |  Not applicable                                                                                            |            |
 | Editor        |  Editors can create entitlements and view, update, bind, or delete only the entitlements they acquired.    | `crn:v1:bluemix:public:iam::::role:Editor` |
 | Administrator |  Administrators can create entitlements and view, update, bind, or delete any entitlements in the account. | `crn:v1:bluemix:public:iam::::role:Administrator` |
-{: caption="Table 11. Roles and example actions for the license and entitlement service" caption-side="top"}
+{: caption="Table 14. Roles and example actions for the license and entitlement service" caption-side="top"}
 
 ### Partner Center
 {: #pc-buildgrow-account-management-api}
@@ -1135,7 +1045,7 @@ You can give users access to view and edit partner profile details, offers, fast
 | Editor        | View and edit partner profile, offers, and fast tracks. Create, edit, and view support cases. | `crn:v1:bluemix:public:iam::::role:Editor` |
 | Operator      |  |
 | Administrator | View and edit partner profile, offers, and fast tracks. Create, edit, and view support cases. | `crn:v1:bluemix:public:iam::::role:Administrator` |
-{: caption="Table 12. Roles and example actions for the Partner Center service" caption-side="top"}
+{: caption="Table 15. Roles and example actions for the Partner Center service" caption-side="top"}
 
 ### Partner Center - Sell
 {: #prod-lifecycle-account-management-api}
@@ -1147,20 +1057,8 @@ You can give users access to onboard, validate, and publish software.
 | Administrator | Create, edit, validate, and publish products | | `crn:v1:bluemix:public:iam::::role:Administrator` |
 | Editor        | Validate and edit products | `crn:v1:bluemix:public:iam::::role:Editor` |
 | Approver      | Approves or rejects a workflow instance's task | `crn:v1:bluemix:public:product-lifecycle::::serviceRole:LifecycleApprover` |
-{: caption="Table 13. Roles and example actions for the Partner Center - Sell service" caption-side="top"}
+{: caption="Table 16. Roles and example actions for the Partner Center - Sell service" caption-side="top"}
 
-### Role Management
-{: #custom-roles-account-management-api}
-
-You can give users access to create, update, and delete custom roles for services in the account.
-
-| Roles         | Actions                            | role_ID value    |
-|---------------|------------------------------------|------------|
-| Viewer        | View custom roles         | `crn:v1:bluemix:public:iam::::role:Viewer` |
-| Operator      | Not applicable             | |
-| Editor        | Edit and update custom roles in an account          | `crn:v1:bluemix:public:iam::::role:Editor` |
-| Administrator | Create, edit, update, and delete custom roles in an account  | `crn:v1:bluemix:public:iam::::role:Administrator` |
-{: caption="Table 14. Roles and example actions for the Access management service" caption-side="top"}
 
 ### {{site.data.keyword.compliance_short}}
 {: #security-compliance-account-management-api}
@@ -1176,7 +1074,7 @@ You can give users access to create, update, and delete resources for the {{site
 | Manager       | Permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |`crn:v1:bluemix:public:iam::::serviceRole:Manager` |
 | Reader        | Perform read-only actions within a service such as viewing service-specific resources. | `crn:v1:bluemix:public:iam::::serviceRole:Reader` |
 | Writer        | Permissions beyond the reader role, including creating and editing service-specific resources. | `crn:v1:bluemix:public:iam::::serviceRole:Writer |`
-{: caption="Table 15. Roles and example actions for the {{site.data.keyword.compliance_short}} service" caption-side="top"}
+{: caption="Table 17. Roles and example actions for the {{site.data.keyword.compliance_short}} service" caption-side="top"}
 
 To access all of the {{site.data.keyword.compliance_short}}, you must also assign permissions for the Security Advisor service. For more information, see [Assigning access for the Security and Compliance Center](/docs/security-compliance?topic=security-compliance-access-management).
 {: note}
@@ -1192,7 +1090,7 @@ You can give users access to create, delete, or update a software instance. And,
 | Operator      | Update a software instance   \n  \n View the details page for the software instance | `crn:v1:bluemix:public:iam::::role:Operator` |
 | Editor        | Create, delete, update a software instance   \n  \n View the details page for the software instance | `crn:v1:bluemix:public:iam::::role:Editor` |
 | Administrator | Create, delete, update a software instance   \n  \n View the details page for the software instance   \n  \n View the logs for the software instance   \n  \n Assign IAM permissions | `crn:v1:bluemix:public:iam::::role:Administrator` |
-{: caption="Table 16. Roles and example actions for the Software instance service" caption-side="top"}
+{: caption="Table 18. Roles and example actions for the Software instance service" caption-side="top"}
 
 ### Support center
 {: #support-center-account-management-api}
@@ -1205,7 +1103,7 @@ You can give users access to manage support cases.
 | Operator      |  Not applicable                                                               | `crn:v1:bluemix:public:iam::::role:Operator` |
 | Editor        |  View cases   \n  \n Search cases   \n  \n Update cases   \n  \n Create cases | `crn:v1:bluemix:public:iam::::role:Editor` |
 | Administrator |  View cases   \n  \n Search cases   \n  \n Update cases   \n  \n Create cases | `crn:v1:bluemix:public:iam::::role:Administrator` |
-{: caption="Table 17. Roles and example actions for the Support Center service" caption-side="top"}
+{: caption="Table 19. Roles and example actions for the Support Center service" caption-side="top"}
 
 Assign users the viewer role on the user management service in addition to a support center access policy so the user can see all cases in the account regardless of user list visibility settings. If the user list visibility is set to be restricted, a user's ability to view, search, and manage support cases in an account that they didn't open themselves can be limited.
 {: tip}
@@ -1221,10 +1119,23 @@ You can give users access to view users in an account, invite and remove users, 
 | Operator      | View users in the account   \n  \n View user profile settings                                          | `crn:v1:bluemix:public:iam::::role:Operator` |
 | Editor        | View, invite, remove, and update users from the account   \n  \n View and update user profile settings | `crn:v1:bluemix:public:iam::::role:Editor` |
 | Administrator | View, invite, remove, and update users from the account   \n  \n View and update user profile settings | `crn:v1:bluemix:public:iam::::role:Administrator` |
-{: caption="Table 18. Roles and example actions for the User Management service" caption-side="top"}
+{: caption="Table 20. Roles and example actions for the User Management service" caption-side="top"}
 
 The viewer role on the user management service is a role that is commonly assigned for users assigned a role to view or manage support cases. If an account owner restricts the visibility of the user list in the IAM settings, users can't see support cases that are opened by other users in the account. However, if they are assigned the viewer role for the user management service, the user list visibility setting doesn't affect the ability to view cases in the account.
 {: tip}
+
+### {{site.data.keyword.atracker_short}} Event Routing
+{: #activty-tracker-account-management-api}
+
+You can give users access to run platform actions.
+
+| Roles         | Actions                                                                                                | role_ID value    |
+|---------------|--------------------------------------------------------------------------------------------------------|------------|
+| Viewer        | View {{site.data.keyword.atracker_short}} configuration resources such as routes and targets. | `crn:v1:bluemix:public:iam::::role:Viewer` |
+| Operator      | View {{site.data.keyword.atracker_short}} configuration resources such as routes and targets. | `crn:v1:bluemix:public:iam::::role:Operator` |
+| Editor        | View, create, update, and delete {{site.data.keyword.atracker_short}} resources. | `crn:v1:bluemix:public:iam::::role:Editor` |
+| Administrator | View, create, update, and delete {{site.data.keyword.atracker_short}} resources.   \n  \n Assign access policies to manage {{site.data.keyword.atracker_short}} resources to other users in the account. | `crn:v1:bluemix:public:iam::::role:Administrator` |
+{: caption="Table 21. Roles and example actions for the {{site.data.keyword.atracker_short}} Event Routing service" caption-side="top"}
 
 <!--- CLI --->
 
@@ -1236,6 +1147,8 @@ If you are assigning access by using the CLI or API, the account management serv
 
 | Account management service         | Attribute and value   |
 |---------------|---------------------------------|
+| All Account Management services | serviceType=platform_service |
+| All IAM Account Management services | service_group_id=IAM |
 | Billing | serviceName=billing |
 | Catalog management | serviceName=globalcatalog-collection |
 | Context-based restrictions | serviceName=context-based-restrictions|
@@ -1249,8 +1162,6 @@ If you are assigning access by using the CLI or API, the account management serv
 | {{site.data.keyword.compliance_short}} | serviceName=security-compliance |
 | Support center| serviceName=support |
 | User management | serviceName=user-management |
-| All Account Management services | serviceType=platform_service |
-| All IAM Account Management services | service_group_id=IAM |
 {: caption="Table 1. Account management service names" caption-side="top"}
 
 ## Assigning access by using the CLI
@@ -1274,32 +1185,35 @@ ibmcloud iam user-policy-create name.example.com --roles Administrator --attribu
 ```
 {: pre}
 
-### Assigning access to IAM services by using the CLI
-{: #cli-iam-services}
-{: cli}
-
-You can assign access to All IAM Account Management services, which is a subset of account management services that includes IAM Identity, IAM Access Management, User Management, IAM Groups, and future IAM services. To assign access to this group of services, you must be the account owner, or a user assigned the administrator role on All IAM Account Management services or All Account Management services.
-
-Some roles that you might assign on a policy for **All IAM Account Management services** affect only certain resources. For example, the role Service ID Creator is relevant to only the IAM Identity Service.
-{: note}
-
-The following example command assigns a policy with the Administrator role on All IAM Account Management services:
-
-```sh
-ibmcloud iam user-policy-create jeanned@us.ibm.com --roles Administrator --attributes service_group_id=IAM
-```
-{: pre}
-
 ## Actions and roles for account management services
 {: #account-management-actions-roles-cli}
 {: cli}
 
 The following tables outline the actions that users can take when they are assigned a specific role for each account management service. Review the information to ensure that you are assigning the correct level of access to your users.
 
-### All account management services
+### All Account Management services
 {: #all-account-management-cli}
 
-To quickly give users a wide-ranging set of account management access, you can assign a policy on all account management services. Depending on the role that is selected, all applicable actions per the selected role for each account management service can be completed by the subject of the policy.
+To quickly give users a wide-ranging set of account management access, you can assign a policy on all account management services. When a user is assigned a role on **All Account Management services**, they can complete all of the actions that are associated with that role for each individual service.
+
+The group of **All Account Management services** includes the following services:
+- IAM Access Groups
+- IAM Identity service
+- IAM Access Management
+   - Role management
+- User Management
+- Billing
+- Catalog management
+- Context-based restrictions
+- Enterprise
+- Global catalog
+- IBM Cloud shell settings
+- License and entitlement
+- Partner Center
+- Partner Center - Sell
+- Security and Compliance Center
+- Software instance
+- Support center
 
 | Roles         | Actions                                                                                                      |
 |---------------|--------------------------------------------------------------------------------------------------------------|
@@ -1308,6 +1222,30 @@ To quickly give users a wide-ranging set of account management access, you can a
 | Editor        | All editor role actions for the account management services and the ability to create resource groups        |
 | Administrator | All administrator role actions for the account management services and the ability to create resource groups |
 {: caption="Table 2. Roles and example actions for a policy on all account management services" caption-side="top"}
+
+### All IAM Account Management services
+{: #all-iam-cli}
+
+Identity and Access Management (IAM) services make up a subset of all account management services. Give users access to all IAM account management services so that they can work with the following services:
+
+- IAM Access Groups
+- IAM Identity service
+- IAM Access Management
+   - Role Management
+- User Management
+
+| Roles         | Actions                                                                                                      |
+|---------------|--------------------------------------------------------------------------------------------------------------|
+| Viewer        | All viewer role actions for IAM services                                                  |
+| Operator      | All operator role actions for IAM services                                                |
+| Editor        | All editor role actions for IAM services and the ability to create resource groups        |
+| Administrator | All administrator role actions for IAM services and the ability to create resource groups |
+| User API key creator | Create API keys when the account setting to restrict API key creation is enabled |
+| Service ID creator | Create service IDs when the account setting to restrict service ID creation is enabled |
+{: caption="Table 3. Roles and example actions for a policy on all IAM account management services" caption-side="top"}
+
+Some roles that you might assign on a policy for **All IAM Account Management services** affect only certain resources. For example, the role Service ID Creator is relevant to only the IAM Identity service.
+{: note}
 
 ### Billing
 {: #billing-acct-mgmt-cli}
@@ -1320,7 +1258,7 @@ You can give users access to update account settings, view subscriptions, view o
 | Operator      | View account feature settings   \n  \n View subscriptions in account   \n  \n View and change account name |
 | Editor        | View and update account feature settings   \n  \n View subscriptions in account   \n  \n View offers in account   \n  \n View and apply subscription and feature codes   \n  \n View and change account name   \n  \n View and update spending limits   \n  \n Set spending notifications   \n  \n View subscription balances and track usage |
 | Administrator | View and update account feature settings   \n  \n View subscriptions in account   \n  \n View offers in account   \n  \n View and apply subscription and feature codes   \n  \n View and change account name   \n  \n View and update spending limits   \n  \n Set spending notifications   \n  \n View subscription balances and track usage   \n  \n Create an enterprise |
-{: caption="Table 3. Roles and example actions for the Billing service" caption-side="top"}
+{: caption="Table 4. Roles and example actions for the Billing service" caption-side="top"}
 
 It's possible to view subscription balances and usage from the Account settings page, but you can't view the Account settings page with the Viewer or Operator roles. To access the Account settings page and your subscription information from that page, you need the Editor role or higher.
 {: note}
@@ -1337,7 +1275,7 @@ You can give users access to view private catalogs and catalog filters, create p
 | Editor        | Create private catalogs   \n  \n Set filters for private catalogs   \n  \n Add and update software   \n  \n View account-level filters |
 | Administrator | Set account-level filters for the {{site.data.keyword.cloud_notm}} catalog   \n  \n Create, update, and delete private catalogs   \n  \n Publish {{site.data.keyword.IBM_notm}}-approved products   \n  \n Assign access policies |
 | Publisher     | Publish products that are approved by {{site.data.keyword.IBM_notm}} from a private catalog |
-{: caption="Table 4. Roles and example actions for the catalog management service" caption-side="top"}
+{: caption="Table 5. Roles and example actions for the catalog management service" caption-side="top"}
 
 ### Context-based restrictions
 {: #cbr-account-management-cli}
@@ -1352,7 +1290,7 @@ The Viewer role on the Context-based restrictions service allows you to add netw
 | Viewer        | View network zones|
 | Editor        | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones  |
 | Administrator | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones |
-{: caption="Table 5. Roles and example actions for the context-based restrictions service" caption-side="top"}
+{: caption="Table 6. Roles and example actions for the context-based restrictions service" caption-side="top"}
 
 
 ### Enterprise
@@ -1367,7 +1305,7 @@ You can use the Enterprise service to assign users access to manage an enterpris
 | Editor              | View and update the enterprise name and domain, create accounts and account groups, view usage reports, and import accounts. |
 | Administrator       | View and update the enterprise name and domain, create accounts and account groups, move accounts between account groups, import existing accounts, and view usage reports |
 | Usage report viewer | View the enterprise, accounts, and account groups and view usage reports for all accounts in the enterprise.                               |
-{: caption="Table 6. Roles and example actions for the Enterprise service" caption-side="top"}
+{: caption="Table 7. Roles and example actions for the Enterprise service" caption-side="top"}
 
 ### Global catalog
 {: #global-catalog-account-management-cli}
@@ -1380,7 +1318,7 @@ You can give users access to view private products in the catalog or change the 
 | Operator      | Not applicable                                                                                         |
 | Editor        | Change object metadata but can't change visibility for private services                                |
 | Administrator | Change object metadata or visibility for private services, and restrict visibility of a public service |
-{: caption="Table 7. Roles and example actions for the Global Catalog service" caption-side="top"}
+{: caption="Table 8. Roles and example actions for the Global Catalog service" caption-side="top"}
 
 ### IAM Access Groups
 {: #access-groups-account-management-cli}
@@ -1393,7 +1331,34 @@ You can give users access to view, create, edit, and delete access groups in the
 | Operator      | Not applicable                                                                                                                                             |
 | Editor        | View, create, edit, and delete groups   \n  \n Add or remove users from groups                                                                             |
 | Administrator | View, create, edit, and delete groups   \n  \n Add or remove users   \n  \n Assign access to a group   \n  \n Manage access for working with access groups   \n  \n Enable or disable public access to resources at the account level |
-{: caption="Table 8. Roles and example actions for the IAM access groups service" caption-side="top"}
+{: caption="Table 9. Roles and example actions for the IAM access groups service" caption-side="top"}
+
+### IAM Access Management service
+{: #access-management-cli}
+
+You can give users access to manage access policies and custom roles.
+
+| Roles         | Actions                         |
+|---------------|---------------|
+| Viewer        | View access policies and custom roles   |
+| Operator      | View access policies and custom roles   |
+| Editor        | View and edit custom roles   \n  \n View IAM insights, policies, and settings |
+| Administrator | View, create, edit, and delete custom roles   \n  \n View and update IAM settings  \n  \n Assign access to a group   \n  \n View, create, edit, and delete access policies |
+{: caption="Table 10. Roles and example actions for the IAM Access Management service" caption-side="top"}
+
+
+#### Role Management
+{: #custom-roles-account-management-cli}
+
+You can give users access to create, update, and delete custom roles for services in the account.
+
+| Roles         | Actions                            |
+|---------------|------------------------------------|
+| Viewer        | View custom roles         |
+| Operator      | Not applicable             |
+| Editor        | Edit and update custom roles in an account          |
+| Administrator | Create, edit, update, and delete custom roles in an account  |
+{: caption="Table 11. Roles and example actions for the Access management service" caption-side="top"}
 
 ### IAM Identity service
 {: #identity-service-account-management-cli}
@@ -1408,7 +1373,7 @@ You can give users access to manage service IDs and identity providers (IdPs) by
 | Administrator | Create, update, and delete IDs and API keys   \n  \n Assign access policies to IDs   \n  \n View, create, update, and delete IdPs   \n  \n Update IAM account setting for service IDs and user API key creation   \n  \n Create trusted profiles |
 | User API Key Creator | Can create API keys when the account setting to restrict API key creation is enabled. |
 | Service ID Creator | Can create service IDs when the account setting to restrict service ID creation is enabled. |
-{: caption="Table 9. Roles and example actions for the IAM Identity service" caption-side="top"}
+{: caption="Table 12. Roles and example actions for the IAM Identity service" caption-side="top"}
 {: #identity-service-acct-mgmt-cli}
 
 ### {{site.data.keyword.cloud-shell_notm}} settings
@@ -1425,7 +1390,7 @@ You can assign users access to view and update {{site.data.keyword.cloud-shell_n
 | Cloud Operator | Create {{site.data.keyword.cloud-shell_short}} environments to manage {{site.data.keyword.cloud_notm}} resources. |
 | Cloud Developer | Create {{site.data.keyword.cloud-shell_short}} environments to manage {{site.data.keyword.cloud_notm}} resources and develop applications for {{site.data.keyword.cloud_notm}} (Web Preview enabled). |
 | File Manager | Create {{site.data.keyword.cloud-shell_short}} environments to manage {{site.data.keyword.cloud_notm}}resources and manage files in your workspace (File Upload and File Download enabled). |
-{: caption="Table 10. Roles and example actions for the {{site.data.keyword.cloud-shell_notm}} service" caption-side="top"}
+{: caption="Table 13. Roles and example actions for the {{site.data.keyword.cloud-shell_notm}} service" caption-side="top"}
 
 ### License and entitlement
 {: #license-entitlement-management-cli}
@@ -1438,7 +1403,7 @@ You can assign users access to manage licenses and entitlements within an accoun
 | Operator      |  Not applicable                                                                                            |
 | Editor        |  Editors can create entitlements and view, update, bind, or delete only the entitlements they acquired.    |
 | Administrator |  Administrators can create entitlements and view, update, bind, or delete any entitlements in the account. |
-{: caption="Table 11. Roles and example actions for the license and entitlement service" caption-side="top"}
+{: caption="Table 14. Roles and example actions for the license and entitlement service" caption-side="top"}
 
 ### Partner Center
 {: #pc-buildgrow-account-management-cli}
@@ -1451,7 +1416,7 @@ You can give users access to view and edit partner profile details, offers, fast
 | Editor        | View and edit partner profile, offers, and fast tracks. Create, edit, and view support cases. |
 | Operator      |  |
 | Administrator | View and edit partner profile, offers, and fast tracks. Create, edit, and view support cases. |
-{: caption="Table 12. Roles and example actions for the Partner Center service" caption-side="top"}
+{: caption="Table 15. Roles and example actions for the Partner Center service" caption-side="top"}
 
 ### Partner Center - Sell
 {: #prod-lifecycle-account-management-cli}
@@ -1463,20 +1428,8 @@ You can give users access to onboard, validate, and publish software.
 | Administrator | Create, edit, validate, and publish products |
 | Editor        | Validate and edit products |
 | Approver      | Approves or rejects a workflow instance's task |
-{: caption="Table 13. Roles and example actions for the Partner Center - Sell service" caption-side="top"}
+{: caption="Table 16. Roles and example actions for the Partner Center - Sell service" caption-side="top"}
 
-### Role Management
-{: #custom-roles-account-management-cli}
-
-You can give users access to create, update, and delete custom roles for services in the account.
-
-| Roles         | Actions                            |
-|---------------|------------------------------------|
-| Viewer        | View custom roles         |
-| Operator      | Not applicable             |
-| Editor        | Edit and update custom roles in an account          |
-| Administrator | Create, edit, update, and delete custom roles in an account  |
-{: caption="Table 14. Roles and example actions for the Access management service" caption-side="top"}
 
 ### {{site.data.keyword.compliance_short}}
 {: #security-compliance-account-management-cli}
@@ -1492,7 +1445,7 @@ You can give users access to create, update, and delete resources for the {{site
 | Manager       | Permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader        | Perform read-only actions within a service such as viewing service-specific resources. |
 | Writer        | Permissions beyond the reader role, including creating and editing service-specific resources. |
-{: caption="Table 15. Roles and example actions for the {{site.data.keyword.compliance_short}} service" caption-side="top"}
+{: caption="Table 17. Roles and example actions for the {{site.data.keyword.compliance_short}} service" caption-side="top"}
 
 To access all of the {{site.data.keyword.compliance_short}}, you must also assign permissions for the Security Advisor service. For more information, see [Assigning access for the Security and Compliance Center](/docs/security-compliance?topic=security-compliance-access-management).
 {: note}
@@ -1508,7 +1461,7 @@ You can give users access to create, delete, or update a software instance. And,
 | Operator      | Update a software instance   \n  \n View the details page for the software instance |
 | Editor        | Create, delete, update a software instance   \n  \n View the details page for the software instance |
 | Administrator | Create, delete, update a software instance   \n  \n View the details page for the software instance   \n  \n View the logs for the software instance   \n  \n Assign IAM permissions |
-{: caption="Table 16. Roles and example actions for the Software instance service" caption-side="top"}
+{: caption="Table 18. Roles and example actions for the Software instance service" caption-side="top"}
 
 ### Support center
 {: #support-center-account-management-cli}
@@ -1521,7 +1474,7 @@ You can give users access to manage support cases.
 | Operator      |  Not applicable                                                               |
 | Editor        |  View cases   \n  \n Search cases   \n  \n Update cases   \n  \n Create cases |
 | Administrator |  View cases   \n  \n Search cases   \n  \n Update cases   \n  \n Create cases |
-{: caption="Table 17. Roles and example actions for the Support Center service" caption-side="top"}
+{: caption="Table 19. Roles and example actions for the Support Center service" caption-side="top"}
 
 Assign users the viewer role on the user management service in addition to a support center access policy so the user can see all cases in the account regardless of user list visibility settings. If the user list visibility is set to be restricted, this can limit a user's ability to view, search, and manage support cases in an account that they didn't open themselves.
 {: tip}
@@ -1537,10 +1490,23 @@ You can give users access to view users in an account, invite and remove users, 
 | Operator      | View users in the account   \n  \n View user profile settings                                          |
 | Editor        | View, invite, remove, and update users from the account   \n  \n View and update user profile settings |
 | Administrator | View, invite, remove, and update users from the account   \n  \n View and update user profile settings |
-{: caption="Table 18. Roles and example actions for the User Management service" caption-side="top"}
+{: caption="Table 20. Roles and example actions for the User Management service" caption-side="top"}
 
 The viewer role on the user management service is a role that is commonly assigned for users assigned a role to view or manage support cases. If an account owner restricts the visibility of the user list in the IAM settings, users can't see support cases that are opened by other users in the account. However, if they are assigned the viewer role for the user management service, the user list visibility setting doesn't affect the ability to view cases in the account.
 {: tip}
+
+### {{site.data.keyword.atracker_short}} Event Routing
+{: #activty-tracker-account-management-cli}
+
+You can give users access to run platform actions.
+
+| Roles         | Actions                                                                                                |
+|---------------|--------------------------------------------------------------------------------------------------------|
+| Viewer        | View {{site.data.keyword.atracker_short}} configuration resources such as routes and targets. |
+| Operator      | View {{site.data.keyword.atracker_short}} configuration resources such as routes and targets. |
+| Editor        | View, create, update, and delete {{site.data.keyword.atracker_short}} resources. |
+| Administrator | View, create, update, and delete {{site.data.keyword.atracker_short}} resources.   \n  \n Assign access policies to manage {{site.data.keyword.atracker_short}} resources to other users in the account. |
+{: caption="Table 21. Roles and example actions for the {{site.data.keyword.atracker_short}} Event Routing service" caption-side="top"}
 
 
 <!--- Terraform --->
@@ -1601,10 +1567,29 @@ Use the following steps to assign access by using Terraform:
 
 The following tables outline the actions that users can take when they are assigned a specific role for each account management service. Review the information to ensure that you are assigning the correct level of access to your users.
 
-### All account management services
+### All Account Management services
 {: #all-account-management-terra}
 
-To quickly give users a wide-ranging set of account management access, you can assign a policy on all account management services. Depending on the role that is selected, all applicable actions per the selected role for each account management service can be completed by the subject of the policy.
+To quickly give users a wide-ranging set of account management access, you can assign a policy on all account management services. When a user is assigned a role on **All Account Management services**, they can complete all of the actions that are associated with that role for each individual service.
+
+The group of **All Account Management services** includes the following services:
+- IAM Access Groups
+- IAM Identity service
+- IAM Access Management
+   - Role management
+- User Management
+- Billing
+- Catalog management
+- Context-based restrictions
+- Enterprise
+- Global catalog
+- IBM Cloud shell settings
+- License and entitlement
+- Partner Center
+- Partner Center - Sell
+- Security and Compliance Center
+- Software instance
+- Support center
 
 | Roles         | Actions                                                                                                      |
 |---------------|--------------------------------------------------------------------------------------------------------------|
@@ -1613,6 +1598,30 @@ To quickly give users a wide-ranging set of account management access, you can a
 | Editor        | All editor role actions for the account management services and the ability to create resource groups        |
 | Administrator | All administrator role actions for the account management services and the ability to create resource groups |
 {: caption="Table 1. Roles and example actions for a policy on account management services" caption-side="top"}
+
+### All IAM Account Management services
+{: #all-iam-terra}
+
+Identity and Access Management (IAM) services make up a subset of all account management services. Give users access to all IAM account management services so that they can work with the following services:
+
+- IAM Access Groups
+- IAM Identity service
+- IAM Access Management
+   - Role Management
+- User Management
+
+| Roles         | Actions                                                                                                      |
+|---------------|--------------------------------------------------------------------------------------------------------------|
+| Viewer        | All viewer role actions for IAM services                                                  |
+| Operator      | All operator role actions for IAM services                                                |
+| Editor        | All editor role actions for IAM services and the ability to create resource groups        |
+| Administrator | All administrator role actions for IAM services and the ability to create resource groups |
+| User API key creator | Create API keys when the account setting to restrict API key creation is enabled |
+| Service ID creator | Create service IDs when the account setting to restrict service ID creation is enabled |
+{: caption="Table 2. Roles and example actions for a policy on all IAM account management services" caption-side="top"}
+
+Some roles that you might assign on a policy for **All IAM Account Management services** affect only certain resources. For example, the role Service ID Creator is relevant to only the IAM Identity service.
+{: note}
 
 ### Billing
 {: #billing-acct-mgmt-terra}
@@ -1625,7 +1634,7 @@ You can give users access to update account settings, view subscriptions, view o
 | Operator      | View account feature settings   \n  \n View subscriptions in account   \n  \n View and change account name |
 | Editor        | View and update account feature settings   \n  \n View subscriptions in account   \n  \n View offers in account   \n  \n View and apply subscription and feature codes   \n  \n View and change account name   \n  \n View and update spending limits   \n  \n Set spending notifications   \n  \n View subscription balances and track usage |
 | Administrator | View and update account feature settings   \n  \n View subscriptions in account   \n  \n View offers in account   \n  \n View and apply subscription and feature codes   \n  \n View and change account name   \n  \n View and update spending limits   \n  \n Set spending notifications   \n  \n View subscription balances and track usage   \n  \n Create an enterprise |
-{: caption="Table 2. Roles and example actions for the Billing service" caption-side="top"}
+{: caption="Table 3. Roles and example actions for the Billing service" caption-side="top"}
 
 It's possible to view subscription balances and usage from the Account settings page, but you can't view the Account settings page with the Viewer or Operator roles. To access the Account settings page and your subscription information from that page, you need the Editor role or higher.
 {: note}
@@ -1642,7 +1651,7 @@ You can give users access to view private catalogs and catalog filters, create p
 | Editor        | Create private catalogs   \n  \n Set filters for private catalogs   \n  \n Add and update software   \n  \n View account-level filters |
 | Administrator | Set account-level filters for the {{site.data.keyword.cloud_notm}} catalog   \n  \n Create, update, and delete private catalogs   \n  \n Publish {{site.data.keyword.IBM_notm}}-approved products   \n  \n Assign access policies |
 | Publisher     | Publish products that are approved by {{site.data.keyword.IBM_notm}} from a private catalog |
-{: caption="Table 3. Roles and example actions for the catalog management service" caption-side="top"}
+{: caption="Table 4. Roles and example actions for the catalog management service" caption-side="top"}
 
 ### Context-based restrictions
 {: #cbr-account-management-terra}
@@ -1657,7 +1666,7 @@ The Viewer role on the Context-based restrictions service allows you to add netw
 | Viewer        | View network zones|
 | Editor        | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones  |
 | Administrator | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones |
-{: caption="Table 4. Roles and example actions for the context-based restrictions service" caption-side="top"}
+{: caption="Table 5. Roles and example actions for the context-based restrictions service" caption-side="top"}
 
 
 ### Enterprise
@@ -1672,7 +1681,7 @@ You can use the Enterprise service to assign users access to manage an enterpris
 | Editor              | View and update the enterprise name and domain, create accounts and account groups, view usage reports, and import accounts. |
 | Administrator       | View and update the enterprise name and domain, create accounts and account groups, move accounts between account groups, import existing accounts, and view usage reports |
 | Usage report viewer | View the enterprise, accounts, and account groups and view usage reports for all accounts in the enterprise.                               |
-{: caption="Table 5. Roles and example actions for the Enterprise service" caption-side="top"}
+{: caption="Table 6. Roles and example actions for the Enterprise service" caption-side="top"}
 
 ### Global catalog
 {: #global-catalog-account-management-terra}
@@ -1685,7 +1694,7 @@ You can give users access to view private products in the catalog or change the 
 | Operator      | Not applicable                                                                                         |
 | Editor        | Change object metadata but can't change visibility for private services                                |
 | Administrator | Change object metadata or visibility for private services, and restrict visibility of a public service |
-{: caption="Table 6. Roles and example actions for the Global Catalog service" caption-side="top"}
+{: caption="Table 7. Roles and example actions for the Global Catalog service" caption-side="top"}
 
 ### IAM Access Groups
 {: #access-groups-account-management-terra}
@@ -1698,7 +1707,34 @@ You can give users access to view, create, edit, and delete access groups in the
 | Operator      | Not applicable                                                                                                                                             |
 | Editor        | View, create, edit, and delete groups   \n  \n Add or remove users from groups                                                                             |
 | Administrator | View, create, edit, and delete groups   \n  \n Add or remove users   \n  \n Assign access to a group   \n  \n Manage access for working with access groups   \n  \n Enable or disable public access to resources at the account level |
-{: caption="Table 7. Roles and example actions for the IAM access groups service" caption-side="top"}
+{: caption="Table 8. Roles and example actions for the IAM access groups service" caption-side="top"}
+
+### IAM Access Management service
+{: #access-management-terra}
+
+You can give users access to manage access policies and custom roles.
+
+| Roles         | Actions                         |
+|---------------|---------------|
+| Viewer        | View access policies and custom roles   |
+| Operator      | View access policies and custom roles   |
+| Editor        | View and edit custom roles   \n  \n View IAM insights, policies, and settings |
+| Administrator | View, create, edit, and delete custom roles   \n  \n View and update IAM settings  \n  \n Assign access to a group   \n  \n View, create, edit, and delete access policies |
+{: caption="Table 9. Roles and example actions for the IAM Access Management service" caption-side="top"}
+
+
+#### Role Management
+{: #custom-roles-account-management-terra}
+
+You can give users access to create, update, and delete custom roles for services in the account.
+
+| Roles         | Actions                            |
+|---------------|------------------------------------|
+| Viewer        | View custom roles         |
+| Operator      | Not applicable             |
+| Editor        | Edit and update custom roles in an account          |
+| Administrator | Create, edit, update, and delete custom roles in an account  |
+{: caption="Table 10. Roles and example actions for the Access management service" caption-side="top"}
 
 ### IAM Identity service
 {: #identity-service-account-management-terra}
@@ -1713,7 +1749,7 @@ You can give users access to manage service IDs and identity providers (IdPs) by
 | Administrator | Create, update, and delete IDs and API keys   \n  \n Assign access policies to IDs   \n  \n View, create, update, and delete IdPs   \n  \n Update IAM account setting for service IDs and user API key creation   \n  \n Create trusted profiles |
 | User API Key Creator | Can create API keys when the account setting to restrict API key creation is enabled. |
 | Service ID Creator | Can create service IDs when the account setting to restrict service ID creation is enabled. |
-{: caption="Table 8. Roles and example actions for the IAM Identity service" caption-side="top"}
+{: caption="Table 11. Roles and example actions for the IAM Identity service" caption-side="top"}
 {: #identity-service-acct-mgmt-terra}
 
 ### {{site.data.keyword.cloud-shell_notm}} settings
@@ -1730,7 +1766,7 @@ You can assign users access to view and update {{site.data.keyword.cloud-shell_n
 | Cloud Operator | Create {{site.data.keyword.cloud-shell_short}} environments to manage {{site.data.keyword.cloud_notm}} resources. |
 | Cloud Developer | Create {{site.data.keyword.cloud-shell_short}} environments to manage {{site.data.keyword.cloud_notm}} resources and develop applications for {{site.data.keyword.cloud_notm}} (Web Preview enabled). |
 | File Manager | Create {{site.data.keyword.cloud-shell_short}} environments to manage {{site.data.keyword.cloud_notm}}resources and manage files in your workspace (File Upload and File Download enabled). |
-{: caption="Table 9. Roles and example actions for the {{site.data.keyword.cloud-shell_notm}} service" caption-side="top"}
+{: caption="Table 12. Roles and example actions for the {{site.data.keyword.cloud-shell_notm}} service" caption-side="top"}
 
 ### License and entitlement
 {: #license-entitlement-management-terra}
@@ -1743,7 +1779,7 @@ You can assign users access to manage licenses and entitlements within an accoun
 | Operator      |  Not applicable                                                                                            |
 | Editor        |  Editors can create entitlements and view, update, bind, or delete only the entitlements they acquired.    |
 | Administrator |  Administrators can create entitlements and view, update, bind, or delete any entitlements in the account. |
-{: caption="Table 10. Roles and example actions for the license and entitlement service" caption-side="top"}
+{: caption="Table 13. Roles and example actions for the license and entitlement service" caption-side="top"}
 
 ### Partner Center
 {: #pc-buildgrow-account-management-terra}
@@ -1756,7 +1792,7 @@ You can give users access to view and edit partner profile details, offers, fast
 | Editor        | View and edit partner profile, offers, and fast tracks. Create, edit, and view support cases. |
 | Operator      |  |
 | Administrator | View and edit partner profile, offers, and fast tracks. Create, edit, and view support cases. |
-{: caption="Table 11. Roles and example actions for the Partner Center service" caption-side="top"}
+{: caption="Table 14. Roles and example actions for the Partner Center service" caption-side="top"}
 
 ### Partner Center - Sell
 {: #prod-lifecycle-account-management-terra}
@@ -1768,20 +1804,7 @@ You can give users access to onboard, validate, and publish software.
 | Administrator | Create, edit, validate, and publish products |
 | Editor        | Validate and edit products |
 | Approver      | Approves or rejects a workflow instance's task |
-{: caption="Table 12. Roles and example actions for the Partner Center - Sell service" caption-side="top"}
-
-### Role Management
-{: #custom-roles-account-management-terra}
-
-You can give users access to create, update, and delete custom roles for services in the account.
-
-| Roles         | Actions                            |
-|---------------|------------------------------------|
-| Viewer        | View custom roles |
-| Operator      | Not applicable             |
-| Editor        | Edit and update custom roles in an account          |
-| Administrator | Create, edit, update, and delete custom roles in an account  |
-{: caption="Table 13. Roles and example actions for the Access management service" caption-side="top"}
+{: caption="Table 15. Roles and example actions for the Partner Center - Sell service" caption-side="top"}
 
 ### {{site.data.keyword.compliance_short}}
 {: #security-compliance-account-management-terra}
@@ -1797,7 +1820,7 @@ You can give users access to create, update, and delete resources for the {{site
 | Manager       | Permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader        | Perform read-only actions within a service such as viewing service-specific resources. |
 | Writer        | Permissions beyond the reader role, including creating and editing service-specific resources. |
-{: caption="Table 14. Roles and example actions for the {{site.data.keyword.compliance_short}} service" caption-side="top"}
+{: caption="Table 16. Roles and example actions for the {{site.data.keyword.compliance_short}} service" caption-side="top"}
 
 To access all of the {{site.data.keyword.compliance_short}}, you must also assign permissions for the Security Advisor service. For more information, see [Assigning access for the Security and Compliance Center](/docs/security-compliance?topic=security-compliance-access-management).
 {: note}
@@ -1813,7 +1836,7 @@ You can give users access to create, delete, or update a software instance. And,
 | Operator      | Update a software instance   \n  \n View the details page for the software instance |
 | Editor        | Create, delete, update a software instance   \n  \n View the details page for the software instance |
 | Administrator | Create, delete, update a software instance   \n  \n View the details page for the software instance   \n  \n View the logs for the software instance   \n  \n Assign IAM permissions |
-{: caption="Table 15. Roles and example actions for the Software instance service" caption-side="top"}
+{: caption="Table 17. Roles and example actions for the Software instance service" caption-side="top"}
 
 ### Support center
 {: #support-center-account-management-terra}
@@ -1826,7 +1849,7 @@ You can give users access to manage support cases.
 | Operator      |  Not applicable                                                               |
 | Editor        |  View cases   \n  \n Search cases   \n  \n Update cases   \n  \n Create cases |
 | Administrator |  View cases   \n  \n Search cases   \n  \n Update cases   \n  \n Create cases |
-{: caption="Table 16. Roles and example actions for the Support Center service" caption-side="top"}
+{: caption="Table 18. Roles and example actions for the Support Center service" caption-side="top"}
 
 Assign users the viewer role on the user management service in addition to a support center access policy so the user can see all cases in the account regardless of user list visibility settings. If the user list visibility is set to be restricted, this can limit a user's ability to view, search, and manage support cases in an account that they didn't open themselves.
 {: tip}
@@ -1842,7 +1865,20 @@ You can give users access to view users in an account, invite and remove users, 
 | Operator      | View users in the account   \n  \n View user profile settings                                          |
 | Editor        | View, invite, remove, and update users from the account   \n  \n View and update user profile settings |
 | Administrator | View, invite, remove, and update users from the account   \n  \n View and update user profile settings |
-{: caption="Table 17. Roles and example actions for the User Management service" caption-side="top"}
+{: caption="Table 19. Roles and example actions for the User Management service" caption-side="top"}
 
 The viewer role on the user management service is a role that is commonly assigned for users assigned a role to view or manage support cases. If an account owner restricts the visibility of the user list in the IAM settings, users can't see support cases that are opened by other users in the account. However, if they are assigned the viewer role for the user management service, the user list visibility setting doesn't affect the ability to view cases in the account.
 {: tip}
+
+### {{site.data.keyword.atracker_short}} Event Routing
+{: #activty-tracker-account-management-cli}
+
+You can give users access to run platform actions.
+
+| Roles         | Actions                                                                                                |
+|---------------|--------------------------------------------------------------------------------------------------------|
+| Viewer        | View {{site.data.keyword.atracker_short}} configuration resources such as routes and targets. |
+| Operator      | View {{site.data.keyword.atracker_short}} configuration resources such as routes and targets. |
+| Editor        | View, create, update, and delete {{site.data.keyword.atracker_short}} resources. |
+| Administrator | View, create, update, and delete {{site.data.keyword.atracker_short}} resources.   \n  \n Assign access policies to manage {{site.data.keyword.atracker_short}} resources to other users in the account. |
+{: caption="Table 20. Roles and example actions for the {{site.data.keyword.atracker_short}} Event Routing service" caption-side="top"}
