@@ -312,7 +312,6 @@ The following table lists the filters that you can use to customize which produc
 | Operators | A method of packaging and deploying a Kubernetes-native application. |
 | OVA Images | Open Virtual Appliance that contains a compressed installable version of a virtual machine. |
 | Server Images | A template that is used to create instances of virtual servers. |
-| Starter kits | An application pattern that can be integrated with services to generate a production-ready asset, which can be deployed directly into a DevOps pipeline and a Kubernetes cluster. |
 | Terraform |  Infrastructure as code to deploy your application. |
 {: caption="Table 1. Options for filtering by delivery method" caption-side="top"}
 {: #software-custom}
