@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022
-lastupdated: "2022-08-02"
+  years: 2022, 2023
+lastupdated: "2023-03-03"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, power, power systems, power systems virtual server
 
@@ -83,14 +83,14 @@ The tutorial includes steps for deploying a virtual server image to a target {{s
 
 | Parameter | Description | Required for users to specify? | Hidden from users? |
 | --- | ---------- | --- | --- |
-| **`crn`** | The {{site.data.keyword.powerSys_notm}} CRN | True | False |
-| **`instance_name`** | The name of the virtual server instance. | True | False |
-| **`memory`** | The amount of memory that you want to assign to your instance in gigabytes. | False | False |
-| **`network_name`** | The network ID or name to assign to the instance, as defined for the selected {{site.data.keyword.powerSys_notm}} CRN. | True | False |
-| **`processor_type`** | The type of processor mode in which the VM runs. Specify `shared`, `capped`, or `dedicated`. | False | False |
-| **`processors`** | The number of vCPUs to assign to the VM as visible within the guest OS. | False | False |
-| **`ssh_key_name`** | The name of the public SSH RSA key to use when you create the instance, as defined for the selected {{site.data.keyword.powerSys_notm}} CRN. | True | False |
-| **`sys_type`** | The type of system on which to create the VM: `s922`, `e880`, `e980`, `e1080`, or `s1022`. | False | False |
+| **`crn`** | The {{site.data.keyword.powerSys_notm}} CRN | `True` | `False` |
+| **`instance_name`** | The name of the virtual server instance. | `True` | `False` |
+| **`memory`** | The amount of memory that you want to assign to your instance in gigabytes. | `False` | `False` |
+| **`network_name`** | The network ID or name to assign to the instance, as defined for the selected {{site.data.keyword.powerSys_notm}} CRN. | `True` |`False` |
+| **`processor_type`** | The type of processor mode in which the VM runs. Specify `shared`, `capped`, or `dedicated`. | `False` | `False` |
+| **`processors`** | The number of vCPUs to assign to the VM as visible within the guest OS. | `False` | `False` |
+| **`ssh_key_name`** | The name of the public SSH RSA key to use when you create the instance, as defined for the selected {{site.data.keyword.powerSys_notm}} CRN. | `True` | `False` |
+| **`sys_type`** | The type of system on which to create the VM: `s922`, `e880`, `e980`, `e1080`, or `s1022`. | `False` | `False` |
 {: caption="Table 1. Deployment values for a virtual server image" caption-side="top"}
 
 Next, update the configuration type of the **`crn`** and **`processors`** parameters:
