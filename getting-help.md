@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2021, 2022
+  years: 2021, 2023
 
-lastupdated: "2022-01-20"
+lastupdated: "2022-03-02"
 
 keywords: getting help, getting support
 
@@ -14,12 +14,15 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Getting help and support
+# Getting help and support 
 {: #gettinghelp}
 
-If you have problems or questions when using the {{site.data.keyword.cloud}} console, you can go directly to the [{{site.data.keyword.cloud_notm}} Support Center page](/unifiedsupport/supportcenter) to review featured FAQs, view cloud status, or post questions on Stack Overflow. You can also open a support case.
+If you experience an issue or have questions when you're working in the {{site.data.keyword.cloud}} console, you can use the following resources before you open a support case.
 {: shortdesc}
 
-* You can check the status of the {{site.data.keyword.Bluemix_notm}} platform and resources by going to the [Status page](https://cloud.ibm.com/status){: external}.
-* You can review [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external} to see whether other users ran into the same problem. When using the forum to ask a question, tag your question with `ibm-cloud` so that it is seen by the {{site.data.keyword.Bluemix_notm}} development teams.
-* If you still can't resolve the problem, you can open a support case. For more information, see [Creating support cases](/docs/get-support?topic=get-support-open-case).
+* Review the [FAQs](/docs?tab=faqs&tags=get-support%2Cbilling-usage%2Caccount%2Csell) in the product documentation.
+* Review the troubleshooting documentation for [accounts](/docs/account?topic=account-ts_logintoibm), [billing](/docs/billing-usage?topic=billing-usage-cannot-access-billing-info), [selling on {{site.data.keyword.cloud_notm}}](/docs/sell?topic=sell-ts-view-usage), and [using the Support Center](/docs/get-support?topic=get-support-ts_tech-support-case) to troubleshoot and resolve common issues.
+* Check the status of the {{site.data.keyword.Bluemix_notm}} platform and resources by going to the [Status page](https://cloud.ibm.com/status){: external}.
+* Review [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external} to see whether other users experienced the same problem. When you ask a question, tag the question with `ibm-cloud`, so that it's seen by the {{site.data.keyword.Bluemix_notm}} development teams.
+
+If you still can't resolve the problem, you can open a support case. For more information, see [Creating support cases](/docs/get-support?topic=get-support-open-case). And, if you're looking to provide feedback, see [Submitting feedback](/docs/overview?topic=overview-feedback).
