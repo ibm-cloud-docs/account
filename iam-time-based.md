@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023
-lastupdated: "2023-02-23"
+lastupdated: "2023-03-06"
 keywords: access policy, access, policy, restriction, time based restriction, time based, time based conditions, conditions
 
 subcollection: account
@@ -43,47 +43,43 @@ The following patterns represent the allowed condition permutations:
 IAM prevents combining one-time temporary conditions with weekly recurring conditions in the same policy definition.
 {: note}
 
+
 ## Before you begin
-{: #before-you-begin-time-based}
+{: #before-you-begin-time-based-cli}
 {: cli}
-{: api}
 
 Make sure that you have the latest version of the {{site.data.keyword.cloud_notm}} CLI so that you can use conditions in your access policies.
-{: cli}
-
-Make sure that you call the `v2/policies` URI, which is `https://iam.coud.ibm.com/v2/policies`, so that you can use conditions in your access policies. For more information, see the [IAM Policy Management API](/apidocs/iam-policy-management) and [change log](/docs/account?topic=account-api-change-log).
-{: api}
 
 To determine your {{site.data.keyword.cloud_notm}} CLI version, run the following command:
-{: cli}
 
 ```bash
 ibmcloud -v
 ```
 {: codeblock}
-{: cli}
 
 You must use the latest version of the CLI. If you aren't using the latest version, run the following command to update your CLI:
-{: cli}
 
 ```bash
 ibmcloud update
 ```
 {: codeblock}
-{: cli}
 
 If you are running the current release, the following output is displayed:
-{: cli}
 
 ```bash
 Checking for updates...
 No update required. Your CLI is already up-to-date.
 ```
 {: screen}
-{: cli}
 
 For more information, see [Installing the stand-alone IBM Cloud CLI](/docs/cli?topic=cli-install-ibmcloud-cli).
-{: cli}
+
+## Before you begin
+{: #before-you-begin-time-based-api}
+{: api}
+
+Make sure that you call the `v2/policies` URI, which is `https://iam.coud.ibm.com/v2/policies`, so that you can use conditions in your access policies. For more information, see the [IAM Policy Management API](/apidocs/iam-policy-management) and [change log](/docs/account?topic=account-api-change-log).
+
 
 ## Creating a temporary time-based condition
 {: #iam-time-based-temp-ui}
