@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2023
 
-lastupdated: "2023-03-02"
+lastupdated: "2023-03-06"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, access management service, catalog management service, cloud shell service, software instance service
 
@@ -378,21 +378,21 @@ If you are assigning access by using the CLI or API, the account management serv
 
 | Account management service         | Attribute and value   |
 |---------------|---------------------------------|
-| All Account Management services | serviceType=platform_service |
-| All IAM Account Management services | service_group_id=IAM |
-| Billing | serviceName=billing |
-| Catalog management | serviceName=globalcatalog-collection |
-| Context-based restrictions | serviceName=context-based-restrictions|
-| Enterprise | serviceName=enterprise |
-| Global catalog | serviceName=globalcatalog |
-| IAM Access Groups service | serviceName=iam-groups |
-| IAM Identity service | serviceName=iam-identity |
-| {{site.data.keyword.cloud-shell_notm}} | serviceName=cloudshell |
-| License and entitlement | serviceName=entitlement |
-| Role management | serviceName=iam-access-management |
-| {{site.data.keyword.compliance_short}} | serviceName=security-compliance |
-| Support center| serviceName=support |
-| User management | serviceName=user-management |
+| All Account Management services | `serviceType=platform_service` |
+| All IAM Account Management services | `service_group_id=IAM` |
+| Billing | `serviceName=billing` |
+| Catalog management | `serviceName=globalcatalog-collection` |
+| Context-based restrictions | `serviceName=context-based-restrictions`|
+| Enterprise | `serviceName=enterprise` |
+| Global catalog | `serviceName=globalcatalog` |
+| IAM Access Groups service | `serviceName=iam-groups` |
+| IAM Identity service | `serviceName=iam-identity` |
+| {{site.data.keyword.cloud-shell_notm}} | `serviceName=cloudshell` |
+| License and entitlement | `serviceName=entitlement` |
+| Role management | `serviceName=iam-access-management` |
+| {{site.data.keyword.compliance_short}} | `serviceName=security-compliance` |
+| Support center| `serviceName=support` |
+| User management | `serviceName=user-management` |
 {: caption="Table 1. Account management service names" caption-side="top"}
 
 ## Assigning access by using the API
@@ -1147,21 +1147,21 @@ If you are assigning access by using the CLI or API, the account management serv
 
 | Account management service         | Attribute and value   |
 |---------------|---------------------------------|
-| All Account Management services | serviceType=platform_service |
-| All IAM Account Management services | service_group_id=IAM |
-| Billing | serviceName=billing |
-| Catalog management | serviceName=globalcatalog-collection |
-| Context-based restrictions | serviceName=context-based-restrictions|
-| Enterprise | serviceName=enterprise |
-| Global catalog | serviceName=globalcatalog |
-| IAM Access Groups service | serviceName=iam-groups |
-| IAM Identity service | serviceName=iam-identity |
-| {{site.data.keyword.cloud-shell_notm}} | serviceName=cloudshell |
-| License and entitlement | serviceName=entitlement |
-| Role management | serviceName=iam-access-management |
-| {{site.data.keyword.compliance_short}} | serviceName=security-compliance |
-| Support center| serviceName=support |
-| User management | serviceName=user-management |
+| All Account Management services | `serviceType=platform_service` |
+| All IAM Account Management services | `service_group_id=IAM` |
+| Billing | `serviceName=billing` |
+| Catalog management | `serviceName=globalcatalog-collection` |
+| Context-based restrictions | `serviceName=context-based-restrictions`|
+| Enterprise | `serviceName=enterprise` |
+| Global catalog | `serviceName=globalcatalog` |
+| IAM Access Groups service | `serviceName=iam-groups` |
+| IAM Identity service | `serviceName=iam-identity` |
+| {{site.data.keyword.cloud-shell_notm}} | `serviceName=cloudshell` |
+| License and entitlement | `serviceName=entitlement` |
+| Role management | `serviceName=iam-access-management` |
+| {{site.data.keyword.compliance_short}} | `serviceName=security-compliance` |
+| Support center| `serviceName=support` |
+| User management | `serviceName=user-management` |
 {: caption="Table 1. Account management service names" caption-side="top"}
 
 ## Assigning access by using the CLI
