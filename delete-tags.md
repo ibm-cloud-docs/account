@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2023
-lastupdated: "2023-01-18"
+lastupdated: "2023-03-06"
 
 keywords: tags, delete tags, unused tags, delete tags in  the console, delete  tags cli, delete tags api
 
@@ -39,7 +39,7 @@ Log in to [{{site.data.keyword.cloud}} CLI](/docs/cli?topic=cli-getting-started)
 The following example deletes the `MyTag` user tag:
 
    ```bash
-   ibmcloud resource tag-delete --tag-names MyTag
+   ibmcloud resource tag-delete --tag-name MyTag
    ```
    {: codeblock}
 
