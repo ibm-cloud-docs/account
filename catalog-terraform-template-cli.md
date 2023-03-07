@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-02-10"
+lastupdated: "2023-03-07"
 
 keywords: private catalog, software, onboard, Terraform, terraform template, cli
 
@@ -33,7 +33,7 @@ This tutorial walks you through how to onboard a Terraform template to your acco
 {: #prereq-tutorial-terraform-template-cli}
 
 1. Verify that you're using a Pay-As-You-Go or Subscription account. See [Viewing your account type](/docs/account?topic=account-account_settings#view-acct-type) for more details.
-1. Upload your source code to a release in your GitHub or public GitLab repository. See [Setting up your source code repository](/docs/sell?topic=sell-source-repo-setup).
+1. Upload your source code to a release in your GitHub or GitLab repository. See [Setting up your source code repository](/docs/sell?topic=sell-source-repo-setup).
 1. Make sure you're assigned the following [IAM access](/docs/account?topic=account-groups):
 
    * Editor role on the catalog management service
@@ -74,7 +74,7 @@ ibmcloud catalog offering create --catalog "Name of catalog" --zipurl https://so
 ```
 {: codeblock}
 
-If you want to import software from a private repository, you can use a personal access token by adding [--token TOKEN] to your command. Private GitLab repositories are not supported.
+If you want to import software from a private repository, you can use a personal access token by adding [--token TOKEN] to your command.
 {: important}
 
 ## Add a category tag to your Terraform template
