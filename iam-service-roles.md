@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-03-15"
+lastupdated: "2023-03-16"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -180,9 +180,22 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 
+| Role | Description |
+| ----- | :----- |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 6. Service roles - Watson OpenScale" caption-side="top"}
+{: #service-roles-table6}
+{: tab-title="Service roles"}
+{: tab-group="aiopenscale"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `aiopenscale.dashboard.view` |  | Administrator, Editor, Operator, Viewer |
+| `aiopenscale.dashboard.view` | View OpenScale | Administrator, Editor, Operator, Viewer |
+| `aiopenscale.dashboard.edit` | Edit OpenScale | Administrator, Editor, Writer |
+| `aiopenscale.dashboard.administer` | Administer OpenScale | Administrator |
 {: caption="Table 6. Service actions - Watson OpenScale" caption-side="top"}
 {: #actions-table6}
 {: tab-title="Actions"}
