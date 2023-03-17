@@ -2,8 +2,9 @@
 
 copyright:
 
-  years: 2017, 2022
-lastupdated: "2022-04-26"
+  years: 2017, 2023
+
+lastupdated: "2023-03-17"
 
 keywords: what is IAM, IAM features, IAM API, how IAM works
 
@@ -12,6 +13,7 @@ subcollection: account
 ---
 
 {{site.data.keyword.attribute-definition-list}}
+
 
 # How {{site.data.keyword.cloud_notm}} IAM works
 {: #iamoverview}
@@ -31,7 +33,7 @@ For services that don't support the use of {{site.data.keyword.cloud_notm}} IAM 
 ## What features are provided?
 {: #features}
 
-{{site.data.keyword.cloud_notm}} IAM provides a wide range of features for your identity and access management needs. 
+{{site.data.keyword.cloud_notm}} IAM provides a wide range of features for your identity and access management needs.
 
 ### User management
 {: #usermgmt-feature}
@@ -42,6 +44,8 @@ With unified user management, you can add and delete users in an account for bot
 {: #fgaccess-feature}
 
 Access for users, service IDs, access groups, and trusted profiles are defined by a policy. Within the policy, the scope of access can be assigned to a set of resources in a resource group, a single resource, or account management services. After the target is set, you can define what actions are allowed by the subject of the policy by selecting access roles. Roles provide a way to tailor the level of access that is granted for the subject of the policy to perform actions on the target of policy, whether it is platform management tasks within the account or accessing a service's UI or completing API calls.
+
+You can also add time-based conditions to a policy that defines when the policy grants access, whether you want to grant temporary access to resources in your account or allow access during recurring time windows. For more information, see [Limiting access with time-based conditions](/docs/account?topic=account-iam-time-based).
 
 ### Access groups for streamlined access management
 {: #access-groups-quick-access}
@@ -82,7 +86,7 @@ Similarly, if you want to complete an administrator-related task, you can select
 
 You also have the option to log in to the account without applying a profile by continuing to the console. 
 
-To learn more about how trusted profiles work check out our IBM Cloud Identity and Access Management documentation which includes tutorials and other helpful resources to get started!
+To learn more about how trusted profiles work check out our IBM Cloud Identity and Access Management documentation which includes tutorials and other helpful resources to get started! 
 
 #### Compute resources
 {: #trusted-profiles-feature-resources}
@@ -116,6 +120,11 @@ You can require multifactor authentication (MFA) for every user in the account o
 
 In a scenario that you need to provide one service access to another, you can create a policy by using a service to service authorization. For more information, see [Using authorizations to grant access between services](/docs/account?topic=account-serviceauth).
 
+### Related access management controls
+{: #related-access-feature}
+
+IAM is the foundation for identity and access management in {{site.data.keyword.cloud_notm}}, but you can extend your security strategy by building on IAM access controls with context-based restriction. These restrictions work with traditional IAM policies, which are based on identity, to provide an extra layer of protection. For more information, see [What are context-based restrictions?](/docs/account?topic=account-context-restrictions-whatis).
+
 ## How do I use {{site.data.keyword.cloud_notm}} IAM?
 {: #howto}
 
@@ -124,6 +133,6 @@ You can access and use {{site.data.keyword.cloud_notm}} IAM through the Access (
 * To access {{site.data.keyword.cloud_notm}} IAM by using the console, go to **Manage** > **Access (IAM)**.
 * Go to [Managing IAM access, API keys, service IDs, and access groups](/docs/cli?topic=cli-ibmcloud_commands_iam) to review the available CLI commands.
 * Go to the following API docs to review the available APIs:
-    * [IAM Identity Services API](/apidocs/iam-identity-token-api){: external} 
-    * [IAM Access Groups API](/apidocs/iam-access-groups){: external} 
-    * [IAM Policy Management API](/apidocs/iam-policy-management){: external} 
+    * [IAM Identity Services API](/apidocs/iam-identity-token-api){: external}
+    * [IAM Access Groups API](/apidocs/iam-access-groups){: external}
+    * [IAM Policy Management API](/apidocs/iam-policy-management){: external}
