@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-03-20"
+lastupdated: "2023-03-21"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -7072,10 +7072,10 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `support.case.create` |  | Administrator, Editor |
-| `support.case.update` |  | Administrator, Editor |
-| `support.case.read` |  | Administrator, Editor, Viewer |
-| `support.case.list` |  | Administrator, Editor, Viewer |
+| `support.case.create` | The ability to create a case. | Administrator, Editor |
+| `support.case.update` | The ability to update a case. | Administrator, Editor |
+| `support.case.read` | The ability to search cases. | Administrator, Editor, Viewer |
+| `support.case.list` | The ability to view cases. | Administrator, Editor, Viewer |
 {: caption="Table 146. Service actions - Support Center" caption-side="top"}
 {: #actions-table146}
 {: tab-title="Actions"}
