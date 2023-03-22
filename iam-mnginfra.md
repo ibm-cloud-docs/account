@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2022
+  years: 2017, 2023
 
-lastupdated: "2022-02-21"
+lastupdated: "2023-03-22"
 
 
 keywords: classic infrastructure access, VPN subnet access, classic infrastructure permissions, device access
@@ -35,7 +35,7 @@ The following graphic shows how classic infrastructure permissions are assigned 
 
 ![Classic infrastructure access](images/ClassicIaaS.svg "Assigning classic infrastructure access by selecting a user, device, or service, then any combination of granular permissions"){: caption="Figure 1. Assigning classic infrastructure access by selecting a user, device, or service, then any combination of granular permissions" caption-side="bottom"}
 
-There are four main categories of permissions to choose from: account, devices, network, and services. The following lists provide examples from each category highlighting some of the commonly assigned permissions from each. To view all of the available permissions from each category, go to **Manage** > **Access (IAM)** > **Users** in the {{site.data.keyword.cloud_notm}} console. Then, select a user's name from the list that you can manage access for, then click **Classic infrastructure**. 
+There are four main categories of permissions to choose from: account, devices, network, and services. The following lists provide examples from each category highlighting some of the commonly assigned permissions from each. To view all of the available permissions from each category, go to **Manage** > **Access (IAM)** > **Users** in the {{site.data.keyword.cloud_notm}} console. Then, select a user's name from the list that you can manage access for, then click **Classic infrastructure**.
 
 Account
 - Add and upgrade storage
@@ -46,13 +46,14 @@ Account
 Devices
 - Upgrade server
 - Manage load balancers
-- Manage Firewalls 
+- Manage Firewalls
 
 Network
 - Add IP addresses
-- VPN administration 
+- VPN administration
 - Network gateways
 - Security groups
+- Manage private endpoint service
 
 Services
 - Upgrade services
@@ -96,4 +97,4 @@ When a classic infrastructure user invites another user to the account, the clas
 
    Use the **Auto-assign** option to set how the user gets access to VPN subnets based on their device access. If this option is set to on, the user is automatically assigned access to all subnets for the devices they already have access to. You can set this option to off to manually select subnets from the list.
 
-   You can define the type of VPN subnets that the user has access to by using the **VPN type** option. If you select **None**, no VPN access can be assigned. If you have the correct access, you can define the type of VPN subnets that the user has access to by using the VPN type option. If you select None, no VPN access can be assigned. 
+   You can define the type of VPN subnets that the user has access to by using the **VPN type** option. If you select **None**, no VPN access can be assigned. If you have the correct access, you can define the type of VPN subnets that the user has access to by using the VPN type option. If you select None, no VPN access can be assigned.
