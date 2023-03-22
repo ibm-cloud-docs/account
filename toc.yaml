@@ -78,6 +78,7 @@
                   topics:
                   - iam-mfatypes.md
                   - iam-mfa.md
+                  - iam-mfa-report.md
                   - iam-ver-auth.md
                   - iam-totp.md
                   - iam-external_mfa.md
