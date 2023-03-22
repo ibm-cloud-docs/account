@@ -5,9 +5,9 @@ copyright:
   years: 2021, 2023
 
 
-lastupdated: "2023-03-01"
+lastupdated: "2023-03-22"
 
-keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access, access group
+keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access, access group, service IDs, IBM Cloud services, CRN, cloud resource name
 
 subcollection: account
 
@@ -19,12 +19,15 @@ subcollection: account
 # Creating trusted profiles
 {: #create-trusted-profile}
 
-You can use trusted profiles to automatically grant federated users access to your account with conditions based on SAML attributes from your corporate directory. Trusted profiles can also be used to set up fine-grained authorization for applications that are running in compute resources. This way, you aren't required to create service IDs or API keys for the compute resources.
+You can use trusted profiles to grant different {{site.data.keyword.cloud}} identities access to resources in your account. Automatically grant federated users access to your account with conditions based on SAML attributes from your corporate directory. Or, use trusted profiles to set up fine-grained authorization for applications that are running in compute resources. This way, you aren't required to create service IDs or API keys for the compute resources. You can also establish trust with {{site.data.keyword.cloud_notm}} services or service IDs in another account to grant cross-account access.
 {: shortdesc}
 
-When you initially create a trusted profile, you can build trust with either federated users or compute resources. After the trusted profile is created, you can add more conditions for federated users and compute resources in the same trusted profile.
+A user doesn't need to be a member of the account to assume a trusted profile. A user can use the profile as long as the user has the same identity provider (IdP) as the trusted profile and they meet the conditions of trust.
+{: note}
 
-You can use {{site.data.keyword.cloudaccesstrailshort}} to monitor which federated users and compute resources apply a trusted profile. For more information, see [Monitoring login sessions for trusted profiles](/docs/account?topic=account-trusted-profile-monitor).
+When you initially create a trusted profile, you can build conditions of trust with the following entity types: federated users, compute resources, service IDs, or {{site.data.keyword.cloud_notm}} services. After you create the trusted profile, you can add more conditions to combine multiple entity types in the same profile.
+
+You can use {{site.data.keyword.cloudaccesstrailshort}} to monitor which federated users compute resources, service IDs, and {{site.data.keyword.cloud_notm}} services apply a trusted profile. For more information, see [Monitoring login sessions for trusted profiles](/docs/account?topic=account-trusted-profile-monitor).
 {: tip}
 
 ## Before you begin
@@ -36,7 +39,7 @@ If you have the following access, you can create trusted profiles:
 - Administrator role on all account management services
 - Administrator role on the IAM Identity Service. For more information, see [IAM Identity service](/docs/account?topic=account-account-services#identity-service-account-management).
 
-## Establishing trust with federated users
+## Establishing trust with federated users in the console
 {: #create-profile-federated-ui}
 {: ui}
 
@@ -52,7 +55,7 @@ Complete the following steps to define which federated users can access specific
 
 1. (Optional) Establish trust.
    1. Select **Federated users** as a trusted entity type from the list.
-   1. Select **Users federated by IBMid** or **Users federated by IBM Cloud AppID** as the authentication method and input the default identity prodiver (IdP) you enabled in step 1.
+   1. Select **Users federated by IBMid** or **Users federated by {{site.data.keyword.cloud_notm}} AppID** as the authentication method and input the default identity prodiver (IdP) you enabled in step 1.
 
    If the users that you are creating a trusted profile for use {{site.data.keyword.appid_full_notm}}, create the trusted profile as an App ID user, and likewise for IBMid. This way, your own SAML attributes can give you an idea of how to structure the trusted profile conditions. Other users with the same IdP can have different SAML attributes. Use your own attributes only as a hint. To use attributes in a claim that are different than your own, input them manually.
    {: tip}
@@ -63,23 +66,11 @@ Complete the following steps to define which federated users can access specific
 
 1. Define the session duration for how long a user can apply the profile before they must reauthenticate.
 1. Click **Continue**.
-1. (Optional) Assign access.
-   * Assign access to the trusted profile by adding it to one or more access groups. This way, you can use the policies that exist in the access groups you've created.
-      1. Select **Access groups** and select all the groups that you want to add the trusted profile to. You can assign users to only the access groups that you have access to manage.
-      1. Click **Add**.
-   * Assign access to the trusted profile with an access policy.
-      1. Select **Access policy**. Based on your level of access, you can assign IAM policies and classic infrastructure permissions.
-      1. Select a single service or a group of services, such as **All Identity and Access enabled services**, **All Account Management services**, or **All IAM Account Management services**. Then, click **Next**.
-      1. Scope the access to **All resources** or **Specific resources** based on selected attributes. Then, click **Next**.
-      1. Select any combination of roles and permissions to define the scope of access, and click **Review**.
-      1. Click **Add** to add your policy configuration to your summary.
-      1. You can assign **Classic infrastructure** access by selecting a user, device, or service, then any combination of granular permissions.
-1. Click **Create**.
 
-For more information about the fields that are used to create conditions for trusted profiles, see [IAM policy properties](/docs/account?topic=account-iam-condition-properties).
+Next, [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
 
-You can assign only classic infrastructure access if your account is linked to a Softlayer account.
-{: note}
+For more information about the fields that are used to create conditions for trusted profiles, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
+{: tip}
 
 ## Establishing trust with compute resources in the console
 {: #create-profile-compute}
@@ -100,7 +91,77 @@ Complete the following steps to set up better control over granting access to co
    The Kubernetes namespace and service account names that you enter do not have to exist already. Any future namespaces or service accounts with these names can establish trust. To list existing namespaces, log in to your cluster and run `kubectl get ns`. To list existing service accounts, log in to your cluster and run `kubectl get sa -n <namespace>`. You can also enter `default` for both. For more information, see [Using Trusted Profiles in your Kubernetes and OpenShift Clusters](https://www.ibm.com/cloud/blog/using-trusted-profiles-in-your-kubernetes-and-openshift-clusters).
    {: tip}
 
-   1. If you select **Specific resources**, you can establish trust with one or more existing compute resource instances. For example, a Kubernetes cluster.
+   1. If you select **Specific resources**, you can establish trust with one or more existing compute resource instances directly without conditions. For example, a Kubernetes cluster.
+
+1. Click **Continue**.
+
+Next, [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
+
+For more information about the fields that are used to create conditions for trusted profiles, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
+{: tip}
+
+## Establishing trust with {{site.data.keyword.cloud_notm}} services in the console
+{: #create-profile-services}
+{: ui}
+
+An {{site.data.keyword.cloud_notm}} service in another account might need a token to run an operation in your account. Complete the following steps to define how an {{site.data.keyword.cloud_notm}} service can access specific resources in your account:
+
+1. Ask the administrator of the service for the Cloud Resource Name (CRN) that uniquely identifies the service instance. The CRN is used to authorize operations.
+
+   The service administrator can find the CRN by going to the Navigation Menu icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list** and clicking the name of the service that you're targeting. In the **Details** section, copy the CRN.
+   {: note}
+
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Trusted profiles**.
+1. Click **Create profile**.
+1. Define your profile by providing a name and a description, and click **Continue**.
+
+   In the description, provide a list of actions that are available for the trusted profile.
+   {: tip}
+
+1. Select **{{site.data.keyword.cloud}} services**.
+1. Enter the CRN that service administrator provided to you.
+1. Click **Continue**.
+
+Next, [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
+
+{{site.data.keyword.cloud_notm}} services are static identities that don't use conditions to establish trust. Instead, use an ID to create a direct link with the trusted entity.
+{: note}
+
+## Establishing trust with service IDs in the console
+{: #create-profile-serviceid}
+{: ui}
+
+You can use trusted profiles to give a service ID cross-account access and access to call classic infrastructure services. Complete the following steps to define how a service ID can access specific resources in your account:
+
+1. Ask an administrator in the other account for the service ID value that identifies the service ID.
+
+   An administrator can find the service ID value by going to **Manage** > **Access (IAM)** > **Service IDs**, and selecting the service ID that you want to target. Click **Details** and copy the ID that begins with `ServiceId`.
+   {: tip}
+
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Trusted profiles**.
+1. Click **Create profile**.
+1. Define your profile by providing a name and a description, and click **Continue**.
+
+   In the description, provide a list of actions that are available for this trusted profile.
+   {: tip}
+
+1. (Optional) Establish trust.
+   1. Select **Service IDs**
+1. Enter the service ID value that the administrator provided to you.
+1. Click **Continue**.
+
+Next, [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
+
+Service IDs are static identities that don't use conditions to establish trust. Instead, use an ID to create a direct link with the trusted entity.
+{: note}
+
+## Assigning access to the trusted profile
+{: #tp-access}
+
+After you establish trust with federeated users, compute resources, an {{site.data.keyword.cloud_notm}} service, or a service ID, you can assign access.
+
+You can assign classic infrastructure access only if your account is linked to a Softlayer account.
+{: note}
 
 1. (Optional) Assign access.
    * Assign access to the trusted profile by adding it to one or more access groups. This way, you can use the policies that exist in the access groups you've created.
@@ -114,10 +175,6 @@ Complete the following steps to set up better control over granting access to co
       1. Click **Add** to add your policy configuration to your summary.
       1. You can assign **Classic infrastructure** access by selecting a user, device, or service, then any combination of granular permissions.
 1. Click **Create**.
-
-You can assign only classic infrastructure access if your account is linked to a Softlayer account.
-{: note}
-
 
 ## Establishing trust with federated users by using the CLI
 {: #create-profile-federated-cli}
@@ -285,7 +342,7 @@ Complete the following steps to define which federated users can access specific
    ```
    {: codeblock}
 
-## Establishing trust with compute resources by using the API
+## Establishing trust with compute resources with the API
 {: #create-profile-compute-api}
 {: api}
 
@@ -310,7 +367,7 @@ Complete the following steps to set up better control over granting access to co
 
 1. Create a claim rule for your trusted profile that follows the principle of least privilege by specifying conditions that target only the resources that need access. Conditions apply to all existing future resources. You can also create a direct link with specific, existing resources.
 
-       Create conditions
+      Create conditions
       :   For compute resources, set the `type` attribute to `Profile-CR`. For more information, see the [IAM Identity Services API](/apidocs/iam-identity-token-api#create-claim-rule-request).
 
       ```bash

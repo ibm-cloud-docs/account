@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2022
-lastupdated: "2022-09-26"
+  years: 2019, 2023
+lastupdated: "2023-03-22"
 
 keywords: IBM Cloud account, account differences, account overview, account components, resource, Cloud Foundry, API key, users
 
@@ -30,7 +30,7 @@ Service IDs
 :   A service ID identifies a service or application similar to how a user ID identifies a user. You can use a service ID that you create to enable an application outside of {{site.data.keyword.Bluemix_notm}} access to your services. You can assign specific access policies to the service ID that restrict permissions for using specific services, or even combine permissions for accessing different services. Since service IDs are not tied to a specific user, if a user happens to leave an organization and is deleted from the account, the service ID remains, ensuring that your application or service stays up and running. For more information, see [Creating and working with service IDs](/docs/account?topic=account-serviceids).
 
 Trusted profiles
-:   A trusted profile is a grouping of federated users, compute resources, or both, to which the same IAM access can be granted. When applying a trusted profile, temporary security credentials are provided for the duration of a session. All identities that are allowed to apply a single profile inherit the same access. For more information, see [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile).
+:   A trusted profile is a grouping of federated users, compute resources, {{site.data.keyword.Bluemix_notm}} services, service IDs, or a combination of entities, to which the same IAM access can be granted. When applying a trusted profile, temporary security credentials are provided for the duration of a session. All identities that are allowed to apply a single profile inherit the same access. For more information, see [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile).
 
 Service instances or resources
 :   Services in {{site.data.keyword.Bluemix_notm}} are either resource group- or Cloud Foundry-based. Service instances that can be added to a resource group and managed by using {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) are called resources. Service instances that are added to Cloud Foundry orgs and spaces have a separate access management system by using Cloud Foundry roles. For more information, see [Creating resources](/docs/account?topic=account-manage_resource).
