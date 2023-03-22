@@ -3,8 +3,7 @@
 copyright:
 
   years: 2018, 2023
-
-lastupdated: "2023-02-09"
+lastupdated: "2023-03-22"
 
 keywords: MFA, multifactor authentication, IBMid MFA, two-factor authentication, account MFA, time-based one-time passcode, TOTP, FIDO U2F, U2F, universal 2nd factor authentication, security key
 
@@ -17,12 +16,13 @@ subcollection: account
 # Enabling MFA in your account
 {: #enablemfa}
 
-As an Administrator on the IAM Identity Service or All IAM Account Management services, you can choose to require multifactor authentication (MFA) for every user in the account, just users with IBMids who do not use single sign-on (SSO), or individual users.
+As an Administrator on the IAM Identity Service or All IAM Account Management services, you can choose to require multifactor authentication (MFA) for every user in the account, just users with IBMids who do not use single sign-on (SSO), or individual users. This document covers how to work with [ID-based MFA](/docs/account?topic=account-types#id-based), which is the recomended MFA method.
 {: shortdesc}
 
-This document covers how to work with [ID-based MFA](/docs/account?topic=account-types#id-based), which is the recomended MFA method.
-{: note}
+Starting 15 April 2023, by default CLI logins are disabled for all users that have MFA set to **None**. This applies to users in new and existing accounts. Administrators can opt-out by going to **Manage** > **Access (IAM)** > **Settings** > **Authentication** and deselecting **Disable CLI logins with only a password**. For more information, see [Disabling MFA](/docs/account?topic=account-enablemfa#disablemfa).
+{: important}
 
+View the MFA requirement for each user in your account to determine if they fulfill the requirement by generating an MFA status report. For more information, see [Identifying a user's MFA status](/docs/account?topic=account-id-user-mfa).
 
 ## Before you begin
 {: #considerations}
@@ -35,7 +35,7 @@ The following information is helpful to consider before you enable ID-based MFA 
 * MFA for your account applies to a user's login, but does not apply to API calls. If a user has permission to make API calls to resources in your account, the user can do so without completing MFA. If the user belongs to other accounts, the user can make API calls to resources in your account by using an API key from an account that did not require MFA.
 * Plan a communication and support strategy for users in your account:
    * Choose a date and time that you plan to enable MFA that results in the least impact to your business.
-   * Notify your account users after you enable MFA with information on how to get set up.
+   * Notify the users in your account after you enable MFA with information on how to get set up.
 
 When you set the ID-based account default MFA, all IBMid users in your account are prompted for IBMid MFA authentication upon login. If you have other MFA factors set up for any IBMid users in your account, they are no longer prompted for those MFA factors. For example, if you previously enabled security questions in the customer portal for your classic infrastructure resources, the MFA account setting overrides the security questions option.
 {: tip}
@@ -72,6 +72,10 @@ The first time that you log in to your account after MFA settings are updated, y
 
 1. Click **Save**.
 
+
+You can view a list of users in your account that have an MFA requirement that is different from the account's default by going to **Manage > Access (IAM) > Settings > Authentication**. Then, view the **User-specific MFA** section.
+{: tip}
+
 ## Disabling MFA
 {: #disablemfa}
 
@@ -80,9 +84,9 @@ Disabling MFA does not affect users that are already logged in. The action impac
 ### Disabling MFA for an account
 {: #disable-account}
 
-1. Go to **Manage** > **Access (IAM)** > **Settings** in the {{site.data.keyword.cloud_notm}} console.
-1. Click **Edit** in the Authentication section.
+1. Go to **Manage** > **Access (IAM)** > **Settings** > **Authentication** in the {{site.data.keyword.cloud_notm}} console.
 1. Select **None**.
+   - To increase the level of security for this option, select **Disable CLI logins with only a password**. This way, you require an API key to log in to the CLI or users can log in with `--sso`.
 
 ### Disabling MFA for an individual user
 {: #disabling-user}
@@ -90,4 +94,5 @@ Disabling MFA does not affect users that are already logged in. The action impac
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **Users** and select the user whose MFA you want to update.
 1. Go to the **MFA** section and click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit").
 1. Select **None**.
+   - To increase the level of security for this option, select **Disable CLI logins with only a password**. This way, you require an API key to log in to the CLI or users can log in with `--sso`.
 1. Click **Save**.
