@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2023
 
-lastupdated: "2023-03-13"
+lastupdated: "2023-03-22"
 
 
 keywords: catalog, private catalogs, visibility, filter catalog, hide product, catalog filtering, enterprise, account group, child account, account, restrict
@@ -275,8 +275,10 @@ The following table lists the filters that you can use to customize which produc
 | Blockchain | Products that facilitate the process of recording transactions and tracking assets in a business network. |
 | Compute | Infrastructure resources that serve as the basis for building apps in the cloud. |
 | Containers | A standard unit of software that packages up code and all its dependencies so the app runs quickly and reliably from one computing environment to another. |
+| Converged infrastructure | A way of structuring an information technology (IT) system by grouping multiple components into a single optimized computing package, components of which may include servers; data storage devices; networking equipment; and software for IT infrastructure management, automation, and orchestration. |
 | Databases | Products that provide some form of access to a database without the need for setting up physical hardware, installing software, or configuring for performance. |
 | Developer tools | Products that support developing, testing, and debugging software. |
+| Enterprise applications | Bundle of compatible products that deliver enterprise-grade app solutions for information sharing, automation, and agility. |
 | Integration | Products that facilitate the connection of data, apps, APIs, and devices across an organization to be more efficient, productive, and agile. |
 | Internet of Things | Products that support receiving and transferring data over wireless networks without human intervention. |
 | Logging and monitoring | Products that support receiving and transferring data over wireless networks without human intervention. |
