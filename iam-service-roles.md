@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-03-21"
+lastupdated: "2023-03-23"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -4233,7 +4233,9 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
+| Assignment Administrator | A Template Deployment Administrator can manage the deployment of Enterprise Templates |
 | Service ID creator | Can create service IDs when the account setting to restrict service ID creation is enabled. |
+| Template Administrator | A Template Administrator can manage Enterprise Templates |
 | User API key creator | Can create API keys when the account setting to restrict API key creation is enabled. |
 {: row-headers}
 {: caption="Table 75. Service roles - IAM Identity Service" caption-side="top"}
@@ -4285,6 +4287,21 @@ Review the available platform and service roles and the actions mapped to each t
 | `iam-identity.activity.get` | Get authentication activity information | Administrator, Editor, Operator, Viewer |
 | `iam-identity.report.create` | Trigger report creation for an account | Administrator |
 | `iam-identity.report.get` | Get a report for an account | Administrator |
+| `iam-identity.profile-template.create` | Create a new Trusted Profile template | Template Administrator |
+| `iam-identity.profile-template.read` | Get the details of an existing Trusted Profile template | Template Administrator |
+| `iam-identity.profile-template.update` | Update the details of a Trusted Profile template | Template Administrator |
+| `iam-identity.profile-template.delete` | Delete a Trusted Profile template | Template Administrator |
+| `iam-identity.account-settings-template.create` | Create a new Account Settings template | Template Administrator |
+| `iam-identity.account-settings-template.read` | Get the details of an Account Settings template | Template Administrator |
+| `iam-identity.account-settings-template.update` | Update an existing Account Settings template | Template Administrator |
+| `iam-identity.account-settings-template.delete` | Delete an Account Settings template | Template Administrator |
+| `iam-identity.mfa-status.get` | actiondescription.iam-identity.mfa-status.get | Administrator |
+| `iam-identity.profile-template.assign` | actiondescription.iam-identity.profile-template.assign | Assignment Administrator |
+| `iam-identity.profile-template.unassign` | actiondescription.iam-identity.profile-template.unassign | Assignment Administrator |
+| `iam-identity.profile-template.assignment-read` | actiondescription.iam-identity.profile-template.assignment-read | Assignment Administrator |
+| `iam-identity.account-settings-template.assign` | actiondescription.iam-identity.account-settings-template.assign | Assignment Administrator |
+| `iam-identity.account-settings-template.unassign` | actiondescription.iam-identity.account-settings-template.unassign | Assignment Administrator |
+| `iam-identity.account-settings-template.assignment-read` | actiondescription.iam-identity.account-settings-template.assignment-read | Assignment Administrator |
 {: caption="Table 75. Service actions - IAM Identity Service" caption-side="top"}
 {: #actions-table75}
 {: tab-title="Actions"}
