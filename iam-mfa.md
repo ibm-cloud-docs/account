@@ -19,7 +19,7 @@ subcollection: account
 As an Administrator on the IAM Identity Service or All IAM Account Management services, you can choose to require multifactor authentication (MFA) for every user in the account, just users with IBMids who do not use single sign-on (SSO), or individual users. This document covers how to work with [ID-based MFA](/docs/account?topic=account-types#id-based), which is the recomended MFA method.
 {: shortdesc}
 
-Starting 15 April 2023, by default CLI logins are disabled for all users that have MFA set to **None**. This applies to users in new and existing accounts. Administrators can opt-out by going to **Manage** > **Access (IAM)** > **Settings** > **Authentication** and deselecting **Disable CLI logins with only a password**. For more information, see [Disabling MFA](/docs/account?topic=account-enablemfa#disablemfa).
+Starting 15 April 2023, by default CLI logins with only a username and password are disabled for all users that have MFA set to **None**. This applies to users in new and existing accounts. Administrators can opt-out by going to **Manage** > **Access (IAM)** > **Settings** > **Authentication** and deselecting **Disable CLI logins with only a password**. For more information, see [Disabling MFA](/docs/account?topic=account-enablemfa#disablemfa).
 {: important}
 
 View the MFA requirement for each user in your account to determine if they fulfill the requirement by generating an MFA status report. For more information, see [Identifying a user's MFA status](/docs/account?topic=account-id-user-mfa).
