@@ -5,7 +5,7 @@ copyright:
   years: 2021, 2023
 
 
-lastupdated: "2023-03-27"
+lastupdated: "2023-03-28"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access, access group, service IDs, IBM Cloud services, CRN, cloud resource name
 
@@ -124,7 +124,7 @@ An {{site.data.keyword.cloud_notm}} service in another account might need a toke
 
 Next, [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
 
-{{site.data.keyword.cloud_notm}} services are static identities that don't use conditions to establish trust. Instead, use an ID to create a direct link with the trusted entity.
+{{site.data.keyword.cloud_notm}} services are static identities that don't use conditions to establish trust. Instead, you establish trust by using the CRN to create a direct link with the trusted entity.
 {: note}
 
 ## Establishing trust with service IDs in the console
@@ -152,7 +152,7 @@ You can use trusted profiles to give a service ID cross-account access and acces
 
 Next, [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
 
-Service IDs are static identities that don't use conditions to establish trust. Instead, use an ID to create a direct link with the trusted entity.
+Service IDs are static identities that don't use conditions to establish trust. Instead, you establush trust by using the ID value of the service ID's metadata to create a direct link with the trusted entity.
 {: note}
 
 ## Assigning access to the trusted profile
