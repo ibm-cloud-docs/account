@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2023
 
-lastupdated: "2023-03-06"
+lastupdated: "2023-03-27"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, access management service, catalog management service, cloud shell service, software instance service
 
@@ -298,8 +298,8 @@ You can give users access to create, update, and delete resources for the {{site
 
 | Roles         | Actions                                                                                                                                                    |
 |---------------|------------------------------------|
-| Viewer        | Access the {{site.data.keyword.compliance_short}} dashboard to view current posture and results   \n  \n View created resources such as scopes, credentials, or rules   \n  \n View global settings for the service |
-| Operator      | Create an audit log for monitoring compliance activity |
+| Viewer        | View available profiles and attachments   \n  \n View created resources such as scopes, credentials, or rules   \n  \n View global settings for the service |
+| Operator      | Access the {{site.data.keyword.compliance_short}} dashboard to view current posture and results   \n  \n Create an audit log for monitoring compliance activity |
 | Editor        | Create, update, or delete objects such as scopes, credentials, and collectors   \n  \n Update the parameter settings of a goal   \n  \n Create, update, or delete rules and templates   \n  \n Edit global admin settings for the service |
 | Administrator | Perform all platform actions based on the resource that this role is being assigned, including assigning access policies to other users. |
 | Manager       | Permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
@@ -307,8 +307,6 @@ You can give users access to create, update, and delete resources for the {{site
 | Writer        | Permissions beyond the reader role, including creating and editing service-specific resources. |
 {: caption="Table 16. Roles and example actions for the {{site.data.keyword.compliance_short}} service" caption-side="top"}
 
-To access all of the {{site.data.keyword.compliance_short}}, you must also assign permissions for the Security Advisor service. For more information, see [Assigning access for the Security and Compliance Center](/docs/security-compliance?topic=security-compliance-access-management).
-{: note}
 
 ### Software instance
 {: #sw-instance-account-management}
@@ -1813,8 +1811,8 @@ You can give users access to create, update, and delete resources for the {{site
 
 | Roles         | Actions                                                                                                                                                    |
 |---------------|------------------------------------|
-| Viewer        | Access the {{site.data.keyword.compliance_short}} dashboard to view current posture and results   \n  \n View created resources such as scopes, credentials, or rules   \n  \n View global settings for the service |
-| Operator      | Create an audit log for monitoring compliance activity |
+| Viewer        | View available profiles and attachments   \n  \n View created resources such as scopes, credentials, or rules   \n  \n View global settings for the service |
+| Operator      | Access the {{site.data.keyword.compliance_short}} dashboard to view current posture and results   \n  \n Create an audit log for monitoring compliance activity |
 | Editor        | Create, update, or delete objects such as scopes, credentials, and collectors   \n  \n Update the parameter settings of a goal   \n  \n Create, update, or delete rules and templates   \n  \n Edit global admin settings for the service |
 | Administrator | Perform all platform actions based on the resource that this role is being assigned, including assigning access policies to other users. |
 | Manager       | Permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
@@ -1822,8 +1820,6 @@ You can give users access to create, update, and delete resources for the {{site
 | Writer        | Permissions beyond the reader role, including creating and editing service-specific resources. |
 {: caption="Table 16. Roles and example actions for the {{site.data.keyword.compliance_short}} service" caption-side="top"}
 
-To access all of the {{site.data.keyword.compliance_short}}, you must also assign permissions for the Security Advisor service. For more information, see [Assigning access for the Security and Compliance Center](/docs/security-compliance?topic=security-compliance-access-management).
-{: note}
 
 ### Software instance
 {: #sw-instance-account-management-terra}
