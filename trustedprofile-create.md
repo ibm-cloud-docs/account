@@ -66,8 +66,8 @@ Complete the following steps to define which federated users can access specific
 
 1. Define the session duration for how long a user can apply the profile before they must reauthenticate.
 1. Click **Continue**.
-
-Next, [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
+1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
+1. Or, click **Create** without assigning any access.
 
 For more information about the fields that are used to create conditions for trusted profiles, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
 {: tip}
@@ -94,8 +94,8 @@ Complete the following steps to set up better control over granting access to co
    1. If you select **Specific resources**, you can establish trust with one or more existing compute resource instances directly without conditions. For example, a Kubernetes cluster.
 
 1. Click **Continue**.
-
-Next, [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
+1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
+1.  Or, click **Create** without assigning any access.
 
 For more information about the fields that are used to create conditions for trusted profiles, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
 {: tip}
@@ -121,8 +121,8 @@ An {{site.data.keyword.cloud_notm}} service in another account might need a toke
 1. Select **{{site.data.keyword.cloud}} services**.
 1. Enter the CRN that service administrator provided to you.
 1. Click **Continue**.
-
-Next, [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
+1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
+1. 1. Or, click **Create** without assigning any access.
 
 {{site.data.keyword.cloud_notm}} services are static identities that don't use conditions to establish trust. Instead, you establish trust by using the CRN to create a direct link with the trusted entity.
 {: note}
@@ -149,8 +149,8 @@ You can use trusted profiles to give a service ID cross-account access and acces
    1. Select **Service IDs**
 1. Enter the service ID value that the administrator provided to you.
 1. Click **Continue**.
-
-Next, [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
+1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
+1. 1. Or, click **Create** without assigning any access.
 
 Service IDs are static identities that don't use conditions to establish trust. Instead, you establush trust by using the ID value of the service ID's metadata to create a direct link with the trusted entity.
 {: note}
@@ -163,7 +163,7 @@ After you establish trust with federated users, compute resources, an {{site.dat
 You can assign classic infrastructure access only if your account is linked to a Softlayer account.
 {: note}
 
-1. (Optional) Assign access.
+1. Assign access.
    * Assign access to the trusted profile by adding it to one or more access groups. This way, you can use the policies that exist in the access groups you've created.
       1. Select **Access groups** and select all the groups that you want to add the trusted profile to. You can assign users to only the access groups that you have access to manage.
       1. Click **Add**.
