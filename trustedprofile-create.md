@@ -5,7 +5,7 @@ copyright:
   years: 2021, 2023
 
 
-lastupdated: "2023-03-22"
+lastupdated: "2023-03-27"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access, access group, service IDs, IBM Cloud services, CRN, cloud resource name
 
@@ -158,7 +158,7 @@ Service IDs are static identities that don't use conditions to establish trust. 
 ## Assigning access to the trusted profile
 {: #tp-access}
 
-After you establish trust with federeated users, compute resources, an {{site.data.keyword.cloud_notm}} service, or a service ID, you can assign access.
+After you establish trust with federated users, compute resources, an {{site.data.keyword.cloud_notm}} service, or a service ID, you can assign access.
 
 You can assign classic infrastructure access only if your account is linked to a Softlayer account.
 {: note}
