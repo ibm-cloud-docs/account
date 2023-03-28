@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-03-27"
+lastupdated: "2023-03-28"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -4791,6 +4791,18 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 89. Service roles - Image Service for VPC" caption-side="top"}
+{: #service-roles-table89}
+{: tab-title="Service roles"}
+{: tab-group="is.image"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `is.image.image.list` | List Images | Administrator, Editor, Operator, Viewer |
@@ -4801,6 +4813,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.image.image.provision` | Provision Images | Administrator, Editor, Operator |
 | `is.image.image.operate` | Operate on Custom Images | Administrator, Editor, Operator |
 | `is.image.image.export` | Export on Custom Images | Administrator, Editor |
+| `is.image.image.obsolete` | Set an image status to obsolete | Administrator, Editor, Manager, Writer |
+| `is.image.image.deprecate` | Set an image status to deprecated | Administrator, Editor, Manager, Writer |
 {: caption="Table 89. Service actions - Image Service for VPC" caption-side="top"}
 {: #actions-table89}
 {: tab-title="Actions"}
