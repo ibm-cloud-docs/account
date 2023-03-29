@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022
+  years: 2022, 2023
 
-lastupdated: "2022-10-07"
+lastupdated: "2023-03-29"
 
 keywords: what is IAM, IAM features, IAM API, how IAM works
 
@@ -72,7 +72,10 @@ If you're using a functional ID as the account owner, instead consider [Setting 
 
 Service IDs are another type of identity that is used in an account. Service IDs are used to provide a separate identity for services and applications. Service IDs are best used when an application or service needs a digital identity and needs access to only IAM-enabled resources. You can create a service ID to be used by an application that needs access to your {{site.data.keyword.cloud_notm}} services so that individual user credentials don't need to be used.
 
-You can also use API keys that are associated with service IDs that you create. Service ID API key credentials can be used to make API and CLI calls. For more information about creating API keys associated with a service ID, see [Managing service ID API keys](/docs/account?topic=account-serviceidapikeys#serviceidapikeys).
+### Service ID API keys
+{: #serviceid-api-key}
+
+You can also create API keys that are associated with service IDs to authenticate applications as a particular service ID. This way, the applications can access resources that are assigned to that specific service ID. Service ID API key credentials can be used to make API and CLI calls. For more information about creating API keys associated with a service ID, see [Managing service ID API keys](/docs/account?topic=account-serviceidapikeys#serviceidapikeys).
 
 ## Trusted profiles
 {: #trustedprofiles-bestpract}
