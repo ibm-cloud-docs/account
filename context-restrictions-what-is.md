@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2023-02-13"
+lastupdated: "2023-03-29"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, Cloud Foundry, endpoint type
 
@@ -58,7 +58,9 @@ Disabled
 :   No restrictions apply to your account resources. Select this option if you're not ready to enable the rule.
 
 Report-only
-:   Depending on the service that you select, you can monitor how the rule affects access without enforcing it. With report-only mode, all attempts to access resources in the account are logged in {{site.data.keyword.at_short}}. Monitoring is recommended for 30 days before you enforce the rule. Review each service's documentation to learn about how they integrate with context-based restrictions.
+:   Depending on the service that you select, you can monitor how a rule affects access without enforcing it. With report-only mode, all attempts to access resources in the account are logged in {{site.data.keyword.at_short}}. If available, monitoring is recommended for 30 days before you enforce a rule.
+
+Report-only mode is not available for all services, so review each service's documentation to learn about how they integrate with context-based restrictions.
 
 You can monitor the impact of your enabled and report-only rules. For more information, see [Monitoring context-based restrictions](/docs/account?topic=account-cbr-monitor).
 {: tip}
