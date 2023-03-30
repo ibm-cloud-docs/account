@@ -5,7 +5,7 @@ copyright:
   years: 2021, 2023
 
 
-lastupdated: "2023-03-28"
+lastupdated: "2023-03-30"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access, access group, service IDs, IBM Cloud services, CRN, cloud resource name
 
@@ -78,7 +78,7 @@ For more information about the fields that are used to create conditions for tru
 
 Complete the following steps to set up better control over granting access to compute resources.
 
-{{site.data.keyword.containerlong_notm}} supports only trusted profiles for versions 1.21 and newer. Free {{site.data.keyword.containerlong_notm}} clusters create only earlier versions. You have the choice to create clusters with an earlier version with the standard plan, so be sure to select version 1.21 or newer.
+{{site.data.keyword.containerlong_notm}} supports only trusted profiles for versions 1.21 and newer. You have the choice to create clusters with an earlier version with the standard plan, so be sure to select version 1.21 or newer. Free {{site.data.keyword.containerlong_notm}} clusters create only newer versions.
 {: important}
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Trusted profiles**.
@@ -217,7 +217,7 @@ Complete the following steps to define which federated users can access specific
 
 Complete the following steps to set up better control over granting access to compute resources.
 
-{{site.data.keyword.containerlong_notm}} supports only trusted profiles for versions 1.21 and newer. Free {{site.data.keyword.containerlong_notm}} clusters create only earlier versions. You have the choice to create clusters with an earlier version with the standard plan, so be sure to select version 1.21 or newer.
+{{site.data.keyword.containerlong_notm}} supports only trusted profiles for versions 1.21 and newer. You have the choice to create clusters with an earlier version with the standard plan, so be sure to select version 1.21 or newer. Free {{site.data.keyword.containerlong_notm}} clusters create only newer versions.
 {: important}
 
 1. Create a trusted profile by running the following command:
@@ -348,7 +348,7 @@ Complete the following steps to define which federated users can access specific
 
 Complete the following steps to set up better control over granting access to compute resources.
 
-{{site.data.keyword.containerlong_notm}} supports only trusted profiles for versions 1.21 and newer. Free {{site.data.keyword.containerlong_notm}} clusters create only earlier versions. You have the choice to create clusters with an earlier version with the standard plan, so be sure to select version 1.21 or newer.
+{{site.data.keyword.containerlong_notm}} supports only trusted profiles for versions 1.21 and newer. You have the choice to create clusters with an earlier version with the standard plan, so be sure to select version 1.21 or newer. Free {{site.data.keyword.containerlong_notm}} clusters create only newer versions.
 {: important}
 
 1. Create a trusted profile by specifying your account ID.
