@@ -2,8 +2,7 @@
 
 copyright:
   years: 2019, 2023
-
-lastupdated: "2023-01-20"
+lastupdated: "2023-03-31"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -31,10 +30,11 @@ The process to onboard software to your account includes importing a version to 
    * OVA images that are deployed on VMware Solutions Dedicated - vCenter Server
    * Virtual server images with Terraform deployed on VPC infrastructure or {{site.data.keyword.powerSys_notm}}
    * Virtual server images for VPC
-   * Operators with a CSV file or Operator bundles with a TGZ file from GitHub repositories that are deployed on Red Hat OpenShift
+   * Operators with a TGZ file from GitHub or GitLab repositories
    * Operator bundles from Red Hat OpenShift registries
 
-1. Upload your source code in a GitHub repository. For more information, see [Managing releases in a repository](https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository){: external}.
+1. Upload your source code to a release in your GitHub or GitLab repository. See [Setting up your source code repository](/docs/sell?topic=sell-source-repo-setup).
+
 1. Make sure you're assigned the following [IAM access](/docs/account?topic=account-groups):
 
    * Editor role on the catalog management service
@@ -94,7 +94,7 @@ Complete the following steps to import software to your private catalog:
     The message `No service instance available` might be displayed if you haven't created a secret or if you don't have the correct access to use secrets, even if you have service instances that are created.
     {: note}
 
-1. Enter your source URL. If you're importing a version from a public repository, you can review the following list of supported formats per software type:
+1. Enter your source URL. You can review the following list of supported formats per software type:
 
    * Helm chart: `https://raw.githubusercontent.com/IBM/charts/master/repo/ibm-helm`
    * Node-RED Operator: `https://github.com/IBM-Cloud/operator-bundle-sample/archive/refs/tags/v0.0.3.tar.gz`
@@ -199,7 +199,7 @@ Provide the URLs to the license agreements that users are required to accept whe
 {: #catalog-readme-edit}
 {: ui}
 
-When users install the software, they can select the link to your readme file to view product information. The information in the Readme link is generated from the readme file that you uploaded to your GitHub repository.
+When users install the software, they can view product information by clicking the Readme file link. This information is generated from the readme file that you uploaded to your source repository.
 
 1. From the Edit readme tab, preview how the information in the readme file will be displayed to users when they install the software.
 1. To make updates, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") next to the Readme section title.
