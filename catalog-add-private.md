@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2023-03-07"
+lastupdated: "2023-03-31"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -199,7 +199,7 @@ Provide the URLs to the license agreements that users are required to accept whe
 {: #catalog-readme-edit}
 {: ui}
 
-When users install the software, they can select the link to your readme file to view product information. The information in the Readme link is generated from the readme file that you uploaded to your source repository.
+When users install the software, they can view product information by clicking the Readme file link. This information is generated from the readme file that you uploaded to your source repository.
 
 1. From the Edit readme tab, preview how the information in the readme file will be displayed to users when they install the software.
 1. To make updates, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") next to the Readme section title.
