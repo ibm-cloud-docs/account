@@ -58,7 +58,7 @@ To manage the allowlist and publish your product to specific accounts, complete 
 1. Click **Add** > **Publish**.
 
 ## Publishing products to specific accounts by using the CLI
-{: #other-publish-steps}
+{: #other-publish-steps-cli}
 {: cli}
 
 To publish your product to specific accounts, run the [ibmcloud catalog offering publish allowlist](/docs/cli?topic=cli-manage-catalogs-plugin#publish-offering-allowllist). To run the command, you must include the catalog ID where the product is located, the product name or ID, and the account IDs that you would like to add to the allowlist.
