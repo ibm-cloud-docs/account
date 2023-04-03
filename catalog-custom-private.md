@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-01-20"
+lastupdated: "2023-04-03"
 
 keywords: catalog, restrict visibility, hide product, restrict by user, filter catalog, private catalog, catalog management service, public catalog
 
@@ -86,6 +86,23 @@ Now that you've created your private catalogs, complete the following steps to t
 
 You can update which products are included or excluded at any time by updating your private catalog's settings.
 {: note}
+
+## Branding your private catalog with a custom banner
+{: #customer-banner}
+
+You can enhance the look and feel of your private catalog to match your brand by adding a custom image to your private catalog's banner. All users who are given access to your private catalog can see the custom banner when they go to the private catalog to search for products, instead of the default {{site.data.keyword.cloud_notm}} banner. To add a custom banner image, complete the following steps:
+
+1. Go to **Manage** > **Catalogs**, then click **Private catalogs**.
+1. Click the **Overflow menu** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") on the row of the private catalog that you want to add a banner for, then click **Edit**.
+1. Add a URL to your custom banner in the **Catalog banner** field, or you can click **Upload** to add an image directly.
+   The maximum recommended image size is 944 x 260 pixels.
+   {: tip}
+
+1. Click **Update**.
+1. Then, go to the [catalog](/catalog), and select your private catalog from the list to view the updated look and feel of your private catalog.
+
+You can also customize the provider name for private catalog products that you add to your catalogs. By default, they display with `Community` as the provider, which is a filter in the catalog, but you can customize this to be your company or organization's name. For more information, see [Providing catalog entry details](/docs/account?topic=account-cm-catalog-details#cm-catalog-entry).
+{: tip}
 
 ## Authorizing access to private catalogs by using the console
 {: #custom-catalog-access-ui}
