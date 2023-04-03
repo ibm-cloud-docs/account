@@ -22,7 +22,7 @@ If you don't want your product to be publicly available to all users in the {{si
 A different process is used if you want to share your product with users in your own enterprise or account or to enterprises to which you have the Editor role or higher already assigned, and it does not require approval for publishing. For more information, see [Sharing private catalog products](/docs/account?topic=account-catalog-enterprise-share&interface=ui).
 
 ## Before you begin
-{: #prereqs-enterprise-share}
+{: #prereqs-share-enterprise}
 
 1. Ensure that your product has been [approved to publish](/docs/sell?topic=sell-sw-publish&interface=ui#sw-request-approval).
 
