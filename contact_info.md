@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2021
-lastupdated: "2021-11-23"
+  years: 2018, 2023
+lastupdated: "2023-04-04"
 
 keywords: company information, company details, company account, company profile, company contact
 
@@ -17,6 +17,9 @@ subcollection: account
 
 Each {{site.data.keyword.Bluemix}} account includes a company profile that contains company information and details about the primary account holder. You can use data from the company profile when you set up contacts and user profiles. You can have various account-specific contacts that are used in association with services available in the account. If you have administrative access or higher, you can update your company contact information.
 {: shortdesc}
+
+This page is not available for some account types. Upgrade to complete your account and access the functions on the Company information page.
+{: note}
 
 ## Updating your company profile
 {: #customer-profile}
