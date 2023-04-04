@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2023
 
-lastupdated: "2023-02-09"
+lastupdated: "2023-04-03"
 
 keywords: MFA, multifactor authentication, time-based one-time passcode, TOTP
 
@@ -34,7 +34,7 @@ To turn on this MFA option for a user, they must first set up TOTP. For more inf
 {: important}
 
 ## Setting up TOTP
-{: #security-questions-setup}
+{: #totp-setup}
 
 Users can set up TOTP for extra authentication at login. You must set up your TOTP before you or administrator can enable this MFA requirement for you.
 

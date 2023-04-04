@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2023
 
-lastupdated: "2023-03-27"
+lastupdated: "2023-04-03"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, access management service, catalog management service, cloud shell service, software instance service
 
@@ -1863,7 +1863,7 @@ The viewer role on the user management service is a role that is commonly assign
 {: tip}
 
 ### {{site.data.keyword.atracker_short}} Event Routing
-{: #activty-tracker-account-management-cli}
+{: #activty-tracker-account-management-terra}
 
 You can give users access to run platform actions.
 
