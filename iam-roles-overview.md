@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2015, 2022
+  years: 2015, 2023
 
-lastupdated: "2022-01-31"
+lastupdated: "2023-04-04"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -56,7 +56,7 @@ The following table provides examples for some of the platform management action
 | Editor role        |  Create, delete, edit, and view instances. Manage aliases, bindings, and credentials | Create, delete, edit, suspend, resume, view, and bind only specified instances in the resource group | View and edit name of resource group |
 | Administrator role |  All management actions for services                                                 | All management actions for the specified instances in the resource group | View, edit, and manage access for the resource group |
 {: row-headers}
-{: caption="Table 2. Example platform management roles and actions for services in an account" caption-side="top"}
+{: caption="Table 1. Example platform management roles and actions for services in an account" caption-side="top"}
 {: summary="The first row of the table describes separate options that you can choose from when creating a policy, and the first column describes the selected roles for the policy. The remaining cells map to the selected role from the first column, and to the selected policy from the first row."}
 {: #platformrolestable1}
 
@@ -71,7 +71,7 @@ Some services might map specific actions to the platform management roles that a
 | Editor                   | Perform all platform actions except for managing the account and assigning access policies                 |- Bind a service to a cluster  \n - Create a webhook|
 | Operator                 | Perform platform actions required to configure and operate service instances, such as viewing a service's dashboard | - Add or remove worker nodes  \n - Restart or reload worker nodes  \n - Bind a service to a cluster |
 | Administrator            | Perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users | - Remove a cluster  \n - Create a cluster  \n - Update user access policies  \n - All actions a viewer, editor, and operator can perform |
-{: caption="Table 3. Example platform management roles and actions for {{site.data.keyword.containershort_notm}} service" caption-side="top"}
+{: caption="Table 2. Example platform management roles and actions for {{site.data.keyword.containershort_notm}} service" caption-side="top"}
 
 ### Service access roles
 {: #service_access_roles}
@@ -86,7 +86,7 @@ The actions that can be taken based on each assigned role vary based on the serv
 | Reader              | Perform read-only actions within a service, such as viewing service-specific resources        | List and download objects                                            |
 | Writer              | Permissions beyond the reader role, including creating and editing service-specific resources | Create and destroy buckets and objects                               |
 | Manager             | Permissions beyond the writer role to complete privileged actions as defined by the service, plus create and edit service-specific resources | Manage all aspects of data storage, create, and destroy buckets and objects |
-{: caption="Table 4. Example service access user roles and actions" caption-side="top"}
+{: caption="Table 3. Example service access user roles and actions" caption-side="top"}
 
 ### Custom access roles
 {: #custom-access}
