@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2023-03-29"
+lastupdated: "2023-04-05"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, Cloud Foundry, endpoint type
 
@@ -27,16 +27,14 @@ For more information about implementing context-based restrictions in your secur
 
 ## Rules
 {: #restriction-rules}
-{: #context-restrictions-rule-whatis}
 
 A rule associates an {{site.data.keyword.cloud_notm}} resource with a set of contexts:
 * The cloud resource is specified by resource attributes similar to IAM access policies.
 * A context is a combination of network zones and endpoint types.
 
-The contexts that you configure define the restrictions for the associated resources.
+The contexts that you configure define the boundary for the associated resources.
 
 The necessary resource attributes in context-based restrictions rules are `accountId` and `serviceName`. Rules must be scoped to an account and a specific service.
-{: note}
 
 Context-based restriction rules are applied by the following logic:
 * Access is granted by a rule only when at least one of the rule's contexts allows access.
@@ -44,6 +42,8 @@ Context-based restriction rules are applied by the following logic:
 * If no rules are applicable to a particular resource, access is determined exclusively by IAM policies.
 
 Unlike IAM policies, context-based restrictions don't assign access. Context-based restrictions check that an access request comes from an allowed context that you configure.
+
+The interface that you use to access a resource, such as the console, CLI, or API, doesn't affect how a rule applies to that resource. The rule applies the same way across all interfaces and is based on the client IP address.
 {: note}
 
 ### Rule enforcement
