@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2023
-lastupdated: "2023-03-22"
+lastupdated: "2023-04-05"
 
 keywords: MFA, multifactor authentication, IBMid MFA, two-factor authentication, account MFA, time-based one-time passcode, TOTP, FIDO U2F, U2F, universal 2nd factor authentication, security key
 
@@ -19,7 +19,7 @@ subcollection: account
 As an Administrator on the IAM Identity Service or All IAM Account Management services, you can choose to require multifactor authentication (MFA) for every user in the account, just users with IBMids who do not use single sign-on (SSO), or individual users. This document covers how to work with [ID-based MFA](/docs/account?topic=account-types#id-based), which is the recomended MFA method.
 {: shortdesc}
 
-Starting 30 April 2023, by default CLI logins with only a username and password are disabled for all users that have MFA set to **None**. This applies to users in new and existing accounts. Administrators can opt-out by going to **Manage** > **Access (IAM)** > **Settings** > **Authentication** and deselecting **Disable CLI logins with only a password**. For more information, see [Disabling MFA](/docs/account?topic=account-enablemfa#disablemfa).
+Starting 30 April 2023, by default CLI logins with only a username and password are disabled for all users that have MFA set to **None**. This applies to users in new and existing accounts. Administrators can opt-out before that date in the {{site.data.keyword.cloud_notm}} console. For more information, see [Disabling CLI logins with only a password](/docs/account?topic=account-enablemfa#disabling-cli)
 {: important}
 
 View the MFA requirement for each user in your account to determine if they fulfill the requirement by generating an MFA status report. For more information, see [Identifying a user's MFA status](/docs/account?topic=account-id-user-mfa).
@@ -86,7 +86,6 @@ Disabling MFA does not affect users that are already logged in. The action impac
 
 1. Go to **Manage** > **Access (IAM)** > **Settings** > **Authentication** in the {{site.data.keyword.cloud_notm}} console.
 1. Select **None**.
-   - To increase the level of security for this option, select **Disable CLI logins with only a password**. This way, you require an API key to log in to the CLI or users can log in with `--sso`.
 
 ### Disabling MFA for an individual user
 {: #disabling-user}
@@ -94,5 +93,24 @@ Disabling MFA does not affect users that are already logged in. The action impac
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **Users** and select the user whose MFA you want to update.
 1. Go to the **MFA** section and click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit").
 1. Select **None**.
-   - To increase the level of security for this option, select **Disable CLI logins with only a password**. This way, you require an API key to log in to the CLI or users can log in with `--sso`.
 1. Click **Save**.
+
+### Disabling CLI logins with only a password
+{: #disabling-cli}
+
+[New]{: tag-new}
+
+Increase the level of security for users that aren't required to complete multifactor authentication by disabling CLI logins with only a password for a user or the account. This way, you require an API key to log in to the CLI, or users can log in with `--sso`, without requiring your users to complete MFA on each login.
+
+To disable CLI logins with only a password, complete the following steps:
+
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**
+   - To apply this to an individual user, click **Users** and select the user whose MFA you want to update.
+      1. Go to the **MFA** section and click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit").
+   - To apply this to the account, click **Settings** > **Authentication**.
+1. Select **None**.
+1. Select **Disable CLI logins with only a password**
+1. Click **Save** for an individual user.
+
+Users are prompted only once for an additional factor if IBMid detects that a user is logging in to a new device or browser. Once a user logs in using an additional factor on a new device, they aren't prompted for that factor again. This prevents certain programmatic attack vectors and enhances the security of users’ accounts without prompting users each time they log in.
+{: note}
