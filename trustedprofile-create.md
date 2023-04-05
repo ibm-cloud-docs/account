@@ -152,7 +152,7 @@ You can use trusted profiles to give a service ID cross-account access and acces
 1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
 1. Or, click **Create** without assigning any access.
 
-Service IDs are static identities that don't use conditions to establish trust. Instead, you ish trust by using the ID value of the service ID's metadata to create a direct link with the trusted entity.
+Service IDs are static identities that don't use conditions to establish trust. Instead, you establish trust by using the ID value of the service ID's metadata to create a direct link with the trusted entity.
 {: note}
 
 ## Assigning access to the trusted profile
