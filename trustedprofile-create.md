@@ -5,7 +5,7 @@ copyright:
   years: 2021, 2023
 
 
-lastupdated: "2023-03-30"
+lastupdated: "2023-04-05"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access, access group, service IDs, IBM Cloud services, CRN, cloud resource name
 
@@ -150,9 +150,9 @@ You can use trusted profiles to give a service ID cross-account access and acces
 1. Enter the service ID value that the administrator provided to you.
 1. Click **Continue**.
 1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
-1. 1. Or, click **Create** without assigning any access.
+1. Or, click **Create** without assigning any access.
 
-Service IDs are static identities that don't use conditions to establish trust. Instead, you establush trust by using the ID value of the service ID's metadata to create a direct link with the trusted entity.
+Service IDs are static identities that don't use conditions to establish trust. Instead, you ish trust by using the ID value of the service ID's metadata to create a direct link with the trusted entity.
 {: note}
 
 ## Assigning access to the trusted profile
