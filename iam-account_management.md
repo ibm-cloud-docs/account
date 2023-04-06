@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2023
 
-lastupdated: "2023-04-04"
+lastupdated: "2023-04-06"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, access management service, catalog management service, cloud shell service, software instance service
 
@@ -67,6 +67,7 @@ Give users access to the group of **All Account Management services** so that th
 - License and entitlement
 - Partner Center
 - Partner Center - Sell
+- Projects
 - Security and Compliance Center
 - Software instance
 - Support center
@@ -290,6 +291,18 @@ You can give users access to onboard, validate, and publish products.
 | Approver      | Approves or rejects a workflow instance's task |
 {: caption="Table 15. Roles and example actions for the Partner Center - Sell service" caption-side="top"}
 
+### Projects
+{: #projects-account-management}
+
+You can give users access to configure, validate, and monitor Infrastructure as Code (IaC) deployments.
+
+| Roles         | Actions                                                                                                             |
+|---------------|---------------------------------------------------------------------------------------------------------------------|
+| Viewer        | View details about projects, configurations, and deployments. |
+| Operator | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration|
+| Editor        | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration \n \n Create a project \n \n Edit a project \n \n Delete a project \n \n Create a configuration \n \n  Discard a draft configuration \n \n Deploy configuration changes \n \n Destroy resources |
+| Administrator     | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration \n \n Create a project \n \n Edit a project \n \n Delete a project \n \n Create a configuration \n \n  Discard a draft configuration \n \n Deploy configuration changes \n \n Destroy resources. \n \n Force approve changes that failed validation |
+{: caption="Table 17. Roles and example actions for the Project service" caption-side="top"}
 
 ### {{site.data.keyword.compliance_short}}
 {: #security-compliance-account-management}
