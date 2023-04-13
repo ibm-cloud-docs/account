@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2023
-lastupdated: "2023-04-05"
+lastupdated: "2023-04-12"
 
 keywords: MFA, multifactor authentication, two-factor authentication, U2F, FIDO U2F, security key
 
@@ -42,7 +42,7 @@ As an Administrator on the IAM Identity Service or All IAM Account Management se
 
 All users log in by using only a standard ID and password, which offers the lowest level of security. To increase the level of security for this option, you can disable logging in to the CLI with only a username and password. This way, you require an API key to log in to the CLI or users can log in with `--sso`.
 
-Starting 30 April 2023, by default CLI logins with only a username and password are disabled for all users that have MFA set to **None**. This applies to users in new and existing accounts. Administrators can opt-out before that date in the {{site.data.keyword.cloud_notm}} console. For more information, see [Disabling CLI logins with only a password](/docs/account?topic=account-enablemfa#disabling-cli)
+Starting 3 May 2023, by default CLI logins with only a username and password are disabled for all users that have MFA set to **None**. This applies to users in new and existing accounts. Administrators can opt-out before that date in the {{site.data.keyword.cloud_notm}} console. For more information, see [Disabling CLI logins with only a password](/docs/account?topic=account-enablemfa#disabling-cli)
 {: important}
 
 ### MFA for users with an IBMid
