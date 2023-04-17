@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2023
 
-lastupdated: "2023-04-04"
+lastupdated: "2023-04-17"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, access management service, catalog management service, cloud shell service, software instance service
 
@@ -67,6 +67,7 @@ Give users access to the group of **All Account Management services** so that th
 - License and entitlement
 - Partner Center
 - Partner Center - Sell
+- Projects
 - Security and Compliance Center
 - Software instance
 - Support center
@@ -264,7 +265,6 @@ You can assign users access to manage licenses and entitlements within an accoun
 | Administrator |  Administrators can create entitlements and view, update, bind, or delete any entitlements in the account. |
 {: caption="Table 13. Roles and example actions for the license and entitlement service" caption-side="top"}
 
-
 ### Partner Center
 {: #pc-buildgrow-account-management}
 
@@ -290,6 +290,19 @@ You can give users access to onboard, validate, and publish products.
 | Approver      | Approves or rejects a workflow instance's task |
 {: caption="Table 15. Roles and example actions for the Partner Center - Sell service" caption-side="top"}
 
+### Projects
+{: #projects-account-management}
+
+You can give users access to configure, validate, and monitor Infrastructure as Code (IaC) deployments.
+
+| Roles         | Actions                                                                                                             |
+|---------------|---------------------------------------------------------------------------------------------------------------------|
+| Viewer        | View details about projects, configurations, and deployments. |
+| Operator | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration|
+| Editor        | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration \n \n Create a project \n \n Edit a project \n \n Delete a project \n \n Create a configuration \n \n  Discard a draft configuration \n \n Deploy configuration changes \n \n Destroy resources |
+| Administrator     | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration \n \n Create a project \n \n Edit a project \n \n Delete a project \n \n Create a configuration \n \n  Discard a draft configuration \n \n Deploy configuration changes \n \n Destroy resources. \n \n Force approve changes that failed validation |
+{: caption="Table 16. Roles and example actions for the Project service" caption-side="top"}
+
 
 ### {{site.data.keyword.compliance_short}}
 {: #security-compliance-account-management}
@@ -305,7 +318,7 @@ You can give users access to create, update, and delete resources for the {{site
 | Manager       | Permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader        | Perform read-only actions within a service such as viewing service-specific resources. |
 | Writer        | Permissions beyond the reader role, including creating and editing service-specific resources. |
-{: caption="Table 16. Roles and example actions for the {{site.data.keyword.compliance_short}} service" caption-side="top"}
+{: caption="Table 17. Roles and example actions for the {{site.data.keyword.compliance_short}} service" caption-side="top"}
 
 
 ### Software instance
@@ -319,7 +332,7 @@ You can give users access to create, delete, or update a software instance. And,
 | Operator      | Update a software instance   \n  \n View the details page for the software instance |
 | Editor        | Create, delete, update a software instance   \n  \n View the details page for the software instance |
 | Administrator | Create, delete, update a software instance   \n  \n View the details page for the software instance   \n  \n View the logs for the software instance   \n  \n Assign IAM permissions |
-{: caption="Table 17. Roles and example actions for the Software instance service" caption-side="top"}
+{: caption="Table 18. Roles and example actions for the Software instance service" caption-side="top"}
 
 ### Support center
 {: #support-center-account-management}
@@ -332,7 +345,7 @@ You can give users access to manage support cases.
 | Operator      |  Not applicable                                                               |
 | Editor        |  View cases   \n  \n Search cases   \n  \n Update cases   \n  \n Create cases |
 | Administrator |  View cases   \n  \n Search cases   \n  \n Update cases   \n  \n Create cases |
-{: caption="Table 18. Roles and example actions for the Support Center service" caption-side="top"}
+{: caption="Table 19. Roles and example actions for the Support Center service" caption-side="top"}
 
 Assign users the viewer role on the user management service in addition to a support center access policy so the user can see all cases in the account regardless of user list visibility settings. If the user list visibility is set to be restricted, this can limit a user's ability to view, search, and manage support cases in an account that they didn't open themselves.
 {: tip}
@@ -348,7 +361,7 @@ You can give users access to view users in an account, invite and remove users, 
 | Operator      | View users in the account   \n  \n View user profile settings                                          |
 | Editor        | View, invite, remove, and update users from the account   \n  \n View and update user profile settings |
 | Administrator | View, invite, remove, and update users from the account   \n  \n View and update user profile settings |
-{: caption="Table 19. Roles and example actions for the User Management service" caption-side="top"}
+{: caption="Table 20. Roles and example actions for the User Management service" caption-side="top"}
 
 The viewer role on the user management service is a role that is commonly assigned for users assigned a role to view or manage support cases. If an account owner restricts the visibility of the user list in the IAM settings, users can't see support cases that are opened by other users in the account. However, if they are assigned the viewer role for the user management service, the user list visibility setting doesn't affect the ability to view cases in the account.
 {: tip}
@@ -364,7 +377,7 @@ You can give users access to run platform actions.
 | Operator      | View {{site.data.keyword.atracker_short}} configuration resources such as routes and targets. |
 | Editor        | View, create, update, and delete {{site.data.keyword.atracker_short}} resources. |
 | Administrator | View, create, update, and delete {{site.data.keyword.atracker_short}} resources.   \n  \n Assign access policies to manage {{site.data.keyword.atracker_short}} resources to other users in the account. |
-{: caption="Table 20. Roles and example actions for the {{site.data.keyword.atracker_short}} Event Routing service" caption-side="top"}
+{: caption="Table 21. Roles and example actions for the {{site.data.keyword.atracker_short}} Event Routing service" caption-side="top"}
 
 <!--- API --->
 
@@ -387,6 +400,7 @@ If you are assigning access by using the CLI or API, the account management serv
 | IAM Identity service | `serviceName=iam-identity` |
 | {{site.data.keyword.cloud-shell_notm}} | `serviceName=cloudshell` |
 | License and entitlement | `serviceName=entitlement` |
+| Projects | `serviceName=project` |
 | Role management | `serviceName=iam-access-management` |
 | {{site.data.keyword.compliance_short}} | `serviceName=security-compliance` |
 | Support center| `serviceName=support` |
@@ -837,6 +851,7 @@ The group of **All Account Management services** includes the following services
 - License and entitlement
 - Partner Center
 - Partner Center - Sell
+- Projects
 - Security and Compliance Center
 - Software instance
 - Support center
@@ -1050,13 +1065,25 @@ You can give users access to view and edit partner profile details, offers, fast
 
 You can give users access to onboard, validate, and publish products.
 
-| Roles         | Actions                                                                                                             | role_ID value    |
-|---------------|---------------------------------------------------------------------------------------------------------------------|------------|
+| Roles         | Actions | role_ID value    |
+|---------------|---------|------------------|
 | Administrator | Create, edit, validate, and publish products | | `crn:v1:bluemix:public:iam::::role:Administrator` |
 | Editor        | Validate and edit products | `crn:v1:bluemix:public:iam::::role:Editor` |
 | Approver      | Approves or rejects a workflow instance's task | `crn:v1:bluemix:public:product-lifecycle::::serviceRole:LifecycleApprover` |
 {: caption="Table 16. Roles and example actions for the Partner Center - Sell service" caption-side="top"}
 
+### Projects
+{: #projects-account-management-api}
+
+You can give users access to configure, validate, and monitor Infrastructure as Code (IaC) deployments.
+
+| Roles         | Actions | role_ID value    |
+|---------------|---------|-----------------|
+| Viewer        | View details about projects, configurations, and deployments. | `crn:v1:bluemix:public:iam::::role:Viewer` |
+| Operator | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration| `crn:v1:bluemix:public:iam::::role:Operator` |
+| Editor        | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration \n \n Create a project \n \n Edit a project \n \n Delete a project \n \n Create a configuration \n \n  Discard a draft configuration \n \n Deploy configuration changes \n \n Destroy resources |  `crn:v1:bluemix:public:iam::::role:Editor` |
+| Administrator     | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration \n \n Create a project \n \n Edit a project \n \n Delete a project \n \n Create a configuration \n \n  Discard a draft configuration \n \n Deploy configuration changes \n \n Destroy resources. \n \n Force approve changes that failed validation | `crn:v1:bluemix:public:iam::::role:Administrator` |
+{: caption="Table 17. Roles and example actions for the Project service" caption-side="top"}
 
 ### {{site.data.keyword.compliance_short}}
 {: #security-compliance-account-management-api}
@@ -1072,7 +1099,7 @@ You can give users access to create, update, and delete resources for the {{site
 | Manager       | Permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |`crn:v1:bluemix:public:iam::::serviceRole:Manager` |
 | Reader        | Perform read-only actions within a service such as viewing service-specific resources. | `crn:v1:bluemix:public:iam::::serviceRole:Reader` |
 | Writer        | Permissions beyond the reader role, including creating and editing service-specific resources. | `crn:v1:bluemix:public:iam::::serviceRole:Writer` |
-{: caption="Table 17. Roles and example actions for the {{site.data.keyword.compliance_short}} service" caption-side="top"}
+{: caption="Table 18. Roles and example actions for the {{site.data.keyword.compliance_short}} service" caption-side="top"}
 
 
 ### Software instance
@@ -1086,7 +1113,7 @@ You can give users access to create, delete, or update a software instance. And,
 | Operator      | Update a software instance   \n  \n View the details page for the software instance | `crn:v1:bluemix:public:iam::::role:Operator` |
 | Editor        | Create, delete, update a software instance   \n  \n View the details page for the software instance | `crn:v1:bluemix:public:iam::::role:Editor` |
 | Administrator | Create, delete, update a software instance   \n  \n View the details page for the software instance   \n  \n View the logs for the software instance   \n  \n Assign IAM permissions | `crn:v1:bluemix:public:iam::::role:Administrator` |
-{: caption="Table 18. Roles and example actions for the Software instance service" caption-side="top"}
+{: caption="Table 19. Roles and example actions for the Software instance service" caption-side="top"}
 
 ### Support center
 {: #support-center-account-management-api}
@@ -1099,7 +1126,7 @@ You can give users access to manage support cases.
 | Operator      |  Not applicable                                                               | `crn:v1:bluemix:public:iam::::role:Operator` |
 | Editor        |  View cases   \n  \n Search cases   \n  \n Update cases   \n  \n Create cases | `crn:v1:bluemix:public:iam::::role:Editor` |
 | Administrator |  View cases   \n  \n Search cases   \n  \n Update cases   \n  \n Create cases | `crn:v1:bluemix:public:iam::::role:Administrator` |
-{: caption="Table 19. Roles and example actions for the Support Center service" caption-side="top"}
+{: caption="Table 20. Roles and example actions for the Support Center service" caption-side="top"}
 
 Assign users the viewer role on the user management service in addition to a support center access policy so the user can see all cases in the account regardless of user list visibility settings. If the user list visibility is set to be restricted, a user's ability to view, search, and manage support cases in an account that they didn't open themselves can be limited.
 {: tip}
@@ -1115,7 +1142,7 @@ You can give users access to view users in an account, invite and remove users, 
 | Operator      | View users in the account   \n  \n View user profile settings                                          | `crn:v1:bluemix:public:iam::::role:Operator` |
 | Editor        | View, invite, remove, and update users from the account   \n  \n View and update user profile settings | `crn:v1:bluemix:public:iam::::role:Editor` |
 | Administrator | View, invite, remove, and update users from the account   \n  \n View and update user profile settings | `crn:v1:bluemix:public:iam::::role:Administrator` |
-{: caption="Table 20. Roles and example actions for the User Management service" caption-side="top"}
+{: caption="Table 21. Roles and example actions for the User Management service" caption-side="top"}
 
 The viewer role on the user management service is a role that is commonly assigned for users assigned a role to view or manage support cases. If an account owner restricts the visibility of the user list in the IAM settings, users can't see support cases that are opened by other users in the account. However, if they are assigned the viewer role for the user management service, the user list visibility setting doesn't affect the ability to view cases in the account.
 {: tip}
@@ -1131,7 +1158,7 @@ You can give users access to run platform actions.
 | Operator      | View {{site.data.keyword.atracker_short}} configuration resources such as routes and targets. | `crn:v1:bluemix:public:iam::::role:Operator` |
 | Editor        | View, create, update, and delete {{site.data.keyword.atracker_short}} resources. | `crn:v1:bluemix:public:iam::::role:Editor` |
 | Administrator | View, create, update, and delete {{site.data.keyword.atracker_short}} resources.   \n  \n Assign access policies to manage {{site.data.keyword.atracker_short}} resources to other users in the account. | `crn:v1:bluemix:public:iam::::role:Administrator` |
-{: caption="Table 21. Roles and example actions for the {{site.data.keyword.atracker_short}} Event Routing service" caption-side="top"}
+{: caption="Table 22. Roles and example actions for the {{site.data.keyword.atracker_short}} Event Routing service" caption-side="top"}
 
 <!--- CLI --->
 
@@ -1154,6 +1181,7 @@ If you are assigning access by using the CLI or API, the account management serv
 | IAM Identity service | `serviceName=iam-identity` |
 | {{site.data.keyword.cloud-shell_notm}} | `serviceName=cloudshell` |
 | License and entitlement | `serviceName=entitlement` |
+| Projects | `serviceName=project` |
 | Role management | `serviceName=iam-access-management` |
 | {{site.data.keyword.compliance_short}} | `serviceName=security-compliance` |
 | Support center| `serviceName=support` |
@@ -1207,6 +1235,7 @@ The group of **All Account Management services** includes the following services
 - License and entitlement
 - Partner Center
 - Partner Center - Sell
+- Projects
 - Security and Compliance Center
 - Software instance
 - Support center
@@ -1426,6 +1455,19 @@ You can give users access to onboard, validate, and publish products.
 | Approver      | Approves or rejects a workflow instance's task |
 {: caption="Table 16. Roles and example actions for the Partner Center - Sell service" caption-side="top"}
 
+### Projects
+{: #projects-account-management-cli}
+
+You can give users access to configure, validate, and monitor Infrastructure as Code (IaC) deployments.
+
+| Roles         | Actions | role_ID value    |
+|---------------|---------|-----------------|
+| Viewer        | View details about projects, configurations, and deployments. | `crn:v1:bluemix:public:iam::::role:Viewer` |
+| Operator | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration| `crn:v1:bluemix:public:iam::::role:Operator` |
+| Editor        | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration \n \n Create a project \n \n Edit a project \n \n Delete a project \n \n Create a configuration \n \n  Discard a draft configuration \n \n Deploy configuration changes \n \n Destroy resources |  `crn:v1:bluemix:public:iam::::role:Editor` |
+| Administrator     | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration \n \n Create a project \n \n Edit a project \n \n Delete a project \n \n Create a configuration \n \n  Discard a draft configuration \n \n Deploy configuration changes \n \n Destroy resources. \n \n Force approve changes that failed validation | `crn:v1:bluemix:public:iam::::role:Administrator` |
+{: caption="Table 17. Roles and example actions for the Project service" caption-side="top"}
+
 
 ### {{site.data.keyword.compliance_short}}
 {: #security-compliance-account-management-cli}
@@ -1441,7 +1483,7 @@ You can give users access to create, update, and delete resources for the {{site
 | Manager       | Permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader        | Perform read-only actions within a service such as viewing service-specific resources. |
 | Writer        | Permissions beyond the reader role, including creating and editing service-specific resources. |
-{: caption="Table 17. Roles and example actions for the {{site.data.keyword.compliance_short}} service" caption-side="top"}
+{: caption="Table 18. Roles and example actions for the {{site.data.keyword.compliance_short}} service" caption-side="top"}
 
 
 ### Software instance
@@ -1455,7 +1497,7 @@ You can give users access to create, delete, or update a software instance. And,
 | Operator      | Update a software instance   \n  \n View the details page for the software instance |
 | Editor        | Create, delete, update a software instance   \n  \n View the details page for the software instance |
 | Administrator | Create, delete, update a software instance   \n  \n View the details page for the software instance   \n  \n View the logs for the software instance   \n  \n Assign IAM permissions |
-{: caption="Table 18. Roles and example actions for the Software instance service" caption-side="top"}
+{: caption="Table 19. Roles and example actions for the Software instance service" caption-side="top"}
 
 ### Support center
 {: #support-center-account-management-cli}
@@ -1468,7 +1510,7 @@ You can give users access to manage support cases.
 | Operator      |  Not applicable                                                               |
 | Editor        |  View cases   \n  \n Search cases   \n  \n Update cases   \n  \n Create cases |
 | Administrator |  View cases   \n  \n Search cases   \n  \n Update cases   \n  \n Create cases |
-{: caption="Table 19. Roles and example actions for the Support Center service" caption-side="top"}
+{: caption="Table 20. Roles and example actions for the Support Center service" caption-side="top"}
 
 Assign users the viewer role on the user management service in addition to a support center access policy so the user can see all cases in the account regardless of user list visibility settings. If the user list visibility is set to be restricted, this can limit a user's ability to view, search, and manage support cases in an account that they didn't open themselves.
 {: tip}
@@ -1484,7 +1526,7 @@ You can give users access to view users in an account, invite and remove users, 
 | Operator      | View users in the account   \n  \n View user profile settings                                          |
 | Editor        | View, invite, remove, and update users from the account   \n  \n View and update user profile settings |
 | Administrator | View, invite, remove, and update users from the account   \n  \n View and update user profile settings |
-{: caption="Table 20. Roles and example actions for the User Management service" caption-side="top"}
+{: caption="Table 21. Roles and example actions for the User Management service" caption-side="top"}
 
 The viewer role on the user management service is a role that is commonly assigned for users assigned a role to view or manage support cases. If an account owner restricts the visibility of the user list in the IAM settings, users can't see support cases that are opened by other users in the account. However, if they are assigned the viewer role for the user management service, the user list visibility setting doesn't affect the ability to view cases in the account.
 {: tip}
@@ -1500,7 +1542,7 @@ You can give users access to run platform actions.
 | Operator      | View {{site.data.keyword.atracker_short}} configuration resources such as routes and targets. |
 | Editor        | View, create, update, and delete {{site.data.keyword.atracker_short}} resources. |
 | Administrator | View, create, update, and delete {{site.data.keyword.atracker_short}} resources.   \n  \n Assign access policies to manage {{site.data.keyword.atracker_short}} resources to other users in the account. |
-{: caption="Table 21. Roles and example actions for the {{site.data.keyword.atracker_short}} Event Routing service" caption-side="top"}
+{: caption="Table 22. Roles and example actions for the {{site.data.keyword.atracker_short}} Event Routing service" caption-side="top"}
 
 
 <!--- Terraform --->
@@ -1581,6 +1623,7 @@ The group of **All Account Management services** includes the following services
 - License and entitlement
 - Partner Center
 - Partner Center - Sell
+- Projects
 - Security and Compliance Center
 - Software instance
 - Support center
@@ -1800,6 +1843,19 @@ You can give users access to onboard, validate, and publish products.
 | Approver      | Approves or rejects a workflow instance's task |
 {: caption="Table 15. Roles and example actions for the Partner Center - Sell service" caption-side="top"}
 
+### Projects
+{: #projects-account-management-terra}
+
+You can give users access to configure, validate, and monitor Infrastructure as Code (IaC) deployments.
+
+| Roles         | Actions |
+|---------------|---------|
+| Viewer        | View details about projects, configurations, and deployments. |
+| Operator | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration|
+| Editor        | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration \n \n Create a project \n \n Edit a project \n \n Delete a project \n \n Create a configuration \n \n  Discard a draft configuration \n \n Deploy configuration changes \n \n Destroy resources |
+| Administrator     | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration \n \n Create a project \n \n Edit a project \n \n Delete a project \n \n Create a configuration \n \n  Discard a draft configuration \n \n Deploy configuration changes \n \n Destroy resources. \n \n Force approve changes that failed validation |
+{: caption="Table 16. Roles and example actions for the Project service" caption-side="top"}
+
 ### {{site.data.keyword.compliance_short}}
 {: #security-compliance-account-management-terra}
 
@@ -1814,7 +1870,7 @@ You can give users access to create, update, and delete resources for the {{site
 | Manager       | Permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader        | Perform read-only actions within a service such as viewing service-specific resources. |
 | Writer        | Permissions beyond the reader role, including creating and editing service-specific resources. |
-{: caption="Table 16. Roles and example actions for the {{site.data.keyword.compliance_short}} service" caption-side="top"}
+{: caption="Table 17. Roles and example actions for the {{site.data.keyword.compliance_short}} service" caption-side="top"}
 
 
 ### Software instance
@@ -1828,7 +1884,7 @@ You can give users access to create, delete, or update a software instance. And,
 | Operator      | Update a software instance   \n  \n View the details page for the software instance |
 | Editor        | Create, delete, update a software instance   \n  \n View the details page for the software instance |
 | Administrator | Create, delete, update a software instance   \n  \n View the details page for the software instance   \n  \n View the logs for the software instance   \n  \n Assign IAM permissions |
-{: caption="Table 17. Roles and example actions for the Software instance service" caption-side="top"}
+{: caption="Table 18. Roles and example actions for the Software instance service" caption-side="top"}
 
 ### Support center
 {: #support-center-account-management-terra}
@@ -1841,7 +1897,7 @@ You can give users access to manage support cases.
 | Operator      |  Not applicable                                                               |
 | Editor        |  View cases   \n  \n Search cases   \n  \n Update cases   \n  \n Create cases |
 | Administrator |  View cases   \n  \n Search cases   \n  \n Update cases   \n  \n Create cases |
-{: caption="Table 18. Roles and example actions for the Support Center service" caption-side="top"}
+{: caption="Table 19. Roles and example actions for the Support Center service" caption-side="top"}
 
 Assign users the viewer role on the user management service in addition to a support center access policy so the user can see all cases in the account regardless of user list visibility settings. If the user list visibility is set to be restricted, this can limit a user's ability to view, search, and manage support cases in an account that they didn't open themselves.
 {: tip}
@@ -1857,7 +1913,7 @@ You can give users access to view users in an account, invite and remove users, 
 | Operator      | View users in the account   \n  \n View user profile settings                                          |
 | Editor        | View, invite, remove, and update users from the account   \n  \n View and update user profile settings |
 | Administrator | View, invite, remove, and update users from the account   \n  \n View and update user profile settings |
-{: caption="Table 19. Roles and example actions for the User Management service" caption-side="top"}
+{: caption="Table 20. Roles and example actions for the User Management service" caption-side="top"}
 
 The viewer role on the user management service is a role that is commonly assigned for users assigned a role to view or manage support cases. If an account owner restricts the visibility of the user list in the IAM settings, users can't see support cases that are opened by other users in the account. However, if they are assigned the viewer role for the user management service, the user list visibility setting doesn't affect the ability to view cases in the account.
 {: tip}
@@ -1873,4 +1929,4 @@ You can give users access to run platform actions.
 | Operator      | View {{site.data.keyword.atracker_short}} configuration resources such as routes and targets. |
 | Editor        | View, create, update, and delete {{site.data.keyword.atracker_short}} resources. |
 | Administrator | View, create, update, and delete {{site.data.keyword.atracker_short}} resources.   \n  \n Assign access policies to manage {{site.data.keyword.atracker_short}} resources to other users in the account. |
-{: caption="Table 20. Roles and example actions for the {{site.data.keyword.atracker_short}} Event Routing service" caption-side="top"}
+{: caption="Table 21. Roles and example actions for the {{site.data.keyword.atracker_short}} Event Routing service" caption-side="top"}

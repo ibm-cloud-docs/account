@@ -970,27 +970,6 @@
     "can't access IaaS services",
     "Lite account have access to infrastructure services"
   ],
-  "rename-enterprise-account": [
-    "changing the name of the account in an enterprise",
-    "enterprise account name change",
-    "change the name of the account",
-    "Is it possible to rename the cloud account",
-    "rename the cloud account",
-    "renaming cloud account",
-    "updating account name in enterprise",
-    "edit account name within an enterprise",
-    "account name editing for enterprises"
-  ],
-  "enterprise-invite-users": [
-    "inviting other users to my enterprise",
-    "ask a user to join an enterprise",
-    "users joining our enterprise",
-    "invite other users to an enterprise",
-    "add his mail ID into our account group",
-    "add a user to an enterprise account",
-    "invitation to a user to an enterprise",
-    "enterprise invite for users"
-  ],
   "ts_upgrade_cc": [
     "You do not have the permissions necessary to view this page",
     "You don't have permission to view this page for this account",

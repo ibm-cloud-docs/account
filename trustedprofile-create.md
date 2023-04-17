@@ -78,7 +78,7 @@ For more information about the fields that are used to create conditions for tru
 
 Complete the following steps to set up better control over granting access to compute resources.
 
-{{site.data.keyword.containerlong_notm}} supports only trusted profiles for versions 1.21 and newer. You have the choice to create clusters with an earlier version with the standard plan, so be sure to select version 1.21 or newer. Free {{site.data.keyword.containerlong_notm}} clusters create only newer versions.
+{{site.data.keyword.containerlong_notm}} supports only trusted profiles for versions 1.21 and newer. Free {{site.data.keyword.containerlong_notm}} clusters create only earlier versions. You have the choice to create clusters with an earlier version with the standard plan, so be sure to select version 1.21 or newer.
 {: important}
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Trusted profiles**.
@@ -95,7 +95,7 @@ Complete the following steps to set up better control over granting access to co
 
 1. Click **Continue**.
 1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
-1.  Or, click **Create** without assigning any access.
+1. Or, click **Create** without assigning any access.
 
 For more information about the fields that are used to create conditions for trusted profiles, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
 {: tip}
@@ -104,13 +104,15 @@ For more information about the fields that are used to create conditions for tru
 {: #create-profile-services}
 {: ui}
 
-An {{site.data.keyword.cloud_notm}} service in another account might need a token to run an operation in your account. Complete the following steps to define how an {{site.data.keyword.cloud_notm}} service can access specific resources in your account:
+An {{site.data.keyword.cloud_notm}} service in your account or another account might need a token to run an operation in your account.
+
+For example, a Project service instance can assume a trusted profile to securely deploy architecture configurations in your account without the need for key rotation. For more information, see [Using trusted profiles to authorize projects](/docs/secure-enterprise?topic=secure-enterprise-tp-project).
+{: tip}
+
+Complete the following steps to define how an {{site.data.keyword.cloud_notm}} service can access specific resources in your account:
 
 1. Ask the administrator of the service for the Cloud Resource Name (CRN) that uniquely identifies the service instance. The CRN is used to authorize operations.
-
-   The service administrator can find the CRN by going to the Navigation Menu icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list** and clicking the name of the service that you're targeting. In the **Details** section, copy the CRN.
-   {: note}
-
+   - The service administrator can find the CRN by going to the Navigation Menu icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list** and clicking the name of the service that you're targeting. In the **Details** section, copy the CRN.
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Trusted profiles**.
 1. Click **Create profile**.
 1. Define your profile by providing a name and a description, and click **Continue**.
@@ -122,7 +124,7 @@ An {{site.data.keyword.cloud_notm}} service in another account might need a toke
 1. Enter the CRN that service administrator provided to you.
 1. Click **Continue**.
 1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
-1. 1. Or, click **Create** without assigning any access.
+1. Or, click **Create** without assigning any access.
 
 {{site.data.keyword.cloud_notm}} services are static identities that don't use conditions to establish trust. Instead, you establish trust by using the CRN to create a direct link with the trusted entity.
 {: note}
@@ -217,7 +219,7 @@ Complete the following steps to define which federated users can access specific
 
 Complete the following steps to set up better control over granting access to compute resources.
 
-{{site.data.keyword.containerlong_notm}} supports only trusted profiles for versions 1.21 and newer. You have the choice to create clusters with an earlier version with the standard plan, so be sure to select version 1.21 or newer. Free {{site.data.keyword.containerlong_notm}} clusters create only newer versions.
+{{site.data.keyword.containerlong_notm}} supports only trusted profiles for versions 1.21 and newer. Free {{site.data.keyword.containerlong_notm}} clusters create only earlier versions. You have the choice to create clusters with an earlier version with the standard plan, so be sure to select version 1.21 or newer.
 {: important}
 
 1. Create a trusted profile by running the following command:
@@ -348,7 +350,7 @@ Complete the following steps to define which federated users can access specific
 
 Complete the following steps to set up better control over granting access to compute resources.
 
-{{site.data.keyword.containerlong_notm}} supports only trusted profiles for versions 1.21 and newer. You have the choice to create clusters with an earlier version with the standard plan, so be sure to select version 1.21 or newer. Free {{site.data.keyword.containerlong_notm}} clusters create only newer versions.
+{{site.data.keyword.containerlong_notm}} supports only trusted profiles for versions 1.21 and newer. Free {{site.data.keyword.containerlong_notm}} clusters create only earlier versions. You have the choice to create clusters with an earlier version with the standard plan, so be sure to select version 1.21 or newer.
 {: important}
 
 1. Create a trusted profile by specifying your account ID.

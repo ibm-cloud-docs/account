@@ -20,7 +20,6 @@
               - index.md
               - account_overview.md
               - include: ../billing-usage/paygo_committed_use.md
-              - enterprise-video.md
           - topicgroup:
               label: Learning about access management
               topics:
@@ -39,13 +38,11 @@
               label: Best practices
               topics:
               - bp_account.md
-              - bp_enterprise.md
 
       - navgroup:
           id: tutorial
           topics:
           - acct-getstart-tutorial.md
-          - enterprise-tutorial.md
           - topicgroup:
                 label: Securing access to resources
                 topics:
@@ -199,23 +196,6 @@
                   - catalog-scans.md
                   - sw-instance-details.md
           - topicgroup:
-              label: Centrally managing multiple accounts with enterprises
-              topics:
-              - enterprises.md
-              - topicgroup:
-                  label: Setting up an enterprise
-                  topics:
-                  - enterprise-create.md
-                  - enterprise-add-accounts.md
-                  - enterprise-organize-accounts.md
-                  - enterprise-update-group-contact.md
-              - topicgroup:
-                  label: Assigning enterprise access
-                  topics:
-                  - enterprise-access.md
-                  - enterprise-assign-access.md
-              - enterprise-settings.md
-          - topicgroup:
               label: Centrally managing products with catalogs
               topics:
               - cm-video.md
@@ -223,7 +203,6 @@
                   label: Customizing access to products
                   topics:
                   - catalog-custom-private.md
-                  - catalog-enterprise-filters.md
               - topicgroup:
                   label: Managing catalogs
                   topics:
@@ -388,7 +367,6 @@
               label: FAQs
               topics:
               - faqs-account.md
-              - faqs-enterprise.md
               - faqs-iam.md
               - faqs-resources.md
               - faqs-migration.md
@@ -428,14 +406,6 @@
               - ts-email-issue.md
               - ts-vpe-access-parent.md
               - ts-trusted-profile-support.md
-          - topicgroup:
-              label: Troubleshooting enterprises
-              topics:
-              - ts-view-enterprise.md
-              - ts-import-enterprise.md
-              - ts-create-enterprise-acct.md
-              - ts-subscriptions-enterprise.md
-              - ts-enterprise-apply.md
           - topicgroup:
               label: Troubleshooting IAM
               topics:
