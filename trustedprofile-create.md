@@ -5,7 +5,7 @@ copyright:
   years: 2021, 2023
 
 
-lastupdated: "2023-04-05"
+lastupdated: "2023-04-17"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access, access group, service IDs, IBM Cloud services, CRN, cloud resource name
 
@@ -106,7 +106,7 @@ For more information about the fields that are used to create conditions for tru
 
 An {{site.data.keyword.cloud_notm}} service in your account or another account might need a token to run an operation in your account.
 
-For example, a Project service instance can assume a trusted profile to securely deploy architecture configurations in your account without the need for key rotation. For more information, see [Using trusted profiles to authorize projects](/docs/secure-enterprise?topic=secure-enterprise-tp-project).
+For example, a Project service instance can assume a trusted profile to securely deploy an architecture in your account or another account without the need for key rotation. For more information, see [Using trusted profiles to authorize a project to deploy an architecture](/docs/secure-enterprise?topic=secure-enterprise-tp-project).
 {: tip}
 
 Complete the following steps to define how an {{site.data.keyword.cloud_notm}} service can access specific resources in your account:
