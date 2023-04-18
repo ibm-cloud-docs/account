@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2023-04-10"
+lastupdated: "2023-04-18"
 
 keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network, services that support service endpoints, service endpoint support, using service endpoints
 
@@ -143,7 +143,7 @@ To find the endpoints for each service, refer to the Endpoint URLs section of th
 | {{site.data.keyword.registryshort_notm}} | {{site.data.keyword.containershort}} clusters with [private service endpoints only](/docs/containers?topic=containers-plan_clusters#workeruser-master) pull container images by using the [{{site.data.keyword.registryshort_notm}}](/docs/Registry?topic=Registry-registry_overview) service endpoint. |
 | {{site.data.keyword.contdelivery_short}} | [Regions and endpoints](/docs/ContinuousDelivery?topic=ContinuousDelivery-regions#service-endpoints) |
 | {{site.data.keyword.databases-for-elasticsearch}} | [{{site.data.keyword.databases-for-elasticsearch}} service endpoints integration](/docs/databases-for-elasticsearch?topic=databases-for-elasticsearch-service-endpoints) |
-| {{site.data.keyword.databases-for-etcd}} | [{{site.data.keyword.databases-for-etcd}} service endpoints integration](/databases-for-etcd?topic=databases-for-etcd-service-endpoints) |
+| {{site.data.keyword.databases-for-etcd}} | [{{site.data.keyword.databases-for-etcd}} service endpoints integration](/docs/databases-for-etcd?topic=databases-for-etcd-service-endpoints) |
 | {{site.data.keyword.databases-for-mongodb}} | [{{site.data.keyword.databases-for-mongodb}} service endpoints integration](/docs/databases-for-mongodb?topic=databases-for-mongodb-service-endpoints) |
 | {{site.data.keyword.databases-for-postgresql}} | [{{site.data.keyword.databases-for-postgresql}} service endpoints integration](/docs/databases-for-postgresql?topic=databases-for-postgresql-service-endpoints)|
 | {{site.data.keyword.databases-for-redis}} | [{{site.data.keyword.databases-for-redis}} service endpoints integration](/docs/databases-for-redis?topic=databases-for-redis-service-endpoints)|
