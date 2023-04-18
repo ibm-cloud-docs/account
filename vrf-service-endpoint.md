@@ -137,7 +137,6 @@ To find the endpoints for each service, refer to the Endpoint URLs section of th
 
 | Service | Documentation |
 |-------------------|-------------------------------|
-| {{site.data.keyword.iae_short}} | [{{site.data.keyword.iae_short}} cloud service endpoints integration](/docs/services/AnalyticsEngine?topic=AnalyticsEngine-service-endpoint-integration) |
 | {{site.data.keyword.appconfig_short}} | [Regions and endpoints](/docs/app-configuration?topic=app-configuration-ac-regions-endpoints) |
 | {{site.data.keyword.cloudcerts_short}} | [Regions and endpoints](/docs/secrets-manager?topic=secrets-manager-endpoints) |
 | {{site.data.keyword.registryshort_notm}} | {{site.data.keyword.containershort}} clusters with [private service endpoints only](/docs/containers?topic=containers-plan_clusters#workeruser-master) pull container images by using the [{{site.data.keyword.registryshort_notm}}](/docs/Registry?topic=Registry-registry_overview) service endpoint. |
