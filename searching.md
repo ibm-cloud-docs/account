@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2022
-lastupdated: "2022-05-09"
+  years: 2015, 2023
+lastupdated: "2023-04-24"
 
 keywords: search, find, search for instance, search for resource
 
@@ -16,7 +16,7 @@ subcollection: account
 # Searching for resources
 {: #searching-for-resources}
 
-You can search for resources from anywhere in the {{site.data.keyword.cloud}} console. Enter the resource or tag in the search field from the console menu bar. You can also use the {{site.data.keyword.Bluemix_notm}} command-line interface (CLI) to search across your resources. The CLI searches for distributed applications and service instances across locations and data centers. [The Global Search and Tagging - Search API](https://cloud.ibm.com/apidocs/search) supports searching for resources as well. 
+You can search for resources from anywhere in the {{site.data.keyword.cloud}} console. Enter the resource or tag in the search field from the console menu bar. You can also use the {{site.data.keyword.Bluemix_notm}} command-line interface (CLI) to search across your resources. The CLI searches for distributed applications and service instances across locations and data centers. [The Global Search and Tagging - Search API](https://cloud.ibm.com/apidocs/search) supports searching for resources as well.
 {: shortdesc}
 
 ## Refining your search results
@@ -71,7 +71,7 @@ You can search for the following attributes:
 :   The ID of the resource group.
 
 `type`
-:   The resource type. The allowed values are: `k8-cluster`, `k8-location`, `namespace`, `cf-service-instance`, `cf-user-provided-service-instance`, `cf-organization`, `cf-service-binding`, `cf-space`, `cf-application`, `resource-instance`, `resource-alias`, `resource-binding`, `resource-group`, `vmware-solutions`, `vpc`, `volume`, `vpn`, `load-balancer`, `security-group`, `key`, `image`, `subnet`, `public-gateway`, `floating-ip`, `network-acl`, `flow-log-collector`, `instance`, `instance-group`, `dedicated-host`, `endpoint-gateway`, `snapshot`, `share`, `backup-policy`, `vpn-server`, `placement-group`, `route`, `target`, `cloud-object-storage-infrastructure`, `block-storage`, `file-storage`, `cloud-backup`, `cdn-powered-by-akamai`, `direct-link-cloud-exchange`, `direct-link-cloud-connect`, `direct-link-colocation`, `direct-link-network-service-provider`, `hardware-firewall`, `hardware-firewall-dedicated`, `fortigate-security-appliance-1gb`, `fortigate-security-appliance-10gb`,  `virtual-router-appliance-copy`, `network-gateway-byoa`, `network-gateway-juniper-vsrx`, `ibm-cloud-load-balancer`, `virtual-server`, `bare-metal`, `citrix-virtual-app-desktop`, `bare-metal-server`, `serviceid`.
+:   The resource type. The allowed values are: `k8-cluster`, `k8-location`, `namespace`, `cf-service-instance`, `cf-user-provided-service-instance`, `cf-organization`, `cf-service-binding`, `cf-space`, `cf-application`, `resource-instance`, `resource-alias`, `resource-binding`, `resource-group`, `vmware-solutions`, `vpc`, `volume`, `vpn`, `load-balancer`, `security-group`, `key`, `image`, `subnet`, `public-gateway`, `floating-ip`, `network-acl`, `flow-log-collector`, `instance`, `instance-group`, `dedicated-host`, `endpoint-gateway`, `snapshot`, `share`, `backup-policy`, `vpn-server`, `virtual-network-interface`, `placement-group`, `route`, `target`, `cloud-object-storage-infrastructure`, `block-storage`, `file-storage`, `cloud-backup`, `cdn-powered-by-akamai`, `direct-link-cloud-exchange`, `direct-link-cloud-connect`, `direct-link-colocation`, `direct-link-network-service-provider`, `hardware-firewall`, `hardware-firewall-dedicated`, `fortigate-security-appliance-1gb`, `fortigate-security-appliance-10gb`,  `virtual-router-appliance-copy`, `network-gateway-byoa`, `network-gateway-juniper-vsrx`, `ibm-cloud-load-balancer`, `virtual-server`, `bare-metal`, `citrix-virtual-app-desktop`, `bare-metal-server`, `serviceid`.
 
 `creation_date`
 :   The date on which the resource is created.
@@ -96,7 +96,7 @@ The usage of `-p classic-infrastructure` for _objectType `SoftLayer_Virtual_Dedi
 ### Searching for classic infrastructure resources
 {: #search-classic-infra-resources}
 
-To search for classic infrastructure resources, the string must be contained within double quotation marks (") in order for an exact match for the query string to be returned. 
+To search for classic infrastructure resources, the string must be contained within double quotation marks (") in order for an exact match for the query string to be returned.
 
 In addition, if you enter a search term that includes a hyphen (-) and you don't surround the string with a double quotation mark ("), the search will not return an exact match. Hyphens within the string are used to break the term into multiple strings.
 
@@ -142,7 +142,7 @@ When the `-p classic-infrastucture` parameter is not specified search spans acro
     ibmcloud resource search "creation_date:[2020-05-16T00:00:00Z TO 2020-05-20T00:00:00Z]"
     ```
     {: codeblock}
-     
+
 
 * To search for resources that are not classic infrastructure whose name starts with "my", ordered by type, enter the following command:
 
@@ -150,14 +150,14 @@ When the `-p classic-infrastucture` parameter is not specified search spans acro
     ibmcloud resource search 'name:my*' -s type
     ```
     {: codeblock}
-    
+
 * To search for resources that are not classic infrastructure and have been tagged with `MyTag`, enter the following command:
 
     ```bash
     ibmcloud resource search 'tags:MyTag'
     ```
     {: codeblock}
-    
+
 * To search for all classic infrastructure virtual servers whose fully qualified domain name is `MyVM`, enter the following command:
 
     ```bash
@@ -171,19 +171,19 @@ When the `-p classic-infrastucture` parameter is not specified search spans acro
     ibmcloud resource search 'tagReferences.tag.name:MyTag' -p classic-infrastructure
     ```
     {: codeblock}
-    
+
 * To search for all classic infrastructure of type `SoftLayer_Network_Vlan`
 
     ```bash
     ibmcloud resource search '_objectType:SoftLayer_Network_Vlan' -p classic-infrastructure
     ```
     {: codeblock}
-  
+
 ## Search by using the API
 {: #searching-api}
 {: api}
 
-To search for resources, call [The Global Search and Tagging - Search API](https://cloud.ibm.com/apidocs/search#search). The following example searches for all resources with tag "project:myproject" attached. 
+To search for resources, call [The Global Search and Tagging - Search API](https://cloud.ibm.com/apidocs/search#search). The following example searches for all resources with tag "project:myproject" attached.
 
 Use the `SearchOptions.Builder` to create a `SearchOptions` object that contains the parameter values for the `search` method.
 {: java}
