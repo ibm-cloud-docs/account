@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2023-04-27"
+lastupdated: "2023-05-02"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, Cloud Foundry, endpoint type
 
@@ -120,6 +120,7 @@ The following is a list of services that you can add to a network zone as a serv
 | IAM Access Groups Service  | Account Management |
 | IAM User Management | Account Management |
 | [{{site.data.keyword.appconfig_short}}](/docs/app-configuration?topic=app-configuration-ac-access-control-cbr) | IAM-enabled |
+| [{{site.data.keyword.eventnotifications_short}}](/docs/event-notifications?topic=event-notifications-en-access-control-cbr) | IAM-enabled |
 | Cloud {{site.data.keyword.block_storage_is_short}} | IAM-enabled |
 | [Cloud {{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-setting-a-firewall) | IAM-enabled |
 | [{{site.data.keyword.codeengineshort}}](/docs/codeengine?topic=codeengine-cbr) | IAM-enabled |
@@ -204,6 +205,7 @@ You can create context-based restrictions for the following services if you are 
 | IAM Access Management Service | Account Management | No | `iam-access-management` |
 | IAM Identity Service  | Account Management | No | `iam-identity`|
 | IAM User Management | Account Management | No | `user-management` |
+| [{{site.data.keyword.appconfig_short}}](/docs/event-notifications?topic=event-notifications-en-access-control-cbr) | IAM-enabled | No | `event-notifications` |
 | [{{site.data.keyword.appconfig_short}}](/docs/app-configuration?topic=app-configuration-ac-access-control-cbr) | IAM-enabled | No | `apprapp` |
 | [Cloud {{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-setting-a-firewall) | IAM-enabled | No | `cloud-object-storage` |
 | [{{site.data.keyword.codeengineshort}}](/docs/codeengine?topic=codeengine-cbr) | IAM-enabled | No | `codeengine` |
