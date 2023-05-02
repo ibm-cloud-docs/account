@@ -205,7 +205,7 @@ You can create context-based restrictions for the following services if you are 
 | IAM Access Management Service | Account Management | No | `iam-access-management` |
 | IAM Identity Service  | Account Management | No | `iam-identity`|
 | IAM User Management | Account Management | No | `user-management` |
-| [{{site.data.keyword.appconfig_short}}](/docs/event-notifications?topic=event-notifications-en-access-control-cbr) | IAM-enabled | No | `event-notifications` |
+| [{{site.data.keyword.eventnotifications_short}}](/docs/event-notifications?topic=event-notifications-en-access-control-cbr) | IAM-enabled | No | `event-notifications` |
 | [{{site.data.keyword.appconfig_short}}](/docs/app-configuration?topic=app-configuration-ac-access-control-cbr) | IAM-enabled | No | `apprapp` |
 | [Cloud {{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-setting-a-firewall) | IAM-enabled | No | `cloud-object-storage` |
 | [{{site.data.keyword.codeengineshort}}](/docs/codeengine?topic=codeengine-cbr) | IAM-enabled | No | `codeengine` |
