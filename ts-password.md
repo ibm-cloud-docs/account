@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2021
-lastupdated: "2021-09-22"
+  years: 2015, 2023
+lastupdated: "2023-05-10"
 
 keywords: troubleshoot account, account password, incorrect password, password help
 
@@ -35,7 +35,7 @@ Use one of the following options:
 
 * Go to the [My IBM profile page](https://myibm.ibm.com/dashboard/){: external} to confirm that you're using a valid password.
 * If you forgot your password, click **Forgot your password** to reset your password.
-* If you forgot your IBMid or continue to have problems with your password, contact the Worldwide IBM Registration Help Desk for help.
+* If you forgot your IBMid or continue to have problems with your password, contact the [Worldwide IBM Registration Help Desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: external} for help.
 
 If you sign in to {{site.data.keyword.Bluemix_notm}} and the log in process is disrupted for any reason, like resetting your password, return to the console and start the log in process again.
 {: tip}
