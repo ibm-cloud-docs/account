@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2023
 
-lastupdated: "2023-01-18"
+lastupdated: "2023-05-10"
 
 keywords: specific IP addresses, IP addresses, restrict IP access, IP address access, allow IP access
 
@@ -67,6 +67,9 @@ To restrict all users to using only specific IP addresses, complete the followin
 
 1. Click **Save**.
 
+When you allow only specific IP addresses to access an {{site.data.keyword.cloud_notm}} account, users can't access the {{site.data.keyword.cloud_notm}} Shell CLI. This is because the Cloud Shell is hosted on a shared platform that can't satisfy the IP address allow list.
+{: important}
+
 ## Allowing specific IP addresses for an account by using Terraform
 {: #ips_account_terraform}
 {: terraform}
@@ -106,3 +109,6 @@ For more information, see the [Terraform documentation](https://registry.terrafo
 
 You can enter a single IP address `17.5.7.8`, an IP address range `17.5.7.8 - 17.5.9.5`, or IP subnets `17.5.7.8.0/16`, or a [network zone](/docs/account?topic=account-context-restrictions-whatis#network-zones-whatis) `networkZoneName`. Make sure to use IPv4 or IPv6 addresses, and to separate multiple values with a comma. If there is already an IP address restriction that exists, the resource overrides the restriction.
 {: note}
+
+When you allow only specific IP addresses to access an {{site.data.keyword.cloud_notm}} account, users can't access the {{site.data.keyword.cloud_notm}} Shell CLI. This is because the Cloud Shell is hosted on a shared platform that can't satisfy the IP address allow list.
+{: important}
