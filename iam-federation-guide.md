@@ -4,7 +4,7 @@ copyright:
 
   years: 2023
 
-lastupdated: "2023-02-24"
+lastupdated: "2023-05-17"
 
 keywords:
 
@@ -95,7 +95,7 @@ Using {{site.data.keyword.Bluemix_notm}} and other {{site.data.keyword.IBM_notm}
 
 The following links help you implement the federation that you choose:
 
-[IBMid Enterprise Federation Adoption Guide](https://ibm.box.com/v/IBMid-Federation-Guide){: external}.
+[IBMid Enterprise Federation Adoption Guide](https://www.ibm.com/docs/en/ief){: external}.
 :   The publicly available IBMid federation guide gives you an overview about the steps that are required to federate your Identity Provider and whom to contact to get the federation implemented. Be aware that you need an "IBM Sponsor" (for example, an {{site.data.keyword.IBM_notm}} employee that works as main contact between you and the IBMid team).
 
 [{{site.data.keyword.Bluemix_notm}} Self-Service Federation for External Identity Providers](https://www.ibm.com/cloud/blog/announcements/ibm-cloud-self-service-federation-for-external-identity-providers)

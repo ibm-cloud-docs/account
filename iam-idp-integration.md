@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2020, 2022
+  years: 2020, 2023
 
-lastupdated: "2022-09-15"
+lastupdated: "2023-05-17"
 
 keywords: identity provider, IdP, App ID, IAM, integration, IdP SSO, third-party authentication, dynamic rules, external identity provider
 
@@ -20,7 +20,7 @@ subcollection: account
 You can integrate with your external identity provider (IdP) to securely authenticate external users to your {{site.data.keyword.cloud}} account. By using your IdP, you can provide a way for users in your company to use single sign-on (SSO). Connecting your cloud account with an {{site.data.keyword.appid_full_notm}} instance of your choice makes it all possible.
 {: shortdesc}
 
-A more commonly used authentication method in {{site.data.keyword.cloud_notm}} that federates you for all {{site.data.keyword.IBM_notm}} products and has no usage charges is IBMid federation by registering your company's domain. Registering a company's domain with {{site.data.keyword.IBM_notm}} enables users to log in to {{site.data.keyword.IBM_notm}} products and services by using their existing company user credentials. Authentication is then handled by your company's IdP through single sign-on (SSO). For information about how to register your company for a federated ID, see the [IBMid Enterprise Federation Adoption Guide](https://ibm.box.com/v/IBMid-Federation-Guide){: external}. An {{site.data.keyword.IBM_notm}} sponsor, such as an product advocate or client advocate, is required when you request to register federated IDs.
+A more commonly used authentication method in {{site.data.keyword.cloud_notm}} that federates you for all {{site.data.keyword.IBM_notm}} products and has no usage charges is IBMid federation by registering your company's domain. Registering a company's domain with {{site.data.keyword.IBM_notm}} enables users to log in to {{site.data.keyword.IBM_notm}} products and services by using their existing company user credentials. Authentication is then handled by your company's IdP through single sign-on (SSO). For information about how to register your company for a federated ID, see the [IBMid Enterprise Federation Adoption Guide](https://www.ibm.com/docs/en/ief){: external}. An {{site.data.keyword.IBM_notm}} sponsor, such as an product advocate or client advocate, is required when you request to register federated IDs.
 
 To begin setting up an IBMid for enterprise federation, open a case at ibm.com/mysupport and select IBMid Enterprise Federation as the product.
 {: note}
