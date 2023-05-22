@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2023-03-14"
+lastupdated: "2023-05-22"
 
 keywords: account, publish, private catalog, allowlist, external
 
@@ -16,21 +16,21 @@ subcollection: account
 # Publishing products to specific accounts
 {: #catalog-other-publish}
 
-If you don't want your product to be publicly available to all users in the {{site.data.keyword.cloud}} catalog but you do want certain accounts to be able to access your product, you can publish your product to specific allowlisted accounts as long as your product is [approved for publishing](/docs/sell?topic=sell-sw-publish&interface=ui#sw-request-approval).
+If you don't want your product to be publicly available to all users in the {{site.data.keyword.cloud}} catalog but you do want certain accounts to be able to access your product, you can publish your product to specific allowlisted accounts if your product is [approved for publishing](/docs/sell?topic=sell-sw-publish&interface=ui#sw-request-approval).
 {: shortdesc}
 
-A different process is used if you want to share your product with users in your own enterprise or account or to enterprises to which you have the Editor role or higher already assigned, and it does not require approval for publishing. For more information, see [Sharing private catalog products](/docs/account?topic=account-catalog-enterprise-share&interface=ui).
+A different process is used if you want to share your product with users in your own enterprise or account or to enterprises to which you have the Editor role or higher already assigned, and it does not require approval for publishing. For more information, see [Sharing private catalog products](/docs/account?topic=account-catalog-share&interface=ui).
 
 ## Before you begin
 {: #prereqs-share-enterprise}
 
-1. Ensure that your product has been [approved to publish](/docs/sell?topic=sell-sw-publish&interface=ui#sw-request-approval).
+1. Ensure that your product is [approved to publish](/docs/sell?topic=sell-sw-publish&interface=ui#sw-request-approval).
 
 1. You must be assigned the Administrator role for the Catalog Management account management service in the same account as your product. For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
 
 1. Verify that at least one version of your product is in the `ready` state.
 
-1. Retrieve the ID of the account that you want to publish to. For more information, see [Can I view my account ID, account type, and account number?](/docs/account?topic=account-accountfaqs#account-details)
+1. Retrieve the ID of the account that you want to publish to. For more information, see [Can I view my account ID, account type, and account number?](/docs/account?topic=account-accountfaqs#account-details).
 
    If you don't have access to the account, a user that does have access must share the ID with you.
    {: important}
