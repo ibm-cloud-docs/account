@@ -366,7 +366,7 @@ You can give users access to view users in an account, invite and remove users, 
 The viewer role on the user management service is a role that is commonly assigned for users assigned a role to view or manage support cases. If an account owner restricts the visibility of the user list in the IAM settings, users can't see support cases that are opened by other users in the account. However, if they are assigned the viewer role for the user management service, the user list visibility setting doesn't affect the ability to view cases in the account.
 {: tip}
 
-### {{site.data.keyword.atracker_short}} Event Routing
+### {{site.data.keyword.atracker_short}}
 {: #activty-tracker-account-management}
 
 You can give users access to run platform actions.
@@ -377,7 +377,7 @@ You can give users access to run platform actions.
 | Operator      | View {{site.data.keyword.atracker_short}} configuration resources such as routes and targets. |
 | Editor        | View, create, update, and delete {{site.data.keyword.atracker_short}} resources. |
 | Administrator | View, create, update, and delete {{site.data.keyword.atracker_short}} resources.   \n  \n Assign access policies to manage {{site.data.keyword.atracker_short}} resources to other users in the account. |
-{: caption="Table 21. Roles and example actions for the {{site.data.keyword.atracker_short}} Event Routing service" caption-side="top"}
+{: caption="Table 21. Roles and example actions for the {{site.data.keyword.atracker_short}} service" caption-side="top"}
 
 <!--- API --->
 
@@ -1147,7 +1147,7 @@ You can give users access to view users in an account, invite and remove users, 
 The viewer role on the user management service is a role that is commonly assigned for users assigned a role to view or manage support cases. If an account owner restricts the visibility of the user list in the IAM settings, users can't see support cases that are opened by other users in the account. However, if they are assigned the viewer role for the user management service, the user list visibility setting doesn't affect the ability to view cases in the account.
 {: tip}
 
-### {{site.data.keyword.atracker_short}} Event Routing
+### {{site.data.keyword.atracker_short}}
 {: #activty-tracker-account-management-api}
 
 You can give users access to run platform actions.
@@ -1158,7 +1158,7 @@ You can give users access to run platform actions.
 | Operator      | View {{site.data.keyword.atracker_short}} configuration resources such as routes and targets. | `crn:v1:bluemix:public:iam::::role:Operator` |
 | Editor        | View, create, update, and delete {{site.data.keyword.atracker_short}} resources. | `crn:v1:bluemix:public:iam::::role:Editor` |
 | Administrator | View, create, update, and delete {{site.data.keyword.atracker_short}} resources.   \n  \n Assign access policies to manage {{site.data.keyword.atracker_short}} resources to other users in the account. | `crn:v1:bluemix:public:iam::::role:Administrator` |
-{: caption="Table 22. Roles and example actions for the {{site.data.keyword.atracker_short}} Event Routing service" caption-side="top"}
+{: caption="Table 22. Roles and example actions for the {{site.data.keyword.atracker_short}} service" caption-side="top"}
 
 <!--- CLI --->
 
@@ -1531,7 +1531,7 @@ You can give users access to view users in an account, invite and remove users, 
 The viewer role on the user management service is a role that is commonly assigned for users assigned a role to view or manage support cases. If an account owner restricts the visibility of the user list in the IAM settings, users can't see support cases that are opened by other users in the account. However, if they are assigned the viewer role for the user management service, the user list visibility setting doesn't affect the ability to view cases in the account.
 {: tip}
 
-### {{site.data.keyword.atracker_short}} Event Routing
+### {{site.data.keyword.atracker_short}}
 {: #activty-tracker-account-management-cli}
 
 You can give users access to run platform actions.
@@ -1542,7 +1542,7 @@ You can give users access to run platform actions.
 | Operator      | View {{site.data.keyword.atracker_short}} configuration resources such as routes and targets. |
 | Editor        | View, create, update, and delete {{site.data.keyword.atracker_short}} resources. |
 | Administrator | View, create, update, and delete {{site.data.keyword.atracker_short}} resources.   \n  \n Assign access policies to manage {{site.data.keyword.atracker_short}} resources to other users in the account. |
-{: caption="Table 22. Roles and example actions for the {{site.data.keyword.atracker_short}} Event Routing service" caption-side="top"}
+{: caption="Table 22. Roles and example actions for the {{site.data.keyword.atracker_short}} service" caption-side="top"}
 
 
 <!--- Terraform --->
@@ -1918,7 +1918,7 @@ You can give users access to view users in an account, invite and remove users, 
 The viewer role on the user management service is a role that is commonly assigned for users assigned a role to view or manage support cases. If an account owner restricts the visibility of the user list in the IAM settings, users can't see support cases that are opened by other users in the account. However, if they are assigned the viewer role for the user management service, the user list visibility setting doesn't affect the ability to view cases in the account.
 {: tip}
 
-### {{site.data.keyword.atracker_short}} Event Routing
+### {{site.data.keyword.atracker_short}}
 {: #activty-tracker-account-management-terra}
 
 You can give users access to run platform actions.
@@ -1929,4 +1929,4 @@ You can give users access to run platform actions.
 | Operator      | View {{site.data.keyword.atracker_short}} configuration resources such as routes and targets. |
 | Editor        | View, create, update, and delete {{site.data.keyword.atracker_short}} resources. |
 | Administrator | View, create, update, and delete {{site.data.keyword.atracker_short}} resources.   \n  \n Assign access policies to manage {{site.data.keyword.atracker_short}} resources to other users in the account. |
-{: caption="Table 21. Roles and example actions for the {{site.data.keyword.atracker_short}} Event Routing service" caption-side="top"}
+{: caption="Table 21. Roles and example actions for the {{site.data.keyword.atracker_short}} service" caption-side="top"}
