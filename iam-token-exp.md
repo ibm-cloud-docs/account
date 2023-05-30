@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2019, 2022
+  years: 2019, 2023
 
-lastupdated: "2022-10-26"
+lastupdated: "2023-05-30"
 
 keywords: token, token expiration, settings, access token, refresh token, IAM
 
@@ -57,7 +57,7 @@ To update your refresh token expiration setting, complete the following steps:
 
 1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Access (IAM)**, and select **Settings**.
 1. From the Login session section, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") on the Refresh token tile.
-1. Enter the time limit in hours. A refresh token can be valid for up to 720 hours (30 days).
+1. Enter the time limit in hours. A refresh token can be valid for up to 72 hours (3 days).
 1. Click **Save**.
 
 
