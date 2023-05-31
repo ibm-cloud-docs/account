@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-05-30"
+lastupdated: "2023-05-31"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1121,6 +1121,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `compliance.posture-management.scans-update` | Update Scans | Administrator, Editor |
 | `compliance.posture-management.scans-delete` | Delete Scans | Administrator, Editor |
 | `compliance.posture-management.reports-read` | View results | Administrator, Editor, Operator |
+| `compliance.posture-management.profiles-compare` | Compare profiles | Administrator, Editor, Operator, Viewer |
+| `compliance.posture-management.attachments-upgrade` | Upgrade attachments | Administrator, Editor |
 {: caption="Table 22. Service actions - IBM Cloud Compliance and Security Center" caption-side="top"}
 {: #actions-table22}
 {: tab-title="Actions"}
@@ -3605,6 +3607,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `event-notifications.integrations.update` | This action is to update an already  created integration with EN | Administrator, Event Source Manager, Manager |
 | `event-notifications.integrations.read` | This action is to get an already-created integration | Administrator, Event Source Manager, Manager |
 | `event-notifications.integrations.list` | This action is to list all integrations with EN | Administrator, Event Source Manager, Manager |
+| `event-notifications.integrations.delete` | This action is to delete integration | Event Source Manager, Manager |
 {: caption="Table 58. Service actions - Event Notifications" caption-side="top"}
 {: #actions-table58}
 {: tab-title="Actions"}
