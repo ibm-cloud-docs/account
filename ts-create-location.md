@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2021
-lastupdated: "2021-06-14"
+  years: 2015, 2023
+lastupdated: "2023-06-01"
 
 keywords: troubleshoot account, account problem, IBM location, IBM Cloud location, create location
 
@@ -30,4 +30,4 @@ This error typically occurs because you're using a Lite account, which supports 
 To access more locations, upgrade to a billable account. Go to **Manage** > **Account** in the {{site.data.keyword.Bluemix_notm}} console, and select **Account settings**. In the Account upgrade section, select your upgrade option.
 {: tsResolve}
 
-To view information about using a different region for a service within the account, see [Cloud Foundry Regions and endpoints](/docs/cloud-foundry-public?topic=cloud-foundry-public-endpoints) or refer to [Using service endpoints](/docs/account?topic=account-vrf-service-endpoint#use-service-endpoint) for global or regional endpoints for a particular service instance.
+To view information about using a different region for a service within the account, see  [Using service endpoints](/docs/account?topic=account-vrf-service-endpoint#use-service-endpoint) for global or regional endpoints for a particular service instance.

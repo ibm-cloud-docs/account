@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2023
 
-lastupdated: "2023-03-17"
+lastupdated: "2023-06-01"
 
 keywords: what is IAM, IAM features, IAM API, how IAM works
 
@@ -27,7 +27,7 @@ You can use [trusted profiles](/docs/account?topic=account-create-trusted-profil
 
 ![IAM access control in an account](images/tp-in-ag-access-diagram.svg "How IAM access works in an account by using access groups"){: caption="Figure 1. How IAM access works in an account by using access groups" caption-side="bottom"}
 
-For services that don't support the use of {{site.data.keyword.cloud_notm}} IAM policies for managing access, you can use [Cloud Foundry access](/docs/account?topic=account-mngcf) or [classic infrastructure permissions](/docs/account?topic=account-mngclassicinfra).
+For classic infrastructure that doesn't support the use of {{site.data.keyword.cloud_notm}} IAM policies for managing access, you can use the [classic infrastructure permissions](/docs/account?topic=account-mngclassicinfra) documentation.
 {: note}
 
 ## What features are provided?

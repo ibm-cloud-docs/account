@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2022
-lastupdated: "2022-12-27"
+  years: 2015, 2023
+lastupdated: "2023-06-01"
 
 keywords: troubleshoot account, page load, page error, console page error
 
@@ -46,5 +46,4 @@ Complete one or more of the following actions, as necessary:
 * Use the private browsing mode of your browser.
 * Clear the cookies and the cache of the browser.
 * Use a different browser. For the list of supported browsers, see [{{site.data.keyword.Bluemix_notm}} prerequisites](/docs/overview?topic=overview-prereqs-platform).
-* If you installed the Cloud Foundry CLI, enter the `ibmcloud cf apps` command to confirm that your app is running.
 * If the problem persists, go to the [{{site.data.keyword.Bluemix_notm}} Status page](https://cloud.ibm.com/status){: external} to check if a service or component has an issue.

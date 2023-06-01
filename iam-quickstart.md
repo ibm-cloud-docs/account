@@ -1,8 +1,8 @@
 ---
 
 copyright:
-   years: 2020, 2022
-lastupdated: "2022-06-22"
+   years: 2020, 2023
+lastupdated: "2023-06-01"
 
 keywords: get started with IAM, getting started with Identity and Access Management tutorial, IAM tutorial, IAM quick start, resource group, access group, access policy, inviting users
 
@@ -17,13 +17,13 @@ completion-time: 10m
 
 # Assigning access to resources by using access groups
 {: #access-getstarted}
-{: toc-content-type="tutorial"} 
+{: toc-content-type="tutorial"}
 {: toc-completion-time="10m"}
 
 Get up and running quickly with {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) by setting up access groups for quick access assignments, inviting users to your account, and managing their access.
 {: shortdesc}
 
-This tutorial is for IAM-enabled resources. For services that don't support creating IAM policies for managing access, you can use [Cloud Foundry access](/docs/account?topic=account-mngcf) or [classic infrastructure permissions](/docs/account?topic=account-mngclassicinfra).
+This tutorial is for IAM-enabled resources. For classic infrastructure that doesn't support creating IAM policies for managing access, you can review the [classic infrastructure permissions](/docs/account?topic=account-mngclassicinfra) documentation.
 {: note}
 
 ## Before you begin
@@ -43,7 +43,7 @@ To streamline the process of assigning access to users in your account, you can 
 A unique name is required to differentiate access groups in the account.
 {: note}
 
-### Set up your groups 
+### Set up your groups
 {: #group_setup}
 
 To create an access group, complete the following steps:
@@ -66,19 +66,19 @@ Next, continue to set up your group by adding users or service IDs:
 
 After you create your access groups, you can assign access to all members of the group with one or more policies. By assigning a group of users access to a group of resources with a single policy, you reduce the overall number of policies that you need to manage.
 
-1. Click **Access** > **Assign access**.
+1. From the **Access** tab, click **Assign access**.
 1. Select a single service or group of services. Then, click **Next**.
 1. Scope the access to all resource or specific resources based on attributes. Then, click **Next**.
 1. Select the level of access that you want to assign.
 
-   If you're assigning access to IAM-enabled services, some services support the use of advanced operators to grant access to resources that satisfy specific naming conventions. See [Assigning access by using wildcard policies](/docs/account?topic=account-wildcard) for more information. 
+   If you're assigning access to IAM-enabled services, some services support the use of advanced operators to grant access to resources that satisfy specific naming conventions. See [Assigning access by using wildcard policies](/docs/account?topic=account-wildcard) for more information.
    {: note}
-  
-1. Click **Review**. 
-1. Click **Add** to add your policy configuration to your policy summary.
-1. Click **Assign** to assign all added access to your access group. 
 
-## Invite users 
+1. Click **Review**.
+1. Click **Add** to add your policy configuration to your policy summary.
+1. Click **Assign** to assign all added access to your access group.
+
+## Invite users
 {: #invite-user}
 {: step}
 
@@ -88,13 +88,12 @@ You can invite one or multiple users in a single invite. If you invite multiple 
 1. Click **Invite users**. Specify the email addresses of the users. If you are inviting more than one user with a single invitation, they are all assigned the same access.
 1. Add one or more of the access options that you manage. You must assign at least one access option. For any access options that you don't add and configure, the default value of **No access** is assigned. Depending on the options that you are authorized to manage, you can assign the following types of access:
 
-   * Access groups: Click **Add** for each access group that you want the users to belong to. 
-   * Access policy: Assign individual IAM access policies, Cloud Foundry roles, or classic infrastructure permissions.
-     * Select **Cloud Foundry** and specify an organization and a region to select a specific space. Then, assign a space role. An organization and space role are both required to add the access assignment to the invite.
+   * Access groups: Click **Add** for each access group that you want the users to belong to.
+   * Access policy: Assign individual IAM access policies or classic infrastructure permissions.
      * Select **Classic infrastructure**, and then select from the three permission sets.
-     * Select a group of services like **All Identity and Access enabled services**, **All Account Management services**, and **All IAM Account Management services**, or select a specific service. Next, you can scope the access to the entire account or just one resource group. Then, select all roles that apply. To view what actions are mapped to each role, click the numbers listed next to each role.
-     
-         Some services support the use of advanced operators to grant access to resources that satisfy specific naming conventions. See [Assigning access by using wildcard policies](/docs/account?topic=account-wildcard) for more information. 
+     * Select a group of services like **All Identity and Access enabled services**, **All Account Management services**, and **All IAM Access Management services**, or select a specific service. Next, you can scope the access to the entire account or just one resource group. Then, select all roles that apply. To view what actions are mapped to each role, click the numbers listed next to each role.
+
+         Some services support the use of advanced operators to grant access to resources that satisfy specific naming conventions. See [Assigning access by using wildcard policies](/docs/account?topic=account-wildcard) for more information.
 
 1. Then, select all roles that apply.
 1. Select **Add** to save the access assignment to the invitation.
@@ -118,9 +117,9 @@ To assign a new access policy, complete the following steps:
 1. Select a service or group of services. Then, click **Next**.
 1. Scope the access to all resources or specific resources based on selected attributes. Then, click **Next**.
 1. Select any combination of roles or permissions to define the scope of access, and click **Review**. For more information, see [IAM roles](/docs/account?topic=account-userroles#iamusermanrol).
-1. Click **Add** to add your policy configuration to your policy summary. 
-1. Click **Assign** to assign all added access to the selected user. 
-    
+1. Click **Add** to add your policy configuration to your policy summary.
+1. Click **Assign** to assign all added access to the selected user.
+
 Assign the viewer role or higher to the resource group that contains the resource to ensure that the user can access the resource from their list of resources.
 {: tip}
 

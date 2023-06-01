@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2015, 2022
+  years: 2015, 2023
 
-lastupdated: "2022-06-13"
+lastupdated: "2023-06-01"
 
 keywords: resource FAQs, resource frequently asked questions, resource group, resource list, dashboard widget
 
@@ -34,6 +34,9 @@ For more information about creating and working with resource groups, see [Manag
 ## Why should I migrate my Cloud Foundry service instances to a resource group?
 {: #instance-migrated}
 {: faq}
+
+IBM Cloud Foundry Public is deprecated with an end-of-support date of 1 June 2023. For more information, see [Deprecation of IBM Cloud Foundry](/docs/cloud-foundry-public?topic=cloud-foundry-public-deprecation).
+{: deprecated}
 
 Migrating your Cloud Foundry services to a resource group means that the services you're using are now available for use with IAM access control and resource groups. You can take advantage of fine-grained access control by using IAM roles. You can also view usage per resource group in your account.
 

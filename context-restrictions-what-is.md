@@ -4,7 +4,7 @@ copyright:
   years: 2021, 2023
 lastupdated: "2023-05-25"
 
-keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, Cloud Foundry, endpoint type
+keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 
 subcollection: account
 

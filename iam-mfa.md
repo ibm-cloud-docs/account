@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2023
-lastupdated: "2023-04-12"
+lastupdated: "2023-06-01"
 
 keywords: MFA, multifactor authentication, IBMid MFA, two-factor authentication, account MFA, time-based one-time passcode, TOTP, FIDO U2F, U2F, universal 2nd factor authentication, security key
 
@@ -31,7 +31,6 @@ The following information is helpful to consider before you enable ID-based MFA 
 
 * Enabling MFA for all users in your account affects all members of the account. If users in your account are members of multiple {{site.data.keyword.cloud_notm}} accounts, they must enroll for MFA at their next login even if they don't intend to use resources in the account where MFA is enabled.
 * API keys for users and service IDs continue to work after MFA is enabled.
-* If you require the use of CLI or UI login into Cloud Foundry, you must use API keys, or SSO after MFA is enabled for the account.
 * MFA for your account applies to a user's login, but does not apply to API calls. If a user has permission to make API calls to resources in your account, the user can do so without completing MFA. If the user belongs to other accounts, the user can make API calls to resources in your account by using an API key from an account that did not require MFA.
 * Plan a communication and support strategy for users in your account:
    * Choose a date and time that you plan to enable MFA that results in the least impact to your business.

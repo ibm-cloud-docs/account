@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2022
-lastupdated: "2022-12-27"
+  years: 2018, 2023
+lastupdated: "2023-06-01"
 
 keywords: frequently asked questions, iam faqs, administrator, administrator role
 
@@ -47,14 +47,6 @@ A subject is a user, service ID, trusted profile, or access group. A target can 
 
 ![Creating IAM policies](images/IAM.svg "How IAM access policies are created by using a subject, target, and role"){: caption="Figure 1. How IAM access policies are created by using a subject, target, and role" caption-side="bottom"}
 
-## Are IAM and Cloud Foundry related?
-{: #iam-cloudfoundry}
-{: faq}
-
-They aren't related. Cloud Foundry is an open source platform that uses organizations, spaces, and Cloud Foundry roles for access management. IAM is the secure way to authenticate users for platform services and control access to resources across the {{site.data.keyword.cloud_notm}} platform by using resource groups and IAM access roles.
-
-The access management systems are entirely different. IAM resources belong to a resource group and Cloud Foundry resources belong to an organization and space. IAM access policies are used to provide access to resources in a resource group. And, Cloud Foundry org and space roles are used to provide users access to Cloud Foundry resources in a space. IAM doesn’t give you access to anything within Cloud Foundry spaces, and Cloud Foundry roles can’t grant access to resources within a resource group.
-
 ## How do I find out what I have access to?
 {: #iam-access}
 {: faq}
@@ -62,9 +54,8 @@ The access management systems are entirely different. IAM resources belong to a 
 
 In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select your name on the Users page. Then, depending on the access you're looking for, open the different tabs:
 
-* To determine what access you have through the access groups you are assigned, select **Access** and view the Access goups table.
+* To determine what access you have through the access groups you are assigned, select **Access** and view the Access groups table.
 * To see IAM access policies that are assigned to you, select **Access** and view the Access policies table.
-* To see your Cloud Foundry access for all orgs and spaces, select **Cloud Foundry**.
 
 ## What actions are mapped to each IAM role?
 {: #action-mapping}
@@ -109,7 +100,7 @@ In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IA
 {: #service-credentials}
 {: faq}
 
-To view an existing service credential for a service or to add a new credential, go to your resource list by clicking the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list**, then select the name of the service to open its details. Click **Service credentials** to view the details or to select **New Credential**.
+To view an existing service credential for a service or to add a new credential, go to your resource list by clicking the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list**, then select the name of the service to open its details. Click **Service credentials** to view the details or to select **New Credential**.
 
 To save a copy of the service credentials, most services provide a  download option or the option to copy to your clipboard.
 {: note}
@@ -162,9 +153,7 @@ A user must be assigned an access policy on the specific resource with at least 
 {: faq}
 {: support}
 
-For IAM-enabled services, you must have Administrator role on the service or resource that you want to assign users access to. If you want to assign access to all services or resources in the account, you need a policy on **All Identity and Access enabled services** with the Administrator role. And, to assign users access to account management services, you must be assigned the Administrator role on the specific service or **All Account Management services**. Assigning users the Administrator role gives them the ability to grant and revoke other users administrator access across the account.
-
-For Cloud Foundry services, you must have Cloud Foundry org and space manager roles to give access to Cloud Foundry resources.
+For IAM-enabled services, you must have Administrator role on the service or resource that you want to assign users access to. If you want to assign access to all services or resources in the account, you need a policy on **All Identity and Access enabled services** with the Administrator role. And, to assign users access to account management services, you must be assigned the Administrator role on the specific service or all account management services. Assigning users the Administrator role delegates the granting and revoking of administrator access of the account, including the ability to revoke access for other users with the administrator role.
 
 For classic infrastructure, you must have the Manage user classic infrastructure permission and the service and device category permissions for the resources that you want to give the user access to.
 
@@ -184,8 +173,8 @@ For example, platform management roles and actions for account management servic
 
 The account owner can remove any users from the account, and any user with the following access can remove users from an account:
 
-* An IAM policy for the User management account management service with the Administrator role assigned and be the Cloud Foundry org manager if the user belongs to a Cloud Foundry org.
-* If you have classic infrastructure in your account, then a user must have an IAM policy for the User management account management service with the Administrator role assigned, be the Cloud Foundry org manager if the user belongs to a Cloud Foundry org, and be an ancestor of the user in the classic infrastructure user hierarchy with the Manage user classic infrastructure permission assigned.
+* An IAM policy for the User management account management service with the Administrator role assigned.
+* If you have classic infrastructure in your account, then a user must have an IAM policy for the User management account management service with the Administrator role assigned, and be an ancestor of the user in the classic infrastructure user hierarchy with the Manage user classic infrastructure permission assigned.
 
 ## How do I require multifactor authentication for my account?
 {: #multi-factor}
@@ -206,14 +195,6 @@ Service and platform roles are two different types of roles:
 
 * Service roles define the ability to perform actions on a service and are specific to every service such as performing API calls or accessing the UI. Service roles are: manager, writer, and reader. For more information about how these roles apply, refer to the specific service's documentation.
 
-## What is the difference between a resource group and Cloud Foundry orgs and spaces?
-{: #groups-organizations}
-{: faq}
-
-With the start of {{site.data.keyword.Bluemix_notm}}, an open source platform service for access control and the organization of resources called Cloud Foundry was the single method for organizing and controlling access to resources. As {{site.data.keyword.Bluemix_notm}} has expanded, a new method was needed that might be used by all types of services and resources. Resource groups are now used to group and organize many types of resources, and IAM is used to consistently control access to services and resources. A number of services have already adopted by using resource groups and IAM, and more services will move over time to the new method for organizing resources and managing access.
-
-Access control and account resource organization are the major differences between resource groups and Cloud Foundry orgs and spaces. Resource groups organize IAM-enabled services in an account that are access that is controlled by using IAM policies. Orgs and spaces are managed by using Cloud Foundry roles for access control, and Cloud Foundry resources are assigned to spaces. Orgs and spaces can be used to organize and control access to resources only within the Cloud Foundry realm, while resource groups and IAM can be used for multiple types of resources across {{site.data.keyword.Bluemix_notm}}.
-
 ## How do I assign a user full access as an account administrator?
 {: #account-administrator}
 {: faq}
@@ -222,9 +203,10 @@ Access control and account resource organization are the major differences betwe
 To assign a user in your account full administrator access, go to **Manage > Access (IAM)** in the console, select the user's name, and assign the following access:
 
 * An IAM policy with Administrator and Manager roles on **All Identity and Access enabled services**, which enable a user to create service instances and assign users access to all resources in the account.
-* An IAM policy with Administrator role on **All Account Management services**, which enables a user to complete tasks like inviting and removing users, managing access groups, managing service IDs, managing private catalog offerings, and track billing and usage.
+* An IAM policy with Administrator role on **All account management services**, which enables a user to complete tasks like inviting and removing users, managing access groups, managing service IDs, managing private catalog products, and track billing and usage.
+
 * The Super user permission set for classic infrastructure, which includes all of the available classic infrastructure permissions
-* Cloud Foundry manager for all orgs, but only account owners can create the orgs.
+
 * A trusted profile set as the alternative account owner has the highest level of classic infrastructure permissions and has both IAM policies that grant full access. For more information, see [Setting an alternative account owner](/docs/account?topic=account-classic-infra-owner&interface=ui).
 
 ## Can every user in my account see all the other users?
@@ -234,8 +216,7 @@ To assign a user in your account full administrator access, go to **Manage > Acc
 An account owner can view all users in the account and choose how users can view other users in the account on the Users page. An account owner can adjust the [user list visibility setting](/docs/account?topic=account-iam-user-setting) on the Settings page by selecting one of the following options:
 
 * **Unrestricted view**: All users in your account can view everyone else in the account.
-* **Restricted view**: Limits the ability to view users on the Users page to only those who have been granted explicit access, along with those who have visibility of other users through a shared Cloud Foundry org or a classic infrastructure user hierarchy relationship.
-
+* **Restricted view**: Limits the ability to view users on the Users page to only those who have been granted explicit access, along with those who have visibility of other users through a classic infrastructure user hierarchy relationship.
 
 ## Do I need to assign access to a user when I invite them to the account?
 {: #account-invite}
@@ -247,9 +228,9 @@ No. You can invite users, and then assign access later.
 {: #pending-user}
 {: faq}
 
-A user who is list as `Pending` is a user who has been invited to {{site.data.keyword.cloud_notm}} but who hasn't accepted their invitation. On the Users page, the management actions for these users include resending the invitation or cancelling the invitation. 
+A user who is list as `Pending` is a user who has been invited to {{site.data.keyword.cloud_notm}} but who hasn't accepted their invitation. On the Users page, the management actions for these users include resending the invitation or cancelling the invitation.
 
-When inspecting access group memberships or access policies in your account, you might see memberships or policies that are related to pending users that were created as part of the invite. These display with an IAM ID that uses the `BSS-`. This IAM ID is a placeholder for the memberships and policies until the user accepts the invitation. And, since the user hasn't registered with {{site.data.keyword.cloud_notm}}, they can't retrieve an IAM access token to leverage the assigned access. When the user accepts the invitation and registers with {{site.data.keyword.cloud_notm}}, the ID in these memberships and policies is replaced with their assigned IAM ID.
+When inspecting access group memberships or access policies in your account, you might see memberships or policies that are related to pending users that were created as part of the invite. These display with an IAM ID that uses the `BSS-`. This IAM ID is a placeholder for the memberships and policies until the user accepts the invitation. And, since the user hasn't registered with {{site.data.keyword.cloud_notm}}, they can't retrieve an IAM access token to leverage the assigned access. When the user accepts the invitation and registers with {{site.data.keyword.cloud_notm}}, the ID in these memberships and policies is replaced with their assigned IAM ID.
 
 
 ## How do I add authentication into my web and mobile apps?

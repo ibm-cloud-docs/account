@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2022
-lastupdated: "2022-06-03"
+  years: 2015, 2023
+lastupdated: "2023-06-01"
 
 keywords: update orgs, update spaces, quotas, Cloud Foundry orgs, domains
 
@@ -19,7 +19,7 @@ subcollection: account
 As an {{site.data.keyword.Bluemix}} account owner or Cloud Foundry organization manager, you can perform management tasks at the org level and the space level. These tasks include renaming an org or space, assigning or updating Cloud Foundry users' roles, managing domains, and viewing org quota details.
 {: shortdesc}
 
-IBM Cloud Foundry Public is deprecated. For more information, see the [Deprecation of IBM Cloud Foundry](/docs/cloud-foundry-public?topic=cloud-foundry-public-deprecation).
+IBM Cloud Foundry Public is deprecated with an end-of-support date of 1 June 2023. For more information, see [Deprecation of IBM Cloud Foundry](/docs/cloud-foundry-public?topic=cloud-foundry-public-deprecation).
 {: deprecated}
 
 ## Updating orgs and spaces in the console
@@ -83,7 +83,7 @@ You can view the resources of only one org at a time. If you are a member of mul
    ```
    {: codeblock}
 
-2. Rename an organization by running the [`ibmcloud account org-rename`](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_org_rename) command, where `OLD_ORG_NAME` is the old name of the org that is to be renamed, `NEW_ORG_NAME` is the new name of the org that is to be renamed, and `-r, --region REGION` is the region name. 
+2. Rename an organization by running the [`ibmcloud account org-rename`](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_org_rename) command, where `OLD_ORG_NAME` is the old name of the org that is to be renamed, `NEW_ORG_NAME` is the new name of the org that is to be renamed, and `-r, --region REGION` is the region name.
 
    ```bash
    ibmcloud account org-rename OLD_ORG_NAME NEW_ORG_NAME [-r, --region REGION]
@@ -133,7 +133,7 @@ curl "https://api.example.org/v3/organizations/[guid]" \
 ```
 {: codeblock}
 {: curl}
-    
+
 ### Deleting spaces
 {: #delete-space-api}
 {: api}
@@ -147,4 +147,3 @@ curl "https://api.example.org/v3/spaces/[guid]" \
 ```
 {: codeblock}
 {: curl}
-    

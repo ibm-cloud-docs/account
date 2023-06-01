@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2023
-lastupdated: "2023-01-25"
+lastupdated: "2023-06-01"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources, administrator, administrator role
 
@@ -18,13 +18,13 @@ subcollection: account
 After you set up your {{site.data.keyword.cloud}} account, you're ready to start planning how you want to organize resources and assign access to identities in your account. These best practices provide you with the basic building blocks to enable successful and secure app development in {{site.data.keyword.cloud_notm}}.
 {: shortdesc}
 
-The following best practices focus on resources that are enabled for {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) and that are assigned to resource groups. Cloud Foundry and classic infrastructure services aren't IAM-enabled, which means that they can't be assigned to resource groups.
+The following best practices focus on resources that are enabled for {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) and that are assigned to resource groups. Classic infrastructure services aren't IAM-enabled, which means that they can't be assigned to resource groups.
 {: note}
 
 ## What makes a good resource group strategy?
 {: #resource-group-strategy}
 
-Use resource groups to organize your account [resources](#x2004267){: term} for access control and billing purposes. If you're familiar with using Cloud Foundry spaces, think of organizing resources in resource groups similar to the way you organize resources in spaces.
+Use resource groups to organize your account [resources](#x2004267){: term} for access control and billing purposes.
 
 Administrators can have better control of resource usage at the project environment level if one resource group per project environment is used. For example, a typical project has development, test, and production environments. A project that is named `CustApp` might have the following resource groups:
 
@@ -32,7 +32,7 @@ Administrators can have better control of resource usage at the project environm
 * CustApp-Test
 * CustApp-Prod
 
-In this scenario, you might assign a developer fairly wide-ranging access to the development resource group and much tighter or no access to the production resource group.
+In this scenario, you might assign a developer wide-ranging access to the development resource group and much tighter or no access to the production resource group.
 
 ### Organizing resources in resource groups
 {: #setting-up-rgs}
@@ -60,14 +60,14 @@ Access groups
 Trusted profiles
 :   If your organization has an enterprise directory, trusted profiles can reduce the time and effort to manage access. It simplifies the login process to your {{site.data.keyword.cloud_notm}} account for federated users in your enterprise. You can automatically grant federated users or compute resources access to your account by creating trusted profiles. For federated users, add conditions based on SAML attributes to define which federated users can apply a profile. For compute resources, specify specific resources, or add conditions based on resource attributes to define which compute resources can apply a profile. For both entity types, the level of access that is granted is determined by the access policies that are specified within each trusted profile, or the access groups that the trusted profile is a member of. However, trusted profiles don't require federated users to be invited to an account, and only users that are federated by an external identity provider (IdP) can apply a trusted profile.
 
-When you're a member of multiple access groups, all policies apply at once when you access an account. As a federated user, you might have the option to apply different trusted profiles, but you select just one profile to apply when you log in. For example, if you want to complete developer-related tasks, select the `Developer` profile when logging in. If you want to complete an administrator-related task, you select the`Admin` profile that has privileged permissions. This way, you reduce the risk of taking privileged actions by mistake.
+When you're a member of multiple access groups, all policies apply at once when you access an account. As a federated user, you might have the option to apply different trusted profiles, but you select just one profile to apply when you log in. For example, if you want to complete developer-related tasks, select the `Developer` profile when you log in. If you want to complete an administrator-related task, you select the`Admin` profile that has privileged permissions. This way, you reduce the risk of taking privileged actions by mistake.
 {: tip}
 
 A policy consists of a subject, target, and role. The subject in this case is the access group or trusted profile. The target is what you want the subject to access, such as a set of resources in a resource group, a service instance, all services in the account, or all instances of a service. The role defines the level of access that is granted.
 
 The following diagram shows how an access policy works:
 
-![What is an access policy](images/Access-Policy.svg "What is an Access Policy"){: caption="Figure 1. What is an access policy" caption-side="bottom"}
+![What is an access policy](images/Access-Policy.svg "What is an access policy"){: caption="Figure 1. What is an Access Policy" caption-side="bottom"}
 
 The most commonly used roles are viewer, editor, operator, and administrator platform roles.
 
@@ -95,7 +95,7 @@ There is a [limit](/docs/account?topic=account-known-issues#iam_limits) on the t
    * **All Account Management services**: Platform services, such as billing and usage, license and entitlements, enterprises, and more. For more information, see [Assigning access to account management services](https://cloud.ibm.com/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles).
    * **All IAM Account Management services**: A subset of account management services that includes the IAM platform services IAM Identity, IAM Access Management, IAM Users, IAM Groups, and future IAM services.
 
-Removing access for inactive identities and inactive policies can reduce the risk of unauthorized access to your {{site.data.keyword.cloud_notm}} resources and help you manage access more efficiently. For more information, see [Identifying inactive identities](/docs/account?topic=account-id-inactive-identities) and [Managing inactive policies](/account?topic=account-iam-audit-policies&interface=ui#iam-audit-policies-list).
+Removing access for inactive identities and inactive policies can reduce the risk of unauthorized access to your {{site.data.keyword.cloud_notm}} resources and help you manage access more efficiently. For more information, see [Identifying inactive identities](/docs/account?topic=account-id-inactive-identities) and [Auditing access policies](/docs/account?topic=account-iam-audit-policies).
 {: tip}
 
 ## What makes a good access group strategy?
@@ -116,7 +116,7 @@ You can assign administrator access to everything in an account by creating an a
 
 The following diagram shows how access is assigned to resource groups:
 
-![Assigning Access to Resource Groups](images/Access-and-Resource-Groups.svg "Assigning Access to Resource Groups"){: caption="Figure 2. Assigning access to resource groups" caption-side="bottom"}
+![Assigning access to resource groups](images/Access-and-Resource-Groups.svg "Assigning access to resource groups"){: caption="Figure 2. Assigning access to resource groups" caption-side="bottom"}
 
 For more best practices from IBM Garage for Cloud, see [Managing access to resources in {{site.data.keyword.cloud_notm}}](https://develop.cloudnativetoolkit.dev/resources/ibm-cloud/access-control/){: external}.
 
@@ -150,7 +150,7 @@ A trusted profile, like other IAM identities, can be granted access by using a p
 
 The following diagram shows how access is assigned to trusted profiles:
 
-![Assigning Access to Trusted Profiles](images/trusted-profiles.svg "Assigning Access to Trusted Profiles"){: caption="Figure 3. Assigning access to trusted profiles" caption-side="bottom"}
+![Assigning access to trusted profiles](images/trusted-profiles.svg "Assigning access to trusted profiles"){: caption="Figure 3. Assigning access to trusted profiles" caption-side="bottom"}
 
 You can select only one trusted entity type when you first create a trusted profile. You can [update trusted profiles](/docs/account?topic=account-trusted-profile-update) at any time to add trust relationships with compute resources.
 

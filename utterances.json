@@ -48,17 +48,6 @@
     "Error when creating my account",
     "account support"
   ],
-  "cloud-foundry": [
-    "what is Cloud Foundry",
-    "what does Cloud Foundry do",
-    "what is cloud foundry for",
-    "cloud foundry access",
-    "access to cloud foundry",
-    "Is Cloud Foundry a platform",
-    "learn about Cloud Foundry",
-    "Where is Cloud Foundry orgs",
-    "Tell me about Cloud Foundry"
-  ],
   "move-org-diff-account": [
     "moving an org to another account",
     "changing an org to another account",
@@ -1391,17 +1380,6 @@
     "enabling MFA Multi-Factor Authentication",
     "want MFA for my account",
     "requiring MFA for these accounts"
-  ],
-  "groups-organizations": [
-    "difference between a resource group and Cloud Foundry orgs and spaces",
-    "differences between resource groups and orgs and spaces",
-    "are resource groups and orgs different",
-    "resource groups and orgs the same",
-    "is a resource group and an org different",
-    "is a resource group and a CF org different",
-    "are resource groups and orgs and spaces the same",
-    "are resource groups and CF orgs and spaces the same",
-    "are spaces and orgs different to resource groups"
   ],
   "account-administrator": [
     "delegate account administrator capabilities",

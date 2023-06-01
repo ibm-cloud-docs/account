@@ -18,7 +18,7 @@ subcollection: account
 As an {{site.data.keyword.Bluemix}} account owner, you can add Cloud Foundry orgs and spaces to your account. Only account owners can create new Cloud Found orgs. If you're an organization manager, you can manage the orgs in the account after they are created.
 {: shortdesc}
 
-IBM Cloud Foundry Public is deprecated. For more information, see the [Deprecation of IBM Cloud Foundry](/docs/cloud-foundry-public?topic=cloud-foundry-public-deprecation).
+IBM Cloud Foundry Public is deprecated with an end-of-support date of 1 June 2023. For more information, see [Deprecation of IBM Cloud Foundry](/docs/cloud-foundry-public?topic=cloud-foundry-public-deprecation).
 {: deprecated}
 
 
@@ -47,9 +47,9 @@ Quota
 In a Subscription account, the quota is a user-defined limit that initiates spending notifications.
 {: tip}
 
-## Managing Cloud Foundry orgs and spaces 
+## Managing Cloud Foundry orgs and spaces
 {: #manage-orgs-spaces}
-{: ui} 
+{: ui}
 
 You can manage Cloud Foundry orgs and spaces by going to **Manage** > **Account** in the {{site.data.keyword.cloud_notm}} console, and selecting **Account resources** > **Cloud Foundry orgs**.
 
@@ -110,7 +110,7 @@ You can create an organization by using the {{site.data.keyword.Bluemix}} Comman
    ```
    {: codeblock}
 
-2. Create an organization by running the [`ibmcloud account org-create`](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_org_create) command, where `ORG_NAME` is the name of the organization to be created, and `-r, --region REGION` is the region name. 
+2. Create an organization by running the [`ibmcloud account org-create`](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_org_create) command, where `ORG_NAME` is the name of the organization to be created, and `-r, --region REGION` is the region name.
 
    ```bash
    ibmcloud account org-create ORG_NAME [-r, --region REGION]
@@ -127,9 +127,9 @@ You can create an organization by using the {{site.data.keyword.Bluemix}} Comman
 
    If `REGION` is not specified, the name is default to current region.
 
-This operation can be run only by the account owner. 
+This operation can be run only by the account owner.
 {: note}
-     
+
 ## Creating spaces by using the CLI
 {: #create-space-cli}
 {: cli}
@@ -143,13 +143,13 @@ You can also create spaces by using the {{site.data.keyword.Bluemix}} CLI.
    ```
    {: codeblock}
 
-2. Create an organization by running the [`ibmcloud account space-create`](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_space_create) command, where `-o` is the organization, and `-q` is the quota to assign to the newly created space. 
+2. Create an organization by running the [`ibmcloud account space-create`](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_space_create) command, where `-o` is the organization, and `-q` is the quota to assign to the newly created space.
 
    ```bash
    ibmcloud account space-create SPACE [-o ORG] [-q SPACE_QUOTA]
    ```
    {: codeblock}
-   
+
 ## Creating orgs by using the Cloud Foundry API
 {: #create-org-api}
 {: api}

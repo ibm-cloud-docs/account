@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2015, 2021
+  years: 2015, 2023
 
-lastupdated: "2021-11-22"
+lastupdated: "2023-06-01"
 
 keywords: federated ID, password, enterprise SSO, single sign-on ID, API key login, one-time passcode login, temporary credential, to login, logging in, trusted profiles
 
@@ -20,7 +20,7 @@ subcollection: account
 As a federated user that uses a corporate or enterprise single sign-on ID, you can log in to {{site.data.keyword.Bluemix}} from the console by using a federated ID and password. You can also log in from the command-line interface (CLI) by using a one-time passcode or an API key.
 {: shortdesc}
 
-By using federated IDs, you don't need to set up new login credentials specific to {{site.data.keyword.cloud_notm}}, for example, by using IBMid. Instead, users in your organization can easily log in to {{site.data.keyword.cloud_notm}} with their organization credentials through your identity provider (IdP). 
+By using federated IDs, you don't need to set up new login credentials specific to {{site.data.keyword.cloud_notm}}, for example, by using IBMid. Instead, users in your organization can easily log in to {{site.data.keyword.cloud_notm}} with their organization credentials through your identity provider (IdP).
 
 When a user logs in, the user gets an IAM token, which is a temporary credential that expires after 1 hour. After that time, the token must be refreshed to secure the connection and to continue accessing account resources to which they are assigned access. For more information about using federated IDs, see [Setting up your {{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-account-getting-started).
 
@@ -28,12 +28,12 @@ When a user logs in, the user gets an IAM token, which is a temporary credential
 {: #login_console}
 {: ui}
 
-Use the following steps to log in to the {{site.data.keyword.cloud_notm}} console: 
+Use the following steps to log in to the {{site.data.keyword.cloud_notm}} console:
 
 1. Go to the [{{site.data.keyword.cloud_notm}} login page](/login).
-2. Enter your ID, and click **Continue**. 
+2. Enter your ID, and click **Continue**.
 3. Enter your password.
-	
+
 After you log in, you are directed to the {{site.data.keyword.cloud_notm}} dashboard, which provides various development, account management, and infrastructure widgets.
 
 ## Using trusted profiles to log in to the console
@@ -48,7 +48,7 @@ Account administrators use trusted profiles to manage specific access for accoun
 If you are an IMBid user, complete the following steps to log in to the {{site.data.keyword.cloud_notm}} console by using a trusted profile:
 
 1. Go to the [{{site.data.keyword.cloud_notm}} login page](/login).
-2. Enter your IBMid, or if you are using single sign-on (SSO), enter your company email address, and click **Continue**. 
+2. Enter your IBMid, or if you are using single sign-on (SSO), enter your company email address, and click **Continue**.
 3. Enter your password.
 4. Click **Select** to choose the trusted profile that your account administrator created for you.
 
@@ -62,14 +62,14 @@ If you are an {{site.data.keyword.appid_short}} user, complete the following ste
     If you don't know the `<DefaultIdPURL>`, ask your administrator. They have access to it from the Identity provider page. For more information, see [Logging in with external identity provider credentials](/docs/account?topic=account-idp-integration#log-in-external-idp)
     {: tip}
 
-2. Enter your credentials and log in. 
+2. Enter your credentials and log in.
 3. Click **Select** to choose the trusted profile that your account administrator created for you.
 
 ## Using the CLI to log in
 {: #usingthecli_login}
-{: cli} 
+{: cli}
 
-You choose to use either a one-time passcode or an API key to log in by using the CLI. You can find details based on whether you're using the {{site.data.keyword.cloud_notm}}, Cloud Foundry, or Red Hat OpenShift CLI in the following sections.
+You choose to use either a one-time passcode or an API key to log in by using the CLI. You can find details based on whether you're using the {{site.data.keyword.cloud_notm}} or Red Hat OpenShift CLI in the following sections.
 
 
 ### Using a one-time passcode to log in with the CLI
@@ -103,40 +103,15 @@ You can use two different methods to log in with the CLI. For the first method, 
 
 If you're already logged in to the console, you can use the following steps:
 
-1. In the {{site.data.keyword.Bluemix_notm}} console, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Log in to CLI and API**. 
-2. Copy the information for the {{site.data.keyword.Bluemix_notm}} CLI into the CLI. 
-
-#### From the Cloud Foundry CLI
-{: #login_cf_cli}
-
-You can use two different methods to log in with the Cloud Foundry CLI. For the first method, use the following steps:
-
-1. Specify the `--sso` option with the `cf login` command.
-2. Follow the URL in the prompt to get the one-time passcode.
-3. Copy and paste the passcode value in the CLI as your input.
-
-   ```bash
-   cf login -a https://api.us-south.cf.cloud.ibm.com --sso
-
-   API endpoint: https://api.us-south.cf.cloud.ibm.com
-
-   One Time Code (Get one at https://login.us-south.cf.cloud.ibm.com/UAALoginServerWAR/passcode)>
-   Authenticating...
-   OK
-   ```
-   {: pre}
-
-If you're already logged in to the console, you can use the following steps:
-
-1. In the {{site.data.keyword.cloud_notm}} console, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Log in to CLI and API**. 
-2. Copy the information for the Cloud Foundry CLI and paste into the CLI. 
+1. In the {{site.data.keyword.Bluemix_notm}} console, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Log in to CLI and API**.
+2. Copy the information for the {{site.data.keyword.Bluemix_notm}} CLI into the CLI.
 
 #### From the Red Hat OpenShift CLI
 {: #openshift_cli}
 
 You can log in with a one-time passcode by using the following steps:
 
-1. Log in to the console, and from the console, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Log in to CLI and API**. 
+1. Log in to the console, and from the console, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Log in to CLI and API**.
 2. Copy the information for the Red Hat OpenShift CLI and paste into the CLI.
 
 ### Using an API key in the CLI for authentication
@@ -173,26 +148,11 @@ The required API key is the {{site.data.keyword.Bluemix_notm}} API key that is u
 For Windows 10 PowerShell, you want to use `'@key_file_name'` with single quotation marks around the key file name.
 {: tip}
 
-To log in by using the Cloud Foundry CLI, specify `apikey` as the username and the API key string as the password:
-
-   ```bash
-   cf login -a https://api.us-south.cf.cloud.ibm.com
-
-   API endpoint: https://api.us-south.cf.cloud.ibm.com
-
-   Email> apikey
-
-   Password>
-   Authenticating...
-   OK
-   ```
-   {: pre}
-
 ## Using an API key to get an IAM token for authentication
 {: #using_apikey}
-{: api} 
+{: api}
 
-You can use an API key to get an IAM token to access your {{site.data.keyword.Bluemix_notm}} services. For example, you can run the following curl command to use an API key that is named `MY_APIKEY` to get an IAM token: 
+You can use an API key to get an IAM token to access your {{site.data.keyword.Bluemix_notm}} services. For example, you can run the following curl command to use an API key that is named `MY_APIKEY` to get an IAM token:
 
    ```bash
    curl -X POST 'https://iam.cloud.ibm.com/identity/token' -H 'Content-Type: application/x-www-form-urlencoded' -d
@@ -200,4 +160,4 @@ You can use an API key to get an IAM token to access your {{site.data.keyword.Bl
    ```
    {: pre}
 
-For more information, see [Creating an IAM access token for a user or service ID by using an API key](https://cloud.ibm.com/apidocs/iam-identity-token-api#gettoken-apikey). 
+For more information, see [Creating an IAM access token for a user or service ID by using an API key](https://cloud.ibm.com/apidocs/iam-identity-token-api#gettoken-apikey).

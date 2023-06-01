@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2023
 
-lastupdated: "2023-02-21"
+lastupdated: "2023-06-01"
 
 keywords: remove user, delete user
 
@@ -23,8 +23,8 @@ When you remove a user from an account, the user can no longer log in to the con
 
 Only account owners and users with the correct access can remove others. If you use a service ID to authenticate, you can't remove users from the account. The following access is required for removing users from an account:
 
-* An Identity and access management (IAM) policy for the User management account management service with the Administrator role assigned and be the Cloud Foundry org manager if the user belongs to a Cloud Foundry org.
-* If you have classic infrastructure in your account, a user must have an IAM policy for the User management account management service with the Administrator role assigned, be the Cloud Foundry org manager if the user belongs to a Cloud Foundry org, and be an ancestor of the user in the classic infrastructure user hierarchy with the Manage user classic infrastructure permission assigned.
+* An Identity and access management (IAM) policy for the User management account management service with the Administrator role assigned.
+* If you have classic infrastructure in your account, a user must have an IAM policy for the User management account management service with the Administrator role assigned and be an ancestor of the user in the classic infrastructure user hierarchy with the Manage user classic infrastructure permission assigned.
 
 As an alternative to removing a user from your account, you can assign them an access policy with a temporary time-based condition. This way, the user can log in to the console and view the account in their account list, but can't access resources in the account before the policy begins or after the policy expires. For more information, see [Creating a temporary time-based condition](/docs/account?topic=account-iam-time-based&interface=api#iam-time-based-temp-api).
 
@@ -42,7 +42,6 @@ Any resources that are created by the user remain in the account, but any {{site
 If you get an error message that states a classic infrastructure user can't be removed, make sure that any descendants in the user hierarchy for that user are [assigned a new parent](/docs/account?topic=account-iam-user-setting#update-parent), [disabled in the account](/docs/account?topic=account-status), or deleted. Then, you can try again.
 {: tip}
 
-
 ## Removing a user from an account by using the CLI
 {: #remove-user-acount-cli}
 {: cli}
@@ -54,7 +53,8 @@ ibmcloud account user-remove USER_ID [-c ACCOUNT_ID] [-f, --force]
 ```
 {: codeblock}
 
-For command options, see [Managing accounts, users, and Cloud Foundry orgs](https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_user_remove) CLI commands.
+For command options, see [Managing accounts, users, and Cloud Foundry orgs](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_user_remove) CLI commands.
+
 
 ## Removing a user from an account by using the API
 {: #remove-user-acount-api}

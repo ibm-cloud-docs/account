@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2023
-lastupdated: "2023-04-18"
+lastupdated: "2023-06-01"
 
 keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, commitment, commit model, savings plan, enterprise savings plan
 
@@ -30,7 +30,6 @@ The following table provides a comparison of Trial, Pay-As-You-Go, and Subscript
 | Access to [Lite service plans](/catalog/?search=label:lite){: external} | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | Access to all Free plans           | ![Feature available](../icons/icon_enabled.svg) |   ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | Access to the full {{site.data.keyword.Bluemix_notm}} catalog |        | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
-| Access to multiple Cloud Foundry regions | ![Feature available](../icons/icon_enabled.svg) |  ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | Fit for production use cases      |        |     ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg)|
 | Available for enterprise account hierarchy        |        |        | ![Feature available](../icons/icon_enabled.svg) |
 | Invoiced on monthly consumption       |        |     ![Feature available](../icons/icon_enabled.svg) |                     |

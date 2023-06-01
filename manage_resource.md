@@ -1,12 +1,9 @@
 ---
 
-
-
 copyright:
 
   years: 2019, 2023
-
-lastupdated: "2023-01-18"
+lastupdated: "2023-06-01"
 
 keywords: resource, account resources, create resource, access to create resources
 
@@ -16,16 +13,13 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-
 # Creating resources
 {: #manage_resource}
 
 A [resource](x2004267){: term} is anything that you can create from the catalog that is managed by and contained within a resource group. You can create and manage resources by going to your [resource list](https://cloud.ibm.com/resources) in the {{site.data.keyword.cloud}} console or by using the command-line interface (CLI).
 {: shortdesc}
 
-Services that are managed by using {{site.data.keyword.Bluemix_notm}} [Identity and Access Management (IAM) access control](/docs/account?topic=account-userroles) and belong to a resource group have several benefits. Some of the benefits include the ability to connect to apps and services in any Cloud Foundry space, which means you can connect apps and services from different locations. Because resource groups are not scoped by location, you can create apps and services from different locations into the same resource group. You can also use fine-grained access control down to an individual instance within a resource group.
-
-Not all services support the use of resource groups and IAM currently. All service instances that are added to Cloud Foundry orgs and spaces when they're created from the catalog are distinctly different from IAM-enabled services. These services are called Cloud Foundry services. Cloud Foundry services have no connection to resource groups and use [Cloud Foundry roles for access management](/docs/account?topic=account-mngcf). As services enable support for IAM and resource groups, you're notified about the ability to [migrate existing Cloud Foundry instances to a resource group](/docs/account?topic=account-migrate).
+Services that are managed by using {{site.data.keyword.Bluemix_notm}} [Identity and Access Management (IAM) access control](/docs/account?topic=account-userroles) and belong to a resource group have several benefits. Because resource groups are not scoped by location, you can create apps and services from different locations in the same resource group. You can also use fine-grained access control down to an individual instance within a resource group.
 
 ## Required access for creating resources
 {: #creating-resources}
@@ -51,9 +45,7 @@ After you create the resource, it is displayed in your list of resources on the 
 {: #create-resource-cli}
 {: cli}
 
-You can create a resource by using the {{site.data.keyword.Bluemix}} Command Line Interface. For more information, see [Working with resources and resource groups](/docs/cli?topic=cli-ibmcloud_commands_resource).
-
-To install software, see [Installing software by using the CLI](#install-software-cli).
+You can create a resource by using the {{site.data.keyword.Bluemix}} Command Line Interface. For detailed information about working with resources, see [Working with resources and resource groups](/docs/cli?topic=cli-ibmcloud_commands_resource).
 
 1. Log in, and select the account.
 
@@ -81,42 +73,12 @@ For example, the following command creates a service instance that is named `my-
    ```
    {: codeblock}
 
-## Installing software by using the CLI
-{: #install-software-cli}
-{: cli}
-
-You can install software by using the {{site.data.keyword.cloud_notm}} Command Line Interface. For more information, see [Working with resources and resource groups](/docs/cli?topic=cli-ibmcloud_commands_resource).
-
-1. Log in, and select the account.
-
-   ```bash
-   ibmcloud login
-   ```
-   {: codeblock}
-
-
-2. Find the version locator value of the software by running the following command and searching for the version that you would like to install.
-
-   ```bash
-   ibmcloud catalog offering list [--catalog <NAME or ID>]
-   ```
-   {: codeblock}
-
-3. Create an organization by running the [`ibmcloud catalog install`](/docs/cli?topic=cli-manage-catalogs-plugin#install-software-version) command.
-
-   In this command, `CLUSTER` is the cluster that you would like to link your software to, `NAMESPACE` is your Kubernetes namespace, and `LOCATOR` is the version of the software that you found in the previous step.`VALUES` are any values that you would like to override by using a JSON file, txt file, or in line JSON. Optionally, you can include `[--workspace-name NAME]` and `[--workspace-tags TAGS]`.
-
-
-   ```bash
-   ibmcloud catalog install [--cluster CLUSTER] [--namespace NAMESPACE] [--override-values VALUES] [--version-locator LOCATOR] [--timeout TIMEOUT] [--wait WAIT]
-   ```
-   {: codeblock}
 
 ## Creating new resource instances by using the API
 {: #create-resource-instance-api}
 {: api}
 
-You can programmatically create a new resource instance by calling the Resource Controller API as shown in the following sample request. For more information, see [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#create-resource-instance){: external}.
+You can programmatically create a new resource instance by calling the Resource Controller API as shown in the following sample request. For detailed information about the API, see [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#create-resource-instance){: external}.
 
 ```bash
 curl -X POST \
@@ -167,8 +129,8 @@ resourceControllerService.createResourceInstance(params)
   })
   .catch(err => {
     console.warn(err)
-  });
-```
+   });
+   ```
 {: codeblock}
 {: javascript}
 
@@ -204,12 +166,6 @@ fmt.Printf("\nCreateResourceInstance() response:\n%s\n", string(b))
 ```
 {: codeblock}
 {: go}
-
-## Installing software by using the API
-{: #install-software-api}
-{: api}
-
-You can install software only through the console or CLI. To see the steps, switch to the UI or CLI instructions.
 
 ## Creating new resource instances by using Terraform
 {: #create-resource-instance-terraform}

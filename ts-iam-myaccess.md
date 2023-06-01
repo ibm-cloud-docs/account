@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-06-13"
+  years: 2020, 2023
+lastupdated: "2023-06-01"
 
 keywords: troubleshoot my access, what do I have acces to
 
@@ -23,10 +23,10 @@ If you can't complete a specific task within an {{site.data.keyword.Bluemix}} ac
 
 If you don't have access to complete a particular task, such as creating a service instance and adding it to a resource group or inviting other users to the account, you might need to check what access you are assigned.
 
-You're not sure what level of access you're assigned to complete actions in an account of which you are a member. 
+You're not sure what level of access you're assigned to complete actions in an account of which you are a member.
 {: tsSymptoms}
-   
-You might not be assigned the correct access. 
+
+You might not be assigned the correct access.
 {: tsCauses}
 
 To check what you have access to and the level of access, complete the following steps. If you need to request access, contact the account owner.
@@ -35,6 +35,5 @@ Go to **Manage** &gt; **Access (IAM)** in the {{site.data.keyword.cloud_notm}} c
 {: tsResolve}
 
 
-* To view IAM access policies that are assigned to you, select **Access** and view the Access policies table. 
+* To view IAM access policies that are assigned to you, select **Access** and view the Access policies table.
 * To determine what access you have through the access groups you are assigned, select **Access** and view the Access groups table. Check the access policies for each of the access groups.
-* To view your Cloud Foundry access for all orgs and spaces, select **Cloud Foundry**.
