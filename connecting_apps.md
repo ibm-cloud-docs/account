@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2021
-lastupdated: "2021-09-22"
+  years: 2017, 2023
+lastupdated: "2023-06-01"
 
 keywords: create connection, connect a service, bind, alias
 
@@ -19,6 +19,7 @@ You can connect a service to an existing or new {{site.data.keyword.Bluemix}} ap
 {: shortdesc}
 
 However, when you connect a service instance that is managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) to an application, an alias of the service that is managed by IAM is automatically created in the corresponding space with the connection information that you specified. This alias is represented as a service instance of your IAM-managed service.
+{: shortdesc}
 
 ## What is an alias?
 {: #what_is_alias}
@@ -59,7 +60,7 @@ To connect your IAM-managed service instance to an application:
 {: #creating_alias-api}
 {: api}
 
-To create a new alias and connect your IAM-managed service instance to an application, call the [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#create-resource-alias){: external} as shown in the following example: 
+To create a new alias and connect your IAM-managed service instance to an application, call the [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#create-resource-alias){: external} as shown in the following example:
 
 ```bash
 curl -X POST https://resource-controller.cloud.ibm.com/v2/resource_aliases -H 'Authorization: Bearer <IAM_TOKEN>' -H 'Content-Type: application/json' -d '{
@@ -149,12 +150,12 @@ After you create a connection between an IAM-managed service and an app, the ali
 {: #view_alias-api}
 {: api}
 
-After you create a connection between an IAM-managed service and an app, you can view the alias by getting a list of all resource aliases for an instance or you can retrieve a resource alias by ID. 
+After you create a connection between an IAM-managed service and an app, you can view the alias by getting a list of all resource aliases for an instance or you can retrieve a resource alias by ID.
 
 ### Get a list of all resource aliases for an instance
 {: #list-rsc-alias-instance-api}
 
-To get a list of all resource aliases for the instance, call the [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=node#list-resource-aliases-for-instance){: external} as shown in the following example: 
+To get a list of all resource aliases for the instance, call the [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=node#list-resource-aliases-for-instance){: external} as shown in the following example:
 
 ```bash
 curl -X GET https://resource-controller.cloud.ibm.com/v2/resource_instances/8d7af921-b136-4078-9666-081bd8470d94/resource_aliases -H 'Authorization: Bearer <IAM_TOKEN>'
@@ -297,7 +298,7 @@ The easiest way to delete the alias is to delete the IAM-managed service instanc
 {: #delete_alias-api}
 {: api}
 
-To delete an alias directly, call the [Resource Contoller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#delete-resource-alias){: external} as shown in the following example: 
+To delete an alias directly, call the [Resource Contoller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#delete-resource-alias){: external} as shown in the following example:
 
 ```bash
 curl -X DELETE https://resource-controller.cloud.ibm.com/v2/resource_aliases/267bf377-7fa2-43f6-94ec-09103a8e89d4 -H 'Authorization: Bearer <IAM_TOKEN>' \
@@ -356,8 +357,3 @@ fmt.Printf("\nDeleteResourceAlias() response status code: %d\n", response.Status
 ```
 {: codeblock}
 {: go}
-
-## Creating a connection between multiple services
-{: #multiple_services}
-
-For more information, see [Connecting services to a Cloud Foundry app](/docs/account?topic=account-s2s_binding).

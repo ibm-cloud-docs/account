@@ -1,15 +1,15 @@
 ---
 
 copyright:
-  years: 2015, 2022
-lastupdated: "2022-06-03"
+  years: 2015, 2023
+lastupdated: "2023-06-01"
 
 keywords: service authorization, service instance's access, connect service to app
 
 subcollection: account
 
 ---
- 
+
 {{site.data.keyword.attribute-definition-list}}
 
 # Connecting services to a Cloud Foundry app
@@ -18,7 +18,7 @@ subcollection: account
 To use a service in a Cloud Foundry app, you must create a connection or bind that service to the app.
 {: shortdesc}
 
-IBM Cloud Foundry Public is deprecated. For more information, see the [Deprecation of IBM Cloud Foundry](/docs/cloud-foundry-public?topic=cloud-foundry-public-deprecation).
+IBM Cloud Foundry Public is deprecated with an end-of-support date of 1 June 2023. For more information, see [Deprecation of IBM Cloud Foundry](/docs/cloud-foundry-public?topic=cloud-foundry-public-deprecation).
 {: deprecated}
 
 ## Connect a service to your Cloud Foundry app in the console
@@ -47,10 +47,10 @@ If you want to restrict an app's access to the service instance, click **Connect
 {: #s2s_binding-api}
 {: api}
 
-To connect a service to your Cloud Foundry app, call the [Cloud Foundy API](http://v3-apidocs.cloudfoundry.org/version/3.99.0/index.html#manifests){: external} as shown in the following steps. 
+To connect a service to your Cloud Foundry app, call the [Cloud Foundy API](http://v3-apidocs.cloudfoundry.org/version/3.99.0/index.html#manifests){: external} as shown in the following steps.
 
 1. Open the manifest YAML file for for applying bulk configurations to apps and their underlying processes.
-1. Create a new service bindings between the app and a service instance as shown in the following manifest example. In the service-level configuration, `name` is the name of the service instance to be bound to. `binding_name` is the name of the service binding to be created. `parameters` is a map of arbitrary key/value pairs to send to the service broker during binding. 
+1. Create a new service bindings between the app and a service instance as shown in the following manifest example. In the service-level configuration, `name` is the name of the service instance to be bound to. `binding_name` is the name of the service binding to be created. `parameters` is a map of arbitrary key/value pairs to send to the service broker during binding.
 
    ```bash
    ---

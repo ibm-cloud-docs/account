@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2022
-lastupdated: "2022-09-12"
+  years: 2018, 2023
+lastupdated: "2023-06-01"
 
 keywords: tagging, enabling others to tag, tagging permissions
 
@@ -16,7 +16,7 @@ subcollection: account
 # Granting users access to tag resources and service IDs
 {: #access}
 
-As the account owner, you might want to delegate some of the responsibility of tagging resources and service IDs. For users to attach tags to a resource or service ID, you must grant them the appropriate access. Use {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) access policies to grant users access to resources in a resource group. Use Cloud Foundry roles to grant users access to resources in a Cloud Foundry org and space.
+As the account owner, you might want to delegate some of the responsibility of tagging resources and service IDs. For users to attach tags to a resource or service ID, you must grant them the appropriate access. Use {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) access policies to grant users access to resources in a resource group.
 {: shortdesc}
 
 Tags are visible account-wide and can be replicated across geographic regions. Since tags are not regulated information, avoid creating tags that use personal information, such as your name, address, phone number, email address, or other identifying or proprietary information.
@@ -28,10 +28,9 @@ Tags are visible account-wide and can be replicated across geographic regions. S
 Any user in an account can view tags. When a resource is tagged, all users that have `read` access to the resource can view the tag. To attach or detach a tag on a resource or service ID, certain access roles or permissions are needed depending on the resource type and tag type. See the following table to understand what role is needed for each resource type.
 
 
-| Resource type | Role |
+| Resource Type | Role |
 |--------|---------------|
 | IAM-enabled | To attach or detach user tags, editor or administrator on the resource  \n To attach or detach access management tags, administrator on the resource  \n To view the assigned policies on the resource that has an access management tag that is attached, viewer role |
-| Cloud Foundry | Developer on the space that the resource belongs to  |
 | Bare metal on classic infrastructure| View hardware details and access to a specific set of services or all bare metal servers |
 | Dedicated Hosts on classic infrastructure | View virtual dedicated host details and access to a specific set of services or all dedicated hosts |
 | Virtual Server on classic infrastructure | View virtual server details and access to a specific set of services or all virtual servers |
@@ -265,77 +264,6 @@ subjectAttribute := &iampolicymanagementv1.SubjectAttribute{
 ```
 {: codeblock}
 {: go}
-
-## Granting users access to tag Cloud Foundry resources
-{: #cf_tag_access}
-{: ui}
-
-Complete the following steps to assign the developer space role for a user to tag Cloud Foundry resources:
-
-1. Click **Manage > Access (IAM)**, and select **Users**.
-2. Click the user's name from the table.
-3. Click **Cloud Foundry access** > **Assign organization**.
-4. Select the organization that contains the service instance you want to provide the user access to.
-5. Select a specific location.
-6. Select **Developer** as the space role.
-7. Click **Save role**.
-
-## Granting users access to tag Cloud Foundry resources by using the API
-{: #cf_tag_access-api}
-{: api}
-
-To assign the developer space role for a user to tag Cloud Foundry resources, call the [Cloud Controller API](http://v3-apidocs.cloudfoundry.org/version/3.97.0/index.html#create-a-role){: external} as shown in the following examples.
-
-1. Add the target user to the organization if they are not in it already.
-   ```bash
-   curl “https://api.example.org/v3/roles”
-    -X POST
-    -H “Authorization: bearer <token>”
-    -H “Content-type: application/json”
-    -d ‘{
-    “type”: “organization_user”,
-    “relationships”: {
-      “user”: {
-      “data”: {
-        “guid”: “<user_guid>”
-      }
-      },
-      “organization”: {
-      “data”: {
-        “guid”: “<org_guid>”
-      }
-      }
-    }’
-   ```
-   {: codeblock}
-   {: curl}
-
-1. Assign the target user the Space Developer role in the organization.
-
-   ```bash
-   curl “https://api.example.org/v3/roles”
-    -X POST
-    -H “Authorization: bearer <token>”
-    -H “Content-type: application/json”
-    -d ‘{
-    “type”: “space_developer”,
-    “relationships”: {
-      “user”: {
-      “data”: {
-        “guid”: “<user_guid>”
-      }
-      },
-      “space”: {
-      “data”: {
-        “guid”: “<space_guid>”
-      }
-      }
-    }
-    }’
-   ```
-   {: codeblock}
-   {: curl}
-
 
 ## Granting users access to tag classic infrastructure resources
 {: #classic-infra}

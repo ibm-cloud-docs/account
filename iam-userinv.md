@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2023
 
-lastupdated: "2023-01-20"
+lastupdated: "2023-06-01"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -55,11 +55,10 @@ To manage access for existing users, simply click on the user’s name and you w
 To invite users and manage outstanding invitations, you must have at least one of the following types of access. Only users can invite others. If you use a service ID to authenticate, you can't invite new users to the account.
 
 * Account owner
-* Cloud Foundry organization manager
 * An IAM access policy with the Editor role or higher on the user management account management service
 * The Manage Users classic infrastructure permission to add users
 
-Depending on your access level, you can invite new users and assign all or just some types of access. For example, if you're not the account owner, but you're a Cloud Foundry organization manager, you can invite users and assign only Cloud Foundry access.
+Depending on your access level, you can invite new users and assign all or just some types of access.
 {: note}
 
 Before you can invite users by using Terraform, make sure that you have completed the following:
@@ -68,7 +67,6 @@ Before you can invite users by using Terraform, make sure that you have complete
 - Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
 - Create a Terraform configuration file that is named `main.tf`. In this file, you define resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
 {: terraform}
-
 
 ## Inviting users in the console
 {: #invitations}
@@ -88,8 +86,7 @@ To invite users, complete the following steps:
 1. Add one or more of the access options that you manage. You must assign at least one access option. For any access options that you don't add and configure, the default value of **No access** is assigned. Depending on the options that you are authorized to manage, you can assign the following types of access:
 
    * Add users to access groups. Click **Add** for each access group that you want the users to belong to.
-   * Assign users individual IAM access policies, Cloud Foundry roles, or classic infrastructure permissions.
-      * Select **Cloud Foundry**, choose an organization, then select a region to select a specific space, and assign a space role. An organization and space role are both required to add the access assignment to the invite.
+   * Manually assign users access. Expand the section to assign individual IAM access policies or classic infrastructure permissions.
       * Select **Classic infrastructure**, and then choose from the three permission sets.
       * Select a group of services like **All Identity and Access enabled services**, **All Account management services**, and **All IAM Account Management services**, or a specific service. Next, you can scope the access to the entire account or just one resource group. Then, select all roles that apply. To view what actions are mapped to each role, click the numbers listed next to each role.
 
@@ -108,7 +105,6 @@ You can cancel an invitation for any users that are shown in a Processing or Pen
 
 Any user with the following permissions can add a VPN-only user:
 
-- For Cloud Foundry, you must have the Manager organization role.
 - For classic infrastructure, you must have the Manage Users permission on the account.
 - For IAM access, you must have the Administrator or Editor role on the user management account management service.
 
@@ -129,7 +125,7 @@ ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE,
 ```
 {: codeblock}
 
-By using the CLI, you can choose to assign Cloud Foundry access or no access and work on assigning access later. For more information about the command parameters, see [**`ibmcloud account user-invite`**](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_user_invite).
+By using the CLI, you can choose not to assign access and work on assigning access later. For more information about the command parameters, see [**`ibmcloud account user-invite`**](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_user_invite).
 
 ## Inviting users by using the API
 {: #api-invite}

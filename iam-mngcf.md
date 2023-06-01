@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2022
+  years: 2017, 2023
 
-lastupdated: "2022-06-03"
+lastupdated: "2023-06-01"
 
 keywords: Cloud Foundry access, assign access, add user to organization, Cloud Foundry roles
 
@@ -20,8 +20,7 @@ subcollection: account
 To manage access to account organizations and spaces, you must be the account owner, organization manager, or space manager. Currently, not all services can be managed by using Cloud IAM. You can continue to use Cloud Foundry roles for access to these service instances. Users are added to the org and space to which the instance belongs with a Cloud Foundry role assigned. When Cloud Foundry services become IAM-enabled, they are eligible to be migrated to a resource group.
 {: shortdesc}
 
-IBM Cloud Foundry Public is deprecated. For more information, see the [Deprecation of IBM Cloud Foundry](/docs/cloud-foundry-public?topic=cloud-foundry-public-deprecation).
-{: deprecated}
+IBM Cloud Foundry Public is deprecated with an end-of-support date of 1 June 2023. For more information, see [Deprecation of IBM Cloud Foundry](/docs/cloud-foundry-public?topic=cloud-foundry-public-deprecation).
 
 The following graphic outlines how Cloud Foundry orgs, spaces, and roles relate within an account. An account can have many users, orgs, and spaces. Each user can be assigned to as many orgs and spaces as necessary. You can set the level of access to work within each org and space by assigning a Cloud Foundry role.
 
@@ -64,7 +63,7 @@ Users that are assigned the manager or developer space role can access the VCAP_
 {: #update_cf_access}
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users**.
-2. Select the name of the user that you want to assign access. 
+2. Select the name of the user that you want to assign access.
 3. Select **Cloud Foundry**.
 4. From the row for the organization that you want to manage access for, select the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu and you can click one of three choices:
     * **Remove user** from the organization
@@ -79,8 +78,8 @@ If you are the manager of an organization that the user is not yet a member of, 
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users**.
 2. From the row for the user that you want to assign access, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) > **Assign access**.
-3. Select the **Cloud Foundry** as the service. 
-4. Select the organization that you want to assign access to. 
+3. Select the **Cloud Foundry** as the service.
+4. Select the organization that you want to assign access to.
 5. Assign the user access:
    * Choose an organization to add the user to
    * Assign an organization role
@@ -89,7 +88,7 @@ If you are the manager of an organization that the user is not yet a member of, 
    * Assign a space role
 6. Click **Review**.
 7. Click **Add** to add your policy configuration to your access summary. Repeat as needed to add more access.
-8. Click **Assign**. 
+8. Click **Assign**.
 
 ## Reviewing your assigned access
 {: #review_my_access}

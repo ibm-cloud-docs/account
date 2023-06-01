@@ -3,10 +3,11 @@
 copyright:
 
   years: 2017, 2023
-lastupdated: "2023-01-18"
 
-keywords: resource group, account resources, users access to resource groups, create resource group, create resource group in the console, create resource group CLI, create resource group API, create resource group Terraform
+lastupdated: "2023-06-01"
 
+
+keywords: resource group, account resources, users access to resource groups, create resource group, create resource group in the console, create resource group CLI, create resource group API
 
 subcollection: account
 
@@ -17,7 +18,8 @@ subcollection: account
 # Managing resource groups
 {: #rgs}
 
-A resource group is a way for you to organize your account resources in customizable groupings so that you can quickly assign users access to multiple resources at a time. Any account resource that is managed by using {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) access control belongs to a resource group within your account. You can group resources and assign access to individual service instances or entire resource groups that use IAM. Cloud Foundry services are assigned to orgs and spaces and can't be added to a resource group.
+
+A resource group is a way for you to organize your account resources in customizable groupings so that you can quickly assign users access to multiple resources at a time. Any account resource that is managed by using {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) access control belongs to a resource group within your account. You can group resources and assign access to individual service instances or entire resource groups that use IAM.
 
 To start managing your resource groups, in the {{site.data.keyword.cloud}} console, go to **Manage** > **Account** > **Account resources** > **Resource groups**. You can create, view, and rename your resource groups, add resources and manage access to your resource groups. You can also delete any resource group only if it doesn't contain any resources, and it isn't the default resource group. The IBM Cloud account owner can add resources to any resource group, but other users must be granted access by using an IAM access policy.
 
@@ -25,13 +27,11 @@ For more information about working with resource groups, see [Best practices for
 
 ## Creating a resource group
 {: #create_rgs}
+{: ui}
 
 If you have a Pay-As-You-Go or Subscription account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. You can also group resources to make it easier for you to assign users access to more than one instance at a time. You can have a maximum of 1000 resource groups per account.
 
 You must be assigned an IAM policy with the Administrator role on All Account Management services to create additional resource groups. If you have a Lite account or 30-day trial, you can't create extra resource groups, but you can rename your default resource group.
-
-Connections between a resource group and a Cloud Foundry org or space are restricted by your quota. See [What is an alias?](/docs/account?topic=account-connect_app#what_is_alias) for more information.
-{: note}
 
 ## Creating a resource group in the console
 {: #rgs_ui}
@@ -45,6 +45,8 @@ Connections between a resource group and a Cloud Foundry org or space are restri
 ## Creating a resource group by using the CLI
 {: #rgs_cli}
 {: cli}
+
+You can create and rename a resource group, or view a resource in one by using the {{site.data.keyword.Bluemix}} Command Line Interface. For detailed information about working with resources, see [Working with resources and resource groups](/docs/cli?topic=cli-ibmcloud_commands_resource).
 
 1. Log in, and select the account.
 
@@ -188,9 +190,9 @@ Use the following steps to create a resource group by using Terraform:
       ```
       {: pre}
 
-
 ## Renaming a resource group
 {: #rename_rgs}
+{: ui}
 
 Your first resource group is created and named `Default` for you. You can update the name of this group or any other groups that you create.
 
@@ -224,7 +226,7 @@ ibmcloud resource group-update Default [-n, --name Admin]
 {: #rename_rgs-api}
 {: api}
 
-The variable `name` identifies the new name of the resource group. For more details, see the [API](https://cloud.ibm.com/apidocs/resource-controller/resource-manager#update-resource-group).
+The variable `name` identifies the new name of the resource group. For m ore details, see the [API](https://cloud.ibm.com/apidocs/resource-controller/resource-manager#update-resource-group).
 
 ```bash
 curl -X PATCH https://resource-controller.cloud.ibm.com/v2/resource_groups/09f8c1c0742c493f80baaf7835212345 -H 'Authorization: Bearer <IAM_TOKEN>'
@@ -332,12 +334,11 @@ You can rename a resource group by using Terraform.
    ```
    {: pre}
 
-5. Run `terraform apply` to create the resources that are defined in the plan.
+5. Rename the resource group.
 
    ```terraform
    terraform apply
    ```
-   {: pre}
 
 ## Adding resources to a resource group
 {: #add_to_rgs}
@@ -345,12 +346,15 @@ You can rename a resource group by using Terraform.
 {: support}
 {: help}
 
-Services that are managed with IAM belong to a resource group instead of a Cloud Foundry org or space. When you create an instance of one of these services from the catalog, you're prompted to assign the instance to a resource group. Be sure to plan how you want to organize resources in your account before you assign them to a resource group.
+Services that are managed with IAM belong to a resource group. When you create an instance of one of these services from the catalog, you're prompted to assign the instance to a resource group. Be sure to plan how you want to organize resources in your account before you assign them to a resource group.
 
 Your resource group selection at the time of creating the instance is final and can't be changed.
 {: important}
 
-Users in your account must be assigned two access policies to create resources from the catalog and add them to a resource group:
+Your resource group selection at the time of creating the instance is final and can't be changed.
+{: important}
+
+The IBM Cloud account owner can add resources to any resource group, but other users must be granted access by using an IAM access policy. Users in your account must be assigned two access policies to create resources from the catalog and add them to a resource group:
 
 * A policy with viewer role or higher on the resources group itself
 * A policy with editor role or higher on the service in the account
@@ -370,12 +374,12 @@ See [Managing catalog settings](/docs/account?topic=account-filter-account#set-p
 {: #view_rg_resources}
 {: ui}
 
-To easily view the resources that are assigned to a resource group, go to the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg) > **Resource list**. Then, filter by resource group.
+To easily view the resources that are assigned to a resource group, go to the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg) > **Resource list**. Then, filter by resource group.
 
-If you can't find your classic infrastructure resource on the Resource list page, check the Device list by clicking **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg) > **Classic infrastructure** > **Device list**.
+If you can't find your classic infrastructure resource on the Resource list page, check the Device list by clicking **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg) > **Classic infrastructure** > **Device list**.
 {: tip}
 
-## Viewing resources by using the CLI
+## Viewing resources in a resource group by using the CLI
 {: #viewing-rgs-cli}
 {: cli}
 

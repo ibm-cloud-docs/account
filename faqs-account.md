@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2023
-lastupdated: "2023-05-26"
+lastupdated: "2023-06-01"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -343,7 +343,7 @@ For more information, see [Granting users access to tag resources](/docs/account
 {: #permissions-add-remove-resource-tags}
 {: faq}
 
-* To manage user tags on a resource, you must have at least the editor role for IAM-enabled resources or the developer role in a Cloud Foundry space.
+* To manage user tags on a resource, you must have at least the editor role for IAM-enabled resources.
 * To manage user tags on a service ID, you must have at least the editor role on the IAM Identity service.
 * To manage access management tags, you must have the administrator role on the targeted resource.
 * To manage access management tags on service IDs, you must have the administrator role on the IAM Identity service.
@@ -382,17 +382,6 @@ You can't edit the default dashboard directly. However, you can create a duplica
 By maintaining the original version of the default dashboard, you can discover the latest widgets and functionalities, which get built and added over time. This way, you can always bring out the most of your workflow.
 
 You can also switch between the duplicate and original versions by selecting each one from your list of dashboards that's displayed on your active dashboard.
-
-## What is Cloud Foundry?
-{: #cloud-foundry}
-{: faq}
-
-Cloud Foundry is an open source platform as a service (PaaS) option available through {{site.data.keyword.Bluemix_notm}} Public for building and deploying applications on the cloud. Cloud Foundry organizations and spaces are used to organize resources and apps available within specific regions.
-
-IBM Cloud Foundry Public is deprecated. For more information, see the [Deprecation of IBM Cloud Foundry](/docs/cloud-foundry-public?topic=cloud-foundry-public-deprecation).
-{: deprecated}
-
-For more information about managing orgs and spaces, see [Adding orgs and spaces](/docs/account?topic=account-orgsspacesusers). And, if you’re interested in learning more about how to provide access to resources in a Cloud Foundry space, see [Cloud Foundry access](/docs/account?topic=account-mngcf).
 
 ## Can I move an org to another account?
 {: #move-org-diff-account}

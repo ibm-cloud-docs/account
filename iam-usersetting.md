@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018, 2022
+  years: 2018, 2023
 
-lastupdated: "2022-10-26"
+lastupdated: "2023-06-01"
 
 keywords: user list visibility, users page setting, user view access, limit access to users list, user list access, parent user, update parent
 
@@ -29,7 +29,6 @@ As an {{site.data.keyword.Bluemix}} account owner, you can view all users in you
 When the setting is disabled, any user in the account can view other users from the Users page in {{site.data.keyword.Bluemix_notm}} console. When the setting is enabled, users can view only specific types of users in the account:
 
 * Users invited by the user
-* Users who share a Cloud Foundry org with the user
 * Users who are their descendants in the classic infrastructure user hierarchy, meaning the users that they invited or that one of their descendants invited.
 
 By default, the setting is disabled for your account. To update this setting, complete the following steps:
