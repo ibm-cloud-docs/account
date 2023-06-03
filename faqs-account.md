@@ -29,11 +29,11 @@ You can create an account by [registering](/registration){: external} your email
 Feature codes aren't supported in some countries. For more information, see [personal use availability](/docs/account?topic=account-account-getting-started#signup-personalaccts).
 {: note}
 
-## Why is my credit card not authorized when I am creating an account?
+## How is my credit card authorized?
 {: #authorize-account}
 {: faq}
 
-A credit card is required to create a new {{site.data.keyword.Bluemix_notm}} account unless you have a subscription or feature code. In many cases, a credit card isn't accepted because your credit card issuer didn't authorize it. You might see a temporary hold on your credit card for verification and security when creating an account. This credit card hold is reversed within 24 to 72 hours. For more information about issues with credit card authorization, see [Credit Card error messages](/docs/billing-usage?topic=billing-usage-cc-error-messages).
+A credit card is required to create a new {{site.data.keyword.Bluemix_notm}} account unless you have a subscription or feature code. As part of the authorization process, you might see a temporary hold on your credit card for verification and security when creating an account. This credit card hold is reversed within 24 to 72 hours.  In many cases, a credit card isn't accepted because your credit card issuer didn't authorize it.  For more information about issues with credit card authorization, see [Credit Card error messages](/docs/billing-usage?topic=billing-usage-cc-error-messages).
 
 
 ## How do I get help with issues with creating an account?
