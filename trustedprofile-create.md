@@ -5,7 +5,7 @@ copyright:
   years: 2021, 2023
 
 
-lastupdated: "2023-05-26"
+lastupdated: "2023-06-05"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access, access group, service IDs, IBM Cloud services, CRN, cloud resource name
 
@@ -120,7 +120,8 @@ Complete the following steps to define how an {{site.data.keyword.cloud_notm}} s
    In the description, provide a list of actions that are available for the trusted profile.
    {: tip}
 
-1. Select **{{site.data.keyword.cloud}} services**.
+1. (Optional) Establish trust
+   1. Select **{{site.data.keyword.cloud}} services**.
 1. Enter the CRN that service administrator provided to you.
 1. Click **Continue**.
 1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
