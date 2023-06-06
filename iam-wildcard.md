@@ -35,9 +35,9 @@ Refer to the documentation for the specific service that you are assigning acces
 {: note}
 
 ### Using an asterisk (`*`) as a wildcard
-{: #policy-doc-asterisk} 
+{: #policy-doc-asterisk}
 
-The following example shows how you might create a policy that gives a user access to manage all {{site.data.keyword.messagehub}} topics that start with `dev` in a particular account. 
+The following example shows how you might create a policy that gives a user access to manage all {{site.data.keyword.messagehub}} topics that start with `dev` in a particular account.
 
 ```json
 {
@@ -85,11 +85,11 @@ The following example shows how you might create a policy that gives a user acce
 {: codeblock}
 
 ### Using a question mark (`?`) as a wildcard
-{: #policy-doc-multiwildcards} 
+{: #policy-doc-multiwildcards}
 
-The following example shows how you can create a policy that gives a user access to edit any {{site.data.keyword.messagehub}} topic that ends in a particular pattern. 
+The following example shows how you can create a policy that gives a user access to edit any {{site.data.keyword.messagehub}} topic that ends in a particular pattern.
 
-On the line `"value": "*??81"`, the `*` indicates zero or more characters and matches any string that ends with `??81`. The `?` represents a single character. Since there are two `??`, the resulting pattern matches a string of four or more characters that end in `81`. 
+On the line `"value": "*??81"`, the `*` indicates zero or more characters and matches any string that ends with `??81`. The `?` represents a single character. Since there are two `??`, the resulting pattern matches a string of four or more characters that end in `81`.
 
 ```json
 {
@@ -138,4 +138,66 @@ On the line `"value": "*??81"`, the `*` indicates zero or more characters and ma
 {: codeblock}
 
 
+### Using an asterisk (`*`) and question mark (`?`) as a literal character
+{: #literal}
 
+You can express an asterisk (`*`) and question mark (`?`) as a literal character, ensuring they aren't interpreted as a wildcard by enclosing each within two sets of curly brackets `{{}}`.
+
+The following example shows how you can create a policy that gives a user access to edit an {{site.data.keyword.messagehub}} topic that contains the literal characters `*` and `?` . The topic must end with the pattern `.?.log`, implying any single character between the periods `.` followed by the `log` string.
+
+```json
+{
+    "type": "access",
+    "subjects": [
+        {
+            "attributes": [
+                {
+                    "name": "iam_id",
+                    "value": "IBMid-12345"
+                }
+            ]
+        }
+    ],
+    "roles": [
+        {
+            "role_id": "crn:v1:bluemix:public:iam::::serviceRole:Writer"
+        }
+    ],
+    "resources": [
+        {
+            "attributes": [
+                {
+                    "name": "accountId",
+                    "value": "d727f71e99b14534b3267fab8cc9b09a"
+                },
+                {
+                    "name": "serviceName",
+                    "value": "messagehub"
+                },
+                {
+                    "name": "resourceType",
+                    "operator": "stringEquals"
+                    "value": "topic",
+                },
+                {
+                    "name": "resource",
+                    "operator": "stringMatch",
+                    "value": "dev-topic-{{*}}-{{?}}.?.log"
+                }
+            ]
+        }
+    ]
+}
+```
+{: codeblock}
+{: pre}
+
+On the line `"value": "dev-topic-{{*}}-{{?}}.?.log"`, the `{{*}}` indicates the character `*` and the `{{?}}` indicates the character `?`. Therefore, a topic such as `dev-topic-*-?.1.log` matches this pattern.
+
+
+## String comparisons
+{: #string-comparisons}
+
+{{site.data.content.string-compare-intro-reuse}}
+
+{{site.data.content.string-compare-table-reuse}}

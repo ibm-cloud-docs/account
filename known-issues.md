@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-06-01"
+lastupdated: "2023-06-06"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users from account, context-based restrictions
 
@@ -142,14 +142,9 @@ As of 25 January 2023, IAM supports two versions of the IAM Policy Management AP
 ### String comparisons
 {: #policy-string-comparison}
 
-The following table lists the string comparison operators that you can use to build access policies with `/v2/policies` syntax. For more information about each version, see [Comparing `/v1/policies` and `/v2/policies` syntax](/docs/account?topic=account-known-issues#compare-syntax).
+{{site.data.content.string-compare-intro-reuse}}
 
-| Operator   | Description  |
-|------------|--------------|
-| `stringEquals`  | Case-sensitive string comparison. Boolean or number values are converted into a string before comparison. |
-| `stringMatch`  | Case-sensitive string match is performed between the pattern and the target string by using either an asterisk (`*`), question mark (`?`), or both. An asterisk (`*`) represents any sequence of zero or more characters in the string, and a question mark (`?`) represents any single character. |
-| `stringExists`  | String must be present but can have any none zero value. |
-{: caption="Table 5. The string comparison operators available for conditions in access policies." caption-side="top"}
+{{site.data.content.string-compare-table-reuse}}
 
 For example, the following statement contains an `operator` element that uses `stringEquals` to specify that the account ID and service name must exactly match the `value` element. The statement also contains an `operator` element that uses `stringMatch` to specify a naming pattern for {{site.data.keyword.messagehub}} topics that you might use to organize access to those specific resources. This way, you can assign one policy to all topics in your account that begin with `messagehub-topic-dev`.
 
