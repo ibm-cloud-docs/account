@@ -5,7 +5,7 @@ copyright:
   years: 2021, 2023
 
 
-lastupdated: "2023-06-05"
+lastupdated: "2023-06-07"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access, access group, service IDs, IBM Cloud services, CRN, cloud resource name
 
@@ -57,8 +57,8 @@ Complete the following steps to define which federated users can access specific
    1. Select **Federated users** as a trusted entity type from the list.
    1. Select **Users federated by IBMid** or **Users federated by {{site.data.keyword.cloud_notm}} AppID** as the authentication method and input the default identity provider (IdP) you enabled in step 1.
 
-   If the users that you are creating a trusted profile for use {{site.data.keyword.appid_full_notm}}, create the trusted profile as an App ID user, and likewise for IBMid. This way, your own SAML attributes can give you an idea of how to structure the trusted profile conditions. Other users with the same IdP can have different SAML attributes. Use your own attributes only as a hint. To use attributes in a claim that are different than your own, input them manually.
-   {: tip}
+      If the users that you are creating a trusted profile for use {{site.data.keyword.appid_full_notm}}, create the trusted profile as an App ID user, and likewise for IBMid. This way, your own SAML attributes can give you an idea of how to structure the trusted profile conditions. Other users with the same IdP can have different SAML attributes. Use your own attributes only as a hint. To use attributes in a claim that are different than your own, input them manually.
+      {: tip}
 
    1. Add conditions based on your IdP data to define how and when federated users can apply the profile.
       * By clicking **Add a condition**, you can define multiple conditions. Federated users must meet all the conditions to be included in the trusted profile. For more information about the fields that are used to create conditions, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
