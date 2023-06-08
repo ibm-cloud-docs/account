@@ -16,7 +16,7 @@ subcollection: account
 # Enabling MFA in your account
 {: #enablemfa}
 
-As an Administrator on the IAM Identity Service or All IAM Account Management services, you can choose to require multifactor authentication (MFA) for every user in the account, just users with IBMids who do not use single sign-on (SSO), or individual users. This document covers how to work with [ID-based MFA](/docs/account?topic=account-types#id-based), which is the recomended MFA method.
+As an Administrator on the IAM Identity Service or All IAM Account Management services, you can choose to require multifactor authentication (MFA) for every user in the account, just users with IBMids who do not use single sign-on (SSO), or individual users. This document covers how to work with [ID-based MFA](/docs/account?topic=account-types#id-based), which is the recommended MFA method.
 {: shortdesc}
 
 Starting 3 May 2023, by default CLI logins with only a username and password are disabled for all users that have MFA set to **None**. This applies to users in new and existing accounts. Administrators can opt-out before that date in the {{site.data.keyword.cloud_notm}} console. For more information, see [Disabling CLI logins with only a password](/docs/account?topic=account-enablemfa#disabling-cli)
