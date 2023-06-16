@@ -5,7 +5,7 @@ copyright:
   years: 2021, 2023
 
 
-lastupdated: "2023-06-07"
+lastupdated: "2023-06-16"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access, access group, service IDs, IBM Cloud services, CRN, cloud resource name
 
@@ -64,7 +64,9 @@ Complete the following steps to define which federated users can access specific
       * By clicking **Add a condition**, you can define multiple conditions. Federated users must meet all the conditions to be included in the trusted profile. For more information about the fields that are used to create conditions, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
       * Click **View identity provider (IdP) data** to search attribute names and values in your own personal data from your IdP. For more information, see [Using IdP data to build trusted profiles](/docs/account?topic=account-idp-integration#trusted-profiles-idp-data).
 
-1. Define the session duration for how long a user can apply the profile before they must reauthenticate.
+   1. Define the session duration for how long a user can apply the profile before they must reauthenticate.
+
+1. Or, select **Decide later**.
 1. Click **Continue**.
 1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
 1. Or, click **Create** without assigning any access.
@@ -93,6 +95,7 @@ Complete the following steps to set up better control over granting access to co
 
    1. If you select **Specific resources**, you can establish trust with one or more existing compute resource instances directly without conditions. For example, a Kubernetes cluster.
 
+1. Or, select **Decide later**.
 1. Click **Continue**.
 1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
 1. Or, click **Create** without assigning any access.
@@ -122,7 +125,8 @@ Complete the following steps to define how an {{site.data.keyword.cloud_notm}} s
 
 1. (Optional) Establish trust
    1. Select **{{site.data.keyword.cloud}} services**.
-1. Enter the CRN that service administrator provided to you.
+   1. Enter the CRN that service administrator provided to you.
+1. Or, select **Decide later** if you don't have the CRN value yet.
 1. Click **Continue**.
 1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
 1. Or, click **Create** without assigning any access.
@@ -150,7 +154,8 @@ You can use trusted profiles to give a service ID cross-account access and acces
 
 1. (Optional) Establish trust.
    1. Select **Service IDs**
-1. Enter the service ID value that the administrator provided to you.
+   1. Enter the service ID value that the administrator provided to you.
+1. Or, select **Decide later** if you don't have the service ID value yet.
 1. Click **Continue**.
 1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
 1. Or, click **Create** without assigning any access.
