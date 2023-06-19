@@ -1,13 +1,11 @@
 ---
 
-
-
 copyright:
 
-  years: 2020, 2021
-lastupdated: "2021-09-24"
+  years: 2020, 2023
+lastupdated: "2023-06-19"
 
-keywords: account resources, reclaim resource, restore resource
+keywords: account resources, reclaim resource, restore resource, reclamation
 
 subcollection: account
 
@@ -15,11 +13,10 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-
 # Using resource reclamations
 {: #resource-reclamation}
 
-You can use the {{site.data.keyword.cloud}} CLI or the [{{site.data.keyword.cloud}} Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#run-reclamation-action) to manage the reclamation process of specific resources.
+You can use the {{site.data.keyword.cloud}} CLI or the [{{site.data.keyword.cloud}} Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#run-reclamation-action) to manage the reclamation process of specific resources. For more information, see [FAQs about resources](/docs/account?topic=account-resources-faq&interface=cli)
 {: shortdesc}
 
 ## Listing reclaimed resources by using the CLI
@@ -35,14 +32,13 @@ ibmcloud resource reclamations [--resource-instance-id INSTANCE_ID]
 
 Enter the following command option:
 
-**--resource-instance-id**: The globally unique ID (GUID) of the resource instance.
+* **--resource-instance-id**: The globally unique ID (GUID) of the resource instance.
 
 The following example shows how to list the reclamations of a particular service instance:
 
 ```bash
 ibmcloud resource reclamations --resource-instance-id abcd1234-ef56-486e-b293-22d6c7eb6699
 ```
-{: codeblock}
 
 ## Listing reclaimed resources by using the API
 {: #list-reclaimed-api}
@@ -135,7 +131,7 @@ ibmcloud resource reclamation-delete ID [--comment COMMENT] [--f, --force]
 
 Enter the following command options:
 
-* **ID**: The ID of the resource reclamation. This is the reclamation ID and not the resource instance ID. (Required)
+* **ID**: The ID of the resource reclamation. This is the reclamation ID and not the resource instance ID. (Required).
 * **--comment**: Comments about the action.
 * **-f, --force**: Force deletion without confirmation.
 
@@ -144,14 +140,12 @@ The following example shows how to delete a resource reclamation with ID `d9fend
 ```bash
 ibmcloud resource reclamation-delete "d9fendfwlw"
 ```
-{: codeblock}
 
 The following example shows how to delete a resource reclamation with ID `d9fendfwlw` and leave a comment of `no longer needed` without confirmation:
 
 ```bash
-ibmcloud resource reclamation-delete --id "d9fendfwlw" --comment "no longer needed" -f
+ibmcloud resource reclamation-delete "d9fendfwlw" --comment "no longer needed" -f
 ```
-{: codeblock}
 
 ## Deleting resource by using the API
 {: #delete-reclaimed-api}
@@ -243,9 +237,10 @@ ibmcloud resource reclamation-restore ID [--comment COMMENT]
 ```
 {: codeblock}
 
+
 Enter the following command options:
 
-* **ID**: The ID of the resource reclamation. This is the reclamation ID and not the resource instance ID. (Required)
+* **ID**: The ID of the resource reclamation. This is the reclamation ID and not the resource instance ID.  (Required)
 * **--comment**: Comments about the action.
 
 The following example shows how to restore a resource with the `d9fendfwlw` ID:
@@ -253,7 +248,6 @@ The following example shows how to restore a resource with the `d9fendfwlw` ID:
 ```bash
 ibmcloud resource reclamation-restore "d9fendfwlw"
 ```
-{: codeblock}
 
 For more information, see the [`ibmcloud resource reclamations` command reference](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_reclamations).
 
@@ -261,7 +255,9 @@ For more information, see the [`ibmcloud resource reclamations` command referenc
 {: #restore-resource-api}
 {: api}
 
-You can restore a resource within 7 days after you delete it. Not all resources can be restored. [Get a list of all reclaimations](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#list-reclamations) to check the resources that you can restore.
+You can restore a resource within 7 days after you delete it.
+
+Not all resources can be restored. [Get a list of all reclaimations](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#list-reclamations) to check the resources that you can restore.
 {: important}
 
 To restore a resource by using the API, call the [{{site.data.keyword.cloud}} Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#run-reclamation-action) as shown in the following example. Specify `restore` to restore a resource. `id` is the reclamation ID and not the resource instance ID. 
