@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-06-20"
+lastupdated: "2023-06-21"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -7739,7 +7739,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `toolchain.instance.create-bindings` | Add a tool integration to a toolchain within a resource group. | Administrator, Editor |
 | `toolchain.instance.delete-bindings` | Remove a tool integration from a toolchain within a resource group. | Administrator, Editor |
 | `toolchain.instance.list-bindings` | View the tool integrations that are contained in a toolchain within a resource group. | Administrator, Editor, Viewer |
-| `toolchain.pipeline-run.create` | Run the selected pipeline. | Administrator, Editor, Operator, PipelineRunner, Viewer |
+| `toolchain.pipeline-run.create` | Run the selected pipeline. | Administrator, Editor, Operator, PipelineRunner |
 {: caption="Table 150. Service actions - Toolchain" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="toolchain"}
