@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2023-01-12"
+lastupdated: "2023-06-26"
 
 keywords: troubleshoot account, upgrade account, upgrade issue
 subcollection: account
@@ -14,7 +14,7 @@ content-type: troubleshoot
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Why can't I upgrade my {{site.data.keyword.Bluemix_notm}} account?
+# How do I get access to upgrade my {{site.data.keyword.Bluemix_notm}} account?
 {: #ts_upgrade_cc}
 {: troubleshoot}
 
