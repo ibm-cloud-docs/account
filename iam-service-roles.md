@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-06-27"
+lastupdated: "2023-06-28"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -7963,7 +7963,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `vmware.directorsite.infrastructure.view` | View a single-tenant VMware Director instance | Administrator, Editor, Operator, Viewer |
 | `vmware.directorsite.infrastructure.update` | Update a single-tenant VMware Director instance | Administrator, Editor, Operator |
 | `vmware.directorsite.director.create` | Create Director virtual datacenters | Administrator, Editor, Manager |
-| `vmware.directorsite.director.delete` | Delete Director virtual datacenters | Administrator, Editor, Manager |
+| `vmware.directorsite.director.delete` | Delete Director virtual datacenters | Administrator, Manager |
 | `vmware.directorsite.director.update` | Edit Director virtual datacenters | Administrator, Editor, Manager, Operator, Writer |
 | `vmware.directorsite.director.view` | View Director virtual datacenters | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
 | `vmware.directorsite.director.account` | Reset the Director Admin password | Administrator, Manager |
