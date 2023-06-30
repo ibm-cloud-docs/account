@@ -26,26 +26,42 @@ All private catalogs that are in an account inherit filters that are set by the 
 {: tip}
 
 ## Before you begin
-{: #prereq-restrict}
+{: #prereq-restrict-ui}
+{: ui}
 
-Make sure you have the [administrator role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management) to complete this task.
+* Verify that you're using a Pay-As-You-Go or Subscription account. See [Viewing your account type](/docs/account?topic=account-account_settings#view-acct-type) for more details.
+* Make sure you have the [administrator role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management) to complete this task.
 
-Run the following command to install the catalogs management plug-in:
+## Before you begin
+{: #prereq-restrict-api}
+{: api}
+
+* Verify that you're using a Pay-As-You-Go or Subscription account. See [Viewing your account type](/docs/account?topic=account-account_settings#view-acct-type) for more details.
+* Make sure you have the [administrator role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management) to complete this task.
+
+## Before you begin
+{: #prereq-restrict-cli}
 {: cli}
 
-```bash
-ibmcloud plugin install catalogs-management
-```
-{: codeblock}
-{: cli}
+* Verify that you're using a Pay-As-You-Go or Subscription account. See [Viewing your account type](/docs/account?topic=account-account_settings#view-acct-type) for more details.
+* Make sure you have the [administrator role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management) to complete this task.
+* Run the following command to install the catalogs management plug-in:
 
-To customize catalogs by using Terraform, make sure that you have completed the following:
+   ```bash
+   ibmcloud plugin install catalogs-management
+   ```
+   {: codeblock}
+
+## Before you begin
+{: #prereq-restrict-terraform}
 {: terraform}
 
-- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-- Create a Terraform configuration file that is named `main.tf`. In this file, you define resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
-{: terraform}
+* Verify that you're using a Pay-As-You-Go or Subscription account. See [Viewing your account type](/docs/account?topic=account-account_settings#view-acct-type) for more details.
+* Make sure you have the [administrator role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management) to complete this task.
+* To customize catalogs by using Terraform, make sure that you have completed the following:
 
+   - Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+   - Create a Terraform configuration file to define resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
 ## Creating a private catalog with all products included by using the console
 {: #catalog-all-ui}
 {: ui}
