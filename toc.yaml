@@ -208,6 +208,8 @@
                   topics:
                   - catalog-settings.md
                   - catalog-audit-logs.md
+                  - catalog-cross-account.md
+                  - catalog-cross-validation.md
               - topicgroup:
                   label: Onboarding products
                   topics:
