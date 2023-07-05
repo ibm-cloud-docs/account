@@ -32,12 +32,6 @@ You might want to use a target account for the following reasons:
 1. If you want to use an IBM Cloud API key, [create an API key](/docs/account?topic=account-userapikey&interface=ui#create_user_key) for the target account.
 1. If you want to use a trusted profile ID, see [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile&interface=ui).
 
-<!--
-1. Install or update to the latest version of the [{{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli).{: cli}
-1. Install the [Catalog Management CLI plug-in](/docs/cli?topic=cli-manage-catalogs-plugin#install-managecatalogs).{: clil}
-1. [Import a version of your product to a private catalog](/docs/account?topic=account-create-private-catalog&interface=ui) but stop before the validation step.{: cli}
--->
-
 ## Using an IBM Cloud API key
 {: #target-api-key}
 
@@ -91,89 +85,3 @@ You linked the private catalog to the trusted profile as a trust relationship an
 1. Click **Add** > **Update**.
 
 Users can now use the added target account to validate and add scans to any product version in the private catalog.
-
-<!--
-## Finding the version locator for your version
-{: #cross-vl-cli}
-{: cli}
-
-To successfully use a target account for validation, you must find the version locator for your version.
-
-Run the [`ibmcloud catalog offering get`](/docs/cli?topic=cli-manage-catalogs-plugin#get-offering) to retrieve the version locator.
-
-```bash
-ibmcloud catalog offering get --catalog CATALOG --offering OFFERING_NAME [--output FORMAT]
-```
-{: codeblock}
-
-## Finding the resource group
-{: #cross-val-resource}
-{: cli}
-
-Before you can validate your product, you need to locate the ID of the resource group that Schematics will use to validate your product. To find the resource group, you must use the console.
-
-1. Log in to the target {{site.data.keyword.cloud_notm}} account that contains the Schematics workspace.
-1. Go to **Manage** > **Account** > **Resource groups**.
-1. From the list of resource groups, copy the ID that you want to use.
-
-## Validating your product by using a different account
-{: #catalog-cross-val-steps-ui}
-{: #ui}
-
-Is there a way to do this in the UI?
-
-## Create a file with defined deployment variables
-{: #cross-var-file}
-
-Create a JSON or TXT file that defines deployment variables and the values to use for validation.
-
-## Validating your product by the CLI
-{: #catalog-cross-val-steps-cli}
-{: cli}
-
-Using the version locator, api key, deployment file, and resource group that you retreived, you can validate the version by running the [`ibmcloud catalog offering version`](/docs/cli?topic=cli-manage-catalogs-plugin#validate-offering) command.
-
-```bash
-ibmcloud catalog offering version validate --vl <version locator> --override-values <file name> --target-api-key <api key> --workspace-rg-id <resource group id>
-```
-{: codeblock}
-
-
-## Applying Security and Compliance Center scans by using the UI
-{: #cross-scan}
-
-Now that you have validated your version you can run Security and Compliance Center scans to prove that your version meets the requirements of the controls that you have claimed. If you have not claimed and controls, you do not need to apply any scans.
-
-### Running a Security and Compliance Center scan
-{: #cross-scan-run}
-
-1. In the {{site.data.keyword.cloud_notm}} console, click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) **> Security and Compliance** to access {{site.data.keyword.compliance_short}}.
-1. In the navigation, click **Profile**.
-1. Click the **Overflow** menu in the row of the profile that you want to evaluate and select **Run scan**.
-1. Click **Run scan**.
-1. After your scan completes, copy the scan ID.
-
-### Applying a Secuirty and Compliance Center scan
-{: #cross-scan-apply-ui}
-{: ui}
-
-After your scan completes and you have copied the scan ID, return to your private catalog.
-
-### Applying a Security and Compliance Center scan
-{: #cross-scan-apply-cli}
-{: cli}
-
-After your scan completes and you have copied the scan ID, you can use the [`ibmcloud catalog offering version scc-apply`](/docs/cli?topic=cli-manage-catalogs-plugin#version-scc) command to apply the scans to your product.
-
-You need the following information to complete the scan:
- - version locator of the product version
- - scan ID of the Security and Compliance Center scans
- - the api key for the account that you used to run the scans
-
-```bash
-ibmcloud catalog offering version scc-apply --vl <version locator> --scan <scan id> --target-api-key <api key>
-```
-
-You can now return to the [onboarding steps](/docs/account?topic=account-create-private-catalog&interface=ui#catalog-manage-review-reqs) to finish onboarding your version to a private catalog.
-
->
