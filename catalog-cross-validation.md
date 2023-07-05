@@ -15,7 +15,7 @@ subcollection: account
 # Setting up a target account
 {: #catalog-cross-validation}
 
-If you want to use a different account to validate your product and run security and compliance scans, you can add a target account. You can add a target account by using an IBM Cloud API key or a trusted profile ID.
+If you want to use a different account to validate your product and run security and compliance scans, you can add a target account. You can add a target account by using an {{site.data.keyword.cloud_notm}} API key or a trusted profile ID.
 {: shortdesc}
 
 You might want to use a target account for the following reasons:
@@ -29,7 +29,7 @@ You might want to use a target account for the following reasons:
 1. Verify that you're using a Pay-As-You-Go or Subscription account. See [Viewing your account type](/docs/account?topic=account-account_settings#view-acct-type) for more details.
 1. Make sure you have the [administrator role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management) or have the catalog administrator complete this task.
 1. Set up [service-to-service authorization](/docs/account?topic=account-catalog-catalog-service-authorization).
-1. If you want to use an IBM Cloud API key, [create an API key](/docs/account?topic=account-userapikey&interface=ui#create_user_key) for the target account.
+1. If you want to use an {{site.data.keyword.cloud_notm}} API key, [create an API key](/docs/account?topic=account-userapikey&interface=ui#create_user_key) for the target account.
 1. If you want to use a trusted profile ID, see [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile&interface=ui).
 
 <!--
@@ -38,7 +38,7 @@ You might want to use a target account for the following reasons:
 1. [Import a version of your product to a private catalog](/docs/account?topic=account-create-private-catalog&interface=ui) but stop before the validation step.{: cli}
 -->
 
-## Using an IBM Cloud API key
+## Using an {{site.data.keyword.cloud_notm}} API key
 {: #target-api-key}
 
 You can add a target account by using an API key. Alternatively, if you would like to add a trusted profile ID, see [Using a trusted profile](/docs/account?topic=account-catalog-cross-validatione&interface=ui#target-trusted-profile).
@@ -46,7 +46,7 @@ You can add a target account by using an API key. Alternatively, if you would li
 1. In the {{site.data.keyword.cloud_notm}} console, click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **Manage** > **Catalogs** > **Private catalogs** to access your private catalogs.
 1. Select the private catalog that you want add a target account to.
 1. Click **Actions...** > **Edit catalog details** > **Add** to add a target account.
-1. Select **IBM Cloud API key** as the method.
+1. Select **{{site.data.keyword.cloud_notm}} API key** as the method.
 1. Create a programmatic name of the target account.
 1. Create a display name for the target account. The display name appears as a target account option for users that are onboarding products.
 1. Enter the API key for the target account. If you need an API key, see [Create an API key](/docs/account?topic=account-userapikey&interface=ui#create_user_key).
@@ -69,7 +69,7 @@ If you want to use a trusted profile, you need to update your trusted profile to
 1. Copy the `Catalog CRN`.
 1. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **Manage** > **Access (IAM)** > **Trusted profiles** to access your existing trusted profile.
 1. Select the trusted profile that you want to use.
-1. Click **IBM Cloud services** > **Add**.
+1. Click **{{site.data.keyword.cloud_notm}} services** > **Add**.
 1. Enter the CRN and click **Save**.
 1. Click **Details** to find the `Profile ID` of the trusted profile.
 1. Copy the `Profile ID`. You use the ID to add a target account to your private catalog.
