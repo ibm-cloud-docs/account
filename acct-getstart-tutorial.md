@@ -60,12 +60,62 @@ See [Account types](/docs/account?topic=account-accounts) to compare and choose 
 ### Personal use availability
 {: #signup-personalaccts}
 
-Personal use of our platform that is not related to business, trade, craft, or professional purposes are not supported for the following countries or regions:
+### Personal use availability
+{: #signup-personalaccts}
 
-```text
-Albania, Algeria, Armenia, Bahrain, Belarus, Cameroon, Canary Islands, Egypt, Ghana, Ivory Coast, Kazakstan, Kenya, Kingdom of Saudi Arabia, Mauritania, Moldova, Nigeria, Norway, Saudi Arabia, Serbia, Seychelles, Switzerland, Taiwan, Tanzania, Turkey, UAE, Uganda, Ukraine, United Arab Emirates, Uzbekistan, Vietnam
-```
-{: screen}
+The following table shows the countries where personal use of our platform that is not related to business, trade, craft, or professional purposes are not supported
+
+| Country |
+|---------|
+| Algeria |
+| Cameroon |
+| Canary Islands |
+| Egypt |
+| Ghana |
+| Ivory Coast |
+| Kenya |
+| Mauritania |
+| Nigeria |
+| Seychelles |
+| Tanzania |
+| Uganda |
+{: caption="Table 2. Countries in Africa that are not supported" caption-side="bottom"}
+{: #Africa}
+{: tab-title="Africa"}
+{: tab-group="not-supported-countries"}
+{: class="simple-tab-table"}
+
+| Country |
+|---------|
+| Armenia |
+| Bahrain |
+| Kazakstan |
+| Kingdom of Saudi Arabia |
+| Taiwan |
+| Turkey |
+| United Arab Emirates |
+| Uzbekistan|
+| Vietnam |
+{: caption="Table 2. Countries in Asia that are not supported" caption-side="bottom"}
+{: #Asia}
+{: tab-title="Asia"}
+{: tab-group="not-supported-countries"}
+{: class="simple-tab-table"}
+
+| Country |
+|---------|
+| Albania|
+| Belarus |
+| Moldova |
+| Norway |
+| Serbia |
+| Switzerland |
+| Ukraine|
+{: caption="Table 2. Countries in Europe that are not supported" caption-side="bottom"}
+{: #Europe}
+{: tab-title="Europe"}
+{: tab-group="not-supported-countries"}
+{: class="simple-tab-table"}
 
 {{site.data.keyword.IBM}} Norway and {{site.data.keyword.IBM}} Switzerland are able to contract with local customers to offer personal use accounts.
 {: note}
