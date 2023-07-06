@@ -5,7 +5,7 @@ copyright:
   years: 2021, 2023
 
 
-lastupdated: "2023-06-19"
+lastupdated: "2023-07-06"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access, access group, service IDs, IBM Cloud services, CRN, cloud resource name
 
@@ -53,7 +53,7 @@ Complete the following steps to define which federated users can access specific
       In the description, provide a list of actions available for this trusted profile.
       {: tip}
 
-1. (Optional) Establish trust.
+1. You can create the trusted profile before adding details by selecting **Decide later**. Or, establish trust by completing the following steps:
    1. Select **Federated users** as a trusted entity type from the list.
    1. Select **Users federated by IBMid** or **Users federated by {{site.data.keyword.cloud_notm}} AppID** as the authentication method and input the default identity provider (IdP) you enabled in step 1.
 
@@ -66,7 +66,6 @@ Complete the following steps to define which federated users can access specific
 
    1. Define the session duration for how long a user can apply the profile before they must reauthenticate.
 
-1. Or, select **Decide later**.
 1. Click **Continue**.
 1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
 1. Or, click **Create** without assigning any access.
@@ -86,7 +85,7 @@ Complete the following steps to set up better control over granting access to co
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Trusted profiles**.
 1. Click **Create profile**.
 1. Describe your profile by providing a name and a description, and click **Continue**.
-1. (Optional) Establish trust.
+1. You can create the trusted profile before adding details by selecting **Decide later**. Or, establish trust by completing the following steps:
    1. Select **Compute resources** and select a compute service type from the list.
    1. If you select the option for **All service resources**, you can define multiple conditions to filter resources for the selected compute service type by clicking **Add a condition**. These conditions are based on attributes, such as resource groups or location, and apply to all existing and future resources. Resources must meet all the conditions to be included in the trusted profile.
 
@@ -95,7 +94,6 @@ Complete the following steps to set up better control over granting access to co
 
    1. If you select **Specific resources**, you can establish trust with one or more existing compute resource instances directly without conditions. For example, a Kubernetes cluster.
 
-1. Or, select **Decide later**.
 1. Click **Continue**.
 1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
 1. Or, click **Create** without assigning any access.
@@ -123,10 +121,9 @@ Complete the following steps to define how an {{site.data.keyword.cloud_notm}} s
    In the description, provide a list of actions that are available for the trusted profile.
    {: tip}
 
-1. (Optional) Establish trust
+1. You can create the trusted profile before adding details by selecting **Decide later**. Or, establish trust by completing the following steps:
    1. Select **{{site.data.keyword.cloud}} services**.
    1. Enter the CRN that service administrator provided to you.
-1. Or, select **Decide later** if you don't have the CRN value yet.
 1. Click **Continue**.
 1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
 1. Or, click **Create** without assigning any access.
@@ -152,10 +149,9 @@ You can use trusted profiles to give a service ID cross-account access and acces
    In the description, provide a list of actions that are available for this trusted profile.
    {: tip}
 
-1. (Optional) Establish trust.
+1. You can create the trusted profile before adding details by selecting **Decide later**. Or, establish trust by completing the following steps:
    1. Select **Service IDs**
    1. Enter the service ID value that the administrator provided to you.
-1. Or, select **Decide later** if you don't have the service ID value yet.
 1. Click **Continue**.
 1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
 1. Or, click **Create** without assigning any access.
