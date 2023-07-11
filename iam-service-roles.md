@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-07-10"
+lastupdated: "2023-07-11"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -6821,6 +6821,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `privileged-access-gateway.rdp.login` | privileged-access-gateway.ssh.login | Manager, Writer |
 | `privileged-access-gateway.session.list.all` | List All  Active Sessions | Manager |
 | `privileged-access-gateway.instance.upgrade` | Perform a software update of the gateway associated an instance. | Administrator, Editor, Operator |
+| `privileged-access-gateway.info` | get api info | Manager, Reader, Writer |
 {: caption="Table 131. Service actions - Privileged Access Gateway" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="privileged-access-gateway"}
