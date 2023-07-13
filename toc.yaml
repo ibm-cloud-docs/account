@@ -83,7 +83,6 @@
                   - iam-federation-guide.md
                   - iam-idp-integration.md
                   - iam-ent-idp-ibmid.md
-                  - iam-connect_dedicated_id.md
                   - iam-saml-federation.md
               - topicgroup:
                   label: Managing access
