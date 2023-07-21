@@ -278,7 +278,11 @@
               topics:
               - monitoring.md
               - audit_log.md
-              - trustedprofile-monitor.md
+              - topicgroup:
+                  label: Monitoring login sessions
+                  topics:
+                  - sessions-your-login.md
+                  - trustedprofile-monitor.md
               - cbr-monitor.md
 
       - navgroup:
