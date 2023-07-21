@@ -278,7 +278,6 @@
               topics:
               - monitoring.md
               - audit_log.md
-              - sessions-users.md
               - trustedprofile-monitor.md
               - cbr-monitor.md
 
