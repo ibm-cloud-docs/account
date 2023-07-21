@@ -19,7 +19,7 @@ subcollection: account
 When you log in to the {{site.data.keyword.cloud}} console or {{site.data.keyword.cloud_notm}} command-line interface by using a user ID, a login session is created. You can review your active and expired login sessions on the [Login sessions page](/user/sessions){: external}, where you can also end an individual session or all active sessions if a login-related credential, such as a refresh token or an {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) cookie is compromised.
 {: shortdesc}
 
-You can review and end your own login sessions from the IAM page as well. In the {{site.data.keyword.cloud_notm}} console, click **Manage > Access (IAM)**, and select **Users**. Select your own user from the list and click **View sessions** in the User details section to review your login sessions. 
+You can also review and end your own login sessions from the IAM Users page. In the {{site.data.keyword.cloud_notm}} console, click **Manage > Access (IAM)**, and select **Users**. Select your own user from the list, and click **View sessions** in the Details section to review your login sessions. 
 {: tip}
 
 ## Reviewing your login sessions
