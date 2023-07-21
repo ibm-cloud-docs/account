@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2023
-lastupdated: "2023-06-01"
+lastupdated: "2023-07-21"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -214,6 +214,12 @@ Your account might be deactivated for the following reasons:
 * At the discretion of {{site.data.keyword.IBM_notm}}, accounts that violate the acceptable usage behavior of the {{site.data.keyword.Bluemix_notm}} services can be disabled without notice. Some services can be restored if users correct their usage behaviors after they're notified of the offensive action. For more information, see [Acceptable Internet use policy for IBM services](https://www.ibm.com/services/us/imc/html/aup1.html){: external}.
 
 If you believe that your account was deactivated in error, contact support by calling 1-866-325-0045 and selecting the third option.
+
+## How can I reactivate my account?
+{: #account-reactivated}
+{: faq}
+
+To make a payment and reactivate your account, contact support by calling 1-866-325-0045 and selecting the third option.
 
 ## What are my options for contacting {{site.data.keyword.cloud_notm}} Support?
 {: #contactsupport}
