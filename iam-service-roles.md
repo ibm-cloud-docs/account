@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-07-20"
+lastupdated: "2023-07-21"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1167,6 +1167,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `compliance.posture-management.reports-read` | View results | Administrator, Editor, Operator |
 | `compliance.posture-management.profiles-compare` | Compare profiles | Administrator, Editor, Operator, Viewer |
 | `compliance.posture-management.attachments-upgrade` | Upgrade attachments | Administrator, Editor |
+| `compliance.posture-management.provider-data-write` | Write Compliance data from Provider | Administrator, Editor |
 {: caption="Table 22. Service actions - IBM Cloud Compliance and Security Center" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="compliance"}
