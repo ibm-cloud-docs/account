@@ -30,7 +30,7 @@ To review your active and expired login sessions, complete the following steps:
 1. In the {{site.data.keyword.cloud_notm}} console, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Profile** > **Login sessions**.
 1. Review the list of your login sessions.
 
-    By default, the page shows login sessions with all statuses, not with the active sessions only. If you want to review your active sessions only, turn on the switch.
+    By default, the page shows login sessions with all statuses, not active sessions only. If you want to change your view of the login sessions list and review only your active sessions, select **Active sessions** from the View dropdown menu.
     {: tip}
 
 1. Click the **Table expand** icon ![Table expand icon](../icons/table-expand.svg "Table expand") on a session to view session details.
