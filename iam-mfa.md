@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2023
-lastupdated: "2023-06-14"
+lastupdated: "2023-07-21"
 
 keywords: MFA, multifactor authentication, IBMid MFA, two-factor authentication, account MFA, time-based one-time passcode, TOTP, FIDO U2F, U2F, universal 2nd factor authentication, security key
 
@@ -16,7 +16,7 @@ subcollection: account
 # Enabling MFA in your account
 {: #enablemfa}
 
-As an Administrator on the IAM Identity Service or All IAM Account Management services, you can choose to require multifactor authentication (MFA) for every user in the account, just users with IBMids who do not use single sign-on (SSO), or individual users. This document covers how to work with [ID-based MFA](/docs/account?topic=account-types#id-based), which is the recommended MFA method.
+As an administrator on the IAM Identity Service or All IAM Account Management services, you can choose to require multifactor authentication (MFA) for every user in the account, just users with IBMids who do not use single sign-on (SSO), or individual users.
 {: shortdesc}
 
 Starting 3 May 2023, by default CLI logins with only a username and password are disabled for all users that have MFA set to **None**. This applies to users in new and existing accounts. Administrators can opt-out before that date in the {{site.data.keyword.cloud_notm}} console. For more information, see [Disabling CLI logins with only a password](/docs/account?topic=account-enablemfa#disabling-cli)
@@ -27,7 +27,7 @@ View the MFA requirement for each user in your account to determine if they fulf
 ## Before you begin
 {: #considerations}
 
-The following information is helpful to consider before you enable ID-based MFA for your account to ensure that you know how it affects all users in your account:
+The following information is helpful to consider before you enable MFA for your account to ensure that you know how it affects all users in your account:
 
 * Enabling MFA for all users in your account affects all members of the account. If users in your account are members of multiple {{site.data.keyword.cloud_notm}} accounts, they must enroll for MFA at their next login even if they don't intend to use resources in the account where MFA is enabled.
 * API keys for users and service IDs continue to work after MFA is enabled.
@@ -36,7 +36,7 @@ The following information is helpful to consider before you enable ID-based MFA 
    * Choose a date and time that you plan to enable MFA that results in the least impact to your business.
    * Notify the users in your account after you enable MFA with information on how to get set up.
 
-When you set the ID-based account default MFA, all IBMid users in your account are prompted for IBMid MFA authentication upon login. If you have other MFA factors set up for any IBMid users in your account, they are no longer prompted for those MFA factors. For example, if you previously enabled security questions in the customer portal for your classic infrastructure resources, the MFA account setting overrides the security questions option.
+When you set the account default MFA, all IBMid users in your account are prompted for IBMid MFA authentication upon login. If you have other MFA factors set up for any IBMid users in your account, they are no longer prompted for those MFA factors. For example, if you previously enabled security questions in the customer portal for your classic infrastructure resources, the MFA account setting overrides the security questions option.
 {: tip}
 
 You can also enable and disable MFA in your account on the [Verification methods and authentication factors](https://iam.cloud.ibm.com/mysecurity){: external} page by clicking **Show accounts** > **Manage your own account**.
@@ -57,7 +57,7 @@ The first time that you log in to your account after MFA settings are updated, y
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **Settings**.
 1. Click **Authentication**.
-1. Select the type of MFA that you want to enable in your account. For more information about the MFA options, see [ID-based MFA options](/docs/account?topic=account-types#id-based).
+1. Select the type of MFA that you want to enable in your account. For more information about the MFA options, see [MFA options](/docs/account?topic=account-types#mfa-options).
 
 ### Enabling MFA for an individual user
 {: #enabling-user}
@@ -113,3 +113,7 @@ To disable CLI logins with only a password, complete the following steps:
 
 Users are prompted only once for an additional factor if IBMid detects that a user is logging in to a new device or browser. Once a user logs in using an additional factor on a new device, they aren't prompted for that factor again. This prevents certain programmatic attack vectors and enhances the security of users’ accounts without prompting users each time they log in.
 {: note}
+
+{{/iam-ver-auth.md#resetting-mfa-factors}}
+
+For more information, see [Why can't I log in with my MFA factors?](/docs/account?topic=account-troubleshoot-MFA).

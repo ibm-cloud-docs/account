@@ -71,15 +71,17 @@
               label: Securing your account
               topics:
               - topicgroup:
-                  label: Setting up authentication
+                  label: Setting up multifactor authentication
                   topics:
                   - iam-mfatypes.md
                   - iam-mfa.md
                   - iam-mfa-report.md
                   - iam-ver-auth.md
-                  - iam-totp.md
-                  - iam-external_mfa.md
-                  - iam-securityquestions.md
+                  - legacy-mfa.md
+                  - migrate-mfa.md
+              - topicgroup:
+                  label: Setting up other authentication options
+                  topics:
                   - iam-federation-guide.md
                   - iam-idp-integration.md
                   - iam-ent-idp-ibmid.md
