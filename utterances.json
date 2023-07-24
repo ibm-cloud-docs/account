@@ -27,6 +27,7 @@
     "create account for a client",
     "how to created account",
     "would like an account",
+    "make account on cloud",
     "create account on IBM Cloud"
   ],
   "account-error": [
@@ -828,25 +829,15 @@
     "You have reached this page because your authentication was successful, however, this IBMid is not associated with any IBM Cloud accounts"
   ],
   "ts_login_stalls": [
-    "can't open console after login",
-    "Where is IBM cloud console",
     "the console will not open when I log in",
     "console not opening",
-    "console won't open",
     "i'm unable to access to the IBM Cloud Console",
     "Cloud console won't open",
-    "cannot access console",
     "ibm console is not working",
     "why isn't ibm console working",
     "unable to access to the IBM Cloud Console",
-    "failed to open console",
-    "unable to open console",
     "not able to open the console",
-    "why am I not able to open the console",
-    "i cannot open console",
-    "getting an error when I click on open console",
-    "I cannot open my console",
-    "can't open my console",
+    "can't open my console after login",
     "console doesn't open after logging in"
   ],
   "ts_login_ibmid": [
@@ -943,6 +934,27 @@
     "can't access IaaS services",
     "Lite account have access to infrastructure services"
   ],
+  "rename-enterprise-account": [
+    "changing the name of the account in an enterprise",
+    "enterprise account name change",
+    "change the name of the account",
+    "Is it possible to rename the cloud account",
+    "rename the cloud account",
+    "renaming cloud account",
+    "updating account name in enterprise",
+    "edit account name within an enterprise",
+    "account name editing for enterprises"
+  ],
+  "enterprise-invite-users": [
+    "inviting other users to my enterprise",
+    "ask a user to join an enterprise",
+    "users joining our enterprise",
+    "invite other users to an enterprise",
+    "add his mail ID into our account group",
+    "add a user to an enterprise account",
+    "invitation to a user to an enterprise",
+    "enterprise invite for users"
+  ],
   "resource-group": [
     "what is a resource group",
     "what are iam resource groups",
@@ -982,6 +994,7 @@
     "create two resource groups",
     "cannot create resource group",
     "You do not have access to any resource groups",
+    "trying to add a second resource group",
     "I'm trying to create a new Resource Group",
     "can only administrators add a resource group to the account",
     "adding a resource group to my Lite account",
@@ -1628,6 +1641,7 @@
     "default resource group is missing and I cannot add one",
     "default resource group not visible",
     "don't have a resource group",
+    "I do not have resource groups",
     "don't have a resource group and cannot create one",
     "don't have any resource group available",
     "how to create a default resource group",
