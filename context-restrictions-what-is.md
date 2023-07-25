@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2023-07-07"
+lastupdated: "2023-07-25"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 
@@ -11,7 +11,6 @@ subcollection: account
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # What are context-based restrictions?
 {: #context-restrictions-whatis}
@@ -114,31 +113,31 @@ If you have apps that are deployed in a VPC that need access to a context-based 
 A service reference represents the network locations of a service or service instance. Including a service reference in a network zone adds the IP addresses associated with the service to your allowlist without requiring you to know the service's underlying IP addresses. Service references are helpful since the network locations of cloud services are unknown to the context-based restriction administrator and can change over time.
 
 The following is a list of services that you can add to a network zone as a service reference:
-| Service       | Service type |
-|---------------|--------------|
-| All Account Management services | Account Management |
-| IAM Access Groups Service  | Account Management |
-| IAM User Management | Account Management |
-| [{{site.data.keyword.appconfig_short}}](/docs/app-configuration?topic=app-configuration-ac-access-control-cbr) | IAM-enabled |
-| Cloud {{site.data.keyword.block_storage_is_short}} | IAM-enabled |
-| [Cloud {{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-setting-a-firewall) | IAM-enabled |
-| [{{site.data.keyword.codeengineshort}}](/docs/codeengine?topic=codeengine-cbr) | IAM-enabled |
-| [{{site.data.keyword.databases-for-cassandra}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
-| [{{site.data.keyword.databases-for-enterprisedb}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
-| [{{site.data.keyword.databases-for-elasticsearch}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
-| [{{site.data.keyword.databases-for-etcd}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
-| [{{site.data.keyword.databases-for-mongodb}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
-| [{{site.data.keyword.databases-for-mysql}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
-| [{{site.data.keyword.databases-for-postgresql}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
-| [{{site.data.keyword.databases-for-redis}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled |
-| {{site.data.keyword.dl_short}} | IAM-enabled |
-| [{{site.data.keyword.en_short}}](/docs/event-notifications?topic=event-notifications-en-access-control-cbr) | IAM-enabled |
-| [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-restrict_access#configuring_cbr) | IAM-enabled |
-| [{{site.data.keyword.containershort}}](/docs/containers?topic=containers-cbr&interface=ui) / [{{site.data.keyword.redhat_openshift_notm}}](/docs/openshift?topic=openshift-cbr&interface=ui) | IAM-enabled |
-| [{{site.data.keyword.messages-for-rabbitmq}}](/docs/cloud-databases?topic=cloud-databases-cbr)  | IAM-enabled |
-| {{site.data.keyword.secrets-manager_short}} | IAM-enabled |
-| [VPC Infrastructure Services](/docs/vpc?topic=vpc-cbr&interface=cli#network-zone) | IAM-enabled |
-| [{{site.data.keyword.bpshort}}](/docs/schematics?topic=schematics-access-control-cbr&interface=ui) | IAM-enabled |
+| Service       | Service type | `service_name` |
+|---------------|--------------|----------------|
+| All Account Management services | Account Management | `iam-access-management` |
+| IAM Access Groups Service  | Account Management | `iam-groups` |
+| IAM User Management | Account Management | `user-management` |
+| [{{site.data.keyword.appconfig_short}}](/docs/app-configuration?topic=app-configuration-ac-access-control-cbr) | IAM-enabled |  `apprapp` |
+| Cloud {{site.data.keyword.block_storage_is_short}} | IAM-enabled | |
+| [Cloud {{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-setting-a-firewall) | IAM-enabled | `cloud-object-storage` |
+| [{{site.data.keyword.codeengineshort}}](/docs/codeengine?topic=codeengine-cbr) | IAM-enabled | `codeengine` |
+| [{{site.data.keyword.databases-for-cassandra}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | `databases-for-cassandra` |
+| [{{site.data.keyword.databases-for-enterprisedb}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | `databases-for-enterprisedb` |
+| [{{site.data.keyword.databases-for-elasticsearch}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | `databases-for-elasticsearch` |
+| [{{site.data.keyword.databases-for-etcd}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | `databases-for-etcd` |
+| [{{site.data.keyword.databases-for-mongodb}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | `databases-for-mongodb` |
+| [{{site.data.keyword.databases-for-mysql}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | `databases-for-mysql` |
+| [{{site.data.keyword.databases-for-postgresql}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | `databases-for-postgresql` |
+| [{{site.data.keyword.databases-for-redis}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | `databases-for-redis` |
+| {{site.data.keyword.dl_short}} | IAM-enabled | `directlink` |
+| [{{site.data.keyword.en_short}}](/docs/event-notifications?topic=event-notifications-en-access-control-cbr) | IAM-enabled | `event-notifications` |
+| [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-restrict_access#configuring_cbr) | IAM-enabled | `messagehub` |
+| [{{site.data.keyword.containershort}}](/docs/containers?topic=containers-cbr&interface=ui) / [{{site.data.keyword.redhat_openshift_notm}}](/docs/openshift?topic=openshift-cbr&interface=ui) | IAM-enabled | `containers-kubernetes`|
+| [{{site.data.keyword.messages-for-rabbitmq}}](/docs/cloud-databases?topic=cloud-databases-cbr)  | IAM-enabled | `messages-for-rabbitmq` |
+| {{site.data.keyword.secrets-manager_short}} | IAM-enabled | `secrets-manager` |
+| [VPC Infrastructure Services](/docs/vpc?topic=vpc-cbr&interface=cli#network-zone) | IAM-enabled | |
+| [{{site.data.keyword.bpshort}}](/docs/schematics?topic=schematics-access-control-cbr&interface=ui) | IAM-enabled | `schematics` |
 {: caption="Table 1. Services that are compatible with service references." caption-side="top"}
 
 In table 1, **All Account Management services** refers to the grouping of Account Management type services that are listed in the table. For example, if there are two Account Management services listed in table 1, **All Account Management services** includes those two services. As more Account Management services become available as service references, network zones that specify **All Account Management services** as a service reference automatically include the newly added account management services.
@@ -239,7 +238,6 @@ You can create context-based restrictions for the following services if you are 
 | [{{site.data.keyword.vpc_full}}](/docs/vpc?topic=vpc-cbr) | IAM-enabled | No | `is` |
 | [{{site.data.keyword.bpshort}}](/docs/schematics?topic=schematics-access-control-cbr&interface=ui) | IAM-enabled | No | `schematics` |
 {: caption="Table 4. Services that are compatible with context-based restrictions." caption-side="top"}
-
 
 Context-based restrictions that are defined for IAM-enabled services do not apply to platform actions like create or delete. For more information, see [IAM roles and actions](/docs/account?topic=account-iam-service-roles-actions).
 {: important}
