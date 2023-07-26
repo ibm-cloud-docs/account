@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2023
-lastupdated: "2023-07-21"
+lastupdated: "2023-07-26"
 
 keywords: MFA, multifactor authentication, two-factor authentication, U2F, FIDO U2F, security key
 
@@ -46,7 +46,7 @@ Users authenticate by using an IBMid, password, and time-based one-time passcode
 ### MFA for all users (IBMid and supported IdPs)
 {: #mfa-options-all-users}
 
-Users authenticate by using one of the following MFA factors. This option applies to all users, including users who are using an IBMid or an external identity provider (IdP), like AppID.
+Users authenticate by using one of the following MFA factors. This option applies to all users, including users who are using an IBMid or an external identity provider (IdP), like App ID.
 * Email-based MFA: Users authenticate by using a security passcode, which is sent by email.
 * TOTP MFA: Users authenticate by using a TOTP.
 * U2F MFA: Users authenticate by using a physical hardware-based security key. Based on the FIDO U2F standard, this factor offers the highest level of security.
