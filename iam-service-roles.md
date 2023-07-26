@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-07-25"
+lastupdated: "2023-07-26"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3644,7 +3644,9 @@ Review the available platform and service roles and the actions mapped to each t
 | Role | Description |
 | ----- | :----- |
 | Channel Editor | Custom role to handle subscription activities |
+| Custom Email Status Reporter | Custom role to handle vpc api callbacks |
 | Device Manager | Custom role to handle push device registration with the event-noitifications service |
+| Email Sender | Custom role to send email events from classic to VPC |
 | Event Notification Publisher | Custom role to send notifications |
 | Event Source Manager | Custom role to handle source integration with the event-notifications service |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
@@ -3725,6 +3727,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `event-notifications.integrations.read` | This action is to get an already-created integration | Administrator, Event Source Manager, Manager |
 | `event-notifications.integrations.list` | This action is to list all integrations with EN | Administrator, Event Source Manager, Manager |
 | `event-notifications.integrations.delete` | This action is to delete integration | Event Source Manager, Manager |
+| `event-notifications.custom-email.create` | This action is to send an email event to the VPC endpoint | Email Sender |
+| `event-notifications.custom-email-status.create` | Action to handle the callback from the VPC cluster | Custom Email Status Reporter |
 {: caption="Table 58. Service actions - Event Notifications" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="event-notifications"}
