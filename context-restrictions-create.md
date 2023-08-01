@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2023-02-06"
+lastupdated: "2023-08-01"
 
 
 keywords: create network access, network access rule, network zone
@@ -369,7 +369,7 @@ To create a rule, complete the following steps.
 {: #context-restrictions-create-rules-cli}
 {: cli}
 
-To define restrictions to your cloud resources by creating rules, use the [ibmcloud cbr rule-create](/docs/account?topic=cli-cbr-plugin&interface=cli#cbr-cli-rule-create-command) command. The following example creates a rule that targets the {{site.data.keyword.containershort}} and allows only private endpoints from the specified network zone to access the service.
+To define restrictions to your cloud resources by creating rules, use the [ibmcloud cbr rule-create](/docs/account?topic=account-cbr-plugin#cbr-cli-rule-create-command) command. The following example creates a rule that targets the {{site.data.keyword.containershort}} and allows only private endpoints from the specified network zone to access the service.
 
 ```sh
 ibmcloud cbr rule-create --description 'Example Rule Description' --service-name kms --context-attributes endpointType=private --zone-id 93de8d3f588ab2c457ff576c364d1145 --enforcement-mode report
