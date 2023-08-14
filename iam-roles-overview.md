@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2023
 
-lastupdated: "2023-04-04"
+lastupdated: "2023-08-14"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -24,7 +24,7 @@ All services that are organized in a resource group in your account are managed 
 ## IAM roles
 {: #iamusermanrol}
 
-You can manage and define access based on specific roles for users and resources in your account. 
+You can manage and define access based on specific roles for users and resources in your account.
 
 * Platform management roles cover a range of actions, including the ability to create and delete instances, manage aliases, bindings, and credentials, and manage access. The platform roles are administrator, editor, operator, viewer. Platform management roles also apply to [account management services](/docs/account?topic=account-account-services#account-management-actions-roles) that enable users to invite users, manage service IDs, access policies, catalog entries, and track billing and usage depending on their assigned role on an account management service.
 
@@ -33,7 +33,7 @@ You can manage and define access based on specific roles for users and resources
    You might not see all of the roles that are listed here as options when you assign policies in the UI because only the roles available for the service that you chose are displayed. For more information on what roles are enabled and what actions each access role allows for each service, see the documentation for that service.
    {: note}
 
-* Custom roles for a service can be created on the IAM Roles page by the account owner or a user assigned the administrator role on the role management service. 
+* Custom roles for a service can be created on the IAM Roles page by the account owner or a user assigned the administrator role on the role management service.
 
    You can review the available roles and associated actions for a particular service by going to the [Roles](https://cloud.ibm.com/iam/roles){: external} page, and selecting the service that you want to learn more about. This is the same page where you can create a custom role in the console.
    {: note}
@@ -49,7 +49,7 @@ Select all roles that apply when you create a policy. Each role allows separate 
 The following table provides examples for some of the platform management actions that users can take within the context of catalog resources and resource groups. See the documentation for each catalog product to understand how the roles apply to users within the context of the service that is being used.
 
 
-|                    | One or all IAM-enabled services                                                      | Selected service in a resource group                | Resource group access |
+| Platform management role | One or all IAM-enabled services                                                      | Selected service in a resource group                | Resource group access |
 |--------------------|--------------------------------------------------------------------------------------|-----------------------------------------------------|-------------------------|
 | Viewer role        | View instances, aliases, bindings, and credentials                                   | View only specified instances in the resource group | View resource group     |
 | Operator role      |  View instances and manage aliases, bindings, and credentials                        |  Not applicable                                     | Not applicable          |
@@ -91,7 +91,6 @@ The actions that can be taken based on each assigned role vary based on the serv
 ### Custom access roles
 {: #custom-access}
 
-An account owner or a user assigned the Administrator role on the Role management service can create custom roles for a service on the IAM Roles page. Any number of actions that are available for a service for any platform or service role can be combined and added to a custom named role. 
+An account owner or a user assigned the Administrator role on the Role management service can create custom roles for a service on the IAM Roles page. Any number of actions that are available for a service for any platform or service role can be combined and added to a custom named role.
 
 After the role is created, any user who can assign access for that service sees the new custom role as an option. For more information, see [Creating custom roles](/docs/account?topic=account-custom-roles).
-
