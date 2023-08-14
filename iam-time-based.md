@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023
-lastupdated: "2023-03-06"
+lastupdated: "2023-08-14"
 keywords: access policy, access, policy, restriction, time based restriction, time based, time based conditions, conditions
 
 subcollection: account
@@ -102,7 +102,7 @@ Complete the following steps to assign an access policy with a temporary time-ba
 1. Click **Add condition** and select **One-time**.
 1. Select the time zone.
 
-As an example, let's say that you're creating a conditional policy for a developer that is based in Dublin. In this case, select `UTC+1` so that the date and time range that you select in the next step enforces access at the right time for that location.
+As an example, let's say that you're creating a conditional policy for a developer that is based in Dublin. In this case, select `UTC+1` so that the date and time range that you select in the next step enforces access at the correct time for that location.
 {: tip}
 
 1. Complete the fields for the date and time range that that determines when the condition grants and terminates access.
@@ -493,7 +493,7 @@ Complete the following steps to assign an access policy with a recurring time-ba
 1. Click **Add condition** and select **Weekly**.
 1. Select the time zone for the conditional policy.
 
-As an example, let's say that you're creating a conditional policy for a developer that is based in Dublin. In this case, select `UTC+1` so that the date and time range that you select next is enforced at the right time for that location.
+As an example, let's say that you're creating a conditional policy for a developer that is based in Dublin. In this case, select `UTC+1` so that the date and time range that you select next is enforced at the correct time for that location.
 {: tip}
 
 1. Select the days of the week that you want the condition to grant access.
