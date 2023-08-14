@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2023
-lastupdated: "2023-06-30"
+lastupdated: "2023-08-14"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources, administrator, administrator role
 
@@ -176,7 +176,7 @@ Access groups are best used for granting access for a user's day-to-day work, wh
 
 Use the following table to understand the differences between using access groups and trusted profiles to make the best decision for your use case.
 
-|                                 | Access group                    | Trusted profile                 |
+| Feature | Access group                    | Trusted profile                 |
 |---------------------------------|---------------------------------|---------------------------------|
 | IAM access control              | Yes                             | Yes                             |
 | Inviting users to the {{site.data.keyword.cloud_notm}} account required|  Yes            | No                              |

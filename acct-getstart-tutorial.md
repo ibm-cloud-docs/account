@@ -3,7 +3,7 @@
 copyright:
   years: 2020, 2023
 
-lastupdated: "2023-05-17"
+lastupdated: "2023-08-14"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key
 
@@ -56,9 +56,6 @@ If you're not a part of a company that uses a federated ID, use your IBMid to cr
 1. Confirm your account by clicking the link in the confirmation email that's sent to your provided email address.
 
 See [Account types](/docs/account?topic=account-accounts) to compare and choose an account type.
-
-### Personal use availability
-{: #signup-personalaccts}
 
 ### Personal use availability
 {: #signup-personalaccts}
