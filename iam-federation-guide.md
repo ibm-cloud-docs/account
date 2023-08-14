@@ -62,7 +62,7 @@ During configuration of your {{site.data.keyword.appid_full_notm}} service insta
 
 The following table compares characteristics of each federation option. In both cases, the assumption is that the customer connects either an IBMid or an {{site.data.keyword.appid_full_notm}} instance with their IdP with SAML.
 
-|   |IBMid|{{site.data.keyword.appid_short}}|
+| Feature | IBMid |{{site.data.keyword.appid_short}}|
 |---|---|---|
 |Email address|Users must have a globally unique email address. For example, firstname.lastname@example.com. If your company's email domain is already federated, you can start configuring access to your account. If it's not already federated, a manual process with the IBMid federation team is required to establish federation. During the federation setup process, the customer collaborates with the IBMid federation team to define which email pattern matches with the IdP users. The decision to federate to your company's own user directory needs to involve the person in your company that can make company-wide decisions when it comes to connecting to external parties for identity services. You need to ensure that this person is included in the process. Federating with IBMid can have an impact on non-{{site.data.keyword.Bluemix_notm}} web services that your company already uses with {{site.data.keyword.IBM_notm}}.|This option requires the creation of an {{site.data.keyword.appid_short}} instance. It is a self-service option with a low usage fee. Choosing this option requires a custom URL to log in to {{site.data.keyword.Bluemix_notm}}. In addition, an {{site.data.keyword.appid_short}} instance and configuration of the federation to your IdP is required for every {{site.data.keyword.Bluemix_notm}} account.|
 |Costs|Customers do not need to pay to use IBMid with or without federation.| {{site.data.keyword.appid_full_notm}} instances have a low fee, with a free tier up to 1,000 users and 1,000 events (for example, logins). See the {{site.data.keyword.appid_short}} page for more details.|
@@ -74,8 +74,6 @@ The following table compares characteristics of each federation option. In both 
 | Use of SAML assertions in access group dynamic rules| Any SAML assertion sent by the IdP can be used in access group dynamic rules.| Any SAML assertion sent by the IdP can be used in access group dynamic rules.|
 | Reliability| IBMid is a global service with a dedicated operations team. In case of an outage in a data center, IBMid can failover to a different data center.| Any {{site.data.keyword.appid_full_notm}} instance exists in one region. Failures in that region can prevent account members from being able to log in. Users that are already logged in are usually not affected by such a failure.|
 | Login behavior| Users log in by using the central login page.| You need to use a special URL to log in to your {{site.data.keyword.Bluemix_notm}} account. Your account administrator gets this URL from the IAM [Identity providers](/iam/identity-providers) page in the {{site.data.keyword.Bluemix_notm}} console.|
-{: caption="Table 1. Compare characteristics of the federation options, IBMid and {{site.data.keyword.appid_short}}." caption-side="top"}
-
 
 ## Scenarios
 {: #scenarios}
@@ -113,6 +111,6 @@ The following links help you implement the federation that you choose:
 [Setting up {{site.data.keyword.appid_full_notm}} with your Active Directory Federation Service](https://www.ibm.com/cloud/blog/setting-ibm-cloud-app-id-active-directory-federation-service)
 :   A description of how to set up an {{site.data.keyword.appid_full_notm}} instance with Microsoft Active Directory. This blog entry is describing the general way how to connect Microsoft Active Directory, but does not make any additional steps to ensure that attributes required by {{site.data.keyword.Bluemix_notm}} IAM are correctly mapped. You must make sure to provide the attributes described here to successfully display user data.
 
-[{{site.data.keyword.Bluemix_notm}} Account Single Sign-on by using {{site.data.keyword.appid_full_notm}} and Microsoft Azure AD](https://medium.com/@vrvignesh/ibm-cloud-account-single-sign-on-using-ibm-cloud-app-id-and-microsoft-azure-ad-88932a5660a2){: external}
+[{{site.data.keyword.Bluemix_notm}} Account Single Sign-on by using {{site.data.keyword.appid_full_notm}} and Microsoft Azure AD](https://medium.com/@vrvignesh/ibm-cloud-account-single-sign-on-using-ibm-cloud-app-id-and-microsoft-azure-ad-88932a5660a2)
 :   This blog entry shows the whole process of integrating Microsoft Azure Active Directory with {{site.data.keyword.Bluemix_notm}} using {{site.data.keyword.appid_full_notm}}.
 Check out the documentation to learn more about Identity and Access Management in {{site.data.keyword.Bluemix_notm}}.
