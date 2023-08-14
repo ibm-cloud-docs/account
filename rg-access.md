@@ -4,8 +4,8 @@
 
 copyright:
 
-  years: 2020, 2021
-lastupdated: "2021-06-02"
+  years: 2020, 2023
+lastupdated: "2023-08-14"
 
 keywords: resource group access, access to resource group, access to resource in resource group
 
@@ -32,7 +32,7 @@ Assign a user a role to manage a specific resource group. Then, the user can vie
 
 Review the following table for more information what each assigned platform IAM role provides a user the ability to do:
 
-|   | Actions for Access to Manage Resource Groups | Actions on Resources in Resource Groups |
+| Role | Actions for Access to Manage Resource Groups | Actions on Resources in Resource Groups |
 |:-----------------|:--------------|:---------------|
 | Viewer role  | View the group and its characteristics, but can't view resources in the group without a policy on the resource itself | View resources in the group if a viewer role or higher is assigned on the resource group itself |
 | Operator role | Not applicable | Not applicable |
