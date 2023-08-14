@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2022
-lastupdated: "2022-03-23"
+  years: 2021, 2023
+lastupdated: "2023-08-14"
 
 keywords: dashboard, widgets display, manage visibility, customize, console, dashboard templates
 
@@ -23,7 +23,7 @@ IAM access policies are not required for users in your account to view a dashboa
 Aside from being able to view dashboards, users can view resource details that are displayed within a dashboard widget only if they have the required access on the individual resource. For more information, see [IAM access](/docs/account?topic=account-userroles).
 
 ## Creating a dashboard
-{: dash-create}
+{: #dash-create}
 
 To begin creating a dashboard, complete the following steps:
 
@@ -46,7 +46,7 @@ Any dashboard that is shared with you appears on your dashboards page.
 {: note}
 
 ### Managing your dashboard
-{: dash-manage}
+{: #dash-manage}
 
 After you create a dashboard, you can manage your dashboard by in the {{site.data.keyword.Bluemix_notm}} console by going to **Manage** > **Account**, and selecting **Account resources** > **Dashboards**. Or, from your dashboard click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Manage my dashboards**.
 
