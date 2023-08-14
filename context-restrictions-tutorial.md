@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2023-02-08"
+lastupdated: "2023-08-14"
 
 keywords: network-level access, network security strategy
 subcollection: account
@@ -70,7 +70,7 @@ Now, Xander can use the network zone that he created in a rule.
 1. Click **Continue**.
 1. Then, click **Create**.
 
-Xander is logging and monitoring policy management requests by using report-only mode. Since the management team has the right access policies and use allowed IP addresses, they are authorized to execute policy management operations. All policy management requests that come from IP addresses that don't match the conext that Xander defined are denied when the rule is enabled.
+Xander is logging and monitoring policy management requests by using report-only mode. Since the management team has the correct access policies and use allowed IP addresses, they are authorized to execute policy management operations. All policy management requests that come from IP addresses that don't match the conext that Xander defined are denied when the rule is enabled.
 
 ## Next steps
 {: #tutorial-context-step-next}
