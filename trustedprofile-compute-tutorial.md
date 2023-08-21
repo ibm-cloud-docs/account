@@ -4,7 +4,7 @@ copyright:
 
   years: 2021, 2022
 
-lastupdated: "2022-11-15"
+lastupdated: "2023-08-21"
 
 keywords: trusted profile, compute resource, granting access, tutorial, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 subcollection: account
@@ -28,7 +28,7 @@ This tutorial guides you through the steps to centrally manage fine-grained auth
 
 By using trusted profiles, you can establish a flexible, secure way for apps that are running on a compute resource to access other {{site.data.keyword.cloud}} resources. All compute resource instances that share certain attributes, such as name, namespace, tags, or location, are mapped to a common profile and can share access to {{site.data.keyword.cloud_notm}} resources. This common identity makes it possible to give the applications within various compute resources access to an external resource one time, rather than cluster-by-cluster.
 
-You must enable the "Service Account Token Volume Projection" on the Kubernetes cluster to apply the trusted profile identity. For more information, see [Authorizing pods in your cluster to IBM Cloud services with IAM trusted profiles](/docs/containers?topic=containers-pod-iam-identity&interface=ui)
+You must enable the **Service Account Token Volume Projection** on the Kubernetes cluster to apply the trusted profile identity. For more information, see [Authorizing pods in your cluster to IBM Cloud services with IAM trusted profiles](/docs/containers?topic=containers-pod-iam-identity&interface=ui)
 {: note}
 
 Let's say that you are the lead developer on a project for your team that is planning to run a new chatbot app on an {{site.data.keyword.containerfull}} cluster. You want the app to have access to IAM-enabled services but without storing credentials in the code. Your manager has given you an administrator access in the account to create trusted profiles and give your runtime environments access to the resources you need to build the chatbot app.
