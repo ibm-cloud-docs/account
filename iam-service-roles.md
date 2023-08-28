@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-08-27"
+lastupdated: "2023-08-28"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3729,6 +3729,11 @@ Review the available platform and service roles and the actions mapped to each t
 | `event-notifications.integrations.delete` | This action is to delete integration | Event Source Manager, Manager |
 | `event-notifications.custom-email.create` | This action is to send an email event to the VPC endpoint | Email Sender |
 | `event-notifications.custom-email-status.create` | Action to handle the callback from the VPC cluster | Custom Email Status Reporter |
+| `event-notifications.templates.create` | This action is to create a templates | Administrator, Manager, Writer |
+| `event-notifications.templates.read` | This action is to get a single template | Administrator, Manager, Reader, Writer |
+| `event-notifications.templates.list` | This action is to list all templates | Administrator, Manager, Reader, Writer |
+| `event-notifications.templates.update` | This action is to update a template | Administrator, Manager, Writer |
+| `event-notifications.templates.delete` | This action is to delete a single template | Administrator, Manager, Writer |
 {: caption="Table 58. Service actions - Event Notifications" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="event-notifications"}
