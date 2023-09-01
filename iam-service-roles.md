@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-08-31"
+lastupdated: "2023-09-01"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1664,6 +1664,11 @@ Review the available platform and service roles and the actions mapped to each t
 | `PATCH /v5/:platform/deployments/:deployment_id/users/:user_id/password` | Update password | Administrator, Editor, Operator |
 | `GET /v5/:platform/deployments/:deployment_id/check_updates` | Check deployment for available updates | Administrator, Editor, Operator, Viewer |
 | `PATCH /v5/:platform/deployments/:deployment_id/billable` | Set billable annotation to true | Administrator, Editor, Operator |
+| `GET /v4/:platform/deployments/:deployment_id/privatelink/allowlist` | Read Privatelink allowlist of principals | Administrator, Editor, Operator, Viewer |
+| `PATCH /v4/:platform/deployments/:deployment_id/privatelink/allowlist` | Patch Privatelink allowlist principals | Administrator, Editor, Operator |
+| `GET /v4/:platform/deployments/:deployment_id/groups/schedule_scaling` | Read scheduled scaling configuration | Administrator, Editor, Operator, Viewer |
+| `POST /v4/:platform/deployments/:deployment_id/groups/schedule_scaling` | Update scheduled scaling | Administrator, Editor, Operator |
+| `DELETE /v4/:platform/deployments/:deployment_id/groups/schedule_scaling` | Delete scheduled scaling | Administrator, Editor, Operator |
 {: caption="Table 31. Service actions - Db2 Warehouse" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="dashdb"}
