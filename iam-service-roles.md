@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-09-01"
+lastupdated: "2023-09-02"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -4471,6 +4471,18 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 {: #platform-roles-table74}
 
+| Role | Description |
+| ----- | :----- |
+| Assignment Administrator | Template Assignment Administrator |
+| Template Administrator | Template Administrator |
+{: row-headers}
+{: caption="Table 74. Service roles - IAM Access Groups" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="iam-groups"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table74}
+
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `iam-groups.groups.create` | Create an access group | Administrator, Editor |
@@ -4490,6 +4502,13 @@ Review the available platform and service roles and the actions mapped to each t
 | `iam-groups.groups.audit` | View access groups audit data | Administrator, Editor, Viewer |
 | `iam-groups.account-settings.read` | View access groups account settings | Administrator, Editor, Viewer |
 | `iam-groups.account-settings.update` | Update access groups account settings | Administrator |
+| `iam-groups.group-template.create` | Create an Access Groups Template | Template Administrator |
+| `iam-groups.group-template.read` | Get an Access Groups Template | Assignment Administrator, Template Administrator |
+| `iam-groups.group-template.update` | Update an Access Groups Template | Template Administrator |
+| `iam-groups.group-template.delete` | Delete an Access Groups Template | Template Administrator |
+| `iam-groups.group-assignment.create` | Create an Access Groups Template Assignment | Assignment Administrator |
+| `iam-groups.group-assignment.read` | Get an Access Groups Template assignment | Assignment Administrator, Template Administrator |
+| `iam-groups.group-assignment.delete` | Delete an Access Groups Template Assignment | Assignment Administrator |
 {: caption="Table 74. Service actions - IAM Access Groups" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="iam-groups"}
@@ -4518,7 +4537,9 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
+| Assignment Administrator | A Template Deployment Administrator can manage the deployment of Enterprise Templates |
 | Service ID creator | Can create service IDs when the account setting to restrict service ID creation is enabled. |
+| Template Administrator | A Template Administrator can manage Enterprise Templates |
 | User API key creator | Can create API keys when the account setting to restrict API key creation is enabled. |
 {: row-headers}
 {: caption="Table 75. Service roles - IAM Identity Service" caption-side="top"}
@@ -4570,7 +4591,23 @@ Review the available platform and service roles and the actions mapped to each t
 | `iam-identity.activity.get` | Get authentication activity information | Administrator, Editor, Operator, Viewer |
 | `iam-identity.report.create` | Trigger report creation for an account | Administrator |
 | `iam-identity.report.get` | Get a report for an account | Administrator |
+| `iam-identity.profile-template.create` | Create a new Trusted Profile template | Template Administrator |
+| `iam-identity.profile-template.read` | Get the details of an existing Trusted Profile template | Assignment Administrator, Template Administrator |
+| `iam-identity.profile-template.update` | Update the details of a Trusted Profile template | Template Administrator |
+| `iam-identity.profile-template.delete` | Delete a Trusted Profile template | Template Administrator |
+| `iam-identity.account-settings-template.create` | Create a new Account Settings template | Template Administrator |
+| `iam-identity.account-settings-template.read` | Get the details of an Account Settings template | Assignment Administrator, Template Administrator |
+| `iam-identity.account-settings-template.update` | Update an existing Account Settings template | Template Administrator |
+| `iam-identity.account-settings-template.delete` | Delete an Account Settings template | Template Administrator |
 | `iam-identity.mfa-status.get` | Get MFA Enrollment Status | Administrator |
+| `iam-identity.profile-assignment.create` | Assign a Trusted Profile Template to a target Account or AccountGroup | Assignment Administrator |
+| `iam-identity.profile-assignment.delete` | Delete an assignment of a trusted profile | Assignment Administrator |
+| `iam-identity.profile-assignment.read` | Get the details of a Trusted Profile Assignment | Assignment Administrator, Template Administrator |
+| `iam-identity.profile-assignment.update` | Update an assignment of a trusted profile | Assignment Administrator |
+| `iam-identity.account-settings-assignment.create` | Assign an Account Settings Template to a target Account or AccountGroup | Assignment Administrator |
+| `iam-identity.account-settings-assignment.delete` | Delete an assignment of Account Settings | Assignment Administrator |
+| `iam-identity.account-settings-assignment.read` | Get the details of an Account Settings Assignment | Assignment Administrator, Template Administrator |
+| `iam-identity.account-settings-assignment.update` | Update an assignment of Account Settings | Assignment Administrator |
 {: caption="Table 75. Service actions - IAM Identity Service" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="iam-identity"}
