@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-03-31"
+lastupdated: "2023-09-05"
 
 keywords: IAM, what is IAM, comparing IAM concepts
 
@@ -42,6 +42,7 @@ The following mappings of {{site.data.keyword.cloud_notm}} IAM concepts to those
 | Resource groups  | Logical organization container for IAM-enabled services | Tags  | Resource groups | Projects |
 | Public access | Public access to specific resources is enabled through a default access group called Public Access. This feature can be disabled on each account. | Feature of Amazon S3 that can be enabled for specific resources, and can be disabled at the account or bucket level. | Public read access can be enabled for specific account types or resources. It can be disabled at the storage account or container level. | Google has an identifier for allAuthenticatedUsers that represents all service accounts and all users who are authenticated with a Google Account, which can also be granted access. |
 | Auditing | Audit with Activity Tracker | Audit with AWS CloudTrail | Azure Logging and Auditing Activity logs | Audit with Audit logging |
+| Enterprise-managed IAM | Centrally administer access and security settings for an {{site.data.keyword.cloud_notm}} multi-account environment. | AWS Control Tower |  |   |
 {: row-headers}
 {: caption="Table 1. {{site.data.keyword.cloud_notm}} IAM concept comparison" caption-side="top"}
 {: summary="The first column is {{site.data.keyword.cloud_notm}} IAM concept. Then, each of the following columns has details as that concept relates the specific cloud provider that is listed in the column header."}

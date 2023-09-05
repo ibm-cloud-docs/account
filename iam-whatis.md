@@ -97,6 +97,15 @@ By using trusted profiles, you can define fine-grained authorization for all app
 *  Applications running on a compute resource can have a flexible, but secure way to access other {{site.data.keyword.cloud_notm}} services from within compute resources. For example, it's more secure not having to store API keys.
 *  All compute resource instances that share certain conditions such as name, namespace, tags, or location, their identities are mapped to a common profile and can share access to {{site.data.keyword.cloud_notm}} resources. This common identity makes it possible to give the applications within various compute resources access to an external resource one time rather than cluster-by-cluster.
 
+### Enterprise-managed IAM templates for centrally managing access in enterprises
+{: #enterprise-templates-feature}
+
+Your enterprise can easily scale access management and ensure consistent account security settings throughout the organizaiton by using enterprise-managed IAM templates. You can create templates for IAM resources like access groups, trusted profiles, and account security settings that you assign throughout the enterprise. When you assign an IAM template to child accounts, enterprise-managed IAM resources are created in the child accounts that you select.
+
+For example, there might be a certain job role in every child account that requires the same permissions. You can create an access group template with the necessary access polices and assign the template to all of the child accounts in your enterprise. This way, you reduce policy drift and can be certain that users with that job role have only the access that is necessary in each account.
+
+For more information, see [How enterprise-managed IAM works](/docs/secure-enterprise?topic=secure-enterprise-access-enterprises#how-enterprise-iam).
+
 ### API keys for user authentication
 {: #apikey-feature}
 
