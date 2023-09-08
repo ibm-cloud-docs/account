@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-09-07"
+lastupdated: "2023-09-08"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -5790,6 +5790,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `kms.secrets.purge` | Purge an encryption key. | KeyPurge |
 | `kms.secrets.patch` | Patch attributes of an encryption key. | Manager |
 | `kms.secrets-with-policy-overrides.create` | Create an encryption key with policy overrides. | Manager |
+| `kms.secrets-migration-intent.read` | Retrieves a migration intent for an encryption key. | Manager, Reader, ReaderPlus, Writer |
+| `kms.secrets-migration-intent.create` | Create a migration intent for an encryption key. | Manager |
+| `kms.secrets-migration-intent.delete` | Delete a migration intent for an encryption key. | Manager |
 {: caption="Table 106. Service actions - IBM Key Protect" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="kms"}
