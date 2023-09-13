@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-09-12"
+lastupdated: "2023-09-13"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3265,8 +3265,8 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `datacatalog` |  | Administrator |
-| `datacatalog.catalog.create` |  | Administrator, Manager, Writer |
+| `datacatalog` | Do not use - Please select from the IBM Cloud Pak for Data service | Administrator |
+| `datacatalog.catalog.create` | Do not use - Please select from the IBM Cloud Pak for Data service | Administrator, Manager, Writer |
 {: caption="Table 46. Service actions - IBM Knowledge Catalog for Watson Data and AI" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="datacatalog"}
