@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-09-13"
+lastupdated: "2023-09-14"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -5631,6 +5631,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.vpc.routing-table.update` | Update Routing Table and Routes | Administrator, Editor |
 | `is.vpc.routing-table.delete` | Delete Route Table | Administrator, Editor |
 | `is.vpc.routing-table.operate` | Configure Subnet Attachment to Route Table | Administrator, Editor, Operator |
+| `is.vpc.routing-table.advertise` | Enable or disable route advertisement of non-VPC address prefixes and routes to Transit Gateway and Direct Link | Administrator, Editor |
 {: caption="Table 103. Service actions - Virtual Private Cloud" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.vpc"}
