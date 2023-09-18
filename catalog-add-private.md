@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2023-04-26"
+lastupdated: "2023-09-18"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -30,7 +30,11 @@ The process to onboard software to your account includes importing a version to 
    * OVA images that are deployed on VMware Solutions Dedicated - vCenter Server
    * Virtual server images with Terraform deployed on VPC infrastructure or {{site.data.keyword.powerSys_notm}}
    * Virtual server images for VPC
-   * Operators with a TGZ file from GitHub or GitLab repositories
+
+    Onboarding virtual server images for VPC with {{site.data.keyword.IBMz}} deployment support is available in private catalogs. The onboarding experience for {{site.data.keyword.IBMz_notm}}-supported virtual server images is the same as how you onboard other virtual server images in your private catalog.
+    {: note}
+   
+   * Operators with TGZ file from GitHub or GitLab repositories
    * Operator bundles from Red Hat OpenShift registries
 
 1. Upload your source code to a release in your GitHub or GitLab repository. See [Setting up your source code repository](/docs/sell?topic=sell-source-repo-setup).
