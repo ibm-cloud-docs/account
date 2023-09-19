@@ -4,7 +4,7 @@ copyright:
 
   years: 2021, 2022
 
-lastupdated: "2022-09-26"
+lastupdated: "2023-09-19"
 
 keywords: auditing IAM policies, last permit information, restore policies, inactive policies
 
@@ -19,6 +19,8 @@ subcollection: account
 
 To reduce the number of policies in the account and keep only the minimum access that is necessary for each user, you can identify the infrequently used access policies. You can determine whether to remove them, or in some cases, you might expect an infrequently used policy.
 {: shortdesc}
+
+Access policies are how users, service IDs, access groups, and trusted profiles in the account are given permission to access and take actions on account resources. Policies include a subject, target, and role. The subject is the user, service ID, or access group that you are providing access. The target of the policy is the resource to which you want to provide access. And, the {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) roles define the level of access or allowed actions on the target of the policy. In addition to access policies for users and service IDs, there is a policy type that is called an authorization that allows specific services or instances of services access to other services. You can learn more about assigning access between services in the [Using authorizations to grant access between services](/docs/account?topic=account-serviceauth) documentation. For more information about access policies, see [What are IAM policies and who can assign them?](/docs/account?topic=account-iamusermanpol).
 
 IAM captures authorization information for each policy. This information includes the last time that the policy was used to grant a permit and a running count of its use.
 
