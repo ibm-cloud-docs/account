@@ -31,7 +31,7 @@ The process to onboard software to your account includes importing a version to 
    * Virtual server images with Terraform deployed on VPC infrastructure or {{site.data.keyword.powerSys_notm}}
    * Virtual server images for VPC
 
-    Onboarding virtual server images for VPC with {{site.data.keyword.IBMz}} deployment support is available in private catalogs. The onboarding experience for {{site.data.keyword.IBMz_notm}}-supported virtual server images is the same as how you onboard other virtual server images in your private catalog.
+    Onboarding Virtual Server Images for VPC with {{site.data.keyword.IBMz}} deployment support is available in private catalogs. The onboarding experience for {{site.data.keyword.IBMz_notm}}-supported Virtual Server Images is the same as how you onboard other Virtual Server Images in your private catalog.
     {: note}
    
    * Operators with TGZ file from GitHub or GitLab repositories
