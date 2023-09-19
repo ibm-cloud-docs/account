@@ -57,11 +57,12 @@ To view inactive identities by using the [IAM Identity Services API](/apidocs/ia
 
 1. Trigger the inactive identities report for your account.
 
-   ```bash
+   ```sh
    curl -X POST 'https://iam.test.cloud.ibm.com/v1/activity/accounts/ACCOUNT_ID/report' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json'
    ```
-   {: curl}
    {: codeblock}
+   {: curl}
+
 
    ```java
    CreateReportOptions createReportOptions = new CreateReportOptions.Builder()
@@ -75,8 +76,9 @@ To view inactive identities by using the [IAM Identity Services API](/apidocs/ia
 
    System.out.println(reportReferenceValue);
    ```
-   {: java}
    {: codeblock}
+   {: java}
+
 
    ```javascript
    const params = {
@@ -93,8 +95,8 @@ To view inactive identities by using the [IAM Identity Services API](/apidocs/ia
    console.warn(err);
    }
    ```
-   {: javascript}
    {: codeblock}
+   {: javascript}
 
    ```python
    create_report_response = iam_identity_service.create_report(
@@ -105,8 +107,8 @@ To view inactive identities by using the [IAM Identity Services API](/apidocs/ia
 
    print(json.dumps(create_report_response, indent=2))
    ```
-   {: python}
    {: codeblock}
+   {: python}
 
    ```go
    createReportOptions := iamIdentityService.NewCreateReportOptions(accountID)
@@ -120,16 +122,16 @@ To view inactive identities by using the [IAM Identity Services API](/apidocs/ia
    b, _ := json.MarshalIndent(report, "", "  ")
    fmt.Println(string(b))
    ```
-   {: go}
    {: codeblock}
+   {: go}
 
 1. Get the inactive identities report.
 
-   ```bash
+   ```sh
    curl -X GET 'https://iam.test.cloud.ibm.com/v1/activity/accounts/ACCOUNT_ID/report/REFERENCE' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json'
    ```
-   {: bash}
    {: codeblock}
+   {: curl}
 
    ```java
    GetReportOptions getReportOptions = new GetReportOptions.Builder()
@@ -142,8 +144,8 @@ To view inactive identities by using the [IAM Identity Services API](/apidocs/ia
 
    System.out.println(fetchedReport);
    ```
-   {: java}
    {: codeblock}
+   {: java}
 
    ```javascript
    const params = {
@@ -158,8 +160,8 @@ To view inactive identities by using the [IAM Identity Services API](/apidocs/ia
    console.warn(err);
    }
    ```
-   {: javascript}
    {: codeblock}
+   {: javascript}
 
    ```python
    get_report_response = iam_identity_service.get_report(
@@ -168,8 +170,8 @@ To view inactive identities by using the [IAM Identity Services API](/apidocs/ia
 
    print(json.dumps(get_report_response, indent=2))
    ```
-   {: python}
    {: codeblock}
+   {: python}
 
    ```go
    getReportOptions := iamIdentityService.NewGetReportOptions(accountID, "latest")
@@ -181,19 +183,19 @@ To view inactive identities by using the [IAM Identity Services API](/apidocs/ia
    b, _ := json.MarshalIndent(report, "", "  ")
    fmt.Println(string(b))
    ```
-   {: go}
    {: codeblock}
+   {: go}
 
    Take note of the IAM IDs for inactive users.
    {: tip}
 
 4. To delete inactive users that are no longer in use, call the [User Management API](/apidocs/user-management#remove-user).
 
-   ```bash
+   ```sh
    curl -X DELETE https://user-management.cloud.ibm.com/v2/accounts/987d4cfd77b04e9b9e1a6asdcc861234/users/IBMid-1000000000 -H 'Authorization: Bearer <IAM_TOKEN>' -H 'Content-Type: application/json'
    ```
-   {: bash}
    {: codeblock}
+   {: curl}
 
    ```java
    RemoveUserOptions removeUserOptions = new RemoveUserOptions.Builder()
@@ -203,8 +205,8 @@ To view inactive identities by using the [IAM Identity Services API](/apidocs/ia
 
    Response<Void> response = userManagementService.removeUser(removeUserOptions).execute();
    ```
-   {: java}
    {: codeblock}
+   {: java}
 
    ```javascript
    const params = {
@@ -218,8 +220,8 @@ To view inactive identities by using the [IAM Identity Services API](/apidocs/ia
    console.warn(err);
    }
    ```
-   {: javascript}
    {: codeblock}
+   {: javascript}
 
    ```python
    response = user_management_admin_service.remove_user(
@@ -229,8 +231,8 @@ To view inactive identities by using the [IAM Identity Services API](/apidocs/ia
 
    print(json.dumps(response, indent=2))
    ```
-   {: python}
    {: codeblock}
+   {: python}
 
    ```go
    removeUserOptions := userManagementService.NewRemoveUserOptions(
@@ -243,8 +245,8 @@ To view inactive identities by using the [IAM Identity Services API](/apidocs/ia
    panic(err)
    }
    ```
-   {: go}
    {: codeblock}
+   {: go}
 
    Before you delete an identity, confirm that they are inactive for at least 30 days.
    {: note}
