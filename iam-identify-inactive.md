@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022
-lastupdated: "2022-09-12"
+lastupdated: "2023-09-19"
 
 keywords: inactive identity, inactive identities, inactive, inactive users, inactive service IDs, inactive trusted profiles, inactive API keys
 
@@ -23,6 +23,7 @@ When you delete an identity from the table, for example a user, and click **Upda
 
 ## Managing inactive identities in the console
 {: #manage-inactive-identities}
+{: ui}
 
 To view inactive identities in the console, complete the following steps:
 
@@ -44,3 +45,213 @@ To learn more about the implications of removing or deleting identities in your 
    - [Removing trusted profiles](/docs/account?topic=account-trusted-profile-remove)
    - [Deleting an API key](/docs/account?topic=account-userapikey&interface=ui#delete_user_key)
    - [Deleting an API key for a service ID](/docs/account?topic=account-serviceidapikeys&interface=ui#delete_service_key)
+
+
+## Managing inactive identities by using the API
+{: #manage-inactive-identities-api}
+{: api}
+
+To view inactive identities by using the [IAM Identity Services API](/apidocs/iam-identity-token-api#create-report), complete the following steps:
+
+1. Get your account ID, which you'll need in later steps. Go to the [Account settings](/account/settings) page in the console to view your account ID. The account ID is a 32 character, unique account identifier.
+
+1. Trigger the inactive identities report for your account.
+
+   ```bash
+   curl -X POST 'https://iam.test.cloud.ibm.com/v1/activity/accounts/ACCOUNT_ID/report' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json'
+   ```
+   {: curl}
+   {: codeblock}
+
+   ```java
+   CreateReportOptions createReportOptions = new CreateReportOptions.Builder()
+    .accountId(accountId)
+    .build();
+
+   Response<ReportReference> response = service.createReport(createReportOptions).execute();
+   ReportReference reportReference = response.getResult();
+
+   reportReferenceValue = reportReference.getReference();
+
+   System.out.println(reportReferenceValue);
+   ```
+   {: java}
+   {: codeblock}
+
+   ```javascript
+   const params = {
+   accountId: accountId,
+   type: 'inactive',
+   duration: '120',
+   };
+
+   try {
+   const res = await iamIdentityService.createReport(params);
+   reportReference = res.reference;
+   console.log(JSON.stringify(res.result, null, 2));
+   } catch (err) {
+   console.warn(err);
+   }
+   ```
+   {: javascript}
+   {: codeblock}
+
+   ```python
+   create_report_response = iam_identity_service.create_report(
+   account_id=account_id,
+   type="inactive",
+   duration="120",
+   ).get_result()
+
+   print(json.dumps(create_report_response, indent=2))
+   ```
+   {: python}
+   {: codeblock}
+
+   ```go
+   createReportOptions := iamIdentityService.NewCreateReportOptions(accountID)
+   createReportOptions.SetType("inactive")
+   createReportOptions.SetDuration("120")
+
+   report, response, err := iamIdentityService.CreateReport(createReportOptions)
+   if err != nil {
+   panic(err)
+   }
+   b, _ := json.MarshalIndent(report, "", "  ")
+   fmt.Println(string(b))
+   ```
+   {: go}
+   {: codeblock}
+
+1. Get the inactive identities report.
+
+   ```bash
+   curl -X GET 'https://iam.test.cloud.ibm.com/v1/activity/accounts/ACCOUNT_ID/report/REFERENCE' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json'
+   ```
+   {: bash}
+   {: codeblock}
+
+   ```java
+   GetReportOptions getReportOptions = new GetReportOptions.Builder()
+      .accountId(accountId)
+      .reference(reportReferenceValue)
+      .build();
+
+   Response<Report> response = service.getReport(getReportOptions).execute();
+   Report fetchedReport = response.getResult();
+
+   System.out.println(fetchedReport);
+   ```
+   {: java}
+   {: codeblock}
+
+   ```javascript
+   const params = {
+   accountId: accountId,
+   reference: 'latest',
+   };
+
+   try {
+   const res = await iamIdentityService.getReport(params);
+   console.log(JSON.stringify(res.result, null, 2));
+   } catch (err) {
+   console.warn(err);
+   }
+   ```
+   {: javascript}
+   {: codeblock}
+
+   ```python
+   get_report_response = iam_identity_service.get_report(
+   account_id=account_id, reference="latest"
+   ).get_result()
+
+   print(json.dumps(get_report_response, indent=2))
+   ```
+   {: python}
+   {: codeblock}
+
+   ```go
+   getReportOptions := iamIdentityService.NewGetReportOptions(accountID, "latest")
+
+   report, response, err := iamIdentityService.GetReport(getReportOptions)
+   if err != nil {
+   panic(err)
+   }
+   b, _ := json.MarshalIndent(report, "", "  ")
+   fmt.Println(string(b))
+   ```
+   {: go}
+   {: codeblock}
+
+   Take note of the IAM IDs for inactive users.
+   {: tip}
+
+4. To delete inactive users that are no longer in use, call the [User Management API](/apidocs/user-management#remove-user).
+
+   ```bash
+   curl -X DELETE https://user-management.cloud.ibm.com/v2/accounts/987d4cfd77b04e9b9e1a6asdcc861234/users/IBMid-1000000000 -H 'Authorization: Bearer <IAM_TOKEN>' -H 'Content-Type: application/json'
+   ```
+   {: bash}
+   {: codeblock}
+
+   ```java
+   RemoveUserOptions removeUserOptions = new RemoveUserOptions.Builder()
+   .accountId(accountId)
+   .iamId(deleteUserId)
+   .build();
+
+   Response<Void> response = userManagementService.removeUser(removeUserOptions).execute();
+   ```
+   {: java}
+   {: codeblock}
+
+   ```javascript
+   const params = {
+   accountId: accountId,
+   iamId: deleteUserId,
+   };
+
+   try {
+   await userManagementAdminService.removeUser(params);
+   } catch (err) {
+   console.warn(err);
+   }
+   ```
+   {: javascript}
+   {: codeblock}
+
+   ```python
+   response = user_management_admin_service.remove_user(
+   account_id=account_id,
+   iam_id=delete_user_id,
+   ).get_result()
+
+   print(json.dumps(response, indent=2))
+   ```
+   {: python}
+   {: codeblock}
+
+   ```go
+   removeUserOptions := userManagementService.NewRemoveUserOptions(
+   accountID,
+   deleteUserID,
+   )
+
+   response, err := userManagementAdminService.RemoveUser(removeUserOptions)
+   if err != nil {
+   panic(err)
+   }
+   ```
+   {: go}
+   {: codeblock}
+
+   Before you delete an identity, confirm that they are inactive for at least 30 days.
+   {: note}
+
+To learn more about the implications of removing or deleting identities in your account, review the following documentation:
+   - [Removing users from an account](/docs/account?topic=account-remove)
+   - [Deleting service IDs](/docs/account?topic=account-serviceid#delete_serviceid)
+   - [Removing trusted profiles](/docs/account?topic=account-trusted-profile-remove)
+   - [Deleting an API key](/docs/account?topic=account-userapikey#delete_user_key)
+   - [Deleting an API key for a service ID](/docs/account?topic=account-serviceidapikeys#delete_service_key)
