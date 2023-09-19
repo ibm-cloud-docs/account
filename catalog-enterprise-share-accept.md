@@ -24,7 +24,7 @@ When you accept a share request, products that are shared by the requesting acco
 {: #prereqs-enterprise-share}
 
 * You must be assigned the Administrator role on the Catalog Management service in the individual account itself.
-* You must be assigned the Editor role for the account group itself if you're managing share requests for account groups.
+* You must be assigned the Editor role for the enterprise itself if you're managing share requests that are for the enterprise.
 
 For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
 
