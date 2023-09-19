@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2023
-lastupdated: "2023-08-22"
+lastupdated: "2023-09-19"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, vpc, virtual private cloud
 
@@ -23,10 +23,10 @@ completion-time: 20m
 {: toc-services="cloud-object-storage, vpc"}
 {: toc-completion-time="20m"}
 
-This tutorial walks you through how to onboard a sample virtual server image for virtual private cloud (VPC) to your account. By completing this tutorial, you learn how to create a private catalog, import the image, validate that it can be installed on a selected deployment target, and make the virtual server image available to users who have access to your account. As you complete the tutorial, adapt each step to match your organization's goal.
+This tutorial walks you through how to onboard a sample virtual server image for virtual private cloud (VPC) to your account. By completing this tutorial, you learn how to create a private catalog, import the image, validate that it can be installed on a selected deployment target, and make the virtual server image available to users who have access to your account. As you complete the tutorial, adapt each step to match your organization's goal. This tutorial includes steps for deploying a virtual server image to a target {{site.data.keyword.cloud_notm}} Virtual Private Cloud (VPC). As a result, you incur associated infrastructure charges.
 {: shortdesc}
 
-The tutorial includes steps for deploying a virtual server image to a target {{site.data.keyword.cloud_notm}} Virtual Private Cloud (VPC). As a result, you incur associated infrastructure charges.
+Onboarding Virtual Server Images for VPC with {{site.data.keyword.IBMz}} deployment support is available in private catalogs. The onboarding experience for {{site.data.keyword.IBMz_notm}}-supported Virtual Server Images is the same as how you onboard other Virtual Server Images in your private catalog.
 {: note}
 
 ## Before you begin
