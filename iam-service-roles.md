@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-09-19"
+lastupdated: "2023-09-20"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3917,7 +3917,17 @@ Review the available platform and service roles and the actions mapped to each t
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `ghost-api` for the service name.
 
-No supported roles.
+| Role | Description |
+| ----- | :----- |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 62. Platform roles - GhoST API" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="ghost-api"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table62}
+
 ## GhoST Tagging Service
 {: #ghost-tags-roles}
 
