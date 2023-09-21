@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-09-20"
+lastupdated: "2023-09-21"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -506,6 +506,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `apprapp.workflowconfigs.list` | List the workflow configuration for service now integration for CR approval | Administrator, Config Operator, Editor, Manager, Reader, Viewer, Writer |
 | `apprapp.workflowconfigs.delete` | Delete the workflow configuration for service now integration for CR approval | Administrator, Manager |
 | `apprapp.changerequest.create` | API endpoint to listen to service-now events | Administrator, Manager |
+| `apprapp.config.import` | Import the configuration of the instance | Administrator, Manager |
+| `apprapp.config.export` | Export the configuration of the instance | Administrator, Client SDK, Config Operator, Editor, Manager, Reader, Viewer, Writer |
+| `apprapp.config.action` | Perform actions on the configuration of the instance like promote, restore to git | Administrator, Manager |
 {: caption="Table 10. Service actions - App Configuration" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="apprapp"}
