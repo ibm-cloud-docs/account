@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2023-08-01"
+lastupdated: "2023-09-21"
 
 
 keywords: create network access, network access rule, network zone
@@ -343,9 +343,9 @@ To create a rule, complete the following steps.
     When you create context-based restriction for the IAM Access Groups service, users who don't satisfy the rule can't view any groups in the account, including the public access group.
     {: note}
 
-1. (Optional) Select the scope of APIs whose operations are restricted by your rule. For more information, see [Defining the scope of a rule](/docs/account?topic=account-context-restrictions-whatis&interface=ui#rule-scope).
+1. Select the scope of APIs whose operations are restricted by your rule. For more information, see [Defining the scope of a rule](/docs/account?topic=account-context-restrictions-whatis&interface=ui#rule-scope).
 
-    Not all services support the ability to scope a rule by API.
+    Only some services have the ability to select individual service APIs.
     {: note}
 
 1. Scope the restriction to **All resources** or **Specific resources** based on selected attributes.

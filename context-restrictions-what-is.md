@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2023-07-25"
+lastupdated: "2023-09-21"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 
@@ -69,14 +69,16 @@ You can monitor the impact of your enabled and report-only rules. For more infor
 
 Define the APIs that you want to protect to narrow the scope of a rule's restrictions. This way, you can specify granular protections for different APIs that have distinct access requirements.
 
-For example, you might create a rule that targets a data plane API so that it is only accessible from a Kubernetes cluster, or wherever your compute infrastructure exists. Then, you can create a rule that targets your control plane API that interacts with the cloud console so that it is only accessible from behind your organization's VPN.
+For example, you might create a rule that targets a data plane API so that it is only accessible from a Kubernetes cluster, or wherever your compute infrastructure exists. Then, you can create a rule that targets your control plane API and all platform APIs to protect interactions with the cloud console so that it is only accessible from behind your organization's VPN.
 
 Only some services support the ability to scope a rule by API.
 {: preview}
 
-With some services, you can restrict the actions of all APIs on your resources by default, which includes all current and future APIs that the service might support. Or, select specific APIs. For example, [Kubernetes](/docs/containers?topic=containers-cbr&interface=ui#cbr-overview) has custom service APIs that you can restrict access to based on the context of the request. Review each service's documentation to learn more about how they integrate with context-based restrictions.
+With some services, you can restrict the actions of all service APIs on your resources by default, which includes all current and future APIs that the service might support. Or, select specific APIs. For example, [Kubernetes](/docs/containers?topic=containers-cbr&interface=ui#cbr-overview) has custom service APIs that you can restrict access to based on the context of the request. Review each service's documentation to learn more about how they integrate with context-based restrictions.
 
-You can also skip APIs to restrict all operations on the service that you select.
+Select services support the ability to scope a rule to protect all platform APIs, which include all current and future platform APIs that a service might support. The addition of platform APIs to the scope of a rule ensures that platform operations like resource provisioning, service credential management, and attaching tags are only accessible from locations that you define.
+
+Context-based restrictions default to protect all of the service and platform APIs the target service supports.
 {: tip}
 
 
