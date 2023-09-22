@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023
-lastupdated: "2023-08-14"
+lastupdated: "2023-09-22"
 keywords: access policy, access, policy, restriction, time based restriction, time based, time based conditions, conditions
 
 subcollection: account
@@ -471,6 +471,69 @@ Temporary policies, which use the pattern `time-based-conditions:once`, aren't a
 
 For more information about time-based conditions for access policies, see [Conditions in access policies](/docs/account?topic=account-iam-condition-properties&interface=ui#policy-condition-properties).
 
+## Creating a temporary time-based condition by using Terraform
+{: #iam-time-based-temp-terra}
+{: terraform}
+
+Before you can assign recurring access by using Terraform, make sure that you have completed the following:
+
+- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you define resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
+You can assign access for a finite duration by specifying a date and time range that determines when the condition grants and terminates access. For example, you might have a user that needs to present a demonstration on your account for a few hours or a contractor that needs temporary access to a service over a couple days.
+
+Complete the following steps to assign an access policy with a temporary time-based condition:
+
+1. The following example configures a policy for a user with the Viewer role on the Kubernetes service. The policy grants access from 12 AM to 11:59 PM on on 12 December 2022.
+
+    For more information about time-based conditions for access policies, see [Conditions in access policies](/docs/account?topic=account-iam-condition-properties&interface=ui#policy-condition-properties).
+
+    ```terraform
+    resource "ibm_iam_user_policy" "policy" {
+      ibm_id = "test@in.ibm.com"
+      roles      = ["Viewer"]
+      resources {
+        service = "kms"
+      }
+      rule_conditions {
+        key = "{{environment.attributes.current_date_time}}"
+        operator = "dateTimeGreaterThanOrEquals"
+        value = ["2022-12-23T00:00:00+00:00"]
+      }
+      rule_conditions {
+        key = "{{environment.attributes.current_date_time}}"
+        operator = "dateTimeLessThanOrEquals"
+        value = ["2022-12-23T23:59:59+00:00"]
+      }
+      rule_operator = "and"
+      pattern = "time-based-conditions:once"
+    }
+    ```
+    {: codeblock}
+
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
+
+   ```terraform
+   terraform init
+   ```
+   {: pre}
+
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
+
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
+
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
+
+   1. Run `terraform apply` to create the resources that are defined in the plan.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}
+
 
 ## Creating a recurring time-based condition
 {: #iam-time-based-recur-ui}
@@ -885,3 +948,69 @@ policy_subject = V2PolicyBaseSubject(
 {: python}
 
 For more information about time-based conditions for access policies, see [Conditions in access policies](/docs/account?topic=account-iam-condition-properties&interface=ui#policy-condition-properties).
+
+## Creating a recurring time-based condition by using Terraform
+{: #iam-time-based-recur-terra}
+{: terraform}
+
+Before you can assign recurring access by using Terraform, make sure that you have completed the following:
+
+- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you define resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+
+You might want to give users access to account resources during only their working hours. Complete the following steps to assign an access policy with a recurring at a weekly cadence:
+
+1. The following example configures a policy for a user with the Viewer role on the Kubernetes service. The policy grants access on Monday, Tuesday, Wednesday, and Thursday from 9 AM to 5 PM.
+
+    For more information about time-based conditions for access policies, see [Conditions in access policies](/docs/account?topic=account-iam-condition-properties&interface=ui#policy-condition-properties).
+
+    ```terraform
+    resource "ibm_iam_user_policy" "policy" {
+      ibm_id = "test@in.ibm.com"
+      roles      = ["Viewer"]
+      resources {
+        service = "kms"
+      }
+      rule_conditions {
+        key = "{{environment.attributes.day_of_week}}"
+        operator = "dayOfWeekAnyOf"
+        value = ["1+00:00","2+00:00","3+00:00","4+00:00"]
+      }
+      rule_conditions {
+        key = "{{environment.attributes.current_time}}"
+        operator = "timeGreaterThanOrEquals"
+        value = ["09:00:00+00:00"]
+      }
+      rule_conditions {
+        key = "{{environment.attributes.current_time}}"
+        operator = "timeLessThanOrEquals"
+        value = ["17:00:00+00:00"]
+      }
+      rule_operator = "and"
+      pattern = "time-based-conditions:weekly:custom-hours"
+    }
+    ```
+    {: codeblock}
+
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
+
+   ```terraform
+   terraform init
+   ```
+   {: pre}
+
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
+
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
+
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
+
+   1. Run `terraform apply` to create the resources that are defined in the plan.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}
