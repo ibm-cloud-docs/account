@@ -117,6 +117,7 @@
                   - context-restrictions-create.md
                   - context-restrictions-update.md
                   - context-restrictions-remove.md
+                  - context-restrictions-cbr.md
               - topicgroup:
                   label: Managing identities
                   topics:

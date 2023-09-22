@@ -211,6 +211,7 @@ You can create context-based restrictions for the following services if you are 
 
 | Service       | Service type | Scope to APIs | `service_name` |
 |---------------|--------------|---------------|----------------|
+| [Context-based restrictions Service](docs/account?topic=account-context-restrictions-cbr) | Account Management | No | `context-based-restrictions` |
 | IAM Access Groups Service  | Account Management | No | `iam-groups` |
 | IAM Access Management Service | Account Management | No | `iam-access-management` |
 | IAM Identity Service  | Account Management | No | `iam-identity`|
