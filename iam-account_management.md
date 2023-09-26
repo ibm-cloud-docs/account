@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2023
 
-lastupdated: "2023-04-17"
+lastupdated: "2023-09-26"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, access management service, catalog management service, cloud shell service, software instance service
 
@@ -301,7 +301,7 @@ You can give users access to configure, validate, and monitor Infrastructure as 
 | Operator | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration|
 | Editor        | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration \n \n Create a project \n \n Edit a project \n \n Delete a project \n \n Create a configuration \n \n  Discard a draft configuration \n \n Deploy configuration changes \n \n Destroy resources |
 | Administrator     | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration \n \n Create a project \n \n Edit a project \n \n Delete a project \n \n Create a configuration \n \n  Discard a draft configuration \n \n Deploy configuration changes \n \n Destroy resources. \n \n Force approve changes that failed validation |
-{: caption="Table 16. Roles and example actions for the Project service" caption-side="top"}
+{: caption="Table 16. Roles and example actions for the {{site.data.keyword.cloud_notm}} Projects service" caption-side="top"}
 
 
 ### {{site.data.keyword.compliance_short}}
@@ -1083,7 +1083,7 @@ You can give users access to configure, validate, and monitor Infrastructure as 
 | Operator | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration| `crn:v1:bluemix:public:iam::::role:Operator` |
 | Editor        | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration \n \n Create a project \n \n Edit a project \n \n Delete a project \n \n Create a configuration \n \n  Discard a draft configuration \n \n Deploy configuration changes \n \n Destroy resources |  `crn:v1:bluemix:public:iam::::role:Editor` |
 | Administrator     | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration \n \n Create a project \n \n Edit a project \n \n Delete a project \n \n Create a configuration \n \n  Discard a draft configuration \n \n Deploy configuration changes \n \n Destroy resources. \n \n Force approve changes that failed validation | `crn:v1:bluemix:public:iam::::role:Administrator` |
-{: caption="Table 17. Roles and example actions for the Project service" caption-side="top"}
+{: caption="Table 17. Roles and example actions for the {{site.data.keyword.cloud_notm}} Projects service" caption-side="top"}
 
 ### {{site.data.keyword.compliance_short}}
 {: #security-compliance-account-management-api}
@@ -1466,7 +1466,7 @@ You can give users access to configure, validate, and monitor Infrastructure as 
 | Operator | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration| `crn:v1:bluemix:public:iam::::role:Operator` |
 | Editor        | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration \n \n Create a project \n \n Edit a project \n \n Delete a project \n \n Create a configuration \n \n  Discard a draft configuration \n \n Deploy configuration changes \n \n Destroy resources |  `crn:v1:bluemix:public:iam::::role:Editor` |
 | Administrator     | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration \n \n Create a project \n \n Edit a project \n \n Delete a project \n \n Create a configuration \n \n  Discard a draft configuration \n \n Deploy configuration changes \n \n Destroy resources. \n \n Force approve changes that failed validation | `crn:v1:bluemix:public:iam::::role:Administrator` |
-{: caption="Table 17. Roles and example actions for the Project service" caption-side="top"}
+{: caption="Table 17. Roles and example actions for the {{site.data.keyword.cloud_notm}} Projects service" caption-side="top"}
 
 
 ### {{site.data.keyword.compliance_short}}
@@ -1854,7 +1854,7 @@ You can give users access to configure, validate, and monitor Infrastructure as 
 | Operator | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration|
 | Editor        | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration \n \n Create a project \n \n Edit a project \n \n Delete a project \n \n Create a configuration \n \n  Discard a draft configuration \n \n Deploy configuration changes \n \n Destroy resources |
 | Administrator     | View details about projects, configurations, and deployments \n \n Validate a configuration \n \n Edit a configuration \n \n Create a project \n \n Edit a project \n \n Delete a project \n \n Create a configuration \n \n  Discard a draft configuration \n \n Deploy configuration changes \n \n Destroy resources. \n \n Force approve changes that failed validation |
-{: caption="Table 16. Roles and example actions for the Project service" caption-side="top"}
+{: caption="Table 16. Roles and example actions for the {{site.data.keyword.cloud_notm}} Projects service" caption-side="top"}
 
 ### {{site.data.keyword.compliance_short}}
 {: #security-compliance-account-management-terra}
