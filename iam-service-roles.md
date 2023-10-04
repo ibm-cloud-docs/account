@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-10-03"
+lastupdated: "2023-10-04"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -4008,7 +4008,9 @@ Review the available platform and service roles and the actions mapped to each t
 | Role | Description |
 | ----- | :----- |
 | IBMOperation | (Internal) - IBM Use only |
+| IBMTransactionManager | (IBM Only) Internal IBM Transaction Manager |
 | Publisher | You can publish offerings that are approved by IBM and that are in a private catalog to which you're assigned the viewer role. |
+| Share Request Manager | You can view and manage share requests that are sent and received from accounts, enterprises, or account groups. |
 {: row-headers}
 {: caption="Table 65. Service roles - Personal Catalog" caption-side="top"}
 {: tab-title="Service roles"}
@@ -4028,6 +4030,11 @@ Review the available platform and service roles and the actions mapped to each t
 | `globalcatalog-collection.support.approveshare` | (Internal) Approve publishing to Shared | IBMOperation |
 | `globalcatalog-collection.config.read` | Fortress compliance - read configuration | IBMOperation |
 | `globalcatalog-collection.restrictedtags.update` | Permission to set restricted tags in a product. | IBMOperation |
+| `globalcatalog-collection.support.switch-boundary` | (Internal) Switch regulated boundaries for an account. | IBMTransactionManager |
+| `globalcatalog-collection.accountshare.view-sent-request` | View share requests that are sent from your own account. | Administrator, Share Request Manager |
+| `globalcatalog-collection.accountshare.manage-sent-request` | This action manages share requests that are sent from your own account. You can delete or make a request to share a catalog type to another account, enterprise, or account group. | Administrator, Share Request Manager |
+| `globalcatalog-collection.accountshare.view-incoming-request` | View share requests that are received by this account. | Administrator, Share Request Manager |
+| `globalcatalog-collection.accountshare.manage-incoming-request` | This action manages share requests that are received by this account. You can approve or deny these received share requests with this action. | Administrator, Share Request Manager |
 {: caption="Table 65. Service actions - Personal Catalog" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="globalcatalog-collection"}
