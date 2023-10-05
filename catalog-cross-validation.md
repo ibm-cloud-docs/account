@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023
-lastupdated: "2023-09-22"
+lastupdated: "2023-10-05"
 
 keywords: catalog, private catalogs, IAM access, Schematics service, cross accounts, target account, projects
 
@@ -103,10 +103,10 @@ To add a target account by using a project ID, complete the following steps:
 1. Select **{{site.data.keyword.cloud_notm}} project** as the method.
 1. Provide a programmatic name for the target account.
 1. Provide a display name for the target account. The target account display name appears as an option for users who are validating a product version.
-1. Enter the project ID.
+1. Select a project.
 
-   To find your project ID, in the {{site.data.keyword.cloud_notm}} console, go to the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") and select **Projects**. Select your project and go to the Manage tab where you can find and copy your project ID.
-   {: note}
+   If you don't have a project to select, click **Create an {{site.data.keyword.cloud_notm}} project**.
+   {: tip}
 
 1. Click the checkbox to indicate that you set up service authorization for Projects and Catalog Management.
 1. Select **{{site.data.keyword.cloud_notm}} API key** or **Trusted profile** as the authentication method for the target account that will be used by the project when it runs.
