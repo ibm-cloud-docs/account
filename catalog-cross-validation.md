@@ -45,7 +45,7 @@ You can add a target account by using an API key. Alternatively, if you would li
 1. Create a programmatic name of the target account.
 1. Create a display name for the target account. The display name appears as a target account option for users that are onboarding products.
 1. Enter the API key for the target account. If you need an API key, see [Create an API key](/docs/account?topic=account-userapikey&interface=ui#create_user_key).
-1. Click the checkbox to indicate that you set up service authorization for Schematics and Catalog Management.
+1. Select the checkbox to indicate that you set up service authorization for Schematics and Catalog Management.
 1. Click **Add** > **Update**.
 
 Users can now use the added target account to validate and add scans to any product version in the private catalog.
@@ -81,8 +81,8 @@ You linked the private catalog to the trusted profile as a trust relationship an
 1. Create a unique programmatic name for the target account.
 1. Create a display name for the target account. The display name appears as a target account option for users that are onboarding products.
 1. Enter the profile ID of the trusted profile. If you do not have the profile ID, see [Updating a trusted profile](/docs/account?topic=account-catalog-cross-validatione&interface=ui#update-create-profile).
-1. Click the checkbox to indicate that you set up service authorization for Schematics and Catalog Management.
-1. Click the checkbox to indicate that you created a trusted profile and added the catalog CRN as a trust relationship.
+1. Select the checkbox to indicate that you set up service authorization for Schematics and Catalog Management.
+1. Select the checkbox to indicate that you created a trusted profile and added the catalog CRN as a trust relationship.
 1. Click **Add** > **Update**.
 
 Users can now use the added target account to validate and add scans to any product version in the private catalog.
@@ -108,13 +108,13 @@ To add a target account by using a project ID, complete the following steps:
    If you don't have a project to select, click **Create an {{site.data.keyword.cloud_notm}} project**.
    {: tip}
 
-1. Click the checkbox to indicate that you set up service authorization for Projects and Catalog Management.
+1. Select the checkbox to indicate that you set up service authorization for Projects and Catalog Management.
 1. Select **{{site.data.keyword.cloud_notm}} API key** or **Trusted profile** as the authentication method for the target account that will be used by the project when it runs.
 1. Enter the API key for the target account, or the trusted profile ID based on what you selected as the authentication method in the previous step.
 
    To find your trusted profile ID, in the {{site.data.keyword.cloud_notm}} console, go to **Manage > Access (IAM)**, and select **Trusted profiles**. Select your trusted profile and click **Details** to find and copy your trusted profile ID.
    {: note}
 
-1. Click the checkbox to indicate that you set up service authorization for Schematics and Catalog Management. If you selected a trusted profile as the authentication method for the target account, you must click the checkbox to indicate that you created a trusted profile and added the catalog CRN as a trust relationship.
+1. Select the checkbox to indicate that you set up service authorization for Schematics and Catalog Management. If you selected a trusted profile as the authentication method for the target account, you must select the checkbox to indicate that you created a trusted profile and added the catalog CRN as a trust relationship.
 1. Click **Add > Update**.
 
