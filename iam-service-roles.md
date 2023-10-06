@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-10-05"
+lastupdated: "2023-10-06"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1696,9 +1696,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `PATCH /v5/:platform/deployments/:deployment_id/billable` | Set billable annotation to true | Administrator, Editor, Operator |
 | `GET /v4/:platform/deployments/:deployment_id/privatelink/allowlist` | Read Privatelink allowlist of principals | Administrator, Editor, Operator, Viewer |
 | `PATCH /v4/:platform/deployments/:deployment_id/privatelink/allowlist` | Patch Privatelink allowlist principals | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/groups/schedule_scaling` | Read scheduled scaling configuration | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/groups/schedule_scaling` | Update scheduled scaling | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/groups/schedule_scaling` | Delete scheduled scaling | Administrator, Editor, Operator |
+| `GET /v4/:platform/deployments/:deployment_id/groups/:group_id/schedule_scaling` | Read scheduled scaling configuration | Administrator, Editor, Operator, Viewer |
+| `POST /v4/:platform/deployments/:deployment_id/groups/:group_id/schedule_scaling` | Update scheduled scaling | Administrator, Editor, Operator |
+| `DELETE /v4/:platform/deployments/:deployment_id/groups/:group_id/schedule_scaling` | Delete scheduled scaling | Administrator, Editor, Operator |
 {: caption="Table 32. Service actions - Db2 Warehouse" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="dashdb"}
@@ -7987,6 +7987,17 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 {: #platform-roles-table156}
 
+| Role | Description |
+| ----- | :----- |
+| VPN Administrator | As a VPN administrator, you can configure classic infrastructure VPN settings for users. |
+{: row-headers}
+{: caption="Table 156. Service roles - IBM Cloud Platform User Management Service" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="user-management"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table156}
+
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `user-management.user.create` |  | Administrator, Editor |
@@ -7999,6 +8010,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `user-management.preference.retrieve` |  | Administrator, Editor, Operator, Viewer |
 | `user-management.user-setting.update` |  | Administrator, Editor |
 | `user-management.user-setting.retrieve` |  | Administrator, Editor, Operator, Viewer |
+| `user-management.vpn.update` | Update user VPN settings | VPN Administrator |
 {: caption="Table 156. Service actions - IBM Cloud Platform User Management Service" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="user-management"}
