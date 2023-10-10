@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2023-09-18"
+lastupdated: "2023-10-09"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -127,6 +127,8 @@ When you publish your product to the catalog for users with access to your priva
 3. Review the filters and industry options to select catalog filters that apply. You can select up to five industry filters.
 4. Check your catalog entry preview to see how your catalog tile displays to users who are evaluating your software in the catalog.
 5. Click **Save** when you're happy with your changes.
+
+For more information, see [Defining your product details](/docs/account?topic=account-cm-catalog-details&interface=ui).
 
 ## Configuring the software
 {: #catalog-configure-details}
