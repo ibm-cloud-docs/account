@@ -3,7 +3,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2023-04-03"
+lastupdated: "2023-10-09"
 
 keywords: onboard software, catalog details, software, catalog entry, about, product page, catalog listing
 
@@ -28,16 +28,10 @@ Complete the following steps to define or update your catalog entry details. A c
 1. Click **Manage** > **Catalogs** > **Private catalogs** in the {{site.data.keyword.cloud}} console.
 1. Click the name of the private catalog that contains the product that you want to add details for.
 1. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** in the row that contains the product.
-1. In the Catalog entry details section, click **Edit** to add or update any of the following items:
+1. In the Product overview section, click **Edit** to add or update any of the following items:
 
    Product name
    :   Add a name for your product
-
-   Programmatic name
-   :   This name is automatically generated based on your product's name that you imported to your private catalog. It is used when managing your product in the CLI or API.
-
-   Short description
-   :   Provide a short description to help users learn about and evaluate your product quickly from the tile in the catalog.
 
    Category
    :   Select a category. This is a required field that you set during initial onboarding, but can change if needed. You can find all of the available category values by using the [`ibmcloud catalog offering category-options`](/docs/cli?topic=cli-manage-catalogs-plugin#category-options-offering) command.
@@ -48,22 +42,40 @@ Complete the following steps to define or update your catalog entry details. A c
    Industry
    :   Add up to five industry filters to target your product to specific users.
 
+   Programmatic name
+   :   This name is automatically generated based on your product's name that you imported to your private catalog. It is used when managing your product in the CLI or API.
+
+   Logo
+   :   Provide an image URL, or upload an SVG or PNG image from your computer. Make sure that your product or company logo image is an SVG or PNG file that's a square image roughly sized at 32 x 32 pixels and does not appear blurry or pixelated.
+
    Keywords
    :   Provide relevant keywords that enable your product to appear in search results when users search for the product.
 
-   Logo URL
-   :   Make sure that your product or company logo image is an SVG or PNG file that's a square image roughly sized at 32 x 32 pixels and does not appear blurry or pixelated.
+   Short description
+   :   Provide a short description to help users learn about and evaluate your product quickly from the tile in the catalog.
 
+   Catalog ID
+   :   This field is automatically populated, and you cannot change it.
+
+   Product ID:
+   :   This field is automatically populated, and you cannot change it.
+cc
    Documentation URL
-   :   Add a link to your product's public documentation.
+   :   Provide the link to your product's public documentation.
 
    Provider name
-   :   Users can filter the catalog by the provider of a product. When you onboard a product to a private catalog, the provider name is set to `Community` by default. However, you can customize this field to display your company or organization name.
+   :   Add a provider name, such as your company name, that displays when this product is shared from a private catalog. This name is not displayed if you publish to the {{site.data.keyword.cloud_notm}} catalog. Users can filter the catalog by the provider of a product. When you onboard a product to a private catalog, the provider name is set to `Community` by default. However, you can customize this field to display your company or organization name.
+
+   Delivery method
+   :   Select the delivery method for your product. The available delivery methods depend on the product type.
+
+   Product type
+   :   Selec the product type. Examples of the product type are deployable architecture, module, or software.
 
    The preview of your catalog entry updates in real time as you make changes to the fields that display in the catalog entry, such as the product name, short description, and logo.
    {: tip}
 
-1. Review your catalog entry preview, and when you're happy with your changes, click **Save**.
+1. Review your catalog entry preview by clicking **View catalog entry**. When you're happy with your changes, click **Save**.
 
 ## Adding product page information
 {: #cm-catalog-about}
