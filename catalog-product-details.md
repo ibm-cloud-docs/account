@@ -46,7 +46,7 @@ Complete the following steps to define or update your catalog entry details. A c
    :   This name is automatically generated based on your product's name that you imported to your private catalog. It is used when managing your product in the CLI or API.
 
    Logo
-   :   Provide an image URL, or upload an SVG or PNG image from your computer. Make sure that your product or company logo image is an SVG or PNG file that's a square image roughly sized at 32 x 32 pixels and does not appear blurry or pixelated.
+   :   Provide an image URL, or upload an SVG or PNG image from your computer. Make sure that your product or company logo image is an SVG or PNG file that's a square image that is roughly sized at 32 x 32 pixels and does not appear blurry or pixelated.
 
    Keywords
    :   Provide relevant keywords that enable your product to appear in search results when users search for the product.
@@ -70,9 +70,9 @@ cc
    :   Select the delivery method for your product. The available delivery methods depend on the product type.
 
    Product type
-   :   Selec the product type. Examples of the product type are deployable architecture, module, or software.
+   :   Select the product type. Examples of the product type are deployable architecture, module, or software.
 
-   The preview of your catalog entry updates in real time as you make changes to the fields that display in the catalog entry, such as the product name, short description, and logo.
+   The preview of your catalog entry updates in real time as you update the fields that display in the catalog entry, such as the product name, short description, and logo.
    {: tip}
 
 1. Review your catalog entry preview by clicking **View catalog entry**. When you're happy with your changes, click **Save**.
