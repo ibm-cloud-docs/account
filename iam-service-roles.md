@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-10-10"
+lastupdated: "2023-10-11"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -4309,6 +4309,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `hs-crypto.vaults.delete` | Delete a Vault | Vault Administrator |
 | `hs-crypto.uko.initiate-paid-upgrade` | Start billing of UKO base price (by using external keystores) | Vault Administrator |
 | `hs-crypto.uko.add-paid-keystore` | Create a paid keystore (beyond free amount) | Vault Administrator |
+| `hs-crypto.secrets-with-policy-overrides.create` | hs-crypto.secrets-with-policy-overrides.create | Manager |
 {: caption="Table 69. Service actions - Hyper Protect Crypto Services" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="hs-crypto"}
