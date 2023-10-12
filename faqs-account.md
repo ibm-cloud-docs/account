@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2023
-lastupdated: "2023-07-21"
+lastupdated: "2023-10-12"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -24,7 +24,7 @@ FAQs for your {{site.data.keyword.cloud}} account might include questions about 
 {: #create-account}
 {: faq}
 
-You can create an account by [registering](/registration){: external} your email address. For identity verification, a credit card is required when you create a new account. New accounts are created as Pay-As-You-Go accounts, except purchased subscriptions. For more information, see [Account types](/docs/account?topic=account-accounts).
+You can create an account by [registering](/registration){: external} your email address. For identity verification, a credit card is required when you create a new account. New accounts are created as Pay-As-You-Go accounts, except purchased subscriptions and temporary educational accounts. To verify your identity with a code, you can apply a purchased subscription code for a Subscription account, or a feature code for a temporary educational account. For more information, see [Account types](/docs/account?topic=account-accounts).
 
 Feature codes aren't supported in some countries. For more information, see [personal use availability](/docs/account?topic=account-account-getting-started#signup-personalaccts).
 {: note}
@@ -33,7 +33,7 @@ Feature codes aren't supported in some countries. For more information, see [per
 {: #authorize-account}
 {: faq}
 
-A credit card is required to create a new {{site.data.keyword.Bluemix_notm}} account unless you have a subscription or feature code. As part of the authorization process, you might see a temporary hold on your credit card for verification and security when creating an account. This credit card hold is reversed within 24 to 72 hours.  In many cases, a credit card isn't accepted because your credit card issuer didn't authorize it.  For more information about issues with credit card authorization, see [Credit Card error messages](/docs/billing-usage?topic=billing-usage-cc-error-messages).
+A credit card is required to create a new {{site.data.keyword.Bluemix_notm}} account unless you have a subscription or feature code. As part of the authorization process, you might see a temporary hold on your credit card for verification and security when creating an account. This credit card hold is reversed within 24 to 72 hours. In many cases, a credit card isn't accepted because your credit card issuer didn't authorize it. For more information about issues with credit card authorization, see [Credit Card error messages](/docs/billing-usage?topic=billing-usage-cc-error-messages).
 
 
 ## How do I get help with issues with creating an account?
@@ -43,7 +43,7 @@ A credit card is required to create a new {{site.data.keyword.Bluemix_notm}} acc
 If you are able to log in to an {{site.data.keyword.Bluemix_notm}} account, go to the [Support Center](/unifiedsupport/supportcenter){: external} and choose one of the following options.
 
 * If you have advanced or premium support, click **Chat with IBM** to talk to an {{site.data.keyword.Bluemix_notm}} support representative.
-* Create a support case by clicking **Create a case** from the Need more help? section.
+* Create a support case by clicking **Create a case** from the "Need more help?" section.
 
    After you open the case, an email notification is sent to you. Follow the instructions for further communication.
 
@@ -53,7 +53,7 @@ If you can't log in to an {{site.data.keyword.Bluemix_notm}} account, [create an
 {: #vat-id}
 {: faq}
 
-A tax identification number, such as a VAT ID, GST number, or TIN, is required to create a new personal use account with an address in specific countries or regions. For information about these requirements or where personal use accounts are not permitted, see [Personal use availability](/docs/account?topic=account-account-getting-started#signup-personalaccts). A tax identification number is also required for company accounts depending on your location. Some countries where the local government requires it, taxes are charged directly instead.
+A tax identification number, such as a VAT ID, GST number, or TIN, is required to create a new personal use account with an address in specific countries or regions. For information about these requirements or where personal use accounts are not permitted, see [Personal use availability](/docs/account?topic=account-account-getting-started#signup-personalaccts). A tax identification number is also required for company accounts, depending on your location. Some countries where the local government requires it, taxes are charged directly instead.
 
 ## How do I update my credit card?
 {: #updatepayment}
@@ -72,7 +72,7 @@ To switch to a different payment method, select Pay with Other and then click Su
 1. Click **Manage payment method**.
 1. Enter your credit card information, and click **Register**.
 
-If your credit card requires a MasterCard SecureCode that is sent to a mobile phone, you might see an unexpected error message after you submit the code. Refresh the manage my wallet page to verify that your new credit card information is saved.
+If your credit card requires a MasterCard SecureCode that is sent to a mobile phone, you might see an unexpected error message after you submit the code. Refresh the "Manage my wallet" page to verify that your new credit card information is saved.
 {: note}
 
 ## How do I upgrade my account?
@@ -104,13 +104,13 @@ Yes, the following options are available depending on your account type:
 
 If you upgrade your trial account to a Pay-As-You-Go account by entering a credit card, it can't be converted back to a trial account.
 
-## Can I add an educational feature code to an account after I have added a credit card?
+## Can I add an educational feature code to an account after I added a credit card?
 {: #convert-education}
 {: faq}
 
 When you add a credit card to your trial account, your account is upgraded to a Pay-As-You-Go account. Educational feature codes can't be used in a Pay-As-You-Go account. In addition, a Pay-As-You-Go account can't be converted back to a trial account. For more information about educational trial accounts, see the [IBM SkillsBuild Software Downloads FAQs](https://www.ibm.com/academic/faqs/faqs){: external}.
 
-## Can I sign up for a free trial?
+## Can I sign up for a trial at no cost?
 {: #freetrial}
 {: faq}
 
@@ -121,10 +121,29 @@ When you add a credit card to your trial account, your account is upgraded to a 
 {: faq}
 {: support}
 
-We're sad to see you go! If there's any way we can assist you before you decide to close your account, [reach out to us](/unifiedsupport/supportcenter){: external}.
+We're sad to see you go! If there's any way that we can assist you before you decide to close your account, [reach out to us](/unifiedsupport/supportcenter){: external}.
 
 
 * To close a Pay-As-You-Go or Subscription account, go to the [Support Center](/unifiedsupport/supportcenter), and click **Create a case** in the Contact Support center. Click **Account**, and select the **Cancel/close/suspend** subtopic. A support case is required for account security and documentation purposes. After your account is closed, all usage is stopped across all services running in your account, and the usage that is accrued in the current billing period is sent in one final invoice at the close of the billing period. Closing your account can't be undone and your data is unrecoverable.
+
+* Before you request an account closure, cancel all services and resources within the account. Be sure to state that you want all services and data that is deleted immediately, and that you understand that all services and data are unrecoverable within the account closure case.
+
+To cancel all devices:
+1. Log in to the [{{site.data.keyword.cloud_notm}} console](https://cloud.ibm.com/){: external} by using your unique credentials.
+1. From the dashboard, click the menu icon ![Menu icon](../../icons/icon_hamburger.svg) > **Classic Infrastructure** > **Device List**.
+1. For each device that you want to cancel, click the Actions menu icon, and select **Cancel device**.
+1. Acknowledge that data loss might occur as a result of canceling, and then click **Cancel device**.
+
+To cancel all billing items: 
+1. Log in to the [{{site.data.keyword.cloud_notm}} console](https://cloud.ibm.com/){: external} by using your unique credentials.
+1. Select **Manage** > **Billing and usage**.
+1. Select **Billing items**.
+1. Ensure that you are viewing all billing items.
+1. For each billing item that you want to cancel, click the Actions menu icon, and select **Cancel billing item**.
+
+* To close a Pay-As-You-Go or Subscription account, go to the [Support Center](/unifiedsupport/supportcenter), and click **Create a case** in the Contact Support center. Click **Account**, and select the **Cancel/close/suspend** subtopic. A support case is required for account security and documentation purposes. After your account is closed, all usage is stopped across all services running in your account, and the usage that is accrued in the current billing period is sent in one final invoice at the close of the billing period. Closing your account can't be undone and your data is unrecoverable.
+
+* You might receive a final invoice after you close your account due to incurred charges from the month before the account was closed.
 
 * To close a Lite account, go to the [Account settings](/account/settings) page, and click **Close account**. You can reactivate your account if you upgrade to a Pay-As-You-Go or Subscription account. After an account is closed for 30 days, all data is deleted and all services are removed.
 
@@ -239,9 +258,9 @@ The {{site.data.keyword.cloud_notm}} console menu bar lists all of the accounts 
 
 ![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-faq.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access."){: caption="Figure 1. Account selector" caption-side="bottom"}
 
-You can view your role in each account on the [Users page](/iam/users). The 'owner' tag next to a user name indicates the account owner. If you are the owner of the account, the 'self' tag is also listed next to your name. If you see only your name that is listed and you are not the account owner, the account owner has restricted the user list. For more information, see [Controlling user visibility](/docs/account?topic=account-iam-user-setting).Contact [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external} to determine the account owner.
+You can view your role in each account on the [Users page](/iam/users). The 'owner' tag next to a username indicates the account owner. If you are the owner of the account, the 'self' tag is also listed next to your name. If you see only your name that is listed and you are not the account owner, the account owner has restricted the user list. For more information, see [Controlling user visibility. Contact [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external} to determine the account owner.
 
-You can also find your accounts from the CLI by running the `ibmcloud account list` command. This command lists the account that you own and any other accounts that are affiliated with your IBMid.
+You can also find your accounts from the CLI by running the `ibmcloud account list` command. This command lists the accounts that you own and any other accounts that are affiliated with your IBMid.
 
 ## Can I view my account ID, account type, and account number?
 {: #account-details}
@@ -277,7 +296,7 @@ Data can't be directly migrated from one {{site.data.keyword.Bluemix_notm}} acco
 * Review the applicable documentation to determine whether your infrastructure services can be backed up and re-created in different accounts.
 * Use manifests and other documented methods to rebuild your applications and services by using documented methods to back up and restore your data.
 
-Users with a Basic, Advanced, or Premium support plan can open a [Support case](/unifiedsupport/supportcenter){: external}  for assistance with data migration questions.
+Users with a Basic, Advanced, or Premium support plan can open a [Support case for assistance with data migration questions.
 
 ## Can I bookmark a console page for a specific account?
 {: #bookmark-page-account}
@@ -385,7 +404,7 @@ You can view the role that you are assigned on a dashboard by going to **Manage*
 
 You can't edit the default dashboard directly. However, you can create a duplicate version that you can edit and personalize however you want by clicking the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** in {{site.data.keyword.Bluemix_notm}} console.
 
-By maintaining the original version of the default dashboard, you can discover the latest widgets and functionalities, which get built and added over time. This way, you can always bring out the most of your workflow.
+By maintaining the original version of the default dashboard, you can discover the latest widgets and functions, which get built and added over time. This way, you can always bring out the most of your workflow.
 
 You can also switch between the duplicate and original versions by selecting each one from your list of dashboards that's displayed on your active dashboard.
 
@@ -393,7 +412,7 @@ You can also switch between the duplicate and original versions by selecting eac
 {: #move-org-diff-account}
 {: faq}
 
-Currently, you can't move an org to a different account. However, you can re-create the org with the same credentials in a different account to mimic this functionality. For more information, see [Adding orgs and spaces](/docs/account?topic=account-orgsspacesusers#createorg).
+Currently, you can't move an org to a different account. However, you can re-create the org with the same credentials in a different account to mimic this functions. For more information, see [Adding orgs and spaces](/docs/account?topic=account-orgsspacesusers#createorg).
 
 ## Why do I get logged out of my account?
 {: #user-session-log-out}
@@ -412,6 +431,6 @@ If you created a Lite account before 25 October 2021, you can continue working a
 {: #instance-create}
 {: faq}
 
-From the [Resource list](/resources), expand the appropriate section, and click the row for the instance that you want more details about. Additional details about the resource display including when the resource was created and by whom.
+From the [Resource list](/resources), expand the appropriate section, and click the row for the instance that you want more details about. You can find more details about the resource display including when the resource was created and by whom.
 
 For classic infrastructure services, you can get similar information by using the [Audit log](/docs/account?topic=account-audit-log).
