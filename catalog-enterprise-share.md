@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2023
-lastupdated: "2023-09-14"
+lastupdated: "2023-10-10"
 
 keywords: enterprise, share, private catalog, allowlist, account groups, share request, opt in
 
@@ -21,7 +21,7 @@ Specify who can see your particular product by sharing a product from your priva
 You can share your product from your private catalog with any account without needing approval from Partner Center. The target account must accept the share request. For more information, see [Accepting share requests for private catalog products](/docs/account?topic=account-catalog-share-accept&interface=ui). However, if you are already approved in Partner Center, you can share your product with any user by adding their account to the allowlist. In that case, the share request doesn't need to be explicitly accepted by the other account.
 {: note}
 
-The following flowchart shows the use cases for sharing your product. Each pathway addresses who you want to share your product with, how to share it, and if you need approval through Partner Center Sell. If you need approval from Partner Center Sell, see [Selling on {{site.data.keyword.cloud_notm}}](/docs/sell). 
+The following flowchart shows the use cases for sharing your product. Each pathway addresses who you want to share your product with, how to share it, and if you need approval through Partner Center. If you need approval from Partner Center, see [Selling on {{site.data.keyword.cloud_notm}}](/docs/sell). 
 
 ![A flow chart of sharing a product to other accounts or publishing with Partner Center approval.](images/share-product-private-catalog.svg){: caption="Figure 1. Flow chart of sharing a product to other accounts or publishing with Partner Center approval" caption-side="bottom"}
 
