@@ -35,7 +35,6 @@ Feature codes aren't supported in some countries. For more information, see [per
 
 A credit card is required to create a new {{site.data.keyword.Bluemix_notm}} account unless you have a subscription or feature code. As part of the authorization process, you might see a temporary hold on your credit card for verification and security when creating an account. This credit card hold is reversed within 24 to 72 hours. In many cases, a credit card isn't accepted because your credit card issuer didn't authorize it. For more information about issues with credit card authorization, see [Credit Card error messages](/docs/billing-usage?topic=billing-usage-cc-error-messages).
 
-
 ## How do I get help with issues with creating an account?
 {: #account-error}
 {: faq}
@@ -65,7 +64,7 @@ If you have a Pay-As-You-Go account type that is billed in US Dollars, complete 
 
 To switch to a different payment method, select Pay with Other and then click Submit change request. A support case to change your payment method is created for you.
 
- Based on your account type, you might manage your credit card outside of the console. To manage your credit card outside of the console, complete the following steps:
+Based on your account type, you might manage your credit card outside of the console. To manage your credit card outside of the console, complete the following steps:
 
 1. Go to [ibm.com](http://www.ibm.com){: external} and log in with the same IBMid and password that you use to log in to {{site.data.keyword.Bluemix_notm}}.
 1. Click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar"), and select **Billing**.
@@ -96,7 +95,7 @@ Yes, when you upgrade to a Pay-As-You-Go or Subscription account, you can contin
 Yes, the following options are available depending on your account type:
 
 * If you have a feature code from an online course or educational event, you can use it to convert your Lite account to a trial account. Go to the [Account settings](/account/settings){: external} page in the console to apply the code to your account.
-* To convert your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales](/catalog?contactmodule){: external}.
+* To convert your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external}.
 
 ## Can I convert my Pay-As-You-Go account to a trial account?
 {: #convertpayg-litetrial}
@@ -124,8 +123,6 @@ When you add a credit card to your trial account, your account is upgraded to a 
 We're sad to see you go! If there's any way that we can assist you before you decide to close your account, [reach out to us](/unifiedsupport/supportcenter){: external}.
 
 
-* To close a Pay-As-You-Go or Subscription account, go to the [Support Center](/unifiedsupport/supportcenter), and click **Create a case** in the Contact Support center. Click **Account**, and select the **Cancel/close/suspend** subtopic. A support case is required for account security and documentation purposes. After your account is closed, all usage is stopped across all services running in your account, and the usage that is accrued in the current billing period is sent in one final invoice at the close of the billing period. Closing your account can't be undone and your data is unrecoverable.
-
 * Before you request an account closure, cancel all services and resources within the account. Be sure to state that you want all services and data that is deleted immediately, and that you understand that all services and data are unrecoverable within the account closure case.
 
 To cancel all devices:
@@ -147,9 +144,6 @@ To cancel all billing items:
 
 * To close a Lite account, go to the [Account settings](/account/settings) page, and click **Close account**. You can reactivate your account if you upgrade to a Pay-As-You-Go or Subscription account. After an account is closed for 30 days, all data is deleted and all services are removed.
 
-* You might receive a final invoice after you close your account due to incurred charges from the month before the account was closed.
-* Before you request to close an account, cancel all services and resources within the account. Make sure to state that you want all services and data to be deleted immediately and that you understand all services and data are unrecoverable within the account closure case.
-
 
 ## Can I log in to the console with my SoftLayer ID?
 {: #slid}
@@ -167,7 +161,7 @@ A Lite plan is a free quota-based service plan. You can use a service's Lite pla
 {: #howmanyapps}
 {: faq}
 
-There's no limit to the number of apps you can build in a Pay-As-You-Go or Subscription account.
+There's no limit to the number of apps that you can build in a Pay-As-You-Go or Subscription account.
 
 If you created a Lite account before 12 August 2021, you can build and deploy apps with 256 MB of instantaneous runtime memory. To get 512 MB of free instantaneous runtime memory, upgrade to a Pay-As-You-Go or Subscription account and pay only for what you use over that limit.
 
@@ -305,7 +299,7 @@ Users with a Basic, Advanced, or Premium support plan can open a [Support case f
 You can target URLs for any {{site.data.keyword.Bluemix_notm}} console page to a specific account. If you have multiple accounts, you can bookmark the account-specific URLs to easily access resources in different accounts without having to manually switch between them.
 
 1. Switch to the account that you want to target, and go to the [Account settings](/account/settings) page in the console. In the Account section, find the account ID, such as `a1b2c3d4e5f61234567890fedcba4321`.
-1. Go to the console page that you want to bookmark, and add `?bss_account=<account-id>` to the URL, replacing `<account-id>` with the ID from your account. For example,:
+1. Go to the console page that you want to bookmark, and add `?bss_account=<account-id>` to the URL, replacing `<account-id>` with the ID from your account. For example:
 
    ```text
    /billing/usage?bss_account=a1b2c3d4e5f61234567890fedcba4321
@@ -396,7 +390,7 @@ When you delete an access management tag from the account, any associated IAM po
 {: #view-dashboard}
 {: faq}
 
-You can view the role that you are assigned on a dashboard by going to **Manage** > **Account** > **Dashboards** in the {{site.data.keyword.cloud_notm}} console. All users besides the dashboard owner have the viewer role on the dashboard.
+You can view the role that you are assigned on a dashboard by going to **Manage** > **Account** > **Dashboards** in the {{site.data.keyword.cloud_notm}} console. All users that are not the dashboard owner have the viewer role on the dashboard.
 
 ## Can I edit the default dashboard?
 {: #access-dashboard}
