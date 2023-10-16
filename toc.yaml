@@ -324,7 +324,7 @@
                   href: https://{DomainName}/apidocs/iam-policy-management
               - iam-policies-change-log.md
               - link:
-                  label: IBM Clouod Open Service Broker
+                  label: IBM Cloud Open Service Broker
                   href: https://{DomainName}/apidocs/resource-controller/ibm-cloud-osb-api
               - link:
                   label: Resource Controller V2
