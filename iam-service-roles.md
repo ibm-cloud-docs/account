@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-10-17"
+lastupdated: "2023-10-18"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -5558,6 +5558,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.virtual-network-interface.virtual-network-interface.operate` | Operate Virtual Network Interfaces | Administrator, Editor, Operator |
 | `is.virtual-network-interface.virtual-network-interface.create` | Create Virtual Network Interface | Administrator, Editor |
 | `is.virtual-network-interface.virtual-network-interface.delete` | Delete Virtual Network Interface | Administrator, Editor |
+| `is.virtual-network-interface.virtual-network-interface.manage-infrastructure-nat` | Infrastructure NAT for Virtual Network Interface | Administrator |
+| `is.virtual-network-interface.virtual-network-interface.manage-ip-spoofing` | IP Spoofing for Virtual Network Interface | Administrator |
 {: caption="Table 101. Service actions - Virtual Network Interface" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.virtual-network-interface"}
