@@ -102,6 +102,7 @@
                   - iam-migrated_permissions.md
                   - iam-mngcf.md
                   - iam-authorizations.md
+                  - iam-cbr.md
                   - iam-audit-policies.md
                   - iam-user-sessions.md
               - topicgroup:
