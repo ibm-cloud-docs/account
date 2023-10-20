@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2023-05-22"
+lastupdated: "2023-10-20"
 
 keywords: account, publish, private catalog, allowlist, external
 
@@ -56,6 +56,17 @@ To manage the allowlist and publish your product to specific accounts, complete 
    {: tip}
 
 1. Click **Add** > **Publish**.
+
+## Verifying collaborator status
+{: #other-publish-verify}
+{: ui}
+
+When you publish a product to the {{site.data.keyword.cloud_notm}} catalog or to all IBM accounts, you must enter your personal access token so that your collaborator status in the repo is verified.
+
+You must have the following minimum access to the corresponding repo for the product that you are publishing:
+- Access to the repo
+- Read org and team membership
+- User email address
 
 ## Publishing products to specific accounts by using the CLI
 {: #other-publish-steps-cli}
