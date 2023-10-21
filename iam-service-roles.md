@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-10-20"
+lastupdated: "2023-10-21"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -6909,16 +6909,18 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- | :----- |
 | `privileged-access-gateway.dashboard.view` |  | Administrator, Editor, Operator |
 | `privileged-access-gateway.certificate.create` | this action is going to create a user certificate for the user that is needed to login to the session | Manager, Writer |
-| `privileged-access-gateway.public.ca.key` | retrieves the public CA key  | Manager, Reader, Writer |
+| `privileged-access-gateway.public.ca.key` | retrieves the public CA key (to be removed) | Manager, Reader, Writer |
 | `privileged-access-gateway.ssh.login` | ssh login | Manager, Writer |
 | `privileged-access-gateway.kube.login` | kube login action that allows users to get kube config details of a cluster  | Manager, Writer |
 | `privileged-access-gateway.rdp.login` | privileged-access-gateway.ssh.login | Manager, Writer |
-| `privileged-access-gateway.session.list.all` | List All  Active Sessions | Manager |
+| `privileged-access-gateway.session.list.all` | List All  Active Sessions(to be removed) | Manager |
 | `privileged-access-gateway.instance.upgrade` | Perform a software update of the gateway associated an instance. | Administrator, Editor, Operator |
 | `privileged-access-gateway.info` | get api info | Manager, Reader, Writer |
 | `privileged-access-gateway.gateway.start` | Starting customer gateway for restart operation | Manager |
 | `privileged-access-gateway.gateway.stop` | Stop Customer gateway for restart operation | Manager |
 | `privileged-access-gateway.gateway.reset` | Reset customer gateway disk to recover functionality | Manager |
+| `privileged-access-gateway.session-all.list` | list all the active sessions | Manager |
+| `privileged-access-gateway.public-ca-key.get` | retrieves the public CA key  | Manager, Reader, Writer |
 {: caption="Table 132. Service actions - Privileged Access Gateway" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="privileged-access-gateway"}
