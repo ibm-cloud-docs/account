@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2023-10-20"
+lastupdated: "2023-10-23"
 
 keywords: account, publish, private catalog, allowlist, external
 
@@ -67,6 +67,10 @@ You must have the following minimum access to the corresponding repo for the pro
 - Access to the repo
 - Read org and team membership
 - User email address
+
+You must be a collaborator in the repos.
+
+Your user email address must match the email address for the personal access token.
 
 ## Publishing products to specific accounts by using the CLI
 {: #other-publish-steps-cli}
