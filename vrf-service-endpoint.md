@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2023-04-18"
+lastupdated: "2023-10-26"
 
 keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network, services that support service endpoints, service endpoint support, using service endpoints
 
@@ -15,30 +15,30 @@ subcollection: account
 # Enabling VRF and service endpoints
 {: #vrf-service-endpoint}
 
-By default, classic accounts established prior to November 30, 2023 are included in the IBM Cloud general routing table. Previously, if you wanted to convert a classic account to a VRF-style account you were required to open a support case with IBM Support. Beginning November 30, 2023, any new Classic account, or any existing Classic account that is "empty" (for example, without any provisioned VLANs), will be automatically converted to a VRF-style account the next time that account initiates a private network connection. For more information, refer to [FAQs about VRF account migration](/docs/account?topic=account-vrf-faqs&interface=ui).
-{: attention}
-
-When using the classic infrastructure, you connect to resources in your account over the {{site.data.keyword.Bluemix}} public network by default. You can enable virtual routing and forwarding (VRF) to move IP routing for your account and all of its resources into a separate routing table. If VRF is enabled, you can then enable {{site.data.keyword.Bluemix_notm}} service endpoints to connect directly to resources without using the public network.
+When using the classic infrastructure, you connect to resources in your account over the {{site.data.keyword.cloud}} public network by default. You can enable virtual routing and forwarding (VRF) to move IP routing for your account and all of its resources into a separate routing table. If VRF is enabled, you can then enable {{site.data.keyword.cloud_notm}} service endpoints to connect directly to resources without using the public network.
 {: shortdesc}
 
 Virtual Private Clouds (VPCs) are automatically enabled for virtual routing and forwarding (VRF). To enable service endpoints for your VPC, continue to [Enabling service endpoints](#service-endpoint).
 {: note}
+
+By default, classic accounts that were established before 30 November 2023, are included in the {{site.data.keyword.cloud_notm}} general routing table. Previously, if you wanted to convert a classic account to a VRF-style account, you were required to open a support case with {{site.data.keyword.IBM}} Support. Beginning 30 November 2023, any new classic account or any existing classic account that is "empty" (for example, without any provisioned VLANs), will be automatically converted to a VRF-style account the next time that account initiates a private network connection. For more information, see [FAQs about VRF account migration](/docs/account?topic=account-vrf-faqs).
+{: attention}
 
 ## Before you begin
 {: #before-service-endpoint-enablement}
 
 Before you begin, ensure that you meet the following criteria:
 
-* You need a billable account to enable virtual routing and forwarding and {{site.data.keyword.Bluemix_notm}} service endpoints.
-* You must have access to {{site.data.keyword.cloud_notm}} infrastructure in your account. Go to the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Classic Infrastructure** to verify that you have access.
+* You need a billable account to enable virtual routing and forwarding and {{site.data.keyword.cloud_notm}} service endpoints.
+* You must have access to {{site.data.keyword.cloud_notm}} infrastructure in your account. Go to the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Classic Infrastructure** to verify that you have access.
 
 ## Enabling VRF in the console
 {: #vrf}
 {: ui}
 
-VRF allows multiple instances of a routing table to exist in a router and to work simultaneously. When you enable VRF, a separate routing table is created for your account, and connections to and from your account's resources are routed separately on the {{site.data.keyword.Bluemix_notm}} network. VRF is enabled at the account level, so all resources are affected by this networking change. For more information about VRF technology and how it affects your account's network routing, see [Virtual routing and forwarding on {{site.data.keyword.Bluemix_notm}}](/docs/dl?topic=dl-overview-of-virtual-routing-and-forwarding-vrf-on-ibm-cloud).
+VRF allows multiple instances of a routing table to exist in a router and to work simultaneously. When you enable VRF, a separate routing table is created for your account, and connections to and from your account's resources are routed separately on the {{site.data.keyword.cloud_notm}} network. VRF is enabled at the account level, so all resources are affected by this networking change. For more information about VRF technology and how it affects your account's network routing, see [Virtual routing and forwarding on {{site.data.keyword.cloud_notm}}](/docs/dl?topic=dl-overview-of-virtual-routing-and-forwarding-vrf-on-ibm-cloud).
 
-Enabling VRF permanently alters networking for your account. Be sure that you understand the impact to your account and resources. After you enable VRF, it cannot be disabled.
+Enabling VRF permanently alters the networking for your account. Be sure that you understand the impact to your account and resources. After you enable VRF, it cannot be disabled.
 {: important}
 
 To enable VRF, create a support case with your request. This option applies only to billable accounts.
@@ -50,7 +50,7 @@ To enable VRF, create a support case with your request. This option applies only
    Don't change the rest of the prefilled support case information. The information is tailored to make sure that your request is handled as quickly as possible.
    {: tip}
 
-The {{site.data.keyword.Bluemix_notm}} network engineering team will contact the case owner to schedule a time for your account's networking to be converted to VRF. During the conversion process, connections to resources in your account might be unstable due to packet loss. The conversion takes roughly 15 - 30 minutes, depending on the complexity of your account. If your account has legacy {{site.data.keyword.BluDirectLink}} connections, it might take more time.
+The {{site.data.keyword.cloud_notm}} network engineering team will contact the case owner to schedule a time for your account's networking to be converted to VRF. During the conversion process, connections to resources in your account might be unstable due to packet loss. The conversion takes roughly 15 - 30 minutes, depending on the complexity of your account. If your account has legacy {{site.data.keyword.BluDirectLink}} connections, it might take more time.
 
 Changing an empty account to VRF modifies the behavior of the future resources with no interruption. A short intermittent connectivity loss can occur between your *existing* servers on the private network during the migration process, which is scheduled at a convenient time for you.
 
@@ -61,7 +61,7 @@ VRF is not compatible with IPSec VPN services and limits SSL VPN connections to 
 ## Enabling service endpoints
 {: #service-endpoint}
 
-When {{site.data.keyword.Bluemix_notm}} service endpoints are enabled in your account, you can choose to expose a private network endpoint when you create a resource. You can then connect directly to this endpoint over the {{site.data.keyword.Bluemix_notm}} private network rather than the public network. Because resources that use private network endpoints don't have an internet-routable IP address, connections to these resources are more secure. For more information, see [Secure access to services using service endpoints](/docs/account?topic=account-service-endpoints-overview).
+When {{site.data.keyword.cloud_notm}} service endpoints are enabled in your account, you can choose to expose a private network endpoint when you create a resource. You can then connect directly to this endpoint over the {{site.data.keyword.cloud_notm}} private network rather than the public network. Because resources that use private network endpoints don't have an internet-routable IP address, connections to these resources are more secure. For more information, see [Secure access to services using service endpoints](/docs/account?topic=account-service-endpoints-overview).
 
 Before you can enable service endpoints, VRF must be enabled for your account. Virtual Private Clouds (VPCs) are automatically enabled for VRF.
 {: note}
@@ -82,7 +82,7 @@ It might take a few minutes for this change to take effect.
 {: #service-endpoint-cli}
 {: cli}
 
-To enable service endpoints from the [{{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cli-getting-started), you need version 0.13 or later.
+To enable service endpoints from the [{{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-getting-started), you need version 0.13 or later.
 
 1.  Check whether service endpoints are already enabled in your account.
 
@@ -111,7 +111,7 @@ To enable service endpoints from the [{{site.data.keyword.Bluemix_notm}} CLI](/d
    ```
    {: codeblock}
 
-   It might take a few minutes for this change to take affect. After the command completes, you can run the `ibmcloud account show` command again to verify.
+   It might take a few minutes for this change to take effect. After the command completes, you can run the `ibmcloud account show` command again to verify.
 
     If VRF isn't enabled for your account, running this command prompts you to create a case to enable it. Enter `y` to create the support case. After VRF is enabled in the account, run the command again to enable service endpoint connectivity in your account.
 
@@ -128,7 +128,7 @@ To enable service endpoints from the [{{site.data.keyword.Bluemix_notm}} CLI](/d
     {: screen}
 
 
-After service endpoints are enabled, you can create resources that connect over the {{site.data.keyword.Bluemix_notm}} private network. For a list of services that support service endpoints and more information, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint).
+After service endpoints are enabled, you can create resources that connect over the {{site.data.keyword.cloud_notm}} private network. For a list of services that support service endpoints and more information, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint).
 
 ## Using service endpoints
 {: #use-service-endpoint}
