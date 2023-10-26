@@ -18,6 +18,9 @@ subcollection: account
 When you register with {{site.data.keyword.Bluemix}}, you are set up with a Pay-As-You-Go account. Even though you provide your credit card information for account security and identity verification purposes, you can still use {{site.data.keyword.cloud_notm}} for free by selecting products in the catalog that offer Free and Lite pricing plans. Another account type, called a Subscription account, is also available. With a Subscription account, you get many of the same features of a Pay-As-You-Go account, plus discounts for platform services and support with a more consistent billing structure that uses subscriptions.
 {: shortdesc}
 
+By default, classic accounts established prior to November 30, 2023 are included in the IBM Cloud general routing table. Previously, if you wanted to convert a classic account to a VRF-style account you were required to open a support case with IBM Support. Beginning November 30, 2023, any new Classic account, or any existing Classic account that is "empty" (for example, without any provisioned VLANs), will be automatically converted to a VRF-style account the next time that account initiates a private network connection. For more information, refer to [FAQs about VRF account migration](/docs/account?topic=account-vrf-faqs&interface=ui).
+{: attention}
+
 
 ## Comparing accounts
 {: #compare}
