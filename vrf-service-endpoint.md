@@ -15,6 +15,9 @@ subcollection: account
 # Enabling VRF and service endpoints
 {: #vrf-service-endpoint}
 
+By default, classic accounts established prior to November 30, 2023 are included in the IBM Cloud general routing table. Previously, if you wanted to convert a classic account to a VRF-style account you were required to open a support case with IBM Support. Beginning November 30, 2023, any new Classic account, or any existing Classic account that is "empty" (for example, without any provisioned VLANs), will be automatically converted to a VRF-style account the next time that account initiates a private network connection. For more information, refer to [FAQs about VRF account migration](/docs/account?topic=account-vrf-faqs&interface=ui).
+{: attention}
+
 When using the classic infrastructure, you connect to resources in your account over the {{site.data.keyword.Bluemix}} public network by default. You can enable virtual routing and forwarding (VRF) to move IP routing for your account and all of its resources into a separate routing table. If VRF is enabled, you can then enable {{site.data.keyword.Bluemix_notm}} service endpoints to connect directly to resources without using the public network.
 {: shortdesc}
 
