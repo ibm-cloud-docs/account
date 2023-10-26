@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-10-25"
+lastupdated: "2023-10-26"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -608,48 +608,6 @@ Review the available platform and service roles and the actions mapped to each t
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `billing` for the service name.
 
 No supported roles.
-## Blockchain Platform 2.0
-{: #blockchain-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `blockchain` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
-| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
-{: row-headers}
-{: caption="Table 14. Service roles - Blockchain Platform 2.0" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="blockchain"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table14}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `blockchain.components.create` | Can create (provision) Orderes/CAs/Peers | Manager |
-| `blockchain.components.remove` | Can remove imported Orderes/CAs/Peers | Manager, Writer |
-| `blockchain.components.import` | Can import external Orderes/CAs/Peers | Manager, Writer |
-| `blockchain.components.export` | Can export any Orderes/CAs/Peers | Manager, Reader, Writer |
-| `blockchain.optools.restart` | Can restart the UI server | Manager |
-| `blockchain.optools.logs` | Can change logging settings of the UI | Manager |
-| `blockchain.optools.view` | Can view the UI & logs as well as run any GET api | Manager, Reader, Writer |
-| `blockchain.notifications.manage` | Can add/remove UI notifications | Manager, Writer |
-| `blockchain.components.delete` | Can remove provisioned Orderes/CAs/Peers | Manager |
-| `blockchain.signaturecollection.manage` | Can add/remove signature collections | Manager, Writer |
-| `blockchain.optools.settings` | Can change UI settings | Manager |
-| `blockchain.components.manage` | Can manage admin certs on Peers/Orderers as well as enroll ids on CAs | Manager, Writer |
-| `blockchain.instance.link` | Can associate an IBM Blockchain Platform service instance with a cluster | Manager |
-| `blockchain.instance.view` | Can get the status of the an IBM Blockchain Platform service instance | Manager, Reader, Writer |
-| `blockchain.optools.redeploy` | Can redeploy an IBM Blockchain Platform service instance | Manager |
-{: caption="Table 14. Service actions - Blockchain Platform 2.0" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="blockchain"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table14}
-
 ## Cloud Foundry for Custom Domain
 {: #cf4customdomain-roles}
 
@@ -661,22 +619,22 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 15. Service roles - Cloud Foundry for Custom Domain" caption-side="top"}
+{: caption="Table 14. Service roles - Cloud Foundry for Custom Domain" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="cf4customdomain"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table15}
+{: #service-roles-table14}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `cf4customdomain.newdashboard.view` | View information in the new dashboard | Manager, Reader, Writer |
-{: caption="Table 15. Service actions - Cloud Foundry for Custom Domain" caption-side="top"}
+{: caption="Table 14. Service actions - Cloud Foundry for Custom Domain" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="cf4customdomain"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table15}
+{: #actions-table14}
 
 ## Cloud Foundry Enterprise Environment
 {: #cfaas-roles}
@@ -699,12 +657,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a Reader, one can view bucket configuration and download the objects in the bucket. |
 | Writer | As a Writer, one can create/modify/delete buckets. In addition, one can upload and download the objects in the bucket. |
 {: row-headers}
-{: caption="Table 17. Service roles - Cloud Object Storage" caption-side="top"}
+{: caption="Table 16. Service roles - Cloud Object Storage" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="cloud-object-storage"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table17}
+{: #service-roles-table16}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -798,12 +756,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloud-object-storage.bucket.get_replication` | Read replication configuration of an bucket. | Manager, Reader, Writer |
 | `cloud-object-storage.bucket.put_replication` | Add replication configuration to a bucket. | Manager, Writer |
 | `cloud-object-storage.bucket.delete_replication` | Delete replication configuration of an bucket. | Manager, Writer |
-{: caption="Table 17. Service actions - Cloud Object Storage" caption-side="top"}
+{: caption="Table 16. Service actions - Cloud Object Storage" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="cloud-object-storage"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table17}
+{: #actions-table16}
 
 ## Cloudant
 {: #cloudantnosqldb-roles}
@@ -817,12 +775,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 18. Platform roles - Cloudant" caption-side="top"}
+{: caption="Table 17. Platform roles - Cloudant" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="cloudantnosqldb"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table18}
+{: #platform-roles-table17}
 
 | Role | Description |
 | ----- | :----- |
@@ -832,12 +790,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service, such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 18. Service roles - Cloudant" caption-side="top"}
+{: caption="Table 17. Service roles - Cloudant" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="cloudantnosqldb"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table18}
+{: #service-roles-table17}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -903,12 +861,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloudantnosqldb.couchdbextension-instance.write` | Make changes to an Extension for Apache CouchDB instance | Manager |
 | `cloudantnosqldb.legacy-root-credential.revoke` | Revoke legacy credential tied to your instance URL | Administrator, Manager |
 | `cloudantnosqldb.legacy-credentials.revoke` | Migrate instance to IAM only  | Administrator, Manager |
-{: caption="Table 18. Service actions - Cloudant" caption-side="top"}
+{: caption="Table 17. Service actions - Cloudant" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="cloudantnosqldb"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table18}
+{: #actions-table17}
 
 ## IBM Cloud Shell
 {: #cloudshell-roles}
@@ -919,12 +877,12 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 {: row-headers}
-{: caption="Table 19. Platform roles - IBM Cloud Shell" caption-side="top"}
+{: caption="Table 18. Platform roles - IBM Cloud Shell" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="cloudshell"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table19}
+{: #platform-roles-table18}
 
 | Role | Description |
 | ----- | :----- |
@@ -932,12 +890,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Cloud Operator | As a cloud operator, you can create Cloud Shell environments to manage IBM Cloud resources. |
 | File Manager | As a file manager, you can create Cloud Shell environments to manage IBM Cloud resources and manage files in your workspace (File Upload and File Download enabled). |
 {: row-headers}
-{: caption="Table 19. Service roles - IBM Cloud Shell" caption-side="top"}
+{: caption="Table 18. Service roles - IBM Cloud Shell" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="cloudshell"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table19}
+{: #service-roles-table18}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -945,9 +903,38 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloudshell.server.create` | The ability to create Cloud Shell environments. | Administrator, Cloud Developer, Cloud Operator, File Manager |
 | `cloudshell.server.preview-web` | The ability to preview web applications in Cloud Shell (Web Preview enabled). | Administrator, Cloud Developer |
 | `cloudshell.server.manage-file` | The ability to manage files in the Cloud Shell workspace (File Upload and File Download enabled). | Administrator, File Manager |
-{: caption="Table 19. Service actions - IBM Cloud Shell" caption-side="top"}
+{: caption="Table 18. Service actions - IBM Cloud Shell" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="cloudshell"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table18}
+
+## IBM watsonx Code Assistant
+{: #code-assistant-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `code-assistant` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 19. Platform roles - IBM watsonx Code Assistant" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="code-assistant"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table19}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `code-assistant.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 19. Service actions - IBM watsonx Code Assistant" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="code-assistant"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 {: #actions-table19}
