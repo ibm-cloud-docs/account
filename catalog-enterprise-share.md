@@ -39,13 +39,13 @@ A `pre-release` version does not need to be validated before you can share it fr
 {: #ent-share-steps}
 {: ui}
 
-When you share your product from your private catalog with another account, you are asking the target account for permission to share products now and in the future rather than just one product at a time. In doing so, you are adding that account to an allowlist, which is a list of IDs that are granted access to the product. When the target account accepts your initial share request, that account is opting in to having access to future products that you share from the same account. You need to send a separate share request only if you want to share a product for a different catalog type (Product, Virtual Private Endpoint, or Preset configuration). Any account that is not included in the allowlist can't access your product. For more information, see [Accepting share requests for private catalog products](/docs/account?topic=account-catalog-share-accept&interface=ui).
+When you share your product from your private catalog with another account, you are asking the target account for permission to share products now and in the future rather than just one product at a time. In doing so, you are adding that account to an allowlist, which is a list of IDs that are granted access to the product. When the target account accepts your initial share request, that account is opting in to having access to future products that you share from the same account. You need to send a separate share request only if you want to share a product for a different catalog type (Product or Virtual Private Endpoint). Any account that is not included in the allowlist can't access your product. For more information, see [Accepting share requests for private catalog products](/docs/account?topic=account-catalog-share-accept&interface=ui).
 
 Complete the following steps to share your product:
 
 1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Catalogs** > **Private catalogs**.
 1. Select the private catalog where your product is located.
-1. Select the catalog type (Product, Virtual Private Endpoint, or Preset configuration) of the product that you want to share.
+1. Select the catalog type (Product or Virtual Private Endpoint) of the product that you want to share.
 1. Select the product that you want to share.
 1. Select **Actions...** > **Share**.
 1. Review the list of versions that are available to share.
