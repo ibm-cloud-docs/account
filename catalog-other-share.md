@@ -61,6 +61,8 @@ To manage the allowlist and publish your product to specific accounts, complete 
 {: #other-publish-verify}
 {: ui}
 
+You must verify collaborator status if you are trying to publish a module from an approved IBM repository into the public catalog. To verify collaborator status in the approved repo, you must provide your personal access token.
+
 When you publish a product to the {{site.data.keyword.cloud_notm}} catalog or to all IBM accounts, you must enter your personal access token so that your collaborator status in the repo is verified.
 
 You must have the following minimum access to the corresponding repo for the product that you are publishing:
