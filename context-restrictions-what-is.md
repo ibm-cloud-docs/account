@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2023-09-21"
+lastupdated: "2023-10-30"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 
@@ -211,7 +211,7 @@ You can create context-based restrictions for the following services if you are 
 
 | Service       | Service type | Scope to APIs | `service_name` |
 |---------------|--------------|---------------|----------------|
-| [Context-based restrictions Service](docs/account?topic=account-context-restrictions-cbr) | Account Management | No | `context-based-restrictions` |
+| [Context-based restrictions Service](/docs/account?topic=account-context-restrictions-cbr) | Account Management | No | `context-based-restrictions` |
 | IAM Access Groups Service  | Account Management | No | `iam-groups` |
 | IAM Access Management Service | Account Management | No | `iam-access-management` |
 | IAM Identity Service  | Account Management | No | `iam-identity`|
