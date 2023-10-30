@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-10-29"
+lastupdated: "2023-10-30"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -194,6 +194,7 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 6. Service roles - Watson OpenScale" caption-side="top"}
@@ -208,6 +209,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `aiopenscale.dashboard.view` | View OpenScale | Administrator, Editor, Operator, Viewer |
 | `aiopenscale.dashboard.edit` | Edit OpenScale | Administrator, Editor, Writer |
 | `aiopenscale.dashboard.administer` | Administer OpenScale | Administrator |
+| `aiopenscale.kms.read` | KMS Read | Reader |
 {: caption="Table 6. Service actions - Watson OpenScale" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="aiopenscale"}
