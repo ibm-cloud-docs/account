@@ -379,71 +379,71 @@
           - faqs-catalog-management.md
           - faqs-cbr.md
           - faqs-vrf.md
-      - topicgroup:
-          label: Troubleshooting accessing IBM Cloud
-          topics:
-          - ts-password.md
-          - ts-login-id.md
-          - ts-signup.md
-          - ts-console-error.md
-          - ts-authentication-issue.md
-          - ts-pending-account.md
-          - ts-account-activation.md
-          - ts-page-load.md
-          - ts-account-infra.md
-          - ts-dash-access.md
-          - ts-iam-join-account.md
-          - ts-iam-mfa.md
-      - topicgroup:
-          label: Troubleshooting account management
-          topics:
-          - ts-create-location.md
-          - ts-create-org.md
-          - ts_create_service.md
-          - ts-lite-instance.md
-          - ts-runtime.md
-          - ts-inactive-account.md
-          - ts-rscs-reactivate-upgrade-suspended.md
-          - ts-add-usersorg.md
-          - ts-space-org.md
-          - ts-admin-org.md
-          - ts-add-cc.md
-          - ts-upgrade.md
-          - ts-credit-card.md
-          - ts-email-issue.md
-          - ts-vpe-access-parent.md
-          - ts-trusted-profile-support.md
-      - topicgroup:
-          label: Troubleshooting IAM
-          topics:
-          - ts-iam-resourceaccess.md
-          - ts-iam-myaccess.md
-          - ts-iam-invite.md
-          - ts-iam-classicinfra.md
-          - ts-iam-migratedpermissions.md
-          - ts-iam-max-policy.md
-          - ts-iam-serviceid.md
-          - ts-iam-create-accesstag.md
-          - ts-iam-attach-detach-accesstag.md
-          - ts-iam-delete-accesstag.md
-          - ts-iam-instances.md
-          - ts-alt-owner.md
-          - ts-enterprise-managed.md
-          - ts-enterprise-owner.md
-      - topicgroup:
-          label: Troubleshooting resources
-          topics:
-          - ts-rscs-delete.md
-          - ts-rscs-migrate-all.md
-          - ts-rscs-migrate-rg.md
-          - ts-rscs-migrate-cf.md
-          - ts-swinstance-unavail.md
-          - ts-unsupported-registry.md
-          - include: ../sell/ts-repo-upload.md
-          - include: ../sell/ts-validate-terraform.md
-      - topicgroup:
-          label: Troubleshooting context-based restrictions
-          topics:
-          - ts-iam-public-vpc-endpoint.md
-      - known-issues.md
-      - getting-help.md
+          - topicgroup:
+              label: Troubleshooting accessing IBM Cloud
+              topics:
+              - ts-password.md
+              - ts-login-id.md
+              - ts-signup.md
+              - ts-console-error.md
+              - ts-authentication-issue.md
+              - ts-pending-account.md
+              - ts-account-activation.md
+              - ts-page-load.md
+              - ts-account-infra.md
+              - ts-dash-access.md
+              - ts-iam-join-account.md
+              - ts-iam-mfa.md
+          - topicgroup:
+              label: Troubleshooting account management
+              topics:
+              - ts-create-location.md
+              - ts-create-org.md
+              - ts_create_service.md
+              - ts-lite-instance.md
+              - ts-runtime.md
+              - ts-inactive-account.md
+              - ts-rscs-reactivate-upgrade-suspended.md
+              - ts-add-usersorg.md
+              - ts-space-org.md
+              - ts-admin-org.md
+              - ts-add-cc.md
+              - ts-upgrade.md
+              - ts-credit-card.md
+              - ts-email-issue.md
+              - ts-vpe-access-parent.md
+              - ts-trusted-profile-support.md
+          - topicgroup:
+              label: Troubleshooting IAM
+              topics:
+              - ts-iam-resourceaccess.md
+              - ts-iam-myaccess.md
+              - ts-iam-invite.md
+              - ts-iam-classicinfra.md
+              - ts-iam-migratedpermissions.md
+              - ts-iam-max-policy.md
+              - ts-iam-serviceid.md
+              - ts-iam-create-accesstag.md
+              - ts-iam-attach-detach-accesstag.md
+              - ts-iam-delete-accesstag.md
+              - ts-iam-instances.md
+              - ts-alt-owner.md
+              - ts-enterprise-managed.md
+              - ts-enterprise-owner.md
+          - topicgroup:
+              label: Troubleshooting resources
+              topics:
+              - ts-rscs-delete.md
+              - ts-rscs-migrate-all.md
+              - ts-rscs-migrate-rg.md
+              - ts-rscs-migrate-cf.md
+              - ts-swinstance-unavail.md
+              - ts-unsupported-registry.md
+              - include: ../sell/ts-repo-upload.md
+              - include: ../sell/ts-validate-terraform.md
+          - topicgroup:
+              label: Troubleshooting context-based restrictions
+              topics:
+              - ts-iam-public-vpc-endpoint.md
+          - known-issues.md
+          - getting-help.md
