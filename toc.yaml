@@ -372,13 +372,16 @@
       - navgroup:
           id: help
           topics:
-          - faqs-account.md
-          - faqs-iam.md
-          - faqs-resources.md
-          - faqs-migration.md
-          - faqs-catalog-management.md
-          - faqs-cbr.md
-          - faqs-vrf.md
+          - topicgroup:
+              label: FAQs
+              topics:
+              - faqs-account.md
+              - faqs-iam.md
+              - faqs-resources.md
+              - faqs-migration.md
+              - faqs-catalog-management.md
+              - faqs-cbr.md
+              - faqs-vrf.md
           - topicgroup:
               label: Troubleshooting accessing IBM Cloud
               topics:
