@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2023-10-30"
+lastupdated: "2023-10-31"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 
@@ -121,6 +121,7 @@ The following is a list of services that you can add to a network zone as a serv
 | IAM Access Groups Service  | Account Management | `iam-groups` |
 | IAM User Management | Account Management | `user-management` |
 | [{{site.data.keyword.appconfig_short}}](/docs/app-configuration?topic=app-configuration-ac-access-control-cbr) | IAM-enabled |  `apprapp` |
+| Catalog Management Service | IAM-enabled | `globalcatalog-collection` |
 | Cloud {{site.data.keyword.block_storage_is_short}} | IAM-enabled | |
 | [Cloud {{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-setting-a-firewall) | IAM-enabled | `cloud-object-storage` |
 | [{{site.data.keyword.codeengineshort}}](/docs/codeengine?topic=codeengine-cbr) | IAM-enabled | `codeengine` |
