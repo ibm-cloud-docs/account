@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-08-28"
+lastupdated: "2023-10-31"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users from account, context-based restrictions
 
@@ -84,7 +84,7 @@ If you have a specific use case that requires an extended limit, you can request
 | IdPs per account  | 5    |
 | Policies per account [^tabletext]      | 4020 |
 | Policies per subject within an account | 1000  |
-| Policies with access management tags within an account   | 25   |
+| Policies with access management tags within an account   | 500   |
 | Policy templates per enterprise account | 500 |
 | Service IDs per account                | 2000 |
 | Trusted profiles per account           | 2000 |
