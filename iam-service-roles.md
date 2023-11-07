@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-11-06"
+lastupdated: "2023-11-07"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -6998,15 +6998,48 @@ Review the available platform and service roles and the actions mapped to each t
 | `project.notifications.write` | The ability to send project notifications. | Administrator |
 | `project.notifications.read` | The ability to read project notifications. | Administrator, Editor, Operator, Viewer |
 | `project.notifications.delete` | The ability to delete project notifications. | Administrator |
-| `project.config.delete` | The ability to delete a project config. | Administrator |
 | `project.config.approve` | The ability to approve a project config. | Administrator, Editor |
-| `project.config.create` | The ability to create a project config. | Administrator, Editor |
 | `project.config.deploy` | The ability to deploy a project config. | Administrator, Editor |
 | `project.config.destroy-resources` | The ability to destroy project config resources. | Administrator, Editor |
 | `project.config.edit` | The ability to edit a project config. | Administrator, Editor, Operator |
-| `project.config.force-approve` | The ability to force approve a project config. | Administrator |
-| `project.config.retrieve` | The ability to view a project config. | Administrator, Editor, Operator, Viewer |
 | `project.config.validate` | The ability to validate a project config. | Administrator, Editor, Operator |
+| `project.environment.delete` | The ability to delete a project environment. | Administrator |
+| `project.config.delete` | The ability to delete a project config. | Administrator |
+| `project.config.create` | The ability to create a project config. | Administrator, Editor |
+| `project.config.retrieve` | The ability to view a project config. | Administrator, Editor, Operator, Viewer |
+| `project.config.force-approve` | The ability to force the approval of a project config. | Administrator |
+| `project.environment.retrieve` | The ability to view a project environment. | Administrator, Editor, Operator, Viewer |
+| `project.environment.create` | The ability to create a project environment. | Administrator, Editor |
+| `project.instance.retrieve-all` | The ability to view a projects. | Administrator, Editor, Operator, Viewer |
+| `project.instance.sync` | The ability to sync a project. | Administrator, Editor, Operator |
+| `project.compliance.retrieve` | The ability to view compliance instances. | Administrator, Editor, Operator, Viewer |
+| `project.compliance.retrieve-profiles` | The ability to view a compliance instance profiles. | Administrator, Editor, Operator, Viewer |
+| `project.compliance.retrieve-attachments` | The ability to view a compliance profile's attachments. | Administrator, Editor, Operator, Viewer |
+| `project.compliance-profiles.retrieve` | The ability to view compliance profiles. | Administrator, Editor, Operator, Viewer |
+| `project.compliance-profiles.retrieve-attachments` | The ability to view compliance profile attachments. | Administrator, Editor, Operator, Viewer |
+| `project.environment.retrieve-all` | The ability to view project environments. | Administrator, Editor, Operator, Viewer |
+| `project.environment.retrieve-account` | The ability to view project environments across account. | Administrator, Editor, Operator, Viewer |
+| `project.environment.update` | The ability to update a project environment. | Administrator, Editor, Operator |
+| `project.config.retrieve-all` | The ability to view a project's configs. | Administrator, Editor, Operator, Viewer |
+| `project.config.retrieve-diff` | The ability to view a project config diff. | Administrator, Editor, Operator, Viewer |
+| `project.config.retrieve-job` | The ability to view a project config job. | Administrator, Editor, Operator, Viewer |
+| `project.config.retrieve-cost` | The ability to view a project config cost estimate. | Administrator, Editor, Operator, Viewer |
+| `project.config.retrieve-resources` | The ability to view project config resources. | Administrator, Editor, Operator, Viewer |
+| `project.config.retrieve-all-version` | The ability to view all project config versions. | Administrator, Editor, Operator, Viewer |
+| `project.config.retrieve-version` | The ability to view a project config version. | Administrator, Editor, Operator, Viewer |
+| `project.config.retrieve-version-last-validated` | The ability to view a project config version that is the last validated. | Administrator, Editor, Operator, Viewer |
+| `project.config.retrieve-version-last-deployed` | The ability to view a project config version that is the last deployed. | Administrator, Editor, Operator, Viewer |
+| `project.config.retrieve-version-last-undeployed` | The ability to view a project config version that is the last undeployed.  | Administrator, Editor, Operator, Viewer |
+| `project.config.update` | The ability to update a project config. | Administrator, Editor, Operator |
+| `project.config.sync` | The ability to sync a config. | Administrator, Editor, Operator |
+| `project.config.delete-version` | The ability to delete a project config version. | Administrator |
+| `project.config.undeploy` | The ability to undeploy resources for a project config. | Administrator, Editor |
+| `project.notifications.create` | The ability to send project notifications. | Administrator |
+| `project.event-notifications.create` | The ability to create a Project and Event Notifications integration. | Administrator |
+| `project.event-notifications.create-test` | The ability to test a Project and Event Notifications integration. | Administrator |
+| `project.notifications.retrieve` | The ability to view project notifications. | Administrator, Editor, Operator, Viewer |
+| `project.event-notifications.retrieve` | The ability to view a Project and Event Notifications integration. | Administrator, Editor, Operator, Viewer |
+| `project.event-notifications.delete` | The ability to delete a Project and Event Notifications integration. | Administrator |
 {: caption="Table 134. Service actions - Project" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="project"}
