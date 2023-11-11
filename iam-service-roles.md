@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-11-10"
+lastupdated: "2023-11-11"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -6995,13 +6995,8 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `project.notifications.write` | The ability to send project notifications. | Administrator |
-| `project.notifications.read` | The ability to read project notifications. | Administrator, Editor, Operator, Viewer |
-| `project.notifications.delete` | The ability to delete project notifications. | Administrator |
 | `project.config.approve` | The ability to approve a project config. | Administrator, Editor |
 | `project.config.deploy` | The ability to deploy a project config. | Administrator, Editor |
-| `project.config.destroy-resources` | The ability to destroy project config resources. | Administrator, Editor |
-| `project.config.edit` | The ability to edit a project config. | Administrator, Editor, Operator |
 | `project.config.validate` | The ability to validate a project config. | Administrator, Editor, Operator |
 | `project.environment.delete` | The ability to delete a project environment. | Administrator |
 | `project.config.delete` | The ability to delete a project config. | Administrator |
