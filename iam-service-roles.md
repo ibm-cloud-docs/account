@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-11-14"
+lastupdated: "2023-11-15"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1516,6 +1516,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Role | Description |
 | ----- | :----- |
 | CloudPak Data Engineer | Create or view governance artifacts. |
+| CloudPak Data Quality Analyst | CloudPak Data Quality Analyst |
 | CloudPak Data Scientist | Find data in catalogs and use data in projects. |
 | CloudPak Data Steward | Create or view governance artifacts and curate data into catalogs. |
 | Governance Artifacts Administrator | Manage governance artifacts |
@@ -1545,6 +1546,10 @@ Review the available platform and service roles and the actions mapped to each t
 | `cp4d.project.manage` | Manage projects | Manager |
 | `cp4d.deployment-space.manage` | Manage deployment space | Manager |
 | `cp4d.glossary.admin` | Manage governance artifacts | Governance Artifacts Administrator |
+| `cp4d.data-quality-asset-types.access` | Manage data quality assets | CloudPak Data Quality Analyst, Manager |
+| `cp4d.data-quality-sla-rules.manage` | Manage data quality SLA rules | CloudPak Data Quality Analyst, Manager |
+| `cp4d.data-quality.measure` | Execute data quality rules | CloudPak Data Quality Analyst, Manager |
+| `cp4d.data-quality.drill-down` | Drill down to issue details | CloudPak Data Quality Analyst, Manager |
 {: caption="Table 31. Service actions - IBM Cloud Pak for Data" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="cp4d"}
@@ -5867,7 +5872,10 @@ Review the available platform and service roles and the actions mapped to each t
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `lakehouse.dashboard.view` | Description | Administrator, Editor, Operator, Viewer |
-| `lakehouse.metastore.admin` | Allowing Megastore access | MetastoreAccess |
+| `GET /v4/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Viewer |
+| `GET /v5/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Viewer |
+| `lakehouse.metastore.admin` | Allowing metastore access | MetastoreAccess |
+| `lakehouse.uservpc.manage` | Provides ability to create and manage a deployment in a user owned VPC | Administrator, Editor, Operator |
 {: caption="Table 108. Service actions - IBM Lakehouse" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="lakehouse"}
