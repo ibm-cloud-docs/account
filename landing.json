@@ -1,6 +1,6 @@
 {
   "title": "Managing your account, resources, and access docs",
-  "lastupdated": "2023-10-26",
+  "lastupdated": "2023-11-17",
   "introduction": "Leverage the interacting components and systems in your account for resource, user, and access management. Get started by setting up your IBM cloud account, learn about setting up an enterprise, or explore assigning access to resources quickly with IBM Cloud Identity and Access Management (IAM).",
   "section_devtools": {
     "api": "/docs?tab=api-docs&subCategory=account&category=platform_services",
@@ -61,6 +61,11 @@
     "view_more": "/docs/overview?topic=overview-whatsnew",
     "tiles": [
       {
+        "date": "17 November 2023",
+        "title": "Protect your private catalog and private products",
+        "description": " Add an extra layer of protection to your private catalogs with context-based restrictions. Users can view the catalogs that you protect only if they satisfy your rule."
+      },
+      {
         "date": "26 October 2023",
         "title": "Symantec VIP 2FA is deprecated",
         "description": " If you are currently using Symantec VIP as your external authentication method, you can continue to use it and add subscribers as needed until 24 October 2024. If you are not already using Symantec VIP, then you can't purchase Symantec VIP to use as your external authentication method as of 24 October 2023. All customers currently using Symantec VIP must migrate to IBM Cloud MFA by 24 October 2024."
@@ -69,11 +74,6 @@
         "date": "05 September 2023",
         "title": "Centrally administer your multi-account environment",
         "description": "IBM Cloud is excited to announce that you can now centrally administer access and security settings in your organization with Enterprise-managed IAM. By using enterprise IAM templates, you can quickly create and manage access groups and trusted profiles across accounts and easily ensure that all new accounts inherit the same settings. Leveraging Enterprise-managed IAM can help your organization save time and effort, reduce the risk of unauthorized access, stay compliant with industry regulations and better protect your data."
-      },
-      {
-        "date": "03 April 2023",
-        "title": "Customize your private catalog and private products",
-        "description": "You can enhance the appearance of your private catalog to match your brand by adding a custom banner image to your private catalogs. You can also make it easier for users to search for your products added to a private catalog by specifying a custom provider name. Adding a custom provider name for your private products can help users find them quickly by using the Provider filter in the catalog."
       }
     ]
   }
