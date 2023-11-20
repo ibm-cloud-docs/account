@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-11-19"
+lastupdated: "2023-11-20"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3679,6 +3679,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Event Notification Publisher | Custom role to send notifications |
 | Event Source Manager | Custom role to handle source integration with the event-notifications service |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Pool ID Manager | Custom role is to manage apis related to pool id for sms |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Status Reporter | Custom role to handle messaging api callbacks |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
@@ -3763,6 +3764,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `event-notifications.templates.list` | This action is to list all templates | Administrator, Manager, Reader, Writer |
 | `event-notifications.templates.update` | This action is to update a template | Administrator, Manager, Writer |
 | `event-notifications.templates.delete` | This action is to delete a single template | Administrator, Manager, Writer |
+| `event-notifications.pool-id-mapping.create` | This action is to create a new pool id mapping for a destination | Pool ID Manager |
+| `event-notifications.pool-id-mapping.delete` | This action is to delete a new pool id mapping for a destination | Pool ID Manager |
+| `event-notifications.pool-id-mapping.update` | This action is to update a new pool id mapping for a destination | Pool ID Manager |
 {: caption="Table 59. Service actions - Event Notifications" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="event-notifications"}
