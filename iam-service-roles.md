@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-11-28"
+lastupdated: "2023-11-29"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -5864,6 +5864,7 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
+| DataAccess | DataAccess |
 | MetastoreAccess | Grant Metastore access |
 {: row-headers}
 {: caption="Table 108. Service roles - IBM Lakehouse" caption-side="top"}
@@ -5880,6 +5881,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `GET /v5/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Viewer |
 | `lakehouse.metastore.admin` | Allowing metastore access | MetastoreAccess |
 | `lakehouse.uservpc.manage` | Provides ability to create and manage a deployment in a user owned VPC | Administrator, Editor, Operator |
+| `lakehouse.data.access` | Allows data access for other services. | DataAccess, MetastoreAccess |
 {: caption="Table 108. Service actions - IBM Lakehouse" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="lakehouse"}
