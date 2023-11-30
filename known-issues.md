@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-10-31"
+lastupdated: "2023-11-30"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users from account, context-based restrictions
 
@@ -163,20 +163,22 @@ Context-based restrictions follow an [eventually consistent](https://en.wikipedi
 ## Access policy version limitations
 {: #policy-version-limit}
 
-As of 25 January 2023, IAM supports two versions of the IAM Policy Management API: `/v2/policies` and `/v1/policies`. `v1/polices` allows for string comparisons against attributes in the subject and resources of a policy. `v2/polices` introduces a new schema that provides backwards functional compatibility while allowing for more complex comparisons and operators.
+As of 25 January 2023, IAM supports two versions of the IAM Policy Management API: `/v2/policies` and `/v1/policies`. `v1/polices` allows for string comparisons against attributes in the subject and resources of a policy. `v2/polices` introduces a new schema that provides backwards functional compatibility while allowing for more complex comparisons and operators and time based conditions.
 
 ### String comparisons
 {: #policy-string-comparison}
 
 The following table lists the string comparison operators that you can use to build access policies with `/v2/policies` syntax. For more information about each version, see [Comparing `/v1/policies` and `/v2/policies` syntax](/docs/account?topic=account-known-issues#compare-syntax).
 
+You can have up to 10 conditions and nesting up to 2 levels. {: important}
+
 | Operator   | Description  |
 |------------|--------------|
 | `stringEquals`  | Case-sensitive string comparison. Boolean or number values are converted into a string before comparison. |
 | `stringMatch`  | Case-sensitive string match is performed between the pattern and the target string by using either an asterisk (`*`), question mark (`?`), or both. An asterisk (`*`) represents any sequence of zero or more characters in the string, and a question mark (`?`) represents any single character. You can also express an asterisk `*` and question mark `?` as a literal value by enclosing each within two sets of curly brackets `{{}}`. |
-| `stringExists`  | String must be present but can have any none zero value. |
-| `stringEqualsAnyOf` | Case-sensitive exact string matching any of the strings in an array of strings. |
-| `stringMatchAnyOf` | Case-sensitive string matching any of the strings in an array of strings. The values can include a multi-character wildcard (`*`), which matches any sequence of zero or more characters, a single-character wildcard (`?`), matching any single character, or both. You can also express an asterisk `*` and question mark `?` as a literal value by enclosing each within two sets of curly brackets `{{}}`. |
+| `stringExists`  | String can only be true. |
+| `stringEqualsAnyOf` | Case-sensitive exact string matching any of the strings in an array of strings. Limit of 10 values. |
+| `stringMatchAnyOf` | Case-sensitive string matching any of the strings in an array of strings. The values can include a multi-character wildcard (`*`), which matches any sequence of zero or more characters, a single-character wildcard (`?`), matching any single character, or both. You can also express an asterisk `*` and question mark `?` as a literal value by enclosing each within two sets of curly brackets `{{}}`. Limit of 10 values. |
 {: caption="Table 3. The string comparison operators available for conditions in access policies." caption-side="top"}
 
 
@@ -211,7 +213,7 @@ For example, the following statement contains an `operator` element that uses `s
 ### Checking a policy version in the console
 {: #check-policy-version}
 
-Time-based and resource attribute-based conditions for IAM access policies use `/v2/policies` syntax. Policies that use `/v1/policies` syntax aren't eligible to add time-based and resource attribute-based conditions. To check whether you can add these conditions to an existing policy in the console, complete the following steps.
+Time-based and resource attribute-based conditions for IAM access policies use `/v2/policies` syntax. Policies that use `/v1/policies` syntax aren't eligible to add time-based and resource attribute-based conditions. To update `/v1/policies` to `/v2/policies` by using the API, see [Updating `/v1/policies` to `/v2/policies` with conditions by using the API](/docs/account?topic=account-known-issues#update-policy-version). To check whether you can add these conditions to an existing policy in the console, complete the following steps.
 
 1. Go to **Manage > Access (IAM)**.
 1. Select **Users**, **Trusted profiles**, **Service IDs**, or **Access groups**, depending on the policy you want to check.
@@ -221,7 +223,12 @@ Time-based and resource attribute-based conditions for IAM access policies use `
 
    > Conditions unavailable for v1 policies
 
-1. (Optional) To add conditions to a policy that uses /v1/policies syntax, delete the original policy and create a new one. In the console, new policies use /v2/policies syntax.
+1. (Optional) To add conditions to a policy that uses `/v1/policies` syntax, delete the original policy and create a new one. In the console, new policies use `/v2/policies` syntax.
+
+#### Updating `/v1/policies` to `/v2/policies` with conditions by using the API
+{: #update-policy-version}
+
+Policies that use `/v1/policies` syntax aren't eligible to add time-based and resource attribute-based conditions. To update the version, you can use the [PUT /v2/policies/{id}](/apidocs/iam-policy-management#replace-v2-policy) with the V1 ID and any conditions you want to include. For more information, see [`/v2/policies`](/docs/account?topic=account-known-issues#v2-policies).
 
 ### Comparing `/v1/policies` and `/v2/policies` syntax
 {: #compare-syntax}
