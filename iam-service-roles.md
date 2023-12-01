@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-11-30"
+lastupdated: "2023-12-01"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3278,6 +3278,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Role | Description |
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Watsonx.data Service Access (For Service to Service Authorization Only) for IKC | Watsonx.data Service Access (For Service to Service Authorization Only) for IKC |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 47. Service roles - IBM Knowledge Catalog for Watson Data and AI" caption-side="top"}
@@ -3291,6 +3292,7 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- | :----- |
 | `datacatalog` | Do not use - Please select from the IBM Cloud Pak for Data service | Administrator |
 | `datacatalog.catalog.create` | Do not use - Please select from the IBM Cloud Pak for Data service | Administrator, Manager, Writer |
+| `datacatalog.data.access` | Watsonx.data Service Access to IKC | Watsonx.data Service Access (For Service to Service Authorization Only) for IKC |
 {: caption="Table 47. Service actions - IBM Knowledge Catalog for Watson Data and AI" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="datacatalog"}
