@@ -86,6 +86,7 @@ The following table shows the countries where personal use of our platform that 
 |---------|
 | Armenia |
 | Bahrain |
+| India|
 | Kazakstan |
 | Kingdom of Saudi Arabia |
 | Taiwan |
