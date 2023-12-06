@@ -4,9 +4,9 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-07-26"
+lastupdated: "2023-12-06"
 
-keywords: trusted profile, dynamic rule, operators, rules, conditions, properties
+keywords: trusted profile, dynamic rule, operators, rules, conditions, properties, time-based, resource attribute
 
 subcollection: account
 
@@ -163,7 +163,7 @@ ibmcloud iam trusted-profile-rule-create Profile-b2f13064-2b8c-4e4b-9181-c1973a4
 ## Conditions in `v2` access policies
 {: #policy-condition-properties}
 
-Time-based conditions for IAM access policies use `/v2/policies` syntax. Policies that use `/v1/policies` syntax aren't eligible to add time-based conditions. For more information, see [Access policy version limitations](/docs/account?topic=account-known-issues#policy-version-limit).
+Time-based and resource attribute-based conditions for IAM access policies use `/v2/policies` syntax. Policies that use `/v1/policies` syntax aren't eligible to add time-based resource attribute-based conditions. For more information, see [Access policy version limitations](/docs/account?topic=account-known-issues#policy-version-limit).
 
 To view the new schema for policies, see [/v2/policies](/docs/account?topic=account-known-issues&interface=ui#v2-policies).
 
@@ -188,7 +188,7 @@ For date and time operators, policies support the [ISO 8601](https://www.iso.org
 
 Use the following variables to represent the `key` that specifies the client’s environment attribute, which the policy evaluates against. Each `key` supports a discrete set of operators.
 
-| Variable name | Description | Supported operations |
+| Variable name | Description | Supported operators |
 |---------------|-------------|----------------------|
 | `environment.attributes.current_time` | The client's current time. | `timeGreaterThanOrEquals`, `timeLessThanOrEquals` |
 | `environment.attributes.current_date_time` | The client's current date and time. | `dateTimeGreaterThanOrEquals`, `dateTimeLessThanOrEquals` |
@@ -230,6 +230,7 @@ The days of the week that are specified in this example map to Monday, Tuesday, 
 {: #dayOfWeekEquals}
 
 The day of the week in this example is represented by `3` in the `value` string, which maps to Wednesday. In that same string, `+6:00` represents the time zone `UTC+6:00`. There's only one condition, so it's nested under `"rule"`.
+
 ```json
 "rule": {
 		"key": "{{environment.attributes.day_of_week}}",
@@ -259,3 +260,163 @@ In this example, the `dateTimeGreaterThanOrEquals` value indicates that the cond
 		]
 ```
 {: codeblock}
+
+### Resource attribute-based conditions
+{: #resource-based-conditions}
+
+The following table lists the operators available for creating resource attribute-based conditions for access policies.
+
+| Operator   | Description  | Example |
+|------------|--------------|---------|
+| `stringEquals`  | Case-sensitive string comparison. Boolean or number values are converted into a string before comparison. | See [example](/docs/account?topic=account-iam-condition-properties&interface=ui#example-stringExists).|
+| `stringExists` | String must be present but can have any non zero value.| See [example](/docs/account?topic=account-iam-condition-properties&interface=ui#example-stringExists). |
+| `stringMatch`  | Case-sensitive string match is performed between the pattern and the target string by using either an asterisk (`*`), question mark (`?`), or both. An asterisk (`*`) represents any sequence of zero or more characters in the string, and a question mark (`?`) represents any single character. You can also express an asterisk `*` and question mark `?` as a literal value by enclosing each within two sets of curly brackets `{{}}`. |  See [example](/docs/account?topic=account-iam-condition-properties&interface=ui#example-stringExists). |
+| `stringEqualsAnyOf` | Case-sensitive exact string matching any of the strings in an array of strings. Limit of 10 values. |  See [example](/docs/account?topic=account-iam-condition-properties&interface=ui#example-stringMatchAnyOf-stringEqualsAnyOf). |
+| `stringMatchAnyOf` | Case-sensitive string matching any of the strings in an array of strings. The values can include a multi-character wildcard (`*`), which matches any sequence of zero or more characters, a single-character wildcard (`?`), matching any single character, or both. You can also express an asterisk `*` and question mark `?` as a literal value by enclosing each within two sets of curly brackets `{{}}`. Limit of 10 values.|  See [example](/docs/account?topic=account-iam-condition-properties&interface=ui#example-stringMatchAnyOf-stringEqualsAnyOf). |
+{: caption="Table 8. The operators available to resource attribute-based conditions for access policies." caption-side="top"}
+
+The `key` represents the resource attribute that is supported by the chosen service. A `key` takes the form of `resource.attributes.<attribute-name>`. For example, in the case of Cloud Object Storage, the supported `prefix` attribute can be represented as the key with the `resource.attributes.prefix` notation. The following table lists example variables and is not all inclusive.
+
+| Variable name | Description | Supported operators |
+|---------------|-------------|----------------------|
+| `resource.attributes.prefix` | Defines the prefix that this condition should allow for listing objects or folders. | `stringMatchAnyOf` |
+| `resource.attributes.path` | Scopes all read, write, and management access on objects. | `stringMatchAnyOf` |
+| `resource.attributes.delimiter` | Restricts the type of folder structure that the user can generate and helps the user navigate the bucket like a file hierarchy.   | `stringEquals` |
+{: caption="Table 9. Variable notation for resource attribute-based conditions." caption-side="top"}
+
+For more information, see [Condition patterns](/docs/account?topic=account-iam-resource-based&interface=ui#attribute-condition-patterns).
+
+#### Example: stringMatchAnyOf and stringEqualsAnyOf
+{: #example-stringMatchAnyOf-stringEqualsAnyOf}
+
+In this example, the `stringMatchAnyOf` values for the `resource.attributes.path` variable indicate that access is granted for the `home/David/.*?`,`special/.*?`,`restricted/.*?`, and `temporary/test-file.*?` paths. The `or` value indicates that there is an alternative condition that can grant access.
+
+The `stringEqualsAnyOf` value for the `resource.attributes.delimiter` variable indicates that access is granted when there is no boundary indicator or when `/` is present. Additionally, the `stringEqualsAnyOf`for the `resource.attributes.prefix` variable indicates that `home/`, or `home/David/`, or no prefix must also exist to grant access. The `and` value let's us know that both the `resource.attributes.delimiter` and `resource.attributes.prefix` must be met to grant access.
+
+```json
+"pattern": "attribute-based-condition:resource:literal-and-wildcard",
+"rule": {
+    "operator": "or",
+    "conditions": [
+      {
+        "key": "{{resource.attributes.path}}",
+        "operator": "stringMatchAnyOf",
+        "value": [
+          "home/David/*",
+          "special/*",
+          "restricted/*",
+          "temporary/test*spatial.?.log"
+        ]
+      },
+      {
+        "operator": "and",
+        "conditions": [
+          {
+            "key": "{{resource.attributes.delimiter}}",
+            "operator": "stringEqualsAnyOf",
+            "value": [
+              "",
+              "/"
+            ]
+          },
+          {
+            "key": "{{resource.attributes.prefix}}",
+            "operator": "stringEqualsAnyOf",
+            "value": [
+              "",
+              "home/",
+              "home/David/"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+```
+{: codeblock}
+
+#### Example: stringExists, stringEquals, stringMatch
+{: #example-stringExists}
+
+In this example, `stringEquals` for `iam_id`, `accountID`, `serviceName`, and `resourceType` indicates that an exact string match is performed. The asterisk present in the `stringMatch` value for the resource variable indicates that access is granted to all resources that begin with `dev-bucket-`. The true `stringExists` value for the path variable and the `false` stringExists value for the prefix and delimiter variable indicates that only the path must exist to grant access.
+
+```json
+{
+    "type": "access",
+    "subject": {
+        "attributes": [
+            {
+                "key": "iam_id",
+                "operator": "stringEquals",
+                "value": "IBMid-1234"
+            }
+        ]
+    },
+    "control": {
+        "grant": {
+            "roles": [
+                {
+                    "role_id": "crn:v1:bluemix:public:cloud-object-storage::::role:ListFolderContent"
+                },
+                {
+                    "role_id": "crn:v1:bluemix:public:cloud-object-storage::::role:ListFolder"
+                },
+                {
+                    "role_id": "crn:v1:bluemix:public:cloud-object-storage::::role:AllFolderOperations"
+                }
+            ]
+        }
+    },
+    "resource": {
+        "attributes": [
+            {
+                "name": "accountId",
+                "operator": "stringEquals",
+                "value": "account-123"
+            },
+            {
+                "key": "serviceName",
+                "operator": "stringEquals",
+                "value": "cloud-object-storage"
+            },
+            {
+                "key": "serviceInstance",
+                "operator": "stringEquals",
+                "value": "cd329d97-c33d-4428-b39e-6170dc1c2a1e"
+            },
+            {
+                "key": "resource",
+                "operator": "stringMatch",
+                "value": "dev-bucket-*"
+            },
+            {
+                "key": "resourceType",
+                "operator": "stringEquals",
+                "value": "bucket"
+            }
+        ]
+    },
+    "rule": {
+        "operator": "and",
+        "conditions": [
+            {
+                "key": "{{resource.attributes.path}}",
+                "operator": "stringExists",
+                "value": true
+            },
+            {
+                "key": "{{resource.attributes.prefix}}",
+                "operator": "stringExists",
+                "value": false
+            },
+            {
+                "key": "{{resource.attributes.delimiter}}",
+                "operator": "stringExists",
+                "value": false
+            }
+        ]
+    }
+}
+```
+{: codeblock}
+
