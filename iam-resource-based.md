@@ -117,7 +117,7 @@ Complete the following steps to assign an access policy with an attribute resour
 1. Click **Add condition** and select **Advanced condition builder** > **Next**.
 1. Add the resource conditions and click **Create**.
 
-As an example, let's say that you're creating a conditional policy for a developer that needs access to everything under the `dev/David/` and the `dev/Secret/` folders OR any path that begins with the `devOps/` or `cicd/`. In this case, select **Prefix**, **string matches any of**, and add `dev/David/*` and `dev/Secret/`. Then, add an OR condition and select **Path**, **string matches any of**, and add `devOps/` and `cicd/*`.
+As an example, let's say that you're creating a conditional policy for a developer that needs access to everything under the `dev/David/` and the `dev/Secret/` folders OR any path that begins with the `devOps/` or `cicd/`. In this case, select **Prefix**, **string matches any of**, and add `dev/David/*` and `dev/Secret/*`. Then, add an OR condition and select **Path**, **string matches any of**, and add `devOps/*` and `cicd/*`.
 {: tip}
 
 1. Click **Create**> **Review** > **Add** to add your access configuration to your access summary.
