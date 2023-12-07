@@ -61,7 +61,7 @@
     "view_more": "/docs/overview?topic=overview-whatsnew",
     "tiles": [
       {
-        "date": "06 December 2023",
+        "date": "07 December 2023",
         "title": "Limit access with resource attribute-based conditions",
         "description": "You can now create a single IAM policy that grants access based on multiple resource attribute-based conditions."
       },
