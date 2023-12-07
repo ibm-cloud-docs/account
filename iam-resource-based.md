@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023
-lastupdated: "2023-12-06"
+lastupdated: "2023-12-07"
 keywords: access policy, access, policy, restriction, resource attribute, conditions
 
 subcollection: account
