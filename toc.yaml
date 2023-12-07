@@ -97,6 +97,7 @@
                   - iam-account_management.md
                   - iam-wildcard.md
                   - iam-time-based.md
+                  - iam-resource-based.md
                   - iam-public_access.md
                   - iam-mnginfra.md
                   - iam-migrated_permissions.md

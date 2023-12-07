@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2023-11-30"
+lastupdated: "2023-12-07"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users from account, context-based restrictions
 
@@ -176,7 +176,7 @@ You can have up to 10 conditions and nesting up to 2 levels. {: important}
 |------------|--------------|
 | `stringEquals`  | Case-sensitive string comparison. Boolean or number values are converted into a string before comparison. |
 | `stringMatch`  | Case-sensitive string match is performed between the pattern and the target string by using either an asterisk (`*`), question mark (`?`), or both. An asterisk (`*`) represents any sequence of zero or more characters in the string, and a question mark (`?`) represents any single character. You can also express an asterisk `*` and question mark `?` as a literal value by enclosing each within two sets of curly brackets `{{}}`. |
-| `stringExists`  | String can only be true. |
+| `stringExists`  | String must be true. |
 | `stringEqualsAnyOf` | Case-sensitive exact string matching any of the strings in an array of strings. Limit of 10 values. |
 | `stringMatchAnyOf` | Case-sensitive string matching any of the strings in an array of strings. The values can include a multi-character wildcard (`*`), which matches any sequence of zero or more characters, a single-character wildcard (`?`), matching any single character, or both. You can also express an asterisk `*` and question mark `?` as a literal value by enclosing each within two sets of curly brackets `{{}}`. Limit of 10 values. |
 {: caption="Table 3. The string comparison operators available for conditions in access policies." caption-side="top"}
