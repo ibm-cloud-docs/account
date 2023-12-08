@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-12-07"
+lastupdated: "2023-12-08"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -568,6 +568,11 @@ Review the available platform and service roles and the actions mapped to each t
 | `atracker.migration.post` | Post atracker migration | Administrator |
 | `atracker.migration.get` | Get atracker migration | Administrator, Editor, Operator, Viewer |
 | `atracker.migration.delete` | Delete Atracker migration | Administrator |
+| `atracker.onboarding.get` | Get onboarding config for services only. | Administrator, Editor, Operator, Viewer |
+| `atracker.onboarding.list` | List onboarding configs for services only. | Administrator, Editor, Operator, Viewer |
+| `atracker.onboarding.create` | Create onboarding config for services only. | Administrator |
+| `atracker.onboarding.update` | Update onboarding config for services only. | Administrator |
+| `atracker.onboarding.delete` | Delete onboarding config for services only. | Administrator |
 {: caption="Table 11. Service actions - Activity Tracker" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="atracker"}
@@ -1097,6 +1102,7 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
+| Data Provider | Role assigned to external Provider to push Compliance data to SCC |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
@@ -1201,7 +1207,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `compliance.posture-management.reports-read` | View results | Administrator, Editor, Operator |
 | `compliance.posture-management.profiles-compare` | Compare profiles | Administrator, Editor, Operator, Viewer |
 | `compliance.posture-management.attachments-upgrade` | Upgrade attachments | Administrator, Editor |
-| `compliance.posture-management.provider-data-write` | Write Compliance data from Provider | Administrator, Editor |
+| `compliance.posture-management.provider-data-write` | Write Compliance data from Provider | Administrator, Data Provider, Editor, Operator |
 {: caption="Table 23. Service actions - IBM Cloud Compliance and Security Center" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="compliance"}
@@ -6501,6 +6507,17 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 {: #platform-roles-table120}
 
+| Role | Description |
+| ----- | :----- |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+{: row-headers}
+{: caption="Table 120. Service roles - Metrics Router" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="metrics-router"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table120}
+
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `metrics-router.target.read` | Read target | Administrator, Editor, Operator, Viewer |
@@ -6516,8 +6533,11 @@ Review the available platform and service roles and the actions mapped to each t
 | `metrics-router.onboarding.modify` | Modify onboarding for services only. | Administrator |
 | `metrics-router.onboarding.get` | Get onboarding for services only. | Administrator, Editor, Operator, Viewer |
 | `metrics-router.onboarding.delete` | Delete onboarding for services only. | Administrator |
-| `metrics-router.setting.update` | Update Metrics Router setting | Administrator |
-| `metrics-router.setting.get` | Get Metrics Router setting | Administrator, Editor, Operator, Viewer |
+| `metrics-router.setting.update` | Update settings | Administrator |
+| `metrics-router.setting.get` | Get settings | Administrator, Editor, Operator, Viewer |
+| `metrics-router.onboarding.create` | Create onboarding config for services only. | Administrator |
+| `metrics-router.onboarding.list` | List onboarding config for services only. | Viewer |
+| `metrics-router.onboarding.update` | Update onboarding config for services only. | Reader |
 {: caption="Table 120. Service actions - Metrics Router" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="metrics-router"}
