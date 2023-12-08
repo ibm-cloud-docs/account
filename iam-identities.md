@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-06-02"
+lastupdated: "2023-12-07"
 
 keywords: what is IAM, IAM features, IAM API, how IAM works
 
@@ -22,6 +22,8 @@ The two major concepts of {{site.data.keyword.cloud}} IAM are identity and acces
 {: shortdesc}
 
 The identity concept consists of user identities, service and app identities, API keys for users and service IDs, trusted profiles, and resource identities. Users are identified by their IBMid, SoftLayer ID, {{site.data.keyword.appid_short}} user ID, or federated user attributes.
+
+{{site.data.keyword.cloud_notm}} IAM grants access to individual identities or a group of identities by using policies. The policies allow for users to grant access while adhering to the principle of least privilege by utilizing roles and scoped resources. Except for account owners, user identities do not have any access grants by default. Each access grant is independent of other access grants, and users with permission can access resources by using the console and APIs. The actions that are allowed can be for a single API or a group of APIs depending on customer needs. Access can be granted at a high level for a grouping of resources or scoped to a single resource depending on customer needs.
 
 Removing access for inactive identities can reduce the risk of unauthorized access to your {{site.data.keyword.cloud_notm}} resource and help you manage access more efficiently. For more information, see [Identifying inactive identities](/docs/account?topic=account-id-inactive-identities).
 {: tip}
