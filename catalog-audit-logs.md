@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-02-21"
+  years: 2022, 2023
+lastupdated: "2023-12-11"
 
 keywords: audit log
 
@@ -18,7 +18,7 @@ subcollection: account
 With audit logs you can follow the changes that have been made to your private catalogs. Changes to your private catalog are associated with your account or enterprise account, products, and catalog. 
 {: shortdesc} 
 
-To view the audit logs, you need to be a manager of the account the catalog is in or have write access to the catalog. For write access, you need at least editor access on the catalog and the account. See [Assigning access to account management services](/docs/account?topic=account-account-services) for more information.
+To view the audit logs, you need to be a manager of the account the catalog is in, or an editor in that account and the catalog. See [Assigning access to account management services](/docs/account?topic=account-account-services) for more information.
 
 
 ## Viewing changes in the console
