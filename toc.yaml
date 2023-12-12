@@ -213,6 +213,9 @@
                   topics:
                   - catalog-settings.md
                   - catalog-audit-logs.md
+              - topicgroup:
+                  label: Validating products in a target account
+                  topics:
                   - catalog-cross-account.md
                   - catalog-cross-validation.md
               - topicgroup:
