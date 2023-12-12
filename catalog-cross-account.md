@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023
-lastupdated: "2023-07-05"
+lastupdated: "2023-12-12"
 
 keywords: catalog, private catalogs, IAM access, Schematics service, cross accounts, target account
 
@@ -12,17 +12,16 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Setting up authorization for target account support
+# Setting up authorization for validation in a target account
 {: #catalog-service-authorization}
 
-When onboarding software to a private catalog, you are required to validate the software and provide proof for any security and compliance claims by adding scans. You can choose to complete these steps in an account other than the account that contains your product also known as a target account. Before you can use a target account, you must set up authorization.
+When onboarding software to a private catalog, you are required to validate the software and provide proof for any security and compliance claims by adding scans. You can choose to complete these steps in an account other than the account that contains your product, which is known as a target account. Before you can use a target account for validation, you must set up a service to service authorization. The authorization must grant the Schematics service in the target account access to the catalog management service in the account that contains your product.
 {: shortdesc}
 
-You might want to use a target account for the following reasons:
+You might want to use a target account to validate software for the following reasons:
 
-- prevent the account that contains the product from becoming cluttered with resources that are being created and deleted as part of the validation and scanning processes
-
-- allow users to complete onboarding when they might not have authorization to create resources in the account that contains the product
+- Prevent the account with the product from becoming cluttered with resources that are created and deleted as part of the onboarding process
+- Allow users to complete onboarding when they might not have authorization to create resources in the account that contains the product
 
 ## Before you begin
 {: #prereq-auth}
@@ -34,13 +33,30 @@ You might want to use a target account for the following reasons:
 ## Setting up authorization
 {: #catalog-auth-step}
 
-1. Log in to the {{site.data.keyword.cloud_notm}} account that contains the product.
+Set up an authorization in the account that contains your product. The authorization grants the Schematics service in another account access to your product.
+
+In a service to service authorization, the source service is the service that needs access to the target service. The source service is the Schematics service in another account, which needs access to the catalog management service in the account that contains your product. The authorization allows Schematics to fetch the source URL from your product's version.
+
+### Getting the source account ID
+{: #account-id-cm}
+
+1. Log in to the {{site.data.keyword.cloud_notm}} account where you want to validate your product.
+1. Go to **Manage > Account > Account settings**.
+1. Copy the 32 character account ID.
+
+Save the account ID for the next steps in creating the authorization.
+
+### Creating the authorization
+{: #cm-schematics-auth}
+
+1. Use the account switcher to go to the account that contains your product.
 1. Go to **Manage** > **Access (IAM)** > **Authorizations** > **Create**.
-1. For source account, select **This account** to indicate that you are giving access to the account with the product.
-1. For source service, select **Schematics**. You can leave **All resources** selected.
-1. For target service, select **Catalog management**.
-1. If you want to grant access to all your catalogs, you can move on to the next step. If you want to limit access to a specific catalog, select **Resources based on selected attributes** > **Catalog** and then choose your catalog from the `Value` menu.
-1. For platform access, select **Viewer**.
+1. Select **Another account** for the source account.
+1. Enter the 32 character account ID that you copied in [Getting the source account ID](/docs/account?topic=account-catalog-service-authorization#account-id-cm).
+1. Select **Schematics** for the source service.
+1. Select **Catalog management** for the target service.
+1. Limit access to a specific catalog by selecting **Resources based on selected attributes** > **Catalog**. Then, choose your catalog from the Value menu. Move on to the next step if you want to grant access to all of your catalogs.
+1. Select **Viewer** for platform access.
 1. Click **Authorize** to finalize the authorization.
 
-You are ready to add a target account for validation and security and compliance center scans. For more information, see [Using cross account support for validation](/docs/account?topic=account-catalog-cross-validation&interface=ui).
+Now, the Schematics service in the target account has Viewer access to the catalog in the account that contains your product. This allows Schematics to fetch the source URL from your product's version. Next, you are ready to give your catalog permissions to create the Schematics workspace in the target account by [Setting up a target account for validation](/docs/account?topic=account-catalog-cross-validation&interface=ui). Then, you can add the target account to your catalog for validation and security and compliance center scans.
