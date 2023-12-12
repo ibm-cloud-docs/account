@@ -228,6 +228,7 @@
               - topicgroup:
                   label: Sharing products
                   topics:
+                  - catalog-enterprise-share-overview.md
                   - catalog-enterprise-share.md
                   - catalog-enterprise-share-accept.md
                   - catalog-other-share.md
