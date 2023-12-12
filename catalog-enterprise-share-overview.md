@@ -12,7 +12,7 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Visibility of products in public and private catalogs
+# Visibility of product versions in public and private catalogs
 {: #catalog-share-overview}
 
 Learn about managing and sharing products from your private catalog and using products that are available in the {{site.data.keyword.cloud}} catalog. Learn why some product tiles are not visible to you, depending on your IAM access and the state of product versions.
