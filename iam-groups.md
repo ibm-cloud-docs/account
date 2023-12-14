@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2023
 
-lastupdated: "2023-01-24"
+lastupdated: "2023-12-14"
 
 
 keywords: access groups, access group, create group, assign access to group, administrator, administrator role
@@ -543,3 +543,456 @@ After you set up your group, use the following steps to assign access to it by u
       terraform apply
       ```
       {: pre}
+
+## Adding members to an access group in the console
+{: #add-users-ag}
+{: ui}
+
+Members can be users, service IDs, and trusted profiles.
+
+1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Access (IAM)**, and select **Access Groups**.
+1. Click on the access group that you created.
+1. Add members.
+   1. Click **Add users**.
+   1. Click **Service IDs > Add Service IDs**.
+   1. Click **Trusted profiles > Add trusted profiles**.
+
+   If you don't see the button to add members, you might not have access. Review the [access requirements](/docs/account?topic=account-groups&interface=ui#prereq-create-groups) and contact your account administrator for access.
+   {: note}
+
+1. Select the users, service IDs, or trusted profiles that you want to add to the group and click **Add to group**.
+
+Members that you add to the group can use the level of access that you assign to the group.
+
+## Adding members to an access group by using the CLI
+{: #add-users-ag-cli}
+{: cli}
+
+Members can be users, service IDs, and trusted profiles. Members that you add to the group can use the level of access that you assign to the group.
+
+1. Get the users, service IDs, or trusted profiles in your account. Note the details that are returned for the member you want to add to the access group.
+
+   [Get all users](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_users):
+
+    ```bash
+   ibmcloud account users [-c, --account-id ACCOUNT_ID]
+   ```
+   {: codeblock}
+
+   [List all service IDs](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_service_ids):
+
+   ```bash
+   ibmcloud iam service-ids [--uuid]
+   ```
+   {: codeblock}
+
+   [Get all trusted profiles](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_trusted_profiles):
+
+    ```bash
+   ibmcloud iam trusted-profiles [--id | --output FORMAT] [-q, --quiet]
+   ```
+   {: codeblock}
+
+1. Add members to the access group:
+
+    Use the [ibmcloud iam access-group-user-add](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_access_group_policy_create) command to add users to an access group. The following example adds user `name@example.com` to access group `example_group` by using the CLI.
+
+    ```bash
+    ibmcloud iam access-group-user-add example_group name@example.com
+    ```
+    {: codeblock}
+
+    Use the [ibmcloud iam access-group-service-id-add](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_access_group_service_id_add) command to add service IDs to an access group. The following example adds service ID `example-service` to access group `example_group`:
+
+    ```bash
+    ibmcloud iam access-group-service-id-add example_group example-service
+    ```
+    {: codeblock}
+
+    Use the [ibmcloud iam access-group-trusted profile-add](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_access_group_trusted_profile_add) command to add trusted profiles to an access group. The following example adds service ID `PROFILE_ID` to access group `example_group`:
+
+    ```bash
+    ibmcloud iam access-group-trusted-profile-add GROUP_NAME (PROFILE_NAME | PROFILE_ID) [PROFILE_NAME2 | PROFILE_ID2...] [--output FORMAT] [-q, --quiet]
+    ```
+{: codeblock}
+
+## Adding members to an access group by using the API
+{: #add-users-ag-api}
+{: api}
+
+Members can be users, service IDs, and trusted profiles.
+
+1. List the users, service IDs, or trusted profiles in your account as shown in the following example request. Note the IBMid, service ID or trusted profile ID that is returned for the member that you want to add to the access group.
+
+   [List users](/apidocs/user-management?code=go#list-users):
+
+    ```bash
+    curl -X GET https://user-management.cloud.ibm.com/v2/accounts/987d4cfd77b04e9b9e1a6asdcc861234/users -H 'Authorization: Bearer <IAM_TOKEN>'
+    ```
+    {: codeblock}
+    {: curl}
+
+    ```java
+    ListUsersOptions listUsersOptions = new ListUsersOptions.Builder()
+      .accountId(accountId)
+      .build();
+
+    UsersPager pager = new UsersPager(userManagementService, listUsersOptions);
+    List<UserProfile> allResults = new ArrayList<>();
+    while (pager.hasNext()) {
+      List<UserProfile> nextPage = pager.getNext();
+      allResults.addAll(nextPage);
+    }
+
+    System.out.println(GsonSingleton.getGson().toJson(allResults));
+    ```
+    {: codeblock}
+    {: java}
+
+    ```javascript
+    const params = {
+      accountId: accountId,
+    };
+
+    const allResults = [];
+    try {
+      const pager = new UserManagementV1.UsersPager(userManagementService, params);
+      while (pager.hasNext()) {
+        const nextPage = await pager.getNext();
+        expect(nextPage).not.toBeNull();
+        allResults.push(...nextPage);
+      }
+      console.log(JSON.stringify(allResults, null, 2));
+    } catch (err) {
+      console.warn(err);
+    }
+    ```
+    {: codeblock}
+    {: javascript}
+
+    ```python
+    all_results = []
+    pager = UsersPager(
+      client=user_management_service,
+      account_id=account_id,
+    )
+    while pager.has_next():
+      next_page = pager.get_next()
+      assert next_page is not None
+      all_results.extend(next_page)
+
+    print(json.dumps(all_results, indent=2))
+    ```
+    {: codeblock}
+    {: python}
+
+    ```go
+    listUsersOptions := &usermanagementv1.ListUsersOptions{
+      AccountID: &accountID,
+    }
+
+    pager, err := userManagementService.NewUsersPager(listUsersOptions)
+    if err != nil {
+      panic(err)
+    }
+
+    var allResults []usermanagementv1.UserProfile
+    for pager.HasNext() {
+      nextPage, err := pager.GetNext()
+      if err != nil {
+        panic(err)
+      }
+      allResults = append(allResults, nextPage...)
+    }
+    b, _ := json.MarshalIndent(allResults, "", "  ")
+    fmt.Println(string(b))
+    ```
+    {: codeblock}
+    {: go}
+
+   [List service IDs](/apidocs/iam-identity-token-api?code=go#list-service-ids):
+
+    ```bash
+    curl -X GET 'https://iam.cloud.ibm.com/v1/serviceids?account_id=ACCOUNT_ID&name=My-serviceID' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json'
+    ```
+    {: codeblock}
+    {: curl}
+
+    ```java
+    ListServiceIdsOptions listServiceIdsOptions = new ListServiceIdsOptions.Builder()
+        .accountId(accountId)
+        .name(serviceIdName)
+        .build();
+
+    Response<ServiceIdList> response = service.listServiceIds(listServiceIdsOptions).execute();
+    ServiceIdList serviceIdList = response.getResult();
+
+    System.out.println(serviceIdList);
+    ```
+    {: codeblock}
+    {: java}
+
+    ```javascript
+    const params = {
+      accountId: accountId,
+      name: serviceIdName,
+    };
+
+    try {
+      const res = await iamIdentityService.listServiceIds(params)
+      console.log(JSON.stringify(res.result, null, 2));
+    } catch (err) {
+      console.warn(err);
+    }
+    ```
+    {: codeblock}
+    {: javascript}
+
+    ```python
+    service_id_list = iam_identity_service.list_service_ids(
+      account_id=account_id, name=serviceid_name
+    ).get_result()
+
+    print(json.dumps(service_id_list, indent=2))
+    ```
+    {: codeblock}
+    {: python}
+
+    ```go
+    listServiceIdsOptions := iamIdentityService.NewListServiceIdsOptions()
+    listServiceIdsOptions.SetAccountID(accountID)
+    listServiceIdsOptions.SetName(serviceIDName)
+
+    serviceIDList, response, err := iamIdentityService.ListServiceIds(listServiceIdsOptions)
+    if err != nil {
+      panic(err)
+    }
+    b, _ := json.MarshalIndent(serviceIDList, "", "  ")
+    fmt.Println(string(b))
+    ```
+    {: codeblock}
+    {: go}
+
+
+   [List trusted profiles](/apidocs/iam-identity-token-api?code=python#list-profiles):
+
+    ```bash
+    curl -X GET 'https://iam.cloud.ibm.com/v1/profiles?account_id=ACCOUNT_ID' -H 'Authorization: Bearer TOKEN' -H 'Accept: application/json'
+    ```
+    {: codeblock}
+    {: curl}
+
+    ```java
+    ListProfilesOptions listProfilesOptions = new ListProfilesOptions.Builder()
+        .accountId(accountId)
+        .includeHistory(false)
+        .build();
+
+    Response<TrustedProfilesList> response = service.listProfiles(listProfilesOptions).execute();
+    TrustedProfilesList profiles = response.getResult();
+
+    System.out.println(profiles);
+    ```
+    {: codeblock}
+    {: java}
+
+    ```javascript
+    const params = {
+      accountId: accountId,
+      includeHistory: false,
+    };
+
+    try {
+      const res = await iamIdentityService.listProfiles(params);
+      console.log(JSON.stringify(res.result, null, 2));
+    } catch (err) {
+      console.warn(err);
+    }
+    ```
+    {: codeblock}
+    {: javascript}
+
+    ```python
+    profile_list = iam_identity_service.list_profiles(account_id=account_id, include_history=True).get_result()
+
+    print(json.dumps(profile_list, indent=2))
+    ```
+    {: codeblock}
+    {: python}
+
+    ```go
+    listProfilesOptions := iamIdentityService.NewListProfilesOptions(accountID)
+    listProfilesOptions.SetIncludeHistory(false)
+
+    trustedProfiles, response, err := iamIdentityService.ListProfiles(listProfilesOptions)
+    if err != nil {
+      panic(err)
+    }
+    b, _ := json.MarshalIndent(trustedProfiles, "", "  ")
+    fmt.Println(string(b))
+    ```
+    {: codeblock}
+    {: go}
+
+1. Add members to the access group by calling the [IAM Access Groups](/apidocs/iam-access-groups?code=go#add-members-to-access-group) API as shown in the following example request.
+
+   The type of member must be `user`, `service` or `profile`.
+   {: tip}
+
+    ```bash
+    curl -X PUT --location --header "Authorization: Bearer {iam_token}" --header "Accept: application/json" --header "Content-Type: application/json" --data '{ "members": [ { "iam_id": "IBMid-user1", "type": "user" }, { "iam_id": "iam-ServiceId-123", "type": "service" }, { "iam_id": "iam-Profile-123", "type": "profile" } ] }' "{base_url}/v2/groups/{access_group_id}/members"
+    ```
+    {: codeblock}
+    {: curl}
+
+    ```java
+    AddGroupMembersRequestMembersItem member1 = new AddGroupMembersRequestMembersItem.Builder()
+      .iamId("IBMid-user1")
+      .type("user")
+      .build();
+    AddGroupMembersRequestMembersItem member2 = new AddGroupMembersRequestMembersItem.Builder()
+      .iamId("iam-ServiceId-123")
+      .type("service")
+      .build();
+      AddGroupMembersRequestMembersItem member3 = new AddGroupMembersRequestMembersItem.Builder()
+      .iamId(testProfileId)
+      .type("profile")
+      .build();
+    AddMembersToAccessGroupOptions addMembersToAccessGroupOptions = new AddMembersToAccessGroupOptions.Builder()
+      .accessGroupId(testGroupId)
+      .addMembers(member1)
+      .addMembers(member2)
+      .addMembers(member3)
+      .build();
+    Response<AddGroupMembersResponse> response = iamAccessGroupsService.addMembersToAccessGroup(addMembersToAccessGroupOptions).execute();
+    AddGroupMembersResponse addGroupMembersResponse = response.getResult();
+
+    System.out.println(addGroupMembersResponse);
+    ```
+    {: codeblock}
+    {: java}
+
+    ```javascript
+    const groupMember1 = {
+      iam_id: 'IBMid-user1',
+      type: 'user',
+    };
+    const groupMember2 = {
+      iam_id: 'iam-ServiceId-123',
+      type: 'service',
+    };
+    var groupMember3 = {
+      iam_id: profileId,
+      type: 'profile',
+    }
+
+    const params = {
+      accessGroupId: testGroupId,
+      members: [groupMember1, groupMember2, groupMember3],
+    };
+
+    try {
+      const res = await iamAccessGroupsService.addMembersToAccessGroup(params);
+      console.log(JSON.stringify(res.result, null, 2));
+    } catch (err) {
+      console.warn(err);
+    }
+    ```
+    {: codeblock}
+    {: javascript}
+
+    ```python
+    member1 = AddGroupMembersRequestMembersItem(iam_id='IBMid-user1', type='user')
+    member2 = AddGroupMembersRequestMembersItem(iam_id='iam-ServiceId-123', type='service')
+    member3 = AddGroupMembersRequestMembersItem(iam_id=test_profile_id, type='profile')
+    members = [member1, member2, member3]
+
+    response = iam_access_groups_service.add_members_to_access_group(
+      access_group_id=test_group_id,
+      members=members,
+    )
+    add_group_members_response = response.get_result()
+
+    print(json.dumps(add_group_members_response, indent=2))
+    ```
+    {: codeblock}
+    {: python}
+
+    ```go
+    groupMembers := []iamaccessgroupsv2.AddGroupMembersRequestMembersItem{
+      iamaccessgroupsv2.AddGroupMembersRequestMembersItem{
+        IamID: core.StringPtr("IBMid-user1"),
+        Type:  core.StringPtr("user"),
+      },
+      iamaccessgroupsv2.AddGroupMembersRequestMembersItem{
+        IamID: core.StringPtr("iam-ServiceId-123"),
+        Type:  core.StringPtr("service"),
+      },
+      iamaccessgroupsv2.AddGroupMembersRequestMembersItem{
+        IamID: core.StringPtr(testProfileID),
+        Type:  core.StringPtr("profile"),
+      },
+    }
+
+    addMembersToAccessGroupOptions := iamAccessGroupsService.NewAddMembersToAccessGroupOptions(
+      accessGroupIDLink,
+    )
+    addMembersToAccessGroupOptions.SetMembers(groupMembers)
+
+    addGroupMembersResponse, response, err := iamAccessGroupsService.AddMembersToAccessGroup(addMembersToAccessGroupOptions)
+    if err != nil {
+      panic(err)
+    }
+    b, _ := json.MarshalIndent(addGroupMembersResponse, "", "  ")
+    fmt.Println(string(b))
+    ```
+    {: codeblock}
+    {: go}
+
+Members that you add to the group can use the level of access that you assign to the group.
+
+## Adding members to an access group by using Terraform
+{: #add-users-ag-terra}
+{: terraform}
+
+Members can be users, service IDs, and trusted profiles.
+
+1. Create an argument in your `main.tf` file. The following example adds a service ID, trusted profile, and a user with the ID `user@ibm.com` to an access group. For more information, see [ibm_iam_access_group_members](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_access_group_members){: external}.
+
+
+   ```terraform
+   resource "ibm_iam_access_group_members" "accgroupmem" {
+     access_group_id = ibm_iam_access_group.accgroup.id
+     ibm_ids         = ["user@ibm.com"]
+     iam_service_ids = [ibm_iam_service_id.serviceID.id]
+     iam_profile_ids = [ibm_iam_trusted_profile.profileID.id]
+   }
+   ```
+   {: codeblock}
+
+
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
+
+   ```terraform
+   terraform init
+   ```
+   {: pre}
+
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://www.terraform.io/cli/run){: external}.
+
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
+
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
+
+   1. Run `terraform apply` to create the resources that are defined in the plan.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}
+
+
+Members that you add to the group can use the level of access that you assign to the group.
