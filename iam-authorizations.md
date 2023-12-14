@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2023
 
-lastupdated: "2023-01-18"
+lastupdated: "2023-12-14"
 
 keywords: authorizations, service to service access, access between services, dependent service, source service, target service, assigned access, access policies
 
@@ -24,13 +24,16 @@ Many of the capabilities of IAM are focused on managing and enforcing user and a
 
 In an authorization, the source service is the service that is granted access to the target service. The roles that you select define the level of access for the source service. The target service is the service that you are granting permission to be accessed by the source service based on the roles that you assign. A source service can be in the same account where the authorization is created or in another account. The target service is always in the account where the authorization is created. You can view whether the source service is located in the current account or another account by viewing the Source account column for the specific authorization on the [Authorizations](/iam/authorizations) page in the {{site.data.keyword.Bluemix}} console.
 
+## Authorizing dependent services
+{: #dependent-services}
+
 In some cases, you can authorize dependent services in addition to the source service. The source service that is enabled to access the target service depends on another service. The dependent service must be assigned access to complete the workflow. The following diagram illustrates the process of delegating access between source, target, and dependent services:
 
-![S2S authorizations with dependent services.](images/dependent-services.svg "S2S authorizations with dependent services"){: caption="Figure 1. How S2S authorizations work with dependent services" caption-side="bottom"}
+![S2S authorizations with dependent services.](images/dependent-services.svg){: caption="Figure 1. How S2S authorizations work with dependent services" caption-side="bottom"}
 
 For more information about roles, see [Service access roles](/docs/account?topic=account-userroles#service_access_roles).
 
-The following example explains how the relationship between the source, target, and dependent services works. Let's say you have an {{site.data.keyword.ibmwatson}} service that relies on an instance of {{site.data.keyword.cos_full_notm}} to store data. When you enable an authorization between your {{site.data.keyword.ibmwatson_notm}} service and {{site.data.keyword.keymanagementservicelong}} service, you might need the {{site.data.keyword.cos_short}} instance to access a key in the user's {{site.data.keyword.keymanagementserviceshort}} instance. So, while the authorization is between your {{site.data.keyword.ibmwatson_notm}} service and {{site.data.keyword.keymanagementserviceshort}} service, the {{site.data.keyword.cos_short}} service is also given access as a dependent service of the {{site.data.keyword.ibmwatson_notm}} service. By selecting the option to enable authorizations for dependent services, you don't need to take any additional action because the policies are automatically created for the dependent services.
+The following example explains how the relationship between the source, target, and dependent services works. Let's say that you have an {{site.data.keyword.ibmwatson}} service that relies on an instance of {{site.data.keyword.cos_full_notm}} to store data. When you enable an authorization between your {{site.data.keyword.ibmwatson_notm}} service and {{site.data.keyword.keymanagementservicelong}} service, you might need the {{site.data.keyword.cos_short}} instance to access a key in the user's {{site.data.keyword.keymanagementserviceshort}} instance. So, while the authorization is between your {{site.data.keyword.ibmwatson_notm}} service and {{site.data.keyword.keymanagementserviceshort}} service, the {{site.data.keyword.cos_short}} service is also given access as a dependent service of the {{site.data.keyword.ibmwatson_notm}} service. By selecting the option to enable authorizations for dependent services, you don't need to take any additional action because the policies are automatically created for the dependent services.
 
 The source service's dependent services might be in the source service's account, which means that they are not visible to you in your account. However, any access policies that are created by the source service for its dependent services are always visible to you. You can tell which authorizations a user created or a source service that is created by checking the Type column for the specific authorization on the Authorizations page.
 {: tip}
@@ -45,15 +48,26 @@ You must have access to the target service to create an authorization between se
 1. In the {{site.data.keyword.Bluemix_notm}} console, click **Manage** > **Access (IAM)**, and select **Authorizations**.
 1. Click **Create**.
 1. Select a source account.
-   * If the source service that needs access to the target service is in this account, select **This account**.
-   * If the source service that needs access to the target service is in a different account, select **Other account**. Then, enter the account ID of the source account.
-1. Specify whether you want the authorization to be for all instances, only a specific instance in the account, or instances only in a certain resource group.
-1. Select a target service and specify whether you want the authorization to be for all instances, only a specific instance in the account, or instances only in a certain resource group.
-1. Optional: Select **Enable authorization to be delegated** to allow the source service to delegate its access to any dependent services. This option is displayed only if the source service has dependent services. By selecting this option, policies are automatically created by the source service for the dependent services.
+   * If the source that needs access to the target is in this account, select **This account**.
+   * If the source that needs access to the target is in a different account, select **Another account**. Then, enter the account ID of the source account.
+1. Select the service or services that need access.
+   - You can select an individual service and specify whether you want the source to include all resources, instances only in a certain resource group, or only a specific instance in the account.
+   - [New]{: tag-new} You can also select **All Identity and Access enabled services** and select or enter a resource group ID.
+
+    [New]{: tag-new} Entering a resource group as the source gives the service instances in a resource group access to the target resource in your account. You might want to set up this level of access if you don't want to give direct access to a resource.
+   {: tip}
+
+1. Select a target.
+
+1. Specify whether you want the target to include all resources or specific resources.
+   If you chose specific resources as the target, you can add attributes to further scope the access. The type of attributes depends on the target service that you selected.
+   {: note}
+
+1. (Optional) Select **Enable authorization to be delegated by source and dependent services** to allow the source service to delegate its access to any dependent services. This option is displayed only if the source service has dependent services. By selecting this option, policies are automatically created by the source service for the dependent services.
 1. Select a role to assign access to the source service that accesses the target service.
 1. Click **Authorize**.
 
-If you create an authorization between a service in another account and a target service in your current account, you need to have access only to the target resource. For the source account, you need only the account number. 
+If you create an authorization between a service in another account and a target service in your current account, you need access only to the target resource. For the source account, you need only the account number. 
 {: note}
 
 ## Creating an authorization by using the CLI
@@ -462,6 +476,109 @@ fmt.Println(string(b))
 
 Not all services support policies at the `resourceType` and individual `resource` level. Examples of services that do support these attributes are {{site.data.keyword.cos_full_notm}} and {{site.data.keyword.keymanagementservicelong_notm}}, where buckets and keys are the resource type and the ID is listed to specify the specific resource.
 {: note}
+
+### Creating authorizations that use `resource-group` as the `resourceType`
+{: #resource-group-auth}
+
+To create an authorization that uses `resource-group` as either the source or the target, use the [IAM Policy Management API](/apidocs/iam-policy-management#create-a-policy).
+
+#### `resource-group` as the source
+{: #rg-source}
+
+See the following API example for Create a policy method with the `resource-group` specified as the source.
+
+```bash
+{
+ "type": "authorization",
+    "subjects": [
+        {
+            "attributes": [
+                {
+                    "name": "resourceGroupId",
+                    "value": "<rgId>"
+                },
+                {
+                    "name": "accountId",
+                    "value": "<sourceAccountId>"
+                }
+            ]
+        }
+    ],
+    "roles": [
+        {
+            "role_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+        }
+    ],
+    "resources": [
+        {
+            "attributes": [
+                {
+                    "name": "accountId",
+                    "value": "<targetAccountId>"
+                },
+                {
+                    "name": "serviceName",
+                    "value": "<targetService>"
+                },
+                {
+                    "name": "serviceInstance",
+                    "value": "<targetServiceInstance>"
+                }
+            ]
+        }
+    ]
+}
+```
+{: codeblock}
+
+#### `resource-group` as the target
+{: #rg-target}
+
+See the following API example for Create a policy method with the `resource-group` specified as the target.
+
+```bash
+{
+ "type": "authorization",
+    "subjects": [
+        {
+            "attributes": [
+                {
+                    "name": "accountId",
+                    "value": "<sourceAccountId>"
+                },
+                {
+                    "name": "serviceName",
+                    "value": "<sourceService>"
+                },
+                {
+                    "name": "serviceInstance",
+                    "value": "<sourceServiceInstance>"
+                }
+            ]
+        }
+    ],
+    "roles": [
+        {
+            "role_id": "crn:v1:bluemix:public:iam::::role:Viewer"
+        }
+    ],
+    "resources": [
+        {
+            "attributes": [
+                {
+                    "name": "accountId",
+                    "value": "<targetAccountId>"
+                },
+                {
+                    "name": "resourceType",
+                    "value": "resource-group"
+                }
+            ]
+        }
+    ]
+}
+```
+{: codeblock}
 
 
 ## Removing an authorization in the console
