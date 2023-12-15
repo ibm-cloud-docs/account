@@ -26,7 +26,7 @@ If you have the following access, you can update the status of another user:
 
 All account users are assigned a status that describes their user state. A user's status is displayed on the User details page.
 
-| User State                      | Description                                                                                                                                                   |
+| User state                      | Description                                                                                                                                                   |
 |---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Active                          | The user accepted the invitation and has the assigned access to work within the account.                                                                      |
 | Disabled classic infrastructure | The account owner or a user with sufficient permissions can set another user as disabled so that the user can no longer access classic infrastructure resources. The user can continue to log in to the console and access platform resources or support cases. |
