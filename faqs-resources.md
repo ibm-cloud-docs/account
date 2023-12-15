@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2023
 
-lastupdated: "2023-06-01"
+lastupdated: "2023-12-15"
 
 keywords: resource FAQs, resource frequently asked questions, resource group, resource list, dashboard widget
 
@@ -98,7 +98,7 @@ You can't move service instances between resource groups. If you assign a servic
 
 You can delete a service instance by using the following steps:
 
-1. From your dashboard in the {{site.data.keyword.cloud_notm}} console, click **View resources** within the Resources summary widget.
+1. From the {{site.data.keyword.cloud}} console, click the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list** to view your list of resources.
 2. Expand the sections to locate the service instance that you want to delete.
 3. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Delete** for the row.
 
@@ -123,10 +123,7 @@ For more information about the required access for other resources types, see [T
 {: #slitems}
 {: faq}
 
-To view all of your resources, select from the following options:
-
-* Click the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource List**.
-* Click the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Dashboard**, and click any of the links that are listed in the Resource summary widget.
+To view all of your resources, click the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource List**.
 
 To view just your classic infrastructure resources, select from the following options:
 

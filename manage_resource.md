@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2023
-lastupdated: "2023-06-01"
+lastupdated: "2023-12-15"
 
 keywords: resource, account resources, create resource, access to create resources
 
@@ -36,7 +36,7 @@ For users in your account to be able to create resources from the catalog and as
 {: help}
 
 Use the following steps to create a resource in the console:
-1. From your dashboard, click **View resources** within the Resources summary widget.
+1. From the {{site.data.keyword.cloud}} console, click the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list** to view your list of resources.
 2. Click **Create resource**. From here, you are directed to the catalog. You can search the products or filter based on a specific category, provider, pricing plan, type of compliance, or release type. Examples of resources include apps, service instances, container clusters, storage volumes, virtual servers, and software.
 
 After you create the resource, it is displayed in your list of resources on the Resource list page.

@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2023
 
-lastupdated: "2023-02-23"
+lastupdated: "2023-12-15"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 

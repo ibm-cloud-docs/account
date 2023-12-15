@@ -43,7 +43,7 @@ First, create a new dashboard and select a template.
    Not all widgets can be scoped. If a widget can't be scoped, the data for all resources is displayed.
    {: note}
 
-6. Reorganize the layout to fit your needs. Cora moves Notes to the first row, next to Resource summary. In the next row, she includes the Usage, User access, and {{site.data.keyword.cloud_notm}} status widgets.
+6. Reorganize the layout to fit your needs. Cora moves Notes to the first row. In the next row, she includes the Usage, User access, and {{site.data.keyword.cloud_notm}} status widgets.
 7. Click **Save dashboard**.
 
 ### Watch and learn

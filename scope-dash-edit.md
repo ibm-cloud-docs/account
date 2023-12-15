@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2022
-lastupdated: "2022-11-16"
+  years: 2021, 2023
+lastupdated: "2023-12-15"
 
 keywords: dashboard, widgets display, manage visibility, customize, console, dashboard templates
 
@@ -56,7 +56,6 @@ When you customize a dashboard, you can add widgets to ensure what is displayed 
 * Planned maintenance: View upcoming and planned maintenance events.
 * Quick start: Personalized tasks to help you get started with IBM Cloud.
 * Recent support cases: View a summary of your support cases.
-* Resource summary: Track and view the status of your resources.
 * Spending summary: View a summary of total spending over the past year.
 * Toolchains: Create and manage your toolchains.
 * Usage: View billing usage details for your account.
