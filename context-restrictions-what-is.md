@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2023-10-31"
+lastupdated: "2023-12-15"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 
@@ -124,6 +124,7 @@ The following is a list of services that you can add to a network zone as a serv
 | Catalog Management Service | IAM-enabled | `globalcatalog-collection` |
 | Cloud {{site.data.keyword.block_storage_is_short}} | IAM-enabled | |
 | [Cloud {{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-setting-a-firewall) | IAM-enabled | `cloud-object-storage` |
+| [{{site.data.keyword.cloudant}}](/docs/Cloudant?topic=Cloudant-managing-access-for-cloudant#using-iam-allowlisting) | IAM-enabled | `cloudantnosqldb` |
 | [{{site.data.keyword.codeengineshort}}](/docs/codeengine?topic=codeengine-cbr) | IAM-enabled | `codeengine` |
 | [{{site.data.keyword.databases-for-cassandra}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | `databases-for-cassandra` |
 | [{{site.data.keyword.databases-for-enterprisedb}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | `databases-for-enterprisedb` |
