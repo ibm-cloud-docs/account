@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-12-15"
+lastupdated: "2023-12-16"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -5487,10 +5487,10 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+| Administrator | As an administrator, you can perform all platform actions for the reservation resource this role is assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions for a reservation resource except managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate reservation resources, such as viewing the reservations dashboard. |
+| Viewer | As a viewer, you can view reservation resources, but you can't modify them. |
 {: row-headers}
 {: caption="Table 99. Platform roles - Reservations for VPC" caption-side="top"}
 {: tab-title="Platform roles"}
