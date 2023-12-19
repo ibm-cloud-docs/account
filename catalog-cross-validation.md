@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023
-lastupdated: "2023-12-12"
+lastupdated: "2023-12-19"
 
 keywords: catalog, private catalogs, IAM access, Schematics service, cross accounts, target account, projects
 
@@ -33,7 +33,7 @@ You might want to use a target account to validate software for the following re
 
 - Verify that you're using a Pay-As-You-Go or Subscription account. See [Viewing your account type](/docs/account?topic=account-account_settings#view-acct-type) for more details.
 - Make sure that you have the [administrator role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management) or have the catalog administrator complete this task.
-- Set up [service-to-service authorization](/docs/account?topic=account-catalog-catalog-service-authorization).
+- Set up [service-to-service authorization](/docs/account?topic=account-catalog-service-authorization).
 - If you want to link a private catalog with a project, you must have a catalog and a project created. For more information on creating a private catalog, see [Customizing the IBM Cloud catalog and private catalogs for users in your account](/docs/account?topic=account-restrict-by-user&interface=ui). For more information on creating a project, see [Creating a project](/docs/secure-enterprise?topic=secure-enterprise-setup-project&interface=ui).
 
 ## Using an {{site.data.keyword.cloud_notm}} API key
@@ -41,7 +41,7 @@ You might want to use a target account to validate software for the following re
 
 You can use an API key to give your private catalog access to validate your product and run security and compliance scans in a target account.
 
-Alternatively, use a trusted profile to eliminate the need for key rotation. For more information, see [Using a trusted profile](/docs/account?topic=account-catalog-cross-validatione&interface=ui#target-trusted-profile).
+Alternatively, use a trusted profile to eliminate the need for key rotation. For more information, see [Using a trusted profile](/docs/account?topic=account-catalog-cross-validation#target-trusted-profile)).
 {: tip}
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage > Catalogs > Private catalogs** to access your private catalogs.
@@ -104,6 +104,8 @@ Retrieve the CRN associated with your private catalog. You need this to establis
       1. Select a resource group and click **Next**.
       1. Select the Viewer role and click **Next**.
       1. Click **Add** and repeat these steps for all resource groups in the account.
+1. Click **Create**.
+1. Click **Details** and copy the Profile ID.
 
 Now that you linked the private catalog in one account to the trusted profile in the target account, you are ready to add the target account to your private catalog.
 
@@ -118,7 +120,7 @@ The trusted profile that gives your private catalog access to create validation 
 1. Select **Trusted profile ID** as the method.
 1. Create a unique programmatic name for the target account.
 1. Create a display name for the target account. The display name appears as a target account option for users that are onboarding products.
-1. Enter the profile ID of the trusted profile. If you do not have the profile ID, see [Updating a trusted profile](/docs/account?topic=account-catalog-cross-validatione&interface=ui#update-create-profile).
+1. Enter the profile ID of the trusted profile. If you do not have the profile ID, see [Creating the trusted profile](/docs/account?topic=account-catalog-cross-validation#target-trusted-profile).
 1. Select the checkbox to indicate that you set you service authorization for Schematics and Catalog Management.
 1. Select the checkbox to indicate that you created a trusted profile and added the catalog CRN as a trust relationship.
 1. Click **Add** > **Update**.
