@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-09-05"
+lastupdated: "2023-12-19"
 
 keywords: IAM, what is IAM, comparing IAM concepts
 
@@ -47,11 +47,4 @@ The following mappings of {{site.data.keyword.cloud_notm}} IAM concepts to those
 {: caption="Table 1. {{site.data.keyword.cloud_notm}} IAM concept comparison" caption-side="top"}
 {: summary="The first column is {{site.data.keyword.cloud_notm}} IAM concept. Then, each of the following columns has details as that concept relates the specific cloud provider that is listed in the column header."}
 
-## Federating users to {{site.data.keyword.cloud_notm}}
-{: #federation-iam}
-
-{{site.data.keyword.cloud_notm}} offers two ways for you to federate your corporate identity provider (IdP), which simplifies login by giving your employees access to {{site.data.keyword.cloud_notm}} with their company username and password. The first option is to [federate with IBMid](https://ibm.box.com/v/IBMid-Federation-Guide){: external}, and the other option is to create an {{site.data.keyword.appid_full_notm}} service instance and use that as a way to federate users into an {{site.data.keyword.cloud_notm}} account. For more information, see [Enabling authentication from an external identity provider](/docs/account?topic=account-idp-integration).
-
-In both types of federation, the user must be a member of the account, or have access to the account by a trusted profile to be able to complete operations. If trusted profiles are not configured, the account owner or administrator must invite individual IBMids into the {{site.data.keyword.cloud_notm}} account. Only if the invited IBMid accepts the invitation is the user added the account as an active user. In the case of {{site.data.keyword.appid_short}}, the user is automatically onboarded to {{site.data.keyword.cloud_notm}} without a need to invite each user to the account. In both types of federation, the users are active {{site.data.keyword.cloud_notm}} account users that can access the platform, including IAM-enabled resources, Cloud Foundry, and classic infrastructure all depending on their assigned access.
-
-Trusted profiles deal with federated users differently. If the customer federates their corporate IdP, users from that IdP aren't added to an account as what we might consider a normal user. Instead, users' SAML-based IdP attributes are evaluated at login and if they meet all of the conditions for a trusted profile, they are prompted to apply one or more trusted profiles. Trusted profiles grant users the level of access they need to complete a specialized and specific set of tasks in a limited time-period, for example, 1-4 hours. These are usually critical tasks that you would want to avoid doing unintentionally in daily work. Users don't need to onboard to IBM Cloud, they're automatically added by way of the trust relationship. If a user leaves your company, you can simply delete the user's corporate identity in your directory, which then also revokes access to IBM Cloud. Time-based access allows frequent authentication checks for reduced security risks.
+{{site.data.content.federation-iam}}

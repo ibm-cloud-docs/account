@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2023
 
-lastupdated: "2023-12-14"
+lastupdated: "2023-12-19"
 
 keywords: authorizations, service to service access, access between services, dependent service, source service, target service, assigned access, access policies
 
@@ -144,7 +144,7 @@ Use the following steps to create an authorization by using Terraform:
 {: #auth-api}
 {: api}
 
-To authorize a source service access to a target service, use the [IAM Policy Management API](/apidocs/iam-policy-management#create-a-policy). See the following API example for Create a policy method with the `type=authorization` specified.
+To authorize a source service access to a target service, use the [IAM Policy Management API](/apidocs/iam-policy-management#create-policy). See the following API example for Create a policy method with the `type=authorization` specified.
 
 The supported attributes for creating an authorization policy depend on what each service supports. For more information about the supported attributes for each service, see the documentation for the services that you're using.
 {: note}
@@ -480,7 +480,7 @@ Not all services support policies at the `resourceType` and individual `resource
 ### Creating authorizations that use `resource-group` as the `resourceType`
 {: #resource-group-auth}
 
-To create an authorization that uses `resource-group` as either the source or the target, use the [IAM Policy Management API](/apidocs/iam-policy-management#create-a-policy).
+To create an authorization that uses `resource-group` as either the source or the target, use the [IAM Policy Management API](/apidocs/iam-policy-management#create-policy).
 
 #### `resource-group` as the source
 {: #rg-source}

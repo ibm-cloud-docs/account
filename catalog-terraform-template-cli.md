@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-03-31"
+lastupdated: "2023-12-19"
 
 keywords: private catalog, software, onboard, Terraform, terraform template, cli
 
@@ -94,7 +94,7 @@ ibmcloud catalog offering add-category --catalog "Name of catalog" --offering "s
 
 To update a product in your private catalog, you first need get the product and then you can update. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#add-category-offering) for updating your product.
 
-Run the `offering get` command. For more information, see [ibmcloud catalog offering get](#get-offering).
+Run the `offering get` command. For more information, see [ibmcloud catalog offering get](/docs/cli?topic=cli-manage-catalogs-plugin#get-offering).
 
 ```bash
 ibmcloud catalog offering get -c <CATALOGID> -o <OFFERINGID> --output json

@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2023
 
-lastupdated: "2023-06-01"
+lastupdated: "2023-12-19"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -21,7 +21,7 @@ subcollection: account
 Use {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) to invite users, cancel invitations, or resend a pending invitation. You can invite a single user or multiple users.
 {: shortdesc}
 
-All users must accept an invitation to become an active user within a new account. [Learn more.](#pending-invitations)
+All users must accept an invitation to become an active user within a new account. [Learn more.](/docs/account?topic=account-iamuserinv#pending-invitations)
 {: important}
 
 ## Watch and learn

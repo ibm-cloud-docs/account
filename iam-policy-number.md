@@ -70,7 +70,7 @@ If you aren't sure how many policies are in your account, and you want to ensure
 {: #total-number-policies}
 {: api}
 
-To get the total number of policies per account, you can use the [IAM Policy Management API](/apidocs/iam-policy-management#get-policies-by-attributes):
+To get the total number of policies per account, you can use the [IAM Policy Management API](/apidocs/iam-policy-management#list-policies):
 
 1. Log in to {{site.data.keyword.cloud}} CLI. If you have multiple accounts, you are prompted to select which account to use. If you do not specify a region with the `-r` flag, you must also select a region.
 
