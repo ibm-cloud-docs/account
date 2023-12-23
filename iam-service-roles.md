@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2023-12-22"
+lastupdated: "2023-12-23"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1741,6 +1741,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `GET /v4/:platform/deployments/:deployment_id/groups/:group_id/schedule_scaling` | Read scheduled scaling configuration | Administrator, Editor, Operator, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/groups/:group_id/schedule_scaling` | Update scheduled scaling | Administrator, Editor, Operator |
 | `DELETE /v4/:platform/deployments/:deployment_id/groups/:group_id/schedule_scaling` | Delete scheduled scaling | Administrator, Editor, Operator |
+| `PATCH /v4/:platform/deployments/:deployment_id/switch_license` | switch license type or term | Administrator, Editor, Operator |
 {: caption="Table 33. Service actions - Db2 Warehouse" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="dashdb"}
