@@ -93,7 +93,7 @@ ibmcloud catalog filter hide-ibm-public-catalog
 
 You can use filters to manage which products in the public catalog are available to all users in your account. For example, you might want to restrict access to third-party products. Or, you might want users to work with a specific software type.
 
-If your account is a parent account in an {{site.data.keyword.cloud_notm}} enterprise, the filters that you set apply to all child account groups and accounts. For more information, see [Managing products for {{site.data.keyword.cloud_notm}} enterprise](/docs/account?topic=account-catalog-enterprise-restrict).
+If your account is a parent account in an {{site.data.keyword.cloud_notm}} enterprise, the filters that you set apply to all child account groups and accounts. For more information, see [Customizing the {{site.data.keyword.cloud_notm}} catalog for an enterprise](/docs/secure-enterprise?topic=secure-enterprise-catalog-enterprise-restrict&interface=ui).
 {: tip}
 
 1. Create a new filter.
@@ -188,7 +188,7 @@ See the [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=
 
 You can use filters to manage which products in the public catalog are available to all users in your account. For example, you might want to restrict access to third-party products. Or, you might want users to work with a specific software type.
 
-If your account is a parent account in an {{site.data.keyword.cloud_notm}} enterprise, the filters that you set apply to all child account groups and accounts. For more information, see [Managing products for {{site.data.keyword.cloud_notm}} enterprise](/docs/account?topic=account-catalog-enterprise-restrict).
+If your account is a parent account in an {{site.data.keyword.cloud_notm}} enterprise, the filters that you set apply to all child account groups and accounts. For more information, see [Customizing the {{site.data.keyword.cloud_notm}} catalog for an enterprise](/docs/secure-enterprise?topic=secure-enterprise-catalog-enterprise-restrict&interface=ui).
 {: tip}
 
 ```bash
