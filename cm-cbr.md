@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023
-lastupdated: "2023-11-17"
+lastupdated: "2023-12-26"
 
 keywords: context-based restrictions, protecting catalog resources, security, catalog management
 
@@ -34,7 +34,7 @@ Review the following access requirements:
 To get started protecting your catalogs with context-based restrictions, see the tutorial for [Leveraging context-based restrictions to secure your resources](/docs/account?topic=account-context-restrictions-tutorial).
 
 ## How catalogs integrate with context-based restrictions
-{: #cbr-overview}
+{: #cbr-overview-cm}
 
 ### Protecting specific APIs
 {: #cm-cbr-apis}
@@ -281,7 +281,7 @@ To find a list of available service references, call the [ListAvailableServicere
 {: tip}
 
 ## Creating network zones by using Terraform
-{: #network-zones-create-terra}
+{: #cm-network-zones-create-terra}
 {: terraform}
 
 By creating network zones, you establish a list of allowed locations where an access request originates. Add the Catalog Management service to that allowlist as a service reference. After you create a network zone, you can add it to a rule.

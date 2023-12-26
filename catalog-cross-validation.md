@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023
-lastupdated: "2023-12-19"
+lastupdated: "2023-12-26"
 
 keywords: catalog, private catalogs, IAM access, Schematics service, cross accounts, target account, projects
 
@@ -76,7 +76,7 @@ Retrieve the CRN associated with your private catalog. You need this to establis
 1. Copy the `Catalog CRN`.
 
 #### Creating the trusted profile
-{: #catalog-get-crn}
+{: #catalog-create-tp}
 
 1. In the {{site.data.keyword.cloud_notm}} console, navigate to the account where you want to validate your product by clicking the account switcher and selecting the correct account.
 1. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **Manage** > **Access (IAM)** > **Trusted profiles**.
