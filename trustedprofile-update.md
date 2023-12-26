@@ -5,7 +5,7 @@ copyright:
   years: 2021, 2022
 
 
-lastupdated: "2022-06-13"
+lastupdated: "2023-12-26"
 
 keywords: trusted profile, federated users, granting access, update trusted profile, compute resource, IAM trusted profile, trust relationship, establish trust,  trust policy, trusted entity, assume access, apply access
 
@@ -19,7 +19,7 @@ subcollection: account
 # Updating trusted profiles
 {: #trusted-profile-update}
 
-You can update the permissions or redefine trust relationships for trusted profiles at any time by using either the console or the [IAM Identity Services](/apidocs/iam-identity-token-api#create-claim-rule-request){: external} API. 
+You can update the permissions or redefine trust relationships for trusted profiles at any time by using either the console or the [IAM Identity Services](/apidocs/iam-identity-token-api#create-claim-rule-request){: external} API.
 {: shortdesc}
 
 To update trusted profiles, you must be assigned the administrator, operator, or editor role within the account, or on the IAM Identity Service.
@@ -32,7 +32,7 @@ You can use {{site.data.keyword.cloudaccesstrailshort}} to monitor which federat
 {: #updating-tp-console}
 {: ui}
 
-To update trusted profiles, go to **Manage** > **Access (IAM)** in the {{site.data.keyword.cloud_notm}} console, and select **Trusted profiles**. Then, select the name of the trusted profile that you want to update. 
+To update trusted profiles, go to **Manage** > **Access (IAM)** in the {{site.data.keyword.cloud_notm}} console, and select **Trusted profiles**. Then, select the name of the trusted profile that you want to update.
 
 ### Updating the description of your profile
 {: #description}
@@ -49,11 +49,11 @@ After the trusted profile is created, you can build trust with both federated us
    * Click **Add a condition** and repeat as needed to add more conditions.
    * To remove a condition, click the **Remove** icon ![Remove icon](../icons/close-icon.svg "Remove") next to the existing condition.
 3. Click **Save** to apply all added or removed conditions to your trusted profile.
-  
-### Assigning access 
+
+### Assigning access
 {: #update-tp-access}
 
-You can assign access to a trusted profile by assigning individual access policies, or by adding the trusted profiles to an existing access group. 
+You can assign access to a trusted profile by assigning individual access policies, or by adding the trusted profiles to an existing access group.
 
 #### Assigning access policies
 {: #update-tp-policy}
@@ -61,7 +61,7 @@ You can assign access to a trusted profile by assigning individual access polici
 1. Click the name of the trusted profile that you want to update.
 2. Click **Access**.
 3. To edit existing access policies, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** next to the access policy you want to update.
-4. To assign new access policies, click **Assign**. 
+4. To assign new access policies, click **Assign**.
 
 You can select your resources based on resource attributes and assign any combination of roles.
 {: tip}
@@ -70,26 +70,26 @@ You can select your resources based on resource attributes and assign any combin
 {: #update-tp-group}
 
 1. Click the name of the trusted profile that you want to update.
-2. Click **Access** 
+2. Click **Access**
 3. To edit existing access group membership, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** next to the access group you want to update.
-4. To add the trusted profile to a new access group, click **Assign group**. 
+4. To add the trusted profile to a new access group, click **Assign group**.
 5. Select the access groups to which you want to add the trusted profile and click **Add**. You can assign users to only the access groups that you have access to manage.
-6. Click **Assign**. 
+6. Click **Assign**.
 
 ### Updating session duration
 {: #session-duration-tp}
 
 1. Click the name of the trusted profile that you want to update.
-2. In the federated users section, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") for the identity provider (IdP) that you want to update. 
-3. Select **Edit** 
+2. In the federated users section, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") for the identity provider (IdP) that you want to update.
+3. Select **Edit**
 4. In hours, enter how long federated users can use this profile before their session expires.
-5. Click **Save**. 
+5. Click **Save**.
 
 ## Updating trusted profiles by using the CLI
 {: #updating-tp-cli}
 {: cli}
 
-You can update a trusted profile from your account by using the CLI. For more information, see the [IBM Cloud CLI](https://github.com/IBM-Cloud/ibm-cloud-cli-release/releases). 
+You can update a trusted profile from your account by using the CLI. For more information, see the [IBM Cloud CLI](https://github.com/IBM-Cloud/ibm-cloud-cli-release/releases).
 
 1. Log in, and select the account.
 
@@ -97,15 +97,15 @@ You can update a trusted profile from your account by using the CLI. For more in
    ibmcloud login
    ```
    {: codeblock}
-   
+
 1. Check the list of trusted profiles for the current account and select the one that you want to update. The following command shows the list of trusted profiles for your {{site.data.keyword.Bluemix_notm}} account:
 
    ```bash
    ibmcloud iam trusted-profiles
    ```
    {: codeblock}
-   
-1. If you'd like to check the details of a trusted profile, use the `ibmcloud iam trusted-profile` command. Specify the ID or the name of the trusted profile that you would like to check. 
+
+1. If you'd like to check the details of a trusted profile, use the `ibmcloud iam trusted-profile` command. Specify the ID or the name of the trusted profile that you would like to check.
 
    ```bash
    ibmcloud iam trusted-profile <IDorName>
@@ -118,25 +118,25 @@ You can update a trusted profile from your account by using the CLI. For more in
    ibmcloud iam trusted-profile-update
    ```
    {: codeblock}
-   
-1. Update the trusted profile by running the following command. Specify the ID or the name of the trusted profile that you would like to update and rename. 
+
+1. Update the trusted profile by running the following command. Specify the ID or the name of the trusted profile that you would like to update and rename.
 
    ```bash
-   ibmcloud iam trusted-profile-update <IDorName> -n <NewName> ... 
+   ibmcloud iam trusted-profile-update <IDorName> -n <NewName> ...
    ```
-   {: codeblock}   
-   
-For example, the following command updates the name `Test trusted profile` to `New test trusted profile`. 
+   {: codeblock}
+
+For example, the following command updates the name `Test trusted profile` to `New test trusted profile`.
 
    ```bash
    ibmcloud iam trusted-profile-update <Test trusted profile> -n <New test trusted profile> ...
    ```
-   {: codeblock}   
+   {: codeblock}
 
 ### Assigning access policies
 {: #access-policies-cli}
 
-You can assign new access policies to your trusted profile by using the CLI. 
+You can assign new access policies to your trusted profile by using the CLI.
 
 1. Log in, and select the account.
 
@@ -144,45 +144,45 @@ You can assign new access policies to your trusted profile by using the CLI.
    ibmcloud login
    ```
    {: codeblock}
-   
+
 1. Check the list of trusted profiles for the current account and select the one that you want to assign new access policies to. The following command shows the list of trusted profiles for your {{site.data.keyword.Bluemix_notm}} account:
 
    ```bash
    ibmcloud iam trusted-profiles
    ```
    {: codeblock}
-   
+
 1. Assign new access policies by running the following command:
 
    ```bash
    ibmcloud iam trusted-profile-policy-create
    ```
    {: codeblock}
-    
+
 To check the details of the access policy for a trusted profile, run the following command:
 
    ```bash
    ibmcloud iam trusted-profile-policy
    ```
    {: codeblock}
-   
+
 For checking the list of access policies for a trusted profile, you can use the `ibmcloud iam trusted-profile-policies` command:
-   
+
    ```bash
    ibmcloud iam trusted-profile-policies
    ```
    {: codeblock}
-   
-   
+
+
 You can easily update existing access policies by running the `ibmcloud iam trusted-profile-policy-update` command:
- 
+
    ```bash
    ibmcloud iam trusted-profile-policy-update
    ```
    {: codeblock}
- 
+
 If you'd like to remove an access policy for a trusted profile, you can use the `ibmcloud iam trusted-profile-policy-delete` command:
- 
+
    ```bash
    ibmcloud iam trusted-profile-policy-delete
    ```
@@ -192,12 +192,12 @@ If you'd like to remove an access policy for a trusted profile, you can use the 
 {: #updating-tp-api}
 {: api}
 
-For more information, see the [IAM Identity Services API](/apidocs/iam-identity-token-api). 
+For more information, see the [IAM Identity Services API](/apidocs/iam-identity-token-api).
 
 ### Updating the name or description
 {: #update-tp-desc-api}
 
-To update the name or description of an existing trusted profile, call the following. Enter your updated `name` and `description` attributes. 
+To update the name or description of an existing trusted profile, call the following. Enter your updated `name` and `description` attributes.
    ```bash
    curl -X PUT 'https://iam.cloud.ibm.com/v1/profiles/PROFILE_ID' -H 'Authorization: Bearer TOKEN' -H 'If-Match: <value of etag header from GET request>' -H 'Content-Type: application/json' -H 'Accept: application/json' -d '{
      "name": "My Profile updated",
@@ -212,11 +212,11 @@ To update the name or description of an existing trusted profile, call the follo
 After the trusted profile is created, you can build trust with both federated users and compute resources in the same trusted profile.
 
    ```bash
-   curl -X PUT 'https://iam.cloud.ibm.com/v1/profiles/PROFILE_ID/rules/CLAIM_RULE_ID' 
-   -H 'Authorization: Bearer TOKEN' 
-   -H 'If-Match: <value of etag header from GET request>' 
-   -H 'Content-Type: application/json' 
-   -H 'Accept: application/json' 
+   curl -X PUT 'https://iam.cloud.ibm.com/v1/profiles/PROFILE_ID/rules/CLAIM_RULE_ID'
+   -H 'Authorization: Bearer TOKEN'
+   -H 'If-Match: <value of etag header from GET request>'
+   -H 'Content-Type: application/json'
+   -H 'Accept: application/json'
    -d '{
       "type": "Profile-SAML",
       "realm_name": "https://w3id.sso.ibm.com/auth/sps/samlidp2/saml20",
@@ -227,7 +227,7 @@ After the trusted profile is created, you can build trust with both federated us
    "operator": "CONTAINS",
    "value": "\"cloud-docs-ops\""
      }
-     ] 
+     ]
    }'
    ```
    {: codeblock}
@@ -238,10 +238,10 @@ After the trusted profile is created, you can build trust with both federated us
 To assign new access policies, call the following:
 
    ```bash
-   curl -X PUT 'https://iam.cloud.ibm.com/v1/policies' 
-   -H 'Authorization: Bearer $TOKEN' 
-   -H 'Content-Type: application/json' 
-   -H 'If-Match: $ETAG' 
+   curl -X PUT 'https://iam.cloud.ibm.com/v1/policies'
+   -H 'Authorization: Bearer $TOKEN'
+   -H 'Content-Type: application/json'
+   -H 'If-Match: $ETAG'
    -d '{
    "type": "access",
    "description": "Viewer role for for all instances of SERVICE_NAME in the account.",
@@ -278,18 +278,18 @@ To assign new access policies, call the following:
    ```
    {: codeblock}
 
-For more information, see the [IAM Policy Management](/apidocs/iam-policy-management#update-policy) API.
+For more information, see the [IAM Policy Management](/apidocs/iam-policy-management#replace-policy) API.
 
 ### Updating session duration
 {: #session-duration-tp-api}
 
 To update the session duration for federated users, call the following:
    ```bash
-   curl -X PUT 'https://iam.cloud.ibm.com/v1/profiles/PROFILE_ID/rules/CLAIM_RULE_ID' 
-   -H 'Authorization: Bearer TOKEN' 
-   -H 'If-Match: <value of etag header from GET request>' 
-   -H 'Content-Type: application/json' 
-   -H 'Accept: application/json' 
+   curl -X PUT 'https://iam.cloud.ibm.com/v1/profiles/PROFILE_ID/rules/CLAIM_RULE_ID'
+   -H 'Authorization: Bearer TOKEN'
+   -H 'If-Match: <value of etag header from GET request>'
+   -H 'Content-Type: application/json'
+   -H 'Accept: application/json'
    -d '{
       "type": "Profile-SAML",
       "realm_name": "https://w3id.sso.ibm.com/auth/sps/samlidp2/saml20",
@@ -300,8 +300,7 @@ To update the session duration for federated users, call the following:
    "operator": "CONTAINS",
    "value": "\"cloud-docs-ops\""
      }
-     ] 
+     ]
    }'
    ```
    {: codeblock}
-   

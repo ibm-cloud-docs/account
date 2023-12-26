@@ -4,7 +4,7 @@ copyright:
 
   years: 2021, 2022
 
-lastupdated: "2023-12-19"
+lastupdated: "2023-12-26"
 
 keywords: auditing IAM policies, last permit information, restore policies, inactive policies
 
@@ -442,7 +442,7 @@ You found out that a policy that was recently deleted is needed. In that case, y
     ```
     {: codeblock}
 
-    For more information, see [Restore a deleted policy by ID](/apidocs/iam-policy-management#update-policy-state).
+    For more information, see [Restore a deleted policy by ID](/apidocs/iam-policy-management#replace-policy).
 
 ## Next steps
 {: #audit-policies-next-steps}
