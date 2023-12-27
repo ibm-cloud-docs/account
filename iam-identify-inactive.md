@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022
-lastupdated: "2023-09-19"
+lastupdated: "2023-12-27"
 
 keywords: inactive identity, inactive identities, inactive, inactive users, inactive service IDs, inactive trusted profiles, inactive API keys
 
@@ -253,7 +253,7 @@ To view inactive identities by using the [IAM Identity Services API](/apidocs/ia
 
 To learn more about the implications of removing or deleting identities in your account, review the following documentation:
    - [Removing users from an account](/docs/account?topic=account-remove)
-   - [Deleting service IDs](/docs/account?topic=account-serviceid#delete_serviceid)
+   - [Deleting service IDs](/docs/account?topic=account-serviceids&interface=ui#delete_serviceid)
    - [Removing trusted profiles](/docs/account?topic=account-trusted-profile-remove)
    - [Deleting an API key](/docs/account?topic=account-userapikey#delete_user_key)
    - [Deleting an API key for a service ID](/docs/account?topic=account-serviceidapikeys#delete_service_key)
