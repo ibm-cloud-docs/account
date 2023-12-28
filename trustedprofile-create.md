@@ -5,7 +5,7 @@ copyright:
   years: 2021, 2023
 
 
-lastupdated: "2023-12-12"
+lastupdated: "2023-12-27"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access, access group, service IDs, IBM Cloud services, CRN, cloud resource name
 
@@ -204,7 +204,7 @@ Complete the following steps to define which federated users can access specific
    ```
    {: codeblock}
 
-   For more information, see the [CLI reference](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_create).
+   For more information, see the [CLI reference](/docs/cli?topic=account-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_create).
 
 1. To create conditions for your trusted profile, run the `ibmcloud iam trusted-profile-rule-create` command:
 
@@ -213,7 +213,7 @@ Complete the following steps to define which federated users can access specific
    ```
    {: codeblock}
 
-   For more information, see the [CLI reference](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_rule_create).
+   For more information, see the [CLI reference](/docs/cli?topic=account-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_rule_create).
 
 1. Create an access policy with the `Viewer` role for all resources in the account by running the following command:
 
@@ -222,7 +222,7 @@ Complete the following steps to define which federated users can access specific
    ```
    {: codeblock}
 
-   For more information, see the [CLI reference](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_policy_create).
+   For more information, see the [CLI reference](/docs/cli?topic=account-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_policy_create).
 
 
 ## Establishing trust with compute resources by using the CLI
@@ -241,7 +241,7 @@ Complete the following steps to set up better control over granting access to co
    ```
    {: codeblock}
 
-   For more information, see the [CLI reference](/docs/account?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_create).
+   For more information, see the [CLI reference](/docs/account?topic=account-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_create).
 
 1. Create conditions for your trusted profile by using the `ibmcloud iam trusted-profile-rule-create` command:
 
@@ -250,7 +250,7 @@ Complete the following steps to set up better control over granting access to co
    ```
    {: codeblock}
 
-   For more information, see the [CLI reference](/docs/account?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_rule_create).
+   For more information, see the [CLI reference](/docs/account?topic=account-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_rule_create).
 
    You can also create a direct link:
 
@@ -259,7 +259,7 @@ Complete the following steps to set up better control over granting access to co
    ```
    {: codeblock}
 
-   For more information, see the [CLI reference](/docs/account?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_link_create).
+   For more information, see the [CLI reference](/docs/account?topic=account-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_link_create).
 
 1. Create an access policy by running the following command:
 
@@ -268,7 +268,7 @@ Complete the following steps to set up better control over granting access to co
    ```
    {: codeblock}
 
-   For more information, see the [CLI reference](/docs/account?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_policy_create).
+   For more information, see the [CLI reference](/docs/account?topic=account-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_policy_create).
 
 ## Establishing trust with {{site.data.keyword.cloud_notm}} services by using the CLI
 {: #create-profile-services-cli}
@@ -345,7 +345,7 @@ After you establish trust with federated users, compute resources, an {{site.dat
 You can assign classic infrastructure access only if your account is linked to a Softlayer account.
 {: note}
 
-Use the command [`trusted-profile-policy-create`](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_policy_create) to assign an access policy to the trusted profile. The following example assigns a policy with the Administrator role on **All Account Management services**:
+Use the command [`trusted-profile-policy-create`](/docs/cli?topic=account-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_policy_create) to assign an access policy to the trusted profile. The following example assigns a policy with the Administrator role on **All Account Management services**:
 
 ```bash
 ibmcloud iam trusted-profile-policy-create Profile-36f5c562-1t36-4442-b7f0-2663c85386f1 --roles Administrator --attributes serviceType=service
