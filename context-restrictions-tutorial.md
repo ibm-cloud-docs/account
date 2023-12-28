@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2023-08-14"
+lastupdated: "2023-12-27"
 
 keywords: network-level access, network security strategy
 subcollection: account
@@ -79,6 +79,6 @@ After 30 days of monitoring, update the rule to **Enabled** to begin enforcing y
 
 You can also use network zones to restrict access at the account level and user level. For more information, see [Allowing specific IP addresses](/docs/account?topic=account-ips&interface=ui).
 
-To create context-based restrictions programmatically, see the [Context-based Restrictions API](/apidocs/context-based-restrictions) and the [Context-based restrictions CLI plug-in](/docs/account?topic=cli-cbr-plugin).
+To create context-based restrictions programmatically, see the [Context-based Restrictions API](/apidocs/context-based-restrictions) and the [Context-based restrictions CLI plug-in](/docs/account?topic=account-cbr-plugin).
 
 For more information about implementing context-based restrictions in your security strategy, see the solution tutorial [Enhance cloud security by applying context-based restrictions](/docs/solution-tutorials?topic=solution-tutorials-cbr-enhanced-security).

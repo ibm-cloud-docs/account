@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2023
 
-lastupdated: "2023-12-19"
+lastupdated: "2023-12-27"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -401,7 +401,7 @@ You can cancel an invitation for any users that are shown in a Processing or Pen
 {: #accepting-invitations-ui}
 {: ui}
 
-If the invited user is already a member of {{site.data.keyword.cloud_notm}}, they receive an invitation link in their notifications and by email. On the [Notifications page](https://cloud.ibm.com/user/notifications){: external}, users can use the search field to locate an invitation or filter by the notification type called `account`. For more information, see [Managing invitation notifications](/docs/account?topic=account-email-prefs#managing-invitation-notifications) and [Viewing notifications](/docs/get-support?topic=get-support-viewing-notifications).
+If the invited user is already a member of {{site.data.keyword.cloud_notm}}, they receive an invitation link in their notifications and by email. On the [Notifications page](https://cloud.ibm.com/user/notifications){: external}, users can use the search field to locate an invitation or filter by the notification type called `account`. For more information, see [Managing invitation notifications](/docs/account?topic=account-email-prefs#invite-notifications) and [Viewing notifications](/docs/get-support?topic=get-support-viewing-notifications) and [Viewing notifications](/docs/get-support?topic=get-support-viewing-notifications).
 
 ## Accepting invitations by using the CLI
 {: #cli-accepting}

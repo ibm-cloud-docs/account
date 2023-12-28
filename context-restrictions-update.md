@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2021, 2022
+  years: 2021, 2023
 
-lastupdated: "2022-10-27"
+lastupdated: "2023-12-27"
 
 keywords: update network access, network access rule, network zone
 
@@ -49,7 +49,7 @@ To edit the context-based restrictions on your cloud resources, complete the fol
 {: #context-restrictions-update-rules-cli}
 {: cli}
 
-To update the context-based restrictions on your cloud resources, use the [ibmcloud cbr rule-update](/docs/account?topic=cli-cbr-plugin&interface=cli#cbr-cli-rule-update-command) command. The following example updates description, allowed endpoint type, and network zone for a rule with the ID `30fd58c9b75f40e854b89c432318b4a2`.
+To update the context-based restrictions on your cloud resources, use the [ibmcloud cbr rule-update](/docs/account?topic=account-cbr-plugin&interface=cli#cbr-cli-rule-update-command) command. The following example updates description, allowed endpoint type, and network zone for a rule with the ID `30fd58c9b75f40e854b89c432318b4a2`.
 
 ```sh
 ibmcloud cbr rule-update 30fd58c9b75f40e854b89c432318b4a2 --description 'Example rule description' --service-name kms --context-attributes endpointType=private --zone-id 93de8d3f588ab2c457ff576c364d1145
@@ -237,14 +237,14 @@ You can modify the list of allowed locations where an access request can origina
 
 To update a network zone, complete the following steps.
 
-1. Retrieve the zone ID for the network zone that you want to update by using the [ibmcloud cbr zones](/docs/account?topic=cli-cbr-plugin&interface=cli#cbr-cli-zones-command) command to list all zones in the account.
+1. Retrieve the zone ID for the network zone that you want to update by using the [ibmcloud cbr zones](/docs/account?topic=account-cbr-plugin&interface=cli#cbr-cli-zones-command) command to list all zones in the account.
 
     ```sh
     ibmcloud cbr zones
     ```
     {: pre}
 
-1. Update the network zone by using the [ibmcloud cbr zone-update](/docs/account?topic=cli-cbr-plugin&interface=cli#cbr-cli-zone-update-command) command. The following example updates the zone name, allowed addresses, and excluded addresses for a network zone with the ID `65810ac762004f22ac19f8f8edf70a34`.
+1. Update the network zone by using the [ibmcloud cbr zone-update](/docs/account?topic=account-cbr-plugin&interface=cli#cbr-cli-zone-update-command) command. The following example updates the zone name, allowed addresses, and excluded addresses for a network zone with the ID `65810ac762004f22ac19f8f8edf70a34`.
     ```sh
     ibmcloud cbr zone-update 65810ac762004f22ac19f8f8edf70a34 --name 'Example Zone Name' --addresses 166.22.23.0-166.22.23.108 --excluded 166.22.23.100
     ```

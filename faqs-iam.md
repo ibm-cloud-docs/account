@@ -263,7 +263,7 @@ All permissions that were previously assigned in your SoftLayer account can be m
 {: #total-policies}
 {: faq}
 
-You can [check the number of policies in an account](/docs/account?topic=account-policy-limits) by using the CLI to ensure that you don't exceed the limit for your account.
+You can [viewing the total number of policies per account](/docs/account?topic=account-account-limits&interface=cli#total-number-policies-cli) by using the CLI to ensure that you don't exceed the limit for your account.
 
 ## What are verification methods and what they are used for?
 {: #verification-methods}

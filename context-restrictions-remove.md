@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2021, 2022
+  years: 2021, 2023
 
-lastupdated: "2022-08-05"
+lastupdated: "2023-12-27"
 
 keywords: remove restrictions, delete restrictions, delete network access, delete context based restrictions, remove network access, rule, context, network access rule, network zone
 
@@ -24,7 +24,7 @@ By removing context-based restrictions, you delete restrictions that are defined
 {: #context-restrictions-remove-rules}
 {: ui}
 
-You can remove a rule on your cloud resources by completing the following steps: 
+You can remove a rule on your cloud resources by completing the following steps:
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Context-based restrictions**, and select **Rules**.
 2. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") in the row that contains the rule, and click **Remove**.
 
@@ -32,16 +32,16 @@ You can remove a rule on your cloud resources by completing the following steps:
 {: #context-restrictions-remove-rules-cli}
 {: cli}
 
-You can remove a rule on your cloud resources by completing the following steps: 
+You can remove a rule on your cloud resources by completing the following steps:
 
-1. Retrieve the rule ID for the rule that you want to delete by using the [context-based restrictions rules](/docs/account?topic=cli-cbr-plugin&interface=cli#cbr-cli-rules-command) command. You can narrow the results of the list by specifying attributes as command options. 
+1. Retrieve the rule ID for the rule that you want to delete by using the [context-based restrictions rules](/docs/account?topic=account-cbr-plugin&interface=cli#cbr-cli-rules-command) command. You can narrow the results of the list by specifying attributes as command options.
 
    ```sh
    ibmcloud cbr rules --serviceName "iam-identity"
    ```
    {: pre}
 
-1. Delete the rule for the specified rule ID by using the [cbr rule-delete](/docs/account?topic=cli-cbr-plugin&interface=cli#cbr-cli-rule-delete-command) command. 
+1. Delete the rule for the specified rule ID by using the [cbr rule-delete](/docs/account?topic=account-cbr-plugin&interface=cli#cbr-cli-rule-delete-command) command.
 
    ```sh
    ibmcloud cbr rule-delete 30fd58c9b75f40e854b89c432318b4a2
@@ -52,10 +52,10 @@ You can remove a rule on your cloud resources by completing the following steps:
 {: #context-restrictions-remove-rules-api}
 {: api}
 
-You can remove a rule on your cloud resources by completing the following steps: 
+You can remove a rule on your cloud resources by completing the following steps:
 
-1. Retrieve the rule ID for the rule that you want to delete by using the [context-based-restrictions list rules](/apidocs/context-based-restrictions#list-rules) method. 
-   
+1. Retrieve the rule ID for the rule that you want to delete by using the [context-based-restrictions list rules](/apidocs/context-based-restrictions#list-rules) method.
+
    ```sh
    curl -X GET --location --header "Authorization: Bearer {iam_token}" --header "Accept: application/json" "{base_url}/v1/rules?account_id={account_id}"
    ```
@@ -116,7 +116,7 @@ You can remove a rule on your cloud resources by completing the following steps:
    {: codeblock}
    {: go}
 
-1. Delete the rule for the specified rule ID. 
+1. Delete the rule for the specified rule ID.
 
    ```sh
    curl -X DELETE --location --header "Authorization: Bearer {iam_token}" "{base_url}/v1/rules/{rule_id}"
@@ -178,7 +178,7 @@ You can remove a rule on your cloud resources by completing the following steps:
 {: #network-zones-remove}
 {: ui}
 
-Removing a network zone removes the set of allowed network locations from which an access request is created. If a network zone is added to a rule, you first have to remove the zone from the rule. See [Updating context-based restrictions](/docs/account?topic=account-context-restrictions-update) for more information about removing a zone from a rule. Then, complete the following steps: 
+Removing a network zone removes the set of allowed network locations from which an access request is created. If a network zone is added to a rule, you first have to remove the zone from the rule. See [Updating context-based restrictions](/docs/account?topic=account-context-restrictions-update) for more information about removing a zone from a rule. Then, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Context-based restrictions**, and select **Network zones**.
 2. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") in the row that contains the network zone, and click **Remove**.
@@ -187,16 +187,16 @@ Removing a network zone removes the set of allowed network locations from which 
 {: #network-zones-remove-cli}
 {: cli}
 
-Removing a network zone removes the set of allowed network locations from which an access request is created. If a network zone is added to a rule, you first have to remove the zone from the rule. For more information about removing a zone from a rule, see [Updating context-based restrictions](/docs/account?topic=account-context-restrictions-update) . Then, complete the following steps: 
+Removing a network zone removes the set of allowed network locations from which an access request is created. If a network zone is added to a rule, you first have to remove the zone from the rule. For more information about removing a zone from a rule, see [Updating context-based restrictions](/docs/account?topic=account-context-restrictions-update) . Then, complete the following steps:
 
-1. Retrieve the zone ID for the network zone that you want to delete by using the [contxt-based restrictions zones](/docs/account?topic=cli-cbr-plugin&interface=cli#cbr-cli-zones-command) command. You can narrow the results of the list by specifying the name of the zone. 
+1. Retrieve the zone ID for the network zone that you want to delete by using the [contxt-based restrictions zones](/docs/account?topic=account-cbr-plugin&interface=cli#cbr-cli-zones-command) command. You can narrow the results of the list by specifying the name of the zone.
 
    ```sh
    ibmcloud cbr zones --name "Example zone"
    ```
    {: pre}
 
-1. Delete the network zone for the specified zone ID by using the [cbr zone-delete](/docs/account?topic=cli-cbr-plugin&interface=cli#cbr-cli-zone-delete-command) command. 
+1. Delete the network zone for the specified zone ID by using the [cbr zone-delete](/docs/account?topic=account-cbr-plugin&interface=cli#cbr-cli-zone-delete-command) command.
 
    ```sh
    ibmcloud cbr zone-delete 65810ac762004f22ac19f8f8edf70a34
@@ -207,10 +207,10 @@ Removing a network zone removes the set of allowed network locations from which 
 {: #network-zones-remove-api}
 {: api}
 
-Removing a network zone removes the set of allowed network locations from which an access request is created. If a network zone is added to a rule, you first have to remove the zone from the rule. See [Updating context-based restrictions](/docs/account?topic=account-context-restrictions-update) for more information about removing a zone from a rule. Then, complete the following steps: 
+Removing a network zone removes the set of allowed network locations from which an access request is created. If a network zone is added to a rule, you first have to remove the zone from the rule. See [Updating context-based restrictions](/docs/account?topic=account-context-restrictions-update) for more information about removing a zone from a rule. Then, complete the following steps:
 
-1. Retrieve the rule ID for the rule that you want to delete by using the [Context-based restrictions list zones](/apidocs/context-based-restrictions#list-zones) method. 
-   
+1. Retrieve the rule ID for the rule that you want to delete by using the [Context-based restrictions list zones](/apidocs/context-based-restrictions#list-zones) method.
+
    ```sh
    curl -X GET --location --header "Authorization: Bearer {iam_token}" --header "Accept: application/json" "{base_url}/v1/zones?account_id={account_id}"
    ```
@@ -271,7 +271,7 @@ Removing a network zone removes the set of allowed network locations from which 
    {: codeblock}
    {: go}
 
-1. Delete the network zone for the specified zone ID. 
+1. Delete the network zone for the specified zone ID.
 
    ```sh
    curl -X DELETE --location --header "Authorization: Bearer {iam_token}" "{base_url}/v1/zones/{zone_id}"

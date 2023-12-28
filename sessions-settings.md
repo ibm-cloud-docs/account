@@ -4,7 +4,7 @@ copyright:
 
   years: 2021, 2023
 
-lastupdated: "2023-01-24"
+lastupdated: "2023-12-27"
 
 keywords: user session, inactivity, sign out, concurrent, login session, trusted profiles
 
@@ -21,7 +21,7 @@ subcollection: account
 Improve the security of your account by requiring account users to enter their login credentials at customized intervals. As an account owner or user assigned the administrator role for the Identity service, you can select the time that a user's active session can last before they need to enter their credentials again. You can also choose the duration that a user is inactive before they are signed out of their session and are required to enter their credentials again.
 {: shortdesc}
 
-To review and end active sessions to help maintain the security of your account, see [Monitoring login sessions](/docs/account?topic=account-end-user-sessions).
+To review and end active sessions to help maintain the security of your account, see [Monitoring your login sessions](/docs/account?topic=account-monitor-your-session).
 {: tip}
 
 ## Before you begin
@@ -99,7 +99,7 @@ For more information, see the [Terraform documentation](https://registry.terrafo
 {: #sessions-active-tp}
 {: ui}
 
-For more information, see [Updating trusted profiles](/docs/account?topic=account-trusted-profile-update#session-limit-tp).
+For more information, see [Updating trusted profiles](/docs/account?topic=account-trusted-profile-update&interface=ui#session-duration-tp).
 
 ## Setting the sign out due to inactivity duration
 {: #sessions-inactivity}

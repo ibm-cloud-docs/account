@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2021, 2022
+  years: 2021, 2023
 
-lastupdated: "2022-04-04"
+lastupdated: "2023-12-27"
 
 
 keywords: trusted profile, generating IAM token, compute resource, kubernetes cluster, virtual server
@@ -21,7 +21,7 @@ subcollection: account
 Trusted profiles are used to automatically grant federated users access to your account, and you can use {{site.data.keyword.cloudaccesstrailshort}} to monitor which federated users and compute resources apply a trusted profile.
 {: shortdesc}
 
-You can also monitor active user login sessions. For more information, see [Monitoring login sessions](/docs/account?topic=account-end-user-sessions).
+You can also monitor active user login sessions. For more information, see [Monitoring your login sessions](/docs/account?topic=account-monitor-your-session).
 
 ## Before you begin
 {: #before-monitor}

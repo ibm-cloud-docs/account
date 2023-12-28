@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-12-07"
+lastupdated: "2023-12-27"
 
 keywords: trusted profile, dynamic rule, operators, rules, conditions, properties, time-based, resource attribute
 
@@ -177,8 +177,8 @@ The following table lists the operators available for creating time-based condit
 | `dayOfWeekAnyOf` | The days of the week that the client can use the policy.   \n 1 - Monday   \n 2 - Tuesday   \n 3 - Wednesday   \n 4- Thursday   \n 5 - Friday   \n 6 - Saturday   \n 7 - Sunday | See [example](/docs/account?topic=account-iam-condition-properties&interface=ui#dayOfWeekAnyOf-timeGreaterThanOrEquals-timeLessThanOrEquals). |
 | `timeGreaterThanOrEquals` | The time that the condition begins granting access. Time is calculated by `<time>±<time_zone_offset>`. | See [example](/docs/account?topic=account-iam-condition-properties&interface=ui#dayOfWeekAnyOf-timeGreaterThanOrEquals-timeLessThanOrEquals). |
 | `timeLessThanOrEquals` | The time that the condition terminates access. Time is calculated by `<time>±<time_zone_offset>`. | See [example](/docs/account?topic=account-iam-condition-properties&interface=ui#dayOfWeekAnyOf-timeGreaterThanOrEquals-timeLessThanOrEquals). |
-| `dateTimeGreaterThanOrEquals` | The date and time that the condition begins granting access. Date is calculated by `<datetime>±<time_zone_offset>`. |  See [example](/docs/account?topic=account-iam-condition-properties&interface=ui#dateTimeGreaterThanOrEquals). |
-| `dateTimeLessThanOrEquals` | The date and time that the condition terminates access. Date is calculated by `<datetime>±<time_zone_offset>`. | See [example](/docs/account?topic=account-iam-condition-properties&interface=ui#dateTimeLessThanOrEquals). |
+| `dateTimeGreaterThanOrEquals` | The date and time that the condition begins granting access. Date is calculated by `<datetime>±<time_zone_offset>`. |  See [example](/docs/account?topic=account-iam-condition-properties&interface=ui#dateTimeGreaterThanOrEquals-dateTimeLessThanOrEquals). |
+| `dateTimeLessThanOrEquals` | The date and time that the condition terminates access. Date is calculated by `<datetime>±<time_zone_offset>`. | See [example](/docs/account?topic=account-iam-condition-properties&interface=ui#dateTimeGreaterThanOrEquals-dateTimeLessThanOrEquals). |
 {: caption="Table 6. The operators available to time-based conditions for access policies." caption-side="top"}
 
 When you define a condition with a `GreaterThanOrEquals` operator, always include a condition with a `LessThanOrEquals` operator. This way, there is a clearly defined duration, whether it is temporary, recurring all day, or recurring with custom hours. For more information, see [Condition patterns](/docs/account?topic=account-iam-time-based&interface=ui#condition-patterns).
@@ -419,4 +419,3 @@ In this example, `stringEquals` for `iam_id`, `accountID`, `serviceName`, and `r
 }
 ```
 {: codeblock}
-
