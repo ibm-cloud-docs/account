@@ -540,7 +540,7 @@ func printLogs(logs []datatypes.Event_Log){
 {: codeblock}
 {: go}
 
-To get all Events logs, use [SoftLayer_Event_Log::getAllObjects()](https://softlayer.github.io/reference/services/SoftLayer_Event_Log/getAllObjects/). In this case, just the first 50 events are returned by using pagination limit `resultLimit=0,50`. For more information, see [Using Result Limits in the SoftLayer API](https://sldn.softlayer.com/article/using-result-limits-softlayer-api/). A mask is shown in this example, `mask[eventName,eventCreateDate,userType]`, that restricts other local fields and limits the amount of information returned.
+To get all Events logs, use [SoftLayer_Event_Log::getAllObjects()](https://sldn.softlayer.com/reference/services/SoftLayer_Event_Log/getAllObjects/). In this case, just the first 50 events are returned by using pagination limit `resultLimit=0,50`. For more information, see [Using Result Limits in the SoftLayer API](https://sldn.softlayer.com/article/using-result-limits-softlayer-api/). A mask is shown in this example, `mask[eventName,eventCreateDate,userType]`, that restricts other local fields and limits the amount of information returned.
 {: curl}
 
 This example deals with a few ways of pulling data from `SoftLayer_Event_Log`. There can be many Logs, so by using a filter, like the `recentLogs` function, you can limit how far back you search for Events.
@@ -557,6 +557,6 @@ For more information about the {{site.data.keyword.slapi_short}} and virtual ser
 * [Getting Started with the {{site.data.keyword.slapi_short}} ![External link icon](../icons/launch-glyph.svg "External link icon")](https://sldn.softlayer.com/article/getting-started/){: new_window}
 
 For API usage examples, see the following resources:
-* [Understanding and building an order by using the {{site.data.keyword.slapi_short}} order CLI](https://softlayer.github.io/article/understanding-ordering/){: external}
-* [{{site.data.keyword.slapi_short}} Examples - Release Notes](https://softlayer.github.io/){: external}
-* [Python examples](https://softlayer.github.io/python/){: external}
+* [Understanding and building an order by using the {{site.data.keyword.slapi_short}} order CLI](https://sldn.softlayer.com/article/understanding-ordering/){: external}
+* [{{site.data.keyword.slapi_short}} Examples - Release Notes](https://sldn.softlayer.com/){: external}
+* [Python examples](https://sldn.softlayer.com/python/){: external}
