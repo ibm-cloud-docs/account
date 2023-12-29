@@ -4,7 +4,7 @@ copyright:
 
   years: 2020, 2023
 
-lastupdated: "2023-05-17"
+lastupdated: "2023-12-29"
 
 keywords: identity provider, IdP, App ID, IAM, integration, IdP SSO, third-party authentication, dynamic rules, external identity provider
 
@@ -32,7 +32,7 @@ Setting up the integration between your {{site.data.keyword.appid_short}} instan
 ## Before you begin
 {: #idp-prereqs}
 
-* To decide which is the right federation option for you, check the [IBM Cloud SAML Federation Guide](https://www.ibm.com/cloud/blog/ibm-cloud-saml-federation-guide){: external}.
+* To decide which is the right federation option for you, check the [IBM Cloud SAML Federation Guide](https://www.ibm.com/blog/ibm-cloud-saml-federation-guide/){: external}.
 * Create an instance of {{site.data.keyword.appid_short}} from the {{site.data.keyword.cloud_notm}} catalog. For more information, see the [Getting started tutorial](/docs/appid?topic=appid-getting-started).
 * Configure your {{site.data.keyword.appid_short}} instance. For more information about how to do this depending on your use case, see the {{site.data.keyword.appid_short}} documentation about [managing authentication](/docs/appid?topic=appid-managing-idp).
 * Make sure you have the required access to view and manage IdP references, if you aren't the account owner. You must be assigned the operator role or higher on the {{site.data.keyword.appid_short}} instance and the operator or administration role on the [IAM Identity Service](/docs/account?topic=account-account-services#identity-service-account-management).
