@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2023
-lastupdated: "2023-09-19"
+lastupdated: "2023-12-29"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, vpc, virtual private cloud
 
@@ -121,7 +121,7 @@ Validating your virtual server image involves running a test deployment of your 
 {: #catalog-vsivpc-controls}
 {: step}
 
-The Security and Compliance Center scans determine adherence to regulatory controls as defined in a profile. Controls are safeguards that are used to meet security and compliance requirements. Only controls that are supported by Security and Compliance Center, formatted correctly, and validated by Code Risk Analysis and Security and Compliance Center scans appear in the catalog. For more information, see [Adding compliance details](/docs/account?topic=account-catalog-format-controls). After you share or publish your product, users can view your controls on the About page for your product, which proves that your product meets specific industry regulations. For more information, see [What is a profile?](/docs/security-compliance?topic=security-compliance-profiles)
+The Security and Compliance Center scans determine adherence to regulatory controls as defined in a profile. Controls are safeguards that are used to meet security and compliance requirements. Only controls that are supported by Security and Compliance Center, formatted correctly, and validated by Code Risk Analysis and Security and Compliance Center scans appear in the catalog. For more information, see [Adding compliance details](/docs/account?topic=account-catalog-format-controls). After you share or publish your product, users can view your controls on the About page for your product, which proves that your product meets specific industry regulations. For more information, see [Building custom profiles](/docs/security-compliance?topic=security-compliance-build-custom-profiles&interface=ui).
 
 ### Manage compliance controls
 {: #catalog-vsivpc-add-controls}
