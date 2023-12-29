@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2023
-lastupdated: "2023-09-05"
+lastupdated: "2023-12-29"
 
 keywords: manage account, account events, track events, account tracking, monitoring, catalog tracking, catalog management
 
@@ -80,4 +80,4 @@ You can track the following events:
 * Creating, updating, or deleting rules
 * Creating, updating, or deleting network zones
 
-For more information, see [Context-based restrictions events](/docs/activity-tracker?topic=activity-tracker-auditing-events-for-context-based-restrictions).
+For more information, see [Context-based restrictions events](/docs/activity-tracker?topic=activity-tracker-events_context_based#restriction_rules_events).

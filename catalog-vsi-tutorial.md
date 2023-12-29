@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2023
-lastupdated: "2023-11-09"
+lastupdated: "2023-12-29"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog
 
@@ -162,7 +162,7 @@ Scan your source code with Code Risk Analyzer to identify any security vulnerabi
 ### Add Security and Compliance Center scan
 {: #catalog-vsi-scc-scan}
 
-Add the scans that you previously ran in the Security and Compliance Center. Security and Compliance Center scans determine adherence to regulatory controls. For more information, see [Scheduling a scan](/docs/security-compliance?topic=security-compliance-schedule-scan).
+Add the scans that you previously ran in the Security and Compliance Center. Security and Compliance Center scans determine adherence to regulatory controls. For more information, see [Scheduling a scan](/docs/security-compliance?topic=security-compliance-scan-resources&interface=ui#scan-schedule-ui).
 
 1. Select the profile that you scanned.
 1. Select the Security and Compliance Center scan.
@@ -178,4 +178,3 @@ You must complete validation and any other requirements to publish your product 
 {: #catalog-vsi-publish}
 
 After you onboard and validate your virtual server image, you're ready to publish it to your account. From the **Actions** menu, select **Publish to account**. As a result, the virtual server image is available only to users who have access to the `Sample virtual server image` private catalog in your account.
-

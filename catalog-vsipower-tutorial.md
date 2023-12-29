@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2023
-lastupdated: "2023-03-03"
+lastupdated: "2023-12-29"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, power, power systems, power systems virtual server
 
@@ -172,7 +172,7 @@ Scan your source code with Code Risk Analyzer to identify any security vulnerabi
 ### Add Security and Compliance Center scan
 {: #catalog-vsipower-scc-scan}
 
-Add the scans that you previously ran in the Security and Compliance Center. Security and Compliance Center scans determine adherence to regulatory controls. For more information, see [Scheduling a scan](/docs/security-compliance?topic=security-compliance-schedule-scan).
+Add the scans that you previously ran in the Security and Compliance Center. Security and Compliance Center scans determine adherence to regulatory controls. For more information, see [Scheduling a scan](/docs/security-compliance?topic=security-compliance-scan-resources&interface=ui#scan-schedule-ui).
 
 1. Select the profile that you scanned.
 1. Select the Security and Compliance Center scan.

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2022
-lastupdated: "2022-10-26"
+  years: 2021, 2023
+lastupdated: "2023-12-29"
 
 keywords: onboard software, operator, validate, test, Red Hat OpenShift cluster, sample Node-RED Operator, CSV file, CSV, operator bundle, TGZ file
 
@@ -154,7 +154,7 @@ Scan your source code with Code Risk Analyzer to identify any security vulnerabi
 ### Add Security and Compliance Center scan
 {: #catalog-operator-scc-scan}
 
-Add the scans that you previously ran in the Security and Compliance Center. Security and Compliance Center scans determine adherence to regulatory controls. For more information, see [Scheduling a scan](/docs/security-compliance?topic=security-compliance-schedule-scan).
+Add the scans that you previously ran in the Security and Compliance Center. Security and Compliance Center scans determine adherence to regulatory controls. For more information, see [Scheduling a scan](/docs/security-compliance?topic=security-compliance-scan-resources&interface=ui#scan-schedule-ui).
 
 1. Select the profile that you scanned.
 1. Select the Security and Compliance Center scan.
