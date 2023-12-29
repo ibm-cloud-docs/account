@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-12-19"
+lastupdated: "2023-12-28"
 
 keywords: private catalog, software, onboard, Terraform, terraform template, cli
 
@@ -56,7 +56,7 @@ To share software with other accounts, your software must be approved in Partner
 
 Complete the following steps to add your software by using the CLI. You can use this task in a CI/CD process.
 
-Create a private catalog. Private catalogs provide a way for you to manage access to products for users in your account. For more information, see the [cli documentation](/docs/account?topic=cli-manage-catalogs-plugin#create-catalog) for creating a private catalog.
+Create a private catalog. Private catalogs provide a way for you to manage access to products for users in your account. For more information, see the [cli documentation](/docs/account?topic=account-manage-catalogs-plugin#create-catalog) for creating a private catalog.
 
 ```bash
 ibmcloud catalog create --name CATALOG [--catalog-description "DESCRIPTION"]

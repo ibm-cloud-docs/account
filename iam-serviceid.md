@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2022
+  years: 2017, 2023
 
-lastupdated: "2022-09-14"
+lastupdated: "2023-12-28"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -263,7 +263,7 @@ ibmcloud iam service-id-delete ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976
 ```
 {: codeblock}
 
-For more information about managing API keys by using the CLI, see [Managing IAM access](/docs/account?topic=cli-ibmcloud_commands_iam&interface=cli#ibmcloud_iam_service_id_delete).
+For more information about managing API keys by using the CLI, see [Managing IAM access](/docs/account?topic=account-ibmcloud_commands_iam&interface=cli#ibmcloud_iam_service_id_delete).
 
 ## Deleting a service ID by using the API
 {: #delete_serviceid-api}
