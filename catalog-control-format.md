@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2023
 
-lastupdated: "2023-02-22"
+lastupdated: "2023-12-29"
 
 keywords: software onboarding, controls, requirements, security, compliance, partners
 
@@ -19,7 +19,7 @@ subcollection: account
 
 During the onboarding process, controls that are in your readme file, formatted correctly, and supported by Security and Compliance Center appear in the controls table in your private catalog. You can click **Add controls** to add additional controls to your version.  After you share your product or publish to your account, users can view your controls on the About page for your product.
 
-If you want to include custom controls with your product, see [Building custom profiles](/docs/security-compliance?topic=security-compliance-custom-profiles).
+If you want to include custom controls with your product, see [Building custom profiles](/docs/security-compliance?topic=security-compliance-build-custom-profiles&interface=ui).
 {: note}
 
 ## Formatting controls in your readme file
