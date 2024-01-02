@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2023
-lastupdated: "2023-02-14"
+  years:  2023, 2024
+lastupdated: "2024-01-02"
 
 keywords: change log for access-management polices, updates to access-management polices, IAM Policy Management API change log, policies change log, access management change log
 
@@ -22,7 +22,7 @@ For information about the latest changes to the IAM Policy Management SDKs and C
 - [Node SDK change log](https://github.com/IBM/platform-services-node-sdk/blob/main/CHANGELOG.md)
 - [Python SDK change log](https://github.com/IBM/platform-services-python-sdk/blob/main/CHANGELOG.md)
 - [Go SDK change log](https://github.com/IBM/platform-services-go-sdk/blob/main/CHANGELOG.md)
-- [Cloud CLI change log](https://github.ibm.com/ibmcloud-cli/bluemix-cli/blob/master/CHANGELOG.md)
+- [Cloud CLI change log](https://github.com/IBM-Cloud/ibm-cloud-cli-release/releases/)
 
 ## API versioning
 {: #api-versioning}
