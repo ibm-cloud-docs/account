@@ -43,7 +43,7 @@ Complete the following steps to migrate resources to a new data center:
    * [Getting started with bare metal servers](/docs/bare-metal?topic=bare-metal-getting-started)
    * [Comparing {{site.data.keyword.cloud_notm}} Classic and VPC infrastructure environments](/docs/cloud-infrastructure?topic=cloud-infrastructure-compare-infrastructure)
 1. Copy your data to a new server by using the following methods. You must establish connectivity between the old and new servers and have sufficient storage in the new server.
-   * Use [Secure Copy Protocol (SCP)](https://www.ibm.com/support/knowledgecenter/ST5Q4U_1.5.2/com.ibm.storwize.v7000.unified.152.doc/usgr_usng_scp.html){: external} to securely copy a file from source to destination.
+   * Use [Secure Copy Protocol (SCP)](https://www.ibm.com/docs/en/flashsystem-v7000u/1.5.2?topic=system-using-scp){: external} to securely copy a file from source to destination.
    * Use [rsync](https://download.samba.org/pub/rsync/rsync.html){: external} if you need to copy multiple files. Rsync also copies directory structures and preserves file permissions.
    * Migrate your virtual server instance [from one classic data center to another](/docs/virtual-servers?account=virtual-servers-migrating-vsi-new-datacenter).
    * Migrate your [virtual server instance](/docs/vpc?topic=vpc-migrate-vsi-to-vpc) by creating an image template and deploying it in a new {{site.data.keyword.vpc_short}}.
