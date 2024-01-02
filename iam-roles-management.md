@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2020, 2023
+  years: 2020, 2024
 
-lastupdated: "2023-01-24"
+lastupdated: "2024-01-02"
 
 keywords: custom access, custom role, create a role, combine actions
 
@@ -91,7 +91,7 @@ Use the following steps to create custom roles:
 
    You can specify the name of the service for which you want to create the custom role on the `service` option. For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_custom_role){: external} page.
 
-1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://developer.hashicorp.com/terraform/cli/init){: external}.
 
    ```terraform
    terraform init

@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2021, 2023
-lastupdated: "2023-01-18"
+  years: 2021, 2024
+lastupdated: "2024-01-02"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, attach tags ui, attach tags cli, attach tags api, detach tags ui, detach tags api, detach tags cli
 
@@ -451,7 +451,7 @@ Use the following steps to attach tags to a resource by using Terraform:
    ```
    {: codeblock}
 
-1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://developer.hashicorp.com/terraform/cli/init){: external}.
 
    ```terraform
    terraform init

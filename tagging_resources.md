@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018, 2023
+  years: 2018, 2024
 
-lastupdated: "2023-02-27"
+lastupdated: "2024-01-02"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, full list of tags, how to use tags
 
@@ -206,7 +206,7 @@ Use the following steps to create access management tags by using Terraform:
    ```
     {: codeblock}
 
-1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://developer.hashicorp.com/terraform/cli/init){: external}.
 
    ```terraform
    terraform init

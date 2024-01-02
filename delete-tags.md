@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2021, 2023
-lastupdated: "2023-03-06"
+  years: 2021, 2024
+lastupdated: "2024-01-02"
 
 keywords: tags, delete tags, unused tags, delete tags in  the console, delete  tags cli, delete tags api
 
@@ -201,7 +201,7 @@ Use the following steps to delete tags from your account:
    ```
    {: codeblock}
 
-1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://developer.hashicorp.com/terraform/cli/init){: external}.
 
    ```terraform
    terraform init

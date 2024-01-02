@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-01-18"
+  years: 2020, 2024
+lastupdated: "2024-01-02"
 
 keywords: onboard software, Helm chart, software, private catalog, target, deployment target
 
@@ -56,7 +56,7 @@ Use the following steps to deploy your Helm chart to a new target by using Terra
 
     You can specify `target_kinds` for the `cm_version` resource. For more information, see the argument details on the [Terraform Catalog Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/cm_version){: external} page.
 
-1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://developer.hashicorp.com/terraform/cli/init){: external}.
 
    ```terraform
    terraform init

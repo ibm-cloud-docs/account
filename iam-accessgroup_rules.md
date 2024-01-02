@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018, 2023
+  years: 2018, 2024
 
-lastupdated: "2023-01-18"
+lastupdated: "2024-01-02"
 
 keywords: dynamic rules,access groups,specific identity attributes,identity provider,federated ID,
 
@@ -76,7 +76,7 @@ To create a rule by using Terraform, follow these steps:
 
    For more information, see the argument reference details in the [Terraform documentation](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_access_group_dynamic_rule) page.
 
-1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://developer.hashicorp.com/terraform/cli/init){: external}.
 
    ```terraform
    terraform init

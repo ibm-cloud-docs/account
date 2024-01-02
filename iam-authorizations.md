@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2023
+  years: 2017, 2024
 
-lastupdated: "2023-12-19"
+lastupdated: "2024-01-02"
 
 keywords: authorizations, service to service access, access between services, dependent service, source service, target service, assigned access, access policies
 
@@ -117,7 +117,7 @@ Use the following steps to create an authorization by using Terraform:
 
    For more examples, see the [Terraform documentation for authorization resources](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_authorization_policy){: external}.
 
-1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://developer.hashicorp.com/terraform/cli/init){: external}.
 
    ```terraform
    terraform init

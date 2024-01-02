@@ -4,8 +4,8 @@
 
 copyright:
 
-  years: 2020, 2023
-lastupdated: "2023-01-18"
+  years: 2020, 2024
+lastupdated: "2024-01-02"
 
 keywords: delete resource group, resource group, manage resource groups
 
@@ -119,7 +119,7 @@ The resource group can be deleted only if there are no resources in it.
 
    For more information, see the argument reference details on the [Terraform Resource Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_group){: external} page.
 
-1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://developer.hashicorp.com/terraform/cli/init){: external}.
 
    ```terraform
    terraform init

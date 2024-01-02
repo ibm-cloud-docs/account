@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2023
-lastupdated: "2023-01-18"
+  years: 2015, 2024
+lastupdated: "2024-01-02"
 
 keywords: service key, api key, bind, credential
 
@@ -188,7 +188,7 @@ Use the following steps to add a crednetial when binding an IAM-enabled service:
 
    You can specify `tags` associated with the resource group instance. For more information, see the argument reference details on the [Terraform Resource Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_key){: external} page.
 
-1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://developer.hashicorp.com/terraform/cli/init){: external}.
 
    ```terraform
    terraform init

@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2019, 2023
-lastupdated: "2023-12-15"
+  years: 2019, 2024
+lastupdated: "2024-01-02"
 
 keywords: resource, account resources, create resource, access to create resources
 
@@ -205,7 +205,7 @@ You can create new resource instances by using Terraform.
 
    You can specify `tags` associated with the resource instance. For more information, see the argument reference details on the [Terraform Resource Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_instance){: external} page.
 
-1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://developer.hashicorp.com/terraform/cli/init){: external}.
 
    ```terraform
    terraform init

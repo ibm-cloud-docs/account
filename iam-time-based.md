@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023
-lastupdated: "2023-09-22"
+  years: 2023, 2024
+lastupdated: "2024-01-02"
 keywords: access policy, access, policy, restriction, time based restriction, time based, time based conditions, conditions
 
 subcollection: account
@@ -511,7 +511,7 @@ Complete the following steps to assign an access policy with a temporary time-ba
     ```
     {: codeblock}
 
-1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://developer.hashicorp.com/terraform/cli/init){: external}.
 
    ```terraform
    terraform init
@@ -992,7 +992,7 @@ You might want to give users access to account resources during only their worki
     ```
     {: codeblock}
 
-1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://www.terraform.io/cli/init){: external}.
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://developer.hashicorp.com/terraform/cli/init){: external}.
 
    ```terraform
    terraform init
