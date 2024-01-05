@@ -292,6 +292,7 @@
               - topicgroup:
                   label: Monitoring login sessions
                   topics:
+                  - sessions-users.md
                   - sessions-your-login.md
                   - trustedprofile-monitor.md
               - cbr-monitor.md
