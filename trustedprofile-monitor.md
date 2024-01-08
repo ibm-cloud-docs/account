@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2021, 2023
+  years: 2021, 2024
 
-lastupdated: "2023-12-27"
+lastupdated: "2024-01-08"
 
 
 keywords: trusted profile, generating IAM token, compute resource, kubernetes cluster, virtual server
@@ -75,5 +75,3 @@ A federated user that's applying trusted profile `fed-user-profile-1` has the fo
 | initiator.authnId | `IBMid11118967` |
 | initiator.authnName | `addison.martin@ibm.com` |
 {: caption="Table 2. Sample trusted profile attributes and values in Activity Tracker" caption-side="top"}
-
-For more information, see [IAM Identities (Mapping to Activity Tracker fields)](/docs/observability?topic=observability-scenario-iam-identities#trusted-profile)
