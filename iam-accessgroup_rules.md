@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2024
 
-lastupdated: "2024-01-02"
+lastupdated: "2024-01-08"
 
 keywords: dynamic rules,access groups,specific identity attributes,identity provider,federated ID,
 
@@ -126,3 +126,18 @@ You can also view a list of access groups that a user is added to based on dynam
 1. Click on a user.
 1. Click **Access**.
 1. The access groups that a user is a dynamic member of is indicated by the type `Dynamic`.
+
+## Example rule
+{: #example}
+
+The following example includes values for each of the fields for a dynamic rule. In this rule, users who are identified as managers within the federated IdP are mapped to an {{site.data.keyword.Bluemix_notm}} access group that has specific access set for only managers.
+
+| Field                           | Value                           |
+|---------------------------------|---------------------------------|
+| Name                            | Manager group rule              |
+| Identity provider               | `https://idp.example.org/SAML2` |
+| Expiration (in hours)           | 12                              |
+| Add users when (attribute name) | isManager                       |
+| Comparator                      | Equals                          |
+| Value                           | true                            |
+{: caption="Table 1. Example dynamic rule for access groups" caption-side="top"}
