@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2015, 2022
+  years: 2015, 2024
 
-lastupdated: "2022-08-08"
+lastupdated: "2024-01-08"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -39,19 +39,19 @@ To upgrade to a Pay-As-You-Go account, complete the following steps.
 1. Enter your payment information, click **Next**, and submit your information.
 
 
-After your payment information is processed, your account is upgraded, and you can explore and access the full {{site.data.keyword.Bluemix_notm}} catalog. For any billable services that you use beyond any free allowances, you receive a monthly invoice. 
+After your payment information is processed, your account is upgraded, and you can explore and access the full {{site.data.keyword.Bluemix_notm}} catalog. For any billable services that you use beyond any free allowances, you receive a monthly invoice.
 
 If you're upgrading to reactivate a deactivated account, your account might take a few days to be fully available. If your account continues to be in a pending state, see [Why can't I upgrade my account?](/docs/account?topic=account-ts_upgrade_cc) for help.
 
 If you can't upgrade your account because of an issue with your credit card, see [Troubleshooting credit card error messages](/docs/billing-usage?topic=billing-usage-cc-error-messages) for more information.
-{: tip} 
+{: tip}
 
 ## Promotional credit for upgrading your account
-{: #promotional-credit-for-upgrading-your-account} 
+{: #promotional-credit-for-upgrading-your-account}
 
-After you sign up for a new Pay-As-You-Go account or upgrade your free account, you'll receive a promotional credit to use on any	{{site.data.keyword.IBM_notm}} product. To view the list of eligible products, go to the {{site.data.keyword.cloud_notm}} console and select **Catalog** > **Provider** > **{{site.data.keyword.IBM_notm}}**. 
+After you sign up for a new Pay-As-You-Go account or upgrade your free account, you'll receive a promotional credit to use on any	{{site.data.keyword.IBM_notm}} product. To view the list of eligible products, go to the {{site.data.keyword.cloud_notm}} console and select **Catalog** > **Provider** > **{{site.data.keyword.IBM_notm}}**.
 
-The credit might take a few hours to appear in your account. Any unused upgrade credit expires after the 30 day period ends. You are invoiced for any usage that exceeds the promotional credit. To view the promotional credit, go to the [Promotions and credits](/billing/promotions){: external} page or the [Invoices](/billing/invoices) page in the console. 
+The credit might take a few hours to appear in your account. Any unused upgrade credit expires after the 30 day period ends. You are invoiced for any usage that exceeds the promotional credit. To view the promotional credit, go to the [Promotions and credits](/billing/promotions){: external} page or the [Invoices](/billing/invoices) page in the console.
 
 The following table lists the current upgrade promotional amounts for different currencies:
 
@@ -88,9 +88,9 @@ To upgrade from a Lite account to a Subscription account, complete the following
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account**, and select **Account settings**. Then, click **Upgrade**, which takes you to the Subscriptions page.
 1. Select your monthly spending commitment and subscription term, and click **Get started**.
 
-   If you're not sure how much your typical usage might cost, you can estimate it by using the [cost estimator](/estimator/review){: external}.
+   If you're not sure how much your typical usage might cost, you can estimate it by using the [cost estimator](/estimator){: external}.
    {: tip}
-   
+
 1. Review your subscription details, and then enter your payment information.
 
    After your payment information is processed, your subscription credit is added to your account. You can monitor your subscription usage on this same Subscriptions page. See [Managing subscriptions](/docs/billing-usage?topic=billing-usage-subscriptions) for more information.
