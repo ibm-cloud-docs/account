@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2023
-lastupdated: "2023-10-26"
+  years: 2015, 2024
+lastupdated: "2024-01-08"
 
 keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, commitment, commit model, savings plan, enterprise savings plan
 
@@ -29,7 +29,7 @@ The following table provides a comparison of Trial, Pay-As-You-Go, and Subscript
 | Feature | Trial              | Pay-As-You-Go      | Subscription       |
 |-----------------------------------------|--------------------|--------------------|--------------------|
 | [Free community buildpacks](/docs/cloud-foundry-public?topic=cloud-foundry-public-available_buildpacks) |    186 GBH       |    186 GBH       |    186 GBH          |
-| Access to [Lite service plans](/catalog/?search=label:lite){: external} | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
+| Access to [Lite service plans](/catalog?search=label%3Alite){: external} | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | Access to all Free plans           | ![Feature available](../icons/icon_enabled.svg) |   ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | Access to the full {{site.data.keyword.cloud_notm}} catalog |        | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | Fit for production use cases      |        |     ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg)|
@@ -138,7 +138,7 @@ Check out the following list of key features that are available in a Lite accoun
 * The account is free - no credit card required.
 * The account never expires.
 * You receive email notifications about your account status and quota limits.
-* You can create one instance of any service in the [{{site.data.keyword.cloud_notm}} catalog](/catalog/?search=label:lite%20lite){: external} that has a Lite plan.
+* You can create one instance of any service in the [{{site.data.keyword.cloud_notm}} catalog](/catalog?search=label%3Alite){: external} that has a Lite plan.
 * After 10 days of no development activity, your apps go to sleep. You can wake up your apps by continuing to work on them.
 * After 30 days of no development activity, your service instances with Lite plans are deleted.
 
