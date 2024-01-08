@@ -144,7 +144,7 @@ To find the endpoints for each service, refer to the Endpoint URLs section of th
 | {{site.data.keyword.cloudcerts_short}} | [Regions and endpoints](/docs/secrets-manager?topic=secrets-manager-endpoints) |
 | {{site.data.keyword.registryshort_notm}} | {{site.data.keyword.containershort}} clusters with [private service endpoints only](/docs/containers?topic=containers-plan_basics#workeruser-master) pull container images by using the [{{site.data.keyword.registryshort_notm}}](/docs/Registry?topic=Registry-registry_overview) service endpoint. |
 | {{site.data.keyword.contdelivery_short}} | [Regions and endpoints](/docs/ContinuousDelivery?topic=ContinuousDelivery-regions#service-endpoints) |
-| {{site.data.keyword.databases-for-elasticsearch}} | [{{site.data.keyword.databases-for-elasticsearch}} service endpoints integration](/docs/databases-for-elasticsearch?topic=databases-for-elasticsearch-service-endpoints) |
+| {{site.data.keyword.databases-for-elasticsearch}} | [{{site.data.keyword.databases-for-elasticsearch}} service endpoints integration](/docs/cloud-databases?topic=cloud-databases-service-endpoints&interface=ui) |
 | {{site.data.keyword.databases-for-etcd}} | [{{site.data.keyword.databases-for-etcd}} service endpoints integration](/docs/databases-for-etcd?topic=databases-for-etcd-service-endpoints) |
 | {{site.data.keyword.databases-for-mongodb}} | [{{site.data.keyword.databases-for-mongodb}} service endpoints integration](/docs/databases-for-mongodb?topic=databases-for-mongodb-service-endpoints) |
 | {{site.data.keyword.databases-for-postgresql}} | [{{site.data.keyword.databases-for-postgresql}} service endpoints integration](/docs/databases-for-postgresql?topic=databases-for-postgresql-service-endpoints)|
