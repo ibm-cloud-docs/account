@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2024-01-08"
+lastupdated: "2024-01-09"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -805,6 +805,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloud-object-storage.bucket.get_replication` | Read replication configuration of an bucket. | Manager, Reader, Writer |
 | `cloud-object-storage.bucket.put_replication` | Add replication configuration to a bucket. | Manager, Writer |
 | `cloud-object-storage.bucket.delete_replication` | Delete replication configuration of an bucket. | Manager, Writer |
+| `cloud-object-storage.bucket.get_protection_management` | Read protection management of a bucket. | Manager |
+| `cloud-object-storage.bucket.put_protection_management` | Add protection management to a bucket. | Manager |
 {: caption="Table 17. Service actions - Cloud Object Storage" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="cloud-object-storage"}
