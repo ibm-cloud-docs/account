@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-12-29"
+  years: 2022, 2024
+lastupdated: "2024-01-09"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog
 
@@ -93,9 +93,9 @@ The tutorial includes steps for deploying a virtual server image to a target {{s
 | `vsi_security_group` | The name of the security group that is created. | `True` | `False` |
 {: caption="Table 1. Parameters that you need to configure" caption-side="bottom"}
 
-{{site.data.content.output-values}}
+{{_include-segments/edit-output-segment.md}}
 
-{{site.data.content.define-IAM-access}}
+{{_include-segments/define-iam-segment.md}}
 
 ## Set the license requirements
 {: #catalog-vsi-cfg-license}

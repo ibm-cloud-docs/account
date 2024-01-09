@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2023
-lastupdated: "2023-12-29"
+  years: 2021, 2024
+lastupdated: "2024-01-09"
 
 keywords: private catalog, software, onboard, Terraform, terraform template
 
@@ -90,9 +90,9 @@ After you review the version details, you're ready to configure the deployment v
 1. Select the **Parameter** checkbox to select all options, and click **Add**.
 1. To customize which parameters are required for users to specify during the installation and which ones are hidden from users, select a parameter and click **Edit**. Click the checkboxes to configure the values and click **Save**.
 
-{{site.data.content.output-values}}
+{{_include-segments/edit-output-segment.md}}
 
-{{site.data.content.define-IAM-access}}
+{{_include-segments/define-iam-segment.md}}
 
 ## Set the license requirements
 {: #catalog-terraform-license}

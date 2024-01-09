@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022, 2023
+  years: 2022, 2024
 
-lastupdated: "2023-12-19"
+lastupdated: "2024-01-09"
 
 keywords: what is IAM, IAM features, IAM API, how IAM works
 
@@ -46,7 +46,7 @@ To find your IAM ID, go to **Manage** >  **Access (IAM)**. You can see your IAM 
 
 For more information about using an API key associated with your user identity, see [Managing user API keys](/docs/account?topic=account-userapikey).
 
-{{site.data.content.federation-iam}}
+{{_include-segments/federating-segment.md}}
 
 ### Functional IDs
 {: #functionalid-bestpract}

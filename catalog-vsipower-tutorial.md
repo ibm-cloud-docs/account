@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-12-29"
+  years: 2022, 2024
+lastupdated: "2024-01-09"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, power, power systems, power systems virtual server
 
@@ -101,9 +101,9 @@ Next, update the configuration type of the **`crn`** and **`processors`** parame
 1. From the Deployment values table, select the **`processors`** parameter and click **Edit**.
 1. Open the **Value details** menu and select **Float**.
 
-{{site.data.content.output-values}}
+{{_include-segments/edit-output-segment.md}}
 
-{{site.data.content.define-IAM-access}}
+{{_include-segments/define-iam-segment.md}}
 
 ## Set the license requirements
 {: #catalog-vsipower-cfg-license}
