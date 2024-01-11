@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2023
-lastupdated: "2023-10-12"
+  years: 2015, 2024
+lastupdated: "2024-01-11"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -314,6 +314,9 @@ You can target URLs for any {{site.data.keyword.Bluemix_notm}} console page to a
 {: support}
 
 You can transfer ownership of your entire account, create a support case that requests to make another user in the account the new owner. For more information, see [Transferring ownership of your account](/docs/account?topic=account-transfer).
+
+When you change account ownership, the previous owner is removed. The new owner determines whether to invite the previous owner as a new user and determines their account permissions. To ensure the security of the account, {{site.data.keyword.cloud_notm}} Support cannot modify the user list in your account.
+{: note}
 
 ## Can I change the name or IBMid in my profile?
 {: #change-profile-settings}
