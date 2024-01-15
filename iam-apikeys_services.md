@@ -172,7 +172,7 @@ Using an {{site.data.keyword.Bluemix_notm}} API key is convenient, and it makes 
 To authenticate with a service's API by using an API key, complete the following steps:
 
 1. First, [create an {{site.data.keyword.Bluemix_notm}} API key](/docs/account?topic=account-userapikey#manage-user-keys) if you have not already.
-2. Send the {{site.data.keyword.Bluemix_notm}} API key as defined in [RFC 7617](https://tools.ietf.org/html/rfc7617){: external} as HTTP header “Authorization”. Use `apikey` as the user name, and the API key value as the password.
+2. Send the {{site.data.keyword.Bluemix_notm}} API key as defined in [RFC 7617](https://datatracker.ietf.org/doc/html/rfc7617){: external} as HTTP header “Authorization”. Use `apikey` as the user name, and the API key value as the password.
 
 As an example, the following steps assume that the API key is 0a1A2b3B4c5C6d7D8e9E:
 

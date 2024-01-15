@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022, 2023
+  years: 2022, 2024
 
-lastupdated: "2023-12-27"
+lastupdated: "2024-01-15"
 
 keywords: trusted profile, dynamic rule, operators, rules, conditions, properties, time-based, resource attribute
 
@@ -42,7 +42,7 @@ Session duration
 Additionally, each dynamic rule and trusted profile trust relationship has one or more conditions that consist of the following properties. Users need to satisfy all conditions for the overall dynamic rule or trusted profile authentication to evaluate to true:
 
 Allow users when
-:   An attribute name that is part your identity provider data. To learn more about how attribute names are created from your enterprise identity provider to the condition evaluation, see [Mapping of enterprise identity provider attributes](https://developer.ibm.com/tutorials/use-iam-access-groups-to-effectively-manage-access-to-your-cloud-resources/#mapping-of-enterprise-identity-provider-attributes){: external}.
+:   An attribute name that is part your identity provider data. To learn more about how attribute names are created from your enterprise identity provider to the condition evaluation, see [Mapping of enterprise identity provider attributes](https://developer.ibm.com/articles/identity-and-access-management-what-developers-need-to-know/#mapping-of-enterprise-identity-provider-attributes){: external}.
 
 Comparator
 :   Compares the attribute that is specified in the `Allow users when` field with the `Values` property. You can choose from Equals, Not Equals, Equals Ignore Case, Not Equals Ignore Case, In, and Contains. Use the Contains option when the attribute statement has an array type. You can enter more than one value to be matched by using the In option.
