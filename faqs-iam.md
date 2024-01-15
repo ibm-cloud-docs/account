@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2023
-lastupdated: "2023-06-01"
+  years: 2018, 2024
+lastupdated: "2024-01-15"
 
 keywords: frequently asked questions, iam faqs, administrator, administrator role
 
@@ -331,7 +331,7 @@ In Kubernetes, a service account provides an identity for processes that run in 
 
 When you establish trust with the Kubernetes service in a trusted profile, you are required to enter information in the `namespace` and `service account` fields. You can enter `default` for both.
 
-For more information, see [Using Trusted Profiles in your Kubernetes and OpenShift Clusters](https://www.ibm.com/cloud/blog/using-trusted-profiles-in-your-kubernetes-and-openshift-clusters) and [Kubernetes namespace](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/){: external}.
+For more information, see [Using Trusted Profiles in your Kubernetes and OpenShift Clusters](https://www.ibm.com/blog/using-trusted-profiles-in-your-kubernetes-and-openshift-clusters){: external} and [Kubernetes namespace](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/){: external}.
 
 ## How can I view dynamic members of access groups?
 {: #dynamic-members}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018, 2022
+  years: 2018, 2024
 
-lastupdated: "2022-05-19"
+lastupdated: "2024-01-15"
 
 keywords: IBM Cloud service APIs, IAM token, API key, authenticate with service API
 
@@ -34,7 +34,7 @@ You can use API keys to [log in to the {{site.data.keyword.Bluemix_notm}} comman
 ## Passing an {{site.data.keyword.Bluemix_notm}} IAM token to authenticate with a service's API
 {: #token_auth}
 
-To retrieve an IAM access token, the API client must first invoke an {{site.data.keyword.Bluemix_notm}} IAM API to authenticate and retrieve that token. The preferred way for {{site.data.keyword.Bluemix_notm}} service API clients is to use an {{site.data.keyword.Bluemix_notm}} API key to get an IAM access token. The IAM access token, which was implemented as a [JSON Web Token](https://www.ibm.com/cloud/blog/json-web-tokens-as-building-blocks-for-cloud-security){: external}, can be used for multiple invocations of {{site.data.keyword.Bluemix_notm}} services that accept IAM access tokens as an authentication method. As IAM access tokens are digitally signed with asymmetric keys, {{site.data.keyword.Bluemix_notm}} services can validate an IAM access token without invoking any external service. This dramatically improves the performance of invoking an API.
+To retrieve an IAM access token, the API client must first invoke an {{site.data.keyword.Bluemix_notm}} IAM API to authenticate and retrieve that token. The preferred way for {{site.data.keyword.Bluemix_notm}} service API clients is to use an {{site.data.keyword.Bluemix_notm}} API key to get an IAM access token. The IAM access token, which was implemented as a [JSON Web Token](https://www.ibm.com/blog/json-web-tokens-as-building-blocks-for-cloud-security){: external}, can be used for multiple invocations of {{site.data.keyword.Bluemix_notm}} services that accept IAM access tokens as an authentication method. As IAM access tokens are digitally signed with asymmetric keys, {{site.data.keyword.Bluemix_notm}} services can validate an IAM access token without invoking any external service. This dramatically improves the performance of invoking an API.
 
 ![Authenticating with a service API by using an access token](images/tokenauth.svg "Retrieving a token from IAM by using an API key and passing the access token to target services to validate credentials"){: caption="Figure 1. Retrieving a token from IAM by using an API key and passing the access token to target services to validate credentials" caption-side="bottom"}
 

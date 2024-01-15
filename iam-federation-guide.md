@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2023
+  years: 2023, 2024
 
-lastupdated: "2023-08-14"
+lastupdated: "2024-01-15"
 
 keywords:
 
@@ -93,24 +93,24 @@ Using {{site.data.keyword.Bluemix_notm}} and other {{site.data.keyword.IBM_notm}
 
 The following links help you implement the federation that you choose:
 
-[IBMid Enterprise Federation Adoption Guide](https://www.ibm.com/docs/en/ief){: external}.
+[IBMid Enterprise Federation Adoption Guide](https://www.ibm.com/docs/en/ief){: external}
 :   The publicly available IBMid federation guide gives you an overview about the steps that are required to federate your Identity Provider and whom to contact to get the federation implemented. Be aware that you need an "IBM Sponsor" (for example, an {{site.data.keyword.IBM_notm}} employee that works as main contact between you and the IBMid team).
 
-[{{site.data.keyword.Bluemix_notm}} Self-Service Federation for External Identity Providers](https://www.ibm.com/cloud/blog/announcements/ibm-cloud-self-service-federation-for-external-identity-providers)
+[{{site.data.keyword.Bluemix_notm}} Self-Service Federation for External Identity Providers](https://www.ibm.com/blog/announcement/ibm-cloud-self-service-federation-for-external-identity-providers){: external}
 :   Announcement for the {{site.data.keyword.Bluemix_notm}} IAM feature to federate with an Identity Provider through SAML using {{site.data.keyword.appid_full_notm}}.
 
 [Enabling authentication from an external identity provider](/docs/account?topic=account-idp-integration)
 :   Follow the steps necessary to integrate an {{site.data.keyword.appid_full_notm}} service instance with {{site.data.keyword.Bluemix_notm}} IAM so that your users can use your {{site.data.keyword.Bluemix_notm}} account without creating IBMids. Review the section Setting IAM-specific attributes in {{site.data.keyword.appid_short}} tokens to make sure that your users are correctly onboarded and displayed inside your {{site.data.keyword.Bluemix_notm}} account.
 
-[Control access to cloud resources](https://developer.ibm.com/tutorials/use-iam-access-groups-to-effectively-manage-access-to-your-cloud-resources/)
+[Control access to cloud resources](https://developer.ibm.com/tutorials/use-iam-access-groups-to-effectively-manage-access-to-your-cloud-resources/){: external}
 :   This tutorial describes how to use Dynamic Rules in Access Groups so that you automate permission assignments based on attributes that your Identity Provider is sending to {{site.data.keyword.Bluemix_notm}} via SAML. The tutorial itself was written for IBMid federation, but the same concept and steps also work with {{site.data.keyword.appid_full_notm}} based federation.
 
 [Using {{site.data.keyword.appid_short}} instances to build dynamic rules in access groups](/docs/account?topic=account-idp-integration#app-id-dynamic-rules)
 :   In case you plan to use dynamic rule with {{site.data.keyword.appid_full_notm}}-based federation, make sure to use the correct syntax for the "Identity Provider" setting inside the Dynamic Rule. The section in the link is describing how to build the correct "Identity Provider" identifier.
 
-[Setting up {{site.data.keyword.appid_full_notm}} with your Active Directory Federation Service](https://www.ibm.com/cloud/blog/setting-ibm-cloud-app-id-active-directory-federation-service)
+[Setting up {{site.data.keyword.appid_full_notm}} with your Active Directory Federation Service](https://www.ibm.com/cloud/blog/setting-ibm-cloud-app-id-active-directory-federation-service){: external}
 :   A description of how to set up an {{site.data.keyword.appid_full_notm}} instance with Microsoft Active Directory. This blog entry is describing the general way how to connect Microsoft Active Directory, but does not make any additional steps to ensure that attributes required by {{site.data.keyword.Bluemix_notm}} IAM are correctly mapped. You must make sure to provide the attributes described here to successfully display user data.
 
-[{{site.data.keyword.Bluemix_notm}} Account Single Sign-on by using {{site.data.keyword.appid_full_notm}} and Microsoft Azure AD](https://medium.com/@vrvignesh/ibm-cloud-account-single-sign-on-using-ibm-cloud-app-id-and-microsoft-azure-ad-88932a5660a2)
+[{{site.data.keyword.Bluemix_notm}} Account Single Sign-on by using {{site.data.keyword.appid_full_notm}} and Microsoft Azure AD](https://medium.com/@vrvignesh/ibm-cloud-account-single-sign-on-using-ibm-cloud-app-id-and-microsoft-azure-ad-88932a5660a2){: external}
 :   This blog entry shows the whole process of integrating Microsoft Azure Active Directory with {{site.data.keyword.Bluemix_notm}} using {{site.data.keyword.appid_full_notm}}.
 Check out the documentation to learn more about Identity and Access Management in {{site.data.keyword.Bluemix_notm}}.
