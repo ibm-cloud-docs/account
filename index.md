@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2024
-lastupdated: "2024-01-08"
+lastupdated: "2024-01-19"
 
 keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, commitment, commit model, savings plan, enterprise savings plan
 
@@ -77,7 +77,7 @@ When you purchase a subscription, you commit to a minimum spending amount for a 
 
 Large organizations and other users with large cloud workloads can benefit from the savings and predictable billing that are provided by subscriptions. {{site.data.keyword.cloud_notm}} offers multiple types of subscriptions to fit your usage needs.
 
-A subset of subscription accounts are eligible for the new Enterprise Savings Plan billing model. For more information, see [Enterprise Savings Plan billing model](/docs/account?topic=account-accounts#commitment-model).
+A subset of subscription accounts are eligible for the new Enterprise Savings Plan billing model. For more information, see [Enterprise Savings Plan billing model](/docs/account?topic=account-accounts#commit-model-account).
 
 ### Platform subscriptions
 {: #platform-subscriptions}
