@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-01-02"
+lastupdated: "2024-01-19"
 
 keywords: catalog, restrict visibility, hide product, restrict by user, filter catalog, private catalog, catalog management service, public catalog
 
@@ -188,7 +188,7 @@ ibmcloud catalog filter hide-ibm-public-catalog
 {: #custom-catalog-access-cli}
 {: cli}
 
-To authorize users to work with the products in your private catalogs, assign them the [viewer role on the catalog management service](/docs/account?topic=account-account-services#assigning-access-by-using-the-cli).
+To authorize users to work with the products in your private catalogs, assign them the [viewer role on the catalog management service](/docs/account?topic=account-account-services&interface=cli#cli-acct-mgmt).
 
 ## Deleting a private catalog by using the CLI
 {: #delete-private-catalog-cli}
