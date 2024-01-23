@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2024-01-22"
+lastupdated: "2024-01-23"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -4630,6 +4630,7 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
+| API key reviewer | A Reviewer can list metadata of API keys. |
 | Assignment Administrator | A Template Deployment Administrator can manage the deployment of Enterprise Templates |
 | Service ID creator | Can create service IDs when the account setting to restrict service ID creation is enabled. |
 | Template Administrator | A Template Administrator can manage Enterprise Templates |
@@ -4651,6 +4652,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `iam-identity.apikey.manage` | Manage the API keys of an account. | Administrator |
 | `iam-identity.apikey.get` | Get the details of an existing API key. | Administrator, Editor, Operator |
 | `iam-identity.apikey.list` | List API keys based on properties. | Administrator, Editor, Operator |
+| `iam-identity.apikey.review` | List metadata of API keys based on properties. | API key reviewer, Administrator, Editor, Operator |
 | `iam-identity.apikey.create` | Create a new API key. | Administrator, Operator |
 | `iam-identity.apikey.update` | Update the details of an existing API key. | Administrator, Editor, Operator |
 | `iam-identity.apikey.delete` | Delete an API key. | Administrator, Operator |
@@ -5782,9 +5784,20 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 {: #platform-roles-table107}
 
+| Role | Description |
+| ----- | :----- |
+| DNS Binding Connector | DNS Binding Connector role is required to create and remove DNS resolution bindings. |
+{: row-headers}
+{: caption="Table 107. Service roles - Virtual Private Cloud" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="is.vpc"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table107}
+
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `is.vpc.vpc.read` | View a Virtual Private Cloud (VPC) | Administrator, Editor, Operator, Viewer |
+| `is.vpc.vpc.read` | View a Virtual Private Cloud (VPC) | Administrator, DNS Binding Connector, Editor, Operator, Viewer |
 | `is.vpc.vpc.create` | Create a Virtual Private Cloud (VPC) | Administrator, Editor |
 | `is.vpc.vpc.delete` | Delete a Virtual Private Cloud (VPC) | Administrator, Editor |
 | `is.vpc.vpc.update` | Update a Virtual Private Cloud (VPC) | Administrator, Editor |
@@ -5797,6 +5810,13 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.vpc.routing-table.delete` | Delete Route Table | Administrator, Editor |
 | `is.vpc.routing-table.operate` | Configure Subnet Attachment to Route Table | Administrator, Editor, Operator |
 | `is.vpc.routing-table.advertise` | Enable or disable route advertisement of non-VPC address prefixes and routes to Transit Gateway and Direct Link | Administrator, Editor |
+| `is.vpc.dns-resolution-binding.create` | Create DNS resolution binding | Administrator, Editor |
+| `is.vpc.dns-resolution-binding.delete` | Delete DNS resolution binding | Administrator, Editor |
+| `is.vpc.dns-resolution-binding.update` | Update the name of a DNS resolution binding | Administrator, Editor |
+| `is.vpc.dns-resolution-binding.read` | Get details of a DNS resolution binding | Administrator, Editor, Operator, Viewer |
+| `is.vpc.dns-resolution-binding.list` | List DNS resolution bindings | Administrator, Editor, Operator, Viewer |
+| `is.vpc.dns-resolution-binding.connect` | Connect DNS resolution binding between two VPCs | DNS Binding Connector |
+| `is.vpc.dns-resolution-binding.disconnect` | Disconnect DNS resolution binding between two VPCs | DNS Binding Connector |
 {: caption="Table 107. Service actions - Virtual Private Cloud" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.vpc"}
