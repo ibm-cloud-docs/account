@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2023
-lastupdated: "2023-11-27"
+  years: 2018, 2024
+lastupdated: "2024-01-24"
 
 keywords: user state, user status, change user status, update user status
 
