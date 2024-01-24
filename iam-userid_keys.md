@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2024
-lastupdated: "2024-01-02"
+lastupdated: "2024-01-24"
 
 keywords: API key, user API keys, IBM Cloud API keys, manage user keys, create API key
 
