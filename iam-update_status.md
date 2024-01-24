@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2023
-lastupdated: "2023-03-01"
+  years: 2018, 2024
+lastupdated: "2024-01-24"
 
 keywords: user state, user status, change user status, update user status
 
@@ -31,14 +31,11 @@ All account users are assigned a status that describes their user state. A user'
 | Active                          | The user accepted the invitation and has the assigned access to work within the account.                                                                      |
 | Disabled classic infrastructure | The account owner or a user with sufficient permissions can set another user as disabled so that the user can no longer access classic infrastructure resources. The user can continue to log in to the console and access platform resources or support cases. |
 | Invalid                   | A user's IAMid is deleted, and they can't access IAM-enabled resources. The user retains VPN access and can still use their classic infrastructure API key, but can't log in to the console. |
-| Pending                         | A state in which a user is invited but hasn't accepted the invitation or joined the account by creating an {{site.data.keyword.Bluemix_notm}} account. |
+| Pending                         | A state in which a user is invited but hasn't accepted the invitation or joined the account by creating an {{site.data.keyword.Bluemix_notm}} account. |
 | Processing                      | A rarely viewed state in which the user is added to an invite, the system creates the first instance of the user, but the invite hasn't been sent.    |
-| Suspended                       |  The account owner or a user with sufficient permissions can set another user as suspended, which is a temporary alternative to removing a user. Access grants that are associated with the user through policies, access groups, or trusted profiles are not removed. Suspended users can't log in to the console or use the CLI to access the account. They might still be able to access resources in your account.|
+| Suspended                       |  The account owner or a user with sufficient permissions can set another user as suspended, which is a temporary alternative to removing a user. Access grants that are associated with the user through policies, access groups, or trusted profiles are not removed. Suspended users can't log in to the console or use the CLI to access the account. They don't have access to resources in your account.|
 | VPN-only                        | A user that is created in the account, but is restricted to VPN access only for devices. This type of user doesn't have access to log in to the console.      |
 {: caption="Table 1. User status" caption-side="top"}
-
-A suspended user in your account might generate an IAM token by using an API key that exists in a different account where the user isn't suspended. Because an IAM token authenticates a user's identity across all accounts that they're a member of, a suspended user in your account might use a token from another account to continue accessing resources in your account. To revoke all access for a user, remove them from the account or delete all access grants. For more information, see [Removing users from an account](/docs/account?topic=account-remove) and [Managing user API keys](/docs/account?topic=account-userapikey).
-{: important}
 
 ## Updating a user's status
 {: #update_user_status}
