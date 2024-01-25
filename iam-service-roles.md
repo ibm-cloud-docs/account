@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2024-01-24"
+lastupdated: "2024-01-25"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3861,6 +3861,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `event-notifications.pool-id-mapping.create` | This action is to create a new pool id mapping for a destination | Pool ID Manager |
 | `event-notifications.pool-id-mapping.delete` | This action is to delete a new pool id mapping for a destination | Pool ID Manager |
 | `event-notifications.pool-id-mapping.update` | This action is to update a new pool id mapping for a destination | Pool ID Manager |
+| `event-notifications.delivery.create` | This API is used to send the status of push devices | Administrator, Device Manager, Manager |
 {: caption="Table 61. Service actions - Event Notifications" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="event-notifications"}
