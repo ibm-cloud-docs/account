@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2021, 2023
+  years: 2021, 2024
 
-lastupdated: "2023-12-27"
+lastupdated: "2024-01-16"
 
 keywords: update network access, network access rule, network zone
 
@@ -60,161 +60,228 @@ ibmcloud cbr rule-update 30fd58c9b75f40e854b89c432318b4a2 --description 'Example
 {: #context-restrictions-update-rules-api}
 {: api}
 
-To update restrictions to your cloud resources by creating rules, call the [Context-based restrictions API](/apidocs/context-based-restrictions?code=node#replace-rule). The following example replaces a rule with an updated version.
+To update restrictions to your cloud resources by creating rules, call the [Context-based restrictions API](/apidocs/context-based-restrictions?code=node#replace-rule).
 
-```sh
-curl -X PUT --location --header "Authorization: Bearer {iam_token}" --header "Accept: application/json" --header "If-Match: {if_match}" --header "Content-Type: application/json" --data '{ "description": "this is an example of rule", "resources": [ { "attributes": [ { "name": "accountId", "value": "12ab34cd56ef78ab90cd12ef34ab56cd" }, { "name": "serviceName", "value": "kms" } ] } ], "contexts": [ { "attributes": [ { "name": "networkZoneId", "value": "76921bd873115033bd2a0909fe081b45" } ] } ], "enforcement_mode": "disabled" }' "{base_url}/v1/rules/{rule_id}"
-```
-{: codeblock}
-{: curl}
+1. [Get the rule](/apidocs/context-based-restrictions?code=go#get-rule) that you want to replace. In in response body, copy the rule ID and in the response headers copy the ETag header.
 
-```java
-RuleContextAttribute ruleContextAttributeModel = new RuleContextAttribute.Builder()
-  .name("networkZoneId")
-  .value("76921bd873115033bd2a0909fe081b45")
-  .build();
-RuleContext ruleContextModel = new RuleContext.Builder()
-  .attributes(new java.util.ArrayList<RuleContextAttribute>(java.util.Arrays.asList(ruleContextAttributeModel)))
-  .build();
-ResourceAttribute resourceAttributeModel = new ResourceAttribute.Builder()
-  .name("accountId")
-  .value("12ab34cd56ef78ab90cd12ef34ab56cd")
-  .build();
-Resource resourceModel = new Resource.Builder()
-  .attributes(new java.util.ArrayList<ResourceAttribute>(java.util.Arrays.asList(resourceAttributeModel)))
-  .build();
-ReplaceRuleOptions replaceRuleOptions = new ReplaceRuleOptions.Builder()
-  .ruleId("testString")
-  .ifMatch("testString")
-  .description("this is an example of rule")
-  .enforcementMode("disabled")
-  .contexts(new java.util.ArrayList<RuleContext>(java.util.Arrays.asList(ruleContextModel)))
-  .resources(new java.util.ArrayList<Resource>(java.util.Arrays.asList(resourceModel)))
-  .build();
+    ```sh
+    curl -X GET --location --header "Authorization: Bearer {iam_token}" --header "Accept: application/json" "https://cbr.cloud.ibm.com/v1/rules/{rule_id}"
+    ```
+    {: codeblock}
+    {: curl}
 
-Response<OutRule> response = contextBasedRestrictionsService.replaceRule(replaceRuleOptions).execute();
-OutRule outRule = response.getResult();
+    ```java
+    GetRuleOptions getRuleOptions = new GetRuleOptions.Builder()
+    .ruleId(ruleID)
+    .build();
 
-System.out.println(outRule);
-```
-{: codeblock}
-{: java}
+    Response<Rule> response = contextBasedRestrictionsService.getRule(getRuleOptions).execute();
+    Rule rule = response.getResult();
 
-```javascript
-// Request models needed by this operation.
+    System.out.println(rule);
+    ```
+    {: codeblock}
+    {: java}
 
-// RuleContextAttribute
-const ruleContextAttributeModel = {
-  name: 'networkZoneId',
-  value: '76921bd873115033bd2a0909fe081b45',
-};
+    ```javascript
+    const params = {
+      ruleId,
+    };
 
-// RuleContext
-const ruleContextModel = {
-  attributes: [ruleContextAttributeModel],
-};
+    try {
+      const res = await contextBasedRestrictionsService.getRule(params);
+      console.log(JSON.stringify(res.result, null, 2));
+    } catch (err) {
+      console.warn(err);
+    }
+    ```
+    {: codeblock}
+    {: javascript}
 
-// ResourceAttribute
-const resourceAttributeModel = {
-  name: 'accountId',
-  value: '12ab34cd56ef78ab90cd12ef34ab56cd',
-};
+    ```python
+    rule = context_based_restrictions_service.get_rule(
+      rule_id=rule_id
+    )
+    rule = rule.get_result()
 
-// Resource
-const resourceModel = {
-  attributes: [resourceAttributeModel],
-};
+    print(json.dumps(rule, indent=2))
+    ```
+    {: codeblock}
+    {: python}
 
-const params = {
-  ruleId: 'testString',
-  ifMatch: 'testString',
-  contexts: [ruleContextModel],
-  resources: [resourceModel],
-  description: 'this is an example of rule',
-  enforcementMode: 'disabled',
-};
+    ```go
+    getRuleOptions := contextBasedRestrictionsService.NewGetRuleOptions(
+      ruleID,
+    )
 
-contextBasedRestrictionsService.replaceRule(params)
-  .then(res => {
-    console.log(JSON.stringify(res.result, null, 2));
-  })
-  .catch(err => {
-    console.warn(err)
-  });
-```
-{: codeblock}
-{: javascript}
+    rule, response, err := contextBasedRestrictionsService.GetRule(getRuleOptions)
+    if err != nil {
+      panic(err)
+    }
+    b, _ := json.MarshalIndent(rule, "", "  ")
+    fmt.Println(string(b))
+    ```
+    {: codeblock}
+    {: go}
 
-```python
-rule_context_attribute_model = {
-  'name': 'networkZoneId',
-  'value': '76921bd873115033bd2a0909fe081b45',
-}
+2. The following example replaces a rule with an updated version.
 
-rule_context_model = {
-  'attributes': [rule_context_attribute_model],
-}
+    The ETag value is required in the replace request’s `If-Match` header.
+    {: tip}
 
-resource_attribute_model = {
-  'name': 'accountId',
-  'value': '12ab34cd56ef78ab90cd12ef34ab56cd',
-}
+    ```sh
+    curl -X PUT --location --header "Authorization: Bearer {iam_token}" --header "Accept: application/json" --header "If-Match: {if_match}" --header "Content-Type: application/json" --data '{ "description": "this is an example of rule", "resources": [ { "attributes": [ { "name": "accountId", "value": "12ab34cd56ef78ab90cd12ef34ab56cd" }, { "name": "serviceName", "value": "kms" } ] } ], "contexts": [ { "attributes": [ { "name": "networkZoneId", "value": "76921bd873115033bd2a0909fe081b45" } ] } ], "enforcement_mode": "disabled" }' "{base_url}/v1/rules/{rule_id}"
+    ```
+    {: codeblock}
+    {: curl}
 
-resource_model = {
-  'attributes': [resource_attribute_model],
-}
+    ```java
+    RuleContextAttribute ruleContextAttributeModel = new RuleContextAttribute.Builder()
+      .name("networkZoneId")
+      .value("76921bd873115033bd2a0909fe081b45")
+      .build();
+    RuleContext ruleContextModel = new RuleContext.Builder()
+      .attributes(new java.util.ArrayList<RuleContextAttribute>(java.util.Arrays.asList(ruleContextAttributeModel)))
+      .build();
+    ResourceAttribute resourceAttributeModel = new ResourceAttribute.Builder()
+      .name("accountId")
+      .value("12ab34cd56ef78ab90cd12ef34ab56cd")
+      .build();
+    Resource resourceModel = new Resource.Builder()
+      .attributes(new java.util.ArrayList<ResourceAttribute>(java.util.Arrays.asList(resourceAttributeModel)))
+      .build();
+    ReplaceRuleOptions replaceRuleOptions = new ReplaceRuleOptions.Builder()
+      .ruleId("testString")
+      .ifMatch("testString")
+      .description("this is an example of rule")
+      .enforcementMode("disabled")
+      .contexts(new java.util.ArrayList<RuleContext>(java.util.Arrays.asList(ruleContextModel)))
+      .resources(new java.util.ArrayList<Resource>(java.util.Arrays.asList(resourceModel)))
+      .build();
 
-out_rule = context_based_restrictions_service.replace_rule(
-  rule_id='testString',
-  if_match='testString',
-  contexts=[rule_context_model],
-  resources=[resource_model],
-  description='this is an example of rule',
-  enforcement_mode='disabled'
-).get_result()
+    Response<OutRule> response = contextBasedRestrictionsService.replaceRule(replaceRuleOptions).execute();
+    OutRule outRule = response.getResult();
 
-print(json.dumps(out_rule, indent=2))
-```
-{: codeblock}
-{: python}
+    System.out.println(outRule);
+    ```
+    {: codeblock}
+    {: java}
 
-```go
-ruleContextAttributeModel := &contextbasedrestrictionsv1.RuleContextAttribute{
-  Name: core.StringPtr("networkZoneId"),
-  Value: core.StringPtr("76921bd873115033bd2a0909fe081b45"),
-}
+    ```javascript
+    // Request models needed by this operation.
 
-ruleContextModel := &contextbasedrestrictionsv1.RuleContext{
-  Attributes: []contextbasedrestrictionsv1.RuleContextAttribute{*ruleContextAttributeModel},
-}
+    // RuleContextAttribute
+    const ruleContextAttributeModel = {
+      name: 'networkZoneId',
+      value: '76921bd873115033bd2a0909fe081b45',
+    };
 
-resourceAttributeModel := &contextbasedrestrictionsv1.ResourceAttribute{
-  Name: core.StringPtr("accountId"),
-  Value: core.StringPtr("12ab34cd56ef78ab90cd12ef34ab56cd"),
-}
+    // RuleContext
+    const ruleContextModel = {
+      attributes: [ruleContextAttributeModel],
+    };
 
-resourceModel := &contextbasedrestrictionsv1.Resource{
-  Attributes: []contextbasedrestrictionsv1.ResourceAttribute{*resourceAttributeModel},
-}
+    // ResourceAttribute
+    const resourceAttributeModel = {
+      name: 'accountId',
+      value: '12ab34cd56ef78ab90cd12ef34ab56cd',
+    };
 
-replaceRuleOptions := contextBasedRestrictionsService.NewReplaceRuleOptions(
-  "testString",
-  "testString",
-)
-replaceRuleOptions.SetDescription("this is an example of rule")
-replaceRuleOptions.SetContexts([]contextbasedrestrictionsv1.RuleContext{*ruleContextModel})
-replaceRuleOptions.SetResources([]contextbasedrestrictionsv1.Resource{*resourceModel})
-replaceRuleOptions.SetEnforcementMode(contextbasedrestrictionsv1.ReplaceRuleOptionsEnforcementModeDisabledConst)
+    // Resource
+    const resourceModel = {
+      attributes: [resourceAttributeModel],
+    };
 
-outRule, response, err := contextBasedRestrictionsService.ReplaceRule(replaceRuleOptions)
-if err != nil {
-  panic(err)
-}
-b, _ := json.MarshalIndent(outRule, "", "  ")
-fmt.Println(string(b))
-```
-{: codeblock}
-{: go}
+    const params = {
+      ruleId: 'testString',
+      ifMatch: 'testString',
+      contexts: [ruleContextModel],
+      resources: [resourceModel],
+      description: 'this is an example of rule',
+      enforcementMode: 'disabled',
+    };
+
+    contextBasedRestrictionsService.replaceRule(params)
+      .then(res => {
+        console.log(JSON.stringify(res.result, null, 2));
+      })
+      .catch(err => {
+        console.warn(err)
+      });
+    ```
+    {: codeblock}
+    {: javascript}
+
+    ```python
+    rule_context_attribute_model = {
+      'name': 'networkZoneId',
+      'value': '76921bd873115033bd2a0909fe081b45',
+    }
+
+    rule_context_model = {
+      'attributes': [rule_context_attribute_model],
+    }
+
+    resource_attribute_model = {
+      'name': 'accountId',
+      'value': '12ab34cd56ef78ab90cd12ef34ab56cd',
+    }
+
+    resource_model = {
+      'attributes': [resource_attribute_model],
+    }
+
+    out_rule = context_based_restrictions_service.replace_rule(
+      rule_id='testString',
+      if_match='testString',
+      contexts=[rule_context_model],
+      resources=[resource_model],
+      description='this is an example of rule',
+      enforcement_mode='disabled'
+    ).get_result()
+
+    print(json.dumps(out_rule, indent=2))
+    ```
+    {: codeblock}
+    {: python}
+
+    ```go
+    ruleContextAttributeModel := &contextbasedrestrictionsv1.RuleContextAttribute{
+      Name: core.StringPtr("networkZoneId"),
+      Value: core.StringPtr("76921bd873115033bd2a0909fe081b45"),
+    }
+
+    ruleContextModel := &contextbasedrestrictionsv1.RuleContext{
+      Attributes: []contextbasedrestrictionsv1.RuleContextAttribute{*ruleContextAttributeModel},
+    }
+
+    resourceAttributeModel := &contextbasedrestrictionsv1.ResourceAttribute{
+      Name: core.StringPtr("accountId"),
+      Value: core.StringPtr("12ab34cd56ef78ab90cd12ef34ab56cd"),
+    }
+
+    resourceModel := &contextbasedrestrictionsv1.Resource{
+      Attributes: []contextbasedrestrictionsv1.ResourceAttribute{*resourceAttributeModel},
+    }
+
+    replaceRuleOptions := contextBasedRestrictionsService.NewReplaceRuleOptions(
+      "testString",
+      "testString",
+    )
+    replaceRuleOptions.SetDescription("this is an example of rule")
+    replaceRuleOptions.SetContexts([]contextbasedrestrictionsv1.RuleContext{*ruleContextModel})
+    replaceRuleOptions.SetResources([]contextbasedrestrictionsv1.Resource{*resourceModel})
+    replaceRuleOptions.SetEnforcementMode(contextbasedrestrictionsv1.ReplaceRuleOptionsEnforcementModeDisabledConst)
+
+    outRule, response, err := contextBasedRestrictionsService.ReplaceRule(replaceRuleOptions)
+    if err != nil {
+      panic(err)
+    }
+    b, _ := json.MarshalIndent(outRule, "", "  ")
+    fmt.Println(string(b))
+    ```
+    {: codeblock}
+    {: go}
 
 ## Updating network zones
 {: #network-zones-update}
@@ -256,73 +323,76 @@ To update a network zone, complete the following steps.
 
 To update a network zone, complete the following steps.
 
-1. Retrieve the zone ID for the network zone that you want to update by listing the network zones in the account.
+1. [Get the zone](/apidocs/context-based-restrictions?code=go#get-zone) that you want to replace. In the response body, copy the zone ID and in the response headers copy the ETag header.
+
+   ```sh
+   curl -X GET --location --header "Authorization: Bearer {iam_token}" --header "Accept: application/json" "https://cbr.cloud.ibm.com/v1/zones/{zone_id}"
+   ```
+   {: codeblock}
+   {: curl}
+
+   ```java
+   GetZoneOptions getZoneOptions = new GetZoneOptions.Builder()
+     .zoneId(zoneID)
+     .build();
+
+   Response<Zone> response = contextBasedRestrictionsService.getZone(getZoneOptions).execute();
+   Zone zone = response.getResult();
+
+   System.out.println(zone);
+   ```
+   {: codeblock}
+   {: java}
+
+   ```javascript
+   const params = {
+     zoneId,
+   };
+
+   try {
+     const res = await contextBasedRestrictionsService.getZone(params);
+     console.log(JSON.stringify(res.result, null, 2));
+   } catch (err) {
+     console.warn(err);
+   }
+   ```
+   {: codeblock}
+   {: javascript}
+
+   ```python
+   get_zone_response = context_based_restrictions_service.get_zone(
+     zone_id=zone_id
+   )
+   zone = get_zone_response.get_result()
+
+   print(json.dumps(zone, indent=2))
+   ```
+   {: codeblock}
+   {: python}
+
+   ```go
+   getZoneOptions := contextBasedRestrictionsService.NewGetZoneOptions(
+     zoneID,
+   )
+
+   zone, response, err := contextBasedRestrictionsService.GetZone(getZoneOptions)
+   if err != nil {
+     panic(err)
+   }
+   b, _ := json.MarshalIndent(zone, "", "  ")
+   fmt.Println(string(b))
+   ```
+   {: codeblock}
+   {: go}
+
+
+1.  Update the network zone by using the [Replace zone](/apidocs/context-based-restrictions?code=go#replace-zone) method.
+
+    The ETag value is required in the replace request’s `If-Match` header.
+    {: tip}
 
     ```sh
-    curl -X GET --location --header "Authorization: Bearer {iam_token}" --header "Accept: application/json" "{base_url}/v1/zones?account_id={account_id}"
-    ```
-    {: codeblock}
-    {: curl}
-
-    ```java
-    ListZonesOptions listZonesOptions = new ListZonesOptions.Builder()
-      .accountId("testString")
-      .build();
-
-    Response<OutZonePage> response = contextBasedRestrictionsService.listZones(listZonesOptions).execute();
-    OutZonePage outZonePage = response.getResult();
-
-    System.out.println(outZonePage);
-    ```
-    {: codeblock}
-    {: java}
-
-    ```javascript
-    const params = {
-      accountId: 'testString',
-    };
-
-    contextBasedRestrictionsService.listZones(params)
-      .then(res => {
-        console.log(JSON.stringify(res.result, null, 2));
-      })
-      .catch(err => {
-        console.warn(err)
-      });
-    ```
-    {: codeblock}
-    {: javascript}
-
-    ```python
-    out_zone_page = context_based_restrictions_service.list_zones(
-      account_id='testString'
-    ).get_result()
-
-    print(json.dumps(out_zone_page, indent=2))
-    ```
-    {: codeblock}
-    {: python}
-
-    ```go
-    listZonesOptions := contextBasedRestrictionsService.NewListZonesOptions(
-      "testString",
-    )
-
-    outZonePage, response, err := contextBasedRestrictionsService.ListZones(listZonesOptions)
-    if err != nil {
-      panic(err)
-    }
-    b, _ := json.MarshalIndent(outZonePage, "", "  ")
-    fmt.Println(string(b))
-    ```
-    {: codeblock}
-    {: go}
-
-
-2.  Update the network zone by using the [ReplaceZone](/apidocs/context-based-restrictions?code=go#replace-zone) method.
-
-    ```sh
-    curl -X PUT --location --header "Authorization: Bearer {iam_token}" --header "Accept: application/json" --header "If-Match: {if_match}" --header "Content-Type: application/json" --data '{ "name": "an example of zone", "description": "this is an example of zone", "account_id": "12ab34cd56ef78ab90cd12ef34ab56cd", "addresses": [ { "type": "ipAddress", "value": "169.23.56.234" }, { "type": "ipRange", "value": "169.23.22.0-169.23.22.255" }, { "type": "vpc", "value": "crn:v1:bluemix:public:is:us-south:a/12ab34cd56ef78ab90cd12ef34ab56cd::vpc:r134-d98a1702-b39a-449a-86d4-ef8dbacf281e" } ] }' "{base_url}/v1/zones/{zone_id}"
+    curl -X PUT --location --header "Authorization: Bearer {iam_token}" --header "Accept: application/json" --header "If-Match: {if_match}" --header "Content-Type: application/json" --data '{ "name": "new zone name", "description": "new zone description", "account_id": "12ab34cd56ef78ab90cd12ef34ab56cd", "addresses": [ { "type": "ipAddress", "value": "169.23.56.234" }, { "type": "ipRange", "value": "169.23.22.0-169.23.22.255" }, { "type": "vpc", "value": "crn:v1:cloud:public:is:us-south:a/12ab34cd56ef78ab90cd12ef34ab56cd::vpc:r134-d98a1702-b39a-449a-86d4-ef8dbacf281e" } ] }' "{base_url}/v1/zones/{zone_id}"
     ```
     {: codeblock}
     {: curl}
