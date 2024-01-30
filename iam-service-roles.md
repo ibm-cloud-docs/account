@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2024-01-29"
+lastupdated: "2024-01-30"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -4567,6 +4567,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Role | Description |
 | ----- | :----- |
 | Assignment Administrator | Template Assignment Administrator |
+| Groups Service Member Manage | This role is used by cloud services to manage members of a group. |
 | Template Administrator | Template Administrator |
 {: row-headers}
 {: caption="Table 76. Service roles - IAM Access Groups" caption-side="top"}
@@ -4582,8 +4583,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `iam-groups.groups.read` | Get an access group | Administrator, Editor, Viewer |
 | `iam-groups.groups.update` | Update an access group | Administrator, Editor |
 | `iam-groups.groups.delete` | Delete an access group | Administrator, Editor |
-| `iam-groups.groups.list` | List access groups | Administrator, Editor, Viewer |
-| `iam-groups.members.add` | Add members to an access group | Administrator, Editor |
+| `iam-groups.groups.list` | List access groups | Administrator, Editor, Groups Service Member Manage, Viewer |
+| `iam-groups.members.add` | Add members to an access group | Administrator, Editor, Groups Service Member Manage |
 | `iam-groups.members.read` | Check membership in an access group | Administrator, Editor, Viewer |
 | `iam-groups.members.delete` | Delete member from an access group | Administrator, Editor |
 | `iam-groups.members.list` | List access group members | Administrator, Editor, Viewer |
