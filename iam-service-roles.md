@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2024-01-30"
+lastupdated: "2024-01-31"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -436,7 +436,6 @@ Review the available platform and service roles and the actions mapped to each t
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-| Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
 {: caption="Table 10. Platform roles - App Configuration" caption-side="top"}
 {: tab-title="Platform roles"}
@@ -463,54 +462,52 @@ Review the available platform and service roles and the actions mapped to each t
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `apprapp.dashboard.view` | Dashboard view | Administrator, Config Operator, Editor, Manager, Operator, Reader, Writer |
-| `apprapp.collections.list` | List collections | Administrator, Client SDK, Config Operator, Manager, Reader, Writer |
-| `apprapp.collections.create` | Create collections | Administrator, Manager |
-| `apprapp.collections.update` | Update collections | Administrator, Manager |
-| `apprapp.collections.delete` | Delete collections  | Administrator, Manager |
-| `apprapp.features.list` | List features | Administrator, Config Operator, Manager, Reader, Writer |
-| `apprapp.features.create` | Create Features | Administrator, Manager |
-| `apprapp.features.update` | Update features | Administrator, Manager |
-| `apprapp.features.delete` | Delete features | Administrator, Manager |
-| `apprapp.segments.list` | List segments | Administrator, Config Operator, Manager, Reader, Writer |
-| `apprapp.segments.update` | Update segments | Administrator, Manager, Writer |
-| `apprapp.segments.create` | Create segments | Administrator, Manager, Writer |
-| `apprapp.segments.delete` | Delete segments | Administrator, Manager, Writer |
-| `apprapp.features.patch` | Patch features | Administrator, Writer |
-| `apprapp.features.toggle` | Toggle feature | Administrator, Config Operator, Manager, Writer |
+| `apprapp.collections.list` | List collections | Client SDK, Config Operator, Manager, Reader, Writer |
+| `apprapp.collections.create` | Create collections | Manager |
+| `apprapp.collections.update` | Update collections | Manager |
+| `apprapp.collections.delete` | Delete collections  | Manager |
+| `apprapp.features.list` | List features | Config Operator, Manager, Reader, Writer |
+| `apprapp.features.create` | Create Features | Manager |
+| `apprapp.features.update` | Update features | Manager |
+| `apprapp.features.delete` | Delete features | Manager |
+| `apprapp.segments.list` | List segments | Config Operator, Manager, Reader, Writer |
+| `apprapp.segments.update` | Update segments | Manager, Writer |
+| `apprapp.segments.create` | Create segments | Manager, Writer |
+| `apprapp.segments.delete` | Delete segments | Manager, Writer |
+| `apprapp.features.patch` | Patch features | Writer |
+| `apprapp.features.toggle` | Toggle feature | Config Operator, Manager, Writer |
 | `apprapp.properties.list` | List properties | Config Operator, Manager, Reader, Writer |
-| `apprapp.properties.update` | Update properties | Administrator, Manager |
-| `apprapp.properties.create` | Create properties | Administrator, Manager |
-| `apprapp.properties.delete` | Delete properties | Administrator, Manager |
-| `apprapp.properties.patch` | Patch properties | Administrator, Writer |
-| `apprapp.environments.create` | Create environments | Administrator, Manager |
-| `apprapp.environments.update` | Update environments | Administrator, Manager |
-| `apprapp.environments.delete` | Delete environments | Administrator, Manager |
-| `apprapp.environments.list` | List environments | Administrator, Config Operator, Manager, Reader, Writer |
-| `apprapp.instances.export` | Export instance resources to a JSON | Administrator, Manager |
-| `apprapp.instances.import` | Import instance resources from a JSON | Administrator, Manager |
-| `apprapp.gitconfigs.create` | Create git configuration | Administrator, Manager |
-| `apprapp.gitconfigs.update` | Update git configurations | Administrator, Manager |
-| `apprapp.gitconfigs.delete` | Delete GIT configuration | Administrator, Manager |
-| `apprapp.gitconfigs.view` | GET a GIT configuration | Administrator, Config Operator, Manager, Reader, Writer |
+| `apprapp.properties.update` | Update properties | Manager |
+| `apprapp.properties.create` | Create properties | Manager |
+| `apprapp.properties.delete` | Delete properties | Manager |
+| `apprapp.properties.patch` | Patch properties | Writer |
+| `apprapp.environments.create` | Create environments | Manager |
+| `apprapp.environments.update` | Update environments | Manager |
+| `apprapp.environments.delete` | Delete environments | Manager |
+| `apprapp.environments.list` | List environments | Config Operator, Manager, Reader, Writer |
+| `apprapp.instances.export` | Export instance resources to a JSON | Manager |
+| `apprapp.instances.import` | Import instance resources from a JSON | Manager |
+| `apprapp.gitconfigs.create` | Create git configuration | Manager |
+| `apprapp.gitconfigs.update` | Update git configurations | Manager |
+| `apprapp.gitconfigs.delete` | Delete GIT configuration | Manager |
+| `apprapp.gitconfigs.view` | GET a GIT configuration | Config Operator, Manager, Reader, Writer |
 | `apprapp.gitconfigs.promote` | Promote configuration | Manager |
-| `apprapp.usage.create` | Usage posting | Administrator, Client SDK, Config Operator, Manager, Reader, Viewer, Writer |
+| `apprapp.usage.create` | Usage posting | Client SDK, Config Operator, Manager, Reader, Writer |
 | `apprapp.sse.view` | SSE connect | Client SDK, Config Operator, Manager, Reader, Writer |
-| `apprapp.encryptionconfigs.create` | Create Encryption configuration for data encryption using key management services | Administrator, Manager |
-| `apprapp.encryptionconfigs.list` | List Encryption configurations for data encryption using key management services | Administrator, Config Operator, Editor, Manager, Reader, Viewer, Writer |
-| `apprapp.originconfigs.update` | Update origin configuration for allowlisting CORS policy for Browser clients SDKs | Administrator, Manager |
-| `apprapp.originconfigs.list` | List origin configuration for allowlisting CORS policy for Browser clients SDKs | Administrator, Config Operator, Editor, Manager, Reader, Viewer, Writer |
+| `apprapp.originconfigs.update` | Update origin configuration for allowlisting CORS policy for Browser clients SDKs | Manager |
+| `apprapp.originconfigs.list` | List origin configuration for allowlisting CORS policy for Browser clients SDKs | Config Operator, Manager, Reader, Writer |
 | `apprapp.gitconfigs.restore` | Restore configuration | Manager |
-| `apprapp.integrations.create` | Create a integration between App Configuration and an external service | Administrator, Manager |
-| `apprapp.integrations.list` | List integrations between App Configuration and external services | Administrator, Config Operator, Editor, Manager, Reader, Viewer, Writer |
-| `apprapp.integrations.delete` | Delete the integration between App Configuration and an external service | Administrator, Manager |
-| `apprapp.workflowconfigs.create` | Create workflow configuration for service now integration for CR approval | Administrator, Manager |
-| `apprapp.workflowconfigs.update` | Update workflow configuration for service now integration for CR approval | Administrator, Manager |
-| `apprapp.workflowconfigs.list` | List the workflow configuration for service now integration for CR approval | Administrator, Config Operator, Editor, Manager, Reader, Viewer, Writer |
-| `apprapp.workflowconfigs.delete` | Delete the workflow configuration for service now integration for CR approval | Administrator, Manager |
-| `apprapp.changerequest.create` | API endpoint to listen to service-now events | Administrator, Manager |
-| `apprapp.config.import` | Import the configuration of the instance | Administrator, Manager |
-| `apprapp.config.export` | Export the configuration of the instance | Administrator, Client SDK, Config Operator, Editor, Manager, Reader, Viewer, Writer |
-| `apprapp.config.action` | Perform actions on the configuration of the instance like promote, restore to git | Administrator, Manager |
+| `apprapp.integrations.create` | Create a integration between App Configuration and an external service | Manager |
+| `apprapp.integrations.list` | List integrations between App Configuration and external services | Config Operator, Manager, Reader, Writer |
+| `apprapp.integrations.delete` | Delete the integration between App Configuration and an external service | Manager |
+| `apprapp.workflowconfigs.create` | Create workflow configuration for service now integration for CR approval | Manager |
+| `apprapp.workflowconfigs.update` | Update workflow configuration for service now integration for CR approval | Manager |
+| `apprapp.workflowconfigs.list` | List the workflow configuration for service now integration for CR approval | Config Operator, Manager, Reader, Writer |
+| `apprapp.workflowconfigs.delete` | Delete the workflow configuration for service now integration for CR approval | Manager |
+| `apprapp.changerequest.create` | API endpoint to listen to service-now events | Manager |
+| `apprapp.config.import` | Import the configuration of the instance | Manager |
+| `apprapp.config.export` | Export the configuration of the instance | Client SDK, Config Operator, Manager, Reader, Writer |
+| `apprapp.config.action` | Perform actions on the configuration of the instance like promote, restore to git | Manager |
 {: caption="Table 10. Service actions - App Configuration" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="apprapp"}
