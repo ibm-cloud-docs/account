@@ -1,460 +1,461 @@
 ---
-    toc:
-      properties:
-        subcollection: account
-        category: platform_services
-        audience: platform
-        href: /docs/account
-        console-page: /
-        product-page: https://ibm.com/cloud
-        path: account
-        label: Managing your account, resources, and access
+toc:
+  properties:
+    subcollection: account
+    category: platform_services
+    audience: platform
+    href: /docs/account
+    console-page: /
+    product-page: https://ibm.com/cloud
+    path: account
+    label: Managing your account, resources, and access
 
-      entries:
-      - navgroup:
-          id: learn
+  entries:
+  - navgroup:
+      id: learn
+      topics:
+      - acct-getstart-tutorial.md
+      - topicgroup:
+          label: Learning about accounts
+          topics:
+          - index.md
+          - account_overview.md
+      - topicgroup:
+          label: Learning about access management
+          topics:
+          - iam-manageaccess.md
+          - topicgroup:
+              label: What is IBM Cloud Identity and Access Management?
+              topics:
+              - iam-whatis.md
+              - iam-identities.md
+              - iam-access-concepts.md
+              - iam-policies-overview.md
+              - iam-roles-overview.md
+              - iam-mappings.md
+          - context-restrictions-what-is.md
+      - topicgroup:
+          label: Best practices
+          topics:
+          - bp_account.md
+          - iam-cross-acc-access.md
+
+  - navgroup:
+      id: tutorial
+      topics:
+      - topicgroup:
+            label: Securing access to resources
+            topics:
+            - iam-quickstart.md
+            - context-restrictions-tutorial.md
+            - tagging-resources-tutorial.md
+      - dash-tutorial.md
+      - trustedprofile-compute-tutorial.md
+      - trustedprofile-fed-tutorial.md
+      - topicgroup:
+          label: Sharing software with users in your account
+          topics:
+          - catalog-vsi-tutorial.md
+          - catalog-vsivpc-tutorial.md
+          - catalog-vsipower-tutorial.md
+          - catalog-operator-tutorial.md
+          - catalog-opbundle-tutorial.md
+          - catalog-terraform-template-tutorial.md
+          - catalog-terraform-template-cli.md
+
+  - navgroup:
+      id: howto
+      topics:
+      - iam-login_fedid.md
+      - topicgroup:
+          label: Securing your account
           topics:
           - topicgroup:
-              label: Learning about accounts
+              label: Setting up multifactor authentication
               topics:
-              - index.md
-              - account_overview.md
-              - include: ../billing-usage/paygo_committed_use.md
+              - iam-mfatypes.md
+              - iam-mfa.md
+              - iam-mfa-report.md
+              - iam-ver-auth.md
+              - legacy-mfa.md
+              - migrate-mfa.md
           - topicgroup:
-              label: Learning about access management
+              label: Setting up other authentication options
               topics:
-              - iam-manageaccess.md
-              - topicgroup:
-                  label: What is IBM Cloud Identity and Access Management?
-                  topics:
-                  - iam-whatis.md
-                  - iam-identities.md
-                  - iam-access-concepts.md
-                  - iam-policies-overview.md
-                  - iam-roles-overview.md
-                  - iam-mappings.md
-              - context-restrictions-what-is.md
+              - iam-federation-guide.md
+              - iam-idp-integration.md
+              - iam-saml-federation.md
           - topicgroup:
-              label: Best practices
+              label: Managing access
               topics:
-              - bp_account.md
-
-      - navgroup:
-          id: tutorial
+              - iam-groups.md
+              - iam-roles-management.md
+              - iam-accessgroup_rules.md
+              - iam-mng-access.md
+              - iam-cross-acct-restriction.md
+              - iam-account_management.md
+              - iam-wildcard.md
+              - iam-time-based.md
+              - iam-resource-based.md
+              - iam-public_access.md
+              - iam-mnginfra.md
+              - iam-migrated_permissions.md
+              - iam-authorizations.md
+              - iam-cbr.md
+              - iam-audit-policies.md
+              - iam-user-sessions.md
+          - topicgroup:
+              label: Administering trusted profiles
+              topics:
+              - trustedprofile-create.md
+              - trustedprofile-update.md
+              - trustedprofile-remove.md
+              - trustedprofile-iam-token.md
+          - topicgroup:
+              label: Controlling context-based restrictions
+              topics:
+              - context-restrictions-create.md
+              - context-restrictions-update.md
+              - context-restrictions-remove.md
+              - context-restrictions-cbr.md
+              - cm-cbr.md
+          - topicgroup:
+              label: Managing identities
+              topics:
+              - iam-userinv.md
+              - iam-remove-users.md
+              - iam-serviceid.md
+              - iam-identify-inactive.md
+              - iam-ibmid-change.md
+              - iam-audit-user-access.md
+          - topicgroup:
+              label: Administering settings
+              topics:
+              - iam-usersetting.md
+              - iam-update_status.md
+              - iam-session-settings.md
+              - iam-specific_ip.md
+              - iam-restrict-api.md
+              - iam-restrict-domain.md
+              - iam-restrict-service-id.md
+              - iam-vpn_password.md
+              - sessions-settings.md
+              - iam-token-exp.md
+          - topicgroup:
+              label: Using API keys
+              topics:
+              - iam-apikeys.md
+              - iam-userid_keys.md
+              - iam-serviceid_keys.md
+              - iam-classic_infra_keys.md
+              - iam-apikey_iamtoken.md
+              - iam-apikeys_services.md
+      - topicgroup:
+          label: Working with resources
           topics:
-          - acct-getstart-tutorial.md
           - topicgroup:
-                label: Securing access to resources
+              label: Managing resource groups
+              topics:
+              - resourcegroups.md
+              - rg-access.md
+              - rg-delete.md
+          - topicgroup:
+              label: Managing resources
+              topics:
+              - manage_resource.md
+              - delete-resources.md
+              - reclaim-resource.md
+              - searching.md
+              - iam-access-report.md
+          - topicgroup:
+              label: Tagging resources
+              topics:
+              - tagging_resources.md
+              - attach-detach-tags.md
+              - delete-tags.md
+              - grant-tag-access.md
+          - service_in_other_regions.md
+          - using-services.md
+          - topicgroup:
+              label: Connecting resources to apps
+              topics:
+              - connect_external_app.md
+              - connecting_apps.md
+              - service_credentials.md
+          - topicgroup:
+              label: Connecting resources over a private network
+              topics:
+              - service-endpoints.md
+              - vrf-service-endpoint.md
+          - topicgroup:
+              label: Migrating resources
+              topics:
+              - data-center-migration.md
+          - topicgroup:
+              label: Working with software
+              topics:
+              - catalog-scans.md
+              - catalog-run-local.md
+              - catalog-embed-code.md
+              - sw-instance-details.md
+      - topicgroup:
+          label: Centrally managing products with catalogs
+          topics:
+          - cm-video.md
+          - topicgroup:
+              label: Customizing access to products
+              topics:
+              - catalog-custom-private.md
+              - catalog-custom-private-object.md
+          - topicgroup:
+              label: Managing catalogs
+              topics:
+              - catalog-settings.md
+              - catalog-audit-logs.md
+          - topicgroup:
+              label: Validating products in a target account
+              topics:
+              - catalog-cross-account.md
+              - catalog-cross-validation.md
+          - topicgroup:
+              label: Onboarding products
+              topics:
+              - catalog-add-private.md
+              - catalog-product-details.md
+              - catalog-translate-details.md
+              - catalog-control-format.md
+          - topicgroup:
+              label: Sharing products
+              topics:
+              - catalog-enterprise-share-overview.md
+              - catalog-enterprise-share.md
+              - catalog-enterprise-share-accept.md
+              - catalog-other-share.md
+          - topicgroup:
+              label: Managing product versions
+              topics:
+              - catalog-reload-version.md
+              - catalog-helm-targets.md
+              - catalog-update-private.md
+              - catalog-dep-restore.md
+              - catalog-deprecate.md
+              - catalog-restore.md
+              - catalog-suspend-version.md
+          - topicgroup:
+              label: Managing Virtual Private Endpoints in your private catalogs
+              topics:
+              - object-onboard-catalog.md
+              - object-publish.md
+              - sharing-products-objects.md
+              - object-deprecate.md
+              - object-manage.md
+          - software-license.md
+          - catalog-access-reqs.md
+      - topicgroup:
+          label: Working with scoped dashboards
+          topics:
+          - scope-dash.md
+          - scope-dash-edit.md
+          - scope-dash-remove-delete.md
+      - topicgroup:
+          label: Managing your account
+          topics:
+          - topicgroup:
+              label: Managing notifications
+              topics:
+              - email.md
+              - distribution_list.md
+              - add_webhooks.md
+          - account_settings.md
+          - account-upgrade.md
+          - create-mult-accounts.md
+          - topicgroup:
+                label: Updating account ownership
                 topics:
-                - iam-quickstart.md
-                - context-restrictions-tutorial.md
-                - tagging-resources-tutorial.md
-          - dash-tutorial.md
-          - trustedprofile-compute-tutorial.md
-          - trustedprofile-fed-tutorial.md
+                 - transfer.md
+                 - owner-classic.md
+          - profile.md
+          - contact_info.md
+          - feature_codes.md
+          - signup-commit.md
+          - shell-settings.md
           - topicgroup:
-              label: Sharing software with users in your account
+              label: Updating account settings for compliance
               topics:
-              - catalog-vsi-tutorial.md
-              - catalog-vsivpc-tutorial.md
-              - catalog-vsipower-tutorial.md
-              - catalog-operator-tutorial.md
-              - catalog-opbundle-tutorial.md
-              - catalog-terraform-template-tutorial.md
-              - catalog-terraform-template-cli.md
-
-      - navgroup:
-          id: howto
+              - eu-supported.md
+              - financial-services-validated.md
+              - hipaa-supported.md
+          - iam-policy-number.md
+          - iam-leave-account.md
+      - topicgroup:
+          label: Logging and monitoring
           topics:
-          - iam-login_fedid.md
+          - monitoring.md
+          - audit_log.md
           - topicgroup:
-              label: Securing your account
+              label: Monitoring login sessions
               topics:
-              - topicgroup:
-                  label: Setting up multifactor authentication
-                  topics:
-                  - iam-mfatypes.md
-                  - iam-mfa.md
-                  - iam-mfa-report.md
-                  - iam-ver-auth.md
-                  - legacy-mfa.md
-                  - migrate-mfa.md
-              - topicgroup:
-                  label: Setting up other authentication options
-                  topics:
-                  - iam-federation-guide.md
-                  - iam-idp-integration.md
-                  - iam-ent-idp-ibmid.md
-                  - iam-saml-federation.md
-              - topicgroup:
-                  label: Managing access
-                  topics:
-                  - iam-groups.md
-                  - iam-roles-management.md
-                  - iam-accessgroup_rules.md
-                  - iam-mng-access.md
-                  - iam-cross-acct-restriction.md
-                  - iam-account_management.md
-                  - iam-wildcard.md
-                  - iam-time-based.md
-                  - iam-resource-based.md
-                  - iam-public_access.md
-                  - iam-mnginfra.md
-                  - iam-migrated_permissions.md
-                  - iam-mngcf.md
-                  - iam-authorizations.md
-                  - iam-cbr.md
-                  - iam-audit-policies.md
-                  - iam-user-sessions.md
-              - topicgroup:
-                  label: Administering trusted profiles
-                  topics:
-                  - trustedprofile-create.md
-                  - trustedprofile-update.md
-                  - trustedprofile-remove.md
-                  - trustedprofile-iam-token.md
-              - topicgroup:
-                  label: Controlling context-based restrictions
-                  topics:
-                  - context-restrictions-create.md
-                  - context-restrictions-update.md
-                  - context-restrictions-remove.md
-                  - context-restrictions-cbr.md
-                  - cm-cbr.md
-              - topicgroup:
-                  label: Managing identities
-                  topics:
-                  - iam-userinv.md
-                  - iam-remove-users.md
-                  - iam-serviceid.md
-                  - iam-identify-inactive.md
-                  - iam-ibmid-change.md
-              - topicgroup:
-                  label: Administering settings
-                  topics:
-                  - iam-usersetting.md
-                  - iam-update_status.md
-                  - iam-session-settings.md
-                  - iam-specific_ip.md
-                  - iam-restrict-api.md
-                  - iam-restrict-domain.md
-                  - iam-restrict-service-id.md
-                  - iam-vpn_password.md
-                  - sessions-settings.md
-                  - iam-token-exp.md
-              - topicgroup:
-                  label: Using API keys
-                  topics:
-                  - iam-apikeys.md
-                  - iam-userid_keys.md
-                  - iam-serviceid_keys.md
-                  - iam-classic_infra_keys.md
-                  - iam-apikey_iamtoken.md
-                  - iam-apikeys_services.md
-          - topicgroup:
-              label: Working with resources
-              topics:
-              - topicgroup:
-                  label: Managing resource groups
-                  topics:
-                  - resourcegroups.md
-                  - rg-access.md
-                  - rg-delete.md
-              - topicgroup:
-                  label: Managing resources
-                  topics:
-                  - manage_resource.md
-                  - delete-resources.md
-                  - reclaim-resource.md
-                  - searching.md
-                  - iam-access-report.md
-              - topicgroup:
-                  label: Tagging resources
-                  topics:
-                  - tagging_resources.md
-                  - attach-detach-tags.md
-                  - delete-tags.md
-                  - grant-tag-access.md
-              - service_in_other_regions.md
-              - using-services.md
-              - topicgroup:
-                  label: Connecting resources to apps
-                  topics:
-                  - connect_external_app.md
-                  - s2s.md
-                  - connecting_apps.md
-                  - service_credentials.md
-              - topicgroup:
-                  label: Connecting resources over a private network
-                  topics:
-                  - service-endpoints.md
-                  - vrf-service-endpoint.md
-              - topicgroup:
-                  label: Migrating resources
-                  topics:
-                  - instance_migration.md
-                  - data-center-migration.md
-              - topicgroup:
-                  label: Working with software
-                  topics:
-                  - catalog-embed-code.md
-                  - catalog-scans.md
-                  - sw-instance-details.md
-          - topicgroup:
-              label: Centrally managing products with catalogs
-              topics:
-              - cm-video.md
-              - topicgroup:
-                  label: Customizing access to products
-                  topics:
-                  - catalog-custom-private.md
-              - topicgroup:
-                  label: Managing catalogs
-                  topics:
-                  - catalog-settings.md
-                  - catalog-audit-logs.md
-              - topicgroup:
-                  label: Validating products in a target account
-                  topics:
-                  - catalog-cross-account.md
-                  - catalog-cross-validation.md
-              - topicgroup:
-                  label: Onboarding products
-                  topics:
-                  - catalog-add-private.md
-                  - catalog-product-details.md
-                  - catalog-translate-details.md
-                  - catalog-control-format.md
-              - topicgroup:
-                  label: Sharing products
-                  topics:
-                  - catalog-enterprise-share-overview.md
-                  - catalog-enterprise-share.md
-                  - catalog-enterprise-share-accept.md
-                  - catalog-other-share.md
-              - topicgroup:
-                  label: Managing product versions
-                  topics:
-                  - catalog-reload-version.md
-                  - catalog-helm-targets.md
-                  - catalog-update-private.md
-                  - catalog-deprecate.md
-                  - catalog-restore.md
-                  - catalog-suspend-version.md
-              - software-license.md
-              - catalog-access-reqs.md
-          - topicgroup:
-              label: Working with scoped dashboards
-              topics:
-              - scope-dash.md
-              - scope-dash-edit.md
-              - scope-dash-remove-delete.md
-          - topicgroup:
-              label: Managing your account
-              topics:
-              - topicgroup:
-                  label: Managing notifications
-                  topics:
-                  - email.md
-                  - distribution_list.md
-                  - add_webhooks.md
-              - account_settings.md
-              - account-upgrade.md
-              - create-mult-accounts.md
-              - topicgroup:
-                  label: Updating account ownership
-                  topics:
-                    - transfer.md
-                    - owner-classic.md
-              - profile.md
-              - contact_info.md
-              - feature_codes.md
-              - signup-commit.md
-              - shell-settings.md
-              - topicgroup:
-                  label: Updating account settings for compliance
-                  topics:
-                  - eu-supported.md
-                  - financial-services-validated.md
-                  - hipaa-supported.md
-              - iam-policy-number.md
-              - iam-leave-account.md
-          - topicgroup:
-              label: Managing orgs and spaces
-              topics:
-              - orgs_spaces.md
-              - manageorg.md
-          - topicgroup:
-              label: Logging and monitoring
-              topics:
-              - monitoring.md
-              - audit_log.md
-              - topicgroup:
-                  label: Monitoring login sessions
-                  topics:
-                  - sessions-users.md
-                  - sessions-your-login.md
-                  - trustedprofile-monitor.md
-              - cbr-monitor.md
+              - sessions-users.md
+              - sessions-your-login.md
+              - trustedprofile-monitor.md
+          - cbr-monitor.md
 
-      - navgroup:
-          id: reference
+  - navgroup:
+      id: reference
+      topics:
+      - topicgroup:
+          label: API reference
           topics:
-          - topicgroup:
-              label: API reference
-              topics:
-              - link:
-                  label: Catalog Management
-                  href: https://{DomainName}/apidocs/resource-catalog/private-catalog
-              - link:
-                   label: Context-based restrictions
-                   href: https://{DomainName}/apidocs/context-based-restrictions
-              - link:
-                  label: Enterprise Management
-                  href: https://{DomainName}/apidocs/enterprise-apis/enterprise
-              - link:
-                  label: Global Catalog
-                  href: https://{DomainName}/apidocs/resource-catalog/global-catalog
-              - link:
-                  label: Global Search
-                  href: https://{DomainName}/apidocs/search
-              - link:
-                  label: Global Tagging
-                  href: https://{DomainName}/apidocs/tagging
-              - link:
-                  label: IAM Access Groups
-                  href: https://{DomainName}/apidocs/iam-access-groups
-              - link:
-                  label: IAM Identity Services
-                  href: https://{DomainName}/apidocs/iam-identity-token-api
-              - link:
-                  label: IAM Policy Management
-                  href: https://{DomainName}/apidocs/iam-policy-management
-              - iam-policies-change-log.md
-              - link:
-                  label: IBM Cloud Open Service Broker
-                  href: https://{DomainName}/apidocs/resource-controller/ibm-cloud-osb-api
-              - link:
-                  label: Resource Controller V2
-                  href: https://{DomainName}/apidocs/resource-controller/resource-controller
-              - link:
-                  label: Resource Controller V1
-                  href: https://{DomainName}/apidocs/resource-controller/resource-manager
-              - link:
-                  label: User Management
-                  href: https://{DomainName}/apidocs/user-management
-          - topicgroup:
-              label: Command reference
-              topics:
-              - include: ../cli/plugins/catalogs/manage-catalogs.md
-              - include: ../cli/reference/ibmcloud/cli_acct_org_role.md
-              - include: ../cli/reference/ibmcloud/cli_enterprise.md
-              - include: ../cli/reference/ibmcloud/cli_api_policy.md
-              - include: ../cli/reference/ibmcloud/cli_catalog.md
-              - include: ../cli/reference/ibmcloud/cli_resource_group.md
-              - include: ../cli/plugins/cbr/context-based-restrictions.md
-          - topicgroup:
-              label: Terraform reference
-              links:
-              - link:
-                  label: Catalog Management
-                  href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/cm_catalog
-              - link:
-                  label: Enterprise Management
-                  href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/enterprise
-              - link:
-                  label: Global Tagging
-                  href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_tag
-              - link:
-                  label: Identity and Access Management (IAM)
-                  href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_access_group
-              - link:
-                  label: Resource Management
-                  href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_group
-          - crn.md
-          - iam-service-roles.md
-          - iam-login-flows.md
-          - iam-condition-properties.md
-          - webhook-ips.md
+          - link:
+              label: Catalog Management
+              href: https://{DomainName}/apidocs/resource-catalog/private-catalog
+          - link:
+               label: Context-based restrictions
+               href: https://{DomainName}/apidocs/context-based-restrictions
+          - link:
+              label: Enterprise Management
+              href: https://{DomainName}/apidocs/enterprise-apis/enterprise
+          - link:
+              label: Global Catalog
+              href: https://{DomainName}/apidocs/resource-catalog/global-catalog
+          - link:
+              label: Global Search
+              href: https://{DomainName}/apidocs/search
+          - link:
+              label: Global Tagging
+              href: https://{DomainName}/apidocs/tagging
+          - link:
+              label: IAM Access Groups
+              href: https://{DomainName}/apidocs/iam-access-groups
+          - link:
+              label: IAM Identity Services
+              href: https://{DomainName}/apidocs/iam-identity-token-api
+          - link:
+              label: IAM Policy Management
+              href: https://{DomainName}/apidocs/iam-policy-management
+          - iam-policies-change-log.md
+          - link:
+              label: IBM Cloud Open Service Broker
+              href: https://{DomainName}/apidocs/resource-controller/ibm-cloud-osb-api
+          - link:
+              label: Resource Controller V2
+              href: https://{DomainName}/apidocs/resource-controller/resource-controller
+          - link:
+              label: Resource Controller V1
+              href: https://{DomainName}/apidocs/resource-controller/resource-manager
+          - link:
+              label: User Management
+              href: https://{DomainName}/apidocs/user-management
+      - topicgroup:
+          label: Command reference
+          topics:
+          - include: ../cli/plugins/catalogs/manage-catalogs.md
+          - include: ../cli/reference/ibmcloud/cli_acct_org_role.md
+          - include: ../cli/reference/ibmcloud/cli_enterprise.md
+          - include: ../cli/reference/ibmcloud/cli_api_policy.md
+          - include: ../cli/reference/ibmcloud/cli_catalog.md
+          - include: ../cli/reference/ibmcloud/cli_resource_group.md
+          - include: ../cli/plugins/cbr/context-based-restrictions.md
+      - topicgroup:
+          label: Terraform reference
+          links:
+          - link:
+              label: Catalog Management
+              href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/cm_catalog
+          - link:
+              label: Enterprise Management
+              href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/enterprise
+          - link:
+              label: Global Tagging
+              href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_tag
+          - link:
+              label: Identity and Access Management (IAM)
+              href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_access_group
+          - link:
+              label: Resource Management
+              href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_group
+      - crn.md
+      - iam-service-roles.md
+      - iam-login-flows.md
+      - iam-condition-properties.md
+      - webhook-ips.md
 
-      - navgroup:
-          id: help
+  - navgroup:
+      id: help
+      topics:
+      - topicgroup:
+          label: FAQs
           topics:
-          - topicgroup:
-              label: FAQs
-              topics:
-              - faqs-account.md
-              - faqs-iam.md
-              - faqs-resources.md
-              - faqs-migration.md
-              - faqs-catalog-management.md
-              - faqs-cbr.md
-              - faqs-vrf.md
-          - topicgroup:
-              label: Troubleshooting accessing IBM Cloud
-              topics:
-              - ts-password.md
-              - ts-login-id.md
-              - ts-signup.md
-              - ts-console-error.md
-              - ts-authentication-issue.md
-              - ts-pending-account.md
-              - ts-account-activation.md
-              - ts-page-load.md
-              - ts-account-infra.md
-              - ts-dash-access.md
-              - ts-iam-join-account.md
-              - ts-iam-mfa.md
-          - topicgroup:
-              label: Troubleshooting account management
-              topics:
-              - ts-create-location.md
-              - ts-create-org.md
-              - ts_create_service.md
-              - ts-lite-instance.md
-              - ts-runtime.md
-              - ts-inactive-account.md
-              - ts-rscs-reactivate-upgrade-suspended.md
-              - ts-add-usersorg.md
-              - ts-space-org.md
-              - ts-admin-org.md
-              - ts-add-cc.md
-              - ts-upgrade.md
-              - ts-credit-card.md
-              - ts-email-issue.md
-              - ts-vpe-access-parent.md
-              - ts-trusted-profile-support.md
-          - topicgroup:
-              label: Troubleshooting IAM
-              topics:
-              - ts-iam-resourceaccess.md
-              - ts-iam-myaccess.md
-              - ts-iam-invite.md
-              - ts-iam-classicinfra.md
-              - ts-iam-migratedpermissions.md
-              - ts-iam-max-policy.md
-              - ts-iam-serviceid.md
-              - ts-iam-create-accesstag.md
-              - ts-iam-attach-detach-accesstag.md
-              - ts-iam-delete-accesstag.md
-              - ts-iam-instances.md
-              - ts-alt-owner.md
-              - ts-enterprise-managed.md
-              - ts-enterprise-owner.md
-          - topicgroup:
-              label: Troubleshooting resources
-              topics:
-              - ts-rscs-delete.md
-              - ts-rscs-migrate-all.md
-              - ts-rscs-migrate-rg.md
-              - ts-rscs-migrate-cf.md
-              - ts-swinstance-unavail.md
-              - ts-unsupported-registry.md
-              - include: ../sell/ts-repo-upload.md
-              - include: ../sell/ts-validate-terraform.md
-          - topicgroup:
-              label: Troubleshooting context-based restrictions
-              topics:
-              - ts-iam-public-vpc-endpoint.md
-          - known-issues.md
-          - getting-help.md
+          - faqs-account.md
+          - faqs-iam.md
+          - faqs-resources.md
+          - faqs-migration.md
+          - faqs-catalog-management.md
+          - faqs-cbr.md
+          - faqs-vrf.md
+      - topicgroup:
+          label: Troubleshooting accessing IBM Cloud
+          topics:
+          - ts-password.md
+          - ts-login-id.md
+          - ts-signup.md
+          - ts-console-error.md
+          - ts-authentication-issue.md
+          - ts-pending-account.md
+          - ts-account-activation.md
+          - ts-page-load.md
+          - ts-account-infra.md
+          - ts-dash-access.md
+          - ts-iam-join-account.md
+          - ts-iam-mfa.md
+      - topicgroup:
+          label: Troubleshooting account management
+          topics:
+          - ts-create-location.md
+          - ts-create-org.md
+          - ts_create_service.md
+          - ts-lite-instance.md
+          - ts-runtime.md
+          - ts-inactive-account.md
+          - ts-rscs-reactivate-upgrade-suspended.md
+          - ts-add-usersorg.md
+          - ts-admin-org.md
+          - ts-add-cc.md
+          - ts-upgrade.md
+          - ts-credit-card.md
+          - ts-email-issue.md
+          - ts-vpe-access-parent.md
+          - ts-trusted-profile-support.md
+      - topicgroup:
+          label: Troubleshooting IAM
+          topics:
+          - ts-iam-resourceaccess.md
+          - ts-iam-myaccess.md
+          - ts-iam-invite.md
+          - ts-iam-classicinfra.md
+          - ts-iam-migratedpermissions.md
+          - ts-iam-max-policy.md
+          - ts-iam-serviceid.md
+          - ts-iam-create-accesstag.md
+          - ts-iam-attach-detach-accesstag.md
+          - ts-iam-delete-accesstag.md
+          - ts-iam-instances.md
+          - ts-alt-owner.md
+          - ts-enterprise-managed.md
+          - ts-enterprise-owner.md
+      - topicgroup:
+          label: Troubleshooting resources
+          topics:
+          - ts-rscs-delete.md
+          - ts-rscs-migrate-all.md
+          - ts-rscs-migrate-rg.md
+          - ts-swinstance-unavail.md
+          - ts-unsupported-registry.md
+          - include: ../sell/ts-repo-upload.md
+          - include: ../sell/ts-validate-terraform.md
+      - topicgroup:
+          label: Troubleshooting context-based restrictions
+          topics:
+          - ts-iam-public-vpc-endpoint.md
+      - known-issues.md
+      - getting-help.md

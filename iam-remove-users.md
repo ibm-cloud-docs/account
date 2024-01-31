@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018, 2023
+  years: 2018, 2024
 
-lastupdated: "2023-06-01"
+lastupdated: "2024-01-25"
 
 keywords: remove user, delete user
 
@@ -53,7 +53,7 @@ ibmcloud account user-remove USER_ID [-c ACCOUNT_ID] [-f, --force]
 ```
 {: codeblock}
 
-For command options, see [Managing accounts, users, and Cloud Foundry orgs](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_user_remove) CLI commands.
+For command options, see [Managing accounts and users](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_user_remove) CLI commands.
 
 
 ## Removing a user from an account by using the API

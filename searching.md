@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2023
-lastupdated: "2023-04-24"
+  years: 2015, 2024
+lastupdated: "2024-01-29"
 
 keywords: search, find, search for instance, search for resource
 
@@ -62,10 +62,7 @@ You can search for the following attributes:
 :   The cloud component to which your resource belongs. The allowed values are: `cloud_foundry`, `containers`, `container-registry`, `vmware`, `resource_controller`, `is`, `atracker`, `ims`, `iam`.
 
 `organization_id`
-:   The Cloud Foundry organization GUID.
-
-`doc.space_id`
-:   The Cloud Foundry space GUID.
+:   The organization GUID.
 
 `doc.resource_group_id`
 :   The ID of the resource group.
@@ -115,24 +112,11 @@ When the `-p classic-infrastucture` parameter is not specified search spans acro
     ```
     {: codeblock}
 
-* To search for all Cloud Foundry applications whose name starts with `my`, enter the following command:
-
-    ```bash
-    ibmcloud resource search 'name:my* AND type:cf-application'
-    ```
-    {: codeblock}
 
 * To search for all service instances of Message Hub, enter the following command:
 
     ```bash
     ibmcloud resource search 'service_name:messagehub'
-    ```
-    {: codeblock}
-
-* To search for all resources in either the `a07181ca-f917-4ee6-af22-b2c0c2a2d5d7` Cloud Foundry organization or the `c900d9671b235c00461c5e311a8aeced` resource group in the `us-south` region, enter the following command:
-
-    ```bash
-    ibmcloud resource search (organization_id:a07181ca-f917-4ee6-af22-b2c0c2a2d5d7 OR doc.resource_group_id:c900d9671b235c00461c5e311a8aeced) AND 'region:us-south'
     ```
     {: codeblock}
 
