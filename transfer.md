@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-01-11"
+lastupdated: "2024-01-30"
 
 keywords: change owner, transfer account, transfer account ownership, switch owner, transfer owner
 
@@ -26,7 +26,7 @@ Every {{site.data.keyword.cloud_notm}} account must have a valid account owner. 
 
 As the account owner, you can transfer the account ownership only by creating a support case. This cannot be done by self-service.  The new owner must be an existing user within the account. If the person that you want to own the account isn't an existing user, [invite them to the account](/docs/account?topic=account-iamuserinv)before you create the support case.
 
-To create the support case, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center** from the console menu bar, and click **Create a case**. In the case description, include the full name and IBMid of the user that is to be the new account owner. {{site.data.keyword.cloud_notm}} Support completes the ownership change as directed by the account owner. 
+To create the support case, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center** from the console menu bar, and click **Create a case**. In the case description, include the full name and IBMid of the user that is to be the new account owner. {{site.data.keyword.cloud_notm}} Support completes the ownership change as directed by the account owner.
 
 When you transfer your account to a new owner, the previous account owner is automatically removed from the account. The new owner can invite the account's previous owner back to the transferred account as necessary. To ensure the security of the account, {{site.data.keyword.cloud_notm}} Support cannot modify the account's user list.
 {: note}
@@ -34,9 +34,9 @@ When you transfer your account to a new owner, the previous account owner is aut
 ## Transferring an account from another owner
 {: #transfer-lost}
 
-If the owner of an account left the company and there is a need to transfer the account, a new owner must be identified. Then, create a support case to request a transfer.
+If the owner of an account leaves the company and there is a need to transfer the account, a new owner must be identified. Then, create a support case to request a transfer.
 
-The new owner must have an IBMid or be a user of the account. If the user does not have an IBMid, the new owner must create the IBMid and be added to the account by another user. 
+The new owner must have an IBMid or be a user of the account. If the user does not have an IBMid, the new owner must create the IBMid and be added to the account by another user.
 
 In the support case to request an account transfer, you must attach an official document from your company that contains the following information.
 - Your official company letterhead
