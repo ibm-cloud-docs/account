@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-12-29"
+  years: 2022, 2024
+lastupdated: "2024-02-02"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, vpc, virtual private cloud
 
@@ -117,39 +117,7 @@ Validating your virtual server image involves running a test deployment of your 
    To monitor the progress of the validation process, click **View logs**.
    {: tip}
 
-## Manage compliance (optional)
-{: #catalog-vsivpc-controls}
-{: step}
-
-The Security and Compliance Center scans determine adherence to regulatory controls as defined in a profile. Controls are safeguards that are used to meet security and compliance requirements. Only controls that are supported by Security and Compliance Center, formatted correctly, and validated by Code Risk Analysis and Security and Compliance Center scans appear in the catalog. For more information, see [Adding compliance details](/docs/account?topic=account-catalog-format-controls). After you share or publish your product, users can view your controls on the About page for your product, which proves that your product meets specific industry regulations. For more information, see [Building custom profiles](/docs/security-compliance?topic=security-compliance-build-custom-profiles&interface=ui).
-
-### Manage compliance controls
-{: #catalog-vsivpc-add-controls}
-
-You can review the controls that were added from your readme file and add additional controls.
-
-1. Click **Add controls**.
-1. Choose a profile.
-1. Select the controls that you want to add to your version.
-1. Click **Add**.
-
-### Run Code Risk Analyzer scan
-{: #catalog-vsivpc-cra-scan}
-
-Scan your source code with Code Risk Analyzer to identify any security vulnerabilities that you need to assess.
-
-1. Click **Run scan**.
-2. Wait for the scan to finish.
-
-### Add Security and Compliance Center scan
-{: #catalog-vsivpc-scc-scan}
-
-Add the scans that you previously ran in the Security and Compliance Center. Security and Compliance Center scans determine adherence to regulatory controls. For more information, see [Scheduling a scan](/docs/security-compliance?topic=security-compliance-scan-resources&interface=ui#scan-schedule-ui).
-
-1. Select the profile that you scanned.
-1. Select the Security and Compliance Center scan.
-1. Click **Add scan**.
-1. Click **Next**.
+{{_include-segments/manage-compliance-segment.md}}
 
 ## Review requirements
 {: #catalog-vsivpc-review-reqs}

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2023
-lastupdated: "2023-12-29"
+  years: 2021, 2024
+lastupdated: "2024-02-02"
 
 keywords: private catalog, software, onboard, operator, validate, test, Red Hat OpenShift operator, operator bundle
 
@@ -112,39 +112,7 @@ Validate that the Operator bundle can be successfully installed on the target {{
 
 1. Click **Validate**.
 
-## Manage compliance
-{: #catalog-opbundle-controls}
-{: step}
-
-Controls are safeguards that are used to meet security and compliance requirements. Only controls that are supported by Security and Compliance Center, formatted correctly, and validated by Code Risk Analysis and Security and Compliance Center scans appear in the catalog. For more information, see [Adding compliance details](/docs/account?topic=account-catalog-format-controls).
-
-### Manage compliance controls
-{: #catalog-opbundle-add-controls}
-
-You can review the controls that were added from your readme file and add additional controls.
-
-1. Click **Add controls**.
-1. Choose a profile.
-1. Select the controls that you want to add to your version.
-1. Click **Add**.
-
-### Run Code Risk Analyzer scan
-{: #catalog-opbundle-cra-scan}
-
-Scan your source code with Code Risk Analyzer to identify any security vulnerabilities that you need to assess.
-
-1. Click **Run scan**.
-2. Wait for the scan to finish.
-
-### Add Security and Compliance Center scan
-{: #catalog-opbundle-scc-scan}
-
-Add the scans that you previously ran in the Security and Compliance Center. Security and Compliance Center scans determine adherence to regulatory controls. For more information, see [Scheduling a scan](/docs/security-compliance?topic=security-compliance-scan-resources&interface=ui#scan-schedule-ui).
-
-1. Select the profile that you scanned.
-1. Select the Security and Compliance Center scan.
-1. Click **Add scan**.
-1. Click **Next**.
+{{_include-segments/manage-compliance-segment.md}}
 
 ## Review requirements
 {: #catalog-opbundle-review-reqs}
