@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-01-09"
+lastupdated: "2024-02-01"
 
 keywords:
 
@@ -40,6 +40,18 @@ The following H2s and H3s are going to be reused in several different topics tha
    See `edit-output-segment.md`.
 
    {{_include-segments/edit-output-segment.md}}
+
+* H2 - **Manage compliance** is used in the following files:
+   * catalog-vsi-tutorial.md
+   * catalog-vsivpc-tutorial.md
+   * catalog-vsipower-tutorial.md
+   * catalog-operator-tutorial.md
+   * catalog-opbundle-tutorial.md
+   * catalog-terraform-template-tutorial.md
+
+   See `manage-compliance-segment.md`.
+
+   {{_include-segments/manage-compliance-segment.md}}
 
 * Paragraph - Intro to **String comparisons** is used in the following files:
    * known-issues.md
