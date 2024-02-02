@@ -456,6 +456,16 @@
     "how to re-activate the account",
     "how to reactivate my cloud account"
   ],
+  "authorize-account": [
+    "you took money from credit card but not made account",
+    "my card was debited by 1 dollar",
+    "Payment deducted but account is not created yet",
+    "Money got deducted from my bank account",
+    "how much do they run to verify the card",
+    "you took a dollar off my card as verification however it is trying to make me fill out my card details again",
+    "there is a $1 hold on my card",
+    "they took the 1 pound and they refund it in the same time"
+  ],
   "freetrial": [
     "sign up for a free trial",
     "Is there a free trial",
@@ -607,16 +617,6 @@
     "change to another account",
     "Why does a second account appear in my account list",
     "switch to a different account"
-  ],
-  "bookmark-page-account": [
-    "find url for account",
-    "bookmark page in account",
-    "bookmark the URL in my browser",
-    "bookmark a console page",
-    "bookmark IBM Cloud console page",
-    "target url to account",
-    "save resource page",
-    "save URL to account resource"
   ],
   "switch-account-owners": [
     "switch account owners",
