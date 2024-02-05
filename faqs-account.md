@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2024
-lastupdated: "2024-01-11"
+lastupdated: "2024-02-05"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -131,7 +131,7 @@ To cancel all devices:
 1. For each device that you want to cancel, click the Actions menu icon, and select **Cancel device**.
 1. Acknowledge that data loss might occur as a result of canceling, and then click **Cancel device**.
 
-To cancel all billing items: 
+To cancel all billing items:
 1. Log in to the [{{site.data.keyword.cloud_notm}} console](https://cloud.ibm.com/){: external} by using your unique credentials.
 1. Select **Manage** > **Billing and usage**.
 1. Select **Billing items**.
@@ -405,11 +405,6 @@ By maintaining the original version of the default dashboard, you can discover t
 
 You can also switch between the duplicate and original versions by selecting each one from your list of dashboards that's displayed on your active dashboard.
 
-## Can I move an org to another account?
-{: #move-org-diff-account}
-{: faq}
-
-Currently, you can't move an org to a different account. However, you can re-create the org with the same credentials in a different account to mimic this functions. For more information, see [Adding orgs and spaces](/docs/account?topic=account-orgsspacesusers#createorg).
 
 ## Why do I get logged out of my account?
 {: #user-session-log-out}
