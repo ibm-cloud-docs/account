@@ -412,7 +412,6 @@ toc:
           label: Troubleshooting account management
           topics:
           - ts-create-location.md
-          - ts-create-org.md
           - ts_create_service.md
           - ts-lite-instance.md
           - ts-runtime.md
