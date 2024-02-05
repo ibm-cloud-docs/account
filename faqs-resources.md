@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2015, 2023
+  years: 2015, 2024
 
-lastupdated: "2023-12-28"
+lastupdated: "2024-02-05"
 
 keywords: resource FAQs, resource frequently asked questions, resource group, resource list, dashboard widget
 
@@ -20,7 +20,7 @@ content-type: faq
 # FAQs about managing resources
 {: #resources-faq}
 
-FAQs for managing {{site.data.keyword.cloud_notm}} resources might include questions about working with resource groups, migrating Cloud Foundry instances, and access for working with resources.
+FAQs for managing {{site.data.keyword.cloud_notm}} resources might include questions about working with resource groups and access for working with resources.
 {: shortdesc}
 
 ## What is a resource group?
@@ -30,17 +30,6 @@ FAQs for managing {{site.data.keyword.cloud_notm}} resources might include quest
 A resource group is a way for you to organize your account resources in customizable groupings. Any account resource that is managed by using {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) access control belongs to a resource group within your account. You assign resources to a resource group when you create them from the catalog. You can then view usage per resource group in your account, and easily assign users access to all resources in a resource group or just to a single resource in a resource group.
 
 For more information about creating and working with resource groups, see [Managing resource groups](/docs/account?topic=account-rgs).
-
-## Why should I migrate my Cloud Foundry service instances to a resource group?
-{: #instance-migrated}
-{: faq}
-
-IBM Cloud Foundry Public is deprecated with an end-of-support date of 1 June 2023. For more information, see [Deprecation of IBM Cloud Foundry](/docs/cloud-foundry-public?topic=cloud-foundry-public-deprecation).
-{: deprecated}
-
-Migrating your Cloud Foundry services to a resource group means that the services you're using are now available for use with IAM access control and resource groups. You can take advantage of fine-grained access control by using IAM roles. You can also view usage per resource group in your account.
-
-When you have Cloud Foundry services that can be migrated to a resource group, you receive a notification on the Resource list page. For more information about the migration process, see [Migrating Cloud Foundry service instances and apps to a resource group](/docs/account?topic=account-migrate).
 
 ## Why can't I add a resource to a resource group?
 {: #create-add-resource}
