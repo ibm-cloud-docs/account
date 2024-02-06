@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-02-13"
+  years: 2020, 2024
+lastupdated: "2024-02-06"
 
 
 keywords: troubleshoot invite users, access to invite users, access to add users
@@ -25,7 +25,7 @@ You must have specific access to invite users to an {{site.data.keyword.Bluemix}
 When you click **Invite users**, the following message might be displayed:
 {: tsSymptoms}
 
-> Looks like you don't have access to invite users. You must be assigned the editor or administrator role for the User management service or be a Cloud Foundry org manager. Contact your account owner for access.
+> Looks like you don't have access to invite users. You must be assigned the editor or administrator role for the User management service. Contact your account owner for access.
 
 You aren't assigned the correct access.
 {: tsCauses}
