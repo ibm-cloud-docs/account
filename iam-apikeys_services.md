@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2024
 
-lastupdated: "2024-01-15"
+lastupdated: "2024-02-07"
 
 keywords: IBM Cloud service APIs, IAM token, API key, authenticate with service API
 
@@ -43,13 +43,13 @@ To authenticate with a service's API by using an access token, complete the foll
 1. First, [create an {{site.data.keyword.Bluemix_notm}} API key](/docs/account?topic=account-userapikey#manage-user-keys) if you have not already.
 2. The next step for the API client is the retrieval of an IAM access token, as described in [Getting an IAM token from an API key](/docs/account?topic=account-iamtoken_from_apikey).
 3. From the response, extract the property `access_token` to get the IAM access token. `expires_in` indicates the seconds until the IAM access token `access_token` expires. Either use this relative value or the absolute time stamp `expiration` based in [UNIX time](https://en.wikipedia.org/wiki/Unix_time){: external}.
-4. Send the IAM access token as described in [RFC 6750, section 2.1. Authorization Request Header Field](https://tools.ietf.org/html/rfc6750#page-5){: external}:
+4. Send the IAM access token as described in [RFC 6750, section 2.1. Authorization Request Header Field](https://datatracker.ietf.org/doc/html/rfc6750#page-5){: external}:
 
 Review the following example:
 
 1. Use the HTTP header Authorization.
 2. Prefix the IAM access token with the literal `Bearer eyJhbGciOiJSUzI1Ng...`.
-3. Add the prefixed IAM access token to the HTTP header: `Authorization: Bearer eyJhbGciOiJSUzI1Ng...`. 
+3. Add the prefixed IAM access token to the HTTP header: `Authorization: Bearer eyJhbGciOiJSUzI1Ng...`.
 
 ```bash
 curl -H "Authorization: Bearer eyJhbGciOiJSUzI1Ng..."
@@ -154,7 +154,7 @@ Use the same IAM access token for subsequent IBM Cloud service API calls to achi
 
 [Go SDK reference](https://github.com/IBM/go-sdk-core/blob/main/Authentication.md#bearer-token-authentication)
 {: go}
-  
+
 ## Passing an {{site.data.keyword.Bluemix_notm}} API key to authenticate with a service API
 {: #apikey_auth}
 
@@ -178,7 +178,7 @@ As an example, the following steps assume that the API key is 0a1A2b3B4c5C6d7D8e
 
 1. Concatenate the user name `apikey` and the API key that is separated by a colon: `apikey:0a1A2b3B4c5C6d7D8e9E`
 2. Base64 encode the string: `base64("apikey:0a1A2b3B4c5C6d7D8e9E") => YXBpa2V5OjBhMUEyYjNCNGM1QzZkN0Q4ZTlF`
-3. Set the HTTP header Authorization with schema Basic, for example `Authorization: Basic YXBpa2V5OjBhMUEyYjNCNGM1QzZkN0Q4ZTlF`. 
+3. Set the HTTP header Authorization with schema Basic, for example `Authorization: Basic YXBpa2V5OjBhMUEyYjNCNGM1QzZkN0Q4ZTlF`.
 
 ```bash
 curl -u "apikey:<IBM Cloud API key value>"

@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2020, 2023
+  years: 2020, 2024
 
-lastupdated: "2023-08-14"
+lastupdated: "2024-02-07"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key
 
@@ -117,7 +117,7 @@ The following table shows the countries where personal use of our platform that 
 {{site.data.keyword.IBM}} Norway and {{site.data.keyword.IBM}} Switzerland are able to contract with local customers to offer personal use accounts.
 {: note}
 
-To work with a local Business Partner, go to the [IBM Business Partner Directory](https://www.ibm.com/partnerworld/bpdirectory/). Customers are not required to have a VAT ID to work with a local Business Partner.
+To work with a local Business Partner, go to the [IBM Business Partner Directory](https://www.ibm.com/partnerplus/directory){: external}. Customers are not required to have a VAT ID to work with a local Business Partner.
 
 ### Using a federated ID
 {: #signup-federated}

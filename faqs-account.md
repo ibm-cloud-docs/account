@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2024
-lastupdated: "2024-01-11"
+lastupdated: "2024-02-07"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -131,7 +131,7 @@ To cancel all devices:
 1. For each device that you want to cancel, click the Actions menu icon, and select **Cancel device**.
 1. Acknowledge that data loss might occur as a result of canceling, and then click **Cancel device**.
 
-To cancel all billing items: 
+To cancel all billing items:
 1. Log in to the [{{site.data.keyword.cloud_notm}} console](https://cloud.ibm.com/){: external} by using your unique credentials.
 1. Select **Manage** > **Billing and usage**.
 1. Select **Billing items**.
@@ -323,7 +323,7 @@ When you change account ownership, the previous owner is removed. The new owner 
 {: faq}
 {: support}
 
-You can change your personal information, such as name, email, or phone number, by going to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Profile and settings** in the console. You can't change your IBMid, but you can create a new one if appropriate. The [IBMid worldwide help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html) is available to help with general ID questions that aren't specific to your {{site.data.keyword.Bluemix_notm}} account.
+You can change your personal information, such as name, email, or phone number, by going to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Profile and settings** in the console. You can't change your IBMid, but you can create a new one if appropriate. The [IBMid worldwide help desk](https://www.ibm.com/docs/en/ibmid){: external} is available to help with general ID questions that aren't specific to your {{site.data.keyword.Bluemix_notm}} account.
 
 ## Can I change my account language?
 {: #switch-account-lang}

@@ -1,6 +1,6 @@
 {
   "title": "Managing your account, resources, and access docs",
-  "lastupdated": "2023-12-28",
+  "lastupdated": "2024-02-07",
   "introduction": "Leverage the interacting components and systems in your account for resource, user, and access management. Get started by setting up your IBM cloud account, learn about setting up an enterprise, or explore assigning access to resources quickly with IBM Cloud Identity and Access Management (IAM).",
   "section_devtools": {
     "api": "/docs?tab=api-docs&subCategory=account&category=platform_services",
@@ -52,7 +52,7 @@
     }
   ],
   "section_learn": {
-    "developer": "https://developer.ibm.com/depmodels/cloud/gettingstarted/",
+    "developer": "https://developer.ibm.com/depmodels/cloud/",
     "architecture": "https://www.ibm.com/cloud/architecture/architectures/public-cloud",
     "training": "https://www.ibm.com/training/cloud",
     "community": "https://community.ibm.com/community/user/cloud/home"
