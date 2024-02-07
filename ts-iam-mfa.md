@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2022
-lastupdated: "2022-12-27"
+  years: 2021, 2024
+lastupdated: "2024-02-07"
 
 keywords: troubleshoot MFA, multifactor authentication, verification method, authentication factor
 
@@ -36,7 +36,7 @@ One or more of the authentication factors that you use are inaccessible. For exa
 2. Validate your identity with two different verification methods.
 3. Click **Show accounts**.
 4. Take note of the Authentication setting for each account.
-   1. If the account uses MFA for **IBMid users**, work with the [IBMid help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: external} to reset your authentication factors.
+   1. If the account uses MFA for **IBMid users**, work with the [IBMid help desk](https://www.ibm.com/docs/en/ibmid){: external} to reset your authentication factors.
    1. If the account uses MFA for **All users**, you can reset your authentication factors on the Verification methods and authentication factors page.
 
 

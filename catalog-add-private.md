@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-02-02"
+lastupdated: "2024-02-07"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -552,7 +552,7 @@ fmt.Println(response)
 {: #publish-product-api}
 {: api}
 
-You can programmatically publish your software to your account by calling the Catalog Management API as shown in the following sample request. For detailed information about the API, see [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=java#account-publish-version).
+You can programmatically publish your software to your account by calling the Catalog Management API as shown in the following sample request.
 
 ```java
 String versionLocator = "{versionLocator}";

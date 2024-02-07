@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-01-15"
+lastupdated: "2024-02-07"
 
 keywords:
 
@@ -107,9 +107,6 @@ The following links help you implement the federation that you choose:
 
 [Using {{site.data.keyword.appid_short}} instances to build dynamic rules in access groups](/docs/account?topic=account-idp-integration#app-id-dynamic-rules)
 :   In case you plan to use dynamic rule with {{site.data.keyword.appid_full_notm}}-based federation, make sure to use the correct syntax for the "Identity Provider" setting inside the Dynamic Rule. The section in the link is describing how to build the correct "Identity Provider" identifier.
-
-[Setting up {{site.data.keyword.appid_full_notm}} with your Active Directory Federation Service](https://www.ibm.com/cloud/blog/setting-ibm-cloud-app-id-active-directory-federation-service){: external}
-:   A description of how to set up an {{site.data.keyword.appid_full_notm}} instance with Microsoft Active Directory. This blog entry is describing the general way how to connect Microsoft Active Directory, but does not make any additional steps to ensure that attributes required by {{site.data.keyword.Bluemix_notm}} IAM are correctly mapped. You must make sure to provide the attributes described here to successfully display user data.
 
 [{{site.data.keyword.Bluemix_notm}} Account Single Sign-on by using {{site.data.keyword.appid_full_notm}} and Microsoft Azure AD](https://medium.com/@vrvignesh/ibm-cloud-account-single-sign-on-using-ibm-cloud-app-id-and-microsoft-azure-ad-88932a5660a2){: external}
 :   This blog entry shows the whole process of integrating Microsoft Azure Active Directory with {{site.data.keyword.Bluemix_notm}} using {{site.data.keyword.appid_full_notm}}.
