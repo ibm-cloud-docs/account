@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2023
-lastupdated: "2023-12-19"
+  years: 2021, 2024
+lastupdated: "2024-02-08"
 
 
 keywords: create network access, network access rule, network zone
@@ -26,7 +26,10 @@ User and account-level IP address restrictions can also affect users' ability to
 ## Before you begin
 {: #context-prereq}
 
-To set up context-based restrictions, you must be the account owner or have an access policy with the administrator role on all account management services. For more information, see [Assigning access to account management services](/docs/account?topic=account-account-services).
+* To complete rule actions, you must be assigned an Identity and Access Management (IAM) policy on the target service.
+* To complete network zone actions, you must be assigned an IAM policy on the context-based restrictions service.
+
+For more information, see [Context-based restrictions roles and actions](/docs/account?topic=account-context-restrictions-whatis#cbr-access-reqs-cbr-restrict).
 
 ## Creating network zones
 {: #network-zones-create}
