@@ -279,6 +279,7 @@
                   - hipaa-supported.md
               - iam-policy-number.md
               - iam-leave-account.md
+              - account-close.md
           - topicgroup:
               label: Managing orgs and spaces
               topics:
