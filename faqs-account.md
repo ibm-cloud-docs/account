@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2024
-lastupdated: "2024-02-07"
+lastupdated: "2024-02-08"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -115,34 +115,16 @@ When you add a credit card to your trial account, your account is upgraded to a 
 
 {{site.data.keyword.Bluemix_notm}} trial accounts are available for faculty and students at accredited academic institutions. To qualify for a trial account, go to [Harness the Power of IBM](https://ibm.biz/academic){: external} and validate your institution credentials. Trial accounts expire after 30 days.
 
-## Can I close my account?
+## How can I close my account?
 {: #cancelaccount}
 {: faq}
 {: support}
 
-We're sad to see you go! If there's any way that we can assist you before you decide to close your account, [reach out to us](/unifiedsupport/supportcenter){: external}.
+If there's any way that we can assist you before you decide to close your account, [reach out to us](/unifiedsupport/supportcenter){: external}.
 
+To close a Pay-As-You-Go or Subscription account, you need to cancel all services, devices, and billing items, and then create a support case. A support case is required for account security and documentation purposes. For steps and more information, see [Closing an account](/docs/account?topic=account-close).
 
-* Before you request an account closure, cancel all services and resources within the account. Be sure to state that you want all services and data that is deleted immediately, and that you understand that all services and data are unrecoverable within the account closure case.
-
-To cancel all devices:
-1. Log in to the [{{site.data.keyword.cloud_notm}} console](https://cloud.ibm.com/){: external} by using your unique credentials.
-1. From the dashboard, click the menu icon ![Menu icon](../../icons/icon_hamburger.svg) > **Classic Infrastructure** > **Device List**.
-1. For each device that you want to cancel, click the Actions menu icon, and select **Cancel device**.
-1. Acknowledge that data loss might occur as a result of canceling, and then click **Cancel device**.
-
-To cancel all billing items:
-1. Log in to the [{{site.data.keyword.cloud_notm}} console](https://cloud.ibm.com/){: external} by using your unique credentials.
-1. Select **Manage** > **Billing and usage**.
-1. Select **Billing items**.
-1. Ensure that you are viewing all billing items.
-1. For each billing item that you want to cancel, click the Actions menu icon, and select **Cancel billing item**.
-
-* To close a Pay-As-You-Go or Subscription account, go to the [Support Center](/unifiedsupport/supportcenter), and click **Create a case** in the Contact Support center. Click **Account**, and select the **Cancel/close/suspend** subtopic. A support case is required for account security and documentation purposes. After your account is closed, all usage is stopped across all services running in your account, and the usage that is accrued in the current billing period is sent in one final invoice at the close of the billing period. Closing your account can't be undone and your data is unrecoverable.
-
-* You might receive a final invoice after you close your account due to incurred charges from the month before the account was closed.
-
-* To close a Lite account, go to the [Account settings](/account/settings) page, and click **Close account**. You can reactivate your account if you upgrade to a Pay-As-You-Go or Subscription account. After an account is closed for 30 days, all data is deleted and all services are removed.
+To close a Lite account, go to the [Account settings](/account/settings) page, and click **Close account**. After an account is closed for 30 days, all data is deleted and all services are removed.
 
 
 ## Can I log in to the console with my SoftLayer ID?
