@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2024
-lastupdated: "2024-02-08"
+lastupdated: "2024-02-19"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -251,7 +251,7 @@ Go to the [Account settings](/account/settings) page in the console to view your
 The account owner, organization manager, or a user with the correct permissions can invite you to join their account.
 
 * If you're new to {{site.data.keyword.cloud}}, you receive an email that contains all the information you need.
-* As an existing member of {{site.data.keyword.cloud}}, you can accept the invitation in your notifications, by email, or by using the CLI to onboard to the new account. To accept invitations in the CLI, use the [**`ibmcloud login`**](/docs/cli?topic=cli-ibmcloud_cli#accept-invitation-to-join-a-new-account-) command.
+* As an existing member of {{site.data.keyword.cloud}}, you can accept the invitation in your notifications, by email, or by using the CLI to onboard to the new account. To accept invitations in the CLI, use the [**`ibmcloud login`**](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login) command.
 
 ## Can I switch between multiple accounts?
 {: #switch-between-accounts}
