@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2024
 
-lastupdated: "2024-01-08"
+lastupdated: "2024-02-19"
 
 keywords: dynamic rules,access groups,specific identity attributes,identity provider,federated ID,
 
@@ -51,7 +51,7 @@ For more information about the fields that are used to create dynamic rules, see
 Before you can set up rules by using Terraform, make sure that you have completed the following:
 
 - Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-- Create a Terraform configuration file that is named `main.tf`. In this file, you define resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you define resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://developer.hashicorp.com/terraform/language){: external}.
 
 Dynamic rules are created by setting conditions that must be matched by the data that is configured within the IdP and passed in with a user's federated ID during login. You can add more than one condition for a rule. All conditions set in the rule must be met for a user to be added to an access group.
 

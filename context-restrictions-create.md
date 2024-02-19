@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2024
-lastupdated: "2024-02-08"
+lastupdated: "2024-02-19"
 
 
 keywords: create network access, network access rule, network zone
@@ -311,7 +311,7 @@ By creating network zones, you establish a list of allowed locations where an ac
 To create a network zone, use the Terraform resource [cbr_zone](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/cbr_zone).
 
 1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create a network zone by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create a network zone by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://developer.hashicorp.com/terraform/language){: external}.
 
     The following example creates a network zone that allows a single IP address and explicitly excludes a signle IP address.
 
@@ -575,7 +575,7 @@ fmt.Println(string(b))
 To define restrictions to your cloud resources by creating rules, use the Terraform resource [cbr_rule](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/cbr_rule).
 
 1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create a context-based restrictions rule by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create a context-based restrictions rule by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://developer.hashicorp.com/terraform/language){: external}.
 
     The following example creates a rule that targets a specific {{site.data.keyword.containershort}} API and allows only private endpoints from the specified network zone to call the operations associated with that API.
 

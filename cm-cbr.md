@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023
-lastupdated: "2023-12-26"
+  years: 2023, 2024
+lastupdated: "2024-02-19"
 
 keywords: context-based restrictions, protecting catalog resources, security, catalog management
 
@@ -289,7 +289,7 @@ By creating network zones, you establish a list of allowed locations where an ac
 To create a network zone, use the Terraform resource [cbr_zone](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/cbr_zone).
 
 1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create a network zone by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+1. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create a network zone by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://developer.hashicorp.com/terraform/language){: external}.
 
     The following example creates a network zone that allows a single IP address and explicitly excludes a single IP address.
 

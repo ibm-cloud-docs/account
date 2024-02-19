@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2024
 
-lastupdated: "2024-01-02"
+lastupdated: "2024-02-19"
 
 
 keywords: resource group, account resources, users access to resource groups, create resource group, create resource group in the console, create resource group CLI, create resource group API
@@ -147,7 +147,7 @@ fmt.Println(string(b))
 Before you can manage resource groups by using Terraform, make sure that you have completed the following:
 
 - Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-- Create a Terraform configuration file that is named `main.tf`. In this file, you define resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you define resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://developer.hashicorp.com/terraform/language){: external}.
 
 
 ## Creating a resource group by using Terraform
@@ -307,7 +307,7 @@ You can rename a resource group by using Terraform.
 
 1. To install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform, follow the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
 
-2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to rename a resource group by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to rename a resource group by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://developer.hashicorp.com/terraform/language){: external}.
 
    You can rename the resource group by updating `name` with a new value in the following example.
 
