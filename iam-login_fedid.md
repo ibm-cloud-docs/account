@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2015, 2023
+  years: 2015, 2024
 
-lastupdated: "2023-06-01"
+lastupdated: "2024-02-20"
 
 keywords: federated ID, password, enterprise SSO, single sign-on ID, API key login, one-time passcode login, temporary credential, to login, logging in, trusted profiles
 
@@ -45,7 +45,7 @@ Account administrators use trusted profiles to manage specific access for accoun
 ### Applying trusted profiles as an IBMid user
 {: #login-ibmid-users}
 
-If you are an IMBid user, complete the following steps to log in to the {{site.data.keyword.cloud_notm}} console by using a trusted profile:
+If you are an IBMid user, complete the following steps to log in to the {{site.data.keyword.cloud_notm}} console by using a trusted profile:
 
 1. Go to the [{{site.data.keyword.cloud_notm}} login page](/login).
 2. Enter your IBMid, or if you are using single sign-on (SSO), enter your company email address, and click **Continue**.
