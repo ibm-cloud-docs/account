@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2024
-lastupdated: "2024-01-09"
+lastupdated: "2024-02-02"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog
 
@@ -135,39 +135,7 @@ The TGZ file that you imported to your private catalog includes a readme file th
    To monitor the progress of the validation process, click **View logs**.
    {: tip}
 
-## Manage compliance
-{: #catalog-vsi-controls}
-{: step}
-
-Controls are safeguards that are used to meet security and compliance requirements. Only controls that are supported by Security and Compliance Center, formatted correctly, and validated by Code Risk Analysis and Security and Compliance Center scans appear in the catalog. For more information, see [Adding compliance details](/docs/account?topic=account-catalog-format-controls).
-
-### Manage compliance controls
-{: #catalog-vsi-add-controls}
-
-You can review the controls that were added from your readme file and add additional controls.
-
-1. Click **Add controls**.
-1. Choose a profile.
-1. Select the controls that you want to add to your version.
-1. Click **Add**.
-
-### Run Code Risk Analyzer scan
-{: #catalog-vsi-cra-scan}
-
-Scan your source code with Code Risk Analyzer to identify any security vulnerabilities that you need to assess.
-
-1. Click **Run scan**.
-2. Wait for the scan to finish.
-
-### Add Security and Compliance Center scan
-{: #catalog-vsi-scc-scan}
-
-Add the scans that you previously ran in the Security and Compliance Center. Security and Compliance Center scans determine adherence to regulatory controls. For more information, see [Scheduling a scan](/docs/security-compliance?topic=security-compliance-scan-resources&interface=ui#scan-schedule-ui).
-
-1. Select the profile that you scanned.
-1. Select the Security and Compliance Center scan.
-1. Click **Add scan**.
-1. Click **Next**.
+{{_include-segments/manage-compliance-segment.md}}
 
 ## Review requirements
 {: #catalog-vsi-review-reqs}

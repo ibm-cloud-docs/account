@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-01-02"
+lastupdated: "2024-02-19"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -63,7 +63,7 @@ Before you can onboard software to your account by using Terraform, make sure th
 {: terraform}
 
 - Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-- Create a Terraform configuration file that is named `main.tf`. In this file, you define resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you define resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://developer.hashicorp.com/terraform/language){: external}.
 {: terraform}
 
 To share software with other accounts, your software must be approved in Partner Center. For more information, see [Getting set up to sell software](/docs/sell?topic=sell-sw-getting-started).
@@ -300,17 +300,45 @@ To monitor the progress of the validation process, click **View logs**.
 {: #catalog-manage-controls}
 {: ui}
 
-Controls are safeguards that are used to meet security and compliance requirements. Only controls that are supported by Security and Compliance Center, formatted correctly, and validated by Code Risk Analysis and Security and Compliance Center scans appear in the catalog. For more information, see [Adding compliance details](/docs/account?topic=account-catalog-format-controls).
+You can add profiles and controls to your software to prove that it meets security and compliance requirements. You must use {{site.data.keyword.compliance_short}} to scan the resources created during validation.
 
-1. Click **Add controls**.
-1. Choose a profile.
-1. Select the controls that you want to add to your version.
+Only profiles and controls that are supported by the {{site.data.keyword.compliance_short}} and validated by {{site.data.keyword.compliance_short}} scans appear in the catalog.
+
+### Run a Security and Compliance Center scan
+{: #catalog-run-scc-scans}
+{: ui}
+
+When you claim profiles and controls, you must evaluate the resources that were created during validation to ensure compliance. To run a scan, complete the following steps:
+
+1. In the {{site.data.keyword.cloud_notm}} console, click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) **> Security and Compliance** to access {{site.data.keyword.compliance_short}}.
+2. In the navigation, click **Profile**.
+3. Click the **Overflow** menu in the row of the profile that you want to evaluate and select **Run scan**.
+3. Click **Run scan**.
+
+After your scan completes, you can return to your private catalog to continue the onboarding process.
+
+### Adding compliance controls
+{: #catalog-add-controls}
+{: ui}
+
+Add the profiles and controls that you want to claim.
+
+1. In the Manage compliance section of your product, select **Add claims**.
+1. Select the profile that you want to add.
+1. Choose to add the entire profile or a subset of controls.
+1. If you choose an entire profile, continue to the next step. If you choose to add a subset of controls, select the controls that you want to add.
 1. Click **Add**.
-1. In the Code Risk Analyzer scan section, click **Run scan**.
-1. Wait for the scan to finish.
-1. In the Security and Compliance Center scan section, select the profile that you scanned.
-1. Select the Security and Compliance Center scan.
+
+### Applying {{site.data.keyword.compliance_short}} scans
+{: #catalog-add-scc-scans}
+{: ui}
+
+Add the scans that you previously ran in the {{site.data.keyword.compliance_short}}. {{site.data.keyword.compliance_short}} scans determine adherence to regulatory controls. For more information, see [Scanning your resources](/docs/security-compliance?topic=security-compliance-scan-resources).
+
 1. Click **Add scan**.
+1. Select the profile that you used for the evaluation.
+1. Select the {{site.data.keyword.compliance_short}} scan.
+1. Click **Apply scan**.
 1. Click **Next**.
 
 ## Review requirements
@@ -524,7 +552,7 @@ fmt.Println(response)
 {: #publish-product-api}
 {: api}
 
-You can programmatically publish your software to your account by calling the Catalog Management API as shown in the following sample request. For detailed information about the API, see [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=java#account-publish-version).
+You can programmatically publish your software to your account by calling the Catalog Management API as shown in the following sample request.
 
 ```java
 String versionLocator = "{versionLocator}";

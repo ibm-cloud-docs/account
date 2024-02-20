@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018, 2021
+  years: 2018, 2024
 
-lastupdated: "2021-11-18"
+lastupdated: "2024-02-07"
 
 keywords: MFA, multifactor authentication, IBMid MFA, two-factor authentication, account MFA, time-based one-time passcode, TOTP, FIDO U2F, U2F, universal 2nd factor authentication, security key, reset MFA
 
@@ -108,5 +108,5 @@ You can update or reset your authentication methods if the email address or phon
 2. Validate your identity with two different verification methods.
 3. Click **Show accounts**.
 4. Take note of the Authentication setting for each account.
-   1. If the account uses MFA for **IBMid users**, work with the [IBMid help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: external} to reset your authentication factors.
+   1. If the account uses MFA for **IBMid users**, work with the [IBMid help desk](https://www.ibm.com/docs/en/ibmid){: external} to reset your authentication factors.
    1. If the account uses MFA for **All users**, you can add new authentication factors on the Verification methods and authentication factors page and remove the old ones.

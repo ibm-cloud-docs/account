@@ -185,8 +185,34 @@ toc:
           - topicgroup:
               label: Connecting resources over a private network
               topics:
-              - service-endpoints.md
-              - vrf-service-endpoint.md
+              - topicgroup:
+                  label: Managing notifications
+                  topics:
+                  - email.md
+                  - distribution_list.md
+                  - add_webhooks.md
+              - account_settings.md
+              - account-upgrade.md
+              - create-mult-accounts.md
+              - topicgroup:
+                  label: Updating account ownership
+                  topics:
+                    - transfer.md
+                    - owner-classic.md
+              - profile.md
+              - contact_info.md
+              - feature_codes.md
+              - signup-commit.md
+              - shell-settings.md
+              - topicgroup:
+                  label: Updating account settings for compliance
+                  topics:
+                  - eu-supported.md
+                  - financial-services-validated.md
+                  - hipaa-supported.md
+              - iam-policy-number.md
+              - iam-leave-account.md
+              - account-close.md
           - topicgroup:
               label: Migrating resources
               topics:

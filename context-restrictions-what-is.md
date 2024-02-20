@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2024
-lastupdated: "2024-01-05"
+lastupdated: "2024-02-19"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 
@@ -143,6 +143,7 @@ The following is a list of services that you can add to a network zone as a serv
 | {{site.data.keyword.secrets-manager_short}} | IAM-enabled | `secrets-manager` |
 | [VPC Infrastructure Services](/docs/vpc?topic=vpc-cbr&interface=cli#network-zone) | IAM-enabled | |
 | [{{site.data.keyword.bpshort}}](/docs/schematics?topic=schematics-access-control-cbr&interface=ui) | IAM-enabled | `schematics` |
+| [Toolchain](/docs/ContinuousDelivery?topic=ContinuousDelivery-pipeline-subnet-ranges) | IAM-enabled | `toolchain` |
 {: caption="Table 1. Services that are compatible with service references." caption-side="top"}
 
 In table 1, **All Account Management services** refers to the grouping of Account Management type services that are listed in the table. For example, if there are two Account Management services listed in table 1, **All Account Management services** includes those two services. As more Account Management services become available as service references, network zones that specify **All Account Management services** as a service reference automatically include the newly added account management services.

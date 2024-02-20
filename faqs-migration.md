@@ -1,10 +1,9 @@
 ---
 
 copyright:
+  years: 2020, 2024
 
-  years: 2020, 2021
-
-lastupdated: "2021-12-14"
+lastupdated: "2024-02-05"
 
 keywords: migration FAQs, data centers
 
@@ -16,21 +15,18 @@ content-type: faq
 
 {{site.data.keyword.attribute-definition-list}}
 
+# FAQs about migrating resources to a different data center
+{: #faqs-migrating-resources}
 
-#  FAQs about migrating resources to a different data center
-{: #faqs-dc-closure}
 
-FAQs about migrating resources between data centers might include questions about migration requirements, timing, gathering information about your current or new configuration.
-{: shortdesc}
-
-##  Why am I required to migrate my resources?
+## Why am I required to migrate my resources?
 {: #dc-required-move}
 {: faq}
 
-To continue bringing you the best service, hardware, and connectivity, data centers are continually evaluated to ensure that they meet networking, electrical, and other infrastructure standards. The [closing data centers](/docs/get-support?topic=get-support-dc-closure) no longer meet the ongoing standards.
+To continue bringing you the best service, hardware, and connectivity, data centers are continually evaluated to ensure that they meet networking, electrical, and other infrastructure standards. Data centers that no longer meet ongoing standards are consolidated. For more information, see [Data center migrations](/docs/get-support?topic=get-support-dc-closure).
 
 
-## Do I need to be fully migrated on the date my data center is closed?
+## Do I need to be fully migrated on the date my data center is consolidated?
 {: #dc-fully-migrated}
 {: faq}
 
@@ -84,16 +80,17 @@ In general, you need to understand which specific resources within the system ar
 
 Most operating systems provide tools that you can use to understand the utilization of your system, for example, vmstat and iostat on Linux or Windows System Performance Monitor. Performance monitoring and tuning is something that you might invest significant time and effort in.
 
-For more information, contact the [Client Success team](https://www.ibm.com/cloud/data-centers/?focusArea=WCP%20-%20Pooled%20CSM&contactmodule){: external}.
+For more information, contact the [Client Success team](https://www.ibm.com/cloud/data-centers?focusArea=WCP%20-%20Pooled%20CSM&contactmodule){: external}.
 
 
+<!--
 ## How do I compare old and new processors?
 {: #dc-compare-processor}
 {: faq}
 
 To compare the specifications of old and new Intel processors, go to [Intel processors product specifications page](https://ark.intel.com/content/www/us/en/ark.html#@Processors){: external}. Newer processors tend to have more processor cores and typically run at slower clock speeds than older variants.
 
-If you have a workload that is processor-bound, meaning that the performance is limited by the speed of the processor, choose a processor that has fewer cores and a higher clock speed. If you run many workloads that aren't constrained by processor speed, choose a processor with more cores and a similar, or slower, clock speed.
+If you have a workload that is processor-bound, meaning that the performance is limited by the speed of the processor, choose a processor that has fewer cores and a higher clock speed. If you run many workloads that aren't constrained by processor speed, choose a processor with more cores and a similar, or slower, clock speed.-->
 
 
 ## How do I choose my new operating system?
@@ -102,7 +99,7 @@ If you have a workload that is processor-bound, meaning that the performance is 
 
 Compatibility and functionality are two of the main influencers when you choose a new operating system. Older versions of operating systems can present challenges with migration. Installation media might not be compatible and the server hardware might not be supported by the older operating system. The best course of action is to compare specs and ensure that the operating system is compatible. You must verify that the necessary development tools and operating system or middleware functions are available on the new platform. In general, Linux type systems are better at supporting older applications on newer versions of the operating system than Windows.
 
-For more information, contact the [Client Success team](https://www.ibm.com/cloud/data-centers/?focusArea=WCP%20-%20Pooled%20CSM&contactmodule){: external}.
+For more information, contact the [Client Success team](https://www.ibm.com/cloud/data-centers?focusArea=WCP%20-%20Pooled%20CSM&contactmodule){: external}.
 
 
 ## What bandwidth do I get with my new configuration?
