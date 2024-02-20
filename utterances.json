@@ -61,13 +61,9 @@
     "am I able to move orgs between accounts"
   ],
   "whichregions": [
-    "what regions are available for Cloud Foundry",
     "what CF regions can I use",
-    "can Cloud Foundry use all regions",
-    "which regions are there for Cloud Foundry",
     "where can I manage my location",
     "change my region settings",
-    "Cloud Foundry regions",
     "change region",
     "change location",
     "not change the location in a lite account",
@@ -161,8 +157,7 @@
     "billable account to create two resource groups",
     "organization limits",
     "resource group limits",
-    "what are the limits of orgs and spaces",
-    "cloud foundry space limits"
+    "what are the limits of orgs and spaces"
   ],
   "changeacct": [
     "upgrade my account type",
@@ -681,7 +676,6 @@
     "can't create an org",
     "unable to create new org",
     "no option to create org",
-    "can't create a cloud foundry org",
     "why can't I create a CF org",
     "how to create organization",
     "how to create org",
@@ -1050,7 +1044,6 @@
       "how to give a user access to a resource group"
   ],
   "instance-migrated": [
-    "migrate my Cloud Foundry instances to my resource group",
     "services to a resource group migration",
     "migrating my CF services to resource group",
     "migrate my CF instance to a resource group",
@@ -1151,7 +1144,6 @@
   "iam-access": [
     "What access do I have",
     "access groups I can access",
-    "see my Cloud Foundry access",
     "find out what access i have",
     "do I have IAM access",
     "Our account owner set up my account and asked me to find out why I don't have full access to everything",

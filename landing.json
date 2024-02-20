@@ -26,21 +26,6 @@
   ],
   "section_videos": [
     {
-      "title": "IBM Cloud Console Guide: Getting Access - Role Overview",
-      "href": "/docs/account?topic=account-cloudaccess#watch-iamaccess",
-      "thumbnail": "/images/landing-Getting-Access-Role-Overview.png"
-    },
-    {
-      "title": "IBM Cloud Console Guide: Inviting Users to an Account",
-      "href": "/docs/account?topic=account-iamuserinv#watch-iam-invite",
-      "thumbnail": "/images/landing-Inviting-Users-to-an-Account.png"
-    },
-    {
-      "title": "IBM Cloud Console Guide: Setting up Access Groups",
-      "href": "/docs/account?topic=account-groups#watch-accessgroups",
-      "thumbnail": "/images/landing-Setting-up-Access-Groups.png"
-    },
-    {
       "title": "Controlling access by using tags in IBM Cloud",
       "href": "/docs/account?topic=account-account_setup",
       "thumbnail": "/images/landing-Controlling-access-by-using-tags.png"

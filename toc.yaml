@@ -101,7 +101,6 @@
                   - iam-public_access.md
                   - iam-mnginfra.md
                   - iam-migrated_permissions.md
-                  - iam-mngcf.md
                   - iam-authorizations.md
                   - iam-cbr.md
                   - iam-audit-policies.md
@@ -181,7 +180,6 @@
                   label: Connecting resources to apps
                   topics:
                   - connect_external_app.md
-                  - s2s.md
                   - connecting_apps.md
                   - service_credentials.md
               - topicgroup:
@@ -192,7 +190,6 @@
               - topicgroup:
                   label: Migrating resources
                   topics:
-                  - instance_migration.md
                   - data-center-migration.md
               - topicgroup:
                   label: Working with software
@@ -280,11 +277,6 @@
               - iam-policy-number.md
               - iam-leave-account.md
               - account-close.md
-          - topicgroup:
-              label: Managing orgs and spaces
-              topics:
-              - orgs_spaces.md
-              - manageorg.md
           - topicgroup:
               label: Logging and monitoring
               topics:
@@ -417,7 +409,6 @@
               - ts-inactive-account.md
               - ts-rscs-reactivate-upgrade-suspended.md
               - ts-add-usersorg.md
-              - ts-space-org.md
               - ts-admin-org.md
               - ts-add-cc.md
               - ts-upgrade.md
@@ -448,7 +439,6 @@
               - ts-rscs-delete.md
               - ts-rscs-migrate-all.md
               - ts-rscs-migrate-rg.md
-              - ts-rscs-migrate-cf.md
               - ts-swinstance-unavail.md
               - ts-unsupported-registry.md
               - include: ../sell/ts-repo-upload.md

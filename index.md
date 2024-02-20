@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2024
-lastupdated: "2024-01-19"
+lastupdated: "2024-01-25"
 
-keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, commitment, commit model, savings plan, enterprise savings plan
+keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, savings plan, enterprise savings plan
 
 subcollection: account
 
@@ -40,7 +40,7 @@ The following table provides a comparison of Trial, Pay-As-You-Go, and Subscript
 {: caption="Table 1. Comparison of {{site.data.keyword.cloud_notm}} accounts" caption-side="top"}
 {: summary="This table has row and column headers. The row headers identify the feature. The column headers identify the account type. To understand which features apply to the account types, navigate to the row, and find the feature that you're interested in."}
 
-New accounts as of 25 October 2021 are created as Pay-As-You-Go or Subscription accounts. You're asked to provide credit card information for identity verification or a code for a purchased subscription. If you created an account before this date, you might be using a [Lite account](#liteaccount) and Lite pricing plans, which aren't affected by the recent account registraton update.
+New accounts as of 25 October 2021 are created as Pay-As-You-Go or Subscription accounts. You're asked to provide credit card information for identity verification or a code for a purchased subscription. If you created an account before this date, you might be using a [Lite account](#liteaccount) and Lite pricing plans, which aren't affected by the recent account registration update.
 {: note}
 
 ## Trial account
@@ -142,5 +142,5 @@ Check out the following list of key features that are available in a Lite accoun
 * After 10 days of no development activity, your apps go to sleep. You can wake up your apps by continuing to work on them.
 * After 30 days of no development activity, your service instances with Lite plans are deleted.
 
-Only Lite accounts created before 12 August 2021 can use 186 GBH of free buildpacks and Cloud Foundry apps with up to 256 MB of free instantaneous runtime memory per month. The use of one org in one {{site.data.keyword.cloud_notm}} region is supported.
+Only Lite accounts created before 12 August 2021 can use 186 GBH of free buildpacks per month.
 {: note}

@@ -3,7 +3,9 @@
 copyright:
 
   years: 2015, 2024
+
 lastupdated: "2024-02-19"
+
 
 keywords: service key, api key, bind, credential
 
@@ -211,36 +213,7 @@ Use the following steps to add a crednetial when binding an IAM-enabled service:
       ```
       {: pre}
 
-## Adding a credential when binding a Cloud Foundry service
-{: #cf_credential-ui}
-{: ui}
 
-Cloud Foundry services can generate a service key, also known as a credential. Credentials are service-specific and vary based on how each service defines the credentials they need to generate. A service credential might contain a user name, password, host name, port, and a URL.
-
-However, the contents of each credential is unique to the service that generates it. Some services might generate extra data that requires parameters to be passed in. For example, a service might require you to input a language parameter to set the default language that is returned in the service key that is generated.
-
-Complete the following steps to add a Cloud Foundry credential:
-
-1. From the service details page, select the Credentials tab, and click **New Credential**.
-2. From the Add New Credential dialog, provide a **Name**.
-3. Optionally, you can provide more parameters as a valid JSON object that contains service-specific configuration parameters, provided either inline or in a file.
-
-   Most services don't require extra parameters, and for services that do, each service defines its own unique list of parameters. For a list of supported configuration parameters, see the documentation for the particular service offering.
-   {: note}
-
-4. Click **Add** to generate the new service credential.
-
-## Adding a credential when binding a Cloud Foundry service by using the API
-{: #cf_credential-api}
-{: api}
-
-Service credential bindings are used to make the details of the connection to a service instance available to an app or a developer. Service credential bindings can be of type `app` or `key`.
-
-A service credential binding is of type `app` when it is a binding between a [service instance](http://v3-apidocs.cloudfoundry.org/version/3.99.0/index.html#service-instances){}: external} and an [application](http://v3-apidocs.cloudfoundry.org/version/3.99.0/index.html#apps){: external}. Not all services support this binding, as some services deliver value to users directly without integration with an application. Field `broker_catalog.features.bindable` from [service plan](http://v3-apidocs.cloudfoundry.org/version/3.99.0/index.html#the-service-plan-object){: external} of the service instance can be used to determine if it is bindable.
-
-A service credential binding is of type `key` when it retrieves only the details of the service instance and makes them available to the developer.
-
-To create a service credential binding, call the [Cloud Foundry API](http://v3-apidocs.cloudfoundry.org/version/3.99.0/index.html#create-a-service-credential-binding){: external} as shown in the following examples.
 
 ### Example request to create an app credential binding
 {: #app-cred-binding-api}

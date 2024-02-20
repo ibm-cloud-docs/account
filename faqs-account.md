@@ -2,7 +2,9 @@
 
 copyright:
   years: 2015, 2024
+  
 lastupdated: "2024-02-19"
+
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -125,6 +127,7 @@ If there's any way that we can assist you before you decide to close your accoun
 To close a Pay-As-You-Go or Subscription account, you need to cancel all services, devices, and billing items, and then create a support case. A support case is required for account security and documentation purposes. For steps and more information, see [Closing an account](/docs/account?topic=account-account-close).
 
 To close a Lite account, go to the [Account settings](/account/settings) page, and click **Close account**. After an account is closed for 30 days, all data is deleted and all services are removed.
+
 
 
 ## Can I log in to the console with my SoftLayer ID?
@@ -387,11 +390,6 @@ By maintaining the original version of the default dashboard, you can discover t
 
 You can also switch between the duplicate and original versions by selecting each one from your list of dashboards that's displayed on your active dashboard.
 
-## Can I move an org to another account?
-{: #move-org-diff-account}
-{: faq}
-
-Currently, you can't move an org to a different account. However, you can re-create the org with the same credentials in a different account to mimic this functions. For more information, see [Adding orgs and spaces](/docs/account?topic=account-orgsspacesusers#createorg).
 
 ## Why do I get logged out of my account?
 {: #user-session-log-out}
