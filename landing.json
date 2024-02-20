@@ -13,7 +13,6 @@
       "description": "Learn about the differences between Trial, Pay-As-You-Go, and Subscription account types.",
       "href": "/docs/account?topic=account-accounts"
     },
-    "section_recommended": [
       {
       "title": "Setting up your IBM Cloud account",
       "description": "Learn how to set up account authentication, manage your account settings, effectively organize resources in your account, and control access to resources.",
@@ -67,47 +66,15 @@
         "description": "You can now create a single IAM policy that grants access based on multiple resource attribute-based conditions."
       },
       {
-        "title": "Assigning access to resources",
-        "description": "Get up and running quickly with IBM Cloud Identity and Access Management (IAM) by setting up access groups for quick access assignments, inviting users to your account, and managing their access.",
-        "href": "/docs/account?topic=account-access-getstarted"
-      }
-    ],
-    "section_videos": [
-      {
-        "title": "Controlling access by using tags in IBM Cloud",
-        "href": "/docs/account?topic=account-account_setup",
-        "thumbnail": "/images/landing-Controlling-access-by-using-tags.png"
+        "date": "17 November 2023",
+        "title": "Protect your private catalog and private products",
+        "description": " Add an extra layer of protection to your private catalogs with context-based restrictions. Users can view the catalogs that you protect only if they satisfy your rule."
       },
       {
-        "title": "Introducing IBM Cloud trusted profiles",
-        "href": "/docs/account?topic=account-iamoverview&interface=ui#trusted-profiles-feature-fedusers",
-        "thumbnail": "/images/landing-Trusted-profiles.png"
+        "date": "26 October 2023",
+        "title": "Symantec VIP 2FA is deprecated",
+        "description": " If you are currently using Symantec VIP as your external authentication method, you can continue to use it and add subscribers as needed until 24 October 2024. If you are not already using Symantec VIP, then you can't purchase Symantec VIP to use as your external authentication method as of 24 October 2023. All customers currently using Symantec VIP must migrate to IBM Cloud MFA by 24 October 2024."
       }
-    ],
-    "section_learn": {
-      "developer": "https://developer.ibm.com/depmodels/cloud/gettingstarted/",
-      "architecture": "https://www.ibm.com/cloud/architecture/architectures/public-cloud",
-      "training": "https://www.ibm.com/training/cloud",
-      "community": "https://community.ibm.com/community/user/cloud/home"
-    },
-    "section_updates": {
-      "view_more": "/docs/overview?topic=overview-whatsnew",
-      "tiles": [
-        {
-          "date": "06 December 2023",
-          "title": "Limit access with resource attribute-based conditions",
-          "description": "You can now create a single IAM policy that grants access based on multiple resource attribute-based conditions."
-        },
-        {
-          "date": "17 November 2023",
-          "title": "Protect your private catalog and private products",
-          "description": " Add an extra layer of protection to your private catalogs with context-based restrictions. Users can view the catalogs that you protect only if they satisfy your rule."
-        },
-        {
-          "date": "26 October 2023",
-          "title": "Symantec VIP 2FA is deprecated",
-          "description": " If you are currently using Symantec VIP as your external authentication method, you can continue to use it and add subscribers as needed until 24 October 2024. If you are not already using Symantec VIP, then you can't purchase Symantec VIP to use as your external authentication method as of 24 October 2023. All customers currently using Symantec VIP must migrate to IBM Cloud MFA by 24 October 2024."
-        }
-      ]
-    }
+    ]
   }
+}
