@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2024-02-19"
+lastupdated: "2024-02-20"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -7310,6 +7310,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `quantum-computing.device.read` | Read information about a quantum device | Manager, Reader |
 | `quantum-computing.user.logout` | Clears authorization cache | Manager, Reader, Writer |
 | `quantum-computing.job.update` | Update a job. | Manager, Writer |
+| `quantum-computing.session.read` | Read session details. | Manager, Reader |
+| `quantum-computing.session.update` | Update a session. | Manager, Writer |
 | `quantum-computing.instance.configuration.read` | Instance configuration read | Manager |
 | `quantum-computing.instance.configuration.update` | Instance configuration update | Manager |
 | `quantum-computing.instance.usage.read` | Instance usage read | Manager, Reader, Writer |
