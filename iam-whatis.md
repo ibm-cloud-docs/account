@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2023
+  years: 2017, 2024
 
-lastupdated: "2023-12-19"
+lastupdated: "2024-02-21"
 
 keywords: what is IAM, IAM features, IAM API, how IAM works
 
@@ -62,7 +62,7 @@ Automatically grant federated users access to your account with conditions based
 #### Federated users
 {: #trusted-profiles-feature-fedusers}
 
-Your users might already have identities outside of {{site.data.keyword.cloud_notm}} in your corporate directory. If your users need to work with {{site.data.keyword.cloud_notm}} resources or work with applications that access those resources, then those users also need {{site.data.keyword.cloud_notm}} credentials. You can use a trusted profile to specify permissions for users whose identity is federated from your organization or an external IdP. By using your IdP, you can provide a way for users in your company to use single sign-on (SSO). To connect your federated users with {{site.data.keyword.cloud_notm}} resources, see [Federating users to {{site.data.keyword.cloud_notm}}](/docs/account?topic=account-identity-overview#iam-identities-include-federation-iam).
+Your users might already have identities outside of {{site.data.keyword.cloud_notm}} in your corporate directory. If your users need to work with {{site.data.keyword.cloud_notm}} resources or work with applications that access those resources, then those users also need {{site.data.keyword.cloud_notm}} credentials. You can use a trusted profile to specify permissions for users whose identity is federated from your organization or an external IdP. By using your IdP, you can provide a way for users in your company to use single sign-on (SSO). To connect your federated users with {{site.data.keyword.cloud_notm}} resources, see [Federating users to {{site.data.keyword.cloud_notm}}](/docs/account?topic=account-identity-overview#federation-iam).
 
 ![Introducing IBM Cloud trusted profiles](https://www.youtube.com/embed/O4JRWi9P5Xo){: video output="iframe" data-script="#video-transcript-tp" id="youtubeplayer" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
 

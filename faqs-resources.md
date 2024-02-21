@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2024
 
-lastupdated: "2024-02-05"
+lastupdated: "2024-02-21"
 
 keywords: resource FAQs, resource frequently asked questions, resource group, resource list, dashboard widget
 
@@ -129,7 +129,7 @@ A resource restoration can fail if you try to restore a resource in a deleted re
 {: #reclamation-list}
 {: faq}
 
-After the instance is deleted from the console, you can view it in your account by using the CLI in the SCHEDULED state. The SCHEDULED state indicates that this instance is scheduled for reclamation. For more information, see [Working with resources and resource groups](/docs/account?topic=account-ibmcloud_commands_resource#command-options-37).
+After the instance is deleted from the console, you can view it in your account by using the CLI in the SCHEDULED state. The SCHEDULED state indicates that this instance is scheduled for reclamation. For more information, see [Working with resources and resource groups](/docs/account?topic=account-ibmcloud_commands_resource).
 
 ## Can you restore a resource that is in a deleted resource group?
 {: #reclamation-delete}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2024
-lastupdated: "2024-02-19"
+lastupdated: "2024-02-21"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 
@@ -121,7 +121,7 @@ The following is a list of services that you can add to a network zone as a serv
 | IAM Access Groups Service  | Account Management | `iam-groups` |
 | IAM User Management | Account Management | `user-management` |
 | [{{site.data.keyword.at_short}}](/docs/activity-tracker?topic=activity-tracker-cbr) | IAM-enabled |  `logdnaat` |
-| [{{site.data.keyword.appconfig_short}}](/docs/app-configuration?topic=app-configuration-ac-access-control-cbr) | IAM-enabled |  `apprapp` |
+| [{{site.data.keyword.appconfig_short}}](/docs/app-configuration?topic=app-configuration-ac-restrict-access-cbr) | IAM-enabled |  `apprapp` |
 | Catalog Management Service | IAM-enabled | `globalcatalog-collection` |
 | Cloud {{site.data.keyword.block_storage_is_short}} | IAM-enabled | |
 | [Cloud {{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-setting-a-firewall) | IAM-enabled | `cloud-object-storage` |
@@ -222,7 +222,7 @@ You can create context-based restrictions for the following services if you are 
 | IAM Identity Service  | Account Management | No | `iam-identity`|
 | IAM User Management | Account Management | No | `user-management` |
 | [{{site.data.keyword.at_short}}](/docs/activity-tracker?topic=activity-tracker-cbr) | IAM-enabled | Yes | `logdnaat` |
-| [{{site.data.keyword.appconfig_short}}](/docs/app-configuration?topic=app-configuration-ac-access-control-cbr) | IAM-enabled | No | `apprapp` |
+| [{{site.data.keyword.appconfig_short}}](/docs/app-configuration?topic=app-configuration-ac-restrict-access-cbr) | IAM-enabled | No | `apprapp` |
 | [Cloud {{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-setting-a-firewall) | IAM-enabled | No | `cloud-object-storage` |
 | [{{site.data.keyword.codeengineshort}}](/docs/codeengine?topic=codeengine-cbr) | IAM-enabled | No | `codeengine` |
 | [{{site.data.keyword.registryshort}}](/docs/Registry?topic=Registry-iam&interface=ui#iam_cbr) | IAM-enabled | No | `container-registry` |
