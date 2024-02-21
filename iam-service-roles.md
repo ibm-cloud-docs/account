@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2024-02-20"
+lastupdated: "2024-02-21"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -7245,6 +7245,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `project.notifications.retrieve` | The ability to view project notifications. | Administrator, Editor, Operator, Viewer |
 | `project.event-notifications.retrieve` | The ability to view a Project and Event Notifications integration. | Administrator, Editor, Operator, Viewer |
 | `project.event-notifications.delete` | The ability to delete a Project and Event Notifications integration. | Administrator |
+| `project.config.manual-tag` | The ability to add tags to manually created resource. | Administrator, Editor |
 {: caption="Table 138. Service actions - Project" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="project"}
