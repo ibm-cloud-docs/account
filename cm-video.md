@@ -32,7 +32,7 @@ When you're ready, head over to [Catalog management](/content-mgmt/overview){: e
 ## Watch and learn
 {: #watch-and-learn-cm}
 
-![Catalog management on {{site.data.keyword.cloud_notm}}](https://www.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&entry_id=1_i5c2d4fx){: video output="iframe" data-script="#video-transcript-cm" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
+![Catalog management on {{site.data.keyword.cloud_notm}}](https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_i5c2d4fx?wid=_1773841&iframeembed=true&entry_id=1_i5c2d4fx){: video output="iframe" data-script="#video-transcript-cm" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
 
 ## Video transcript
 {: #video-transcript-cm}
