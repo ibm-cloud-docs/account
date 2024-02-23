@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2024-02-22"
+lastupdated: "2024-02-23"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1741,6 +1741,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `POST /v4/:platform/deployments/:deployment_id/groups/:group_id/schedule_scaling` | Update scheduled scaling | Administrator, Editor, Operator |
 | `DELETE /v4/:platform/deployments/:deployment_id/groups/:group_id/schedule_scaling` | Delete scheduled scaling | Administrator, Editor, Operator |
 | `PATCH /v4/:platform/deployments/:deployment_id/switch_license` | switch license type or term | Administrator, Editor, Operator |
+| `POST /v4/:platform/deployments/:deployment_id/db2audit/install_v3` | Install Db2 audit v3 | Administrator, Editor, Operator |
+| `GET /v4/:platform/deployments/:deployment_id/db2audit/version` | Retrieve Db2 audit version | Administrator, Editor, Operator, Viewer |
+| `GET /v4/:platform/deployments/:deployment_id/db2audit/alias` | Retrieve Db2 audit storage alias | Administrator, Editor, Operator, Viewer |
 {: caption="Table 33. Service actions - Db2 Warehouse" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="dashdb"}
@@ -7977,7 +7980,7 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role.  You are a member of every Sysdig Team with administrative permissions and are able to create, delete and configure all team definitions. |
 | Reader | As a reader, you have read access to the environment within the defined Sysdig Team scope, but cannot create, edit or delete dashboards, alerts or other content. |
-| Supertenant Metrics Publisher | This role permits IBM services to publish platform metrics to Sysdig |
+| Supertenant Metrics Publisher | This role permits IBM services to publish platform metrics to your account |
 | Writer | As a writer, you have read and write access to the environment within the defined Sysdig Team scope and can create, edit and delete dashboards, alerts and other content. |
 {: row-headers}
 {: caption="Table 155. Service roles - IBM Cloud Monitoring with Sysdig" caption-side="top"}
