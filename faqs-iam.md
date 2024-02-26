@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2024
-lastupdated: "2024-02-21"
+lastupdated: "2024-02-26"
 
 keywords: frequently asked questions, iam faqs, administrator, administrator role
 
@@ -313,7 +313,7 @@ To create a user API key, your IAM ID and the IAM ID of the user that's requesti
 To check whether a user qualifies to apply a trusted profile by using the IBMid identity provider (IdP), the user and the administrator must complete specific steps.
 
 
-1. The user must go to [{{site.data.keyword.cloud_notm}} User Claims](https://iam.cloud.ibm.com/identity/claims).
+1. The user must go to [{{site.data.keyword.cloud_notm}} User Claims](https://identity-2.us-south.iam.cloud.ibm.com/identity/claims?realm_id=IBMid){: external}.
 1. From here, the claims are displayed.
 1. The user must provide the claims to the administrator.
 1. As the administrator, compare the claims of the user with the conditions set for the trusted profile. To view the conditions for a trusted profile, go to **Manage** > **Access (IAM)** > **Trusted profiles** in the {{site.data.keyword.cloud_notm}} console.

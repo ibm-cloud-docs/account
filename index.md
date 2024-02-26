@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2024
-lastupdated: "2024-01-25"
+lastupdated: "2024-02-26"
 
 keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, savings plan, enterprise savings plan
 
@@ -100,7 +100,7 @@ Support subscription credit is separate from any platform or service subscriptio
 
 Service bundle subscriptions give you access and credit toward a set of services within a particular domain that are targeted for popular use cases. You can choose from service bundles that span AI, analytics, {{site.data.keyword.blockchainfull_notm}}, Internet of Things (IoT), and cloud-native services. If your needs cross multiple domains, you can purchase multiple service bundle subscriptions.
 
-You can add services bundles to any type of existing account, including Lite accounts. Service bundle subscriptions are subject to the [{{site.data.keyword.cloud_notm}} Terms of Use](/docs/overview/terms-of-use?topic=overview-terms).
+You can add services bundles to any type of existing account, including Lite accounts. Service bundle subscriptions are subject to the [{{site.data.keyword.cloud_notm}} Terms of Use](/docs/overview?topic=overview-terms).
 
 Service bundle subscriptions aren't available through the {{site.data.keyword.cloud_notm}} console. To learn more and purchase a service bundle, contact [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external}.
 {: tip}
