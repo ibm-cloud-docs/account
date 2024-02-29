@@ -33,12 +33,14 @@ The following table provides a comparison of Trial, Pay-As-You-Go, and Subscript
 | Access to all Free plans           | ![Feature available](../icons/icon_enabled.svg) |   ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | Access to the full {{site.data.keyword.cloud_notm}} catalog |        | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | Fit for production use cases      |        |     ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg)|
-| Available for enterprise account hierarchy        |        |        | ![Feature available](../icons/icon_enabled.svg) |
+| Available for enterprise account hierarchy        |        |    ![Feature available](../icons/icon_enabled.svg) [^tabletext]   | ![Feature available](../icons/icon_enabled.svg) |
 | Invoiced on monthly consumption       |        |     ![Feature available](../icons/icon_enabled.svg) |                     |
 {: row-headers}
 {: class="comparison-table"}
 {: caption="Table 1. Comparison of {{site.data.keyword.cloud_notm}} accounts" caption-side="top"}
 {: summary="This table has row and column headers. The row headers identify the feature. The column headers identify the account type. To understand which features apply to the account types, navigate to the row, and find the feature that you're interested in."}
+
+[^tabletext]: Pay-As-You-Go accounts that sign up with a credit card on cloud.ibm.com can create an enterprise.
 
 New accounts as of 25 October 2021 are created as Pay-As-You-Go or Subscription accounts. You're asked to provide credit card information for identity verification or a code for a purchased subscription. If you created an account before this date, you might be using a [Lite account](#liteaccount) and Lite pricing plans, which aren't affected by the recent account registration update.
 {: note}
