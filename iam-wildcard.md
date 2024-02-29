@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2019, 2023
+  years: 2019, 2024
 
-lastupdated: "2023-06-06"
+lastupdated: "2024-02-29"
 
 keywords: access, users, service IDs, access group, IAM, policy, characters, wildcard, operators, asterisk, question mark, *, ?, JSON document, policy document
 
@@ -25,8 +25,7 @@ To assign access, you need the administrator role on the resource. For more info
 ## JSON policy document
 {: #policy-js}
 
-Most access policies are stored in {{site.data.keyword.cloud}} as JSON documents. When you use the `stringEquals` operator in a policy, an exact string match is performed between the query and the target string. When you use the `stringMatch` operator, a case-sensitive string match is performed between the pattern and the target string using either an asterisk (`*`), question mark (`?`), or both. An asterisk (`*`) represents any sequence of zero or more characters in the string, and a question mark (`?`) represents any single character. See the following examples:
-
+Most access policies are stored in {{site.data.keyword.cloud}} as JSON documents. When you use the `stringEquals` operator in a policy, an exact string match is performed between the query and the target string. When you use the `stringMatch` operator, a case-sensitive string match is performed between the pattern and the target string using either an asterisk (`*`), question mark (`?`), both, or literal values. An asterisk (`*`) represents any sequence of zero or more characters in the string, and a question mark (`?`) represents any single character. See the following examples:
 * `*dev*` matches any string that contains `dev`
 * `dev*` matches any string that begins with `dev`
 * `*dev` matches any string that ends with `dev`
@@ -194,6 +193,25 @@ The following example shows how you can create a policy that gives a user access
 
 On the line `"value": "dev-topic-{{*}}-{{?}}.?.log"`, the `{{*}}` indicates the character `*` and the `{{?}}` indicates the character `?`. Therefore, a topic such as `dev-topic-*-?.1.log` matches this pattern.
 
+The following two examples represent the same evaluation where a case-sensitive string comparison of `dev*` is performed.
+
+```json
+{
+    "name": "resource",
+    "operator": "stringMatch",
+    "value": "dev{{*}}"
+}
+```
+{: codeblock}
+
+```json
+{
+    "name": "resource",
+    "operator": "stringEquals",
+    "value": "dev*"
+}
+```
+{: codeblock}
 
 ## String comparisons
 {: #string-comparisons}
