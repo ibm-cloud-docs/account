@@ -66,7 +66,7 @@ Complete the following steps to define which federated users can access specific
    1. Define the session duration for how long a user can apply the profile before they must reauthenticate.
 
 1. Click **Continue**.
-1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
+1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile&interface=ui#tp-access).
 1. Or, click **Create** without assigning any access.
 
 For more information about the fields that are used to create conditions for trusted profiles, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
@@ -94,7 +94,7 @@ Complete the following steps to set up better control over granting access to co
    1. If you select **Specific resources**, you can establish trust with one or more existing compute resource instances directly without conditions. For example, a Kubernetes cluster.
 
 1. Click **Continue**.
-1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
+1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile&interface=ui#tp-access).
 1. Or, click **Create** without assigning any access.
 
 For more information about the fields that are used to create conditions for trusted profiles, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
@@ -137,7 +137,7 @@ Complete the following steps to define how an {{site.data.keyword.cloud_notm}} s
    {: note}
 
 1. Click **Continue**.
-1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
+1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile&interface=ui#tp-access).
 1. Or, click **Create** without assigning any access.
 
 ## Establishing trust with service IDs in the console
@@ -162,7 +162,7 @@ You can use trusted profiles to give a service ID cross-account access and acces
    1. Select **Service IDs**
    1. Enter the service ID value that the administrator provided to you.
 1. Click **Continue**.
-1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access).
+1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile&interface=ui#tp-access).
 1. Or, click **Create** without assigning any access.
 
 Service IDs are static identities that don't use conditions to establish trust. Instead, you establish trust by using the ID value from the service ID's metadata to create a direct link with the trusted entity.
@@ -395,7 +395,7 @@ Complete the following steps to define which federated users can access specific
    There is a limit of 20 claim rules per trusted profile.
    {: note}
 
-1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access-api).
+1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile&interface=api#tp-access-api).
 
 ## Establishing trust with compute resources with the API
 {: #create-profile-compute-api}
@@ -457,7 +457,7 @@ Complete the following steps to set up better control over granting access to co
       ```
       {: codeblock}
 
-1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access-api).
+1. (Optional) [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile&interface=api#tp-access-api).
 
 ## Assigning access to the trusted profile by using the API
 {: #tp-access-api}
