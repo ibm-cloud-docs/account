@@ -81,7 +81,7 @@ Usually, for a user to take an action on a resource within an account, that iden
 
 Similarly, instead of creating a service ID, generating an API key, and getting the application to store and validate that key, you can create [trusted profiles for compute resources](/docs/account?topic=account-create-trusted-profile) to define fine-grained authorization for all applications that are running in a compute resource. Compute resources become identities when used as part of a trusted profile. Trust with compute resources is established by conditions based on resource attributes, or creating a direct link to a specific resource.
 
-You can also [establish trust with {{site.data.keyword.cloud_notm}} services](/docs/account?topic=account-create-trusted-profile#create-profile-services) that need to run an operation in your account. Or, use trusted profiels to give a [service ID](/docs/account?topic=account-create-trusted-profile#create-profile-serviceid) from another account access in your account.
+You can also [establish trust with {{site.data.keyword.cloud_notm}} services](/docs/account?topic=account-create-trusted-profile&interface=ui#create-profile-services) that need to run an operation in your account. Or, use trusted profiels to give a [service ID](/docs/account?topic=account-create-trusted-profile&interface=ui#create-profile-serviceid) from another account access in your account.
 
 ## Resource identities
 {: #resources-bestpract}
