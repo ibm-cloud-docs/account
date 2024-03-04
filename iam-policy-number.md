@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-11-22"
+  years: 2020, 2024
+lastupdated: "2024-03-04"
 
 keywords: maximum limits, limits, maximum policies, check for limits, check policy number, increase policy limit, total number of account policies, increase account limit
 
@@ -16,7 +16,7 @@ subcollection: account
 # Increasing account limits
 {: #account-limits}
 
-Default maximum limits are set on entities in your account such as access policies, service IDs, trusted profiles, identity providers (IdPs), and API keys. However, specific use cases can require an extended limit and you must request an increase for your chosen entity. You must be the account owner or administrator for all account management services to check how many policies exist in the account.
+Default maximum limits are set on entities in your account such as access policies, service IDs, trusted profiles, identity providers (IdPs), and API keys. It is possible that specific use cases require an extended limit and you can request an increase for your chosen entity. You must be the account owner or administrator for all account management services to check how many policies exist in the account. However, requests to increase limits are reviewed on a case by case basis and there is no guarantee that an increase will be granted.
 {: shortdesc}
 
 To review the default limits for your account, see [Known issues and limitations](/docs/account?topic=account-known-issues#iam_limits).
@@ -47,7 +47,7 @@ You can request a limit increase for the chosen entities only if the following c
 ### Requesting a limit increase for different entities
 {: #request-limit-increase-entity}
 
-If you meet all of the previously listed criteria, you can request a limit increase for the chosen entities by submitting a support case in the [console](/unifiedsupport/cases/add){: external}. In the case, provide all of the following information. Each piece of information is required for the processing and approval of your request.
+If you meet all of the previously listed criteria, you can request a limit increase for the chosen entities by submitting a support case in the [console](/unifiedsupport/cases/add){: external}. In the case, provide all of the following information. Each piece of information is required for the processing of your request.
 
 * Case title of `Request to increase account <entity> limit`
 * The use case for the limit increase
@@ -55,9 +55,9 @@ If you meet all of the previously listed criteria, you can request a limit incre
 * Account ID
 * Note how many extra `<entities>` in the account are required
 
-When the request is approved, the limits for your account are changed.
+Then, your request is reviewed and you are notified of the outcome through the support case.
 
-You are notified of the update to your entity limits through the case.
+If the request is approved, the limits for your account are changed.
 {: note}
 
 
@@ -248,7 +248,7 @@ You can request a limit increase for the total number of policies and rules that
 IAM policies and context-based restrictions rules share a combined limit.
 {: note}
 
-If you meet all of the listed criteria, you can request a policy limit increase by submitting a support case in the [console](/unifiedsupport/cases/add){: external}. In the case, provide all of the following information. Each piece of information is required for processing and approval of your request.
+If you meet all of the listed criteria, you can request a policy limit increase by submitting a support case in the [console](/unifiedsupport/cases/add){: external}. In the case, provide all of the following information. Each piece of information is required for processingof your request.
 
 * Case title of `Request to increase account policy limit`
 * The use case for the extra policies
@@ -259,5 +259,5 @@ If you meet all of the listed criteria, you can request a policy limit increase 
 * If you are requesting an increase of policies with access management tags, note how many extra policies with access management tags are required
 * An estimate of when you expect or plan to create extra policies
 
-You are notified of the update to your policy limits through the case.
+Your request is then reviewed and you are are notified of the outcome through the case.
 {: note}
