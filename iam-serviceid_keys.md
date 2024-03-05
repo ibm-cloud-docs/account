@@ -63,7 +63,7 @@ ibmcloud iam service-api-key-create NAME (SERVICE_ID_NAME|SERVICE_ID_UUID) [-d, 
 ```
 {: codeblock}
 
-## Updating an API key for a service ID by using the cosole
+## Updating an API key for a service ID by using the console
 {: #update_service_key}
 {: ui}
 
