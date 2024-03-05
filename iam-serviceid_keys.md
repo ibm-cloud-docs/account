@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2024
-lastupdated: "2024-02-19"
+lastupdated: "2024-03-05"
 
 keywords: service ID, service ID API key, lock service ID API key, delete service ID API key
 
@@ -63,7 +63,7 @@ ibmcloud iam service-api-key-create NAME (SERVICE_ID_NAME|SERVICE_ID_UUID) [-d, 
 ```
 {: codeblock}
 
-## Updating an API key for a service ID by using the cosole
+## Updating an API key for a service ID by using the console
 {: #update_service_key}
 {: ui}
 
