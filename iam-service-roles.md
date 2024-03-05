@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2024-03-04"
+lastupdated: "2024-03-05"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1866,6 +1866,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `POST /hyperwarp_messages` | hyperwarp subscriber endpoint | Administrator, Editor, Operator |
 | `POST /v4/:platform/deployments/:deployment_id/hibernate` | Hibernate the target instance | Administrator, Editor, Operator |
 | `DELETE /v4/:platform/deployments/:deployment_id/hibernate` | Reactivate the target hibernating instance. | Administrator, Editor, Operator |
+| `GET /v4/:platform/deployments/:deployment_id/db2audit/version` | Retrieve Db2 audit version | Administrator, Editor, Operator, Viewer |
+| `GET /v4/:platform/deployments/:deployment_id/db2audit/alias` | Retrieve Db2 audit storage alias | Administrator, Editor, Operator, Viewer |
+| `POST /v4/:platform/deployments/:deployment_id/db2audit/install_v3` | Installs Db2 audit v3 | Administrator, Editor, Operator, Viewer |
 {: caption="Table 33. Service actions - Db2 on Cloud" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="dashdb-for-transactions"}
