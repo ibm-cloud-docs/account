@@ -146,7 +146,7 @@ The format of the response is represented in JSON.
             ...
             "last_modified_at": "2021-04-09T14:36:30.505Z",
             "last_modified_by_id": "IBMid-310000JVN5",
-            "last_permit_at": null,       <-- IAM has no record of this policy ever granting a permit decision
+            "last_permit_at": null,       <-- IAM has no record of this policy ever granting a permit decision. This will be reset when this policy is deleted.
             "last_permit_frequency": 0,
             "state": "active"
         },
@@ -340,8 +340,8 @@ You found out that a policy that was recently deleted is needed. In that case, y
                 ...
                 "last_modified_at": "2019-05-09T15:28:07.045Z",
                 "last_modified_by_id": "IAM",
-                "last_permit_at": "2021-04-20T19:45:44.058Z",
-                "last_permit_frequency": 137,
+                "last_permit_at": null,
+                "last_permit_frequency": 0,
                 "state": "deleted"  <-- deleted policy
             },
     ...
