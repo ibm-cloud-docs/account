@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2024-03-21"
+lastupdated: "2024-03-22"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -727,6 +727,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Object Reader | As an Object Reader, one can read objects in the bucket. |
 | Object Writer | As an Object Writer, one can only write objects to a bucket. |
 | Reader | As a Reader, one can view bucket configuration and download the objects in the bucket. |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a Writer, one can create/modify/delete buckets. In addition, one can upload and download the objects in the bucket. |
 {: row-headers}
 {: caption="Table 16. Service roles - Cloud Object Storage" caption-side="top"}
@@ -820,6 +821,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloud-object-storage.object.post_legal_hold` | Add a legal hold to an object. | Manager, Writer |
 | `cloud-object-storage.object.get_legal_hold` | View any legal holds on an object. | Manager, Reader, Writer |
 | `cloud-object-storage.object.post_extend_retention` | Extend a retention policy. | Manager, Writer |
+| `cloud-object-storage.cip.read` | Internal use only - unsupported for users. | Service Configuration Reader |
 | `cloud-object-storage.bucket.put_quota` | Set a hard quota on a bucket. | Manager |
 | `cloud-object-storage.bucket.get_quota` | Read a bucket's hard quota. | Manager, Writer |
 | `cloud-object-storage.object.copy_get_version` | Copy (read) a version of an object from one bucket to another. | Content Reader, Manager, Object Reader, Reader, Writer |
