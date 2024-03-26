@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-10-10"
+  years: 2022, 2024
+lastupdated: "2024-03-26"
 
 keywords: enterprise, share, private catalog, allowlist, account groups, share request, opt in
 
@@ -12,18 +12,18 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Sharing private catalog products
+# Sharing catalog products from your private catalog
 {: #catalog-share}
 
-Specify who can see your particular product by sharing a product from your private catalog with other accounts, enterprises, users in your account, or account groups. Those accounts can then create instances of any version that is in the `ready` or `pre-release` state. Versions that are in the `draft` state cannot be shared.
+Specify who can see your particular product by sharing a product from your private catalog with other accounts, enterprises, users in your account, or account groups within enterprises. Those accounts or groups can then create instances of any version that is in the `ready` or `pre-release` state. Versions that are in the `draft` state cannot be shared.
 {: shortdesc}
 
-You can share your product from your private catalog with any account without needing approval from Partner Center. The target account must accept the share request. For more information, see [Accepting share requests for private catalog products](/docs/account?topic=account-catalog-share-accept&interface=ui). However, if you are already approved in Partner Center, you can share your product with any user by adding their account to the allowlist. In that case, the share request doesn't need to be explicitly accepted by the other account.
+You can share your product from your private catalog with any account, enterprise, or account group without needing approval from Partner Center. The target account or group must accept the share request. For more information, see [Accepting share requests for private catalog products](/docs/account?topic=account-catalog-share-accept&interface=ui). However, if you are already approved in Partner Center, you can share your product with any user by adding their account to the allowlist. In that case, the share request doesn't need to be explicitly accepted by the other account.
 {: note}
 
 The following flowchart shows the use cases for sharing your product. Each pathway addresses who you want to share your product with, how to share it, and if you need approval through Partner Center. If you need approval from Partner Center, see [Selling on {{site.data.keyword.cloud_notm}}](/docs/sell). 
 
-![A flow chart of sharing a product to other accounts or publishing with Partner Center approval.](images/share-product-private-catalog.svg){: caption="Figure 1. Flow chart of sharing a product to other accounts or publishing with Partner Center approval" caption-side="bottom"}
+![A flow chart of sharing a product to other accounts, enterprises, or account groups within enterprises, or publishing with Partner Center approval.](images/share-product-private-catalog.svg){: caption="Figure 1. Flow chart of sharing a product to other ccounts, enterprises, or account groups within enterprises, or publishing with Partner Center approval" caption-side="bottom"}
 
 A `pre-release` version does not need to be validated before you can share it from your private catalog. However, a `pre-release` version must be validated if you are going through Partner Center. A `ready` version must be validated before you can share it. For more information, see [Validating the software](/docs/account?topic=account-create-private-catalog&interface=ui#catalog-validate-product).
 {: note}
@@ -32,8 +32,9 @@ A `pre-release` version does not need to be validated before you can share it fr
 {: #ent-share-prereq}
 {: ui}
 
-* Your account must be assigned the Publisher and Viewer access roles for the Catalog Management service to share products with other accounts. For more information, see [Access management in {{site.data.keyword.cloud_notm}}](/docs/account?topic=account-cloudaccess).
+* Your account must be assigned the Publisher and Viewer access roles for the Catalog Management service to share products with other accounts, enterprises, or account groups within enterprises. For more information, see [Access management in {{site.data.keyword.cloud_notm}}](/docs/account?topic=account-cloudaccess). You don't need to be a member of a specific enterprise account to share products with that enterprise account.
 * Verify that at least one version of your product is in either the `pre-release` or `ready` state.
+* You need to know the ID for the accounts, enterprises, or account groups that you want to share with.
 
 ## Sharing your product by using the console
 {: #ent-share-steps}
@@ -65,11 +66,14 @@ If you selected the option to share with other accounts, complete the following 
 
 1. On the Manage allowlist page, select **Add accounts**.
 1. Select the type of account, such as individual account, enterprise, or account group.
-1. Enter one or more account IDs, and click **Add**. You might need to contact the account owner to obtain the ID.
+1. Enter one or more account IDs or enterprise IDs, and click **Add**. You might need to contact the account owner to obtain the ID.
 1. If you want to add other accounts of which you are a member, click **Add your accounts**. A list of your accounts is displayed.
 1. Select one or more of your accounts, and click **Add**. When the allowlist table is displayed, note that the **Share state** column in the table is in `Pending` status. The share request is in a pending state until [it is accepted](/docs/account?topic=account-catalog-share-accept&interface=ui).
 1. If you want to delete an account from the allowlist, select the account, and click **Delete**.
 1. Click **Share**. In the version list, the **Visibility** status is now changed to `Shared`.
+
+If a share request has already been accepted by the target account for a previous product, this new share request is automatically accepted.
+{: note}
 
 ### Checking the share request status
 {: #ent-share-steps-check}
