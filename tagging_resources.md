@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2024
 
-lastupdated: "2024-02-19"
+lastupdated: "2024-03-26"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, full list of tags, how to use tags
 
@@ -24,6 +24,26 @@ To see a full list of tags in your account, go to **Manage** > **Account** in th
 {: ui}
 
 You can apply **user tags** to organize your resources and service IDs and easily find them later. User tags can also help you with identifying specific team usage or cost allocation. By creating **access management tags**, you can control access to your resources and service IDs without requiring updates to your IAM policies.
+
+## Tag types
+{: #tag-types}
+
+There are three types of tags: user, service, and access management.
+
+User tags
+:   User tags are added to resources or service IDs by an authorized user in the account.  Add user tags to your resources to organize, track, and manage costs for related resources. When you use a consistent tagging schema to identify which resources are tied to specific teams, you can group and filter by those tags when you analyze costs within your exported usage report.
+
+Consider using a project to organize and track resources across accounts. Resources that are created by deploying a project automatically have service tags attached with the project ID and configuration ID. This way, you don't have to manage tagging related resources maually.
+{: tip}
+
+Service tags
+:   Service tags are attached by services. No users are authorized to attach or detach service tags on a resource, even if they have access to manage tags on the resource.
+
+Resources that are created by deploying a project are automatically tagged with the project ID and configuration ID, which is available on your usage report. Use projects to help you track spending for projects. For more information, see [Tracking usage and spend for projects](/docs/secure-enterprise?topic=secure-enterprise-project-usage-spend).
+{: note}
+
+Access management tags
+:   Access management tags are used to manage access to resources. They can be created in advance for use in access policies, which grant access to the resources where access management tags are attached. Only the account administrator can create access management tags, and they can delete them only when the tags aren't attached to any resources in the account. Only the resource administrator can attach and detach access management tags on the resource itself.
 
 ## Tagging rules
 {: #limits}
