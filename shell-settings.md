@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2022-06-13"
+  years: 2020, 2024
+lastupdated: "2024-03-28"
 
 keywords: cloud shell settings, cloud shell service, enable cloud shell, disable cloud shell, cloud shell locations, cloud shell access, cloud shell iam, cloud shell role, cloud shell administrator, cloud shell service
 
@@ -50,6 +50,9 @@ To enable or disable {{site.data.keyword.cloud-shell_short}} for the account, co
 
 ## Enabling or disabling {{site.data.keyword.cloud-shell_short}} locations for an account
 {: #shell-settings-locations}
+
+The Tokyo region for {{site.data.keyword.cloud-shell_short}} is deprecated and will no longer be supported by {{site.data.keyword.cloud-shell_short}} as of 2 July 2024. For more information, see the [release notes](/docs/cloud-shell?topic=cloud-shell-release-notes#cloud-shell-mar2824).
+{: deprecated}
 
 By default, all locations for the account are enabled, and the nearest available location is selected. Users are routed to the nearest available location, such as Dallas (us-south), Frankfurt (eu-de), or Tokyo (jp-tok).
 
