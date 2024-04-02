@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2024-04-01"
+lastupdated: "2024-04-02"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -7590,6 +7590,10 @@ Review the available platform and service roles and the actions mapped to each t
 | `project.event-notifications.retrieve` | The ability to view a Project and Event Notifications integration. | Administrator, Editor, Operator, Viewer |
 | `project.event-notifications.delete` | The ability to delete a Project and Event Notifications integration. | Administrator |
 | `project.config.manual-tag` | The ability to add tags to manually created resource. | Administrator, Editor |
+| `project.config.create-stack-definition` | The ability to create a project config stack definition. | Administrator, Editor |
+| `project.config.retrieve-stack-definition` | The ability to retrieve a project config stack definition. | Administrator, Editor, Operator, Viewer |
+| `project.config.update-stack-definition` | The ability to update a project config stack definition. | Administrator, Editor, Operator |
+| `project.config.export-stack-definition` | The ability to publish a project config stack definition. | Administrator, Editor, Operator |
 {: caption="Table 137. Service actions - Project" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="project"}
