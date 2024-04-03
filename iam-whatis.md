@@ -1,10 +1,9 @@
 ---
 
 copyright:
-
   years: 2017, 2024
 
-lastupdated: "2024-02-21"
+lastupdated: "2024-04-03"
 
 keywords: what is IAM, IAM features, IAM API, how IAM works
 
@@ -25,7 +24,7 @@ IAM enables you to securely authenticate users for platform services and control
 
 You can use [trusted profiles](/docs/account?topic=account-create-trusted-profile) to automate the grouping and granting of access to users, services, and app identities. By specifying conditions based on SAML attributes for users whose identity is federated from your external identity provider (IdP), users can be granted access to resources without having to be invited to the account if they meet those conditions. For service and app identities, you can define fine-grained authorization for all applications that are running in a compute resource without creating service IDs or managing the API key lifecycle for applications.
 
-![IAM access control in an account](images/tp-in-ag-access-diagram.svg "How IAM access works in an account by using access groups. Service IDs and select {{site.data.keyword.cloud_notm}} can also asssume trusted profiles."){: caption="Figure 1. How IAM access works in an account by using access groups. Service IDs and select {{site.data.keyword.cloud_notm}} can also asssume trusted profiles." caption-side="bottom"}
+![IAM access control in an account](images/tp-in-ag-access-diagram.svg){: caption="Figure 1. How IAM access works in an account by using access groups. Service IDs and select {{site.data.keyword.cloud_notm}} can also assume trusted profiles." caption-side="bottom"}
 
 For classic infrastructure that doesn't support the use of {{site.data.keyword.cloud_notm}} IAM policies for managing access, you can use the [classic infrastructure permissions](/docs/account?topic=account-mngclassicinfra) documentation.
 {: note}
@@ -64,7 +63,7 @@ Automatically grant federated users access to your account with conditions based
 
 Your users might already have identities outside of {{site.data.keyword.cloud_notm}} in your corporate directory. If your users need to work with {{site.data.keyword.cloud_notm}} resources or work with applications that access those resources, then those users also need {{site.data.keyword.cloud_notm}} credentials. You can use a trusted profile to specify permissions for users whose identity is federated from your organization or an external IdP. By using your IdP, you can provide a way for users in your company to use single sign-on (SSO). To connect your federated users with {{site.data.keyword.cloud_notm}} resources, see [Federating users to {{site.data.keyword.cloud_notm}}](/docs/account?topic=account-identity-overview#federation-iam).
 
-![Introducing IBM Cloud trusted profiles](https://www.youtube.com/embed/O4JRWi9P5Xo){: video output="iframe" data-script="#video-transcript-tp" id="youtubeplayer" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
+![Introducing IBM Cloud trusted profiles](https://www.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&entry_id=1_sgd6xxi4){: video output="iframe" data-script="#video-transcript-tp" id="mediacenter-player" width="560" height="315" scrolling="no" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0" style="border: 0 none transparent;"}
 
 #### Video transcript
 {: #video-transcript-tp}
