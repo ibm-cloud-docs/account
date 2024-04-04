@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2024-04-03"
+lastupdated: "2024-04-04"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1687,6 +1687,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `cp4d.data-quality-sla-rules.manage` | Manage data quality SLA rules | CloudPak Data Quality Analyst, Manager |
 | `cp4d.data-quality.measure` | Execute data quality rules | CloudPak Data Quality Analyst, Manager |
 | `cp4d.data-quality.drill-down` | Drill down to issue details | CloudPak Data Quality Analyst, Manager |
+| `cp4d.catalog-assets-to-projects.add` | Users with this permission can add assets from a catalog to a project. Users must also have the Admin or Editor role in the catalog and the project, and must be asset owners or asset members. | Administrator, CloudPak Data Scientist, CloudPak Data Steward, Editor, Manager |
 {: caption="Table 32. Service actions - IBM Cloud Pak for Data" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="cp4d"}
