@@ -3,7 +3,7 @@
 copyright:
   years: 2021, 2024
 
-lastupdated: "2024-01-02"
+lastupdated: "2024-04-05"
 
 
 keywords: IBM Cloud notifications, notification preferences, email preferences, user notifications, distribution list, webhooks, Slack webhooks, Microsoft Teams webhooks, ServiceNow webhooks, SNOW
@@ -137,7 +137,7 @@ Fields that are sent inside the payload can be either required or optional. Opti
 |**severity**: notification.severity|Optional|
 {: caption="Table 1. Fields in a payload" caption-side="top"}
 
-There might be extra fields added in the future without a major version change. This means that any code that is processing notifications should be prepared to ignore the fields that it does not recognize.
+Additional fields might be added in the future without a major version change. This means that any code that is processing notifications should be prepared to ignore the fields that it does not recognize.
 {: note}
 
 ## Adding webhooks to a distribution list
