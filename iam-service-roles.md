@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2024-04-04"
+lastupdated: "2024-04-05"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1835,6 +1835,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `POST /v4/:platform/deployments/:deployment_id/db2audit/install_v3` | Install Db2 audit v3 | Administrator, Editor, Operator |
 | `GET /v4/:platform/deployments/:deployment_id/db2audit/version` | Retrieve Db2 audit version | Administrator, Editor, Operator, Viewer |
 | `GET /v4/:platform/deployments/:deployment_id/db2audit/alias` | Retrieve Db2 audit storage alias | Administrator, Editor, Operator, Viewer |
+| `GET /v5/:platform/deployments/:deployment_id/replication` | Retrieve replication status | Administrator, Editor, Operator, Viewer |
+| `PUT /v5/:platform/deployments/:deployment_id/replication/:id` | Activate/deactivate replication | Administrator, Editor, Operator |
 {: caption="Table 33. Service actions - Db2 Warehouse" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="dashdb"}
@@ -5972,6 +5974,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.virtual-network-interface.virtual-network-interface.delete` | Delete Virtual Network Interface | Administrator, Editor |
 | `is.virtual-network-interface.virtual-network-interface.manage-infrastructure-nat` | Infrastructure NAT for Virtual Network Interface | Administrator |
 | `is.virtual-network-interface.virtual-network-interface.manage-ip-spoofing` | IP Spoofing for Virtual Network Interface | Administrator |
+| `is.virtual-network-interface.virtual-network-interface.manage-protocol-state-filtering-mode` | Configure Protocol State Filtering for Virtual Network Interface | Administrator, Editor |
 {: caption="Table 104. Service actions - Virtual Network Interface" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.virtual-network-interface"}
