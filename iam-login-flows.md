@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2020
+  years: 2020, 2024
 
-lastupdated: "2020-08-18"
+lastupdated: "2024-04-05"
 
 keywords: login, how login works, login flow, login diagram, login sequence
 
@@ -43,7 +43,7 @@ The standard login sequence for users in {{site.data.keyword.cloud_notm}} that a
 ## Login sequence for federated users with an IBMid
 {: #fed-ibmid-login}
 
-IBMid allows enterprise customers to federate their user authentication and authorization system with IBMid. This way, users don't need to manage an extra user ID. Instead, they are able to log in into {{site.data.keyword.cloud_notm}} using their well-known customer-managed user ID. The login sequence for federated users in {{site.data.keyword.cloud_notm}} works according to the following sequence:
+IBMid allows enterprise customers to federate their user authentication and authorization system with IBMid. This way, users don't need to manage another user ID. Instead, they are able to log in into {{site.data.keyword.cloud_notm}} using their well-known customer-managed user ID. The login sequence for federated users in {{site.data.keyword.cloud_notm}} works according to the following sequence:
 
 ![Login process for federated users with an IBMid](images/login-fed-id.svg "Login process for federated users with an IBMid"){: caption="Figure 2. Login process for federated users with an IBMid" caption-side="bottom"}
 

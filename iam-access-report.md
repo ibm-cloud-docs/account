@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2021
-lastupdated: "2021-11-22"
+  years: 2018, 2024
+lastupdated: "2024-04-05"
 
 keywords: resource access, access report, export user access, who has access, download access report, audit access
 
@@ -28,9 +28,9 @@ Auditing who has access to a specific resource can be helpful to ensure that you
 ## Required access for exporting an access report
 {: #required-access-report}
 
-You can download the report if you have the Administrator role on the selected resource. If you have administrator access only on the resource, the report displays the IDs for the users, access groups, and services. However, you can't view the display names of the users, services, access groups, or the access group members or dynamic rules without extra access.
+You can download the report if you have the Administrator role on the selected resource. If you have administrator access only on the resource, the report displays the IDs for the users, access groups, and services. However, you can't view the display names of the users, services, access groups, access group members, or dynamic rules without a policy with more access.
 
-With the following extra access, you can view display names, access group membership, and dynamic rules in the report, depending on the report type:
+With the following access, you can view display names, access group membership, and dynamic rules in the report, depending on the report type:
 
 * You must be a member of the account. If the account owner restricts the user list, you might be able to view details only for the users that you have access to view.
 * You must have access to the access group to view the members of the group who have access. This includes any of the following types of access:

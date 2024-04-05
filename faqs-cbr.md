@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2021, 2023
+  years: 2021, 2024
 
-lastupdated: "2023-08-14"
+lastupdated: "2024-04-05"
 
 keywords: frequently asked questions, cbr faqs, cbr and iam, context-based restrictions, access restrictions
 
@@ -34,7 +34,7 @@ As an account owner or administrator, you can define and enforce access restrict
 {: #iam-cbr-diff}
 {: faq}
 
-These restrictions work with traditional IAM policies, which are based on identity, to provide an extra layer of protection. Since both IAM access and context-based restrictions enforce access, context-based restrictions offer protection even in the face of compromised or mismanaged credentials.
+These restrictions work with traditional IAM policies, which are based on identity, to provide another layer of protection. Since both IAM access and context-based restrictions enforce access, context-based restrictions offer protection even in the face of compromised or mismanaged credentials.
 
 Unlike IAM policies, context-based restrictions don't assign access. Context-based restrictions check that an access request comes from an allowed context that you configure.
 {: note}

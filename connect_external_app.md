@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2021
-lastupdated: "2022-03-03"
+  years: 2015, 2024
+lastupdated: "2024-04-05"
 
 keywords: service keys, api keys, using services outside IBM cloud, external apps
 
@@ -20,7 +20,7 @@ You might have applications that were created and run outside of {{site.data.key
 
 To enable an external app or third-party tool to use an {{site.data.keyword.Bluemix_notm}} service, complete the following steps:
 
-Most services don't require extra parameters, and for services that do, each service defines its own unique list of parameters. For a list of supported configuration parameters, see the documentation for the particular service.
+Most services don't require additional parameters, and for services that do, each service defines its own unique list of parameters. For a list of supported configuration parameters, see the documentation for the particular service.
 {: tip}
 
 ## Connect a service to an external app in the console
@@ -29,11 +29,11 @@ Most services don't require extra parameters, and for services that do, each ser
 
 1. Create an instance of the service.
     1. Click **Catalog**.
-    2. From the catalog, select the service that you want by clicking the service tile. 
+    2. From the catalog, select the service that you want by clicking the service tile.
     3. Select the location and org and space or resource group, and then click **Create**.
-2. From the service details page, select **Service Credentials** to view or add credentials in JSON format. 
+2. From the service details page, select **Service Credentials** to view or add credentials in JSON format.
     * To create new credentials, select **New credential** and optionally add configuration parameters manually or import a file in JSON format, then click **Add**. Select **View credentials** to save the credentials to connect to your external app.
-    * Select a set of credentials and click **View credentials** in the Actions column if they already exist. 
+    * Select a set of credentials and click **View credentials** in the Actions column if they already exist.
 3. Use the API key that is displayed as the credentials to connect to the service instance.
 
 Your application that runs outside of {{site.data.keyword.Bluemix_notm}} can now access the {{site.data.keyword.Bluemix_notm}} service.
@@ -45,7 +45,7 @@ If you want to delete service instances or check the billing information, you mu
 {: #externalapp-api}
 {: api}
 
-1. Create an instance of the service by calling [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#create-resource-instance){: external} as shown in the following example request: 
+1. Create an instance of the service by calling [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#create-resource-instance){: external} as shown in the following example request:
 
    ```bash
    curl -X POST https://resource-controller.cloud.ibm.com/v2/resource_instances -H 'Authorization: Bearer <>' -H 'Content-Type: application/json' -d '{
@@ -128,7 +128,7 @@ If you want to delete service instances or check the billing information, you mu
    fmt.Printf("\nCreateResourceInstance() response:\n%s\n", string(b))
    ```
    {: codeblock}
-   {: go} 
+   {: go}
 
 2. Retrieve or create credentials (resource key).
    * To create new credentials, call the [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#create-resource-key) as shown in the following example.
@@ -290,25 +290,24 @@ If you want to delete service instances or check the billing information, you mu
 
 The following services provide service keys for you to use externally:
 
-* {{site.data.keyword.alertnotificationshort}} 
-* {{site.data.keyword.sparks}} 
-* {{site.data.keyword.blockchain}} 
-* {{site.data.keyword.discoveryshort}} 
-* {{site.data.keyword.messagehub}} 
-* {{site.data.keyword.geospatialshort_Geospatial}} 
-* {{site.data.keyword.GlobalizationPipeline_short}} 
-* {{site.data.keyword.appconserviceshort}} 
-* {{site.data.keyword.cloudant}} 
-* {{site.data.keyword.languagetranslatorshort}} 
-* {{site.data.keyword.dwl_short}} 
-* {{site.data.keyword.nlclassifiershort}} 
-* {{site.data.keyword.objectstorageshort}} 
+* {{site.data.keyword.alertnotificationshort}}
+* {{site.data.keyword.sparks}}
+* {{site.data.keyword.blockchain}}
+* {{site.data.keyword.discoveryshort}}
+* {{site.data.keyword.messagehub}}
+* {{site.data.keyword.geospatialshort_Geospatial}}
+* {{site.data.keyword.GlobalizationPipeline_short}}
+* {{site.data.keyword.appconserviceshort}}
+* {{site.data.keyword.cloudant}}
+* {{site.data.keyword.languagetranslatorshort}}
+* {{site.data.keyword.dwl_short}}
+* {{site.data.keyword.nlclassifiershort}}
+* {{site.data.keyword.objectstorageshort}}
 * {{site.data.keyword.personalityinsightsshort}}
-* {{site.data.keyword.mobilepush}} 
-* {{site.data.keyword.speechtotextshort}} 
-* {{site.data.keyword.streaminganalyticsshort}} 
-* {{site.data.keyword.texttospeechshort}} 
-* {{site.data.keyword.toneanalyzershort}} 
-* {{site.data.keyword.conversationshort}} 
-* {{site.data.keyword.workloadscheduler}} 
-
+* {{site.data.keyword.mobilepush}}
+* {{site.data.keyword.speechtotextshort}}
+* {{site.data.keyword.streaminganalyticsshort}}
+* {{site.data.keyword.texttospeechshort}}
+* {{site.data.keyword.toneanalyzershort}}
+* {{site.data.keyword.conversationshort}}
+* {{site.data.keyword.workloadscheduler}}

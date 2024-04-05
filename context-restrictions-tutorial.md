@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2023
-lastupdated: "2023-12-27"
+  years: 2021, 2024
+lastupdated: "2024-04-05"
 
 keywords: network-level access, network security strategy
 subcollection: account
@@ -19,7 +19,7 @@ completion-time: 20m
 {: toc-content-type="tutorial"}
 {: toc-completion-time="20m"}
 
-This tutorial walks you through how to use context-based restrictions as an extra layer of protection to your resources. By completing this tutorial, you learn how to create network zones and rules that define access restrictions to specific resources based on context in addition to IAM identity. For more information, see [What are context-based restrictions?](/docs/account?topic=account-context-restrictions-whatis)
+This tutorial walks you through how to use context-based restrictions as another layer of protection to your resources. By completing this tutorial, you learn how to create network zones and rules that define access restrictions to specific resources based on context in addition to IAM identity. For more information, see [What are context-based restrictions?](/docs/account?topic=account-context-restrictions-whatis)
 {: shortdesc}
 
 The tutorial uses a fictitious account owner named Xander. Xander previously set up access for managers that need the `administrator` role on account management services by using IAM policies.

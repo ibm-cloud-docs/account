@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2023
-lastupdated: "2023-07-26"
+  years: 2018, 2024
+lastupdated: "2024-04-05"
 
 keywords: MFA, multifactor authentication, two-factor authentication, U2F, FIDO U2F, security key
 
@@ -16,7 +16,7 @@ subcollection: account
 # {{site.data.keyword.cloud_notm}} multifactor authentication
 {: #types}
 
-Multifactor authentication (MFA) adds an extra layer of security to your account by requiring all users to authenticate by using another authentication factor beyond an ID and password. MFA is also commonly known as two-factor authentication (2FA).
+Multifactor authentication (MFA) adds a layer of security to your account by requiring all users to authenticate by using another authentication factor beyond an ID and password. MFA is also commonly known as two-factor authentication (2FA).
 {: shortdesc}
 
 {{site.data.keyword.cloud_notm}} is associated with each users' ID and authenticates them across all accounts that they are a member of, so they authenticate only one time.
@@ -50,4 +50,3 @@ Users authenticate by using one of the following MFA factors. This option applie
 * Email-based MFA: Users authenticate by using a security passcode, which is sent by email.
 * TOTP MFA: Users authenticate by using a TOTP.
 * U2F MFA: Users authenticate by using a physical hardware-based security key. Based on the FIDO U2F standard, this factor offers the highest level of security.
-
