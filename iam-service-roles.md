@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2024-04-05"
+lastupdated: "2024-04-06"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1833,6 +1833,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `DELETE /v4/:platform/deployments/:deployment_id/groups/:group_id/schedule_scaling` | Delete scheduled scaling | Administrator, Editor, Operator |
 | `PATCH /v4/:platform/deployments/:deployment_id/switch_license` | switch license type or term | Administrator, Editor, Operator |
 | `POST /v4/:platform/deployments/:deployment_id/db2audit/install_v3` | Install Db2 audit v3 | Administrator, Editor, Operator |
+| `POST /v4/:platform/deployments/:deployment_id/db2audit/process_report` | Process db2 archived audit logs into a human-readable csv format | Administrator, Editor, Operator, Viewer |
 | `GET /v4/:platform/deployments/:deployment_id/db2audit/version` | Retrieve Db2 audit version | Administrator, Editor, Operator, Viewer |
 | `GET /v4/:platform/deployments/:deployment_id/db2audit/alias` | Retrieve Db2 audit storage alias | Administrator, Editor, Operator, Viewer |
 | `GET /v5/:platform/deployments/:deployment_id/replication` | Retrieve replication status | Administrator, Editor, Operator, Viewer |
@@ -7375,6 +7376,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `power-iaas.dashboard.view` |  | Manager, Reader |
 | `power-iaas.cloud-instance.modify` |  | Manager |
 | `power-iaas.cloud-instance.read` |  | Manager, Reader |
+| `power-iaas.pod-capacity.view` | Provides the ability to view Satellite POD capacity details. | Manager |
 {: caption="Table 133. Service actions - Power Systems Virtual Server" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="power-iaas"}
