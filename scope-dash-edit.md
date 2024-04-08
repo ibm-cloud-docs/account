@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2023
-lastupdated: "2023-12-15"
+  years: 2021, 2024
+lastupdated: "2024-04-08"
 
 keywords: dashboard, widgets display, manage visibility, customize, console, dashboard templates
 
@@ -22,7 +22,7 @@ Only the user that created the dashboard can edit it by adding, removing, and re
 
 Customize your dashboard by grabbing a widget and moving it to fit your organization's needs. Only the user that created the dashboard can edit it.
 
-For example, as an account owner, tracking who has access to your account might be a top priority for you. You want these details to be displayed at the beginning of your dashboard, but you must scroll to find the User access widget.
+For example, as an account owner, tracking who has access to your account might be a high priority for you. You want these details to be displayed at the beginning of your dashboard, but you must scroll to find the User access widget.
 
 To reorganize a dashboard, complete the following steps:
 1. In the {{site.data.keyword.cloud_notm}} console, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions"), and select **Edit**.
