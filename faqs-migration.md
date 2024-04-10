@@ -3,7 +3,7 @@
 copyright:
   years: 2020, 2024
 
-lastupdated: "2024-02-05"
+lastupdated: "2024-04-10"
 
 keywords: migration FAQs, data centers
 
@@ -56,7 +56,7 @@ For the list of available data centers, see [Locations for resource deployment](
 {: #dc-transition-sites}
 {: faq}
 
-You can use any worldwide {{site.data.keyword.cloud_notm}} data center during your transition period, which lasts up to 60 days. See [Locations for resource deployment](/docs/overview?topic=overview-locations) for more information.
+You can use any worldwide {{site.data.keyword.cloud_notm}} data center during your transition period, which lasts up to 60 days. For more information, see [Locations for resource deployment](/docs/overview?topic=overview-locations).
 
 
 ## Are the two free months of transition period resources in addition to my existing server time?
@@ -97,7 +97,7 @@ If you have a workload that is processor-bound, meaning that the performance is 
 {: #dc-choose-os}
 {: faq}
 
-Compatibility and functionality are two of the main influencers when you choose a new operating system. Older versions of operating systems can present challenges with migration. Installation media might not be compatible and the server hardware might not be supported by the older operating system. The best course of action is to compare specs and ensure that the operating system is compatible. You must verify that the necessary development tools and operating system or middleware functions are available on the new platform. In general, Linux type systems are better at supporting older applications on newer versions of the operating system than Windows.
+Compatibility and functionality are two of the main influencers when you choose a new operating system. Older versions of operating systems can present challenges with migration. Installation media might not be compatible and the server hardware might not be supported by the older operating system. The best course of action is to compare specs and ensure that the operating system is compatible. Verify that the necessary development tools and operating system or middleware functions are available on the new platform. In general, Linux type systems are better at supporting older applications on newer versions of the operating system than Windows.
 
 For more information, contact the [Client Success team](https://www.ibm.com/cloud/data-centers?focusArea=WCP%20-%20Pooled%20CSM&contactmodule){: external}.
 
@@ -126,7 +126,7 @@ Most likely, your networking needs to change to work with the new servers and si
 ## Can I keep my existing IP addresses?
 {: #dc-ip-addresses}
 
-Your new servers come with new primary IP subnets. Your current IP addresses cannot be transferred. If you need additional IP addresses, you can request those directly from the console. Specify that you're migrating your resources to a new data center.
+Your new servers come with new primary IP subnets. Your current IP addresses cannot be transferred. If you need more IP addresses, you can request those directly from the console. Specify that you're migrating your resources to a new data center.
 
 * For more information about VPC subnets, see [Bring your own subnet](/docs/vpc?topic=vpc-configuring-address-prefixes).
 * For more information about classic infrastructure subnets, see [Getting started with subnets and IPs](/docs/subnets?topic=subnets-getting-started).
