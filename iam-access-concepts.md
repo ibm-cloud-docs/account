@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022, 2023
+  years: 2022, 2024
 
-lastupdated: "2023-12-19"
+lastupdated: "2024-04-10"
 
 keywords: users level of access, user control, access control, permissions, manage access, access management, platform management tasks, assign roles
 
@@ -24,7 +24,7 @@ The concept of access management consists of a few interrelated components, incl
 ## Access groups
 {: #access-groups-iam}
 
-A group of users and service IDs can be organized so that the same access can be assigned to all members within the group by using one or more policies. With access groups, you can streamline the access assignment process so that you can manage a smaller number of policies and reduce the number of policies in an account, which in turn increases performance. Access groups allow you to grant and revoke access by simply adding or removing users or service IDs in the access group. After your groups are set up, you can start assigning policies by selecting an access group as the subject of the policy. For more information, see [Access groups for streamlined access management](/docs/account?topic=account-iamoverview#access-groups-quick-access).
+A group of users and service IDs can be organized so that the same access can be assigned to all members within the group by using one or more policies. With access groups, you can streamline the access assignment process so that you can manage fewer policies and reduce the number of policies in an account, which in turn increases performance. Access groups allow you to grant and revoke access by simply adding or removing users or service IDs in the access group. After your groups are set up, you can start assigning policies by selecting an access group as the subject of the policy. For more information, see [Access groups for streamlined access management](/docs/account?topic=account-iamoverview#access-groups-quick-access).
 
 ## Trusted profiles
 {: #trusted-profiles-iam}
