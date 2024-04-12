@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2024
 
-lastupdated: "2024-04-10"
+lastupdated: "2024-04-12"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -49,7 +49,7 @@ Then, hover on the row of a service ID to click the **Actions** icon ![Actions i
 {: #create_serviceid-cli}
 {: cli}
 
-To create a service ID, use the [ibmcloud iam service-id-create](/docs/account?topic=account-ibmcloud_commands_iam&interface=cli#ibmcloud_iam_service_id_create) command:
+To create a service ID, use the [**`ibmcloud iam service-id-create`**](/docs/account?topic=account-ibmcloud_commands_iam&interface=cli#ibmcloud_iam_service_id_create) command:
 
 ```bash
 ibmcloud iam service-id-create NAME [-d, --description DESCRIPTION] [--lock]
@@ -75,12 +75,14 @@ NAME (required)
 {: #create-serviceid-examples}
 
 Create a service ID with service name `sample-test` and description `hello, world!`:
-```bsh
+
+```bash
 ibmcloud iam service-id-create sample-test -d 'hello, world!'
 ```
 {: codeblock}
 
 Create a locked service ID with service name `sample-test` and description `hello, world!`:
+
 ```bash
 ibmcloud iam service-id-create sample-test -d 'hello, world!' --lock
 ```
@@ -90,7 +92,7 @@ ibmcloud iam service-id-create sample-test -d 'hello, world!' --lock
 {: #create_serviceid-api}
 {: api}
 
-To create a service ID, call the [IAM Identity Services API](https://cloud.ibm.com/apidocs/iam-identity-token-api#create-service-id) as shown in the following example:
+To create a service ID, call the [IAM Identity Services API](/apidocs/iam-identity-token-api#create-service-id) as shown in the following example:
 
 ```bash
 curl -X POST 'https://iam.cloud.ibm.com/v1/serviceids' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json' -d '{
@@ -179,7 +181,7 @@ Any changes that you make to an existing service ID, such as changing the assign
 {: #update_serviceid-cli}
 {: cli}
 
-To update the service ID, use the [ibmcloud iam service-id-update](/docs/account?topic=account-ibmcloud_commands_iam&interface=cli#ibmcloud_iam_service_id_update) command:
+To update the service ID, use the [**`ibmcloud iam service-id-update`**](/docs/account?topic=account-ibmcloud_commands_iam&interface=cli#ibmcloud_iam_service_id_update) command:
 
 ```bash
 ibmcloud iam service-id-update (NAME|UUID) [-n, --name NEW_NAME] [-d, --description DESCRIPTION] [-f, --force]
@@ -192,37 +194,40 @@ Prerequisites
 ### Command options
 {: #update-serviceid-command}
 
-NAME (required
-:   Name of the service, exclusive with UUID
+NAME (required)
+:   The name of the service, exclusive with UUID.
 
 UUID (required)
-:   UUID of the service, exclusive with NAME
+:   The UUID of the service, exclusive with NAME.
 
 -n, --name
-:   New name of the service
+:   The new name of the service.
 
 d, --description
-:   New description of the service
+:   The new description of the service.
 
 -f, --force
-:   Update without confirmation
+:   Update without confirmation.
 
 ### Examples
 {: #update-serviceid-example}
 
 Rename service ID `sample-test` to `sample-test-2` without confirmation:
+
 ```bash
 ibmcloud iam service-id-update sample-test -n sample-test-2 -f
 ```
 {: codeblock}
 
 Update description of service `sample-test`:
+
 ```bash
 ibmcloud iam service-id-update sample-test -d 'hello, friend!'
 ```
 {: codeblock}
 
 Rename service ID `ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976` to `sample-test-3` with new description:
+
 ```bash
 ibmcloud iam service-id-update ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976 -n sample-test-3 -d 'hello, my friends!'
 ```
@@ -320,7 +325,7 @@ Deleting a service ID also deletes all associated API keys and assigned policies
 {: #delete_serviceid-cli}
 {: cli}
 
-To delete a service ID, use the [ibmcloud iam service-id-delete](/docs/account?topic=account-ibmcloud_commands_iam&interface=cli#ibmcloud_iam_service_id_delete) command:
+To delete a service ID, use the [**`ibmcloud iam service-id-delete`**](/docs/account?topic=account-ibmcloud_commands_iam&interface=cli#ibmcloud_iam_service_id_delete) command:
 
 ```bash
 ibmcloud iam service-id-delete (NAME|UUID) [-f, --force]
@@ -349,12 +354,14 @@ Either `NAME` or `UUID` are required, but you don't need to provide both.
 {: #delete-serviceid-examples}
 
 Delete service ID `sample-teset` without confirmation:
+
 ```bash
 ibmcloud iam service-id-delete sample-teset -f
 ```
 {: codeblock}
 
 Delete service ID `ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976`:
+
 ```bash
 ibmcloud iam service-id-delete ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976
 ```
@@ -463,7 +470,7 @@ A locked service ID is indicated by the **Locked** icon ![Locked icon](images/lo
 {: #lock_serviceid_cli}
 {: cli}
 
-To lock a service ID, use the [ibmcloud iam service-id-lock](/docs/account?topic=account-ibmcloud_commands_iam&interface=cli#ibmcloud_iam_service_id_lock) command:
+To lock a service ID, use the [**`ibmcloud iam service-id-lock`**](/docs/account?topic=account-ibmcloud_commands_iam&interface=cli#ibmcloud_iam_service_id_lock) command:
 
 ```bash
 ibmcloud iam service-id-lock (NAME|UUID) [-f, --force]
@@ -474,25 +481,25 @@ ibmcloud iam service-id-lock (NAME|UUID) [-f, --force]
 {: #lock-serviceid-command}
 
 NAME (required)
-:   Name of the service, exclusive with UUID
+:   Name of the service, exclusive with UUID.
 
 UUID (required)
-:   UUID of the service, exclusive with NAME
+:   UUID of the service, exclusive with NAME.
 
 -f, --force
-:   Lock without confirmation
+:   Lock without confirmation.
 
 #### Examples
 {: #lock-serviceid-examples}
 
-Lock service ID `sample-test` without confirmation
+Lock service ID `sample-test` without confirmation:
 
 ```bash
 ibmcloud iam service-id-lock sample-test -f
 ```
 {: codeblock}
 
-Lock service ID `ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976`
+Lock service ID `ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976`:
 
 ```bash
 ibmcloud iam service-id-lock ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976
@@ -515,7 +522,7 @@ You must have the appropriate level of access to unlock a service ID.
 {: #unlock-serviceid-cli}
 {: cli}
 
-To unlock a service ID, use the [ibmcloud iam service-id-unlock](/docs/account?topic=account-ibmcloud_commands_iam&interface=cli#ibmcloud_iam_service_id_unlock) command:
+To unlock a service ID, use the [**`ibmcloud iam service-id-unlock`**](/docs/account?topic=account-ibmcloud_commands_iam&interface=cli#ibmcloud_iam_service_id_unlock) command:
 
  ```bash
 ibmcloud iam service-id-unlock (NAME|UUID) [-f, --force]
@@ -526,24 +533,24 @@ ibmcloud iam service-id-unlock (NAME|UUID) [-f, --force]
 {: #unlock-serviceid-command}
 
 NAME (required)
-:   Name of the service, exclusive with UUID
+:   Name of the service, exclusive with UUID.
 
 UUID (required)
-:   UUID of the service, exclusive with NAME
+:   UUID of the service, exclusive with NAME.
 
 -f, --force
-:   Unlock without confirmation
+:   Unlock without confirmation.
 
 #### Examples
 {: #unlock-serviceid-example}
 
-Unlock service ID `sample-test` without confirmation
+Unlock service ID `sample-test` without confirmation:
 
 ```bash
 ibmcloud iam service-id-unlock sample-test -f
 ```
 
-Unlock service ID `ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976`
+Unlock service ID `ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976`:
 
 ```bash
 ibmcloud iam service-id-unlock ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976
