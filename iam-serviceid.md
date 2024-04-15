@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2024
 
-lastupdated: "2024-04-12"
+lastupdated: "2024-04-15"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -169,6 +169,237 @@ fmt.Println(string(b))
 
 For more information, see the [IAM Identity Services API](https://cloud.ibm.com/apidocs/iam-identity-token-api#create-service-id).
 
+## Review the list of service IDs by using the console
+{: #review-serviceid-list-ui}
+{: ui}
+
+Review the list of service IDs in your account by completing the following steps:
+
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Service IDs**.
+1. Review the list of service IDs.
+
+## Listing service IDs by using the CLI
+{: #list-serviceid-cli}
+{: cli}
+
+To list all service IDs in your account, use the [**`ibmcloud iam service-ids`**](/docs/account?topic=account-ibmcloud_commands_iam&interface=cli#ibmcloud_iam_service_ids) command:
+
+```bash
+ibmcloud iam service-ids [--uuid]
+```
+{: codeblock}
+
+### Command options
+{: #list-serviceid-command}
+
+--uuid
+:    Show UUID of service IDs only.
+
+### Examples
+{: #list-serviceid-example}
+
+List the UUID of all service IDs in the current account:
+
+```bash
+ibmcloud iam service-ids --uuid
+```
+{: codeblock}
+
+## Listing service IDs by using the API
+{: #list-serviceid-api}
+{: api}
+
+You can programmatically list all service IDs in your account by calling the [IAM Identity Services API](/apidocs/iam-identity-token-api#list-service-ids) as shown in the following sample requests:
+
+```bash
+curl -X GET "https://iam.cloud.ibm.com/v1/serviceids?account_id=ACCOUNT_ID" \
+--header "Authorization: Bearer $TOKEN" \
+--header "Content-Type: application/json" 
+```
+{: codeblock}
+{: curl}
+
+```java
+ListServiceIdsOptions listServiceIdsOptions = new ListServiceIdsOptions.Builder()
+    .accountId(accountId)
+    .build();
+
+Response<ServiceIdList> response = service.listServiceIds(listServiceIdsOptions).execute();
+ServiceIdList serviceIdList = response.getResult();
+
+System.out.println(serviceIdList);
+```
+{: codeblock}
+{: java}
+
+```javascript
+const params = {
+  accountId: accountId,
+};
+
+try {
+  const res = await iamIdentityService.listServiceIds(params)
+  console.log(JSON.stringify(res.result, null, 2));
+} catch (err) {
+  console.warn(err);
+}
+```
+{: codeblock}
+{: javascript}
+
+```python
+service_id_list = iam_identity_service.list_service_ids(
+  account_id=account_id,
+).get_result()
+print(json.dumps(service_id_list, indent=2))
+```
+{: codeblock}
+{: python}
+
+```go
+listServiceIdsOptions := iamIdentityService.NewListServiceIdsOptions()
+listServiceIdsOptions.SetAccountID(accountID)
+
+serviceIDList, response, err := iamIdentityService.ListServiceIds(listServiceIdsOptions)
+if err != nil {
+  panic(err)
+}
+b, _ := json.MarshalIndent(serviceIDList, "", "  ")
+fmt.Println(string(b))
+```
+{: codeblock}
+{: go}
+
+For more information, see the [IAM Identity Services API](/apidocs/iam-identity-token-api?code=go#list-service-ids).
+
+## Viewing the details of a service ID by using the console
+{: #view-serviceid-details-ui}
+{: ui}
+
+You can view the details of a service ID, including the access groups, assigned policies, and all associated API keys.
+
+To view service ID details, complete the following steps:
+
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Service IDs**.
+1. Identify the row of the service ID that you want to view the details of, and click it.
+1. Review the details of access groups, access policies, and API keys.
+
+## Viewing the details of a service ID by using the CLI
+{: #view-serviceid-details-cli}
+{: cli}
+
+To view service ID details, use the [**`ibmcloud iam service-id`**](/docs/account?topic=account-ibmcloud_commands_iam&interface=cli#ibmcloud_iam_service_id) command:
+
+```bash
+ibmcloud iam service-id (NAME|UUID) [--uuid]
+```
+{: codeblock}
+
+### Command options
+{: #view-serviceid-details-command}
+
+NAME (required)
+:   The name of the service, exclusive with UUID.
+
+UUID (required)
+:   The UUID of the service, exclusive with NAME.
+
+--uuid
+:    Displays the UUID of the service ID.
+
+### Examples
+{: #view-serviceid-details-example}
+
+The following example shows the details of service ID `sample-test`:
+
+```bash
+ibmcloud iam service-id sample-test
+```
+{: codeblock}
+
+The following example shows the details of service ID `ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976`:
+
+```bash
+ibmcloud iam service-id ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976
+```
+{: codeblock}
+
+## Viewing the details of a service ID by using the API
+{: #view-serviceid-details-api}
+{: api}
+
+You can programmatically view the details of a service ID in your account by calling the [IAM Identity Services API](/apidocs/iam-identity-token-api?code=java#get-service-id) as shown in the following sample requests:
+
+```bash
+curl -X GET "https://iam.cloud.ibm.com/v1/serviceids/SERVICE_ID_UNIQUE_ID" \
+--header "Authorization: Bearer $TOKEN" \
+--header "Content-Type: application/json" 
+```
+{: codeblock}
+{: curl}
+
+```java
+GetServiceIdOptions getServiceIdOptions = new GetServiceIdOptions.Builder()
+    .id(svcId)
+    .includeActivity(false)
+    .build();
+
+Response<ServiceId> response = service.getServiceId(getServiceIdOptions).execute();
+ServiceId serviceId = response.getResult();
+svcIdEtag = response.getHeaders().values("Etag").get(0);
+
+System.out.println(serviceId);
+```
+{: codeblock}
+{: java}
+
+```javascript
+const params = {
+  id: svcId,
+  includeActivity: true,
+};
+
+try {
+  const res = await iamIdentityService.getServiceId(params)
+  svcIdEtag = res.headers['etag'];
+  console.log(JSON.stringify(res.result, null, 2));
+} catch (err) {
+  console.warn(err);
+}
+```
+{: codeblock}
+{: javascript}
+
+```python
+response = iam_identity_service.get_service_id(
+  id=svc_id,
+  include_history=True,
+  include_activity=True,
+)
+service_id = response.get_result()
+print(json.dumps(service_id, indent=2))
+```
+{: codeblock}
+{: python}
+
+```go
+getServiceIDOptions := iamIdentityService.NewGetServiceIDOptions(svcID)
+
+getServiceIDOptions.SetIncludeActivity(false)
+
+serviceID, response, err := iamIdentityService.GetServiceID(getServiceIDOptions)
+if err != nil {
+  panic(err)
+}
+svcIDEtag = response.GetHeaders().Get("Etag")
+b, _ := json.MarshalIndent(serviceID, "", "  ")
+fmt.Println(string(b))
+```
+{: codeblock}
+{: go}
+
+For more information, see the [IAM Identity Services API](/apidocs/iam-identity-token-api?code=java#get-service-id).
+
 ## Updating a service ID by using the console
 {: #update_serviceid}
 {: ui}
@@ -195,16 +426,16 @@ Prerequisites
 {: #update-serviceid-command}
 
 NAME (required)
-:   The name of the service, exclusive with UUID.
+:   Name of the service, exclusive with UUID.
 
 UUID (required)
-:   The UUID of the service, exclusive with NAME.
+:   UUID of the service, exclusive with NAME.
 
 -n, --name
-:   The new name of the service.
+:   New name of the service.
 
 d, --description
-:   The new description of the service.
+:   New description of the service.
 
 -f, --force
 :   Update without confirmation.
