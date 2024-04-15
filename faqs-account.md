@@ -2,9 +2,7 @@
 
 copyright:
   years: 2015, 2024
-  
-lastupdated: "2024-02-19"
-
+lastupdated: "2024-04-15"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -103,7 +101,7 @@ Yes, the following options are available depending on your account type:
 {: #convertpayg-litetrial}
 {: faq}
 
-If you upgrade your trial account to a Pay-As-You-Go account by entering a credit card, it can't be converted back to a trial account.
+If you upgrade your trial account to a Pay-As-You-Go account by entering a credit card, it can't be converted back to a trial account. If you want to continue exploring {{site.data.keyword.cloud_notm}} at no cost, you can use a service's Lite plan to build an app without incurring any charges. For more information, see [Try out {{site.data.keyword.cloud_notm}}, for free](/docs/overview?topic=overview-tutorial-try-for-free).
 
 ## Can I add an educational feature code to an account after I added a credit card?
 {: #convert-education}
