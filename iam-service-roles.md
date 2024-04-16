@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2024-04-15"
+lastupdated: "2024-04-16"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -6197,6 +6197,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Role | Description |
 | ----- | :----- |
 | KeyPurge | Role for purging key. |
+| KmipAdapterManager | Key Protect role that controls read and write access to REST resources associated with Key Protect Native KMIP support. It also allows read access to list Keys and Key Rings. |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | ReaderPlus | As a reader plus, you can perform read-only actions within Key Protect such as viewing service-specific resources. You can also access key material for standard keys. |
@@ -6214,7 +6215,7 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- | :----- |
 | `kms.secrets.create` | Create an encryption key. | Manager, Writer |
 | `kms.secrets.read` | Retrieve an encryption key. | Manager, ReaderPlus, Writer |
-| `kms.secrets.list` | Retrieve a list of encryption keys. | Manager, Reader, ReaderPlus, Writer |
+| `kms.secrets.list` | Retrieve a list of encryption keys. | KmipAdapterManager, Manager, Reader, ReaderPlus, Writer |
 | `kms.secrets.delete` | Delete an encryption key. | Manager |
 | `kms.secrets.wrap` | Wrap an encryption key. | Manager, Reader, ReaderPlus, Writer |
 | `kms.secrets.unwrap` | Unwrap an encryption key. | Manager, Reader, ReaderPlus, Writer |
@@ -6251,7 +6252,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `kms.secrets.createalias` | Create an alias for an encryption key. | Manager, Writer |
 | `kms.secrets.deletealias` |  Delete an alias for an encryption key. | Manager, Writer |
 | `kms.governance.configread` | Retrieve current configuration of the queried resources. | Service Configuration Reader |
-| `kms.keyrings.list` | Retrieve a list of key rings in the instance. | Manager, Reader, ReaderPlus, Writer |
+| `kms.keyrings.list` | Retrieve a list of key rings in the instance. | KmipAdapterManager, Manager, Reader, ReaderPlus, Writer |
 | `kms.keyrings.create` | Create a key ring in the instance. | Manager, Writer |
 | `kms.keyrings.delete` | Delete a key ring in the instance. | Manager |
 | `kms.secrets.purge` | Purge an encryption key. | KeyPurge |
@@ -6260,6 +6261,10 @@ Review the available platform and service roles and the actions mapped to each t
 | `kms.secrets-migration-intent.read` | Retrieves a migration intent for an encryption key. | Manager, Reader, ReaderPlus, Writer |
 | `kms.secrets-migration-intent.create` | Create a migration intent for an encryption key. | Manager |
 | `kms.secrets-migration-intent.delete` | Delete a migration intent for an encryption key. | Manager |
+| `kms.kmip-management.create` | Creates a KMIP management resource | KmipAdapterManager, Manager |
+| `kms.kmip-management.list` | Lists a KMIP management resource | KmipAdapterManager, Manager |
+| `kms.kmip-management.read` | Reads a KMIP management resource | KmipAdapterManager, Manager |
+| `kms.kmip-management.delete` | Deletes a KMIP management resource | KmipAdapterManager, Manager |
 {: caption="Table 109. Service actions - IBM Key Protect" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="kms"}
