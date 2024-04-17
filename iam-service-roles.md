@@ -7841,7 +7841,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `satellite.config-cluster.read` | read cluster list for for an org or details about a given cluster | Administrator, Manager, Reader |
 | `satellite.link.create` | Create Link instance for the Satellite Location.  | Administrator |
 | `satellite.config-organization.read` | allow to access the organization info | Administrator, Deployer, Manager, Reader, Satellite Cluster Creator |
-| `satellite.config-organization.manage` | allow to read the org_key for an organization | Manager |
+| `satellite.config-organization.manage` | allow to read the `org_key` for an organization | Manager |
 | `satellite.resource.get` | read resource under a cluster or from a cluster group | Administrator, Manager, Reader |
 | `satellite.api.globalaccess` | global access satellite api for special users | Administrator, Manager |
 | `satellite.config-cluster.register` | register cluster to the satellite config | Administrator, Manager, Satellite Cluster Creator |
