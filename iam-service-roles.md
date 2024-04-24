@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2024-04-23"
+lastupdated: "2024-04-24"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3992,6 +3992,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Pool ID Manager | Custom role is to manage apis related to pool id for sms |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| SMTP Manager | Custom role is to manage SMTP Configurations |
 | Status Reporter | Custom role to handle messaging api callbacks |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
@@ -4079,6 +4080,17 @@ Review the available platform and service roles and the actions mapped to each t
 | `event-notifications.pool-id-mapping.delete` | This action is to delete a new pool id mapping for a destination | Pool ID Manager |
 | `event-notifications.pool-id-mapping.update` | This action is to update a new pool id mapping for a destination | Pool ID Manager |
 | `event-notifications.delivery.create` | This API is used to send the status of push devices | Administrator, Device Manager, Manager |
+| `event-notifications.smtp-config.create` | This API is used to create new smtp configuration | Administrator, Manager, SMTP Manager, Writer |
+| `event-notifications.smtp-config.read` | This action is to get the smtp config | Administrator, Manager, Reader, SMTP Manager, Writer |
+| `event-notifications.smtp-config.list` | This action is to get all smtp configs within an instance | Administrator, Manager, Reader, SMTP Manager, Writer |
+| `event-notifications.smtp-config.update` | This api is to update a smtp config in an instance | Administrator, Manager, SMTP Manager, Writer |
+| `event-notifications.smtp-config.delete` | This action is to delete a SMTP configuration within an instance | Administrator, Manager, SMTP Manager, Writer |
+| `event-notifications.smtp-user.create` | This action is to create a user within a SMTP configuration | Administrator, Manager, SMTP Manager, Writer |
+| `event-notifications.smtp-user.read` | This action is to read user details under an SMTP configuration | Administrator, Manager, Reader, SMTP Manager, Writer |
+| `event-notifications.smtp-user.list` | This action is to get all users within an SMTP configuration | Administrator, Manager, Reader, SMTP Manager, Writer |
+| `event-notifications.smtp-user.update` | This action is to update a user within an SMTP configuration | Administrator, Manager, SMTP Manager, Writer |
+| `event-notifications.smtp-user.delete` | This action is to delete a user within an SMTP configuration | Manager, SMTP Manager, Writer |
+| `event-notifications.smtp-config.enable` | This internal API is to manage EN Authorization  | Pool ID Manager |
 {: caption="Table 61. Service actions - Event Notifications" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="event-notifications"}
