@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-02-23"
+lastupdated: "2024-04-25"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users from account, context-based restrictions
 
@@ -109,7 +109,7 @@ Access management tags are available only when you create an access policy that 
 ### Trusted profile limitations
 {: #tp-limits}
 
-Users can't use the Support Center when they log in to {{site.data.keyword.cloud_notm}} by applying a trusted profile.
+Users can't use the Support Center when they log in to {{site.data.keyword.cloud_notm}} by applying a trusted profile. Additionally, {{site.data.keyword.openshiftlong}} doesn't currently support trusted profiles. 
 
 ### Enterprise-managed IAM limitations
 {: #enterprise-limitations}
