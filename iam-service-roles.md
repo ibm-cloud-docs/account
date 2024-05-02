@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2024-05-01"
+lastupdated: "2024-05-02"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -8829,14 +8829,14 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-| VMwaaS Director Backup User | As a backup user within the vCloud Director console, you can manage Veeam backup jobs. |
-| VMwaaS Director Catalog Author | As a catalog author within the vCloud Director console, you can create and publish catalogs. |
-| VMwaaS Director Console User | As a console user within the vCloud Director console, you can view the VM state, properties, and use the Guest OS. |
-| VMwaaS Director Full Viewer | As a full viewer within the vCloud Director console, you have All View Access to every component in vCloud Director. |
-| VMwaaS Director Network Admin | As a network administrator within the vCloud Director console, you can create, view, edit, delete the subnet, the static route, and troubleshoot routing. |
-| VMwaaS Director Security Admin | As a security administrator within the vCloud Director console, you can view and edit the edge firewall or view and edit the distributed firewall. |
-| VMwaaS Director vApp Author | As a vApp author within the vCloud Director console, you can use catalogs and create vApps. |
-| VMwaaS Director vApp User | As a vApp user within the vCloud Director console, you can use existing vApps. |
+| VCFaaS Director Backup User | As a backup user within the vCloud Director console, you can manage Veeam backup jobs. |
+| VCFaaS Director Catalog Author | As a catalog author within the vCloud Director console, you can create and publish catalogs. |
+| VCFaaS Director Console User | As a console user within the vCloud Director console, you can view the VM state, properties, and use the Guest OS. |
+| VCFaaS Director Full Viewer | As a full viewer within the vCloud Director console, you have All View Access to every component in vCloud Director. |
+| VCFaaS Director Network Admin | As a network administrator within the vCloud Director console, you can create, view, edit, delete the subnet, the static route, and troubleshoot routing. |
+| VCFaaS Director Security Admin | As a security administrator within the vCloud Director console, you can view and edit the edge firewall or view and edit the distributed firewall. |
+| VCFaaS Director vApp Author | As a vApp author within the vCloud Director console, you can use catalogs and create vApps. |
+| VCFaaS Director vApp User | As a vApp user within the vCloud Director console, you can use existing vApps. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
 {: caption="Table 167. Service roles - VMware Cloud Director" caption-side="top"}
@@ -8864,14 +8864,14 @@ Review the available platform and service roles and the actions mapped to each t
 | `vmware.directorsite.manager` | Director Manager | Manager |
 | `vmware.directorsite.writer` | Director Writer | Writer |
 | `vmware.directorsite.reader` | Director Reader | Reader |
-| `vmware.directorsite.fullviewer` | Director Full Viewer | VMwaaS Director Full Viewer |
-| `vmware.directorsite.vappauthor` | Director vApp Author | VMwaaS Director vApp Author |
-| `vmware.directorsite.vappuser` | Director vApp User | VMwaaS Director vApp User |
-| `vmware.directorsite.catalogauthor` | Director Catalog Author | VMwaaS Director Catalog Author |
-| `vmware.directorsite.networkadmin` | Director Network Admin | VMwaaS Director Network Admin |
-| `vmware.directorsite.consoleuser` | Director Console User | VMwaaS Director Console User |
-| `vmware.directorsite.backupuser` | Director Backup User | VMwaaS Director Backup User |
-| `vmware.directorsite.securityadmin` | Director Security Admin | VMwaaS Director Security Admin |
+| `vmware.directorsite.fullviewer` | Director Full Viewer | VCFaaS Director Full Viewer |
+| `vmware.directorsite.vappauthor` | Director vApp Author | VCFaaS Director vApp Author |
+| `vmware.directorsite.vappuser` | Director vApp User | VCFaaS Director vApp User |
+| `vmware.directorsite.catalogauthor` | Director Catalog Author | VCFaaS Director Catalog Author |
+| `vmware.directorsite.networkadmin` | Director Network Admin | VCFaaS Director Network Admin |
+| `vmware.directorsite.consoleuser` | Director Console User | VCFaaS Director Console User |
+| `vmware.directorsite.backupuser` | Director Backup User | VCFaaS Director Backup User |
+| `vmware.directorsite.securityadmin` | Director Security Admin | VCFaaS Director Security Admin |
 {: caption="Table 167. Service actions - VMware Cloud Director" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="vmware.directorsite"}
