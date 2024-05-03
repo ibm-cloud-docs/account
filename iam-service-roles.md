@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2024-05-02"
+lastupdated: "2024-05-03"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -7626,7 +7626,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `project.config.retrieve-version` | The ability to view a project config version. | Administrator, Editor, Operator, Viewer |
 | `project.config.retrieve-version-last-validated` | The ability to view a project config version that is the last validated. | Administrator, Editor, Operator, Viewer |
 | `project.config.retrieve-version-last-deployed` | The ability to view a project config version that is the last deployed. | Administrator, Editor, Operator, Viewer |
-| `project.config.retrieve-version-last-undeployed` | The ability to view a project config version that is the last undeployed.  | Administrator, Editor, Operator, Viewer |
+| `project.config.retrieve-version-last-undeployed` | The ability to view a project config version that is the last undeployed. | Administrator, Editor, Operator, Viewer |
 | `project.config.update` | The ability to update a project config. | Administrator, Editor, Operator |
 | `project.config.sync` | The ability to sync a config. | Administrator, Editor, Operator |
 | `project.config.delete-version` | The ability to delete a project config version. | Administrator |
