@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2024
 
-lastupdated: "2024-04-15"
+lastupdated: "2024-05-07"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -169,11 +169,11 @@ fmt.Println(string(b))
 
 For more information, see the [IAM Identity Services API](https://cloud.ibm.com/apidocs/iam-identity-token-api#create-service-id).
 
-## Review the list of service IDs by using the console
+## Listing service IDs by using the console
 {: #review-serviceid-list-ui}
 {: ui}
 
-Review the list of service IDs in your account by completing the following steps:
+List the service IDs in your account to review the applications that have access to your services by completing the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Service IDs**.
 1. Review the list of service IDs.
@@ -182,7 +182,7 @@ Review the list of service IDs in your account by completing the following steps
 {: #list-serviceid-cli}
 {: cli}
 
-To list all service IDs in your account, use the [**`ibmcloud iam service-ids`**](/docs/account?topic=account-ibmcloud_commands_iam&interface=cli#ibmcloud_iam_service_ids) command:
+You can list and review all service IDs in your account by running the [**`ibmcloud iam service-ids`**](/docs/account?topic=account-ibmcloud_commands_iam&interface=cli#ibmcloud_iam_service_ids) command:
 
 ```bash
 ibmcloud iam service-ids [--uuid]
