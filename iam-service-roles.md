@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2024-05-06"
+lastupdated: "2024-05-07"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -7597,14 +7597,19 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `project.config.approve` | The ability to approve a project config. | Administrator, Editor |
-| `project.config.deploy` | The ability to deploy a project config. | Administrator, Editor |
-| `project.config.validate` | The ability to validate a project config. | Administrator, Editor, Operator |
 | `project.environment.delete` | The ability to delete a project environment. | Administrator |
 | `project.config.delete` | The ability to delete a project config. | Administrator |
 | `project.config.create` | The ability to create a project config. | Administrator, Editor |
 | `project.config.retrieve` | The ability to view a project config. | Administrator, Editor, Operator, Viewer |
 | `project.config.force-approve` | The ability to force the approval of a project config. | Administrator |
+| `project.config.approve` | The ability to approve a project config. | Administrator, Editor |
+| `project.config.validate` | The ability to validate a project config. | Administrator, Editor, Operator |
+| `project.config.deploy` | The ability to deploy a project config. | Administrator, Editor |
+| `project.config.manual-tag` | The ability to add tags to manually created resource. | Administrator, Editor |
+| `project.config.create-stack-definition` | The ability to create a project config stack definition. | Administrator, Editor |
+| `project.config.retrieve-stack-definition` | The ability to retrieve a project config stack definition. | Administrator, Editor, Operator, Viewer |
+| `project.config.update-stack-definition` | The ability to update a project config stack definition. | Administrator, Editor, Operator |
+| `project.config.export-stack-definition` | The ability to publish a project config stack definition. | Administrator, Editor, Operator |
 | `project.environment.retrieve` | The ability to view a project environment. | Administrator, Editor, Operator, Viewer |
 | `project.environment.create` | The ability to create a project environment. | Administrator, Editor |
 | `project.instance.retrieve-all` | The ability to view a projects. | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
@@ -7637,11 +7642,10 @@ Review the available platform and service roles and the actions mapped to each t
 | `project.notifications.retrieve` | The ability to view project notifications. | Administrator, Editor, Operator, Viewer |
 | `project.event-notifications.retrieve` | The ability to view a Project and Event Notifications integration. | Administrator, Editor, Operator, Viewer |
 | `project.event-notifications.delete` | The ability to delete a Project and Event Notifications integration. | Administrator |
-| `project.config.manual-tag` | The ability to add tags to manually created resource. | Administrator, Editor |
-| `project.config.create-stack-definition` | The ability to create a project config stack definition. | Administrator, Editor |
-| `project.config.retrieve-stack-definition` | The ability to retrieve a project config stack definition. | Administrator, Editor, Operator, Viewer |
-| `project.config.update-stack-definition` | The ability to update a project config stack definition. | Administrator, Editor, Operator |
-| `project.config.export-stack-definition` | The ability to publish a project config stack definition. | Administrator, Editor, Operator |
+| `project.spending.retrieve-all` | The ability to view project spending. | Administrator, Editor, Operator, Viewer |
+| `project.resources.retrieve-all` | The ability to view project resources. | Administrator, Editor, Operator, Viewer |
+| `project.resources.update` | The ability to update project resources. | Administrator, Editor, Operator |
+| `project.available-resources.retrieve-all` | The ability to view project available resources. | Administrator, Editor, Operator, Viewer |
 {: caption="Table 141. Service actions - Project" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="project"}
