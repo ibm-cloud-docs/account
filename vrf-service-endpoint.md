@@ -44,7 +44,7 @@ Enabling VRF permanently alters the networking for your account. Be sure that yo
 To enable VRF:
 
 1. In the console, go to **Manage > Account**, then click **Account settings**.
-2. In the **Virtual routing and forwarding** section, click the **On** button. 
+2. Go to **Virtual routing and forwarding**, and click **On**. 
 
 For most accounts, this action immediately converts the private network to VRF. For a select few accounts, coordination with {{site.data.keyword.cloud_notm}} support might be required. To create the support case, complete the following steps:
 
@@ -52,7 +52,7 @@ For most accounts, this action immediately converts the private network to VRF. 
 2. In the case description, enter your classic infrastructure account number.
 3. Click the **Submit** button.
 
-   Don't change the rest of the prefilled support case information. The information is tailored to ensure that your request is handled as quickly as possible.
+   Don't change the rest of the populated support case information. The information is tailored to ensure that your request is handled as quickly as possible.
    {: tip}
 
 The {{site.data.keyword.cloud_notm}} network engineering team will contact the case owner to schedule a time for your account's networking to be converted to VRF. During the conversion process, connections to resources in your account might be unstable due to packet loss. The conversion takes roughly 15 - 30 minutes, depending on the complexity of your account. If your account has legacy {{site.data.keyword.BluDirectLink}} connections, it might take more time.
