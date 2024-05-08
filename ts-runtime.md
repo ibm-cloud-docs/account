@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2021
-lastupdated: "2021-10-25"
+  years: 2015, 2024
+lastupdated: "2024-05-08"
 
 keywords: troubleshoot account, account problem, runtime memory allowance, exceed runtime allowance
 subcollection: account
@@ -23,7 +23,7 @@ You went over the allowed memory for your {{site.data.keyword.Bluemix}} account.
 You're unable to deploy apps, and an error states that you've exceeded your organization's memory limit.
 {: tsSymptoms}
 
-In Lite accounts that were created before 12 August 2021, your Cloud Foundry apps can use up to 256 MB of instantaneous runtime memory. In Pay-As-You-Go or Subscription accounts, there's a 2 GB memory limit.
+For Pay-As-You-Go or Subscription accounts, there's a 2 GB memory limit.
 {: tsCauses}
 
 You can get more memory by upgrading your Lite account. Go to **Manage** > **Account** in the {{site.data.keyword.Bluemix_notm}} console, and select **Account settings**. For more information about Lite account features, see [Lite account](/docs/account?topic=account-accounts#liteaccount).
