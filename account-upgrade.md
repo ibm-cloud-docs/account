@@ -49,7 +49,7 @@ If you can't upgrade your account because of an issue with your credit card, see
 ## Promotional credit for upgrading your account
 {: #promotional-credit-for-upgrading-your-account}
 
-After you sign up for a new Pay-As-You-Go account or upgrade your free account, you'll receive a promotional credit to use on any	{{site.data.keyword.IBM_notm}} product. To view the list of eligible products, go to the {{site.data.keyword.cloud_notm}} console and select **Catalog** > **Provider** > **{{site.data.keyword.IBM_notm}}**.
+When you enter a credit card for a new Pay-As-You-Go account, you'll receive a promotional credit to use on any {{site.data.keyword.IBM_notm}} product. To view the list of eligible products, go to the {{site.data.keyword.cloud_notm}} console and select **Catalog** > **Provider** > **{{site.data.keyword.IBM_notm}}**.
 
 The credit might take a few hours to appear in your account. Any unused upgrade credit expires after the 30 day period ends. You are invoiced for any usage that exceeds the promotional credit. To view the promotional credit, go to the [Promotions and credits](/billing/promotions){: external} page or the [Invoices](/billing/invoices) page in the console.
 
