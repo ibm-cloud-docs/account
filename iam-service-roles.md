@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2024-05-15"
+lastupdated: "2024-05-16"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1838,6 +1838,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `GET /v4/:platform/deployments/:deployment_id/db2audit/alias` | Retrieve Db2 audit storage alias | Administrator, Editor, Operator, Viewer |
 | `GET /v5/:platform/deployments/:deployment_id/replication` | Retrieve replication status | Administrator, Editor, Operator, Viewer |
 | `PUT /v5/:platform/deployments/:deployment_id/replication/:id` | Activate/deactivate replication | Administrator, Editor, Operator |
+| `PUT /v5/:platform/deployments/:deployment_id/encryption` | Retrieve wired encryption status | Administrator, Editor, Operator, Viewer |
+| `PUT /v5/:platform/deployments/:deployment_id/encryption/:action` | Enable/disable wired encryption | Administrator, Editor, Operator |
 {: caption="Table 33. Service actions - Db2 Warehouse" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="dashdb"}
@@ -5817,6 +5819,8 @@ Review the available platform and service roles and the actions mapped to each t
 | Role | Description |
 | ----- | :----- |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
+| Share Broker | The role to create and delete the bindings between the real and shadow share. |
+| Share Remote Account Accessor | To create cross account accessor from origin share belonging to another account |
 {: row-headers}
 {: caption="Table 100. Service roles - File Storage for VPC" caption-side="top"}
 {: tab-title="Service roles"}
@@ -5835,6 +5839,11 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.share.share.delete` | Delete Share | Administrator, Editor |
 | `is.share.share.config.read` | Service Configuration Governance Reader | Service Configuration Reader |
 | `is.share.share.operate` | Operate Share | Administrator, Editor, Operator |
+| `is.share.accessor-binding.create` | Creates an accessor binding for is.share. | Administrator, Share Broker |
+| `is.share.accessor-binding.delete` | Deletes the accessor binding of is.share | Administrator, Share Broker |
+| `is.share.accessor-binding.read` | Get Share Accessor Binding | Administrator, Editor, Operator, Viewer |
+| `is.share.accessor-binding.list` | List Share Accessor Bindings | Administrator, Editor, Operator, Viewer |
+| `is.share.share.allow-remote-account-access` | To create accessor share pointing to origin share in another account. | Share Remote Account Accessor |
 {: caption="Table 100. Service actions - File Storage for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.share"}
