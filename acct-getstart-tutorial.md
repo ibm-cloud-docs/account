@@ -38,7 +38,7 @@ First, create an account by using your existing IBMid or a new IBMid. If your co
 |Existing IBMid   | If you already have an IBMid, sign up for {{site.data.keyword.Bluemix_notm}} with your existing credentials that you use for other {{site.data.keyword.IBM}} products and services. |
 |New IBMid        | If you don't yet have an IBMid, you can create one when you sign up. With an IBMid, you can use one username to log in to all {{site.data.keyword.IBM_notm}} products and services, including {{site.data.keyword.Bluemix_notm}}. |
 |Federated ID     | If your company already requested to register the user credentials from your company's domain with {{site.data.keyword.IBM_notm}}, you can sign up for {{site.data.keyword.Bluemix_notm}} by using the credentials that you already use for your company's login. You must enter a phone number when you sign up. |
-|Google ID | If you already have a Google account, you can use the credentials for Google to sign-up or log in to {{site.data.keyword.IBM_notm}}. |
+|Google ID | If you already have a Google account, you can use the credentials for Google to sign-up or log in to {{site.data.keyword.Bluemix_notm}}. |
 {: caption="Table 1. ID options for creating an account" caption-side="top"}
 
 ### Using your IBMid
