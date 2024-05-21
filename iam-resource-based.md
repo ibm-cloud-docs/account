@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023
-lastupdated: "2023-12-07"
+  years: 2023, 2024
+lastupdated: "2024-05-06"
 keywords: access policy, access, policy, restriction, resource attribute, conditions
 
 subcollection: account
@@ -14,10 +14,10 @@ subcollection: account
 # Limiting access with resource attribute-based conditions
 {: #iam-resource-based}
 
-When using a policy with resource attribute-based conditions, you can avoid creating multiple access policies to meet your access needs. Instead, you can create a single policy by using the combination of `OR`/`AND` conditions that are applied on resource attributes with literal or wildcard values. For example, with resource attribute-based conditions, you can create a single policy that allows access based on `Service instance: abc`, **OR** `attribute-1: xyz`, **OR** **(**`attribute-2: def` **AND** `attribute-3: hij`**)**.
+When you create a policy with resource attribute-based conditions, you can avoid creating multiple access policies to meet your access needs. Instead, you can create a single policy by using a combination of `OR`/`AND` operators that are applied on resource attributes with literal or wildcard values. You can grant access to a resource that meets multiple criteria simultaneously (AND), or grant access if any of several conditions are met (OR). For example, with resource attribute-based conditions, you can create a single policy that allows access based on `Service instance: abc`, **OR** `attribute-1: xyz`, **OR** **(**`attribute-2: def` **AND** `attribute-3: hij`**)**.
 {: shortdesc}
 
-You must have a minimum of 2 conditions to use `OR`/`AND` and resource attribute-based conditions. If you need to add a single condition, see [Assigning access to resources in the console](/docs/account?topic=account-assign-access-resources&interface=ui#access-resources-console) and add the condition after selecting **Specific resources**.
+You must have a minimum of 2 conditions that use `OR`/`AND` and resource attribute-based conditions. If you need to add a single condition, see [Assigning access to resources in the console](/docs/account?topic=account-assign-access-resources&interface=ui#access-resources-console) and add the condition after selecting **Specific resources**.
 {: note}
 
 ## Condition patterns
@@ -40,12 +40,13 @@ Make sure that you call the `v2/policies` URI, which is `https://iam.coud.ibm.co
 {: #create-resource-attribute-conditio-api}
 {: api}
 
-You can assign access with a resource attribute-based condition by specifying a prefix, delimiter, or path that determines when the condition grants access. As an example, let's say that you're creating a conditional policy for a developer that needs access to everything under the `dev/David/*` and the `devA/*` folders or any path that begins with the `dev/David/*` or `devA/*`. The following example shows you how to create a resource attribute-based condition that gives the user access to everything under the `dev/David/` folder and any path that begins with the `devA` or specifically `devA/` folder.
+You can assign access by specifying a resource attribute that determines which resources the condition grants access to. As an example, let's say that you're creating a conditional policy for a developer that needs access to everything under the `dev/David/*` and the `devA/*` folders or any path that begins with the `dev/David/*` or `devA/*`. The following example shows you how to create a resource attribute-based condition that gives the user access to everything under the `dev/David/` folder and any path that begins with the `devA` or specifically `devA/` folder.
 
 You can have up to 10 conditions and nesting up to 2 levels by using `OR`.
 {: important}
 
-For more information and examples about available operators, see [Resource attribute-based conditions](/docs/account?topic=account-iam-condition-properties&interface=ui#resource-based-conditions). For more information about how Cloud Object Storage uses resource attribute-based conditions, see [Controlling access to individual objects in a bucket](/docs/cloud-object-storage?topic=cloud-object-storage-object-access-tutorial).
+For more information and examples about available operators, see [Resource attribute-based conditions](/docs/account?topic=account-iam-condition-properties&interface=ui#resource-based-conditions).
+
 
 
 
@@ -96,7 +97,7 @@ For more information and examples about available operators, see [Resource attri
 {: #create-resource-attribute-condition}
 {: ui}
 
-You can assign access with a resource attribute-based condition such as a prefix, delimiter, or path that determines when the condition grants access. For example, you might have a user that needs to present a demonstration in your account by using specific resources. For more information and examples about available operators, see [Resource attribute-based conditions](/docs/account?topic=account-iam-condition-properties&interface=ui#resource-based-conditions). For more information about how Cloud Object Storage uses resource attribute-based conditions, see [Controlling access to individual objects in a bucket](/docs/cloud-object-storage?topic=cloud-object-storage-object-access-tutorial).
+You can assign access by specifying a resource attribute that determines which resources the condition grants access to. For example, you might have a user that needs to present a demonstration in your account by using specific resources. For more information and examples about available operators, see [Resource attribute-based conditions](/docs/account?topic=account-iam-condition-properties&interface=ui#resource-based-conditions).
 
 You can have up to 10 conditions and nesting up to 2 levels by using `OR`.
 {: important}
@@ -124,4 +125,7 @@ As an example, let's say that you're creating a conditional policy for a develop
 1. Click **Assign**.
 
 
+## Using conditions for specific services
+{: #advanced-condition-service}
 
+For more information about how Cloud Object Storage uses resource attribute-based conditions, see [Controlling access to individual objects in a bucket](/docs/cloud-object-storage?topic=cloud-object-storage-object-access-tutorial).
