@@ -103,7 +103,6 @@
                   - iam-authorizations.md
                   - iam-cbr.md
                   - iam-audit-policies.md
-                  - iam-user-sessions.md
               - topicgroup:
                   label: Administering trusted profiles
                   topics:
@@ -132,7 +131,6 @@
                   topics:
                   - iam-usersetting.md
                   - iam-update_status.md
-                  - iam-session-settings.md
                   - iam-specific_ip.md
                   - iam-restrict-api.md
                   - iam-restrict-domain.md
