@@ -57,6 +57,7 @@
               topics:
               - catalog-vsi-tutorial.md
               - catalog-vsivpc-tutorial.md
+              - catalog-vsivpc-plans-tutorial.md
               - catalog-vsipower-tutorial.md
               - catalog-operator-tutorial.md
               - catalog-opbundle-tutorial.md
@@ -219,6 +220,7 @@
                   - catalog-product-details.md
                   - catalog-translate-details.md
                   - catalog-control-format.md
+                  - catalog-manage-sw-plans.md
               - topicgroup:
                   label: Sharing products
                   topics:
