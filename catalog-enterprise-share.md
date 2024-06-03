@@ -57,7 +57,7 @@ Complete the following steps to share your product:
    - **Share to this account** to make the product available to any user who has access to this account. Then, click **Share**.
    - **Share with other accounts** to add IDs for accounts that you want to share your product with. Enterprise IDs are prefixed by `-ent-`, and account groups are prefixed by `-entgrp-`. This option is used to create an allowlist of other accounts to which you want to share your product.
 
-   You need to configure [service to service authorization](/docs/account?topic=account-serviceauth&interface=ui#create-auth) to share a product between accounts by using {{site.data.keyword.bplong}}.
+   You need to configure [service to service authorization](/docs/account?topic=account-serviceauth&interface=ui#create-auth) to share a product between accounts through {{site.data.keyword.bplong}}. To establish a service-to-service authorization between {{site.data.keyword.bplong}} and Catalog Management, {{site.data.keyword.bplong}} acts as the source and Catalog Management as the target with a viewer role. This ensures that {{site.data.keyword.bplong}} can access the source URL when provisioning the product from another account. 
    {: note}
 
 ### Adding accounts to the allowlist
