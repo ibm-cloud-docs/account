@@ -6,7 +6,7 @@ copyright:
 
 lastupdated: "2022-02-21"
 
-keywords: federated ID, enterprise SSO, SAML federation
+keywords: federated ID, enterprise SSO
 
 subcollection: account
 
