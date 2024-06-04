@@ -1,6 +1,6 @@
 {
   "title": "Managing your account, resources, and access docs",
-  "lastupdated": "2024-02-19",
+  "lastupdated": "2024-06-04",
   "introduction": "Leverage the interacting components and systems in your account for resource, user, and access management. Get started by setting up your IBM cloud account, learn about setting up an enterprise, or explore assigning access to resources quickly with IBM Cloud Identity and Access Management (IAM).",
   "section_devtools": {
     "api": "/docs?tab=api-docs&subCategory=account&category=platform_services",
@@ -46,6 +46,11 @@
     "view_more": "/docs/overview?topic=overview-whatsnew",
     "tiles": [
       {
+        "date": "31 May 2024",
+        "title": "Onboarding software with usage-based pricing plans",
+        "description": "In addition to free and bring your own license plans, you can now add usage-based pricing plans to software onboarded with the virtual server image delivery method, offering it as a paid integrated product in the IBM Cloud catalog. After adding a plan to your software in Partner Center, you can also manage it in your private catalog. This includes adding features, changing the plan’s state, deprecating it, or updating plan details."
+      },
+      {
         "date": "07 December 2023",
         "title": "Limit access with resource attribute-based conditions",
         "description": "You can now create a single IAM policy that grants access based on multiple resource attribute-based conditions."
@@ -54,11 +59,6 @@
         "date": "17 November 2023",
         "title": "Protect your private catalog and private products",
         "description": " Add an extra layer of protection to your private catalogs with context-based restrictions. Users can view the catalogs that you protect only if they satisfy your rule."
-      },
-      {
-        "date": "26 October 2023",
-        "title": "Symantec VIP 2FA is deprecated",
-        "description": " If you are currently using Symantec VIP as your external authentication method, you can continue to use it and add subscribers as needed until 24 October 2024. If you are not already using Symantec VIP, then you can't purchase Symantec VIP to use as your external authentication method as of 24 October 2023. All customers currently using Symantec VIP must migrate to IBM Cloud MFA by 24 October 2024."
       }
     ]
   }
